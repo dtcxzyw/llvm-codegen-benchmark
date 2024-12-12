@@ -1,0 +1,82 @@
+.LCPI0_0:
+	.quad	18446744073709552               # 0x4189374bc6a7f0
+func0000000000000054:                   # @func0000000000000054
+	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
+	mulhu	a1, a0, a1
+	li	a2, 1000
+	mul	a1, a1, a2
+	sub	a0, a0, a1
+	sltiu	a0, a0, 50
+	ret
+.LCPI1_0:
+	.quad	307445734561825861              # 0x444444444444445
+func0000000000000041:                   # @func0000000000000041
+	lui	a1, 978671
+	addiw	a1, a1, -273
+	slli	a2, a1, 32
+	add	a1, a1, a2
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	mul	a0, a0, a1
+	slli	a1, a0, 62
+	srli	a0, a0, 2
+	or	a0, a0, a1
+	sltu	a0, a0, a2
+	ret
+.LCPI2_0:
+	.quad	307445734561825861              # 0x444444444444445
+func0000000000000001:                   # @func0000000000000001
+	slli	a0, a0, 48
+	lui	a1, 978671
+	addiw	a1, a1, -273
+	slli	a2, a1, 32
+	add	a1, a1, a2
+	lui	a2, %hi(.LCPI2_0)
+	srli	a0, a0, 48
+	ld	a2, %lo(.LCPI2_0)(a2)
+	mul	a0, a0, a1
+	slli	a1, a0, 62
+	srli	a0, a0, 2
+	or	a0, a0, a1
+	sltu	a0, a0, a2
+	ret
+.LCPI3_0:
+	.quad	-8116567392432202711            # 0x8f5c28f5c28f5c29
+.LCPI3_1:
+	.quad	184467440737095517              # 0x28f5c28f5c28f5d
+func0000000000000061:                   # @func0000000000000061
+	lui	a1, %hi(.LCPI3_0)
+	ld	a1, %lo(.LCPI3_0)(a1)
+	lui	a2, %hi(.LCPI3_1)
+	ld	a2, %lo(.LCPI3_1)(a2)
+	mul	a0, a0, a1
+	slli	a1, a0, 62
+	srli	a0, a0, 2
+	or	a0, a0, a1
+	sltu	a0, a0, a2
+	ret
+.LCPI4_0:
+	.quad	184467440737095517              # 0x28f5c28f5c28f5d
+func0000000000000074:                   # @func0000000000000074
+	lui	a1, %hi(.LCPI4_0)
+	ld	a1, %lo(.LCPI4_0)(a1)
+	mulhu	a1, a0, a1
+	li	a2, 100
+	mul	a1, a1, a2
+	sub	a0, a0, a1
+	sltiu	a0, a0, 20
+	ret
+.LCPI5_0:
+	.quad	184467440737095517              # 0x28f5c28f5c28f5d
+func0000000000000014:                   # @func0000000000000014
+	lui	a1, %hi(.LCPI5_0)
+	ld	a1, %lo(.LCPI5_0)(a1)
+	slli	a0, a0, 48
+	srli	a0, a0, 48
+	mulhu	a1, a0, a1
+	li	a2, 100
+	mul	a1, a1, a2
+	sub	a0, a0, a1
+	sltiu	a0, a0, 60
+	ret

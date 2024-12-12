@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 63 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; cpython/optimized/_asynciomodule.ll
 ; cpython/optimized/fileio.ll
@@ -36,8 +36,14 @@
 ; llvm/optimized/PreprocessingRecord.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaLambda.cpp.ll
-; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_menu.ll
+; lvgl/optimized/lv_span.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; openssl/optimized/libssl-lib-quic_sstream.ll
 ; openssl/optimized/libssl-shlib-quic_sstream.ll
@@ -56,6 +62,7 @@
 ; wolfssl/optimized/ssl.c.ll
 ; yoga/optimized/YGNode.cpp.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
@@ -66,18 +73,17 @@ entry:
   ret i8 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/textio.ll
 ; linux/optimized/sr.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000001e(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = shl nuw nsw i8 %2, 4
   %4 = and i8 %3, 16
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -90,7 +96,7 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = shl i8 %2, 1
   %4 = and i8 %3, 64
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -127,7 +133,7 @@ entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = shl nuw i8 %2, 2
   %4 = and i8 %3, -64
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

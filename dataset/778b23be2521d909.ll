@@ -3,7 +3,7 @@
 ; openjdk/optimized/jni.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = and i64 %2, 36028797018963967
@@ -11,14 +11,12 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/biasstate.cpp.ll
 ; llvm/optimized/ScheduleDAG.cpp.ll
-; opencv/optimized/flatten_layer.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 8
   %3 = and i64 %2, 4294967295
@@ -34,7 +32,7 @@ entry:
 ; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 8
   %3 = and i64 %2, 4294967295

@@ -1,7 +1,8 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/cuddGenCof.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; icu/optimized/icuexportdata.ll
@@ -29,7 +30,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -44,7 +45,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -56,7 +57,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -77,7 +78,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -88,7 +89,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }

@@ -32,6 +32,23 @@ entry:
   ret i32 %5
 }
 
+; 7 occurrences:
+; boost/optimized/message.ll
+; postgres/optimized/snprintf.ll
+; postgres/optimized/snprintf_shlib.ll
+; postgres/optimized/snprintf_srv.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/80403hw32s3ougvze8j2ycldj.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = trunc nuw i8 %2 to i1
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = add i32 %4, -1
+  ret i32 %5
+}
+
 ; 4 occurrences:
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; llvm/optimized/BitcodeAnalyzer.cpp.ll
@@ -46,16 +63,14 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; postgres/optimized/snprintf.ll
-; postgres/optimized/snprintf_shlib.ll
-; postgres/optimized/snprintf_srv.ll
+; 1 occurrences:
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func000000000000000b(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i32 %0, i32 %1
-  %5 = add i32 %4, -1
+  %5 = add nuw nsw i32 %4, 1
   ret i32 %5
 }
 

@@ -1,35 +1,24 @@
-func000000000000003a:                   # @func000000000000003a
-	shll	$16, %esi
-	cmpq	%rdi, %rsi
-	setg	%al
-	retq
-func0000000000000039:                   # @func0000000000000039
-	shll	$16, %esi
-	cmpq	%rdi, %rsi
+func0000000000000069:                   # @func0000000000000069
+	movzwl	%si, %eax
+	shll	$4, %eax
+	cmpq	%rdi, %rax
 	setae	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
-	shll	$16, %esi
-	cmpq	%rdi, %rsi
-	setl	%al
+func0000000000000078:                   # @func0000000000000078
+	movzwl	%si, %eax
+	shll	$3, %eax
+	cmpq	%rdi, %rax
+	seta	%al
 	retq
-func0000000000000035:                   # @func0000000000000035
-	shll	$16, %esi
-	cmpq	%rdi, %rsi
-	setbe	%al
-	retq
-func0000000000000034:                   # @func0000000000000034
-	shll	$16, %esi
-	cmpq	%rdi, %rsi
+func0000000000000064:                   # @func0000000000000064
+	movzwl	%si, %eax
+	addl	%eax, %eax
+	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func000000000000003b:                   # @func000000000000003b
-	shll	$16, %esi
-	cmpq	%rdi, %rsi
-	setge	%al
-	retq
-func0000000000000038:                   # @func0000000000000038
-	shll	$16, %esi
-	cmpq	%rdi, %rsi
+func0000000000000068:                   # @func0000000000000068
+	movzwl	%si, %eax
+	addl	%eax, %eax
+	cmpq	%rdi, %rax
 	seta	%al
 	retq

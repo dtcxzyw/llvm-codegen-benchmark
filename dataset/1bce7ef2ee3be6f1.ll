@@ -55,19 +55,21 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 5
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }
 
-; 38 occurrences:
+; 41 occurrences:
 ; abc/optimized/abcNtk.c.ll
+; boost/optimized/area.ll
 ; cmake/optimized/cmHexFileConverter.cxx.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; icu/optimized/collationkeys.ll
 ; jq/optimized/decNumber.ll
 ; jq/optimized/jv.ll
+; lief/optimized/psa_crypto_aead.c.ll
 ; linux/optimized/drm_framebuffer.ll
 ; llvm/optimized/AArch64RedundantCopyElimination.cpp.ll
 ; llvm/optimized/Darwin.cpp.ll
@@ -96,6 +98,7 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; slurm/optimized/job_mgr.ll
+; slurm/optimized/slurm_protocol_socket.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-per.c.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
@@ -104,7 +107,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }
@@ -112,7 +115,7 @@ entry:
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 192
   %4 = icmp eq i32 %3, 0
@@ -121,14 +124,13 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; brotli/optimized/decode.c.ll
+; 1 occurrences:
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = icmp ugt i32 %3, 2
+  %4 = icmp samesign ugt i32 %3, 2
   %5 = and i1 %4, %1
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6

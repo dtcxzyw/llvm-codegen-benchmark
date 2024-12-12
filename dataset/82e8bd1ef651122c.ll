@@ -7,7 +7,7 @@
 ; wireshark/optimized/packet-bencode.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp eq i32 %0, 4
@@ -22,7 +22,7 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000198(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000318(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ne i8 %0, -123
@@ -38,7 +38,7 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000182(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000302(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq i8 %0, 35
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000082(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000102(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 3
   %3 = icmp eq i32 %0, 0
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; quest/optimized/QuEST.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 167772160
   %3 = icmp ne i8 %0, 10

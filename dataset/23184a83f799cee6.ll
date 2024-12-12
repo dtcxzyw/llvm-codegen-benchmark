@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/manyautocorrelation.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
@@ -9,7 +9,6 @@
 ; linux/optimized/aperfmperf.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/fair.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/pcm_native.ll
 ; linux/optimized/tcp_cubic.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll

@@ -1,10 +1,9 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/netdev.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/tdls.ll
-; qemu/optimized/migration_qemu-file.c.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/file_wrappers.c.ll
 ; Function Attrs: nounwind
@@ -14,7 +13,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -51,13 +50,13 @@ entry:
 ; yosys/optimized/fstapi.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000080(i32 %0, i64 %1, ptr %2) #0 {
+define i32 @func00000000000000c0(i32 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -67,13 +66,13 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i32 %0, i64 %1, ptr %2) #0 {
+define i32 @func00000000000000c1(i32 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 

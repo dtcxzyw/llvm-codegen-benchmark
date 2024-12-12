@@ -1,5 +1,5 @@
 
-; 138 occurrences:
+; 139 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; eastl/optimized/TestAtomicAsm.cpp.ll
@@ -97,7 +97,6 @@
 ; linux/optimized/fair.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
 ; openssl/optimized/libcrypto-shlib-f_impl64.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; quickjs/optimized/libbf.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
@@ -138,6 +137,8 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000001(i64 %0) #0 {
 entry:

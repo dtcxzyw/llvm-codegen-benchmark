@@ -4,7 +4,7 @@
 ; php/optimized/phar.ll
 ; qemu/optimized/target_riscv_tcg_tcg-cpu.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = icmp eq ptr %0, null
@@ -23,13 +23,13 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; openmpi/optimized/pml_ob1_sendreq.ll
 ; openmpi/optimized/ras_slurm_module.ll
 ; slurm/optimized/controller.ll
@@ -38,7 +38,7 @@ entry:
 ; wireshark/optimized/packet-a21.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp eq ptr %0, null
@@ -53,7 +53,7 @@ entry:
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i16 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp ne ptr %0, null
@@ -69,7 +69,7 @@ entry:
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i16 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = icmp ne ptr %0, null
@@ -77,11 +77,12 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/AArch64FastISel.cpp.ll
+; llvm/optimized/ASTImporter.cpp.ll
 ; php/optimized/image.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 8
   %3 = icmp eq ptr %0, null
@@ -92,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/dot11decrypt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000101(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 24
   %3 = icmp eq ptr %0, null

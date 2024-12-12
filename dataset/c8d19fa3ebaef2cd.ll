@@ -29,7 +29,7 @@ define i32 @func000000000000000f(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 10
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr exact i32 %4, 6
   ret i32 %5
 }
@@ -46,7 +46,7 @@ define i32 @func000000000000000e(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 13
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr i32 %4, 15
   ret i32 %5
 }

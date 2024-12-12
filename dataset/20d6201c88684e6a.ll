@@ -5,7 +5,7 @@
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = lshr i64 %0, 1
@@ -17,7 +17,7 @@ entry:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; rocksdb/optimized/db_filesnapshot.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = lshr i64 %0, 62

@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = mul nsw i64 %0, 1000000
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/test_connection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 1000
   %4 = sub nsw i64 %0, %1
@@ -40,7 +40,7 @@ entry:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/netdev.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000606(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 1000
   %4 = sub i64 %0, %1
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tcp_output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -1000
   %4 = sub i64 %0, %1
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = mul nsw i64 %0, -19

@@ -23,7 +23,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 .LCPI1_1:
 	.long	1024                            # 0x400
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqb	.LCPI1_0(%rip), %xmm1, %k1
 	vorps	.LCPI1_1(%rip){1to8}, %ymm2, %ymm0 {%k1}
 	retq

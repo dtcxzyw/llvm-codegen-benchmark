@@ -11,9 +11,8 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {

@@ -1,9 +1,4 @@
-func0000000000000058:                   # @func0000000000000058
-	slt	a1, a0, a1
-	xori	a1, a1, 1
-	add	a0, a0, a1
-	ret
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	sltu	a1, a0, a1
 	add	a0, a0, a1
 	ret
@@ -44,12 +39,12 @@ func0000000000000030:                   # @func0000000000000030
 	slt	a1, a0, a1
 	add	a0, a0, a1
 	ret
+func0000000000000023:                   # @func0000000000000023
+	sltu	a1, a0, a1
+	add	a0, a0, a1
+	ret
 func0000000000000061:                   # @func0000000000000061
 	xor	a1, a1, a0
 	snez	a1, a1
-	add	a0, a0, a1
-	ret
-func0000000000000032:                   # @func0000000000000032
-	slt	a1, a0, a1
 	add	a0, a0, a1
 	ret

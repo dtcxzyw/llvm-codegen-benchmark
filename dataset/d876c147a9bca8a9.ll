@@ -1,22 +1,5 @@
 
-; 5 occurrences:
-; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
-; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
-; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
-; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
-; delta-rs/optimized/9v8xvedf69luuxb.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sdiv i32 %2, 100
-  %4 = ashr i32 %3, 2
-  %5 = sub i32 %1, %3
-  %6 = add nsw i32 %5, %0
-  %7 = add nsw i32 %6, %4
-  ret i32 %7
-}
-
-; 9 occurrences:
+; 12 occurrences:
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/3a6umeboy1uh9t01.ll
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
@@ -26,12 +9,33 @@ entry:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/31i6j0ayu6bevt9n.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 100
   %4 = ashr i32 %3, 2
   %5 = sub nsw i32 %1, %3
+  %6 = add nsw i32 %5, %0
+  %7 = add nsw i32 %6, %4
+  ret i32 %7
+}
+
+; 6 occurrences:
+; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
+; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
+; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
+; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
+; delta-rs/optimized/9v8xvedf69luuxb.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sdiv i32 %2, 100
+  %4 = ashr i32 %3, 2
+  %5 = sub i32 %1, %3
   %6 = add nsw i32 %5, %0
   %7 = add nsw i32 %6, %4
   ret i32 %7

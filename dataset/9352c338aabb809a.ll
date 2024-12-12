@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 107 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -33,6 +33,7 @@
 ; double_conversion/optimized/strtod.cc.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/solver_dense.cpp.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; linux/optimized/efi_64.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll

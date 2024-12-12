@@ -11,7 +11,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; linux/optimized/ata_piix.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll

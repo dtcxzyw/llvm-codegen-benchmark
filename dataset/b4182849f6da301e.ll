@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cpython/optimized/_cursesmodule.ll
@@ -20,6 +20,7 @@
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-s390x.cc.ll
 ; mold/optimized/arch-sparc64.cc.ll

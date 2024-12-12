@@ -1,5 +1,9 @@
 
-; 276 occurrences:
+%"class.std::__cxx11::basic_string.3866719" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3866720", i64, %union.anon.3866721 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3866720" = type { ptr }
+%union.anon.3866721 = type { i64, [8 x i8] }
+
+; 329 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -10,7 +14,6 @@
 ; arrow/optimized/ree_util.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
-; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
@@ -85,7 +88,6 @@
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
-; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/LoopCacheAnalysis.cpp.ll
 ; llvm/optimized/LoopSink.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
@@ -227,66 +229,6 @@
 ; protobuf/optimized/padding_optimizer.cc.ll
 ; protobuf/optimized/text_format.cc.ll
 ; protobuf/optimized/wire_format.cc.ll
-; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
-; stockfish/optimized/search.ll
-; stockfish/optimized/tbprobe.ll
-; vcpkg/optimized/ci-baseline.cpp.ll
-; vcpkg/optimized/registries.cpp.ll
-; velox/optimized/ComplexVector.cpp.ll
-; verilator/optimized/V3DfgRegularize.cpp.ll
-; verilator/optimized/V3EmitCConstPool.cpp.ll
-; verilator/optimized/V3EmitCSyms.cpp.ll
-; verilator/optimized/V3GraphAcyc.cpp.ll
-; verilator/optimized/V3GraphAlg.cpp.ll
-; verilator/optimized/V3LinkLevel.cpp.ll
-; verilator/optimized/V3Param.cpp.ll
-; verilator/optimized/V3VariableOrder.cpp.ll
-; xgboost/optimized/adaptive.cc.ll
-; xgboost/optimized/auc.cc.ll
-; xgboost/optimized/indexed_recordio_split.cc.ll
-; xgboost/optimized/input_split_base.cc.ll
-; xgboost/optimized/quantile.cc.ll
-; xgboost/optimized/quantile_obj.cc.ll
-; xgboost/optimized/random.cc.ll
-; xgboost/optimized/rank_metric.cc.ll
-; xgboost/optimized/ranking_utils.cc.ll
-; xgboost/optimized/stats.cc.ll
-; xgboost/optimized/updater_approx.cc.ll
-; xgboost/optimized/updater_quantile_hist.cc.ll
-; yosys/optimized/recover_names.ll
-; z3/optimized/algebraic_numbers.cpp.ll
-; z3/optimized/clp_context.cpp.ll
-; z3/optimized/dyn_ack.cpp.ll
-; z3/optimized/grobner.cpp.ll
-; z3/optimized/intblast_solver.cpp.ll
-; z3/optimized/pattern_inference.cpp.ll
-; z3/optimized/pb2bv_tactic.cpp.ll
-; z3/optimized/pdd_simplifier.cpp.ll
-; z3/optimized/sat_asymm_branch.cpp.ll
-; z3/optimized/sat_simplifier.cpp.ll
-; z3/optimized/sat_solver.cpp.ll
-; z3/optimized/smt_context.cpp.ll
-; z3/optimized/solve_context_eqs.cpp.ll
-; z3/optimized/spacer_context.cpp.ll
-; z3/optimized/spacer_proof_utils.cpp.ll
-; z3/optimized/spacer_util.cpp.ll
-; z3/optimized/subpaving_hwf.cpp.ll
-; z3/optimized/subpaving_mpf.cpp.ll
-; z3/optimized/subpaving_mpff.cpp.ll
-; z3/optimized/subpaving_mpfx.cpp.ll
-; z3/optimized/subpaving_mpq.cpp.ll
-; z3/optimized/theory_arith.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw i64, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
-  %5 = select i1 %0, ptr %1, ptr %4
-  %6 = ptrtoint ptr %5 to i64
-  ret i64 %6
-}
-
-; 55 occurrences:
 ; quantlib/optimized/abcdatmvolcurve.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/basecorrelationstructure.ll
@@ -342,11 +284,72 @@ entry:
 ; quantlib/optimized/swaptionvoldiscrete.ll
 ; quantlib/optimized/swaptionvolmatrix.ll
 ; quantlib/optimized/zabr.ll
+; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
+; stockfish/optimized/search.ll
+; stockfish/optimized/tbprobe.ll
+; vcpkg/optimized/ci-baseline.cpp.ll
+; vcpkg/optimized/registries.cpp.ll
+; velox/optimized/ComplexVector.cpp.ll
+; verilator/optimized/V3DfgRegularize.cpp.ll
+; verilator/optimized/V3EmitCConstPool.cpp.ll
+; verilator/optimized/V3EmitCSyms.cpp.ll
+; verilator/optimized/V3GraphAcyc.cpp.ll
+; verilator/optimized/V3GraphAlg.cpp.ll
+; verilator/optimized/V3LinkLevel.cpp.ll
+; verilator/optimized/V3Param.cpp.ll
+; verilator/optimized/V3VariableOrder.cpp.ll
+; xgboost/optimized/adaptive.cc.ll
+; xgboost/optimized/auc.cc.ll
+; xgboost/optimized/indexed_recordio_split.cc.ll
+; xgboost/optimized/input_split_base.cc.ll
+; xgboost/optimized/quantile.cc.ll
+; xgboost/optimized/quantile_obj.cc.ll
+; xgboost/optimized/random.cc.ll
+; xgboost/optimized/rank_metric.cc.ll
+; xgboost/optimized/ranking_utils.cc.ll
+; xgboost/optimized/stats.cc.ll
+; xgboost/optimized/updater_approx.cc.ll
+; xgboost/optimized/updater_quantile_hist.cc.ll
+; yosys/optimized/recover_names.ll
+; z3/optimized/algebraic_numbers.cpp.ll
+; z3/optimized/clp_context.cpp.ll
+; z3/optimized/dyn_ack.cpp.ll
+; z3/optimized/grobner.cpp.ll
+; z3/optimized/intblast_solver.cpp.ll
+; z3/optimized/pattern_inference.cpp.ll
+; z3/optimized/pb2bv_tactic.cpp.ll
+; z3/optimized/pdd_simplifier.cpp.ll
+; z3/optimized/sat_asymm_branch.cpp.ll
+; z3/optimized/sat_simplifier.cpp.ll
+; z3/optimized/sat_solver.cpp.ll
+; z3/optimized/smt_context.cpp.ll
+; z3/optimized/solve_context_eqs.cpp.ll
+; z3/optimized/spacer_context.cpp.ll
+; z3/optimized/spacer_proof_utils.cpp.ll
+; z3/optimized/spacer_util.cpp.ll
+; z3/optimized/subpaving_hwf.cpp.ll
+; z3/optimized/subpaving_mpf.cpp.ll
+; z3/optimized/subpaving_mpff.cpp.ll
+; z3/optimized/subpaving_mpfx.cpp.ll
+; z3/optimized/subpaving_mpq.cpp.ll
+; z3/optimized/theory_arith.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i64, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  %5 = select i1 %0, ptr %1, ptr %4
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/Lexer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw double, ptr %1, i64 %2
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   %5 = select i1 %0, ptr %1, ptr %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
@@ -360,6 +363,18 @@ define i64 @func0000000000000000(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr ptr, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
+  %5 = select i1 %0, ptr %1, ptr %4
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; cmake/optimized/cmCTestBinPacker.cxx.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw %"class.std::__cxx11::basic_string.3866719", ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = select i1 %0, ptr %1, ptr %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6

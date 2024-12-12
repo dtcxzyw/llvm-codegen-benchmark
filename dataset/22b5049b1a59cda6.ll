@@ -7,7 +7,7 @@
 ; cvc5/optimized/term_formula_removal.cpp.ll
 ; cvc5/optimized/theory_preprocessor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -1

@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; clamav/optimized/getopt.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/canny.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll

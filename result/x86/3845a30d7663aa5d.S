@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	sarl	$31, %esi
 	andl	%edx, %esi
 	movslq	%esi, %rax

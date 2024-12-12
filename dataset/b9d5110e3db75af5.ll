@@ -1,5 +1,5 @@
 
-; 332 occurrences:
+; 330 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
@@ -16,6 +16,7 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/fmu.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
@@ -190,9 +191,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -333,28 +331,28 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
   %5 = add nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
   %5 = add i64 %4, %3
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; casadi/optimized/casadi_misc.cpp.ll
@@ -366,30 +364,29 @@ entry:
 ; openspiel/optimized/sheriff.cc.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; quantlib/optimized/abcdatmvolcurve.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/projection.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/FunctionSignature.cpp.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
   %5 = add nsw i64 %4, %3
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a9(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
   %5 = add nsw i64 %4, %3
-  %6 = icmp ule i64 %5, %0
+  %6 = icmp uge i64 %0, %5
   ret i1 %6
 }
 
@@ -405,12 +402,12 @@ entry:
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
   %5 = add nsw i64 %4, %3
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -418,12 +415,12 @@ entry:
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %1, 3
   %5 = add i64 %4, %3
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -436,31 +433,31 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %1, 6
   %5 = add i64 %4, %3
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/cv2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
   %5 = add nsw i64 %4, %3
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; casadi/optimized/fmu2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000002a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 %1, 3
   %5 = add nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

@@ -1,4 +1,4 @@
-func0000000000000aac:                   # @func0000000000000aac
+func000000000000294c:                   # @func000000000000294c
 	testl	%edx, %edx
 	setns	%al
 	testl	%esi, %esi
@@ -8,7 +8,7 @@ func0000000000000aac:                   # @func0000000000000aac
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000c1c:                   # @func0000000000000c1c
+func000000000000302c:                   # @func000000000000302c
 	testl	%edx, %edx
 	setne	%cl
 	cmpl	$772, %esi                      # imm = 0x304
@@ -18,7 +18,7 @@ func0000000000000c1c:                   # @func0000000000000c1c
 	andb	%cl, %al
 	andb	%dl, %al
 	retq
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	xorl	$31, %edx
 	xorl	$31, %esi
 	orl	%edx, %esi
@@ -27,7 +27,7 @@ func000000000000011c:                   # @func000000000000011c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	testl	%edx, %edx
 	setne	%al
 	testl	%esi, %esi
@@ -37,7 +37,7 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	testl	%edx, %edx
 	sete	%cl
 	testl	%esi, %esi
@@ -47,7 +47,7 @@ func00000000000001cc:                   # @func00000000000001cc
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
-func0000000000000a1c:                   # @func0000000000000a1c
+func000000000000282c:                   # @func000000000000282c
 	testl	%edx, %edx
 	setg	%al
 	cmpl	$2, %esi
@@ -57,7 +57,7 @@ func0000000000000a1c:                   # @func0000000000000a1c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000004ac:                   # @func00000000000004ac
+func000000000000114c:                   # @func000000000000114c
 	cmpl	$32, %edx
 	setb	%al
 	testl	%esi, %esi
@@ -67,7 +67,7 @@ func00000000000004ac:                   # @func00000000000004ac
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000044c:                   # @func000000000000044c
+func000000000000108c:                   # @func000000000000108c
 	cmpl	$2147483646, %edx               # imm = 0x7FFFFFFE
 	setb	%al
 	cmpl	$2147483646, %esi               # imm = 0x7FFFFFFE

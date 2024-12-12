@@ -1,8 +1,7 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; clamav/optimized/autoit.c.ll
-; cmake/optimized/archive_write_disk_set_standard_lookup.c.ll
 ; cpython/optimized/_randommodule.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; hermes/optimized/StorageProvider.cpp.ll
@@ -48,11 +47,11 @@
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 
-; 1305 occurrences:
+; 1302 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcExtract.c.ll
@@ -148,6 +147,8 @@ entry:
 ; abc/optimized/saigSimMv.c.ll
 ; abc/optimized/saigTrans.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/sbdCut.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sswAig.c.ll
 ; abc/optimized/sswConstr.c.ll
@@ -156,7 +157,6 @@ entry:
 ; abc/optimized/sswPairs.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/sswUnique.c.ll
 ; abc/optimized/wlcMem.c.ll
@@ -168,7 +168,6 @@ entry:
 ; clamav/optimized/7zCrc.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/autoit.c.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/oabd.c.ll
 ; clamav/optimized/sha256.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -268,7 +267,6 @@ entry:
 ; linux/optimized/random.ll
 ; linux/optimized/sit.ll
 ; linux/optimized/uhci-hcd.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/xfrm_state.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64ConditionalCompares.cpp.ll
@@ -860,7 +858,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -1143,6 +1140,7 @@ entry:
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -1199,13 +1197,10 @@ entry:
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openspiel/optimized/SolverIF.cpp.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
@@ -1229,12 +1224,10 @@ entry:
 ; pbrt-v4/optimized/samples.cpp.ll
 ; php/optimized/crc32.ll
 ; php/optimized/crypt_sha256.ll
-; php/optimized/hash_crc32.ll
 ; php/optimized/hash_gost.ll
 ; php/optimized/hash_sha.ll
 ; php/optimized/zip.ll
 ; pocketpy/optimized/random.cpp.ll
-; postgres/optimized/checksum.ll
 ; postgres/optimized/file.ll
 ; postgres/optimized/pg_checksums.ll
 ; postgres/optimized/pg_crc32c_sb8.ll
@@ -1303,7 +1296,6 @@ entry:
 ; wireshark/optimized/crc16.c.ll
 ; wireshark/optimized/crc32.c.ll
 ; wireshark/optimized/dot11decrypt_wep.c.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-cipsafety.c.ll
 ; wireshark/optimized/packet-gprs-llc.c.ll
@@ -1358,11 +1350,15 @@ entry:
 ; z3/optimized/theory_array_base.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 

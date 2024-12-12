@@ -1,9 +1,10 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/feather.cc.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; libquic/optimized/cfb64ede.c.ll
+; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll
@@ -19,12 +20,16 @@
 define i8 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }
 
-; 27 occurrences:
+; 31 occurrences:
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_wiprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
 ; grpc/optimized/bin_encoder.cc.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libpng/optimized/pngrutil.c.ll
@@ -56,14 +61,15 @@ entry:
 define i8 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwutil.c.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; openjdk/optimized/pngrutil.ll
 ; spike/optimized/plic.ll
 ; verilator/optimized/V3Number.cpp.ll
@@ -71,7 +77,7 @@ entry:
 define i8 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }

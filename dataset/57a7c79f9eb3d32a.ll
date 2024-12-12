@@ -21,12 +21,11 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; hyperscan/optimized/fdr_engine_description.cpp.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_fb.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

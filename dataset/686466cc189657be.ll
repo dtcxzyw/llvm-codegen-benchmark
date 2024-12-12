@@ -1,5 +1,5 @@
 
-; 171 occurrences:
+; 172 occurrences:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
@@ -76,7 +76,6 @@
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -171,6 +170,8 @@
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; xgboost/optimized/random.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

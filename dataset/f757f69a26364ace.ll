@@ -1,6 +1,7 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/src.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
 ; gromacs/optimized/xtc2.c.ll
@@ -57,11 +58,11 @@ define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = select i1 %1, i32 %3, i32 %2
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/demangle.cc.ll
 ; clamav/optimized/Bra86.c.ll
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
@@ -72,6 +73,8 @@ entry:
 ; linux/optimized/fair.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_tabview.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet-http2.c.ll

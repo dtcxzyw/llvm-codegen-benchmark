@@ -1,28 +1,18 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	mov	w8, #2097151                    // =0x1fffff
-	usra	v3.2d, v5.2d, #21
-	usra	v2.2d, v4.2d, #21
-	dup	v4.2d, x8
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	sshr	v0.2d, v0.2d, #21
-	sshr	v1.2d, v1.2d, #21
+	lsr	x8, x2, #21
+	add	w8, w1, w8
+	and	x8, x8, #0x1fffff
+	add	x8, x0, x8
+	asr	x0, x8, #21
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #2097151                    // =0x1fffff
-	usra	v3.2d, v5.2d, #21
-	usra	v2.2d, v4.2d, #21
-	dup	v4.2d, x8
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	sshr	v0.2d, v0.2d, #21
-	sshr	v1.2d, v1.2d, #21
+	lsr	x8, x2, #21
+	add	w8, w1, w8
+	and	x8, x8, #0x1fffff
+	add	x8, x0, x8
+	asr	x0, x8, #21
 	ret
                                         // -- End function

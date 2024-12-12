@@ -1,5 +1,5 @@
 
-; 159 occurrences:
+; 166 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -23,6 +23,7 @@
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -159,6 +160,12 @@
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000006(i128 %0) #0 {
 entry:
@@ -177,12 +184,11 @@ entry:
   ret i128 %2
 }
 
-; 240 occurrences:
+; 241 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
@@ -201,6 +207,8 @@ entry:
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/mpdecimal.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll

@@ -5,7 +5,7 @@
 ; icu/optimized/ucase.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000042(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32
   %3 = icmp eq i16 %2, 0

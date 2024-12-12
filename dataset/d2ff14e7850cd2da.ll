@@ -17,10 +17,24 @@
 ; wireshark/optimized/packet-saphdb.c.ll
 ; wireshark/optimized/packet-thread.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 91
   %3 = icmp eq i8 %1, 76
+  %4 = or i1 %3, %2
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; zed-rs/optimized/1774ern7vmjezjfzajsdneavj.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000050(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp eq i8 %1, 7
+  %3 = icmp ugt i8 %1, 22
   %4 = or i1 %3, %2
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5

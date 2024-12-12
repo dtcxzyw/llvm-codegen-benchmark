@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	sext.w	a0, a0
 	add	a1, a1, a2
 	sraiw	a2, a1, 31
@@ -6,7 +6,7 @@ func0000000000000054:                   # @func0000000000000054
 	subw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a0, a0
 	add	a1, a1, a2
 	sraiw	a2, a1, 31
@@ -14,7 +14,31 @@ func000000000000005a:                   # @func000000000000005a
 	subw	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func0000000000000051:                   # @func0000000000000051
+func000000000000002a:                   # @func000000000000002a
+	sext.w	a0, a0
+	add	a1, a1, a2
+	sraiw	a2, a1, 31
+	xor	a1, a1, a2
+	subw	a1, a1, a2
+	slt	a0, a0, a1
+	ret
+func00000000000000b8:                   # @func00000000000000b8
+	sext.w	a0, a0
+	add	a1, a1, a2
+	sraiw	a2, a1, 31
+	xor	a1, a1, a2
+	subw	a1, a1, a2
+	sltu	a0, a0, a1
+	ret
+func0000000000000034:                   # @func0000000000000034
+	sext.w	a0, a0
+	add	a1, a1, a2
+	sraiw	a2, a1, 31
+	xor	a1, a1, a2
+	subw	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a0, a0
 	add	a1, a1, a2
 	sraiw	a2, a1, 31
@@ -23,7 +47,7 @@ func0000000000000051:                   # @func0000000000000051
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000d5:                   # @func00000000000000d5
+func00000000000001b5:                   # @func00000000000001b5
 	sext.w	a0, a0
 	add	a1, a1, a2
 	sraiw	a2, a1, 31
@@ -32,7 +56,7 @@ func00000000000000d5:                   # @func00000000000000d5
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	sext.w	a0, a0
 	add	a1, a1, a2
 	sraiw	a2, a1, 31
@@ -40,7 +64,7 @@ func00000000000000da:                   # @func00000000000000da
 	subw	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	sext.w	a0, a0
 	add	a1, a1, a2
 	sraiw	a2, a1, 31

@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; openusd/optimized/fixed-dtoa.cc.ll

@@ -10,3 +10,8 @@ func0000000000000006:                   # @func0000000000000006
 	testb	%dil, %dil
 	setle	%al
 	retq
+func0000000000000104:                   # @func0000000000000104
+	subb	%dil, %sil
+	cmpb	$-3, %sil
+	setae	%al
+	retq

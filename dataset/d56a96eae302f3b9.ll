@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 84 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -14,6 +14,8 @@
 ; libquic/optimized/f_enum.c.ll
 ; libquic/optimized/f_int.c.ll
 ; libquic/optimized/prtime.cc.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
@@ -90,7 +92,7 @@ entry:
   ret i32 %3
 }
 
-; 105 occurrences:
+; 110 occurrences:
 ; abc/optimized/cuddInteract.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaCSat3.c.ll
@@ -128,6 +130,11 @@ entry:
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshoptimizer/optimized/quantization.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
@@ -241,11 +248,10 @@ entry:
   ret i32 %3
 }
 
-; 570 occurrences:
+; 590 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcDetect.c.ll
-; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/absDup.c.ll
@@ -340,7 +346,6 @@ entry:
 ; abc/optimized/saigPhase.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satTruth.c.ll
-; abc/optimized/satUtil.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdPath.c.ll
 ; abc/optimized/sfmDec.c.ll
@@ -360,6 +365,9 @@ entry:
 ; abseil-cpp/optimized/time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
@@ -444,7 +452,6 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/error_correction.c.ll
 ; libquic/optimized/wnaf.c.ll
-; libquic/optimized/x_long.c.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/enc.c.ll
 ; libwebp/optimized/lossless.c.ll
@@ -554,6 +561,20 @@ entry:
 ; luau/optimized/lnumprint.cpp.ll
 ; luau/optimized/ltablib.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_freetype.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_scale.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -569,7 +590,6 @@ entry:
 ; minetest/optimized/mg_ore.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/rollback.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -721,6 +741,7 @@ entry:
 ; openusd/optimized/convolve.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
+; openusd/optimized/detokenize.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/reconinter.c.ll
 ; openusd/optimized/reconintra.c.ll
@@ -784,6 +805,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; velox/optimized/Scanner.cpp.ll
 ; verilator/optimized/V3Expand.cpp.ll
@@ -795,6 +817,11 @@ entry:
 ; yosys/optimized/rtlil_lexer.ll
 ; yosys/optimized/verilog_lexer.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zfp/optimized/decode1f.c.ll
 ; zfp/optimized/decode1i.c.ll
 ; zfp/optimized/decode2f.c.ll
@@ -827,7 +854,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 3
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 

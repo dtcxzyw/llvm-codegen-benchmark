@@ -1,5 +1,11 @@
 
-; 3 occurrences:
+; 9 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; linux/optimized/netfilter.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
@@ -23,7 +29,7 @@ define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i16
   %.tr = xor i16 %2, -1
-  %.narrow = add i16 %.tr, %1
+  %.narrow = add i16 %1, %.tr
   %3 = zext i16 %.narrow to i32
   ret i32 %3
 }

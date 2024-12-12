@@ -1,8 +1,7 @@
 
-; 48 occurrences:
+; 46 occurrences:
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
-; flatbuffers/optimized/flatc.cpp.ll
 ; icu/optimized/dtptngen.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
@@ -19,7 +18,6 @@
 ; openusd/optimized/event.cpp.ll
 ; php/optimized/pcre2_auto_possess.ll
 ; qemu/optimized/disas_riscv.c.ll
-; qemu/optimized/hw_net_can_ctucan_pci.c.ll
 ; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll

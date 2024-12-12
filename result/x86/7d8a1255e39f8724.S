@@ -34,3 +34,9 @@ func0000000000000008:                   # @func0000000000000008
 	andb	%dil, %al
 	movzbl	%al, %eax
 	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpq	$3, %rsi
+	setb	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	retq

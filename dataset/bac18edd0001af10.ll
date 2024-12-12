@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 87 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -56,6 +56,9 @@
 ; git/optimized/pack-bitmap.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/state_compress.c.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; libdeflate/optimized/deflate_decompress.c.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/hugetlb.ll

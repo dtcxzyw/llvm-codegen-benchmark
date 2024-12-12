@@ -14,7 +14,7 @@ entry:
   %3 = shl i64 %2, 2
   %4 = shl i64 %1, 1
   %5 = icmp ne i64 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

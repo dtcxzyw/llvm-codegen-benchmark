@@ -53,12 +53,14 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i32 %0, i64 %1) #0 {
 entry:

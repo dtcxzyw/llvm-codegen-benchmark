@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 109 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; crow/optimized/example_cookies.cpp.ll
@@ -102,7 +102,6 @@
 ; rocksdb/optimized/sortlist.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; stockfish/optimized/tbprobe.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; wasmedge/optimized/global.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasimodule.cpp.ll
@@ -141,7 +140,7 @@ entry:
   ret i64 %5
 }
 
-; 190 occurrences:
+; 189 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -297,7 +296,6 @@ entry:
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -397,12 +395,11 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; openblas/optimized/dgemm_thread_nn.c.ll
 ; openblas/optimized/dgemm_thread_nt.c.ll
 ; openblas/optimized/dgemm_thread_tn.c.ll
 ; openblas/optimized/dgemm_thread_tt.c.ll
-; openblas/optimized/dpotrf_U_single.c.ll
 ; openblas/optimized/dsymm_thread_LL.c.ll
 ; openblas/optimized/dsymm_thread_LU.c.ll
 ; openblas/optimized/dsymm_thread_RL.c.ll

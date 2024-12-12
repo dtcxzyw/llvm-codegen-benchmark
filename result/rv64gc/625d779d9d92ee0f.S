@@ -46,10 +46,6 @@ func0000000000000013:                   # @func0000000000000013
 	srli	a0, a0, 32
 	addiw	a0, a0, -1
 	ret
-func0000000000000007:                   # @func0000000000000007
-	srli	a0, a0, 3
-	addiw	a0, a0, 1
-	ret
 func0000000000000017:                   # @func0000000000000017
 	srli	a0, a0, 5
 	addiw	a0, a0, 1

@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	addiw	a0, a0, -8
@@ -13,43 +13,60 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	addiw	a0, a0, -32
 	sltiu	a0, a0, 95
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a4:                   # @func00000000000000a4
+	andi	a1, a1, 255
+	or	a0, a0, a1
+	lui	a1, 4
+	addiw	a0, a0, -16
+	addiw	a1, a1, -15
+	sltu	a0, a0, a1
+	ret
+func00000000000000b8:                   # @func00000000000000b8
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	addiw	a0, a0, -3
 	sltiu	a0, a0, -2
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	sext.w	a0, a0
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	srliw	a0, a0, 10
 	addi	a0, a0, -55
 	seqz	a0, a0
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	addiw	a0, a0, -127
 	sltiu	a0, a0, 33
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	addiw	a0, a0, -4
 	sltiu	a0, a0, -8
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func00000000000000a8:                   # @func00000000000000a8
+	andi	a1, a1, 255
+	lui	a2, 1048512
+	or	a0, a0, a1
+	addi	a1, a2, -21
+	addw	a0, a0, a1
+	addiw	a2, a2, -1
+	sltu	a0, a0, a2
+	ret
+func0000000000000184:                   # @func0000000000000184
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	lui	a1, 1048560
@@ -57,13 +74,13 @@ func00000000000000c4:                   # @func00000000000000c4
 	addw	a0, a0, a1
 	sltiu	a0, a0, 32
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	addiw	a0, a0, -1
 	slti	a0, a0, 0
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	addiw	a0, a0, -1

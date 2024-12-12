@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 74 occurrences:
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
 ; clamav/optimized/autoit.c.ll
@@ -69,6 +69,7 @@
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_vorbis.c.ll
 ; velox/optimized/UnsafeRowFast.cpp.ll
 ; wireshark/optimized/sharkd_session.c.ll
 ; xgboost/optimized/hist_util.cc.ll
@@ -93,7 +94,7 @@ entry:
   ret i64 %4
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -113,6 +114,7 @@ entry:
 ; jq/optimized/decNumber.ll
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
+; linux/optimized/ich8lan.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
@@ -133,6 +135,21 @@ define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = shl nuw nsw i32 %2, 2
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 5 occurrences:
+; assimp/optimized/OFFLoader.cpp.ll
+; icu/optimized/number_decimalquantity.ll
+; opencv/optimized/merge.dispatch.cpp.ll
+; qemu/optimized/target_riscv_pmp.c.ll
+; tomlplusplus/optimized/toml.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %0, %1
+  %3 = shl nuw nsw i32 %2, 4
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -228,20 +245,6 @@ entry:
   %2 = add nsw i32 %0, %1
   %3 = shl i32 %2, 16
   %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 4 occurrences:
-; assimp/optimized/OFFLoader.cpp.ll
-; icu/optimized/number_decimalquantity.ll
-; opencv/optimized/merge.dispatch.cpp.ll
-; tomlplusplus/optimized/toml.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %0, %1
-  %3 = shl nuw nsw i32 %2, 2
-  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

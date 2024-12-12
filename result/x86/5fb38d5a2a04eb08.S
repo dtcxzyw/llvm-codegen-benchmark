@@ -5,6 +5,12 @@ func0000000000000020:                   # @func0000000000000020
 	cmovbq	%rsi, %rcx
 	subq	%rcx, %rax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	movq	%rdi, %rax
+	cmpq	$32, %rdi
+	cmoveq	%rdi, %rsi
+	subq	%rsi, %rax
+	retq
 func0000000000000019:                   # @func0000000000000019
 	movq	%rdi, %rax
 	testq	%rdi, %rdi
@@ -19,23 +25,10 @@ func0000000000000029:                   # @func0000000000000029
 	cmovlq	%rsi, %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	movq	%rdi, %rax
-	testq	%rdi, %rdi
-	cmoveq	%rdi, %rsi
-	subq	%rsi, %rax
-	retq
 func0000000000000018:                   # @func0000000000000018
 	movq	%rdi, %rax
 	xorl	%ecx, %ecx
 	testq	%rdi, %rdi
 	cmovnsq	%rsi, %rcx
-	subq	%rcx, %rax
-	retq
-func0000000000000021:                   # @func0000000000000021
-	movq	%rdi, %rax
-	cmpq	$2147483647, %rdi               # imm = 0x7FFFFFFF
-	movl	$2147483647, %ecx               # imm = 0x7FFFFFFF
-	cmovbeq	%rsi, %rcx
 	subq	%rcx, %rax
 	retq

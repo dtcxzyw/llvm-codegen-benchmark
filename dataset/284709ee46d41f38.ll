@@ -17,7 +17,7 @@ entry:
   ret i64 %4
 }
 
-; 26 occurrences:
+; 60 occurrences:
 ; actix-rs/optimized/3sxbtmgc7txd1oqx.ll
 ; actix-rs/optimized/4fx1675rviyztxx0.ll
 ; actix-rs/optimized/d7z2ueos8qkfuul.ll
@@ -44,8 +44,42 @@ entry:
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1vv5j9nlfivum07q3z96mzhlk.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/3r1m4prp00pk2zcmrznfgmdke.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/41d8ddll8wwmef8q97jpo9b7d.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/7435o5as5af1nwuofltvv4x7w.ll
+; zed-rs/optimized/7nyodpla10x7d0ixqrkhccie4.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/9v5brbyi15mcpvvj8t9dauqn4.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bg38611xfnz0abj8o6yh866zw.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cgxtqkz3q1lf4y8mn1r3vggst.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/d334eo7xhndhquqddprlqx6j8.ll
+; zed-rs/optimized/dr3ks0ib80ortjwkcqg0973x1.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 6
   %2 = icmp eq i64 %1, 4

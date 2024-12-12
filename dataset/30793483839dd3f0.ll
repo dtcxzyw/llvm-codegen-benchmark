@@ -1,13 +1,14 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; hdf5/optimized/H5Znbit.c.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
 }
@@ -26,7 +27,7 @@ define i8 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
@@ -40,7 +41,7 @@ define i8 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }

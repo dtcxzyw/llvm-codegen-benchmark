@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -9,7 +9,6 @@
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/ParseExpr.cpp.ll
 ; llvm/optimized/ProfileSummaryBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/TypeRecordMapping.cpp.ll

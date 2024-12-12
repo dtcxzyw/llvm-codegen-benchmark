@@ -1,17 +1,14 @@
 
-; 29 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; cpython/optimized/binascii.ll
 ; git/optimized/archive-tar.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; linux/optimized/inotify_user.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_display_power_well.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/libata-core.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; luajit/optimized/lj_asm.ll

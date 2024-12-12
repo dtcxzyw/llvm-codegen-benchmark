@@ -5,7 +5,7 @@
 ; php/optimized/cgi_main.ll
 ; yosys/optimized/blifparse.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = icmp eq ptr %0, null
   %not. = xor i1 %2, true
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/editor.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = icmp ne ptr %0, null
   %4 = select i1 %2, i1 %3, i1 false

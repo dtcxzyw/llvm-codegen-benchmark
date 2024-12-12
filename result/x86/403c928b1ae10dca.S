@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	shll	$3, %esi
 	andb	$16, %sil
 	shrxl	%esi, %edi, %eax
@@ -19,6 +19,20 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$2, %eax
 	setne	%al
 	retq
+func0000000000000081:                   # @func0000000000000081
+	addl	%esi, %esi
+	shrxl	%esi, %edi, %eax
+	andl	$3, %eax
+	cmpl	$1, %eax
+	sete	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	shll	$2, %esi
+	shrxl	%esi, %edi, %eax
+	andl	$14, %eax
+	cmpl	$10, %eax
+	setb	%al
+	retq
 func0000000000000041:                   # @func0000000000000041
 	addl	%esi, %esi
 	shrxl	%esi, %edi, %eax
@@ -26,21 +40,7 @@ func0000000000000041:                   # @func0000000000000041
 	cmpl	$1, %eax
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	shll	$2, %esi
-	shrxl	%esi, %edi, %eax
-	andl	$14, %eax
-	cmpl	$10, %eax
-	setb	%al
-	retq
-func0000000000000021:                   # @func0000000000000021
-	addl	%esi, %esi
-	shrxl	%esi, %edi, %eax
-	andl	$3, %eax
-	cmpl	$1, %eax
-	sete	%al
-	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	addl	%esi, %esi
 	shrxl	%esi, %edi, %eax
 	notl	%eax

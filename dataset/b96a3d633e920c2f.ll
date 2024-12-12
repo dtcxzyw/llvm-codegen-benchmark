@@ -1,14 +1,11 @@
 
-; 7 occurrences:
+; 4 occurrences:
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openjdk/optimized/cmspack.ll
 ; wireshark/optimized/packet-radius.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = icmp eq i32 %0, 0
@@ -19,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/b3RadixSort32CL.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
   %3 = icmp slt i32 %0, 30465
@@ -48,10 +45,10 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/exponentiation.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
-  %3 = icmp ugt i32 %0, 4
+  %3 = icmp samesign ugt i32 %0, 4
   %4 = select i1 %3, i32 %2, i32 0
   ret i32 %4
 }
@@ -59,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_overlay.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = icmp eq i32 %0, 256
@@ -67,10 +64,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; glog/optimized/logging.cc.ll
-; luajit/optimized/lj_cparse.ll
-; luajit/optimized/lj_cparse_dyn.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
@@ -80,10 +75,22 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; luajit/optimized/lj_cparse.ll
+; luajit/optimized/lj_cparse_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 3
+  %3 = icmp samesign ult i32 %0, 134217728
+  %4 = select i1 %3, i32 %2, i32 1
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; graphviz/optimized/pack.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %.inv = icmp slt i32 %0, 0

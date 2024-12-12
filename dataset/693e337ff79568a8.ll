@@ -1,5 +1,5 @@
 
-%struct.pmp_entry_t.2596713 = type { i64, i8 }
+%struct.pmp_entry_t.2710180 = type { i64, i8 }
 
 ; 3 occurrences:
 ; linux/optimized/ich8lan.ll
@@ -23,19 +23,19 @@ entry:
   %3 = add i32 %1, %2
   %4 = add nsw i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [16 x %struct.pmp_entry_t.2596713], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [16 x %struct.pmp_entry_t.2710180], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/cmsalpha.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000006b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = add nsw i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw [16 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [16 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -44,12 +44,12 @@ entry:
 ; clamav/optimized/netcode.c.ll
 ; hwloc/optimized/topology-linux.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw [33025 x i8], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [33025 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -58,24 +58,24 @@ entry:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = add nuw nsw i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [8 x i8], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [8 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; clamav/optimized/recvol.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [256 x ptr], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [256 x ptr], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

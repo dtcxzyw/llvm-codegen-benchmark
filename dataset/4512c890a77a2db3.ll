@@ -1,8 +1,7 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; linux/optimized/ethtool.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_audio.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll

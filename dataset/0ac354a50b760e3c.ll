@@ -1,9 +1,10 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/giaFrames.c.ll
 ; abc/optimized/ioReadBlif.c.ll
+; boost/optimized/to_chars.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; graphviz/optimized/ns.c.ll
@@ -21,13 +22,14 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; postgres/optimized/visibilitymap.ll
 ; yosys/optimized/test_pmgen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = urem i32 %1, 100
-  %3 = icmp ugt i32 %2, 9
+  %3 = icmp samesign ugt i32 %2, 9
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
 }

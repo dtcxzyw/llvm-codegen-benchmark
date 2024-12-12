@@ -7,7 +7,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -233
   %4 = select i1 %3, i64 %1, i64 1
-  %5 = mul nuw nsw i64 %4, %0
+  %5 = mul nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -38,28 +38,6 @@ entry:
   %4 = select i1 %3, i64 %1, i64 0
   %5 = mul i64 %4, %0
   ret i64 %5
-}
-
-; 1 occurrences:
-; gromacs/optimized/tng_io.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000030(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %.not = icmp eq i32 %2, 0
-  %3 = select i1 %.not, i64 1, i64 %1
-  %4 = mul i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; gromacs/optimized/tng_io.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %.not = icmp eq i32 %2, 0
-  %3 = select i1 %.not, i64 1, i64 %1
-  %4 = mul nsw i64 %3, %0
-  ret i64 %4
 }
 
 ; 1 occurrences:

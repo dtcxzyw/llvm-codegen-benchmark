@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 29 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
@@ -14,8 +14,13 @@
 ; linux/optimized/x_tables.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/buildvm.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; openjdk/optimized/Inet6AddressImpl.ll
 ; openjdk/optimized/klass.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openjdk/optimized/pngread.ll

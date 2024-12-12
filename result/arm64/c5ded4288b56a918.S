@@ -1,61 +1,28 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	mov	w8, #63                         // =0x3f
-	dup	v2.2d, x8
-	mov	x8, #9007199254740928           // =0x1fffffffffffc0
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
-	dup	v2.2d, x8
+	add	x9, x0, #63
 	mov	w8, #5                          // =0x5
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	dup	v2.2d, x8
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v2.16b
+	and	x9, x9, #0x1fffffffffffc0
+	orr	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	x8, #-5                         // =0xfffffffffffffffb
-	dup	v2.2d, x8
-	mov	x8, #-16                        // =0xfffffffffffffff0
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
-	dup	v2.2d, x8
-	mov	w8, #5                          // =0x5
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	dup	v2.2d, x8
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v2.16b
+	mov	x8, #5                          // =0x5
+	sub	x0, x0, #5
+	bfxil	x0, x8, #0, #4
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #-2                         // =0xfffffffe
-	dup	v2.2d, x8
-	mov	w8, #1                          // =0x1
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	dup	v2.2d, x8
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v2.16b
+	sub	w8, w0, #2
+	and	x8, x8, #0xfffffffe
+	orr	x0, x8, #0x1
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	movi	v3.2d, #0x000000ffffffff
-	dup	v2.2d, x8
-	mov	x8, #12884901888                // =0x300000000
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
-	dup	v2.2d, x8
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v2.16b
+	add	w8, w0, #1
+	orr	x0, x8, #0x300000000
 	ret
                                         // -- End function

@@ -54,7 +54,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 12
   %3 = lshr i32 %2, 3
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2712563 = type { float, float, float }
+%class.aiVector3t.2825115 = type { float, float, float }
 
 ; 11 occurrences:
 ; abc/optimized/extraUtilDsd.c.ll
@@ -18,7 +18,7 @@ define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %class.aiVector3t.2712563, ptr %0, i64 %4
+  %5 = getelementptr nusw %class.aiVector3t.2825115, ptr %0, i64 %4
   ret ptr %5
 }
 

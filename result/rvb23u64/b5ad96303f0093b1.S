@@ -19,3 +19,15 @@ func00000000000000f0:                   # @func00000000000000f0
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+func00000000000001b8:                   # @func00000000000001b8
+	slli	a2, a2, 28
+	add	a0, a0, a2
+	slli	a1, a1, 56
+	add	a0, a0, a1
+	ret
+func00000000000001fe:                   # @func00000000000001fe
+	slli	a2, a2, 28
+	add	a0, a0, a2
+	slli	a1, a1, 56
+	add	a0, a0, a1
+	ret

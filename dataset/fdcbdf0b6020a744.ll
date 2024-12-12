@@ -1,5 +1,5 @@
 
-%struct.ZStoreBarrierEntry.2633398 = type { ptr, i64 }
+%struct.ZStoreBarrierEntry.2746792 = type { ptr, i64 }
 
 ; 2 occurrences:
 ; cpython/optimized/obmalloc.ll
@@ -26,8 +26,7 @@ entry:
   ret ptr %4
 }
 
-; 7 occurrences:
-; abseil-cpp/optimized/hash_test.cc.ll
+; 6 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; mimalloc/optimized/alloc.c.ll
 ; openjdk/optimized/zBarrier.ll
@@ -35,46 +34,47 @@ entry:
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rust-analyzer-rs/optimized/5c13ae2xelsf4ggd.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -16
   %3 = lshr i64 %2, 4
-  %4 = getelementptr nusw [32 x %struct.ZStoreBarrierEntry.2633398], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [32 x %struct.ZStoreBarrierEntry.2746792], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/ilnj6n0bhpk5oz9.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = lshr i64 %2, 6
-  %4 = getelementptr nusw [0 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [0 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; abseil-cpp/optimized/hash_test.cc.ll
 ; mimalloc/optimized/alloc.c.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; spike/optimized/plic.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 6
-  %4 = getelementptr nusw [0 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [0 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2
   %3 = lshr exact i64 %2, 1
-  %4 = getelementptr nusw [12800 x float], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [12800 x float], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -89,11 +89,11 @@ entry:
 ; mimalloc/optimized/arena.c.ll
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = lshr i64 %2, 8
-  %4 = getelementptr nusw [2 x ptr], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

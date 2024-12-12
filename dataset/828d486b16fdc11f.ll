@@ -1,6 +1,5 @@
 
-; 56 occurrences:
-; actix-rs/optimized/comsm606o4zjj7a.ll
+; 54 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ABIInfoImpl.cpp.ll
@@ -45,7 +44,6 @@
 ; llvm/optimized/LowerMemIntrinsics.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/OffloadWrapper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll

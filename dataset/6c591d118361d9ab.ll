@@ -40,7 +40,7 @@ entry:
   ret i32 %2
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; brotli/optimized/decode.c.ll
@@ -50,7 +50,6 @@ entry:
 ; linux/optimized/stats.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll

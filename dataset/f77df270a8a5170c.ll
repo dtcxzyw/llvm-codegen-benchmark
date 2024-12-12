@@ -1,5 +1,5 @@
 
-; 87 occurrences:
+; 85 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -25,8 +25,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -88,12 +86,12 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl i64 %1, %4
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -106,7 +104,7 @@ entry:
   %3 = sub i32 -54, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl i64 %1, %4
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -114,12 +112,12 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ca(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000038a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 64, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl i64 %1, %4
-  %6 = icmp slt i64 %5, %0
+  %6 = icmp sgt i64 %0, %5
   ret i1 %6
 }
 
@@ -131,19 +129,19 @@ entry:
   %3 = sub i32 63, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl i64 %1, %4
-  %6 = icmp ule i64 %5, %0
+  %6 = icmp uge i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; redis/optimized/hdr_histogram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 63, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl i64 %1, %4
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

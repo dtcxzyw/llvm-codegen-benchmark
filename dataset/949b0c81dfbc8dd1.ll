@@ -54,8 +54,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; eastl/optimized/TestBitset.cpp.ll
+; 1 occurrences:
 ; linux/optimized/intel_psr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1, i16 %2) #0 {
@@ -75,6 +74,17 @@ entry:
   %3 = icmp slt i16 %2, 1
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = or i32 %4, 2
+  ret i32 %5
+}
+
+; 1 occurrences:
+; eastl/optimized/TestBitset.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000029(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = icmp samesign ult i16 %2, 16
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = or disjoint i32 %4, 2
   ret i32 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 152 occurrences:
+; 154 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -152,15 +152,17 @@
 ; postgres/optimized/regexec.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
-; 37 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaSupps.c.ll
@@ -178,21 +180,8 @@ entry:
 ; ncnn/optimized/flatten_x86_avx512.cpp.ll
 ; ncnn/optimized/flatten_x86_fma.cpp.ll
 ; ncnn/optimized/reshape_x86.cpp.ll
-; openblas/optimized/dgbmv_thread_t.c.ll
 ; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
 ; openblas/optimized/dgemm_small_kernel_nn.c.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dsymv_thread_L.c.ll
-; openblas/optimized/dsymv_thread_U.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
 ; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
 ; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
@@ -225,7 +214,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 16384
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 

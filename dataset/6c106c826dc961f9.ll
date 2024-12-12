@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/evdev.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/snapshot.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll

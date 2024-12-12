@@ -9,12 +9,7 @@ func0000000000000005:                   # @func0000000000000005
 	leal	-2(%rsi), %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	shrl	$3, %esi
-	notl	%edi
-	leal	(%rdi,%rsi), %eax
-	retq
-func000000000000000c:                   # @func000000000000000c
-	shrl	$3, %esi
+	shrl	%esi
 	subl	%edi, %esi
-	leal	11(%rsi), %eax
+	leal	-15(%rsi), %eax
 	retq

@@ -6,7 +6,7 @@
 ; openjdk/optimized/macroAssembler_x86.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 32
   %4 = select i1 %3, i64 %1, i64 -1
@@ -21,11 +21,11 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 %1, i64 -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
@@ -34,7 +34,7 @@ entry:
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 64
   %4 = select i1 %3, i64 %1, i64 -1
@@ -46,11 +46,11 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 64
   %4 = select i1 %3, i64 %1, i64 -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }

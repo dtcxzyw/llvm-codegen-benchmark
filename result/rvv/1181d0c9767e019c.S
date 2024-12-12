@@ -3,14 +3,14 @@ func0000000000000034:                   # @func0000000000000034
 	vmv.v.i	v12, -1
 	vsll.vv	v10, v12, v10
 	vnot.v	v10, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000020:                   # @func0000000000000020
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, -1
 	vsll.vv	v10, v12, v10
 	vnot.v	v10, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -34,7 +34,7 @@ func0000000000000022:                   # @func0000000000000022
 	vmv.v.i	v12, -1
 	vsll.vv	v10, v12, v10
 	vnot.v	v10, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 4, e64, m2, ta, ma

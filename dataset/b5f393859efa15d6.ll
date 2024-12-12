@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; postgres/optimized/tablecmds.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i16 %0) #0 {
 entry:

@@ -15,21 +15,22 @@
 define i8 @func0000000000000003(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   %4 = or disjoint i8 %3, 2
   ret i8 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; git/optimized/merge-ort.ll
 ; linux/optimized/8139too.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   %4 = or i8 %3, 2
   ret i8 %4
 }
@@ -40,7 +41,7 @@ entry:
 define i8 @func0000000000000000(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   %4 = or i8 %3, 2
   ret i8 %4
 }

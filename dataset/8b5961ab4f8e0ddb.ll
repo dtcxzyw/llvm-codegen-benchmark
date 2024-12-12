@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0) #0 {
+define i1 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 5
   %2 = sub nsw i32 %0, %1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/util_cutils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 10
   %2 = sub nsw i32 %0, %1
@@ -28,7 +28,7 @@ entry:
 ; oiio/optimized/imagecache.cpp.ll
 ; velox/optimized/VectorPool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0) #0 {
+define i1 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 64
   %2 = sub nsw i32 %0, %1

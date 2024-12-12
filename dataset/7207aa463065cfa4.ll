@@ -29,12 +29,12 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/exorCubes.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000002e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 40
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 40
   %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
@@ -47,12 +47,12 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 10
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 10
   %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
@@ -70,43 +70,29 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
-; linux/optimized/decompress_unlzma.ll
+; 1 occurrences:
 ; quickjs/optimized/libregexp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 32
+  %7 = getelementptr ptr, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; linux/optimized/decompress_unlzma.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = shl i32 %2, 1
+  %3 = shl i32 %2, 3
   %4 = sext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 32
-  %7 = getelementptr ptr, ptr %6, i64 %4
-  ret ptr %7
-}
-
-; 1 occurrences:
-; quickjs/optimized/libregexp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 32
-  %7 = getelementptr ptr, ptr %6, i64 %4
-  ret ptr %7
-}
-
-; 1 occurrences:
-; openblas/optimized/dtrsna.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw double, ptr %0, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 16
-  %7 = getelementptr double, ptr %6, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 4
+  %7 = getelementptr i16, ptr %6, i64 %4
   ret ptr %7
 }
 

@@ -5,7 +5,7 @@
 define i1 @func0000000000000008(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fcmp oeq float %2, %0
+  %3 = fcmp oeq float %0, %2
   ret i1 %3
 }
 
@@ -15,7 +15,7 @@ entry:
 define i1 @func000000000000001a(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp ole float %2, %0
+  %3 = fcmp oge float %0, %2
   ret i1 %3
 }
 
@@ -26,7 +26,7 @@ entry:
 define i1 @func0000000000000012(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   ret i1 %3
 }
 

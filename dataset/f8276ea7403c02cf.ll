@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-asn1_lib.ll
 ; openssl/optimized/libcrypto-shlib-asn1_lib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000541(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 7
   %4 = or disjoint i64 %3, %1

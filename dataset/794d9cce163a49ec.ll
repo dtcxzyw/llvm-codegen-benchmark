@@ -156,6 +156,19 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_image.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = shl nuw nsw i64 %1, 32
+  %5 = or disjoint i64 %4, %3
+  %6 = shl nuw i64 %0, 48
+  %7 = or disjoint i64 %6, %5
+  ret i64 %7
+}
+
+; 1 occurrences:
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
@@ -178,6 +191,19 @@ entry:
   %5 = or disjoint i64 %4, %3
   %6 = shl nsw i64 %0, 2
   %7 = or i64 %5, %6
+  ret i64 %7
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 31
+  %4 = shl nuw nsw i64 %1, 5
+  %5 = or disjoint i64 %4, %3
+  %6 = shl nuw nsw i64 %0, 24
+  %7 = or i64 %6, %5
   ret i64 %7
 }
 

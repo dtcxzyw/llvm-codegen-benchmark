@@ -23,7 +23,7 @@ entry:
   %4 = select i1 %3, i8 0, i8 12
   %5 = and i8 %1, 18
   %6 = or disjoint i8 %4, %5
-  %7 = or i8 %6, %0
+  %7 = or i8 %0, %6
   ret i8 %7
 }
 

@@ -26,13 +26,12 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
-; darktable/optimized/jpeg.c.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
@@ -76,29 +75,6 @@ define i64 @func0000000000000019(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = mul i32 %1, 3
-  %3 = zext nneg i32 %2 to i64
-  ret i64 %3
-}
-
-; 1 occurrences:
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0) #0 {
-entry:
-  %1 = trunc i64 %0 to i32
-  %2 = mul nsw i32 %1, 3
-  %3 = zext nneg i32 %2 to i64
-  ret i64 %3
-}
-
-; 2 occurrences:
-; delta-rs/optimized/43y2svfstmvqcl15.ll
-; delta-rs/optimized/4zvphat0q9a964bz.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000b(i64 %0) #0 {
-entry:
-  %1 = trunc nsw i64 %0 to i32
-  %2 = mul nsw i32 %1, 1000
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }

@@ -28,14 +28,27 @@ func0000000000000006:                   # @func0000000000000006
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 255
-	li	a2, 59
-	bltu	a0, a2, .LBB2_2
-	li	a0, -26
-	ret
-.LBB2_2:
 	andi	a1, a1, 1
-	addi	a0, a1, -1
-	andi	a0, a0, -13
+	addi	a1, a1, 2
+	sltiu	a0, a0, 2
+	neg	a0, a0
+	and	a0, a0, a1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	andi	a2, a1, 1
+	andi	a1, a0, 255
+	bnez	a2, .LBB3_2
+	li	a0, 65
+	li	a2, 26
+	bgeu	a1, a2, .LBB3_3
+	j	.LBB3_4
+.LBB3_2:
+	li	a0, 97
+	li	a2, 26
+	bltu	a1, a2, .LBB3_4
+.LBB3_3:                                # %entry
+	li	a0, 24
+.LBB3_4:                                # %entry
 	ret

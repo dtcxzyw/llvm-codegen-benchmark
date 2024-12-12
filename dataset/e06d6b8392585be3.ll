@@ -1,6 +1,7 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; linux/optimized/drm_modes.ll
+; lvgl/optimized/lv_area.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/filter_dock_dialog.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -35,7 +36,7 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; draco/optimized/shannon_entropy.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -43,7 +44,6 @@ entry:
 ; icu/optimized/cal.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; stockfish/optimized/search.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind

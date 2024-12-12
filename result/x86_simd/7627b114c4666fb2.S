@@ -94,7 +94,7 @@ func0000000000000009:                   # @func0000000000000009
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vpslld	$3, %ymm2, %ymm2
@@ -143,7 +143,7 @@ func0000000000000008:                   # @func0000000000000008
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000019:                   # @func0000000000000019
 	vpaddd	%ymm2, %ymm2, %ymm2
@@ -192,7 +192,7 @@ func0000000000000019:                   # @func0000000000000019
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000018:                   # @func0000000000000018
 	vpaddd	%ymm2, %ymm2, %ymm2
@@ -241,5 +241,5 @@ func0000000000000018:                   # @func0000000000000018
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq

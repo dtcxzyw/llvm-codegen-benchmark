@@ -18,9 +18,8 @@ entry:
   ret i8 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000003c(i8 %0, i8 %1, i32 %2) #0 {
 entry:

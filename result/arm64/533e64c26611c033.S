@@ -1,53 +1,32 @@
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	mvni	v4.4s, #5
-	orr	v2.16b, v2.16b, v4.16b
-	orr	v3.16b, v3.16b, v4.16b
-	cmgt	v1.4s, v3.4s, v1.4s
-	cmgt	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mov	w8, #-6                         // =0xfffffffa
+	bfxil	w8, w1, #0, #1
+	cmp	w8, w0
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	movi	v4.4s, #224
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	orr	v2.4s, #4
-	orr	v3.4s, #4
-	cmhi	v1.4s, v3.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	and	w8, w1, #0xe0
+	orr	w8, w8, #0x4
+	cmp	w8, w0
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	orr	v2.4s, #6
-	orr	v3.4s, #6
-	cmgt	v1.4s, v1.4s, v3.4s
-	cmgt	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mov	w8, #6                          // =0x6
+	bfxil	w8, w1, #0, #1
+	cmp	w8, w0
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v4.4s, #63
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	orr	v2.4s, #128
-	orr	v3.4s, #128
-	cmeq	v1.4s, v3.4s, v1.4s
-	cmeq	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mov	w8, #128                        // =0x80
+	bfxil	w8, w1, #0, #6
+	cmp	w8, w0
+	cset	w0, eq
 	ret
                                         // -- End function

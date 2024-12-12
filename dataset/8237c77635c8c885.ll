@@ -12,8 +12,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; 1 occurrences:
 ; spike/optimized/vaeskf1_vi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {

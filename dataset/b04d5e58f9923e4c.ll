@@ -13,10 +13,11 @@ entry:
   ret i1 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; hyperscan/optimized/ng_asserts.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; gromacs/optimized/gmx_h2order.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
@@ -7,7 +8,7 @@
 ; rocksdb/optimized/thread_status_impl.cc.ll
 ; wireshark/optimized/packet-ssh.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0) #0 {
+define i64 @func0000000000000043(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 2
   %2 = select i1 %1, i32 3, i32 0
@@ -21,7 +22,7 @@ entry:
 ; linux/optimized/alarmtimer.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i32 %0) #0 {
+define i64 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 2
   %2 = select i1 %1, i32 65535, i32 -1
@@ -34,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000155(i32 %0) #0 {
+define i64 @func0000000000000295(i32 %0) #0 {
 entry:
   %.inv = icmp slt i32 %0, 8
   %1 = select i1 %.inv, i32 4, i32 8

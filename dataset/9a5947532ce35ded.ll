@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -26,7 +28,7 @@ entry:
   %4 = icmp ne i32 %3, 0
   %5 = select i1 %1, i1 true, i1 %4
   %6 = select i1 %5, i32 536870912, i32 0
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 

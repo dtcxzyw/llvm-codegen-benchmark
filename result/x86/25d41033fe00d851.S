@@ -23,7 +23,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	shlxl	%edx, %esi, %eax
 	cmpl	%edi, %eax
 	setne	%al
@@ -33,17 +33,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	%edi, %eax
 	setne	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
-	shlxl	%edx, %esi, %eax
-	cmpl	%edi, %eax
-	setb	%al
-	retq
-func0000000000000016:                   # @func0000000000000016
-	shlxl	%edx, %esi, %eax
-	cmpl	%edi, %eax
-	setl	%al
-	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	shlxl	%edx, %esi, %eax
 	cmpl	%edi, %eax
 	seta	%al
@@ -53,12 +43,22 @@ func0000000000000007:                   # @func0000000000000007
 	cmpl	%edi, %eax
 	setle	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func0000000000000026:                   # @func0000000000000026
+	shlxl	%edx, %esi, %eax
+	cmpl	%edi, %eax
+	setl	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
 	shlxl	%edx, %esi, %eax
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000064:                   # @func0000000000000064
+	shlxl	%edx, %esi, %eax
+	cmpl	%edi, %eax
+	setb	%al
+	retq
+func0000000000000061:                   # @func0000000000000061
 	shlxl	%edx, %esi, %eax
 	cmpl	%edi, %eax
 	sete	%al

@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; hdf5/optimized/H5Shyper.c.ll
 ; lua/optimized/lgc.ll
 ; miniaudio/optimized/unity.c.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i8 %1) #0 {
 entry:

@@ -1,6 +1,6 @@
 
-%struct.aiVectorKey.2712183 = type <{ double, %class.aiVector3t.2712180, [4 x i8] }>
-%class.aiVector3t.2712180 = type { float, float, float }
+%struct.aiVectorKey.2824735 = type <{ double, %class.aiVector3t.2824732, [4 x i8] }>
+%class.aiVector3t.2824732 = type { float, float, float }
 
 ; 12 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
@@ -16,11 +16,11 @@
 ; stb/optimized/stb_vorbis.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, double %1) #0 {
+define ptr @func0000000000000003(ptr %0, double %1) #0 {
 entry:
   %2 = fptoui double %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %struct.aiVectorKey.2712183, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.aiVectorKey.2824735, ptr %0, i64 %3
   ret ptr %4
 }
 

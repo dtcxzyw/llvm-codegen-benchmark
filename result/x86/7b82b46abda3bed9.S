@@ -5,15 +5,10 @@ func0000000000000007:                   # @func0000000000000007
 	subq	%rcx, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	shlq	$60, %rsi
-	sarq	$63, %rsi
-	leaq	(%rsi,%rdi), %rax
-	retq
-func0000000000000005:                   # @func0000000000000005
 	movq	%rdi, %rax
-	shrl	$2, %esi
-	andl	$3, %esi
-	subq	%rsi, %rax
+	shrq	%rsi
+	movl	%esi, %ecx
+	subq	%rcx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rdi, %rax

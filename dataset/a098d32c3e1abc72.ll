@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaCSatOld.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -10,6 +10,7 @@
 ; linux/optimized/perfmon.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/rmap.ll
+; linux/optimized/set_memory.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind

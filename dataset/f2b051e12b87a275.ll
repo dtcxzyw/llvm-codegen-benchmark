@@ -1,8 +1,9 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/macroAssembler_x86.ll
 ; quickjs/optimized/quickjs.ll
@@ -18,11 +19,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; 1 occurrences:
 ; php/optimized/html.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -65008
@@ -35,7 +35,7 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -100
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/integrator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000124(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nsw i32 %2, -3

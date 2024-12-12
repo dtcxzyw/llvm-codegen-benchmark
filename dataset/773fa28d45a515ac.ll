@@ -98,7 +98,9 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind

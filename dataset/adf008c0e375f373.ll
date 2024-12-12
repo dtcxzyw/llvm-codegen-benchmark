@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 45 occurrences:
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -19,6 +19,14 @@
 ; linux/optimized/tx.ll
 ; linux/optimized/workqueue.ll
 ; linux/optimized/wpa.ll
+; llvm/optimized/DWARFVerifier.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/LiveIntervals.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/RegisterCoalescer.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; minetest/optimized/CBillboardSceneNode.cpp.ll
 ; minetest/optimized/CBoneSceneNode.cpp.ll
@@ -38,29 +46,11 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1) #0 {
-entry:
-  %2 = icmp eq ptr %0, %1
-  %3 = select i1 %2, ptr null, ptr %0
-  %4 = getelementptr nusw i8, ptr %3, i64 8
-  ret ptr %4
-}
-
-; 8 occurrences:
-; llvm/optimized/DWARFVerifier.cpp.ll
-; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/LiveDebugVariables.cpp.ll
-; llvm/optimized/LiveIntervals.cpp.ll
-; llvm/optimized/RISCVInstrInfo.cpp.ll
-; llvm/optimized/RegisterCoalescer.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %0, %1
   %3 = select i1 %2, ptr null, ptr %0
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   ret ptr %4
 }
 

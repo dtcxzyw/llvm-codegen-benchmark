@@ -1,5 +1,5 @@
 
-; 654 occurrences:
+; 705 occurrences:
 ; abseil-cpp/optimized/int128.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
@@ -45,6 +45,7 @@
 ; assimp/optimized/X3DGeoHelper.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/from_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; bullet3/optimized/btQuickprof.ll
@@ -290,7 +291,6 @@
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/progress.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
@@ -654,6 +654,57 @@
 ; yosys/optimized/Solver.ll
 ; z3/optimized/dl_mk_magic_sets.cpp.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
+; zed-rs/optimized/00laj72jeyttgatxd0myrfigl.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/10zh1v68f2nhlerzsork25it5.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1uum3gw9a30ezdy8xtn1px0l6.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9awmqr28bdho83r0fgrej0t00.ll
+; zed-rs/optimized/9cizhrhs33hhpljcbaafslqcf.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9jrz8x0nc5lkiswz6iqpo0zcg.ll
+; zed-rs/optimized/9m8v6uy2305b0acd84bvd598m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/b3fsiuvawj3jj0fngz22afvrc.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/ckiwzakufh7d1bhz9acxsspq9.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i64 %0) #0 {
 entry:
@@ -661,7 +712,7 @@ entry:
   ret float %1
 }
 
-; 153 occurrences:
+; 157 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
@@ -669,6 +720,7 @@ entry:
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
@@ -815,6 +867,9 @@ entry:
 ; wasmtime-rs/optimized/2lz954crgst412nx.ll
 ; wireshark/optimized/file.c.ll
 ; wireshark/optimized/packet-smb2.c.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/8mv6d566jv1jdve4gk2kn2bhk.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(i64 %0) #0 {
 entry:

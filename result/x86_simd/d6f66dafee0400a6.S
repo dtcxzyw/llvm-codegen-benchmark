@@ -2,7 +2,7 @@
 	.long	100000                          # 0x186a0
 .LCPI0_1:
 	.long	10                              # 0xa
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpord	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0

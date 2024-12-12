@@ -10,12 +10,12 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpsrlq	$32, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$32, %ymm0, %ymm0
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vpsrlq	$28, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$28, %ymm0, %ymm0
 	retq
 func0000000000000008:                   # @func0000000000000008

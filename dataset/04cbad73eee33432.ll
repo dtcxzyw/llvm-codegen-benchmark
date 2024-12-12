@@ -12,12 +12,12 @@
 ; llvm/optimized/NonNullParamChecker.cpp.ll
 ; llvm/optimized/NullabilityChecker.cpp.ll
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
+; lvgl/optimized/lv_i18n.ll
 ; openjdk/optimized/methodData.ll
 ; sentencepiece/optimized/time.cc.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = urem i32 %0, 100
   %2 = add nsw i32 %1, -10

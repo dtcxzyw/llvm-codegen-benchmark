@@ -16,7 +16,7 @@ func0000000000000052:                   # @func0000000000000052
 	addi	a1, a1, 778
 	vmacc.vx	v12, a1, v10
 	vsrl.vx	v10, v12, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000050:                   # @func0000000000000050
 	li	a0, 32
@@ -27,5 +27,5 @@ func0000000000000050:                   # @func0000000000000050
 	addi	a1, a1, 778
 	vmacc.vx	v12, a1, v10
 	vsrl.vx	v10, v12, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

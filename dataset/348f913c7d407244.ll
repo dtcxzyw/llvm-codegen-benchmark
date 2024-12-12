@@ -24,12 +24,11 @@ entry:
   ret i64 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/core.ll
 ; linux/optimized/set_memory.ll
-; linux/optimized/umh.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
@@ -43,8 +42,8 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -49
-  %4 = or disjoint i64 %3, %1
-  %5 = and i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 36 occurrences:
 ; abc/optimized/ivyFastMap.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -13,7 +13,6 @@
 ; postgres/optimized/aclchk.ll
 ; postgres/optimized/alter.ll
 ; postgres/optimized/appendinfo.ll
-; postgres/optimized/execExpr.ll
 ; postgres/optimized/execGrouping.ll
 ; postgres/optimized/execMain.ll
 ; postgres/optimized/execPartition.ll
@@ -37,7 +36,6 @@
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; wireshark/optimized/logcat.c.ll
-; wireshark/optimized/packet-csn1.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i16 %0) #0 {
 entry:

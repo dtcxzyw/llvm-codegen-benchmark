@@ -54,25 +54,3 @@ func0000000000000007:                   # @func0000000000000007
 	vpbroadcastd	.LCPI6_0(%rip), %xmm0 {%k1} # xmm0 {%k1} = [3,3,3,3]
 	vzeroupper
 	retq
-.LCPI7_0:
-	.quad	1                               # 0x1
-.LCPI7_1:
-	.long	1                               # 0x1
-func0000000000000013:                   # @func0000000000000013
-	vpcmpnleuq	.LCPI7_0(%rip){1to4}, %ymm1, %k1
-	vpbroadcastd	.LCPI7_1(%rip), %xmm1   # xmm1 = [1,1,1,1]
-	vpmovqd	%ymm0, %xmm1 {%k1}
-	vmovdqa	%xmm1, %xmm0
-	vzeroupper
-	retq
-.LCPI8_0:
-	.quad	2048                            # 0x800
-.LCPI8_1:
-	.long	2048                            # 0x800
-func0000000000000029:                   # @func0000000000000029
-	vpcmpltq	.LCPI8_0(%rip){1to4}, %ymm1, %k1
-	vpbroadcastd	.LCPI8_1(%rip), %xmm1   # xmm1 = [2048,2048,2048,2048]
-	vpmovqd	%ymm0, %xmm1 {%k1}
-	vmovdqa	%xmm1, %xmm0
-	vzeroupper
-	retq

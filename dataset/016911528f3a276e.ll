@@ -3,9 +3,9 @@
 ; arrow/optimized/key_map.cc.ll
 ; openjdk/optimized/abstractDisassembler.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000013(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000053(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 65536
+  %3 = icmp samesign ult i32 %2, 65536
   %4 = add nuw nsw i32 %1, 5
   %5 = select i1 %3, i32 9, i32 %4
   %6 = select i1 %0, i32 7, i32 %5

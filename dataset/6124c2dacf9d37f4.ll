@@ -41,6 +41,18 @@ entry:
   ret i64 %5
 }
 
+; 2 occurrences:
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = sub nuw i64 %0, %3
+  %5 = mul i64 %4, 88
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; Function Attrs: nounwind

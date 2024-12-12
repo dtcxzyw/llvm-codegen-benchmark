@@ -24,7 +24,7 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 .LCPI3_0:
 	.quad	64                              # 0x40
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	vpbroadcastq	.LCPI3_0(%rip), %ymm3   # ymm3 = [64,64,64,64]
 	vpcmpnleuq	%ymm3, %ymm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}

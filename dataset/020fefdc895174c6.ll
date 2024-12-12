@@ -1,5 +1,5 @@
 
-; 196 occurrences:
+; 207 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -12,6 +12,8 @@
 ; actix-rs/optimized/4oxclimtnmaa5ft9.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; actix-rs/optimized/n3tsoobypc9yljt.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; brotli/optimized/block_splitter.c.ll
 ; clamav/optimized/regcomp.c.ll
 ; clamav/optimized/regexec.c.ll
@@ -45,7 +47,6 @@
 ; grpc/optimized/parsing.cc.ll
 ; hdf5/optimized/H5EA.c.ll
 ; hdf5/optimized/H5FA.c.ll
-; hdf5/optimized/H5FAdbg.c.ll
 ; hdf5/optimized/H5Tinit_float.c.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hermes/optimized/Executor.cpp.ll
@@ -79,8 +80,6 @@
 ; linux/optimized/binfmt_misc.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/genetlink.ll
-; linux/optimized/gso.ll
-; linux/optimized/ht.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dp.ll
@@ -196,6 +195,18 @@
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/4539sm9s3e94vv18ffp5lvtyk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9ld5vmlj2ufuzyru6e6aorg0l.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
@@ -204,12 +215,13 @@ entry:
   ret i1 %3
 }
 
-; 62 occurrences:
+; 68 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
 ; actix-rs/optimized/fpsycltpd003ini.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/matches_relation_factory.ll
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/regcomp.c.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
@@ -260,6 +272,7 @@ entry:
 ; rust-analyzer-rs/optimized/3jjg9gby3m7lsfsh.ll
 ; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; verilator/optimized/V3SchedReplicate.cpp.ll
 ; wasmtime-rs/optimized/24tijvi11z3k9odl.ll
 ; wasmtime-rs/optimized/33slbp9da8waph2q.ll
@@ -267,6 +280,10 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/4cnvf14b3xea7eab.ll
 ; wasmtime-rs/optimized/4hvnupd8slkxulls.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
+; zed-rs/optimized/8mdllj80pcyls7aec0okf6fww.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
@@ -309,16 +326,6 @@ define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %0, %1
   %3 = icmp ugt i8 %2, 95
-  ret i1 %3
-}
-
-; 1 occurrences:
-; wolfssl/optimized/ecc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %0, %1
-  %3 = icmp ult i8 %2, 32
   ret i1 %3
 }
 

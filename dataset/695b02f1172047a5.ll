@@ -1,12 +1,11 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; darktable/optimized/introspection_negadoctor.c.ll
 ; gromacs/optimized/gmx_sorient.cpp.ll
 ; gromacs/optimized/gmx_spol.cpp.ll
 ; gromacs/optimized/pairs.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll

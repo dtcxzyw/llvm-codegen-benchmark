@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; assimp/optimized/Q3BSPFileParser.cpp.ll
 ; postgres/optimized/mbutils.ll
 ; qemu/optimized/accel_tcg_translate-all.c.ll
-; spike/optimized/fdt_overlay.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
@@ -13,9 +12,8 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; assimp/optimized/Q3BSPFileParser.cpp.ll
-; cpython/optimized/posixmodule.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
@@ -28,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/assoc_array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = lshr exact i64 %2, 6
@@ -39,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/geo_ops.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = lshr exact i64 %2, 4

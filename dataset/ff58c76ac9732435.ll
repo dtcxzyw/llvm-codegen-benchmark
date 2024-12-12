@@ -1,5 +1,5 @@
 
-%"class.msdfgen::EdgeHolder.3188093" = type { ptr }
+%"class.msdfgen::EdgeHolder.3380277" = type { ptr }
 
 ; 3 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -36,7 +36,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = srem i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.msdfgen::EdgeHolder.3188093", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.msdfgen::EdgeHolder.3380277", ptr %0, i64 %5
   ret ptr %6
 }
 

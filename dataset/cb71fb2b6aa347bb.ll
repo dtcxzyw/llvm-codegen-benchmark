@@ -14,7 +14,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; slurm/optimized/job_mgr.ll
@@ -35,7 +36,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 10000
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

@@ -53,6 +53,13 @@ func0000000000000003:                   # @func0000000000000003
 	shrq	$17, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000016:                   # @func0000000000000016
+	subq	%rdx, %rsi
+	shrq	$4, %rsi
+	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	subq	%rdx, %rsi
 	shrq	%rsi

@@ -5,6 +5,6 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000001:                   # @func0000000000000001
 	leal	256(%rsi,%rsi), %eax
-	testl	%edi, %eax
+	testl	%eax, %edi
 	sete	%al
 	retq

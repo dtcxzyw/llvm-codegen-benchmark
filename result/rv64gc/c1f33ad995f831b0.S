@@ -12,3 +12,10 @@ func0000000000000004:                   # @func0000000000000004
 	andi	a0, a2, 15
 .LBB1_2:                                # %entry
 	ret
+func0000000000000014:                   # @func0000000000000014
+	srli	a1, a1, 27
+	bnez	a1, .LBB2_2
+	lui	a0, 8
+	and	a0, a0, a2
+.LBB2_2:                                # %entry
+	ret

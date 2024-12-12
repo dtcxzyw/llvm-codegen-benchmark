@@ -16,12 +16,13 @@ entry:
   ret i8 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; git/optimized/archive-zip.ll
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i64 %1) #0 {

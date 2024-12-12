@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000842(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -14,10 +14,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/dependencies.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000422(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp eq i32 %4, 0
   %6 = icmp eq i32 %0, 0
   %7 = or i1 %6, %5
@@ -27,10 +27,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/lpkAbcDsd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000622(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001842(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp eq i32 %4, 0
   %6 = icmp eq i32 %0, 0
   %7 = or i1 %6, %5
@@ -41,7 +41,7 @@ entry:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000628(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001848(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = and i32 %3, %1
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000782(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001b02(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = and i32 %3, %1
@@ -67,10 +67,10 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004d8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001198(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = icmp slt i32 %0, 0
   %7 = or i1 %5, %6
@@ -82,7 +82,7 @@ entry:
 ; linux/optimized/ip_tables.ll
 ; openmpi/optimized/group_bitmap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006d8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001998(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = and i32 %3, %1
@@ -97,7 +97,7 @@ entry:
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000638(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001858(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = and i32 %3, %1

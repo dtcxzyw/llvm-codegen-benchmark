@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_levels.c.ll
-; darktable/optimized/introspection_rgblevels.c.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; recastnavigation/optimized/DebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll

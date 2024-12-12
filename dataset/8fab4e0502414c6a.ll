@@ -1,7 +1,9 @@
 
-; 30 occurrences:
+; 32 occurrences:
 ; abc/optimized/cuddZddMisc.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/within.ll
 ; darktable/optimized/darkroom.c.ll
 ; graphviz/optimized/gvrender_core_pic.c.ll
 ; graphviz/optimized/xlabels.c.ll

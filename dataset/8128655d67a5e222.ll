@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ec(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 3
   %3 = sdiv exact i64 %0, 24
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = sdiv exact i64 %0, 24
@@ -21,7 +21,9 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -29,7 +31,7 @@ entry:
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
   %3 = sdiv exact i64 %0, 24
@@ -158,7 +160,7 @@ entry:
 ; velox/optimized/SignatureBinder.cpp.ll
 ; velox/optimized/UnsafeRowFast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = sdiv exact i64 %0, 24
@@ -176,7 +178,7 @@ entry:
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; vcpkg/optimized/paragraphs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 60
   %3 = sdiv exact i64 %0, 12
@@ -190,7 +192,7 @@ entry:
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/qdplusamericanengine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = sdiv exact i64 %0, 24
@@ -202,7 +204,7 @@ entry:
 ; eastl/optimized/TestExtra.cpp.ll
 ; luau/optimized/Unifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = sdiv exact i64 %0, 160
@@ -215,7 +217,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = sdiv exact i64 %0, 104
@@ -229,7 +231,7 @@ entry:
 ; opencv/optimized/ann_mlp.cpp.ll
 ; openspiel/optimized/tarok_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = sdiv exact i64 %0, 112
@@ -244,7 +246,7 @@ entry:
 ; gromacs/optimized/readrot.cpp.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ea(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = sdiv exact i64 %0, 104
@@ -255,7 +257,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = sdiv exact i64 %0, 104
@@ -267,7 +269,7 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; gromacs/optimized/exclusionblocks.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv exact i64 %0, 24
@@ -278,7 +280,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1000
   %3 = sdiv i64 %0, 1000
@@ -289,7 +291,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/mcclellancompile_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e5(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = sdiv exact i64 %0, 96

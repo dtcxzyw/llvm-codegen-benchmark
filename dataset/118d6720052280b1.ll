@@ -1,5 +1,6 @@
 
 ; 38 occurrences:
+; freetype/optimized/cff.c.ll
 ; freetype/optimized/truetype.c.ll
 ; icu/optimized/ubidiwrt.ll
 ; icu/optimized/usprep.ll
@@ -27,7 +28,6 @@
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; sqlite/optimized/sqlite3.ll
@@ -61,10 +61,10 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/escape.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000004(i16 %0, i16 %1, i32 %2) #0 {
+define i16 @func0000000000000014(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 14
-  %4 = icmp ult i32 %3, 10
+  %4 = icmp samesign ult i32 %3, 10
   %5 = select i1 %4, i16 %0, i16 %1
   ret i16 %5
 }
@@ -72,10 +72,10 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfRgbaYca.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000008(i16 %0, i16 %1, i32 %2) #0 {
+define i16 @func0000000000000018(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 64512
-  %4 = icmp ugt i32 %3, 31743
+  %4 = icmp samesign ugt i32 %3, 31743
   %5 = select i1 %4, i16 %0, i16 %1
   ret i16 %5
 }

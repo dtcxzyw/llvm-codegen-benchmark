@@ -1,6 +1,5 @@
 
-; 21 occurrences:
-; abc/optimized/darMan.c.ll
+; 20 occurrences:
 ; abc/optimized/sclSize.c.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/gmx_sorient.cpp.ll

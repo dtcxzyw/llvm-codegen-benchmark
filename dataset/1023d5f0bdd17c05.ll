@@ -1,5 +1,5 @@
 
-; 109 occurrences:
+; 108 occurrences:
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -88,7 +88,6 @@
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
 ; minetest/optimized/factory.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
@@ -135,8 +134,7 @@ entry:
   ret ptr %5
 }
 
-; 75 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
+; 84 occurrences:
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -177,13 +175,17 @@ entry:
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaCoroutine.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; llvm/optimized/SemaOpenCL.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
@@ -205,19 +207,25 @@ entry:
 ; llvm/optimized/TransUnusedInitDelegate.cpp.ll
 ; llvm/optimized/TransZeroOutPropsInDealloc.cpp.ll
 ; llvm/optimized/Transforms.cpp.ll
+; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/UncountedCallArgsChecker.cpp.ll
 ; llvm/optimized/UncountedLambdaCapturesChecker.cpp.ll
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; z3/optimized/dl_rule.cpp.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = and i64 %2, 524280
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 48
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 48
   ret ptr %5
 }
 

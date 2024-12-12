@@ -87,6 +87,19 @@ func0000000000000008:                   # @func0000000000000008
 	vmulhu.vx	v8, v10, a0
 	vsrl.vi	v8, v8, 4
 	ret
+.LCPI7_0:
+	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
+func0000000000000001:                   # @func0000000000000001
+	li	a0, -144
+	lui	a1, %hi(.LCPI7_0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v10, a0
+	ld	a0, %lo(.LCPI7_0)(a1)
+	li	a1, 144
+	vmacc.vx	v10, a1, v8
+	vsrl.vi	v8, v10, 4
+	vmul.vx	v8, v8, a0
+	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, 2
 	li	a1, -10

@@ -1,19 +1,4 @@
 
-; 3 occurrences:
-; linux/optimized/dw.ll
-; llvm/optimized/RISCVBaseInfo.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000e(i32 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 16
-  %5 = select i1 %1, i32 100663296, i32 117440512
-  %6 = or disjoint i32 %4, %5
-  %7 = or i32 %6, %0
-  ret i32 %7
-}
-
 ; 6 occurrences:
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
@@ -54,6 +39,19 @@ entry:
   %4 = shl nuw nsw i32 %3, 16
   %5 = select i1 %1, i32 -2145370112, i32 2113536
   %6 = or disjoint i32 %5, %4
+  %7 = or i32 %0, %6
+  ret i32 %7
+}
+
+; 1 occurrences:
+; llvm/optimized/RISCVBaseInfo.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000e(i32 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = shl nuw nsw i32 %3, 23
+  %5 = select i1 %1, i32 -2147483648, i32 0
+  %6 = or disjoint i32 %4, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }

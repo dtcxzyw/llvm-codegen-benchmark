@@ -10,14 +10,13 @@ entry:
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
   %6 = sitofp i32 %5 to double
-  %7 = fmul double %6, %0
+  %7 = fmul double %0, %6
   ret double %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
@@ -27,7 +26,7 @@ entry:
   %4 = lshr exact i64 %3, 3
   %5 = trunc i64 %4 to i32
   %6 = sitofp i32 %5 to double
-  %7 = fmul double %6, %0
+  %7 = fmul double %0, %6
   ret double %7
 }
 

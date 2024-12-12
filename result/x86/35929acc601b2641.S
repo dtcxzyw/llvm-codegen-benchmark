@@ -1,12 +1,12 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shrq	$32, %rsi
 	xorl	%eax, %eax
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	shrq	$32, %rsi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	movl	$-1, %eax
-	cmovbel	%edi, %eax
+	cmovael	%edi, %eax
 	retq

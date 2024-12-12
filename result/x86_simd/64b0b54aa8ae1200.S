@@ -26,7 +26,7 @@
 	.byte	0                               # 0x0
 func000000000000000f:                   # @func000000000000000f
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm2, %xmm2
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	retq
 .LCPI1_0:
 	.byte	8                               # 0x8
@@ -86,7 +86,7 @@ func000000000000000c:                   # @func000000000000000c
 	.byte	0                               # 0x0
 func0000000000000003:                   # @func0000000000000003
 	vgf2p8affineqb	$0, .LCPI2_1(%rip){1to2}, %xmm2, %xmm2
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	retq
 .LCPI3_0:
 	.byte	8                               # 0x8
@@ -146,7 +146,7 @@ func0000000000000002:                   # @func0000000000000002
 	.byte	0                               # 0x0
 func0000000000000001:                   # @func0000000000000001
 	vgf2p8affineqb	$0, .LCPI4_1(%rip){1to2}, %xmm2, %xmm2
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	retq
 .LCPI5_0:
 	.byte	32                              # 0x20
@@ -176,7 +176,7 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	0                               # 0x0
 func000000000000000e:                   # @func000000000000000e
 	vgf2p8affineqb	$0, .LCPI5_1(%rip){1to2}, %xmm2, %xmm2
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	retq
 .LCPI6_0:
 	.byte	2                               # 0x2
@@ -266,7 +266,7 @@ func0000000000000000:                   # @func0000000000000000
 	.byte	0                               # 0x0
 func0000000000000008:                   # @func0000000000000008
 	vgf2p8affineqb	$0, .LCPI8_1(%rip){1to2}, %xmm2, %xmm2
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	retq
 .LCPI9_0:
 	.byte	32                              # 0x20
@@ -296,5 +296,5 @@ func0000000000000008:                   # @func0000000000000008
 	.byte	0                               # 0x0
 func000000000000000d:                   # @func000000000000000d
 	vgf2p8affineqb	$0, .LCPI9_1(%rip){1to2}, %xmm2, %xmm2
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	retq

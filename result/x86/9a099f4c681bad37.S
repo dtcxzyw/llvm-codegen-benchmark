@@ -10,10 +10,3 @@ func000000000000000c:                   # @func000000000000000c
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	shrq	$32, %rdx
-	shrq	$32, %rsi
-	cmpl	%edx, %esi
-	setb	%al
-	andb	%dil, %al
-	retq

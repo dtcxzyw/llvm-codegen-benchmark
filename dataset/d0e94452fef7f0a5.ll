@@ -22,9 +22,12 @@ entry:
   ret i8 %3
 }
 
-; 4 occurrences:
+; 7 occurrences:
 ; icu/optimized/collationkeys.ll
 ; libpng/optimized/png.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openjdk/optimized/png.ll
 ; qemu/optimized/hw_net_pcnet-pci.c.ll
 ; Function Attrs: nounwind

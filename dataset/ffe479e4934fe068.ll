@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-bio_lib.ll
 ; openssl/optimized/libcrypto-shlib-bio_lib.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %0 to i32
   %3 = icmp ugt i64 %0, %1
@@ -40,7 +40,7 @@ entry:
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %0 to i32
   %3 = icmp eq i64 %0, %1
@@ -52,7 +52,7 @@ entry:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; llvm/optimized/LoopUnroll.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %0 to i32
   %3 = icmp eq i64 %0, %1

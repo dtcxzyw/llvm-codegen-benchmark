@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$22, %eax
 	cmovnel	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testq	%rdi, %rdi
 	movl	$8, %eax
 	cmovnel	%edi, %eax

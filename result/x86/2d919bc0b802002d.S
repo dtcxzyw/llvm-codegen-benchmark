@@ -3,7 +3,7 @@
 func0000000000000002:                   # @func0000000000000002
 	vmovss	.LCPI0_0(%rip), %xmm3           # xmm3 = [9.99999997E-7,0.0E+0,0.0E+0,0.0E+0]
 	vmaxss	%xmm2, %xmm3, %xmm2
-	vmulss	%xmm1, %xmm2, %xmm1
+	vmulss	%xmm2, %xmm1, %xmm1
 	vsubss	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI1_0:

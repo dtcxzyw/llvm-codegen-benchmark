@@ -2,7 +2,7 @@ func000000000000018d:                   # @func000000000000018d
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
-	leal	1(%rax,%rdi), %eax
+	leal	1(%rdi,%rax), %eax
 	andl	$2, %eax
 	retq
 func0000000000000180:                   # @func0000000000000180

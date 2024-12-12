@@ -1,4 +1,4 @@
-func00000000000000da:                   // @func00000000000000da
+func00000000000000db:                   // @func00000000000000db
 // %bb.0:                               // %entry
 	neg	w8, w1
 	sub	x8, x0, x8

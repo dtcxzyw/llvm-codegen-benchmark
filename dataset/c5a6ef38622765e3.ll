@@ -3,7 +3,7 @@
 ; ruby/optimized/time.ll
 ; z3/optimized/arith_sls.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp eq i64 %3, %0
@@ -15,7 +15,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000032(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000052(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp uge i64 %3, %0
@@ -64,7 +64,7 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -76,6 +76,9 @@ entry:
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -102,7 +105,7 @@ entry:
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; z3/optimized/arith_sls.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp ne i64 %3, %0
@@ -110,8 +113,10 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -121,8 +126,7 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; linux/optimized/generic_mpih-sub1.ll
+; 1 occurrences:
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
@@ -171,7 +175,7 @@ entry:
 ; 1 occurrences:
 ; quest/optimized/QuEST_cpu.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp slt i64 %3, %0

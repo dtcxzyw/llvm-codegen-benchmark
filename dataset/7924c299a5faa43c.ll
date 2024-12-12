@@ -49,7 +49,7 @@ entry:
   ret double %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; cvc5/optimized/cardinality_extension.cpp.ll
 ; graphviz/optimized/make_map.c.ll
@@ -57,7 +57,6 @@ entry:
 ; openjdk/optimized/xDirector.ll
 ; openspiel/optimized/is_mcts.cc.ll
 ; openusd/optimized/ray.cpp.ll
-; osqp/optimized/scaling.c.ll
 ; postgres/optimized/costsize.ll
 ; quantlib/optimized/hybridhestonhullwhiteprocess.ll
 ; sundials/optimized/arkode_adapt.c.ll

@@ -43,9 +43,10 @@ entry:
   ret i1 %4
 }
 
-; 54 occurrences:
+; 55 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/qrsqp.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; ceres/optimized/cgnr_solver.cc.ll
@@ -122,6 +123,7 @@ entry:
 }
 
 ; 62 occurrences:
+; boost/optimized/buffer_piece_border.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; cmake/optimized/fty_num.c.ll
 ; graphviz/optimized/clustering.c.ll
@@ -169,7 +171,6 @@ entry:
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; postgres/optimized/indxpath.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/metadata.cpp.ll
 ; quantlib/optimized/goldstein.ll
 ; quantlib/optimized/hestonprocess.ll
@@ -231,8 +232,10 @@ entry:
   ret i1 %4
 }
 
-; 66 occurrences:
+; 68 occurrences:
 ; abc/optimized/cnfUtil.c.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/intersection_box.ll
 ; casadi/optimized/linsol_qr.cpp.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; diesel-rs/optimized/1kyzuzxhcccv0umo.ll
@@ -306,7 +309,16 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 17 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_sph_geo.ll
 ; casadi/optimized/kinsol.c.ll
 ; graphviz/optimized/legal.c.ll
 ; openblas/optimized/dgels.c.ll
@@ -323,7 +335,9 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 15 occurrences:
+; boost/optimized/area_box_sg.ll
+; boost/optimized/expand_on_spheroid.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; openusd/optimized/drawModeAdapter.cpp.ll
@@ -357,8 +371,9 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/compare.cc.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; graphviz/optimized/intersection.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll

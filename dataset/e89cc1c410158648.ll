@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
@@ -61,7 +61,7 @@ entry:
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b6(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000166(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 31
   %3 = sdiv i32 %2, 32
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 12
   %3 = sdiv i32 %2, 3
@@ -87,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 63
   %3 = sdiv i32 %2, 64
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 63
   %3 = sdiv i32 %2, 64
@@ -113,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/pme_solve.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000126(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sdiv i32 %2, 2
@@ -126,7 +126,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/pme_solve.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sdiv i32 %2, 2

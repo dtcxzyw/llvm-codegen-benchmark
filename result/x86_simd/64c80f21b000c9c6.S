@@ -13,7 +13,7 @@ func0000000000000007:                   # @func0000000000000007
 	.quad	13510798882111487               # 0x2fffffffffffff
 .LCPI1_2:
 	.quad	4503599627370496                # 0x10000000000000
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm2, %k1
 	vpternlogq	$248, .LCPI1_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	vporq	.LCPI1_2(%rip){1to4}, %ymm0, %ymm0 {%k1}

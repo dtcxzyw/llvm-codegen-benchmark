@@ -1,21 +1,21 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	testl	%edx, %edx
 	cmovnel	%edx, %esi
 	decl	%esi
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	testl	%edx, %edx
 	cmovnel	%edx, %esi
 	decl	%esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	testl	%edx, %edx
 	cmovnel	%edx, %esi
 	incl	%esi
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

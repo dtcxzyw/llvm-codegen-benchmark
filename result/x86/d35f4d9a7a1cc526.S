@@ -10,12 +10,6 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$3, %esi
 	sete	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
-	andl	$126, %esi
-	xorl	$127, %esi
-	cmpl	%edi, %esi
-	setbe	%al
-	retq
 func0000000000000004:                   # @func0000000000000004
 	andl	$63, %esi
 	xorl	$127, %esi

@@ -8,7 +8,7 @@ entry:
   %2 = add nuw nsw i32 %1, 12
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -54,8 +54,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; linux/optimized/reciprocal_div.ll
+; 2 occurrences:
 ; linux/optimized/vmalloc.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
@@ -116,7 +115,7 @@ entry:
   %2 = add nuw nsw i32 %1, 10
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

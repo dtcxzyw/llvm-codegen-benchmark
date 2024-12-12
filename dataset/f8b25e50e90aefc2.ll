@@ -11,8 +11,8 @@ entry:
 }
 
 ; 12 occurrences:
+; boost/optimized/ipv6_address.ll
 ; cpython/optimized/longobject.ll
-; freetype/optimized/truetype.c.ll
 ; linux/optimized/8250_pci.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openblas/optimized/cblas_dgemm.c.ll
@@ -50,17 +50,6 @@ entry:
 define i64 @func0000000000000006(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = sext i32 %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/AKAZEFeatures.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ult i64 %2, 6
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = sext i32 %4 to i64
   ret i64 %5

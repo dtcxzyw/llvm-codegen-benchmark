@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -33,6 +33,7 @@
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; spike/optimized/spike.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:

@@ -34,16 +34,6 @@ func0000000000000018:                   # @func0000000000000018
 	addl	%edi, %eax
 	shrl	$3, %eax
 	retq
-func000000000000000e:                   # @func000000000000000e
-	imull	$85, %esi, %eax
-	addl	%edi, %eax
-	shrl	$8, %eax
-	retq
-func0000000000000010:                   # @func0000000000000010
-	imull	$12289, %esi, %eax              # imm = 0x3001
-	addl	%edi, %eax
-	shrl	$18, %eax
-	retq
 func000000000000001a:                   # @func000000000000001a
 	imull	$75, %esi, %eax
 	addl	%edi, %eax

@@ -1,5 +1,16 @@
 
 ; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %.neg = add i64 %1, -100000
+  %2 = add i64 %.neg, %0
+  %3 = and i64 %2, -8
+  ret i64 %3
+}
+
+; 1 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = sub nuw i32 %0, %1
@@ -14,7 +14,7 @@ entry:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000069(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
   %4 = sub nuw i32 %0, %1
@@ -26,7 +26,7 @@ entry:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000049(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = sub nuw i32 %0, %1
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
   %4 = sub nsw i32 %0, %1
@@ -59,7 +59,7 @@ entry:
   ret i1 %5
 }
 
-; 1047 occurrences:
+; 1046 occurrences:
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BlockScopingTransformations.cpp.ll
@@ -126,7 +126,6 @@ entry:
 ; hermes/optimized/UniquingFilenameTable.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
 ; hermes/optimized/hbc-attribute.cpp.ll
-; linux/optimized/win_minmax.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64ELFStreamer.cpp.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
@@ -805,7 +804,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1106,11 +1104,12 @@ entry:
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
+; lvgl/optimized/lv_array.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 3
+  %3 = lshr i32 %2, 1
   %4 = sub i32 %0, %1
   %5 = icmp ugt i32 %4, %3
   ret i1 %5
@@ -1130,7 +1129,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/EarlyIfConversion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = sub nuw i32 %0, %1
@@ -1152,7 +1151,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/virtio_net.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = sub nsw i32 %0, %1

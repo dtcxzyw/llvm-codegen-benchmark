@@ -140,5 +140,5 @@ func0000000000000002:                   # @func0000000000000002
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpslld	$9, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm0, %ymm0
 	retq

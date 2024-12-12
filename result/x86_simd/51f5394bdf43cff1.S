@@ -28,6 +28,6 @@ func000000000000001e:                   # @func000000000000001e
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm1, %xmm1
 	vpmovdw	%ymm0, %xmm0
 	vpmovzxbw	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
-	vpaddw	%xmm0, %xmm1, %xmm0
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

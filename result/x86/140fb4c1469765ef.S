@@ -11,12 +11,18 @@ func000000000000001f:                   # @func000000000000001f
 	cmoveq	%rcx, %rax
 	addq	$12, %rax
 	retq
-func000000000000004f:                   # @func000000000000004f
+func0000000000000140:                   # @func0000000000000140
+	xorl	%eax, %eax
+	cmpl	$13, %esi
+	setae	%al
+	leaq	5(%rdi,%rax,4), %rax
+	retq
+func000000000000014f:                   # @func000000000000014f
 	cmpl	$126, %esi
 	sbbq	$0, %rdi
 	leaq	4(%rdi), %rax
 	retq
-func0000000000000047:                   # @func0000000000000047
+func0000000000000147:                   # @func0000000000000147
 	leaq	64(%rdi), %rax
 	leaq	8(%rdi), %rcx
 	cmpl	$513, %esi                      # imm = 0x201

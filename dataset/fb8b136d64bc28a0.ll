@@ -1,5 +1,7 @@
 
-; 24 occurrences:
+; 25 occurrences:
+; boost/optimized/find_address_sse2.ll
+; boost/optimized/find_address_sse41.ll
 ; duckdb/optimized/ub_duckdb_optimizer_statistics_op.cpp.ll
 ; hyperscan/optimized/limex_simd128.c.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
@@ -23,7 +25,6 @@
 ; ozz-animation/optimized/ik_two_bone_job.cc.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
-; velox/optimized/StringView.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i4 %0) #0 {
 entry:

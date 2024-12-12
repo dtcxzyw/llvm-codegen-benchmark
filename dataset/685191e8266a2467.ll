@@ -1,9 +1,10 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; base64-rs/optimized/25sh13l3jgkilua2.ll
 ; cpython/optimized/longobject.ll
+; linux/optimized/lbr.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
@@ -44,14 +45,14 @@ entry:
   ret i64 %4
 }
 
-; 30 occurrences:
+; 32 occurrences:
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/intel_migrate.ll
 ; linux/optimized/p4.ll
-; linux/optimized/reciprocal_div.ll
+; linux/optimized/sem.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -63,7 +64,6 @@ entry:
 ; llvm/optimized/DeclTemplate.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/StreamChecker.cpp.ll
 ; minetest/optimized/guiOpenURL.cpp.ll
@@ -75,6 +75,9 @@ entry:
 ; wasmedge/optimized/vinode.cpp.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i1 %1) #0 {
 entry:

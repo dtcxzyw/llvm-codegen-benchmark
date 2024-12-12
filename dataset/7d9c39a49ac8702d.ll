@@ -17,6 +17,7 @@
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -42,7 +43,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
-; llvm/optimized/MSVC.cpp.ll
 ; llvm/optimized/MacroInfo.cpp.ll
 ; llvm/optimized/MemRegion.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
@@ -70,7 +70,6 @@
 ; qemu/optimized/hw_display_ati.c.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
-; spike/optimized/f128_classify.ll
 ; spike/optimized/fsgnj_d.ll
 ; spike/optimized/fsgnj_h.ll
 ; spike/optimized/fsgnj_s.ll
@@ -82,14 +81,15 @@
 ; spike/optimized/fsgnjx_s.ll
 ; spike/optimized/vfsgnj_vf.ll
 ; spike/optimized/vfsgnjn_vf.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; velox/optimized/Bridge.cpp.ll
 ; wasmtime-rs/optimized/2lz954crgst412nx.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -146,7 +146,6 @@ entry:
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MachineInstrBundle.cpp.ll
 ; llvm/optimized/NestedNameSpecifier.cpp.ll
-; llvm/optimized/NetBSD.cpp.ll
 ; llvm/optimized/OpenBSD.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/PaddingChecker.cpp.ll
@@ -190,6 +189,7 @@ entry:
 ; spike/optimized/xperm8.ll
 ; sqlite/optimized/sqlite3.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; verilator/optimized/V3Cast.cpp.ll
 ; verilator/optimized/V3Timing.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
@@ -203,7 +203,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 %2, i64 0
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

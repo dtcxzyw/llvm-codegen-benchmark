@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/abcNpn.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
-; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; glslang/optimized/PpScanner.cpp.ll
 ; icu/optimized/ucnv_bld.ll
 ; linux/optimized/rate.ll

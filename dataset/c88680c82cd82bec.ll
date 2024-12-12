@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; lief/optimized/nist_kw.c.ll
@@ -9,8 +9,9 @@
 ; raylib/optimized/raudio.c.ll
 ; rocksdb/optimized/arena.cc.ll
 ; wireshark/optimized/pcapng.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0) #0 {
+define i64 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 15
   %2 = icmp eq i64 %1, 0
@@ -22,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i64 %0) #0 {
+define i64 @func0000000000000066(i64 %0) #0 {
 entry:
   %1 = and i64 %0, -64
   %2 = sub nuw nsw i64 -32, %1
@@ -34,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 63
   %2 = icmp eq i64 %1, 63

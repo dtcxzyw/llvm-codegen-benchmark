@@ -12,10 +12,10 @@
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000019(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   ret i1 %3
 }
 
@@ -23,10 +23,10 @@ entry:
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 

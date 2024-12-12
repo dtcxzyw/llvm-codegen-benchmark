@@ -11,7 +11,7 @@ func0000000000000003:                   # @func0000000000000003
 func000000000000001b:                   # @func000000000000001b
 	imulq	$100, %rdi, %rax
 	shrq	$31, %rax
-	andq	$-2, %rax
+	andl	$-2, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	shlq	$4, %rdi

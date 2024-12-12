@@ -39,10 +39,11 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/intel_dpll.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:

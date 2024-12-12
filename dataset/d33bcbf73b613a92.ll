@@ -8,10 +8,10 @@
 ; raylib/optimized/rtextures.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 -1, i32 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = select i1 %1, i32 -1, i32 %2
   %6 = icmp eq i32 %4, %5
   ret i1 %6
@@ -24,7 +24,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 -1, i32 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = select i1 %1, i32 -1, i32 %2
   %6 = icmp eq i32 %4, %5
   ret i1 %6

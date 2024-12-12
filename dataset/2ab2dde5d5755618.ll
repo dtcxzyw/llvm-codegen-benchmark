@@ -1,5 +1,5 @@
 
-; 107 occurrences:
+; 105 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absRef.c.ll
@@ -7,9 +7,6 @@
 ; abc/optimized/bmcBmcG.c.ll
 ; abc/optimized/bmcBmcS.c.ll
 ; abc/optimized/cecChoice.c.ll
-; abc/optimized/cecMan.c.ll
-; abc/optimized/cswMan.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaCSat3.c.ll
@@ -37,9 +34,9 @@
 ; abc/optimized/sswMan.c.ll
 ; clamav/optimized/clamscan.c.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; duckdb/optimized/ub_duckdb_aggr_regr.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
+; eastl/optimized/Int128_t.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; flac/optimized/encode.c.ll
 ; graphviz/optimized/blockpath.c.ll
@@ -104,6 +101,7 @@
 ; stb/optimized/stb_image_resize2.c.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll

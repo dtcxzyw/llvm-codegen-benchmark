@@ -1,12 +1,8 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	eor	v6.16b, v3.16b, v5.16b
-	eor	v7.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v5.16b
-	and	v2.16b, v2.16b, v4.16b
-	and	v1.16b, v6.16b, v1.16b
-	and	v0.16b, v7.16b, v0.16b
-	eor	v0.16b, v0.16b, v2.16b
-	eor	v1.16b, v1.16b, v3.16b
+	eor	x8, x1, x2
+	and	x9, x1, x2
+	and	x8, x0, x8
+	eor	x0, x8, x9
 	ret
                                         // -- End function

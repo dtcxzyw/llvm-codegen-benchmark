@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	2                               # 0x2
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm2, %k0
 	vpcmpgtd	%ymm0, %ymm1, %k1
 	kxorb	%k0, %k1, %k0
@@ -11,7 +11,7 @@ func0000000000000016:                   # @func0000000000000016
 	.long	4294967293                      # 0xfffffffd
 .LCPI1_1:
 	.long	4                               # 0x4
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpneqd	.LCPI1_1(%rip){1to8}, %ymm2, %k0
 	vpcmpltud	%ymm1, %ymm0, %k1
@@ -21,7 +21,7 @@ func000000000000004c:                   # @func000000000000004c
 	retq
 .LCPI2_0:
 	.long	51                              # 0x33
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vptestmd	.LCPI2_0(%rip){1to8}, %ymm2, %k0
 	vpcmpneqd	%ymm1, %ymm0, %k1
 	kxorb	%k0, %k1, %k0
@@ -30,7 +30,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	retq
 .LCPI3_0:
 	.long	256                             # 0x100
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vptestmd	.LCPI3_0(%rip){1to8}, %ymm2, %k0
 	vpcmpeqd	%ymm1, %ymm0, %k1
 	kxorb	%k0, %k1, %k0
@@ -39,7 +39,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	retq
 .LCPI4_0:
 	.long	256                             # 0x100
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	vptestmd	.LCPI4_0(%rip){1to8}, %ymm2, %k0
 	vpcmpgtd	%ymm1, %ymm0, %k1
 	kxorb	%k0, %k1, %k0
@@ -48,7 +48,7 @@ func00000000000000ca:                   # @func00000000000000ca
 	retq
 .LCPI5_0:
 	.long	256                             # 0x100
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	vptestmd	.LCPI5_0(%rip){1to8}, %ymm2, %k0
 	vpcmpgtd	%ymm0, %ymm1, %k1
 	kxorb	%k0, %k1, %k0
@@ -57,7 +57,7 @@ func00000000000000c6:                   # @func00000000000000c6
 	retq
 .LCPI6_0:
 	.long	256                             # 0x100
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vptestmd	.LCPI6_0(%rip){1to8}, %ymm2, %k0
 	vpcmpnleud	%ymm1, %ymm0, %k1
 	kxorb	%k0, %k1, %k0
@@ -66,7 +66,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	retq
 .LCPI7_0:
 	.long	256                             # 0x100
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vptestmd	.LCPI7_0(%rip){1to8}, %ymm2, %k0
 	vpcmpltud	%ymm1, %ymm0, %k1
 	kxorb	%k0, %k1, %k0
@@ -75,7 +75,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	retq
 .LCPI8_0:
 	.long	8                               # 0x8
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vptestnmd	.LCPI8_0(%rip){1to8}, %ymm2, %k0
 	vpcmpneqd	%ymm1, %ymm0, %k1
 	kxorb	%k0, %k1, %k0
@@ -84,7 +84,7 @@ func000000000000001c:                   # @func000000000000001c
 	retq
 .LCPI9_0:
 	.long	256                             # 0x100
-func00000000000000cb:                   # @func00000000000000cb
+func000000000000018b:                   # @func000000000000018b
 	vptestmd	.LCPI9_0(%rip){1to8}, %ymm2, %k0
 	vpcmpnltd	%ymm1, %ymm0, %k1
 	kxorb	%k0, %k1, %k0
@@ -93,7 +93,7 @@ func00000000000000cb:                   # @func00000000000000cb
 	retq
 .LCPI10_0:
 	.long	2                               # 0x2
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	.LCPI10_0(%rip){1to8}, %ymm2, %k0
 	vpcmpeqd	%ymm1, %ymm0, %k1
 	kxorb	%k1, %k0, %k0

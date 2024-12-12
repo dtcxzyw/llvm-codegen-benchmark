@@ -14,7 +14,7 @@ define double @func0000000000000000(double %0, i1 %1, double %2) #0 {
 entry:
   %.neg = fneg double %2
   %3 = select i1 %1, double %.neg, double -1.000000e+00
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

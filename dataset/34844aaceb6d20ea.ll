@@ -5,7 +5,7 @@
 ; icu/optimized/cstring.ll
 ; nghttp2/optimized/nghttp2_http.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000481(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, 32
   %3 = icmp ult i8 %1, 26

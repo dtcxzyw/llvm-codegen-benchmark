@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; jq/optimized/jv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0) #0 {
+define i1 @func000000000000004a(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
   %2 = lshr i64 %1, 32
@@ -45,11 +45,10 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/MachinePostDominators.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
-; opencv/optimized/tf_importer.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:

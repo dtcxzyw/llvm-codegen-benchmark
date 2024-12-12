@@ -1,8 +1,8 @@
 
-%union.anon.273.3384708 = type { %"struct.cvc5::internal::Minisat::Lit.3384707" }
-%"struct.cvc5::internal::Minisat::Lit.3384707" = type { i32 }
+%union.anon.273.3569421 = type { %"struct.cvc5::internal::Minisat::Lit.3569420" }
+%"struct.cvc5::internal::Minisat::Lit.3569420" = type { i32 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -21,7 +21,6 @@
 ; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
@@ -45,15 +44,16 @@
 ; wasmtime-rs/optimized/4gcs6zbu61nja9jh.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [2 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
 ; 17 occurrences:
+; boost/optimized/xml_grammar.ll
 ; eastl/optimized/BenchmarkBitset.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hyperscan/optimized/AsciiComponentClass.cpp.ll
@@ -62,7 +62,6 @@ entry:
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; llvm/optimized/BuildLibCalls.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; luau/optimized/IrAnalysis.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
@@ -72,11 +71,11 @@ entry:
 ; openusd/optimized/unicodeUtils.cpp.ll
 ; redis/optimized/acl.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [4 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -84,11 +83,11 @@ entry:
 ; cvc5/optimized/SimpSolver.cc.ll
 ; cvc5/optimized/Solver.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [0 x %union.anon.273.3384708], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [0 x %union.anon.273.3569421], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

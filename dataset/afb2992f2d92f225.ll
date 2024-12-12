@@ -1,15 +1,13 @@
 
-; 14 occurrences:
+; 12 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -128,15 +126,13 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; abc/optimized/aigTsim.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/BuildLibCalls.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; wireshark/optimized/packet-erldp.c.ll
 ; Function Attrs: nounwind
@@ -159,11 +155,10 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/exorLink.c.ll
 ; abc/optimized/mvcUtils.c.ll
-; linux/optimized/pkeys.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0) #0 {
 entry:

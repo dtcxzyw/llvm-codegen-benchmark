@@ -1,5 +1,11 @@
 
-; 24 occurrences:
+; 31 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/ich8lan.ll
@@ -11,6 +17,7 @@
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; meshlab/optimized/miniz.c.ll
 ; openssl/optimized/libcrypto-lib-a_strex.ll
 ; openssl/optimized/libcrypto-shlib-a_strex.ll

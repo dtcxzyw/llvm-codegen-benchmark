@@ -1,40 +1,19 @@
-func0000000000000031:                   # @func0000000000000031
-	andi	a0, a0, 1
-	ret
-func0000000000000011:                   # @func0000000000000011
-	andi	a0, a0, 1
-	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
-	seqz	a0, a0
-	ret
-func0000000000000004:                   # @func0000000000000004
-	andi	a0, a0, 511
-	snez	a0, a0
-	ret
-func0000000000000014:                   # @func0000000000000014
-	slli	a0, a0, 42
-	srli	a0, a0, 42
-	snez	a0, a0
-	ret
-func0000000000000018:                   # @func0000000000000018
-	andi	a0, a0, 7
-	seqz	a0, a0
-	ret
-func0000000000000038:                   # @func0000000000000038
-	slli	a0, a0, 48
-	srli	a0, a0, 48
-	seqz	a0, a0
-	ret
-func0000000000000028:                   # @func0000000000000028
-	slli	a0, a0, 51
-	srli	a0, a0, 51
-	seqz	a0, a0
-	ret
-func0000000000000024:                   # @func0000000000000024
-	sext.w	a0, a0
-	snez	a0, a0
+	slti	a0, a0, 0
 	ret
 func0000000000000021:                   # @func0000000000000021
-	andi	a0, a0, 1
+	sext.w	a0, a0
+	addi	a0, a0, -1
+	seqz	a0, a0
+	ret
+func0000000000000041:                   # @func0000000000000041
+	sext.w	a0, a0
+	addi	a0, a0, -1
+	seqz	a0, a0
+	ret
+func0000000000000061:                   # @func0000000000000061
+	sext.w	a0, a0
+	addi	a0, a0, -1
+	seqz	a0, a0
 	ret

@@ -15,13 +15,13 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a1, a1, 33
 	add	a0, a0, a1
 	ret
-func000000000000006e:                   # @func000000000000006e
+func000000000000006f:                   # @func000000000000006f
 	addi	a1, a1, 63
 	srli	a1, a1, 6
 	addi	a1, a1, -1
 	sh3add.uw	a0, a1, a0
 	ret
-func0000000000000066:                   # @func0000000000000066
+func0000000000000067:                   # @func0000000000000067
 	addi	a1, a1, 63
 	srli	a1, a1, 6
 	addi	a1, a1, -1

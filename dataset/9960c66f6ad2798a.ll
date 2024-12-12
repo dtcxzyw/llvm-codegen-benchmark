@@ -1,5 +1,10 @@
 
-; 7 occurrences:
+%"class.boost::geometry::model::point.2980740" = type { [2 x double] }
+
+; 10 occurrences:
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -15,7 +20,14 @@ entry:
   ret ptr %4
 }
 
-; 22 occurrences:
+; 29 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/ipc_reliable_message_queue.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; casadi/optimized/kinsol.c.ll
@@ -43,6 +55,23 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = srem i64 %1, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 8 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/core.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/within_pointlike_geometry.ll
+; casadi/optimized/kinsol.c.ll
+; sundials/optimized/kinsol.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = srem i64 %1, %2
+  %4 = getelementptr nusw nuw %"class.boost::geometry::model::point.2980740", ptr %0, i64 %3
   ret ptr %4
 }
 

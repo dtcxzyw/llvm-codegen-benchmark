@@ -1,6 +1,12 @@
 
-; 16 occurrences:
+; 22 occurrences:
 ; libquic/optimized/cfb.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; openssl/optimized/libcrypto-lib-cfb128.ll
 ; openssl/optimized/libcrypto-lib-e_des.ll
@@ -17,13 +23,28 @@
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = xor i32 %2, 7
   %4 = shl nuw nsw i32 1, %3
   %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
+  ret i1 %6
+}
+
+; 3 occurrences:
+; freetype/optimized/sdf.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; wireshark/optimized/packet-per.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 7
+  %3 = xor i32 %2, 7
+  %4 = shl nuw nsw i32 1, %3
+  %5 = and i32 %4, %0
+  %6 = icmp ne i32 %5, 0
   ret i1 %6
 }
 
@@ -36,12 +57,12 @@ entry:
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; xgboost/optimized/updater_refresh.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = xor i32 %2, 7
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }

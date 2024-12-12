@@ -18,7 +18,7 @@ entry:
   ret i64 %2
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; cpython/optimized/ceval.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; influxdb-rs/optimized/380gcqze52ow6205.ll
@@ -41,7 +41,6 @@ entry:
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll

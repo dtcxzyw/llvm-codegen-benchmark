@@ -10,11 +10,28 @@ func0000000000000012:                   # @func0000000000000012
 	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
+func00000000000000b4:                   # @func00000000000000b4
+	sext.w	a1, a1
+	sext.w	a0, a0
+	fmv.d.x	fa5, zero
+	slt	a0, a0, a1
+	xori	a0, a0, 1
+	flt.d	a1, fa5, fa0
+	or	a0, a0, a1
+	ret
 func0000000000000064:                   # @func0000000000000064
 	sext.w	a1, a1
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	slt	a0, a0, a1
+	flt.d	a1, fa5, fa0
+	or	a0, a0, a1
+	ret
+func00000000000000a4:                   # @func00000000000000a4
+	sext.w	a0, a0
+	sext.w	a1, a1
+	fmv.d.x	fa5, zero
+	slt	a0, a1, a0
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret

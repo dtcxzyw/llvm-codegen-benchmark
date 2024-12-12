@@ -31,7 +31,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
   %6 = xor i64 %5, -1
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

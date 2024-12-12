@@ -5,11 +5,11 @@ func000000000000000d:                   # @func000000000000000d
 	shrl	$21, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	addl	$-1000, %edi                    # imm = 0xFC18
+	addl	$55, %edi
 	movzwl	%di, %eax
 	shrl	$3, %eax
-	imull	$8389, %eax, %eax               # imm = 0x20C5
-	shrl	$20, %eax
+	imull	$9363, %eax, %eax               # imm = 0x2493
+	shrl	$16, %eax
 	retq
 func0000000000000009:                   # @func0000000000000009
 	addl	$5, %edi

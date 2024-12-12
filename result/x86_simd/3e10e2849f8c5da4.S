@@ -1,7 +1,7 @@
 func0000000000000080:                   # @func0000000000000080
 	vpaddq	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
 	retq
 func0000000000000057:                   # @func0000000000000057
@@ -19,13 +19,13 @@ func0000000000000054:                   # @func0000000000000054
 func0000000000000000:                   # @func0000000000000000
 	vpsllq	$6, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsllq	$3, %ymm0, %ymm0
 	retq
 func00000000000000d0:                   # @func00000000000000d0
 	vpsllq	$7, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsllq	$4, %ymm0, %ymm0
 	retq
 func0000000000000040:                   # @func0000000000000040
@@ -36,14 +36,14 @@ func0000000000000040:                   # @func0000000000000040
 	retq
 func00000000000000c0:                   # @func00000000000000c0
 	vpsllq	$8, %ymm2, %ymm2
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsllq	$16, %ymm0, %ymm0
 	retq
 func0000000000000050:                   # @func0000000000000050
 	vpsllq	$16, %ymm2, %ymm2
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsllq	$8, %ymm0, %ymm0
 	retq
 func00000000000000ef:                   # @func00000000000000ef

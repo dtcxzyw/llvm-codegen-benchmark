@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -25,6 +25,7 @@
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_calendar.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/perf_floodfill.cpp.ll
 ; raylib/optimized/raudio.c.ll
@@ -44,7 +45,7 @@ entry:
   ret i32 %4
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/giaHash.c.ll
 ; clamav/optimized/pe.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -61,7 +62,6 @@ entry:
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TypeIndexDiscovery.cpp.ll
 ; oiio/optimized/bmpoutput.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
@@ -92,9 +92,10 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; cpython/optimized/_codecs_kr.ll
+; linux/optimized/ff-memless.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/route.ll

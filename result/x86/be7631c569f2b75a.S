@@ -5,3 +5,9 @@ func0000000000000002:                   # @func0000000000000002
 	andq	%rdi, %rax
 	leaq	(%rsi,%rax,8), %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	addq	$7, %rsi
+	andq	$-8, %rsi
+	andl	$1, %edi
+	leaq	(%rsi,%rdi,8), %rax
+	retq

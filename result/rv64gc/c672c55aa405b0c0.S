@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000033:                   # @func0000000000000033
 	andi	a1, a1, 1
 	lui	a3, 2
 	addiw	a3, a3, 368
@@ -14,7 +14,7 @@ func0000000000000022:                   # @func0000000000000022
 	add	a0, a0, a2
 	addi	a0, a0, 216
 	ret
-func0000000000000020:                   # @func0000000000000020
+func0000000000000030:                   # @func0000000000000030
 	andi	a1, a1, 1
 	add	a0, a0, a2
 	bnez	a1, .LBB1_2
@@ -27,7 +27,7 @@ func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a1
 	addi	a0, a0, 5
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000003f:                   # @func000000000000003f
 	andi	a1, a1, 1
 	add	a0, a0, a2
 	bnez	a1, .LBB2_2
@@ -40,6 +40,20 @@ func000000000000002a:                   # @func000000000000002a
 	add	a0, a0, a1
 	addi	a0, a0, 3
 	ret
+func0000000000000020:                   # @func0000000000000020
+	andi	a1, a1, 1
+	slli	a0, a0, 3
+	add	a2, a2, a0
+	bnez	a1, .LBB3_2
+	li	a0, 8
+	add	a0, a0, a2
+	addi	a0, a0, -8
+	ret
+.LBB3_2:
+	li	a0, 16
+	add	a0, a0, a2
+	addi	a0, a0, -8
+	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a2
 	slli	a1, a1, 63
@@ -48,4 +62,14 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a1, a1, 49
 	add	a0, a0, a1
 	addi	a0, a0, -1
+	ret
+func0000000000000003:                   # @func0000000000000003
+	andi	a1, a1, 1
+	li	a3, 40
+	mul	a0, a0, a3
+	addi	a1, a1, -1
+	add	a0, a0, a2
+	andi	a1, a1, 16
+	add	a0, a0, a1
+	addi	a0, a0, -40
 	ret

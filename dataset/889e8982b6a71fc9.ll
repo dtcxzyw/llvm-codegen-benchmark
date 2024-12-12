@@ -9,7 +9,7 @@ define i64 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = or disjoint i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   %6 = freeze i32 %5
   %7 = zext nneg i32 %6 to i64
   ret i64 %7

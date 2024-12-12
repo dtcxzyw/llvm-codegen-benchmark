@@ -20,7 +20,7 @@ entry:
 ; spike/optimized/fsr.ll
 ; spike/optimized/fsrw.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000018(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 32
   %.not = icmp eq i64 %3, 0

@@ -8,7 +8,7 @@
 define double @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fdiv float %1, 2.700000e+01
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fpext float %3 to double
   ret double %4
 }

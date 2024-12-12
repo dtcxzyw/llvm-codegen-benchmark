@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/MD2Loader.cpp.ll
@@ -9,6 +9,7 @@
 ; assimp/optimized/OgreStructs.cpp.ll
 ; assimp/optimized/STLLoader.cpp.ll
 ; assimp/optimized/UnrealLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; git/optimized/date.ll
 ; linux/optimized/intel_gt_mcr.ll
 ; linux/optimized/intel_uncore.ll
@@ -44,6 +45,21 @@ entry:
   ret i64 %3
 }
 
+; 5 occurrences:
+; boost/optimized/to_chars.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; linux/optimized/intel_hdmi.ll
+; postgres/optimized/date.ll
+; raylib/optimized/rmodels.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i32 %0) #0 {
+entry:
+  %1 = mul nuw nsw i32 %0, 3
+  %2 = zext nneg i32 %1 to i64
+  %3 = mul nuw nsw i64 %2, 12
+  ret i64 %3
+}
+
 ; 1 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; Function Attrs: nounwind
@@ -55,9 +71,18 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
-; llvm/optimized/MCContext.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i32 %0) #0 {
+entry:
+  %1 = mul nuw i32 %0, 56
+  %2 = zext i32 %1 to i64
+  %3 = mul i64 %2, 163391164108059
+  ret i64 %3
+}
+
+; 1 occurrences:
 ; llvm/optimized/SplitKit.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
@@ -76,19 +101,6 @@ entry:
   %1 = mul nuw nsw i32 %0, 37
   %2 = zext nneg i32 %1 to i64
   %3 = mul i64 %2, -4658895280553007687
-  ret i64 %3
-}
-
-; 3 occurrences:
-; linux/optimized/intel_hdmi.ll
-; postgres/optimized/date.ll
-; raylib/optimized/rmodels.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i32 %0) #0 {
-entry:
-  %1 = mul nuw nsw i32 %0, 1000
-  %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, 1000
   ret i64 %3
 }
 

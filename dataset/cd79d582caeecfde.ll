@@ -11,9 +11,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; libquic/optimized/poly.c.ll
-; redis/optimized/rax.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -62,27 +61,7 @@ entry:
   %3 = add nuw i32 %1, %2
   %4 = and i32 %3, 65535
   %5 = add nuw nsw i32 %4, 4
-  %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 9 occurrences:
-; linux/optimized/af_packet.ll
-; linux/optimized/arp.ll
-; linux/optimized/igmp.ll
-; linux/optimized/ip_output.ll
-; linux/optimized/ipconfig.ll
-; linux/optimized/mcast.ll
-; linux/optimized/ndisc.ll
-; linux/optimized/raw.ll
-; wireshark/optimized/packet-asterix.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = and i32 %3, 65535
-  %5 = add nuw nsw i32 %4, 3
-  %6 = add i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -116,6 +95,25 @@ entry:
   ret i32 %6
 }
 
+; 8 occurrences:
+; linux/optimized/af_packet.ll
+; linux/optimized/arp.ll
+; linux/optimized/igmp.ll
+; linux/optimized/ip_output.ll
+; linux/optimized/ipconfig.ll
+; linux/optimized/mcast.ll
+; linux/optimized/ndisc.ll
+; linux/optimized/raw.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = and i32 %3, 131056
+  %5 = add nuw nsw i32 %4, 16
+  %6 = add i32 %0, %5
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; linux/optimized/raw.ll
 ; Function Attrs: nounwind
@@ -124,7 +122,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 131056
   %5 = add nuw nsw i32 %4, 16
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 

@@ -4,7 +4,7 @@
 ; icu/optimized/uts46.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031c(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000c2c(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %0
@@ -23,10 +23,10 @@ entry:
 ; z3/optimized/nnf_tactic.cpp.ll
 ; z3/optimized/purify_arith_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000039c(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000f2c(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp samesign uge i64 %3, %0
   %5 = and i32 %1, 536870912
   %6 = icmp ne i32 %5, 0
   %7 = select i1 %6, i1 true, i1 %4
@@ -37,7 +37,7 @@ entry:
 ; casadi/optimized/serializing_stream.cpp.ll
 ; node/optimized/libnode.node_i18n.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000082c(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp eq i64 %3, %0
@@ -51,7 +51,7 @@ entry:
 ; icu/optimized/regeximp.ll
 ; icu/optimized/rematch.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000042c(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = icmp eq i64 %3, %0

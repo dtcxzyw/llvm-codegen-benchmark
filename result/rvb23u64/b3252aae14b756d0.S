@@ -1,9 +1,9 @@
 func0000000000000010:                   # @func0000000000000010
 	andi	a1, a1, 255
-	addi	a1, a1, -45
+	addi	a1, a1, -46
 	seqz	a1, a1
-	sub	a0, a0, a1
-	addi	a0, a0, 1
+	not	a1, a1
+	add	a0, a0, a1
 	ret
 func0000000000000065:                   # @func0000000000000065
 	sext.b	a1, a1

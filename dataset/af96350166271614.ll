@@ -1,9 +1,11 @@
 
-; 96 occurrences:
+; 97 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/mioRead.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; arrow/optimized/bit_block_counter.cc.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; clamav/optimized/qsort.c.ll
@@ -35,7 +37,6 @@
 ; gromacs/optimized/xvgr.cpp.ll
 ; hdf5/optimized/H5IM.c.ll
 ; hdf5/optimized/h5diff_main.c.ll
-; libquic/optimized/cmp.c.ll
 ; libquic/optimized/file_path.cc.ll
 ; libwebp/optimized/vp8_dec.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll

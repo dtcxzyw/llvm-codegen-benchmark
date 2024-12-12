@@ -3,28 +3,28 @@
 ; abc/optimized/covMinSop.c.ll
 ; qemu/optimized/hw_usb_desc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = add nuw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 93 occurrences:
+; 89 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/covMinSop.c.ll
@@ -105,10 +105,6 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; openblas/optimized/dlatm1.c.ll
 ; openblas/optimized/dlatm7.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
 ; openspiel/optimized/hearts_test.cc.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -119,12 +115,12 @@ entry:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -139,24 +135,24 @@ entry:
 ; php/optimized/zend_jit.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = add nsw i32 %2, -5
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 2
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -168,35 +164,34 @@ entry:
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; z3/optimized/sat_parallel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
-; libevent/optimized/event_tagging.c.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; linux/optimized/mpicoder.ll
 ; postgres/optimized/spgdoinsert.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 14
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifCut.c.ll
@@ -207,31 +202,27 @@ entry:
 ; icu/optimized/extradata.ll
 ; icu/optimized/formattedval_iterimpl.ll
 ; libwebp/optimized/lossless_enc.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; postgres/optimized/tsgistidx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; abc/optimized/kitDsd.c.ll
-; llvm/optimized/ConstraintElimination.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SimplifyIndVar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 26
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
@@ -240,36 +231,61 @@ entry:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; libevent/optimized/event_tagging.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 1
+  %3 = add nuw nsw i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp samesign ult i64 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/ConstraintElimination.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 8
+  %3 = add nsw i32 %2, -1
+  %4 = zext i32 %3 to i64
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; redis/optimized/sentinel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 

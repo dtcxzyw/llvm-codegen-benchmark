@@ -35,6 +35,6 @@ func000000000000000b:                   // @func000000000000000b
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	lsl	x0, x0, #51
+	lsl	x0, x0, #32
 	ret
                                         // -- End function

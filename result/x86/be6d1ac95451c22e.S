@@ -1,7 +1,7 @@
-func00000000000003c7:                   # @func00000000000003c7
+func0000000000000d87:                   # @func0000000000000d87
 	incl	%ecx
-	cmpl	%edi, %ecx
-	setge	%cl
+	cmpl	%ecx, %edi
+	setle	%cl
 	orq	%rdx, %rsi
 	setne	%al
 	andb	%cl, %al

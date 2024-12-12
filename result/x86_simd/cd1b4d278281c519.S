@@ -2,7 +2,7 @@
 	.long	1073741824                      # 0x40000000
 .LCPI0_1:
 	.long	32                              # 0x20
-func0000000000000346:                   # @func0000000000000346
+func0000000000000c86:                   # @func0000000000000c86
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpnltud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [32,32,32,32,32,32,32,32]

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/thread.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i8 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = add nuw nsw i32 %2, 1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Compiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = add nuw nsw i32 %2, 2
@@ -38,12 +38,12 @@ entry:
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = add nuw nsw i32 %2, 1
   %4 = zext i8 %0 to i32
-  %5 = icmp ult i32 %3, %4
+  %5 = icmp samesign ult i32 %3, %4
   ret i1 %5
 }
 

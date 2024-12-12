@@ -13,13 +13,15 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; draco/optimized/hash_utils.cc.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
+; luajit/optimized/lj_snap.ll
+; luajit/optimized/lj_snap_dyn.ll
 ; postgres/optimized/namespace.ll
 ; postgres/optimized/pgstat_shmem.ll
 ; Function Attrs: nounwind
@@ -27,7 +29,7 @@ define i64 @func0000000000000002(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = shl nsw i64 %2, 56
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

@@ -1,24 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/struct.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, double %1) #0 {
-entry:
-  %2 = fcmp oeq double %1, 0.000000e+00
-  %3 = select i1 %2, i64 0, i64 %0
-  ret i64 %3
-}
-
-; 1 occurrences:
-; php/optimized/zend_API.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, double %1) #0 {
-entry:
-  %2 = fcmp ueq double %1, 0x7FF0000000000000
-  %3 = select i1 %2, i64 0, i64 %0
-  ret i64 %3
-}
-
 ; 27 occurrences:
 ; cmake/optimized/json_writer.cpp.ll
 ; hermes/optimized/Array.cpp.ll
@@ -83,16 +63,6 @@ define i64 @func0000000000000002(i64 %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 0xC3E0000000000000
   %3 = select i1 %2, i64 -9223372036854775808, i64 %0
-  ret i64 %3
-}
-
-; 1 occurrences:
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, double %1) #0 {
-entry:
-  %2 = fcmp oge double %1, 0x43E0000000000000
-  %3 = select i1 %2, i64 9223372036854775, i64 %0
   ret i64 %3
 }
 

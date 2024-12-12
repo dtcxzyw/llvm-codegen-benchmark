@@ -6,10 +6,6 @@ func0000000000000019:                   # @func0000000000000019
 	movl	%edi, %eax
 	andl	$32768, %eax                    # imm = 0x8000
 	retq
-func0000000000000011:                   # @func0000000000000011
-	movl	%edi, %eax
-	andl	$49152, %eax                    # imm = 0xC000
-	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%edi, %eax
 	andl	$128, %eax

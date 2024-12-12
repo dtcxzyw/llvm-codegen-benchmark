@@ -1,13 +1,15 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = icmp eq i8 %2, 0
@@ -20,7 +22,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-tecmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = icmp eq i8 %2, 14

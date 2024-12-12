@@ -21,9 +21,3 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$5, %esi
 	cmovgel	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movl	%edx, %eax
-	andl	$2047, %eax                     # imm = 0x7FF
-	cmpl	$3122, %esi                     # imm = 0xC32
-	cmovael	%edi, %eax
-	retq

@@ -10,6 +10,6 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
-	cmpl	$11, %esi
+	cmpl	$6, %esi
 	cmovbq	%rdi, %rax
 	retq

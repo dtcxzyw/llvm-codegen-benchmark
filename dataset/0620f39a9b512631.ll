@@ -5,7 +5,7 @@
 ; abc/optimized/giaUtil.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 14
   %3 = and i32 %2, 3
@@ -14,7 +14,8 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; hdf5/optimized/H5Centry.c.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; linux/optimized/hda_auto_parser.ll
@@ -62,7 +63,7 @@ entry:
   ret i1 %5
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/bmcChain.c.ll
 ; abc/optimized/bmcMulti.c.ll
 ; abc/optimized/giaEquiv.c.ll
@@ -76,7 +77,6 @@ entry:
 ; linux/optimized/synaptics.ll
 ; linux/optimized/xhci-mem.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; openjdk/optimized/ad_x86_peephole.ll
@@ -91,11 +91,11 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 4
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -103,29 +103,28 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/vm_version_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = and i32 %2, 15
-  %4 = or disjoint i32 %3, %0
-  %5 = icmp ugt i32 %4, 70
+  %4 = or disjoint i32 %0, %3
+  %5 = icmp samesign ugt i32 %4, 70
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/vm_version_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
   %3 = and i32 %2, 240
-  %4 = or disjoint i32 %3, %0
-  %5 = icmp ult i32 %4, 59
+  %4 = or disjoint i32 %0, %3
+  %5 = icmp samesign ult i32 %4, 59
   ret i1 %5
 }
 
-; 3 occurrences:
-; clamav/optimized/unpack.cpp.ll
+; 2 occurrences:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
 ; Function Attrs: nounwind
@@ -151,12 +150,24 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; clamav/optimized/unpack.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 1
+  %3 = and i32 %2, 32640
+  %4 = or i32 %0, %3
+  %5 = icmp samesign ult i32 %4, 257
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; llvm/optimized/MachineInstrBundle.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 8
   %3 = and i32 %2, 4095

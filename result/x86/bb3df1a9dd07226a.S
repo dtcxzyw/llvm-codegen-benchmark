@@ -1,19 +1,19 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	orl	%edx, %esi
 	btq	%rsi, %rdi
 	setae	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	orl	%edx, %esi
 	btq	%rsi, %rdi
 	setae	%al
 	retq
-func00000000000000ec:                   # @func00000000000000ec
+func00000000000001cc:                   # @func00000000000001cc
 	orl	%edx, %esi
 	btq	%rsi, %rdi
 	setb	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	orl	%edx, %esi
 	btq	%rsi, %rdi
 	setae	%al

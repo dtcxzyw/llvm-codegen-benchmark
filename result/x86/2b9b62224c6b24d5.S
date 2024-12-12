@@ -10,13 +10,13 @@ func0000000000000000:                   # @func0000000000000000
 	movslq	%esi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	movzwl	%dx, %eax
 	addq	%rdi, %rax
 	movslq	%esi, %rcx
 	leaq	(%rax,%rcx,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	movzwl	%dx, %ecx
 	addq	%rdi, %rcx
 	movslq	%esi, %rax

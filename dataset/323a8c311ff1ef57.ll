@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sdiv i32 %0, %2

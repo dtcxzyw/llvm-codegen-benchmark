@@ -4,7 +4,7 @@
 ; ruby/optimized/unicode.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -102
   %4 = icmp ult i32 %3, 868
@@ -20,7 +20,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_mul.ll
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ult i32 %3, 3
@@ -68,7 +68,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -4320
   %4 = icmp ult i32 %3, 10
@@ -78,12 +78,11 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; graphviz/optimized/strmatch.c.ll
-; quickjs/optimized/libregexp.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000484(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -123
   %4 = icmp ult i32 %3, -26
@@ -93,27 +92,15 @@ entry:
   ret i1 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; linux/optimized/intel_display.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = icmp ult i32 %3, 2
+  %3 = add i32 %2, -91
+  %4 = icmp ult i32 %3, -26
   %5 = icmp ne i32 %1, 0
-  %6 = select i1 %5, i1 %0, i1 false
-  %7 = select i1 %6, i1 %4, i1 false
-  ret i1 %7
-}
-
-; 1 occurrences:
-; icu/optimized/ubidiwrt.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001c4(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -8298
-  %4 = icmp ult i32 %3, -4
-  %5 = icmp ne i32 %1, 8204
   %6 = select i1 %5, i1 %0, i1 false
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7

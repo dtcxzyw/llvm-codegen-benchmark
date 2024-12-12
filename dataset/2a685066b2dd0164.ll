@@ -1,8 +1,13 @@
 
-; 182 occurrences:
+; 186 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; assimp/optimized/PlyParser.cpp.ll
+; boost/optimized/codepage.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/record_ostream.ll
 ; cmake/optimized/cmCTest.cxx.ll
 ; cmake/optimized/cmCTestBZR.cxx.ll
 ; cmake/optimized/cmCTestCurl.cxx.ll
@@ -67,7 +72,6 @@
 ; folly/optimized/LogCategory.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
 ; folly/optimized/LogLevel.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/MacAddress.cpp.ll
 ; folly/optimized/MallctlHelper.cpp.ll
 ; folly/optimized/NestedCommandLineApp.cpp.ll
@@ -195,7 +199,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestFixedVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

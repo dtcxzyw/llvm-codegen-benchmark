@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -11,7 +11,7 @@ entry:
   ret i1 %6
 }
 
-; 316 occurrences:
+; 314 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -30,6 +30,7 @@ entry:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -194,9 +195,6 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -329,7 +327,7 @@ entry:
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -341,7 +339,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/pathfn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -355,7 +353,7 @@ entry:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; yosys/optimized/eval.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -367,11 +365,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/InlineFunction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp ugt i64 %5, 1152921504606846975
   ret i1 %6
 }
@@ -382,48 +380,47 @@ entry:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sub nsw i64 %3, %1
-  %5 = sub i64 0, %0
-  %6 = icmp eq i64 %4, %5
-  ret i1 %6
+  %.neg = sub i64 %1, %3
+  %4 = icmp eq i64 %0, %.neg
+  ret i1 %4
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000f8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 1
+  %6 = icmp samesign ugt i64 %5, 1
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
   %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 1
+  %6 = icmp samesign ugt i64 %5, 1
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
   %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 2
+  %6 = icmp samesign ult i64 %5, 2
   ret i1 %6
 }
 

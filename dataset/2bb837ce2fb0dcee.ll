@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; openssl/optimized/libcrypto-lib-f_generic.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
 ; openssl/optimized/libcrypto-lib-scalar.ll
@@ -14,6 +14,7 @@
 ; spike/optimized/vmadc_vx.ll
 ; spike/optimized/vmadc_vxm.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i128 @func000000000000001e(i128 %0, i128 %1, i64 %2) #0 {
 entry:
@@ -37,7 +38,8 @@ entry:
   ret i128 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/approximately_equals.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000014(i128 %0, i128 %1, i64 %2) #0 {

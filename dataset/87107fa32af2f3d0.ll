@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/message.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/RuntimeModule.cpp.ll
 ; llvm/optimized/ContinuationRecordBuilder.cpp.ll
@@ -10,10 +11,10 @@
 ; rocksdb/optimized/plain_table_key_coding.cc.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
-define { ptr, i64 } @func0000000000000004(i32 %0, ptr %1, i32 %2) #0 {
+define { ptr, i64 } @func0000000000000006(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = insertvalue { ptr, i64 } poison, ptr %4, 0
   %6 = zext i32 %0 to i64
   %7 = insertvalue { ptr, i64 } %5, i64 %6, 1
@@ -66,10 +67,10 @@ entry:
 ; mold/optimized/thunks.cc.LOONGARCH32.cc.ll
 ; mold/optimized/thunks.cc.PPC32.cc.ll
 ; Function Attrs: nounwind
-define { ptr, i64 } @func0000000000000005(i32 %0, ptr %1, i32 %2) #0 {
+define { ptr, i64 } @func0000000000000007(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = insertvalue { ptr, i64 } poison, ptr %4, 0
   %6 = zext nneg i32 %0 to i64
   %7 = insertvalue { ptr, i64 } %5, i64 %6, 1

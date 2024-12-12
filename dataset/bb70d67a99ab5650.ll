@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; ockam-rs/optimized/2px2is5654ttwkil.ll
 ; openjdk/optimized/constantTag.ll
@@ -15,6 +15,8 @@
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; yoga/optimized/AbsoluteLayout.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i8 %0) #0 {
 entry:

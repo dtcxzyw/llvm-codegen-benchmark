@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 66 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
@@ -58,6 +58,14 @@
 ; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/b9ty0axfl2ld0co5krahg7gfq.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i8 %0) #0 {
 entry:

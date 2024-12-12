@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
@@ -10,8 +10,6 @@
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -34,15 +32,11 @@ entry:
   ret i64 %5
 }
 
-; 48 occurrences:
+; 44 occurrences:
 ; abc/optimized/aigFrames.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; gromacs/optimized/dlabrd.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
-; gromacs/optimized/dsytd2.cpp.ll
 ; gromacs/optimized/slabrd.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; openblas/optimized/dgegs.c.ll
 ; openblas/optimized/dgegv.c.ll
@@ -132,20 +126,6 @@ define i64 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -1
   %3 = mul i32 %0, %1
-  %4 = add i32 %3, %2
-  %5 = sext i32 %4 to i64
-  ret i64 %5
-}
-
-; 3 occurrences:
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul i32 %0, %1
-  %3 = add nuw i32 %0, 1
   %4 = add i32 %3, %2
   %5 = sext i32 %4 to i64
   ret i64 %5

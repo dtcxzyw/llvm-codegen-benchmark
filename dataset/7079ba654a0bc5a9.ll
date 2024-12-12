@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; hdf5/optimized/H5HFhuge.c.ll
 ; linux/optimized/dcache.ll
 ; linux/optimized/exfldio.ll
@@ -8,7 +8,6 @@
 ; luajit/optimized/lib_bit_dyn.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
-; qemu/optimized/hw_net_can_ctucan_pci.c.ll
 ; ruby/optimized/random.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i32 %0) #0 {

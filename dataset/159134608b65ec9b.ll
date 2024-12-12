@@ -3,6 +3,7 @@
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; arrow/optimized/scalar_cast_nested.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
 ; cpython/optimized/_collectionsmodule.ll
@@ -21,7 +22,6 @@
 ; just-rs/optimized/uwydcyn8qeoqoev.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/alternative.ll
@@ -52,9 +52,7 @@
 ; linux/optimized/journal.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/kfifo.ll
-; linux/optimized/list_lru.ll
 ; linux/optimized/main.ll
-; linux/optimized/map.ll
 ; linux/optimized/memalloc.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mempolicy.ll
@@ -63,7 +61,6 @@
 ; linux/optimized/mremap.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/output.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/page_vma_mapped.ll
@@ -93,7 +90,6 @@
 ; linux/optimized/tg3.ll
 ; linux/optimized/trans_virtio.ll
 ; linux/optimized/ttm_pool.ll
-; linux/optimized/utaddress.ll
 ; linux/optimized/virtio_blk.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/virtio_ring.ll
@@ -129,11 +125,15 @@
 ; spike/optimized/f128_sqrt.ll
 ; velox/optimized/AllocationPool.cpp.ll
 ; velox/optimized/BitUtil.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -53
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
@@ -179,7 +179,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 5
   ret i64 %4
 }
@@ -193,7 +193,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 5
   ret i64 %4
 }
@@ -271,7 +271,7 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 4
   ret i64 %4
 }

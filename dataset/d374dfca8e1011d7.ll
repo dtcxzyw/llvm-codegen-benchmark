@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 95 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcExtract.c.ll
@@ -52,7 +52,6 @@
 ; abc/optimized/sswPairs.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/sswUnique.c.ll
 ; darktable/optimized/masks.c.ll
@@ -101,7 +100,7 @@ define i32 @func0000000000000000(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 

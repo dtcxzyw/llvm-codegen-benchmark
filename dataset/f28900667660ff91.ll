@@ -163,7 +163,7 @@
 ; spike/optimized/vxor_vv.ll
 ; spike/optimized/vxor_vx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16
   %4 = and i32 %3, %1

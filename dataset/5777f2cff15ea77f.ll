@@ -1,40 +1,53 @@
 
-%struct.t_enxframe.3170406 = type { double, i64, i64, double, i32, i32, i32, i32, ptr, i32, ptr, i32 }
-
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
+; llvm/optimized/TargetInstrInfo.cpp.ll
 ; minetest/optimized/sha1.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 56, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; nghttp2/optimized/llhttp.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 4, %1
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
 
-; 2 occurrences:
-; php/optimized/pcre2_jit_compile.ll
-; redis/optimized/fpconv_dtoa.ll
+; 4 occurrences:
+; libpng/optimized/png.c.ll
+; oiio/optimized/iffoutput.cpp.ll
+; openjdk/optimized/png.ll
+; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000070(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sub nuw nsw i32 4, %1
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 2
+  ret ptr %5
+}
+
+; 1 occurrences:
+; php/optimized/pcre2_jit_compile.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -1
   ret ptr %5
 }
@@ -42,16 +55,16 @@ entry:
 ; 1 occurrences:
 ; git/optimized/record.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 9, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   ret ptr %5
 }
 
-; 80 occurrences:
+; 78 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -72,8 +85,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -143,28 +154,40 @@ entry:
 }
 
 ; 2 occurrences:
-; oiio/optimized/iffoutput.cpp.ll
-; pugixml/optimized/pugixml.cpp.ll
+; boost/optimized/to_chars.ll
+; gromacs/optimized/gmx_energy.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000070(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = sub nuw nsw i32 4, %1
+  %2 = sub nuw nsw i32 2, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
 
-; 2 occurrences:
-; gromacs/optimized/gmx_energy.cpp.ll
+; 1 occurrences:
+; redis/optimized/fpconv_dtoa.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 0, %1
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; hyperscan/optimized/stream.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007e(ptr %0, i32 %1) #0 {
 entry:
-  %2 = sub nuw nsw i32 1, %1
+  %2 = sub nuw nsw i32 24, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.t_enxframe.3170406, ptr %0, i64 %3, i32 5
-  ret ptr %4
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -8
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

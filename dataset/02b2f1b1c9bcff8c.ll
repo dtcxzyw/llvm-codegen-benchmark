@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; box2d/optimized/b2_world.cpp.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btBatchedConstraints.ll
@@ -11,6 +11,7 @@
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll

@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 66 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; arrow/optimized/coo_converter.cc.ll
@@ -21,19 +21,13 @@
 ; cvc5/optimized/conjecture_generator.cpp.ll
 ; cvc5/optimized/error_set.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
-; cvc5/optimized/regexp_elim.cpp.ll
 ; cvc5/optimized/regexp_entail.cpp.ll
-; cvc5/optimized/smt2_term_parser.cpp.ll
-; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; entt/optimized/dispatcher.cpp.ll
 ; entt/optimized/observer.cpp.ll
 ; entt/optimized/registry.cpp.ll
 ; entt/optimized/sigh.cpp.ll
-; gromacs/optimized/hardwaretopology.cpp.ll
-; gromacs/optimized/index.cpp.ll
 ; gromacs/optimized/muParserBytecode.cpp.ll
 ; gromacs/optimized/splineutil.cpp.ll
-; hyperscan/optimized/ng_limex_accel.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
@@ -48,22 +42,13 @@
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
-; opencv/optimized/conv_depthwise.cpp.ll
-; opencv/optimized/convolution.cpp.ll
-; opencv/optimized/gemm_layer.cpp.ll
-; opencv/optimized/matmul_layer.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
-; opencv/optimized/reduce_layer.cpp.ll
 ; openspiel/optimized/tarok_test.cc.ll
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; quantlib/optimized/gmres.ll
-; re2/optimized/regexp.cc.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
-; xgboost/optimized/adaptive.cc.ll
-; xgboost/optimized/quantile_obj.cc.ll
-; xgboost/optimized/stats.cc.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
@@ -87,11 +72,18 @@ entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -16
+  %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
 
-; 3 occurrences:
+; 10 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/process.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; hyperscan/optimized/ng_limex_accel.cpp.ll
 ; quantlib/optimized/actualactual.ll
 ; quantlib/optimized/curvestate.ll
 ; quantlib/optimized/zabr.ll

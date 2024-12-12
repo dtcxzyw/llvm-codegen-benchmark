@@ -20,12 +20,12 @@ func0000000000000032:                   # @func0000000000000032
 	andq	$-8, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	leaq	(%rdx,%rsi,8), %rax
 	andq	$-8, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	leaq	(%rdx,%rsi,8), %rax
 	andq	$-8, %rax
 	addq	%rdi, %rax

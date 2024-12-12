@@ -1,10 +1,12 @@
 
-; 215 occurrences:
+; 224 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
 ; actix-rs/optimized/5f3qk1oomglisntr.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
 ; arrow/optimized/exec.cc.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; casadi/optimized/kinsol_interface.cpp.ll
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
@@ -21,7 +23,6 @@
 ; coreutils-rs/optimized/3l1fz4picv1xqozx.ll
 ; coreutils-rs/optimized/4ez78vmdxhxkcda.ll
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
-; coreutils-rs/optimized/4j5cjya214zps8p4.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; cpython/optimized/xmltok.ll
 ; cvc5/optimized/cvc5.cpp.ll
@@ -130,6 +131,7 @@
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_obj_event.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -190,6 +192,7 @@
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/2x1mxlm9f496za8a.ll
@@ -198,8 +201,6 @@
 ; wasmtime-rs/optimized/4y19gy3l28n56lab.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
 ; wasmtime-rs/optimized/5poarlxbfmu9lbg.ll
-; wasmtime-rs/optimized/awtl26sjra3upo4.ll
-; wasmtime-rs/optimized/oont1606ku4b766.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
@@ -214,6 +215,14 @@
 ; wireshark/optimized/packet-u3v.c.ll
 ; wireshark/optimized/syntax_line_edit.cpp.ll
 ; wireshark/optimized/tap-iostat.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i32 %0) #0 {

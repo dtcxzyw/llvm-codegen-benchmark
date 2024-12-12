@@ -1,10 +1,9 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/extraUtilMult.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
-; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/select.ll
 ; linux/optimized/sha512_generic.ll
@@ -33,7 +32,7 @@ entry:
   ret ptr %4
 }
 
-; 120 occurrences:
+; 119 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cbaReadVer.c.ll
@@ -102,9 +101,8 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; luau/optimized/lvmload.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; ncnn/optimized/innerproduct_x86_avx.cpp.ll
 ; ncnn/optimized/innerproduct_x86_avx512.cpp.ll
 ; ncnn/optimized/innerproduct_x86_f16c.cpp.ll

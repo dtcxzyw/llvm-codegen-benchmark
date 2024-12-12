@@ -25,7 +25,7 @@ func0000000000000000:                   # @func0000000000000000
 	vmovq	%rax, %xmm1
 	vpunpcklqdq	%xmm4, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm4[0]
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero

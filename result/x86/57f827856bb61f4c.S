@@ -1,55 +1,55 @@
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000001e4:                   # @func00000000000001e4
 	movl	%edx, %eax
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000065:                   # @func0000000000000065
+func00000000000000e5:                   # @func00000000000000e5
 	shrl	$2, %edx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setae	%al
+	cmpq	%rdx, %rdi
+	setbe	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	shrl	$5, %edx
 	leaq	(%rsi,%rdx,8), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
+func00000000000001e1:                   # @func00000000000001e1
+	shrl	$3, %edx
+	addq	%rsi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
 func00000000000000e1:                   # @func00000000000000e1
-	shrl	$3, %edx
-	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	sete	%al
-	retq
-func0000000000000061:                   # @func0000000000000061
 	shrl	%edx
 	shlq	$4, %rdx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000e4:                   # @func00000000000000e4
 	shrl	$12, %edx
 	leaq	(%rsi,%rdx,4), %rax
-	cmpq	%rdi, %rax
-	seta	%al
-	retq
-func000000000000006c:                   # @func000000000000006c
-	shrl	$26, %edx
-	leaq	(%rsi,%rdx,8), %rax
-	cmpq	%rdi, %rax
-	setne	%al
-	retq
-func0000000000000048:                   # @func0000000000000048
-	andl	$-8, %edx
-	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func00000000000000ec:                   # @func00000000000000ec
+	shrl	$26, %edx
+	leaq	(%rsi,%rdx,8), %rax
+	cmpq	%rax, %rdi
+	setne	%al
+	retq
+func0000000000000088:                   # @func0000000000000088
+	andl	$-8, %edx
+	addq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	seta	%al
+	retq
+func0000000000000084:                   # @func0000000000000084
 	shrl	$2, %edx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	seta	%al
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq

@@ -1,10 +1,11 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; icu/optimized/ucnv_u7.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; raylib/optimized/rtextures.c.ll

@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/cuddEssent.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/sfmLib.c.ll
+; boost/optimized/approximately_equals.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_nested_loop_join.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll

@@ -10,7 +10,7 @@ define float @func0000000000000001(float %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = uitofp nneg i32 %2 to float
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

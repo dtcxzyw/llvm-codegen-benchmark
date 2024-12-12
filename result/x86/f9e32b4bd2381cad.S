@@ -31,9 +31,8 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	$666643, %rsi, %rax             # imm = 0xA2C13
 	retq
 func0000000000000010:                   # @func0000000000000010
-	sarq	$32, %rsi
+	sarq	$5, %rsi
 	addq	%rdi, %rsi
-	shlq	$3, %rsi
 	leaq	(%rsi,%rsi,2), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002

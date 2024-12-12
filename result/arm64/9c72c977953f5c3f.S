@@ -7,8 +7,8 @@ func0000000000000003:                   // @func0000000000000003
 	umulh	x9, x2, x8
 	madd	x9, x3, x8, x9
 	mul	x8, x2, x8
-	eor	x1, x9, x1
-	eor	x0, x8, x0
+	eor	x1, x1, x9
+	eor	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
@@ -20,7 +20,7 @@ func0000000000000002:                   // @func0000000000000002
 	umulh	x9, x2, x8
 	madd	x9, x3, x8, x9
 	mul	x8, x2, x8
-	eor	x1, x9, x1
-	eor	x0, x8, x0
+	eor	x1, x1, x9
+	eor	x0, x0, x8
 	ret
                                         // -- End function

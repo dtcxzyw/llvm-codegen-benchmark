@@ -1,4 +1,4 @@
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	sext.w	a3, a2
 	sext.w	a4, a1
 	addi	a2, a2, -1
@@ -8,7 +8,7 @@ func0000000000000059:                   # @func0000000000000059
 	or	a1, a1, a2
 	mulw	a0, a1, a0
 	ret
-func0000000000000069:                   # @func0000000000000069
+func00000000000000a9:                   # @func00000000000000a9
 	sext.w	a3, a2
 	sext.w	a4, a1
 	addi	a2, a2, -1
@@ -18,7 +18,7 @@ func0000000000000069:                   # @func0000000000000069
 	or	a1, a1, a2
 	mulw	a0, a1, a0
 	ret
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	sext.w	a3, a2
 	sext.w	a4, a1
 	addi	a2, a2, -1
@@ -26,9 +26,9 @@ func0000000000000058:                   # @func0000000000000058
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000b1:                   # @func00000000000000b1
 	sext.w	a3, a2
 	sext.w	a4, a1
 	addi	a2, a2, -1

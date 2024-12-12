@@ -6,13 +6,13 @@
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000220(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000420(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 32
   %4 = icmp ugt i64 %1, 1
   %5 = and i1 %4, %3
   %6 = select i1 %5, i64 -256, i64 0
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

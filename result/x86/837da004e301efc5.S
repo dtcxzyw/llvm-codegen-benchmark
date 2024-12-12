@@ -23,3 +23,9 @@ func000000000000003d:                   # @func000000000000003d
 	orl	%esi, %edi
 	leal	984320(%rdi), %eax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	shll	$8, %esi
+	shll	$16, %edi
+	orl	%esi, %edi
+	leal	53(%rdi), %eax
+	retq

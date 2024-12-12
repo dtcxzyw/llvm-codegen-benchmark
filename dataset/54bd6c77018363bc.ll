@@ -32,7 +32,8 @@ entry:
   ret i32 %6
 }
 
-; 56 occurrences:
+; 55 occurrences:
+; boost/optimized/parser_utils.ll
 ; cpython/optimized/unicodeobject.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -84,8 +85,6 @@ entry:
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; tev/optimized/Common.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
@@ -146,8 +145,8 @@ define i32 @func0000000000000043(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl i32 %3, 1
-  %5 = add i32 %4, 4
-  %6 = add nuw nsw i32 %5, %0
+  %5 = add i32 %4, 2
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -174,6 +173,18 @@ entry:
   %4 = shl i32 %3, 1
   %5 = add i32 %4, 216
   %6 = add nsw i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000077(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = shl nuw nsw i32 %3, 10
+  %5 = add nsw i32 %4, -56613888
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 

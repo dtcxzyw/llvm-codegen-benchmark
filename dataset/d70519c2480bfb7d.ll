@@ -18,15 +18,14 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; linux/optimized/cpufreq_ondemand.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_snps_phy.ll
-; linux/optimized/tsc_msr.ll
+; lvgl/optimized/lv_chart.ll
 ; openusd/optimized/aom_scale.c.ll
 ; qemu/optimized/hw_intc_riscv_imsic.c.ll
 ; Function Attrs: nounwind

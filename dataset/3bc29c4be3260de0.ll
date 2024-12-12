@@ -8,10 +8,10 @@
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; oiio/optimized/bmpinput.cpp.ll
-; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/g711.c.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll

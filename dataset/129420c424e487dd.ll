@@ -5,12 +5,12 @@
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %4 = and i64 %1, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -178,12 +178,12 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = and i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -195,7 +195,7 @@ entry:
   %3 = shl i64 4096, %2
   %4 = add i64 %3, -1
   %5 = and i64 %4, %1
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -207,7 +207,7 @@ entry:
   %3 = shl i64 4096, %2
   %4 = add i64 %3, -1
   %5 = and i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

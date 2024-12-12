@@ -11,7 +11,7 @@
 ; gromacs/optimized/pdb2top.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i8 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i8 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
   %4 = icmp eq i64 %3, 0

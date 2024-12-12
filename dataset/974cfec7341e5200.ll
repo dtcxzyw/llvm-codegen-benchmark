@@ -1,12 +1,12 @@
 
-%"struct.std::pair.2884112" = type { %"class.hermes::vm::GCSymbolID.2884113", %"struct.hermes::vm::NamedPropertyDescriptor.2884114" }
-%"class.hermes::vm::GCSymbolID.2884113" = type { %"class.hermes::vm::SymbolID.2884115" }
-%"class.hermes::vm::SymbolID.2884115" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.2884114" = type { %"struct.hermes::vm::PropertyDescriptor.2884116" }
-%"struct.hermes::vm::PropertyDescriptor.2884116" = type { %union.anon.3.2884117, i32 }
-%union.anon.3.2884117 = type { i32 }
+%"struct.std::pair.3078635" = type { %"class.hermes::vm::GCSymbolID.3078636", %"struct.hermes::vm::NamedPropertyDescriptor.3078637" }
+%"class.hermes::vm::GCSymbolID.3078636" = type { %"class.hermes::vm::SymbolID.3078638" }
+%"class.hermes::vm::SymbolID.3078638" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3078637" = type { %"struct.hermes::vm::PropertyDescriptor.3078639" }
+%"struct.hermes::vm::PropertyDescriptor.3078639" = type { %union.anon.3.3078640, i32 }
+%union.anon.3.3078640 = type { i32 }
 
-; 136 occurrences:
+; 140 occurrences:
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/ArrayStorage.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
@@ -143,13 +143,17 @@
 ; openjdk/optimized/g1CardSet.ll
 ; protobuf/optimized/arena.cc.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i32 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = zext i32 %0 to i64
-  %5 = getelementptr nusw ptr, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %3, i64 %4
   ret ptr %5
 }
 
@@ -186,12 +190,12 @@ entry:
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i32 %0, i64 %1) #0 {
+define ptr @func000000000000001f(i32 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 456
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 456
   %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr nusw i64, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %3, i64 %4
   ret ptr %5
 }
 
@@ -211,12 +215,12 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(i32 %0, i64 %1) #0 {
+define ptr @func0000000000000013(i32 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr i8, ptr %2, i64 922880
   %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr nusw float, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %3, i64 %4
   ret ptr %5
 }
 
@@ -230,32 +234,33 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr i8, ptr %2, i64 4
   %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr %"struct.std::pair.2884112", ptr %3, i64 %4
+  %5 = getelementptr %"struct.std::pair.3078635", ptr %3, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i32 %0, i64 %1) #0 {
+define ptr @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = zext i32 %0 to i64
   %5 = getelementptr i16, ptr %3, i64 %4
   ret ptr %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; linux/optimized/md.ll
 ; linux/optimized/timer.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(i32 %0, i64 %1) #0 {
+define ptr @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = zext nneg i32 %0 to i64
   %5 = getelementptr i16, ptr %3, i64 %4
   ret ptr %5

@@ -11,7 +11,8 @@ entry:
   ret i32 %6
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -120,22 +121,20 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
-; arrow/optimized/pretty_print.cc.ll
-; arrow/optimized/scalar.cc.ll
-; arrow/optimized/scalar_cast_string.cc.ll
+; 1 occurrences:
 ; php/optimized/unixtime2tm.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000007c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = mul nsw i64 %0, 4294963696
-  %5 = add nsw i64 %4, %3
+  %4 = mul nuw nsw i64 %0, 4294963696
+  %5 = add nuw nsw i64 %4, %3
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/area.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/dt_common.ll
@@ -158,6 +157,20 @@ define i32 @func00000000000000c0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 51
   %4 = add i64 %0, %1
+  %5 = add i64 %4, %3
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+; 3 occurrences:
+; arrow/optimized/pretty_print.cc.ll
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/scalar_cast_string.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, 4294907296
+  %4 = add nsw i64 %0, %1
   %5 = add i64 %4, %3
   %6 = trunc i64 %5 to i32
   ret i32 %6

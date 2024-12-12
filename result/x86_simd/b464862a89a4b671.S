@@ -69,7 +69,7 @@ func0000000000000014:                   # @func0000000000000014
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpgtd	%ymm0, %ymm2, %k2
 	korb	%k1, %k2, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

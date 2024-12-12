@@ -8,17 +8,17 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%sil, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	cmpq	$1, %rdi
 	setne	%al
 	orb	%sil, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	cmpq	$2, %rdi
 	setb	%al
 	orb	%sil, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%sil, %al
@@ -29,13 +29,7 @@ func0000000000000008:                   # @func0000000000000008
 	orb	%sil, %al
 	retq
 func0000000000000010:                   # @func0000000000000010
-	movabsq	$-4294967297, %rax              # imm = 0xFFFFFFFEFFFFFFFF
-	cmpq	%rax, %rdi
-	seta	%al
-	orb	%sil, %al
-	retq
-func0000000000000050:                   # @func0000000000000050
-	cmpq	$65536, %rdi                    # imm = 0x10000
+	cmpq	$10, %rdi
 	setae	%al
 	orb	%sil, %al
 	retq

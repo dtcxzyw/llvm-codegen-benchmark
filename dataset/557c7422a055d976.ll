@@ -62,7 +62,8 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; gromacs/optimized/pdb2gmx.cpp.ll
 ; icu/optimized/decNumber.ll
 ; luajit/optimized/lj_lib.ll
@@ -84,10 +85,13 @@ entry:
   ret i1 %5
 }
 
-; 66 occurrences:
+; 69 occurrences:
 ; arrow/optimized/UriParse.c.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/area.ll
+; boost/optimized/message.ll
+; boost/optimized/sort_by_side.ll
 ; darktable/optimized/modulegroups.c.ll
 ; git/optimized/versioncmp.ll
 ; glslang/optimized/Intermediate.cpp.ll
@@ -182,14 +186,27 @@ entry:
 
 ; 5 occurrences:
 ; linux/optimized/i915_perf.ll
-; linux/optimized/intel_workarounds.ll
 ; llvm/optimized/ParseExpr.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
-; zxing/optimized/AZEncoder.cpp.ll
+; luau/optimized/main.cpp.ll
+; nlohmann_json/optimized/unit.cpp.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 27
+  %3 = icmp ult i32 %2, 63487
+  %4 = select i1 %3, i1 %1, i1 false
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; linux/optimized/intel_workarounds.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
+; zxing/optimized/AZEncoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 3122
   %4 = select i1 %3, i1 %1, i1 false
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5

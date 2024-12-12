@@ -4,7 +4,7 @@
 ; nori/optimized/nanovg.c.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000194(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000314(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %0, 3
   %4 = icmp sgt i32 %2, 2

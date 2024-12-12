@@ -1,5 +1,5 @@
 
-; 115 occurrences:
+; 114 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcSop.c.ll
@@ -38,7 +38,6 @@
 ; libquic/optimized/f_string.c.ll
 ; libquic/optimized/v3_utl.c.ll
 ; linux/optimized/auditsc.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/nlattr.ll
 ; linux/optimized/sysfs.ll
 ; linux/optimized/tcp_input.ll
@@ -123,7 +122,7 @@ entry:
   ret i32 %2
 }
 
-; 50 occurrences:
+; 49 occurrences:
 ; abc/optimized/mapperTruth.c.ll
 ; assimp/optimized/unzip.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -165,7 +164,6 @@ entry:
 ; postgres/optimized/path.ll
 ; postgres/optimized/path_shlib.ll
 ; postgres/optimized/path_srv.ll
-; qemu/optimized/net_util.c.ll
 ; ruby/optimized/process.ll
 ; slurm/optimized/proc_args.ll
 ; sqlite/optimized/sqlite3.ll
@@ -182,11 +180,10 @@ entry:
   ret i32 %2
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/scsi_proc.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i8 %0) #0 {
 entry:
@@ -195,7 +192,7 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -204,12 +201,34 @@ entry:
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; linux/optimized/alps.ll
+; lvgl/optimized/lv_calendar.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i8 %0) #0 {
 entry:
   %1 = icmp ult i8 %0, 3
+  %2 = sext i1 %1 to i32
+  ret i32 %2
+}
+
+; 1 occurrences:
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i8 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i8 %0, -56
+  %2 = sext i1 %1 to i32
+  ret i32 %2
+}
+
+; 2 occurrences:
+; arrow/optimized/diff.cc.ll
+; arrow/optimized/scalar_cast_string.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i8 %0) #0 {
+entry:
+  %1 = icmp samesign ult i8 %0, 3
   %2 = sext i1 %1 to i32
   ret i32 %2
 }

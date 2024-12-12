@@ -29,7 +29,8 @@ entry:
   ret i8 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind

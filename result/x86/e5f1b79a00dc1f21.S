@@ -1,14 +1,7 @@
-func0000000000000077:                   # @func0000000000000077
+func00000000000000e7:                   # @func00000000000000e7
 	incb	%dl
 	movzbl	%dl, %eax
-	cmpl	%esi, %eax
-	setge	%al
-	andb	%dil, %al
-	retq
-func0000000000000004:                   # @func0000000000000004
-	addb	$2, %dl
-	movzbl	%dl, %eax
-	cmpl	%esi, %eax
-	seta	%al
+	cmpl	%eax, %esi
+	setle	%al
 	andb	%dil, %al
 	retq

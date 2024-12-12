@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	imull	%edx, %esi
 	testl	%esi, %esi
 	setne	%cl
@@ -6,7 +6,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	imull	%edx, %esi
 	testl	%esi, %esi
 	setne	%cl

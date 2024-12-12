@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; folly/optimized/SSLContext.cpp.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/ibss.ll
@@ -11,6 +11,7 @@
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_MidiIn.ll
 ; openmpi/optimized/mca_base_framework.ll
 ; openmpi/optimized/pmix_mca_base_framework.ll
+; openusd/optimized/value.cpp.ll
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/rangetypes_spgist.ll
@@ -26,8 +27,10 @@ entry:
   ret i32 %5
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/ivyHaig.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -50,7 +53,6 @@ entry:
 ; llvm/optimized/LinkModules.cpp.ll
 ; lua/optimized/lcode.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/deriv.cpp.ll
 ; openjdk/optimized/DrawLine.ll
@@ -64,9 +66,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 218103808, i32 234881024
-  %4 = select i1 %1, i32 201326592, i32 %3
-  %5 = or disjoint i32 %4, %0
+  %3 = select i1 %2, i32 64, i32 2
+  %4 = select i1 %1, i32 8, i32 %3
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

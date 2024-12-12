@@ -1,4 +1,4 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000000de:                   # @func00000000000000de
 	addi	a3, a1, 1
 	mul	a2, a2, a3
 	sh3add	a0, a1, a0

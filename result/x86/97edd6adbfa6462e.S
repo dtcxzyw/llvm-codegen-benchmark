@@ -11,9 +11,9 @@ func000000000000000e:                   # @func000000000000000e
 	cmovel	%ecx, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leal	1(%rsi), %ecx
+	leal	-1(%rsi), %ecx
+	xorl	%eax, %eax
 	testb	$1, %dil
-	movl	$-2147483647, %eax              # imm = 0x80000001
 	cmovel	%ecx, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008

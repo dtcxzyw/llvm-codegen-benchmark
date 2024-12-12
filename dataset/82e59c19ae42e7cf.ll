@@ -25,7 +25,7 @@
 ; z3/optimized/udoc_relation.cpp.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000305(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000605(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
@@ -35,12 +35,13 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; wireshark/optimized/packet-wassp.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = zext i1 %2 to i32

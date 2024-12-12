@@ -1,4 +1,4 @@
-func00000000000001c4:                   # @func00000000000001c4
+func0000000000000584:                   # @func0000000000000584
 	movl	%edi, %eax
 	andl	$13, %eax
 	cmpl	$5, %eax
@@ -8,7 +8,7 @@ func00000000000001c4:                   # @func00000000000001c4
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	leal	-918000(%rdi), %eax
 	cmpl	$-240, %eax
 	setb	%cl
@@ -17,7 +17,7 @@ func000000000000004c:                   # @func000000000000004c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	movl	%edi, %eax
 	notl	%eax
 	testl	$65534, %eax                    # imm = 0xFFFE
@@ -27,11 +27,21 @@ func00000000000000c4:                   # @func00000000000000c4
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	testb	$7, %dil
 	sete	%cl
 	decl	%edi
 	cmpl	$1600, %edi                     # imm = 0x640
+	setb	%al
+	andb	%cl, %al
+	retq
+func0000000000000424:                   # @func0000000000000424
+	movl	%edi, %eax
+	andl	$6, %eax
+	cmpl	$2, %eax
+	sete	%cl
+	addl	$-2, %edi
+	cmpl	$3, %edi
 	setb	%al
 	andb	%cl, %al
 	retq

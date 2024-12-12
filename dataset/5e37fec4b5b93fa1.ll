@@ -20,7 +20,7 @@ entry:
   ret i64 %4
 }
 
-; 154 occurrences:
+; 155 occurrences:
 ; clamav/optimized/archive.cpp.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list_nested.cpp.ll
@@ -33,7 +33,6 @@ entry:
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/pshinter.c.ll
 ; grpc/optimized/slice.cc.ll
-; hermes/optimized/StringPrimitive.cpp.ll
 ; libquic/optimized/quic_utils.cc.ll
 ; linux/optimized/dev.ll
 ; linux/optimized/lbr.ll
@@ -50,6 +49,7 @@ entry:
 ; meshlab/optimized/ofbx.cpp.ll
 ; openjdk/optimized/memnode.ll
 ; protobuf/optimized/line_consumer.cc.ll
+; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; quantlib/optimized/fdm2dblackscholesop.ll
 ; quantlib/optimized/fdmbatesop.ll
@@ -175,10 +175,11 @@ entry:
 ; wireshark/optimized/wireshark_main_window.cpp.ll
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
+; yalantinglibs/optimized/tutorial.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 32
+  %3 = ashr exact i64 %2, 29
   %4 = select i1 %0, i64 %1, i64 %3
   ret i64 %4
 }

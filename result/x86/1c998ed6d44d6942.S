@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000001:                   # @func0000000000000001
 	movl	$255, %eax
 	shlxl	%edx, %eax, %eax
-	testl	%esi, %eax
+	testl	%eax, %esi
 	sete	%al
 	andb	%dil, %al
 	retq

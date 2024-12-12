@@ -1,56 +1,28 @@
-func00000000000001a1:                   // @func00000000000001a1
+func0000000000000541:                   // @func0000000000000541
 // %bb.0:                               // %entry
-	movi	v6.4s, #64
-	movi	v7.4s, #7
-	add	v5.4s, v5.4s, v6.4s
-	add	v4.4s, v4.4s, v6.4s
-	and	v2.16b, v2.16b, v7.16b
-	and	v3.16b, v3.16b, v7.16b
-	cmgt	v1.4s, v5.4s, v1.4s
-	cmgt	v0.4s, v4.4s, v0.4s
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	orr	v0.16b, v1.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	add	w8, w2, #64
+	tst	w1, #0x7
+	ccmp	w8, w0, #0, ne
+	cset	w0, gt
 	ret
                                         // -- End function
-func00000000000001bc:                   // @func00000000000001bc
+func000000000000056c:                   // @func000000000000056c
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	movi	v7.4s, #252, lsl #8
-	movi	v16.4s, #216, lsl #8
-	add	v5.4s, v5.4s, v6.4s
-	add	v4.4s, v4.4s, v6.4s
-	and	v2.16b, v2.16b, v7.16b
-	and	v3.16b, v3.16b, v7.16b
-	cmge	v1.4s, v5.4s, v1.4s
-	cmge	v0.4s, v4.4s, v0.4s
-	cmeq	v2.4s, v2.4s, v16.4s
-	cmeq	v3.4s, v3.4s, v16.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	orn	v0.16b, v0.16b, v1.16b
-	xtn	v0.8b, v0.8h
+	and	w8, w1, #0xfc00
+	mov	w9, #55296                      // =0xd800
+	add	w10, w2, #1
+	cmp	w8, w9
+	ccmp	w10, w0, #0, eq
+	cset	w0, ge
 	ret
                                         // -- End function
-func000000000000011c:                   // @func000000000000011c
+func000000000000042c:                   // @func000000000000042c
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	movi	v7.4s, #252, lsl #8
-	movi	v16.4s, #216, lsl #8
-	add	v5.4s, v5.4s, v6.4s
-	add	v4.4s, v4.4s, v6.4s
-	and	v2.16b, v2.16b, v7.16b
-	and	v3.16b, v3.16b, v7.16b
-	cmeq	v1.4s, v5.4s, v1.4s
-	cmeq	v0.4s, v4.4s, v0.4s
-	cmeq	v2.4s, v2.4s, v16.4s
-	cmeq	v3.4s, v3.4s, v16.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	orn	v0.16b, v0.16b, v1.16b
-	xtn	v0.8b, v0.8h
+	and	w8, w1, #0xfc00
+	mov	w9, #55296                      // =0xd800
+	add	w10, w2, #1
+	cmp	w8, w9
+	ccmp	w10, w0, #4, eq
+	cset	w0, eq
 	ret
                                         // -- End function

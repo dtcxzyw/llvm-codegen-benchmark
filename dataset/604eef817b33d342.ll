@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; git/optimized/progress.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/tsc.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; opencv/optimized/matrix_sparse.cpp.ll
@@ -42,20 +41,6 @@ entry:
   %2 = sub nsw i64 %0, %1
   %3 = mul nsw i64 %2, 12
   %4 = lshr i64 %3, 6
-  ret i64 %4
-}
-
-; 4 occurrences:
-; slurm/optimized/node_features_knl_generic.ll
-; slurm/optimized/run_command.ll
-; slurm/optimized/slurm_persist_conn.ll
-; slurm/optimized/slurm_protocol_socket.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nsw i64 %0, %1
-  %3 = mul i64 %2, 4294967296000
-  %4 = lshr exact i64 %3, 32
   ret i64 %4
 }
 

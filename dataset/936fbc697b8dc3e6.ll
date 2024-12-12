@@ -21,7 +21,7 @@ entry:
 ; php/optimized/quot_print.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000024(i8 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -32
   %3 = icmp ult i32 %2, 95

@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -15,7 +15,6 @@
 ; opencv/optimized/demosaicing.cpp.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; openusd/optimized/openexr-c.c.ll
-; slurm/optimized/ebpf.ll
 ; wireshark/optimized/packet-gmr1_bcch.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
@@ -26,15 +25,19 @@ entry:
   ret i16 %5
 }
 
-; 15 occurrences:
+; 19 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; arrow/optimized/float16.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/text_file_backend.ll
 ; coreutils-rs/optimized/4u84izbtaxbdqvdv.ll
 ; cpython/optimized/unicodeobject.ll
 ; folly/optimized/Conv.cpp.ll
 ; icu/optimized/ustrtrns.ll
 ; linux/optimized/libata-scsi.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
+; opencv/optimized/demosaicing.cpp.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; quantlib/optimized/date.ll
@@ -128,7 +131,7 @@ entry:
 define i16 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }
@@ -155,7 +158,7 @@ entry:
 define i16 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }
@@ -194,9 +197,10 @@ entry:
   ret i16 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cpython/optimized/_codecs_cn.ll
 ; llvm/optimized/SemaLookup.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll

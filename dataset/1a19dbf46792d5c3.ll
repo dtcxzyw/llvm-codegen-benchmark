@@ -59,14 +59,16 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; coreutils-rs/optimized/3jbb9tw7701fm28c.ll
 ; coreutils-rs/optimized/4qccn4mjmdouwvjm.ll
-; proj/optimized/io.cpp.ll
 ; rust-analyzer-rs/optimized/4li1jw3llk76lkpw.ll
 ; tls-rs/optimized/2xhpv4vf07do7r8g.ll
 ; yosys/optimized/glift.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i8 %0, i8 %1) #0 {
 entry:

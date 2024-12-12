@@ -30,9 +30,9 @@ func0000000000000002:                   # @func0000000000000002
 	seta	%al
 	retq
 .LCPI3_0:
-	.quad	0xbff921fb54442d18              # double -1.5707963267948966
+	.quad	0x3f747ae147ae147b              # double 0.0050000000000000001
 .LCPI3_1:
-	.quad	0x3d719799812dea11              # double 9.9999999999999998E-13
+	.quad	0x3ff0000000000000              # double 1
 func0000000000000004:                   # @func0000000000000004
 	kmovd	%edi, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}

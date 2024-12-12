@@ -1,7 +1,12 @@
 
-%struct.OnigRepeatRange.2485739 = type { i32, i32 }
-%"struct.OT::IntType.2617237" = type { %struct.BEInt.2617239 }
-%struct.BEInt.2617239 = type { [2 x i8] }
+%struct.OnigRepeatRange.2601212 = type { i32, i32 }
+%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
+%struct.BEInt.2730691 = type { [2 x i8] }
+%"class.boost::archive::detail::basic_iarchive_impl::cobject_id.3044689" = type <{ ptr, ptr, %"class.boost::archive::version_type.3044684", %"struct.boost::archive::tracking_type.3044690", i8, [2 x i8] }>
+%"class.boost::archive::version_type.3044684" = type { i32 }
+%"struct.boost::archive::tracking_type.3044690" = type { i8 }
+%struct.nk_text_undo_record.3063066 = type { i32, i16, i16, i16 }
+%struct.Column.3662203 = type { ptr, i8, i8, i8, i8, i16, i16 }
 
 ; 9 occurrences:
 ; linux/optimized/extents.ll
@@ -14,10 +19,10 @@
 ; ruby/optimized/regexec.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr %struct.OnigRepeatRange.2485739, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.OnigRepeatRange.2601212, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -44,11 +49,11 @@ entry:
 ; meshlab/optimized/packing.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
+; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; pocketpy/optimized/ceval.cpp.ll
@@ -56,15 +61,16 @@ entry:
 ; pocketpy/optimized/vm.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   ret ptr %4
 }
 
-; 25 occurrences:
+; 28 occurrences:
+; cmake/optimized/frm_driver.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
@@ -90,6 +96,8 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/DenseHll.cpp.ll
+; wireshark/optimized/packet-csn1.c.ll
+; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i16 %1) #0 {
 entry:
@@ -99,7 +107,7 @@ entry:
   ret ptr %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -107,14 +115,46 @@ entry:
 ; icu/optimized/olsontz.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr nusw %"struct.OT::IntType.2617237", ptr %0, i64 %2
+  %3 = getelementptr nusw %"struct.OT::IntType.2730689", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -2
   ret ptr %4
+}
+
+; 2 occurrences:
+; boost/optimized/basic_iarchive.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
+entry:
+  %2 = sext i16 %1 to i64
+  %3 = getelementptr nuw %"class.boost::archive::detail::basic_iarchive_impl::cobject_id.3044689", ptr %0, i64 %2, i32 4
+  ret ptr %3
+}
+
+; 2 occurrences:
+; nuklear/optimized/unity.c.ll
+; opencv/optimized/stereosgbm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
+entry:
+  %2 = sext i16 %1 to i64
+  %3 = getelementptr nusw %struct.nk_text_undo_record.3063066, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -12
+  ret ptr %4
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
+entry:
+  %2 = sext i16 %1 to i64
+  %3 = getelementptr %struct.Column.3662203, ptr %0, i64 %2, i32 5
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

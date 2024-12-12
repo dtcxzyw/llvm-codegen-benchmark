@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 84 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/kwajd.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -82,6 +82,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000001e(i32 %0, i32 %1) #0 {
@@ -92,7 +93,8 @@ entry:
   ret i16 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; clamav/optimized/str.c.ll
 ; linux/optimized/hid-core.ll
 ; linux/optimized/nf_conntrack_ftp.ll
 ; linux/optimized/regmap.ll
@@ -109,7 +111,7 @@ entry:
 define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 11
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -203,7 +205,7 @@ entry:
 define i16 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
@@ -219,7 +221,7 @@ entry:
   ret i16 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; luajit/optimized/lj_crecord.ll
@@ -232,7 +234,6 @@ entry:
 ; stockfish/optimized/movegen.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-scsi-mmc.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000001f(i32 %0, i32 %1) #0 {
@@ -250,7 +251,7 @@ entry:
 define i16 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -262,7 +263,7 @@ entry:
 define i16 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -274,7 +275,7 @@ entry:
 define i16 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
@@ -288,7 +289,7 @@ entry:
 define i16 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }

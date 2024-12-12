@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/mlib_c_ImageLookUp_f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000376(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000006e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
   %4 = add nsw i32 %3, -7
@@ -15,7 +15,7 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_D64nw.ll
 ; openjdk/optimized/mlib_ImageConv_F32nw.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 -3, %0
   %4 = sub i32 %2, %1
@@ -27,7 +27,7 @@ entry:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000176(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nsw i32 %3, -6
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nsw i32 %3, -2
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/div.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 -2, %0
   %4 = sub i32 %2, %1
@@ -75,18 +75,18 @@ entry:
 ; llvm/optimized/ParseStmtAsm.cpp.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = add i32 %3, -3
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; z3/optimized/fixed_bit_vector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = add i32 %3, 1

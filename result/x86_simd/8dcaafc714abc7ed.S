@@ -28,8 +28,14 @@ func000000000000000a:                   # @func000000000000000a
 	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI4_0:
+	.quad	1023                            # 0x3ff
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuq	.LCPI4_0(%rip){1to4}, %ymm0, %k1
+	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
+	retq
+.LCPI5_0:
 	.quad	16                              # 0x10
 func0000000000000008:                   # @func0000000000000008
-	vpcmpnleuq	.LCPI4_0(%rip){1to4}, %ymm0, %k1
+	vpcmpnleuq	.LCPI5_0(%rip){1to4}, %ymm0, %k1
 	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
 	retq

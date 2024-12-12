@@ -1,28 +1,46 @@
 
 ; 18 occurrences:
+; cpython/optimized/io.ll
+; git/optimized/wildmatch.ll
 ; icu/optimized/ucnv_ext.ll
+; icu/optimized/uniset.ll
 ; libjpeg-turbo/optimized/jdicc.c.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
+; libpng/optimized/pngwutil.c.ll
+; lightgbm/optimized/bin.cpp.ll
+; linux/optimized/config.ll
+; luajit/optimized/lj_opt_narrow.ll
+; luajit/optimized/lj_opt_narrow_dyn.ll
+; oiio/optimized/jpeginput.cpp.ll
+; openssl/optimized/libcrypto-lib-evp_enc.ll
+; openssl/optimized/libcrypto-shlib-evp_enc.ll
+; rocksdb/optimized/comparator.cc.ll
+; wireshark/optimized/packet-bgp.c.ll
+; wireshark/optimized/packet-hartip.c.ll
+; wireshark/optimized/packet-juniper.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = icmp samesign ult i32 %1, %3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 8 occurrences:
 ; libpng/optimized/pngpread.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwutil.c.ll
-; linux/optimized/config.ll
 ; linux/optimized/virtio_net.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
 ; openjdk/optimized/pngpread.ll
 ; openjdk/optimized/pngrutil.ll
-; openssl/optimized/libcrypto-lib-evp_enc.ll
-; openssl/optimized/libcrypto-shlib-evp_enc.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
-; rocksdb/optimized/comparator.cc.ll
-; wireshark/optimized/packet-hartip.c.ll
-; wireshark/optimized/packet-juniper.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -43,7 +61,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -71,7 +89,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -79,10 +97,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/dauMerge.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ugt i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -95,10 +113,10 @@ entry:
 ; postgres/optimized/regcomp.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -113,7 +131,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -122,15 +140,26 @@ entry:
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/ip_options.ll
 ; linux/optimized/tcp_timer.ll
-; llvm/optimized/RecordLayoutBuilder.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; nuttx/optimized/msginternal.c.ll
 ; opencv/optimized/brightedges.cpp.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = icmp samesign ugt i32 %1, %3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/RecordLayoutBuilder.cpp.ll
+; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -138,10 +167,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -153,7 +182,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -161,10 +190,10 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/field_mask_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

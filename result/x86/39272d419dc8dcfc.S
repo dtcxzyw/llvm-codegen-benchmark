@@ -1,9 +1,9 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movsbl	%sil, %eax
-	testl	%edi, %eax
+	testl	%eax, %edi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movsbl	%sil, %eax
 	testl	%edi, %eax
 	setne	%al

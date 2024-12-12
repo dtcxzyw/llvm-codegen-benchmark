@@ -1,10 +1,3 @@
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
-	add	x8, x0, x1, lsl #2
-	and	x9, x2, #0x3fffffffc
-	add	x0, x8, x9
-	ret
-                                        // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	asr	x8, x2, #6

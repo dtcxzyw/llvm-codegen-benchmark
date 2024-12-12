@@ -21,3 +21,11 @@ func0000000000000003:                   # @func0000000000000003
 .LBB2_2:                                # %entry
 	addw	a0, a0, a1
 	ret
+func0000000000000002:                   # @func0000000000000002
+	andi	a3, a0, 1
+	andi	a0, a2, 1
+	beqz	a3, .LBB3_2
+	li	a1, 5
+.LBB3_2:                                # %entry
+	addw	a0, a0, a1
+	ret

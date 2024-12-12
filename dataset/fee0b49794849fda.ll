@@ -21,7 +21,7 @@ entry:
 ; hwloc/optimized/memattrs.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/drm_dp_dual_mode_helper.ll
-; linux/optimized/drm_scdc_helper.ll
+; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/journal.ll
 ; linux/optimized/mmap.ll
 ; llvm/optimized/Mangle.cpp.ll

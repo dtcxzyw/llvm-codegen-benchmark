@@ -1,6 +1,5 @@
 
-; 14 occurrences:
-; icu/optimized/gregoimp.ll
+; 13 occurrences:
 ; icu/optimized/ucnvbocu.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
@@ -23,8 +22,8 @@ entry:
 }
 
 ; 12 occurrences:
+; boost/optimized/gregorian.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/islamcal.ll
 ; linux/optimized/blk-iocost.ll
 ; luajit/optimized/lj_strfmt_num.ll
@@ -43,7 +42,7 @@ entry:
   ret i32 %2
 }
 
-; 123 occurrences:
+; 127 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
@@ -166,7 +165,11 @@ entry:
 ; postgres/optimized/localtime.ll
 ; ruby/optimized/time.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; yosys/optimized/fstdata.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:

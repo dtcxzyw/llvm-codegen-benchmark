@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i16 %0, i16 %1) #0 {
 entry:
@@ -68,9 +69,10 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; postgres/optimized/int.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i16 %0, i16 %1) #0 {
 entry:
@@ -79,13 +81,15 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i16 %0, i16 %1) #0 {
 entry:

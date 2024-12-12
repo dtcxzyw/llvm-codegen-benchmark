@@ -7,8 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
-	testb	$1, %sil
-	cmovel	%edi, %eax
 	cmpl	%edx, %edi
 	cmovbel	%edi, %eax
+	testb	$1, %sil
+	cmovel	%edi, %eax
 	retq

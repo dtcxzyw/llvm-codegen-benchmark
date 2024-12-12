@@ -18,9 +18,3 @@ func000000000000000c:                   # @func000000000000000c
 	sbbl	%eax, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	%edx, %esi
-	xorl	%eax, %eax
-	cmpl	$2, %esi
-	cmovbl	%edi, %eax
-	retq

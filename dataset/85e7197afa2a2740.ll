@@ -31,7 +31,7 @@ entry:
   ret i64 %3
 }
 
-; 211 occurrences:
+; 210 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -209,7 +209,6 @@ entry:
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -300,6 +299,7 @@ entry:
 
 ; 45 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/src.ll
 ; clamav/optimized/udf.c.ll
 ; cvc5/optimized/proof_cnf_stream.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -322,7 +322,6 @@ entry:
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; git/optimized/remote-curl.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/Object.cpp.ll
 ; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
 ; jemalloc/optimized/ckh.ll

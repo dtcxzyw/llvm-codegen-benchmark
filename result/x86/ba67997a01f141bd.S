@@ -4,6 +4,13 @@ func0000000000000005:                   # @func0000000000000005
 	cmovel	%esi, %eax
 	negl	%eax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	leal	305(%rsi), %ecx
+	testb	$1, %dil
+	cmovel	%esi, %ecx
+	movl	$308, %eax                      # imm = 0x134
+	subl	%ecx, %eax
+	retq
 func0000000000000003:                   # @func0000000000000003
 	leal	-4(%rsi), %ecx
 	testb	$1, %dil

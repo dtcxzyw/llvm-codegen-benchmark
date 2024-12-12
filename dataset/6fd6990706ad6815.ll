@@ -1,11 +1,12 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; proj/optimized/chamb.cpp.ll
 ; proj/optimized/sconics.cpp.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; sundials/optimized/arkode.c.ll
 ; sundials/optimized/cvode.c.ll
 ; sundials/optimized/cvodes.c.ll

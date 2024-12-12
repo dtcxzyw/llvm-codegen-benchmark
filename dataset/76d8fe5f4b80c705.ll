@@ -1,5 +1,5 @@
 
-; 426 occurrences:
+; 421 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcBalance.c.ll
@@ -121,7 +121,6 @@
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaStoch.c.ll
 ; abc/optimized/giaStr.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaSweeper.c.ll
@@ -149,7 +148,6 @@
 ; abc/optimized/liveness_sim.c.ll
 ; abc/optimized/llb1Constr.c.ll
 ; abc/optimized/llb1Reach.c.ll
-; abc/optimized/llb2Bad.c.ll
 ; abc/optimized/llb2Driver.c.ll
 ; abc/optimized/llb2Image.c.ll
 ; abc/optimized/llb3Image.c.ll
@@ -223,6 +221,7 @@
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/benchmark_fstream.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -241,6 +240,7 @@
 ; cpython/optimized/optimizer.ll
 ; crow/optimized/example_session.cpp.ll
 ; cvc5/optimized/partition_generator.cpp.ll
+; darktable/optimized/print_settings.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
@@ -248,7 +248,6 @@
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/random.cpp.ll
 ; g2o/optimized/sampler.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; gromacs/optimized/coolstuff.cpp.ll
 ; gromacs/optimized/inflate.c.ll
 ; gromacs/optimized/seed.cpp.ll
@@ -294,7 +293,6 @@
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SwiftErrorValueTracking.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; mimalloc/optimized/heap.c.ll
@@ -310,7 +308,6 @@
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; openjdk/optimized/c1_Instruction.ll
 ; openjdk/optimized/zVerify.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
@@ -374,9 +371,7 @@
 ; quantlib/optimized/seedgenerator.ll
 ; quantlib/optimized/sobolrsg.ll
 ; quantlib/optimized/zigguratrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; redis/optimized/mt19937-64.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/cache_key.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
@@ -430,7 +425,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4611686018427387903
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 

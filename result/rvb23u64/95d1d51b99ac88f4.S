@@ -14,21 +14,27 @@ func0000000000000004:                   # @func0000000000000004
 	fmv.d	fa0, fa1
 .LBB2_2:                                # %entry
 	ret
-func000000000000000a:                   # @func000000000000000a
-	bltz	a0, .LBB3_2
-	fmv.d	fa1, fa0
+func0000000000000014:                   # @func0000000000000014
+	li	a1, 4
+	bltu	a0, a1, .LBB3_2
+	fmv.d	fa0, fa1
 .LBB3_2:                                # %entry
+	ret
+func000000000000000a:                   # @func000000000000000a
+	bltz	a0, .LBB4_2
+	fmv.d	fa1, fa0
+.LBB4_2:                                # %entry
 	fmv.d	fa0, fa1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a1, 1
-	bltu	a1, a0, .LBB4_2
+	bltu	a1, a0, .LBB5_2
 	fmv.d	fa0, fa1
-.LBB4_2:                                # %entry
+.LBB5_2:                                # %entry
 	ret
 func000000000000000c:                   # @func000000000000000c
-	beqz	a0, .LBB5_2
+	beqz	a0, .LBB6_2
 	fmv.d	fa1, fa0
-.LBB5_2:                                # %entry
+.LBB6_2:                                # %entry
 	fmv.d	fa0, fa1
 	ret

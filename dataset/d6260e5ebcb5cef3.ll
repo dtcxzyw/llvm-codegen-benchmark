@@ -34,6 +34,18 @@ entry:
   ret i16 %6
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; Function Attrs: nounwind
+define i16 @func00000000000000fe(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 5
+  %4 = add nuw nsw i32 %0, %1
+  %5 = add nuw nsw i32 %4, %3
+  %6 = trunc nuw i32 %5 to i16
+  ret i16 %6
+}
+
 ; 2 occurrences:
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll

@@ -11,17 +11,7 @@ func0000000000000170:                   # @func0000000000000170
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-.LCPI2_0:
-	.quad	0x3f747ae147ae147b              # double 0.0050000000000000001
-func00000000000001a8:                   # @func00000000000001a8
-	lui	a2, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a2)
-	flt.d	a2, fa0, fa5
-	xori	a2, a2, 1
-	sltu	a0, a0, a1
-	or	a0, a0, a2
-	ret
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	fli.d	fa5, min
 	flt.d	a2, fa0, fa5
 	slt	a0, a0, a1

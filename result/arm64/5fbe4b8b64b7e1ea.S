@@ -1,7 +1,7 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	mov	x8, #36045                      // =0x8ccd
-	eor	x9, x1, x0
+	eor	x9, x0, x1
 	movk	x8, #60757, lsl #16
 	movk	x8, #45015, lsl #32
 	movk	x8, #65361, lsl #48

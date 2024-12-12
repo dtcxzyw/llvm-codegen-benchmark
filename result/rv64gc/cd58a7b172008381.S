@@ -39,29 +39,38 @@ func0000000000000003:                   # @func0000000000000003
 	fle.d	a0, fa5, fa0
 	slli	a0, a0, 13
 	ret
+func0000000000000009:                   # @func0000000000000009
+	fclass.d	a0, fa0
+	andi	a1, a0, 896
+	li	a0, -1
+	slli	a0, a0, 63
+	bnez	a1, .LBB6_2
+	addi	a0, a0, 2
+.LBB6_2:                                # %entry
+	ret
 func0000000000000007:                   # @func0000000000000007
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa0, fa5
-	beqz	a0, .LBB6_2
+	beqz	a0, .LBB7_2
 	li	a0, 24
 	ret
-.LBB6_2:
+.LBB7_2:
 	li	a0, 16
 	ret
-.LCPI7_0:
+.LCPI8_0:
 	.quad	0x3ff657184ae74487              # double 1.3962634015954636
 func0000000000000005:                   # @func0000000000000005
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
+	lui	a0, %hi(.LCPI8_0)
+	fld	fa5, %lo(.LCPI8_0)(a0)
 	fle.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	addi	a0, a0, 4
 	ret
-.LCPI8_0:
+.LCPI9_0:
 	.quad	0xbfe657184ae74487              # double -0.69813170079773179
 func000000000000000a:                   # @func000000000000000a
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
+	lui	a0, %hi(.LCPI9_0)
+	fld	fa5, %lo(.LCPI9_0)(a0)
 	fle.d	a0, fa0, fa5
 	li	a1, 2
 	sub	a0, a1, a0

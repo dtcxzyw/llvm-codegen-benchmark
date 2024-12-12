@@ -1,11 +1,12 @@
 
-; 156 occurrences:
+; 164 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/cuddBddIte.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/hopUtil.c.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; boost/optimized/mo_lambda.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
@@ -52,7 +53,6 @@
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/BasicValueFactory.cpp.ll
-; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/EvaluationResult.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
@@ -64,7 +64,6 @@
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
@@ -133,7 +132,6 @@
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF128.ll
 ; spike/optimized/s_roundPackToF16.ll
@@ -154,6 +152,16 @@
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/21d8bsf2bcvltxgcdrjl7oqzs.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind

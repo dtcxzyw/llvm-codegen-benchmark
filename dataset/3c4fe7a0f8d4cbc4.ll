@@ -14,7 +14,7 @@ entry:
   ret i64 %5
 }
 
-; 88 occurrences:
+; 87 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -99,7 +99,6 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; openjdk/optimized/hb-ucd.ll
 ; postgres/optimized/multixact.ll
-; redis/optimized/rax.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; yosys/optimized/ezminisat.ll
@@ -127,7 +126,7 @@ define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32767
   %3 = add nsw i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -171,7 +170,7 @@ define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 131056
   %3 = add nuw nsw i32 %2, 16
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

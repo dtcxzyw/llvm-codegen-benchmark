@@ -6,7 +6,7 @@
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -27,16 +27,19 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaAigerExt.c.ll
 ; abc/optimized/giaNf.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cpython/optimized/codeobject.ll
+; gromacs/optimized/dlasq2.cpp.ll
+; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; linux/optimized/consolemap.ll
 ; linux/optimized/kallsyms.ll
+; openblas/optimized/dlasq2.c.ll
 ; opencv/optimized/tldEnsembleClassifier.cpp.ll
 ; openjdk/optimized/c1_FrameMap.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
@@ -54,7 +57,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 25
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -119,7 +122,7 @@ entry:
   ret i64 %4
 }
 
-; 90 occurrences:
+; 91 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcExtract.c.ll
@@ -135,6 +138,7 @@ entry:
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openmpi/optimized/tm_bucket.ll
+; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; openspiel/optimized/oware.cc.ll
 ; openusd/optimized/decodeframe.c.ll

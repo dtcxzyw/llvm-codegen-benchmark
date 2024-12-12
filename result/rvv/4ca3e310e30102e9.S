@@ -13,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 	vsll.vi	v10, v12, 2
 	li	a0, 56
 	vand.vx	v10, v10, a0
-	vor.vv	v9, v10, v9
+	vor.vv	v9, v9, v10
 	vor.vv	v8, v9, v8
 	ret
 func0000000000000023:                   # @func0000000000000023
@@ -31,7 +31,7 @@ func000000000000003a:                   # @func000000000000003a
 	vsll.vi	v10, v12, 16
 	lui	a0, 524288
 	vand.vx	v10, v10, a0
-	vor.vv	v9, v10, v9
+	vor.vv	v9, v9, v10
 	vor.vv	v8, v9, v8
 	ret
 func0000000000000033:                   # @func0000000000000033

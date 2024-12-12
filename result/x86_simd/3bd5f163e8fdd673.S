@@ -13,7 +13,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrld	$25, %xmm2, %xmm2
 	vpmulld	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
@@ -31,6 +31,6 @@ func0000000000000040:                   # @func0000000000000040
 	vpsrld	$11, %xmm2, %xmm2
 	vpmulld	.LCPI1_1(%rip){1to4}, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

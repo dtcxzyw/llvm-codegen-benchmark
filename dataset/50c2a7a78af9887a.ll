@@ -15,7 +15,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/mm_init.ll
 ; llvm/optimized/LangOptions.cpp.ll
@@ -32,6 +32,8 @@ entry:
 ; spike/optimized/fsgnjx_h.ll
 ; spike/optimized/fsgnjx_s.ll
 ; spike/optimized/vfmv_s_f.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/3ly3b3fonqg7nd45488b8bsgs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:

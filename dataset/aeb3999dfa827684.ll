@@ -48,9 +48,7 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
-; freetype/optimized/type1.c.ll
-; freetype/optimized/type1cid.c.ll
+; 6 occurrences:
 ; linux/optimized/cfg.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/skl_universal_plane.ll

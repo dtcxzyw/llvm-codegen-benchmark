@@ -1,5 +1,6 @@
 
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/src.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; linux/optimized/nf_conntrack_sip.ll
@@ -27,6 +28,20 @@ entry:
   %4 = ptrtoint ptr %0 to i64
   %5 = trunc i64 %4 to i32
   %6 = sub i32 %5, %3
+  ret i32 %6
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_grid.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(ptr %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = trunc i64 %2 to i32
+  %4 = ptrtoint ptr %0 to i64
+  %5 = trunc i64 %4 to i32
+  %6 = sub nsw i32 %5, %3
   ret i32 %6
 }
 

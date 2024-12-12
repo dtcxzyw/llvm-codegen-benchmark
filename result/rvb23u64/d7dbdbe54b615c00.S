@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addi	a1, a1, 1
 	srai	a0, a0, 3
 	lui	a2, 699051
@@ -9,23 +9,11 @@ func0000000000000018:                   # @func0000000000000018
 	mul	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
-	addi	a1, a1, 1
-	srai	a0, a0, 3
-	lui	a2, 618391
-	zext.w	a1, a1
-	addiw	a2, a2, -105
-	slli	a3, a2, 36
-	add	a2, a2, a3
-	mul	a0, a0, a2
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-.LCPI2_0:
+.LCPI1_0:
 	.quad	-5614226457215950491            # 0xb21642c8590b2165
 func0000000000000008:                   # @func0000000000000008
-	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
 	addi	a1, a1, 1
 	zext.w	a1, a1
 	mulh	a2, a0, a2
@@ -35,7 +23,19 @@ func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+func0000000000000021:                   # @func0000000000000021
+	addi	a1, a1, -1
+	srai	a0, a0, 3
+	lui	a2, 699051
+	zext.w	a1, a1
+	addiw	a2, a2, -1365
+	slli	a3, a2, 32
+	add	a2, a2, a3
+	mul	a0, a0, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func00000000000001e4:                   # @func00000000000001e4
 	addiw	a1, a1, 1
 	srai	a0, a0, 3
 	lui	a2, 838861
@@ -45,7 +45,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	mul	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addi	a1, a1, 1
 	srai	a0, a0, 3
 	lui	a2, 699051
@@ -56,7 +56,7 @@ func0000000000000014:                   # @func0000000000000014
 	mul	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	addiw	a1, a1, -1
 	srai	a0, a0, 3
 	lui	a2, 699051
@@ -66,7 +66,7 @@ func0000000000000074:                   # @func0000000000000074
 	mul	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	addiw	a1, a1, -1
 	srai	a0, a0, 3
 	lui	a2, 699051
@@ -76,7 +76,7 @@ func0000000000000078:                   # @func0000000000000078
 	mul	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	addi	a1, a1, -64
 	srai	a0, a0, 3
 	lui	a2, 838861
@@ -87,7 +87,29 @@ func0000000000000058:                   # @func0000000000000058
 	mul	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func0000000000000034:                   # @func0000000000000034
+	addi	a1, a1, 1
+	srai	a0, a0, 3
+	lui	a2, 978671
+	zext.w	a1, a1
+	addiw	a2, a2, -273
+	slli	a3, a2, 32
+	add	a2, a2, a3
+	mul	a0, a0, a2
+	sltu	a0, a0, a1
+	ret
+func0000000000000038:                   # @func0000000000000038
+	addi	a1, a1, 1
+	srai	a0, a0, 3
+	lui	a2, 978671
+	zext.w	a1, a1
+	addiw	a2, a2, -273
+	slli	a3, a2, 32
+	add	a2, a2, a3
+	mul	a0, a0, a2
+	sltu	a0, a1, a0
+	ret
+func00000000000001e8:                   # @func00000000000001e8
 	addiw	a1, a1, 1
 	srai	a0, a0, 3
 	lui	a2, 699051
@@ -97,7 +119,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	mul	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	addiw	a1, a1, -5
 	srai	a0, a0, 4
 	lui	a2, 699051
@@ -107,7 +129,7 @@ func0000000000000038:                   # @func0000000000000038
 	mul	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	addiw	a1, a1, 1
 	srai	a0, a0, 3
 	lui	a2, 699051
@@ -118,7 +140,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000015:                   # @func0000000000000015
+func0000000000000025:                   # @func0000000000000025
 	addi	a1, a1, 1
 	srai	a0, a0, 3
 	lui	a2, 699051
@@ -130,7 +152,7 @@ func0000000000000015:                   # @func0000000000000015
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	addi	a1, a1, 1
 	srai	a2, a0, 63
 	zext.w	a1, a1
@@ -139,7 +161,7 @@ func0000000000000004:                   # @func0000000000000004
 	srai	a0, a0, 3
 	sltu	a0, a0, a1
 	ret
-func0000000000000098:                   # @func0000000000000098
+func0000000000000128:                   # @func0000000000000128
 	addi	a1, a1, 1
 	srai	a0, a0, 5
 	lui	a2, 748983

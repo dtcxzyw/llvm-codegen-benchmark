@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 105 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; coreutils-rs/optimized/1jbxberfc5l4jlu4.ll
@@ -101,6 +101,7 @@
 ; openjdk/optimized/shenandoahBarrierSetC1.ll
 ; openjdk/optimized/xBarrierSetC1.ll
 ; openjdk/optimized/zBarrierSetC1.ll
+; rust-analyzer-rs/optimized/3aojx6tzw7bx942t.ll
 ; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
 ; spike/optimized/f128_to_ui64.ll
 ; verilator/optimized/V3Dead.cpp.ll
@@ -109,11 +110,11 @@ define i1 @func0000000000000018(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 23 occurrences:
+; 35 occurrences:
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; linux/optimized/compress.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -135,6 +136,18 @@ entry:
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; sqlite/optimized/sqlite3.ll
 ; yosys/optimized/BigUnsigned.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/2dzryfppj2dussmzhuhe46ye9.ll
+; zed-rs/optimized/3r1m4prp00pk2zcmrznfgmdke.ll
+; zed-rs/optimized/6hac4w9crhj7k3lst2ee8ajzz.ll
+; zed-rs/optimized/85xxe5m9bzikfbp4r9clobcbu.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9442bztux3sevpf574oh1aseo.ll
+; zed-rs/optimized/9igphs4jh07znzucv85uqqzol.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/ebj1t6ydn0lm59l6uu3qqz6z0.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
@@ -142,7 +155,7 @@ define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -155,7 +168,7 @@ define i1 @func0000000000000014(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 9007199254740990
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -187,12 +200,13 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; redis/optimized/bitops.ll
+; 2 occurrences:
+; llvm/optimized/Clang.cpp.ll
+; php/optimized/php_pcre.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000030(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 64
+  %3 = icmp samesign ugt i64 %2, 2
   %4 = select i1 %1, i1 %3, i1 false
   %5 = or i1 %4, %0
   ret i1 %5

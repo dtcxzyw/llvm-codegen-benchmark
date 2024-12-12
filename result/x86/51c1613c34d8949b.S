@@ -33,7 +33,7 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edx, %eax
 	retq
 func000000000000002d:                   # @func000000000000002d
-	movl	%edi, %eax
 	btq	$32, %rdx
-	adcl	%esi, %eax
+	adcl	$0, %esi
+	leal	(%rsi,%rdi), %eax
 	retq

@@ -18,3 +18,7 @@ func0000000000000007:                   # @func0000000000000007
 	slliw	a1, a1, 4
 	mul	a0, a0, a1
 	ret
+func0000000000000008:                   # @func0000000000000008
+	slliw	a1, a1, 1
+	mul	a0, a0, a1
+	ret

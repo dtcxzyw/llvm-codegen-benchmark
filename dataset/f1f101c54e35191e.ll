@@ -7,11 +7,11 @@
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 60
   %3 = select i1 %2, i8 62, i8 125
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -19,11 +19,11 @@ entry:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000038(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, -19
   %3 = select i1 %2, i8 -97, i8 -65
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp samesign ugt i8 %0, %3
   ret i1 %4
 }
 

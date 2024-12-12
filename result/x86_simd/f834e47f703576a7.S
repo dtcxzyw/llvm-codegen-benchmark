@@ -55,6 +55,6 @@ func0000000000000000:                   # @func0000000000000000
 	.quad	-4                              # 0xfffffffffffffffc
 func0000000000000005:                   # @func0000000000000005
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpmullq	%ymm0, %ymm1, %ymm0
-	vpmullq	%ymm0, %ymm2, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
+	vpmullq	%ymm2, %ymm0, %ymm0
 	retq

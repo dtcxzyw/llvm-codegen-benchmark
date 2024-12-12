@@ -1,68 +1,44 @@
-func0000000000000091:                   # @func0000000000000091
+func0000000000000321:                   # @func0000000000000321
 	incl	%edx
-	cmpq	%rsi, %rdx
-	setbe	%cl
+	cmpq	%rdx, %rsi
+	setae	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	decl	%edx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%cl
 	cmpq	$8, %rsi
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
-	incl	%edx
-	cmpq	%rdi, %rdx
-	setb	%cl
-	testq	%rsi, %rsi
-	setne	%al
-	andb	%cl, %al
-	retq
-func00000000000004c8:                   # @func00000000000004c8
-	incl	%edx
-	cmpq	%rdi, %rdx
-	setb	%cl
-	testq	%rsi, %rsi
-	setne	%al
-	andb	%cl, %al
-	retq
-func000000000000034c:                   # @func000000000000034c
+func0000000000000e8c:                   # @func0000000000000e8c
 	decl	%edx
-	cmpq	%rsi, %rdx
-	seta	%cl
+	cmpq	%rdx, %rsi
+	setb	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000344:                   # @func0000000000000344
-	addl	$-2, %edx
-	cmpq	%rsi, %rdx
-	seta	%cl
-	cmpq	$127, %rdi
-	setb	%al
-	andb	%cl, %al
-	retq
-func0000000000000211:                   # @func0000000000000211
+func0000000000000821:                   # @func0000000000000821
 	decl	%edx
 	xorq	%rsi, %rdx
 	orq	%rdi, %rdx
 	sete	%al
 	retq
-func000000000000021c:                   # @func000000000000021c
+func000000000000082c:                   # @func000000000000082c
 	decl	%edx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	incl	%edx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%cl
 	cmpq	$2, %rsi
 	setge	%al

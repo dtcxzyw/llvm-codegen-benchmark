@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; linux/optimized/amd64-agp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -16,6 +16,7 @@
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind

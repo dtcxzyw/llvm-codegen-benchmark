@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -56,6 +56,7 @@
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

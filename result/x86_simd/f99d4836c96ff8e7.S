@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1
 	vpsubb	%xmm3, %xmm1, %xmm1
@@ -7,7 +7,7 @@ func000000000000005a:                   # @func000000000000005a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1
 	vpsubb	%xmm3, %xmm1, %xmm1
@@ -16,7 +16,7 @@ func0000000000000054:                   # @func0000000000000054
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1
 	vpsubb	%xmm3, %xmm1, %xmm1
@@ -25,7 +25,7 @@ func0000000000000056:                   # @func0000000000000056
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1
 	vpsubb	%xmm3, %xmm1, %xmm1
@@ -34,7 +34,7 @@ func0000000000000058:                   # @func0000000000000058
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1
 	vpsubb	%xmm3, %xmm1, %xmm1
@@ -43,7 +43,7 @@ func000000000000007a:                   # @func000000000000007a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000055:                   # @func0000000000000055
+func00000000000000b5:                   # @func00000000000000b5
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1
 	vpsubb	%xmm3, %xmm1, %xmm1

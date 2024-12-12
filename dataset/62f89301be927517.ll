@@ -1,7 +1,8 @@
 
-%"struct.WasmEdge::AST::Instruction::JumpDescriptor.2655464" = type { i32, i32, i32, i32 }
+%"struct.WasmEdge::AST::Instruction::JumpDescriptor.2768677" = type { i32, i32, i32, i32 }
 
 ; 21 occurrences:
+; boost/optimized/to_chars.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; git/optimized/bloom.ll
 ; git/optimized/commit-reach.ll
@@ -10,7 +11,6 @@
 ; git/optimized/show-branch.ll
 ; icu/optimized/ubidiln.ll
 ; icu/optimized/ucase.ll
-; libpng/optimized/pngwrite.c.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; openblas/optimized/dstedc.c.ll
 ; opencv/optimized/shapedescr.cpp.ll
@@ -24,11 +24,11 @@
 ; stb/optimized/stb_image.c.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -55,11 +55,22 @@ entry:
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; wasmedge/optimized/serial_instruction.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr nusw %"struct.WasmEdge::AST::Instruction::JumpDescriptor.2655464", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.WasmEdge::AST::Instruction::JumpDescriptor.2768677", ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; libpng/optimized/pngwrite.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 -1
+  %5 = getelementptr nusw i16, ptr %0, i64 %4
   ret ptr %5
 }
 

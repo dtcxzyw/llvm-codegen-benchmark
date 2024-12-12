@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; chibicc/optimized/codegen.ll
 ; graphviz/optimized/triang.c.ll
 ; gromacs/optimized/pme.cpp.ll
@@ -15,7 +15,6 @@
 ; openjdk/optimized/numberSeq.ll
 ; openmpi/optimized/coll_base_bcast.ll
 ; openmpi/optimized/coll_sm_bcast.ll
-; openmpi/optimized/monitoring_test.ll
 ; openmpi/optimized/nbc_ibcast.ll
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
@@ -43,7 +42,7 @@ entry:
   ret i32 %3
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/exorList.c.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
@@ -65,7 +64,6 @@ entry:
 ; opencv/optimized/scatterND_layer.cpp.ll
 ; opencv/optimized/scatter_layer.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
-; openmpi/optimized/bcast.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
 ; openspiel/optimized/crazy_eights.cc.ll

@@ -58,14 +58,4 @@ entry:
   ret i32 %2
 }
 
-; 1 occurrences:
-; linux/optimized/e1000_hw.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i16 %0) #0 {
-entry:
-  %1 = icmp ugt i16 %0, 4999
-  %2 = sext i1 %1 to i32
-  ret i32 %2
-}
-
 attributes #0 = { nounwind }

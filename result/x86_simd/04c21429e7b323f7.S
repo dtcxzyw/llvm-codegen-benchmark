@@ -48,14 +48,6 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI7_0:
-	.quad	7                               # 0x7
-func000000000000004c:                   # @func000000000000004c
-	vcmplepd	%ymm0, %ymm1, %k1
-	vpcmpltuq	.LCPI7_0(%rip){1to4}, %ymm2, %k0 {%k1}
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
 func00000000000000cd:                   # @func00000000000000cd
 	vcmpnltpd	%ymm1, %ymm0, %k1
 	vptestmq	%ymm2, %ymm2, %k0 {%k1}

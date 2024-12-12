@@ -29,7 +29,7 @@ func0000000000000019:                   # @func0000000000000019
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	vpcmpltud	%ymm2, %ymm0, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpcmpeqd	%ymm0, %ymm0, %ymm0

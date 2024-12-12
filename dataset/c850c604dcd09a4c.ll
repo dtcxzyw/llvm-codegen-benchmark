@@ -1,7 +1,9 @@
 
-; 28 occurrences:
+; 30 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; darktable/optimized/amaze.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; freetype/optimized/psaux.c.ll
@@ -32,14 +34,16 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, 1095216660735
   ret i64 %4
 }
 
-; 247 occurrences:
+; 245 occurrences:
 ; abc/optimized/ivyCutTrav.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/encode.c.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -206,14 +210,10 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; openssl/optimized/libcrypto-lib-f_generic.ll
 ; openssl/optimized/libcrypto-shlib-f_generic.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; spike/optimized/mulh.ll
 ; spike/optimized/mulhsu.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -289,17 +289,18 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 40
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = and i64 %3, 25165823
   ret i64 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; freetype/optimized/pshinter.c.ll
 ; hyperscan/optimized/ng.cpp.ll
 ; llvm/optimized/AnalysisConsumer.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
@@ -379,7 +380,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }
@@ -402,7 +403,7 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; jemalloc/optimized/hpdata.ll
@@ -413,25 +414,24 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; openjdk/optimized/mulnode.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; spike/optimized/f16_sqrt.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; wasmedge/optimized/proxy.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 1
+  %2 = lshr i64 %1, 32
   %3 = add nsw i64 %2, %0
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; llvm/optimized/CallEvent.cpp.ll
 ; llvm/optimized/CoreEngine.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprEngineCXX.cpp.ll
 ; llvm/optimized/ExprEngineCallAndReturn.cpp.ll
 ; llvm/optimized/PathDiagnostic.cpp.ll
@@ -439,7 +439,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 4
+  %2 = lshr exact i64 %1, 3
   %3 = add nsw i64 %2, %0
   %4 = and i64 %3, 4294967295
   ret i64 %4

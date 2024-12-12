@@ -1,9 +1,7 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/pme_gather.cpp.ll
 ; icu/optimized/utext.ll
-; linux/optimized/generic_mpih-add1.ll
-; linux/optimized/generic_mpih-sub1.ll
 ; linux/optimized/icmp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; ruby/optimized/vm.ll
@@ -33,18 +31,19 @@ entry:
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000003e(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 64, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i64, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 52 occurrences:
+; 53 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/ivyCutTrav.c.ll
+; abc/optimized/kitIsop.c.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
@@ -102,18 +101,6 @@ entry:
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; abc/optimized/kitIsop.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr i32, ptr %0, i64 %3
-  %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw i32, ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -29,7 +29,7 @@
 define i8 @func000000000000001a(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 2
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
@@ -46,7 +46,7 @@ entry:
 define i8 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 3
   %5 = trunc i32 %4 to i8
   ret i8 %5
@@ -60,23 +60,24 @@ entry:
 define i8 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 8
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/ndisc.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; mixbox/optimized/mixbox.ll
 ; ockam-rs/optimized/2n1wyoax2qficosw.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000001b(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 24
   %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
@@ -88,7 +89,7 @@ entry:
 define i8 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 24
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
@@ -100,7 +101,7 @@ entry:
 define i8 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 31
   %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
@@ -112,7 +113,7 @@ entry:
 define i8 @func000000000000000b(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 31
   %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5

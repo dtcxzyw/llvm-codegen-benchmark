@@ -5,7 +5,7 @@
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = add i32 %2, %0

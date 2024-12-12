@@ -4,7 +4,6 @@
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
@@ -17,6 +16,7 @@
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
+; boost/optimized/src.ll
 ; grpc/optimized/call_trace.cc.ll
 ; grpc/optimized/client_channel.cc.ll
 ; grpc/optimized/dns_resolver_ares.cc.ll
@@ -131,7 +131,8 @@ entry:
   ret i128 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -160,7 +161,8 @@ entry:
   ret i128 %4
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -268,14 +270,15 @@ entry:
   ret i128 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; Function Attrs: nounwind
 define i128 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, 38
+  %4 = mul nuw nsw i128 %3, 3022314549036573
   ret i128 %4
 }
 

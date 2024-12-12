@@ -5,7 +5,7 @@
 ; llvm/optimized/MacroFusion.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp ne i64 %3, 0
@@ -27,7 +27,7 @@ entry:
 ; z3/optimized/theory_pb.cpp.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65280
   %4 = icmp eq i64 %3, 256
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/ComplexVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483648
   %4 = icmp ne i64 %3, 0
@@ -52,7 +52,7 @@ entry:
 ; abc/optimized/fraBmc.c.ll
 ; abc/optimized/fraImp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp eq i64 %3, 1
@@ -61,13 +61,12 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/cgtDecide.c.ll
 ; abc/optimized/pdrTsim3.c.ll
-; gromacs/optimized/atomdata.cpp.ll
 ; opencv/optimized/cornersubpix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp eq i64 %3, 2
@@ -85,7 +84,7 @@ entry:
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; openusd/optimized/decodetxb.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 2
@@ -95,9 +94,21 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_slider.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000161(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = icmp eq i64 %3, 1
+  %5 = icmp sge i32 %0, %1
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000ac(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967296
   %4 = icmp ne i64 %3, 0
@@ -110,7 +121,7 @@ entry:
 ; llvm/optimized/RISCVOptWInstrs.cpp.ll
 ; llvm/optimized/SemaLambda.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009c(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000012c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 32768
   %4 = icmp ne i64 %3, 0
@@ -123,7 +134,7 @@ entry:
 ; pugixml/optimized/pugixml.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000014c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp ne i64 %3, 6
@@ -135,7 +146,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/io_uring.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 8
   %4 = icmp eq i64 %3, 0
@@ -147,7 +158,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/8139too.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp ne i64 %3, 0

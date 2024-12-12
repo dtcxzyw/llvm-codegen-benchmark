@@ -8,5 +8,5 @@ func0000000000000005:                   # @func0000000000000005
 	movzwl	%si, %ecx
 	movzwl	%di, %eax
 	subq	%rcx, %rax
-	addq	$40, %rax
+	incq	%rax
 	retq

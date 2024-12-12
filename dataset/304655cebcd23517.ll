@@ -82,7 +82,7 @@ entry:
   ret i64 %4
 }
 
-; 268 occurrences:
+; 264 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -236,7 +236,6 @@ entry:
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -313,18 +312,15 @@ entry:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_scale.ll
 ; opencv/optimized/lapack.cpp.ll
 ; openjdk/optimized/defNewGeneration.ll
-; openjdk/optimized/g1ConcurrentMark.ll
-; openjdk/optimized/g1FullGCMarker.ll
 ; openjdk/optimized/g1ParScanThreadState.ll
-; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/psPromotionManager.ll
 ; openjdk/optimized/psScavenge.ll
-; openjdk/optimized/shenandoahHeap.ll
 ; openjdk/optimized/shenandoahMark.ll
-; openjdk/optimized/xHeapIterator.ll
-; openjdk/optimized/zHeapIterator.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; openspiel/optimized/chess.cc.ll
 ; openspiel/optimized/chess_common.cc.ll
@@ -360,7 +356,7 @@ entry:
   ret i64 %4
 }
 
-; 197 occurrences:
+; 203 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/aigMffc.c.ll
 ; abc/optimized/bmcFx.c.ll
@@ -381,12 +377,8 @@ entry:
 ; flac/optimized/metadata_iterators.c.ll
 ; fmt/optimized/compile-test.cc.ll
 ; folly/optimized/AsyncSocket.cpp.ll
-; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DeterministicSchedule.cpp.ll
-; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/File.cpp.ll
-; folly/optimized/ManualExecutor.cpp.ll
-; folly/optimized/ThreadPoolExecutor.cpp.ll
 ; freetype/optimized/ftmm.c.ll
 ; git/optimized/index-pack.ll
 ; graphviz/optimized/htmlparse.c.ll
@@ -406,8 +398,6 @@ entry:
 ; libuv/optimized/linux.c.ll
 ; lief/optimized/LangCodeItem.cpp.ll
 ; linux/optimized/acpi-cpufreq.ll
-; linux/optimized/capability.ll
-; linux/optimized/centaur.ll
 ; linux/optimized/memblock.ll
 ; linux/optimized/p4.ll
 ; linux/optimized/ptrace.ll
@@ -416,7 +406,6 @@ entry:
 ; linux/optimized/via-rng.ll
 ; linux/optimized/vsprintf.ll
 ; linux/optimized/x86_pkg_temp_thermal.ll
-; linux/optimized/zhaoxin.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
@@ -462,7 +451,6 @@ entry:
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/PatternParser.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -482,6 +470,8 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/additionalgui.cpp.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
@@ -495,6 +485,7 @@ entry:
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/periodic_noise_removing_filter.cpp.ll
+; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
@@ -558,6 +549,17 @@ entry:
 ; z3/optimized/seq_rewriter.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3ovedgaw1yidfseciw93ubpv7.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:

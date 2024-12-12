@@ -46,7 +46,7 @@ func0000000000000024:                   # @func0000000000000024
 	bnez	a0, .LBB3_2
 	fmv.s	fa5, fa1
 .LBB3_2:                                # %entry
-	fadd.s	fa5, fa5, fa0
+	fadd.s	fa5, fa0, fa5
 	fli.s	fa4, 1.0
 	flt.s	a0, fa4, fa5
 	ret

@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 83 occurrences:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; coreutils-rs/optimized/1hfndwarkzjc08wu.ll
@@ -16,8 +16,6 @@
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; delta-rs/optimized/v2ww4w96jtc8bk1.ll
 ; delta-rs/optimized/wrhqeq9ewpf5gr8.ll
-; hermes/optimized/ESTreeIRGen-expr.cpp.ll
-; hermes/optimized/ESTreeIRGen.cpp.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
@@ -84,12 +82,9 @@
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/3xoiqyy2a9jbg7ae.ll
-; wasmtime-rs/optimized/3yr40www2jy0a6jn.ll
-; wasmtime-rs/optimized/49putx1a0760eu8s.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
-; wasmtime-rs/optimized/o2h6j06mg3v3bs7.ll
 ; Function Attrs: nounwind
-define { ptr, ptr } @func0000000000000021(ptr %0, ptr %1) #0 {
+define { ptr, ptr } @func0000000000000041(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -48
   %3 = icmp eq ptr %1, null

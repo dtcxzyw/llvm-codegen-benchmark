@@ -1,9 +1,3 @@
-func00000000000000f9:                   # @func00000000000000f9
-	shll	$5, %esi
-	leal	32(%rsi,%rdi), %eax
-	shrl	$5, %eax
-	decl	%eax
-	retq
 func00000000000001bb:                   # @func00000000000001bb
 	shll	$10, %esi
 	leal	-56613888(%rsi,%rdi), %eax

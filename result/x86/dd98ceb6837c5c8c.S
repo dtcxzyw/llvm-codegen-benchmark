@@ -5,18 +5,18 @@ func0000000000000001:                   # @func0000000000000001
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shlq	$7, %rsi
 	testq	%rdi, %rdi
 	movl	$1073741824, %eax               # imm = 0x40000000
 	cmoveq	%rsi, %rax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	leaq	(,%rsi,4), %rax
 	testq	%rdi, %rdi
 	cmoveq	%rdi, %rax
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	leaq	(,%rsi,4), %rax
 	testq	%rdi, %rdi
 	cmoveq	%rdi, %rax
@@ -44,7 +44,7 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$52, %rax
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shlq	$48, %rsi
 	xorl	%eax, %eax
 	testq	%rdi, %rdi
@@ -55,10 +55,4 @@ func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax
 	testq	%rdi, %rdi
 	cmovgq	%rsi, %rax
-	retq
-func0000000000000024:                   # @func0000000000000024
-	shlq	$32, %rsi
-	xorl	%eax, %eax
-	shrq	$32, %rdi
-	cmoveq	%rsi, %rax
 	retq

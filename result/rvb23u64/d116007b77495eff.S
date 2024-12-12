@@ -12,7 +12,7 @@ func0000000000000044:                   # @func0000000000000044
 	flt.d	a0, fa5, fa0
 	ret
 .LCPI2_0:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
+	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
 func0000000000000045:                   # @func0000000000000045
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
@@ -87,5 +87,5 @@ func00000000000000a8:                   # @func00000000000000a8
 	bnez	a0, .LBB11_2
 	fmv.d	fa1, fa5
 .LBB11_2:                               # %entry
-	feq.d	a0, fa1, fa0
+	feq.d	a0, fa0, fa1
 	ret

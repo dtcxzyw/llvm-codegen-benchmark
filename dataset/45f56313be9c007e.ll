@@ -1,8 +1,6 @@
 
-; 67 occurrences:
-; linux/optimized/intel_audio.ll
+; 65 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/jiffies.ll
 ; linux/optimized/pcm_lib.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/multijitter.cpp.ll

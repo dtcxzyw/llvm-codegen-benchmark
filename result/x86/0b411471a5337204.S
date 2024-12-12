@@ -3,7 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	shlq	$5, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+func0000000000000006:                   # @func0000000000000006
 	notq	%rsi
-	leaq	(%rdi,%rsi,4), %rax
+	leaq	(%rdi,%rsi,2), %rax
 	retq

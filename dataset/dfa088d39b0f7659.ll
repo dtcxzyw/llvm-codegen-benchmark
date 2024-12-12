@@ -24,7 +24,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/gzip.ll
 ; clamav/optimized/disasm.c.ll
 ; openjdk/optimized/gifdecoder.ll
 ; openusd/optimized/cdef_block.c.ll
@@ -37,10 +38,11 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
+; boost/optimized/gzip.ll
 ; clamav/optimized/netcode.c.ll
 ; freetype/optimized/truetype.c.ll
 ; hyperscan/optimized/gough.c.ll
@@ -107,7 +109,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -129,7 +131,7 @@ define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

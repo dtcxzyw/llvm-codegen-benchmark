@@ -1,6 +1,5 @@
 
 ; 33 occurrences:
-; abseil-cpp/optimized/ascii_test.cc.ll
 ; arrow/optimized/exec.cc.ll
 ; c3c/optimized/builder.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
@@ -25,6 +24,7 @@
 ; llvm/optimized/WinException.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
+; lvgl/optimized/lv_display.ll
 ; minetest/optimized/CGUISkin.cpp.ll
 ; minetest/optimized/guiSkin.cpp.ll
 ; openmpi/optimized/pmix_server_ops.ll
@@ -45,32 +45,27 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000038(i32 %0) #0 {
+define i8 @func0000000000000058(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 17
   %2 = zext i1 %1 to i8
   ret i8 %2
 }
 
-; 16 occurrences:
-; icu/optimized/collationbuilder.ll
+; 11 occurrences:
 ; icu/optimized/patternprops.ll
 ; icu/optimized/uchar.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
-; llvm/optimized/PtrState.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
-; llvm/optimized/SemaBoundsSafety.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
-; llvm/optimized/SemaOpenACC.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000028(i32 %0) #0 {
+define i8 @func0000000000000048(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -58
   %2 = icmp ult i32 %1, -10
@@ -106,7 +101,7 @@ entry:
 ; clamav/optimized/unpack.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000022(i32 %0) #0 {
+define i8 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 1
   %2 = zext i1 %1 to i8
@@ -116,7 +111,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000062(i32 %0) #0 {
+define i8 @func00000000000000c2(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 3
   %2 = zext i1 %1 to i8

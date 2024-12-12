@@ -1,7 +1,12 @@
 
-; 245 occurrences:
+; 248 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -156,7 +161,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -241,7 +245,6 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/rtlil.ll
@@ -249,7 +252,7 @@
 define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 72
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sdiv exact i64 %1, 72
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -279,41 +282,8 @@ entry:
   ret i64 %6
 }
 
-; 9 occurrences:
-; ceres/optimized/dense_cholesky.cc.ll
-; freetype/optimized/sdf.c.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
-; libquic/optimized/time_support.c.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; openjdk/optimized/vm_version_x86.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sdiv i64 %2, 1461001
-  %4 = add nsw i64 %3, %0
-  %5 = sdiv i64 %1, 26917
-  %6 = add nsw i64 %4, %5
-  ret i64 %6
-}
-
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sdiv i64 %2, -4
-  %4 = add nsw i64 %3, %1
-  %5 = sdiv i64 %0, -80
-  %6 = add nsw i64 %5, %4
-  ret i64 %6
-}
-
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/self_intersection_points.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
@@ -323,9 +293,28 @@ entry:
 define i64 @func000000000000002d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sdiv exact i64 %0, 24
   %6 = add nsw i64 %5, %4
+  ret i64 %6
+}
+
+; 8 occurrences:
+; boost/optimized/exit_code.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; freetype/optimized/sdf.c.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; libquic/optimized/time_support.c.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; openjdk/optimized/vm_version_x86.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sdiv i64 %2, 10
+  %4 = add nsw i64 %3, %0
+  %5 = sdiv i64 %1, 100
+  %6 = add nsw i64 %4, %5
   ret i64 %6
 }
 
@@ -336,7 +325,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 400
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sdiv i64 %1, -4
   %6 = add i64 %4, %5
   ret i64 %6
@@ -411,9 +400,21 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sdiv i64 %1, 2
   %6 = add i64 %4, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; libquic/optimized/time_support.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sdiv i64 %2, -4
+  %4 = add nsw i64 %1, %3
+  %5 = sdiv i64 %0, -80
+  %6 = add nsw i64 %5, %4
   ret i64 %6
 }
 
@@ -435,7 +436,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sdiv i64 %0, -2
   %6 = add i64 %5, %4
   ret i64 %6
@@ -448,7 +449,7 @@ entry:
 define i64 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sdiv exact i64 %1, 24
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -462,7 +463,7 @@ entry:
 define i64 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sdiv exact i64 %0, 24
   %6 = add nsw i64 %5, %4
   ret i64 %6

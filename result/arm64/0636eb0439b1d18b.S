@@ -1,7 +1,0 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	uqsub	v2.2d, v2.2d, v4.2d
-	uqsub	v0.2d, v1.2d, v3.2d
-	mov	v1.16b, v2.16b
-	ret
-                                        // -- End function

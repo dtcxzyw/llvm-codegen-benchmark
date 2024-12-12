@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 52 occurrences:
 ; arrow/optimized/row_encoder.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -27,7 +27,6 @@
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/imagecache.cpp.ll
@@ -57,7 +56,7 @@
 define i64 @func0000000000000001(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   ret i64 %3
 }
 
@@ -83,7 +82,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 

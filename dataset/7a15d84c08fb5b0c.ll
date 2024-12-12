@@ -66,7 +66,7 @@ entry:
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet-wimaxasncp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 128, %1
   %3 = and i32 %2, %0
@@ -84,19 +84,20 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 -1, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; libwebp/optimized/quality_estimate.c.ll
 ; libwebp/optimized/webpinfo.c.ll
+; linux/optimized/jack.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 128, %1
   %3 = and i32 %2, %0
@@ -110,7 +111,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 -1, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ult i32 %3, 65536
   ret i1 %4
 }

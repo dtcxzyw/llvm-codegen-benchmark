@@ -11,7 +11,7 @@
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -39,7 +39,7 @@ entry:
 define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

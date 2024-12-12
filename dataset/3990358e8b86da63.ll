@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -10,7 +10,6 @@
 ; meshlab/optimized/io_x3d.cpp.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
-; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
@@ -20,8 +19,8 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
-; darktable/optimized/introspection_flip.c.ll
+; 11 occurrences:
+; freetype/optimized/cff.c.ll
 ; git/optimized/unpack-trees.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/netdev.ll
@@ -32,7 +31,6 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; openjdk/optimized/classPrinter.ll
 ; php/optimized/zend_inference.ll
-; verilator/optimized/V3Task.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:

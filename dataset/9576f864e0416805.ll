@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
@@ -28,6 +28,7 @@
 ; hyperscan/optimized/stream.c.ll
 ; linux/optimized/svcauth_unix.ll
 ; linux/optimized/truncate.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind

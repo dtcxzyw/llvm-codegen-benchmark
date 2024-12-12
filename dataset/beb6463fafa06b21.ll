@@ -1,15 +1,14 @@
 
-%"class.WasmEdge::Variant.2653376" = type { %"union.WasmEdge::VariadicUnion.2653377" }
-%"union.WasmEdge::VariadicUnion.2653377" = type { %"union.WasmEdge::VariadicUnion.0.2653378" }
-%"union.WasmEdge::VariadicUnion.0.2653378" = type { %"union.WasmEdge::VariadicUnion.1.2653379" }
-%"union.WasmEdge::VariadicUnion.1.2653379" = type { %"union.WasmEdge::VariadicUnion.2.2653380" }
-%"union.WasmEdge::VariadicUnion.2.2653380" = type { %"union.WasmEdge::VariadicUnion.3.2653381" }
-%"union.WasmEdge::VariadicUnion.3.2653381" = type { %"union.WasmEdge::VariadicUnion.4.2653382" }
-%"union.WasmEdge::VariadicUnion.4.2653382" = type { %"union.WasmEdge::VariadicUnion.5.2653383" }
-%"union.WasmEdge::VariadicUnion.5.2653383" = type { i128 }
-%"class.llvm::Use.2944842" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.2964483" = type { ptr, ptr, ptr, ptr }
-%union._Py_CODEUNIT.3795952 = type { i16 }
+%"class.WasmEdge::Variant.2766589" = type { %"union.WasmEdge::VariadicUnion.2766590" }
+%"union.WasmEdge::VariadicUnion.2766590" = type { %"union.WasmEdge::VariadicUnion.0.2766591" }
+%"union.WasmEdge::VariadicUnion.0.2766591" = type { %"union.WasmEdge::VariadicUnion.1.2766592" }
+%"union.WasmEdge::VariadicUnion.1.2766592" = type { %"union.WasmEdge::VariadicUnion.2.2766593" }
+%"union.WasmEdge::VariadicUnion.2.2766593" = type { %"union.WasmEdge::VariadicUnion.3.2766594" }
+%"union.WasmEdge::VariadicUnion.3.2766594" = type { %"union.WasmEdge::VariadicUnion.4.2766595" }
+%"union.WasmEdge::VariadicUnion.4.2766595" = type { %"union.WasmEdge::VariadicUnion.5.2766596" }
+%"union.WasmEdge::VariadicUnion.5.2766596" = type { i128 }
+%"class.llvm::Use.3157992" = type { ptr, ptr, ptr, ptr }
+%union._Py_CODEUNIT.3974162 = type { i16 }
 
 ; 14 occurrences:
 ; clamav/optimized/packlibs.c.ll
@@ -27,7 +26,7 @@
 ; redis/optimized/ziplist.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -44,7 +43,7 @@ entry:
 ; openusd/optimized/lz4.cpp.ll
 ; redis/optimized/ziplist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -67,7 +66,7 @@ entry:
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; openjdk/optimized/codeBuffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000168(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000002c8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -87,11 +86,11 @@ entry:
 ; wasmedge/optimized/engine.cpp.ll
 ; wasmedge/optimized/helper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.WasmEdge::Variant.2653376", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.WasmEdge::Variant.2766589", ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -116,7 +115,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000002c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -125,21 +124,8 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; clamav/optimized/upack.c.ll
-; linux/optimized/skbuff.ll
-; linux/optimized/slub.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
-  ret i1 %6
-}
-
-; 48 occurrences:
+; 49 occurrences:
+; boost/optimized/area.ll
 ; cmake/optimized/cmSetCommand.cxx.ll
 ; gromacs/optimized/muParserBytecode.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
@@ -189,11 +175,11 @@ entry:
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000002c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.2944842", ptr %1, i64 %4
+  %5 = getelementptr nusw i32, ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -203,11 +189,11 @@ entry:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000002cc(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.2964483", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3157992", ptr %1, i64 %4
   %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
@@ -219,7 +205,7 @@ entry:
 ; linux/optimized/zstd_decompress_block.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000284(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -239,7 +225,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000169(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000002c9(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -252,7 +238,7 @@ entry:
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/huf_decompress.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000149(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000289(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -262,10 +248,23 @@ entry:
 }
 
 ; 2 occurrences:
+; linux/optimized/skbuff.ll
+; linux/optimized/slub.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr i8, ptr %1, i64 %4
+  %6 = icmp ult ptr %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
 ; cpython/optimized/sre.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -277,7 +276,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -289,11 +288,11 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/optimizer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000028c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %union._Py_CODEUNIT.3795952, ptr %1, i64 %4
+  %5 = getelementptr %union._Py_CODEUNIT.3974162, ptr %1, i64 %4
   %6 = icmp ne ptr %5, %0
   ret i1 %6
 }

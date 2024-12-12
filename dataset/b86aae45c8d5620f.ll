@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/namei_vfat.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
-; linux/optimized/update.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; openusd/optimized/stageSceneIndex.cpp.ll
 ; Function Attrs: nounwind

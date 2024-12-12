@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 54 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -7,6 +7,7 @@
 ; abc/optimized/giaSif.c.ll
 ; abc/optimized/pdrUtil.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/xsatSolver.c.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -21,16 +22,23 @@
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/uregex.ll
 ; jq/optimized/jv_dtoa.ll
+; jq/optimized/regparse.ll
 ; libquic/optimized/dtoa.cc.ll
 ; llvm/optimized/OMP.cpp.ll
+; ncnn/optimized/pooling3d.cpp.ll
+; oniguruma/optimized/regparse.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlansf.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
+; opencv/optimized/gemm_layer.cpp.ll
+; opencv/optimized/reduce_layer.cpp.ll
 ; openspiel/optimized/ABsearch.cpp.ll
 ; openspiel/optimized/LaterTricks.cpp.ll
 ; openspiel/optimized/QuickTricks.cpp.ll
+; openspiel/optimized/oh_hell_test.cc.ll
 ; openusd/optimized/grain_synthesis.c.ll
+; php/optimized/zend_alloc.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/bufmgr.ll
 ; postgres/optimized/freespace.ll
@@ -56,36 +64,45 @@ entry:
   ret ptr %5
 }
 
-; 22 occurrences:
+; 18 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; graphviz/optimized/shapes.c.ll
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
-; jq/optimized/regexec.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
-; oniguruma/optimized/regexec.ll
-; opencv/optimized/gather_elements_layer.cpp.ll
 ; opencv/optimized/linemod.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
 ; openmpi/optimized/ompi_datatype_args.ll
+; openspiel/optimized/spiel.cc.ll
 ; openusd/optimized/convolve.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/shared_alloc_shm.ll
-; raylib/optimized/rtextures.c.ll
 ; rocksdb/optimized/skiplistrep.cc.ll
-; stb/optimized/stb_image_resize2.c.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 3
   %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 2 occurrences:
+; jq/optimized/regexec.ll
+; oniguruma/optimized/regexec.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = shl nsw i64 %2, 3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 5120
   ret ptr %5
 }
 
@@ -103,11 +120,14 @@ entry:
   ret ptr %5
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; graphviz/optimized/make_map.c.ll
+; gromacs/optimized/resall.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
+; postgres/optimized/async.ll
 ; postgres/optimized/brin_pageops.ll
 ; postgres/optimized/bufmgr.ll
 ; postgres/optimized/ginbtree.ll
@@ -116,12 +136,12 @@ entry:
 ; postgres/optimized/nbtsearch.ll
 ; postgres/optimized/twophase.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 2
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -138,26 +158,40 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
-; openspiel/optimized/spiel.cc.ll
+; 3 occurrences:
+; openusd/optimized/stbImage.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = shl nsw i64 %2, 6
+  %3 = shl nsw i64 %2, 2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 32
+  %5 = getelementptr nusw i8, ptr %4, i64 -64
+  ret ptr %5
+}
+
+; 1 occurrences:
+; opencv/optimized/gather_elements_layer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = shl nsw i64 %2, 2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/lpsolver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -4
   ret ptr %5
 }

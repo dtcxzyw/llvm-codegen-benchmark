@@ -3,5 +3,5 @@ func0000000000000001:                   # @func0000000000000001
 	vsrl.vi	v12, v12, 24
 	vfwcvt.f.xu.v	v16, v12
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfadd.vv	v8, v16, v8
+	vfadd.vv	v8, v8, v16
 	ret

@@ -15,7 +15,7 @@ func0000000000000024:                   # @func0000000000000024
 	vptestnmq	.LCPI1_0(%rip){1to4}, %ymm2, %k0
 	vpmovm2d	%k0, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI2_0:

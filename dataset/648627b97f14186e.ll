@@ -1,5 +1,6 @@
 
-; 25 occurrences:
+; 27 occurrences:
+; boost/optimized/numeric.ll
 ; box2d/optimized/b2_body.cpp.ll
 ; cpython/optimized/socketmodule.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
@@ -13,6 +14,7 @@
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; openvdb/optimized/points.cc.ll
 ; postgres/optimized/indexcmds.ll
 ; qemu/optimized/ahci.c.ll

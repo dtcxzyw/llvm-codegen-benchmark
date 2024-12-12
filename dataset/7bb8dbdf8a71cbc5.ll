@@ -1,19 +1,5 @@
 
-; 4 occurrences:
-; opencv/optimized/ts_func.cpp.ll
-; openusd/optimized/stencilBuilder.cpp.ll
-; proj/optimized/4D_api.cpp.ll
-; ruby/optimized/nextafter.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, double %2) #0 {
-entry:
-  %3 = fcmp oeq double %2, 0x7FF0000000000000
-  %4 = and i1 %0, %1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 14 occurrences:
+; 10 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; opencv/optimized/lsd.cpp.ll
@@ -23,10 +9,6 @@ entry:
 ; quantlib/optimized/qdplusamericanengine.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
 ; rocksdb/optimized/version_set.cc.ll
-; verilator/optimized/V3EmitCConstPool.cpp.ll
-; verilator/optimized/V3EmitCHeaders.cpp.ll
-; verilator/optimized/V3EmitCImp.cpp.ll
-; verilator/optimized/V3EmitCModel.cpp.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(double %0, i1 %1, i1 %2) #0 {
@@ -82,20 +64,6 @@ entry:
 }
 
 ; 4 occurrences:
-; hermes/optimized/DateUtil.cpp.ll
-; quantlib/optimized/kahalesmilesection.ll
-; quantlib/optimized/normaldistribution.ll
-; quantlib/optimized/tcopulapolicy.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i1 %0, i1 %1, double %2) #0 {
-entry:
-  %3 = fcmp one double %2, 0x7FF0000000000000
-  %4 = and i1 %0, %1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 4 occurrences:
 ; graphviz/optimized/generate-constraints.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
@@ -104,6 +72,32 @@ entry:
 define i1 @func0000000000000005(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp ugt double %2, 0.000000e+00
+  %4 = and i1 %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 5 occurrences:
+; opencv/optimized/aruco_detector.cpp.ll
+; opencv/optimized/fgs_filter.cpp.ll
+; opencv/optimized/guided_filter.cpp.ll
+; opencv/optimized/lsd.cpp.ll
+; stat-rs/optimized/4d9pj14shc9lbmph.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(double %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = and i1 %1, %2
+  %4 = fcmp oge double %0, 0.000000e+00
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; hermes/optimized/DateUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i1 %0, i1 %1, double %2) #0 {
+entry:
+  %3 = fcmp one double %2, 0x7FF0000000000000
   %4 = and i1 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
@@ -136,10 +130,22 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 3 occurrences:
+; opencv/optimized/ts_func.cpp.ll
+; openusd/optimized/stencilBuilder.cpp.ll
+; proj/optimized/4D_api.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, double %2) #0 {
+entry:
+  %3 = fcmp oeq double %2, 0.000000e+00
+  %4 = and i1 %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 5 occurrences:
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/nlpsol.cpp.ll
-; opencv/optimized/odometry.cpp.ll
 ; postgres/optimized/float.ll
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/gistproc.ll
@@ -159,21 +165,6 @@ define i1 @func0000000000000001(double %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = fcmp uno double %0, 0.000000e+00
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 5 occurrences:
-; opencv/optimized/aruco_detector.cpp.ll
-; opencv/optimized/fgs_filter.cpp.ll
-; opencv/optimized/guided_filter.cpp.ll
-; opencv/optimized/lsd.cpp.ll
-; osqp/optimized/amd_info.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(double %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = and i1 %1, %2
-  %4 = fcmp oge double %0, 0.000000e+00
   %5 = and i1 %4, %3
   ret i1 %5
 }

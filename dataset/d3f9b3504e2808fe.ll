@@ -12,7 +12,8 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/area.ll
 ; cpython/optimized/instrumentation.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; git/optimized/object-file.ll

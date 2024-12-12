@@ -57,3 +57,26 @@ func0000000000000004:                   # @func0000000000000004
 	vmovdqu16	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
+.LCPI5_0:
+	.quad	2147483648                      # 0x80000000
+.LCPI5_1:
+	.short	502                             # 0x1f6
+	.short	502                             # 0x1f6
+	.short	502                             # 0x1f6
+	.short	502                             # 0x1f6
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuq	.LCPI5_0(%rip){1to4}, %ymm1, %k1
+	vmovdqu16	.LCPI5_1(%rip), %xmm0 {%k1} # xmm0 {%k1} = [502,502,502,502,u,u,u,u]
+	vzeroupper
+	retq
+func000000000000000c:                   # @func000000000000000c
+	vptestnmq	%ymm1, %ymm1, %k1
+	vmovdqu16	%xmm0, %xmm0 {%k1} {z}
+	vzeroupper
+	retq
+func0000000000000018:                   # @func0000000000000018
+	retq

@@ -11,13 +11,12 @@ entry:
   %2 = and i32 %1, 8192
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 805306368, i32 822083584
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = or i32 %5, 67108864
   ret i32 %6
 }
 
 ; 19 occurrences:
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/quota.ll
@@ -36,6 +35,7 @@ entry:
 ; nix/optimized/posix-fs-canonicalise.ll
 ; openjdk/optimized/methodHandles.ll
 ; qemu/optimized/system_physmem.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
@@ -70,7 +70,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = icmp eq i32 %2, 9
   %4 = select i1 %3, i32 16, i32 16400
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = or disjoint i32 %5, 128
   ret i32 %6
 }

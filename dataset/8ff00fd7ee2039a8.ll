@@ -7,7 +7,7 @@
 ; openssl/optimized/openssl-bin-crl.ll
 ; openssl/optimized/openssl-bin-x509.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %0, 1
@@ -25,18 +25,6 @@ entry:
   %3 = add i64 %0, 1
   %4 = icmp ugt i64 %3, %2
   %5 = select i1 %4, i32 20, i32 1
-  ret i32 %5
-}
-
-; 1 occurrences:
-; linux/optimized/nf_nat_proto.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %0, 20
-  %4 = icmp ugt i64 %3, %2
-  %5 = select i1 %4, i32 8, i32 20
   ret i32 %5
 }
 

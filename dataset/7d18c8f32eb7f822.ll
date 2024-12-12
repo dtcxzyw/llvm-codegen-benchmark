@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 12 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/ivyHaig.c.ll
@@ -7,12 +7,10 @@
 ; linux/optimized/aspm.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/iface.ll
-; linux/optimized/irq.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/tg3.ll
 ; qemu/optimized/hw_net_tulip.c.ll
-; qemu/optimized/hw_sd_cadence_sdhci.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {

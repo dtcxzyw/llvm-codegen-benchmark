@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 67 occurrences:
 ; abc/optimized/ifTime.c.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
@@ -8,6 +8,7 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_lowlight.c.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
+; eastl/optimized/Int128_t.cpp.ll
 ; faiss/optimized/quantize_lut.cpp.ll
 ; gromacs/optimized/forcefieldparameters.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
@@ -62,6 +63,10 @@
 ; xgboost/optimized/elementwise_metric.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/FlexLine.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:

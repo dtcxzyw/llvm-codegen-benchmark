@@ -1,25 +1,4 @@
 
-; 11 occurrences:
-; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
-; ockam-rs/optimized/scbbgml6cvr1nwt.ll
-; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
-; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
-; typst-rs/optimized/1mrwywpkq81cby93.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
-; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
-; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, 2
-  %3 = trunc nuw i64 %0 to i1
-  %4 = select i1 %3, i64 %2, i64 undef
-  ret i64 %4
-}
-
 ; 18 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -45,6 +24,28 @@ entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = trunc nuw i64 %0 to i1
   %4 = select i1 %3, i64 %2, i64 0
+  ret i64 %4
+}
+
+; 12 occurrences:
+; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
+; ockam-rs/optimized/scbbgml6cvr1nwt.ll
+; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
+; typst-rs/optimized/1mrwywpkq81cby93.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 1
+  %3 = trunc nuw i64 %0 to i1
+  %4 = select i1 %3, i64 %2, i64 1
   ret i64 %4
 }
 

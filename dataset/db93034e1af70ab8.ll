@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; redis/optimized/networking.ll
 ; redis/optimized/rax.ll
 ; ruby/optimized/regparse.ll

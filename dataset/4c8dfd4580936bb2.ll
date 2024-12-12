@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; linux/optimized/ip6_output.ll
@@ -15,7 +15,6 @@
 ; postgres/optimized/json.ll
 ; postgres/optimized/jsonb.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/jsonpath_exec.ll
@@ -46,7 +45,7 @@
 define i32 @func0000000000000002(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i32 138, i32 %0
   ret i32 %5
 }
@@ -58,22 +57,32 @@ entry:
 define i32 @func0000000000000018(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 1
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i32 -1, i32 %0
   ret i32 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
+; stockfish/optimized/evaluate_nnue.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %2, 64
+  %4 = or i1 %1, %3
+  %5 = select i1 %4, i32 0, i32 %0
+  ret i32 %5
+}
+
+; 2 occurrences:
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_output.ll
-; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i8 %2, 64
+  %3 = icmp ult i8 %2, 2
   %4 = or i1 %3, %1
-  %5 = select i1 %4, i32 0, i32 %0
+  %5 = select i1 %4, i32 65575, i32 %0
   ret i32 %5
 }
 

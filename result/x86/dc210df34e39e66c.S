@@ -1,5 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
-	andb	$15, %sil
+	andb	$1, %sil
 	movzbl	%sil, %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil

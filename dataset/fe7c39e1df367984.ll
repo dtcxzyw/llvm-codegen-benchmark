@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
+; boost/optimized/area.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll

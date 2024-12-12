@@ -21,6 +21,7 @@
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/b3BulletFile.ll
 ; bullet3/optimized/b3DNA.ll
 ; bullet3/optimized/b3File.ll
@@ -80,6 +81,7 @@
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; lz4/optimized/xxhash.c.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
 ; memcached/optimized/memcached_debug-murmur3_hash.ll
@@ -126,7 +128,6 @@
 ; php/optimized/hash_joaat.ll
 ; php/optimized/hash_xxhash.ll
 ; postgres/optimized/catcache.ll
-; postgres/optimized/checksum.ll
 ; postgres/optimized/execGrouping.ll
 ; postgres/optimized/file.ll
 ; postgres/optimized/nodeMemoize.ll
@@ -283,7 +284,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -435,7 +435,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 5
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 
@@ -456,7 +456,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 4097
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 

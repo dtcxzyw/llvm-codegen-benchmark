@@ -5,7 +5,7 @@
 ; rocksdb/optimized/write_batch.cc.ll
 ; rust-analyzer-rs/optimized/577813mpo9tvqnpt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %0, i1 %3, i1 false
@@ -14,15 +14,16 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_statement.cpp.ll
 ; libzmq/optimized/session_base.cpp.ll
 ; llvm/optimized/CodeGenTBAA.cpp.ll
 ; llvm/optimized/MCExpr.cpp.ll
 ; rust-analyzer-rs/optimized/577813mpo9tvqnpt.ll
 ; yosys/optimized/proc_dff.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %0, i1 %3, i1 false
@@ -36,7 +37,7 @@ entry:
 ; git/optimized/credential-store.ll
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %0, i1 %3, i1 false
@@ -50,7 +51,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %0, i1 %3, i1 false
@@ -63,7 +64,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; linux/optimized/buffered-io.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %0, i1 %3, i1 false

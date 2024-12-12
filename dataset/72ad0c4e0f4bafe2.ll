@@ -1,5 +1,5 @@
 
-; 182 occurrences:
+; 183 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -182,6 +182,7 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:

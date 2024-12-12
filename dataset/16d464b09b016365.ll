@@ -1,10 +1,10 @@
 
-%"struct.ceres::internal::CellInfo.3324993" = type { ptr, %"class.std::mutex.3324994" }
-%"class.std::mutex.3324994" = type { %"class.std::__mutex_base.3324995" }
-%"class.std::__mutex_base.3324995" = type { %union.pthread_mutex_t.3324996 }
-%union.pthread_mutex_t.3324996 = type { %struct.__pthread_mutex_s.3324997 }
-%struct.__pthread_mutex_s.3324997 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.3324998 }
-%struct.__pthread_internal_list.3324998 = type { ptr, ptr }
+%"struct.ceres::internal::CellInfo.3514172" = type { ptr, %"class.std::mutex.3514173" }
+%"class.std::mutex.3514173" = type { %"class.std::__mutex_base.3514174" }
+%"class.std::__mutex_base.3514174" = type { %union.pthread_mutex_t.3514175 }
+%union.pthread_mutex_t.3514175 = type { %struct.__pthread_mutex_s.3514176 }
+%struct.__pthread_mutex_s.3514176 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.3514177 }
+%struct.__pthread_internal_list.3514177 = type { ptr, ptr }
 
 ; 2 occurrences:
 ; lightgbm/optimized/metadata.cpp.ll
@@ -59,7 +59,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = ashr exact i64 %1, 3
   %5 = mul i64 %4, %3
-  %6 = getelementptr %"struct.ceres::internal::CellInfo.3324993", ptr %0, i64 %5
+  %6 = getelementptr %"struct.ceres::internal::CellInfo.3514172", ptr %0, i64 %5
   ret ptr %6
 }
 

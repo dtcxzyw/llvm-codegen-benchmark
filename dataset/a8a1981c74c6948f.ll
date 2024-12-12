@@ -34,7 +34,8 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
 ; lief/optimized/psa_crypto.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/s_subMagsF32.ll
@@ -47,10 +48,11 @@ entry:
   ret i8 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; wireshark/optimized/erf.c.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i1 %0, i8 %1, i64 %2) #0 {
 entry:

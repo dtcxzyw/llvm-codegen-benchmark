@@ -16,7 +16,13 @@ func0000000000000011:                   # @func0000000000000011
 	movl	$300000, %eax                   # imm = 0x493E0
 	cmovbq	%rcx, %rax
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000030:                   # @func0000000000000030
+	cmpq	$4097, %rdi                     # imm = 0x1001
+	movl	%esi, %ecx
+	movl	$4096, %eax                     # imm = 0x1000
+	cmovbq	%rcx, %rax
+	retq
+func00000000000000a8:                   # @func00000000000000a8
 	xorl	%eax, %eax
 	cmpq	$858993460, %rdi                # imm = 0x33333334
 	movl	%esi, %ecx

@@ -12,7 +12,7 @@ entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i8
   %4 = and i8 %3, 32
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -47,7 +47,7 @@ entry:
   %2 = lshr i64 %1, 24
   %3 = trunc i64 %2 to i8
   %4 = and i8 %3, 15
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 
@@ -60,7 +60,7 @@ entry:
   %2 = lshr i64 %1, 60
   %3 = trunc nuw nsw i64 %2 to i8
   %4 = and i8 %3, 8
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 
@@ -73,7 +73,7 @@ entry:
   %2 = lshr i64 %1, 56
   %3 = trunc nuw i64 %2 to i8
   %4 = and i8 %3, -128
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

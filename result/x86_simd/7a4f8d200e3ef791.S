@@ -2,7 +2,7 @@
 	.quad	0x40e0000000000000              # double 32768
 func0000000000000000:                   # @func0000000000000000
 	vcvtdq2pd	%ymm1, %zmm1
-	vmulpd	%zmm0, %zmm1, %zmm0
+	vmulpd	%zmm1, %zmm0, %zmm0
 	vbroadcastsd	.LCPI0_0(%rip), %zmm1   # zmm1 = [3.2768E+4,3.2768E+4,3.2768E+4,3.2768E+4,3.2768E+4,3.2768E+4,3.2768E+4,3.2768E+4]
 	vmulpd	%zmm1, %zmm0, %zmm0
 	vmulpd	%zmm1, %zmm0, %zmm0

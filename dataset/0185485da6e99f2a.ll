@@ -60,18 +60,21 @@ entry:
   ret i32 %2
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/collationiterator.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; linux/optimized/filter.ll
 ; linux/optimized/ip_output.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i16 %0) #0 {
 entry:

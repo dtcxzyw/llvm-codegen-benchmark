@@ -1,9 +1,10 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
+; luau/optimized/Compiler.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; nix/optimized/common-protocol.ll
 ; nix/optimized/serve-protocol.ll
@@ -28,7 +29,8 @@ entry:
   ret i8 %6
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; boost/optimized/static_string.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestFunctional.cpp.ll

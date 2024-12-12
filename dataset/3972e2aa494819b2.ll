@@ -1,9 +1,10 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; git/optimized/list-objects-filter.ll
 ; icu/optimized/uspoof.ll
 ; linux/optimized/nfs4proc.ll
 ; opencv/optimized/loadsave.cpp.ll
+; openjdk/optimized/c1_LIRGenerator.ll
 ; openssl/optimized/openssl-bin-smime.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind

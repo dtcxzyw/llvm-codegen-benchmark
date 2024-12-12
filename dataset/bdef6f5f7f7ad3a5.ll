@@ -1,5 +1,5 @@
 
-; 924 occurrences:
+; 851 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -29,6 +29,7 @@
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/b3Point2PointConstraint.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -111,7 +112,6 @@
 ; gromacs/optimized/matio.cpp.ll
 ; gromacs/optimized/mpiinfo.cpp.ll
 ; gromacs/optimized/muParserCallback.cpp.ll
-; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/readpull.cpp.ll
 ; gromacs/optimized/sm_keywords.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -131,25 +131,10 @@
 ; hermes/optimized/RegAlloc.cpp.ll
 ; hermes/optimized/SemanticValidator.cpp.ll
 ; hyperscan/optimized/buildstate.cpp.ll
-; icu/optimized/anytrans.ll
-; icu/optimized/datamap.ll
 ; icu/optimized/decNumber.ll
-; icu/optimized/derb.ll
-; icu/optimized/emojiprops.ll
-; icu/optimized/filterednormalizer2.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/messagepattern.ll
-; icu/optimized/msgfmt.ll
-; icu/optimized/name2uni.ll
-; icu/optimized/normalizer2.ll
 ; icu/optimized/normalizer2impl.ll
-; icu/optimized/smpdtfmt.ll
-; icu/optimized/translit.ll
 ; icu/optimized/ucase.ll
-; icu/optimized/uconv.ll
-; icu/optimized/uniset_closure.ll
-; icu/optimized/uts46.ll
-; icu/optimized/wrtxml.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jq/optimized/decNumber.ll
@@ -167,7 +152,6 @@
 ; linux/optimized/exit.ll
 ; linux/optimized/ext4_jbd2.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/ip6_output.ll
@@ -555,7 +539,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -664,7 +647,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -749,97 +731,44 @@
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openssl/optimized/openssl-bin-passwd.ll
-; openssl/optimized/ssl_handshake_rtt_test-bin-ssl_handshake_rtt_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openssl/optimized/threadstest-bin-threadstest.ll
-; openusd/optimized/aggregateNode.cpp.ll
-; openusd/optimized/aggregateTreeBuilder.cpp.ll
 ; openusd/optimized/animMapper.cpp.ll
-; openusd/optimized/authoring.cpp.ll
-; openusd/optimized/basisCurves.cpp.ll
-; openusd/optimized/basisCurvesTopology.cpp.ll
 ; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/changes.cpp.ll
-; openusd/optimized/collectionAPI.cpp.ll
-; openusd/optimized/collectionAPIAdapter.cpp.ll
 ; openusd/optimized/collectionCache.cpp.ll
-; openusd/optimized/collectionMembershipQuery.cpp.ll
-; openusd/optimized/collectionPredicateLibrary.cpp.ll
 ; openusd/optimized/composeSite.cpp.ll
-; openusd/optimized/containerDataSourceEditor.cpp.ll
-; openusd/optimized/coordSysAPI.cpp.ll
-; openusd/optimized/copyUtils.cpp.ll
-; openusd/optimized/dataSourceLegacyPrim.cpp.ll
-; openusd/optimized/dataSourceMaterial.cpp.ll
-; openusd/optimized/dataSourcePrimvars.cpp.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/drawModeAdapter.cpp.ll
-; openusd/optimized/drawModeStandin.cpp.ll
-; openusd/optimized/driveAPI.cpp.ll
 ; openusd/optimized/env.cpp.ll
-; openusd/optimized/eventTree.cpp.ll
-; openusd/optimized/flattenedDirectMaterialBindingsDataSourceProvider.cpp.ll
-; openusd/optimized/glslfxResourceLayout.cpp.ll
 ; openusd/optimized/gprimAdapter.cpp.ll
 ; openusd/optimized/info.cpp.ll
-; openusd/optimized/input.cpp.ll
 ; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/layer.cpp.ll
 ; openusd/optimized/lightLinkingSceneIndex.cpp.ll
-; openusd/optimized/limitAPI.cpp.ll
-; openusd/optimized/listOp.cpp.ll
 ; openusd/optimized/mallocTag.cpp.ll
 ; openusd/optimized/mergingSceneIndex.cpp.ll
-; openusd/optimized/mesh.cpp.ll
 ; openusd/optimized/meshAdapter.cpp.ll
 ; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/output.cpp.ll
-; openusd/optimized/overlayContainerDataSource.cpp.ll
-; openusd/optimized/parserHelpers.cpp.ll
 ; openusd/optimized/patchTree.cpp.ll
-; openusd/optimized/pathNode.cpp.ll
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; openusd/optimized/prim.cpp.ll
 ; openusd/optimized/primAdapter.cpp.ll
-; openusd/optimized/primDataSourceOverlayCache.cpp.ll
 ; openusd/optimized/primDefinition.cpp.ll
 ; openusd/optimized/primIndex.cpp.ll
 ; openusd/optimized/primSpec.cpp.ll
-; openusd/optimized/primTypeInfoCache.cpp.ll
 ; openusd/optimized/propertyIndex.cpp.ll
 ; openusd/optimized/reconinter.c.ll
 ; openusd/optimized/refinerFactory.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
 ; openusd/optimized/reporter.cpp.ll
-; openusd/optimized/retainedDataSource.cpp.ll
-; openusd/optimized/rprim.cpp.ll
-; openusd/optimized/sceneIndex.cpp.ll
 ; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/shaderDefUtils.cpp.ll
 ; openusd/optimized/simplify.cpp.ll
 ; openusd/optimized/skeletonAdapter.cpp.ll
-; openusd/optimized/spec.cpp.ll
-; openusd/optimized/stageSceneIndex.cpp.ll
-; openusd/optimized/subdivTags.cpp.ll
 ; openusd/optimized/testHdBufferSpec.cpp.ll
-; openusd/optimized/testSdfPathThreading.cpp.ll
-; openusd/optimized/testTraceCounters.cpp.ll
-; openusd/optimized/testUsdImagingDelegateChanges.cpp.ll
-; openusd/optimized/testUsdSchemaRegistryCpp.cpp.ll
-; openusd/optimized/testUsdStageNotification.cpp.ll
-; openusd/optimized/typeRegistry.cpp.ll
 ; openusd/optimized/unitTestDelegate.cpp.ll
-; openusd/optimized/unitTestNullRenderDelegate.cpp.ll
-; openusd/optimized/valueTypeName.cpp.ll
-; openusd/optimized/valueTypeRegistry.cpp.ll
-; openusd/optimized/variableExpressionImpl.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; php/optimized/dfa_pass.ll
 ; php/optimized/ir_ra.ll
 ; php/optimized/output.ll
 ; php/optimized/pdo_stmt.ll
+; php/optimized/php_crypt_r.ll
 ; php/optimized/php_reflection.ll
 ; php/optimized/softmagic.ll
 ; php/optimized/zend_inheritance.ll
@@ -847,7 +776,6 @@
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/be-fsstubs.ll
 ; postgres/optimized/brin.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/encode.ll
 ; postgres/optimized/formatting.ll
@@ -876,6 +804,7 @@
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/evict.ll
 ; redis/optimized/lvm.ll
+; redis/optimized/object.ll
 ; slurm/optimized/acct_policy.ll
 ; slurm/optimized/gres.ll
 ; slurm/optimized/priority_multifactor.ll
@@ -899,7 +828,6 @@
 ; tev/optimized/main.cpp.ll
 ; vcpkg/optimized/tools.cpp.ll
 ; wireshark/optimized/conversation.c.ll
-; wireshark/optimized/io_graph_dialog.cpp.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-btavrcp.c.ll
 ; wireshark/optimized/packet-ieee1722.c.ll
@@ -909,7 +837,6 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/array_rewriter.cpp.ll
@@ -953,7 +880,7 @@ entry:
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_MidiOut.ll
 ; php/optimized/ir_dump.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000014(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 240
   %.not = icmp eq i32 %3, 240
@@ -968,7 +895,7 @@ entry:
 ; spike/optimized/fsrw.ll
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000018(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %.not = icmp eq i32 %3, 0

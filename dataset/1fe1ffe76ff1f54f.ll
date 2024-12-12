@@ -1,5 +1,7 @@
 
-; 393 occurrences:
+; 392 occurrences:
+; boost/optimized/code_conversion.ll
+; boost/optimized/main.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; glslang/optimized/ParseContextBase.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -275,13 +277,10 @@
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
@@ -394,7 +393,7 @@
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %2, %0
   %4 = icmp ult ptr %0, %1
@@ -402,8 +401,10 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -418,7 +419,7 @@ entry:
 ; z3/optimized/bound_simplifier.cpp.ll
 ; z3/optimized/qe_dl_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, %0
   %4 = icmp eq ptr %0, %1
@@ -429,7 +430,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/DecodedVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %2, %0
   %4 = icmp eq ptr %0, %1

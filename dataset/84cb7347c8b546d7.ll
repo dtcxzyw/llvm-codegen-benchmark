@@ -37,7 +37,7 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000cc(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = ashr exact i64 %1, 4
@@ -50,12 +50,12 @@ entry:
 ; llvm/optimized/StackColoring.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000062(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c2(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = ashr exact i64 %1, 29
   %5 = icmp eq i64 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

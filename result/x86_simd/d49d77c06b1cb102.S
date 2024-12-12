@@ -31,7 +31,7 @@
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpshufb	.LCPI0_0(%rip), %ymm2, %ymm2    # ymm2 = ymm2[1],zero,zero,zero,ymm2[5],zero,zero,zero,ymm2[9],zero,zero,zero,ymm2[13],zero,zero,zero,ymm2[17],zero,zero,zero,ymm2[21],zero,zero,zero,ymm2[25],zero,zero,zero,ymm2[29],zero,zero,zero
 	vptestmb	%xmm1, %xmm1, %k1
 	vpcmpeqd	%ymm0, %ymm2, %k0 {%k1}

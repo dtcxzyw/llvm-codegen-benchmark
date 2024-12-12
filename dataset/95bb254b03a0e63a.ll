@@ -30,7 +30,7 @@ define i1 @func0000000000000001(i16 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i16
-  %4 = icmp eq i16 %3, %0
+  %4 = icmp eq i16 %0, %3
   ret i1 %4
 }
 

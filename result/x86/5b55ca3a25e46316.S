@@ -14,7 +14,7 @@ func0000000000000006:                   # @func0000000000000006
 	movq	%rdx, %rax
 	shrq	$63, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rsi, %rax
 	sarq	$3, %rax
 	cqto
@@ -22,7 +22,7 @@ func0000000000000011:                   # @func0000000000000011
 	testq	%rdx, %rdx
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movq	%rsi, %rax
 	sarq	$32, %rax
 	cqto
@@ -30,7 +30,7 @@ func0000000000000016:                   # @func0000000000000016
 	movq	%rdx, %rax
 	shrq	$63, %rax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movq	%rsi, %rax
 	sarq	$3, %rax
 	cqto

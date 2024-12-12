@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; cpython/optimized/helpers.ll
 ; folly/optimized/SimpleSimdStringUtils.cpp.ll
-; linux/optimized/fils_aead.ll
 ; qemu/optimized/block_vmdk.c.ll
 ; redis/optimized/redis-cli.ll
 ; ruby/optimized/prism.ll
@@ -18,10 +17,19 @@ entry:
   ret i64 %5
 }
 
-; 71 occurrences:
-; abseil-cpp/optimized/demangle.cc.ll
+; 84 occurrences:
 ; abseil-cpp/optimized/log_message.cc.ll
 ; bdwgc/optimized/cordxtra.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/path.ll
+; boost/optimized/token_ids.ll
+; boost/optimized/url_view_base.ll
 ; c3c/optimized/json.c.ll
 ; clamav/optimized/pdfng.c.ll
 ; cmake/optimized/smb.c.ll
@@ -61,6 +69,7 @@ entry:
 ; luajit/optimized/lj_alloc_dyn.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; mold/optimized/rust-demangle.c.ll
 ; msgpack/optimized/class_intrusive.cpp.ll
 ; msgpack/optimized/class_intrusive_map.cpp.ll
@@ -75,25 +84,28 @@ entry:
 ; openjdk/optimized/serialBlockOffsetTable.ll
 ; openssl/optimized/libcrypto-lib-e_chacha20_poly1305.ll
 ; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
-; php/optimized/dtoa.ll
 ; php/optimized/fastcgi.ll
 ; php/optimized/iptc.ll
 ; php/optimized/ir_gdb.ll
 ; php/optimized/parse_tz.ll
 ; php/optimized/quot_print.ll
-; php/optimized/snprintf.ll
 ; php/optimized/string.ll
 ; php/optimized/url.ll
 ; php/optimized/uuencode.ll
 ; php/optimized/zend_compile.ll
-; php/optimized/zend_jit.ll
 ; raylib/optimized/rcore.c.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yosys/optimized/lz4.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000030(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 48
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 48
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = add i64 %4, 16
@@ -111,9 +123,9 @@ entry:
 ; php/optimized/string.ll
 ; spike/optimized/cachesim.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000032(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 130
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 130
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = add nuw i64 %4, 1
@@ -126,17 +138,18 @@ entry:
 ; php/optimized/iconv.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000033(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = add nuw nsw i64 %4, 1
   ret i64 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/clamdtop.c.ll
 ; clamav/optimized/clamsubmit.c.ll
 ; clamav/optimized/pdf.c.ll
@@ -152,12 +165,41 @@ entry:
 ; redis/optimized/lstrlib.ll
 ; stb/optimized/stb_include.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000031(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 24
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 24
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
+  ret i64 %5
+}
+
+; 6 occurrences:
+; abseil-cpp/optimized/demangle.cc.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; php/optimized/dtoa.ll
+; php/optimized/snprintf.ll
+; php/optimized/zend_jit.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = add i64 %4, 2
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 -7
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = add nsw i64 %4, 1
   ret i64 %5
 }
 

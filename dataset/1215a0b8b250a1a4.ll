@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 21 occurrences:
 ; cmake/optimized/zstd_opt.c.ll
 ; cpython/optimized/pystrhex.ll
 ; darktable/optimized/SamsungV1Decompressor.cpp.ll
@@ -8,6 +8,7 @@
 ; linux/optimized/irqdesc.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; openjdk/optimized/hb-ot-name.ll
@@ -16,6 +17,9 @@
 ; snappy/optimized/snappy.cc.ll
 ; wireshark/optimized/packet-quakeworld.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i64 %2) #0 {
@@ -57,7 +61,7 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
@@ -66,6 +70,8 @@ entry:
 ; darktable/optimized/SonyArw1Decompressor.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i1 %0, i32 %1, i64 %2) #0 {
 entry:

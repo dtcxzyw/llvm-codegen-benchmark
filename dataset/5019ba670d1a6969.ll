@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003a4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = or disjoint i32 %0, %1
@@ -19,7 +19,7 @@ entry:
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wireshark/optimized/packet-ssh.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = or disjoint i32 %0, %1
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = or disjoint i32 %0, %1
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000001a4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = or disjoint i32 %0, %1
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = or disjoint i32 %0, %1
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = or disjoint i32 %0, %1

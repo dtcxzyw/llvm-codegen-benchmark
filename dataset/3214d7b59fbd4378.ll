@@ -1,5 +1,5 @@
 
-; 394 occurrences:
+; 393 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -105,14 +105,11 @@
 ; linux/optimized/atkbd.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/host.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/io_apic.ll
-; linux/optimized/keyboard.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/tls.ll
@@ -139,6 +136,7 @@
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -394,6 +392,7 @@
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -404,9 +403,10 @@ entry:
   ret i8 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/TemplateBase.cpp.ll
+; postgres/optimized/regcomp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -439,7 +439,7 @@ entry:
   %3 = and i8 %2, -7
   %4 = and i8 %1, -8
   %5 = or i8 %4, %3
-  %6 = or disjoint i8 %5, %0
+  %6 = or disjoint i8 %0, %5
   ret i8 %6
 }
 

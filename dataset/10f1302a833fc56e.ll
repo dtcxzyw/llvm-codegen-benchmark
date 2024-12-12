@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 55 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; cpython/optimized/dtoa.ll
@@ -31,7 +31,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -61,7 +60,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -11
   %4 = shl i32 %1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -82,7 +81,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 21
   %4 = shl i32 %1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -97,12 +96,11 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/frameobject.ll
 ; gromacs/optimized/coder.c.ll
 ; linux/optimized/ehci-dbgp.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
@@ -113,6 +111,20 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -6
   %4 = shl i32 %1, %3
+  %5 = or i32 %4, %0
+  ret i32 %5
+}
+
+; 4 occurrences:
+; libwebp/optimized/bit_reader_utils.c.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; openexr/optimized/ImfTimeCode.cpp.ll
+; openusd/optimized/bitreader_buffer.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = shl nuw i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -137,20 +149,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = shl nuw i32 %1, %3
-  %5 = or i32 %4, %0
-  ret i32 %5
-}
-
-; 3 occurrences:
-; libwebp/optimized/bit_reader_utils.c.ll
-; openexr/optimized/ImfTimeCode.cpp.ll
-; openusd/optimized/bitreader_buffer.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -1
-  %4 = shl nuw i32 %1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

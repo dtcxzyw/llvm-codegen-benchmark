@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; entt/optimized/adjacency_matrix.cpp.ll
 ; entt/optimized/flow.cpp.ll
@@ -8,6 +8,7 @@
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; qemu/optimized/block_vmdk.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:

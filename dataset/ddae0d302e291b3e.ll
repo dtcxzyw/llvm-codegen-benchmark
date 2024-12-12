@@ -96,7 +96,7 @@ entry:
   ret i64 %3
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
 ; mold/optimized/icf.cc.ARM64.cc.ll
@@ -138,6 +138,7 @@ entry:
 ; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
 ; openusd/optimized/skeletonAdapter.cpp.ll
 ; openusd/optimized/value.cpp.ll
+; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:

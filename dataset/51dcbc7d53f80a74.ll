@@ -23,7 +23,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; spike/optimized/triggers.ll
 ; stockfish/optimized/movegen.ll
 ; Function Attrs: nounwind

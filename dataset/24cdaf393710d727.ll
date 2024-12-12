@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; hermes/optimized/Executor.cpp.ll
+; lvgl/optimized/lv_observer.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {

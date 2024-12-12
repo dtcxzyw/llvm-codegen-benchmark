@@ -61,7 +61,7 @@
 ; openjdk/optimized/freetypeScaler.ll
 ; stb/optimized/stb_dxt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = sub nsw i32 %0, %1
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = sub nuw i32 %0, %1
@@ -85,7 +85,7 @@ entry:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/packet-olsr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = sub nsw i32 %0, %1
@@ -96,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/Rw2Decoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = sub i32 %0, %1
@@ -107,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = sub nsw i32 %0, %1
@@ -119,7 +119,7 @@ entry:
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/sswCore.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = sub nsw i32 %0, %1
@@ -130,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/bacPrsBuild.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sub i32 %0, %1
@@ -142,7 +142,7 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
   %4 = sub nuw i32 %0, %1
@@ -153,7 +153,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LLLexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = sub i32 %0, %1
@@ -175,7 +175,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ipv6.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = sub i32 %0, %1
@@ -187,7 +187,7 @@ entry:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; wireshark/optimized/packet-wifi-p2p.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = sub i32 %0, %1
@@ -198,7 +198,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sub nsw i32 %0, %1
@@ -209,7 +209,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = sub nsw i32 %0, %1
@@ -232,7 +232,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 4
   %4 = sub nuw nsw i32 %0, %1
@@ -255,7 +255,7 @@ entry:
 ; linux/optimized/af_packet.ll
 ; linux/optimized/virtio_net.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c5(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000185(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
   %4 = sub i32 %0, %1
@@ -266,7 +266,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stackblur.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sub i32 %0, %1

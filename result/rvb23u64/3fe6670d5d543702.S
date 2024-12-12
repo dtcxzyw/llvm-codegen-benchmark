@@ -17,12 +17,6 @@ func0000000000000100:                   # @func0000000000000100
 	sltu	a1, a2, a1
 	addw	a0, a0, a1
 	ret
-func000000000000010c:                   # @func000000000000010c
-	sext.w	a1, a1
-	sltiu	a1, a1, 63
-	xori	a1, a1, 1
-	addw	a0, a0, a1
-	ret
 func0000000000000104:                   # @func0000000000000104
 	sext.w	a1, a1
 	sltiu	a1, a1, 63

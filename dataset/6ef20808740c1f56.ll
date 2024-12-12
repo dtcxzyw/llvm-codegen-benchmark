@@ -6,7 +6,7 @@
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
 ; openusd/optimized/drawModeAdapter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000047(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000087(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 3
   %3 = select i1 %2, i32 0, i32 4194304

@@ -11,7 +11,8 @@ func0000000000000018:                   # @func0000000000000018
 	orb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpw	$64, %dx
+	movzwl	%dx, %eax
+	cmpl	$49152, %eax                    # imm = 0xC000
 	setb	%al
 	andb	%sil, %al
 	orb	%dil, %al

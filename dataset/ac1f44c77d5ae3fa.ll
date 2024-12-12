@@ -30,10 +30,9 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_ui32_r_minMag.ll
 ; spike/optimized/f64_to_i32_r_minMag.ll

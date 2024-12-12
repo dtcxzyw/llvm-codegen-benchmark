@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; hermes/optimized/NativeFormatting.cpp.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/ipconfig.ll
@@ -12,6 +12,7 @@
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; wireshark/optimized/to_str.c.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
@@ -20,7 +21,7 @@ entry:
   ret i64 %2
 }
 
-; 64 occurrences:
+; 75 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
@@ -34,10 +35,21 @@ entry:
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
 ; arrow/optimized/io_util.cc.ll
 ; arrow/optimized/slow.cc.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/mutex.ll
+; boost/optimized/partition.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; opencv/optimized/speech_recognition.cpp.ll
 ; php/optimized/zend_jit.ll
 ; quantlib/optimized/dataformatters.ll

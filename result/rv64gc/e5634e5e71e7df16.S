@@ -10,5 +10,5 @@ func0000000000000000:                   # @func0000000000000000
 	beqz	a1, .LBB1_2
 	neg	a2, a2
 .LBB1_2:                                # %entry
-	mul	a0, a2, a0
+	mul	a0, a0, a2
 	ret

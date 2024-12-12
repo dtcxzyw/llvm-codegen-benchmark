@@ -103,12 +103,12 @@
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 60
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 205 occurrences:
+; 204 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/extraUtilDsd.c.ll
@@ -128,6 +128,7 @@ entry:
 ; libwebp/optimized/dec.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -200,7 +201,6 @@ entry:
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -282,7 +282,6 @@ entry:
 ; nori/optimized/warptest.cpp.ll
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
-; openblas/optimized/dstein.c.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/mvn_layer.cpp.ll
@@ -367,7 +366,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 6
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -397,7 +396,7 @@ entry:
 define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -416,7 +415,7 @@ entry:
 define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 720
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

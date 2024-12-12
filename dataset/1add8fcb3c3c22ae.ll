@@ -11,7 +11,8 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/to_chars.ll
 ; clamav/optimized/qtmd.c.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
@@ -30,7 +31,7 @@ define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub nsw i32 %2, %0
-  %4 = and i32 %3, 65534
+  %4 = and i32 %3, 63
   ret i32 %4
 }
 

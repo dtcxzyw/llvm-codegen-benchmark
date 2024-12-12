@@ -1,10 +1,16 @@
-func0000000000000069:                   # @func0000000000000069
+func00000000000000e9:                   # @func00000000000000e9
 	leal	1(%rdi), %ecx
 	xorl	%eax, %eax
-	cmpl	$2, %edi
+	cmpl	$3, %edi
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func00000000000000d4:                   # @func00000000000000d4
+	leal	64(%rdi), %ecx
+	cmpl	$4033, %edi                     # imm = 0xFC1
+	movl	$4160, %eax                     # imm = 0x1040
+	cmovgel	%ecx, %eax
+	retq
+func0000000000000058:                   # @func0000000000000058
 	leal	-1(%rdi), %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
@@ -13,43 +19,19 @@ func0000000000000010:                   # @func0000000000000010
 	cmpl	$9, %edi
 	cmovael	%ecx, %eax
 	retq
-func0000000000000054:                   # @func0000000000000054
+func0000000000000094:                   # @func0000000000000094
 	leal	8(%rdi), %ecx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovgl	%ecx, %eax
 	retq
-func0000000000000035:                   # @func0000000000000035
-	leal	-2(%rdi), %ecx
-	xorl	%eax, %eax
-	cmpl	$3, %edi
-	cmovgel	%ecx, %eax
-	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000055:                   # @func0000000000000055
 	leal	-1(%rdi), %ecx
-	xorl	%eax, %eax
 	testl	%edi, %edi
+	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	cmovgl	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	leal	-1(%rdi), %ecx
-	cmpl	$8, %edi
-	movl	$6, %eax
-	cmovael	%ecx, %eax
-	retq
-func0000000000000008:                   # @func0000000000000008
-	leal	-2(%rdi), %ecx
-	cmpl	$6, %edi
-	movl	$3, %eax
-	cmovbl	%ecx, %eax
-	retq
-func0000000000000028:                   # @func0000000000000028
-	leal	-2(%rdi), %ecx
-	cmpl	$6, %edi
-	movl	$3, %eax
-	cmovbl	%ecx, %eax
-	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000069:                   # @func0000000000000069
 	leal	-258(%rdi), %ecx
 	xorl	%eax, %eax
 	cmpl	$264, %edi                      # imm = 0x108

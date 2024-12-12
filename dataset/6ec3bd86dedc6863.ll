@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/iffinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000ac(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub nsw i32 %0, %2
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationdatareader.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub nsw i32 %0, %2

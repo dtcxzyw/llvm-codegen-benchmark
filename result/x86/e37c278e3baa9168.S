@@ -3,17 +3,17 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rdi, %rsi
 	sete	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	shrq	$3, %rsi
 	orq	%rdi, %rsi
 	setne	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shrq	$3, %rsi
 	orq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrq	$3, %rsi
 	orq	%rdi, %rsi
 	cmpq	$8, %rsi

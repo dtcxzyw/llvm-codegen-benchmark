@@ -22,12 +22,12 @@
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000097(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000127(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = zext i8 %1 to i32
   %5 = sub nsw i32 %4, %3
-  %6 = icmp sge i32 %5, %0
+  %6 = icmp sle i32 %0, %5
   ret i1 %6
 }
 
@@ -35,24 +35,24 @@ entry:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = zext i8 %1 to i32
   %5 = sub nsw i32 %4, %3
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = zext i8 %1 to i32
   %5 = sub nsw i32 %4, %3
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 

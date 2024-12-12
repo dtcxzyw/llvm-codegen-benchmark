@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 64 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -61,12 +61,28 @@
 ; redis/optimized/t_zset.ll
 ; ruby/optimized/date_core.ll
 ; slurm/optimized/parse_time.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; yosys/optimized/ezminisat.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 86400
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = sext i32 %4 to i64
+  ret i64 %5
+}
+
+; 5 occurrences:
+; cpython/optimized/posixmodule.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; opencv/optimized/ts_func.cpp.ll
+; pocketpy/optimized/pocketpy.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 64
   %4 = select i1 %0, i32 %3, i32 %1
   %5 = sext i32 %4 to i64
   ret i64 %5
@@ -120,20 +136,6 @@ entry:
 define i64 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 48
-  %4 = select i1 %0, i32 %3, i32 %1
-  %5 = sext i32 %4 to i64
-  ret i64 %5
-}
-
-; 4 occurrences:
-; cpython/optimized/posixmodule.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
-; opencv/optimized/ts_func.cpp.ll
-; pocketpy/optimized/pocketpy.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 1
   %4 = select i1 %0, i32 %3, i32 %1
   %5 = sext i32 %4 to i64
   ret i64 %5

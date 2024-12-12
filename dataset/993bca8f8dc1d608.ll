@@ -1,4 +1,16 @@
 
+; 1 occurrences:
+; lvgl/optimized/lv_binfont_loader.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001c(i32 %0, i8 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = zext nneg i8 %1 to i32
+  %5 = shl nuw i32 %4, %3
+  %6 = or i32 %5, %0
+  ret i32 %6
+}
+
 ; 2 occurrences:
 ; draco/optimized/symbol_decoding.cc.ll
 ; linux/optimized/psargs.ll

@@ -12,7 +12,7 @@
 ; rocksdb/optimized/wide_column_serialization.cc.ll
 ; rocksdb/optimized/wide_columns_helper.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000641(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001881(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, 0
   %4 = icmp ult i64 %1, %2
@@ -26,7 +26,7 @@ entry:
 ; rocksdb/optimized/max.cc.ll
 ; rocksdb/optimized/wide_column_serialization.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a91(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000002921(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i32 %0, -1
   %4 = icmp uge i64 %1, %2
@@ -39,7 +39,7 @@ entry:
 ; fmt/optimized/core-test.cc.ll
 ; rocksdb/optimized/cuckoo_table_builder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a81(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000002901(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i32 %0, 0
   %4 = icmp ugt i64 %1, %2
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/core-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000651(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000018a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, 1
   %4 = icmp ule i64 %1, %2
@@ -60,14 +60,13 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/DFAJumpThreading.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
-; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000aa1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000002941(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i32 %0, 0
   %4 = icmp sgt i64 %1, %2
@@ -80,7 +79,7 @@ entry:
 ; llvm/optimized/LoopFlatten.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000671(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000018e1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, 1
   %4 = icmp sle i64 %1, %2
@@ -92,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a61(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000028c1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i32 %0, 0
   %4 = icmp slt i64 %1, %2
@@ -111,7 +110,7 @@ entry:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000661(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000018c1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, 0
   %4 = icmp slt i64 %1, %2
@@ -126,7 +125,7 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ab1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000002961(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i32 %0, -1
   %4 = icmp sge i64 %1, %2
@@ -136,9 +135,21 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000003141(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ne i32 %0, 0
+  %4 = icmp sgt i64 %1, %2
+  %5 = icmp eq i32 %0, 0
+  %6 = select i1 %5, i1 %4, i1 %3
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006b1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001961(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, 1
   %4 = icmp sge i64 %1, %2

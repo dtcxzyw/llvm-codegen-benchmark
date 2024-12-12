@@ -15,6 +15,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm1, %k1
 	vpsrlq	$8, %ymm2, %ymm1
-	vpxor	%ymm0, %ymm1, %ymm0
+	vpxor	%ymm1, %ymm0, %ymm0
 	vpxorq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq

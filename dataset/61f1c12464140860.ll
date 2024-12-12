@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 55 occurrences:
 ; assimp/optimized/MD3Loader.cpp.ll
 ; assimp/optimized/MDCLoader.cpp.ll
 ; cmake/optimized/xmlparse.c.ll
@@ -12,10 +12,8 @@
 ; libuv/optimized/linux.c.ll
 ; libwebp/optimized/get_disto.c.ll
 ; libwebp/optimized/ssim.c.ll
-; linux/optimized/csum-wrappers_64.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_sprite.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/swap.ll
 ; linux/optimized/uncore_snbep.ll
@@ -36,6 +34,7 @@
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/opencv-onnx.pb.cc.ll
+; opencv/optimized/p3p.cpp.ll
 ; openjdk/optimized/node.ll
 ; php/optimized/ir_emit.ll
 ; postgres/optimized/ginfast.ll
@@ -47,6 +46,15 @@
 ; ruby/optimized/bignum.ll
 ; wireshark/optimized/packet-acn.c.ll
 ; yosys/optimized/simplemap.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
@@ -56,7 +64,7 @@ entry:
   ret i64 %4
 }
 
-; 553 occurrences:
+; 547 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/inflate.c.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -77,6 +85,7 @@ entry:
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/fmu.cpp.ll
@@ -288,13 +297,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -418,9 +424,6 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -490,7 +493,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -630,7 +632,7 @@ entry:
   ret i64 %4
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/nghttp2_stream.c.ll
 ; cpython/optimized/longobject.ll
@@ -644,7 +646,6 @@ entry:
 ; linux/optimized/buffered_write.ll
 ; linux/optimized/idr.ll
 ; linux/optimized/mpage.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/page-io.ll
 ; linux/optimized/pagelist.ll
 ; linux/optimized/scatterlist.ll
@@ -735,13 +736,15 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {

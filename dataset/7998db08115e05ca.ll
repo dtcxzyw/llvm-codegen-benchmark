@@ -1,7 +1,8 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; libwebp/optimized/extras.c.ll
 ; linux/optimized/vlv_dsi_pll.ll
+; lvgl/optimized/lv_dropdown.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/sinusoidalpattern.cpp.ll
@@ -30,10 +31,12 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; gromacs/optimized/pme_error.cpp.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_slider.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; openspiel/optimized/checkers.cc.ll
@@ -45,19 +48,6 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = mul nsw i32 %0, %1
-  %5 = add nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 3 occurrences:
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
-; opencv/optimized/svm.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nsw i32 %1, %2
-  %4 = sdiv i32 %0, 4096
   %5 = add nsw i32 %4, %3
   ret i32 %5
 }

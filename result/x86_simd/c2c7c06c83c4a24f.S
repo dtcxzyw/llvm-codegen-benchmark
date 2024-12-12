@@ -21,7 +21,7 @@
 	.long	26                              # 0x1a
 .LCPI0_3:
 	.zero	4,223
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm0

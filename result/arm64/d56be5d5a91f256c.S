@@ -18,8 +18,8 @@ func0000000000000014:                   // @func0000000000000014
 	umulh	x9, x2, x8
 	mul	x10, x2, x8
 	madd	x8, x3, x8, x9
-	cmn	x10, x0
-	adc	x0, x8, x1
+	cmn	x0, x10
+	adc	x0, x1, x8
 	mov	x1, #0                          // =0x0
 	ret
                                         // -- End function

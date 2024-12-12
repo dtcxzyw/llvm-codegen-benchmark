@@ -55,8 +55,7 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
-; linux/optimized/dw.ll
+; 2 occurrences:
 ; llvm/optimized/AArch64MachObjectWriter.cpp.ll
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; Function Attrs: nounwind

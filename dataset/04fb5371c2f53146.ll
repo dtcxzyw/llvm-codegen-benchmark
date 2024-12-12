@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 81 occurrences:
 ; abc/optimized/fraClass.c.ll
 ; abc/optimized/fraInd.c.ll
 ; abc/optimized/inffast.c.ll
@@ -29,6 +29,7 @@
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/ParseStmtAsm.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
+; lvgl/optimized/lv_fs.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
@@ -154,7 +155,8 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; openjdk/optimized/mlib_ImageConv_16ext.ll
@@ -247,7 +249,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; c3c/optimized/parse_global.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind

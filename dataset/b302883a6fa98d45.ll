@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -103,7 +104,7 @@ define i32 @func0000000000000048(i32 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 32
   %3 = trunc i128 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

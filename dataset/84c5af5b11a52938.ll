@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 70 occurrences:
 ; abc/optimized/inflate.c.ll
 ; cmake/optimized/inflate.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -18,7 +18,6 @@
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/intel_atomic_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_context.ll
 ; linux/optimized/intel_crtc_state_dump.ll
 ; linux/optimized/intel_ddi.ll
@@ -62,7 +61,6 @@
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
-; qemu/optimized/hw_usb_imx-usb-phy.c.ll
 ; qemu/optimized/target_riscv_tcg_tcg-cpu.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; slurm/optimized/data_parser_v0_0_39_la-parsing.ll
@@ -77,7 +75,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -110,7 +108,7 @@ define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -123,7 +121,7 @@ define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

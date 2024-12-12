@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
@@ -11,12 +10,12 @@
 define ptr @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 21
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
 
-; 150 occurrences:
+; 143 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -50,7 +49,6 @@ entry:
 ; linux/optimized/gro.ll
 ; linux/optimized/gss_rpc_xdr.ll
 ; linux/optimized/hugetlb_vmemmap.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_gem_object.ll
@@ -71,10 +69,8 @@ entry:
 ; linux/optimized/journal.ll
 ; linux/optimized/kbuf.ll
 ; linux/optimized/kexec_core.ll
-; linux/optimized/kvmclock.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/mapping.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/md-bitmap.ll
@@ -90,7 +86,6 @@ entry:
 ; linux/optimized/nfs4namespace.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/nfs4xdr.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/osl.ll
 ; linux/optimized/page-io.ll
 ; linux/optimized/page_alloc.ll
@@ -107,9 +102,7 @@ entry:
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/scatterwalk.ll
 ; linux/optimized/scsi_lib.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/sd.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/selinuxfs.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/sg.ll
@@ -122,7 +115,6 @@ entry:
 ; linux/optimized/socklib.ll
 ; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/stackdepot.ll
-; linux/optimized/status.ll
 ; linux/optimized/svc_xprt.ll
 ; linux/optimized/svcauth_gss.ll
 ; linux/optimized/svcsock.ll
@@ -171,7 +163,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 12
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
@@ -182,7 +174,7 @@ entry:
 define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 12
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
@@ -236,7 +228,7 @@ entry:
 define ptr @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 12
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
@@ -248,7 +240,7 @@ entry:
 define ptr @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

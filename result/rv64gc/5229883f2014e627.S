@@ -58,6 +58,14 @@ func0000000000000008:                   # @func0000000000000008
 	and	a1, a1, a3
 	sltu	a0, a0, a1
 	ret
+func0000000000000018:                   # @func0000000000000018
+	lui	a3, 16
+	add	a1, a1, a2
+	addiw	a3, a3, -1
+	and	a0, a0, a3
+	and	a1, a1, a3
+	sltu	a0, a0, a1
+	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a3, 16
 	add	a1, a1, a2
@@ -65,6 +73,24 @@ func0000000000000004:                   # @func0000000000000004
 	and	a0, a0, a3
 	and	a1, a1, a3
 	sltu	a0, a1, a0
+	ret
+func0000000000000061:                   # @func0000000000000061
+	lui	a3, 16
+	add	a1, a1, a2
+	addiw	a3, a3, -1
+	and	a0, a0, a3
+	and	a1, a1, a3
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000045:                   # @func0000000000000045
+	lui	a3, 16
+	add	a1, a1, a2
+	addiw	a3, a3, -1
+	and	a0, a0, a3
+	and	a1, a1, a3
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
 	ret
 func0000000000000009:                   # @func0000000000000009
 	lui	a3, 16
@@ -75,16 +101,7 @@ func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000031:                   # @func0000000000000031
-	lui	a3, 16
-	add	a1, a1, a2
-	addiw	a3, a3, -1
-	and	a0, a0, a3
-	and	a1, a1, a3
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	lui	a3, 16
 	add	a1, a1, a2
 	addiw	a3, a3, -1
@@ -92,20 +109,11 @@ func0000000000000034:                   # @func0000000000000034
 	and	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	lui	a3, 16
 	add	a1, a1, a2
 	addiw	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	sltu	a0, a0, a1
-	ret
-func0000000000000025:                   # @func0000000000000025
-	lui	a3, 16
-	add	a1, a1, a2
-	addiw	a3, a3, -1
-	and	a0, a0, a3
-	and	a1, a1, a3
-	sltu	a0, a0, a1
-	xori	a0, a0, 1
 	ret

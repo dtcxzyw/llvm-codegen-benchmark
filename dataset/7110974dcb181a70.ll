@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; clamav/optimized/pe_icons.c.ll
 ; minetest/optimized/touchscreengui.cpp.ll
 ; opencv/optimized/approx.cpp.ll

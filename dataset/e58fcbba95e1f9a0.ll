@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; git/optimized/dir.ll
 ; git/optimized/strbuf.ll
 ; git/optimized/xutils.ll
@@ -8,12 +8,11 @@
 ; luajit/optimized/lib_package.ll
 ; luajit/optimized/lib_package_dyn.ll
 ; php/optimized/glob_wrapper.ll
-; redis/optimized/loadlib.ll
 ; yosys/optimized/techmap.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000084(i64 %0, ptr %1, ptr %2) #0 {
+define i64 @func0000000000000184(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp eq ptr %2, null
   %5 = select i1 %4, ptr %1, ptr %3
   %6 = ptrtoint ptr %5 to i64

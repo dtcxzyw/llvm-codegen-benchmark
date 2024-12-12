@@ -1,4 +1,4 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 31
@@ -8,14 +8,14 @@ func000000000000001c:                   # @func000000000000001c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a2, a2, 512
 	xor	a0, a0, a1
 	sext.w	a0, a0
 	or	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a1, a1
 	sext.w	a0, a0
 	not	a2, a2
@@ -23,14 +23,14 @@ func0000000000000061:                   # @func0000000000000061
 	slt	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	sext.w	a1, a1
 	sext.w	a0, a0
 	srli	a2, a2, 9
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func00000000000000bc:                   # @func00000000000000bc
+func000000000000016c:                   # @func000000000000016c
 	sext.w	a1, a1
 	sext.w	a0, a0
 	li	a3, -7
@@ -43,30 +43,39 @@ func00000000000000bc:                   # @func00000000000000bc
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	sext.w	a1, a1
 	sext.w	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	and	a0, a0, a2
 	ret
-func000000000000005c:                   # @func000000000000005c
+func0000000000000161:                   # @func0000000000000161
+	sext.w	a1, a1
+	sext.w	a0, a0
+	sext.w	a2, a2
+	addi	a2, a2, -1
+	slt	a0, a0, a1
+	seqz	a1, a2
+	xori	a0, a0, 1
+	and	a0, a0, a1
+	ret
+func00000000000000ac:                   # @func00000000000000ac
 	sext.w	a0, a0
 	sext.w	a1, a1
-	andi	a2, a2, 7
-	snez	a2, a2
+	srli	a2, a2, 32
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	and	a0, a0, a2
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	sext.w	a0, a0
 	sext.w	a1, a1
 	bexti	a2, a2, 61
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 2
@@ -75,7 +84,7 @@ func0000000000000091:                   # @func0000000000000091
 	xori	a0, a0, 1
 	and	a0, a0, a2
 	ret
-func000000000000009c:                   # @func000000000000009c
+func000000000000012c:                   # @func000000000000012c
 	sext.w	a1, a1
 	sext.w	a0, a0
 	srli	a2, a2, 32
@@ -83,7 +92,7 @@ func000000000000009c:                   # @func000000000000009c
 	xori	a0, a0, 1
 	and	a0, a0, a2
 	ret
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a1, a1
 	sext.w	a0, a0
 	lui	a3, 1008
@@ -93,7 +102,7 @@ func000000000000006c:                   # @func000000000000006c
 	slt	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 63
@@ -101,7 +110,7 @@ func0000000000000014:                   # @func0000000000000014
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func00000000000000c9:                   # @func00000000000000c9
+func0000000000000189:                   # @func0000000000000189
 	sext.w	a1, a1
 	sext.w	a0, a0
 	bexti	a2, a2, 32

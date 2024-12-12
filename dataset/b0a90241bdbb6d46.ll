@@ -16,9 +16,8 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; Function Attrs: nounwind
@@ -71,9 +70,8 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/redistribute.cpp.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/xstate.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll

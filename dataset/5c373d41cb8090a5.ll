@@ -1,20 +1,18 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; git/optimized/object-name.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000401(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %6, %0
+  %7 = icmp eq i32 %0, %6
   ret i1 %7
 }
 
-; 10 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
+; 9 occurrences:
 ; luau/optimized/lutf8lib.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; protobuf/optimized/coded_stream.cc.ll
@@ -25,27 +23,29 @@ entry:
 ; stb/optimized/stb_sprintf.c.ll
 ; yosys/optimized/ast.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020a(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000060a(i32 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = icmp slt i32 %6, %0
+  %7 = icmp sgt i32 %0, %6
   ret i1 %7
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000604(i32 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp ult i32 %0, %6
   ret i1 %7
 }
 
@@ -63,7 +63,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp ult i32 %0, %6
   ret i1 %7
 }
 
@@ -76,7 +76,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %6, %0
+  %7 = icmp ugt i32 %0, %6
   ret i1 %7
 }
 
@@ -89,21 +89,59 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = icmp slt i32 %6, %0
+  %7 = icmp sgt i32 %0, %6
   ret i1 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; cmake/optimized/frm_driver.c.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000408(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %6, %0
+  %7 = icmp ugt i32 %0, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000608(i32 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 10
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = trunc i64 %5 to i32
+  %7 = icmp ugt i32 %0, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000601(i32 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = trunc i64 %5 to i32
+  %7 = icmp eq i32 %0, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; eastl/optimized/EASprintfCore.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000040a(i32 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = trunc i64 %5 to i32
+  %7 = icmp sgt i32 %0, %6
   ret i1 %7
 }
 

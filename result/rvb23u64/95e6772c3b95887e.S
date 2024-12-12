@@ -1,14 +1,11 @@
 func0000000000000001:                   # @func0000000000000001
-	subw	a0, a0, a1
-	addiw	a0, a0, -2
+	sub	a0, a0, a1
+	li	a1, 1
+	slli	a1, a1, 35
+	addi	a1, a1, -8
+	add	a0, a0, a1
+	srli	a0, a0, 3
+	slli.uw	a0, a0, 3
+	addi	a0, a0, -24
 	seqz	a0, a0
-	ret
-func0000000000000008:                   # @func0000000000000008
-	subw	a0, a0, a1
-	lui	a1, 1
-	addi	a0, a0, 15
-	srliw	a0, a0, 4
-	slli	a0, a0, 4
-	addiw	a1, a1, -16
-	sltu	a0, a1, a0
 	ret

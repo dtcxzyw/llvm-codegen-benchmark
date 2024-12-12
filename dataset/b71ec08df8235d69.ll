@@ -1,5 +1,5 @@
 
-; 176 occurrences:
+; 187 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -176,6 +176,17 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/2gu8aea2dmgqxbormk5tspsrx.ll
+; zed-rs/optimized/2jcakdf65g6ofzlv4sxvfz01e.ll
+; zed-rs/optimized/39agu11sr34f1pihhhnx3cpe2.ll
+; zed-rs/optimized/4fjzcqwe72s61qqj6jfld7d0e.ll
+; zed-rs/optimized/5lzup9fu4oickcrtt9hcrukzv.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/9by7xbrgipxjyx0u6qobo1s7j.ll
+; zed-rs/optimized/9zapxybzyqo7as5l1oow5wvsl.ll
+; zed-rs/optimized/cn5tr75hwj0e1t163yn1kh0fu.ll
+; zed-rs/optimized/er5bx212oa06ay0po6fyxrl51.ll
+; zed-rs/optimized/f2on42re1vwqfvihm5s1p3ljw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -185,7 +196,7 @@ entry:
   ret i64 %5
 }
 
-; 86 occurrences:
+; 84 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
@@ -209,8 +220,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

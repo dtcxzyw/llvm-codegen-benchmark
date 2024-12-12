@@ -44,7 +44,7 @@ func0000000000000020:                   # @func0000000000000020
 	bltu	a2, a3, .LBB5_2
 	mv	a0, a1
 .LBB5_2:                                # %entry
-	addiw	a0, a0, -1
+	addiw	a0, a0, 1
 	ret
 func0000000000000029:                   # @func0000000000000029
 	sext.w	a3, a1

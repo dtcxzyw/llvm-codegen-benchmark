@@ -13,15 +13,15 @@ func0000000000000001:                   # @func0000000000000001
 	shrl	$3, %edi
 	leal	-1(%rdi), %eax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	subl	%esi, %edi
+	shrl	$6, %edi
+	leal	1(%rdi), %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	subl	%esi, %edi
 	shrl	%edi
 	leal	-1(%rdi), %eax
-	retq
-func000000000000000b:                   # @func000000000000000b
-	subl	%esi, %edi
-	shrl	%edi
-	leal	2(%rdi), %eax
 	retq
 func0000000000000013:                   # @func0000000000000013
 	subl	%esi, %edi

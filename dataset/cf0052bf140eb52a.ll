@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; lief/optimized/nist_kw.c.ll
 ; openexr/optimized/attributes.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; rocksdb/optimized/arena.cc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i1 %1, i64 %2) #0 {
 entry:

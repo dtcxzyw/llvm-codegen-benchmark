@@ -1,8 +1,10 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; llvm/optimized/SanitizerBinaryMetadata.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll

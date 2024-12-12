@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_img.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
@@ -11,7 +12,7 @@ entry:
   ret i32 %5
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
@@ -37,7 +38,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll

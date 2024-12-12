@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 21 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
@@ -12,6 +12,14 @@
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/rtp_audio_routing_filter.cpp.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {

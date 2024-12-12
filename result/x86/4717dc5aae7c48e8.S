@@ -1,6 +1,6 @@
 func0000000000000005:                   # @func0000000000000005
 	movslq	%edi, %rax
-	leaq	8(,%rax,8), %rax
+	leaq	-8(,%rax,8), %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	incl	%edi

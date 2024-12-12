@@ -49,9 +49,9 @@ entry:
 ; libwebp/optimized/filter_enc.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 4
+  %2 = icmp samesign ugt i32 %1, 4
   %3 = select i1 %2, i32 2, i32 1
   %4 = lshr i32 %0, %3
   ret i32 %4

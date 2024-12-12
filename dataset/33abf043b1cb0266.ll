@@ -1,10 +1,15 @@
 
-; 17 occurrences:
+; 22 occurrences:
 ; cmake/optimized/cmStateDirectory.cxx.ll
 ; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/Comment.cpp.ll
+; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/DeclarationFragments.cpp.ll
 ; llvm/optimized/SemaCXXScopeSpec.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll

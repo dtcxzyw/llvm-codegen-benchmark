@@ -5,7 +5,7 @@
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000cc3(i32 %0, i32 %1) #0 {
+define i32 @func00000000000018c3(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
@@ -25,7 +25,7 @@ entry:
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; yosys/optimized/select.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000aa3(i32 %0, i32 %1) #0 {
+define i32 @func00000000000014a3(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i32
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-openvpn.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000413(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000813(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 16777216
   %3 = zext i1 %2 to i32

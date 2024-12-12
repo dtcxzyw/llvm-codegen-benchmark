@@ -26,6 +26,10 @@ func0000000000000030:                   # @func0000000000000030
 	addq	%rsi, %rdi
 	shrxq	%rdx, %rdi, %rax
 	retq
+func000000000000003a:                   # @func000000000000003a
+	addq	%rsi, %rdi
+	shrxq	%rdx, %rdi, %rax
+	retq
 func0000000000000038:                   # @func0000000000000038
 	addq	%rsi, %rdi
 	shrxq	%rdx, %rdi, %rax

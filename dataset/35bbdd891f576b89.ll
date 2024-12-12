@@ -30,7 +30,7 @@ entry:
 ; redis/optimized/malloc_io.ll
 ; redis/optimized/malloc_io.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = xor i1 %3, true
@@ -46,7 +46,7 @@ entry:
 ; redis/optimized/malloc_io.ll
 ; redis/optimized/malloc_io.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = xor i1 %3, true

@@ -1,8 +1,8 @@
 
 ; 9 occurrences:
 ; freetype/optimized/truetype.c.ll
-; libquic/optimized/random.c.ll
 ; linux/optimized/hid-lg4ff.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; node/optimized/libnode.crypto_aes.ll
 ; openssl/optimized/libcrypto-lib-bn_rand.ll
 ; openssl/optimized/libcrypto-shlib-bn_rand.ll
@@ -38,7 +38,7 @@ entry:
   ret i8 %3
 }
 
-; 31 occurrences:
+; 29 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/funcobject.ll
@@ -58,8 +58,6 @@ entry:
 ; linux/optimized/fsopen.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/clog.ll
 ; postgres/optimized/varbit.ll

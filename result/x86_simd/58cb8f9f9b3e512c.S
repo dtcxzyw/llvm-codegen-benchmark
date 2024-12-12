@@ -33,7 +33,7 @@
 	.byte	128                             # 0x80
 func0000000000000000:                   # @func0000000000000000
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1    # ymm1 = zero,ymm1[0,1],zero,zero,ymm1[4,5],zero,zero,ymm1[8,9],zero,zero,ymm1[12,13],zero,zero,ymm1[16,17],zero,zero,ymm1[20,21],zero,zero,ymm1[24,25],zero,zero,ymm1[28,29],zero
-	vpxor	%ymm0, %ymm1, %ymm0
+	vpxor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	196608                          # 0x30000

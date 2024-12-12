@@ -29,37 +29,38 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 .LCPI4_0:
-	.long	4                               # 0x4
-func0000000000000035:                   # @func0000000000000035
+	.long	4294967293                      # 0xfffffffd
+func0000000000000014:                   # @func0000000000000014
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
 	vpaddd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 .LCPI5_0:
-	.long	5                               # 0x5
-func0000000000000018:                   # @func0000000000000018
-	vpaddd	%xmm2, %xmm1, %xmm1
+	.long	4                               # 0x4
+func0000000000000035:                   # @func0000000000000035
 	vpaddd	%xmm1, %xmm0, %xmm0
+	vpaddd	%xmm0, %xmm2, %xmm0
 	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 .LCPI6_0:
+	.long	5                               # 0x5
+func0000000000000018:                   # @func0000000000000018
+	vpaddd	%xmm2, %xmm1, %xmm1
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
+	vpmovsxdq	%xmm0, %ymm0
+	retq
+.LCPI7_0:
 	.long	8                               # 0x8
 func0000000000000011:                   # @func0000000000000011
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm0, %xmm2, %xmm0
-	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 func000000000000001c:                   # @func000000000000001c
-	vpaddd	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovsxdq	%xmm0, %ymm0
-	retq
-func0000000000000014:                   # @func0000000000000014
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -87,5 +88,12 @@ func0000000000000010:                   # @func0000000000000010
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpaddd	.LCPI11_0(%rip){1to4}, %xmm0, %xmm0
+	vpmovsxdq	%xmm0, %ymm0
+	retq
+func0000000000000020:                   # @func0000000000000020
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpaddd	%xmm0, %xmm2, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq

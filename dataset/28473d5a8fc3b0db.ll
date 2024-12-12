@@ -1,6 +1,5 @@
 
-; 23 occurrences:
-; git/optimized/apply.ll
+; 22 occurrences:
 ; mitsuba3/optimized/appender.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/filesystem.cpp.ll
@@ -24,11 +23,24 @@
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
+define i64 @func0000000000000061(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
-  %5 = getelementptr nusw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %6 = select i1 %4, ptr %5, ptr %0
+  %7 = ptrtoint ptr %6 to i64
+  ret i64 %7
+}
+
+; 1 occurrences:
+; git/optimized/apply.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 2
+  %4 = icmp eq i8 %3, 0
+  %5 = getelementptr nusw i8, ptr %1, i64 -8
   %6 = select i1 %4, ptr %5, ptr %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7

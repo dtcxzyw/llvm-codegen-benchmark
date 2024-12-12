@@ -1,5 +1,5 @@
 
-; 398 occurrences:
+; 493 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcExtract.c.ll
@@ -85,15 +85,109 @@
 ; abc/optimized/sswPairs.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/sswUnique.c.ll
 ; abc/optimized/wlcGraft.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/randen_slow.cc.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/framework.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; cmake/optimized/crc64_fast.c.ll
-; cmake/optimized/x86.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; cpython/optimized/typeobject.ll
 ; darktable/optimized/masks.c.ll
@@ -246,6 +340,7 @@
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
@@ -316,7 +411,6 @@
 ; postgres/optimized/nodeMemoize.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
-; qemu/optimized/hw_usb_imx-usb-phy.c.ll
 ; qemu/optimized/target_riscv_crypto_helper.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -397,12 +491,13 @@
 ; yosys/optimized/viz.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 
@@ -461,7 +556,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 
@@ -478,7 +573,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 
@@ -529,6 +624,7 @@ entry:
 ; abc/optimized/pdrTsim2.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdCut.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscClass.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abseil-cpp/optimized/city.cc.ll
@@ -549,7 +645,6 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
-; stockfish/optimized/half_ka_v2_hm.ll
 ; stockfish/optimized/tbprobe.ll
 ; yosys/optimized/ffmerge.ll
 ; yosys/optimized/gatemate_foldinv.ll
@@ -560,7 +655,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 

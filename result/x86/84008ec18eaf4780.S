@@ -9,11 +9,11 @@ func0000000000000025:                   # @func0000000000000025
 	movslq	%edi, %rax
 	retq
 func0000000000000020:                   # @func0000000000000020
-	leal	7(%rdx), %eax
-	addl	$14, %edx
+	leal	-1(%rdx), %eax
+	addl	$2, %edx
 	testl	%eax, %eax
 	cmovnsl	%eax, %edx
-	sarl	$3, %edx
+	sarl	$2, %edx
 	addl	%esi, %edi
 	addl	%edx, %edi
 	movslq	%edi, %rax

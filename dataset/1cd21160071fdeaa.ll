@@ -1,20 +1,18 @@
 
-; 24 occurrences:
+; 22 occurrences:
 ; abc/optimized/bdcDec.c.ll
+; abc/optimized/dauDsd.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/ivyMulti.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/simUtils.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
-; darktable/optimized/AbstractLJpegDecoder.cpp.ll
-; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
-; darktable/optimized/PentaxDecompressor.cpp.ll
-; darktable/optimized/VC5Decompressor.cpp.ll
 ; hyperscan/optimized/limex_native.c.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/intel_display.ll
+; linux/optimized/libahci.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
@@ -33,9 +31,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/covMinSop.c.ll
 ; darktable/optimized/KodakDecompressor.cpp.ll
+; linux/optimized/disk-events.ll
 ; linux/optimized/dquot.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind

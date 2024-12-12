@@ -13,7 +13,7 @@ func0000000000000008:                   # @func0000000000000008
 	vsrl.vi	v12, v12, 12
 	lui	a0, 32
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	li	a0, 16
 	vor.vx	v8, v8, a0

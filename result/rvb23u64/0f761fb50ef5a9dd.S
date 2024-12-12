@@ -1,4 +1,4 @@
-func00000000000008aa:                   # @func00000000000008aa
+func000000000000214a:                   # @func000000000000214a
 	sext.w	a0, a0
 	sext.w	a2, a2
 	not	a1, a1
@@ -6,7 +6,7 @@ func00000000000008aa:                   # @func00000000000008aa
 	bexti	a1, a1, 31
 	and	a0, a0, a1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	sext.w	a0, a0
 	sext.w	a2, a2
 	not	a1, a1

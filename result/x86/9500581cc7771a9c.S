@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
-	movl	%edi, %eax
-	imull	%esi, %eax
-	andl	$1, %eax
+	imull	%esi, %edi
+	andl	$-2, %edi
+	movslq	%edi, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	imull	%esi, %edi

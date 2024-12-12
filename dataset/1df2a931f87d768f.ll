@@ -1,8 +1,28 @@
 
-; 186 occurrences:
+; 205 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/cmd.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cpython/optimized/_heapqmodule.ll
@@ -44,13 +64,11 @@
 ; folly/optimized/json_patch.cpp.ll
 ; git/optimized/remote.ll
 ; git/optimized/strbuf.ll
-; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libquic/optimized/dsa.c.ll
-; libquic/optimized/ecdsa_asn1.c.ll
 ; libquic/optimized/quic_connection.cc.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256_nosse.ll
@@ -60,7 +78,6 @@
 ; linux/optimized/seq_buf.ll
 ; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TemplateBase.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
@@ -87,7 +104,6 @@
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; nori/optimized/independent.cpp.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
-; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/jmemmgr.ll
@@ -134,8 +150,6 @@
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f64.ll
 ; spike/optimized/f64_sqrt.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
@@ -186,16 +200,20 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
-; 64 occurrences:
-; abc/optimized/giaUtil.c.ll
+; 63 occurrences:
 ; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; clamav/optimized/pdf.c.ll
@@ -212,13 +230,11 @@ entry:
 ; lief/optimized/ssl_tls12_client.c.ll
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/virtio_ring.ll
-; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; memcached/optimized/testapp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/arithm.dispatch.cpp.ll
-; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; opencv/optimized/triangulate.cpp.ll
 ; openjdk/optimized/stringTable.ll
@@ -258,6 +274,8 @@ entry:
 ; velox/optimized/TimeZoneMap.cpp.ll
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/Utf.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
@@ -267,7 +285,7 @@ entry:
   ret i64 %3
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -293,18 +311,18 @@ entry:
 ; pbrt-v4/optimized/pspec.cpp.ll
 ; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
-; spike/optimized/f16_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; cpython/optimized/mpdecimal.ll
+; cpython/optimized/multibytecodec.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; linux/optimized/quirks.ll
 ; opencc/optimized/bit-vector.cc.ll
@@ -333,11 +351,11 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; folly/optimized/DynamicParser.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
@@ -346,6 +364,7 @@ entry:
 ; folly/optimized/dynamic.cpp.ll
 ; folly/optimized/json.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
+; llvm/optimized/CoverageMapping.cpp.ll
 ; proxygen/optimized/PersistentQuicPskCache.cpp.ll
 ; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
 ; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
@@ -365,7 +384,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 7
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
@@ -386,7 +405,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   ret i64 %3
 }
 

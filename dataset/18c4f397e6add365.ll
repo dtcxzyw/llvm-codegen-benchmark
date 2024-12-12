@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; jq/optimized/regcomp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
@@ -15,6 +15,7 @@
 ; z3/optimized/nlqsat.cpp.ll
 ; z3/optimized/qsat.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
@@ -25,30 +26,7 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
-; abc/optimized/ac_wrapper.cpp.ll
-; abc/optimized/cnf_reader.c.ll
-; abc/optimized/ifMap.c.ll
-; abc/optimized/solver.c.ll
-; abc/optimized/solver_api.c.ll
-; llvm/optimized/MetadataLoader.cpp.ll
-; rocksdb/optimized/lock_request.cc.ll
-; rocksdb/optimized/locktree.cc.ll
-; rocksdb/optimized/manager.cc.ll
-; rocksdb/optimized/txnid_set.cc.ll
-; rocksdb/optimized/wfg.cc.ll
-; wolfssl/optimized/sp_int.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 3
-  %3 = select i1 %2, i32 4, i32 %0
-  %4 = zext i32 %3 to i64
-  %5 = shl nuw nsw i64 %4, 3
-  ret i64 %5
-}
-
-; 32 occurrences:
+; 29 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -56,7 +34,6 @@ entry:
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
 ; bullet3/optimized/btSoftBody.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; icu/optimized/dtfmtsym.ll
 ; icu/optimized/loclikelysubtags.ll
@@ -71,8 +48,6 @@ entry:
 ; icu/optimized/units_data.ll
 ; icu/optimized/units_router.ll
 ; linux/optimized/dm-table.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
 ; luau/optimized/CodeGenX64.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; openjdk/optimized/path_util.ll
@@ -114,7 +89,7 @@ entry:
   ret i64 %5
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -152,7 +127,6 @@ entry:
 ; icu/optimized/msgfmt.ll
 ; libevent/optimized/event.c.ll
 ; libevent/optimized/poll.c.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; opencv/optimized/zmaxheap.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000037(i32 %0, i32 %1) #0 {
@@ -164,20 +138,11 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
+; 4 occurrences:
 ; abc/optimized/abc.c.ll
-; abc/optimized/abcDec.c.ll
-; abc/optimized/abcDfs.c.ll
-; abc/optimized/abcRpo.c.ll
-; abc/optimized/acecPo.c.ll
-; abc/optimized/cnfUtil.c.ll
-; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifMap.c.ll
-; abc/optimized/lpkAbcUtil.c.ll
 ; abc/optimized/saigTrans.c.ll
 ; abc/optimized/timMan.c.ll
-; abc/optimized/wlcSim.c.ll
-; icu/optimized/msgfmt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000027(i32 %0, i32 %1) #0 {
 entry:
@@ -203,6 +168,52 @@ entry:
   %3 = select i1 %2, i32 1, i32 %0
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 3
+  ret i64 %5
+}
+
+; 5 occurrences:
+; abc/optimized/ac_wrapper.cpp.ll
+; abc/optimized/cnf_reader.c.ll
+; abc/optimized/solver.c.ll
+; abc/optimized/solver_api.c.ll
+; wolfssl/optimized/sp_int.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 15
+  %3 = select i1 %2, i32 16, i32 %0
+  %4 = zext i32 %3 to i64
+  %5 = shl nuw nsw i64 %4, 2
+  ret i64 %5
+}
+
+; 7 occurrences:
+; abc/optimized/abcDec.c.ll
+; abc/optimized/abcDfs.c.ll
+; abc/optimized/abcRpo.c.ll
+; abc/optimized/acecPo.c.ll
+; abc/optimized/cnfUtil.c.ll
+; abc/optimized/lpkAbcUtil.c.ll
+; icu/optimized/msgfmt.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000a7(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 7
+  %3 = select i1 %2, i32 1, i32 %0
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl nuw nsw i64 %4, 3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/MetadataLoader.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000a3(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 16
+  %3 = select i1 %2, i32 64, i32 %0
+  %4 = zext i32 %3 to i64
+  %5 = shl nuw nsw i64 %4, 2
   ret i64 %5
 }
 

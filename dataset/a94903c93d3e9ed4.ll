@@ -1,5 +1,7 @@
 
-; 41 occurrences:
+; 43 occurrences:
+; eastl/optimized/TestFixedTupleVector.cpp.ll
+; eastl/optimized/TestTupleVector.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DynamicParser.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
@@ -78,9 +80,9 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 128
+  %3 = icmp samesign ult i64 %2, 128
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = add nsw i64 %4, 32
   %6 = and i64 %5, -64
@@ -90,9 +92,9 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000053(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 40
+  %3 = icmp samesign ult i64 %2, 40
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = add nuw nsw i64 %4, 32
   %6 = and i64 %5, 9223372036854775744

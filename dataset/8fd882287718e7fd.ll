@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; qemu/optimized/dump_dump.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
@@ -60,7 +61,7 @@ define i64 @func0000000000000023(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 255
   %3 = select i1 %2, i64 10, i64 9
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 

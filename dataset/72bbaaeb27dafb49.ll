@@ -3,10 +3,10 @@
 ; libpng/optimized/pngread.c.ll
 ; openjdk/optimized/pngread.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 8, %1
-  %3 = icmp ugt i32 %0, 2
+  %3 = icmp samesign ugt i32 %0, 2
   %4 = select i1 %3, i32 %2, i32 8
   ret i32 %4
 }

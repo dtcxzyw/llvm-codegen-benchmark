@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 29 occurrences:
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/mpmDsd.c.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -19,7 +19,6 @@
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; opencv/optimized/demhist.cpp.ll
 ; opencv/optimized/gamma_values.cpp.ll
 ; opencv/optimized/gaze_estimation.cpp.ll
@@ -30,8 +29,6 @@
 ; openjdk/optimized/zHeuristics.ll
 ; proj/optimized/networkfilemanager.cpp.ll
 ; quantlib/optimized/integralhestonvarianceoptionengine.ll
-; wireshark/optimized/packet-ieee1609dot2.c.ll
-; wireshark/optimized/packet-its.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i32 %0) #0 {
 entry:

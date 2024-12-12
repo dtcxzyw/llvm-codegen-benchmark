@@ -29,10 +29,9 @@ entry:
   ret i32 %2
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; lief/optimized/gcm.c.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/intel_hdcp_gsc_message.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/lstm_x86_avxvnni.cpp.ll

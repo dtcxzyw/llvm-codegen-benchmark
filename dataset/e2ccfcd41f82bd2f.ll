@@ -6,7 +6,7 @@
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -15,11 +15,12 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/area.ll
 ; gromacs/optimized/tng_compress.c.ll
 ; openjdk/optimized/lowMemoryDetector.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -32,7 +33,7 @@ entry:
 ; jsonnet/optimized/formatter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 10
   %4 = select i1 %0, i1 %3, i1 false
@@ -46,7 +47,7 @@ entry:
 ; redis/optimized/server.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -58,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -78,7 +79,7 @@ entry:
 ; yosys/optimized/dfflegalize.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -91,7 +92,7 @@ entry:
 ; icu/optimized/indiancal.ll
 ; llvm/optimized/GlobalMerge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -107,7 +108,7 @@ entry:
 ; wireshark/optimized/packet-smb2.c.ll
 ; z3/optimized/mpbq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 7
   %4 = select i1 %0, i1 %3, i1 false
@@ -121,7 +122,7 @@ entry:
 ; llvm/optimized/ToolChain.cpp.ll
 ; protobuf/optimized/extension_set_heavy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %0, i1 %3, i1 false

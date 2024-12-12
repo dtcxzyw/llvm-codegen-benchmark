@@ -1,10 +1,10 @@
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	movl	$232, %eax
 	btq	%rsi, %rax
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	movl	$232, %eax
 	btq	%rsi, %rax
 	setae	%al

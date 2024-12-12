@@ -14,7 +14,7 @@ entry:
   ret i64 %6
 }
 
-; 23 occurrences:
+; 21 occurrences:
 ; draco/optimized/mesh_cleanup.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; flac/optimized/replaygain.c.ll
@@ -27,10 +27,8 @@ entry:
 ; hermes/optimized/Path.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
 ; libwebp/optimized/vp8l_enc.c.ll
-; libzmq/optimized/ipc_address.cpp.ll
 ; libzmq/optimized/radix_tree.cpp.ll
 ; linux/optimized/dm-ioctl.ll
-; linux/optimized/wep.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll

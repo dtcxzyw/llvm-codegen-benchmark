@@ -1,5 +1,7 @@
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -16,7 +18,7 @@ define i8 @func0000000000000030(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = zext i1 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -27,7 +29,7 @@ define i8 @func000000000000001d(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %1, %2
   %4 = zext i1 %3 to i8
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 
@@ -39,7 +41,7 @@ define i8 @func0000000000000018(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = zext i1 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -50,7 +52,7 @@ define i8 @func0000000000000025(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
   %4 = zext i1 %3 to i8
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 
@@ -62,7 +64,7 @@ define i8 @func0000000000000005(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i8
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 
@@ -75,7 +77,7 @@ define i8 @func000000000000002c(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = zext i1 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -86,7 +88,7 @@ define i8 @func0000000000000010(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = zext i1 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -97,7 +99,7 @@ define i8 @func0000000000000024(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
   %4 = zext i1 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -109,7 +111,7 @@ define i8 @func0000000000000004(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

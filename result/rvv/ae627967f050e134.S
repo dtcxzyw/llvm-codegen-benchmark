@@ -52,17 +52,3 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
 	ret
-.LCPI5_0:
-	.quad	-4835703278458516699            # 0xbce4217d2849cb25
-func0000000000000001:                   # @func0000000000000001
-	lui	a0, %hi(.LCPI5_0)
-	ld	a0, %lo(.LCPI5_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v12
-	vmulh.vx	v10, v10, a0
-	li	a0, 63
-	vsrl.vx	v12, v10, a0
-	vsra.vi	v10, v10, 18
-	vadd.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
-	ret

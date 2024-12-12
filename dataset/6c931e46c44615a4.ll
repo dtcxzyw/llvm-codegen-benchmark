@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; linux/optimized/filter.ll
+; opencv/optimized/tree.cpp.ll
 ; postgres/optimized/initdb.ll
 ; wireshark/optimized/packet-smtp.c.ll
 ; Function Attrs: nounwind
@@ -15,11 +16,9 @@ entry:
   ret ptr %7
 }
 
-; 9 occurrences:
-; abc/optimized/verStream.c.ll
+; 7 occurrences:
 ; darktable/optimized/collect.c.ll
 ; darktable/optimized/filtering.c.ll
-; icu/optimized/pkgitems.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll

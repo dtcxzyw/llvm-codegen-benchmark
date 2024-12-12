@@ -1,14 +1,13 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/libata-sata.ll
-; linux/optimized/printk.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 16
   %3 = icmp eq i8 %2, 0

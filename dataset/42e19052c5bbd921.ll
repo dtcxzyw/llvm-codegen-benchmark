@@ -10,7 +10,7 @@
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, 2
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = xor i64 %4, %1
   %6 = icmp eq i64 %5, %0
   ret i1 %6
@@ -19,10 +19,10 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, 2
-  %4 = add nuw nsw i64 %3, %2
+  %4 = add nuw nsw i64 %2, %3
   %5 = xor i64 %4, %1
   %6 = icmp eq i64 %5, %0
   ret i1 %6

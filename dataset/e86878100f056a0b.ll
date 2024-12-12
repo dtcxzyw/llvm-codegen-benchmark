@@ -1,6 +1,7 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
+; boost/optimized/pattern.ll
 ; clamav/optimized/jpeg.c.ll
 ; hdf5/optimized/H5Dvirtual.c.ll
 ; libzmq/optimized/ws_encoder.cpp.ll
@@ -27,7 +28,7 @@
 define i64 @func0000000000000010(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, -1
   ret i64 %4
 }
@@ -43,7 +44,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nsw i64 %3, -65521
   ret i64 %4
 }
@@ -58,12 +59,12 @@ entry:
 define i64 @func000000000000000f(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 2
   ret i64 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; hyperscan/optimized/noodle_engine.c.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
@@ -73,11 +74,12 @@ entry:
 ; node/optimized/libnode.crypto_clienthello.ll
 ; openexr/optimized/attributes.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 1
   ret i64 %4
 }
@@ -88,7 +90,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add i64 %3, 128
   ret i64 %4
 }
@@ -100,7 +102,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }
@@ -112,7 +114,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, 1
   ret i64 %4
 }

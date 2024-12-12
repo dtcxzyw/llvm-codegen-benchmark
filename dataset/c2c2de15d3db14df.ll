@@ -1,7 +1,6 @@
 
-; 60 occurrences:
+; 55 occurrences:
 ; abc/optimized/utilIsop.c.ll
-; gromacs/optimized/h_db.cpp.ll
 ; gromacs/optimized/hackblock.cpp.ll
 ; gromacs/optimized/pdb2top.cpp.ll
 ; gromacs/optimized/pme.cpp.ll
@@ -18,11 +17,7 @@
 ; openjdk/optimized/ThreadReferenceImpl.ll
 ; openmpi/optimized/check_monitoring.ll
 ; openmpi/optimized/coll_base_bcast.ll
-; openusd/optimized/av1_inv_txfm2d.c.ll
-; php/optimized/xml.ll
-; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/log3gpp.c.ll
 ; wireshark/optimized/packet-quakeworld.c.ll
@@ -61,24 +56,24 @@
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = icmp slt i64 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; verilator/optimized/V3PreProc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1
   %5 = icmp ule i64 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -91,7 +86,7 @@ entry:
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/log3gpp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1
@@ -110,14 +105,15 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add i64 %1, -2
   %5 = icmp ugt i64 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; opencv/optimized/lsc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw i64 %1, 1
@@ -131,19 +127,19 @@ entry:
 ; protobuf/optimized/message_differencer.cc.ll
 ; slurm/optimized/node_scheduler.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003b(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000006b(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = icmp sge i64 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 17
@@ -155,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/geometry.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1

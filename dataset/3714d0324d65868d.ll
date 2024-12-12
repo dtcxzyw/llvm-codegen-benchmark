@@ -12,7 +12,7 @@
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 3, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
@@ -362,7 +362,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -390,11 +390,11 @@ entry:
 ; abc/optimized/wlcWriteVer.c.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
   %3 = and i64 %2, 14
-  %4 = icmp ult i64 %3, 10
+  %4 = icmp samesign ult i64 %3, 10
   ret i1 %4
 }
 
@@ -402,10 +402,10 @@ entry:
 ; cmake/optimized/fse_compress.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 65528, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -413,10 +413,10 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 16, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }

@@ -90,15 +90,14 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; arrow/optimized/decimal.cc.ll
+; 2 occurrences:
 ; c3c/optimized/expr.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 5
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = sext i1 %3 to i64
   ret i64 %4
 }

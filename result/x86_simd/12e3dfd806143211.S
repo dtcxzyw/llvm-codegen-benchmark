@@ -2,7 +2,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpmovd2m	%ymm1, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	knotb	%k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -13,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	knotb	%k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -35,6 +35,17 @@ func0000000000000008:                   # @func0000000000000008
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
+	korb	%k1, %k0, %k0
+	knotb	%k0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.long	8                               # 0x8
+func0000000000000028:                   # @func0000000000000028
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k0
+	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	knotb	%k0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -50,13 +61,13 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI5_0:
+.LCPI6_0:
 	.long	15                              # 0xf
 func0000000000000010:                   # @func0000000000000010
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpnleud	.LCPI5_0(%rip){1to8}, %ymm1, %k1
-	korb	%k0, %k1, %k0
+	vpcmpnleud	.LCPI6_0(%rip){1to8}, %ymm1, %k1
+	korb	%k1, %k0, %k0
 	knotb	%k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

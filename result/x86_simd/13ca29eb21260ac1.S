@@ -34,7 +34,7 @@
 func0000000000000003:                   # @func0000000000000003
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm2    # ymm2 = zero,ymm1[2],zero,zero,zero,ymm1[6],zero,zero,zero,ymm1[10],zero,zero,zero,ymm1[14],zero,zero,zero,ymm1[18],zero,zero,zero,ymm1[22],zero,zero,zero,ymm1[26],zero,zero,zero,ymm1[30],zero,zero
 	vpsrld	$24, %ymm1, %ymm1
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI1_0:
 	.long	260                             # 0x104
@@ -42,7 +42,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpsrld	$1, %ymm1, %ymm2
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpsrld	$16, %ymm1, %ymm1
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI2_0:
 	.long	260                             # 0x104
@@ -50,5 +50,5 @@ func0000000000000004:                   # @func0000000000000004
 	vpsrld	$1, %ymm0, %ymm2
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpsrld	$16, %ymm0, %ymm0
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq

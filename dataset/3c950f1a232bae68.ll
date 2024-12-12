@@ -18,7 +18,7 @@ entry:
   ret i64 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; draco/optimized/symbol_encoding.cc.ll
@@ -26,6 +26,7 @@ entry:
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; openblas/optimized/dsptrs.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll

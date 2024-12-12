@@ -1,9 +1,9 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	btl	%esi, %edi
 	movl	$1, %eax
 	sbbl	$-1, %eax
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	shrxl	%esi, %edi, %eax
 	andl	$2, %eax
 	cmpl	$1, %eax

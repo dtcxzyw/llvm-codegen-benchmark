@@ -1,5 +1,12 @@
 
-; 12 occurrences:
+; 19 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; nix/optimized/attr-path.ll
 ; nix/optimized/cgroup.ll

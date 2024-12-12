@@ -21,7 +21,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = shl i32 %3, 16
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -50,7 +50,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = shl i32 %3, 1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -62,7 +62,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = shl nsw i32 %3, 1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -149,12 +149,22 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 1 occurrences:
+; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = shl nuw nsw i32 %3, 9
+  %5 = or i32 %4, %0
+  ret i32 %5
+}
+
+; 7 occurrences:
 ; icu/optimized/bytestrieiterator.ll
 ; icu/optimized/collation.ll
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/ucharstrieiterator.ll
-; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
 ; openexr/optimized/internal_b44.c.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -162,8 +172,8 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = shl i32 %3, 9
-  %5 = or i32 %4, %0
+  %4 = shl i32 %3, 4
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

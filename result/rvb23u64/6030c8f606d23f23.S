@@ -15,17 +15,11 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a2, a2, -2
 	sltu	a0, a2, a0
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	sub	a1, a1, a2
 	divu	a0, a1, a0
 	slti	a0, a0, 4
 	xori	a0, a0, 1
-	ret
-func0000000000000024:                   # @func0000000000000024
-	sub	a1, a1, a2
-	divu	a0, a1, a0
-	srli	a0, a0, 12
-	seqz	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sub	a1, a1, a2

@@ -1,7 +1,16 @@
-func0000000000000a11:                   # @func0000000000000a11
+func0000000000003821:                   # @func0000000000003821
 	leaq	1(%rdi), %rax
 	addq	%rdx, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
+	sete	%cl
+	cmpq	%rsi, %rax
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000003c21:                   # @func0000000000003c21
+	leaq	8(%rdi), %rax
+	addq	%rdx, %rsi
+	cmpq	%rsi, %rdi
 	sete	%cl
 	cmpq	%rsi, %rax
 	sete	%al

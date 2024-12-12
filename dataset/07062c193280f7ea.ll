@@ -4,6 +4,8 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/wait_for.ll
 ; c3c/optimized/sema_decls.c.ll
 ; entt/optimized/handle.cpp.ll
 ; hdf5/optimized/H5Shyper.c.ll
@@ -15,9 +17,7 @@
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/user.ll
-; linux/optimized/video_detect.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
-; llvm/optimized/CommandFlags.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/Host.cpp.ll
@@ -56,8 +56,9 @@ entry:
   ret i8 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/3afp9uuicyvwgbsz.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; entt/optimized/sparse_set.cpp.ll
 ; hermes/optimized/Host.cpp.ll
 ; icu/optimized/collationfastlatinbuilder.ll
@@ -99,18 +100,6 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
-; icu/optimized/uchar.ll
-; regex-rs/optimized/12jtvy3iayrg5nam.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000008(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 256
-  %3 = select i1 %0, i1 %2, i1 false
-  %4 = zext i1 %3 to i8
-  ret i8 %4
-}
-
 ; 4 occurrences:
 ; icu/optimized/timezone.ll
 ; linux/optimized/g4x_dp.ll
@@ -120,6 +109,17 @@ entry:
 define i8 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
+  %3 = select i1 %0, i1 %2, i1 false
+  %4 = zext i1 %3 to i8
+  ret i8 %4
+}
+
+; 1 occurrences:
+; icu/optimized/uchar.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000008(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, -95
   %3 = select i1 %0, i1 %2, i1 false
   %4 = zext i1 %3 to i8
   ret i8 %4

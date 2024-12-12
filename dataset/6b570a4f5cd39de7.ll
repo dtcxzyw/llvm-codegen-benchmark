@@ -6,7 +6,7 @@
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000003e1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
@@ -23,12 +23,12 @@ entry:
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000003f4(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
   %5 = trunc nuw nsw i64 %1 to i32
-  %6 = icmp ult i32 %4, %5
+  %6 = icmp samesign ult i32 %4, %5
   ret i1 %6
 }
 
@@ -37,12 +37,12 @@ entry:
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f8(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000003f8(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
   %5 = trunc nuw nsw i64 %1 to i32
-  %6 = icmp ugt i32 %4, %5
+  %6 = icmp samesign ugt i32 %4, %5
   ret i1 %6
 }
 
@@ -66,10 +66,10 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000328(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 10
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc i64 %1 to i32
   %6 = icmp ugt i32 %4, %5
   ret i1 %6
@@ -82,7 +82,7 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000195(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000325(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
@@ -102,7 +102,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = or disjoint i32 %3, %0
@@ -115,7 +115,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d8(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000003a8(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
@@ -131,7 +131,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000022a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = or disjoint i32 %3, %0
@@ -145,7 +145,7 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000019a(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000032a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
@@ -159,7 +159,7 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000228(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = or disjoint i32 %3, %0
@@ -177,7 +177,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000321(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
@@ -190,7 +190,7 @@ entry:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000194(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000324(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0

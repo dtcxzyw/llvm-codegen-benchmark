@@ -1,12 +1,11 @@
 
-; 74 occurrences:
+; 73 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; clamav/optimized/hashtab.c.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/RawImage.cpp.ll
-; darktable/optimized/jpeg.c.ll
 ; faiss/optimized/hamming.cpp.ll
 ; freetype/optimized/pcf.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -83,7 +82,7 @@ entry:
   ret i64 %4
 }
 
-; 97 occurrences:
+; 101 occurrences:
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
@@ -107,6 +106,10 @@ entry:
 ; libwebp/optimized/buffer_dec.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/tick-sched.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll

@@ -33,7 +33,7 @@
 	.byte	0                               # 0x0
 .LCPI0_1:
 	.long	255                             # 0xff
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
 	vptestnmb	%xmm0, %xmm0, %k1
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm1, %k0 {%k1}

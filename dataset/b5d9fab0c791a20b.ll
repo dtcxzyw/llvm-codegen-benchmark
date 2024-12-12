@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 13 occurrences:
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
@@ -11,11 +11,8 @@
 ; mold/optimized/passes.cc.PPC64V2.cc.ll
 ; mold/optimized/passes.cc.RV64LE.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
@@ -25,7 +22,7 @@ entry:
   ret i64 %4
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
@@ -67,7 +64,6 @@ entry:
 ; openjdk/optimized/c1_LinearScan.ll
 ; openjdk/optimized/xMark.ll
 ; openusd/optimized/primData.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proxygen/optimized/ServerIdleSessionController.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_h368ace38__0.ll

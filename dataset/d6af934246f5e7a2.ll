@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; hermes/optimized/g_fmt.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; oiio/optimized/pnminput.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i32 %0, i32 %1) #0 {

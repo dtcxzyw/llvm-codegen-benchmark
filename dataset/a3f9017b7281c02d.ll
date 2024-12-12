@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 84 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
@@ -83,12 +83,13 @@
 ; wireshark/optimized/packet-mpeg-pes.c.ll
 ; wireshark/optimized/packet-noe.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 60
   %4 = and i64 %3, 1
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
@@ -112,7 +113,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = and i64 %3, 14
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -156,7 +157,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 131072
-  %5 = or i64 %4, %1
+  %5 = or i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -169,7 +170,7 @@ entry:
   %3 = lshr i64 %2, 26
   %4 = and i64 %3, 31
   %5 = or i64 %4, %1
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 

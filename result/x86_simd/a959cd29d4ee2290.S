@@ -38,6 +38,12 @@ func0000000000000005:                   # @func0000000000000005
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
+func000000000000000a:                   # @func000000000000000a
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
 func000000000000000b:                   # @func000000000000000b
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -50,17 +56,11 @@ func000000000000000f:                   # @func000000000000000f
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
-.LCPI7_0:
+.LCPI8_0:
 	.long	18                              # 0x12
 func0000000000000001:                   # @func0000000000000001
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpbroadcastd	.LCPI7_0(%rip), %xmm1   # xmm1 = [18,18,18,18]
-	vpsubd	%xmm0, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	retq
-func000000000000000a:                   # @func000000000000000a
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpxor	%xmm1, %xmm1, %xmm1
+	vpbroadcastd	.LCPI8_0(%rip), %xmm1   # xmm1 = [18,18,18,18]
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

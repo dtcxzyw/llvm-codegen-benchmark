@@ -23,6 +23,11 @@ func0000000000000009:                   # @func0000000000000009
 	subl	%edx, %eax
 	subq	%rdi, %rax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	movl	%esi, %eax
+	subl	%edx, %eax
+	subq	%rdi, %rax
+	retq
 func0000000000000003:                   # @func0000000000000003
 	movl	%esi, %eax
 	subl	%edx, %eax

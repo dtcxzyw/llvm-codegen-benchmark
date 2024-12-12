@@ -4,19 +4,19 @@ func0000000000000008:                   # @func0000000000000008
 	vmul.vv	v8, v8, v10
 	vmsltu.vv	v0, v12, v8
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v12, v12, v12
 	vmul.vv	v8, v8, v10
 	vmslt.vv	v0, v12, v8
 	ret
-func0000000000000079:                   # @func0000000000000079
+func00000000000000e9:                   # @func00000000000000e9
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 2
 	vmul.vv	v8, v8, v10
 	vmsleu.vv	v0, v12, v8
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v12, v12, v12
 	vmul.vv	v8, v8, v10

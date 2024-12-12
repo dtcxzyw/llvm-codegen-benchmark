@@ -22,8 +22,9 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
+; boost/optimized/to_chars.ll
 ; protobuf/optimized/time_util.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i128 %0, i128 %1) #0 {

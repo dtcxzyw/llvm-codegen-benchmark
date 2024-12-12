@@ -1,4 +1,4 @@
-func0000000000000077:                   # @func0000000000000077
+func00000000000000e7:                   # @func00000000000000e7
 	li	a0, 31
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vxor.vx	v10, v10, a0
@@ -10,7 +10,7 @@ func0000000000000077:                   # @func0000000000000077
 	vzext.vf4	v12, v10
 	vmsle.vv	v0, v8, v12
 	ret
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	li	a0, 31
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vxor.vx	v10, v10, a0

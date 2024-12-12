@@ -7,7 +7,7 @@ func0000000000000047:                   # @func0000000000000047
 	sltu	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000090:                   # @func0000000000000090
+func0000000000000190:                   # @func0000000000000190
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
 	add	a0, a0, a1
@@ -22,5 +22,9 @@ func0000000000000097:                   # @func0000000000000097
 func00000000000000c7:                   # @func00000000000000c7
 	xor	a1, a1, a2
 	snez	a1, a1
+	addw	a0, a0, a1
+	ret
+func0000000000000147:                   # @func0000000000000147
+	sltu	a1, a1, a2
 	addw	a0, a0, a1
 	ret

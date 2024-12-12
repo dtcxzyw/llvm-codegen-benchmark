@@ -1,52 +1,5 @@
 
-; 37 occurrences:
-; arrow/optimized/bitmap_ops.cc.ll
-; arrow/optimized/hashing.cc.ll
-; arrow/optimized/scalar_cast_numeric.cc.ll
-; arrow/optimized/scalar_cast_temporal.cc.ll
-; clamav/optimized/filtering.c.ll
-; cpython/optimized/instrumentation.ll
-; draco/optimized/sequential_integer_attribute_encoder.cc.ll
-; draco/optimized/sequential_normal_attribute_encoder.cc.ll
-; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
-; eastl/optimized/TestBitVector.cpp.ll
-; libpng/optimized/pngrtran.c.ll
-; linux/optimized/drm_edid.ll
-; linux/optimized/hwgpe.ll
-; linux/optimized/i8259.ll
-; linux/optimized/intel_dp.ll
-; linux/optimized/manager.ll
-; llvm/optimized/PDBFile.cpp.ll
-; llvm/optimized/RISCVAsmParser.cpp.ll
-; meshlab/optimized/MarchingCubes.cpp.ll
-; minetest/optimized/CColorConverter.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; nuttx/optimized/lib_syslog.c.ll
-; opencv/optimized/freetype.cpp.ll
-; openjdk/optimized/pngrtran.ll
-; proxygen/optimized/HPACKDecodeBuffer.cpp.ll
-; proxygen/optimized/Logging.cpp.ll
-; proxygen/optimized/QPACKDecoder.cpp.ll
-; qemu/optimized/hw_nvme_ctrl.c.ll
-; qemu/optimized/system_memory.c.ll
-; recastnavigation/optimized/RecastContour.cpp.ll
-; soc-simulator/optimized/verilated.ll
-; spike/optimized/vclz_v.ll
-; spike/optimized/vctz_v.ll
-; stb/optimized/stb_voxel_render.c.ll
-; wireshark/optimized/packet-bacapp.c.ll
-; wireshark/optimized/packet-gsm_a_rr.c.ll
-; wireshark/optimized/packet-ipmi-se.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = shl nuw i32 1, %0
-  %4 = and i32 %3, %2
-  ret i32 %4
-}
-
-; 393 occurrences:
+; 394 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/array_nested.cc.ll
@@ -131,7 +84,6 @@ entry:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/ng_width.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -182,7 +134,6 @@ entry:
 ; linux/optimized/nl80211.ll
 ; linux/optimized/show_mem.ll
 ; linux/optimized/sta_info.ll
-; linux/optimized/support.ll
 ; linux/optimized/virtio_input.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
@@ -256,6 +207,12 @@ entry:
 ; llvm/optimized/X86MachineFunctionInfo.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; minetest/optimized/log.cpp.ll
@@ -299,7 +256,6 @@ entry:
 ; nghttp2/optimized/url_parser.c.ll
 ; node/optimized/libnode.traced_value.ll
 ; node/optimized/linux.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; oiio/optimized/icoinput.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; openexr/optimized/ImfPizCompressor.cpp.ll
@@ -337,7 +293,6 @@ entry:
 ; postgres/optimized/bloomfilter.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/catcache.ll
-; postgres/optimized/datapagemap.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/event_trigger.ll
 ; postgres/optimized/execExprInterp.ll
@@ -412,6 +367,7 @@ entry:
 ; wireshark/optimized/packet-assa_r3.c.ll
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
 ; wireshark/optimized/packet-awdl.c.ll
+; wireshark/optimized/packet-bacapp.c.ll
 ; wireshark/optimized/packet-csn1.c.ll
 ; wireshark/optimized/packet-dect.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
@@ -426,10 +382,8 @@ entry:
 ; wireshark/optimized/packet-mac-nr.c.ll
 ; wireshark/optimized/packet-ms-do.c.ll
 ; wireshark/optimized/packet-mysql.c.ll
-; wireshark/optimized/packet-netanalyzer.c.ll
 ; wireshark/optimized/packet-ocfs2.c.ll
 ; wireshark/optimized/packet-per.c.ll
-; wireshark/optimized/packet-sita.c.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
@@ -445,6 +399,49 @@ define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 1, %0
+  %4 = and i32 %3, %2
+  ret i32 %4
+}
+
+; 33 occurrences:
+; arrow/optimized/bitmap_ops.cc.ll
+; arrow/optimized/hashing.cc.ll
+; arrow/optimized/scalar_cast_numeric.cc.ll
+; arrow/optimized/scalar_cast_temporal.cc.ll
+; clamav/optimized/filtering.c.ll
+; cpython/optimized/instrumentation.ll
+; draco/optimized/sequential_integer_attribute_encoder.cc.ll
+; draco/optimized/sequential_normal_attribute_encoder.cc.ll
+; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
+; eastl/optimized/TestBitVector.cpp.ll
+; libpng/optimized/pngrtran.c.ll
+; linux/optimized/drm_edid.ll
+; linux/optimized/hwgpe.ll
+; linux/optimized/intel_dp.ll
+; linux/optimized/manager.ll
+; llvm/optimized/PDBFile.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; meshlab/optimized/MarchingCubes.cpp.ll
+; minetest/optimized/CColorConverter.cpp.ll
+; opencv/optimized/freetype.cpp.ll
+; openjdk/optimized/pngrtran.ll
+; proxygen/optimized/HPACKDecodeBuffer.cpp.ll
+; proxygen/optimized/Logging.cpp.ll
+; proxygen/optimized/QPACKDecoder.cpp.ll
+; qemu/optimized/hw_nvme_ctrl.c.ll
+; qemu/optimized/system_memory.c.ll
+; recastnavigation/optimized/RecastContour.cpp.ll
+; soc-simulator/optimized/verilated.ll
+; spike/optimized/vclz_v.ll
+; spike/optimized/vctz_v.ll
+; stb/optimized/stb_voxel_render.c.ll
+; wireshark/optimized/packet-gsm_a_rr.c.ll
+; wireshark/optimized/packet-ipmi-se.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = shl nuw i32 1, %0
   %4 = and i32 %3, %2
   ret i32 %4
 }

@@ -1,10 +1,9 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; icu/optimized/csrsbcs.ll
 ; lief/optimized/camellia.c.ll
 ; linux/optimized/libata-scsi.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

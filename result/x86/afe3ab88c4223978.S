@@ -20,3 +20,8 @@ func000000000000001d:                   # @func000000000000001d
 	leal	1(%rdi), %eax
 	negq	%rax
 	retq
+func000000000000001f:                   # @func000000000000001f
+	incl	%edi
+	movl	$10000, %eax                    # imm = 0x2710
+	subq	%rdi, %rax
+	retq

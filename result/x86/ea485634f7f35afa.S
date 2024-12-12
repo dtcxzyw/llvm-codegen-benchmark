@@ -1,12 +1,12 @@
 func0000000000000001:                   # @func0000000000000001
 	shrl	$24, %edx
 	orl	%esi, %edx
-	cmpl	%edi, %edx
+	cmpl	%edx, %edi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrl	$24, %edx
 	orl	%esi, %edx
-	cmpl	%edi, %edx
+	cmpl	%edx, %edi
 	sete	%al
 	retq

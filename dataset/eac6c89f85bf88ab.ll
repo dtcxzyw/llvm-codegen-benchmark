@@ -27,21 +27,6 @@ entry:
   ret float %5
 }
 
-; 5 occurrences:
-; imgui/optimized/imgui_widgets.cpp.ll
-; ncnn/optimized/roialign_x86.cpp.ll
-; ncnn/optimized/roialign_x86_avx.cpp.ll
-; ncnn/optimized/roialign_x86_avx512.cpp.ll
-; ncnn/optimized/roialign_x86_fma.cpp.ll
-; Function Attrs: nounwind
-define float @func000000000000000a(i1 %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp ole float %2, 0.000000e+00
-  %4 = select i1 %3, float 0.000000e+00, float %2
-  %5 = select i1 %0, float %4, float %1
-  ret float %5
-}
-
 ; 4 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; darktable/optimized/introspection_ashift.c.ll

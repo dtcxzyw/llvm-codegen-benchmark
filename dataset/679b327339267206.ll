@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
@@ -27,7 +27,6 @@
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterBankInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll

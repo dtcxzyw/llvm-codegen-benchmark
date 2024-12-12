@@ -93,7 +93,6 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/sd.ll
-; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTMatchersInternal.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
@@ -203,6 +202,7 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; vcpkg/optimized/tools.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; wasmedge/optimized/alias.cpp.ll
@@ -268,7 +268,7 @@ entry:
   ret i64 %5
 }
 
-; 25 occurrences:
+; 30 occurrences:
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -290,10 +290,15 @@ entry:
 ; llvm/optimized/DXContainerPSVInfo.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
-; tokio-rs/optimized/46apu3hqx0w07xoc.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
@@ -354,9 +359,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/pcmcia_resource.ll
 ; llvm/optimized/Dominators.cpp.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
 entry:

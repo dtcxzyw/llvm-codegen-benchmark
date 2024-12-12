@@ -15,28 +15,11 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/config.ll
-; openjdk/optimized/hb-ot-font.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %0, 1
-  %4 = mul nuw nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 10 occurrences:
+; 9 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/rsmisc.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; wireshark/optimized/packet-gquic.c.ll
@@ -46,6 +29,21 @@ entry:
 define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
+  %3 = add nuw nsw i32 %0, 1
+  %4 = mul nuw nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 5 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; linux/optimized/config.ll
+; openjdk/optimized/hb-ot-font.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
   %3 = add nuw nsw i32 %0, 1
   %4 = mul nuw nsw i32 %3, %2
   ret i32 %4
@@ -75,9 +73,8 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/intel_bw.ll
-; linux/optimized/rsmisc.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll

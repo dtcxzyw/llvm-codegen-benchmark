@@ -1,12 +1,12 @@
 
-%"class.Gluco2::vec.12.2763792" = type { ptr, i32, i32 }
-%struct.Vec_Int_t_.2765017 = type { i32, i32, ptr }
-%struct.axset.3256421 = type { ptr, i32, i32, i32 }
+%"class.Gluco2::vec.12.2876064" = type { ptr, i32, i32 }
+%struct.Vec_Int_t_.2877265 = type { i32, i32, ptr }
+%"struct.Yosys::RTLIL::SigBit.3121538" = type <{ ptr, %union.anon.129.3121539, [4 x i8] }>
+%union.anon.129.3121539 = type { i32 }
+%struct.bf_t.3435173 = type { ptr, i32, i64, i64, ptr }
 
-; 3 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
-; faiss/optimized/sorting.cpp.ll
-; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
 entry:
@@ -18,20 +18,19 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; cvc5/optimized/SimpSolver.cc.ll
-; git/optimized/pq.ll
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"class.Gluco2::vec.12.2763792", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"class.Gluco2::vec.12.2876064", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -44,19 +43,33 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.Vec_Int_t_.2765017, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.Vec_Int_t_.2877265, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
-; 1 occurrences:
-; wireshark/optimized/lemon.c.ll
+; 2 occurrences:
+; faiss/optimized/sorting.cpp.ll
+; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.axset.3256421, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121538", ptr %0, i64 %4, i32 1
+  ret ptr %5
+}
+
+; 2 occurrences:
+; quickjs/optimized/libbf.ll
+; wireshark/optimized/lemon.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = or disjoint i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr %struct.bf_t.3435173, ptr %0, i64 %4, i32 4
   ret ptr %5
 }
 

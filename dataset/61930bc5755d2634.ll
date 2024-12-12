@@ -38,7 +38,7 @@ entry:
   %4 = add i32 %3, 1048576000
   %5 = zext i32 %4 to i64
   %6 = shl nuw i64 %5, 32
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 

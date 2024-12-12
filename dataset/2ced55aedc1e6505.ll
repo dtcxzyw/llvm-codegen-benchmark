@@ -72,11 +72,11 @@ entry:
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 63
   %3 = and i16 %0, 63
-  %4 = icmp ult i16 %3, %2
+  %4 = icmp samesign ult i16 %3, %2
   ret i1 %4
 }
 
@@ -86,11 +86,11 @@ entry:
 ; stockfish/optimized/position.ll
 ; stockfish/optimized/uci.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 63
   %3 = and i16 %0, 63
-  %4 = icmp ugt i16 %3, %2
+  %4 = icmp samesign ugt i16 %3, %2
   ret i1 %4
 }
 
@@ -109,11 +109,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000019(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = and i16 %0, 255
-  %4 = icmp uge i16 %3, %2
+  %4 = icmp samesign uge i16 %3, %2
   ret i1 %4
 }
 

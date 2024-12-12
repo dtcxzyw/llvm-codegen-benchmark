@@ -10,7 +10,7 @@ func0000000000000009:                   # @func0000000000000009
 	retq
 func0000000000000004:                   # @func0000000000000004
 	subl	%edi, %esi
-	addl	$-2, %esi
+	addl	$-3, %esi
 	movslq	%esi, %rax
 	retq
 func000000000000000d:                   # @func000000000000000d

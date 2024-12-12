@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; coreutils-rs/optimized/356ademi3o5g91h6.ll
@@ -21,6 +21,7 @@
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; tev/optimized/Common.cpp.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, ptr %1) #0 {
 entry:

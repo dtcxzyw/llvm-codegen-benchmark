@@ -35,7 +35,7 @@ entry:
 ; pugixml/optimized/pugixml.cpp.ll
 ; rust-analyzer-rs/optimized/2jyyuxshs9vnz9u0.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = or i32 %0, 32
   %2 = add nsw i32 %1, -97

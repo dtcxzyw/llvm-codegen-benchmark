@@ -110,8 +110,7 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; meshlab/optimized/filter_geodesic.cpp.ll
+; 1 occurrences:
 ; msdfgen/optimized/msdf-error-correction.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {

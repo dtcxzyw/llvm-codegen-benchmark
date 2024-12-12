@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	%edx, %esi
 	testb	$3, %sil
 	sete	%al
@@ -14,4 +14,9 @@ func0000000000000011:                   # @func0000000000000011
 func000000000000000c:                   # @func000000000000000c
 	leal	(%rsi,%rdx), %eax
 	andl	%edi, %eax
+	retq
+func0000000000000034:                   # @func0000000000000034
+	addb	%dl, %sil
+	setns	%al
+	andb	%dil, %al
 	retq

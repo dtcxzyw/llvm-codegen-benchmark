@@ -23,12 +23,12 @@
 ; mitsuba3/optimized/rapass.cpp.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 32, i64 %2
   %5 = sub nsw i64 %1, %4
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -56,12 +56,12 @@ entry:
 ; hyperscan/optimized/order.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 8, i64 %2
   %5 = sub nuw nsw i64 %1, %4
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -70,12 +70,12 @@ entry:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_nested_loop_join.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 32, i64 %2
   %5 = sub nuw i64 %1, %4
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -83,12 +83,12 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 4, i64 %2
   %5 = sub i64 %1, %4
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

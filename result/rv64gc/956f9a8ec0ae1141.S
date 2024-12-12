@@ -25,6 +25,17 @@ func0000000000000044:                   # @func0000000000000044
 	fmin.d	fa4, fa4, fa0
 	flt.d	a0, fa4, fa5
 	ret
+.LCPI3_0:
+	.quad	0x471a36e2e0000000              # double 3.4028235832468283E+34
+func0000000000000082:                   # @func0000000000000082
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
+	fsub.d	fa4, fa1, fa2
+	feq.d	a0, fa4, fa4
+	xori	a0, a0, 1
+	flt.d	a1, fa5, fa0
+	or	a0, a0, a1
+	ret
 func0000000000000066:                   # @func0000000000000066
 	fsub.d	fa5, fa1, fa2
 	fmv.d.x	fa4, zero
@@ -57,11 +68,11 @@ func000000000000002e:                   # @func000000000000002e
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-.LCPI7_0:
+.LCPI8_0:
 	.quad	0x7ff0000000000000              # double +Inf
 func00000000000000c2:                   # @func00000000000000c2
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
+	lui	a0, %hi(.LCPI8_0)
+	fld	fa5, %lo(.LCPI8_0)(a0)
 	fsub.d	fa4, fa1, fa2
 	feq.d	a0, fa4, fa4
 	xori	a0, a0, 1

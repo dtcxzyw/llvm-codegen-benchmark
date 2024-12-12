@@ -25,8 +25,19 @@ func0000000000000009:                   # @func0000000000000009
 	cmpq	%rdi, %rsi
 	setae	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
+	xorq	%rsi, %rax
+	cmpq	%rdi, %rax
+	setb	%al
+	retq
 func0000000000000005:                   # @func0000000000000005
 	xorq	$4095, %rsi                     # imm = 0xFFF
 	cmpq	%rdi, %rsi
 	setbe	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorq	$2093056, %rsi                  # imm = 0x1FF000
+	cmpq	%rdi, %rsi
+	seta	%al
 	retq

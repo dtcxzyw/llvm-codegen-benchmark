@@ -12,7 +12,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rsi, %rdx
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	negq	%rdx
 	andq	%rdi, %rdx
 	movl	%esi, %eax

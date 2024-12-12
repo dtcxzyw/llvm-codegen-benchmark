@@ -7,7 +7,7 @@
 ; php/optimized/zend_inference.ll
 ; wireshark/optimized/packet-ipsec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaEdge.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %4 = icmp slt i32 %1, 1
@@ -32,7 +32,7 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -53,7 +53,7 @@ entry:
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = icmp ult i32 %1, 2
@@ -97,7 +97,7 @@ entry:
 ; llvm/optimized/X86WinFixupBufferSecurityCheck.cpp.ll
 ; llvm/optimized/XCore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = icmp eq i32 %1, 0
@@ -112,7 +112,7 @@ entry:
 ; z3/optimized/array_solver.cpp.ll
 ; z3/optimized/theory_opt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -125,7 +125,7 @@ entry:
 ; libwebp/optimized/cwebp.c.ll
 ; linux/optimized/ohci-hcd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000298(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 4096
   %4 = icmp ne i32 %1, 1
@@ -137,7 +137,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/partbounds.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000194(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = icmp sgt i32 %1, 0

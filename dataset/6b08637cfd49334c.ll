@@ -7,7 +7,7 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000428(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne ptr %0, %1
   %4 = icmp ugt i64 %2, 9223372036854775792
@@ -39,7 +39,7 @@ entry:
 ; spike/optimized/sim.ll
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000421(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq ptr %0, %1
   %4 = icmp eq i64 %2, 8

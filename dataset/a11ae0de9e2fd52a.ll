@@ -1,12 +1,22 @@
 
-; 2 occurrences:
-; rocksdb/optimized/concurrent_arena.cc.ll
+; 1 occurrences:
 ; rocksdb/optimized/lru_cache.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 8, %1
   %3 = icmp ugt i32 %0, 60
+  %4 = select i1 %3, i64 -1, i64 %2
+  ret i64 %4
+}
+
+; 1 occurrences:
+; rocksdb/optimized/concurrent_arena.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i32 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 64, %1
+  %3 = icmp samesign ugt i32 %0, 57
   %4 = select i1 %3, i64 -1, i64 %2
   ret i64 %4
 }
@@ -21,7 +31,7 @@ entry:
 ; wireshark/optimized/packet-iax2.c.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp eq i32 %0, 0
@@ -34,7 +44,7 @@ entry:
 ; qemu/optimized/hw_display_ati.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = icmp eq i32 %0, 0
@@ -47,7 +57,7 @@ entry:
 ; openjdk/optimized/compressedKlass.ll
 ; yosys/optimized/proc_rmdead.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i64 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp sgt i32 %0, 63
@@ -71,7 +81,7 @@ entry:
 ; llvm/optimized/MasmParser.cpp.ll
 ; verilator/optimized/V3CCtors.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = icmp eq i32 %0, 0
@@ -79,12 +89,10 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; eastl/optimized/Int128_t.cpp.ll
+; 1 occurrences:
 ; flac/optimized/bitreader.c.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp ugt i32 %0, 64
@@ -95,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp slt i32 %0, 6
@@ -107,10 +115,10 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
-  %3 = icmp ult i32 %0, 2
+  %3 = icmp samesign ult i32 %0, 2
   %4 = select i1 %3, i64 0, i64 %2
   ret i64 %4
 }
@@ -126,6 +134,18 @@ entry:
   %2 = shl i64 8, %1
   %3 = icmp eq i32 %0, 2
   %4 = select i1 %3, i64 6, i64 %2
+  ret i64 %4
+}
+
+; 2 occurrences:
+; eastl/optimized/Int128_t.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000058(i32 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw i64 1, %1
+  %3 = icmp samesign ugt i32 %0, 63
+  %4 = select i1 %3, i64 -9223372036854775808, i64 %2
   ret i64 %4
 }
 

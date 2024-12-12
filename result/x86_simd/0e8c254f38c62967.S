@@ -3,5 +3,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovd2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm0
-	vpmullq	%ymm1, %ymm0, %ymm0 {%k1} {z}
+	vpmullq	%ymm0, %ymm1, %ymm0 {%k1} {z}
 	retq

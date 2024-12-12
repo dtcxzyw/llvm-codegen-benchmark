@@ -18,11 +18,12 @@ entry:
   ret i32 %3
 }
 
-; 26 occurrences:
+; 28 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/strmm.cpp.ll
+; harfbuzz/optimized/hb-subset.cc.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; libwebp/optimized/pnmdec.c.ll
@@ -32,6 +33,7 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/WindowScheduler.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; ncnn/optimized/lrn.cpp.ll
 ; ncnn/optimized/rmsnorm.cpp.ll
 ; oiio/optimized/imagebufalgo_mad.cpp.ll
@@ -59,11 +61,11 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   ret i32 %3
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/cecSat.c.ll
@@ -137,14 +139,13 @@ entry:
 ; quest/optimized/QuEST_common.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; slurm/optimized/xcpuinfo.ll
-; sqlite/optimized/sqlite3.ll
 ; verilator/optimized/V3EmitCHeaders.cpp.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 

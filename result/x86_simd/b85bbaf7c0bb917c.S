@@ -2,7 +2,7 @@
 	.long	33554431                        # 0x1ffffff
 .LCPI0_1:
 	.long	3                               # 0x3
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrad	$24, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -14,7 +14,7 @@ func0000000000000058:                   # @func0000000000000058
 	.long	33554431                        # 0x1ffffff
 .LCPI1_1:
 	.long	25                              # 0x19
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrad	$24, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -24,7 +24,7 @@ func0000000000000054:                   # @func0000000000000054
 	retq
 .LCPI2_0:
 	.long	33554431                        # 0x1ffffff
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrad	$24, %ymm0, %ymm0
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -71,7 +71,7 @@ func0000000000000051:                   # @func0000000000000051
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI3_1(%rip){1to8}, %ymm1, %ymm1
 	vpsrad	$31, %ymm0, %ymm0
 	vpxor	%xmm2, %xmm2, %xmm2

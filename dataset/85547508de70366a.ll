@@ -11,13 +11,13 @@
 ; gromacs/optimized/pdb2top.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000007(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 3
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 48, i64 0
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

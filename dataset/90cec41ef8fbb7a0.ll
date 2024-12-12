@@ -1,5 +1,5 @@
 
-; 254 occurrences:
+; 253 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/nwkTiming.c.ll
@@ -8,6 +8,7 @@
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_internal.cc.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_blurs.c.ll
@@ -113,7 +114,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/progress.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
@@ -170,7 +170,6 @@
 ; openmpi/optimized/pmix_client_group.ll
 ; openmpi/optimized/pmix_server_ops.ll
 ; openmpi/optimized/scheduler.ll
-; openmpi/optimized/timer_linux_component.ll
 ; openusd/optimized/collectionPredicateLibrary.cpp.ll
 ; openusd/optimized/composeSite.cpp.ll
 ; openusd/optimized/crateData.cpp.ll

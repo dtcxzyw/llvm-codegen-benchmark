@@ -4,7 +4,7 @@ func0000000000000215:                   # @func0000000000000215
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, -1
 	ret
 func0000000000000617:                   # @func0000000000000617
@@ -13,7 +13,7 @@ func0000000000000617:                   # @func0000000000000617
 	vmv.v.i	v12, 0
 	vadd.vv	v8, v10, v8
 	vmerge.vim	v10, v12, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	li	a0, -63
 	vadd.vx	v8, v8, a0
 	ret
@@ -25,7 +25,7 @@ func0000000000000200:                   # @func0000000000000200
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 1
 	ret
 func000000000000063c:                   # @func000000000000063c
@@ -34,7 +34,7 @@ func000000000000063c:                   # @func000000000000063c
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 8
 	ret
 func0000000000000080:                   # @func0000000000000080
@@ -43,7 +43,7 @@ func0000000000000080:                   # @func0000000000000080
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 1
 	ret
 func00000000000000bf:                   # @func00000000000000bf
@@ -52,7 +52,7 @@ func00000000000000bf:                   # @func00000000000000bf
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 1
 	ret
 func0000000000000635:                   # @func0000000000000635
@@ -61,6 +61,6 @@ func0000000000000635:                   # @func0000000000000635
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, -1
 	ret

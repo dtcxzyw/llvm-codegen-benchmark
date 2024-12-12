@@ -47,24 +47,22 @@
 ; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 1
-  %2 = and i64 %1, 7
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = and i64 %0, 7
+  %2 = icmp eq i64 %1, 7
+  ret i1 %2
 }
 
 ; 2 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 15
-  %2 = and i64 %1, 15
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = and i64 %0, 15
+  %2 = icmp eq i64 %1, 1
+  ret i1 %2
 }
 
 ; 5 occurrences:
@@ -74,12 +72,11 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 1
-  %2 = and i64 %1, 63
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = and i64 %0, 63
+  %2 = icmp eq i64 %1, 63
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

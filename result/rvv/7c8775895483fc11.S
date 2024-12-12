@@ -8,13 +8,6 @@ func0000000000000004:                   # @func0000000000000004
 	vmv.v.x	v10, a0
 	vmadd.vv	v8, v12, v10
 	ret
-func0000000000000041:                   # @func0000000000000041
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vv	v10, v10, v8
-	li	a0, 17
-	vmadd.vx	v10, a0, v8
-	vadd.vi	v8, v10, 1
-	ret
 func00000000000000f0:                   # @func00000000000000f0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v12, 6

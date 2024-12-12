@@ -1,47 +1,7 @@
 
-; 1 occurrences:
-; libquic/optimized/p224-64.c.ll
-; Function Attrs: nounwind
-define i128 @func000000000000007b(i128 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = zext nneg i64 %2 to i128
-  %4 = zext nneg i64 %1 to i128
-  %5 = mul nuw nsw i128 %4, %3
-  %6 = lshr i128 %5, 16
-  %7 = add nuw nsw i128 %6, %0
-  ret i128 %7
-}
-
-; 2 occurrences:
-; libquic/optimized/p224-64.c.ll
-; wolfssl/optimized/sp_int.c.ll
-; Function Attrs: nounwind
-define i128 @func0000000000000010(i128 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = zext i64 %2 to i128
-  %4 = zext i64 %1 to i128
-  %5 = mul nuw i128 %4, %3
-  %6 = lshr i128 %5, 16
-  %7 = add i128 %6, %0
-  ret i128 %7
-}
-
-; 2 occurrences:
-; libquic/optimized/p256-64.c.ll
-; wolfssl/optimized/sp_int.c.ll
-; Function Attrs: nounwind
-define i128 @func0000000000000013(i128 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = zext i64 %2 to i128
-  %4 = zext i64 %1 to i128
-  %5 = mul nuw i128 %4, %3
-  %6 = lshr i128 %5, 64
-  %7 = add nuw nsw i128 %6, %0
-  ret i128 %7
-}
-
-; 76 occurrences:
+; 77 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/src.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -125,6 +85,47 @@ entry:
   %5 = mul nuw i128 %4, %3
   %6 = lshr i128 %5, 64
   %7 = add nuw i128 %6, %0
+  ret i128 %7
+}
+
+; 1 occurrences:
+; libquic/optimized/p224-64.c.ll
+; Function Attrs: nounwind
+define i128 @func000000000000007b(i128 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = zext nneg i64 %2 to i128
+  %4 = zext nneg i64 %1 to i128
+  %5 = mul nuw nsw i128 %4, %3
+  %6 = lshr i128 %5, 16
+  %7 = add nuw nsw i128 %0, %6
+  ret i128 %7
+}
+
+; 2 occurrences:
+; libquic/optimized/p224-64.c.ll
+; wolfssl/optimized/sp_int.c.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000010(i128 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = zext i64 %2 to i128
+  %4 = zext i64 %1 to i128
+  %5 = mul nuw i128 %4, %3
+  %6 = lshr i128 %5, 16
+  %7 = add i128 %0, %6
+  ret i128 %7
+}
+
+; 2 occurrences:
+; libquic/optimized/p256-64.c.ll
+; wolfssl/optimized/sp_int.c.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000013(i128 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = zext i64 %2 to i128
+  %4 = zext i64 %1 to i128
+  %5 = mul nuw i128 %4, %3
+  %6 = lshr i128 %5, 64
+  %7 = add nuw nsw i128 %0, %6
   ret i128 %7
 }
 

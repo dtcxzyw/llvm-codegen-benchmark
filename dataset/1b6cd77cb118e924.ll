@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -21,14 +21,15 @@
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = add nuw nsw i64 %3, 1
   %5 = zext i16 %1 to i64
   %6 = add nuw nsw i64 %4, %5
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 

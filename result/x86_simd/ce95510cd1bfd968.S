@@ -52,5 +52,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpbroadcastd	.LCPI1_1(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
 	vpbroadcastd	.LCPI1_2(%rip), %ymm2 {%k2} # ymm2 {%k2} = [2,2,2,2,2,2,2,2]
 	vmovdqa32	%ymm2, %ymm1 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

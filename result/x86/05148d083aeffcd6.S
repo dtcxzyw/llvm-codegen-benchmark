@@ -18,8 +18,3 @@ func000000000000003d:                   # @func000000000000003d
 	addl	%esi, %edx
 	leal	1(%rdi,%rdx), %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
-	shrl	$2, %edx
-	addl	%esi, %edx
-	leal	1721423(%rdi,%rdx), %eax
-	retq

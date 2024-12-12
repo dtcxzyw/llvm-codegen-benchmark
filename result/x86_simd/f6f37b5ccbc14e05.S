@@ -99,7 +99,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovdb	%ymm2, %xmm2
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm2, %xmm2
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm2, %xmm2
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vzeroupper
 	retq
 .LCPI2_0:

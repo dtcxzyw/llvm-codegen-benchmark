@@ -1,6 +1,8 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/encode.c.ll
 ; freetype/optimized/pcf.c.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
@@ -15,8 +17,10 @@ entry:
   ret i64 %2
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {

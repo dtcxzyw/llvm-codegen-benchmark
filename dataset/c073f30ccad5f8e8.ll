@@ -1,10 +1,7 @@
 
-; 146 occurrences:
-; casadi/optimized/integrator.cpp.ll
+; 135 occurrences:
 ; git/optimized/xmerge.ll
 ; icu/optimized/normalizer2impl.ll
-; icu/optimized/ucnv_bld.ll
-; icu/optimized/unames.ll
 ; icu/optimized/usprep.ll
 ; libphonenumber/optimized/asyoutypeformatter.cc.ll
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
@@ -12,11 +9,8 @@
 ; libphonenumber/optimized/phonenumberutil.cc.ll
 ; libphonenumber/optimized/shortnumberinfo.cc.ll
 ; libquic/optimized/quic_crypto_server_config.cc.ll
-; libwebp/optimized/enc.c.ll
-; libwebp/optimized/enc_sse2.c.ll
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AsmWriter.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -115,7 +109,6 @@
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lz4/optimized/lz4.c.ll
 ; mitsuba3/optimized/appender.cpp.ll
-; oiio/optimized/environment.cpp.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/function.pb.cc.ll
 ; opencv/optimized/graph.pb.cc.ll
@@ -125,11 +118,8 @@
 ; opencv/optimized/tensor_shape.pb.cc.ll
 ; opencv/optimized/tf_importer.cpp.ll
 ; openusd/optimized/lz4.cpp.ll
-; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/pred_common.c.ll
-; openusd/optimized/reformat.c.ll
 ; openusd/optimized/stbImage.cpp.ll
-; sentencepiece/optimized/generated_message_util.cc.ll
 ; sentencepiece/optimized/pretokenizer_for_training.cc.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; sentencepiece/optimized/sentencepiece.pb.cc.ll
@@ -145,13 +135,37 @@
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
-; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
   %5 = getelementptr nusw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 15 occurrences:
+; casadi/optimized/integrator.cpp.ll
+; icu/optimized/ucnv_bld.ll
+; icu/optimized/unames.ll
+; libwebp/optimized/enc.c.ll
+; libwebp/optimized/enc_sse2.c.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; lz4/optimized/lz4.c.ll
+; oiio/optimized/environment.cpp.ll
+; openusd/optimized/mvref_common.c.ll
+; openusd/optimized/reformat.c.ll
+; sentencepiece/optimized/generated_message_util.cc.ll
+; tinympc/optimized/admm.cpp.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; zxing/optimized/ODMultiUPCEANReader.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = select i1 %3, ptr null, ptr %1
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %0
   ret ptr %5
 }
 

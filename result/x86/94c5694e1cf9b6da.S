@@ -42,15 +42,15 @@ func000000000000000a:                   # @func000000000000000a
 	movl	%edi, %eax
 	subl	%esi, %eax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	movl	%edi, %eax
+	subl	%esi, %eax
+	retq
 func0000000000000003:                   # @func0000000000000003
 	movl	%edi, %eax
 	subl	%esi, %eax
 	retq
 func000000000000000e:                   # @func000000000000000e
-	movl	%edi, %eax
-	subl	%esi, %eax
-	retq
-func000000000000000b:                   # @func000000000000000b
 	movl	%edi, %eax
 	subl	%esi, %eax
 	retq

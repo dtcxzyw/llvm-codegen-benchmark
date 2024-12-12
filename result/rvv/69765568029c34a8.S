@@ -44,19 +44,6 @@ func0000000000000018:                   # @func0000000000000018
 	vmacc.vx	v8, a0, v10
 	vsrl.vi	v8, v8, 3
 	ret
-func000000000000000e:                   # @func000000000000000e
-	li	a0, 85
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmacc.vx	v8, a0, v10
-	vsrl.vi	v8, v8, 8
-	ret
-func0000000000000010:                   # @func0000000000000010
-	lui	a0, 3
-	addi	a0, a0, 1
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmacc.vx	v8, a0, v10
-	vsrl.vi	v8, v8, 18
-	ret
 func000000000000001a:                   # @func000000000000001a
 	li	a0, 75
 	vsetivli	zero, 8, e32, m2, ta, ma

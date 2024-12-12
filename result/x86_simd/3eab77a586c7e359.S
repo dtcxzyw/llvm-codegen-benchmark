@@ -17,7 +17,7 @@
 	.zero	1
 .LCPI0_1:
 	.long	2                               # 0x2
-func0000000000000087:                   # @func0000000000000087
+func0000000000000187:                   # @func0000000000000187
 	vpcmpnleub	.LCPI0_0(%rip), %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsrld	$31, %ymm1, %ymm1

@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 13 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; linux/optimized/callchain.ll
 ; meilisearch-rs/optimized/2eqafq69fd46y14a.ll
@@ -10,8 +10,11 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000cc3(i64 %0, i64 %1) #0 {
+define i64 @func00000000000018c3(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -9223372036854775807
   %3 = zext i1 %2 to i64
@@ -24,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000ca3(i64 %0, i64 %1) #0 {
+define i64 @func00000000000018a3(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -9223372036854775808
   %3 = zext i1 %2 to i64
@@ -40,7 +43,7 @@ entry:
 ; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
 ; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000aa3(i64 %0, i64 %1) #0 {
+define i64 @func00000000000014a3(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -9223372036854775807
   %3 = zext i1 %2 to i64

@@ -1,5 +1,5 @@
 
-; 926 occurrences:
+; 922 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/array_nested.cc.ll
@@ -161,7 +161,6 @@
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/ng_width.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -307,7 +306,6 @@
 ; linux/optimized/hub.ll
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/hwregs.ll
-; linux/optimized/i8259.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_dp.ll
@@ -327,7 +325,6 @@
 ; linux/optimized/show_mem.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/sta_info.ll
-; linux/optimized/support.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/trace_events_filter.ll
@@ -423,6 +420,13 @@
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -435,7 +439,6 @@
 ; minetest/optimized/imagefilters.cpp.ll
 ; minetest/optimized/log.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
@@ -497,8 +500,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -562,8 +563,6 @@
 ; node/optimized/libnode.traced_value.ll
 ; node/optimized/linux.ll
 ; nori/optimized/nanovg.c.ll
-; nuttx/optimized/lib_syslog.c.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/icoinput.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
@@ -665,7 +664,6 @@
 ; postgres/optimized/bloomfilter.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/catcache.ll
-; postgres/optimized/datapagemap.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/event_trigger.ll
 ; postgres/optimized/execExprInterp.ll
@@ -898,7 +896,6 @@
 ; wireshark/optimized/packet-mtp2.c.ll
 ; wireshark/optimized/packet-mysql.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
-; wireshark/optimized/packet-netanalyzer.c.ll
 ; wireshark/optimized/packet-ocfs2.c.ll
 ; wireshark/optimized/packet-oer.c.ll
 ; wireshark/optimized/packet-pdcp-lte.c.ll
@@ -906,7 +903,6 @@
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-pldm.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
-; wireshark/optimized/packet-sita.c.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
@@ -930,7 +926,7 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 
@@ -960,7 +956,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 

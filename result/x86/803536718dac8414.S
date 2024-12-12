@@ -2,104 +2,125 @@ func0000000000000008:                   # @func0000000000000008
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000019:                   # @func0000000000000019
+func0000000000000029:                   # @func0000000000000029
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setbe	%al
+	cmpq	%rax, %rdi
+	setae	%al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func0000000000000039:                   # @func0000000000000039
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setle	%al
+	cmpq	%rax, %rdi
+	setae	%al
+	retq
+func000000000000002b:                   # @func000000000000002b
+	movq	%rsi, %rax
+	negq	%rax
+	cmovsq	%rsi, %rax
+	cmpq	%rax, %rdi
+	setge	%al
+	retq
+func0000000000000074:                   # @func0000000000000074
+	movq	%rsi, %rax
+	negq	%rax
+	cmovsq	%rsi, %rax
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
+func0000000000000078:                   # @func0000000000000078
+	movq	%rsi, %rax
+	negq	%rax
+	cmovsq	%rsi, %rax
+	cmpq	%rax, %rdi
+	seta	%al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	movq	%rsi, %rax
+	negq	%rax
+	cmovsq	%rsi, %rax
+	cmpq	%rax, %rdi
+	seta	%al
+	retq
+func0000000000000024:                   # @func0000000000000024
+	movq	%rsi, %rax
+	negq	%rax
+	cmovsq	%rsi, %rax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
 func0000000000000034:                   # @func0000000000000034
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	seta	%al
-	retq
-func0000000000000038:                   # @func0000000000000038
-	movq	%rsi, %rax
-	negq	%rax
-	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000066:                   # @func0000000000000066
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000065:                   # @func0000000000000065
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setbe	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000026:                   # @func0000000000000026
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setg	%al
-	retq
-func0000000000000035:                   # @func0000000000000035
-	movq	%rsi, %rax
-	negq	%rax
-	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setae	%al
-	retq
-func0000000000000016:                   # @func0000000000000016
-	movq	%rsi, %rax
-	negq	%rax
-	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
+	setl	%al
+	retq
+func0000000000000038:                   # @func0000000000000038
+	movq	%rsi, %rax
+	negq	%rax
+	cmovsq	%rsi, %rax
+	cmpq	%rax, %rdi
+	seta	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
+	movq	%rsi, %rax
+	negq	%rax
+	cmovsq	%rsi, %rax
+	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func0000000000000021:                   # @func0000000000000021
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setl	%al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	movq	%rsi, %rax
-	negq	%rax
-	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq

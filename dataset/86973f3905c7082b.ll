@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; luajit/optimized/lj_mcode.ll
 ; luajit/optimized/lj_mcode_dyn.ll
-; ncnn/optimized/modelbin.cpp.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/buildOopMap.ll
 ; php/optimized/block_pass.ll

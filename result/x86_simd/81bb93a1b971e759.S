@@ -5,6 +5,6 @@ func000000000000000e:                   # @func000000000000000e
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm2
-	vpand	%ymm0, %ymm2, %ymm0
+	vpand	%ymm2, %ymm0, %ymm0
 	vpsrlvq	%ymm1, %ymm0, %ymm0
 	retq

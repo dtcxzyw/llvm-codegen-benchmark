@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovdw	%ymm1, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vptestmb	%xmm0, %xmm0, %k1
 	vpmovdw	%ymm1, %xmm0 {%k1} {z}
 	vzeroupper
@@ -25,7 +25,7 @@ func0000000000000021:                   # @func0000000000000021
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpcmpneqb	.LCPI2_0(%rip), %xmm0, %k1
 	vpmovdw	%ymm1, %xmm0 {%k1} {z}
 	vzeroupper

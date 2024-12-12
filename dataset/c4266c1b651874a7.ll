@@ -1,5 +1,5 @@
 
-; 340 occurrences:
+; 345 occurrences:
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
 ; abc/optimized/giaCSatP.c.ll
@@ -78,7 +78,6 @@
 ; hermes/optimized/Inlining.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/JSArray.cpp.ll
-; hermes/optimized/JSArrayBuffer.cpp.ll
 ; hermes/optimized/JSCallSite.cpp.ll
 ; hermes/optimized/JSCallableProxy.cpp.ll
 ; hermes/optimized/JSDataView.cpp.ll
@@ -190,7 +189,6 @@
 ; linux/optimized/permission.ll
 ; linux/optimized/setup-bus.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/uid16.ll
 ; linux/optimized/virtio_console.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AArch64MCTargetDesc.cpp.ll
@@ -258,6 +256,11 @@
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
 ; llvm/optimized/X86Subtarget.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; minetest/optimized/luaentity_sao.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; openblas/optimized/dlaed0.c.ll
@@ -271,7 +274,6 @@
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/guided_filter.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
-; openjdk/optimized/Inet6AddressImpl.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/barrierSetC1.ll
 ; openjdk/optimized/barrierSetC2.ll
@@ -309,14 +311,12 @@
 ; postgres/optimized/xlog.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; qemu/optimized/hw_sd_sd.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/tcg.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/stringio.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/triggers.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -340,6 +340,11 @@
 ; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
 ; wolfssl/optimized/internal.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
@@ -365,10 +370,10 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2047
-  %3 = icmp ult i64 %2, 1023
+  %3 = icmp samesign ult i64 %2, 1023
   %4 = select i1 %3, i32 0, i32 %0
   ret i32 %4
 }
@@ -376,10 +381,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vc_screen.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = icmp ugt i64 %2, 4096
+  %3 = icmp samesign ugt i64 %2, 4096
   %4 = select i1 %3, i32 4096, i32 %0
   ret i32 %4
 }

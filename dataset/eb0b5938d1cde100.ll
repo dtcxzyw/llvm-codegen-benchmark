@@ -1,11 +1,14 @@
 
-; 18 occurrences:
+; 21 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libquic/optimized/a_bitstr.c.ll
 ; libquic/optimized/curve25519.c.ll
 ; libquic/optimized/exponentiation.c.ll
 ; linux/optimized/drm_dp_mst_topology.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/mlib_ImageAffine_NN_Bit.ll
 ; openssl/optimized/libcrypto-lib-a_bitstr.ll

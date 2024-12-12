@@ -9,7 +9,7 @@ entry:
   %3 = icmp eq i64 %2, 20
   %4 = select i1 %3, i64 %1, i64 %2
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = icmp ugt i64 %2, 64
   %4 = select i1 %3, i64 %1, i64 %2
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

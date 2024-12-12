@@ -1,5 +1,5 @@
 
-; 132 occurrences:
+; 139 occurrences:
 ; abc/optimized/cuddGenetic.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -7,6 +7,12 @@
 ; abc/optimized/sclUpsize.c.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -45,6 +51,7 @@
 ; libjpeg-turbo/optimized/wrbmp.c.ll
 ; libjpeg-turbo/optimized/wrppm.c.ll
 ; libpng/optimized/png.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll

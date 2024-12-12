@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; darktable/optimized/rawspeed-identify.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
@@ -19,6 +19,7 @@
 ; mitsuba3/optimized/integrator.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
+; oiio/optimized/exif.cpp.ll
 ; oiio/optimized/iffoutput.cpp.ll
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -28,7 +29,7 @@
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -40,10 +41,10 @@ entry:
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -108,7 +109,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -135,10 +136,10 @@ entry:
 ; opencv/optimized/retina.cpp.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -162,19 +163,18 @@ entry:
 ; rocksdb/optimized/plain_table_reader.cc.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; darktable/optimized/RawDecoder.cpp.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
@@ -186,7 +186,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp ult i32 %3, 8
   ret i1 %4
 }
@@ -198,10 +198,10 @@ entry:
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp ult i32 %3, 8
   ret i1 %4
 }
@@ -228,10 +228,10 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -240,10 +240,10 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; velox/optimized/MemoryAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp ugt i32 %3, 65535
   ret i1 %4
 }
@@ -251,10 +251,10 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -263,11 +263,23 @@ entry:
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000010a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp sgt i32 %3, -1
+  ret i1 %4
+}
+
+; 2 occurrences:
+; llvm/optimized/DAGCombiner.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = mul i32 %0, %2
+  %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
@@ -281,7 +293,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -295,7 +307,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp slt i32 %3, 1048577
   ret i1 %4
 }
@@ -303,10 +315,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp ult i32 %3, 64
   ret i1 %4
 }
@@ -315,36 +327,24 @@ entry:
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp ugt i32 %3, 64
-  ret i1 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/DAGCombiner.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
-  %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
@@ -359,10 +359,10 @@ entry:
 ; opencv/optimized/kinfu_frame.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000012a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp sgt i32 %3, 1
   ret i1 %4
 }
@@ -371,10 +371,10 @@ entry:
 ; opencv/optimized/perf_convolution.cpp.ll
 ; opencv/optimized/retinafasttonemapping.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000121(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp eq i32 %3, 1
   ret i1 %4
 }
@@ -385,10 +385,10 @@ entry:
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/retina.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000126(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp slt i32 %3, 257
   ret i1 %4
 }
@@ -396,10 +396,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -407,10 +407,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix_transform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i64 %1) #0 {
+define i1 @func000000000000018a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }

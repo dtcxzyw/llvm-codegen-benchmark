@@ -14,20 +14,21 @@ define i64 @func00000000000000f0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, -7286425919675154353
-  %5 = mul i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = mul i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = add nsw i64 %3, -1
   %5 = mul nuw nsw i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -207,7 +208,7 @@ define i64 @func00000000000000d0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nsw i64 %3, -1
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -223,7 +224,7 @@ entry:
   %3 = shl nsw i64 %2, 2
   %4 = add nsw i64 %3, -4
   %5 = mul i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -236,20 +237,20 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
   %4 = add i64 %3, 64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
 
 ; 1 occurrences:
-; stockfish/optimized/tbprobe.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000fc(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = add nuw nsw i64 %3, 2
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = add i64 %5, %0
+  %3 = shl i64 %2, 3
+  %4 = add nsw i64 %3, -1
+  %5 = mul i64 %4, %1
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

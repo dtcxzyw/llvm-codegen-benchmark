@@ -11,10 +11,14 @@ func0000000000000006:                   # @func0000000000000006
 	vzeroupper
 	retq
 .LCPI2_0:
-	.quad	384                             # 0x180
+	.quad	2147483647                      # 0x7fffffff
+.LCPI2_1:
+	.long	8                               # 0x8
 func0000000000000008:                   # @func0000000000000008
 	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
-	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
+	vpbroadcastd	.LCPI2_1(%rip), %xmm1   # xmm1 = [8,8,8,8]
+	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:

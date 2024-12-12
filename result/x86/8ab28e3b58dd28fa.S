@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	vcvttss2si	%xmm0, %eax
 	addq	%rsi, %rdi
 	leaq	(%rdi,%rax,4), %rax

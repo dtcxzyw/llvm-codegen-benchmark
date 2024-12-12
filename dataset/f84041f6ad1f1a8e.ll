@@ -30,7 +30,7 @@ entry:
 ; quantlib/optimized/japan.ll
 ; quantlib/optimized/saudiarabia.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add nsw i32 %2, -5
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i1 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i32 %2, 1
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i1 %0, i64 %1) #0 {
+define i1 @func00000000000001a4(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -56

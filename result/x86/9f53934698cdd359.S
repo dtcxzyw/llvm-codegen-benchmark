@@ -62,20 +62,24 @@ func0000000000000021:                   # @func0000000000000021
 	cmpw	$-5, %si
 	adcl	$0, %eax
 	retq
+func00000000000000c3:                   # @func00000000000000c3
+	movl	%edi, %eax
+	cmpw	$2, %si
+	sbbl	$-1, %eax
+	retq
 func0000000000000062:                   # @func0000000000000062
 	xorl	%eax, %eax
 	cmpw	$19, %si
 	setne	%al
 	addl	%edi, %eax
 	retq
-func0000000000000041:                   # @func0000000000000041
+func00000000000000c1:                   # @func00000000000000c1
 	movl	%edi, %eax
 	cmpw	$5, %si
 	sbbl	$-1, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	xorl	%eax, %eax
-	negw	%si
-	seto	%al
-	addl	%edi, %eax
+func00000000000000a3:                   # @func00000000000000a3
+	movl	%edi, %eax
+	cmpw	$11, %si
+	adcl	$0, %eax
 	retq

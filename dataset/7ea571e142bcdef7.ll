@@ -1,5 +1,6 @@
 
-; 170 occurrences:
+; 171 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -184,24 +185,24 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000354(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -1075
   %4 = lshr i32 %3, 6
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ult i32 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/GlobalMerge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000118(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add i32 %2, 1
   %4 = lshr i32 %3, 6
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 

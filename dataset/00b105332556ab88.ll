@@ -14,7 +14,7 @@ entry:
   ret i64 %5
 }
 
-; 83 occurrences:
+; 81 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
@@ -26,10 +26,8 @@ entry:
 ; gromacs/optimized/pargs.cpp.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/efi_64.ll
-; linux/optimized/hid-cypress.ll
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/net_failover.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTUnit.cpp.ll
@@ -147,4 +145,18 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; linux/optimized/maple_tree.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 16
+  %3 = select i1 %2, i64 6, i64 0, !prof !0
+  %4 = and i64 %0, -256
+  %5 = or disjoint i64 %3, %4
+  ret i64 %5
+}
+
 attributes #0 = { nounwind }
+
+!0 = !{!"branch_weights", i32 8000000, i32 4000000}

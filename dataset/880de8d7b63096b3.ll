@@ -1,5 +1,5 @@
 
-; 130 occurrences:
+; 129 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -125,7 +125,6 @@
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
-; luau/optimized/isocline.c.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; spike/optimized/shfli.ll
@@ -402,8 +401,8 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -402653696
-  %4 = or i64 %3, %1
-  %5 = or i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = or i64 %0, %4
   %6 = and i64 %5, -268435865
   ret i64 %6
 }

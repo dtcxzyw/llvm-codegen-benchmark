@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 22 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -16,8 +16,14 @@
 ; rust-analyzer-rs/optimized/3c5yaiy4s1aybe9v.ll
 ; rust-analyzer-rs/optimized/57yy3hfi5uyj25tj.ll
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i16 %0, i64 %1) #0 {
+define i64 @func0000000000000024(i16 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -20
   %3 = icmp ult i16 %0, 5
@@ -25,33 +31,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; openjdk/optimized/symbolTable.ll
-; slurm/optimized/job_mgr.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000038(i16 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 14
-  %3 = icmp ugt i16 %0, 2
-  %4 = select i1 %3, i64 %2, i64 16
-  ret i64 %4
-}
-
-; 1 occurrences:
-; actix-rs/optimized/4mbibhikoaniv1dm.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i16 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -256
-  %3 = icmp ugt i16 %0, 256
-  %4 = select i1 %3, i64 %2, i64 0
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; llvm/optimized/ThreadSanitizer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i16 %0, i64 %1) #0 {
+define i64 @func0000000000000064(i16 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2
   %3 = icmp ult i16 %0, 4

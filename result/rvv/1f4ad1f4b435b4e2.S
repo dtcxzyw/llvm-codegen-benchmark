@@ -208,6 +208,38 @@ func000000000000006a:                   # @func000000000000006a
 	vmnot.m	v8, v17
 	vmorn.mm	v0, v8, v16
 	ret
+.LCPI19_0:
+	.quad	0x4059000000000000              # double 100
+func0000000000000086:                   # @func0000000000000086
+	lui	a0, %hi(.LCPI19_0)
+	fld	fa5, %lo(.LCPI19_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfgt.vf	v16, v8, fa5
+	fmv.d.x	fa5, zero
+	vmfge.vf	v17, v8, fa5
+	vmorn.mm	v0, v16, v17
+	ret
+.LCPI20_0:
+	.quad	0x4066800000000000              # double 180
+func00000000000000d0:                   # @func00000000000000d0
+	fli.d	fa5, inf
+	lui	a0, %hi(.LCPI20_0)
+	fld	fa4, %lo(.LCPI20_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	vmor.mm	v16, v17, v16
+	vmfeq.vf	v17, v8, fa4
+	vmor.mm	v0, v17, v16
+	ret
+func0000000000000096:                   # @func0000000000000096
+	fli.d	fa5, 1.0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfgt.vf	v16, v8, fa5
+	fmv.d.x	fa5, zero
+	vmfgt.vf	v17, v8, fa5
+	vmorn.mm	v0, v16, v17
+	ret
 func0000000000000158:                   # @func0000000000000158
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -216,11 +248,22 @@ func0000000000000158:                   # @func0000000000000158
 	vmfge.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
-.LCPI20_0:
+.LCPI23_0:
+	.quad	0x406fe00000000000              # double 255
+func0000000000000068:                   # @func0000000000000068
+	lui	a0, %hi(.LCPI23_0)
+	fld	fa5, %lo(.LCPI23_0)(a0)
+	fmv.d.x	fa4, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfge.vf	v16, v8, fa4
+	vmfgt.vf	v17, v8, fa5
+	vmorn.mm	v0, v17, v16
+	ret
+.LCPI24_0:
 	.quad	0x433eb208c2dc0000              # double 8.64E+15
 func0000000000000092:                   # @func0000000000000092
-	lui	a0, %hi(.LCPI20_0)
-	fld	fa5, %lo(.LCPI20_0)(a0)
+	lui	a0, %hi(.LCPI24_0)
+	fld	fa5, %lo(.LCPI24_0)(a0)
 	fli.d	fa4, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v16, v8, fa4
@@ -229,93 +272,74 @@ func0000000000000092:                   # @func0000000000000092
 	vmor.mm	v8, v17, v16
 	vmorn.mm	v0, v18, v8
 	ret
-.LCPI21_0:
+.LCPI25_0:
 	.quad	0x41dfffffffc00000              # double 2147483647
 func0000000000000082:                   # @func0000000000000082
-	lui	a0, %hi(.LCPI21_0)
-	fld	fa5, %lo(.LCPI21_0)(a0)
+	lui	a0, %hi(.LCPI25_0)
+	fld	fa5, %lo(.LCPI25_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v16, v8, fa5
 	vmfne.vv	v17, v8, v8
 	vmor.mm	v0, v17, v16
 	ret
-.LCPI22_0:
-	.quad	0x41efffffffe00000              # double 4294967295
-func0000000000000086:                   # @func0000000000000086
-	lui	a0, %hi(.LCPI22_0)
-	fld	fa5, %lo(.LCPI22_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfgt.vf	v16, v8, fa5
-	fmv.d.x	fa5, zero
-	vmfge.vf	v17, v8, fa5
-	vmorn.mm	v0, v16, v17
-	ret
-.LCPI23_0:
+.LCPI26_0:
 	.quad	0x43e0000000000000              # double 9.2233720368547758E+18
 func0000000000000182:                   # @func0000000000000182
-	lui	a0, %hi(.LCPI23_0)
-	fld	fa5, %lo(.LCPI23_0)(a0)
+	lui	a0, %hi(.LCPI26_0)
+	fld	fa5, %lo(.LCPI26_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v16, v8, fa5
 	vmfne.vv	v17, v8, v8
 	vmor.mm	v0, v17, v16
 	ret
-.LCPI24_0:
+.LCPI27_0:
 	.quad	0x41e0000000000000              # double 2147483648
-.LCPI24_1:
+.LCPI27_1:
 	.quad	0xc1e0000000000000              # double -2147483648
 func00000000000001a6:                   # @func00000000000001a6
-	lui	a0, %hi(.LCPI24_0)
-	fld	fa5, %lo(.LCPI24_0)(a0)
-	lui	a0, %hi(.LCPI24_1)
-	fld	fa4, %lo(.LCPI24_1)(a0)
+	lui	a0, %hi(.LCPI27_0)
+	fld	fa5, %lo(.LCPI27_0)(a0)
+	lui	a0, %hi(.LCPI27_1)
+	fld	fa4, %lo(.LCPI27_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v16, v8, fa5
 	vmfge.vf	v17, v8, fa4
 	vmnot.m	v8, v17
 	vmorn.mm	v0, v8, v16
 	ret
-.LCPI25_0:
+.LCPI28_0:
 	.quad	0x54b249ad2594c37d              # double 1.0E+100
 func0000000000000028:                   # @func0000000000000028
-	lui	a0, %hi(.LCPI25_0)
-	fld	fa5, %lo(.LCPI25_0)(a0)
+	lui	a0, %hi(.LCPI28_0)
+	fld	fa5, %lo(.LCPI28_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfne.vv	v16, v8, v8
 	vmfgt.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
-func0000000000000104:                   # @func0000000000000104
-	fli.d	fa5, 1.0
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfeq.vf	v16, v8, fa5
-	fmv.d.x	fa5, zero
-	vmflt.vf	v17, v8, fa5
-	vmor.mm	v0, v17, v16
-	ret
-.LCPI27_0:
+.LCPI29_0:
 	.quad	0xbff004189374bc6a              # double -1.0009999999999999
-.LCPI27_1:
+.LCPI29_1:
 	.quad	0x3ff004189374bc6a              # double 1.0009999999999999
 func0000000000000074:                   # @func0000000000000074
-	lui	a0, %hi(.LCPI27_0)
-	fld	fa5, %lo(.LCPI27_0)(a0)
-	lui	a0, %hi(.LCPI27_1)
-	fld	fa4, %lo(.LCPI27_1)(a0)
+	lui	a0, %hi(.LCPI29_0)
+	fld	fa5, %lo(.LCPI29_0)(a0)
+	lui	a0, %hi(.LCPI29_1)
+	fld	fa4, %lo(.LCPI29_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v16, v8, fa5
 	vmfle.vf	v17, v8, fa4
 	vmorn.mm	v0, v17, v16
 	ret
-.LCPI28_0:
+.LCPI30_0:
 	.quad	0xbf1a36e2eb1c432d              # double -1.0E-4
-.LCPI28_1:
+.LCPI30_1:
 	.quad	0x3f1a36e2eb1c432d              # double 1.0E-4
 func00000000000001a8:                   # @func00000000000001a8
-	lui	a0, %hi(.LCPI28_0)
-	fld	fa5, %lo(.LCPI28_0)(a0)
-	lui	a0, %hi(.LCPI28_1)
-	fld	fa4, %lo(.LCPI28_1)(a0)
+	lui	a0, %hi(.LCPI30_0)
+	fld	fa5, %lo(.LCPI30_0)(a0)
+	lui	a0, %hi(.LCPI30_1)
+	fld	fa4, %lo(.LCPI30_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa4

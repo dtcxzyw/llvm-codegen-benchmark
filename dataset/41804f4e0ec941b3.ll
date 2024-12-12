@@ -19,7 +19,13 @@ entry:
   ret i32 %7
 }
 
-; 2 occurrences:
+; 8 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind

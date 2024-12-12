@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; folly/optimized/Random.cpp.ll
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
@@ -20,7 +21,7 @@ entry:
   %4 = lshr i32 %3, 27
   %5 = xor i32 %4, %3
   %6 = mul i32 %5, 1664525
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

@@ -1,6 +1,6 @@
 func000000000000004a:                   # @func000000000000004a
 	vpsllq	$6, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm0, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsraq	$6, %ymm0, %ymm0

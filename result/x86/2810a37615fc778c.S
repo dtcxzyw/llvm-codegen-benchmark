@@ -1,4 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	movl	%edx, %eax
 	addq	%rsi, %rdi
 	cmpq	%rax, %rdi
@@ -24,14 +24,14 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	movl	%edx, %eax
 	addq	%rsi, %rdi
 	subq	%rax, %rdi
 	cmpq	$1025, %rdi                     # imm = 0x401
 	setge	%al
 	retq
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	movl	%edx, %eax
 	addq	%rsi, %rdi
 	subq	%rax, %rdi

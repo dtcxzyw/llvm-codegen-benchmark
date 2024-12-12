@@ -3,9 +3,9 @@ func0000000000000001:                   # @func0000000000000001
 	andl	$128, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	movl	%edi, %eax
-	andl	$-832, %eax                     # imm = 0xFCC0
 	cmpl	$2, %esi
-	cmovael	%edi, %eax
-	andl	$-16, %eax
+	movl	$-832, %ecx                     # imm = 0xFCC0
+	movl	$-16, %eax
+	cmovbl	%ecx, %eax
+	andl	%edi, %eax
 	retq

@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 71 occurrences:
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -69,6 +69,8 @@
 ; protobuf/optimized/field_comparator.cc.ll
 ; raylib/optimized/rcore.c.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1) #0 {
 entry:

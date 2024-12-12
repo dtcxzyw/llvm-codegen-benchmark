@@ -9,7 +9,7 @@ func0000000000000070:                   # @func0000000000000070
 	add	a0, a0, a1
 	sh3add	a0, a2, a0
 	ret
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	srliw	a2, a2, 2
 	slli	a2, a2, 7
 	add	a0, a0, a1

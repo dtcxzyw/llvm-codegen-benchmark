@@ -1,12 +1,9 @@
 
-; 15 occurrences:
-; clamav/optimized/cpio.c.ll
+; 12 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
-; linux/optimized/genetlink.ll
-; linux/optimized/ht.ll
 ; linux/optimized/intel_sdvo.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openusd/optimized/faceVertex.cpp.ll
@@ -16,7 +13,7 @@
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i16 %0, i16 %1
@@ -28,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/faceVertex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000002c(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i16 %0, i16 %1
@@ -40,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000018c(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %.not = icmp eq i16 %2, 0
   %3 = select i1 %.not, i16 %1, i16 %0

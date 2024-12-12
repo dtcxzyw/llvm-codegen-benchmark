@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0, i32 %1, i64 %2) #0 {

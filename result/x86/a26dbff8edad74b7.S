@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vmovsd	.LCPI0_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0]
 	vsubsd	%xmm1, %xmm2, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
@@ -15,7 +15,7 @@ func000000000000000a:                   # @func000000000000000a
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vmovsd	.LCPI1_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0]
 	vsubsd	%xmm1, %xmm2, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setae	%al

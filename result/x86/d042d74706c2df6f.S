@@ -10,3 +10,9 @@ func0000000000000002:                   # @func0000000000000002
 	movl	$15, %eax
 	cmovel	%esi, %eax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	shrq	$32, %rsi
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq

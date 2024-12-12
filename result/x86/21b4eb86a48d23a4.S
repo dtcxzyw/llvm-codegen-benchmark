@@ -5,13 +5,33 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	andl	$1, %edx
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	andq	$-4, %rdx
+	leaq	(%rdi,%rsi), %rax
+	addq	%rdx, %rax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	andl	$2147483644, %edx               # imm = 0x7FFFFFFC
+	leaq	(%rdi,%rsi), %rax
+	addq	%rdx, %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	movl	%edx, %eax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	andq	$-8, %rdx
+	leaq	(%rdi,%rsi), %rax
+	addq	%rdx, %rax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	andq	$-64, %rdx
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq

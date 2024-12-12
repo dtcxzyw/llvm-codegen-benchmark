@@ -5,7 +5,7 @@ func0000000000000010:                   # @func0000000000000010
 	vmerge.vvm	v10, v12, v10, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000080:                   # @func0000000000000080
 	li	a0, 64
@@ -14,5 +14,5 @@ func0000000000000080:                   # @func0000000000000080
 	vmerge.vvm	v10, v12, v10, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret

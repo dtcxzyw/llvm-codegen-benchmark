@@ -15,11 +15,6 @@ func000000000000003f:                   # @func000000000000003f
 	add	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
-func000000000000003d:                   # @func000000000000003d
-	andi	a1, a1, -2
-	add	a0, a0, a1
-	addiw	a0, a0, 2
-	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 511
 	add	a0, a0, a1

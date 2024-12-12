@@ -2,7 +2,7 @@
 	.long	1                               # 0x1
 .LCPI0_1:
 	.long	2048                            # 0x800
-func0000000000000303:                   # @func0000000000000303
+func0000000000000603:                   # @func0000000000000603
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
 	vptestnmd	%ymm1, %ymm1, %k1

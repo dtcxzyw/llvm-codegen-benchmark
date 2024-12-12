@@ -1,22 +1,21 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	xtn	v1.2s, v1.2d
-	xtn	v0.2s, v0.2d
-	ushr	v1.2s, v1.2s, #8
-	ushr	v0.2s, v0.2s, #8
-	uzp1	v0.4h, v0.4h, v1.4h
+	fmov	x8, d0
+	lsr	x0, x8, #8
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	uzp2	v0.4s, v0.4s, v1.4s
-	shrn	v0.4h, v0.4s, #16
+	fmov	x8, d0
+	lsr	x0, x8, #48
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	uzp2	v0.4s, v0.4s, v1.4s
-	ushr	v0.4s, v0.4s, #20
-	xtn	v0.4h, v0.4s
+	fmov	x8, d0
+	lsr	x0, x8, #52
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

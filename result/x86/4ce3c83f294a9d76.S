@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	subq	%rdx, %rsi
 	cmpq	$32, %rsi
 	setb	%al

@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$4, %sil
 	cmovel	%esi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	movl	%esi, %eax

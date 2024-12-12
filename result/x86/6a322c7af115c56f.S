@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000002:                   # @func0000000000000002
 	testb	$1, %sil
-	movl	$32, %eax
+	movl	$-65536, %eax                   # imm = 0xFFFF0000
 	cmovel	%edx, %eax
 	orl	%edi, %eax
 	retq

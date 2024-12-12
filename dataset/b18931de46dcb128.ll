@@ -24,14 +24,13 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; linux/optimized/intel_audio.ll
+; 1 occurrences:
 ; linux/optimized/mlme.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = shl i32 %0, 3
+  %3 = shl i32 %0, 10
   %4 = mul i32 %3, %2
   ret i32 %4
 }

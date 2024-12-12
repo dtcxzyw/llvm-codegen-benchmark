@@ -13,7 +13,7 @@
 ; ruby/optimized/ripper.ll
 ; velox/optimized/TypeCalculation.yy.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i16 %0) #0 {
+define i64 @func0000000000000026(i16 %0) #0 {
 entry:
   %1 = sext i16 %0 to i32
   %2 = sub nsw i32 0, %1

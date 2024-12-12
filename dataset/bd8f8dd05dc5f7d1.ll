@@ -1,11 +1,10 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; libquic/optimized/curve25519.c.ll
-; lief/optimized/Builder.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll

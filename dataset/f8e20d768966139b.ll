@@ -17,7 +17,7 @@ entry:
   ret i32 %4
 }
 
-; 186 occurrences:
+; 187 occurrences:
 ; abc/optimized/exorBits.c.ll
 ; abc/optimized/exorLink.c.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -46,8 +46,6 @@ entry:
 ; icu/optimized/decNumber.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
-; jq/optimized/unicode_fold2_key.ll
-; jq/optimized/unicode_fold3_key.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; libpng/optimized/pngrutil.c.ll
@@ -68,7 +66,6 @@ entry:
 ; linux/optimized/genetlink.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/intel_bios.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/iommu.ll
 ; linux/optimized/maple_tree.ll
@@ -82,6 +79,13 @@ entry:
 ; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -94,8 +98,6 @@ entry:
 ; nori/optimized/layout.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/maketexture.cpp.ll
-; oniguruma/optimized/unicode_fold2_key.ll
-; oniguruma/optimized/unicode_fold3_key.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
@@ -195,7 +197,6 @@ entry:
 ; wireshark/optimized/packet-opa-mad.c.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; wireshark/optimized/packet-selfm.c.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; wireshark/optimized/packet-teredo.c.ll
 ; wireshark/optimized/packet-trmac.c.ll
 ; wireshark/optimized/packet-x25.c.ll

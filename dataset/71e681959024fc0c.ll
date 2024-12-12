@@ -36,8 +36,7 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; graphviz/optimized/exparse.c.ll
+; 2 occurrences:
 ; linux/optimized/xarray.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
@@ -45,6 +44,17 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967232
   %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i64 %0, i64 0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; graphviz/optimized/exparse.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp samesign ult i32 %2, 264
   %4 = select i1 %3, i64 %0, i64 0
   ret i64 %4
 }

@@ -14,3 +14,11 @@ func0000000000000006:                   # @func0000000000000006
 	orb	%sil, %al
 	orb	%dil, %al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	testl	%edx, %edx
+	movl	$48, %eax
+	cmovel	%edx, %eax
+	andb	$2, %sil
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq

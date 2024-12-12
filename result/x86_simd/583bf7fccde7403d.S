@@ -102,6 +102,14 @@ func0000000000000009:                   # @func0000000000000009
 	vpsrld	$1, %ymm0, %ymm0
 	vpaddd	.LCPI12_1(%rip){1to8}, %ymm0, %ymm0
 	retq
+.LCPI13_0:
+	.long	16                              # 0x10
+func0000000000000013:                   # @func0000000000000013
+	vpaddd	.LCPI13_0(%rip){1to8}, %ymm0, %ymm0
+	vpsrld	$4, %ymm0, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	retq
 func0000000000000011:                   # @func0000000000000011
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0

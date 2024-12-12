@@ -10,18 +10,16 @@ define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 4
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = and i32 %4, 7
   ret i32 %5
 }
 
-; 8 occurrences:
-; linux/optimized/isadma.ll
+; 6 occurrences:
 ; linux/optimized/ndisc.ll
 ; linux/optimized/route.ll
 ; linux/optimized/virtio_net.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-capwap.c.ll
 ; wireshark/optimized/packet-ppp.c.ll
 ; Function Attrs: nounwind

@@ -5,7 +5,7 @@
 ; darktable/optimized/metadata_view.c.ll
 ; git/optimized/pretty.ll
 ; git/optimized/read-cache.ll
-; libphonenumber/optimized/rune.c.ll
+; linux/optimized/8139too.ll
 ; linux/optimized/dcache.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/tg3.ll
@@ -51,7 +51,7 @@ define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2064
   %3 = icmp eq i32 %2, 2064
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = select i1 %4, i32 130, i32 128
   ret i32 %5
 }
@@ -74,18 +74,6 @@ entry:
   %3 = icmp ne i32 %2, 0
   %4 = or i1 %3, %0
   %5 = select i1 %4, i32 130, i32 128
-  ret i32 %5
-}
-
-; 1 occurrences:
-; luau/optimized/isocline.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 252
-  %3 = icmp ugt i32 %2, 195
-  %4 = or i1 %3, %0
-  %5 = select i1 %4, i32 90, i32 30
   ret i32 %5
 }
 

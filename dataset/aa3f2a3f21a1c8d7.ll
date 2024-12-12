@@ -7,7 +7,7 @@
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; mitsuba3/optimized/environment.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0) #0 {
+define i1 @func0000000000000061(i16 %0) #0 {
 entry:
   %1 = shl nuw nsw i16 1, %0
   %2 = and i16 %1, 2045
@@ -21,7 +21,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_enums.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0) #0 {
+define i1 @func0000000000000041(i16 %0) #0 {
 entry:
   %1 = shl nuw i16 1, %0
   %2 = and i16 %1, -28609
@@ -32,11 +32,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hwregs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i16 %0) #0 {
+define i1 @func0000000000000074(i16 %0) #0 {
 entry:
   %1 = shl nuw nsw i16 1, %0
   %2 = and i16 %1, 255
-  %3 = icmp ult i16 %2, 9
+  %3 = icmp samesign ult i16 %2, 9
   ret i1 %3
 }
 

@@ -1,6 +1,9 @@
 
-; 5 occurrences:
+; 8 occurrences:
 ; abc/optimized/wlcBlast.c.ll
+; cvc5/optimized/theory_arith_type_rules.cpp.ll
+; llvm/optimized/ASTImporter.cpp.ll
+; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; openmpi/optimized/rmaps_base_map_job.ll

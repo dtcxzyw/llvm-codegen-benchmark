@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cpython/optimized/_zoneinfo.ll
 ; cpython/optimized/compile.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; luajit/optimized/minilua.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:

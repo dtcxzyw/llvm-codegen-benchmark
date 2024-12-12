@@ -17,15 +17,4 @@ entry:
   ret double %3
 }
 
-; 1 occurrences:
-; openspiel/optimized/TransTableL.cpp.ll
-; Function Attrs: nounwind
-define double @func0000000000000001(i32 %0) #0 {
-entry:
-  %1 = mul i32 %0, 6512000
-  %2 = add nsw i32 %1, 7045120
-  %3 = sitofp i32 %2 to double
-  ret double %3
-}
-
 attributes #0 = { nounwind }

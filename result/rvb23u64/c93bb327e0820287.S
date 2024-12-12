@@ -5,13 +5,6 @@ func0000000000000053:                   # @func0000000000000053
 	ori	a1, a1, -65
 	addw	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
-	sext.w	a1, a0
-	sltiu	a1, a1, 4
-	negw	a1, a1
-	ori	a1, a1, -4
-	addw	a0, a0, a1
-	ret
 func0000000000000040:                   # @func0000000000000040
 	sext.w	a1, a0
 	sltiu	a1, a1, 128

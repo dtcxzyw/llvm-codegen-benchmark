@@ -3,7 +3,7 @@
 ; libevent/optimized/evmap.c.ll
 ; qemu/optimized/ui_input-barrier.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i16 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, 4096
   %3 = icmp eq i16 %1, -8192
@@ -16,7 +16,7 @@ entry:
 ; spike/optimized/clrs16.ll
 ; spike/optimized/clz16.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000014(i16 %0, i16 %1) #0 {
+define i16 @func0000000000000024(i16 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, 4
   %3 = icmp ult i16 %1, 4096

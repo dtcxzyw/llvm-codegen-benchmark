@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 95 occurrences:
 ; assimp/optimized/AMFImporter_Material.cpp.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/iso9660.c.ll
@@ -48,7 +48,6 @@
 ; llvm/optimized/OffloadBundler.cpp.ll
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; llvm/optimized/ParentMapContext.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -119,10 +118,9 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; libevent/optimized/bufferevent_ratelim.c.ll
-; llvm/optimized/TypeLoc.cpp.ll
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
 ; opencv/optimized/matrix_wrap.cpp.ll
 ; Function Attrs: nounwind

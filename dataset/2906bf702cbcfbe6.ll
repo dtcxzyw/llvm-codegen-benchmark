@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 61 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -47,7 +47,6 @@
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
-; hyperscan/optimized/ng_literal_analysis.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -63,10 +62,10 @@
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000028c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = icmp ult i64 %3, 32769
+  %4 = icmp samesign ult i64 %3, 32769
   %5 = icmp ne i64 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -76,7 +75,7 @@ entry:
 ; faiss/optimized/IndexShards.cpp.ll
 ; faiss/optimized/IndexShardsIVF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = icmp sgt i64 %3, 0
@@ -86,9 +85,21 @@ entry:
 }
 
 ; 1 occurrences:
+; hyperscan/optimized/ng_literal_analysis.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = icmp ne i64 %3, 0
+  %5 = icmp ult i64 %0, 12
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; libwebp/optimized/frame_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = icmp ne i64 %3, 0

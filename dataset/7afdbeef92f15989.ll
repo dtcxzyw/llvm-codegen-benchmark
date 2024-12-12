@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; libquic/optimized/ssl_buffer.c.ll
 ; linux/optimized/gre_offload.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/skbuff.ll
 ; lodepng/optimized/lodepng.cpp.ll
@@ -14,7 +13,7 @@
 define i64 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   %4 = zext i16 %3 to i64
   ret i64 %4
 }
@@ -25,7 +24,7 @@ entry:
 define i64 @func0000000000000008(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   %4 = zext i16 %3 to i64
   ret i64 %4
 }

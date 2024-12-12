@@ -10,7 +10,7 @@
 ; rocksdb/optimized/builder.cc.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000bc(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000016c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = icmp ne ptr %0, null
@@ -23,7 +23,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-eng_ctrl.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ult i32 %0, %1
@@ -41,7 +41,7 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_lib.ll
 ; sundials/optimized/arkode_butcher.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq i32 %0, %1
@@ -64,7 +64,7 @@ entry:
 ; wireshark/optimized/packet-aprs.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = icmp ne ptr %0, null
@@ -92,7 +92,7 @@ entry:
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = icmp ne ptr %0, null
@@ -100,14 +100,13 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/lpkAbcDec.c.ll
 ; icu/optimized/normalizer2.ll
-; linux/optimized/thermal_trip.ll
 ; openjdk/optimized/jvmtiEnvBase.ll
 ; wireshark/optimized/packet-mgcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = icmp ne ptr %0, null
@@ -115,13 +114,12 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/MasmParser.cpp.ll
 ; openjdk/optimized/g1HeapRegionManager.ll
 ; openjdk/optimized/loopTransform.ll
-; slurm/optimized/gres_sock_list.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = icmp ne ptr %0, null
@@ -132,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/memnode.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cb(i32 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000018b(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp sge i32 %0, %1
@@ -140,18 +138,19 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; flac/optimized/metadata_object.c.ll
 ; graphviz/optimized/gvplugin.c.ll
 ; linux/optimized/drbg.ll
 ; llvm/optimized/DWARFDebugLine.cpp.ll
 ; llvm/optimized/X86MachObjectWriter.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; nuttx/optimized/fs_dir.c.ll
 ; postgres/optimized/pl_exec.ll
 ; wireshark/optimized/packet-jxta.c.ll
 ; z3/optimized/karr_relation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne i32 %0, %1
@@ -166,7 +165,7 @@ entry:
 ; openmpi/optimized/libmpi_c_profile_la-comm_accept.ll
 ; openmpi/optimized/libmpi_c_profile_la-comm_connect.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = icmp eq ptr %0, null
@@ -178,7 +177,7 @@ entry:
 ; git/optimized/utf8.ll
 ; wireshark/optimized/packet-someip-sd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp sgt i32 %0, %1
@@ -189,7 +188,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/libfreshclam_internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c9(i32 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000189(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp uge i32 %0, %1
@@ -202,7 +201,7 @@ entry:
 ; linux/optimized/scatterlist.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp slt i32 %0, %1
@@ -215,7 +214,7 @@ entry:
 ; wolfssl/optimized/asn.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ac(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ule i32 %1, %2
   %4 = icmp ne ptr %0, null
@@ -223,11 +222,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; postgres/optimized/conv.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-someip.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, %2
   %4 = icmp ne ptr %0, null
@@ -236,20 +234,9 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-btbredr_rf.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, ptr %2) #0 {
-entry:
-  %3 = icmp ne ptr %2, null
-  %4 = icmp ugt i32 %0, %1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/trans_virtio.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000012c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
   %4 = icmp ne ptr %0, null
@@ -260,7 +247,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/qe_arith_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = icmp eq ptr %0, null

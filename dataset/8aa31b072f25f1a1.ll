@@ -1,11 +1,13 @@
 
-; 186 occurrences:
+; 191 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/archive_write_set_format_shar.c.ll
@@ -26,6 +28,8 @@
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
+; freetype/optimized/cff.c.ll
+; freetype/optimized/type1cid.c.ll
 ; graphviz/optimized/postproc.c.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; hyperscan/optimized/single.cpp.ll
@@ -43,7 +47,6 @@
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; libquic/optimized/tasn_dec.c.ll
 ; lief/optimized/psa_crypto_aead.c.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/assoc_array.ll
 ; linux/optimized/build_utility.ll
@@ -64,7 +67,6 @@
 ; linux/optimized/xhci-debugfs.ll
 ; linux/optimized/xhci-trace.ll
 ; linux/optimized/xt_conntrack.ll
-; linux/optimized/xt_state.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64GlobalsTagging.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -91,7 +93,6 @@
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
 ; llvm/optimized/ODRHash.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/Value.cpp.ll
@@ -171,7 +172,6 @@
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
-; wireshark/optimized/packet-ipmi-trace.c.ll
 ; wireshark/optimized/packet-ipmi.c.ll
 ; wireshark/optimized/packet-isup.c.ll
 ; wireshark/optimized/packet-knxip.c.ll
@@ -183,9 +183,14 @@
 ; wireshark/optimized/pcapio.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/tvbuff.c.ll
-; wireshark/optimized/wimax_tlv.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; z3/optimized/api_seq.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i32 %0) #0 {
 entry:

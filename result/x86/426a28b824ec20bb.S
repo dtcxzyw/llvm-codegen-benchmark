@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	cmpl	$10, %edx
 	sete	%cl
 	orb	%dil, %cl
@@ -7,7 +7,7 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000318:                   # @func0000000000000318
+func0000000000000618:                   # @func0000000000000618
 	cmpl	$102, %edx
 	setne	%cl
 	orb	%dil, %cl
@@ -15,7 +15,7 @@ func0000000000000318:                   # @func0000000000000318
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	cmpl	$536870911, %edx                # imm = 0x1FFFFFFF
 	sete	%cl
 	orb	%dil, %cl
@@ -23,7 +23,7 @@ func0000000000000058:                   # @func0000000000000058
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	cmpl	$-2, %edx
 	setb	%cl
 	orb	%dil, %cl
@@ -32,15 +32,7 @@ func0000000000000102:                   # @func0000000000000102
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
-	testl	%edx, %edx
-	sets	%cl
-	orb	%dil, %cl
-	testb	%sil, %sil
-	sete	%al
-	orb	%cl, %al
-	retq
-func0000000000000070:                   # @func0000000000000070
+func00000000000000b0:                   # @func00000000000000b0
 	shrl	$9, %edx
 	andl	$1, %edx
 	cmpl	$5, %esi
@@ -48,16 +40,7 @@ func0000000000000070:                   # @func0000000000000070
 	orb	%dil, %al
 	orb	%dl, %al
 	retq
-func0000000000000310:                   # @func0000000000000310
-	testl	%edx, %edx
-	setne	%cl
-	orb	%dil, %cl
-	andl	$62, %esi
-	cmpl	$10, %esi
-	setae	%al
-	orb	%cl, %al
-	retq
-func0000000000000330:                   # @func0000000000000330
+func0000000000000630:                   # @func0000000000000630
 	shrl	$17, %edx
 	andl	$1, %edx
 	testl	%esi, %esi
@@ -65,7 +48,7 @@ func0000000000000330:                   # @func0000000000000330
 	orb	%dil, %al
 	orb	%dl, %al
 	retq
-func0000000000000282:                   # @func0000000000000282
+func0000000000000502:                   # @func0000000000000502
 	testl	%edx, %edx
 	setg	%cl
 	orb	%dil, %cl

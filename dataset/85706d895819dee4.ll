@@ -14,7 +14,7 @@ entry:
   %2 = and i32 %1, 4095
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = add nuw nsw i32 %5, 2
   ret i32 %6
 }
@@ -29,7 +29,7 @@ entry:
   %2 = and i32 %1, 4095
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = add nsw i32 %5, -1
   ret i32 %6
 }
@@ -45,7 +45,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = add nsw i32 %5, 2
   ret i32 %6
 }

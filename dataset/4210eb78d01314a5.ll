@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; glslang/optimized/intermOut.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll

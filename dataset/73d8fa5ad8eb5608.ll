@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 90 occurrences:
 ; grpc/optimized/writing.cc.ll
 ; linux/optimized/nf_reject_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
@@ -38,6 +38,7 @@
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/TransEmptyStatementsAndDealloc.cpp.ll
 ; llvm/optimized/TransProtectedScope.cpp.ll
+; postgres/optimized/trigger.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll

@@ -28,7 +28,7 @@ entry:
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %0
   %4 = add nsw i32 %3, %1
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %0
   %4 = add i32 %3, %1

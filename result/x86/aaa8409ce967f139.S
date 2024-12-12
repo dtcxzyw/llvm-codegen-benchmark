@@ -10,7 +10,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%esi, %eax
-	orl	$8, %eax
+	orl	$64, %eax
 	subl	%edi, %eax
 	retq
 func000000000000000b:                   # @func000000000000000b

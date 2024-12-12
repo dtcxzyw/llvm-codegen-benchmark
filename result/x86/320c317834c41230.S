@@ -1,10 +1,10 @@
 func0000000000000008:                   # @func0000000000000008
-	testb	$1, %sil
+	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
+	cmpq	%rax, %rdx
 	movl	$-2000000001, %eax              # imm = 0x88CA6BFF
-	cmovnel	%eax, %edi
-	movabsq	$-4294967296, %rcx              # imm = 0xFFFFFFFF00000000
-	cmpq	%rcx, %rdx
-	cmovael	%edi, %eax
+	cmovbl	%eax, %edi
+	testb	$1, %sil
+	cmovel	%edi, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	testb	$1, %sil
@@ -15,18 +15,25 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000010:                   # @func0000000000000010
 	andb	$1, %sil
-	xorl	%ecx, %ecx
-	negb	%sil
-	sbbl	%ecx, %ecx
-	orl	%edi, %ecx
 	cmpq	$257, %rdx                      # imm = 0x101
-	movl	$-1, %eax
-	cmovbl	%ecx, %eax
+	movl	$-1, %ecx
+	cmovbl	%edi, %ecx
+	xorl	%eax, %eax
+	negb	%sil
+	sbbl	%eax, %eax
+	orl	%ecx, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018
-	testb	$1, %sil
+	cmpq	$10, %rdx
 	movl	$1999999998, %eax               # imm = 0x773593FE
 	cmovnel	%eax, %edi
-	cmpq	$10, %rdx
+	testb	$1, %sil
 	cmovel	%edi, %eax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovnel	%eax, %edi
+	cmpq	$9, %rdx
+	cmovbl	%edi, %eax
 	retq

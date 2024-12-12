@@ -30,7 +30,7 @@ func000000000000001a:                   # @func000000000000001a
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$1, %ymm0, %ymm0
 	retq
 func0000000000000018:                   # @func0000000000000018
@@ -65,6 +65,6 @@ func0000000000000018:                   # @func0000000000000018
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpsrlq	$4, %ymm1, %ymm1
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$1, %ymm0, %ymm0
 	retq

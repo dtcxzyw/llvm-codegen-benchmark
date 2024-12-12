@@ -1,47 +1,39 @@
-func00000000000000c1:                   // @func00000000000000c1
+func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
-	cmeq	v3.4s, v3.4s, #0
-	cmeq	v2.4s, v2.4s, #0
-	uzp1	v2.8h, v2.8h, v3.8h
-	movi	v3.8b, #14
-	mvn	v2.16b, v2.16b
-	cmeq	v1.8b, v1.8b, v3.8b
-	xtn	v2.8b, v2.8h
-	bif	v0.8b, v2.8b, v1.8b
+	and	w8, w1, #0xff
+	cmp	w2, #0
+	cset	w9, ne
+	cmp	w8, #14
+	csel	w8, w0, w9, eq
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func00000000000000a4:                   // @func00000000000000a4
+func0000000000000144:                   // @func0000000000000144
 // %bb.0:                               // %entry
-	movi	v4.4s, #180
-	cmgt	v3.4s, v3.4s, v4.4s
-	cmgt	v2.4s, v2.4s, v4.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	movi	v3.8b, #248
-	xtn	v2.8b, v2.8h
-	cmhi	v1.8b, v3.8b, v1.8b
-	bif	v0.8b, v2.8b, v1.8b
+	and	w8, w1, #0xff
+	cmp	w2, #180
+	cset	w9, gt
+	cmp	w8, #248
+	csel	w8, w0, w9, lo
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000064:                   // @func0000000000000064
+func00000000000000c4:                   // @func00000000000000c4
 // %bb.0:                               // %entry
-	movi	v4.4s, #90
-	cmgt	v3.4s, v4.4s, v3.4s
-	cmgt	v2.4s, v4.4s, v2.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	movi	v3.8b, #248
-	xtn	v2.8b, v2.8h
-	cmhi	v1.8b, v3.8b, v1.8b
-	bif	v0.8b, v2.8b, v1.8b
+	and	w8, w1, #0xff
+	cmp	w2, #90
+	cset	w9, lt
+	cmp	w8, #248
+	csel	w8, w0, w9, lo
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v4.4s, #3
-	cmeq	v1.8b, v1.8b, #0
-	cmeq	v3.4s, v3.4s, v4.4s
-	cmeq	v2.4s, v2.4s, v4.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	xtn	v2.8b, v2.8h
-	bif	v0.8b, v2.8b, v1.8b
+	cmp	w2, #3
+	cset	w8, eq
+	tst	w1, #0xff
+	csel	w8, w0, w8, eq
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

@@ -5,7 +5,7 @@
 ; openssl/optimized/libdefault-lib-hkdf.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = urem i64 %0, %2
@@ -13,7 +13,7 @@ entry:
   ret i1 %4
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; c3c/optimized/c_abi_x64.c.ll
 ; coreutils-rs/optimized/11hiuykak1azonq6.ll
 ; darktable/optimized/NefDecoder.cpp.ll
@@ -32,7 +32,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/PDBFile.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
@@ -68,7 +67,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; arrow/optimized/align_util.cc.ll
 ; git/optimized/ws.ll
 ; libzmq/optimized/pipe.cpp.ll
@@ -77,13 +76,12 @@ entry:
 ; llvm/optimized/DWARFDebugArangeSet.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/MCAssembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; qemu/optimized/hw_nvme_ns.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = urem i64 %0, %2
@@ -102,17 +100,6 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = urem i64 %0, %2
   %4 = icmp ne i64 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; z3/optimized/bv_rewriter.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = urem i64 %0, %2
-  %4 = icmp ult i64 %3, 64
   ret i1 %4
 }
 

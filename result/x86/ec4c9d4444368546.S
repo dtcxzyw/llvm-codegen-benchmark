@@ -15,7 +15,7 @@ func0000000000000004:                   # @func0000000000000004
 	shrq	$32, %rsi
 	sete	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	subq	%rdx, %rsi
 	orq	%rdi, %rsi
 	setns	%al
@@ -30,13 +30,13 @@ func000000000000000c:                   # @func000000000000000c
 	orq	%rdi, %rsi
 	setne	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	subq	%rdx, %rsi
 	orq	%rdi, %rsi
 	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
 	seta	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	subq	%rdx, %rsi
 	orq	%rdi, %rsi
 	sete	%al

@@ -55,12 +55,12 @@
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 357913941
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 858993459
   ret i32 %4
 }
 
-; 73 occurrences:
+; 74 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -101,7 +101,6 @@ entry:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
-; abc/optimized/satUtil.c.ll
 ; abc/optimized/sswSim.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -115,6 +114,8 @@ entry:
 ; libwebp/optimized/predictor_enc.c.ll
 ; linux/optimized/entropy_common.ll
 ; linux/optimized/md.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_color.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
@@ -138,7 +139,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 53687091
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 117901063
   ret i32 %4
 }
@@ -185,7 +186,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -16777216
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, -16777216
   ret i32 %4
 }

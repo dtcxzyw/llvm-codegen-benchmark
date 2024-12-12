@@ -4,7 +4,7 @@
 ; rust-analyzer-rs/optimized/1jnytxsf9ijspdxz.ll
 ; rust-analyzer-rs/optimized/53ntv1pfq7fnns7g.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = icmp ult i64 %2, %0
@@ -14,18 +14,18 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f5(i64 %0, i64 %1) #0 {
+define i1 @func00000000000007f5(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = add i64 %2, 8
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp samesign ule i64 %3, %0
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f6(i64 %0, i64 %1) #0 {
+define i1 @func00000000000007e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 8
@@ -41,7 +41,7 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = icmp slt i64 %2, %0

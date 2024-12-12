@@ -1,8 +1,23 @@
 
-; 132 occurrences:
+; 144 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/sysinfo.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_ic.c.ll
@@ -49,7 +64,6 @@
 ; openblas/optimized/dlasq5.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsytf2_rk.c.ll
 ; opencv/optimized/adaptive_manifold_filter_n.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
@@ -75,10 +89,8 @@
 ; postgres/optimized/geo_ops.ll
 ; proj/optimized/common.cpp.ll
 ; proj/optimized/datum.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/grids.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/analyticcompoundoptionengine.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
@@ -136,12 +148,51 @@
 define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e+01
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
-; 77 occurrences:
+; 116 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/partition.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/kinsol.c.ll
@@ -222,16 +273,32 @@ entry:
 define i1 @func0000000000000005(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 5.000000e+00
-  %3 = fcmp ult double %2, %0
+  %3 = fcmp ugt double %0, %2
   ret i1 %3
 }
 
-; 128 occurrences:
+; 144 occurrences:
 ; abc/optimized/cuddSplit.c.ll
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idaa.c.ll
@@ -359,11 +426,43 @@ entry:
 define i1 @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e-01
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
-; 141 occurrences:
+; 172 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; cjson/optimized/cJSON.c.ll
 ; cjson/optimized/cJSON_Utils.c.ll
 ; graphviz/optimized/intersection.c.ll
@@ -371,7 +470,6 @@ entry:
 ; gromacs/optimized/read_params.cpp.ll
 ; gromacs/optimized/x2top.cpp.ll
 ; ipopt/optimized/IpCGPenaltyLSAcceptor.ll
-; ipopt/optimized/IpUtils.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
@@ -509,16 +607,20 @@ entry:
 define i1 @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 0x3CE4000000000000
-  %3 = fcmp oge double %2, %0
+  %3 = fcmp ole double %0, %2
   ret i1 %3
 }
 
-; 38 occurrences:
+; 42 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; casadi/optimized/idas.c.ll
 ; ceres/optimized/gradient_checker.cc.ll
 ; gromacs/optimized/biasgrid.cpp.ll
@@ -556,7 +658,7 @@ entry:
 define i1 @func0000000000000003(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.500000e+00
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 
@@ -575,7 +677,7 @@ entry:
 define i1 @func000000000000000d(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 0x3FF00068E0000000
-  %3 = fcmp ule double %2, %0
+  %3 = fcmp uge double %0, %2
   ret i1 %3
 }
 
@@ -592,7 +694,7 @@ entry:
 define i1 @func000000000000000c(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e-03
-  %3 = fcmp ole double %2, %0
+  %3 = fcmp oge double %0, %2
   ret i1 %3
 }
 
@@ -613,7 +715,7 @@ entry:
 define i1 @func0000000000000008(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 5.000000e-01
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
@@ -628,7 +730,7 @@ entry:
 define i1 @func000000000000000b(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e+01
-  %3 = fcmp uge double %2, %0
+  %3 = fcmp ule double %0, %2
   ret i1 %3
 }
 
@@ -641,7 +743,7 @@ entry:
 define i1 @func0000000000000007(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 5.000000e-01
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 

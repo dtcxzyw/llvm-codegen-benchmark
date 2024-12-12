@@ -10,7 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	notb	%dil
 	andb	%dil, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	subl	%edx, %esi
 	testl	%esi, %esi
 	setg	%al

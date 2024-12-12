@@ -4,7 +4,7 @@
 ; mitsuba3/optimized/regular.cpp.ll
 ; mitsuba3/optimized/tabphase.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, double %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %2, 0.000000e+00
   %4 = select i1 %3, i32 %0, i32 %1
@@ -18,7 +18,7 @@ entry:
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, double %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 1.000000e+00
   %4 = select i1 %3, i32 %0, i32 %1
@@ -31,7 +31,7 @@ entry:
 ; sundials/optimized/arkode_arkstep.c.ll
 ; sundials/optimized/arkode_mristep.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, double %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fcmp une double %2, 0.000000e+00
   %4 = select i1 %3, i32 %0, i32 %1

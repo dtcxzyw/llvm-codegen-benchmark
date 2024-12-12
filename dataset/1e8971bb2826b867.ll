@@ -5,7 +5,7 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 1, i32 2

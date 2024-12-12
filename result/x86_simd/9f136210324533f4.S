@@ -97,7 +97,7 @@ func000000000000003f:                   # @func000000000000003f
 	vpaddd	%ymm1, %ymm1, %ymm3
 	vpaddd	%ymm3, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.byte	255                             # 0xff
@@ -141,7 +141,7 @@ func000000000000003f:                   # @func000000000000003f
 	.byte	0                               # 0x0
 func0000000000000015:                   # @func0000000000000015
 	vpandd	.LCPI3_2(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpmulld	.LCPI3_1(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

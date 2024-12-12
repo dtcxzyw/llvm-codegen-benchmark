@@ -6,11 +6,6 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a1, a1, -32
 	and	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	addi	a0, a0, 988
-	slli	a0, a0, 54
-	srli	a0, a0, 56
-	ret
 func000000000000001b:                   # @func000000000000001b
 	addi	a0, a0, 63
 	lui	a1, 262144
@@ -25,6 +20,11 @@ func0000000000000002:                   # @func0000000000000002
 	add	a0, a0, a1
 	slli	a0, a0, 24
 	srli	a0, a0, 56
+	ret
+func0000000000000008:                   # @func0000000000000008
+	addi	a0, a0, 63
+	srli	a0, a0, 3
+	andi	a0, a0, -8
 	ret
 .LCPI4_0:
 	.quad	4593671619817234432             # 0x3fbffffff9ffe000

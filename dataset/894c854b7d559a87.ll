@@ -1,10 +1,9 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; cpython/optimized/_datetimemodule.ll
 ; git/optimized/add-patch.ll
-; gromacs/optimized/tng_io.c.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
@@ -24,12 +23,14 @@
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/TypeLoc.cpp.ll
 ; llvm/optimized/TypeLocBuilder.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; mitsuba3/optimized/appender.cpp.ll
 ; ockam-rs/optimized/r526c2e8kd9diy6.ll
 ; ruby/optimized/stringio.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; tev/optimized/Common.cpp.ll
 ; tev/optimized/Ipc.cpp.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:

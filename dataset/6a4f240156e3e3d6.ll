@@ -33,8 +33,8 @@
 define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
-  %3 = or i1 %.not, %1
-  %4 = or i1 %3, %0
+  %3 = or i1 %1, %.not
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -50,7 +50,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

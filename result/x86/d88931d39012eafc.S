@@ -4,12 +4,6 @@ func0000000000000004:                   # @func0000000000000004
 	cmovnel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
-	cmpb	$81, %dl
-	movl	$201326592, %eax                # imm = 0xC000000
-	cmovael	%esi, %eax
-	addl	%edi, %eax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	xorl	%eax, %eax
 	testb	%dl, %dl

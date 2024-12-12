@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	movabsq	$-27021597764235265, %rax       # imm = 0xFF9FFFFFFFFFCFFF
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	orl	%edx, %esi
 	orl	%edi, %esi
 	xorl	%eax, %eax
@@ -13,7 +13,7 @@ func0000000000000034:                   # @func0000000000000034
 	setae	%al
 	leaq	36(,%rax,4), %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	orl	%edx, %esi
 	orl	%edi, %esi
 	xorl	%eax, %eax

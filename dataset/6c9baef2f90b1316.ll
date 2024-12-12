@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; clamav/optimized/entconv.c.ll
 ; clamav/optimized/vba_extract.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -9,6 +9,8 @@
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wireshark/optimized/packet-dhcp.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -30,7 +32,7 @@ entry:
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %0, i16 %1, i16 %2
   %4 = and i16 %3, -4

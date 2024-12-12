@@ -34,7 +34,7 @@ entry:
 ; abc/optimized/saigSynch.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %not. = xor i1 %0, true

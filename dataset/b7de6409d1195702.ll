@@ -9,8 +9,9 @@ entry:
   ret i64 %4
 }
 
-; 42 occurrences:
+; 44 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/fs-poll.c.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
@@ -52,6 +53,7 @@ entry:
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; wireshark/optimized/packet-rpcrdma.c.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -60,7 +62,7 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; hermes/optimized/StorageProvider.cpp.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
@@ -74,6 +76,8 @@ entry:
 ; ring-rs/optimized/2y22w349mvmovez2.ll
 ; rocksdb/optimized/file_prefetch_buffer.cc.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:

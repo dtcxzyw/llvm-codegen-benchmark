@@ -1,11 +1,11 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
 	negw	a2, a0
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sext.w	a1, a1
 	negw	a2, a0
 	sltiu	a1, a1, 4
@@ -28,7 +28,7 @@ func000000000000000a:                   # @func000000000000000a
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a1, a1
 	negw	a2, a0
 	slti	a1, a1, 0
@@ -36,7 +36,7 @@ func000000000000001a:                   # @func000000000000001a
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a1, a1
 	li	a2, 8
 	subw	a2, a2, a0
@@ -44,7 +44,7 @@ func0000000000000031:                   # @func0000000000000031
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	sext.w	a1, a1
 	li	a2, 8
 	subw	a2, a2, a0
@@ -53,14 +53,14 @@ func0000000000000038:                   # @func0000000000000038
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
 	negw	a2, a0
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sext.w	a1, a1
 	negw	a2, a0
 	slti	a1, a1, 0
@@ -76,7 +76,7 @@ func0000000000000006:                   # @func0000000000000006
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	li	a2, 256
 	srliw	a1, a1, 24
 	subw	a2, a2, a0

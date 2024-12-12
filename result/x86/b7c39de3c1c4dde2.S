@@ -27,13 +27,13 @@ func000000000000000b:                   # @func000000000000000b
 	andl	$15, %eax
 	orl	%edi, %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	movq	%rsi, %rax
+	andl	$-65536, %eax                   # imm = 0xFFFF0000
+	orl	%edi, %eax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	movq	%rsi, %rax
 	andl	$-1073741824, %eax              # imm = 0xC0000000
-	orl	%edi, %eax
-	retq
-func0000000000000000:                   # @func0000000000000000
-	movq	%rsi, %rax
-	andl	$7, %eax
 	orl	%edi, %eax
 	retq

@@ -33,14 +33,14 @@ func0000000000000006:                   # @func0000000000000006
 	vucomiss	%xmm1, %xmm0
 	setb	%al
 	retq
+func0000000000000002:                   # @func0000000000000002
+	vucomiss	%xmm0, %xmm0
+	setp	%al
+	retq
 func0000000000000018:                   # @func0000000000000018
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setae	%al
-	retq
-func0000000000000002:                   # @func0000000000000002
-	vucomiss	%xmm0, %xmm0
-	setp	%al
 	retq
 func000000000000001c:                   # @func000000000000001c
 	vucomiss	%xmm0, %xmm0

@@ -15,7 +15,7 @@ entry:
 ; postgres/optimized/heaptoast.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp eq i32 %0, %1

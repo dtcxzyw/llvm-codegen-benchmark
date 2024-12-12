@@ -1,23 +1,23 @@
-func0000000000000094:                   # @func0000000000000094
+func0000000000000114:                   # @func0000000000000114
 	srli	a1, a1, 3
 	sext.w	a1, a1
 	sgtz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000098:                   # @func0000000000000098
+func0000000000000118:                   # @func0000000000000118
 	srli	a1, a1, 2
 	sext.w	a1, a1
 	addi	a1, a1, -2
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	srli	a1, a1, 3
 	sext.w	a1, a1
 	slti	a1, a1, 5
 	or	a0, a0, a1
 	ret
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	srli	a1, a1, 3
 	sext.w	a1, a1
 	seqz	a1, a1

@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	orl	$1, %esi
 	cmpl	%edi, %esi
 	setb	%al
@@ -8,22 +8,22 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	orl	$7, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	orl	$3, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	orl	$1, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	orl	$-2147483648, %esi              # imm = 0x80000000
 	cmpl	%edi, %esi
 	sete	%al

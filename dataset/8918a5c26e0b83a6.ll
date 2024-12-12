@@ -24,8 +24,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
+; linux/optimized/fib_trie.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i1 %0, i8 %1) #0 {

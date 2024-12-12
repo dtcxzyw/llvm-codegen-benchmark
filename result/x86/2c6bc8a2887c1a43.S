@@ -1,27 +1,27 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	%edx, %edx
 	leal	(%rdx,%rdx,4), %eax
-	cmpl	%esi, %eax
-	setl	%al
-	orb	%dil, %al
-	retq
-func0000000000000036:                   # @func0000000000000036
-	shll	$2, %edx
-	leal	(%rdx,%rdx,4), %eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	setg	%al
 	orb	%dil, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000066:                   # @func0000000000000066
+	shll	$2, %edx
+	leal	(%rdx,%rdx,4), %eax
+	cmpl	%eax, %esi
+	setl	%al
+	orb	%dil, %al
+	retq
+func0000000000000044:                   # @func0000000000000044
 	addl	%edx, %edx
 	leal	(%rdx,%rdx,4), %eax
-	cmpl	%esi, %eax
-	seta	%al
+	cmpl	%eax, %esi
+	setb	%al
 	orb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	leal	(%rdx,%rdx,2), %eax
-	cmpl	%esi, %eax
-	setb	%al
+	cmpl	%eax, %esi
+	seta	%al
 	orb	%dil, %al
 	retq

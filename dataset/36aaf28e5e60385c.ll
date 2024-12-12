@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -13,6 +13,7 @@
 ; openusd/optimized/pointInstancer.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; velox/optimized/AllocationPool.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:

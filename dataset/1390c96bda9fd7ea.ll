@@ -1,5 +1,5 @@
 
-; 206 occurrences:
+; 209 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/sclUpsize.c.ll
@@ -19,6 +19,8 @@
 ; assimp/optimized/X3DExporter.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_friction_joint.cpp.ll
 ; box2d/optimized/b2_motor_joint.cpp.ll
 ; box2d/optimized/b2_weld_joint.cpp.ll
@@ -98,6 +100,7 @@
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -252,7 +255,7 @@ entry:
   ret i1 %3
 }
 
-; 72 occurrences:
+; 66 occurrences:
 ; box2d/optimized/b2_prismatic_joint.cpp.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
@@ -304,19 +307,13 @@ entry:
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
-; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/interaction.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/materials.cpp.ll
-; pbrt-v4/optimized/mesh.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
-; pbrt-v4/optimized/render.cpp.ll
 ; pbrt-v4/optimized/scene.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
-; pbrt-v4/optimized/textures.cpp.ll
 ; pbrt-v4/optimized/transform.cpp.ll
 ; pbrt-v4/optimized/vecmath.cpp.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
@@ -459,10 +456,12 @@ entry:
   ret i1 %3
 }
 
-; 122 occurrences:
+; 126 occurrences:
 ; abc/optimized/sclDnsize.c.ll
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/StandardShapes.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3GpuRaycast.ll
@@ -582,6 +581,8 @@ entry:
 ; recastnavigation/optimized/main.cpp.ll
 ; tev/optimized/ExrImageLoader.cpp.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
@@ -590,17 +591,12 @@ entry:
   ret i1 %3
 }
 
-; 20 occurrences:
+; 15 occurrences:
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; ncnn/optimized/roialign.cpp.ll
-; ncnn/optimized/roialign_x86.cpp.ll
-; ncnn/optimized/roialign_x86_avx.cpp.ll
-; ncnn/optimized/roialign_x86_avx512.cpp.ll
-; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; opencv/optimized/bound_min.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
@@ -701,8 +697,7 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
-; openblas/optimized/ieeeck.c.ll
+; 3 occurrences:
 ; opencv/optimized/fast_icp.cpp.ll
 ; opencv/optimized/rho.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
@@ -731,16 +726,29 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
+; 7 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(float %0, float %1) #0 {
 entry:
   %2 = fadd float %0, %1
   %3 = fcmp ueq float %2, 0.000000e+00
+  ret i1 %3
+}
+
+; 1 occurrences:
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(float %0, float %1) #0 {
+entry:
+  %2 = fadd float %0, %1
+  %3 = fcmp one float %2, 0x7FF0000000000000
   ret i1 %3
 }
 

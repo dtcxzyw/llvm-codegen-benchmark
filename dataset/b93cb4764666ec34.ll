@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/mcast_stream.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -39,7 +39,7 @@ entry:
 ; icu/optimized/cal.ll
 ; icu/optimized/calendar.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0

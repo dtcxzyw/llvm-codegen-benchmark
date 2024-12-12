@@ -10,7 +10,7 @@
 define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fsub double 5.000000e-01, %3
   ret double %4
 }

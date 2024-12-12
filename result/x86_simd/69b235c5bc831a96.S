@@ -44,3 +44,13 @@ func0000000000000007:                   # @func0000000000000007
 	vcmpneqps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+.LCPI5_0:
+	.long	0x3f4ccccd                      # float 0.800000011
+func000000000000000c:                   # @func000000000000000c
+	vcvtuqq2ps	%ymm1, %xmm1
+	vcvtuqq2ps	%ymm0, %xmm0
+	vdivps	%xmm1, %xmm0, %xmm0
+	vbroadcastss	.LCPI5_0(%rip), %xmm1   # xmm1 = [8.00000011E-1,8.00000011E-1,8.00000011E-1,8.00000011E-1]
+	vcmpleps	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq

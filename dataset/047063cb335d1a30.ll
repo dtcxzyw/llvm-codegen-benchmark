@@ -3,7 +3,6 @@
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/ifTime.c.ll
-; abc/optimized/mapperCore.c.ll
 ; abc/optimized/mfsMan.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclDnsize.c.ll
@@ -13,6 +12,8 @@
 ; assimp/optimized/FBXExporter.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
 ; assimp/optimized/TextureTransform.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/intersection_box.ll
 ; bullet3/optimized/IDMath.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
@@ -133,7 +134,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll

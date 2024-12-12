@@ -3,7 +3,7 @@ func0000000000000040:                   # @func0000000000000040
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrld	$6, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000043:                   # @func0000000000000043
@@ -11,7 +11,7 @@ func0000000000000043:                   # @func0000000000000043
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrld	$6, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000002:                   # @func0000000000000002
@@ -27,7 +27,7 @@ func000000000000000b:                   # @func000000000000000b
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrld	$8, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000001:                   # @func0000000000000001

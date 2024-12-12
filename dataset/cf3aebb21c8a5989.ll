@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; mitsuba3/optimized/rayleigh.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind

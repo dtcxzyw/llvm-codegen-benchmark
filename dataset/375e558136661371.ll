@@ -20,12 +20,12 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = xor i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 672
-  %5 = getelementptr nusw [2 x ptr], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 672
+  %5 = getelementptr nusw nuw [2 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -35,11 +35,11 @@ entry:
 ; postgres/optimized/sha1_shlib.ll
 ; postgres/optimized/sha1_srv.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = xor i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 24
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
   %5 = getelementptr [2 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

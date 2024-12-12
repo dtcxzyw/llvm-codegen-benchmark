@@ -234,7 +234,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %reass.sub = sub i32 %1, %2
   %3 = add i32 %reass.sub, 32
@@ -245,7 +245,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/tiffinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %reass.sub = sub i32 %1, %2
   %3 = add i32 %reass.sub, 8

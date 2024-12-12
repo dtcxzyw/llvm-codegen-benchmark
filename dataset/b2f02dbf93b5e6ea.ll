@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; re2/optimized/dfa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000286(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 4
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp slt i64 %5, 0
   ret i1 %6
@@ -20,6 +20,18 @@ entry:
   %4 = add i64 %3, %1
   %5 = sub i64 %0, %4
   %6 = icmp ugt i64 %5, 107374182399
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/shenandoahHeapRegion.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 3
+  %4 = add i64 %3, %1
+  %5 = sub i64 %0, %4
+  %6 = icmp samesign ugt i64 %5, 104857599
   ret i1 %6
 }
 
@@ -38,12 +50,10 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
-; entt/optimized/meta_container.cpp.ll
-; hyperscan/optimized/rose_build_merge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = add i64 %3, %1
@@ -60,7 +70,7 @@ entry:
 ; ninja/optimized/graph.cc.ll
 ; spike/optimized/tsi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000028a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 7
   %4 = add nsw i64 %3, %1
@@ -82,11 +92,11 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; opencv/optimized/canny.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
-  %4 = add i64 %3, %1
-  %5 = icmp sle i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = icmp sge i64 %0, %4
   ret i1 %5
 }
 
@@ -103,12 +113,12 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; opencv/optimized/canny.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000234(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %0, %4
-  %6 = icmp ult i64 %5, 64
+  %6 = icmp samesign ult i64 %5, 64
   ret i1 %6
 }
 
@@ -116,12 +126,40 @@ entry:
 ; entt/optimized/meta_container.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 7
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp sgt i64 %5, -1
+  ret i1 %6
+}
+
+; 2 occurrences:
+; entt/optimized/meta_container.cpp.ll
+; hyperscan/optimized/rose_build_merge.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000214(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 7
+  %4 = add i64 %1, %3
+  %5 = sub i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 128
+  ret i1 %6
+}
+
+; 4 occurrences:
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 4
+  %4 = add i64 %1, %3
+  %5 = sub nuw i64 %0, %4
+  %6 = icmp ult i64 %5, 16
   ret i1 %6
 }
 
@@ -146,10 +184,10 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %0, %4
   %6 = icmp ult i64 %5, 32
   ret i1 %6
@@ -158,7 +196,7 @@ entry:
 ; 1 occurrences:
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000284(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %1

@@ -27,10 +27,3 @@ func000000000000000a:                   # @func000000000000000a
 	andi	a0, a2, 3
 .LBB3_2:                                # %entry
 	ret
-func0000000000000008:                   # @func0000000000000008
-	srliw	a1, a1, 1
-	li	a3, 1560
-	bltu	a3, a1, .LBB4_2
-	andi	a0, a2, 2047
-.LBB4_2:                                # %entry
-	ret

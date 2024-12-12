@@ -1,5 +1,5 @@
 
-; 139 occurrences:
+; 132 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/extraUtilUtil.c.ll
@@ -8,7 +8,6 @@
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; assimp/optimized/clipper.cpp.ll
-; c3c/optimized/benchmark.c.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/integrator.cpp.ll
 ; clamav/optimized/clamdtop.c.ll
@@ -18,6 +17,7 @@
 ; cpython/optimized/_ctypes_test.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/bltinmodule.ll
+; cpython/optimized/mathmodule.ll
 ; cpython/optimized/signalmodule.ll
 ; darktable/optimized/darkroom.c.ll
 ; darktable/optimized/filtering.c.ll
@@ -31,10 +31,8 @@
 ; gromacs/optimized/muParserTest.cpp.ll
 ; hdf5/optimized/H5Ztrans.c.ll
 ; hdf5/optimized/H5timer.c.ll
-; hdf5/optimized/io_timer.c.ll
 ; icu/optimized/astro.ll
 ; icu/optimized/uperf.ll
-; ipopt/optimized/IpUtils.ll
 ; jq/optimized/builtin.ll
 ; libjpeg-turbo/optimized/tjutil.c.ll
 ; libquic/optimized/time.cc.ll
@@ -54,7 +52,6 @@
 ; openmpi/optimized/iof_base_output.ll
 ; openmpi/optimized/iof_hnp_read.ll
 ; openmpi/optimized/iof_prted_read.ll
-; openmpi/optimized/libmpi_c_profile_la-wtime.ll
 ; openmpi/optimized/libprrte_la-pmix_server_dyn.ll
 ; openmpi/optimized/libprrte_la-pmix_server_gen.ll
 ; openmpi/optimized/libprrte_la-prted_comm.ll
@@ -84,7 +81,6 @@
 ; openmpi/optimized/tm_tree.ll
 ; openspiel/optimized/stones_and_gems.cc.ll
 ; osqp/optimized/amd_2.c.ll
-; osqp/optimized/timing_linux.c.ll
 ; php/optimized/SAPI.ll
 ; php/optimized/microtime.ll
 ; php/optimized/session.ll
@@ -98,7 +94,6 @@
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/robin.cpp.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; quantlib/optimized/btp.ll
 ; quantlib/optimized/chfliborswap.ll
@@ -118,7 +113,6 @@
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/process.ll
-; ruby/optimized/scheduler.ll
 ; slurm/optimized/job_info.ll
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/print.ll
@@ -132,7 +126,6 @@
 ; wireshark/optimized/lbm_lbtru_transport_dialog.cpp.ll
 ; wireshark/optimized/lte_rlc_graph_dialog.cpp.ll
 ; wireshark/optimized/tap-camelsrt.c.ll
-; wireshark/optimized/time_util.c.ll
 ; wolfssl/optimized/api.c.ll
 ; wolfssl/optimized/benchmark.c.ll
 ; wolfssl/optimized/client.c.ll
@@ -143,7 +136,7 @@
 define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

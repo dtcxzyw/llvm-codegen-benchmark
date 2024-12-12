@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	64                              # 0x40
-func00000000000000e0:                   # @func00000000000000e0
+func00000000000001a0:                   # @func00000000000001a0
 	vpaddq	%ymm0, %ymm1, %ymm2
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3   # ymm3 = [64,64,64,64]
 	vpcmpnleuq	%ymm3, %ymm2, %k1
@@ -9,7 +9,7 @@ func00000000000000e0:                   # @func00000000000000e0
 	retq
 .LCPI1_0:
 	.quad	64                              # 0x40
-func00000000000003e3:                   # @func00000000000003e3
+func00000000000007e3:                   # @func00000000000007e3
 	vpaddq	%ymm0, %ymm1, %ymm2
 	vpbroadcastq	.LCPI1_0(%rip), %ymm3   # ymm3 = [64,64,64,64]
 	vpcmpnleuq	%ymm3, %ymm2, %k1

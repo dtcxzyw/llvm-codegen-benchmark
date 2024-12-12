@@ -25,19 +25,7 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; meshoptimizer/optimized/vertexcodec.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 126
-  %3 = xor i32 %2, 127
-  %4 = icmp ule i32 %3, %0
-  ret i1 %4
-}
-
-; 5 occurrences:
-; libwebp/optimized/predictor_enc.c.ll
+; 4 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; oiio/optimized/SHA1.cpp.ll

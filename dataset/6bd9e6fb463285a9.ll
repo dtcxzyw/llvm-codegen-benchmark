@@ -35,12 +35,13 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; casadi/optimized/cvodes_band.c.ll
 ; casadi/optimized/cvodes_dense.c.ll
 ; cpython/optimized/preconfig.ll
 ; gromacs/optimized/perf_est.cpp.ll
 ; libevent/optimized/http.c.ll
+; libwebp/optimized/demux.c.ll
 ; linux/optimized/uncore.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
@@ -65,18 +66,6 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/X86ISelLowering.cpp.ll
-; openjdk/optimized/cdsConfig.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %1, i1 true, i1 %2
-  %4 = icmp ugt i32 %0, 1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
 ; 3 occurrences:
 ; llvm/optimized/Instructions.cpp.ll
 ; opencc/optimized/UTF8Util.cpp.ll
@@ -85,6 +74,17 @@ entry:
 define i1 @func000000000000000a(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 31
   %4 = select i1 %0, i1 true, i1 %1
   %5 = and i1 %4, %3
   ret i1 %5

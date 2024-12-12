@@ -32,32 +32,29 @@ func0000000000000008:                   # @func0000000000000008
 	neg	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
-	blt	a2, a1, .LBB5_2
-	lui	a0, 2
+func0000000000000026:                   # @func0000000000000026
+	sub	a1, a1, a2
+	li	a2, 8
+	blt	a1, a2, .LBB5_2
+	lui	a0, 4112
+	addiw	a0, a0, 257
+	slli	a1, a0, 32
+	add	a0, a0, a1
 .LBB5_2:                                # %entry
 	ret
-func0000000000000016:                   # @func0000000000000016
-	sub	a1, a1, a2
-	li	a2, 10
-	blt	a1, a2, .LBB6_2
-	lui	a0, 2441
-	addiw	a0, a0, 1664
-.LBB6_2:                                # %entry
-	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sub	a1, a1, a2
 	sltiu	a1, a1, 64
 	neg	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	sub	a1, a1, a2
 	sltiu	a1, a1, 64
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	sub	a1, a1, a2
 	sltiu	a1, a1, 65
 	addi	a1, a1, -1

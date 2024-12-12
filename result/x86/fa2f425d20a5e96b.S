@@ -5,7 +5,7 @@
 func0000000000000004:                   # @func0000000000000004
 	vmulsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	vcvtsd2ss	%xmm1, %xmm1, %xmm1
-	vaddss	%xmm0, %xmm1, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI0_1(%rip), %xmm0
 	seta	%al
 	retq
@@ -16,7 +16,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000002:                   # @func0000000000000002
 	vmulsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	vcvtsd2ss	%xmm1, %xmm1, %xmm1
-	vaddss	%xmm0, %xmm1, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	vmovss	.LCPI1_1(%rip), %xmm1           # xmm1 = [3.6E+2,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm0, %xmm1
 	seta	%al
@@ -28,7 +28,7 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000000c:                   # @func000000000000000c
 	vmulsd	.LCPI2_0(%rip), %xmm1, %xmm1
 	vcvtsd2ss	%xmm1, %xmm1, %xmm1
-	vaddss	%xmm0, %xmm1, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI2_1(%rip), %xmm0
 	setae	%al
 	retq
@@ -39,7 +39,7 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000003:                   # @func0000000000000003
 	vmulsd	.LCPI3_0(%rip), %xmm1, %xmm1
 	vcvtsd2ss	%xmm1, %xmm1, %xmm1
-	vaddss	%xmm0, %xmm1, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI3_1(%rip), %xmm0
 	setb	%al
 	retq

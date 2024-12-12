@@ -15,11 +15,11 @@
 ; llvm/optimized/StreamChecker.cpp.ll
 ; llvm/optimized/VLASizeChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i32 %0) #0 {
+define i1 @func0000000000000498(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -470
   %2 = icmp ult i32 %1, -3
-  %3 = icmp ugt i32 %0, 463
+  %3 = icmp samesign ugt i32 %0, 463
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
@@ -29,7 +29,7 @@ entry:
 ; openusd/optimized/path.cpp.ll
 ; openusd/optimized/resolver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0) #0 {
+define i1 @func0000000000000484(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -57344
   %2 = icmp ult i32 %1, -2048

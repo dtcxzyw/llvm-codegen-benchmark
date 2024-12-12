@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.I386.cc.ll
 ; mold/optimized/gc-sections.cc.LOONGARCH32.cc.ll
@@ -40,32 +40,29 @@
 ; mold/optimized/output-chunks.cc.RV32BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
-; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
   %4 = zext i32 %3 to i64
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %4, %5
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp samesign ugt i64 %6, %0
   ret i1 %7
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; darktable/optimized/CiffIFD.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 4
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
   %6 = add nuw nsw i64 %5, %4
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp samesign ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -79,46 +76,72 @@ entry:
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
 ; darktable/optimized/TiffIFD.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003b8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000778(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 514
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %5, %4
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp samesign ugt i64 %6, %0
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; clamav/optimized/pe.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 92
   %4 = zext i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
   %6 = add nuw nsw i64 %5, %4
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp samesign ugt i64 %6, %0
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; clamav/optimized/pe.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000378(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000006f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 8
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %4, %5
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp samesign ugt i64 %6, %0
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; clamav/optimized/pe.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 92
+  %4 = zext i32 %3 to i64
+  %5 = zext nneg i32 %1 to i64
+  %6 = add nuw nsw i64 %5, %4
+  %7 = icmp samesign ult i64 %6, %0
+  ret i1 %7
+}
+
+; 1 occurrences:
+; clamav/optimized/pe.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000006f4(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 8
+  %4 = zext nneg i32 %3 to i64
+  %5 = zext i32 %1 to i64
+  %6 = add nuw nsw i64 %4, %5
+  %7 = icmp samesign ult i64 %6, %0
+  ret i1 %7
+}
+
+; 1 occurrences:
+; clamav/optimized/pe.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 92
   %4 = zext i32 %3 to i64
@@ -131,26 +154,53 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/pe.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000374(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000006e4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 8
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %4, %5
   %7 = icmp ult i64 %6, %0
+  ret i1 %7
+}
+
+; 2 occurrences:
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007e8(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = zext nneg i32 %1 to i64
+  %6 = add nuw nsw i64 %4, %5
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000374(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %5, %4
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp samesign ult i64 %6, %0
+  ret i1 %7
+}
+
+; 1 occurrences:
+; xgboost/optimized/quantile.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
+  %4 = zext i32 %3 to i64
+  %5 = zext i32 %1 to i64
+  %6 = add nuw nsw i64 %5, %4
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

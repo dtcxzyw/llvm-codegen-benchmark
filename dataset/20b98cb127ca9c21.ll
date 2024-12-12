@@ -21,7 +21,7 @@ entry:
   %3 = xor i64 %2, -1
   %4 = icmp eq i32 %1, 63
   %5 = select i1 %4, i64 -1, i64 %3
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = xor i64 %2, -1
   %4 = icmp sgt i32 %1, 7
   %5 = select i1 %4, i64 -1, i64 %3
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

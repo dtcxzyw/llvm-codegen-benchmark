@@ -1,9 +1,10 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; boost/optimized/area.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; graphviz/optimized/position.c.ll

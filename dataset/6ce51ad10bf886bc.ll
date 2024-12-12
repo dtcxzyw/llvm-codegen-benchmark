@@ -15,21 +15,6 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
-; darktable/optimized/export.c.ll
-; verilator/optimized/V3EmitCConstPool.cpp.ll
-; verilator/optimized/V3EmitCHeaders.cpp.ll
-; verilator/optimized/V3EmitCImp.cpp.ll
-; verilator/optimized/V3EmitCModel.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000084(double %0, double %1) #0 {
-entry:
-  %2 = fcmp oeq double %0, %1
-  %3 = fcmp ogt double %0, -1.000000e+03
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
 ; 4 occurrences:
 ; hermes/optimized/String.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
@@ -75,7 +60,14 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 9 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; quantlib/optimized/gsrprocess.ll
 ; quantlib/optimized/kahalesmilesection.ll
 ; Function Attrs: nounwind
@@ -105,6 +97,17 @@ define i1 @func00000000000000ca(double %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %0, 0.000000e+00
   %3 = fcmp ole double %0, %1
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; darktable/optimized/export.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(double %0, double %1) #0 {
+entry:
+  %2 = fcmp oeq double %0, %1
+  %3 = fcmp ogt double %0, 0.000000e+00
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -165,6 +168,21 @@ entry:
   ret i1 %4
 }
 
+; 5 occurrences:
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; Function Attrs: nounwind
+define i1 @func000000000000003e(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ult double %0, %1
+  %3 = fcmp ord double %0, 0.000000e+00
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; nori/optimized/chi2test.cpp.ll
 ; nori/optimized/warptest.cpp.ll
@@ -177,10 +195,9 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; graphviz/optimized/compound.c.ll
 ; opencv/optimized/generalized_hough.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll

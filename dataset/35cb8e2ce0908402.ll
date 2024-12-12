@@ -11,6 +11,7 @@
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/math_sqrt.ll
 ; bullet3/optimized/b3File.ll
 ; cvc5/optimized/safe_print.cpp.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
@@ -67,7 +68,6 @@
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/plylib.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; oiio/optimized/deepdata.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll

@@ -1,8 +1,7 @@
 
-; 33 occurrences:
+; 30 occurrences:
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
 ; cpython/optimized/dtoa.ll
-; darktable/optimized/introspection_flip.c.ll
 ; git/optimized/unpack-trees.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/collationiterator.ll
@@ -14,7 +13,6 @@
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/CallGraphUpdater.cpp.ll
 ; llvm/optimized/ExtractGV.cpp.ll
-; llvm/optimized/MCWin64EH.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
@@ -31,7 +29,6 @@
 ; ruby/optimized/io.ll
 ; ruby/optimized/util.ll
 ; stb/optimized/stb_image_resize2.c.ll
-; verilator/optimized/V3Task.cpp.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {

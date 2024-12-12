@@ -1,28 +1,28 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 8
 	vor.vi	v10, v10, 12
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v10
 	vor.vi	v10, v10, 1
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v10
 	vor.vi	v10, v10, 1
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v10
 	vor.vi	v10, v10, 1
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000069:                   # @func0000000000000069
+func00000000000000d9:                   # @func00000000000000d9
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 16
 	lui	a0, 256
@@ -30,49 +30,55 @@ func0000000000000069:                   # @func0000000000000069
 	vor.vx	v10, v10, a0
 	vmsleu.vv	v0, v8, v10
 	ret
-func0000000000000039:                   # @func0000000000000039
+func0000000000000069:                   # @func0000000000000069
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
 	vor.vi	v10, v10, 4
 	vmsleu.vv	v0, v8, v10
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 4
 	vor.vi	v10, v10, 14
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
 	vor.vi	v10, v10, 2
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000075:                   # @func0000000000000075
+func00000000000000f4:                   # @func00000000000000f4
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v10, v10, v10
+	vor.vi	v10, v10, 1
+	vmsltu.vv	v0, v10, v8
+	ret
+func00000000000000f5:                   # @func00000000000000f5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 2
 	vor.vi	v10, v10, 4
 	vmsleu.vv	v0, v10, v8
 	ret
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v10
 	vor.vi	v10, v10, 1
 	vmslt.vv	v0, v10, v8
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v10
 	vor.vi	v10, v10, 1
 	vmseq.vv	v0, v10, v8
 	ret
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 4
 	vor.vi	v10, v10, 8
 	vmslt.vv	v0, v8, v10
 	ret
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 8
 	lui	a0, 16
@@ -80,7 +86,7 @@ func0000000000000064:                   # @func0000000000000064
 	vor.vx	v10, v10, a0
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 8
 	lui	a0, 16
@@ -88,31 +94,31 @@ func0000000000000068:                   # @func0000000000000068
 	vor.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
 	vor.vi	v10, v10, 4
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
 	vor.vi	v10, v10, 4
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 2
 	vor.vi	v10, v10, 1
 	vmslt.vv	v0, v10, v8
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
 	vor.vi	v10, v10, 2
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v10
 	vor.vi	v10, v10, 1

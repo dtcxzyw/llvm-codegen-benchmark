@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/bblif.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 1073741820
@@ -30,7 +30,7 @@ entry:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 8191
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 8191
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
   %4 = and i32 %3, 7
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xhci-mem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 255
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xhci.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 255
@@ -108,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 255
@@ -121,7 +121,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 255

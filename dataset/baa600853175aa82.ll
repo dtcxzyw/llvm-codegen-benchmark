@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 107 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -9,11 +9,13 @@
 ; arrow/optimized/encode_internal_avx2.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; c3c/optimized/lexer.c.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
-; folly/optimized/SocketFastOpen.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/ShaderLang.cpp.ll
@@ -46,7 +48,6 @@
 ; linux/optimized/pt.ll
 ; linux/optimized/vgaarb.ll
 ; linux/optimized/vsprintf.ll
-; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -98,12 +99,14 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/triggers.ll
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmedge/optimized/refInstr.cpp.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -112,7 +115,7 @@ entry:
   ret i64 %4
 }
 
-; 185 occurrences:
+; 193 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
@@ -122,6 +125,12 @@ entry:
 ; abc/optimized/wlcMem.c.ll
 ; arrow/optimized/int_util.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; cvc5/optimized/miplib_trick.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
@@ -246,6 +255,7 @@ entry:
 ; openjdk/optimized/shenandoahSimpleBitMap.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
+; openusd/optimized/value.cpp.ll
 ; pcg-cpp/optimized/cppref-sample.cpp.ll
 ; pcg-cpp/optimized/make-partytrick.cpp.ll
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
@@ -298,11 +308,12 @@ entry:
 ; wireshark/optimized/proto.c.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/sat_lut_finder.cpp.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

@@ -10,3 +10,7 @@ func0000000000000011:                   # @func0000000000000011
 	addb	$-91, %dil
 	movzbl	%dil, %eax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	incb	%dil
+	movzbl	%dil, %eax
+	retq

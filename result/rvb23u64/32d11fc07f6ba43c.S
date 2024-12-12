@@ -1,7 +1,7 @@
 func000000000000000c:                   # @func000000000000000c
 	srliw	a1, a1, 3
 	addi	a1, a1, 1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
 	srliw	a1, a1, 24
@@ -31,5 +31,5 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000004:                   # @func0000000000000004
 	srliw	a1, a1, 16
 	addi	a1, a1, -1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret

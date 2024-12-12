@@ -36,4 +36,18 @@ entry:
   ret i32 %3
 }
 
+; 4 occurrences:
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_obj_pos.ll
+; wolfssl/optimized/ssl.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(ptr %0) #0 {
+entry:
+  %1 = ptrtoint ptr %0 to i64
+  %2 = trunc i64 %1 to i32
+  %3 = sub nsw i32 0, %2
+  ret i32 %3
+}
+
 attributes #0 = { nounwind }

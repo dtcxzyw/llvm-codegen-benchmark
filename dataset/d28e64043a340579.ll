@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; folly/optimized/Random.cpp.ll
 ; grpc/optimized/tcp_server_posix.cc.ll
@@ -24,7 +25,7 @@ entry:
   %4 = lshr exact i64 %3, 2
   %5 = trunc i64 %4 to i32
   %6 = add i32 %5, 1371501266
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

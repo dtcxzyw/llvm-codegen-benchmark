@@ -3,7 +3,7 @@
 ; openusd/optimized/registryManager.cpp.ll
 ; openusd/optimized/resolver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = shl nuw i64 1, %0

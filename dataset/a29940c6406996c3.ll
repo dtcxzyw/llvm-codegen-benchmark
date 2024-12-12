@@ -15,7 +15,7 @@ define i16 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 992
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = trunc nuw nsw i32 %6 to i16
   ret i16 %7
@@ -34,7 +34,7 @@ define i16 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 2016
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = trunc nuw i32 %6 to i16
   ret i16 %7
@@ -47,7 +47,7 @@ define i16 @func000000000000001e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 10
   %4 = and i32 %3, 992
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = trunc nuw i32 %6 to i16
   ret i16 %7
@@ -61,7 +61,7 @@ define i16 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 13
   %4 = and i32 %3, 4096
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   %7 = trunc nuw nsw i32 %6 to i16
   ret i16 %7
@@ -74,7 +74,7 @@ define i16 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 15
   %4 = and i32 %3, 15
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = trunc i32 %6 to i16
   ret i16 %7
@@ -87,7 +87,7 @@ define i16 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 14
   %4 = and i32 %3, 12
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   %7 = trunc nuw i32 %6 to i16
   ret i16 %7
@@ -100,7 +100,7 @@ define i16 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 3840
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   %7 = trunc i32 %6 to i16
   ret i16 %7

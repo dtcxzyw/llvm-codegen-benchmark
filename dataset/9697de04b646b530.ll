@@ -38,10 +38,9 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; hdf5/optimized/H5B.c.ll
 ; icu/optimized/ucol_swp.ll
-; linux/optimized/intel_audio.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
@@ -51,8 +50,9 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; libwebp/optimized/frame_dec.c.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll

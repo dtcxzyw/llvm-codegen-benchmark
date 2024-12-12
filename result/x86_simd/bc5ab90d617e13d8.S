@@ -25,12 +25,3 @@ func0000000000000006:                   # @func0000000000000006
 	vpternlogd	$236, .LCPI2_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	vzeroupper
 	retq
-.LCPI3_0:
-	.zero	16,3
-.LCPI3_1:
-	.zero	4,3
-func0000000000000000:                   # @func0000000000000000
-	vpmovwb	%ymm1, %xmm1
-	vpternlogd	$236, .LCPI3_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
-	vzeroupper
-	retq

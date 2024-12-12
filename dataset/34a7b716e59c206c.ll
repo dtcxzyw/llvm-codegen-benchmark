@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 43 occurrences:
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; libphonenumber/optimized/phonenumber.pb.cc.ll
 ; opencv/optimized/attr_value.pb.cc.ll
@@ -34,6 +34,15 @@
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003d(i32 %0) #0 {
 entry:

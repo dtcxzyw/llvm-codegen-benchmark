@@ -26,9 +26,9 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func0000000000000002:                   # @func0000000000000002
 	subl	%edx, %esi
-	leal	7(%rsi,%rdi), %eax
-	movl	%esi, %ecx
-	addl	%edi, %ecx
+	leal	7(%rdi,%rsi), %eax
+	movl	%edi, %ecx
+	addl	%esi, %ecx
 	cmovnsl	%ecx, %eax
 	sarl	$3, %eax
 	retq

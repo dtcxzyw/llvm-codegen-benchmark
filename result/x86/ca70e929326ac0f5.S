@@ -1,12 +1,12 @@
-func00000000000002a6:                   # @func00000000000002a6
+func0000000000000946:                   # @func0000000000000946
 	shrq	$32, %rdx
-	cmpl	%esi, %edx
-	setl	%cl
+	cmpl	%edx, %esi
+	setg	%cl
 	testl	%edi, %edi
 	sets	%al
 	orb	%cl, %al
 	retq
-func00000000000002cc:                   # @func00000000000002cc
+func000000000000098c:                   # @func000000000000098c
 	shrq	$32, %rdx
 	xorl	%esi, %edx
 	orl	%edi, %edx

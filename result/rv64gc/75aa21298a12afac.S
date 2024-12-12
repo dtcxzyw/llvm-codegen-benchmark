@@ -1,5 +1,5 @@
 func000000000000006f:                   # @func000000000000006f
-	li	a3, 9
+	li	a3, 5
 	slli	a2, a2, 32
 	slli	a1, a1, 32
 	slli	a3, a3, 33

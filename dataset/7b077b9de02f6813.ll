@@ -1,6 +1,8 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; mitsuba3/optimized/sampler.cpp.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -10,7 +12,7 @@ entry:
   ret i64 %4
 }
 
-; 66 occurrences:
+; 68 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/CSMLoader.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
@@ -18,6 +20,7 @@ entry:
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/MD5Parser.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/macho.c.ll
 ; faiss/optimized/hamming.cpp.ll
 ; freetype/optimized/pshinter.c.ll
@@ -26,8 +29,8 @@ entry:
 ; hdf5/optimized/h5repack_opttable.c.ll
 ; hermes/optimized/SourceMgr.cpp.ll
 ; hwloc/optimized/cpukinds.ll
+; hwloc/optimized/topology-synthetic.ll
 ; linux/optimized/drm_hdcp_helper.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/thermal.ll
@@ -68,6 +71,7 @@ entry:
 ; postgres/optimized/ginpostinglist.ll
 ; postgres/optimized/proc.ll
 ; qemu/optimized/block_qcow2-snapshot.c.ll
+; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/libvhost-user.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; slurm/optimized/job_info.ll
@@ -169,6 +173,28 @@ entry:
   %2 = add i32 %0, %1
   %3 = zext i32 %2 to i64
   %4 = mul nsw i64 %3, -131072
+  ret i64 %4
+}
+
+; 1 occurrences:
+; boost/optimized/text_file_backend.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %0, %1
+  %3 = zext i32 %2 to i64
+  %4 = mul nuw nsw i64 %3, 86400000000
+  ret i64 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %0, %1
+  %3 = zext i32 %2 to i64
+  %4 = mul i64 %3, 163391164108059
   ret i64 %4
 }
 

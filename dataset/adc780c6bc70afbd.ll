@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
@@ -22,11 +22,12 @@
 ; pbrt-v4/optimized/textures.cpp.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %1
+  %4 = fadd float %1, %3
   %5 = fsub float %0, %4
   ret float %5
 }

@@ -19,11 +19,10 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/giaIso3.c.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/InjectedSourceStream.cpp.ll
 ; llvm/optimized/LiveVariables.cpp.ll

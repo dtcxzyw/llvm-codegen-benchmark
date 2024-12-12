@@ -1,11 +1,13 @@
 
-; 156 occurrences:
+; 157 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; arrow/optimized/grouper.cc.ll
 ; assimp/optimized/B3DImporter.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -74,7 +76,6 @@
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/clientlauncher.cpp.ll
 ; minetest/optimized/guiInventoryList.cpp.ll
-; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/joystick_controller.cpp.ll
 ; minetest/optimized/l_mainmenu.cpp.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
@@ -157,12 +158,12 @@
 ; yosys/optimized/verilog_backend.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
   %5 = trunc i64 %4 to i32
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
@@ -175,6 +176,7 @@ entry:
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; assimp/optimized/BlenderBMesh.cpp.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btSimpleBroadphase.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -278,7 +280,6 @@ entry:
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -366,18 +367,17 @@ entry:
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 48
   %5 = trunc i64 %4 to i32
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
-; 48 occurrences:
+; 45 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
-; assimp/optimized/B3DImporter.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
@@ -391,7 +391,6 @@ entry:
 ; draco/optimized/ply_encoder.cc.ll
 ; draco/optimized/triangle_soup_mesh_builder.cc.ll
 ; gromacs/optimized/pdb2top.cpp.ll
-; gromacs/optimized/readpull.cpp.ll
 ; hyperscan/optimized/ComponentRepeat.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
@@ -422,15 +421,14 @@ entry:
 ; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/rollback_interface.cpp.ll
 ; ocio/optimized/GpuShader.cpp.ll
-; opencv/optimized/local_optimization.cpp.ll
 ; re2/optimized/prefilter_tree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
   %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
@@ -518,28 +516,28 @@ entry:
 ; zxing/optimized/AZReader.cpp.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
   %5 = trunc i64 %4 to i32
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; minetest/optimized/CGUIListBox.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000089(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 72
   %5 = trunc i64 %4 to i32
-  %6 = icmp ule i32 %5, %0
+  %6 = icmp uge i32 %0, %5
   ret i1 %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
 ; hyperscan/optimized/fdr_engine_description.cpp.ll
@@ -549,17 +547,16 @@ entry:
 ; llvm/optimized/CompressInstEmitter.cpp.ll
 ; llvm/optimized/GlobalISelEmitter.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
-; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 48
   %5 = trunc i64 %4 to i32
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
@@ -569,12 +566,26 @@ entry:
 ; opencv/optimized/chessboard.cpp.ll
 ; yosys/optimized/ast.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004b(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008b(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
   %5 = trunc i64 %4 to i32
-  %6 = icmp sle i32 %5, %0
+  %6 = icmp sge i32 %0, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; assimp/optimized/B3DImporter.cpp.ll
+; gromacs/optimized/readpull.cpp.ll
+; opencv/optimized/local_optimization.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 56
+  %5 = trunc i64 %4 to i32
+  %6 = icmp samesign ult i32 %0, %5
   ret i1 %6
 }
 
@@ -588,7 +599,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 60
   %5 = trunc i64 %4 to i32
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
@@ -596,12 +607,12 @@ entry:
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; yosys/optimized/equiv_make.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 80
   %5 = trunc i64 %4 to i32
-  %6 = icmp ne i32 %5, %0
+  %6 = icmp ne i32 %0, %5
   ret i1 %6
 }
 
@@ -613,7 +624,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 32
   %5 = trunc i64 %4 to i32
-  %6 = icmp uge i32 %5, %0
+  %6 = icmp ule i32 %0, %5
   ret i1 %6
 }
 
@@ -625,7 +636,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 33554432
   %5 = trunc i64 %4 to i32
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -636,12 +647,24 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000047(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000087(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
   %5 = trunc i64 %4 to i32
-  %6 = icmp sge i32 %5, %0
+  %6 = icmp sle i32 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; meshlab/optimized/arap.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000098(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 120
+  %5 = trunc i64 %4 to i32
+  %6 = icmp samesign ugt i32 %0, %5
   ret i1 %6
 }
 

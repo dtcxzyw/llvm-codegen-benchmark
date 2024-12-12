@@ -3,7 +3,7 @@
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; php/optimized/array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %2, %1
   %4 = select i1 %0, i64 %3, i64 %1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/bignum.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %2, %1
   %4 = select i1 %0, i64 %3, i64 %1

@@ -5,13 +5,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	andl	$1, %esi
 	addl	%edi, %esi
 	cmpl	$2, %esi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1, %esi
 	addl	%edi, %esi
 	cmpl	$2, %esi

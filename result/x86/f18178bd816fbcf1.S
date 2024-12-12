@@ -19,6 +19,11 @@ func0000000000000003:                   # @func0000000000000003
 	movzbl	%sil, %eax
 	leal	-32768(%rdi,%rax), %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	movzbl	%sil, %ecx
+	leal	33554432(%rdi), %eax
+	orl	%ecx, %eax
+	retq
 func000000000000000b:                   # @func000000000000000b
 	movzbl	%sil, %eax
 	leal	-12288(%rdi,%rax), %eax

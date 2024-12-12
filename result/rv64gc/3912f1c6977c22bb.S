@@ -18,14 +18,3 @@ func000000000000002b:                   # @func000000000000002b
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
-	andi	a3, a0, 1
-	sext.w	a0, a2
-	sgtz	a0, a0
-	addi	a0, a0, -1
-	or	a0, a0, a2
-	beqz	a3, .LBB2_2
-	li	a1, 2
-.LBB2_2:                                # %entry
-	addw	a0, a0, a1
-	ret

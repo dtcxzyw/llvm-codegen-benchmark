@@ -66,7 +66,7 @@ entry:
   ret double %4
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/lab.c.ll
 ; graphviz/optimized/mq.c.ll
@@ -83,8 +83,6 @@ entry:
 ; libwebp/optimized/quant_levels_utils.c.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
 ; ocio/optimized/Lut1DOp.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlatm1.c.ll
 ; openblas/optimized/dlatm7.c.ll
 ; opencv/optimized/nbayes.cpp.ll

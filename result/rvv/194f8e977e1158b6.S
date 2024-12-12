@@ -24,7 +24,7 @@ func000000000000000a:                   # @func000000000000000a
 	vfmul.vv	v8, v8, v12
 	fli.s	fa5, 1.0
 	vmfle.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -37,12 +37,12 @@ func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v8, v8, v12
 	vmfeq.vv	v12, v8, v8
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
 	vmfeq.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret

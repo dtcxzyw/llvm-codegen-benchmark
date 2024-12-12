@@ -6,7 +6,6 @@
 ; linux/optimized/fast_commit.ll
 ; linux/optimized/gss_krb5_crypto.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dp_mst.ll
@@ -18,6 +17,7 @@
 ; linux/optimized/tcp_output.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/profiler.cpp.ll
@@ -40,7 +40,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = udiv i32 %3, %0
   ret i32 %4
 }

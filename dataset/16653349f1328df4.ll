@@ -1,6 +1,5 @@
 
-; 15 occurrences:
-; lightgbm/optimized/bin.cpp.ll
+; 14 occurrences:
 ; linux/optimized/ip_options.ll
 ; linux/optimized/kcore.ll
 ; llama.cpp/optimized/ggml.c.ll

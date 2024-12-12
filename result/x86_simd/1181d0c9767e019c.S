@@ -2,13 +2,13 @@ func0000000000000034:                   # @func0000000000000034
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000020:                   # @func0000000000000020
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.quad	2                               # 0x2
@@ -33,7 +33,7 @@ func0000000000000022:                   # @func0000000000000022
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.quad	1                               # 0x1

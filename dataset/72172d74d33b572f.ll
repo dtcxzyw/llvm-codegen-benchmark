@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; linux/optimized/nls_base.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
@@ -22,7 +22,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll

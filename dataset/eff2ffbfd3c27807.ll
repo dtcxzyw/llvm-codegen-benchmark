@@ -37,10 +37,10 @@ entry:
 ; hermes/optimized/NativeFormatting.cpp.ll
 ; icu/optimized/collationcompare.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 14
-  %4 = icmp ult i64 %3, 10
+  %4 = icmp samesign ult i64 %3, 10
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }
@@ -53,7 +53,7 @@ entry:
 ; memcached/optimized/memcached_debug-crc32c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
@@ -77,7 +77,7 @@ entry:
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; openusd/optimized/reformat.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 224
   %4 = icmp eq i64 %3, 0
@@ -88,10 +88,10 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2047
-  %4 = icmp ugt i64 %3, 1022
+  %4 = icmp samesign ugt i64 %3, 1022
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }
@@ -99,10 +99,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/cstring.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000054(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 254
-  %4 = icmp ult i64 %3, 10
+  %4 = icmp samesign ult i64 %3, 10
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }
@@ -110,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 16
   %.not = icmp eq i64 %3, 0

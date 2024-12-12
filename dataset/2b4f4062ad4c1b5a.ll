@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 78 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; cmake/optimized/SystemInformation.cxx.ll
@@ -27,6 +27,7 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/xfrm_policy.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -67,7 +68,6 @@
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
 ; slurm/optimized/bitstring.ll
 ; slurm/optimized/numa.ll
-; spike/optimized/clz8.ll
 ; spike/optimized/vmerge_vim.ll
 ; spike/optimized/vmerge_vvm.ll
 ; spike/optimized/vmerge_vxm.ll
@@ -76,6 +76,8 @@
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; wasmedge/optimized/vinode.cpp.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/5eo3r6xqgcl9c03ocnkjc70d3.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i8 %1, i64 %2) #0 {
 entry:
@@ -102,24 +104,33 @@ entry:
   ret i8 %4
 }
 
-; 13 occurrences:
+; 7 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
+; qemu/optimized/source_s_countLeadingZeros64.c.ll
+; spike/optimized/s_countLeadingZeros64.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(i8 %0, i8 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 65536
+  %4 = select i1 %3, i8 %0, i8 %1
+  ret i8 %4
+}
+
+; 6 occurrences:
 ; git/optimized/diff.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; lief/optimized/bignum.c.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/PlistReporter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_countLeadingZeros64.c.ll
-; spike/optimized/s_countLeadingZeros64.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i8 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 65536
+  %3 = icmp ult i64 %2, 27
   %4 = select i1 %3, i8 %0, i8 %1
   ret i8 %4
 }
@@ -136,11 +147,9 @@ entry:
   ret i8 %4
 }
 
-; 22 occurrences:
+; 18 occurrences:
 ; faiss/optimized/pq4_fast_scan.cpp.ll
-; grpc/optimized/hpack_parser.cc.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/BinaryStreamWriter.cpp.ll
 ; llvm/optimized/CoverageMappingWriter.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
@@ -153,6 +162,26 @@ entry:
 ; llvm/optimized/MCAssembler.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll
 ; llvm/optimized/MCLinkerOptimizationHint.cpp.ll
+; llvm/optimized/RISCVFrameLowering.cpp.ll
+; llvm/optimized/SampleProfWriter.cpp.ll
+; llvm/optimized/WasmObjectWriter.cpp.ll
+; llvm/optimized/WinCOFFObjectWriter.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000008(i8 %0, i8 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 7
+  %4 = select i1 %3, i8 %0, i8 %1
+  ret i8 %4
+}
+
+; 13 occurrences:
+; grpc/optimized/hpack_parser.cc.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/CoverageMappingWriter.cpp.ll
+; llvm/optimized/DecoderEmitter.cpp.ll
+; llvm/optimized/ELFObjectWriter.cpp.ll
+; llvm/optimized/MCLinkerOptimizationHint.cpp.ll
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/SampleProfWriter.cpp.ll
@@ -160,9 +189,9 @@ entry:
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000008(i8 %0, i8 %1, i64 %2) #0 {
+define i8 @func0000000000000018(i8 %0, i8 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 7
+  %3 = icmp samesign ugt i64 %2, 127
   %4 = select i1 %3, i8 %0, i8 %1
   ret i8 %4
 }

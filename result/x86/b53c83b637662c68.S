@@ -10,6 +10,12 @@ func0000000000000030:                   # @func0000000000000030
 	orb	%dil, %al
 	andb	$1, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	testq	%rsi, %rsi
+	setle	%al
+	orb	%dil, %al
+	andb	$1, %al
+	retq
 func0000000000000010:                   # @func0000000000000010
 	cmpq	$8, %rsi
 	setb	%al
@@ -17,7 +23,7 @@ func0000000000000010:                   # @func0000000000000010
 	andb	$1, %al
 	retq
 func0000000000000020:                   # @func0000000000000020
-	cmpq	$32, %rsi
+	cmpq	$9, %rsi
 	setae	%al
 	orb	%dil, %al
 	andb	$1, %al

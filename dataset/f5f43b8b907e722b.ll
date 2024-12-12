@@ -1,5 +1,7 @@
 
-; 21 occurrences:
+; 23 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll

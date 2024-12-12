@@ -1,7 +1,8 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; gromacs/optimized/rbin.cpp.ll
 ; libwebp/optimized/enc.c.ll
+; lvgl/optimized/lv_bar.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openjdk/optimized/gifdecoder.ll
@@ -21,7 +22,7 @@ entry:
   ret i32 %5
 }
 
-; 68 occurrences:
+; 66 occurrences:
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; clamav/optimized/LzmaDec.c.ll
@@ -44,8 +45,6 @@ entry:
 ; minetest/optimized/chat.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dsptrs.c.ll
@@ -113,10 +112,11 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; hdf5/optimized/H5Znbit.c.ll
+; lvgl/optimized/lv_calendar.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; qemu/optimized/hw_usb_dev-hub.c.ll
 ; Function Attrs: nounwind
@@ -128,14 +128,17 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 19 occurrences:
 ; abc/optimized/cuddTable.c.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/_datetimemodule.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/usearch.ll
 ; jq/optimized/decNumber.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_calendar.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/FastSweeping.cc.ll

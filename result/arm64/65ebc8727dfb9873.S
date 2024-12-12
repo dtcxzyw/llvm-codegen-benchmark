@@ -12,13 +12,13 @@ func0000000000000000:                   // @func0000000000000000
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000006:                   // @func0000000000000006
+func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	add	x0, x0, w1, uxtb
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	mov	w8, #61439                      // =0xefff
                                         // kill: def $w1 killed $w1 def $x1

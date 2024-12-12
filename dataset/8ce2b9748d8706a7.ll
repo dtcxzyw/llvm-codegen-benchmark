@@ -37,10 +37,9 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
-; hyperscan/optimized/ng_util.cpp.ll
 ; php/optimized/dtoa.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i1 %0, i64 %1) #0 {

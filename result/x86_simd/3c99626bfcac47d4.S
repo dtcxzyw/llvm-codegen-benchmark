@@ -21,7 +21,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpsrld	$31, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.long	4294967291                      # 0xfffffffb
+	.long	4294967286                      # 0xfffffff6
 func0000000000000008:                   # @func0000000000000008
 	vpsllw	$15, %xmm0, %xmm0
 	vpsllw	$15, %xmm1, %xmm1

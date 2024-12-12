@@ -1,8 +1,9 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/amapLib.c.ll
 ; abc/optimized/mioRead.c.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/get_distance_measure.ll
 ; graphviz/optimized/legal.c.ll
 ; graphviz/optimized/maze.c.ll
 ; hermes/optimized/Array.cpp.ll

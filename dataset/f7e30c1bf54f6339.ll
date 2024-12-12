@@ -65,9 +65,10 @@ entry:
   ret i16 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/intel_panel.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:

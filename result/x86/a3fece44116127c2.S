@@ -4,7 +4,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	%rax, %rdx
 	setl	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	subq	%rdi, %rdx
 	movl	%esi, %eax
 	cmpq	%rax, %rdx
@@ -22,19 +22,25 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rax, %rdx
 	seta	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	subq	%rdi, %rdx
+	movl	%esi, %eax
+	cmpq	%rax, %rdx
+	setb	%al
+	retq
 func0000000000000009:                   # @func0000000000000009
 	subq	%rdi, %rdx
 	movl	%esi, %eax
 	cmpq	%rax, %rdx
 	setae	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	subq	%rdi, %rdx
 	movl	%esi, %eax
 	cmpq	%rax, %rdx
 	seta	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	subq	%rdi, %rdx
 	movl	%esi, %eax
 	cmpq	%rax, %rdx
@@ -46,13 +52,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rax, %rdx
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	subq	%rdi, %rdx
 	movl	%esi, %eax
 	cmpq	%rax, %rdx
 	sete	%al
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	subq	%rdi, %rdx
 	movl	%esi, %eax
 	cmpq	%rax, %rdx
@@ -70,7 +76,7 @@ func0000000000000005:                   # @func0000000000000005
 	cmpq	%rax, %rdx
 	setbe	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	subq	%rdi, %rdx
 	movl	%esi, %eax
 	cmpq	%rax, %rdx
@@ -82,13 +88,25 @@ func000000000000000b:                   # @func000000000000000b
 	cmpq	%rax, %rdx
 	setge	%al
 	retq
+func0000000000000094:                   # @func0000000000000094
+	subq	%rdi, %rdx
+	movl	%esi, %eax
+	cmpq	%rax, %rdx
+	setb	%al
+	retq
+func0000000000000098:                   # @func0000000000000098
+	subq	%rdi, %rdx
+	movl	%esi, %eax
+	cmpq	%rax, %rdx
+	seta	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	subq	%rdi, %rdx
 	movl	%esi, %eax
 	cmpq	%rax, %rdx
 	setne	%al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	subq	%rdi, %rdx
 	movl	%esi, %eax
 	cmpq	%rax, %rdx

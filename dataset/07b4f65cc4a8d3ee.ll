@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
-; llvm/optimized/X86AsmBackend.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -11,10 +10,11 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; git/optimized/attr.ll
 ; hyperscan/optimized/repeat.c.ll
 ; proxygen/optimized/HPACKDecoder.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i1 %1, i32 %2) #0 {
 entry:

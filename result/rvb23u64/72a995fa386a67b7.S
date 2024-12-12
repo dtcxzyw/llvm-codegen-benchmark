@@ -8,7 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	slli	a3, a0, 1
 	srai	a4, a0, 63
 	and	a1, a1, a2

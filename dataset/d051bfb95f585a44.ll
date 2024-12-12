@@ -10,10 +10,11 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/zstd_opt.c.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; linux/optimized/compress.ll
+; llvm/optimized/RISCVTargetParser.cpp.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openusd/optimized/av1_loopfilter.c.ll

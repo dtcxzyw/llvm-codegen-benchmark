@@ -14,10 +14,12 @@ entry:
   ret i8 %3
 }
 
-; 48 occurrences:
+; 50 occurrences:
 ; abc/optimized/dauEnum.c.ll
 ; abc/optimized/wlcStdin.c.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/asn1.c.ll
 ; duckdb/optimized/ub_duckdb_main_capi.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -71,14 +73,13 @@ entry:
   ret i8 %3
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; coreutils-rs/optimized/5bh17hgt9ymhvnmz.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; faiss/optimized/utils.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libpng/optimized/png.c.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -105,7 +106,7 @@ entry:
   ret i8 %3
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
 ; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
@@ -117,6 +118,9 @@ entry:
 ; influxdb-rs/optimized/1zobaqtttt01ywwe.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

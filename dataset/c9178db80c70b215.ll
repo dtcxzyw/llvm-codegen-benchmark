@@ -1,7 +1,5 @@
 
-; 12 occurrences:
-; actix-rs/optimized/25i1pbjtywtogowt.ll
-; actix-rs/optimized/2dlb5n02zdx7v4l4.ll
+; 10 occurrences:
 ; ockam-rs/optimized/1j8f46ag92qmaepd.ll
 ; ockam-rs/optimized/2jdafynperrjfnwp.ll
 ; ockam-rs/optimized/37pfoqtlnttaeb5z.ll

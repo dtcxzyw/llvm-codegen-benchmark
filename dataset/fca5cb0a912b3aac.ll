@@ -11,7 +11,7 @@
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %2, 1.000000e+02
-  %4 = fadd float %3, %1
+  %4 = fadd float %1, %3
   %5 = fsub float %0, %4
   ret float %5
 }

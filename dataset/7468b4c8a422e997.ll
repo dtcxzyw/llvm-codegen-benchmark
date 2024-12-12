@@ -15,7 +15,7 @@ entry:
   ret i8 %7
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; git/optimized/archive.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libquic/optimized/ssl_lib.c.ll
@@ -24,6 +24,7 @@ entry:
 ; llvm/optimized/ASTConcept.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/Descriptor.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll

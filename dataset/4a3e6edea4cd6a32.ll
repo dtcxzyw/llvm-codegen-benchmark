@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; cmake/optimized/http.c.ll
 ; curl/optimized/libcurl_la-http.ll
@@ -12,6 +12,7 @@
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; openjdk/optimized/hb-ot-map.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; ruby/optimized/prism.ll

@@ -38,18 +38,3 @@ func0000000000000008:                   # @func0000000000000008
 	vmovdqa64	%ymm0, %ymm2 {%k1}
 	vmovdqa	%ymm2, %ymm0
 	retq
-.LCPI3_0:
-	.quad	128                             # 0x80
-.LCPI3_1:
-	.quad	120                             # 0x78
-.LCPI3_2:
-	.long	2                               # 0x2
-func0000000000000004:                   # @func0000000000000004
-	vpslld	$31, %xmm2, %xmm2
-	vpmovd2m	%xmm2, %k1
-	vpbroadcastq	.LCPI3_0(%rip), %ymm2   # ymm2 = [128,128,128,128]
-	vpbroadcastq	.LCPI3_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [120,120,120,120]
-	vpcmpltud	.LCPI3_2(%rip){1to4}, %xmm1, %k1
-	vmovdqa64	%ymm0, %ymm2 {%k1}
-	vmovdqa	%ymm2, %ymm0
-	retq

@@ -17,16 +17,22 @@ func0000000000000060:                   # @func0000000000000060
 	setne	%al
 	addq	%rdi, %rax
 	retq
+func0000000000000009:                   # @func0000000000000009
+	movq	%rdi, %rax
+	andl	$3, %esi
+	cmpl	$1, %esi
+	adcq	$0, %rax
+	retq
+func0000000000000061:                   # @func0000000000000061
+	movq	%rdi, %rax
+	andl	$7, %esi
+	cmpl	$1, %esi
+	sbbq	$-1, %rax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	andl	$33, %esi
 	xorl	%eax, %eax
 	cmpl	$32, %esi
 	sete	%al
 	addq	%rdi, %rax
-	retq
-func0000000000000061:                   # @func0000000000000061
-	movq	%rdi, %rax
-	andl	$268435840, %esi                # imm = 0x10000180
-	cmpl	$1, %esi
-	sbbq	$-1, %rax
 	retq

@@ -1,8 +1,18 @@
 
-; 383 occurrences:
+; 428 occurrences:
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; arrow/optimized/message.cc.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/message.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; c3c/optimized/sema_expr.c.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
@@ -160,6 +170,7 @@
 ; luau/optimized/ConstraintGenerator.cpp.ll
 ; luau/optimized/IrAnalysis.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -293,8 +304,6 @@
 ; postgres/optimized/snprintf_srv.ll
 ; postgres/optimized/subselect.ll
 ; postgres/optimized/xlog.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/crs.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; protobuf/optimized/string_field_lite.cc.ll
@@ -345,6 +354,7 @@
 ; tree-sitter-rs/optimized/3flgp21wlj9z2cn6.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; vcpkg/optimized/vcpkgpaths.cpp.ll
@@ -382,6 +392,41 @@
 ; z3/optimized/sat_drat.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/util.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3ovedgaw1yidfseciw93ubpv7.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i8 %0) #0 {
@@ -391,7 +436,7 @@ entry:
   ret i1 %2
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; clamav/optimized/extract.cpp.ll
 ; flatbuffers/optimized/idl_gen_java.cpp.ll
 ; flatbuffers/optimized/idl_gen_python.cpp.ll
@@ -403,6 +448,7 @@ entry:
 ; postgres/optimized/nodeAgg.ll
 ; regex-rs/optimized/3ixfkxlmcuecmmus.ll
 ; yosys/optimized/eval.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i8 %0) #0 {
 entry:

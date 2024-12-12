@@ -1,17 +1,15 @@
 
-; 14 occurrences:
+; 12 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-keypair.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
-; lief/optimized/Builder.cpp.ll
 ; openssl/optimized/evp_test-bin-evp_test.ll
 ; openusd/optimized/cdef_block.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/bignum.ll
-; ruby/optimized/date_parse.ll
 ; spike/optimized/s_addMagsF128.ll
 ; spike/optimized/s_subMagsF128.ll
 ; Function Attrs: nounwind
@@ -37,9 +35,14 @@ entry:
   ret i64 %4
 }
 
-; 49 occurrences:
+; 54 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; draco/optimized/encoder_buffer.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll

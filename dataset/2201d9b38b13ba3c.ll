@@ -7,7 +7,7 @@
 ; llvm/optimized/MachineTraceMetrics.cpp.ll
 ; openjdk/optimized/jspawnhelper.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000041(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -20,7 +20,7 @@ entry:
 ; protobuf/optimized/coded_stream.cc.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000004a(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3

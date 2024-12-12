@@ -1,5 +1,5 @@
 
-; 87 occurrences:
+; 89 occurrences:
 ; abc/optimized/huffman.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -16,6 +16,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; lua/optimized/ldebug.ll
+; lz4/optimized/lz4.c.ll
 ; memcached/optimized/memcached-hash.ll
 ; memcached/optimized/memcached_debug-hash.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
@@ -73,12 +74,12 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; ocio/optimized/HashUtils.cpp.ll
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/person_reid.cpp.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/lcm.ll
 ; openjdk/optimized/matcher.ll
 ; openusd/optimized/faceVertex.cpp.ll
+; openusd/optimized/lz4.cpp.ll
 ; php/optimized/hash_xxhash.ll
 ; php/optimized/ir_sccp.ll
 ; postgres/optimized/slru.ll
@@ -86,6 +87,7 @@
 ; rocksdb/optimized/xxhash.cc.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; yosys/optimized/calc.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0) #0 {
@@ -97,6 +99,7 @@ entry:
 }
 
 ; 48 occurrences:
+; abc/optimized/abcRec3.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -119,7 +122,6 @@ entry:
 ; llvm/optimized/DiagnosticRenderer.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

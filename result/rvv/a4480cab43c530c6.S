@@ -42,8 +42,8 @@ func0000000000000065:                   # @func0000000000000065
 	li	a0, 12
 	vsrl.vi	v12, v12, 3
 	vnmsub.vx	v12, a0, v10
-	vsub.vv	v8, v10, v8
-	vsub.vv	v8, v12, v8
+	vsub.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	ret
 func000000000000002f:                   # @func000000000000002f
 	li	a0, -128

@@ -11,7 +11,7 @@
 ; qemu/optimized/fpu_softfloat.c.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000041(i32 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000081(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %1, %3

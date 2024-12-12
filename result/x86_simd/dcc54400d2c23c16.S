@@ -17,7 +17,7 @@ func0000000000000002:                   # @func0000000000000002
 	.long	0x3f7fc568                      # float 0.99910593
 func0000000000000007:                   # @func0000000000000007
 	vmulps	.LCPI2_0(%rip){1to16}, %zmm1, %zmm1
-	vcmpneqps	%zmm0, %zmm1, %k0
+	vcmpneqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -33,7 +33,7 @@ func0000000000000005:                   # @func0000000000000005
 	.long	0x3b808081                      # float 0.00392156886
 func0000000000000008:                   # @func0000000000000008
 	vmulps	.LCPI4_0(%rip){1to16}, %zmm1, %zmm1
-	vcmpeqps	%zmm0, %zmm1, %k0
+	vcmpeqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

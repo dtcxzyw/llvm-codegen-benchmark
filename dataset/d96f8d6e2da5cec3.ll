@@ -1,5 +1,7 @@
 
-; 33 occurrences:
+; 35 occurrences:
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_bbdpre.c.ll
@@ -37,7 +39,7 @@
 define i1 @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 1.000000e+00, %1
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
@@ -68,7 +70,7 @@ entry:
 define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 1.000000e+00, %1
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
@@ -82,7 +84,7 @@ entry:
 define i1 @func0000000000000005(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 1.000000e+00, %1
-  %3 = fcmp ult double %2, %0
+  %3 = fcmp ugt double %0, %2
   ret i1 %3
 }
 
@@ -94,24 +96,21 @@ entry:
 define i1 @func0000000000000003(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 0.000000e+00, %1
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 
-; 8 occurrences:
+; 5 occurrences:
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 1.000000e+00, %1
-  %3 = fcmp oge double %2, %0
+  %3 = fcmp ole double %0, %2
   ret i1 %3
 }
 
@@ -121,7 +120,7 @@ entry:
 define i1 @func0000000000000008(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 1.000000e+00, %1
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 

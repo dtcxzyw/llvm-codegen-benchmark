@@ -1,5 +1,5 @@
 
-; 496 occurrences:
+; 498 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -16,6 +16,8 @@
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll

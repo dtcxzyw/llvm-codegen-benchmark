@@ -36,11 +36,11 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = lshr i32 %2, %0
-  %4 = icmp ult i32 %3, 512
+  %4 = icmp samesign ult i32 %3, 512
   ret i1 %4
 }
 

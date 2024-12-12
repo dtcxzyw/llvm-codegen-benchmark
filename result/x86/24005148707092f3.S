@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	$1048576, %esi                  # imm = 0x100000
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	xorl	%edi, %esi
 	testb	$1, %sil
 	sete	%al
@@ -13,12 +13,12 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%edi, %eax
 	andb	$1, %al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	movq	%rsi, %rax
 	xorl	%edi, %eax
 	andb	$1, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	xorl	%edi, %esi
 	testl	$1073741823, %esi               # imm = 0x3FFFFFFF
 	sete	%al

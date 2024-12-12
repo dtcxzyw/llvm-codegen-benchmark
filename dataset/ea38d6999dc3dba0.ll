@@ -3,7 +3,7 @@
 ; abc/optimized/cuddRead.c.ll
 ; linux/optimized/drm_atomic.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000196(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %0, %2
   %4 = icmp slt i32 %3, 0
@@ -19,7 +19,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000194(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %2, %0
   %4 = icmp slt i32 %3, 0

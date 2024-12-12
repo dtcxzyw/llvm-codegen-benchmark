@@ -4,7 +4,7 @@
 ; spike/optimized/f32_roundToInt.ll
 ; spike/optimized/f64_roundToInt.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp eq i32 %0, %1
@@ -30,7 +30,7 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i32 %0, %1

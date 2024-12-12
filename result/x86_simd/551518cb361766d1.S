@@ -18,7 +18,7 @@ func000000000000000c:                   # @func000000000000000c
 	.quad	256                             # 0x100
 func000000000000000f:                   # @func000000000000000f
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogq	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovqd	%ymm2, %xmm0
 	vzeroupper
 	retq
@@ -26,7 +26,7 @@ func000000000000000f:                   # @func000000000000000f
 	.quad	32                              # 0x20
 func000000000000000e:                   # @func000000000000000e
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogq	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovqd	%ymm2, %xmm0
 	vzeroupper
 	retq
@@ -34,7 +34,7 @@ func000000000000000e:                   # @func000000000000000e
 	.quad	32                              # 0x20
 func0000000000000002:                   # @func0000000000000002
 	vpandq	.LCPI4_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogq	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovqd	%ymm2, %xmm0
 	vzeroupper
 	retq
@@ -42,7 +42,7 @@ func0000000000000002:                   # @func0000000000000002
 	.quad	1                               # 0x1
 func0000000000000008:                   # @func0000000000000008
 	vpandq	.LCPI5_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogq	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovqd	%ymm2, %xmm0
 	vzeroupper
 	retq
@@ -66,7 +66,7 @@ func0000000000000003:                   # @func0000000000000003
 	.quad	4294965247                      # 0xfffff7ff
 func0000000000000004:                   # @func0000000000000004
 	vpandq	.LCPI8_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogq	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovqd	%ymm2, %xmm0
 	vzeroupper
 	retq

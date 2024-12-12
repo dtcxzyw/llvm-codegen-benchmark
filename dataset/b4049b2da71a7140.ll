@@ -1,7 +1,6 @@
 
-; 68 occurrences:
+; 64 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
-; assimp/optimized/glTF2Exporter.cpp.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; clamav/optimized/dlp.c.ll
 ; clamav/optimized/pe.c.ll
@@ -9,20 +8,15 @@
 ; cmake/optimized/lzma_encoder_optimum_fast.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
-; flac/optimized/stream_encoder.c.ll
 ; git/optimized/daemon.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
-; gromacs/optimized/dorglq.cpp.ll
-; gromacs/optimized/dorgqr.cpp.ll
-; gromacs/optimized/sorglq.cpp.ll
-; gromacs/optimized/sorgqr.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/dtptngen.ll
 ; libquic/optimized/quic_client_session_base.cc.ll
 ; libwebp/optimized/backward_references_enc.c.ll
-; linux/optimized/intel_gmbus.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
@@ -44,8 +38,6 @@
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/installables.ll
 ; nix/optimized/lexer-tab.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parser-tab.ll
 ; nix/optimized/print-ambiguous.ll
@@ -53,6 +45,7 @@
 ; nix/optimized/value-to-json.ll
 ; nix/optimized/value-to-xml.ll
 ; openjdk/optimized/collectedHeap.ll
+; openjdk/optimized/hb-ot-layout.ll
 ; php/optimized/apprentice.ll
 ; php/optimized/crypt_sha256.ll
 ; proxygen/optimized/HeaderTable.cpp.ll
@@ -65,18 +58,21 @@
 ; tev/optimized/Common.cpp.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tomlplusplus/optimized/toml.cpp.ll
-; wolfssl/optimized/pwdbased.c.ll
 ; z3/optimized/bv_ackerman.cpp.ll
 ; z3/optimized/lp_primal_core_solver.cpp.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
-; 163 occurrences:
+; 164 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/cuddZddReord.c.ll
@@ -93,7 +89,6 @@ entry:
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/regcomp.c.ll
 ; cmake/optimized/cmScriptGenerator.cxx.ll
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; cpython/optimized/flowgraph.ll
 ; cpython/optimized/frameobject.ll
 ; cpython/optimized/optimizer.ll
@@ -108,6 +103,7 @@ entry:
 ; git/optimized/checkout-index.ll
 ; git/optimized/ws.ll
 ; graphviz/optimized/gvloadimage_pango.c.ll
+; graphviz/optimized/spring_electrical.c.ll
 ; gromacs/optimized/ddot.cpp.ll
 ; gromacs/optimized/fft5d.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
@@ -194,7 +190,7 @@ entry:
 ; openmpi/optimized/coll_adapt_ireduce.ll
 ; openmpi/optimized/opal_info_support.ll
 ; openmpi/optimized/pml_ob1_recvfrag.ll
-; openspiel/optimized/quoridor.cc.ll
+; openspiel/optimized/2048.cc.ll
 ; openssl/optimized/libssl-lib-ssl_conf.ll
 ; openssl/optimized/libssl-shlib-ssl_conf.ll
 ; openusd/optimized/dependencyForwardingSceneIndex.cpp.ll
@@ -240,17 +236,19 @@ entry:
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
+; zed-rs/optimized/cz5ff2u3nctci18cefn5uhmxt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
 ; 85 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/extraBddThresh.c.ll
+; abc/optimized/ifDec08.c.ll
 ; abc/optimized/sclLibUtil.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; graphviz/optimized/write.c.ll
@@ -291,12 +289,12 @@ entry:
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
@@ -307,7 +305,6 @@ entry:
 ; ncnn/optimized/gridsample_x86_avx.cpp.ll
 ; ncnn/optimized/gridsample_x86_avx512.cpp.ll
 ; ncnn/optimized/gridsample_x86_fma.cpp.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dormql.c.ll
 ; openblas/optimized/dormrq.c.ll
 ; openblas/optimized/dormrz.c.ll
@@ -338,13 +335,12 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
 ; 10 occurrences:
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
-; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
 ; clamav/optimized/lzxd.c.ll
 ; git/optimized/commit-graph.ll
@@ -353,18 +349,19 @@ entry:
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; z3/optimized/sat_lookahead.cpp.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
 ; 6 occurrences:
 ; clamav/optimized/upx.c.ll
-; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
+; flac/optimized/stream_encoder.c.ll
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
@@ -372,7 +369,7 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   ret i1 %3
 }
 
@@ -388,7 +385,7 @@ entry:
 define i1 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 
@@ -398,11 +395,11 @@ entry:
 define i1 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   ret i1 %3
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -447,11 +444,12 @@ entry:
 ; velox/optimized/VectorSaver.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; wolfssl/optimized/pwdbased.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -466,7 +464,43 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
+  ret i1 %3
+}
+
+; 7 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; gromacs/optimized/dorglq.cpp.ll
+; gromacs/optimized/dorgqr.cpp.ll
+; gromacs/optimized/sorglq.cpp.ll
+; gromacs/optimized/sorgqr.cpp.ll
+; linux/optimized/intel_gmbus.ll
+; wolfssl/optimized/pwdbased.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = freeze i32 %1
+  %3 = icmp samesign ult i32 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = freeze i32 %1
+  %3 = icmp samesign ugt i32 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; darktable/optimized/CrwDecompressor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i32 %0, i32 %1) #0 {
+entry:
+  %2 = freeze i32 %1
+  %3 = icmp samesign uge i32 %0, %2
   ret i1 %3
 }
 
@@ -476,7 +510,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   ret i1 %3
 }
 

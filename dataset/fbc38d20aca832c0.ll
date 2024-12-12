@@ -170,23 +170,22 @@
 ; tev/optimized/main.cpp.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 21
   %3 = sub nsw i32 0, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/CGExprScalar.cpp.ll
-; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 19
   %3 = sub nsw i32 0, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 

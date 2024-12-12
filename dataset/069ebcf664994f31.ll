@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; diesel-rs/optimized/1dr0ikhoh8prk7sr.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; libquic/optimized/quic_data_writer.cc.ll
@@ -30,7 +30,6 @@
 ; slurm/optimized/data_parser_v0_0_40_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; tls-rs/optimized/4vvnrvl2eceao62c.ll
 ; typst-rs/optimized/ef603zin5qw49hb.ll
@@ -45,10 +44,9 @@ entry:
   ret i16 %3
 }
 
-; 18 occurrences:
+; 16 occurrences:
 ; hyperscan/optimized/gough.c.ll
 ; lief/optimized/psa_crypto.c.ll
-; linux/optimized/intel_color.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/PackedVersion.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
@@ -63,7 +61,6 @@ entry:
 ; spike/optimized/vrev8_v.ll
 ; typst-rs/optimized/57e1zo682pgyyw8m.ll
 ; wasmtime-rs/optimized/4geaf703ae2lxyqg.ll
-; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i16 %0, i64 %1) #0 {
 entry:
@@ -96,21 +93,51 @@ entry:
   ret i16 %3
 }
 
-; 9 occurrences:
-; arrow/optimized/float16.cc.ll
-; assimp/optimized/glTF2Exporter.cpp.ll
-; assimp/optimized/glTF2Importer.cpp.ll
-; assimp/optimized/glTFImporter.cpp.ll
+; 3 occurrences:
 ; llvm/optimized/ELFObjectWriter.cpp.ll
-; opencc/optimized/Config.cpp.ll
 ; openjdk/optimized/type.ll
-; openusd/optimized/json.cpp.ll
 ; php/optimized/image.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i16 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 4
   %3 = select i1 %2, i16 0, i16 %0
+  ret i16 %3
+}
+
+; 6 occurrences:
+; arrow/optimized/float16.cc.ll
+; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; assimp/optimized/glTFImporter.cpp.ll
+; opencc/optimized/Config.cpp.ll
+; openusd/optimized/json.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000014(i16 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 2147483648
+  %3 = select i1 %2, i16 502, i16 %0
+  ret i16 %3
+}
+
+; 1 occurrences:
+; boost/optimized/test_codecvt.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000c(i16 %0, i64 %1) #0 {
+entry:
+  %.not = icmp eq i64 %1, 0
+  %2 = select i1 %.not, i16 %0, i16 0
+  ret i16 %2
+}
+
+; 2 occurrences:
+; linux/optimized/intel_color.ll
+; wasmtime-rs/optimized/4op38pthexwwd97b.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000018(i16 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 65535
+  %3 = select i1 %2, i16 undef, i16 %0
   ret i16 %3
 }
 

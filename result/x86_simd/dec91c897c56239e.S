@@ -7,7 +7,7 @@
 	.short	43691                           # 0xaaab
 	.short	43691                           # 0xaaab
 	.short	43691                           # 0xaaab
-func0000000000000271:                   # @func0000000000000271
+func00000000000004e1:                   # @func00000000000004e1
 	vpmovdw	%xmm1, %xmm1
 	vpmulhuw	.LCPI0_0(%rip), %xmm1, %xmm1    # [43691,43691,43691,43691,43691,43691,43691,43691]
 	vpsrlw	$1, %xmm1, %xmm1

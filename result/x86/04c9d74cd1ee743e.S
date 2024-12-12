@@ -32,15 +32,6 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$2, %eax
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	xorl	%eax, %eax
-	cmpl	$2, %esi
-	setl	%al
-	leaq	32(,%rax,4), %rcx
-	xorl	%eax, %eax
-	testb	$1, %dil
-	cmovneq	%rcx, %rax
-	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	testl	%esi, %esi
@@ -48,5 +39,14 @@ func000000000000000c:                   # @func000000000000000c
 	leaq	8584(,%rax,8), %rcx
 	testb	$1, %dil
 	movl	$8588, %eax                     # imm = 0x218C
+	cmovneq	%rcx, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpl	$13, %esi
+	setae	%al
+	leaq	8(,%rax,4), %rcx
+	testb	$1, %dil
+	movl	$8, %eax
 	cmovneq	%rcx, %rax
 	retq

@@ -33,6 +33,19 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 7
+  %3 = and i64 %2, -8
+  %4 = add nsw i64 %3, 24
+  %5 = and i64 %0, -8
+  %6 = add nsw i64 %4, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/ExprObjC.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {

@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leaq	24(%rsi), %rax
 	testb	$1, %dil
 	cmoveq	%rdx, %rax

@@ -23,6 +23,11 @@ func0000000000000021:                   # @func0000000000000021
 	leal	(%rsi,%rdi), %eax
 	shrl	$2, %eax
 	retq
+func0000000000000035:                   # @func0000000000000035
+	shrq	$49, %rsi
+	leal	(%rsi,%rdi), %eax
+	shrl	$5, %eax
+	retq
 func0000000000000045:                   # @func0000000000000045
 	shrq	$3, %rsi
 	leal	(%rsi,%rdi), %eax

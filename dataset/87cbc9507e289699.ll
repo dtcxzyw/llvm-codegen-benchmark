@@ -7,7 +7,7 @@
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
 ; openjdk/optimized/UnixNativeDispatcher.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp eq i64 %2, 4294967295

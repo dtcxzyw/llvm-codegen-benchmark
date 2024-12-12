@@ -1,9 +1,8 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; ockam-rs/optimized/14jhibpevwjs778a.ll
 ; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
 ; ockam-rs/optimized/2cpf09j9we15y4k3.ll
-; ockam-rs/optimized/3mmfh9oxbbu2kjan.ll
 ; ockam-rs/optimized/49ti4bj9tyhrfks7.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/lrl69p7oh77nujn.ll
@@ -49,9 +48,7 @@ entry:
   ret i64 %2
 }
 
-; 7 occurrences:
-; delta-rs/optimized/2braxl0lj34anf5z.ll
-; delta-rs/optimized/3qvofkyb7k5flefa.ll
+; 5 occurrences:
 ; rayon-rs/optimized/21gejo1m4tab0cb8.ll
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
@@ -61,6 +58,17 @@ entry:
 define i64 @func0000000000000008(i128 %0) #0 {
 entry:
   %1 = icmp ult i128 %0, 18446744073709551616
+  %2 = zext i1 %1 to i64
+  ret i64 %2
+}
+
+; 2 occurrences:
+; delta-rs/optimized/2braxl0lj34anf5z.ll
+; delta-rs/optimized/3qvofkyb7k5flefa.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i128 %0) #0 {
+entry:
+  %1 = icmp samesign ult i128 %0, 4
   %2 = zext i1 %1 to i64
   ret i64 %2
 }

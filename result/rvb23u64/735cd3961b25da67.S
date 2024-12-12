@@ -27,3 +27,12 @@ func0000000000000005:                   # @func0000000000000005
 	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
+func000000000000000f:                   # @func000000000000000f
+	andi	a1, a1, 1
+	add	a0, a0, a2
+	li	a2, -56
+	addi	a0, a0, 12
+	czero.nez	a1, a2, a1
+	addi	a1, a1, -8
+	and	a0, a0, a1
+	ret

@@ -11,7 +11,7 @@
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-wifi-nan.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b1(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000361(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -25,7 +25,7 @@ entry:
 ; git/optimized/merge-ort.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i16 %0, i64 %1) #0 {
+define i1 @func00000000000003e1(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -35,13 +35,12 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; libquic/optimized/custom_extensions.c.ll
+; 3 occurrences:
 ; linux/optimized/hub.ll
 ; linux/optimized/mprotect.ll
 ; spike/optimized/vclz_v.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -54,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000341(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -67,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-vrt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(i16 %0, i64 %1) #0 {
+define i1 @func00000000000003c1(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -83,7 +82,7 @@ entry:
 ; linux/optimized/mprotect.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -96,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/cost_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 2, %2

@@ -6,7 +6,7 @@
 	.quad	5                               # 0x5
 .LCPI0_2:
 	.quad	85                              # 0x55
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2   # ymm2 = [5,5,5,5]
 	vpbroadcastq	.LCPI0_2(%rip), %ymm2 {%k1} # ymm2 {%k1} = [85,85,85,85]

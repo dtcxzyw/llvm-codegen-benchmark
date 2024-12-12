@@ -12,6 +12,20 @@ func0000000000000003:                   # @func0000000000000003
 	li	a1, 11
 	or	a0, a0, a1
 	ret
+func0000000000000005:                   # @func0000000000000005
+	sext.w	a1, a1
+	beqz	a1, .LBB1_2
+	li	a1, 6
+	slli	a0, a0, 53
+	srli	a0, a0, 63
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 2
+	slli	a0, a0, 53
+	srli	a0, a0, 63
+	or	a0, a0, a1
+	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
 	slli	a0, a0, 45
@@ -28,5 +42,23 @@ func0000000000000002:                   # @func0000000000000002
 	seqz	a0, a0
 	addi	a0, a0, -1
 	andi	a0, a0, 3
+	or	a0, a0, a1
+	ret
+func0000000000000031:                   # @func0000000000000031
+	sext.w	a0, a0
+	srliw	a1, a1, 31
+	slli	a1, a1, 15
+	sltiu	a0, a0, 144
+	addi	a0, a0, -1
+	slli	a0, a0, 49
+	srli	a0, a0, 49
+	or	a0, a0, a1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a0, a0
+	slli	a1, a1, 56
+	srli	a1, a1, 57
+	sgtz	a0, a0
+	slli	a0, a0, 3
 	or	a0, a0, a1
 	ret

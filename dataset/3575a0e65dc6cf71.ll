@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; flac/optimized/decode.c.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; linux/optimized/mempolicy.ll
+; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; qemu/optimized/hw_riscv_boot.c.ll

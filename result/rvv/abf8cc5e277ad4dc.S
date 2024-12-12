@@ -9,6 +9,6 @@ func000000000000002b:                   # @func000000000000002b
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vv	v10, v12, v10
 	vadd.vv	v10, v10, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vor.vi	v8, v8, 1
 	ret

@@ -42,7 +42,7 @@ define i32 @func000000000000000c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 4
   %4 = select i1 %1, i32 %3, i32 %2
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -54,7 +54,7 @@ define i32 @func000000000000000d(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
   %4 = select i1 %1, i32 %3, i32 %2
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -84,12 +84,14 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/numeric.ll
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; icu/optimized/calendar.ll
 ; linux/optimized/r8169_main.ll
 ; llvm/optimized/InlineAdvisor.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; openspiel/optimized/bridge_scoring.cc.ll
 ; php/optimized/parse_posix.ll
 ; postgres/optimized/localtime.ll
@@ -119,7 +121,7 @@ define i32 @func000000000000000f(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 10
   %4 = select i1 %1, i32 %3, i32 %2
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

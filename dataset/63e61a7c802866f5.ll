@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; postgres/optimized/selfuncs.ll
+; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; wireshark/optimized/overlay_scroll_bar.cpp.ll
 ; wireshark/optimized/packet_list.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
@@ -12,7 +13,7 @@ entry:
   %3 = sitofp i32 %2 to double
   %4 = fmul double %3, 7.812500e-03
   %5 = fmul double %4, %1
-  %6 = fadd double %5, %0
+  %6 = fadd double %0, %5
   ret double %6
 }
 

@@ -3,7 +3,7 @@
 ; luajit/optimized/buildvm.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000048(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 4
   %3 = icmp ult i8 %0, 32

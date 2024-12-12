@@ -1,4 +1,4 @@
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	xorl	%eax, %eax
 	testb	$16, %dl
 	sete	%al
@@ -8,16 +8,19 @@ func0000000000000064:                   # @func0000000000000064
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
-	andl	$2, %edx
-	shll	$5, %edx
-	leaq	16(%rsi,%rdx), %rax
+func0000000000000081:                   # @func0000000000000081
+	andl	$1, %edx
+	leaq	1(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
-	andl	$1, %edx
-	leaq	1(%rdx,%rsi), %rax
+func00000000000000c1:                   # @func00000000000000c1
+	andl	$3, %edx
+	xorl	%eax, %eax
+	cmpl	$2, %edx
+	sete	%al
+	shll	$6, %eax
+	leaq	-64(%rax,%rsi), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq

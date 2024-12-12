@@ -14,12 +14,13 @@ entry:
   ret i8 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; git/optimized/date.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; libquic/optimized/spdy_framer.cc.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; wireshark/optimized/blf.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i1 %0, i8 %1, i8 %2) #0 {
 entry:

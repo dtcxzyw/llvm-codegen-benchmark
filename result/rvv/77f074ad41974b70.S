@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	384307168202282325              # 0x555555555555555
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001a8:                   # @func00000000000001a8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
@@ -15,7 +15,7 @@ func00000000000000d8:                   # @func00000000000000d8
 	vmacc.vx	v8, a0, v10
 	vmsgtu.vx	v0, v8, a1
 	ret
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	lui	a0, 349525
 	lui	a1, 699051
 	addiw	a0, a0, 1365
@@ -34,7 +34,7 @@ func00000000000000d1:                   # @func00000000000000d1
 	ret
 .LCPI2_0:
 	.quad	5270498306774157605             # 0x4924924924924925
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 209715
@@ -52,22 +52,7 @@ func0000000000000091:                   # @func0000000000000091
 	vadd.vv	v8, v8, v12
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000054:                   # @func0000000000000054
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v12
-	li	a0, 63
-	lui	a1, 986895
-	vsra.vi	v10, v10, 3
-	vsrl.vx	v12, v8, a0
-	addiw	a0, a1, 241
-	vadd.vv	v8, v8, v12
-	slli	a1, a0, 32
-	vsra.vi	v8, v8, 1
-	add	a0, a0, a1
-	vmacc.vx	v8, a0, v10
-	vmsleu.vi	v0, v8, 2
-	ret
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 5

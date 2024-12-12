@@ -37,7 +37,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -58,7 +58,7 @@ entry:
 ; yosys/optimized/mem.ll
 ; z3/optimized/dl_instruction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, %0
@@ -84,33 +84,21 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; wireshark/optimized/packet-pdcp-lte.c.ll
-; wireshark/optimized/packet-pdcp-nr.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %1, %2
-  %4 = and i32 %3, %0
-  %5 = icmp ugt i32 %4, 15
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; libwebp/optimized/frame_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }

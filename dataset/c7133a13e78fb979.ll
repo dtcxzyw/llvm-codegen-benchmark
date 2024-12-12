@@ -12,7 +12,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl i32 3, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

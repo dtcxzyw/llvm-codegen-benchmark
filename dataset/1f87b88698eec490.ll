@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 80 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; clamav/optimized/unarj.c.ll
@@ -33,14 +33,14 @@
 ; llvm/optimized/SummaryBasedOptimizations.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; llvm/optimized/VLIWMachineScheduler.cpp.ll
-; minetest/optimized/cavegen.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_indev.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/joystick_controller.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
 ; nix/optimized/parser-tab.ll
 ; nori/optimized/nanovg.c.ll
-; nuttx/optimized/mq_rcvinternal.c.ll
 ; nuttx/optimized/mq_sndinternal.c.ll
 ; nuttx/optimized/msgsnd.c.ll
 ; nuttx/optimized/sem_wait.c.ll
@@ -78,7 +78,8 @@
 ; wireshark/optimized/ngsniffer.c.ll
 ; yosys/optimized/rtlil_parser.tab.ll
 ; yosys/optimized/verilog_parser.tab.ll
-; zxing/optimized/AZToken.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i16 %0) #0 {
 entry:

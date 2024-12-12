@@ -1,62 +1,32 @@
-func00000000000002c1:                   // @func00000000000002c1
+func0000000000000981:                   // @func0000000000000981
 // %bb.0:                               // %entry
-	cmeq	v4.4s, v3.4s, v1.4s
-	cmeq	v5.4s, v2.4s, v0.4s
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	cmle	v3.4s, v3.4s, #0
-	cmle	v2.4s, v2.4s, #0
-	uzp1	v4.8h, v5.8h, v4.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	orr	v0.16b, v4.16b, v0.16b
-	orr	v0.16b, v0.16b, v1.16b
-	xtn	v0.8b, v0.8h
+	cmp	w1, w0
+	ccmp	w0, #0, #4, ne
+	ccmp	w1, #1, #8, ne
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000221:                   // @func0000000000000221
+func0000000000000841:                   // @func0000000000000841
 // %bb.0:                               // %entry
-	cmeq	v4.4s, v3.4s, v1.4s
-	cmeq	v5.4s, v2.4s, v0.4s
-	cmeq	v3.4s, v3.4s, #0
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v4.8h, v5.8h, v4.8h
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	orr	v1.16b, v2.16b, v4.16b
-	orr	v0.16b, v0.16b, v1.16b
-	xtn	v0.8b, v0.8h
+	cmp	w1, #0
+	ccmp	w1, w0, #4, ne
+	ccmp	w0, #0, #4, ne
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000002c6:                   // @func00000000000002c6
+func0000000000000986:                   // @func0000000000000986
 // %bb.0:                               // %entry
-	orr	v4.16b, v3.16b, v1.16b
-	orr	v5.16b, v2.16b, v0.16b
-	cmeq	v1.4s, v1.4s, v3.4s
-	cmeq	v0.4s, v0.4s, v2.4s
-	cmlt	v2.4s, v4.4s, #0
-	cmlt	v3.4s, v5.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v3.8h, v2.8h
-	orr	v0.16b, v1.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	orr	w8, w1, w0
+	cmp	w8, #0
+	ccmp	w0, w1, #4, ge
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000821:                   // @func0000000000000821
+func0000000000002041:                   // @func0000000000002041
 // %bb.0:                               // %entry
-	cmeq	v4.4s, v3.4s, #0
-	cmeq	v5.4s, v2.4s, #0
-	cmeq	v6.4s, v1.4s, #0
-	cmeq	v7.4s, v0.4s, #0
-	cmhi	v1.4s, v1.4s, v3.4s
-	cmhi	v0.4s, v0.4s, v2.4s
-	uzp1	v2.8h, v5.8h, v4.8h
-	uzp1	v3.8h, v7.8h, v6.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	orr	v1.16b, v2.16b, v3.16b
-	orr	v0.16b, v1.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	cmp	w1, #0
+	ccmp	w0, #0, #4, ne
+	ccmp	w1, w0, #0, ne
+	cset	w0, lo
 	ret
                                         // -- End function

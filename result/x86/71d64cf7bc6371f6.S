@@ -22,7 +22,7 @@ func000000000000002b:                   # @func000000000000002b
 	orq	%rdi, %rax
 	orq	$8, %rax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	xorl	%eax, %eax
 	cmpl	$134217744, %edx                # imm = 0x8000010
 	setae	%al

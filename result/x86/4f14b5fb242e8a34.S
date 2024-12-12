@@ -1,4 +1,4 @@
-func000000000000021a:                   # @func000000000000021a
+func000000000000041b:                   # @func000000000000041b
 	incq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
@@ -6,7 +6,7 @@ func000000000000021a:                   # @func000000000000021a
 	leaq	(%rax,%rax,2), %rax
 	leaq	8(%rdi,%rax,8), %rax
 	retq
-func000000000000031a:                   # @func000000000000031a
+func000000000000061f:                   # @func000000000000061f
 	incq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
@@ -14,7 +14,7 @@ func000000000000031a:                   # @func000000000000031a
 	leaq	(%rax,%rax,2), %rax
 	leaq	8(%rdi,%rax,8), %rax
 	retq
-func0000000000000312:                   # @func0000000000000312
+func0000000000000613:                   # @func0000000000000613
 	incq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
@@ -22,7 +22,7 @@ func0000000000000312:                   # @func0000000000000312
 	leaq	(%rax,%rax,2), %rax
 	leaq	8(%rdi,%rax,8), %rax
 	retq
-func0000000000000218:                   # @func0000000000000218
+func0000000000000418:                   # @func0000000000000418
 	incq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx

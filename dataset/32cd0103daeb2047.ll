@@ -1,13 +1,12 @@
 
-; 2 occurrences:
-; darktable/optimized/introspection_highlights.c.ll
+; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i1 %1) #0 {
+define i1 @func00000000000000b4(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 584400, i64 584388
   %3 = add nsw i64 %0, 4712
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -66,7 +65,7 @@ entry:
 ; yosys/optimized/glift.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i1 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 32, i64 48
   %3 = add nuw nsw i64 %0, 1
@@ -74,15 +73,26 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a4(i64 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i64 2, i64 1
+  %3 = add nsw i64 %0, 1
+  %4 = icmp ult i64 %3, %2
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/vsprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i1 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 6, i64 8
   %3 = add nuw nsw i64 %0, 1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 

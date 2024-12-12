@@ -34,7 +34,6 @@
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/introspection_flip.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; git/optimized/apply.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -85,6 +84,7 @@
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
 ; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
@@ -95,7 +95,7 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; assimp/optimized/zip.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -105,6 +105,8 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; oiio/optimized/RunLengthEncoding.cpp.ll
 ; openjdk/optimized/hb-ot-shape-normalize.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
@@ -120,10 +122,10 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = icmp ugt i32 %2, 10
+  %3 = icmp samesign ugt i32 %2, 10
   %not. = xor i1 %0, true
   %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
@@ -135,22 +137,10 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 12
   %3 = icmp eq i32 %2, 0
-  %not. = xor i1 %0, true
-  %4 = select i1 %not., i1 %3, i1 false
-  ret i1 %4
-}
-
-; 1 occurrences:
-; abc/optimized/giaMinLut2.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, -2
-  %3 = icmp sgt i32 %2, 0
   %not. = xor i1 %0, true
   %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4

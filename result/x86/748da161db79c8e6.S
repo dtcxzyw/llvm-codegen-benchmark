@@ -34,12 +34,3 @@ func0000000000000006:                   # @func0000000000000006
 	movzbl	%al, %eax
 	leaq	316(,%rax,4), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	notb	%dil
-	cmpl	$2, %esi
-	setb	%al
-	orb	%dil, %al
-	movzbl	%al, %eax
-	andl	$1, %eax
-	shll	$3, %eax
-	retq

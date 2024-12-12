@@ -13,35 +13,35 @@ func000000000000002a:                   # @func000000000000002a
 	andl	%esi, %ecx
 	subl	%ecx, %eax
 	retq
-func000000000000006b:                   # @func000000000000006b
+func00000000000000ab:                   # @func00000000000000ab
 	movl	%edi, %eax
 	movl	%esi, %ecx
 	sarl	$31, %ecx
 	andl	%esi, %ecx
 	subl	%ecx, %eax
 	retq
-func00000000000000c7:                   # @func00000000000000c7
+func0000000000000187:                   # @func0000000000000187
 	movl	$8, %eax
 	subl	%esi, %eax
 	testl	%esi, %esi
 	cmovel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	movl	$8, %eax
 	subl	%esi, %eax
 	testl	%esi, %esi
 	cmovel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	movl	$2048, %eax                     # imm = 0x800
 	subl	%esi, %eax
 	testl	%esi, %esi
 	cmovel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000069:                   # @func0000000000000069
+func00000000000000a9:                   # @func00000000000000a9
 	movl	$1, %ecx
 	subl	%esi, %ecx
 	xorl	%eax, %eax
@@ -49,21 +49,21 @@ func0000000000000069:                   # @func0000000000000069
 	cmovlel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movl	$4, %eax
 	subl	%esi, %eax
 	testl	%esi, %esi
 	cmovel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	movl	$4, %eax
 	subl	%esi, %eax
 	testl	%esi, %esi
 	cmovel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func00000000000000c5:                   # @func00000000000000c5
+func0000000000000185:                   # @func0000000000000185
 	movl	$4, %eax
 	subl	%esi, %eax
 	testl	%esi, %esi

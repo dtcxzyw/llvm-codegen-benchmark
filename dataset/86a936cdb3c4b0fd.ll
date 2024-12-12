@@ -14,7 +14,7 @@ entry:
 ; openjdk/optimized/loopTransform.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = select i1 %0, i64 %1, i64 %2
@@ -28,7 +28,7 @@ entry:
 ; openjdk/optimized/ifnode.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = select i1 %0, i64 %1, i64 %2
@@ -39,29 +39,29 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 65536, %1
   %3 = select i1 %0, i64 %1, i64 %2
-  %4 = icmp ugt i64 %3, 16384
+  %4 = icmp samesign ugt i64 %3, 16384
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 65536, %1
   %3 = select i1 %0, i64 %1, i64 %2
-  %4 = icmp ult i64 %3, 12288
+  %4 = icmp samesign ult i64 %3, 12288
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 68719476736, %1
   %3 = select i1 %0, i64 %1, i64 %2
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 17179869184, %1
   %3 = select i1 %0, i64 %1, i64 %2
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 17179869184, %1
   %3 = select i1 %0, i64 %1, i64 %2
@@ -94,11 +94,22 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 17179869184, %1
   %3 = select i1 %0, i64 %1, i64 %2
   %4 = icmp eq i64 %3, 0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 17179869184, %1
+  %3 = select i1 %0, i64 %1, i64 %2
+  %4 = icmp samesign ult i64 %3, 134217728
   ret i1 %4
 }
 
@@ -110,6 +121,17 @@ entry:
   %2 = sub i64 0, %1
   %3 = select i1 %0, i64 %1, i64 %2
   %4 = icmp ult i64 %3, 100000000
+  ret i1 %4
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 0, %1
+  %3 = select i1 %0, i64 %1, i64 %2
+  %4 = icmp samesign ult i64 %3, 100000000000000000
   ret i1 %4
 }
 

@@ -1,16 +1,5 @@
 
-; 1 occurrences:
-; image-rs/optimized/4srzh4wujeew249y.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000018(i16 %0) #0 {
-entry:
-  %1 = add nuw nsw i16 %0, 254
-  %2 = lshr i16 %1, 1
-  %3 = trunc i16 %2 to i8
-  ret i8 %3
-}
-
-; 7 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libquic/optimized/d1_both.c.ll
 ; linux/optimized/cdrom.ll
@@ -18,6 +7,8 @@ entry:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; wireshark/optimized/udpdump.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i16 %0) #0 {
 entry:

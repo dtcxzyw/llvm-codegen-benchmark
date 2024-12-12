@@ -5,7 +5,7 @@
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000196(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000326(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, %0
   %4 = lshr i32 %3, 1
@@ -22,7 +22,7 @@ entry:
 ; hdf5/optimized/H5Gnode.c.ll
 ; hdf5/optimized/H5T.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %0
   %4 = lshr i32 %3, 1
@@ -37,7 +37,7 @@ entry:
 ; icu/optimized/package.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000001b6(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000366(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 1
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Gnode.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %0
   %4 = lshr i32 %3, 1

@@ -13,7 +13,7 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 17 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/pdrUtil.c.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -22,6 +22,10 @@ entry:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_refr.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; spike/optimized/fsr.ll
 ; spike/optimized/fsrw.ll

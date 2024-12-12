@@ -10,9 +10,3 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%sil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	xorl	%edx, %esi
-	cmpl	$-4, %edi
-	setb	%al
-	andb	%sil, %al
-	retq

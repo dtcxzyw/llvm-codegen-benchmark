@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0) #0 {
+define i1 @func0000000000000308(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nuw nsw i64 %1, 17179869172
@@ -17,7 +17,7 @@ entry:
 ; linux/optimized/i915_perf.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0) #0 {
+define i1 @func0000000000000301(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nuw nsw i64 %1, 34359738364
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/read-cache.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i32 %0) #0 {
+define i1 @func000000000000030a(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nuw nsw i64 %1, 34359738364
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/tsgistidx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000038a(i32 %0) #0 {
+define i1 @func000000000000070a(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = add nuw nsw i64 %1, 17179869176

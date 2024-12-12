@@ -1,25 +1,17 @@
 
-%"struct.sound::SoundDataOpenStream::ContiguousBuffers.2589782" = type { i32, %"class.std::vector.28.2589783" }
-%"class.std::vector.28.2589783" = type { %"struct.std::_Vector_base.29.2589784" }
-%"struct.std::_Vector_base.29.2589784" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2589785" }
-%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2589785" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2589786" }
-%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2589786" = type { ptr, ptr, ptr }
+%"struct.sound::SoundDataOpenStream::ContiguousBuffers.2703627" = type { i32, %"class.std::vector.28.2703628" }
+%"class.std::vector.28.2703628" = type { %"struct.std::_Vector_base.29.2703629" }
+%"struct.std::_Vector_base.29.2703629" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2703630" }
+%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2703630" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2703631" }
+%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2703631" = type { ptr, ptr, ptr }
 
-; 57 occurrences:
-; bdwgc/optimized/gc.c.ll
+; 47 occurrences:
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
-; hermes/optimized/ArrayStorage.cpp.ll
-; hermes/optimized/HadesGC.cpp.ll
-; luajit/optimized/lj_ccallback.ll
-; luajit/optimized/lj_ccallback_dyn.ll
 ; minetest/optimized/sound_data.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/bfsClosure.ll
-; openjdk/optimized/cardTable.ll
 ; openjdk/optimized/cardTableRS.ll
-; openjdk/optimized/check_code.ll
 ; openjdk/optimized/classLoaderData.ll
 ; openjdk/optimized/defNewGeneration.ll
 ; openjdk/optimized/dfsClosure.ll
@@ -50,7 +42,6 @@
 ; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/shenandoahRuntime.ll
 ; openjdk/optimized/shenandoahVerifier.ll
-; openjdk/optimized/stackChunkOop.ll
 ; openjdk/optimized/xBarrier.ll
 ; openjdk/optimized/xBarrierSetRuntime.ll
 ; openjdk/optimized/xHeapIterator.ll
@@ -62,13 +53,26 @@
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; quantlib/optimized/noarbsabr.ll
-; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw %"struct.sound::SoundDataOpenStream::ContiguousBuffers.2589782", ptr %2, i64 %0
+  %3 = getelementptr nusw %"struct.sound::SoundDataOpenStream::ContiguousBuffers.2703627", ptr %2, i64 %0
   %4 = getelementptr nusw i8, ptr %3, i64 -32
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 3 occurrences:
+; bdwgc/optimized/gc.c.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/stackChunkOop.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw i8, ptr %2, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 32
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -83,6 +87,35 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr i8, ptr %2, i64 %0
   %4 = getelementptr i8, ptr %3, i64 -1
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 5 occurrences:
+; hermes/optimized/ArrayStorage.cpp.ll
+; luajit/optimized/lj_ccallback.ll
+; luajit/optimized/lj_ccallback_dyn.ll
+; openjdk/optimized/check_code.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw nuw i32, ptr %2, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 2 occurrences:
+; hermes/optimized/HadesGC.cpp.ll
+; openjdk/optimized/cardTable.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %0
+  %4 = getelementptr nusw i8, ptr %3, i64 -8
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

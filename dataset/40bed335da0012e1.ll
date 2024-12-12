@@ -1,5 +1,5 @@
 
-; 192 occurrences:
+; 190 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -8,10 +8,8 @@
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaSif.c.ll
 ; abc/optimized/sbdCut.c.ll
-; abc/optimized/sbdWin.c.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/spin.c.ll
 ; cmake/optimized/crc32.c.ll
 ; cmake/optimized/fse_decompress.c.ll
@@ -85,8 +83,6 @@
 ; linux/optimized/tg3.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/DIE.cpp.ll
-; llvm/optimized/DWARFFormValue.cpp.ll
 ; llvm/optimized/HashTable.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/NativeFunctionSymbol.cpp.ll
@@ -101,6 +97,7 @@
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -126,10 +123,6 @@
 ; nori/optimized/nanovg.c.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; oiio/optimized/bmpinput.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; openjdk/optimized/cmsnamed.ll
@@ -145,7 +138,7 @@
 ; php/optimized/pcre2_script_run.ll
 ; php/optimized/zend_inheritance.ll
 ; php/optimized/zend_strtod.ll
-; postgres/optimized/fsmpage.ll
+; postgres/optimized/tableam.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/net_net.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
@@ -167,6 +160,7 @@
 ; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; velox/optimized/WidthBucketArray.cpp.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
@@ -182,6 +176,10 @@
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zlib/optimized/crc32.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll

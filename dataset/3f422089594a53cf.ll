@@ -1,5 +1,6 @@
 
-; 64 occurrences:
+; 71 occurrences:
+; boost/optimized/numeric.ll
 ; bullet3/optimized/btContactConstraint.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
@@ -40,8 +41,12 @@
 ; linux/optimized/tcp_cong.ll
 ; linux/optimized/tcp_output.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/CGObjC.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
+; llvm/optimized/LiveVariables.cpp.ll
+; llvm/optimized/MCCodeView.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
@@ -64,117 +69,63 @@
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/8ncehfng1y5s06ypbycx8606d.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, ptr null, ptr %0
-  %4 = getelementptr nusw i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   ret ptr %4
 }
 
-; 15 occurrences:
+; 10 occurrences:
 ; flac/optimized/encode.c.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_dedupe.cpp.ll
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
-; llvm/optimized/ASTMatchersInternal.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
-; llvm/optimized/Decl.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/SemaCodeComplete.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaObjCProperty.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SimpleLoopUnswitch.cpp.ll
-; llvm/optimized/StandardInstrumentations.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, -5
-  %3 = select i1 %2, ptr null, ptr %0
-  %4 = getelementptr nusw i8, ptr %3, i64 16
-  ret ptr %4
-}
-
-; 4 occurrences:
-; cmake/optimized/cmComputeLinkInformation.cxx.ll
-; nix/optimized/local-derivation-goal.ll
-; sentencepiece/optimized/repeated_field.cc.ll
-; yosys/optimized/sim.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 0
-  %3 = select i1 %2, ptr null, ptr %0
-  %4 = getelementptr nusw i8, ptr %3, i64 24
-  ret ptr %4
-}
-
-; 8 occurrences:
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/CGObjC.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/InstCombineCompares.cpp.ll
-; llvm/optimized/InstCombineSelect.cpp.ll
-; llvm/optimized/LiveVariables.cpp.ll
-; llvm/optimized/MCCodeView.cpp.ll
-; llvm/optimized/PredicateInfo.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, -1
-  %3 = select i1 %2, ptr null, ptr %0
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 4
-  ret ptr %4
-}
-
-; 16 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/ASTMatchersInternal.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/ObjCMT.cpp.ll
-; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclObjC.cpp.ll
-; llvm/optimized/SemaObjCProperty.cpp.ll
-; llvm/optimized/SimpleLoopUnswitch.cpp.ll
-; llvm/optimized/StandardInstrumentations.cpp.ll
-; llvm/optimized/UninitializedObjectChecker.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, -3
+  %2 = icmp ult i32 %1, -5
   %3 = select i1 %2, ptr null, ptr %0
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 128
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   ret ptr %4
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; cmake/optimized/cmComputeLinkInformation.cxx.ll
+; nix/optimized/local-derivation-goal.ll
 ; openspiel/optimized/fsicfr.cc.ll
+; sentencepiece/optimized/repeated_field.cc.ll
+; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, ptr null, ptr %0
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 12
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 24
   ret ptr %4
 }
 
-; 1 occurrences:
-; linux/optimized/filter.ll
+; 4 occurrences:
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; llvm/optimized/InstCombineSelect.cpp.ll
+; llvm/optimized/PredicateInfo.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, ptr null, ptr %0
-  %4 = getelementptr i8, ptr %3, i64 8
+  %4 = getelementptr nusw i8, ptr %3, i64 -32
   ret ptr %4
 }
 

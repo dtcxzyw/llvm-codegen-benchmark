@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/regmap.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openssl/optimized/libcrypto-lib-punycode.ll
 ; openssl/optimized/libcrypto-shlib-punycode.ll
 ; Function Attrs: nounwind
@@ -9,15 +8,14 @@ define i32 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; cmake/optimized/zdict.c.ll
 ; cpython/optimized/mathmodule.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
-; faiss/optimized/IndexIVFPQ.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; gromacs/optimized/constraint_gpu_helpers.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
@@ -68,13 +66,15 @@ entry:
 ; spike/optimized/ukadd32.ll
 ; velox/optimized/ScanTracker.cpp.ll
 ; wireshark/optimized/tap-iostat.c.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -92,7 +92,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

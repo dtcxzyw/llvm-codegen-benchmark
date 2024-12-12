@@ -1,5 +1,5 @@
 
-; 138 occurrences:
+; 137 occurrences:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/area.cpp.ll
 ; mitsuba3/optimized/argparser.cpp.ll
@@ -68,7 +68,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -143,7 +142,7 @@ define i64 @func000000000000000d(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -155,7 +154,7 @@ define i64 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw i8 %1, 2
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -168,7 +167,7 @@ define i64 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -180,7 +179,7 @@ define i64 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

@@ -33,7 +33,7 @@ func0000000000000010:                   # @func0000000000000010
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$6, %ymm0, %ymm0
 	retq
 .LCPI6_0:

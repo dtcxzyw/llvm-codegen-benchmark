@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 86 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; darktable/optimized/RawImage.cpp.ll
@@ -15,6 +15,7 @@
 ; linux/optimized/regmap.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/tileanimation.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
@@ -82,6 +83,7 @@
 ; wireshark/optimized/packet-olsr.c.ll
 ; wireshark/optimized/packet-opus.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
+; yosys/optimized/formalff.ll
 ; yosys/optimized/memory_bram.ll
 ; yosys/optimized/opt_merge.ll
 ; Function Attrs: nounwind
@@ -109,6 +111,7 @@ entry:
 ; abc/optimized/sscSim.c.ll
 ; abc/optimized/utilCex.c.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/rational.ll
 ; bullet3/optimized/b3File.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/frm_driver.c.ll
@@ -279,7 +282,6 @@ entry:
 ; velox/optimized/VectorSaver.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
-; yosys/optimized/formalff.ll
 ; yosys/optimized/memory_bram.ll
 ; yosys/optimized/pmuxtree.ll
 ; z3/optimized/s_integer.cpp.ll
@@ -290,7 +292,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -302,7 +304,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 

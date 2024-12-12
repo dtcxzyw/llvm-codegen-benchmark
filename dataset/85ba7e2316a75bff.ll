@@ -65,7 +65,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   ret i64 %3
 }
@@ -78,6 +78,8 @@ entry:
 ; icu/optimized/decNumber.ll
 ; libquic/optimized/url_parse.cc.ll
 ; lief/optimized/File.cpp.ll
+; luajit/optimized/lib_string.ll
+; luajit/optimized/lib_string_dyn.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
@@ -97,8 +99,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -212,7 +212,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   ret i64 %3
 }
@@ -224,7 +224,7 @@ entry:
 define i64 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   ret i64 %3
 }
@@ -239,7 +239,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   ret i64 %3
 }
@@ -479,7 +479,7 @@ entry:
 define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   ret i64 %3
 }
@@ -511,7 +511,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
@@ -545,7 +545,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
@@ -557,7 +557,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   ret i64 %3
 }
@@ -593,7 +593,7 @@ entry:
 define i64 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }

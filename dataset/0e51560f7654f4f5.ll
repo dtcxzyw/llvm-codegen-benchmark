@@ -1,12 +1,17 @@
 
-; 79 occurrences:
-; abc/optimized/simSym.c.ll
+; 85 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -27,6 +32,7 @@
 ; linux/optimized/x509_cert_parser.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meilisearch-rs/optimized/50l87gnpqq82g6pe.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -87,9 +93,10 @@ entry:
   ret i1 %2
 }
 
-; 15 occurrences:
+; 19 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -103,11 +110,14 @@ entry:
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; minetest/optimized/treegen.cpp.ll
 ; postgres/optimized/cash.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0) #0 {
+define i1 @func0000000000000014(i16 %0) #0 {
 entry:
   %1 = urem i16 %0, 100
-  %2 = icmp ult i16 %1, 10
+  %2 = icmp samesign ult i16 %1, 10
   ret i1 %2
 }
 
@@ -119,17 +129,23 @@ entry:
 ; postgres/optimized/cash.ll
 ; sentencepiece/optimized/time.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0) #0 {
+define i1 @func0000000000000018(i16 %0) #0 {
 entry:
   %1 = urem i16 %0, 100
-  %2 = icmp ugt i16 %1, 19
+  %2 = icmp samesign ugt i16 %1, 19
   ret i1 %2
 }
 
-; 12 occurrences:
+; 18 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cpython/optimized/_datetimemodule.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; jq/optimized/decNumber.ll

@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; openexr/optimized/ImfConvert.cpp.ll
 ; openusd/optimized/value.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:

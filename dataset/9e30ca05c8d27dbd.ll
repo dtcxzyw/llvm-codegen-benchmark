@@ -1,7 +1,8 @@
 
-; 71 occurrences:
+; 73 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; assimp/optimized/OpenGEXImporter.cpp.ll
+; boost/optimized/url_base.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; clamav/optimized/fmap.c.ll
 ; cpython/optimized/longobject.ll
@@ -71,11 +72,12 @@
 ; ruby/optimized/hash.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; verilator/optimized/V3PreProc.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 1
   ret i64 %4
 }
@@ -96,14 +98,15 @@ entry:
 define i64 @func000000000000000c(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl i64 %3, 2
   ret i64 %4
 }
 
-; 64 occurrences:
+; 66 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/url_base.ll
 ; cpython/optimized/gcmodule.ll
 ; cpython/optimized/sysmodule.ll
 ; cpython/optimized/typeobject.ll
@@ -165,17 +168,18 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; quickjs/optimized/libbf.ll
 ; simdjson/optimized/simdjson.cpp.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl nuw nsw i64 %3, 3
   ret i64 %4
 }
 
-; 101 occurrences:
+; 113 occurrences:
 ; actix-rs/optimized/34v80y29y6uwgxas.ll
 ; coreutils-rs/optimized/4kegmj2upwa8iiok.ll
 ; coreutils-rs/optimized/gag8htnqkrxvy02.ll
@@ -277,11 +281,23 @@ entry:
 ; rust-analyzer-rs/optimized/kgjdhswqfwvmeof.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; zed-rs/optimized/1058j2jmz8vfpblqgu0wznwf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1v7j1lpugnisv9daukqm09uho.ll
+; zed-rs/optimized/3r1m4prp00pk2zcmrznfgmdke.ll
+; zed-rs/optimized/56i9d5rrx6hrud8ee30t4acpd.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = shl i64 %3, 1
   ret i64 %4
 }
@@ -292,21 +308,25 @@ entry:
 define i64 @func0000000000000002(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl nuw i64 %3, 1
   ret i64 %4
 }
 
-; 17 occurrences:
+; 21 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
+; boost/optimized/pattern.ll
+; boost/optimized/url_base.ll
 ; cvc5/optimized/base_solver.cpp.ll
 ; cvc5/optimized/bv_inverter.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
+; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/quantifiers_macros.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/real_to_int.cpp.ll
+; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/smt2_printer.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/sygus_process_conj.cpp.ll
@@ -319,7 +339,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl nuw i64 %3, 3
   ret i64 %4
 }
@@ -334,21 +354,21 @@ entry:
 define i64 @func0000000000000007(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nuw nsw i64 %3, 3
   ret i64 %4
 }
 
 ; 3 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
+; boost/optimized/cmdline.ll
 ; graphviz/optimized/shapes.c.ll
-; libevent/optimized/http.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
-  %4 = shl nsw i64 %3, 1
+  %3 = add nsw i64 %0, %2
+  %4 = shl nsw i64 %3, 3
   ret i64 %4
 }
 
@@ -361,7 +381,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl nuw nsw i64 %3, 3
   ret i64 %4
 }
@@ -385,7 +405,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl i64 %3, 32
   ret i64 %4
 }
@@ -396,7 +416,7 @@ entry:
 define i64 @func000000000000000b(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = shl nuw nsw i64 %3, 3
   ret i64 %4
 }

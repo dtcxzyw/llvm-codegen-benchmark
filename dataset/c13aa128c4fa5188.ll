@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; mitsuba3/optimized/sdfgrid.cpp.ll
-; openusd/optimized/fvarLevel.cpp.ll
 ; wireshark/optimized/packet-vrt.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i8 %1) #0 {

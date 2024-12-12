@@ -25,6 +25,16 @@ func0000000000000001:                   # @func0000000000000001
 	shlq	$17, %rax
 	negq	%rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	leal	(%rdi,%rsi), %ecx
+	movabsq	$86400000000, %rax              # imm = 0x141DD76000
+	imulq	%rcx, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	leal	(%rdi,%rsi), %ecx
+	movabsq	$163391164108059, %rax          # imm = 0x949A784BCD1B
+	imulq	%rcx, %rax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	leal	(%rdi,%rsi), %ecx
 	movq	%rcx, %rax

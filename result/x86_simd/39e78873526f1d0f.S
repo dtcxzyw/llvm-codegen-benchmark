@@ -2,7 +2,7 @@
 	.long	7                               # 0x7
 func000000000000000c:                   # @func000000000000000c
 	vpslld	$6, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI0_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper

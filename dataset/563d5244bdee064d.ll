@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 42 occurrences:
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/2n0ez5zuwgs53clg.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
@@ -36,8 +36,14 @@
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; wasmtime-rs/optimized/456j0x8j3xyjpk7h.ll
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
+; zed-rs/optimized/7aq90jycr3x842qyrhjbel971.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000441(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001081(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 7
   %3 = select i1 %2, i64 %1, i64 4

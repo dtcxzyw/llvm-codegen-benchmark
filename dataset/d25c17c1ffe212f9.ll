@@ -13,19 +13,9 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-cesoeth.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = sub i32 %0, %4
-  %6 = add nuw i32 %5, 8
-  ret i32 %6
-}
-
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
@@ -36,9 +26,21 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 -151, i32 %1
+  %4 = select i1 %3, i32 -1076, i32 %1
   %5 = sub nsw i32 %0, %4
-  %6 = add nsw i32 %5, 27
+  %6 = add nsw i32 %5, 58
+  ret i32 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-cesoeth.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 0, i32 %1
+  %5 = sub i32 %0, %4
+  %6 = add nuw i32 %5, 8
   ret i32 %6
 }
 
@@ -63,19 +65,6 @@ entry:
   %4 = select i1 %3, i32 0, i32 %1
   %5 = sub nsw i32 %0, %4
   %6 = add nuw nsw i32 %5, 3
-  ret i32 %6
-}
-
-; 2 occurrences:
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000060(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 1
-  %4 = select i1 %3, i32 1, i32 %1
-  %5 = sub i32 %0, %4
-  %6 = add i32 %5, 1
   ret i32 %6
 }
 

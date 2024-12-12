@@ -28,7 +28,7 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	zext.h	a0, a0
 	add	a1, a1, a2
 	addi	a1, a1, 11

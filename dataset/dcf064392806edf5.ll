@@ -1,7 +1,6 @@
 
-; 50 occurrences:
+; 48 occurrences:
 ; abc/optimized/cuddAPI.c.ll
-; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
 ; duckdb/optimized/ub_duckdb_physical_plan.cpp.ll
 ; faiss/optimized/index_write.cpp.ll
 ; graphviz/optimized/sgd.c.ll
@@ -10,7 +9,6 @@
 ; opencv/optimized/onnx_importer.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; redis/optimized/tracking.ll
-; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
 ; taskflow/optimized/cancel.cpp.ll
@@ -55,7 +53,7 @@ define i64 @func0000000000000060(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -71,7 +69,7 @@ define i64 @func0000000000000008(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -94,7 +92,7 @@ define i64 @func000000000000000b(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -105,7 +103,7 @@ define i64 @func0000000000000063(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -118,7 +116,7 @@ define i64 @func0000000000000061(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -130,7 +128,7 @@ define i64 @func0000000000000048(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -142,7 +140,7 @@ define i64 @func0000000000000009(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -153,7 +151,7 @@ define i64 @func0000000000000021(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; flac/optimized/main.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0) #0 {
+define i1 @func000000000000004c(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = icmp slt i32 %1, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i32 %0) #0 {
+define i1 @func0000000000000050(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = and i32 %1, -2048
@@ -29,7 +29,7 @@ entry:
 ; icu/optimized/uresdata.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0) #0 {
+define i1 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = and i32 %1, -2
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/evict.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0) #0 {
+define i1 @func0000000000000302(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = and i32 %1, 3

@@ -1,9 +1,11 @@
 
-; 54 occurrences:
+; 56 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
 ; abseil-cpp/optimized/reflection.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/cmArgumentParser.cxx.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cmake/optimized/cmList.cxx.ll
@@ -55,7 +57,7 @@
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, 1
   %4 = add nsw i64 %1, %2
@@ -70,7 +72,7 @@ entry:
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000054a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, 1
   %4 = add nsw i64 %1, %2
@@ -84,7 +86,7 @@ entry:
 ; oiio/optimized/exif.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, 1
   %4 = add i64 %1, %2
@@ -99,7 +101,7 @@ entry:
 ; llvm/optimized/DeclCXX.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000042a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, 1
   %4 = add nsw i64 %1, %2

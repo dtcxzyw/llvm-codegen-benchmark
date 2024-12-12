@@ -1,8 +1,11 @@
 
-%"class.hermes::vm::PinnedHermesValue.2889352" = type { %"class.hermes::vm::HermesValue.2889353" }
-%"class.hermes::vm::HermesValue.2889353" = type { i64 }
+%"class.hermes::vm::PinnedHermesValue.3083867" = type { %"class.hermes::vm::HermesValue.3083868" }
+%"class.hermes::vm::HermesValue.3083868" = type { i64 }
+%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3434318" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3434319" }
+%"struct.google::protobuf::internal::ExtensionSet::Extension.3434319" = type { %union.anon.4.3434320, i8, i8, i8, i8, i32, ptr }
+%union.anon.4.3434320 = type { i64 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/compileBroker.ll
 ; openjdk/optimized/constantPool.ll
@@ -23,30 +26,54 @@
 ; openjdk/optimized/stackChunkOop.ll
 ; openjdk/optimized/stackwalk.ll
 ; openjdk/optimized/vframe.ll
-; protobuf/optimized/extension_set.cc.ll
-; sentencepiece/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000019a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000019e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i64, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
   %7 = getelementptr nusw i64, ptr %6, i64 %4
   ret ptr %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hermes/optimized/Callable.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001d0(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 32
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw nuw %"class.hermes::vm::PinnedHermesValue.3083867", ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -64
+  %7 = getelementptr %"class.hermes::vm::PinnedHermesValue.3083867", ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000190(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 32
+  %3 = ashr exact i64 %2, 2
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.2889352", ptr %0, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 -64
-  %7 = getelementptr %"class.hermes::vm::PinnedHermesValue.2889352", ptr %6, i64 %4
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -4
+  %7 = getelementptr i32, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 2 occurrences:
+; protobuf/optimized/extension_set.cc.ll
+; sentencepiece/optimized/extension_set.cc.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001de(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 5
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw nuw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3434318", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 32
+  %7 = getelementptr nusw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3434318", ptr %6, i64 %4
   ret ptr %7
 }
 

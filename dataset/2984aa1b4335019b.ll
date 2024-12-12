@@ -11,13 +11,13 @@
 ; bullet3/optimized/btMinkowskiSumShape.ll
 ; bullet3/optimized/btPolyhedralConvexShape.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
-; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_highpass.c.ll
 ; darktable/optimized/introspection_monochrome.c.ll
+; darktable/optimized/introspection_soften.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll

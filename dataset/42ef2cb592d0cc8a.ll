@@ -1,10 +1,11 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/mapperMatch.c.ll
 ; abc/optimized/mapperTime.c.ll
 ; abc/optimized/mapperUtils.c.ll
 ; abc/optimized/saigConstr2.c.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
 ; openssl/optimized/libssl-lib-tls_common.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll

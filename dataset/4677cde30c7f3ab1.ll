@@ -1,10 +1,9 @@
 
-; 76 occurrences:
+; 74 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; cmake/optimized/RegularExpression.cxx.ll
 ; cmake/optimized/blocksort.c.ll
@@ -67,7 +66,6 @@
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; openusd/optimized/stbImage.cpp.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_study.ll
 ; raylib/optimized/rmodels.c.ll
@@ -77,12 +75,12 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -93,7 +91,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -135,12 +133,12 @@ entry:
 ; spike/optimized/fdt_sw.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -152,7 +150,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -164,7 +162,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i16, ptr %0, i64 %5
   ret ptr %6
@@ -176,12 +174,12 @@ entry:
 ; z3/optimized/sat_prob.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -190,12 +188,12 @@ entry:
 ; icu/optimized/ucasemap.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

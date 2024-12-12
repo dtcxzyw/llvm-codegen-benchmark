@@ -11,7 +11,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	subl	%edx, %esi
 	addl	$10513, %esi                    # imm = 0x2911
 	cmpl	$21026, %esi                    # imm = 0x5222

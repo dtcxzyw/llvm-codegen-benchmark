@@ -1,5 +1,5 @@
 
-; 285 occurrences:
+; 289 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -7,6 +7,8 @@
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/giaUtil.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; darktable/optimized/amaze.cc.ll
@@ -105,6 +107,7 @@
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_hdmi.ll
 ; luajit/optimized/buildvm_asm.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -180,6 +183,7 @@
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; openjdk/optimized/X11FontScaler_md.ll
 ; openjdk/optimized/macroAssembler_x86.ll
+; postgres/optimized/inv_api.ll
 ; quantlib/optimized/argentina.ll
 ; quantlib/optimized/australia.ll
 ; quantlib/optimized/austria.ll
@@ -286,7 +290,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = and i32 %2, 1
@@ -294,7 +298,7 @@ entry:
   ret i1 %4
 }
 
-; 144 occurrences:
+; 142 occurrences:
 ; abc/optimized/compress.c.ll
 ; clamav/optimized/upack.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -318,13 +322,10 @@ entry:
 ; hyperscan/optimized/teddy.c.ll
 ; hyperscan/optimized/teddy_avx2.c.ll
 ; libwebp/optimized/palette.c.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/calipso.ll
-; linux/optimized/drm_debugfs_crc.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/i915_perf.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_fbc.ll
@@ -340,6 +341,7 @@ entry:
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
+; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/g1AllocRegion.ll
@@ -491,7 +493,7 @@ entry:
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 %0, %1
   %3 = and i32 %2, 1
@@ -499,8 +501,9 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/bmcBmc2.c.ll
+; abc/optimized/mvcUtils.c.ll
 ; linux/optimized/xfrm_input.ll
 ; quantlib/optimized/denmark.ll
 ; quantlib/optimized/france.ll
@@ -509,7 +512,7 @@ entry:
 ; quantlib/optimized/sweden.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = and i32 %2, 7
@@ -523,11 +526,11 @@ entry:
 ; wireshark/optimized/packet-ecpri.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = and i32 %2, 65535
-  %4 = icmp ugt i32 %3, 2
+  %4 = icmp samesign ugt i32 %3, 2
   ret i1 %4
 }
 
@@ -536,18 +539,18 @@ entry:
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = and i32 %2, 255
-  %4 = icmp ugt i32 %3, 6
+  %4 = icmp samesign ugt i32 %3, 6
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 %0, %1
   %3 = and i32 %2, 255
@@ -559,7 +562,7 @@ entry:
 ; libwebp/optimized/palette.c.ll
 ; linux/optimized/syncookies.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = and i32 %2, 16777212

@@ -11,4 +11,13 @@ entry:
   ret i64 %1
 }
 
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i1 %0) #0 {
+entry:
+  %1 = select i1 %0, i64 -12, i64 -1464
+  ret i64 %1
+}
+
 attributes #0 = { nounwind }

@@ -1,10 +1,11 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
+; boost/optimized/src.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; icu/optimized/propname.ll
 ; libjpeg-turbo/optimized/wrgif.c.ll
@@ -20,7 +21,7 @@
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nsw i32 %3, 2
   ret i32 %4
 }
@@ -33,6 +34,7 @@ entry:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/ifSat.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/message.ll
 ; clamav/optimized/unsp.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -43,7 +45,6 @@ entry:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/multibit_build.cpp.ll
 ; libjpeg-turbo/optimized/rdjpgcom.c.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/mpi-bit.ll
 ; linux/optimized/skl_scaler.ll
@@ -102,7 +103,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add i32 %3, 2
   ret i32 %4
 }
@@ -143,7 +144,7 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 29 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; graphviz/optimized/constrained_majorization_ipsep.c.ll
@@ -164,19 +165,27 @@ entry:
 ; openvdb/optimized/points.cc.ll
 ; protobuf/optimized/coded_stream.cc.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nsw i32 %3, 7
   ret i32 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; clamav/optimized/pe.c.ll
 ; linux/optimized/cfg.ll
-; linux/optimized/eeprom.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_dpio_phy.ll
@@ -201,7 +210,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add i32 %3, 7
   ret i32 %4
 }
@@ -212,7 +221,7 @@ entry:
 define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add nsw i32 %3, 8
   ret i32 %4
 }
@@ -247,7 +256,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add i32 %3, 8
   ret i32 %4
 }
@@ -258,7 +267,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = add nsw i32 %3, -32
   ret i32 %4
 }
@@ -270,7 +279,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nuw nsw i32 %3, 2
   ret i32 %4
 }
@@ -283,7 +292,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add nuw nsw i32 %3, 4
   ret i32 %4
 }
@@ -297,7 +306,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add nsw i32 %3, -12
   ret i32 %4
 }
@@ -339,7 +348,7 @@ entry:
 define i32 @func000000000000003e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = add nuw i32 %3, 1
   ret i32 %4
 }
@@ -377,21 +386,19 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 8
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = add i32 %3, 459388
   ret i32 %4
 }
 
-; 4 occurrences:
-; openblas/optimized/lapacke_dgbcon_work.c.ll
-; openblas/optimized/lapacke_dgbtrf_work.c.ll
+; 2 occurrences:
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nuw nsw i32 %3, 1
   ret i32 %4
 }
@@ -402,7 +409,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add nuw i32 %3, 7
   ret i32 %4
 }
@@ -413,7 +420,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = add i32 %3, -13312
   ret i32 %4
 }

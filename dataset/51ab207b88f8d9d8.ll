@@ -13,7 +13,7 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
@@ -32,6 +32,8 @@ entry:
 ; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; qemu/optimized/tcg.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
@@ -41,7 +43,7 @@ entry:
   ret i64 %4
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/cuddLCache.c.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
@@ -57,7 +59,6 @@ entry:
 ; hdf5/optimized/H5B.c.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; linux/optimized/balloc.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/virtgpu_gem.ll
 ; linux/optimized/vt.ll
 ; lodepng/optimized/lodepng.cpp.ll
@@ -82,6 +83,8 @@ entry:
 ; z3/optimized/mpff.cpp.ll
 ; z3/optimized/mpfx.cpp.ll
 ; z3/optimized/mpz_matrix.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -112,18 +115,17 @@ entry:
 define i64 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_splittoning.c.ll
 ; darktable/optimized/introspection_vibrance.c.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -155,7 +157,7 @@ entry:
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -169,7 +171,7 @@ entry:
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

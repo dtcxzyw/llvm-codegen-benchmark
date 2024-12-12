@@ -1,6 +1,11 @@
 
-; 112 occurrences:
+; 100 occurrences:
 ; bdwgc/optimized/cordprnt.c.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/static_string.ll
 ; bullet3/optimized/b3File.ll
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/pe.c.ll
@@ -12,16 +17,6 @@
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; hdf5/optimized/H5Fsuper_cache.c.ll
-; hdf5/optimized/H5HGcache.c.ll
-; hdf5/optimized/H5HLcache.c.ll
-; hdf5/optimized/H5Ocache.c.ll
-; hdf5/optimized/H5Ocont.c.ll
-; hdf5/optimized/H5Olayout.c.ll
-; hdf5/optimized/H5Ostab.c.ll
-; hdf5/optimized/H5Rint.c.ll
-; hdf5/optimized/H5Sall.c.ll
-; hdf5/optimized/H5Snone.c.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/fdr.c.ll
@@ -29,15 +24,11 @@
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/ng_lbr.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
-; jemalloc/optimized/emap.ll
-; jemalloc/optimized/emap.pic.ll
-; jemalloc/optimized/emap.sym.ll
 ; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/gcm.ll
 ; linux/optimized/lskcipher.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/skcipher.ll
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/Comment.cpp.ll
@@ -69,9 +60,9 @@
 ; luajit/optimized/lj_ffrecord_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/zone.cpp.ll
-; nix/optimized/serialise.ll
 ; node/optimized/libnode.async_wrap.ll
 ; node/optimized/libnode.stream_pipe.ll
 ; opencv/optimized/alloc.cpp.ll
@@ -99,23 +90,20 @@
 ; openjdk/optimized/zGeneration.ll
 ; openjdk/optimized/zMark.ll
 ; openmpi/optimized/opal_free_list.ll
-; openmpi/optimized/rcache_grdma_module.ll
 ; openusd/optimized/aom_mem.c.ll
 ; php/optimized/ir_gdb.ll
-; php/optimized/pass1.ll
 ; php/optimized/softmagic.ll
-; php/optimized/zend_builtin_functions.ll
 ; redis/optimized/lauxlib.ll
-; redis/optimized/listpack.ll
 ; ruby/optimized/node.ll
 ; spike/optimized/socketif.ll
 ; stb/optimized/stb_ds.c.ll
 ; z3/optimized/nla_core.cpp.ll
 ; z3/optimized/smt_clause.cpp.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0) #0 {
+define i64 @func000000000000000c(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 48
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 48
   %2 = ptrtoint ptr %1 to i64
   %3 = add i64 %2, 552
   ret i64 %3
@@ -153,7 +141,6 @@ entry:
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/inffast.ll
 ; linux/optimized/kfifo.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memtype.ll
 ; linux/optimized/mmap.ll
 ; linux/optimized/pt.ll
@@ -161,6 +148,7 @@ entry:
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/workingset.ll
 ; php/optimized/file.ll
+; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/brin_inclusion.ll
 ; postgres/optimized/brin_minmax.ll
@@ -178,8 +166,38 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
-; libzmq/optimized/ipc_address.cpp.ll
+; 21 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; hdf5/optimized/H5Fsuper_cache.c.ll
+; hdf5/optimized/H5HGcache.c.ll
+; hdf5/optimized/H5HLcache.c.ll
+; hdf5/optimized/H5Ocache.c.ll
+; hdf5/optimized/H5Ocont.c.ll
+; hdf5/optimized/H5Olayout.c.ll
+; hdf5/optimized/H5Ostab.c.ll
+; hdf5/optimized/H5Rint.c.ll
+; hdf5/optimized/H5Sall.c.ll
+; hdf5/optimized/H5Snone.c.ll
+; hyperscan/optimized/fdr.c.ll
+; jemalloc/optimized/emap.ll
+; jemalloc/optimized/emap.pic.ll
+; jemalloc/optimized/emap.sym.ll
+; nix/optimized/serialise.ll
+; openmpi/optimized/rcache_grdma_module.ll
+; php/optimized/pass1.ll
+; php/optimized/zend_builtin_functions.ll
+; redis/optimized/listpack.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(ptr %0) #0 {
+entry:
+  %1 = getelementptr nusw i8, ptr %0, i64 -2
+  %2 = ptrtoint ptr %1 to i64
+  %3 = add i64 %2, 1
+  ret i64 %3
+}
+
+; 8 occurrences:
 ; luajit/optimized/lj_ffrecord.ll
 ; luajit/optimized/lj_ffrecord_dyn.ll
 ; luajit/optimized/lj_opt_fold.ll
@@ -189,11 +207,11 @@ entry:
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(ptr %0) #0 {
+define i64 @func000000000000000d(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 2
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 280
   %2 = ptrtoint ptr %1 to i64
-  %3 = add nsw i64 %2, -2
+  %3 = add nsw i64 %2, 15
   ret i64 %3
 }
 

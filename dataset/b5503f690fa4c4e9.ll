@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; faiss/optimized/sorting.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
@@ -34,11 +33,10 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; Function Attrs: nounwind

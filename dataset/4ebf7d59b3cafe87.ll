@@ -14,9 +14,10 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; hdf5/optimized/H5Ctag.c.ll
 ; hdf5/optimized/H5Iint.c.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:

@@ -7,7 +7,7 @@ func0000000000000008:                   # @func0000000000000008
 	sbbq	%rax, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	andl	$1, %edx
 	addq	%rsi, %rdx
 	shrq	$61, %rdx
@@ -16,7 +16,14 @@ func0000000000000038:                   # @func0000000000000038
 	sbbq	%rax, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000044:                   # @func0000000000000044
+	andl	$1, %edx
+	addq	%rsi, %rdx
+	xorl	%eax, %eax
+	cmpq	$2, %rdx
+	cmovaeq	%rdi, %rax
+	retq
+func0000000000000028:                   # @func0000000000000028
 	andl	$1, %edx
 	addq	%rsi, %rdx
 	shrq	$61, %rdx

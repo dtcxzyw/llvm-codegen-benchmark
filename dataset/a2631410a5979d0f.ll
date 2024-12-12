@@ -22,10 +22,10 @@ entry:
 ; qemu/optimized/source_s_addMagsF16.c.ll
 ; spike/optimized/s_addMagsF16.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
+define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 117440512
-  %2 = icmp ult i64 %1, 50331648
+  %2 = icmp samesign ult i64 %1, 50331648
   ret i1 %2
 }
 

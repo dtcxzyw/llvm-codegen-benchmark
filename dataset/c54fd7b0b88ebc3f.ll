@@ -37,6 +37,21 @@ entry:
   ret i64 %5
 }
 
+; 4 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = add nuw i64 %2, 1
+  %4 = ashr exact i64 %0, 3
+  %5 = sub nuw i64 %3, %4
+  ret i64 %5
+}
+
 ; 7 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll

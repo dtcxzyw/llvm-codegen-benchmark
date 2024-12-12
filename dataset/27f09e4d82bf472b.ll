@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   %5 = icmp eq i8 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -15,10 +15,10 @@ entry:
 ; fmt/optimized/compile-test.cc.ll
 ; vcpkg/optimized/strings.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c7(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000587(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   %5 = icmp ne i8 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -125,10 +125,10 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   %5 = icmp ne i8 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -137,10 +137,10 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000054a(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   %5 = icmp sgt i8 %1, -1
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -149,10 +149,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/printk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000117(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000427(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   %5 = icmp eq i8 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -163,10 +163,10 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   %5 = icmp eq i8 %1, -128
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6

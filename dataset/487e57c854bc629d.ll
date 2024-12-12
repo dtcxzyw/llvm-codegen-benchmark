@@ -232,13 +232,13 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = sub nuw nsw i32 8, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr nusw i8, ptr %6, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }
 

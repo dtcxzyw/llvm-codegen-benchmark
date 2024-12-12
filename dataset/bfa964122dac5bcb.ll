@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 21 occurrences:
 ; cpython/optimized/binascii.ll
 ; linux/optimized/gf128mul.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
@@ -14,6 +14,13 @@
 ; wireshark/optimized/eyesdn.c.ll
 ; wireshark/optimized/packet-irda.c.ll
 ; wireshark/optimized/packet-tcpcl.c.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i8 %0) #0 {
 entry:

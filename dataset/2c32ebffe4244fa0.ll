@@ -28,12 +28,12 @@ entry:
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65535
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 

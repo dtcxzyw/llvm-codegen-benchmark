@@ -13,9 +13,6 @@ func0000000000000025:                   # @func0000000000000025
 	movl	$24, %eax
 	subl	%ecx, %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	leal	2(%rdi,%rdi,2), %eax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	leal	(%rdi,%rdi), %eax
 	movl	%edi, %ecx

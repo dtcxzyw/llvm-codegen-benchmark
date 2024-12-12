@@ -23,7 +23,7 @@ entry:
   ret i64 %6
 }
 
-; 199 occurrences:
+; 198 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -174,7 +174,6 @@ entry:
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReplaceWithVeclib.cpp.ll

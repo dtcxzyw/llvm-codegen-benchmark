@@ -26,3 +26,9 @@ func000000000000003d:                   # @func000000000000003d
 	addiw	a1, a1, 1280
 	or	a0, a0, a1
 	ret
+func0000000000000008:                   # @func0000000000000008
+	slliw	a1, a1, 8
+	slliw	a0, a0, 16
+	or	a0, a0, a1
+	addi	a0, a0, 53
+	ret

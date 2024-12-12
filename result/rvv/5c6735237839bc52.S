@@ -43,13 +43,13 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfne.vv	v16, v8, v8
 	vmfne.vv	v8, v24, v24
-	vmor.mm	v0, v8, v16
+	vmor.mm	v0, v16, v8
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwcvt.f.f.v	v24, v16
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vmfeq.vv	v0, v24, v8
+	vmfeq.vv	v0, v8, v24
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -61,7 +61,7 @@ func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwcvt.f.f.v	v24, v16
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vmfne.vv	v0, v24, v8
+	vmfne.vv	v0, v8, v24
 	ret
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 16, e32, m4, ta, ma

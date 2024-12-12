@@ -3,7 +3,7 @@
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = icmp sgt i32 %3, %1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/iffoutput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 6
   %4 = icmp ugt i32 %3, %1
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = icmp sge i32 %3, %1
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/av1_scale.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -81,7 +81,7 @@ entry:
 ; linux/optimized/ndisc.ll
 ; linux/optimized/route.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = icmp ne i32 %3, %1

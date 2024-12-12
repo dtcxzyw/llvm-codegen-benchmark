@@ -1,32 +1,30 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; folly/optimized/farmhash.cpp.ll
-; git/optimized/dir.ll
 ; oiio/optimized/farmhash.cpp.ll
 ; oiio/optimized/ustring.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 63
   %4 = and i64 %3, 63
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   %7 = getelementptr nusw i8, ptr %6, i64 -63
   ret ptr %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/cdsEnumKlass.ll
 ; openjdk/optimized/runTimeClassInfo.ll
-; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 7
   %4 = and i64 %3, -8
   %5 = getelementptr i8, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 4
   ret ptr %7
 }
 
@@ -61,39 +59,39 @@ entry:
 }
 
 ; 1 occurrences:
-; git/optimized/fmt-merge-msg.ll
+; git/optimized/dir.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 2
-  %4 = and i64 %3, 4294967295
+  %3 = add i64 %2, 76
+  %4 = and i64 %3, 4294967294
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  %7 = getelementptr i8, ptr %6, i64 7
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
   ret ptr %7
 }
 
 ; 1 occurrences:
-; lightgbm/optimized/dataset_loader.cpp.ll
+; git/optimized/fmt-merge-msg.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 7
-  %4 = and i64 %3, -8
+  %3 = add i64 %2, 2
+  %4 = and i64 %3, 4294967295
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr i8, ptr %6, i64 7
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000e0(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000f0(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4294967293
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw double, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %1
   %6 = getelementptr double, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
@@ -103,13 +101,13 @@ entry:
 ; hyperscan/optimized/mcclellan.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 131070
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 2
   ret ptr %7
 }
 

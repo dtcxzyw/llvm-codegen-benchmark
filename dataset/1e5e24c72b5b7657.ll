@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/nwkSpeedup.c.ll
@@ -24,6 +24,7 @@
 ; openusd/optimized/colr.c.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/noise.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1) #0 {

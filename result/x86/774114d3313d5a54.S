@@ -16,12 +16,3 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movzwl	%si, %eax
-	cmpl	$9, %eax
-	setae	%al
-	andb	%dil, %al
-	movzbl	%al, %eax
-	decl	%eax
-	orl	$2, %eax
-	retq

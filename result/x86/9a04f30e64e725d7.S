@@ -1,3 +1,10 @@
+func0000000000000018:                   # @func0000000000000018
+	movl	%edi, %eax
+	xorl	%edx, %edx
+	divl	%esi
+	cmpl	$33, %eax
+	setae	%al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%edi, %eax
 	xorl	%edx, %edx
@@ -19,6 +26,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$1, %eax
 	sete	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movl	%edi, %eax
+	xorl	%edx, %edx
+	divl	%esi
+	cmpl	$33, %eax
+	setb	%al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	%edi, %eax
 	xorl	%edx, %edx
@@ -30,8 +44,8 @@ func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax
 	xorl	%edx, %edx
 	divl	%esi
-	cmpl	$16384, %eax                    # imm = 0x4000
-	setl	%al
+	testl	%eax, %eax
+	setle	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
@@ -40,7 +54,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$1, %eax
 	setne	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	movl	%edi, %eax
 	xorl	%edx, %edx
 	divl	%esi

@@ -23,10 +23,12 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; hyperscan/optimized/limex_64.c.ll
+; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; slurm/optimized/fed_mgr.ll
 ; spike/optimized/triggers.ll
@@ -41,7 +43,8 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
@@ -49,7 +52,19 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
   %5 = and i64 %0, %1
-  %6 = and i64 %5, %4
+  %6 = and i64 %4, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw i64 1, %3
+  %5 = and i64 %0, %1
+  %6 = and i64 %4, %5
   ret i64 %6
 }
 

@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	vpsllq	$7, %ymm2, %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	vextracti128	$1, %ymm0, %xmm3

@@ -1,10 +1,10 @@
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	imull	$60, %edx, %eax
 	subl	%esi, %edi
 	addl	%eax, %edi
 	setle	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	subl	%edx, %esi
 	leal	(,%rdi,8), %eax
 	subl	%edi, %eax
@@ -19,13 +19,13 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$216, %edi
 	setl	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	subl	%edx, %esi
 	imull	$-1000000, %edi, %eax           # imm = 0xFFF0BDC0
 	addl	%esi, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	subl	%edx, %esi
 	imull	$-1000000, %edi, %eax           # imm = 0xFFF0BDC0
 	addl	%esi, %eax

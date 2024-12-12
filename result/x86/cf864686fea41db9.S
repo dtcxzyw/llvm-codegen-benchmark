@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpb	$4, %dl
 	sete	%cl
 	cmpl	$1265525857, %esi               # imm = 0x4B6E6461
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testb	%dl, %dl
 	setne	%cl
 	cmpl	$-1, %esi

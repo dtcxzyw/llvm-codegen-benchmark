@@ -20,7 +20,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 4
   %4 = shl nsw i64 %1, 2
   %5 = add nsw i64 %4, %3
-  %6 = mul i64 %5, %0
+  %6 = mul i64 %0, %5
   ret i64 %6
 }
 

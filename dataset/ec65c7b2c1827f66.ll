@@ -6,7 +6,7 @@ define i64 @func0000000000000060(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -18,7 +18,7 @@ define i64 @func0000000000000070(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -31,7 +31,7 @@ define i64 @func0000000000000038(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -63,12 +63,12 @@ define i64 @func0000000000000078(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; hermes/optimized/Path.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -82,25 +82,13 @@ entry:
 ; z3/optimized/mpz_matrix.cpp.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/smtfd_solver.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
-  %4 = add i32 %3, %0
-  %5 = zext i32 %4 to i64
-  ret i64 %5
-}
-
-; 2 occurrences:
-; gromacs/optimized/dgetf2.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003a(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -1
-  %4 = add nsw i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -112,7 +100,7 @@ define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -4
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

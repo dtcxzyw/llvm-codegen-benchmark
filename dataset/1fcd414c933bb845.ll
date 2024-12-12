@@ -49,9 +49,7 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
-; abc/optimized/fraigUtil.c.ll
-; abc/optimized/giaEra2.c.ll
+; 4 occurrences:
 ; c3c/optimized/c_abi_aarch64.c.ll
 ; qemu/optimized/crypto_block-luks.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -96,18 +94,6 @@ entry:
   %2 = add i32 %1, 736
   %3 = and i32 %2, -256
   ret i32 %3
-}
-
-; 3 occurrences:
-; abc/optimized/giaCof.c.ll
-; abc/optimized/giaEra2.c.ll
-; abc/optimized/giaMf.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000e(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 16
-  %2 = add i32 %1, -65536
-  ret i32 %2
 }
 
 ; 4 occurrences:

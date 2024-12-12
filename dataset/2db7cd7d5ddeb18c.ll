@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 65 occurrences:
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/giaCut.c.ll
 ; abc/optimized/giaResub.c.ll
@@ -31,7 +31,6 @@
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
@@ -60,7 +59,6 @@
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_shortShiftLeft64To96M.ll
 ; spike/optimized/sll32.ll
 ; spike/optimized/slli16.ll
 ; spike/optimized/slli32.ll
@@ -75,7 +73,7 @@ entry:
   ret i32 %3
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -86,7 +84,6 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/kitGraph.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
@@ -168,8 +165,10 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
+; abseil-cpp/optimized/cord.cc.ll
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; libpng/optimized/png.c.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; meshlab/optimized/gltf_loader.cpp.ll

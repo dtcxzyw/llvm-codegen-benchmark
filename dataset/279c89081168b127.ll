@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; eastl/optimized/EATextUtil.cpp.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; libjpeg-turbo/optimized/jdmerge.c.ll
@@ -7,6 +7,7 @@
 ; linux/optimized/alps.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; openjdk/optimized/Ushort565Rgb.ll
@@ -19,17 +20,18 @@ entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw nsw i16 %2, 2
   %4 = and i16 %3, 992
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; coreutils-rs/optimized/17ojgxcnujh4nt6.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; libjpeg-turbo/optimized/jdmerge.c.ll
 ; libquic/optimized/poly.c.ll
 ; libwebp/optimized/vp8_dec.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; ripgrep-rs/optimized/17szqs4crgj36yow.ll
 ; wireshark/optimized/mp2t.c.ll
 ; wireshark/optimized/packet-uma.c.ll
@@ -67,7 +69,7 @@ entry:
   %2 = zext nneg i8 %1 to i16
   %3 = shl i16 %2, 12
   %4 = and i16 %3, 4096
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 
@@ -79,7 +81,7 @@ entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw nsw i16 %2, 2
   %4 = and i16 %3, 4
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   ret i16 %5
 }
 

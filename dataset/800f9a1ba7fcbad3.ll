@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 24 occurrences:
 ; clamav/optimized/arcread.cpp.ll
 ; folly/optimized/AsyncUDPSocket.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -22,6 +22,8 @@
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:

@@ -3,6 +3,11 @@ func000000000000001c:                   # @func000000000000001c
 	cmpl	%edx, %edi
 	cmovlel	%edi, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%esi, %eax
+	cmpl	%edx, %edi
+	cmovll	%edi, %eax
+	retq
 func0000000000000028:                   # @func0000000000000028
 	movl	%esi, %eax
 	cmpl	%edx, %edi

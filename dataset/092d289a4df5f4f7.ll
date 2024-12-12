@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; cmake/optimized/json_value.cpp.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; cpython/optimized/exceptions.ll
@@ -55,6 +55,7 @@
 ; z3/optimized/sat_gc.cpp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, ptr %1, i1 %2) #0 {
 entry:

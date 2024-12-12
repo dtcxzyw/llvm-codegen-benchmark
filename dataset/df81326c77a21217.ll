@@ -19,7 +19,8 @@ entry:
   ret i64 %6
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/topology.ll
 ; git/optimized/apply.ll
 ; git/optimized/xmerge.ll
 ; icu/optimized/putil.ll

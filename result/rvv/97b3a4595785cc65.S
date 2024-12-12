@@ -52,7 +52,7 @@ func0000000000000003:                   # @func0000000000000003
 	vnsrl.wi	v8, v10, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v8, v8, 0
-	li	a0, 33
+	li	a0, 65
 	vadd.vx	v8, v8, a0
 	ret
 func000000000000000d:                   # @func000000000000000d

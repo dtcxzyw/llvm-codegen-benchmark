@@ -1,15 +1,3 @@
-func0000000000000018:                   # @func0000000000000018
-	sub	a1, a1, a2
-	srli	a1, a1, 2
-	sub	a0, a0, a1
-	slli	a0, a0, 2
-	ret
-func000000000000001a:                   # @func000000000000001a
-	sub	a1, a1, a2
-	srli	a1, a1, 2
-	sub	a0, a0, a1
-	slli	a0, a0, 2
-	ret
 func000000000000001c:                   # @func000000000000001c
 	sub	a1, a1, a2
 	srli	a1, a1, 2
@@ -22,11 +10,23 @@ func000000000000001f:                   # @func000000000000001f
 	sub	a0, a0, a1
 	slli	a0, a0, 2
 	ret
+func000000000000001a:                   # @func000000000000001a
+	sub	a1, a1, a2
+	srli	a1, a1, 4
+	sub	a0, a0, a1
+	slli	a0, a0, 4
+	ret
 func000000000000001b:                   # @func000000000000001b
 	sub	a1, a1, a2
 	srli	a1, a1, 4
 	sub	a0, a0, a1
 	slli	a0, a0, 4
+	ret
+func0000000000000018:                   # @func0000000000000018
+	sub	a1, a1, a2
+	srli	a1, a1, 3
+	sub	a0, a0, a1
+	slli	a0, a0, 3
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sub	a1, a1, a2

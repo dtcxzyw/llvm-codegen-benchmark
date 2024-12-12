@@ -29,21 +29,32 @@ define i8 @func0000000000000007(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 12
   %4 = select i1 %3, i8 12, i8 0
-  %5 = or disjoint i8 %4, %1
+  %5 = or disjoint i8 %1, %4
   %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000010(i8 %0, i8 %1, i32 %2) #0 {
+define i8 @func0000000000000050(i8 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 32768
+  %3 = icmp samesign ult i32 %2, 32768
   %4 = select i1 %3, i8 0, i8 32
   %5 = or i8 %4, %1
   %6 = or i8 %5, %0
+  ret i8 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_label.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000013(i8 %0, i8 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 3
+  %4 = select i1 %3, i8 32, i8 0
+  %5 = or disjoint i8 %1, %4
+  %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 
@@ -56,20 +67,21 @@ define i8 @func0000000000000006(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i8 0, i8 64
-  %5 = or disjoint i8 %4, %1
+  %5 = or disjoint i8 %1, %4
   %6 = or i8 %5, %0
   ret i8 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; arrow/optimized/light_array.cc.ll
+; linux/optimized/keyboard.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i8 0, i8 64
-  %5 = or i8 %4, %1
-  %6 = or i8 %5, %0
+  %4 = select i1 %3, i8 0, i8 48
+  %5 = or i8 %1, %4
+  %6 = or i8 %0, %5
   ret i8 %6
 }
 

@@ -1,10 +1,9 @@
 
-; 93 occurrences:
+; 90 occurrences:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; faiss/optimized/random.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/LowerBuiltinCalls.cpp.ll
@@ -41,7 +40,6 @@
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/cfr.cc.ll
 ; openspiel/optimized/garnet.cc.ll
 ; openspiel/optimized/is_mcts_test.cc.ll
@@ -71,7 +69,6 @@
 ; quantlib/optimized/seedgenerator.ll
 ; quantlib/optimized/sobolrsg.ll
 ; quantlib/optimized/zigguratrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; quickjs/optimized/quickjs.ll
 ; rayon-rs/optimized/5ev50in5ju1pej99.ll
 ; redis/optimized/memtest.ll

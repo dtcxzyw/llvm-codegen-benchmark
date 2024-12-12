@@ -42,4 +42,25 @@ entry:
   ret i8 %3
 }
 
+; 1 occurrences:
+; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000f(i8 %0, i16 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i16 %1 to i8
+  %3 = sub nuw nsw i8 %0, %2
+  ret i8 %3
+}
+
+; 2 occurrences:
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000a(i8 %0, i16 %1) #0 {
+entry:
+  %2 = trunc nuw i16 %1 to i8
+  %3 = sub nuw i8 %0, %2
+  ret i8 %3
+}
+
 attributes #0 = { nounwind }

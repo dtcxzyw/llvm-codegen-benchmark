@@ -8,7 +8,7 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = urem i32 %3, 67
   ret i32 %4
 }

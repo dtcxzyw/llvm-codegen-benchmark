@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dcerpc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0) #0 {
+define i32 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 4
   %2 = srem i32 %0, 4

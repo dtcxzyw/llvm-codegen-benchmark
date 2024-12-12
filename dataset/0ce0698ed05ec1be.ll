@@ -1,11 +1,10 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/chi_square_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; graphviz/optimized/stress.c.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; ipopt/optimized/IpAdaptiveMuUpdate.ll
-; openblas/optimized/dsymv_thread_U.c.ll
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/tracking_utils.cpp.ll
 ; openjdk/optimized/numberSeq.ll

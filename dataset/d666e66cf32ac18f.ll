@@ -6,7 +6,7 @@
 ; openjdk/optimized/jfrStackTrace.ll
 ; openjdk/optimized/stackChunkOop.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000128(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
   %4 = icmp ugt ptr %0, %1
@@ -31,7 +31,7 @@ entry:
 ; z3/optimized/proof_utils.cpp.ll
 ; z3/optimized/spacer_proof_utils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq ptr %0, %1
@@ -39,10 +39,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/topology.ll
 ; llvm/optimized/FormattedStream.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000108(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = icmp ugt ptr %0, %1
@@ -53,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ne ptr %0, %1
@@ -64,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/cff.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000085(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ule ptr %0, %1
@@ -75,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestFixedVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne ptr %0, %1

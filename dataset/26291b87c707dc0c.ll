@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/strbuf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = sub nuw nsw i64 -2, %2

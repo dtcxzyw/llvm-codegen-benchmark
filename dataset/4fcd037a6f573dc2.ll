@@ -1,5 +1,6 @@
 
-; 19 occurrences:
+; 20 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll

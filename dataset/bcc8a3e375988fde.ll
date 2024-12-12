@@ -13,7 +13,7 @@
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 7
   %3 = mul i64 %0, 24

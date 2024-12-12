@@ -10,16 +10,17 @@
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 32
   ret i32 %2
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; freetype/optimized/ftbase.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; hermes/optimized/APFloat.cpp.ll
-; libevent/optimized/poll.c.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/dm-io.ll
 ; linux/optimized/ioctl.ll
@@ -46,7 +47,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 7
   ret i32 %2

@@ -1,12 +1,11 @@
 
-; 12 occurrences:
+; 11 occurrences:
+; abc/optimized/giaNf.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
-; linux/optimized/hid-belkin.ll
 ; linux/optimized/hid-microsoft.ll
-; linux/optimized/isadma.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll

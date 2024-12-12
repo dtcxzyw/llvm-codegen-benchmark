@@ -14,26 +14,11 @@ func0000000000000006:                   // @func0000000000000006
 	sub	x0, x8, #16
 	ret
                                         // -- End function
-func0000000000000056:                   // @func0000000000000056
-// %bb.0:                               // %entry
-	sub	w8, w2, #2
-	mul	w8, w8, w1
-	add	x8, x0, w8, sxtw
-	add	x0, x8, #1
-	ret
-                                        // -- End function
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
 	sub	w8, w2, #1
 	mul	w8, w8, w1
 	add	x8, x0, w8, sxtw #1
 	add	x0, x8, #2
-	ret
-                                        // -- End function
-func00000000000000d6:                   // @func00000000000000d6
-// %bb.0:                               // %entry
-	madd	w8, w1, w2, w1
-	add	x8, x0, w8, sxtw
-	sub	x0, x8, #5
 	ret
                                         // -- End function

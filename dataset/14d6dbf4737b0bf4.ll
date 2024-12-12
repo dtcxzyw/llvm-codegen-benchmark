@@ -1,5 +1,6 @@
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -102,9 +103,9 @@ define i32 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65536
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = sext i1 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 

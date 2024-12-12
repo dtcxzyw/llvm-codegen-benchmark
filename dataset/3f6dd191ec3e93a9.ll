@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; cvc5/optimized/sygus_unif.cpp.ll
 ; draco/optimized/corner_table.cc.ll
@@ -31,6 +31,7 @@
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; minetest/optimized/chat.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/block.ll
@@ -88,46 +89,6 @@ entry:
   ret i64 %5
 }
 
-; 30 occurrences:
-; cmake/optimized/divsufsort.c.ll
-; gromacs/optimized/stringutil.cpp.ll
-; icu/optimized/bytestrieiterator.ll
-; icu/optimized/decNumber.ll
-; icu/optimized/ucharstrieiterator.ll
-; jq/optimized/decNumber.ll
-; linux/optimized/ip_options.ll
-; linux/optimized/rock.ll
-; openjdk/optimized/FourByteAbgr.ll
-; openjdk/optimized/FourByteAbgrPre.ll
-; openjdk/optimized/IntArgb.ll
-; openjdk/optimized/IntArgbBm.ll
-; openjdk/optimized/IntArgbPre.ll
-; openjdk/optimized/IntBgr.ll
-; openjdk/optimized/IntRgb.ll
-; openjdk/optimized/IntRgbx.ll
-; openjdk/optimized/ThreeByteBgr.ll
-; openjdk/optimized/Ushort555Rgb.ll
-; openjdk/optimized/Ushort555Rgbx.ll
-; openjdk/optimized/Ushort565Rgb.ll
-; openjdk/optimized/vectset.ll
-; openmpi/optimized/opal_bitmap.ll
-; openmpi/optimized/pmix_bitmap.ll
-; pbrt-v4/optimized/integrator.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/subsurface.cpp.ll
-; pbrt-v4/optimized/surfscatter.cpp.ll
-; postgres/optimized/nodeAgg.ll
-; slurm/optimized/xstring.ll
-; zstd/optimized/divsufsort.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 2
-  %4 = select i1 %0, i32 %3, i32 %1
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
-}
-
 ; 11 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -149,7 +110,36 @@ entry:
   ret i64 %5
 }
 
-; 26 occurrences:
+; 19 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; gromacs/optimized/stringutil.cpp.ll
+; icu/optimized/bytestrieiterator.ll
+; icu/optimized/decNumber.ll
+; icu/optimized/ucharstrieiterator.ll
+; jq/optimized/decNumber.ll
+; linux/optimized/ip_options.ll
+; linux/optimized/rock.ll
+; openjdk/optimized/vectset.ll
+; openmpi/optimized/opal_bitmap.ll
+; openmpi/optimized/pmix_bitmap.ll
+; pbrt-v4/optimized/integrator.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/subsurface.cpp.ll
+; pbrt-v4/optimized/surfscatter.cpp.ll
+; postgres/optimized/nodeAgg.ll
+; slurm/optimized/xstring.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 1
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 23 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -160,13 +150,10 @@ entry:
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/ubidiwrt.ll
 ; icu/optimized/usearch.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openblas/optimized/dspgvd.c.ll
-; openblas/optimized/lapacke_cgb_nancheck.c.ll
-; openblas/optimized/lapacke_dgb_nancheck.c.ll
-; openblas/optimized/lapacke_sgb_nancheck.c.ll
-; openblas/optimized/lapacke_zgb_nancheck.c.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
 ; postgres/optimized/rangetypes_typanalyze.ll

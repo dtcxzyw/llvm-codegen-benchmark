@@ -1,11 +1,14 @@
-func0000000000000018:                   // @func0000000000000018
+func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	movi	v4.4s, #9
-	cmhi	v5.4s, v3.4s, v4.4s
-	orr	v3.4s, #48
-	cmhi	v4.4s, v2.4s, v4.4s
-	orr	v2.4s, #48
-	bif	v1.16b, v3.16b, v5.16b
-	bif	v0.16b, v2.16b, v4.16b
+	orr	w8, w1, #0x30
+	cmp	w1, #9
+	csel	w0, w0, w8, hi
+	ret
+                                        // -- End function
+func0000000000000028:                   // @func0000000000000028
+// %bb.0:                               // %entry
+	orr	w8, w1, #0x30
+	cmp	w1, #9
+	csel	w0, w0, w8, hi
 	ret
                                         // -- End function

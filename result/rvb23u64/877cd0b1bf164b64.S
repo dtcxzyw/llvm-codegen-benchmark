@@ -1,4 +1,4 @@
-func00000000000006aa:                   # @func00000000000006aa
+func000000000000194a:                   # @func000000000000194a
 	sext.w	a1, a1
 	sext.w	a3, a0
 	sext.w	a4, a2

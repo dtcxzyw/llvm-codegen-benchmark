@@ -22,3 +22,10 @@ func0000000000000004:                   # @func0000000000000004
 	sh2add	a0, a0, a0
 	slli	a0, a0, 2
 	ret
+func0000000000000016:                   # @func0000000000000016
+	andi	a1, a1, 255
+	slli	a0, a0, 8
+	or	a0, a0, a1
+	sh1add	a0, a0, a0
+	slli	a0, a0, 3
+	ret

@@ -32,7 +32,7 @@ entry:
   ret i16 %2
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/merge-ort.ll
 ; gromacs/optimized/type.cpp.ll
@@ -51,6 +51,7 @@ entry:
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/packet-s7comm.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(i16 %0) #0 {
 entry:
@@ -72,12 +73,28 @@ entry:
   ret i16 %2
 }
 
+; 7 occurrences:
+; libevent/optimized/evdns.c.ll
+; linux/optimized/ip_forward.ll
+; linux/optimized/ip_tunnel.ll
+; linux/optimized/ipmr.ll
+; linux/optimized/sit.ll
+; linux/optimized/yenta_socket.ll
+; wireshark/optimized/packet-smb2.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000010(i16 %0) #0 {
+entry:
+  %1 = icmp ugt i16 %0, 512
+  %2 = zext i1 %1 to i16
+  ret i16 %2
+}
+
 ; 9 occurrences:
+; llvm/optimized/BitcodeWriter.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/detokenize.c.ll
-; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
@@ -85,24 +102,7 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i16 %0) #0 {
 entry:
-  %1 = icmp ult i16 %0, 128
-  %2 = zext i1 %1 to i16
-  ret i16 %2
-}
-
-; 8 occurrences:
-; libevent/optimized/evdns.c.ll
-; linux/optimized/ip_forward.ll
-; linux/optimized/ip_tunnel.ll
-; linux/optimized/ipmr.ll
-; linux/optimized/sit.ll
-; linux/optimized/yenta_socket.ll
-; llvm/optimized/ValueTracking.cpp.ll
-; wireshark/optimized/packet-smb2.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000010(i16 %0) #0 {
-entry:
-  %1 = icmp ugt i16 %0, 512
+  %1 = icmp ult i16 %0, 2
   %2 = zext i1 %1 to i16
   ret i16 %2
 }

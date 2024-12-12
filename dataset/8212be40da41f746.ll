@@ -1,5 +1,5 @@
 
-; 554 occurrences:
+; 558 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
@@ -9,6 +9,7 @@
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; abseil-cpp/optimized/time_zone_posix.cc.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/static_string.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/str.c.ll
@@ -27,9 +28,9 @@
 ; flac/optimized/cuesheet.c.ll
 ; git/optimized/cat-file.ll
 ; git/optimized/pathspec.ll
-; git/optimized/unpack-trees.ll
 ; git/optimized/urlmatch.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
+; graphviz/optimized/grammar.c.ll
 ; grpc/optimized/uri_parser.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-number.cc.ll
@@ -107,6 +108,7 @@
 ; luau/optimized/Linter.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/arch-arm32.cc.ll
@@ -552,6 +554,8 @@
 ; wireshark/optimized/packet-vrt.c.ll
 ; wireshark/optimized/packet-websocket.c.ll
 ; wireshark/optimized/text_import_scanner.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/AZHighLevelEncoder.cpp.ll
 ; zxing/optimized/ODCodabarWriter.cpp.ll
 ; Function Attrs: nounwind
@@ -765,7 +769,7 @@ entry:
   ret i64 %2
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -778,7 +782,6 @@ entry:
 ; linux/optimized/idr.ll
 ; linux/optimized/input.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/intel_workarounds.ll
 ; linux/optimized/uncore.ll
 ; linux/optimized/uncore_snbep.ll
 ; linux/optimized/vsprintf.ll
@@ -786,6 +789,8 @@ entry:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -794,7 +799,7 @@ entry:
   ret i64 %2
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; hermes/optimized/BytecodeProviderFromSrc.cpp.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
@@ -809,7 +814,6 @@ entry:
 ; linux/optimized/page-io.ll
 ; linux/optimized/read.ll
 ; linux/optimized/readpage.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/sysctl_net_core.ll
 ; linux/optimized/truncate.ll

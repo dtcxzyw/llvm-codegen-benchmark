@@ -10,9 +10,8 @@ entry:
   ret ptr %4
 }
 
-; 148 occurrences:
+; 146 occurrences:
 ; abc/optimized/bmcInse.c.ll
-; llvm/optimized/MappedBlockStream.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/appender.cpp.ll
 ; mitsuba3/optimized/area.cpp.ll
@@ -90,7 +89,6 @@ entry:
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -160,7 +158,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000041(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, 32
   %.idx = select i1 %3, i64 %2, i64 0
@@ -172,7 +170,7 @@ entry:
 ; clamav/optimized/qsort.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000046(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, 0
   %.idx = select i1 %3, i64 %2, i64 0

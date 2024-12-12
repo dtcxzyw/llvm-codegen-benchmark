@@ -1,10 +1,8 @@
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	movi	v2.4s, #1
-	ucvtf	v0.4s, v0.4s
-	add	v1.4s, v1.4s, v2.4s
-	ucvtf	v1.4s, v1.4s
-	fsub	v0.4s, v0.4s, v1.4s
+	add	w8, w1, #1
+	ucvtf	s1, w0
+	ucvtf	s0, w8
+	fsub	s0, s1, s0
 	ret
                                         // -- End function

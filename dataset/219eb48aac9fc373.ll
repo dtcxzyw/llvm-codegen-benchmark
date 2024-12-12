@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 72 occurrences:
 ; abc/optimized/inflate.c.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; cmake/optimized/inflate.c.ll
@@ -40,7 +40,6 @@
 ; llvm/optimized/LLVMContextImpl.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/LayoutOverrideSource.cpp.ll
-; llvm/optimized/LegacyPassManager.cpp.ll
 ; llvm/optimized/MCCodeView.cpp.ll
 ; llvm/optimized/MachOUniversal.cpp.ll
 ; llvm/optimized/MacroExpander.cpp.ll
@@ -82,7 +81,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
@@ -90,10 +89,9 @@ entry:
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = icmp eq i32 %1, 0
@@ -101,9 +99,8 @@ entry:
   ret i64 %5
 }
 
-; 73 occurrences:
+; 72 occurrences:
 ; hwloc/optimized/bitmap.ll
-; llvm/optimized/AArch64Disassembler.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -176,7 +173,7 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = icmp ult i32 %1, 8388608

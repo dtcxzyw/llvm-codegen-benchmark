@@ -32,7 +32,11 @@ entry:
   ret float %5
 }
 
-; 8 occurrences:
+; 12 occurrences:
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; mitsuba3/optimized/dielectric.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll

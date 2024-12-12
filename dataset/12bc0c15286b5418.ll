@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; darktable/optimized/live_view.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; g2o/optimized/robust_kernel_impl.cpp.ll
@@ -19,7 +19,6 @@
 ; proj/optimized/boggs.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/analyticgjrgarchengine.ll
 ; quantlib/optimized/analyticpdfhestonengine.ll
 ; quantlib/optimized/bivariatenormaldistribution.ll

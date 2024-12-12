@@ -16,5 +16,5 @@ func000000000000000f:                   # @func000000000000000f
 	vsrl.vi	v8, v8, 2
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v10, v8
-	vwsll.vi	v8, v10, 24
+	vwsll.vi	v8, v10, 8
 	ret

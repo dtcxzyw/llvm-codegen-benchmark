@@ -23,8 +23,7 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	retq
 func0000000000000002:                   # @func0000000000000002
-	subq	%rsi, %rdi
 	xorl	%eax, %eax
-	cmpq	$48, %rdi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq

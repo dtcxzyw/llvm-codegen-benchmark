@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; postgres/optimized/enum.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
+; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0, i1 %1) #0 {
 entry:

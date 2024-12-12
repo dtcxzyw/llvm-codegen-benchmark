@@ -16,6 +16,7 @@
 ; linux/optimized/sr.ll
 ; linux/optimized/xfrm_input.ll
 ; llvm/optimized/RISCVPushPopOptimizer.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; postgres/optimized/heapam.ll
@@ -31,7 +32,6 @@
 ; wireshark/optimized/packet-docsis-macmgmt.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
 ; wireshark/optimized/packet-memcache.c.ll
-; wireshark/optimized/packet-rsip.c.ll
 ; wolfssl/optimized/keys.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; zxing/optimized/zueci.c.ll
@@ -61,7 +61,7 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 13 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; icu/optimized/normalizer2impl.ll
@@ -70,6 +70,9 @@ entry:
 ; linux/optimized/ioam6.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; llvm/optimized/X86InstComments.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; wireshark/optimized/packet-batadv.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
@@ -81,14 +84,15 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-s5066dts.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000f(i8 %0, i16 %1) #0 {
+define i32 @func000000000000000f(i16 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i16 %1 to i32
-  %3 = zext nneg i8 %0 to i32
+  %2 = zext nneg i8 %1 to i32
+  %3 = zext nneg i16 %0 to i32
   %4 = add nuw nsw i32 %3, %2
   ret i32 %4
 }

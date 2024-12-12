@@ -1,6 +1,5 @@
 
-; 337 occurrences:
-; abc/optimized/covMinUtil.c.ll
+; 334 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; abseil-cpp/optimized/time.cc.ll
 ; clamav/optimized/list.cpp.ll
@@ -118,7 +117,6 @@
 ; linux/optimized/linkstate.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/percpu.ll
-; linux/optimized/pse-pd.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/sg.ll
@@ -232,7 +230,6 @@
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/bgfg.cpp.ll
 ; opencv/optimized/brightedges.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/cmstypes.ll
 ; openjdk/optimized/countbitsnode.ll
 ; openjdk/optimized/macro.ll
@@ -346,29 +343,24 @@ entry:
   ret i32 %5
 }
 
-; 17 occurrences:
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; 12 occurrences:
 ; cmake/optimized/pipe.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
-; glslang/optimized/GlslangToSpv.cpp.ll
-; hermes/optimized/APFloat.cpp.ll
 ; icu/optimized/umutablecptrie.ll
 ; icu/optimized/ustrtrns.ll
 ; libuv/optimized/pipe.c.ll
 ; linux/optimized/intel_psr.ll
-; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
 ; node/optimized/pipe.ll
 ; openssl/optimized/libcrypto-lib-bn_prime.ll
 ; openssl/optimized/libcrypto-shlib-bn_prime.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 132, i32 885
-  %4 = icmp ult i32 %1, 10
+  %4 = icmp samesign ult i32 %1, 10
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }
@@ -403,9 +395,26 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; glslang/optimized/GlslangToSpv.cpp.ll
+; hermes/optimized/APFloat.cpp.ll
+; llvm/optimized/APFloat.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 81, i32 43
+  %4 = icmp ult i32 %1, 3
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 5 occurrences:
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/intel_display_power_well.ll
+; opencv/optimized/box_filter.dispatch.cpp.ll
+; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; wireshark/optimized/packet-babel.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i1 %2) #0 {
@@ -420,10 +429,10 @@ entry:
 ; linux/optimized/intel_cdclk.ll
 ; postgres/optimized/big5.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 320000, i32 333333
-  %4 = icmp ugt i32 %1, 266667
+  %4 = icmp samesign ugt i32 %1, 266667
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }

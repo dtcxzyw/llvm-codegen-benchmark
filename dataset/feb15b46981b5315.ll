@@ -13,7 +13,7 @@ entry:
   ret i1 %5
 }
 
-; 32 occurrences:
+; 34 occurrences:
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
@@ -46,6 +46,8 @@ entry:
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; velox/optimized/Reverse.cpp.ll
 ; velox/optimized/StringFunctions.cpp.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i64 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -68,8 +70,7 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
-; abseil-cpp/optimized/float_conversion.cc.ll
+; 6 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll

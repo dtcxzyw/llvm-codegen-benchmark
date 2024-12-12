@@ -1,10 +1,8 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; libpng/optimized/pngrutil.c.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/vlv_dsi.ll
 ; linux/optimized/xhci.ll
-; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; openjdk/optimized/pngrutil.ll
 ; openusd/optimized/basisCurvesTopology.cpp.ll
 ; Function Attrs: nounwind

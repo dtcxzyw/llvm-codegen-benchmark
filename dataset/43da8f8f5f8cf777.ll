@@ -1,7 +1,6 @@
 
-%"struct.std::atomic.159.2506446" = type { %"struct.std::__atomic_base.160.2506447" }
-%"struct.std::__atomic_base.160.2506447" = type { ptr }
-%"struct.Scheduler::groupType.3297551" = type { i32, i32, i32, i32, i32, i32 }
+%"struct.std::atomic.159.2621608" = type { %"struct.std::__atomic_base.160.2621609" }
+%"struct.std::__atomic_base.160.2621609" = type { ptr }
 
 ; 106 occurrences:
 ; cpython/optimized/bltinmodule.ll
@@ -111,16 +110,16 @@
 ; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/radius_dict.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr [624 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 155 occurrences:
+; 173 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/compress.c.ll
@@ -140,6 +139,7 @@ entry:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/cpu_info.cc.ll
+; boost/optimized/url_impl.ll
 ; brotli/optimized/decode.c.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btPersistentManifold.ll
@@ -199,8 +199,10 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/quic_session.cc.ll
 ; libquic/optimized/trees.c.ll
+; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; llama.cpp/optimized/ggml-backend.c.ll
+; llvm/optimized/blake3.c.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
@@ -232,7 +234,22 @@ entry:
 ; openjdk/optimized/referenceProcessorPhaseTimes.ll
 ; openmpi/optimized/comm_request.ll
 ; openmpi/optimized/mpl_gavl.ll
+; openspiel/optimized/ABsearch.cpp.ll
+; openspiel/optimized/Init.cpp.ll
+; openspiel/optimized/Moves.cpp.ll
+; openspiel/optimized/QuickTricks.cpp.ll
+; openspiel/optimized/SolverIF.cpp.ll
+; openspiel/optimized/TransTableL.cpp.ll
+; openspiel/optimized/TransTableS.cpp.ll
+; openspiel/optimized/dump.cpp.ll
+; openspiel/optimized/go_board.cc.ll
+; openspiel/optimized/markov_soccer.cc.ll
+; openspiel/optimized/phantom_go_board.cc.ll
+; openusd/optimized/bignum.cc.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/parserValueContext.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/tile_common.c.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
@@ -277,12 +294,12 @@ entry:
 ; yosys/optimized/Solver.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8
-  %5 = getelementptr nusw [1 x %"struct.std::atomic.159.2506446"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = getelementptr nusw [1 x %"struct.std::atomic.159.2621608"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -321,11 +338,11 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-nbap.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 3544
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 3544
   %5 = getelementptr [8 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -333,11 +350,11 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/util_readline.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8216
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8216
   %5 = getelementptr [64 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -351,16 +368,16 @@ entry:
 ; qemu/optimized/util_readline.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8216
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8216
   %5 = getelementptr [64 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cvc5/optimized/bv_inverter.cpp.ll
 ; cvc5/optimized/extended_rewrite.cpp.ll
@@ -370,6 +387,7 @@ entry:
 ; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/methodData.ll
+; openspiel/optimized/Scheduler.cpp.ll
 ; php/optimized/network.ll
 ; recastnavigation/optimized/ConvexVolumeTool.cpp.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
@@ -377,64 +395,25 @@ entry:
 ; sundials/optimized/idas.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr nusw [1 x i64], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/url_impl.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 104
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 104
   %5 = getelementptr nusw [56 x i32], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 17 occurrences:
-; llvm/optimized/blake3.c.ll
-; openspiel/optimized/ABsearch.cpp.ll
-; openspiel/optimized/Init.cpp.ll
-; openspiel/optimized/Moves.cpp.ll
-; openspiel/optimized/QuickTricks.cpp.ll
-; openspiel/optimized/SolverIF.cpp.ll
-; openspiel/optimized/TransTableL.cpp.ll
-; openspiel/optimized/TransTableS.cpp.ll
-; openspiel/optimized/dump.cpp.ll
-; openspiel/optimized/go_board.cc.ll
-; openspiel/optimized/markov_soccer.cc.ll
-; openspiel/optimized/phantom_go_board.cc.ll
-; openusd/optimized/bignum.cc.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/parserValueContext.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; openusd/optimized/tile_common.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -64
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 145
-  %5 = getelementptr nusw [1760 x i8], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 1 occurrences:
-; openspiel/optimized/Scheduler.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 22400
-  %5 = getelementptr nusw [200 x %"struct.Scheduler::groupType.3297551"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

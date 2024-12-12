@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/Darwin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp ult i32 %3, 6
@@ -16,7 +16,7 @@ entry:
 ; libwebp/optimized/picture_enc.c.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000c6(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp slt i32 %3, 1

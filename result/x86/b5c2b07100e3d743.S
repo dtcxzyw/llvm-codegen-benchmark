@@ -11,5 +11,5 @@ func0000000000000030:                   # @func0000000000000030
 func0000000000000011:                   # @func0000000000000011
 	movzbl	%dl, %eax
 	imull	%esi, %eax
-	leal	16384(%rax,%rdi), %eax
+	leal	16384(%rdi,%rax), %eax
 	retq

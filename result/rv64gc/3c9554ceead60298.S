@@ -12,11 +12,15 @@ func0000000000000002:                   # @func0000000000000002
 	slli	a1, a1, 3
 	sub	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	sub	a0, a0, a1
 	addi	a0, a0, 64
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sub	a0, a0, a1
 	addi	a0, a0, 8
+	ret
+func000000000000000e:                   # @func000000000000000e
+	sub	a0, a0, a1
+	addi	a0, a0, -32
 	ret

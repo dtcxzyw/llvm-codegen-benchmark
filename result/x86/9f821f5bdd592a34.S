@@ -1,10 +1,10 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	movzwl	%si, %eax
 	decl	%eax
 	leaq	(%rax,%rax,2), %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	movzwl	%si, %eax
 	addl	$-259, %eax                     # imm = 0xFEFD
 	leaq	(%rdi,%rax,4), %rax

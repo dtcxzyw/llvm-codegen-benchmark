@@ -15,7 +15,7 @@
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
   %3 = icmp eq i32 %2, 0
@@ -30,7 +30,7 @@ entry:
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openmpi/optimized/pml_cm.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
   %3 = icmp eq i32 %2, 2146435072
@@ -41,22 +41,9 @@ entry:
 }
 
 ; 1 occurrences:
-; hermes/optimized/hbc-attribute.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 2147483647
-  %3 = icmp ult i32 %2, 255
-  %4 = and i64 %0, 4286578688
-  %5 = icmp eq i64 %4, 0
-  %6 = and i1 %5, %3
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; llvm/optimized/DetectDeadLanes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -69,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/libunicode.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 1

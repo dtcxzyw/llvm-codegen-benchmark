@@ -1,5 +1,7 @@
 
-; 369 occurrences:
+; 370 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -86,7 +88,6 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/balloc.ll
-; linux/optimized/vclock_gettime.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll

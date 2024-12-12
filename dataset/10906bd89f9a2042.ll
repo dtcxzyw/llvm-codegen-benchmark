@@ -26,21 +26,18 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
-  %3 = getelementptr nusw i8, ptr %0, i64 5
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 5
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   ret ptr %4
 }
 
-; 187 occurrences:
-; abc/optimized/abcLog.c.ll
-; abseil-cpp/optimized/city.cc.ll
+; 177 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
-; abseil-cpp/optimized/str_cat_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; arrow/optimized/bit_run_reader.cc.ll
 ; arrow/optimized/concatenate.cc.ll
@@ -60,17 +57,8 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
-; faiss/optimized/HNSW.cpp.ll
-; faiss/optimized/Heap.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
-; faiss/optimized/IndexHNSW.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
-; faiss/optimized/IndexRefine.cpp.ll
-; faiss/optimized/distances.cpp.ll
-; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
-; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
-; folly/optimized/farmhash.cpp.ll
 ; freetype/optimized/ftstroke.c.ll
 ; grpc/optimized/work_serializer.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -80,9 +68,12 @@ entry:
 ; hermes/optimized/RegExp.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
 ; hermes/optimized/dtoa.c.ll
+; hyperscan/optimized/dfa_min.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/ng_find_matches.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
+; hyperscan/optimized/ng_squash.cpp.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
@@ -117,7 +108,6 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; mimalloc/optimized/page.c.ll
-; oiio/optimized/farmhash.cpp.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
 ; openjdk/optimized/g1CardSet.ll
@@ -223,22 +213,54 @@ entry:
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = getelementptr nusw i8, ptr %0, i64 8
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   ret ptr %4
 }
 
-; 21 occurrences:
+; 23 occurrences:
+; abseil-cpp/optimized/city.cc.ll
+; abseil-cpp/optimized/str_cat_test.cc.ll
+; faiss/optimized/HNSW.cpp.ll
+; faiss/optimized/Heap.cpp.ll
+; faiss/optimized/IndexFastScan.cpp.ll
+; faiss/optimized/IndexHNSW.cpp.ll
+; faiss/optimized/IndexIVFFastScan.cpp.ll
+; faiss/optimized/IndexPQ.cpp.ll
+; faiss/optimized/IndexRefine.cpp.ll
+; faiss/optimized/distances.cpp.ll
+; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
+; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
+; folly/optimized/farmhash.cpp.ll
+; oiio/optimized/farmhash.cpp.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/bx05yi7k15cz36qdtwh95aj38.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/dkpymwf72m1w0twqv9sm36jup.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = getelementptr nusw i8, ptr %0, i64 -4
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  ret ptr %4
+}
+
+; 19 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; cpython/optimized/_pickle.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; linux/optimized/fils_aead.ll
 ; linux/optimized/genalloc.ll
 ; postgres/optimized/json.ll
 ; postgres/optimized/jsonb.ll
@@ -251,13 +273,12 @@ entry:
 ; qemu/optimized/migration_qemu-file.c.ll
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/system_physmem.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
-  %3 = getelementptr nusw i8, ptr %0, i64 1348
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1348
   %4 = getelementptr i32, ptr %3, i64 %2
   ret ptr %4
 }
@@ -275,17 +296,14 @@ entry:
   ret ptr %4
 }
 
-; 5 occurrences:
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libphonenumber/optimized/geocoding_data_test.cc.ll
+; 2 occurrences:
 ; libsodium/optimized/libaesni_la-aead_aes256gcm_aesni.ll
-; openspiel/optimized/best_response.cc.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
-  %3 = getelementptr nusw i8, ptr %0, i64 280
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 280
   %4 = getelementptr i8, ptr %3, i64 %2
   ret ptr %4
 }
@@ -295,27 +313,26 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 922880
-  %4 = getelementptr nusw float, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw float, ptr %3, i64 %2
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 922880
-  %4 = getelementptr nusw float, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw float, ptr %3, i64 %2
   ret ptr %4
 }
 
-; 14 occurrences:
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; 13 occurrences:
 ; cpython/optimized/longobject.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; linux/optimized/crash_core.ll

@@ -1,5 +1,5 @@
 
-; 290 occurrences:
+; 285 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/giaQbf.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -23,6 +23,7 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; c3c/optimized/bigint.c.ll
@@ -82,8 +83,6 @@
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; linux/optimized/acpi_lpit.ll
 ; linux/optimized/bitmap.ll
-; linux/optimized/cppc.ll
-; linux/optimized/csum-partial_64.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/find_bit.ll
@@ -145,7 +144,6 @@
 ; meshlab/optimized/mesh_model_state.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/gms.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
@@ -168,8 +166,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; postgres/optimized/bitmapset.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -223,7 +219,6 @@
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
-; qemu/optimized/hw_net_can_ctucan_pci.c.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
 ; qemu/optimized/hw_virtio_virtio-balloon.c.ll
 ; qemu/optimized/migration_ram.c.ll
@@ -307,7 +302,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 -9223372036854775808, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   ret i64 %3
 }
 

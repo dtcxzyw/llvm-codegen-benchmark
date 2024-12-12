@@ -1,11 +1,9 @@
 
-; 16 occurrences:
-; abc/optimized/verStream.c.ll
+; 14 occurrences:
 ; bdwgc/optimized/cordprnt.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/qtmd.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
-; hermes/optimized/circular_raw_ostream.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/OffloadBinary.cpp.ll
 ; llvm/optimized/circular_raw_ostream.cpp.ll

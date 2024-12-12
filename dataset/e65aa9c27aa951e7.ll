@@ -15,15 +15,14 @@ entry:
   ret i8 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/uchar.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; zxing/optimized/AZToken.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i32 %0) #0 {
 entry:
-  %1 = lshr i32 31, %0
+  %1 = lshr i32 7, %0
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = and i8 %2, 1
   ret i8 %3

@@ -1,11 +1,3 @@
-func0000000000000080:                   # @func0000000000000080
-	sltu	a1, a1, a2
-	add	a0, a0, a1
-	ret
-func000000000000010c:                   # @func000000000000010c
-	sltu	a1, a2, a1
-	add	a0, a0, a1
-	ret
 func000000000000008c:                   # @func000000000000008c
 	sltu	a1, a1, a2
 	add	a0, a0, a1

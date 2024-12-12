@@ -11,12 +11,12 @@
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 536870912
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 1073741824, i64 4611686018427387904
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -27,12 +27,12 @@ entry:
 ; spike/optimized/sinval_vma.ll
 ; spike/optimized/sret.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1048576
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 1, i64 3
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 

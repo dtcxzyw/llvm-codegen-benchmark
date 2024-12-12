@@ -1,9 +1,8 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaIso.c.ll
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
@@ -13,7 +12,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 3
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -26,7 +25,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 262143
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }

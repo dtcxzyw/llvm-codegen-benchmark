@@ -28,7 +28,7 @@
 	.byte	64                              # 0x40
 	.byte	32                              # 0x20
 	.byte	16                              # 0x10
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm1, %xmm2
 	vpaddb	.LCPI0_1(%rip), %xmm2, %xmm2
 	vpcmpltub	.LCPI0_2(%rip), %xmm1, %k1

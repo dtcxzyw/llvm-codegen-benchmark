@@ -1,47 +1,29 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #22144                      // =0x5680
-	movi	v6.2d, #0x000000ffffffff
-	movk	w8, #40236, lsl #16
-	dup	v7.2d, x8
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v0.16b, v0.16b, v7.16b
-	and	v1.16b, v1.16b, v7.16b
-	eor3	v1.16b, v5.16b, v3.16b, v1.16b
-	eor3	v0.16b, v4.16b, v2.16b, v0.16b
-	shl	v0.2d, v0.2d, #15
-	shl	v1.2d, v1.2d, #15
+	mov	w9, #22144                      // =0x5680
+	mov	w8, w2
+	movk	w9, #40236, lsl #16
+	eor	x8, x8, x1
+	and	x9, x0, x9
+	eor	x8, x9, x8
+	lsl	x0, x8, #15
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #33554431                   // =0x1ffffff
-	movi	v7.2d, #0x00000000ffffff
-	dup	v6.2d, x8
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v2.16b, v2.16b, v7.16b
-	and	v3.16b, v3.16b, v7.16b
-	eor3	v0.16b, v4.16b, v0.16b, v2.16b
-	eor3	v1.16b, v5.16b, v1.16b, v3.16b
-	shl	v0.2d, v0.2d, #32
-	shl	v1.2d, v1.2d, #32
+	and	w8, w2, #0x1ffffff
+	and	w9, w1, #0xffffff
+	eor	w8, w0, w8
+	eor	w8, w8, w9
+	lsl	x0, x8, #32
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #33554431                   // =0x1ffffff
-	dup	v6.2d, x8
-	mov	w8, #1073741823                 // =0x3fffffff
-	dup	v7.2d, x8
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v2.16b, v2.16b, v7.16b
-	and	v3.16b, v3.16b, v7.16b
-	eor3	v1.16b, v5.16b, v1.16b, v3.16b
-	eor3	v0.16b, v4.16b, v0.16b, v2.16b
-	shl	v0.2d, v0.2d, #32
-	shl	v1.2d, v1.2d, #32
+	and	w8, w2, #0x1ffffff
+	and	w9, w1, #0x3fffffff
+	eor	w8, w8, w0
+	eor	w8, w8, w9
+	lsl	x0, x8, #32
 	ret
                                         // -- End function

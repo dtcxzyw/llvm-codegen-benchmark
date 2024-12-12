@@ -1,67 +1,25 @@
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	saddw2	v2.2d, v2.2d, v3.4s
-	saddw	v1.2d, v1.2d, v3.2s
-	fmov	x10, d1
-	fmov	x11, d2
-	mov	x8, v1.d[1]
-	mov	x9, v2.d[1]
-	lsl	x12, x10, #6
-	lsl	x13, x11, #6
-	lsl	x14, x8, #6
-	sub	x10, x12, x10, lsl #2
-	sub	x11, x13, x11, lsl #2
-	lsl	x15, x9, #6
-	sub	x8, x14, x8, lsl #2
-	fmov	d2, x10
-	fmov	d1, x11
-	sub	x9, x15, x9, lsl #2
-	mov	v2.d[1], x8
-	mov	v1.d[1], x9
-	saddw2	v1.2d, v1.2d, v0.4s
-	saddw	v0.2d, v2.2d, v0.2s
+	add	x8, x1, w2, sxtw
+	mov	w9, #60                         // =0x3c
+	mul	x8, x8, x9
+	add	x0, x8, w0, sxtw
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	saddw	v1.2d, v1.2d, v3.2s
-	saddw2	v2.2d, v2.2d, v3.4s
-	mov	w8, #1000                       // =0x3e8
-	fmov	x9, d1
-	fmov	x11, d2
-	mov	x10, v1.d[1]
-	mov	x12, v2.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d2, x9
-	mul	x8, x12, x8
-	fmov	d1, x11
-	mov	v2.d[1], x10
-	mov	v1.d[1], x8
-	saddw2	v1.2d, v1.2d, v0.4s
-	saddw	v0.2d, v2.2d, v0.2s
+	add	x8, x1, w2, sxtw
+	mov	w9, #1000                       // =0x3e8
+	mul	x8, x8, x9
+	add	x0, x8, w0, sxtw
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	saddw	v1.2d, v1.2d, v3.2s
-	saddw2	v2.2d, v2.2d, v3.4s
-	mov	w8, #16960                      // =0x4240
-	movk	w8, #15, lsl #16
-	fmov	x9, d1
-	fmov	x11, d2
-	mov	x10, v1.d[1]
-	mov	x12, v2.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d2, x9
-	mul	x8, x12, x8
-	fmov	d1, x11
-	mov	v2.d[1], x10
-	mov	v1.d[1], x8
-	saddw2	v1.2d, v1.2d, v0.4s
-	saddw	v0.2d, v2.2d, v0.2s
+	add	x8, x1, w2, sxtw
+	mov	w9, #16960                      // =0x4240
+	movk	w9, #15, lsl #16
+	mul	x8, x8, x9
+	add	x0, x8, w0, sxtw
 	ret
                                         // -- End function

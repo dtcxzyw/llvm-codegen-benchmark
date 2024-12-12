@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EAScanfCore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000204(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = trunc i32 %2 to i16

@@ -2,8 +2,8 @@
 	.quad	1                               # 0x1
 func0000000000000000:                   # @func0000000000000000
 	vporq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -36,12 +36,12 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000001:                   # @func0000000000000001
 	vporq	.LCPI5_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI6_0:
 	.quad	1                               # 0x1
 func0000000000000003:                   # @func0000000000000003
 	vporq	.LCPI6_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpand	%ymm0, %ymm1, %ymm0
 	retq

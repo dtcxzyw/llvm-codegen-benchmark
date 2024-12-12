@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; raylib/optimized/rcore.c.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(i32 %0, i32 %1, i8 %2) #0 {
 entry:

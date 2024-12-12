@@ -5,18 +5,18 @@ func0000000000000004:                   # @func0000000000000004
 	setae	%al
 	leaq	9784(,%rax,4), %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	xorl	%eax, %eax
 	addl	%esi, %edi
 	setle	%al
 	leaq	6(%rax,%rax,4), %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	%esi, %edi
 	xorl	%eax, %eax
-	cmpl	$23, %edi
-	sete	%al
-	incq	%rax
+	cmpl	$-1, %edi
+	setne	%al
+	addq	$7, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	addl	%esi, %edi
@@ -32,7 +32,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$7, %eax
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addl	%esi, %edi
 	cmpl	$1048, %edi                     # imm = 0x418
 	movl	$1023, %ecx                     # imm = 0x3FF

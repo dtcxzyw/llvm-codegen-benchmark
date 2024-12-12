@@ -1,5 +1,7 @@
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; opencv/optimized/trackerCSRT.cpp.ll
 ; opencv/optimized/trackerCSRTSegmentation.cpp.ll
 ; opencv/optimized/undistort.dispatch.cpp.ll

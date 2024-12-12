@@ -1,5 +1,6 @@
 
-; 86 occurrences:
+; 88 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; clamav/optimized/rs.cpp.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -81,6 +82,7 @@
 ; qemu/optimized/block.c.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
+; redis/optimized/sds.ll
 ; slurm/optimized/slurm_step_layout.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; z3/optimized/dependent_expr_state.cpp.ll

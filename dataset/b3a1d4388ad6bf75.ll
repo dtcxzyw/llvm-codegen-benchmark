@@ -1,5 +1,5 @@
 
-; 246 occurrences:
+; 244 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
@@ -92,8 +92,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -247,12 +245,12 @@
 ; tev/optimized/main.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000308(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -265,17 +263,17 @@ entry:
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000304(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
-; 87 occurrences:
+; 85 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -301,8 +299,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -364,12 +360,12 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000189(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000309(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = icmp uge i64 %5, %0
   ret i1 %6
 }
@@ -378,12 +374,12 @@ entry:
 ; php/optimized/dtoa.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -392,12 +388,12 @@ entry:
 ; php/optimized/dtoa.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000109(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = icmp uge i64 %5, %0
   ret i1 %6
 }

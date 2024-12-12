@@ -1,6 +1,7 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; arrow/optimized/int_util.cc.ll
+; boost/optimized/get_distance_measure.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; icu/optimized/bocsu.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -50,7 +51,7 @@ entry:
   ret i8 %2
 }
 
-; 130 occurrences:
+; 133 occurrences:
 ; abc/optimized/abcNames.c.ll
 ; abc/optimized/giaClp.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -84,6 +85,7 @@ entry:
 ; linux/optimized/therm_throt.ll
 ; llvm/optimized/OSTargets.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; nix/optimized/attrs.ll
@@ -104,8 +106,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -180,6 +180,10 @@ entry:
 ; stockfish/optimized/evaluate_nnue.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {

@@ -50,7 +50,7 @@ entry:
   ret i32 %6
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/giaCSat.c.ll
@@ -66,7 +66,6 @@ entry:
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/tg3.ll
@@ -98,11 +97,10 @@ entry:
   ret i32 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
 ; icu/optimized/coleitr.ll
-; linux/optimized/feat_ctl.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
 ; mold/optimized/output-chunks.cc.M68K.cc.ll

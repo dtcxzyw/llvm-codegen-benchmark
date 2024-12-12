@@ -1,8 +1,15 @@
 
-; 38 occurrences:
+; 45 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; brotli/optimized/metablock.c.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; ipopt/optimized/IpAdaptiveMuUpdate.ll
@@ -47,7 +54,15 @@ entry:
   ret double %5
 }
 
-; 13 occurrences:
+; 21 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/partition.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; graphviz/optimized/position.c.ll
 ; gromacs/optimized/dlas2.cpp.ll
 ; hermes/optimized/String.cpp.ll

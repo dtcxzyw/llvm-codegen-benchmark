@@ -5,7 +5,7 @@
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000281(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000501(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 4
   %4 = add nsw i64 %3, %1
@@ -21,10 +21,10 @@ entry:
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000381(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000701(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = ashr i64 %4, %0
   %6 = trunc i64 %5 to i32
   %7 = icmp eq i32 %6, 0

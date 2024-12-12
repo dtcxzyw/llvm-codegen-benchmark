@@ -12,12 +12,11 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = shl i64 %3, 20
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 10 occurrences:
-; brotli/optimized/bit_reader.c.ll
+; 9 occurrences:
 ; jemalloc/optimized/ckh.ll
 ; jemalloc/optimized/ckh.pic.ll
 ; jemalloc/optimized/ckh.sym.ll

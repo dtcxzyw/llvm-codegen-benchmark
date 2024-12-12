@@ -14,12 +14,11 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; grpc/optimized/tls_security_connector.cc.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i8 %0, i1 %1, i1 %2) #0 {
 entry:

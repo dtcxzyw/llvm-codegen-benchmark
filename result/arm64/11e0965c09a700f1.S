@@ -1,16 +1,14 @@
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	cmhs	v3.2d, v3.2d, v5.2d
-	cmhs	v2.2d, v2.2d, v4.2d
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	cmp	x1, x2
+	cset	w8, hs
+	sub	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmhs	v3.2d, v3.2d, v5.2d
-	cmhs	v2.2d, v2.2d, v4.2d
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	cmp	x1, x2
+	cset	w8, hs
+	sub	x0, x0, x8
 	ret
                                         // -- End function

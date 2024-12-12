@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/tz.cpp.ll
 ; folly/optimized/json.cpp.ll
-; linux/optimized/eht.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; openjdk/optimized/jvmtiTagMap.ll
@@ -49,7 +48,7 @@ entry:
 ; meilisearch-rs/optimized/50l87gnpqq82g6pe.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0) #0 {
+define i1 @func000000000000004a(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 24
   %2 = trunc nuw i32 %1 to i8
@@ -63,7 +62,7 @@ entry:
 ; meilisearch-rs/optimized/50l87gnpqq82g6pe.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0) #0 {
+define i1 @func0000000000000046(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 24
   %2 = trunc nuw i32 %1 to i8
@@ -71,7 +70,7 @@ entry:
   ret i1 %3
 }
 
-; 127 occurrences:
+; 129 occurrences:
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -199,6 +198,8 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -222,14 +223,22 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
+; 9 occurrences:
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/ipv4_address.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 16
   %2 = trunc i32 %1 to i8
-  %3 = icmp ugt i8 %2, 2
+  %3 = icmp ugt i8 %2, 99
   ret i1 %3
 }
 

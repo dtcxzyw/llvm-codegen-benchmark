@@ -1,5 +1,5 @@
 
-; 127 occurrences:
+; 128 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/absOldCex.c.ll
@@ -18,6 +18,7 @@
 ; abc/optimized/sswPairs.c.ll
 ; abc/optimized/sswSim.c.ll
 ; abc/optimized/sswSweep.c.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -131,7 +132,7 @@
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1048576
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -156,10 +157,10 @@ entry:
 ; openspiel/optimized/bridge.cc.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -177,7 +178,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1
   %5 = icmp ne i32 %4, 0
   ret i1 %5
@@ -188,10 +189,10 @@ entry:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/bmcCexCare.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1
   %5 = icmp ne i32 %4, 0
   ret i1 %5
@@ -201,10 +202,10 @@ entry:
 ; linux/optimized/nf_conntrack_core.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1073741823
   %5 = icmp eq i32 %4, 0
   ret i1 %5

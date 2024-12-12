@@ -1,10 +1,8 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; icu/optimized/package.ll
 ; llvm/optimized/DXContainerPSVInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; opencv/optimized/lkpyramid.cpp.ll
 ; openjdk/optimized/methodData.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll

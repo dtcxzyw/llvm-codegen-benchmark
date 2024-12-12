@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; casadi/optimized/kinsol.c.ll
 ; msdfgen/optimized/import-svg.cpp.ll
 ; opencv/optimized/levmarq.cpp.ll
@@ -7,6 +7,7 @@
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
 ; stockfish/optimized/timeman.ll
 ; sundials/optimized/kinsol.c.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, double %1, double %2) #0 {
 entry:

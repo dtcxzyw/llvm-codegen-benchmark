@@ -1,8 +1,6 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mul	v4.4s, v4.4s, v0.4s
-	mul	v5.4s, v5.4s, v1.4s
-	mla	v0.4s, v4.4s, v2.4s
-	mla	v1.4s, v5.4s, v3.4s
+	mul	w8, w2, w0
+	madd	w0, w8, w1, w0
 	ret
                                         // -- End function

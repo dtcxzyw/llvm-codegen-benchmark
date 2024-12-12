@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-lib-rsa_ossl.ll
 ; openssl/optimized/libcrypto-shlib-rsa_ossl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c11(i32 %0, i32 %1) #0 {
+define i1 @func0000000000003021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp eq i32 %0, 1
@@ -17,9 +17,9 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000861(i32 %0, i32 %1) #0 {
+define i1 @func00000000000060c1(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %0, 4
+  %2 = icmp samesign ugt i32 %0, 4
   %3 = icmp slt i32 %1, 513
   %4 = and i1 %3, %2
   %5 = icmp eq i32 %0, 5
@@ -31,9 +31,9 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000086a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000060ca(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %0, 4
+  %2 = icmp samesign ugt i32 %0, 4
   %3 = icmp slt i32 %1, 513
   %4 = and i1 %3, %2
   %5 = icmp sgt i32 %0, 1
@@ -50,7 +50,7 @@ entry:
 ; openjdk/optimized/javaClasses.ll
 ; postgres/optimized/filemap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 18
   %3 = icmp eq i32 %0, -1
@@ -62,7 +62,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000484(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001114(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %0, 128
   ret i1 %2
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/thirty360.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000541(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 30
   %3 = icmp eq i32 %0, 31
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/stash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c16(i32 %0, i32 %1) #0 {
+define i1 @func0000000000003026(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ne i32 %0, -1
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/csrucode.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000046c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000050cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %0, 99
   %3 = icmp sgt i32 %1, 3
@@ -108,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/contours.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 4
   %3 = icmp ne i32 %0, 2
@@ -121,7 +121,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/contours.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000042a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, 1
   ret i1 %2

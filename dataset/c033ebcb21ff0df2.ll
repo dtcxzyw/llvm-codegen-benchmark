@@ -70,7 +70,7 @@ entry:
   ret i32 %3
 }
 
-; 161 occurrences:
+; 160 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/absOldSim.c.ll
@@ -112,8 +112,6 @@ entry:
 ; linux/optimized/ldt.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/pci.ll
-; linux/optimized/phc_vclocks.ll
-; linux/optimized/rss.ll
 ; linux/optimized/scm.ll
 ; linux/optimized/skl_scaler.ll
 ; linux/optimized/uncore_snbep.ll
@@ -132,6 +130,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lua/optimized/lcode.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/minilua.ll
@@ -241,11 +240,10 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_migrate.ll
-; lua/optimized/lcode.ll
 ; opencv/optimized/container_avi.cpp.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; wireshark/optimized/proto.c.ll

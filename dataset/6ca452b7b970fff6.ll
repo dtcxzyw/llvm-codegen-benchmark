@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; freetype/optimized/truetype.c.ll
 ; icu/optimized/msgfmt.ll
 ; linux/optimized/vc_screen.ll
 ; meshlab/optimized/cleanfilter.cpp.ll

@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libquic/optimized/prime.c.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -10,6 +10,8 @@
 ; slurm/optimized/data_parser_v0_0_39_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_40_la-parsers.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:

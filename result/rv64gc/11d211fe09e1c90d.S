@@ -1,4 +1,4 @@
-func00000000000002a0:                   # @func00000000000002a0
+func0000000000000520:                   # @func0000000000000520
 	slli	a2, a2, 32
 	slli	a1, a1, 32
 	srli	a2, a2, 32
@@ -20,7 +20,7 @@ func0000000000000028:                   # @func0000000000000028
 	sub	a1, a2, a1
 	addw	a0, a0, a1
 	ret
-func00000000000002e0:                   # @func00000000000002e0
+func00000000000005a0:                   # @func00000000000005a0
 	slli	a2, a2, 32
 	slli	a1, a1, 32
 	srli	a2, a2, 32
@@ -28,6 +28,6 @@ func00000000000002e0:                   # @func00000000000002e0
 	sub	a1, a1, a2
 	srai	a2, a1, 63
 	xor	a1, a1, a2
-	subw	a2, a2, a0
-	subw	a0, a1, a2
+	subw	a0, a0, a2
+	addw	a0, a0, a1
 	ret

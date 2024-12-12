@@ -37,17 +37,17 @@ func0000000000000015:                   # @func0000000000000015
 	mul	a1, a1, a2
 	sub	a0, a1, a0
 	ret
+func0000000000000002:                   # @func0000000000000002
+	addi	a2, a2, 1
+	mul	a1, a1, a2
+	sub	a0, a1, a0
+	ret
 func0000000000000020:                   # @func0000000000000020
 	addi	a2, a2, 1
 	mul	a1, a1, a2
 	sub	a0, a1, a0
 	ret
 func0000000000000032:                   # @func0000000000000032
-	addi	a2, a2, 1
-	mul	a1, a1, a2
-	sub	a0, a1, a0
-	ret
-func0000000000000002:                   # @func0000000000000002
 	addi	a2, a2, 1
 	mul	a1, a1, a2
 	sub	a0, a1, a0

@@ -8,7 +8,7 @@ define i32 @func0000000000000018(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 64
   %3 = icmp ne i16 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

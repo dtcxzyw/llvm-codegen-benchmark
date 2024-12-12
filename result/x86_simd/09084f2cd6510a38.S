@@ -7,7 +7,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [944,944,944,944,944,944,944,944]
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [976,976,976,976,976,976,976,976]
-	vpcmpeqd	%ymm0, %ymm1, %ymm0
+	vpcmpeqd	%ymm1, %ymm0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq
 .LCPI1_0:
@@ -30,7 +30,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1 {%k1} {z} # ymm1 {%k1} {z} = [4294967294,4294967294,4294967294,4294967294,4294967294,4294967294,4294967294,4294967294]
-	vpcmpeqd	%ymm0, %ymm1, %ymm0
+	vpcmpeqd	%ymm1, %ymm0, %ymm0
 	vpandnd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI3_0:

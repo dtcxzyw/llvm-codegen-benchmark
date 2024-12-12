@@ -1,10 +1,11 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/intel_color.ll
 ; llvm/optimized/DeclSpec.cpp.ll
 ; ruby/optimized/coverage.ll
+; ruby/optimized/ractor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i1 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
   %3 = or disjoint i32 %2, 2
@@ -122,7 +123,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i64 %0, i1 %1) #0 {
+define i32 @func000000000000004c(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
   %3 = or disjoint i32 %2, 4

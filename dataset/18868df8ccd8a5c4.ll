@@ -1,13 +1,11 @@
 
-; 36 occurrences:
+; 30 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; flac/optimized/file.c.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; libquic/optimized/file_posix.cc.ll
-; linux/optimized/advise.ll
 ; linux/optimized/cancel.ll
-; linux/optimized/epoll.ll
 ; linux/optimized/ethtool.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/futex.ll
@@ -18,15 +16,12 @@
 ; linux/optimized/kbuf.ll
 ; linux/optimized/msg_ring.ll
 ; linux/optimized/net.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/rw.ll
-; linux/optimized/splice.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/timeout.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/waitid.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
@@ -34,7 +29,6 @@
 ; openmpi/optimized/comm_cid.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/spell.ll
-; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
@@ -59,6 +53,7 @@ entry:
 
 ; 38 occurrences:
 ; abc/optimized/cuddRef.c.ll
+; boost/optimized/alloc_lib.ll
 ; cmake/optimized/tty.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -83,7 +78,6 @@ entry:
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/mii.ll
 ; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/GCOVProfiling.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -97,7 +91,7 @@ entry:
 ; wireshark/optimized/packet-rtps.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1280
   %4 = icmp eq i32 %1, 0
@@ -105,15 +99,14 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
-; linux/optimized/ich8lan.ll
+; 5 occurrences:
 ; linux/optimized/mac.ll
 ; linux/optimized/netdev.ll
 ; llvm/optimized/ExtractGV.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; qemu/optimized/ui_curses.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 96
   %4 = icmp ult i32 %1, 26
@@ -127,7 +120,7 @@ entry:
 ; openjdk/optimized/ProcessHandleImpl_unix.ll
 ; openjdk/optimized/os_posix.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 128
   %4 = icmp sgt i32 %1, 33554431
@@ -143,7 +136,7 @@ entry:
 ; llvm/optimized/MCCodeView.cpp.ll
 ; openjdk/optimized/methodHandles.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 262144
   %4 = icmp slt i32 %1, 5
@@ -165,7 +158,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/e1000_ethtool.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 21508
   %4 = icmp ugt i32 %1, 2
@@ -173,15 +166,36 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; linux/optimized/ich8lan.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %2, 21504
+  %4 = icmp samesign ult i32 %1, 16
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 2 occurrences:
 ; icu/optimized/cstring.ll
 ; linux/optimized/ich8lan.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %2, 21508
+  %4 = icmp samesign ult i32 %1, 16
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/reg.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = or i32 %2, 21508
-  %4 = icmp ult i32 %1, 16
+  %3 = or i32 %2, 48
+  %4 = icmp ult i32 %1, 40000
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }

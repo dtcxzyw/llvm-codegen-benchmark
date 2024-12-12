@@ -1,12 +1,11 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/ivyFraig.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; gromacs/optimized/dump.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; llvm/optimized/DXILResource.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; node/optimized/simdutf.ll
 ; openjdk/optimized/indexSet.ll
 ; sqlite/optimized/sqlite3.ll
@@ -14,19 +13,7 @@
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = add nuw nsw i32 %3, %1
-  %5 = or disjoint i32 %4, %0
-  ret i32 %5
-}
-
-; 2 occurrences:
-; mitsuba3/optimized/x86func.cpp.ll
-; openjdk/optimized/indexSet.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 16
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -52,6 +39,17 @@ define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 5
   %4 = add i32 %3, %1
+  %5 = or disjoint i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; openjdk/optimized/indexSet.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 8
+  %4 = add nuw nsw i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -70,8 +68,21 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
-  %4 = add i32 %3, %1
-  %5 = or disjoint i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = or disjoint i32 %0, %4
+  ret i32 %5
+}
+
+; 3 occurrences:
+; brotli/optimized/compress_fragment_two_pass.c.ll
+; glslang/optimized/Initialize.cpp.ll
+; linux/optimized/intel_color.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001e(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 8
+  %4 = add nuw nsw i32 %3, %1
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -82,7 +93,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
   %4 = add i32 %3, %1
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -92,7 +103,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -106,20 +117,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
-  %4 = add i32 %3, %1
-  %5 = or i32 %4, %0
-  ret i32 %5
-}
-
-; 2 occurrences:
-; brotli/optimized/compress_fragment_two_pass.c.ll
-; linux/optimized/intel_color.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001e(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 2
-  %4 = add nuw nsw i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -129,7 +128,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -140,8 +139,8 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
-  %4 = add nuw i32 %3, %1
-  %5 = or disjoint i32 %4, %0
+  %4 = add nuw i32 %1, %3
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

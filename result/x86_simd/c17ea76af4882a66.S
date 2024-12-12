@@ -14,7 +14,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI2_0:
 	.quad	4503595332403200                # 0xfffff00000000
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vptestnmq	.LCPI2_0(%rip){1to4}, %ymm2, %k1
 	vpblendmd	%xmm0, %xmm1, %xmm0 {%k1}
 	vzeroupper

@@ -5,9 +5,9 @@ func0000000000000004:                   # @func0000000000000004
 	andl	%esi, %edi
 	andb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	addl	$-58, %edx
-	cmpl	$-3, %edx
+func0000000000000024:                   # @func0000000000000024
+	addl	$-5, %edx
+	cmpl	$-2, %edx
 	setb	%al
 	andl	%esi, %edi
 	andb	%dil, %al

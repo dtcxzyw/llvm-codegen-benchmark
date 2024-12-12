@@ -21,7 +21,7 @@
 define i128 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = zext i64 %3 to i128
   ret i128 %4
 }

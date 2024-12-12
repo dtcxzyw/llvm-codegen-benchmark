@@ -71,11 +71,6 @@ func0000000000000011:                   # @func0000000000000011
 	add	a0, a0, a1
 	addiw	a0, a0, 128
 	ret
-func000000000000001f:                   # @func000000000000001f
-	slli	a1, a1, 5
-	add	a0, a0, a1
-	addiw	a0, a0, 32
-	ret
 func0000000000000004:                   # @func0000000000000004
 	sh3add	a0, a1, a0
 	addiw	a0, a0, -7
@@ -95,8 +90,4 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000018:                   # @func0000000000000018
 	sh2add	a0, a1, a0
 	addiw	a0, a0, 6
-	ret
-func0000000000000002:                   # @func0000000000000002
-	sh2add	a0, a1, a0
-	addiw	a0, a0, -4
 	ret

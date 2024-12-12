@@ -41,4 +41,15 @@ entry:
   ret i32 %3
 }
 
+; 1 occurrences:
+; boost/optimized/operations.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i16 %0) #0 {
+entry:
+  %1 = and i16 %0, 3967
+  %2 = or disjoint i16 %1, 128
+  %3 = zext nneg i16 %2 to i32
+  ret i32 %3
+}
+
 attributes #0 = { nounwind }

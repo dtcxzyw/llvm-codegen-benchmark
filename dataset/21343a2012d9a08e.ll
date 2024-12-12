@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 90 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/XzDec.c.ll
@@ -24,7 +24,6 @@
 ; folly/optimized/IOThreadPoolExecutor.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -59,7 +58,6 @@
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/interrupt.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/mmconfig_64.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/DWARFDebugArangeSet.cpp.ll
@@ -101,8 +99,9 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; clamav/optimized/mew.c.ll
+; gromacs/optimized/pdb2gmx.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll

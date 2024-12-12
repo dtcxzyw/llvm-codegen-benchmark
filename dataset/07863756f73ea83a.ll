@@ -1,8 +1,6 @@
 
-; 3 occurrences:
+; 1 occurrences:
 ; c3c/optimized/lexer.c.ll
-; cmake/optimized/gzwrite.c.ll
-; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -47,15 +45,16 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
 ; ceres/optimized/residual_block.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = icmp ugt i64 %4, 9223372036854775804
-  %6 = select i1 %5, i64 -1, i64 %0
+  %5 = icmp ugt i64 %4, 31
+  %6 = select i1 %5, i64 0, i64 %0
   ret i64 %6
 }
 

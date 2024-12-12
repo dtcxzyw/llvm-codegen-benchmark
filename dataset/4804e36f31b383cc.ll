@@ -140,7 +140,7 @@
 ; tev/optimized/main.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = icmp eq i64 %2, 7

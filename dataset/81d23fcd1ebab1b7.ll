@@ -1,6 +1,7 @@
 
 ; 259 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; hermes/optimized/FoldingSet.cpp.ll
 ; hermes/optimized/Memory.cpp.ll
@@ -234,7 +235,6 @@
 ; openjdk/optimized/virtualspace.ll
 ; openmpi/optimized/common_sm.ll
 ; openusd/optimized/aom_mem.c.ll
-; ozz-animation/optimized/allocator.cc.ll
 ; postgres/optimized/mcxt.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/base.ll

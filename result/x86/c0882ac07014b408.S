@@ -5,7 +5,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$3125, %esi                     # imm = 0xC35
 	setae	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	imull	%edx, %esi
 	testl	%esi, %esi
 	sete	%cl
@@ -19,7 +19,7 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rsi, %rsi
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	imull	%edx, %esi
 	imulq	%rdi, %rsi
 	shrq	$3, %rsi

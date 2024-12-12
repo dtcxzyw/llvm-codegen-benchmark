@@ -32,7 +32,7 @@ entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %3, 12
   %5 = or disjoint i32 %4, %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

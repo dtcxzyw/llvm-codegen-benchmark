@@ -18,7 +18,7 @@
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %1, %2
   %4 = add nuw nsw i64 %0, 1
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/dump_dump.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %1, %2
   %4 = add nuw nsw i64 %0, 1
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/sorting.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %1, %2
   %4 = add nuw i64 %0, 1

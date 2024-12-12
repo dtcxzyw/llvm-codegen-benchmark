@@ -6,7 +6,7 @@ func0000000000000002:                   # @func0000000000000002
 	cmovneq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	movabsq	$8589934592, %rax               # imm = 0x200000000
 	orq	%rsi, %rax
 	cmpb	$14, %dl

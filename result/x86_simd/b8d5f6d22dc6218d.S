@@ -16,3 +16,9 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovb2m	%xmm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
 	retq
+func0000000000000006:                   # @func0000000000000006
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k1
+	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
+	retq

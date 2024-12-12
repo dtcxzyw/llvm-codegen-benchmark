@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 54 occurrences:
 ; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; freetype/optimized/autofit.c.ll
@@ -31,7 +31,9 @@
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
+; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openjdk/optimized/reg_split.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
@@ -51,6 +53,7 @@
 ; wireshark/optimized/packet-iso7816.c.ll
 ; wireshark/optimized/packet-ppp.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1, i8 %2) #0 {
 entry:

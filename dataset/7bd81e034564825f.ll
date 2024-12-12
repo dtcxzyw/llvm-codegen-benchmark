@@ -37,18 +37,6 @@ entry:
 }
 
 ; 1 occurrences:
-; icu/optimized/umutablecptrie.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 32783
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = shl nuw nsw i32 %4, 2
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
-}
-
-; 1 occurrences:
 ; openblas/optimized/dlaror.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000067(i32 %0, i32 %1, i32 %2) #0 {

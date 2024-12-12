@@ -9,11 +9,18 @@ func0000000000000000:                   # @func0000000000000000
 	vmv.v.v	v8, v10
 	ret
 func0000000000000003:                   # @func0000000000000003
+	lui	a0, 8192
+	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vadd.vi	v10, v8, 13
-	vmv.v.i	v8, 8
-	lui	a0, 32
-	addiw	a0, a0, -8
+	vadd.vx	v10, v8, a0
+	lui	a0, 3277
+	addi	a0, a0, -819
+	slli	a0, a0, 12
+	addi	a0, a0, -819
+	slli	a0, a0, 25
+	vmv.v.x	v8, a0
+	lui	a0, 1015808
+	srli	a0, a0, 2
 	vand.vx	v8, v10, a0, v0.t
 	ret
 func0000000000000002:                   # @func0000000000000002

@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 24 occurrences:
 ; icu/optimized/utrace.ll
 ; linux/optimized/intel_engine_cs.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
@@ -20,24 +20,15 @@
 ; wireshark/optimized/packet-umts_mac.c.ll
 ; wireshark/optimized/packet-zbee-nwk-gp.c.ll
 ; yosys/optimized/opt_expr.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = icmp eq i8 %2, 40
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 3 occurrences:
-; linux/optimized/pci.ll
-; mitsuba3/optimized/x86func.cpp.ll
-; wireshark/optimized/packet-tecmp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = trunc i32 %1 to i8
-  %3 = icmp ult i8 %2, 49
   %4 = and i1 %3, %0
   ret i1 %4
 }
@@ -56,7 +47,7 @@ define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = icmp ne i8 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -67,6 +58,18 @@ define i1 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = icmp slt i8 %2, 32
+  %4 = and i1 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; linux/optimized/pci.ll
+; wireshark/optimized/packet-tecmp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i32 %1 to i8
+  %3 = icmp ult i8 %2, 5
   %4 = and i1 %3, %0
   ret i1 %4
 }

@@ -12,8 +12,9 @@ entry:
   ret i16 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; lvgl/optimized/lv_obj_style.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/color_filters.c.ll
@@ -22,7 +23,7 @@ define i16 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i16
   %2 = and i16 %1, 255
-  %3 = mul nuw i16 %2, 257
+  %3 = mul nuw i16 %2, 255
   ret i16 %3
 }
 

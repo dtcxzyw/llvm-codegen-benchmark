@@ -40,6 +40,21 @@ entry:
   ret i1 %6
 }
 
+; 4 occurrences:
+; lief/optimized/psa_crypto.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 16
+  %4 = and i32 %3, 63
+  %5 = icmp samesign ugt i32 %4, %1
+  %6 = select i1 %0, i1 true, i1 %5
+  ret i1 %6
+}
+
 ; 2 occurrences:
 ; hermes/optimized/gtest-all.cc.ll
 ; opencv/optimized/ts_gtest.cpp.ll
@@ -53,28 +68,14 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 5
-  %4 = and i32 %3, 524287
-  %5 = icmp ugt i32 %4, %1
-  %6 = select i1 %0, i1 true, i1 %5
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; postgres/optimized/nbtpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 65535
-  %5 = icmp ult i32 %4, %1
+  %5 = icmp samesign ult i32 %4, %1
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }

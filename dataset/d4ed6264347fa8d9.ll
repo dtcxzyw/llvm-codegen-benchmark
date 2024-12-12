@@ -5,11 +5,11 @@
 ; icu/optimized/normalizer2impl.ll
 ; nghttp2/optimized/llhttp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = xor i32 %0, 65535
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 

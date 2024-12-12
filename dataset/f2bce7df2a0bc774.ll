@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; cpython/optimized/action_helpers.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000182(ptr %0, ptr %1) #0 {
+define i32 @func0000000000000302(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq ptr %0, null

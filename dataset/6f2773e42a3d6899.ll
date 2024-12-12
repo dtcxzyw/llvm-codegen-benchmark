@@ -18,7 +18,7 @@ entry:
 ; hwloc/optimized/traversal.ll
 ; velox/optimized/LeadLag.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.not = icmp slt i64 %1, %2
   %3 = select i1 %.not, i32 -2, i32 %0
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = icmp ult i64 %3, 137438953441

@@ -1,6 +1,7 @@
 
-; 34 occurrences:
+; 36 occurrences:
 ; abc/optimized/cuddApprox.c.ll
+; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -17,6 +18,7 @@
 ; lua/optimized/lvm.ll
 ; luajit/optimized/lib_base.ll
 ; luajit/optimized/lib_base_dyn.ll
+; mitsuba3/optimized/string.cpp.ll
 ; msdfgen/optimized/Scanline.cpp.ll
 ; msdfgen/optimized/import-svg.cpp.ll
 ; ncnn/optimized/paramdict.cpp.ll

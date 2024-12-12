@@ -5,5 +5,5 @@ func0000000000000031:                   # @func0000000000000031
 	vmand.mm	v0, v12, v0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

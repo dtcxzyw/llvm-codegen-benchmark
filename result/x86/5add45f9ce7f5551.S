@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	shrl	$31, %eax
 	addl	%esi, %eax
 	sarl	%eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -11,31 +11,31 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
 	sarl	$3, %eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	leal	7(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
 	sarl	$3, %eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
 	sarl	%eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	leal	15(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
 	sarl	$4, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setne	%al
 	retq
 func0000000000000005:                   # @func0000000000000005
@@ -45,30 +45,30 @@ func0000000000000005:                   # @func0000000000000005
 	shrq	$63, %rcx
 	sarq	$35, %rax
 	addl	%ecx, %eax
-	cmpl	%edi, %eax
-	setae	%al
+	cmpl	%eax, %edi
+	setbe	%al
 	retq
 func000000000000000b:                   # @func000000000000000b
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
 	sarl	%eax
-	cmpl	%edi, %eax
-	setle	%al
+	cmpl	%eax, %edi
+	setge	%al
 	retq
 func0000000000000007:                   # @func0000000000000007
 	leal	7(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
 	sarl	$3, %eax
-	cmpl	%edi, %eax
-	setge	%al
+	cmpl	%eax, %edi
+	setle	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	leal	3(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
 	sarl	$2, %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq

@@ -57,7 +57,7 @@ func0000000000000008:                   # @func0000000000000008
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpcmpltub	.LCPI2_0(%rip), %xmm1, %k1
 	vpmovzxdq	%xmm2, %ymm0 {%k1}      # ymm0 {%k1} = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	retq

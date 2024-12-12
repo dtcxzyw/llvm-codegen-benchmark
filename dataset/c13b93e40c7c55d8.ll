@@ -9,7 +9,8 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; postgres/optimized/informix.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll

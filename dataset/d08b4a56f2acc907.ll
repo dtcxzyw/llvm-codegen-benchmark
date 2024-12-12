@@ -1,19 +1,12 @@
 
-; 40 occurrences:
-; clamav/optimized/pdf.c.ll
-; cmake/optimized/divsufsort.c.ll
+; 28 occurrences:
+; boost/optimized/sparring_partner.ll
 ; eastl/optimized/TestSort.cpp.ll
-; git/optimized/apply.ll
 ; git/optimized/cache-tree.ll
 ; git/optimized/name-hash.ll
 ; git/optimized/unpack-trees.ll
-; grpc/optimized/ring_hash.cc.ll
 ; icu/optimized/package.ll
 ; libquic/optimized/a_d2i_fp.c.ll
-; libquic/optimized/s3_srvr.c.ll
-; llvm/optimized/DFAJumpThreading.cpp.ll
-; memcached/optimized/memcached-proto_text.ll
-; memcached/optimized/memcached_debug-proto_text.ll
 ; meshlab/optimized/GLLogStream.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; meshlab/optimized/mainwindow_Init.cpp.ll
@@ -29,17 +22,12 @@
 ; openjdk/optimized/xBarrierSetC2.ll
 ; openjdk/optimized/zBarrierSetC2.ll
 ; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
-; openssl/optimized/libcrypto-lib-cmp_util.ll
 ; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
-; openssl/optimized/libcrypto-shlib-cmp_util.ll
 ; openusd/optimized/level.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; redis/optimized/read.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; sqlite/optimized/sqlite3.ll
-; yosys/optimized/fstapi.ll
 ; yyjson/optimized/yyjson.c.ll
-; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(ptr %0, ptr %1, i64 %2) #0 {
 entry:
@@ -51,13 +39,38 @@ entry:
   ret i64 %7
 }
 
-; 10 occurrences:
+; 14 occurrences:
+; clamav/optimized/pdf.c.ll
+; cmake/optimized/divsufsort.c.ll
+; git/optimized/apply.ll
+; grpc/optimized/ring_hash.cc.ll
+; libquic/optimized/s3_srvr.c.ll
+; llvm/optimized/DFAJumpThreading.cpp.ll
+; memcached/optimized/memcached-proto_text.ll
+; memcached/optimized/memcached_debug-proto_text.ll
+; opencv/optimized/geometry.cpp.ll
+; openssl/optimized/libcrypto-lib-cmp_util.ll
+; openssl/optimized/libcrypto-shlib-cmp_util.ll
+; simdjson/optimized/simdjson.cpp.ll
+; yosys/optimized/fstapi.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = sub i64 %5, %4
+  %7 = shl i64 %6, 32
+  ret i64 %7
+}
+
+; 9 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; linux/optimized/config.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/tty_io.ll
 ; linux/optimized/xfrm_input.ll
-; opencv/optimized/geometry.cpp.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/print.ll
 ; postgres/optimized/varlena.ll
@@ -85,9 +98,9 @@ entry:
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4

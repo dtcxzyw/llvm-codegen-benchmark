@@ -2,7 +2,7 @@
 	.quad	1099494850560                   # 0xffff000000
 func000000000000007f:                   # @func000000000000007f
 	vpsllq	$40, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm2
+	vpor	%ymm2, %ymm0, %ymm2
 	vpsllq	$48, %ymm1, %ymm0
 	vpternlogq	$254, .LCPI0_0(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
@@ -18,7 +18,7 @@ func0000000000000011:                   # @func0000000000000011
 	.quad	32                              # 0x20
 func0000000000000078:                   # @func0000000000000078
 	vpsllq	$21, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm2
+	vpor	%ymm2, %ymm0, %ymm2
 	vpsllq	$27, %ymm1, %ymm0
 	vpternlogq	$254, .LCPI2_0(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
@@ -26,7 +26,7 @@ func0000000000000078:                   # @func0000000000000078
 	.quad	1610612736                      # 0x60000000
 func0000000000000028:                   # @func0000000000000028
 	vpsllq	$20, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm2
+	vpor	%ymm2, %ymm0, %ymm2
 	vpsllq	$24, %ymm1, %ymm0
 	vpternlogq	$254, .LCPI3_0(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
@@ -50,7 +50,7 @@ func000000000000005f:                   # @func000000000000005f
 	.quad	1095199883264                   # 0xfeff000000
 func0000000000000077:                   # @func0000000000000077
 	vpsllq	$40, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm2
+	vpor	%ymm2, %ymm0, %ymm2
 	vpsllq	$48, %ymm1, %ymm0
 	vpternlogq	$254, .LCPI6_0(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
@@ -58,7 +58,7 @@ func0000000000000077:                   # @func0000000000000077
 	.quad	7                               # 0x7
 func0000000000000071:                   # @func0000000000000071
 	vpsllq	$16, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpsllq	$4, %ymm0, %ymm0
 	vpternlogq	$254, .LCPI7_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq

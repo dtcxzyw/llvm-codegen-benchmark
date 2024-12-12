@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; actix-rs/optimized/3afp9uuicyvwgbsz.ll
 ; c3c/optimized/bigint.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
@@ -13,7 +13,6 @@
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; jq/optimized/execute.ll
-; llvm/optimized/NetBSD.cpp.ll
 ; llvm/optimized/OpenBSD.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
@@ -33,21 +32,14 @@ entry:
   ret i64 %4
 }
 
-; 50 occurrences:
+; 48 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; hermes/optimized/RuntimeJSONUtils.cpp.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; llvm/optimized/CGExpr.cpp.ll
-; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; llvm/optimized/LoopPredication.cpp.ll
-; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/OpenMPOpt.cpp.ll
-; llvm/optimized/PlaceSafepoints.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
-; llvm/optimized/SSAContext.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; ockam-rs/optimized/1j8f46ag92qmaepd.ll
@@ -84,8 +76,13 @@ entry:
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -3
   %3 = icmp ult i32 %2, 5
@@ -93,11 +90,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; abseil-cpp/optimized/float_conversion.cc.ll
+; 1 occurrences:
 ; gromacs/optimized/xtc2.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -512
   %3 = icmp ult i32 %2, -513

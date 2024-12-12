@@ -7,12 +7,12 @@
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = and i32 %0, 15
   %4 = add nuw nsw i32 %3, %2
-  %5 = icmp ugt i32 %4, 1
+  %5 = icmp samesign ugt i32 %4, 1
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ entry:
 ; openjdk/optimized/cmsalpha.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = and i32 %0, 15
@@ -29,13 +29,14 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/dump.ll
 ; linux/optimized/dm-raid1.ll
 ; openjdk/optimized/ad_x86_peephole.ll
 ; openjdk/optimized/dfa_x86.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = and i32 %0, 15
@@ -48,12 +49,12 @@ entry:
 ; openjdk/optimized/vm_version_x86.ll
 ; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = and i32 %0, 15
   %4 = add nuw nsw i32 %3, %2
-  %5 = icmp ult i32 %4, 24
+  %5 = icmp samesign ult i32 %4, 24
   ret i1 %5
 }
 
@@ -73,12 +74,24 @@ entry:
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
   %3 = and i32 %0, 2147483647
   %4 = add nuw i32 %3, %2
   %5 = icmp ugt i32 %4, 7
+  ret i1 %5
+}
+
+; 1 occurrences:
+; hermes/optimized/StringPrimitive.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 2147483647
+  %3 = and i32 %0, 2147483647
+  %4 = add nuw i32 %3, %2
+  %5 = icmp samesign ugt i32 %4, 255
   ret i1 %5
 }
 

@@ -11,7 +11,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/src.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; lief/optimized/ecp.c.ll
 ; linux/optimized/set_memory.ll
@@ -26,13 +27,8 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

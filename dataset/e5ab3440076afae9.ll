@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; coremark/optimized/core_matrix.c.ll
 ; glslang/optimized/Constant.cpp.ll
 ; glslang/optimized/Intermediate.cpp.ll
@@ -12,6 +12,7 @@
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
+; lvgl/optimized/lv_demo_render.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll

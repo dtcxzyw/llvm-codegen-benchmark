@@ -12,6 +12,21 @@ entry:
   ret i64 %5
 }
 
+; 4 occurrences:
+; linux/optimized/vma.ll
+; lvgl/optimized/lv_tlsf.ll
+; redis/optimized/emap.ll
+; redis/optimized/emap.sym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -4
+  %3 = add i64 %2, 8
+  %4 = add i64 %3, %0
+  %5 = and i64 %4, -4
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; Function Attrs: nounwind
@@ -21,20 +36,6 @@ entry:
   %3 = add i64 %2, %0
   %4 = and i64 %3, 2251799813685247
   ret i64 %4
-}
-
-; 3 occurrences:
-; linux/optimized/vma.ll
-; redis/optimized/emap.ll
-; redis/optimized/emap.sym.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, -4096
-  %3 = add i64 %2, 2097151
-  %4 = add i64 %3, %0
-  %5 = and i64 %4, -2097152
-  ret i64 %5
 }
 
 attributes #0 = { nounwind }

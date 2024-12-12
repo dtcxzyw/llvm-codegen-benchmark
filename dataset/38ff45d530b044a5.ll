@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; cmake/optimized/setopt.c.ll
@@ -12,6 +12,7 @@
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/intel_migrate.ll
+; linux/optimized/lbr.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/swap.ll
@@ -48,7 +49,7 @@ entry:
   %2 = and i64 %1, 3
   %3 = icmp eq i64 %2, 3
   %4 = select i1 %3, i64 32, i64 0
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

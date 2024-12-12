@@ -5,7 +5,7 @@
 ; wireshark/optimized/packet-tcp.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq i32 %1, -1074

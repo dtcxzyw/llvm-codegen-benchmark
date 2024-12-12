@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/dsdProc.c.ll
 ; cmake/optimized/cmCTestTestHandler.cxx.ll
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
@@ -39,6 +39,7 @@
 ; vcpkg/optimized/versions.cpp.ll
 ; verilator/optimized/V3PreProc.cpp.ll
 ; wireshark/optimized/packet-tcp.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
@@ -114,7 +115,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -124,7 +125,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 

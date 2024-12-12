@@ -1,5 +1,5 @@
 
-; 157 occurrences:
+; 159 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaSatMap.c.ll
 ; assimp/optimized/PlyLoader.cpp.ll
@@ -156,6 +156,8 @@
 ; raylib/optimized/rtext.c.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; tev/optimized/ImageCanvas.cpp.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/GTIN.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i64 %0) #0 {
@@ -165,7 +167,7 @@ entry:
   ret float %2
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; gromacs/optimized/lincs.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -221,6 +223,7 @@ entry:
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/mipmap.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(i64 %0) #0 {
 entry:
@@ -273,8 +276,9 @@ entry:
   ret float %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/gmx_rms.cpp.ll
+; opencv/optimized/lsc.cpp.ll
 ; opencv/optimized/simpleflow.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; postgres/optimized/array_selfuncs.ll

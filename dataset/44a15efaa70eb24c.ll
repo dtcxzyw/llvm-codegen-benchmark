@@ -178,7 +178,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -223,7 +223,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 %0, %4
   ret i64 %5
 }
@@ -244,8 +244,7 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
-; arrow/optimized/light_array.cc.ll
+; 5 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -275,7 +274,7 @@ entry:
 define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nuw i64 %0, %4
   ret i64 %5
 }
@@ -286,7 +285,7 @@ entry:
 define i64 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nuw nsw i64 %0, %4
   ret i64 %5
 }
@@ -297,7 +296,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %0, %4
   ret i64 %5
 }

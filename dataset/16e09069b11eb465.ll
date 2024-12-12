@@ -6,7 +6,7 @@
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/hb-ot-shaper-myanmar.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i8 %1, i64 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = icmp eq i8 %1, 2
@@ -14,7 +14,7 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; duckdb/optimized/ub_duckdb_transformer_expression.cpp.ll
 ; git/optimized/diff.ll
@@ -24,6 +24,7 @@ entry:
 ; llvm/optimized/Driver.cpp.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; yosys/optimized/fsm_map.ll
+; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i8 %1, i64 %2) #0 {
 entry:
@@ -42,7 +43,7 @@ entry:
 ; opencc/optimized/CommandLine.cpp.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i8 %1, i64 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp eq i8 %1, 47
@@ -57,7 +58,7 @@ entry:
 ; gromacs/optimized/cstringutil.cpp.ll
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1, i64 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = icmp eq i8 %1, 1

@@ -5,7 +5,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovd2m	%xmm0, %k1
 	vptestmq	%ymm2, %ymm2, %k2
 	kxorw	%k1, %k2, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -16,8 +16,8 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovd2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpcmpgtq	%ymm0, %ymm2, %k2
-	kxorw	%k1, %k2, %k1
-	korw	%k0, %k1, %k0
+	kxorw	%k2, %k1, %k1
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

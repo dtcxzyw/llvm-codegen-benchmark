@@ -9,7 +9,7 @@
 ; wireshark/optimized/packet-diameter.c.ll
 ; wolfssl/optimized/random.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c31(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001861(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
@@ -22,7 +22,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000431(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000861(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 5
   %3 = zext i1 %2 to i32
@@ -36,13 +36,13 @@ entry:
 ; linux/optimized/netdev.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c38(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001878(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
   %4 = lshr i32 %0, 2
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ugt i32 %5, 255
+  %6 = icmp samesign ugt i32 %5, 255
   ret i1 %6
 }
 

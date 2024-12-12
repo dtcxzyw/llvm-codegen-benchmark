@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; libpng/optimized/pngrutil.c.ll
 ; openjdk/optimized/pngrutil.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000df(i64 %0, i32 %1) #0 {
 entry:
@@ -10,14 +12,12 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = add nuw nsw i32 %3, 49
   %5 = zext nneg i32 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; libjpeg-turbo/optimized/jchuff.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openjdk/optimized/jchuff.ll
 ; sentencepiece/optimized/sentencepiece.pb.cc.ll
@@ -30,7 +30,7 @@ entry:
   %3 = lshr i32 %2, 4
   %4 = add nuw nsw i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = add nuw nsw i32 %3, 4
   %5 = zext nneg i32 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -56,7 +56,7 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = add nuw nsw i32 %3, 4
   %5 = zext nneg i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

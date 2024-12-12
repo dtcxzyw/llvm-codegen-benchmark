@@ -30,11 +30,11 @@ func000000000000001d:                   # @func000000000000001d
 	shrq	$32, %rsi
 	leal	(%rsi,%rdi), %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	shrq	$32, %rsi
+func0000000000000016:                   # @func0000000000000016
+	shrq	$6, %rsi
 	leal	(%rsi,%rdi), %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
-	shrq	$7, %rsi
+func0000000000000000:                   # @func0000000000000000
+	shrq	$32, %rsi
 	leal	(%rsi,%rdi), %eax
 	retq

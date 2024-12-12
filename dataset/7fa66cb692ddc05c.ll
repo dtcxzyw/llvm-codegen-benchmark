@@ -28,7 +28,7 @@
 ; yosys/optimized/const2ast.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
@@ -42,7 +42,7 @@ entry:
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000431(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000861(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -1
@@ -84,7 +84,7 @@ entry:
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; xgboost/optimized/column_matrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -97,13 +97,13 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/net_checksum.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000474(i64 %0, i64 %1) #0 {
+define i1 @func00000000000008f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 2
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -130,7 +130,7 @@ entry:
 ; quantlib/optimized/capletcoterminalswaptioncalibration.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -1
@@ -145,7 +145,7 @@ entry:
 ; abc/optimized/cbaReadBlif.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -158,7 +158,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
@@ -174,7 +174,7 @@ entry:
 ; opencv/optimized/tree.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -1
@@ -188,20 +188,20 @@ entry:
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; wireshark/optimized/packet-ipsec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = add nuw nsw i64 %0, 2
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/sbitmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -215,7 +215,7 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007f1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000fe1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 65533
@@ -228,7 +228,7 @@ entry:
 ; 1 occurrences:
 ; luajit/optimized/buildvm_fold.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
@@ -241,13 +241,13 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -2
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 2
-  %6 = icmp ugt i64 %5, %4
+  %6 = icmp samesign ugt i64 %5, %4
   ret i1 %6
 }
 
@@ -256,13 +256,13 @@ entry:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 

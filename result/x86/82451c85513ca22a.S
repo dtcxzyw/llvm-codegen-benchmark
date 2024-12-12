@@ -13,6 +13,11 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rdi, %rax
 	subq	%rsi, %rax
 	retq
+func000000000000001e:                   # @func000000000000001e
+	movslq	%edx, %rax
+	addq	%rdi, %rax
+	subq	%rsi, %rax
+	retq
 func000000000000001a:                   # @func000000000000001a
 	movslq	%edx, %rax
 	addq	%rdi, %rax

@@ -6,8 +6,8 @@ define ptr @func0000000000000000(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %not. = xor i1 %1, true
   %3 = zext i1 %not. to i64
-  %4 = getelementptr i64, ptr %0, i64 %3
-  %5 = getelementptr i64, ptr %4, i64 %2
+  %4 = getelementptr i64, ptr %0, i64 %2
+  %5 = getelementptr i64, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -33,22 +33,46 @@ entry:
   ret ptr %5
 }
 
-; 8 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
+; 5 occurrences:
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
-; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
-; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
+; redis/optimized/memtest.ll
 ; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %not. = xor i1 %1, true
+  %3 = sext i1 %not. to i64
+  %4 = getelementptr { { { { i8, [31 x i8] }, i64 } }, { i64, i64 }, i8, i8, [6 x i8] }, ptr %0, i64 %2
+  %5 = getelementptr { { { { i8, [31 x i8] }, i64 } }, { i64, i64 }, i8, i8, [6 x i8] }, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 4 occurrences:
+; casadi/optimized/sparsity_internal.cpp.ll
+; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
+; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %not. = xor i1 %1, true
   %3 = sext i1 %not. to i64
-  %4 = getelementptr { { { { i8, [31 x i8] }, i64 } }, { i64, i64 }, i8, i8, [6 x i8] }, ptr %0, i64 %3
-  %5 = getelementptr { { { { i8, [31 x i8] }, i64 } }, { i64, i64 }, i8, i8, [6 x i8] }, ptr %4, i64 %2
+  %4 = getelementptr ptr, ptr %0, i64 %2
+  %5 = getelementptr ptr, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; quantlib/optimized/cmsmarketcalibration.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %not. = xor i1 %1, true
+  %3 = zext i1 %not. to i64
+  %4 = getelementptr double, ptr %0, i64 %2
+  %5 = getelementptr double, ptr %4, i64 %3
   ret ptr %5
 }
 

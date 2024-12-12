@@ -10,15 +10,16 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; icu/optimized/ubidiln.ll
 ; llvm/optimized/APFloat.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; oiio/optimized/bmpoutput.cpp.ll
 ; oiio/optimized/targaoutput.cpp.ll
 ; openblas/optimized/dsptrs.c.ll
@@ -29,8 +30,8 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -42,7 +43,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = xor i32 %3, 200260
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -54,7 +55,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
   %4 = xor i32 %3, 648007
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -78,7 +79,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = xor i32 %3, 400583
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -90,7 +91,7 @@ define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = xor i32 %3, 45407
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

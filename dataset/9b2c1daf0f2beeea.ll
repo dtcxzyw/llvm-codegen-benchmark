@@ -3,7 +3,7 @@
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000046(i64 %0) #0 {
+define i64 @func0000000000000086(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 3
   %2 = trunc i64 %1 to i32

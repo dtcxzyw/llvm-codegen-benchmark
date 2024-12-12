@@ -10,7 +10,6 @@
 ; hdf5/optimized/h5repack_parse.c.ll
 ; hermes/optimized/FileCheck.cpp.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
-; hermes/optimized/count.c.ll
 ; hwloc/optimized/common-ps.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; linux/optimized/cdrom.ll
@@ -36,8 +35,9 @@
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; luau/optimized/CodeGenAssembly.cpp.ll
 ; luau/optimized/CodeGenContext.cpp.ll
-; memcached/optimized/memcached-storage.ll
-; memcached/optimized/memcached_debug-storage.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_roller.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
@@ -76,70 +76,7 @@ define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 10
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
-  ret i32 %4
-}
-
-; 53 occurrences:
-; abc/optimized/abcSop.c.ll
-; abc/optimized/acbAbc.c.ll
-; abc/optimized/acbTest.c.ll
-; abc/optimized/acbUtil.c.ll
-; abc/optimized/amapLiberty.c.ll
-; abc/optimized/bmcMesh.c.ll
-; abc/optimized/cbaReadVer.c.ll
-; abc/optimized/wlcReadVer.c.ll
-; clamav/optimized/bcrun.c.ll
-; clamav/optimized/hash.c.ll
-; cmake/optimized/cmGeneratorExpression.cxx.ll
-; duckdb/optimized/ub_duckdb_common.cpp.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; eastl/optimized/EATextUtil.cpp.ll
-; faiss/optimized/index_factory.cpp.ll
-; git/optimized/convert.ll
-; git/optimized/dir.ll
-; git/optimized/fast-export.ll
-; gromacs/optimized/colvarparse.cpp.ll
-; icu/optimized/csr2022.ll
-; icu/optimized/ubidi.ll
-; libevent/optimized/event.c.ll
-; libquic/optimized/url_parse.cc.ll
-; libwebp/optimized/frame_enc.c.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/InstCombineCasts.cpp.ll
-; lua/optimized/lua.ll
-; opencv/optimized/aruco_dictionary.cpp.ll
-; opencv/optimized/persistence_xml.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
-; opencv/optimized/scansegment.cpp.ll
-; opencv/optimized/tldUtils.cpp.ll
-; openjdk/optimized/jvmciCodeInstaller_x86.ll
-; openjdk/optimized/signature.ll
-; openjdk/optimized/symbol.ll
-; openspiel/optimized/rbc.cc.ll
-; php/optimized/pack.ll
-; php/optimized/sccp.ll
-; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
-; ruby/optimized/ripper.ll
-; ruby/optimized/strftime.ll
-; slurm/optimized/cbuf.ll
-; slurm/optimized/file_functions.ll
-; slurm/optimized/parse_config.ll
-; slurm/optimized/parse_time.ll
-; slurm/optimized/reservation.ll
-; slurm/optimized/reservation_functions.ll
-; slurm/optimized/tres_function.ll
-; sqlite/optimized/sqlite3.ll
-; velox/optimized/CastExpr.cpp.ll
-; velox/optimized/Variant.cpp.ll
-; yosys/optimized/select.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i8 %1) #0 {
-entry:
-  %2 = icmp eq i8 %1, 32
-  %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -224,12 +161,12 @@ entry:
 ; re2/optimized/simplify.cc.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; ruby/optimized/strftime.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; slurm/optimized/affinity.ll
 ; slurm/optimized/cbuf.ll
 ; slurm/optimized/numa.ll
-; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
@@ -256,13 +193,75 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i8 %1) #0 {
 entry:
-  %2 = icmp eq i8 %1, 2
+  %2 = icmp eq i8 %1, 32
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 41 occurrences:
+; 52 occurrences:
+; abc/optimized/abcSop.c.ll
+; abc/optimized/acbAbc.c.ll
+; abc/optimized/acbTest.c.ll
+; abc/optimized/acbUtil.c.ll
+; abc/optimized/amapLiberty.c.ll
+; abc/optimized/bmcMesh.c.ll
+; abc/optimized/cbaReadVer.c.ll
+; abc/optimized/wlcReadVer.c.ll
+; clamav/optimized/bcrun.c.ll
+; clamav/optimized/hash.c.ll
+; cmake/optimized/cmGeneratorExpression.cxx.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; eastl/optimized/EATextUtil.cpp.ll
+; faiss/optimized/index_factory.cpp.ll
+; git/optimized/convert.ll
+; git/optimized/dir.ll
+; git/optimized/fast-export.ll
+; gromacs/optimized/colvarparse.cpp.ll
+; icu/optimized/csr2022.ll
+; icu/optimized/ubidi.ll
+; libevent/optimized/event.c.ll
+; libquic/optimized/url_parse.cc.ll
+; libwebp/optimized/frame_enc.c.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/InstCombineCasts.cpp.ll
+; lua/optimized/lua.ll
+; opencv/optimized/aruco_dictionary.cpp.ll
+; opencv/optimized/persistence_xml.cpp.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
+; opencv/optimized/scansegment.cpp.ll
+; opencv/optimized/tldUtils.cpp.ll
+; openjdk/optimized/jvmciCodeInstaller_x86.ll
+; openjdk/optimized/signature.ll
+; openjdk/optimized/symbol.ll
+; openspiel/optimized/rbc.cc.ll
+; php/optimized/pack.ll
+; php/optimized/sccp.ll
+; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
+; ruby/optimized/ripper.ll
+; slurm/optimized/cbuf.ll
+; slurm/optimized/file_functions.ll
+; slurm/optimized/parse_config.ll
+; slurm/optimized/parse_time.ll
+; slurm/optimized/reservation.ll
+; slurm/optimized/reservation_functions.ll
+; slurm/optimized/tres_function.ll
+; sqlite/optimized/sqlite3.ll
+; velox/optimized/CastExpr.cpp.ll
+; velox/optimized/Variant.cpp.ll
+; yosys/optimized/select.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp eq i8 %1, 10
+  %3 = zext i1 %2 to i32
+  %4 = add nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 40 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/satSolver.c.ll
@@ -298,7 +297,6 @@ entry:
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/write.c.ll
-; pocketpy/optimized/str.cpp.ll
 ; qemu/optimized/hw_vfio_spapr.c.ll
 ; quest/optimized/QuEST.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -309,7 +307,7 @@ define i32 @func0000000000000063(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -324,13 +322,12 @@ define i32 @func0000000000000020(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 120 occurrences:
+; 119 occurrences:
 ; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/satUtil.c.ll
 ; darktable/optimized/geotagging.c.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -454,11 +451,11 @@ define i32 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 133 occurrences:
+; 134 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/misc.c.ll
@@ -556,6 +553,7 @@ entry:
 ; lua/optimized/ltable.ll
 ; luau/optimized/CodeGenAssembly.cpp.ll
 ; luau/optimized/CodeGenContext.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/cmstypes.ll
 ; postgres/optimized/autovacuum.ll
@@ -597,7 +595,7 @@ define i32 @func0000000000000060(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -609,7 +607,7 @@ define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -620,13 +618,12 @@ define i32 @func0000000000000062(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; icu/optimized/ucnv_u8.ll
 ; icu/optimized/ucnvlat1.ll
 ; icu/optimized/ucnvmbcs.ll
@@ -638,27 +635,28 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000043(i32 %0, i8 %1) #0 {
+define i32 @func00000000000000c3(i32 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, 3
+  %2 = icmp samesign ugt i8 %1, 3
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/cbaCom.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/giaGen.c.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
+; pocketpy/optimized/str.cpp.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000053(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, -65
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -672,20 +670,21 @@ define i32 @func0000000000000051(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bacCom.c.ll
 ; abc/optimized/bacNtk.c.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000033(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp slt i8 %1, 10
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -699,7 +698,30 @@ define i32 @func0000000000000023(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, -2
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; memcached/optimized/memcached-storage.ll
+; memcached/optimized/memcached_debug-storage.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp slt i8 %1, -64
+  %3 = zext i1 %2 to i32
+  %4 = add i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000043(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ugt i8 %1, 99
+  %3 = zext i1 %2 to i32
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -710,14 +732,13 @@ define i32 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 45
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
-; icu/optimized/wrtjava.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; wireshark/optimized/camins.c.ll
@@ -728,7 +749,7 @@ define i32 @func0000000000000040(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, -65
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -741,18 +762,29 @@ define i32 @func0000000000000050(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, -1
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; icu/optimized/wrtjava.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000c0(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i8 %1, -17
+  %3 = zext i1 %2 to i32
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
 ; 1 occurrences:
 ; icu/optimized/localeprioritylist.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i8 %1) #0 {
+define i32 @func00000000000000c1(i32 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, 4
+  %2 = icmp samesign ugt i8 %1, 4
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

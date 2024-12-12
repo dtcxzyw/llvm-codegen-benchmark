@@ -1,9 +1,10 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/Q3DLoader.cpp.ll
+; boost/optimized/default_formatter_factory.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; eastl/optimized/EADateTime.cpp.ll

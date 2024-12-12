@@ -1,6 +1,7 @@
 
-; 130 occurrences:
+; 128 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -35,7 +36,6 @@
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
@@ -91,7 +91,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -128,7 +127,6 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i8 %0, i8 %1) #0 {
@@ -242,13 +240,13 @@ entry:
 ; linux/optimized/i8042.ll
 ; linux/optimized/intel_dpt.ll
 ; linux/optimized/intel_hdcp.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/policydb.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/CGCUDANV.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -495,7 +493,7 @@ entry:
   ret i32 %3
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; clamav/optimized/bcrun.c.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -505,7 +503,6 @@ entry:
 ; linux/optimized/cacheinfo.ll
 ; linux/optimized/i2c-algo-bit.ll
 ; linux/optimized/reg.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/xfrm_input.ll
 ; linux/optimized/yenta_socket.ll

@@ -13,7 +13,7 @@ entry:
   ret i32 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -22,6 +22,7 @@ entry:
 ; linux/optimized/af_unix.ll
 ; linux/optimized/drm_edid.ll
 ; lua/optimized/lvm.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; node/optimized/libnode.string_bytes.ll
 ; opencv/optimized/persistence_base64_encoding.cpp.ll
 ; openjdk/optimized/Ushort555Rgb.ll
@@ -58,8 +59,9 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; arrow/optimized/bpacking.cc.ll
+; boost/optimized/core.ll
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll

@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/gup.ll
-; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; ruby/optimized/parse.ll
 ; Function Attrs: nounwind
@@ -15,11 +14,9 @@ entry:
   ret i32 %6
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; hermes/optimized/Host.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/g4x_hdmi.ll
@@ -42,7 +39,7 @@ entry:
 define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 20703
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, 2097152
   %6 = select i1 %0, i32 %5, i32 %4
   ret i32 %6
@@ -61,7 +58,7 @@ entry:
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 64
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, 4
   %6 = select i1 %0, i32 %5, i32 %4
   ret i32 %6

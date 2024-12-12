@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/gmx_hydorder.cpp.ll
@@ -16,6 +16,7 @@
 ; openjdk/optimized/hb-ot-font.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

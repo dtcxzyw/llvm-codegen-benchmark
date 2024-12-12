@@ -1,10 +1,9 @@
 
-; 70 occurrences:
+; 69 occurrences:
 ; clamav/optimized/matcher.c.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; flac/optimized/decode.c.ll
-; flac/optimized/stream_encoder.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/run-command.ll
 ; git/optimized/setup.ll

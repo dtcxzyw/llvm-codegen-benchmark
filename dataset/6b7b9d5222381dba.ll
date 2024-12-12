@@ -46,16 +46,12 @@ entry:
   ret i32 %6
 }
 
-; 58 occurrences:
+; 53 occurrences:
 ; bullet3/optimized/MultiBodyTreeImpl.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
-; gromacs/optimized/dgetrf.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
 ; gromacs/optimized/dorgbr.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
-; gromacs/optimized/sgetrf.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
 ; gromacs/optimized/sorgbr.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; ncnn/optimized/deconvolution.cpp.ll
@@ -86,7 +82,6 @@ entry:
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
@@ -109,7 +104,7 @@ entry:
 define i32 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add nsw i32 %1, 1
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -134,7 +129,7 @@ entry:
 define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = add nsw i32 %1, 1
   %6 = add i32 %4, %5
   ret i32 %6
@@ -177,7 +172,7 @@ entry:
 define i32 @func00000000000000d5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add nsw i32 %1, -1
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -189,7 +184,7 @@ entry:
 define i32 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add i32 %0, 216
   %6 = add nsw i32 %5, %4
   ret i32 %6
@@ -213,7 +208,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add nsw i32 %0, 31
   %6 = add i32 %5, %4
   ret i32 %6
@@ -232,39 +227,6 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; openblas/optimized/dlasd3.c.ll
-; openspiel/optimized/crazy_eights.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 2
-  %4 = mul nsw i32 %3, %0
-  %5 = add i32 %1, 2
-  %6 = add nsw i32 %4, %5
-  ret i32 %6
-}
-
-; 7 occurrences:
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; openblas/optimized/dggsvp3.c.ll
-; openblas/optimized/dlasd3.c.ll
-; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dsbgst.c.ll
-; openspiel/optimized/battleship.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 2
-  %4 = mul nsw i32 %3, %1
-  %5 = add nsw i32 %0, 1
-  %6 = add nsw i32 %5, %4
-  ret i32 %6
-}
-
 ; 3 occurrences:
 ; gromacs/optimized/settle.cpp.ll
 ; opencv/optimized/boostdesc.cpp.ll
@@ -273,7 +235,7 @@ entry:
 define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add i32 %1, -1
   %6 = add i32 %4, %5
   ret i32 %6
@@ -285,7 +247,7 @@ entry:
 define i32 @func00000000000000dd(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = add nsw i32 %5, %4
   ret i32 %6
@@ -300,7 +262,7 @@ entry:
 define i32 @func000000000000005d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = add nsw i32 %5, %4
   ret i32 %6
@@ -314,7 +276,7 @@ entry:
 define i32 @func0000000000000057(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add nsw i32 %1, 1
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -326,7 +288,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add i32 %0, -1
   %6 = add nsw i32 %5, %4
   ret i32 %6
@@ -338,7 +300,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = add nuw nsw i32 %1, 4
   %6 = add i32 %4, %5
   ret i32 %6
@@ -357,6 +319,35 @@ entry:
   ret i32 %6
 }
 
+; 5 occurrences:
+; openblas/optimized/dggsvp3.c.ll
+; openblas/optimized/dlasd3.c.ll
+; openblas/optimized/dlatrs3.c.ll
+; openblas/optimized/dsbgst.c.ll
+; openspiel/optimized/battleship.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 5
+  %4 = mul nsw i32 %1, %3
+  %5 = add nsw i32 %0, 5
+  %6 = add nsw i32 %5, %4
+  ret i32 %6
+}
+
+; 2 occurrences:
+; openblas/optimized/dlasd3.c.ll
+; openspiel/optimized/crazy_eights.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = mul nsw i32 %0, %3
+  %5 = add i32 %1, 108
+  %6 = add nsw i32 %4, %5
+  ret i32 %6
+}
+
 ; 2 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
@@ -364,7 +355,7 @@ entry:
 define i32 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add nsw i32 %0, -1
   %6 = add i32 %5, %4
   ret i32 %6
@@ -376,7 +367,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add i32 %0, 1
   %6 = add i32 %5, %4
   ret i32 %6
@@ -389,7 +380,7 @@ entry:
 define i32 @func00000000000000d7(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %0, 1
   %6 = add nuw nsw i32 %5, %4
   ret i32 %6
@@ -401,7 +392,7 @@ entry:
 define i32 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add nuw i32 %0, 1
   %6 = add i32 %5, %4
   ret i32 %6
@@ -425,7 +416,7 @@ entry:
 define i32 @func00000000000000f5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add nuw nsw i32 %1, 1
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -437,7 +428,7 @@ entry:
 define i32 @func0000000000000077(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add nuw nsw i32 %1, 1
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -449,21 +440,9 @@ entry:
 define i32 @func00000000000000f7(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add nuw nsw i32 %1, 1
   %6 = add nuw nsw i32 %4, %5
-  ret i32 %6
-}
-
-; 1 occurrences:
-; openblas/optimized/dtgsna.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 1
-  %4 = mul i32 %3, %0
-  %5 = add nuw nsw i32 %1, 1
-  %6 = add nsw i32 %4, %5
   ret i32 %6
 }
 

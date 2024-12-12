@@ -6,7 +6,7 @@ func000000000000003f:                   # @func000000000000003f
 	vzext.vf2	v11, v10
 	vwaddu.wv	v14, v14, v11
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	ret
 func00000000000000ff:                   # @func00000000000000ff
 	vsetivli	zero, 8, e16, m1, ta, ma

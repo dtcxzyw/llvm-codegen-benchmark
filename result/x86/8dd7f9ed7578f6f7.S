@@ -1,5 +1,5 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vcvttsd2si	%xmm0, %rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq

@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = freeze i32 %0
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/vsite.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = freeze i32 %0
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/msd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = freeze i32 %0

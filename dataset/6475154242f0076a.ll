@@ -10,7 +10,7 @@ entry:
   ret i32 %2
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; cpython/optimized/_codecs_jp.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
@@ -28,7 +28,6 @@ entry:
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterBankInfo.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
@@ -51,14 +50,13 @@ entry:
   ret i32 %2
 }
 
-; 393 occurrences:
+; 388 occurrences:
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkCore.c.ll
 ; abc/optimized/lpkMap.c.ll
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
@@ -67,6 +65,10 @@ entry:
 ; assimp/optimized/MDCLoader.cpp.ll
 ; assimp/optimized/STLLoader.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/ipv6_address.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/encode.c.ll
 ; brotli/optimized/histogram.c.ll
@@ -131,7 +133,6 @@ entry:
 ; icu/optimized/utrie_swap.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; jq/optimized/decNumber.ll
-; libevent/optimized/event.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libpng/optimized/pngwrite.c.ll
 ; libquic/optimized/e_rc2.c.ll
@@ -156,7 +157,6 @@ entry:
 ; linux/optimized/hub.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/ich8lan.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_gt_pm_debugfs.ll
@@ -183,7 +183,6 @@ entry:
 ; linux/optimized/tables.ll
 ; linux/optimized/tkip.ll
 ; linux/optimized/util.ll
-; linux/optimized/utownerid.ll
 ; linux/optimized/vsprintf.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
@@ -226,7 +225,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -261,6 +259,8 @@ entry:
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-memcached.ll
@@ -310,7 +310,6 @@ entry:
 ; openusd/optimized/entdec.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/patchTableFactory.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
@@ -328,7 +327,6 @@ entry:
 ; pocketpy/optimized/ceval.cpp.ll
 ; postgres/optimized/euc_jp_and_sjis.ll
 ; postgres/optimized/tidbitmap.ll
-; postgres/optimized/trigger.ll
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/tsvector.ll
 ; postgres/optimized/tsvector_op.ll
@@ -385,14 +383,12 @@ entry:
 ; wireshark/optimized/packet-cp2179.c.ll
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
 ; wireshark/optimized/packet-dec-dnart.c.ll
-; wireshark/optimized/packet-dhcp-failover.c.ll
 ; wireshark/optimized/packet-diffserv-mpls-common.c.ll
 ; wireshark/optimized/packet-dis.c.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; wireshark/optimized/packet-e164.c.ll
 ; wireshark/optimized/packet-ecatmb.c.ll
-; wireshark/optimized/packet-erf.c.ll
 ; wireshark/optimized/packet-fcoe.c.ll
 ; wireshark/optimized/packet-gcsna.c.ll
 ; wireshark/optimized/packet-icmpv6.c.ll
@@ -400,9 +396,7 @@ entry:
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-knxip.c.ll
 ; wireshark/optimized/packet-knxip_decrypt.c.ll
-; wireshark/optimized/packet-link16.c.ll
 ; wireshark/optimized/packet-lwm.c.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; wireshark/optimized/packet-nfapi.c.ll
 ; wireshark/optimized/packet-nfs.c.ll
 ; wireshark/optimized/packet-nvme.c.ll
@@ -453,7 +447,7 @@ entry:
   ret i32 %2
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -462,7 +456,6 @@ entry:
 ; linux/optimized/nl80211.ll
 ; linux/optimized/rhashtable.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/jvmciCodeInstaller.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-btl2cap.c.ll

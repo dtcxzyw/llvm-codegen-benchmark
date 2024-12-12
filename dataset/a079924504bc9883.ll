@@ -52,7 +52,7 @@ define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl i32 %2, 17
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 

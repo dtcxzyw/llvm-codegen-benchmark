@@ -16,11 +16,24 @@ func0000000000000006:                   # @func0000000000000006
 	movzwl	%si, %ecx
 	subq	%rcx, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	movzwl	%si, %ecx
 	movl	$6, %eax
 	subl	%ecx, %eax
 	shll	$2, %eax
+	addq	%rdi, %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	movzwl	%si, %eax
+	movl	$5, %ecx
+	subq	%rax, %rcx
+	leaq	(%rdi,%rcx,4), %rax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	movzwl	%si, %ecx
+	movq	$-4870, %rax                    # imm = 0xECFA
+	subq	%rcx, %rax
+	shlq	$5, %rax
 	addq	%rdi, %rax
 	retq
 func000000000000001e:                   # @func000000000000001e

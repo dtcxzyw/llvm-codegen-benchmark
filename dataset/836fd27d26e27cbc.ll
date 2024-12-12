@@ -1,5 +1,5 @@
 
-%"class.draco::IndexType.130.2892543" = type { i32 }
+%"class.draco::IndexType.130.3087044" = type { i32 }
 
 ; 16 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -19,61 +19,60 @@
 ; openjdk/optimized/Any3Byte.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = mul i32 %2, 3
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 2 occurrences:
-; darktable/optimized/jpeg.c.ll
+; 1 occurrences:
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul i32 %2, 3
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul i32 %2, 122
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000063(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = mul i32 %2, 3
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"class.draco::IndexType.130.2892543", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.draco::IndexType.130.3087044", ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourCommon.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000066(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000067(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = mul i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -7,7 +7,7 @@
 ; php/optimized/hash_sha.ll
 ; php/optimized/sha1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 63
@@ -20,7 +20,7 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 31

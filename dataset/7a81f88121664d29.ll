@@ -1,5 +1,5 @@
 
-; 185 occurrences:
+; 184 occurrences:
 ; hermes/optimized/JSLexer.cpp.ll
 ; hermes/optimized/SynthTraceParser.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll
@@ -78,7 +78,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll

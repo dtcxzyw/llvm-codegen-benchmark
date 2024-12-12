@@ -1,6 +1,5 @@
 
-; 11 occurrences:
-; flatbuffers/optimized/flatc.cpp.ll
+; 10 occurrences:
 ; llvm/optimized/SymbolRecordMapping.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; nuttx/optimized/uart_16550.c.ll

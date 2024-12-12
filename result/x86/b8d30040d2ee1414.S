@@ -10,13 +10,13 @@ func0000000000000001:                   # @func0000000000000001
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorb	$1, %dil
 	cmpb	$2, %sil
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	xorb	$1, %dil
 	cmpb	$3, %sil
 	setae	%al

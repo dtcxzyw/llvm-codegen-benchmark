@@ -1,6 +1,9 @@
 
-; 12 occurrences:
+; 15 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/ci_string.ll
+; boost/optimized/params_base.ll
+; boost/optimized/params_encoded_base.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/zip.c.ll
 ; libquic/optimized/string_util.cc.ll
@@ -13,7 +16,7 @@
 ; openjdk/optimized/hb-common.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000341(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000c81(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, 32
   %4 = icmp ult i8 %2, 26
@@ -25,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000486(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nsw i8 %1, -32
   %4 = icmp ult i8 %2, 26
@@ -37,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000048a(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nsw i8 %1, -32
   %4 = icmp ult i8 %2, 26
@@ -61,7 +64,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; yosys/optimized/attrmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000481(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nsw i8 %1, -32
   %4 = icmp ult i8 %2, 26
@@ -70,11 +73,13 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/ci_string.ll
+; boost/optimized/normalize.ll
 ; libquic/optimized/string_util.cc.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000346(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000c86(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, 32
   %4 = icmp ult i8 %2, 26
@@ -87,7 +92,7 @@ entry:
 ; libquic/optimized/string_util.cc.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034a(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000c8a(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, 32
   %4 = icmp ult i8 %2, 26
@@ -99,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/StringRef.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000344(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000c84(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, 32
   %4 = icmp ult i8 %2, 26
@@ -111,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/StringRef.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034c(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000c8c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, 32
   %4 = icmp ult i8 %2, 26
@@ -123,7 +128,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %1, 32
   %4 = icmp ult i8 %2, 26

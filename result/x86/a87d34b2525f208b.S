@@ -1,11 +1,11 @@
-func00000000000000ba:                   # @func00000000000000ba
+func00000000000000bb:                   # @func00000000000000bb
 	addq	%rsi, %rdi
 	shrq	$2, %rsi
 	movl	%edx, %eax
 	subq	%rsi, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000fb:                   # @func00000000000000fb
 	leaq	(%rdi,%rsi), %rcx
 	shrq	$4, %rsi
 	movl	%edx, %eax

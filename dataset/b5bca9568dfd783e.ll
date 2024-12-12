@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 47 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -15,7 +15,6 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hwloc/optimized/lstopo-lstopo-cairo.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

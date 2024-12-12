@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/abcAuto.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -21,7 +21,6 @@
 ; abc/optimized/superGate.c.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; opencv/optimized/objectnessBING.cpp.ll
 ; redis/optimized/aof.ll

@@ -13,7 +13,8 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {

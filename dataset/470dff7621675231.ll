@@ -1,5 +1,5 @@
 
-; 118 occurrences:
+; 120 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; c3c/optimized/sema_stmts.c.ll
@@ -18,13 +18,11 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/host.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/nfs4proc.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/socket.ll
 ; linux/optimized/synaptics.ll
@@ -59,6 +57,9 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_label.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; openjdk/optimized/pngrtran.ll
@@ -118,11 +119,12 @@
 ; z3/optimized/nla_intervals.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 4
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   %5 = and i8 %1, 24
   %6 = or disjoint i8 %4, %5
   ret i8 %6
@@ -136,16 +138,17 @@ entry:
 define i8 @func0000000000000002(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   %5 = and i8 %1, -32
   %6 = or i8 %4, %5
   ret i8 %6
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; git/optimized/name-rev.ll
 ; linux/optimized/8250_port.ll
+; linux/optimized/keyboard.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/AliasAnalysis.cpp.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
@@ -162,7 +165,7 @@ entry:
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   %5 = and i8 %1, -15
   %6 = or i8 %4, %5
   ret i8 %6

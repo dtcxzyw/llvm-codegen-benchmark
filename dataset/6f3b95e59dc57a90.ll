@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; opencv/optimized/Logos.cpp.ll
 ; wireshark/optimized/packet-gsm_map.c.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,5 +1,9 @@
 
-; 7 occurrences:
+; 11 occurrences:
+; boost/optimized/area_box_sg.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; grpc/optimized/memory_quota.cc.ll
 ; opencv/optimized/bgfg_gaussmix.cpp.ll

@@ -9,7 +9,7 @@ entry:
   %2 = fneg float %1
   %3 = fcmp olt float %1, 0.000000e+00
   %4 = select i1 %3, float %2, float %1
-  %5 = fcmp olt float %4, %0
+  %5 = fcmp ogt float %0, %4
   ret i1 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = fneg float %1
   %3 = fcmp olt float %1, 0.000000e+00
   %4 = select i1 %3, float %2, float %1
-  %5 = fcmp ugt float %4, %0
+  %5 = fcmp ult float %0, %4
   ret i1 %5
 }
 
@@ -37,7 +37,20 @@ entry:
   %2 = fneg float %1
   %3 = fcmp olt float %1, 0.000000e+00
   %4 = select i1 %3, float %2, float %1
-  %5 = fcmp ogt float %4, %0
+  %5 = fcmp olt float %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(float %0, float %1) #0 {
+entry:
+  %2 = fneg float %1
+  %3 = fcmp olt float %1, 0.000000e+00
+  %4 = select i1 %3, float %2, float %1
+  %5 = fcmp ole float %0, %4
   ret i1 %5
 }
 
@@ -50,7 +63,7 @@ entry:
   %2 = fneg float %1
   %3 = fcmp ult float %1, 0.000000e+00
   %4 = select i1 %3, float %2, float %1
-  %5 = fcmp ogt float %4, %0
+  %5 = fcmp olt float %0, %4
   ret i1 %5
 }
 
@@ -66,7 +79,7 @@ entry:
   %2 = fneg float %1
   %3 = fcmp olt float %1, 0.000000e+00
   %4 = select i1 %3, float %2, float %1
-  %5 = fcmp une float %4, %0
+  %5 = fcmp une float %0, %4
   ret i1 %5
 }
 
@@ -78,7 +91,7 @@ entry:
   %2 = fneg float %1
   %3 = fcmp olt float %1, 0.000000e+00
   %4 = select i1 %3, float %2, float %1
-  %5 = fcmp ult float %4, %0
+  %5 = fcmp ugt float %0, %4
   ret i1 %5
 }
 
@@ -90,7 +103,7 @@ entry:
   %2 = fneg float %1
   %3 = fcmp olt float %1, 0.000000e+00
   %4 = select i1 %3, float %2, float %1
-  %5 = fcmp uge float %4, %0
+  %5 = fcmp ule float %0, %4
   ret i1 %5
 }
 
@@ -115,7 +128,7 @@ entry:
   %2 = fneg float %1
   %3 = fcmp olt float %1, 0.000000e+00
   %4 = select i1 %3, float %2, float %1
-  %5 = fcmp oeq float %4, %0
+  %5 = fcmp oeq float %0, %4
   ret i1 %5
 }
 

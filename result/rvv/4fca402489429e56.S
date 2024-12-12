@@ -27,15 +27,15 @@ func000000000000000f:                   # @func000000000000000f
 	vnsrl.wx	v10, v8, a0
 	vrsub.vi	v8, v10, 4
 	ret
+func0000000000000000:                   # @func0000000000000000
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 6
+	vrsub.vi	v8, v10, 0
+	ret
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 3
 	vrsub.vi	v8, v10, 8
-	ret
-func0000000000000000:                   # @func0000000000000000
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 4
-	vrsub.vi	v8, v10, 0
 	ret
 func000000000000000d:                   # @func000000000000000d
 	li	a0, 40

@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	shll	$8, %eax
 	orl	$128, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	cmpw	$6, %di
 	movl	$1, %ecx
 	movl	$65530, %eax                    # imm = 0xFFFA
@@ -35,4 +35,18 @@ func000000000000000c:                   # @func000000000000000c
 	cmpw	$1, %di
 	movw	$2, %ax
 	sbbw	$0, %ax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movzwl	%di, %ecx
+	xorl	%eax, %eax
+	cmpl	$256, %ecx                      # imm = 0x100
+	setb	%al
+	shll	$3, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpw	$61, %di
+	setae	%al
+	shll	$6, %eax
+	addl	$64, %eax
 	retq

@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	0xbff0000000000000              # double -1
 .LCPI1_1:
 	.long	8                               # 0x8
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vaddpd	.LCPI1_0(%rip){1to8}, %zmm2, %zmm2
 	vpcmpltud	.LCPI1_1(%rip){1to8}, %ymm1, %k1
 	vmovapd	%zmm0, %zmm2 {%k1}

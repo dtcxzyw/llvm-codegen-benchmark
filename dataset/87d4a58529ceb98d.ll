@@ -103,7 +103,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = trunc i128 %1 to i64
   %5 = lshr i64 %4, %3
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = add i64 %6, 1
   ret i64 %7
 }

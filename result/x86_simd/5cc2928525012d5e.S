@@ -72,26 +72,26 @@ func0000000000000008:                   # @func0000000000000008
 	vzeroupper
 	retq
 .LCPI3_0:
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
+	.short	45                              # 0x2d
+	.short	45                              # 0x2d
+	.short	45                              # 0x2d
+	.short	45                              # 0x2d
 	.zero	2
 	.zero	2
 	.zero	2
 	.zero	2
 .LCPI3_1:
-	.short	4088                            # 0xff8
-	.short	4088                            # 0xff8
-	.short	4088                            # 0xff8
-	.short	4088                            # 0xff8
+	.short	127                             # 0x7f
+	.short	127                             # 0x7f
+	.short	127                             # 0x7f
+	.short	127                             # 0x7f
 	.zero	2
 	.zero	2
 	.zero	2
 	.zero	2
 .LCPI3_2:
-	.short	4088                            # 0xff8
-	.short	4088                            # 0xff8
+	.short	127                             # 0x7f
+	.short	127                             # 0x7f
 func000000000000000f:                   # @func000000000000000f
 	vpmovqw	%ymm0, %xmm0
 	vpaddw	.LCPI3_0(%rip), %xmm0, %xmm0

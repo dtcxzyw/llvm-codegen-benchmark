@@ -1,6 +1,7 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/to_chars.ll
 ; git/optimized/gpg-interface.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
@@ -29,15 +30,16 @@
 define i1 @func000000000000000c(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/giaDup.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cvc5/optimized/dual_simplex.cpp.ll
@@ -79,7 +81,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -99,10 +101,10 @@ entry:
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -113,39 +115,37 @@ entry:
 ; linux/optimized/tcp_offload.ll
 ; z3/optimized/doc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 
-; 3 occurrences:
-; icu/optimized/extradata.ll
-; softposit-rs/optimized/8mae6k72v4zmmji.ll
-; zxing/optimized/AZDecoder.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1) #0 {
-entry:
-  %2 = zext i1 %1 to i32
-  %3 = or disjoint i32 %2, %0
-  %4 = icmp slt i32 %3, -2147483135
-  ret i1 %4
-}
-
-; 5 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/xtc2.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
-; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or disjoint i32 %2, %0
-  %4 = icmp sgt i32 %3, 2147483135
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp sgt i32 %3, -3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; icu/optimized/extradata.ll
+; zxing/optimized/AZDecoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i32 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i32
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp slt i32 %3, 7
   ret i1 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; gromacs/optimized/binaryinformation.cpp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
@@ -7,7 +7,6 @@
 ; libpng/optimized/pngrutil.c.ll
 ; linux/optimized/fan_core.ll
 ; linux/optimized/hpet.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_psr.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -16,7 +15,6 @@
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetParser.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -33,6 +31,7 @@
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/block_mean_hash.cpp.ll

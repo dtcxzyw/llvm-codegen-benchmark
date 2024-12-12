@@ -1,6 +1,5 @@
 
-; 20 occurrences:
-; harfbuzz/optimized/gsubgpos-context.cc.ll
+; 17 occurrences:
 ; hermes/optimized/Lowering.cpp.ll
 ; hermes/optimized/Mem2Reg.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
@@ -18,10 +17,8 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/VPlanAnalysis.cpp.ll
 ; llvm/optimized/VPlanVerifier.cpp.ll
-; nlohmann_json/optimized/unit-class_const_iterator.cpp.ll
-; nlohmann_json/optimized/unit-class_iterator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000041(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -16
   %4 = select i1 %1, ptr %3, ptr null
@@ -29,12 +26,14 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; linux/optimized/glue.ll
+; 3 occurrences:
+; harfbuzz/optimized/gsubgpos-context.cc.ll
+; nlohmann_json/optimized/unit-class_const_iterator.cpp.ll
+; nlohmann_json/optimized/unit-class_iterator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000001(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000061(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %2, i64 -16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = select i1 %1, ptr %3, ptr null
   %5 = icmp eq ptr %4, %0
   ret i1 %5
@@ -44,9 +43,9 @@ entry:
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; redis/optimized/setcpuaffinity.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000064(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = select i1 %1, ptr %3, ptr null
   %5 = icmp ult ptr %4, %0
   ret i1 %5

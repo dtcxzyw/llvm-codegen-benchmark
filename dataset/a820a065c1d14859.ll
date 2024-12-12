@@ -51,6 +51,19 @@ entry:
   ret i32 %7
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000033(i32 %0, i8 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = shl nuw i32 %3, 24
+  %5 = or disjoint i32 %4, %0
+  %6 = zext i8 %1 to i32
+  %7 = or disjoint i32 %5, %6
+  ret i32 %7
+}
+
 ; 2 occurrences:
 ; opencv/optimized/exif.cpp.ll
 ; wireshark/optimized/packet-flexray.c.ll
@@ -59,7 +72,7 @@ define i32 @func000000000000001b(i32 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = zext i8 %1 to i32
   %7 = or disjoint i32 %5, %6
   ret i32 %7

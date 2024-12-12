@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; abc/optimized/giaTruth.c.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
@@ -10,7 +10,6 @@
 ; gromacs/optimized/topology.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
-; linux/optimized/gso.ll
 ; linux/optimized/r8169_main.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll

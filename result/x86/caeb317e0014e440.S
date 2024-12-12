@@ -1,14 +1,14 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	movl	%edx, %ecx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rcx
+	cmpq	%rcx, %rsi
 	movl	%edi, %ecx
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	movl	%edx, %ecx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rcx
+	cmpq	%rcx, %rsi
 	movl	%edi, %ecx
 	cmovneq	%rcx, %rax
 	retq

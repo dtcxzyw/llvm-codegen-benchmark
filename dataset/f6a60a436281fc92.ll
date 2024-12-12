@@ -13,7 +13,6 @@
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
-; minetest/optimized/clientdynamicinfo.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
@@ -40,6 +39,7 @@
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

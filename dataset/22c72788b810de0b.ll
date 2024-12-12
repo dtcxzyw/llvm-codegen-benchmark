@@ -1,5 +1,5 @@
 
-; 258 occurrences:
+; 260 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -14,6 +14,7 @@
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/float16.cc.ll
 ; arrow/optimized/strtod.cc.ll
+; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; chibicc/optimized/parse.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
@@ -22,7 +23,6 @@
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/fileutils.ll
 ; darktable/optimized/amaze.cc.ll
-; darktable/optimized/introspection_flip.c.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
@@ -55,10 +55,12 @@
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/err.c.ll
-; libquic/optimized/socket_helper.c.ll
 ; libwebp/optimized/cost_enc.c.ll
 ; libwebp/optimized/palette.c.ll
 ; libwebp/optimized/token_enc.c.ll
+; libwebp/optimized/upsampling.c.ll
+; libwebp/optimized/upsampling_sse2.c.ll
+; libwebp/optimized/yuv.c.ll
 ; lief/optimized/net_sockets.c.ll
 ; linux/optimized/array.ll
 ; linux/optimized/aspm.ll
@@ -83,7 +85,6 @@
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/intel_pipe_crc.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/intel_tcc.ll
 ; linux/optimized/intel_timeline.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_output.ll
@@ -109,8 +110,11 @@
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/CoroSplit.cpp.ll
 ; llvm/optimized/CrossDSOCFI.cpp.ll
+; llvm/optimized/DIE.cpp.ll
+; llvm/optimized/DWARFFormValue.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/ElimAvailExtern.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -159,8 +163,8 @@
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -168,6 +172,7 @@
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
+; minetest/optimized/voxelalgorithms.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
@@ -202,7 +207,6 @@
 ; php/optimized/dfa_pass.ll
 ; php/optimized/encode.ll
 ; php/optimized/ir_emit.ll
-; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
@@ -211,6 +215,7 @@
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/regcomp.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
+; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/dump_dump.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
@@ -219,7 +224,6 @@
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
-; qemu/optimized/hw_sd_cadence_sdhci.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
@@ -239,11 +243,9 @@
 ; verilator/optimized/V3Task.cpp.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
-; wireshark/optimized/packet-asap.c.ll
 ; wireshark/optimized/packet-bt-utp.c.ll
 ; wireshark/optimized/packet-dis.c.ll
 ; wireshark/optimized/packet-dnp.c.ll
-; wireshark/optimized/packet-enrp.c.ll
 ; wireshark/optimized/packet-icmp.c.ll
 ; wireshark/optimized/packet-m3ua.c.ll
 ; wireshark/optimized/packet-opa-mad.c.ll

@@ -1,13 +1,20 @@
-func0000000000000080:                   # @func0000000000000080
+func0000000000000180:                   # @func0000000000000180
 	xorl	%eax, %eax
 	cmpl	$5, %edx
 	cmovael	%esi, %eax
 	leal	(%rax,%rdi,8), %eax
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000181:                   # @func0000000000000181
 	cmpl	$2, %edx
 	movl	$1, %eax
 	cmovael	%esi, %eax
+	shll	$4, %edi
+	addl	%edi, %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	testl	%edx, %edx
+	movl	$48, %eax
+	cmovel	%esi, %eax
 	shll	$4, %edi
 	addl	%edi, %eax
 	retq

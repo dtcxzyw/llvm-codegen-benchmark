@@ -235,7 +235,8 @@ entry:
   ret i128 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind

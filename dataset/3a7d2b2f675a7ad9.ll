@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/sparring_partner.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; openvdb/optimized/TempFile.cc.ll
@@ -10,7 +11,7 @@
 define { i64, i64 } @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = insertvalue { i64, i64 } poison, i64 %3, 0
   ret { i64, i64 } %4
 }

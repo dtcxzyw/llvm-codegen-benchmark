@@ -194,12 +194,24 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/MemoryMapping.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000002c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %.not = icmp eq i32 %0, -1
   %4 = select i1 %.not, i64 -1, i64 %3
   ret i64 %4
+}
+
+; 2 occurrences:
+; lua/optimized/lstrlib.ll
+; luau/optimized/lstrlib.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = icmp eq i32 %0, 0
+  %5 = select i1 %4, i64 %3, i64 8
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -210,17 +222,6 @@ entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i32 %0, 256
   %5 = select i1 %4, i64 %3, i64 0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; lua/optimized/lstrlib.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, i64 %3, i64 8
   ret i64 %5
 }
 

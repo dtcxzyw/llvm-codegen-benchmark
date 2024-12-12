@@ -1,17 +1,18 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/amd.ll
 ; linux/optimized/cacheinfo.ll
 ; linux/optimized/hid-ntrig.ll
 ; linux/optimized/intel_gt_pm_debugfs.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/slub.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; minetest/optimized/texturesource.cpp.ll

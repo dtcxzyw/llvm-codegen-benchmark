@@ -5,7 +5,7 @@
 ; taskflow/optimized/parallel_sort.cpp.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = icmp ugt i64 %2, 1
@@ -30,7 +30,7 @@ entry:
 ; hyperscan/optimized/ng_region.cpp.ll
 ; yosys/optimized/extract_counter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 72
   %3 = icmp ult i64 %2, 2

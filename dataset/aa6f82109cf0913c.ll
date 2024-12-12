@@ -46,7 +46,7 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -54,7 +54,6 @@ entry:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/ConstantRange.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openexr/optimized/ImfCRgbaFile.cpp.ll
 ; Function Attrs: nounwind

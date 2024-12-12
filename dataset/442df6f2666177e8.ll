@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/histogram.c.ll
 ; clamav/optimized/rarvm.cpp.ll
@@ -18,6 +18,8 @@
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; php/optimized/pack.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

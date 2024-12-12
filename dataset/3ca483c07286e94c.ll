@@ -24,14 +24,13 @@
 define i32 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = select i1 %3, i32 2, i32 0
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/drm_gem_framebuffer_helper.ll
-; linux/optimized/virtio_ring.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
@@ -40,7 +39,7 @@ entry:
 define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   %4 = select i1 %3, i32 8192, i32 0
   ret i32 %4
 }
@@ -51,10 +50,10 @@ entry:
 ; slurm/optimized/hostlist.ll
 ; spike/optimized/mmu.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = select i1 %3, i32 2, i32 0
   ret i32 %4
 }
@@ -62,25 +61,24 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/spank.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   %4 = select i1 %3, i32 0, i32 3005
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/dll.cpp.ll
-; freetype/optimized/ftbase.c.ll
 ; linux/optimized/dma-iommu.ll
-; linux/optimized/nf_nat_proto.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_cache_lru_rb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   %4 = select i1 %3, i32 20, i32 1
   ret i32 %4
 }
@@ -88,10 +86,10 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/meshUtil.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %.not = icmp eq i64 %2, %0
+  %.not = icmp eq i64 %0, %2
   %3 = select i1 %.not, i32 2, i32 3
   ret i32 %3
 }
@@ -102,18 +100,41 @@ entry:
 define i32 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   %4 = select i1 %3, i32 -1, i32 1
+  ret i32 %4
+}
+
+; 1 occurrences:
+; linux/optimized/virtio_ring.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = icmp samesign ult i64 %0, %2
+  %4 = select i1 %3, i32 1, i32 2
+  ret i32 %4
+}
+
+; 2 occurrences:
+; freetype/optimized/ftbase.c.ll
+; linux/optimized/nf_nat_proto.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = icmp samesign ugt i64 %0, %2
+  %4 = select i1 %3, i32 8, i32 20
   ret i32 %4
 }
 
 ; 1 occurrences:
 ; libwebp/optimized/token_enc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   %4 = select i1 %3, i32 32768, i32 0
   ret i32 %4
 }

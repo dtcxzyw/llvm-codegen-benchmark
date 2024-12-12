@@ -9,13 +9,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	$1, %dil
 	sete	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	orl	%esi, %edi
 	addb	$-33, %dil
 	cmpb	$-32, %dil
 	setb	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	orl	%esi, %edi
 	cmpb	$13, %dil
 	sete	%al

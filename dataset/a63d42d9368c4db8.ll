@@ -21,7 +21,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %1, 1
   %5 = add nuw nsw i64 %4, %3
-  %6 = mul i64 %5, %0
+  %6 = mul i64 %0, %5
   ret i64 %6
 }
 

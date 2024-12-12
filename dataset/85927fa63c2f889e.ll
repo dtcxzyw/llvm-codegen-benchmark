@@ -10,7 +10,7 @@
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i128 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = urem i64 %0, %3
@@ -46,7 +46,7 @@ entry:
 ; openspiel/optimized/is_mcts.cc.ll
 ; openspiel/optimized/mcts.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i128 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = urem i64 %0, %3

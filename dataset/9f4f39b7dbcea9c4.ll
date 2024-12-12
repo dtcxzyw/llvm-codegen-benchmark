@@ -1,11 +1,10 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/spinlock.cc.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; git/optimized/fast-import.ll
 ; hwloc/optimized/topology.ll
 ; linux/optimized/amd_bus.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
@@ -17,7 +16,7 @@ entry:
   ret i64 %3
 }
 
-; 39 occurrences:
+; 42 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/bdcSpfd.c.ll
@@ -44,6 +43,8 @@ entry:
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
@@ -57,6 +58,7 @@ entry:
 ; raylib/optimized/rcore.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0) #0 {
 entry:
@@ -66,7 +68,7 @@ entry:
   ret i64 %3
 }
 
-; 513 occurrences:
+; 517 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -333,7 +335,6 @@ entry:
 ; linux/optimized/io_apic.ll
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
@@ -387,6 +388,8 @@ entry:
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
@@ -477,6 +480,7 @@ entry:
 ; postgres/optimized/gistproc.ll
 ; postgres/optimized/multixact.ll
 ; postgres/optimized/rangetypes_gist.ll
+; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
@@ -571,7 +575,6 @@ entry:
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-socketcan.c.ll
 ; wireshark/optimized/packet-someip.c.ll
@@ -580,6 +583,9 @@ entry:
 ; yosys/optimized/opt_expr.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/smt_internalizer.cpp.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:

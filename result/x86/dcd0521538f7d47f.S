@@ -8,3 +8,8 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	orb	%sil, %al
 	retq
+func0000000000000002:                   # @func0000000000000002
+	testl	%edi, %edi
+	sete	%al
+	orb	%sil, %al
+	retq

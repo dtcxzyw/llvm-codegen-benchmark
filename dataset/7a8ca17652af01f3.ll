@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/saigRetMin.c.ll
 ; freetype/optimized/psaux.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -10,7 +10,6 @@
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/c1_LIRGenerator_x86.ll
-; openjdk/optimized/c1_LinearScan.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:

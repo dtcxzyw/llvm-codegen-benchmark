@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/solve_VPSC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, double %2) #0 {
+define i1 @func000000000000004c(ptr %0, ptr %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 0xBE7AD7F29ABCAF48
   %4 = icmp ne ptr %0, %1

@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 96 occurrences:
 ; abc/optimized/ifTime.c.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -23,7 +23,6 @@
 ; darktable/optimized/introspection_vignette.c.ll
 ; darktable/optimized/timeline.c.ll
 ; gromacs/optimized/anadih.cpp.ll
-; gromacs/optimized/angle_correction.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
@@ -77,7 +76,6 @@
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
 ; nori/optimized/window.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/Match.cpp.ll
 ; opencv/optimized/PointPair.cpp.ll

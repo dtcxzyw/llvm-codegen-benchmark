@@ -12,8 +12,9 @@ func0000000000000005:                   # @func0000000000000005
 	shlxq	%rdi, %rax, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	leal	32(,%rdi,8), %eax
-	negl	%eax
+	shll	$2, %edi
+	movb	$60, %al
+	subb	%dil, %al
 	movl	$1, %ecx
 	shlxq	%rax, %rcx, %rax
 	retq

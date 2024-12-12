@@ -3,7 +3,7 @@
 ; darktable/optimized/RawImage.cpp.ll
 ; postgres/optimized/dsa.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 15
   %3 = icmp eq i64 %2, 0

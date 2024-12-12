@@ -1,11 +1,12 @@
-func000000000000001c:                   # @func000000000000001c
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vrsub.vi	v8, v8, 0
-	vmsne.vv	v10, v12, v8
-	vmand.mm	v0, v10, v0
+func000000000000002c:                   # @func000000000000002c
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.i	v11, 0
+	vwsub.vv	v12, v11, v10
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsne.vv	v10, v8, v12
+	vmand.mm	v0, v0, v10
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwadd.wv	v8, v8, v10
 	vsetvli	zero, zero, e64, m2, ta, ma

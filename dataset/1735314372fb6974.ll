@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/x86assembler.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 1835008
-  %4 = icmp ugt i32 %3, 1048576
-  %5 = select i1 %0, i1 %1, i1 false
-  %6 = or i1 %4, %5
-  ret i1 %6
-}
-
 ; 23 occurrences:
 ; coreutils-rs/optimized/1jbxberfc5l4jlu4.ll
 ; coreutils-rs/optimized/20v11r4bpq9cscu.ll
@@ -45,8 +33,7 @@ entry:
   ret i1 %6
 }
 
-; 87 occurrences:
-; linux/optimized/feat_ctl.ll
+; 86 occurrences:
 ; linux/optimized/ping.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll

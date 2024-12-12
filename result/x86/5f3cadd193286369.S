@@ -1,25 +1,25 @@
-func00000000000001b8:                   # @func00000000000001b8
+func0000000000000368:                   # @func0000000000000368
 	addl	%esi, %edx
 	movslq	%edx, %rax
 	sarq	$4, %rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000198:                   # @func0000000000000198
+func0000000000000328:                   # @func0000000000000328
 	addl	%esi, %edx
 	movslq	%edx, %rax
 	sarq	$4, %rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	addl	%esi, %edx
 	movslq	%edx, %rax
 	sarq	$2, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	addl	%esi, %edx
 	movslq	%edx, %rax
 	sarq	$2, %rdi

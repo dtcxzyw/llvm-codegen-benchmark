@@ -12,7 +12,8 @@ entry:
   ret i16 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/rational.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll

@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 52 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -46,6 +46,7 @@
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
+; openusd/optimized/evalUtils.cpp.ll
 ; php/optimized/dtoa.ll
 ; qemu/optimized/system_physmem.c.ll
 ; redis/optimized/fpconv_dtoa.ll
@@ -76,28 +77,47 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; cpython/optimized/listobject.ll
-; linux/optimized/efi_64.ll
+; 2 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 134217727
   %4 = select i1 %0, i64 %3, i64 %1
-  %5 = icmp ult i64 %4, 942081
+  %5 = icmp samesign ult i64 %4, 942081
   ret i1 %5
+}
+
+; 1 occurrences:
+; hdf5/optimized/H5Oint.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %0, i64 %2, i64 %1
+  %4 = icmp ugt i64 %3, 4294967295
+  ret i1 %4
 }
 
 ; 2 occurrences:
 ; hdf5/optimized/H5Oint.c.ll
 ; wireshark/optimized/packet-lldp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %2, i64 %1
-  %4 = icmp ugt i64 %3, 4294967295
+  %4 = icmp samesign ugt i64 %3, 65535
+  ret i1 %4
+}
+
+; 2 occurrences:
+; cpython/optimized/listobject.ll
+; linux/optimized/efi_64.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %0, i64 %2, i64 %1
+  %4 = icmp ult i64 %3, -73014444032
   ret i1 %4
 }
 

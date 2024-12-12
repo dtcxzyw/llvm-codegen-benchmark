@@ -7,7 +7,6 @@ func0000000000000000:                   # @func0000000000000000
 	fmul.s	fa0, fa5, fa0
 	ret
 .LBB0_2:
-	lui	a0, 522240
-	fmv.w.x	fa5, a0
+	fmv.w.x	fa5, zero
 	fmul.s	fa0, fa5, fa0
 	ret

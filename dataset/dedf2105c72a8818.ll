@@ -5,7 +5,7 @@
 ; libjpeg-turbo/optimized/jcmaster.c.ll
 ; libjpeg-turbo/optimized/jdinput.c.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; ncnn/optimized/deconvolution_x86.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/copy.cpp.ll

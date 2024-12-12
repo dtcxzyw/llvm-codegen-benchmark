@@ -1,16 +1,16 @@
-func0000000000000391:                   # @func0000000000000391
+func0000000000000721:                   # @func0000000000000721
 	shll	$6, %esi
 	orl	%esi, %edi
 	cmpl	$-64, %edi
 	sete	%al
 	retq
-func00000000000007dc:                   # @func00000000000007dc
+func0000000000000fac:                   # @func0000000000000fac
 	shll	$6, %esi
 	orl	%esi, %edi
 	cmpl	$-1, %edi
 	setne	%al
 	retq
-func00000000000007d1:                   # @func00000000000007d1
+func0000000000000fa1:                   # @func0000000000000fa1
 	shll	$6, %esi
 	orl	%esi, %edi
 	cmpl	$-1, %edi

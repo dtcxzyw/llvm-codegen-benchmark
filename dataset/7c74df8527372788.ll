@@ -13,7 +13,8 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; linux/optimized/rc80211_minstrel_ht.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {

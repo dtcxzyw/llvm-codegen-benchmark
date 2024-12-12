@@ -30,14 +30,12 @@
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/processor_throttling.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_ipv4.ll
@@ -50,11 +48,11 @@
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lapi.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
@@ -110,6 +108,8 @@
 ; wireshark/optimized/packet-dhcpv6.c.ll
 ; wireshark/optimized/packet-dnp.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i8 %1) #0 {

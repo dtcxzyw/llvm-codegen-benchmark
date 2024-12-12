@@ -36,7 +36,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4611686018427387904
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = shl nuw i64 %4, 1
   %6 = and i64 %0, 1
   %7 = or disjoint i64 %5, %6
@@ -49,7 +49,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 71776119061217280
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = shl nuw i64 %4, 8
   %6 = and i64 %0, 255
   %7 = or disjoint i64 %5, %6
@@ -62,9 +62,22 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 16384
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = shl nuw nsw i64 %4, 1
   %6 = and i64 %0, 1
+  %7 = or disjoint i64 %5, %6
+  ret i64 %7
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 524286
+  %4 = or disjoint i64 %1, %3
+  %5 = shl nuw nsw i64 %4, 5
+  %6 = and i64 %0, 31
   %7 = or disjoint i64 %5, %6
   ret i64 %7
 }

@@ -286,7 +286,7 @@
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -334,15 +334,12 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ugt i64 %3, 4611686018427387903
   ret i1 %4
 }
 
-; 50 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/gradient_checker.cc.ll
-; ceres/optimized/manifold.cc.ll
+; 46 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -374,7 +371,6 @@ entry:
 ; lightgbm/optimized/c_api.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; lightgbm/optimized/metadata.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; oiio/optimized/pngoutput.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
@@ -391,16 +387,17 @@ entry:
 ; quantlib/optimized/levenbergmarquardt.ll
 ; quantlib/optimized/twofactormodel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp ugt i64 %3, 536870912
   ret i1 %4
 }
 
 ; 87 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/gradient_checker.cc.ll
 ; darktable/optimized/RawImage.cpp.ll
@@ -473,7 +470,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
-; pbrt-v4/optimized/string.cpp.ll
 ; postgres/optimized/print.ll
 ; qemu/optimized/migration_vmstate.c.ll
 ; quantlib/optimized/levenbergmarquardt.ll
@@ -488,10 +484,10 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -506,15 +502,16 @@ entry:
 define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp sgt i64 %3, 0
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
 ; arrow/optimized/csf_converter.cc.ll
 ; arrow/optimized/csx_converter.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; oiio/optimized/targaoutput.cpp.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; openblas/optimized/dgemmt.c.ll
@@ -524,10 +521,10 @@ entry:
 ; openmpi/optimized/ad_read.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
@@ -564,10 +561,10 @@ entry:
 ; openmpi/optimized/coll_base_reduce_scatter_block.ll
 ; postgres/optimized/pgbench.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp sgt i64 %3, 25549
   ret i1 %4
 }
@@ -596,10 +593,10 @@ entry:
 ; openjdk/optimized/jdmaster.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp ult i64 %3, 4294967296
   ret i1 %4
 }
@@ -621,15 +618,12 @@ entry:
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 
-; 31 occurrences:
-; ceres/optimized/block_jacobi_preconditioner.cc.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
-; ceres/optimized/implicit_schur_complement.cc.ll
+; 28 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -662,8 +656,37 @@ entry:
 define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ult i64 %3, 29
+  ret i1 %4
+}
+
+; 5 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/manifold.cc.ll
+; lightgbm/optimized/c_api.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = mul nsw i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 1152921504606846975
+  ret i1 %4
+}
+
+; 4 occurrences:
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; openusd/optimized/stbImage.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = mul i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 16
   ret i1 %4
 }
 
@@ -682,7 +705,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
@@ -690,10 +713,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }

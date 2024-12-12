@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	cmpb	$3, %dl
 	movl	%esi, %eax
 	movl	$4, %ecx
@@ -12,7 +12,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000056:                   # @func0000000000000056
+func0000000000000057:                   # @func0000000000000057
 	testb	%dl, %dl
 	movl	%esi, %eax
 	movl	$4294967295, %ecx               # imm = 0xFFFFFFFF

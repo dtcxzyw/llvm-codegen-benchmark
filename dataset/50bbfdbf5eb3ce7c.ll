@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; tls-rs/optimized/1oa4q9ydtxtlathz.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i32 %0, 0
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i32 %0, 1

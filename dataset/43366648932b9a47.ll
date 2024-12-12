@@ -1,9 +1,10 @@
 
-; 244 occurrences:
+; 246 occurrences:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cswCut.c.ll
 ; abc/optimized/darCut.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/exorBits.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaSatLE.c.ll
@@ -19,6 +20,7 @@
 ; abc/optimized/utilBridge.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/operations.ll
 ; brotli/optimized/encode.c.ll
 ; c3c/optimized/build_options.c.ll
 ; c3c/optimized/c_abi.c.ll
@@ -80,13 +82,11 @@
 ; linux/optimized/dm.ll
 ; linux/optimized/early-lookup.ll
 ; linux/optimized/hub.ll
-; linux/optimized/i8259.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_hdcp.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/md.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/nfs4xdr.ll
 ; linux/optimized/page_io.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
@@ -94,6 +94,7 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; lua/optimized/ltable.ll
 ; luau/optimized/lvmload.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -243,6 +244,7 @@
 ; yosys/optimized/fstapi.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -252,7 +254,7 @@ entry:
   ret i32 %3
 }
 
-; 51 occurrences:
+; 55 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -276,6 +278,8 @@ entry:
 ; hyperscan/optimized/ng_corpus_properties.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -304,6 +308,8 @@ entry:
 ; wireshark/optimized/packet-gtpv2.c.ll
 ; yosys/optimized/dfflegalize.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
@@ -312,7 +318,9 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
 ; linux/optimized/qspinlock.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -327,7 +335,7 @@ entry:
   ret i32 %3
 }
 
-; 160 occurrences:
+; 161 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
@@ -381,6 +389,8 @@ entry:
 ; llvm/optimized/UnicodeNameToCodepoint.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/objdef.cpp.ll
@@ -413,7 +423,6 @@ entry:
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -479,7 +488,6 @@ entry:
 ; velox/optimized/TryExpr.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
-; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/busmaster.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
@@ -487,6 +495,7 @@ entry:
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {

@@ -10,7 +10,7 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/OpenGEXImporter.cpp.ll
@@ -21,6 +21,7 @@ entry:
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; hermes/optimized/ESTreeIRGen-func.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i64 %0) #0 {
+define i64 @func00000000000000a6(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 1
   %2 = add nsw i64 %1, 2000000000
@@ -18,7 +18,7 @@ entry:
 ; libquic/optimized/adler32.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(i64 %0) #0 {
+define i64 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 16
   %2 = add nsw i64 %1, -4293984256
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; libevent/optimized/http.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000005a(i64 %0) #0 {
+define i64 @func00000000000000aa(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 1
   %2 = add nsw i64 %1, -1000000

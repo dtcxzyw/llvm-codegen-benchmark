@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/path_traits.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
 ; lz4/optimized/lz4hc.c.ll
@@ -19,7 +20,9 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/conversion.ll
+; boost/optimized/path_traits.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; opencv/optimized/persistence.cpp.ll
 ; yosys/optimized/lz4.ll
@@ -29,7 +32,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = mul nsw i64 %4, 255
+  %5 = mul nsw i64 %4, 3
   ret i64 %5
 }
 

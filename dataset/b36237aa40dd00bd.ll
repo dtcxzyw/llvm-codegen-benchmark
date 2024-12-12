@@ -1,6 +1,7 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; abseil-cpp/optimized/string_view_test.cc.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; cmake/optimized/cmCursesOptionsWidget.cxx.ll
 ; cmake/optimized/cmStringCommand.cxx.ll
 ; cmake/optimized/entropy_common.c.ll
@@ -40,7 +41,7 @@ entry:
   ret i64 %3
 }
 
-; 154 occurrences:
+; 168 occurrences:
 ; abc/optimized/giaTranStoch.c.ll
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
@@ -50,6 +51,11 @@ entry:
 ; assimp/optimized/StepExporter.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/aq.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/bytearrayobject.ll
@@ -148,6 +154,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bss_bio.ll
 ; openssl/optimized/libcrypto-shlib-bss_dgram_pair.ll
 ; openusd/optimized/propertyIndex.cpp.ll
+; openusd/optimized/tessellation.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; qemu/optimized/accel_tcg_translator.c.ll
@@ -158,6 +165,7 @@ entry:
 ; quantlib/optimized/particleswarmoptimization.ll
 ; raylib/optimized/raudio.c.ll
 ; re2/optimized/prog.cc.ll
+; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; ruby/optimized/compile.ll
@@ -195,6 +203,13 @@ entry:
 ; xgboost/optimized/learner.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/3k8x435wqn3srsqrie72arxas.ll
+; zed-rs/optimized/6qjfvhk4jerhk7xc8z4gjzbog.ll
+; zed-rs/optimized/b3ou4m5dtc370x50ytakxr6ey.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/de4xf1plz4ya209x66ee15yyx.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -203,11 +218,9 @@ entry:
   ret i64 %3
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; brotli/optimized/encode.c.ll
 ; git/optimized/apply.ll
-; hdf5/optimized/H5Ocopy.c.ll
-; libquic/optimized/ecdsa_asn1.c.ll
 ; linux/optimized/delayacct.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/memory.ll
@@ -266,9 +279,11 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; linux/optimized/pcm_lib.ll
 ; nix/optimized/util.ll
+; redis/optimized/sds.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:

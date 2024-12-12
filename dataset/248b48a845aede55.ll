@@ -1,5 +1,5 @@
 
-; 1058 occurrences:
+; 1057 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
@@ -749,7 +749,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1062,13 +1061,13 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = or i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = or i64 %0, %4
   %6 = lshr i64 %5, 4
   ret i64 %6
 }
 
-; 290 occurrences:
+; 289 occurrences:
 ; arrow/optimized/codegen_internal.cc.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -1278,7 +1277,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -1363,8 +1361,8 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = or i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = or i64 %0, %4
   %6 = lshr i64 %5, 4
   ret i64 %6
 }

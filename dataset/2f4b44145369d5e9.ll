@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -14,7 +14,6 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; qemu/optimized/tcg.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -71,7 +70,7 @@ define i8 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
   %3 = and i32 %2, 3
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }
@@ -84,7 +83,7 @@ define i8 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
   %3 = and i32 %2, 63
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
 }
@@ -101,7 +100,7 @@ define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = and i32 %2, 192
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }
@@ -113,7 +112,7 @@ define i8 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 14
   %3 = and i32 %2, 8
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
@@ -125,7 +124,7 @@ define i8 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 20
   %3 = and i32 %2, 15
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nsw i32 %4 to i8
   ret i8 %5
 }

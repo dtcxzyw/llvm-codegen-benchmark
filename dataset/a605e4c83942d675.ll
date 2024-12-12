@@ -70,7 +70,7 @@ entry:
   ret i64 %6
 }
 
-; 16 occurrences:
+; 10 occurrences:
 ; linux/optimized/page.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
@@ -79,13 +79,7 @@ entry:
 ; spike/optimized/f128_div.ll
 ; spike/optimized/f128_mul.ll
 ; spike/optimized/f128_sqrt.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
-; spike/optimized/f32_to_f16.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/s_mulAddF128.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {

@@ -1,11 +1,11 @@
 
-%struct.MapNode.2591126 = type { i16, i8, i8 }
-%struct._zval_struct.2677346 = type { %union._zend_value.2677356, %union.anon.2677357, %union.anon.2.2677358 }
-%union._zend_value.2677356 = type { i64 }
-%union.anon.2677357 = type { i32 }
-%union.anon.2.2677358 = type { i32 }
-%"class.hermes::vm::GCHermesValueBase.2881745" = type { %"class.hermes::vm::HermesValue32.2881746" }
-%"class.hermes::vm::HermesValue32.2881746" = type { i32 }
+%struct.MapNode.2704966 = type { i16, i8, i8 }
+%struct._zval_struct.2790368 = type { %union._zend_value.2790378, %union.anon.2790379, %union.anon.2.2790380 }
+%union._zend_value.2790378 = type { i64 }
+%union.anon.2790379 = type { i32 }
+%union.anon.2.2790380 = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3076269" = type { %"class.hermes::vm::HermesValue32.3076270" }
+%"class.hermes::vm::HermesValue32.3076270" = type { i32 }
 
 ; 28 occurrences:
 ; clamav/optimized/upx.c.ll
@@ -37,12 +37,12 @@
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %struct.MapNode.2591126, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.MapNode.2704966, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -63,12 +63,12 @@ entry:
 ; icu/optimized/number_decimalquantity.ll
 ; openjdk/optimized/cmstypes.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000027(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -4
   %4 = sub i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -252,12 +252,12 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -266,24 +266,24 @@ entry:
 ; freetype/optimized/smooth.c.ll
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000053(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = sub nuw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %struct._zval_struct.2677346, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct._zval_struct.2790368, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -293,24 +293,24 @@ entry:
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000006b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = sub nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; hermes/optimized/JSObject.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.2881745", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076269", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -327,8 +327,10 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; icu/optimized/ubidi_props.ll
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000028(ptr %0, i32 %1, i32 %2) #0 {
@@ -347,12 +349,12 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000063(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw [17 x i32], ptr %0, i64 %5
+  %6 = getelementptr nusw nuw [17 x i32], ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -370,26 +372,14 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/mpi-div.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 1
-  %4 = sub i32 %3, %1
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr i64, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 3
   %4 = sub i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -408,12 +398,12 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -10
   %4 = sub nuw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

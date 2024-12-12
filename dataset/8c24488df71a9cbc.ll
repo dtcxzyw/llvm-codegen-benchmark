@@ -1,5 +1,5 @@
 
-; 221 occurrences:
+; 220 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -148,7 +148,6 @@
 ; oiio/optimized/tiffoutput.cpp.ll
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; opencv/optimized/samplers.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll

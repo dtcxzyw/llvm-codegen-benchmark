@@ -14,6 +14,14 @@ func000000000000005f:                   # @func000000000000005f
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq
+func000000000000007b:                   # @func000000000000007b
+	shll	$24, %esi
+	orl	%edi, %esi
+	movl	%edi, %eax
+	shll	$8, %eax
+	orl	%edx, %eax
+	orl	%esi, %eax
+	retq
 func000000000000007f:                   # @func000000000000007f
 	shll	$16, %edx
 	orl	%edi, %edx

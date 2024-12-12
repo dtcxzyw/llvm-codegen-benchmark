@@ -46,7 +46,7 @@ entry:
   ret double %4
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -76,7 +76,6 @@ entry:
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
 ; gromacs/optimized/dlasv2.cpp.ll
 ; gromacs/optimized/dsteqr.cpp.ll
@@ -114,9 +113,10 @@ entry:
   ret double %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
-; gromacs/optimized/dlarfg.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/pull.cpp.ll
 ; msdfgen/optimized/equation-solver.cpp.ll
 ; opencv/optimized/ppf_match_3d.cpp.ll
@@ -134,9 +134,8 @@ entry:
   ret double %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; casadi/optimized/kinsol_direct.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; openblas/optimized/dlasv2.c.ll
 ; opencv/optimized/homography_decomp.cpp.ll
 ; opencv/optimized/polynom_solver.cpp.ll

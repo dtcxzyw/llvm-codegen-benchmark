@@ -3,7 +3,7 @@
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp ne i8 %1, 0
@@ -12,7 +12,8 @@ entry:
   ret i1 %6
 }
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/message.ll
 ; icu/optimized/genrb.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; linux/optimized/rcec.ll
@@ -30,7 +31,7 @@ entry:
 ; yosys/optimized/sim.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 13
   %4 = icmp eq i8 %1, 10
@@ -45,7 +46,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp ne i8 %1, 0
@@ -58,7 +59,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; linux/optimized/scsi_scan.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 7
   %4 = icmp eq i8 %1, 2

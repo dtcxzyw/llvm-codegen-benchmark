@@ -16,15 +16,6 @@ func0000000000000022:                   # @func0000000000000022
 	fli.d	fa5, 1.0
 	vmflt.vf	v0, v8, fa5
 	ret
-func000000000000002a:                   # @func000000000000002a
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
-	vfsub.vv	v16, v16, v24
-	vmflt.vv	v0, v8, v16
-	vmerge.vvm	v8, v16, v8, v0
-	fmv.d.x	fa5, zero
-	vmfle.vf	v0, v8, fa5
-	ret
 func00000000000000ac:                   # @func00000000000000ac
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)

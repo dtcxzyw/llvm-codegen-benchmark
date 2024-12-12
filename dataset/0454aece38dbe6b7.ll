@@ -5,7 +5,7 @@
 ; linux/optimized/nf_conntrack_proto_tcp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i8 %0) #0 {
+define i1 @func00000000000000e1(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 15
   %2 = zext nneg i8 %1 to i64

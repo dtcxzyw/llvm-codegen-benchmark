@@ -1,8 +1,3 @@
-func0000000000000003:                   # @func0000000000000003
-	movq	%rsi, %rax
-	notl	%eax
-	imulq	%rdi, %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rsi, %rax
 	notl	%eax
@@ -14,6 +9,11 @@ func0000000000000001:                   # @func0000000000000001
 	imulq	%rdi, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
+	movq	%rsi, %rax
+	notl	%eax
+	imulq	%rdi, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
 	movq	%rsi, %rax
 	notl	%eax
 	imulq	%rdi, %rax

@@ -13,7 +13,7 @@ define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fpext float %2 to double
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 

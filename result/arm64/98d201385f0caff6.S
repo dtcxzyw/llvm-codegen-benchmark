@@ -1,23 +1,11 @@
 func0000000000000019:                   // @func0000000000000019
 // %bb.0:                               // %entry
-	cmeq	v4.4s, v4.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	uzp1	v3.8h, v3.8h, v4.8h
-	movi	v4.4s, #32, lsl #16
-	mvn	v3.16b, v3.16b
-	xtn	v3.8b, v3.8h
-	orr	v2.8b, v3.8b, v2.8b
-	zip2	v3.8b, v2.8b, v0.8b
-	zip1	v2.8b, v2.8b, v0.8b
-	ushll	v3.4s, v3.4h, #0
-	ushll	v2.4s, v2.4h, #0
-	shl	v3.4s, v3.4s, #31
-	shl	v2.4s, v2.4s, #31
-	cmlt	v3.4s, v3.4s, #0
-	cmlt	v2.4s, v2.4s, #0
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	cmp	w2, #0
+	cset	w8, ne
+	orr	w8, w8, w1
+	tst	w8, #0x1
+	mov	w8, #2097152                    // =0x200000
+	csel	w8, w8, wzr, ne
+	orr	w0, w8, w0
 	ret
                                         // -- End function

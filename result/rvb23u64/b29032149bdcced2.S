@@ -18,14 +18,14 @@ func0000000000000007:                   # @func0000000000000007
 	or	a0, a0, a1
 	bseti	a0, a0, 30
 	ret
-func0000000000000002:                   # @func0000000000000002
-	andi	a1, a1, 255
-	or	a0, a0, a1
-	lui	a1, 524288
-	or	a0, a0, a1
-	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	bseti	a0, a0, 30
+	ret
+func0000000000000002:                   # @func0000000000000002
+	andi	a1, a1, 255
+	or	a0, a0, a1
+	lui	a1, 720896
+	or	a0, a0, a1
 	ret

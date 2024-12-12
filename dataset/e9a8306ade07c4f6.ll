@@ -1,12 +1,12 @@
 
-%struct.page.3341120 = type { i64, %union.anon.53.3341121, %union.anon.61.3341122, %struct.atomic_t.3341123, [8 x i8] }
-%union.anon.53.3341121 = type { %struct.anon.54.3341124 }
-%struct.anon.54.3341124 = type { %union.anon.55.3341125, ptr, %union.anon.57.3341126, i64 }
-%union.anon.55.3341125 = type { %struct.list_head.3341118 }
-%struct.list_head.3341118 = type { ptr, ptr }
-%union.anon.57.3341126 = type { i64 }
-%union.anon.61.3341122 = type { %struct.atomic_t.3341123 }
-%struct.atomic_t.3341123 = type { i32 }
+%struct.page.3530296 = type { i64, %union.anon.53.3530297, %union.anon.61.3530298, %struct.atomic_t.3530299, [8 x i8] }
+%union.anon.53.3530297 = type { %struct.anon.54.3530300 }
+%struct.anon.54.3530300 = type { %union.anon.55.3530301, ptr, %union.anon.57.3530302, i64 }
+%union.anon.55.3530301 = type { %struct.list_head.3530294 }
+%struct.list_head.3530294 = type { ptr, ptr }
+%union.anon.57.3530302 = type { i64 }
+%union.anon.61.3530298 = type { %struct.atomic_t.3530299 }
+%struct.atomic_t.3530299 = type { i32 }
 
 ; 171 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -20,7 +20,6 @@
 ; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/HermesInternal.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
-; hermes/optimized/JSArrayBuffer.cpp.ll
 ; hermes/optimized/JSTypedArray.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
 ; hyperscan/optimized/fdr_confirm_compile.cpp.ll
@@ -75,6 +74,7 @@
 ; luajit/optimized/lj_tab_dyn.ll
 ; mitsuba3/optimized/blender.cpp.ll
 ; opencc/optimized/Config.cpp.ll
+; opencv/optimized/lapack.cpp.ll
 ; openjdk/optimized/Any3Byte.ll
 ; openjdk/optimized/Any4Byte.ll
 ; openjdk/optimized/archiveHeapLoader.ll
@@ -181,11 +181,11 @@
 ; openusd/optimized/json.cpp.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i32 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw i32, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw i32, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -233,7 +233,7 @@ entry:
   ret ptr %4
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -263,7 +263,6 @@ entry:
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaAMDGPU.cpp.ll
@@ -311,22 +310,21 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0, i32 %1) #0 {
+define ptr @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw i64, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw i64, ptr %3, i64 %2
   ret ptr %4
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; linux/optimized/ahash.ll
 ; linux/optimized/buildid.ll
 ; linux/optimized/datagram.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/drm_atomic_uapi.ll
 ; linux/optimized/drm_cache.ll
-; linux/optimized/drm_prime.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/gro.ll
@@ -363,7 +361,7 @@ define ptr @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.page.3341120, ptr %3, i64 %2
+  %4 = getelementptr %struct.page.3530296, ptr %3, i64 %2
   ret ptr %4
 }
 

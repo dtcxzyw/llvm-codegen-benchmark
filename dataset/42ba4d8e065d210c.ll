@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; icu/optimized/punycode.ll
 ; minetest/optimized/joystick_controller.cpp.ll
-; openmpi/optimized/topo_base_cart_map.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i1 %1) #0 {
 entry:

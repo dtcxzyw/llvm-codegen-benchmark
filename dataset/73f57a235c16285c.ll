@@ -1,5 +1,5 @@
 
-; 103 occurrences:
+; 101 occurrences:
 ; arrow/optimized/UriParse.c.ll
 ; clamav/optimized/js-norm.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -15,7 +15,6 @@
 ; hdf5/optimized/H5B2int.c.ll
 ; hdf5/optimized/H5Fsuper.c.ll
 ; icu/optimized/ustrtrns.ll
-; jq/optimized/unicode_fold3_key.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; libquic/optimized/pkcs8.c.ll
@@ -43,7 +42,6 @@
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; oniguruma/optimized/unicode_fold3_key.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/brightedges.cpp.ll
@@ -232,13 +230,14 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; c3c/optimized/lexer.c.ll
 ; ceres/optimized/polynomial.cc.ll
 ; cmake/optimized/cf-h1-proxy.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
 ; curl/optimized/libcurl_la-cf-h1-proxy.ll
 ; icu/optimized/numparse_affixes.ll
+; lvgl/optimized/lv_calendar.ll
 ; openjdk/optimized/relocator.ll
 ; openspiel/optimized/crazy_eights.cc.ll
 ; wolfssl/optimized/asn.c.ll

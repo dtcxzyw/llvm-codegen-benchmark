@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; lvgl/optimized/lv_lru.ll
 ; ninja/optimized/build_log.cc.ll
 ; ninja/optimized/state.cc.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll

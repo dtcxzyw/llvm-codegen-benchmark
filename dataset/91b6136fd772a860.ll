@@ -7,9 +7,9 @@ define i32 @func0000000000000009(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = icmp eq i32 %3, 3
   %5 = and i1 %4, %1
   %6 = zext i1 %5 to i32
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -36,9 +36,9 @@ define i32 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp ne i32 %3, 4
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -49,9 +49,9 @@ define i32 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = zext i1 %5 to i32
-  %7 = add nuw i32 %6, %0
+  %7 = add nuw i32 %0, %6
   ret i32 %7
 }
 
@@ -62,9 +62,9 @@ define i32 @func0000000000000062(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = zext i1 %5 to i32
-  %7 = add nuw i32 %6, %0
+  %7 = add nuw i32 %0, %6
   ret i32 %7
 }
 
@@ -77,7 +77,7 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = and i1 %4, %1
   %6 = zext i1 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

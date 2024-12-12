@@ -1,8 +1,10 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
+; cmake/optimized/noproxy.c.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; cpython/optimized/listobject.ll
+; curl/optimized/libcurl_la-noproxy.ll
 ; git/optimized/add-interactive.ll
 ; git/optimized/urlmatch.ll
 ; gromacs/optimized/eneconv.cpp.ll
@@ -17,7 +19,7 @@
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 1
   ret i64 %4
 }
@@ -31,7 +33,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nsw i64 %3, -399
   ret i64 %4
 }
@@ -51,7 +53,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, 1
   ret i64 %4
 }

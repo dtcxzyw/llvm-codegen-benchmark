@@ -71,7 +71,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = add nsw i32 %2, -2
   ret i32 %3
 }
@@ -95,12 +95,14 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = add i32 %2, -1
   ret i32 %3
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/packet-fix.c.ll
 ; wireshark/optimized/packet-proxy.c.ll
@@ -130,7 +132,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = add i32 %2, -1
   ret i32 %3
 }
@@ -141,7 +143,7 @@ entry:
 define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = add i32 %2, -1
   ret i32 %3
 }

@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
@@ -14,6 +14,7 @@
 ; qemu/optimized/system_vl.c.ll
 ; wireshark/optimized/tshark.c.ll
 ; yosys/optimized/ast.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -53,20 +54,6 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; cvc5/optimized/sygus_extension.cpp.ll
-; gromacs/optimized/expfit.cpp.ll
-; llvm/optimized/VectorCombine.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 18
-  %4 = xor i1 %1, true
-  %5 = select i1 %4, i1 %3, i1 false
-  %6 = select i1 %5, i1 %0, i1 false
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; gromacs/optimized/pme_grid.cpp.ll
 ; wireshark/optimized/packet-eth.c.ll
@@ -80,9 +67,20 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
+; cvc5/optimized/sygus_extension.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 3
+  %4 = xor i1 %1, true
+  %5 = select i1 %4, i1 %3, i1 false
+  %6 = select i1 %5, i1 %0, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; postgres/optimized/postmaster.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i1 %1, i32 %2) #0 {
 entry:

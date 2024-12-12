@@ -27,7 +27,7 @@ define float @func0000000000000000(float %0, float %1, double %2) #0 {
 entry:
   %3 = fptrunc double %2 to float
   %4 = fsub float %1, %3
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

@@ -1,16 +1,16 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	leal	(%rsi,%rdx), %eax
 	shrl	$18, %eax
 	andl	$1023, %eax                     # imm = 0x3FF
 	addq	%rdi, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000017:                   # @func0000000000000017
 	movl	%esi, %eax
 	addl	%edx, %eax
 	movzbl	%ah, %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000037:                   # @func0000000000000037
 	movl	%esi, %eax
 	addl	%edx, %eax
 	movzbl	%ah, %eax

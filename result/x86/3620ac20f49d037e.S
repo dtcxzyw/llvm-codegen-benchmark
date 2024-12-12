@@ -1,12 +1,12 @@
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	sarq	$5, %rdx
 	leaq	2(%rdx,%rsi), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000284:                   # @func0000000000000284
 	sarq	$2, %rdx
 	leaq	-1(%rdx,%rsi), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

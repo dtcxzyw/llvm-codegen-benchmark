@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 38 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -29,11 +29,20 @@
 ; pocketpy/optimized/vm.cpp.ll
 ; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
 ; wireshark/optimized/packet-umts_mac.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -1
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   ret i16 %3
 }
 
@@ -55,7 +64,7 @@ entry:
 define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 412
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   ret i16 %3
 }
 

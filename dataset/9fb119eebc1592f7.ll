@@ -1,5 +1,5 @@
 
-; 99 occurrences:
+; 104 occurrences:
 ; abc/optimized/dsdTree.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -43,15 +43,12 @@
 ; jemalloc/optimized/sz.ll
 ; jemalloc/optimized/sz.pic.ll
 ; jemalloc/optimized/sz.sym.ll
-; libquic/optimized/async_bio.cc.ll
 ; libquic/optimized/quic_data_writer.cc.ll
-; linux/optimized/clntxdr.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/inotify_user.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/sch_mq.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
@@ -98,6 +95,14 @@
 ; tomlplusplus/optimized/toml.cpp.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
@@ -107,7 +112,7 @@ entry:
   ret i64 %3
 }
 
-; 159 occurrences:
+; 164 occurrences:
 ; abc/optimized/cswTable.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -117,7 +122,6 @@ entry:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
-; diesel-rs/optimized/3nv3xphjbq527f6u.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
@@ -132,6 +136,7 @@ entry:
 ; grpc/optimized/retry_service_config.cc.ll
 ; grpc/optimized/writing.cc.ll
 ; hdf5/optimized/h5repack_parse.c.ll
+; hermes/optimized/JSLexer.cpp.ll
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
 ; html5ever-rs/optimized/2k27uywn6e9ruua6.ll
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
@@ -162,22 +167,19 @@ entry:
 ; linux/optimized/sys.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/ClangAttrEmitter.cpp.ll
 ; llvm/optimized/CommentLexer.cpp.ll
-; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/MCStreamer.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
-; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/batch.cpp.ll
@@ -267,6 +269,14 @@ entry:
 ; xgboost/optimized/ranking_utils.cc.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:

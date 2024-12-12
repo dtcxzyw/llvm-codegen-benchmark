@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	4503599627370496                # 0x10000000000000
 .LCPI1_1:
 	.long	7                               # 0x7
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm1, %xmm0

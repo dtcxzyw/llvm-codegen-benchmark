@@ -1,4 +1,4 @@
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	xorl	%eax, %eax
 	cmpl	$32768, %edx                    # imm = 0x8000
 	setge	%al
@@ -8,7 +8,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	xorl	%eax, %eax
 	cmpl	$6, %edx
 	sete	%al
@@ -18,7 +18,7 @@ func000000000000001c:                   # @func000000000000001c
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	xorl	%eax, %eax
 	cmpl	$256, %edx                      # imm = 0x100
 	setb	%al
@@ -28,7 +28,7 @@ func0000000000000044:                   # @func0000000000000044
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	xorl	%eax, %eax
 	cmpl	$768, %edx                      # imm = 0x300
 	setne	%al
@@ -38,7 +38,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	xorl	%eax, %eax
 	cmpl	$6, %edx
 	sete	%al
@@ -48,7 +48,7 @@ func0000000000000014:                   # @func0000000000000014
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	xorl	%eax, %eax
 	cmpl	$-1, %edx
 	setne	%al
@@ -58,7 +58,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setle	%al
@@ -68,7 +68,7 @@ func0000000000000066:                   # @func0000000000000066
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	xorl	%eax, %eax
 	cmpl	$2, %edx
 	setge	%al
@@ -78,7 +78,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorl	%eax, %eax
 	cmpl	$3, %edx
 	sete	%al
@@ -88,7 +88,7 @@ func0000000000000011:                   # @func0000000000000011
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	xorl	%eax, %eax
 	cmpl	$8, %edx
 	setge	%al
@@ -98,7 +98,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setg	%al
@@ -108,7 +108,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	testl	%esi, %esi

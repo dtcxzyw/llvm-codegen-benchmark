@@ -5,7 +5,7 @@
 ; yosys/optimized/subcircuit.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000164(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %1
@@ -19,7 +19,7 @@ entry:
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000168(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %1
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %1

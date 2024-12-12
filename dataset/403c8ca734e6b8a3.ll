@@ -1,5 +1,6 @@
 
-; 40 occurrences:
+; 43 occurrences:
+; assimp/optimized/BlenderDNA.cpp.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -27,6 +28,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
+; stockfish/optimized/tbprobe.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
@@ -40,23 +42,11 @@
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
-  %3 = or disjoint i16 %2, %0
-  %4 = zext i16 %3 to i64
-  ret i64 %4
-}
-
-; 3 occurrences:
-; assimp/optimized/BlenderDNA.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; stockfish/optimized/tbprobe.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i16 %0, i16 %1) #0 {
-entry:
-  %2 = shl i16 %1, 8
   %3 = or disjoint i16 %2, %0
   %4 = zext i16 %3 to i64
   ret i64 %4
@@ -76,7 +66,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/ipv6_address.ll
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/netmon.c.ll
@@ -97,8 +88,19 @@ entry:
 define i64 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 9
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = zext nneg i16 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i16 %0, i16 %1) #0 {
+entry:
+  %2 = shl i16 %1, 8
+  %3 = or disjoint i16 %2, %0
+  %4 = zext i16 %3 to i64
   ret i64 %4
 }
 

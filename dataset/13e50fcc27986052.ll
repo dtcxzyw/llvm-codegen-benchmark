@@ -24,7 +24,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 40
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = and i64 %1, 1970324836974592
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -37,22 +37,23 @@ define i64 @func000000000000001b(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw i64 %3, 63
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = and i64 %1, 281474976710655
   %7 = or disjoint i64 %5, %6
   ret i64 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; flatbuffers/optimized/flatc.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = and i64 %1, 255
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -66,7 +67,7 @@ define i64 @func0000000000000013(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl i64 %3, 63
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = and i64 %1, 4503599627370495
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -88,13 +89,13 @@ entry:
 ; 1 occurrences:
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000e(i64 %0, i64 %1, i8 %2) #0 {
+define i64 @func000000000000000c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 16
-  %5 = or disjoint i64 %4, %0
-  %6 = and i64 %1, -2147418113
-  %7 = or i64 %5, %6
+  %5 = or i64 %4, %1
+  %6 = and i64 %0, 63
+  %7 = or i64 %6, %5
   ret i64 %7
 }
 

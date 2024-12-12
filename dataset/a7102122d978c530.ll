@@ -2,7 +2,6 @@
 ; 63 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; grpc/optimized/xds_resolver.cc.ll
-; llvm/optimized/AccelTable.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; openjdk/optimized/intrinsicnode.ll
 ; openjdk/optimized/stubRoutines_x86.ll
@@ -63,6 +62,7 @@
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/Re2Functions.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:

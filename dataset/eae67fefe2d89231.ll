@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
+; verilator/optimized/V3Task.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:

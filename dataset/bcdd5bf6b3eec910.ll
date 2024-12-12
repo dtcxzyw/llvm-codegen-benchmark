@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.2880473" = type { %"class.hermes::vm::HermesValue.2880474" }
-%"class.hermes::vm::HermesValue.2880474" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3074997" = type { %"class.hermes::vm::HermesValue.3074998" }
+%"class.hermes::vm::HermesValue.3074998" = type { i64 }
 
 ; 14 occurrences:
 ; abc/optimized/cecCorr.c.ll
@@ -18,10 +18,10 @@
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, -8
   %6 = inttoptr i64 %5 to ptr
@@ -43,10 +43,10 @@ entry:
 ; hermes/optimized/require.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.2880473", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074997", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, 1125899902648320
   %6 = inttoptr i64 %5 to ptr

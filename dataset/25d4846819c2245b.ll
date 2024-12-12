@@ -11,7 +11,7 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; bdwgc/optimized/gc.c.ll
 ; brotli/optimized/backward_references.c.ll
@@ -19,7 +19,6 @@ entry:
 ; cmake/optimized/cm_get_date.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; git/optimized/string-list.ll
-; linux/optimized/checkpoint.ll
 ; linux/optimized/transaction.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll

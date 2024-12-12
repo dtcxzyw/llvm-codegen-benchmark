@@ -1,5 +1,5 @@
 
-; 142 occurrences:
+; 139 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -49,7 +49,6 @@
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; linux/optimized/cppc.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -72,8 +71,6 @@
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_alloc.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -149,7 +146,7 @@ entry:
   %4 = lshr i64 -1, %1
   %5 = and i64 %4, %3
   %6 = xor i64 %5, -1
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 

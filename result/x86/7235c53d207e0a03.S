@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rdi, %rcx
 	sete	%al
 	retq
-func00000000000002a1:                   # @func00000000000002a1
+func0000000000000541:                   # @func0000000000000541
 	movl	%edx, %eax
 	movq	%rax, %rcx
 	shlq	$32, %rcx
@@ -15,14 +15,14 @@ func00000000000002a1:                   # @func00000000000002a1
 	orq	%rdi, %rcx
 	sete	%al
 	retq
-func00000000000003f1:                   # @func00000000000003f1
+func00000000000007e1:                   # @func00000000000007e1
 	movl	%edx, %eax
 	leaq	(%rax,%rax,4), %rax
 	leaq	(%rsi,%rax,2), %rax
 	orq	%rdi, %rax
 	sete	%al
 	retq
-func000000000000055a:                   # @func000000000000055a
+func0000000000000aaa:                   # @func0000000000000aaa
 	movl	%edx, %eax
 	imulq	$-60000000, %rax, %rax          # imm = 0xFC6C7900
 	addq	%rsi, %rdi

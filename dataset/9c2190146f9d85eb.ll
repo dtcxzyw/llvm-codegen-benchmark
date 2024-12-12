@@ -1,11 +1,12 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; flac/optimized/decode.c.ll
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/intel_lvds.ll
 ; linux/optimized/intel_timeline.ll
 ; linux/optimized/md.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
 ; luajit/optimized/lj_opt_mem.ll

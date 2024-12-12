@@ -1,16 +1,16 @@
 
-%"class.std::__cxx11::basic_string.2878611" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2878613", i64, %union.anon.2878614 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2878613" = type { ptr }
-%union.anon.2878614 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.3072192" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3072194", i64, %union.anon.3072195 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3072194" = type { ptr }
+%union.anon.3072195 = type { i64, [8 x i8] }
 
 ; 1 occurrences:
 ; velox/optimized/ComplexVector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 29
   %3 = xor i64 %2, 4
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -25,15 +25,25 @@ entry:
   ret ptr %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; taskflow/optimized/parallel_sort.cpp.ll
-; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = xor i64 %2, -1
-  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.2878611", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.3072192", ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; z3/optimized/pb_solver.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 32
+  %3 = xor i64 %2, 1
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   ret ptr %4
 }
 

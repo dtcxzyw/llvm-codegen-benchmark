@@ -9,7 +9,7 @@
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %1, 2
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/TryExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b6(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000366(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nsw i32 %1, 6
@@ -34,7 +34,7 @@ entry:
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/EvalCtx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b4(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000364(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nsw i32 %1, 6

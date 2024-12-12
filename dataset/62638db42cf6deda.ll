@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; linux/optimized/jiffies.ll
+; 2 occurrences:
 ; qemu/optimized/linux-user_syscall.c.ll
 ; wireshark/optimized/btsnoop.c.ll
 ; Function Attrs: nounwind

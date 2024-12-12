@@ -26,14 +26,12 @@ entry:
   ret ptr %5
 }
 
-; 29 occurrences:
+; 24 occurrences:
 ; arrow/optimized/UriParse.c.ll
 ; arrow/optimized/decimal.cc.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; git/optimized/apply.ll
-; hermes/optimized/Interpreter.cpp.ll
-; hermes/optimized/RegExp.cpp.ll
 ; hwloc/optimized/lstopo-lstopo-text.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-text.ll
 ; icu/optimized/ubidiwrt.ll
@@ -49,19 +47,49 @@ entry:
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
 ; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/reconinter.c.ll
 ; protobuf/optimized/parse_context.cc.ll
 ; sentencepiece/optimized/parse_context.cc.ll
-; stockfish/optimized/search.ll
 ; verilator/optimized/V3ParseLex.cpp.ll
 ; verilator/optimized/V3PreProc.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 9 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; fmt/optimized/format-impl-test.cc.ll
+; hermes/optimized/Interpreter.cpp.ll
+; hermes/optimized/RegExp.cpp.ll
+; ncnn/optimized/mat_pixel_rotate.cpp.ll
+; opencv/optimized/brisk.cpp.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/reconinter.c.ll
+; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 16
+  %4 = getelementptr nusw i8, ptr %0, i64 -1
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 2 occurrences:
+; opencv/optimized/brisk.cpp.ll
+; verilator/optimized/V3PreProc.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr i8, ptr %0, i64 -1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -71,24 +99,12 @@ entry:
 ; postgres/optimized/snprintf_shlib.ll
 ; postgres/optimized/snprintf_srv.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 64
   %5 = getelementptr i8, ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 1 occurrences:
-; opencv/optimized/brisk.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr i8, ptr %0, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
 }
 

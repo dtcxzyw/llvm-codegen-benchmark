@@ -38,7 +38,7 @@ func000000000000000d:                   # @func000000000000000d
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI9_0:
-	.quad	9223372036854775807             # 0x7fffffffffffffff
+	.quad	32                              # 0x20
 func0000000000000007:                   # @func0000000000000007
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpaddq	.LCPI9_0(%rip){1to4}, %ymm0, %ymm0

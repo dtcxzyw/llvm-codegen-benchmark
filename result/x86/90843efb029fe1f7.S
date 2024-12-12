@@ -13,6 +13,11 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	orb	%dil, %al
 	retq
+func0000000000000015:                   # @func0000000000000015
+	cmpb	%dl, %sil
+	setbe	%al
+	orb	%dil, %al
+	retq
 func0000000000000005:                   # @func0000000000000005
 	cmpb	%dl, %sil
 	setbe	%al
@@ -24,6 +29,11 @@ func000000000000000a:                   # @func000000000000000a
 	orb	%dil, %al
 	retq
 func0000000000000009:                   # @func0000000000000009
+	cmpb	%dl, %sil
+	setae	%al
+	orb	%dil, %al
+	retq
+func0000000000000019:                   # @func0000000000000019
 	cmpb	%dl, %sil
 	setae	%al
 	orb	%dil, %al

@@ -1,8 +1,6 @@
 
-; 3 occurrences:
-; openusd/optimized/prim.cpp.ll
+; 1 occurrences:
 ; wasmedge/optimized/variableInstr.cpp.ll
-; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000045(i64 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -10,6 +8,20 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = ashr exact i64 %5, 4
+  %7 = sub nsw i64 %6, %0
+  ret i64 %7
+}
+
+; 2 occurrences:
+; openusd/optimized/prim.cpp.ll
+; zxing/optimized/ConcentricFinder.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000065(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = ashr exact i64 %5, 3
   %7 = sub nsw i64 %6, %0
   ret i64 %7
 }

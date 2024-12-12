@@ -1,14 +1,16 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/tcp_output.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -29,7 +31,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -40,7 +42,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -60,11 +62,11 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; linux/optimized/sta_info.ll
 ; linux/optimized/xarray.ll
 ; opencv/optimized/simpleflow.cpp.ll
@@ -72,13 +74,15 @@ entry:
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/packet-rtcp.c.ll
 ; yosys/optimized/xprop.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 

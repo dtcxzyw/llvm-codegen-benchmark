@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_colortransfer.c.ll
@@ -14,13 +14,12 @@
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_indev.ll
 ; minetest/optimized/mapblock.cpp.ll
-; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/measured_polarized.cpp.ll
 ; oiio/optimized/bmpoutput.cpp.ll
 ; oiio/optimized/iffinput.cpp.ll
 ; oiio/optimized/iffoutput.cpp.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
@@ -32,21 +31,8 @@
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
-  %4 = add i32 %3, -1
-  ret i32 %4
-}
-
-; 3 occurrences:
-; llvm/optimized/InstCombineVectorOps.cpp.ll
-; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/measured_polarized.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw i64 %1 to i32
-  %3 = mul i32 %2, %0
-  %4 = add i32 %3, -1
+  %3 = mul i32 %0, %2
+  %4 = add i32 %3, 1
   ret i32 %4
 }
 
@@ -61,7 +47,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = add i32 %3, 1
   ret i32 %4
 }
@@ -72,27 +58,8 @@ entry:
 define i32 @func000000000000002f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = add nuw nsw i32 %3, 8
-  ret i32 %4
-}
-
-; 9 occurrences:
-; llvm/optimized/X86ISelLowering.cpp.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
-; opencv/optimized/samplers.cpp.ll
-; openspiel/optimized/battleship.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
-  %4 = add nsw i32 %3, 1
   ret i32 %4
 }
 
@@ -103,7 +70,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = add i32 %3, 8
   ret i32 %4
 }
@@ -114,8 +81,31 @@ entry:
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = add i32 %3, 1
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_bin_decoder.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003e(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = mul nuw nsw i32 %0, %2
+  %4 = add nuw i32 %3, 12
+  ret i32 %4
+}
+
+; 2 occurrences:
+; llvm/optimized/InstCombineVectorOps.cpp.ll
+; lvgl/optimized/lv_refr.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = mul i32 %0, %2
+  %4 = add i32 %3, -1
   ret i32 %4
 }
 
@@ -126,7 +116,7 @@ entry:
 define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = add nsw i32 %3, -1
   ret i32 %4
 }
@@ -137,8 +127,21 @@ entry:
 define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = add nuw nsw i32 %3, 63
+  ret i32 %4
+}
+
+; 3 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; opencv/optimized/samplers.cpp.ll
+; openspiel/optimized/battleship.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = mul i32 %0, %2
+  %4 = add nsw i32 %3, -16
   ret i32 %4
 }
 
@@ -148,7 +151,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = add nuw i32 %3, 15
   ret i32 %4
 }
@@ -159,7 +162,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = add nsw i32 %3, -1
   ret i32 %4
 }
@@ -170,7 +173,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = add nsw i32 %3, -1
   ret i32 %4
 }
@@ -184,7 +187,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = add nsw i32 %3, -3
   ret i32 %4
 }
@@ -199,7 +202,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = add nsw i32 %3, 10
   ret i32 %4
 }

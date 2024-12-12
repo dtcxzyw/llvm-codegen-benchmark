@@ -1,5 +1,5 @@
 
-; 136 occurrences:
+; 134 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/cuddAnneal.c.ll
 ; abc/optimized/cuddTable.c.ll
@@ -68,7 +68,6 @@
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; node/optimized/core.ll
 ; oniguruma/optimized/regparse.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlagsy.c.ll
@@ -82,7 +81,6 @@
 ; opencv/optimized/augmented_unscented_kalman.cpp.ll
 ; opencv/optimized/unscented_kalman.cpp.ll
 ; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
-; openjdk/optimized/OGLPaints.ll
 ; openjdk/optimized/block.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
@@ -166,7 +164,7 @@ entry:
   ret i64 %4
 }
 
-; 50 occurrences:
+; 51 occurrences:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; c3c/optimized/sema_decls.c.ll
@@ -217,6 +215,7 @@ entry:
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; z3/optimized/dl_costs.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
@@ -567,7 +566,7 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/decimal.cc.ll
@@ -584,6 +583,7 @@ entry:
 ; meshlab/optimized/Scanner.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
+; openjdk/optimized/OGLPaints.ll
 ; openusd/optimized/bignum.cc.ll
 ; php/optimized/hash_sha.ll
 ; php/optimized/zend_alloc.ll

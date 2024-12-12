@@ -33,7 +33,7 @@
 ; yosys/optimized/equiv_mark.ll
 ; yosys/optimized/eval.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000003e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = ashr exact i64 %1, 2
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000174(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = ashr i64 %1, 32

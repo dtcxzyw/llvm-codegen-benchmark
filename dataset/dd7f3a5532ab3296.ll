@@ -1,10 +1,11 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/xhci-ring.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; postgres/optimized/numeric.ll
 ; qemu/optimized/hw_acpi_erst.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -33,7 +34,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = freeze i32 %3
   ret i32 %4
 }

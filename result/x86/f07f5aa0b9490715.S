@@ -1,46 +1,74 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movzbl	%sil, %eax
 	negl	%eax
-	cmpl	%edi, %eax
-	setg	%al
-	retq
-func0000000000000057:                   # @func0000000000000057
-	movzbl	%sil, %eax
-	negl	%eax
-	cmpl	%edi, %eax
-	setge	%al
-	retq
-func0000000000000056:                   # @func0000000000000056
-	movzbl	%sil, %eax
-	negl	%eax
-	cmpl	%edi, %eax
-	setg	%al
-	retq
-func000000000000001a:                   # @func000000000000001a
-	movzbl	%sil, %eax
-	negl	%eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a7:                   # @func00000000000000a7
 	movzbl	%sil, %eax
 	negl	%eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	setle	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func00000000000000a6:                   # @func00000000000000a6
+	movzbl	%sil, %eax
+	negl	%eax
+	cmpl	%eax, %edi
+	setl	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
+	movzbl	%sil, %eax
+	negl	%eax
+	cmpl	%eax, %edi
+	setg	%al
+	retq
+func00000000000000a8:                   # @func00000000000000a8
+	movzbl	%sil, %eax
+	movl	$47, %ecx
+	subl	%eax, %ecx
+	cmpl	%ecx, %edi
+	seta	%al
+	retq
+func00000000000000ca:                   # @func00000000000000ca
+	movzbl	%sil, %eax
+	movl	$-2147483601, %ecx              # imm = 0x8000002F
+	subl	%eax, %ecx
+	cmpl	%ecx, %edi
+	setg	%al
+	retq
+func0000000000000027:                   # @func0000000000000027
+	movzbl	%sil, %eax
+	negl	%eax
+	cmpl	%eax, %edi
+	setle	%al
+	retq
+func0000000000000021:                   # @func0000000000000021
 	movzbl	%sil, %eax
 	addl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000004a:                   # @func000000000000004a
+	movzbl	%sil, %eax
+	movl	$-2147483601, %ecx              # imm = 0x8000002F
+	subl	%eax, %ecx
+	cmpl	%ecx, %edi
+	setg	%al
+	retq
+func0000000000000028:                   # @func0000000000000028
 	movzbl	%sil, %eax
 	movl	$47, %ecx
 	subl	%eax, %ecx
-	cmpl	%edi, %ecx
-	setb	%al
+	cmpl	%ecx, %edi
+	seta	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func0000000000000061:                   # @func0000000000000061
+	movzbl	%sil, %eax
+	movl	$18, %ecx
+	subl	%eax, %ecx
+	cmpl	%ecx, %edi
+	sete	%al
+	retq
+func00000000000000a1:                   # @func00000000000000a1
 	movzbl	%sil, %eax
 	addl	%edi, %eax
 	sete	%al

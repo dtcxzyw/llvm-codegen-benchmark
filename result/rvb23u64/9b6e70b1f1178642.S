@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andi	a1, a1, 1
 	sext.w	a2, a2
 	slti	a2, a2, 1096
@@ -13,14 +13,14 @@ func0000000000000016:                   # @func0000000000000016
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a2, a2
 	addi	a2, a2, -1
 	snez	a2, a2
 	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andi	a1, a1, 1
 	sext.w	a2, a2
 	slti	a2, a2, 0

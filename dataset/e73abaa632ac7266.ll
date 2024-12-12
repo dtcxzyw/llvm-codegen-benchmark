@@ -1,5 +1,7 @@
 
-; 7 occurrences:
+; 9 occurrences:
+; abc/optimized/abcSop.c.ll
+; abc/optimized/kitPla.c.ll
 ; icu/optimized/decNumber.ll
 ; linux/optimized/deflate.ll
 ; linux/optimized/gro.ll
@@ -40,9 +42,8 @@ entry:
   ret ptr %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; git/optimized/apply.ll
-; git/optimized/xutils.ll
 ; icu/optimized/normalizer2impl.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; Function Attrs: nounwind
@@ -53,6 +54,19 @@ entry:
   %5 = ashr exact i64 %4, 32
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1
+  ret ptr %7
+}
+
+; 1 occurrences:
+; git/optimized/xutils.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 4
   ret ptr %7
 }
 

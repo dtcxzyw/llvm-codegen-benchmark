@@ -6,7 +6,7 @@
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/50oljwux3amwt8rq.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000030(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000050(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = icmp ugt i64 %1, 2

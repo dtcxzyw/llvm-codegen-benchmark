@@ -36,11 +36,12 @@ define i64 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmDependsC.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
@@ -58,11 +59,11 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -8
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 66 occurrences:
+; 65 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_allocator_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -79,7 +80,6 @@ entry:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; folly/optimized/ManualExecutor.cpp.ll
-; folly/optimized/Subprocess.cpp.ll
 ; hdf5/optimized/H5LT.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
@@ -109,6 +109,7 @@ entry:
 ; llvm/optimized/WindowsResource.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; minetest/optimized/string.cpp.ll
 ; node/optimized/libnode.spawn_sync.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -117,7 +118,6 @@ entry:
 ; proxygen/optimized/RFC1867.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_intc_riscv_aclint.c.ll
-; qemu/optimized/hw_rtc_goldfish_rtc.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/libbf.ll
@@ -134,11 +134,11 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -8
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; llvm/optimized/DFAJumpThreading.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
@@ -147,7 +147,6 @@ entry:
 ; mold/optimized/rust-demangle.c.ll
 ; quickjs/optimized/libbf.ll
 ; rocksdb/optimized/unique_id.cc.ll
-; spike/optimized/f16_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -435,7 +434,8 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/default_formatter_factory.ll
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; linux/optimized/badblocks.ll
@@ -450,7 +450,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 2097151
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -482,7 +482,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 1023
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -511,8 +511,12 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 7 occurrences:
+; arrow/optimized/string-to-double.cc.ll
+; double_conversion/optimized/string-to-double.cc.ll
+; icu/optimized/double-conversion-string-to-double.ll
 ; opencv/optimized/softfloat.cpp.ll
+; openusd/optimized/string-to-double.cc.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; spike/optimized/s_subMagsF32.ll
 ; Function Attrs: nounwind
@@ -520,7 +524,7 @@ define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 17179865088
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -555,7 +559,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 67108863
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

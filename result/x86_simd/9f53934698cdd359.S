@@ -141,6 +141,20 @@ func0000000000000021:                   # @func0000000000000021
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI12_0:
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+func00000000000000c3:                   # @func00000000000000c3
+	vpcmpnleuw	.LCPI12_0(%rip), %xmm1, %k0
+	vpmovm2d	%k0, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI13_0:
 	.short	19                              # 0x13
 	.short	19                              # 0x13
 	.short	19                              # 0x13
@@ -150,35 +164,35 @@ func0000000000000021:                   # @func0000000000000021
 	.short	19                              # 0x13
 	.short	19                              # 0x13
 func0000000000000062:                   # @func0000000000000062
-	vpcmpneqw	.LCPI12_0(%rip), %xmm1, %k0
-	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	retq
-.LCPI13_0:
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-func0000000000000041:                   # @func0000000000000041
-	vpcmpnleuw	.LCPI13_0(%rip), %xmm1, %k0
+	vpcmpneqw	.LCPI13_0(%rip), %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI14_0:
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-func000000000000000a:                   # @func000000000000000a
-	vpcmpeqw	.LCPI14_0(%rip), %xmm1, %k0
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+func00000000000000c1:                   # @func00000000000000c1
+	vpcmpnleuw	.LCPI14_0(%rip), %xmm1, %k0
+	vpmovm2d	%k0, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI15_0:
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+func00000000000000a3:                   # @func00000000000000a3
+	vpcmpltuw	.LCPI15_0(%rip), %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq

@@ -42,3 +42,7 @@ func000000000000003f:                   # @func000000000000003f
 	addl	$16, %esi
 	leaq	1(%rdi,%rsi), %rax
 	retq
+func0000000000000020:                   # @func0000000000000020
+	decl	%esi
+	leaq	1(%rdi,%rsi), %rax
+	retq

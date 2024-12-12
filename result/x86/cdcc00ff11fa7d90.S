@@ -4,10 +4,10 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%esi, %esi
 	setg	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subl	%edx, %esi
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	subl	%edx, %esi

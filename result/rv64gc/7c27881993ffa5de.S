@@ -1,10 +1,3 @@
-func000000000000001f:                   # @func000000000000001f
-	slliw	a2, a2, 16
-	or	a0, a0, a2
-	andi	a1, a1, 255
-	or	a0, a0, a1
-	ori	a0, a0, 256
-	ret
 func000000000000001e:                   # @func000000000000001e
 	slli	a2, a2, 16
 	andi	a1, a1, 255
@@ -37,6 +30,13 @@ func0000000000000007:                   # @func0000000000000007
 	or	a0, a0, a1
 	slli	a2, a2, 11
 	or	a0, a0, a2
+	ret
+func000000000000001f:                   # @func000000000000001f
+	slliw	a2, a2, 2
+	or	a0, a0, a2
+	andi	a1, a1, 128
+	or	a0, a0, a1
+	ori	a0, a0, 64
 	ret
 func0000000000000002:                   # @func0000000000000002
 	slli	a2, a2, 8

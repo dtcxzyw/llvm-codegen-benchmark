@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
 	vcvtuqq2pd	%ymm1, %ymm1
-	vmulpd	%ymm0, %ymm1, %ymm0
+	vmulpd	%ymm1, %ymm0, %ymm0
 	vcvttpd2uqq	%ymm0, %ymm0
 	vptestnmq	%ymm0, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	1152921504606846975             # 0xfffffffffffffff
 func0000000000000008:                   # @func0000000000000008
 	vcvtuqq2pd	%ymm1, %ymm1
-	vmulpd	%ymm0, %ymm1, %ymm0
+	vmulpd	%ymm1, %ymm0, %ymm0
 	vcvttpd2uqq	%ymm0, %ymm0
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

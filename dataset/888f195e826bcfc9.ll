@@ -20,7 +20,9 @@ entry:
   ret i64 %5
 }
 
-; 73 occurrences:
+; 74 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/readdb.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -50,7 +52,6 @@ entry:
 ; linux/optimized/journal.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/BalancedPartitioning.cpp.ll
 ; llvm/optimized/DWARFLocationExpression.cpp.ll
@@ -114,20 +115,25 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 12 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5vh1wf9hqnwdftlb6xe6c9c43.ll
+; zed-rs/optimized/5yhp42dn62csd0zd7b3dkqa52.ll
+; zed-rs/optimized/ah806xtyxsx7hl93l9t0n6y56.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw i64 %2, 1
-  %4 = select i1 %0, i64 %3, i64 %1
-  %5 = add i64 %4, -1
-  ret i64 %5
+  %3 = add i64 %1, -1
+  %4 = select i1 %0, i64 %2, i64 %3
+  ret i64 %4
 }
 
 ; 4 occurrences:
@@ -140,7 +146,7 @@ define i64 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 14
   %4 = select i1 %0, i64 %3, i64 %1
-  %5 = add i64 %4, 4
+  %5 = add i64 %4, -15
   ret i64 %5
 }
 
@@ -150,10 +156,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 1
-  %4 = select i1 %0, i64 %3, i64 %1
-  %5 = add nsw i64 %4, -1
-  ret i64 %5
+  %3 = add nsw i64 %1, -1
+  %4 = select i1 %0, i64 %2, i64 %3
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -161,10 +166,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = select i1 %0, i64 %3, i64 %1
-  %5 = add i64 %4, -1
-  ret i64 %5
+  %3 = add i64 %1, -1
+  %4 = select i1 %0, i64 %2, i64 %3
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

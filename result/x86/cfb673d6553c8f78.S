@@ -12,12 +12,12 @@ func0000000000000006:                   # @func0000000000000006
 	cmpb	$26, %dil
 	setl	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	shrl	$24, %edi
 	cmpb	$-59, %dil
 	setge	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	shrl	$24, %edi
 	cmpb	$60, %dil
 	setl	%al
@@ -34,6 +34,6 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000008:                   # @func0000000000000008
 	shrl	$16, %edi
-	cmpb	$3, %dil
+	cmpb	$100, %dil
 	setae	%al
 	retq

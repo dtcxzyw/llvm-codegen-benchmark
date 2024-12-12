@@ -1,4 +1,4 @@
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	movabsq	$1749024623285053783, %rcx      # imm = 0x1845C8A0CE512957
 	movq	%rdi, %rax
 	imulq	%rcx
@@ -12,7 +12,7 @@ func0000000000000059:                   # @func0000000000000059
 	testq	%rdi, %rdi
 	cmovnsl	%edi, %eax
 	retq
-func000000000000005b:                   # @func000000000000005b
+func000000000000009b:                   # @func000000000000009b
 	movabsq	$1749024623285053783, %rcx      # imm = 0x1845C8A0CE512957
 	movq	%rdi, %rax
 	imulq	%rcx
@@ -26,7 +26,7 @@ func000000000000005b:                   # @func000000000000005b
 	testq	%rdi, %rdi
 	cmovnsl	%edi, %eax
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	movabsq	$1237940039285380275, %rcx      # imm = 0x112E0BE826D694B3
 	movq	%rdi, %rax
 	imulq	%rcx

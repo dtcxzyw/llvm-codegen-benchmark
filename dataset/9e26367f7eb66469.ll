@@ -11,8 +11,22 @@ define i64 @func0000000000000180(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %4, 2
+  ret i64 %5
+}
+
+; 3 occurrences:
+; abc/optimized/extraUtilBitMatrix.c.ll
+; abc/optimized/ivyCutTrav.c.ll
+; abc/optimized/mvcUtils.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000018c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ne i32 %1, 0
+  %3 = zext i1 %2 to i64
+  %4 = add nuw nsw i64 %0, %3
+  %5 = shl i64 %4, 32
   ret i64 %5
 }
 
@@ -24,8 +38,20 @@ define i64 @func0000000000000140(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %4, 32
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/cmdline.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000025(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 0
+  %3 = zext i1 %2 to i64
+  %4 = add nsw i64 %0, %3
+  %5 = shl nsw i64 %4, 3
   ret i64 %5
 }
 
@@ -80,7 +106,7 @@ define i64 @func0000000000000020(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %4, 1
   ret i64 %5
 }
@@ -93,7 +119,7 @@ define i64 @func000000000000018f(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl nuw nsw i64 %4, 2
   ret i64 %5
 }
@@ -106,7 +132,7 @@ define i64 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl i64 %4, 32
   ret i64 %5
 }
@@ -195,18 +221,20 @@ define i64 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = shl i64 %4, 32
   ret i64 %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; cvc5/optimized/base_solver.cpp.ll
 ; cvc5/optimized/bv_inverter.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
+; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/quantifiers_macros.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/real_to_int.cpp.ll
+; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/smt2_printer.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/sygus_process_conj.cpp.ll
@@ -216,7 +244,7 @@ define i64 @func000000000000002e(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl nuw i64 %4, 32
   ret i64 %5
 }
@@ -234,7 +262,7 @@ define i64 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl i64 %4, 32
   ret i64 %5
 }
@@ -246,7 +274,7 @@ define i64 @func0000000000000187(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl nuw nsw i64 %4, 3
   ret i64 %5
 }
@@ -258,7 +286,7 @@ define i64 @func0000000000000027(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 39
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl nuw nsw i64 %4, 3
   ret i64 %5
 }
@@ -270,7 +298,7 @@ define i64 @func0000000000000183(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl nuw nsw i64 %4, 2
   ret i64 %5
 }

@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; box2d/optimized/b2_circle_shape.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -18,7 +18,6 @@
 ; gromacs/optimized/slaev2.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
-; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/CCameraSceneNode.cpp.ll
@@ -47,7 +46,7 @@ define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fneg float %2
   %4 = fdiv float %3, %1
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

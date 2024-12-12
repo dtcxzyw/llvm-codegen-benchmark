@@ -1,3 +1,8 @@
+func0000000000000009:                   # @func0000000000000009
+	addl	%edx, %esi
+	movzwl	%di, %eax
+	subl	%esi, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	addl	%edx, %esi
 	movzwl	%di, %eax
@@ -9,11 +14,6 @@ func0000000000000019:                   # @func0000000000000019
 	subl	%esi, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
-	addl	%edx, %esi
-	movzwl	%di, %eax
-	subl	%esi, %eax
-	retq
-func0000000000000009:                   # @func0000000000000009
 	addl	%edx, %esi
 	movzwl	%di, %eax
 	subl	%esi, %eax

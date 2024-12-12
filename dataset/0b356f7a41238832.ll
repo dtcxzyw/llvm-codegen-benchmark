@@ -1,5 +1,5 @@
 
-; 163 occurrences:
+; 164 occurrences:
 ; cmake/optimized/vtls.c.ll
 ; curl/optimized/libcurl_la-vtls.ll
 ; git/optimized/archive.ll
@@ -17,7 +17,6 @@
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/md.ll
-; linux/optimized/mii.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pmsr.ll
@@ -50,6 +49,8 @@
 ; llvm/optimized/Targets.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_refr.ll
 ; meshlab/optimized/balltree.cpp.ll
 ; openjdk/optimized/hb-ot-map.ll
 ; openjdk/optimized/hb-ot-shape.ll
@@ -168,7 +169,7 @@ define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %.masked = and i8 %0, -3
-  %3 = or i8 %2, %.masked
+  %3 = or i8 %.masked, %2
   ret i8 %3
 }
 
@@ -186,7 +187,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -16
   %.masked = and i8 %0, -2
-  %3 = or i8 %2, %.masked
+  %3 = or i8 %.masked, %2
   ret i8 %3
 }
 

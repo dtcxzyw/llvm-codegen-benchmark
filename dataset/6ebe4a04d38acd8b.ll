@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; linux/optimized/eeepc-laptop.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -29,8 +30,18 @@ entry:
   ret i8 %3
 }
 
-; 2 occurrences:
-; linux/optimized/eeepc-laptop.ll
+; 1 occurrences:
+; lvgl/optimized/lv_color.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000010(i16 %0) #0 {
+entry:
+  %1 = mul nuw i16 %0, 255
+  %2 = udiv i16 %1, 100
+  %3 = trunc i16 %2 to i8
+  ret i8 %3
+}
+
+; 1 occurrences:
 ; wireshark/optimized/netxray.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i16 %0) #0 {

@@ -6,7 +6,6 @@
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/cdrom.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/vt.ll
@@ -39,19 +38,21 @@
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 5
   %4 = and i8 %3, 4
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   %6 = and i8 %1, 24
   %7 = or disjoint i8 %5, %6
   ret i8 %7
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/8250_port.ll
+; linux/optimized/keyboard.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; php/optimized/apprentice.ll

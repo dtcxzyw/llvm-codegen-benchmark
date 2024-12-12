@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 2

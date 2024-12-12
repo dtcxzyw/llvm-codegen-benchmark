@@ -1,5 +1,6 @@
 
-; 22 occurrences:
+; 23 occurrences:
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; git/optimized/pack-bitmap.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
@@ -143,25 +144,6 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; hyperscan/optimized/block.c.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/match.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/repeat.c.ll
-; hyperscan/optimized/stream.c.ll
-; hyperscan/optimized/stream_compress.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000017(i32 %0) #0 {
-entry:
-  %1 = add nsw i32 %0, -1
-  %2 = lshr i32 %1, 2
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 5
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; Function Attrs: nounwind
@@ -172,6 +154,23 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 4
   ret i64 %4
+}
+
+; 7 occurrences:
+; hyperscan/optimized/block.c.ll
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/match.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/repeat.c.ll
+; hyperscan/optimized/stream.c.ll
+; hyperscan/optimized/stream_compress.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, 7
+  %2 = and i32 %1, -8
+  %3 = zext i32 %2 to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:

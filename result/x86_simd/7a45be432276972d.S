@@ -15,7 +15,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI2_0:
 	.long	30                              # 0x1e
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vptestnmd	.LCPI2_0(%rip){1to4}, %xmm2, %k1
 	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
@@ -23,7 +23,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	7                               # 0x7
 .LCPI3_1:
 	.long	2                               # 0x2
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpandd	.LCPI3_0(%rip){1to4}, %xmm2, %xmm2
 	vpcmpgtd	.LCPI3_1(%rip){1to4}, %xmm2, %k1
 	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}

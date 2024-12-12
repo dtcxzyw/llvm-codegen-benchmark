@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; cpython/optimized/dtoa.ll
 ; linux/optimized/icmp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; ruby/optimized/util.ll
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
@@ -13,7 +14,8 @@ entry:
   ret i32 %2
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/approximately_equals.ll
 ; icu/optimized/normalizer2impl.ll
 ; linux/optimized/hid-lg4ff.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll

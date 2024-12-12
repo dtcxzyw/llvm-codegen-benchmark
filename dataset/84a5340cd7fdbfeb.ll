@@ -12,16 +12,18 @@
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl nuw i64 %3, 3
   ret i64 %4
 }
 
-; 272 occurrences:
+; 304 occurrences:
 ; abc/optimized/ioReadBlif.c.ll
 ; abc/optimized/wlcStdin.c.ll
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; assimp/optimized/FBXUtil.cpp.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; brotli/optimized/cluster.c.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -248,6 +250,8 @@ entry:
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/d72w0e3d392jdxg8lc3zx40z4.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
@@ -290,11 +294,39 @@ entry:
 ; yosys/optimized/proc_mux.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; yosys/optimized/verilog_lexer.ll
+; zed-rs/optimized/055l6m6wb4e4jq2j59cjsdkaz.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/3x9hk0kmwft7qehj3poulcr6l.ll
+; zed-rs/optimized/3y76hj0efsluhdj732s0l4pjz.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/ak4ykc5o2q07hp1jptfv0x87c.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
+; zed-rs/optimized/dhtd8mxtyja4srmt3ddrqkjib.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 5
   ret i64 %4
 }
@@ -335,12 +367,12 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nuw nsw i64 %3, 6
   ret i64 %4
 }
 
-; 66 occurrences:
+; 67 occurrences:
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr_solver.cc.ll
@@ -407,16 +439,17 @@ entry:
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nsw i64 %3, 3
   ret i64 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
@@ -436,11 +469,12 @@ entry:
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl nuw nsw i64 %3, 5
   ret i64 %4
 }
@@ -497,7 +531,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl i64 %3, 4
   ret i64 %4
 }

@@ -9,7 +9,7 @@
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; verilator/optimized/V3EmitCBase.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = icmp ne i8 %2, 0
@@ -19,27 +19,14 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; qemu/optimized/source_s_addMagsF16.c.ll
-; spike/optimized/s_addMagsF16.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 1
-  %3 = icmp eq i64 %2, 0
-  %4 = and i8 %0, 30
-  %5 = icmp ne i8 %4, 30
-  %6 = and i1 %5, %3
-  ret i1 %6
-}
-
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/i915_gem_execbuffer.ll
+; lvgl/optimized/lv_flex.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; php/optimized/document.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
@@ -49,14 +36,16 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; linux/optimized/string_helpers.ll
+; lvgl/optimized/lv_flex.ll
 ; openjdk/optimized/modRefBarrierSetC1.ll
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; spike/optimized/s_mulAddF16.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
   %3 = icmp eq i8 %2, 31
@@ -69,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-juniper.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0

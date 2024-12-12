@@ -14,8 +14,7 @@ entry:
   ret i64 %2
 }
 
-; 2 occurrences:
-; brotli/optimized/backward_references_hq.c.ll
+; 1 occurrences:
 ; php/optimized/php_date.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {

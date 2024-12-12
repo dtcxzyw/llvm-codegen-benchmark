@@ -4,7 +4,7 @@
 ; oniguruma/optimized/regexec.ll
 ; ruby/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000020a(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %0
   %4 = icmp ule ptr %0, %1
@@ -19,7 +19,7 @@ entry:
 ; openjdk/optimized/cfgnode.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000302(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, %0
   %4 = icmp eq ptr %0, %1
@@ -59,7 +59,7 @@ entry:
 ; z3/optimized/qe_datatype_plugin.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, %0
   %4 = icmp eq ptr %0, %1
@@ -72,7 +72,7 @@ entry:
 ; velox/optimized/DecodedVector.cpp.ll
 ; z3/optimized/func_interp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000058(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ne ptr %0, %1
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/http-walker.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000132(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000252(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %2, %0
   %4 = icmp uge ptr %0, %1
@@ -95,7 +95,7 @@ entry:
 ; cpython/optimized/dtoa.ll
 ; imgui/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000318(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne ptr %0, %1

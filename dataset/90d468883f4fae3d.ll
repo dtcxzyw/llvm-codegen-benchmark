@@ -1,5 +1,5 @@
 
-; 78 occurrences:
+; 82 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/giaNf.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -24,6 +24,10 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_camera.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -82,11 +86,11 @@
 define i1 @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   ret i1 %3
 }
 
-; 101 occurrences:
+; 104 occurrences:
 ; abc/optimized/sclBuffer.c.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -120,6 +124,9 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; llvm/optimized/MLInlineAdvisor.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
@@ -192,7 +199,7 @@ entry:
 define i1 @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   ret i1 %3
 }
 
@@ -216,7 +223,7 @@ entry:
 define i1 @func0000000000000007(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp une float %2, %0
+  %3 = fcmp une float %0, %2
   ret i1 %3
 }
 
@@ -268,7 +275,7 @@ entry:
 define i1 @func0000000000000003(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ugt float %2, %0
+  %3 = fcmp ult float %0, %2
   ret i1 %3
 }
 
@@ -297,7 +304,7 @@ entry:
 define i1 @func0000000000000005(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ult float %2, %0
+  %3 = fcmp ugt float %0, %2
   ret i1 %3
 }
 
@@ -335,7 +342,7 @@ entry:
 define i1 @func0000000000000008(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp oeq float %2, %0
+  %3 = fcmp oeq float %0, %2
   ret i1 %3
 }
 
@@ -349,7 +356,7 @@ entry:
 define i1 @func000000000000000a(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp oge float %2, %0
+  %3 = fcmp ole float %0, %2
   ret i1 %3
 }
 
@@ -360,7 +367,7 @@ entry:
 define i1 @func000000000000000d(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ule float %2, %0
+  %3 = fcmp uge float %0, %2
   ret i1 %3
 }
 
@@ -377,7 +384,7 @@ entry:
 define i1 @func000000000000000c(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ole float %2, %0
+  %3 = fcmp oge float %0, %2
   ret i1 %3
 }
 
@@ -387,7 +394,7 @@ entry:
 define i1 @func000000000000000b(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp uge float %2, %0
+  %3 = fcmp ule float %0, %2
   ret i1 %3
 }
 

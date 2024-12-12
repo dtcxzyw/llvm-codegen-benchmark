@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
-; spike/optimized/f128_classify.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

@@ -1,27 +1,19 @@
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	add	a1, a1, a2
-	slti	a1, a1, 0
-	sgtz	a0, a0
-	and	a0, a0, a1
-	ret
-func0000000000000114:                   # @func0000000000000114
-	sext.w	a0, a0
-	add	a1, a1, a2
-	srli	a1, a1, 7
-	addi	a0, a0, -1
-	sltiu	a1, a1, 675
+	xori	a1, a1, 1
+	xori	a0, a0, 1
+	or	a0, a0, a1
 	seqz	a0, a0
-	and	a0, a0, a1
 	ret
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	sext.w	a0, a0
 	add	a1, a1, a2
 	slti	a1, a1, 0
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sext.w	a0, a0
 	add	a1, a1, a2
 	sltiu	a1, a1, 1001

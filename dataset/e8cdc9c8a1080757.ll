@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 81 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cordz_sample_token_test.cc.ll
@@ -20,6 +20,7 @@
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; crow/optimized/example_session.cpp.ll
@@ -86,6 +87,23 @@ entry:
   %3 = xor i32 %2, -1
   %4 = urem i32 %3, %1
   %5 = icmp ugt i32 %4, %0
+  ret i1 %5
+}
+
+; 7 occurrences:
+; openspiel/optimized/colored_trails.cc.ll
+; openspiel/optimized/fsicfr.cc.ll
+; openspiel/optimized/random_uci_bot.cc.ll
+; openspiel/optimized/tabular_q_learning.cc.ll
+; openspiel/optimized/tabular_q_learning_test.cc.ll
+; openspiel/optimized/tabular_sarsa.cc.ll
+; openspiel/optimized/tabular_sarsa_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %2, -1
+  %4 = urem i32 %3, %1
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 

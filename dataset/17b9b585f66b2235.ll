@@ -1,20 +1,21 @@
 
-; 10 occurrences:
-; assimp/optimized/BlenderScene.cpp.ll
-; assimp/optimized/PlyParser.cpp.ll
+; 11 occurrences:
 ; libquic/optimized/url_canon_host.cc.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CImage.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
 ; qemu/optimized/hw_net_eepro100.c.ll
-; stockfish/optimized/tbprobe.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 7
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }
@@ -31,17 +32,16 @@ entry:
 define i32 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -32
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; git/optimized/send-pack.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; libpng/optimized/png.c.ll
 ; libwebp/optimized/vp8_dec.c.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/osl.ll
 ; linux/optimized/route.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll

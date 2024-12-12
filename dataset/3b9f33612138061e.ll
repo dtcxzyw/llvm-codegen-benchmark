@@ -5,8 +5,8 @@
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = add i64 %2, %1
-  %4 = icmp ugt i64 %3, %0
+  %3 = add i64 %1, %2
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -32,11 +32,11 @@ entry:
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = add i64 %2, %1
-  %4 = icmp ugt i64 %3, %0
+  %3 = add i64 %1, %2
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 

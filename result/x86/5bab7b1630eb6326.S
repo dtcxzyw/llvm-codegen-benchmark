@@ -6,7 +6,7 @@ func0000000000000010:                   # @func0000000000000010
 func0000000000000015:                   # @func0000000000000015
 	subq	%rdx, %rsi
 	sarq	$4, %rsi
-	leaq	-2(%rsi,%rdi), %rax
+	leaq	-2(%rdi,%rsi), %rax
 	retq
 func0000000000000021:                   # @func0000000000000021
 	xorl	%eax, %eax
@@ -23,5 +23,5 @@ func0000000000000025:                   # @func0000000000000025
 func0000000000000011:                   # @func0000000000000011
 	subq	%rdx, %rsi
 	sarq	$3, %rsi
-	leaq	-2(%rsi,%rdi), %rax
+	leaq	-2(%rdi,%rsi), %rax
 	retq

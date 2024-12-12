@@ -11,8 +11,8 @@ func0000000000000002:                   # @func0000000000000002
 	zext.w	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	slli	a1, a1, 35
-	srli	a1, a1, 62
+	slli	a1, a1, 57
+	srli	a1, a1, 60
 	or	a0, a0, a1
 	sext.w	a0, a0
 	ret

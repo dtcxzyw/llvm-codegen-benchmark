@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; llvm/optimized/DWARFDebugMacro.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000241(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add nuw i32 %0, 1
   %7 = icmp eq i32 %6, %5
   ret i1 %7
@@ -16,11 +16,11 @@ entry:
 ; gromacs/optimized/muParserBase.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000261(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add nuw nsw i32 %0, 1
   %7 = icmp eq i32 %6, %5
   ret i1 %7
@@ -29,11 +29,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/extents_status.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c01(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001801(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %0, 1
   %7 = icmp eq i32 %6, %5
   ret i1 %7
@@ -44,11 +44,11 @@ entry:
 ; cvc5/optimized/extended_rewrite.cpp.ll
 ; cvc5/optimized/sygus_unif_strat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000284(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add i32 %0, 1
   %7 = icmp ult i32 %6, %5
   ret i1 %7
@@ -99,11 +99,11 @@ entry:
 ; cvc5/optimized/transition_inference.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nuw i32 %0, 1
   %7 = icmp eq i32 %6, %5
   ret i1 %7
@@ -114,11 +114,11 @@ entry:
 ; cvc5/optimized/subs_minimize.cpp.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nuw i32 %0, 1
   %7 = icmp ult i32 %6, %5
   ret i1 %7
@@ -132,11 +132,11 @@ entry:
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/theory_quantifiers_type_rules.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000176(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nuw nsw i32 %0, 1
   %7 = icmp slt i32 %6, %5
   ret i1 %7
@@ -145,11 +145,11 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/term_database_sygus.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nuw i32 %0, 1
   %7 = icmp ne i32 %6, %5
   ret i1 %7
@@ -158,11 +158,11 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/node_algorithm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000288(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add i32 %0, 1
   %7 = icmp ugt i32 %6, %5
   ret i1 %7
@@ -171,11 +171,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/mathfuncs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c71(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000018e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nuw nsw i32 %0, 1
   %7 = icmp eq i32 %6, %5
   ret i1 %7

@@ -1,4 +1,4 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vsub.vv	v10, v10, v12
 	li	a0, 56
@@ -7,7 +7,7 @@ func0000000000000051:                   # @func0000000000000051
 	vmv.v.i	v8, 0
 	vsrl.vi	v8, v10, 2, v0.t
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vsub.vv	v10, v10, v12
 	vmseq.vi	v0, v8, 0

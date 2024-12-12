@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/camera.cpp.ll
-; minetest/optimized/clientdynamicinfo.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(i64 %0) #0 {
 entry:
@@ -12,7 +11,8 @@ entry:
   ret float %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; lvgl/optimized/lv_svg_render.ll
 ; minetest/optimized/guiKeyChangeMenu.cpp.ll
 ; minetest/optimized/guiOpenURL.cpp.ll
 ; minetest/optimized/guiPasswordChange.cpp.ll

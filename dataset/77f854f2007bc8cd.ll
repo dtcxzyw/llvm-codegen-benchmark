@@ -22,7 +22,8 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
@@ -120,12 +121,13 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/intel_psr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nuw nsw i32 %2, 2
+  %3 = shl nuw nsw i32 %2, 6
   %4 = sub i32 %0, %1
   %5 = add i32 %4, %3
   ret i32 %5

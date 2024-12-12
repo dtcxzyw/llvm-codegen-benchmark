@@ -40,6 +40,6 @@ func0000000000000019:                   # @func0000000000000019
 	vptestmd	%ymm2, %ymm2, %k1 {%k1}
 	vpbroadcastb	.LCPI0_2(%rip), %xmm1   # xmm1 = [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
 	vmovdqu8	.LCPI0_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [12,12,12,12,12,12,12,12,u,u,u,u,u,u,u,u]
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

@@ -7,7 +7,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i16 @func000000000000011a(i16 %0, i32 %1) #0 {
+define i16 @func000000000000022a(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 16
   %3 = trunc nuw i32 %2 to i16

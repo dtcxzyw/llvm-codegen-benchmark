@@ -6,8 +6,8 @@
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -15,11 +15,11 @@ entry:
 ; libquic/optimized/url_parse_file.cc.ll
 ; opencv/optimized/msd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = add nsw i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -31,18 +31,18 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = add i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; zxing/optimized/BitMatrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add nsw i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 

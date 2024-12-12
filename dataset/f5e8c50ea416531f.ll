@@ -1,5 +1,5 @@
 
-; 335 occurrences:
+; 331 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/acecMult.c.ll
@@ -40,7 +40,7 @@
 ; abc/optimized/utilIsop.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
-; arrow/optimized/int_util.cc.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; clamav/optimized/regexec.c.ll
 ; cmake/optimized/archive_entry.c.ll
@@ -50,7 +50,6 @@
 ; cpython/optimized/unicodeobject.ll
 ; folly/optimized/json.cpp.ll
 ; git/optimized/cbtree.ll
-; graphviz/optimized/randomkit.c.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
 ; hermes/optimized/regexec.c.ll
@@ -72,7 +71,6 @@
 ; linux/optimized/dmar.ll
 ; linux/optimized/drm_buddy.ll
 ; linux/optimized/extents.ll
-; linux/optimized/features.ll
 ; linux/optimized/find_bit.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/hugetlb.ll
@@ -85,9 +83,7 @@
 ; linux/optimized/lskcipher.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
-; linux/optimized/msr.ll
 ; linux/optimized/percpu_counter.ll
-; linux/optimized/probe.ll
 ; linux/optimized/remap_range.ll
 ; linux/optimized/select.ll
 ; linux/optimized/sha512_generic.ll
@@ -343,7 +339,7 @@ entry:
   ret i64 %4
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
@@ -356,7 +352,6 @@ entry:
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/set_memory.ll
-; linux/optimized/umh.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; node/optimized/simdutf.ll

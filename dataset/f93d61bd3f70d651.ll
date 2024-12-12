@@ -5,13 +5,14 @@
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = xor i32 %3, -1
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/cecSim.c.ll
+; boost/optimized/alloc_lib.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -25,18 +26,19 @@ entry:
 define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = xor i32 %3, 63
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; hyperscan/optimized/limex_compile.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = xor i32 %3, -1
   ret i32 %4
 }

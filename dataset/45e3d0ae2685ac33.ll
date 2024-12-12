@@ -32,13 +32,15 @@ entry:
   ret i64 %6
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; abc/optimized/bacPrsBuild.c.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
 ; linux/optimized/memory.ll
 ; llvm/optimized/MachineUniformityAnalysis.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dsbgst.c.ll

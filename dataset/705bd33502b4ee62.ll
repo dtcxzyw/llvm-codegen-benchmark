@@ -1,5 +1,15 @@
 
-; 36 occurrences:
+; 1 occurrences:
+; ruby/optimized/parse.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = icmp ult i32 %1, 3
+  ret i1 %2
+}
+
+; 34 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -13,7 +23,6 @@
 ; linux/optimized/core.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/pipe.ll
-; linux/optimized/sysfs_engines.ll
 ; linux/optimized/xstate.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -30,38 +39,31 @@
 ; postgres/optimized/copyfromparse.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
-; ruby/optimized/parse.ll
 ; ruby/optimized/rjit_c.ll
 ; slurm/optimized/data.ll
 ; slurm/optimized/hostlist.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-amp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
-  %2 = icmp ult i32 %1, 3
-  ret i1 %2
+  %.mask = and i64 %0, 2147483648
+  %1 = icmp eq i64 %.mask, 0
+  ret i1 %1
 }
 
-; 123 occurrences:
+; 116 occurrences:
 ; arrow/optimized/dictionary.cc.ll
 ; arrow/optimized/record_batch.cc.ll
 ; arrow/optimized/table.cc.ll
 ; assimp/optimized/clipper.cpp.ll
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
-; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
-; ceres/optimized/dense_sparse_matrix.cc.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/gradient_checker.cc.ll
-; ceres/optimized/iterative_schur_complement_solver.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
-; ceres/optimized/power_series_expansion_preconditioner.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
-; ceres/optimized/schur_complement_solver.cc.ll
-; ceres/optimized/trust_region_minimizer.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; faiss/optimized/HNSW.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
@@ -89,7 +91,6 @@ entry:
 ; lightgbm/optimized/metadata.cpp.ll
 ; linux/optimized/base.ll
 ; linux/optimized/cgroup.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/fsopen.ll
 ; linux/optimized/hidraw.ll
 ; linux/optimized/i915_perf.ll
@@ -129,7 +130,6 @@ entry:
 ; opencv/optimized/motionSaliencyBinWangApr2014.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
-; opencv/optimized/permute_layer.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
@@ -165,19 +165,24 @@ entry:
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; tev/optimized/Ipc.cpp.ll
 ; wireshark/optimized/recent_file_status.cpp.ll
+; yalantinglibs/optimized/tutorial.cpp.ll
 ; yosys/optimized/opt_muxtree.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %.mask = and i64 %0, 2147483648
   %1 = icmp ne i64 %.mask, 0
   ret i1 %1
 }
 
-; 27 occurrences:
+; 32 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/sparring_partner.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; freetype/optimized/pshinter.c.ll
 ; graphviz/optimized/sfprint.c.ll
@@ -203,9 +208,10 @@ entry:
 ; spike/optimized/kslra8_u.ll
 ; spike/optimized/kslraw.ll
 ; spike/optimized/kslraw_u.ll
+; yalantinglibs/optimized/tutorial.cpp.ll
 ; yosys/optimized/blifparse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0) #0 {
+define i1 @func0000000000000026(i64 %0) #0 {
 entry:
   %.mask = and i64 %0, 2147483648
   %1 = icmp ne i64 %.mask, 0
@@ -215,7 +221,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0) #0 {
+define i1 @func00000000000000a6(i64 %0) #0 {
 entry:
   %.mask = and i64 %0, 4611686018427387904
   %1 = icmp ne i64 %.mask, 0
@@ -291,14 +297,14 @@ entry:
 ; wolfssl/optimized/api.c.ll
 ; yosys/optimized/ql_bram_types.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0) #0 {
+define i1 @func000000000000002a(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp sgt i32 %1, 8388608
   ret i1 %2
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/chunked_array.cc.ll
 ; arrow/optimized/concatenate.cc.ll
@@ -314,7 +320,6 @@ entry:
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/clipper.cpp.ll
-; brotli/optimized/brotli_bit_stream.c.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/gradient_checking_cost_function.cc.ll
@@ -399,6 +404,22 @@ entry:
   ret i1 %2
 }
 
+; 7 occurrences:
+; ceres/optimized/cgnr_solver.cc.ll
+; ceres/optimized/dense_sparse_matrix.cc.ll
+; ceres/optimized/iterative_schur_complement_solver.cc.ll
+; ceres/optimized/power_series_expansion_preconditioner.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/trust_region_minimizer.cc.ll
+; opencv/optimized/tree.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0) #0 {
+entry:
+  %1 = and i64 %0, 4294967288
+  %2 = icmp ne i64 %1, 0
+  ret i1 %2
+}
+
 ; 2 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; ceres/optimized/residual_block.cc.ll
@@ -425,10 +446,20 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
+define i1 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = icmp ugt i64 %0, 258
   ret i1 %1
+}
+
+; 1 occurrences:
+; brotli/optimized/brotli_bit_stream.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0) #0 {
+entry:
+  %1 = and i64 %0, 34359738352
+  %2 = icmp ne i64 %1, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

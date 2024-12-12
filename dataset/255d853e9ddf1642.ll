@@ -8,7 +8,7 @@ define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %not. = xor i1 %0, true
   %3 = zext i1 %not. to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   ret i32 %4
 }
 
@@ -21,7 +21,7 @@ define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %not. = xor i1 %0, true
   %3 = zext i1 %not. to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   ret i32 %4
 }
 

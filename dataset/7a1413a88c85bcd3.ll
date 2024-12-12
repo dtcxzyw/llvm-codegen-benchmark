@@ -4,7 +4,7 @@
 ; linux/optimized/fse_decompress.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000748(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 1

@@ -2,7 +2,7 @@
 	.quad	1                               # 0x1
 .LCPI0_1:
 	.long	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsrlvq	%ymm2, %ymm1, %ymm1
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm1   # xmm1 = [1,1,1,1]
@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.quad	1                               # 0x1
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpsrlvq	%ymm2, %ymm1, %ymm1
 	vptestnmq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -29,7 +29,7 @@ func000000000000002c:                   # @func000000000000002c
 	retq
 .LCPI3_0:
 	.long	512                             # 0x200
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsrlvq	%ymm2, %ymm1, %ymm1
 	vptestnmq	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %xmm1   # xmm1 = [512,512,512,512]

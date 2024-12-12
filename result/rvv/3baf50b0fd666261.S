@@ -1,4 +1,4 @@
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmfne.vf	v12, v10, fa5
@@ -6,7 +6,7 @@ func0000000000000076:                   # @func0000000000000076
 	vmsle.vi	v11, v8, -1
 	vmand.mm	v0, v11, v10
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmfne.vf	v12, v10, fa5

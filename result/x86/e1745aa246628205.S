@@ -13,11 +13,6 @@ func0000000000000000:                   # @func0000000000000000
 	andb	$12, %al
 	orb	%dil, %al
 	retq
-func0000000000000003:                   # @func0000000000000003
-	movl	%esi, %eax
-	andb	$3, %al
-	orb	%dil, %al
-	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax
 	andb	$3, %al

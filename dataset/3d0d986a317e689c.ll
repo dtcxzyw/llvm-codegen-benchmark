@@ -1,7 +1,6 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; linux/optimized/acpi_lpit.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_sseu.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -29,7 +28,7 @@ entry:
   ret i64 %3
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; linux/optimized/bitmap.ll
 ; linux/optimized/find_bit.ll
 ; linux/optimized/genalloc.ll
@@ -43,7 +42,6 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll

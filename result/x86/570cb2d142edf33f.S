@@ -9,7 +9,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$8, %rdx
 	cmovaeq	%rsi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movq	%rdi, %rax
 	addq	$-5, %rdx
 	cmpq	$-2, %rdx
@@ -20,7 +20,7 @@ func0000000000000006:                   # @func0000000000000006
 	incq	%rdx
 	cmovnsq	%rsi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rdi, %rax
 	cmpq	$1, %rdx
 	cmovneq	%rsi, %rax

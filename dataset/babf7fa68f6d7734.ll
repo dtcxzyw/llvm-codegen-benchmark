@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; libquic/optimized/e_ssl3.c.ll
 ; libquic/optimized/e_tls.c.ll
 ; linux/optimized/scsi_logging.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; openjdk/optimized/classLoadingService.ll
 ; openjdk/optimized/instanceStackChunkKlass.ll

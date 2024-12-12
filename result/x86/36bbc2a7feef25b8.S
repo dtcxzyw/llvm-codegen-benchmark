@@ -1,15 +1,15 @@
-func000000000000008e:                   # @func000000000000008e
+func000000000000010e:                   # @func000000000000010e
 	shrq	$3, %rsi
-	cmpl	%edi, %esi
-	setge	%al
+	cmpl	%esi, %edi
+	setle	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	shrq	$32, %rsi
-	cmpl	%edi, %esi
-	seta	%al
+	cmpl	%esi, %edi
+	setb	%al
 	retq
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	shrq	%rsi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq

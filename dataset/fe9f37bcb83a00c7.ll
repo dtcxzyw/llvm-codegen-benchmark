@@ -1,5 +1,5 @@
 
-; 274 occurrences:
+; 273 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_planner.cpp.ll
@@ -228,7 +228,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -279,7 +278,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, -7070675565921424023
   %3 = lshr i64 %2, 47
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   %5 = xor i64 %4, %2
   ret i64 %5
 }

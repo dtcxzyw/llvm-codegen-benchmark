@@ -3,11 +3,6 @@ func0000000000000035:                   # @func0000000000000035
 	shrl	$3, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000025:                   # @func0000000000000025
-	leal	7(%rsi), %eax
-	shrl	$3, %eax
-	addq	%rdi, %rax
-	retq
 func0000000000000037:                   # @func0000000000000037
 	leal	31(%rsi), %eax
 	shrl	$5, %eax

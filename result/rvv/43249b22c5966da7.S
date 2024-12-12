@@ -4,7 +4,7 @@ func0000000000000006:                   # @func0000000000000006
 	vand.vx	v12, v12, a0
 	vzext.vf2	v14, v10
 	vsll.vv	v10, v14, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a0, 63

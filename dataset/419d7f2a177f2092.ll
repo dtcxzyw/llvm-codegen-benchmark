@@ -78,12 +78,12 @@
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 2164195328, %2
   %4 = and i64 %3, 1
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

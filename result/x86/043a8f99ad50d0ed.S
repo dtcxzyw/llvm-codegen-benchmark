@@ -52,9 +52,3 @@ func00000000000000c7:                   # @func00000000000000c7
 	setne	%al
 	leal	(%rax,%rdi,2), %eax
 	retq
-func0000000000000087:                   # @func0000000000000087
-	xorl	%eax, %eax
-	cmpl	$32, %esi
-	setae	%al
-	leal	(%rax,%rdi,2), %eax
-	retq

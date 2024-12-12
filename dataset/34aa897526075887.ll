@@ -52,7 +52,7 @@ entry:
   ret float %5
 }
 
-; 15 occurrences:
+; 18 occurrences:
 ; abc/optimized/mapperMatch.c.ll
 ; abc/optimized/sclSize.c.ll
 ; abc/optimized/sclUpsize.c.ll
@@ -62,12 +62,15 @@ entry:
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; bullet3/optimized/b3Solver.ll
 ; bullet3/optimized/btPolarDecomposition.ll
-; gromacs/optimized/slange.cpp.ll
-; gromacs/optimized/slanst.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
 ; gromacs/optimized/sstein.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:

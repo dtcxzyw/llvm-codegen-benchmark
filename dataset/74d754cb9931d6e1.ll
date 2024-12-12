@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; casadi/optimized/kinsol.c.ll
 ; opencv/optimized/levmarq.cpp.ll
 ; stockfish/optimized/timeman.ll
 ; sundials/optimized/kinsol.c.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, double %1, double %2) #0 {
 entry:

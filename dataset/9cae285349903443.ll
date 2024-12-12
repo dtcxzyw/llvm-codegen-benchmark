@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 22 occurrences:
 ; box2d/optimized/b2_rope.cpp.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/histogram.c.ll
@@ -7,9 +7,15 @@
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; mitsuba3/optimized/envmap.cpp.ll
+; ncnn/optimized/yolov3detectionoutput.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll

@@ -10,7 +10,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 30
   %5 = shl nuw i32 2, %4
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

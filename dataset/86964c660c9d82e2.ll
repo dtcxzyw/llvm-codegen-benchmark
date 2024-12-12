@@ -1,5 +1,5 @@
 
-; 355 occurrences:
+; 359 occurrences:
 ; abc/optimized/infback.c.ll
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
 ; cmake/optimized/archive_string.c.ll
@@ -25,9 +25,9 @@
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
+; icu/optimized/erarules.ll
 ; icu/optimized/icuexportdata.ll
 ; icu/optimized/olsontz.ll
-; icu/optimized/simpletz.ll
 ; icu/optimized/ucnv_err.ll
 ; icu/optimized/ucnvscsu.ll
 ; icu/optimized/ucptrie.ll
@@ -110,6 +110,9 @@
 ; llvm/optimized/X86EncodingOptimization.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -352,6 +355,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; zlib/optimized/infback.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; zxing/optimized/DMDetector.cpp.ll
@@ -365,7 +369,7 @@ entry:
   ret i1 %6
 }
 
-; 179 occurrences:
+; 178 occurrences:
 ; cpython/optimized/unicodedata.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
@@ -459,7 +463,6 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/8139too.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/emerge.cpp.ll
 ; minetest/optimized/map.cpp.ll
@@ -546,7 +549,7 @@ entry:
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1938
   %4 = icmp ult i32 %3, -3875
@@ -555,11 +558,10 @@ entry:
   ret i1 %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; cmake/optimized/bzlib.c.ll
 ; hermes/optimized/Executor.cpp.ll
-; icu/optimized/erarules.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libwebp/optimized/quant_levels_utils.c.ll
 ; linux/optimized/fsopen.ll
@@ -581,7 +583,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000090(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -444
   %4 = icmp ult i32 %3, 37

@@ -1,5 +1,5 @@
 
-; 372 occurrences:
+; 375 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; assimp/optimized/BaseImporter.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
@@ -37,6 +37,7 @@
 ; grpc/optimized/posix_endpoint.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/ESTreeIRGen-func.cpp.ll
+; hermes/optimized/NativeFormatting.cpp.ll
 ; hermes/optimized/hbcdump.cpp.ll
 ; hermes/optimized/raw_ostream.cpp.ll
 ; hyperscan/optimized/ComponentWordBoundary.cpp.ll
@@ -89,8 +90,10 @@
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/ModuleSymbolTable.cpp.ll
+; llvm/optimized/NativeFormatting.cpp.ll
 ; llvm/optimized/NativeInlineSiteSymbol.cpp.ll
 ; llvm/optimized/NativeTypeFunctionSig.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
@@ -105,6 +108,7 @@
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaHexagon.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/TailDuplicator.cpp.ll
@@ -285,7 +289,6 @@
 ; openmpi/optimized/odls_default_module.ll
 ; openspiel/optimized/leduc_poker.cc.ll
 ; openspiel/optimized/nim.cc.ll
-; openusd/optimized/dependency.cpp.ll
 ; openusd/optimized/tsTest_SplineData.cpp.ll
 ; openvdb/optimized/TopologyToLevelSet.cc.ll
 ; ozz-animation/optimized/animation.cc.ll
@@ -380,9 +383,14 @@ entry:
   ret i32 %4
 }
 
-; 67 occurrences:
+; 109 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/message.ll
+; boost/optimized/src.ll
+; boost/optimized/zlib.ll
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
 ; coreutils-rs/optimized/45371cbry3cnr73y.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
@@ -397,6 +405,7 @@ entry:
 ; jemalloc/optimized/sc.sym.ll
 ; llvm/optimized/CFIInstrInserter.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/HeaderMap.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/SemaSwift.cpp.ll
@@ -407,6 +416,7 @@ entry:
 ; mitsuba3/optimized/multijitter.cpp.ll
 ; mitsuba3/optimized/orthogonal.cpp.ll
 ; mitsuba3/optimized/stratified.cpp.ll
+; openusd/optimized/dependency.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; php/optimized/zend_API.ll
 ; postgres/optimized/command.ll
@@ -447,6 +457,41 @@ entry:
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
 ; z3/optimized/nlsat_solver.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/62p0ysciwr0duwav9qlwb71rc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/80403hw32s3ougvze8j2ycldj.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8fnqr4x4dcnr22hiqkfhgttys.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/9tx3ef1bysuj1ynm6i6wgnanl.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i8 %2) #0 {

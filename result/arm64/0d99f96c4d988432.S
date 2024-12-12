@@ -1,6 +1,7 @@
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	orr	v0.16b, v0.16b, v1.16b
-	mvn	v0.16b, v0.16b
+	mov	w8, #1                          // =0x1
+	orr	w9, w0, w1
+	bic	w0, w8, w9
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; cmake/optimized/linux-core.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; libuv/optimized/linux.c.ll
@@ -12,6 +12,7 @@
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; node/optimized/linux.ll
 ; openjdk/optimized/classLoaderMetaspace.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
 ; ruby/optimized/bignum.ll
 ; wireshark/optimized/packet-cipsafety.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
@@ -79,17 +80,6 @@ entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i1 %0, i1 false
   %4 = select i1 %3, i64 320, i64 316
-  ret i64 %4
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/3x26ra3en5gtspzq.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 1
-  %3 = select i1 %2, i1 %0, i1 false
-  %4 = select i1 %3, i64 0, i64 8
   ret i64 %4
 }
 

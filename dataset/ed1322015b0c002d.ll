@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; linux/optimized/blk-rq-qos.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; openusd/optimized/grain_synthesis.c.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

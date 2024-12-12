@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/gvrender_core_fig.c.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; opencv/optimized/depth_cleaner.cpp.ll
 ; quantlib/optimized/integralhestonvarianceoptionengine.ll
 ; quantlib/optimized/isdacdsengine.ll

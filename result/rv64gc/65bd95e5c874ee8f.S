@@ -40,3 +40,11 @@ func0000000000000001:                   # @func0000000000000001
 	slli	a0, a0, 10
 .LBB4_2:                                # %entry
 	ret
+func0000000000000004:                   # @func0000000000000004
+	srli	a2, a2, 52
+	seqz	a2, a2
+	and	a1, a1, a2
+	beqz	a1, .LBB5_2
+	li	a0, -1022
+.LBB5_2:                                # %entry
+	ret

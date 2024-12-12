@@ -1,6 +1,7 @@
 
-; 37 occurrences:
+; 39 occurrences:
 ; arrow/optimized/data.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btConvexHull.ll
 ; cpython/optimized/compile.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -8,6 +9,7 @@
 ; gromacs/optimized/reversetopology.cpp.ll
 ; icu/optimized/number_affixutils.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll

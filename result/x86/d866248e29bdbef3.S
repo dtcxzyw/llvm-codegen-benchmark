@@ -18,9 +18,9 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rdi, %rax
-	movl	%edx, %ecx
-	imulq	%rsi, %rcx
-	subq	%rcx, %rax
+	andq	$-8, %rdx
+	imulq	%rsi, %rdx
+	subq	%rdx, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movq	%rdi, %rax

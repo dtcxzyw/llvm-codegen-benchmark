@@ -1,7 +1,8 @@
 
-%"struct.std::pair.2988004" = type { i32, %"struct.llvm::support::detail::packed_endian_specific_integral.2988005" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.2988005" = type { %struct.anon.2988006 }
-%struct.anon.2988006 = type { [4 x i8] }
+%class.btVector3.2819204 = type { [4 x float] }
+%"struct.std::pair.3181474" = type { i32, %"struct.llvm::support::detail::packed_endian_specific_integral.3181475" }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3181475" = type { %struct.anon.3181476 }
+%struct.anon.3181476 = type { [4 x i8] }
 
 ; 5 occurrences:
 ; opencv/optimized/convhull.cpp.ll
@@ -10,12 +11,12 @@
 ; openmpi/optimized/ompi_datatype_create_subarray.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 8
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -247,24 +248,36 @@ entry:
 ; openjdk/optimized/cmspack.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000a7(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 3
+  %4 = select i1 %3, i32 %1, i32 0
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr nusw nuw %class.btVector3.2819204, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000037(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 65535
   %4 = select i1 %3, i32 %1, i32 65535
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -285,12 +298,12 @@ entry:
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000053(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
   %4 = select i1 %3, i32 %1, i32 -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.std::pair.2988004", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.std::pair.3181474", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -300,12 +313,12 @@ entry:
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000c7(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 56
+  %3 = icmp samesign ugt i32 %2, 56
   %4 = select i1 %3, i32 %1, i32 8
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -314,24 +327,12 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 8
   %4 = select i1 %3, i32 %1, i32 0
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; postgres/optimized/regcomp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 100000
-  %4 = select i1 %3, i32 %1, i32 100000
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -339,12 +340,12 @@ entry:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000056(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000057(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 10249
   %4 = select i1 %3, i32 %1, i32 1024
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 

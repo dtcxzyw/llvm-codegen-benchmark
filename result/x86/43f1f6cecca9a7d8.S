@@ -10,3 +10,9 @@ func0000000000000003:                   # @func0000000000000003
 	cmovneq	%rsi, %rax
 	sarq	$32, %rax
 	retq
+func0000000000000015:                   # @func0000000000000015
+	movq	%rdi, %rax
+	cmpl	$16, %edx
+	cmovlq	%rsi, %rax
+	sarq	$32, %rax
+	retq

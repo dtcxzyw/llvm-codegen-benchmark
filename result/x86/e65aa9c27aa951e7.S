@@ -4,7 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	setb	%al
 	retq
 func0000000000000003:                   # @func0000000000000003
-	movl	$31, %eax
+	movl	$7, %eax
 	btl	%edi, %eax
 	setb	%al
 	retq

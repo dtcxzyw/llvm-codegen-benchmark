@@ -40,6 +40,12 @@ func000000000000005d:                   # @func000000000000005d
 	shlq	$32, %rdi
 	leaq	(%rdi,%rsi), %rax
 	retq
+func0000000000000050:                   # @func0000000000000050
+	movl	%edi, %eax
+	shlq	$63, %rsi
+	shlq	$52, %rax
+	orq	%rsi, %rax
+	retq
 func0000000000000037:                   # @func0000000000000037
 	shlq	$32, %rsi
 	movzbl	%dil, %eax

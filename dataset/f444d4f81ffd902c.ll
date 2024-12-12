@@ -12,7 +12,7 @@ entry:
   %3 = sitofp i32 %2 to float
   %4 = fadd float %3, 5.000000e-01
   %5 = fsub float %4, %1
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 

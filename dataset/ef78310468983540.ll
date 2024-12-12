@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 58 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -11,6 +11,7 @@
 ; git/optimized/clean.ll
 ; git/optimized/remote.ll
 ; gromacs/optimized/check.cpp.ll
+; gromacs/optimized/h_db.cpp.ll
 ; gromacs/optimized/hackblock.cpp.ll
 ; gromacs/optimized/membed.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
@@ -36,6 +37,8 @@
 ; openssl/optimized/libcrypto-lib-bf_readbuff.ll
 ; openssl/optimized/libcrypto-shlib-bf_buff.ll
 ; openssl/optimized/libcrypto-shlib-bf_readbuff.ll
+; openusd/optimized/av1_inv_txfm2d.c.ll
+; php/optimized/xml.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; postgres/optimized/spgtextproc.ll
 ; qemu/optimized/block_file-posix.c.ll
@@ -56,7 +59,7 @@
 ; yosys/optimized/techmap.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -88,7 +91,7 @@ entry:
 ; slurm/optimized/node_conf.ll
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1
@@ -102,7 +105,7 @@ entry:
 ; libuv/optimized/udp.c.ll
 ; node/optimized/udp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -117,7 +120,7 @@ entry:
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1
@@ -130,7 +133,7 @@ entry:
 ; redis/optimized/setproctitle.ll
 ; slurm/optimized/node_scheduler.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003b(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000006b(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -140,21 +143,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = add i64 %1, -1
-  %5 = icmp ugt i64 %4, %3
-  %6 = select i1 %5, i1 %0, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; opencv/optimized/sinusoidalpattern.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -6

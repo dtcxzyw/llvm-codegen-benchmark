@@ -1,5 +1,16 @@
 
-; 16 occurrences:
+; 1 occurrences:
+; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -216
+  %4 = trunc nuw i64 %1 to i1
+  %5 = select i1 %4, ptr %0, ptr %3
+  ret ptr %5
+}
+
+; 15 occurrences:
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
 ; diesel-rs/optimized/2nqojkvzec127ieh.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
@@ -13,13 +24,12 @@
 ; ockam-rs/optimized/35pvxddga2itk8eb.ll
 ; ockam-rs/optimized/37q648fnmlksdgjw.ll
 ; ockam-rs/optimized/4o6a2p97oy1nlemw.ll
-; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tree-sitter-rs/optimized/18kt1xijwoc4jebp.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 -216
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = trunc nuw i64 %1 to i1
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5

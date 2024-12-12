@@ -1,25 +1,25 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	shrq	$6, %rdx
 	incq	%rsi
 	cmpq	%rdx, %rsi
 	setbe	%al
 	andb	%dil, %al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	shrq	%rdx
 	incq	%rsi
 	cmpq	%rdx, %rsi
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	shrq	%rdx
 	incq	%rsi
 	cmpq	%rdx, %rsi
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	shrq	$5, %rdx
 	incq	%rsi
 	cmpq	%rdx, %rsi

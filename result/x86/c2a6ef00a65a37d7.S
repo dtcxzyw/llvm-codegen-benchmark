@@ -1,5 +1,10 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	leaq	(%rsi,%rdx), %rax
-	cmpq	%rdi, %rax
-	cmovaeq	%rdi, %rax
+	cmpq	%rax, %rdi
+	cmovbeq	%rdi, %rax
+	retq
+func0000000000000068:                   # @func0000000000000068
+	leaq	(%rsi,%rdx), %rax
+	cmpq	%rax, %rdi
+	cmovbeq	%rdi, %rax
 	retq

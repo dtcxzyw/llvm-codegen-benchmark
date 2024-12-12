@@ -13,10 +13,20 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edx, %esi
 	cmovbeq	%rdi, %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	cmovbeq	%rdi, %rax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	cmovneq	%rdi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	cmovaeq	%rdi, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax

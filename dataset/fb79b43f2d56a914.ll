@@ -1,11 +1,10 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cvc5/optimized/linear_equality.cpp.ll
 ; linux/optimized/intel_color.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/BasicBlockSections.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
-; llvm/optimized/Commit.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/CoverageMappingWriter.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
@@ -21,7 +20,7 @@
 define i1 @func0000000000000018(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -36,12 +35,12 @@ entry:
 define i1 @func0000000000000010(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/matrix.ll
@@ -59,6 +58,7 @@ entry:
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; redis/optimized/cluster.ll
@@ -69,8 +69,8 @@ entry:
 define i1 @func0000000000000002(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -80,8 +80,8 @@ entry:
 define i1 @func0000000000000012(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp uge i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ule i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -94,8 +94,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ule i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp uge i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -108,7 +108,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -123,11 +123,11 @@ entry:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/limits.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -140,7 +140,7 @@ entry:
 define i1 @func0000000000000014(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -151,21 +151,20 @@ entry:
 define i1 @func0000000000000016(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp sge i32 %3, %1
+  %4 = icmp sle i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
-; llvm/optimized/EditedSource.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sgt i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -173,21 +172,21 @@ entry:
 ; cpython/optimized/assemble.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000082(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000098(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -195,10 +194,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/clocksource.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000d0(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -209,21 +208,21 @@ entry:
 ; hyperscan/optimized/ng_repeat.cpp.ll
 ; hyperscan/optimized/ucp_table.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ult i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ugt i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; cpython/optimized/assemble.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

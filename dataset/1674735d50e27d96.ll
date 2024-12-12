@@ -24,7 +24,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = shl i64 %4, 30
   %6 = ashr i64 %5, 32
-  %7 = mul nsw i64 %6, %0
+  %7 = mul nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = shl i64 %4, 29
   %6 = ashr exact i64 %5, 32
-  %7 = mul i64 %6, %0
+  %7 = mul i64 %0, %6
   ret i64 %7
 }
 
@@ -53,7 +53,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = shl i64 %4, 28
   %6 = ashr i64 %5, 32
-  %7 = mul i64 %6, %0
+  %7 = mul i64 %0, %6
   ret i64 %7
 }
 

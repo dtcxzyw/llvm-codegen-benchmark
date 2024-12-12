@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/updategroups.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

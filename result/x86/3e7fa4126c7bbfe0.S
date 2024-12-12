@@ -28,3 +28,8 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$-1, %eax
 	cmovael	%edi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpb	$10, %sil
+	movl	$9, %eax
+	cmovbl	%edi, %eax
+	retq

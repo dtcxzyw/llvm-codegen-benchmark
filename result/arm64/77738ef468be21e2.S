@@ -1,42 +1,24 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	ucvtf	v2.2d, v2.2d
-	ucvtf	v3.2d, v3.2d
-	fcvtn	v2.2s, v2.2d
-	fcvtn2	v2.4s, v3.2d
-	fdiv	v1.4s, v1.4s, v2.4s
-	fadd	v0.4s, v1.4s, v0.4s
+	add	x8, x0, #1
+	ucvtf	s2, x8
+	fdiv	s1, s1, s2
+	fadd	s0, s0, s1
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	ucvtf	v2.2d, v2.2d
-	ucvtf	v3.2d, v3.2d
-	fcvtn	v2.2s, v2.2d
-	fcvtn2	v2.4s, v3.2d
-	fdiv	v1.4s, v1.4s, v2.4s
-	fadd	v0.4s, v1.4s, v0.4s
+	add	x8, x0, #2
+	ucvtf	s2, x8
+	fdiv	s1, s1, s2
+	fadd	s0, s0, s1
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	ucvtf	v2.2d, v2.2d
-	ucvtf	v3.2d, v3.2d
-	fcvtn	v2.2s, v2.2d
-	fcvtn2	v2.4s, v3.2d
-	fdiv	v1.4s, v1.4s, v2.4s
-	fadd	v0.4s, v1.4s, v0.4s
+	add	x8, x0, #1
+	ucvtf	s2, x8
+	fdiv	s1, s1, s2
+	fadd	s0, s0, s1
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 457 occurrences:
+; 471 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/amapMatch.c.ll
@@ -21,6 +21,15 @@
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; bullet3/optimized/b3DynamicBvh.ll
 ; bullet3/optimized/btDbvt.ll
 ; bullet3/optimized/btGImpactBvh.ll
@@ -401,7 +410,6 @@
 ; mitsuba3/optimized/constpool.cpp.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
-; mitsuba3/optimized/zonestack.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
 ; oiio/optimized/SHA1.cpp.ll
@@ -440,7 +448,11 @@
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/position.ll
 ; verilator/optimized/V3SplitVar.cpp.ll
+; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; yaml-cpp/optimized/stream.cpp.ll
+; yoga/optimized/AbsoluteLayout.cpp.ll
+; yoga/optimized/CalculateLayout.cpp.ll
+; yoga/optimized/Node.cpp.ll
 ; yosys/optimized/edif.ll
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/bv_invariant.cpp.ll
@@ -455,24 +467,25 @@
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_str_mc.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr nusw [2 x i32], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [2 x i32], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; cpython/optimized/pystate.ll
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/evmisc.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/hcd.ll
 ; linux/optimized/i915_pci.ll

@@ -3,6 +3,11 @@ func0000000000000005:                   # @func0000000000000005
 	subl	%esi, %edx
 	leal	(%rdx,%rdi), %eax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	$1, %edx
+	subl	%esi, %edx
+	leal	(%rdx,%rdi), %eax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	andl	$1, %edx
 	subl	%esi, %edx

@@ -1,6 +1,5 @@
 
 ; 44 occurrences:
-; abc/optimized/satUtil.c.ll
 ; clamav/optimized/upack.c.ll
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; cmake/optimized/lz_encoder.c.ll
@@ -23,10 +22,11 @@
 ; llvm/optimized/DbiModuleDescriptor.cpp.ll
 ; llvm/optimized/DbiModuleDescriptorBuilder.cpp.ll
 ; luajit/optimized/buildvm.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_textarea.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/parse1.ll
 ; openjdk/optimized/transport.ll
@@ -49,8 +49,8 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
-  %5 = add i32 %4, %1
-  %6 = add i32 %5, %0
+  %5 = add i32 %1, %4
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -110,13 +110,15 @@ entry:
   ret i32 %6
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; icu/optimized/package.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
+; lvgl/optimized/lv_textarea.ll
 ; openmpi/optimized/keyval_parse.ll
 ; openmpi/optimized/pmix_keyval_parse.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
@@ -138,7 +140,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -162,21 +164,20 @@ define i32 @func00000000000000a0(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = add nuw i32 %3, 4
-  %5 = add i32 %4, %1
-  %6 = add i32 %5, %0
+  %5 = add i32 %1, %4
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
-; 2 occurrences:
-; openblas/optimized/dgbtrf.c.ll
+; 1 occurrences:
 ; openspiel/optimized/maedn.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -2
-  %5 = add nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %5 = add nsw i32 %1, %4
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -212,8 +213,8 @@ define i32 @func0000000000000055(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = add nsw i32 %3, 719468
-  %5 = add nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %5 = add nsw i32 %1, %4
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

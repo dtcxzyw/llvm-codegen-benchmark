@@ -1,6 +1,8 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifDec16.c.ll
+; abc/optimized/kitGraph.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; qemu/optimized/tcg.c.ll

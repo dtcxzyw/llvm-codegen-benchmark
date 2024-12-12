@@ -3,7 +3,7 @@
 ; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108832
   %3 = icmp eq i32 %2, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = icmp ult i32 %2, 65
@@ -29,7 +29,7 @@ entry:
 ; gromacs/optimized/slasdq.cpp.ll
 ; opencv/optimized/cloning_gui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 255
   %2 = icmp eq i32 %.mask, 85
@@ -43,7 +43,7 @@ entry:
 ; postgres/optimized/refint.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 255
   %2 = icmp ne i32 %.mask, 255
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/geo_ops.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
   %3 = icmp slt i32 %2, 2147483608
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/cloning_gui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 255
   %2 = icmp eq i32 %.mask, 99

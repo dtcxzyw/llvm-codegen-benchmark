@@ -6,7 +6,7 @@ define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 9
   %3 = mul i32 %2, %1
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -17,7 +17,7 @@ define i1 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 9
   %3 = mul i32 %2, %1
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 
@@ -27,11 +27,11 @@ entry:
 ; openblas/optimized/dbbcsd.c.ll
 ; opencv/optimized/slic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 6
   %3 = mul nsw i32 %2, %1
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -42,7 +42,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 1000
   %3 = mul i32 %2, %1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -53,7 +53,7 @@ define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 5
   %3 = mul i32 %2, %1
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -64,7 +64,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 30
   %3 = mul i32 %2, %1
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 

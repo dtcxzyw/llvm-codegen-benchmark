@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 68 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/cnfCut.c.ll
 ; abc/optimized/dsdLocal.c.ll
@@ -11,7 +11,6 @@
 ; abc/optimized/ivyRwr.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; abc/optimized/ivyUtil.c.ll
-; abc/optimized/reoProfile.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; cmake/optimized/frm_def.c.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -70,7 +69,7 @@
 ; stb/optimized/stb_connected_components.c.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nuw nsw i64 %0, 1
@@ -81,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/inventorymanager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003b(i64 %0, i16 %1) #0 {
+define i1 @func000000000000006b(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nuw nsw i64 %0, 1
@@ -93,7 +92,7 @@ entry:
 ; assimp/optimized/COBLoader.cpp.ll
 ; qemu/optimized/hw_nvme_dif.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nuw i64 %0, 1
@@ -134,7 +133,7 @@ entry:
 ; postgres/optimized/regproc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nuw nsw i64 %0, 1
@@ -150,7 +149,7 @@ entry:
 ; openusd/optimized/bignum.cc.ll
 ; postgres/optimized/parse_utilcmd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nsw i64 %0, 1
@@ -164,7 +163,7 @@ entry:
 ; icu/optimized/double-conversion-bignum.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nsw i64 %0, -1
@@ -175,7 +174,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nuw i64 %0, 3
@@ -186,7 +185,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nsw i64 %0, 1

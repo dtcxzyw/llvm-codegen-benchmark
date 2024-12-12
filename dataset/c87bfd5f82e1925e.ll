@@ -16,7 +16,7 @@ entry:
   ret i1 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; git/optimized/object-name.ll
@@ -27,6 +27,7 @@ entry:
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; luau/optimized/IrCallWrapperX64.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
@@ -42,8 +43,9 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
@@ -78,13 +80,13 @@ entry:
 ; proxygen/optimized/RequestHandlerAdaptor.cpp.ll
 ; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
 ; velox/optimized/HiveTypeParser.cpp.ll
-; wireshark/optimized/crc8-tvb.c.ll
 ; wireshark/optimized/packet-atm.c.ll
 ; wireshark/optimized/packet-cipsafety.c.ll
 ; wireshark/optimized/packet-doip.c.ll
 ; wolfssl/optimized/rsa.c.ll
 ; yosys/optimized/formalff.ll
 ; yosys/optimized/opt_dff.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:

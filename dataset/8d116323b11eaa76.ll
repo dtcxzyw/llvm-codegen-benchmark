@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 48
   %3 = select i1 %0, i32 128, i32 64
@@ -26,12 +26,11 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; arrow/optimized/key_map.cc.ll
+; 2 occurrences:
 ; icu/optimized/ustrtrns.ll
 ; icu/optimized/wrtxml.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1114112
   %3 = icmp ult i32 %2, -1056768

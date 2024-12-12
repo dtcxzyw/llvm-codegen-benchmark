@@ -10,7 +10,7 @@ entry:
   ret i1 %4
 }
 
-; 49 occurrences:
+; 52 occurrences:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; coreutils-rs/optimized/2j3x034tyak3eas9.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -60,6 +60,9 @@ entry:
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/dq2w60loei6lzivjguqmeajyy.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -68,14 +71,14 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 18 occurrences:
+; bdwgc/optimized/gc.c.ll
 ; clamav/optimized/recvol.cpp.ll
 ; coreutils-rs/optimized/2j3x034tyak3eas9.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestFixedVector.cpp.ll
-; linux/optimized/build_policy.ll
 ; linux/optimized/task_mmu.ll
 ; llvm/optimized/IntegerLiteralSeparatorFixer.cpp.ll
 ; nuttx/optimized/mm_realloc.c.ll
@@ -84,6 +87,9 @@ entry:
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/dq2w60loei6lzivjguqmeajyy.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:

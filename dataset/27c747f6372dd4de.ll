@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 70 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/wlcAbs.c.ll
@@ -20,7 +20,6 @@
 ; linux/optimized/cgroup.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/extents.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
@@ -29,6 +28,7 @@
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; memcached/optimized/memcached-restart.ll
 ; memcached/optimized/memcached_debug-restart.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -67,6 +67,7 @@
 ; wireshark/optimized/packet-tn5250.c.ll
 ; wireshark/optimized/proto.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; zlib/optimized/infback.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
@@ -118,9 +119,10 @@ entry:
 ; icu/optimized/utext.ll
 ; icu/optimized/vtzone.ll
 ; libwebp/optimized/anim_decode.c.ll
-; linux/optimized/intel_tcc.ll
 ; llvm/optimized/InlineCost.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -177,7 +179,6 @@ entry:
 ; quickjs/optimized/libunicode.ll
 ; raylib/optimized/rtextures.c.ll
 ; slurm/optimized/hostlist.ll
-; slurm/optimized/step_mgr.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-cemi.c.ll

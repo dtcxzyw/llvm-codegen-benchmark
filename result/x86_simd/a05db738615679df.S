@@ -47,33 +47,41 @@ func0000000000000009:                   # @func0000000000000009
 	vpsllvd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI6_0:
-	.long	4                               # 0x4
-func000000000000000b:                   # @func000000000000000b
-	vpbroadcastd	.LCPI6_0(%rip), %ymm2   # ymm2 = [4,4,4,4,4,4,4,4]
-	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpsrld	$31, %ymm1, %ymm1
-	vpsllvd	%ymm1, %ymm0, %ymm0
-	retq
-.LCPI7_0:
-	.long	8                               # 0x8
-func0000000000000043:                   # @func0000000000000043
-	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm1, %k0
+	.long	64                              # 0x40
+func0000000000000023:                   # @func0000000000000023
+	vpcmpltud	.LCPI6_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
 	vpsllvd	%ymm1, %ymm0, %ymm0
 	retq
+.LCPI7_0:
+	.long	9                               # 0x9
+func000000000000000b:                   # @func000000000000000b
+	vpbroadcastd	.LCPI7_0(%rip), %ymm2   # ymm2 = [9,9,9,9,9,9,9,9]
+	vpcmpeqd	%ymm2, %ymm1, %ymm1
+	vpsrld	$31, %ymm1, %ymm1
+	vpsllvd	%ymm1, %ymm0, %ymm0
+	retq
 .LCPI8_0:
-	.long	255                             # 0xff
-func0000000000000041:                   # @func0000000000000041
+	.long	8                               # 0x8
+func0000000000000043:                   # @func0000000000000043
 	vpcmpnleud	.LCPI8_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
 	vpsllvd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI9_0:
+	.long	255                             # 0xff
+func0000000000000041:                   # @func0000000000000041
+	vpcmpnleud	.LCPI9_0(%rip){1to8}, %ymm1, %k0
+	vpmovm2d	%k0, %ymm1
+	vpsrld	$31, %ymm1, %ymm1
+	vpsllvd	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI10_0:
 	.long	5                               # 0x5
 func0000000000000050:                   # @func0000000000000050
-	vpbroadcastd	.LCPI9_0(%rip), %ymm2   # ymm2 = [5,5,5,5,5,5,5,5]
+	vpbroadcastd	.LCPI10_0(%rip), %ymm2  # ymm2 = [5,5,5,5,5,5,5,5]
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
 	vpsllvd	%ymm1, %ymm0, %ymm0

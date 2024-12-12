@@ -11,7 +11,7 @@ func00000000000000c0:                   // @func00000000000000c0
 	cmp	x2, #0
 	cset	w8, ne
 	sub	x8, x1, x8
-	add	x0, x8, x0
+	add	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015

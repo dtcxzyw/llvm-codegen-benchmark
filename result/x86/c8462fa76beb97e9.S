@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movslq	%esi, %rax
 	movabsq	$9223372036854775792, %rcx      # imm = 0x7FFFFFFFFFFFFFF0
 	andq	%rax, %rcx
@@ -13,7 +13,7 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rcx, %rdi
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andl	$3, %esi
 	incq	%rdi
 	cmpq	%rsi, %rdi

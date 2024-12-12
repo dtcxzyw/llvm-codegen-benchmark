@@ -1,11 +1,11 @@
-func000000000000007c:                   // @func000000000000007c
+func00000000000000ec:                   // @func00000000000000ec
 // %bb.0:                               // %entry
 	fcmp	s0, #0.0
 	ccmp	x0, #0, #4, ne
 	cset	w0, ne
 	ret
                                         // -- End function
-func000000000000006c:                   // @func000000000000006c
+func00000000000000cc:                   // @func00000000000000cc
 // %bb.0:                               // %entry
 	mov	w8, #2139095040                 // =0x7f800000
 	fmov	s1, w8
@@ -26,7 +26,7 @@ func00000000000000c6:                   // @func00000000000000c6
 	cset	w0, vc
 	ret
                                         // -- End function
-func000000000000004c:                   // @func000000000000004c
+func000000000000008c:                   // @func000000000000008c
 // %bb.0:                               // %entry
 	fmov	s1, #1.00000000
 	fcmp	s0, s1
@@ -34,7 +34,7 @@ func000000000000004c:                   // @func000000000000004c
 	cset	w0, ne
 	ret
                                         // -- End function
-func000000000000005c:                   // @func000000000000005c
+func00000000000000ac:                   // @func00000000000000ac
 // %bb.0:                               // %entry
 	fcmp	s0, #0.0
 	ccmp	x0, #0, #4, hi

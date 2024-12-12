@@ -1,21 +1,21 @@
 func000000000000000a:                   # @func000000000000000a
 	incl	%edx
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setl	%al
-	andb	%dil, %al
-	retq
-func0000000000000016:                   # @func0000000000000016
-	decl	%edx
-	movslq	%edx, %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	setg	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func0000000000000026:                   # @func0000000000000026
+	decl	%edx
+	movslq	%edx, %rax
+	cmpq	%rax, %rsi
+	setl	%al
+	andb	%dil, %al
+	retq
+func000000000000002a:                   # @func000000000000002a
 	addl	$-6, %edx
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setl	%al
+	cmpq	%rax, %rsi
+	setg	%al
 	andb	%dil, %al
 	retq

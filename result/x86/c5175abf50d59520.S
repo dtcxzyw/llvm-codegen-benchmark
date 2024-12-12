@@ -1,9 +1,9 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	incl	%ecx
 	cltd
 	idivl	%ecx
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

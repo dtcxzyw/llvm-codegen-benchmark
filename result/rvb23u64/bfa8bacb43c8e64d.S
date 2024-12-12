@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	slliw	a0, a0, 1
 	sltu	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	slli	a1, a1, 2
 	addiw	a1, a1, 36
 	slliw	a0, a0, 2
@@ -16,13 +16,13 @@ func000000000000000a:                   # @func000000000000000a
 	slliw	a0, a0, 2
 	slt	a0, a1, a0
 	ret
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	slli	a1, a1, 2
 	addiw	a1, a1, -12
 	slliw	a0, a0, 2
 	slt	a0, a1, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	slli	a1, a1, 5
 	addiw	a1, a1, -24
 	slliw	a0, a0, 1

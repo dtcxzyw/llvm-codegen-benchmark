@@ -7,7 +7,7 @@
 ; qemu/optimized/system_memory.c.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
@@ -21,7 +21,7 @@ entry:
 ; qemu/optimized/util_host-utils.c.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000a9(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
@@ -40,7 +40,7 @@ entry:
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
@@ -66,7 +66,7 @@ entry:
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
@@ -80,7 +80,7 @@ entry:
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005b(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000ab(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
@@ -93,7 +93,7 @@ entry:
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000057(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000a7(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
@@ -106,7 +106,7 @@ entry:
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw nsw i128 %3, 32
@@ -118,11 +118,11 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000079(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000e9(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw nsw i128 %3, 32
-  %5 = or disjoint i128 %4, %1
+  %5 = or disjoint i128 %1, %4
   %6 = icmp uge i128 %5, %0
   ret i1 %6
 }
@@ -131,7 +131,7 @@ entry:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000ac(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
@@ -143,11 +143,11 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000001e4(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
   %4 = shl nuw nsw i128 %3, 64
-  %5 = or disjoint i128 %4, %1
+  %5 = or disjoint i128 %1, %4
   %6 = icmp ult i128 %5, %0
   ret i1 %6
 }
@@ -155,11 +155,11 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw nsw i128 %3, 1
-  %5 = or disjoint i128 %4, %1
+  %5 = or disjoint i128 %1, %4
   %6 = icmp eq i128 %5, %0
   ret i1 %6
 }
@@ -167,7 +167,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl i128 %3, 65
@@ -179,11 +179,11 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
   %4 = shl nuw nsw i128 %3, 64
-  %5 = or disjoint i128 %4, %1
+  %5 = or disjoint i128 %1, %4
   %6 = icmp eq i128 %5, %0
   ret i1 %6
 }
@@ -191,7 +191,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
@@ -204,7 +204,7 @@ entry:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i128 %0, i128 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64

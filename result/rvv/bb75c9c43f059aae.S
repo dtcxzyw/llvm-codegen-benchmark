@@ -8,7 +8,7 @@ func0000000000000000:                   # @func0000000000000000
 	vxor.vv	v10, v12, v10
 	addi	a0, a0, -459
 	vmul.vx	v10, v10, a0
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret
 func0000000000000009:                   # @func0000000000000009
 	lui	a0, 1
@@ -19,7 +19,7 @@ func0000000000000009:                   # @func0000000000000009
 	vxor.vv	v10, v12, v10
 	li	a0, 17
 	vmul.vx	v10, v10, a0
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 17
@@ -29,7 +29,7 @@ func0000000000000008:                   # @func0000000000000008
 	vxor.vv	v10, v12, v10
 	li	a0, 1025
 	vmul.vx	v10, v10, a0
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret
 func0000000000000018:                   # @func0000000000000018
 	lui	a0, 1
@@ -40,5 +40,5 @@ func0000000000000018:                   # @func0000000000000018
 	vxor.vv	v10, v12, v10
 	li	a0, 17
 	vmul.vx	v10, v10, a0
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret

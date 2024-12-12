@@ -6,7 +6,7 @@
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/squarerootclvmodel.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -21,7 +21,7 @@ entry:
 ; luau/optimized/ldo.cpp.ll
 ; redis/optimized/ldo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 40

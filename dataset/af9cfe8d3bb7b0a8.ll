@@ -1,10 +1,14 @@
 
-; 210 occurrences:
+; 214 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cpython/optimized/mpdecimal.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/typeobject.ll
@@ -325,7 +329,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/alloc_lib.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll

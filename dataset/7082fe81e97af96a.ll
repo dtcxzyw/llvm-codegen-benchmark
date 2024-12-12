@@ -1,8 +1,8 @@
 
-%"struct.TristateVisitor::RefStrength.2637849" = type <{ ptr, %class.VStrength.2637800, [7 x i8] }>
-%class.VStrength.2637800 = type { i8 }
+%"struct.TristateVisitor::RefStrength.2751168" = type <{ ptr, %class.VStrength.2751119, [7 x i8] }>
+%class.VStrength.2751119 = type { i8 }
 
-; 240 occurrences:
+; 244 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -16,6 +16,10 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
@@ -244,13 +248,13 @@
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = ashr exact i64 %2, 2
   %4 = add nsw i64 %3, -2
   %5 = lshr exact i64 %4, 1
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -266,13 +270,13 @@ entry:
 ; velox/optimized/VectorSaver.cpp.ll
 ; xgboost/optimized/indexed_recordio_split.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = ashr exact i64 %2, 2
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -303,13 +307,13 @@ entry:
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; yosys/optimized/equiv_induct.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = ashr i64 %2, 4
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw %"struct.TristateVisitor::RefStrength.2637849", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.TristateVisitor::RefStrength.2751168", ptr %0, i64 %5
   ret ptr %6
 }
 

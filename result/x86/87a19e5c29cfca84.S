@@ -1,5 +1,5 @@
-func0000000000000050:                   # @func0000000000000050
-	andl	$223, %edx
+func0000000000000090:                   # @func0000000000000090
+	andl	$-33, %edx
 	addl	$-65, %edx
 	cmpl	$26, %edx
 	setb	%al

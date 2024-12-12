@@ -7,12 +7,12 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = or i32 %3, %0
   %5 = zext i8 %1 to i32
-  %6 = icmp uge i32 %4, %5
+  %6 = icmp samesign uge i32 %4, %5
   ret i1 %6
 }
 
@@ -22,10 +22,10 @@ entry:
 ; linux/optimized/drm_dp_mst_topology.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 128
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = icmp eq i32 %4, %5
   ret i1 %6
@@ -38,7 +38,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = icmp eq i32 %4, %5
   ret i1 %6

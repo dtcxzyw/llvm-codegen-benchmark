@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; g2o/optimized/edge_pointxyz.cpp.ll
 ; g2o/optimized/edge_project_p2sc.cpp.ll
@@ -46,11 +46,12 @@
 ; quantlib/optimized/exponentialintegrals.ll
 ; quantlib/optimized/fdklugeextouspreadengine.ll
 ; quantlib/optimized/fdsimpleklugeextouvppengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fneg double %2
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fsub double %4, %0
   ret double %5
 }

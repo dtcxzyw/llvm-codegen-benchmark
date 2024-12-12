@@ -22,9 +22,10 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/acecPool.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; cpython/optimized/_codecs_kr.ll
 ; icu/optimized/ucnvbocu.ll

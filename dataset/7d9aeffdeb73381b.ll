@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; clamav/optimized/unarj.c.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
@@ -32,7 +32,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -47,15 +46,14 @@
 define i16 @func0000000000000006(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
-; libevent/optimized/bufferevent_pair.c.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/sky2.ll
@@ -69,9 +67,9 @@ entry:
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
+; lvgl/optimized/lv_spinbox.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openspiel/optimized/rbc.cc.ll
 ; postgres/optimized/tsvector_op.ll
 ; ruby/optimized/ripper.ll
@@ -81,13 +79,15 @@ entry:
 define i16 @func0000000000000007(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 
-; 187 occurrences:
+; 182 occurrences:
 ; abc/optimized/trees.c.ll
+; boost/optimized/topology.ll
 ; brotli/optimized/encode.c.ll
+; clamav/optimized/autoit.c.ll
 ; clamav/optimized/explode.c.ll
 ; clamav/optimized/unarj.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -119,11 +119,9 @@ entry:
 ; libevent/optimized/event.c.ll
 ; libjpeg-turbo/optimized/jdarith.c.ll
 ; libjpeg-turbo/optimized/jdphuff.c.ll
-; libquic/optimized/custom_extensions.c.ll
 ; libquic/optimized/deflate.c.ll
 ; libquic/optimized/trees.c.ll
 ; linux/optimized/8250_core.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/ahci.ll
@@ -131,11 +129,9 @@ entry:
 ; linux/optimized/cgroup-v1.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/deftree.ll
-; linux/optimized/he.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/phy-c45.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/rsutils.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/vht.ll
@@ -154,7 +150,6 @@ entry:
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/JSON.cpp.ll
 ; llvm/optimized/LICM.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaLambda.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
@@ -218,7 +213,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -269,7 +263,6 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; zlib/optimized/deflate.c.ll
 ; zlib/optimized/trees.c.ll
@@ -277,7 +270,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -292,7 +285,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 
@@ -313,7 +306,7 @@ entry:
 define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -325,7 +318,7 @@ entry:
 define i16 @func0000000000000005(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 
@@ -337,7 +330,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 

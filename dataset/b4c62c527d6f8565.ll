@@ -3,9 +3,9 @@
 ; quantlib/optimized/noarbsabr.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
 ; Function Attrs: nounwind
-define double @func0000000000000011(i32 %0) #0 {
+define double @func0000000000000031(i32 %0) #0 {
 entry:
-  %1 = icmp ugt i32 %0, 1024
+  %1 = icmp samesign ugt i32 %0, 1024
   %2 = select i1 %1, i32 8, i32 2
   %3 = uitofp nneg i32 %2 to double
   ret double %3

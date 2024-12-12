@@ -36,7 +36,7 @@ define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
   %not. = xor i1 %0, true
   %.tr = trunc i32 %1 to i1
-  %.narrow = or i1 %not., %.tr
+  %.narrow = or i1 %.tr, %not.
   %2 = zext i1 %.narrow to i32
   ret i32 %2
 }

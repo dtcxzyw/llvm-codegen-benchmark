@@ -13,7 +13,7 @@
 func0000000000000004:                   # @func0000000000000004
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.short	63                              # 0x3f
@@ -30,7 +30,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000007:                   # @func0000000000000007
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.short	1                               # 0x1
@@ -47,7 +47,7 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000005:                   # @func0000000000000005
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.short	65520                           # 0xfff0
@@ -64,7 +64,7 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000001:                   # @func0000000000000001
 	vpandd	.LCPI3_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.byte	32                              # 0x20
@@ -103,5 +103,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpxor	%xmm2, %xmm2, %xmm2
 	vmovdqa	.LCPI4_0(%rip), %ymm3           # ymm3 = [32,1,34,35,36,37,38,39,40,3,42,43,44,45,46,47,48,5,50,51,52,53,54,55,56,7,58,59,60,61,62,63]
 	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpaddq	%ymm0, %ymm3, %ymm0
+	vpaddq	%ymm3, %ymm0, %ymm0
 	retq

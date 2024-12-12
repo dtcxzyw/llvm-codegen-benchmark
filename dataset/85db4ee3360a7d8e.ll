@@ -35,6 +35,7 @@ entry:
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/Importer.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/message.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -46,7 +47,6 @@ entry:
 ; git/optimized/archive-zip.ll
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; hermes/optimized/RegexSerialization.cpp.ll
 ; hermes/optimized/Sorting.cpp.ll
 ; hermes/optimized/zip.c.ll
@@ -65,7 +65,6 @@ entry:
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/indirect.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display_power_well.ll
@@ -188,6 +187,7 @@ entry:
 ; wireshark/optimized/packet-wmio.c.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/nlsat_solver.cpp.ll
+; zed-rs/optimized/1ftc77y2sv97gmniy36ag141f.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -232,8 +232,9 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/sky2.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; openssl/optimized/openssl-bin-enc.ll
@@ -246,7 +247,7 @@ entry:
   ret i32 %4
 }
 
-; 52 occurrences:
+; 50 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
@@ -265,7 +266,6 @@ entry:
 ; linux/optimized/arp.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/intel_sseu_debugfs.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/kallsyms.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/tcp_output.ll
@@ -286,7 +286,6 @@ entry:
 ; qemu/optimized/hw_display_vga.c.ll
 ; wireshark/optimized/androiddump.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/packet-ecmp.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
@@ -345,7 +344,7 @@ entry:
   ret i32 %4
 }
 
-; 60 occurrences:
+; 69 occurrences:
 ; c3c/optimized/lexer.c.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cpython/optimized/unicodeobject.ll
@@ -405,6 +404,15 @@ entry:
 ; velox/optimized/DenseHll.cpp.ll
 ; velox/optimized/Reverse.cpp.ll
 ; velox/optimized/StringFunctions.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; zxing/optimized/DMBitLayout.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
@@ -417,6 +425,7 @@ entry:
 
 ; 43 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/src.ll
 ; icu/optimized/ucnvhz.ll
 ; icu/optimized/ustdio.ll
 ; linux/optimized/i915_perf.ll
@@ -425,7 +434,6 @@ entry:
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/select.ll
 ; linux/optimized/skl_universal_plane.ll
-; linux/optimized/utownerid.ll
 ; php/optimized/decode.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; verilator/optimized/V3Hasher.cpp.ll
@@ -537,7 +545,8 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; abc/optimized/exor.c.ll
 ; gromacs/optimized/bwlzh.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -611,7 +620,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openjdk/optimized/methodData.ll
 ; raylib/optimized/rtextures.c.ll
 ; sundials/optimized/arkode_arkstep.c.ll
@@ -635,9 +645,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/intel_dmc.ll
-; linux/optimized/intel_snps_phy.ll
 ; openjdk/optimized/indexSet.ll
 ; wireshark/optimized/packet-gvsp.c.ll
 ; Function Attrs: nounwind
@@ -718,6 +727,28 @@ entry:
   %2 = shl nuw i32 %1, 1
   %3 = add nuw nsw i32 %0, 24
   %4 = add i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; abc/optimized/exor.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 1
+  %3 = add i32 %0, -28
+  %4 = add nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; abc/optimized/exor.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000025(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 1
+  %3 = add nsw i32 %0, -28
+  %4 = add nsw i32 %3, %2
   ret i32 %4
 }
 
@@ -818,17 +849,6 @@ entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw i32 %0, 1
   %4 = add i32 %3, %2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; openblas/optimized/dlasq6.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 1
-  %3 = add i32 %0, -8
-  %4 = add nsw i32 %3, %2
   ret i32 %4
 }
 

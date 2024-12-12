@@ -1,39 +1,27 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v3.8b, #1
-	movi	v4.8b, #4
-	and	v2.8b, v2.8b, v3.8b
-	and	v0.8b, v0.8b, v4.8b
-	orr	v1.8b, v2.8b, v1.8b
-	orr	v0.8b, v0.8b, v1.8b
-	ushll	v0.8h, v0.8b, #0
-	ushll2	v1.4s, v0.8h, #0
-	ushll	v0.4s, v0.4h, #0
+	and	w8, w2, #0x1
+	and	w9, w0, #0x4
+	orr	w8, w1, w8
+	orr	w8, w9, w8
+	and	w0, w8, #0xff
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	movi	v3.8b, #16
-	movi	v4.8b, #8
-	and	v2.8b, v2.8b, v3.8b
-	and	v1.8b, v1.8b, v4.8b
-	orr	v0.8b, v2.8b, v0.8b
-	orr	v0.8b, v0.8b, v1.8b
-	ushll	v0.8h, v0.8b, #0
-	ushll2	v1.4s, v0.8h, #0
-	ushll	v0.4s, v0.4h, #0
+	and	w8, w2, #0x10
+	and	w9, w1, #0x8
+	orr	w8, w0, w8
+	orr	w8, w8, w9
+	and	w0, w8, #0xff
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v3.8b, #64
-	movi	v4.8b, #16
-	and	v2.8b, v2.8b, v3.8b
-	and	v1.8b, v1.8b, v4.8b
-	orr	v0.8b, v2.8b, v0.8b
-	orr	v0.8b, v0.8b, v1.8b
-	ushll	v0.8h, v0.8b, #0
-	ushll2	v1.4s, v0.8h, #0
-	ushll	v0.4s, v0.4h, #0
+	and	w8, w2, #0x40
+	and	w9, w1, #0x10
+	orr	w8, w0, w8
+	orr	w8, w8, w9
+	and	w0, w8, #0xff
 	ret
                                         // -- End function

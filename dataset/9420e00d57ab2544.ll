@@ -3,21 +3,10 @@
 ; llvm/optimized/MCELFStreamer.cpp.ll
 ; qemu/optimized/util_memfd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = icmp eq i64 %3, %1
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/AddressSanitizer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000029(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw i64 1, %2
-  %4 = icmp uge i64 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -48,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/dict.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = icmp ult i64 %3, %1

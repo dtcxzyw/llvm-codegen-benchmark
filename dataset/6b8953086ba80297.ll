@@ -13,9 +13,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; slurm/optimized/node_features_knl_generic.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {

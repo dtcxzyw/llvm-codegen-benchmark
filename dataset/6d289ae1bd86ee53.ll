@@ -102,10 +102,10 @@
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000042(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
-  %3 = icmp eq i64 %2, %1
+  %3 = icmp eq i64 %1, %2
   %4 = icmp eq ptr %0, null
   %5 = or i1 %4, %3
   ret i1 %5

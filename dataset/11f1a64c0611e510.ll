@@ -8,7 +8,7 @@
 ; linux/optimized/inftrees.ll
 ; zlib/optimized/inftrees.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000104(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %notmask = shl nsw i32 -1, %2
   %3 = xor i32 %notmask, -1

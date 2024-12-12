@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	0x3ff0000000000000              # double 1
-func000000000000028a:                   # @func000000000000028a
+func000000000000090a:                   # @func000000000000090a
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, %hi(.LCPI0_0)

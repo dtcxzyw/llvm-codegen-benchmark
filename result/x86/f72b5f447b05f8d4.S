@@ -33,10 +33,16 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000012:                   # @func0000000000000012
 	shlq	$30, %rdx
-	sarq	$29, %rdx
+	sarq	$30, %rdx
 	addq	%rdi, %rdx
 	movslq	%esi, %rax
-	leaq	(%rdx,%rax,8), %rax
+	leaq	(%rdx,%rax,4), %rax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	movslq	%edx, %rax
+	leaq	(%rdi,%rax,4), %rax
+	movslq	%esi, %rcx
+	leaq	(%rax,%rcx,4), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	shrq	$4, %rdx

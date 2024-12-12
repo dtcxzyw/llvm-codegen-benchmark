@@ -1,7 +1,7 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000070:                   # @func0000000000000070
 	movzbl	%dl, %ecx
 	orl	%esi, %ecx
 	xorl	%eax, %eax
-	cmpl	%edi, %ecx
-	setb	%al
+	cmpl	%ecx, %edi
+	seta	%al
 	retq

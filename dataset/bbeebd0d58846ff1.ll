@@ -1,11 +1,9 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/dgesdd.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dstedc.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0) #0 {
 entry:

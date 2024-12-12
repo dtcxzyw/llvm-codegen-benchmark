@@ -1,9 +1,7 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; quantlib/optimized/pathwiseaccountingengine.ll
-; vcpkg/optimized/commands.integrate.cpp.ll
-; vcpkg/optimized/export.prefab.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(ptr %0, ptr %1) #0 {
 entry:

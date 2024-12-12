@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 103 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/amapPerm.c.ll
@@ -59,10 +59,8 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/l_mapgen.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
@@ -79,7 +77,6 @@
 ; postgres/optimized/blkreftable_shlib.ll
 ; postgres/optimized/blkreftable_srv.ll
 ; postgres/optimized/bufpage.ll
-; postgres/optimized/spgutils.ll
 ; postgres/optimized/tsquery.ll
 ; postgres/optimized/tsquery_cleanup.ll
 ; postgres/optimized/tsvector.ll
@@ -111,7 +108,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 5
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -154,7 +151,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 22
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -176,7 +173,7 @@ define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 13
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -221,7 +218,7 @@ define i32 @func000000000000001f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -283,7 +280,7 @@ define i32 @func000000000000001d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 %2, 5
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -323,7 +320,7 @@ define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nsw i32 %2, 1
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -357,7 +354,7 @@ define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %2, 10
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -429,7 +426,7 @@ define i32 @func0000000000000019(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 %2, 28
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -449,7 +446,7 @@ define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 %2, 8
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -479,7 +476,7 @@ define i32 @func0000000000000017(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 25
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -491,7 +488,7 @@ define i32 @func000000000000001e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 4
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -503,7 +500,7 @@ define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 %2, 24
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -514,7 +511,7 @@ define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 24
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -525,7 +522,7 @@ define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw i32 %2, 13
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

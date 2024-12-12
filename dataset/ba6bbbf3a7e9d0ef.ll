@@ -24,8 +24,7 @@ entry:
   ret i64 %2
 }
 
-; 13 occurrences:
-; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; 12 occurrences:
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll

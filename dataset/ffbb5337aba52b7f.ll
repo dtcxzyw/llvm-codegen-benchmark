@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; luajit/optimized/buildvm_lib.ll
-; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000001(i8 %0, i1 %1) #0 {
-entry:
-  %2 = icmp eq i8 %0, 0
-  %3 = select i1 %2, i1 %1, i1 false
-  %4 = select i1 %3, i8 1, i8 %0
-  ret i8 %4
-}
-
 ; 1 occurrences:
 ; linux/optimized/nsnames.ll
 ; Function Attrs: nounwind

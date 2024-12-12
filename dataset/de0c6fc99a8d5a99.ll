@@ -1,10 +1,12 @@
 
-; 39 occurrences:
+; 41 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; flatbuffers/optimized/flatc.cpp.ll
 ; hdf5/optimized/H5Odtype.c.ll
 ; icu/optimized/collationfastlatin.ll
@@ -47,7 +49,8 @@ entry:
   ret i64 %2
 }
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; hermes/optimized/HermesInternal.cpp.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; hermes/optimized/RuntimeJSONUtils.cpp.ll

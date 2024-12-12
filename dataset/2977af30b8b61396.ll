@@ -11,7 +11,8 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/algorithm.ll
 ; gromacs/optimized/pdbio.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll
 ; ocio/optimized/MatrixOpData.cpp.ll
@@ -45,6 +46,21 @@ entry:
   ret i1 %5
 }
 
+; 5 occurrences:
+; boost/optimized/algorithm.ll
+; cpython/optimized/cmathmodule.ll
+; postgres/optimized/float.ll
+; xgboost/optimized/updater_approx.cc.ll
+; xgboost/optimized/updater_quantile_hist.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, double %2) #0 {
+entry:
+  %3 = fcmp oeq double %2, 2.000000e+00
+  %4 = select i1 %1, i1 true, i1 %3
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; ocio/optimized/GradingPrimary.cpp.ll
 ; opencv/optimized/fundam.cpp.ll
@@ -66,20 +82,6 @@ entry:
 define i1 @func0000000000000001(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp uno double %2, 0.000000e+00
-  %4 = select i1 %1, i1 true, i1 %3
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
-; 4 occurrences:
-; cpython/optimized/cmathmodule.ll
-; postgres/optimized/float.ll
-; xgboost/optimized/updater_approx.cc.ll
-; xgboost/optimized/updater_quantile_hist.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, double %2) #0 {
-entry:
-  %3 = fcmp oeq double %2, 0x7FF0000000000000
   %4 = select i1 %1, i1 true, i1 %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5

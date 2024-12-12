@@ -12,12 +12,12 @@
 ; slurm/optimized/sackd.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   %5 = zext i32 %1 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }
@@ -27,12 +27,12 @@ entry:
 ; opencv/optimized/aruco_detector.cpp.ll
 ; proxygen/optimized/HPACKEncodeBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   %5 = zext i32 %1 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }
@@ -41,25 +41,12 @@ entry:
 ; cmake/optimized/zdict.c.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %5 = zext i32 %1 to i64
-  %6 = icmp ugt i64 %5, %0
-  %7 = select i1 %6, i1 true, i1 %4
-  ret i1 %7
-}
-
-; 1 occurrences:
-; opencv/optimized/edge_drawing.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000281(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
-  %5 = zext i32 %1 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }
@@ -67,12 +54,12 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/validate.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000366(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cc6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = zext nneg i32 %1 to i64
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }
@@ -80,12 +67,12 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/FileFormatHDL.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000384(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d04(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   %5 = zext nneg i32 %1 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }
@@ -93,12 +80,12 @@ entry:
 ; 1 occurrences:
 ; pocketpy/optimized/collections.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000344(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c84(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %5 = zext nneg i32 %1 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }

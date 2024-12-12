@@ -11,7 +11,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	retq
 .LCPI1_0:
 	.zero	16,3
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpunordpd	%zmm3, %zmm1, %k0
 	vcmpunordpd	%zmm3, %zmm2, %k1
@@ -22,7 +22,7 @@ func0000000000000014:                   # @func0000000000000014
 	retq
 .LCPI2_0:
 	.zero	16,7
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpunordpd	%zmm3, %zmm1, %k0
 	vcmpunordpd	%zmm3, %zmm2, %k1

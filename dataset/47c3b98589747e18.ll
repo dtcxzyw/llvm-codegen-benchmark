@@ -16,10 +16,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i8 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i8 1, i8 -1
-  %3 = sub i8 0, %0
-  %4 = icmp ne i8 %2, %3
-  ret i1 %4
+  %.neg = select i1 %1, i8 -1, i8 1
+  %2 = icmp ne i8 %0, %.neg
+  ret i1 %2
 }
 
 ; 2 occurrences:

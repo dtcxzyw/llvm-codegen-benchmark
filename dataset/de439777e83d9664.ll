@@ -3,7 +3,7 @@
 ; assimp/optimized/SIBImporter.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000003e4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -12
   %3 = zext nneg i32 %1 to i64
@@ -21,7 +21,7 @@ entry:
 ; msgpack/optimized/speed_test_nested_array.cpp.ll
 ; ozz-animation/optimized/raw_animation_archive.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000174(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000002e4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -12
   %3 = zext i32 %1 to i64

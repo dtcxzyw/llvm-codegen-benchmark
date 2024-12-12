@@ -3,7 +3,7 @@
 ; cmake/optimized/cover.c.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, double %1, double %2) #0 {
+define i1 @func000000000000006a(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fcmp ult double %3, 1.000000e+01
@@ -18,11 +18,11 @@ entry:
 ; sundials/optimized/cvode.c.ll
 ; sundials/optimized/cvodes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000098(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fcmp ogt double %3, 2.000000e+00
-  %5 = icmp ugt i32 %0, 1
+  %5 = icmp samesign ugt i32 %0, 1
   %6 = and i1 %5, %4
   ret i1 %6
 }

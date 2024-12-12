@@ -16,7 +16,7 @@ func0000000000000017:                   # @func0000000000000017
 	retq
 .LCPI2_0:
 	.long	32768                           # 0x8000
-func0000000000000043:                   # @func0000000000000043
+func0000000000000143:                   # @func0000000000000143
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm2, %k0
 	vpor	%ymm1, %ymm0, %ymm0
 	vpmovm2d	%k0, %ymm1

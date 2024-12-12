@@ -1,5 +1,5 @@
 
-; 214 occurrences:
+; 209 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -57,6 +57,7 @@
 ; abc/optimized/sbdSat.c.ll
 ; abc/optimized/sswIslands.c.ll
 ; abc/optimized/sswPairs.c.ll
+; abc/optimized/utilNam.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcGraft.c.ll
 ; abc/optimized/wlcMem.c.ll
@@ -161,7 +162,6 @@
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftRigidDynamicsWorld.ll
-; bullet3/optimized/btSoftSoftCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereSphereCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
@@ -193,13 +193,9 @@
 ; icu/optimized/units_router.ll
 ; libzmq/optimized/stream_connecter_base.cpp.ll
 ; llvm/optimized/CoverageMappingWriter.cpp.ll
-; memcached/optimized/memcached-slabs.ll
-; memcached/optimized/memcached_debug-slabs.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nori/optimized/nanovg.c.ll
 ; openblas/optimized/dgesvdq.c.ll
-; opencv/optimized/apriltag_quad_thresh.cpp.ll
-; opencv/optimized/array.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/upcean_decoder.cpp.ll
 ; openjdk/optimized/SDE.ll
@@ -207,7 +203,6 @@
 ; openmpi/optimized/if_posix.ll
 ; openmpi/optimized/pif_posix.ll
 ; recastnavigation/optimized/MeshLoaderObj.cpp.ll
-; redis/optimized/module.ll
 ; slurm/optimized/container.ll
 ; slurm/optimized/slurm_protocol_api.ll
 ; stb/optimized/stb_dxt.c.ll
@@ -222,7 +217,7 @@ entry:
   ret i32 %3
 }
 
-; 96 occurrences:
+; 81 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/huffman.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -231,9 +226,7 @@ entry:
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
 ; c3c/optimized/sema_asm.c.ll
 ; clamav/optimized/htmlnorm.c.ll
-; clamav/optimized/str.c.ll
 ; cmake/optimized/huffman.c.ll
-; cpython/optimized/dtoa.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/optimizer.ll
 ; entt/optimized/benchmark.cpp.ll
@@ -259,12 +252,9 @@ entry:
 ; flac/optimized/stream_decoder.c.ll
 ; folly/optimized/SharedMutex.cpp.ll
 ; git/optimized/archive-zip.ll
-; hermes/optimized/SmallPtrSet.cpp.ll
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; hwloc/optimized/bitmap.ll
 ; hwloc/optimized/topology-linux.ll
-; linux/optimized/8250_lpss.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/dm-table.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/i9xx_wm.ll
@@ -278,7 +268,6 @@ entry:
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/NestedNameSpecifier.cpp.ll
-; llvm/optimized/SmallPtrSet.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lua/optimized/lcode.ll
 ; luajit/optimized/minilua.ll
@@ -287,9 +276,6 @@ entry:
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
@@ -310,14 +296,8 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/lcode.ll
 ; redis/optimized/quicklist.ll
-; rocksdb/optimized/lock_request.cc.ll
-; rocksdb/optimized/locktree.cc.ll
-; rocksdb/optimized/manager.cc.ll
-; rocksdb/optimized/txnid_set.cc.ll
-; rocksdb/optimized/wfg.cc.ll
 ; ruby/optimized/ractor.ll
 ; ruby/optimized/static_literals.ll
-; ruby/optimized/util.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
@@ -327,8 +307,51 @@ entry:
   ret i32 %3
 }
 
-; 42 occurrences:
-; c3c/optimized/decltable.c.ll
+; 79 occurrences:
+; abc/optimized/abcDfs.c.ll
+; abc/optimized/abcExact.c.ll
+; abc/optimized/abcFraig.c.ll
+; abc/optimized/abcGen.c.ll
+; abc/optimized/abcIf.c.ll
+; abc/optimized/abcRec3.c.ll
+; abc/optimized/abcStrash.c.ll
+; abc/optimized/abcSweep.c.ll
+; abc/optimized/abcUtil.c.ll
+; abc/optimized/absRpm.c.ll
+; abc/optimized/acecFadds.c.ll
+; abc/optimized/amapParse.c.ll
+; abc/optimized/bacBlast.c.ll
+; abc/optimized/cnfWrite.c.ll
+; abc/optimized/extraUtilEnum.c.ll
+; abc/optimized/giaAiger.c.ll
+; abc/optimized/giaCof.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaFrames.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaMini.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaRex.c.ll
+; abc/optimized/giaSatLE.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaSplit.c.ll
+; abc/optimized/giaStg.c.ll
+; abc/optimized/giaStoch.c.ll
+; abc/optimized/ioReadAiger.c.ll
+; abc/optimized/ioReadBaf.c.ll
+; abc/optimized/ioReadBlif.c.ll
+; abc/optimized/ioaReadAig.c.ll
+; abc/optimized/ivyDsd.c.ll
+; abc/optimized/mioParse.c.ll
+; abc/optimized/pdrInv.c.ll
+; abc/optimized/satProof.c.ll
+; abc/optimized/sclSize.c.ll
+; abc/optimized/sfmDec.c.ll
+; abc/optimized/sswRarity.c.ll
+; abc/optimized/utilBridge.c.ll
+; abc/optimized/verFormula.c.ll
+; abc/optimized/wlcReadVer.c.ll
+; boost/optimized/generator.ll
 ; c3c/optimized/symtab.c.ll
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
@@ -345,22 +368,16 @@ entry:
 ; libevent/optimized/evmap.c.ll
 ; libevent/optimized/poll.c.ll
 ; libwebp/optimized/near_lossless_enc.c.ll
-; linux/optimized/ebda.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/intel_ddi.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; lua/optimized/ldo.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
-; opencv/optimized/filter.dispatch.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
+; lvgl/optimized/lv_anim.ll
 ; opencv/optimized/zmaxheap.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
-; postgres/optimized/varlena.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
@@ -378,13 +395,12 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/saigSimMv.c.ll
+; darktable/optimized/tagging.c.ll
 ; entt/optimized/registry.cpp.ll
 ; libwebp/optimized/near_lossless_enc.c.ll
 ; qemu/optimized/target_riscv_cpu.c.ll
-; slurm/optimized/preempt_qos.ll
-; z3/optimized/theory_str_regex.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:

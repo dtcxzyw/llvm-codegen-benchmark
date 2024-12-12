@@ -4,7 +4,7 @@
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, float %1) #0 {
+define i1 @func00000000000000c6(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = icmp slt i32 %2, 0

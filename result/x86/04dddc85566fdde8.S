@@ -1,10 +1,10 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	leaq	4(%rdi,%rax,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax

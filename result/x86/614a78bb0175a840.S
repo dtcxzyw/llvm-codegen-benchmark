@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	leal	(%rsi,%rdx,2), %eax
 	incl	%edi
 	cmpl	%eax, %edi
@@ -10,7 +10,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	(%rsi,%rdx,8), %eax
 	incl	%edi
 	cmpl	%eax, %edi
@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000306:                   # @func0000000000000306
+func0000000000000606:                   # @func0000000000000606
 	leal	(%rsi,%rdx,8), %eax
 	addl	$16, %edi
 	cmpl	%eax, %edi
@@ -34,38 +34,38 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000304:                   # @func0000000000000304
+func0000000000000604:                   # @func0000000000000604
 	shll	$4, %edx
 	addl	%esi, %edx
 	addl	$8, %edi
 	cmpl	%edx, %edi
 	setb	%al
 	retq
-func0000000000000176:                   # @func0000000000000176
+func00000000000002e6:                   # @func00000000000002e6
 	leal	(%rsi,%rdx,2), %eax
 	incl	%edi
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000171:                   # @func0000000000000171
+func00000000000002e1:                   # @func00000000000002e1
 	leal	(%rsi,%rdx,2), %eax
 	incl	%edi
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leal	(%rsi,%rdx,2), %eax
 	incl	%edi
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	leal	(%rsi,%rdx,8), %eax
 	incl	%edi
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leal	(%rsi,%rdx,2), %eax
 	incl	%edi
 	cmpl	%eax, %edi

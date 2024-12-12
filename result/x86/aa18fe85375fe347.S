@@ -1,24 +1,24 @@
 func0000000000000001:                   # @func0000000000000001
 	sarl	$31, %edx
 	addl	%esi, %edx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sarl	%edx
 	addl	%esi, %edx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sarl	$6, %edx
 	addl	%esi, %edx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	sarl	$31, %edx
 	addl	%esi, %edx
-	cmpq	%rdi, %rdx
-	setb	%al
+	cmpq	%rdx, %rdi
+	seta	%al
 	retq

@@ -1,14 +1,14 @@
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	andb	%dl, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	testl	$16777216, %edx                 # imm = 0x1000000
 	sete	%cl
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	andb	%cl, %al
 	retq

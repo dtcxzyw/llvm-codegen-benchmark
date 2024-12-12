@@ -11,7 +11,8 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll

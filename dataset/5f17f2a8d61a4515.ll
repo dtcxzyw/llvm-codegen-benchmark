@@ -6,8 +6,8 @@
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
+; openexr/optimized/ImfImage.cpp.ll
+; openexr/optimized/ImfTiledMisc.cpp.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -19,17 +19,15 @@ entry:
   %3 = and i32 %2, 4
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 1
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
-; openexr/optimized/ImfImage.cpp.ll
-; openexr/optimized/ImfTiledMisc.cpp.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
@@ -37,11 +35,11 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 1073741824
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
-; 264 occurrences:
+; 262 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -253,8 +251,6 @@ entry:
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openmpi/optimized/mca_base_var.ll
 ; openmpi/optimized/pmix_mca_base_var.ll
@@ -312,7 +308,7 @@ entry:
   %3 = and i32 %2, 64
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 0
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -324,7 +320,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
   %.not.not = icmp eq i32 %3, 0

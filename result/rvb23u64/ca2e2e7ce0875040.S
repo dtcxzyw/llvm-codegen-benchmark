@@ -4,7 +4,13 @@ func0000000000000030:                   # @func0000000000000030
 	sh3add	a0, a1, a0
 	addi	a0, a0, -22
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
+	andi	a1, a1, 255
+	sh1add	a1, a1, a1
+	sh3add	a0, a1, a0
+	addi	a0, a0, 16
+	ret
+func000000000000007f:                   # @func000000000000007f
 	andi	a1, a1, 255
 	sh1add	a1, a1, a1
 	add	a0, a0, a1

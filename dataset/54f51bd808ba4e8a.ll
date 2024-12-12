@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; icu/optimized/reslist.ll
+; lvgl/optimized/lv_math.ll
 ; openspiel/optimized/dots_and_boxes.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

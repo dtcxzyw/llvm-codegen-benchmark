@@ -61,39 +61,28 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; darktable/optimized/UncompressedDecompressor.cpp.ll
-; gromacs/optimized/xtc2.c.ll
-; icu/optimized/decNumber.ll
-; linux/optimized/ipv6_sockglue.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = and i1 %1, %2
-  %4 = icmp ult i32 %0, 8
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 21 occurrences:
+; 24 occurrences:
+; gromacs/optimized/dsteqr.cpp.ll
+; gromacs/optimized/ssteqr.cpp.ll
 ; linux/optimized/ip_tunnel.ll
+; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dgegv.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
+; openblas/optimized/dgges.c.ll
+; openblas/optimized/dgges3.c.ll
+; openblas/optimized/dggesx.c.ll
 ; openblas/optimized/dggev.c.ll
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dggevx.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dhseqr.c.ll
-; openblas/optimized/dstevd.c.ll
+; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dtgsja.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrsen.c.ll
-; openblas/optimized/dtrsna.c.ll
-; ozz-animation/optimized/jsoncpp.cpp.ll
 ; postgres/optimized/gindatapage.ll
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
@@ -101,7 +90,20 @@ entry:
 define i1 @func0000000000000006(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
-  %4 = icmp slt i32 %0, 68
+  %4 = icmp slt i32 %0, 1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 3 occurrences:
+; gromacs/optimized/xtc2.c.ll
+; icu/optimized/decNumber.ll
+; linux/optimized/ipv6_sockglue.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = and i1 %1, %2
+  %4 = icmp ult i32 %0, -3
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }

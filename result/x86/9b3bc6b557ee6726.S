@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	imull	$1000000, %esi, %eax            # imm = 0xF4240
 	cltq
 	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
@@ -7,6 +7,6 @@ func0000000000000028:                   # @func0000000000000028
 	shrq	$32, %rax
 	addl	%ecx, %eax
 	cltq
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

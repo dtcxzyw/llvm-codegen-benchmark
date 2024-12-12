@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -25,11 +25,12 @@
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3FF31A9FC0000000
-  %4 = fadd float %3, %1
+  %4 = fadd float %1, %3
   %5 = fadd float %4, %0
   %6 = fmul float %5, 0x3FE40D9320000000
   ret float %6

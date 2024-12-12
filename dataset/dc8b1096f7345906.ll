@@ -1,5 +1,5 @@
 
-; 780 occurrences:
+; 782 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
@@ -27,6 +27,9 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/localization_backend.ll
+; boost/optimized/partition.ll
+; boost/optimized/range.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
@@ -47,6 +50,7 @@
 ; ceres/optimized/inner_product_computer.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
+; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmUVProcessChain.cxx.ll
 ; cmake/optimized/protocol_events.cpp.ll
 ; cmake/optimized/protocol_requests.cpp.ll
@@ -390,6 +394,7 @@
 ; llvm/optimized/StackColoring.cpp.ll
 ; llvm/optimized/StackLifetime.cpp.ll
 ; llvm/optimized/StackSlotColoring.cpp.ll
+; llvm/optimized/StandardInstrumentations.cpp.ll
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
 ; llvm/optimized/StringRef.cpp.ll
 ; llvm/optimized/StructurizeCFG.cpp.ll
@@ -431,7 +436,6 @@
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -531,6 +535,7 @@
 ; openspiel/optimized/external_sampling_mccfr.cc.ll
 ; openspiel/optimized/fsicfr.cc.ll
 ; openspiel/optimized/goofspiel.cc.ll
+; openspiel/optimized/kuhn_poker.cc.ll
 ; openspiel/optimized/markov_soccer.cc.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; openspiel/optimized/oh_hell.cc.ll
@@ -548,7 +553,6 @@
 ; pbrt-v4/optimized/parser.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/aset.ll
-; postgres/optimized/backend_progress.ll
 ; postgres/optimized/clog.ll
 ; postgres/optimized/hashpage.ll
 ; postgres/optimized/lock.ll
@@ -594,7 +598,6 @@
 ; quantlib/optimized/fdmsquarerootfwdop.ll
 ; quantlib/optimized/fdmzabrop.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dcapfloorengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/himalayaoption.ll
@@ -775,7 +778,6 @@
 ; yosys/optimized/xilinx_dsp.ll
 ; yosys/optimized/xilinx_srl.ll
 ; yosys/optimized/xprop.ll
-; z3/optimized/watch_list.cpp.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GenericGFPoly.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
@@ -816,10 +818,10 @@ entry:
 
 ; 7 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; llvm/optimized/GlobalMerge.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; opencv/optimized/motion_estimators.cpp.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; yosys/optimized/equiv_mark.ll
 ; Function Attrs: nounwind

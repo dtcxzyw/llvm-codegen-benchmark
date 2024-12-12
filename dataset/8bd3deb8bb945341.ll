@@ -1,12 +1,12 @@
 
-%"class.duckdb_tdigest::Centroid.2858777" = type { double, double }
-%class.QPointF.3260221 = type { double, double }
-%"struct.ceres::internal::CompressedList.3324633" = type { %"struct.ceres::internal::Block.3324632", %"class.std::vector.13.3324634", i32, i32 }
-%"struct.ceres::internal::Block.3324632" = type { i32, i32 }
-%"class.std::vector.13.3324634" = type { %"struct.std::_Vector_base.14.3324635" }
-%"struct.std::_Vector_base.14.3324635" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3324636" }
-%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3324636" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3324637" }
-%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3324637" = type { ptr, ptr, ptr }
+%"class.duckdb_tdigest::Centroid.2970406" = type { double, double }
+%class.QPointF.3450967 = type { double, double }
+%"struct.ceres::internal::CompressedList.3513816" = type { %"struct.ceres::internal::Block.3513815", %"class.std::vector.13.3513817", i32, i32 }
+%"struct.ceres::internal::Block.3513815" = type { i32, i32 }
+%"class.std::vector.13.3513817" = type { %"struct.std::_Vector_base.14.3513818" }
+%"struct.std::_Vector_base.14.3513818" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3513819" }
+%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3513819" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3513820" }
+%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3513820" = type { ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -16,7 +16,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4294967296
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %"class.duckdb_tdigest::Centroid.2858777", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"class.duckdb_tdigest::Centroid.2970406", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -29,7 +29,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -8589934592
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr %class.QPointF.3260221, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %class.QPointF.3450967, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -62,7 +62,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4294967296
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw %"struct.ceres::internal::CompressedList.3324633", ptr %0, i64 %3, i32 3
+  %4 = getelementptr nusw %"struct.ceres::internal::CompressedList.3513816", ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 

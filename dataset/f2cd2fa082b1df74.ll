@@ -1,5 +1,5 @@
 
-; 231 occurrences:
+; 230 occurrences:
 ; darktable/optimized/introspection_grain.c.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; gromacs/optimized/cstringutil.cpp.ll
@@ -111,7 +111,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll

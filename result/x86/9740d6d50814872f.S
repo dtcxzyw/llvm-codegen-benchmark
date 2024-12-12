@@ -25,3 +25,8 @@ func0000000000000004:                   # @func0000000000000004
 	subq	%rdi, %rax
 	imulq	$186065280, %rax, %rax          # imm = 0xB172180
 	retq
+func0000000000000003:                   # @func0000000000000003
+	movl	$1, %eax
+	subq	%rdi, %rax
+	imulq	$168, %rax, %rax
+	retq

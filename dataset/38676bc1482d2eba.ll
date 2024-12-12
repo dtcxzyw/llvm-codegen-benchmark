@@ -16,7 +16,7 @@ entry:
   ret i64 %6
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/VectorTransform.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -24,7 +24,6 @@ entry:
 ; gromacs/optimized/pme.cpp.ll
 ; gromacs/optimized/state.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

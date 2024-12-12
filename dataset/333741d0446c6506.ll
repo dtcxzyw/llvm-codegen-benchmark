@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 63 occurrences:
 ; assimp/optimized/AMFImporter_Material.cpp.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
@@ -61,16 +61,18 @@
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 168 occurrences:
+; 167 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/sbdSat.c.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -90,7 +92,6 @@ entry:
 ; libwebp/optimized/rescaler.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
@@ -240,16 +241,17 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 166 occurrences:
+; 167 occurrences:
 ; abc/optimized/acecFadds.c.ll
+; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -416,43 +418,29 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tinympc/optimized/codegen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 35 occurrences:
+; 21 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
-; assimp/optimized/MDLMaterialLoader.cpp.ll
-; assimp/optimized/TerragenLoader.cpp.ll
-; clamav/optimized/hfsplus.c.ll
-; clamav/optimized/rs16.cpp.ll
-; graphviz/optimized/gvdevice_kitty.c.ll
-; hdf5/optimized/H5HFcache.c.ll
-; hdf5/optimized/H5HFiblock.c.ll
 ; hdf5/optimized/H5Osdspace.c.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
-; libpng/optimized/pngread.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/drm_gem_shmem_helper.ll
 ; linux/optimized/vmstat.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/DXContainer.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/StmtPrinter.cpp.ll
-; lodepng/optimized/pngdetail.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/png.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; openjdk/optimized/pngread.ll
-; openvdb/optimized/AttributeGroup.cc.ll
-; openvdb/optimized/points.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
@@ -465,7 +453,7 @@ define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -478,11 +466,11 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/retinafasttonemapping.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -509,57 +497,77 @@ define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
-; 10 occurrences:
+; 18 occurrences:
+; assimp/optimized/MDLMaterialLoader.cpp.ll
+; assimp/optimized/TerragenLoader.cpp.ll
+; clamav/optimized/hfsplus.c.ll
+; clamav/optimized/rs16.cpp.ll
+; graphviz/optimized/gvdevice_kitty.c.ll
+; hdf5/optimized/H5HFcache.c.ll
+; hdf5/optimized/H5HFiblock.c.ll
+; libpng/optimized/pngread.c.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_table.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; minetest/optimized/clouds.cpp.ll
+; openjdk/optimized/pngread.ll
+; openvdb/optimized/AttributeGroup.cc.ll
+; openvdb/optimized/points.cc.ll
+; xgboost/optimized/updater_coordinate.cc.ll
+; xgboost/optimized/updater_shotgun.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = icmp samesign ult i64 %0, %4
+  ret i1 %5
+}
+
+; 5 occurrences:
 ; darktable/optimized/RawDecoder.cpp.ll
-; gromacs/optimized/genconf.cpp.ll
 ; gromacs/optimized/nbsearch.cpp.ll
 ; hdf5/optimized/H5Olayout.c.ll
 ; hdf5/optimized/H5Osdspace.c.ll
-; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
-; opencv/optimized/matrix_sparse.cpp.ll
-; opencv/optimized/resize.cpp.ll
-; openspiel/optimized/spiel_utils.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; opencv/optimized/copy.cpp.ll
-; opencv/optimized/matrix_sparse.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; minetest/optimized/guiTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
-; darktable/optimized/UncompressedDecompressor.cpp.ll
-; llvm/optimized/ExprConstant.cpp.ll
+; 2 occurrences:
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; Function Attrs: nounwind
@@ -567,18 +575,27 @@ define i1 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp uge i64 %4, %0
+  %5 = icmp ule i64 %0, %4
   ret i1 %5
 }
 
-; 14 occurrences:
+; 1 occurrences:
+; qemu/optimized/block_qed.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = icmp samesign ugt i64 %0, %4
+  ret i1 %5
+}
+
+; 12 occurrences:
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_splittoning.c.ll
-; darktable/optimized/introspection_vibrance.c.ll
-; gromacs/optimized/atomdata.cpp.ll
-; gromacs/optimized/grompp.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; openexr/optimized/ImfDeepTiledOutputFile.cpp.ll
 ; openexr/optimized/ImfTiledOutputFile.cpp.ll
@@ -587,15 +604,15 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
-; 34 occurrences:
+; 30 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -614,16 +631,12 @@ entry:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/SamsungV0Decompressor.cpp.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
-; darktable/optimized/SonyArw1Decompressor.cpp.ll
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
-; ocio/optimized/FileFormatIridasCube.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
-; opencv/optimized/filter.dispatch.cpp.ll
-; opencv/optimized/gapi_video_perf_tests.cpp.ll
 ; opencv/optimized/grayworld_white_balance.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/rand.cpp.ll
@@ -631,11 +644,11 @@ entry:
 ; opencv/optimized/ts_func.cpp.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
@@ -662,11 +675,11 @@ entry:
 ; slurm/optimized/gres_sock_list.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -678,11 +691,24 @@ entry:
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; opencv/optimized/copy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; darktable/optimized/DeflateDecompressor.cpp.ll
+; darktable/optimized/PanasonicV7Decompressor.cpp.ll
+; darktable/optimized/RawImageDataU16.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000065(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp ule i64 %0, %4
   ret i1 %5
 }
 
@@ -696,11 +722,11 @@ entry:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000075(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp uge i64 %4, %0
+  %5 = icmp samesign ule i64 %0, %4
   ret i1 %5
 }
 
@@ -712,25 +738,86 @@ entry:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f5(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp uge i64 %4, %0
+  %5 = icmp samesign ule i64 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
-; clamav/optimized/chmd.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
-; opencv/optimized/rand.cpp.ll
+; 12 occurrences:
+; darktable/optimized/ArwDecoder.cpp.ll
+; darktable/optimized/DeflateDecompressor.cpp.ll
+; darktable/optimized/IiqDecoder.cpp.ll
+; darktable/optimized/JpegDecompressor.cpp.ll
+; darktable/optimized/RawImageDataFloat.cpp.ll
+; darktable/optimized/RawImageDataU16.cpp.ll
+; darktable/optimized/SamsungV0Decompressor.cpp.ll
+; darktable/optimized/SonyArw1Decompressor.cpp.ll
+; darktable/optimized/UncompressedDecompressor.cpp.ll
+; ocio/optimized/FileFormatIridasCube.cpp.ll
+; opencv/optimized/filter.dispatch.cpp.ll
+; opencv/optimized/gapi_video_perf_tests.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; darktable/optimized/UncompressedDecompressor.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = icmp samesign ule i64 %0, %4
+  ret i1 %5
+}
+
+; 6 occurrences:
+; darktable/optimized/RawDecoder.cpp.ll
+; gromacs/optimized/genconf.cpp.ll
+; llvm/optimized/X86InterleavedAccess.cpp.ll
+; opencv/optimized/matrix_sparse.cpp.ll
+; opencv/optimized/resize.cpp.ll
+; openspiel/optimized/spiel_utils.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; darktable/optimized/introspection_vibrance.c.ll
+; gromacs/optimized/atomdata.cpp.ll
+; gromacs/optimized/grompp.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; clamav/optimized/chmd.c.ll
+; opencv/optimized/rand.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e6(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nuw nsw i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -741,7 +828,7 @@ define i1 @func000000000000000c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp ne i64 %4, %0
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
@@ -758,34 +845,30 @@ define i1 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
-; linux/optimized/intel_fbc.ll
+; 1 occurrences:
 ; llvm/optimized/CGBuiltin.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp ule i64 %4, %0
+  %5 = icmp samesign uge i64 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
-; libwebp/optimized/rescaler_sse2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -796,40 +879,97 @@ define i1 @func000000000000000a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; linux/optimized/intel_fbc.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = icmp uge i64 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zxing/optimized/PDFDetectionResultColumn.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp samesign ugt i64 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zxing/optimized/PDFDetectionResultColumn.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000079(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp samesign uge i64 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/matrix_sparse.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f8(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nuw nsw i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp samesign ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; freetype/optimized/type1cid.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; libwebp/optimized/rescaler_sse2.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp samesign ugt i64 %0, %4
   ret i1 %5
 }
 

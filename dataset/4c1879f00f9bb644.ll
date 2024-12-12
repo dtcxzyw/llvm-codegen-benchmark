@@ -2,26 +2,13 @@
 ; 1 occurrences:
 ; clamav/optimized/pe.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = add nuw nsw i64 %4, %3
   %6 = add nuw nsw i64 %0, 4050
-  %7 = icmp ugt i64 %6, %5
-  ret i1 %7
-}
-
-; 1 occurrences:
-; clamav/optimized/pe.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f5(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = zext i32 %1 to i64
-  %5 = add nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %0, 9
-  %7 = icmp ule i64 %6, %5
+  %7 = icmp samesign ugt i64 %6, %5
   ret i1 %7
 }
 
@@ -87,7 +74,7 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
@@ -100,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Compiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c9(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000189(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
@@ -113,13 +100,13 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/decode_as_utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = add nuw nsw i64 %4, %3
   %6 = add nuw nsw i64 %0, 1
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 

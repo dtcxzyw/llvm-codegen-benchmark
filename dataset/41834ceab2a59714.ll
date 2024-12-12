@@ -7,7 +7,7 @@ entry:
   %3 = select i1 %2, i32 -48, i32 -55
   %4 = add nsw i32 %3, %1
   %5 = shl nuw nsw i32 %4, 4
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = trunc i32 %6 to i8
   ret i8 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = select i1 %2, i32 -48, i32 -87
   %4 = add nsw i32 %3, %1
   %5 = shl nsw i32 %4, 4
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = trunc i32 %6 to i8
   ret i8 %7
 }

@@ -1,4 +1,4 @@
-func0000000000000128:                   # @func0000000000000128
+func0000000000000248:                   # @func0000000000000248
 	sarq	$3, %rsi
 	imulq	%rdi, %rsi
 	leaq	(,%rsi,8), %rcx
@@ -8,7 +8,7 @@ func0000000000000128:                   # @func0000000000000128
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	sarq	$3, %rsi
 	imulq	%rdi, %rsi
 	leaq	(,%rsi,8), %rcx
@@ -18,7 +18,7 @@ func0000000000000108:                   # @func0000000000000108
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000168:                   # @func0000000000000168
+func00000000000002c8:                   # @func00000000000002c8
 	sarq	$32, %rsi
 	imulq	%rdi, %rsi
 	leaq	(,%rsi,8), %rcx
@@ -28,7 +28,7 @@ func0000000000000168:                   # @func0000000000000168
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000148:                   # @func0000000000000148
+func0000000000000288:                   # @func0000000000000288
 	sarq	$32, %rsi
 	imulq	%rdi, %rsi
 	leaq	(,%rsi,8), %rcx
@@ -38,7 +38,7 @@ func0000000000000148:                   # @func0000000000000148
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000178:                   # @func0000000000000178
+func00000000000002e8:                   # @func00000000000002e8
 	sarq	$32, %rsi
 	imulq	%rdi, %rsi
 	leaq	(,%rsi,4), %rcx

@@ -4,7 +4,7 @@
 	.long	4294967292                      # 0xfffffffc
 .LCPI0_2:
 	.long	1                               # 0x1
-func000000000000021a:                   # @func000000000000021a
+func000000000000042a:                   # @func000000000000042a
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltw	%xmm2, %xmm0, %k1
@@ -21,7 +21,7 @@ func000000000000021a:                   # @func000000000000021a
 	.long	4294967292                      # 0xfffffffc
 .LCPI1_2:
 	.long	1                               # 0x1
-func000000000000021c:                   # @func000000000000021c
+func000000000000042c:                   # @func000000000000042c
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltw	%xmm2, %xmm0, %k1
@@ -38,7 +38,7 @@ func000000000000021c:                   # @func000000000000021c
 	.long	5                               # 0x5
 .LCPI2_2:
 	.long	4294967294                      # 0xfffffffe
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltw	%xmm2, %xmm0, %k1

@@ -1,13 +1,14 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; oiio/optimized/DPXColorConverter.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
   %3 = fadd float %2, 5.000000e-01
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 
@@ -29,7 +30,7 @@ define float @func0000000000000001(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
   %3 = fadd float %2, 5.000000e-01
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 

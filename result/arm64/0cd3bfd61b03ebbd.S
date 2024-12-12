@@ -1,45 +1,39 @@
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	mvni	v2.4s, #47
-	movi	v4.4s, #10
-	mvni	v3.4s, #86
-	add	v5.4s, v0.4s, v2.4s
-	add	v2.4s, v1.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v3.4s
-	cmhi	v3.4s, v4.4s, v2.4s
-	cmhi	v4.4s, v4.4s, v5.4s
-	bit	v0.16b, v5.16b, v4.16b
-	bit	v1.16b, v2.16b, v3.16b
+	sub	w8, w0, #48
+	sub	w9, w0, #87
+	cmp	w8, #10
+	csel	w0, w8, w9, lo
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mvni	v2.4s, #47
-	movi	v3.4s, #169
-	movi	v4.4s, #10
-	add	v5.4s, v0.4s, v2.4s
-	add	v2.4s, v1.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v3.4s
-	cmhi	v3.4s, v4.4s, v2.4s
-	cmhi	v4.4s, v4.4s, v5.4s
-	bit	v0.16b, v5.16b, v4.16b
-	bit	v1.16b, v2.16b, v3.16b
+	sub	w8, w0, #48
+	add	w9, w0, #169
+	cmp	w8, #10
+	csel	w0, w8, w9, lo
 	ret
                                         // -- End function
-func0000000000000054:                   // @func0000000000000054
+func00000000000000a4:                   // @func00000000000000a4
 // %bb.0:                               // %entry
-	mvni	v2.4s, #47
-	movi	v4.4s, #7
-	mvni	v3.4s, #54
-	add	v5.4s, v0.4s, v2.4s
-	add	v2.4s, v1.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v3.4s
-	cmhi	v3.4s, v4.4s, v2.4s
-	cmhi	v4.4s, v4.4s, v5.4s
-	bit	v0.16b, v5.16b, v4.16b
-	bit	v1.16b, v2.16b, v3.16b
+	sub	w8, w0, #48
+	sub	w9, w0, #55
+	cmp	w8, #7
+	csel	w0, w8, w9, lo
+	ret
+                                        // -- End function
+func00000000000000b4:                   // @func00000000000000b4
+// %bb.0:                               // %entry
+	sub	w8, w0, #4
+	sub	w9, w0, #9
+	cmp	w8, #5
+	csel	w0, w8, w9, lo
+	ret
+                                        // -- End function
+func0000000000000094:                   // @func0000000000000094
+// %bb.0:                               // %entry
+	add	w8, w0, #4
+	cmp	w8, #3
+	csinc	w0, w8, w0, lo
 	ret
                                         // -- End function

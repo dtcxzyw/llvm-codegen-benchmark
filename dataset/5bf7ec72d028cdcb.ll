@@ -6,7 +6,7 @@
 ; openjdk/optimized/hb-outline.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -1
   %2 = icmp ult i32 %1, 2
@@ -36,7 +36,7 @@ entry:
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000541(i32 %0) #0 {
+define i1 @func0000000000001481(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, -100
   ret i1 %1
@@ -48,7 +48,7 @@ entry:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/ifDsd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0) #0 {
+define i1 @func0000000000000081(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, -10
   ret i1 %1
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/sscSat.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0) #0 {
+define i1 @func000000000000008c(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, -8
   ret i1 %1
@@ -67,7 +67,7 @@ entry:
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0) #0 {
+define i1 @func0000000000000086(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -2147483248
   %2 = icmp ult i32 %1, -2147483647
@@ -79,7 +79,7 @@ entry:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/pdrIncr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0) #0 {
+define i1 @func0000000000000481(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 1
   ret i1 %1
@@ -88,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaTruth.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000054a(i32 %0) #0 {
+define i1 @func000000000000148a(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, -1000
   ret i1 %1
@@ -97,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000511(i32 %0) #0 {
+define i1 @func0000000000001421(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 2
   ret i1 %1

@@ -45,7 +45,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %1, %0
   %3 = or i32 %2, %0
@@ -59,7 +59,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %1, %0
   %3 = or i32 %2, %0

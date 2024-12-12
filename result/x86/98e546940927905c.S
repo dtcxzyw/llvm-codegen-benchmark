@@ -1,4 +1,4 @@
-func000000000000046a:                   # @func000000000000046a
+func00000000000010ca:                   # @func00000000000010ca
 	sarq	$3, %rsi
 	imull	$-858993459, %esi, %eax         # imm = 0xCCCCCCCD
 	cmpl	$19999, %eax                    # imm = 0x4E1F
@@ -7,7 +7,7 @@ func000000000000046a:                   # @func000000000000046a
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000004aa:                   # @func00000000000004aa
+func000000000000114a:                   # @func000000000000114a
 	sarq	$3, %rsi
 	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
 	cmpl	$2, %eax

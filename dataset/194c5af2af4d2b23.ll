@@ -43,22 +43,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = select i1 %0, i32 %1, i32 %3
   %5 = icmp slt i32 %4, 1
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/ff-memless.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext nneg i16 %2 to i32
-  %4 = select i1 %0, i32 %1, i32 %3
-  %5 = icmp ugt i32 %4, 90
   ret i1 %5
 }
 

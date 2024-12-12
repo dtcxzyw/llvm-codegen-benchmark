@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; cjson/optimized/cJSON.c.ll
 ; cjson/optimized/cJSON_Utils.c.ll
 ; clamav/optimized/cabd.c.ll
@@ -12,13 +12,14 @@
 ; llvm/optimized/MachinePostDominators.cpp.ll
 ; llvm/optimized/PointerSubChecker.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/matcher.ll
 ; openusd/optimized/repr.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(ptr %0, ptr %1) #0 {
+define i1 @func0000000000001082(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq ptr %0, null

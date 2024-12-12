@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/src.ll
 ; hermes/optimized/Conversions.cpp.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll

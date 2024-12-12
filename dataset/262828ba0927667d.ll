@@ -25,7 +25,7 @@ entry:
 ; openusd/optimized/bignum.cc.ll
 ; postgres/optimized/parse_target.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -47,7 +47,7 @@ entry:
 ; openjdk/optimized/multiVis.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -61,7 +61,7 @@ entry:
 ; icu/optimized/double-conversion-bignum.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -73,7 +73,7 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -96,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-mausb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = add nsw i32 %0, %1

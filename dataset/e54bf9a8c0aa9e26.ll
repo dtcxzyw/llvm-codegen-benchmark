@@ -62,10 +62,9 @@ entry:
   ret i64 %6
 }
 
-; 158 occurrences:
+; 157 occurrences:
 ; hdf5/optimized/H5HG.c.ll
 ; oiio/optimized/printinfo.cpp.ll
-; opencv/optimized/nldiffusion_functions.cpp.ll
 ; yosys/optimized/abc.ll
 ; yosys/optimized/abc9_ops.ll
 ; yosys/optimized/aiger.ll

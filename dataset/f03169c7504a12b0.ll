@@ -1,7 +1,8 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/src.ll
 ; linux/optimized/clocksource.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/i915_hwmon.ll

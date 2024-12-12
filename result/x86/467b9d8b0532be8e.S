@@ -1,10 +1,10 @@
 func0000000000000000:                   # @func0000000000000000
-	imull	$1461, %edi, %eax               # imm = 0x5B5
-	leal	7012800(%rax), %ecx
-	addl	$7012803, %eax                  # imm = 0x6B01C3
+	imull	$1103515245, %edi, %eax         # imm = 0x41C64E6D
+	leal	12345(%rax), %ecx
+	addl	$77880, %eax                    # imm = 0x13038
 	testl	%ecx, %ecx
 	cmovnsl	%ecx, %eax
-	sarl	$2, %eax
+	sarl	$16, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	leal	(%rdi,%rdi,4), %eax

@@ -1,7 +1,9 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/pct_format.ll
 ; cmake/optimized/Glob.cxx.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; eastl/optimized/EAMain.cpp.ll
@@ -9,7 +11,6 @@
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; folly/optimized/LogName.cpp.ll
 ; folly/optimized/String.cpp.ll
 ; freetype/optimized/pfr.c.ll
 ; git/optimized/apply.ll

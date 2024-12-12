@@ -1,4 +1,4 @@
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	movzbl	%dl, %eax
 	addl	%edi, %eax
 	movzbl	%sil, %ecx
@@ -6,7 +6,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	cmpl	$51, %ecx
 	setb	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001e8:                   # @func00000000000001e8
 	movzbl	%dl, %eax
 	addl	%edi, %eax
 	movzbl	%sil, %ecx
@@ -14,7 +14,15 @@ func00000000000000f8:                   # @func00000000000000f8
 	cmpl	$8, %ecx
 	setae	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001f8:                   # @func00000000000001f8
+	movzbl	%dl, %eax
+	addl	%edi, %eax
+	movzbl	%sil, %ecx
+	addl	%eax, %ecx
+	cmpl	$5, %ecx
+	setae	%al
+	retq
+func00000000000001e1:                   # @func00000000000001e1
 	movzbl	%dl, %eax
 	addl	%edi, %eax
 	movzbl	%sil, %ecx
@@ -46,7 +54,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$65, %ecx
 	setb	%al
 	retq
-func00000000000003f4:                   # @func00000000000003f4
+func00000000000007f4:                   # @func00000000000007f4
 	movzbl	%dl, %eax
 	addl	%edi, %eax
 	movzbl	%sil, %ecx
@@ -54,14 +62,14 @@ func00000000000003f4:                   # @func00000000000003f4
 	cmpl	$2, %ecx
 	setb	%al
 	retq
-func00000000000000fc:                   # @func00000000000000fc
+func00000000000001ec:                   # @func00000000000001ec
 	movzbl	%dl, %eax
 	addl	%edi, %eax
 	movzbl	%sil, %ecx
 	orl	%eax, %ecx
 	setne	%al
 	retq
-func00000000000003f1:                   # @func00000000000003f1
+func00000000000007e1:                   # @func00000000000007e1
 	movzbl	%dl, %eax
 	addl	%edi, %eax
 	movzbl	%sil, %ecx
@@ -69,7 +77,7 @@ func00000000000003f1:                   # @func00000000000003f1
 	cmpl	$1, %ecx
 	sete	%al
 	retq
-func0000000000000158:                   # @func0000000000000158
+func00000000000002a8:                   # @func00000000000002a8
 	movzbl	%dl, %eax
 	addl	%edi, %eax
 	movzbl	%sil, %ecx

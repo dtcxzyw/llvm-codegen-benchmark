@@ -1,7 +1,11 @@
 
-; 37 occurrences:
+; 42 occurrences:
 ; abc/optimized/acecFadds.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/sqpmethod.cpp.ll
+; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; coreutils-rs/optimized/31vrb73337u20kex.ll
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
 ; cpython/optimized/basearith.ll
@@ -33,10 +37,11 @@
 ; openssl/optimized/libssl-shlib-quic_rx_depack.ll
 ; openusd/optimized/resolveTarget.cpp.ll
 ; postgres/optimized/aclchk.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; qemu/optimized/util_userfaultfd.c.ll
 ; spike/optimized/processor.ll
 ; sqlite/optimized/sqlite3.ll
+; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {
 entry:

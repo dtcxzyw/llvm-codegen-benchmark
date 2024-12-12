@@ -29,9 +29,10 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; postgres/optimized/gram.ll
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
 ; verilator/optimized/V3ParseGrammar.cpp.ll

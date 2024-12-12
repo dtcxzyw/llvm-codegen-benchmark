@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; linux/optimized/tx.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
@@ -18,11 +17,10 @@ entry:
   ret i32 %6
 }
 
-; 35 occurrences:
+; 32 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; arrow/optimized/key_hash.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; flac/optimized/bitreader.c.ll
@@ -31,10 +29,8 @@ entry:
 ; linux/optimized/sched.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/GCOVProfiling.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_textarea.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
@@ -76,14 +72,13 @@ entry:
   ret i32 %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openjdk/optimized/regmask.ll
 ; wireshark/optimized/packet-tcpcl.c.ll
@@ -103,7 +98,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 15
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = trunc i64 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
@@ -176,7 +171,7 @@ entry:
 define i32 @func00000000000000f0(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 3
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = trunc nuw nsw i64 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
@@ -188,7 +183,7 @@ entry:
 define i32 @func0000000000000021(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = trunc nuw i64 %1 to i32
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -202,7 +197,7 @@ entry:
 define i32 @func0000000000000045(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = trunc i64 %1 to i32
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -234,24 +229,12 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/mcast_snoop.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 40
-  %4 = add nsw i32 %3, %0
-  %5 = trunc i64 %1 to i32
-  %6 = add i32 %4, %5
-  ret i32 %6
-}
-
-; 1 occurrences:
 ; cvc5/optimized/soi_simplex.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = trunc nuw i64 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6

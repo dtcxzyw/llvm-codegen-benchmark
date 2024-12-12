@@ -1,6 +1,4 @@
 
-%"struct.open_spiel::twenty_forty_eight::Tile.3295863" = type <{ i32, i8, [3 x i8] }>
-
 ; 2 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; openjdk/optimized/img_globals.ll
@@ -28,15 +26,16 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; bullet3/optimized/btBoxBoxDetector.ll
+; libquic/optimized/curve25519.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %1, 2
   %5 = or disjoint i64 %4, %3
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -80,18 +79,6 @@ entry:
   %4 = shl nsw i64 %1, 3
   %5 = or disjoint i64 %4, %3
   %6 = getelementptr nusw float, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openspiel/optimized/2048.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %1, 2
-  %5 = or disjoint i64 %4, %3
-  %6 = getelementptr nusw %"struct.open_spiel::twenty_forty_eight::Tile.3295863", ptr %0, i64 %5
   ret ptr %6
 }
 

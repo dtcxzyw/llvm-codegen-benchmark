@@ -10,7 +10,7 @@
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %3, 1000

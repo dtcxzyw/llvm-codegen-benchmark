@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000256(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000004a6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = add nsw i32 %4, 100
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = add i32 %4, -2
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -32,19 +32,19 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = add i32 %4, 1
-  %6 = icmp ule i32 %5, %0
+  %6 = icmp uge i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020c(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000040c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = add i32 %4, 1
-  %6 = icmp ne i32 %5, %0
+  %6 = icmp ne i32 %0, %5
   ret i1 %6
 }
 
@@ -57,19 +57,19 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = add i32 %4, 2
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openblas/optimized/dbdsvdx.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = add nsw i32 %4, 1
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
@@ -81,7 +81,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = add i32 %4, 32768
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 

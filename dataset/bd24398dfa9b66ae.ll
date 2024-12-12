@@ -1,6 +1,7 @@
 
-; 170 occurrences:
+; 171 occurrences:
 ; abc/optimized/abcHieNew.c.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

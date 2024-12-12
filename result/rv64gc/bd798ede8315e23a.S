@@ -33,6 +33,14 @@ func000000000000000d:                   # @func000000000000000d
 	add	a0, a0, a1
 	addi	a0, a0, 49
 	ret
+func000000000000001c:                   # @func000000000000001c
+	andi	a1, a1, 255
+	add	a0, a0, a1
+	lui	a1, 81007
+	slli	a1, a1, 3
+	addi	a1, a1, -1607
+	add	a0, a0, a1
+	ret
 func000000000000001f:                   # @func000000000000001f
 	andi	a1, a1, 255
 	add	a0, a0, a1
@@ -47,12 +55,4 @@ func000000000000000e:                   # @func000000000000000e
 	andi	a1, a1, 255
 	add	a0, a0, a1
 	addi	a0, a0, 9
-	ret
-func000000000000001c:                   # @func000000000000001c
-	andi	a1, a1, 255
-	add	a0, a0, a1
-	lui	a1, 81007
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
-	add	a0, a0, a1
 	ret

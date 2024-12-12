@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	orb	%dil, %al
 	orb	$66, %al
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	movl	%edi, %eax
 	orb	$4, %al
 	testq	%rsi, %rsi

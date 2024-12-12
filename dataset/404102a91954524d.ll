@@ -225,7 +225,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c7(i32 %0, i32 %1, i128 %2) #0 {
+define i1 @func0000000000000187(i32 %0, i32 %1, i128 %2) #0 {
 entry:
   %3 = icmp ne i128 %2, 0
   %4 = icmp sle i32 %0, %1

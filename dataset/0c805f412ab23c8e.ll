@@ -13,6 +13,19 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; hdf5/optimized/H5Oalloc.c.ll
+; qemu/optimized/hw_core_loader.c.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
+entry:
+  %2 = icmp eq i8 %1, 2
+  %3 = select i1 %2, i64 64, i64 52
+  %4 = sub nuw nsw i64 %3, %0
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; openjdk/optimized/loopnode.ll
 ; Function Attrs: nounwind

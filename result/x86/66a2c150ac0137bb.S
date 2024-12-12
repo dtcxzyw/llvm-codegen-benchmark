@@ -25,3 +25,13 @@ func0000000000000006:                   # @func0000000000000006
 	andq	%rsi, %rax
 	shrq	$63, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	andq	%rsi, %rdi
+	cmpq	$256, %rdi                      # imm = 0x100
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	andq	%rsi, %rdi
+	cmpq	$2293761, %rdi                  # imm = 0x230001
+	setae	%al
+	retq

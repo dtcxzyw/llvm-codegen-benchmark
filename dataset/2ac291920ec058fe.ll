@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 106 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -20,6 +20,8 @@
 ; abc/optimized/utilIsop.c.ll
 ; arrow/optimized/io_util.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll

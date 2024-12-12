@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/console_buffer.ll
 ; git/optimized/diff.ll
 ; opencv/optimized/datablock.cpp.ll
 ; opencv/optimized/persistence.cpp.ll

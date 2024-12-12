@@ -99,7 +99,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2130706432
   %2 = icmp ne i32 %1, 1275068416
@@ -116,7 +116,7 @@ entry:
 ; opencv/optimized/rolling_guidance_filter.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 1
   %2 = and i32 %1, 3
@@ -127,22 +127,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/Verifier.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0) #0 {
-entry:
-  %1 = lshr i32 %0, 17
-  %2 = and i32 %1, 63
-  %3 = add nuw nsw i32 %2, 255
-  %4 = and i32 %3, 255
-  %5 = icmp ult i32 %4, 33
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; wireshark/optimized/packet-udt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 16
   %2 = and i32 %1, 32767

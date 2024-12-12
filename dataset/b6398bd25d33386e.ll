@@ -1,10 +1,11 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/collation.ll
 ; libquic/optimized/prtime.cc.ll
 ; libwebp/optimized/frame_enc.c.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUIStaticText.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
@@ -80,15 +81,13 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sdiv i32 %3, 2
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; graphviz/optimized/constraint.c.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; postgres/optimized/dt_common.ll
 ; qemu/optimized/util_cutils.c.ll
 ; wireshark/optimized/syntax_line_edit.cpp.ll
@@ -98,16 +97,15 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sdiv i32 %3, 4
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; nuttx/optimized/lib_dayofweek.c.ll
 ; openblas/optimized/dsbgst.c.ll

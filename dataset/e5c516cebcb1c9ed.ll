@@ -4,7 +4,7 @@
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/nfa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 32
   %4 = select i1 %1, i32 %3, i32 %2
@@ -17,7 +17,7 @@ entry:
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/nfa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 32
   %4 = select i1 %1, i32 %3, i32 %2
@@ -31,7 +31,7 @@ entry:
 ; linux/optimized/tg3.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 32
   %4 = select i1 %1, i32 %3, i32 %2

@@ -43,7 +43,7 @@ define double @func0000000000000000(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to double
   %4 = fdiv double %1, %3
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 
@@ -55,7 +55,7 @@ define double @func0000000000000001(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp nneg i64 %2 to double
   %4 = fdiv double %1, %3
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 

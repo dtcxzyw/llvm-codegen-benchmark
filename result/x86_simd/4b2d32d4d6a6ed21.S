@@ -4,9 +4,9 @@ func0000000000000001:                   # @func0000000000000001
 	vpandn	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI1_0:
-	.quad	1                               # 0x1
+	.quad	4294967295                      # 0xffffffff
 func0000000000000002:                   # @func0000000000000002
-	vpbroadcastq	.LCPI1_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
+	vpbroadcastq	.LCPI1_0(%rip), %ymm2   # ymm2 = [4294967295,4294967295,4294967295,4294967295]
 	vpsllvq	%ymm0, %ymm2, %ymm0
 	vpandn	%ymm0, %ymm1, %ymm0
 	retq

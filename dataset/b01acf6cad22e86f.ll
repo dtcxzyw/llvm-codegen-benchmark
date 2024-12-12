@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = icmp eq i32 %2, 0
@@ -28,7 +28,7 @@ entry:
 ; luau/optimized/VecDeque.test.cpp.ll
 ; openjdk/optimized/ciField.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 178
@@ -37,12 +37,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; git/optimized/revision.ll
-; linux/optimized/mii.ll
 ; linux/optimized/tg3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4096
   %3 = icmp eq i32 %2, 0
@@ -55,7 +54,7 @@ entry:
 ; linux/optimized/build_utility.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i32 %1) #0 {
+define i1 @func000000000000014c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
@@ -69,7 +68,7 @@ entry:
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; nlohmann_json/optimized/unit-deserialization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = icmp eq i32 %2, 0
@@ -82,7 +81,7 @@ entry:
 ; linux/optimized/intel_display_power.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1073741824
   %3 = icmp eq i32 %2, 0

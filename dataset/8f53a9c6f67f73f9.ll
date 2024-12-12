@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 50 occurrences:
 ; abc/optimized/abcStrash.c.ll
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/aigRepr.c.ll
@@ -44,6 +44,7 @@
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/Store.cpp.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/chacha.c.ll

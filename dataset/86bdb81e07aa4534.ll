@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = icmp eq i64 %2, %0
@@ -159,14 +159,14 @@ entry:
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000049(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp uge i64 %2, %0
   ret i1 %3
 }
 
-; 188 occurrences:
+; 187 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; faiss/optimized/IVFlib.cpp.ll
 ; faiss/optimized/IndexLattice.cpp.ll
@@ -193,7 +193,6 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
@@ -356,7 +355,7 @@ entry:
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp ult i64 %2, %0
@@ -378,14 +377,14 @@ entry:
 ; opencv/optimized/warpfield.cpp.ll
 ; openusd/optimized/reformat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %.highbits = lshr i64 %0, %1
   %2 = icmp eq i64 %.highbits, 0
   ret i1 %2
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; cpython/optimized/sixstep.ll
@@ -399,7 +398,6 @@ entry:
 ; llvm/optimized/MCELFStreamer.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; openjdk/optimized/g1ConcurrentMark.ll
@@ -434,7 +432,7 @@ entry:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/RawVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp eq i64 %2, %0
@@ -444,7 +442,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/shenandoahSimpleBitMap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = icmp ugt i64 %2, %0
@@ -461,7 +459,7 @@ entry:
 ; verilator/optimized/V3Premit.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp sgt i64 %2, %0
@@ -478,7 +476,7 @@ entry:
 ; velox/optimized/MmapAllocator.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = icmp eq i64 %2, %0
@@ -488,7 +486,7 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000045(i64 %0, i64 %1) #0 {
 entry:
   %.highbits = lshr i64 %0, %1
   %2 = icmp ne i64 %.highbits, 0
@@ -500,7 +498,7 @@ entry:
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = icmp sle i64 %2, %0
@@ -510,7 +508,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = icmp slt i64 %2, %0
@@ -524,7 +522,7 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 125, %1
   %3 = icmp ult i64 %2, %0
@@ -534,14 +532,14 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp ne i64 %2, %0
   ret i1 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; linux/optimized/bio.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/buffer.ll
@@ -556,7 +554,6 @@ entry:
 ; linux/optimized/page-io.ll
 ; linux/optimized/read.ll
 ; linux/optimized/readpage.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/truncate.ll
 ; postgres/optimized/aset.ll

@@ -117,13 +117,13 @@
 ; z3/optimized/pb2bv_tactic.cpp.ll
 ; z3/optimized/solve_context_eqs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 40
   %6 = sub nsw i64 %5, %0
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 

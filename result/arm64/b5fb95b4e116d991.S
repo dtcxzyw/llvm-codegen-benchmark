@@ -1,55 +1,42 @@
-func0000000000000074:                   // @func0000000000000074
+func00000000000000e4:                   // @func00000000000000e4
 // %bb.0:                               // %entry
-	ushll	v3.4s, v0.4h, #0
-	ushll2	v4.4s, v0.8h, #0
-	cmhi	v4.4s, v4.4s, v2.4s
-	cmhi	v3.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v3.8h, v3.8h, v4.8h
-	bit	v0.16b, v1.16b, v3.16b
+	cmp	w1, w0, uxth
+	csel	w0, w1, w0, lo
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	ushll	v3.4s, v0.4h, #0
-	ushll2	v4.4s, v0.8h, #0
-	cmgt	v4.4s, v4.4s, v2.4s
-	cmgt	v3.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v3.8h, v3.8h, v4.8h
-	bit	v0.16b, v1.16b, v3.16b
+	cmp	w1, w0, uxth
+	csel	w0, w1, w0, lt
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func0000000000000054:                   // @func0000000000000054
 // %bb.0:                               // %entry
-	ushll	v3.4s, v0.4h, #0
-	ushll2	v4.4s, v0.8h, #0
-	cmhi	v4.4s, v4.4s, v2.4s
-	cmhi	v3.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v3.8h, v3.8h, v4.8h
-	bit	v0.16b, v1.16b, v3.16b
+	cmp	w1, w0, uxth
+	csel	w0, w1, w0, lo
 	ret
                                         // -- End function
-func0000000000000026:                   // @func0000000000000026
+func00000000000000f4:                   // @func00000000000000f4
 // %bb.0:                               // %entry
-	ushll	v3.4s, v0.4h, #0
-	ushll2	v4.4s, v0.8h, #0
-	cmgt	v4.4s, v4.4s, v2.4s
-	cmgt	v3.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v3.8h, v3.8h, v4.8h
-	bit	v0.16b, v1.16b, v3.16b
+	cmp	w1, w0, uxth
+	csel	w0, w1, w0, lo
 	ret
                                         // -- End function
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	ushll	v3.4s, v0.4h, #0
-	ushll2	v4.4s, v0.8h, #0
-	cmhi	v4.4s, v4.4s, v2.4s
-	cmhi	v3.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v3.8h, v3.8h, v4.8h
-	bit	v0.16b, v1.16b, v3.16b
+	cmp	w1, w0, uxth
+	csel	w0, w1, w0, lo
+	ret
+                                        // -- End function
+func0000000000000046:                   // @func0000000000000046
+// %bb.0:                               // %entry
+	cmp	w1, w0, uxth
+	csel	w0, w1, w0, lt
+	ret
+                                        // -- End function
+func0000000000000094:                   // @func0000000000000094
+// %bb.0:                               // %entry
+	cmp	w1, w0, uxth
+	csel	w0, w1, w0, lo
 	ret
                                         // -- End function

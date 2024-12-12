@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
   %3 = ashr i64 %0, 1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000358(i64 %0, i64 %1) #0 {
+define i1 @func00000000000006a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = ashr exact i64 %0, 3

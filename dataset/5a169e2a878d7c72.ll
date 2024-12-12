@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; hermes/optimized/IdentifierTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, 4
-  %3 = add nsw i64 %2, %1
+  %3 = add nsw i64 %1, %2
   %4 = icmp ult i64 %2, %3
   ret i1 %4
 }
@@ -16,7 +16,7 @@ entry:
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, 3
   %3 = add i64 %2, %1
@@ -29,11 +29,11 @@ entry:
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, 32
   %3 = xor i64 %2, -1
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   ret i1 %4
 }
 

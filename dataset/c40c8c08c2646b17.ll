@@ -79,7 +79,7 @@
 ; openjdk/optimized/whitebox.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000285(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000905(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
   %4 = icmp ugt ptr %3, %1
@@ -88,16 +88,27 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000289(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000d09(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = icmp ugt ptr %3, %0
+  %5 = icmp uge ptr %0, %1
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/archiveBuilder.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000909(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %4 = icmp ugt ptr %3, %1
   %5 = icmp uge ptr %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -106,7 +117,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/aead.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000908(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = icmp ugt ptr %3, %0
@@ -118,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/percpu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000109(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = icmp ugt ptr %3, %0
@@ -130,7 +141,19 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000d04(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = icmp ugt ptr %3, %1
+  %5 = icmp ult ptr %0, %1
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000904(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
   %4 = icmp ugt ptr %3, %1

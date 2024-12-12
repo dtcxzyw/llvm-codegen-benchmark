@@ -1,7 +1,9 @@
+.LCPI0_0:
+	.long	0x41400000                      # float 12
 func000000000000000a:                   # @func000000000000000a
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpnleps	%ymm1, %ymm0, %k1
-	vmovaps	%ymm0, %ymm0 {%k1} {z}
+	vcmpleps	%ymm1, %ymm0, %k1
+	vbroadcastss	.LCPI0_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1]
 	vcvttps2dq	%ymm0, %ymm0
 	retq
 .LCPI1_0:

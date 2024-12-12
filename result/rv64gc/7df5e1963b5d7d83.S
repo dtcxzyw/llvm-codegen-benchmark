@@ -20,7 +20,7 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	ori	a0, a0, 2
 	ret
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a1, a1
 	lui	a2, 2040
 	sltiu	a1, a1, 256
@@ -38,5 +38,5 @@ func0000000000000060:                   # @func0000000000000060
 	sext.w	a1, a1
 	snez	a1, a1
 	or	a0, a0, a1
-	ori	a0, a0, 4
+	ori	a0, a0, 2
 	ret

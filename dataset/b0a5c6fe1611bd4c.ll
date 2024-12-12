@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/crtmgr.c.ll
-; linux/optimized/netlabel_addrlist.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/TypeRecordMapping.cpp.ll

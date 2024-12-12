@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addq	%rdx, %rsi
 	addq	%rdi, %rsi
 	setb	%al
@@ -8,13 +8,13 @@ func0000000000000004:                   # @func0000000000000004
 	addq	%rdi, %rsi
 	setb	%al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	addq	%rdx, %rsi
 	addq	%rsi, %rdi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	addq	%rdx, %rsi
 	addq	%rdi, %rsi
 	setb	%al
@@ -28,8 +28,8 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000009:                   # @func0000000000000009
 	addq	%rdx, %rsi
 	notq	%rsi
-	cmpq	%rdi, %rsi
-	setae	%al
+	cmpq	%rsi, %rdi
+	setbe	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	addq	%rdx, %rsi

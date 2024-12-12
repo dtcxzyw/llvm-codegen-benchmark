@@ -82,7 +82,7 @@ entry:
   ret i64 %4
 }
 
-; 66 occurrences:
+; 59 occurrences:
 ; assimp/optimized/BlenderCustomData.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; node/optimized/libnode.crypto_sig.ll
@@ -140,13 +140,6 @@ entry:
 ; openusd/optimized/stitchClips.cpp.ll
 ; openusd/optimized/testSdfMetaDataPlugInfo.cpp.ll
 ; openusd/optimized/testUsdAttributeInterpolationCpp.cpp.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
 ; wasmedge/optimized/refInstr.cpp.ll
 ; Function Attrs: nounwind

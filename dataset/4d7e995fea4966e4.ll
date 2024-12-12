@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 59 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -59,7 +59,6 @@
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
-; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -69,7 +68,7 @@ entry:
   ret i64 %3
 }
 
-; 144 occurrences:
+; 143 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -148,7 +147,6 @@ entry:
 ; llvm/optimized/PreprocessingRecord.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/PreprocessorLexer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll

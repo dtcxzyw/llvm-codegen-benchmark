@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; cpython/optimized/specialize.ll
 ; icu/optimized/number_modifiers.ll
 ; kcp/optimized/ikcp.ll
@@ -22,6 +22,7 @@
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/text2pcap.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -62,20 +63,19 @@ entry:
 ; quantlib/optimized/turkey.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/mapgen_fractal.cpp.ll
 ; minetest/optimized/mapgen_v5.cpp.ll
-; velox/optimized/Bridge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ugt i32 %3, 255
@@ -97,7 +97,7 @@ define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp eq i32 %3, -1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -118,7 +118,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp sgt i32 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -133,24 +133,21 @@ define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp ne i32 %3, 1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 13 occurrences:
+; 10 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; linux/optimized/percpu.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
-; llvm/optimized/LegalizeIntegerTypes.cpp.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
-; wireshark/optimized/packet-gsm_osmux.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -160,7 +157,7 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; eastl/optimized/EATextUtil.cpp.ll
@@ -168,24 +165,24 @@ entry:
 ; icu/optimized/localematcher.ll
 ; icu/optimized/uregex.ll
 ; linux/optimized/config.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; openexr/optimized/ImfRle.cpp.ll
 ; openjdk/optimized/SpanClipRenderer.ll
 ; openspiel/optimized/backgammon.cc.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; linux/optimized/intel_cursor.ll
 ; openjdk/optimized/hb-buffer.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; raylib/optimized/raudio.c.ll
@@ -441,11 +438,22 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = or i1 %3, %0
   ret i1 %4
+}
+
+; 1 occurrences:
+; velox/optimized/Bridge.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000070(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, 12
+  %5 = or i1 %0, %4
+  ret i1 %5
 }
 
 ; 10 occurrences:
@@ -460,7 +468,7 @@ entry:
 ; quantlib/optimized/unitedkingdom.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ne i32 %3, 22
@@ -469,13 +477,24 @@ entry:
 }
 
 ; 1 occurrences:
-; icu/optimized/collationdatareader.ll
+; linux/optimized/intel_cursor.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = icmp ult i32 %3, 20
+  %3 = sub i32 %1, %2
+  %4 = icmp samesign ult i32 %3, 8
   %5 = or i1 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; icu/optimized/collationdatareader.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = icmp samesign ult i32 %3, 20
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

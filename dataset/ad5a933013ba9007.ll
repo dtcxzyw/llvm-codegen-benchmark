@@ -1,5 +1,7 @@
 
-; 13 occurrences:
+; 15 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; gromacs/optimized/fft.cpp.ll
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/messagepattern.ll
@@ -68,13 +70,11 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; openblas/optimized/dgghd3.c.ll
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
 ; openusd/optimized/json.cpp.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind

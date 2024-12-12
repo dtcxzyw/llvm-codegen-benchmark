@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; qemu/optimized/source_s_addMagsF16.c.ll
 ; spike/optimized/s_addMagsF16.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000005(i8 %0, i8 %1) #0 {
 entry:
@@ -39,6 +40,18 @@ define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = sub i8 %0, %1
   %3 = add nsw i8 %2, 2
+  ret i8 %3
+}
+
+; 3 occurrences:
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; linux/optimized/maple_tree.ll
+; wireshark/optimized/packet-clnp.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000008(i8 %0, i8 %1) #0 {
+entry:
+  %2 = xor i8 %1, -1
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 

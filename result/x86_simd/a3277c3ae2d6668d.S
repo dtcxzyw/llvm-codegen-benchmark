@@ -18,7 +18,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [352321536,352321536,352321536,352321536,352321536,352321536,352321536,352321536]
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [234881024,234881024,234881024,234881024,234881024,234881024,234881024,234881024]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	640                             # 0x280
@@ -40,7 +40,7 @@ func000000000000000d:                   # @func000000000000000d
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [4,4,4,4,4,4,4,4]
 	vpbroadcastd	.LCPI3_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2,2,2,2,2]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	4                               # 0x4

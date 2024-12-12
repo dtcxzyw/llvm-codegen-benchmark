@@ -1,11 +1,10 @@
 
-; 38 occurrences:
+; 35 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
 ; abc/optimized/kitCloud.c.ll
-; arrow/optimized/value_parsing.cc.ll
 ; cpython/optimized/_json.ll
 ; icu/optimized/ucnvmbcs.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -13,8 +12,6 @@
 ; libquic/optimized/poly1305_vec.c.ll
 ; lief/optimized/aes.c.ll
 ; lief/optimized/des.c.ll
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/ht.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/phy_device.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
@@ -42,12 +39,12 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, 6291456
   ret i32 %4
 }
 
-; 45 occurrences:
+; 50 occurrences:
 ; abc/optimized/ifMan.c.ll
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/packlibs.c.ll
@@ -89,10 +86,15 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
-; velox/optimized/StringView.cpp.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/packet-mtp2.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
@@ -102,7 +104,7 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; assimp/optimized/zip.c.ll
@@ -120,11 +122,12 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-h223.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 8
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = and i32 %3, 65535
   ret i32 %4
 }
@@ -150,12 +153,13 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/ivySeq.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; git/optimized/commit-graph.ll
 ; git/optimized/midx.ll
 ; linux/optimized/tcp_minisocks.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; postgres/optimized/ginvacuum.ll
 ; postgres/optimized/tidbitmap.ll
 ; Function Attrs: nounwind
@@ -173,7 +177,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, 128
   ret i32 %4
 }

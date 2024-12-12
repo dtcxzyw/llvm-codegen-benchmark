@@ -1,3 +1,10 @@
+func000000000000000b:                   # @func000000000000000b
+	testb	$1, %sil
+	movl	$1, %ecx
+	cmovel	%edx, %ecx
+	leal	3(%rdi), %eax
+	imull	%ecx, %eax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	leal	1(%rdx), %ecx
 	testb	$1, %dil

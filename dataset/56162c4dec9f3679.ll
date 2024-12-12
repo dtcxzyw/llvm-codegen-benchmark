@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000042c(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = ashr exact i64 %1, 2
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000428(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = ashr exact i64 %1, 2

@@ -1,5 +1,5 @@
 
-; 267 occurrences:
+; 271 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -14,6 +14,10 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
@@ -268,17 +272,17 @@
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = ashr exact i64 %2, 2
   %4 = add nsw i64 %3, -1
   %5 = lshr i64 %4, 1
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
-; 250 occurrences:
+; 254 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -293,6 +297,10 @@ entry:
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
@@ -530,13 +538,13 @@ entry:
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = ashr exact i64 %2, 2
   %4 = add nsw i64 %3, -2
   %5 = lshr exact i64 %4, 1
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -559,13 +567,13 @@ entry:
 ; velox/optimized/VectorSaver.cpp.ll
 ; xgboost/optimized/indexed_recordio_split.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = ashr exact i64 %2, 1
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -596,13 +604,13 @@ entry:
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; yosys/optimized/equiv_induct.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = ashr i64 %2, 4
   %4 = add nsw i64 %3, -1
   %5 = lshr i64 %4, 1
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
@@ -633,13 +641,13 @@ entry:
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; yosys/optimized/equiv_induct.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = ashr i64 %2, 4
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

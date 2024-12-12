@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; gromacs/optimized/coder.c.ll
 ; gromacs/optimized/huffman.c.ll
 ; libjpeg-turbo/optimized/jdphuff.c.ll

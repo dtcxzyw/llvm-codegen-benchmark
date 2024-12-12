@@ -1,5 +1,5 @@
 
-; 323 occurrences:
+; 325 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -173,6 +173,8 @@
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/prog.cc.ll
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
+; ruby/optimized/regexec.ll
+; ruby/optimized/symbol.ll
 ; spdlog/optimized/async.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
@@ -329,8 +331,8 @@ entry:
   %3 = and i8 %2, -33
   %4 = add i8 %3, -65
   %5 = icmp ult i8 %4, 26
-  %6 = or i1 %5, %1
-  %7 = or i1 %6, %0
+  %6 = or i1 %1, %5
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

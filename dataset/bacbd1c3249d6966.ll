@@ -7,7 +7,7 @@ define i64 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -2
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -19,7 +19,21 @@ define i64 @func000000000000000d(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 60
   %4 = select i1 %1, i64 31536000, i64 %3
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 4 occurrences:
+; freetype/optimized/truetype.c.ll
+; luajit/optimized/lj_gc.ll
+; luajit/optimized/lj_gc_dyn.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 18
+  %4 = select i1 %1, i64 0, i64 %3
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -33,7 +47,7 @@ define i64 @func000000000000000c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 5
   %4 = select i1 %1, i64 5, i64 %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -46,20 +60,7 @@ define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 3
   %4 = select i1 %1, i64 2, i64 %3
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
-; 3 occurrences:
-; freetype/optimized/truetype.c.ll
-; luajit/optimized/lj_gc.ll
-; luajit/optimized/lj_gc_dyn.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = mul nuw nsw i64 %2, 24
-  %4 = select i1 %1, i64 0, i64 %3
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

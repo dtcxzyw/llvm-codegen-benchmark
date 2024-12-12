@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 24 occurrences:
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/longobject.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -20,16 +20,21 @@
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
 ; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Number.cpp.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nsw i64 %0, %4
   ret i64 %5
 }
 
 ; 83 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/basearith.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_invert.c.ll
@@ -57,7 +62,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; postgres/optimized/shm_toc.ll
 ; proj/optimized/networkfilemanager.cpp.ll
 ; protobuf/optimized/arena.cc.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll

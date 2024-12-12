@@ -1,13 +1,12 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sli	v0.16b, v1.16b, #4
-	mvn	v0.16b, v0.16b
+	bfi	w0, w1, #4, #28
+	mvn	w0, w0
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	movi	v2.16b, #252
-	sli	v0.16b, v1.16b, #2
-	eor	v0.16b, v0.16b, v2.16b
+	bfi	w0, w1, #2, #30
+	eor	w0, w0, #0xfffffffc
 	ret
                                         // -- End function

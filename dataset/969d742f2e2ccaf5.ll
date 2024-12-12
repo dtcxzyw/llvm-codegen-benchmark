@@ -1,5 +1,5 @@
 
-; 202 occurrences:
+; 204 occurrences:
 ; abc/optimized/cuddLinear.c.ll
 ; abc/optimized/cuddReorder.c.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
@@ -119,6 +119,8 @@
 ; llvm/optimized/Verifier.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_spinbox.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; meshoptimizer/optimized/vcacheanalyzer.cpp.ll
@@ -211,8 +213,10 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -229,7 +233,7 @@ entry:
   ret i32 %5
 }
 
-; 99 occurrences:
+; 98 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/giaSatLut.c.ll
 ; arrow/optimized/diff.cc.ll
@@ -311,7 +315,6 @@ entry:
 ; qemu/optimized/net_socket.c.ll
 ; quest/optimized/QuEST.c.ll
 ; redis/optimized/object.ll
-; slurm/optimized/ebpf.ll
 ; stockfish/optimized/search.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; velox/optimized/MemoryArbitrator.cpp.ll
@@ -338,7 +341,7 @@ entry:
   ret i32 %5
 }
 
-; 297 occurrences:
+; 299 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/cuddLinear.c.ll
 ; abc/optimized/cuddReorder.c.ll
@@ -354,6 +357,7 @@ entry:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/text_file_backend.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; chibicc/optimized/codegen.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -470,6 +474,7 @@ entry:
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SummaryBasedOptimizations.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -658,8 +663,9 @@ entry:
   ret i32 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/abcSop.c.ll
+; boost/optimized/to_chars.ll
 ; cvc5/optimized/alethe_let_binding.cpp.ll
 ; cvc5/optimized/cnf_stream.cpp.ll
 ; cvc5/optimized/function_const.cpp.ll

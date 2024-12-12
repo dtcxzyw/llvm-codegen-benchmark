@@ -4,7 +4,7 @@
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000082(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true
@@ -47,7 +47,7 @@ entry:
 ; delta-rs/optimized/2x36mf26z3hhv78u.ll
 ; delta-rs/optimized/5d242f2by7re2olg.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000098(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true

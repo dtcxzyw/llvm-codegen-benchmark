@@ -4,25 +4,25 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpneqd	%ymm0, %ymm1, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1} {z}
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpneqd	%ymm0, %ymm1, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1} {z}
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpltud	%ymm0, %ymm1, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1} {z}
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpleud	%ymm0, %ymm1, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1} {z}
 	retq
-func0000000000000019:                   # @func0000000000000019
+func0000000000000029:                   # @func0000000000000029
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpltud	%ymm0, %ymm1, %k1
@@ -34,13 +34,13 @@ func0000000000000009:                   # @func0000000000000009
 	vpcmpltud	%ymm0, %ymm1, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1} {z}
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpneqd	%ymm0, %ymm1, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1} {z}
 	retq
-func000000000000003b:                   # @func000000000000003b
+func000000000000006b:                   # @func000000000000006b
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k1

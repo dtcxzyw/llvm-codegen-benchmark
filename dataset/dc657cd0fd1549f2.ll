@@ -1,12 +1,11 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; openblas/optimized/dbdsvdx.c.ll
 ; openjdk/optimized/cmssm.ll
 ; openjdk/optimized/codeCache.ll
 ; openjdk/optimized/os_perf_linux.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; proj/optimized/4D_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; quest/optimized/QuEST_common.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, double %1, double %2) #0 {
@@ -16,7 +15,8 @@ entry:
   ret double %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; opencv/optimized/quality.cpp.ll
 ; openjdk/optimized/cmssm.ll
 ; Function Attrs: nounwind

@@ -23,7 +23,7 @@ entry:
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4611404543450677248
   %2 = icmp eq i64 %1, 0
@@ -37,7 +37,7 @@ entry:
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0) #0 {
+define i1 @func0000000000000054(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4575657221408423936
   %2 = icmp eq i64 %1, 0
@@ -51,21 +51,23 @@ entry:
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0) #0 {
+define i1 @func0000000000000058(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4539628424389459968
   %2 = icmp ne i64 %1, 0
   ret i1 %2
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0) #0 {
+define i1 @func0000000000000074(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9079256848778919936
-  %2 = icmp ult i64 %1, 4467570830351532032
+  %2 = icmp samesign ult i64 %1, 4467570830351532032
   ret i1 %2
 }
 

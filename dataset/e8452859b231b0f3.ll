@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -12,9 +12,8 @@
 ; hyperscan/optimized/ng_uncalc_components.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -25,10 +24,9 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; git/optimized/fast-export.ll
 ; llvm/optimized/ParseDecl.cpp.ll
-; llvm/optimized/RISCVDeadRegisterDefinitions.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaModule.cpp.ll
 ; z3/optimized/ast.cpp.ll

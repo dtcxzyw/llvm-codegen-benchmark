@@ -1,4 +1,4 @@
-func00000000000000a6:                   // @func00000000000000a6
+func00000000000001e6:                   // @func00000000000001e6
 // %bb.0:                               // %entry
 	lsr	x8, x2, #1
 	mov	w9, #80                         // =0x50
@@ -8,7 +8,7 @@ func00000000000000a6:                   // @func00000000000000a6
 	csel	x0, x0, x8, lt
 	ret
                                         // -- End function
-func00000000000000aa:                   // @func00000000000000aa
+func00000000000001ea:                   // @func00000000000001ea
 // %bb.0:                               // %entry
 	lsr	x8, x2, #1
 	cmp	w1, #2

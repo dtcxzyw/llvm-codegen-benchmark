@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; opencv/optimized/convert_c.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 511
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/rand.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 511

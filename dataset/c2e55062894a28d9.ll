@@ -1,9 +1,8 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/buffered-io.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/md-bitmap.ll

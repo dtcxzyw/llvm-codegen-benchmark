@@ -1,6 +1,7 @@
 
-; 40 occurrences:
+; 41 occurrences:
 ; linux/optimized/intel_psr.ll
+; linux/optimized/tg3.ll
 ; qemu/optimized/util_cpuinfo-i386.c.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
@@ -44,8 +45,8 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or i32 %3, %0
-  %5 = or i32 %4, 512
+  %4 = or i32 %3, 512
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -58,8 +59,8 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or i32 %3, %0
-  %5 = or i32 %4, 1
+  %4 = or disjoint i32 %3, 1
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -74,8 +75,8 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or i32 %3, %0
-  %5 = or i32 %4, 56
+  %4 = or disjoint i32 %3, 56
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -85,8 +86,8 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or i32 %3, %0
-  %5 = or i32 %4, 1073725441
+  %4 = or i32 %3, 1073725441
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

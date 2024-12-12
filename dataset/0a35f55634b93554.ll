@@ -1,9 +1,10 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/FBXParser.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/RegularExpression.cxx.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -20,7 +21,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp eq i8 %1, 45
@@ -55,7 +56,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; spike/optimized/kabs8.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp slt i8 %1, 0
@@ -87,7 +88,7 @@ entry:
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i8 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 7, %0
   %3 = icmp eq i8 %1, 0

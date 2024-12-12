@@ -7,7 +7,7 @@
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000042a(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 9
   %3 = select i1 %2, i32 0, i32 %1
@@ -25,7 +25,7 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000042c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 9
   %3 = select i1 %2, i32 0, i32 %1
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 6
   %3 = select i1 %2, i32 5, i32 %1

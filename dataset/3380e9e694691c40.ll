@@ -1,10 +1,9 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; cpython/optimized/optimizer.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -21,7 +20,7 @@ entry:
   ret i64 %2
 }
 
-; 60 occurrences:
+; 55 occurrences:
 ; abc/optimized/ivyCut.c.ll
 ; abc/optimized/ivyRwr.c.ll
 ; abc/optimized/ivySeq.c.ll
@@ -32,9 +31,6 @@ entry:
 ; graphviz/optimized/neatosplines.c.ll
 ; icu/optimized/msgfmt.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; jq/optimized/unicode_fold2_key.ll
-; jq/optimized/unicode_fold3_key.ll
-; linux/optimized/ff-core.ll
 ; linux/optimized/serial_core.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/InstCombineAddSub.cpp.ll
@@ -45,8 +41,6 @@ entry:
 ; meshlab/optimized/io_x3d.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
-; oniguruma/optimized/unicode_fold2_key.ll
-; oniguruma/optimized/unicode_fold3_key.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; openexr/optimized/decoding.c.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll

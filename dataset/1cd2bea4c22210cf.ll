@@ -1,10 +1,10 @@
 
 ; 29 occurrences:
+; boost/optimized/src.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; coreutils-rs/optimized/3sl862deah2458pu.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
-; graphviz/optimized/shapes.c.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nfs4proc.ll
@@ -57,11 +57,11 @@ define i64 @func000000000000000c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 2
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 17 occurrences:
+; 24 occurrences:
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; miniaudio/optimized/unity.c.ll
 ; openexr/optimized/attributes.c.ll
@@ -79,12 +79,19 @@ entry:
 ; syn/optimized/2khi0xu1ufmhwoo.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/481g0nj22rl2z9g.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/dwdz33j6zk3evwqybph0x5e70.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = select i1 %1, i64 1, i64 %3
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -126,17 +133,6 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; draco/optimized/ply_decoder.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %2, -2
-  %4 = select i1 %1, i64 0, i64 %3
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
 ; 6 occurrences:
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; lua/optimized/lstring.ll
@@ -149,7 +145,7 @@ define i64 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

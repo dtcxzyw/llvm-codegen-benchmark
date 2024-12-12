@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; hwloc/optimized/bitmap.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; opencv/optimized/merge.dispatch.cpp.ll
 ; opencv/optimized/split.dispatch.cpp.ll
 ; openusd/optimized/cdef.c.ll

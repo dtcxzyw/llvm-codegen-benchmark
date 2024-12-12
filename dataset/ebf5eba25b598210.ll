@@ -1,14 +1,12 @@
 
-; 23 occurrences:
+; 21 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/giaBound.c.ll
 ; linux/optimized/seq_clientmgr.ll
-; linux/optimized/vsmp_64.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; redis/optimized/networking.ll
 ; redis/optimized/rax.ll
 ; ruby/optimized/regparse.ll

@@ -1,6 +1,7 @@
 
-; 99 occurrences:
+; 100 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -104,7 +105,7 @@ define i1 @func0000000000000001(i1 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 1237940020838636201189572608
   %3 = icmp eq i128 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

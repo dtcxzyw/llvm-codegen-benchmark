@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	fadd.d	fa5, fa0, fa5

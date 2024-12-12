@@ -23,7 +23,8 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_tlsf.ll
 ; openjdk/optimized/escape.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0) #0 {
@@ -51,7 +52,8 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/RafDecoder.cpp.ll
 ; linux/optimized/xhci.ll
 ; php/optimized/zend_alloc.ll

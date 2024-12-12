@@ -9,7 +9,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp slt i32 %1, %2
@@ -22,7 +22,7 @@ entry:
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %2, %1

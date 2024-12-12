@@ -1,5 +1,5 @@
 
-; 226 occurrences:
+; 224 occurrences:
 ; abc/optimized/dsdProc.c.ll
 ; abc/optimized/ivyCut.c.ll
 ; abc/optimized/ivySeq.c.ll
@@ -54,14 +54,12 @@
 ; libjpeg-turbo/optimized/jchuff.c.ll
 ; libjpeg-turbo/optimized/rdcolmap.c.ll
 ; linux/optimized/8250_core.ll
-; linux/optimized/8250_pnp.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/hvc_console.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/serial_core.ll
@@ -230,23 +228,21 @@
 define i1 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
-; 147 occurrences:
+; 145 occurrences:
 ; abc/optimized/dsdProc.c.ll
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ivyRwr.c.ll
 ; abc/optimized/ivySeq.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/reoSwap.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; clamav/optimized/hfsplus.c.ll
 ; cmake/optimized/fld_def.c.ll
 ; cmake/optimized/frm_page.c.ll
-; cmake/optimized/frm_post.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; darktable/optimized/gamepad.c.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -278,6 +274,7 @@ entry:
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; minetest/optimized/areastore.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -381,12 +378,11 @@ entry:
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
-; zxing/optimized/AZToken.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
@@ -425,7 +421,6 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/callchain.ll
-; linux/optimized/ff-core.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/serial_core.ll
@@ -433,6 +428,7 @@ entry:
 ; linux/optimized/zstd_decompress_block.ll
 ; lua/optimized/lcode.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
 ; minetest/optimized/areastore.cpp.ll
@@ -555,7 +551,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -583,7 +579,7 @@ entry:
 define i1 @func000000000000000b(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 
@@ -613,7 +609,7 @@ entry:
 define i1 @func0000000000000007(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   ret i1 %3
 }
 
@@ -631,7 +627,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -646,7 +642,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
@@ -668,7 +664,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 

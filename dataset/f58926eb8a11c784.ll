@@ -5,7 +5,7 @@
 ; php/optimized/php_pcre.ll
 ; slurm/optimized/parse_time.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000354(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func00000000000006a4(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %0, 10
   %4 = add nsw i32 %3, -48

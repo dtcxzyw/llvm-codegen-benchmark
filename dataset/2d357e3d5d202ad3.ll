@@ -12,7 +12,8 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/graphml.ll
 ; clamav/optimized/pdfng.c.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; curl/optimized/libcurl_la-imap.ll

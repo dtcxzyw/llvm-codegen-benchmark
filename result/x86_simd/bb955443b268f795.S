@@ -19,9 +19,9 @@ func0000000000000002:                   # @func0000000000000002
 	vpor	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI3_0:
-	.long	21845                           # 0x5555
+	.long	132184095                       # 0x7e0f81f
 func0000000000000001:                   # @func0000000000000001
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
-	vpsrld	$1, %ymm0, %ymm1
+	vpsrld	$16, %ymm0, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	retq

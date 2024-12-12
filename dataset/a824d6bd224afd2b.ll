@@ -15,7 +15,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 6
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 

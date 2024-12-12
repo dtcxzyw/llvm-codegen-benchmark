@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; flac/optimized/encode.c.ll
@@ -20,7 +20,6 @@
 ; wireshark/optimized/packet-eth.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
-; wireshark/optimized/radcom.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i16 %0, i16 %1) #0 {

@@ -10,7 +10,12 @@ entry:
   ret i64 %5
 }
 
-; 29 occurrences:
+; 34 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/byte_order.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; icu/optimized/collationbuilder.ll

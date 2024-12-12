@@ -3,7 +3,7 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$2, %eax
 	cmovbl	%edx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	cmpl	%esi, %edi
 	movl	$-1, %eax
 	cmovel	%edx, %eax

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7168
   %4 = icmp eq i64 %3, 0
@@ -11,26 +11,21 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
-; cpython/optimized/marshal.ll
-; g2o/optimized/solver_dense.cpp.ll
-; lief/optimized/Builder.cpp.ll
-; lightgbm/optimized/bin.cpp.ll
-; lightgbm/optimized/dataset.cpp.ll
-; lightgbm/optimized/dataset_loader.cpp.ll
-; lightgbm/optimized/metadata.cpp.ll
+; 3 occurrences:
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; node/optimized/libnode.node_options.ll
+; node/optimized/libnode.node_worker.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
-  %4 = icmp eq i64 %3, 0
-  %5 = add nsw i64 %1, 8
+  %4 = icmp eq i64 %3, 1
+  %5 = add i64 %1, -1
   %6 = select i1 %4, i64 %0, i64 %5
   ret i64 %6
 }
 
-; 21 occurrences:
-; lightgbm/optimized/dataset.cpp.ll
+; 20 occurrences:
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
 ; llvm/optimized/CodeExtractor.cpp.ll
@@ -52,25 +47,24 @@ entry:
 ; llvm/optimized/User.cpp.ll
 ; llvm/optimized/ValueMapper.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 1
+  %3 = and i64 %2, 4
   %4 = icmp eq i64 %3, 0
   %5 = add nuw i64 %1, 8
   %6 = select i1 %4, i64 %0, i64 %5
   ret i64 %6
 }
 
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; node/optimized/libnode.node_options.ll
-; node/optimized/libnode.node_worker.ll
+; 2 occurrences:
+; cpython/optimized/marshal.ll
+; g2o/optimized/solver_dense.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp eq i64 %3, 0
-  %5 = add i64 %1, -1
+  %5 = add nsw i64 %1, -1
   %6 = select i1 %4, i64 %0, i64 %5
   ret i64 %6
 }

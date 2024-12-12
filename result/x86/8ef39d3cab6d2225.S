@@ -7,6 +7,6 @@ func0000000000000001:                   # @func0000000000000001
 	decq	%rax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	leal	8(%rdi), %eax
-	addq	$-8, %rax
+	leal	9(%rdi), %eax
+	addq	$-9, %rax
 	retq

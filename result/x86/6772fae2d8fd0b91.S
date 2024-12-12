@@ -4,7 +4,7 @@ func0000000000000012:                   # @func0000000000000012
 	setae	%al
 	orb	%dil, %al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	shll	$10, %edx
 	cmpl	%esi, %edx
 	setbe	%al
@@ -16,13 +16,7 @@ func0000000000000010:                   # @func0000000000000010
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
-	addl	%edx, %edx
-	cmpl	%esi, %edx
-	setne	%al
-	orb	%dil, %al
-	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	addl	%edx, %edx
 	cmpl	%esi, %edx
 	setne	%al
@@ -40,7 +34,7 @@ func000000000000000a:                   # @func000000000000000a
 	setbe	%al
 	orb	%dil, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	shll	$16, %edx
 	cmpl	%esi, %edx
 	setbe	%al

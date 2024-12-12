@@ -35,7 +35,7 @@ func0000000000000005:                   # @func0000000000000005
 	subq	%rdi, %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	movabsq	$288230376151711740, %rax       # imm = 0x3FFFFFFFFFFFFFC
+	movabsq	$8589934584, %rax               # imm = 0x1FFFFFFF8
 	andq	%rdx, %rax
 	addq	%rsi, %rax
 	subq	%rdi, %rax

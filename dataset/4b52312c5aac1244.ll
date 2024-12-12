@@ -1,5 +1,5 @@
 
-; 637 occurrences:
+; 639 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -22,6 +22,10 @@
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -380,7 +384,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -629,7 +632,6 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
 ; yosys/optimized/sta.ll
@@ -641,7 +643,7 @@
 define i64 @func0000000000000035(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = shl nsw i64 %4, 4
   %6 = ashr exact i64 %0, 5
   %7 = add nsw i64 %5, %6
@@ -657,7 +659,7 @@ entry:
 define i64 @func0000000000000034(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = shl nsw i64 %4, 5
   %6 = ashr exact i64 %0, 4
   %7 = add i64 %5, %6

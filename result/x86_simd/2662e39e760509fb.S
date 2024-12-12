@@ -22,5 +22,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovb2m	%xmm1, %k1
 	vpbroadcastb	.LCPI1_2(%rip), %xmm1   # xmm1 = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 	vmovdqu8	.LCPI1_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq

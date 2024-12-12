@@ -1,46 +1,34 @@
+func0000000000000010:                   // @func0000000000000010
+// %bb.0:                               // %entry
+	and	x8, x2, #0xfffffffffffffff0
+	cmp	x1, #23
+	mov	w9, #32                         // =0x20
+	csel	x8, x9, x8, lo
+	add	x0, x8, x0
+	ret
+                                        // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	cmeq	v2.2d, v2.2d, #0
-	cmeq	v3.2d, v3.2d, #0
-	movi	v6.2d, #0xffffffffffffff
-	bic	v2.16b, v4.16b, v2.16b
-	bic	v3.16b, v5.16b, v3.16b
-	and	v3.16b, v3.16b, v6.16b
-	and	v2.16b, v2.16b, v6.16b
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	and	x8, x2, #0xffffffffffffff
+	cmp	x1, #0
+	csel	x8, xzr, x8, eq
+	add	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmeq	v2.2d, v2.2d, #0
-	cmeq	v3.2d, v3.2d, #0
-	mov	w8, #2147483647                 // =0x7fffffff
-	bic	v2.16b, v4.16b, v2.16b
-	bic	v3.16b, v5.16b, v3.16b
-	dup	v4.2d, x8
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	and	x8, x2, #0x7fffffff
+	cmp	x1, #0
+	csel	x8, xzr, x8, eq
+	add	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	cmeq	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v2.2d, #0
-	mov	w8, #32                         // =0x20
-	movi	v6.2d, #0x000000ffffffff
-	dup	v7.2d, x8
-	bic	v5.16b, v5.16b, v3.16b
-	bic	v4.16b, v4.16b, v2.16b
-	and	v3.16b, v3.16b, v7.16b
-	and	v2.16b, v2.16b, v7.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	orr	v3.16b, v3.16b, v5.16b
-	orr	v2.16b, v2.16b, v4.16b
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	mov	w8, w2
+	cmp	x1, #0
+	mov	w9, #32                         // =0x20
+	csel	x8, x9, x8, eq
+	add	x0, x0, x8
 	ret
                                         // -- End function

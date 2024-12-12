@@ -1,5 +1,5 @@
 
-; 233 occurrences:
+; 232 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
@@ -159,7 +159,6 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -234,7 +233,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %1
   %4 = sext i8 %2 to i64

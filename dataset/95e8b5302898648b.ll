@@ -1,8 +1,7 @@
 
-; 47 occurrences:
+; 49 occurrences:
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
-; flatbuffers/optimized/flatc.cpp.ll
 ; graphviz/optimized/shapes.c.ll
 ; grpc/optimized/call.cc.ll
 ; icu/optimized/numfmt.ll
@@ -41,12 +40,15 @@
 ; wasmedge/optimized/segment.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-ehdlc.c.ll
 ; wireshark/optimized/packet-hislip.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; yosys/optimized/fmt.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:

@@ -11,10 +11,11 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/dauTree.c.ll
 ; libquic/optimized/prtime.cc.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; minetest/optimized/guiEngine.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind

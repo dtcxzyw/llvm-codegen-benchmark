@@ -1,10 +1,8 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; flac/optimized/bitmath.c.ll
 ; freetype/optimized/ftbase.c.ll
-; libquic/optimized/x_long.c.ll
 ; llvm/optimized/AArch64AsmBackend.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll

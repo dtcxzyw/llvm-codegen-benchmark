@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 105 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -26,7 +26,6 @@
 ; openssl/optimized/libcrypto-shlib-decoder_meth.ll
 ; openssl/optimized/libcrypto-shlib-encoder_meth.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
-; openssl/optimized/libtestutil-lib-tests.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; openusd/optimized/abstractData.cpp.ll
 ; openusd/optimized/animMapper.cpp.ll
@@ -107,7 +106,7 @@
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq ptr %0, null
@@ -115,8 +114,7 @@ entry:
   ret i1 %4
 }
 
-; 42 occurrences:
-; arrow/optimized/UriCompare.c.ll
+; 40 occurrences:
 ; arrow/optimized/UriShorten.c.ll
 ; graphviz/optimized/exparse.c.ll
 ; hwloc/optimized/diff.ll
@@ -142,7 +140,6 @@ entry:
 ; openjdk/optimized/memnode.ll
 ; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
-; openssl/optimized/libtestutil-lib-tests.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; postgres/optimized/collationcmds.ll
 ; postgres/optimized/dbcommands.ll
@@ -159,7 +156,7 @@ entry:
 ; wireshark/optimized/packet-cose.c.ll
 ; z3/optimized/ast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq ptr %0, null
@@ -167,7 +164,7 @@ entry:
   ret i1 %4
 }
 
-; 50 occurrences:
+; 62 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/1fcqyxrltkf78u1u.ll
 ; actix-rs/optimized/3tnlvci61w0nl5yv.ll
@@ -177,9 +174,9 @@ entry:
 ; actix-rs/optimized/5gtrut5e3cfvsh71.ll
 ; assimp/optimized/FBXDeformer.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/process.ll
 ; casadi/optimized/external.cpp.ll
 ; cpython/optimized/_testbuffer.ll
-; cpython/optimized/cellobject.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; eastl/optimized/TestAny.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
@@ -218,8 +215,20 @@ entry:
 ; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
 ; rust-analyzer-rs/optimized/z27qhj0ivx434rk.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8ps09f0y8mibhh9t1qb96p5es.ll
+; zed-rs/optimized/9pzx6flqzrwt1xqpmg7mx7dne.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/d6xu5i45b643l7z0mo8lfmzx0.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ne ptr %0, null
@@ -227,7 +236,7 @@ entry:
   ret i1 %4
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; arrow/optimized/bit_block_counter.cc.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
@@ -257,7 +266,6 @@ entry:
 ; openvdb/optimized/MetaMap.cc.ll
 ; postgres/optimized/relcache.ll
 ; proj/optimized/common.cpp.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/datum.cpp.ll
 ; slurm/optimized/read_config.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
@@ -271,9 +279,11 @@ entry:
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; wasmtime-rs/optimized/wtp2wi3bcje8i2h.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne ptr %0, null

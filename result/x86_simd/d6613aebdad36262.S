@@ -18,7 +18,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vcvtudq2pd	%ymm1, %zmm1
-	vcmpneqpd	%zmm0, %zmm1, %k0
+	vcmpneqpd	%zmm1, %zmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

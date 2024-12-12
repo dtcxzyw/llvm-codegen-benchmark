@@ -1,24 +1,24 @@
 
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.2948841" = type { i8, [7 x i8] }
-%"struct.clang::FunctionType::ExceptionType.2948843" = type { %"class.clang::QualType.2948584" }
-%"class.clang::QualType.2948584" = type { %"class.llvm::PointerIntPair.737.2948585" }
-%"class.llvm::PointerIntPair.737.2948585" = type { %"struct.llvm::detail::PunnedPointer.738.2948586" }
-%"struct.llvm::detail::PunnedPointer.738.2948586" = type { [8 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406" = type { i8, [7 x i8] }
+%"struct.clang::FunctionType::ExceptionType.3142408" = type { %"class.clang::QualType.3142149" }
+%"class.clang::QualType.3142149" = type { %"class.llvm::PointerIntPair.737.3142150" }
+%"class.llvm::PointerIntPair.737.3142150" = type { %"struct.llvm::detail::PunnedPointer.738.3142151" }
+%"struct.llvm::detail::PunnedPointer.738.3142151" = type { [8 x i8] }
 
 ; 2 occurrences:
 ; linux/optimized/ioam6.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000060(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func0000000000000070(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 272
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 272
   %5 = getelementptr i64, ptr %4, i64 %3
   %6 = getelementptr i64, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 63 occurrences:
+; 76 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -82,6 +82,19 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/2sf3ranrrf5pn6ms.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3u7utqtgdovrxzbad3tfrps40.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/bwf7odsfkes1o9vw37iz67e4b.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000040(i64 %0, ptr %1, i16 %2) #0 {
 entry:
@@ -92,7 +105,7 @@ entry:
   ret ptr %6
 }
 
-; 63 occurrences:
+; 76 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -156,23 +169,35 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/2sf3ranrrf5pn6ms.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3u7utqtgdovrxzbad3tfrps40.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/bwf7odsfkes1o9vw37iz67e4b.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func0000000000000043(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 1
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 40 occurrences:
+; 38 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/unzip.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; hermes/optimized/zip.c.ll
-; icu/optimized/ucptrie.ll
 ; icu/optimized/unames.ll
 ; icu/optimized/uresdata.ll
 ; icu/optimized/utrie2.ll
@@ -202,17 +227,31 @@ entry:
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; openjdk/optimized/constMethod.ll
-; openjdk/optimized/symbol.ll
+; openjdk/optimized/zip_util.ll
 ; openusd/optimized/zipFile.cpp.ll
 ; php/optimized/browscap.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 6
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 46
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 4 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; icu/optimized/ucptrie.ll
+; openjdk/optimized/constMethod.ll
+; openjdk/optimized/symbol.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(i64 %0, ptr %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 6
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -248,12 +287,12 @@ entry:
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 8
-  %5 = getelementptr nusw %"struct.clang::FunctionType::FunctionTypeArmAttributes.2948841", ptr %4, i64 %3
-  %6 = getelementptr nusw %"struct.clang::FunctionType::ExceptionType.2948843", ptr %5, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406", ptr %4, i64 %3
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::ExceptionType.3142408", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -261,11 +300,11 @@ entry:
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000003c(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 32
-  %5 = getelementptr nusw i16, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %5 = getelementptr nusw nuw i16, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -296,10 +335,10 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func0000000000000030(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 6
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 6
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6

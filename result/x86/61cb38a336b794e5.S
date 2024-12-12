@@ -8,14 +8,14 @@ func0000000000000009:                   # @func0000000000000009
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpb	%dl, %sil
-	seta	%al
-	andb	%dil, %al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	cmpb	%dl, %sil
 	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpb	%dl, %sil
+	seta	%al
 	andb	%dil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -31,6 +31,16 @@ func0000000000000005:                   # @func0000000000000005
 func000000000000000b:                   # @func000000000000000b
 	cmpb	%dl, %sil
 	setge	%al
+	andb	%dil, %al
+	retq
+func0000000000000019:                   # @func0000000000000019
+	cmpb	%dl, %sil
+	setae	%al
+	andb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpb	%dl, %sil
+	setb	%al
 	andb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006

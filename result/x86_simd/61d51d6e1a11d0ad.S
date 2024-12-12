@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.long	6                               # 0x6
+	.long	5                               # 0x5
 func0000000000000008:                   # @func0000000000000008
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2

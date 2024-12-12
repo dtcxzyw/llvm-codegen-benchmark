@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
-	andb	$1, %dl
-	addb	%dl, %dl
-	addb	$38, %dl
-	cmpb	$32, %sil
-	movzbl	%dl, %eax
+	xorl	%eax, %eax
+	testb	$1, %dl
+	setne	%al
+	leal	217(%rax,%rax,8), %eax
+	testb	%sil, %sil
 	cmovnel	%edi, %eax
 	retq

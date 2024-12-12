@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 16
 .LBB0_2:                                # %entry
 	ret
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	bnez	a1, .LBB1_2
 	slli	a0, a2, 4
 	addi	a0, a0, 16

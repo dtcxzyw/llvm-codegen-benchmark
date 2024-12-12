@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -24,6 +24,7 @@
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; opencv/optimized/deriv.cpp.ll
 ; openusd/optimized/crease.cpp.ll
+; openusd/optimized/warped_motion.c.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
@@ -56,7 +57,7 @@ entry:
   ret i32 %3
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraBddKmap.c.ll
 ; abc/optimized/ifSat.c.ll
@@ -81,7 +82,6 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
-; openusd/optimized/warped_motion.c.ll
 ; php/optimized/crypt_blowfish.ll
 ; php/optimized/zend_strtod.ll
 ; quest/optimized/QuEST.c.ll

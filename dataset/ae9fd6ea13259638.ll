@@ -1,7 +1,6 @@
 
-; 19 occurrences:
+; 12 occurrences:
 ; box2d/optimized/b2_distance.cpp.ll
-; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/position_restraints.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
@@ -11,20 +10,14 @@
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
-; opencv/optimized/optical_flow_evaluation.cpp.ll
-; opencv/optimized/pcaflow_demo.cpp.ll
-; opencv/optimized/tvl1_optical_flow.cpp.ll
 ; openjdk/optimized/cmsgamma.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; yoga/optimized/Node.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -51,11 +44,12 @@ define i1 @func0000000000000004(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 0.000000e+00
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; gromacs/optimized/nb_free_energy.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/ptracer.cpp.ll
 ; oiio/optimized/exroutput.cpp.ll
@@ -91,20 +85,18 @@ entry:
 define i1 @func000000000000000a(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ole float %2, 1.000000e+00
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 21 occurrences:
+; 16 occurrences:
 ; box2d/optimized/b2_island.cpp.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; lodepng/optimized/lodepng_util.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
-; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -115,15 +107,12 @@ entry:
 ; mitsuba3/optimized/spectrum.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; recastnavigation/optimized/DetourCommon.cpp.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp oge float %2, 0.000000e+00
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -136,7 +125,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ule float %2, 0.000000e+00
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -151,15 +140,12 @@ entry:
 define i1 @func0000000000000008(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %2, 1.000000e+00
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 5 occurrences:
-; opencv/optimized/optical_flow_evaluation.cpp.ll
-; opencv/optimized/pcaflow_demo.cpp.ll
-; opencv/optimized/tvl1_optical_flow.cpp.ll
+; 2 occurrences:
 ; qdrant-rs/optimized/4iacc535829shmz2.ll
 ; yoga/optimized/Cache.cpp.ll
 ; Function Attrs: nounwind
@@ -183,8 +169,8 @@ entry:
 define i1 @func000000000000000d(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp uge float %2, 0.000000e+00
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -198,8 +184,8 @@ entry:
 define i1 @func0000000000000006(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp one float %2, 0x7FF0000000000000
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -210,7 +196,7 @@ define i1 @func0000000000000005(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ugt float %2, -1.000000e+00
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -221,7 +207,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp uno float %2, 0.000000e+00
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -232,8 +218,8 @@ entry:
 define i1 @func0000000000000003(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ult float %2, 1.000000e+00
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

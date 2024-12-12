@@ -21,16 +21,16 @@ func0000000000000016:                   # @func0000000000000016
 	movl	$1, %eax
 	shlxl	%edi, %eax, %eax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	addl	%esi, %edi
+	addb	$-14, %dil
+	movl	$1, %eax
+	shlxl	%edi, %eax, %eax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	addl	%esi, %edi
 	decb	%dil
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	retq
-func0000000000000002:                   # @func0000000000000002
-	addl	%esi, %edi
-	addb	$-9, %dil
-	movl	$1, %eax
 	shlxl	%edi, %eax, %eax
 	retq
 func0000000000000015:                   # @func0000000000000015

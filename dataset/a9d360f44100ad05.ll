@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
@@ -12,9 +12,6 @@
 ; openspiel/optimized/hearts.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openspiel/optimized/trade_comm.cc.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/crs.cpp.ll
-; proj/optimized/io.cpp.ll
 ; redis/optimized/replication.ll
 ; ruby/optimized/prism.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
@@ -61,7 +58,7 @@ entry:
   ret i1 %6
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; arrow/optimized/function.cc.ll
 ; grpc/optimized/xds_routing.cc.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -80,7 +77,6 @@ entry:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; nix/optimized/nix-env.ll
 ; protobuf/optimized/name_resolver.cc.ll
 ; quantlib/optimized/asx.ll
 ; Function Attrs: nounwind
@@ -107,7 +103,7 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; eastl/optimized/TestFixedVector.cpp.ll
 ; linux/optimized/lzo1x_decompress_safe.ll
@@ -116,6 +112,7 @@ entry:
 ; opencv/optimized/persistence_yml.cpp.ll
 ; proj/optimized/transformation.cpp.ll
 ; snappy/optimized/snappy.cc.ll
+; yosys/optimized/viz.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, ptr %2) #0 {

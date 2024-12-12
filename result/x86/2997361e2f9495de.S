@@ -1,9 +1,3 @@
-func0000000000000004:                   # @func0000000000000004
-	imull	$-86400, %edx, %ecx             # imm = 0xFFFEAE80
-	addl	%esi, %ecx
-	imull	$3600, %edi, %eax               # imm = 0xE10
-	addl	%ecx, %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	imull	$-1410065408, %edx, %eax        # imm = 0xABF41C00
 	addl	%esi, %eax

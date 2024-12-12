@@ -17,8 +17,8 @@ func0000000000000002:                   # @func0000000000000002
 	orl	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	andl	$21845, %edi                    # imm = 0x5555
+	andl	$132184095, %edi                # imm = 0x7E0F81F
 	movl	%edi, %eax
-	shrl	%eax
+	shrl	$16, %eax
 	orl	%edi, %eax
 	retq

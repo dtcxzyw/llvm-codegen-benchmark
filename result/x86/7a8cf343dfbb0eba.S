@@ -137,19 +137,12 @@ func000000000000002c:                   # @func000000000000002c
 	orl	%edx, %eax
 	orl	%edi, %eax
 	retq
-func000000000000004c:                   # @func000000000000004c
-	movzbl	%dl, %ecx
-	shll	$6, %ecx
-	leal	(,%rsi,8), %eax
-	orl	%edi, %eax
-	orl	%ecx, %eax
-	retq
 func000000000000007c:                   # @func000000000000007c
-	movzbl	%dl, %ecx
-	shll	$6, %ecx
-	leal	(,%rsi,8), %eax
-	orl	%edi, %eax
-	orl	%ecx, %eax
+	movzbl	%dl, %eax
+	shll	$11, %eax
+	shll	$6, %esi
+	orl	%edi, %esi
+	orl	%esi, %eax
 	retq
 func0000000000000072:                   # @func0000000000000072
 	movzbl	%dl, %eax

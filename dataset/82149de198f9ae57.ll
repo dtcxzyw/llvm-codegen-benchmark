@@ -1,16 +1,26 @@
 
-; 6 occurrences:
+; 3 occurrences:
 ; cpython/optimized/crt.ll
 ; cpython/optimized/pyhash.ll
-; openjdk/optimized/shenandoahAdaptiveHeuristics.ll
-; openjdk/optimized/shenandoahFreeSet.ll
 ; openssl/optimized/quic_stream_test-bin-quic_stream_test.ll
-; postgres/optimized/date.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp ugt i64 %3, 50
+  %5 = select i1 %4, i64 %0, i64 %3
+  ret i64 %5
+}
+
+; 3 occurrences:
+; openjdk/optimized/shenandoahAdaptiveHeuristics.ll
+; openjdk/optimized/shenandoahFreeSet.ll
+; postgres/optimized/date.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = icmp samesign ugt i64 %3, 102399
   %5 = select i1 %4, i64 %0, i64 %3
   ret i64 %5
 }
@@ -27,16 +37,15 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/ProcessUNIX.c.ll
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/eathread_pool.cpp.ll
 ; libevent/optimized/event.c.ll
-; libevent/optimized/evthread_pthread.c.ll
 ; php/optimized/dow.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp sgt i64 %3, 4
@@ -67,7 +76,7 @@ entry:
 ; php/optimized/unixtime2tm.ll
 ; protobuf/optimized/time_util.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp slt i64 %3, 0
@@ -83,10 +92,10 @@ entry:
 ; libquic/optimized/adler32.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 65520
+  %4 = icmp samesign ugt i64 %3, 65520
   %5 = select i1 %4, i64 %0, i64 %3
   ret i64 %5
 }
@@ -94,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/hio.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 8016

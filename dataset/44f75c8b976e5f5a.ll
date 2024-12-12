@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/datagram.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/filter.ll
-; linux/optimized/head64.ll
 ; linux/optimized/mballoc.ll
 ; openjdk/optimized/jni.ll
 ; Function Attrs: nounwind

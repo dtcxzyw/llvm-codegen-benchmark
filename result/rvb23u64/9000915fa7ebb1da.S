@@ -26,7 +26,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fmul.d	fa5, fa1, fa2
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa4, fa5
 	ret
@@ -38,13 +38,13 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmul.d	fa5, fa1, fa2
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	feq.d	a0, fa5, fa4
 	ret
 func0000000000000001:                   # @func0000000000000001
 	fmul.d	fa5, fa1, fa2
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	feq.d	a0, fa5, fa5
 	xori	a0, a0, 1
 	ret
@@ -60,13 +60,13 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fmul.d	fa5, fa1, fa2
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	feq.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 func000000000000000e:                   # @func000000000000000e
 	fmul.d	fa5, fa1, fa2
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	feq.d	a0, fa5, fa5
 	ret

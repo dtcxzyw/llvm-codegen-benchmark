@@ -6,7 +6,7 @@ func000000000000000d:                   # @func000000000000000d
 	or	a0, a0, a1
 	sext.w	a0, a0
 	ret
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	sext.w	a2, a1
 	slti	a2, a2, 0
 	czero.nez	a1, a1, a2

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; icu/optimized/formattedval_iterimpl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = add nuw nsw i64 %2, 4
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/pyramids.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = add nsw i64 %2, 2

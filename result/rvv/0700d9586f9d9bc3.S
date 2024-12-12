@@ -31,6 +31,6 @@ func0000000000000037:                   # @func0000000000000037
 	li	a0, 52
 	vsll.vx	v10, v10, a0
 	vor.vv	v10, v10, v14
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vor.vi	v8, v8, 3
 	ret

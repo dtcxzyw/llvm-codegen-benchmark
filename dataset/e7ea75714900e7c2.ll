@@ -1,6 +1,6 @@
 
-%struct.JSValue.3243652 = type { %union.JSValueUnion.3243653, i64 }
-%union.JSValueUnion.3243653 = type { double }
+%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
+%union.JSValueUnion.3435082 = type { double }
 
 ; 8 occurrences:
 ; linux/optimized/libata-scsi.ll
@@ -23,37 +23,38 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i1 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 6, i64 0
-  %3 = getelementptr nusw float, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw float, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 4
   ret ptr %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; clamav/optimized/pe.c.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
 ; opencv/optimized/ts_arrtest.cpp.ll
 ; redis/optimized/ziplist.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i1 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 224, i64 218
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 2
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i1 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 2, i64 1
-  %3 = getelementptr %struct.JSValue.3243652, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

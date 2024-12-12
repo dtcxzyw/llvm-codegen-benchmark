@@ -1,11 +1,12 @@
 
-; 59 occurrences:
+; 57 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaSif.c.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
+; boost/optimized/numeric.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/instrumentation.ll
@@ -23,7 +24,6 @@
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libquic/optimized/quic_session.cc.ll
 ; linux/optimized/devinet.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/rw.ll
@@ -34,8 +34,6 @@
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; lua/optimized/lapi.ll
 ; lua/optimized/ldo.ll
-; luajit/optimized/lj_api.ll
-; luajit/optimized/lj_api_dyn.ll
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; luajit/optimized/lj_record.ll
@@ -44,9 +42,9 @@
 ; luajit/optimized/lj_trace_dyn.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; oniguruma/optimized/regexec.ll
-; opencv/optimized/pooling_layer.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/relocInfo.ll
+; openusd/optimized/openexr-c.c.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; pocketpy/optimized/pocketpy_c.cpp.ll
 ; postgres/optimized/setrefs.ll
@@ -60,9 +58,9 @@
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(ptr %0, ptr %1) #0 {
+define i64 @func0000000000000019(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 60
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 60
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %0 to i64
   %5 = sub i64 %4, %3
@@ -87,9 +85,9 @@ entry:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(ptr %0, ptr %1) #0 {
+define i64 @func0000000000000018(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 64
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 64
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %0 to i64
   %5 = sub i64 %4, %3
@@ -97,7 +95,7 @@ entry:
   ret i64 %6
 }
 
-; 19 occurrences:
+; 25 occurrences:
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
@@ -116,15 +114,35 @@ entry:
 ; rust-analyzer-rs/optimized/rilullg9p294yp1.ll
 ; rust-analyzer-rs/optimized/wnma56lgiayogov.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
+; turborepo-rs/optimized/8oe5vwmwwrst9p60jy1zusiyz.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zed-rs/optimized/ahuveaqkmks5i6nnvip2o62e5.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000015(ptr %0, ptr %1) #0 {
+define i64 @func000000000000001d(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %0 to i64
   %5 = sub nuw i64 %4, %3
   %6 = lshr exact i64 %5, 3
+  ret i64 %6
+}
+
+; 2 occurrences:
+; qemu/optimized/migration_qemu-file.c.ll
+; wireshark/optimized/packet-ieee80211-radiotap.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 4
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %0 to i64
+  %5 = sub i64 %4, %3
+  %6 = lshr i64 %5, 24
   ret i64 %6
 }
 
@@ -143,16 +161,17 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-ieee80211-radiotap.c.ll
+; 2 occurrences:
+; luajit/optimized/lj_api.ll
+; luajit/optimized/lj_api_dyn.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000000(ptr %0, ptr %1) #0 {
+define i64 @func0000000000000011(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr i8, ptr %1, i64 4
+  %2 = getelementptr nusw i8, ptr %1, i64 -16
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %0 to i64
   %5 = sub i64 %4, %3
-  %6 = lshr i64 %5, 2
+  %6 = lshr exact i64 %5, 3
   ret i64 %6
 }
 

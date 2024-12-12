@@ -3,12 +3,12 @@ func000000000000001c:                   # @func000000000000001c
 	movzwl	%si, %eax
 	leaq	3136(%rdi,%rax,4), %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	decl	%esi
 	andl	$31, %esi
 	leaq	1(%rsi,%rdi), %rax
 	retq
-func000000000000002e:                   # @func000000000000002e
+func000000000000002f:                   # @func000000000000002f
 	incl	%esi
 	andl	$7, %esi
 	decl	%esi

@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; git/optimized/ewah_bitmap.ll
-; linux/optimized/machine_kexec_64.ll
 ; openjdk/optimized/bitMap.ll
 ; qemu/optimized/system_physmem.c.ll
 ; Function Attrs: nounwind

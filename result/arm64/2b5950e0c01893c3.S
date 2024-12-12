@@ -1,17 +1,10 @@
-func0000000000000566:                   // @func0000000000000566
+func00000000000014c6:                   // @func00000000000014c6
 // %bb.0:                               // %entry
-	movi	v6.4s, #10
-	mla	v3.4s, v5.4s, v6.4s
-	movi	v5.4s, #61
-	mla	v2.4s, v4.4s, v6.4s
-	movi	v4.4s, #60
-	cmgt	v3.4s, v5.4s, v3.4s
-	cmgt	v2.4s, v5.4s, v2.4s
-	cmgt	v1.4s, v4.4s, v1.4s
-	cmgt	v0.4s, v4.4s, v0.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	and	v0.16b, v0.16b, v2.16b
-	xtn	v0.8b, v0.8h
+	mov	w8, #10                         // =0xa
+	cmp	w0, #60
+	mov	w9, #61                         // =0x3d
+	madd	w8, w2, w8, w1
+	ccmp	w8, w9, #0, lt
+	cset	w0, lt
 	ret
                                         // -- End function

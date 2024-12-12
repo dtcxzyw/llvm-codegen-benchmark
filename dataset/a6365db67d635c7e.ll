@@ -49,9 +49,10 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; php/optimized/PMurHash.ll
 ; php/optimized/PMurHash128.ll
 ; php/optimized/zend_strtod.ll

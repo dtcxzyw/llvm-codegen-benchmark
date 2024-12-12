@@ -3,7 +3,7 @@
 ; openjdk/optimized/jdmarker.ll
 ; openjdk/optimized/socketTransport.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000042a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -16
   %3 = icmp eq i32 %1, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/socketTransport.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 96
   %3 = icmp eq i32 %1, 1
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, -2
   %3 = icmp eq i32 %1, 0
@@ -41,7 +41,7 @@ entry:
 ; linux/optimized/xhci.ll
 ; wireshark/optimized/packet-pdcp-nr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, -4
   %3 = icmp eq i32 %1, 0

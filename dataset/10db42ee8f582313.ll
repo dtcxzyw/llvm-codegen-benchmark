@@ -1,6 +1,8 @@
 
-; 104 occurrences:
+; 125 occurrences:
 ; abc/optimized/decFactor.c.ll
+; abc/optimized/giaNf.c.ll
+; abseil-cpp/optimized/str_split_test.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; brotli/optimized/encode.c.ll
 ; darktable/optimized/filtering.c.ll
@@ -9,6 +11,7 @@
 ; darktable/optimized/introspection_lens.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
+; egg-rs/optimized/2fp1d0strj8iokyf.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; git/optimized/fast-import.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -24,16 +27,12 @@
 ; icu/optimized/double-conversion-strtod.ll
 ; icu/optimized/ucnvmbcs.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
-; linux/optimized/addrconf_core.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
-; linux/optimized/dw.ll
 ; linux/optimized/e1000_ethtool.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/ethtool.ll
 ; linux/optimized/extents.ll
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/hid-belkin.ll
 ; linux/optimized/hid-microsoft.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/idma32.ll
@@ -42,7 +41,6 @@
 ; linux/optimized/intel_migrate.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/intel_sseu.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/scsi_lib.ll
@@ -56,6 +54,7 @@
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/InstrEmitter.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; llvm/optimized/ValueMapper.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
@@ -65,6 +64,7 @@
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; luau/optimized/IrBuilder.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; opencv/optimized/lkpyramid.cpp.ll
@@ -89,7 +89,13 @@
 ; php/optimized/ir.ll
 ; php/optimized/php_reflection.ll
 ; php/optimized/zend_inference.ll
+; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/file.ll
 ; ruby/optimized/time.ll
@@ -104,6 +110,21 @@
 ; wireshark/optimized/pcapng.c.ll
 ; wolfssl/optimized/ecc.c.ll
 ; wolfssl/optimized/rsa.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4km3eupdnqqnodg5d7nrlf2sf.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/8c9m4dxfbx8n642b944htcs78.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/e80b5h5uaylvf0myf6av6e6rx.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -171,7 +192,8 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/message.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll

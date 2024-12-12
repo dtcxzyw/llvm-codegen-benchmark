@@ -1,12 +1,8 @@
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	shl	v0.16b, v0.16b, #7
-	cmtst	v2.16b, v2.16b, v2.16b
-	movi	v3.16b, #1
-	cmlt	v0.16b, v0.16b, #0
-	bic	v2.16b, v2.16b, v0.16b
-	and	v0.16b, v1.16b, v0.16b
-	and	v1.16b, v2.16b, v3.16b
-	orr	v0.16b, v0.16b, v1.16b
+	tst	w2, #0xff
+	cset	w8, ne
+	tst	w0, #0x1
+	csel	w0, w1, w8, ne
 	ret
                                         // -- End function

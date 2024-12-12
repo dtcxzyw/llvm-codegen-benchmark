@@ -1,16 +1,13 @@
 
-; 38 occurrences:
+; 34 occurrences:
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
-; cmake/optimized/poll.c.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; git/optimized/transport.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libevent/optimized/poll.c.ll
-; libuv/optimized/poll.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -24,7 +21,6 @@
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; node/optimized/poll.ll
 ; openjdk/optimized/IntBgr.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/gtk3_interface.ll
@@ -44,7 +40,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 3
   %4 = and i32 %1, 96
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or disjoint i32 %5, %3
   ret i32 %6
 }
@@ -60,7 +56,7 @@ entry:
   %2 = lshr i32 %1, 13
   %3 = and i32 %2, 8192
   %4 = and i32 %1, 256
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = or i32 %5, %3
   ret i32 %6
 }
@@ -73,7 +69,7 @@ entry:
   %2 = lshr i32 %1, 8
   %3 = and i32 %2, 256
   %4 = and i32 %1, 32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or i32 %5, %3
   ret i32 %6
 }

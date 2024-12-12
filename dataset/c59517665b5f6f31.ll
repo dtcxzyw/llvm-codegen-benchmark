@@ -13,6 +13,18 @@ entry:
 }
 
 ; 1 occurrences:
+; luau/optimized/IrRegAllocA64.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000015(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, %1
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw i64 %3, 32
+  %5 = or disjoint i64 %4, 16384001
+  ret i64 %5
+}
+
+; 1 occurrences:
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i32 %0, i32 %1) #0 {

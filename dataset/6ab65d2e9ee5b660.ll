@@ -10,7 +10,7 @@ define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = icmp eq i8 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

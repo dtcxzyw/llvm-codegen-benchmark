@@ -14,7 +14,7 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
@@ -36,12 +36,11 @@ entry:
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; quest/optimized/QuEST_common.c.ll
 ; raylib/optimized/rtextures.c.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

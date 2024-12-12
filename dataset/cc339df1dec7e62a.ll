@@ -12,7 +12,7 @@ entry:
   %3 = lshr i8 %2, 2
   %4 = and i8 %3, 8
   %.masked = and i8 %1, -17
-  %5 = or i8 %4, %.masked
+  %5 = or i8 %.masked, %4
   %6 = or disjoint i8 %5, %0
   ret i8 %6
 }

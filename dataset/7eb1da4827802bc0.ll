@@ -77,7 +77,7 @@ entry:
   ret i32 %5
 }
 
-; 58 occurrences:
+; 61 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -123,12 +123,12 @@ entry:
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/pcre2_compile.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/listpack.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
+; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; wireshark/optimized/packet-woww.c.ll
@@ -136,6 +136,9 @@ entry:
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:

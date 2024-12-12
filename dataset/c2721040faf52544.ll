@@ -30,12 +30,12 @@
 define i1 @func000000000000000a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp sgt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 105 occurrences:
+; 101 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -49,7 +49,6 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/sdf.c.ll
 ; graphviz/optimized/dotsplines.c.ll
-; gromacs/optimized/h_db.cpp.ll
 ; gromacs/optimized/hackblock.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; gromacs/optimized/pbcmethods.cpp.ll
@@ -69,6 +68,7 @@ entry:
 ; linux/optimized/processor_idle.ll
 ; linux/optimized/tcp_output.ll
 ; llvm/optimized/ImplicitNullChecks.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; oiio/optimized/imageoutput.cpp.ll
@@ -88,22 +88,18 @@ entry:
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; openssl/optimized/libcrypto-lib-ec_asn1.ll
 ; openssl/optimized/libcrypto-shlib-ec_asn1.ll
-; openusd/optimized/av1_inv_txfm2d.c.ll
 ; openusd/optimized/cdef.c.ll
-; php/optimized/xml.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; postgres/optimized/inet_net_ntop.ll
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
 ; quantlib/optimized/lmdif.ll
 ; quantlib/optimized/svd.ll
-; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; ruby/optimized/io.ll
 ; slurm/optimized/client.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
-; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/log3gpp.c.ll
 ; wireshark/optimized/packet-quakeworld.c.ll
@@ -145,8 +141,8 @@ entry:
 define i1 @func0000000000000006(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp slt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -176,12 +172,13 @@ entry:
 define i1 @func000000000000000b(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sle i64 %3, %1
+  %4 = icmp sge i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/to_chars.ll
 ; opencv/optimized/persistence.cpp.ll
 ; openmpi/optimized/check_monitoring.ll
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
@@ -193,8 +190,8 @@ entry:
 define i1 @func0000000000000009(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ule i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp uge i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -214,8 +211,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -233,8 +230,8 @@ entry:
 define i1 @func0000000000000004(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -251,8 +248,8 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -263,8 +260,8 @@ entry:
 define i1 @func0000000000000005(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp uge i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ule i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -276,7 +273,7 @@ entry:
 define i1 @func0000000000000007(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sge i64 %3, %1
+  %4 = icmp sle i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -292,8 +289,8 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ne i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ne i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

@@ -132,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ult i32 %0, 5
@@ -164,7 +164,7 @@ entry:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i32 %0, 1
@@ -172,15 +172,18 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 9 occurrences:
 ; llvm/optimized/LLParser.cpp.ll
 ; tree-sitter-rs/optimized/2czk4owdq0ube9pw.ll
 ; tree-sitter-rs/optimized/3flgp21wlj9z2cn6.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; z3/optimized/pull_quant.cpp.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i32 %0, 18
@@ -188,10 +191,11 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; gromacs/optimized/bias.cpp.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:

@@ -5,5 +5,5 @@ func0000000000000000:                   # @func0000000000000000
 	vsubss	%xmm1, %xmm2, %xmm2
 	kmovd	%edi, %k1
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}
-	vmulss	%xmm0, %xmm2, %xmm0
+	vmulss	%xmm2, %xmm0, %xmm0
 	retq

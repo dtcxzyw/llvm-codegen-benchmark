@@ -1,32 +1,26 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
-	add	v3.2d, v5.2d, v3.2d
-	add	v2.2d, v4.2d, v2.2d
-	dup	v4.2d, x8
-	mov	w8, #79                         // =0x4f
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	dup	v4.2d, x8
+	add	x8, x2, x1
+	add	x8, x8, #2
+	cmp	x8, #79
 	mov	w8, #40                         // =0x28
-	cmhi	v3.2d, v4.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	dup	v4.2d, x8
-	bif	v0.16b, v4.16b, v2.16b
-	bif	v1.16b, v4.16b, v3.16b
+	csel	x0, x0, x8, lo
 	ret
                                         // -- End function
-func00000000000000f8:                   // @func00000000000000f8
+func00000000000001f8:                   // @func00000000000001f8
 // %bb.0:                               // %entry
-	mov	w8, #65520                      // =0xfff0
-	add	v3.2d, v5.2d, v3.2d
-	add	v2.2d, v4.2d, v2.2d
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	cmhi	v3.2d, v3.2d, v4.2d
-	cmhi	v2.2d, v2.2d, v4.2d
-	bif	v0.16b, v4.16b, v2.16b
-	bif	v1.16b, v4.16b, v3.16b
+	add	x8, x2, x1
+	mov	w9, #65520                      // =0xfff0
+	add	x8, x8, x9
+	cmp	x8, x9
+	csel	x0, x0, x9, hi
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	add	x8, x2, x1
+	add	x8, x8, #2
+	cmp	x8, #508
+	csinc	x0, x0, xzr, lo
 	ret
                                         // -- End function

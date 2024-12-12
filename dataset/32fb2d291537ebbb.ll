@@ -17,13 +17,14 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_scale.ll
 ; wireshark/optimized/packet-tipc.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 131071
-  %3 = add nsw i32 %2, -28
+  %2 = and i32 %1, 32767
+  %3 = add nsw i32 %2, -1
   %4 = udiv i32 %0, %3
   ret i32 %4
 }

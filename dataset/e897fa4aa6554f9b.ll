@@ -75,19 +75,6 @@ entry:
 }
 
 ; 1 occurrences:
-; eastl/optimized/TestRingBuffer.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000008(ptr %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = ptrtoint ptr %0 to i64
-  %.neg = sub i64 %2, %3
-  %.neg1 = trunc i64 %.neg to i8
-  %4 = add i8 %.neg1, 23
-  ret i8 %4
-}
-
-; 1 occurrences:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000009(ptr %0, ptr %1) #0 {

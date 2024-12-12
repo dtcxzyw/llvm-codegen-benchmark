@@ -42,7 +42,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 15728640
   %.masked = and i64 %1, -983041
-  %4 = or i64 %3, %.masked
+  %4 = or i64 %.masked, %3
   %5 = and i64 %0, 983040
   %6 = or disjoint i64 %4, %5
   ret i64 %6
@@ -74,7 +74,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = or i64 %2, %1
+  %3 = or i64 %1, %2
   %4 = and i64 %3, 7
   %5 = and i64 %0, -449
   %6 = or i64 %5, %4

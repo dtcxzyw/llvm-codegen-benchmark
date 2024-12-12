@@ -9,9 +9,10 @@ entry:
   ret i64 %2
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/mpdecimal.ll
 ; llvm/optimized/xxhash.cpp.ll
@@ -27,13 +28,14 @@ entry:
   ret i64 %2
 }
 
-; 107 occurrences:
+; 108 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/hash_generator_testing.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

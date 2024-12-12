@@ -7,7 +7,7 @@
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = mul i32 %4, %0
   ret i32 %5
 }
@@ -21,7 +21,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 16
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = mul i32 %4, %0
   ret i32 %5
 }
@@ -37,7 +37,7 @@ entry:
   ret i32 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/absDup.c.ll
@@ -50,6 +50,7 @@ entry:
 ; abc/optimized/plaSimple.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
@@ -72,7 +73,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = add nsw i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 

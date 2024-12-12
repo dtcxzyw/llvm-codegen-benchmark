@@ -53,3 +53,12 @@ func000000000000000c:                   # @func000000000000000c
 .LBB5_2:                                # %entry
 	ori	a0, a0, 2
 	ret
+func0000000000000029:                   # @func0000000000000029
+	slli	a2, a2, 48
+	srli	a2, a2, 48
+	li	a3, 16
+	bltu	a2, a3, .LBB6_2
+	mv	a0, a1
+.LBB6_2:                                # %entry
+	ori	a0, a0, 2
+	ret

@@ -1,4 +1,4 @@
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	sext.w	a1, a1
 	andi	a2, a2, 255
 	addi	a2, a2, -32
@@ -7,7 +7,7 @@ func0000000000000182:                   # @func0000000000000182
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	andi	a1, a1, 255
 	sext.w	a2, a2
 	xori	a2, a2, 50
@@ -16,7 +16,7 @@ func0000000000000198:                   # @func0000000000000198
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	sext.w	a1, a1
 	andi	a2, a2, 255
 	addi	a2, a2, -90
@@ -25,16 +25,15 @@ func0000000000000022:                   # @func0000000000000022
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000110:                   # @func0000000000000110
+func0000000000000058:                   # @func0000000000000058
 	sext.w	a1, a1
 	andi	a2, a2, 255
-	sltiu	a2, a2, 8
-	sltiu	a1, a1, 100
-	and	a1, a1, a2
-	xori	a1, a1, 1
+	seqz	a2, a2
+	snez	a1, a1
+	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000190:                   # @func0000000000000190
+func0000000000000310:                   # @func0000000000000310
 	andi	a1, a1, 255
 	sext.w	a2, a2
 	snez	a2, a2
@@ -43,17 +42,7 @@ func0000000000000190:                   # @func0000000000000190
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
-	andi	a1, a1, 255
-	sext.w	a2, a2
-	addi	a2, a2, -1
-	addi	a1, a1, -2
-	seqz	a2, a2
-	snez	a1, a1
-	or	a1, a1, a2
-	and	a0, a0, a1
-	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	andi	a1, a1, 255
 	sext.w	a2, a2
 	seqz	a2, a2
@@ -61,7 +50,7 @@ func0000000000000028:                   # @func0000000000000028
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	andi	a1, a1, 255
 	sext.w	a2, a2
 	seqz	a2, a2

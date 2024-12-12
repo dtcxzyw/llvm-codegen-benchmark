@@ -1,51 +1,57 @@
 
-; 24 occurrences:
+; 14 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/giaMini.c.ll
-; assimp/optimized/FBXParser.cpp.ll
-; assimp/optimized/SIBImporter.cpp.ll
-; cmake/optimized/nghttp2_session.c.ll
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
-; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/xhci.ll
-; llvm/optimized/DWARFGdbIndex.cpp.ll
-; llvm/optimized/FormatToken.cpp.ll
-; minetest/optimized/CXMeshFileLoader.cpp.ll
-; mitsuba3/optimized/bsplinecurve.cpp.ll
-; mitsuba3/optimized/linearcurve.cpp.ll
 ; mold/optimized/icf.cc.LOONGARCH32.cc.ll
 ; mold/optimized/icf.cc.M68K.cc.ll
 ; mold/optimized/icf.cc.PPC32.cc.ll
 ; mold/optimized/icf.cc.RV32BE.cc.ll
 ; mold/optimized/icf.cc.RV32LE.cc.ll
 ; mold/optimized/icf.cc.SH4.cc.ll
-; nghttp2/optimized/nghttp2_session.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
 entry:
-  %2 = udiv i32 %1, 100
+  %2 = udiv i32 %1, 12
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp samesign ult i64 %0, %3
   ret i1 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; assimp/optimized/FBXParser.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
-; fmt/optimized/chrono-test.cc.ll
-; freetype/optimized/autofit.c.ll
-; freetype/optimized/sfnt.c.ll
-; linux/optimized/drm_dsc_helper.ll
+; cmake/optimized/nghttp2_session.c.ll
+; linux/optimized/acpi-cpufreq.ll
+; llvm/optimized/DWARFGdbIndex.cpp.ll
+; llvm/optimized/FormatToken.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
+; nghttp2/optimized/nghttp2_session.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 3
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ult i64 %0, %3
+  ret i1 %4
+}
+
+; 4 occurrences:
+; assimp/optimized/SIBImporter.cpp.ll
+; fmt/optimized/chrono-test.cc.ll
+; linux/optimized/drm_dsc_helper.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 %1, 3
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -74,11 +80,11 @@ entry:
 ; qemu/optimized/hw_core_loader.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 12
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -87,22 +93,34 @@ entry:
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; postgres/optimized/postgres.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 100
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; freetype/optimized/autofit.c.ll
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 %1, 12
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp samesign ugt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 14
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 

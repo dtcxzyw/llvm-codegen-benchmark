@@ -4,5 +4,5 @@ func000000000000000b:                   # @func000000000000000b
 	vmax.vv	v10, v10, v12
 	li	a0, 32
 	vsrl.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret

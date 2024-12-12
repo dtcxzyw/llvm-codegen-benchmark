@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaBalLut.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -15,8 +15,8 @@
 ; linux/optimized/addrconf.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; miniaudio/optimized/unity.c.ll
-; openjdk/optimized/TransformHelper.ll
 ; openmpi/optimized/coll_base_allreduce.ll
 ; openmpi/optimized/coll_base_barrier.ll
 ; openmpi/optimized/comm_cid.ll
@@ -36,7 +36,6 @@
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
-; wireshark/optimized/packet-lpp.c.ll
 ; z3/optimized/nla_order_lemmas.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {

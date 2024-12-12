@@ -1,5 +1,7 @@
 
-; 70 occurrences:
+; 72 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btConvexShape.ll

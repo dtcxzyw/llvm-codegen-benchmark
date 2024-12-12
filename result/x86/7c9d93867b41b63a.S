@@ -1,9 +1,9 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movl	%edi, %eax
 	cltd
 	idivl	%esi
-	cmpl	%edi, %edx
-	setl	%al
+	cmpl	%edx, %edi
+	setg	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax
@@ -13,10 +13,10 @@ func0000000000000006:                   # @func0000000000000006
 	shrl	$31, %edi
 	movl	%edi, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	%edi, %eax
 	cltd
 	idivl	%esi
-	cmpl	%edi, %edx
-	setge	%al
+	cmpl	%edx, %edi
+	setle	%al
 	retq

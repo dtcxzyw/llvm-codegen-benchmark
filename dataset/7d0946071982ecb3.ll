@@ -29,23 +29,27 @@ entry:
   ret i8 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/range.ll
+; boost/optimized/tupled_output.ll
 ; cvc5/optimized/regexp_elim.cpp.ll
 ; opencv/optimized/perf_estimators.cpp.ll
 ; pocketpy/optimized/io.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; yosys/optimized/verilog_parser.tab.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = icmp eq i64 %3, 16
+  %4 = icmp eq i64 %3, 400
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
 ; Function Attrs: nounwind
@@ -53,7 +57,7 @@ define i8 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = icmp ult i64 %3, 32
+  %4 = icmp ult i64 %3, 17
   %5 = zext i1 %4 to i8
   ret i8 %5
 }

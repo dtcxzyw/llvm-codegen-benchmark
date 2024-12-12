@@ -1,7 +1,9 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; wolfssl/optimized/sp_int.c.ll

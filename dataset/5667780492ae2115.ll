@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/iso9660.c.ll
-; linux/optimized/md.ll
 ; linux/optimized/tcp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; openmpi/optimized/coll_base_bcast.ll
@@ -25,7 +24,7 @@ entry:
 ; openmpi/optimized/coll_han_bcast.ll
 ; openmpi/optimized/coll_han_reduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nsw i64 %0, %1
@@ -59,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %0, %1
@@ -70,18 +69,18 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %0, %1
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul nuw nsw i64 %0, %1
@@ -93,7 +92,7 @@ entry:
 ; abc/optimized/abcCollapse.c.ll
 ; openmpi/optimized/osc_rdma_accumulate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul i64 %0, %1
@@ -104,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/commit-graph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nsw i64 %0, %1
@@ -115,7 +114,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/commit-graph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nsw i64 %0, %1
@@ -128,7 +127,7 @@ entry:
 ; libjpeg-turbo/optimized/rdppm.c.ll
 ; linux/optimized/intel_fb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw i64 %0, %1
@@ -165,7 +164,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000049(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw i64 %0, %1
@@ -176,22 +175,33 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/genconf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul nuw nsw i64 %0, %1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/string_helpers.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw i64 %0, %1
   %5 = icmp ult i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/md.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = mul i64 %0, %1
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -209,11 +219,11 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %0, %1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

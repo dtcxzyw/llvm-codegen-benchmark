@@ -16,3 +16,9 @@ func0000000000000000:                   # @func0000000000000000
 	orl	%esi, %eax
 	orl	$1024, %eax                     # imm = 0x400
 	retq
+func0000000000000002:                   # @func0000000000000002
+	movl	%edi, %eax
+	andl	$-16776961, %eax                # imm = 0xFF0000FF
+	orl	%esi, %eax
+	orl	$39424, %eax                    # imm = 0x9A00
+	retq

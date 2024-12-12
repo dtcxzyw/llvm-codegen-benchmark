@@ -1,10 +1,3 @@
-func0000000000000011:                   # @func0000000000000011
-	xorl	%eax, %eax
-	cmpl	%edx, %esi
-	seta	%al
-	andl	$-3, %edi
-	leal	(%rdi,%rax,2), %eax
-	retq
 func000000000000000d:                   # @func000000000000000d
 	xorl	%eax, %eax
 	cmpl	%edx, %esi

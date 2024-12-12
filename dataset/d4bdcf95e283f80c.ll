@@ -1,5 +1,5 @@
 
-; 170 occurrences:
+; 173 occurrences:
 ; c3c/optimized/file_utils.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -170,19 +170,24 @@
 ; tev/optimized/main.cpp.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
-; 378 occurrences:
+; 380 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/expression.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/static_string.ll
 ; casadi/optimized/options.cpp.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
@@ -558,18 +563,20 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %1, %0
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
-; 373 occurrences:
+; 375 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/expression.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/static_string.ll
 ; casadi/optimized/options.cpp.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
@@ -940,14 +947,14 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %1, %0
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 
-; 42 occurrences:
+; 79 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/h71pcgvmobkrtmz.ll
 ; coreutils-rs/optimized/1bqigjahzyzq22su.ll
@@ -988,13 +995,50 @@ entry:
 ; tokio-rs/optimized/4mr1mvhll2ekuv31.ll
 ; tokio-rs/optimized/r9h5225tdo2hxm6.ll
 ; tree-sitter-rs/optimized/2nyb27tvwtmdn06o.ll
+; turborepo-rs/optimized/8atlatu7zsjescxq9jjfyqxjo.ll
+; turborepo-rs/optimized/allq2hqzkn1ywqvzl6k501g1q.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2ki47jl401le7d880vult9vcg.ll
+; zed-rs/optimized/3di65m17000bk7br774s5jqap.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/583y325aopre8a32cz1ntgg8y.ll
+; zed-rs/optimized/5eo3r6xqgcl9c03ocnkjc70d3.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/5xfke1jw0ac7pab611oym1u20.ll
+; zed-rs/optimized/5zvzdqo9nykovvrfw25tdotue.ll
+; zed-rs/optimized/6a4dcc96vf0fkvge4rfwus3hw.ll
+; zed-rs/optimized/6gy7cm9m32a7fdg31v3lbyxhl.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/99xtkjwhw46g7fh9gdw0hgerp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/a9rra6zt6cc5nzqj25fs18k6t.ll
+; zed-rs/optimized/b3fsiuvawj3jj0fngz22afvrc.ll
+; zed-rs/optimized/bx05yi7k15cz36qdtwh95aj38.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/ckiwzakufh7d1bhz9acxsspq9.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/ctn8ife4u6gnb1c6todtqv7oc.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/e8miey85a4w6kj2eow2y7dsus.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
-  %3 = icmp uge i64 %2, %0
+  %3 = icmp ule i64 %0, %2
   ret i1 %3
 }
 
@@ -1228,20 +1272,43 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
-; 4 occurrences:
+; 27 occurrences:
 ; ring-rs/optimized/2r3wc2wo4j1ozk7e.ll
 ; ring-rs/optimized/4prppzcttbsz5zvc.ll
 ; tls-rs/optimized/4vvnrvl2eceao62c.ll
+; turborepo-rs/optimized/4w2esflvo3af23i5beiirhnry.ll
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/4pyl8821jbmubnjyx7hxe0q2i.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8c9m4dxfbx8n642b944htcs78.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/9veql5nv8njiwoukz29yvwhob.ll
+; zed-rs/optimized/bjeparp10jwpmju7lihptx53f.ll
+; zed-rs/optimized/bx05yi7k15cz36qdtwh95aj38.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/dkpymwf72m1w0twqv9sm36jup.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/dqkbt3e3tzkgcyv67jgz1zdbd.ll
+; zed-rs/optimized/dtqpsl4w47n2m18dddhdjmklr.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %1, %0
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -1409,20 +1476,20 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %1, %0
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %1, %0
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 
@@ -1437,7 +1504,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 
@@ -1447,17 +1514,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
-  %3 = icmp eq i64 %2, %0
-  ret i1 %3
-}
-
-; 1 occurrences:
-; hyperscan/optimized/ng_corpus_generator.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nuw nsw i64 %1, %0
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -1467,7 +1524,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 

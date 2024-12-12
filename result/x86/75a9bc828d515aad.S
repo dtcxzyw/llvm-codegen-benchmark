@@ -8,7 +8,7 @@ func000000000000000d:                   # @func000000000000000d
 	retq
 func000000000000001f:                   # @func000000000000001f
 	addl	$-2, %edi
-	leaq	16(,%rdi,8), %rax
+	leaq	8(,%rdi,8), %rax
 	retq
 func000000000000001d:                   # @func000000000000001d
 	decl	%edi

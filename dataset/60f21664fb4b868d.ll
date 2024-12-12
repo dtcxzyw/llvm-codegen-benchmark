@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; git/optimized/show-branch.ll
 ; linux/optimized/buffer.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
+; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:

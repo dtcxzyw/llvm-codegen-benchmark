@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; linux/optimized/alternative.ll
-; linux/optimized/mii.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; nlohmann_json/optimized/unit-byte_container_with_subtype.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
@@ -11,7 +10,7 @@
 ; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_xclass.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108864
   %3 = icmp ne i32 %2, 0
@@ -26,7 +25,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 4
@@ -39,7 +38,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i8 %0, i32 %1) #0 {
+define i1 @func000000000000018a(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 4
@@ -52,7 +51,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i8 %0, i32 %1) #0 {
+define i1 @func000000000000014c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 4
@@ -73,7 +72,7 @@ entry:
 ; php/optimized/pcre2_xclass.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -3
   %3 = icmp eq i32 %2, 5
@@ -86,7 +85,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp eq i32 %2, 6
@@ -98,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp ne i32 %2, 0
@@ -110,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp eq i32 %2, 0
@@ -123,7 +122,7 @@ entry:
 ; icu/optimized/rematch.ll
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp ne i32 %2, 0
@@ -135,7 +134,7 @@ entry:
 ; 1 occurrences:
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i8 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp ne i32 %2, 0
@@ -147,7 +146,7 @@ entry:
 ; 1 occurrences:
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp eq i32 %2, 0

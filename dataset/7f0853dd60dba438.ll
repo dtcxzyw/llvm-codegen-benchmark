@@ -8,16 +8,17 @@ entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
   %5 = add nsw i32 %4, -1
-  %6 = mul nuw i32 %5, %0
+  %6 = mul nuw i32 %0, %5
   ret i32 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-font.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i32 %0, i32 %1, i32 %2) #0 {
 entry:

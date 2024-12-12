@@ -1,11 +1,22 @@
 
-; 47 occurrences:
+; 58 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/mutex.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
@@ -57,12 +68,14 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
 ; taskflow/optimized/parallel_sort.cpp.ll
@@ -71,7 +84,7 @@ entry:
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 2147483646
   %3 = add nsw i64 %2, -1
@@ -80,11 +93,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/work_stealing.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000003a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 2147483646
   %3 = add nsw i64 %2, -1

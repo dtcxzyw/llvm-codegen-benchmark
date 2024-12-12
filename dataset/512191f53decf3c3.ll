@@ -20,11 +20,11 @@
 ; wolfssl/optimized/tls13.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2048
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp eq i32 %0, 2064
   %7 = or i1 %6, %5
   ret i1 %7
@@ -54,7 +54,7 @@ entry:
 ; ruby/optimized/ripper.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 897
   %4 = icmp ne i32 %3, 0
@@ -67,11 +67,11 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/euc_jp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000310(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 13
   %4 = icmp ne i32 %3, 5
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp ugt i32 %0, 16777215
   %7 = or i1 %6, %5
   ret i1 %7
@@ -94,11 +94,11 @@ entry:
 ; quantlib/optimized/germany.ll
 ; ruby/optimized/vm_trace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   %6 = icmp ne i32 %1, 0
   %7 = or i1 %5, %6
   ret i1 %7
@@ -113,7 +113,7 @@ entry:
 ; qemu/optimized/block.c.ll
 ; ruby/optimized/vm_trace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp eq i32 %3, 0
@@ -131,28 +131,13 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000030c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -5
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp slt i32 %0, 22
   %7 = or i1 %6, %5
-  ret i1 %7
-}
-
-; 3 occurrences:
-; darktable/optimized/RawImageDataFloat.cpp.ll
-; darktable/optimized/RawImageDataU16.cpp.ll
-; openjdk/optimized/sharedRuntimeTrans.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 2147483647
-  %4 = icmp eq i32 %3, 2146435072
-  %5 = and i1 %4, %0
-  %6 = icmp ugt i32 %1, 2146435072
-  %7 = or i1 %5, %6
   ret i1 %7
 }
 
@@ -163,7 +148,7 @@ entry:
 ; ncnn/optimized/innerproduct_x86_fma.cpp.ll
 ; opencv/optimized/thresh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = icmp eq i32 %3, 0
@@ -173,27 +158,40 @@ entry:
   ret i1 %7
 }
 
+; 2 occurrences:
+; darktable/optimized/RawImageDataFloat.cpp.ll
+; darktable/optimized/RawImageDataU16.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000050(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1
+  %4 = icmp eq i32 %3, 0
+  %5 = and i1 %4, %1
+  %6 = icmp ugt i32 %0, 1
+  %7 = or i1 %6, %5
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2139095040
   %4 = icmp eq i32 %3, 2139095040
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   %6 = icmp sgt i32 %1, 15
   %7 = or i1 %5, %6
   ret i1 %7
 }
 
-; 5 occurrences:
-; icu/optimized/collationfastlatinbuilder.ll
+; 4 occurrences:
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; oiio/optimized/RunLengthEncoding.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000308(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 224
   %4 = icmp ne i32 %3, 192

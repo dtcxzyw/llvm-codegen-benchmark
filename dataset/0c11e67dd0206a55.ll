@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; linux/optimized/intel_psr.ll
+; 4 occurrences:
 ; llvm/optimized/ModuleSymbolTable.cpp.ll
 ; php/optimized/zend_gc.ll
 ; ruby/optimized/ruby.ll
@@ -14,7 +13,7 @@ entry:
   ret i32 %4
 }
 
-; 98 occurrences:
+; 97 occurrences:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -59,7 +58,6 @@ entry:
 ; linux/optimized/intel_fbc.ll
 ; linux/optimized/intel_tc.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/nfs4renewd.ll
 ; linux/optimized/pci_root.ll
 ; linux/optimized/quota.ll
 ; linux/optimized/tcp.ll
@@ -114,7 +112,7 @@ entry:
 ; yosys/optimized/simplify.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 1024
   %3 = icmp eq i32 %1, 0
@@ -122,7 +120,7 @@ entry:
   ret i32 %4
 }
 
-; 116 occurrences:
+; 114 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/manager.c.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
@@ -136,14 +134,12 @@ entry:
 ; git/optimized/read-cache.ll
 ; git/optimized/refs.ll
 ; graphviz/optimized/sfprint.c.ll
-; grpc/optimized/ev_poll_posix.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; icu/optimized/parse.ll
 ; icu/optimized/uspoof.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; libevent/optimized/poll.c.ll
 ; libquic/optimized/file_posix.cc.ll
 ; libquic/optimized/ssl_lib.c.ll
 ; lief/optimized/x509_crt.c.ll
@@ -252,7 +248,7 @@ entry:
 ; cpython/optimized/_testbuffer.ll
 ; folly/optimized/MemoryMapping.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 32
   %.not = icmp eq i32 %1, -1
@@ -263,16 +259,27 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 25
   %3 = and i32 %2, 64
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 19 occurrences:
+; 2 occurrences:
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
+; php/optimized/zend_inference.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, -2147483648
+  %3 = icmp ult i32 %1, 1073741824
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
+; 17 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -288,14 +295,13 @@ entry:
 ; linux/optimized/open.ll
 ; linux/optimized/utimes.ll
 ; node/optimized/pipe.ll
-; php/optimized/zend_inference.ll
 ; php/optimized/zend_strtod.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or disjoint i32 %0, -2147483648
-  %3 = icmp ult i32 %1, 1073741824
+  %2 = or disjoint i32 %0, 1048576
+  %3 = icmp samesign ult i32 %1, 1048576
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -308,6 +314,17 @@ define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, 512
   %3 = icmp sgt i32 %1, 1
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; linux/optimized/intel_psr.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or i32 %0, 512
+  %3 = icmp samesign ult i32 %1, 501
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -327,7 +344,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_display_power_well.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 8
   %3 = icmp slt i32 %1, 0

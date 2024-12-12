@@ -1,12 +1,11 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; ruby/optimized/date_core.ll
-; wireshark/optimized/snoop.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
-  %3 = icmp ugt i32 %2, 86399
+  %3 = icmp samesign ugt i32 %2, 86399
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -39,7 +38,7 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = icmp sgt i32 %2, 7
@@ -51,7 +50,7 @@ entry:
 ; abc/optimized/sbdCut.c.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = icmp eq i32 %2, -2
@@ -68,7 +67,7 @@ entry:
 ; linux/optimized/skbuff.ll
 ; linux/optimized/xfrm_input.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = icmp ne i32 %2, 1
@@ -79,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/graph.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sle i32 %0, %1
   %3 = zext i1 %2 to i32
@@ -96,6 +95,17 @@ define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = icmp sgt i32 %2, 0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/snoop.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 %0, %1
+  %3 = icmp ugt i32 %2, 15
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

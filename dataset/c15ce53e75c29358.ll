@@ -78,11 +78,11 @@
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp eq i64 %4, -1
   ret i1 %5
 }
@@ -90,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 65535, %2
@@ -102,11 +102,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_client_modeset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp eq i64 %4, -1
   ret i1 %5
 }

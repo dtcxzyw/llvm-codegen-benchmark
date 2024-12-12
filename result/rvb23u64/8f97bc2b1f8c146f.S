@@ -4,13 +4,13 @@ func0000000000000020:                   # @func0000000000000020
 	sh3add	a0, a1, a0
 	addi	a0, a0, -8
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	add	a1, a1, a2
 	sraiw	a1, a1, 6
 	sh3add	a0, a1, a0
 	addi	a0, a0, 456
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000002e:                   # @func000000000000002e
 	addw	a1, a1, a2
 	srli	a1, a1, 1
 	slli	a1, a1, 6

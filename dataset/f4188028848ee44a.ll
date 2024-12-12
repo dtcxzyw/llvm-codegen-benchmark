@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll

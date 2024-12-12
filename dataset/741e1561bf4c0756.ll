@@ -1,5 +1,5 @@
 
-; 152 occurrences:
+; 148 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/absVta.c.ll
@@ -52,7 +52,6 @@
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/early-lookup.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/gen8_engine_cs.ll
 ; linux/optimized/hwregs.ll
@@ -63,9 +62,7 @@
 ; linux/optimized/md.ll
 ; linux/optimized/mqueue.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/sch_mq.ll
 ; linux/optimized/slub.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; linux/optimized/xhci-mem.ll
@@ -130,7 +127,6 @@
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
-; nuttx/optimized/mq_setattr.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openjdk/optimized/c1_Optimizer.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -243,11 +239,10 @@ entry:
   ret i32 %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
 ; icu/optimized/coleitr.ll
-; linux/optimized/feat_ctl.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/ThreadSafetyTIL.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll

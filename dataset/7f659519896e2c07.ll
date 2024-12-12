@@ -1,20 +1,14 @@
 
-; 10 occurrences:
+; 4 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
-; spike/optimized/f32_to_f16.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or disjoint i64 %3, -9223372036854775808
   ret i64 %4
 }
@@ -27,7 +21,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = or disjoint i64 %3, 8192
   ret i64 %4
 }
@@ -39,7 +33,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = or i64 %3, 2
   ret i64 %4
 }
@@ -58,7 +52,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or i64 %3, 16384
   ret i64 %4
 }

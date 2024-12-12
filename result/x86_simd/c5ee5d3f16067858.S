@@ -21,5 +21,5 @@ func0000000000000003:                   # @func0000000000000003
 	vmovdqa32	%ymm2, %ymm3 {%k1} {z}
 	vptestnmd	%ymm1, %ymm1, %k1
 	vmovdqa32	%ymm3, %ymm2 {%k1}
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	retq

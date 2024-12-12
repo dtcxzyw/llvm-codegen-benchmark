@@ -11,7 +11,7 @@ define double @func0000000000000001(double %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fmul double %4, 0x3EB0000000000000
   ret double %5
 }

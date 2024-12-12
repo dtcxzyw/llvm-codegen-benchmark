@@ -2,25 +2,26 @@
 ; 1 occurrences:
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a4c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000288c(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -80
-  %3 = icmp ugt ptr %2, %0
+  %3 = icmp ult ptr %0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 -40
-  %5 = icmp ne ptr %4, %0
+  %5 = icmp ne ptr %0, %4
   %6 = select i1 %5, i1 %3, i1 false
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/muParserBase.cpp.ll
+; portaudio/optimized/pa_linux_alsa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000acc(ptr %0, ptr %1) #0 {
+define i1 @func0000000000003d8c(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 272
-  %3 = icmp ne ptr %2, %0
-  %4 = getelementptr nusw i8, ptr %1, i64 224
-  %5 = icmp ne ptr %4, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 272
+  %3 = icmp ne ptr %0, %2
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 224
+  %5 = icmp ne ptr %0, %4
   %6 = select i1 %5, i1 %3, i1 false
   ret i1 %6
 }
@@ -36,12 +37,12 @@ entry:
 ; cmake/optimized/protocol_types.cpp.ll
 ; cmake/optimized/typeof.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a49(ptr %0, ptr %1) #0 {
+define i1 @func0000000000003c89(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 56
-  %3 = icmp ugt ptr %2, %0
-  %4 = getelementptr nusw i8, ptr %1, i64 24
-  %5 = icmp ule ptr %4, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 56
+  %3 = icmp ult ptr %0, %2
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 24
+  %5 = icmp uge ptr %0, %4
   %6 = select i1 %5, i1 %3, i1 false
   ret i1 %6
 }

@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vextracti128	$1, %ymm2, %xmm3
@@ -46,7 +46,7 @@ func0000000000000021:                   # @func0000000000000021
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpcmpeqd	%ymm0, %ymm1, %k0
+	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

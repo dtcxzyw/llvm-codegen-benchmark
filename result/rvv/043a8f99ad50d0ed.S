@@ -71,12 +71,3 @@ func00000000000000c7:                   # @func00000000000000c7
 	vadd.vv	v8, v8, v8
 	vor.vv	v8, v8, v10
 	ret
-func0000000000000087:                   # @func0000000000000087
-	li	a0, 31
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vx	v0, v10, a0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v8, v8
-	vor.vv	v8, v8, v10
-	ret

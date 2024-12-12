@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	andl	$1, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
-	cmpb	$2, %sil
+	cmpb	$16, %sil
 	setb	%al
 	orb	%dil, %al
 	movzbl	%al, %eax

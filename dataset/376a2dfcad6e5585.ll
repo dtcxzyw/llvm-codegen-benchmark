@@ -1,7 +1,43 @@
 
-%"class.mitsuba::ref.74.2487081" = type { ptr }
+%"class.mitsuba::ref.74.2602513" = type { ptr }
+%"class.boost::geometry::model::point.3015592" = type { [2 x double] }
 
-; 81 occurrences:
+; 25 occurrences:
+; mitsuba3/optimized/batch.cpp.ll
+; mitsuba3/optimized/bitmap.cpp.ll
+; mitsuba3/optimized/envmap.cpp.ll
+; mitsuba3/optimized/fresolver.cpp.ll
+; mitsuba3/optimized/grid.cpp.ll
+; mitsuba3/optimized/merge.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
+; mitsuba3/optimized/mitsuba.cpp.ll
+; mitsuba3/optimized/rfilter.cpp.ll
+; mitsuba3/optimized/scene.cpp.ll
+; mitsuba3/optimized/volumegrid.cpp.ll
+; mitsuba3/optimized/xml.cpp.ll
+; tev/optimized/Channel.cpp.ll
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; tev/optimized/Common.cpp.ll
+; tev/optimized/ExrImageLoader.cpp.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; tev/optimized/StbiImageLoader.cpp.ll
+; tev/optimized/ThreadPool.cpp.ll
+; tev/optimized/main.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 9223372036854775800
+  %4 = select i1 %3, i64 %1, i64 2305843009213693951
+  %5 = getelementptr nusw %"class.mitsuba::ref.74.2602513", ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 74 occurrences:
 ; llvm/optimized/Metadata.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/argparser.cpp.ll
@@ -16,10 +52,7 @@
 ; mitsuba3/optimized/conductor.cpp.ll
 ; mitsuba3/optimized/dielectric.cpp.ll
 ; mitsuba3/optimized/diffuse.cpp.ll
-; mitsuba3/optimized/envmap.cpp.ll
 ; mitsuba3/optimized/filesystem.cpp.ll
-; mitsuba3/optimized/fresolver.cpp.ll
-; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/hg.cpp.ll
@@ -39,7 +72,6 @@
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
@@ -48,7 +80,6 @@
 ; mitsuba3/optimized/qmc.cpp.ll
 ; mitsuba3/optimized/regular.cpp.ll
 ; mitsuba3/optimized/retarder.cpp.ll
-; mitsuba3/optimized/rfilter.cpp.ll
 ; mitsuba3/optimized/roughconductor.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
@@ -64,7 +95,6 @@
 ; mitsuba3/optimized/thindielectric.cpp.ll
 ; mitsuba3/optimized/thread.cpp.ll
 ; mitsuba3/optimized/twosided.cpp.ll
-; mitsuba3/optimized/volumegrid.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -81,18 +111,17 @@
 ; tev/optimized/PfmImageLoader.cpp.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; tev/optimized/StbiImageLoader.cpp.ll
-; tev/optimized/ThreadPool.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 9223372036854775800
   %4 = select i1 %3, i64 %1, i64 2305843009213693951
-  %5 = getelementptr nusw %"class.mitsuba::ref.74.2487081", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.mitsuba::ref.74.2602513", ptr %0, i64 %4
   ret ptr %5
 }
 
-; 62 occurrences:
+; 58 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -117,7 +146,6 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; hdf5/optimized/H5PB.c.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -126,6 +154,7 @@ entry:
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
+; llvm/optimized/GISelKnownBits.cpp.ll
 ; llvm/optimized/JSONNodeDumper.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
@@ -146,30 +175,23 @@ entry:
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
-; luajit/optimized/lj_debug.ll
-; luajit/optimized/lj_debug_dyn.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; nuttx/optimized/mm_realloc.c.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 1392
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 7 occurrences:
-; eastl/optimized/BenchmarkDeque.cpp.ll
+; 4 occurrences:
 ; eastl/optimized/EACallback.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
-; mimalloc/optimized/alloc-aligned.c.ll
-; mimalloc/optimized/alloc.c.ll
 ; nori/optimized/tabwidget.cpp.ll
 ; php/optimized/SAPI.ll
 ; Function Attrs: nounwind
@@ -181,10 +203,7 @@ entry:
   ret ptr %5
 }
 
-; 4 occurrences:
-; abc/optimized/verStream.c.ll
-; abseil-cpp/optimized/span_test.cc.ll
-; llvm/optimized/ConstantFolding.cpp.ll
+; 1 occurrences:
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
@@ -192,6 +211,46 @@ entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 0
   %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp slt i64 %2, 0
+  %4 = select i1 %3, i64 %1, i64 0
+  %5 = getelementptr %"class.boost::geometry::model::point.3015592", ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 6 occurrences:
+; hdf5/optimized/H5PB.c.ll
+; llvm/optimized/CodeGenSchedule.cpp.ll
+; luajit/optimized/lj_debug.ll
+; luajit/optimized/lj_debug_dyn.ll
+; nuttx/optimized/mm_realloc.c.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i64 %1, i64 0
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; llvm/optimized/ConstantFolding.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp slt i64 %2, 0
+  %4 = select i1 %3, i64 %1, i64 0
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -208,8 +267,7 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; luajit/optimized/minilua.ll
+; 2 occurrences:
 ; opencv/optimized/samplers.cpp.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
@@ -222,13 +280,13 @@ entry:
 }
 
 ; 1 occurrences:
-; cpython/optimized/obmalloc.ll
+; luajit/optimized/minilua.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 7
+  %3 = icmp sgt i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

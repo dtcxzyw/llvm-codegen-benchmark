@@ -17,7 +17,7 @@ define i16 @func000000000000000f(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = mul nuw nsw i16 %2, 3
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -72,7 +72,7 @@ define i16 @func000000000000000e(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = mul nuw nsw i16 %2, 96
-  %4 = add nuw i16 %3, %0
+  %4 = add nuw i16 %0, %3
   ret i16 %4
 }
 
@@ -98,7 +98,7 @@ define i16 @func000000000000000d(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = mul nuw nsw i16 %2, 7
-  %4 = add nsw i16 %3, %0
+  %4 = add nsw i16 %0, %3
   ret i16 %4
 }
 

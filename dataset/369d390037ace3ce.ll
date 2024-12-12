@@ -24,10 +24,10 @@
 ; luau/optimized/IrAnalysis.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define { ptr, ptr } @func0000000000000002(ptr %0, ptr %1, i32 %2) #0 {
+define { ptr, ptr } @func0000000000000003(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
   %5 = insertvalue { ptr, ptr } poison, ptr %0, 0
   %6 = insertvalue { ptr, ptr } %5, ptr %4, 1
   ret { ptr, ptr } %6
@@ -38,10 +38,10 @@ entry:
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; Function Attrs: nounwind
-define { ptr, ptr } @func0000000000000006(ptr %0, ptr %1, i32 %2) #0 {
+define { ptr, ptr } @func0000000000000007(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
   %5 = insertvalue { ptr, ptr } poison, ptr %0, 0
   %6 = insertvalue { ptr, ptr } %5, ptr %4, 1
   ret { ptr, ptr } %6

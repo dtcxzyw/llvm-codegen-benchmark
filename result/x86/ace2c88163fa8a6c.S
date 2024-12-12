@@ -1,10 +1,10 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	movzwl	%dx, %eax
-	cmpl	%esi, %eax
-	setle	%al
+	cmpl	%eax, %esi
+	setge	%al
 	andb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movzwl	%dx, %eax
 	subl	%esi, %eax
 	cmpl	$16386, %eax                    # imm = 0x4002

@@ -1,4 +1,4 @@
-func0000000000000d14:                   # @func0000000000000d14
+func0000000000003424:                   # @func0000000000003424
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%cl
@@ -7,7 +7,7 @@ func0000000000000d14:                   # @func0000000000000d14
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000c14:                   # @func0000000000000c14
+func0000000000003024:                   # @func0000000000003024
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%cl

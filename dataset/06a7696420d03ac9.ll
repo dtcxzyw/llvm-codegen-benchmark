@@ -1,10 +1,9 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
-; openmpi/optimized/test_overhead.ll
 ; redis/optimized/hyperloglog.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll

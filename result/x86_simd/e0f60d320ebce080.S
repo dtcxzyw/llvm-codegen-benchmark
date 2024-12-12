@@ -13,6 +13,12 @@ func0000000000000001:                   # @func0000000000000001
 	vptestnmd	%ymm1, %ymm1, %k1
 	vmovapd	%zmm0, %zmm0 {%k1} {z}
 	retq
+.LCPI3_0:
+	.long	4                               # 0x4
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
+	vmovapd	%zmm0, %zmm0 {%k1} {z}
+	retq
 func000000000000000c:                   # @func000000000000000c
 	vptestmd	%ymm1, %ymm1, %k1
 	vmovapd	%zmm0, %zmm0 {%k1} {z}

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/metaspaceCommon.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, float %1) #0 {
+define i1 @func000000000000004c(i64 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0x3F847AE140000000
   %3 = icmp ne i64 %0, 0
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, float %1) #0 {
+define i1 @func000000000000008c(i64 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 1.000000e+00
   %3 = icmp ne i64 %0, 0
@@ -44,12 +44,12 @@ entry:
 }
 
 ; 1 occurrences:
-; opencv/optimized/weighted_median_filter.cpp.ll
+; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, float %1) #0 {
+define i1 @func00000000000000ec(i64 %0, float %1) #0 {
 entry:
-  %2 = fcmp oge float %1, 0.000000e+00
-  %3 = icmp sgt i64 %0, 1
+  %2 = fcmp une float %1, 1.000000e+00
+  %3 = icmp ne i64 %0, 0
   %4 = and i1 %3, %2
   ret i1 %4
 }

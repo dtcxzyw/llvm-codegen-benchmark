@@ -1,4 +1,17 @@
 
+; 2 occurrences:
+; boost/optimized/pattern.ll
+; clamav/optimized/jpeg.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000040(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i64
+  %4 = add i64 %0, %1
+  %5 = add i64 %4, %3
+  %6 = add i64 %5, 2
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; Function Attrs: nounwind

@@ -28,9 +28,3 @@ func00000000000000c7:                   # @func00000000000000c7
 	feq.d	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
-	fli.d	fa5, 1.0
-	fle.d	a1, fa5, fa0
-	snez	a0, a0
-	and	a0, a0, a1
-	ret

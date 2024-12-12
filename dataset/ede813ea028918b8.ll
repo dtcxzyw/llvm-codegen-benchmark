@@ -36,12 +36,10 @@ entry:
   ret i16 %5
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
-; libjpeg-turbo/optimized/tjunittest.c.ll
-; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -73,9 +71,8 @@ entry:
   ret i16 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/commit.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -85,10 +82,8 @@ entry:
   ret i16 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; linux/optimized/ehci-hcd.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -135,20 +130,31 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/loclikelysubtags.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i16 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 14348907
+  %3 = icmp samesign ult i32 %2, 14348907
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = trunc nsw i32 %4 to i16
   ret i16 %5
 }
 
 ; 1 occurrences:
+; libjpeg-turbo/optimized/tjunittest.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 16
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = trunc i32 %4 to i16
+  ret i16 %5
+}
+
+; 1 occurrences:
 ; openexr/optimized/ImfCRgbaFile.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
+define i16 @func0000000000000060(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 31743
+  %3 = icmp samesign ugt i32 %2, 31743
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = trunc i32 %4 to i16
   ret i16 %5

@@ -46,45 +46,45 @@ func0000000000000002:                   # @func0000000000000002
 	vpblendmw	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
 .LCPI1_0:
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
 .LCPI1_1:
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
 .LCPI1_2:
-	.short	8                               # 0x8
-	.short	8                               # 0x8
+	.short	4                               # 0x4
+	.short	4                               # 0x4
 .LCPI1_3:
-	.short	16                              # 0x10
-	.short	16                              # 0x10
+	.short	8                               # 0x8
+	.short	8                               # 0x8
 func0000000000000003:                   # @func0000000000000003
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

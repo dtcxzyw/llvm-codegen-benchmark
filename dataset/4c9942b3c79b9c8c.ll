@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 50 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -38,6 +38,7 @@
 ; spike/optimized/sunpkd830.ll
 ; spike/optimized/sunpkd831.ll
 ; spike/optimized/sunpkd832.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
@@ -45,6 +46,10 @@
 ; wireshark/optimized/packet-flexray.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i16 %2) #0 {
 entry:
@@ -56,7 +61,7 @@ entry:
   ret i64 %7
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; clamav/optimized/rawread.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -70,18 +75,20 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/execute.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003b(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = shl nuw i64 %1, 48
   %7 = or disjoint i64 %5, %6
   ret i64 %7
 }
 
-; 20 occurrences:
+; 23 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -101,7 +108,10 @@ entry:
 ; spike/optimized/sunpkd830.ll
 ; spike/optimized/sunpkd831.ll
 ; spike/optimized/sunpkd832.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i64 %1, i16 %2) #0 {
 entry:
@@ -129,19 +139,6 @@ entry:
 }
 
 ; 1 occurrences:
-; spike/optimized/bf16_to_f32.ll
-; Function Attrs: nounwind
-define i64 @func000000000000007f(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext nneg i16 %2 to i64
-  %4 = shl nuw nsw i64 %3, 31
-  %5 = or disjoint i64 %4, %0
-  %6 = shl nuw nsw i64 %1, 16
-  %7 = or disjoint i64 %5, %6
-  ret i64 %7
-}
-
-; 1 occurrences:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002c(i64 %0, i64 %1, i16 %2) #0 {
@@ -162,7 +159,7 @@ define i64 @func000000000000007b(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 42
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = shl nuw i64 %1, 48
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -175,7 +172,7 @@ define i64 @func0000000000000038(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 16
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = shl i64 %0, 4
   %7 = or i64 %6, %5
   ret i64 %7

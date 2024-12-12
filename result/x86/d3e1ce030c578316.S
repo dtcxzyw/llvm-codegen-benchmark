@@ -2,7 +2,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	%edi, %eax
 	testb	%dl, %dl
 	cmovnel	%esi, %eax
-	andl	$16711680, %eax                 # imm = 0xFF0000
+	andl	$15, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax

@@ -14,4 +14,5 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000000:                   # @func0000000000000000
 	leal	(%rsi,%rdx), %eax
 	addl	%edi, %eax
+	andl	$8191, %eax                     # imm = 0x1FFF
 	retq

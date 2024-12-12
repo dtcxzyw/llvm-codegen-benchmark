@@ -6,7 +6,7 @@ func000000000000001f:                   # @func000000000000001f
 	vmv.v.x	v12, a0
 	lui	a0, 524288
 	vmerge.vxm	v12, v12, a0, v0
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vsll.vi	v10, v10, 8
 	vor.vv	v8, v8, v10
 	ret

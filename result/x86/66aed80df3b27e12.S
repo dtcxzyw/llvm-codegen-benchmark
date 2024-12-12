@@ -1,27 +1,27 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shll	$6, %edx
 	orl	%esi, %edx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	shll	$24, %edx
 	orl	%esi, %edx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	shll	$24, %edx
 	orl	%esi, %edx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	(%rsi,%rdx,2), %eax
 	cltq
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq

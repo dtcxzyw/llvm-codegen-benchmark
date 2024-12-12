@@ -15,9 +15,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; git/optimized/ewah_bitmap.ll
-; linux/optimized/machine_kexec_64.ll
 ; openjdk/optimized/bitMap.ll
 ; openjdk/optimized/shenandoahMarkBitMap.ll
 ; Function Attrs: nounwind

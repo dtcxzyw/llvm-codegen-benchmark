@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
+; linux/optimized/drm_dsc_helper.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll

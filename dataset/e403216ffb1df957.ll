@@ -1,5 +1,6 @@
 
-; 241 occurrences:
+; 242 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/divsufsort.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -250,7 +251,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0, i32 %1) #0 {

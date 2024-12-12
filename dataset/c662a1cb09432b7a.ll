@@ -1,12 +1,12 @@
 
-%"struct.OT::DataMap.2619302" = type { %"struct.OT::Tag.2619303", %"struct.OT::OffsetTo.2619304", %"struct.OT::IntType.2619305" }
-%"struct.OT::Tag.2619303" = type { %"struct.OT::IntType.2619305" }
-%"struct.OT::OffsetTo.2619304" = type { %"struct.OT::Offset.2619306" }
-%"struct.OT::Offset.2619306" = type { %"struct.OT::IntType.2619305" }
-%"struct.OT::IntType.2619305" = type { %struct.BEInt.2619307 }
-%struct.BEInt.2619307 = type { [4 x i8] }
-%struct.FormData_pg_attribute.3467406 = type { i32, %struct.nameData.3467407, i32, i16, i16, i32, i32, i16, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i16, i32 }
-%struct.nameData.3467407 = type { [64 x i8] }
+%"struct.OT::DataMap.2732749" = type { %"struct.OT::Tag.2732750", %"struct.OT::OffsetTo.2732751", %"struct.OT::IntType.2732752" }
+%"struct.OT::Tag.2732750" = type { %"struct.OT::IntType.2732752" }
+%"struct.OT::OffsetTo.2732751" = type { %"struct.OT::Offset.2732753" }
+%"struct.OT::Offset.2732753" = type { %"struct.OT::IntType.2732752" }
+%"struct.OT::IntType.2732752" = type { %struct.BEInt.2732754 }
+%struct.BEInt.2732754 = type { [4 x i8] }
+%struct.FormData_pg_attribute.3651605 = type { i32, %struct.nameData.3651606, i32, i16, i16, i32, i32, i16, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i16, i32 }
+%struct.nameData.3651606 = type { [64 x i8] }
 
 ; 17 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -27,10 +27,10 @@
 ; openjdk/optimized/hb-set.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i64 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw [1 x %"struct.OT::DataMap.2619302"], ptr %0, i64 0, i64 %1
-  %3 = getelementptr nusw i8, ptr %2, i64 12
+  %2 = getelementptr nusw nuw [1 x %"struct.OT::DataMap.2732749"], ptr %0, i64 0, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 12
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -53,9 +53,9 @@ entry:
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/tupdesc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr [0 x %struct.FormData_pg_attribute.3467406], ptr %0, i64 0, i64 %1, i32 1
+  %2 = getelementptr [0 x %struct.FormData_pg_attribute.3651605], ptr %0, i64 0, i64 %1, i32 1
   %3 = ptrtoint ptr %2 to i64
   ret i64 %3
 }

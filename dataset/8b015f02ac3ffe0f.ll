@@ -1,5 +1,5 @@
 
-; 189 occurrences:
+; 193 occurrences:
 ; abc/optimized/fxuCreate.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaPat2.c.ll
@@ -7,6 +7,11 @@
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/ipqp.cpp.ll
@@ -49,7 +54,6 @@
 ; gromacs/optimized/colvarbias_alb.cpp.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/dlaed6.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasd5.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
 ; gromacs/optimized/dlasv2.cpp.ll

@@ -20,5 +20,5 @@ func000000000000000d:                   # @func000000000000000d
 	vpmovw2m	%xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm2, %ymm1 {%k1} {z}
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq

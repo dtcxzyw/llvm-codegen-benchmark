@@ -24,8 +24,8 @@ func000000000000000c:                   # @func000000000000000c
 	orb	%dil, %al
 	retq
 func0000000000000009:                   # @func0000000000000009
-	cmpb	$8, %sil
-	setae	%al
+	cmpb	$5, %sil
+	setb	%al
 	addb	%al, %al
 	orb	%dil, %al
 	retq

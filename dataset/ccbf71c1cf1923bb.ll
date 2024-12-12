@@ -1,5 +1,5 @@
 
-; 707 occurrences:
+; 718 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -56,6 +56,19 @@
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/sweep.cc.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/cmdline.ll
+; boost/optimized/ext.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/message.ll
+; boost/optimized/options_description.ll
+; boost/optimized/parsers.ll
+; boost/optimized/positional_options.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/value_semantic.ll
+; boost/optimized/variables_map.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/ccmake.cxx.ll
@@ -226,6 +239,7 @@
 ; draco/optimized/shannon_entropy.cc.ll
 ; draco/optimized/symbol_bit_decoder.cc.ll
 ; draco/optimized/symbol_decoding.cc.ll
+; draco/optimized/symbol_encoding.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; entt/optimized/benchmark.cpp.ll
 ; entt/optimized/custom_identifier.cpp.ll
@@ -435,7 +449,6 @@
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -653,7 +666,6 @@
 ; velox/optimized/MapEntries.cpp.ll
 ; velox/optimized/PlanNode.cpp.ll
 ; velox/optimized/RowFunction.cpp.ll
-; velox/optimized/SparseHll.cpp.ll
 ; velox/optimized/StringFunctions.cpp.ll
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/URLFunctions.cpp.ll
@@ -706,9 +718,8 @@
 ; yosys/optimized/proc_dlatch.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/smt2.ll
-; z3/optimized/cmd_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = ashr exact i64 %0, 3
@@ -716,7 +727,7 @@ entry:
   ret i1 %4
 }
 
-; 116 occurrences:
+; 117 occurrences:
 ; assimp/optimized/DXFLoader.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
@@ -785,6 +796,7 @@ entry:
 ; llvm/optimized/BranchFolding.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; llvm/optimized/InitHeaderSearch.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
@@ -834,7 +846,7 @@ entry:
 ; xgboost/optimized/ranking_utils.cc.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = ashr exact i64 %0, 3
@@ -842,7 +854,7 @@ entry:
   ret i1 %4
 }
 
-; 256 occurrences:
+; 240 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -872,30 +884,26 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/cmdline.ll
+; boost/optimized/date_time_format_parser.ll
 ; cmake/optimized/cmWorkerPool.cxx.ll
 ; cpython/optimized/sre.ll
 ; cvc5/optimized/arith_utilities.cpp.ll
-; cvc5/optimized/attempt_solution_simplex.cpp.ll
 ; cvc5/optimized/cadical.cpp.ll
 ; cvc5/optimized/congruence_manager.cpp.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
-; cvc5/optimized/constraint.cpp.ll
 ; cvc5/optimized/cut_log.cpp.ll
 ; cvc5/optimized/dual_simplex.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; cvc5/optimized/error_set.cpp.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
 ; cvc5/optimized/inst_match.cpp.ll
 ; cvc5/optimized/inst_match_generator_simple.cpp.ll
-; cvc5/optimized/ite_simp.cpp.ll
-; cvc5/optimized/linear_equality.cpp.ll
 ; cvc5/optimized/miplib_trick.cpp.ll
 ; cvc5/optimized/node_manager.cpp.ll
 ; cvc5/optimized/partial_model.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
 ; cvc5/optimized/shared_terms_database.cpp.ll
-; cvc5/optimized/simplex.cpp.ll
 ; cvc5/optimized/soi_simplex.cpp.ll
 ; cvc5/optimized/sygus_unif.cpp.ll
 ; cvc5/optimized/tableau.cpp.ll
@@ -914,14 +922,12 @@ entry:
 ; draco/optimized/point_attribute.cc.ll
 ; draco/optimized/point_cloud.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
-; draco/optimized/shannon_entropy.cc.ll
 ; draco/optimized/symbol_bit_decoder.cc.ll
 ; draco/optimized/symbol_decoding.cc.ll
+; draco/optimized/symbol_encoding.cc.ll
 ; entt/optimized/snapshot.cpp.ll
-; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
-; glslang/optimized/SpvPostProcess.cpp.ll
 ; glslang/optimized/disassemble.cpp.ll
 ; gromacs/optimized/analysisdata.cpp.ll
 ; gromacs/optimized/checkpoint.cpp.ll
@@ -944,7 +950,6 @@ entry:
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/AsmWriter.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
-; llvm/optimized/BitcodeAnalyzer.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/ClangOpcodesEmitter.cpp.ll
@@ -988,7 +993,6 @@ entry:
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
-; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
@@ -1011,12 +1015,8 @@ entry:
 ; llvm/optimized/ValueList.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; luau/optimized/IrAnalysis.cpp.ll
-; meshlab/optimized/TexturePainter.cpp.ll
-; meshlab/optimized/VisibilityCheck.cpp.ll
-; meshlab/optimized/decorate_raster_proj.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_sample_gpu.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
@@ -1055,7 +1055,6 @@ entry:
 ; opencv/optimized/core_detect.cpp.ll
 ; opencv/optimized/fast_line_detector.cpp.ll
 ; opencv/optimized/opencl-opencv-interop.cpp.ll
-; opencv/optimized/parallel_impl.cpp.ll
 ; opencv/optimized/pcaflow.cpp.ll
 ; opencv/optimized/rho.cpp.ll
 ; opencv/optimized/serialization.cpp.ll
@@ -1076,10 +1075,8 @@ entry:
 ; rocksdb/optimized/block_based_table_builder.cc.ll
 ; rocksdb/optimized/options.cc.ll
 ; rocksdb/optimized/wide_column_serialization.cc.ll
-; rocksdb/optimized/write_batch_with_index.cc.ll
 ; tev/optimized/Common.cpp.ll
 ; velox/optimized/Filter.cpp.ll
-; velox/optimized/SparseHll.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; wasmedge/optimized/section.cpp.ll
 ; wasmedge/optimized/start.cpp.ll
@@ -1098,9 +1095,8 @@ entry:
 ; xgboost/optimized/updater_refresh.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; yosys/optimized/aigerparse.ll
-; z3/optimized/cmd_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = ashr exact i64 %0, 2
@@ -1108,11 +1104,12 @@ entry:
   ret i1 %4
 }
 
-; 172 occurrences:
+; 171 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/FBXParser.cpp.ll
 ; assimp/optimized/FBXProperties.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/ext.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/direct_bit_decoder.cc.ll
@@ -1167,8 +1164,6 @@ entry:
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/settings.cpp.ll
-; mitsuba3/optimized/bsplinecurve.cpp.ll
-; mitsuba3/optimized/linearcurve.cpp.ll
 ; ncnn/optimized/net.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
 ; ocio/optimized/FileFormatHDL.cpp.ll
@@ -1282,15 +1277,15 @@ entry:
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = ashr exact i64 %0, 4
+  %3 = ashr exact i64 %0, 5
   %4 = icmp ult i64 %3, %2
   ret i1 %4
 }
 
-; 351 occurrences:
+; 350 occurrences:
 ; arrow/optimized/array_nested.cc.ll
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/tz.cpp.ll
@@ -1544,7 +1539,6 @@ entry:
 ; taskflow/optimized/while_loop.cpp.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; velox/optimized/DecodedVector.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/Re2Functions.cpp.ll
 ; velox/optimized/WidthBucketArray.cpp.ll
 ; velox/optimized/tz.cpp.ll
@@ -1643,11 +1637,116 @@ entry:
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = ashr exact i64 %0, 5
   %4 = icmp ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 52 occurrences:
+; assimp/optimized/MD5Parser.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/attempt_solution_simplex.cpp.ll
+; cvc5/optimized/congruence_manager.cpp.ll
+; cvc5/optimized/constraint.cpp.ll
+; cvc5/optimized/cut_log.cpp.ll
+; cvc5/optimized/dual_simplex.cpp.ll
+; cvc5/optimized/error_set.cpp.ll
+; cvc5/optimized/fc_simplex.cpp.ll
+; cvc5/optimized/ite_simp.cpp.ll
+; cvc5/optimized/linear_equality.cpp.ll
+; cvc5/optimized/partial_model.cpp.ll
+; cvc5/optimized/simplex.cpp.ll
+; cvc5/optimized/soi_simplex.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
+; cvc5/optimized/theory_arith_private.cpp.ll
+; draco/optimized/mesh_cleanup.cc.ll
+; draco/optimized/shannon_entropy.cc.ll
+; glslang/optimized/GlslangToSpv.cpp.ll
+; glslang/optimized/SPVRemapper.cpp.ll
+; glslang/optimized/SpvBuilder.cpp.ll
+; glslang/optimized/SpvPostProcess.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/BitcodeAnalyzer.cpp.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/GVN.cpp.ll
+; llvm/optimized/Record.cpp.ll
+; meshlab/optimized/TexturePainter.cpp.ll
+; meshlab/optimized/VisibilityCheck.cpp.ll
+; meshlab/optimized/decorate_raster_proj.cpp.ll
+; meshlab/optimized/filter_sample_gpu.cpp.ll
+; minetest/optimized/CB3DMeshFileLoader.cpp.ll
+; minetest/optimized/CBillboardSceneNode.cpp.ll
+; minetest/optimized/CGUITTFont.cpp.ll
+; minetest/optimized/CIrrDeviceSDL.cpp.ll
+; minetest/optimized/CMeshManipulator.cpp.ll
+; minetest/optimized/COBJMeshFileLoader.cpp.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; minetest/optimized/clouds.cpp.ll
+; minetest/optimized/content_cao.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
+; minetest/optimized/mesh.cpp.ll
+; minetest/optimized/minimap.cpp.ll
+; minetest/optimized/sky.cpp.ll
+; minetest/optimized/wieldmesh.cpp.ll
+; opencv/optimized/parallel_impl.cpp.ll
+; rocksdb/optimized/write_batch_with_index.cc.ll
+; xgboost/optimized/updater_approx.cc.ll
+; xgboost/optimized/updater_coordinate.cc.ll
+; xgboost/optimized/updater_quantile_hist.cc.ll
+; xgboost/optimized/updater_shotgun.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = ashr exact i64 %0, 3
+  %4 = icmp samesign ult i64 %3, %2
+  ret i1 %4
+}
+
+; 33 occurrences:
+; assimp/optimized/MD5Parser.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/attempt_solution_simplex.cpp.ll
+; cvc5/optimized/congruence_manager.cpp.ll
+; cvc5/optimized/constraint.cpp.ll
+; cvc5/optimized/cut_log.cpp.ll
+; cvc5/optimized/dual_simplex.cpp.ll
+; cvc5/optimized/error_set.cpp.ll
+; cvc5/optimized/fc_simplex.cpp.ll
+; cvc5/optimized/linear_equality.cpp.ll
+; cvc5/optimized/partial_model.cpp.ll
+; cvc5/optimized/simplex.cpp.ll
+; cvc5/optimized/soi_simplex.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
+; cvc5/optimized/theory_arith_private.cpp.ll
+; draco/optimized/shannon_entropy.cc.ll
+; glslang/optimized/GlslangToSpv.cpp.ll
+; glslang/optimized/SPVRemapper.cpp.ll
+; glslang/optimized/SpvBuilder.cpp.ll
+; glslang/optimized/SpvPostProcess.cpp.ll
+; hyperscan/optimized/ng_uncalc_components.cpp.ll
+; hyperscan/optimized/rose_build_add_mask.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/BitcodeAnalyzer.cpp.ll
+; llvm/optimized/GVN.cpp.ll
+; llvm/optimized/Record.cpp.ll
+; meshlab/optimized/TexturePainter.cpp.ll
+; meshlab/optimized/VisibilityCheck.cpp.ll
+; meshlab/optimized/decorate_raster_proj.cpp.ll
+; meshlab/optimized/filter_sample_gpu.cpp.ll
+; rocksdb/optimized/write_batch_with_index.cc.ll
+; xgboost/optimized/updater_approx.cc.ll
+; xgboost/optimized/updater_quantile_hist.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = ashr exact i64 %0, 3
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
@@ -1672,7 +1771,7 @@ entry:
 ; openspiel/optimized/state_distribution.cc.ll
 ; velox/optimized/SimdUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = ashr exact i64 %0, 5
@@ -1680,17 +1779,18 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; cmake/optimized/cmTargetPropCommandBase.cxx.ll
 ; cmake/optimized/cmUVProcessChain.cxx.ll
 ; cvc5/optimized/ceg_instantiator.cpp.ll
+; cvc5/optimized/core_solver.cpp.ll
 ; cvc5/optimized/sygus_process_conj.cpp.ll
 ; llvm/optimized/CodeLayout.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; spike/optimized/debug_module.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000025(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = ashr exact i64 %0, 4
@@ -1712,7 +1812,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_ide_atapi.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = ashr i64 %0, 2
@@ -1727,7 +1827,7 @@ entry:
 ; wasmedge/optimized/helper.cpp.ll
 ; wasmedge/optimized/variableInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000029(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = ashr exact i64 %0, 4
@@ -1735,14 +1835,13 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/sre.ll
-; linux/optimized/i915_cmd_parser.ll
 ; llvm/optimized/VPlan.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = ashr exact i64 %0, 5
@@ -1754,7 +1853,7 @@ entry:
 ; cpython/optimized/sre.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = ashr exact i64 %0, 5
@@ -1766,11 +1865,22 @@ entry:
 ; soc-simulator/optimized/verilated.ll
 ; velox/optimized/LeadLag.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000065(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = ashr exact i64 %0, 2
   %4 = icmp ule i64 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; velox/optimized/PrestoSerializer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = ashr exact i64 %0, 2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
@@ -1784,7 +1894,7 @@ entry:
 ; luau/optimized/ldebug.cpp.ll
 ; postgres/optimized/tsvector.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = ashr exact i64 %0, 1
@@ -1795,7 +1905,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000069(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = ashr exact i64 %0, 3
@@ -1808,7 +1918,7 @@ entry:
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = ashr exact i64 %0, 2
@@ -1829,7 +1939,7 @@ entry:
 ; postgres/optimized/regexec.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = ashr exact i64 %0, 4
@@ -1852,7 +1962,7 @@ entry:
 ; linux/optimized/indirect.ll
 ; linux/optimized/skbuff.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = ashr exact i64 %0, 32

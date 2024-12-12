@@ -28,4 +28,25 @@ entry:
   ret i1 %3
 }
 
+; 1 occurrences:
+; assimp/optimized/MDLLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(float %0, float %1) #0 {
+entry:
+  %2 = fsub float 1.000000e+00, %1
+  %3 = fcmp une float %2, %0
+  ret i1 %3
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_arc.ll
+; ozz-animation/optimized/track_optimizer.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(float %0, float %1) #0 {
+entry:
+  %2 = fsub float 3.600000e+02, %1
+  %3 = fcmp ugt float %2, %0
+  ret i1 %3
+}
+
 attributes #0 = { nounwind }

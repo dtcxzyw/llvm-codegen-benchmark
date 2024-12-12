@@ -8,7 +8,7 @@ func0000000000000004:                   // @func0000000000000004
 	mul	w0, w8, w9
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000064:                   // @func0000000000000064
 // %bb.0:                               // %entry
 	mov	w8, #56                         // =0x38
 	mov	w9, #28087                      // =0x6db7
@@ -19,7 +19,18 @@ func0000000000000044:                   // @func0000000000000044
 	mul	w0, w8, w9
 	ret
                                         // -- End function
-func0000000000000040:                   // @func0000000000000040
+func0000000000000044:                   // @func0000000000000044
+// %bb.0:                               // %entry
+	mov	w8, #48                         // =0x30
+	mov	w9, #43691                      // =0xaaab
+	madd	x8, x2, x8, x1
+	movk	w9, #43690, lsl #16
+	sub	x8, x8, x0
+	lsr	x8, x8, #4
+	mul	w0, w8, w9
+	ret
+                                        // -- End function
+func0000000000000060:                   // @func0000000000000060
 // %bb.0:                               // %entry
 	add	x8, x1, x2
 	sub	x8, x8, x0

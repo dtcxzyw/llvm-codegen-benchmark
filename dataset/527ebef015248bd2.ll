@@ -1,6 +1,7 @@
 
 ; 114 occurrences:
 ; abc/optimized/saigRetStep.c.ll
+; boost/optimized/alloc_lib.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; libquic/optimized/p224-64.c.ll
@@ -109,7 +110,6 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; quickjs/optimized/quickjs.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; spike/optimized/processor.ll
 ; spike/optimized/triggers.ll

@@ -1,5 +1,5 @@
 
-; 148 occurrences:
+; 152 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/sclBufSize.c.ll
@@ -103,7 +103,6 @@
 ; mitsuba3/optimized/tabphase.cpp.ll
 ; mitsuba3/optimized/thinlens.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
-; nanosvg/optimized/nanosvg.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; nori/optimized/button.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -148,6 +147,11 @@
 ; stb/optimized/stb_truetype.c.ll
 ; wireshark/optimized/packet-ansi_801.c.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(float %0, float %1, i32 %2) #0 {
 entry:
@@ -156,7 +160,7 @@ entry:
   ret float %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -166,21 +170,11 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/loopPredicate.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000006(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
-  %4 = select i1 %3, float %0, float %1
-  ret float %4
-}
-
-; 2 occurrences:
-; darktable/optimized/introspection_filmicrgb.c.ll
-; minetest/optimized/l_env.cpp.ll
-; Function Attrs: nounwind
-define float @func0000000000000008(float %0, float %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 12000
   %4 = select i1 %3, float %0, float %1
   ret float %4
 }
@@ -205,14 +199,23 @@ entry:
   ret float %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/mioUtils.c.ll
-; meshlab/optimized/filter_sampling.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
+  %4 = select i1 %3, float %0, float %1
+  ret float %4
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_filmicrgb.c.ll
+; Function Attrs: nounwind
+define float @func0000000000000008(float %0, float %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 2
   %4 = select i1 %3, float %0, float %1
   ret float %4
 }

@@ -33,7 +33,7 @@ entry:
   %4 = trunc nuw i64 %3 to i32
   %5 = add nuw i32 %4, 1
   %6 = zext i32 %5 to i64
-  %7 = mul i64 %6, %0
+  %7 = mul i64 %0, %6
   ret i64 %7
 }
 
@@ -50,16 +50,17 @@ entry:
   %4 = trunc nuw i64 %3 to i32
   %5 = add nuw i32 %4, 1
   %6 = zext i32 %5 to i64
-  %7 = mul nuw i64 %6, %0
+  %7 = mul nuw i64 %0, %6
   ret i64 %7
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -86,7 +87,7 @@ entry:
   %4 = trunc nuw i64 %3 to i32
   %5 = add nuw i32 %4, 1
   %6 = zext i32 %5 to i64
-  %7 = mul i64 %6, %0
+  %7 = mul i64 %0, %6
   ret i64 %7
 }
 

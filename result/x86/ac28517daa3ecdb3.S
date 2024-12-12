@@ -1,21 +1,21 @@
-func00000000000002b1:                   # @func00000000000002b1
+func0000000000000561:                   # @func0000000000000561
 	incl	%edx
 	incl	%esi
 	imull	%edx, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000231:                   # @func0000000000000231
+func0000000000000461:                   # @func0000000000000461
 	incl	%edx
 	incl	%esi
 	imull	%edx, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000291:                   # @func0000000000000291
+func0000000000000521:                   # @func0000000000000521
 	incl	%edx
 	incl	%esi
 	imull	%edx, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq

@@ -1,12 +1,13 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; Function Attrs: nounwind
 define i128 @func000000000000000a(i128 %0, i128 %1) #0 {
 entry:
-  %2 = add nsw i128 %1, 1329227995784915854457062986570792960
+  %2 = add nsw i128 %1, -1
   %3 = add nsw i128 %2, %0
-  %4 = lshr i128 %3, 16
+  %4 = lshr i128 %3, 64
   ret i128 %4
 }
 

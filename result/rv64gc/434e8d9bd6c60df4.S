@@ -1,4 +1,4 @@
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	sext.w	a0, a0
 	slli	a2, a2, 8
 	or	a1, a1, a2

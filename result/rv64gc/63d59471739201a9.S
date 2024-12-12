@@ -29,19 +29,3 @@ func0000000000000000:                   # @func0000000000000000
 	mulhu	a0, a0, a3
 	srli	a0, a0, 45
 	ret
-func0000000000000080:                   # @func0000000000000080
-	lui	a3, 1048540
-	addi	a3, a3, 1359
-	mul	a2, a2, a3
-	lui	a3, 1048567
-	addi	a3, a3, 340
-	mul	a0, a0, a3
-	lui	a3, 91867
-	addi	a3, a3, 115
-	add	a1, a1, a2
-	add	a0, a0, a1
-	slli	a0, a0, 32
-	slli	a3, a3, 32
-	mulhu	a0, a0, a3
-	srli	a0, a0, 39
-	ret

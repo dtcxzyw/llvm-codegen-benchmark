@@ -5,14 +5,14 @@ func000000000000001c:                   // @func000000000000001c
 	add	x0, x0, w8, uxtw #3
 	ret
                                         // -- End function
-func0000000000000012:                   // @func0000000000000012
+func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
 	and	w8, w2, #0x7fffffff
 	add	w8, w8, w1, lsr #1
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000001e:                   // @func000000000000001e
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	and	w8, w2, #0x7ffffff
 	add	w8, w8, w1, lsr #16

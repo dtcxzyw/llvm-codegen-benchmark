@@ -16,27 +16,38 @@ entry:
 ; llvm/optimized/APInt.cpp.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw i64, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; llvm/optimized/APInt.cpp.ll
-; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw i64, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; opencv/optimized/bilateral_filter.dispatch.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 15
+  %3 = and i64 %2, -16
+  %4 = inttoptr i64 %0 to ptr
+  %5 = getelementptr nusw float, ptr %4, i64 %3
   ret ptr %5
 }
 

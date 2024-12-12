@@ -11,14 +11,13 @@ func0000000000000000:                   # @func0000000000000000
 	subl	%ecx, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	addl	$2, %edi
+	addl	$1900, %edi                     # imm = 0x76C
 	movslq	%edi, %rax
-	imulq	$715827883, %rax, %rcx          # imm = 0x2AAAAAAB
+	imulq	$1374389535, %rax, %rcx         # imm = 0x51EB851F
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
-	shrq	$32, %rcx
+	sarq	$39, %rcx
 	addl	%edx, %ecx
-	addl	%ecx, %ecx
-	leal	(%rcx,%rcx,2), %ecx
+	imull	$400, %ecx, %ecx                # imm = 0x190
 	subl	%ecx, %eax
 	retq

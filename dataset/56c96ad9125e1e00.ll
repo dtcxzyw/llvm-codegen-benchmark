@@ -1,9 +1,19 @@
 
+; 1 occurrences:
+; darktable/optimized/SamsungV0Decompressor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 %1, %0
+  %3 = icmp samesign ult i32 %2, %0
+  ret i1 %3
+}
+
 ; 2 occurrences:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; darktable/optimized/SamsungV0Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %1, %0
   %3 = icmp ult i32 %2, %0
@@ -46,14 +56,14 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %1, %0
   %3 = icmp sgt i32 %2, %0
   ret i1 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
@@ -64,22 +74,20 @@ entry:
 ; libwebp/optimized/vp8l_enc.c.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; openblas/optimized/dorbdb1.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %1, %0
   %3 = icmp slt i32 %2, %0
   ret i1 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; lief/optimized/ecp_curves.c.ll
 ; linux/optimized/cbc.ll
-; linux/optimized/ctr.ll
 ; linux/optimized/ecb.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; wireshark/optimized/packet-bt-dht.c.ll
@@ -95,7 +103,7 @@ entry:
 ; linux/optimized/cbc.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 %1, %0
   %3 = icmp ult i32 %2, %0
@@ -107,7 +115,7 @@ entry:
 ; luajit/optimized/lj_cconv_dyn.ll
 ; openusd/optimized/aom_scale.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 %1, %0
   %3 = icmp ugt i32 %2, %0
@@ -124,8 +132,7 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
-; linux/optimized/mpih-mul.ll
+; 1 occurrences:
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
@@ -138,10 +145,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 %1, %0
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 

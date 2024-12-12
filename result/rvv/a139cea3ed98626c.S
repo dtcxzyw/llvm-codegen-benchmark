@@ -12,7 +12,7 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vi	v12, v10, 27
 	vxor.vv	v10, v12, v10
 	vmul.vx	v10, v10, a1
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret
 func0000000000000009:                   # @func0000000000000009
 	li	a0, 265
@@ -22,7 +22,7 @@ func0000000000000009:                   # @func0000000000000009
 	vxor.vv	v10, v12, v10
 	li	a0, 21
 	vmul.vx	v10, v10, a0
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 265
@@ -32,5 +32,5 @@ func0000000000000008:                   # @func0000000000000008
 	vxor.vv	v10, v12, v10
 	li	a0, 21
 	vmul.vx	v10, v10, a0
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret

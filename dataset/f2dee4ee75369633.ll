@@ -10,7 +10,7 @@ define i64 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -36,14 +36,13 @@ define i64 @func0000000000000010(i64 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, -1
   %3 = sext i8 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; git/optimized/notes.ll
 ; hyperscan/optimized/noodle_engine.c.ll
-; linux/optimized/rpl.ll
 ; opencv/optimized/arithm.dispatch.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; stockfish/optimized/tbprobe.ll
@@ -87,7 +86,7 @@ define i64 @func0000000000000018(i64 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, -1
   %3 = sext i8 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

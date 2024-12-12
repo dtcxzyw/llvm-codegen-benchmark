@@ -6,3 +6,9 @@ func0000000000000010:                   # @func0000000000000010
 	imull	%esi, %edi
 	leal	12(%rdi,%rax), %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	imull	%esi, %edi
+	leal	12(%rdi), %eax
+	cmpl	$1, %edx
+	cmovnel	%edi, %eax
+	retq

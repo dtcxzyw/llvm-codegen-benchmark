@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -24,11 +24,10 @@
 ; icu/optimized/ucnvbocu.ll
 ; libjpeg-turbo/optimized/jdarith.c.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; openjdk/optimized/partialArrayTaskStepper.ll
 ; openusd/optimized/cfl.c.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll

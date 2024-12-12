@@ -51,8 +51,9 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
+; openusd/optimized/aom_image.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,7 +1,6 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; assimp/optimized/TriangulateProcess.cpp.ll
-; box2d/optimized/b2_collide_circle.cpp.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
@@ -11,7 +10,7 @@
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; slurm/optimized/port_mgr.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %2, %0

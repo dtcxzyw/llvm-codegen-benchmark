@@ -16,6 +16,15 @@ func000000000000000b:                   # @func000000000000000b
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
+func000000000000000a:                   # @func000000000000000a
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vsll.vi	v9, v9, 8
+	li	a0, -2048
+	vand.vx	v9, v9, a0
+	vor.vv	v10, v8, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vzext.vf2	v8, v10
+	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsll.vi	v9, v9, 2

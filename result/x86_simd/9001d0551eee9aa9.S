@@ -102,7 +102,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovb2m	%xmm1, %k1
 	vpbroadcastw	.LCPI1_2(%rip), %ymm1   # ymm1 = [65280,65280,65280,65280,65280,65280,65280,65280,65280,65280,65280,65280,65280,65280,65280,65280]
 	vmovdqu16	.LCPI1_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256]
-	vpaddw	%ymm0, %ymm1, %ymm0
+	vpaddw	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpcmpgtw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0

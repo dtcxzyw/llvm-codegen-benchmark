@@ -11,7 +11,8 @@ entry:
   ret i64 %2
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/pool_resource.ll
 ; folly/optimized/String.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/epnp.cpp.ll
@@ -55,6 +56,16 @@ define i64 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = sub nsw i64 68719476736, %0
   %2 = mul i64 %1, 186065280
+  ret i64 %2
+}
+
+; 1 occurrences:
+; boost/optimized/sort_by_side.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0) #0 {
+entry:
+  %1 = sub i64 1, %0
+  %2 = mul nuw nsw i64 %1, 168
   ret i64 %2
 }
 

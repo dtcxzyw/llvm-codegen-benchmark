@@ -13,7 +13,7 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; jq/optimized/decNumber.ll
 ; linux/optimized/aspm.ll
@@ -30,6 +30,8 @@ entry:
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; sqlite/optimized/sqlite3.ll
+; wasmtime-rs/optimized/33slbp9da8waph2q.ll
+; wasmtime-rs/optimized/lin3yywv836im8d.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:

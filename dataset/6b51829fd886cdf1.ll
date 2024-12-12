@@ -9,7 +9,7 @@ define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %.not = icmp eq i32 %2, 0
-  %3 = and i1 %.not, %0
+  %3 = and i1 %0, %.not
   ret i1 %3
 }
 
@@ -25,7 +25,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 61440
   %3 = icmp ne i32 %2, 16384
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

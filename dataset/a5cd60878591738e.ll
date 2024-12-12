@@ -9,7 +9,7 @@
 define ptr @func0000000000000006(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = getelementptr nusw [128 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }

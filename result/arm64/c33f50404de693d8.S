@@ -1,30 +1,13 @@
-func000000000000002c:                   // @func000000000000002c
+func000000000000004c:                   // @func000000000000004c
 // %bb.0:                               // %entry
-	fmov	x9, d2
-	fmov	x11, d1
 	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
 	movk	x8, #43691
-	mov	x10, v2.d[1]
-	mov	x12, v1.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d1, x9
-	mul	x8, x12, x8
-	fmov	d2, x11
-	mov	v1.d[1], x10
-	mov	v2.d[1], x8
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
-	movk	x8, #2730, lsl #48
-	shl	v3.2d, v1.2d, #61
-	shl	v4.2d, v2.2d, #61
-	usra	v3.2d, v1.2d, #3
-	dup	v1.2d, x8
-	usra	v4.2d, v2.2d, #3
-	cmhi	v2.2d, v3.2d, v1.2d
-	cmhi	v1.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v1.8b, v0.8b
+	movk	x9, #2730, lsl #48
+	mul	x8, x1, x8
+	ror	x8, x8, #3
+	cmp	x8, x9
+	cset	w8, hi
+	and	w0, w0, w8
 	ret
                                         // -- End function

@@ -7,13 +7,13 @@
 define i64 @func000000000000001f(i64 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext nneg i16 %1 to i64
   %6 = or disjoint i64 %4, %5
   ret i64 %6
 }
 
-; 45 occurrences:
+; 48 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -51,6 +51,7 @@ entry:
 ; spike/optimized/sunpkd831.ll
 ; spike/optimized/sunpkd832.ll
 ; tls-rs/optimized/7y9936vu35zt2sp.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
@@ -59,17 +60,19 @@ entry:
 ; wireshark/optimized/packet-flexray.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i16 %1 to i64
   %6 = or disjoint i64 %4, %5
   ret i64 %6
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; c3c/optimized/lexer.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; linux/optimized/libata-core.ll
@@ -81,11 +84,12 @@ entry:
 ; postgres/optimized/ginpostinglist.ll
 ; spike/optimized/execute.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000013(i64 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 48
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i16 %1 to i64
   %6 = or disjoint i64 %4, %5
   ret i64 %6
@@ -97,7 +101,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 5
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext i16 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6
@@ -121,7 +125,7 @@ entry:
 define i64 @func000000000000000b(i64 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 32
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i16 %1 to i64
   %6 = or disjoint i64 %4, %5
   ret i64 %6
@@ -133,7 +137,7 @@ entry:
 define i64 @func000000000000001a(i64 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 27
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i16 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6

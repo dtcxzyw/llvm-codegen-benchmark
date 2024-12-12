@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 58 occurrences:
 ; brotli/optimized/decode.c.ll
 ; cvc5/optimized/cvc5.cpp.ll
 ; cvc5/optimized/extf_solver.cpp.ll
@@ -56,6 +56,8 @@
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/packet-communityid.c.ll
 ; wireshark/optimized/syntax_line_edit.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i16 %0) #0 {
 entry:

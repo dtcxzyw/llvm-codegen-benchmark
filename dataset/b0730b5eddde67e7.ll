@@ -14,13 +14,11 @@ entry:
   ret i16 %3
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
-; libquic/optimized/custom_extensions.c.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/xhci-hub.ll
 ; re2/optimized/prog.cc.ll
 ; Function Attrs: nounwind

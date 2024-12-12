@@ -1,22 +1,22 @@
-func0000000000000062:                   # @func0000000000000062
-	andi	a1, a1, 15
-	slli	a1, a1, 4
+func0000000000000073:                   # @func0000000000000073
+	slli	a1, a1, 60
+	srli	a1, a1, 56
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func000000000000006a:                   # @func000000000000006a
-	andi	a1, a1, 15
-	slli	a1, a1, 4
+func000000000000007f:                   # @func000000000000007f
+	slli	a1, a1, 60
+	srli	a1, a1, 56
 	add	a0, a0, a1
 	addi	a0, a0, 348
 	ret
-func0000000000000060:                   # @func0000000000000060
+func0000000000000070:                   # @func0000000000000070
 	andi	a1, a1, 7
 	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 72
 	ret
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	andi	a1, a1, 255
 	sh2add	a1, a1, a1
 	sh3add	a0, a1, a0

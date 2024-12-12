@@ -14,3 +14,11 @@ func0000000000000011:                   // @func0000000000000011
 	asr	x0, x8, #1
 	ret
                                         // -- End function
+func0000000000000019:                   // @func0000000000000019
+// %bb.0:                               // %entry
+	and	x8, x2, #0x3ff
+	add	x8, x1, x8, lsl #2
+	sub	x8, x0, x8
+	asr	x0, x8, #2
+	ret
+                                        // -- End function

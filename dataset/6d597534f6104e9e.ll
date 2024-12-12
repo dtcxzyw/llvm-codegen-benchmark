@@ -44,19 +44,7 @@ entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 267911168
   %4 = icmp eq i32 %3, 225968128
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = and i32 %2, 65536
-  %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

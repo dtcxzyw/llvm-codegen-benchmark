@@ -2,10 +2,11 @@ func0000000000000063:                   # @func0000000000000063
 	xorl	%ecx, %ecx
 	testl	%edx, %edx
 	setne	%cl
-	leal	2048(%rcx,%rsi), %eax
-	orl	%esi, %ecx
+	leal	2048(%rsi,%rcx), %eax
+	movl	%esi, %edx
+	orl	%ecx, %edx
 	testb	$1, %dil
-	cmovnel	%ecx, %eax
+	cmovnel	%edx, %eax
 	retq
 func0000000000000061:                   # @func0000000000000061
 	xorl	%ecx, %ecx
@@ -33,7 +34,7 @@ func0000000000000060:                   # @func0000000000000060
 	setne	%cl
 	orl	%esi, %ecx
 	movl	%ecx, %eax
-	orl	$4, %eax
+	orl	$2, %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

@@ -1,9 +1,12 @@
 
-; 6 occurrences:
-; flatbuffers/optimized/flatc.cpp.ll
+; 9 occurrences:
+; clamav/optimized/disasm.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_filmic.c.ll
 ; folly/optimized/Request.cpp.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/maple_tree.ll
+; lvgl/optimized/lv_style.ll
 ; openusd/optimized/decodemv.c.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind

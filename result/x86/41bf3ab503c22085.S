@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	movq	%rdi, %rax
 	addl	%edx, %esi
 	notl	%esi
@@ -14,7 +14,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$1, %esi
 	adcq	$0, %rax
 	retq
-func000000000000018b:                   # @func000000000000018b
+func000000000000030b:                   # @func000000000000030b
 	addl	%edx, %esi
 	andl	$3, %esi
 	xorl	%eax, %eax
@@ -29,13 +29,6 @@ func0000000000000063:                   # @func0000000000000063
 	cmpl	$1, %esi
 	sbbq	$-1, %rax
 	retq
-func0000000000000040:                   # @func0000000000000040
-	movq	%rdi, %rax
-	addl	%edx, %esi
-	andl	$-512, %esi                     # imm = 0xFE00
-	cmpl	$1000000000, %esi               # imm = 0x3B9ACA00
-	sbbq	$-1, %rax
-	retq
 func000000000000000b:                   # @func000000000000000b
 	movq	%rdi, %rax
 	addl	%edx, %esi
@@ -43,7 +36,7 @@ func000000000000000b:                   # @func000000000000000b
 	cmpl	$1, %esi
 	adcq	$0, %rax
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+func0000000000000161:                   # @func0000000000000161
 	movq	%rdi, %rax
 	addl	%edx, %esi
 	andl	$7, %esi

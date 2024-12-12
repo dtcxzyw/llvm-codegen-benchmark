@@ -1,9 +1,11 @@
 
-; 54 occurrences:
+; 56 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
 ; abseil-cpp/optimized/reflection.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/cmArgumentParser.cxx.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cmake/optimized/cmList.cxx.ll
@@ -55,10 +57,10 @@
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000004ca(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %0, -1
-  %4 = add nsw i64 %3, %2
+  %4 = add nsw i64 %2, %3
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %0
   %7 = icmp sgt i64 %6, 0
@@ -70,10 +72,10 @@ entry:
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000054a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %0, -1
-  %4 = add nsw i64 %3, %2
+  %4 = add nsw i64 %2, %3
   %5 = icmp sgt i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %0
   %7 = icmp sgt i64 %6, 0
@@ -84,10 +86,10 @@ entry:
 ; oiio/optimized/exif.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %0, -1
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %0
   %7 = icmp eq i64 %6, 0
@@ -99,10 +101,10 @@ entry:
 ; llvm/optimized/DeclCXX.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000042a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %0, -1
-  %4 = add nsw i64 %3, %2
+  %4 = add nsw i64 %2, %3
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %0
   %7 = icmp sgt i64 %6, 0

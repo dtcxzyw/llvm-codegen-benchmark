@@ -13,7 +13,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpw	%di, %si
 	setne	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	%edx, %esi
 	cmpw	%di, %si
 	seta	%al

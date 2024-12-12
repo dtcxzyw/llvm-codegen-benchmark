@@ -8,7 +8,7 @@
 define i64 @func0000000000000000(double %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, double -5.000000e-01, double 5.000000e-01
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fptosi double %3 to i64
   ret i64 %4
 }

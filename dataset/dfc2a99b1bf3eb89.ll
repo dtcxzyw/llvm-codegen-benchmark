@@ -32,21 +32,20 @@ entry:
   %3 = and i16 %2, 256
   %4 = zext nneg i16 %3 to i32
   %5 = and i32 %1, 65536
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/uring_cmd.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 16
   %4 = zext nneg i16 %3 to i32
   %5 = and i32 %1, 4096
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }

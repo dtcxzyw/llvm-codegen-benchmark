@@ -1,17 +1,17 @@
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000003c1:                   # @func00000000000003c1
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func00000000000001e4:                   # @func00000000000001e4
+func00000000000003c4:                   # @func00000000000003c4
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
 	subq	%rdx, %rdi
 	cmpq	$2, %rdi
 	setb	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
 	subq	%rdx, %rdi

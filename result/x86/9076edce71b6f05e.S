@@ -79,7 +79,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000144:                   # @func0000000000000144
 	cmpl	$99, %edi
 	setb	%cl
 	vucomisd	%xmm1, %xmm0
@@ -100,7 +100,7 @@ func00000000000000c2:                   # @func00000000000000c2
 	seta	%al
 	andb	%cl, %al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000018a:                   # @func000000000000018a
 	cmpl	$35, %edi
 	setae	%cl
 	vucomisd	%xmm0, %xmm1
@@ -128,23 +128,14 @@ func000000000000006d:                   # @func000000000000006d
 	setbe	%al
 	andb	%cl, %al
 	retq
-func0000000000000067:                   # @func0000000000000067
-	cmpl	$5, %edi
-	setl	%cl
-	vucomisd	%xmm1, %xmm0
-	setp	%dl
-	setne	%al
-	orb	%dl, %al
-	andb	%cl, %al
-	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000014a:                   # @func000000000000014a
 	cmpl	$6, %edi
 	setb	%cl
 	vucomisd	%xmm0, %xmm1
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000142:                   # @func0000000000000142
 	cmpl	$19, %edi
 	setb	%cl
 	vucomisd	%xmm0, %xmm1

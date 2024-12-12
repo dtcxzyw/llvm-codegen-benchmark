@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0) #0 {
+define i1 @func0000000000000061(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
   %2 = shl nuw nsw i32 1, %1
@@ -12,7 +12,7 @@ entry:
   ret i1 %4
 }
 
-; 68 occurrences:
+; 64 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/brktrans.ll
 ; icu/optimized/ucasemap.ll
@@ -36,9 +36,6 @@ entry:
 ; linux/optimized/ipv6_sockglue.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/ndisc.ll
-; linux/optimized/net-traces.ll
-; linux/optimized/nf_conntrack_proto.ll
-; linux/optimized/nf_defrag_ipv4.ll
 ; linux/optimized/nf_log_syslog.ll
 ; linux/optimized/nf_queue.ll
 ; linux/optimized/nfnetlink_log.ll
@@ -61,7 +58,6 @@ entry:
 ; linux/optimized/tcp_timer.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/udp.ll
-; linux/optimized/xfrm6_output.ll
 ; linux/optimized/xfrm_output.ll
 ; linux/optimized/xprtsock.ll
 ; luajit/optimized/lj_asm.ll
@@ -82,7 +78,7 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i8 %0) #0 {
+define i1 @func00000000000000c1(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
   %2 = shl nuw i32 1, %1
@@ -98,7 +94,7 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; openjdk/optimized/hb-ot-shaper-myanmar.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i8 %0) #0 {
+define i1 @func00000000000000cc(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
   %2 = shl nuw i32 1, %1
@@ -116,7 +112,7 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; php/optimized/zend_ssa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i8 %0) #0 {
+define i1 @func00000000000000e1(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
   %2 = shl nuw nsw i32 1, %1
@@ -128,7 +124,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv2022.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0) #0 {
+define i1 @func0000000000000041(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
   %2 = shl nuw i32 1, %1

@@ -23,7 +23,7 @@
 ; abc/optimized/sbdCore.c.ll
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp ult i32 %2, 15
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaBalLut.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000486(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ult i32 %2, 15
@@ -49,7 +49,7 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000481(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ult i32 %2, 7

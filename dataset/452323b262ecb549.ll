@@ -20,22 +20,20 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr exact i16 %1, 5
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 
-; 14 occurrences:
-; abc/optimized/giaTransduction.cpp.ll
+; 12 occurrences:
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
-; linux/optimized/rc80211_minstrel_ht.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; redis/optimized/jemalloc.ll
@@ -43,10 +41,10 @@ entry:
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 15
-  %3 = icmp ugt i16 %2, %0
+  %3 = icmp samesign ult i16 %0, %2
   ret i1 %3
 }
 
@@ -68,7 +66,7 @@ entry:
 define i1 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 15
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 
@@ -79,10 +77,21 @@ entry:
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; openjdk/optimized/hb-ot-shape-normalize.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp samesign ugt i16 %0, %2
+  ret i1 %3
+}
+
+; 2 occurrences:
+; abc/optimized/giaTransduction.cpp.ll
+; linux/optimized/rc80211_minstrel_ht.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
+entry:
+  %2 = lshr i16 %1, 1
+  %3 = icmp ult i16 %0, %2
   ret i1 %3
 }
 
@@ -94,7 +103,7 @@ entry:
 define i1 @func000000000000000c(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
-  %3 = icmp ne i16 %2, %0
+  %3 = icmp ne i16 %0, %2
   ret i1 %3
 }
 

@@ -22,7 +22,7 @@ define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %.neg = sext i1 %2 to i64
-  %3 = add i64 %.neg, %0
+  %3 = add i64 %0, %.neg
   ret i64 %3
 }
 

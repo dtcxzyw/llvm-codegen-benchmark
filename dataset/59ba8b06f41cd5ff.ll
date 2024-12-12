@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/stringutil.cpp.ll
 ; linux/optimized/sparse-vmemmap.ll
 ; openssl/optimized/libcrypto-lib-property_parse.ll
 ; openssl/optimized/libcrypto-shlib-property_parse.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -23,7 +24,7 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; coreutils-rs/optimized/4mv5m18a7bd6gezc.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -34,7 +35,6 @@ entry:
 ; linux/optimized/gup.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; redis/optimized/sort.ll
@@ -47,11 +47,9 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
-; cpython/optimized/obmalloc.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
-; mimalloc/optimized/page.c.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {

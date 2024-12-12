@@ -4,7 +4,7 @@ func000000000000000a:                   # @func000000000000000a
 	leaq	(%rsi,%rax,8), %rax
 	leaq	(%rax,%rdi,8), %rax
 	retq
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	movl	%edx, %eax
 	imulq	%rdi, %rax
 	leaq	(%rsi,%rax,4), %rax

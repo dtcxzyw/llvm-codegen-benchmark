@@ -1,7 +1,6 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; abc/optimized/bmcMaj.c.ll
-; abc/optimized/cmdUtils.c.ll
 ; cpython/optimized/rangeobject.ll
 ; cpython/optimized/sre.ll
 ; flac/optimized/stream_encoder.c.ll
@@ -16,7 +15,6 @@
 ; php/optimized/pass1.ll
 ; redis/optimized/lstrlib.ll
 ; redis/optimized/util.ll
-; slurm/optimized/slurm_rlimits_info.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:

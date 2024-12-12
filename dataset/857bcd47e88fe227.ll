@@ -1,5 +1,5 @@
 
-; 175 occurrences:
+; 172 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/sfmDec.c.ll
 ; arrow/optimized/align_util.cc.ll
@@ -65,7 +65,6 @@
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/mesh_model_state.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; opencv/optimized/fundamental_solver.cpp.ll
@@ -88,8 +87,6 @@
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_alloc.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -181,7 +178,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -193,7 +190,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

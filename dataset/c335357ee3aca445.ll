@@ -38,7 +38,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %1, 32
   %5 = sub i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %1, 1
   %5 = sub i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

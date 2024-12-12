@@ -32,7 +32,7 @@ entry:
 define i64 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = shl nsw i64 %4, 2
   ret i64 %5

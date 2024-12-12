@@ -1,5 +1,5 @@
 
-; 174 occurrences:
+; 177 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -148,6 +148,7 @@
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/multiVis.ll
 ; openjdk/optimized/vm_version_x86.ll
@@ -173,6 +174,8 @@
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
@@ -197,7 +200,7 @@ entry:
   ret i64 %5
 }
 
-; 64 occurrences:
+; 68 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_main_capi.cpp.ll
 ; grpc/optimized/hpack_parser.cc.ll
@@ -262,6 +265,10 @@ entry:
 ; velox/optimized/tz.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -318,10 +325,11 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; linux/optimized/maple_tree.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -331,8 +339,9 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; icu/optimized/collationbuilder.ll
+; linux/optimized/maple_tree.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; Function Attrs: nounwind

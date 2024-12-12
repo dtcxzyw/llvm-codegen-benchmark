@@ -1,11 +1,10 @@
 
-; 4 occurrences:
-; linux/optimized/dns_key.ll
+; 3 occurrences:
 ; openmpi/optimized/coll_han_dynamic_file.ll
 ; postgres/optimized/findtimezone.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4160749568
   %3 = icmp ne i64 %2, 0

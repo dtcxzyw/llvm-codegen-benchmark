@@ -1,26 +1,26 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	btq	%rsi, %rdi
 	setae	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	andl	$7, %esi
 	btl	%esi, %edi
 	setae	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	shrxq	%rsi, %rdi, %rax
 	testq	%rax, %rax
 	sete	%al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	btq	%rsi, %rdi
 	setb	%al
 	retq
-func000000000000007c:                   # @func000000000000007c
+func00000000000000ec:                   # @func00000000000000ec
 	btl	%esi, %edi
 	setb	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	shrxq	%rsi, %rdi, %rax
 	testb	$2, %al
 	sete	%al

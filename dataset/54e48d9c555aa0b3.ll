@@ -123,7 +123,7 @@ entry:
   ret i64 %4
 }
 
-; 178 occurrences:
+; 177 occurrences:
 ; cpython/optimized/dictobject.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
@@ -256,7 +256,6 @@ entry:
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -311,7 +310,7 @@ entry:
   ret i64 %4
 }
 
-; 120 occurrences:
+; 119 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/obmalloc.ll
@@ -396,7 +395,6 @@ entry:
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -437,7 +435,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = add nsw i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -501,7 +499,20 @@ define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = add nuw nsw i64 %2, 16
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
+  ret i64 %4
+}
+
+; 3 occurrences:
+; abseil-cpp/optimized/flat_hash_map_test.cc.ll
+; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = add nuw i64 %2, 2
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -513,18 +524,6 @@ entry:
   %2 = lshr exact i64 %1, 1
   %3 = add nuw i64 %2, 4
   %4 = add nuw i64 %3, %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; abseil-cpp/optimized/flat_hash_map_test.cc.ll
-; abseil-cpp/optimized/raw_hash_set_test.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 1
-  %3 = add nuw i64 %2, 2
-  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -564,7 +563,7 @@ define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

@@ -13,8 +13,9 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/cuddTable.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; openmpi/optimized/ompi_datatype_args.ll
 ; re2/optimized/dfa.cc.ll
@@ -40,7 +41,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -53,7 +54,7 @@ entry:
   %2 = add i32 %1, 8
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 2
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -66,7 +67,7 @@ entry:
   %2 = add nuw nsw i32 %1, 2
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 2
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -79,7 +80,7 @@ entry:
   %2 = add nuw i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 2
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

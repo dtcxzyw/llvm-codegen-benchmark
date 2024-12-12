@@ -11,5 +11,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [1899,1899,1899,1899,1899,1899,1899,1899]
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpmulld	.LCPI0_2(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

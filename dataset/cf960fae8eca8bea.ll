@@ -4,7 +4,6 @@
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -15,6 +14,7 @@
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
+; boost/optimized/src.ll
 ; cpython/optimized/difradix2.ll
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
 ; grpc/optimized/grpc_tls_crl_provider.cc.ll

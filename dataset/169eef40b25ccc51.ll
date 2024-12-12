@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; openjdk/optimized/g1CardSetMemory.ll
-; postgres/optimized/shm_toc.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000c0(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -28,7 +27,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 3
   %5 = add nuw nsw i64 %1, 40
   %6 = add nuw nsw i64 %5, %4
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

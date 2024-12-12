@@ -50,7 +50,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -154,7 +154,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -258,7 +258,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -310,7 +310,7 @@ func0000000000000034:                   # @func0000000000000034
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -362,7 +362,7 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -414,7 +414,7 @@ func0000000000000031:                   # @func0000000000000031
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4

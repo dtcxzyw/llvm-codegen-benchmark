@@ -1,6 +1,6 @@
 func0000000000000003:                   # @func0000000000000003
-	srli	a2, a2, 4
-	andi	a2, a2, 512
+	srli	a2, a2, 11
+	andi	a2, a2, 2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

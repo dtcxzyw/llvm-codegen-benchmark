@@ -17,14 +17,14 @@ entry:
 }
 
 ; 2 occurrences:
-; libquic/optimized/async_bio.cc.ll
-; postgres/optimized/tidbitmap.ll
+; hermes/optimized/JSLexer.cpp.ll
+; llvm/optimized/ClangAttrEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i8 %0, i32 %1) #0 {
+define i64 @func0000000000000002(i8 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = trunc i8 %0 to i1
-  %4 = select i1 %3, i64 1, i64 %2
+  %2 = zext i32 %1 to i64
+  %3 = trunc nuw i8 %0 to i1
+  %4 = select i1 %3, i64 0, i64 %2
   ret i64 %4
 }
 

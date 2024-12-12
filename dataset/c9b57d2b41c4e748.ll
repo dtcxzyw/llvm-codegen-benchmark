@@ -1,5 +1,7 @@
 
-; 14 occurrences:
+; 16 occurrences:
+; assimp/optimized/glTF2Importer.cpp.ll
+; assimp/optimized/glTFImporter.cpp.ll
 ; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
 ; cvc5/optimized/bv_gauss.cpp.ll
 ; cvc5/optimized/portfolio_driver.cpp.ll
@@ -15,10 +17,10 @@
 ; yosys/optimized/shregmap.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -28,10 +30,10 @@ entry:
 ; cvc5/optimized/portfolio_driver.cpp.ll
 ; rocksdb/optimized/block_cache_tier_file.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -47,10 +49,10 @@ entry:
 ; velox/optimized/Ntile.cpp.ll
 ; yosys/optimized/opt_clean.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -63,7 +65,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -71,10 +73,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = icmp sle i64 %3, %1
+  %4 = icmp sge i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -85,7 +87,7 @@ entry:
 define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 12
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp ule i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -93,10 +95,10 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -105,10 +107,10 @@ entry:
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = icmp slt i64 %3, %1
+  %4 = icmp sgt i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -117,10 +119,10 @@ entry:
 ; freetype/optimized/psaux.c.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -128,10 +130,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestFixedVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

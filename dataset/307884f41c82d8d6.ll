@@ -11,7 +11,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 120
   %6 = uitofp i64 %5 to double
-  %7 = fmul double %6, %0
+  %7 = fmul double %0, %6
   ret double %7
 }
 

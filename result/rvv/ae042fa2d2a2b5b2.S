@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vx	v10, v10, a0
 	li	a0, 32
 	vsra.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -23,7 +23,7 @@ func0000000000000005:                   # @func0000000000000005
 	bseti	a1, zero, 32
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret
 func0000000000000045:                   # @func0000000000000045
 	li	a0, 32
@@ -52,7 +52,7 @@ func0000000000000044:                   # @func0000000000000044
 	slli	a1, a1, 34
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e64, m2, ta, ma

@@ -1,12 +1,8 @@
-func0000000000000014:                   # @func0000000000000014
-	andi	a1, a1, 31
-	addi	a1, a1, -13
-	sltiu	a1, a1, 4
-	and	a0, a0, a1
-	ret
-func0000000000000018:                   # @func0000000000000018
-	zext.h	a1, a1
-	addi	a1, a1, -99
-	sltiu	a1, a1, -7
+func0000000000000024:                   # @func0000000000000024
+	lui	a2, 16
+	addiw	a2, a2, -2
+	and	a1, a1, a2
+	addi	a1, a1, -48
+	sltiu	a1, a1, 10
 	and	a0, a0, a1
 	ret

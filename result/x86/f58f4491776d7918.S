@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	incb	%dil
 	cmpb	%sil, %dil
 	setb	%al
@@ -8,12 +8,12 @@ func000000000000000c:                   # @func000000000000000c
 	cmpb	%sil, %dil
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	incb	%dil
 	cmpb	%sil, %dil
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	incb	%dil
 	cmpb	%sil, %dil
 	sete	%al

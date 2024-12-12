@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i32 %0, %1
@@ -11,16 +11,24 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define i64 @func000000000000004d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, 1
+  %3 = icmp slt i32 %1, %0
+  %4 = select i1 %3, i32 %2, i32 %0
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 3 occurrences:
 ; gromacs/optimized/gmx_tcaf.cpp.ll
-; openblas/optimized/lapacke_cgb_nancheck.c.ll
-; openblas/optimized/lapacke_dgb_nancheck.c.ll
-; openblas/optimized/lapacke_sgb_nancheck.c.ll
-; openblas/optimized/lapacke_zgb_nancheck.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; postgres/optimized/rangetypes_typanalyze.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000035(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000055(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp sgt i32 %0, %1
@@ -33,10 +41,10 @@ entry:
 ; openmpi/optimized/opal_bitmap.ll
 ; openmpi/optimized/pmix_bitmap.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000069(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000e9(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = icmp ult i32 %1, %0
+  %3 = icmp samesign ult i32 %1, %0
   %4 = select i1 %3, i32 %2, i32 %0
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -57,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/copy.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000006c(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp slt i32 %1, %0

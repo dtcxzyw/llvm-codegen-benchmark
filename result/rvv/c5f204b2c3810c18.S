@@ -9,7 +9,7 @@ func0000000000000044:                   # @func0000000000000044
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vmv.v.i	v16, 0
 	vmerge.vvm	v12, v16, v12, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	vmfgt.vf	v0, v8, fa5
 	ret
 func0000000000000024:                   # @func0000000000000024
@@ -18,7 +18,7 @@ func0000000000000024:                   # @func0000000000000024
 	vmflt.vf	v0, v16, fa5
 	vmv.v.i	v16, 0
 	vmerge.vvm	v12, v16, v12, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	vmfgt.vf	v0, v8, fa5
 	ret
 func0000000000000048:                   # @func0000000000000048
@@ -51,7 +51,7 @@ func0000000000000062:                   # @func0000000000000062
 	vmor.mm	v0, v21, v20
 	vmv.v.i	v16, 0
 	vmerge.vvm	v12, v16, v12, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	vmflt.vf	v0, v8, fa5
 	ret
 .LCPI5_0:
@@ -66,6 +66,6 @@ func0000000000000064:                   # @func0000000000000064
 	vmor.mm	v0, v21, v20
 	vmv.v.i	v16, 0
 	vmerge.vvm	v12, v16, v12, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	vmfgt.vf	v0, v8, fa5
 	ret

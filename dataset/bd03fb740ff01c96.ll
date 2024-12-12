@@ -8,12 +8,11 @@ entry:
   %3 = select i1 %1, i1 true, i1 %2
   %not. = xor i1 %3, true
   %4 = zext i1 %not. to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 3 occurrences:
-; linux/optimized/fonts.ll
+; 2 occurrences:
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; Function Attrs: nounwind

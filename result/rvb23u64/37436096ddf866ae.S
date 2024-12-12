@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addi	a2, a2, -64
 	sltiu	a1, a1, 8
 	czero.nez	a2, a2, a1
@@ -6,19 +6,13 @@ func0000000000000041:                   # @func0000000000000041
 	or	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000261:                   # @func0000000000000261
-	addi	a2, a2, 8
+func0000000000000cc1:                   # @func0000000000000cc1
 	slti	a1, a1, 0
-	czero.nez	a2, a2, a1
-	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
 	seqz	a0, a0
+	and	a0, a0, a1
 	ret
-func0000000000000241:                   # @func0000000000000241
-	addi	a2, a2, 28
+func0000000000000c81:                   # @func0000000000000c81
 	sltiu	a1, a1, 5
-	czero.nez	a2, a2, a1
-	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
 	seqz	a0, a0
+	and	a0, a0, a1
 	ret

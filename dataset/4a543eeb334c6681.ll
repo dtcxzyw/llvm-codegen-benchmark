@@ -1,10 +1,9 @@
 
-; 104 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -111,7 +110,7 @@ entry:
   %4 = shl i32 %3, 3
   %5 = add i32 %4, -8
   %6 = shl nuw nsw i32 %1, %5
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

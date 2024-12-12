@@ -67,7 +67,7 @@ entry:
 ; clamav/optimized/upack.c.ll
 ; clamav/optimized/upx.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000085(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = zext nneg i32 %1 to i64
@@ -82,7 +82,7 @@ entry:
 ; clamav/optimized/upack.c.ll
 ; clamav/optimized/upx.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = zext nneg i32 %1 to i64

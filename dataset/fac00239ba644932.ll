@@ -1,5 +1,5 @@
 
-%"struct.facebook::velox::Timestamp.2704774" = type { i64, i64 }
+%"struct.facebook::velox::Timestamp.2817489" = type { i64, i64 }
 
 ; 41 occurrences:
 ; git/optimized/unpack-trees.ll
@@ -53,15 +53,14 @@ entry:
   ret ptr %6
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cuddTable.c.ll
-; abc/optimized/dauCanon.c.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; icu/optimized/ubidi.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; sqlite/optimized/sqlite3.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; yosys/optimized/wreduce.ll
 ; zxing/optimized/BitMatrix.cpp.ll
@@ -69,21 +68,9 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.facebook::velox::Timestamp.2704774", ptr %0, i64 %1
+  %4 = getelementptr %"struct.facebook::velox::Timestamp.2817489", ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -16
-  %6 = getelementptr %"struct.facebook::velox::Timestamp.2704774", ptr %5, i64 %3
-  ret ptr %6
-}
-
-; 1 occurrences:
-; pbrt-v4/optimized/bxdfs.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr float, ptr %0, i64 %1
-  %5 = getelementptr i8, ptr %4, i64 4
-  %6 = getelementptr float, ptr %5, i64 %3
+  %6 = getelementptr %"struct.facebook::velox::Timestamp.2817489", ptr %5, i64 %3
   ret ptr %6
 }
 

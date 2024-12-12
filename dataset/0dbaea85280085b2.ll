@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 89 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; bullet3/optimized/b3StridingMeshInterface.ll
 ; bullet3/optimized/btBvhTriangleMeshShape.ll
@@ -31,6 +31,9 @@
 ; linux/optimized/vlv_dsi.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshlab/optimized/io_bre.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -84,15 +87,17 @@
 ; spike/optimized/vwmaccsu_vx.ll
 ; spike/optimized/vwmulsu_vv.ll
 ; stockfish/optimized/search.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 
-; 147 occurrences:
+; 146 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/row_internal.cc.ll
@@ -121,12 +126,10 @@ entry:
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libpng/optimized/pngwrite.c.ll
-; libquic/optimized/ntt.c.ll
 ; libwebp/optimized/enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; lief/optimized/BinaryParser.cpp.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/drm_dsc_helper.ll
@@ -138,11 +141,8 @@ entry:
 ; linux/optimized/fatent.ll
 ; linux/optimized/ff-memless.ll
 ; linux/optimized/hid-pidff.ll
-; linux/optimized/hid-pl.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/int_log.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/intel_panel.ll
@@ -168,10 +168,10 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MachineTraceMetrics.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/io_bre.cpp.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -239,16 +239,20 @@ entry:
 ; xgboost/optimized/rank_metric.cc.ll
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
-; 27 occurrences:
+; 32 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/config.ll
 ; linux/optimized/drm_dsc_helper.ll
@@ -261,6 +265,11 @@ entry:
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/urb.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/mesh_generator_thread.cpp.ll
@@ -280,11 +289,11 @@ entry:
 define i32 @func0000000000000007(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 
-; 94 occurrences:
+; 92 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/cmELF.cxx.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
@@ -302,7 +311,6 @@ entry:
 ; icu/optimized/gencnval.ll
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngrtran.c.ll
-; libquic/optimized/ntt.c.ll
 ; libquic/optimized/poly.c.ll
 ; libwebp/optimized/enc.c.ll
 ; libwebp/optimized/frame_enc.c.ll
@@ -317,7 +325,6 @@ entry:
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_vdsc.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/vlv_dsi.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -383,11 +390,11 @@ entry:
 define i32 @func0000000000000003(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 
-; 70 occurrences:
+; 66 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -415,7 +422,7 @@ entry:
 ; linux/optimized/skbuff.ll
 ; linux/optimized/tcp_offload.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
 ; oiio/optimized/pnginput.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
@@ -427,8 +434,6 @@ entry:
 ; qemu/optimized/hw_block_virtio-blk.c.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/ui_cursor.c.ll
 ; qemu/optimized/ui_vnc.c.ll
@@ -439,8 +444,6 @@ entry:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/vmulhu_vv.ll
 ; spike/optimized/vmulhu_vx.ll
 ; spike/optimized/vwmaccu_vv.ll
@@ -462,14 +465,13 @@ entry:
 define i32 @func0000000000000002(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   ret i32 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; assimp/optimized/MDCLoader.cpp.ll
 ; linux/optimized/airtime.ll
-; linux/optimized/eht.ll
 ; linux/optimized/hid-pidff.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_fb.ll
@@ -490,7 +492,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
@@ -503,7 +505,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 

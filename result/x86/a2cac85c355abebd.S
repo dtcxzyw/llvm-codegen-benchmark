@@ -1,4 +1,4 @@
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	movzbl	%dil, %ecx
 	leaq	-36(%rcx), %rdx
 	addb	$-37, %cl
@@ -6,7 +6,7 @@ func0000000000000154:                   # @func0000000000000154
 	cmpb	$7, %cl
 	cmovbq	%rdx, %rax
 	retq
-func0000000000000114:                   # @func0000000000000114
+func0000000000000224:                   # @func0000000000000224
 	movzbl	%dil, %ecx
 	leaq	-48(%rcx), %rdx
 	addb	$-48, %cl

@@ -9,7 +9,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpcmpeqb	%xmm1, %xmm0, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpor	%xmm1, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqb	%xmm1, %xmm0, %xmm0
@@ -38,16 +38,37 @@ func0000000000000006:                   # @func0000000000000006
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtb	%xmm0, %xmm1, %xmm0
 	retq
-func000000000000001c:                   # @func000000000000001c
+.LCPI7_0:
+	.zero	16,2
+func0000000000000014:                   # @func0000000000000014
+	vpor	%xmm1, %xmm0, %xmm0
+	vpcmpltub	.LCPI7_0(%rip), %xmm0, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+func000000000000002c:                   # @func000000000000002c
 	vpor	%xmm1, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqb	%xmm1, %xmm0, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	retq
-.LCPI8_0:
+.LCPI9_0:
 	.zero	16,3
+func0000000000000038:                   # @func0000000000000038
+	vpor	%xmm1, %xmm0, %xmm0
+	vpcmpnleub	.LCPI9_0(%rip), %xmm0, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI10_0:
+	.zero	16,1
 func0000000000000018:                   # @func0000000000000018
 	vpor	%xmm1, %xmm0, %xmm0
-	vpcmpnleub	.LCPI8_0(%rip), %xmm0, %k0
+	vpcmpnleub	.LCPI10_0(%rip), %xmm0, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI11_0:
+	.zero	16,102
+func0000000000000028:                   # @func0000000000000028
+	vpor	%xmm1, %xmm0, %xmm0
+	vpcmpnleub	.LCPI11_0(%rip), %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

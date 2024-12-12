@@ -1,6 +1,17 @@
 
-%union.IRIns.3498750 = type { %struct.GCRef.3498751 }
-%struct.GCRef.3498751 = type { i64 }
+; 3 occurrences:
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; openjdk/optimized/symbolTable.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e1(ptr %0, ptr %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 14
+  %6 = icmp eq ptr %5, %0
+  ret i1 %6
+}
 
 ; 6 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
@@ -10,11 +21,11 @@
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 6
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 6
   %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
@@ -65,25 +76,12 @@ entry:
 ; freetype/optimized/type1.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000001e8(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   %6 = icmp ugt ptr %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw %union.IRIns.3498750, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
-  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

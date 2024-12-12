@@ -1,10 +1,9 @@
 
-; 252 occurrences:
+; 349 occurrences:
 ; abc/optimized/fraMan.c.ll
 ; abc/optimized/fraigMan.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
-; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/ACLoader.cpp.ll
@@ -33,6 +32,104 @@
 ; assimp/optimized/UnrealLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/progress_monitor.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; brotli/optimized/utf8_util.c.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/cmStringCommand.cxx.ll
@@ -56,6 +153,7 @@
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_planner_operator.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
+; egg-rs/optimized/2nrym8e40i82m5xa.ll
 ; faiss/optimized/kmeans1d.cpp.ll
 ; flac/optimized/encode.c.ll
 ; flac/optimized/stream_decoder.c.ll
@@ -83,7 +181,6 @@
 ; icu/optimized/nfrule.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; libquic/optimized/histogram.cc.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
@@ -256,14 +353,16 @@
 define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 
-; 98 occurrences:
+; 73 occurrences:
 ; abseil-cpp/optimized/discrete_distribution.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; casadi/optimized/polynomial.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -306,33 +405,6 @@ entry:
 ; oiio/optimized/strutil.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dspr2_thread_L.c.ll
-; openblas/optimized/dspr2_thread_U.c.ll
-; openblas/optimized/dspr_thread_L.c.ll
-; openblas/optimized/dspr_thread_U.c.ll
-; openblas/optimized/dsymv_thread_L.c.ll
-; openblas/optimized/dsyr2_thread_L.c.ll
-; openblas/optimized/dsyr2_thread_U.c.ll
-; openblas/optimized/dsyr_thread_L.c.ll
-; openblas/optimized/dsyr_thread_U.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
-; openblas/optimized/dtrmv_thread_NLN.c.ll
-; openblas/optimized/dtrmv_thread_NLU.c.ll
-; openblas/optimized/dtrmv_thread_NUN.c.ll
-; openblas/optimized/dtrmv_thread_NUU.c.ll
-; openblas/optimized/dtrmv_thread_TLN.c.ll
-; openblas/optimized/dtrmv_thread_TLU.c.ll
-; openblas/optimized/dtrmv_thread_TUN.c.ll
-; openblas/optimized/dtrmv_thread_TUU.c.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; opencv/optimized/freak.cpp.ll
 ; opencv/optimized/simpleflow.cpp.ll
@@ -363,7 +435,7 @@ entry:
 define double @func0000000000000001(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

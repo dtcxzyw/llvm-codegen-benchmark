@@ -48,7 +48,7 @@ entry:
   %3 = fdiv float 1.000000e+00, %2
   %4 = fmul float %3, %1
   %5 = fcmp ult float %4, 0.000000e+00
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -97,9 +97,9 @@ entry:
 define i1 @func000000000000000a(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float 1.600000e+01, %2
-  %4 = fmul float %3, %1
+  %4 = fmul float %1, %3
   %5 = fcmp ugt float %4, 8.000000e+00
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -113,7 +113,7 @@ entry:
   %3 = fdiv float 1.000000e+00, %2
   %4 = fmul float %3, %1
   %5 = fcmp ogt float %4, 1.000000e+00
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

@@ -21,9 +21,12 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; node/optimized/simdutf.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i16 %1) #0 {
 entry:
@@ -46,18 +49,17 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; libwebp/optimized/demux.c.ll
 ; libwebp/optimized/muxread.c.ll
 ; libwebp/optimized/webp_dec.c.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/itemptr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000016(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw i32 %2, 16
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = add nuw i32 %4, 1
   ret i32 %5
 }
@@ -81,7 +83,7 @@ define i32 @func000000000000003f(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = add nuw nsw i32 %4, 6
   ret i32 %5
 }

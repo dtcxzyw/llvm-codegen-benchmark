@@ -1,5 +1,5 @@
 
-; 87 occurrences:
+; 84 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -10,7 +10,6 @@
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; hermes/optimized/Metadata.cpp.ll
 ; lief/optimized/BinaryStream.cpp.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/libata-sata.ll
 ; linux/optimized/open.ll
@@ -49,7 +48,6 @@
 ; llvm/optimized/UnreachableCodeChecker.cpp.ll
 ; llvm/optimized/WorkList.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
@@ -81,7 +79,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/RayTracer.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; quest/optimized/QuEST_cpu.c.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/time.ll
@@ -98,7 +95,7 @@ entry:
   ret i32 %7
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; linux/optimized/lbr.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
@@ -106,14 +103,13 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 2
   %5 = and i32 %4, 56
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -143,7 +139,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw i32 %3, 16
   %5 = and i32 %4, -2147483648
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }

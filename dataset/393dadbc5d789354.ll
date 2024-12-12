@@ -36,7 +36,7 @@ entry:
 ; linux/optimized/intel_fb.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = icmp eq i32 %1, 0
@@ -64,17 +64,6 @@ entry:
   %.not = icmp eq i32 %1, 0
   %4 = select i1 %.not, i32 %3, i32 %0
   ret i32 %4
-}
-
-; 1 occurrences:
-; linux/optimized/ehci-hcd.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext nneg i16 %2 to i32
-  %4 = icmp ugt i32 %1, 188
-  %5 = select i1 %4, i32 %0, i32 %3
-  ret i32 %5
 }
 
 attributes #0 = { nounwind }

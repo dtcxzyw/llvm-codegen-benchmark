@@ -15,7 +15,7 @@ entry:
   ret i1 %6
 }
 
-; 48 occurrences:
+; 50 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/FBXExporter.cpp.ll
@@ -64,6 +64,8 @@ entry:
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000077(i1 %0, float %1, float %2) #0 {
 entry:

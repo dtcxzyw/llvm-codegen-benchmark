@@ -89,7 +89,7 @@
 ; nlohmann_json/optimized/unit-class_iterator.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 53
   %4 = select i1 %3, ptr %1, ptr null
@@ -116,7 +116,7 @@ entry:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/TruncInstCombine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000101(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 28
   %4 = select i1 %3, ptr %1, ptr null
@@ -124,13 +124,17 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 8 occurrences:
+; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/ConstantFold.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
-; llvm/optimized/GlobalDCE.cpp.ll
+; llvm/optimized/GCOVProfiling.cpp.ll
+; llvm/optimized/InlineFunction.cpp.ll
+; llvm/optimized/LoopNestAnalysis.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 22
   %4 = select i1 %3, ptr %1, ptr null
@@ -141,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/InterleavedLoadCombinePass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000104(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 28
   %4 = select i1 %3, ptr %1, ptr null
@@ -150,9 +154,20 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/GlobalDCE.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(ptr %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %2, 22
+  %4 = select i1 %3, ptr %1, ptr null
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, ptr %1, ptr null

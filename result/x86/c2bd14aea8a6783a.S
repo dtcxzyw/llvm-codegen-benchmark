@@ -1,17 +1,23 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	sete	%al
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000062:                   # @func0000000000000062
+func00000000000000a3:                   # @func00000000000000a3
+	xorl	%eax, %eax
+	cmpb	$2, %sil
+	setb	%al
+	leaq	(%rdi,%rax,4), %rax
+	retq
+func0000000000000063:                   # @func0000000000000063
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	setne	%al
 	leaq	(%rax,%rax,2), %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	xorl	%eax, %eax
 	cmpb	$3, %sil
 	setb	%al
@@ -30,7 +36,7 @@ func0000000000000050:                   # @func0000000000000050
 	setns	%al
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000052:                   # @func0000000000000052
+func0000000000000053:                   # @func0000000000000053
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	setg	%al

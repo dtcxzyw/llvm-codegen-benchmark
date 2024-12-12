@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cmake/optimized/cmCursesMainForm.cxx.ll
@@ -7,7 +7,6 @@
 ; darktable/optimized/introspection_colorout.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_levels.c.ll
 ; gromacs/optimized/gmx_order.cpp.ll
 ; libquic/optimized/cubic.cc.ll

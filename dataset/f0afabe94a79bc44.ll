@@ -8,7 +8,7 @@
 define i64 @func0000000000000035(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1048576
-  %3 = and i64 %2, -2097152
+  %3 = and i64 %2, 9223372036852678656
   %4 = sub nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
@@ -25,7 +25,7 @@ entry:
   %2 = add nsw i64 %1, 1048576
   %3 = and i64 %2, -2097152
   %4 = sub nsw i64 %1, %3
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

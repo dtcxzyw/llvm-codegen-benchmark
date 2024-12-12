@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
@@ -42,7 +43,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = ashr i32 %3, 16
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 

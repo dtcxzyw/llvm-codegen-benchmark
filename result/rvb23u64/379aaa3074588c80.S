@@ -1,4 +1,4 @@
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001b4:                   # @func00000000000001b4
 	srli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, -3
@@ -10,9 +10,16 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	srli	a1, a1, 6
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	seqz	a0, a0
+	ret
+func00000000000001a4:                   # @func00000000000001a4
+	srli	a1, a1, 3
+	add	a0, a0, a1
+	addi	a0, a0, -2048
+	addi	a0, a0, -1
+	sltiu	a0, a0, -2048
 	ret

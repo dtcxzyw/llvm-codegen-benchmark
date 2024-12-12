@@ -1,24 +1,24 @@
-func00000000000000a1:                   // @func00000000000000a1
+func0000000000000141:                   // @func0000000000000141
 // %bb.0:                               // %entry
-	sli	v3.4h, v2.4h, #8
-	ushll	v2.4s, v3.4h, #0
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	bfi	w2, w1, #8, #24
+	cmp	x0, w2, uxth
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000a4:                   // @func00000000000000a4
+func0000000000000144:                   // @func0000000000000144
 // %bb.0:                               // %entry
-	sli	v3.4h, v2.4h, #8
-	ushll	v2.4s, v3.4h, #0
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	bfi	w2, w1, #8, #24
+	cmp	x0, w2, uxth
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000154:                   // @func0000000000000154
+// %bb.0:                               // %entry
+                                        // kill: def $w2 killed $w2 def $x2
+	bfi	w2, w1, #8, #24
+	cmp	x0, w2, uxth
+	cset	w0, lo
 	ret
                                         // -- End function

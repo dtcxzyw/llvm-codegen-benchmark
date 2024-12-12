@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000606(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
   %3 = zext i1 %2 to i32
@@ -22,7 +22,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 82
   %3 = zext i1 %2 to i32

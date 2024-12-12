@@ -4,6 +4,6 @@ func0000000000000000:                   # @func0000000000000000
 	vzext.vf2	v28, v24
 	vfwcvt.f.xu.v	v0, v28
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vfadd.vv	v16, v0, v16
+	vfadd.vv	v16, v16, v0
 	vfadd.vv	v8, v16, v8
 	ret

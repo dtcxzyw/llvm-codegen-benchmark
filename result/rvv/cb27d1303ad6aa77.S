@@ -5,5 +5,5 @@ func0000000000000005:                   # @func0000000000000005
 	vor.vv	v12, v12, v16
 	vfwcvt.f.x.v	v16, v12
 	vsetvli	zero, zero, e32, m4, ta, ma
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	ret

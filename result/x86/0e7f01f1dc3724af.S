@@ -1,8 +1,8 @@
 func0000000000000002:                   # @func0000000000000002
 	movl	%edi, %eax
-	andl	$1431655765, %edx               # imm = 0x55555555
+	andl	$252645135, %edx                # imm = 0xF0F0F0F
 	xorl	%esi, %edx
-	shll	$8, %eax
+	shll	$16, %eax
 	xorl	%edx, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000

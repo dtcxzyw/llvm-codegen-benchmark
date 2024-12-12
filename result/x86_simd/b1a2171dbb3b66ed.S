@@ -76,7 +76,7 @@
 	.byte	0                               # 0x0
 func000000000000001f:                   # @func000000000000001f
 	vpslld	$8, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm1
 	vpternlogd	$236, .LCPI0_3(%rip){1to8}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	retq

@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; meshlab/optimized/packing.cpp.ll
@@ -19,12 +19,13 @@
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 
@@ -41,7 +42,7 @@ define float @func0000000000000002(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 
@@ -55,7 +56,7 @@ define float @func0000000000000001(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

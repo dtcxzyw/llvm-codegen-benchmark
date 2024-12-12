@@ -19,4 +19,16 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 2
+  %3 = or i64 %2, 18014398509481984
+  %4 = select i1 %0, i64 %2, i64 %3
+  %5 = or disjoint i64 %4, 2
+  ret i64 %5
+}
+
 attributes #0 = { nounwind }

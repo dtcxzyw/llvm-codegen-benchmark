@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {

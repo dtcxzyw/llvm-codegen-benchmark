@@ -1,5 +1,7 @@
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; libquic/optimized/tls_cbc.c.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind

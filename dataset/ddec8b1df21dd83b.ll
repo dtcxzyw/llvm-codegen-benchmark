@@ -1,6 +1,8 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:

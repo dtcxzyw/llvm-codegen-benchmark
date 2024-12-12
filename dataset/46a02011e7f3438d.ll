@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; git/optimized/fast-import.ll
 ; icu/optimized/utrie_swap.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -8,7 +8,6 @@
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; ncnn/optimized/net.cpp.ll
-; openspiel/optimized/chess_board.cc.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; redis/optimized/aof.ll
 ; wireshark/optimized/packet-ssh.c.ll
@@ -35,18 +34,6 @@ entry:
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %1
-  %6 = select i1 %0, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; darktable/optimized/introspection_highlights.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 262142
   %4 = icmp ne i32 %3, 0
   %5 = and i1 %4, %1
   %6 = select i1 %0, i1 %5, i1 false

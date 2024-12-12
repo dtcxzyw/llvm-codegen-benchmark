@@ -26,10 +26,3 @@ func000000000000000c:                   # @func000000000000000c
 	movzbl	%al, %eax
 	andl	$1, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpq	$358401, %rsi                   # imm = 0x57801
-	setb	%al
-	orb	%dil, %al
-	movzbl	%al, %eax
-	andl	$1, %eax
-	retq

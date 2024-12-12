@@ -22,20 +22,6 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; linux/optimized/inet_connection_sock.ll
-; linux/optimized/maple_tree.ll
-; linux/optimized/mlme.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 72
-  %3 = icmp eq ptr %2, null
-  %not. = xor i1 %0, true
-  %4 = select i1 %not., i1 true, i1 %3
-  ret i1 %4
-}
-
 ; 4 occurrences:
 ; linux/optimized/device_pm.ll
 ; linux/optimized/i2c-core-acpi.ll

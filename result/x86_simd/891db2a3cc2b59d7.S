@@ -27,11 +27,10 @@ func0000000000000006:                   # @func0000000000000006
 .LCPI2_2:
 	.byte	96                              # 0x60
 func000000000000000c:                   # @func000000000000000c
-	vpsllw	$7, %xmm0, %xmm2
-	vpxor	%xmm3, %xmm3, %xmm3
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
 	vpbroadcastb	.LCPI2_2(%rip), %xmm0   # xmm0 = [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96]
-	vpcmpneqb	%xmm0, %xmm1, %k1
-	vpcmpgtb	%xmm2, %xmm3, %k1 {%k1}
+	vpcmpneqb	%xmm0, %xmm1, %k1 {%k1}
 	vmovdqu8	.LCPI2_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104]
 	retq
 .LCPI3_0:

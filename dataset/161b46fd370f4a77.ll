@@ -8,18 +8,17 @@ entry:
   %2 = shl i32 %1, 4
   %3 = and i32 %2, 524288
   %4 = and i32 %1, 16742639
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or i32 %5, %3
   ret i32 %6
 }
 
-; 60 occurrences:
+; 55 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; clamav/optimized/bytecode_api.c.ll
-; cmake/optimized/poll.c.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
+; darktable/optimized/introspection_flip.c.ll
 ; libquic/optimized/des.c.ll
-; libuv/optimized/poll.c.ll
 ; linux/optimized/array.ll
 ; linux/optimized/dev-ioctl.ll
 ; linux/optimized/dm-ioctl.ll
@@ -35,15 +34,12 @@ entry:
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/loop.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/md.ll
 ; linux/optimized/nfs2xdr.ll
 ; linux/optimized/process_64.ll
 ; linux/optimized/reg.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/step.ll
 ; linux/optimized/super.ll
-; linux/optimized/sys_ia32.ll
 ; linux/optimized/taskstats.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/tls.ll
@@ -62,7 +58,6 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
-; node/optimized/poll.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; openjdk/optimized/Ushort4444Argb.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
@@ -80,7 +75,7 @@ entry:
   %2 = shl i32 %1, 16
   %3 = and i32 %2, 16711680
   %4 = and i32 %1, 65280
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or disjoint i32 %5, %3
   ret i32 %6
 }
@@ -94,7 +89,7 @@ entry:
   %2 = shl nsw i32 %1, 6
   %3 = and i32 %2, 63488
   %4 = and i32 %1, -2147483648
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or disjoint i32 %5, %3
   ret i32 %6
 }
@@ -116,7 +111,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = shl nuw nsw i32 %1, 1
   %5 = and i32 %4, 64
   %6 = or disjoint i32 %5, %3

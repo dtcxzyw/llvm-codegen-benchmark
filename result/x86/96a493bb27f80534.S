@@ -1,20 +1,20 @@
 func0000000000000001:                   # @func0000000000000001
-	cmpb	%sil, %dl
+	cmpb	%dl, %sil
 	sete	%al
 	andb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006
-	cmpb	%sil, %dl
-	setg	%al
+	cmpb	%dl, %sil
+	setl	%al
 	andb	%dil, %al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	cmpb	%sil, %dl
+	cmpb	%dl, %sil
 	setne	%al
 	andb	%dil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	cmpb	%sil, %dl
-	seta	%al
+	cmpb	%dl, %sil
+	setb	%al
 	andb	%dil, %al
 	retq

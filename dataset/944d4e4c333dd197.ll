@@ -1,30 +1,23 @@
 
-; 153 occurrences:
-; abc/optimized/abcExact.c.ll
+; 139 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/amapMatch.c.ll
-; abc/optimized/cecPat.c.ll
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/ifTruth.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sfmCnf.c.ll
-; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
-; assimp/optimized/Base64.cpp.ll
 ; assimp/optimized/BaseImporter.cpp.ll
-; clamav/optimized/ole2_extract.c.ll
+; boost/optimized/format_args.ll
+; boost/optimized/pct_format.ll
 ; clamav/optimized/unicode.cpp.ll
-; clamav/optimized/vba_extract.c.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; flatbuffers/optimized/cpp_generator.cc.ll
 ; folly/optimized/LogMessage.cpp.ll
 ; git/optimized/http.ll
-; git/optimized/index-pack.ll
 ; glog/optimized/symbolize.cc.ll
 ; graphviz/optimized/ccomps.c.ll
 ; graphviz/optimized/exeval.c.ll
@@ -59,8 +52,8 @@
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/TokenConcatenation.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; minetest/optimized/colorize.cpp.ll
-; nanosvg/optimized/nanosvg.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
@@ -95,8 +88,6 @@
 ; oiio/optimized/xmp.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/compactHashtable.ll
-; openssl/optimized/ca_internals_test-bin-ca.ll
-; openssl/optimized/openssl-bin-ca.ll
 ; openusd/optimized/clipsAPI.cpp.ll
 ; openusd/optimized/fileIO_Common.cpp.ll
 ; openusd/optimized/schemaRegistry.cpp.ll
@@ -105,10 +96,8 @@
 ; php/optimized/ir_emit.ll
 ; pocketpy/optimized/str.cpp.ll
 ; postgres/optimized/initdb.ll
-; postgres/optimized/rangetypes.ll
 ; postgres/optimized/regcomp.ll
 ; proj/optimized/axisswap.cpp.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; raylib/optimized/rtext.c.ll
 ; ruby/optimized/encoding.ll
@@ -117,12 +106,10 @@
 ; ruby/optimized/pack.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/process.ll
-; ruby/optimized/re.ll
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/ruby.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/symbol.ll
-; ruby/optimized/zlib.ll
 ; sentencepiece/optimized/util.cc.ll
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
@@ -151,12 +138,11 @@
 ; verilator/optimized/V3File.cpp.ll
 ; wasmedge/optimized/filemgr.cpp.ll
 ; wireshark/optimized/packet-wtls.c.ll
-; wireshark/optimized/packet-zbee-zcl-se.c.ll
 ; zxing/optimized/AZHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 1
+  %1 = and i8 %0, 31
   %2 = zext nneg i8 %1 to i32
   ret i32 %2
 }

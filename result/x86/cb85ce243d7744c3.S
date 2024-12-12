@@ -9,7 +9,7 @@ func0000000000000005:                   # @func0000000000000005
 	leaq	(%rdi,%rsi), %rax
 	retq
 func000000000000000d:                   # @func000000000000000d
-	andl	$2, %esi
+	andl	$2097151, %esi                  # imm = 0x1FFFFF
 	shlq	$32, %rdi
 	leaq	(%rdi,%rsi), %rax
 	retq

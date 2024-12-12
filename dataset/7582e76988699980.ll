@@ -1,5 +1,5 @@
 
-; 126 occurrences:
+; 129 occurrences:
 ; llvm/optimized/APINotesReader.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; minetest/optimized/unit_sao.cpp.ll
@@ -126,11 +126,25 @@
 ; quantlib/optimized/yoyoptionlethelpers.ll
 ; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
 ; yosys/optimized/opt_expr.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = icmp eq i8 %3, %1
+  %4 = icmp eq i8 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i8 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i8
+  %4 = icmp samesign uge i8 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

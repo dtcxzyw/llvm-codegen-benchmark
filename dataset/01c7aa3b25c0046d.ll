@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 26 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/fretTime.c.ll
 ; abc/optimized/ivyUtil.c.ll
@@ -13,7 +13,9 @@
 ; libquic/optimized/error_correction.c.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; linux/optimized/md.ll
+; lvgl/optimized/lv_color.ll
 ; minetest/optimized/CImage.cpp.ll
+; minetest/optimized/texturesource.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
@@ -59,7 +61,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = and i32 %3, -8
   ret i32 %4
 }
@@ -113,7 +115,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 15
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = and i32 %3, 2147483647
   ret i32 %4
 }

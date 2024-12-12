@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; gromacs/optimized/poscalc.cpp.ll
@@ -18,17 +18,25 @@
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; miniaudio/optimized/unity.c.ll
 ; oniguruma/optimized/regcomp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/hb-buffer-verify.ll
 ; openjdk/optimized/hb-ot-shape.ll
-; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %0, 1
+  %2 = and i32 %0, 32768
+  ret i32 %2
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_sprintf_builtin.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %0, 1024
   ret i32 %2
 }
 

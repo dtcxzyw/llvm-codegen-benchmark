@@ -8,9 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	vmovdqa	%ymm2, %ymm0
 	retq
 .LCPI1_0:
-	.long	15                              # 0xf
+	.long	1                               # 0x1
 .LCPI1_1:
-	.long	128                             # 0x80
+	.long	4294967294                      # 0xfffffffe
 func0000000000000004:                   # @func0000000000000004
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1

@@ -1,13 +1,11 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mvni	v1.8h, #115
-	add	v0.8h, v0.8h, v1.8h
-	cmlt	v1.8h, v0.8h, #0
-	mov	v2.16b, v0.16b
-	usra	v2.8h, v1.8h, #14
-	bic	v2.8h, #3
-	sub	v0.8h, v0.8h, v2.8h
-	sshll2	v1.4s, v0.8h, #0
-	sshll	v0.4s, v0.4h, #0
+	sub	w8, w0, #116
+	sxth	w9, w8
+	ubfx	w9, w9, #29, #2
+	add	w9, w8, w9
+	and	w9, w9, #0xfffc
+	sub	w8, w8, w9
+	sxth	w0, w8
 	ret
                                         // -- End function

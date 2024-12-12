@@ -19,7 +19,7 @@ entry:
 ; icu/optimized/ustdio.ll
 ; openjdk/optimized/awt_ImagingLib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nsw i32 %3, 1
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/awt_ImagingLib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nsw i32 %3, 2
@@ -44,7 +44,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 1
@@ -52,7 +52,7 @@ entry:
   ret i1 %5
 }
 
-; 377 occurrences:
+; 376 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; luajit/optimized/lj_tab.ll
@@ -110,7 +110,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -444,7 +443,7 @@ entry:
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nsw i32 %3, 5
@@ -455,7 +454,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/upack.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000148(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = shl nuw i32 %3, 2
@@ -466,7 +465,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 1

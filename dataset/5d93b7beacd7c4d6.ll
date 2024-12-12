@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/crc32.c.ll
 ; freetype/optimized/cff.c.ll
@@ -25,6 +25,8 @@
 ; stockfish/optimized/position.ll
 ; stockfish/optimized/search.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

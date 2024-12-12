@@ -16,14 +16,13 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; clamav/optimized/filefn.cpp.ll
 ; flac/optimized/cuesheet.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; linux/optimized/blk-iocost.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:

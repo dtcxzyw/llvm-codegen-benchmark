@@ -3,23 +3,18 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000164:                   # @func0000000000000164
 	addq	$8, %rdi
 	cmpq	%rdx, %rdi
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	incq	%rdi
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
-	incq	%rdi
+func0000000000000161:                   # @func0000000000000161
+	addq	$4128, %rdi                     # imm = 0x1020
 	cmpq	%rdx, %rdi
 	sete	%al
-	retq
-func0000000000000004:                   # @func0000000000000004
-	addq	$8, %rdi
-	cmpq	%rdx, %rdi
-	setb	%al
 	retq

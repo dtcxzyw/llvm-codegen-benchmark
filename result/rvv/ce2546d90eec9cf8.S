@@ -35,5 +35,5 @@ func00000000000001d4:                   # @func00000000000001d4
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
 	vadd.vv	v10, v10, v14
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

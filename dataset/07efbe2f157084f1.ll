@@ -1,7 +1,7 @@
 
-%struct.CurveAnchorPoint.2761740 = type { float, float }
+%struct.CurveAnchorPoint.2874017 = type { float, float }
 
-; 119 occurrences:
+; 120 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
@@ -9,6 +9,7 @@
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; php/optimized/crypt_blowfish.ll
 ; spike/optimized/add64.ll
 ; spike/optimized/amocas_d.ll
@@ -122,36 +123,24 @@
 ; spike/optimized/vfslide1down_vf.ll
 ; spike/optimized/vfslide1up_vf.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65534
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 399296
-  %5 = getelementptr nusw [65536 x i16], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 399296
+  %5 = getelementptr nusw nuw [65536 x i16], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 240
   %3 = or disjoint i64 %2, 8
   %4 = getelementptr i8, ptr %0, i64 24
-  %5 = getelementptr nusw [20 x %struct.CurveAnchorPoint.2761740], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 1 occurrences:
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 65534
-  %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 399296
-  %5 = getelementptr nusw [65536 x i16], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [20 x %struct.CurveAnchorPoint.2874017], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

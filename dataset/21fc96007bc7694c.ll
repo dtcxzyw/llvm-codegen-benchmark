@@ -5,19 +5,26 @@
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; rocksdb/optimized/block_cache_tracer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
 
-; 2 occurrences:
+; 9 occurrences:
 ; meilisearch-rs/optimized/2eqafq69fd46y14a.ll
 ; qemu/optimized/util_cutils.c.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/9fz5l76t5byggb8exxkeuxjql.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = or i64 %3, %0
@@ -43,10 +50,10 @@ entry:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; openjdk/optimized/macroArrayCopy.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp sgt i64 %4, -1
   ret i1 %5
 }
@@ -57,7 +64,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp slt i64 %4, 0
   ret i1 %5
 }
@@ -105,7 +112,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp sgt i64 %4, -1
   ret i1 %5
 }
@@ -113,7 +120,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/arcread.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = or i64 %3, %0
@@ -125,10 +132,10 @@ entry:
 ; linux/optimized/select.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -136,7 +143,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = or i64 %3, %0

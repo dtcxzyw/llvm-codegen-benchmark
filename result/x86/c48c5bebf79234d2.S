@@ -24,10 +24,6 @@ func0000000000000015:                   # @func0000000000000015
 	imulq	%rsi, %rdi
 	leaq	(%rdi,%rdx,2), %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	imulq	%rsi, %rdi
-	leaq	(%rdi,%rdx,4), %rax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	imulq	%rdx, %rsi
 	leaq	(%rsi,%rdi,8), %rax

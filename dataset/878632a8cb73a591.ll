@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 44 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/bdcDec.c.ll
@@ -14,6 +14,8 @@
 ; jq/optimized/jv_dtoa.ll
 ; libwebp/optimized/analysis_enc.c.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll

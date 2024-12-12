@@ -5,7 +5,7 @@
 ; ruby/optimized/rjit_c.ll
 ; xgboost/optimized/allreduce.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000302(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = icmp eq i64 %2, 0
@@ -25,7 +25,7 @@ entry:
 ; velox/optimized/VectorSaver.cpp.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = icmp eq i64 %2, 0
@@ -34,10 +34,23 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; hdf5/optimized/H5Shyper.c.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000210(i64 %0, i64 %1) #0 {
+entry:
+  %2 = freeze i64 %1
+  %3 = icmp ugt i64 %2, 4294967295
+  %4 = icmp ugt i64 %0, 4294967294
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000202(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = icmp ugt i64 %2, 128

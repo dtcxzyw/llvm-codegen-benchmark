@@ -34,3 +34,8 @@ func000000000000000f:                   # @func000000000000000f
 	andl	$1, %esi
 	leal	(%rdi,%rsi,2), %eax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	movl	%esi, %eax
+	shll	$8, %eax
+	orl	%edi, %eax
+	retq

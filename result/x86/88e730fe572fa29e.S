@@ -4,12 +4,12 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$63, %esi
 	setb	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	subl	%edi, %esi
 	leal	-5(%rsi), %eax
 	shrl	$31, %eax
 	retq
-func0000000000000204:                   # @func0000000000000204
+func0000000000000404:                   # @func0000000000000404
 	subl	%edi, %esi
 	incl	%esi
 	cmpl	$2, %esi
@@ -27,7 +27,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$20, %esi
 	setl	%al
 	retq
-func0000000000000206:                   # @func0000000000000206
+func0000000000000406:                   # @func0000000000000406
 	subl	%edi, %esi
 	incl	%esi
 	cmpl	$20, %esi

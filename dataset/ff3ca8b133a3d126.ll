@@ -6,7 +6,7 @@
 ; openusd/optimized/decodeframe.c.ll
 ; slurm/optimized/acct_gather_profile_influxdb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000302(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, %1
   %3 = icmp ne i32 %2, 0

@@ -257,7 +257,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; linux/optimized/maple_tree.ll
 ; proxygen/optimized/Huffman.cpp.ll
 ; wireshark/optimized/packet-hartip.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll

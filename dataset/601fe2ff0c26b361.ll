@@ -1,22 +1,29 @@
 
-; 4 occurrences:
+; 10 occurrences:
 ; llama.cpp/optimized/train.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; tev/optimized/Common.cpp.ll
 ; vcpkg/optimized/postbuildlint.cpp.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = add i64 %4, -24
-  %6 = add i64 %3, %0
+  %6 = add i64 %0, %3
   %7 = sub i64 %5, %6
   ret i64 %7
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
@@ -27,7 +34,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = add i64 %4, -8
-  %6 = add i64 %3, %0
+  %6 = add i64 %0, %3
   %7 = sub i64 %5, %6
   ret i64 %7
 }
@@ -41,7 +48,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = add i64 %4, 1
-  %6 = add i64 %3, %0
+  %6 = add i64 %0, %3
   %7 = sub i64 %5, %6
   ret i64 %7
 }
@@ -54,7 +61,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = add i64 %4, 1
-  %6 = add i64 %3, %0
+  %6 = add i64 %0, %3
   %7 = sub i64 %5, %6
   ret i64 %7
 }
@@ -71,12 +78,12 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = add i64 %4, -2147483647
-  %6 = add i64 %3, %0
+  %6 = add i64 %0, %3
   %7 = sub i64 %5, %6
   ret i64 %7
 }
 
-; 148 occurrences:
+; 145 occurrences:
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
 ; nix/optimized/archive.ll
@@ -164,13 +171,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -231,7 +235,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = add i64 %4, 1
-  %6 = add i64 %3, %0
+  %6 = add i64 %0, %3
   %7 = sub i64 %5, %6
   ret i64 %7
 }

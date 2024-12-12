@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/algorithm.ll
 ; gromacs/optimized/pdbio.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll
 ; ocio/optimized/MatrixOpData.cpp.ll
@@ -31,6 +32,21 @@ entry:
   %4 = fcmp ule double %1, 1.000000e-15
   %5 = select i1 %4, i1 true, i1 %3
   %6 = fcmp ule double %0, 1.000000e-15
+  %7 = select i1 %5, i1 true, i1 %6
+  ret i1 %7
+}
+
+; 3 occurrences:
+; boost/optimized/algorithm.ll
+; cpython/optimized/cmathmodule.ll
+; postgres/optimized/float.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000888(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp oeq double %2, 2.000000e+00
+  %4 = fcmp oeq double %1, 2.000000e+00
+  %5 = select i1 %4, i1 true, i1 %3
+  %6 = fcmp oeq double %0, 2.000000e+00
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
@@ -72,20 +88,6 @@ define i1 @func0000000000000878(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %2, 0x7FF0000000000000
   %4 = fcmp une double %1, 0x7FF0000000000000
-  %5 = select i1 %4, i1 true, i1 %3
-  %6 = fcmp oeq double %0, 0x7FF0000000000000
-  %7 = select i1 %5, i1 true, i1 %6
-  ret i1 %7
-}
-
-; 2 occurrences:
-; cpython/optimized/cmathmodule.ll
-; postgres/optimized/float.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000888(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp oeq double %2, 0x7FF0000000000000
-  %4 = fcmp oeq double %1, 0x7FF0000000000000
   %5 = select i1 %4, i1 true, i1 %3
   %6 = fcmp oeq double %0, 0x7FF0000000000000
   %7 = select i1 %5, i1 true, i1 %6

@@ -5,9 +5,33 @@
 define i32 @func0000000000000031(i32 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000020(i32 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = add nuw i64 %1, %3
+  %5 = trunc i64 %4 to i32
+  %6 = add i32 %0, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i32 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = trunc i64 %4 to i32
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -18,9 +42,9 @@ entry:
 define i32 @func0000000000000000(i32 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -30,9 +54,9 @@ entry:
 define i32 @func0000000000000011(i32 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

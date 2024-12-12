@@ -25,8 +25,9 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; clamav/optimized/iso9660.c.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; spike/optimized/cm_push.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

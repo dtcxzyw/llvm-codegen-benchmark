@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/decimal.cc.ll
@@ -21,6 +21,7 @@
 ; libpng/optimized/pngread.c.ll
 ; libquic/optimized/prtime.cc.ll
 ; linux/optimized/cdrom.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mixbox/optimized/mixbox.ll
 ; nori/optimized/nanovg.c.ll
@@ -47,21 +48,6 @@ entry:
   %2 = mul nuw nsw i32 %1, 10
   %3 = add nuw nsw i32 %2, %0
   %4 = mul nuw nsw i32 %3, 60
-  ret i32 %4
-}
-
-; 5 occurrences:
-; hermes/optimized/DateUtil.cpp.ll
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; php/optimized/engine_combinedlcg.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, -12
-  %3 = add i32 %2, %0
-  %4 = mul nsw i32 %3, 367
   ret i32 %4
 }
 
@@ -141,7 +127,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 5
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul i32 %3, -862048943
   ret i32 %4
 }
@@ -235,26 +221,26 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; mixbox/optimized/mixbox.ll
-; zxing/optimized/zueci.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003d(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %1, 85
-  %3 = add nuw nsw i32 %2, %0
-  %4 = mul nsw i32 %3, 85
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; libquic/optimized/error_correction.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, -12289
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul nsw i32 %3, 2730
+  ret i32 %4
+}
+
+; 2 occurrences:
+; hermes/optimized/DateUtil.cpp.ll
+; libquic/optimized/time_support.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, -12
+  %3 = add i32 %0, %2
+  %4 = mul nsw i32 %3, 367
   ret i32 %4
 }
 
@@ -264,8 +250,19 @@ entry:
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 60
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul nsw i32 %3, 75
+  ret i32 %4
+}
+
+; 1 occurrences:
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 10
+  %3 = add nuw nsw i32 %2, %0
+  %4 = mul nsw i32 %3, -126
   ret i32 %4
 }
 
@@ -276,7 +273,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 10
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul nuw nsw i32 %3, 3600
   ret i32 %4
 }

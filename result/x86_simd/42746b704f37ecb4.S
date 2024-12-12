@@ -29,7 +29,7 @@ func0000000000000000:                   # @func0000000000000000
 	vzeroupper
 	retq
 func0000000000000008:                   # @func0000000000000008
-	vpsllq	$16, %ymm1, %ymm1
+	vpsllq	$10, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx
 	vextracti128	$1, %ymm1, %xmm3

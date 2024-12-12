@@ -30,7 +30,7 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/abcObj.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -52,6 +52,7 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; tree-sitter-rs/optimized/2ysit6xak1d4lr67.ll
 ; velox/optimized/Sequence.cpp.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:

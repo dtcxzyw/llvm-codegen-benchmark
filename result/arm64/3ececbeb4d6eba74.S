@@ -1,34 +1,17 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	ushll	v1.4s, v1.4h, #0
-	ushll2	v2.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ushll	v3.2d, v1.2s, #0
-	ushll2	v1.2d, v1.4s, #0
-	shl	v2.2d, v2.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmge	v2.2d, v2.2d, #0
-	cmge	v0.2d, v0.2d, #0
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v3.16b, v0.16b
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xffff
+	tst	w0, #0x1
+	csel	x0, xzr, x8, ne
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	ushll	v1.4s, v1.4h, #0
-	ushll2	v2.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ushll	v3.2d, v1.2s, #0
-	ushll2	v1.2d, v1.4s, #0
-	shl	v2.2d, v2.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v2.2d, v2.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	bic	v1.16b, v1.16b, v2.16b
-	bic	v3.16b, v3.16b, v0.16b
-	sub	v1.2d, v1.2d, v2.2d
-	sub	v0.2d, v3.2d, v0.2d
+                                        // kill: def $w1 killed $w1 def $x1
+	mov	w8, #9                          // =0x9
+	and	x9, x1, #0xffff
+	tst	w0, #0x1
+	csel	x0, x8, x9, ne
 	ret
                                         // -- End function

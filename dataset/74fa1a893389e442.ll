@@ -1,13 +1,12 @@
 
-; 6 occurrences:
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
+; 5 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; openjdk/optimized/check_code.ll
 ; slurm/optimized/node_scheduler.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i1 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -13
   %3 = icmp ult i32 %2, 4

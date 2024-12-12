@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/calculate_point_order.ll
 ; cpython/optimized/floatobject.ll
 ; git/optimized/update-ref.ll
 ; imgui/optimized/imgui_widgets.cpp.ll

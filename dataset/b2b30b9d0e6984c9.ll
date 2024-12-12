@@ -1,5 +1,5 @@
 
-; 407 occurrences:
+; 403 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -69,7 +69,6 @@
 ; gromacs/optimized/displacement.cpp.ll
 ; gromacs/optimized/forcefieldparameters.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gmx_disre.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; gromacs/optimized/inputrec.cpp.ll
@@ -117,7 +116,6 @@
 ; lightgbm/optimized/train_share_states.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -139,7 +137,6 @@
 ; ocio/optimized/ColorSpaceSet.cpp.ll
 ; ocio/optimized/Config.cpp.ll
 ; ocio/optimized/Context.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/NoOps.cpp.ll
 ; ocio/optimized/OpOptimizers.cpp.ll
 ; ocio/optimized/ViewingRules.cpp.ll
@@ -234,8 +231,6 @@
 ; pocketpy/optimized/expr.cpp.ll
 ; pocketpy/optimized/gc.cpp.ll
 ; pocketpy/optimized/tuplelist.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; protobuf/optimized/text_format.cc.ll
@@ -349,6 +344,7 @@
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/portlist.ll
 ; yosys/optimized/preproc.ll
+; yosys/optimized/proc_arst.ll
 ; yosys/optimized/proc_dff.ll
 ; yosys/optimized/proc_dlatch.ll
 ; yosys/optimized/proc_mux.ll
@@ -414,7 +410,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 29
   %6 = ashr i64 %5, 32
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 
@@ -433,7 +429,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 30
   %6 = ashr i64 %5, 32
-  %7 = icmp slt i64 %6, %0
+  %7 = icmp sgt i64 %0, %6
   ret i1 %7
 }
 
@@ -460,7 +456,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 29
   %6 = ashr i64 %5, 32
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -473,7 +469,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 29
   %6 = ashr i64 %5, 32
-  %7 = icmp sle i64 %6, %0
+  %7 = icmp sge i64 %0, %6
   ret i1 %7
 }
 
@@ -528,13 +524,13 @@ entry:
 ; zxing/optimized/QREncoder.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 
@@ -548,13 +544,13 @@ entry:
 ; redis/optimized/read.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 28
   %6 = ashr exact i64 %5, 32
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
@@ -578,27 +574,25 @@ entry:
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 29
   %6 = ashr i64 %5, 32
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/charconv_parse_test.cc.ll
 ; git/optimized/match-trees.ll
 ; gromacs/optimized/groio.cpp.ll
 ; gromacs/optimized/readir.cpp.ll
-; linux/optimized/auxiliary.ll
 ; opencv/optimized/persistence_yml.cpp.ll
 ; redis/optimized/read.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -609,28 +603,27 @@ entry:
 ; opencv/optimized/torch_importer.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
   ret i1 %7
 }
 
-; 3 occurrences:
-; proj/optimized/wkt_parser.cpp.ll
+; 2 occurrences:
 ; protobuf/optimized/coded_stream.cc.ll
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = icmp slt i64 %6, %0
+  %7 = icmp sgt i64 %0, %6
   ret i1 %7
 }
 
@@ -647,7 +640,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 29
   %6 = ashr i64 %5, 32
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
   ret i1 %7
 }
 

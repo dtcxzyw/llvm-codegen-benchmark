@@ -1,21 +1,18 @@
 
-; 1 occurrences:
-; ruby/optimized/bignum.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f9(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nuw nsw i64 3, %1
-  %3 = add nuw nsw i64 %0, 1
-  %4 = icmp uge i64 %3, %2
-  ret i1 %4
-}
-
-; 3 occurrences:
+; 11 occurrences:
+; boost/optimized/pool_resource.ll
 ; grpc/optimized/json_object_loader.cc.ll
+; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; openmpi/optimized/bfrop_base_macro_backers.ll
 ; rocksdb/optimized/xxhash.cc.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/c4c7jl64zv8zhv2ne6xdvhty4.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 4, %1
   %3 = add nuw i64 %0, 1
@@ -30,22 +27,10 @@ entry:
 ; openssl/optimized/libcrypto-shlib-a_int.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 9, %1
   %3 = add nuw nsw i64 %0, 1
-  %4 = icmp eq i64 %3, %2
-  ret i1 %4
-}
-
-; 2 occurrences:
-; image-rs/optimized/8143hfqbwzfmz2f.ll
-; quantlib/optimized/sobolbrowniangenerator.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nsw i64 15, %1
-  %3 = add nuw i64 %0, 1
   %4 = icmp eq i64 %3, %2
   ret i1 %4
 }
@@ -109,10 +94,21 @@ entry:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 4, %1
   %3 = add nuw nsw i64 %0, 1
+  %4 = icmp eq i64 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; quantlib/optimized/sobolbrowniangenerator.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 0, %1
+  %3 = add nuw i64 %0, 1
   %4 = icmp eq i64 %3, %2
   ret i1 %4
 }
@@ -121,7 +117,7 @@ entry:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 14, %1
   %3 = add nuw i64 %0, 1
@@ -133,7 +129,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; llvm/optimized/TableGenBackend.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 12, %1
   %3 = add nuw i64 %0, 1
@@ -167,7 +163,7 @@ entry:
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = add nuw nsw i64 %0, 1
@@ -217,7 +213,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/systemd_journal.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 262136, %1
   %3 = add i64 %0, -1
@@ -229,7 +225,7 @@ entry:
 ; hyperscan/optimized/program_runtime.c.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 1, %1
   %3 = add nsw i64 %0, -1023
@@ -241,7 +237,7 @@ entry:
 ; meshlab/optimized/matching.cpp.ll
 ; node/optimized/libnode.node_options.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = add nsw i64 %0, -1
@@ -253,7 +249,7 @@ entry:
 ; g2o/optimized/line3d.cpp.ll
 ; g2o/optimized/structure_only.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 2, %1
   %3 = add nsw i64 %0, 1
@@ -265,7 +261,7 @@ entry:
 ; g2o/optimized/line3d.cpp.ll
 ; g2o/optimized/structure_only.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001ec(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 2, %1
   %3 = add nuw nsw i64 %0, 1
@@ -276,7 +272,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/ng_calc_components.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = add nsw i64 %0, -1
@@ -298,7 +294,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_pickle.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 9223372036854775807, %1
   %3 = add nuw nsw i64 %0, 6
@@ -309,7 +305,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = add nuw i64 %0, 2

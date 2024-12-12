@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
@@ -12,7 +11,7 @@ entry:
   %2 = add i64 %1, 1
   %3 = and i64 %2, %1
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

@@ -9,7 +9,7 @@
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; php/optimized/tm2unixtime.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, -2
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/tm2unixtime.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, 2
@@ -45,7 +45,7 @@ entry:
 ; openmpi/optimized/ompi_datatype_create_struct.ll
 ; postgres/optimized/xlog.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, 2
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/xlog.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, -40

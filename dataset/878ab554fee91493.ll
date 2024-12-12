@@ -1,9 +1,10 @@
 
-%"class.rocksdb::port::RWMutex.2500882" = type { %union.pthread_rwlock_t.2500883 }
-%union.pthread_rwlock_t.2500883 = type { %struct.__pthread_rwlock_arch_t.2500884 }
-%struct.__pthread_rwlock_arch_t.2500884 = type { i32, i32, i32, i32, i32, i32, i32, i32, i8, [7 x i8], i64, i32 }
+%"class.rocksdb::port::RWMutex.2616090" = type { %union.pthread_rwlock_t.2616091 }
+%union.pthread_rwlock_t.2616091 = type { %struct.__pthread_rwlock_arch_t.2616092 }
+%struct.__pthread_rwlock_arch_t.2616092 = type { i32, i32, i32, i32, i32, i32, i32, i32, i8, [7 x i8], i64, i32 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/src.ll
 ; eastl/optimized/TestFixedHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; freetype/optimized/ftbase.c.ll
@@ -16,11 +17,11 @@
 ; rocksdb/optimized/block_cache_tier_metadata.cc.ll
 ; rocksdb/optimized/volatile_tier_impl.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = urem i64 %1, %3
-  %5 = getelementptr nusw %"class.rocksdb::port::RWMutex.2500882", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.rocksdb::port::RWMutex.2616090", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -32,11 +33,11 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; openssl/optimized/libdefault-lib-pkcs12kdf.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = urem i64 %1, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

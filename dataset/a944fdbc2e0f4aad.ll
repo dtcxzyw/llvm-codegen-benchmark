@@ -112,10 +112,9 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
-; postgres/optimized/brin_xlog.ll
 ; postgres/optimized/gist.ll
 ; postgres/optimized/gistbuild.ll
 ; postgres/optimized/gistvacuum.ll

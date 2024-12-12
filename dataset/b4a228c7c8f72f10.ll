@@ -51,7 +51,7 @@ entry:
   ret i32 %4
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; bullet3/optimized/btDantzigLCP.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -63,8 +63,6 @@ entry:
 ; linux/optimized/intel_tlb.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/readdir.ll
-; linux/optimized/sky2.ll
 ; linux/optimized/xfrm_user.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/Interp.cpp.ll

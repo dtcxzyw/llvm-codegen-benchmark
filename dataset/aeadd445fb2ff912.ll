@@ -1,22 +1,22 @@
 
-; 160 occurrences:
+%struct._zend_op.2792325 = type { ptr, %union._znode_op.2792334, %union._znode_op.2792334, %union._znode_op.2792334, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2792334 = type { i32 }
+
+; 146 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/reader.cc.ll
-; arrow/optimized/table.cc.ll
 ; assimp/optimized/FindDegenerates.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
-; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx.cpp.ll
-; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/optistack_internal.cpp.ll
 ; casadi/optimized/serializing_stream.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
@@ -49,18 +49,13 @@
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
-; harfbuzz/optimized/gsubgpos-context.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
-; hermes/optimized/escape.cpp.ll
 ; hyperscan/optimized/fdr.c.ll
 ; hyperscan/optimized/ng_redundancy.cpp.ll
-; libwebp/optimized/webp_enc.c.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
-; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -85,9 +80,6 @@
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/plytool.cpp.ll
-; php/optimized/zend_inference.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -144,11 +136,9 @@
 ; quantlib/optimized/generalizedhullwhite.ll
 ; quantlib/optimized/laplaceinterpolation.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
-; sentencepiece/optimized/model_interface.cc.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
-; verilator/optimized/V3VariableOrder.cpp.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yosys/optimized/ezminisat.ll
@@ -157,7 +147,6 @@
 ; yosys/optimized/memory_dff.ll
 ; yosys/optimized/opt_muxtree.ll
 ; yosys/optimized/subcircuit.ll
-; zxing/optimized/Content.cpp.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
@@ -170,7 +159,8 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; brotli/optimized/backward_references_hq.c.ll
 ; linux/optimized/decompress_unlzo.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; Function Attrs: nounwind
@@ -179,6 +169,52 @@ entry:
   %3 = select i1 %2, i64 16, i64 24
   %4 = getelementptr i8, ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 10 occurrences:
+; arrow/optimized/table.cc.ll
+; casadi/optimized/conic.cpp.ll
+; casadi/optimized/nlpsol.cpp.ll
+; harfbuzz/optimized/gsubgpos-context.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hermes/optimized/escape.cpp.ll
+; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
+; sentencepiece/optimized/model_interface.cc.ll
+; verilator/optimized/V3VariableOrder.cpp.ll
+; zxing/optimized/Content.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(ptr %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 8, i64 0
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; php/optimized/zend_inference.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(ptr %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 -32, i64 0
+  %4 = getelementptr nusw nuw %struct._zend_op.2792325, ptr %0, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 2 occurrences:
+; libwebp/optimized/webp_enc.c.ll
+; lz4/optimized/lz4hc.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(ptr %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 5, i64 0
+  %4 = getelementptr nusw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

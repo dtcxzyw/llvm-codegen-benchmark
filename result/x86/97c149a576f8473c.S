@@ -1,47 +1,47 @@
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	movzwl	%si, %eax
-	cmpl	%edi, %eax
-	setg	%cl
+	cmpl	%eax, %edi
+	setl	%cl
 	cmpl	$-1, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	movzwl	%si, %eax
-	cmpl	%edi, %eax
-	setg	%cl
+	cmpl	%eax, %edi
+	setl	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000028a:                   # @func000000000000028a
 	movzwl	%si, %eax
-	cmpl	%edi, %eax
-	seta	%cl
+	cmpl	%eax, %edi
+	setb	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	movzwl	%si, %eax
-	cmpl	%edi, %eax
-	setg	%cl
+	cmpl	%eax, %edi
+	setl	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al
 	retq
-func000000000000014a:                   # @func000000000000014a
+func000000000000068a:                   # @func000000000000068a
 	movzwl	%si, %eax
-	cmpl	%edi, %eax
-	seta	%cl
+	cmpl	%eax, %edi
+	setb	%cl
 	testl	%edi, %edi
 	setg	%al
 	andb	%cl, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+func000000000000068c:                   # @func000000000000068c
 	movzwl	%si, %eax
-	cmpl	%edi, %eax
-	seta	%cl
+	cmpl	%eax, %edi
+	setb	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al

@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -14,13 +14,13 @@
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/InterleavedLoadCombinePass.cpp.ll
-; llvm/optimized/RISCVTargetParser.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -34,7 +34,6 @@
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
-; nuttx/optimized/fs_blockpartition.c.ll
 ; postgres/optimized/print.ll
 ; qemu/optimized/hw_riscv_numa.c.ll
 ; slurm/optimized/job_mgr.ll

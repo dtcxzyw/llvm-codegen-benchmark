@@ -9,5 +9,5 @@ func0000000000000078:                   # @func0000000000000078
 	csrwi	vxrm, 0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vaaddu.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

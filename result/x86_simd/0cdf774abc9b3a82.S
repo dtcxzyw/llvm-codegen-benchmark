@@ -1,8 +1,8 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmovqd	%ymm2, %xmm2
-	vpcmpneqd	%xmm1, %xmm2, %k1
+	vpcmpneqd	%xmm2, %xmm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

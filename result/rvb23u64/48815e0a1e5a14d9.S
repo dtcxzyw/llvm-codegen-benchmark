@@ -29,6 +29,13 @@ func0000000000000017:                   # @func0000000000000017
 	sh1add	a0, a0, a0
 	slliw	a0, a0, 1
 	ret
+func000000000000003f:                   # @func000000000000003f
+	sh2add	a0, a0, a0
+	lui	a1, 176
+	addi	a1, a1, -528
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
+	ret
 func0000000000000010:                   # @func0000000000000010
 	sh3add	a0, a0, a0
 	addiw	a0, a0, 3
@@ -47,11 +54,6 @@ func0000000000000035:                   # @func0000000000000035
 	slli	a0, a0, 3
 	li	a1, 112
 	subw	a0, a1, a0
-	ret
-func000000000000003f:                   # @func000000000000003f
-	sh1add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, 9
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sh2add	a0, a0, a0

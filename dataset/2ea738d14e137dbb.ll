@@ -67,33 +67,23 @@ define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15728640
   %3 = icmp eq i32 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 16 occurrences:
-; abc/optimized/infback.c.ll
-; abc/optimized/inflate.c.ll
-; cmake/optimized/inflate.c.ll
-; gromacs/optimized/inflate.c.ll
-; icu/optimized/utrie_swap.ll
-; libquic/optimized/infback.c.ll
-; libquic/optimized/inflate.c.ll
+; 6 occurrences:
 ; linux/optimized/inflate.ll
 ; linux/optimized/tg3.ll
-; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
-; zlib/optimized/infback.c.ll
-; zlib/optimized/inflate.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000030(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 61440
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -126,13 +116,12 @@ define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 262144
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 17 occurrences:
+; 13 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; linux/optimized/wep.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -143,16 +132,13 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
-; postgres/optimized/f2s.ll
-; postgres/optimized/f2s_shlib.ll
-; postgres/optimized/f2s_srv.ll
 ; xgboost/optimized/charconv.cc.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 33553920
-  %3 = icmp ult i32 %2, 18944
+  %3 = icmp samesign ult i32 %2, 18944
   %4 = or i1 %3, %0
   ret i1 %4
 }

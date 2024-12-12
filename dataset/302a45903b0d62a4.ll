@@ -3,7 +3,7 @@
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = icmp eq i64 %1, 0
@@ -25,10 +25,10 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = icmp ult i64 %1, 128
+  %4 = icmp samesign ult i64 %1, 128
   %5 = select i1 %4, i64 %0, i64 %3
   ret i64 %5
 }
@@ -36,10 +36,10 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = icmp ult i64 %1, 40
+  %4 = icmp samesign ult i64 %1, 40
   %5 = select i1 %4, i64 %0, i64 %3
   ret i64 %5
 }

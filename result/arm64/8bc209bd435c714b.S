@@ -1,36 +1,21 @@
 func0000000000000054:                   // @func0000000000000054
 // %bb.0:                               // %entry
-	shl	v4.2d, v4.2d, #4
-	shl	v5.2d, v5.2d, #4
-	shl	v2.2d, v2.2d, #2
-	shl	v3.2d, v3.2d, #2
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v5.2d
-	sub	v0.2d, v0.2d, v2.2d
-	sub	v1.2d, v1.2d, v3.2d
+	lsl	x8, x1, #2
+	add	x8, x8, x2, lsl #4
+	sub	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000055:                   // @func0000000000000055
 // %bb.0:                               // %entry
-	shl	v4.2d, v4.2d, #2
-	shl	v5.2d, v5.2d, #2
-	add	v2.2d, v2.2d, v2.2d
-	add	v3.2d, v3.2d, v3.2d
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v5.2d
-	sub	v0.2d, v0.2d, v2.2d
-	sub	v1.2d, v1.2d, v3.2d
+	lsl	x8, x1, #1
+	add	x8, x8, x2, lsl #2
+	sub	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	shl	v4.2d, v4.2d, #2
-	shl	v5.2d, v5.2d, #2
-	add	v2.2d, v2.2d, v2.2d
-	add	v3.2d, v3.2d, v3.2d
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v5.2d
-	sub	v0.2d, v0.2d, v2.2d
-	sub	v1.2d, v1.2d, v3.2d
+	lsl	x8, x1, #1
+	add	x8, x8, x2, lsl #2
+	sub	x0, x0, x8
 	ret
                                         // -- End function

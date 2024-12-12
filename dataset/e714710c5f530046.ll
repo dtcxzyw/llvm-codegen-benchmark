@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 27 occurrences:
 ; abc/optimized/acecCover.c.ll
 ; arrow/optimized/float16.cc.ll
 ; cpython/optimized/compile.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/gup.ll
 ; linux/optimized/rmap.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -26,11 +25,10 @@
 ; ruby/optimized/rational.ll
 ; ruby/optimized/vm.ll
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/isa_parser.ll
 ; wasmtime-rs/optimized/3swlmlzz83rbbf1u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = icmp eq i64 %2, 10
@@ -62,7 +60,7 @@ entry:
 ; spike/optimized/sc_d.ll
 ; spike/optimized/sc_w.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp ne i64 %2, 0
@@ -103,7 +101,7 @@ entry:
 ; spike/optimized/s_mulAddF32.ll
 ; spike/optimized/s_mulAddF64.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1073741823
   %3 = icmp eq i64 %2, 0
@@ -113,15 +111,13 @@ entry:
   ret i1 %6
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cvc5/optimized/sat_proof_manager.cpp.ll
-; freetype/optimized/ftbase.c.ll
 ; git/optimized/revision.ll
 ; linux/optimized/generic.ll
 ; linux/optimized/mprotect.ll
 ; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
@@ -141,7 +137,7 @@ entry:
 ; spike/optimized/csrs.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
   %3 = icmp ne i64 %2, 2
@@ -157,28 +153,12 @@ entry:
 ; spike/optimized/cm_popretz.ll
 ; spike/optimized/cm_push.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000198(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 16
   %3 = icmp ne i64 %2, 0
   %4 = and i64 %0, 15
-  %5 = icmp ugt i64 %4, 6
-  %6 = and i1 %5, %3
-  ret i1 %6
-}
-
-; 4 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f64_to_i32_r_minMag.ll
-; spike/optimized/s_addMagsF32.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 2047
-  %3 = icmp eq i64 %2, 1054
-  %4 = and i64 %0, 4503599625273344
-  %5 = icmp eq i64 %4, 0
+  %5 = icmp samesign ugt i64 %4, 6
   %6 = and i1 %5, %3
   ret i1 %6
 }

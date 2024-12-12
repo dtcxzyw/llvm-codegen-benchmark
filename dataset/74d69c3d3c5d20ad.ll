@@ -27,9 +27,8 @@ entry:
   ret i32 %3
 }
 
-; 249 occurrences:
+; 247 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
-; gromacs/optimized/domdec_network.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; gromacs/optimized/pullutil.cpp.ll
@@ -155,7 +154,6 @@ entry:
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -299,17 +297,6 @@ entry:
   %1 = sdiv exact i64 %0, 40
   %2 = trunc i64 %1 to i32
   %3 = mul nsw i32 %2, 3
-  ret i32 %3
-}
-
-; 1 occurrences:
-; nuttx/optimized/lib_strftime.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i64 %0) #0 {
-entry:
-  %1 = sdiv i64 %0, 3600
-  %2 = trunc i64 %1 to i32
-  %3 = mul nsw i32 %2, 100
   ret i32 %3
 }
 

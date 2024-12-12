@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; hdf5/optimized/H5Cimage.c.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000001a(i32 %0, i8 %1) #0 {
+define i8 @func000000000000002a(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = or disjoint i8 %2, 2
@@ -16,7 +16,7 @@ entry:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = or disjoint i8 %2, 16

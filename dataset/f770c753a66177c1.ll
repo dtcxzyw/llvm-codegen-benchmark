@@ -10,7 +10,7 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000058c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -23,7 +23,7 @@ entry:
 ; libquic/optimized/d1_srvr.c.ll
 ; libquic/optimized/s3_srvr.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -37,7 +37,7 @@ entry:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000042c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 0

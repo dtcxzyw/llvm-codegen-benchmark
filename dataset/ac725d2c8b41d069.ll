@@ -1,5 +1,5 @@
 
-; 99 occurrences:
+; 100 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/sfmDec.c.ll
+; boost/optimized/alloc_lib.ll
 ; jemalloc/optimized/extent_dss.ll
 ; jemalloc/optimized/extent_dss.pic.ll
 ; jemalloc/optimized/extent_dss.sym.ll

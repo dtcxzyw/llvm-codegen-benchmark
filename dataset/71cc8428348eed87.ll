@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; linux/optimized/thermal_lib.ll
+; 4 occurrences:
 ; llvm/optimized/AnalyzerOptions.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; llvm/optimized/VFABIDemangler.cpp.ll
@@ -24,7 +23,7 @@ entry:
 ; wireshark/optimized/scsi_service_response_time_dialog.cpp.ll
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0) #0 {
+define i32 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 2147483648
   %2 = icmp ult i64 %1, 4294967296

@@ -15,14 +15,14 @@
 ; abc/optimized/ifMap.c.ll
 ; spike/optimized/debug_module.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %0, i1 true, i1 %2
   ret i1 %3
 }
 
-; 77 occurrences:
+; 75 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -86,7 +86,6 @@ entry:
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/lpkMulti.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/nwkBidec.c.ll
@@ -94,21 +93,20 @@ entry:
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; abc/optimized/sbdSat.c.ll
-; abc/optimized/sfmCnf.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sfmLib.c.ll
 ; abc/optimized/sfmNtk.c.ll
 ; abc/optimized/sfmSat.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 31
   %3 = select i1 %0, i1 true, i1 %2
   ret i1 %3
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -125,11 +123,12 @@ entry:
 ; abc/optimized/kitPla.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/rsbDec6.c.ll
+; abc/optimized/sfmCnf.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; spike/optimized/debug_module.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 31
   %not. = xor i1 %0, true
@@ -151,7 +150,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %0, i1 true, i1 %2

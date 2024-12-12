@@ -13,7 +13,7 @@
 	.short	2048                            # 0x800
 	.short	2048                            # 0x800
 	.short	2048                            # 0x800
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [2,2,2,2,2,2,2,2]
@@ -37,7 +37,7 @@ func0000000000000011:                   # @func0000000000000011
 	.short	829                             # 0x33d
 	.short	829                             # 0x33d
 	.short	829                             # 0x33d
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [256,256,256,256,256,256,256,256]

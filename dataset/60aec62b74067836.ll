@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 52 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; git/optimized/merge-ort.ll
@@ -33,12 +33,15 @@
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; opencv/optimized/demosaicing.cpp.ll
+; openjdk/optimized/hb-face-builder.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; qemu/optimized/hw_ide_atapi.c.ll
 ; qemu/optimized/hw_pci_msi.c.ll
@@ -57,7 +60,7 @@ entry:
   ret i16 %2
 }
 
-; 676 occurrences:
+; 678 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
@@ -115,7 +118,6 @@ entry:
 ; libwebp/optimized/lossless_enc_sse2.c.ll
 ; libwebp/optimized/lossless_enc_sse41.c.ll
 ; lief/optimized/RelocationEntry.cpp.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/bdev.ll
 ; linux/optimized/ehci-hcd.ll
@@ -451,7 +453,6 @@ entry:
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -615,6 +616,10 @@ entry:
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_spinbox.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; minetest/optimized/map.cpp.ll
@@ -784,12 +789,17 @@ entry:
   ret i16 %2
 }
 
-; 5 occurrences:
+; 10 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; linux/optimized/drm_edid.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000e(i32 %0) #0 {
 entry:
@@ -798,11 +808,10 @@ entry:
   ret i16 %2
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; clamav/optimized/kwajd.c.ll
 ; icu/optimized/ucharstrieiterator.ll
 ; lief/optimized/ssl_tls.c.ll
-; linux/optimized/i8237.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/pci.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
@@ -827,7 +836,7 @@ entry:
 ; llvm/optimized/LLParser.cpp.ll
 ; luajit/optimized/lj_opt_narrow.ll
 ; luajit/optimized/lj_opt_narrow_dyn.ll
-; openmpi/optimized/libmpi_c_profile_la-type_match_size.ll
+; luau/optimized/IrLoweringA64.cpp.ll
 ; openmpi/optimized/ptype_match_size_f.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; Function Attrs: nounwind

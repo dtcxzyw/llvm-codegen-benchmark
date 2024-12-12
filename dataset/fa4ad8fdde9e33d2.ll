@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Disassembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = trunc nuw i64 %1 to i32
@@ -62,18 +62,6 @@ entry:
   %4 = zext i16 %1 to i32
   %5 = add i32 %4, %3
   %6 = icmp ne i32 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; hyperscan/optimized/mcclellancompile.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000b8(i32 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = trunc nuw i64 %1 to i32
-  %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 

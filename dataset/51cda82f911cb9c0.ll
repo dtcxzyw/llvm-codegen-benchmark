@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -7,6 +7,7 @@
 ; meshoptimizer/optimized/vcacheanalyzer.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/dpxinput.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, i32 %2) #0 {
 entry:

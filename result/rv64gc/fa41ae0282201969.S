@@ -86,12 +86,6 @@ func00000000000001a6:                   # @func00000000000001a6
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func0000000000000110:                   # @func0000000000000110
-	fmv.w.x	fa5, zero
-	feq.s	a0, fa0, fa5
-	feq.s	a1, fa0, fa1
-	or	a0, a0, a1
-	ret
 func00000000000000a6:                   # @func00000000000000a6
 	fle.s	a0, fa0, fa1
 	fmv.w.x	fa5, zero

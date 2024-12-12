@@ -1,4 +1,4 @@
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	testl	%edx, %edx
 	sets	%cl
 	orb	%dil, %cl
@@ -6,7 +6,7 @@ func000000000000006c:                   # @func000000000000006c
 	setne	%al
 	orb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	cmpl	$-1, %edx
 	sete	%cl
 	orb	%dil, %cl
@@ -14,7 +14,7 @@ func000000000000001c:                   # @func000000000000001c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	testl	%edx, %edx
 	sets	%cl
 	orb	%dil, %cl
@@ -22,7 +22,7 @@ func0000000000000061:                   # @func0000000000000061
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	testl	%edx, %edx
 	setle	%cl
 	orb	%dil, %cl
@@ -30,7 +30,7 @@ func000000000000006a:                   # @func000000000000006a
 	setg	%al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testl	%edx, %edx
 	sete	%cl
 	orb	%dil, %cl
@@ -38,7 +38,7 @@ func0000000000000011:                   # @func0000000000000011
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	testl	%edx, %edx
 	sete	%cl
 	orb	%dil, %cl
@@ -46,15 +46,7 @@ func0000000000000016:                   # @func0000000000000016
 	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
-	testl	%edx, %edx
-	sete	%cl
-	orb	%dil, %cl
-	cmpl	%edx, %esi
-	seta	%al
-	orb	%cl, %al
-	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	testl	%edx, %edx
 	setle	%cl
 	orb	%dil, %cl

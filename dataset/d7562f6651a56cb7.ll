@@ -20,7 +20,7 @@
 ; ruby/optimized/time.ll
 ; velox/optimized/StackTrace.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 3801
   %3 = icmp eq i64 %0, 4
@@ -28,16 +28,15 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; abseil-cpp/optimized/numbers_test.cc.ll
+; 3 occurrences:
 ; openssl/optimized/clienthellotest-bin-clienthellotest.ll
 ; openssl/optimized/servername_test-bin-servername_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -9
-  %3 = icmp ugt i64 %0, 3
+  %3 = icmp samesign ugt i64 %0, 3
   %4 = select i1 %3, i64 %2, i64 %0
   ret i64 %4
 }
@@ -96,7 +95,7 @@ entry:
 ; folly/optimized/IOBuf.cpp.ll
 ; quantlib/optimized/matrix.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 96
   %3 = icmp eq i64 %0, 0
@@ -111,7 +110,7 @@ entry:
 ; openjdk/optimized/tableStatistics.ll
 ; slurm/optimized/backfill.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1000000000
   %3 = icmp eq i64 %0, 0
@@ -126,6 +125,17 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -64
   %3 = icmp ugt i64 %0, 4096
+  %4 = select i1 %3, i64 %2, i64 %0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/numbers_test.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -1
+  %3 = icmp ugt i64 %0, 100
   %4 = select i1 %3, i64 %2, i64 %0
   ret i64 %4
 }

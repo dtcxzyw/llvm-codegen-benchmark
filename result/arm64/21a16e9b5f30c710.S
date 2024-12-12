@@ -1,31 +1,16 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	cmeq	v4.4s, v4.4s, #0
-	cmeq	v5.4s, v5.4s, #0
-	and	v3.16b, v3.16b, v5.16b
-	and	v2.16b, v2.16b, v4.16b
-	mvn	v2.16b, v2.16b
-	mvn	v3.16b, v3.16b
-	sub	v0.4s, v0.4s, v2.4s
-	sub	v1.4s, v1.4s, v3.4s
+	tst	w2, #0x1
+	csel	w8, w1, wzr, eq
+	add	w8, w0, w8
+	add	w0, w8, #1
 	ret
                                         // -- End function
-func0000000000000045:                   // @func0000000000000045
+func0000000000000145:                   // @func0000000000000145
 // %bb.0:                               // %entry
-	movi	v6.4s, #1, lsl #8
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	movi	v6.4s, #128
-	cmeq	v4.4s, v4.4s, #0
-	cmeq	v5.4s, v5.4s, #0
-	add	v0.4s, v0.4s, v6.4s
-	add	v1.4s, v1.4s, v6.4s
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v5.16b
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	tst	w2, #0x100
+	csel	w8, w1, wzr, eq
+	add	w8, w8, w0
+	add	w0, w8, #128
 	ret
                                         // -- End function

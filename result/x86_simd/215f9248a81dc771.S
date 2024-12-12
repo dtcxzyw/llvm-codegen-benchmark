@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000010e:                   # @func000000000000010e
+func000000000000030e:                   # @func000000000000030e
 	vpcmpnleub	.LCPI0_0(%rip), %xmm2, %k0
 	vpmovm2d	%k0, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1

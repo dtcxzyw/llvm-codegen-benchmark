@@ -19,6 +19,12 @@ func000000000000000c:                   # @func000000000000000c
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func0000000000000008:                   # @func0000000000000008
+	sext.w	a2, a2
+	sltiu	a2, a2, -2
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func0000000000000010:                   # @func0000000000000010
 	sext.w	a2, a2
 	lui	a3, 32768
@@ -33,9 +39,17 @@ func0000000000000014:                   # @func0000000000000014
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	sext.w	a2, a2
-	sltiu	a2, a2, -10
+	sltiu	a2, a2, 2
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000030:                   # @func0000000000000030
+	sext.w	a2, a2
+	lui	a3, 1
+	addiw	a3, a3, 420
+	sltu	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

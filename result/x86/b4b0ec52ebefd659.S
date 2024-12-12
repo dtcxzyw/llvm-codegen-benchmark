@@ -26,21 +26,21 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rax, %rdx
 	seta	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	subq	%rdx, %rsi
 	addq	$16, %rsi
 	movslq	%edi, %rax
 	cmpq	%rax, %rsi
 	setg	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	subq	%rdx, %rsi
 	incq	%rsi
 	movslq	%edi, %rax
 	cmpq	%rax, %rsi
 	setl	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	subq	%rdx, %rsi
 	incq	%rsi
 	movslq	%edi, %rax

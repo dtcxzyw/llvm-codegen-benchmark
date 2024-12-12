@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 69 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -40,6 +40,7 @@
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; ncnn/optimized/gridsample_x86.cpp.ll
 ; ncnn/optimized/gridsample_x86_avx.cpp.ll

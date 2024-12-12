@@ -29,18 +29,18 @@ entry:
 ; luajit/optimized/lj_snap_dyn.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 26
   %3 = and i32 %0, 63
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = and i32 %0, 85
@@ -54,18 +54,18 @@ entry:
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = and i32 %0, 15
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 3
   %3 = and i32 %0, 1
@@ -76,11 +76,11 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %0, 65534
-  %4 = icmp uge i32 %3, %2
+  %4 = icmp samesign uge i32 %3, %2
   ret i1 %4
 }
 

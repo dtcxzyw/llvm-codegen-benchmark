@@ -1,5 +1,5 @@
 
-; 86 occurrences:
+; 90 occurrences:
 ; abc/optimized/cuddLCache.c.ll
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
 ; arrow/optimized/message.cc.ll
@@ -85,6 +85,10 @@
 ; wasmtime-rs/optimized/11ww7ts55o8z8j6m.ll
 ; wasmtime-rs/optimized/27y5mf4j2qnj7fax.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
@@ -133,11 +137,11 @@ define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 19 occurrences:
+; 23 occurrences:
 ; brotli/optimized/metablock.c.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
@@ -155,6 +159,10 @@ entry:
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
@@ -193,7 +201,7 @@ entry:
   ret i64 %4
 }
 
-; 97 occurrences:
+; 100 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -213,7 +221,6 @@ entry:
 ; libzmq/optimized/radix_tree.cpp.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/compat_binfmt_elf.ll
-; linux/optimized/gcm.ll
 ; linux/optimized/intel_gsc_fw.ll
 ; linux/optimized/intel_uc_fw.ll
 ; linux/optimized/mlme.ll
@@ -290,6 +297,10 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
@@ -300,7 +311,7 @@ entry:
   ret i64 %4
 }
 
-; 59 occurrences:
+; 57 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
@@ -310,7 +321,6 @@ entry:
 ; cvc5/optimized/term_formula_removal.cpp.ll
 ; cvc5/optimized/theory_preprocessor.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; flac/optimized/operations_shorthand_seektable.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; hdf5/optimized/H5Dchunk.c.ll
 ; hermes/optimized/Runtime.cpp.ll
@@ -335,7 +345,6 @@ entry:
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/ELFAttributeParser.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -427,12 +436,10 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
-; linux/optimized/hwvalid.ll
 ; linux/optimized/i915_scatterlist.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; opencv/optimized/lapack.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -501,7 +508,7 @@ define i64 @func000000000000001e(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nuw nsw i64 %2, 250
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

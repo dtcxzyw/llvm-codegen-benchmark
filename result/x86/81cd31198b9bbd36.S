@@ -5,6 +5,6 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movq	%rdi, %rax
-	shrq	$52, %rax
-	andl	$2047, %eax                     # imm = 0x7FF
+	shrl	$2, %eax
+	andl	$1, %eax
 	retq

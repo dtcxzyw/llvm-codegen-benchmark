@@ -6,7 +6,7 @@ func0000000000000006:                   # @func0000000000000006
 	setle	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	movl	$8, %eax
+	movl	$360, %eax                      # imm = 0x168
 	xorl	%edx, %edx
 	idivl	%edi
 	testl	%eax, %eax

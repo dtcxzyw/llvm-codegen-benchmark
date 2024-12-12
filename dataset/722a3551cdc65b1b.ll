@@ -25,13 +25,13 @@
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/ToolChain.cpp.ll
+; lvgl/optimized/lv_grid.ll
 ; ocio/optimized/OCIOYaml.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/deriv.cpp.ll
 ; openjdk/optimized/Net.ll
-; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/invocationCounter.ll
 ; openjdk/optimized/javaClasses.ll
 ; openspiel/optimized/SolverIF.cpp.ll
@@ -67,36 +67,29 @@
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i32 5, i32 %0
   ret i32 %5
 }
 
-; 9 occurrences:
-; clamav/optimized/unpack.cpp.ll
-; delta-rs/optimized/3qkwqfk85qralejq.ll
-; delta-rs/optimized/43y2svfstmvqcl15.ll
-; hermes/optimized/HBC.cpp.ll
+; 4 occurrences:
 ; jq/optimized/regcomp.ll
 ; oniguruma/optimized/regcomp.ll
-; openjdk/optimized/invocationCounter.ll
 ; ruby/optimized/regcomp.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 50
+  %3 = icmp samesign ugt i32 %2, 50
   %4 = and i1 %3, %1
   %5 = select i1 %4, i32 5, i32 %0
   ret i32 %5
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/gzwrite.c.ll
 ; cvc5/optimized/sygus_unif_strat.cpp.ll
-; delta-rs/optimized/3qkwqfk85qralejq.ll
-; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; git/optimized/stash.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -115,6 +108,7 @@ entry:
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openblas/optimized/cblas_dimatcopy.c.ll
 ; openjdk/optimized/method.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
@@ -142,12 +136,13 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; icu/optimized/csrucode.ll
 ; icu/optimized/number_decimalquantity.ll
 ; jq/optimized/main.ll
 ; linux/optimized/blk-rq-qos.ll
 ; llvm/optimized/EarlyIfConversion.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; opencv/optimized/deriv.cpp.ll
 ; openjdk/optimized/addnode.ll
 ; openspiel/optimized/SolverIF.cpp.ll
@@ -165,6 +160,18 @@ entry:
   ret i32 %5
 }
 
+; 2 occurrences:
+; clamav/optimized/unpack.cpp.ll
+; openjdk/optimized/invocationCounter.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 1
+  %4 = and i1 %1, %3
+  %5 = select i1 %4, i32 2, i32 %0
+  ret i32 %5
+}
+
 ; 9 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/smpdtfmt.ll
@@ -179,34 +186,42 @@ entry:
 define i32 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i32 2147483647, i32 %0
   ret i32 %5
 }
 
-; 16 occurrences:
-; cmake/optimized/idna.c.ll
+; 12 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; flac/optimized/stream_encoder.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hermes/optimized/HBC.cpp.ll
 ; libjpeg-turbo/optimized/rdswitch.c.ll
-; libuv/optimized/idna.c.ll
-; linux/optimized/cipso_ipv4.ll
-; linux/optimized/page_alloc.ll
 ; llvm/optimized/FunctionImportUtils.cpp.ll
 ; llvm/optimized/OpenMPKinds.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; node/optimized/idna.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -1056768
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i32 65533, i32 %0
+  ret i32 %5
+}
+
+; 2 occurrences:
+; linux/optimized/cipso_ipv4.ll
+; linux/optimized/page_alloc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 4
+  %4 = and i1 %3, %1
+  %5 = select i1 %4, i32 0, i32 %0
   ret i32 %5
 }
 

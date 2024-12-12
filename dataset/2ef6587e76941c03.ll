@@ -1,43 +1,23 @@
 
-; 173 occurrences:
+; 136 occurrences:
 ; abc/optimized/abcPrint.c.ll
-; abc/optimized/bblif.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abseil-cpp/optimized/demangle.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
-; assimp/optimized/LWOMaterial.cpp.ll
 ; assimp/optimized/cencode.c.ll
-; assimp/optimized/glTF2Importer.cpp.ll
-; c3c/optimized/parse_expr.c.ll
+; boost/optimized/numeric.ll
+; boost/optimized/src.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/clamdcom.c.ll
 ; clamav/optimized/communication.c.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/pdfng.c.ll
 ; clamav/optimized/phishcheck.c.ll
-; clamav/optimized/readdb.c.ll
 ; clamav/optimized/upack.c.ll
-; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/hex.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
-; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
-; crow/optimized/example.cpp.ll
-; crow/optimized/example_blueprint.cpp.ll
-; crow/optimized/example_catchall.cpp.ll
-; crow/optimized/example_chat.cpp.ll
-; crow/optimized/example_cookies.cpp.ll
-; crow/optimized/example_cors.cpp.ll
-; crow/optimized/example_file_upload.cpp.ll
-; crow/optimized/example_json_map.cpp.ll
-; crow/optimized/example_middleware.cpp.ll
-; crow/optimized/example_session.cpp.ll
-; crow/optimized/example_static_file.cpp.ll
-; crow/optimized/example_ws.cpp.ll
-; crow/optimized/helloworld.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; eastl/optimized/EASprintfCore.cpp.ll
-; flatbuffers/optimized/idl_parser.cpp.ll
 ; git/optimized/attr.ll
 ; git/optimized/diff.ll
 ; git/optimized/dir.ll
@@ -46,7 +26,6 @@
 ; git/optimized/reader.ll
 ; git/optimized/setup.ll
 ; git/optimized/writer.ll
-; graphviz/optimized/pathpath.c.ll
 ; graphviz/optimized/sfprint.c.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
@@ -70,7 +49,6 @@
 ; jq/optimized/sjis.ll
 ; jq/optimized/utf8.ll
 ; libdeflate/optimized/deflate_compress.c.ll
-; libquic/optimized/conf.c.ll
 ; libquic/optimized/deflate.c.ll
 ; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/s3_srvr.c.ll
@@ -84,7 +62,6 @@
 ; llvm/optimized/PrintfFormatString.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
@@ -98,16 +75,15 @@
 ; luau/optimized/lnumprint.cpp.ll
 ; luau/optimized/lutf8lib.cpp.ll
 ; lz4/optimized/lz4.c.ll
-; lz4/optimized/lz4hc.c.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; nanosvg/optimized/nanosvg.ll
 ; ninja/optimized/depfile_parser.cc.ll
-; nix/optimized/lexer-tab.ll
 ; oiio/optimized/strutil.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; oniguruma/optimized/sjis.ll
 ; oniguruma/optimized/utf8.ll
+; opencv/optimized/grfmt_pxm.cpp.ll
 ; opencv/optimized/persistence_xml.cpp.ll
 ; opencv/optimized/persistence_yml.cpp.ll
 ; openexr/optimized/ImfPizCompressor.cpp.ll
@@ -117,18 +93,9 @@
 ; openjdk/optimized/classListParser.ll
 ; openjdk/optimized/compactHashtable.ll
 ; openjdk/optimized/jni_util.ll
-; openjdk/optimized/jvmciCodeInstaller.ll
 ; openjdk/optimized/signature.ll
-; openmpi/optimized/keyval_lex.ll
-; openmpi/optimized/libmpi_fortran_base_la-strings.ll
-; openmpi/optimized/show_help_lex.ll
-; openssl/optimized/libcrypto-lib-conf_mod.ll
-; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-lib-txt_db.ll
-; openssl/optimized/libcrypto-shlib-conf_mod.ll
-; openssl/optimized/libcrypto-shlib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-txt_db.ll
-; openssl/optimized/loader_attic-dso-e_loader_attic.ll
 ; openusd/optimized/lz4.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; pbrt-v4/optimized/display.cpp.ll
@@ -150,7 +117,6 @@
 ; protobuf/optimized/message_lite.cc.ll
 ; protobuf/optimized/parse_context.cc.ll
 ; protobuf/optimized/wire_format.cc.ll
-; recastnavigation/optimized/fastlz.c.ll
 ; redis/optimized/hyperloglog.ll
 ; redis/optimized/rax.ll
 ; ruby/optimized/cesu_8.ll
@@ -164,28 +130,28 @@
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; yosys/optimized/ast.ll
-; yosys/optimized/fastlz.ll
 ; yosys/optimized/fstapi.ll
-; yosys/optimized/lz4.ll
 ; z3/optimized/sat_drat.cpp.ll
 ; zstd/optimized/zstd_double_fast.c.ll
-; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000020(i64 %0, ptr %1) #0 {
+define i32 @func0000000000000030(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }
 
-; 62 occurrences:
+; 65 occurrences:
 ; cpython/optimized/io.ll
 ; cpython/optimized/lexer.ll
+; git/optimized/scalar.ll
+; git/optimized/sequencer.ll
+; graphviz/optimized/scan.c.ll
 ; linux/optimized/auditsc.ll
 ; linux/optimized/auth_gss.ll
 ; linux/optimized/base.ll
@@ -204,7 +170,6 @@ entry:
 ; linux/optimized/namei.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/netdev-genl.ll
-; linux/optimized/netlabel_calipso.ll
 ; linux/optimized/netlabel_cipso_v4.ll
 ; linux/optimized/netlabel_mgmt.ll
 ; linux/optimized/netlabel_unlabeled.ll
@@ -246,6 +211,7 @@ entry:
 ; wireshark/optimized/packet-osc.c.ll
 ; wireshark/optimized/packet-quakeworld.c.ll
 ; wireshark/optimized/packet-wcp.c.ll
+; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
@@ -263,9 +229,9 @@ entry:
 ; oniguruma/optimized/regenc.ll
 ; ruby/optimized/emacs_mule.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, ptr %1) #0 {
+define i32 @func0000000000000031(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = trunc nsw i64 %4 to i32
@@ -281,6 +247,67 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = trunc nsw i64 %4 to i32
+  ret i32 %5
+}
+
+; 50 occurrences:
+; abc/optimized/bblif.c.ll
+; assimp/optimized/LWOMaterial.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; c3c/optimized/parse_expr.c.ll
+; clamav/optimized/readdb.c.ll
+; cmake/optimized/frm_driver.c.ll
+; cmake/optimized/zstd_double_fast.c.ll
+; cmake/optimized/zstd_fast.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
+; eastl/optimized/EASprintfCore.cpp.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
+; git/optimized/object-name.ll
+; graphviz/optimized/pathpath.c.ll
+; icu/optimized/decNumber.ll
+; libquic/optimized/conf.c.ll
+; llvm/optimized/Lexer.cpp.ll
+; llvm/optimized/LiteralSupport.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; lz4/optimized/lz4.c.ll
+; lz4/optimized/lz4hc.c.ll
+; nix/optimized/lexer-tab.ll
+; openjdk/optimized/jvmciCodeInstaller.ll
+; openmpi/optimized/keyval_lex.ll
+; openmpi/optimized/libmpi_fortran_base_la-strings.ll
+; openmpi/optimized/show_help_lex.ll
+; openssl/optimized/libcrypto-lib-conf_mod.ll
+; openssl/optimized/libcrypto-lib-pem_lib.ll
+; openssl/optimized/libcrypto-shlib-conf_mod.ll
+; openssl/optimized/libcrypto-shlib-pem_lib.ll
+; openssl/optimized/loader_attic-dso-e_loader_attic.ll
+; openusd/optimized/lz4.cpp.ll
+; recastnavigation/optimized/fastlz.c.ll
+; yosys/optimized/fastlz.ll
+; yosys/optimized/lz4.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_fast.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000020(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -11
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = trunc i64 %4 to i32
   ret i32 %5
 }
 
@@ -300,9 +327,9 @@ entry:
 ; hyperscan/optimized/mpvcompile.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i64 %0, ptr %1) #0 {
+define i32 @func0000000000000032(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 2
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 2
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = trunc nuw i64 %4 to i32

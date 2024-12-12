@@ -9,17 +9,21 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movabsq	$288230376151711680, %rax       # imm = 0x3FFFFFFFFFFFFC0
-	andq	%rsi, %rax
-	cmpq	$129, %rax
+func0000000000000014:                   # @func0000000000000014
+	movzbl	%sil, %eax
+	cmpl	$31, %eax
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movzbl	%sil, %eax
+	cmpl	$3, %eax
 	setae	%al
 	andb	%dil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	movabsq	$17179869176, %rax              # imm = 0x3FFFFFFF8
-	andq	%rsi, %rax
-	cmpq	$8193, %rax                     # imm = 0x2001
+	andq	$-2, %rsi
+	cmpq	$4097, %rsi                     # imm = 0x1001
 	setb	%al
 	andb	%dil, %al
 	retq

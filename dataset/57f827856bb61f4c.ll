@@ -1,31 +1,31 @@
 
-%struct.Entry.2549151 = type { %"class.mold::LittleEndian.2549086", %"class.mold::LittleEndian.2549086" }
-%"class.mold::LittleEndian.2549086" = type { [4 x i8] }
-%"struct.V3NumberData::ValueAndX.2636811" = type { i32, i32 }
-%struct.aiFace.2712966 = type { i32, ptr }
-%struct.scsi_lun.3354788 = type { [8 x i8] }
+%struct.Entry.2663543 = type { %"class.mold::LittleEndian.2663478", %"class.mold::LittleEndian.2663478" }
+%"class.mold::LittleEndian.2663478" = type { [4 x i8] }
+%"struct.V3NumberData::ValueAndX.2750129" = type { i32, i32 }
+%struct.aiFace.2825500 = type { i32, ptr }
+%struct.scsi_lun.3542285 = type { [8 x i8] }
 
 ; 1 occurrences:
 ; mold/optimized/arch-arm32.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %struct.Entry.2549151, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr nusw nuw %struct.Entry.2663543, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/codeBuffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000065(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e5(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp uge ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ule ptr %0, %5
   ret i1 %6
 }
 
@@ -80,12 +80,12 @@ entry:
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %"struct.V3NumberData::ValueAndX.2636811", ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr %"struct.V3NumberData::ValueAndX.2750129", ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -93,12 +93,12 @@ entry:
 ; draco/optimized/direct_bit_decoder.cc.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -130,12 +130,12 @@ entry:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %struct.aiFace.2712966, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw %struct.aiFace.2825500, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -146,36 +146,36 @@ entry:
 ; abc/optimized/amapRead.c.ll
 ; luajit/optimized/minilua.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 12
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 26
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %1, i64 %4
-  %6 = icmp ne ptr %5, %0
+  %5 = getelementptr nusw nuw ptr, ptr %1, i64 %4
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/scsi_scan.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.scsi_lun.3354788, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
+  %5 = getelementptr %struct.scsi_lun.3542285, ptr %1, i64 %4
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -184,12 +184,12 @@ entry:
 ; postgres/optimized/ascii.ll
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 

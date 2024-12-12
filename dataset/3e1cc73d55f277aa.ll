@@ -1,5 +1,5 @@
 
-; 97 occurrences:
+; 93 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/giaIso.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -34,12 +34,10 @@
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
@@ -82,7 +80,6 @@
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
-; postgres/optimized/rangetypes_gist.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
@@ -93,7 +90,6 @@
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_bcd.cpp.ll
 ; z3/optimized/smtfd_solver.cpp.ll
@@ -102,7 +98,7 @@ define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 27
   %3 = and i32 %2, 2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -122,7 +118,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 24 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; linux/optimized/drm_file.ll
@@ -130,13 +126,28 @@ entry:
 ; linux/optimized/drm_ioctl.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 27
-  %3 = and i32 %2, 3
+  %2 = lshr i32 %1, 3
+  %3 = and i32 %2, 15
   %4 = or i32 %3, %0
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -149,7 +160,7 @@ define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = and i32 %2, 262143
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

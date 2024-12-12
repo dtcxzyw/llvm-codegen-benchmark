@@ -3,16 +3,15 @@
 ; opencv/optimized/softfloat.cpp.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = icmp eq i32 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 32 occurrences:
-; freetype/optimized/cff.c.ll
+; 31 occurrences:
 ; icu/optimized/ubidi.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/drm_atomic_helper.ll
@@ -53,14 +52,12 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/intel_crtc.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_display_device.ll
 ; linux/optimized/intel_fbc.ll
 ; linux/optimized/intel_pch.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/tty_audit.ll
 ; linux/optimized/virtio_ring.ll
@@ -83,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2139095040
   %3 = icmp ne i32 %2, 2139095040

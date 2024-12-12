@@ -1,9 +1,9 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andl	%edx, %esi
 	addl	%esi, %esi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	andl	%edx, %esi
 	addl	%esi, %esi
 	leaq	(%rdi,%rsi,4), %rax

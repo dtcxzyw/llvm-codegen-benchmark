@@ -22,12 +22,12 @@
 ; mitsuba3/optimized/batch.cpp.ll
 ; mitsuba3/optimized/multijitter.cpp.ll
 ; openssl/optimized/libdefault-lib-argon2.ll
+; pbrt-v4/optimized/pspec.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; slurm/optimized/gres.ll
 ; wireshark/optimized/dot11decrypt_util.c.ll
 ; wireshark/optimized/packet-tipc.c.ll
 ; xgboost/optimized/quantile_obj.cc.ll
-; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

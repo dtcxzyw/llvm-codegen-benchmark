@@ -1,59 +1,31 @@
 func000000000000003e:                   // @func000000000000003e
 // %bb.0:                               // %entry
-	shl	v3.4s, v3.4s, #16
-	shl	v2.4s, v2.4s, #16
-	shl	v1.4s, v1.4s, #8
-	shl	v0.4s, v0.4s, #8
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	movi	v2.4s, #63
-	ushr	v1.4s, v1.4s, #12
-	ushr	v0.4s, v0.4s, #12
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
+	lsl	w8, w0, #8
+	orr	w8, w8, w1, lsl #16
+	ubfx	w0, w8, #12, #6
 	ret
                                         // -- End function
 func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
-	movi	v1.2d, #0x0000ff000000ff
-	and	v0.16b, v2.16b, v1.16b
-	and	v1.16b, v3.16b, v1.16b
+	and	w0, w1, #0xff
 	ret
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	shl	v2.4s, v2.4s, #8
-	shl	v3.4s, v3.4s, #8
-	movi	v4.4s, #15, msl #8
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	and	v0.16b, v0.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
+	orr	w8, w0, w1, lsl #8
+	and	w0, w8, #0xfff
 	ret
                                         // -- End function
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	ushr	v1.4s, v1.4s, #7
-	ushr	v0.4s, v0.4s, #7
-	movi	v4.4s, #15
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	and	v0.16b, v0.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
+	orr	w8, w1, w0, lsr #7
+	and	w0, w8, #0xf
 	ret
                                         // -- End function
 func0000000000000032:                   // @func0000000000000032
 // %bb.0:                               // %entry
-	shl	v3.4s, v3.4s, #13
-	shl	v2.4s, v2.4s, #13
-	shl	v1.4s, v1.4s, #29
-	shl	v0.4s, v0.4s, #29
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	movi	v2.4s, #127, msl #8
-	ushr	v1.4s, v1.4s, #15
-	ushr	v0.4s, v0.4s, #15
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
+	lsl	w8, w0, #29
+	orr	w8, w8, w1, lsl #13
+	ubfx	w0, w8, #15, #15
 	ret
                                         // -- End function

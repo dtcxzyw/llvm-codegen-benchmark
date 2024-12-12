@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
+; freetype/optimized/type1.c.ll
 ; openjdk/optimized/cmsnamed.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
@@ -12,8 +13,10 @@ entry:
   ret i8 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:

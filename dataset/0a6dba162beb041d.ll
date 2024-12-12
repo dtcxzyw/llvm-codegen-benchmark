@@ -40,7 +40,7 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul i32 %3, -1640531527
   ret i32 %4
 }
@@ -81,7 +81,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul nuw nsw i32 %3, 21931
   ret i32 %4
 }
@@ -92,7 +92,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul i32 %3, 3
   ret i32 %4
 }
@@ -103,23 +103,13 @@ entry:
 define i32 @func0000000000000012(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul nuw i32 %3, 85
   ret i32 %4
 }
 
-; 1 occurrences:
-; mixbox/optimized/mixbox.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
-  %4 = mul nsw i32 %3, 85
-  ret i32 %4
-}
-
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; libquic/optimized/a_gentm.c.ll
 ; libquic/optimized/a_utctm.c.ll
@@ -128,7 +118,7 @@ entry:
 define i32 @func0000000000000017(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul nuw nsw i32 %3, 10
   ret i32 %4
 }
@@ -150,7 +140,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul nuw nsw i32 %3, 10
   ret i32 %4
 }
@@ -164,7 +154,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul nsw i32 %3, 10
   ret i32 %4
 }
@@ -183,7 +173,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul nsw i32 %3, 3
   ret i32 %4
 }
@@ -201,7 +191,7 @@ entry:
 define i32 @func000000000000001e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul nuw i32 %3, 1000000
   ret i32 %4
 }
@@ -212,7 +202,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul i32 %3, 10
   ret i32 %4
 }
@@ -225,7 +215,7 @@ entry:
 define i32 @func0000000000000013(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul nuw nsw i32 %3, 100
   ret i32 %4
 }
@@ -238,7 +228,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul i32 %3, 1000000
   ret i32 %4
 }
@@ -249,7 +239,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul i32 %3, 33
   ret i32 %4
 }

@@ -1,9 +1,9 @@
 
 ; 67 occurrences:
+; boost/optimized/limit_fd.ll
 ; cmake/optimized/Terminal.c.ll
 ; cmake/optimized/archive_entry_link_resolver.c.ll
 ; cmake/optimized/archive_read_set_format.c.ll
-; cmake/optimized/archive_read_support_format_by_code.c.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cmake/optimized/archive_write_disk_posix.c.ll
 ; cmake/optimized/getinfo.c.ll
@@ -32,7 +32,6 @@
 ; linux/optimized/8250_port.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/fid.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/intel_dpll_mgr.ll
@@ -67,6 +66,7 @@
 ; wireshark/optimized/packet-e164.c.ll
 ; wireshark/optimized/packet-geonw.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -76,7 +76,8 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; clamav/optimized/entconv.c.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
@@ -108,9 +109,8 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/aigRet.c.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; linux/optimized/intel_bios.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
@@ -124,7 +124,7 @@ entry:
   ret i32 %3
 }
 
-; 56 occurrences:
+; 57 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -153,7 +153,6 @@ entry:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; libuv/optimized/idna.c.ll
-; linux/optimized/he.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
@@ -179,6 +178,8 @@ entry:
 ; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-x25.c.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind

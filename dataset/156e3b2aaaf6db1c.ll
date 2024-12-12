@@ -74,6 +74,16 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000020(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i8
+  %2 = add i8 %1, 1
+  ret i8 %2
+}
+
+; 1 occurrences:
 ; linux/optimized/ipconfig.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i64 %0) #0 {

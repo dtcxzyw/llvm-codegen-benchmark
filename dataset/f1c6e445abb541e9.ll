@@ -8,7 +8,7 @@
 define i1 @func0000000000000006(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i64
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 

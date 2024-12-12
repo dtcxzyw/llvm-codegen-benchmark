@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 41 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/bmcInse.c.ll
 ; abc/optimized/cecSeq.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sscClass.c.ll
 ; abc/optimized/sscSim.c.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libwebp/optimized/analysis_enc.c.ll
@@ -16,6 +17,11 @@
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/intel_vdsc.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openblas/optimized/dgelq.c.ll
@@ -43,9 +49,8 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; icu/optimized/collationweights.ll
-; linux/optimized/acpi_lpat.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/power_supply_core.ll
 ; openspiel/optimized/rbc.cc.ll

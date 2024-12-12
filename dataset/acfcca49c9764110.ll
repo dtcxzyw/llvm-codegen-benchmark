@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/block.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ult i64 %3, %0
@@ -73,21 +73,10 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp eq i64 %3, %0
-  %5 = zext i1 %4 to i32
-  ret i32 %5
-}
-
-; 1 occurrences:
-; postgres/optimized/mac.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or disjoint i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

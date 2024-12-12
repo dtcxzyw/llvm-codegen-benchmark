@@ -20,9 +20,8 @@ entry:
   ret ptr %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; Function Attrs: nounwind

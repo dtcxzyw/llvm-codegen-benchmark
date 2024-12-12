@@ -1,10 +1,8 @@
-.LCPI0_0:
-	.long	0xb5a00000                      # float -1.1920929E-6
 func0000000000000044:                   # @func0000000000000044
 	vdivps	%zmm2, %zmm1, %zmm1
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpltps	%zmm1, %zmm2, %k1
-	vcmpgtps	.LCPI0_0(%rip){1to16}, %zmm0, %k0 {%k1}
+	vcmpltps	%zmm0, %zmm2, %k1
+	vcmpltps	%zmm1, %zmm2, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

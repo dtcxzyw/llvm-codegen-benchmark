@@ -55,15 +55,15 @@ func000000000000001c:                   # @func000000000000001c
 	vpaddq	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI9_0:
-	.quad	4                               # 0x4
-func000000000000001a:                   # @func000000000000001a
+	.quad	2                               # 0x2
+func0000000000000008:                   # @func0000000000000008
 	vpsrlq	$1, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	.LCPI9_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI10_0:
-	.quad	2                               # 0x2
-func0000000000000008:                   # @func0000000000000008
+	.quad	4                               # 0x4
+func000000000000001a:                   # @func000000000000001a
 	vpsrlq	$1, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	.LCPI10_0(%rip){1to4}, %ymm0, %ymm0

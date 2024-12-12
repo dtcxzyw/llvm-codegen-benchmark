@@ -4,7 +4,7 @@
 ; ruby/optimized/bignum.ll
 ; z3/optimized/polynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %0, %1
   %3 = and i64 %2, 4294967295
@@ -59,7 +59,7 @@ entry:
 ; darktable/optimized/xcf.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = and i64 %2, 2147483648
@@ -73,7 +73,7 @@ entry:
 ; arrow/optimized/util.cc.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = and i64 %2, 2147483647
@@ -81,13 +81,14 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
+; harfbuzz/optimized/hb-subset.cc.ll
 ; spike/optimized/rfb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %0, %1
   %3 = and i64 %2, 7
@@ -107,17 +108,6 @@ entry:
   %2 = mul i64 %0, %1
   %3 = and i64 %2, 4294934528
   %4 = icmp ne i64 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/RISCVInstructionSelector.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %0, %1
-  %3 = and i64 %2, 4294967295
-  %4 = icmp ult i64 %3, 65
   ret i1 %4
 }
 

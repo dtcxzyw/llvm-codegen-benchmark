@@ -4,9 +4,9 @@ func0000000000000000:                   # @func0000000000000000
 	shrl	$15, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	addl	$254, %edi
-	movzwl	%di, %eax
-	shrl	%eax
+	movl	%edi, %eax
+	addl	$130, %eax
+	movzbl	%ah, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	incl	%edi

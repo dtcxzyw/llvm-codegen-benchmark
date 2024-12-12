@@ -167,7 +167,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c4(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %.highbits = lshr i64 %1, %3

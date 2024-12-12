@@ -3,7 +3,7 @@
 ; cvc5/optimized/ceg_arith_instantiator.cpp.ll
 ; openjdk/optimized/ifnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 1, %1
   %3 = select i1 %0, i32 %2, i32 %1
@@ -11,9 +11,10 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/msatRead.c.ll
 ; assimp/optimized/SpatialSort.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
 ; freetype/optimized/ftbase.c.ll
 ; gromacs/optimized/xtc2.c.ll
@@ -27,7 +28,7 @@ entry:
 ; quantlib/optimized/tcopulapolicy.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = select i1 %0, i32 %2, i32 %1
@@ -35,7 +36,8 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/approximately_equals.ll
 ; git/optimized/date.ll
 ; icu/optimized/unisetspan.ll
 ; llvm/optimized/SetTheory.cpp.ll
@@ -48,7 +50,7 @@ entry:
 ; quantlib/optimized/squarerootclvmodel.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = select i1 %0, i32 %2, i32 %1
@@ -56,16 +58,17 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/cnf_reader.c.ll
 ; abc/optimized/msatRead.c.ll
 ; abc/optimized/xsatCnfReader.c.ll
+; boost/optimized/approximately_equals.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; libwebp/optimized/enc.c.ll
 ; linux/optimized/ehci-hcd.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = select i1 %0, i32 %2, i32 %1
@@ -98,6 +101,29 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/to_chars.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 0, %1
+  %3 = select i1 %0, i32 %2, i32 %1
+  %4 = icmp ugt i32 %3, 9999
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 0, %1
+  %3 = select i1 %0, i32 %2, i32 %1
+  %4 = icmp samesign ugt i32 %3, 99
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; postgres/optimized/formatting.ll
 ; wireshark/optimized/stats_tree_dialog.cpp.ll
 ; Function Attrs: nounwind
@@ -106,17 +132,6 @@ entry:
   %2 = sub i32 0, %1
   %3 = select i1 %0, i32 %2, i32 %1
   %4 = icmp slt i32 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; imgui/optimized/imgui_widgets.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i32 0, %1
-  %3 = select i1 %0, i32 %2, i32 %1
-  %4 = icmp ugt i32 %3, 99
   ret i1 %4
 }
 

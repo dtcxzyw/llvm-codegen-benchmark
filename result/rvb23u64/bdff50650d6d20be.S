@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	andi	a1, a0, 255
 	andi	a0, a0, 252
 	addi	a0, a0, -4
@@ -6,14 +6,14 @@ func00000000000000c8:                   # @func00000000000000c8
 	sltiu	a1, a1, 4
 	andn	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andi	a1, a0, 255
 	andi	a0, a0, 8
 	seqz	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	sext.b	a1, a0
 	andi	a0, a0, 240
 	addi	a0, a0, -224
@@ -21,43 +21,40 @@ func00000000000000c6:                   # @func00000000000000c6
 	slti	a1, a1, 0
 	and	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
-	andi	a1, a0, 255
-	andi	a0, a0, 3
-	seqz	a0, a0
-	sltiu	a1, a1, 240
-	andn	a0, a0, a1
-	ret
-func0000000000000016:                   # @func0000000000000016
-	andi	a0, a0, 192
-	addi	a0, a0, -128
+func0000000000000028:                   # @func0000000000000028
+	andi	a0, a0, 243
+	addi	a0, a0, -240
 	seqz	a0, a0
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func0000000000000026:                   # @func0000000000000026
+	sext.b	a0, a0
+	slti	a0, a0, -64
+	ret
+func000000000000018c:                   # @func000000000000018c
 	andi	a1, a0, 255
 	andi	a0, a0, 254
-	addi	a0, a0, -8
-	addi	a1, a1, -33
+	addi	a0, a0, -192
+	addi	a1, a1, -194
 	snez	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andi	a0, a0, 255
 	seqz	a0, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andi	a0, a0, 135
 	seqz	a0, a0
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	sext.b	a1, a0
 	andi	a0, a0, 120
 	snez	a0, a0
 	slti	a1, a1, 0
 	andn	a0, a0, a1
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	andi	a0, a0, 224
 	addi	a0, a0, -32
 	seqz	a0, a0

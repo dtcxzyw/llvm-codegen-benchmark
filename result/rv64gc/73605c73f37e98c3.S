@@ -21,7 +21,15 @@ func0000000000000018:                   # @func0000000000000018
 	and	a0, a0, a1
 	negw	a0, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000051:                   # @func0000000000000051
+	sext.w	a1, a1
+	li	a2, 2
+	bltu	a1, a2, .LBB3_2
+	lui	a0, 294912
+.LBB3_2:                                # %entry
+	negw	a0, a0
+	ret
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a1, a1
 	li	a2, 8
 	sltiu	a1, a1, 57

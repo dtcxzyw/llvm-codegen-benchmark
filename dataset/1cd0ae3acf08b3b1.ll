@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; icu/optimized/collationkeys.ll
-; icu/optimized/taiwncal.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/entropy_common.ll
 ; openspiel/optimized/Scheduler.cpp.ll

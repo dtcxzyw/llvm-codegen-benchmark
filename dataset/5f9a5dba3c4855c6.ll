@@ -1,9 +1,8 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; graphviz/optimized/make_map.c.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; lightgbm/optimized/sample_strategy.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; oiio/optimized/dpxoutput.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
@@ -18,7 +17,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(double %0) #0 {
 entry:
-  %1 = fdiv double 1.000000e+00, %0
+  %1 = fdiv double 2.560000e+02, %0
   %2 = fptosi double %1 to i32
   ret i32 %2
 }

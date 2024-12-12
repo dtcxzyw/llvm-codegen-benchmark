@@ -4,5 +4,5 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, 265216
 	fmv.w.x	fa5, a0
 	vfmul.vf	v12, v12, fa5
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret

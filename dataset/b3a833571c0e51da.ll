@@ -1,12 +1,11 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cpython/optimized/longobject.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/ialloc.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/sta_info.ll

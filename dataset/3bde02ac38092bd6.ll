@@ -17,7 +17,7 @@
 define float @func0000000000000000(float %0, i1 %1) #0 {
 entry:
   %2 = uitofp i1 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

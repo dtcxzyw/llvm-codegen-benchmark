@@ -14,7 +14,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -31,7 +31,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -45,12 +45,14 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
@@ -67,7 +69,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -78,18 +80,20 @@ define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = shl nuw nsw i32 1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; clamav/optimized/unsp.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = shl nsw i32 -1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

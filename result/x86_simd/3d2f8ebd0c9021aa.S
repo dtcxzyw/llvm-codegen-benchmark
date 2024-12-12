@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	59                              # 0x3b
 .LCPI1_1:
 	.long	63                              # 0x3f
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	knotb	%k0, %k1
@@ -32,7 +32,7 @@ func0000000000000008:                   # @func0000000000000008
 	.long	15                              # 0xf
 .LCPI2_1:
 	.long	13                              # 0xd
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [15,15,15,15,15,15,15,15]

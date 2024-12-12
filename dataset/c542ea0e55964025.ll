@@ -54,26 +54,4 @@ entry:
   ret i32 %1
 }
 
-; 1 occurrences:
-; verilator/optimized/V3String.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0) #0 {
-entry:
-  %1 = shl nuw nsw i32 %0, 3
-  %2 = sub nsw i32 24, %1
-  %3 = and i32 %2, 24
-  ret i32 %3
-}
-
-; 2 occurrences:
-; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0) #0 {
-entry:
-  %.neg = mul i32 %0, -8
-  %1 = and i32 %.neg, -16
-  ret i32 %1
-}
-
 attributes #0 = { nounwind }

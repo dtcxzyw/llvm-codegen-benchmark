@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; git/optimized/combine-diff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
   %3 = add i32 %0, -1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/combine-diff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
   %3 = add i32 %0, -1
@@ -28,7 +28,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i1 %1) #0 {
+define i1 @func00000000000001a1(i32 %0, i1 %1) #0 {
 entry:
   %.neg = zext i1 %1 to i32
   %2 = add nuw nsw i32 %0, 1
@@ -52,7 +52,7 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; postgres/optimized/read.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i1 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
   %3 = add nsw i32 %0, -1

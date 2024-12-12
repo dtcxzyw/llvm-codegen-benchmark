@@ -2,7 +2,6 @@
 ; 13 occurrences:
 ; clamav/optimized/mpool.c.ll
 ; hyperscan/optimized/repeat.c.ll
-; lief/optimized/Builder.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
@@ -13,6 +12,7 @@
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/bv2int_rewriter.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:

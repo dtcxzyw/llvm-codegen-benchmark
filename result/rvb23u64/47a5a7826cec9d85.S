@@ -32,17 +32,3 @@ func000000000000000e:                   # @func000000000000000e
 	sub	a0, a1, a0
 	srli	a0, a0, 2
 	ret
-func0000000000000009:                   # @func0000000000000009
-	lui	a1, 118350
-	addi	a1, a1, 1465
-	slli	a1, a1, 32
-	mul	a0, a0, a1
-	srli	a0, a0, 31
-	ret
-func0000000000000001:                   # @func0000000000000001
-	lui	a1, 118350
-	addi	a1, a1, 1465
-	slli	a1, a1, 32
-	mul	a0, a0, a1
-	srli	a0, a0, 31
-	ret

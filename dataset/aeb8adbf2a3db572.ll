@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -18,16 +18,18 @@
 ; spike/optimized/f128_div.ll
 ; spike/optimized/f128_rem.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = mul i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -38,7 +40,6 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; ruby/optimized/bignum.ll
-; spike/optimized/s_mul64To128M.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -48,7 +49,7 @@ entry:
   ret i64 %5
 }
 
-; 197 occurrences:
+; 194 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -87,8 +88,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -243,7 +242,6 @@ entry:
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/mulhsu.ll
 ; spike/optimized/mulhu.ll
-; spike/optimized/s_mul64To128M.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
@@ -251,7 +249,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
   %4 = mul nuw i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -276,7 +274,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -286,7 +284,7 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -300,8 +298,8 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 56
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -313,7 +311,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -326,20 +324,19 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
   %4 = mul i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; libquic/optimized/e_aes.c.ll
-; openusd/optimized/avif.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -349,8 +346,8 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = mul i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -371,8 +368,8 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = mul nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

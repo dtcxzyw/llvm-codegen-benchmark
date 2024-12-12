@@ -1,9 +1,45 @@
 
-; 33 occurrences:
+; 69 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
 ; abseil-cpp/optimized/crc_cord_state_test.cc.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; entt/optimized/meta_container.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -51,12 +87,13 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = lshr i64 %4, 5
   ret i64 %5
 }
 
 ; 96 occurrences:
+; boost/optimized/alloc_lib.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; duckdb/optimized/ub_duckdb_common_arrow.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
@@ -80,7 +117,6 @@ entry:
 ; linux/optimized/fast_commit.ll
 ; linux/optimized/i915_gem_ttm.ll
 ; linux/optimized/scsi_lib.ll
-; linux/optimized/ttm_bo_vm.ll
 ; linux/optimized/vmcore.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -185,7 +221,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = lshr i64 %4, 3
   ret i64 %5
 }
@@ -207,7 +243,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = lshr i64 %4, 7
   ret i64 %5
 }

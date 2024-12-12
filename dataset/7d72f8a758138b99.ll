@@ -22,11 +22,10 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
-; abc/optimized/satUtil.c.ll
 ; cmake/optimized/entropy_common.c.ll
 ; linux/optimized/entropy_common.ll
 ; opencv/optimized/array.cpp.ll

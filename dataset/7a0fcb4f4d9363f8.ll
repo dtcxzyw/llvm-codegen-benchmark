@@ -13,7 +13,7 @@ entry:
   %3 = and i32 %2, 1047552
   %4 = and i32 %1, 1072693248
   %5 = or disjoint i32 %4, %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 

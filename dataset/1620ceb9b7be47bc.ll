@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/giaSif.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 1
@@ -33,7 +33,7 @@ entry:
 ; icu/optimized/package.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, %0
   %4 = lshr i32 %3, 1

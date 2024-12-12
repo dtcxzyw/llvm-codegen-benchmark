@@ -89,9 +89,11 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000009:                   # @func0000000000000009
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vv	v24, v8, v16
-	vmflt.vv	v25, v16, v8
-	vmnor.mm	v0, v25, v24
+	vfsub.vv	v8, v8, v16
+	fli.d	fa5, inf
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	vmnor.mm	v0, v17, v16
 	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 16, e64, m8, ta, ma

@@ -32,7 +32,7 @@ entry:
 define i16 @func0000000000000007(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 512, i32 0
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
@@ -43,7 +43,7 @@ entry:
 define i16 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 0, i32 512
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
@@ -68,7 +68,7 @@ entry:
 define i16 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 32768, i32 0
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }

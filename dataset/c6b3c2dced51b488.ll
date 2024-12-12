@@ -1,5 +1,10 @@
 
-; 55 occurrences:
+; 60 occurrences:
+; boost/optimized/any_params_iter.ll
+; boost/optimized/any_segments_iter.ll
+; boost/optimized/format_args.ll
+; boost/optimized/pct_format.ll
+; boost/optimized/url_base.ll
 ; gromacs/optimized/colvarbias.cpp.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/colvarbias_histogram.cpp.ll
@@ -64,10 +69,9 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; fmt/optimized/std-test.cc.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; llvm/optimized/BlockFrequency.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
@@ -96,10 +100,10 @@ entry:
 ; protobuf/optimized/zero_copy_stream.cc.ll
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, %1
-  %3 = icmp ult i64 %2, 513
+  %3 = icmp samesign ult i64 %2, 513
   %4 = select i1 %3, i64 3, i64 6
   ret i64 %4
 }

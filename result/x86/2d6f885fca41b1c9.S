@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	cmpl	$3, %edi
 	setge	%cl
 	cmpl	%edi, %esi

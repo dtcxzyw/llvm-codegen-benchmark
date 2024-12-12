@@ -1,10 +1,9 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; linux/optimized/efi_64.ll
-; llvm/optimized/SelectionDAG.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll

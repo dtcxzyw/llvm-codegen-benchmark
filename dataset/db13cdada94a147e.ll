@@ -1,8 +1,14 @@
 
-; 771 occurrences:
+; 779 occurrences:
 ; abseil-cpp/optimized/examine_stack.cc.ll
 ; abseil-cpp/optimized/pool_urbg.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/context.ll
+; boost/optimized/round_robin.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/waker.ll
+; boost/optimized/work_stealing.ll
 ; clamav/optimized/mpool.c.ll
 ; clamav/optimized/pe.c.ll
 ; cpython/optimized/typeobject.ll
@@ -30,7 +36,6 @@
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/dumpstack.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/ebda.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/ext4_jbd2.ll
 ; linux/optimized/fault.ll
@@ -48,7 +53,6 @@
 ; linux/optimized/ptrace.ll
 ; linux/optimized/reboot.ll
 ; linux/optimized/regset.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/seccomp.ll
 ; linux/optimized/signal_32.ll
 ; linux/optimized/signal_64.ll
@@ -541,6 +545,7 @@
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; luajit/optimized/lj_cdata.ll
 ; luajit/optimized/lj_cdata_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
 ; nix/optimized/serialise.ll
 ; node/optimized/libnode.agent.ll
@@ -771,6 +776,9 @@
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
 ; wireshark/optimized/voip_calls.c.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
+; zed-rs/optimized/cogvsa3bjgiftuxgwhwbiuj8x.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0) #0 {
 entry:
@@ -779,7 +787,7 @@ entry:
   ret ptr %2
 }
 
-; 441 occurrences:
+; 439 occurrences:
 ; abc/optimized/verCore.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cordz_info.cc.ll
@@ -957,7 +965,6 @@ entry:
 ; grpc/optimized/xds_wrr_locality.cc.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/aio.ll
-; linux/optimized/apic_flat_64.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/buffered-io.ll
@@ -995,7 +1002,6 @@ entry:
 ; linux/optimized/journal.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/md.ll
@@ -1009,7 +1015,6 @@ entry:
 ; linux/optimized/netdev.ll
 ; linux/optimized/nfs4namespace.ll
 ; linux/optimized/nfs4proc.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/page-io.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/page.ll
@@ -1221,6 +1226,7 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; redis/optimized/config.ll
 ; stb/optimized/stb_image_resize2.c.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i64 %0) #0 {
 entry:
@@ -1246,9 +1252,11 @@ entry:
   ret ptr %2
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; opencv/optimized/icp.cpp.ll
 ; protobuf/optimized/printer.cc.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i64 %0) #0 {
 entry:

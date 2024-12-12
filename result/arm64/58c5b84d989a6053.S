@@ -1,20 +1,16 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	movi	v4.8b, #1
-	and	v3.8b, v3.8b, v4.8b
-	and	v2.8b, v2.8b, v4.8b
-	uaddl	v2.8h, v2.8b, v3.8b
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	and	w8, w2, #0x1
+	and	w9, w1, #0x1
+	add	w8, w9, w8
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	movi	v4.8b, #1
-	and	v3.8b, v3.8b, v4.8b
-	and	v2.8b, v2.8b, v4.8b
-	uaddl	v2.8h, v2.8b, v3.8b
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	and	w8, w2, #0x1
+	and	w9, w1, #0x1
+	add	w8, w9, w8
+	add	w0, w8, w0
 	ret
                                         // -- End function

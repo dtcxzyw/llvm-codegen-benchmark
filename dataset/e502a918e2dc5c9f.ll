@@ -18,12 +18,13 @@ define i8 @func0000000000000018(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, %1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = trunc i32 %5 to i8
   ret i8 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/basic_text_iprimitive.ll
 ; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
 ; spike/optimized/vrol_vv.ll
 ; spike/optimized/vrol_vx.ll
@@ -35,7 +36,7 @@ define i8 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl i32 %3, %1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = trunc i32 %5 to i8
   ret i8 %6
 }
@@ -60,6 +61,18 @@ entry:
 define i8 @func0000000000000010(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
+  %4 = shl nuw i32 %3, %1
+  %5 = or i32 %0, %4
+  %6 = trunc i32 %5 to i8
+  ret i8 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_binfont_loader.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000030(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 %3, %1
   %5 = or i32 %4, %0
   %6 = trunc i32 %5 to i8

@@ -13,7 +13,7 @@ define i1 @func0000000000000001(i1 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 16
   %4 = trunc i64 %3 to i8
-  %5 = icmp eq i8 %4, %1
+  %5 = icmp eq i8 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

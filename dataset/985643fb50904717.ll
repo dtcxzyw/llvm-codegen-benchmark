@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = urem i64 %1, %3
@@ -43,7 +43,7 @@ entry:
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = urem i64 %1, %3
@@ -56,7 +56,7 @@ entry:
 ; openspiel/optimized/is_mcts.cc.ll
 ; openspiel/optimized/mcts.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = urem i64 %1, %3
@@ -78,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = urem i64 %1, %3

@@ -19,7 +19,7 @@ func0000000000000015:                   # @func0000000000000015
 	addl	%edi, %eax
 	shll	$9, %eax
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000145:                   # @func0000000000000145
 	xorl	%eax, %eax
 	cmpl	$256, %edx                      # imm = 0x100
 	cmovbl	%esi, %eax

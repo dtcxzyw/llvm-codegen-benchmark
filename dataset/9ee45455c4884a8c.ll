@@ -6,7 +6,7 @@ define i32 @func000000000000000e(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 11
   %4 = and i32 %3, 16384
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = select i1 %1, i32 524291, i32 0
   %7 = or i32 %5, %6
   ret i32 %7
@@ -22,7 +22,7 @@ define i32 @func000000000000000f(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 4
   %4 = and i32 %3, 128
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = select i1 %0, i32 4, i32 0
   %7 = or disjoint i32 %6, %5
   ret i32 %7

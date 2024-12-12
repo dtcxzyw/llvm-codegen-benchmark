@@ -29,13 +29,13 @@ entry:
 ; hyperscan/optimized/scratch.c.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001ca(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000001ef(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 20
-  %4 = getelementptr nusw i8, ptr %1, i64 16
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 

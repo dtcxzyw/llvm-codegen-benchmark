@@ -8,7 +8,7 @@
 ; pybind11/optimized/test_local_bindings.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000030a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %0, 0
   %3 = select i1 %2, i64 %1, i64 0
@@ -23,7 +23,7 @@ entry:
 ; redis/optimized/listpack.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000019a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000032a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %0, 0
   %3 = select i1 %2, i64 %1, i64 0
@@ -36,7 +36,7 @@ entry:
 ; cmake/optimized/cmList.cxx.ll
 ; redis/optimized/t_zset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000196(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000326(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %0, 0
   %3 = select i1 %2, i64 %1, i64 0

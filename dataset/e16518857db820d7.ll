@@ -1,5 +1,5 @@
 
-; 123 occurrences:
+; 120 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -38,8 +38,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -120,7 +118,6 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/mulhu.ll
-; spike/optimized/s_mul64To128M.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
@@ -179,7 +176,8 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; openjdk/optimized/mulnode.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
@@ -287,12 +285,12 @@ entry:
 }
 
 ; 1 occurrences:
-; darktable/optimized/introspection_cacorrect.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul i64 %1, %2
-  %4 = lshr i64 %0, 1
+  %3 = lshr i64 %2, 1
+  %4 = mul nsw i64 %0, %1
   %5 = add nsw i64 %4, %3
   ret i64 %5
 }

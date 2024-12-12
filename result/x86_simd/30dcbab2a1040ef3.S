@@ -9,7 +9,7 @@ func000000000000000a:                   # @func000000000000000a
 	vcmpnlepd	%zmm1, %zmm0, %k1
 	vcmpnlepd	%zmm2, %zmm4, %k2
 	kunpckbw	%k1, %k2, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -24,7 +24,7 @@ func0000000000000006:                   # @func0000000000000006
 	vcmpnlepd	%zmm0, %zmm1, %k1
 	vcmpnlepd	%zmm4, %zmm2, %k2
 	kunpckbw	%k1, %k2, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

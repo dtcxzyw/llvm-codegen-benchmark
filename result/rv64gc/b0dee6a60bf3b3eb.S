@@ -16,6 +16,8 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a3, a0, 1
 	mv	a0, a1
 	bnez	a3, .LBB2_2
-	addiw	a0, a2, 4
+	lui	a0, 16
+	addi	a0, a0, -1
+	addw	a0, a0, a2
 .LBB2_2:                                # %entry
 	ret

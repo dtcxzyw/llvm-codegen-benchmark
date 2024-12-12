@@ -1,5 +1,5 @@
 
-%"class.testing::ThrowingValue.3270416" = type { i32 }
+%"class.testing::ThrowingValue.3460894" = type { i32 }
 
 ; 42 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -45,13 +45,13 @@
 ; openspiel/optimized/rbc_test.cc.ll
 ; re2/optimized/onepass.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, ptr %0, ptr %1
   %6 = lshr i64 %2, 1
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -67,7 +67,7 @@ entry:
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, ptr %0, ptr %1
   %6 = lshr i64 %2, 1
-  %7 = getelementptr %"class.testing::ThrowingValue.3270416", ptr %5, i64 %6
+  %7 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %5, i64 %6
   ret ptr %7
 }
 

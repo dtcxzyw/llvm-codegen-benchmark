@@ -1,12 +1,16 @@
 
-; 66 occurrences:
+; 73 occurrences:
+; assimp/optimized/BlenderDNA.cpp.ll
+; assimp/optimized/BlenderScene.cpp.ll
+; assimp/optimized/PlyParser.cpp.ll
+; cmake/optimized/cmELF.cxx.ll
 ; icu/optimized/collationfastlatin.ll
 ; linux/optimized/amd64-agp.ll
-; linux/optimized/he.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/sky2.ll
+; linux/optimized/tg3.ll
 ; linux/optimized/ucount.ll
 ; linux/optimized/vht.ll
 ; linux/optimized/vt.ll
@@ -30,6 +34,8 @@
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
+; minetest/optimized/clientmap.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -55,6 +61,7 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; stockfish/optimized/position.ll
+; stockfish/optimized/tbprobe.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll

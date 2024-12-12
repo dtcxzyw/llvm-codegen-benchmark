@@ -7,7 +7,7 @@ func000000000000001e:                   # @func000000000000001e
 	vmerge.vxm	v12, v12, a0, v0
 	vsll.vi	v10, v10, 10
 	vor.vv	v10, v12, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000012:                   # @func0000000000000012
 	lui	a0, 1
@@ -17,7 +17,7 @@ func0000000000000012:                   # @func0000000000000012
 	vmseq.vx	v0, v12, a0
 	li	a0, 16
 	vor.vx	v10, v10, a0, v0.t
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000013:                   # @func0000000000000013
 	vsetivli	zero, 8, e32, m2, ta, mu

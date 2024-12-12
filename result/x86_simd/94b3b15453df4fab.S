@@ -19,7 +19,7 @@
 .LCPI0_2:
 	.short	3                               # 0x3
 	.short	3                               # 0x3
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
 	vpcmpneqw	.LCPI0_1(%rip), %xmm1, %k1
 	vptestmq	%ymm0, %ymm0, %k0 {%k1}
@@ -37,7 +37,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	.zero	2
 .LCPI1_1:
 	.short	32767                           # 0x7fff
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpbroadcastw	.LCPI1_1(%rip), %xmm2   # xmm2 = [32767,32767,32767,32767,32767,32767,32767,32767]
 	vpand	%xmm2, %xmm1, %xmm1
 	vpcmpeqw	%xmm2, %xmm1, %k1
@@ -56,7 +56,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	.zero	2
 .LCPI2_1:
 	.quad	2                               # 0x2
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vptestmw	.LCPI2_0(%rip), %xmm1, %k1
 	vpcmpeqq	.LCPI2_1(%rip){1to4}, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
@@ -73,7 +73,7 @@ func000000000000001c:                   # @func000000000000001c
 	.zero	2
 .LCPI3_1:
 	.quad	18                              # 0x12
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vptestmw	.LCPI3_0(%rip), %xmm1, %k1
 	vpcmpnleuq	.LCPI3_1(%rip){1to4}, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
@@ -90,26 +90,9 @@ func000000000000008c:                   # @func000000000000008c
 	.zero	2
 .LCPI4_1:
 	.quad	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmw	.LCPI4_0(%rip), %xmm1, %k1
 	vpcmpeqq	.LCPI4_1(%rip){1to4}, %ymm0, %k0 {%k1}
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI5_0:
-	.short	8192                            # 0x2000
-	.short	8192                            # 0x2000
-	.short	8192                            # 0x2000
-	.short	8192                            # 0x2000
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-.LCPI5_1:
-	.quad	3                               # 0x3
-func0000000000000041:                   # @func0000000000000041
-	vptestnmw	.LCPI5_0(%rip), %xmm1, %k1
-	vpcmpltuq	.LCPI5_1(%rip){1to4}, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

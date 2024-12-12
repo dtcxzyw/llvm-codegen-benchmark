@@ -3,10 +3,10 @@
 ; openjdk/optimized/os_linux.ll
 ; openjdk/optimized/virtualspace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000102(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ugt ptr %2, %0
+  %3 = icmp ult ptr %0, %2
   %4 = icmp eq ptr %0, null
   %5 = or i1 %4, %3
   ret i1 %5
@@ -34,10 +34,10 @@ entry:
 ; openusd/optimized/usdtree.cpp.ll
 ; postgres/optimized/aclchk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000042(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp eq ptr %2, %0
+  %3 = icmp eq ptr %0, %2
   %4 = icmp eq ptr %0, null
   %5 = or i1 %3, %4
   ret i1 %5

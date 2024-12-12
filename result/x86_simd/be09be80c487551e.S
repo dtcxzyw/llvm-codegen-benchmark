@@ -33,3 +33,8 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
+func000000000000000c:                   # @func000000000000000c
+	vpcmpnltw	%xmm1, %xmm0, %k0
+	vpmovm2q	%k0, %ymm0
+	vpsrlq	$63, %ymm0, %ymm0
+	retq

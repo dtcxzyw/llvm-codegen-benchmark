@@ -2,7 +2,7 @@
 	.long	7                               # 0x7
 .LCPI0_1:
 	.long	128                             # 0x80
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
@@ -51,7 +51,7 @@ func0000000000000024:                   # @func0000000000000024
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1

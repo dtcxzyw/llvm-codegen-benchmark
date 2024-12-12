@@ -1,5 +1,5 @@
 
-; 178 occurrences:
+; 174 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/abcSweep.c.ll
@@ -44,7 +44,6 @@
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/early-lookup.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/i915_hwmon.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/initramfs.ll
@@ -60,7 +59,6 @@
 ; linux/optimized/pid_list.ll
 ; linux/optimized/scsi_ioctl.ll
 ; linux/optimized/stackdepot.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; linux/optimized/xhci.ll
@@ -103,7 +101,6 @@
 ; llvm/optimized/NoOwnershipChangeVisitor.cpp.ll
 ; llvm/optimized/PathDiagnostic.cpp.ll
 ; llvm/optimized/ProgramPoint.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
@@ -115,7 +112,6 @@
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
@@ -156,7 +152,7 @@
 ; php/optimized/dfa_pass.ll
 ; php/optimized/pdo_dbh.ll
 ; php/optimized/streamsfuncs.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
+; postgres/optimized/spgutils.ll
 ; quest/optimized/QuEST_cpu.c.ll
 ; re2/optimized/prog.cc.ll
 ; redis/optimized/buf_writer.ll
@@ -206,7 +202,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 24
   %4 = and i32 %3, 2130706432
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -243,7 +239,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %2, 3
   %4 = and i32 %3, 56
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -255,7 +251,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 %2, 1
   %4 = and i32 %3, 14
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -267,7 +263,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 %2, 16
   %4 = and i32 %3, -2147483648
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -295,7 +291,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nsw i32 %2, 12
   %4 = and i32 %3, 2093056
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -339,7 +335,7 @@ entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nsw i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

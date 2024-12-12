@@ -7,7 +7,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %.neg = sext i1 %2 to i32
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -20,7 +20,7 @@ define i32 @func0000000000000063(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %.neg = sext i1 %2 to i32
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -31,7 +31,7 @@ define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %.neg = sext i1 %2 to i32
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -53,7 +53,7 @@ define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %.neg = sext i1 %2 to i32
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 

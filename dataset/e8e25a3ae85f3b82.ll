@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; grpc/optimized/tcp_posix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000318c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 259
   %4 = add i64 %1, 1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EAMemory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4
   %4 = icmp ne i64 %3, 4

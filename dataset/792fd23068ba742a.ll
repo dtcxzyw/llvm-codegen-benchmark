@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 48 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -16,18 +16,15 @@
 ; linux/optimized/api.ll
 ; linux/optimized/core.ll
 ; linux/optimized/extents_status.ll
-; linux/optimized/i915_module.ll
 ; linux/optimized/intel_display.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; nanobind/optimized/nb_func.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; opencv/optimized/stringutils.cpp.ll
 ; openjdk/optimized/loopTransform.ll
-; openmpi/optimized/libprrte_la-hwloc_base_maffinity.ll
 ; openssl/optimized/ca_internals_test-bin-ca.ll
 ; openssl/optimized/openssl-bin-ca.ll
 ; openssl/optimized/openssl-bin-x509.ll
@@ -89,7 +86,7 @@ entry:
   ret i1 %5
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; cmake/optimized/SystemInformation.cxx.ll
 ; curl/optimized/libcurl_la-content_encoding.ll
 ; git/optimized/init-db.ll
@@ -102,7 +99,6 @@ entry:
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaCXXScopeSpec.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -140,10 +136,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; proj/optimized/log.cpp.ll
 ; slurm/optimized/node_scheduler.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -153,13 +150,14 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/StringExtras.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 10
+  %3 = icmp ult i32 %2, 19
   %4 = select i1 %1, i1 true, i1 %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5

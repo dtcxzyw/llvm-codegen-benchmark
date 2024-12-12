@@ -21,8 +21,8 @@ entry:
   %3 = shl i32 %2, 14
   %4 = and i32 %3, 16384
   %.masked = and i32 %1, -4162048
-  %5 = or i32 %4, %.masked
-  %6 = or disjoint i32 %5, %0
+  %5 = or i32 %.masked, %4
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

@@ -4,7 +4,7 @@
 ; hyperscan/optimized/gtest-all.cc.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ea(i1 %0, i32 %1) #0 {
+define i1 @func00000000000001ca(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 24
   %3 = add nuw i32 %2, 16777216

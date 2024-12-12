@@ -18,11 +18,12 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
+; lief/optimized/Builder.cpp.ll
 ; llvm/optimized/WindowsResource.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0, i64 %1) #0 {

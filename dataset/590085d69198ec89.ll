@@ -32,7 +32,8 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/date_time_format_parser.ll
 ; git/optimized/tree-walk.ll
 ; libquic/optimized/ecdsa_test.cc.ll
 ; lightgbm/optimized/bin.cpp.ll

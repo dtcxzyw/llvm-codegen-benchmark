@@ -1,11 +1,13 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; libjpeg-turbo/optimized/jdlhuff.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:

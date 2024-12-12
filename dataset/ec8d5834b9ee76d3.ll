@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 48 occurrences:
 ; actix-rs/optimized/27zn2x05lna4a2z7.ll
 ; assimp/optimized/FBXDocument.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -26,6 +26,7 @@
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
+; mitsuba3/optimized/specfilm.cpp.ll
 ; oiio/optimized/imagebufalgo_addsub.cpp.ll
 ; oiio/optimized/imagebufalgo_draw.cpp.ll
 ; oiio/optimized/imagebufalgo_mad.cpp.ll
@@ -33,6 +34,7 @@
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
+; opencv/optimized/weighted_median_filter.cpp.ll
 ; openexr/optimized/ImfMisc.cpp.ll
 ; openjdk/optimized/hb-map.ll
 ; pbrt-v4/optimized/string.cpp.ll
@@ -45,6 +47,7 @@
 ; ruby/optimized/io.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:

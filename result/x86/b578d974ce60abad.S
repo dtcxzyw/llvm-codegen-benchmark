@@ -12,11 +12,6 @@ func0000000000000032:                   # @func0000000000000032
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
-	shrq	$32, %rsi
-	setne	%al
-	andb	%dil, %al
-	retq
 func0000000000000030:                   # @func0000000000000030
 	testq	%rsi, %rsi
 	setne	%al
@@ -25,10 +20,5 @@ func0000000000000030:                   # @func0000000000000030
 func0000000000000010:                   # @func0000000000000010
 	shrq	$32, %rsi
 	sete	%al
-	andb	%dil, %al
-	retq
-func000000000000002a:                   # @func000000000000002a
-	testq	%rsi, %rsi
-	setns	%al
 	andb	%dil, %al
 	retq

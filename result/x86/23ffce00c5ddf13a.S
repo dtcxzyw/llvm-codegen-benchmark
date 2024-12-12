@@ -3,7 +3,7 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edi, %edi
 	setg	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	shrq	$32, %rdi
 	testl	%edi, %edi
 	setg	%al

@@ -32,7 +32,7 @@
 	.short	61440                           # 0xf000
 	.short	61440                           # 0xf000
 	.short	61440                           # 0xf000
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpsllw	$7, %xmm2, %xmm1

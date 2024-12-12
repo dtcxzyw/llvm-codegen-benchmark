@@ -22,25 +22,25 @@
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; php/optimized/ZendAccelerator.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 3
   %4 = and i64 %3, 8589934588
-  %5 = getelementptr nusw i8, ptr %0, i64 12
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 12
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 8589934560
-  %5 = getelementptr nusw i8, ptr %0, i64 2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 2
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -61,13 +61,13 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 65533
   %3 = and i32 %2, 65535
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 196608
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 196608
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 

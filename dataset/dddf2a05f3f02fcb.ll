@@ -21,7 +21,7 @@
 ; rocksdb/optimized/version_set.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 4294967295
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 4294967295
@@ -65,11 +65,23 @@ entry:
 ; minetest/optimized/enriched_string.cpp.ll
 ; minetest/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -8
   %5 = add nuw i64 %0, 8
+  %6 = icmp eq i64 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; minetest/optimized/COBJMeshFileLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = and i64 %3, 4294967292
+  %5 = add nuw i64 %0, 4
   %6 = icmp eq i64 %5, %4
   ret i1 %6
 }
@@ -80,7 +92,7 @@ entry:
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 3
@@ -92,12 +104,12 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/fdt_sw.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
   %5 = add nuw nsw i64 %0, 4
-  %6 = icmp ugt i64 %5, %4
+  %6 = icmp samesign ugt i64 %5, %4
   ret i1 %6
 }
 
@@ -106,7 +118,7 @@ entry:
 ; libuv/optimized/signal.c.ll
 ; node/optimized/signal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, -16
@@ -119,12 +131,12 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 4294967295
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -132,7 +144,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 1152921504606846974
@@ -145,7 +157,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 3
@@ -158,7 +170,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -32
@@ -180,19 +192,19 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 9223372036854775804
   %5 = add nuw nsw i64 %0, 4
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -8
@@ -216,12 +228,12 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 

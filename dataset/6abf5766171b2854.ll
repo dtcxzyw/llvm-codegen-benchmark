@@ -1,8 +1,7 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; cmake/optimized/archive_rb.c.ll
 ; hermes/optimized/CFG.cpp.ll
-; linux/optimized/hid-cypress.ll
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -68,4 +67,18 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; linux/optimized/maple_tree.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i1 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = and i64 %2, -256
+  %4 = select i1 %0, i64 6, i64 0, !prof !0
+  %5 = or disjoint i64 %4, %3
+  ret i64 %5
+}
+
 attributes #0 = { nounwind }
+
+!0 = !{!"branch_weights", i32 8000000, i32 4000000}

@@ -4,7 +4,7 @@
 ; lz4/optimized/lz4hc.c.ll
 ; slurm/optimized/config_info.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = and i32 %3, 31

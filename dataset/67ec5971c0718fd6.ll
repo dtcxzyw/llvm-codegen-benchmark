@@ -1,11 +1,12 @@
 
-; 75 occurrences:
+; 83 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/str_format_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/diff.cc.ll
 ; cmake/optimized/cmPolicies.cxx.ll
+; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; cvc5/optimized/theory_strings_utils.cpp.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; diesel-rs/optimized/2phdoksmzkii6al2.ll
@@ -51,11 +52,9 @@
 ; openspiel/optimized/hex.cc.ll
 ; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-s3_lib.ll
-; openssl/optimized/quic_wire_test-bin-quic_wire_test.ll
 ; php/optimized/logical_filters.ll
 ; php/optimized/zend_object_handlers.ll
 ; postgres/optimized/float.ll
-; proj/optimized/factory.cpp.ll
 ; pybind11/optimized/test_builtin_casters.cpp.ll
 ; redis/optimized/geo.ll
 ; ruby/optimized/enumerator.ll
@@ -75,6 +74,15 @@
 ; verilator/optimized/V3Undriven.cpp.ll
 ; wireshark/optimized/packet-tns.c.ll
 ; z3/optimized/aig.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3ly3b3fonqg7nd45488b8bsgs.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/aktvc84j83s8sqq1xgqfsdyza.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0) #0 {
 entry:
@@ -82,11 +90,10 @@ entry:
   ret i1 %.not
 }
 
-; 119 occurrences:
+; 130 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; annoy/optimized/annoymodule.ll
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; cpython/optimized/typeobject.ll
 ; delta-rs/optimized/2n0ez5zuwgs53clg.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
@@ -150,7 +157,6 @@ entry:
 ; ockam-rs/optimized/lcclztcuaxx9mqt.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; pocketpy/optimized/compiler.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
 ; quantlib/optimized/pathwiseaccountingengine.ll
@@ -174,15 +180,13 @@ entry:
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; spike/optimized/cbo_inval.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; velox/optimized/ArraySum.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/FromUnixTime.cpp.ll
@@ -202,6 +206,21 @@ entry:
 ; yalantinglibs/optimized/example.cpp.ll
 ; yosys/optimized/opt_muxtree.ll
 ; z3/optimized/dl_mk_unbound_compressor.cpp.ll
+; zed-rs/optimized/0l5q95ei94dcvnozucoiwn5qf.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1crfyvugkk4dx3liwlfw00ptd.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/7aq90jycr3x842qyrhjbel971.ll
+; zed-rs/optimized/9py7mumimdtfbsy7tbvb0jpih.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -209,24 +228,7 @@ entry:
   ret i1 %1
 }
 
-; 9 occurrences:
-; cvc5/optimized/tangent_plane_check.cpp.ll
-; linux/optimized/nf_conntrack_sip.ll
-; linux/optimized/nf_nat_proto.ll
-; linux/optimized/nf_nat_sip.ll
-; opencv/optimized/softfloat.cpp.ll
-; openssl/optimized/quic_wire_test-bin-quic_wire_test.ll
-; php/optimized/zend_jit.ll
-; redis/optimized/object.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
-entry:
-  %1 = icmp ult i64 %0, 4
-  ret i1 %1
-}
-
-; 9 occurrences:
+; 10 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; meilisearch-rs/optimized/2eqafq69fd46y14a.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
@@ -236,6 +238,7 @@ entry:
 ; redis/optimized/object.ll
 ; redis/optimized/quicklist.ll
 ; z3/optimized/hilbert_basis.cpp.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0) #0 {
 entry:
@@ -243,10 +246,11 @@ entry:
   ret i1 %1
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; eastl/optimized/EAMemory.cpp.ll
 ; hermes/optimized/Triple.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
+; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
@@ -255,16 +259,35 @@ entry:
   ret i1 %1
 }
 
-; 5 occurrences:
+; 2 occurrences:
+; php/optimized/zend_jit.ll
+; redis/optimized/object.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0) #0 {
+entry:
+  %1 = icmp ult i64 %0, 1073741824
+  ret i1 %1
+}
+
+; 3 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; gromacs/optimized/tng_io.c.ll
-; spike/optimized/f128_classify.ll
 ; spike/optimized/f128_to_ui64.ll
-; spike/optimized/f64_classify.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = icmp sgt i64 %0, -1
+  ret i1 %1
+}
+
+; 3 occurrences:
+; cvc5/optimized/tangent_plane_check.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0) #0 {
+entry:
+  %1 = icmp ult i64 %0, 2
   ret i1 %1
 }
 

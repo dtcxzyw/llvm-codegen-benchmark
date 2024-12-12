@@ -1,5 +1,5 @@
 
-; 264 occurrences:
+; 263 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -7,6 +7,7 @@
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/nlp_builder.cpp.ll
 ; casadi/optimized/optistack_internal.cpp.ll
@@ -129,8 +130,6 @@
 ; php/optimized/ir.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -271,7 +270,7 @@ entry:
   ret i32 %1
 }
 
-; 12 occurrences:
+; 61 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; brotli/optimized/encode.c.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -284,6 +283,55 @@ entry:
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; zed-rs/optimized/0e9rir1vw7pjj8ded1rj85jpj.ll
+; zed-rs/optimized/0oq3e593i742h6k86do1vh2be.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0x2swxz4m93xo6c0jggy1zzvx.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1cpj87wsqkxbe2geqt8ug0aw9.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1vv5j9nlfivum07q3z96mzhlk.ll
+; zed-rs/optimized/20kfz4gqlv1t1gmkf0vxm6kb9.ll
+; zed-rs/optimized/2yt2vm9z2vbxih768weso8evd.ll
+; zed-rs/optimized/35m4w66vj9d6yjwnspezb0ps3.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/3k8x435wqn3srsqrie72arxas.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4s90nryp2sd1isdzx27flv90w.ll
+; zed-rs/optimized/5mrql99db5sil2ntw6vc8xwm4.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/6r3dn74hs4qkhjs23erjoyfu5.ll
+; zed-rs/optimized/71k8ury3588uqug79u2rdi0ed.ll
+; zed-rs/optimized/77ogqz9engf51b7te1l766i6q.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/8r5u9ao6qkcy5gha5pe8bos87.ll
+; zed-rs/optimized/8xwgf3aybfacqh70ylmbrh1fx.ll
+; zed-rs/optimized/9awmqr28bdho83r0fgrej0t00.ll
+; zed-rs/optimized/9cizhrhs33hhpljcbaafslqcf.ll
+; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
+; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/ayy5pqcx1yuz6kdx9ooq2ruee.ll
+; zed-rs/optimized/b6ps497cu7xjd0as5oqedkmfl.ll
+; zed-rs/optimized/b6uky6p5knfjtl24nerxiq7a4.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/byetpqxts7g45vq87gqqiy5uv.ll
+; zed-rs/optimized/cduevwc35y9sft7fkag2yiivm.ll
+; zed-rs/optimized/ch3ywh4ed1oz4ae4c1dkspuyz.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/cxlqmmvav043ysf0ch7gnqa6v.ll
+; zed-rs/optimized/d0whdpjvgd1qxjh8s9itwdzf0.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/dyu8ahcv7l11k0z44ye6uqxem.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e4huo4knej864yphleo1svzpt.ll
+; zed-rs/optimized/ee1yr8tj4rkowsicwkrwxirqa.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0) #0 {
 entry:
@@ -418,9 +466,8 @@ entry:
   ret i32 %1
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/ip6_flowlabel.ll
-; linux/optimized/scsicam.ll
 ; postgres/optimized/detoast.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0) #0 {

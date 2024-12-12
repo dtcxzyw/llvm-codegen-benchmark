@@ -12,7 +12,7 @@ entry:
   ret i8 %5
 }
 
-; 32 occurrences:
+; 36 occurrences:
 ; cpython/optimized/textio.ll
 ; flac/optimized/stream_encoder.c.ll
 ; git/optimized/merge-ort.ll
@@ -37,6 +37,10 @@ entry:
 ; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/Warnings.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_demo_render.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_refr.ll
 ; minetest/optimized/game.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll

@@ -1,10 +1,9 @@
 
-; 266 occurrences:
+; 207 occurrences:
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/acecCl.c.ll
 ; abc/optimized/aigOper.c.ll
 ; abc/optimized/cuddDecomp.c.ll
-; abc/optimized/cuddSat.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -37,7 +36,6 @@
 ; folly/optimized/OpenSSLHash.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
-; icu/optimized/uconv.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -116,69 +114,12 @@
 ; nlohmann_json/optimized/unit-bson.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; openjdk/optimized/jvm.ll
-; openjdk/optimized/loopopts.ll
 ; openjdk/optimized/superword.ll
 ; openjdk/optimized/superwordVTransformBuilder.ll
 ; openjdk/optimized/vectorization.ll
 ; openjdk/optimized/whitebox.ll
-; openusd/optimized/aggregateNode.cpp.ll
-; openusd/optimized/aggregateTreeBuilder.cpp.ll
-; openusd/optimized/authoring.cpp.ll
-; openusd/optimized/basisCurves.cpp.ll
-; openusd/optimized/basisCurvesTopology.cpp.ll
-; openusd/optimized/changes.cpp.ll
-; openusd/optimized/collectionAPI.cpp.ll
-; openusd/optimized/collectionAPIAdapter.cpp.ll
-; openusd/optimized/collectionMembershipQuery.cpp.ll
-; openusd/optimized/collectionPredicateLibrary.cpp.ll
-; openusd/optimized/containerDataSourceEditor.cpp.ll
-; openusd/optimized/coordSysAPI.cpp.ll
-; openusd/optimized/copyUtils.cpp.ll
-; openusd/optimized/dataSourceLegacyPrim.cpp.ll
-; openusd/optimized/dataSourceMaterial.cpp.ll
-; openusd/optimized/dataSourcePrimvars.cpp.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/drawModeAdapter.cpp.ll
-; openusd/optimized/drawModeStandin.cpp.ll
-; openusd/optimized/driveAPI.cpp.ll
-; openusd/optimized/eventTree.cpp.ll
-; openusd/optimized/flattenedDirectMaterialBindingsDataSourceProvider.cpp.ll
-; openusd/optimized/glslfxResourceLayout.cpp.ll
-; openusd/optimized/input.cpp.ll
-; openusd/optimized/layer.cpp.ll
-; openusd/optimized/limitAPI.cpp.ll
-; openusd/optimized/listOp.cpp.ll
-; openusd/optimized/mesh.cpp.ll
-; openusd/optimized/output.cpp.ll
-; openusd/optimized/overlayContainerDataSource.cpp.ll
-; openusd/optimized/parserHelpers.cpp.ll
-; openusd/optimized/pathNode.cpp.ll
-; openusd/optimized/primAdapter.cpp.ll
-; openusd/optimized/primDataSourceOverlayCache.cpp.ll
-; openusd/optimized/primTypeInfoCache.cpp.ll
-; openusd/optimized/refinerFactory.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/reporter.cpp.ll
-; openusd/optimized/retainedDataSource.cpp.ll
-; openusd/optimized/rprim.cpp.ll
-; openusd/optimized/sceneIndex.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/shaderDefUtils.cpp.ll
-; openusd/optimized/spec.cpp.ll
-; openusd/optimized/stageSceneIndex.cpp.ll
-; openusd/optimized/subdivTags.cpp.ll
-; openusd/optimized/testHdBufferSpec.cpp.ll
-; openusd/optimized/testSdfPathThreading.cpp.ll
-; openusd/optimized/testTraceCounters.cpp.ll
-; openusd/optimized/testUsdImagingDelegateChanges.cpp.ll
-; openusd/optimized/testUsdSchemaRegistryCpp.cpp.ll
-; openusd/optimized/testUsdStageNotification.cpp.ll
-; openusd/optimized/typeRegistry.cpp.ll
-; openusd/optimized/unitTestNullRenderDelegate.cpp.ll
-; openusd/optimized/valueTypeName.cpp.ll
-; openusd/optimized/valueTypeRegistry.cpp.ll
-; openusd/optimized/variableExpressionImpl.cpp.ll
 ; php/optimized/string.ll
 ; php/optimized/url_scanner_ex.ll
 ; postgres/optimized/tsvector_op.ll
@@ -275,7 +216,7 @@ entry:
   ret i64 %5
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
@@ -295,7 +236,6 @@ entry:
 ; opencv/optimized/tf_graph_simplifier.cpp.ll
 ; opencv/optimized/tf_importer.cpp.ll
 ; postgres/optimized/network.ll
-; postgres/optimized/tid.ll
 ; postgres/optimized/varchar.ll
 ; postgres/optimized/varlena.ll
 ; rocksdb/optimized/compacted_db_impl.cc.ll
@@ -343,9 +283,9 @@ entry:
 ; openusd/optimized/lz4.cpp.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000018(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 65536
+  %3 = icmp samesign ugt i32 %2, 65536
   %4 = select i1 %3, ptr %0, ptr %1
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5

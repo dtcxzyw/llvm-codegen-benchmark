@@ -8,7 +8,7 @@ func0000000000000040:                   // @func0000000000000040
 	madd	x9, x3, x8, x9
 	mul	x8, x2, x8
 	eor	x8, x9, x8
-	add	x0, x8, x0
+	add	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000060:                   // @func0000000000000060
@@ -21,6 +21,6 @@ func0000000000000060:                   // @func0000000000000060
 	madd	x9, x3, x8, x9
 	mul	x8, x2, x8
 	eor	x8, x9, x8
-	add	x0, x8, x0
+	add	x0, x0, x8
 	ret
                                         // -- End function

@@ -15,7 +15,7 @@
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; slurm/optimized/cgroup_v2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0) #0 {
+define i1 @func0000000000000421(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -2
   %2 = icmp ult i32 %1, 3
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/cgroup_v2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0) #0 {
+define i1 @func000000000000042c(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 7
   ret i1 %1

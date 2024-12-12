@@ -13,7 +13,7 @@
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sext i16 %0 to i32
@@ -33,7 +33,7 @@ entry:
 ; openusd/optimized/faceSurface.cpp.ll
 ; postgres/optimized/analyzejoins.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp sgt i16 %0, %1
   ret i1 %2
@@ -43,7 +43,7 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; openusd/optimized/faceSurface.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %0, %1
   ret i1 %2

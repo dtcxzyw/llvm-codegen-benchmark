@@ -14,7 +14,7 @@ func0000000000000002:                   # @func0000000000000002
 	vor.vi	v8, v8, 2, v0.t
 	vor.vi	v8, v8, 4
 	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vv	v10, v10, v12
 	vmseq.vi	v0, v8, 0
@@ -24,7 +24,7 @@ func0000000000000023:                   # @func0000000000000023
 	addi	a0, a0, -128
 	vor.vx	v8, v10, a0
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000d4:                   # @func00000000000000d4
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vv	v10, v10, v12
 	li	a0, 24

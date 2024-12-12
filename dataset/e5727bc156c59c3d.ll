@@ -8,7 +8,7 @@ define i128 @func0000000000000007(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw nsw i128 %1, %2
   %4 = and i128 %3, 18446744073709551615
-  %5 = or disjoint i128 %4, %0
+  %5 = or disjoint i128 %0, %4
   ret i128 %5
 }
 
@@ -22,7 +22,7 @@ define i128 @func0000000000000001(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add i128 %1, %2
   %4 = and i128 %3, 18446744073709551615
-  %5 = or disjoint i128 %4, %0
+  %5 = or disjoint i128 %0, %4
   ret i128 %5
 }
 
@@ -34,7 +34,7 @@ define i128 @func0000000000000005(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw i128 %1, %2
   %4 = and i128 %3, 18446726481523507200
-  %5 = or disjoint i128 %4, %0
+  %5 = or disjoint i128 %0, %4
   ret i128 %5
 }
 
@@ -45,7 +45,7 @@ define i128 @func0000000000000003(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nsw i128 %1, %2
   %4 = and i128 %3, 18446744073709551615
-  %5 = or disjoint i128 %4, %0
+  %5 = or disjoint i128 %0, %4
   ret i128 %5
 }
 

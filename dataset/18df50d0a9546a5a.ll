@@ -7,7 +7,7 @@
 ; php/optimized/pcre2_match.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = or disjoint i32 %2, %0
@@ -23,7 +23,7 @@ entry:
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 7
   %3 = or disjoint i32 %2, %0
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/ethtool.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = or disjoint i32 %2, %0

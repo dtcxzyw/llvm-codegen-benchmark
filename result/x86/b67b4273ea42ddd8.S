@@ -5,7 +5,7 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func0000000000000005:                   # @func0000000000000005
 	shrl	$4, %esi
-	leal	-2048(%rsi,%rdi), %eax
+	leal	-2048(%rdi,%rsi), %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	shrl	$31, %esi
@@ -13,5 +13,5 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000007:                   # @func0000000000000007
 	shrl	$6, %esi
-	leal	1(%rsi,%rdi), %eax
+	leal	1(%rdi,%rsi), %eax
 	retq

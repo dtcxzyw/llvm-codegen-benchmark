@@ -20,20 +20,19 @@ entry:
   %3 = zext i1 %2 to i64
   %4 = and i64 %1, -4
   %5 = or disjoint i64 %4, %3
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = and i64 %1, 281474976710655
   %5 = or i64 %4, %3
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -45,7 +44,7 @@ entry:
   %3 = zext i1 %2 to i64
   %4 = and i64 %1, 31
   %5 = or i64 %4, %3
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 

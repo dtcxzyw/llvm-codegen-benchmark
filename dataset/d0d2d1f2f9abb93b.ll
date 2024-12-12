@@ -1,5 +1,6 @@
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/work_stealing.ll
 ; duckdb/optimized/ub_duckdb_bind_query_node.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; hyperscan/optimized/buildstate.cpp.ll
@@ -21,7 +22,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1442695040888963407
   %4 = urem i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 

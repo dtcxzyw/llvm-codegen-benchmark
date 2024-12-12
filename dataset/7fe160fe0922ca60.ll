@@ -1,7 +1,8 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; qemu/optimized/util_host-utils.c.ll

@@ -1,9 +1,7 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
-; cmake/optimized/noproxy.c.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
-; curl/optimized/libcurl_la-noproxy.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; grpc/optimized/xds_api.cc.ll
 ; grpc/optimized/xds_cluster.cc.ll
@@ -15,6 +13,7 @@
 ; openssl/optimized/libssl-lib-tls_common.ll
 ; openssl/optimized/libssl-shlib-tls_common.ll
 ; quickjs/optimized/libbf.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
@@ -33,7 +32,7 @@ entry:
 ; openssl/optimized/servername_test-bin-servername_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -34
   %3 = select i1 %0, i64 %2, i64 %1
@@ -45,7 +44,7 @@ entry:
 ; eastl/optimized/EATest.cpp.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1000000
   %3 = select i1 %0, i64 %2, i64 %1
@@ -78,7 +77,7 @@ entry:
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -131042
   %3 = select i1 %0, i64 %2, i64 %1
@@ -87,13 +86,13 @@ entry:
 }
 
 ; 1 occurrences:
-; libquic/optimized/d1_lib.c.ll
+; boost/optimized/to_chars.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 1000000
+  %2 = add nsw i64 %1, -256
   %3 = select i1 %0, i64 %2, i64 %1
-  %4 = icmp slt i64 %3, 15000
+  %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
 

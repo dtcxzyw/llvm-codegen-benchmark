@@ -1,5 +1,5 @@
 
-; 190 occurrences:
+; 188 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/cuddCheck.c.ll
 ; abc/optimized/cuddDecomp.c.ll
@@ -100,7 +100,6 @@
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftRigidDynamicsWorld.ll
-; bullet3/optimized/btSoftSoftCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereSphereCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
@@ -181,7 +180,6 @@
 ; ruby/optimized/regexec.ll
 ; ruby/optimized/sprintf.ll
 ; ruby/optimized/symbol.ll
-; slurm/optimized/block_record.ll
 ; slurm/optimized/switch_record.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
@@ -199,7 +197,7 @@ entry:
   ret i64 %4
 }
 
-; 104 occurrences:
+; 91 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcGen.c.ll
@@ -211,7 +209,6 @@ entry:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/cbaBlast.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -225,7 +222,6 @@ entry:
 ; abc/optimized/giaCut.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaEra.c.ll
-; abc/optimized/giaFanout.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -234,7 +230,6 @@ entry:
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/hopTruth.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -244,9 +239,7 @@ entry:
 ; abc/optimized/kitIsop.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/luckySwap.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/rsbDec6.c.ll
@@ -270,22 +263,15 @@ entry:
 ; libevent/optimized/evutil.c.ll
 ; libuv/optimized/inet.c.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
-; linux/optimized/i8042.ll
-; linux/optimized/nfs4trace.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; node/optimized/inet.ll
 ; nori/optimized/nanovg.c.ll
-; openblas/optimized/dorcsd.c.ll
-; openblas/optimized/dorcsd2by1.c.ll
-; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/beblid.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
-; opencv/optimized/lsc.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; opencv/optimized/synthetic_seq.cpp.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
 ; openusd/optimized/grain_synthesis.c.ll
@@ -299,7 +285,6 @@ entry:
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
 ; raylib/optimized/rmodels.c.ll
-; redis/optimized/module.ll
 ; ruby/optimized/iseq.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image.c.ll
@@ -313,7 +298,61 @@ entry:
   ret i64 %4
 }
 
-; 433 occurrences:
+; 17 occurrences:
+; abc/optimized/abcDec.c.ll
+; abc/optimized/abcExact.c.ll
+; abc/optimized/abcRpo.c.ll
+; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauTree.c.ll
+; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/giaDecs.c.ll
+; abc/optimized/giaMfs.c.ll
+; abc/optimized/giaTruth.c.ll
+; abc/optimized/ifDec16.c.ll
+; abc/optimized/ifDec75.c.ll
+; abc/optimized/ifDsd.c.ll
+; abc/optimized/ifMap.c.ll
+; abc/optimized/luckyRead.c.ll
+; qemu/optimized/ui_vnc-enc-zrle.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 2
+  %3 = select i1 %2, i32 0, i32 %0
+  %4 = sext i32 %3 to i64
+  ret i64 %4
+}
+
+; 17 occurrences:
+; graphviz/optimized/exeval.c.ll
+; gromacs/optimized/dger.cpp.ll
+; gromacs/optimized/sger.cpp.ll
+; icu/optimized/locavailable.ll
+; luau/optimized/BytecodeBuilder.cpp.ll
+; opencv/optimized/bgfg.cpp.ll
+; opencv/optimized/spatialgradient.cpp.ll
+; openjdk/optimized/mlib_ImageConv_16ext.ll
+; openjdk/optimized/mlib_ImageConv_16nw.ll
+; openjdk/optimized/mlib_ImageConv_32nw.ll
+; openjdk/optimized/mlib_ImageConv_8ext.ll
+; openjdk/optimized/mlib_ImageConv_8nw.ll
+; openjdk/optimized/mlib_ImageConv_D64nw.ll
+; openjdk/optimized/mlib_ImageConv_F32nw.ll
+; openjdk/optimized/mlib_ImageConv_u16ext.ll
+; openjdk/optimized/mlib_ImageConv_u16nw.ll
+; slurm/optimized/hostlist.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, 14
+  %3 = select i1 %2, i32 7, i32 %0
+  %4 = sext i32 %3 to i64
+  ret i64 %4
+}
+
+; 414 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -328,7 +367,6 @@ entry:
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcCut.c.ll
 ; abc/optimized/abcDar.c.ll
-; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcDress2.c.ll
@@ -360,7 +398,6 @@ entry:
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcOrder.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/abcQbf.c.ll
@@ -368,7 +405,6 @@ entry:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcResub.c.ll
-; abc/optimized/abcRpo.c.ll
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/abcSat.c.ll
 ; abc/optimized/abcSaucy.c.ll
@@ -408,7 +444,6 @@ entry:
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/acecRe.c.ll
-; abc/optimized/acecSt.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/aigDfs.c.ll
@@ -471,7 +506,6 @@ entry:
 ; abc/optimized/cecSynth.c.ll
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/cgtDecide.c.ll
-; abc/optimized/cgtMan.c.ll
 ; abc/optimized/cmdPlugin.c.ll
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/cnfMan.c.ll
@@ -484,13 +518,11 @@ entry:
 ; abc/optimized/darBalance.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/disjunctiveMonotone.c.ll
-; abc/optimized/exor.c.ll
 ; abc/optimized/extraUtilCube.c.ll
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/extraUtilMacc.c.ll
@@ -590,12 +622,10 @@ entry:
 ; abc/optimized/hopDfs.c.ll
 ; abc/optimized/ifCache.c.ll
 ; abc/optimized/ifDec16.c.ll
-; abc/optimized/ifDec75.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifReduce.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTest.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/ifTune.c.ll
@@ -634,8 +664,6 @@ entry:
 ; abc/optimized/llb4Sweep.c.ll
 ; abc/optimized/lpkCore.c.ll
 ; abc/optimized/ltl_parser.c.ll
-; abc/optimized/luckyRead.c.ll
-; abc/optimized/mapperVec.c.ll
 ; abc/optimized/mfsDiv.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/mioSop.c.ll
@@ -647,7 +675,6 @@ entry:
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/msatVec.c.ll
-; abc/optimized/nmApi.c.ll
 ; abc/optimized/nwkAig.c.ll
 ; abc/optimized/nwkFlow.c.ll
 ; abc/optimized/nwkMap.c.ll
@@ -689,7 +716,6 @@ entry:
 ; abc/optimized/saigWnd.c.ll
 ; abc/optimized/satInterP.c.ll
 ; abc/optimized/satProof.c.ll
-; abc/optimized/satSolver2i.c.ll
 ; abc/optimized/sbd.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdCut.c.ll
@@ -708,7 +734,6 @@ entry:
 ; abc/optimized/simUtils.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sscSat.c.ll
-; abc/optimized/sscUtil.c.ll
 ; abc/optimized/sswIslands.c.ll
 ; abc/optimized/sswPairs.c.ll
 ; abc/optimized/sswRarity.c.ll
@@ -732,53 +757,21 @@ entry:
 ; abc/optimized/wlcReadVer.c.ll
 ; abc/optimized/wlcSim.c.ll
 ; abc/optimized/wlcStdin.c.ll
-; abc/optimized/wlcUif.c.ll
 ; abc/optimized/wlnNtk.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; abc/optimized/wlnRetime.c.ll
 ; abc/optimized/wlnWlc.c.ll
 ; abc/optimized/xsatCnfReader.c.ll
 ; abc/optimized/xsatSolver.c.ll
-; glslang/optimized/PoolAlloc.cpp.ll
 ; graphviz/optimized/emit.c.ll
 ; linux/optimized/cacheinfo.ll
-; openssl/optimized/libcrypto-lib-ec_deprecated.ll
-; openssl/optimized/libcrypto-shlib-ec_deprecated.ll
-; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Param.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 15
-  %3 = select i1 %2, i32 1, i32 %0
-  %4 = sext i32 %3 to i64
-  ret i64 %4
-}
-
-; 17 occurrences:
-; graphviz/optimized/exeval.c.ll
-; gromacs/optimized/dger.cpp.ll
-; gromacs/optimized/sger.cpp.ll
-; icu/optimized/locavailable.ll
-; luau/optimized/BytecodeBuilder.cpp.ll
-; opencv/optimized/bgfg.cpp.ll
-; opencv/optimized/spatialgradient.cpp.ll
-; openjdk/optimized/mlib_ImageConv_16ext.ll
-; openjdk/optimized/mlib_ImageConv_16nw.ll
-; openjdk/optimized/mlib_ImageConv_32nw.ll
-; openjdk/optimized/mlib_ImageConv_8ext.ll
-; openjdk/optimized/mlib_ImageConv_8nw.ll
-; openjdk/optimized/mlib_ImageConv_D64nw.ll
-; openjdk/optimized/mlib_ImageConv_F32nw.ll
-; openjdk/optimized/mlib_ImageConv_u16ext.ll
-; openjdk/optimized/mlib_ImageConv_u16nw.ll
-; slurm/optimized/hostlist.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, 14
-  %3 = select i1 %2, i32 7, i32 %0
+  %2 = icmp ult i32 %1, -26
+  %3 = select i1 %2, i32 90, i32 %0
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -794,9 +787,8 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/aigTiming.c.ll
-; ozz-animation/optimized/skinning_job.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:

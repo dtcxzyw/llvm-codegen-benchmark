@@ -119,7 +119,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp slt i32 %4, 1
   ret i1 %5
 }
@@ -129,7 +129,7 @@ entry:
 ; linux/optimized/yenta_socket.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
   %4 = or disjoint i32 %3, %0

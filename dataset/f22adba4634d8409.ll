@@ -25,10 +25,10 @@ entry:
 ; lief/optimized/ssl_msg.c.ll
 ; linux/optimized/fhandle.ll
 ; linux/optimized/kobject_uevent.ll
-; linux/optimized/xattr.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_textarea.ll
 ; ocio/optimized/Lut1DOpData.cpp.ll
 ; opencv/optimized/solvepnp.cpp.ll
 ; openmpi/optimized/pmix_server_ops.ll
@@ -46,7 +46,14 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 11 occurrences:
+; boost/optimized/console_buffer.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_fs.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_stackstring.ll
 ; cmake/optimized/archive_string.c.ll
 ; jq/optimized/builtin.ll
 ; jq/optimized/jv.ll
@@ -60,9 +67,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
-; icu/optimized/utf_impl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i1 %1) #0 {
 entry:

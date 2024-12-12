@@ -1,5 +1,7 @@
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; openjdk/optimized/g1IHOPControl.ll
 ; Function Attrs: nounwind
@@ -8,6 +10,19 @@ entry:
   %3 = fcmp ogt double %2, 0.000000e+00
   %4 = select i1 %3, double %2, double 0.000000e+00
   %5 = select i1 %0, double %1, double 0.000000e+00
+  %6 = fmul double %5, %4
+  ret double %6
+}
+
+; 2 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; Function Attrs: nounwind
+define double @func0000000000000002(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp olt double %2, 1.000000e+00
+  %4 = select i1 %3, double %2, double 1.000000e+00
+  %5 = select i1 %0, double %1, double 1.000000e-03
   %6 = fmul double %5, %4
   ret double %6
 }

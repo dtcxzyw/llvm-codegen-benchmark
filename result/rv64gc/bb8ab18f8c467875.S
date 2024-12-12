@@ -9,7 +9,6 @@ func0000000000000007:                   # @func0000000000000007
 	and	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	slliw	a0, a0, 8
-	lui	a1, 1044480
-	and	a0, a0, a1
+	andi	a0, a0, -256
+	slliw	a0, a0, 16
 	ret

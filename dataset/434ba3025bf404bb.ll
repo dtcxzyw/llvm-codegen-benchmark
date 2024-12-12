@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = xor i64 %0, -1
@@ -38,7 +38,7 @@ entry:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = xor i64 %0, -1
@@ -55,7 +55,7 @@ entry:
 ; llvm/optimized/Utility.cpp.ll
 ; nuttx/optimized/mm_memalign.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 6
   %3 = xor i64 %0, -1
@@ -70,7 +70,7 @@ entry:
 ; linux/optimized/select.ll
 ; llvm/optimized/DataExtractor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c9(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000189(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = xor i64 %0, -1
@@ -81,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/mpih-div.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000109(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = xor i64 %0, -1

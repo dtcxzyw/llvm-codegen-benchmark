@@ -1,30 +1,19 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v6.2d, #0xffffffffffffffff
-	fneg	v7.2d, v6.2d
-	cmeq	v5.2d, v5.2d, v6.2d
-	cmeq	v4.2d, v4.2d, v6.2d
-	and	v3.16b, v3.16b, v5.16b
-	and	v2.16b, v2.16b, v4.16b
-	and	v1.16b, v1.16b, v7.16b
-	and	v0.16b, v0.16b, v7.16b
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
+	cmn	x2, #1
+	and	x9, x0, #0x7fffffffffffffff
+	csel	x8, x1, xzr, eq
+	orr	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	mov	x8, #-65409                     // =0xffffffffffff007f
-	cmeq	v5.2d, v5.2d, #0
-	cmeq	v4.2d, v4.2d, #0
+	cmp	x2, #0
 	movk	x8, #8191, lsl #16
+	csel	x9, x0, xzr, eq
 	movk	x8, #49183, lsl #32
-	dup	v6.2d, x8
-	and	v1.16b, v1.16b, v5.16b
-	and	v0.16b, v0.16b, v4.16b
-	and	v3.16b, v3.16b, v6.16b
-	and	v2.16b, v2.16b, v6.16b
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
+	and	x8, x1, x8
+	orr	x0, x9, x8
 	ret
                                         // -- End function

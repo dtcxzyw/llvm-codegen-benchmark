@@ -2,24 +2,24 @@
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc nuw nsw i64 %4 to i32
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc nuw nsw i64 %4 to i32
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
@@ -28,12 +28,12 @@ entry:
 ; linux/optimized/mballoc.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000106(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
@@ -103,17 +103,18 @@ entry:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
-; 178 occurrences:
+; 179 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/fse_compress.c.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -292,16 +293,17 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
-; 173 occurrences:
+; 174 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/unicodeobject.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -476,12 +478,12 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
@@ -493,19 +495,19 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp ne i32 %5, %0
+  %6 = icmp ne i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/balloc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000010a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
@@ -519,7 +521,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
@@ -531,7 +533,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp ule i32 %5, %0
+  %6 = icmp uge i32 %0, %5
   ret i1 %6
 }
 

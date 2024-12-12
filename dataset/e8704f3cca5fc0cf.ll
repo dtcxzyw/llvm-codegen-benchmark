@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 61 occurrences:
 ; assimp/optimized/FBXUtil.cpp.ll
 ; cjson/optimized/cJSON.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -16,8 +16,6 @@
 ; lief/optimized/bignum.c.ll
 ; lief/optimized/ecp_curves.c.ll
 ; linux/optimized/callchain.ll
-; linux/optimized/generic_mpih-add1.ll
-; linux/optimized/generic_mpih-sub1.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
@@ -54,6 +52,14 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
+; zed-rs/optimized/9fz5l76t5byggb8exxkeuxjql.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i1 %1) #0 {

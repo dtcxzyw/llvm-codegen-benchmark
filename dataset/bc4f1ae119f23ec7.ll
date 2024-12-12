@@ -1,5 +1,6 @@
 
-; 117 occurrences:
+; 118 occurrences:
+; boost/optimized/operations.ll
 ; c3c/optimized/build_options.c.ll
 ; c3c/optimized/c_abi.c.ll
 ; c3c/optimized/parse_expr.c.ll

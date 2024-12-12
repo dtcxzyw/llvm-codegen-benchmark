@@ -14,7 +14,7 @@ func0000000000000031:                   # @func0000000000000031
 	bge	a2, a3, .LBB1_2
 	li	a1, 1
 .LBB1_2:                                # %entry
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a2, a2
@@ -44,7 +44,7 @@ func0000000000000030:                   # @func0000000000000030
 	bge	a2, a3, .LBB5_2
 	li	a1, 16
 .LBB5_2:                                # %entry
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret

@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; linux/optimized/ff-memless.ll
 ; linux/optimized/lib.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; openspiel/optimized/oh_hell_test.cc.ll
@@ -23,10 +24,11 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; darktable/optimized/timeline.c.ll
 ; linux/optimized/seq_timer.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; quantlib/optimized/date.ll
 ; wireshark/optimized/packet-canopen.c.ll
 ; wireshark/optimized/packet-mms.c.ll

@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_qcow.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub i64 %1, %3
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 262140
   %4 = sub i64 %3, %1
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -8
   %4 = sub i64 %3, %1
@@ -77,11 +77,11 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/quic_sent_entropy_manager.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000042a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = sub i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp sgt i64 %5, -1
   ret i1 %6
 }
@@ -89,19 +89,19 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/quic_sent_entropy_manager.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000214(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000434(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = sub i64 %3, %1
-  %5 = add nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 512
+  %5 = add nsw i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 512
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; libquic/optimized/hpack_header_table.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000012a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub i64 %1, %3
@@ -112,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/hpack_header_table.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000134(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub i64 %1, %3

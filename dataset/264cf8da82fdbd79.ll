@@ -112,9 +112,8 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/frameobject.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/tg3.ll
 ; postgres/optimized/varbit.ll

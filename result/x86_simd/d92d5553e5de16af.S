@@ -38,7 +38,7 @@ func000000000000000e:                   # @func000000000000000e
 	vpmovd2m	%xmm2, %k1
 	vpsllq	$52, %ymm1, %ymm1
 	vporq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1 {%k1}
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.quad	3                               # 0x3
@@ -47,5 +47,5 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovd2m	%xmm2, %k1
 	vpsllq	$2, %ymm1, %ymm1
 	vporq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1 {%k1}
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

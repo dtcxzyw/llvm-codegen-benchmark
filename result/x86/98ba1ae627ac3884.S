@@ -32,6 +32,21 @@ func0000000000000003:                   # @func0000000000000003
 	leal	56(,%rsi,4), %eax
 	addq	%rdi, %rax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	leaq	15(,%rsi,8), %rax
+	andq	$-16, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000002a:                   # @func000000000000002a
+	leaq	15(,%rsi,8), %rax
+	andq	$-16, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	leaq	19(,%rsi,4), %rax
+	andq	$-16, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000014:                   # @func0000000000000014
 	leaq	7(,%rsi,4), %rax
 	andq	$-8, %rax

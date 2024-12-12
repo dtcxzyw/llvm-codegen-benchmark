@@ -13,7 +13,7 @@ func000000000000000d:                   # @func000000000000000d
 	.quad	2                               # 0x2
 func0000000000000008:                   # @func0000000000000008
 	vpsrlq	$21, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm2
+	vpor	%ymm2, %ymm0, %ymm2
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm0
 	vpternlogq	$254, .LCPI1_1(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq

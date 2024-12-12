@@ -63,13 +63,13 @@
 ; nix/optimized/globals.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000063(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 63
   %4 = trunc nuw nsw i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -79,13 +79,13 @@ entry:
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; opencv/optimized/ts_perf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000082(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000083(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i16, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i16, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -96,7 +96,7 @@ define ptr @func0000000000000060(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = trunc nuw nsw i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
   %7 = getelementptr i32, ptr %0, i64 %6
   ret ptr %7
@@ -109,13 +109,13 @@ entry:
 ; llvm/optimized/VPlan.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -124,13 +124,13 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -139,13 +139,13 @@ entry:
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000086(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000087(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 

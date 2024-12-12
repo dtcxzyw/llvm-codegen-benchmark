@@ -1,11 +1,10 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; git/optimized/blame.ll
 ; icu/optimized/genbrk.ll
 ; icu/optimized/locid.ll
 ; icu/optimized/unistr.ll
 ; icu/optimized/unistr_case.ll
-; linux/optimized/decompress_unlz4.ll
 ; oiio/optimized/environment.cpp.ll
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; oiio/optimized/printinfo.cpp.ll

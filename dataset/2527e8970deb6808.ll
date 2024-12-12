@@ -1,9 +1,9 @@
 
-; 96 occurrences:
+; 93 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
-; entt/optimized/version.cpp.ll
 ; faiss/optimized/index_factory.cpp.ll
 ; glog/optimized/logging.cc.ll
 ; gromacs/optimized/matio.cpp.ll
@@ -67,7 +67,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -91,10 +90,8 @@
 ; spike/optimized/spike-log-parser.ll
 ; vcpkg/optimized/tools.cpp.ll
 ; xgboost/optimized/context.cc.ll
-; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {

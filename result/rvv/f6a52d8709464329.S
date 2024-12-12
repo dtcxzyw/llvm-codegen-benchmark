@@ -1,50 +1,43 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vx	v0, v10, a0
 	vrsub.vx	v8, v12, a0, v0.t
 	vmsgt.vi	v0, v8, 0
 	ret
-func000000000000016c:                   # @func000000000000016c
+func00000000000004cc:                   # @func00000000000004cc
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v10, -1
 	vrsub.vi	v8, v12, 0, v0.t
 	vmsne.vi	v0, v8, 0
 	ret
-func0000000000000166:                   # @func0000000000000166
+func00000000000004c6:                   # @func00000000000004c6
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v10, -1
 	vrsub.vi	v8, v12, 0, v0.t
 	vmsle.vi	v0, v8, 0
 	ret
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v10, -1
 	vrsub.vi	v8, v12, 0, v0.t
 	vmsgt.vi	v0, v8, 0
 	ret
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	li	a0, 126
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vx	v0, v10, a0
 	vrsub.vx	v8, v12, a0, v0.t
 	vmsle.vi	v0, v8, -1
 	ret
-func0000000000000388:                   # @func0000000000000388
-	lui	a0, 32
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v0, v10, a0
-	vrsub.vx	v8, v12, a0, v0.t
-	vmsgtu.vi	v0, v8, 8
-	ret
-func0000000000000266:                   # @func0000000000000266
+func00000000000008c6:                   # @func00000000000008c6
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v10, -1
 	lui	a0, 524288
 	vrsub.vx	v8, v12, a0, v0.t
 	vmsle.vi	v0, v8, -1
 	ret
-func0000000000000264:                   # @func0000000000000264
+func00000000000008c4:                   # @func00000000000008c4
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v10, -1
 	lui	a0, 524288

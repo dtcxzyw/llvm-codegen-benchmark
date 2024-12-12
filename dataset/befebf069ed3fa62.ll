@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; hwloc/optimized/topology-synthetic.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/libata-core.ll
@@ -13,6 +13,7 @@
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; z3/optimized/expr_pattern_match.cpp.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

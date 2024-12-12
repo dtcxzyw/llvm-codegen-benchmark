@@ -6,7 +6,7 @@
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(i64 %0) #0 {
+define i64 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 4
   %2 = add nsw i64 %1, -1

@@ -9,7 +9,7 @@ define i64 @func0000000000000020(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw i128 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul i64 %4, -4417276706812531889
   ret i64 %5
 }
@@ -36,8 +36,20 @@ define i64 @func000000000000002a(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = mul nuw i64 %4, 10
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i128 %1) #0 {
+entry:
+  %2 = lshr i128 %1, 64
+  %3 = trunc nuw nsw i128 %2 to i64
+  %4 = add nuw nsw i64 %0, %3
+  %5 = mul nuw nsw i64 %4, 1441151881
   ret i64 %5
 }
 

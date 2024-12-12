@@ -13,7 +13,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movq	%rdi, %rdx
 	shrq	$3, %rdx
 	movabsq	$2361183241434822607, %rax      # imm = 0x20C49BA5E353F7CF
@@ -24,7 +24,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$100, %rdi
 	setae	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movabsq	$3373118916335460867, %rax      # imm = 0x2ECFB9C869536203
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
@@ -33,4 +33,10 @@ func0000000000000004:                   # @func0000000000000004
 	subq	%rax, %rdi
 	cmpq	$350, %rdi                      # imm = 0x15E
 	setb	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movb	$1, %al
 	retq

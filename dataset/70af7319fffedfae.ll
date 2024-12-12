@@ -7,7 +7,7 @@ entry:
   %2 = and i64 %1, 3
   %3 = icmp eq i64 %2, 3
   %4 = zext i1 %3 to i64
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -20,16 +20,12 @@ entry:
   %2 = and i64 %1, 3
   %3 = icmp eq i64 %2, 3
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
 
-; 11 occurrences:
-; abc/optimized/cecSatG3.c.ll
-; abc/optimized/extraUtilBitMatrix.c.ll
-; abc/optimized/ifMan.c.ll
-; abc/optimized/ivyCutTrav.c.ll
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; jemalloc/optimized/sc.ll
@@ -43,7 +39,7 @@ entry:
   %2 = and i64 %1, 63
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -56,7 +52,7 @@ entry:
   %2 = and i64 %1, 4095
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -70,7 +66,7 @@ entry:
   %2 = and i64 %1, 7
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = trunc nsw i64 %5 to i32
   ret i32 %6
 }

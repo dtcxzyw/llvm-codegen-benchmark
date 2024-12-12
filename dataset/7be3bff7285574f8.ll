@@ -11,27 +11,26 @@ entry:
 }
 
 ; 3 occurrences:
+; coreutils-rs/optimized/3q8ukvkopatfv0x0.ll
+; hdf5/optimized/H5Oalloc.c.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = xor i64 %0, -1
+  %3 = add i64 %1, %2
+  %4 = mul i64 %3, 48
+  ret i64 %4
+}
+
+; 1 occurrences:
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000035(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 68569
   %3 = sub nsw i64 %2, %0
   %4 = mul nsw i64 %3, 4000
-  ret i64 %4
-}
-
-; 2 occurrences:
-; coreutils-rs/optimized/3q8ukvkopatfv0x0.ll
-; hdf5/optimized/H5Oalloc.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
-entry:
-  %2 = xor i64 %0, -1
-  %3 = add i64 %2, %1
-  %4 = mul i64 %3, 48
   ret i64 %4
 }
 

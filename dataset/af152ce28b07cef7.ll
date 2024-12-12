@@ -1,6 +1,5 @@
 
-; 154 occurrences:
-; arrow/optimized/expression.cc.ll
+; 151 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; draco/optimized/symbol_encoding.cc.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -90,7 +89,6 @@
 ; llvm/optimized/ParseStmtAsm.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
@@ -130,7 +128,6 @@
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/installable-flake.ll
 ; nix/optimized/installables.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parser-tab.ll
 ; nix/optimized/prefetch.ll
@@ -155,18 +152,22 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp ult i32 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
 }
 
-; 56 occurrences:
+; 60 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; ceres/optimized/array_utils.cc.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
@@ -223,11 +224,11 @@ entry:
 ; xgboost/optimized/adaptive.cc.ll
 ; yosys/optimized/recover_names.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp slt i32 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
@@ -241,13 +242,13 @@ define i64 @func0000000000000006(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %2
+  %5 = add i64 %2, %4
   %6 = icmp slt i32 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; hermes/optimized/CodeBlock.cpp.ll
@@ -261,7 +262,6 @@ entry:
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SafeStackLayout.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/Unicode.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -276,13 +276,12 @@ entry:
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
-; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp ugt i32 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
@@ -298,11 +297,11 @@ entry:
 ; stockfish/optimized/tbprobe.ll
 ; verilator/optimized/V3GraphAcyc.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp sgt i32 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
@@ -311,12 +310,40 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp eq i32 %0, %1
+  %7 = select i1 %6, i64 %5, i64 %3
+  ret i64 %7
+}
+
+; 2 occurrences:
+; arrow/optimized/expression.cc.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000034(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = xor i64 %3, -1
+  %5 = add nsw i64 %2, %4
+  %6 = icmp samesign ult i32 %0, %1
+  %7 = select i1 %6, i64 %5, i64 %3
+  ret i64 %7
+}
+
+; 2 occurrences:
+; llvm/optimized/TargetLowering.cpp.ll
+; zxing/optimized/PDFCodewordDecoder.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000038(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = xor i64 %3, -1
+  %5 = add nsw i64 %2, %4
+  %6 = icmp samesign ugt i32 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
 }
@@ -328,7 +355,7 @@ define i64 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %2
+  %5 = add i64 %2, %4
   %6 = icmp ult i32 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7

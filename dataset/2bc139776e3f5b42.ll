@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/ioReadBench.c.ll
@@ -15,8 +15,6 @@
 ; qemu/optimized/hw_acpi_aml-build.c.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0) #0 {
 entry:
@@ -25,14 +23,13 @@ entry:
   ret i32 %2
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; clamav/optimized/mszipd.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; freetype/optimized/raster.c.ll
 ; linux/optimized/deflate.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/mlme.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
@@ -53,10 +50,8 @@ entry:
   ret i32 %2
 }
 
-; 30 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcGen.c.ll
-; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcResub.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
@@ -67,7 +62,6 @@ entry:
 ; hdf5/optimized/H5FDonion_index.c.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/fse_decompress.ll
-; linux/optimized/i8259.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; openusd/optimized/restoration.c.ll
@@ -88,7 +82,7 @@ entry:
 define i32 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
-  %2 = lshr i32 %1, 5
+  %2 = lshr i32 %1, 2
   ret i32 %2
 }
 
@@ -104,10 +98,9 @@ entry:
   ret i32 %2
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
-; linux/optimized/mq-deadline.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind

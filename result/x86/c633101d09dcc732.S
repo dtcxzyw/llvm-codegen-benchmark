@@ -1,31 +1,37 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001e4:                   # @func00000000000001e4
+	movzbl	%dl, %eax
+	leaq	1(%rsi,%rax), %rax
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
+func00000000000001e1:                   # @func00000000000001e1
 	movzbl	%dl, %eax
 	leaq	11(%rsi,%rax), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func00000000000001ec:                   # @func00000000000001ec
+	movzbl	%dl, %eax
+	leaq	1(%rsi,%rax), %rax
+	cmpq	%rax, %rdi
+	setne	%al
+	retq
+func0000000000000181:                   # @func0000000000000181
 	movzbl	%dl, %eax
 	leaq	12(%rsi,%rax,4), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
-	movzbl	%dl, %eax
-	leaq	12(%rsi,%rax,4), %rax
-	cmpq	%rdi, %rax
-	sete	%al
-	retq
-func00000000000000a8:                   # @func00000000000000a8
+func00000000000001e8:                   # @func00000000000001e8
 	movzbl	%dl, %eax
 	shll	$4, %eax
 	leaq	16(%rsi,%rax), %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
-func00000000000000a9:                   # @func00000000000000a9
+func00000000000001e9:                   # @func00000000000001e9
 	movzbl	%dl, %eax
 	leaq	8(%rsi,%rax), %rax
-	cmpq	%rdi, %rax
-	setbe	%al
+	cmpq	%rax, %rdi
+	setae	%al
 	retq

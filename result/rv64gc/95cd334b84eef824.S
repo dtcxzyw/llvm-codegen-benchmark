@@ -1,13 +1,13 @@
-func0000000000000011:                   # @func0000000000000011
-	addiw	a1, a1, -1
-	li	a2, -2
+func0000000000000021:                   # @func0000000000000021
+	sext.w	a1, a1
+	li	a2, -1
 	bne	a1, a2, .LBB0_2
 	li	a0, 1
 .LBB0_2:                                # %entry
 	ret
-func0000000000000031:                   # @func0000000000000031
-	addiw	a1, a1, 3
-	li	a2, -2
+func0000000000000061:                   # @func0000000000000061
+	sext.w	a1, a1
+	li	a2, -5
 	bne	a1, a2, .LBB1_2
 	li	a0, 1
 .LBB1_2:                                # %entry

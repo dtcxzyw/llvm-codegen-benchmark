@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mold/optimized/perf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %0, %1
   %4 = sub i64 %2, %0
@@ -10,8 +10,9 @@ entry:
   ret i1 %5
 }
 
-; 48 occurrences:
+; 49 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/static_string.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/IR.cpp.ll
 ; hermes/optimized/Instrs.cpp.ll
@@ -60,7 +61,7 @@ entry:
 ; llvm/optimized/X86InsertPrefetch.cpp.ll
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %0, %1
   %4 = sub i64 %2, %0

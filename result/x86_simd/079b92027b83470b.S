@@ -1,7 +1,7 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm2            # ymm2 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpcmpnltuq	%ymm0, %ymm2, %k1
+	vpcmpleuq	%ymm2, %ymm0, %k1
 	vmovdqa32	%xmm1, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
@@ -17,7 +17,7 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000005:                   # @func0000000000000005
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm2            # ymm2 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpcmpltuq	%ymm0, %ymm2, %k1
+	vpcmpnleuq	%ymm2, %ymm0, %k1
 	vmovdqa32	%xmm1, %xmm0 {%k1} {z}
 	vzeroupper
 	retq

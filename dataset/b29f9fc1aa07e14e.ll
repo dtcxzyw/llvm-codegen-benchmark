@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/src.ll
 ; folly/optimized/SocketAddress.cpp.ll
 ; qemu/optimized/migration_dirtyrate.c.ll
 ; quantlib/optimized/burley2020sobolrsg.ll

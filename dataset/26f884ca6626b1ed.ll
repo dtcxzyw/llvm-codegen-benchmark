@@ -27,12 +27,12 @@
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001da(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003aa(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
@@ -56,11 +56,11 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ca(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000038a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 10
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = sub i32 %0, %5
   %7 = icmp sgt i32 %6, 0
   ret i1 %7
@@ -73,7 +73,7 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003a4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
@@ -87,11 +87,11 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c6(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000386(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 9
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = sub i32 %0, %5
   %7 = icmp slt i32 %6, 1
   ret i1 %7
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000381(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
@@ -113,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d8(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003a8(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
@@ -126,12 +126,12 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/bwlzh.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000002a1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 

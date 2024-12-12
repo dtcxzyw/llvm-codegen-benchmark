@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 93 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -28,8 +28,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -99,7 +97,7 @@
 define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   %4 = and i64 %3, 4294967295
   %5 = add nuw nsw i64 %4, 2147483648
   ret i64 %5

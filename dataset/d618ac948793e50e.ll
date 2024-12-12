@@ -78,7 +78,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }

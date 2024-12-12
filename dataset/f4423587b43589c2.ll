@@ -93,11 +93,11 @@ define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp ne i64 %2, 0
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; abc/optimized/dchSim.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/sswLcorr.c.ll
@@ -121,7 +121,6 @@ entry:
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/intel_ggtt_fencing.ll
 ; linux/optimized/libata-eh.ll
-; linux/optimized/mii.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -157,7 +156,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp eq i64 %2, 0
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 

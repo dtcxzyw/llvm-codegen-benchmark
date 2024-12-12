@@ -4,12 +4,12 @@
 ; cmake/optimized/fse_compress.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -8
   %4 = add nuw i32 %1, 1
   %5 = icmp ult i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   ret i1 %6
 }
 
-; 126 occurrences:
+; 125 occurrences:
 ; postgres/optimized/fe-misc.ll
 ; z3/optimized/ackr_bound_probe.cpp.ll
 ; z3/optimized/api_ast_map.cpp.ll
@@ -47,7 +47,6 @@ entry:
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
@@ -158,7 +157,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = add i32 %1, 1
   %5 = icmp ugt i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

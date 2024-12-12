@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	sets	%al
 	orb	%dil, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	subl	%esi, %edx
 	orl	%esi, %edx
 	sets	%al

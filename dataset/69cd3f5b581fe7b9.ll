@@ -1,16 +1,18 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/spin.c.ll
 ; clamav/optimized/wwunpack.c.ll
 ; openjdk/optimized/g1RegionToSpaceMapper.ll
 ; osqp/optimized/amd_order.c.ll
 ; qemu/optimized/hw_misc_edu.c.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %1
   %4 = icmp ugt i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -21,13 +23,12 @@ define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %1
   %4 = icmp ule i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 36 occurrences:
+; 33 occurrences:
 ; lief/optimized/ecp.c.ll
-; linux/optimized/csum-wrappers_64.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/evdev.ll
@@ -49,8 +50,6 @@ entry:
 ; linux/optimized/mpih-div.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/read_write.ll
-; linux/optimized/readdir.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/scm.ll
 ; linux/optimized/select.ll
 ; linux/optimized/seq_clientmgr.ll
@@ -66,19 +65,20 @@ entry:
 define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = icmp uge i64 %3, %2
+  %4 = icmp ule i64 %2, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp ugt i64 %2, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }

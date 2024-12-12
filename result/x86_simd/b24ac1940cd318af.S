@@ -8,7 +8,7 @@ func0000000000000015:                   # @func0000000000000015
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm3   # ymm3 = [2,2,2,2,2,2,2,2]
 	vpsubd	%ymm2, %ymm3, %ymm1 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1

@@ -63,13 +63,13 @@ func0000000000000088:                   # @func0000000000000088
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpeqss	%xmm2, %xmm1, %k1
 	vmovss	%xmm2, %xmm1, %xmm1 {%k1}
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000027:                   # @func0000000000000027
 	vxorps	%xmm2, %xmm2, %xmm2
 	vmaxss	%xmm1, %xmm2, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 .LCPI11_0:
@@ -77,13 +77,13 @@ func0000000000000027:                   # @func0000000000000027
 func0000000000000047:                   # @func0000000000000047
 	vmovss	.LCPI11_0(%rip), %xmm2          # xmm2 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vminss	%xmm1, %xmm2, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000048:                   # @func0000000000000048
 	vxorps	%xmm2, %xmm2, %xmm2
 	vminss	%xmm1, %xmm2, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 .LCPI13_0:
@@ -100,6 +100,6 @@ func00000000000000a2:                   # @func00000000000000a2
 func00000000000000a7:                   # @func00000000000000a7
 	vmovss	.LCPI14_0(%rip), %xmm2          # xmm2 = [-9.0E+1,0.0E+0,0.0E+0,0.0E+0]
 	vmaxss	%xmm1, %xmm2, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq

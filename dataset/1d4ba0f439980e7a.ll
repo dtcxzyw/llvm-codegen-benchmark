@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -104,6 +105,28 @@ entry:
   %1 = trunc nuw i128 %0 to i64
   %2 = lshr i64 %1, 32
   %3 = mul nuw nsw i64 %2, 1374389535
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i128 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i128 %0 to i64
+  %2 = lshr i64 %1, 32
+  %3 = mul i64 %2, -10000000000
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i128 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i128 %0 to i64
+  %2 = lshr i64 %1, 32
+  %3 = mul nuw nsw i64 %2, 42949673
   ret i64 %3
 }
 

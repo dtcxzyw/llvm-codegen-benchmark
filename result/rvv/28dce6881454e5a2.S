@@ -56,3 +56,17 @@ func0000000000000019:                   # @func0000000000000019
 	li	a0, -182
 	vadd.vx	v8, v8, a0
 	ret
+.LCPI5_0:
+	.quad	2635249153387078803             # 0x2492492492492493
+func0000000000000011:                   # @func0000000000000011
+	lui	a0, %hi(.LCPI5_0)
+	ld	a0, %lo(.LCPI5_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 8
+	vmulhu.vx	v10, v8, a0
+	vsub.vv	v8, v8, v10
+	vsrl.vi	v8, v8, 1
+	vadd.vv	v8, v8, v10
+	vsrl.vi	v8, v8, 2
+	vadd.vi	v8, v8, -1
+	ret

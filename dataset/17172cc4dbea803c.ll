@@ -11,7 +11,7 @@
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, -3
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
@@ -34,7 +34,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
@@ -46,10 +46,10 @@ entry:
 ; quantlib/optimized/smilesectionutils.ll
 ; rocksdb/optimized/merge_helper.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 16
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
@@ -58,7 +58,7 @@ entry:
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; nix/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 3200000
   %3 = and i1 %2, %0
@@ -81,21 +81,10 @@ entry:
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; wireshark/optimized/supported_protocols_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
-  %3 = and i1 %2, %0
-  ret i1 %3
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_obj.ll
-; luajit/optimized/lj_obj_dyn.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ult i64 %1, -1829587348619264
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

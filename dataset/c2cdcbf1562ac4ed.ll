@@ -1,5 +1,5 @@
 
-; 610 occurrences:
+; 608 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -8,6 +8,7 @@
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/xxhash.c.ll
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/introspection_censorize.c.ll
@@ -28,9 +29,7 @@
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; folly/optimized/FiberManager.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -427,7 +426,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll

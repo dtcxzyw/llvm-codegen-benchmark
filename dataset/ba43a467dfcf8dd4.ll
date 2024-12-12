@@ -17,10 +17,10 @@
 ; quickjs/optimized/libbf.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 48
-  %3 = icmp ult i32 %1, 10
+  %3 = icmp samesign ult i32 %1, 10
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }

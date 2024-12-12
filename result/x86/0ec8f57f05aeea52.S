@@ -23,3 +23,8 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edx, %edx
 	cmovnel	%esi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movl	%edi, %eax
+	cmpl	$161, %edx
+	cmovael	%esi, %eax
+	retq

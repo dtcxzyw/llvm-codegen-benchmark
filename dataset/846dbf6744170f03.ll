@@ -1,5 +1,5 @@
 
-; 151 occurrences:
+; 154 occurrences:
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
 ; cpython/optimized/unicodedata.ll
 ; cvc5/optimized/string.cpp.ll
@@ -101,6 +101,9 @@
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_span.ll
 ; minetest/optimized/guiChatConsole.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -111,7 +114,6 @@
 ; openmpi/optimized/pml_ob1_recvfrag.ll
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; postgres/optimized/date.ll
-; proj/optimized/crs.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/replay_replay.c.ll
 ; qemu/optimized/ui_vnc.c.ll
@@ -151,8 +153,9 @@
 ; wasmtime-rs/optimized/27y5mf4j2qnj7fax.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0) #0 {
+define i1 @func0000000000000108(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -33920
   %2 = icmp ult i32 %1, 18
@@ -162,11 +165,22 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 2 occurrences:
+; libquic/optimized/json_parser.cc.ll
+; php/optimized/html.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000908(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, -57344
+  %2 = icmp ult i32 %1, 1056768
+  %3 = add nsw i32 %0, -160
+  %4 = icmp ult i32 %3, 55136
+  %5 = or i1 %4, %2
+  ret i1 %5
+}
+
+; 7 occurrences:
 ; cpython/optimized/unicodedata.ll
-; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; qemu/optimized/linux-user_fd-trans.c.ll
 ; sentencepiece/optimized/trainer_interface.cc.ll
 ; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
@@ -174,26 +188,12 @@ entry:
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a88(i32 %0) #0 {
+define i1 @func0000000000002908(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -2100
-  %2 = icmp ult i32 %1, 900
-  %3 = add nsw i32 %0, -1100
-  %4 = icmp ult i32 %3, 100
-  %5 = or i1 %4, %2
-  ret i1 %5
-}
-
-; 2 occurrences:
-; libquic/optimized/json_parser.cc.ll
-; php/optimized/html.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000288(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, -57344
-  %2 = icmp ult i32 %1, 1056768
-  %3 = add nsw i32 %0, -160
-  %4 = icmp ult i32 %3, 55136
+  %1 = add nsw i32 %0, -4
+  %2 = icmp ult i32 %1, 3
+  %3 = add nsw i32 %0, -10
+  %4 = icmp ult i32 %3, -7
   %5 = or i1 %4, %2
   ret i1 %5
 }

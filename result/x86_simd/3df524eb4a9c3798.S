@@ -21,33 +21,6 @@ func0000000000000020:                   # @func0000000000000020
 	vpsllw	$7, %ymm1, %ymm0
 	retq
 .LCPI1_0:
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-func0000000000000010:                   # @func0000000000000010
-	vpcmpltuw	.LCPI1_0(%rip), %ymm1, %k1
-	vmovdqu16	%ymm0, %ymm1 {%k1}
-	vpsllw	$2, %ymm1, %ymm0
-	retq
-func0000000000000018:                   # @func0000000000000018
-	vpmovw2m	%ymm1, %k1
-	vmovdqu16	%ymm0, %ymm1 {%k1}
-	vpsllw	$6, %ymm1, %ymm0
-	retq
-.LCPI3_0:
 	.short	256                             # 0x100
 	.short	256                             # 0x100
 	.short	256                             # 0x100
@@ -65,7 +38,12 @@ func0000000000000018:                   # @func0000000000000018
 	.short	256                             # 0x100
 	.short	256                             # 0x100
 func0000000000000012:                   # @func0000000000000012
-	vpcmpltuw	.LCPI3_0(%rip), %ymm1, %k1
+	vpcmpltuw	.LCPI1_0(%rip), %ymm1, %k1
 	vmovdqu16	%ymm0, %ymm1 {%k1}
 	vpsllw	$4, %ymm1, %ymm0
+	retq
+func0000000000000018:                   # @func0000000000000018
+	vpmovw2m	%ymm1, %k1
+	vmovdqu16	%ymm0, %ymm1 {%k1}
+	vpsllw	$6, %ymm1, %ymm0
 	retq

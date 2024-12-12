@@ -1,4 +1,4 @@
-func00000000000002c5:                   # @func00000000000002c5
+func0000000000000d85:                   # @func0000000000000d85
 	testl	$-4, %edx
 	setne	%cl
 	addq	$10, %rsi
@@ -6,7 +6,7 @@ func00000000000002c5:                   # @func00000000000002c5
 	setbe	%al
 	andb	%cl, %al
 	retq
-func00000000000002cc:                   # @func00000000000002cc
+func0000000000000d8c:                   # @func0000000000000d8c
 	testb	$31, %dl
 	setne	%cl
 	incq	%rsi
@@ -14,7 +14,7 @@ func00000000000002cc:                   # @func00000000000002cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000002c4:                   # @func00000000000002c4
+func0000000000000d84:                   # @func0000000000000d84
 	addq	$3, %rsi
 	cmpq	%rdi, %rsi
 	setb	%al

@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	seqz	a3, a1
 	and	a2, a2, a3
 	bnez	a2, .LBB0_2
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 .LBB0_2:                                # %entry
 	seqz	a0, a0
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	seqz	a3, a1
 	and	a2, a2, a3
 	bnez	a2, .LBB1_2
@@ -14,7 +14,7 @@ func000000000000001c:                   # @func000000000000001c
 .LBB1_2:                                # %entry
 	snez	a0, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	snez	a3, a1
 	and	a2, a2, a3
 	bnez	a2, .LBB2_2

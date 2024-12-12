@@ -1,5 +1,5 @@
 
-; 217 occurrences:
+; 212 occurrences:
 ; abc/optimized/giaCex.c.ll
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
@@ -13,6 +13,7 @@
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
+; boost/optimized/benchmark_fstream.ll
 ; brotli/optimized/metablock.c.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -49,7 +50,6 @@
 ; linux/optimized/buffer.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/ds.ll
-; linux/optimized/pcm_timer.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/resize.ll
 ; llama.cpp/optimized/ggml.c.ll
@@ -164,10 +164,6 @@
 ; openmpi/optimized/sharedfp_lockedfile_iwrite.ll
 ; openmpi/optimized/sharedfp_lockedfile_read.ll
 ; openmpi/optimized/sharedfp_lockedfile_write.ll
-; openmpi/optimized/sharedfp_sm_iread.ll
-; openmpi/optimized/sharedfp_sm_iwrite.ll
-; openmpi/optimized/sharedfp_sm_read.ll
-; openmpi/optimized/sharedfp_sm_write.ll
 ; openspiel/optimized/expected_returns.cc.ll
 ; openspiel/optimized/hearts_test.cc.ll
 ; openspiel/optimized/is_mcts.cc.ll
@@ -199,7 +195,6 @@
 ; slurm/optimized/gres_ctld.ll
 ; slurm/optimized/gres_filter.ll
 ; slurm/optimized/gres_select_util.ll
-; spike/optimized/s_mul64To128M.ll
 ; velox/optimized/ArrayShuffle.cpp.ll
 ; velox/optimized/MallocAllocator.cpp.ll
 ; velox/optimized/Utils.cpp.ll
@@ -225,7 +220,7 @@ entry:
   ret i32 %3
 }
 
-; 50 occurrences:
+; 51 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cordz_sample_token_test.cc.ll
@@ -276,6 +271,7 @@ entry:
 ; soc-simulator/optimized/sim_mycpu.ll
 ; spike/optimized/s_mul128MTo256M.ll
 ; vcpkg/optimized/uuid.cpp.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -284,14 +280,11 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
-; abc/optimized/giaPat2.c.ll
+; 18 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; ipopt/optimized/IpGenAugSystemSolver.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -314,12 +307,13 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/adler32.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; cmake/optimized/adler32.c.ll
 ; gromacs/optimized/adler32.c.ll
+; gromacs/optimized/comm.cpp.ll
 ; libquic/optimized/adler32.c.ll
 ; libwebp/optimized/pnmdec.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -388,7 +382,8 @@ entry:
   ret i32 %3
 }
 
-; 46 occurrences:
+; 47 occurrences:
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
@@ -443,7 +438,7 @@ entry:
   ret i32 %3
 }
 
-; 68 occurrences:
+; 65 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; ceres/optimized/dense_sparse_matrix.cc.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
@@ -478,12 +473,9 @@ entry:
 ; oiio/optimized/tiffoutput.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll

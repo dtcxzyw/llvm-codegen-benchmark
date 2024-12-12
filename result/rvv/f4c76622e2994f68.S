@@ -3,6 +3,6 @@ func0000000000000002:                   # @func0000000000000002
 	vle32.v	v24, (a0)
 	vfwcvt.f.f.v	v0, v24
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vfmul.vv	v16, v0, v16
+	vfmul.vv	v16, v16, v0
 	vmflt.vv	v0, v8, v16
 	ret

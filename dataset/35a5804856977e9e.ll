@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000144(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000484(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -65
   %3 = icmp ult i32 %2, -10
@@ -16,7 +16,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000004c(i32 %0, i32 %1) #0 {
+define i64 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp ult i32 %2, 2

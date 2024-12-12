@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 21 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -17,7 +17,10 @@
 ; postgres/optimized/f2s_srv.ll
 ; rocksdb/optimized/fault_injection_fs.cc.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
-; wireshark/optimized/packet-ieee80211-wlancap.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -27,16 +30,15 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
-; wireshark/optimized/packet-ieee80211-wlancap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = urem i32 %3, 1000000
-  %5 = icmp ugt i32 %4, 500000
+  %4 = urem i32 %3, 7
+  %5 = icmp samesign ugt i32 %4, 1
   ret i1 %5
 }
 

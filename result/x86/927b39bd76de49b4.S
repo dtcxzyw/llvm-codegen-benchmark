@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$62, %rdx
@@ -18,7 +18,7 @@ func0000000000000008:                   # @func0000000000000008
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$61, %rdx
@@ -28,7 +28,7 @@ func0000000000000048:                   # @func0000000000000048
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$61, %rdx
@@ -38,7 +38,7 @@ func0000000000000068:                   # @func0000000000000068
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000001d8:                   # @func00000000000001d8
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$61, %rdx
@@ -48,14 +48,7 @@ func00000000000000e8:                   # @func00000000000000e8
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func000000000000005a:                   # @func000000000000005a
-	addq	%rsi, %rdi
-	leaq	(%rdi,%rdi), %rcx
-	cmpq	$1801, %rdi                     # imm = 0x709
-	movl	$3600, %eax                     # imm = 0xE10
-	cmovlq	%rcx, %rax
-	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$62, %rdx
@@ -65,7 +58,7 @@ func0000000000000058:                   # @func0000000000000058
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$61, %rdx

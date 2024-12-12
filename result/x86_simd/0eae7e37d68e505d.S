@@ -29,7 +29,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$31, %xmm0, %xmm0
 	vpsrad	$31, %xmm0, %xmm0
-	vpaddd	%xmm1, %xmm0, %xmm0
+	vpaddd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 .LCPI4_0:

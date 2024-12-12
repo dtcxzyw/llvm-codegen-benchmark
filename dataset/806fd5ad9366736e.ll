@@ -1,5 +1,5 @@
 
-; 187 occurrences:
+; 186 occurrences:
 ; cpython/optimized/_elementtree.ll
 ; hermes/optimized/CFG.cpp.ll
 ; jemalloc/optimized/prof_data.ll
@@ -176,7 +176,6 @@
 ; openmpi/optimized/osc_rdma_component.ll
 ; openmpi/optimized/osc_rdma_peer.ll
 ; openmpi/optimized/pml_cm.ll
-; openmpi/optimized/pml_monitoring_isend.ll
 ; openmpi/optimized/pml_monitoring_start.ll
 ; openmpi/optimized/pml_ob1_comm.ll
 ; openmpi/optimized/pml_ob1_isend.ll

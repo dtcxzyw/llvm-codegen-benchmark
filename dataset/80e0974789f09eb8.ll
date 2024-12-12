@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 116 occurrences:
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; clap-rs/optimized/1zp92zvstj9lufi9.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
@@ -81,6 +81,10 @@
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
+; turborepo-rs/optimized/073xkjbb0bs34qvdns32a3q3u.ll
+; turborepo-rs/optimized/8oe5vwmwwrst9p60jy1zusiyz.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
@@ -92,6 +96,26 @@
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; zed-rs/optimized/0bnc87yviwo8pzd5mdfzedrf9.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/10zh1v68f2nhlerzsork25it5.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7od02cvs02zg2t1jcuk4h4evv.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
+; zed-rs/optimized/by8gv54o76v0inyrwjxd65d9p.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
+; zed-rs/optimized/cogvsa3bjgiftuxgwhwbiuj8x.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i8 %0, i8 %1) #0 {
 entry:

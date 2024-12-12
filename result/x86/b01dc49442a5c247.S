@@ -5,14 +5,14 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%esi, %esi
 	setle	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andl	$1, %esi
 	negl	%esi
 	orl	$1, %esi
 	leal	(%rsi,%rdi), %eax
 	shrl	$31, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1, %esi
 	negl	%esi
 	orl	$1, %esi

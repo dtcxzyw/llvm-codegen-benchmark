@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 53 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -50,11 +50,14 @@
 ; llvm/optimized/VTTBuilder.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 16711935
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul i64 %3, 216180478695505931
   ret i64 %4
 }
@@ -65,7 +68,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul nsw i64 %3, -4
   ret i64 %4
 }
@@ -77,7 +80,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1229782938247303441
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul nuw i64 %3, 3
   ret i64 %4
 }
@@ -91,7 +94,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 32767
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul nuw nsw i64 %3, 300
   ret i64 %4
 }

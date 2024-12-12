@@ -9,7 +9,7 @@ func0000000000000006:                   # @func0000000000000006
 	andl	%esi, %edi
 	movzbl	%dil, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$7, %esi
 	xorl	%eax, %eax
 	cmpl	$17, %edi
@@ -27,7 +27,13 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$13, %eax
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000004:                   # @func0000000000000004
+	andl	$268435455, %esi                # imm = 0xFFFFFFF
+	cmpl	$95, %edi
+	movl	$32, %eax
+	cmovbl	%esi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
 	andl	$7, %esi
 	xorl	%eax, %eax
 	cmpl	$2, %edi

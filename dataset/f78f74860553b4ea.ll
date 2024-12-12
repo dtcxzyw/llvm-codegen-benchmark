@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; ruby/optimized/symbol.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp ugt i32 %0, 10
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
 ; 3 occurrences:
 ; gromacs/optimized/hardwaretopology.cpp.ll
 ; lua/optimized/lua.ll
@@ -15,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp sgt i32 %0, 0
@@ -36,10 +47,11 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; linux/optimized/raw.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp slt i32 %0, 16777215

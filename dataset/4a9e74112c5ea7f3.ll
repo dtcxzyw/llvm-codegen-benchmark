@@ -7,8 +7,8 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl i32 %3, 6
   %5 = sext i32 %4 to i64
-  %6 = getelementptr i8, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 %1
+  %6 = getelementptr i8, ptr %0, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -20,8 +20,8 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl i32 %3, 6
   %5 = sext i32 %4 to i64
-  %6 = getelementptr float, ptr %0, i64 %5
-  %7 = getelementptr float, ptr %6, i64 %1
+  %6 = getelementptr float, ptr %0, i64 %1
+  %7 = getelementptr float, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -33,8 +33,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr i8, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 %1
+  %6 = getelementptr i8, ptr %0, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -46,8 +46,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr i8, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 %1
+  %6 = getelementptr i8, ptr %0, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }
 

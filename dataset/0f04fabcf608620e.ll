@@ -12,8 +12,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; 2 occurrences:
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; Function Attrs: nounwind

@@ -1,20 +1,13 @@
 func00000000000000b0:                   // @func00000000000000b0
 // %bb.0:                               // %entry
-	shl	v3.2d, v3.2d, #48
-	shl	v4.2d, v4.2d, #48
-	uaddw	v0.2d, v0.2d, v2.2s
-	uaddw2	v1.2d, v1.2d, v2.4s
-	ssra	v0.2d, v3.2d, #16
-	ssra	v1.2d, v4.2d, #16
+	lsl	x8, x2, #48
+	add	x9, x0, w1, uxtw
+	add	x0, x9, x8, asr #16
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	shl	v3.2d, v3.2d, #32
-	shl	v4.2d, v4.2d, #32
-	uaddw	v0.2d, v0.2d, v2.2s
-	uaddw2	v1.2d, v1.2d, v2.4s
-	ssra	v0.2d, v3.2d, #32
-	ssra	v1.2d, v4.2d, #32
+	add	x8, x0, w1, uxtw
+	add	x0, x8, w2, sxtw
 	ret
                                         // -- End function

@@ -1,12 +1,10 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/hub.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
+; lvgl/optimized/lv_spinbox.ll
+; lvgl/optimized/lv_switch.ll
 ; opencv/optimized/ts.cpp.ll
 ; openjdk/optimized/vframe.ll
 ; openmpi/optimized/coll_base_allgather.ll

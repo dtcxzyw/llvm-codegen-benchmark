@@ -1,9 +1,7 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; clamav/optimized/qsort.c.ll
-; hermes/optimized/FileCheck.cpp.ll
 ; nuttx/optimized/lib_qsort.c.ll
-; openssl/optimized/libdefault-lib-kmac_prov.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:

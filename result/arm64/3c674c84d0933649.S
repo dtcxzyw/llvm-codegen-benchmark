@@ -1,56 +1,54 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #4
-	ushll	v0.2d, v0.2s, #4
+	madd	w8, w1, w2, w0
+	ubfiz	x0, x8, #4, #32
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	shll2	v1.2d, v0.4s, #32
-	shll	v0.2d, v0.2s, #32
+	madd	w8, w1, w2, w0
+	lsl	x0, x8, #32
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	shll2	v1.2d, v0.4s, #32
-	shll	v0.2d, v0.2s, #32
+	madd	w8, w1, w2, w0
+	lsl	x0, x8, #32
 	ret
                                         // -- End function
 func0000000000000033:                   // @func0000000000000033
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #1
-	ushll	v0.2d, v0.2s, #1
+	madd	w8, w1, w2, w0
+	ubfiz	x0, x8, #1, #32
 	ret
                                         // -- End function
 func000000000000002b:                   // @func000000000000002b
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #1
-	ushll	v0.2d, v0.2s, #1
+	madd	w8, w1, w2, w0
+	ubfiz	x0, x8, #1, #32
+	ret
+                                        // -- End function
+func000000000000003f:                   // @func000000000000003f
+// %bb.0:                               // %entry
+	madd	w8, w1, w2, w0
+	ubfiz	x0, x8, #3, #32
 	ret
                                         // -- End function
 func0000000000000023:                   // @func0000000000000023
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #2
-	ushll	v0.2d, v0.2s, #2
+	madd	w8, w1, w2, w0
+	ubfiz	x0, x8, #2, #32
 	ret
                                         // -- End function
 func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	shll2	v1.2d, v0.4s, #32
-	shll	v0.2d, v0.2s, #32
+	madd	w8, w1, w2, w0
+	lsl	x0, x8, #32
 	ret
                                         // -- End function
 func0000000000000022:                   // @func0000000000000022
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	shll2	v1.2d, v0.4s, #32
-	shll	v0.2d, v0.2s, #32
+	madd	w8, w1, w2, w0
+	lsl	x0, x8, #32
 	ret
                                         // -- End function

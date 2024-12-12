@@ -1,29 +1,16 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmtst	v1.4s, v1.4s, v1.4s
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v1.8b, v0.8b
-	ushll	v0.4s, v0.4h, #0
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	shl	v1.2d, v1.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v1.2d, v1.2d, #0
-	cmlt	v0.2d, v0.2d, #0
+	cmp	w1, #0
+	cset	w8, ne
+	and	w8, w8, w0
+	sbfx	x0, x8, #0, #1
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v2.4s, #5
-	cmhi	v1.4s, v2.4s, v1.4s
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v1.8b, v0.8b
-	ushll	v0.4s, v0.4h, #0
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	shl	v1.2d, v1.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v1.2d, v1.2d, #0
-	cmlt	v0.2d, v0.2d, #0
+	cmp	w1, #5
+	cset	w8, lo
+	and	w8, w0, w8
+	sbfx	x0, x8, #0, #1
 	ret
                                         // -- End function

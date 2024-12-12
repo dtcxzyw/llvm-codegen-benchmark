@@ -1,5 +1,5 @@
 
-%struct.iovec.2594144 = type { ptr, i64 }
+%struct.iovec.2707773 = type { ptr, i64 }
 
 ; 3 occurrences:
 ; cpython/optimized/ceval.ll
@@ -9,8 +9,8 @@
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr %struct.iovec.2594144, ptr %0, i64 %1
-  %5 = getelementptr %struct.iovec.2594144, ptr %4, i64 %3, i32 1
+  %4 = getelementptr %struct.iovec.2707773, ptr %0, i64 %1
+  %5 = getelementptr %struct.iovec.2707773, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 

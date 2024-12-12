@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 36 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/hdmi.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/irq.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/vgacon.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
@@ -30,7 +29,6 @@
 ; openssl/optimized/libcrypto-lib-ccm128.ll
 ; openssl/optimized/libcrypto-shlib-ccm128.ll
 ; php/optimized/uuencode.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; qemu/optimized/hw_usb_dev-wacom.c.ll
 ; qemu/optimized/tcg.c.ll
@@ -46,11 +44,16 @@ entry:
   ret i8 %3
 }
 
-; 161 occurrences:
+; 166 occurrences:
 ; abc/optimized/cmdPlugin.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/feather.cc.ll
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_wiprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
+; boost/optimized/parser_utils.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/rtf.c.ll
@@ -89,7 +92,6 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/hexdump.ll
-; linux/optimized/i8259.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/intel_gt_mcr.ll
 ; linux/optimized/mlme.ll
@@ -97,7 +99,6 @@ entry:
 ; linux/optimized/rate.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/transport.ll
-; linux/optimized/uuid.ll
 ; linux/optimized/vgacon.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/yenta_socket.ll
@@ -112,6 +113,8 @@ entry:
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luau/optimized/lvmload.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -335,7 +338,7 @@ entry:
   ret i8 %3
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/amapPerm.c.ll
@@ -344,7 +347,6 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/mpmPre.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll

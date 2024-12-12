@@ -3,7 +3,7 @@
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i32 %0) #0 {
+define i1 @func0000000000000050(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -11
   %2 = icmp ugt i32 %1, 8
@@ -12,7 +12,7 @@ entry:
   ret i1 %4
 }
 
-; 21 occurrences:
+; 23 occurrences:
 ; coreutils-rs/optimized/3dtpqeqvk0qwjdno.ll
 ; delta-rs/optimized/1q6q2cmruh1j9ndm.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
@@ -34,8 +34,10 @@ entry:
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000230(i32 %0) #0 {
+define i1 @func0000000000000850(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -12
   %2 = icmp ugt i32 %1, 7
@@ -47,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/BypassSlowDivision.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i32 %0) #0 {
+define i1 @func0000000000000842(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -29
   %2 = icmp eq i32 %1, 20

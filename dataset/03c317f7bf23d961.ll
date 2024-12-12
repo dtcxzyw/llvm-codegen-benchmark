@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true

@@ -1,4 +1,17 @@
 
+; 3 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; proj/optimized/geodesic.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(double %0) #0 {
+entry:
+  %1 = fadd double %0, -1.000000e+00
+  %2 = fdiv double %1, 6.000000e+00
+  %3 = fcmp ole double %2, 0.000000e+00
+  ret i1 %3
+}
+
 ; 2 occurrences:
 ; grpc/optimized/flow_control.cc.ll
 ; proj/optimized/conversion.cpp.ll

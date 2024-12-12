@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 26 occurrences:
 ; coreutils-rs/optimized/1xfs2h41cvux42ap.ll
 ; influxdb-rs/optimized/2i5qqg1f0a0eo8eq.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
@@ -20,6 +20,12 @@
 ; tokenizers-rs/optimized/58hth72z9dib25am.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/35x08quqxvun4xbcwdjh3cm4j.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/ebj1t6ydn0lm59l6uu3qqz6z0.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define { i64, ptr } @func0000000000000000(i1 %0, ptr %1, ptr %2) #0 {
 entry:

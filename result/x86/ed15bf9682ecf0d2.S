@@ -1,13 +1,3 @@
-func0000000000000080:                   # @func0000000000000080
-	movq	%rdi, %rax
-	cmpq	%rdx, %rsi
-	adcl	$0, %eax
-	retq
-func000000000000010c:                   # @func000000000000010c
-	movq	%rdi, %rax
-	cmpq	%rsi, %rdx
-	adcl	$0, %eax
-	retq
 func000000000000008c:                   # @func000000000000008c
 	movq	%rdi, %rax
 	cmpq	%rdx, %rsi

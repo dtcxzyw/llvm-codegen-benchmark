@@ -30,6 +30,13 @@ func000000000000000a:                   # @func000000000000000a
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmerge.vvm	v8, v9, v8, v0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	li	a0, 256
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vmsltu.vx	v0, v10, a0
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vmerge.vvm	v8, v9, v8, v0
+	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmseq.vi	v0, v10, 0

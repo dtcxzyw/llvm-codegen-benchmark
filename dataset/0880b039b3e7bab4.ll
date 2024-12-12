@@ -6,12 +6,12 @@
 ; openusd/optimized/cdef.c.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 19
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -20,12 +20,12 @@ entry:
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -33,48 +33,48 @@ entry:
 ; arrow/optimized/light_array.cc.ll
 ; openjdk/optimized/TransformHelper.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = icmp ne i64 %4, %0
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 32
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 32
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 

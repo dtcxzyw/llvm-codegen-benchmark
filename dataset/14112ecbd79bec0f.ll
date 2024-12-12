@@ -6,6 +6,7 @@
 ; abc/optimized/saigPhase.c.ll
 ; arrow/optimized/string-to-double.cc.ll
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/alloc_lib.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -53,7 +54,6 @@
 ; openusd/optimized/strtod.cc.ll
 ; php/optimized/strtod.ll
 ; postgres/optimized/acl.ll
-; quickjs/optimized/quickjs.ll
 ; ruby/optimized/string.ll
 ; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
@@ -70,7 +70,7 @@ entry:
   ret i64 %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DynamicParser.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
@@ -87,6 +87,7 @@ entry:
 ; folly/optimized/json.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
 ; linux/optimized/mutex.ll
+; openusd/optimized/value.cpp.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; proxygen/optimized/HeaderTable.cpp.ll

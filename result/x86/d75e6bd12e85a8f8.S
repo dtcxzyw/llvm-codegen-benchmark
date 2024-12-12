@@ -10,15 +10,23 @@ func0000000000000008:                   # @func0000000000000008
 	cmpw	%si, %di
 	seta	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func000000000000000a:                   # @func000000000000000a
 	cmpw	%si, %di
-	seta	%al
+	setg	%al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	cmpw	%si, %di
+	setl	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	cmpw	%si, %di
 	setb	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000108:                   # @func0000000000000108
+	cmpw	%si, %di
+	seta	%al
+	retq
+func0000000000000101:                   # @func0000000000000101
 	cmpw	%si, %di
 	sete	%al
 	retq

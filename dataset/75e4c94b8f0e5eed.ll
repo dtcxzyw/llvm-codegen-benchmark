@@ -1,9 +1,10 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/socks.c.ll
 ; curl/optimized/libcurl_la-socks.ll
@@ -62,20 +63,22 @@ entry:
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; yosys/optimized/xprop.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0) #0 {
+define i1 @func0000000000000021(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 24
   %2 = icmp eq i8 %1, 8
   ret i1 %2
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; php/optimized/dns.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0) #0 {
+define i1 @func0000000000000018(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 15
-  %2 = icmp ugt i8 %1, 8
+  %2 = icmp samesign ugt i8 %1, 8
   ret i1 %2
 }
 
@@ -93,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0) #0 {
+define i1 @func000000000000002c(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 56
   %2 = icmp ne i8 %1, 48

@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 39 occurrences:
 ; clamav/optimized/clamdtop.c.ll
 ; clamav/optimized/hashtab.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -18,6 +18,11 @@
 ; llvm/optimized/LoopVersioningLICM.cpp.ll
 ; llvm/optimized/SampleProfileLoaderBaseUtil.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_timer.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_layer.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -57,7 +62,7 @@ entry:
   ret i32 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -67,6 +72,7 @@ entry:
 ; linux/optimized/intel_gt_pm_debugfs.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/seq_timer.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -88,9 +94,10 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; git/optimized/wt-status.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; Function Attrs: nounwind

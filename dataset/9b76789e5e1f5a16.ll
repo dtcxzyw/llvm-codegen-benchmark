@@ -7,10 +7,10 @@
 ; wireshark/optimized/packet-smpp.c.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp slt i32 %3, 0
   %5 = select i1 %4, i32 0, i32 255
   ret i32 %5

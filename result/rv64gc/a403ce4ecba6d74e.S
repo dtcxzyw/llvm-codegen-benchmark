@@ -19,11 +19,17 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a0, 8
 .LBB2_2:                                # %entry
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	lui	a2, 8
 	addiw	a2, a2, -2
 	and	a1, a1, a2
 	sltiu	a1, a1, 6
 	neg	a1, a1
 	and	a0, a0, a1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a1, a1, 2
+	bnez	a1, .LBB4_2
+	li	a0, 1
+.LBB4_2:                                # %entry
 	ret

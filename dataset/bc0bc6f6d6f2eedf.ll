@@ -6,11 +6,11 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 9
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 139 occurrences:
+; 137 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -26,14 +26,12 @@ entry:
 ; grpc/optimized/backoff.cc.ll
 ; grpc/optimized/channel_idle_filter.cc.ll
 ; grpc/optimized/legacy_channel_idle_filter.cc.ll
-; hwloc/optimized/topology-linux.ll
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
 ; jemalloc/optimized/base.sym.ll
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
-; lightgbm/optimized/linker_topo.cpp.ll
 ; openspiel/optimized/cfr.cc.ll
 ; openspiel/optimized/garnet.cc.ll
 ; openspiel/optimized/is_mcts.cc.ll

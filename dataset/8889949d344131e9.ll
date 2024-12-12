@@ -12,14 +12,13 @@
 ; openjdk/optimized/c1_IR.ll
 ; php/optimized/compact_vars.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000098(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
-  %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %0
-  %5 = icmp ne i64 %4, 0
-  %6 = zext i1 %5 to i32
-  ret i32 %6
+  %3 = lshr i64 %0, %2
+  %4 = trunc i64 %3 to i32
+  %5 = and i32 %4, 1
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

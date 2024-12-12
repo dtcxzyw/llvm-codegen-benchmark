@@ -8,7 +8,7 @@
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; wasmtime-rs/optimized/3swlmlzz83rbbf1u.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 31

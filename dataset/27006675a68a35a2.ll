@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 49 occurrences:
 ; linux/optimized/dmar.ll
 ; linux/optimized/sock_reuseport.ll
 ; postgres/optimized/brin.ll
@@ -8,7 +8,6 @@
 ; postgres/optimized/brin_minmax.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/brin_pageops.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/genam.ll
@@ -16,8 +15,6 @@
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/gininsert.ll
-; postgres/optimized/ginlogic.ll
 ; postgres/optimized/ginscan.ll
 ; postgres/optimized/ginutil.ll
 ; postgres/optimized/ginvacuum.ll
@@ -53,11 +50,11 @@
 ; qemu/optimized/accel_tcg_perf.c.ll
 ; wireshark/optimized/lte_rlc_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw i8, ptr %0, i64 29640
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 29640
   %5 = getelementptr [512 x i16], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -68,24 +65,28 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw i8, ptr %0, i64 684
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 684
   %5 = getelementptr nusw [256 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; llvm/optimized/LegalizeDAG.cpp.ll
+; luajit/optimized/lj_opt_mem.ll
+; luajit/optimized/lj_opt_mem_dyn.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i16 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, 200
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 396872
-  %5 = getelementptr nusw [701 x ptr], ptr %4, i64 0, i64 %3
+  %3 = add nuw nsw i64 %2, 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 136
+  %5 = getelementptr nusw nuw [8 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -97,26 +98,12 @@ entry:
 ; postgres/optimized/nbtsplitloc.ll
 ; postgres/optimized/spgvacuum.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i16 %1) #0 {
+define ptr @func000000000000005c(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw i8, ptr %0, i64 200
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 200
   %5 = getelementptr [33 x i32], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 3 occurrences:
-; luajit/optimized/lj_opt_mem.ll
-; luajit/optimized/lj_opt_mem_dyn.ll
-; wolfssl/optimized/internal.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, 8
-  %4 = getelementptr nusw i8, ptr %0, i64 402
-  %5 = getelementptr nusw [101 x i16], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -128,11 +115,11 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000005e(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr nusw [55 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

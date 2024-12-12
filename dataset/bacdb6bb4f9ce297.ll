@@ -101,7 +101,8 @@ entry:
   ret i16 %1
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/rational.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; Function Attrs: nounwind

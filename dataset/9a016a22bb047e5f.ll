@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/decompress.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/ioWriteAiger.c.ll
 ; abc/optimized/ioaWriteAig.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/bzlib.c.ll

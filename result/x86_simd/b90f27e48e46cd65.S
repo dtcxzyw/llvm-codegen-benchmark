@@ -42,7 +42,7 @@ func000000000000000f:                   # @func000000000000000f
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendw	$170, %ymm3, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm3[1],ymm1[2],ymm3[3],ymm1[4],ymm3[5],ymm1[6],ymm3[7],ymm1[8],ymm3[9],ymm1[10],ymm3[11],ymm1[12],ymm3[13],ymm1[14],ymm3[15]
 	vpmulld	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	127                             # 0x7f

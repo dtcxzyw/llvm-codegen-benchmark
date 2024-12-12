@@ -1,11 +1,10 @@
 
-; 140 occurrences:
+; 139 occurrences:
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; cmake/optimized/cmArgumentParser.cxx.ll
 ; cvc5/optimized/attribute.cpp.ll
-; cvc5/optimized/ite_utilities.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
@@ -141,21 +140,20 @@
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; zxing/optimized/DMECEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp ult i64 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
-; hyperscan/optimized/ng_misc_opt.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
@@ -173,15 +171,14 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; opencv/optimized/aruco_detector.cpp.ll
-; openvdb/optimized/PoissonSolver.cc.ll
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; vcpkg/optimized/registries.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp ugt i64 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
@@ -240,12 +237,26 @@ entry:
 ; quantlib/optimized/timebasket.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp slt i64 %0, %1
+  %7 = select i1 %6, i64 %5, i64 %3
+  ret i64 %7
+}
+
+; 2 occurrences:
+; hyperscan/optimized/ng_misc_opt.cpp.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = xor i64 %3, -1
+  %5 = add nsw i64 %2, %4
+  %6 = icmp samesign ugt i64 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
 }
@@ -260,7 +271,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %2
+  %5 = add i64 %2, %4
   %6 = icmp ult i64 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
@@ -273,12 +284,25 @@ entry:
 ; llvm/optimized/LoopCacheAnalysis.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp sgt i64 %0, %1
+  %7 = select i1 %6, i64 %5, i64 %3
+  ret i64 %7
+}
+
+; 1 occurrences:
+; cvc5/optimized/ite_utilities.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = xor i64 %3, -1
+  %5 = add nsw i64 %2, %4
+  %6 = icmp samesign ult i64 %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
 }

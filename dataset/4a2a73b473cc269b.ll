@@ -17,11 +17,11 @@ entry:
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; slurm/optimized/read_config.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = mul nuw nsw i32 %0, 5
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -29,7 +29,7 @@ entry:
 ; linux/optimized/nl80211.ll
 ; wireshark/optimized/prefs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = mul nuw nsw i32 %0, 257
@@ -43,11 +43,11 @@ entry:
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODITFReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = mul nuw nsw i32 %0, 3
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 

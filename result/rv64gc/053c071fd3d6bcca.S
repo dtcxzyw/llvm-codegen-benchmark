@@ -35,3 +35,13 @@ func000000000000000b:                   # @func000000000000000b
 .LBB6_2:                                # %entry
 	mv	a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	bltu	a2, a0, .LBB7_2
+	mv	a0, a1
+.LBB7_2:                                # %entry
+	ret
+func0000000000000018:                   # @func0000000000000018
+	bltu	a0, a2, .LBB8_2
+	mv	a0, a1
+.LBB8_2:                                # %entry
+	ret

@@ -6,9 +6,9 @@
 define i1 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 

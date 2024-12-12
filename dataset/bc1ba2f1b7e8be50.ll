@@ -3,7 +3,7 @@
 ; cmake/optimized/nghttp2_session.c.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = add nuw nsw i64 %2, 5
@@ -19,7 +19,7 @@ entry:
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/history_tree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = add nuw nsw i64 %2, 1

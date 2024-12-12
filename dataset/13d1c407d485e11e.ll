@@ -1,20 +1,4 @@
 
-; 4 occurrences:
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; Function Attrs: nounwind
-define i32 @func00000000000001bc(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = lshr i64 %1, 25
-  %5 = add nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
-  %7 = trunc i64 %6 to i32
-  ret i32 %7
-}
-
 ; 9 occurrences:
 ; arrow/optimized/thread_pool.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll

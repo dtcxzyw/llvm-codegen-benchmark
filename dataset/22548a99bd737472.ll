@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 37 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; cpython/optimized/compile.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
@@ -13,6 +13,7 @@
 ; icu/optimized/regexcmp.ll
 ; jq/optimized/decNumber.ll
 ; linux/optimized/memmap.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -33,6 +34,9 @@
 ; spike/optimized/csrs.ll
 ; wolfssl/optimized/client.c.ll
 ; z3/optimized/realclosure.cpp.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

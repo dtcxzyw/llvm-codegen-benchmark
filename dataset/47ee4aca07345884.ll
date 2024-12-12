@@ -1,12 +1,14 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, 10
   %3 = add nsw i64 %2, %1

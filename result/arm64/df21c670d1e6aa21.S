@@ -1,5 +1,5 @@
-func0000000000000f71:                   // @func0000000000000f71
+func0000000000001ee1:                   // @func0000000000001ee1
 // %bb.0:                               // %entry
-	movi	v0.4h, #1
+	mov	w0, #1                          // =0x1
 	ret
                                         // -- End function

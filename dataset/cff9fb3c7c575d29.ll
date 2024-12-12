@@ -1,19 +1,17 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_optimizer_compressed_materialization.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; opencv/optimized/perf_common.cpp.ll
 ; openvdb/optimized/Merge.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i8 @func0000000000000098(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 1, %1
-  %3 = and i64 %2, %0
-  %4 = icmp ne i64 %3, 0
-  %5 = zext i1 %4 to i8
-  ret i8 %5
+  %2 = lshr i64 %0, %1
+  %3 = trunc i64 %2 to i8
+  %4 = and i8 %3, 1
+  ret i8 %4
 }
 
 ; 4 occurrences:
@@ -22,12 +20,12 @@ entry:
 ; llvm/optimized/LoopConstrainer.cpp.ll
 ; rust-analyzer-rs/optimized/ilnj6n0bhpk5oz9.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000042(i64 %0, i64 %1) #0 {
+define i8 @func0000000000000082(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 1, %1
-  %3 = and i64 %2, %0
-  %4 = icmp eq i64 %3, 0
-  %5 = zext i1 %4 to i8
+  %2 = xor i64 %0, -1
+  %3 = lshr i64 %2, %1
+  %4 = trunc i64 %3 to i8
+  %5 = and i8 %4, 1
   ret i8 %5
 }
 

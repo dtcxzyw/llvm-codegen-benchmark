@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; grpc/optimized/chttp2_transport.cc.ll
 ; libquic/optimized/quic_framer.cc.ll
@@ -17,7 +17,6 @@
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/NativeTypeFunctionSig.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; nix/optimized/context.ll
 ; nix/optimized/flake.ll
 ; nix/optimized/outputs-spec.ll
@@ -48,7 +47,7 @@ entry:
   ret i8 %4
 }
 
-; 34 occurrences:
+; 47 occurrences:
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
 ; delta-rs/optimized/1iagj3aecrejld8d.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -83,6 +82,19 @@ entry:
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dyu8ahcv7l11k0z44ye6uqxem.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0, i8 %1, i8 %2) #0 {
 entry:

@@ -3,8 +3,8 @@ func0000000000000006:                   # @func0000000000000006
 	movl	$2, %eax
 	subl	%esi, %eax
 	xorl	%ecx, %ecx
-	cmpl	%edi, %eax
-	setle	%cl
+	cmpl	%eax, %edi
+	setge	%cl
 	leal	-1(%rcx,%rcx), %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -13,7 +13,7 @@ func000000000000000a:                   # @func000000000000000a
 	andl	$1, %eax
 	leal	(%rax,%rax,2), %eax
 	xorl	%ecx, %ecx
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	movl	$10002, %eax                    # imm = 0x2712
-	cmovgel	%ecx, %eax
+	cmovlel	%ecx, %eax
 	retq

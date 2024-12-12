@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-a_strex.ll
 ; openssl/optimized/libcrypto-shlib-a_strex.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000304(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000604(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i64 %1, 0

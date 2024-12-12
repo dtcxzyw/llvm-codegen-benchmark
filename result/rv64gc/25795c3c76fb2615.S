@@ -48,7 +48,7 @@ func000000000000002a:                   # @func000000000000002a
 	add	a0, a0, a1
 	ret
 func000000000000003f:                   # @func000000000000003f
-	li	a3, 9
+	li	a3, 5
 	slli	a2, a2, 32
 	slli	a3, a3, 33
 	mulhu	a2, a2, a3

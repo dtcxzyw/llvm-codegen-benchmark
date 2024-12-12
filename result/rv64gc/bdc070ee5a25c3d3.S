@@ -1,4 +1,4 @@
-func0000000000000169:                   # @func0000000000000169
+func00000000000002a9:                   # @func00000000000002a9
 	sext.w	a3, a2
 	addw	a4, a1, a0
 	bge	a3, a4, .LBB0_2
@@ -6,7 +6,7 @@ func0000000000000169:                   # @func0000000000000169
 .LBB0_2:                                # %entry
 	addw	a0, a0, a1
 	ret
-func0000000000000369:                   # @func0000000000000369
+func00000000000006a9:                   # @func00000000000006a9
 	sext.w	a3, a2
 	addw	a4, a1, a0
 	bge	a3, a4, .LBB1_2

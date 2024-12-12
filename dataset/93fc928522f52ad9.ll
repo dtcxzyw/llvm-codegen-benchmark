@@ -29,13 +29,30 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 3 occurrences:
+; git/optimized/parse-options.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; openjdk/optimized/hb-ot-shaper-myanmar.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i64 %0) #0 {
+entry:
+  %1 = add nuw i64 %0, 4294967295
+  %2 = and i64 %1, 4294967295
+  %3 = mul nuw nsw i64 %2, 20
+  ret i64 %3
+}
+
+; 11 occurrences:
+; boost/optimized/to_chars.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; hermes/optimized/StackPromotion.cpp.ll
 ; linux/optimized/extents.ll
 ; php/optimized/pcre2_match.ll
+; postgres/optimized/tablecmds.ll
+; postgres/optimized/trigger.ll
 ; postgres/optimized/xlog.ll
+; sqlite/optimized/sqlite3.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0) #0 {
@@ -59,19 +76,9 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
-; git/optimized/parse-options.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000b(i64 %0) #0 {
-entry:
-  %1 = add nuw i64 %0, 1
-  %2 = and i64 %1, 4294967295
-  %3 = mul nuw nsw i64 %2, 88
-  ret i64 %3
-}
-
-; 2 occurrences:
+; 3 occurrences:
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; hyperscan/optimized/nfa_api_dispatch.c.ll
 ; lief/optimized/DyldInfo.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
@@ -79,6 +86,17 @@ entry:
   %1 = add i64 %0, 1
   %2 = and i64 %1, 4294967295
   %3 = mul nuw nsw i64 %2, 56
+  ret i64 %3
+}
+
+; 1 occurrences:
+; linux/optimized/cpuidle.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0) #0 {
+entry:
+  %1 = add i64 %0, 2147483647
+  %2 = and i64 %1, 2147483647
+  %3 = mul nuw nsw i64 %2, 104
   ret i64 %3
 }
 

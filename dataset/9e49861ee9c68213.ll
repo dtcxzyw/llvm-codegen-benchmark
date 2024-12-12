@@ -48,7 +48,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i16 0, i16 16384
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = select i1 %1, i16 0, i16 -32768
   %6 = or i16 %4, %5
   ret i16 %6

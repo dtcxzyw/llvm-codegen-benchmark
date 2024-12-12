@@ -28,8 +28,10 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cpython/optimized/longobject.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll

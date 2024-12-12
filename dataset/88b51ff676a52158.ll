@@ -1,10 +1,17 @@
 
-; 12 occurrences:
+; 19 occurrences:
+; arrow/optimized/string-to-double.cc.ll
 ; cpython/optimized/optimizer.ll
+; double_conversion/optimized/string-to-double.cc.ll
 ; duckdb/optimized/ub_duckdb_optimizer_rules.cpp.ll
+; eastl/optimized/EAString.cpp.ll
 ; hermes/optimized/BCP47Parser.cpp.ll
+; icu/optimized/double-conversion-string-to-double.ll
 ; linux/optimized/mempolicy.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/StackProtector.cpp.ll
 ; openjdk/optimized/relocInfo.ll
+; openusd/optimized/string-to-double.cc.ll
 ; re2/optimized/compile.cc.ll
 ; re2/optimized/mimics_pcre.cc.ll
 ; re2/optimized/parse.cc.ll
@@ -20,7 +27,7 @@ entry:
   ret ptr %4
 }
 
-; 263 occurrences:
+; 274 occurrences:
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
@@ -32,6 +39,7 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/formatter.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; clamav/optimized/output.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
@@ -52,7 +60,6 @@ entry:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hyperscan/optimized/Parser.cpp.ll
-; hyperscan/optimized/accel.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
@@ -63,6 +70,7 @@ entry:
 ; hyperscan/optimized/shufti.c.ll
 ; hyperscan/optimized/truffle.c.ll
 ; icu/optimized/alphaindex.ll
+; icu/optimized/anytrans.ll
 ; icu/optimized/choicfmt.ll
 ; icu/optimized/coleitr.ll
 ; icu/optimized/collationbuilder.ll
@@ -71,14 +79,18 @@ entry:
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/collationsets.ll
 ; icu/optimized/cpdtrans.ll
+; icu/optimized/datamap.ll
 ; icu/optimized/dayperiodrules.ll
 ; icu/optimized/dbgutil.ll
 ; icu/optimized/decimfmt.ll
+; icu/optimized/derb.ll
 ; icu/optimized/dtitvfmt.ll
 ; icu/optimized/dtitvinf.ll
 ; icu/optimized/dtptngen.ll
+; icu/optimized/emojiprops.ll
 ; icu/optimized/extradata.ll
 ; icu/optimized/filteredbrk.ll
+; icu/optimized/filterednormalizer2.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/gencnval.ll
 ; icu/optimized/gendict.ll
@@ -92,6 +104,8 @@ entry:
 ; icu/optimized/nfrs.ll
 ; icu/optimized/nfrule.ll
 ; icu/optimized/nfsubs.ll
+; icu/optimized/normalizer2.ll
+; icu/optimized/normalizer2impl.ll
 ; icu/optimized/number_affixutils.ll
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/number_longnames.ll
@@ -129,6 +143,7 @@ entry:
 ; icu/optimized/uconv.ll
 ; icu/optimized/uitercollationiterator.ll
 ; icu/optimized/uniset.ll
+; icu/optimized/uniset_closure.ll
 ; icu/optimized/uniset_props.ll
 ; icu/optimized/unistr.ll
 ; icu/optimized/unistr_case.ll
@@ -144,6 +159,7 @@ entry:
 ; icu/optimized/util_props.ll
 ; icu/optimized/uts46.ll
 ; icu/optimized/vtzone.ll
+; icu/optimized/wrtxml.ll
 ; icu/optimized/xmlparser.ll
 ; libevent/optimized/event.c.ll
 ; libphonenumber/optimized/phonenumbermatcher_test.cc.ll
@@ -205,6 +221,7 @@ entry:
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; minetest/optimized/connection.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -284,6 +301,7 @@ entry:
 ; wireshark/optimized/packet-isns.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/packet-roofnet.c.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, ptr %1, i16 %2) #0 {
 entry:
@@ -292,7 +310,8 @@ entry:
   ret ptr %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; git/optimized/merge-ort.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; proxygen/optimized/CodecUtil.cpp.ll
 ; proxygen/optimized/RFC2616.cpp.ll

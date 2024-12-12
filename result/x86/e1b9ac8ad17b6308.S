@@ -7,7 +7,7 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	orb	%dil, %al
 	retq
-func00000000000002a8:                   # @func00000000000002a8
+func0000000000000548:                   # @func0000000000000548
 	leaq	(%rdx,%rdx), %rax
 	shlq	$31, %rdx
 	subq	%rax, %rdx
@@ -16,7 +16,7 @@ func00000000000002a8:                   # @func00000000000002a8
 	setb	%al
 	orb	%dil, %al
 	retq
-func00000000000003a8:                   # @func00000000000003a8
+func0000000000000748:                   # @func0000000000000748
 	leaq	(%rdx,%rdx), %rax
 	shlq	$31, %rdx
 	subq	%rax, %rdx

@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 39 occurrences:
 ; eastl/optimized/TestFixedHash.cpp.ll
 ; eastl/optimized/TestFunctional.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
@@ -23,8 +23,6 @@
 ; opencv/optimized/perf_stereosgbm.cpp.ll
 ; openjdk/optimized/divnode.ll
 ; openjdk/optimized/hb-face-builder.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; php/optimized/random.ll
 ; postgres/optimized/brin.ll
 ; qemu/optimized/block_nbd.c.ll
@@ -44,7 +42,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = urem i32 48, %0
+  %1 = urem i32 65536, %0
   ret i32 %1
 }
 

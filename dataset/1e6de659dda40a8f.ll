@@ -7,16 +7,16 @@
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = shl i64 %4, %3
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
-; 81 occurrences:
+; 79 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -37,8 +37,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -99,12 +97,12 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = shl i64 %4, %3
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

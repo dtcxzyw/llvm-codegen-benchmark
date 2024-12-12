@@ -38,7 +38,7 @@ entry:
   ret i1 %4
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; clamav/optimized/archive.cpp.ll
 ; cmake/optimized/io.cpp.ll
 ; faiss/optimized/IndexShardsIVF.cpp.ll
@@ -67,7 +67,6 @@ entry:
 ; protobuf/optimized/text_format.cc.ll
 ; proxygen/optimized/HQControlCodec.cpp.ll
 ; qemu/optimized/hw_virtio_virtio-mmio.c.ll
-; qemu/optimized/target_riscv_translate.c.ll
 ; redis/optimized/pac.ll
 ; redis/optimized/pac.sym.ll
 ; rocksdb/optimized/flush_job.cc.ll
@@ -88,7 +87,7 @@ entry:
   ret i1 %4
 }
 
-; 21 occurrences:
+; 24 occurrences:
 ; coreutils-rs/optimized/nchybjntbm98czw.ll
 ; html5ever-rs/optimized/3iu2ouoac0bhrlsy.ll
 ; llvm/optimized/FrontendOptions.cpp.ll
@@ -110,8 +109,11 @@ entry:
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000098(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i64 %0, 1
@@ -126,7 +128,7 @@ entry:
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ult i64 %0, 2
@@ -134,7 +136,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 16 occurrences:
 ; actix-rs/optimized/5d5zav44kcqbb5vr.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
@@ -148,8 +150,11 @@ entry:
 ; rust-analyzer-rs/optimized/4oth7q7qz5x90ygj.ll
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
 ; slurm/optimized/node_mgr.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000082(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i64 %0, 0
@@ -177,12 +182,10 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; llvm/optimized/MsgPackWriter.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; openjdk/optimized/gcConfig.ll
 ; pocketpy/optimized/compiler.cpp.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; verilator/optimized/V3EmitCConstPool.cpp.ll
 ; verilator/optimized/V3EmitCHeaders.cpp.ll
 ; verilator/optimized/V3EmitCImp.cpp.ll
@@ -191,18 +194,7 @@ entry:
 define i1 @func0000000000000010(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = icmp ugt i64 %0, -4294967297
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; openjdk/optimized/psParallelCompact.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000050(i64 %0, i8 %1) #0 {
-entry:
-  %2 = trunc nuw i8 %1 to i1
-  %3 = icmp ugt i64 %0, 65535
+  %3 = icmp ugt i64 %0, 9
   %4 = or i1 %3, %2
   ret i1 %4
 }

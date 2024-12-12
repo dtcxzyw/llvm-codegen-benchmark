@@ -1,11 +1,10 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; hermes/optimized/IREval.cpp.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/slub.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/optimize.c.ll
 ; spike/optimized/srl32.ll
@@ -19,7 +18,7 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
@@ -37,6 +36,7 @@ entry:
 ; spike/optimized/srli16.ll
 ; spike/optimized/srli8.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

@@ -7,7 +7,7 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func00000000000000e1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8

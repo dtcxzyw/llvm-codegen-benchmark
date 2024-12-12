@@ -9,9 +9,9 @@
 ; hyperscan/optimized/repeat.c.ll
 ; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/webp_enc.c.ll
+; lvgl/optimized/lv_tlsf.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/zone.cpp.ll
-; nix/optimized/serialise.ll
 ; opencv/optimized/alloc.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
@@ -38,9 +38,9 @@
 ; stb/optimized/stb_ds.c.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0) #0 {
+define ptr @func000000000000000c(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 24
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 24
   %2 = ptrtoint ptr %1 to i64
   %3 = add i64 %2, 31
   %4 = and i64 %3, -32
@@ -48,8 +48,9 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; linux/optimized/dm-ioctl.ll
+; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/brin_inclusion.ll
 ; postgres/optimized/brin_minmax.ll
@@ -71,12 +72,26 @@ entry:
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000009(ptr %0) #0 {
+define ptr @func000000000000000d(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 992
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 992
   %2 = ptrtoint ptr %1 to i64
   %3 = add nsw i64 %2, 15
   %4 = and i64 %3, -16
+  %5 = inttoptr i64 %4 to ptr
+  ret ptr %5
+}
+
+; 2 occurrences:
+; hyperscan/optimized/fdr.c.ll
+; nix/optimized/serialise.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(ptr %0) #0 {
+entry:
+  %1 = getelementptr nusw i8, ptr %0, i64 -96
+  %2 = ptrtoint ptr %1 to i64
+  %3 = add i64 %2, 63
+  %4 = and i64 %3, -64
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5
 }

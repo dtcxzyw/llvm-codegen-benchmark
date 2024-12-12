@@ -11,7 +11,7 @@ entry:
   ret i32 %4
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
@@ -26,6 +26,7 @@ entry:
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/PPCLinux.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
@@ -49,7 +50,7 @@ define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = mul nsw i32 %2, 10
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -65,15 +66,16 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/aigPartReg.c.ll
 ; llvm/optimized/HeaderMap.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = mul nsw i32 %2, 3
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

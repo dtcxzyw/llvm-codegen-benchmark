@@ -23,12 +23,12 @@ func0000000000000008:                   # @func0000000000000008
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+func000000000000000c:                   # @func000000000000000c
 	movzbl	%dl, %eax
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+func0000000000000000:                   # @func0000000000000000
 	movzbl	%dl, %eax
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax

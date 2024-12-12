@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001e1:                   # @func00000000000001e1
 	sext.w	a3, a0
 	sh3add.uw	a0, a0, a2
 	addi	a1, a1, 8
@@ -6,7 +6,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	czero.nez	a1, a1, a3
 	or	a0, a0, a1
 	ret
-func00000000000001a8:                   # @func00000000000001a8
+func00000000000003d8:                   # @func00000000000003d8
 	sext.w	a0, a0
 	addi	a1, a1, -16
 	add	a2, a2, a0

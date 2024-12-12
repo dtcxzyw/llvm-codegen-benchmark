@@ -51,13 +51,6 @@ func0000000000000018:                   # @func0000000000000018
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
-	cmpq	$7, %rdi
-	setb	%cl
-	vucomisd	%xmm1, %xmm0
-	setae	%al
-	andb	%cl, %al
-	retq
 func00000000000000cd:                   # @func00000000000000cd
 	testq	%rdi, %rdi
 	setne	%cl

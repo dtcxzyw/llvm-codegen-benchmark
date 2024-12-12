@@ -1,5 +1,5 @@
 
-; 180 occurrences:
+; 179 occurrences:
 ; arrow/optimized/tz.cpp.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
@@ -98,7 +98,6 @@
 ; mold/optimized/passes.cc.S390X.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; nix/optimized/nix-env.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; opencv/optimized/backend.cpp.ll
 ; opencv/optimized/command_line_parser.cpp.ll

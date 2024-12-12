@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl i64 %0, 32
@@ -11,13 +11,12 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; flac/optimized/foreign_metadata.c.ll
 ; hermes/optimized/APInt.cpp.ll
-; linux/optimized/head64.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
 ; linux/optimized/intel_gmch.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/setup.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
@@ -26,7 +25,6 @@ entry:
 ; llvm/optimized/FunctionImportUtils.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86IntelInstPrinter.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; openjdk/optimized/rdtsc_x86.ll
 ; openjdk/optimized/zip_util.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -34,8 +32,9 @@ entry:
 ; openusd/optimized/primRange.cpp.ll
 ; ruby/optimized/bignum.ll
 ; wireshark/optimized/packet-rtps.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 %0, 32
@@ -51,7 +50,7 @@ entry:
 ; minetest/optimized/httpfetch.cpp.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 %0, 32
@@ -63,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl i64 %0, 32
@@ -79,7 +78,7 @@ entry:
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 %0, 32
@@ -98,7 +97,7 @@ entry:
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nsw i64 %0, 32
@@ -111,7 +110,7 @@ entry:
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %0, 32
@@ -123,7 +122,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-homeplug.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %0, 24
@@ -132,11 +131,16 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 7 occurrences:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; wireshark/optimized/packet-rtps.c.ll
+; zed-rs/optimized/055l6m6wb4e4jq2j59cjsdkaz.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000ac(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 %0, 32

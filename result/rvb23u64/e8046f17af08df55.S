@@ -40,6 +40,11 @@ func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	ret
+func0000000000000020:                   # @func0000000000000020
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 2
+	ret
 func0000000000000005:                   # @func0000000000000005
 	add	a1, a1, a2
 	add	a0, a0, a1
@@ -60,18 +65,13 @@ func0000000000000014:                   # @func0000000000000014
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	ret
+func000000000000002c:                   # @func000000000000002c
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 2
+	ret
 func0000000000000012:                   # @func0000000000000012
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -1
-	ret
-func0000000000000037:                   # @func0000000000000037
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 1
-	ret
-func000000000000001c:                   # @func000000000000001c
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 1
 	ret

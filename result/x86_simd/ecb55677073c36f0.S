@@ -1,6 +1,6 @@
 func0000000000000032:                   # @func0000000000000032
 	vpmovzxbd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpsrld	$6, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0

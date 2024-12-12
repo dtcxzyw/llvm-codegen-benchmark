@@ -31,7 +31,8 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind

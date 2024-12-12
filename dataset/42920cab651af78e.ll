@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; cpython/optimized/mpdecimal.ll
 ; icu/optimized/decNumber.ll
@@ -12,7 +12,6 @@
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/be-fsstubs.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/encode.ll
 ; postgres/optimized/formatting.ll

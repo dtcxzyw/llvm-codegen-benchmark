@@ -28,15 +28,6 @@ func0000000000000033:                   # @func0000000000000033
 	movzbl	%al, %eax
 	leal	1(%rax,%rdi), %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
-	testb	$1, %sil
-	movl	$16, %eax
-	movl	$4, %ecx
-	cmovel	%ecx, %eax
-	cmpl	$3, %edx
-	cmovbl	%ecx, %eax
-	addl	%edi, %eax
-	retq
 func0000000000000030:                   # @func0000000000000030
 	testl	%edx, %edx
 	setne	%al
@@ -67,11 +58,4 @@ func0000000000000018:                   # @func0000000000000018
 	cmpl	$8192, %edx                     # imm = 0x2000
 	cmovgel	%ecx, %eax
 	addl	%edi, %eax
-	retq
-func0000000000000005:                   # @func0000000000000005
-	cmpl	$1, %edx
-	sete	%al
-	andb	%sil, %al
-	movzbl	%al, %eax
-	leal	1900(%rdi,%rax), %eax
 	retq

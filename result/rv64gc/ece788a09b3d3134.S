@@ -40,7 +40,7 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 .LCPI5_0:
 	.quad	0x4090000000000000              # double 1024
-func000000000000004c:                   # @func000000000000004c
+func000000000000014c:                   # @func000000000000014c
 	lui	a1, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a1)
 	sltiu	a0, a0, 4
@@ -54,11 +54,17 @@ func00000000000000cc:                   # @func00000000000000cc
 	fle.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
-.LCPI7_0:
+func0000000000000144:                   # @func0000000000000144
+	sltiu	a0, a0, 20
+	fmv.d.x	fa5, zero
+	flt.d	a1, fa5, fa0
+	and	a0, a0, a1
+	ret
+.LCPI8_0:
 	.quad	0x7ff0000000000000              # double +Inf
 func00000000000000c6:                   # @func00000000000000c6
-	lui	a1, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a1)
+	lui	a1, %hi(.LCPI8_0)
+	fld	fa5, %lo(.LCPI8_0)(a1)
 	snez	a0, a0
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1

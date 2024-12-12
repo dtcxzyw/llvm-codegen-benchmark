@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, -2
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Fsuper_cache.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f8(i32 %0, i32 %1) #0 {
+define i32 @func00000000000001e8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = add nuw nsw i32 %2, 7
@@ -40,7 +40,7 @@ entry:
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000aa(i32 %0, i32 %1) #0 {
+define i32 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = add nuw i32 %2, 2
@@ -50,21 +50,9 @@ entry:
 }
 
 ; 1 occurrences:
-; zxing/optimized/QRDetector.cpp.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000f4(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %2, 9
-  %4 = icmp ult i32 %0, 4
-  %5 = select i1 %4, i32 %3, i32 0
-  ret i32 %5
-}
-
-; 1 occurrences:
 ; openblas/optimized/dbdsdc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add nsw i32 %2, -1

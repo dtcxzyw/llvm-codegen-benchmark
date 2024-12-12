@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	addb	$-65, %sil
 	cmpb	$26, %sil
 	setb	%cl
@@ -7,7 +7,7 @@ func0000000000000088:                   # @func0000000000000088
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000a88:                   # @func0000000000000a88
+func0000000000002908:                   # @func0000000000002908
 	addb	$-65, %sil
 	cmpb	$26, %sil
 	setb	%cl

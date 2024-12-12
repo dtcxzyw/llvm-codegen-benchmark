@@ -39,7 +39,7 @@ func0000000000000003:                   # @func0000000000000003
 func000000000000000f:                   # @func000000000000000f
 	vpmovqd	%ymm2, %xmm2
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm2, %xmm2
-	vpternlogd	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogd	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vzeroupper
 	retq
 .LCPI3_0:
@@ -83,7 +83,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000008:                   # @func0000000000000008
 	vpmovqd	%ymm2, %xmm2
 	vpandd	.LCPI5_0(%rip){1to4}, %xmm2, %xmm2
-	vpternlogd	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogd	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vzeroupper
 	retq
 .LCPI6_0:
@@ -111,6 +111,6 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000007:                   # @func0000000000000007
 	vpmovqd	%ymm2, %xmm2
 	vpandd	.LCPI6_1(%rip){1to4}, %xmm2, %xmm2
-	vpternlogd	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogd	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vzeroupper
 	retq

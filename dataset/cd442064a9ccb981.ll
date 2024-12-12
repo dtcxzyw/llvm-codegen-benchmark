@@ -5,12 +5,12 @@
 ; opencv/optimized/phasecorr.cpp.ll
 ; postgres/optimized/jsonpath_exec.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp slt i32 %1, %2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
@@ -18,12 +18,12 @@ entry:
 ; libwebp/optimized/backward_references_enc.c.ll
 ; openjdk/optimized/DrawParallelogram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i32 %1, %2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
@@ -34,12 +34,12 @@ entry:
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000054a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %2, %1
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
@@ -47,24 +47,24 @@ entry:
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; openjdk/optimized/classListParser.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000541(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %2, %1
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; flac/optimized/stream_encoder.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %1, %2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
@@ -86,72 +86,73 @@ entry:
 ; abc/optimized/ioWriteBlifMv.c.ll
 ; abc/optimized/ioWritePla.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000546(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 10
   %4 = icmp sgt i32 %1, %2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; linux/optimized/hda_codec.ll
+; lvgl/optimized/lv_tabview.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, -1
+  %4 = icmp ult i32 %1, %2
+  %5 = select i1 %4, i32 %1, i32 %3
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a7(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000547(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %2, %1
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp sge i32 %5, %0
+  %6 = icmp sle i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000068a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = icmp ult i32 %1, %2
+  %4 = icmp samesign ult i32 %1, %2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp slt i32 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/hda_codec.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, -1
-  %4 = icmp ult i32 %1, %2
-  %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp ugt i32 %2, %1
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/phasecorr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp slt i32 %1, %2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -159,24 +160,24 @@ entry:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp slt i32 %1, %2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000488(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp ult i32 %1, %2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 

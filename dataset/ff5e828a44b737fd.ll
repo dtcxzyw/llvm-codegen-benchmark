@@ -4,7 +4,6 @@
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
@@ -17,6 +16,7 @@
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
+; boost/optimized/src.ll
 ; grpc/optimized/call_trace.cc.ll
 ; grpc/optimized/client_channel.cc.ll
 ; grpc/optimized/dns_resolver_ares.cc.ll
@@ -128,7 +128,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = zext i64 %3 to i128
   %5 = mul nuw i128 %4, 11376068507788127593
-  %6 = xor i128 %5, %0
+  %6 = xor i128 %0, %5
   %7 = trunc i128 %6 to i64
   ret i64 %7
 }

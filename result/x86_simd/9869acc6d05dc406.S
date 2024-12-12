@@ -30,7 +30,7 @@ func0000000000000003:                   # @func0000000000000003
 	.long	12288                           # 0x3000
 .LCPI1_2:
 	.long	48                              # 0x30
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	vptestnmw	.LCPI1_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1   # ymm1 = [12288,12288,12288,12288,12288,12288,12288,12288]
 	vpbroadcastd	.LCPI1_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [48,48,48,48,48,48,48,48]
@@ -66,5 +66,5 @@ func0000000000000002:                   # @func0000000000000002
 	vpcmpeqw	.LCPI2_1(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %ymm1   # ymm1 = [8192,8192,8192,8192,8192,8192,8192,8192]
 	vpbroadcastd	.LCPI2_3(%rip), %ymm1 {%k1} # ymm1 {%k1} = [134225920,134225920,134225920,134225920,134225920,134225920,134225920,134225920]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

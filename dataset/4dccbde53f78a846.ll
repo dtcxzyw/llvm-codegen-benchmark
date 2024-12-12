@@ -1,8 +1,7 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/fraClau.c.ll
-; cmake/optimized/archive_read_support_filter_zstd.c.ll
 ; cvc5/optimized/Solver.cc.ll
 ; git/optimized/convert.ll
 ; git/optimized/send-pack.ll
@@ -53,7 +52,7 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 19 occurrences:
 ; git/optimized/commit.ll
 ; git/optimized/diffcore-rename.ll
 ; git/optimized/dir.ll
@@ -65,14 +64,11 @@ entry:
 ; openjdk/optimized/threadService.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
 ; openssl/optimized/libapps-lib-apps.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; php/optimized/cgi_main.ll
 ; postgres/optimized/initdb.ll
 ; postgres/optimized/user.ll
-; proj/optimized/crs.cpp.ll
 ; qemu/optimized/net_tap.c.ll
 ; rust-analyzer-rs/optimized/2hvuxgck7heujc9c.ll
 ; slurm/optimized/job_mgr.ll

@@ -8,7 +8,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 18
   %4 = and i32 %3, 1023
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

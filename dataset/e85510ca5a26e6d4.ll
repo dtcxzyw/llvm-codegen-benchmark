@@ -5,7 +5,7 @@
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/reg_split.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c1(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000181(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %0, null
   %3 = icmp eq ptr %1, null

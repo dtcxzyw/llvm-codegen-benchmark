@@ -20,19 +20,6 @@ entry:
 }
 
 ; 3 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = lshr i64 %3, 3
-  %5 = sub nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 3 occurrences:
 ; linux/optimized/filemap.ll
 ; linux/optimized/page-writeback.ll
 ; qemu/optimized/fpu_softfloat.c.ll

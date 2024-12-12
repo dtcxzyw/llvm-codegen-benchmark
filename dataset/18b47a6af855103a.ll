@@ -1,12 +1,12 @@
 
-; 59 occurrences:
+; 58 occurrences:
 ; abc/optimized/amapRead.c.ll
 ; abc/optimized/giaKf.c.ll
 ; abseil-cpp/optimized/vlog_config.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
-; eastl/optimized/TestVectorSet.cpp.ll
 ; gromacs/optimized/gen_ad.cpp.ll
 ; linux/optimized/dm-raid1.ll
 ; linux/optimized/ipmr.ll
@@ -42,7 +42,6 @@
 ; llvm/optimized/SplitKit.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
-; lua/optimized/ltable.ll
 ; luajit/optimized/buildvm.ll
 ; mimalloc/optimized/page.c.ll
 ; mimalloc/optimized/segment.c.ll
@@ -60,9 +59,9 @@
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000019(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 32
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = sdiv exact i64 %4, 224
@@ -101,12 +100,25 @@ entry:
 ; opencv/optimized/tflite_importer.cpp.ll
 ; php/optimized/var_unserializer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000018(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 3
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 3
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = sdiv i64 %4, 2
+  ret i64 %5
+}
+
+; 2 occurrences:
+; eastl/optimized/TestVectorSet.cpp.ll
+; lua/optimized/ltable.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000011(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -24
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = sdiv exact i64 %4, 24
   ret i64 %5
 }
 

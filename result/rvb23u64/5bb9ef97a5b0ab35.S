@@ -8,12 +8,6 @@ func000000000000000c:                   # @func000000000000000c
 	zext.h	a0, a0
 	snez	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
-	and	a0, a0, a1
-	zext.h	a0, a0
-	sltiu	a0, a0, 256
-	xori	a0, a0, 1
-	ret
 func000000000000000a:                   # @func000000000000000a
 	and	a0, a0, a1
 	sext.h	a0, a0

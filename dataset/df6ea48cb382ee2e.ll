@@ -13,7 +13,7 @@
 ; oiio/optimized/formatspec.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i64 0, i64 %0

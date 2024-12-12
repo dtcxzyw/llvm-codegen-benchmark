@@ -19,7 +19,7 @@
 ; rocksdb/optimized/db_impl.cc.ll
 ; xgboost/optimized/allgather.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0) #0 {
+define i64 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -10
   %2 = icmp eq i32 %0, -1
@@ -32,7 +32,7 @@ entry:
 ; openjdk/optimized/stubGenerator_x86_64_poly1305.ll
 ; openmpi/optimized/opal_datatype_create.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0) #0 {
+define i64 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = icmp eq i32 %0, 31
@@ -41,15 +41,12 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 3 occurrences:
 ; icu/optimized/ucbuf.ll
 ; icu/optimized/ucnvscsu.ll
-; openblas/optimized/dorcsd.c.ll
-; openblas/optimized/dorcsd2by1.c.ll
-; opencv/optimized/lsc.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0) #0 {
+define i64 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = icmp slt i32 %0, 1
@@ -58,64 +55,47 @@ entry:
   ret i64 %4
 }
 
-; 46 occurrences:
+; 30 occurrences:
 ; abc/optimized/abcCut.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcDfs.c.ll
-; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
-; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
-; abc/optimized/acecCl.c.ll
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
-; abc/optimized/bmcClp.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSim.c.ll
-; abc/optimized/cecSplit.c.ll
-; abc/optimized/exor.c.ll
-; abc/optimized/fraClau.c.ll
 ; abc/optimized/giaDfs.c.ll
 ; abc/optimized/giaEsop.c.ll
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/giaPack.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaRex.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ivyMan.c.ll
-; abc/optimized/liveness.c.ll
-; abc/optimized/liveness_sim.c.ll
-; abc/optimized/mioParse.c.ll
-; abc/optimized/mpmPre.c.ll
-; abc/optimized/nwkAig.c.ll
 ; abc/optimized/plaHash.c.ll
 ; abc/optimized/plaSimple.c.ll
 ; abc/optimized/retLvalue.c.ll
 ; abc/optimized/satInterP.c.ll
-; abc/optimized/satSolver2i.c.ll
-; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/wlcNtk.c.ll
-; abc/optimized/wlcUif.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0) #0 {
+define i64 @func0000000000000024(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, 1
-  %2 = icmp ult i32 %0, 7
-  %3 = select i1 %2, i32 8, i32 %1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
+  %1 = call i32 @llvm.umax.i32(i32 %0, i32 7)
+  %2 = add i32 %1, 1
+  %3 = sext i32 %2 to i64
+  ret i64 %3
 }
 
-; 56 occurrences:
+; 55 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -137,7 +117,6 @@ entry:
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/extraUtilPath.c.ll
-; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -175,18 +154,16 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 1
-  %2 = icmp ult i32 %0, 15
-  %3 = select i1 %2, i32 16, i32 %1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
+  %1 = call i32 @llvm.umax.i32(i32 %0, i32 15)
+  %2 = add i32 %1, 1
+  %3 = sext i32 %2 to i64
+  ret i64 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/aigTiming.c.ll
-; ozz-animation/optimized/skinning_job.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i32 %0) #0 {
+define i64 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 8
   %2 = icmp ugt i32 %0, -8
@@ -198,13 +175,12 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/sclLoad.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i32 %0) #0 {
+define i64 @func0000000000000044(i32 %0) #0 {
 entry:
-  %1 = add nuw i32 %0, 1
-  %2 = icmp ult i32 %0, 15
-  %3 = select i1 %2, i32 16, i32 %1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
+  %1 = call i32 @llvm.umax.i32(i32 %0, i32 15)
+  %2 = add i32 %1, 1
+  %3 = sext i32 %2 to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -220,35 +196,10 @@ entry:
 }
 
 ; 2 occurrences:
-; linux/optimized/i8042.ll
-; opencv/optimized/slice_layer.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0) #0 {
-entry:
-  %1 = add nuw nsw i32 %0, 2
-  %2 = icmp slt i32 %0, 0
-  %3 = select i1 %2, i32 1, i32 %1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; linux/optimized/nfs4trace.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000026(i32 %0) #0 {
-entry:
-  %1 = add nuw i32 %0, 1
-  %2 = icmp slt i32 %0, 1
-  %3 = select i1 %2, i32 1, i32 %1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
-}
-
-; 2 occurrences:
 ; graphviz/optimized/exeval.c.ll
 ; opencv/optimized/bgfg.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0) #0 {
+define i64 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
   %2 = icmp sgt i32 %0, 5
@@ -269,4 +220,8 @@ entry:
   ret i64 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.umax.i32(i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

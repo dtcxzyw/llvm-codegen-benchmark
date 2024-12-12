@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; darktable/optimized/introspection_demosaic.c.ll
+; 3 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; qemu/optimized/hw_net_e1000e.c.ll
@@ -31,7 +30,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = or disjoint i64 %3, 1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

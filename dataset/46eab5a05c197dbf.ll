@@ -9,7 +9,7 @@
 ; openjdk/optimized/hb-face-builder.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0) #0 {
+define i1 @func0000000000000081(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 27
   ret i1 %1
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0) #0 {
+define i1 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 1
   ret i1 %1

@@ -1,5 +1,16 @@
 
-; 50 occurrences:
+; 2 occurrences:
+; redis/optimized/sentinel.ll
+; velox/optimized/Sequence.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %.v = select i1 %0, i64 %1, i64 %2
+  %3 = mul nsw i64 %.v, 86400
+  ret i64 %3
+}
+
+; 60 occurrences:
 ; rust-analyzer-rs/optimized/13whla2w760i0ne3.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
@@ -50,6 +61,16 @@
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -59,14 +80,13 @@ entry:
 }
 
 ; 1 occurrences:
-; redis/optimized/sentinel.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul nsw i64 %2, 5
-  %4 = mul nsw i64 %1, 3
-  %5 = select i1 %0, i64 %4, i64 %3
-  ret i64 %5
+  %.v = select i1 %0, i64 %1, i64 %2
+  %3 = mul i64 %.v, 5871781006564002453
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

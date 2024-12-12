@@ -394,7 +394,7 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000042(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp eq i64 %2, 0
@@ -403,7 +403,7 @@ entry:
   ret i1 %5
 }
 
-; 68 occurrences:
+; 65 occurrences:
 ; cpython/optimized/ceval.ll
 ; hermes/optimized/FoldingSet.cpp.ll
 ; libquic/optimized/ex_data.c.ll
@@ -420,7 +420,6 @@ entry:
 ; linux/optimized/iterator.ll
 ; linux/optimized/journal.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/manage.ll
 ; linux/optimized/memfd.ll
 ; linux/optimized/page-writeback.ll
@@ -463,9 +462,7 @@ entry:
 ; ruby/optimized/class.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/gc.ll
-; ruby/optimized/imemo.ll
 ; ruby/optimized/iseq.ll
-; ruby/optimized/postponed_job.ll
 ; ruby/optimized/proc.ll
 ; ruby/optimized/vm.ll
 ; ruby/optimized/vm_backtrace.ll
@@ -473,7 +470,7 @@ entry:
 ; ruby/optimized/yjit.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000302(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = icmp ne i64 %2, 0
@@ -482,11 +479,9 @@ entry:
   ret i1 %5
 }
 
-; 28 occurrences:
+; 26 occurrences:
 ; hwloc/optimized/memattrs.ll
 ; linux/optimized/af_unix.ll
-; linux/optimized/filter.ll
-; linux/optimized/gso.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/tcp_offload.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
@@ -512,7 +507,7 @@ entry:
 ; slurm/optimized/gres_ctld.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000058(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 20480
   %3 = icmp ne i64 %2, 0
@@ -535,23 +530,11 @@ entry:
 ; pbrt-v4/optimized/interaction.cpp.ll
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000318(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne ptr %0, null
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/p4.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(ptr %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 62
-  %3 = icmp ugt i64 %2, 45
-  %4 = icmp eq ptr %0, null
   %5 = or i1 %3, %4
   ret i1 %5
 }

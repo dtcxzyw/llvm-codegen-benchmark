@@ -5,7 +5,7 @@
 ; postgres/optimized/timestamp.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define double @func0000000000000016(i64 %0) #0 {
+define double @func0000000000000026(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1000000
   %2 = icmp slt i64 %0, 0

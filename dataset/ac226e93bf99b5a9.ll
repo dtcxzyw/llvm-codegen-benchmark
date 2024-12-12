@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; darktable/optimized/introspection_colorbalance.c.ll
 ; darktable/optimized/introspection_colorize.c.ll
@@ -16,6 +16,7 @@
 ; nori/optimized/rfilter.cpp.ll
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
+; oiio/optimized/environment.cpp.ll
 ; oiio/optimized/filter.cpp.ll
 ; openexr/optimized/ImfRgbaYca.cpp.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll

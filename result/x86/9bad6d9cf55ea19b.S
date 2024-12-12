@@ -10,6 +10,12 @@ func0000000000000006:                   # @func0000000000000006
 	cmovnel	%esi, %eax
 	shll	$30, %eax
 	retq
+func0000000000000051:                   # @func0000000000000051
+	movl	%edi, %eax
+	testb	%dl, %dl
+	cmovsl	%esi, %eax
+	shll	$24, %eax
+	retq
 func0000000000000007:                   # @func0000000000000007
 	movl	%edi, %eax
 	testb	$8, %dl

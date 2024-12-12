@@ -22,3 +22,9 @@ func0000000000000034:                   # @func0000000000000034
 	subq	%rax, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
+func0000000000000076:                   # @func0000000000000076
+	movl	%edx, %eax
+	shlq	$2, %rax
+	subq	%rax, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq

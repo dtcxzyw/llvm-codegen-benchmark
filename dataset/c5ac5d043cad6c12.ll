@@ -19,7 +19,7 @@ entry:
 define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 7
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 7
   ret i32 %5

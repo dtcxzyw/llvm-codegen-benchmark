@@ -1,4 +1,4 @@
-func000000000000007b:                   # @func000000000000007b
+func00000000000000eb:                   # @func00000000000000eb
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -9,7 +9,7 @@ func000000000000007b:                   # @func000000000000007b
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -20,7 +20,7 @@ func0000000000000054:                   # @func0000000000000054
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000098:                   # @func0000000000000098
+func0000000000000338:                   # @func0000000000000338
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	sext.w	a1, a1
@@ -31,7 +31,7 @@ func0000000000000098:                   # @func0000000000000098
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func00000000000000b7:                   # @func00000000000000b7
+func0000000000000167:                   # @func0000000000000167
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	sext.w	a1, a1
@@ -42,7 +42,7 @@ func00000000000000b7:                   # @func00000000000000b7
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func0000000000000015:                   # @func0000000000000015
+func0000000000000035:                   # @func0000000000000035
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	sext.w	a1, a1
@@ -54,7 +54,7 @@ func0000000000000015:                   # @func0000000000000015
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -64,7 +64,7 @@ func0000000000000066:                   # @func0000000000000066
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -74,7 +74,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000294:                   # @func0000000000000294
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -84,7 +84,7 @@ func0000000000000044:                   # @func0000000000000044
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	sext.w	a1, a1
@@ -95,7 +95,7 @@ func0000000000000045:                   # @func0000000000000045
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000059:                   # @func0000000000000059
+func00000000000002b9:                   # @func00000000000002b9
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -106,7 +106,7 @@ func0000000000000059:                   # @func0000000000000059
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func0000000000000095:                   # @func0000000000000095
+func0000000000000335:                   # @func0000000000000335
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	sext.w	a1, a1

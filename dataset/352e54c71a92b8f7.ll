@@ -4,7 +4,8 @@
 ; abc/optimized/ivyHaig.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/saigSimMv.c.ll
-; arrow/optimized/float16.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -61,7 +62,6 @@
 ; ockam-rs/optimized/1znr2e86bp785yod.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
-; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/rmat.cpp.ll
 ; openjdk/optimized/invocationCounter.ll
 ; openjdk/optimized/jvmciCodeInstaller.ll
@@ -87,7 +87,7 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; jq/optimized/main.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/vt.ll
@@ -97,6 +97,7 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; meshoptimizer/optimized/quantization.cpp.ll
 ; openjdk/optimized/deoptimization.ll
+; openusd/optimized/value.cpp.ll
 ; php/optimized/zend_inference.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; Function Attrs: nounwind

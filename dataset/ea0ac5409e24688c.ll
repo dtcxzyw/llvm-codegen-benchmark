@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 34 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -13,7 +13,6 @@
 ; linux/optimized/icmp.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/ip6_offload.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/reassembly.ll
 ; linux/optimized/rx.ll
@@ -25,7 +24,6 @@
 ; linux/optimized/tx.ll
 ; linux/optimized/udp.ll
 ; linux/optimized/udp_offload.ll
-; linux/optimized/wep.ll
 ; linux/optimized/wpa.ll
 ; linux/optimized/xfrm4_input.ll
 ; linux/optimized/xfrm6_input.ll

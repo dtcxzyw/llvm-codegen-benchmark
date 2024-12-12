@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 14
   %4 = add nuw nsw i32 %3, 1
-  %5 = icmp ult i32 %1, 2
+  %5 = icmp samesign ult i32 %1, 2
   %6 = select i1 %5, i32 %4, i32 %0
   ret i32 %6
 }
@@ -18,7 +18,7 @@ entry:
 ; icu/optimized/units_data.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw nsw i32 %3, 1
@@ -53,7 +53,7 @@ entry:
 ; spike/optimized/vsadd_vv.ll
 ; spike/optimized/vsadd_vx.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
   %4 = add nuw i32 %3, 2147483647
@@ -73,7 +73,7 @@ entry:
 ; spike/optimized/vssub_vv.ll
 ; spike/optimized/vssub_vx.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
   %4 = add nuw i32 %3, 2147483647
@@ -86,11 +86,11 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = add nsw i32 %3, -511
-  %5 = icmp ugt i32 %1, 511
+  %5 = icmp samesign ugt i32 %1, 511
   %6 = select i1 %5, i32 %4, i32 %0
   ret i32 %6
 }

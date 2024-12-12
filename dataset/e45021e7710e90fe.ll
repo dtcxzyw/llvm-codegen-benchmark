@@ -20,9 +20,9 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000053(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 100
+  %3 = icmp samesign ult i32 %2, 100
   %4 = select i1 %3, i32 2, i32 3
   %5 = select i1 %1, i32 1, i32 %4
   %6 = add nuw nsw i32 %5, %0
@@ -73,12 +73,11 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 -1, i32 -10
   %5 = select i1 %1, i32 0, i32 %4
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
-; 2 occurrences:
-; cpython/optimized/codecs.ll
+; 1 occurrences:
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i1 %1, i32 %2) #0 {
@@ -95,9 +94,9 @@ entry:
 ; gromacs/optimized/xtc2.c.ll
 ; gromacs/optimized/xtc3.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000051(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 6
+  %3 = icmp samesign ult i32 %2, 6
   %4 = select i1 %3, i32 3, i32 0
   %5 = select i1 %1, i32 6, i32 %4
   %6 = add nsw i32 %5, %0
@@ -125,7 +124,7 @@ entry:
   %3 = icmp slt i32 %2, 100
   %4 = select i1 %3, i32 3, i32 4
   %5 = select i1 %1, i32 2, i32 %4
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -137,19 +136,32 @@ entry:
   %3 = icmp slt i32 %2, 3
   %4 = select i1 %3, i32 2, i32 3
   %5 = select i1 %1, i32 1, i32 %4
+  %6 = add i32 %0, %5
+  ret i32 %6
+}
+
+; 2 occurrences:
+; wolfssl/optimized/asn.c.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 65536
+  %4 = select i1 %3, i32 3, i32 4
+  %5 = select i1 %1, i32 2, i32 %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
 
 ; 1 occurrences:
-; wolfssl/optimized/asn.c.ll
+; cpython/optimized/codecs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000060(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 65536
-  %4 = select i1 %3, i32 2, i32 3
-  %5 = select i1 %1, i32 1, i32 %4
-  %6 = add i32 %5, %0
+  %3 = icmp samesign ugt i32 %2, 255
+  %4 = select i1 %3, i32 6, i32 4
+  %5 = select i1 %1, i32 10, i32 %4
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

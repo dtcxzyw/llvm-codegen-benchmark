@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 75 occurrences:
 ; duckdb/optimized/ub_duckdb_bind_statement.cpp.ll
 ; duckdb/optimized/ub_duckdb_bind_tableref.cpp.ll
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
@@ -45,7 +45,6 @@
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; hyperscan/optimized/smallwrite_build.cpp.ll
 ; linux/optimized/neighbour.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
@@ -77,9 +76,9 @@
 ; minetest/optimized/tool.cpp.ll
 ; minetest/optimized/unit_sao.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000c21(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 48
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 48
   %3 = icmp eq ptr %2, %0
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, i1 true, i1 %3
@@ -89,9 +88,9 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/bytecodes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000c81(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = icmp ult ptr %2, %0
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, i1 true, i1 %3
@@ -101,9 +100,23 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/logcat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -1
+  %3 = icmp eq ptr %2, %0
+  %4 = icmp eq ptr %0, null
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 3 occurrences:
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/ng_is_equal.cpp.ll
+; hyperscan/optimized/ng_limex_accel.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000821(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -8
   %3 = icmp eq ptr %2, %0
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, i1 true, i1 %3

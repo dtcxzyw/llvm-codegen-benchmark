@@ -1,33 +1,24 @@
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	shl	v2.4s, v2.4s, #8
-	bic	v1.4h, #255, lsl #8
-	orr	v0.16b, v2.16b, v0.16b
-	ushll	v1.4s, v1.4h, #0
-	orr	v0.16b, v0.16b, v1.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	orr	w8, w0, w2, lsl #8
+	and	w9, w1, #0xff
+	orr	w8, w8, w9
+	sxtw	x0, w8
 	ret
                                         // -- End function
 func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
-	shl	v2.4s, v2.4s, #16
-	bic	v1.4h, #255, lsl #8
-	orr	v0.16b, v2.16b, v0.16b
-	ushll	v1.4s, v1.4h, #0
-	orr	v0.16b, v0.16b, v1.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	orr	w8, w0, w2, lsl #16
+	and	w9, w1, #0xff
+	orr	w8, w8, w9
+	sxtw	x0, w8
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	shl	v2.4s, v2.4s, #16
-	bic	v1.4h, #255, lsl #8
-	orr	v0.16b, v2.16b, v0.16b
-	ushll	v1.4s, v1.4h, #0
-	orr	v0.16b, v0.16b, v1.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	orr	w8, w0, w2, lsl #16
+	and	w9, w1, #0xff
+	orr	w8, w8, w9
+	sxtw	x0, w8
 	ret
                                         // -- End function

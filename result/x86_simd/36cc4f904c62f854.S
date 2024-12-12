@@ -4,7 +4,7 @@
 	.long	127                             # 0x7f
 .LCPI0_2:
 	.long	126                             # 0x7e
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpltuq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm0   # xmm0 = [127,127,127,127]
@@ -17,7 +17,7 @@ func0000000000000034:                   # @func0000000000000034
 	.long	18                              # 0x12
 .LCPI1_2:
 	.long	19                              # 0x13
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %xmm0   # xmm0 = [18,18,18,18]
@@ -55,7 +55,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	1                               # 0x1
 .LCPI4_2:
 	.long	10                              # 0xa
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpnleuq	.LCPI4_0(%rip){1to4}, %ymm0, %k1
 	vpbroadcastd	.LCPI4_1(%rip), %xmm0   # xmm0 = [1,1,1,1]
@@ -64,7 +64,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovq2m	%ymm0, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -74,7 +74,7 @@ func0000000000000016:                   # @func0000000000000016
 	retq
 .LCPI6_0:
 	.long	9                               # 0x9
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovq2m	%ymm0, %k1
 	vpbroadcastd	.LCPI6_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [9,9,9,9]

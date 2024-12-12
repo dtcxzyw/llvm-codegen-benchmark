@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	subl	%edx, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
@@ -14,7 +14,7 @@ func0000000000000140:                   # @func0000000000000140
 	subl	%edx, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000102:                   # @func0000000000000102
+func0000000000000103:                   # @func0000000000000103
 	subl	%edx, %esi
 	imulq	$176, %rsi, %rax
 	addq	%rdi, %rax
@@ -23,7 +23,7 @@ func0000000000000020:                   # @func0000000000000020
 	subl	%edx, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000142:                   # @func0000000000000142
+func0000000000000143:                   # @func0000000000000143
 	subl	%edx, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq

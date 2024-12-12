@@ -65,7 +65,7 @@ func0000000000000005:                   # @func0000000000000005
 	mv	a0, a1
 .LBB9_2:                                # %entry
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	sext.w	a2, a2
 	lui	a3, 3503
 	addiw	a3, a3, 619
@@ -73,10 +73,17 @@ func0000000000000011:                   # @func0000000000000011
 	mv	a0, a1
 .LBB10_2:                               # %entry
 	ret
-func0000000000000020:                   # @func0000000000000020
-	srliw	a2, a2, 10
-	li	a3, 30
-	bltu	a3, a2, .LBB11_2
+func0000000000000050:                   # @func0000000000000050
+	sext.w	a2, a2
+	li	a3, 16
+	bltu	a2, a3, .LBB11_2
 	mv	a0, a1
 .LBB11_2:                               # %entry
+	ret
+func0000000000000060:                   # @func0000000000000060
+	srliw	a2, a2, 10
+	li	a3, 30
+	bltu	a3, a2, .LBB12_2
+	mv	a0, a1
+.LBB12_2:                               # %entry
 	ret

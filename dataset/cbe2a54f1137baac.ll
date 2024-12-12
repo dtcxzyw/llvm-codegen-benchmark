@@ -25,17 +25,6 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; openusd/optimized/refinerSurfaceFactory.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i16 %1) #0 {
-entry:
-  %2 = icmp ult i16 %1, 2
-  %3 = select i1 %2, i64 1, i64 -2
-  %4 = add nsw i64 %3, %0
-  ret i64 %4
-}
-
 ; 2 occurrences:
 ; postgres/optimized/xlogreader.ll
 ; wireshark/optimized/androiddump.c.ll
@@ -59,15 +48,14 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; icu/optimized/ucnv2022.ll
-; node/optimized/libnode.node_messaging.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 256
-  %3 = select i1 %2, i64 640, i64 632
+  %3 = select i1 %2, i64 4294967295, i64 4294967294
   %4 = add i64 %3, %0
   ret i64 %4
 }

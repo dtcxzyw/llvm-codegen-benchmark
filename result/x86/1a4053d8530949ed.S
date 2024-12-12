@@ -5,15 +5,15 @@ func0000000000000002:                   # @func0000000000000002
 	addq	%rcx, %rax
 	andq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	movb	$57, %al
-	bzhiq	%rax, %rsi, %rax
-	incq	%rax
-	andq	%rdi, %rax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	movzbl	%sil, %eax
 	decq	%rax
+	andq	%rdi, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	movb	$44, %al
+	bzhiq	%rax, %rsi, %rax
+	addq	$5, %rax
 	andq	%rdi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000

@@ -11,7 +11,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000054c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %2
   %4 = icmp sgt i32 %3, %1
@@ -25,7 +25,7 @@ entry:
 ; luau/optimized/ltable.cpp.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d4a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, %2
   %4 = icmp sgt i32 %3, %1
@@ -38,7 +38,7 @@ entry:
 ; protobuf/optimized/zero_copy_stream_impl.cc.ll
 ; sentencepiece/optimized/zero_copy_stream_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000036c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000ccc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, %0
   %4 = icmp slt i32 %3, %1
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-bgp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %0, %2
   %4 = icmp slt i32 %3, %1
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; pbrt-v4/optimized/camera.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %2
   %4 = icmp slt i32 %3, %1
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/xloginsert.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000026a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000008ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %0, %2
   %4 = icmp slt i32 %3, %1
@@ -86,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003ac(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d4c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, %2
   %4 = icmp sgt i32 %3, %1
@@ -98,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %0, %2
   %4 = icmp ult i32 %3, %1
@@ -110,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ustdio.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %2
   %4 = icmp slt i32 %3, %1

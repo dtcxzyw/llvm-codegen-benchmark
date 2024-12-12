@@ -3,7 +3,7 @@
 ; abc/optimized/giaCTas.c.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, float %1, float %2) #0 {
+define i1 @func0000000000000081(ptr %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %1, %2
   %4 = icmp eq ptr %0, null
@@ -16,7 +16,7 @@ entry:
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, float %1, float %2) #0 {
+define i1 @func0000000000000041(ptr %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = icmp eq ptr %0, null

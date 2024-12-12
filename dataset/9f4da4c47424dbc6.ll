@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; clamav/optimized/hashtab.c.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
@@ -10,6 +10,7 @@
 ; eastl/optimized/TestStringHashMap.cpp.ll
 ; freetype/optimized/ftcache.c.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; meshoptimizer/optimized/indexgenerator.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; ninja/optimized/build_log.cc.ll
@@ -31,7 +32,7 @@
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 2057
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

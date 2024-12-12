@@ -4,7 +4,7 @@ func0000000000000010:                   # @func0000000000000010
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
 	vxor.vi	v10, v10, 3
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 1
 	ret
 func0000000000000015:                   # @func0000000000000015

@@ -27,11 +27,9 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; linux/optimized/af_inet.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/gso.ll
-; linux/optimized/ip6_checksum.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/tcp_offload.ll
 ; Function Attrs: nounwind

@@ -23,7 +23,7 @@ entry:
   ret i128 %5
 }
 
-; 19 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -33,6 +33,7 @@ entry:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
@@ -43,6 +44,11 @@ entry:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; smol-rs/optimized/2nf71p5qpqz0dmgo.ll
 ; smol-rs/optimized/5836b0ge3mikiq0d.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

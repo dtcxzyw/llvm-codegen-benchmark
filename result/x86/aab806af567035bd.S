@@ -21,3 +21,15 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edx, %edi
 	setl	%al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	$2147483647, %edx               # imm = 0x7FFFFFFF
+	addl	%esi, %edi
+	cmpl	%edx, %edi
+	seta	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	notl	%edx
+	addl	%esi, %edi
+	cmpl	%edx, %edi
+	setb	%al
+	retq

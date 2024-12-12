@@ -4,8 +4,7 @@ func0000000000000007:                   # @func0000000000000007
 	leal	(%rdi,%rsi), %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	shll	$8, %esi
-	andl	$-16777216, %esi                # imm = 0xFF000000
-	andl	$16711680, %edi                 # imm = 0xFF0000
+	andl	$-268435456, %esi               # imm = 0xF0000000
+	andl	$67108863, %edi                 # imm = 0x3FFFFFF
 	leal	(%rdi,%rsi), %eax
 	retq

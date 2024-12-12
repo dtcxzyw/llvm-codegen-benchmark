@@ -6,7 +6,7 @@
 ; ncnn/optimized/gridsample_x86_avx512.cpp.ll
 ; ncnn/optimized/gridsample_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(float %0, float %1) #0 {
+define i1 @func000000000000004a(float %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %0, %1
   %3 = select i1 %2, float %0, float %1
@@ -19,7 +19,7 @@ entry:
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_equalizer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(float %0, float %1) #0 {
+define i1 @func0000000000000041(float %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %0, %1
   %3 = select i1 %2, float %0, float %1
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(float %0, float %1) #0 {
+define i1 @func000000000000008a(float %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, %0
   %3 = select i1 %2, float %0, float %1

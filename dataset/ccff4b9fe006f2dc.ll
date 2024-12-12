@@ -34,12 +34,22 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 1 occurrences:
+; lvgl/optimized/lv_sprintf_builtin.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000d(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fsub double %1, %2
+  %4 = fcmp uge double %3, 5.000000e-01
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 4 occurrences:
 ; gromacs/optimized/dlasq4.cpp.ll
 ; llvm/optimized/CodeLayout.cpp.ll
 ; opencv/optimized/rho.cpp.ll
 ; opencv/optimized/svm.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, double %1, double %2) #0 {
 entry:

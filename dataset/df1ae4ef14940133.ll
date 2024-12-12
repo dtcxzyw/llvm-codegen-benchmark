@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -14,7 +14,6 @@
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; hyperscan/optimized/rose_build_misc.cpp.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -52,7 +51,7 @@ define i16 @func0000000000000002(i16 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i16 2, i16 6
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 

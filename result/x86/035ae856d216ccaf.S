@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func00000000000000a2:                   # @func00000000000000a2
 	xorl	%eax, %eax
 	cmpl	$56, %edi
 	setae	%al
@@ -21,7 +21,7 @@ func0000000000000053:                   # @func0000000000000053
 	shll	$6, %eax
 	subl	%edi, %eax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	xorl	%eax, %eax
 	cmpl	$64, %edi
 	setae	%al

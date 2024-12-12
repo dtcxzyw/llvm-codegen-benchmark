@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 55 occurrences:
 ; box2d/optimized/b2_body.cpp.ll
 ; box2d/optimized/b2_collide_circle.cpp.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -49,11 +49,17 @@
 ; wasmedge/optimized/engine.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   ret float %3
 }
 

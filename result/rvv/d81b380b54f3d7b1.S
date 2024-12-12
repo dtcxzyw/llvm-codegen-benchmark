@@ -5,6 +5,6 @@ func0000000000000002:                   # @func0000000000000002
 	vmv1r.v	v0, v9
 	vmerge.vim	v9, v11, 1, v0
 	vrsub.vi	v9, v9, 6
-	vmseq.vv	v8, v9, v8
-	vmor.mm	v0, v8, v10
+	vmseq.vv	v8, v8, v9
+	vmor.mm	v0, v10, v8
 	ret

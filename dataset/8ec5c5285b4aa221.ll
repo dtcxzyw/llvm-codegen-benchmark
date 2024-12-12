@@ -23,7 +23,7 @@ define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 39
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = xor i1 %4, %0
+  %5 = xor i1 %0, %4
   ret i1 %5
 }
 
@@ -40,7 +40,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = xor i1 %4, %0
+  %5 = xor i1 %0, %4
   ret i1 %5
 }
 

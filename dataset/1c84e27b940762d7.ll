@@ -6,7 +6,7 @@
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sub nsw i32 32767, %2
@@ -20,7 +20,7 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sub nsw i32 -32768, %2

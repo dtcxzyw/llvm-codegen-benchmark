@@ -31,3 +31,13 @@ func000000000000000c:                   # @func000000000000000c
 	testq	%rsi, %rsi
 	cmoveq	%rsi, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$508, %rsi                      # imm = 0x1FC
+	movl	$1, %eax
+	cmovbq	%rdi, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpq	$2, %rsi
+	movl	$1, %eax
+	cmovaeq	%rdi, %rax
+	retq

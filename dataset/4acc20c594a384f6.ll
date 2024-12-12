@@ -43,7 +43,7 @@ entry:
   ret i1 %5
 }
 
-; 85 occurrences:
+; 83 occurrences:
 ; abc/optimized/giaPat.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; clamav/optimized/mszipd.c.ll
@@ -69,7 +69,6 @@ entry:
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/route.ll
 ; linux/optimized/synaptics.ll
@@ -86,7 +85,6 @@ entry:
 ; llvm/optimized/ExprEngineCallAndReturn.cpp.ll
 ; llvm/optimized/MachineInstrBundle.cpp.ll
 ; llvm/optimized/PathDiagnostic.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; luajit/optimized/lj_asm.ll
@@ -130,7 +128,7 @@ entry:
 ; redis/optimized/module.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3072
   %3 = and i32 %0, -2132836080
@@ -139,12 +137,11 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaPat.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/mii.ll
 ; linux/optimized/pci-acpi.ll
 ; linux/optimized/tg3.ll
 ; luajit/optimized/lj_cconv.ll
@@ -155,7 +152,7 @@ entry:
 ; php/optimized/zend_inference.ll
 ; slurm/optimized/priority_multifactor.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1835008
   %3 = and i32 %0, 3
@@ -164,14 +161,8 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 8 occurrences:
 ; cmake/optimized/archive_string.c.ll
-; hermes/optimized/AST2JS.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
-; hermes/optimized/HBC.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; hermes/optimized/JSONEmitter.cpp.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
 ; libquic/optimized/a_utf8.c.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; node/optimized/simdutf.ll
@@ -180,7 +171,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-a_utf8.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1835008
   %3 = and i32 %0, 196608
@@ -189,20 +180,9 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 11 occurrences:
 ; brotli/optimized/utf8_util.c.ll
 ; eastl/optimized/string.cpp.ll
-; hermes/optimized/AST2JS.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
-; hermes/optimized/ConsecutiveStringStorage.cpp.ll
-; hermes/optimized/HBC.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; hermes/optimized/JSONEmitter.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
-; hermes/optimized/UTF8.cpp.ll
-; libquic/optimized/modp_b64.cc.ll
 ; libuv/optimized/idna.c.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; node/optimized/idna.ll
@@ -213,12 +193,12 @@ entry:
 ; openusd/optimized/predicateExpression.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = and i32 %0, 240
   %4 = or disjoint i32 %3, %2
-  %5 = icmp ugt i32 %4, 70
+  %5 = icmp samesign ugt i32 %4, 70
   ret i1 %5
 }
 
@@ -231,6 +211,18 @@ entry:
   %3 = and i32 %0, 896
   %4 = or i32 %3, %2
   %5 = icmp ne i32 %4, 0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; libquic/optimized/modp_b64.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -65281
+  %3 = and i32 %0, 65280
+  %4 = or disjoint i32 %3, %2
+  %5 = icmp ugt i32 %4, 33554430
   ret i1 %5
 }
 

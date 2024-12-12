@@ -1,8 +1,8 @@
 
-%struct.hb_pair_t.2617263 = type { i32, i32 }
-%struct.alps_nibble_commands.3368760 = type { i32, i8 }
+%struct.hb_pair_t.2730715 = type { i32, i32 }
+%struct.alps_nibble_commands.3554398 = type { i32, i8 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -10,6 +10,7 @@
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; llvm/optimized/CodeGenRegisters.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nori/optimized/nanovg.c.ll
@@ -30,17 +31,16 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
 ; 23 occurrences:
-; assimp/optimized/zip.c.ll
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -49,6 +49,7 @@ entry:
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; llvm/optimized/RDFRegisters.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
@@ -64,12 +65,24 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.hb_pair_t.2617263, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %struct.hb_pair_t.2730715, ptr %0, i64 %4, i32 1
   ret ptr %5
+}
+
+; 1 occurrences:
+; assimp/optimized/zip.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -91,11 +104,11 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 5
   ret ptr %6
 }
@@ -117,25 +130,13 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/utbuffer.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 4
-  ret ptr %6
-}
-
-; 1 occurrences:
 ; linux/optimized/alps.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.alps_nibble_commands.3368760, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.alps_nibble_commands.3554398, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

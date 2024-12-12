@@ -19,7 +19,7 @@
 	.quad	10                              # 0xa
 .LCPI0_2:
 	.zero	4,48
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	vpmovqb	%ymm1, %xmm2
 	vpord	.LCPI0_2(%rip){1to4}, %xmm2, %xmm2
 	vpcmpltuq	.LCPI0_1(%rip){1to4}, %ymm1, %k1
@@ -47,7 +47,7 @@ func0000000000000074:                   # @func0000000000000074
 	.quad	10                              # 0xa
 .LCPI1_2:
 	.zero	4,48
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vpmovqb	%ymm1, %xmm2
 	vpord	.LCPI1_2(%rip){1to4}, %xmm2, %xmm2
 	vpcmpltuq	.LCPI1_1(%rip){1to4}, %ymm1, %k1
@@ -75,7 +75,7 @@ func0000000000000034:                   # @func0000000000000034
 	.quad	10                              # 0xa
 .LCPI2_2:
 	.zero	4,48
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpmovqb	%ymm1, %xmm2
 	vpord	.LCPI2_2(%rip){1to4}, %xmm2, %xmm2
 	vpcmpltuq	.LCPI2_1(%rip){1to4}, %ymm1, %k1

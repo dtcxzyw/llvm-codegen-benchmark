@@ -8,7 +8,7 @@
 ; softposit-rs/optimized/4x7uq85ym1obejw4.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i8 %0, i8 %1
@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; entt/optimized/version.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i8 %0, i8 %1
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000008c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -26
   %4 = select i1 %3, i8 %0, i8 %1
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %.not = icmp eq i8 %2, 0
   %3 = select i1 %.not, i8 %1, i8 %0

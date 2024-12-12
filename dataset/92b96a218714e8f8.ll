@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 63 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; cmake/optimized/bzlib.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -53,7 +53,6 @@
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nix/optimized/fetchMercurial.ll
 ; nix/optimized/gc.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/remote-store.ll
 ; ocio/optimized/FileRules.cpp.ll
 ; openusd/optimized/mallocTag.cpp.ll

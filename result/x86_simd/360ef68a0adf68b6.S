@@ -13,7 +13,7 @@
 func0000000000000003:                   # @func0000000000000003
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	32                              # 0x20
@@ -52,22 +52,22 @@ func0000000000000001:                   # @func0000000000000001
 	vpxor	%xmm2, %xmm2, %xmm2
 	vmovdqa	.LCPI1_0(%rip), %ymm3           # ymm3 = [32,1,34,35,36,37,38,39,40,3,42,43,44,45,46,47,48,5,50,51,52,53,54,55,56,7,58,59,60,61,62,63]
 	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpor	%ymm0, %ymm3, %ymm0
+	vpor	%ymm3, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.short	1023                            # 0x3ff
-	.short	1023                            # 0x3ff
-	.short	1023                            # 0x3ff
-	.short	1023                            # 0x3ff
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
 	.zero	2
 	.zero	2
 	.zero	2
 	.zero	2
 .LCPI2_1:
-	.short	1023                            # 0x3ff
-	.short	1023                            # 0x3ff
+	.short	1                               # 0x1
+	.short	1                               # 0x1
 func0000000000000002:                   # @func0000000000000002
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

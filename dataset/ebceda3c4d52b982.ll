@@ -1,6 +1,7 @@
 
-; 179 occurrences:
+; 180 occurrences:
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -199,7 +200,7 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
@@ -207,6 +208,8 @@ entry:
 ; llvm/optimized/DWARFUnit.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i1 %2) #0 {
 entry:

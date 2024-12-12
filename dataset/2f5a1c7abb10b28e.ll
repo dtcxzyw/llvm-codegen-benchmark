@@ -1,86 +1,6 @@
 
-; 47 occurrences:
+; 177 occurrences:
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
-; llvm/optimized/Interp.cpp.ll
-; llvm/optimized/InterpBuiltin.cpp.ll
-; llvm/optimized/MemProfContextDisambiguation.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; mold/optimized/icf.cc.ALPHA.cc.ll
-; mold/optimized/icf.cc.ARM32.cc.ll
-; mold/optimized/icf.cc.ARM64.cc.ll
-; mold/optimized/icf.cc.I386.cc.ll
-; mold/optimized/icf.cc.LOONGARCH32.cc.ll
-; mold/optimized/icf.cc.LOONGARCH64.cc.ll
-; mold/optimized/icf.cc.M68K.cc.ll
-; mold/optimized/icf.cc.PPC32.cc.ll
-; mold/optimized/icf.cc.PPC64V1.cc.ll
-; mold/optimized/icf.cc.PPC64V2.cc.ll
-; mold/optimized/icf.cc.RV32BE.cc.ll
-; mold/optimized/icf.cc.RV32LE.cc.ll
-; mold/optimized/icf.cc.RV64BE.cc.ll
-; mold/optimized/icf.cc.RV64LE.cc.ll
-; mold/optimized/icf.cc.S390X.cc.ll
-; mold/optimized/icf.cc.SH4.cc.ll
-; mold/optimized/icf.cc.SPARC64.cc.ll
-; mold/optimized/icf.cc.X86_64.cc.ll
-; mold/optimized/output-chunks.cc.ALPHA.cc.ll
-; mold/optimized/output-chunks.cc.ARM32.cc.ll
-; mold/optimized/output-chunks.cc.ARM64.cc.ll
-; mold/optimized/output-chunks.cc.I386.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; mold/optimized/output-chunks.cc.RV32LE.cc.ll
-; mold/optimized/output-chunks.cc.RV64BE.cc.ll
-; mold/optimized/output-chunks.cc.RV64LE.cc.ll
-; mold/optimized/output-chunks.cc.S390X.cc.ll
-; mold/optimized/output-chunks.cc.SH4.cc.ll
-; mold/optimized/output-chunks.cc.SPARC64.cc.ll
-; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; pbrt-v4/optimized/surfscatter.cpp.ll
-; rust-analyzer-rs/optimized/4jgoi87ys7cbhj0l.ll
-; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
-; stockfish/optimized/search.ll
-; verilator/optimized/V3OrderParallel.cpp.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
-entry:
-  %2 = icmp eq i64 %1, 1
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = getelementptr nusw i8, ptr %3, i64 8
-  ret ptr %4
-}
-
-; 1 occurrences:
-; qemu/optimized/io_channel-socket.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 15
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = getelementptr nusw i8, ptr %3, i64 8
-  ret ptr %4
-}
-
-; 3 occurrences:
-; delta-rs/optimized/43y2svfstmvqcl15.ll
-; rust-analyzer-rs/optimized/4jgoi87ys7cbhj0l.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
-entry:
-  %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = getelementptr i8, ptr %3, i64 24
-  ret ptr %4
-}
-
-; 132 occurrences:
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -213,12 +133,84 @@ entry:
 ; llvm/optimized/UndefinedAssignmentChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
+; mold/optimized/icf.cc.ALPHA.cc.ll
+; mold/optimized/icf.cc.ARM32.cc.ll
+; mold/optimized/icf.cc.ARM64.cc.ll
+; mold/optimized/icf.cc.I386.cc.ll
+; mold/optimized/icf.cc.LOONGARCH32.cc.ll
+; mold/optimized/icf.cc.LOONGARCH64.cc.ll
+; mold/optimized/icf.cc.M68K.cc.ll
+; mold/optimized/icf.cc.PPC32.cc.ll
+; mold/optimized/icf.cc.PPC64V1.cc.ll
+; mold/optimized/icf.cc.PPC64V2.cc.ll
+; mold/optimized/icf.cc.RV32BE.cc.ll
+; mold/optimized/icf.cc.RV32LE.cc.ll
+; mold/optimized/icf.cc.RV64BE.cc.ll
+; mold/optimized/icf.cc.RV64LE.cc.ll
+; mold/optimized/icf.cc.S390X.cc.ll
+; mold/optimized/icf.cc.SH4.cc.ll
+; mold/optimized/icf.cc.SPARC64.cc.ll
+; mold/optimized/icf.cc.X86_64.cc.ll
+; mold/optimized/output-chunks.cc.ALPHA.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; pbrt-v4/optimized/surfscatter.cpp.ll
+; rust-analyzer-rs/optimized/4jgoi87ys7cbhj0l.ll
+; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
+; stockfish/optimized/search.ll
+; verilator/optimized/V3OrderParallel.cpp.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; zed-rs/optimized/7znph2z4y55emrpyaq53m67p1.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = icmp eq i64 %1, 2
+  %2 = icmp eq i64 %1, 1
   %3 = select i1 %2, ptr %0, ptr null
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 72
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  ret ptr %4
+}
+
+; 5 occurrences:
+; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/CGObjC.cpp.ll
+; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
+; qemu/optimized/io_channel-socket.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp ugt i64 %1, 15
+  %3 = select i1 %2, ptr %0, ptr null
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  ret ptr %4
+}
+
+; 3 occurrences:
+; delta-rs/optimized/43y2svfstmvqcl15.ll
+; rust-analyzer-rs/optimized/4jgoi87ys7cbhj0l.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp eq i64 %1, 0
+  %3 = select i1 %2, ptr %0, ptr null
+  %4 = getelementptr i8, ptr %3, i64 24
   ret ptr %4
 }
 
@@ -232,31 +224,6 @@ entry:
   %2 = select i1 %.not, ptr null, ptr %0
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   ret ptr %3
-}
-
-; 4 occurrences:
-; llvm/optimized/CGExpr.cpp.ll
-; llvm/optimized/CGObjC.cpp.ll
-; llvm/optimized/CGOpenMPRuntime.cpp.ll
-; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 7
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 24
-  ret ptr %4
-}
-
-; 1 occurrences:
-; linux/optimized/p4.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
-entry:
-  %2 = icmp ult i64 %1, 46
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = getelementptr nusw i8, ptr %3, i64 4
-  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -1,5 +1,5 @@
 
-; 172 occurrences:
+; 171 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcCut.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -13,7 +13,6 @@
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/aigPartReg.c.ll
 ; abc/optimized/amapMerge.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -45,6 +44,7 @@
 ; abc/optimized/satInterB.c.ll
 ; abc/optimized/satInterP.c.ll
 ; abc/optimized/sfmLib.c.ll
+; boost/optimized/rational.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/import.c.ll
@@ -92,7 +92,6 @@
 ; ninja/optimized/ninja.cc.ll
 ; oiio/optimized/exif.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dlalsd.c.ll
 ; opencv/optimized/OpenEXRimages_HDR_Retina_toneMapping.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll

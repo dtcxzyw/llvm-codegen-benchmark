@@ -1,12 +1,12 @@
-func000000000000000d:                   # @func000000000000000d
-	andi	a1, a1, 7
-	subw	a0, a1, a0
-	addiw	a0, a0, 3
-	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, -4
 	subw	a0, a1, a0
 	addiw	a0, a0, -4
+	ret
+func000000000000000d:                   # @func000000000000000d
+	andi	a1, a1, 7
+	subw	a0, a1, a0
+	addiw	a0, a0, 3
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 2040

@@ -12,3 +12,10 @@ func0000000000000007:                   # @func0000000000000007
 	movslq	%edi, %rax
 	subq	%rsi, %rax
 	retq
+func0000000000000005:                   # @func0000000000000005
+	subq	%rdx, %rsi
+	sarq	$2, %rsi
+	addl	%edi, %edi
+	movslq	%edi, %rax
+	subq	%rsi, %rax
+	retq

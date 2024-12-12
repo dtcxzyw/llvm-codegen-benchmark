@@ -31,7 +31,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = mul i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -44,15 +44,20 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16711680
-  %4 = mul nuw i32 %3, %1
+  %4 = mul nuw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 16 occurrences:
+; 20 occurrences:
 ; libwebp/optimized/anim_decode.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
@@ -65,13 +70,12 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; wireshark/optimized/packet-vrt.c.ll
-; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -88,14 +92,14 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
 ; 7 occurrences:
-; linux/optimized/scsicam.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openjdk/optimized/cmsintrp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vwmaccsu_vv.ll
@@ -125,8 +129,8 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = mul nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -136,7 +140,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = mul nuw i32 %3, %1
+  %4 = mul nuw i32 %1, %3
   %5 = add nuw i32 %4, %0
   ret i32 %5
 }
@@ -148,7 +152,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = mul nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -175,7 +179,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = mul nuw nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -185,7 +189,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }

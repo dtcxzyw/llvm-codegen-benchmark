@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000028c:                   # @func000000000000028c
 	imulq	%rdx, %rsi
 	cmpq	$32769, %rsi                    # imm = 0x8001
 	setb	%cl
@@ -6,7 +6,7 @@ func000000000000004c:                   # @func000000000000004c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	setg	%cl
@@ -14,7 +14,15 @@ func00000000000000ca:                   # @func00000000000000ca
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000008c:                   # @func000000000000008c
+	imulq	%rdx, %rsi
+	testq	%rsi, %rsi
+	setne	%cl
+	cmpq	$12, %rdi
+	setb	%al
+	andb	%cl, %al
+	retq
+func000000000000018c:                   # @func000000000000018c
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	setne	%cl

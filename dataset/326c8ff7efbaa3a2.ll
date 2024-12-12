@@ -1,5 +1,5 @@
 
-; 396 occurrences:
+; 404 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/cuddApprox.c.ll
@@ -23,9 +23,12 @@
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/get_turns.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; c3c/optimized/bigint.c.ll
 ; clamav/optimized/hashtab.c.ll
+; clamav/optimized/readdb.c.ll
 ; clamav/optimized/regexec.c.ll
 ; clamav/optimized/sha1.cpp.ll
 ; cmake/optimized/archive_rb.c.ll
@@ -68,7 +71,6 @@
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; hermes/optimized/HermesValue.cpp.ll
 ; hermes/optimized/regexec.c.ll
-; hyperscan/optimized/charreach.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; imgui/optimized/imgui_demo.cpp.ll
@@ -80,7 +82,6 @@
 ; lief/optimized/pem.c.ll
 ; linux/optimized/addr.ll
 ; linux/optimized/badblocks.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/core.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/efi_64.ll
@@ -187,7 +188,6 @@
 ; llvm/optimized/PathDiagnostic.cpp.ll
 ; llvm/optimized/ProgramPoint.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/ReturnPointerRangeChecker.cpp.ll
@@ -240,6 +240,8 @@
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
+; lvgl/optimized/lv_string_builtin.ll
+; lvgl/optimized/lv_utils.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
@@ -254,6 +256,7 @@
 ; opencv/optimized/subdivision2d.cpp.ll
 ; opencv/optimized/trace.cpp.ll
 ; openexr/optimized/ImfZip.cpp.ll
+; openjdk/optimized/cmscgats.ll
 ; openjdk/optimized/codeCache.ll
 ; openjdk/optimized/ps_proc.ll
 ; openjdk/optimized/shenandoahFreeSet.ll
@@ -310,12 +313,11 @@
 ; qemu/optimized/linux-user_uaccess.c.ll
 ; qemu/optimized/migration_postcopy-ram.c.ll
 ; qemu/optimized/migration_ram.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/bitops.ll
+; ring-rs/optimized/4prppzcttbsz5zvc.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
@@ -357,8 +359,6 @@
 ; spike/optimized/hsv_w.ll
 ; spike/optimized/jal.ll
 ; spike/optimized/jalr.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/s_mulAddF32.ll
 ; spike/optimized/s_subMagsF16.ll
 ; spike/optimized/sclip16.ll
@@ -372,6 +372,12 @@
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; tokio-rs/optimized/4brh9kql6tjayli1.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
+; tree-sitter-rs/optimized/18kt1xijwoc4jebp.ll
+; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
+; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
+; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
+; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
+; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
 ; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll
 ; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
 ; wolfssl/optimized/chacha.c.ll
@@ -395,6 +401,8 @@
 ; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zlib/optimized/crc32.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {

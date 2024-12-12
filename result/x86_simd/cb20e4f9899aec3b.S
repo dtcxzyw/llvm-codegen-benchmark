@@ -7,7 +7,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovd2m	%xmm1, %k1
 	vptestnmq	%ymm2, %ymm2, %k2
 	vpbroadcastq	.LCPI0_0(%rip), %ymm1 {%k2} {z} # ymm1 {%k2} {z} = [64,64,64,64]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vporq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI1_0:
@@ -32,7 +32,7 @@ func0000000000000006:                   # @func0000000000000006
 	vpcmpnltd	%xmm3, %xmm1, %k1
 	vptestmq	%ymm2, %ymm2, %k2
 	vpbroadcastq	.LCPI2_0(%rip), %ymm1 {%k2} {z} # ymm1 {%k2} {z} = [5188,5188,5188,5188]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vporq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI3_0:

@@ -1,6 +1,8 @@
 
-; 37 occurrences:
+; 39 occurrences:
 ; assimp/optimized/BaseImporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/pdfng.c.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -52,7 +54,7 @@ entry:
 ; mitsuba3/optimized/constpool.cpp.ll
 ; postgres/optimized/aset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
@@ -61,9 +63,8 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; folly/optimized/EventBaseBackendBase.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/lzo1x_decompress_safe.ll
 ; llvm/optimized/HeaderMap.cpp.ll
@@ -72,7 +73,7 @@ entry:
 ; postgres/optimized/generation.ll
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
@@ -81,7 +82,8 @@ entry:
   ret i1 %6
 }
 
-; 24 occurrences:
+; 25 occurrences:
+; boost/optimized/static_string.ll
 ; cmake/optimized/archive_entry.c.ll
 ; grpc/optimized/ssl_transport_security.cc.ll
 ; llvm/optimized/Lexer.cpp.ll
@@ -116,7 +118,9 @@ entry:
   ret i1 %6
 }
 
-; 14 occurrences:
+; 16 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/huf_compress.c.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -132,7 +136,7 @@ entry:
 ; velox/optimized/URLFunctions.cpp.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
@@ -141,7 +145,9 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -149,7 +155,7 @@ entry:
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000047(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000087(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
@@ -182,7 +188,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
@@ -197,7 +203,7 @@ entry:
 ; velox/optimized/DenseHll.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
@@ -242,7 +248,7 @@ entry:
 ; yosys/optimized/smv.ll
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
@@ -255,7 +261,7 @@ entry:
 ; hdf5/optimized/H5Cimage.c.ll
 ; proxy/optimized/proxy_lifetime_tests.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
@@ -280,7 +286,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/HeaderMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c9(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000189(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
@@ -295,7 +301,7 @@ entry:
 ; linux/optimized/decompress_unlzo.ll
 ; linux/optimized/mlme.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000186(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
@@ -320,12 +326,36 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/uloc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = add nuw nsw i64 %1, 1
   %6 = icmp sgt i64 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000199(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = add nuw nsw i64 %1, 10
+  %6 = icmp samesign uge i64 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000194(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = add nuw nsw i64 %1, 4
+  %6 = icmp samesign ult i64 %4, %5
   ret i1 %6
 }
 

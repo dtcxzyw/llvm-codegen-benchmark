@@ -37,6 +37,17 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_chart.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i8
+  %3 = icmp ugt i8 %2, 2
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; abseil-cpp/optimized/time.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll

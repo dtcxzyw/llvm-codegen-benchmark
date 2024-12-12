@@ -1,25 +1,11 @@
 func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	fmov	v16.4s, #1.00000000
-	fcmgt	v17.4s, v4.4s, v16.4s
-	fcmgt	v18.4s, v6.4s, v16.4s
-	fcmgt	v19.4s, v5.4s, v16.4s
-	fcmgt	v20.4s, v7.4s, v16.4s
-	bsl	v17.16b, v16.16b, v4.16b
-	fcmlt	v4.4s, v4.4s, #0.0
-	bsl	v19.16b, v16.16b, v5.16b
-	fcmlt	v5.4s, v5.4s, #0.0
-	bsl	v18.16b, v16.16b, v6.16b
-	fcmlt	v6.4s, v6.4s, #0.0
-	bif	v16.16b, v7.16b, v20.16b
-	fcmlt	v7.4s, v7.4s, #0.0
-	bic	v4.16b, v17.16b, v4.16b
-	bic	v6.16b, v18.16b, v6.16b
-	bic	v5.16b, v19.16b, v5.16b
-	bic	v7.16b, v16.16b, v7.16b
-	fadd	v0.4s, v4.4s, v0.4s
-	fadd	v1.4s, v5.4s, v1.4s
-	fadd	v2.4s, v6.4s, v2.4s
-	fadd	v3.4s, v7.4s, v3.4s
+	fmov	s2, #1.00000000
+	movi	d3, #0000000000000000
+	fcmp	s1, s2
+	fcsel	s2, s2, s1, gt
+	fcmp	s1, #0.0
+	fcsel	s1, s3, s2, mi
+	fadd	s0, s0, s1
 	ret
                                         // -- End function

@@ -1,5 +1,8 @@
 
-; 55 occurrences:
+%struct._zend_op.2793452 = type { ptr, %union._znode_op.2793461, %union._znode_op.2793461, %union._znode_op.2793461, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2793461 = type { i32 }
+
+; 53 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -42,7 +45,6 @@
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaSpeedup.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/giaSwitch.c.ll
@@ -54,27 +56,13 @@
 ; clamav/optimized/upack.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; php/optimized/zend_optimizer.ll
-; verilator/optimized/V3PreProc.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = ptrtoint ptr %6 to i64
-  ret i64 %7
-}
-
-; 1 occurrences:
-; clamav/optimized/upack.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = sub nsw i64 0, %1
-  %6 = getelementptr i8, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct._zend_op.2793452, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

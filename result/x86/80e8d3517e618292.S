@@ -4,3 +4,9 @@ func0000000000000000:                   # @func0000000000000000
 	shrl	$3, %eax
 	andl	$1023, %eax                     # imm = 0x3FF
 	retq
+func0000000000000014:                   # @func0000000000000014
+	imull	%esi, %edi
+	leal	8388608(%rdi), %eax
+	shrl	$16, %eax
+	andl	$65280, %eax                    # imm = 0xFF00
+	retq

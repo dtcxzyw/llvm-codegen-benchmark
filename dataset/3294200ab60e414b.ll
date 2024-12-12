@@ -10,7 +10,7 @@ entry:
   %3 = shl nuw i32 %2, 1
   %4 = xor i32 %3, %1
   %5 = and i32 %4, 65280
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -30,7 +30,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
-  %4 = xor i32 %3, %1
+  %4 = xor i32 %1, %3
   %5 = and i32 %4, 65536
   %6 = or disjoint i32 %5, %0
   ret i32 %6

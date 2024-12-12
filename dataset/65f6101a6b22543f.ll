@@ -8,7 +8,7 @@
 ; quantlib/optimized/thailand.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
@@ -21,7 +21,7 @@ entry:
 ; linux/optimized/ptp_chardev.ll
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
@@ -34,7 +34,7 @@ entry:
 ; opencc/optimized/UTF8Util.cpp.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 191
   %4 = select i1 %0, i1 true, i1 %3
@@ -50,7 +50,7 @@ entry:
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = select i1 %0, i1 true, i1 %3
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/levmarq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %1, i1 true, i1 %3

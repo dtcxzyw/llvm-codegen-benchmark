@@ -5,6 +5,6 @@ func000000000000000c:                   # @func000000000000000c
 	vnsrl.wi	v9, v9, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v9, v9, 0
-	vmsne.vv	v8, v9, v8
+	vmsne.vv	v8, v8, v9
 	vmor.mm	v0, v8, v0
 	ret

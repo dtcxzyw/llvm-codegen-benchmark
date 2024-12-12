@@ -15,7 +15,7 @@ entry:
   ret i32 %3
 }
 
-; 56 occurrences:
+; 54 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -31,7 +31,6 @@ entry:
 ; linux/optimized/intel_atomic_plane.ll
 ; linux/optimized/intel_crtc_state_dump.ll
 ; linux/optimized/intel_cursor.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/intel_fbc.ll
@@ -68,7 +67,6 @@ entry:
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-h264.c.ll
 ; wireshark/optimized/packet-h265.c.ll
-; wireshark/optimized/packet-lpp.c.ll
 ; wireshark/optimized/packet-mp4ves.c.ll
 ; wireshark/optimized/packet-osi.c.ll
 ; wireshark/optimized/packet-per.c.ll
@@ -80,7 +78,7 @@ entry:
   ret i32 %3
 }
 
-; 109 occurrences:
+; 116 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/bmcBmc2.c.ll
@@ -100,6 +98,7 @@ entry:
 ; abc/optimized/pdrIncr.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdPath.c.ll
+; boost/optimized/approximately_equals.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
@@ -142,6 +141,10 @@ entry:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; luau/optimized/ltablib.cpp.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
@@ -182,6 +185,8 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zfp/optimized/encode1f.c.ll
 ; zfp/optimized/encode1i.c.ll
 ; zfp/optimized/encode2f.c.ll

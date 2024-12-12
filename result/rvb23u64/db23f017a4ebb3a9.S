@@ -4,7 +4,7 @@ func0000000000000003:                   # @func0000000000000003
 	sext.w	a0, a0
 	czero.nez	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	sext.w	a2, a2
 	sext.w	a0, a0
 	xor	a1, a1, a2
@@ -13,7 +13,7 @@ func0000000000000023:                   # @func0000000000000023
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	sext.w	a2, a2
 	sltu	a1, a1, a2
 	sext.w	a0, a0

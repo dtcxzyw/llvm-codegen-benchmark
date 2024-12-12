@@ -7,7 +7,7 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000025(i16 %0, i32 %1) #0 {
+define i32 @func00000000000000a5(i16 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i16 %0 to i32
   %.inv = icmp ugt i32 %1, 1

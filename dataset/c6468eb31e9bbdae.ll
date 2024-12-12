@@ -1,11 +1,10 @@
 
-; 366 occurrences:
+; 343 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/expression.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; casadi/optimized/options.cpp.ll
-; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
@@ -26,11 +25,6 @@
 ; gromacs/optimized/lincs.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; grpc/optimized/event_log.cc.ll
-; hermes/optimized/DependencyExtractor.cpp.ll
-; hermes/optimized/JSLibInternal.cpp.ll
-; hermes/optimized/JSRegExp.cpp.ll
-; hermes/optimized/RegexParser.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
 ; hermes/optimized/Statistic.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
@@ -157,7 +151,6 @@
 ; llvm/optimized/WasmObjectWriter.cpp.ll
 ; llvm/optimized/WindowScheduler.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
-; luau/optimized/Reduce.cpp.ll
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -269,31 +262,15 @@
 ; oiio/optimized/deepdata.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/aruco_detector.cpp.ll
-; opencv/optimized/attention_layer.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/bound_min.cpp.ll
-; opencv/optimized/conv_depthwise.cpp.ll
-; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
-; opencv/optimized/einsum_layer.cpp.ll
-; opencv/optimized/eltwise_layer.cpp.ll
 ; opencv/optimized/emd.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
-; opencv/optimized/fast_gemm.cpp.ll
-; opencv/optimized/flatten_layer.cpp.ll
 ; opencv/optimized/gapi_core_perf_tests.cpp.ll
-; opencv/optimized/gather_elements_layer.cpp.ll
-; opencv/optimized/gather_layer.cpp.ll
-; opencv/optimized/gemm_layer.cpp.ll
 ; opencv/optimized/gnnparsers.cpp.ll
-; opencv/optimized/layer_norm.cpp.ll
 ; opencv/optimized/lsd.cpp.ll
-; opencv/optimized/matmul_layer.cpp.ll
-; opencv/optimized/net_impl.cpp.ll
 ; opencv/optimized/nms.cpp.ll
-; opencv/optimized/quantization_utils.cpp.ll
-; opencv/optimized/reduce_layer.cpp.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; openjdk/optimized/archiveBuilder.ll
@@ -375,14 +352,105 @@ entry:
   ret i64 %4
 }
 
-; 19 occurrences:
+; 82 occurrences:
+; assimp/optimized/3DSLoader.cpp.ll
+; ceres/optimized/covariance_impl.cc.ll
+; lightgbm/optimized/feature_histogram.cpp.ll
+; lightgbm/optimized/objective_function.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/BitcodeAnalyzer.cpp.ll
+; llvm/optimized/CloneDetection.cpp.ll
+; llvm/optimized/CoverageMappingGen.cpp.ll
+; llvm/optimized/ELF.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/LoopCacheAnalysis.cpp.ll
+; llvm/optimized/MergeFunctions.cpp.ll
+; llvm/optimized/Metadata.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SampleProf.cpp.ll
+; llvm/optimized/SampleProfWriter.cpp.ll
+; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; mold/optimized/arch-alpha.cc.ll
+; mold/optimized/arch-ppc64v1.cc.ll
+; mold/optimized/passes.cc.ALPHA.cc.ll
+; mold/optimized/passes.cc.ARM32.cc.ll
+; mold/optimized/passes.cc.ARM64.cc.ll
+; mold/optimized/passes.cc.I386.cc.ll
+; mold/optimized/passes.cc.LOONGARCH32.cc.ll
+; mold/optimized/passes.cc.LOONGARCH64.cc.ll
+; mold/optimized/passes.cc.M68K.cc.ll
+; mold/optimized/passes.cc.PPC32.cc.ll
+; mold/optimized/passes.cc.PPC64V1.cc.ll
+; mold/optimized/passes.cc.PPC64V2.cc.ll
+; mold/optimized/passes.cc.RV32BE.cc.ll
+; mold/optimized/passes.cc.RV32LE.cc.ll
+; mold/optimized/passes.cc.RV64BE.cc.ll
+; mold/optimized/passes.cc.RV64LE.cc.ll
+; mold/optimized/passes.cc.S390X.cc.ll
+; mold/optimized/passes.cc.SH4.cc.ll
+; mold/optimized/passes.cc.SPARC64.cc.ll
+; mold/optimized/passes.cc.X86_64.cc.ll
+; nix/optimized/nixexpr.ll
+; opencc/optimized/louds-trie.cc.ll
+; opencv/optimized/attention_layer.cpp.ll
+; opencv/optimized/bardetect.cpp.ll
+; opencv/optimized/conv_depthwise.cpp.ll
+; opencv/optimized/convolution.cpp.ll
+; opencv/optimized/detection_output_layer.cpp.ll
+; opencv/optimized/einsum_layer.cpp.ll
+; opencv/optimized/eltwise_layer.cpp.ll
+; opencv/optimized/fast_gemm.cpp.ll
+; opencv/optimized/flatten_layer.cpp.ll
+; opencv/optimized/gather_elements_layer.cpp.ll
+; opencv/optimized/gather_layer.cpp.ll
+; opencv/optimized/gemm_layer.cpp.ll
+; opencv/optimized/layer_norm.cpp.ll
+; opencv/optimized/matmul_layer.cpp.ll
+; opencv/optimized/net_impl.cpp.ll
+; opencv/optimized/nms.cpp.ll
+; opencv/optimized/quantization_utils.cpp.ll
+; opencv/optimized/reduce_layer.cpp.ll
+; opencv/optimized/slice_layer.cpp.ll
+; protobuf/optimized/text_format.cc.ll
+; protobuf/optimized/wire_format.cc.ll
+; re2/optimized/prefilter_tree.cc.ll
+; stockfish/optimized/tbprobe.ll
+; verilator/optimized/V3DfgRegularize.cpp.ll
+; verilator/optimized/V3GraphAlg.cpp.ll
+; xgboost/optimized/adaptive.cc.ll
+; xgboost/optimized/auc.cc.ll
+; xgboost/optimized/random.cc.ll
+; xgboost/optimized/rank_metric.cc.ll
+; xgboost/optimized/ranking_utils.cc.ll
+; xgboost/optimized/stats.cc.ll
+; z3/optimized/clp_context.cpp.ll
+; z3/optimized/pb_solver.cpp.ll
+; z3/optimized/pdd_simplifier.cpp.ll
+; z3/optimized/sat_gc.cpp.ll
+; z3/optimized/sat_simplifier.cpp.ll
+; z3/optimized/sat_solver.cpp.ll
+; z3/optimized/smt_context.cpp.ll
+; z3/optimized/spacer_context.cpp.ll
+; z3/optimized/theory_arith.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl nsw i64 %1, 4
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
+}
+
+; 18 occurrences:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; llvm/optimized/MemProfReader.cpp.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/psParallelCompact.ll
-; php/optimized/cdf.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
@@ -443,18 +511,19 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/euf_proof.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000e(ptr %0, i64 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
 
-; 10 occurrences:
-; eastl/optimized/BenchmarkSort.cpp.ll
+; 11 occurrences:
 ; gromacs/optimized/topology.cpp.ll
 ; linux/optimized/intel_lrc.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGExprCXX.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; node/optimized/libnode.crypto_cipher.ll
 ; node/optimized/libnode.crypto_ec.ll
@@ -471,20 +540,30 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 2 occurrences:
+; boost/optimized/url_base.ll
+; php/optimized/cdf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 3
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
+}
+
+; 4 occurrences:
 ; cpython/optimized/obmalloc.ll
-; eastl/optimized/BenchmarkSort.cpp.ll
 ; mimalloc/optimized/segment-map.c.ll
-; oiio/optimized/deepdata.cpp.ll
 ; openusd/optimized/testHioAvif.cpp.ll
 ; postgres/optimized/xlog.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
-  %.idx = shl i64 %1, 3
-  %2 = getelementptr i8, ptr %0, i64 %.idx
-  %3 = ptrtoint ptr %2 to i64
-  ret i64 %3
+  %2 = shl nsw i64 %1, 3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
 }
 
 ; 2 occurrences:

@@ -58,13 +58,18 @@ func0000000000000028:                   # @func0000000000000028
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000058:                   # @func0000000000000058
-	vpcmpnltd	%xmm2, %xmm1, %k0
+func000000000000000b:                   # @func000000000000000b
+	vpcmpeqd	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
-func000000000000000b:                   # @func000000000000000b
-	vpcmpeqd	%xmm2, %xmm1, %k0
+func00000000000000a8:                   # @func00000000000000a8
+	vpcmpleud	%xmm2, %xmm1, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000058:                   # @func0000000000000058
+	vpcmpnltd	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
@@ -75,6 +80,16 @@ func000000000000005b:                   # @func000000000000005b
 	retq
 func0000000000000043:                   # @func0000000000000043
 	vpcmpnleud	%xmm2, %xmm1, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func00000000000000c3:                   # @func00000000000000c3
+	vpcmpnleud	%xmm2, %xmm1, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000030:                   # @func0000000000000030
+	vpcmpgtd	%xmm1, %xmm2, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
@@ -95,6 +110,21 @@ func0000000000000033:                   # @func0000000000000033
 	retq
 func0000000000000032:                   # @func0000000000000032
 	vpcmpgtd	%xmm1, %xmm2, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func00000000000000a3:                   # @func00000000000000a3
+	vpcmpltud	%xmm2, %xmm1, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func00000000000000a2:                   # @func00000000000000a2
+	vpcmpltud	%xmm2, %xmm1, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func00000000000000cb:                   # @func00000000000000cb
+	vpcmpnltud	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq

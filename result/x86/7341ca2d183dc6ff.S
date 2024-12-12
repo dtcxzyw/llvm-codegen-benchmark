@@ -5,6 +5,6 @@ func0000000000000001:                   # @func0000000000000001
 	shrq	$47, %rcx
 	xorq	%rsi, %rcx
 	imulq	%rax, %rcx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	sete	%al
 	retq

@@ -6,7 +6,7 @@
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 48
   %3 = icmp ne i32 %2, 0
@@ -22,7 +22,7 @@ entry:
 ; llvm/optimized/SemaChecking.cpp.ll
 ; ripgrep-rs/optimized/15yuur60snxgm6cb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = icmp eq i32 %2, 34
@@ -155,18 +155,6 @@ define i1 @func000000000000000c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3712
   %3 = icmp ne i32 %2, 0
-  %4 = trunc i8 %0 to i1
-  %5 = and i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/grfmt_tiff.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 7
-  %3 = icmp ugt i32 %2, 4
   %4 = trunc i8 %0 to i1
   %5 = and i1 %3, %4
   ret i1 %5

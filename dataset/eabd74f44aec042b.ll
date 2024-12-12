@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; memcached/optimized/memcached-itoa_ljust.ll
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
 ; sentencepiece/optimized/strutil.cc.ll

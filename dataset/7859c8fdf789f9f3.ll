@@ -1,18 +1,19 @@
 
-%"class.llvm::SDUse.2952479" = type { %"class.llvm::SDValue.2952480", ptr, ptr, ptr }
-%"class.llvm::SDValue.2952480" = type <{ ptr, i32, [4 x i8] }>
+%"class.llvm::SDUse.3146036" = type { %"class.llvm::SDValue.3146037", ptr, ptr, ptr }
+%"class.llvm::SDValue.3146037" = type <{ ptr, i32, [4 x i8] }>
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; openexr/optimized/ImfMultiPartInputFile.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
+; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -21,17 +22,16 @@ entry:
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"class.llvm::SDUse.2952479", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.llvm::SDUse.3146036", ptr %0, i64 %4
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; postgres/optimized/refint.ll
-; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:

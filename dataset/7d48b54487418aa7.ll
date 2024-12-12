@@ -33,7 +33,7 @@
 ; stockfish/optimized/search.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000030a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %.idx = mul nsw i64 %2, 112
   %3 = getelementptr nusw i8, ptr %1, i64 %.idx

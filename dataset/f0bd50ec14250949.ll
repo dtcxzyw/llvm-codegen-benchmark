@@ -1,9 +1,7 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; luajit/optimized/lj_snap.ll
-; luajit/optimized/lj_snap_dyn.ll
 ; openusd/optimized/decodeframe.c.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll

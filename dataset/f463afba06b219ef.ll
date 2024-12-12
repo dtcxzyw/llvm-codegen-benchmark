@@ -1,31 +1,26 @@
 
-; 22 occurrences:
+; 17 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
-; assimp/optimized/glTF2Exporter.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
-; faiss/optimized/HNSW.cpp.ll
 ; faiss/optimized/IndexBinaryHNSW.cpp.ll
 ; faiss/optimized/IndexHNSW.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
 ; folly/optimized/CacheLocality.cpp.ll
 ; glslang/optimized/Intermediate.cpp.ll
-; glslang/optimized/ShaderLang.cpp.ll
-; luau/optimized/Types.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll
-; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/dpm_nms.cpp.ll
 ; opencv/optimized/objectnessBING.cpp.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/spades.cc.ll
-; wasmedge/optimized/compiler.cpp.ll
 ; wasmedge/optimized/refInstr.cpp.ll
+; yosys/optimized/shregmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000328(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = ashr exact i64 %5, 3
@@ -44,7 +39,7 @@ entry:
 ; postgres/optimized/tsvector.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 4
   %4 = ptrtoint ptr %3 to i64
@@ -54,7 +49,7 @@ entry:
   ret i1 %7
 }
 
-; 46 occurrences:
+; 44 occurrences:
 ; cvc5/optimized/cadical.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
@@ -63,8 +58,6 @@ entry:
 ; eastl/optimized/TestSort.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
-; luau/optimized/NonStrictTypeChecker.cpp.ll
-; luau/optimized/TypeUtils.cpp.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/bfsClosure.ll
@@ -102,7 +95,7 @@ entry:
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000224(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -16
   %4 = ptrtoint ptr %3 to i64
@@ -112,10 +105,28 @@ entry:
   ret i1 %7
 }
 
+; 6 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; faiss/optimized/HNSW.cpp.ll
+; glslang/optimized/ShaderLang.cpp.ll
+; luau/optimized/Types.cpp.ll
+; opencv/optimized/circlesgrid.cpp.ll
+; wasmedge/optimized/compiler.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000228(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -8
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = ashr exact i64 %5, 3
+  %7 = icmp ugt i64 %6, %0
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; wasmedge/optimized/variableInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000119(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000229(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -16
   %4 = ptrtoint ptr %3 to i64
@@ -125,19 +136,15 @@ entry:
   ret i1 %7
 }
 
-; 10 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
-; meshlab/optimized/ofbx.cpp.ll
-; openspiel/optimized/bridge.cc.ll
-; openspiel/optimized/spades.cc.ll
 ; quantlib/optimized/pathwiseproductcaplet.ll
 ; quantlib/optimized/pathwiseproductswap.ll
 ; quantlib/optimized/pathwiseproductswaption.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000221(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -8
   %4 = ptrtoint ptr %3 to i64
@@ -148,10 +155,40 @@ entry:
 }
 
 ; 2 occurrences:
+; luau/optimized/NonStrictTypeChecker.cpp.ll
+; luau/optimized/TypeUtils.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000324(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = ashr exact i64 %5, 3
+  %7 = icmp ult i64 %6, %0
+  ret i1 %7
+}
+
+; 4 occurrences:
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; meshlab/optimized/ofbx.cpp.ll
+; openspiel/optimized/bridge.cc.ll
+; openspiel/optimized/spades.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000321(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 52
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = ashr exact i64 %5, 2
+  %7 = icmp eq i64 %6, %0
+  ret i1 %7
+}
+
+; 2 occurrences:
 ; cpython/optimized/sre.ll
 ; linux/optimized/compaction.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -8
   %4 = ptrtoint ptr %3 to i64
@@ -164,7 +201,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000022a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -2
   %4 = ptrtoint ptr %3 to i64

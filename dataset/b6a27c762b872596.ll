@@ -7,11 +7,11 @@
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/Ntile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 30
   %3 = ashr i64 %2, 32
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -45,11 +45,11 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/Ntile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 30
   %3 = ashr i64 %2, 32
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.I386.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
@@ -9,6 +9,7 @@
 ; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
 ; spike/optimized/s_roundPackToI32.ll
 ; spike/optimized/s_roundToI32.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:

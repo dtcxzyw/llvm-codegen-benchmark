@@ -1,6 +1,6 @@
 func0000000000000010:                   # @func0000000000000010
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
 	shrq	$2, %rdx
@@ -23,11 +23,11 @@ func0000000000000010:                   # @func0000000000000010
 	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
 	movabsq	$2535301200456458803, %rax      # imm = 0x232F33025BD42233
@@ -46,5 +46,28 @@ func0000000000000000:                   # @func0000000000000000
 	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpsrlq	$37, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000018:                   # @func0000000000000018
+	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpmullq	%ymm2, %ymm1, %ymm1
+	vextracti128	$1, %ymm1, %xmm2
+	vpextrq	$1, %xmm2, %rdx
+	movabsq	$-5853766786057164379, %rax     # imm = 0xAEC33E1F671529A5
+	mulxq	%rax, %rcx, %rcx
+	vmovq	%rcx, %xmm3
+	vmovq	%xmm2, %rdx
+	mulxq	%rax, %rcx, %rcx
+	vmovq	%rcx, %xmm2
+	vpunpcklqdq	%xmm3, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm3[0]
+	vpextrq	$1, %xmm1, %rdx
+	mulxq	%rax, %rcx, %rcx
+	vmovq	%rcx, %xmm3
+	vmovq	%xmm1, %rdx
+	mulxq	%rax, %rax, %rax
+	vmovq	%rax, %xmm1
+	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
+	vinserti128	$1, %xmm2, %ymm1, %ymm1
+	vpsrlq	$9, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq

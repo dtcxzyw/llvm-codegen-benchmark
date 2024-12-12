@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	andi	a1, a1, 255
 	li	a2, -1
 	sh2add	a0, a0, a0
@@ -7,7 +7,7 @@ func000000000000005a:                   # @func000000000000005a
 	slli	a0, a0, 1
 	slt	a0, a1, a0
 	ret
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	not	a1, a1
 	sh2add	a0, a0, a0
 	sext.b	a1, a1

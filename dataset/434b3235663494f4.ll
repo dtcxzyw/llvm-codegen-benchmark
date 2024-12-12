@@ -63,15 +63,14 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/smpboot.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, 5
+  %2 = icmp ugt i8 %1, 14
   %3 = select i1 %0, i1 %2, i1 false
-  %4 = select i1 %3, i32 123, i32 118
+  %4 = select i1 %3, i32 0, i32 10000
   ret i32 %4
 }
 

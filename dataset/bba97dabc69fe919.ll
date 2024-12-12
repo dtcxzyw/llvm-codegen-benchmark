@@ -1,7 +1,8 @@
 
-; 31 occurrences:
+; 33 occurrences:
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; cpython/optimized/xmlparse.ll
+; eastl/optimized/Int128_t.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; gromacs/optimized/topio.cpp.ll
 ; meshoptimizer/optimized/vcacheanalyzer.cpp.ll
@@ -31,6 +32,7 @@
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
 ; xgboost/optimized/quantile.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(float %0, i64 %1) #0 {
 entry:

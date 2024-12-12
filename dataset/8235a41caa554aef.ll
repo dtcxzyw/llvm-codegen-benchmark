@@ -22,10 +22,11 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; cmake/optimized/idna.c.ll
 ; hyperscan/optimized/ComponentRepeat.cpp.ll
 ; libuv/optimized/idna.c.ll
+; lvgl/optimized/lv_chart.ll
 ; mitsuba3/optimized/orthogonal.cpp.ll
 ; node/optimized/idna.ll
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
@@ -51,7 +52,7 @@ entry:
   ret i32 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -70,6 +71,7 @@ entry:
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; quickjs/optimized/libunicode.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
+; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -144,6 +146,19 @@ entry:
 }
 
 ; 3 occurrences:
+; lvgl/optimized/lv_buttonmatrix.ll
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = add nuw i32 %0, 1
+  %5 = mul i32 %4, %3
+  ret i32 %5
+}
+
+; 3 occurrences:
 ; graphviz/optimized/graph_generator.c.ll
 ; openexr/optimized/ImfTiledInputFile.cpp.ll
 ; yosys/optimized/ezsat.ll
@@ -156,23 +171,6 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
-; linux/optimized/e1000_main.ll
-; linux/optimized/netdev.ll
-; openblas/optimized/dlasd0.c.ll
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 1
-  %4 = sub nsw i32 %0, %1
-  %5 = mul i32 %4, %3
-  ret i32 %5
-}
-
 ; 3 occurrences:
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
@@ -182,6 +180,21 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
+  %5 = mul i32 %4, %3
+  ret i32 %5
+}
+
+; 5 occurrences:
+; linux/optimized/e1000_main.ll
+; linux/optimized/netdev.ll
+; openblas/optimized/dlasd0.c.ll
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = add nsw i32 %0, -1
   %5 = mul i32 %4, %3
   ret i32 %5
 }

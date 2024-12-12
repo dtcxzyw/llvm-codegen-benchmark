@@ -15,8 +15,8 @@ func000000000000001c:                   # @func000000000000001c
 	andq	%rcx, %rax
 	retq
 func000000000000001e:                   # @func000000000000001e
-	leal	(%rdi,%rdi,2), %eax
-	leal	88(%rdi,%rax,4), %eax
-	shrl	$3, %eax
-	andl	$504, %eax                      # imm = 0x1F8
+	imulq	$429497, %rdi, %rax             # imm = 0x68DB9
+	incq	%rax
+	shrq	$31, %rax
+	andl	$-2, %eax
 	retq

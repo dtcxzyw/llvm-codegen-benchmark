@@ -10,7 +10,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movslq	%edx, %rax
 	addq	%rsi, %rax
 	cmpq	%rdi, %rax
@@ -34,35 +34,47 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	movslq	%edx, %rax
 	leaq	(%rsi,%rax,8), %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movslq	%edx, %rax
 	addq	%rsi, %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000025:                   # @func0000000000000025
+func0000000000000045:                   # @func0000000000000045
 	movslq	%edx, %rax
 	addq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setbe	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	movslq	%edx, %rax
 	addq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setne	%al
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	movslq	%edx, %rax
 	leaq	(%rsi,%rax,8), %rax
 	cmpq	%rdi, %rax
 	setae	%al
+	retq
+func0000000000000064:                   # @func0000000000000064
+	movslq	%edx, %rax
+	leaq	(%rsi,%rax,8), %rax
+	cmpq	%rdi, %rax
+	setb	%al
+	retq
+func0000000000000061:                   # @func0000000000000061
+	movslq	%edx, %rax
+	addq	%rsi, %rax
+	cmpq	%rdi, %rax
+	sete	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movslq	%edx, %rax
@@ -70,4 +82,10 @@ func000000000000000c:                   # @func000000000000000c
 	addq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setne	%al
+	retq
+func0000000000000069:                   # @func0000000000000069
+	movslq	%edx, %rax
+	addq	%rsi, %rax
+	cmpq	%rdi, %rax
+	setae	%al
 	retq

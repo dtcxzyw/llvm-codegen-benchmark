@@ -1,48 +1,30 @@
-func0000000000000111:                   // @func0000000000000111
+func0000000000000421:                   // @func0000000000000421
 // %bb.0:                               // %entry
-	ushll	v3.8h, v3.8b, #0
-	cmeq	v0.8b, v0.8b, #0
-	ushll2	v4.4s, v3.8h, #0
-	ushll	v3.4s, v3.4h, #0
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v2.16b, v4.16b, v2.16b
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v1.4s, v1.4s, #0
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	and	v0.8b, v0.8b, v1.8b
+	and	w8, w2, #0xff
+	and	w9, w0, #0xff
+	orr	w8, w1, w8
+	orr	w8, w9, w8
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000001c6:                   // @func00000000000001c6
+func0000000000000586:                   // @func0000000000000586
 // %bb.0:                               // %entry
-	ushll	v3.8h, v3.8b, #0
-	cmlt	v0.8b, v0.8b, #0
-	ushll2	v4.4s, v3.8h, #0
-	ushll	v3.4s, v3.4h, #0
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v2.16b, v4.16b, v2.16b
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v1.4s, v1.4s, #0
-	uzp1	v1.8h, v1.8h, v2.8h
-	mvn	v1.16b, v1.16b
-	xtn	v1.8b, v1.8h
-	and	v0.8b, v0.8b, v1.8b
+	sxtb	w8, w0
+	and	w9, w2, #0xff
+	orr	w9, w1, w9
+	cmp	w8, #0
+	ccmp	w9, #0, #4, lt
+	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000001c1:                   // @func00000000000001c1
+func0000000000000581:                   // @func0000000000000581
 // %bb.0:                               // %entry
-	ushll	v3.8h, v3.8b, #0
-	ushll2	v4.4s, v3.8h, #0
-	ushll	v3.4s, v3.4h, #0
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v2.16b, v4.16b, v2.16b
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v1.4s, v1.4s, #0
-	uzp1	v1.8h, v1.8h, v2.8h
-	movi	v2.8b, #4
-	mvn	v1.16b, v1.16b
-	cmeq	v0.8b, v0.8b, v2.8b
-	xtn	v1.8b, v1.8h
-	and	v0.8b, v0.8b, v1.8b
+	and	w8, w0, #0xff
+	and	w9, w2, #0xff
+	orr	w9, w1, w9
+	cmp	w8, #4
+	ccmp	w9, #0, #4, eq
+	cset	w0, ne
 	ret
                                         // -- End function

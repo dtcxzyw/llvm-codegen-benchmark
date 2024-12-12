@@ -1,5 +1,19 @@
 
-; 97 occurrences:
+; 1 occurrences:
+; verilator/optimized/V3Number.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000dd(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 31
+  %3 = lshr i32 %2, 5
+  %4 = zext nneg i32 %3 to i64
+  %5 = add nuw nsw i64 %0, %4
+  %6 = add nsw i64 %5, -1
+  ret i64 %6
+}
+
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -103,8 +117,21 @@ entry:
   %2 = add i32 %1, 32800
   %3 = lshr i32 %2, 16
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = add nsw i64 %5, -1
+  ret i64 %6
+}
+
+; 1 occurrences:
+; soc-simulator/optimized/verilated.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000dc(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 31
+  %3 = lshr i32 %2, 5
+  %4 = zext nneg i32 %3 to i64
+  %5 = add nuw nsw i64 %0, %4
+  %6 = add i64 %5, 4294967295
   ret i64 %6
 }
 
@@ -116,7 +143,21 @@ entry:
   %2 = add i32 %1, 7
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
+  %6 = add nuw nsw i64 %5, 1
+  ret i64 %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000df(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 73
+  %3 = lshr i32 %2, 6
+  %4 = zext nneg i32 %3 to i64
+  %5 = add nuw nsw i64 %0, %4
   %6 = add nuw nsw i64 %5, 1
   ret i64 %6
 }
@@ -129,7 +170,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = add nuw nsw i64 %5, 1
   ret i64 %6
 }

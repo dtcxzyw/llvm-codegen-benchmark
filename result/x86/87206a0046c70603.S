@@ -16,18 +16,6 @@ func0000000000000004:                   # @func0000000000000004
 	cmoveq	%rsi, %rax
 	imulq	%rdi, %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
-	testl	%edx, %edx
-	movl	$1, %eax
-	cmovneq	%rsi, %rax
-	imulq	%rdi, %rax
-	retq
-func0000000000000031:                   # @func0000000000000031
-	testl	%edx, %edx
-	movl	$1, %eax
-	cmovneq	%rsi, %rax
-	imulq	%rdi, %rax
-	retq
 func0000000000000028:                   # @func0000000000000028
 	xorl	%eax, %eax
 	cmpl	$2, %edx

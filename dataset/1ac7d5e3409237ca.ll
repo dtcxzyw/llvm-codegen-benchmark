@@ -1,12 +1,10 @@
 
-%"struct.mold::elf::ElfShdr.555.2522015" = type { %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016" }
-%"class.mold::LittleEndian.551.2522016" = type { [4 x i8] }
-%"struct.OT::LookupRecord.2623552" = type { %"struct.OT::IntType.139.2623439", %"struct.OT::IntType.139.2623439" }
-%"struct.OT::IntType.139.2623439" = type { %struct.BEInt.140.2623440 }
-%struct.BEInt.140.2623440 = type { [2 x i8] }
-%struct.lua_TValue.2811879 = type { %union.Value.2811880, [1 x i32], i32 }
-%union.Value.2811880 = type { ptr }
-%struct.mstate_aux.3675782 = type { i32, i32, i16, i32 }
+%"struct.mold::elf::ElfShdr.555.2636424" = type { %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425" }
+%"class.mold::LittleEndian.551.2636425" = type { [4 x i8] }
+%"struct.OT::LookupRecord.2736982" = type { %"struct.OT::IntType.139.2736869", %"struct.OT::IntType.139.2736869" }
+%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
+%struct.BEInt.140.2736870 = type { [2 x i8] }
+%struct.Gia_Obj_t_.2877117 = type <{ i64, i32 }>
 
 ; 38 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -48,53 +46,41 @@
 ; qemu/optimized/gen-vdso.c.ll
 ; spike/optimized/elfloader.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw %"struct.mold::elf::ElfShdr.555.2522015", ptr %4, i64 %0, i32 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636424", ptr %4, i64 %0, i32 4
   ret ptr %5
 }
 
-; 9 occurrences:
-; abc/optimized/cecChoice.c.ll
+; 7 occurrences:
 ; cmake/optimized/fse_compress.c.ll
 ; gromacs/optimized/ebin.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
-; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; raylib/optimized/rtextures.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw %"struct.OT::LookupRecord.2623552", ptr %4, i64 %0, i32 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::LookupRecord.2736982", ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; abc/optimized/cecChoice.c.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.lua_TValue.2811879, ptr %1, i64 %3
-  %5 = getelementptr nusw %struct.lua_TValue.2811879, ptr %4, i64 %0, i32 2
-  ret ptr %5
-}
-
-; 2 occurrences:
-; hyperscan/optimized/mcclellan.c.ll
-; hyperscan/optimized/mcsheng.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw %struct.mstate_aux.3675782, ptr %4, i64 %0, i32 3
+  %4 = getelementptr nusw nuw %struct.Gia_Obj_t_.2877117, ptr %1, i64 %3
+  %5 = getelementptr nusw %struct.Gia_Obj_t_.2877117, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 

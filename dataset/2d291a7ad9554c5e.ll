@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp ult i8 %1, 10
@@ -28,7 +28,7 @@ entry:
 ; freetype/optimized/psaux.c.ll
 ; icu/optimized/astro.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp eq i8 %1, 45
@@ -40,7 +40,7 @@ entry:
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i8 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 3, %0
   %3 = icmp eq i8 %1, 0

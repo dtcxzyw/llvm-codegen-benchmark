@@ -1,11 +1,113 @@
 
-; 272 occurrences:
+; 450 occurrences:
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/5d5zav44kcqbb5vr.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/ext.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pid.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/results_collector.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; clamav/optimized/extract.cpp.ll
 ; clamav/optimized/htmlnorm.c.ll
@@ -97,8 +199,6 @@
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
-; llvm/optimized/Process.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/Sanitizers.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -127,6 +227,7 @@
 ; ockam-rs/optimized/1l1yexp2yu73yat8.ll
 ; ockam-rs/optimized/2m830wtqeyaos7wt.ll
 ; ockam-rs/optimized/39elqh75xhewanjo.ll
+; ockam-rs/optimized/3d2putwb383bfowi.ll
 ; ockam-rs/optimized/3mikojidw926fus2.ll
 ; ockam-rs/optimized/3mmfh9oxbbu2kjan.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
@@ -227,7 +328,6 @@
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; tls-rs/optimized/1oa4q9ydtxtlathz.ll
-; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
@@ -272,15 +372,93 @@
 ; yosys/optimized/xilinx_dffopt.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/bound_propagator.cpp.ll
+; zed-rs/optimized/0cyv10l6w91jqdqmhl8pbusw2.ll
+; zed-rs/optimized/0drf4dow76rapncpvt6xcgeqh.ll
+; zed-rs/optimized/0fmkxl10gqw4tzbsnrqexi9ri.ll
+; zed-rs/optimized/0jte70wp5piqvamn4r8mygd7m.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/13ihtml577iorkr51njntvtml.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1yj2u4qji7120pyeazdh9e7k1.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/20igqmfettcex48uahr8huyna.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3di65m17000bk7br774s5jqap.ll
+; zed-rs/optimized/3m5xyr1xu4yees5ut16dqcvjd.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3u7utqtgdovrxzbad3tfrps40.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/455yb6ma6j3a5kpbn5166o5rm.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4h176o45n3uxzch53hiway9mu.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/594irsld4whz8iexnen5yt9ht.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5m9bjvwazi0alu2tzwf9y1ejc.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
+; zed-rs/optimized/62p0ysciwr0duwav9qlwb71rc.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6gy7cm9m32a7fdg31v3lbyxhl.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; zed-rs/optimized/78inm0jy3d63l7emd848od092.ll
+; zed-rs/optimized/7hsbxpr1hqy17ngn0bqyx5x8s.ll
+; zed-rs/optimized/7pufzunt0qgem8mrchwfb0f9s.ll
+; zed-rs/optimized/7r4ka3qnhzi2ha4uh17j4gbwu.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8saagxlqr1drbipxii3ylnn9h.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/98w34cm3i57zhkhn56epbm5eb.ll
+; zed-rs/optimized/9dr2kwkk18o137jk0clql0t7q.ll
+; zed-rs/optimized/9dvdqfymuqqao6fspz5y2pa1a.ll
+; zed-rs/optimized/9eafvdu9qxyugp5or14xw795l.ll
+; zed-rs/optimized/9kzypu599rxw1s8z0tdtjo3oe.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/9ph9ik6f4o8cna26bqiztqhx1.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a7ji1gkpwqx88b3itpxh9e0ma.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/a9rra6zt6cc5nzqj25fs18k6t.ll
+; zed-rs/optimized/ailyigpc30x7abusis8v0e3w5.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/b0jacrvunbgse6y69p1vx4gkq.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/b8gnsytpkbqq6x8vbm79wrrb2.ll
+; zed-rs/optimized/bwf7odsfkes1o9vw37iz67e4b.ll
+; zed-rs/optimized/bzs5z51c7x0xt2thexp0lbkvh.ll
+; zed-rs/optimized/cj02ur7ld20259fotdqsilux8.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/dbhzlm53ys8w4y2p8y2woz44v.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
+; zed-rs/optimized/e6a9h8zpsmm3y86u07vvgbryo.ll
+; zed-rs/optimized/e8miey85a4w6kj2eow2y7dsus.ll
+; zed-rs/optimized/epuo8yz105556scsed5wrqb4z.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 925 occurrences:
+; 923 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/common_policy_traits_test.cc.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
@@ -298,7 +476,6 @@ entry:
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
 ; assimp/optimized/Importer.cpp.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
-; c3c/optimized/number.c.ll
 ; c3c/optimized/sema_decls.c.ll
 ; casadi/optimized/cvodes_interface.cpp.ll
 ; clamav/optimized/archive.cpp.ll
@@ -307,7 +484,6 @@ entry:
 ; clamav/optimized/file.cpp.ll
 ; clamav/optimized/list.cpp.ll
 ; clamav/optimized/scanners.c.ll
-; clamav/optimized/ui.cpp.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; cmake/optimized/cmCTest.cxx.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
@@ -457,7 +633,6 @@ entry:
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; jsonnet/optimized/jsonnetfmt.cpp.ll
-; libquic/optimized/async_bio.cc.ll
 ; libzmq/optimized/ip_resolver.cpp.ll
 ; libzmq/optimized/proxy.cpp.ll
 ; libzmq/optimized/session_base.cpp.ll
@@ -664,7 +839,6 @@ entry:
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -770,7 +944,6 @@ entry:
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; meshlab/optimized/plugin_manager.cpp.ll
-; meshlab/optimized/render_plugin_container.cpp.ll
 ; meshlab/optimized/rich_parameters.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; mitsuba3/optimized/cylinder.cpp.ll
@@ -882,7 +1055,6 @@ entry:
 ; openjdk/optimized/filemap.ll
 ; openjdk/optimized/g1CardSet.ll
 ; openjdk/optimized/g1FullCollector.ll
-; openjdk/optimized/gcConfig.ll
 ; openjdk/optimized/gcm.ll
 ; openjdk/optimized/graphKit.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -928,7 +1100,6 @@ entry:
 ; openspiel/optimized/solitaire.cc.ll
 ; openusd/optimized/changeList.cpp.ll
 ; openusd/optimized/changes.cpp.ll
-; openusd/optimized/fvarRefinement.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/pathExpressionEval.cpp.ll
@@ -993,12 +1164,8 @@ entry:
 ; postgres/optimized/superuser.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsvector_parser.ll
-; postgres/optimized/varsup.ll
 ; postgres/optimized/xlogrecovery.ll
 ; proj/optimized/4D_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/lexer.cc.ll
 ; protobuf/optimized/parser.cc.ll
@@ -1030,7 +1197,6 @@ entry:
 ; qemu/optimized/net_tap.c.ll
 ; qemu/optimized/system_memory.c.ll
 ; qemu/optimized/system_physmem.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/ui_input-linux.c.ll
 ; raylib/optimized/rcore.c.ll
@@ -1205,12 +1371,22 @@ entry:
 ; z3/optimized/theory_array_full.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0bnc87yviwo8pzd5mdfzedrf9.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/6jl1caswhnj5rxlsqeh1op8p6.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/b8gnsytpkbqq6x8vbm79wrrb2.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/d1la7tbj4bxfzuf7lklrygwfp.ll
+; zed-rs/optimized/epuo8yz105556scsed5wrqb4z.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

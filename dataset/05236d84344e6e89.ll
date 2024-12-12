@@ -1,10 +1,9 @@
 
-; 96 occurrences:
+; 95 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
@@ -50,6 +49,7 @@
 ; llvm/optimized/CodeGenMapTable.cpp.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/DirectiveEmitter.cpp.ll
+; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/PathDiagnostic.cpp.ll
@@ -68,7 +68,6 @@
 ; ncnn/optimized/yolov3detectionoutput.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; opencv/optimized/boost.cpp.ll
-; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; opencv/optimized/einsum_layer.cpp.ll
@@ -76,13 +75,13 @@
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/exposure_compensate.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
-; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/flatten_layer.cpp.ll
 ; opencv/optimized/graph_cluster.cpp.ll
 ; opencv/optimized/graycodepattern.cpp.ll
 ; opencv/optimized/large_kinfu.cpp.ll
 ; opencv/optimized/linemod.cpp.ll
 ; opencv/optimized/msd.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/pct_signatures.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
 ; opencv/optimized/segmentation.cpp.ll
@@ -97,13 +96,13 @@
 ; ozz-animation/optimized/raw_animation_archive.cc.ll
 ; yosys/optimized/ezsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 2
   %6 = and i64 %5, 1152921504606846972
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -112,30 +111,42 @@ entry:
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; wireshark/optimized/traffic_tab.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = and i64 %5, 4294967295
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
   ret i1 %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; gromacs/optimized/specbond.cpp.ll
-; hyperscan/optimized/mcclellancompile.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; opencv/optimized/boost.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 2
   %6 = and i64 %5, 4294967295
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp samesign ult i64 %0, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = lshr exact i64 %4, 1
+  %6 = and i64 %5, 65535
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 

@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; folly/optimized/Random.cpp.ll
 ; linux/optimized/swiotlb.ll
@@ -23,20 +24,16 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
-; cmake/optimized/cmCPackComponentGroup.cxx.ll
-; cmake/optimized/cmCPackNSISGenerator.cxx.ll
+; 9 occurrences:
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
-; cpython/optimized/obmalloc.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
-; mimalloc/optimized/segment-map.c.ll
-; postgres/optimized/fe-exec.ll
 ; rust-analyzer-rs/optimized/55szrkbrq7kolv5z.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; tokenizers-rs/optimized/40hmx6rev8evi2bx.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
@@ -46,7 +43,7 @@ entry:
   ret i64 %4
 }
 
-; 110 occurrences:
+; 111 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
@@ -54,6 +51,7 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; lief/optimized/ctr_drbg.c.ll
 ; llvm/optimized/CallLowering.cpp.ll
+; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; z3/optimized/ackermannize_bv_tactic.cpp.ll
 ; z3/optimized/ackr_bound_probe.cpp.ll
 ; z3/optimized/add_bounds_tactic.cpp.ll

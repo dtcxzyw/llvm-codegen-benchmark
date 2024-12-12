@@ -1,0 +1,16 @@
+func0000000000000021:                   # @func0000000000000021
+	addi	a0, a0, -2
+	seqz	a0, a0
+	ret
+func00000000000000a1:                   # @func00000000000000a1
+	addi	a0, a0, -1
+	seqz	a0, a0
+	ret
+func0000000000000024:                   # @func0000000000000024
+	li	a1, 2
+	bltu	a0, a1, .LBB2_2
+	li	a0, 2
+.LBB2_2:                                # %entry
+	addi	a0, a0, -1
+	sltiu	a0, a0, 2
+	ret

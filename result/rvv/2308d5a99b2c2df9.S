@@ -13,6 +13,14 @@ func0000000000000004:                   # @func0000000000000004
 	vmv.v.i	v9, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsleu.vi	v0, v10, 8
+	li	a0, 512
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vmv.v.x	v9, a0
+	vmerge.vvm	v8, v9, v8, v0
+	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v10, 0

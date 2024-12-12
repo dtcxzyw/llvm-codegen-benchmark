@@ -45,8 +45,8 @@ func0000000000000007:                   # @func0000000000000007
 	addq	%rcx, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	movl	%esi, %eax
-	leaq	-1(%rdi,%rax), %rax
+	andq	$-16, %rdi
+	leaq	17(%rsi,%rdi), %rax
 	retq
 func000000000000000d:                   # @func000000000000000d
 	andl	$3840, %esi                     # imm = 0xF00

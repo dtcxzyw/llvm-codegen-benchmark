@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	$32512, %edi                    # imm = 0x7F00
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrl	$9, %esi
 	andl	$15, %esi
 	shrl	$9, %edi
@@ -11,7 +11,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%esi, %edi
 	setb	%al
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000019:                   # @func0000000000000019
 	shrl	$16, %esi
 	movzbl	%sil, %eax
 	shrl	$16, %edi
@@ -19,7 +19,7 @@ func0000000000000009:                   # @func0000000000000009
 	cmpl	%eax, %ecx
 	setae	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	shrl	$7, %esi
 	andl	$31, %esi
 	shrl	$7, %edi
@@ -32,7 +32,7 @@ func000000000000000c:                   # @func000000000000000c
 	testl	$896, %edi                      # imm = 0x380
 	setne	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	shrl	$16, %esi
 	andl	$63, %esi
 	shrl	$16, %edi

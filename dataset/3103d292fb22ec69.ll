@@ -1,5 +1,20 @@
 
-; 27 occurrences:
+; 5 occurrences:
+; freetype/optimized/truetype.c.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; rocksdb/optimized/skiplistrep.cc.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-tftp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = icmp samesign ult i32 %1, %3
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 28 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; hermes/optimized/JSRegExp.cpp.ll
@@ -23,6 +38,7 @@
 ; openjdk/optimized/pngrtran.ll
 ; openssl/optimized/libssl-lib-extensions_srvr.ll
 ; openssl/optimized/libssl-shlib-extensions_srvr.ll
+; slurm/optimized/affinity.ll
 ; slurm/optimized/eval_nodes_tree.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-btsap.c.ll
@@ -31,62 +47,62 @@
 define i1 @func0000000000000001(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = select i1 %4, i1 %0, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; minetest/optimized/mapblock_mesh.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i1 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
 ; 2 occurrences:
-; qemu/optimized/hw_sd_sdhci.c.ll
-; wireshark/optimized/packet-umts_rlc.c.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000006(i1 %0, i32 %1, i16 %2) #0 {
 entry:
-  %3 = zext nneg i16 %2 to i32
-  %4 = icmp ugt i32 %3, %1
+  %3 = zext i16 %2 to i32
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; qemu/optimized/hw_sd_sdhci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = icmp ult i32 %1, %3
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 4 occurrences:
+; boost/optimized/text_file_backend.ll
 ; icu/optimized/normalizer2impl.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp ule i32 %3, %1
+  %4 = icmp samesign uge i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
-; freetype/optimized/truetype.c.ll
 ; postgres/optimized/blkreftable.ll
 ; postgres/optimized/blkreftable_shlib.ll
 ; postgres/optimized/blkreftable_srv.ll
 ; slurm/optimized/gres_select_filter.ll
-; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/mac_hd_generic_decoder.c.ll
-; wireshark/optimized/packet-tftp.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -98,7 +114,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp sle i32 %3, %1
+  %4 = icmp sge i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -109,20 +125,21 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; wireshark/optimized/packet-mbtcp.c.ll
 ; wireshark/optimized/packet-wccp.c.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ugt i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -130,10 +147,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-fcip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -142,10 +159,21 @@ entry:
 ; linux/optimized/alps.ll
 ; wireshark/optimized/packet-prp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-umts_rlc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = icmp samesign ult i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -153,10 +181,10 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -169,7 +197,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -180,7 +208,7 @@ entry:
 define i1 @func0000000000000007(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp sge i32 %3, %1
+  %4 = icmp sle i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -190,10 +218,10 @@ entry:
 ; postgres/optimized/blkreftable_shlib.ll
 ; postgres/optimized/blkreftable_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000015(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp samesign ule i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

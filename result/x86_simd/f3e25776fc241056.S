@@ -1,11 +1,11 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm0, %k1
 	vpsrlq	$1, %ymm1, %ymm0
 	vmovdqa	%ymm0, %ymm2
 	vpternlogq	$15, %ymm0, %ymm0, %ymm2 # ymm2 = ~ymm2
-	vpaddq	%ymm1, %ymm2, %ymm0 {%k1}
+	vpaddq	%ymm2, %ymm1, %ymm0 {%k1}
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpsrlq	$1, %ymm1, %ymm0
 	vmovdqa	%ymm0, %ymm2
 	vpternlogq	$15, %ymm0, %ymm0, %ymm2 # ymm2 = ~ymm2
-	vpaddq	%ymm1, %ymm2, %ymm0 {%k1}
+	vpaddq	%ymm2, %ymm1, %ymm0 {%k1}
 	vptestnmq	%ymm0, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

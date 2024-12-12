@@ -22,7 +22,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 4
   %4 = and i32 %1, 120
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = xor i32 %6, 248
   ret i32 %7
 }

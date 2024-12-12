@@ -1,4 +1,22 @@
 
+; 6 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000224(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp olt double %1, %2
+  %4 = select i1 %3, double %1, double %2
+  %5 = fcmp olt double %4, 0x400921FB54442D18
+  %6 = fcmp ogt double %0, 0x400921FB54442D18
+  %7 = and i1 %6, %5
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind

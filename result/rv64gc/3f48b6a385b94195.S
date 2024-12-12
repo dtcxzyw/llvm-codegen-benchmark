@@ -4,8 +4,7 @@ func0000000000000010:                   # @func0000000000000010
 	subw	a0, a2, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
-	lui	a3, 305152
-	or	a2, a2, a3
+	ori	a2, a2, 7
 	subw	a1, a1, a0
 	subw	a0, a2, a1
 	ret

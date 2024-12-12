@@ -1,5 +1,5 @@
 
-; 412 occurrences:
+; 431 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/cuddBddAbs.c.ll
@@ -11,7 +11,6 @@
 ; abseil-cpp/optimized/status_payload_printer.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
-; eastl/optimized/TestMemory.cpp.ll
 ; entt/optimized/view.cpp.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
 ; folly/optimized/Core.cpp.ll
@@ -60,7 +59,6 @@
 ; linux/optimized/fair.ll
 ; linux/optimized/i915_vma_resource.ll
 ; linux/optimized/interval_tree.ll
-; linux/optimized/iomap.ll
 ; linux/optimized/memblock.ll
 ; linux/optimized/memtype_interval.ll
 ; linux/optimized/static_call_inline.ll
@@ -140,6 +138,7 @@
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; nix/optimized/serialise.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
@@ -412,6 +411,26 @@
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; z3/optimized/pull_quant.cpp.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/160h40gmjuq6w4py8cgz7ceyb.ll
+; zed-rs/optimized/1t00sx04wxddh9gaenzu20fkj.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/5mqaql67fk8cb5w1h1xcbyeu9.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/9awmqr28bdho83r0fgrej0t00.ll
+; zed-rs/optimized/9dr2kwkk18o137jk0clql0t7q.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
+; zed-rs/optimized/aktvc84j83s8sqq1xgqfsdyza.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/d9u9g3e4j8a6dko6rysohoksz.ll
+; zed-rs/optimized/de4xf1plz4ya209x66ee15yyx.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; zed-rs/optimized/f3ax6fwg663b1ze6yfrcfasp4.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

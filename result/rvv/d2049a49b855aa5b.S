@@ -3,5 +3,5 @@ func0000000000000001:                   # @func0000000000000001
 	vxor.vv	v10, v10, v12
 	lui	a0, 92808
 	vmul.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

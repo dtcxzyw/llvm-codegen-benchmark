@@ -5,7 +5,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
 	vpord	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2 {%k1}
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq

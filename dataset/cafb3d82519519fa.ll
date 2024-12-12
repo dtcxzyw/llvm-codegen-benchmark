@@ -1,8 +1,9 @@
 
-; 62 occurrences:
+; 67 occurrences:
 ; abseil-cpp/optimized/reflection_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/entconv.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; git/optimized/fast-import.ll
@@ -22,6 +23,7 @@
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; lvgl/optimized/lv_file_explorer.ll
 ; minetest/optimized/craftdef.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
@@ -60,8 +62,11 @@
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -131,7 +136,6 @@ entry:
 }
 
 ; 9 occurrences:
-; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; clamav/optimized/entconv.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
@@ -140,18 +144,20 @@ entry:
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/CodeGenTBAA.cpp.ll
 ; postgres/optimized/gistproc.ll
+; spike/optimized/clz16.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i16
-  %2 = icmp ult i16 %1, 22
+  %1 = and i64 %0, 65280
+  %2 = icmp eq i64 %1, 0
   ret i1 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/ptrace.ll
 ; llvm/optimized/DWARFAbbreviationDeclaration.cpp.ll
 ; oiio/optimized/exif.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0) #0 {
 entry:

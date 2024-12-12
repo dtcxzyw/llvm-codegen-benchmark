@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -22,7 +22,6 @@
 ; openssl/optimized/libcrypto-lib-ccm128.ll
 ; openssl/optimized/libcrypto-shlib-ccm128.ll
 ; php/optimized/uuencode.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; qemu/optimized/hw_usb_dev-wacom.c.ll
 ; qemu/optimized/tcg.c.ll
@@ -34,7 +33,7 @@
 define i8 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 12
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i8
   ret i8 %4
 }
@@ -168,7 +167,7 @@ entry:
 define i8 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw i32 %3 to i8
   ret i8 %4
 }
@@ -183,7 +182,7 @@ entry:
 define i8 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i8
   ret i8 %4
 }
@@ -194,7 +193,7 @@ entry:
 define i8 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc nsw i32 %3 to i8
   ret i8 %4
 }

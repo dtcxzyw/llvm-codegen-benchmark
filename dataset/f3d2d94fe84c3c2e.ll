@@ -1,12 +1,11 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/type1.c.ll
 ; freetype/optimized/type1cid.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; libevent/optimized/poll.c.ll
 ; linux/optimized/md.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; Function Attrs: nounwind

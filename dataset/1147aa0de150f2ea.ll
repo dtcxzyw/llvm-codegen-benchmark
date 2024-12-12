@@ -8,7 +8,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -23,7 +23,7 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -34,7 +34,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

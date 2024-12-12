@@ -1,14 +1,14 @@
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	orl	%edx, %esi
 	andl	$1023, %esi                     # imm = 0x3FF
 	leaq	288(%rdi,%rsi,2), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	orl	%edx, %esi
 	movzwl	%si, %eax
 	leaq	65536(%rdi,%rax), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	orl	%edx, %esi
 	andl	$15, %esi
 	leaq	944(%rdi,%rsi,8), %rax

@@ -5,11 +5,11 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = lshr i32 %0, %2
-  %4 = icmp ult i32 %3, 16
+  %4 = icmp samesign ult i32 %3, 16
   ret i1 %4
 }
 

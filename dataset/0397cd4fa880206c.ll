@@ -14,7 +14,7 @@
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000001084(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq ptr %1, null
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001844(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000006084(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = icmp eq ptr %1, null
@@ -174,7 +174,7 @@ entry:
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000001082(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq i64 %1, 0
@@ -187,7 +187,7 @@ entry:
 ; 1 occurrences:
 ; portaudio/optimized/pa_front.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000702(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000001602(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne i64 %1, 0
@@ -200,7 +200,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/tiffdec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001042(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000004082(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, -2147483647
   %4 = icmp eq ptr %1, null

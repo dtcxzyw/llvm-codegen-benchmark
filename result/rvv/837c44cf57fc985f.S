@@ -5,5 +5,5 @@ func0000000000000033:                   # @func0000000000000033
 	vadd.vi	v14, v14, 9
 	vsrl.vv	v12, v12, v14
 	vsrl.vv	v10, v12, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

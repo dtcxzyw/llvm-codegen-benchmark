@@ -1,10 +1,10 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000ab:                   # @func00000000000000ab
 	andq	$-1024, %rdx                    # imm = 0xFC00
 	addq	%rdi, %rdx
 	shlq	$6, %rsi
 	leaq	384(%rsi,%rdx), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	andq	$-1024, %rdx                    # imm = 0xFC00
 	addq	%rdi, %rdx
 	shlq	$6, %rsi
@@ -16,7 +16,7 @@ func00000000000000c0:                   # @func00000000000000c0
 	addq	%rdi, %rax
 	leaq	4(%rax,%rsi,2), %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	andq	$-8, %rdx
 	addq	%rdi, %rdx
 	shlq	$4, %rsi

@@ -1,11 +1,8 @@
 
-; 17 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/log_message.cc.ll
-; php/optimized/fopen_wrappers.ll
 ; php/optimized/string.ll
 ; php/optimized/url_scanner_ex.ll
-; ripgrep-rs/optimized/1rzxgyr0fo8f0ob1.ll
-; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
@@ -24,6 +21,20 @@ entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %3, %2
   %5 = getelementptr nusw [24 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; php/optimized/fopen_wrappers.ll
+; ripgrep-rs/optimized/1rzxgyr0fo8f0ob1.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %0 to i64
+  %3 = ptrtoint ptr %1 to i64
+  %4 = sub i64 %3, %2
+  %5 = getelementptr nusw nuw [4097 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

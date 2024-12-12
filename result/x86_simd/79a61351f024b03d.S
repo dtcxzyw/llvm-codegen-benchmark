@@ -17,7 +17,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm2, %k1
@@ -44,7 +44,7 @@ func0000000000000082:                   # @func0000000000000082
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestmd	%ymm2, %ymm2, %k1
@@ -73,7 +73,7 @@ func0000000000000182:                   # @func0000000000000182
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm2, %k1

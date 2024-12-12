@@ -13,7 +13,7 @@ entry:
   %4 = udiv i64 %1, 604800
   %5 = add nuw nsw i64 %4, %3
   %6 = mul i64 %5, 604800
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

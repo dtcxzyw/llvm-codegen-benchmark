@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
+; openjdk/optimized/ciMethod.ll
 ; ruby/optimized/range.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; Function Attrs: nounwind
@@ -46,6 +47,18 @@ define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 7
   %3 = and i1 %2, %0
+  %4 = freeze i1 %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; freetype/optimized/sdf.c.ll
+; opencv/optimized/detector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp sgt i64 %1, 0
+  %3 = and i1 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }

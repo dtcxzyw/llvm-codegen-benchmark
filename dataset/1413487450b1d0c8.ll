@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 77 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
@@ -16,15 +16,11 @@
 ; linux/optimized/asymmetric_type.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_hdcp.ll
-; linux/optimized/intel_hdcp_gsc_message.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/nsxfeval.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/uncore_discovery.ll
 ; linux/optimized/vmcore.ll
-; llvm/optimized/CheckExprLifetime.cpp.ll
-; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; lua/optimized/lapi.ll
 ; lua/optimized/lgc.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
@@ -46,7 +42,6 @@
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/level.cpp.ll
 ; php/optimized/pcre2_match.ll
-; php/optimized/pcre2_match_data.ll
 ; php/optimized/pcre2_pattern_info.ll
 ; php/optimized/pcre2_substring.ll
 ; postgres/optimized/dict_thesaurus.ll
@@ -54,7 +49,6 @@
 ; postgres/optimized/tsvector_op.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/libvhost-user.c.ll
 ; raylib/optimized/raudio.c.ll
 ; rocksdb/optimized/skiplistrep.cc.ll
@@ -63,7 +57,6 @@
 ; spike/optimized/rfb.ll
 ; sqlite/optimized/sqlite3.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
-; stockfish/optimized/tbprobe.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
@@ -83,6 +76,7 @@
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i16 %0) #0 {
 entry:
@@ -119,7 +113,7 @@ entry:
   ret i64 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; linux/optimized/early-quirks.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
@@ -134,6 +128,7 @@ entry:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/l3869xz334uj87z.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i16 %0) #0 {
 entry:

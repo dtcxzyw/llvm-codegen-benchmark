@@ -1,11 +1,11 @@
 
-%"struct.mold::elf::ElfRel.2526104" = type { %"class.mold::BigEndian.2525969", %"class.mold::BigEndian.462.2526105", i8, %"class.mold::BigEndian.463.2526106" }
-%"class.mold::BigEndian.2525969" = type { [4 x i8] }
-%"class.mold::BigEndian.462.2526105" = type { [3 x i8] }
-%"class.mold::BigEndian.463.2526106" = type { [4 x i8] }
-%struct._Point.2631007 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
-%struct.aiTexel.2717510 = type { i8, i8, i8, i8 }
-%struct.AFM_KernPairRec_.3702704 = type { i32, i32, i32, i32 }
+%"struct.mold::elf::ElfRel.2640511" = type { %"class.mold::BigEndian.2640376", %"class.mold::BigEndian.462.2640512", i8, %"class.mold::BigEndian.463.2640513" }
+%"class.mold::BigEndian.2640376" = type { [4 x i8] }
+%"class.mold::BigEndian.462.2640512" = type { [3 x i8] }
+%"class.mold::BigEndian.463.2640513" = type { [4 x i8] }
+%struct._Point.2744407 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
+%struct.aiTexel.2830043 = type { i8, i8, i8, i8 }
+%struct.AFM_KernPairRec_.3882042 = type { i32, i32, i32, i32 }
 
 ; 18 occurrences:
 ; graphviz/optimized/dtstrhash.c.ll
@@ -27,12 +27,12 @@
 ; php/optimized/zend_opcode.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, i32 %1) #0 {
+define i1 @func00000000000003c4(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw %"struct.mold::elf::ElfRel.2526104", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640511", ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -12
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -69,12 +69,12 @@ entry:
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/var_subst.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, i32 %1) #0 {
+define i1 @func00000000000001c4(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -8
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -84,38 +84,37 @@ entry:
 ; quickjs/optimized/cutils.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000204(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -1
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/ProcessPath.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, i32 %1) #0 {
+define i1 @func00000000000003c1(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw %struct._Point.2631007, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %struct._Point.2744407, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -56
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; hermes/optimized/HandleRootOwner.cpp.ll
-; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i32 %1) #0 {
+define i1 @func00000000000001e1(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw %struct.aiTexel.2717510, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 4
-  %5 = icmp eq ptr %4, %0
+  %3 = getelementptr nusw nuw %struct.aiTexel.2830043, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 4
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -124,48 +123,72 @@ entry:
 ; postgres/optimized/oracle_compat.ll
 ; postgres/optimized/pg_dump.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000208(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -1
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c1(ptr %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = getelementptr nusw nuw ptr, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -8
+  %5 = icmp eq ptr %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/9tt6eh72scdop5d6biwv5himz.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(ptr %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = getelementptr { { i64, i64, { i32, i32 }, i32, i32, i32, i32, i32, [1 x i32] } }, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -48
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; postgres/optimized/oracle_compat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000105(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000205(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -1
-  %5 = icmp uge ptr %4, %0
+  %5 = icmp ule ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; icu/optimized/bocsu.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a5(ptr %0, i32 %1) #0 {
+define i1 @func00000000000003c5(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -4
-  %5 = icmp uge ptr %4, %0
+  %5 = icmp ule ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; freetype/optimized/type1.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, i32 %1) #0 {
+define i1 @func00000000000001c8(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw %struct.AFM_KernPairRec_.3702704, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %struct.AFM_KernPairRec_.3882042, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 

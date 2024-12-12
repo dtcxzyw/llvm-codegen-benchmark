@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
@@ -17,6 +17,7 @@
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; grpc/optimized/fault_injection_filter.cc.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -40,6 +41,17 @@ define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
   %2 = or i128 %0, %1
   %3 = lshr i128 %2, 64
+  ret i128 %3
+}
+
+; 2 occurrences:
+; boost/optimized/approximately_equals.ll
+; libquic/optimized/poly1305_vec.c.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000003(i128 %0, i128 %1) #0 {
+entry:
+  %2 = or disjoint i128 %0, %1
+  %3 = lshr exact i128 %2, 3
   ret i128 %3
 }
 

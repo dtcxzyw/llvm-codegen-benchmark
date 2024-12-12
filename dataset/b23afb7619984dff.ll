@@ -14,7 +14,7 @@ entry:
   ret i64 %4
 }
 
-; 107 occurrences:
+; 106 occurrences:
 ; abc/optimized/extraUtilMemory.c.ll
 ; abc/optimized/mem.c.ll
 ; bullet3/optimized/b3BoundSearchCL.ll
@@ -107,7 +107,6 @@ entry:
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftRigidDynamicsWorld.ll
-; bullet3/optimized/btSoftSoftCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereSphereCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
@@ -123,26 +122,11 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; xgboost/optimized/comm.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0) #0 {
+define i64 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
   %2 = icmp eq i32 %0, 0
   %3 = select i1 %2, i32 1, i32 %1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
-}
-
-; 4 occurrences:
-; abc/optimized/giaFanout.c.ll
-; cmake/optimized/archive_read_support_format_iso9660.c.ll
-; opencv/optimized/apriltag_quad_thresh.cpp.ll
-; redis/optimized/module.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0) #0 {
-entry:
-  %1 = shl nsw i32 %0, 1
-  %2 = icmp slt i32 %0, 2048
-  %3 = select i1 %2, i32 4096, i32 %1
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

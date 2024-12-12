@@ -1,5 +1,7 @@
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; gromacs/optimized/muParserBase.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
@@ -25,7 +27,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sdiv exact i64 %1, 120
   %6 = add i64 %4, %5
   ret i64 %6
@@ -37,7 +39,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 12
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sdiv exact i64 %1, 24
   %6 = add i64 %4, %5
   ret i64 %6
@@ -49,7 +51,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sdiv exact i64 %1, 24
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -61,7 +63,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 12
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sdiv exact i64 %0, 24
   %6 = add nsw i64 %5, %4
   ret i64 %6

@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 47 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/saigSimFast.c.ll
@@ -12,8 +12,6 @@
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/pme_redistribute.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
-; gromacs/optimized/sgelqf.cpp.ll
-; gromacs/optimized/sgeqrf.cpp.ll
 ; gromacs/optimized/sgetri.cpp.ll
 ; gromacs/optimized/sorgbr.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll

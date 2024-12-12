@@ -1,14 +1,8 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffffff
-	sub	v0.2d, v0.2d, v2.2d
-	movi	v2.2d, #0xffffffffffffffff
-	ssra	v4.2d, v0.2d, #3
-	sub	v0.2d, v1.2d, v3.2d
-	ucvtf	v1.2d, v4.2d
-	ssra	v2.2d, v0.2d, #3
-	fcvtn	v0.2s, v1.2d
-	ucvtf	v1.2d, v2.2d
-	fcvtn2	v0.4s, v1.2d
+	sub	x8, x0, x1
+	asr	x8, x8, #3
+	sub	x8, x8, #1
+	ucvtf	s0, x8
 	ret
                                         // -- End function

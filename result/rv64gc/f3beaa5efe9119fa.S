@@ -30,17 +30,31 @@ func0000000000000013:                   # @func0000000000000013
 .LBB4_2:                                # %entry
 	addiw	a0, a0, 2
 	ret
-func0000000000000006:                   # @func0000000000000006
-	beqz	a2, .LBB5_2
+func0000000000000053:                   # @func0000000000000053
+	li	a3, 3
+	bltu	a2, a3, .LBB5_2
 	mv	a0, a1
 .LBB5_2:                                # %entry
+	addiw	a0, a0, 1
+	ret
+func0000000000000006:                   # @func0000000000000006
+	beqz	a2, .LBB6_2
+	mv	a0, a1
+.LBB6_2:                                # %entry
 	addiw	a0, a0, 1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	lui	a3, 14
 	addiw	a3, a3, 1638
-	bltu	a2, a3, .LBB6_2
+	bltu	a2, a3, .LBB7_2
 	mv	a0, a1
-.LBB6_2:                                # %entry
+.LBB7_2:                                # %entry
 	addiw	a0, a0, -1
+	ret
+func0000000000000051:                   # @func0000000000000051
+	li	a3, 6
+	bltu	a2, a3, .LBB8_2
+	mv	a0, a1
+.LBB8_2:                                # %entry
+	addiw	a0, a0, 1
 	ret

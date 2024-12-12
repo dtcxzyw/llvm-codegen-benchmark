@@ -21,7 +21,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 3
   %5 = add nsw i32 %1, 196624
   %6 = add nsw i32 %5, %4
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -47,7 +47,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 3
   %5 = add i32 %1, 13
   %6 = add i32 %4, %5
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

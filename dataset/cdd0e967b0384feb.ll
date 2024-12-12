@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
@@ -12,7 +12,6 @@
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll

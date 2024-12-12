@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -15,6 +15,7 @@
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; gromacs/optimized/gmx_cluster.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_line.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind

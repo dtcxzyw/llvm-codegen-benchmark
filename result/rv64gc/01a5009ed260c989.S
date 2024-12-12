@@ -1,4 +1,4 @@
-func0000000000000052:                   # @func0000000000000052
+func0000000000000053:                   # @func0000000000000053
 	sext.w	a2, a2
 	sext.w	a3, a1
 	xor	a2, a2, a3
@@ -8,14 +8,5 @@ func0000000000000052:                   # @func0000000000000052
 	slli	a1, a1, 32
 	slli	a3, a3, 35
 	mulhu	a1, a1, a3
-	add	a0, a0, a1
-	ret
-func000000000000025e:                   # @func000000000000025e
-	sext.w	a2, a2
-	sext.w	a3, a1
-	sltu	a2, a3, a2
-	xori	a2, a2, 1
-	addw	a1, a1, a2
-	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret

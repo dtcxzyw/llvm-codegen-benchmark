@@ -4,10 +4,10 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp ugt i64 %6, 2147483647
@@ -18,9 +18,23 @@ entry:
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 17179869120
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %5, %0
+  %7 = icmp ult i64 %6, 4294967296
+  ret i1 %7
+}
+
+; 2 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000104(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
@@ -31,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000106(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = getelementptr nusw i8, ptr %1, i64 %3

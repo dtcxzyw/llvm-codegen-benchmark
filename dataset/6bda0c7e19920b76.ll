@@ -43,7 +43,7 @@ entry:
   ret double %1
 }
 
-; 166 occurrences:
+; 163 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -112,13 +112,11 @@ entry:
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/plylib.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -201,7 +199,6 @@ entry:
 ; wireshark/optimized/packet-bthci_evt.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-h264.c.ll
-; wireshark/optimized/packet-ieee80211-netmon.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-igmp.c.ll
 ; wireshark/optimized/packet-obd-ii.c.ll

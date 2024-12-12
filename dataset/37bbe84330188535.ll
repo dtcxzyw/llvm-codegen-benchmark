@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000098(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp slt i64 %1, 0

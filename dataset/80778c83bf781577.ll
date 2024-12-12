@@ -12,8 +12,21 @@ entry:
   ret i32 %7
 }
 
-; 74 occurrences:
+; 2 occurrences:
 ; imgui/optimized/imgui.cpp.ll
+; openjdk/optimized/debugInit.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = xor i64 %0, -1
+  %6 = add i64 %5, %4
+  %7 = trunc i64 %6 to i32
+  ret i32 %7
+}
+
+; 72 occurrences:
 ; llvm/optimized/Stmt.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -86,11 +99,10 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; openjdk/optimized/debugInit.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
+define i32 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = xor i64 %0, -1
   %6 = add i64 %5, %4

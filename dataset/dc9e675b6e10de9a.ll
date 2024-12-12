@@ -1,5 +1,6 @@
 
-; 18 occurrences:
+; 19 occurrences:
+; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; eastl/optimized/TestSmartPtr.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/cmdlinemodulemanager.cpp.ll
@@ -27,10 +28,14 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 7 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; wasmtime-rs/optimized/32ocpkosjxmve1yg.ll
 ; wasmtime-rs/optimized/5lt5r4zkd9qrbog.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i8 %0, i1 %1) #0 {
 entry:

@@ -6,7 +6,7 @@
 ; just-rs/optimized/3fhxcueg488gjpka.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000198(i64 %0, i64 %1) #0 {
+define i8 @func0000000000000318(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ne i64 %0, 0
@@ -19,7 +19,7 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i8 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp eq i64 %0, 0

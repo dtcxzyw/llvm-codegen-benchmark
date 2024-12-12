@@ -9,11 +9,11 @@
 ; yosys/optimized/freduce.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   %6 = select i1 %5, i32 45, i32 88
   ret i32 %6

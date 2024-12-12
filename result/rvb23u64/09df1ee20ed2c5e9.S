@@ -24,12 +24,12 @@ func0000000000000004:                   # @func0000000000000004
 	beqz	a1, .LBB1_3
 	beqz	a0, .LBB1_4
 .LBB1_2:                                # %entry
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa0, fa0, fa5
 	ret
 .LBB1_3:                                # %entry
 	fmv.s	fa4, fa1
 	bnez	a0, .LBB1_2
 .LBB1_4:                                # %entry
 	fsub.s	fa5, fa5, fa4
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa0, fa0, fa5
 	ret

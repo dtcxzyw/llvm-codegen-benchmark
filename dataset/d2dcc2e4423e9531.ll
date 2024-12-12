@@ -11,7 +11,8 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; libquic/optimized/a_gentm.c.ll
 ; libquic/optimized/a_utctm.c.ll

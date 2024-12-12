@@ -1,11 +1,11 @@
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	leal	6(%rdx,%rsi), %eax
 	cltq
 	addq	%rdi, %rax
 	cmpq	$8, %rax
 	setb	%al
 	retq
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	leal	-32768(%rdx,%rsi), %eax
 	cltq
 	addq	%rdi, %rax

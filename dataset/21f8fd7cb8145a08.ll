@@ -1,5 +1,5 @@
 
-; 301 occurrences:
+; 304 occurrences:
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
@@ -55,12 +55,14 @@
 ; llvm/optimized/BlockCounter.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
+; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BuildLibCalls.cpp.ll
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
 ; llvm/optimized/CFGReachabilityAnalysis.cpp.ll
 ; llvm/optimized/CFIInstrInserter.cpp.ll
 ; llvm/optimized/CGAtomic.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CStringChecker.cpp.ll
 ; llvm/optimized/CXXInheritance.cpp.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
@@ -277,6 +279,7 @@
 ; llvm/optimized/VPlan.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
+; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/ValistChecker.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; llvm/optimized/VarLenCodeEmitterGen.cpp.ll
@@ -353,7 +356,7 @@ entry:
 define i64 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 37
-  %3 = add i32 %0, -1
+  %3 = add i32 %0, 2147483647
   %4 = and i32 %3, %2
   %5 = zext nneg i32 %4 to i64
   ret i64 %5

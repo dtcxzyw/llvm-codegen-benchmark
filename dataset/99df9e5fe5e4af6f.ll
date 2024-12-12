@@ -57,10 +57,10 @@
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp eq ptr %3, %1
+  %4 = icmp eq ptr %1, %3
   %5 = icmp ult i64 %0, -9
   %6 = and i1 %5, %4
   ret i1 %6
@@ -86,10 +86,10 @@ entry:
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; php/optimized/zend_file_cache.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp eq ptr %3, %1
+  %4 = icmp eq ptr %1, %3
   %5 = icmp ugt i64 %0, 8
   %6 = and i1 %5, %4
   ret i1 %6
@@ -103,10 +103,10 @@ entry:
 ; openjdk/optimized/xNMethodTable.ll
 ; openjdk/optimized/zNMethodTable.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp eq ptr %3, %1
+  %4 = icmp eq ptr %1, %3
   %5 = icmp ne i64 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -125,10 +125,10 @@ entry:
 ; luajit/optimized/lj_tab_dyn.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp eq ptr %3, %1
+  %4 = icmp eq ptr %1, %3
   %5 = icmp eq i64 %0, 6
   %6 = and i1 %5, %4
   ret i1 %6
@@ -137,10 +137,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp uge ptr %3, %0
+  %4 = icmp ule ptr %0, %3
   %5 = icmp eq i64 %1, 2
   %6 = and i1 %4, %5
   ret i1 %6

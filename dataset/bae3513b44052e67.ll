@@ -1,10 +1,11 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_color.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %1, %2
+  %3 = icmp samesign ult i32 %1, %2
   %4 = select i1 %3, i32 -86400, i32 86400
   %5 = add nsw i32 %4, %0
   ret i32 %5
@@ -26,7 +27,7 @@ define i32 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = select i1 %3, i32 -1, i32 1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -53,7 +54,7 @@ define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = select i1 %3, i32 7, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -66,7 +67,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %3, i32 -7, i32 -9
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -80,11 +81,11 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %3, i32 -7, i32 -9
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; clamav/optimized/mszipd.c.ll
 ; git/optimized/delta-islands.ll
@@ -94,6 +95,7 @@ entry:
 ; git/optimized/pack-bitmap.ll
 ; git/optimized/replay.ll
 ; wireshark/optimized/uat.c.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -114,7 +116,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i32 144, i32 57
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -171,11 +173,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; llvm/optimized/GVNSink.cpp.ll
 ; postgres/optimized/reorderbuffer.ll
-; wireshark/optimized/packet-opa-mad.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -192,8 +193,19 @@ define i32 @func000000000000002d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp slt i32 %1, %2
   %3 = select i1 %.not, i32 51, i32 29
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-opa-mad.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %1, %2
+  %4 = select i1 %3, i32 72, i32 66
+  %5 = add i32 %0, %4
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -203,7 +215,7 @@ define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp sgt i32 %1, %2
   %3 = select i1 %.not, i32 1, i32 -1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -215,16 +227,16 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %3, i32 0, i32 255
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000067(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %.not = icmp ult i32 %1, %2
+  %.not = icmp samesign ult i32 %1, %2
   %3 = select i1 %.not, i32 4, i32 6
   %4 = add nuw nsw i32 %3, %0
   ret i32 %4

@@ -47,11 +47,11 @@ define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; ceres/optimized/single_linkage_clustering.cc.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -70,7 +70,6 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; opencv/optimized/checker_model.cpp.ll
-; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/staticSaliencyFineGrained.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
@@ -103,12 +102,14 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -138,7 +139,7 @@ define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

@@ -28,8 +28,9 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_theme_default.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; quantlib/optimized/cashflows.ll
 ; quantlib/optimized/cevrndcalculator.ll
@@ -42,7 +43,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1, i32 -1
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 

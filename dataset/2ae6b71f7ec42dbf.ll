@@ -22,7 +22,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 11
   %3 = add i32 %2, %1
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = lshr i32 %4, 5
   %6 = add i32 %5, %4
   ret i32 %6
@@ -41,7 +41,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = add nuw nsw i32 %2, %1
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = lshr i32 %4, 17
   %6 = add i32 %5, %4
   ret i32 %6

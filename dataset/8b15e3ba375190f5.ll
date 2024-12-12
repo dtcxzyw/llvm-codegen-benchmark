@@ -1,8 +1,10 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/sclUpsize.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clipping.c.ll

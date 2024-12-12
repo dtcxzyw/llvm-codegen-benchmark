@@ -3,7 +3,7 @@
 ; luau/optimized/lutf8lib.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000308(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 5
   %4 = shl i32 %1, %3
@@ -18,7 +18,7 @@ entry:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wireshark/optimized/packet-btrfcomm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000301(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 7
   %4 = shl i32 %1, %3
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; lua/optimized/lutf8lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000186(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000306(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 5
   %4 = shl i32 %1, %3

@@ -2,7 +2,7 @@
 	.long	7                               # 0x7
 func0000000000000001:                   # @func0000000000000001
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vcvtdq2pd	%ymm0, %zmm0
 	retq
 .LCPI1_0:

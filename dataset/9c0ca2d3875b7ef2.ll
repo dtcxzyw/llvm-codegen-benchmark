@@ -4,12 +4,12 @@
 ; mitsuba3/optimized/serialized.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = and i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -18,7 +18,7 @@ entry:
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 128
   %3 = icmp eq i32 %2, 0

@@ -1,10 +1,9 @@
 
-; 46 occurrences:
+; 44 occurrences:
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/kinsol_direct.c.ll
 ; cpython/optimized/mathmodule.ll
 ; gromacs/optimized/fixpoint.c.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgejsv.c.ll
@@ -34,7 +33,6 @@
 ; openblas/optimized/dlasd4.c.ll
 ; openblas/optimized/dlasd7.c.ll
 ; openblas/optimized/dstebz.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsterf.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll

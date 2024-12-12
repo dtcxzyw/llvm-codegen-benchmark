@@ -10,10 +10,3 @@ func0000000000000001:                   # @func0000000000000001
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	notl	%edx
-	testb	$12, %dl
-	setne	%al
-	andb	%dil, %sil
-	andb	%sil, %al
-	retq

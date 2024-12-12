@@ -1,26 +1,6 @@
 
-; 11 occurrences:
-; actix-rs/optimized/25i1pbjtywtogowt.ll
-; actix-rs/optimized/2dlb5n02zdx7v4l4.ll
-; ockam-rs/optimized/1j8f46ag92qmaepd.ll
-; ockam-rs/optimized/2jdafynperrjfnwp.ll
-; ockam-rs/optimized/37pfoqtlnttaeb5z.ll
-; ockam-rs/optimized/37q648fnmlksdgjw.ll
-; ockam-rs/optimized/4h15go5rbmdr09f8.ll
-; ockam-rs/optimized/scbbgml6cvr1nwt.ll
-; ockam-rs/optimized/y59h8jnu9k73im6.ll
-; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
-; wasmtime-rs/optimized/v5prf101dn49s3v.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
-entry:
-  %2 = trunc nuw i16 %1 to i1
-  %3 = select i1 %2, i64 28, i64 6
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 52 occurrences:
+; 53 occurrences:
+; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/VirtualFileSystem.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -74,11 +54,30 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i1
   %3 = select i1 %2, i64 4, i64 5
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 9 occurrences:
+; ockam-rs/optimized/1j8f46ag92qmaepd.ll
+; ockam-rs/optimized/2jdafynperrjfnwp.ll
+; ockam-rs/optimized/37pfoqtlnttaeb5z.ll
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
+; ockam-rs/optimized/4h15go5rbmdr09f8.ll
+; ockam-rs/optimized/scbbgml6cvr1nwt.ll
+; ockam-rs/optimized/y59h8jnu9k73im6.ll
+; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
+; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i16 %1) #0 {
+entry:
+  %2 = trunc nuw i16 %1 to i1
+  %3 = select i1 %2, i64 28, i64 6
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

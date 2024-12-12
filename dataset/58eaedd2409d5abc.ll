@@ -3,7 +3,7 @@
 ; freetype/optimized/ftlzw.c.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1) #0 {
 entry:
   %.neg = or i32 %1, -512
   %2 = add i32 %.neg, %0
@@ -22,7 +22,7 @@ entry:
 ; faiss/optimized/hamming.cpp.ll
 ; faiss/optimized/index_read.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1) #0 {
 entry:
   %.neg = or i32 %1, -8
   %2 = add i32 %.neg, %0

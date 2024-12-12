@@ -5,7 +5,7 @@
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0) #0 {
+define i1 @func0000000000000106(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32

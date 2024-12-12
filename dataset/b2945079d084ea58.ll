@@ -7,7 +7,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl i32 16777216, %2
   %4 = ashr exact i32 %3, 24
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

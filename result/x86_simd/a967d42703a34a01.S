@@ -1,11 +1,11 @@
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	vpmovqd	%ymm2, %xmm2
 	vpxor	%xmm1, %xmm0, %xmm0
 	vpcmpeqd	%xmm2, %xmm0, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpmovqd	%ymm2, %xmm2
 	vpxor	%xmm1, %xmm0, %xmm0
 	vpcmpeqd	%xmm2, %xmm0, %xmm0

@@ -1,9 +1,10 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/Driver.cpp.ll
+; lvgl/optimized/lv_obj.ll
 ; ruby/optimized/range.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000003181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i64 %1, 0
@@ -37,7 +38,7 @@ entry:
 ; spike/optimized/s_mulAddF128.ll
 ; velox/optimized/MemoryPool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000318c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i64 %1, 0
@@ -50,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000aaa(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000294a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
   %4 = icmp sgt i64 %1, 0
@@ -82,7 +83,7 @@ entry:
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000421(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq i64 %1, 0
@@ -92,22 +93,20 @@ entry:
   ret i1 %7
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; cmake/optimized/urlapi.c.ll
-; curl/optimized/libcurl_la-cleartext.ll
 ; curl/optimized/libcurl_la-urlapi.ll
 ; git/optimized/archive-zip.ll
 ; git/optimized/pretty.ll
 ; linux/optimized/dm-ioctl.ll
 ; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
-; php/optimized/fopen_wrappers.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000888(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000002108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 4611686018427387903
-  %4 = icmp ugt i64 %1, 4611686018427387903
+  %3 = icmp ugt i64 %2, 255
+  %4 = icmp ugt i64 %1, 255
   %5 = select i1 %4, i1 true, i1 %3
-  %6 = icmp ugt i64 %0, 9223372036854775805
+  %6 = icmp ugt i64 %0, 255
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
@@ -116,7 +115,7 @@ entry:
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/p256-64.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000aa6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000002946(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, -1
   %4 = icmp sgt i64 %1, -1
@@ -133,7 +132,7 @@ entry:
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000666(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000018c6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = icmp slt i64 %1, 0
@@ -146,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/uncore_discovery.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000441(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2
   %4 = icmp ult i64 %1, 2
@@ -159,7 +158,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a66(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000028c6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 32767
   %4 = icmp slt i64 %1, -32768
@@ -172,7 +171,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000066a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000018ca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, -16777216
   %4 = icmp slt i64 %1, -16777216
@@ -185,7 +184,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/ast_opt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000428(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = icmp eq i64 %1, -1
@@ -198,7 +197,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_codecs_kr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c4c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000308c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ult i64 %1, -20

@@ -1,12 +1,11 @@
 
-; 48 occurrences:
+; 46 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; hdf5/optimized/H5B2hdr.c.ll
 ; hdf5/optimized/H5B2int.c.ll
-; jq/optimized/unicode_fold3_key.ll
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; libwebp/optimized/extras.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
@@ -22,7 +21,6 @@
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; oniguruma/optimized/unicode_fold3_key.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/brightedges.cpp.ll

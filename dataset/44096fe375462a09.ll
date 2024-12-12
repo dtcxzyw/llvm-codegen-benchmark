@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -12,7 +13,7 @@ entry:
   ret i64 %7
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/cecPat.c.ll
@@ -21,6 +22,7 @@ entry:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaFront.c.ll
 ; abc/optimized/giaPat.c.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openspiel/optimized/chess.cc.ll
 ; openspiel/optimized/chess_common.cc.ll
 ; Function Attrs: nounwind

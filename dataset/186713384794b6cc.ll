@@ -1,9 +1,11 @@
 
-; 145 occurrences:
+; 144 occurrences:
 ; assimp/optimized/FBXExporter.cpp.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/fast_newton.cpp.ll
 ; casadi/optimized/linsol_qr.cpp.ll
@@ -21,7 +23,6 @@
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
 ; gromacs/optimized/colvartypes.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
@@ -45,7 +46,6 @@
 ; msdfgen/optimized/edge-selectors.cpp.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll
 ; openblas/optimized/dhgeqz.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; opencv/optimized/bgfg_subcnt.cpp.ll
 ; opencv/optimized/canny.cpp.ll
@@ -79,7 +79,6 @@
 ; openjdk/optimized/g1Analytics.ll
 ; openjdk/optimized/g1IHOPControl.ll
 ; openjdk/optimized/g1Policy.ll
-; openspiel/optimized/state_distribution.cc.ll
 ; openusd/optimized/bakeSkinning.cpp.ll
 ; openusd/optimized/bbox3d.cpp.ll
 ; openusd/optimized/capsuleAdapter.cpp.ll
@@ -149,7 +148,7 @@
 define double @func0000000000000000(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 1.000000e+00
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

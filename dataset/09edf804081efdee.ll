@@ -1,10 +1,12 @@
 
 ; 507 occurrences:
 ; abc/optimized/cuddEssent.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ioReadPla.c.ll
 ; abc/optimized/ioReadPlaMo.c.ll
 ; abc/optimized/plaCom.c.ll
 ; abc/optimized/plaWrite.c.ll
+; abc/optimized/rsbDec6.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -13,6 +15,8 @@
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compound_dictionary.c.ll
@@ -111,9 +115,6 @@
 ; linux/optimized/core.ll
 ; linux/optimized/fault.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_syncmap.ll
 ; linux/optimized/init_64.ll
@@ -127,7 +128,6 @@
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/pgtable.ll
 ; linux/optimized/poll.ll

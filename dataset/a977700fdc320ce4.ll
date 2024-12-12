@@ -3,10 +3,10 @@
 ; luau/optimized/lbitlib.cpp.ll
 ; minetest/optimized/ieee_float.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp ult i32 %0, -156
+  %4 = icmp samesign ult i32 %0, -156
   %5 = select i1 %4, i32 0, i32 %3
   ret i32 %5
 }
@@ -28,7 +28,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp eq i32 %0, 31
+  %4 = icmp eq i32 %0, 0
   %5 = select i1 %4, i32 0, i32 %3
   ret i32 %5
 }

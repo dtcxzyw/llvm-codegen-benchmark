@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	leaq	16(%rdi), %rcx
 	xorl	%eax, %eax
 	testl	$1024, %esi                     # imm = 0x400

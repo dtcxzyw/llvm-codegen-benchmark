@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.zero	16,63
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %xmm0
 	retq
@@ -31,11 +31,4 @@ func000000000000000c:                   # @func000000000000000c
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqb	%xmm1, %xmm0, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
-	retq
-.LCPI6_0:
-	.zero	16,3
-func0000000000000038:                   # @func0000000000000038
-	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
-	vpcmpnleub	.LCPI6_0(%rip), %xmm0, %k0
-	vpmovm2b	%k0, %xmm0
 	retq

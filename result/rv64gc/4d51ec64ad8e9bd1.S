@@ -1,12 +1,8 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	andi	a1, a1, 255
-	beqz	a1, .LBB0_2
-	li	a1, 4
+	addi	a1, a1, -3
+	seqz	a1, a1
+	slli	a1, a1, 3
 	add	a0, a0, a1
-	addi	a0, a0, 556
-	ret
-.LBB0_2:
-	li	a1, 12
-	add	a0, a0, a1
-	addi	a0, a0, 556
+	addi	a0, a0, 104
 	ret

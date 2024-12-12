@@ -1,7 +1,9 @@
 
-; 9 occurrences:
+; 14 occurrences:
 ; libquic/optimized/strike_register.cc.ll
 ; linux/optimized/hsu.ll
+; linux/optimized/libahci.ll
+; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/DeclObjC.cpp.ll
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
@@ -9,6 +11,9 @@
 ; openjdk/optimized/Ushort4444Argb.ll
 ; openjdk/optimized/Ushort565Rgb.ll
 ; openusd/optimized/grain_synthesis.c.ll
+; qemu/optimized/hw_dma_sifive_pdma.c.ll
+; qemu/optimized/hw_usb_hcd-uhci.c.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:

@@ -6,7 +6,7 @@
 ; openjdk/optimized/hb-face.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw i32 %3, %0
@@ -22,7 +22,7 @@ entry:
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %3, %0
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nsw i32 %3, %0

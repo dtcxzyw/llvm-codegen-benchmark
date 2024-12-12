@@ -11,9 +11,8 @@ entry:
   ret i32 %1
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; arrow/optimized/UriCommon.c.ll
-; libquic/optimized/cmp.c.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CallGraphSCCPass.cpp.ll
 ; openjdk/optimized/classListParser.ll

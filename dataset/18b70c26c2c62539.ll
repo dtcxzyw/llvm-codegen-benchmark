@@ -1,5 +1,8 @@
 
-; 22 occurrences:
+; 25 occurrences:
+; casadi/optimized/dm_instantiator.cpp.ll
+; casadi/optimized/im_instantiator.cpp.ll
+; casadi/optimized/sx_instantiator.cpp.ll
 ; git/optimized/fetch.ll
 ; gromacs/optimized/gmx_omp_nthreads.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll

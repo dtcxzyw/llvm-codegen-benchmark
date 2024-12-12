@@ -1,7 +1,7 @@
 func0000000000000040:                   # @func0000000000000040
 	vpcmpltud	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
@@ -9,12 +9,12 @@ func0000000000000040:                   # @func0000000000000040
 	.long	4294967280                      # 0xfffffff0
 func0000000000000061:                   # @func0000000000000061
 	vpcmpgtd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 func0000000000000010:                   # @func0000000000000010
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq

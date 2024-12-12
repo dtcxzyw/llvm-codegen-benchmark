@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/extraUtilSupp.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -7,7 +7,6 @@
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; libevent/optimized/bufferevent_ssl.c.ll
 ; linux/optimized/exec.ll
-; linux/optimized/uid16.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/Flang.cpp.ll
 ; llvm/optimized/InitPreprocessor.cpp.ll

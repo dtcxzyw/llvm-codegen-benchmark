@@ -8,6 +8,11 @@ func0000000000000001:                   # @func0000000000000001
 	setne	%al
 	orb	%dil, %al
 	retq
+func000000000000000c:                   # @func000000000000000c
+	testb	%sil, %sil
+	sete	%al
+	orb	%dil, %al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	testb	%sil, %sil
 	sets	%al

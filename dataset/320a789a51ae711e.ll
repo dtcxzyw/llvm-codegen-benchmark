@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/cuddCache.c.ll
+; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; openjdk/optimized/elfFile.ll
@@ -9,7 +10,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -32,7 +33,7 @@ define i32 @func0000000000000010(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -43,7 +44,7 @@ define i32 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -54,7 +55,7 @@ define i32 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

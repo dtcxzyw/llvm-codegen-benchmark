@@ -13,20 +13,3 @@ func0000000000000006:                   # @func0000000000000006
 	sub	a0, a0, a1
 	bexti	a0, a0, 35
 	ret
-func0000000000000008:                   # @func0000000000000008
-	sub	a0, a0, a1
-	li	a1, 1
-	srli	a0, a0, 3
-	slli	a1, a1, 35
-	slli.uw	a0, a0, 3
-	addi	a1, a1, -8
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-func000000000000000a:                   # @func000000000000000a
-	sub	a0, a0, a1
-	slli	a0, a0, 30
-	srai	a0, a0, 30
-	slti	a0, a0, 4
-	xori	a0, a0, 1
-	ret

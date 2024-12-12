@@ -29,7 +29,7 @@ entry:
   ret i32 %4
 }
 
-; 74 occurrences:
+; 75 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -100,6 +100,7 @@ entry:
 ; gromacs/optimized/pairlist.cpp.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
+; lvgl/optimized/lv_canvas.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/warped_motion.c.ll

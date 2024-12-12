@@ -19,7 +19,7 @@
 ; velox/optimized/StringFunctions.cpp.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp eq i8 %1, 0
@@ -31,12 +31,12 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/netmon.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp eq i8 %1, 2
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -44,24 +44,24 @@ entry:
 ; icu/optimized/ucnv_lmb.ll
 ; linux/optimized/apic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000202(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 14
   %4 = icmp eq i8 %1, 2
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/processor_perflib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 10
   %4 = icmp eq i8 %1, 16
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

@@ -8,7 +8,6 @@
 ; hdf5/optimized/H5Oint.c.ll
 ; hdf5/optimized/H5Omessage.c.ll
 ; hdf5/optimized/H5Otest.c.ll
-; linux/optimized/hwesleep.ll
 ; linux/optimized/ip_input.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -19,6 +18,7 @@
 ; luau/optimized/EmitInstructionX64.cpp.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
+; postgres/optimized/nodeAgg.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

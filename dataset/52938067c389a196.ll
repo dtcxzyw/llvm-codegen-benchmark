@@ -1,5 +1,6 @@
 
-; 18 occurrences:
+; 17 occurrences:
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -13,8 +14,6 @@
 ; qemu/optimized/fpu_softfloat.c.ll
 ; ruby/optimized/string.ll
 ; spike/optimized/f128_to_ui64.ll
-; spike/optimized/f16_to_ui64.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; spike/optimized/f32_to_ui64.ll
 ; spike/optimized/f32_to_ui64_r_minMag.ll
 ; spike/optimized/f64_to_ui64_r_minMag.ll

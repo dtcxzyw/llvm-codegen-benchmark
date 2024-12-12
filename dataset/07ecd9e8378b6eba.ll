@@ -12,7 +12,7 @@ entry:
   %4 = shl nuw i64 %3, 32
   %5 = zext i32 %1 to i64
   %6 = or disjoint i64 %4, %5
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 

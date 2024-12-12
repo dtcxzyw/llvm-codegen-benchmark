@@ -7,6 +7,7 @@
 ; abc/optimized/giaGig.c.ll
 ; abc/optimized/giaResub6.c.ll
 ; abc/optimized/ifDsd.c.ll
+; abc/optimized/utilNam.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; cpython/optimized/compile.ll
 ; cpython/optimized/formatter_unicode.ll
@@ -20,7 +21,6 @@
 ; linux/optimized/mlock.ll
 ; linux/optimized/netlabel.ll
 ; llvm/optimized/APFloat.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll

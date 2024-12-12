@@ -55,10 +55,10 @@ func0000000000000000:                   # @func0000000000000000
 	vpord	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI5_0:
-	.long	32768                           # 0x8000
+	.long	4096                            # 0x1000
 func0000000000000006:                   # @func0000000000000006
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpslld	$10, %ymm0, %ymm0
+	vpslld	$9, %ymm0, %ymm0
 	vpord	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

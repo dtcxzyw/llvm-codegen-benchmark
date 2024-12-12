@@ -11,10 +11,9 @@ entry:
   ret float %6
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; gromacs/optimized/gmx_densmap.cpp.ll
 ; gromacs/optimized/gmx_tcaf.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; ncnn/optimized/psroipooling.cpp.ll
 ; ncnn/optimized/roialign.cpp.ll
 ; ncnn/optimized/roialign_x86.cpp.ll

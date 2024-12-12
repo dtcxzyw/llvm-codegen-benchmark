@@ -8,7 +8,7 @@
 define i64 @func0000000000000020(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul i64 %3, -4417276706812531889
   ret i64 %4
 }
@@ -26,7 +26,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul i64 %3, 6364136223846793005
   ret i64 %4
 }
@@ -52,8 +52,30 @@ entry:
 define i64 @func000000000000002a(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = mul nuw i64 %3, 10
+  ret i64 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i128 %1 to i64
+  %3 = add nuw nsw i64 %0, %2
+  %4 = mul nuw nsw i64 %3, 1441151881
+  ret i64 %4
+}
+
+; 1 occurrences:
+; libquic/optimized/p224-64.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i128 %1 to i64
+  %3 = add i64 %0, %2
+  %4 = mul i64 %3, 3
   ret i64 %4
 }
 

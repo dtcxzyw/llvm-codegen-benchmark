@@ -1,5 +1,5 @@
 
-; 164 occurrences:
+; 163 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/acecBo.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaEra2.c.ll
@@ -19,6 +20,7 @@
 ; abc/optimized/simSymSim.c.ll
 ; abc/optimized/simUtils.c.ll
 ; abc/optimized/superAnd.c.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/select.c.ll
@@ -37,7 +39,6 @@
 ; folly/optimized/Unicode.cpp.ll
 ; git/optimized/date.ll
 ; git/optimized/merge-ort.ll
-; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/limex_native.c.ll
 ; hyperscan/optimized/match.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -108,14 +109,12 @@
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
 ; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
-; openssl/optimized/algorithmid_test-bin-algorithmid_test.ll
 ; openssl/optimized/libcrypto-lib-bn_gcd.ll
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
 ; openssl/optimized/libcrypto-shlib-bn_gcd.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
 ; openssl/optimized/ssl_test-bin-ssl_test.ll
 ; openssl/optimized/sslapitest-bin-tls-provider.ll
-; openssl/optimized/test_test-bin-test_test.ll
 ; openusd/optimized/mvref_common.c.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
@@ -168,7 +167,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

@@ -28,6 +28,17 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i1 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nsw i64 %1 to i32
+  %3 = sub nsw i32 0, %2
+  %4 = select i1 %0, i32 %3, i32 %2
+  ret i32 %4
+}
+
 ; 9 occurrences:
 ; gromacs/optimized/dstebz.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll

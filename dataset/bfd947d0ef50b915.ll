@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; clamav/optimized/extract.cpp.ll
 ; cmake/optimized/parsedate.c.ll
@@ -36,6 +36,7 @@
 ; yosys/optimized/ast.ll
 ; z3/optimized/smt_setup.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
@@ -45,7 +46,8 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; clamav/optimized/extract.cpp.ll
 ; flac/optimized/stream_encoder.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -106,25 +108,22 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; cvc5/optimized/sygus_extension.cpp.ll
-; gromacs/optimized/expfit.cpp.ll
-; llvm/optimized/VectorCombine.cpp.ll
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 18
+  %2 = icmp ult i32 %1, 3
   %3 = xor i1 %0, true
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; icu/optimized/locid.ll
 ; postgres/optimized/postmaster.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:

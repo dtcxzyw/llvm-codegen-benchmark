@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,30 +16,10 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI0_2:
-	.long	524288                          # 0x80000
-.LCPI0_3:
-	.zero	4,192
-func000000000000001c:                   # @func000000000000001c
-	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
-	vpcmpeqb	.LCPI0_1(%rip), %xmm1, %k1
-	vptestmd	.LCPI0_2(%rip){1to8}, %ymm0, %k0 {%k1}
+	.long	32                              # 0x20
+func000000000000002c:                   # @func000000000000002c
+	vptestnmb	.LCPI0_0(%rip), %xmm1, %k1
+	vptestmd	.LCPI0_1(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -64,7 +44,7 @@ func000000000000001c:                   # @func000000000000001c
 	.long	127                             # 0x7f
 .LCPI1_2:
 	.long	40                              # 0x28
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vptestmb	.LCPI1_0(%rip), %xmm1, %k1
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	vpcmpneqd	.LCPI1_2(%rip){1to8}, %ymm0, %k0 {%k1}
@@ -111,7 +91,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	.long	8                               # 0x8
 .LCPI2_4:
 	.zero	4,252
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI2_4(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqb	.LCPI2_1(%rip), %xmm1, %k1
 	vpandd	.LCPI2_2(%rip){1to8}, %ymm0, %ymm0

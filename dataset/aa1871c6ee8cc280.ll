@@ -9,7 +9,7 @@
 ; rocksdb/optimized/file_indexer.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004aa(i32 %0, i64 %1) #0 {
+define i1 @func000000000000114a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -23,7 +23,7 @@ entry:
 ; ceres/optimized/cuda_block_structure.cc.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i64 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -37,7 +37,7 @@ entry:
 ; nori/optimized/main.cpp.ll
 ; opencv/optimized/omni_stereo_calibration.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002aa(i32 %0, i64 %1) #0 {
+define i1 @func000000000000094a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

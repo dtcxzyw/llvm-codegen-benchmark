@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 45 occurrences:
 ; clamav/optimized/regex_pcre.c.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/2n0ez5zuwgs53clg.ll
@@ -38,52 +38,59 @@
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; wasmtime-rs/optimized/456j0x8j3xyjpk7h.ll
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/7aq90jycr3x842qyrhjbel971.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 7
   %3 = select i1 %2, i64 %1, i64 4
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ab(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014b(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
   %3 = select i1 %2, i64 %1, i64 9223372036854775807
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
   %3 = select i1 %2, i64 %1, i64 9223372036854775807
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; php/optimized/streams.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
   %.not = icmp eq i64 %1, -1
   %2 = select i1 %.not, i64 0, i64 %1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; php/optimized/streams.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %.not = icmp ne i64 %1, -1
   %2 = icmp ugt i64 %1, %0
@@ -95,11 +102,11 @@ entry:
 ; openexr/optimized/chunk.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 0
   %3 = select i1 %2, i64 %1, i64 -1
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -107,11 +114,11 @@ entry:
 ; openexr/optimized/chunk.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 0
   %3 = select i1 %2, i64 %1, i64 2147483647
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 

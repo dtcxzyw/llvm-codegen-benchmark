@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	orl	%edi, %eax
 	retq
 func0000000000000009:                   # @func0000000000000009
-	cmpb	$8, %dl
+	cmpb	$5, %dl
 	movl	$3, %eax
 	cmovbl	%esi, %eax
 	orl	%edi, %eax

@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 144 occurrences:
 ; c3c/optimized/parse_expr.c.ll
 ; c3c/optimized/parse_global.c.ll
 ; c3c/optimized/parse_stmt.c.ll
@@ -46,6 +46,7 @@
 ; llvm/optimized/Replacement.cpp.ll
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
 ; llvm/optimized/ValueSymbolTable.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
@@ -61,7 +62,6 @@
 ; ockam-rs/optimized/1wrronmd8fr7c13v.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; ockam-rs/optimized/46b94rjbunmwfae6.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dlasyf.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
@@ -69,7 +69,6 @@
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dspcon.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsptri.c.ll
 ; opencv/optimized/convexhull.cpp.ll
@@ -108,6 +107,41 @@
 ; wireshark/optimized/syntax_line_edit.cpp.ll
 ; yosys/optimized/equiv_simple.ll
 ; yosys/optimized/lz4.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4i7kbhd18au0o53jm2t49fldp.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/7diapbiz116z58qz43ov3nwc9.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/a1202jdosca6jpmc3o2s7syhq.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
@@ -148,10 +182,12 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; git/optimized/date.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
@@ -196,12 +232,13 @@ entry:
   ret i32 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/giaSatLut.c.ll
 ; icu/optimized/dictbe.ll
 ; libquic/optimized/a_strex.c.ll
 ; libquic/optimized/mul.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -240,11 +277,11 @@ define i32 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nsw i32 %1, %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; assimp/optimized/zip.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; hermes/optimized/zip.c.ll
@@ -252,7 +289,6 @@ entry:
 ; linux/optimized/af_inet.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; ncnn/optimized/padding.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
@@ -282,7 +318,7 @@ entry:
 ; 8 occurrences:
 ; icu/optimized/dictbe.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; proxygen/optimized/Logging.cpp.ll
@@ -293,7 +329,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %1, %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -319,7 +355,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nuw i32 %1, %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -335,7 +371,7 @@ define i32 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub i32 %1, %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -358,7 +394,7 @@ define i32 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -369,7 +405,7 @@ define i32 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -380,7 +416,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = sub i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

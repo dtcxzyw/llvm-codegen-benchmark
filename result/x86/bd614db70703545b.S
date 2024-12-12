@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	imulq	%rcx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000019:                   # @func0000000000000019
 	movl	%edx, %eax
 	imulq	$56, %rax, %rcx
 	addq	%rsi, %rcx
@@ -16,7 +16,7 @@ func0000000000000011:                   # @func0000000000000011
 	movabsq	$7905747460161236407, %rax      # imm = 0x6DB6DB6DB6DB6DB7
 	imulq	%rcx, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000039:                   # @func0000000000000039
 	movl	%edx, %eax
 	leaq	(%rax,%rax,2), %rcx
 	shlq	$4, %rcx
@@ -35,7 +35,7 @@ func0000000000000021:                   # @func0000000000000021
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	imulq	%rcx, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000018:                   # @func0000000000000018
 	movl	%edx, %ecx
 	addq	%rsi, %rcx
 	subq	%rdi, %rcx

@@ -17,7 +17,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = icmp eq ptr %0, null
   %5 = xor i64 %3, -1
-  %6 = add i64 %5, %1
+  %6 = add i64 %1, %5
   %7 = select i1 %4, i64 -1, i64 %6
   ret i64 %7
 }

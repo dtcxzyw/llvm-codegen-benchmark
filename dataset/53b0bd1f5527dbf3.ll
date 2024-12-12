@@ -14,8 +14,8 @@ define i32 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = mul i32 %4, %1
-  %6 = mul i32 %5, %0
+  %5 = mul i32 %1, %4
+  %6 = mul i32 %0, %5
   ret i32 %6
 }
 
@@ -28,7 +28,7 @@ define i32 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = mul nsw i32 %4, %1
+  %5 = mul nsw i32 %1, %4
   %6 = mul i32 %5, %0
   ret i32 %6
 }
@@ -52,7 +52,7 @@ define i32 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = mul nsw i32 %4, %1
+  %5 = mul nsw i32 %1, %4
   %6 = mul nsw i32 %5, %0
   ret i32 %6
 }

@@ -6,9 +6,9 @@
 ; luau/optimized/TypeInfer.cpp.ll
 ; quantlib/optimized/liborforwardmodel.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000030(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = and i64 %5, 9223372036854775800
@@ -16,17 +16,18 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; freetype/optimized/type1.c.ll
 ; freetype/optimized/type42.c.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000033(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = and i64 %5, 4294967295
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

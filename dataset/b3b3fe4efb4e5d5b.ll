@@ -1,5 +1,5 @@
 
-; 122 occurrences:
+; 123 occurrences:
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3GpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -122,11 +122,12 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:
   %1 = fmul float %0, %0
-  %2 = fmul float %1, %0
+  %2 = fmul float %0, %1
   ret float %2
 }
 

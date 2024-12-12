@@ -2,7 +2,7 @@
 	.quad	24                              # 0x18
 .LCPI0_1:
 	.quad	53                              # 0x35
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [24,24,24,24]
@@ -18,7 +18,7 @@ func0000000000000081:                   # @func0000000000000081
 	.quad	24                              # 0x18
 .LCPI1_1:
 	.quad	53                              # 0x35
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2   # ymm2 = [24,24,24,24]

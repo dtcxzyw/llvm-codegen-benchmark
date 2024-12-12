@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -13,6 +13,7 @@
 ; imgui/optimized/imgui.cpp.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libquic/optimized/time_posix.cc.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
@@ -30,19 +31,18 @@
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = mul nsw i64 %3, 1000000000
   ret i64 %4
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; abc/optimized/reoSwap.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
 ; gromacs/optimized/update.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; openjdk/optimized/jfrStackTrace.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/dataSourceAttribute.cpp.ll
@@ -59,12 +59,11 @@ entry:
 ; openusd/optimized/testVtCpp.cpp.ll
 ; openusd/optimized/unitTestDelegate.cpp.ll
 ; wireshark/optimized/io_graph_item.c.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul i64 %3, 31
   ret i64 %4
 }
@@ -87,8 +86,24 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = mul i64 %3, 36
+  ret i64 %4
+}
+
+; 6 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; gromacs/optimized/kernel_ref.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = add nuw nsw i64 %0, %2
+  %4 = mul nsw i64 %3, 1000000
   ret i64 %4
 }
 
@@ -99,7 +114,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = mul nuw nsw i64 %3, 3
   ret i64 %4
 }
@@ -112,19 +127,8 @@ entry:
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul i64 %3, 12
-  ret i64 %4
-}
-
-; 1 occurrences:
-; gromacs/optimized/kernel_ref.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = mul nsw i64 %3, 3
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 63 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -50,7 +50,6 @@
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; proj/optimized/conversion.cpp.ll
 ; proj/optimized/ell_set.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/nicol.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/continuousarithmeticasianvecerengine.ll

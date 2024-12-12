@@ -3,11 +3,17 @@ func0000000000000006:                   # @func0000000000000006
 	andl	%esi, %edi
 	movzbl	%dil, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movzbl	%sil, %ecx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovel	%ecx, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movzbl	%sil, %ecx
+	cmpl	$72, %edi
+	movl	$7, %eax
+	cmovbl	%ecx, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movzbl	%sil, %ecx

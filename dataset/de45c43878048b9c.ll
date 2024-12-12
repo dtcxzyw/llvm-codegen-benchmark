@@ -233,12 +233,37 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sub nsw i32 1, %1
   %4 = select i1 %0, i32 %3, i32 %2
   %5 = icmp sgt i32 %4, 99
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a8(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -3
+  %3 = sub nsw i32 3, %1
+  %4 = select i1 %0, i32 %3, i32 %2
+  %5 = icmp ugt i32 %4, 9999
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b8(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -3
+  %3 = sub nsw i32 3, %1
+  %4 = select i1 %0, i32 %3, i32 %2
+  %5 = icmp samesign ugt i32 %4, 99
   ret i1 %5
 }
 
@@ -259,7 +284,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sub nsw i32 1, %1
@@ -269,21 +294,9 @@ entry:
 }
 
 ; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -1
-  %3 = sub nsw i32 1, %1
-  %4 = select i1 %0, i32 %3, i32 %2
-  %5 = icmp ugt i32 %4, 99
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000c4(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1082130432
   %3 = sub nuw i32 -1082130432, %1
@@ -295,7 +308,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1082130432
   %3 = sub nuw i32 -1082130432, %1

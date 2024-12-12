@@ -1,5 +1,5 @@
 
-; 149 occurrences:
+; 143 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifMan.c.ll
@@ -31,15 +31,12 @@
 ; linux/optimized/dnotify.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_dpll_mgr.ll
@@ -47,7 +44,6 @@
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/iosf_mbi.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/mii.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/xhci-ring.ll
@@ -71,6 +67,7 @@
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -86,9 +83,7 @@
 ; meshlab/optimized/ssao.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
@@ -114,7 +109,6 @@
 ; postgres/optimized/utf8_and_gb18030.ll
 ; protobuf/optimized/tokenizer.cc.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
@@ -158,7 +152,7 @@ entry:
   ret i32 %5
 }
 
-; 82 occurrences:
+; 78 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; git/optimized/path.ll
@@ -177,8 +171,6 @@ entry:
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/skl_scaler.ll
-; linux/optimized/tg3.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/xhci-hub.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
@@ -197,7 +189,6 @@ entry:
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/ui_cursor.c.ll
 ; qemu/optimized/util_cpuinfo-i386.c.ll
 ; recastnavigation/optimized/DebugDraw.cpp.ll
@@ -239,7 +230,6 @@ entry:
 ; taskflow/optimized/text_pipeline.cpp.ll
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
-; verilator/optimized/V3Task.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
@@ -250,42 +240,9 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
-; git/optimized/blame.ll
-; image-rs/optimized/fyek6fuqg0ocunt.ll
-; imgui/optimized/imgui.cpp.ll
-; linux/optimized/blktrace.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/intel_ddi.ll
-; linux/optimized/intel_display_irq.ll
-; linux/optimized/intel_sseu.ll
-; linux/optimized/ioctl.ll
-; linux/optimized/xhci-hub.ll
-; llvm/optimized/X86MachObjectWriter.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; luajit/optimized/lj_parse.ll
-; luajit/optimized/lj_parse_dyn.ll
-; minetest/optimized/player.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; postgres/optimized/utf8_and_gb18030.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; wasmedge/optimized/inode-linux.cpp.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = or i32 %3, %0
-  %5 = or i32 %4, 256
-  ret i32 %5
-}
-
-; 16 occurrences:
+; 14 occurrences:
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
@@ -294,7 +251,6 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
-; openjdk/optimized/gtk3_interface.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; php/optimized/zend_inference.ll
@@ -308,7 +264,7 @@ entry:
   ret i32 %5
 }
 
-; 59 occurrences:
+; 57 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -320,7 +276,6 @@ entry:
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_fbc.ll
 ; linux/optimized/iosf_mbi.ll
-; linux/optimized/mii.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/open.ll
 ; linux/optimized/rx.ll
@@ -349,7 +304,6 @@ entry:
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; meshlab/optimized/transferfunction.cpp.ll
@@ -377,8 +331,37 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
-; linux/optimized/early.ll
+; 20 occurrences:
+; git/optimized/blame.ll
+; image-rs/optimized/fyek6fuqg0ocunt.ll
+; imgui/optimized/imgui.cpp.ll
+; linux/optimized/blktrace.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/intel_ddi.ll
+; linux/optimized/intel_display_irq.ll
+; linux/optimized/intel_sseu.ll
+; linux/optimized/ioctl.ll
+; linux/optimized/xhci-hub.ll
+; llvm/optimized/X86MachObjectWriter.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; minetest/optimized/player.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; postgres/optimized/utf8_and_gb18030.ll
+; wasmedge/optimized/inode-linux.cpp.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = or i32 %3, %0
+  %5 = or i32 %4, 2
+  ret i32 %5
+}
+
+; 5 occurrences:
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/yenta_socket.ll
 ; luajit/optimized/lj_parse.ll
@@ -393,18 +376,16 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
-; libdeflate/optimized/deflate_decompress.c.ll
+; 3 occurrences:
 ; linux/optimized/devio.ll
 ; linux/optimized/yenta_socket.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
-; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = or disjoint i32 %3, %0
-  %5 = or i32 %4, 49152
+  %5 = or i32 %4, 1845756928
   ret i32 %5
 }
 
@@ -421,7 +402,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = or disjoint i32 %4, 2
   ret i32 %5
 }

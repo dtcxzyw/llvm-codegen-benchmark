@@ -16,7 +16,7 @@ define i32 @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fptosi double %4 to i32
   ret i32 %5
 }

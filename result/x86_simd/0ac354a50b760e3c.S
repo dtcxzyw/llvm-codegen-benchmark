@@ -24,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	100                             # 0x64
 .LCPI1_2:
 	.long	9                               # 0x9
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpshufd	$245, %ymm1, %ymm0              # ymm0 = ymm1[1,1,3,3,5,5,7,7]

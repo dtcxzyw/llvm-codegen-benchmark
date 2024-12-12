@@ -25,14 +25,3 @@ func0000000000000024:                   # @func0000000000000024
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
 	ret
-.LCPI3_0:
-	.quad	0x40c3880000000000              # double 1.0E+4
-func0000000000000044:                   # @func0000000000000044
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfgt.vf	v0, v16, fa5
-	vfmerge.vfm	v16, v16, fa5, v0
-	vmflt.vv	v0, v16, v8
-	vmerge.vvm	v8, v16, v8, v0
-	ret

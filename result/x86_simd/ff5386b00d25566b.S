@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	3                               # 0x3
-func0000000000000043:                   # @func0000000000000043
+func0000000000000143:                   # @func0000000000000143
 	vpcmpltud	.LCPI0_0(%rip){1to4}, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsrlq	$63, %ymm1, %ymm1

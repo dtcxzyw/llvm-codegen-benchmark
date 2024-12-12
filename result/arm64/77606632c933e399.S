@@ -1,28 +1,33 @@
-func0000000000000038:                   // @func0000000000000038
+func0000000000000058:                   // @func0000000000000058
 // %bb.0:                               // %entry
-	movi	v2.16b, #1
-	cmeq	v1.16b, v1.16b, v2.16b
-	cmeq	v0.16b, v0.16b, v2.16b
-	eor	v0.16b, v0.16b, v1.16b
-	bic	v0.16b, v2.16b, v0.16b
+	and	w8, w1, #0xff
+	and	w9, w0, #0xff
+	cmp	w8, #1
+	cset	w8, eq
+	cmp	w9, #1
+	cset	w9, ne
+	eor	w0, w9, w8
 	ret
                                         // -- End function
-func0000000000000198:                   // @func0000000000000198
+func0000000000000318:                   // @func0000000000000318
 // %bb.0:                               // %entry
-	movi	v2.16b, #26
-	cmeq	v1.16b, v1.16b, v2.16b
-	cmeq	v0.16b, v0.16b, v2.16b
-	movi	v2.16b, #1
-	eor	v0.16b, v1.16b, v0.16b
-	and	v0.16b, v0.16b, v2.16b
+	and	w8, w1, #0xff
+	and	w9, w0, #0xff
+	cmp	w8, #26
+	cset	w8, ne
+	cmp	w9, #26
+	cset	w9, ne
+	eor	w0, w9, w8
 	ret
                                         // -- End function
-func0000000000000022:                   // @func0000000000000022
+func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	movi	v2.16b, #1
-	cmeq	v1.16b, v1.16b, v2.16b
-	cmeq	v0.16b, v0.16b, v2.16b
-	eor	v0.16b, v0.16b, v1.16b
-	and	v0.16b, v0.16b, v2.16b
+	and	w8, w1, #0xff
+	and	w9, w0, #0xff
+	cmp	w8, #1
+	cset	w8, eq
+	cmp	w9, #1
+	cset	w9, eq
+	eor	w0, w9, w8
 	ret
                                         // -- End function

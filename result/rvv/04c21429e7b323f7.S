@@ -40,12 +40,6 @@ func0000000000000018:                   # @func0000000000000018
 	vmfeq.vv	v12, v8, v10
 	vmand.mm	v0, v12, v14
 	ret
-func000000000000004c:                   # @func000000000000004c
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsleu.vi	v14, v12, 6
-	vmfle.vv	v12, v10, v8
-	vmand.mm	v0, v12, v14
-	ret
 func00000000000000cd:                   # @func00000000000000cd
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v14, v12, 0

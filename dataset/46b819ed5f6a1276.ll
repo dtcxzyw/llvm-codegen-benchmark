@@ -1,5 +1,5 @@
 
-; 1504 occurrences:
+; 1517 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -47,12 +47,29 @@
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/Q3BSPFileParser.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
-; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/collate.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/search_path.ll
+; boost/optimized/test_stackstring.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/callback_internal.cpp.ll
 ; casadi/optimized/conic.cpp.ll
@@ -675,7 +692,6 @@
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -707,7 +723,6 @@
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -1190,7 +1205,6 @@
 ; pbrt-v4/optimized/samplers.cpp.ll
 ; pbrt-v4/optimized/stats.cpp.ll
 ; proj/optimized/grids.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/generated_enum_util.cc.ll
@@ -1494,7 +1508,6 @@
 ; yosys/optimized/viz.ll
 ; yosys/optimized/xaiger.ll
 ; yosys/optimized/yosys.ll
-; z3/optimized/cmd_context.cpp.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll

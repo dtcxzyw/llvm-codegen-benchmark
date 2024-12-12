@@ -10,12 +10,6 @@ func0000000000000011:                   # @func0000000000000011
 	decl	%edi
 	movslq	%edi, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	subq	%rsi, %rdi
-	shrq	$11, %rdi
-	decl	%edi
-	movslq	%edi, %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	subq	%rsi, %rdi
 	shrq	$4, %rdi

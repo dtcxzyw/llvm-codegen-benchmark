@@ -1,143 +1,77 @@
-func0000000000000146:                   // @func0000000000000146
+func0000000000000286:                   // @func0000000000000286
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmgt	v3.2d, v5.2d, v2.2d
-	cmgt	v4.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bit	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w8, w0, lt
 	ret
                                         // -- End function
-func0000000000000106:                   // @func0000000000000106
+func0000000000000206:                   // @func0000000000000206
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmgt	v3.2d, v5.2d, v2.2d
-	cmgt	v4.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bit	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w8, w0, lt
 	ret
                                         // -- End function
-func00000000000001b8:                   // @func00000000000001b8
+func0000000000000378:                   // @func0000000000000378
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmhi	v3.2d, v2.2d, v5.2d
-	cmhi	v4.2d, v1.2d, v4.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bit	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w8, w0, hi
 	ret
                                         // -- End function
-func0000000000000174:                   // @func0000000000000174
+func00000000000002e4:                   // @func00000000000002e4
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmhi	v3.2d, v5.2d, v2.2d
-	cmhi	v4.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bit	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w8, w0, lo
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmhi	v3.2d, v5.2d, v2.2d
-	cmhi	v4.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bit	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w8, w0, lo
 	ret
                                         // -- End function
-func0000000000000134:                   // @func0000000000000134
+func0000000000000264:                   // @func0000000000000264
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmhi	v3.2d, v5.2d, v2.2d
-	cmhi	v4.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bit	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w8, w0, lo
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmhi	v3.2d, v5.2d, v2.2d
-	cmhi	v4.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bit	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w8, w0, lo
 	ret
                                         // -- End function
-func0000000000000046:                   // @func0000000000000046
+func0000000000000086:                   // @func0000000000000086
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmgt	v3.2d, v5.2d, v2.2d
-	cmgt	v4.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bit	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w8, w0, lt
 	ret
                                         // -- End function
-func0000000000000104:                   // @func0000000000000104
+func0000000000000204:                   // @func0000000000000204
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmhi	v3.2d, v5.2d, v2.2d
-	cmhi	v4.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bit	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w8, w0, lo
 	ret
                                         // -- End function
-func0000000000000056:                   // @func0000000000000056
+func00000000000000a6:                   // @func00000000000000a6
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmgt	v3.2d, v5.2d, v2.2d
-	cmgt	v4.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bit	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w8, w0, lt
 	ret
                                         // -- End function
-func00000000000000a4:                   // @func00000000000000a4
+func0000000000000144:                   // @func0000000000000144
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmhi	v3.2d, v5.2d, v2.2d
-	cmhi	v4.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bit	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w8, w0, lo
 	ret
                                         // -- End function

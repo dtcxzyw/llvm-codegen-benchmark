@@ -8,12 +8,12 @@
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000234(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000474(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 11
+  %5 = add nuw nsw i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 11
   ret i1 %6
 }
 
@@ -28,11 +28,11 @@ entry:
 ; opencv/optimized/tracking_online_mil.cpp.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -41,24 +41,24 @@ entry:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000178(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 1
+  %5 = add nuw nsw i64 %0, %4
+  %6 = icmp samesign ugt i64 %5, 1
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000174(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 2
+  %5 = add nuw nsw i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 2
   ret i1 %6
 }
 
@@ -67,11 +67,11 @@ entry:
 ; abseil-cpp/optimized/pool_urbg_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp ugt i64 %5, 1
   ret i1 %6
 }

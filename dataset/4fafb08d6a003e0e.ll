@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; slurm/optimized/gres_filter.ll

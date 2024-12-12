@@ -8,7 +8,7 @@ entry:
   %2 = and i8 %1, 127
   %narrow = add nuw i8 %2, 2
   %3 = zext i8 %narrow to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = and i8 %1, 15
   %narrow = add nuw nsw i8 %2, 4
   %3 = zext nneg i8 %narrow to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

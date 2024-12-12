@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/mpmPre.c.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/p4.ll
 ; mold/optimized/arch-arm32.cc.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:

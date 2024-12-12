@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 59 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/CSMLoader.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
@@ -9,8 +9,6 @@
 ; freetype/optimized/truetype.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
-; gromacs/optimized/dlarnv.cpp.ll
-; gromacs/optimized/slarnv.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/ialloc.ll
@@ -71,6 +69,7 @@ entry:
 
 ; 29 occurrences:
 ; abc/optimized/abcGen.c.ll
+; boost/optimized/buffer_piece_border.ll
 ; darktable/optimized/timeline.c.ll
 ; faiss/optimized/HNSW.cpp.ll
 ; g2o/optimized/csparse_wrapper.cpp.ll
@@ -79,7 +78,6 @@ entry:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libjpeg-turbo/optimized/jcmaster.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
-; linux/optimized/input-mt.ll
 ; ncnn/optimized/statisticspooling.cpp.ll
 ; opencv/optimized/orb.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
@@ -107,7 +105,7 @@ entry:
   ret i32 %3
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; gromacs/optimized/resourcedivision.cpp.ll
@@ -122,10 +120,11 @@ entry:
 ; linux/optimized/inet_hashtables.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_vdsc.ll
-; linux/optimized/isadma.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/X86ATTInstPrinter.cpp.ll
 ; llvm/optimized/X86IntelInstPrinter.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll

@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifSat.c.ll
-; abc/optimized/lpkMux.c.ll
 ; linux/optimized/cgroup.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; php/optimized/zend_jit.ll
@@ -11,7 +10,7 @@
 ; wireshark/optimized/packet-zbee-tlv.c.ll
 ; wireshark/optimized/packet-zbee-zdp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1022
   %3 = shl nuw i32 1, %0
@@ -24,13 +23,13 @@ entry:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
+; cpython/optimized/io.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; soc-simulator/optimized/sim_mycpu.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-zbee-tlv.c.ll
 ; wireshark/optimized/packet-zbee-zdp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = and i32 %0, 65535

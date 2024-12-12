@@ -42,13 +42,7 @@ entry:
   ret i64 %6
 }
 
-; 25 occurrences:
-; clamav/optimized/autoit.c.ll
-; clamav/optimized/nulsft.c.ll
-; clamav/optimized/special.c.ll
-; clamav/optimized/unzip.c.ll
-; git/optimized/dir.ll
-; lz4/optimized/lz4hc.c.ll
+; 16 occurrences:
 ; openjdk/optimized/g1FullCollector.ll
 ; openjdk/optimized/g1FullGCAdjustTask.ll
 ; openjdk/optimized/g1FullGCMarkTask.ll
@@ -65,9 +59,6 @@ entry:
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; openjdk/optimized/zMark.ll
-; php/optimized/phpdbg_io.ll
-; php/optimized/string.ll
-; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -78,12 +69,33 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 9 occurrences:
+; clamav/optimized/autoit.c.ll
+; clamav/optimized/nulsft.c.ll
+; clamav/optimized/special.c.ll
+; clamav/optimized/unzip.c.ll
+; git/optimized/dir.ll
+; lz4/optimized/lz4hc.c.ll
+; php/optimized/phpdbg_io.ll
+; php/optimized/string.ll
+; protobuf/optimized/arena.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = ptrtoint ptr %3 to i64
+  %5 = add i64 %0, %1
+  %6 = sub i64 %4, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; boost/optimized/params_iter_impl.ll
 ; linux/optimized/nfs4proc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %2, i64 44
+  %3 = getelementptr i8, ptr %2, i64 -1
   %4 = ptrtoint ptr %3 to i64
   %5 = add i64 %0, %1
   %6 = sub i64 %4, %5

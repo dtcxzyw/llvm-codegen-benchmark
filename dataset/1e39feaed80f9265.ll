@@ -1,18 +1,23 @@
 
-; 117 occurrences:
+; 123 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/Subdivision.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/dump_avx2.ll
 ; bullet3/optimized/b3ConvexUtility.ll
+; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btConvexPolyhedron.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
+; bullet3/optimized/btGeneric6DofConstraint.ll
 ; bullet3/optimized/btPolyhedralContactClipping.ll
 ; cmake/optimized/RegularExpression.cxx.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; graphviz/optimized/routespl.c.ll
 ; graphviz/optimized/triang.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; llvm/optimized/AArch64SLSHardening.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -104,6 +109,8 @@
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/ptracer.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
+; openblas/optimized/dgemv_n.c.ll
+; openblas/optimized/dgemv_t.c.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/fourier_descriptors_demo.cpp.ll
 ; opencv/optimized/minarea.cpp.ll
@@ -115,22 +122,21 @@
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
-; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 12 occurrences:
+; assimp/optimized/IFCGeometry.cpp.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
-; cpython/optimized/_hashopenssl.ll
 ; linux/optimized/percpu.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -145,6 +151,18 @@ entry:
   %3 = and i64 %2, 15
   %4 = select i1 %1, i64 16, i64 %3
   %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = select i1 %1, i64 32, i64 %3
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

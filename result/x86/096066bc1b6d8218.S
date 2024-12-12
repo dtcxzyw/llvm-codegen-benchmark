@@ -1,11 +1,11 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movl	%edi, %eax
 	orb	$8, %al
 	cmpl	$16777216, %esi                 # imm = 0x1000000
 	movzbl	%al, %eax
 	cmovael	%edi, %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movl	%edi, %eax
 	orb	$4, %al
 	testl	%esi, %esi
@@ -26,14 +26,14 @@ func0000000000000004:                   # @func0000000000000004
 	movzbl	%al, %eax
 	cmovael	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%edi, %eax
 	orb	$16, %al
 	cmpl	$1, %esi
 	movzbl	%al, %eax
 	cmovnel	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	movl	%edi, %eax
 	orb	$8, %al
 	cmpl	$256, %esi                      # imm = 0x100

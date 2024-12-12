@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -10,12 +10,10 @@
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; postgres/optimized/inv_api.ll
 ; qemu/optimized/linux-user_elfload.c.ll
-; quest/optimized/mt19937ar.c.ll
 ; zxing/optimized/HRI.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {

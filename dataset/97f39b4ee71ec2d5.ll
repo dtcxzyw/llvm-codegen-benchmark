@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 85 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; linux/optimized/blk-iocost.ll
@@ -83,11 +83,8 @@
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-gtpv2.c.ll
 ; wireshark/optimized/packet-isakmp.c.ll
-; wireshark/optimized/packet-its.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; wireshark/optimized/packet-pvfs2.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
-; wireshark/optimized/radcom.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:
@@ -97,8 +94,12 @@ entry:
   ret i32 %3
 }
 
-; 35 occurrences:
+; 39 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
+; boost/optimized/src.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; freetype/optimized/ftbitmap.c.ll
@@ -142,7 +143,13 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 13 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cpython/optimized/_datetimemodule.ll
 ; postgres/optimized/numutils.ll
 ; quantlib/optimized/dataparsers.ll

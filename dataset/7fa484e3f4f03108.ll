@@ -21,11 +21,12 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; linux/optimized/alps.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
@@ -41,7 +42,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = and i32 %0, 31
+  %3 = and i32 %0, 127
   %4 = sub nsw i32 %3, %2
   ret i32 %4
 }

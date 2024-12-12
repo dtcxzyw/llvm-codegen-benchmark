@@ -70,17 +70,6 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
-; Function Attrs: nounwind
-define i64 @func000000000000002f(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, -8
-  %2 = zext nneg i32 %1 to i64
-  ret i64 %2
-}
-
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind

@@ -31,7 +31,6 @@
 ; casadi/optimized/generic_type.cpp.ll
 ; casadi/optimized/mx.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
 ; cmake/optimized/cmSetTargetPropertiesCommand.cxx.ll
 ; cmake/optimized/cmSetTestsPropertiesCommand.cxx.ll
@@ -107,6 +106,7 @@
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; llvm/optimized/DeadArgumentElimination.cpp.ll
 ; llvm/optimized/DirectiveEmitter.cpp.ll
+; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/FunctionImport.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
@@ -123,6 +123,7 @@
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; luau/optimized/Differ.cpp.ll
+; luau/optimized/IrAnalysis.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -145,7 +146,6 @@
 ; oiio/optimized/rlainput.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/boost.cpp.ll
-; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
@@ -164,8 +164,8 @@
 ; opencv/optimized/large_kinfu.cpp.ll
 ; opencv/optimized/linemod.cpp.ll
 ; opencv/optimized/msd.cpp.ll
-; opencv/optimized/nonrigid_icp.cpp.ll
 ; opencv/optimized/objects_associator.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/pct_signatures.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
 ; opencv/optimized/segmentation.cpp.ll
@@ -213,13 +213,13 @@
 ; quantlib/optimized/basket.ll
 ; quantlib/optimized/discretizedconvertible.ll
 ; quantlib/optimized/discretizedswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gmres.ll
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/multidimintegrator.ll
 ; quantlib/optimized/nonstandardswap.ll
 ; quantlib/optimized/sensitivityanalysis.ll
+; re2/optimized/prefilter_tree.cc.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
@@ -237,8 +237,8 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 3
-  %4 = and i64 %3, 8070450532247928832
+  %3 = lshr exact i64 %2, 3
+  %4 = and i64 %3, 2147483647
   ret i64 %4
 }
 

@@ -12,7 +12,7 @@ entry:
   %2 = fptosi float %1 to i32
   %3 = add nsw i32 %2, 1
   %4 = sitofp i32 %3 to float
-  %5 = fcmp ugt float %4, %0
+  %5 = fcmp ult float %0, %4
   ret i1 %5
 }
 
@@ -29,7 +29,7 @@ entry:
   %2 = fptosi float %1 to i32
   %3 = add nsw i32 %2, 1
   %4 = sitofp i32 %3 to float
-  %5 = fcmp ult float %4, %0
+  %5 = fcmp ugt float %0, %4
   ret i1 %5
 }
 

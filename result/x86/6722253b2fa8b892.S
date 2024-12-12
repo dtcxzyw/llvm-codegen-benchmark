@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	xorl	%edx, %edx

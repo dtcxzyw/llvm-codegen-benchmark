@@ -1,17 +1,49 @@
 
-%"struct.std::pair.177.2880867" = type { %"class.hermes::vm::GCSymbolID.2880868", %"struct.hermes::vm::NamedPropertyDescriptor.2880863" }
-%"class.hermes::vm::GCSymbolID.2880868" = type { %"class.hermes::vm::SymbolID.2880841" }
-%"class.hermes::vm::SymbolID.2880841" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.2880863" = type { %"struct.hermes::vm::PropertyDescriptor.2880864" }
-%"struct.hermes::vm::PropertyDescriptor.2880864" = type { %union.anon.174.2880865, i32 }
-%union.anon.174.2880865 = type { i32 }
-%"class.hermes::vm::detail::DPMHashPair.2880869" = type { %struct.anon.234.2880870 }
-%struct.anon.234.2880870 = type { i32 }
+%"struct.std::pair.177.3075391" = type { %"class.hermes::vm::GCSymbolID.3075392", %"struct.hermes::vm::NamedPropertyDescriptor.3075387" }
+%"class.hermes::vm::GCSymbolID.3075392" = type { %"class.hermes::vm::SymbolID.3075365" }
+%"class.hermes::vm::SymbolID.3075365" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3075387" = type { %"struct.hermes::vm::PropertyDescriptor.3075388" }
+%"struct.hermes::vm::PropertyDescriptor.3075388" = type { %union.anon.174.3075389, i32 }
+%union.anon.174.3075389 = type { i32 }
+%"class.hermes::vm::detail::DPMHashPair.3075393" = type { %struct.anon.234.3075394 }
+%struct.anon.234.3075394 = type { i32 }
+%"class.clang::QualType.3137945" = type { %"class.llvm::PointerIntPair.148.3137946" }
+%"class.llvm::PointerIntPair.148.3137946" = type { %"struct.llvm::detail::PunnedPointer.149.3137947" }
+%"struct.llvm::detail::PunnedPointer.149.3137947" = type { [8 x i8] }
+%"class.clang::SourceLocation.3137925" = type { i32 }
 
-; 101 occurrences:
+; 3 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/sswSim.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 5
+  %4 = and i64 %3, 134217727
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 48
+  %6 = getelementptr nusw i32, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 4 occurrences:
+; hermes/optimized/HiddenClass.cpp.ll
+; hermes/optimized/Interpreter.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; llvm/optimized/Compiler.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr exact i64 %2, 2
+  %4 = and i64 %3, 4294967295
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 28
+  %6 = getelementptr nusw nuw %"struct.std::pair.177.3075391", ptr %5, i64 %0
+  %7 = getelementptr nusw nuw %"class.hermes::vm::detail::DPMHashPair.3075393", ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 98 occurrences:
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -111,29 +143,13 @@
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 5
-  %4 = and i64 %3, 134217727
-  %5 = getelementptr nusw i8, ptr %1, i64 48
-  %6 = getelementptr nusw i32, ptr %5, i64 %0
-  %7 = getelementptr nusw i32, ptr %6, i64 %4
-  ret ptr %7
-}
-
-; 4 occurrences:
-; hermes/optimized/HiddenClass.cpp.ll
-; hermes/optimized/Interpreter.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
-; llvm/optimized/Compiler.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = lshr exact i64 %2, 2
-  %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i8, ptr %1, i64 28
-  %6 = getelementptr nusw %"struct.std::pair.177.2880867", ptr %5, i64 %0
-  %7 = getelementptr nusw %"class.hermes::vm::detail::DPMHashPair.2880869", ptr %6, i64 %4
+  %3 = lshr i64 %2, 60
+  %4 = and i64 %3, 1
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 48
+  %6 = getelementptr nusw nuw %"class.clang::QualType.3137945", ptr %5, i64 %0
+  %7 = getelementptr nusw nuw %"class.clang::SourceLocation.3137925", ptr %6, i64 %4
   ret ptr %7
 }
 

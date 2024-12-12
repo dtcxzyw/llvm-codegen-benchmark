@@ -1,5 +1,5 @@
 
-; 143 occurrences:
+; 129 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
@@ -12,9 +12,7 @@
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/btSoftBodyConcaveCollisionAlgorithm.ll
 ; c3c/optimized/sema_decls.c.ll
-; clamav/optimized/fmap.c.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
-; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; draco/optimized/obj_encoder.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -46,7 +44,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -73,24 +70,13 @@
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
-; meshoptimizer/optimized/vcacheoptimizer.cpp.ll
-; mini-lsm-rs/optimized/1fz4nd3pxmha003h.ll
-; mini-lsm-rs/optimized/1p3sopfakd9d715u.ll
-; mini-lsm-rs/optimized/1pvec8aj5zmr89ee.ll
-; mini-lsm-rs/optimized/29sn4tiur79wqexc.ll
-; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
-; mini-lsm-rs/optimized/3jirohyl4so2bgw0.ll
-; mini-lsm-rs/optimized/45avienzelzw747t.ll
-; mini-lsm-rs/optimized/4c6shhrwpfde8fun.ll
-; mini-lsm-rs/optimized/59xebgypolxascxr.ll
-; mini-lsm-rs/optimized/5avg215hrxp5j19q.ll
-; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
-; mini-lsm-rs/optimized/wk9xduxamtyfjix.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/epnp.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/obu.c.ll
 ; openusd/optimized/ray.cpp.ll
@@ -144,20 +130,19 @@
 ; wolfssl/optimized/internal.c.ll
 ; zxing/optimized/QRCodecMode.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 9, i64 %2
-  %4 = getelementptr nusw [10 x i16], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [10 x i16], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cpython/optimized/listobject.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/intel_ddi.ll
 ; postgres/optimized/dsa.ll
-; postgres/optimized/freepage.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtsearch.ll
@@ -168,6 +153,46 @@ define ptr @func0000000000000000(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 126, i64 %2
   %4 = getelementptr [128 x i8], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 31 occurrences:
+; darktable/optimized/introspection_filmic.c.ll
+; draco/optimized/obj_encoder.cc.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; meshoptimizer/optimized/vcacheoptimizer.cpp.ll
+; mini-lsm-rs/optimized/1fz4nd3pxmha003h.ll
+; mini-lsm-rs/optimized/1p3sopfakd9d715u.ll
+; mini-lsm-rs/optimized/1pvec8aj5zmr89ee.ll
+; mini-lsm-rs/optimized/29sn4tiur79wqexc.ll
+; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
+; mini-lsm-rs/optimized/3jirohyl4so2bgw0.ll
+; mini-lsm-rs/optimized/45avienzelzw747t.ll
+; mini-lsm-rs/optimized/4c6shhrwpfde8fun.ll
+; mini-lsm-rs/optimized/59xebgypolxascxr.ll
+; mini-lsm-rs/optimized/5avg215hrxp5j19q.ll
+; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
+; mini-lsm-rs/optimized/wk9xduxamtyfjix.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 65535, i64 %2
+  %4 = getelementptr nusw [65536 x float], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

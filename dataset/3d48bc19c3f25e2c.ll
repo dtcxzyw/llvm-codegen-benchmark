@@ -1,5 +1,5 @@
 
-; 323 occurrences:
+; 273 occurrences:
 ; abc/optimized/fretFlow.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/disasm.c.ll
@@ -43,6 +43,7 @@
 ; icu/optimized/ushape.ll
 ; icu/optimized/ustring.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libevent/optimized/event.c.ll
 ; libpng/optimized/pngread.c.ll
@@ -62,7 +63,6 @@
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_vblank.ll
 ; linux/optimized/libata-sata.ll
-; linux/optimized/match.ll
 ; linux/optimized/mmu_gather.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nl80211.ll
@@ -70,7 +70,6 @@
 ; linux/optimized/pci.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/rate.ll
-; linux/optimized/scan.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/sme.ll
 ; linux/optimized/strset.ll
@@ -83,13 +82,13 @@
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/AggressiveAntiDepBreaker.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
-; llvm/optimized/CallDescription.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
@@ -121,26 +120,30 @@
 ; llvm/optimized/ParseExpr.cpp.ll
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/QualifierAlignmentFixer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll
 ; llvm/optimized/ScheduleDAGFast.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/TargetOptionsImpl.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
+; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/UnwrappedLineFormatter.cpp.ll
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; llvm/optimized/ValueLattice.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/lj_bcwrite.ll
 ; luajit/optimized/lj_bcwrite_dyn.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_obj_style.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; meshlab/optimized/io_collada.cpp.ll
@@ -171,68 +174,6 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nix/optimized/parser-tab.ll
-; node/optimized/libnode.async_wrap.ll
-; node/optimized/libnode.cares_wrap.ll
-; node/optimized/libnode.connection_wrap.ll
-; node/optimized/libnode.crypto_aes.ll
-; node/optimized/libnode.crypto_cipher.ll
-; node/optimized/libnode.crypto_context.ll
-; node/optimized/libnode.crypto_dh.ll
-; node/optimized/libnode.crypto_dsa.ll
-; node/optimized/libnode.crypto_ec.ll
-; node/optimized/libnode.crypto_hash.ll
-; node/optimized/libnode.crypto_hkdf.ll
-; node/optimized/libnode.crypto_hmac.ll
-; node/optimized/libnode.crypto_keygen.ll
-; node/optimized/libnode.crypto_keys.ll
-; node/optimized/libnode.crypto_random.ll
-; node/optimized/libnode.crypto_rsa.ll
-; node/optimized/libnode.crypto_sig.ll
-; node/optimized/libnode.crypto_tls.ll
-; node/optimized/libnode.crypto_util.ll
-; node/optimized/libnode.crypto_x509.ll
-; node/optimized/libnode.endpoint.ll
-; node/optimized/libnode.fs_event_wrap.ll
-; node/optimized/libnode.handle_wrap.ll
-; node/optimized/libnode.histogram.ll
-; node/optimized/libnode.inspector_js_api.ll
-; node/optimized/libnode.js_stream.ll
-; node/optimized/libnode.js_udp_wrap.ll
-; node/optimized/libnode.module_wrap.ll
-; node/optimized/libnode.node_blob.ll
-; node/optimized/libnode.node_contextify.ll
-; node/optimized/libnode.node_crypto.ll
-; node/optimized/libnode.node_dir.ll
-; node/optimized/libnode.node_file.ll
-; node/optimized/libnode.node_http2.ll
-; node/optimized/libnode.node_http_parser.ll
-; node/optimized/libnode.node_i18n.ll
-; node/optimized/libnode.node_messaging.ll
-; node/optimized/libnode.node_process_methods.ll
-; node/optimized/libnode.node_serdes.ll
-; node/optimized/libnode.node_snapshotable.ll
-; node/optimized/libnode.node_sockaddr.ll
-; node/optimized/libnode.node_stat_watcher.ll
-; node/optimized/libnode.node_trace_events.ll
-; node/optimized/libnode.node_v8.ll
-; node/optimized/libnode.node_wasi.ll
-; node/optimized/libnode.node_wasm_web_api.ll
-; node/optimized/libnode.node_watchdog.ll
-; node/optimized/libnode.node_worker.ll
-; node/optimized/libnode.node_zlib.ll
-; node/optimized/libnode.pipe_wrap.ll
-; node/optimized/libnode.process_wrap.ll
-; node/optimized/libnode.session.ll
-; node/optimized/libnode.signal_wrap.ll
-; node/optimized/libnode.stream_base.ll
-; node/optimized/libnode.stream_pipe.ll
-; node/optimized/libnode.stream_wrap.ll
-; node/optimized/libnode.streams.ll
-; node/optimized/libnode.tcp_wrap.ll
-; node/optimized/libnode.timers.ll
-; node/optimized/libnode.tlscontext.ll
-; node/optimized/libnode.tty_wrap.ll
-; node/optimized/libnode.udp_wrap.ll
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
 ; openjdk/optimized/debugInit.ll
 ; openjdk/optimized/dfa_x86.ll
@@ -288,6 +229,7 @@
 ; rust-analyzer-rs/optimized/4nvu4secqsdy9xf3.ll
 ; slurm/optimized/acct_policy.ll
 ; slurm/optimized/backfill.ll
+; slurm/optimized/common_topo.ll
 ; slurm/optimized/eval_nodes.ll
 ; slurm/optimized/gres_select_filter.ll
 ; slurm/optimized/gres_sock_list.ll
@@ -295,6 +237,7 @@
 ; slurm/optimized/node_features_knl_generic.ll
 ; slurm/optimized/node_info.ll
 ; slurm/optimized/node_mgr.ll
+; slurm/optimized/reservation.ll
 ; slurm/optimized/slurmd.ll
 ; slurm/optimized/srun_job.ll
 ; sqlite/optimized/sqlite3.ll
@@ -310,6 +253,7 @@
 ; wireshark/optimized/packet-bthci_acl.c.ll
 ; wireshark/optimized/packet-bthci_iso.c.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
+; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-ieee17221.c.ll
 ; wireshark/optimized/packet-lmp.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
@@ -318,9 +262,15 @@
 ; wireshark/optimized/packet-rpcrdma.c.ll
 ; wireshark/optimized/packet-rsvp.c.ll
 ; wireshark/optimized/packet-sapms.c.ll
+; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-spice.c.ll
 ; wireshark/optimized/packet-zabbix.c.ll
 ; wireshark/optimized/prefs.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -331,8 +281,10 @@ entry:
   ret i1 %3
 }
 
-; 511 occurrences:
+; 514 occurrences:
 ; abc/optimized/wlcNdr.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; box2d/optimized/b2_world.cpp.ll
 ; c3c/optimized/unzipper.c.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -468,13 +420,10 @@ entry:
 ; linux/optimized/ahci.ll
 ; linux/optimized/avtab.ll
 ; linux/optimized/cgroup.ll
-; linux/optimized/hdac_controller.ll
-; linux/optimized/hid-cypress.ll
 ; linux/optimized/hid-lg4ff.ll
 ; linux/optimized/i915_gem_mman.ll
 ; linux/optimized/ialloc.ll
 ; linux/optimized/ibss.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_dmc.ll
@@ -482,7 +431,6 @@ entry:
 ; linux/optimized/intel_gsc_proxy.ll
 ; linux/optimized/intel_guc.ll
 ; linux/optimized/intel_hotplug.ll
-; linux/optimized/intel_runtime_pm.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/intel_wakeref.ll
@@ -539,7 +487,6 @@ entry:
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/QualifierAlignmentFixer.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RegisterPressure.cpp.ll
@@ -565,6 +512,9 @@ entry:
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; llvm/optimized/regexec.c.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached_debug-crawler.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
@@ -698,6 +648,7 @@ entry:
 ; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/threadControl.ll
 ; openjdk/optimized/trimNativeHeap.ll
+; openmpi/optimized/keyval_lex.ll
 ; openmpi/optimized/plm_base_launch_support.ll
 ; openspiel/optimized/SolverIF.cpp.ll
 ; openssl/optimized/libssl-lib-statem_dtls.ll
@@ -756,6 +707,7 @@ entry:
 ; tls-rs/optimized/4vvnrvl2eceao62c.ll
 ; tls-rs/optimized/526n7g8rwc65lc9b.ll
 ; tls-rs/optimized/59h61akxu6z29dlt.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; verilator/optimized/V3DfgPeephole.cpp.ll
 ; verilator/optimized/V3EmitCImp.cpp.ll
@@ -815,7 +767,6 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/dfilter-macro.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/packet-adb_service.c.ll
@@ -825,7 +776,6 @@ entry:
 ; wireshark/optimized/packet-bthci_acl.c.ll
 ; wireshark/optimized/packet-bthci_iso.c.ll
 ; wireshark/optimized/packet-cemi.c.ll
-; wireshark/optimized/packet-chdlc.c.ll
 ; wireshark/optimized/packet-cip.c.ll
 ; wireshark/optimized/packet-dcom-cba-acco.c.ll
 ; wireshark/optimized/packet-dns.c.ll
@@ -843,6 +793,9 @@ entry:
 ; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; wireshark/optimized/packet-usb-com.c.ll
+; yosys/optimized/verilog_lexer.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
@@ -851,16 +804,13 @@ entry:
   ret i1 %3
 }
 
-; 30 occurrences:
-; cmake/optimized/cmForEachCommand.cxx.ll
+; 27 occurrences:
 ; hermes/optimized/RegexParser.cpp.ll
 ; icu/optimized/ucnv2022.ll
 ; icu/optimized/utf16collationiterator.ll
 ; icu/optimized/utf8collationiterator.ll
-; icu/optimized/uts46.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/r8169_main.ll
 ; llvm/optimized/DwarfCompileUnit.cpp.ll
@@ -926,41 +876,41 @@ entry:
 }
 
 ; 86 occurrences:
-; assimp/optimized/zip.c.ll
 ; clamav/optimized/lzwdec.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; draco/optimized/point_cloud_decoder.cc.ll
 ; flac/optimized/encode.c.ll
-; hermes/optimized/BigIntSupport.cpp.ll
 ; hermes/optimized/RegExp.cpp.ll
-; hermes/optimized/zip.c.ll
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/package.ll
 ; icu/optimized/rbt_pars.ll
 ; icu/optimized/udataswp.ll
 ; linux/optimized/fib_semantics.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dp_mst.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_pmdemand.ll
-; linux/optimized/ip6_checksum.ll
+; linux/optimized/metrics.ll
+; linux/optimized/nl80211.ll
+; linux/optimized/rtnetlink.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/xhci-ring.ll
+; llvm/optimized/AArch64ConditionalCompares.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
+; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
+; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86FastPreTileConfig.cpp.ll
 ; llvm/optimized/X86FixupLEAs.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
@@ -968,10 +918,7 @@ entry:
 ; llvm/optimized/X86PreTileConfig.cpp.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; openjdk/optimized/check_classname.ll
 ; openjdk/optimized/classFileParser.ll
 ; openusd/optimized/decodemv.c.ll
@@ -1002,11 +949,14 @@ entry:
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; qemu/optimized/hw_display_bochs-display.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
+; qemu/optimized/hw_net_rocker_rocker.c.ll
+; qemu/optimized/hw_net_rocker_rocker_of_dpa.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; slurm/optimized/job_test.ll
 ; wireshark/optimized/commview.c.ll
 ; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/packet-erf.c.ll
+; wireshark/optimized/packet-extreme.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-icmp.c.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
@@ -1016,6 +966,38 @@ entry:
 define i1 @func0000000000000004(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 36
+  %3 = select i1 %2, i1 true, i1 %0
+  ret i1 %3
+}
+
+; 6 occurrences:
+; arrow/optimized/string-to-double.cc.ll
+; cmake/optimized/cmForEachCommand.cxx.ll
+; double_conversion/optimized/string-to-double.cc.ll
+; icu/optimized/double-conversion-string-to-double.ll
+; icu/optimized/uts46.ll
+; openusd/optimized/string-to-double.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i16 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i16 %1, 96
+  %3 = select i1 %2, i1 true, i1 %0
+  ret i1 %3
+}
+
+; 8 occurrences:
+; assimp/optimized/zip.c.ll
+; hermes/optimized/BigIntSupport.cpp.ll
+; hermes/optimized/zip.c.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; ockam-rs/optimized/8g2r22yshp3qi00.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i16 %1) #0 {
+entry:
+  %2 = icmp samesign ult i16 %1, 512
   %3 = select i1 %2, i1 true, i1 %0
   ret i1 %3
 }

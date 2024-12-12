@@ -1,5 +1,7 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/colvarvalue.cpp.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
@@ -21,7 +23,7 @@ define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fsub double 1.000000e+00, %1
   %3 = fmul double %2, 2.000000e+00
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

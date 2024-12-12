@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; postgres/optimized/nbtsearch.ll
 ; Function Attrs: nounwind

@@ -5,7 +5,7 @@
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i8 @func00000000000000b0(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000130(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i8 %0, 48

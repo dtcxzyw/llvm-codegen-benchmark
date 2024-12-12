@@ -9,17 +9,15 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	movslq	%esi, %rcx
-	imulq	$715827883, %rcx, %rax          # imm = 0x2AAAAAAB
-	movq	%rax, %rdx
-	shrq	$63, %rdx
-	shrq	$33, %rax
-	addl	%edx, %eax
-	shll	$2, %eax
-	leal	(%rax,%rax,2), %edx
-	movl	%ecx, %eax
-	subl	%edx, %eax
-	subl	%ecx, %eax
+	movslq	%esi, %rax
+	imulq	$-2092037281, %rax, %rcx        # imm = 0x834E0B5F
+	shrq	$32, %rcx
+	addl	%ecx, %eax
+	movl	%eax, %ecx
+	shrl	$31, %ecx
+	sarl	$16, %eax
+	addl	%ecx, %eax
+	imull	$-2836, %eax, %eax              # imm = 0xF4EC
 	addl	%edi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000

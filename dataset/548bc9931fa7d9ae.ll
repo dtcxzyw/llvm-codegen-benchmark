@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; openblas/optimized/dlasq2.c.ll
+; opencv/optimized/nldiffusion_functions.cpp.ll
 ; opencv/optimized/radial_variance_hash.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; Function Attrs: nounwind

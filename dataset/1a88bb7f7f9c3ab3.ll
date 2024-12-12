@@ -1,5 +1,5 @@
 
-; 109 occurrences:
+; 107 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cuddGenetic.c.ll
@@ -8,7 +8,6 @@
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/writer.cc.ll
 ; cpython/optimized/arraymodule.ll
-; cpython/optimized/unicode.ll
 ; faiss/optimized/IVFlib.cpp.ll
 ; faiss/optimized/IndexIVF.cpp.ll
 ; faiss/optimized/IndexIVFFlat.cpp.ll
@@ -65,7 +64,6 @@
 ; openmpi/optimized/ad_aggregate_new.ll
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
-; openmpi/optimized/vprotocol_pessimist_sender_based.ll
 ; openspiel/optimized/battleship.cc.ll
 ; openspiel/optimized/dots_and_boxes.cc.ll
 ; openspiel/optimized/go_board.cc.ll

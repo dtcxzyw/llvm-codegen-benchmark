@@ -17,25 +17,32 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	$33, %rsi
 	setge	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	shlq	$2, %rsi
 	incq	%rdi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000191:                   # @func0000000000000191
+func0000000000000321:                   # @func0000000000000321
 	shlq	$2, %rsi
 	incq	%rdi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func00000000000003d1:                   # @func00000000000003d1
+func00000000000007a1:                   # @func00000000000007a1
 	shlq	$2, %rsi
 	incq	%rdi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000358:                   # @func0000000000000358
+func0000000000000004:                   # @func0000000000000004
+	shlq	$6, %rsi
+	subq	%rdi, %rsi
+	addq	$7, %rsi
+	cmpq	$8, %rsi
+	setb	%al
+	retq
+func00000000000006a8:                   # @func00000000000006a8
 	shlq	$3, %rsi
 	subq	%rdi, %rsi
 	addq	$-37, %rsi

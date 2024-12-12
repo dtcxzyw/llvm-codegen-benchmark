@@ -17,8 +17,9 @@ entry:
   ret i1 %5
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/message.ll
 ; cmake/optimized/inet.c.ll
 ; git/optimized/json-writer.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll

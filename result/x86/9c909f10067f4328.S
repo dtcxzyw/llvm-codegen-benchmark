@@ -23,9 +23,9 @@ func0000000000000055:                   # @func0000000000000055
 	addl	%ecx, %eax
 	retq
 func0000000000000050:                   # @func0000000000000050
-	imull	$3600, %edx, %ecx               # imm = 0xE10
+	imull	$42123, %edx, %ecx              # imm = 0xA48B
 	addl	%edi, %ecx
-	imull	$60, %esi, %eax
+	imull	$38134234, %esi, %eax           # imm = 0x245E1DA
 	addl	%ecx, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010

@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
+; protobuf/optimized/arena.cc.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0, i1 %1) #0 {

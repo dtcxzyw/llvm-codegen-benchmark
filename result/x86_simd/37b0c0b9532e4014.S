@@ -71,7 +71,7 @@ func0000000000000008:                   # @func0000000000000008
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vpshufb	.LCPI1_0(%rip), %ymm2, %ymm2    # ymm2 = ymm2[2],zero,zero,zero,ymm2[6],zero,zero,zero,ymm2[10],zero,zero,zero,ymm2[14],zero,zero,zero,ymm2[18],zero,zero,zero,ymm2[22],zero,zero,zero,ymm2[26],zero,zero,zero,ymm2[30],zero,zero,zero
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	%ymm0, %ymm2, %k0

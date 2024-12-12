@@ -57,11 +57,11 @@
 ; wireshark/optimized/packet-v5ua.c.ll
 ; wireshark/optimized/packet-wassp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -82,11 +82,11 @@ entry:
 ; openssl/optimized/libcrypto-shlib-rsa_ossl.ll
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -98,11 +98,11 @@ entry:
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
 ; openssl/optimized/libcrypto-shlib-ecp_oct.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -122,11 +122,11 @@ entry:
 ; verilator/optimized/V3Subst.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sdiv i32 %2, 2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -143,18 +143,18 @@ define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 63
   %3 = sdiv i32 %2, 64
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; clamav/optimized/dsig.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -168,7 +168,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -16
   %3 = sdiv i32 %2, 12
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -177,11 +177,11 @@ entry:
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004b(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 3
   %3 = sdiv i32 %2, 4
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 
@@ -192,7 +192,7 @@ define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = sdiv i32 %2, 2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 

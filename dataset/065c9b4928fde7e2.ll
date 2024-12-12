@@ -1,6 +1,8 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; arrow/optimized/uri.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/xmlparse.ll
@@ -21,13 +23,15 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; tokenizers-rs/optimized/40hmx6rev8evi2bx.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, ptr %1) #0 {
+define i64 @func0000000000000041(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = ptrtoint ptr %1 to i64

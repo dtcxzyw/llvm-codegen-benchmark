@@ -10,13 +10,13 @@ func000000000000000d:                   # @func000000000000000d
 	.long	4293853184                      # 0xffef0000
 func0000000000000009:                   # @func0000000000000009
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI3_0:

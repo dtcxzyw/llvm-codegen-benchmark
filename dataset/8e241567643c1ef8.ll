@@ -14,6 +14,18 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000025(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 32
+  %3 = trunc nuw i64 %2 to i32
+  %4 = sub nsw i32 %0, %3
+  %5 = shl nsw i32 %4, 16
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; linux/optimized/memory.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll

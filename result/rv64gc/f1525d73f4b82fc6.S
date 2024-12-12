@@ -3,7 +3,7 @@
 	.quad	0x3fb54fdf3b645a1d              # double 0.083250000000000005
 .LCPI0_1:
 	.quad	0x3fd54fdf3b645a1d              # double 0.33300000000000002
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	li	a1, -6
 	beq	a0, a1, .LBB0_2

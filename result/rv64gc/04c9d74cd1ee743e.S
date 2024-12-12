@@ -41,33 +41,33 @@ func000000000000000a:                   # @func000000000000000a
 	xori	a0, a0, 1
 	addi	a0, a0, 3
 	ret
-func0000000000000006:                   # @func0000000000000006
-	sext.w	a1, a1
-	li	a2, 2
-	blt	a1, a2, .LBB4_2
-	li	a1, 32
-	slli	a0, a0, 63
-	srai	a0, a0, 63
-	and	a0, a0, a1
-	ret
-.LBB4_2:
-	li	a1, 36
-	slli	a0, a0, 63
-	srai	a0, a0, 63
-	and	a0, a0, a1
-	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a0, 1
 	sext.w	a0, a1
 	lui	a1, 2
-	beqz	a0, .LBB5_2
+	beqz	a0, .LBB4_2
 	addiw	a0, a1, 400
-	beqz	a2, .LBB5_3
-	j	.LBB5_4
-.LBB5_2:
+	beqz	a2, .LBB4_3
+	j	.LBB4_4
+.LBB4_2:
 	addiw	a0, a1, 392
-	bnez	a2, .LBB5_4
-.LBB5_3:                                # %entry
+	bnez	a2, .LBB4_4
+.LBB4_3:                                # %entry
 	addiw	a0, a1, 396
+.LBB4_4:                                # %entry
+	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a2, a0, 1
+	sext.w	a1, a1
+	li	a3, 13
+	li	a0, 8
+	bgeu	a1, a3, .LBB5_3
+	beqz	a2, .LBB5_4
+.LBB5_2:                                # %entry
+	ret
+.LBB5_3:                                # %entry
+	li	a0, 12
+	bnez	a2, .LBB5_2
 .LBB5_4:                                # %entry
+	li	a0, 8
 	ret

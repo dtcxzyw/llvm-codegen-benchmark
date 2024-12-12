@@ -10,12 +10,12 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000005:                   # @func0000000000000005
 	andl	$61440, %edx                    # imm = 0xF000
-	notb	%sil
-	movzbl	%sil, %ecx
-	andl	$1, %ecx
+	xorl	%ecx, %ecx
+	cmpl	$8192, %edx                     # imm = 0x2000
+	setne	%cl
 	shll	$5, %ecx
 	xorl	%eax, %eax
-	cmpl	$8192, %edx                     # imm = 0x2000
-	cmovnel	%ecx, %eax
+	testb	$1, %sil
+	cmovel	%ecx, %eax
 	orl	%edi, %eax
 	retq

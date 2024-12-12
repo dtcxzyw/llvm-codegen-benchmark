@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 50 occurrences:
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/ivyHaig.c.ll
 ; freetype/optimized/ftbase.c.ll
@@ -10,14 +10,18 @@
 ; libwebp/optimized/cost_enc.c.ll
 ; libwebp/optimized/palette.c.ll
 ; libwebp/optimized/token_enc.c.ll
+; libwebp/optimized/upsampling.c.ll
+; libwebp/optimized/upsampling_sse2.c.ll
+; libwebp/optimized/yuv.c.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/fhandle.ll
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/intel_lvds.ll
-; linux/optimized/intel_tcc.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
+; llvm/optimized/DIE.cpp.ll
+; llvm/optimized/DWARFFormValue.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/GCOVProfiling.cpp.ll

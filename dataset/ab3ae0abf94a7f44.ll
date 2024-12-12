@@ -1,7 +1,8 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -27,7 +28,7 @@ define i1 @func000000000000000c(i1 %0, float %1) #0 {
 entry:
   %2 = call float @llvm.fabs.f32(float %1)
   %3 = fcmp one float %2, 0x7FF0000000000000
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -342,12 +343,12 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, float %1) #0 {
+define i1 @func0000000000000018(i1 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
   %3 = and i32 %2, 2130706432
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

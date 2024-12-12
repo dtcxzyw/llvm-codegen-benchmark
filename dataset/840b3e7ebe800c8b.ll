@@ -14,14 +14,13 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; icu/optimized/collationbuilder.ll
-; linux/optimized/dw.ll
 ; linux/optimized/hw_breakpoint.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 4095
+  %2 = and i32 %1, 15
   %3 = zext nneg i32 %2 to i64
   %4 = zext nneg i32 %0 to i64
   %5 = shl i64 %3, %4

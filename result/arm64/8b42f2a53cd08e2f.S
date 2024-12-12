@@ -1,58 +1,39 @@
-func00000000000000cc:                   // @func00000000000000cc
+func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
-	movi	v4.4s, #128, lsl #24
-	uzp1	v2.4s, v2.4s, v3.4s
-	fneg	v4.2d, v4.2d
-	and	v0.16b, v0.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	cmle	v1.4s, v2.4s, #0
-	orn	v0.16b, v1.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	cmp	w0, #0
+	ccmp	w1, #1, #8, ge
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000022:                   // @func0000000000000022
+func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	cmeq	v1.4s, v2.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	orr	v0.16b, v0.16b, v1.16b
-	xtn	v0.4h, v0.4s
+	cmp	w0, #0
+	ccmp	w1, #0, #4, ne
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000001154:                   // @func0000000000001154
+func0000000000000294:                   // @func0000000000000294
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	smax	v0.4s, v0.4s, v2.4s
-	cmgt	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	mov	w8, #-2147483648                // =0x80000000
+	and	x9, x0, #0xffff0000
+	and	x10, x1, #0xffff0000
+	cmp	x9, x8
+	ccmp	x10, x8, #0, eq
+	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000110:                   // @func0000000000000110
+func0000000000004294:                   // @func0000000000004294
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	movi	v3.4s, #59
-	uzp1	v0.4s, v0.4s, v1.4s
-	movi	v1.4s, #24
-	cmhi	v2.4s, v2.4s, v3.4s
-	cmhi	v0.4s, v0.4s, v1.4s
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+	cmp	w0, #0
+	ccmp	w1, #0, #0, le
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000154:                   // @func0000000000000154
+func0000000000000210:                   // @func0000000000000210
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	movi	v3.4s, #5
-	uzp1	v0.4s, v0.4s, v1.4s
-	movi	v1.4s, #11
-	cmgt	v2.4s, v2.4s, v3.4s
-	cmgt	v0.4s, v0.4s, v1.4s
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+	mov	w8, #59                         // =0x3b
+	cmp	w0, #24
+	ccmp	w1, w8, #2, ls
+	cset	w0, hi
 	ret
                                         // -- End function

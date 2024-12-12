@@ -45,12 +45,14 @@
 define i1 @func0000000000000001(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   %4 = icmp eq i8 %3, 0
   ret i1 %4
 }
 
-; 58 occurrences:
+; 59 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; hermes/optimized/TypeInference.cpp.ll
 ; icu/optimized/collationdatabuilder.ll
@@ -102,7 +104,6 @@ entry:
 ; openusd/optimized/diagnosticMgr.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/ginlogic.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/relcache.ll
 ; postgres/optimized/tablecmds.ll
@@ -113,7 +114,7 @@ entry:
 define i1 @func000000000000000c(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   %4 = icmp ne i8 %3, 0
   ret i1 %4
 }
@@ -124,10 +125,10 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; wireshark/optimized/packet-mmse.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   %4 = icmp eq i8 %3, 0
   ret i1 %4
 }
@@ -135,10 +136,10 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000028(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   %4 = icmp ugt i8 %3, 102
   ret i1 %4
 }

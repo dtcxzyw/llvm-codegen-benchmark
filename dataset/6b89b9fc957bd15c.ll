@@ -198,7 +198,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = lshr i32 %0, %2
@@ -390,7 +390,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 28, %1
   %3 = lshr i32 %0, %2
@@ -404,7 +404,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = lshr i32 %0, %2
@@ -423,18 +423,18 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000d4(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 16, %1
   %3 = lshr i32 %0, %2
-  %4 = icmp ult i32 %3, 512
+  %4 = icmp samesign ult i32 %3, 512
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/xfrm_policy.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 32, %1
   %3 = lshr i32 %0, %2

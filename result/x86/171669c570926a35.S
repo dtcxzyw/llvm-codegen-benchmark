@@ -22,12 +22,6 @@ func0000000000000014:                   # @func0000000000000014
 	cmovsl	%esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	cmpq	$323840001, %rdx                # imm = 0x134D6801
-	movl	$134217728, %eax                # imm = 0x8000000
-	cmovbl	%esi, %eax
-	orl	%edi, %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	cmpq	$-14, %rdx
 	movl	$142, %eax

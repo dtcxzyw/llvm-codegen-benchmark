@@ -77,7 +77,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpmovqd	%ymm2, %xmm3
 	vpextrd	$1, %xmm1, %ecx
 	vpextrd	$1, %xmm3, %eax
@@ -129,7 +129,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	vpmovqd	%ymm2, %xmm3
 	vpextrd	$1, %xmm1, %ecx
 	vpextrd	$1, %xmm3, %eax

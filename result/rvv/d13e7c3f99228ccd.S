@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, -1639
 	vmsgtu.vx	v0, v8, a0
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -41,7 +41,7 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a0, a0, 904
 	vmsltu.vx	v0, v10, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	lui	a0, 858993
 	lui	a1, 2
 	addi	a0, a0, 1881
@@ -53,7 +53,7 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a1, -1192
 	vmsltu.vx	v0, v10, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmclr.m	v0
 	ret

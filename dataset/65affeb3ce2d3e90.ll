@@ -241,10 +241,10 @@
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/packet-packetbb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -259,10 +259,10 @@ entry:
 ; openssl/optimized/libcrypto-lib-a_time.ll
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -273,7 +273,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -282,10 +282,10 @@ entry:
 ; abc/optimized/dauCanon.c.ll
 ; eastl/optimized/EAString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -297,7 +297,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -308,10 +308,10 @@ entry:
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; openspiel/optimized/y.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -324,8 +324,20 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ugt i32 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = sext i8 %2 to i32
+  %4 = add i32 %1, %3
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -335,7 +347,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ule i32 %4, %0
   ret i1 %5
 }
@@ -343,10 +355,10 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000025(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ule i32 %4, %0
   ret i1 %5
 }

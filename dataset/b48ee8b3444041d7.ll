@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0) #0 {
 entry:

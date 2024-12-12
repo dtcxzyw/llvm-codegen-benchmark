@@ -7,10 +7,10 @@
 ; oiio/optimized/strutil.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000020(i64 %0, ptr %1, i1 %2) #0 {
+define i32 @func0000000000000030(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = trunc i64 %6 to i32

@@ -4,7 +4,7 @@
 	.quad	100000000                       # 0x5f5e100
 func0000000000000000:                   # @func0000000000000000
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmullq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -14,7 +14,7 @@ func0000000000000000:                   # @func0000000000000000
 func00000000000001e0:                   # @func00000000000001e0
 	vpbroadcastq	.LCPI1_0(%rip), %ymm3   # ymm3 = [10,10,10,10]
 	vpmullq	%ymm3, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmullq	%ymm3, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm1, %ymm0

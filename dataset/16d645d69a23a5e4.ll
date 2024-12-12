@@ -1,5 +1,5 @@
 
-; 74 occurrences:
+; 76 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/sclUpsize.c.ll
@@ -21,6 +21,8 @@
 ; assimp/optimized/ComputeUVMappingProcess.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_world.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clipping.c.ll

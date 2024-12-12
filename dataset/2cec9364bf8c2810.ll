@@ -4,7 +4,7 @@
 ; ruby/optimized/bignum.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -17,7 +17,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000085(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; mold/optimized/compress.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3

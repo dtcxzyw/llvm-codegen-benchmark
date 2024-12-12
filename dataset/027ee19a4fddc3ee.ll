@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; cmake/optimized/nghttp2_npn.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/drm_dp_mst_topology.ll
@@ -44,7 +44,6 @@
 ; wireshark/optimized/packet-rtp.c.ll
 ; wireshark/optimized/packet-sasp.c.ll
 ; wireshark/optimized/packet-synphasor.c.ll
-; wireshark/optimized/packet-teap.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; wireshark/optimized/packet-ucp.c.ll

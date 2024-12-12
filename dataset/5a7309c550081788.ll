@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 49 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -29,7 +29,6 @@
 ; openusd/optimized/tessellation.cpp.ll
 ; postgres/optimized/selfuncs.ll
 ; proj/optimized/datum.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; quantlib/optimized/amortizingfixedratebond.ll
 ; quantlib/optimized/analytic_discr_geom_av_strike.ll
 ; quantlib/optimized/analytich1hwengine.ll

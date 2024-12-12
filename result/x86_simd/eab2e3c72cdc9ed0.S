@@ -2,7 +2,7 @@
 	.long	3                               # 0x3
 .LCPI0_1:
 	.quad	2                               # 0x2
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm2, %k0 {%k1}

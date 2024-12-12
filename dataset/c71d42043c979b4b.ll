@@ -37,10 +37,10 @@ entry:
 ; quantlib/optimized/tcopulapolicy.ll
 ; z3/optimized/nlsat_evaluator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = icmp slt i32 %4, 0
   ret i1 %5
 }
@@ -64,27 +64,19 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; darktable/optimized/OrfDecoder.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = select i1 %1, i32 0, i32 %2
-  %4 = mul i32 %3, %0
-  %5 = icmp ult i32 %4, 4
-  ret i1 %5
-}
-
-; 4 occurrences:
+; 7 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; graphviz/optimized/legal.c.ll
+; lvgl/optimized/lv_theme_default.ll
 ; ocio/optimized/FileFormatHDL.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/thresh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 1, i32 %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = icmp sgt i32 %4, 0
   ret i1 %5
 }
@@ -93,10 +85,10 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 3, i32 %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = icmp ugt i32 %4, 536870911
   ret i1 %5
 }
@@ -106,7 +98,7 @@ entry:
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
 ; z3/optimized/nla_order_lemmas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 1, i32 %2
   %4 = mul nsw i32 %3, %0

@@ -1,9 +1,10 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0) #0 {
+define i1 @func0000000000000104(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 24
   %2 = trunc nuw i32 %1 to i8
@@ -13,7 +14,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; Function Attrs: nounwind

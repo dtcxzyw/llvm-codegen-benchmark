@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; linux/optimized/rtnetlink.ll
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -16,8 +16,9 @@
 ; typst-rs/optimized/s98trl5i4o78jww.ll
 ; verilator/optimized/V3Timing.cpp.ll
 ; wireshark/optimized/packet-ranap.c.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0) #0 {
+define i1 @func000000000000002c(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 8
   %2 = icmp eq i8 %1, 0
@@ -27,14 +28,14 @@ entry:
 }
 
 ; 1 occurrences:
-; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
+; openjdk/optimized/verifier.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0) #0 {
+define i1 @func0000000000000024(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, -2
-  %2 = icmp ne i8 %1, 2
-  %3 = icmp ult i8 %0, 2
-  %4 = and i1 %2, %3
+  %1 = and i8 %0, -4
+  %2 = icmp eq i8 %1, -8
+  %3 = icmp ult i8 %0, -5
+  %4 = and i1 %3, %2
   ret i1 %4
 }
 
@@ -47,7 +48,7 @@ entry:
 ; wireshark/optimized/packet-lwm.c.ll
 ; wireshark/optimized/packet-zbee-nwk.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0) #0 {
+define i1 @func0000000000000184(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 15
   %2 = icmp ne i8 %1, 15
@@ -67,7 +68,7 @@ entry:
 ; lua/optimized/lvm.ll
 ; wireshark/optimized/packet-smc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0) #0 {
+define i1 @func000000000000018c(i8 %0) #0 {
 entry:
   %1 = and i8 %0, -3
   %2 = icmp ne i8 %1, 33
@@ -76,7 +77,7 @@ entry:
   ret i1 %4
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
@@ -101,10 +102,9 @@ entry:
 ; llvm/optimized/Verifier.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; wireshark/optimized/packet-lwm.c.ll
-; wireshark/optimized/packet-nas_eps.c.ll
 ; wireshark/optimized/packet-wifi-nan.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0) #0 {
+define i1 @func0000000000000028(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 7
   %2 = icmp eq i8 %1, 1
@@ -121,7 +121,7 @@ entry:
 ; wireshark/optimized/packet-optommp.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i8 %0) #0 {
+define i1 @func0000000000000188(i8 %0) #0 {
 entry:
   %1 = and i8 %0, -32
   %2 = icmp ne i8 %1, 64

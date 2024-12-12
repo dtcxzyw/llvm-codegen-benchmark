@@ -9,13 +9,13 @@
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 16
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 25 occurrences:
+; 29 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -41,11 +41,15 @@ entry:
 ; openjdk/optimized/IntRgb.ll
 ; openjdk/optimized/IntRgbx.ll
 ; openjdk/optimized/constMethod.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 31
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -101,7 +105,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6

@@ -1,10 +1,10 @@
 func0000000000000018:                   # @func0000000000000018
-	testl	%edx, %edx
+	cmpl	$11, %edx
 	setne	%al
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	testl	%edx, %edx
 	setle	%al
 	andb	%sil, %al

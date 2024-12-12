@@ -21,12 +21,10 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; abc/optimized/gzlib.c.ll
 ; cmake/optimized/gzlib.c.ll
-; libquic/optimized/gzlib.c.ll
 ; wireshark/optimized/file_wrappers.c.ll
-; zlib/optimized/gzlib.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, i1 %1, i32 %2) #0 {
 entry:

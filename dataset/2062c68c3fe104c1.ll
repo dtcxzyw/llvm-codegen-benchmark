@@ -1,5 +1,5 @@
 
-; 285 occurrences:
+; 291 occurrences:
 ; abc/optimized/giaIso3.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/inffast.c.ll
@@ -7,6 +7,13 @@
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/any_segments_iter.ll
+; boost/optimized/dump.ll
+; boost/optimized/dump_avx2.ll
+; boost/optimized/dump_ssse3.ll
+; boost/optimized/src.ll
+; boost/optimized/url_base.ll
 ; c3c/optimized/lexer.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/phishcheck.c.ll
@@ -74,9 +81,9 @@
 ; libjpeg-turbo/optimized/jdarith.c.ll
 ; libjpeg-turbo/optimized/jdmarker.c.ll
 ; libjpeg-turbo/optimized/rdtarga.c.ll
+; libpng/optimized/pngrtran.c.ll
 ; libquic/optimized/base64.c.ll
 ; libquic/optimized/digest.cc.ll
-; libquic/optimized/hexdump.c.ll
 ; libquic/optimized/md5.cc.ll
 ; libquic/optimized/string_number_conversions.cc.ll
 ; libquic/optimized/url_canon_etc.cc.ll
@@ -94,7 +101,6 @@
 ; linux/optimized/dswstate.ll
 ; linux/optimized/hexdump.ll
 ; linux/optimized/inffast.ll
-; linux/optimized/intel_step.ll
 ; linux/optimized/lz4_decompress.ll
 ; linux/optimized/vsprintf.ll
 ; linux/optimized/zstd_decompress.ll
@@ -207,6 +213,7 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/jdmarker.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
+; openjdk/optimized/pngrtran.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
 ; openusd/optimized/fileIO_Common.cpp.ll
 ; openusd/optimized/json.cpp.ll
@@ -217,7 +224,6 @@
 ; php/optimized/json_encoder.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_valid_utf.ll
-; php/optimized/php_syslog.ll
 ; php/optimized/quot_print.ll
 ; php/optimized/url.ll
 ; pocketpy/optimized/base64.cpp.ll

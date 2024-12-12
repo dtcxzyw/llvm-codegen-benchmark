@@ -23,6 +23,18 @@ entry:
   ret i32 %3
 }
 
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; openspiel/optimized/TransTableL.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 2
+  %2 = sub i32 24, %1
+  %3 = shl nuw i32 1, %2
+  ret i32 %3
+}
+
 ; 3 occurrences:
 ; clamav/optimized/Bra86.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -44,17 +56,6 @@ entry:
   %1 = shl nuw nsw i32 %0, 2
   %2 = sub nuw nsw i32 28, %1
   %3 = shl nuw i32 15, %2
-  ret i32 %3
-}
-
-; 1 occurrences:
-; openspiel/optimized/TransTableL.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 3
-  %2 = sub i32 30, %1
-  %3 = shl nuw i32 3, %2
   ret i32 %3
 }
 

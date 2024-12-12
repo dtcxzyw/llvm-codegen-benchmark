@@ -19,21 +19,21 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$53, %rax
 	setne	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	testq	%rdi, %rdi
 	setns	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sarxq	%rsi, %rdi, %rax
 	cmpq	$1, %rax
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sarxq	%rsi, %rdi, %rax
 	cmpq	$1, %rax
 	setne	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sarxq	%rsi, %rdi, %rax
 	cmpq	$65, %rax
 	setl	%al

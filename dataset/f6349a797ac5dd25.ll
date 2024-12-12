@@ -10,11 +10,11 @@
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
   %3 = and i32 %2, 8192
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = or i32 %4, 49152
   ret i32 %5
 }
@@ -62,7 +62,7 @@ entry:
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2139095040
   %3 = icmp eq i32 %2, 0

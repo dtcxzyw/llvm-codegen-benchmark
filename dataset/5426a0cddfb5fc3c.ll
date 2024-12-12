@@ -3,7 +3,7 @@
 ; icu/optimized/ucnvbocu.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c7(i32 %0) #0 {
+define i32 @func0000000000000187(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
   %2 = sub i32 60, %0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c5(i32 %0) #0 {
+define i32 @func0000000000000185(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
   %2 = sub i32 28, %0

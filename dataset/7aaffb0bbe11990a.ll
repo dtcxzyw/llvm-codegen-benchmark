@@ -68,11 +68,10 @@ entry:
   ret i32 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; nix/optimized/build-remote.ll
 ; nix/optimized/export-import.ll
 ; nix/optimized/legacy-ssh-store.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/remote-store.ll
 ; nix/optimized/serialise.ll
 ; nix/optimized/serve-protocol-impl.ll

@@ -1,6 +1,7 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; graphviz/optimized/voronoi.c.ll
 ; gromacs/optimized/colvarcomp_coordnums.cpp.ll
@@ -23,7 +24,9 @@ entry:
   ret i8 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; icu/optimized/units_complexconverter.ll
 ; luau/optimized/ConstantFolding.cpp.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
@@ -38,10 +41,11 @@ entry:
   ret i8 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; icu/optimized/calendar.ll
 ; luau/optimized/ConstantFolding.cpp.ll
@@ -61,7 +65,8 @@ entry:
   ret i8 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/gregocal.ll
@@ -79,7 +84,8 @@ entry:
   ret i8 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; cvc5/optimized/statistics_registry.cpp.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; postgres/optimized/pgbench.ll
@@ -92,8 +98,23 @@ entry:
   ret i8 %3
 }
 
-; 7 occurrences:
+; 22 occurrences:
 ; arrow/optimized/compare.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; luau/optimized/ConstantFolding.cpp.ll
 ; openspiel/optimized/oos.cc.ll
 ; postgres/optimized/pgbench.ll

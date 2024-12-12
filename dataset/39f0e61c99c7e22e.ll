@@ -31,7 +31,7 @@
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -56,10 +56,10 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 2
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ugt i64 %3, %1
   %5 = select i1 %4, i64 3, i64 %0
   ret i64 %5
 }
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/transpose.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 4096
   %4 = icmp ult i64 %3, %1

@@ -43,7 +43,7 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 18 occurrences:
 ; git/optimized/read-cache.ll
 ; grpc/optimized/alts_iovec_record_protocol.cc.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
@@ -54,6 +54,14 @@ entry:
 ; qemu/optimized/block.c.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
 ; yosys/optimized/abc9_exe.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
@@ -73,6 +81,22 @@ entry:
   %3 = ashr exact i64 %2, 24
   %4 = add i64 %0, 1
   %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 5 occurrences:
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 32
+  %3 = ashr exact i64 %2, 32
+  %4 = add i64 %0, -1
+  %5 = add i64 %3, %4
   ret i64 %5
 }
 

@@ -22,7 +22,7 @@
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i64 %0) #0 {
+define i32 @func0000000000000084(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 3
   %2 = icmp eq i64 %1, 0
@@ -37,7 +37,7 @@ entry:
 ; abc/optimized/rsbDec6.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000047(i64 %0) #0 {
+define i32 @func0000000000000087(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 3
   %2 = icmp eq i64 %1, 0
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000046(i64 %0) #0 {
+define i32 @func0000000000000086(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 3
   %2 = icmp eq i64 %1, 0

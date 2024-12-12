@@ -1,5 +1,5 @@
 
-; 100 occurrences:
+; 101 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -100,6 +100,7 @@
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/packet-btavdtp.c.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i8 %0) #0 {
 entry:
@@ -109,7 +110,7 @@ entry:
   ret i1 %3
 }
 
-; 44 occurrences:
+; 48 occurrences:
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; graphviz/optimized/shapes.c.ll
 ; hdf5/optimized/H5Ztrans.c.ll
@@ -154,6 +155,10 @@ entry:
 ; wireshark/optimized/packet-zbee-security.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i8 %0) #0 {
 entry:

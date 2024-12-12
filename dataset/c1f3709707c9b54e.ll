@@ -1,14 +1,16 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/rx.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %1, %2
   %4 = zext i16 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -19,7 +21,7 @@ define i64 @func0000000000000000(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %1, %2
   %4 = zext i16 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -31,7 +33,7 @@ define i64 @func000000000000001c(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add nuw nsw i16 %1, %2
   %4 = zext nneg i16 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -42,7 +44,7 @@ define i64 @func000000000000001f(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add nuw nsw i16 %1, %2
   %4 = zext nneg i16 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

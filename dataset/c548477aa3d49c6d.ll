@@ -1,8 +1,7 @@
 
-; 109 occurrences:
+; 102 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/ivyHaig.c.ll
-; cmake/optimized/poll.c.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; darktable/optimized/introspection_flip.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
@@ -10,7 +9,6 @@
 ; icu/optimized/uprops.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libdeflate/optimized/deflate_compress.c.ll
-; libuv/optimized/poll.c.ll
 ; linux/optimized/8139too.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/array.ll
@@ -33,7 +31,6 @@
 ; linux/optimized/ldt.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/loop.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/md.ll
 ; linux/optimized/message.ll
 ; linux/optimized/nfs2xdr.ll
@@ -41,10 +38,8 @@
 ; linux/optimized/reg.ll
 ; linux/optimized/regset.ll
 ; linux/optimized/slub.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/super.ll
 ; linux/optimized/synaptics.ll
-; linux/optimized/sys_ia32.ll
 ; linux/optimized/taskstats.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/transport.ll
@@ -74,8 +69,6 @@
 ; minetest/optimized/CColorConverter.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; node/optimized/poll.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; openjdk/optimized/Ushort555Rgbx.ll
 ; openjdk/optimized/Ushort565Rgb.ll
@@ -119,7 +112,7 @@ entry:
   ret i32 %4
 }
 
-; 61 occurrences:
+; 60 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CompressionContextPoolSingletons.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
@@ -135,7 +128,6 @@ entry:
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll

@@ -13,7 +13,7 @@ entry:
   ret i64 %1
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/constpool.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
@@ -29,6 +29,7 @@ entry:
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; wasmtime-rs/optimized/1xbg7k9kapo8ag7l.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:
@@ -37,15 +38,12 @@ entry:
   ret i64 %2
 }
 
-; 4 occurrences:
-; cvc5/optimized/tangent_plane_check.cpp.ll
-; linux/optimized/nf_conntrack_sip.ll
-; linux/optimized/nf_nat_proto.ll
-; linux/optimized/nf_nat_sip.ll
+; 1 occurrences:
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0) #0 {
+define i64 @func0000000000000014(i64 %0) #0 {
 entry:
-  %1 = icmp ult i64 %0, 3
+  %1 = icmp slt i64 %0, 1
   %2 = zext i1 %1 to i64
   ret i64 %2
 }

@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	vfwcvt.f.f.v	v16, v8
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmflt.vf	v8, v16, fa5
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret
 .LCPI1_0:
 	.quad	0xbf1a36e2eb1c432d              # double -1.0E-4
@@ -40,7 +40,7 @@ func0000000000000008:                   # @func0000000000000008
 	vfwcvt.f.f.v	v16, v8
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfgt.vf	v8, v16, fa5
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret
 .LCPI4_0:
 	.quad	0x3fbeb851eb851eb8              # double 0.12

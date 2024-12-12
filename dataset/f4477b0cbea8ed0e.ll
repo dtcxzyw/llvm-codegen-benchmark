@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
 ; lief/optimized/ssl_msg.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind

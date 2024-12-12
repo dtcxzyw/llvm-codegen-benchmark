@@ -1,24 +1,18 @@
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	movzbl	%dl, %eax
-	leaq	5(%rax,%rsi), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	leaq	5(%rsi,%rax), %rax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movzbl	%dl, %eax
-	leaq	3(%rax,%rsi), %rax
-	cmpq	%rdi, %rax
+	leaq	3(%rsi,%rax), %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000088:                   # @func0000000000000088
 	movzbl	%dl, %eax
-	leaq	-1(%rax,%rsi), %rax
-	cmpq	%rdi, %rax
-	setb	%al
-	retq
-func0000000000000048:                   # @func0000000000000048
-	movzbl	%dl, %eax
-	leaq	-64(%rax,%rsi), %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	leaq	-64(%rsi,%rax), %rax
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

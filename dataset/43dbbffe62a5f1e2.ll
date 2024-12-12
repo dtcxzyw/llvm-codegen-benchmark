@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 83 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
@@ -23,8 +23,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -91,7 +89,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = sub nuw i64 %0, %5
   ret i64 %6
 }
@@ -105,7 +103,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = sub i64 %0, %5
   ret i64 %6
 }
@@ -119,7 +117,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = sub i64 %0, %5
   ret i64 %6
 }
@@ -132,7 +130,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = sub nuw i64 %0, %5
   ret i64 %6
 }

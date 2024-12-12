@@ -15,9 +15,8 @@ entry:
   ret i16 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; libevent/optimized/poll.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
@@ -44,9 +43,10 @@ entry:
   ret i16 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
 ; linux/optimized/drm_format_helper.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
@@ -81,7 +81,7 @@ entry:
 define i16 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }

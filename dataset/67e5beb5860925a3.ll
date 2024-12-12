@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000085(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -16,7 +16,7 @@ entry:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; openspiel/optimized/2048.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/shaderProperty.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-spice.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/message_size_filter.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c9(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000189(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/message_size_filter.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000012c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32

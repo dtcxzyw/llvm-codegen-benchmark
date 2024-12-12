@@ -2,7 +2,7 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vx	v10, v10, a0, v0.t
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a0, -50
@@ -32,7 +32,7 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vi	v10, v10, 4, v0.t
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000008:                   # @func0000000000000008
 	bseti	a0, zero, 32

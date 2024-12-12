@@ -1,7 +1,8 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
+; abseil-cpp/optimized/cordz_info.cc.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/IndexShards.cpp.ll
 ; faiss/optimized/IndexShardsIVF.cpp.ll
@@ -77,7 +78,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 1
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 

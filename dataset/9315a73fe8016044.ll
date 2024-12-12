@@ -22,13 +22,13 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0, i32 %1) #0 {
+define ptr @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
   %4 = and i64 %0, -2
   %5 = inttoptr i64 %4 to ptr
-  %6 = getelementptr nusw i64, ptr %5, i64 %3
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %3
   ret ptr %6
 }
 

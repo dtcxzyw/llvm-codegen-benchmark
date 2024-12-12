@@ -6,5 +6,5 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, 108
 	addi	a0, a0, -1967
 	vrsub.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

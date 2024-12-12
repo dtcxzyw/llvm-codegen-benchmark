@@ -3,3 +3,8 @@ func0000000000000078:                   # @func0000000000000078
 	mul	a1, a3, a1
 	srl	a0, a1, a0
 	ret
+func0000000000000010:                   # @func0000000000000010
+	addi	a3, a3, -1
+	mul	a1, a3, a1
+	srl	a0, a1, a0
+	ret

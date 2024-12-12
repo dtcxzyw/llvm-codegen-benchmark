@@ -3,7 +3,7 @@
 ; linux/optimized/hdac_sysfs.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %not. = xor i1 %1, true
@@ -19,7 +19,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-http_client.ll
 ; openssl/optimized/libcrypto-shlib-http_client.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 6
   %4 = select i1 %1, i1 %3, i1 false
@@ -342,7 +342,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 12351
   %not. = xor i1 %1, true
@@ -356,7 +356,7 @@ entry:
 ; oiio/optimized/tiffinput.cpp.ll
 ; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %not. = xor i1 %1, true
@@ -370,7 +370,7 @@ entry:
 ; oiio/optimized/tiffinput.cpp.ll
 ; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %not. = xor i1 %1, true
@@ -383,7 +383,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %not. = xor i1 %1, true

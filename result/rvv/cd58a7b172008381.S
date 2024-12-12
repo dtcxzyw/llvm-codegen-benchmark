@@ -49,6 +49,18 @@ func0000000000000003:                   # @func0000000000000003
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 0, v0
 	ret
+func0000000000000009:                   # @func0000000000000009
+	fli.d	fa5, inf
+	li	a0, 2
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmflt.vf	v10, v8, fa5
+	vmfgt.vf	v11, v8, fa5
+	bseti	a0, a0, 63
+	vmnor.mm	v0, v11, v10
+	vmv.v.x	v8, a0
+	bseti	a0, zero, 63
+	vmerge.vxm	v8, v8, a0, v0
+	ret
 func0000000000000007:                   # @func0000000000000007
 	fmv.d.x	fa5, zero
 	li	a0, 24
@@ -58,11 +70,11 @@ func0000000000000007:                   # @func0000000000000007
 	li	a0, 16
 	vmerge.vxm	v8, v8, a0, v0
 	ret
-.LCPI7_0:
+.LCPI8_0:
 	.quad	0x3ff657184ae74487              # double 1.3962634015954636
 func0000000000000005:                   # @func0000000000000005
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
+	lui	a0, %hi(.LCPI8_0)
+	fld	fa5, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmfle.vf	v10, v8, fa5
 	vmnot.m	v0, v10
@@ -70,11 +82,11 @@ func0000000000000005:                   # @func0000000000000005
 	vmerge.vim	v8, v8, 1, v0
 	vor.vi	v8, v8, 4
 	ret
-.LCPI8_0:
+.LCPI9_0:
 	.quad	0xbfe657184ae74487              # double -0.69813170079773179
 func000000000000000a:                   # @func000000000000000a
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
+	lui	a0, %hi(.LCPI9_0)
+	fld	fa5, %lo(.LCPI9_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmfle.vf	v0, v8, fa5
 	vmv.v.i	v8, 0

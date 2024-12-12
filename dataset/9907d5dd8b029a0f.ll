@@ -1,5 +1,5 @@
 
-; 91 occurrences:
+; 90 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -80,7 +80,6 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/gen8_ppgtt.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_fb.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll

@@ -60,6 +60,12 @@ func0000000000000008:                   # @func0000000000000008
 	vmv.v.x	v10, a0
 	vmadd.vx	v8, a0, v10
 	ret
+func0000000000000006:                   # @func0000000000000006
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v10, -12
+	li	a0, 12
+	vmadd.vx	v8, a0, v10
+	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a0, 88
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -72,29 +78,22 @@ func0000000000000002:                   # @func0000000000000002
 	vmv.v.x	v10, a0
 	vmadd.vx	v8, a0, v10
 	ret
-func000000000000000e:                   # @func000000000000000e
-	lui	a0, 244
-	addiw	a0, a0, 576
+func000000000000000d:                   # @func000000000000000d
+	li	a0, -48
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmadd.vx	v8, a0, v10
 	ret
-func000000000000000d:                   # @func000000000000000d
-	li	a0, -72
+func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v10, a0
+	vmv.v.i	v10, 12
+	li	a0, 12
 	vmadd.vx	v8, a0, v10
 	ret
 func0000000000000001:                   # @func0000000000000001
-	li	a0, 56
+	li	a0, -24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
-	vmadd.vx	v8, a0, v10
-	ret
-func0000000000000006:                   # @func0000000000000006
-	li	a0, -30
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v10, a0
-	li	a0, 30
+	li	a0, 24
 	vmadd.vx	v8, a0, v10
 	ret

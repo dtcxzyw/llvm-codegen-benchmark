@@ -1,11 +1,13 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_vignette.c.ll
 ; gromacs/optimized/expanded.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nori/optimized/textbox.cpp.ll
 ; opencv/optimized/detector.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:

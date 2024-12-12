@@ -51,21 +51,44 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul i64 %4, 112
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/dispersioncorrection.cpp.ll
-; gromacs/optimized/tng_compress.c.ll
 ; openusd/optimized/stbImage.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %1, %2
+  %4 = add nuw nsw i64 %0, %3
+  %5 = mul nuw i64 %4, 12
+  ret i64 %5
+}
+
+; 3 occurrences:
+; gromacs/optimized/forcerec.cpp.ll
+; openspiel/optimized/CalcTables.cpp.ll
+; openusd/optimized/testHioAvif.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %1, %2
+  %4 = add nuw nsw i64 %0, %3
+  %5 = mul nuw nsw i64 %4, 3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; gromacs/optimized/tng_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
-  %5 = mul i64 %4, 12
+  %4 = add nuw nsw i64 %0, %3
+  %5 = mul i64 %4, 12884901888
   ret i64 %5
 }
 
@@ -78,7 +101,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul nsw i64 %4, 3
   ret i64 %5
 }

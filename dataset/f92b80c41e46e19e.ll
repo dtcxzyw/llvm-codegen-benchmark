@@ -1,8 +1,7 @@
 
-%"class.cv::Point_.3566249" = type { float, float }
+%"class.cv::Point_.3746952" = type { float, float }
 
-; 2 occurrences:
-; icu/optimized/cal.ll
+; 1 occurrences:
 ; openspiel/optimized/maedn.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
@@ -14,9 +13,8 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/dmar.ll
-; linux/optimized/head64.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -35,7 +33,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = srem i32 %3, 4
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.cv::Point_.3566249", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.cv::Point_.3746952", ptr %0, i64 %5
   ret ptr %6
 }
 

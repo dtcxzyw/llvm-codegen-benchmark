@@ -1,4 +1,4 @@
-func0000000000000079:                   # @func0000000000000079
+func00000000000000f9:                   # @func00000000000000f9
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
@@ -9,7 +9,7 @@ func0000000000000079:                   # @func0000000000000079
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
@@ -22,7 +22,7 @@ func000000000000003c:                   # @func000000000000003c
 	retq
 .LCPI2_0:
 	.quad	7                               # 0x7
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
@@ -34,7 +34,7 @@ func0000000000000014:                   # @func0000000000000014
 	retq
 .LCPI3_0:
 	.quad	3                               # 0x3
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
@@ -44,7 +44,7 @@ func0000000000000034:                   # @func0000000000000034
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000039:                   # @func0000000000000039
+func0000000000000079:                   # @func0000000000000079
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
@@ -55,7 +55,7 @@ func0000000000000039:                   # @func0000000000000039
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000007c:                   # @func000000000000007c
+func00000000000000ec:                   # @func00000000000000ec
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
@@ -68,7 +68,7 @@ func000000000000007c:                   # @func000000000000007c
 	retq
 .LCPI6_0:
 	.quad	6                               # 0x6
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
@@ -78,7 +78,7 @@ func0000000000000038:                   # @func0000000000000038
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
@@ -89,7 +89,7 @@ func0000000000000074:                   # @func0000000000000074
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
@@ -100,7 +100,7 @@ func0000000000000011:                   # @func0000000000000011
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
@@ -111,7 +111,7 @@ func0000000000000031:                   # @func0000000000000031
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero

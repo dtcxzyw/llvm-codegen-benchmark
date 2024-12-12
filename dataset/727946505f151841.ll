@@ -121,7 +121,7 @@ entry:
   %2 = and i32 %1, 65280
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -254,7 +254,7 @@ entry:
   %2 = and i32 %1, 65280
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -262,24 +262,24 @@ entry:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a3(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2139095040
-  %3 = icmp ult i32 %2, 1065353216
+  %3 = icmp samesign ult i32 %2, 1065353216
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
 ; 1 occurrences:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2139095040
-  %3 = icmp ult i32 %2, 1065353216
+  %3 = icmp samesign ult i32 %2, 1065353216
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -291,7 +291,7 @@ entry:
   %2 = and i32 %1, 24
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -12,7 +12,7 @@ func0000000000000004:                   # @func0000000000000004
 	setae	%al
 	leal	3(%rax,%rax,2), %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movq	%rdi, %rax
 	imulq	%rsi, %rax
 	sarq	$63, %rax

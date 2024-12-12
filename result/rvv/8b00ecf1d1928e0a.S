@@ -1,6 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
+	li	a0, -32
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vmsleu.vi	v9, v10, 1
+	vmsltu.vx	v9, v10, a0
 	vmand.mm	v8, v8, v9
 	vmor.mm	v0, v0, v8
 	ret

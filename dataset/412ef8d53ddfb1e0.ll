@@ -1,5 +1,5 @@
 
-; 115 occurrences:
+; 114 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; clamav/optimized/hashtab.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -21,6 +21,7 @@
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_timer.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
@@ -43,8 +44,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -123,9 +122,10 @@ entry:
   ret i8 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/RISCVTargetParser.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:

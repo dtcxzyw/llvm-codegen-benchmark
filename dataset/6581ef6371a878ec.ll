@@ -1,10 +1,17 @@
 
-; 5 occurrences:
+; 12 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1uum3gw9a30ezdy8xtn1px0l6.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9jrz8x0nc5lkiswz6iqpo0zcg.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:

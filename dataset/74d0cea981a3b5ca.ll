@@ -12,8 +12,9 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; libpng/optimized/pngread.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; Function Attrs: nounwind

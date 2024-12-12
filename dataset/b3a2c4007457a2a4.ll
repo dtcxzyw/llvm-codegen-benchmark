@@ -6,7 +6,7 @@
 ; node/optimized/linux.ll
 ; slurm/optimized/ping_nodes.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq i64 %1, 0

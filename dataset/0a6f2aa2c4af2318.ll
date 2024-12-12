@@ -15,8 +15,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; openusd/optimized/bitreader_buffer.c.ll
 ; spike/optimized/clint.ll
 ; wireshark/optimized/packet-usb-hid.c.ll
@@ -24,7 +25,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = shl i32 %4, 3
   ret i32 %5
 }

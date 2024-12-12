@@ -26,6 +26,12 @@ func000000000000000e:                   # @func000000000000000e
 	andq	%rsi, %rdi
 	andq	%rdi, %rax
 	retq
+func0000000000000011:                   # @func0000000000000011
+	incb	%dl
+	andq	%rsi, %rdi
+	shrxq	%rdx, %rdi, %rax
+	shlxq	%rdx, %rax, %rax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	incb	%dl
 	andq	%rsi, %rdi

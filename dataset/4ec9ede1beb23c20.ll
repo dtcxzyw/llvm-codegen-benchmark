@@ -1,30 +1,63 @@
 
-%"struct.OT::IntType.0.2622262" = type { %struct.BEInt.1.2622266 }
-%struct.BEInt.1.2622266 = type { [2 x i8] }
-%class.symbol.3428956 = type { ptr }
+%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
+%struct.BEInt.1.2735703 = type { [2 x i8] }
+%class.btVector3.2818499 = type { [4 x float] }
+%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
+%class.symbol.3613505 = type { ptr }
 
-; 9 occurrences:
-; bullet3/optimized/btMultiBody.ll
+; 7 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
-; lief/optimized/rsa.c.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000ff(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %2, i64 %1
-  %4 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %3 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %2, i64 %1
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 
-; 47 occurrences:
-; opencv/optimized/connectedcomponents.cpp.ll
+; 1 occurrences:
+; bullet3/optimized/btMultiBody.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000af(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw %class.btVector3.2818499, ptr %2, i64 %1
+  %4 = getelementptr nusw %class.btVector3.2818499, ptr %3, i64 %1
+  %5 = getelementptr nuw %struct.btSpatialMotionVector.2818501, ptr %4, i64 %0, i32 0, i32 0, i64 2
+  ret ptr %5
+}
+
+; 1 occurrences:
+; bullet3/optimized/btMultiBody.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ab(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw %class.btVector3.2818499, ptr %2, i64 %1
+  %4 = getelementptr nusw %class.btVector3.2818499, ptr %3, i64 %1
+  %5 = getelementptr %class.btVector3.2818499, ptr %4, i64 %0, i32 0, i64 2
+  ret ptr %5
+}
+
+; 1 occurrences:
+; lief/optimized/rsa.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fb(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 46 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
 ; z3/optimized/asserted_formulas.cpp.ll
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
@@ -72,12 +105,25 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a0(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000f0(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw ptr, ptr %2, i64 %1
-  %4 = getelementptr nusw %class.symbol.3428956, ptr %3, i64 %1
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw %class.symbol.3613505, ptr %3, i64 %1
   %5 = getelementptr ptr, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 -8
+  ret ptr %6
+}
+
+; 2 occurrences:
+; opencv/optimized/connectedcomponents.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000a0(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %0
+  %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
 

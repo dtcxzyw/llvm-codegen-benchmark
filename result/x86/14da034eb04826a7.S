@@ -1,22 +1,22 @@
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000001d4:                   # @func00000000000001d4
 	addl	$-1075, %esi                    # imm = 0xFBCD
 	shrl	$6, %esi
 	cmpl	%edi, %esi
 	setb	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000d8:                   # @func00000000000000d8
 	addl	$64, %esi
 	shrl	$6, %esi
 	cmpl	%edi, %esi
 	seta	%al
 	retq
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000034a:                   # @func000000000000034a
 	incl	%esi
 	shrl	%esi
 	cmpl	%edi, %esi
 	setg	%al
 	retq
-func0000000000000196:                   # @func0000000000000196
+func0000000000000326:                   # @func0000000000000326
 	incl	%esi
 	shrl	$12, %esi
 	cmpl	%edi, %esi

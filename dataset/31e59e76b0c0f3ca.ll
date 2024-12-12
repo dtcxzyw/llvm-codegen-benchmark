@@ -1,6 +1,7 @@
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
+; arrow/optimized/light_array.cc.ll
 ; cmake/optimized/hostip.c.ll
 ; cmake/optimized/nghttp2_stream.c.ll
 ; cpython/optimized/typeobject.ll
@@ -31,9 +32,7 @@
 ; openjdk/optimized/loopnode.ll
 ; openjdk/optimized/subnode.ll
 ; openssl/optimized/libcrypto-lib-encode.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-encode.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/dataSourceAttribute.cpp.ll
 ; openusd/optimized/dataSourceLegacyPrim.cpp.ll
@@ -70,7 +69,7 @@
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, 7
   ret i64 %4
 }
@@ -85,7 +84,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw i64 %3, 1
   ret i64 %4
 }
@@ -102,26 +101,8 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add i64 %3, 4611686018427387904
-  ret i64 %4
-}
-
-; 8 occurrences:
-; hyperscan/optimized/program_runtime.c.ll
-; libquic/optimized/time_support.c.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; opencv/optimized/sift.dispatch.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; openusd/optimized/av1_scale.c.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
-  %4 = add nuw nsw i64 %3, 68569
   ret i64 %4
 }
 
@@ -201,7 +182,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 2048
   ret i64 %4
 }
@@ -215,7 +196,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nsw i64 %3, -1000000000
   ret i64 %4
 }
@@ -230,8 +211,24 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw nsw i64 %3, 160
+  ret i64 %4
+}
+
+; 6 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
+; libquic/optimized/time_support.c.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; opencv/optimized/sift.dispatch.cpp.ll
+; openusd/optimized/av1_scale.c.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = add nsw i64 %0, %2
+  %4 = add nuw nsw i64 %3, 68569
   ret i64 %4
 }
 
@@ -241,7 +238,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nuw i64 %3, 16
   ret i64 %4
 }

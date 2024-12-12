@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 42 occurrences:
 ; clamav/optimized/unzip.c.ll
 ; curl/optimized/libcurl_la-mqtt.ll
 ; linux/optimized/interrupt.ll
@@ -33,16 +33,25 @@
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wolfssl/optimized/client.c.ll
 ; wolfssl/optimized/server.c.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = trunc i32 %2 to i8
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
-; 11 occurrences:
+; 16 occurrences:
 ; libpng/optimized/pngrtran.c.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -54,12 +63,17 @@ entry:
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
   %3 = trunc nuw i32 %2 to i8
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -67,11 +81,11 @@ entry:
 ; minetest/optimized/content_mapblock.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
   %3 = trunc nuw i32 %2 to i8
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp ugt i8 %0, %3
   ret i1 %4
 }
 
@@ -82,11 +96,11 @@ entry:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; yosys/optimized/ezminisat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 31
   %3 = trunc nuw nsw i32 %2 to i8
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -100,7 +114,7 @@ define i1 @func0000000000000008(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = trunc i32 %2 to i8
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp ugt i8 %0, %3
   ret i1 %4
 }
 
@@ -113,7 +127,7 @@ define i1 @func000000000000000c(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = trunc i32 %2 to i8
-  %4 = icmp ne i8 %3, %0
+  %4 = icmp ne i8 %0, %3
   ret i1 %4
 }
 
@@ -123,11 +137,11 @@ entry:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = trunc nuw i32 %2 to i8
-  %4 = icmp ugt i8 %3, %0
+  %4 = icmp ult i8 %0, %3
   ret i1 %4
 }
 
@@ -138,7 +152,7 @@ define i1 @func0000000000000005(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = trunc i32 %2 to i8
-  %4 = icmp uge i8 %3, %0
+  %4 = icmp ule i8 %0, %3
   ret i1 %4
 }
 
@@ -149,7 +163,7 @@ define i1 @func0000000000000009(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = trunc i32 %2 to i8
-  %4 = icmp ule i8 %3, %0
+  %4 = icmp uge i8 %0, %3
   ret i1 %4
 }
 
@@ -161,7 +175,7 @@ define i1 @func0000000000000004(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = trunc i32 %2 to i8
-  %4 = icmp ugt i8 %3, %0
+  %4 = icmp ult i8 %0, %3
   ret i1 %4
 }
 

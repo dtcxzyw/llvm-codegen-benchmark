@@ -1,8 +1,8 @@
 
-%struct.code.2765430 = type { i8, i8, i16 }
-%struct.UT_hash_bucket.2860052 = type { ptr, i32, i32 }
-%struct.list_head.3243648 = type { ptr, ptr }
-%struct.code.3347009 = type { i8, i8, i16 }
+%struct.code.2877665 = type { i8, i8, i16 }
+%struct.UT_hash_bucket.3054026 = type { ptr, i32, i32 }
+%struct.list_head.3435077 = type { ptr, ptr }
+%struct.code.3535564 = type { i8, i8, i16 }
 
 ; 6 occurrences:
 ; abc/optimized/inftrees.c.ll
@@ -12,12 +12,12 @@
 ; libquic/optimized/inftrees.c.ll
 ; zlib/optimized/inftrees.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %struct.code.2765430, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nusw nuw %struct.code.2877665, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -28,12 +28,12 @@ entry:
 ; llvm/optimized/ASTWriter.cpp.ll
 ; openmpi/optimized/tm_malloc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %struct.UT_hash_bucket.2860052, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nusw nuw %struct.UT_hash_bucket.3054026, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.list_head.3243648, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.list_head.3435077, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -58,9 +58,9 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.code.3347009, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.code.3535564, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

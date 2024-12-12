@@ -1,4 +1,4 @@
-func00000000000002f1:                   # @func00000000000002f1
+func00000000000005e1:                   # @func00000000000005e1
 	sh3add	a0, a1, a0
 	slli	a2, a2, 3
 	sub	a1, a0, a2
@@ -6,7 +6,7 @@ func00000000000002f1:                   # @func00000000000002f1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000006a8:                   # @func00000000000006a8
+func0000000000000d68:                   # @func0000000000000d68
 	sh2add	a0, a1, a0
 	slli	a2, a2, 2
 	sub	a1, a0, a2

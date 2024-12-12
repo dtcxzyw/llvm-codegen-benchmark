@@ -1,11 +1,11 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	addq	%rdx, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000034c:                   # @func000000000000034c
+func0000000000000e8c:                   # @func0000000000000e8c
 	addq	%rdx, %rsi
 	cmpq	$3, %rsi
 	setb	%cl
@@ -13,7 +13,7 @@ func000000000000034c:                   # @func000000000000034c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000003c4:                   # @func00000000000003c4
+func0000000000000d94:                   # @func0000000000000d94
 	addq	%rdx, %rsi
 	cmpq	$3, %rsi
 	setb	%cl
@@ -21,7 +21,7 @@ func00000000000003c4:                   # @func00000000000003c4
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addq	%rdx, %rsi
 	cmpq	$255, %rsi
 	setb	%cl
@@ -29,21 +29,21 @@ func0000000000000014:                   # @func0000000000000014
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	addq	%rdx, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000016c:                   # @func000000000000016c
+func00000000000004cc:                   # @func00000000000004cc
 	addq	%rdx, %rsi
 	sets	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	addq	%rdx, %rsi
 	testq	%rsi, %rsi
 	setg	%cl
@@ -51,21 +51,21 @@ func00000000000000ca:                   # @func00000000000000ca
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000001ac:                   # @func00000000000001ac
+func000000000000054c:                   # @func000000000000054c
 	addq	%rdx, %rsi
 	setg	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000001ca:                   # @func00000000000001ca
+func000000000000058a:                   # @func000000000000058a
 	addq	%rdx, %rsi
 	setg	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	addq	%rdx, %rsi
 	cmpq	$1073741824, %rsi               # imm = 0x40000000
 	setae	%cl
@@ -73,7 +73,7 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	addq	%rdx, %rsi
 	setne	%cl
 	testq	%rdi, %rdi

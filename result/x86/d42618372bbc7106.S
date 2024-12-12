@@ -4,7 +4,7 @@ func0000000000000010:                   # @func0000000000000010
 	cltq
 	leaq	-12(%rdi,%rax,4), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	sarl	$16, %esi
 	leal	(%rsi,%rsi,2), %eax
 	cltq

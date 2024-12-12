@@ -1,8 +1,7 @@
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	shl	v2.8h, v2.8h, #8
-	orr	v2.16b, v2.16b, v1.16b
-	ssubl2	v1.4s, v2.8h, v0.8h
-	ssubl	v0.4s, v2.4h, v0.4h
+	orr	w8, w1, w2, lsl #8
+	sxth	w8, w8
+	sub	w0, w8, w0, sxth
 	ret
                                         // -- End function

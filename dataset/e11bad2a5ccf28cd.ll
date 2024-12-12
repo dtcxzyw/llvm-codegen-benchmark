@@ -1,6 +1,7 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaSimBase.c.ll
+; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; ncnn/optimized/deconvolution_x86.cpp.ll
 ; openjdk/optimized/macro.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
@@ -14,10 +15,9 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/mballoc.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openusd/optimized/restoration.c.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; Function Attrs: nounwind

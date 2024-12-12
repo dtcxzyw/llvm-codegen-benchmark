@@ -1,5 +1,7 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/gmx_spatial.cpp.ll
@@ -21,7 +23,7 @@ define double @func0000000000000001(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 
@@ -32,7 +34,7 @@ define double @func0000000000000000(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 
@@ -45,7 +47,7 @@ define double @func0000000000000003(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

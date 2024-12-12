@@ -1,23 +1,20 @@
+func0000000000000028:                   // @func0000000000000028
+// %bb.0:                               // %entry
+	lsr	x8, x2, #32
+	tst	w1, #0x1
+	csel	x8, x2, x8, ne
+	cmp	x8, #16, lsl #12                // =65536
+	csel	x8, x8, x0, lo
+	lsr	x0, x8, #8
+	ret
+                                        // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	ushll	v2.4s, v2.4h, #0
-	ushr	v6.2d, v4.2d, #32
-	mov	w8, #65536                      // =0x10000
-	ushr	v7.2d, v3.2d, #32
-	ushll	v5.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	shl	v5.2d, v5.2d, #63
-	shl	v2.2d, v2.2d, #63
-	cmlt	v5.2d, v5.2d, #0
-	cmlt	v2.2d, v2.2d, #0
-	bif	v3.16b, v7.16b, v5.16b
-	bsl	v2.16b, v4.16b, v6.16b
-	dup	v4.2d, x8
-	cmhi	v5.2d, v4.2d, v2.2d
-	cmhi	v4.2d, v4.2d, v3.2d
-	bit	v0.16b, v3.16b, v4.16b
-	bit	v1.16b, v2.16b, v5.16b
-	ushr	v1.2d, v1.2d, #8
-	ushr	v0.2d, v0.2d, #8
+	lsr	x8, x2, #32
+	tst	w1, #0x1
+	csel	x8, x2, x8, ne
+	cmp	x8, #16, lsl #12                // =65536
+	csel	x8, x8, x0, lo
+	lsr	x0, x8, #8
 	ret
                                         // -- End function

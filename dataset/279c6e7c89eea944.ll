@@ -1,17 +1,14 @@
 
-; 25 occurrences:
+; 21 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; freetype/optimized/truetype.c.ll
 ; icu/optimized/ucnv_lmb.ll
 ; libevent/optimized/http.c.ll
 ; linux/optimized/apic.ll
 ; linux/optimized/processor_perflib.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
-; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nlohmann_json/optimized/unit-class_parser.cpp.ll
@@ -19,7 +16,6 @@
 ; nlohmann_json/optimized/unit-udt.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; openjdk/optimized/loopnode.ll
-; openjdk/optimized/verifier.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll

@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; libwebp/optimized/sharpyuv.c.ll
+; 8 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll

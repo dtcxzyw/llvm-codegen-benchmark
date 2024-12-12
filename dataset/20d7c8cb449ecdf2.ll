@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; libquic/optimized/cfb64ede.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; oiio/optimized/icoinput.cpp.ll
 ; openssl/optimized/libcrypto-lib-cfb64ede.ll
 ; openssl/optimized/libcrypto-shlib-cfb64ede.ll

@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 35 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -31,6 +31,8 @@
 ; spike/optimized/mmu.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind

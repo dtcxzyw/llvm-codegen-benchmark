@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/src.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/mprotect.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -11,7 +12,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4503599627370495
   %3 = or disjoint i64 %2, 4503599627370496
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 

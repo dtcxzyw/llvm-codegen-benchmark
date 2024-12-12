@@ -24,7 +24,7 @@ entry:
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; openspiel/optimized/spades.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %3

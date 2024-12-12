@@ -13,7 +13,7 @@
 define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp ult i32 %3, 4
   ret i1 %4
 }
@@ -28,10 +28,10 @@ entry:
 ; slurm/optimized/affinity.ll
 ; slurm/optimized/dist_tasks.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -46,7 +46,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -55,10 +55,10 @@ entry:
 ; qemu/optimized/ui_cursor.c.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -69,10 +69,10 @@ entry:
 ; slurm/optimized/job_info.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -81,10 +81,10 @@ entry:
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -94,11 +94,11 @@ entry:
 ; softposit-rs/optimized/3yl6353p3hwrtv6y.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000f4(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
-  %4 = icmp ult i32 %3, 536870912
+  %3 = mul nuw nsw i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 536870912
   ret i1 %4
 }
 
@@ -106,11 +106,11 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; slurm/optimized/dist_tasks.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
-  %4 = icmp ugt i32 %3, 1
+  %3 = mul nuw nsw i32 %0, %2
+  %4 = icmp samesign ugt i32 %3, 1
   ret i1 %4
 }
 
@@ -122,8 +122,19 @@ entry:
 define i1 @func0000000000000008(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp ugt i32 %3, 16777215
+  ret i1 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_label.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = mul nuw i32 %0, %2
+  %4 = icmp ult i32 %3, 64
   ret i1 %4
 }
 
@@ -133,10 +144,10 @@ entry:
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; redis/optimized/memtest.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -144,10 +155,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp sgt i32 %3, 7
   ret i1 %4
 }
@@ -155,10 +166,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-s7comm_szl_ids.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -172,7 +183,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -180,10 +191,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ich8lan.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp ugt i32 %3, 1023
   ret i1 %4
 }
@@ -191,10 +202,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/i915_gem_context.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -205,7 +216,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp slt i32 %3, 1
   ret i1 %4
 }
@@ -213,10 +224,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_fb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -224,21 +235,21 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_vdsc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
-  %4 = icmp ult i32 %3, 30000
+  %3 = mul nuw nsw i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 30000
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   %4 = icmp ugt i32 %3, 715827882
   ret i1 %4
 }

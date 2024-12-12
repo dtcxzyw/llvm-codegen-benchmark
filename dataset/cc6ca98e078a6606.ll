@@ -17,10 +17,10 @@
 ; openusd/optimized/vertexAdjacency.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i32 0, i32 %0
   ret i32 %5
 }
@@ -42,42 +42,39 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i32 -1, i32 %0
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/idr.ll
-; openblas/optimized/dlarrd.c.ll
 ; openssl/optimized/libcrypto-lib-bio_lib.ll
 ; openssl/optimized/libcrypto-shlib-bio_lib.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %4, i32 -1, i32 %0
   ret i32 %5
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; arrow/optimized/key_hash_avx2.cc.ll
+; boost/optimized/cmdline.ll
 ; cvc5/optimized/sygus_unif_strat.cpp.ll
-; hyperscan/optimized/fdr_engine_description.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libwebp/optimized/demux.c.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/follow_stream_dialog.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %4, i32 2147483647, i32 %0
   ret i32 %5
 }
@@ -90,7 +87,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %4, i32 0, i32 %0
   ret i32 %5
 }
@@ -98,10 +95,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000034(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %4, i32 0, i32 %0
   ret i32 %5
 }
@@ -112,7 +109,7 @@ entry:
 define i32 @func0000000000000009(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %.not = icmp ugt i64 %3, %1
+  %.not = icmp ult i64 %1, %3
   %4 = select i1 %.not, i32 %0, i32 0
   ret i32 %4
 }
@@ -123,9 +120,32 @@ entry:
 define i32 @func000000000000000c(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %.not = icmp eq i64 %3, %1
+  %.not = icmp eq i64 %1, %3
   %4 = select i1 %.not, i32 %0, i32 -1
   ret i32 %4
+}
+
+; 2 occurrences:
+; hyperscan/optimized/fdr_engine_description.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = icmp samesign ugt i64 %1, %3
+  %5 = select i1 %4, i32 0, i32 %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; openblas/optimized/dlarrd.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000038(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp samesign ugt i64 %1, %3
+  %5 = select i1 %4, i32 1, i32 %0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

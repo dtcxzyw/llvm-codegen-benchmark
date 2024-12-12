@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 2, %1
   %3 = shl i32 %0, 1
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/gifalloc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = shl nsw i32 %0, 1
@@ -25,7 +25,7 @@ entry:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/luckyRead.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000121(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = shl nsw i32 %0, 2
@@ -49,7 +49,7 @@ entry:
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = shl i32 %0, 1
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/tile_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cb(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 64, %1
   %3 = shl i32 %0, 2
@@ -74,7 +74,7 @@ entry:
 ; openmpi/optimized/nbc_iallreduce.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = shl i32 %0, 1
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/coll_base_barrier.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000106(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = shl i32 %0, 1
@@ -97,7 +97,7 @@ entry:
 ; openmpi/optimized/coll_base_reduce.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = shl nsw i32 %0, 1
@@ -108,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/huffman.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = shl i32 %0, 1

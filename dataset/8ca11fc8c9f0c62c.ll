@@ -1,5 +1,5 @@
 
-; 1085 occurrences:
+; 1084 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -59,6 +59,8 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_body.cpp.ll
 ; box2d/optimized/b2_circle_shape.cpp.ll
 ; box2d/optimized/b2_collide_circle.cpp.ll
@@ -495,17 +497,12 @@
 ; gromacs/optimized/simd_prune_kernel.cpp.ll
 ; gromacs/optimized/slae2.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
-; gromacs/optimized/slartg.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/slasd5.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
-; gromacs/optimized/slasq1.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
-; gromacs/optimized/slassq.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; gromacs/optimized/snrm2.cpp.ll
@@ -542,6 +539,7 @@
 ; llama.cpp/optimized/train.cpp.ll
 ; luau/optimized/Conformance.test.cpp.ll
 ; luau/optimized/lmathlib.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
@@ -575,7 +573,6 @@
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -799,7 +796,6 @@
 ; oiio/optimized/targainput.cpp.ll
 ; oiio/optimized/targaoutput.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; openblas/optimized/slamch.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
@@ -1084,7 +1080,10 @@
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
-; zxing/optimized/ResultPoint.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:

@@ -42,6 +42,12 @@ func000000000000003d:                   # @func000000000000003d
 	vmnot.m	v8, v16
 	vmorn.mm	v0, v8, v20
 	ret
+func000000000000002c:                   # @func000000000000002c
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vv	v20, v16, v12
+	vmfle.vv	v16, v12, v8
+	vmor.mm	v0, v16, v20
+	ret
 func000000000000005b:                   # @func000000000000005b
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vv	v20, v16, v12

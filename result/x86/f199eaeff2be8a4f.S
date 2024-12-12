@@ -6,7 +6,15 @@ func000000000000000a:                   # @func000000000000000a
 	divq	%rcx
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000000b:                   # @func000000000000000b
+	movq	%rdx, %rcx
+	movq	%rsi, %rax
+	incq	%rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	addq	%rdi, %rax
+	retq
+func000000000000001b:                   # @func000000000000001b
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx

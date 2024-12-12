@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 84 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/mioUtils.c.ll
@@ -40,6 +40,7 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/predictor_enc.c.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; minetest/optimized/CCameraSceneNode.cpp.ll
 ; minetest/optimized/collision.cpp.ll

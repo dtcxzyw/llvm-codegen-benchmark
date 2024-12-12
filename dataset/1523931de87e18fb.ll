@@ -1,7 +1,9 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; ockam-rs/optimized/445trp5tofqtvmh3.ll
 ; openjdk/optimized/defNewGeneration.ll
 ; openjdk/optimized/g1FullGCMarker.ll
 ; openjdk/optimized/g1FullGCOopClosures.ll
@@ -19,7 +21,6 @@
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
-; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll

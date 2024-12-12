@@ -1,4 +1,4 @@
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	vpextrd	$1, %xmm1, %ecx
 	movl	$1048576, %eax                  # imm = 0x100000
 	xorl	%edx, %edx
@@ -27,25 +27,25 @@ func0000000000000074:                   # @func0000000000000074
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpextrd	$1, %xmm1, %ecx
-	movl	$128, %eax
+	movl	$8, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm1, %esi
-	movl	$128, %eax
+	movl	$8, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm2
 	vpinsrd	$1, %ecx, %xmm2, %xmm2
 	vpextrd	$2, %xmm1, %ecx
-	movl	$128, %eax
+	movl	$8, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm2, %xmm2
 	vpextrd	$3, %xmm1, %ecx
-	movl	$128, %eax
+	movl	$8, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm1

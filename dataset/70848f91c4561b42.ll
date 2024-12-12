@@ -6,10 +6,22 @@
 ; qemu/optimized/chardev_char-hmp-cmds.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -26
   %4 = icmp ult i8 %1, -10
+  %5 = and i1 %4, %3
+  %6 = or i1 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/verifier.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, -8
+  %4 = icmp ult i8 %1, -5
   %5 = and i1 %4, %3
   %6 = or i1 %5, %0
   ret i1 %6
@@ -42,12 +54,12 @@ entry:
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 4
   %4 = icmp eq i8 %1, 8
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -56,12 +68,12 @@ entry:
 ; node/optimized/libnode.crypto_common.ll
 ; php/optimized/url.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000118(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 6
   %4 = icmp ne i8 %1, 95
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -70,12 +82,12 @@ entry:
 ; git/optimized/refs.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp eq i8 %1, 0
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -83,38 +95,12 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 1
   %4 = icmp ugt i8 %1, 31
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; simdjson/optimized/simdjson.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000102(i1 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ugt i8 %2, -97
-  %4 = icmp eq i8 %1, -19
-  %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 3 occurrences:
-; hermes/optimized/IREval.cpp.ll
-; simdjson/optimized/simdjson.cpp.ll
-; wireshark/optimized/packet-mac-lte.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ult i8 %2, -96
-  %4 = icmp eq i8 %1, -32
-  %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -123,24 +109,25 @@ entry:
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 3
   %4 = icmp ne i8 %1, 0
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 1 occurrences:
-; llvm/optimized/SLPVectorizer.cpp.ll
+; 2 occurrences:
+; hermes/optimized/IREval.cpp.ll
+; wireshark/optimized/packet-mac-lte.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ne i8 %2, 12
-  %4 = icmp ult i8 %1, 22
+  %3 = icmp ult i8 %2, 2
+  %4 = icmp eq i8 %1, 113
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -148,7 +135,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -1
   %4 = icmp ne i8 %1, -1

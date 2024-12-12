@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 37 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
@@ -23,20 +23,18 @@
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/TargetTransformInfo.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
-; ockam-rs/optimized/3mmfh9oxbbu2kjan.ll
-; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/ray.cpp.ll
 ; osqp/optimized/vector.c.ll
 ; sqlite/optimized/sqlite3.ll
+; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 131 occurrences:
+; 135 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/extraBddThresh.c.ll
@@ -28,8 +28,11 @@
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
@@ -38,6 +41,7 @@
 ; llvm/optimized/StatepointLowering.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; openjdk/optimized/bitMap.ll
 ; openjdk/optimized/xHeap.ll
@@ -135,8 +139,8 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %1
-  %5 = and i64 %4, %0
+  %4 = and i64 %1, %3
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

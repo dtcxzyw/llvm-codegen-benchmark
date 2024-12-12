@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
   %3 = icmp ugt i32 %2, 1114111
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 268435440
   %3 = icmp ne i32 %2, 0
@@ -29,7 +29,7 @@ entry:
 ; php/optimized/avifinfo.ll
 ; wireshark/optimized/packet-per.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 16777215
   %2 = icmp eq i32 %.mask, 0
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/avifinfo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 16777215
   %2 = icmp eq i32 %.mask, 0

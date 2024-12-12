@@ -33,10 +33,10 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func00000000000000da:                   # @func00000000000000da
+func000000000000005b:                   # @func000000000000005b
 	sext.w	a2, a2
-	slli	a1, a1, 4
-	slli	a2, a2, 4
+	slli	a1, a1, 5
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

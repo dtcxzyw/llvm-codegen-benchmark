@@ -4,23 +4,36 @@
 ; openspiel/optimized/colored_trails.cc.ll
 ; openspiel/optimized/colored_trails_board_generator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, %1
   %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; openspiel/optimized/colored_trails_board_generator.cc.ll
+; openspiel/optimized/garnet.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000188(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, %1
+  %4 = trunc i64 %3 to i32
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65535
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp ne i32 %5, %0
+  %6 = icmp ne i32 %0, %5
   ret i1 %6
 }
 
@@ -56,11 +69,11 @@ entry:
 ; openspiel/optimized/tabular_sarsa.cc.ll
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, %1
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -74,30 +87,28 @@ entry:
 ; openspiel/optimized/tabular_sarsa.cc.ll
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, %1
   %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; openspiel/optimized/colored_trails.cc.ll
-; openspiel/optimized/colored_trails_board_generator.cc.ll
 ; openspiel/optimized/fsicfr.cc.ll
-; openspiel/optimized/garnet.cc.ll
 ; openspiel/optimized/random_uci_bot.cc.ll
 ; openspiel/optimized/tabular_q_learning.cc.ll
 ; openspiel/optimized/tabular_q_learning_test.cc.ll
 ; openspiel/optimized/tabular_sarsa.cc.ll
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000198(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, %1
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ugt i32 %0, %4
   ret i1 %5
 }
 

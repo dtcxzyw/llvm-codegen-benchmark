@@ -1,5 +1,5 @@
 
-; 533 occurrences:
+; 537 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
@@ -26,6 +26,9 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/localization_backend.ll
+; boost/optimized/partition.ll
+; boost/optimized/range.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
@@ -46,6 +49,7 @@
 ; ceres/optimized/inner_product_computer.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
+; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmUVProcessChain.cxx.ll
 ; cmake/optimized/protocol_events.cpp.ll
 ; cmake/optimized/protocol_requests.cpp.ll
@@ -224,7 +228,6 @@
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -247,6 +250,7 @@
 ; minetest/optimized/sidebyside.cpp.ll
 ; minetest/optimized/static_text.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
+; nix/optimized/search.ll
 ; ocio/optimized/ConfigUtils.cpp.ll
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
@@ -323,6 +327,7 @@
 ; openspiel/optimized/external_sampling_mccfr.cc.ll
 ; openspiel/optimized/fsicfr.cc.ll
 ; openspiel/optimized/goofspiel.cc.ll
+; openspiel/optimized/kuhn_poker.cc.ll
 ; openspiel/optimized/markov_soccer.cc.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; openspiel/optimized/oh_hell.cc.ll
@@ -354,7 +359,6 @@
 ; quantlib/optimized/exerciseadapter.ll
 ; quantlib/optimized/fdmsimpleprocess1dmesher.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dcapfloorengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/himalayaoption.ll

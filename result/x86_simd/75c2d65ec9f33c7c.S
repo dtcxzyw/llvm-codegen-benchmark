@@ -40,7 +40,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	vptestnmq	.LCPI0_1(%rip){1to4}, %ymm1, %k1
 	vptestmd	%xmm0, %xmm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0

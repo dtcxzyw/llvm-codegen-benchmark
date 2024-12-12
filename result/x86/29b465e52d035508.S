@@ -10,16 +10,16 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%sil, %al
 	retq
+func0000000000000001:                   # @func0000000000000001
+	testl	%edx, %edx
+	sete	%al
+	andl	%esi, %edi
+	andb	%dil, %al
+	retq
 func0000000000000004:                   # @func0000000000000004
 	andl	%edx, %esi
 	cmpl	$8, %edi
 	setb	%al
-	andb	%sil, %al
-	retq
-func0000000000000001:                   # @func0000000000000001
-	andl	%edx, %esi
-	cmpl	$1, %edi
-	sete	%al
 	andb	%sil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006

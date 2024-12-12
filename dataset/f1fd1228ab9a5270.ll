@@ -53,7 +53,6 @@
 ; openusd/optimized/primIndex.cpp.ll
 ; openusd/optimized/primRange.cpp.ll
 ; openusd/optimized/primSpec.cpp.ll
-; openusd/optimized/primTypeIndex.cpp.ll
 ; openusd/optimized/primvarsAPI.cpp.ll
 ; openusd/optimized/relationshipSpec.cpp.ll
 ; openusd/optimized/renderSettingsFilteringSceneIndex.cpp.ll
@@ -81,12 +80,13 @@
 ; openusd/optimized/testUsdValidationRegistry.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; openusd/optimized/xformCache.cpp.ll
+; qemu/optimized/hw_audio_ac97.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = lshr i32 %1, 16
-  %3 = mul nuw nsw i32 %2, 7152
+  %2 = lshr i32 %1, 4
+  %3 = mul nuw nsw i32 %2, 24
   ret i32 %3
 }
 

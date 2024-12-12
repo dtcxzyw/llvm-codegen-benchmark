@@ -10,7 +10,9 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; linux/optimized/g4x_hdmi.ll
 ; postgres/optimized/dt_common.ll
 ; quantlib/optimized/date.ll

@@ -1,7 +1,5 @@
 
-%"class.mitsuba::ref.74.2487081" = type { ptr }
-
-; 1127 occurrences:
+; 1123 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/ivyCutTrav.c.ll
 ; abc/optimized/wlcStdin.c.ll
@@ -29,6 +27,7 @@
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/calculate_point_order.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -146,7 +145,6 @@
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
-; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestFixedVector.cpp.ll
@@ -203,16 +201,12 @@
 ; grpc/optimized/rls.cc.ll
 ; grpc/optimized/server.cc.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
-; hermes/optimized/CharacterProperties.cpp.ll
-; hermes/optimized/CommandLine.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
-; hermes/optimized/ES6Class.cpp.ll
 ; hermes/optimized/ESTreeIRGen.cpp.ll
 ; hermes/optimized/GCBase.cpp.ll
 ; hermes/optimized/HBC.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/HermesInternal.cpp.ll
-; hermes/optimized/RegExp.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
 ; hermes/optimized/SemanticValidator.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
@@ -220,7 +214,6 @@
 ; hermes/optimized/Statistic.cpp.ll
 ; hermes/optimized/UniquingFilenameTable.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
-; hermes/optimized/escape.cpp.ll
 ; hermes/optimized/repl.cpp.ll
 ; hermes/optimized/rust-api.cpp.ll
 ; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
@@ -589,7 +582,6 @@
 ; luau/optimized/Analyze.cpp.ll
 ; luau/optimized/Reduce.cpp.ll
 ; luau/optimized/TopoSortStatements.cpp.ll
-; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -645,12 +637,19 @@
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/unit_sao.cpp.ll
+; mitsuba3/optimized/aov.cpp.ll
+; mitsuba3/optimized/batch.cpp.ll
 ; mitsuba3/optimized/blender.cpp.ll
 ; mitsuba3/optimized/fresolver.cpp.ll
+; mitsuba3/optimized/logger.cpp.ll
+; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
+; mitsuba3/optimized/scene.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
+; mitsuba3/optimized/shapegroup.cpp.ll
+; mitsuba3/optimized/specfilm.cpp.ll
 ; mitsuba3/optimized/volumegrid.cpp.ll
 ; mold/optimized/arch-alpha.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -758,7 +757,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -845,6 +843,7 @@
 ; opencv/optimized/motion_estimators.cpp.ll
 ; opencv/optimized/multicalib.cpp.ll
 ; opencv/optimized/object_detection.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; opencv/optimized/queue_source.cpp.ll
 ; opencv/optimized/regtree.cpp.ll
@@ -857,9 +856,6 @@
 ; opencv/optimized/tracking_by_matching.cpp.ll
 ; opencv/optimized/tracklet.cpp.ll
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
-; openjdk/optimized/continuationFreezeThaw.ll
-; openmpi/optimized/ad_nfs_read.ll
-; openmpi/optimized/ad_read_str.ll
 ; openspiel/optimized/infostate_tree.cc.ll
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
@@ -915,7 +911,6 @@
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; re2/optimized/compile.cc.ll
@@ -1099,7 +1094,6 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
@@ -1139,40 +1133,8 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
-; mitsuba3/optimized/aov.cpp.ll
-; mitsuba3/optimized/batch.cpp.ll
-; mitsuba3/optimized/logger.cpp.ll
-; mitsuba3/optimized/merge.cpp.ll
-; mitsuba3/optimized/scene.cpp.ll
-; mitsuba3/optimized/shapegroup.cpp.ll
-; mitsuba3/optimized/specfilm.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = ashr exact i64 %2, 3
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.mitsuba::ref.74.2487081", ptr %0, i64 %1
-  %6 = getelementptr %"class.mitsuba::ref.74.2487081", ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 15 occurrences:
-; clamav/optimized/qsort.c.ll
-; llvm/optimized/ASTWriter.cpp.ll
-; llvm/optimized/CGNonTrivialStruct.cpp.ll
-; llvm/optimized/CGStmtOpenMP.cpp.ll
-; llvm/optimized/CodeGenFunction.cpp.ll
-; llvm/optimized/InterleavedAccessPass.cpp.ll
-; llvm/optimized/OMPIRBuilder.cpp.ll
-; llvm/optimized/Randstruct.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/SemaType.cpp.ll
-; llvm/optimized/SimpleLoopUnswitch.cpp.ll
-; llvm/optimized/ThinLTOBitcodeWriter.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
+; 1 occurrences:
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
-; nuttx/optimized/lib_qsort.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000052(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -1198,20 +1160,64 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; ninja/optimized/graph.cc.ll
-; velox/optimized/PrestoSerializer.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = ashr i64 %2, 32
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 26 occurrences:
+; 83 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; eastl/optimized/TestAlgorithm.cpp.ll
+; hermes/optimized/CharacterProperties.cpp.ll
+; hermes/optimized/CommandLine.cpp.ll
+; hermes/optimized/ES6Class.cpp.ll
+; hermes/optimized/HadesGC.cpp.ll
+; hermes/optimized/RegExp.cpp.ll
+; hermes/optimized/RegexParser.cpp.ll
+; hermes/optimized/escape.cpp.ll
+; lz4/optimized/lz4hc.c.ll
+; openjdk/optimized/continuationFreezeThaw.ll
+; openmpi/optimized/ad_nfs_read.ll
+; openmpi/optimized/ad_read_str.ll
 ; quantlib/optimized/date.ll
 ; quantlib/optimized/fdm2dblackscholesop.ll
 ; quantlib/optimized/fdmbatesop.ll
@@ -1245,6 +1251,19 @@ entry:
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw nuw i64, ptr %0, i64 %1
   %6 = getelementptr nusw i64, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 2 occurrences:
+; ninja/optimized/graph.cc.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr i64 %2, 32
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -4,14 +4,14 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$7, %dil
 	sete	%al
 	retq
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	addl	%esi, %edi
 	notl	%edi
 	xorl	%eax, %eax
 	testb	$3, %dil
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	addl	%esi, %edi
 	xorl	%eax, %eax
 	testb	$31, %dil
@@ -23,19 +23,19 @@ func0000000000000018:                   # @func0000000000000018
 	testb	$31, %dil
 	setne	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	addl	%esi, %edi
 	xorl	%eax, %eax
 	testb	$6, %dil
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	addl	%esi, %edi
 	xorl	%eax, %eax
 	testb	$7, %dil
 	setne	%al
 	retq
-func0000000000000070:                   # @func0000000000000070
+func00000000000000f0:                   # @func00000000000000f0
 	addl	%esi, %edi
 	movzbl	%dil, %ecx
 	xorl	%eax, %eax

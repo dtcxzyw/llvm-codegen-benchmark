@@ -9,7 +9,6 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 .LCPI1_0:
 	.byte	128                             # 0x80
-	.byte	128                             # 0x80
 	.byte	0                               # 0x0
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
@@ -24,11 +23,12 @@ func0000000000000007:                   # @func0000000000000007
 	.byte	128                             # 0x80
 	.byte	12                              # 0xc
 	.byte	128                             # 0x80
+	.byte	128                             # 0x80
 func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm1, %xmm1
-	vpshufb	.LCPI1_0(%rip), %xmm1, %xmm1    # xmm1 = zero,zero,xmm1[0],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[8],zero,zero,zero,xmm1[12],zero
-	vpslld	$24, %xmm0, %xmm0
-	vpor	%xmm1, %xmm0, %xmm0
+	vpshufb	.LCPI1_0(%rip), %xmm1, %xmm1    # xmm1 = zero,xmm1[0],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[8],zero,zero,zero,xmm1[12],zero,zero
+	vpslld	$16, %xmm0, %xmm0
+	vpor	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 .LCPI2_0:

@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 42 occurrences:
 ; ceres/optimized/conditioned_cost_function.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
@@ -24,7 +24,6 @@
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; cmake/optimized/frm_driver.c.ll
-; gromacs/optimized/localtopologychecker.cpp.ll
 ; icu/optimized/propsvec.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
@@ -42,7 +41,6 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
-; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {

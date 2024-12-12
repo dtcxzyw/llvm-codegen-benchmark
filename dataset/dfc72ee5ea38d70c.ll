@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 41 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -38,8 +38,6 @@
 ; qemu/optimized/blockdev.c.ll
 ; rocksdb/optimized/transaction_util.cc.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; spike/optimized/f32_to_ui64.ll
 ; spike/optimized/f32_to_ui64_r_minMag.ll
 ; typst-rs/optimized/ef603zin5qw49hb.ll

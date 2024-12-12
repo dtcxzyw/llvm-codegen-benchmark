@@ -19,7 +19,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define double @func0000000000000016(i32 %0, i32 %1) #0 {
+define double @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
   %3 = fneg double %2

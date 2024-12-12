@@ -35,10 +35,12 @@ func000000000000000d:                   # @func000000000000000d
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+.LCPI4_0:
+	.quad	0x4000000000000000              # double 2
 func0000000000000008:                   # @func0000000000000008
-	fclass.d	a2, fa0
-	slli	a2, a2, 56
-	srli	a2, a2, 63
+	lui	a2, %hi(.LCPI4_0)
+	fld	fa5, %lo(.LCPI4_0)(a2)
+	feq.d	a2, fa0, fa5
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

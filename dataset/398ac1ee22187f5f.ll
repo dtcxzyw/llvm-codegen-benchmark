@@ -11,7 +11,7 @@
 define i32 @func0000000000000003(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 63
   ret i32 %4
 }

@@ -1,5 +1,5 @@
 
-; 190 occurrences:
+; 192 occurrences:
 ; assimp/optimized/FBXExporter.cpp.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
@@ -37,11 +37,13 @@
 ; darktable/optimized/introspection_diffuse.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_profile_gamma.c.ll
 ; darktable/optimized/introspection_relight.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; darktable/optimized/introspection_soften.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
+; darktable/optimized/introspection_tonemap.cc.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/ewald.cpp.ll
 ; gromacs/optimized/gmx_anaeig.cpp.ll
@@ -49,7 +51,6 @@
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/nosehooverchains.cpp.ll
 ; gromacs/optimized/pme.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; hwloc/optimized/topology-nvml.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -188,6 +189,7 @@
 ; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; xgboost/optimized/regression_obj.cc.ll
 ; Function Attrs: nounwind

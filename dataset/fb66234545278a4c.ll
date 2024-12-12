@@ -62,8 +62,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; linux/optimized/cppc.ll
+; 1 occurrences:
 ; qemu/optimized/block_vhdx.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
@@ -74,12 +73,11 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
 ; linux/optimized/dm-log.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {

@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
@@ -21,6 +21,7 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/rate.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; opencv/optimized/bitarray.cpp.ll
 ; openjdk/optimized/directivesParser.ll
@@ -37,7 +38,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 9
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -99,7 +100,7 @@ entry:
   ret i32 %4
 }
 
-; 60 occurrences:
+; 57 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -122,7 +123,6 @@ entry:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -133,7 +133,6 @@ entry:
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/satTruth.c.ll
@@ -146,7 +145,6 @@ entry:
 ; darktable/optimized/history.c.ll
 ; eastl/optimized/eathread_pool.cpp.ll
 ; lief/optimized/x509_crt.c.ll
-; linux/optimized/fonts.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll_mgr.ll
@@ -218,7 +216,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -31
   %3 = shl nsw i32 -1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

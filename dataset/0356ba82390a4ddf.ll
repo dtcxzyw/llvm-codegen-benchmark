@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
@@ -11,6 +11,8 @@
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0) #0 {
 entry:

@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.quad	2271560481                      # 0x87654321
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vptestnmq	%ymm0, %ymm0, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [2271560481,2271560481,2271560481,2271560481]
@@ -31,7 +31,7 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI4_0:
 	.quad	9223372036854775804             # 0x7ffffffffffffffc
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpleuq	.LCPI4_0(%rip){1to4}, %ymm0, %k1
 	vmovdqa64	%ymm0, %ymm0 {%k1} {z}

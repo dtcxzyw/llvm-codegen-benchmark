@@ -3,5 +3,5 @@ func0000000000000000:                   # @func0000000000000000
 	vfncvt.rtz.x.f.w	v12, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v12
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret

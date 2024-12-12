@@ -21,7 +21,7 @@ func0000000000000001:                   # @func0000000000000001
 	vzeroupper
 	retq
 .LCPI2_0:
-	.quad	8                               # 0x8
+	.quad	65535                           # 0xffff
 func0000000000000008:                   # @func0000000000000008
 	vpslld	$31, %xmm0, %xmm0
 	vpslld	$31, %xmm1, %xmm1

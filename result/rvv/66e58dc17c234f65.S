@@ -1,4 +1,4 @@
-func0000000000000035:                   # @func0000000000000035
+func0000000000000055:                   # @func0000000000000055
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v12, v0
 	vmsgt.vi	v0, v10, 4
@@ -17,7 +17,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmv1r.v	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v12, v0
 	li	a0, 23
@@ -27,7 +27,7 @@ func0000000000000022:                   # @func0000000000000022
 	vmv1r.v	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
@@ -38,7 +38,7 @@ func0000000000000023:                   # @func0000000000000023
 	vmv1r.v	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000054:                   # @func0000000000000054
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v12, v0
 	li	a0, 24

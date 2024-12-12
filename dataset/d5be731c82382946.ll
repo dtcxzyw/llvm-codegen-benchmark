@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; luau/optimized/isocline.c.ll
 ; openjdk/optimized/DrawPolygons.ll
-; openmpi/optimized/name_fns.ll
 ; openmpi/optimized/ompi_rte.ll
 ; postgres/optimized/name.ll
 ; slurm/optimized/xstring.ll

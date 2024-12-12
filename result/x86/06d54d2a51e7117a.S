@@ -28,7 +28,7 @@ func000000000000000b:                   # @func000000000000000b
 	setge	%al
 	orb	%dil, %al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	cmpl	%edx, %esi
 	setg	%al
 	orb	%dil, %al

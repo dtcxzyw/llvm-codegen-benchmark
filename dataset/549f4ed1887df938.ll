@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = icmp eq i32 %1, 0

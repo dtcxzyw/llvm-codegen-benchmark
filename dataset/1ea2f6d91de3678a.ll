@@ -1,15 +1,10 @@
 
-; 11 occurrences:
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; jemalloc/optimized/fxp.ll
-; jemalloc/optimized/fxp.pic.ll
-; jemalloc/optimized/fxp.sym.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; qemu/optimized/sdhci-cmd.c.ll
-; redis/optimized/fxp.ll
-; redis/optimized/fxp.sym.ll
 ; ruby/optimized/date_strptime.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i32 %1) #0 {
@@ -47,9 +42,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; php/optimized/encoding.ll
-; tinyrenderer/optimized/tgaimage.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000038(i64 %0, i32 %1) #0 {
 entry:
@@ -157,6 +151,22 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 1
   %5 = add nuw nsw i64 %4, %3
+  ret i64 %5
+}
+
+; 5 occurrences:
+; jemalloc/optimized/fxp.ll
+; jemalloc/optimized/fxp.pic.ll
+; jemalloc/optimized/fxp.sym.ll
+; redis/optimized/fxp.ll
+; redis/optimized/fxp.sym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1
+  %3 = zext i32 %2 to i64
+  %4 = add i64 %0, 1
+  %5 = add i64 %4, %3
   ret i64 %5
 }
 

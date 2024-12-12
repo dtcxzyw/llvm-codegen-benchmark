@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/grid.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -20,12 +20,13 @@
 ; raylib/optimized/rshapes.c.ll
 ; recastnavigation/optimized/DetourCommon.cpp.ll
 ; xgboost/optimized/elementwise_metric.cc.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0.000000e+00
   %3 = select i1 %2, float 0.000000e+00, float %1
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 
@@ -57,7 +58,7 @@ define float @func000000000000000a(float %0, float %1) #0 {
 entry:
   %2 = fcmp ole float %1, 0.000000e+00
   %3 = select i1 %2, float 0.000000e+00, float %1
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

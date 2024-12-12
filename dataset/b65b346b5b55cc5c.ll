@@ -1,12 +1,12 @@
 
 ; 3 occurrences:
+; boost/optimized/alloc_lib.ll
 ; hyperscan/optimized/teddy.c.ll
 ; hyperscan/optimized/teddy_avx2.c.ll
-; openjdk/optimized/psParallelCompact.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 524288
+  %2 = add i64 %1, -16
   %3 = sub i64 %2, %0
   ret i64 %3
 }

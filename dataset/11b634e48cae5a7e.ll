@@ -12,10 +12,21 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
+; boost/optimized/gregorian.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1
+  %3 = sdiv i32 %2, 400
+  %4 = add i32 %0, -719163
+  %5 = add i32 %4, %3
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
@@ -26,11 +37,9 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; libquic/optimized/time_support.c.ll
 ; linux/optimized/vlv_dsi.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; postgres/optimized/array_expanded.ll
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/arrayfuncs.ll
@@ -77,18 +86,6 @@ entry:
   %2 = add nuw i32 %1, 7
   %3 = sdiv i32 %2, 8
   %4 = add i32 %0, 23
-  %5 = add i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 7
-  %3 = sdiv i32 %2, 8
-  %4 = add i32 %0, 112
   %5 = add i32 %4, %3
   ret i32 %5
 }

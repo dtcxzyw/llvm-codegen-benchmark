@@ -54,10 +54,22 @@ entry:
   ret i32 %.neg1
 }
 
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; linux/optimized/ip6_offload.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000015(i64 %0, i64 %1) #0 {
+entry:
+  %.neg = sub i64 %1, %0
+  %.neg1 = trunc i64 %.neg to i32
+  %2 = add i32 %.neg1, 3
+  ret i32 %2
+}
+
 ; 1 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000033(i64 %0, i64 %1) #0 {
 entry:
   %.neg = sub i64 %1, %0
   %.neg1 = trunc i64 %.neg to i32
@@ -93,17 +105,6 @@ entry:
   %.neg = sub i64 %1, %0
   %.neg1 = trunc i64 %.neg to i32
   %2 = add i32 %.neg1, 9
-  ret i32 %2
-}
-
-; 1 occurrences:
-; linux/optimized/ip6_offload.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000015(i64 %0, i64 %1) #0 {
-entry:
-  %.neg = sub i64 %1, %0
-  %.neg1 = trunc i64 %.neg to i32
-  %2 = add i32 %.neg1, -40
   ret i32 %2
 }
 

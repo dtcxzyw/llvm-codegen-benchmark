@@ -14,7 +14,7 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	zext.h	a1, a1
-	andi	a0, a0, 255
+	andi	a1, a1, 255
+	zext.h	a0, a0
 	add	a0, a0, a1
 	ret

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 20 occurrences:
 ; abc/optimized/absOut.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
@@ -19,12 +19,6 @@
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
-; pbrt-v4/optimized/camera.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/interaction.cpp.ll
-; pbrt-v4/optimized/lowdiscrepancy.cpp.ll
-; pbrt-v4/optimized/pspec.cpp.ll
-; pbrt-v4/optimized/samples.cpp.ll
 ; qemu/optimized/hw_vfio_pci-quirks.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {

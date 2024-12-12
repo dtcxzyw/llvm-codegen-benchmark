@@ -11,12 +11,6 @@ func000000000000001e:                   # @func000000000000001e
 	add	a0, a0, a1
 	slli	a0, a0, 32
 	ret
-func0000000000000017:                   # @func0000000000000017
-	andi	a0, a0, -4
-	addi	a0, a0, -1
-	srliw	a0, a0, 2
-	slli	a0, a0, 5
-	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a0, a0, -8
 	addi	a0, a0, -8

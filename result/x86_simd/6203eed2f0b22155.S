@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
 	vextracti128	$1, %ymm0, %xmm3
 	vpextrd	$1, %xmm3, %eax
@@ -53,7 +53,7 @@ func000000000000001a:                   # @func000000000000001a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
 	vpslld	$31, %ymm2, %ymm2
 	vpsrad	$31, %ymm2, %ymm2
@@ -272,7 +272,7 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
 	vextracti128	$1, %ymm0, %xmm3
 	vpextrd	$1, %xmm3, %eax

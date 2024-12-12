@@ -10,11 +10,23 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	leaq	16(,%rax,8), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpb	%sil, %dil
+	setae	%al
+	leaq	16(,%rax,8), %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
 	xorl	%eax, %eax
 	cmpb	%sil, %dil
 	setbe	%al
 	leaq	16(,%rax,8), %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	cmpb	%sil, %dil
+	seta	%al
+	leaq	8(%rax,%rax), %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax

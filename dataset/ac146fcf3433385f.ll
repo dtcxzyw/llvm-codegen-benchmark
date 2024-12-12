@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %.mask = and i32 %3, 268435456

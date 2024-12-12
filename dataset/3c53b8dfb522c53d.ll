@@ -1,14 +1,16 @@
 
-; 163 occurrences:
+; 164 occurrences:
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/aigRet.c.ll
+; abc/optimized/cuddSplit.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/satProof.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -97,7 +99,6 @@
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MLInlineAdvisor.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
@@ -167,12 +168,12 @@
 define i64 @func0000000000000007(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -201,7 +202,6 @@ entry:
 ; git/optimized/sequencer.ll
 ; gromacs/optimized/pullcoordexpressionparser.cpp.ll
 ; icu/optimized/coleitr.ll
-; icu/optimized/ubidiln.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlaed4.c.ll
 ; openblas/optimized/dstedc.c.ll
@@ -222,12 +222,12 @@ entry:
 define i64 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 332 occurrences:
+; 333 occurrences:
 ; assimp/optimized/LWSLoader.cpp.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -262,6 +262,7 @@ entry:
 ; hwloc/optimized/common-ps.ll
 ; hwloc/optimized/topology-synthetic.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
+; libwebp/optimized/huffman_encode_utils.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -564,16 +565,17 @@ entry:
 define i64 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 238 occurrences:
+; 239 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; cmake/optimized/zstd_opt.c.ll
@@ -812,16 +814,15 @@ entry:
 define i64 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; cpython/optimized/ceval.ll
 ; libdeflate/optimized/deflate_compress.c.ll
-; libwebp/optimized/huffman_encode_utils.c.ll
 ; linux/optimized/audit_tree.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -834,7 +835,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -850,7 +851,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -861,19 +862,20 @@ entry:
 define i64 @func0000000000000005(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; icu/optimized/ubidiln.ll
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

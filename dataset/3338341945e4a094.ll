@@ -2,17 +2,17 @@
 ; 1 occurrences:
 ; wasmedge/optimized/compiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = getelementptr i32, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 4
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
 
-; 368 occurrences:
+; 367 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
 ; assimp/optimized/CSMLoader.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
@@ -78,7 +78,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -382,12 +381,12 @@ entry:
 ; z3/optimized/wmax.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 4
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -398,12 +397,12 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw float, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }

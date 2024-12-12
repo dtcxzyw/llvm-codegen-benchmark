@@ -3,7 +3,7 @@
 ; libpng/optimized/pngread.c.ll
 ; openjdk/optimized/pngread.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %1, 2
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000039(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000059(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %1, 6

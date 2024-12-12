@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 110 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/cutMerge.c.ll
 ; abc/optimized/giaBalLut.c.ll
@@ -87,8 +87,10 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; slurm/optimized/fed_mgr.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
+; stockfish/optimized/tbprobe.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -117,8 +119,18 @@ entry:
   ret i1 %5
 }
 
-; 116 occurrences:
-; llvm/optimized/SimplifyCFG.cpp.ll
+; 1 occurrences:
+; wireshark/optimized/packet-gsm_a_rr.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 3
+  %4 = icmp ule i32 %3, %1
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 115 occurrences:
 ; z3/optimized/api_seq.cpp.ll
 ; z3/optimized/bound_propagator.cpp.ll
 ; z3/optimized/bv_ackerman.cpp.ll
@@ -237,19 +249,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 8
+  %3 = lshr i32 %2, 1
   %4 = icmp ugt i32 %3, %1
-  %5 = select i1 %4, i1 %0, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-gsm_a_rr.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 3
-  %4 = icmp ule i32 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

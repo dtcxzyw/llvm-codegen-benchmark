@@ -1,11 +1,11 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andl	$1073741823, %edx               # imm = 0x3FFFFFFF
 	cmpq	%rdi, %rdx
 	sete	%al
 	shrq	$62, %rsi
 	andb	%sil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movb	$47, %al
 	bzhiq	%rax, %rdx, %rax
 	xorq	%rdi, %rax

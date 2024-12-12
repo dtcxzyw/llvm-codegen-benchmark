@@ -21,7 +21,7 @@ entry:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; php/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000d1(i64 %0) #0 {
+define i64 @func00000000000001a1(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 %0, 1
   %2 = add nsw i64 %1, -1
@@ -58,7 +58,7 @@ entry:
 ; openusd/optimized/testUsdTimeValueAuthoring.cpp.ll
 ; openusd/optimized/valueUtils.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a8(i64 %0) #0 {
+define i64 @func0000000000000148(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 %0, 3
   %2 = add nuw i64 %1, 16
@@ -72,7 +72,7 @@ entry:
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000f1(i64 %0) #0 {
+define i64 @func00000000000001e1(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 %0, 16
   %2 = add nuw nsw i64 %1, 65536
@@ -84,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a1(i64 %0) #0 {
+define i64 @func0000000000000141(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 %0, 2
   %2 = add nuw i64 %1, 24

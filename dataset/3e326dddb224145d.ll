@@ -16,4 +16,16 @@ entry:
   ret double %3
 }
 
+; 2 occurrences:
+; gromacs/optimized/colvarcomp_gpath.cpp.ll
+; openusd/optimized/plane.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000003(i64 %0) #0 {
+entry:
+  %1 = sdiv exact i64 %0, 24
+  %2 = uitofp nneg i64 %1 to double
+  %3 = fdiv double 0.000000e+00, %2
+  ret double %3
+}
+
 attributes #0 = { nounwind }

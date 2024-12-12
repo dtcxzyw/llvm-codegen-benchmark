@@ -6,7 +6,7 @@
 ; opencv/optimized/autocalib.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000138(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000268(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 96
   %3 = shl i64 %2, 32
@@ -23,7 +23,7 @@ entry:
 ; opencv/optimized/autocalib.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000134(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000264(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 96
   %3 = shl i64 %2, 32

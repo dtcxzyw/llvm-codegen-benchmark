@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	shll	$4, %eax
 	orq	$4, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
 	sbbq	%rax, %rax
@@ -23,12 +23,24 @@ func000000000000000a:                   # @func000000000000000a
 	setle	%al
 	leaq	16(,%rax,8), %rax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	xorl	%eax, %eax
+	cmpl	%esi, %edi
+	setb	%al
+	leaq	16(,%rax,8), %rax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
 	seta	%al
 	shll	$6, %eax
 	addq	$64, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%ecx, %ecx
+	cmpl	%esi, %edi
+	movl	$255, %eax
+	cmovaq	%rcx, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	xorl	%eax, %eax

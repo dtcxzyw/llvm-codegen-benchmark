@@ -25,10 +25,11 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/VNCoercion.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i8 %1, i64 %2) #0 {

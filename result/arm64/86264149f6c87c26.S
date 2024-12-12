@@ -1,16 +1,16 @@
-func000000000000004c:                   // @func000000000000004c
+func000000000000008c:                   // @func000000000000008c
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	cmn	x0, #1
-	ccmp	x8, x0, #0, ne
-	cset	w0, hi
+	ccmp	x0, x8, #2, ne
+	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000006a:                   // @func000000000000006a
+func00000000000000ca:                   // @func00000000000000ca
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	cmp	x0, #0
-	ccmp	x8, x0, #4, ge
-	cset	w0, gt
+	ccmp	x0, x8, #0, ge
+	cset	w0, lt
 	ret
                                         // -- End function

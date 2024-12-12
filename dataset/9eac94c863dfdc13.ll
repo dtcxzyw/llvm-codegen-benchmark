@@ -10,7 +10,7 @@ entry:
   %3 = icmp ne i32 %2, 0
   %4 = and i1 %3, %1
   %5 = select i1 %4, i8 12, i8 8
-  %6 = or disjoint i8 %5, %0
+  %6 = or disjoint i8 %0, %5
   ret i8 %6
 }
 

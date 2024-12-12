@@ -11,11 +11,11 @@
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 8
-  %4 = add nsw i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -26,7 +26,7 @@ define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 8
   %4 = add i32 %3, %1
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -41,11 +41,11 @@ entry:
 ; opencv/optimized/stereobm.cpp.ll
 ; openmpi/optimized/coll_base_reduce_scatter_block.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = add nsw i32 %3, %1
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
@@ -55,11 +55,11 @@ entry:
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 3
   %4 = add nsw i32 %3, %1
-  %5 = icmp sge i32 %4, %0
+  %5 = icmp sle i32 %0, %4
   ret i1 %5
 }
 
@@ -73,7 +73,7 @@ define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, -20
   %4 = add i32 %3, %1
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
@@ -83,44 +83,44 @@ entry:
 ; wireshark/optimized/cosine.c.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 4
   %4 = add nsw i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = add nsw i32 %3, %1
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
-  %4 = add nsw i32 %3, %1
-  %5 = icmp sle i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp sge i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, -2
   %4 = add nsw i32 %3, %1
-  %5 = icmp ne i32 %4, %0
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 
@@ -131,7 +131,7 @@ define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, -2
   %4 = add i32 %3, %1
-  %5 = icmp ne i32 %4, %0
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 
@@ -151,8 +151,8 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 5
-  %4 = add i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -162,8 +162,8 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 16
-  %4 = add i32 %3, %1
-  %5 = icmp ule i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp uge i32 %0, %4
   ret i1 %5
 }
 
@@ -174,7 +174,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, -8
   %4 = add i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -184,8 +184,8 @@ entry:
 define i1 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
-  %4 = add i32 %3, %1
-  %5 = icmp sge i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp sle i32 %0, %4
   ret i1 %5
 }
 

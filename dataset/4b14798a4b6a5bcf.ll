@@ -9,11 +9,11 @@
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
 }
@@ -21,11 +21,11 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/aom_scale.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
 }
@@ -37,7 +37,7 @@ define ptr @func0000000000000004(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
 }

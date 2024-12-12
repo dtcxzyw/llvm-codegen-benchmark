@@ -1,5 +1,6 @@
 
-; 149 occurrences:
+; 148 occurrences:
+; boost/optimized/area.ll
 ; cmake/optimized/MD5.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/sfnt.c.ll
@@ -13,8 +14,6 @@
 ; linux/optimized/slub.ll
 ; llvm/optimized/AArch64MCTargetDesc.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; opencc/optimized/bit-vector.cc.ll
@@ -155,7 +154,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -190,7 +189,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -210,7 +209,7 @@ entry:
   %2 = lshr i32 %1, 6
   %3 = and i32 %2, 2097151
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

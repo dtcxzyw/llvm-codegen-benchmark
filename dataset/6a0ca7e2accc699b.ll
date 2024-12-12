@@ -1,9 +1,8 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; c3c/optimized/sema_decls.c.ll
 ; linux/optimized/io_apic.ll
-; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTMatchersInternal.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll

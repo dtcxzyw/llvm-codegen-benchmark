@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 23
   %4 = and i32 %3, 255
@@ -17,7 +17,7 @@ entry:
 ; linux/optimized/evdev.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 536870908

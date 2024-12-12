@@ -1,5 +1,6 @@
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; gromacs/optimized/hbond.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openmpi/optimized/libprrte_la-prte_dt_print_fns.ll
@@ -25,20 +26,32 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
-; llvm/optimized/APINotesWriter.cpp.ll
-; llvm/optimized/Availability.cpp.ll
+; llvm/optimized/CoverageMapping.cpp.ll
+; llvm/optimized/CoverageMappingWriter.cpp.ll
 ; llvm/optimized/GVNHoist.cpp.ll
 ; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
 ; llvm/optimized/GlobalISelEmitter.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
-; llvm/optimized/ValueEnumerator.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
+  %4 = select i1 %3, i1 %0, i1 false
+  %5 = freeze i1 %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/APINotesWriter.cpp.ll
+; llvm/optimized/Availability.cpp.ll
+; llvm/optimized/ValueEnumerator.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign uge i32 %1, %2
   %4 = select i1 %3, i1 %0, i1 false
   %5 = freeze i1 %4
   ret i1 %5

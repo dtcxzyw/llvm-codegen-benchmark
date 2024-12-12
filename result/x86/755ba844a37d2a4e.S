@@ -12,6 +12,13 @@ func0000000000000008:                   # @func0000000000000008
 	movzbl	%al, %eax
 	addq	%rdi, %rax
 	retq
+func0000000000000020:                   # @func0000000000000020
+	cmpq	$2, %rdx
+	setb	%al
+	andb	%sil, %al
+	movzbl	%al, %eax
+	addq	%rdi, %rax
+	retq
 func0000000000000060:                   # @func0000000000000060
 	testq	%rdx, %rdx
 	setne	%al

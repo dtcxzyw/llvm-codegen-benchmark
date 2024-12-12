@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 31 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -29,6 +29,8 @@
 ; qemu/optimized/hw_ipack_tpci200.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:

@@ -25,7 +25,7 @@ entry:
   ret i64 %4
 }
 
-; 29 occurrences:
+; 33 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -55,6 +55,10 @@ entry:
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
@@ -82,11 +86,9 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; luajit/optimized/lj_str.ll
 ; luajit/optimized/lj_str_dyn.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
 ; opencc/optimized/keyset.cc.ll
 ; postgres/optimized/nodeHash.ll
 ; Function Attrs: nounwind
@@ -94,7 +96,7 @@ define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %0
+  %3 = add i64 %0, %.neg
   ret i64 %3
 }
 

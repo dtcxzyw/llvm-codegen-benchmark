@@ -1,45 +1,41 @@
 
-%struct.list_head.3243648 = type { ptr, ptr }
-%struct.dlist_head.3467827 = type { %struct.dlist_node.3467828 }
-%struct.dlist_node.3467828 = type { ptr, ptr }
-%"class.std::vector.2.3618791" = type { %"struct.std::_Vector_base.3.3618792" }
-%"struct.std::_Vector_base.3.3618792" = type { %"struct.std::_Vector_base<arrow::internal::(anonymous namespace)::Centroid, std::allocator<arrow::internal::(anonymous namespace)::Centroid>>::_Vector_impl.3618793" }
-%"struct.std::_Vector_base<arrow::internal::(anonymous namespace)::Centroid, std::allocator<arrow::internal::(anonymous namespace)::Centroid>>::_Vector_impl.3618793" = type { %"struct.std::_Vector_base<arrow::internal::(anonymous namespace)::Centroid, std::allocator<arrow::internal::(anonymous namespace)::Centroid>>::_Vector_impl_data.3618794" }
-%"struct.std::_Vector_base<arrow::internal::(anonymous namespace)::Centroid, std::allocator<arrow::internal::(anonymous namespace)::Centroid>>::_Vector_impl_data.3618794" = type { ptr, ptr, ptr }
-
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000073(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1, %1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8
-  %5 = getelementptr [2 x %struct.list_head.3243648], ptr %4, i64 0, i64 %3, i32 1
+  %.idx = shl nsw i64 %3, 4
+  %4 = getelementptr i8, ptr %0, i64 16
+  %5 = getelementptr i8, ptr %4, i64 %.idx
+  ret ptr %5
+}
+
+; 2 occurrences:
+; arrow/optimized/tdigest.cc.ll
+; openspiel/optimized/twixtboard.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007b(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 1, %1
+  %3 = sext i32 %2 to i64
+  %.idx = mul nsw i64 %3, 24
+  %4 = getelementptr i8, ptr %0, i64 64
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; postgres/optimized/slab.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 128
-  %5 = getelementptr [3 x %struct.dlist_head.3467827], ptr %4, i64 0, i64 %3, i32 0, i32 1
-  ret ptr %5
-}
-
-; 1 occurrences:
-; arrow/optimized/tdigest.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i32 1, %1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 72
-  %5 = getelementptr [2 x %"class.std::vector.2.3618791"], ptr %4, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  %.idx = shl nsw i64 %3, 4
+  %4 = getelementptr i8, ptr %0, i64 136
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 

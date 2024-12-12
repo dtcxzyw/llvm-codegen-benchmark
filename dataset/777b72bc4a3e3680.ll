@@ -1,7 +1,7 @@
 
-%class.btVector3.2705429 = type { [4 x float] }
+%class.btVector3.2818144 = type { [4 x float] }
 
-; 53 occurrences:
+; 52 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
@@ -22,7 +22,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -56,11 +55,11 @@
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw [3 x %class.btVector3.2705429], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [3 x %class.btVector3.2818144], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

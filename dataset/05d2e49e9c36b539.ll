@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 29 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
@@ -24,6 +24,11 @@
 ; tls-rs/optimized/1oa4q9ydtxtlathz.ll
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/5q8zw1h1kdgz0fiksol53zkaa.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i64 %1, ptr %2) #0 {
 entry:

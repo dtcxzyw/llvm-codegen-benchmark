@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; rocksdb/optimized/dbformat.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -16,7 +16,7 @@ entry:
 define i32 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -27,7 +27,7 @@ entry:
 define i32 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -40,7 +40,7 @@ entry:
 define i32 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -53,7 +53,7 @@ entry:
 define i32 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp sge i64 %3, %0
+  %4 = icmp sle i64 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -64,18 +64,7 @@ entry:
 define i32 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp slt i64 %3, %0
-  %5 = zext i1 %4 to i32
-  ret i32 %5
-}
-
-; 1 occurrences:
-; postgres/optimized/mac.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or disjoint i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

@@ -8,7 +8,7 @@
 ; msgpack/optimized/map_based_versionup.cpp.ll
 ; serde-rs-json/optimized/1z3u82elh7pk3w5r.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0) #0 {
+define i64 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = sext i32 %0 to i64

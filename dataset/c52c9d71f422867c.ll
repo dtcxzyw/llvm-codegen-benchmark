@@ -11,10 +11,11 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_input.ll
 ; linux/optimized/ip_output.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openusd/optimized/binary_codes_reader.c.ll
 ; openusd/optimized/bitreader_buffer.c.ll
 ; postgres/optimized/bufpage.ll

@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-shlib-dh_ameth.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false

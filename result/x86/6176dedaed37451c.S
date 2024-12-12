@@ -5,6 +5,13 @@ func000000000000001f:                   # @func000000000000001f
 	subq	%rax, %rsi
 	leaq	4(%rsi,%rdi), %rax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	xorl	%eax, %eax
+	testq	%rdx, %rdx
+	sete	%al
+	leaq	(%rsi,%rax,2), %rax
+	leaq	1(%rdi,%rax), %rax
+	retq
 func0000000000000040:                   # @func0000000000000040
 	xorl	%eax, %eax
 	cmpq	$8, %rdx
@@ -12,19 +19,7 @@ func0000000000000040:                   # @func0000000000000040
 	leaq	(%rsi,%rax,8), %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	xorl	%eax, %eax
-	testq	%rdx, %rdx
-	setne	%al
-	leaq	(%rsi,%rax,2), %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000017:                   # @func0000000000000017
-	cmpq	$1, %rdx
-	adcq	%rsi, %rdi
-	leaq	365(%rdi), %rax
-	retq
-func0000000000000015:                   # @func0000000000000015
 	cmpq	$1, %rdx
 	adcq	%rsi, %rdi
 	leaq	365(%rdi), %rax

@@ -13,8 +13,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; icu/optimized/islamcal.ll
+; lvgl/optimized/lv_refr.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {

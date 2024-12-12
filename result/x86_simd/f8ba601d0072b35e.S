@@ -45,11 +45,11 @@ func0000000000000aaa:                   # @func0000000000000aaa
 	retq
 .LCPI5_0:
 	.long	0x3f800000                      # float 1
-func0000000000000247:                   # @func0000000000000247
+func0000000000000742:                   # @func0000000000000742
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltps	%zmm1, %zmm3, %k1
-	vcmpltps	.LCPI5_0(%rip){1to16}, %zmm2, %k1 {%k1}
-	vcmpneqps	%zmm3, %zmm0, %k0 {%k1}
+	vcmpneqps	%zmm3, %zmm2, %k1 {%k1}
+	vcmpltps	.LCPI5_0(%rip){1to16}, %zmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -92,23 +92,12 @@ func000000000000024a:                   # @func000000000000024a
 	vzeroupper
 	retq
 .LCPI10_0:
-	.long	0x4e6e6b28                      # float 1.0E+9
-func00000000000002e2:                   # @func00000000000002e2
-	vbroadcastss	.LCPI10_0(%rip), %zmm3  # zmm3 = [1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9,1.0E+9]
-	vcmpltps	%zmm3, %zmm2, %k1
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpltps	%zmm3, %zmm0, %k1 {%k1}
-	vcmpordps	%zmm2, %zmm1, %k0 {%k1}
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI11_0:
 	.long	0x3f800000                      # float 1
 func0000000000000cca:                   # @func0000000000000cca
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpleps	%zmm1, %zmm3, %k1
 	vcmpleps	%zmm2, %zmm3, %k1 {%k1}
-	vcmpleps	.LCPI11_0(%rip){1to16}, %zmm0, %k0 {%k1}
+	vcmpleps	.LCPI10_0(%rip){1to16}, %zmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

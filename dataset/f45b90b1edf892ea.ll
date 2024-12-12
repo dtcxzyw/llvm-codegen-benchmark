@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 55 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; c3c/optimized/target.c.ll
@@ -22,6 +22,7 @@
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
@@ -64,7 +65,8 @@ entry:
   ret i8 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; linux/optimized/keyboard.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll

@@ -67,6 +67,23 @@ entry:
   ret i32 %5
 }
 
+; 7 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; libwebp/optimized/sharpyuv_gamma.c.ll
+; linux/optimized/drm_format_helper.ll
+; openblas/optimized/dggsvp3.c.ll
+; openblas/optimized/dorg2r.c.ll
+; stb/optimized/stb_image_resize2.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = mul i32 %3, %0
+  %5 = add i32 %4, -32
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; oiio/optimized/Codec.cpp.ll
 ; Function Attrs: nounwind
@@ -75,24 +92,6 @@ entry:
   %3 = sub i32 %1, %2
   %4 = mul nsw i32 %3, %0
   %5 = add nsw i32 %4, -1
-  ret i32 %5
-}
-
-; 8 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
-; libwebp/optimized/sharpyuv_gamma.c.ll
-; linux/optimized/drm_format_helper.ll
-; openblas/optimized/dggsvp3.c.ll
-; openblas/optimized/dorg2r.c.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_image_resize2.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 %1, %2
-  %4 = mul i32 %3, %0
-  %5 = add i32 %4, 4
   ret i32 %5
 }
 

@@ -44,7 +44,7 @@
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = sext i32 %2 to i64
@@ -97,7 +97,7 @@ entry:
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = sext i32 %2 to i64

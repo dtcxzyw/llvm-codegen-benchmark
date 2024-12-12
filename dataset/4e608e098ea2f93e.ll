@@ -10,20 +10,17 @@ entry:
   ret i64 %4
 }
 
-; 30 occurrences:
+; 27 occurrences:
 ; bullet3/optimized/btGeneric6DofSpringConstraint.ll
 ; cmake/optimized/archive_write_set_format_cpio_binary.c.ll
 ; cmake/optimized/archive_write_set_format_cpio_newc.c.ll
 ; cmake/optimized/archive_write_set_format_cpio_odc.c.ll
-; cmake/optimized/archive_write_set_format_raw.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; linux/optimized/base.ll
 ; linux/optimized/cpufreq.ll
 ; linux/optimized/drm_dp_dual_mode_helper.ll
-; linux/optimized/drm_scdc_helper.ll
 ; linux/optimized/if.ll
-; linux/optimized/intel_epb.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/pci-sysfs.ll
 ; linux/optimized/pcm_native.ll

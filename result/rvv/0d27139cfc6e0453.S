@@ -4,9 +4,27 @@ func0000000000000012:                   # @func0000000000000012
 	vmv.v.i	v8, 1
 	vsll.vv	v8, v8, v10
 	ret
+func000000000000001e:                   # @func000000000000001e
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 3
+	vmv.v.i	v8, 2
+	vsll.vv	v8, v8, v10
+	ret
+func0000000000000003:                   # @func0000000000000003
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 3
+	vmv.v.i	v8, 1
+	vsll.vv	v8, v8, v10
+	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 1
+	vnsrl.wi	v10, v8, 3
+	vmv.v.i	v8, 1
+	vsll.vv	v8, v8, v10
+	ret
+func000000000000000e:                   # @func000000000000000e
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 3
 	vmv.v.i	v8, 1
 	vsll.vv	v8, v8, v10
 	ret
@@ -31,23 +49,10 @@ func0000000000000008:                   # @func0000000000000008
 	vmv.v.x	v8, a0
 	vsll.vv	v8, v8, v10
 	ret
-func000000000000000e:                   # @func000000000000000e
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 3
-	vmv.v.i	v8, 1
-	vsll.vv	v8, v8, v10
-	ret
 func000000000000001c:                   # @func000000000000001c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 3
 	vmv.v.i	v8, 2
-	vsll.vv	v8, v8, v10
-	ret
-func000000000000001e:                   # @func000000000000001e
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 1
-	lui	a0, 16
-	vmv.v.x	v8, a0
 	vsll.vv	v8, v8, v10
 	ret
 func0000000000000010:                   # @func0000000000000010

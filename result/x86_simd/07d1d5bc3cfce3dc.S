@@ -19,7 +19,7 @@
 	.quad	1                               # 0x1
 .LCPI0_2:
 	.zero	4,63
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,zero,zero,zero,zero,xmm1[1],zero,zero,zero,zero,zero,zero,zero,xmm1[2],zero,zero,zero,zero,zero,zero,zero,xmm1[3],zero,zero,zero,zero,zero,zero,zero
 	vpsrlvq	%ymm1, %ymm0, %ymm0
@@ -48,7 +48,7 @@ func000000000000002c:                   # @func000000000000002c
 	.quad	1                               # 0x1
 .LCPI1_2:
 	.zero	4,63
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,zero,zero,zero,zero,xmm1[1],zero,zero,zero,zero,zero,zero,zero,xmm1[2],zero,zero,zero,zero,zero,zero,zero,xmm1[3],zero,zero,zero,zero,zero,zero,zero
 	vpsrlvq	%ymm1, %ymm0, %ymm0

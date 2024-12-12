@@ -1,16 +1,8 @@
 
-; 15 occurrences:
+; 7 occurrences:
 ; git/optimized/pretty.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; openssl/optimized/libssl-lib-quic_reactor.ll
 ; openssl/optimized/libssl-shlib-quic_reactor.ll
 ; wireshark/optimized/packet-memcache.c.ll
@@ -25,8 +17,7 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
-; assimp/optimized/glTF2Importer.cpp.ll
+; 4 occurrences:
 ; jq/optimized/decNumber.ll
 ; linux/optimized/tcp_output.ll
 ; minetest/optimized/serverenvironment.cpp.ll

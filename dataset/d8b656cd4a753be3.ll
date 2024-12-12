@@ -15,7 +15,7 @@
 ; opencv/optimized/umatrix.cpp.ll
 ; z3/optimized/nlqsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, -4294967296
   %2 = icmp eq i64 %.mask, 25769803776
@@ -28,7 +28,7 @@ entry:
 ; linux/optimized/task_mmu.ll
 ; opencv/optimized/arithm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, -576460752303423488
   %2 = icmp ne i64 %.mask, -1152921504606846976
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, -4294967296
   %2 = icmp eq i64 %.mask, 4294967296

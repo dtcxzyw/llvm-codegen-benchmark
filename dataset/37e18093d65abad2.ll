@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 53 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/ivyHaig.c.ll
@@ -9,7 +9,6 @@
 ; icu/optimized/normalizer2.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/LinkModules.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/emdL1.cpp.ll
 ; openjdk/optimized/compilationPolicy.ll
@@ -26,7 +25,6 @@
 ; postgres/optimized/json.ll
 ; postgres/optimized/jsonb.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/jsonpath_exec.ll
@@ -49,7 +47,6 @@
 ; postgres/optimized/tsvector_op.ll
 ; postgres/optimized/varchar.ll
 ; postgres/optimized/varlena.ll
-; proxygen/optimized/HQUtils.cpp.ll
 ; qemu/optimized/block_block-copy.c.ll
 ; qemu/optimized/hw_net_rocker_rocker_of_dpa.c.ll
 ; wireshark/optimized/packet-iwarp-ddp-rdmap.c.ll

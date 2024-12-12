@@ -6,6 +6,14 @@ func0000000000000033:                   # @func0000000000000033
 	shlxl	%esi, %edi, %eax
 	leal	8(%rdx,%rax), %eax
 	retq
+func000000000000003f:                   # @func000000000000003f
+	shlxl	%edx, %esi, %eax
+	leal	8(%rdi,%rax), %eax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	shlxl	%esi, %edi, %eax
+	leal	-1(%rdx,%rax), %eax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	shlxl	%edx, %esi, %eax
 	leal	48(%rdi,%rax), %eax
@@ -13,10 +21,6 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000036:                   # @func0000000000000036
 	shlxl	%edx, %esi, %eax
 	leal	17(%rdi,%rax), %eax
-	retq
-func000000000000003f:                   # @func000000000000003f
-	shlxl	%edx, %esi, %eax
-	leal	1(%rdi,%rax), %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	shlxl	%edx, %esi, %eax

@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 109 occurrences:
 ; abc/optimized/wlcAbs.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -29,15 +29,15 @@
 ; icu/optimized/rbt_pars.ll
 ; icu/optimized/ustdio.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
+; libevent/optimized/bufferevent_pair.c.ll
 ; libevent/optimized/evmap.c.ll
 ; libwebp/optimized/token_enc.c.ll
 ; lief/optimized/ssl_msg.c.ll
 ; linux/optimized/80003es2lan.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/filter.ll
-; linux/optimized/he.ll
+; linux/optimized/genetlink.ll
 ; linux/optimized/hooks.ll
-; linux/optimized/ht.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/intel_pch_refclk.ll
@@ -79,6 +79,7 @@
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luajit/optimized/lj_opt_narrow.ll
 ; luajit/optimized/lj_opt_narrow_dyn.ll
+; lvgl/optimized/lv_table.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openmpi/optimized/ras_base_allocate.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
@@ -104,6 +105,10 @@
 ; wireshark/optimized/packet-sctp.c.ll
 ; wireshark/optimized/packet-v5ua.c.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0) #0 {
 entry:
@@ -112,20 +117,15 @@ entry:
   ret i16 %2
 }
 
-; 9 occurrences:
+; 4 occurrences:
 ; cpython/optimized/_codecs_kr.ll
-; hermes/optimized/String.cpp.ll
-; hermes/optimized/escape.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; opencv/optimized/grfmt_tiff.cpp.ll
-; openmpi/optimized/rmaps_base_frame.ll
+; llvm/optimized/PtrTypesSemantics.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; ruby/optimized/time.ll
-; spike/optimized/clrs16.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000004(i16 %0) #0 {
+define i16 @func0000000000000014(i16 %0) #0 {
 entry:
-  %1 = icmp ult i16 %0, 6
+  %1 = icmp samesign ult i16 %0, 6
   %2 = select i1 %1, i16 1, i16 -6
   ret i16 %2
 }
@@ -157,8 +157,7 @@ entry:
   ret i16 %2
 }
 
-; 11 occurrences:
-; libwebp/optimized/token_enc.c.ll
+; 9 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/sky2.ll
@@ -168,7 +167,6 @@ entry:
 ; llvm/optimized/DwarfUnit.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; openjdk/optimized/classFileParser.ll
-; openusd/optimized/zipFile.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i16 %0) #0 {
 entry:
@@ -186,6 +184,37 @@ entry:
   %.not = icmp eq i16 %0, 0
   %1 = select i1 %.not, i16 1, i16 2
   ret i16 %1
+}
+
+; 10 occurrences:
+; hermes/optimized/String.cpp.ll
+; hermes/optimized/escape.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; opencv/optimized/grfmt_tiff.cpp.ll
+; openmpi/optimized/rmaps_base_frame.ll
+; openusd/optimized/value.cpp.ll
+; spike/optimized/clrs16.ll
+; spike/optimized/clz16.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i16 %0) #0 {
+entry:
+  %1 = icmp ult i16 %0, 256
+  %2 = select i1 %1, i16 8, i16 0
+  ret i16 %2
+}
+
+; 3 occurrences:
+; libwebp/optimized/token_enc.c.ll
+; linux/optimized/skl_watermark.ll
+; openusd/optimized/zipFile.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000018(i16 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i16 %0, 60
+  %2 = select i1 %1, i16 128, i16 64
+  ret i16 %2
 }
 
 attributes #0 = { nounwind }

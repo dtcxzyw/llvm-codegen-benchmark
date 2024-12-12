@@ -33,7 +33,7 @@ func000000000000000e:                   # @func000000000000000e
 	.quad	63                              # 0x3f
 func0000000000000005:                   # @func0000000000000005
 	vpsrlq	$12, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsllvq	%ymm0, %ymm1, %ymm0

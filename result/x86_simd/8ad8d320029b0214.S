@@ -2,7 +2,7 @@
 	.long	4294967040                      # 0xffffff00
 .LCPI0_1:
 	.long	4294967041                      # 0xffffff01
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
@@ -12,7 +12,7 @@ func0000000000000116:                   # @func0000000000000116
 	retq
 .LCPI1_0:
 	.long	2                               # 0x2
-func00000000000003f4:                   # @func00000000000003f4
+func00000000000007f4:                   # @func00000000000007f4
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -34,7 +34,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI3_0:
 	.long	3                               # 0x3
-func0000000000000208:                   # @func0000000000000208
+func0000000000000408:                   # @func0000000000000408
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
@@ -47,7 +47,7 @@ func0000000000000208:                   # @func0000000000000208
 	.long	6                               # 0x6
 .LCPI4_1:
 	.long	8                               # 0x8
-func00000000000003f8:                   # @func00000000000003f8
+func00000000000007f8:                   # @func00000000000007f8
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
@@ -57,7 +57,7 @@ func00000000000003f8:                   # @func00000000000003f8
 	retq
 .LCPI5_0:
 	.long	5                               # 0x5
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -94,7 +94,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	2                               # 0x2
 .LCPI8_1:
 	.long	3                               # 0x3
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI8_1(%rip){1to8}, %ymm0, %ymm0

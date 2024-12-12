@@ -1,11 +1,16 @@
 
-; 109 occurrences:
+; 114 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; cpython/optimized/complexobject.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/introspection_basicadj.c.ll

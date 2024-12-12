@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000007:                   # @func0000000000000007
 	vptestnmb	%xmm2, %xmm2, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [256,256,256,256,256,256,256,256]
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.byte	75                              # 0x4b

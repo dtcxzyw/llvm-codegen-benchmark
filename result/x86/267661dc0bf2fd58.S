@@ -4,19 +4,19 @@ func0000000000000020:                   # @func0000000000000020
 	cmovbq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000063:                   # @func0000000000000063
+func00000000000000e3:                   # @func00000000000000e3
 	leaq	-65521(%rsi), %rax
 	cmpq	$65521, %rsi                    # imm = 0xFFF1
 	cmovbq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	leaq	1000000(%rsi), %rax
 	testq	%rsi, %rsi
 	cmovnsq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	leaq	3(%rsi), %rax
 	testq	%rsi, %rsi
 	cmovnsq	%rsi, %rax

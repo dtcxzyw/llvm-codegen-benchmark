@@ -38,7 +38,7 @@
 ; hyperscan/optimized/ue2string.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
   %3 = add i64 %2, -8
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = add nsw i64 %2, 4

@@ -1,4 +1,4 @@
-func0000000000000022:                   // @func0000000000000022
+func0000000000000023:                   // @func0000000000000023
 // %bb.0:                               // %entry
 	mov	x8, #-1                         // =0xffffffffffffffff
 	lsl	x8, x8, x2

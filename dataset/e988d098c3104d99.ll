@@ -11,24 +11,24 @@
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 8, i32 4
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -3
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 4, i32 3
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -38,12 +38,12 @@ entry:
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-scte35.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 4, i32 8
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 

@@ -4,8 +4,8 @@ func0000000000000002:                   # @func0000000000000002
 	vcvtps2pd	%ymm2, %zmm3
 	vextractf64x4	$1, %zmm2, %ymm2
 	vcvtps2pd	%ymm2, %zmm2
-	vmulpd	%zmm1, %zmm2, %zmm1
-	vmulpd	%zmm0, %zmm3, %zmm0
+	vmulpd	%zmm2, %zmm1, %zmm1
+	vmulpd	%zmm3, %zmm0, %zmm0
 	vbroadcastsd	.LCPI0_0(%rip), %zmm2   # zmm2 = [-1.0E+0,-1.0E+0,-1.0E+0,-1.0E+0,-1.0E+0,-1.0E+0,-1.0E+0,-1.0E+0]
 	vcmpltpd	%zmm2, %zmm0, %k0
 	vcmpltpd	%zmm2, %zmm1, %k1
@@ -19,8 +19,8 @@ func0000000000000004:                   # @func0000000000000004
 	vcvtps2pd	%ymm2, %zmm3
 	vextractf64x4	$1, %zmm2, %ymm2
 	vcvtps2pd	%ymm2, %zmm2
-	vmulpd	%zmm1, %zmm2, %zmm1
-	vmulpd	%zmm0, %zmm3, %zmm0
+	vmulpd	%zmm2, %zmm1, %zmm1
+	vmulpd	%zmm3, %zmm0, %zmm0
 	vbroadcastsd	.LCPI1_0(%rip), %zmm2   # zmm2 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vcmpltpd	%zmm0, %zmm2, %k0
 	vcmpltpd	%zmm1, %zmm2, %k1
@@ -32,8 +32,8 @@ func0000000000000007:                   # @func0000000000000007
 	vcvtps2pd	%ymm2, %zmm3
 	vextractf64x4	$1, %zmm2, %ymm2
 	vcvtps2pd	%ymm2, %zmm2
-	vmulpd	%zmm1, %zmm2, %zmm1
-	vmulpd	%zmm0, %zmm3, %zmm0
+	vmulpd	%zmm2, %zmm1, %zmm1
+	vmulpd	%zmm3, %zmm0, %zmm0
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpneqpd	%zmm2, %zmm0, %k0
 	vcmpneqpd	%zmm2, %zmm1, %k1
@@ -47,8 +47,8 @@ func0000000000000003:                   # @func0000000000000003
 	vcvtps2pd	%ymm2, %zmm3
 	vextractf64x4	$1, %zmm2, %ymm2
 	vcvtps2pd	%ymm2, %zmm2
-	vmulpd	%zmm1, %zmm2, %zmm1
-	vmulpd	%zmm0, %zmm3, %zmm0
+	vmulpd	%zmm2, %zmm1, %zmm1
+	vmulpd	%zmm3, %zmm0, %zmm0
 	vbroadcastsd	.LCPI3_0(%rip), %zmm2   # zmm2 = [1.0E-2,1.0E-2,1.0E-2,1.0E-2,1.0E-2,1.0E-2,1.0E-2,1.0E-2]
 	vcmpnlepd	%zmm0, %zmm2, %k0
 	vcmpnlepd	%zmm1, %zmm2, %k1

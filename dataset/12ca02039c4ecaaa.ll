@@ -17,24 +17,24 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/pe.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, -24
   %3 = select i1 %2, i64 224, i64 218
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; redis/optimized/ziplist.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000009a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000009f(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, -2
   %3 = select i1 %2, i64 1, i64 5
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
 

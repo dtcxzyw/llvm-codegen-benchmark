@@ -1,20 +1,25 @@
 
-; 2 occurrences:
-; openssl/optimized/libssl-lib-ssl_lib.ll
-; openssl/optimized/libssl-shlib-ssl_lib.ll
+; 3 occurrences:
+; linux/optimized/exthdrs.ll
+; lua/optimized/lstrlib.ll
+; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001f(i8 %0) #0 {
+define i64 @func000000000000002f(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = shl nuw nsw i32 %1, 3
-  %3 = add nuw nsw i32 %2, 8
-  %4 = zext nneg i32 %3 to i64
+  %1 = zext nneg i8 %0 to i32
+  %2 = add nsw i32 %1, -49
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 4
   ret i64 %4
 }
 
-; 2 occurrences:
+; 6 occurrences:
 ; linux/optimized/ah6.ll
+; linux/optimized/skbuff.ll
+; luajit/optimized/lib_string.ll
+; luajit/optimized/lib_string_dyn.ll
 ; luajit/optimized/minilua.ll
+; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i8 %0) #0 {
 entry:

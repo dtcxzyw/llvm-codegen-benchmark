@@ -1,5 +1,24 @@
 
-; 115 occurrences:
+; 9 occurrences:
+; glog/optimized/logging.cc.ll
+; hdf5/optimized/H5Ctag.c.ll
+; hdf5/optimized/H5Iint.c.ll
+; linux/optimized/trace_uprobe.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; openmpi/optimized/tm_malloc.ll
+; qemu/optimized/hw_pci_pcie_doe.c.ll
+; wireshark/optimized/packet-rtps.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -4
+  %3 = add i32 %2, -4
+  %4 = sub i32 %3, %0
+  ret i32 %4
+}
+
+; 114 occurrences:
 ; abc/optimized/mvcUtils.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -90,7 +109,6 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
@@ -121,25 +139,6 @@ entry:
   %2 = and i32 %1, 7
   %3 = add nuw nsw i32 %2, 3
   %4 = sub nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 9 occurrences:
-; glog/optimized/logging.cc.ll
-; hdf5/optimized/H5Ctag.c.ll
-; hdf5/optimized/H5Iint.c.ll
-; linux/optimized/trace_uprobe.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
-; meshlab/optimized/miniz.c.ll
-; openmpi/optimized/tm_malloc.ll
-; qemu/optimized/hw_pci_pcie_doe.c.ll
-; wireshark/optimized/packet-rtps.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, -4
-  %3 = add i32 %2, -4
-  %4 = sub i32 %3, %0
   ret i32 %4
 }
 

@@ -53,8 +53,3 @@ func0000000000000018:                   # @func0000000000000018
 	addl	%esi, %esi
 	subl	%esi, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
-	movq	%rdi, %rax
-	addl	%esi, %esi
-	subl	%esi, %eax
-	retq

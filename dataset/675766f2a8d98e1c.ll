@@ -1,6 +1,8 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -9,7 +11,7 @@
 ; mitsuba3/optimized/string.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000408(i64 %0, i128 %1, i128 %2) #0 {
+define i64 @func0000000000000808(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
   %4 = trunc i128 %3 to i64

@@ -15,22 +15,31 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 120
 .LBB1_2:                                # %entry
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000028:                   # @func0000000000000028
+	sext.w	a2, a2
+	sltiu	a2, a2, 23
+	or	a1, a1, a2
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_2
+	li	a0, 8
+.LBB2_2:                                # %entry
+	ret
+func0000000000000030:                   # @func0000000000000030
 	sext.w	a2, a2
 	sltiu	a2, a2, 9
 	not	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1
-	bnez	a1, .LBB2_2
+	bnez	a1, .LBB3_2
 	li	a0, 9
-.LBB2_2:                                # %entry
+.LBB3_2:                                # %entry
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a2, a2
 	snez	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1
-	bnez	a1, .LBB3_2
+	bnez	a1, .LBB4_2
 	li	a0, 1
-.LBB3_2:                                # %entry
+.LBB4_2:                                # %entry
 	ret

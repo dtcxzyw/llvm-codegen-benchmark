@@ -1,30 +1,24 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	decl	%edx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	cmovel	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	decl	%edx
-	cmpq	%rsi, %rdx
-	movl	$1, %eax
-	cmoval	%edi, %eax
-	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	decl	%edx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	cmovel	%edi, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	decl	%edx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rdx
-	cmoval	%edi, %eax
+	cmpq	%rdx, %rsi
+	cmovbl	%edi, %eax
 	retq
-func0000000000000036:                   # @func0000000000000036
-	decl	%edx
+func0000000000000066:                   # @func0000000000000066
+	addl	$16, %edx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rdx
-	cmovgl	%edi, %eax
+	cmpq	%rdx, %rsi
+	cmovll	%edi, %eax
 	retq

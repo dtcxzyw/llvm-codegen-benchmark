@@ -9,7 +9,7 @@
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; rust-analyzer-rs/optimized/ilnj6n0bhpk5oz9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 21
   %4 = select i1 %0, i1 %3, i1 false
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/syslogger.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 4087
   %4 = select i1 %0, i1 %3, i1 false

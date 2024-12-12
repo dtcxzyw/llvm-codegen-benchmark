@@ -3,7 +3,7 @@ func0000000000000028:                   # @func0000000000000028
 	vadd.vv	v12, v12, v12
 	vrsub.vi	v12, v12, 6
 	vsll.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func000000000000007c:                   # @func000000000000007c
 	vsetivli	zero, 8, e32, m2, ta, ma

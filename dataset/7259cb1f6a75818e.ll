@@ -1,17 +1,4 @@
 
-%"class.std::__1::tuple.2488118" = type { %"struct.std::__1::__tuple_impl.2488119" }
-%"struct.std::__1::__tuple_impl.2488119" = type <{ %"class.std::__1::__tuple_leaf.2488120", %"class.std::__1::__tuple_leaf.170.2488121", %"class.std::__1::__tuple_leaf.171.2488122", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2488120" = type { %"class.std::__1::basic_string.2487973" }
-%"class.std::__1::basic_string.2487973" = type { %"class.std::__1::__compressed_pair.2487974" }
-%"class.std::__1::__compressed_pair.2487974" = type { %"struct.std::__1::__compressed_pair_elem.2487975" }
-%"struct.std::__1::__compressed_pair_elem.2487975" = type { %"struct.std::__1::basic_string<char>::__rep.2487976" }
-%"struct.std::__1::basic_string<char>::__rep.2487976" = type { %union.anon.2487977 }
-%union.anon.2487977 = type { %"struct.std::__1::basic_string<char>::__long.2487978" }
-%"struct.std::__1::basic_string<char>::__long.2487978" = type { %struct.anon.0.2487979, i64, ptr }
-%struct.anon.0.2487979 = type { i64 }
-%"class.std::__1::__tuple_leaf.170.2488121" = type { %"class.std::__1::basic_string.2487973" }
-%"class.std::__1::__tuple_leaf.171.2488122" = type { i8 }
-
 ; 2 occurrences:
 ; cpython/optimized/longobject.ll
 ; ruby/optimized/bignum.ll
@@ -24,7 +11,7 @@ entry:
   ret ptr %4
 }
 
-; 542 occurrences:
+; 581 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -46,6 +33,53 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -71,7 +105,6 @@ entry:
 ; cmake/optimized/io.cpp.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cmake/optimized/session.cpp.ll
-; cmake/optimized/zstd_lazy.c.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/arith_ite_utils.cpp.ll
@@ -163,8 +196,6 @@ entry:
 ; entt/optimized/sigh_mixin.cpp.ll
 ; entt/optimized/storage.cpp.ll
 ; entt/optimized/version.cpp.ll
-; faiss/optimized/IndexFastScan.cpp.ll
-; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
 ; faiss/optimized/index_factory.cpp.ll
 ; fmt/optimized/ranges-test.cc.ll
@@ -285,10 +316,6 @@ entry:
 ; minetest/optimized/server.cpp.ll
 ; minetest/optimized/sound_manager.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
-; mitsuba3/optimized/bitmap.cpp.ll
-; mitsuba3/optimized/hdrfilm.cpp.ll
-; mitsuba3/optimized/specfilm.cpp.ll
-; mitsuba3/optimized/xml.cpp.ll
 ; ms-gsl/optimized/span_tests.cpp.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
 ; ninja/optimized/build.cc.ll
@@ -309,7 +336,6 @@ entry:
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -397,6 +423,9 @@ entry:
 ; pybind11/optimized/test_stl.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
+; quantlib/optimized/burley2020sobolrsg.ll
+; quantlib/optimized/date.ll
+; quantlib/optimized/fdminnervaluecalculator.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/nfa.cc.ll
 ; re2/optimized/parse.cc.ll
@@ -471,7 +500,6 @@ entry:
 ; taskflow/optimized/text_pipeline.cpp.ll
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
-; tev/optimized/Image.cpp.ll
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
@@ -556,7 +584,6 @@ entry:
 ; yosys/optimized/dft_tag.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/sta.ll
 ; yosys/optimized/verilog_parser.tab.ll
@@ -566,9 +593,8 @@ entry:
 ; z3/optimized/lar_core_solver.cpp.ll
 ; z3/optimized/static_matrix.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
-; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = getelementptr ptr, ptr %0, i64 %2
@@ -576,10 +602,8 @@ entry:
   ret ptr %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; mitsuba3/optimized/constpool.cpp.ll
-; opencv/optimized/speech_recognition.cpp.ll
-; taskflow/optimized/parallel_sort.cpp.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
@@ -590,11 +614,39 @@ entry:
   ret ptr %4
 }
 
-; 49 occurrences:
-; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; 20 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
+; eastl/optimized/TestAlgorithm.cpp.ll
+; hermes/optimized/APInt.cpp.ll
+; image-rs/optimized/2mngkegtim1o10y3.ll
+; lief/optimized/asn1write.c.ll
+; llvm/optimized/APInt.cpp.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
+; quantlib/optimized/sampledcurve.ll
+; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
+; tls-rs/optimized/49b6dhrgmsskmdw3.ll
+; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
+; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; typst-rs/optimized/3dimj4rf5dyrieyi.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
+; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
+; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 2
+  %3 = getelementptr { i16, [3 x i16], { i64, [2 x i64] } }, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -32
+  ret ptr %4
+}
+
+; 21 occurrences:
+; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
+; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -607,50 +659,23 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; eastl/optimized/TestAlgorithm.cpp.ll
-; hermes/optimized/APInt.cpp.ll
-; image-rs/optimized/2mngkegtim1o10y3.ll
-; lief/optimized/asn1write.c.ll
-; llvm/optimized/APInt.cpp.ll
 ; lua/optimized/ltable.ll
-; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; mitsuba3/optimized/bitmap.cpp.ll
-; mitsuba3/optimized/hdrfilm.cpp.ll
-; mitsuba3/optimized/specfilm.cpp.ll
-; mitsuba3/optimized/xml.cpp.ll
-; opencv/optimized/autocalib.cpp.ll
-; opencv/optimized/stitcher.cpp.ll
-; opencv/optimized/stitching_detailed.cpp.ll
 ; openjdk/optimized/ptrQueue.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; php/optimized/cdf.ll
-; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
-; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
-; taskflow/optimized/parallel_sort.cpp.ll
-; tev/optimized/Image.cpp.ll
-; tls-rs/optimized/49b6dhrgmsskmdw3.ll
-; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
-; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
-; typst-rs/optimized/3dimj4rf5dyrieyi.ll
-; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
-; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
-; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 1
-  %3 = getelementptr %"class.std::__1::tuple.2488118", ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -56
+  %2 = lshr i64 %1, 3
+  %3 = getelementptr ptr, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
   ret ptr %4
 }
 
-; 5 occurrences:
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; 4 occurrences:
 ; linux/optimized/rsrc.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; xgboost/optimized/allgather.cc.ll
@@ -664,31 +689,13 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
-; quantlib/optimized/burley2020sobolrsg.ll
-; quantlib/optimized/date.ll
-; quantlib/optimized/fdminnervaluecalculator.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 9
-  %3 = getelementptr ptr, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
-}
-
-; 1 occurrences:
-; quantlib/optimized/sampledcurve.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 1
-  %3 = getelementptr double, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -8
-  ret ptr %4
-}
-
-; 1 occurrences:
+; 7 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; opencv/optimized/speech_recognition.cpp.ll
 ; quantlib/optimized/sampledcurve.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
@@ -710,25 +717,17 @@ entry:
   ret ptr %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 20
   ret ptr %4
-}
-
-; 1 occurrences:
-; opencv/optimized/perf_layer.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
-entry:
-  %2 = getelementptr i8, ptr %0, i64 %1
-  %3 = getelementptr i8, ptr %2, i64 -4
-  ret ptr %3
 }
 
 ; 1 occurrences:

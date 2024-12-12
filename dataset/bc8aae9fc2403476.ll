@@ -1,10 +1,8 @@
 
-; 8 occurrences:
-; abc/optimized/mvcCompare.c.ll
+; 6 occurrences:
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/extents_status.ll
-; linux/optimized/swiotlb.ll
 ; linux/optimized/xfrm_policy.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; ruby/optimized/random.ll
@@ -12,11 +10,11 @@
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
-; 60 occurrences:
+; 58 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/kitSop.c.ll
 ; clamav/optimized/netcode.c.ll
@@ -31,7 +29,6 @@ entry:
 ; git/optimized/pack-bitmap.ll
 ; git/optimized/replay.ll
 ; graphviz/optimized/gvrender_core_dot.c.ll
-; hyperscan/optimized/limex_compile.cpp.ll
 ; icu/optimized/collationcompare.ll
 ; icu/optimized/collationweights.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -42,7 +39,6 @@ entry:
 ; linux/optimized/ethtool.ll
 ; linux/optimized/fib_frontend.ll
 ; linux/optimized/hdmi_chmap.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/pcm_lib.ll
@@ -81,12 +77,11 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 15 occurrences:
-; abc/optimized/mvcCompare.c.ll
+; 14 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -105,7 +100,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -118,7 +113,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -133,7 +128,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -148,7 +143,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
@@ -158,7 +153,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp uge i32 %3, %0
+  %4 = icmp ule i32 %0, %3
   ret i1 %4
 }
 
@@ -168,7 +163,7 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp ule i32 %3, %0
+  %4 = icmp uge i32 %0, %3
   ret i1 %4
 }
 

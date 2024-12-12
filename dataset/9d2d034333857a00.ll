@@ -55,12 +55,13 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/resize.c.ll
+; openusd/optimized/restoration.c.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {

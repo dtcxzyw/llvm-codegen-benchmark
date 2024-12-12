@@ -1,5 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
-	leal	1(%rdi,%rsi), %eax
+	leal	2(%rdi,%rsi), %eax
 	vcvtusi2ss	%eax, %xmm0, %xmm0
 	retq
 func000000000000001b:                   # @func000000000000001b

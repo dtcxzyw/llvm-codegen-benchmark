@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 31 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -18,22 +18,15 @@
 ; opencv/optimized/freak.cpp.ll
 ; opencv/optimized/proposal_layer.cpp.ll
 ; openjdk/optimized/cmsgmt.ll
-; openjdk/optimized/cmslut.ll
 ; openjdk/optimized/deoptimization.ll
 ; openjdk/optimized/klass.ll
 ; postgres/optimized/vacuumlazy.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; verilator/optimized/V3ExecGraph.cpp.ll
 ; wireshark/optimized/capture_file_properties_dialog.cpp.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-calcappprotocol.c.ll
 ; wireshark/optimized/packet-componentstatus.c.ll
-; wireshark/optimized/packet-enrp.c.ll
-; wireshark/optimized/packet-fractalgeneratorprotocol.c.ll
 ; wireshark/optimized/packet-ftp.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
-; wireshark/optimized/packet-pingpongprotocol.c.ll
-; wireshark/optimized/packet-scriptingservice.c.ll
 ; wireshark/optimized/protocol_hierarchy_dialog.cpp.ll
 ; wireshark/optimized/tap-icmpstat.c.ll
 ; wireshark/optimized/tap-icmpv6stat.c.ll
@@ -47,7 +40,7 @@ entry:
   ret double %4
 }
 
-; 36 occurrences:
+; 38 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaGen.c.ll
@@ -77,6 +70,7 @@ entry:
 ; opencv/optimized/perf_tsdf.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; openjdk/optimized/cmsgamma.ll
+; openjdk/optimized/cmslut.ll
 ; openjdk/optimized/img_colors.ll
 ; openjdk/optimized/png.ll
 ; openjdk/optimized/runtime.ll
@@ -84,6 +78,7 @@ entry:
 ; postgres/optimized/brin_bloom.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
+; yosys/optimized/mutate.ll
 ; Function Attrs: nounwind
 define double @func0000000000000001(double %0, i32 %1) #0 {
 entry:

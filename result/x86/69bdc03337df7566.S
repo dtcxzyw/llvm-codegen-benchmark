@@ -18,11 +18,6 @@ func0000000000000014:                   # @func0000000000000014
 	subq	%rdi, %rsi
 	leaq	256(%rsi), %rax
 	retq
-func0000000000000015:                   # @func0000000000000015
-	imulq	%rdx, %rsi
-	subq	%rdi, %rsi
-	leaq	16(%rsi), %rax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	imulq	%rdx, %rsi
 	notq	%rdi
@@ -32,4 +27,9 @@ func0000000000000009:                   # @func0000000000000009
 	imulq	%rdx, %rsi
 	notq	%rdi
 	leaq	(%rdi,%rsi), %rax
+	retq
+func0000000000000015:                   # @func0000000000000015
+	imulq	%rdx, %rsi
+	subq	%rdi, %rsi
+	leaq	2048(%rsi), %rax
 	retq

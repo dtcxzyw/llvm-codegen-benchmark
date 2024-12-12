@@ -19,10 +19,9 @@ entry:
   ret i16 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/unistr.ll
-; linux/optimized/8250_mid.ll
 ; luajit/optimized/lj_ffrecord.ll
 ; luajit/optimized/lj_ffrecord_dyn.ll
 ; luajit/optimized/lj_opt_narrow.ll
@@ -54,9 +53,8 @@ entry:
   ret i16 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; lief/optimized/ssl_tls.c.ll
-; linux/optimized/i8237.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i32 %0) #0 {
 entry:

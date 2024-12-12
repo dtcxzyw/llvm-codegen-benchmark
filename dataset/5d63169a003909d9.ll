@@ -16,7 +16,7 @@ define i32 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }
@@ -31,7 +31,7 @@ define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

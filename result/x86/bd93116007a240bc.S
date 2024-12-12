@@ -1,10 +1,10 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	cmpl	$2, %edi
 	sete	%al
 	orb	%sil, %al
 	andb	$1, %al
 	retq
-func00000000000000b0:                   # @func00000000000000b0
+func0000000000000130:                   # @func0000000000000130
 	testl	%edi, %edi
 	setne	%al
 	orb	%sil, %al

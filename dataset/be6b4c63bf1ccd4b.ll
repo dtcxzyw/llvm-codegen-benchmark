@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; linux/optimized/fib_trie.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/g1RemSet.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i8 %1) #0 {

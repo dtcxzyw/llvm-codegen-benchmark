@@ -53,7 +53,7 @@ entry:
   ret i32 %6
 }
 
-; 45 occurrences:
+; 43 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; gromacs/optimized/gmx_nmens.cpp.ll
@@ -67,7 +67,6 @@ entry:
 ; libwebp/optimized/near_lossless_enc.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/xfrm_user.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -89,7 +88,6 @@ entry:
 ; openjdk/optimized/constMethod.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; redis/optimized/bitops.ll
@@ -103,7 +101,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = and i32 %1, 1
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -166,7 +164,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = and i32 %1, 12
   %6 = add nsw i32 %4, %5
   ret i32 %6

@@ -11,9 +11,3 @@ func00000000000000c3:                   # @func00000000000000c3
 	cmpb	$1, %sil
 	sbbl	$-1, %eax
 	retq
-func0000000000000083:                   # @func0000000000000083
-	movl	%edi, %eax
-	andl	$1, %eax
-	cmpb	$-16, %sil
-	sbbl	$-1, %eax
-	retq

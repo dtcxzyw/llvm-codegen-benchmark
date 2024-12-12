@@ -1,8 +1,7 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; glslang/optimized/PoolAlloc.cpp.ll
 ; linux/optimized/ccm.ll
-; linux/optimized/ctr.ll
 ; linux/optimized/gcm.ll
 ; linux/optimized/lskcipher.ll
 ; linux/optimized/skcipher.ll

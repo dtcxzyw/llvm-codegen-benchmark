@@ -1,9 +1,10 @@
 
-; 19 occurrences:
+; 21 occurrences:
 ; abc/optimized/extraUtilPerm.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; hdf5/optimized/H5HFcache.c.ll
 ; linux/optimized/iommu.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/uncore_nhmex.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/charuco.cpp.ll
@@ -16,6 +17,7 @@
 ; postgres/optimized/multixact.ll
 ; qemu/optimized/hw_misc_pci-testdev.c.ll
 ; ruby/optimized/time.ll
+; stb/optimized/stb_connected_components.c.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; zxing/optimized/MCReader.cpp.ll
@@ -23,7 +25,7 @@
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -38,12 +40,12 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 81 occurrences:
+; 82 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/ACLoader.cpp.ll
@@ -57,6 +59,7 @@ entry:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/socket.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; draco/optimized/corner_table.cc.ll
@@ -141,7 +144,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 6
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -176,7 +179,7 @@ entry:
 define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 94
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -200,7 +203,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 6
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -225,7 +228,7 @@ entry:
 define i64 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -248,7 +251,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 17
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

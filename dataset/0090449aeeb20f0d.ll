@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; libquic/optimized/histogram.cc.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll
 ; openjdk/optimized/DrawParallelogram.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
-; postgres/optimized/float.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, double %1, i32 %2) #0 {
 entry:

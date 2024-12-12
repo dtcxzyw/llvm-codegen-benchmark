@@ -326,7 +326,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(double %0) #0 {
+define i1 @func0000000000000018(double %0) #0 {
 entry:
   %1 = fptrunc double %0 to float
   %2 = bitcast float %1 to i32

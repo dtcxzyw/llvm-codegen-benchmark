@@ -1,4 +1,4 @@
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	addl	$-16, %esi
 	testl	$-17, %esi
 	setne	%cl

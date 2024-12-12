@@ -10,7 +10,7 @@ entry:
   %4 = add nsw i32 %3, -528
   %5 = add nsw i32 %4, %1
   %6 = mul nsw i32 %5, 100
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 

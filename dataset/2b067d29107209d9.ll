@@ -1,7 +1,10 @@
 
-; 6 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; hwloc/optimized/bitmap.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_theme_default.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll

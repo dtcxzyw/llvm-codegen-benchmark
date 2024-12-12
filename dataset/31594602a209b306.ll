@@ -13,7 +13,7 @@ entry:
   ret i32 %2
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -39,7 +39,6 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll

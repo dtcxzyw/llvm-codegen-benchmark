@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movq	%rsi, %rax
 	movabsq	$1749024623285053783, %rcx      # imm = 0x1845C8A0CE512957
 	imulq	%rcx
@@ -10,10 +10,10 @@ func000000000000001a:                   # @func000000000000001a
 	cmpl	$-719468, %edx                  # imm = 0xFFF50594
 	setge	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	shrq	$2, %rsi
-	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
-	addl	%edi, %eax
+	imull	$1431655765, %esi, %eax         # imm = 0x55555555
+	cmpl	%eax, %edi
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -28,31 +28,31 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%edx, %edx
 	setle	%al
 	retq
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	shrq	$3, %rsi
 	imull	$954437177, %esi, %eax          # imm = 0x38E38E39
 	addl	%edi, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	shrq	$3, %rsi
-	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
-	addl	%edi, %eax
+	imull	$1431655765, %esi, %eax         # imm = 0x55555555
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	shrq	$3, %rsi
 	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
 	addl	%edi, %eax
 	shrl	$31, %eax
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	shrq	$3, %rsi
 	imull	$-1227133513, %esi, %eax        # imm = 0xB6DB6DB7
 	addl	%edi, %eax
 	setns	%al
 	retq
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	shrq	$3, %rsi
 	imull	$-1227133513, %esi, %eax        # imm = 0xB6DB6DB7
 	addl	%edi, %eax

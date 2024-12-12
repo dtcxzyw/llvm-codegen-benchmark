@@ -22,7 +22,7 @@
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000034(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000064(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %2, 9
   %4 = icmp ult i8 %1, 58

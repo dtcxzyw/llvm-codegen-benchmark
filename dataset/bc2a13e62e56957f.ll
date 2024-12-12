@@ -4,12 +4,12 @@
 ; openssl/optimized/openssl-bin-dgst.ll
 ; qemu/optimized/chardev_char-socket.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000638(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000c78(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
-  %5 = icmp ugt i32 %4, 1
+  %4 = add nuw nsw i32 %0, %3
+  %5 = icmp samesign ugt i32 %4, 1
   ret i1 %5
 }
 
@@ -28,19 +28,18 @@ entry:
 ; qemu/optimized/util_qemu-option.c.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000631(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000c61(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = icmp eq i32 %4, 1
   ret i1 %5
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cpython/optimized/ceval.ll
-; hdf5/optimized/H5HGdbg.c.ll
 ; linux/optimized/audit_tree.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/xhci.ll
@@ -65,13 +64,12 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000601(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000c01(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
-  %3 = zext i1 %2 to i32
-  %4 = sub i32 0, %0
-  %5 = icmp eq i32 %3, %4
-  ret i1 %5
+  %.neg = sext i1 %2 to i32
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -79,11 +77,11 @@ entry:
 ; git/optimized/config.ll
 ; openjdk/optimized/c1_Instruction.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000061a(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000c2a(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp sgt i32 %4, 0
   ret i1 %5
 }
@@ -94,24 +92,23 @@ entry:
 ; cpython/optimized/frameobject.ll
 ; hwloc/optimized/distances.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000101(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
-  %3 = zext i1 %2 to i32
-  %4 = sub i32 0, %0
-  %5 = icmp eq i32 %3, %4
-  ret i1 %5
+  %.neg = sext i1 %2 to i32
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 2 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000161(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -120,11 +117,11 @@ entry:
 ; git/optimized/read-tree.ll
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000608(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000c08(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp ugt i32 %4, 1
   ret i1 %5
 }
@@ -132,23 +129,23 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000178(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
-  %5 = icmp ugt i32 %4, 1
+  %4 = add nuw nsw i32 %0, %3
+  %5 = icmp samesign ugt i32 %4, 1
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000063c(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000c6c(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = icmp ne i32 %4, 1
   ret i1 %5
 }
@@ -157,23 +154,22 @@ entry:
 ; linux/optimized/drm_plane.ll
 ; linux/optimized/early_ioremap.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000060c(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000c0c(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
-  %3 = zext i1 %2 to i32
-  %4 = sub i32 0, %0
-  %5 = icmp ne i32 %3, %4
-  ret i1 %5
+  %.neg = sext i1 %2 to i32
+  %3 = icmp ne i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 1 occurrences:
 ; linux/optimized/xarray.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000106(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp slt i32 %4, 0
   ret i1 %5
 }
@@ -181,11 +177,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/audit_tree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000606(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000c06(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp slt i32 %4, 0
   ret i1 %5
 }
@@ -194,11 +190,11 @@ entry:
 ; cpython/optimized/ceval.ll
 ; linux/optimized/audit_tree.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000060a(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000c0a(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp sgt i32 %4, 0
   ret i1 %5
 }
@@ -206,23 +202,22 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/reslist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000611(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000c21(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
-  %3 = zext i1 %2 to i32
-  %4 = sub i32 0, %0
-  %5 = icmp eq i32 %3, %4
-  ret i1 %5
+  %.neg = sext i1 %2 to i32
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 1 occurrences:
 ; hwloc/optimized/distances.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000604(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000c04(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp ult i32 %4, 2
   ret i1 %5
 }

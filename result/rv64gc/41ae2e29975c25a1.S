@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 .LBB0_2:
 	li	a0, 23
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a1
 	lui	a1, 4
 	addiw	a3, a1, -1023
@@ -27,6 +27,16 @@ func0000000000000004:                   # @func0000000000000004
 .LBB1_3:
 	li	a0, 192
 .LBB1_4:                                # %entry
+	ret
+func0000000000000004:                   # @func0000000000000004
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
+	srliw	a0, a1, 16
+	snez	a0, a0
+	addi	a0, a0, 3
+	ret
+.LBB2_2:
+	li	a0, 10
 	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, 1

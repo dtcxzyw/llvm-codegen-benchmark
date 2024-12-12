@@ -16,9 +16,10 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/process.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; hyperscan/optimized/ng_puff.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
@@ -29,18 +30,15 @@ entry:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
 ; redis/optimized/networking.ll
 ; redis/optimized/stats.ll
 ; redis/optimized/stats.sym.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/triggers.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp eq i64 %2, 0
+  %3 = icmp eq i64 %2, 32
   %4 = select i1 %3, i1 %1, i1 false
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5

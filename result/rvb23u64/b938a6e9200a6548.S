@@ -5,7 +5,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func00000000000000a0:                   # @func00000000000000a0
 	sext.w	a2, a2
@@ -14,5 +14,5 @@ func00000000000000a0:                   # @func00000000000000a0
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = and i64 %2, 3
@@ -54,7 +54,7 @@ entry:
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = and i64 %2, 7
@@ -66,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/function_internal.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000054(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = and i64 %2, -9223372036854775745

@@ -22,7 +22,7 @@ define ptr @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 12
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5
 }

@@ -4,7 +4,7 @@
 	.long	2147481600                      # 0x7ffff800
 .LCPI0_2:
 	.long	55296                           # 0xd800
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpternlogd	$168, .LCPI0_1(%rip){1to8}, %ymm0, %ymm1 # ymm1 = mem & (ymm1 | ymm0)
 	vpcmpeqd	.LCPI0_2(%rip){1to8}, %ymm1, %k0
@@ -17,7 +17,7 @@ func0000000000000021:                   # @func0000000000000021
 	.long	4294967289                      # 0xfffffff9
 func0000000000000001:                   # @func0000000000000001
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vptestnmd	.LCPI1_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; mitsuba3/optimized/progress.cpp.ll
@@ -11,6 +11,7 @@
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; recastnavigation/optimized/imgui.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1) #0 {
 entry:
@@ -32,7 +33,7 @@ entry:
   %2 = fcmp olt float %1, 0.000000e+00
   %3 = select i1 %2, float 0.000000e+00, float %1
   %4 = fsub float 1.000000e+00, %3
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

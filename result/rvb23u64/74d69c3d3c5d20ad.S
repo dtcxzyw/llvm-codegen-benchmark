@@ -39,16 +39,3 @@ func0000000000000011:                   # @func0000000000000011
 	sh1add	a0, a0, a0
 	sext.w	a0, a0
 	ret
-.LCPI4_0:
-	.quad	5247073869855161349             # 0x48d159e26af37c05
-func0000000000000001:                   # @func0000000000000001
-	lui	a1, %hi(.LCPI4_0)
-	ld	a1, %lo(.LCPI4_0)(a1)
-	mulh	a0, a0, a1
-	srli	a1, a0, 63
-	srli	a0, a0, 10
-	add	a0, a0, a1
-	sh2add	a0, a0, a0
-	sh2add	a0, a0, a0
-	slliw	a0, a0, 2
-	ret

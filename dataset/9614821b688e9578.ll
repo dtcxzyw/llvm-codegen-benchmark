@@ -14,7 +14,7 @@ entry:
 ; cmake/optimized/easy.c.ll
 ; curl/optimized/libcurl_la-easy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = and i32 %3, 48
@@ -54,17 +54,6 @@ entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, 255
   %5 = icmp slt i32 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; freetype/optimized/sfnt.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = and i32 %3, 65534
-  %5 = icmp uge i32 %4, %0
   ret i1 %5
 }
 

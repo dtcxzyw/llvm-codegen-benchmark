@@ -13,13 +13,14 @@
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
-  %2 = and i1 %.not, %0
+  %2 = and i1 %0, %.not
   ret i1 %2
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; linux/optimized/cmdline.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
+; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; openjdk/optimized/ciMethod.ll
@@ -35,29 +36,25 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 2 occurrences:
+; 9 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; gromacs/optimized/indexutil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 1
-  %3 = and i1 %2, %0
-  ret i1 %3
-}
-
-; 2 occurrences:
-; gromacs/optimized/threadaffinity.cpp.ll
-; spike/optimized/f32_classify.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, -1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

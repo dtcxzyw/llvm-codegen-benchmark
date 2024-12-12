@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; libpng/optimized/pngpread.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngrtran.c.ll
@@ -8,7 +8,6 @@
 ; libpng/optimized/pngwrite.c.ll
 ; libpng/optimized/pngwtran.c.ll
 ; libpng/optimized/pngwutil.c.ll
-; linux/optimized/tbfadt.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; oiio/optimized/softimageinput.cpp.ll
@@ -22,7 +21,7 @@ define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 3
   %3 = zext nneg i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -38,7 +37,7 @@ define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 4
   %3 = zext nneg i8 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -49,7 +48,7 @@ define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 3
   %3 = zext nneg i8 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 

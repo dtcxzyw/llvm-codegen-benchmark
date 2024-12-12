@@ -15,13 +15,12 @@ entry:
   ret i32 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; graphviz/optimized/routespl.c.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/block_vhdx-log.c.ll
-; slurm/optimized/ebpf.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003d(i32 %0, i32 %1, i1 %2) #0 {

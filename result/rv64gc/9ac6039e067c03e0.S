@@ -1,18 +1,8 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000003f:                   # @func000000000000003f
 	sext.w	a2, a2
-	sltiu	a2, a2, -1
-	addi	a2, a2, -1
-	or	a1, a1, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 32
-	add	a0, a0, a1
-	addi	a0, a0, 4
-	ret
-func000000000000003a:                   # @func000000000000003a
-	sext.w	a2, a2
-	bnez	a2, .LBB1_2
+	bnez	a2, .LBB0_2
 	li	a1, 1
-.LBB1_2:                                # %entry
+.LBB0_2:                                # %entry
 	sext.w	a1, a1
 	slli	a1, a1, 2
 	add	a0, a0, a1

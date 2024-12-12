@@ -22,7 +22,7 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-set.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 %0, %1
   %3 = mul i32 %2, 72

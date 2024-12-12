@@ -9,7 +9,7 @@ entry:
   %4 = and i32 %3, 4
   %5 = and i32 %1, 16
   %6 = or disjoint i32 %5, %4
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = and i32 %3, 65280
   %5 = and i32 %1, 16711680
   %6 = or disjoint i32 %5, %4
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

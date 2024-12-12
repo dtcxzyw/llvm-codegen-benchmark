@@ -16,7 +16,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll

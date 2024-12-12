@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -18,7 +18,6 @@
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
 ; nix/optimized/lock.ll
@@ -48,7 +47,7 @@
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = ashr exact i64 %0, 2

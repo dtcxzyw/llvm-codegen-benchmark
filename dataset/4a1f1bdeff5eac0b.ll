@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:

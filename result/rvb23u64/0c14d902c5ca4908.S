@@ -13,12 +13,11 @@ func0000000000000005:                   # @func0000000000000005
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
+func000000000000000c:                   # @func000000000000000c
 	sh3add	a1, a2, a1
 	xor	a0, a0, a1
 	ret
-func000000000000000c:                   # @func000000000000000c
-	slli	a2, a2, 11
-	add	a1, a1, a2
+func000000000000000f:                   # @func000000000000000f
+	sh3add	a1, a2, a1
 	xor	a0, a0, a1
 	ret

@@ -1,5 +1,5 @@
 
-; 231 occurrences:
+; 230 occurrences:
 ; ruby/optimized/regexec.ll
 ; yosys/optimized/abc.ll
 ; yosys/optimized/abc9.ll
@@ -109,7 +109,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -232,7 +231,7 @@
 ; yosys/optimized/yw.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 48
   %3 = shl nsw i64 %2, 1
@@ -326,7 +325,7 @@ entry:
 ; tinympc/optimized/admm.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
   %3 = shl nsw i64 %2, 1
@@ -337,7 +336,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 8
   %3 = shl nsw i64 %2, 3
@@ -351,7 +350,7 @@ entry:
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 16
   %3 = shl nsw i64 %2, 4

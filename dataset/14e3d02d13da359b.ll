@@ -1,5 +1,5 @@
 
-; 386 occurrences:
+; 389 occurrences:
 ; abc/optimized/epd.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
@@ -11,6 +11,8 @@
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; cpython/optimized/dtoa.ll
@@ -126,6 +128,7 @@
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
@@ -145,8 +148,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -386,6 +387,8 @@
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; z3/optimized/hwf.cpp.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(double %0) #0 {
 entry:

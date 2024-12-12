@@ -1,9 +1,9 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	movq	%rdi, %rax
 	cmpl	$1, %esi
 	sbbq	$-1, %rax
 	retq
-func0000000000000062:                   # @func0000000000000062
+func0000000000000063:                   # @func0000000000000063
 	xorl	%eax, %eax
 	cmpl	$1, %esi
 	sete	%al

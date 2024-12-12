@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000050(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Darwin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000048(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -30,7 +30,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000118(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -44,10 +44,10 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000058(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6

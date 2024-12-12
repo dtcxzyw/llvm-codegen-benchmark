@@ -13,10 +13,10 @@
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i8 %0, i8 %1) #0 {
+define i64 @func0000000000000014(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp samesign ult i8 %2, %0
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }

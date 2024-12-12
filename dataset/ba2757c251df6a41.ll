@@ -1,16 +1,46 @@
 
-; 1 occurrences:
+; 23 occurrences:
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3CB0000000000000
-  %4 = fcmp ult double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp ugt double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 93 occurrences:
+; 101 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; gromacs/optimized/read_params.cpp.ll
 ; quantlib/optimized/abcdatmvolcurve.ll
 ; quantlib/optimized/analyticcompoundoptionengine.ll
@@ -108,25 +138,55 @@ entry:
 define i1 @func000000000000000a(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3D05000000000000
-  %4 = fcmp oge double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp ole double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/sysinfo.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; quantlib/optimized/conundrumpricer.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 2.000000e+00
-  %4 = fcmp ogt double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp olt double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 18 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; gromacs/optimized/pull.cpp.ll
 ; postgres/optimized/pathnode.ll
 ; quantlib/optimized/gausslobattointegral.ll
@@ -134,8 +194,8 @@ entry:
 define i1 @func0000000000000004(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e-01
-  %4 = fcmp olt double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp ogt double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -145,8 +205,8 @@ entry:
 define i1 @func000000000000000d(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3CB0000000000000
-  %4 = fcmp ule double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp uge double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -156,7 +216,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, -5.000000e-01
-  %4 = fcmp ole double %3, %1
+  %4 = fcmp oge double %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -168,7 +228,7 @@ entry:
 define i1 @func0000000000000007(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x400921FB54442D18
-  %4 = fcmp une double %3, %1
+  %4 = fcmp une double %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -183,8 +243,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3FEE54EDC0000000
-  %4 = fcmp oeq double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp oeq double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

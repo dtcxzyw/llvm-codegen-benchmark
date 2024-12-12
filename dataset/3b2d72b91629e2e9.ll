@@ -9,9 +9,8 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i8 %0, i8 %1) #0 {

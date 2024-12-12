@@ -32,7 +32,7 @@ func000000000000003c:                   # @func000000000000003c
 func0000000000000010:                   # @func0000000000000010
 	shll	$4, %edx
 	testb	$1, %sil
-	leal	169(%rdx,%rdi), %ecx
-	leal	208(%rdx,%rdi), %eax
+	leal	169(%rdi,%rdx), %ecx
+	leal	208(%rdi,%rdx), %eax
 	cmovnel	%ecx, %eax
 	retq

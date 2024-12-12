@@ -4,7 +4,7 @@
 ; slurm/optimized/parse_config.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -9
   %3 = icmp ult i32 %2, 2
@@ -17,7 +17,7 @@ entry:
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/Flang.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000085(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -64
   %3 = icmp ult i32 %2, 65473
@@ -30,7 +30,7 @@ entry:
 ; luajit/optimized/lj_state.ll
 ; luajit/optimized/lj_state_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -97
   %3 = icmp ult i32 %2, 65413

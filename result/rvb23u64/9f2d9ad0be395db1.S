@@ -1,4 +1,4 @@
-func00000000000002aa:                   # @func00000000000002aa
+func000000000000054a:                   # @func000000000000054a
 	add	a2, a2, a1
 	addiw	a2, a2, 2
 	subw	a0, a0, a1

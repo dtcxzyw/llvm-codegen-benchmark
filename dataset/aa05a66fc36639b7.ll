@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
 ; arrow/optimized/concatenate.cc.ll
@@ -25,13 +25,14 @@
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; openjdk/optimized/methodLiveness.ll
-; php/optimized/dow.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; qemu/optimized/hw_nvme_dif.c.ll
 ; raylib/optimized/rcore.c.ll
 ; ruby/optimized/gc.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
@@ -39,11 +40,11 @@
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
-; 172 occurrences:
+; 170 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -105,7 +106,6 @@ entry:
 ; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
 ; minetest/optimized/test_map.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
@@ -116,7 +116,6 @@ entry:
 ; openmpi/optimized/show_help_lex.ll
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
-; php/optimized/dow.ll
 ; php/optimized/ir.ll
 ; php/optimized/zend_language_parser.ll
 ; postgres/optimized/bootscanner.ll
@@ -220,7 +219,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 

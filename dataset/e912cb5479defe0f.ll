@@ -1,8 +1,12 @@
 
-; 53 occurrences:
+; 59 occurrences:
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/giaPat.c.ll
 ; abc/optimized/luckySwap.c.ll
+; boost/optimized/console_buffer.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_stackstring.ll
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
@@ -50,9 +54,11 @@
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
 ; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
+; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
@@ -61,11 +67,12 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/ivyHaig.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; entt/optimized/registry.cpp.ll
 ; hwloc/optimized/topology-linux.ll
+; linux/optimized/drbg.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind

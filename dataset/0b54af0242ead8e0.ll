@@ -39,8 +39,7 @@ entry:
   ret double %6
 }
 
-; 6 occurrences:
-; openblas/optimized/ddisna.c.ll
+; 5 occurrences:
 ; openblas/optimized/dlag2.c.ll
 ; openblas/optimized/dlaic1.c.ll
 ; openblas/optimized/dlanv2.c.ll

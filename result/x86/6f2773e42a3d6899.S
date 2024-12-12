@@ -4,7 +4,7 @@ func0000000000000006:                   # @func0000000000000006
 	sarq	$63, %rax
 	andl	%edi, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	cmpq	%rdx, %rsi
 	movl	$-2, %eax
 	cmovgel	%edi, %eax
@@ -21,6 +21,6 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$65535, %eax                    # imm = 0xFFFF
 	cmovbl	%edi, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	movl	%edi, %eax
 	retq

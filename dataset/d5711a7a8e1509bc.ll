@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/basic_iarchive.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; llvm/optimized/TpiStreamBuilder.cpp.ll
@@ -9,6 +10,7 @@
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; openmpi/optimized/common_ompio_file_write.ll
 ; openmpi/optimized/osc_rdma_comm.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:

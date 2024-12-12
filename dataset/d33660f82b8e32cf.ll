@@ -1,5 +1,6 @@
 
-; 72 occurrences:
+; 80 occurrences:
+; abseil-cpp/optimized/arg.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -11,8 +12,13 @@
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clap-rs/optimized/1zp92zvstj9lufi9.ll
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
+; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; cmake/optimized/parsedate.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
@@ -60,17 +66,19 @@
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
+; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; oiio/optimized/xmp.cpp.ll
 ; openblas/optimized/dsyrk_thread_UN.c.ll
 ; openblas/optimized/dsyrk_thread_UT.c.ll
 ; openjdk/optimized/metaspace.ll
 ; pugixml/optimized/pugixml.cpp.ll
+; regex-rs/optimized/3ixfkxlmcuecmmus.ll
 ; ruby/optimized/vm_dump.ll
-; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
-; z3/optimized/rlimit.cpp.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1, i64 %2) #0 {

@@ -1,25 +1,25 @@
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000003e8:                   # @func00000000000003e8
 	shrl	$3, %edx
 	addl	%edi, %edx
 	incl	%esi
 	cmpl	%esi, %edx
 	seta	%al
 	retq
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	shrl	$28, %edx
 	addl	%edi, %edx
 	incl	%esi
 	cmpl	%esi, %edx
 	setg	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	shrl	$16, %edx
 	addl	%edi, %edx
 	decl	%esi
 	cmpl	%esi, %edx
 	setl	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	shrl	%edx
 	addl	%edi, %edx
 	addl	$-4, %esi

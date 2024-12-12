@@ -11,7 +11,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 18
   %4 = and i32 %3, 786432
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = lshr i32 %5, 16
   ret i32 %6
 }
@@ -40,7 +40,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 18
   %4 = and i32 %3, 262144
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = lshr i32 %5, 8
   ret i32 %6
 }

@@ -48,7 +48,7 @@ entry:
   %3 = select i1 %2, i64 72, i64 56
   %4 = shl nuw nsw i64 %1, 5
   %5 = add nuw nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -60,7 +60,7 @@ entry:
   %3 = shl nsw i64 %2, 4
   %4 = select i1 %1, i64 128, i64 96
   %5 = add nsw i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

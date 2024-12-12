@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; linux/optimized/tg3.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
+; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/coin_game.cc.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; openspiel/optimized/quoridor.cc.ll

@@ -3,7 +3,7 @@ func000000000000000a:                   # @func000000000000000a
 	subw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	srliw	a1, a0, 1
 	subw	a0, a0, a1
 	slti	a0, a0, 6

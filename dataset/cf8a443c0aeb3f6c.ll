@@ -36,7 +36,7 @@ entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 16777216, i64 0
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -53,7 +53,7 @@ entry:
   %3 = and i32 %2, -268431361
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 4096
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }

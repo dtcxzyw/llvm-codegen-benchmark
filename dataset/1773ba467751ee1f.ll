@@ -1,5 +1,7 @@
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; opencv/optimized/canny.cpp.ll

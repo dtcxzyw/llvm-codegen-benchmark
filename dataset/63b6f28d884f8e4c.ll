@@ -29,20 +29,8 @@ define i16 @func0000000000000003(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = and i16 %2, 3968
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = or disjoint i16 %4, 24577
-  ret i16 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_sd_ssi-sd.c.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000e(i16 %0, i32 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i32 %1 to i16
-  %3 = and i16 %2, 1
-  %4 = or disjoint i16 %3, %0
-  %5 = or i16 %4, 2
   ret i16 %5
 }
 
@@ -53,7 +41,7 @@ define i16 @func000000000000000c(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = and i16 %2, 32
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = or i16 %4, 4
   ret i16 %5
 }
@@ -65,7 +53,7 @@ define i16 @func0000000000000002(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = and i16 %2, 63
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = or i16 %4, 384
   ret i16 %5
 }

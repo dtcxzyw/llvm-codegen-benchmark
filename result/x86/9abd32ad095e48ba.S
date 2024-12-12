@@ -24,6 +24,11 @@ func0000000000000008:                   # @func0000000000000008
 	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
 	addq	%rcx, %rax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	movzwl	%si, %eax
+	imulq	%rdi, %rax
+	incq	%rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	movzwl	%si, %eax
 	imulq	%rdi, %rax

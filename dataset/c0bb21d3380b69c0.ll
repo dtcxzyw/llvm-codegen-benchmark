@@ -11,7 +11,7 @@ entry:
   ret i32 %2
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; hdf5/optimized/H5B2int.c.ll
@@ -34,7 +34,6 @@ entry:
 ; wireshark/optimized/packet-mikey.c.ll
 ; wireshark/optimized/packet-ntp.c.ll
 ; wireshark/optimized/packet-reload.c.ll
-; wireshark/optimized/packet-scriptingservice.c.ll
 ; wireshark/optimized/packet-sua.c.ll
 ; wireshark/optimized/packet-xmcp.c.ll
 ; wireshark/optimized/pcapng.c.ll

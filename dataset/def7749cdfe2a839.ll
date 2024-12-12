@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %.neg = mul i64 %1, -3
   %2 = sub i64 0, %0
@@ -33,11 +33,24 @@ entry:
 }
 
 ; 3 occurrences:
+; image-rs/optimized/2s4mh02dvph60euq.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+entry:
+  %.neg = mul i64 %1, -3
+  %2 = add i64 %.neg, %0
+  %3 = icmp ult i64 %2, 3
+  ret i1 %3
+}
+
+; 3 occurrences:
 ; gromacs/optimized/pbc.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %.neg = mul i64 %1, -56
   %2 = add i64 %.neg, %0
@@ -49,7 +62,7 @@ entry:
 ; llvm/optimized/OptTable.cpp.ll
 ; z3/optimized/mbp_arrays.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001aa(i64 %0, i64 %1) #0 {
 entry:
   %.neg = mul i64 %1, -104
   %2 = add i64 %.neg, %0

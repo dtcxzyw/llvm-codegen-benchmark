@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 21 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -17,7 +17,10 @@
 ; quickjs/optimized/libunicode.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; tokenizers-rs/optimized/1ve5rid4048y19bt.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0) #0 {
 entry:

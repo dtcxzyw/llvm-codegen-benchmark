@@ -1,10 +1,9 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; arrow/optimized/concatenate.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
-; llvm/optimized/Expr.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
@@ -26,10 +25,11 @@ entry:
   ret i32 %6
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/cmdline.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
@@ -69,7 +69,20 @@ define i32 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+; 2 occurrences:
+; boost/optimized/attribute_name.ll
+; hyperscan/optimized/rose_build_misc.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = lshr exact i64 %3, 6
+  %5 = add i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

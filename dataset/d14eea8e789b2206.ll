@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.3501344" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3501372", i64, %union.anon.32.3501373 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3501372" = type { ptr }
-%union.anon.32.3501373 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.3683502" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3683530", i64, %union.anon.32.3683531 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3683530" = type { ptr }
+%union.anon.32.3683531 = type { i64, [8 x i8] }
 
 ; 37 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
@@ -68,11 +68,11 @@ entry:
 ; 1 occurrences:
 ; entt/optimized/helper.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1023
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -82,11 +82,11 @@ entry:
 ; nix/optimized/installables.ll
 ; nix/optimized/search.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8191
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.3501344", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.3683502", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

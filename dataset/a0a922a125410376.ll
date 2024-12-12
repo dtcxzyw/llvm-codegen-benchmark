@@ -1,12 +1,9 @@
 
-; 9 occurrences:
+; 6 occurrences:
 ; libjpeg-turbo/optimized/jchuff.c.ll
-; linux/optimized/ptp_kvm_x86.ll
 ; linux/optimized/pvclock.ll
-; linux/optimized/vclock_gettime.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF16.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind

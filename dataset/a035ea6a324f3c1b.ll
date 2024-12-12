@@ -1,5 +1,11 @@
 
-; 413 occurrences:
+%"struct.irr::gui::CGUIComboBox::SComboData.2691837" = type <{ %"class.irr::core::string.2691838", i32, [4 x i8] }>
+%"class.irr::core::string.2691838" = type { %"class.std::__cxx11::basic_string.2691839" }
+%"class.std::__cxx11::basic_string.2691839" = type { %"struct.std::__cxx11::basic_string<wchar_t>::_Alloc_hider.2691840", i64, %union.anon.2691841 }
+%"struct.std::__cxx11::basic_string<wchar_t>::_Alloc_hider.2691840" = type { ptr }
+%union.anon.2691841 = type { i64, [8 x i8] }
+
+; 402 occurrences:
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/MosDecoder.cpp.ll
@@ -7,7 +13,6 @@
 ; darktable/optimized/RafDecoder.cpp.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
 ; darktable/optimized/SrwDecoder.cpp.ll
-; eastl/optimized/BenchmarkString.cpp.ll
 ; glslang/optimized/ParseContextBase.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/PpAtom.cpp.ll
@@ -25,12 +30,6 @@
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
-; minetest/optimized/CFileSystem.cpp.ll
-; minetest/optimized/CGUIComboBox.cpp.ll
-; minetest/optimized/CGUIEnvironment.cpp.ll
-; minetest/optimized/CGUIListBox.cpp.ll
-; minetest/optimized/CNullDriver.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
@@ -294,13 +293,10 @@
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
@@ -373,7 +369,6 @@
 ; ozz-animation/optimized/import2ozz_track.cc.ll
 ; proxy/optimized/proxy_creation_tests.cpp.ll
 ; proxy/optimized/proxy_lifetime_tests.cpp.ll
-; pybind11/optimized/test_stl_binders.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; spike/optimized/cflush.ll
 ; spike/optimized/device.ll
@@ -420,6 +415,38 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 8 occurrences:
+; eastl/optimized/BenchmarkString.cpp.ll
+; minetest/optimized/CFileSystem.cpp.ll
+; minetest/optimized/CGUIComboBox.cpp.ll
+; minetest/optimized/CGUIEnvironment.cpp.ll
+; minetest/optimized/CGUIListBox.cpp.ll
+; minetest/optimized/CNullDriver.cpp.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
+; pybind11/optimized/test_stl_binders.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000032(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %"struct.irr::gui::CGUIComboBox::SComboData.2691837", ptr %0, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; boost/optimized/code_conversion.ll
+; boost/optimized/main.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -63,46 +63,8 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; quickjs/optimized/libbf.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
-entry:
-  %3 = sext i1 %2 to i64
-  %4 = sub nsw i64 %0, %1
-  %5 = add nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 3 occurrences:
-; clamav/optimized/clamdtop.c.ll
-; cpython/optimized/Python-tokenize.ll
-; cpython/optimized/io.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
-entry:
-  %3 = sext i1 %2 to i64
-  %4 = sub i64 %0, %1
-  %5 = add nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; grpc/optimized/parser.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
-entry:
-  %3 = sext i1 %2 to i64
-  %4 = sub nuw i64 %0, %1
-  %5 = add i64 %4, %3
-  ret i64 %5
-}
-
-; 146 occurrences:
+; 144 occurrences:
+; boost/optimized/topology.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
 ; nix/optimized/archive.ll
@@ -189,13 +151,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -254,6 +213,45 @@ define i64 @func000000000000000d(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
   %4 = sub nuw nsw i64 %0, %1
+  %5 = add nsw i64 %4, %3
+  ret i64 %5
+}
+
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
+; grpc/optimized/parser.cc.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = sext i1 %2 to i64
+  %4 = sub nuw i64 %0, %1
+  %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 3 occurrences:
+; libquic/optimized/time_support.c.ll
+; quickjs/optimized/libbf.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = sext i1 %2 to i64
+  %4 = sub nsw i64 %0, %1
+  %5 = add nsw i64 %4, %3
+  ret i64 %5
+}
+
+; 3 occurrences:
+; clamav/optimized/clamdtop.c.ll
+; cpython/optimized/Python-tokenize.ll
+; cpython/optimized/io.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = sext i1 %2 to i64
+  %4 = sub i64 %0, %1
   %5 = add nsw i64 %4, %3
   ret i64 %5
 }

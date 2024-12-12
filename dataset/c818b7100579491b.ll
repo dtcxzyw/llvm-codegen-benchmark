@@ -1,11 +1,10 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/mpmMan.c.ll
 ; hermes/optimized/dtoa.c.ll
 ; libwebp/optimized/picture_enc.c.ll
 ; lightgbm/optimized/bin.cpp.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/select.ll
 ; linux/optimized/sock.ll

@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/area_box_sg.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; g2o/optimized/edge_project_stereo_xyz.cpp.ll
 ; postgres/optimized/nbtsplitloc.ll

@@ -39,7 +39,7 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, 512
 	addi	a0, a0, -32
 	vand.vx	v9, v9, a0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 32
@@ -64,5 +64,5 @@ func000000000000000f:                   # @func000000000000000f
 	vnsrl.wx	v9, v10, a0
 	li	a0, 127
 	vand.vx	v9, v9, a0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret

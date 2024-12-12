@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 56 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
@@ -51,13 +51,18 @@
 ; protobuf/optimized/struct.pb.cc.ll
 ; protobuf/optimized/type.pb.cc.ll
 ; protobuf/optimized/unparser.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 1
   %5 = icmp eq i64 %4, 0
-  %6 = getelementptr nusw i8, ptr %1, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %1, i64 8
   %7 = select i1 %5, ptr %0, ptr %6
   ret ptr %7
 }

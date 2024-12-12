@@ -10,7 +10,7 @@
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; wasmtime-rs/optimized/3swlmlzz83rbbf1u.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw nsw i32 1, %2
@@ -22,7 +22,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000161(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 2, %2

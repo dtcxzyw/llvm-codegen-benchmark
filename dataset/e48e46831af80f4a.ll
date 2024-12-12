@@ -1,9 +1,8 @@
 
-; 67 occurrences:
+; 66 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDec.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/acecMult.c.ll

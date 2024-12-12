@@ -1,5 +1,6 @@
 
-; 30 occurrences:
+; 33 occurrences:
+; boost/optimized/numeric.ll
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; duckdb/optimized/generators.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -30,6 +31,8 @@
 ; spike/optimized/vmadd_vx.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/packet-e164.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -38,9 +41,10 @@ entry:
   ret i16 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; openjdk/optimized/pngrtran.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vwmaccu_vv.ll
@@ -75,6 +79,16 @@ define i16 @func000000000000000d(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = mul nuw nsw i16 %1, %2
   %4 = add nsw i16 %3, %0
+  ret i16 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000f(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = mul nuw nsw i16 %1, %2
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 

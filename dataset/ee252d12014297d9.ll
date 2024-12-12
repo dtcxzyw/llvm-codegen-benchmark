@@ -68,10 +68,20 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 1 occurrences:
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 1
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %0, i64 %3, i64 1
+  ret i64 %4
+}
+
+; 5 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
-; postgres/optimized/oracle_compat.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll

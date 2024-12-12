@@ -63,7 +63,7 @@
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/traffic_tab.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 3
   %2 = and i64 %1, 8070450532247928832
@@ -82,7 +82,7 @@ entry:
   ret i1 %1
 }
 
-; 47 occurrences:
+; 45 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
@@ -111,7 +111,6 @@ entry:
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; opencv/optimized/charuco_detector.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
-; opencv/optimized/eltwise_layer.cpp.ll
 ; opencv/optimized/gstreamingexecutor.cpp.ll
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
 ; opencv/optimized/trackerMedianFlow.cpp.ll
@@ -124,14 +123,13 @@ entry:
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; quantlib/optimized/discretizedswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/nonstandardswap.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; yosys/optimized/freduce.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 4
   %2 = and i64 %1, -9223372036854775745

@@ -6,19 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpsrld	$13, %ymm2, %ymm1
 	knotb	%k0, %k1
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1 {%k1} {z}
-	vpcmpeqd	%ymm0, %ymm1, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI1_0:
-	.long	16383                           # 0x3fff
-func0000000000000008:                   # @func0000000000000008
-	vpsllw	$15, %xmm1, %xmm1
-	vpmovw2m	%xmm1, %k0
-	vpsrld	$16, %ymm2, %ymm1
-	knotb	%k0, %k1
-	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1 {%k1} {z}
-	vpcmpltud	%ymm0, %ymm1, %k0
+	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 73 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/pdrInv.c.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
@@ -38,8 +38,6 @@
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
@@ -56,7 +54,6 @@
 ; postgres/optimized/syslogger.ll
 ; ruby/optimized/vm_trace.ll
 ; slurm/optimized/acct_gather_profile_influxdb.ll
-; sqlite/optimized/sqlite3.ll
 ; z3/optimized/automaton.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -81,7 +78,7 @@ define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -511,18 +508,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp sgt i32 %3, 1513
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openexr/optimized/IexMathFpu.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %1, %2
-  %4 = icmp ugt i32 %3, 31
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

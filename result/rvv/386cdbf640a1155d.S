@@ -16,8 +16,3 @@ func0000000000000014:                   # @func0000000000000014
 	vwmulu.vv	v10, v8, v9
 	vnsrl.wi	v8, v10, 16
 	ret
-func0000000000000010:                   # @func0000000000000010
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vwmulu.vv	v10, v8, v9
-	vnsrl.wi	v8, v10, 16
-	ret

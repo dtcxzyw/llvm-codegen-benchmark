@@ -1,4 +1,4 @@
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	addi	a2, a2, -1
 	mul	a1, a1, a2
 	addw	a0, a0, a1
@@ -10,39 +10,39 @@ func0000000000000006:                   # @func0000000000000006
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	addi	a2, a2, 16
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func00000000000003d6:                   # @func00000000000003d6
+func00000000000007a6:                   # @func00000000000007a6
 	addi	a2, a2, 1
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 97
 	ret
-func0000000000000356:                   # @func0000000000000356
+func00000000000006a6:                   # @func00000000000006a6
 	addi	a2, a2, 1
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func0000000000000146:                   # @func0000000000000146
+func0000000000000286:                   # @func0000000000000286
 	lui	a3, 1048560
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	addi	a2, a2, -1
-	mulw	a1, a2, a1
+	mulw	a1, a1, a2
 	negw	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001c6:                   # @func00000000000001c6
+func0000000000000386:                   # @func0000000000000386
 	addi	a2, a2, -1
 	mul	a1, a1, a2
 	addw	a0, a0, a1
@@ -56,21 +56,22 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a1, a2, -1537
 	sltu	a0, a1, a0
 	ret
-func0000000000000141:                   # @func0000000000000141
-	addi	a2, a2, 20
-	mulw	a1, a2, a1
-	negw	a0, a0
+func0000000000000281:                   # @func0000000000000281
+	sext.w	a0, a0
+	li	a3, -20
+	subw	a3, a3, a2
+	mulw	a1, a3, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000003d8:                   # @func00000000000003d8
+func00000000000007a8:                   # @func00000000000007a8
 	addi	a2, a2, 1
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 265
 	xori	a0, a0, 1
 	ret
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	addi	a2, a2, -1
 	mul	a1, a1, a2
 	addw	a0, a0, a1

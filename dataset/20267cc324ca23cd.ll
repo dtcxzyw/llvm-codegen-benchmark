@@ -8,6 +8,18 @@ entry:
   ret i1 %2
 }
 
+; 1 occurrences:
+; boost/optimized/expand_on_spheroid.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000022(double %0, double %1) #0 {
+entry:
+  %2 = fsub double %0, %1
+  %3 = fcmp olt double %2, 1.800000e+02
+  %4 = select i1 %3, double 1.800000e+02, double %2
+  %5 = fcmp olt double %4, 1.000000e+00
+  ret i1 %5
+}
+
 ; 4 occurrences:
 ; gromacs/optimized/fixpoint.c.ll
 ; hermes/optimized/Array.cpp.ll

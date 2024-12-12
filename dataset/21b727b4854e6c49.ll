@@ -66,7 +66,7 @@ entry:
   ret i32 %2
 }
 
-; 75 occurrences:
+; 73 occurrences:
 ; abc/optimized/fraigSat.c.ll
 ; c3c/optimized/sema_decls.c.ll
 ; cmake/optimized/archive_string.c.ll
@@ -106,11 +106,9 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/libnode.node_env_var.ll
 ; opencv/optimized/opencl-opencv-interop.cpp.ll
-; openmpi/optimized/coll_basic_module.ll
 ; openmpi/optimized/coll_tuned_dynamic_rules.ll
 ; openmpi/optimized/pmix_show_help.ll
 ; openmpi/optimized/ras_testrm_component.ll
-; openmpi/optimized/show_help.ll
 ; openssl/optimized/libcrypto-lib-encoder_lib.ll
 ; openssl/optimized/libcrypto-shlib-encoder_lib.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll

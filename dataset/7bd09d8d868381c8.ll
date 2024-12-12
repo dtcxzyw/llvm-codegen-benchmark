@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 43 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -23,9 +23,7 @@
 ; llvm/optimized/DIPrinter.cpp.ll
 ; llvm/optimized/Disassembler.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/FormatVariadic.cpp.ll
 ; llvm/optimized/MatchFilePath.cpp.ll
-; llvm/optimized/RISCVISAInfo.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; llvm/optimized/Regex.cpp.ll
 ; llvm/optimized/SPIR.cpp.ll
@@ -45,7 +43,6 @@
 ; ruby/optimized/file.ll
 ; ruby/optimized/re.ll
 ; sentencepiece/optimized/stringpiece.cc.ll
-; wasmedge/optimized/vinode.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:

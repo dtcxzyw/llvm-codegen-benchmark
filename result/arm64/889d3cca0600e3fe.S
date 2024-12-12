@@ -1,4 +1,4 @@
-func000000000000006a:                   // @func000000000000006a
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	and	x8, x2, #0xff
@@ -9,7 +9,7 @@ func000000000000006a:                   // @func000000000000006a
 	add	x0, x8, x9
 	ret
                                         // -- End function
-func000000000000002a:                   // @func000000000000002a
+func000000000000003e:                   // @func000000000000003e
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	add	x8, x1, w2, uxtb #2

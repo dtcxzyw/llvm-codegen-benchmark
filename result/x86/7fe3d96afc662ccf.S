@@ -20,7 +20,7 @@ func000000000000000d:                   # @func000000000000000d
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movzbl	%sil, %eax
-	decl	%eax
+	addl	$-80, %eax
 	imull	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004

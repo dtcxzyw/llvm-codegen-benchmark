@@ -1,24 +1,21 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; libquic/optimized/time_support.c.ll
 ; luau/optimized/loslib.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; qemu/optimized/util_cutils.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul i32 %1, 1461
-  %3 = add i32 %2, 7012800
-  %4 = sdiv i32 %3, 4
-  %5 = add i32 %4, %0
+  %2 = mul i32 %1, 153
+  %3 = add i32 %2, -457
+  %4 = sdiv i32 %3, 5
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; clamav/optimized/rebuildpe.c.ll
-; icu/optimized/gregoimp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:

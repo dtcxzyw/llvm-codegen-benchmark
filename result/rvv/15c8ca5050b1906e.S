@@ -1,4 +1,4 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v12, v11, a0
@@ -7,7 +7,7 @@ func0000000000000056:                   # @func0000000000000056
 	vor.vv	v10, v12, v14
 	vmslt.vv	v0, v10, v8
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v12, v11, a0
@@ -16,7 +16,7 @@ func0000000000000051:                   # @func0000000000000051
 	vor.vv	v10, v12, v14
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v12, v11, a0
@@ -25,7 +25,7 @@ func0000000000000054:                   # @func0000000000000054
 	vor.vv	v10, v12, v14
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v12, v11, a0
@@ -34,7 +34,7 @@ func0000000000000058:                   # @func0000000000000058
 	vor.vv	v10, v12, v14
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000059:                   # @func0000000000000059
+func00000000000000a9:                   # @func00000000000000a9
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v12, v11, a0
@@ -43,19 +43,11 @@ func0000000000000059:                   # @func0000000000000059
 	vor.vv	v10, v12, v14
 	vmsleu.vv	v0, v8, v10
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v11, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v10
 	vor.vv	v10, v12, v14
 	vmseq.vv	v0, v10, v8
-	ret
-func0000000000000064:                   # @func0000000000000064
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vwsll.vi	v12, v11, 16
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v14, v10
-	vor.vv	v10, v12, v14
-	vmsltu.vv	v0, v10, v8
 	ret

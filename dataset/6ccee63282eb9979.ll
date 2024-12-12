@@ -6,13 +6,13 @@
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i1 %0, i64 %1) #0 {
 entry:
   %.fr1 = freeze i64 %1
   %2 = mul i64 %.fr1, 152
   %3 = urem i64 %2, 104
   %4 = icmp ne i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

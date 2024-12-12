@@ -1,222 +1,120 @@
-func00000000000000f1:                   // @func00000000000000f1
+func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmeq	v1.2d, v1.2d, v3.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000084:                   // @func0000000000000084
+func0000000000000104:                   // @func0000000000000104
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000000b4:                   // @func00000000000000b4
+func0000000000000164:                   // @func0000000000000164
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
-	ret
-                                        // -- End function
-func00000000000000c8:                   // @func00000000000000c8
-// %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmeq	v1.2d, v1.2d, v3.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmeq	v1.2d, v1.2d, v3.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000a1:                   // @func00000000000000a1
+func0000000000000141:                   // @func0000000000000141
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmeq	v1.2d, v1.2d, v3.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000e1:                   // @func00000000000000e1
+func00000000000001c1:                   // @func00000000000001c1
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmeq	v1.2d, v1.2d, v3.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000034:                   // @func0000000000000034
+func0000000000000064:                   // @func0000000000000064
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, lo
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmeq	v1.2d, v1.2d, v3.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, ne
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000071:                   // @func0000000000000071
+func00000000000000e1:                   // @func00000000000000e1
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	mov	w8, #1                          // =0x1
-	and	v4.8b, v4.8b, v5.8b
-	dup	v5.2d, x8
-	ushll	v4.4s, v4.4h, #0
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	uaddw	v2.2d, v2.2d, v4.2s
-	uaddw2	v3.2d, v3.2d, v4.4s
-	cmeq	v1.2d, v1.2d, v3.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x9, x0, #1
+	add	x8, x1, x8
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function

@@ -28,3 +28,17 @@ func0000000000000005:                   # @func0000000000000005
 .LBB2_2:                                # %entry
 	fsub.d	fa0, fa0, fa1
 	ret
+.LCPI3_0:
+	.quad	0x4010000000000000              # double 4
+.LCPI3_1:
+	.quad	0x4002d97c7f3321d2              # double 2.3561944901923448
+func0000000000000003:                   # @func0000000000000003
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
+	fle.d	a0, fa5, fa2
+	beqz	a0, .LBB3_2
+	lui	a0, %hi(.LCPI3_1)
+	fld	fa1, %lo(.LCPI3_1)(a0)
+.LBB3_2:                                # %entry
+	fsub.d	fa0, fa0, fa1
+	ret

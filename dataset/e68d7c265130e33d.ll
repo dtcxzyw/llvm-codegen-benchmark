@@ -8,7 +8,7 @@
 ; wireshark/optimized/packet-uds.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000282(i8 %0) #0 {
+define i1 @func0000000000000902(i8 %0) #0 {
 entry:
   %1 = add nsw i8 %0, -65
   %2 = icmp ult i8 %1, 26
@@ -23,7 +23,7 @@ entry:
 ; wireshark/optimized/packet-infiniband.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(i8 %0) #0 {
+define i1 @func0000000000000110(i8 %0) #0 {
 entry:
   %1 = add i8 %0, -14
   %2 = icmp ult i8 %1, 18
@@ -32,20 +32,7 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; libevent/optimized/ws.c.ll
-; ruby/optimized/pack.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000290(i8 %0) #0 {
-entry:
-  %1 = add nsw i8 %0, -9
-  %2 = icmp ult i8 %1, 2
-  %3 = icmp ugt i8 %0, 31
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 185 occurrences:
+; 206 occurrences:
 ; abc/optimized/abcShow.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cbaWriteVer.c.ll
@@ -60,6 +47,7 @@ entry:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/3arfg1ogrgyw4qv2.ll
 ; actix-rs/optimized/7zeo7o16a1wcxcn.ll
+; boost/optimized/named_scope_format_parser.ll
 ; c3c/optimized/compiler.c.ll
 ; c3c/optimized/float.c.ll
 ; c3c/optimized/lexer.c.ll
@@ -89,6 +77,8 @@ entry:
 ; flac/optimized/format.c.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; folly/optimized/json.cpp.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type42.c.ll
 ; git/optimized/sh-i18n--envsubst.ll
 ; hdf5/optimized/h5debug.c.ll
 ; hermes/optimized/FlowHelpers.cpp.ll
@@ -108,13 +98,24 @@ entry:
 ; lightgbm/optimized/json11.cpp.ll
 ; linux/optimized/dmi-id.ll
 ; linux/optimized/printk.ll
+; linux/optimized/trace_events_filter.ll
 ; linux/optimized/utascii.ll
 ; llama.cpp/optimized/grammar-parser.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; llvm/optimized/AsmWriter.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CallEvent.cpp.ll
 ; llvm/optimized/CalledOnceCheck.cpp.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/ConstraintElimination.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/DWARFExpression.cpp.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/IndexBody.cpp.ll
+; llvm/optimized/InstCombineSelect.cpp.ll
+; llvm/optimized/LoopFlatten.cpp.ll
+; llvm/optimized/LoopUtils.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
@@ -122,8 +123,14 @@ entry:
 ; llvm/optimized/ParentMap.cpp.ll
 ; llvm/optimized/RustDemangle.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/ScalarEvolutionExpander.cpp.ll
+; llvm/optimized/SemaInit.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/Sink.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/main.cpp.ll
+; meshlab/optimized/ofbx.cpp.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.ARM64.cc.ll
@@ -217,6 +224,7 @@ entry:
 ; redis/optimized/fxp.sym.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; regex-rs/optimized/v8mcpnwv4glojx2.ll
+; ruby/optimized/regexec.ll
 ; slurm/optimized/gpu_common.ll
 ; slurm/optimized/read_config.ll
 ; wireshark/optimized/packet-memcache.c.ll
@@ -232,19 +240,32 @@ entry:
 ; zxing/optimized/TextDecoder.cpp.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0) #0 {
+define i1 @func0000000000000102(i8 %0) #0 {
 entry:
-  %1 = add i8 %0, -97
-  %2 = icmp ult i8 %1, 26
-  %3 = icmp eq i8 %0, 45
+  %1 = add i8 %0, -48
+  %2 = icmp ult i8 %1, 10
+  %3 = icmp eq i8 %0, 95
   %4 = or i1 %3, %2
   ret i1 %4
 }
 
-; 9 occurrences:
+; 1 occurrences:
+; ruby/optimized/pack.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000930(i8 %0) #0 {
+entry:
+  %1 = add nsw i8 %0, -9
+  %2 = icmp ult i8 %1, 2
+  %3 = icmp samesign ugt i8 %0, 31
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
+; 10 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; minetest/optimized/string.cpp.ll
 ; nom-rs/optimized/2mhjsvr4l103ztah.ll
+; php/optimized/decode.ll
 ; postgres/optimized/euc_jp_and_sjis.ll
 ; postgres/optimized/wchar.ll
 ; postgres/optimized/wchar_shlib.ll
@@ -252,7 +273,7 @@ entry:
 ; qemu/optimized/block_vvfat.c.ll
 ; stb/optimized/stb_c_lexer.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0) #0 {
+define i1 @func000000000000010c(i8 %0) #0 {
 entry:
   %1 = add i8 %0, -9
   %2 = icmp ult i8 %1, 2
@@ -261,15 +282,22 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 13 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; linux/optimized/ibs.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/GlobalStatus.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; php/optimized/json_scanner.ll
 ; php/optimized/parse_date.ll
 ; php/optimized/url_scanner_ex.ll
 ; php/optimized/zend_ini_scanner.ll
+; redis/optimized/rdb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0) #0 {
+define i1 @func0000000000000108(i8 %0) #0 {
 entry:
   %1 = add i8 %0, -97
   %2 = icmp ult i8 %1, 26
@@ -278,7 +306,8 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; icu/optimized/csrmbcs.ll
 ; icu/optimized/uts46.ll
 ; linux/optimized/cistpl.ll
 ; postgres/optimized/wchar.ll
@@ -286,7 +315,7 @@ entry:
 ; postgres/optimized/wchar_srv.ll
 ; wireshark/optimized/packet-dccp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i8 %0) #0 {
+define i1 @func0000000000000114(i8 %0) #0 {
 entry:
   %1 = add i8 %0, -3
   %2 = icmp ult i8 %1, 29
@@ -298,11 +327,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucasemap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i8 %0) #0 {
+define i1 @func0000000000000928(i8 %0) #0 {
 entry:
   %1 = add nsw i8 %0, 21
   %2 = icmp ult i8 %1, 2
-  %3 = icmp ult i8 %0, -22
+  %3 = icmp samesign ult i8 %0, -22
   %4 = or i1 %3, %2
   ret i1 %4
 }

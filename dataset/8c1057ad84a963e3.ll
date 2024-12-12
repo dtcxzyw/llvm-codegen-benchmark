@@ -1,5 +1,6 @@
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -104,7 +105,7 @@ entry:
   %3 = add i32 %2, 32770
   %4 = and i32 %3, 65536
   %5 = icmp ne i32 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

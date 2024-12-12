@@ -26,3 +26,12 @@ func0000000000000018:                   # @func0000000000000018
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
+func0000000000000009:                   # @func0000000000000009
+	sext.w	a2, a2
+	sltiu	a2, a2, 2
+	li	a3, -816
+	czero.eqz	a2, a3, a2
+	addi	a2, a2, -16
+	and	a1, a1, a2
+	or	a0, a0, a1
+	ret

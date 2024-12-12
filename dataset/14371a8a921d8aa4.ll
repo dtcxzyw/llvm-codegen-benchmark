@@ -1,5 +1,10 @@
 
-; 17 occurrences:
+; 22 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; clamav/optimized/libfreshclam_internal.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll

@@ -26,4 +26,18 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; boost/optimized/collate.ll
+; ruby/optimized/ossl_asn1.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(ptr %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %3, %2
+  %5 = shl nsw i64 %4, 1
+  %6 = or disjoint i64 %5, 1
+  ret i64 %6
+}
+
 attributes #0 = { nounwind }

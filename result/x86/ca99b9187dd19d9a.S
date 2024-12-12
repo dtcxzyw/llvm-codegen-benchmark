@@ -15,7 +15,7 @@ func000000000000002b:                   # @func000000000000002b
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	xorl	%eax, %eax
 	cmpl	$301, %esi                      # imm = 0x12D
 	movl	$165, %ecx

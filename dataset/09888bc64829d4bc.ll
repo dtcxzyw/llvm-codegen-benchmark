@@ -1,5 +1,5 @@
 
-; 218 occurrences:
+; 219 occurrences:
 ; abc/optimized/cmdAuto.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/ifLibLut.c.ll
@@ -65,6 +65,7 @@
 ; lightgbm/optimized/dcg_calculator.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll

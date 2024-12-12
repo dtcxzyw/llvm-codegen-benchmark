@@ -22,7 +22,7 @@
 define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = add nuw i32 %3, 258
   ret i32 %4
 }

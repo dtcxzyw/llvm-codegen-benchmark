@@ -6,11 +6,11 @@
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000341(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000e81(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = icmp ugt i32 %3, %1
+  %4 = icmp eq i32 %1, %3
+  %5 = icmp samesign ult i32 %1, %3
   %6 = select i1 %4, i1 %0, i1 %5
   ret i1 %6
 }
@@ -19,11 +19,11 @@ entry:
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000381(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000f01(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = icmp ult i32 %3, %1
+  %4 = icmp eq i32 %1, %3
+  %5 = icmp samesign ugt i32 %1, %3
   %6 = select i1 %4, i1 %0, i1 %5
   ret i1 %6
 }
@@ -35,11 +35,11 @@ entry:
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = icmp ult i32 %3, %1
+  %4 = icmp eq i32 %1, %3
+  %5 = icmp ugt i32 %1, %3
   %6 = select i1 %4, i1 %0, i1 %5
   ret i1 %6
 }
@@ -54,24 +54,38 @@ entry:
 ; openmpi/optimized/btl_tcp_proc.ll
 ; spike/optimized/s_mul128MTo256M.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = icmp ugt i32 %3, %1
+  %4 = icmp eq i32 %1, %3
+  %5 = icmp ult i32 %1, %3
+  %6 = select i1 %4, i1 %0, i1 %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
+; llvm/optimized/BasicBlockSections.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = icmp eq i32 %1, %3
+  %5 = icmp slt i32 %1, %3
   %6 = select i1 %4, i1 %0, i1 %5
   ret i1 %6
 }
 
 ; 2 occurrences:
-; glslang/optimized/hlslParseHelper.cpp.ll
-; llvm/optimized/BasicBlockSections.cpp.ll
+; boost/optimized/within_pointlike_geometry.ll
+; opencv/optimized/find_ellipses.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = icmp sgt i32 %3, %1
+  %4 = icmp eq i32 %1, %3
+  %5 = icmp sgt i32 %1, %3
   %6 = select i1 %4, i1 %0, i1 %5
   ret i1 %6
 }
@@ -79,11 +93,11 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/splitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000941(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = icmp slt i32 %3, %1
+  %4 = icmp eq i32 %1, %3
+  %5 = icmp sgt i32 %1, %3
   %6 = select i1 %4, i1 %0, i1 %5
   ret i1 %6
 }
@@ -112,23 +126,11 @@ entry:
 ; meshlab/optimized/shell.cpp.ll
 ; nix/optimized/parser-tab.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000881(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = icmp ugt i32 %3, %1
-  %6 = select i1 %4, i1 %0, i1 %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/find_ellipses.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = icmp slt i32 %3, %1
+  %4 = icmp eq i32 %1, %3
+  %5 = icmp ult i32 %1, %3
   %6 = select i1 %4, i1 %0, i1 %5
   ret i1 %6
 }

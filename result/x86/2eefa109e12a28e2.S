@@ -1,4 +1,4 @@
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	movzbl	%dl, %eax
 	orw	%ax, %si
 	setg	%cl
@@ -6,14 +6,14 @@ func00000000000001a6:                   # @func00000000000001a6
 	sets	%al
 	andb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	movzbl	%dl, %eax
 	orl	%esi, %eax
 	notl	%eax
 	orw	%di, %ax
 	sete	%al
 	retq
-func0000000000000118:                   # @func0000000000000118
+func0000000000000428:                   # @func0000000000000428
 	movzbl	%dl, %eax
 	orl	%esi, %eax
 	cmpw	$3, %ax

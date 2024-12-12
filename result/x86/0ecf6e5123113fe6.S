@@ -3,11 +3,6 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$-33, %dil
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	xorl	%esi, %edi
-	testb	$8, %dil
-	sete	%al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	xorl	%esi, %eax

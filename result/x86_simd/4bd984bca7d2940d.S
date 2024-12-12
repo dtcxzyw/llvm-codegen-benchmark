@@ -3,7 +3,7 @@
 func0000000000000064:                   # @func0000000000000064
 	vpmovd2m	%ymm1, %k1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	100                             # 0x64
@@ -37,5 +37,5 @@ func00000000000000a0:                   # @func00000000000000a0
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [6,6,6,6,6,6,6,6]
 	vpbroadcastd	.LCPI3_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [10,10,10,10,10,10,10,10]
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq

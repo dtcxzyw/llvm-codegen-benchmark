@@ -1,13 +1,12 @@
 
-; 6 occurrences:
-; darktable/optimized/RawDecoder.cpp.ll
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -21,7 +20,7 @@ entry:
 ; cmake/optimized/archive_read_support_format_cpio.c.ll
 ; minetest/optimized/mapblock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -34,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000014c(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -44,11 +43,27 @@ entry:
   ret i1 %7
 }
 
+; 4 occurrences:
+; darktable/optimized/RawDecoder.cpp.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i32 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = icmp ult i64 %4, 128
+  %6 = icmp samesign ult i32 %0, 32
+  %7 = select i1 %6, i1 true, i1 %5
+  ret i1 %7
+}
+
 ; 2 occurrences:
 ; git/optimized/credential.ll
 ; postgres/optimized/inet_net_pton.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000141(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -61,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

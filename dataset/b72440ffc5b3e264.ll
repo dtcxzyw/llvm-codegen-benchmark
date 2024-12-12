@@ -1,5 +1,7 @@
 
-; 19 occurrences:
+; 21 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/colvarcomp_coordnums.cpp.ll
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; ipopt/optimized/IpPenaltyLSAcceptor.ll

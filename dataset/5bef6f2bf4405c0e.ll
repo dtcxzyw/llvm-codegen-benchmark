@@ -1,5 +1,5 @@
 
-%struct.aiFace.2712700 = type { i32, ptr }
+%struct.aiFace.2825234 = type { i32, ptr }
 
 ; 4 occurrences:
 ; assimp/optimized/RawLoader.cpp.ll
@@ -7,13 +7,13 @@
 ; openusd/optimized/lz4.cpp.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = udiv i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
-  %6 = getelementptr nusw %struct.aiFace.2712700, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw %struct.aiFace.2825234, ptr %5, i64 %4
   ret ptr %6
 }
 

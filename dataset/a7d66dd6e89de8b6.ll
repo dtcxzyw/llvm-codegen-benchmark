@@ -1,5 +1,7 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cvc5/optimized/minisat.cpp.ll
 ; hdf5/optimized/H5Cimage.c.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll

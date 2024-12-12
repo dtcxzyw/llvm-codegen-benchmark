@@ -3,7 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$2, %dil
 	sete	%al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	shrb	$3, %dil
 	andb	$1, %dil
 	movzbl	%dil, %eax

@@ -1,12 +1,4 @@
 func00000000000001ef:                   # @func00000000000001ef
-	imulq	$211, %rdx, %rcx
-	leaq	(%rsi,%rsi,8), %rax
-	leaq	(%rsi,%rax,4), %rdx
-	movzbl	%dil, %eax
-	addq	%rcx, %rax
-	addq	%rdx, %rax
-	retq
-func00000000000001ff:                   # @func00000000000001ff
 	imulq	$3600, %rdx, %rax               # imm = 0xE10
 	imulq	$60, %rsi, %rcx
 	addq	%rax, %rcx

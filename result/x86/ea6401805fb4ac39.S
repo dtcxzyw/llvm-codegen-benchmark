@@ -9,6 +9,12 @@ func0000000000000018:                   # @func0000000000000018
 	subb	%dl, %al
 	shrxq	%rax, %rdi, %rax
 	retq
+func0000000000000038:                   # @func0000000000000038
+	subq	%rsi, %rdi
+	movb	$38, %al
+	subb	%dl, %al
+	shrxq	%rax, %rdi, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	subq	%rsi, %rdi
 	notb	%dl

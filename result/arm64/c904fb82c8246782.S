@@ -1,30 +1,14 @@
-func0000000000000088:                   // @func0000000000000088
+func0000000000000108:                   // @func0000000000000108
 // %bb.0:                               // %entry
-	shrn	v1.2s, v1.2d, #3
-	bic	v0.4h, #255, lsl #8
-	shrn2	v1.4s, v2.2d, #3
-	ushll	v0.4s, v0.4h, #0
-	cmhi	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	lsr	x8, x1, #3
+	cmp	w8, w0, uxtb
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func000000000000010a:                   // @func000000000000010a
 // %bb.0:                               // %entry
-	shrn	v1.2s, v1.2d, #3
-	bic	v0.4h, #255, lsl #8
-	shrn2	v1.4s, v2.2d, #3
-	ushll	v0.4s, v0.4h, #0
-	cmhi	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
-	ret
-                                        // -- End function
-func000000000000008a:                   // @func000000000000008a
-// %bb.0:                               // %entry
-	shrn	v1.2s, v1.2d, #4
-	bic	v0.4h, #255, lsl #8
-	shrn2	v1.4s, v2.2d, #4
-	ushll	v0.4s, v0.4h, #0
-	cmgt	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	lsr	x8, x1, #4
+	cmp	w8, w0, uxtb
+	cset	w0, gt
 	ret
                                         // -- End function

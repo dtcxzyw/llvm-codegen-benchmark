@@ -5,11 +5,11 @@
 ; openssl/optimized/libcrypto-lib-encode.ll
 ; openssl/optimized/libcrypto-shlib-encode.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 2
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

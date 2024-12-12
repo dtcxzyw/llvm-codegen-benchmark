@@ -1,14 +1,14 @@
 
-; 121 occurrences:
+; 130 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
+; boost/optimized/approximately_equals.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; duckdb/optimized/ub_duckdb_func_array.cpp.ll
-; git/optimized/progress.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/regcomp.c.ll
 ; linux/optimized/processor_perflib.ll
@@ -121,6 +121,15 @@
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
 ; xgboost/optimized/charconv.cc.ll
 ; yaml-cpp/optimized/binary.cpp.ll
+; zed-rs/optimized/0cyv10l6w91jqdqmhl8pbusw2.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/5xfke1jw0ac7pab611oym1u20.ll
+; zed-rs/optimized/9kzypu599rxw1s8z0tdtjo3oe.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/cerruq7gww65l7esxsyv0yj53.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
@@ -148,7 +157,7 @@ entry:
   ret i1 %2
 }
 
-; 488 occurrences:
+; 499 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
@@ -162,6 +171,10 @@ entry:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ObjFileParser.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; cpython/optimized/sliceobject.ll
 ; cvc5/optimized/commands.cpp.ll
@@ -200,7 +213,6 @@ entry:
 ; gromacs/optimized/statepropagatordata.cpp.ll
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
-; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/smallwrite_build.cpp.ll
 ; influxdb-rs/optimized/1boq4c9zu6q3b6q6.ll
 ; influxdb-rs/optimized/59k85oi3tgixgpod.ll
@@ -228,7 +240,6 @@ entry:
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -384,13 +395,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -524,7 +532,6 @@ entry:
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
-; wasmtime-rs/optimized/1c4ff84ffafijwgv.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
@@ -637,6 +644,19 @@ entry:
 ; xgboost/optimized/constraints.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_refresh.cc.ll
+; zed-rs/optimized/0cyv10l6w91jqdqmhl8pbusw2.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/56i9d5rrx6hrud8ee30t4acpd.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/5xfke1jw0ac7pab611oym1u20.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/9kzypu599rxw1s8z0tdtjo3oe.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/cerruq7gww65l7esxsyv0yj53.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -645,11 +665,11 @@ entry:
   ret i1 %2
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/FBXExporter.cpp.ll
+; boost/optimized/path_traits.ll
 ; casadi/optimized/sparsity.cpp.ll
-; g2o/optimized/edge_se3_calib.cpp.ll
 ; gromacs/optimized/gmx_chi.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/pme_only.cpp.ll
@@ -660,10 +680,8 @@ entry:
 ; linux/optimized/hosts.ll
 ; linux/optimized/keyboard.ll
 ; llvm/optimized/regcomp.c.ll
-; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; mitsuba3/optimized/blender.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/canny.cpp.ll
@@ -673,15 +691,21 @@ entry:
 ; php/optimized/zend_cfg.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = mul nsw i64 %0, 3
   %2 = icmp ugt i64 %1, 4611686018427387903
   ret i1 %2
 }
 
-; 50 occurrences:
+; 55 occurrences:
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; faiss/optimized/hamming.cpp.ll
@@ -699,7 +723,6 @@ entry:
 ; lief/optimized/hmac_drbg.c.ll
 ; linux/optimized/scsi_sysfs.ll
 ; linux/optimized/task_mmu.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
@@ -744,22 +767,35 @@ entry:
 ; folly/optimized/SpookyHashV1.cpp.ll
 ; folly/optimized/SpookyHashV2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0) #0 {
+define i1 @func000000000000004a(i64 %0) #0 {
 entry:
   %1 = mul nuw i64 %0, 96
   %2 = icmp sgt i64 %1, 0
   ret i1 %2
 }
 
-; 6 occurrences:
+; 3 occurrences:
+; hermes/optimized/Domain.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; openjdk/optimized/shenandoahCompactHeuristics.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0) #0 {
+entry:
+  %1 = mul i64 %0, 3
+  %2 = icmp samesign ugt i64 %1, 419430399
+  ret i1 %2
+}
+
+; 7 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; nix/optimized/util.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0) #0 {
+define i1 @func0000000000000046(i64 %0) #0 {
 entry:
   %1 = mul nuw i64 %0, 12
   %2 = icmp slt i64 %1, 0
@@ -889,10 +925,35 @@ entry:
 ; postgres/optimized/xloginsert.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = mul nsw i64 %0, -4
   %2 = icmp ult i64 %1, 128
+  ret i1 %2
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i64 %0) #0 {
+entry:
+  %1 = mul i64 %0, 48
+  %2 = icmp samesign eq i64 %1, 0
+  ret i1 %2
+}
+
+; 6 occurrences:
+; g2o/optimized/edge_se3_calib.cpp.ll
+; gromacs/optimized/pme_only.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0) #0 {
+entry:
+  %1 = mul nsw i64 %0, 6
+  %2 = icmp samesign ugt i64 %1, 288230376151711743
   ret i1 %2
 }
 

@@ -11,8 +11,9 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
+; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000030(ptr %0, i64 %1, i1 %2) #0 {
 entry:
@@ -35,14 +36,15 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; opencv/optimized/grfmt_exr.cpp.ll
+; wireshark/optimized/io_graph_dialog.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i1 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i64 4, i64 1
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = mul nuw nsw i64 %1, 3
+  %3 = select i1 %2, i64 348, i64 352
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = mul nuw nsw i64 %1, 152
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }

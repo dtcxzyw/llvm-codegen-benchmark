@@ -12,7 +12,7 @@
 ; stb/optimized/stb_image.c.ll
 ; z3/optimized/doc.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = icmp eq i32 %2, 1
@@ -36,7 +36,7 @@ entry:
 ; php/optimized/pcre2_compile.ll
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = icmp ne i32 %2, 0
@@ -44,10 +44,9 @@ entry:
   ret i32 %4
 }
 
-; 29 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/giaSatLE.c.ll
-; cmake/optimized/testEncode.c.ll
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/modulegroups.c.ll
@@ -61,9 +60,7 @@ entry:
 ; glslang/optimized/ShaderLang.cpp.ll
 ; hdf5/optimized/H5Goh.c.ll
 ; libwebp/optimized/quant_enc.c.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/efi_64.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/rmap.ll
 ; luajit/optimized/lj_strfmt_num.ll
@@ -104,11 +101,10 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; git/optimized/commit-graph.ll
-; linux/optimized/i915_gem_shmem.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = icmp ugt i32 %2, 3
@@ -116,8 +112,18 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 1 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or i32 %0, %1
+  %3 = icmp samesign ult i32 %2, 32768
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 4 occurrences:
 ; meshlab/optimized/rich_parameters.cpp.ll
 ; openusd/optimized/avif.c.ll
 ; wireshark/optimized/color_utils.cpp.ll
@@ -126,7 +132,18 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
-  %3 = icmp ult i32 %2, 32768
+  %3 = icmp ult i32 %2, 2
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; linux/optimized/i915_gem_shmem.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000070(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, %1
+  %3 = icmp samesign ugt i32 %2, 3141
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -134,10 +151,10 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
-  %3 = icmp ugt i32 %2, 9999999
+  %3 = icmp samesign ugt i32 %2, 9999999
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

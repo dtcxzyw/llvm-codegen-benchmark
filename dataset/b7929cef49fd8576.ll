@@ -13,7 +13,8 @@ entry:
   ret i64 %4
 }
 
-; 26 occurrences:
+; 27 occurrences:
+; boost/optimized/alloc_lib.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
@@ -45,7 +46,7 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = or i64 %3, 2449958197289549824
+  %4 = or i64 %3, 1
   ret i64 %4
 }
 

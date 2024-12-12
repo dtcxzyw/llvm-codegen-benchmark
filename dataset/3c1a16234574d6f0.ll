@@ -1,5 +1,5 @@
 
-; 145 occurrences:
+; 146 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; hermes/optimized/AST2JS.cpp.ll
 ; hermes/optimized/Dumper.cpp.ll
@@ -139,6 +139,7 @@
 ; llvm/optimized/VirtualFileSystem.cpp.ll
 ; llvm/optimized/X86InstPrinterCommon.cpp.ll
 ; llvm/optimized/YAMLTraits.cpp.ll
+; protobuf/optimized/arena.cc.ll
 ; rust-analyzer-rs/optimized/1egtj7ksojphluke.ll
 ; rust-analyzer-rs/optimized/4nb8vdkq52ctjgzb.ll
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
@@ -158,10 +159,23 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/JSRegExp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = select i1 %0, i64 5, i64 6
+  %5 = icmp ugt i64 %4, %3
+  ret i1 %5
+}
+
+; 3 occurrences:
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/8epszlr2612bvdrsn7g83nprl.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw i64 %1, %2
+  %4 = select i1 %0, i64 16, i64 12
   %5 = icmp ugt i64 %4, %3
   ret i1 %5
 }

@@ -1,12 +1,11 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/reoSwap.c.ll
 ; abc/optimized/reoTransfer.c.ll
 ; abc/optimized/st.c.ll
 ; abc/optimized/stmm.c.ll
 ; clamav/optimized/str.c.ll
 ; cmake/optimized/archive_read_support_filter_compress.c.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/random.cpp.ll

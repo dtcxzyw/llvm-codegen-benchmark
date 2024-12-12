@@ -16,26 +16,19 @@ func0000000000000055:                   # @func0000000000000055
 	slli	a0, a0, 2
 	addi	a0, a0, -4
 	ret
-func0000000000000050:                   # @func0000000000000050
-	sext.w	a1, a1
-	add	a0, a0, a1
-	slli	a0, a0, 4
-	addi	a0, a0, -4
-	ret
 func0000000000000000:                   # @func0000000000000000
 	add.uw	a0, a1, a0
 	slli	a0, a0, 4
 	addi	a0, a0, -4
 	ret
-func000000000000007f:                   # @func000000000000007f
-	sext.w	a1, a1
-	add	a0, a0, a1
-	slli	a0, a0, 1
-	addi	a0, a0, 4
-	ret
 func000000000000003f:                   # @func000000000000003f
 	add.uw	a0, a1, a0
-	slli	a0, a0, 1
+	slli	a0, a0, 3
+	addi	a0, a0, 24
+	ret
+func0000000000000022:                   # @func0000000000000022
+	add.uw	a0, a1, a0
+	slli	a0, a0, 2
 	addi	a0, a0, 4
 	ret
 func000000000000001d:                   # @func000000000000001d
@@ -43,15 +36,16 @@ func000000000000001d:                   # @func000000000000001d
 	slli	a0, a0, 12
 	addi	a0, a0, -1
 	ret
+func000000000000007f:                   # @func000000000000007f
+	sext.w	a1, a1
+	add	a0, a0, a1
+	slli	a0, a0, 2
+	addi	a0, a0, 120
+	ret
 func0000000000000015:                   # @func0000000000000015
 	add.uw	a0, a1, a0
 	slli	a0, a0, 2
 	addi	a0, a0, 200
-	ret
-func0000000000000022:                   # @func0000000000000022
-	add.uw	a0, a1, a0
-	slli	a0, a0, 1
-	addi	a0, a0, 2
 	ret
 func000000000000007d:                   # @func000000000000007d
 	sext.w	a1, a1

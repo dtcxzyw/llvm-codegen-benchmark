@@ -5,7 +5,7 @@
 ; hdf5/optimized/H5Tcompound.c.ll
 ; openjdk/optimized/elfFile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000085(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000105(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = icmp ugt i64 %3, %1
@@ -14,7 +14,7 @@ entry:
   ret i1 %6
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -47,17 +47,18 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000eb4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %2
-  %4 = icmp ule i64 %3, %1
-  %5 = icmp ult i64 %0, %1
+  %4 = icmp samesign ule i64 %3, %1
+  %5 = icmp samesign ult i64 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
-; 67 occurrences:
+; 70 occurrences:
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
@@ -125,8 +126,11 @@ entry:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000254(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000008a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %0, %2
   %4 = icmp ule i64 %3, %1
@@ -136,13 +140,49 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/get_turns.ll
+; Function Attrs: nounwind
+define i1 @func00000000000004c6(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, %0
+  %4 = icmp slt i64 %3, %1
+  %5 = icmp slt i64 %0, %1
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000385(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000d05(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %2
   %4 = icmp ugt i64 %3, %1
   %5 = icmp ule i64 %0, %1
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/Instructions.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000547(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %0, %2
+  %4 = icmp sgt i64 %3, %1
+  %5 = icmp sle i64 %0, %1
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/Signals.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000147(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %0, %2
+  %4 = icmp sgt i64 %3, %1
+  %5 = icmp sle i64 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }

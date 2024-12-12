@@ -3,11 +3,11 @@
 ; ruby/optimized/bignum.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000070(i64 %0, i32 %1) #0 {
+define i64 @func00000000000000f0(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = icmp ugt i64 %3, 4294967295
+  %3 = add nuw nsw i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 4294967295
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -78,11 +78,11 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000098(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000118(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp ne i64 %2, %3
+  %3 = sub nsw i64 0, %2
+  %4 = icmp ne i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -90,11 +90,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/netmon.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
-  %4 = icmp ult i64 %3, -1000000000
+  %3 = add i64 %0, %2
+  %4 = icmp samesign ult i64 %3, -1000000000
   %5 = zext i1 %4 to i64
   ret i64 %5
 }

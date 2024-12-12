@@ -1,5 +1,5 @@
 
-; 175 occurrences:
+; 174 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -152,7 +152,6 @@
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
-; linux/optimized/intel_guc_log_debugfs.ll
 ; linux/optimized/swiotlb.ll
 ; mimalloc/optimized/page.c.ll
 ; minetest/optimized/CGUIFont.cpp.ll
@@ -198,7 +197,7 @@ entry:
   ret i64 %4
 }
 
-; 69 occurrences:
+; 68 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
@@ -234,7 +233,6 @@ entry:
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll

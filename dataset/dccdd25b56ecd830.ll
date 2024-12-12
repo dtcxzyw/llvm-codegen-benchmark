@@ -41,7 +41,7 @@ entry:
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -66,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -78,7 +78,7 @@ entry:
 ; oiio/optimized/exrinput.cpp.ll
 ; oiio/optimized/nullimageio.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -114,7 +114,7 @@ entry:
 ; gromacs/optimized/toppush.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -125,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/arrayutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = and i64 %2, 4160749568

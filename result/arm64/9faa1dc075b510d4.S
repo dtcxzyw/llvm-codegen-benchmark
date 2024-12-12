@@ -1,36 +1,26 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v4.16b, #26
-	add	v1.4s, v1.4s, v4.4s
-	add	v0.4s, v0.4s, v4.4s
-	bic	v0.16b, v0.16b, v2.16b
-	bic	v1.16b, v1.16b, v3.16b
+	mov	w8, #6682                       // =0x1a1a
+	movk	w8, #6682, lsl #16
+	add	w8, w0, w8
+	bic	w0, w8, w1
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	add	v1.4s, v1.4s, v4.4s
-	add	v0.4s, v0.4s, v4.4s
-	bic	v0.16b, v0.16b, v2.16b
-	bic	v1.16b, v1.16b, v3.16b
+	add	w8, w0, #1
+	bic	w0, w8, w1
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	add	v1.4s, v1.4s, v4.4s
-	add	v0.4s, v0.4s, v4.4s
-	bic	v0.16b, v0.16b, v2.16b
-	bic	v1.16b, v1.16b, v3.16b
+	add	w8, w0, #1
+	bic	w0, w8, w1
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mvni	v4.4s, #15
-	add	v1.4s, v1.4s, v4.4s
-	add	v0.4s, v0.4s, v4.4s
-	bic	v0.16b, v0.16b, v2.16b
-	bic	v1.16b, v1.16b, v3.16b
+	sub	w8, w0, #16
+	bic	w0, w8, w1
 	ret
                                         // -- End function

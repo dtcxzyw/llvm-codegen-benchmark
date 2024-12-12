@@ -26,5 +26,17 @@ func0000000000000018:                   # @func0000000000000018
 	vptestnmd	%ymm2, %ymm2, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2   # ymm2 = [12,12,12,12,12,12,12,12]
 	vpbroadcastd	.LCPI2_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [3,3,3,3,3,3,3,3]
-	vpternlogd	$248, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & ymm1)
+	vpternlogd	$248, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & ymm2)
+	retq
+.LCPI3_0:
+	.long	2                               # 0x2
+.LCPI3_1:
+	.long	4294967280                      # 0xfffffff0
+.LCPI3_2:
+	.long	4294966464                      # 0xfffffcc0
+func0000000000000009:                   # @func0000000000000009
+	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm2, %k1
+	vpbroadcastd	.LCPI3_1(%rip), %ymm2   # ymm2 = [4294967280,4294967280,4294967280,4294967280,4294967280,4294967280,4294967280,4294967280]
+	vpbroadcastd	.LCPI3_2(%rip), %ymm2 {%k1} # ymm2 {%k1} = [4294966464,4294966464,4294966464,4294966464,4294966464,4294966464,4294966464,4294966464]
+	vpternlogd	$248, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & ymm2)
 	retq

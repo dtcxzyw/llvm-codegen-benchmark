@@ -5,11 +5,26 @@ func0000000000000001:                   # @func0000000000000001
 	testw	%ax, %ax
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	xorl	%edx, %edx
 	divl	%esi
-	andl	$254, %eax
-	cmpl	$18, %eax
+	movzbl	%al, %eax
+	cmpl	$3, %eax
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%edi, %eax
+	xorl	%edx, %edx
+	divl	%esi
+	movzbl	%al, %eax
+	cmpl	$101, %eax
 	setae	%al
+	retq
+func000000000000000c:                   # @func000000000000000c
+	movl	%edi, %eax
+	xorl	%edx, %edx
+	divl	%esi
+	testw	%ax, %ax
+	setne	%al
 	retq

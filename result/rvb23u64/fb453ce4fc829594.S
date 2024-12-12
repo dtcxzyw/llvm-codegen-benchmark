@@ -13,7 +13,7 @@ func0000000000000007:                   # @func0000000000000007
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a0, a0
 	mul	a1, a1, a1
 	sh1add	a1, a1, a1

@@ -1,11 +1,9 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; assimp/optimized/zip.c.ll
 ; folly/optimized/Conv.cpp.ll
 ; hermes/optimized/zip.c.ll
-; jq/optimized/unicode_fold1_key.ll
 ; meshlab/optimized/miniz.c.ll
-; oniguruma/optimized/unicode_fold1_key.ll
 ; ruby/optimized/unicode.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i16 %1, i16 %2) #0 {

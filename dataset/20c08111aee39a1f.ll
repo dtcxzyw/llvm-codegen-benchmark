@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; c3c/optimized/target.c.ll
@@ -19,6 +19,7 @@
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/SemaExprMember.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
+; lvgl/optimized/lv_display.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/game.cpp.ll
@@ -56,7 +57,7 @@ entry:
   %3 = zext i1 %2 to i8
   %4 = select i1 %1, i8 14, i8 12
   %5 = or disjoint i8 %4, %3
-  %6 = or i8 %5, %0
+  %6 = or i8 %0, %5
   ret i8 %6
 }
 

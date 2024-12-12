@@ -8,10 +8,10 @@
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000028c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   %5 = icmp slt i32 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -23,10 +23,10 @@ entry:
 ; icu/optimized/double-conversion-bignum.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000002cc(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   %5 = icmp sge i32 %0, %1
   %6 = or i1 %4, %5
   ret i1 %6
@@ -35,10 +35,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/dsdProc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   %5 = icmp eq i32 %0, %1
   %6 = or i1 %4, %5
   ret i1 %6
@@ -47,10 +47,10 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000162(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000002c2(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   %5 = icmp sge i32 %0, %1
   %6 = or i1 %4, %5
   ret i1 %6

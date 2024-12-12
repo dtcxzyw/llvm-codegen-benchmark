@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = xor i32 %0, -1

@@ -9,7 +9,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 7
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -27,7 +27,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 7
   %4 = and i32 %3, 16
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -52,7 +52,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 256
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -69,15 +69,14 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
-; linux/optimized/nvram.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 32768
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }

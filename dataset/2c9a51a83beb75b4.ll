@@ -50,7 +50,7 @@ entry:
   %3 = select i1 %2, i64 0, i64 8
   %4 = add nsw i64 %1, 48
   %5 = add nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

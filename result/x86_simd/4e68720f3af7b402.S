@@ -36,20 +36,20 @@ func0000000000000016:                   # @func0000000000000016
 	vpbroadcastd	.LCPI3_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	retq
+.LCPI4_0:
+	.long	4294967282                      # 0xfffffff2
+.LCPI4_1:
+	.long	1                               # 0x1
+func0000000000000002:                   # @func0000000000000002
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
+	vpbroadcastd	.LCPI4_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
+	vpsllvd	%ymm0, %ymm1, %ymm0
+	retq
 func0000000000000001:                   # @func0000000000000001
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpsllvd	%ymm0, %ymm1, %ymm0
-	retq
-.LCPI5_0:
-	.long	4294967287                      # 0xfffffff7
-.LCPI5_1:
-	.long	1                               # 0x1
-func0000000000000002:                   # @func0000000000000002
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
-	vpbroadcastd	.LCPI5_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	retq
 func0000000000000015:                   # @func0000000000000015

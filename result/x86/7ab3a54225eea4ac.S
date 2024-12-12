@@ -53,9 +53,9 @@ func0000000000000059:                   # @func0000000000000059
 	shll	$6, %esi
 	orl	%esi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000018:                   # @func0000000000000018
 	movq	%rdi, %rax
-	shll	$20, %esi
+	shll	$8, %esi
 	orl	%esi, %eax
 	retq
 func0000000000000079:                   # @func0000000000000079

@@ -1,4 +1,4 @@
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	slli	a2, a2, 2
 	srli	a2, a2, 2
 	bltu	a2, a1, .LBB0_2
@@ -19,14 +19,14 @@ func0000000000000010:                   # @func0000000000000010
 	li	a1, 16
 	add	a0, a0, a1
 	ret
-func0000000000000013:                   # @func0000000000000013
-	slli	a2, a2, 33
-	srli	a2, a2, 33
+func0000000000000053:                   # @func0000000000000053
+	slli	a2, a2, 24
+	srli	a2, a2, 24
 	bltu	a2, a1, .LBB2_2
-	li	a1, 24
+	li	a1, 16
 	add	a0, a0, a1
 	ret
 .LBB2_2:
-	li	a1, 16
+	li	a1, 24
 	add	a0, a0, a1
 	ret

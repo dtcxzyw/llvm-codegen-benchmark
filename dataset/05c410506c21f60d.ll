@@ -1,7 +1,9 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; libpng/optimized/png.c.ll
 ; libquic/optimized/spdy_alt_svc_wire_format.cc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; nghttp2/optimized/llhttp.c.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
@@ -12,12 +14,11 @@ entry:
   ret i32 %2
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; icu/optimized/normalizer2impl.ll
 ; linux/optimized/ucount.ll
 ; opencv/optimized/ts_func.cpp.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i16 %0) #0 {

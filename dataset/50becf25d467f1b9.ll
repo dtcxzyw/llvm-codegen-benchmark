@@ -8,29 +8,28 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; folly/optimized/Random.cpp.ll
-; lief/optimized/ctr_drbg.c.ll
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; openspiel/optimized/deep_sea.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = icmp ugt i64 %0, 6
+  %3 = icmp samesign ugt i64 %0, 6
   %4 = select i1 %3, i64 3, i64 %2
   ret i64 %4
 }
 
-; 120 occurrences:
+; 119 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/filemap.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; mimalloc/optimized/segment.c.ll
@@ -153,13 +152,15 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
 ; rust-analyzer-rs/optimized/2jezmucvqvfiuhvx.ll
 ; rust-analyzer-rs/optimized/84mgk0fwp2eksq1.ll
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
+; turborepo-rs/optimized/allq2hqzkn1ywqvzl6k501g1q.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = icmp eq i64 %0, -9223372036854775808
@@ -181,11 +182,23 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/sparseilupreconditioner.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 29
   %3 = icmp ugt i64 %0, 2305843009213693951
   %4 = select i1 %3, i64 -1, i64 %2
+  ret i64 %4
+}
+
+; 2 occurrences:
+; lief/optimized/ctr_drbg.c.ll
+; linux/optimized/page_alloc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = icmp ugt i64 %0, 47
+  %4 = select i1 %3, i64 0, i64 %2
   ret i64 %4
 }
 
@@ -197,10 +210,10 @@ entry:
 ; redis/optimized/stats.ll
 ; redis/optimized/stats.sym.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
-  %3 = icmp ult i64 %0, 64
+  %3 = icmp samesign ult i64 %0, 64
   %4 = select i1 %3, i64 1, i64 %2
   ret i64 %4
 }

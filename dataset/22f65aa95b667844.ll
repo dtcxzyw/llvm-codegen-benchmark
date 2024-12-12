@@ -12,13 +12,14 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -18014398509481984
   %4 = add i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
 ; 28 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; cpython/optimized/blake2b_impl.ll
 ; folly/optimized/SocketAddress.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
@@ -27,7 +28,6 @@ entry:
 ; gromacs/optimized/expanded.cpp.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/sparse-vmemmap.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
@@ -70,7 +70,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 2654435769
   %4 = add i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -80,8 +80,8 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 32768
-  %4 = add nsw i64 %3, %1
-  %5 = xor i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 

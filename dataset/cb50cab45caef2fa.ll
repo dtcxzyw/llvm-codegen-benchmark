@@ -31,7 +31,7 @@ entry:
 define i64 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   %6 = shl nuw nsw i64 %5, 2
   ret i64 %6
@@ -43,7 +43,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = sext i32 %4 to i64
   %6 = shl nuw nsw i64 %5, 2
   ret i64 %6
@@ -56,7 +56,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = sext i32 %4 to i64
   %6 = shl nsw i64 %5, 3
   ret i64 %6
@@ -81,7 +81,7 @@ entry:
 define i64 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = sext i32 %4 to i64
   %6 = shl nsw i64 %5, 2
   ret i64 %6

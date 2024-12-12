@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
@@ -11,7 +11,7 @@ func0000000000000016:                   # @func0000000000000016
 	retq
 .LCPI1_0:
 	.long	127                             # 0x7f
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
@@ -59,7 +59,7 @@ func000000000000001c:                   # @func000000000000001c
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
@@ -71,7 +71,7 @@ func0000000000000036:                   # @func0000000000000036
 	retq
 .LCPI3_0:
 	.long	63                              # 0x3f
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0

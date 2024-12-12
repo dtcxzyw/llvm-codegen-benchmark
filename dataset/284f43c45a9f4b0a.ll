@@ -1,8 +1,17 @@
 
-; 50 occurrences:
+; 59 occurrences:
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; casadi/optimized/integrator.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
@@ -85,7 +94,7 @@ entry:
   ret i64 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
@@ -93,7 +102,6 @@ entry:
 ; node/optimized/libnode.node_sockaddr.ll
 ; openjdk/optimized/g1CardSetMemory.ll
 ; openssl/optimized/asynciotest-bin-asynciotest.ll
-; postgres/optimized/shm_toc.ll
 ; qemu/optimized/net_eth.c.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000c0(i64 %0, i64 %1, i64 %2) #0 {
@@ -151,6 +159,18 @@ entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %1, 16
   %5 = add nsw i64 %4, %3
+  %6 = add i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; yalantinglibs/optimized/benchmark.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000080(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw i64 %2, 1
+  %4 = add i64 %1, 5
+  %5 = add i64 %4, %3
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -248,7 +268,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = add nuw nsw i64 %1, 40
   %5 = add nuw nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

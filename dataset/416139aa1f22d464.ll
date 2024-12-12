@@ -5,7 +5,7 @@
 ; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl nuw nsw i64 1, %0
@@ -14,13 +14,10 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 19 occurrences:
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/ap.ll
-; linux/optimized/eht.ll
-; linux/optimized/he.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_dsi_dcs_backlight.ll
 ; linux/optimized/intel_dsi_vbt.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/mlme.ll
@@ -38,7 +35,7 @@ entry:
 ; spike/optimized/vclmul_vv.ll
 ; spike/optimized/vclmulh_vv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = shl nuw nsw i64 1, %0
@@ -47,14 +44,13 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; linux/optimized/cfg.ll
 ; linux/optimized/chan.ll
 ; linux/optimized/driver-ops.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/link.ll
-; linux/optimized/match.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/offchannel.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
@@ -64,7 +60,7 @@ entry:
 ; linux/optimized/vlv_dsi.ll
 ; qemu/optimized/hw_ipack_tpci200.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = shl nuw i64 1, %0
@@ -76,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cgroup.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = lshr i64 %2, %0

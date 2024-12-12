@@ -1,5 +1,6 @@
 
-; 104 occurrences:
+; 105 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/convolute.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/difradix2.ll
@@ -108,7 +109,7 @@
 define i64 @func0000000000000024(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nuw i128 %2, %0
+  %3 = mul nuw i128 %0, %2
   %sum.shift = lshr i128 %3, 96
   %4 = trunc nuw nsw i128 %sum.shift to i64
   ret i64 %4

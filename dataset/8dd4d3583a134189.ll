@@ -6,7 +6,7 @@
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001982(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000006302(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i64 %1, 0
@@ -55,7 +55,7 @@ entry:
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
 ; openjdk/optimized/g1BarrierSetC2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000398(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000b18(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i64 %1, 0
@@ -71,7 +71,7 @@ entry:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001822(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000006042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 2251799813685248
   %4 = icmp eq i64 %1, 9218868437227405312
@@ -81,24 +81,10 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
-; spike/optimized/f64_to_i64_r_minMag.ll
-; spike/optimized/f64_to_ui64_r_minMag.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000394(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %2, 2047
-  %4 = icmp ne i64 %1, 0
-  %5 = and i1 %4, %3
-  %6 = icmp sgt i64 %0, -1
-  %7 = or i1 %6, %5
-  ret i1 %7
-}
-
 ; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000390(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000b10(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i64 %1, 1
@@ -111,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/Object.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001902(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000006202(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ugt i64 %1, -844424930131969
@@ -122,9 +108,35 @@ entry:
 }
 
 ; 1 occurrences:
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i1 @func0000000000006282(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ne i64 %2, -4611686018427387904
+  %4 = icmp sgt i64 %1, -4611686018427387905
+  %5 = and i1 %4, %3
+  %6 = icmp eq i64 %0, 2147483648
+  %7 = or i1 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/flat_hash_map_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000002282(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 17
+  %4 = icmp sgt i64 %1, -1
+  %5 = and i1 %4, %3
+  %6 = icmp eq i64 %0, 0
+  %7 = or i1 %5, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
 ; linux/optimized/mcast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000842(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 72057594037927936
   %4 = icmp eq i64 %1, 767
@@ -137,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fault.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000388(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000b08(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i64 %1, 35
@@ -151,7 +163,7 @@ entry:
 ; redis/optimized/networking.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000382(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000b02(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i64 %1, 0
@@ -164,7 +176,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001838(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000006058(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 80
   %4 = icmp eq i64 %1, 0

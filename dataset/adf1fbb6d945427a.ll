@@ -12,7 +12,10 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
+; 5 occurrences:
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; Function Attrs: nounwind

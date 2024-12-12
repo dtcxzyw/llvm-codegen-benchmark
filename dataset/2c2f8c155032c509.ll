@@ -25,7 +25,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-err_save.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = srem i32 %2, 16
@@ -37,7 +37,7 @@ entry:
 ; icu/optimized/hebrwcal.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 4
   %3 = srem i32 %2, 8
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/bridge.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -3
   %3 = srem i32 %2, 5
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/hebrwcal.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 17
   %3 = srem i32 %2, 19

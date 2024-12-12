@@ -9,7 +9,7 @@
 ; postgres/optimized/execExpr.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 196608
   %3 = icmp ne i32 %2, 0
@@ -24,7 +24,7 @@ entry:
 ; qemu/optimized/util_aio-posix.c.ll
 ; redis/optimized/pubsub.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 25
   %3 = icmp eq i32 %2, 0
@@ -51,7 +51,7 @@ entry:
 ; wireshark/optimized/proto.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
@@ -60,7 +60,7 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -75,7 +75,6 @@ entry:
 ; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/LoopConstrainer.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/ValueMapper.cpp.ll
@@ -84,7 +83,7 @@ entry:
 ; wireshark/optimized/packet-kerberos.c.ll
 ; yosys/optimized/coolrunner2_fixup.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = icmp ne i32 %2, 0

@@ -154,7 +154,7 @@ entry:
   ret ptr %6
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/cecSim.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -165,6 +165,7 @@ entry:
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/picture_rescale_enc.c.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; msdfgen/optimized/main.cpp.ll
 ; msdfgen/optimized/render-sdf.cpp.ll
@@ -201,19 +202,15 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 4 occurrences:
 ; abc/optimized/absVta.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; hdf5/optimized/h5diff_array.c.ll
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; raylib/optimized/rcore.c.ll
-; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl i32 %2, 3
+  %3 = shl i32 %2, 2
   %4 = mul i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr float, ptr %0, i64 %5
@@ -256,7 +253,7 @@ entry:
 define ptr @func0000000000000036(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i64, ptr %0, i64 %5
   ret ptr %6

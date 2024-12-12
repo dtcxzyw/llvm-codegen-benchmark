@@ -1,11 +1,9 @@
 
-; 108 occurrences:
+; 106 occurrences:
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/infblock.c.ll
 ; cpython/optimized/mathmodule.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
-; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/radix-tree.ll

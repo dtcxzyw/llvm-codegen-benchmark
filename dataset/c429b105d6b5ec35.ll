@@ -1,5 +1,5 @@
 
-%"union.std::aligned_storage<16, 16>::type.2690256" = type { [16 x i8] }
+%"union.std::aligned_storage<16, 16>::type.2802987" = type { [16 x i8] }
 
 ; 2 occurrences:
 ; linux/optimized/hugetlb.ll
@@ -17,10 +17,10 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 15
-  %3 = getelementptr nusw [15 x %"union.std::aligned_storage<16, 16>::type.2690256"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 16>::type.2802987"], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

@@ -1,32 +1,40 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000002b4:                   # @func00000000000002b4
 	movzwl	%dx, %eax
-	cmpq	%rdi, %rax
-	seta	%cl
-	cmpq	%rsi, %rax
-	setae	%al
+	cmpq	%rax, %rdi
+	setb	%cl
+	cmpq	%rax, %rsi
+	setbe	%al
 	andb	%cl, %al
 	retq
-func0000000000000154:                   # @func0000000000000154
+func00000000000004a4:                   # @func00000000000004a4
 	movzwl	%dx, %eax
-	cmpq	%rdi, %rax
-	seta	%cl
-	cmpq	%rsi, %rax
-	setae	%al
+	cmpq	%rax, %rdi
+	setb	%cl
+	cmpq	%rax, %rsi
+	setbe	%al
 	andb	%cl, %al
 	retq
-func0000000000000085:                   # @func0000000000000085
+func0000000000000105:                   # @func0000000000000105
 	movzwl	%dx, %eax
-	cmpq	%rdi, %rax
-	setae	%cl
-	cmpq	%rsi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	setbe	%cl
+	cmpq	%rax, %rsi
+	seta	%al
 	andb	%cl, %al
 	retq
-func00000000000000b7:                   # @func00000000000000b7
+func00000000000000a4:                   # @func00000000000000a4
 	movzwl	%dx, %eax
-	cmpq	%rdi, %rax
-	setge	%cl
-	cmpq	%rsi, %rax
-	setle	%al
+	cmpq	%rax, %rdi
+	setb	%cl
+	cmpq	%rax, %rsi
+	setbe	%al
+	andb	%cl, %al
+	retq
+func0000000000000167:                   # @func0000000000000167
+	movzwl	%dx, %eax
+	cmpq	%rax, %rdi
+	setle	%cl
+	cmpq	%rax, %rsi
+	setge	%al
 	andb	%cl, %al
 	retq

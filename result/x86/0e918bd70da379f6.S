@@ -1,28 +1,28 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addl	$-48, %esi
 	sarl	$3, %esi
 	cmpl	%edi, %esi
 	seta	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addl	$512, %esi                      # imm = 0x200
 	sarl	$10, %esi
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	$1627389952, %esi               # imm = 0x61000000
 	sarl	$24, %esi
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	incl	%esi
 	sarl	%esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	addl	$3, %esi
 	sarl	$2, %esi
 	cmpl	%edi, %esi
@@ -34,19 +34,19 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	decl	%esi
 	sarl	%esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	addl	$64, %esi
 	sarl	$10, %esi
 	cmpl	%edi, %esi
 	setb	%al
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	addl	$-17, %esi
 	sarl	$2, %esi
 	cmpl	%edi, %esi

@@ -28,9 +28,10 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; opencv/optimized/hough.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {

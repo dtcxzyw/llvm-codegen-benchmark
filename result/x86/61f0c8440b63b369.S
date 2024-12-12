@@ -1,4 +1,4 @@
-func000000000000056a:                   # @func000000000000056a
+func00000000000014ca:                   # @func00000000000014ca
 	leal	-2(%rdx,%rsi), %eax
 	testl	%eax, %eax
 	setns	%cl
@@ -6,7 +6,15 @@ func000000000000056a:                   # @func000000000000056a
 	setl	%al
 	andb	%cl, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func00000000000010ca:                   # @func00000000000010ca
+	leal	-3(%rdx,%rsi), %eax
+	testl	%eax, %eax
+	setg	%cl
+	cmpl	%edi, %eax
+	setl	%al
+	andb	%cl, %al
+	retq
+func000000000000008a:                   # @func000000000000008a
 	leal	7(%rdx,%rsi), %eax
 	testl	%eax, %eax
 	setns	%cl
@@ -14,7 +22,7 @@ func000000000000004a:                   # @func000000000000004a
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000005a6:                   # @func00000000000005a6
+func0000000000001546:                   # @func0000000000001546
 	addl	%edx, %esi
 	addl	$-48, %esi
 	setns	%cl
@@ -22,7 +30,7 @@ func00000000000005a6:                   # @func00000000000005a6
 	setl	%al
 	andb	%cl, %al
 	retq
-func00000000000004c4:                   # @func00000000000004c4
+func0000000000001184:                   # @func0000000000001184
 	addl	%edx, %esi
 	decl	%esi
 	setne	%cl
@@ -30,7 +38,7 @@ func00000000000004c4:                   # @func00000000000004c4
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000044c:                   # @func000000000000044c
+func000000000000108c:                   # @func000000000000108c
 	addl	%edx, %esi
 	decl	%esi
 	setne	%cl

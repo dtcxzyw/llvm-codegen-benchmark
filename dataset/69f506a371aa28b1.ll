@@ -18,13 +18,13 @@ define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
 ; 12 occurrences:
-; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
+; boost/optimized/gzip.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/introspection_equalizer.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
@@ -40,7 +40,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -52,12 +52,11 @@ define i64 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 3 occurrences:
-; abc/optimized/dauDsd.c.ll
+; 2 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
@@ -65,7 +64,7 @@ define i64 @func0000000000000009(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

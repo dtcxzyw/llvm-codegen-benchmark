@@ -1,5 +1,5 @@
 
-; 162 occurrences:
+; 164 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -9,6 +9,8 @@
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; brotli/optimized/literal_cost.c.ll
 ; cmake/optimized/cmCTest.cxx.ll
 ; cpython/optimized/floatobject.ll
@@ -88,6 +90,7 @@
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; openblas/optimized/dlamch.c.ll
@@ -145,7 +148,6 @@
 ; quantlib/optimized/randomdefaultmodel.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
 ; rocksdb/optimized/clock_cache.cc.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; stat-rs/optimized/1957ju1ns40544yq.ll
 ; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll

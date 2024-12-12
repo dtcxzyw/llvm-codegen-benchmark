@@ -12,19 +12,19 @@ func0000000000000005:                   # @func0000000000000005
 	sete	%al
 	orl	%edi, %eax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	xorl	%eax, %eax
+	testl	$16383, %esi                    # imm = 0x3FFF
+	setne	%al
+	orl	%edi, %eax
+	retq
 func0000000000000031:                   # @func0000000000000031
 	xorl	%eax, %eax
 	testl	$516, %esi                      # imm = 0x204
 	setne	%al
 	orl	%edi, %eax
 	retq
-func0000000000000030:                   # @func0000000000000030
-	xorl	%eax, %eax
-	testb	$96, %sil
-	setne	%al
-	orl	%edi, %eax
-	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	xorl	%eax, %eax
 	testl	$8388352, %esi                  # imm = 0x7FFF00
 	sete	%al

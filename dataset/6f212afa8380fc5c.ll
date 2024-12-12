@@ -3,15 +3,16 @@
 ; abc/optimized/fretTime.c.ll
 ; qemu/optimized/block_vhdx-log.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000d8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %0, 12
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
 ; 221 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -91,7 +92,6 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/hda_hwdep.ll
 ; linux/optimized/mpi-bit.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; luajit/optimized/lj_snap.ll
@@ -246,7 +246,7 @@ entry:
 ; hdf5/optimized/H5Znbit.c.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = lshr i32 %0, 1
@@ -260,11 +260,11 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000d4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %0, 12
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -273,7 +273,7 @@ entry:
 ; abc/optimized/ivyUtil.c.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %0, 11
@@ -284,7 +284,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %0, 24
@@ -296,7 +296,7 @@ entry:
 ; abc/optimized/abcTiming.c.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = lshr i32 %0, 12
@@ -307,7 +307,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = lshr i32 %0, 12

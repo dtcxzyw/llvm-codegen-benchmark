@@ -25,7 +25,7 @@ func0000000000000008:                   # @func0000000000000008
 	mv	a0, a1
 .LBB1_4:                                # %entry
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	srli	a3, a2, 31
 	andi	a2, a0, 1
 	beqz	a3, .LBB2_2
@@ -51,4 +51,18 @@ func000000000000000a:                   # @func000000000000000a
 	li	a1, -1
 	slli	a1, a1, 63
 	sub	a0, a1, a0
+	ret
+func0000000000000004:                   # @func0000000000000004
+	andi	a3, a0, 1
+	bnez	a3, .LBB4_2
+	mv	a0, a1
+	ret
+.LBB4_2:
+	srli	a2, a2, 10
+	li	a0, -1
+	sltiu	a1, a2, 5
+	slli	a0, a0, 63
+	neg	a1, a1
+	addi	a0, a0, 9
+	and	a0, a0, a1
 	ret

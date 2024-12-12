@@ -13,9 +13,10 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll

@@ -12,15 +12,14 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/ProcessUNIX.c.ll
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/eathread_pool.cpp.ll
-; libevent/optimized/evthread_pthread.c.ll
 ; php/optimized/dow.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = icmp sgt i64 %2, 4
@@ -36,7 +35,7 @@ entry:
 ; quantlib/optimized/lecuyeruniformrng.ll
 ; redis/optimized/object.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = add nsw i64 %2, -399
@@ -53,7 +52,7 @@ entry:
 ; php/optimized/unixtime2tm.ll
 ; protobuf/optimized/time_util.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = add nsw i64 %2, -146096
@@ -70,10 +69,10 @@ entry:
 ; libquic/optimized/adler32.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000d8(i64 %0, i64 %1) #0 {
+define i64 @func00000000000001b8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
-  %3 = icmp ugt i64 %2, 65520
+  %3 = icmp samesign ugt i64 %2, 65520
   %4 = add nsw i64 %2, -65521
   %5 = select i1 %3, i64 %4, i64 %2
   ret i64 %5
@@ -82,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; libevent/optimized/event.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = icmp sgt i64 %2, 999999
@@ -94,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/crt.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = icmp ugt i64 %2, -8446744073709551617

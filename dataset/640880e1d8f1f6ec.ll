@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/mpn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   ret i1 false
 }

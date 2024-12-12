@@ -1,20 +1,4 @@
 
-; 6 occurrences:
-; qemu/optimized/target_riscv_vector_helper.c.ll
-; spike/optimized/smaqa.ll
-; spike/optimized/smaqa_su.ll
-; spike/optimized/smdrs.ll
-; spike/optimized/smds.ll
-; spike/optimized/smxds.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = ashr exact i32 %1, 16
-  %3 = mul nsw i32 %2, %0
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
 ; 3 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/RawImage.cpp.ll
@@ -23,7 +7,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 5
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -78,7 +62,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -107,13 +91,28 @@ entry:
   ret i64 %4
 }
 
+; 5 occurrences:
+; spike/optimized/smaqa.ll
+; spike/optimized/smaqa_su.ll
+; spike/optimized/smdrs.ll
+; spike/optimized/smds.ll
+; spike/optimized/smxds.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = ashr exact i32 %1, 24
+  %3 = mul nsw i32 %0, %2
+  %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 4
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

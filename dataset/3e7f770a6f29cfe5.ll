@@ -1,13 +1,12 @@
 
-; 2 occurrences:
-; cmake/optimized/archive_read_support_format_cab.c.ll
+; 1 occurrences:
 ; hermes/optimized/SourceMgr.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, ptr %1, i16 %2) #0 {
+define i64 @func000000000000003c(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
@@ -36,11 +35,24 @@ entry:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/netdev.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i16 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 10
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 10
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+; 1 occurrences:
+; cmake/optimized/archive_read_support_format_cab.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000038(i64 %0, ptr %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -10
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

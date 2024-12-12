@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 83 occurrences:
 ; abc/optimized/mioUtils.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -79,7 +79,6 @@
 ; wireshark/optimized/packet-nr-rrc.c.ll
 ; wireshark/optimized/packet-s1ap.c.ll
 ; wireshark/optimized/packet-ulp.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
 ; xgboost/optimized/elementwise_metric.cc.ll
 ; xgboost/optimized/regression_obj.cc.ll

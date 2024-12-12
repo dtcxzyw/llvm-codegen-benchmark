@@ -21,3 +21,19 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
+func000000000000000f:                   # @func000000000000000f
+	andi	a2, a2, 1
+	bnez	a2, .LBB2_2
+	li	a2, 2
+	andi	a1, a1, 1
+	slli	a1, a1, 1
+	add	a0, a0, a2
+	add	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a2, 4
+	andi	a1, a1, 1
+	slli	a1, a1, 1
+	add	a0, a0, a2
+	add	a0, a0, a1
+	ret

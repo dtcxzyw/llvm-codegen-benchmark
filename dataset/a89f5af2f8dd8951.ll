@@ -32,6 +32,18 @@ entry:
   ret i32 %3
 }
 
+; 4 occurrences:
+; lvgl/optimized/lv_refr.ll
+; opencv/optimized/approx.cpp.ll
+; openusd/optimized/json.cpp.ll
+; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
+entry:
+  %2 = select i1 %0, i32 %1, i32 -1
+  ret i32 %2
+}
+
 ; 2 occurrences:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
@@ -43,30 +55,6 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; opencv/optimized/approx.cpp.ll
-; openusd/optimized/json.cpp.ll
-; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -4
-  %3 = select i1 %0, i32 %2, i32 1
-  ret i32 %3
-}
-
-; 3 occurrences:
-; linux/optimized/namei.ll
-; postgres/optimized/freepage.ll
-; wireshark/optimized/packet-gprs-llc.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -4
-  %3 = select i1 %0, i32 %2, i32 -1
-  ret i32 %3
-}
-
 ; 1 occurrences:
 ; wireshark/optimized/packet-iso14443.c.ll
 ; Function Attrs: nounwind
@@ -75,6 +63,16 @@ entry:
   %2 = add i32 %1, 9
   %3 = select i1 %0, i32 %2, i32 11
   ret i32 %3
+}
+
+; 2 occurrences:
+; linux/optimized/namei.ll
+; postgres/optimized/freepage.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
+entry:
+  %2 = select i1 %0, i32 %1, i32 -1
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

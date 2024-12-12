@@ -1,5 +1,6 @@
 
-; 27 occurrences:
+; 28 occurrences:
+; assimp/optimized/PlyParser.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -36,8 +37,7 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; assimp/optimized/PlyParser.cpp.ll
+; 2 occurrences:
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/vframe_hp.ll
 ; Function Attrs: nounwind

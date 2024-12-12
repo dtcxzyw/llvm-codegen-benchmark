@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/apprentice.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 10
   %3 = add nsw i64 %0, -48
@@ -53,7 +53,7 @@ entry:
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 10
   %3 = add nsw i64 %0, -48
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DLangDemangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i64 %0, i64 %1) #0 {
+define i1 @func00000000000006a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 10
   %3 = add nsw i64 %0, -48
@@ -78,7 +78,7 @@ entry:
 ; quickjs/optimized/libregexp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 10
   %3 = add nsw i64 %0, -48
@@ -102,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
   %3 = add nsw i64 %0, 15
@@ -114,7 +114,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %.neg = mul i64 %1, -10
   %2 = add nsw i64 %0, -48

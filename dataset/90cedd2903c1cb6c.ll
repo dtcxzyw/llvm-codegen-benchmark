@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; clamav/optimized/XzCrc64.c.ll
+; 6 occurrences:
 ; libquic/optimized/gcm.c.ll
 ; lief/optimized/gcm.c.ll
 ; linux/optimized/gf128mul.ll

@@ -100,18 +100,18 @@ func000000000000001d:                   # @func000000000000001d
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI15_0(%rip){1to4}, %ymm0, %ymm0
 	retq
+.LCPI16_0:
+	.quad	4294967295                      # 0xffffffff
+func000000000000001a:                   # @func000000000000001a
+	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	.LCPI16_0(%rip){1to4}, %ymm0, %ymm0
+	retq
 func0000000000000012:                   # @func0000000000000012
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	retq
-.LCPI17_0:
-	.quad	4294967295                      # 0xffffffff
-func000000000000001a:                   # @func000000000000001a
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	.LCPI17_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero

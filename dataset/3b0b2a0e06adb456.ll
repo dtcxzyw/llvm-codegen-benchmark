@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 135 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -67,6 +67,8 @@
 ; llvm/optimized/X86PartialReduction.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_demo_render.ll
+; lvgl/optimized/lv_observer.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/compiler.cpp.ll
@@ -84,7 +86,6 @@
 ; openblas/optimized/dlaeda.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/cornersubpix.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; openjdk/optimized/c1_LIR.ll
@@ -389,12 +390,12 @@ entry:
 }
 
 ; 11 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; linux/optimized/intel_bw.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/InlineAsmLowering.cpp.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll

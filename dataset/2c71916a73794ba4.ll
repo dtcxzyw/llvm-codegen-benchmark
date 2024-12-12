@@ -14,7 +14,7 @@ define i128 @func0000000000000007(i128 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 1000000
   %3 = zext nneg i32 %2 to i128
-  %4 = add nuw nsw i128 %3, %0
+  %4 = add nuw nsw i128 %0, %3
   ret i128 %4
 }
 

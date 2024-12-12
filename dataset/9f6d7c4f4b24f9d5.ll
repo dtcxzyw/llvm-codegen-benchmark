@@ -27,7 +27,7 @@ entry:
   ret i64 %4
 }
 
-; 59 occurrences:
+; 58 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/archive_read_support_filter_rpm.c.ll
 ; curl/optimized/libcurl_la-rtsp.ll
@@ -81,7 +81,6 @@ entry:
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_pattern_info.ll
 ; postgres/optimized/nbtsearch.ll
@@ -151,7 +150,7 @@ entry:
 define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 56
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = add nuw nsw i64 %3, 8
   ret i64 %4
 }
@@ -162,7 +161,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 12
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = add i64 %3, 1
   ret i64 %4
 }
@@ -175,6 +174,17 @@ entry:
   %2 = shl nuw nsw i64 %1, 16
   %3 = or i64 %2, %0
   %4 = add i64 %3, 1099511627776
+  ret i64 %4
+}
+
+; 1 occurrences:
+; z3/optimized/dd_bdd.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 2
+  %3 = or i64 %2, %0
+  %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }
 
@@ -195,7 +205,7 @@ entry:
 define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 24
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = add nsw i64 %3, -2147483648
   ret i64 %4
 }

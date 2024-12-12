@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; gromacs/optimized/bonded.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; miniaudio/optimized/unity.c.ll
@@ -12,6 +12,7 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

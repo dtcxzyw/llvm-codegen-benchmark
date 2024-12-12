@@ -1,15 +1,15 @@
 .LCPI0_0:
-	.long	100663591                       # 0x6000127
-func0000000000000007:                   # @func0000000000000007
-	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
-	vpslld	$16, %ymm0, %ymm0
-	vpord	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
-	retq
-.LCPI1_0:
 	.long	2147483648                      # 0x80000000
 func000000000000000f:                   # @func000000000000000f
 	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
 	vpslld	$24, %ymm0, %ymm0
+	vpord	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
+	retq
+.LCPI1_0:
+	.long	8                               # 0x8
+func0000000000000007:                   # @func0000000000000007
+	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	vpslld	$4, %ymm0, %ymm0
 	vpord	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI2_0:

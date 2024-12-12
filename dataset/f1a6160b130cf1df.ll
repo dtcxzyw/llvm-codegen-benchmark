@@ -1,5 +1,7 @@
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; opencv/optimized/dpm_nms.cpp.ll
 ; openjdk/optimized/xDirector.ll
 ; Function Attrs: nounwind

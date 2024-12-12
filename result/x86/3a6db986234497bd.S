@@ -13,9 +13,9 @@ func0000000000000006:                   # @func0000000000000006
 	sets	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	%edx, %esi
-	cmpl	$16, %esi
+	cmpl	$8192, %esi                     # imm = 0x2000
 	setb	%al
 	andb	%dil, %al
 	retq
@@ -24,7 +24,7 @@ func000000000000000a:                   # @func000000000000000a
 	setns	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	%edx, %esi
 	cmpl	$16384, %esi                    # imm = 0x4000
 	setae	%al

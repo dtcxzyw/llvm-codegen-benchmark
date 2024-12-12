@@ -15,10 +15,10 @@ func0000000000000004:                   # @func0000000000000004
 	cmovel	%ecx, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	leal	86400(%rdx), %ecx
+	leal	8(%rdx), %ecx
 	testb	$1, %sil
 	cmovel	%edx, %ecx
-	leal	-86400(%rcx), %eax
+	leal	8(%rcx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

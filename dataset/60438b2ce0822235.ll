@@ -81,7 +81,7 @@ define i64 @func00000000000000a5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, -128
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = ashr exact i64 %0, 3
   %7 = add nsw i64 %6, %5
   ret i64 %7

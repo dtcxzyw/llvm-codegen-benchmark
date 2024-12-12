@@ -24,7 +24,14 @@ entry:
   ret i32 %6
 }
 
-; 12 occurrences:
+; 19 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cpython/optimized/dtoa.ll
 ; hermes/optimized/dtoa.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
@@ -47,15 +54,22 @@ entry:
   ret i32 %6
 }
 
-; 8 occurrences:
+; 15 occurrences:
 ; git/optimized/ws.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tbdata.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; wireshark/optimized/packet-giop.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-sflow.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:

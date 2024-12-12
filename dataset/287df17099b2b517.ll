@@ -40,4 +40,17 @@ entry:
   ret i64 %6
 }
 
+; 1 occurrences:
+; abc/optimized/bdcSpfd.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 32
+  %3 = add i64 %2, 1095216660480
+  %4 = and i64 %3, 1095216660480
+  %5 = and i64 %0, 255
+  %6 = or disjoint i64 %4, %5
+  ret i64 %6
+}
+
 attributes #0 = { nounwind }

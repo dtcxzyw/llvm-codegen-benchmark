@@ -7,7 +7,7 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001082(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, %0
   %4 = icmp eq i32 %1, %2

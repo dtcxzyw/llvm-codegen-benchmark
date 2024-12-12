@@ -17,12 +17,11 @@ entry:
   %3 = and i32 %2, 49152
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %1, i1 %4, i1 false
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 5 occurrences:
-; linux/optimized/feat_ctl.ll
+; 4 occurrences:
 ; linux/optimized/tg3.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll

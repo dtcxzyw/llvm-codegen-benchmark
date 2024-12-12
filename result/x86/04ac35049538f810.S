@@ -1,4 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
-	leal	-2(%rsi), %eax
-	mulb	%dil
+	movl	%edi, %eax
+	addb	$-2, %sil
+	mulb	%sil
 	retq

@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 35 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -15,7 +15,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -37,14 +36,14 @@
 ; openvdb/optimized/points.cc.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0) #0 {
+define i1 @func0000000000000078(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 31744
   %2 = icmp ne i16 %1, 0
   ret i1 %2
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; linux/optimized/ip_fragment.ll
@@ -64,7 +63,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -97,14 +95,14 @@ entry:
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0) #0 {
+define i1 @func0000000000000061(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 32767
   %2 = icmp eq i16 %1, 0
   ret i1 %2
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; draco/optimized/adaptive_rans_bit_decoder.cc.ll
 ; draco/optimized/rans_bit_decoder.cc.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
@@ -122,7 +120,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -143,7 +140,7 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i16 %0) #0 {
+define i1 @func0000000000000074(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 31744
   %2 = icmp ne i16 %1, 31744
@@ -153,7 +150,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i16 %0) #0 {
+define i1 @func000000000000006c(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 1023
   %2 = icmp ne i16 %1, 0

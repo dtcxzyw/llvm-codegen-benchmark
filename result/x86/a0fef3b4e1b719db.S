@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	andl	$1, %edx
 	movl	$6, %ecx
 	subq	%rdx, %rcx
@@ -43,7 +43,17 @@ func0000000000000013:                   # @func0000000000000013
 	cmovaeq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
+	testb	$1, %dl
+	movl	$64, %eax
+	movl	$4096, %ecx                     # imm = 0x1000
+	cmovneq	%rax, %rcx
+	cmpq	$513, %rsi                      # imm = 0x201
+	movl	$8, %eax
+	cmovaeq	%rcx, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000053:                   # @func0000000000000053
 	testb	$1, %dl
 	movl	$64, %eax
 	movl	$4096, %ecx                     # imm = 0x1000

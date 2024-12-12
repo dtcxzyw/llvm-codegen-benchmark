@@ -1,16 +1,11 @@
 
-; 17 occurrences:
+; 12 occurrences:
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/pata_amd.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
-; llvm/optimized/CallingConvLower.cpp.ll
-; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/MCELFStreamer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/Value.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; ruby/optimized/iso_8859_4.ll
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
@@ -33,6 +28,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/lexer.c.ll
 ; clamav/optimized/filtering.c.ll
 ; cmake/optimized/archive_write_add_filter_bzip2.c.ll
@@ -55,18 +51,17 @@ entry:
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/InterferenceCache.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
+; lvgl/optimized/lv_calendar_header_arrow.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll
 ; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/jfrChunk.ll
-; openmpi/optimized/hb_tree.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/zend_jit_vm_helpers.ll
 ; qemu/optimized/hw_ide_core.c.ll
 ; qemu/optimized/pci.c.ll
 ; qemu/optimized/tcg.c.ll
-; qemu/optimized/util_qtree.c.ll
 ; quantlib/optimized/ecb.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
@@ -111,8 +106,7 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
-; openmpi/optimized/hb_tree.ll
+; 2 occurrences:
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wireshark/optimized/packet-dec-dnart.c.ll
 ; Function Attrs: nounwind

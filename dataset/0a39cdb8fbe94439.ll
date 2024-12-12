@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/time_support.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/ole2_extract.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -42,7 +42,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64

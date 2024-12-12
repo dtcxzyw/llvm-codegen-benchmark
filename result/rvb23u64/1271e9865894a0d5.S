@@ -12,6 +12,26 @@ func00000000000000f5:                   # @func00000000000000f5
 	sh1add	a0, a0, a1
 	addiw	a0, a0, 120
 	ret
+func0000000000000021:                   # @func0000000000000021
+	sh1add	a1, a1, a1
+	sh1add	a0, a1, a0
+	slli	a0, a0, 1
+	addiw	a0, a0, -28
+	ret
+func00000000000000e5:                   # @func00000000000000e5
+	sh1add	a1, a1, a1
+	sh1add	a0, a1, a0
+	slli	a0, a0, 1
+	addiw	a0, a0, -28
+	ret
+func0000000000000020:                   # @func0000000000000020
+	sh1add	a1, a1, a1
+	sh1add	a0, a1, a0
+	lui	a1, 16
+	addi	a1, a1, -28
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
+	ret
 func0000000000000075:                   # @func0000000000000075
 	lui	a2, 1048573
 	addi	a2, a2, -1

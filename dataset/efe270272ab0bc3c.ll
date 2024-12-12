@@ -25,7 +25,7 @@
 ; postgres/optimized/print.ll
 ; tev/optimized/Image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64
@@ -40,7 +40,7 @@ entry:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_colorin.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/normal_prior.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64

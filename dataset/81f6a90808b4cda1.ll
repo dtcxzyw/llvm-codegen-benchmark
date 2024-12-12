@@ -10,7 +10,7 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -23,7 +23,6 @@ entry:
 ; protobuf/optimized/map.cc.ll
 ; protobuf/optimized/map_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; xgboost/optimized/c_api.cc.ll
 ; z3/optimized/euf_proof.cpp.ll
@@ -45,28 +44,6 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 %2, %0
   %4 = shl nsw i64 %3, 2
-  ret i64 %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet_list_model.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = sub i64 %2, %0
-  %4 = shl i64 %3, 2
-  ret i64 %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/qcustomplot.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000004c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = sub i64 %2, %0
-  %4 = shl i64 %3, 3
   ret i64 %4
 }
 

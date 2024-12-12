@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; c3c/optimized/target.c.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTUnit.cpp.ll
@@ -11,6 +11,7 @@
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/SemaExprMember.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
+; lvgl/optimized/lv_display.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; verilator/optimized/V3EmitCBase.cpp.ll
 ; verilator/optimized/V3ParseGrammar.cpp.ll

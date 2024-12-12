@@ -1,5 +1,5 @@
 
-; 169 occurrences:
+; 170 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/giaFront.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -28,10 +28,12 @@
 ; gromacs/optimized/gmx_traj.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/spdy_protocol.cc.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -135,7 +137,6 @@
 ; opencv/optimized/resize_layer.cpp.ll
 ; opencv/optimized/security_barrier_camera.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
-; opencv/optimized/signal_resample.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; opencv/optimized/trackerSamplerAlgorithm.cpp.ll
 ; opencv/optimized/tsdf_functions.cpp.ll

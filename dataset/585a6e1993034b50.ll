@@ -11,7 +11,7 @@ define i16 @func0000000000000014(i16 %0, i32 %1) #0 {
 entry:
   %.neg = shl nsw i32 -1, %1
   %.neg1 = trunc i32 %.neg to i16
-  %2 = add i16 %.neg1, %0
+  %2 = add i16 %0, %.neg1
   ret i16 %2
 }
 

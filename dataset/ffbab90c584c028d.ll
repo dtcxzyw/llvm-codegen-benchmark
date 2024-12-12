@@ -1,7 +1,9 @@
 
-; 23 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_nested.cpp.ll
+; g2o/optimized/data_queue.cpp.ll
+; g2o/optimized/estimate_propagator.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
@@ -13,8 +15,28 @@
 ; minetest/optimized/nodetimer.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
+; openusd/optimized/clip.cpp.ll
+; openusd/optimized/clipSet.cpp.ll
+; openusd/optimized/crateData.cpp.ll
 ; openusd/optimized/primAdapter.cpp.ll
+; openusd/optimized/sdffilter.cpp.ll
+; openusd/optimized/stitch.cpp.ll
+; openusd/optimized/subset.cpp.ll
+; openusd/optimized/testUsdCreateAttributeCpp.cpp.ll
+; openusd/optimized/testUsdTimeValueAuthoring.cpp.ll
+; openusd/optimized/textFileFormat.tab.cpp.ll
+; openusd/optimized/tsTest_SampleTimes.cpp.ll
+; openusd/optimized/tsTest_SplineData.cpp.ll
+; openusd/optimized/valueUtils.cpp.ll
 ; openvdb/optimized/Diagnostics.cc.ll
+; quantlib/optimized/andreasenhugevolatilityinterpl.ll
+; quantlib/optimized/fdg2swaptionengine.ll
+; quantlib/optimized/fdhullwhiteswaptionengine.ll
+; quantlib/optimized/fdmstepconditioncomposite.ll
+; quantlib/optimized/fwdperiodadapter.ll
+; quantlib/optimized/gsrprocesscore.ll
+; quantlib/optimized/nthorderderivativeop.ll
+; quantlib/optimized/squarerootclvmodel.ll
 ; stat-rs/optimized/u5boppws0o3vklz.ll
 ; sundials/optimized/arkode_adapt.c.ll
 ; wireshark/optimized/lte_rlc_graph_dialog.cpp.ll
@@ -24,11 +46,11 @@
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, double %1, double %2) #0 {
+define ptr @func000000000000000b(ptr %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = select i1 %3, i64 16, i64 24
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -38,11 +60,11 @@ entry:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, double %1, double %2) #0 {
+define ptr @func0000000000000013(ptr %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, i64 24, i64 16
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -55,38 +77,6 @@ entry:
   %3 = fcmp oeq double %1, %2
   %4 = select i1 %3, i64 0, i64 8
   %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 22 occurrences:
-; g2o/optimized/data_queue.cpp.ll
-; g2o/optimized/estimate_propagator.cpp.ll
-; openusd/optimized/clip.cpp.ll
-; openusd/optimized/clipSet.cpp.ll
-; openusd/optimized/crateData.cpp.ll
-; openusd/optimized/sdffilter.cpp.ll
-; openusd/optimized/stitch.cpp.ll
-; openusd/optimized/subset.cpp.ll
-; openusd/optimized/testUsdCreateAttributeCpp.cpp.ll
-; openusd/optimized/testUsdTimeValueAuthoring.cpp.ll
-; openusd/optimized/textFileFormat.tab.cpp.ll
-; openusd/optimized/tsTest_SampleTimes.cpp.ll
-; openusd/optimized/tsTest_SplineData.cpp.ll
-; openusd/optimized/valueUtils.cpp.ll
-; quantlib/optimized/andreasenhugevolatilityinterpl.ll
-; quantlib/optimized/fdg2swaptionengine.ll
-; quantlib/optimized/fdhullwhiteswaptionengine.ll
-; quantlib/optimized/fdmstepconditioncomposite.ll
-; quantlib/optimized/fwdperiodadapter.ll
-; quantlib/optimized/gsrprocesscore.ll
-; quantlib/optimized/nthorderderivativeop.ll
-; quantlib/optimized/squarerootclvmodel.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp olt double %1, %2
-  %4 = select i1 %3, i64 24, i64 16
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -104,11 +94,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, double %1, double %2) #0 {
+define ptr @func0000000000000033(ptr %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, i64 248, i64 256
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

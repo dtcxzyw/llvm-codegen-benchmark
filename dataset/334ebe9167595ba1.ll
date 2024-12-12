@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; minetest/optimized/mg_decoration.cpp.ll
 ; openblas/optimized/dgghd3.c.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/trackerCSRT.cpp.ll
 ; openexr/optimized/ImfImage.cpp.ll
 ; openexr/optimized/ImfImageChannel.cpp.ll

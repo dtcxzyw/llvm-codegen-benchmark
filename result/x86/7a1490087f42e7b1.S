@@ -13,3 +13,8 @@ func0000000000000004:                   # @func0000000000000004
 	subl	%esi, %eax
 	andl	$1, %eax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	movl	%edi, %eax
+	subl	%esi, %eax
+	andl	$63, %eax
+	retq

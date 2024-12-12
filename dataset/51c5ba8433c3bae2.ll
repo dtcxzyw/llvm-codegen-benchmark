@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
@@ -23,34 +23,36 @@
 ; minetest/optimized/servermap.cpp.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = trunc nuw i32 %2 to i16
-  %4 = icmp eq i16 %3, %0
+  %4 = icmp eq i16 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; minetest/optimized/servermap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i16 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = trunc nuw i32 %2 to i16
-  %4 = icmp slt i16 %3, %0
+  %4 = icmp sgt i16 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; minetest/optimized/servermap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = trunc nuw i32 %2 to i16
-  %4 = icmp sgt i16 %3, %0
+  %4 = icmp slt i16 %0, %3
   ret i1 %4
 }
 
@@ -58,11 +60,11 @@ entry:
 ; minetest/optimized/server.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = trunc nuw i32 %2 to i16
-  %4 = icmp ugt i16 %3, %0
+  %4 = icmp ult i16 %0, %3
   ret i1 %4
 }
 
@@ -72,11 +74,11 @@ entry:
 ; pocketpy/optimized/vm.cpp.ll
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = trunc nuw i32 %2 to i16
-  %4 = icmp ult i16 %3, %0
+  %4 = icmp ugt i16 %0, %3
   ret i1 %4
 }
 
@@ -89,42 +91,41 @@ define i1 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = trunc i32 %2 to i16
-  %4 = icmp eq i16 %3, %0
+  %4 = icmp eq i16 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; hdf5/optimized/H5B2int.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = trunc nuw i32 %2 to i16
-  %4 = icmp ne i16 %3, %0
+  %4 = icmp ne i16 %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; entt/optimized/registry.cpp.ll
-; linux/optimized/intel_display_device.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 20
   %3 = trunc nuw nsw i32 %2 to i16
-  %4 = icmp eq i16 %3, %0
+  %4 = icmp eq i16 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i16 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 16
   %3 = trunc nuw i32 %2 to i16
-  %4 = icmp eq i16 %3, %0
+  %4 = icmp eq i16 %0, %3
   ret i1 %4
 }
 
@@ -145,7 +146,7 @@ define i1 @func0000000000000008(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = trunc i32 %2 to i16
-  %4 = icmp ult i16 %3, %0
+  %4 = icmp ugt i16 %0, %3
   ret i1 %4
 }
 
@@ -156,7 +157,7 @@ define i1 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = trunc i32 %2 to i16
-  %4 = icmp ugt i16 %3, %0
+  %4 = icmp ult i16 %0, %3
   ret i1 %4
 }
 

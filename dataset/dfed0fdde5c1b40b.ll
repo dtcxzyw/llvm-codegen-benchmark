@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/src.ll
 ; linux/optimized/fork.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll

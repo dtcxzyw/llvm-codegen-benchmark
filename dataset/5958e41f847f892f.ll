@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/X86ExpandPseudo.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000181(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000301(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
@@ -18,7 +18,7 @@ entry:
 ; opencv/optimized/brightedges.cpp.ll
 ; wireshark/optimized/packet-openvpn.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i32
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000014a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000028a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i32

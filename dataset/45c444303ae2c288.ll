@@ -7,19 +7,7 @@ entry:
   %2 = add i64 %1, 7
   %3 = lshr i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_net_vmxnet3.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 34359736832
-  %3 = lshr i64 %2, 3
-  %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -27,12 +15,12 @@ entry:
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -40,48 +28,48 @@ entry:
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; postgres/optimized/tsgistidx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 17179869176
   %3 = lshr i64 %2, 2
   %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000186(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000306(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 17592186040353
   %3 = lshr i64 %2, 12
   %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000030a(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 17592186040353
   %3 = lshr i64 %2, 12
   %4 = trunc i64 %3 to i32
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 

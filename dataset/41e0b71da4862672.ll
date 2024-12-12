@@ -50,7 +50,7 @@ entry:
   %3 = add i32 %2, 8
   %4 = shl nuw nsw i32 %1, 4
   %5 = add i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -172,7 +172,7 @@ entry:
   %3 = add nuw nsw i32 %2, 12
   %4 = shl nuw i32 %1, 3
   %5 = add nuw nsw i32 %4, %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -222,7 +222,7 @@ entry:
   %3 = shl nsw i32 %2, 12
   %4 = add i32 %1, 16842752
   %5 = add i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -272,7 +272,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = shl nsw i32 %1, 1
   %5 = add i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

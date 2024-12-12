@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; libwebp/optimized/rescaler.c.ll
@@ -23,6 +23,7 @@
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; tokio-rs/optimized/r9h5225tdo2hxm6.ll
 ; tokio-rs/optimized/rq81hdouiclvz49.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000012(i32 %0, i32 %1) #0 {
 entry:
@@ -76,19 +77,6 @@ entry:
   %3 = zext i32 %0 to i64
   %4 = mul nuw i64 %3, %2
   %5 = lshr exact i64 %4, 16
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
-}
-
-; 1 occurrences:
-; eastl/optimized/EAFixedPoint.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = zext i32 %0 to i64
-  %4 = mul nuw i64 %3, %2
-  %5 = lshr i64 %4, 16
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

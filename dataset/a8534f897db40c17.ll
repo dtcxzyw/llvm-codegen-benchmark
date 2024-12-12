@@ -1,6 +1,7 @@
 
-; 52 occurrences:
+; 54 occurrences:
 ; abc/optimized/decompress.c.ll
+; boost/optimized/basic_text_wiprimitive.ll
 ; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/decompress.c.ll
@@ -41,6 +42,7 @@
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/grayscale_bitmap.cpp.ll

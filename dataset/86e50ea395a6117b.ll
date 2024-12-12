@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; cmake/optimized/curl_addrinfo.c.ll
 ; cmake/optimized/doh.c.ll
 ; cmake/optimized/ntlm.c.ll
@@ -8,7 +8,6 @@
 ; curl/optimized/libcurl_la-ntlm.ll
 ; linux/optimized/uhci-hcd.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; qemu/optimized/hw_scsi_scsi-bus.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0) #0 {

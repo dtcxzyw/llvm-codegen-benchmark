@@ -1,8 +1,8 @@
 
 ; 8 occurrences:
 ; freetype/optimized/truetype.c.ll
-; libquic/optimized/random.c.ll
 ; linux/optimized/hid-lg4ff.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; node/optimized/libnode.crypto_aes.ll
 ; openssl/optimized/libcrypto-lib-bn_rand.ll
 ; openssl/optimized/libcrypto-shlib-bn_rand.ll
@@ -14,11 +14,11 @@ entry:
   %2 = shl nuw nsw i32 510, %1
   %3 = trunc i32 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 
-; 30 occurrences:
+; 28 occurrences:
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/funcobject.ll
 ; cpython/optimized/typeobject.ll
@@ -37,8 +37,6 @@ entry:
 ; linux/optimized/fsopen.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/clog.ll
 ; postgres/optimized/varbit.ll
@@ -55,7 +53,7 @@ entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc nuw i32 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 
@@ -68,7 +66,7 @@ entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc nuw nsw i32 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 
@@ -90,7 +88,7 @@ entry:
   %2 = shl nsw i32 -1, %1
   %3 = trunc i32 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 
@@ -109,7 +107,7 @@ entry:
   %2 = shl nuw i32 1, %1
   %3 = trunc i32 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 
@@ -124,7 +122,7 @@ entry:
   %2 = shl nsw i32 -1, %1
   %3 = trunc nsw i32 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 

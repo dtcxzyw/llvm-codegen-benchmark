@@ -11,7 +11,20 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 21 occurrences:
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vfs_inode.ll

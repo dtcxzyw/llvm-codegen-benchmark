@@ -1,15 +1,14 @@
 
-; 3 occurrences:
-; bdwgc/optimized/gc.c.ll
+; 2 occurrences:
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openjdk/optimized/relocator.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000161(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw ptr, ptr %0, i64 %1
-  %3 = getelementptr nusw i8, ptr %2, i64 -8
+  %2 = getelementptr nusw i8, ptr %0, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
-  %5 = and i64 %4, 7
+  %5 = and i64 %4, 1
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -35,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000101(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 1

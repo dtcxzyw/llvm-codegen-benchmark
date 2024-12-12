@@ -11,7 +11,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
@@ -76,18 +77,6 @@ entry:
   %1 = trunc i64 %0 to i32
   %2 = add i32 %1, -1
   %3 = lshr i32 %2, 6
-  %4 = add nuw nsw i32 %3, 1
-  ret i32 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/SourceManager.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000006b(i64 %0) #0 {
-entry:
-  %1 = trunc nuw nsw i64 %0 to i32
-  %2 = add nsw i32 %1, -7
-  %3 = lshr i32 %2, 3
   %4 = add nuw nsw i32 %3, 1
   ret i32 %4
 }

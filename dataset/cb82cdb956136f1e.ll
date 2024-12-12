@@ -1,9 +1,8 @@
 
-%struct.lua_TValue.2811879 = type { %union.Value.2811880, [1 x i32], i32 }
-%union.Value.2811880 = type { ptr }
+%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
+%union.Value.2923858 = type { ptr }
 
-; 116 occurrences:
-; abc/optimized/giaFanout.c.ll
+; 114 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; llvm/optimized/ASTDumper.cpp.ll
@@ -112,7 +111,6 @@
 ; memcached/optimized/memcached_debug-restart.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; memcached/optimized/memcached_debug-storage.ll
-; meshoptimizer/optimized/indexcodec.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll
@@ -120,26 +118,52 @@
 ; redis/optimized/rax.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; abc/optimized/giaFanout.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw i32, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 4
-  %7 = getelementptr nusw i32, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %4
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; luau/optimized/lvmexecute.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %struct.lua_TValue.2811879, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 16
-  %7 = getelementptr %struct.lua_TValue.2811879, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
+  %7 = getelementptr %struct.lua_TValue.2923857, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; meshoptimizer/optimized/indexcodec.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 15
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 -16
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

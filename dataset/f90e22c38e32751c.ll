@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; faiss/optimized/index_factory.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/c_packer.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1) #0 {

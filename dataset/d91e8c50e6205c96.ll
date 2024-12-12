@@ -198,8 +198,7 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; arrow/optimized/float16.cc.ll
+; 2 occurrences:
 ; ncnn/optimized/mat.cpp.ll
 ; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; Function Attrs: nounwind

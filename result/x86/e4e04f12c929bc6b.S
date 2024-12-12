@@ -1,16 +1,16 @@
 .LCPI0_0:
-	.quad	0x4004000000000000              # double 2.5
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x4010000000000000              # double 4
+func0000000000000004:                   # @func0000000000000004
 	vmulsd	.LCPI0_0(%rip), %xmm1, %xmm1
-	vucomisd	%xmm1, %xmm0
+	vucomisd	%xmm0, %xmm1
 	seta	%al
 	andb	%dil, %al
 	retq
 .LCPI1_0:
-	.quad	0x3ff8000000000000              # double 1.5
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x4004000000000000              # double 2.5
+func0000000000000002:                   # @func0000000000000002
 	vmulsd	.LCPI1_0(%rip), %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	seta	%al
 	andb	%dil, %al
 	retq

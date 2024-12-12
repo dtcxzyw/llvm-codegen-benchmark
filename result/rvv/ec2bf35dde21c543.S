@@ -58,18 +58,19 @@ func000000000000003f:                   # @func000000000000003f
 	li	a0, 22
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000030:                   # @func0000000000000030
-	li	a0, 18
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmacc.vx	v8, a0, v10
-	vadd.vi	v8, v8, 5
-	ret
 func000000000000003d:                   # @func000000000000003d
 	li	a0, 28
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	lui	a0, 1047932
 	addi	a0, a0, -1692
+	vadd.vx	v8, v8, a0
+	ret
+func0000000000000030:                   # @func0000000000000030
+	li	a0, 9
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v8, a0, v10
+	li	a0, 71
 	vadd.vx	v8, v8, a0
 	ret
 func000000000000003a:                   # @func000000000000003a

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; hdf5/optimized/h5dump.c.ll
 ; hyperscan/optimized/catchup.c.ll
@@ -10,7 +10,6 @@
 ; luajit/optimized/lib_bit.ll
 ; luajit/optimized/lib_bit_dyn.ll
 ; mitsuba3/optimized/zonevector.cpp.ll
-; qemu/optimized/hw_net_can_ctucan_pci.c.ll
 ; ruby/optimized/random.ll
 ; ruby/optimized/string.ll
 ; wireshark/optimized/tvbuff.c.ll

@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/l_vmanip.cpp.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/server.cpp.ll

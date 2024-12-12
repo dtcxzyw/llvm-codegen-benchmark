@@ -11,11 +11,11 @@
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; wasmtime-rs/optimized/3swlmlzz83rbbf1u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw nsw i32 1, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -26,11 +26,11 @@ entry:
 ; brotli/optimized/decode.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
@@ -42,11 +42,11 @@ entry:
 ; brotli/optimized/decode.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -56,11 +56,11 @@ entry:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -71,22 +71,22 @@ entry:
 ; brotli/optimized/decode.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = shl nsw i32 -1, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -94,22 +94,22 @@ entry:
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 8, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ult i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/tcp_output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = shl nuw nsw i32 1, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 

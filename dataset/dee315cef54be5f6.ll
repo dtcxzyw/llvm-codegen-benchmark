@@ -1,5 +1,5 @@
 
-%"class.irr::video::SColor.2583823" = type { i32 }
+%"class.irr::video::SColor.2697847" = type { i32 }
 
 ; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_catalog.cpp.ll
@@ -11,7 +11,7 @@
 define ptr @func0000000000000040(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.irr::video::SColor.2583823", ptr %0, i64 %3
+  %4 = getelementptr %"class.irr::video::SColor.2697847", ptr %0, i64 %3
   %5 = shl i64 %1, 2
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
@@ -94,13 +94,25 @@ entry:
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i16, ptr %0, i64 %3
-  %.idx = shl nsw i64 %1, 2
-  %5 = getelementptr nusw i8, ptr %4, i64 %.idx
+  %.idx = shl nuw nsw i64 %1, 2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %.idx
   ret ptr %5
+}
+
+; 1 occurrences:
+; boost/optimized/url_base.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 0, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = shl i64 %1, 1
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  ret ptr %6
 }
 
 ; 4 occurrences:
@@ -118,6 +130,19 @@ entry:
   ret ptr %6
 }
 
+; 2 occurrences:
+; gromacs/optimized/partition.cpp.ll
+; lz4/optimized/lz4hc.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 64, %2
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = shl nuw nsw i64 %1, 5
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
 ; 1 occurrences:
 ; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
@@ -127,18 +152,6 @@ entry:
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = shl nsw i64 %1, 2
   %6 = getelementptr nusw i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; lz4/optimized/lz4hc.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 0, %2
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = shl nuw nsw i64 %1, 1
-  %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }
 

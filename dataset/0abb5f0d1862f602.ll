@@ -21,7 +21,7 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; z3/optimized/value_generator.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2047
   %4 = icmp eq i32 %3, 0
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp eq i32 %3, 0
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16775168
   %4 = icmp eq i32 %3, 0
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationkeys.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 254
   %4 = icmp eq i32 %3, 0

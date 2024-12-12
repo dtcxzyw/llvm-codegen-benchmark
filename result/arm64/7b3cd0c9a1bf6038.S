@@ -1,9 +1,8 @@
-func0000000000000198:                   // @func0000000000000198
+func0000000000000318:                   // @func0000000000000318
 // %bb.0:                               // %entry
-	cmtst	v0.16b, v0.16b, v0.16b
-	cmeq	v1.16b, v1.16b, #0
-	movi	v2.16b, #1
-	bic	v0.16b, v0.16b, v1.16b
-	and	v0.16b, v0.16b, v2.16b
+	tst	w0, #0xff
+	cset	w8, ne
+	tst	w1, #0xff
+	csel	w0, wzr, w8, eq
 	ret
                                         // -- End function

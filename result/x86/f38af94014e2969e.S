@@ -8,11 +8,12 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000004:                   # @func0000000000000004
 	cmpl	$65536, %esi                    # imm = 0x10000
-	setae	%al
+	setb	%al
 	orb	%dil, %al
-	movzbl	%al, %eax
-	andl	$1, %eax
-	xorq	$-3, %rax
+	movzbl	%al, %ecx
+	andl	$1, %ecx
+	movl	$4, %eax
+	subq	%rcx, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	testl	%esi, %esi

@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; linux/optimized/head64.ll
+; 8 occurrences:
 ; linux/optimized/mm_init.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/Decl.cpp.ll

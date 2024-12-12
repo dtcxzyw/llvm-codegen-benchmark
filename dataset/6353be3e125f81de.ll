@@ -169,7 +169,8 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {

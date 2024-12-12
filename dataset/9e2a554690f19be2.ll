@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
@@ -37,7 +37,6 @@
 ; slurm/optimized/gres.ll
 ; spike/optimized/vdiv_vx.ll
 ; velox/optimized/MemoryAllocator.cpp.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/muxcover.ll
 ; yosys/optimized/simplify.ll

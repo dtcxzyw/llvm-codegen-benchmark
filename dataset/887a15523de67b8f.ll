@@ -13,7 +13,7 @@ define i1 @func0000000000000075(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fcmp ult float %3, %0
+  %4 = fcmp ugt float %0, %3
   ret i1 %4
 }
 
@@ -35,7 +35,7 @@ define i1 @func0000000000000074(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 
@@ -50,7 +50,7 @@ define i1 @func0000000000000054(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 
@@ -61,7 +61,7 @@ define i1 @func0000000000000053(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fcmp ugt float %3, %0
+  %4 = fcmp ult float %0, %3
   ret i1 %4
 }
 
@@ -76,7 +76,7 @@ define i1 @func0000000000000078(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fcmp oeq float %3, %0
+  %4 = fcmp oeq float %0, %3
   ret i1 %4
 }
 
@@ -95,7 +95,7 @@ define i1 @func0000000000000072(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   ret i1 %4
 }
 
@@ -111,7 +111,7 @@ define i1 @func0000000000000073(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fcmp ugt float %3, %0
+  %4 = fcmp ult float %0, %3
   ret i1 %4
 }
 
@@ -122,7 +122,7 @@ define i1 @func0000000000000077(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fcmp une float %3, %0
+  %4 = fcmp une float %0, %3
   ret i1 %4
 }
 
@@ -133,7 +133,7 @@ define i1 @func0000000000000014(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 

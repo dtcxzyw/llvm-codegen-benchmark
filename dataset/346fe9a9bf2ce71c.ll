@@ -1,13 +1,12 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = mul nuw nsw i32 %2, 18
-  %4 = add i32 %3, %1
-  %5 = and i32 %4, %0
+  %3 = mul nuw nsw i32 %2, 3
+  %4 = add i32 %1, %3
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -18,8 +17,8 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 4256249
-  %4 = add nsw i32 %3, %1
-  %5 = and i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -30,7 +29,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 7103
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = and i32 %4, %0
   ret i32 %5
 }
@@ -43,7 +42,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 201326611
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = and i32 %4, %0
   ret i32 %5
 }
@@ -54,8 +53,8 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 4256249
-  %4 = add nuw nsw i32 %3, %1
-  %5 = and i32 %4, %0
+  %4 = add nuw nsw i32 %1, %3
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -82,7 +81,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 4256249
   %4 = add i32 %3, %1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

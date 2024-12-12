@@ -107,7 +107,7 @@ entry:
 ; slurm/optimized/job_test.ll
 ; slurm/optimized/node_scheduler.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2047
   %3 = icmp eq i32 %2, 0
@@ -119,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000034(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 64
   %.not.not = icmp eq i32 %2, 0

@@ -631,10 +631,11 @@ entry:
   ret i8 %1
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/hash_generator_testing.cc.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll

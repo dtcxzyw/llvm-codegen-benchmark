@@ -1,5 +1,56 @@
 
-; 84 occurrences:
+; 42 occurrences:
+; abc/optimized/abcLut.c.ll
+; abc/optimized/cuddAPI.c.ll
+; abc/optimized/ifDec07.c.ll
+; abc/optimized/ifSat.c.ll
+; abc/optimized/rsbDec6.c.ll
+; abc/optimized/sbdSat.c.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; assimp/optimized/zip.c.ll
+; boost/optimized/to_chars.ll
+; cmake/optimized/archive_match.c.ll
+; cpython/optimized/cursor.ll
+; cpython/optimized/formatter_unicode.ll
+; git/optimized/oidmap.ll
+; hermes/optimized/zip.c.ll
+; hwloc/optimized/memattrs.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/ue2string.cpp.ll
+; icu/optimized/ucnvmbcs.ll
+; libpng/optimized/pngrtran.c.ll
+; linux/optimized/auditsc.ll
+; llvm/optimized/AMDGPU.cpp.ll
+; llvm/optimized/InstCombineShifts.cpp.ll
+; llvm/optimized/MarkupFilter.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; ockam-rs/optimized/40iecfzh8kpu4oof.ll
+; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
+; ockam-rs/optimized/8vw3dw8isly7xg2.ll
+; openjdk/optimized/dependencies.ll
+; openjdk/optimized/pngrtran.ll
+; openssl/optimized/sslapitest-bin-sslapitest.ll
+; openusd/optimized/sdffilter.cpp.ll
+; quantlib/optimized/actual365fixed.ll
+; quantlib/optimized/zabr.ll
+; quickjs/optimized/quickjs.ll
+; redis/optimized/bitops.ll
+; redis/optimized/lzf_c.ll
+; redis/optimized/server.ll
+; ruby/optimized/random.ll
+; yosys/optimized/json.ll
+; zed-rs/optimized/5gzhlrfve63v3ndyg8t40tttn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = icmp eq i32 %0, 1
+  %2 = sext i1 %1 to i64
+  ret i64 %2
+}
+
+; 83 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/bmcClp.c.ll
@@ -29,7 +80,6 @@
 ; abc/optimized/utilIsop.c.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; assimp/optimized/ZipArchiveIOSystem.cpp.ll
-; assimp/optimized/ioapi.c.ll
 ; cpython/optimized/Python-tokenize.ll
 ; cpython/optimized/formatter_unicode.ll
 ; cpython/optimized/thread.ll
@@ -49,6 +99,7 @@
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/StringTableBuilder.cpp.ll
 ; llvm/optimized/WindowsResource.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; nix/optimized/why-depends.ll
 ; node/optimized/libnode.Protocol.ll
@@ -78,7 +129,6 @@
 ; redis/optimized/bitops.ll
 ; redis/optimized/quicklist.ll
 ; ruby/optimized/bignum.ll
-; ruby/optimized/intpack.ll
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/re.ll
 ; ruby/optimized/string.ll
@@ -176,54 +226,6 @@ entry:
   ret i64 %2
 }
 
-; 39 occurrences:
-; abc/optimized/abcLut.c.ll
-; abc/optimized/cuddAPI.c.ll
-; abc/optimized/ifDec07.c.ll
-; abc/optimized/ifSat.c.ll
-; abc/optimized/rsbDec6.c.ll
-; abc/optimized/sbdSat.c.ll
-; assimp/optimized/glTF2Importer.cpp.ll
-; assimp/optimized/zip.c.ll
-; cmake/optimized/archive_match.c.ll
-; cpython/optimized/cursor.ll
-; cpython/optimized/formatter_unicode.ll
-; git/optimized/oidmap.ll
-; hermes/optimized/zip.c.ll
-; hwloc/optimized/memattrs.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/ue2string.cpp.ll
-; icu/optimized/ucnvmbcs.ll
-; libpng/optimized/pngrtran.c.ll
-; linux/optimized/auditsc.ll
-; llvm/optimized/AMDGPU.cpp.ll
-; llvm/optimized/InstCombineShifts.cpp.ll
-; llvm/optimized/MarkupFilter.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
-; nix/optimized/nix-env.ll
-; ockam-rs/optimized/40iecfzh8kpu4oof.ll
-; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
-; ockam-rs/optimized/8vw3dw8isly7xg2.ll
-; openjdk/optimized/dependencies.ll
-; openjdk/optimized/pngrtran.ll
-; openssl/optimized/sslapitest-bin-sslapitest.ll
-; openusd/optimized/sdffilter.cpp.ll
-; quantlib/optimized/actual365fixed.ll
-; quantlib/optimized/zabr.ll
-; redis/optimized/bitops.ll
-; redis/optimized/lzf_c.ll
-; redis/optimized/server.ll
-; yosys/optimized/json.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0) #0 {
-entry:
-  %1 = icmp eq i32 %0, 3
-  %2 = sext i1 %1 to i64
-  ret i64 %2
-}
-
 ; 4 occurrences:
 ; gromacs/optimized/coupling.cpp.ll
 ; libquic/optimized/quic_protocol.cc.ll
@@ -237,7 +239,7 @@ entry:
   ret i64 %2
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/archive_acl.c.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
@@ -245,11 +247,20 @@ entry:
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/packet-ber.c.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = icmp ult i32 %0, 1073741823
+  %2 = sext i1 %1 to i64
+  ret i64 %2
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = icmp samesign ult i32 %0, 10
   %2 = sext i1 %1 to i64
   ret i64 %2
 }

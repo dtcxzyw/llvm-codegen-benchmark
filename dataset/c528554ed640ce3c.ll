@@ -1,8 +1,10 @@
 
-; 68 occurrences:
+; 72 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
+; boost/optimized/to_chars.ll
+; cmake/optimized/huf_compress.c.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; libdeflate/optimized/deflate_compress.c.ll
@@ -26,18 +28,18 @@
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/ParsedAttr.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TemplateBase.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; memcached/optimized/memcached-thread.ll
+; memcached/optimized/memcached_debug-thread.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mimalloc/optimized/os.c.ll
 ; minetest/optimized/png.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; opencv/optimized/cornersubpix.cpp.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openspiel/optimized/bridge.cc.ll
@@ -65,8 +67,10 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; wireshark/optimized/sharkd_session.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/z3_replayer.cpp.ll
+; zstd/optimized/huf_compress.c.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
@@ -77,13 +81,12 @@ entry:
   ret i64 %3
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/rpo.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
-; darktable/optimized/jpeg.c.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll

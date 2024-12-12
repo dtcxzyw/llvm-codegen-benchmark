@@ -34,7 +34,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
 ; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = and i32 %2, 63
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/geo.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = srem i32 %2, 3

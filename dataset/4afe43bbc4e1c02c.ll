@@ -1,5 +1,6 @@
 
 ; 144 occurrences:
+; boost/optimized/sparring_partner.ll
 ; bullet3/optimized/btContactConstraint.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
@@ -33,9 +34,7 @@
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_ggtt_fencing.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/libata-acpi.ll
 ; linux/optimized/mdio_bus.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tcp_cong.ll
@@ -50,6 +49,7 @@
 ; llvm/optimized/CallEvent.cpp.ll
 ; llvm/optimized/CallSiteSplitting.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/DIBuilder.cpp.ll
 ; llvm/optimized/DeadStoreElimination.cpp.ll

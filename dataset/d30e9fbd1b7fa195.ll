@@ -18,7 +18,7 @@ entry:
 ; gromacs/optimized/hbond.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000146(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32

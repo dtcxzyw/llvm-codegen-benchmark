@@ -1,5 +1,6 @@
 
-; 31 occurrences:
+; 32 occurrences:
+; boost/optimized/ipv6_address.ll
 ; freetype/optimized/sfnt.c.ll
 ; hermes/optimized/DebugInfo.cpp.ll
 ; libquic/optimized/url_canon_host.cc.ll
@@ -39,7 +40,7 @@ entry:
   ret i64 %3
 }
 
-; 49 occurrences:
+; 51 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -89,6 +90,8 @@ entry:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:

@@ -1,12 +1,11 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; folly/optimized/Checksum.cpp.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; linux/optimized/drm_lease.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_hotplug.ll
-; linux/optimized/intel_hti.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
@@ -27,7 +26,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = trunc i64 %3 to i32
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

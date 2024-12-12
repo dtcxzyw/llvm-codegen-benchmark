@@ -20,7 +20,7 @@ entry:
 ; openspiel/optimized/maedn.cc.ll
 ; re2/optimized/bitstate.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i1 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -65
   %4 = icmp ult i32 %3, 26

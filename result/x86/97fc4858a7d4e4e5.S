@@ -1,7 +1,7 @@
 func000000000000001b:                   # @func000000000000001b
 	xorl	%eax, %eax
-	cmpl	%esi, %edx
-	setg	%al
+	cmpl	%edx, %esi
+	setl	%al
 	shll	$4, %eax
 	addq	%rdi, %rax
 	retq
@@ -14,15 +14,15 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 func0000000000000010:                   # @func0000000000000010
 	xorl	%eax, %eax
-	cmpl	%esi, %edx
-	seta	%al
+	cmpl	%edx, %esi
+	setb	%al
 	shlq	$32, %rax
 	addq	%rdi, %rax
 	retq
 func000000000000002a:                   # @func000000000000002a
 	xorl	%eax, %eax
-	cmpl	%esi, %edx
-	setl	%al
+	cmpl	%edx, %esi
+	setg	%al
 	subq	%rax, %rdi
 	leaq	2(%rdi), %rax
 	retq

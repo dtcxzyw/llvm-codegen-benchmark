@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	2                               # 0x2
 .LCPI1_2:
 	.long	514                             # 0x202
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm0   # ymm0 = [2,2,2,2,2,2,2,2]
 	vpbroadcastd	.LCPI1_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [514,514,514,514,514,514,514,514]

@@ -18,7 +18,7 @@
 define ptr @func0000000000000002(ptr %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fptosi double %4 to i32
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i8, ptr %0, i64 %6

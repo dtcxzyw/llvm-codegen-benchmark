@@ -4,7 +4,7 @@
 ; openjdk/optimized/matcher.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cc(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000d8c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 1, %2
   %4 = and i64 %3, %1
@@ -14,7 +14,8 @@ entry:
   ret i1 %7
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -113,7 +114,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 4294967295, %2
   %4 = and i64 %3, %1
@@ -124,22 +125,9 @@ entry:
 }
 
 ; 1 occurrences:
-; php/optimized/php_cli_server.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000218(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
-  %5 = icmp eq i64 %4, 0
-  %6 = icmp ugt i32 %0, 1
-  %7 = and i1 %6, %5
-  ret i1 %7
-}
-
-; 1 occurrences:
 ; linux/optimized/drm_atomic_helper.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000082c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = and i64 %3, %1

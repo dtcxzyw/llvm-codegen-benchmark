@@ -1,7 +1,9 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; darktable/optimized/introspection_sharpen.c.ll
 ; graphviz/optimized/shortest.c.ll
+; lightgbm/optimized/bin.cpp.ll
+; lightgbm/optimized/dataset_loader.cpp.ll
 ; php/optimized/document.ll
 ; php/optimized/dom_iterators.ll
 ; php/optimized/network.ll

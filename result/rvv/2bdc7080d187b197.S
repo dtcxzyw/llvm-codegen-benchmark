@@ -2,7 +2,7 @@ func000000000000000a:                   # @func000000000000000a
 	fli.d	fa5, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v9, v16, fa5
-	vmand.mm	v8, v9, v8
+	vmand.mm	v8, v8, v9
 	vmand.mm	v0, v8, v0
 	ret
 func000000000000000c:                   # @func000000000000000c

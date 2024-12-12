@@ -12,7 +12,15 @@ func000000000000006a:                   # @func000000000000006a
 	sh3add	a0, a1, a0
 	addi	a0, a0, -8
 	ret
-func0000000000000042:                   # @func0000000000000042
+func000000000000006b:                   # @func000000000000006b
+	slli	a2, a2, 6
+	sext.w	a1, a1
+	sub	a0, a0, a2
+	slli	a1, a1, 6
+	add	a0, a0, a1
+	addi	a0, a0, 32
+	ret
+func0000000000000043:                   # @func0000000000000043
 	slli	a2, a2, 2
 	sub	a0, a0, a2
 	sext.w	a1, a1

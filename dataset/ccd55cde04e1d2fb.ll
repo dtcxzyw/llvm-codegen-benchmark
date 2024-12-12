@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/cmdline.ll
 ; cmake/optimized/divsufsort.c.ll
 ; llvm/optimized/MemProf.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -25,7 +26,7 @@ define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %.neg = lshr i64 %1, 63
   %.neg1 = trunc nuw nsw i64 %.neg to i32
-  %2 = add i32 %.neg1, %0
+  %2 = add i32 %0, %.neg1
   ret i32 %2
 }
 

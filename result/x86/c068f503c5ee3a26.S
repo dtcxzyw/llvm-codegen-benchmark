@@ -7,14 +7,14 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000006:                   # @func0000000000000006
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	setg	%al
+	cmpq	%rcx, %rdi
+	setl	%al
 	negl	%eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	setl	%al
+	cmpq	%rcx, %rdi
+	setg	%al
 	negl	%eax
 	retq

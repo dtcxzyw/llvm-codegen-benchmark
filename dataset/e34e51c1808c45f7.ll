@@ -6,7 +6,7 @@
 define i1 @func000000000000000c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -16,7 +16,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp uge i8 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -44,13 +44,24 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; zed-rs/optimized/2stbxmle5qyblpbm85idqsgvv.ll
+; zed-rs/optimized/bjeparp10jwpmju7lihptx53f.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %1, %2
+  %4 = xor i1 %0, %3
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ule i8 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -60,7 +71,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 

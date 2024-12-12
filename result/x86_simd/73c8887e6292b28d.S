@@ -4,7 +4,7 @@ func0000000000000003:                   # @func0000000000000003
 	vptestnmb	%xmm2, %xmm2, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [2048,2048,2048,2048,2048,2048,2048,2048]
 	vmovdqa32	%ymm1, %ymm2 {%k1}
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	62                              # 0x3e
@@ -29,7 +29,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpcmpeqb	.LCPI1_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm2   # ymm2 = [1024,1024,1024,1024,1024,1024,1024,1024]
 	vmovdqa32	%ymm1, %ymm2 {%k1}
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.byte	3                               # 0x3

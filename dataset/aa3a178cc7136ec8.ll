@@ -24,7 +24,7 @@ entry:
 define i32 @func0000000000000023(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 59
   %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
@@ -37,7 +37,7 @@ entry:
 define i32 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1024
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 11
   %5 = trunc i64 %4 to i32
   ret i32 %5

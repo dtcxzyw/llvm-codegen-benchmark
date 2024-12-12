@@ -1,5 +1,5 @@
 
-; 237 occurrences:
+; 265 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
@@ -149,7 +149,6 @@
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
@@ -233,7 +232,36 @@
 ; ruby/optimized/bignum.ll
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
+; velox/optimized/ArrayContains.cpp.ll
+; velox/optimized/ArrayDistinct.cpp.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/ArrayPosition.cpp.ll
+; velox/optimized/ArraySort.cpp.ll
+; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/BitUtil.cpp.ll
+; velox/optimized/Bridge.cpp.ll
+; velox/optimized/CastExpr.cpp.ll
+; velox/optimized/CoalesceExpr.cpp.ll
+; velox/optimized/ConstantExpr.cpp.ll
+; velox/optimized/EvalCtx.cpp.ll
+; velox/optimized/Expr.cpp.ll
+; velox/optimized/FlatVector.cpp.ll
+; velox/optimized/FromUtf8.cpp.ll
+; velox/optimized/GenericWriter.cpp.ll
+; velox/optimized/JsonFunctions.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/LazyVector.cpp.ll
+; velox/optimized/MapEntries.cpp.ll
+; velox/optimized/MapFromEntries.cpp.ll
+; velox/optimized/MapKeysAndValues.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
+; velox/optimized/Reverse.cpp.ll
+; velox/optimized/Split.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; velox/optimized/ToUtf8.cpp.ll
+; velox/optimized/TryExpr.cpp.ll
+; velox/optimized/VectorFuzzer.cpp.ll
+; velox/optimized/VectorSaver.cpp.ll
 ; wireshark/optimized/proto.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; zstd/optimized/fse_compress.c.ll
@@ -246,7 +274,7 @@ entry:
   ret i64 %4
 }
 
-; 329 occurrences:
+; 327 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
@@ -371,8 +399,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

@@ -1,7 +1,8 @@
 
-; 102 occurrences:
+; 101 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/curl_ntlm_core.c.ll
 ; curl/optimized/libcurl_la-curl_ntlm_core.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
@@ -44,7 +45,6 @@
 ; git/optimized/strbuf.ll
 ; git/optimized/string-list.ll
 ; git/optimized/strvec.ll
-; git/optimized/tr2_tls.ll
 ; git/optimized/trailer.ll
 ; git/optimized/tree-walk.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
@@ -63,8 +63,6 @@
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
-; linux/optimized/drm_self_refresh_helper.ll
-; linux/optimized/intel_guc_log_debugfs.ll
 ; linux/optimized/slub.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
@@ -86,7 +84,6 @@
 ; pbrt-v4/optimized/filters.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; protobuf/optimized/lexer.cc.ll
-; rand-rs/optimized/3wentbx1vl0iwznb.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/ckh.ll
@@ -101,6 +98,8 @@
 ; ruby/optimized/parse.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/ODCode93Writer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
@@ -111,7 +110,8 @@ entry:
   ret i64 %3
 }
 
-; 167 occurrences:
+; 181 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/dictobject.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
@@ -154,8 +154,6 @@ entry:
 ; opencv/optimized/tensor_shape.pb.cc.ll
 ; opencv/optimized/versions.pb.cc.ll
 ; openjdk/optimized/cpCache.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; protobuf/optimized/api.pb.cc.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; protobuf/optimized/duration.pb.cc.ll
@@ -277,14 +275,29 @@ entry:
 ; z3/optimized/ufbv_rewriter_tactic.cpp.ll
 ; z3/optimized/ufbv_tactic.cpp.ll
 ; z3/optimized/unit_subsumption_tactic.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; zxing/optimized/ODCode39Writer.cpp.ll
 ; zxing/optimized/ODITFWriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i64 %0) #0 {
 entry:
-  %1 = mul nuw nsw i64 %0, 146097
-  %2 = add nuw nsw i64 %1, 3
-  %3 = lshr i64 %2, 2
+  %1 = mul nuw nsw i64 %0, 3
+  %2 = add nuw nsw i64 %1, 1
+  %3 = lshr i64 %2, 1
   ret i64 %3
 }
 

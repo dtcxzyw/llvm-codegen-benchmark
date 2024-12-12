@@ -1,8 +1,7 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; icu/optimized/ubidiwrt.ll
-; libevent/optimized/bufferevent_pair.c.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/xt_addrtype.ll
@@ -25,10 +24,11 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/string_segment.ll
 ; icu/optimized/tzfmt.ll
+; icu/optimized/ubidiwrt.ll
 ; icu/optimized/ucnv_u16.ll
 ; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/ustrcase.ll
@@ -40,6 +40,7 @@ entry:
 ; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
+; wireshark/optimized/packet-dhcp.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
@@ -54,7 +55,7 @@ entry:
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; slurm/optimized/backfill.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0

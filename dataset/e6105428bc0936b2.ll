@@ -6,7 +6,7 @@
 ; ruby/optimized/pack.ll
 ; wireshark/optimized/packet-telnet.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 13
   %4 = icmp ult ptr %0, %1
@@ -30,7 +30,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 61
   %4 = icmp eq ptr %0, %1
@@ -54,7 +54,7 @@ entry:
 ; zxing/optimized/MCReader.cpp.ll
 ; zxing/optimized/QRReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp ne ptr %0, %1
@@ -66,7 +66,7 @@ entry:
 ; darktable/optimized/RafDecoder.cpp.ll
 ; folly/optimized/Compression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp ne ptr %0, %1
@@ -82,7 +82,7 @@ entry:
 ; luau/optimized/Unifier.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp eq ptr %0, %1
@@ -93,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/json_parser.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000085(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 10
   %4 = icmp ule ptr %0, %1
@@ -106,7 +106,7 @@ entry:
 ; hyperscan/optimized/mcclellan.c.ll
 ; icu/optimized/makeconv.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 3
   %4 = icmp ult ptr %0, %1
@@ -117,7 +117,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/persistence_yml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000028(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 32
   %4 = icmp ugt ptr %0, %1

@@ -1,5 +1,5 @@
 
-; 156 occurrences:
+; 155 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
@@ -20,8 +20,6 @@
 ; freetype/optimized/psaux.c.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; graphviz/optimized/constraint.c.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/persncal.ll
@@ -43,6 +41,7 @@
 ; linux/optimized/regmap.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; meshlab/optimized/filter_measure.cpp.ll
@@ -164,10 +163,8 @@ entry:
   ret i32 %3
 }
 
-; 211 occurrences:
+; 216 occurrences:
 ; abc/optimized/acecTree.c.ll
-; abc/optimized/compress.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/exor.c.ll
 ; abc/optimized/fraSec.c.ll
 ; abc/optimized/giaEdge.c.ll
@@ -184,6 +181,8 @@ entry:
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/b3ConvexUtility.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
@@ -223,14 +222,12 @@ entry:
 ; graphviz/optimized/mincross.c.ll
 ; graphviz/optimized/pack.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
-; gromacs/optimized/dlaruv.cpp.ll
 ; gromacs/optimized/dlasrt.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; gromacs/optimized/matio.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/reversetopology.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; gromacs/optimized/slasrt.cpp.ll
 ; gromacs/optimized/sm_same.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -269,6 +266,12 @@ entry:
 ; luajit/optimized/lib_table_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -370,6 +373,7 @@ entry:
 ; yosys/optimized/sat.ll
 ; yosys/optimized/test_cell.ll
 ; z3/optimized/realclosure.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; zxing/optimized/MCReader.cpp.ll

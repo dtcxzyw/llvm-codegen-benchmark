@@ -22,9 +22,3 @@ func000000000000002b:                   # @func000000000000002b
 	orl	%esi, %eax
 	imulq	%rdi, %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
-	movl	%edx, %eax
-	shll	$8, %eax
-	orl	%esi, %eax
-	imulq	%rdi, %rax
-	retq

@@ -92,14 +92,16 @@ define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1048575
   %3 = mul nuw nsw i64 %2, 2000
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; abc/optimized/reoTransfer.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cvc5/optimized/theory_arrays.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -108,7 +110,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1095216660735
   %3 = mul i64 %2, 4294967296000100
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -124,7 +126,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2097151
   %3 = mul nsw i64 %2, -683901
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -140,7 +142,7 @@ define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2097151
   %3 = mul nuw nsw i64 %2, 136657
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -175,7 +177,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = mul nsw i64 %2, -1000000000
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

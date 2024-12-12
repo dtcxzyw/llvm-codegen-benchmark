@@ -1,10 +1,22 @@
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f5:                   # @func00000000000000f5
+	imull	%edx, %edx
+	addl	%esi, %edi
+	cmpl	%edx, %edi
+	setbe	%al
+	retq
+func00000000000001f8:                   # @func00000000000001f8
+	imull	%edx, %edx
+	addl	%esi, %edi
+	cmpl	%edx, %edi
+	seta	%al
+	retq
+func00000000000000f4:                   # @func00000000000000f4
 	imull	%edx, %edx
 	addl	%esi, %edi
 	cmpl	%edx, %edi
 	setb	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000f8:                   # @func00000000000000f8
 	imull	%edx, %edx
 	addl	%esi, %edi
 	cmpl	%edx, %edi

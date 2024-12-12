@@ -1,6 +1,6 @@
 
-%"union.std::aligned_storage<8, 8>::type.2568893" = type { [8 x i8] }
-%struct.ItemIdData.3469633 = type { i32 }
+%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
+%struct.ItemIdData.3653742 = type { i32 }
 
 ; 36 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -40,11 +40,11 @@
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i16 %1) #0 {
+define i64 @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 16
-  %4 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2568893"], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %3, i64 0, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -52,11 +52,11 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(ptr %0, i16 %1) #0 {
+define i64 @func000000000000001c(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 24
-  %4 = getelementptr [0 x %struct.ItemIdData.3469633], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %4 = getelementptr [0 x %struct.ItemIdData.3653742], ptr %3, i64 0, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

@@ -1,12 +1,13 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/dsdCheck.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; oiio/optimized/farmhash.cpp.ll
 ; oiio/optimized/ustring.cpp.ll
 ; openjdk/optimized/jfrStackTrace.ll
@@ -18,9 +19,9 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 23
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = mul i64 %4, 23
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -36,9 +37,9 @@ entry:
 define i64 @func00000000000000ff(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 5
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = mul nuw nsw i64 %4, 18
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -72,7 +73,7 @@ entry:
   %3 = mul nsw i64 %2, -24
   %4 = add nsw i64 %3, %1
   %5 = mul nsw i64 %4, -60
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -86,7 +87,7 @@ entry:
   %3 = mul nsw i64 %2, -400
   %4 = add i64 %3, %1
   %5 = mul nsw i64 %4, 365
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -106,7 +107,7 @@ entry:
   %3 = mul nsw i64 %2, -60
   %4 = add nsw i64 %3, %1
   %5 = mul nsw i64 %4, -60
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -120,7 +121,19 @@ entry:
   %3 = mul nuw nsw i64 %2, 60
   %4 = add nuw nsw i64 %3, %1
   %5 = mul nuw nsw i64 %4, 1000000
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw i64 %2, 10
+  %4 = add i64 %3, %1
+  %5 = mul nuw i64 %4, 10
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -189,7 +202,7 @@ entry:
   %3 = mul i64 %2, 10
   %4 = add i64 %3, %1
   %5 = mul nuw i64 %4, 10
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

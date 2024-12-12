@@ -1,11 +1,12 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }
@@ -16,7 +17,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = and i64 %3, 3
   ret i64 %4
 }
@@ -37,7 +38,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }

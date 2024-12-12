@@ -8,7 +8,7 @@
 ; mitsuba3/optimized/blender.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = mul nsw i64 %1, 3
@@ -24,7 +24,7 @@ entry:
 ; postgres/optimized/vacuumparallel.ll
 ; postgres/optimized/xloginsert.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = mul nsw i64 %1, -4

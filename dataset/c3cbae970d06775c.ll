@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; assimp/optimized/ConvertToLHProcess.cpp.ll
 ; c3c/optimized/llvm_codegen_builtins.c.ll
 ; flac/optimized/metadata_object.c.ll
@@ -26,7 +26,6 @@
 ; yosys/optimized/BigUnsignedInABase.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/bv_delay_internalize.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_base.cpp.ll
 ; z3/optimized/dl_boogie_proof.cpp.ll
 ; z3/optimized/dl_context.cpp.ll
@@ -52,12 +51,12 @@ define i64 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; assimp/optimized/BlenderModifier.cpp.ll
 ; assimp/optimized/ConvertToLHProcess.cpp.ll
 ; assimp/optimized/FixNormalsStep.cpp.ll
@@ -65,7 +64,6 @@ entry:
 ; llvm/optimized/AArch64AsmBackend.cpp.ll
 ; llvm/optimized/CodeGenTarget.cpp.ll
 ; openjdk/optimized/OGLBlitLoops.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
 ; wireshark/optimized/packet-lorawan.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; z3/optimized/array_rewriter.cpp.ll
@@ -99,7 +97,7 @@ define i64 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -121,12 +119,12 @@ define i64 @func000000000000001a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/sbdCore.c.ll
 ; casadi/optimized/idas.c.ll
 ; flac/optimized/metadata.cpp.ll
@@ -135,7 +133,6 @@ entry:
 ; hyperscan/optimized/mpv.c.ll
 ; libquic/optimized/padding.c.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openjdk/optimized/g1CardSet.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
 ; openmpi/optimized/libmpi_fortran_base_la-strings.ll
@@ -148,7 +145,7 @@ define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -161,7 +158,7 @@ define i64 @func0000000000000019(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -173,7 +170,7 @@ define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -185,7 +182,7 @@ define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -215,7 +212,7 @@ define i64 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

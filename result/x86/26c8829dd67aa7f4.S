@@ -4,12 +4,6 @@ func000000000000000d:                   # @func000000000000000d
 	cmovnsl	%edx, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movl	%esi, %eax
-	cmpl	$512, %edx                      # imm = 0x200
-	cmovael	%edx, %eax
-	orl	%edi, %eax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%esi, %eax
 	cmpl	$-1, %edx

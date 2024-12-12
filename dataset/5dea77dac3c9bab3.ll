@@ -1,7 +1,8 @@
 
-; 75 occurrences:
+; 68 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/longobject.ll
@@ -39,8 +40,6 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; minetest/optimized/game.cpp.ll
-; nuttx/optimized/mq_timedreceive.c.ll
-; nuttx/optimized/mq_timedsend.c.ll
 ; openjdk/optimized/disassembler.ll
 ; openjdk/optimized/divnode.ll
 ; openssl/optimized/libcrypto-lib-bio_print.ll
@@ -60,7 +59,6 @@
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
 ; quantlib/optimized/tcopulapolicy.ll
 ; ruby/optimized/bignum.ll
-; ruby/optimized/strftime.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/BaseVector.cpp.ll
@@ -70,11 +68,6 @@
 ; wireshark/optimized/pcapng.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yyjson/optimized/yyjson.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
-; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
@@ -83,7 +76,7 @@ entry:
   ret i32 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/cloud.c.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; draco/optimized/adaptive_rans_bit_decoder.cc.ll
@@ -99,21 +92,21 @@ entry:
 ; openmpi/optimized/net.ll
 ; openmpi/optimized/pmix_net.ll
 ; qemu/optimized/block_qcow2.c.ll
-; ruby/optimized/strftime.ll
 ; ruby/optimized/util.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 -10, %1
-  %3 = select i1 %0, i32 -12, i32 %2
+  %2 = select i1 %0, i32 19999, i32 %1
+  %3 = sub i32 0, %2
   ret i32 %3
 }
 
-; 18 occurrences:
+; 23 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; arrow/optimized/key_map.cc.ll
+; arrow/optimized/strtod.cc.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
@@ -121,11 +114,15 @@ entry:
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; cpython/optimized/longobject.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
+; double_conversion/optimized/strtod.cc.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
+; icu/optimized/double-conversion-strtod.ll
 ; llvm/optimized/APInt.cpp.ll
 ; luajit/optimized/buildvm.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
+; openusd/optimized/json.cpp.ll
+; openusd/optimized/strtod.cc.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/strtod.ll
 ; quantlib/optimized/ratehelpers.ll
@@ -133,8 +130,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
-  %2 = sub nuw nsw i32 17, %1
-  %3 = select i1 %0, i32 1091, i32 %2
+  %2 = sub nuw nsw i32 4, %1
+  %3 = select i1 %0, i32 -49, i32 %2
   ret i32 %3
 }
 

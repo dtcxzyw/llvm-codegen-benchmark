@@ -14,8 +14,8 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000003:                   # @func0000000000000003
 	movl	%edx, %ecx
+	xorl	%eax, %eax
 	testb	$1, %sil
-	movl	$1, %eax
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq

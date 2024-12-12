@@ -1,10 +1,11 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; git/optimized/fsck.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/OMPContext.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; openssl/optimized/libcrypto-lib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll

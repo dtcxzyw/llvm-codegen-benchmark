@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp eq i32 %3, %0
@@ -39,7 +39,7 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp eq i32 %3, %0
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp sgt i32 %3, %0
@@ -97,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; coremark/optimized/core_matrix.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, %0
@@ -108,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/convolution.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %.not = icmp slt i32 %3, %0

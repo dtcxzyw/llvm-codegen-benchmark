@@ -1,24 +1,16 @@
-func0000000000000141:                   # @func0000000000000141
+func000000000000048c:                   # @func000000000000048c
 	sarq	$3, %rdx
-	cmpq	%rsi, %rdx
-	setbe	%cl
-	testq	%rdi, %rdi
-	sete	%al
-	andb	%cl, %al
-	retq
-func000000000000014c:                   # @func000000000000014c
-	sarq	$3, %rdx
-	cmpq	%rsi, %rdx
-	seta	%cl
+	cmpq	%rdx, %rsi
+	setb	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000148:                   # @func0000000000000148
+func0000000000000481:                   # @func0000000000000481
 	sarq	$2, %rdx
-	cmpq	%rsi, %rdx
-	seta	%cl
-	cmpq	$769, %rdi                      # imm = 0x301
-	setae	%al
-	orb	%cl, %al
+	cmpq	%rdx, %rsi
+	setae	%cl
+	testq	%rdi, %rdi
+	sete	%al
+	andb	%cl, %al
 	retq

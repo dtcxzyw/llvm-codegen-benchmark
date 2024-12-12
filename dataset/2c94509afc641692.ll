@@ -1,5 +1,11 @@
 
-; 3 occurrences:
+; 9 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; ipopt/optimized/IpAdaptiveMuUpdate.ll
 ; ipopt/optimized/IpQualityFunctionMuOracle.ll
 ; opencv/optimized/core_detect.cpp.ll

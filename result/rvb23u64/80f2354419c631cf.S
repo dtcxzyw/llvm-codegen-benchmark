@@ -20,123 +20,133 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	add	a0, a0, a1
 	lui	a1, 16
 	addi	a0, a0, 2
 	addiw	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	sltiu	a0, a0, 32
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	sltiu	a0, a0, 32
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	sltiu	a0, a0, 517
 	xori	a0, a0, 1
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	add	a0, a0, a1
 	addi	a0, a0, 3
 	srli	a0, a0, 15
 	seqz	a0, a0
 	ret
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001b8:                   # @func00000000000001b8
 	add	a0, a0, a1
 	addi	a0, a0, 3
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000001b4:                   # @func00000000000001b4
+	add	a0, a0, a1
+	addi	a0, a0, 3
+	sltiu	a0, a0, 128
+	ret
+func00000000000000e4:                   # @func00000000000000e4
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	sltiu	a0, a0, 446
 	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	seqz	a0, a0
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	sltiu	a0, a0, 12
 	ret
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000001c8:                   # @func00000000000001c8
 	add	a0, a0, a1
 	li	a1, -31
 	addi	a0, a0, 16
 	srli	a1, a1, 1
 	sltu	a0, a1, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func00000000000000a4:                   # @func00000000000000a4
+	add	a0, a0, a1
+	addi	a0, a0, -1
+	sltiu	a0, a0, 4
+	ret
+func0000000000000181:                   # @func0000000000000181
 	addi	a1, a1, 1
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	sltiu	a0, a0, 8
 	xori	a0, a0, 1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	srli	a0, a0, 32
 	seqz	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	add	a0, a0, a1
 	addi	a0, a0, -48
 	srli	a0, a0, 16
 	snez	a0, a0
 	ret
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000094:                   # @func0000000000000094
+func0000000000000134:                   # @func0000000000000134
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	sltiu	a0, a0, 16
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	sltiu	a0, a0, 128
 	xori	a0, a0, 1
 	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	sltiu	a0, a0, 128
 	xori	a0, a0, 1
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	add	a0, a0, a1
 	addi	a0, a0, -48
 	sltiu	a0, a0, 1025
@@ -147,31 +157,31 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, 1
 	sgtz	a0, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	add	a0, a0, a1
 	lui	a1, 176
 	addiw	a1, a1, -1428
 	add	a0, a0, a1
 	srli	a0, a0, 63
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	addi	a1, a1, 1
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	sgtz	a0, a0
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addi	a1, a1, -1
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	srli	a0, a0, 32
@@ -182,38 +192,106 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, -82
 	snez	a0, a0
 	ret
-func00000000000000c6:                   # @func00000000000000c6
+func00000000000001a1:                   # @func00000000000001a1
+	add	a0, a0, a1
+	seqz	a0, a0
+	ret
+func00000000000001e8:                   # @func00000000000001e8
+	add	a0, a0, a1
+	addi	a0, a0, 3
+	sltiu	a0, a0, 17
+	xori	a0, a0, 1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	add	a0, a0, a1
+	addi	a0, a0, 2
+	sltiu	a0, a0, 508
+	ret
+func0000000000000186:                   # @func0000000000000186
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	srli	a0, a0, 63
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000194:                   # @func0000000000000194
+	add	a0, a0, a1
+	addi	a0, a0, 2
+	sltiu	a0, a0, 64
+	ret
+func0000000000000086:                   # @func0000000000000086
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	srli	a0, a0, 63
 	ret
-func0000000000000086:                   # @func0000000000000086
+func0000000000000041:                   # @func0000000000000041
+	addi	a1, a1, 17
+	or	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000044:                   # @func0000000000000044
+	add	a0, a0, a1
+	li	a1, -29
+	addi	a0, a0, 17
+	srli	a1, a1, 1
+	sltu	a0, a0, a1
+	ret
+func0000000000000024:                   # @func0000000000000024
+	add	a0, a0, a1
+	li	a1, -1
+	slli	a1, a1, 32
+	addi	a2, a1, 1
+	add	a0, a0, a2
+	sltu	a0, a0, a1
+	ret
+func00000000000000b8:                   # @func00000000000000b8
+	add	a0, a0, a1
+	addi	a0, a0, 12
+	srli	a0, a0, 59
+	snez	a0, a0
+	ret
+func0000000000000106:                   # @func0000000000000106
 	add	a0, a0, a1
 	addi	a0, a0, 31
 	srli	a0, a0, 63
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func0000000000000048:                   # @func0000000000000048
+	add	a0, a0, a1
+	li	a1, -31
+	addi	a0, a0, 17
+	srli	a1, a1, 1
+	sltu	a0, a1, a0
+	ret
+func00000000000000c8:                   # @func00000000000000c8
+	add	a0, a0, a1
+	li	a1, -31
+	addi	a0, a0, 17
+	srli	a1, a1, 1
+	sltu	a0, a1, a0
+	ret
+func00000000000001e4:                   # @func00000000000001e4
+	add	a0, a0, a1
+	lui	a1, 1
+	addiw	a1, a1, -1
+	add	a0, a0, a1
+	srli	a0, a0, 12
+	seqz	a0, a0
+	ret
+func000000000000018a:                   # @func000000000000018a
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	sgtz	a0, a0
 	ret
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	srli	a0, a0, 63
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	add	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000d1:                   # @func00000000000000d1
-	addi	a1, a1, 3
-	neg	a0, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
+func00000000000001a8:                   # @func00000000000001a8
+	add	a0, a0, a1
+	addi	a0, a0, 3
+	srli	a0, a0, 60
+	snez	a0, a0
 	ret

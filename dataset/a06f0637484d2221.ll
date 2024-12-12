@@ -7,7 +7,7 @@
 ; openspiel/optimized/colored_trails.cc.ll
 ; openspiel/optimized/negotiation.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, double %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = sext i32 %3 to i64
@@ -25,7 +25,7 @@ entry:
 ; openspiel/optimized/negotiation.cc.ll
 ; pbrt-v4/optimized/pspec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, double %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = sext i32 %3 to i64

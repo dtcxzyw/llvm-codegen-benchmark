@@ -3,7 +3,7 @@
 ; openjdk/optimized/monitorDeflationThread.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 32
   %4 = select i1 %3, i64 %0, i64 %1
@@ -26,7 +26,7 @@ entry:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -34,7 +34,7 @@ entry:
   ret i1 %5
 }
 
-; 152 occurrences:
+; 156 occurrences:
 ; brotli/optimized/encode.c.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -92,6 +92,7 @@ entry:
 ; llvm/optimized/CommandFlags.cpp.ll
 ; llvm/optimized/CostModel.cpp.ll
 ; llvm/optimized/CtxProfAnalysis.cpp.ll
+; llvm/optimized/DIPrinter.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
@@ -121,6 +122,7 @@ entry:
 ; llvm/optimized/OffloadBinary.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
+; llvm/optimized/Path.cpp.ll
 ; llvm/optimized/PrintPasses.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
@@ -160,6 +162,7 @@ entry:
 ; redis/optimized/geo.ll
 ; rust-analyzer-rs/optimized/39qzrxn3p3f1jz7v.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
+; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
@@ -179,6 +182,7 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; yaml-cpp/optimized/scanscalar.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode1l.c.ll
 ; zfp/optimized/encode2d.c.ll
@@ -188,7 +192,7 @@ entry:
 ; zfp/optimized/encode4d.c.ll
 ; zfp/optimized/encode4l.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -196,58 +200,53 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; minetest/optimized/database.cpp.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
-; ripgrep-rs/optimized/5ckxrdy9v0i8g3uf.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/7fmm0tfd68kkbfwadepm13y36.ll
+; zed-rs/optimized/8pzylepo63jgxs9pcfvvb1oj4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
-  %5 = icmp ult i64 %4, 2048
+  %5 = icmp samesign ult i64 %4, 2048
   ret i1 %5
 }
 
-; 8 occurrences:
-; cmake/optimized/connect.c.ll
-; curl/optimized/libcurl_la-connect.ll
-; duckdb/optimized/ub_duckdb_common.cpp.ll
-; linux/optimized/string.ll
-; llvm/optimized/DebugInfoMetadata.cpp.ll
-; qemu/optimized/util_buffer.c.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; wireshark/optimized/packet-lldp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 %0, i64 %1
-  %5 = icmp ugt i64 %4, 65535
-  ret i1 %5
-}
-
-; 14 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; linux/optimized/efi_64.ll
-; linux/optimized/journal.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/DWARFTypePrinter.cpp.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; openjdk/optimized/shenandoahHeap.ll
-; qemu/optimized/util_qht.c.ll
 ; redis/optimized/memtest.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 1
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = icmp ult i64 %4, 1073741825
+  ret i1 %5
+}
+
+; 5 occurrences:
+; cmake/optimized/connect.c.ll
+; curl/optimized/libcurl_la-connect.ll
+; linux/optimized/string.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; wireshark/optimized/packet-lldp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
-  %5 = icmp ult i64 %4, 8
+  %5 = icmp samesign ugt i64 %4, 600
   ret i1 %5
 }
 
@@ -271,7 +270,7 @@ entry:
 ; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -287,7 +286,7 @@ entry:
 ; lua/optimized/lbaselib.ll
 ; rust-analyzer-rs/optimized/36rfhun5ywaw64ay.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, -1023
   %4 = select i1 %3, i64 %0, i64 %1
@@ -302,7 +301,7 @@ entry:
 ; coreutils-rs/optimized/h500puk7vtt6aeh.ll
 ; rust-analyzer-rs/optimized/5060g4cioi8zvzr6.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.not = icmp eq i64 %2, 0
   %3 = select i1 %.not, i64 %1, i64 %0
@@ -310,12 +309,11 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
-; hwloc/optimized/bitmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, -4294967297
   %4 = select i1 %3, i64 %0, i64 %1
@@ -338,7 +336,7 @@ entry:
 ; spike/optimized/f64_to_ui32.ll
 ; spike/optimized/s_addMagsF64.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -346,17 +344,55 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; freetype/optimized/pshinter.c.ll
+; 3 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, -72057594037927936
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = icmp ult i64 %4, -72057594037927936
+  ret i1 %5
+}
+
+; 15 occurrences:
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; llvm/optimized/DebugInfoMetadata.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = icmp ugt i64 %4, 15
+  ret i1 %5
+}
+
+; 4 occurrences:
+; linux/optimized/journal.ll
+; llvm/optimized/DWARFTypePrinter.cpp.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = icmp samesign ult i64 %4, 942081
   ret i1 %5
 }
 
@@ -379,11 +415,22 @@ entry:
 ; postgres/optimized/tidbitmap.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 134217728
+  %3 = icmp samesign ult i64 %2, 134217728
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000314(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %2, -4294967297
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = icmp samesign ult i64 %4, 65536
   ret i1 %5
 }
 
@@ -391,7 +438,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -405,7 +452,7 @@ entry:
 ; proj/optimized/4D_api.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 65535
   %4 = select i1 %3, i64 %0, i64 %1
@@ -416,7 +463,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/rtlil_lexer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, -180
   %4 = select i1 %3, i64 %0, i64 %1
@@ -427,7 +474,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2147483648
   %4 = select i1 %3, i64 %0, i64 %1
@@ -436,9 +483,20 @@ entry:
 }
 
 ; 1 occurrences:
+; ripgrep-rs/optimized/5ckxrdy9v0i8g3uf.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp slt i64 %2, 0
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = icmp ult i64 %4, 11
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/net_failover.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 4294967296
   %4 = select i1 %3, i64 %0, i64 %1
@@ -451,7 +509,7 @@ entry:
 ; freetype/optimized/ftbase.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -468,7 +526,7 @@ entry:
 ; hyperscan/optimized/mcclellan.c.ll
 ; hyperscan/optimized/mcsheng.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -477,9 +535,31 @@ entry:
 }
 
 ; 1 occurrences:
+; hwloc/optimized/bitmap.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000114(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, -4294967297
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = icmp samesign ult i64 %4, 65536
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/pshinter.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000294(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 40
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = icmp samesign ult i64 %4, 192
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; cpython/optimized/unicodedata.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 10
   %4 = select i1 %3, i64 %0, i64 %1

@@ -1,5 +1,7 @@
 
 ; 206 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -127,7 +129,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -203,11 +204,10 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 7
   %4 = add nsw i64 %3, %1
@@ -222,37 +222,35 @@ entry:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; rocksdb/optimized/threadpool_imp.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 7
-  %4 = add nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   %6 = icmp sgt i64 %5, -1
   ret i1 %6
 }
 
-; 3 occurrences:
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/slot_manager.cpp.ll
+; 1 occurrences:
 ; rocksdb/optimized/threadpool_imp.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002b4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 7
-  %4 = add nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 7
+  %4 = add nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 7
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; minetest/optimized/profilergraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 10
-  %4 = add i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = add nsw i64 %0, %4
   %6 = icmp sgt i64 %5, -1
   ret i1 %6
 }
@@ -260,12 +258,12 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/profilergraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000234(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 10
-  %4 = add i64 %3, %1
-  %5 = add nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 10
+  %4 = add i64 %1, %3
+  %5 = add nsw i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 10
   ret i1 %6
 }
 
@@ -288,7 +286,7 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000541(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 4294967295
   %4 = add nuw i64 %3, %1
@@ -300,10 +298,10 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000060a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 1000
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   %6 = icmp sgt i64 %5, 999999999
   ret i1 %6
@@ -314,7 +312,7 @@ entry:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 21
   %4 = add nsw i64 %3, %1
@@ -329,7 +327,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -1000
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   %6 = icmp slt i64 %5, 1
   ret i1 %6
@@ -339,7 +337,7 @@ entry:
 ; linux/optimized/sr_vendor.ll
 ; wireshark/optimized/packet-pn-ptcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000007e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 10
   %4 = add nuw nsw i64 %3, %1
@@ -348,23 +346,22 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; hyperscan/optimized/ng_repeat.cpp.ll
+; 1 occurrences:
 ; postgres/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 86400000000
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
-  %6 = icmp ugt i64 %5, 86399999999
+  %6 = icmp samesign ugt i64 %5, 86399999999
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000286(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 1000000
   %4 = add nsw i64 %3, %1
@@ -391,12 +388,37 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -60000000000
-  %4 = add i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = add i64 %0, %4
   %6 = icmp sgt i64 %5, 99
+  ret i1 %6
+}
+
+; 1 occurrences:
+; hyperscan/optimized/ng_repeat.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, 6
+  %4 = add i64 %1, %3
+  %5 = add i64 %4, %0
+  %6 = icmp ugt i64 %5, 100
+  ret i1 %6
+}
+
+; 2 occurrences:
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; hyperscan/optimized/slot_manager.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000002a4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, 5
+  %4 = add nsw i64 %3, %1
+  %5 = add nsw i64 %4, %0
+  %6 = icmp ult i64 %5, 4294967296
   ret i1 %6
 }
 

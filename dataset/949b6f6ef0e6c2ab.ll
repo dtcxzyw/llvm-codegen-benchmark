@@ -1,8 +1,9 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/contours_new.cpp.ll
 ; opencv/optimized/layer_norm.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
@@ -12,17 +13,19 @@
 ; openusd/optimized/reconinter.c.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/session.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; zxing/optimized/DMDataBlock.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 256
+  %2 = icmp eq i32 %1, 1024
   %3 = and i1 %2, %0
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
 
 ; 129 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/fs.c.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -141,7 +144,6 @@ entry:
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/commview.c.ll
 ; wireshark/optimized/cosine.c.ll
-; wireshark/optimized/daintree-sna.c.ll
 ; wireshark/optimized/dbs-etherwatch.c.ll
 ; wireshark/optimized/dct3trace.c.ll
 ; wireshark/optimized/eri_enb_log.c.ll
@@ -156,7 +158,7 @@ entry:
 define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }

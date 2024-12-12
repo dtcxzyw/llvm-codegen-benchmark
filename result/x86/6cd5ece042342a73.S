@@ -10,7 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	cmpl	$-1, %edi
 	sete	%al
 	retq
@@ -22,7 +22,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$-6900, %eax                    # imm = 0xE50C
 	setb	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movl	%edi, %eax
 	shll	$5, %eax
 	addl	%edi, %edi
@@ -41,15 +41,15 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$-3, %eax
 	sete	%al
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	xorl	%eax, %eax
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	leal	127(,%rdi,8), %eax
 	cmpl	$256, %eax                      # imm = 0x100
 	setb	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	leal	-1001(%rdi,%rdi,2), %eax
 	cmpl	$-1033, %eax                    # imm = 0xFBF7
 	setb	%al

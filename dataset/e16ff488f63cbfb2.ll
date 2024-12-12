@@ -1,5 +1,6 @@
 
-; 141 occurrences:
+; 139 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/model_engine.cpp.ll
 ; cvc5/optimized/options_handler.cpp.ll
@@ -80,7 +81,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -122,7 +122,6 @@
 ; openusd/optimized/mallocTag.cpp.ll
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; openusd/optimized/reporter.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quickjs/optimized/libregexp.ll
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
@@ -138,11 +137,10 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 256, i32 128
   %3 = add nuw nsw i32 %0, 1
@@ -154,7 +152,7 @@ entry:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; postgres/optimized/network_gist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 8, i32 4
   %3 = add nsw i32 %0, -2
@@ -167,18 +165,18 @@ entry:
 ; verilator/optimized/V3Undriven.cpp.ll
 ; wireshark/optimized/packet-metamako.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2, i32 3
   %3 = add nuw nsw i32 %0, 1
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; php/optimized/dns.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 15, i32 13
   %3 = add nsw i32 %0, 1
@@ -229,18 +227,18 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 48, i32 16
   %3 = add nuw nsw i32 %0, 16
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-dof.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2, i32 4
   %3 = add nuw i32 %0, 1
@@ -251,7 +249,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_color.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 131, i32 35
   %3 = add nuw nsw i32 %0, 1
@@ -284,7 +282,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 16, i32 256
   %3 = add nsw i32 %0, 3
@@ -295,7 +293,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/json_reader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 8, i32 5
   %3 = add nsw i32 %0, -48

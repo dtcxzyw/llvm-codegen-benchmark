@@ -67,9 +67,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; eastl/optimized/TestChrono.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:

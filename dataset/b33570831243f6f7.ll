@@ -1,12 +1,11 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cvc5/optimized/entailment_check.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; openjdk/optimized/reflection.ll
 ; slurm/optimized/gres_sock_list.ll
-; spike/optimized/f16_classify.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i16 %0, i1 %1) #0 {
 entry:

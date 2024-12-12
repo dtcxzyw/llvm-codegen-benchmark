@@ -2,9 +2,9 @@
 ; 1 occurrences:
 ; php/optimized/zend_optimizer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000c8c(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = icmp ult ptr %3, %0
   %5 = and i8 %1, 2
   %6 = icmp ne i8 %5, 0
@@ -20,9 +20,9 @@ entry:
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c1(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000d81(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ne ptr %3, %0
   %5 = and i8 %1, -2
   %6 = icmp eq i8 %5, 2
@@ -33,9 +33,9 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000d8c(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = icmp ne ptr %3, %0
   %5 = and i8 %1, 2
   %6 = icmp ne i8 %5, 0
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fault.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000081(ptr %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
   %4 = icmp ult ptr %3, %0
@@ -59,9 +59,9 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000c81(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 2
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
   %4 = icmp ult ptr %3, %0
   %5 = and i8 %1, -8
   %6 = icmp eq i8 %5, -40

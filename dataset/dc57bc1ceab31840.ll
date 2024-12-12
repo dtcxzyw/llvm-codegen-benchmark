@@ -10,11 +10,12 @@ entry:
   %4 = select i1 %3, i32 2097152, i32 6291456
   %5 = shl nuw nsw i32 %1, 10
   %6 = or disjoint i32 %4, %5
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; linux/optimized/hda_codec.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
@@ -23,7 +24,7 @@ entry:
   %4 = select i1 %3, i32 16, i32 0
   %5 = shl i32 %1, 5
   %6 = or disjoint i32 %5, %4
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

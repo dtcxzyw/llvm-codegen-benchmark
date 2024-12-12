@@ -11,7 +11,7 @@ func0000000000000013:                   # @func0000000000000013
 func0000000000000003:                   # @func0000000000000003
 	vpslld	$7, %ymm1, %ymm2
 	vpsrld	$31, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI1_0(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & mem)
 	retq
 .LCPI2_0:

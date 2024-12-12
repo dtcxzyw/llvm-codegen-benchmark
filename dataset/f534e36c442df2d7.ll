@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; git/optimized/clean.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -10,6 +10,7 @@
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/tg3.ll
+; lvgl/optimized/lv_svg_render.ll
 ; mitsuba3/optimized/scene.cpp.ll
 ; ocio/optimized/MathUtils.cpp.ll
 ; openjdk/optimized/loopTransform.ll

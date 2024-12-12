@@ -56,15 +56,14 @@
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 
-; 68 occurrences:
+; 64 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/ifCut.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTime.c.ll
 ; abc/optimized/mapperMatch.c.ll
 ; abc/optimized/mapperTime.c.ll
@@ -121,10 +120,7 @@ entry:
 ; opencv/optimized/dynafu_tsdf.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/motion_stabilizing.cpp.ll
-; opencv/optimized/short_term_imageless_tracker.cpp.ll
-; opencv/optimized/tracker.cpp.ll
 ; opencv/optimized/tsdf.cpp.ll
-; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; xgboost/optimized/adaptive.cc.ll
 ; xgboost/optimized/quantile.cc.ll
@@ -133,7 +129,7 @@ entry:
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   ret i1 %4
 }
 
@@ -152,17 +148,18 @@ entry:
 define i1 @func000000000000000b(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp uge float %3, %0
+  %4 = fcmp ule float %0, %3
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; yoga/optimized/Cache.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ord float %3, %0
+  %4 = fcmp ord float %0, %3
   ret i1 %4
 }
 
@@ -177,7 +174,7 @@ entry:
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ult float %3, %0
+  %4 = fcmp ugt float %0, %3
   ret i1 %4
 }
 
@@ -193,7 +190,7 @@ entry:
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ugt float %3, %0
+  %4 = fcmp ult float %0, %3
   ret i1 %4
 }
 
@@ -212,7 +209,7 @@ entry:
 define i1 @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ole float %3, %0
+  %4 = fcmp oge float %0, %3
   ret i1 %4
 }
 
@@ -229,7 +226,7 @@ entry:
 define i1 @func000000000000000d(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ule float %3, %0
+  %4 = fcmp uge float %0, %3
   ret i1 %4
 }
 
@@ -242,7 +239,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp oeq float %3, %0
+  %4 = fcmp oeq float %0, %3
   ret i1 %4
 }
 
@@ -252,7 +249,7 @@ entry:
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp une float %3, %0
+  %4 = fcmp une float %0, %3
   ret i1 %4
 }
 

@@ -78,8 +78,11 @@ func000000000000000e:                   # @func000000000000000e
 	vucomisd	%xmm0, %xmm0
 	setnp	%al
 	retq
+.LCPI12_0:
+	.quad	0x7ff0000000000000              # double +Inf
 func0000000000000009:                   # @func0000000000000009
-	vucomisd	%xmm1, %xmm0
+	vsubsd	%xmm1, %xmm0, %xmm0
+	vucomisd	.LCPI12_0(%rip), %xmm0
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006

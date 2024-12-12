@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI1_0:
 	.long	16                              # 0x10
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpgtd	%ymm0, %ymm1, %k1
@@ -14,7 +14,7 @@ func000000000000001a:                   # @func000000000000001a
 	retq
 .LCPI2_0:
 	.long	10001                           # 0x2711
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0

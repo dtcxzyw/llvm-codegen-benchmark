@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	li	a2, 44
 	subw	a2, a2, a1
@@ -8,7 +8,7 @@ func0000000000000011:                   # @func0000000000000011
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	sext.w	a0, a0
 	li	a2, 32
 	subw	a2, a2, a1
@@ -33,7 +33,7 @@ func0000000000000006:                   # @func0000000000000006
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a0, a0
 	negw	a1, a1
 	sgtz	a0, a0
@@ -47,7 +47,7 @@ func000000000000000a:                   # @func000000000000000a
 	neg	a0, a0
 	or	a0, a0, a2
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	sext.w	a0, a0
 	lui	a2, 1048560
 	subw	a1, a2, a1
@@ -55,7 +55,7 @@ func0000000000000024:                   # @func0000000000000024
 	sltu	a0, a0, a2
 	czero.eqz	a0, a1, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	sext.w	a0, a0
 	li	a2, 32
 	subw	a2, a2, a1
@@ -65,14 +65,14 @@ func0000000000000038:                   # @func0000000000000038
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	sext.w	a0, a0
 	li	a2, 32
 	subw	a2, a2, a1
 	slti	a0, a0, 2
 	czero.nez	a0, a2, a0
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sext.w	a0, a0
 	li	a2, 1
 	subw	a1, a2, a1
@@ -81,19 +81,26 @@ func0000000000000016:                   # @func0000000000000016
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000074:                   # @func0000000000000074
 	sext.w	a0, a0
-	li	a2, 3
+	li	a2, 35
 	subw	a2, a2, a1
-	li	a1, 2
-	sltiu	a0, a0, 3
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	li	a1, 16
+	sltiu	a0, a0, 12
+	czero.nez	a1, a1, a0
+	czero.eqz	a0, a2, a0
+	or	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sext.w	a0, a0
 	negw	a1, a1
 	sltiu	a0, a0, 2
 	czero.eqz	a0, a1, a0
+	ret
+func0000000000000004:                   # @func0000000000000004
+	sext.w	a0, a0
+	li	a2, 197
+	subw	a2, a2, a1
+	sltiu	a0, a0, 4
+	czero.eqz	a0, a2, a0
 	ret

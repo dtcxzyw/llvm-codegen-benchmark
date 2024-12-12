@@ -54,7 +54,7 @@
 ; wireshark/optimized/packet-xmpp-utils.c.ll
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %0, %1
   %3 = icmp ne ptr %0, null
@@ -110,7 +110,7 @@ entry:
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ult ptr %0, %1
   %3 = icmp ne ptr %0, null
@@ -118,10 +118,16 @@ entry:
   ret i1 %4
 }
 
-; 381 occurrences:
+; 387 occurrences:
 ; abc/optimized/ivyCheck.c.ll
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/context.ll
+; boost/optimized/round_robin.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/test_stackstring.ll
+; boost/optimized/waker.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/linsol_qr.cpp.ll
@@ -226,7 +232,6 @@ entry:
 ; linux/optimized/neighbour.ll
 ; linux/optimized/nsnames.ll
 ; linux/optimized/ohci-hcd.ll
-; linux/optimized/pty.ll
 ; linux/optimized/route.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/security.ll
@@ -257,6 +262,8 @@ entry:
 ; llvm/optimized/VPlanAnalysis.cpp.ll
 ; llvm/optimized/VPlanVerifier.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; mimalloc/optimized/heap.c.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
@@ -438,7 +445,6 @@ entry:
 ; node/optimized/libnode.udp_wrap.ll
 ; node/optimized/libnode.util.ll
 ; nori/optimized/button.cpp.ll
-; nuttx/optimized/binfmt_unregister.c.ll
 ; nuttx/optimized/group_leave.c.ll
 ; nuttx/optimized/pthread_mutex.c.ll
 ; nuttx/optimized/wd_cancel.c.ll
@@ -501,7 +507,7 @@ entry:
 ; z3/optimized/euf_enode.cpp.ll
 ; z3/optimized/euf_internalize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %0, %1
   %3 = icmp ne ptr %0, null
@@ -514,7 +520,7 @@ entry:
 ; oniguruma/optimized/regexec.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000012c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp uge ptr %0, %1
   %3 = icmp ne ptr %0, null
@@ -527,7 +533,7 @@ entry:
 ; openjdk/optimized/nmethod.ll
 ; postgres/optimized/parse_collate.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %0, null
   %3 = icmp ult ptr %0, %1

@@ -33,8 +33,7 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
-; eastl/optimized/TestBitset.cpp.ll
+; 4 occurrences:
 ; linux/optimized/gen8_engine_cs.ll
 ; openusd/optimized/mvref_common.c.ll
 ; php/optimized/ir_emit.ll
@@ -44,6 +43,17 @@ define i32 @func0000000000000004(i32 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 26817, i32 26821
   %4 = icmp ult i8 %1, 5
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; eastl/optimized/TestBitset.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i8 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 0, i32 4
+  %4 = icmp samesign ult i8 %1, 4
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }

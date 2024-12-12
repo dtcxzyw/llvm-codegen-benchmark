@@ -1,5 +1,5 @@
-func0000000000000028:                   # @func0000000000000028
-	leal	-1(%rsi,%rdi), %eax
+func0000000000000048:                   # @func0000000000000048
+	leal	-1(%rdi,%rsi), %eax
 	movl	%esi, %ecx
 	decl	%ecx
 	cmpl	$3, %eax
@@ -8,7 +8,7 @@ func0000000000000028:                   # @func0000000000000028
 	sete	%al
 	orb	%dl, %al
 	retq
-func0000000000000b02:                   # @func0000000000000b02
+func0000000000002a02:                   # @func0000000000002a02
 	leal	-1(%rdi,%rsi), %eax
 	movl	%edi, %ecx
 	decl	%ecx

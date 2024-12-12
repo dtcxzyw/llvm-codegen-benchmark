@@ -7,19 +7,20 @@ func0000000000000030:                   # @func0000000000000030
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
-func0000000000000035:                   # @func0000000000000035
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vand.vi	v12, v12, 1
-	vmsne.vi	v0, v12, 0
-	li	a0, -94
-	vadd.vx	v10, v10, a0, v0.t
-	vadd.vv	v8, v10, v8
-	ret
 func000000000000003f:                   # @func000000000000003f
 	li	a0, 63
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
 	li	a0, 60
+	vmadd.vx	v12, a0, v10
+	vadd.vv	v8, v12, v8
+	ret
+func0000000000000035:                   # @func0000000000000035
+	lui	a0, 16
+	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vand.vx	v12, v12, a0
+	li	a0, 365
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret

@@ -1,7 +1,6 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; lief/optimized/BinaryParser.cpp.ll
-; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/bfsClosure.ll
@@ -39,6 +38,15 @@
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %.idx = shl nsw i64 %1, 3
+  ret i64 %.idx
+}
+
+; 1 occurrences:
+; llvm/optimized/XCOFFObjectFile.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
+entry:
+  %.idx = mul nuw nsw i64 %1, 6
   ret i64 %.idx
 }
 

@@ -37,7 +37,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	0x43800000                      # float 256
 .LCPI4_2:
 	.long	0x41800000                      # float 16
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm0, %k1
 	vbroadcastss	.LCPI4_1(%rip), %ymm0   # ymm0 = [2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2]
 	vbroadcastss	.LCPI4_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1]

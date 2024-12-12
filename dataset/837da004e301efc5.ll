@@ -51,4 +51,17 @@ entry:
   ret i32 %5
 }
 
+; 2 occurrences:
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 8
+  %3 = or disjoint i32 %2, 53
+  %4 = shl i32 %0, 16
+  %5 = or i32 %4, %3
+  ret i32 %5
+}
+
 attributes #0 = { nounwind }

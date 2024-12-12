@@ -1,5 +1,6 @@
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -173,9 +174,9 @@
 define i64 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %5 = zext i1 %4 to i64
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   ret i64 %6
 }
 

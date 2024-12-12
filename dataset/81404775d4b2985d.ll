@@ -1,5 +1,5 @@
 
-; 447 occurrences:
+; 454 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -58,6 +58,7 @@
 ; abc/optimized/wlcAbs.c.ll
 ; arrow/optimized/float16.cc.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
+; boost/optimized/dump.ll
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -134,7 +135,6 @@
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/interrupt.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/vc.ll
@@ -264,6 +264,10 @@
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -366,7 +370,6 @@
 ; openusd/optimized/vec3h.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -386,7 +389,6 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/to_tsany.ll
-; postgres/optimized/trigger.ll
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/tsvector.ll
 ; postgres/optimized/tsvector_op.ll
@@ -446,13 +448,18 @@
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = and i32 %2, 15
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -522,9 +529,10 @@ entry:
   ret i32 %4
 }
 
-; 158 occurrences:
+; 157 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
+; abc/optimized/darCore.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEquiv.c.ll
@@ -649,7 +657,6 @@ entry:
 ; qemu/optimized/hw_pci_pci.c.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/libunicode.ll
@@ -661,7 +668,6 @@ entry:
 ; ruby/optimized/vm_trace.ll
 ; slurm/optimized/schedutils.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/p1dgiootfedk7bo.ll
 ; wireshark/optimized/packet-afp.c.ll
@@ -690,9 +696,11 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; postgres/optimized/tsvector_op.ll
@@ -707,7 +715,7 @@ entry:
   ret i32 %4
 }
 
-; 84 occurrences:
+; 86 occurrences:
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -748,6 +756,7 @@ entry:
 ; luajit/optimized/lj_snap_dyn.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -792,6 +801,7 @@ entry:
 ; redis/optimized/ldebug.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

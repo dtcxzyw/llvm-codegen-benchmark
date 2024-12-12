@@ -14,7 +14,7 @@ entry:
   ret i32 %4
 }
 
-; 40 occurrences:
+; 36 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/lzma_encoder_optimum_fast.c.ll
@@ -24,7 +24,6 @@ entry:
 ; git/optimized/refs.ll
 ; graphviz/optimized/sfvscanf.c.ll
 ; gromacs/optimized/tng_io.c.ll
-; gromacs/optimized/uncompr.c.ll
 ; hermes/optimized/DependencyExtractor.cpp.ll
 ; hermes/optimized/JSLibInternal.cpp.ll
 ; hermes/optimized/JSRegExp.cpp.ll
@@ -34,13 +33,10 @@ entry:
 ; libwebp/optimized/webpmux.c.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/reboot.ll
-; linux/optimized/rsa.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
 ; llvm/optimized/MoveChecker.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; nuttx/optimized/mq_timedreceive.c.ll
-; nuttx/optimized/mq_timedsend.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; openusd/optimized/collectionExpressionEvaluator.cpp.ll
@@ -61,6 +57,19 @@ entry:
   %2 = icmp eq i32 %0, 2
   %3 = select i1 %2, i1 %1, i1 false
   %4 = select i1 %3, i32 1, i32 %0
+  ret i32 %4
+}
+
+; 3 occurrences:
+; cmake/optimized/idna.c.ll
+; libuv/optimized/idna.c.ll
+; node/optimized/idna.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i1 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %0, 55295
+  %3 = select i1 %2, i1 %1, i1 false
+  %4 = select i1 %3, i32 -1, i32 %0
   ret i32 %4
 }
 

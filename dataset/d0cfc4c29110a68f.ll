@@ -1,8 +1,9 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; flatbuffers/optimized/idl_gen_swift.cpp.ll
 ; gromacs/optimized/index.cpp.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/tlb.ll
@@ -10,6 +11,7 @@
 ; minetest/optimized/localplayer.cpp.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; rocksdb/optimized/db_impl_write.cc.ll
+; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
 ; wireshark/optimized/packet-sctp.c.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind

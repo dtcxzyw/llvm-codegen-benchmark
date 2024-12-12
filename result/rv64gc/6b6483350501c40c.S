@@ -6,7 +6,7 @@ func000000000000002c:                   # @func000000000000002c
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func000000000000002e:                   # @func000000000000002e
+func000000000000002f:                   # @func000000000000002f
 	srli	a2, a2, 2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
@@ -22,7 +22,7 @@ func0000000000000026:                   # @func0000000000000026
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	srli	a2, a2, 4
 	sext.w	a1, a1
 	sub	a1, a1, a2

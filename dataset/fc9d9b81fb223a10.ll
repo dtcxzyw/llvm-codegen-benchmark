@@ -20,7 +20,7 @@
 ; openjdk/optimized/callnode.ll
 ; openjdk/optimized/subnode.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000058c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 22
   %4 = icmp ne ptr %1, null
@@ -38,7 +38,7 @@ entry:
 ; openjdk/optimized/castnode.ll
 ; openjdk/optimized/subnode.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000118c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 9
   %4 = icmp ne ptr %1, null

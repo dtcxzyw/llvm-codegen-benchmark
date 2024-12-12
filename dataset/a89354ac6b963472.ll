@@ -25,7 +25,7 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000042(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, %0
   %3 = icmp eq i16 %0, 0
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; libpng/optimized/pngwrite.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000128(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000248(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp uge i16 %1, %0
   %3 = icmp ult i16 %0, 128
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000302(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, %0
   %3 = icmp eq i16 %0, 0
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000058(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp ne i16 %0, %1
@@ -71,7 +71,7 @@ entry:
 ; linux/optimized/pmsr.ll
 ; linux/optimized/rtnetlink.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000108(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, %0
   %3 = icmp ult i16 %0, 4
@@ -83,7 +83,7 @@ entry:
 ; freetype/optimized/pcf.c.ll
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000210(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 8192
   %3 = icmp ugt i16 %0, %1

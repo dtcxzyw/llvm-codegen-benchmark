@@ -1,5 +1,5 @@
 
-%class.XMarkCacheEntry.2620143 = type { ptr, i32, i64 }
+%class.XMarkCacheEntry.2733586 = type { ptr, i32, i64 }
 
 ; 18 occurrences:
 ; abc/optimized/sbdCore.c.ll
@@ -21,12 +21,12 @@
 ; spike/optimized/fminm_h.ll
 ; spike/optimized/fminm_s.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = and i64 %3, 1023
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw [1024 x %class.XMarkCacheEntry.2620143], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw [1024 x %class.XMarkCacheEntry.2733586], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -38,11 +38,11 @@ entry:
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/xarray.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = and i64 %3, 63
-  %5 = getelementptr nusw i8, ptr %0, i64 40
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 40
   %6 = getelementptr [64 x ptr], ptr %5, i64 0, i64 %4
   ret ptr %6
 }

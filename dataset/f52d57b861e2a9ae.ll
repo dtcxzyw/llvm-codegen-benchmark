@@ -4,7 +4,7 @@
 ; openjdk/optimized/ByteIndexed.ll
 ; openjdk/optimized/UshortIndexed.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sext i8 %0 to i32
@@ -17,7 +17,7 @@ entry:
 ; openjdk/optimized/ByteIndexed.ll
 ; openjdk/optimized/UshortIndexed.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sext i8 %0 to i32

@@ -9,13 +9,7 @@ func0000000000000018:                   # @func0000000000000018
 	andl	$1, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	movzbl	%sil, %eax
-	cmpw	$3, %ax
-	setae	%al
-	orb	%dil, %al
-	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	testb	$2, %sil
 	sete	%al
 	orb	%dil, %al

@@ -4,7 +4,7 @@
 ; cmake/optimized/archive_write_set_format_shar.c.ll
 ; php/optimized/uuencode.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000034(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000064(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 32
   %3 = icmp ult i8 %0, 4
@@ -27,7 +27,7 @@ entry:
 ; ockam-rs/optimized/29qu7xzozkf0g7sn.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000061(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 2
   %3 = icmp eq i8 %0, 0

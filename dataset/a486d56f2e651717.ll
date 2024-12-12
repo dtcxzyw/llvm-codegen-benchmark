@@ -5,7 +5,7 @@
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002ba(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000056a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000054a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1

@@ -1,6 +1,7 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/lpkCore.c.ll
+; boost/optimized/operations.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; icu/optimized/collationfastlatin.ll
@@ -17,7 +18,7 @@ define i1 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2816
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -28,11 +29,11 @@ entry:
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ult i32 %0, %3
   ret i1 %4
 }
 
@@ -46,18 +47,18 @@ define i1 @func000000000000000a(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 15
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000015(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp ule i32 %3, %0
+  %4 = icmp samesign uge i32 %0, %3
   ret i1 %4
 }
 
@@ -68,21 +69,31 @@ define i1 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 511
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
-; 4 occurrences:
-; brotli/optimized/encode.c.ll
-; brotli/optimized/metablock.c.ll
-; freetype/optimized/truetype.c.ll
+; 1 occurrences:
 ; icu/optimized/collationdata.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; brotli/optimized/encode.c.ll
+; brotli/optimized/metablock.c.ll
+; freetype/optimized/truetype.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 1023
+  %3 = zext nneg i16 %2 to i32
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 

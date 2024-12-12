@@ -1,7 +1,7 @@
 func0000000000000005:                   # @func0000000000000005
-	shlq	$5, %rdi
+	shlq	$6, %rdi
 	negq	%rdi
-	sarq	$5, %rdi
+	sarq	$6, %rdi
 	leaq	-16(%rdi), %rax
 	retq
 func0000000000000009:                   # @func0000000000000009

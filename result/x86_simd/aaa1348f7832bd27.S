@@ -38,12 +38,3 @@ func0000000000000048:                   # @func0000000000000048
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000001dc:                   # @func00000000000001dc
-	vaddps	%zmm2, %zmm1, %zmm1
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpordps	%zmm2, %zmm1, %k0
-	vcmpordps	%zmm2, %zmm0, %k1
-	korw	%k1, %k0, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq

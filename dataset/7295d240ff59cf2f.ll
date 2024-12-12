@@ -13,19 +13,18 @@
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1, i16 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw i16, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/cipso_ipv4.ll
 ; linux/optimized/ip_options.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/tcp_input.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i8 %1, i16 %2) #0 {

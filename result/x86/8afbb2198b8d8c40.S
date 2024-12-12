@@ -38,7 +38,7 @@ func0000000000000016:                   # @func0000000000000016
 func000000000000001c:                   # @func000000000000001c
 	movzbl	%sil, %eax
 	shll	$8, %eax
-	leal	-65537(%rax,%rdi), %eax
+	leal	-65537(%rdi,%rax), %eax
 	retq
 func0000000000000015:                   # @func0000000000000015
 	shll	$24, %esi

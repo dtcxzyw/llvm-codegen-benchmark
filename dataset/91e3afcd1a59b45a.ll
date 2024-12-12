@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; darktable/optimized/introspection_filmic.c.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
@@ -15,6 +15,7 @@
 ; openusd/optimized/reformat.c.ll
 ; openusd/optimized/timeSampleArray.cpp.ll
 ; openusd/optimized/vec3h.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(float %0, float %1) #0 {
 entry:

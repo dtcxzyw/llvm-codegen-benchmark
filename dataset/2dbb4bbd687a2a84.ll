@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; llvm/optimized/BlockCoverageInference.cpp.ll
 ; llvm/optimized/BreakFalseDeps.cpp.ll
@@ -16,6 +16,7 @@
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
 ; tev/optimized/Common.cpp.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

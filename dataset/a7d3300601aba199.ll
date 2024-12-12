@@ -20,22 +20,17 @@ entry:
 define ptr @func0000000000000010(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -13
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr [820 x i16], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
-; 9 occurrences:
-; abc/optimized/sbdSat.c.ll
+; 4 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; libjpeg-turbo/optimized/jccoefct.c.ll
-; openblas/optimized/dhseqr.c.ll
-; openblas/optimized/dtgevc.c.ll
-; openblas/optimized/dtgex2.c.ll
 ; openjdk/optimized/jccoefct.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
-; openusd/optimized/warped_motion.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -43,6 +38,22 @@ entry:
   %4 = add i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw [10 x ptr], ptr %0, i64 0, i64 %5
+  ret ptr %6
+}
+
+; 5 occurrences:
+; abc/optimized/sbdSat.c.ll
+; openblas/optimized/dhseqr.c.ll
+; openblas/optimized/dtgevc.c.ll
+; openblas/optimized/dtgex2.c.ll
+; openusd/optimized/warped_motion.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, -1
+  %4 = add i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw [38 x i64], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -58,9 +69,8 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cvc5/optimized/bv_inverter_utils.cpp.ll
-; icu/optimized/ucnv_err.ll
 ; openusd/optimized/decodemv.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
@@ -128,16 +138,28 @@ entry:
   ret ptr %6
 }
 
+; 1 occurrences:
+; icu/optimized/ucnv_err.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 3
+  %4 = add nsw i32 %1, %3
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw [48 x i16], ptr %0, i64 0, i64 %5
+  ret ptr %6
+}
+
 ; 2 occurrences:
 ; openblas/optimized/dpbtrf.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -34
   %4 = add i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw [1056 x double], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [1056 x double], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

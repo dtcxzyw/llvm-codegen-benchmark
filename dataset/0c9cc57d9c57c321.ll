@@ -10,7 +10,7 @@ entry:
   %3 = lshr i32 %2, 18
   %4 = trunc i32 %3 to i8
   %5 = and i8 %4, 12
-  %6 = or i8 %5, %1
+  %6 = or i8 %1, %5
   %7 = or i8 %6, %0
   ret i8 %7
 }
@@ -28,7 +28,7 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = trunc i32 %3 to i8
   %5 = and i8 %4, 32
-  %6 = or disjoint i8 %5, %1
+  %6 = or disjoint i8 %1, %5
   %7 = or disjoint i8 %6, %0
   ret i8 %7
 }

@@ -9,7 +9,8 @@ entry:
   ret i16 %1
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; clamav/optimized/autoit.c.ll
 ; git/optimized/tree-walk.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/genmbcs.ll

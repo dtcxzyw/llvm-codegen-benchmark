@@ -1,5 +1,5 @@
 
-; 270 occurrences:
+; 273 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; entt/optimized/meta_context.cpp.ll
 ; entt/optimized/meta_data.cpp.ll
@@ -22,6 +22,8 @@
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; folly/optimized/File.cpp.ll
+; freetype/optimized/cff.c.ll
+; freetype/optimized/type1cid.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; icu/optimized/calendar.ll
@@ -104,6 +106,7 @@
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -278,13 +281,14 @@ entry:
   ret i8 %2
 }
 
-; 92 occurrences:
+; 94 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/lpkSets.c.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/light_array.cc.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/filtering.c.ll
 ; cmake/optimized/cfilters.c.ll
 ; cmake/optimized/deflate.c.ll
@@ -308,13 +312,11 @@ entry:
 ; icu/optimized/ucnvhz.ll
 ; libquic/optimized/deflate.c.ll
 ; libquic/optimized/hpack_output_stream.cc.ll
-; libquic/optimized/random.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; lief/optimized/constant_time.c.ll
 ; linux/optimized/ata_piix.ll
 ; linux/optimized/deflate.ll
 ; linux/optimized/evgpe.ll
-; linux/optimized/evxfgpe.ll
 ; linux/optimized/hid-lg4ff.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/keyboard.ll
@@ -334,6 +336,8 @@ entry:
 ; luajit/optimized/lj_parse_dyn.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -369,6 +373,7 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; zlib/optimized/deflate.c.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
@@ -379,7 +384,7 @@ entry:
   ret i8 %2
 }
 
-; 52 occurrences:
+; 51 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/compare_internal.cc.ll
@@ -408,9 +413,8 @@ entry:
 ; llvm/optimized/DeclObjC.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
@@ -440,8 +444,9 @@ entry:
   ret i8 %2
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; arrow/optimized/light_array.cc.ll
+; boost/optimized/utf8_codecvt_facet.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libquic/optimized/tls_cbc.c.ll

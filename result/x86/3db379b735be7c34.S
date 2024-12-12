@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$3, %rdi
 	sete	%al
 	retq
-func0000000000000304:                   # @func0000000000000304
+func0000000000000604:                   # @func0000000000000604
 	addq	%rdx, %rsi
 	subq	%rsi, %rdi
 	addq	$-27, %rdi

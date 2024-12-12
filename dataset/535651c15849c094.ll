@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; openjdk/optimized/subnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp sgt i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -17,22 +17,22 @@ entry:
 ; openjdk/optimized/hb-ot-tag.ll
 ; slurm/optimized/info_job.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp ult i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; velox/optimized/ComplexVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp eq i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -61,33 +61,33 @@ entry:
 ; velox/optimized/FindFirst.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp eq i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp ult i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/RafDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp ult i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -103,8 +103,8 @@ entry:
 define i1 @func0000000000000006(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp sgt i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -116,8 +116,8 @@ entry:
 define i1 @func000000000000000a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp slt i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
@@ -127,19 +127,19 @@ entry:
 define i1 @func0000000000000001(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp eq i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000055(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000b5(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp uge i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp samesign ule i32 %0, %4
   ret i1 %5
 }
 
@@ -147,11 +147,11 @@ entry:
 ; openblas/optimized/dlaswlq.c.ll
 ; openblas/optimized/dlatsqr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000047(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000087(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp sge i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp sle i32 %0, %4
   ret i1 %5
 }
 
@@ -159,22 +159,22 @@ entry:
 ; openblas/optimized/dlaswlq.c.ll
 ; openblas/optimized/dlatsqr.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004b(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008b(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp sle i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp sge i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; graphviz/optimized/mq.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = icmp eq i32 %4, %0
+  %4 = add i32 %2, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 

@@ -1,11 +1,11 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sext.w	a2, a2
 	beqz	a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:                                # %entry
 	srli	a0, a0, 63
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a2, a2
 	beqz	a2, .LBB1_2
 	mv	a0, a1

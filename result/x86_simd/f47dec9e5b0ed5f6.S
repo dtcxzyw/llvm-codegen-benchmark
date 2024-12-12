@@ -106,13 +106,12 @@ func0000000000000cd4:                   # @func0000000000000cd4
 	retq
 .LCPI9_0:
 	.long	0x7f800000                      # float +Inf
-func0000000000000660:                   # @func0000000000000660
-	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpunordps	%zmm3, %zmm2, %k0
-	vbroadcastss	.LCPI9_0(%rip), %zmm2   # zmm2 = [+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf]
-	vcmpeq_uqps	%zmm2, %zmm1, %k1
+func0000000000002664:                   # @func0000000000002664
+	vbroadcastss	.LCPI9_0(%rip), %zmm3   # zmm3 = [+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf]
+	vcmpeq_uqps	%zmm3, %zmm2, %k0
+	vcmpeq_uqps	%zmm3, %zmm1, %k1
 	korw	%k0, %k1, %k0
-	vcmpeqps	%zmm2, %zmm0, %k1
+	vcmpeq_uqps	%zmm3, %zmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -135,16 +134,6 @@ func0000000000001e10:                   # @func0000000000001e10
 	vcmpeqps	%zmm3, %zmm1, %k1
 	vcmpeqps	%zmm3, %zmm0, %k2
 	korw	%k2, %k1, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-func0000000000003b9c:                   # @func0000000000003b9c
-	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpordps	%zmm3, %zmm2, %k0
-	vcmpordps	%zmm3, %zmm1, %k1
-	korw	%k0, %k1, %k0
-	vcmpordps	%zmm3, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

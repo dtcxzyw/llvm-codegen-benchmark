@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/crc.cc.ll
 ; abseil-cpp/optimized/randen_slow.cc.ll
 ; clamav/optimized/rijndael.c.ll
@@ -18,16 +18,13 @@
 ; memcached/optimized/memcached_debug-crc32c.ll
 ; openssl/optimized/libcrypto-lib-aria.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-seed.ll
 ; openssl/optimized/libcrypto-lib-sm4.ll
 ; openssl/optimized/libcrypto-shlib-aria.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-seed.ll
 ; openssl/optimized/libcrypto-shlib-sm4.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; php/optimized/crypt_blowfish.ll
 ; qemu/optimized/crypto_aes.c.ll

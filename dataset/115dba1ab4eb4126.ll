@@ -1,5 +1,5 @@
 
-; 513 occurrences:
+; 515 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -54,6 +54,8 @@
 ; llvm/optimized/LoopPredication.cpp.ll
 ; llvm/optimized/MLRegAllocPriorityAdvisor.cpp.ll
 ; llvm/optimized/PseudoProbe.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll

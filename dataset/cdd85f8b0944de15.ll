@@ -39,36 +39,42 @@ define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1073741823
   %4 = icmp eq i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 5 occurrences:
-; linux/optimized/hugetlb.ll
+; 2 occurrences:
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
 ; rocksdb/optimized/block.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ult i64 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 6 occurrences:
-; bdwgc/optimized/gc.c.ll
+; 3 occurrences:
 ; folly/optimized/DistributedMutex.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
-; linux/optimized/cap_audit.ll
-; linux/optimized/hugetlb.ll
 ; openmpi/optimized/btl_sm_sendi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 72057594037927935
+  %4 = icmp samesign ugt i64 %3, %1
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; bdwgc/optimized/gc.c.ll
+; linux/optimized/hugetlb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 72057594037927935
+  %3 = and i64 %2, -4096
   %4 = icmp ugt i64 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
@@ -82,7 +88,7 @@ define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4096
   %4 = icmp ule i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -98,6 +104,19 @@ define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp ne i64 %3, %1
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; linux/optimized/hugetlb.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = icmp ult i64 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -112,14 +131,12 @@ define i1 @func000000000000000b(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4
   %4 = icmp sge i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; linux/optimized/drm_buddy.ll
-; linux/optimized/mmconf-fam10h_64.ll
-; ockam-rs/optimized/2c367xut2lvnpep0.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:

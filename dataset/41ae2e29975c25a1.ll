@@ -1,11 +1,10 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; assimp/optimized/3DSExporter.cpp.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; cpython/optimized/longobject.ll
 ; libevent/optimized/evmap.c.ll
 ; lief/optimized/psa_crypto.c.ll
-; linux/optimized/mii.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/vht.ll
 ; luajit/optimized/lj_bcread.ll
@@ -30,17 +29,27 @@ entry:
   ret i16 %4
 }
 
-; 4 occurrences:
-; llvm/optimized/DwarfUnit.cpp.ll
+; 3 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsa_lib.ll
 ; openssl/optimized/libcrypto-shlib-rsa_lib.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i16 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 15361
+  %2 = icmp samesign ult i32 %1, 15361
   %3 = select i1 %2, i16 256, i16 1200
   %4 = select i1 %0, i16 192, i16 %3
+  ret i16 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/DwarfUnit.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 65536
+  %3 = select i1 %2, i16 3, i16 4
+  %4 = select i1 %0, i16 10, i16 %3
   ret i16 %4
 }
 

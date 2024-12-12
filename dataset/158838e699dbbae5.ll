@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; icu/optimized/calendar.ll
-; linux/optimized/intel_dkl_phy.ll
 ; php/optimized/php_date.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-cmpp.c.ll

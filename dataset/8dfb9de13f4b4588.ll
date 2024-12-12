@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; darktable/optimized/colorpicker.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_colorcorrection.c.ll
@@ -12,7 +12,6 @@
 ; gromacs/optimized/slasq3.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll

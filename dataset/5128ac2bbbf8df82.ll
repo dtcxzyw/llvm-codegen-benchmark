@@ -32,10 +32,9 @@ entry:
   ret i16 %2
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0) #0 {
 entry:

@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/rational.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; raylib/optimized/raudio.c.ll

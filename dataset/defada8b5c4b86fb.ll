@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/jquant2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000047(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000087(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = shl i32 %3, 4
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jquant2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = shl i32 %3, 3
@@ -160,7 +160,7 @@ entry:
 ; icu/optimized/uset.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = shl nsw i32 %3, 1
@@ -171,7 +171,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ab(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = shl nsw i32 %3, 1
@@ -184,7 +184,7 @@ entry:
 ; linux/optimized/intel_bios.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = shl nsw i32 %3, 5
@@ -193,20 +193,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/bitmap-str.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 %1, %2
-  %4 = shl i32 %3, 5
-  %5 = icmp slt i32 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = shl nsw i32 %3, 3
@@ -217,7 +206,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dlasq2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = shl i32 %3, 1

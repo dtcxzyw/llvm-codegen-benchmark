@@ -26,7 +26,7 @@
 	.byte	16                              # 0x10
 func0000000000000003:                   # @func0000000000000003
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
+	vpaddb	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI1_0:
 	.byte	0                               # 0x0

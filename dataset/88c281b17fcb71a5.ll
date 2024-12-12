@@ -50,15 +50,13 @@ entry:
   ret i8 %2
 }
 
-; 67 occurrences:
+; 70 occurrences:
 ; actix-rs/optimized/2d9c72efneckaqzp.ll
 ; coreutils-rs/optimized/26a2uyrtdxle93un.ll
 ; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
 ; cvc5/optimized/sat_proof_manager.cpp.ll
-; freetype/optimized/cff.c.ll
-; freetype/optimized/type1.c.ll
-; freetype/optimized/type1cid.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
+; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; influxdb-rs/optimized/380gcqze52ow6205.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
@@ -84,7 +82,6 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MCELFStreamer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -115,9 +112,15 @@ entry:
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/70ymcp0y6yqkpw3c0y4yzyh2l.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i64 %0) #0 {
 entry:
@@ -126,16 +129,27 @@ entry:
   ret i8 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; duckdb/optimized/ub_duckdb_common_arrow.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
+; image-rs/optimized/30755d6iao7ojcvl.ll
 ; openssl/optimized/libcrypto-lib-mem_sec.ll
 ; openssl/optimized/libcrypto-shlib-mem_sec.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i8
+  %2 = xor i8 %1, -1
+  ret i8 %2
+}
+
+; 1 occurrences:
+; spike/optimized/vsadd_vi.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000001(i64 %0) #0 {
+entry:
+  %1 = trunc nsw i64 %0 to i8
   %2 = xor i8 %1, -1
   ret i8 %2
 }

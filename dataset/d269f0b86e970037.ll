@@ -1,5 +1,41 @@
 
-; 217 occurrences:
+; 12 occurrences:
+; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/changeManager.cpp.ll
+; openusd/optimized/changes.cpp.ll
+; openusd/optimized/dynamicFileFormatContext.cpp.ll
+; openusd/optimized/dynamicFileFormatDependencyData.cpp.ll
+; openusd/optimized/listOp.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/subset.cpp.ll
+; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
+; rocksdb/optimized/compaction.cc.ll
+; rocksdb/optimized/table_cache.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4611686018427387903
+  %4 = icmp ult i64 %3, %1
+  %5 = select i1 %4, i64 16, i64 24
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; llvm/optimized/GlobalModuleIndex.cpp.ll
+; llvm/optimized/LowerTypeTests.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = icmp ult i64 %3, %1
+  %5 = select i1 %4, i64 16, i64 24
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 215 occurrences:
 ; cvc5/optimized/abduction_solver.cpp.ll
 ; cvc5/optimized/alf_node_converter.cpp.ll
 ; cvc5/optimized/alf_post_processor.cpp.ll
@@ -215,48 +251,12 @@
 ; cvc5/optimized/unsat_core_manager.cpp.ll
 ; cvc5/optimized/variadic_trie.cpp.ll
 ; cvc5/optimized/vts_term_cache.cpp.ll
-; rocksdb/optimized/compaction.cc.ll
-; rocksdb/optimized/table_cache.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000053(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 4611686018427387903
-  %4 = icmp ult i64 %3, %1
-  %5 = select i1 %4, i64 16, i64 24
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 2 occurrences:
-; llvm/optimized/GlobalModuleIndex.cpp.ll
-; llvm/optimized/LowerTypeTests.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, -8
-  %4 = icmp ult i64 %3, %1
-  %5 = select i1 %4, i64 16, i64 24
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 10 occurrences:
-; llvm/optimized/RegisterInfoEmitter.cpp.ll
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/changeManager.cpp.ll
-; openusd/optimized/changes.cpp.ll
-; openusd/optimized/dynamicFileFormatContext.cpp.ll
-; openusd/optimized/dynamicFileFormatDependencyData.cpp.ll
-; openusd/optimized/listOp.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/subset.cpp.ll
-; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 2147483647
-  %4 = icmp ult i64 %3, %1
-  %5 = select i1 %4, i64 16, i64 24
+  %3 = and i64 %2, 1099511627775
+  %4 = icmp samesign ult i64 %3, %1
+  %5 = select i1 %4, i64 24, i64 16
   %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }

@@ -16,6 +16,12 @@ func0000000000000004:                   # @func0000000000000004
 	orq	%rdi, %rax
 	orq	$1711276032, %rax               # imm = 0x66000000
 	retq
+func0000000000000003:                   # @func0000000000000003
+	movabsq	$-4503599627370496, %rax        # imm = 0xFFF0000000000000
+	andq	%rdx, %rax
+	orq	%rsi, %rax
+	leaq	1048576(%rax,%rdi), %rax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	movq	%rdi, %rax
 	andq	$-4, %rdx
@@ -36,12 +42,4 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rsi, %rax
 	orq	%rdx, %rax
 	orq	$31744, %rax                    # imm = 0x7C00
-	retq
-func0000000000000003:                   # @func0000000000000003
-	movabsq	$1099494850560, %rcx            # imm = 0xFFFF000000
-	andq	%rdx, %rcx
-	orq	%rsi, %rdi
-	movabsq	$4611686018427387904, %rax      # imm = 0x4000000000000000
-	orq	%rdi, %rax
-	orq	%rcx, %rax
 	retq

@@ -31,13 +31,6 @@ func000000000000002f:                   # @func000000000000002f
 	add	a0, a0, a1
 	addiw	a0, a0, 4
 	ret
-func000000000000003c:                   # @func000000000000003c
-	add	a1, a1, a2
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	add	a0, a0, a1
-	addiw	a0, a0, 3
-	ret
 func000000000000003f:                   # @func000000000000003f
 	add	a1, a1, a2
 	lui	a2, 32
@@ -53,6 +46,14 @@ func000000000000003d:                   # @func000000000000003d
 	and	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 24
+	ret
+func000000000000003c:                   # @func000000000000003c
+	add	a1, a1, a2
+	lui	a2, 32
+	addi	a2, a2, -16
+	and	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 16
 	ret
 func000000000000003e:                   # @func000000000000003e
 	add	a1, a1, a2

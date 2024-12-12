@@ -1,24 +1,18 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andl	$1, %edx
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1, %edx
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000026:                   # @func0000000000000026
 	movzbl	%dl, %eax
-	cmpl	%esi, %eax
-	seta	%al
-	orb	%dil, %al
-	retq
-func0000000000000016:                   # @func0000000000000016
-	movzbl	%dl, %eax
-	cmpl	%esi, %eax
-	setg	%al
+	cmpl	%eax, %esi
+	setl	%al
 	orb	%dil, %al
 	retq

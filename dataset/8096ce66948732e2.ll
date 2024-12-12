@@ -38,10 +38,21 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 2 occurrences:
 ; cmake/optimized/ftp.c.ll
-; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = add i64 %3, -1
+  %5 = icmp eq i64 %0, %4
+  ret i1 %5
+}
+
+; 8 occurrences:
+; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
@@ -50,13 +61,13 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, -1
-  %5 = icmp eq i64 %4, %0
-  ret i1 %5
+  %.neg = add i64 %0, 1
+  %4 = icmp eq i64 %.neg, %3
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

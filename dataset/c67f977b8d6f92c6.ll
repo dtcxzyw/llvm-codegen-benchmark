@@ -78,22 +78,54 @@ entry:
 }
 
 ; 1 occurrences:
-; pbrt-v4/optimized/shapes.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000c(float %0, i1 %1, float %2) #0 {
+define i1 @func0000000000000007(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float %2, float 0.000000e+00
-  %4 = fcmp oge float %3, %0
+  %4 = fcmp une float %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; postgres/optimized/gistproc.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(float %0, i1 %1, float %2) #0 {
+entry:
+  %3 = select i1 %1, float %2, float 0.000000e+00
+  %4 = fcmp ugt float %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000003(float %0, i1 %1, float %2) #0 {
+entry:
+  %3 = select i1 %1, float %2, float 0.000000e+00
+  %4 = fcmp ult float %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; pbrt-v4/optimized/shapes.cpp.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(float %0, i1 %1, float %2) #0 {
+entry:
+  %3 = select i1 %1, float %2, float 0.000000e+00
+  %4 = fcmp ole float %3, %0
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000a(float %0, i1 %1, float %2) #0 {
+define i1 @func000000000000000c(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float %2, float 0.000000e+00
-  %4 = fcmp ole float %3, %0
+  %4 = fcmp oge float %3, %0
   ret i1 %4
 }
 

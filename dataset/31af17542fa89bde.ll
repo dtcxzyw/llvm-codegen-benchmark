@@ -5,19 +5,19 @@
 ; verilator/optimized/V3LinkCells.cpp.ll
 ; z3/optimized/euf_ac_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000318(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne ptr %1, null
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; icu/optimized/ucnv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000118(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ne ptr %1, null

@@ -17,15 +17,21 @@ func0000000000000005:                   # @func0000000000000005
 	subl	%ecx, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leal	4095(%rdx), %ecx
+	leal	255(%rdx), %eax
 	testl	%edx, %edx
-	cmovnsl	%edx, %ecx
-	sarl	$12, %ecx
+	cmovnsl	%edx, %eax
+	sarl	$8, %eax
 	addl	%esi, %edi
-	leal	4095(%rcx,%rdi), %edx
-	movl	%edi, %eax
+	addl	%eax, %edi
+	movslq	%edi, %rcx
+	imulq	$-1840700269, %rcx, %rax        # imm = 0x92492493
+	shrq	$32, %rax
 	addl	%ecx, %eax
-	cmovnsl	%eax, %edx
-	andl	$-4096, %edx                    # imm = 0xF000
+	movl	%eax, %edx
+	shrl	$31, %edx
+	sarl	$2, %eax
+	addl	%edx, %eax
+	leal	(,%rax,8), %edx
 	subl	%edx, %eax
+	addl	%ecx, %eax
 	retq

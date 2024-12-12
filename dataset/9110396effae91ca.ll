@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 19 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -7,7 +7,6 @@
 ; cmake/optimized/zstd_compress.c.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; gromacs/optimized/xvgr.cpp.ll
-; icu/optimized/ubidiwrt.ll
 ; linux/optimized/intel_vdsc.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; openjdk/optimized/filemap.ll
@@ -16,13 +15,16 @@
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; velox/optimized/MemoryAllocator.cpp.ll
 ; verilator/optimized/V3ExecGraph.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -51,11 +53,11 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/wlnRead.c.ll
@@ -67,6 +69,7 @@ entry:
 ; jq/optimized/jv_aux.ll
 ; luajit/optimized/buildvm.ll
 ; luajit/optimized/buildvm_lib.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll
@@ -85,7 +88,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -96,7 +99,7 @@ define i32 @func0000000000000002(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = zext i1 %3 to i32
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 

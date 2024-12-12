@@ -3,7 +3,7 @@
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/nlattr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000010c(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, %0
   %3 = icmp ne i16 %0, 0

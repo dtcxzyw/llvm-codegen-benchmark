@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/giaResub6.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000005e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 200
@@ -17,7 +17,7 @@ entry:
 ; opencv/optimized/stereosgbm.cpp.ll
 ; proj/optimized/4D_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007f1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000fe1(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = add i32 %2, 4

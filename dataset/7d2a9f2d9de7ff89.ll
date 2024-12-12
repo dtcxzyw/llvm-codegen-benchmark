@@ -15,15 +15,4 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
-; linux/optimized/intel_dsi.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i16 %0, i64 %1) #0 {
-entry:
-  %.neg = sdiv i64 %1, -1000000
-  %2 = zext i16 %0 to i64
-  %3 = add nsw i64 %.neg, %2
-  ret i64 %3
-}
-
 attributes #0 = { nounwind }

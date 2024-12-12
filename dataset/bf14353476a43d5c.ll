@@ -1,10 +1,11 @@
 
-; 219 occurrences:
+; 216 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -99,13 +100,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -180,7 +178,6 @@
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -236,7 +233,7 @@ define i64 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl nsw i64 %3, 2
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = add i64 %5, 2147483664
   ret i64 %6
 }
@@ -262,12 +259,12 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = add i64 %5, 63
   ret i64 %6
 }
 
-; 19 occurrences:
+; 17 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; linux/optimized/bio.ll
@@ -279,11 +276,9 @@ entry:
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/kexec_core.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pt.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/snapshot.ll
 ; linux/optimized/virtio_net.ll
@@ -293,7 +288,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 6
   %5 = add i64 %4, %0
-  %6 = add i64 %5, 4096
+  %6 = add i64 %5, 2147483648
   ret i64 %6
 }
 
@@ -316,7 +311,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = add nsw i64 %5, -2
   ret i64 %6
 }

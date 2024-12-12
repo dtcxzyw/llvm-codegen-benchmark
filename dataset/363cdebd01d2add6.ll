@@ -1,11 +1,9 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; freetype/optimized/raster.c.ll
 ; git/optimized/files-backend.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/boot.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/policydb.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
@@ -24,6 +22,7 @@
 ; wireshark/optimized/packet-ppi.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; z3/optimized/bound_simplifier.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:

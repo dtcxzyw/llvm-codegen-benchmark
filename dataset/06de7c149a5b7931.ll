@@ -17,7 +17,7 @@ define i32 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 72
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -50,21 +50,18 @@ define i32 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; clamav/optimized/mew.c.ll
-; slurm/optimized/run_command.ll
-; slurm/optimized/slurm_persist_conn.ll
-; slurm/optimized/slurm_protocol_socket.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv i64 %3, 1000
+  %4 = sdiv i64 %3, 4096
   %5 = add nsw i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6

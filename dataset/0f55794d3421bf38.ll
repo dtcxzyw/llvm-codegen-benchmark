@@ -7,7 +7,7 @@
 ; luajit/optimized/lj_dispatch_dyn.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %0
   %4 = and i32 %3, -2147450770
@@ -34,22 +34,11 @@ entry:
 ; linux/optimized/sd.ll
 ; linux/optimized/tg3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %0
   %4 = and i32 %3, 48
   %5 = icmp eq i32 %4, 48
-  ret i1 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/ValueTracking.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or i32 %1, %0
-  %4 = and i32 %3, 832
-  %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 

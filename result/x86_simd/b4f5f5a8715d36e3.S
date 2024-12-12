@@ -8,28 +8,28 @@ func000000000000003f:                   # @func000000000000003f
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	3600                            # 0xe10
+	.long	3432918353                      # 0xcc9e2d51
 .LCPI1_1:
-	.long	60                              # 0x3c
-func0000000000000014:                   # @func0000000000000014
+	.long	461845907                       # 0x1b873593
+func0000000000000000:                   # @func0000000000000000
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.long	3432918353                      # 0xcc9e2d51
+	.long	1013                            # 0x3f5
 .LCPI2_1:
-	.long	461845907                       # 0x1b873593
-func0000000000000000:                   # @func0000000000000000
+	.long	31337                           # 0x7a69
+func0000000000000004:                   # @func0000000000000004
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
-	.long	1013                            # 0x3f5
+	.long	38134234                        # 0x245e1da
 .LCPI3_1:
-	.long	31337                           # 0x7a69
-func0000000000000004:                   # @func0000000000000004
+	.long	42123                           # 0xa48b
+func0000000000000014:                   # @func0000000000000014
 	vpmulld	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0

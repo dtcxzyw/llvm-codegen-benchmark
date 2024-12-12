@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/chi_square_test.cc.ll
 ; cmake/optimized/fs.c.ll
 ; darktable/optimized/darkroom.c.ll
@@ -9,7 +9,6 @@
 ; libuv/optimized/fs.c.ll
 ; node/optimized/fs.ll
 ; osqp/optimized/amd_2.c.ll
-; osqp/optimized/timing_linux.c.ll
 ; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
 ; stat-rs/optimized/u5boppws0o3vklz.ll
 ; xgboost/optimized/adaptive.cc.ll

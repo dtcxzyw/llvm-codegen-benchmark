@@ -19,11 +19,11 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 48
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -61,7 +61,7 @@ entry:
 ; entt/optimized/storage_no_instance.cpp.ll
 ; entt/optimized/view.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000063(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c3(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4094
   %4 = select i1 %3, i32 0, i32 %1

@@ -9,6 +9,11 @@ func0000000000000005:                   # @func0000000000000005
 	imulq	$86400, %rax, %rax              # imm = 0x15180
 	addq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	movslq	%esi, %rax
+	imulq	$3600, %rax, %rax               # imm = 0xE10
+	addq	%rdi, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movslq	%esi, %rcx
 	movabsq	$86400000000, %rax              # imm = 0x141DD76000

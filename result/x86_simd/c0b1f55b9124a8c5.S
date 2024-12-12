@@ -65,3 +65,24 @@ func000000000000000d:                   # @func000000000000000d
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0
 	retq
+.LCPI7_0:
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+func0000000000000007:                   # @func0000000000000007
+	vpaddw	%ymm0, %ymm1, %ymm0
+	vpaddw	.LCPI7_0(%rip), %ymm0, %ymm0
+	retq

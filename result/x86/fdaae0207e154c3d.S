@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testw	%dx, %dx
 	setns	%al
 	andb	%dil, %al

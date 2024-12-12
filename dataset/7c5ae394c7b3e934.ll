@@ -10,7 +10,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; cpython/optimized/frameobject.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; nuklear/optimized/unity.c.ll

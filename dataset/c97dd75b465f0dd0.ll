@@ -6,10 +6,10 @@
 ; yosys/optimized/blif.ll
 ; yosys/optimized/satgen.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -18,10 +18,10 @@ entry:
 ; jq/optimized/regcomp.ll
 ; oniguruma/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -43,7 +43,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -58,7 +58,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = mul nuw nsw i32 %3, %1
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = mul i32 %3, %1
@@ -83,10 +83,10 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -97,10 +97,10 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f9(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = icmp uge i32 %4, %0
   ret i1 %5
 }
@@ -178,10 +178,10 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
@@ -189,22 +189,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = mul i32 %3, %1
   %5 = icmp ugt i32 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; gromacs/optimized/atomdata.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 4
-  %4 = mul nsw i32 %3, %1
-  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -225,7 +214,7 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 3
   %4 = mul i32 %3, %1
@@ -236,10 +225,10 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = icmp sle i32 %4, %0
   ret i1 %5
 }
@@ -247,7 +236,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = mul nsw i32 %3, %1

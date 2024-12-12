@@ -27,7 +27,11 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 6 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; Function Attrs: nounwind

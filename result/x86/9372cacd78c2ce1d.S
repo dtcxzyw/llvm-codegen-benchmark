@@ -3,7 +3,7 @@ func0000000000000030:                   # @func0000000000000030
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000020:                   # @func0000000000000020
+func0000000000000060:                   # @func0000000000000060
 	cmpq	$2, %rsi
 	setae	%al
 	andb	%dil, %al
@@ -11,6 +11,11 @@ func0000000000000020:                   # @func0000000000000020
 func0000000000000004:                   # @func0000000000000004
 	testq	%rsi, %rsi
 	sete	%al
+	andb	%dil, %al
+	retq
+func0000000000000020:                   # @func0000000000000020
+	cmpq	$2, %rsi
+	setae	%al
 	andb	%dil, %al
 	retq
 func0000000000000010:                   # @func0000000000000010
@@ -49,8 +54,18 @@ func0000000000000018:                   # @func0000000000000018
 	sets	%al
 	andb	%dil, %al
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	cmpq	$9, %rsi
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000012:                   # @func0000000000000012
+	cmpq	$2, %rsi
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000050:                   # @func0000000000000050
+	cmpq	$10, %rsi
 	setb	%al
 	andb	%dil, %al
 	retq

@@ -4,9 +4,9 @@ func0000000000000002:                   # @func0000000000000002
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	55232                           # 0xd7c0
+	.long	16                              # 0x10
 func0000000000000003:                   # @func0000000000000003
-	vpsrld	$10, %ymm0, %ymm0
+	vpsrld	$1, %ymm0, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 func0000000000000001:                   # @func0000000000000001

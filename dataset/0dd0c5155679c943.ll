@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 32 occurrences:
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; bullet3/optimized/poly34.ll
 ; darktable/optimized/introspection_atrous.c.ll
@@ -29,6 +29,9 @@
 ; stb/optimized/stb_truetype.c.ll
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

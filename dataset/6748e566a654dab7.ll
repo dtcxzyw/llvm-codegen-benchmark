@@ -17,11 +17,11 @@
 ; luau/optimized/ConstraintGenerator.cpp.ll
 ; openjdk/optimized/memnode.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func000000000000000b(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -35,11 +35,11 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000063(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

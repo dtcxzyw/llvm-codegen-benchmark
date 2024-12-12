@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
@@ -7,5 +7,5 @@ func0000000000000028:                   # @func0000000000000028
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
 	vmsleu.vi	v10, v8, 1
-	vmor.mm	v0, v10, v0
+	vmor.mm	v0, v0, v10
 	ret

@@ -57,15 +57,16 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/scatterlist.ll
 ; postgres/optimized/hashutil.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, %2
   %4 = select i1 %3, i32 %0, i32 %1
-  %5 = add i32 %4, -1
+  %5 = add i32 %4, 1
   ret i32 %5
 }
 

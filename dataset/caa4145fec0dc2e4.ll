@@ -6,7 +6,7 @@
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; php/optimized/zend_API.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, %1
   %3 = icmp eq i32 %2, 0

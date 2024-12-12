@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
-; opencv/optimized/filter.dispatch.cpp.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; z3/optimized/smt_clause.cpp.ll

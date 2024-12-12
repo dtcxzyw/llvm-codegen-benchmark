@@ -61,17 +61,16 @@
 ; wireshark/optimized/packet-telnet.c.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000042(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 47
-  %3 = and i1 %2, %1
+  %3 = and i1 %1, %2
   %4 = icmp eq i8 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5
 }
 
-; 128 occurrences:
-; actix-rs/optimized/10n8xwgzwz186p0h.ll
+; 127 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/3a93ytv6s0x7lrtz.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
@@ -200,7 +199,7 @@ entry:
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000302(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i8 %0, 34
   %3 = and i1 %2, %1
@@ -209,7 +208,7 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/tcp_fastopen.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; qemu/optimized/chardev_char-hmp-cmds.c.ll
@@ -217,9 +216,8 @@ entry:
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
-; yosys/optimized/firrtl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000102(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp ult i8 %0, 32
   %3 = and i1 %2, %1
@@ -229,16 +227,16 @@ entry:
 }
 
 ; 3 occurrences:
-; hyperscan/optimized/rose_build_program.cpp.ll
-; image-rs/optimized/5ez7udly19o3uj1p.ll
-; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; openjdk/optimized/verifier.ll
+; proxygen/optimized/HTTP1xCodec.cpp.ll
+; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000110(i1 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %0, 1
-  %3 = and i1 %2, %1
-  %4 = icmp ugt i8 %0, 3
-  %5 = or i1 %4, %3
+  %2 = icmp ult i8 %1, -5
+  %3 = and i1 %2, %0
+  %4 = icmp ugt i8 %1, -5
+  %5 = or i1 %3, %4
   ret i1 %5
 }
 
@@ -248,7 +246,7 @@ entry:
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000114(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp ult i8 %0, 64
   %3 = and i1 %2, %1
@@ -262,7 +260,7 @@ entry:
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000310(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i8 %0, 95
   %3 = and i1 %2, %1
@@ -271,21 +269,7 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; proxygen/optimized/HTTP1xCodec.cpp.ll
-; proxygen/optimized/HeaderDecodeInfo.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000090(i8 %0, i1 %1) #0 {
-entry:
-  %2 = icmp ult i8 %0, 32
-  %3 = and i1 %2, %1
-  %4 = icmp ugt i8 %0, 126
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 10 occurrences:
-; actix-rs/optimized/10n8xwgzwz186p0h.ll
+; 9 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/3a93ytv6s0x7lrtz.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
@@ -296,7 +280,7 @@ entry:
 ; ockam-rs/optimized/37q648fnmlksdgjw.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000202(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp ugt i8 %0, 31
   %3 = and i1 %2, %1
@@ -308,11 +292,23 @@ entry:
 ; 1 occurrences:
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000182(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp slt i8 %0, 0
-  %3 = and i1 %2, %1
+  %3 = and i1 %1, %2
   %4 = icmp eq i8 %0, 10
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; hyperscan/optimized/rose_build_program.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000210(i8 %0, i1 %1) #0 {
+entry:
+  %2 = icmp ugt i8 %0, 7
+  %3 = and i1 %1, %2
+  %4 = icmp ugt i8 %0, 15
   %5 = or i1 %4, %3
   ret i1 %5
 }

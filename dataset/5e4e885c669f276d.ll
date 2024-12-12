@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -14,7 +14,6 @@
 ; ipopt/optimized/IpTNLPAdapter.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
 ; nix/optimized/lock.ll
@@ -45,7 +44,7 @@ entry:
   ret i64 %5
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -63,7 +62,6 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
 ; nix/optimized/lock.ll
@@ -132,6 +130,18 @@ entry:
   %3 = sext i32 %0 to i64
   %4 = sub nuw nsw i64 %3, %2
   %5 = shl nsw i64 %4, 2
+  ret i64 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/nldiffusion_functions.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 2
+  %3 = sext i32 %0 to i64
+  %4 = sub nsw i64 %3, %2
+  %5 = shl i64 %4, 2
   ret i64 %5
 }
 

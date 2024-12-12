@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -103,7 +104,7 @@ define i32 @func0000000000000048(i32 %0, i128 %1) #0 {
 entry:
   %sum.shift = lshr i128 %1, 96
   %2 = trunc nuw i128 %sum.shift to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 

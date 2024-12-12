@@ -10,13 +10,14 @@ entry:
   ret i64 %4
 }
 
-; 114 occurrences:
+; 115 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll

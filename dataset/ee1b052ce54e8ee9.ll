@@ -15,7 +15,7 @@
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, -7286425919675154353
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -56,7 +56,7 @@ entry:
 define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
@@ -123,6 +123,19 @@ entry:
   ret i64 %5
 }
 
+; 3 occurrences:
+; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 1
+  %4 = mul i64 %1, %3
+  %5 = sub nuw i64 %4, %0
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; linux/optimized/relay.ll
 ; Function Attrs: nounwind
@@ -141,19 +154,7 @@ entry:
 define i64 @func0000000000000032(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = mul i64 %3, %1
-  %5 = sub nuw i64 %4, %0
-  ret i64 %5
-}
-
-; 2 occurrences:
-; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
-; hyperscan/optimized/teddy_compile.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, 1
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }

@@ -161,10 +161,10 @@
 ; velox/optimized/VectorEncoding.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = call range(i32 0, 33) i32 @llvm.ctpop.i32(i32 %0)
-  %2 = icmp ult i32 %1, 2
+  %2 = icmp samesign ult i32 %1, 2
   ret i1 %2
 }
 
@@ -212,7 +212,7 @@ entry:
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = call range(i32 0, 33) i32 @llvm.ctpop.i32(i32 %0)
-  %2 = icmp ult i32 %1, 2
+  %2 = icmp samesign ult i32 %1, 2
   ret i1 %2
 }
 
@@ -223,7 +223,7 @@ entry:
 ; qemu/optimized/virtio-pci.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = and i32 %1, %0
@@ -244,7 +244,7 @@ entry:
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
 ; php/optimized/random.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = add nuw i32 %0, 1
   %2 = and i32 %1, %0
@@ -256,7 +256,7 @@ entry:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
   %2 = and i32 %1, %0
@@ -267,7 +267,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0) #0 {
+define i1 @func000000000000006c(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 16777215
   %2 = and i32 %1, %0

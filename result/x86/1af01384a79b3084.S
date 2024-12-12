@@ -1,12 +1,12 @@
 func0000000000000004:                   # @func0000000000000004
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	movl	$64, %eax
-	cmovaq	%rdi, %rax
+	cmovbq	%rdi, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	cmovgq	%rdi, %rax
+	cmpq	%rcx, %rdi
+	cmovlq	%rdi, %rax
 	retq

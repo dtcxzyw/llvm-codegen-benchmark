@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000181:                   # @func0000000000000181
 	shrl	$3, %edx
 	andl	$24, %edx
 	addq	%rdi, %rdx
@@ -6,7 +6,7 @@ func0000000000000081:                   # @func0000000000000081
 	cmpq	%rsi, %rdx
 	sete	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001e1:                   # @func00000000000001e1
 	movabsq	$8589934590, %rax               # imm = 0x1FFFFFFFE
 	andq	%rdx, %rax
 	leaq	(%rdi,%rax,8), %rax

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 18 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -9,15 +9,20 @@
 ; git/optimized/date.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; php/optimized/encode.ll
 ; qemu/optimized/block_vvfat.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = urem i32 %1, 26
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -44,20 +49,10 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; clamav/optimized/filefn.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
-entry:
-  %2 = urem i32 %1, 50000
-  %3 = add nuw i32 %2, %0
-  ret i32 %3
-}
-
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/read_graphviz_new.ll
 ; icu/optimized/number_scientific.ll
 ; msgpack/optimized/asio_send_recv.cpp.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
@@ -66,8 +61,19 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = urem i32 %1, 6
-  %3 = add nsw i32 %2, %0
+  %2 = urem i32 %1, 10
+  %3 = add nsw i32 %0, %2
+  ret i32 %3
+}
+
+; 2 occurrences:
+; clamav/optimized/filefn.cpp.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = urem i32 %1, 50000
+  %3 = add nuw i32 %0, %2
   ret i32 %3
 }
 

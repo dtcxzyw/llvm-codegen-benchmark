@@ -1,11 +1,11 @@
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	zext.w	a1, a1
 	zext.w	a0, a0
 	minu	a2, a0, a1
 	maxu	a0, a0, a1
 	sub	a0, a0, a2
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	zext.w	a1, a1
 	zext.w	a0, a0
 	minu	a2, a0, a1
@@ -29,14 +29,14 @@ func000000000000000a:                   # @func000000000000000a
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	zext.w	a1, a1
 	zext.w	a0, a0
 	minu	a2, a0, a1
 	maxu	a0, a0, a1
 	sub	a0, a0, a2
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	zext.w	a1, a1
 	zext.w	a0, a0
 	minu	a2, a0, a1
@@ -50,7 +50,7 @@ func0000000000000008:                   # @func0000000000000008
 	maxu	a0, a0, a1
 	sub	a0, a0, a2
 	ret
-func00000000000000b8:                   # @func00000000000000b8
+func0000000000000168:                   # @func0000000000000168
 	zext.w	a1, a1
 	zext.w	a0, a0
 	minu	a2, a0, a1

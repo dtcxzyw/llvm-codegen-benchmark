@@ -12,7 +12,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 10
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = shl i64 %3, 62
   ret i64 %4
 }
@@ -30,7 +30,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = shl nuw nsw i64 %3, 32
   ret i64 %4
 }

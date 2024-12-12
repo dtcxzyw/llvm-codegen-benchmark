@@ -1,16 +1,14 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; gromacs/optimized/wall.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; openjdk/optimized/mlib_ImageConv_16ext.ll
 ; openjdk/optimized/mlib_ImageConv_8ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -74,7 +72,7 @@ entry:
 ; postgres/optimized/utilities.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -92,7 +90,7 @@ entry:
 ; postgres/optimized/utilities.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -100,22 +98,21 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-ppp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = freeze i32 %2
-  %4 = icmp ugt i32 %3, 12
+  %4 = icmp ugt i32 %3, 20
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 %0, %1
   %3 = freeze i32 %2

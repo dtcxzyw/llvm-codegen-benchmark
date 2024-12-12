@@ -75,7 +75,7 @@ entry:
 ; linux/optimized/ldt.ll
 ; linux/optimized/mempolicy.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nsw i64 %0, %1

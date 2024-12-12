@@ -1,5 +1,5 @@
 
-; 120 occurrences:
+; 122 occurrences:
 ; abseil-cpp/optimized/elf_mem_image.cc.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
 ; cmake/optimized/multi.c.ll
@@ -14,7 +14,6 @@
 ; git/optimized/name-rev.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5Ctest.c.ll
 ; icu/optimized/formattedval_sbimpl.ll
 ; icu/optimized/numparse_validators.ll
 ; icu/optimized/ubidi.ll
@@ -25,7 +24,6 @@
 ; linux/optimized/bootflag.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/dvo_ivch.ll
-; linux/optimized/evgpeinit.ll
 ; linux/optimized/evxface.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/hdac_stream.ll
@@ -33,7 +31,6 @@
 ; linux/optimized/intel_display.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/ip_output.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
@@ -48,6 +45,11 @@
 ; llvm/optimized/SemaOverload.cpp.ll
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_menu.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_textarea.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -121,54 +123,27 @@
 ; z3/optimized/nnf.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 18 occurrences:
+; 6 occurrences:
 ; cmake/optimized/nghttp2_hd.c.ll
-; freetype/optimized/truetype.c.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/ip_input.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; nghttp2/optimized/nghttp2_hd.c.ll
-; nori/optimized/nanovg.c.ll
-; oiio/optimized/targainput.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; wireshark/optimized/packet-ansi_a.c.ll
-; wireshark/optimized/packet-gsm_a_gm.c.ll
-; wireshark/optimized/packet-pw-fr.c.ll
-; wireshark/optimized/packet-pw-satop.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp ugt i32 %3, %0
-  ret i1 %4
-}
-
-; 5 occurrences:
-; linux/optimized/xt_tcpudp.ll
-; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; mitsuba3/optimized/bitmap.cpp.ll
-; openusd/optimized/patchTableFactory.cpp.ll
-; z3/optimized/mpff.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 1
-  %3 = zext nneg i8 %2 to i32
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -180,11 +155,11 @@ entry:
 ; velox/optimized/Filter.cpp.ll
 ; wireshark/optimized/packet-usbms-bot.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -197,28 +172,61 @@ entry:
 ; stockfish/optimized/search.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; git/optimized/describe.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/filter.ll
 ; linux/optimized/ioam6.ll
-; linux/optimized/tcp_output.ll
 ; postgres/optimized/wparser_def.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 12 occurrences:
+; freetype/optimized/truetype.c.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; oiio/optimized/targainput.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; wireshark/optimized/packet-ansi_a.c.ll
+; wireshark/optimized/packet-gsm_a_gm.c.ll
+; wireshark/optimized/packet-pw-fr.c.ll
+; wireshark/optimized/packet-pw-satop.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 127
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp samesign ult i32 %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; linux/optimized/xt_tcpudp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; z3/optimized/mpff.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 1
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
@@ -233,7 +241,19 @@ define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -16
   %3 = zext i8 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; linux/optimized/filter.ll
+; linux/optimized/tcp_output.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i32 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 1
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 

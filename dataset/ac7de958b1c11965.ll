@@ -1,7 +1,28 @@
 
-; 154 occurrences:
+; 174 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/src.ll
 ; casadi/optimized/cvodes.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -71,7 +92,6 @@
 ; openblas/optimized/dlarrf.c.ll
 ; openblas/optimized/dlasd4.c.ll
 ; openblas/optimized/dstebz.c.ll
-; openblas/optimized/dstein.c.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
 ; opencv/optimized/corner.cpp.ll

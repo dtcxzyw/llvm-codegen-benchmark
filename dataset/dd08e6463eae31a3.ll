@@ -13,9 +13,8 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; libwebp/optimized/vp8l_dec.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/npr.cpp.ll

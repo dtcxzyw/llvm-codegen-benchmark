@@ -11,10 +11,10 @@
 ; yosys/optimized/memory_bram.ll
 ; yosys/optimized/memory_dff.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000021(i8 %0, i64 %1, i64 %2) #0 {
+define i8 @func0000000000000041(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp eq i64 %4, 0
   %6 = select i1 %5, i8 0, i8 %0
   ret i8 %6

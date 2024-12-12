@@ -15,9 +15,9 @@ entry:
 ; 1 occurrences:
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000704(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = shl nuw i64 %1, 4
@@ -28,9 +28,9 @@ entry:
 ; 1 occurrences:
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c4(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000784(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = shl nuw nsw i64 %1, 4
@@ -41,9 +41,9 @@ entry:
 ; 1 occurrences:
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = shl i64 %1, 2
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000484(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -4
   %4 = ptrtoint ptr %3 to i64

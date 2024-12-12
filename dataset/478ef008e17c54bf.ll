@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/verCore.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000caa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000314a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, %1
   %3 = icmp sgt i32 %1, -1
@@ -19,7 +19,7 @@ entry:
 ; llvm/optimized/CoverageMappingGen.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000318c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, %1
   %3 = icmp ne i32 %1, 4

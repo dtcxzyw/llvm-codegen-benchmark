@@ -10,7 +10,7 @@
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000142(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000282(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = icmp eq i32 %3, 0
@@ -24,7 +24,7 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = icmp eq i32 %3, 17

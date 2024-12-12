@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; lief/optimized/rsa_alt_helpers.c.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
@@ -15,6 +15,7 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; Function Attrs: nounwind

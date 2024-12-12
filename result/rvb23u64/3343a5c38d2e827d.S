@@ -4,7 +4,7 @@ func000000000000000f:                   # @func000000000000000f
 	li	a2, -4
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 6
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a1, a1
@@ -29,5 +29,5 @@ func0000000000000067:                   # @func0000000000000067
 	li	a2, 2
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret

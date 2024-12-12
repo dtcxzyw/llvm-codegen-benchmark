@@ -4,6 +4,12 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 7
 .LBB0_2:                                # %entry
 	ret
+func0000000000000006:                   # @func0000000000000006
+	slli	a1, a0, 48
+	bgez	a1, .LBB1_2
+	li	a0, 6
+.LBB1_2:                                # %entry
+	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a0, 48
 	lui	a2, 16

@@ -1,29 +1,14 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #532676608                  // =0x1fc00000
-	eor	v1.16b, v1.16b, v3.16b
-	eor	v0.16b, v0.16b, v2.16b
-	dup	v2.2d, x8
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	eor	w8, w0, w1
+	tst	x8, #0x1fc00000
+	cset	w0, eq
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	mov	w8, #32768                      // =0x8000
-	eor	v1.16b, v1.16b, v3.16b
-	eor	v0.16b, v0.16b, v2.16b
-	dup	v2.2d, x8
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	eor	w8, w0, w1
+	ubfx	x0, x8, #15, #1
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

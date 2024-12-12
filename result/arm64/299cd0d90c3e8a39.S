@@ -1,28 +1,27 @@
-func0000000000000045:                   // @func0000000000000045
+func0000000000000085:                   // @func0000000000000085
 // %bb.0:                               // %entry
-	cmhi	v2.16b, v2.16b, v0.16b
-	cmhs	v0.16b, v1.16b, v0.16b
-	orr	v0.16b, v0.16b, v2.16b
+	and	w8, w0, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, w1, uxtb
+	ccmp	w8, w9, #0, hi
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	cmeq	v2.16b, v0.16b, v2.16b
-	cmeq	v0.16b, v0.16b, v1.16b
-	orr	v0.16b, v0.16b, v2.16b
+	and	w8, w0, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, w1, uxtb
+	ccmp	w8, w9, #4, ne
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000084:                   // @func0000000000000084
+func0000000000000104:                   // @func0000000000000104
 // %bb.0:                               // %entry
-	cmhi	v2.16b, v0.16b, v2.16b
-	cmhi	v0.16b, v1.16b, v0.16b
-	orr	v0.16b, v0.16b, v2.16b
-	ret
-                                        // -- End function
-func00000000000000a6:                   // @func00000000000000a6
-// %bb.0:                               // %entry
-	cmgt	v2.16b, v0.16b, v2.16b
-	cmgt	v0.16b, v1.16b, v0.16b
-	orr	v0.16b, v0.16b, v2.16b
+	and	w8, w0, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, w1, uxtb
+	ccmp	w8, w9, #2, hs
+	cset	w0, hi
 	ret
                                         // -- End function

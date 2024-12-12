@@ -1,24 +1,24 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	addq	%rdx, %rdx
 	testb	$1, %sil
 	movl	$30, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addq	%rdx, %rdx
 	testb	$1, %sil
 	movl	$6, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shlq	$3, %rdx
 	testb	$1, %sil
 	movl	$8, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

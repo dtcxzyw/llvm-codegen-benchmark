@@ -38,7 +38,7 @@ entry:
   ret float %4
 }
 
-; 41 occurrences:
+; 43 occurrences:
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
@@ -80,6 +80,8 @@ entry:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/tap-macltestat.c.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 67 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; cpython/optimized/fileutils.ll
@@ -41,7 +41,6 @@
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/bmpinput.cpp.ll
 ; oiio/optimized/typedesc.cpp.ll
-; opencv/optimized/ts_func.cpp.ll
 ; openjdk/optimized/pngset.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -79,7 +78,6 @@ entry:
 ; 39 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/numparse_impl.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; libquic/optimized/prtime.cc.ll
@@ -91,19 +89,19 @@ entry:
 ; llvm/optimized/InlineAsmLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; openjdk/optimized/archiveHeapWriter.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/jfrMemorySizer.ll
 ; openjdk/optimized/metaspaceDCmd.ll
 ; php/optimized/php_pcre.ll
 ; postgres/optimized/explain.ll
 ; postgres/optimized/nodeSort.ll
+; postgres/optimized/rangetypes_gist.ll
 ; qemu/optimized/block_block-copy.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
@@ -115,6 +113,7 @@ entry:
 ; wireshark/optimized/packet-iec104.c.ll
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/firrtl.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i8 %2) #0 {

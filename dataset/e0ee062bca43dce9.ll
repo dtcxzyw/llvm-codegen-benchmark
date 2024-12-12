@@ -1,9 +1,7 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcIf.c.ll
-; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcResub.c.ll
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll

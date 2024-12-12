@@ -1,5 +1,5 @@
 
-; 152 occurrences:
+; 150 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absGla.c.ll
@@ -14,13 +14,10 @@
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/cswMan.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaCSat3.c.ll
@@ -48,9 +45,11 @@
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sswMan.c.ll
 ; abc/optimized/wlcAbs.c.ll
-; abseil-cpp/optimized/exponential_biased.cc.ll
 ; abseil-cpp/optimized/sysinfo.cc.ll
 ; arrow/optimized/decimal.cc.ll
+; boost/optimized/date_time.ll
+; boost/optimized/formatter.ll
+; boost/optimized/gregorian.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -107,7 +106,6 @@
 ; opencv/optimized/videocapture_camera.cpp.ll
 ; openmpi/optimized/pmix_server_ops.ll
 ; openmpi/optimized/sharedfp_individual_collaborate_data.ll
-; openmpi/optimized/threads_pthreads_yield.ll
 ; openspiel/optimized/Timer.cpp.ll
 ; osqp/optimized/amd_aat.c.ll
 ; pocketpy/optimized/profiler.cpp.ll

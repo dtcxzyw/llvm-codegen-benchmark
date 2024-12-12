@@ -11,5 +11,5 @@ func0000000000000080:                   # @func0000000000000080
 func0000000000000000:                   # @func0000000000000000
 	addq	%rdx, %rsi
 	notq	%rsi
-	leaq	-1(%rsi,%rdi), %rax
+	leaq	-1(%rdi,%rsi), %rax
 	retq

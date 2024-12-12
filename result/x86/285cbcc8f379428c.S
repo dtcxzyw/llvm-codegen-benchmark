@@ -35,14 +35,14 @@ func0000000000000010:                   # @func0000000000000010
 	setae	%al
 	leal	-8(%rdi,%rax,8), %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
 	adcl	$-1, %eax
 	orl	$1, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	leal	20(%rdi), %ecx
 	leal	8(%rdi), %eax
 	cmpq	%rdx, %rsi

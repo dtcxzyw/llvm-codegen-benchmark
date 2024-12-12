@@ -114,7 +114,7 @@ entry:
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000074(i64 %0) #0 {
+define i64 @func00000000000000e4(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -1
   %2 = icmp ult i64 %1, 4

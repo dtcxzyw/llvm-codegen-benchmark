@@ -9,6 +9,6 @@ func0000000000000003:                   # @func0000000000000003
 	.quad	34359738360                     # 0x7fffffff8
 func0000000000000000:                   # @func0000000000000000
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpxor	%ymm0, %ymm1, %ymm0
 	retq

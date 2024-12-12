@@ -12,6 +12,6 @@ func0000000000000008:                   # @func0000000000000008
 	vpord	.LCPI0_3(%rip){1to4}, %xmm1, %xmm0
 	vpaddb	.LCPI0_1(%rip), %xmm0, %xmm0
 	vpcmpltub	.LCPI0_2(%rip), %xmm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

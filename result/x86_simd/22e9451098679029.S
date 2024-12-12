@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	4608                            # 0x1200
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpand	%ymm1, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI1_0(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & mem)
 	vptestnmd	%ymm0, %ymm0, %k0

@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/fretMain.c.ll
 ; opencv/optimized/mathfuncs.cpp.ll
-; sqlite/optimized/sqlite3.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i32 %0) #0 {

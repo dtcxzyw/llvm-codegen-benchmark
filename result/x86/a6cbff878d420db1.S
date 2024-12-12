@@ -4,6 +4,11 @@ func0000000000000052:                   # @func0000000000000052
 	shrl	$31, %eax
 	addl	%edi, %eax
 	retq
+func00000000000000a3:                   # @func00000000000000a3
+	movl	%edi, %eax
+	cmpl	$11, %edi
+	adcl	$0, %eax
+	retq
 func0000000000000023:                   # @func0000000000000023
 	movl	%edi, %eax
 	cmpl	$11, %edi
@@ -55,7 +60,7 @@ func0000000000000020:                   # @func0000000000000020
 	cmpl	$16, %edi
 	adcl	$0, %eax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	movl	%edi, %eax
 	cmpl	$65536, %edi                    # imm = 0x10000
 	sbbl	$-1, %eax

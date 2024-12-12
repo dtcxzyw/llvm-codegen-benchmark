@@ -26,10 +26,6 @@ func0000000000000018:                   # @func0000000000000018
 	shlxl	%edx, %esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	shlxl	%edx, %esi, %eax
-	orl	%edi, %eax
-	retq
 func0000000000000010:                   # @func0000000000000010
 	shlxl	%edx, %esi, %eax
 	orl	%edi, %eax

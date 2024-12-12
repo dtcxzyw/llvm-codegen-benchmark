@@ -40,7 +40,7 @@ entry:
   %2 = and i32 %1, 2047
   %3 = mul nuw nsw i32 %2, 315653
   %4 = add nsw i32 %3, -339326975
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

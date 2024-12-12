@@ -13,7 +13,7 @@
 ; ncnn/optimized/roialign_x86_avx512.cpp.ll
 ; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, float %1) #0 {
+define i1 @func000000000000014a(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = icmp sgt i32 %2, -1

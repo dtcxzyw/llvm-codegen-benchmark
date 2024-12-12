@@ -12,7 +12,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$-1, %edi
 	setl	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	decl	%edi
 	cmpl	$8, %edi
 	setb	%al

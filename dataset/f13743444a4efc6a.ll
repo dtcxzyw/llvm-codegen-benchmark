@@ -32,19 +32,29 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; just-rs/optimized/3fhxcueg488gjpka.ll
-; spike/optimized/xperm4.ll
-; spike/optimized/xperm8.ll
-; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 8
+  %4 = select i1 %3, i64 %1, i64 0
+  %5 = or i64 %0, %4
+  ret i64 %5
+}
+
+; 3 occurrences:
+; spike/optimized/xperm4.ll
+; spike/optimized/xperm8.ll
+; z3/optimized/bv_rewriter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 32
   %4 = select i1 %3, i64 %1, i64 0
   %5 = or i64 %4, %0
   ret i64 %5
@@ -95,7 +105,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -106,13 +116,23 @@ define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.not = icmp eq i64 %2, 0
   %3 = select i1 %.not, i64 0, i64 %1
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 14 occurrences:
-; coreutils-rs/optimized/3stdugogn8b6evb1.ll
+; 1 occurrences:
 ; libquic/optimized/p256-64.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %2, 9223372032559808512
+  %4 = select i1 %3, i64 %1, i64 0
+  %5 = or i64 %4, %0
+  ret i64 %5
+}
+
+; 13 occurrences:
+; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/CGCUDANV.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
@@ -128,36 +148,13 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 9223372032559808512
+  %3 = icmp ugt i64 %2, 7
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
 ; 1 occurrences:
-; libquic/optimized/p256-64.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp slt i64 %2, 0
-  %4 = select i1 %3, i64 %1, i64 0
-  %5 = or i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/MSVC.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp slt i64 %2, 0
-  %4 = select i1 %3, i64 %1, i64 0
-  %5 = or disjoint i64 %4, %0
-  ret i64 %5
-}
-
-; 2 occurrences:
-; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
@@ -165,6 +162,17 @@ entry:
   %3 = icmp ult i64 %2, 16
   %4 = select i1 %3, i64 %1, i64 8
   %5 = or disjoint i64 %4, %0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; libjpeg-turbo/optimized/turbojpeg.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 4294967296
+  %4 = select i1 %3, i64 %1, i64 0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

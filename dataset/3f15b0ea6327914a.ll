@@ -57,9 +57,10 @@ entry:
   ret i64 %3
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/light_array.cc.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; graphviz/optimized/pack.c.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll

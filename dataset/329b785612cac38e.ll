@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_colorbalance.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
@@ -10,6 +10,7 @@
 ; mitsuba3/optimized/rayleigh.cpp.ll
 ; oiio/optimized/imagebufalgo_addsub.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(float %0, float %1) #0 {
 entry:

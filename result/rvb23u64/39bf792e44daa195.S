@@ -1,4 +1,4 @@
-func00000000000007a1:                   # @func00000000000007a1
+func0000000000000fe1:                   # @func0000000000000fe1
 	li	a3, 8
 	subw	a3, a3, a2
 	add.uw	a1, a3, a1

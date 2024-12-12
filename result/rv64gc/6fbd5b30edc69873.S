@@ -23,6 +23,19 @@ func0000000000000015:                   # @func0000000000000015
 	add	a0, a0, a1
 	addiw	a0, a0, -12
 	ret
+func000000000000000c:                   # @func000000000000000c
+	slli	a1, a1, 32
+	lui	a2, 175448
+	addi	a2, a2, 43
+	slli	a2, a2, 32
+	mulhu	a1, a1, a2
+	lui	a2, 16
+	srli	a1, a1, 40
+	addi	a2, a2, -12
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 3
+	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a1, a1, 32
 	lui	a2, 699051

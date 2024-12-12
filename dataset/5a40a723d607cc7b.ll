@@ -15,20 +15,6 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; linux/optimized/swiotlb.ll
-; minetest/optimized/enriched_string.cpp.ll
-; spike/optimized/f128_sqrt.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000030(i64 %0) #0 {
-entry:
-  %1 = shl i64 %0, 2
-  %2 = add i64 %1, 4
-  %3 = and i64 %2, -32
-  %4 = add i64 %3, -4
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; ncnn/optimized/modelbin.cpp.ll
 ; Function Attrs: nounwind
@@ -38,6 +24,19 @@ entry:
   %2 = add i64 %1, 6
   %3 = and i64 %2, -8
   %4 = add nsw i64 %3, -2
+  ret i64 %4
+}
+
+; 2 occurrences:
+; linux/optimized/swiotlb.ll
+; spike/optimized/f128_sqrt.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0) #0 {
+entry:
+  %1 = shl i64 %0, 59
+  %2 = add i64 %1, 1152921504606846976
+  %3 = and i64 %2, -2305843009213693952
+  %4 = add i64 %3, -1
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 127 occurrences:
+; 144 occurrences:
 ; darktable/optimized/introspection_lut3d.c.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; flac/optimized/picture.c.ll
@@ -42,10 +42,26 @@
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/intel_sseu.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/skl_watermark.ll
 ; llvm/optimized/MicrosoftCXXABI.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
+; lvgl/optimized/lv_image_decoder.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -93,7 +109,6 @@
 ; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/reconinter.c.ll
 ; openusd/optimized/reconintra.c.ll
-; openusd/optimized/restoration.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
@@ -125,17 +140,19 @@
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; wireshark/optimized/packet-x11.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 
-; 101 occurrences:
+; 106 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; bullet3/optimized/b3StridingMeshInterface.ll
 ; bullet3/optimized/btBvhTriangleMeshShape.ll
@@ -157,9 +174,14 @@ entry:
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_sprite.ll
-; linux/optimized/rsmisc.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -241,11 +263,11 @@ entry:
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 
-; 106 occurrences:
+; 111 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; actix-rs/optimized/1xpd5itwjglolvjs.ll
@@ -293,7 +315,6 @@ entry:
 ; linux/optimized/hid-lg-g15.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/intel_atomic_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_display.ll
@@ -308,7 +329,6 @@ entry:
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/vgacon.ll
-; linux/optimized/virtgpu_plane.ll
 ; linux/optimized/virtio_blk.ll
 ; linux/optimized/vlv_dsi.ll
 ; linux/optimized/xdp.ll
@@ -318,6 +338,12 @@ entry:
 ; llvm/optimized/raw_ostream.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_blend.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_sdl_window.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
@@ -352,11 +378,12 @@ entry:
 ; wireshark/optimized/packet-vnc.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
@@ -372,18 +399,17 @@ entry:
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; casadi/optimized/tinyxml2.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libwebp/optimized/image_enc.c.ll
 ; linux/optimized/cistpl.ll
-; linux/optimized/intel_audio.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
@@ -412,11 +438,11 @@ entry:
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
-; 65 occurrences:
+; 66 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
@@ -444,6 +470,8 @@ entry:
 ; llvm/optimized/TypeLocBuilder.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
@@ -468,7 +496,6 @@ entry:
 ; openusd/optimized/blockd.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; quickjs/optimized/libbf.ll
 ; slurm/optimized/gres.ll
@@ -486,7 +513,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -504,7 +531,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   ret i32 %3
 }
 

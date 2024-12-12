@@ -1,5 +1,5 @@
 
-; 286 occurrences:
+; 285 occurrences:
 ; cmake/optimized/byte_order.c.ll
 ; cpython/optimized/pyhash.ll
 ; eastl/optimized/EAMemory.cpp.ll
@@ -9,7 +9,6 @@
 ; libquic/optimized/p256-64.c.ll
 ; linux/optimized/drm_cache.ll
 ; linux/optimized/fork.ll
-; linux/optimized/i915_memcpy.ll
 ; linux/optimized/if.ll
 ; linux/optimized/tlb.ll
 ; linux/optimized/xstate.ll
@@ -314,7 +313,7 @@ entry:
   ret i64 %5
 }
 
-; 137 occurrences:
+; 136 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -443,7 +442,6 @@ entry:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
-; luau/optimized/isocline.c.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; rust-analyzer-rs/optimized/2jyyuxshs9vnz9u0.ll
@@ -458,17 +456,6 @@ entry:
   %3 = or disjoint i64 %1, %2
   %4 = or disjoint i64 %3, %0
   %5 = and i64 %4, -65281
-  ret i64 %5
-}
-
-; 1 occurrences:
-; linux/optimized/cap_audit.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or i64 %1, %2
-  %4 = or disjoint i64 %3, %0
-  %5 = and i64 %4, -1152921504606846977
   ret i64 %5
 }
 

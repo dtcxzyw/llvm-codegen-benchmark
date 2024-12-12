@@ -11,10 +11,16 @@ func000000000000000c:                   # @func000000000000000c
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movzbl	%dl, %eax
 	cmpl	$3, %eax
 	setae	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	testb	$4, %dl
+	sete	%al
 	andb	%sil, %al
 	orb	%dil, %al
 	retq

@@ -26,12 +26,12 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i8 %1, i8 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -1
   %4 = add i8 %3, %1
   %5 = zext i8 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -41,7 +41,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, 1
-  %4 = add i8 %3, %1
+  %4 = add i8 %1, %3
   %5 = zext i8 %4 to i64
   %6 = getelementptr i64, ptr %0, i64 %5
   ret ptr %6

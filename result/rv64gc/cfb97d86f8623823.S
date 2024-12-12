@@ -24,3 +24,12 @@ func000000000000000d:                   # @func000000000000000d
 .LBB2_2:
 	ori	a0, a0, 4
 	ret
+func0000000000000009:                   # @func0000000000000009
+	sext.w	a1, a1
+	li	a2, 3
+	bltu	a1, a2, .LBB3_2
+	li	a0, 1024
+	ret
+.LBB3_2:
+	ori	a0, a0, 1024
+	ret

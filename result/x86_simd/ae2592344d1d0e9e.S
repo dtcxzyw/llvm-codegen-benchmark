@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	9223372036854775792             # 0x7ffffffffffffff0
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpsubq	%ymm2, %ymm1, %ymm0
@@ -11,7 +11,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 .LCPI1_0:
 	.quad	8                               # 0x8
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpsubq	%ymm2, %ymm1, %ymm0

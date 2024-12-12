@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	testq	%rsi, %rsi
 	sete	%cl
 	orb	%dl, %cl
@@ -6,7 +6,7 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	cmpq	$-1, %rsi
 	sete	%cl
 	orb	%dl, %cl

@@ -10,6 +10,12 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$1, %eax
 	subl	%edi, %eax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	shll	$3, %edi
+	andl	$8, %edi
+	movl	$16, %eax
+	subl	%edi, %eax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	movzbl	%dil, %ecx
 	addl	%ecx, %ecx

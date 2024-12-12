@@ -114,11 +114,10 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; gromacs/optimized/updategroups.cpp.ll
-; gromacs/optimized/vsite_parm.cpp.ll
 ; mitsuba3/optimized/envmap.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
@@ -155,8 +154,9 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/computemultibodycutoffs.cpp.ll
+; gromacs/optimized/vsite_parm.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
@@ -185,8 +185,7 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; openblas/optimized/ieeeck.c.ll
+; 1 occurrences:
 ; yoga/optimized/YGNodeStyle.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001dc(float %0, float %1) #0 {
@@ -296,12 +295,13 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/box.cpp.ll
+; protobuf/optimized/field_comparator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000032(float %0, float %1) #0 {
+define i1 @func0000000000000132(float %0, float %1) #0 {
 entry:
-  %2 = fcmp uno float %1, 0.000000e+00
+  %2 = fcmp ueq float %1, 0x7FF0000000000000
   %3 = fcmp ueq float %0, 0x7FF0000000000000
   %4 = or i1 %3, %2
   ret i1 %4

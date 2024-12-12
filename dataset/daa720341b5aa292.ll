@@ -16,7 +16,7 @@ entry:
   ret i32 %6
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/mapperTree.c.ll
 ; clamav/optimized/Bra86.c.ll
 ; flatbuffers/optimized/reflection.cpp.ll
@@ -30,7 +30,6 @@ entry:
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/reassembly.ll
 ; linux/optimized/skbuff.ll
-; linux/optimized/wep.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -73,13 +72,12 @@ entry:
   ret i32 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/mapperTree.c.ll
 ; abseil-cpp/optimized/demangle.cc.ll
 ; clamav/optimized/pdf.c.ll
 ; linux/optimized/inline.ll
 ; linux/optimized/ip6_input.ll
-; linux/optimized/mcast_snoop.ll
 ; slurm/optimized/job_scheduler.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i64 %1, i64 %2) #0 {

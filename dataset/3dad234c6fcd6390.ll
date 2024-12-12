@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; cpython/optimized/dtoa.ll
 ; duckdb/optimized/ub_duckdb_common_crypto.cpp.ll
@@ -17,7 +17,6 @@
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/intel_ring.ll
-; linux/optimized/rpl.ll
 ; llvm/optimized/CGExpr.cpp.ll
 ; oiio/optimized/SHA1.cpp.ll
 ; opencv/optimized/hough.cpp.ll

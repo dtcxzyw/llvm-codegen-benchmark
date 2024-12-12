@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 60 occurrences:
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -38,7 +38,6 @@
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; opencv/optimized/qualitybrisque.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
-; openexr/optimized/base.c.ll
 ; openjdk/optimized/cmsopt.ll
 ; openusd/optimized/flatNormals.cpp.ll
 ; openusd/optimized/smoothNormals.cpp.ll
@@ -56,6 +55,11 @@
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(i1 %0, float %1) #0 {
 entry:
@@ -65,9 +69,10 @@ entry:
   ret float %4
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/GenVertexNormalsProcess.cpp.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll

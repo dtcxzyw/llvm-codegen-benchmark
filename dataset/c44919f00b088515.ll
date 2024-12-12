@@ -1,8 +1,23 @@
 
-; 16 occurrences:
+; 7 occurrences:
+; eastl/optimized/TestSort.cpp.ll
+; grpc/optimized/ring_hash.cc.ll
+; lightgbm/optimized/bin.cpp.ll
+; ocio/optimized/FileRules.cpp.ll
+; quantlib/optimized/overnightindexedcouponpricer.ll
+; quickjs/optimized/quickjs.ll
+; stockfish/optimized/tbprobe.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 3
+  %4 = icmp eq i64 %1, %3
+  %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 14 occurrences:
 ; arrow/optimized/compare.cc.ll
-; assimp/optimized/glTF2Importer.cpp.ll
-; assimp/optimized/glTFImporter.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; cvc5/optimized/error_set.cpp.ll
@@ -17,27 +32,10 @@
 ; quantlib/optimized/overnightindexedcouponpricer.ll
 ; taskflow/optimized/exclusive_scan.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = ashr exact i64 %2, 4
-  %4 = icmp ugt i64 %3, %1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 7 occurrences:
-; eastl/optimized/TestSort.cpp.ll
-; grpc/optimized/ring_hash.cc.ll
-; lightgbm/optimized/bin.cpp.ll
-; ocio/optimized/FileRules.cpp.ll
-; quantlib/optimized/overnightindexedcouponpricer.ll
-; quickjs/optimized/quickjs.ll
-; stockfish/optimized/tbprobe.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -50,11 +48,11 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = icmp sgt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp slt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -62,11 +60,11 @@ entry:
 ; hermes/optimized/NativeFormatting.cpp.ll
 ; llvm/optimized/NativeFormatting.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = icmp ult i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -75,21 +73,21 @@ entry:
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = icmp uge i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ule i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = icmp sle i64 %3, %1
+  %4 = icmp sge i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -98,10 +96,10 @@ entry:
 ; cvc5/optimized/error_set.cpp.ll
 ; ozz-animation/optimized/local_to_model_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -109,11 +107,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/rematch.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = icmp slt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp sgt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -125,8 +123,8 @@ entry:
 define i1 @func0000000000000006(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = icmp sgt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp slt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -136,8 +134,8 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = icmp ne i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ne i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -145,11 +143,11 @@ entry:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = icmp ne i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ne i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

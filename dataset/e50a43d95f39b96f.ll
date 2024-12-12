@@ -3,11 +3,11 @@
 ; libphonenumber/optimized/area_code_map.cc.ll
 ; openmpi/optimized/common_ompio_aggregators.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -15,11 +15,11 @@ entry:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -30,7 +30,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -42,11 +42,11 @@ entry:
 ; openspiel/optimized/crazy_eights.cc.ll
 ; proj/optimized/isea.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -54,7 +54,7 @@ entry:
 ; openmpi/optimized/ad_coll_build_req_new.ll
 ; openusd/optimized/cdef.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i32 %0, 8
   %.not = icmp eq i64 %1, %2
@@ -76,11 +76,11 @@ entry:
 ; 1 occurrences:
 ; tinyrenderer/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

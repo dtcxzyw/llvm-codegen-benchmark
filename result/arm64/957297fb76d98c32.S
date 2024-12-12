@@ -1,22 +1,20 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	uzp1	v1.8h, v1.8h, v2.8h
-	movi	v3.8b, #208
-	movi	v2.8b, #10
-	xtn	v1.8b, v1.8h
-	add	v1.8b, v1.8b, v3.8b
-	cmhi	v1.8b, v2.8b, v1.8b
-	orr	v0.8b, v1.8b, v0.8b
+	and	w8, w1, #0xff
+	sub	w8, w8, #48
+	cmp	w8, #10
+	cset	w8, lo
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	uzp1	v1.8h, v1.8h, v2.8h
-	movi	v3.8b, #191
-	movi	v2.8b, #26
-	xtn	v1.8b, v1.8h
-	add	v1.8b, v1.8b, v3.8b
-	cmhi	v1.8b, v2.8b, v1.8b
-	orr	v0.8b, v1.8b, v0.8b
+	and	w8, w1, #0xff
+	sub	w8, w8, #65
+	cmp	w8, #26
+	cset	w8, lo
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/dtoa.c.ll
@@ -10,7 +11,7 @@
 ; ruby/optimized/util.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 65528
   %2 = icmp eq i32 %1, 0

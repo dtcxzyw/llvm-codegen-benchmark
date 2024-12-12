@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-statem_dtls.ll
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 3
   %3 = add nsw i64 %2, 1
@@ -37,7 +37,7 @@ entry:
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = add nsw i64 %2, 1
@@ -66,7 +66,7 @@ entry:
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 5
   %3 = add nsw i64 %2, -1
@@ -82,7 +82,7 @@ entry:
 ; quantlib/optimized/multisteptarn.ll
 ; xgboost/optimized/data.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add nsw i64 %2, 1
@@ -92,9 +92,21 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/limit_fd.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a5(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 2
+  %3 = add nsw i64 %2, 2
+  %4 = ashr exact i64 %0, 2
+  %5 = icmp ule i64 %3, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 6
   %3 = add nsw i64 %2, 2
@@ -106,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/mshift.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = add nsw i64 %2, -1
@@ -119,7 +131,7 @@ entry:
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/rimls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = add nsw i64 %2, 10
@@ -132,7 +144,7 @@ entry:
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/rimls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = add nsw i64 %2, 10

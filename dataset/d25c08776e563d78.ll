@@ -1,6 +1,7 @@
 
-; 101 occurrences:
+; 102 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -306,8 +307,9 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; folly/optimized/TimeUtil.cpp.ll
+; lvgl/optimized/lv_freetype.ll
 ; opencv/optimized/cap_v4l.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; zxing/optimized/AZDetector.cpp.ll

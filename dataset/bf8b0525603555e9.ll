@@ -22,10 +22,21 @@
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000024(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %2, 48
   %4 = icmp ult i8 %1, -96
+  %5 = select i1 %4, i8 %3, i8 %0
+  ret i8 %5
+}
+
+; 1 occurrences:
+; folly/optimized/json.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000034(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = or disjoint i8 %2, 56
+  %4 = icmp samesign ult i8 %1, 10
   %5 = select i1 %4, i8 %3, i8 %0
   ret i8 %5
 }
@@ -42,19 +53,29 @@ entry:
   ret i8 %5
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
 ; crow/optimized/example_json_map.cpp.ll
 ; crow/optimized/example_session.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = or i8 %2, 48
+  %4 = icmp samesign ult i8 %1, 10
+  %5 = select i1 %4, i8 %3, i8 %0
+  ret i8 %5
+}
+
+; 2 occurrences:
 ; linux/optimized/scsi_common.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = or i8 %2, 48
-  %4 = icmp ult i8 %1, 10
+  %3 = or i8 %2, 8
+  %4 = icmp ult i8 %1, 8
   %5 = select i1 %4, i8 %3, i8 %0
   ret i8 %5
 }
@@ -63,7 +84,7 @@ entry:
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000021(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %2, 1
   %4 = icmp eq i8 %1, 0

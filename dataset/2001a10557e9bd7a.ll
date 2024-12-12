@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = icmp slt i64 %1, 0
@@ -89,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/ExprCompiler.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
   %3 = icmp eq i64 %1, 1
@@ -104,7 +104,7 @@ entry:
 ; libquic/optimized/adler32.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 16
   %3 = icmp ugt i64 %1, 65520
@@ -115,10 +115,10 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = icmp ugt i64 %1, 1000
+  %3 = icmp samesign ugt i64 %1, 1000
   %4 = select i1 %3, i64 %0, i64 %2
   ret i64 %4
 }
@@ -126,7 +126,7 @@ entry:
 ; 1 occurrences:
 ; libevent/optimized/http.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = icmp sgt i64 %1, 500000
@@ -137,10 +137,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
-  %3 = icmp ult i64 %1, 4294967296
+  %3 = icmp samesign ult i64 %1, 4294967296
   %4 = select i1 %3, i64 %0, i64 %2
   ret i64 %4
 }
@@ -148,7 +148,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DAGISelMatcherEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = icmp slt i64 %1, 0

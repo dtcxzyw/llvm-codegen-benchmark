@@ -1,18 +1,4 @@
 
-; 4 occurrences:
-; llvm/optimized/BinaryStreamWriter.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
-; xgboost/optimized/cpu_predictor.cc.ll
-; xgboost/optimized/gblinear.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = sub nuw i64 %4, %0
-  ret i64 %5
-}
-
 ; 8 occurrences:
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/curve25519.c.ll
@@ -26,7 +12,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
@@ -49,7 +35,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -60,7 +46,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -71,7 +57,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -85,7 +71,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
@@ -97,7 +83,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -109,7 +95,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -125,7 +111,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -136,7 +122,7 @@ entry:
 define i64 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -148,8 +134,21 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = sub nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/BinaryStreamWriter.cpp.ll
+; xgboost/optimized/cpu_predictor.cc.ll
+; xgboost/optimized/gblinear.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = mul i64 %1, %3
+  %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
 
@@ -163,7 +162,7 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -174,7 +173,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -185,7 +184,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }

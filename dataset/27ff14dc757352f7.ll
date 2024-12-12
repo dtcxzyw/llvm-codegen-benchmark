@@ -9,7 +9,7 @@
 define i32 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32767
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }
@@ -22,19 +22,18 @@ entry:
 define i32 @func0000000000000007(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 768
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   %4 = zext nneg i16 %3 to i32
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; wireshark/optimized/packet-tdmoe.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 1
-  %3 = add nuw i16 %2, %0
+  %2 = and i16 %1, 255
+  %3 = add nuw i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }

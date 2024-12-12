@@ -32,7 +32,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 20479
   %4 = select i1 %3, i64 40960, i64 %1
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 
@@ -76,11 +76,23 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/SsdFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000063(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 20479
+  %3 = icmp samesign ugt i64 %2, 20479
   %4 = select i1 %3, i64 40960, i64 %1
-  %5 = mul nuw nsw i64 %4, %0
+  %5 = mul nuw nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
+; linux/optimized/md.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 23
+  %4 = select i1 %3, i64 32, i64 %1
+  %5 = mul i64 %4, %0
   ret i64 %5
 }
 
@@ -97,24 +109,13 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/md.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ult i64 %2, 1000
-  %4 = select i1 %3, i64 1, i64 %1
-  %5 = mul i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/page-writeback.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 1023
   %4 = select i1 %3, i64 2048, i64 %1
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 
@@ -129,7 +130,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 1, i64 %1
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -148,9 +149,9 @@ entry:
 ; openblas/optimized/dgemv_n.c.ll
 ; openblas/optimized/dgemv_t.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %.inv = icmp slt i64 %2, 2048
+  %.inv = icmp ult i64 %2, 2048
   %3 = select i1 %.inv, i64 %1, i64 2048
   %4 = mul nsw i64 %3, %0
   ret i64 %4

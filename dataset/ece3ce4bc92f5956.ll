@@ -1,5 +1,5 @@
 
-; 935 occurrences:
+; 942 occurrences:
 ; abc/optimized/bmcChain.c.ll
 ; abc/optimized/dchSim.c.ll
 ; abc/optimized/fraCore.c.ll
@@ -59,7 +59,6 @@
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/oid_registry.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/xfrm_state.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64ConditionalCompares.cpp.ll
@@ -650,7 +649,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -926,10 +924,19 @@
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
+; mitsuba3/optimized/multijitter.cpp.ll
+; mitsuba3/optimized/orthogonal.cpp.ll
+; mitsuba3/optimized/stratified.cpp.ll
 ; openjdk/optimized/cmspack.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; pbrt-v4/optimized/lowdiscrepancy.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/samples.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; spike/optimized/aes64im.ll
@@ -938,8 +945,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 14
-  %2 = lshr i32 %0, 10
+  %1 = lshr i32 %0, 16
+  %2 = lshr i32 %0, 8
   %3 = xor i32 %2, %1
   ret i32 %3
 }

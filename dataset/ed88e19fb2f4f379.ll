@@ -6,7 +6,7 @@
 ; sentencepiece/optimized/builder.cc.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a6(i64 %0, ptr %1) #0 {
+define ptr @func00000000000001c6(i64 %0, ptr %1) #0 {
 entry:
   %.v = call i64 @llvm.smin.i64(i64 %0, i64 12)
   %2 = getelementptr nusw i8, ptr %1, i64 %.v
@@ -16,10 +16,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a4(i64 %0, ptr %1) #0 {
+define ptr @func00000000000001c4(i64 %0, ptr %1) #0 {
 entry:
   %.v = call i64 @llvm.umin.i64(i64 %0, i64 150)
-  %2 = getelementptr nusw i8, ptr %1, i64 %.v
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 %.v
   ret ptr %2
 }
 

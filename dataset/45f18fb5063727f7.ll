@@ -320,7 +320,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = add nuw nsw i64 %0, 1
@@ -334,7 +334,7 @@ entry:
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; regex-rs/optimized/32jw1oy2yofrhudk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = add nuw i64 %0, 1
@@ -354,12 +354,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; openjdk/optimized/parMarkBitMap.ll
-; openjdk/optimized/psCompactionManager.ll
+; 1 occurrences:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = add nuw nsw i64 %0, 1

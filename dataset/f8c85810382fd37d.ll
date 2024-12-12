@@ -4,13 +4,13 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000002b4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = tail call i32 @llvm.abs.i32(i32 %4, i1 true)
   %6 = tail call i32 @llvm.abs.i32(i32 %0, i1 true)
-  %7 = icmp ult i32 %5, %6
+  %7 = icmp samesign ult i32 %5, %6
   ret i1 %7
 }
 
@@ -34,13 +34,13 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000002b8(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = tail call i32 @llvm.abs.i32(i32 %4, i1 true)
   %6 = tail call i32 @llvm.abs.i32(i32 %0, i1 true)
-  %7 = icmp ugt i32 %5, %6
+  %7 = icmp samesign ugt i32 %5, %6
   ret i1 %7
 }
 

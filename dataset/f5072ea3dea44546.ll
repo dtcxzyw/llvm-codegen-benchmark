@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; openjdk/optimized/objectSampleWriter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 9223372036854775804
   %4 = and i64 %0, 9223372036854775804
-  %5 = icmp ugt i64 %3, %4
+  %5 = icmp samesign ugt i64 %3, %4
   ret i1 %5
 }
 
@@ -74,12 +74,12 @@ entry:
 ; spike/optimized/vzext_vf4.ll
 ; spike/optimized/vzext_vf8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 9223372036854775804
   %4 = and i64 %0, 9223372036854775804
-  %5 = icmp ult i64 %3, %4
+  %5 = icmp samesign ult i64 %3, %4
   ret i1 %5
 }
 

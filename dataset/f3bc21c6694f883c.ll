@@ -1,5 +1,5 @@
 
-; 74 occurrences:
+; 75 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll
@@ -43,6 +43,7 @@
 ; llvm/optimized/LoopDeletion.cpp.ll
 ; llvm/optimized/MacroExpander.cpp.ll
 ; llvm/optimized/MappedBlockStream.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
@@ -79,7 +80,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul i32 %2, 1540483477
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -91,23 +92,22 @@ define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = mul i32 %2, 37
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/IRSimilarityIdentifier.cpp.ll
 ; llvm/optimized/InitHeaderSearch.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/SplitModule.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = mul i32 %2, 37
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -118,7 +118,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nsw i32 %2, 41
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

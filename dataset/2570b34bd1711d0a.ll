@@ -92,13 +92,14 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; bullet3/optimized/btConvexHull.ll
 ; imgui/optimized/imgui.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/fast_line_detector.cpp.ll
+; zed-rs/optimized/a5zoltfqgma86dzb1rp0ilkm9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(float %0, float %1) #0 {
 entry:
@@ -135,6 +136,20 @@ entry:
   ret i1 %3
 }
 
+; 5 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; opencv/optimized/agast.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(float %0, float %1) #0 {
+entry:
+  %2 = fadd float %1, 1.000000e+00
+  %3 = fcmp oeq float %2, %0
+  ret i1 %3
+}
+
 ; 2 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -153,17 +168,6 @@ define i1 @func000000000000000b(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 0x3F1A36E2E0000000
   %3 = fcmp ule float %2, %0
-  ret i1 %3
-}
-
-; 2 occurrences:
-; arrow/optimized/value_parsing.cc.ll
-; opencv/optimized/agast.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(float %0, float %1) #0 {
-entry:
-  %2 = fadd float %1, 1.000000e+00
-  %3 = fcmp oeq float %2, %0
   ret i1 %3
 }
 

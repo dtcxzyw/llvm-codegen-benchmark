@@ -31,16 +31,18 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000001:                   # @func0000000000000001
-	feq.d	a2, fa0, fa0
-	xori	a2, a2, 1
+.LCPI4_0:
+	.quad	0x4000000000000000              # double 2
+func0000000000000008:                   # @func0000000000000008
+	lui	a2, %hi(.LCPI4_0)
+	fld	fa5, %lo(.LCPI4_0)(a2)
+	feq.d	a2, fa0, fa5
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
-	fclass.d	a2, fa0
-	slli	a2, a2, 56
-	srli	a2, a2, 63
+func0000000000000001:                   # @func0000000000000001
+	feq.d	a2, fa0, fa0
+	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

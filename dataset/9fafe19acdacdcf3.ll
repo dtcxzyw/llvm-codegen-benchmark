@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; icu/optimized/collationbuilder.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; ruby/optimized/string.ll
 ; spike/optimized/srli32_u.ll
 ; Function Attrs: nounwind

@@ -9,12 +9,12 @@
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = and i64 %2, -16
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -28,12 +28,12 @@ entry:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = and i64 %2, 4294967292
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
 
@@ -42,12 +42,12 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; openjdk/optimized/exceptionHandlerTable.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = and i64 %2, 4294967294
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -58,12 +58,12 @@ entry:
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = and i64 %2, 510
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 38
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 38
   ret ptr %5
 }
 
@@ -98,11 +98,11 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dlasq2.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = and i64 %2, 4294967292
-  %4 = getelementptr nusw double, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw double, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -110,12 +110,12 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 5
   %3 = and i64 %2, 4294967264
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
 

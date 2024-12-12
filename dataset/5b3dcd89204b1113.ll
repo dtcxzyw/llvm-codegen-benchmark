@@ -1,16 +1,16 @@
 
-%struct.AHCICmdHdr.2595529 = type { i16, i16, i32, i64, [4 x i32] }
-%"struct.QHashPrivate::Span<QHashPrivate::Node<int, QList<FunnelAction *>>>::Entry.3250245" = type { %"union.std::aligned_storage<32, 8>::type.3250246" }
-%"union.std::aligned_storage<32, 8>::type.3250246" = type { [32 x i8] }
+%struct.AHCICmdHdr.2709110 = type { i16, i16, i32, i64, [4 x i32] }
+%"struct.QHashPrivate::Span<QHashPrivate::Node<int, QList<FunnelAction *>>>::Entry.3441435" = type { %"union.std::aligned_storage<32, 8>::type.3441436" }
+%"union.std::aligned_storage<32, 8>::type.3441436" = type { [32 x i8] }
 
 ; 2 occurrences:
 ; linux/optimized/nf_reject_ipv4.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr %struct.AHCICmdHdr.2595529, ptr %0, i64 %2
+  %3 = getelementptr %struct.AHCICmdHdr.2709110, ptr %0, i64 %2
   %4 = icmp eq ptr %3, null
   ret i1 %4
 }
@@ -33,7 +33,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %"struct.QHashPrivate::Span<QHashPrivate::Node<int, QList<FunnelAction *>>>::Entry.3250245", ptr %0, i64 %2
+  %3 = getelementptr %"struct.QHashPrivate::Span<QHashPrivate::Node<int, QList<FunnelAction *>>>::Entry.3441435", ptr %0, i64 %2
   %4 = icmp eq ptr %3, null
   ret i1 %4
 }

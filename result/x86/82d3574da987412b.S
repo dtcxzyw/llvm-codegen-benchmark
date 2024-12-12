@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	$86, %al
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	imull	$-85, %edi, %eax
 	cmpb	$86, %al
 	setb	%al

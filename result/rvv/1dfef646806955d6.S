@@ -3,7 +3,7 @@ func0000000000000004:                   # @func0000000000000004
 	vmv.v.i	v12, -1
 	vsll.vv	v10, v12, v10
 	vnot.v	v12, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vand.vv	v8, v8, v10
 	ret
 func0000000000000007:                   # @func0000000000000007
@@ -11,6 +11,6 @@ func0000000000000007:                   # @func0000000000000007
 	vmv.v.i	v12, -1
 	vsll.vv	v10, v12, v10
 	vnot.v	v12, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vand.vv	v8, v8, v10
 	ret

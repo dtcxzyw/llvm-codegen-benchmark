@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/message.ll
 ; hdf5/optimized/H5Bcache.c.ll
 ; hdf5/optimized/H5HGcache.c.ll
 ; hdf5/optimized/H5Oainfo.c.ll

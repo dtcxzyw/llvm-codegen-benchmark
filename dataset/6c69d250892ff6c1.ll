@@ -13,7 +13,7 @@
 ; protobuf/optimized/descriptor.cc.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp eq i32 %2, 0
@@ -22,9 +22,8 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/intel_ggtt_fencing.ll
-; linux/optimized/libata-acpi.ll
 ; linux/optimized/nfs4proc.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/Attributor.cpp.ll
@@ -33,7 +32,7 @@ entry:
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8192
   %3 = icmp ne i32 %2, 0

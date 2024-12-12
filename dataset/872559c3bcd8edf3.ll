@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
@@ -9,6 +9,7 @@
 ; php/optimized/zend_ini.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; verilator/optimized/V3Param.cpp.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
@@ -18,7 +19,8 @@ entry:
   ret i8 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/process.ll
 ; hdf5/optimized/H5Tvlen.c.ll
 ; linux/optimized/direct-io.ll
 ; luau/optimized/TypeInfer.annotations.test.cpp.ll
@@ -34,9 +36,8 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
-; linux/optimized/page_alloc.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i1 %0, i64 %1) #0 {
 entry:

@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/dump_ssse3.ll
 ; libdeflate/optimized/crc32.c.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
@@ -27,7 +28,8 @@ entry:
   ret i64 %4
 }
 
-; 28 occurrences:
+; 29 occurrences:
+; boost/optimized/alloc_lib.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; folly/optimized/Request.cpp.ll

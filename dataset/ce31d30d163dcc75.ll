@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 71 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -69,11 +69,13 @@
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3FE6E29740000000
-  %4 = fadd float %3, %1
+  %4 = fadd float %1, %3
   %5 = fmul float %0, 0x3FB279AAE0000000
   %6 = fadd float %5, %4
   ret float %6

@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/operations.ll
 ; c3c/optimized/parse_expr.c.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/lowdiscrepancy.cpp.ll
@@ -12,13 +13,13 @@
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = or i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = or i32 %1, %3
+  %5 = or i32 %0, %4
   %6 = lshr i32 %5, 4
   ret i32 %6
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; c3c/optimized/build_options.c.ll
 ; c3c/optimized/c_abi.c.ll
 ; c3c/optimized/symtab.c.ll
@@ -27,6 +28,7 @@ entry:
 ; cmake/optimized/alone_encoder.c.ll
 ; cmake/optimized/core.c.ll
 ; cmake/optimized/lz_encoder.c.ll
+; cmake/optimized/lzma2_encoder.c.ll
 ; git/optimized/delta-islands.ll
 ; git/optimized/object-file.ll
 ; git/optimized/oidset.ll
@@ -61,8 +63,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = or i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = or i32 %1, %3
+  %5 = or i32 %0, %4
   %6 = lshr i32 %5, 4
   ret i32 %6
 }

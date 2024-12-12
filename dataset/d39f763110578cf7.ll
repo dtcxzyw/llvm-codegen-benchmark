@@ -12,12 +12,14 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/gapi_compiler_perf_tests.cpp.ll
 ; opencv/optimized/gapi_core_perf_tests.cpp.ll
 ; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
 ; opencv/optimized/perf_bench.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
+; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:

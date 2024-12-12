@@ -16,7 +16,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = add nuw nsw i64 %0, 7

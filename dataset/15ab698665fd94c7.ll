@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 91 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -37,8 +37,6 @@
 ; php/optimized/ir_sccp.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/brin_pageops.ll
-; postgres/optimized/brin_revmap.ll
-; postgres/optimized/brin_xlog.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/gindatapage.ll
@@ -104,6 +102,7 @@ entry:
 
 ; 22 occurrences:
 ; abc/optimized/trees.c.ll
+; boost/optimized/operations.ll
 ; clamav/optimized/unpack.cpp.ll
 ; gromacs/optimized/trees.c.ll
 ; hermes/optimized/zip.c.ll
@@ -112,7 +111,6 @@ entry:
 ; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/deftree.ll
 ; linux/optimized/hooks.ll
-; linux/optimized/sd.ll
 ; linux/optimized/vfs_inode.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -134,8 +132,9 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
+; linux/optimized/sd.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i16 %0) #0 {
 entry:

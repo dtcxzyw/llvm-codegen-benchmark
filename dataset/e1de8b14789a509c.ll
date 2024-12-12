@@ -7,7 +7,7 @@
 ; linux/optimized/deflate.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c2(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = lshr i32 %3, 8

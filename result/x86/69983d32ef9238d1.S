@@ -10,7 +10,7 @@ func0000000000000063:                   # @func0000000000000063
 	movl	$12, %ecx
 	shlxl	%eax, %ecx, %eax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	cmpl	$2, %edi
 	setae	%al
 	movl	$4, %ecx

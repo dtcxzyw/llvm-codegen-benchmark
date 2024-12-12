@@ -67,8 +67,9 @@ entry:
   ret i1 %2
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; cvc5/optimized/eq_proof.cpp.ll
+; cvc5/optimized/nl_model.cpp.ll
 ; cvc5/optimized/regexp_solver.cpp.ll
 ; llvm/optimized/LoopUtils.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll

@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2765156 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2877402 = type <{ i64, i32 }>
 
 ; 4 occurrences:
 ; abc/optimized/giaFanout.c.ll
@@ -7,12 +7,12 @@
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2765156, ptr %1, i64 %3
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2877402, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -20,12 +20,12 @@ entry:
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/upack.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000065(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c5(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp uge i64 %5, %0
+  %6 = icmp ule i64 %0, %5
   ret i1 %6
 }
 
@@ -37,38 +37,36 @@ entry:
 ; clamav/optimized/upack.c.ll
 ; clamav/optimized/wwunpack.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c8(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
-; 2 occurrences:
-; clamav/optimized/upack.c.ll
-; linux/optimized/main.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = ptrtoint ptr %4 to i64
-  %6 = icmp ult i64 %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; linux/optimized/readdir.ll
+; 1 occurrences:
 ; linux/optimized/usercopy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000089(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp ule i64 %5, %0
+  %6 = icmp uge i64 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; linux/optimized/main.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -77,12 +75,12 @@ entry:
 ; jemalloc/optimized/eset.pic.ll
 ; jemalloc/optimized/eset.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

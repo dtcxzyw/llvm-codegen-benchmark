@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; git/optimized/date.ll
 ; grpc/optimized/timeout_encoding.cc.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0) #0 {

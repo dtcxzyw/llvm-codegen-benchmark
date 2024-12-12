@@ -10,6 +10,9 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$128, %eax
 	cmovael	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	movl	%edi, %eax
+func0000000000000024:                   # @func0000000000000024
+	addb	$-3, %sil
+	cmpb	$2, %sil
+	movl	$1, %eax
+	cmovael	%edi, %eax
 	retq

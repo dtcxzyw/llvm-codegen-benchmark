@@ -1,4 +1,31 @@
 
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 %0, %1
+  %3 = trunc i32 %2 to i16
+  %4 = icmp eq i16 %3, -1
+  ret i1 %4
+}
+
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 %0, %1
+  %3 = trunc i32 %2 to i16
+  %4 = add i16 %3, -31
+  %5 = icmp ult i16 %4, -32
+  ret i1 %5
+}
+
 ; 5 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll

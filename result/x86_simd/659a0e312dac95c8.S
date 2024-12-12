@@ -10,12 +10,11 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpsrad	$31, %ymm1, %ymm2
-	vpsrld	$20, %ymm2, %ymm2
+	vpsrld	$24, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpsrad	$12, %ymm1, %ymm1
+	vpsrad	$8, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpsrad	$31, %ymm0, %ymm1
-	vpsrld	$20, %ymm1, %ymm1
+	vpsrld	$31, %ymm0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpsrad	$12, %ymm0, %ymm0
+	vpsrad	$1, %ymm0, %ymm0
 	retq

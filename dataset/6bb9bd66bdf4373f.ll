@@ -1,18 +1,5 @@
 
 ; 2 occurrences:
-; hdf5/optimized/H5B2int.c.ll
-; linux/optimized/mcast_snoop.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000015(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = add nsw i32 %4, 1
-  %6 = add nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 2 occurrences:
 ; linux/optimized/tcp_offload.ll
 ; openusd/optimized/convolve.c.ll
 ; Function Attrs: nounwind
@@ -25,9 +12,8 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/ip6_input.ll
-; linux/optimized/mcast_snoop.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {

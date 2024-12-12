@@ -23,21 +23,17 @@ entry:
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000148(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
-  %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
-  %7 = icmp ugt ptr %6, %4
-  ret i1 %7
+  %3 = icmp sgt i32 %1, %2
+  ret i1 %3
 }
 
 ; 2 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3

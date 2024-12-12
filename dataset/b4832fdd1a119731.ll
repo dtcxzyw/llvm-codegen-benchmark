@@ -1,5 +1,8 @@
 
-; 6 occurrences:
+; 9 occurrences:
+; boost/optimized/partition.ll
+; boost/optimized/within.ll
+; boost/optimized/within_sph_geo.ll
 ; gromacs/optimized/xvgr.cpp.ll
 ; openusd/optimized/mathUtils.cpp.ll
 ; openvdb/optimized/RayTracer.cc.ll
@@ -71,6 +74,23 @@ entry:
 define i1 @func000000000000002c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %0, %2
+  %4 = fcmp oge double %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 7 occurrences:
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/partition.ll
+; boost/optimized/within_pointlike_geometry.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ac(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ole double %0, %2
   %4 = fcmp oge double %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -159,17 +179,6 @@ define i1 @func0000000000000044(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %0, %2
   %4 = fcmp ogt double %0, %1
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/qcustomplot.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000ac(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ole double %0, %2
-  %4 = fcmp oge double %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }

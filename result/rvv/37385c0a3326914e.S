@@ -70,3 +70,16 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 255
 	vmsgtu.vx	v0, v10, a0
 	ret
+.LCPI6_0:
+	.quad	-6067343680855748867            # 0xabcc77118461cefd
+func0000000000000018:                   # @func0000000000000018
+	lui	a0, %hi(.LCPI6_0)
+	ld	a0, %lo(.LCPI6_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmulhu.vx	v8, v8, a0
+	lui	a0, 244
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 26
+	addi	a0, a0, 575
+	vmsgtu.vx	v0, v10, a0
+	ret

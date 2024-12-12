@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; openjdk/optimized/jfrStackTrace.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
@@ -31,7 +30,7 @@ entry:
   %4 = mul nsw i64 %1, 60
   %5 = add nsw i64 %4, %3
   %6 = mul nsw i64 %5, 60
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -57,7 +56,7 @@ entry:
   %4 = mul nsw i64 %1, 60
   %5 = add nsw i64 %4, %3
   %6 = mul nsw i64 %5, 60
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

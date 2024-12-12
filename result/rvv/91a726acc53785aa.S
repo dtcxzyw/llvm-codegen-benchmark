@@ -1,4 +1,4 @@
-func0000000000000114:                   # @func0000000000000114
+func0000000000000a34:                   # @func0000000000000a34
 	lui	a0, 4096
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
@@ -11,7 +11,7 @@ func0000000000000114:                   # @func0000000000000114
 	li	a0, 255
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	li	a0, 1025
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v0, v10, a0
@@ -24,7 +24,7 @@ func0000000000000056:                   # @func0000000000000056
 	ret
 .LCPI2_0:
 	.quad	999999999999999999              # 0xde0b6b3a763ffff
-func000000000000021a:                   # @func000000000000021a
+func000000000000042a:                   # @func000000000000042a
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -37,7 +37,7 @@ func000000000000021a:                   # @func000000000000021a
 	vadd.vx	v8, v8, a0
 	vmsgt.vi	v0, v8, 0
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -47,7 +47,7 @@ func000000000000005a:                   # @func000000000000005a
 	vadd.vi	v8, v8, -4
 	vmsgt.vi	v0, v8, -1
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -57,7 +57,7 @@ func0000000000000046:                   # @func0000000000000046
 	vadd.vi	v8, v8, 2
 	vmsle.vi	v0, v8, 3
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	li	a0, -360
@@ -65,6 +65,6 @@ func000000000000004a:                   # @func000000000000004a
 	vmv.v.x	v9, a0
 	li	a0, -60
 	vmerge.vxm	v9, v9, a0, v0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	vmsgt.vi	v0, v8, -1
 	ret

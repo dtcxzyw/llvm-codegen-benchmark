@@ -1,5 +1,5 @@
 
-; 122 occurrences:
+; 121 occurrences:
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
@@ -22,7 +22,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll

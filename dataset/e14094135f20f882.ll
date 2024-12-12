@@ -1,9 +1,6 @@
 
-%"struct.clang::FunctionType::FunctionTypeExtraBitfields.2948842" = type { i16, [6 x i8] }
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.2948841" = type { i8, [7 x i8] }
-%"class.clang::DeclAccessPair.2994636" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.2994637" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.2994637" = type { %struct.anon.2269.2994638 }
-%struct.anon.2269.2994638 = type { [8 x i8] }
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406" = type { i8, [7 x i8] }
 
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -49,39 +46,25 @@ entry:
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.2948842", ptr %4, i64 %1
-  %6 = getelementptr nusw %"struct.clang::FunctionType::FunctionTypeArmAttributes.2948841", ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 8
-  ret ptr %7
-}
-
-; 2 occurrences:
-; llvm/optimized/SemaAvailability.cpp.ll
-; llvm/optimized/SemaTemplateVariadic.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, -8
-  %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 %1
-  %6 = getelementptr nusw %"class.clang::DeclAccessPair.2994636", ptr %5, i64 %0
-  %7 = getelementptr nusw nuw i8, ptr %6, i64 12
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407", ptr %4, i64 %1
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406", ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; opencv/optimized/pyramids.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -16
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr nusw i32, ptr %4, i64 %1
-  %6 = getelementptr nusw i32, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 4
   ret ptr %7
 }
@@ -105,13 +88,13 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/segment-map.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -33554432
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 216
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 216
   ret ptr %7
 }
 

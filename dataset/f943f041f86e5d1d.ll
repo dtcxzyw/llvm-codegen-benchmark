@@ -163,7 +163,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000844(i64 %0, i64 %1) #0 {
+define i1 @func0000000000002084(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 10
   %3 = icmp ult i64 %2, %0

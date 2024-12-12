@@ -28,10 +28,10 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000210(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   %5 = icmp ugt i64 %3, %1
   %6 = or i1 %4, %5
   ret i1 %6

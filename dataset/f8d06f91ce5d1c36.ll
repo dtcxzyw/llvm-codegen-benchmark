@@ -1,12 +1,8 @@
 
-; 7 occurrences:
+; 3 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dstein.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

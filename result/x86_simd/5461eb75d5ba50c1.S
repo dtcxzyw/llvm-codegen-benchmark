@@ -6,7 +6,7 @@
 	.long	8192                            # 0x2000
 .LCPI0_3:
 	.long	32                              # 0x20
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm0, %k0
 	vpcmpeqd	.LCPI0_2(%rip){1to8}, %ymm0, %k1

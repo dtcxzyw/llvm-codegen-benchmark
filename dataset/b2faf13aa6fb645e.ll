@@ -1,15 +1,21 @@
 
-; 5 occurrences:
-; cmake/optimized/setopt.c.ll
-; curl/optimized/libcurl_la-setopt.ll
-; linux/optimized/yenta_socket.ll
-; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
+; 11 occurrences:
+; git/optimized/unpack-trees.ll
+; linux/optimized/intel_display.ll
+; linux/optimized/intel_modeset_setup.ll
+; postgres/optimized/acl.ll
+; slurm/optimized/fed_mgr.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
+; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; spike/optimized/disasm.ll
+; spike/optimized/pbsad.ll
+; spike/optimized/pbsada.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -37
-  %3 = shl nuw nsw i64 1, %0
+  %2 = and i64 %1, 4294967295
+  %3 = shl nuw i64 1, %0
   %4 = and i64 %3, %2
   ret i64 %4
 }
@@ -41,27 +47,8 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
-; linux/optimized/intel_display.ll
-; linux/optimized/intel_modeset_setup.ll
-; postgres/optimized/acl.ll
-; slurm/optimized/fed_mgr.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
-; softposit-rs/optimized/m1vpptg00bzmp9y.ll
-; spike/optimized/disasm.ll
-; spike/optimized/pbsad.ll
-; spike/optimized/pbsada.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 255
-  %3 = shl nuw i64 1, %0
-  %4 = and i64 %3, %2
-  ret i64 %4
-}
-
-; 6 occurrences:
+; 7 occurrences:
+; linux/optimized/intel_workarounds.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/link.ll
 ; linux/optimized/mlme.ll
@@ -73,6 +60,19 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 17592186044415
   %3 = shl nsw i64 -1, %0
+  %4 = and i64 %3, %2
+  ret i64 %4
+}
+
+; 3 occurrences:
+; linux/optimized/yenta_socket.ll
+; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 1073741823
+  %3 = shl nuw nsw i64 1, %0
   %4 = and i64 %3, %2
   ret i64 %4
 }

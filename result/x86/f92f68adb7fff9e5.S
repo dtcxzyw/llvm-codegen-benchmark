@@ -2,6 +2,6 @@ func0000000000000004:                   # @func0000000000000004
 	movl	%edi, %eax
 	subl	%edx, %eax
 	addl	%esi, %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq

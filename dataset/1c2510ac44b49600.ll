@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/extract.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll

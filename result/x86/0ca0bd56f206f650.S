@@ -28,3 +28,10 @@ func0000000000000007:                   # @func0000000000000007
 	orq	%rsi, %rdx
 	leaq	(%rdi,%rdx,2), %rax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	movq	%rdx, %rax
+	andl	$524286, %eax                   # imm = 0x7FFFE
+	orq	%rsi, %rax
+	shlq	$5, %rax
+	orq	%rdi, %rax
+	retq

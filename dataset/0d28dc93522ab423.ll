@@ -41,7 +41,7 @@ entry:
 define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl i128 15, %1
-  %3 = and i128 %2, %0
+  %3 = and i128 %0, %2
   ret i128 %3
 }
 
@@ -51,7 +51,7 @@ entry:
 define i128 @func0000000000000001(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nsw i128 -1, %1
-  %3 = and i128 %2, %0
+  %3 = and i128 %0, %2
   ret i128 %3
 }
 

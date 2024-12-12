@@ -10,6 +10,17 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; openjdk/optimized/g1ConcurrentMark.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 %2, i32 0
+  %4 = and i32 %0, 131071
+  %5 = icmp samesign ugt i32 %4, %3
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -23,9 +34,8 @@ entry:
   ret i1 %5
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; hermes/optimized/Passes.cpp.ll
-; icu/optimized/utrie2.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/AssumeBundleBuilder.cpp.ll
@@ -71,6 +81,18 @@ entry:
   %3 = select i1 %1, i32 %2, i32 1792
   %4 = and i32 %0, 1792
   %5 = icmp ne i32 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; icu/optimized/utrie2.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %0, 63
+  %4 = icmp ugt i32 %2, %3
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 true, i1 %4
   ret i1 %5
 }
 

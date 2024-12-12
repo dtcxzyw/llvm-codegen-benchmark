@@ -5,14 +5,14 @@ func00000000000000cc:                   # @func00000000000000cc
 	vpcmpgtd	%ymm2, %ymm3, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	4293967296                      # 0xfff0bdc0
-func000000000000008c:                   # @func000000000000008c
+func000000000000028c:                   # @func000000000000028c
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm2, %k0
 	vpmovm2d	%k0, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

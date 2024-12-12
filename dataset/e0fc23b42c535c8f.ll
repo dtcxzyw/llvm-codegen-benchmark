@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; icu/optimized/uiter.ll
-; lua/optimized/lvm.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {

@@ -12,9 +12,10 @@ entry:
   ret i32 %2
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; icu/optimized/utrie2.ll
+; llvm/optimized/Expr.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; openusd/optimized/faceSurface.cpp.ll
@@ -25,17 +26,6 @@ define i32 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 2
   %2 = select i1 %1, i32 1, i32 4
-  ret i32 %2
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0) #0 {
-entry:
-  %1 = icmp ult i32 %0, 16
-  %2 = select i1 %1, i32 9109504, i32 1052658
   ret i32 %2
 }
 

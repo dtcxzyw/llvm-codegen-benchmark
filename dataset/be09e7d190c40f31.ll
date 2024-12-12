@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 6 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll

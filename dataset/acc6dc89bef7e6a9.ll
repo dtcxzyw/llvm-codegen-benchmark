@@ -1,8 +1,10 @@
 
-%"class.testing::ThrowingValue.3270416" = type { i32 }
+%"class.testing::ThrowingValue.3460894" = type { i32 }
 
-; 59 occurrences:
+; 61 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
@@ -62,11 +64,11 @@
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7
@@ -78,7 +80,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %"class.testing::ThrowingValue.3270416", ptr %1, i64 %3
+  %4 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6

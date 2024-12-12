@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; icu/optimized/number_grouping.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; linux/optimized/hda_codec.ll
@@ -14,6 +14,7 @@
 ; spike/optimized/clz16.ll
 ; spike/optimized/vmerge_vxm.ll
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1, i64 %2) #0 {
 entry:

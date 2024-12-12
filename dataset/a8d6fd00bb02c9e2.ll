@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 46 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -9,6 +9,7 @@
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btDeformableContactProjection.ll
@@ -49,7 +50,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = mul i32 %4, -512718531
   ret i32 %5
 }
@@ -63,7 +64,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = mul i32 %4, 9
   ret i32 %5
 }

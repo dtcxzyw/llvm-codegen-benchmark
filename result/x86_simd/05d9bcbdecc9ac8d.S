@@ -17,7 +17,7 @@ func0000000000000024:                   # @func0000000000000024
 	.long	12288                           # 0x3000
 .LCPI1_1:
 	.long	48                              # 0x30
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpsrlq	$32, %ymm0, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vptestnmq	%ymm0, %ymm0, %k1

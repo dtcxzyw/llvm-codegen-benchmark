@@ -1,8 +1,8 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orq	%rsi, %rdi
 	setne	%al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testq	%rsi, %rsi
 	sete	%cl
 	testq	%rdi, %rdi

@@ -48,18 +48,8 @@ entry:
 define i1 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/ASTReader.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000012(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %.not = icmp ult i64 %1, %2
-  %3 = or i1 %.not, %0
-  ret i1 %3
 }
 
 attributes #0 = { nounwind }

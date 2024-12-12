@@ -51,7 +51,7 @@ entry:
   ret double %2
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
@@ -61,6 +61,7 @@ entry:
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i64 %0) #0 {
 entry:

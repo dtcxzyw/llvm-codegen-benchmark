@@ -10,7 +10,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
-	cmpw	$8, %di
+	cmpw	$-2, %di
 	setb	%al
 	retq
 func0000000000000010:                   # @func0000000000000010

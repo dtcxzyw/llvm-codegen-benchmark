@@ -1,7 +1,8 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; git/optimized/git.ll
 ; lightgbm/optimized/train_share_states.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll

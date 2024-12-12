@@ -7,7 +7,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = icmp eq i32 %3, 1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -21,15 +21,13 @@ define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; linux/optimized/rhashtable.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
-; openusd/optimized/reconinter.c.ll
-; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -40,13 +38,24 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-ieee80211.c.ll
+; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp ugt i32 %3, 127
+  %4 = icmp samesign ult i32 %3, 5
   %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-ieee80211.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, 127
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

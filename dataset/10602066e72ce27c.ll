@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -36,6 +36,7 @@
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; assimp/optimized/DeboneProcess.cpp.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/BenchmarkBitset.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll

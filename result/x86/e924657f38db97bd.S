@@ -16,13 +16,13 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rdx, %rdi
 	setg	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	subq	%rdi, %rdx
 	subq	%rsi, %rdi
 	cmpq	%rdx, %rdi
 	setb	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	subq	%rdi, %rdx
 	subq	%rsi, %rdi
 	cmpq	%rdx, %rdi

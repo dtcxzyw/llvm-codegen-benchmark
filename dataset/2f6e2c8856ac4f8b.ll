@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -29,6 +29,7 @@
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i16 %0) #0 {
 entry:
@@ -38,7 +39,7 @@ entry:
   ret i8 %3
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -67,6 +68,7 @@ entry:
 ; qdrant-rs/optimized/49gep1elv33vxlrq.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000005(i16 %0) #0 {
 entry:

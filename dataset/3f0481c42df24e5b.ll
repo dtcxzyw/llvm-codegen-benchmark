@@ -1,44 +1,33 @@
 
-%"class.folly::UnboundedQueue.185.2576978" = type { %"struct.folly::UnboundedQueue<folly::CPUThreadPoolExecutor::CPUTask, false, false, true>::Consumer.2576979", [80 x i8], %"struct.folly::UnboundedQueue<folly::CPUThreadPoolExecutor::CPUTask, false, false, true>::Producer.2576980", [112 x i8] }
-%"struct.folly::UnboundedQueue<folly::CPUThreadPoolExecutor::CPUTask, false, false, true>::Consumer.2576979" = type { %"struct.std::atomic.186.2576981", %"struct.std::atomic.2576836", %"class.folly::hazptr_obj_cohort.2576982" }
-%"struct.std::atomic.186.2576981" = type { %"struct.std::__atomic_base.187.2576983" }
-%"struct.std::__atomic_base.187.2576983" = type { ptr }
-%"struct.std::atomic.2576836" = type { %"struct.std::__atomic_base.2576845" }
-%"struct.std::__atomic_base.2576845" = type { i64 }
-%"class.folly::hazptr_obj_cohort.2576982" = type { %"class.folly::hazptr_detail::shared_head_tail_list.2576984", %"struct.std::atomic.17.2576837", %"struct.std::atomic.19.2576985", %"struct.std::atomic.19.2576985", %"struct.std::atomic.15.2576986" }
-%"class.folly::hazptr_detail::shared_head_tail_list.2576984" = type { %"struct.std::atomic.15.2576986", %"struct.std::atomic.15.2576986" }
-%"struct.std::atomic.17.2576837" = type { %"struct.std::__atomic_base.18.2576847" }
-%"struct.std::__atomic_base.18.2576847" = type { i32 }
-%"struct.std::atomic.19.2576985" = type { %"struct.std::__atomic_base.20.2576987" }
-%"struct.std::__atomic_base.20.2576987" = type { i8 }
-%"struct.std::atomic.15.2576986" = type { %"struct.std::__atomic_base.16.2576988" }
-%"struct.std::__atomic_base.16.2576988" = type { ptr }
-%"struct.folly::UnboundedQueue<folly::CPUThreadPoolExecutor::CPUTask, false, false, true>::Producer.2576980" = type { %"struct.std::atomic.186.2576981", %"struct.std::atomic.2576836" }
+%"class.folly::UnboundedQueue.185.2691154" = type { %"struct.folly::UnboundedQueue<folly::CPUThreadPoolExecutor::CPUTask, false, false, true>::Consumer.2691155", [80 x i8], %"struct.folly::UnboundedQueue<folly::CPUThreadPoolExecutor::CPUTask, false, false, true>::Producer.2691156", [112 x i8] }
+%"struct.folly::UnboundedQueue<folly::CPUThreadPoolExecutor::CPUTask, false, false, true>::Consumer.2691155" = type { %"struct.std::atomic.186.2691157", %"struct.std::atomic.2691012", %"class.folly::hazptr_obj_cohort.2691158" }
+%"struct.std::atomic.186.2691157" = type { %"struct.std::__atomic_base.187.2691159" }
+%"struct.std::__atomic_base.187.2691159" = type { ptr }
+%"struct.std::atomic.2691012" = type { %"struct.std::__atomic_base.2691021" }
+%"struct.std::__atomic_base.2691021" = type { i64 }
+%"class.folly::hazptr_obj_cohort.2691158" = type { %"class.folly::hazptr_detail::shared_head_tail_list.2691160", %"struct.std::atomic.17.2691013", %"struct.std::atomic.19.2691161", %"struct.std::atomic.19.2691161", %"struct.std::atomic.15.2691162" }
+%"class.folly::hazptr_detail::shared_head_tail_list.2691160" = type { %"struct.std::atomic.15.2691162", %"struct.std::atomic.15.2691162" }
+%"struct.std::atomic.17.2691013" = type { %"struct.std::__atomic_base.18.2691023" }
+%"struct.std::__atomic_base.18.2691023" = type { i32 }
+%"struct.std::atomic.19.2691161" = type { %"struct.std::__atomic_base.20.2691163" }
+%"struct.std::__atomic_base.20.2691163" = type { i8 }
+%"struct.std::atomic.15.2691162" = type { %"struct.std::__atomic_base.16.2691164" }
+%"struct.std::__atomic_base.16.2691164" = type { ptr }
+%"struct.folly::UnboundedQueue<folly::CPUThreadPoolExecutor::CPUTask, false, false, true>::Producer.2691156" = type { %"struct.std::atomic.186.2691157", %"struct.std::atomic.2691012" }
 
-; 3 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
+; icu/optimized/ucnv_u8.ll
+; icu/optimized/ucnvmbcs.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
   %4 = sext i8 %1 to i64
   %5 = sub nsw i64 %4, %3
-  %6 = getelementptr nusw %"class.folly::UnboundedQueue.185.2576978", ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 2 occurrences:
-; icu/optimized/ucnv_u8.ll
-; icu/optimized/ucnvmbcs.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = sext i8 %2 to i64
-  %4 = sext i8 %1 to i64
-  %5 = sub nsw i64 %4, %3
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.folly::UnboundedQueue.185.2691154", ptr %0, i64 %5
   ret ptr %6
 }
 

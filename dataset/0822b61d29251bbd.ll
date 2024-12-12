@@ -1,10 +1,11 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; spike/optimized/s_subMagsF16.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -59,7 +60,7 @@ entry:
 define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %0, -1
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 

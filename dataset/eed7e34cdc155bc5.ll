@@ -1,5 +1,5 @@
 
-; 316 occurrences:
+; 330 occurrences:
 ; abseil-cpp/optimized/log_entry_test.cc.ll
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -34,6 +34,20 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/cmCTest.cxx.ll
@@ -317,7 +331,7 @@
 ; yosys/optimized/wreduce.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = add i64 %.neg, %0
@@ -325,7 +339,7 @@ entry:
   ret i1 %4
 }
 
-; 325 occurrences:
+; 339 occurrences:
 ; abseil-cpp/optimized/log_entry_test.cc.ll
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -360,6 +374,20 @@ entry:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/cmCTest.cxx.ll
@@ -652,7 +680,7 @@ entry:
 ; yosys/optimized/wreduce.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = add i64 %.neg, %0
@@ -680,7 +708,7 @@ entry:
 ; wasmedge/optimized/vinode.cpp.ll
 ; yosys/optimized/ast.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = add i64 %.neg, %0
@@ -688,10 +716,22 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; boost/optimized/static_string.ll
+; oiio/optimized/strutil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %.neg = sub i64 %2, %1
+  %3 = add i64 %.neg, %0
+  %4 = icmp eq i64 %3, -1
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = add i64 %.neg, %0
@@ -701,20 +741,9 @@ entry:
 }
 
 ; 1 occurrences:
-; oiio/optimized/strutil.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %.neg = sub i64 %2, %1
-  %3 = add i64 %.neg, %0
-  %4 = icmp eq i64 %3, -2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = add i64 %.neg, %0

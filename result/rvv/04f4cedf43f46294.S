@@ -13,11 +13,11 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmfeq.vv	v0, v10, v8
+	vmfeq.vv	v0, v8, v10
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmfne.vv	v0, v10, v8
+	vmfne.vv	v0, v8, v10
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma

@@ -1,7 +1,9 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	andl	$7, %edx
+	xorl	%eax, %eax
 	cmpl	$1, %edx
-	sbbl	$0, %esi
+	sete	%al
+	subl	%eax, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq

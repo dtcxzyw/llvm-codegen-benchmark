@@ -29,7 +29,7 @@ define i64 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = select i1 %2, i64 0, i64 24
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -53,7 +53,7 @@ define i64 @func0000000000000005(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = select i1 %2, i64 0, i64 -4
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -71,7 +71,8 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/core.ll
 ; libquic/optimized/quic_protocol.cc.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
@@ -82,7 +83,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
-  %3 = select i1 %2, i64 0, i64 32
+  %3 = select i1 %2, i64 0, i64 16
   %4 = add nuw nsw i64 %3, %0
   ret i64 %4
 }

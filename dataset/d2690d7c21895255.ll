@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
+; boost/optimized/get_turns.ll
 ; flac/optimized/decode.c.ll
 ; php/optimized/shared_alloc_mmap.ll
 ; postgres/optimized/walsender.ll
@@ -27,14 +28,15 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; freetype/optimized/pshinter.c.ll
+; hermes/optimized/APFloat.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 15
-  %4 = and i64 %3, -16
+  %3 = add nsw i64 %2, 16383
+  %4 = and i64 %3, 32767
   %5 = select i1 %0, i64 %1, i64 %4
   ret i64 %5
 }

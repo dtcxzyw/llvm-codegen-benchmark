@@ -7,7 +7,7 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; qemu/optimized/block_mirror.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000098c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = and i64 %3, %1
@@ -22,10 +22,10 @@ entry:
 ; verilator/optimized/V3Undriven.cpp.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000981(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ne i64 %4, 0
   %6 = icmp eq i64 %0, 0
   %7 = and i1 %6, %5
@@ -35,10 +35,10 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000082c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp eq i64 %4, 0
   %6 = icmp ne i64 %0, 0
   %7 = and i1 %6, %5
@@ -48,10 +48,10 @@ entry:
 ; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000984(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ne i64 %4, 0
   %6 = icmp ult i64 %0, 3
   %7 = and i1 %6, %5

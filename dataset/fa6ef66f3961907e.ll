@@ -3,7 +3,7 @@
 ; luau/optimized/isocline.c.ll
 ; postgres/optimized/like_support.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000484(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nsw i8 %2, -65
   %4 = icmp ult i8 %3, 26
@@ -17,7 +17,7 @@ entry:
 ; freetype/optimized/ftbase.c.ll
 ; wireshark/optimized/packet-rftap.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, 1
   %4 = icmp ult i8 %3, 2
@@ -31,7 +31,7 @@ entry:
 ; cpython/optimized/_codecs_cn.ll
 ; wireshark/optimized/commview.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -13
   %4 = icmp ult i8 %3, -12
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/commview.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -32
   %4 = icmp ult i8 %3, -31

@@ -1,5 +1,5 @@
 
-; 246 occurrences:
+; 245 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -27,6 +27,7 @@
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx.cpp.ll
@@ -75,7 +76,7 @@
 ; linux/optimized/bitmap.ll
 ; linux/optimized/commoncap.ll
 ; linux/optimized/core.ll
-; linux/optimized/cppc.ll
+; linux/optimized/cpuset.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/exmisc.ll
 ; linux/optimized/genalloc.ll
@@ -120,8 +121,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; php/optimized/zend_inference.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll

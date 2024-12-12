@@ -9,7 +9,7 @@ func0000000000000002:                   # @func0000000000000002
 	sarl	$31, %eax
 	andl	%edi, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	andl	$14, %esi
 	cmpl	$6, %esi
 	movl	$1, %eax

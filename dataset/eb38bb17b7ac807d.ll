@@ -17,35 +17,11 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i64 %0, i8 %1, i64 %2) #0 {
+define i1 @func0000000000000089(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = icmp uge i64 %3, %0
   %5 = trunc i8 %1 to i1
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; postgres/optimized/xlog.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000029(i64 %0, i8 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, -1
-  %4 = icmp uge i64 %3, %0
-  %5 = trunc nuw i8 %1 to i1
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i8 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, 1
-  %4 = icmp ne i64 %3, %0
-  %5 = trunc nuw i8 %1 to i1
   %6 = and i1 %4, %5
   ret i1 %6
 }

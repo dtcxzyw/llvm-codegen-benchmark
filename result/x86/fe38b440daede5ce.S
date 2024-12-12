@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$31, %edx
 	cmpl	$5, %edx
 	sete	%cl
@@ -7,7 +7,7 @@ func0000000000000011:                   # @func0000000000000011
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	andl	$31, %edx
 	cmpl	$5, %edx
 	sete	%cl
@@ -16,13 +16,13 @@ func00000000000000c1:                   # @func00000000000000c1
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	cmpq	$47, %rsi
 	sete	%al
 	andb	%dil, %dl
 	andb	%dl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	andl	$3, %edx
 	cmpl	$1, %edx
 	sete	%cl
@@ -31,9 +31,20 @@ func0000000000000041:                   # @func0000000000000041
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func0000000000000034:                   # @func0000000000000034
+	movabsq	$4503599625273344, %rax         # imm = 0xFFFFFFFE00000
+	testq	%rax, %rdx
+	sete	%cl
+	cmpq	$1054, %rsi                     # imm = 0x41E
+	sete	%al
+	andb	%dil, %al
+	andb	%cl, %al
+	retq
+func000000000000018c:                   # @func000000000000018c
+	andl	$8, %edx
+	shrl	$3, %edx
 	testq	%rsi, %rsi
 	setne	%al
-	andb	%dil, %dl
+	andb	%dil, %al
 	andb	%dl, %al
 	retq

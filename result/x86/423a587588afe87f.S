@@ -1,11 +1,11 @@
 func0000000000000004:                   # @func0000000000000004
-	addb	$-8, %dil
-	xorl	%ecx, %ecx
-	cmpb	$3, %dil
-	movl	$393, %eax                      # imm = 0x189
-	cmovael	%ecx, %eax
+	addb	$-48, %dil
+	xorl	%eax, %eax
+	cmpb	$10, %dil
+	setb	%al
+	leal	2(%rax,%rax), %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addb	$-4, %dil
 	xorl	%eax, %eax
 	cmpb	$3, %dil

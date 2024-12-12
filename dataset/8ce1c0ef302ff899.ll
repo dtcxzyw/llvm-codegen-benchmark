@@ -12,7 +12,7 @@
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000022(i32 %0) #0 {
+define i8 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 1936220465
   %2 = icmp eq i32 %0, 0

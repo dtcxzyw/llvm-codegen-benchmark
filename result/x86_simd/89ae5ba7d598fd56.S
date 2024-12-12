@@ -91,6 +91,28 @@ func0000000000000006:                   # @func0000000000000006
 	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
 	retq
 .LCPI3_0:
+	.byte	164                             # 0xa4
+	.byte	164                             # 0xa4
+	.byte	164                             # 0xa4
+	.byte	164                             # 0xa4
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func000000000000001e:                   # @func000000000000001e
+	vpaddb	%xmm0, %xmm0, %xmm0
+	vpaddb	.LCPI3_0(%rip), %xmm0, %xmm0
+	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
+	retq
+.LCPI4_0:
 	.byte	56                              # 0x38
 	.byte	56                              # 0x38
 	.byte	56                              # 0x38
@@ -109,6 +131,6 @@ func0000000000000006:                   # @func0000000000000006
 	.zero	1
 func0000000000000001:                   # @func0000000000000001
 	vpaddb	%xmm0, %xmm0, %xmm0
-	vpaddb	.LCPI3_0(%rip), %xmm0, %xmm0
+	vpaddb	.LCPI4_0(%rip), %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
 	retq

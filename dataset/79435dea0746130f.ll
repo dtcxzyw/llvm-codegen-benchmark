@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/fretTime.c.ll
 ; icu/optimized/ucnv_u8.ll
 ; icu/optimized/utf_impl.ll
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
 ; wireshark/optimized/wimax_compact_ulmap_ie_decoder.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; icu/optimized/coleitr.ll
@@ -34,7 +34,6 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; mold/optimized/output-chunks.cc.M68K.cc.ll
 ; mold/optimized/output-chunks.cc.PPC32.cc.ll
 ; mold/optimized/output-chunks.cc.RV32BE.cc.ll
@@ -50,7 +49,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 16711680
   %5 = and i32 %1, 255
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -69,7 +68,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 2
   %5 = and i32 %1, 8
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -83,21 +82,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 2048
   %5 = and i32 %1, 224
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or disjoint i32 %6, %4
-  ret i32 %7
-}
-
-; 1 occurrences:
-; linux/optimized/statfs.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 81
-  %5 = and i32 %1, 8192
-  %6 = or disjoint i32 %5, %0
-  %7 = or i32 %6, %4
   ret i32 %7
 }
 
@@ -109,7 +95,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, -2147483648
   %5 = and i32 %1, 32767
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

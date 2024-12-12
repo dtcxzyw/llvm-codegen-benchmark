@@ -1,6 +1,8 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; git/optimized/diff.ll
 ; lightgbm/optimized/parser.cpp.ll
@@ -20,8 +22,10 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; flac/optimized/cuesheet.c.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -38,7 +42,11 @@ entry:
   ret i64 %5
 }
 
-; 30 occurrences:
+; 67 occurrences:
+; boost/optimized/format_args.ll
+; boost/optimized/pct_format.ll
+; boost/optimized/replacement_field_rule.ll
+; boost/optimized/src.ll
 ; delta-rs/optimized/2yom0llikg21u9sa.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; diesel-rs/optimized/27d1dwdaey9nml16.ll
@@ -69,6 +77,39 @@ entry:
 ; tree-sitter-rs/optimized/2iveef60mgth46fw.ll
 ; tree-sitter-rs/optimized/4cdqbvjes2p52ply.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4i7kbhd18au0o53jm2t49fldp.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/7diapbiz116z58qz43ov3nwc9.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/a1202jdosca6jpmc3o2s7syhq.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i8 %1) #0 {
 entry:
@@ -79,7 +120,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; openusd/optimized/stringUtils.cpp.ll
 ; php/optimized/php_http_parser.ll
@@ -124,10 +166,11 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
+; boost/optimized/src.ll
 ; flac/optimized/cuesheet.c.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
@@ -204,6 +247,19 @@ entry:
   ret i64 %5
 }
 
+; 2 occurrences:
+; boost/optimized/src.ll
+; postgres/optimized/numutils.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001e(i64 %0, i8 %1) #0 {
+entry:
+  %2 = add i8 %1, -48
+  %3 = zext nneg i8 %2 to i64
+  %4 = mul nuw nsw i64 %0, 10
+  %5 = add nuw i64 %4, %3
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; libquic/optimized/x509_vfy.c.ll
 ; Function Attrs: nounwind
@@ -229,18 +285,6 @@ entry:
   %3 = zext nneg i8 %2 to i64
   %4 = mul nuw i64 %0, 10
   %5 = add i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; postgres/optimized/numutils.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001e(i64 %0, i8 %1) #0 {
-entry:
-  %2 = add i8 %1, -48
-  %3 = zext nneg i8 %2 to i64
-  %4 = mul nuw nsw i64 %0, 10
-  %5 = add nuw i64 %4, %3
   ret i64 %5
 }
 

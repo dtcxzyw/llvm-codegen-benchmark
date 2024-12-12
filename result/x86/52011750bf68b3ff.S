@@ -3,7 +3,7 @@ func0000000000000018:                   # @func0000000000000018
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	leal	12(,%rax,4), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setne	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -11,6 +11,6 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$20000000, %eax                 # imm = 0x1312D00
 	movl	$2000000, %ecx                  # imm = 0x1E8480
 	cmovnel	%eax, %ecx
-	cmpl	%edi, %ecx
-	setae	%al
+	cmpl	%ecx, %edi
+	setbe	%al
 	retq

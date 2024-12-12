@@ -4,10 +4,10 @@
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001910(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000006610(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 2
-  %4 = icmp ugt i64 %1, 511
+  %4 = icmp samesign ugt i64 %1, 511
   %5 = select i1 %4, i1 %3, i1 false
   %6 = icmp ugt i64 %0, 127
   %7 = or i1 %5, %6

@@ -28,7 +28,7 @@ entry:
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/colvarcomp_coordnums.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1

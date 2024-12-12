@@ -31,12 +31,24 @@ func0000000000000011:                   # @func0000000000000011
 	xori	a0, a0, 1
 	addi	a0, a0, 3
 	ret
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	sext.w	a0, a0
 	sltiu	a0, a0, 5
 	li	a1, 16
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 32
+	ret
+func0000000000000031:                   # @func0000000000000031
+	sext.w	a0, a0
+	sltiu	a0, a0, 100
+	xori	a0, a0, 1
+	addi	a0, a0, 4
+	ret
+func0000000000000009:                   # @func0000000000000009
+	sext.w	a0, a0
+	sltiu	a0, a0, 4
+	li	a1, 178
+	sub	a0, a1, a0
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a0, a0

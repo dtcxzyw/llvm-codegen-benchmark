@@ -1,10 +1,10 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	addi	a1, a1, -1
 	srliw	a1, a1, 1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	addi	a1, a1, 63
 	srliw	a1, a1, 6
 	slli	a1, a1, 3
@@ -15,7 +15,7 @@ func0000000000000034:                   # @func0000000000000034
 	srliw	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000017:                   # @func0000000000000017
 	addi	a1, a1, -5
 	srliw	a1, a1, 6
 	slli	a1, a1, 3
@@ -43,25 +43,25 @@ func0000000000000024:                   # @func0000000000000024
 	srliw	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000037:                   # @func0000000000000037
 	addi	a1, a1, 1
 	srliw	a1, a1, 6
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	addi	a1, a1, 1
 	srliw	a1, a1, 1
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	addi	a1, a1, 160
 	srliw	a1, a1, 1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000027:                   # @func0000000000000027
 	addi	a1, a1, 31
 	srliw	a1, a1, 5
 	slli	a1, a1, 5

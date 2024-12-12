@@ -22,10 +22,28 @@ func0000000000000011:                   # @func0000000000000011
 .LBB2_2:
 	li	a0, 48
 	ret
+func0000000000000031:                   # @func0000000000000031
+	li	a1, -1
+	slli	a1, a1, 32
+	addi	a1, a1, -1
+	bltu	a1, a0, .LBB3_2
+	li	a0, 48
+	ret
+.LBB3_2:
+	li	a0, 16
+	ret
 func0000000000000019:                   # @func0000000000000019
 	mv	a1, a0
 	lui	a0, 524336
-	beqz	a1, .LBB3_2
+	beqz	a1, .LBB4_2
 	lui	a0, 524340
-.LBB3_2:                                # %entry
+.LBB4_2:                                # %entry
+	ret
+func0000000000000029:                   # @func0000000000000029
+	srli	a0, a0, 32
+	beqz	a0, .LBB5_2
+	li	a0, 16
+	ret
+.LBB5_2:
+	li	a0, 48
 	ret

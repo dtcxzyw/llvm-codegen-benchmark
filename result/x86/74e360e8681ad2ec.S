@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	notl	%edx
 	testb	$7, %dl
 	setne	%cl
@@ -7,7 +7,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	andb	%sil, %al
 	andb	%cl, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	testb	$7, %dl
 	sete	%cl
 	andb	%dil, %cl
@@ -15,7 +15,7 @@ func000000000000001a:                   # @func000000000000001a
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testb	$3, %dl
 	sete	%cl
 	andb	%sil, %cl
@@ -23,7 +23,7 @@ func0000000000000011:                   # @func0000000000000011
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	andl	$4, %edx
 	shrl	$2, %edx
 	andl	%esi, %edx
@@ -31,7 +31,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	setb	%al
 	andb	%dl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	andl	$4, %edx
 	shrl	$2, %edx
 	andl	%esi, %edx
@@ -39,7 +39,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	sete	%al
 	andb	%dl, %al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	shrl	$19, %edx
 	andl	%esi, %edx
 	andl	$1, %edx

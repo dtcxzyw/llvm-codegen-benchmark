@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 51 occurrences:
 ; cpython/optimized/_functoolsmodule.ll
 ; cpython/optimized/frameobject.ll
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -28,16 +28,6 @@
 ; node/optimized/libnode.embed_helpers.ll
 ; node/optimized/libnode.hooks.ll
 ; openjdk/optimized/satbMarkQueue.ll
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/clipCache.cpp.ll
-; openusd/optimized/dependencies.cpp.ll
-; openusd/optimized/flatteningSceneIndex.cpp.ll
-; openusd/optimized/namespaceEditor.cpp.ll
-; openusd/optimized/primDataSourceOverlayCache.cpp.ll
-; openusd/optimized/primTypePruningSceneIndex.cpp.ll
-; openusd/optimized/retainedSceneIndex.cpp.ll
-; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
-; openusd/optimized/testSdfPathTable.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; ruby/optimized/coverage.ll
 ; ruby/optimized/rjit_c.ll
@@ -60,6 +50,7 @@
 ; velox/optimized/VectorSaver.cpp.ll
 ; verilator/optimized/V3OrderGraphBuilder.cpp.ll
 ; verilator/optimized/V3Timing.cpp.ll
+; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
@@ -68,8 +59,7 @@ entry:
   ret i64 %3
 }
 
-; 17 occurrences:
-; cpython/optimized/multibytecodec.ll
+; 16 occurrences:
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/HermesBuiltin.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll

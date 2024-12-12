@@ -6,7 +6,7 @@
 ; folly/optimized/Uri.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -21,7 +21,7 @@ entry:
 ; folly/optimized/LogLevel.cpp.ll
 ; llvm/optimized/regcomp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -31,19 +31,17 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; linux/optimized/string_helpers.ll
 ; openjdk/optimized/hb-buffer.ll
-; php/optimized/url.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000c6(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = icmp slt i64 %4, 4
-  %6 = icmp eq i8 %0, -128
-  %7 = and i1 %5, %6
+  %6 = icmp slt i8 %0, -64
+  %7 = and i1 %6, %5
   ret i1 %7
 }
 
@@ -54,7 +52,7 @@ entry:
 ; protobuf/optimized/parser.cc.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -73,7 +71,7 @@ entry:
 ; openusd/optimized/pathParser.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -86,10 +84,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/json.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = icmp ne i8 %0, 0
   %6 = and i1 %4, %5
   ret i1 %6
@@ -98,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/fopen_wrappers.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -112,7 +110,7 @@ entry:
 ; php/optimized/fopen_wrappers.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000141(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -122,10 +120,24 @@ entry:
   ret i1 %7
 }
 
+; 2 occurrences:
+; linux/optimized/string_helpers.ll
+; php/optimized/url.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i8 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = icmp slt i64 %4, 7
+  %6 = icmp eq i8 %0, 47
+  %7 = and i1 %5, %6
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000081(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -138,7 +150,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -156,7 +168,7 @@ entry:
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000010c(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -167,14 +179,14 @@ entry:
 }
 
 ; 1 occurrences:
-; eastl/optimized/EATextUtil.cpp.ll
+; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = icmp sgt i64 %4, 5
-  %6 = icmp ult i8 %0, -2
+  %5 = icmp ugt i64 %4, 3
+  %6 = icmp ult i8 %0, 10
   %7 = and i1 %5, %6
   ret i1 %7
 }

@@ -4,7 +4,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rdi, %rsi
 	setns	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	subq	%rdx, %rsi
 	shlq	$3, %rsi
 	subq	%rdi, %rsi

@@ -1,9 +1,11 @@
 
-; 46 occurrences:
+; 48 occurrences:
 ; icu/optimized/measunit_extra.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
@@ -70,7 +72,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -108,7 +110,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
   %3 = ashr exact i32 %2, 24
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 

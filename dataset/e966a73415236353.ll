@@ -1,5 +1,5 @@
 
-; 304 occurrences:
+; 302 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/city_test.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -7,14 +7,13 @@
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CacheLocality.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
-; folly/optimized/F14Table.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -204,7 +203,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll

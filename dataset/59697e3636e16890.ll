@@ -1,5 +1,8 @@
 
-; 32 occurrences:
+; 36 occurrences:
+; boost/optimized/partition.ll
+; boost/optimized/within.ll
+; boost/optimized/within_sph_geo.ll
 ; brotli/optimized/metablock.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; graphviz/optimized/edges.c.ll
@@ -24,6 +27,7 @@
 ; quantlib/optimized/capletcoterminalperiodic.ll
 ; quantlib/optimized/extendedblackvariancesurface.ll
 ; quantlib/optimized/jumpdiffusionengine.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/qdplusamericanengine.ll
 ; quantlib/optimized/spherecylinder.ll
@@ -71,7 +75,14 @@ entry:
   ret i1 %4
 }
 
-; 53 occurrences:
+; 59 occurrences:
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/partition.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; coreutils-rs/optimized/2wc2yx8ferzqfnf3.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/emit.c.ll
@@ -92,7 +103,6 @@ entry:
 ; opencv/optimized/tldDetector.cpp.ll
 ; openspiel/optimized/cfr.cc.ll
 ; openusd/optimized/simplify.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; quantlib/optimized/analyticcompoundoptionengine.ll
 ; quantlib/optimized/analytichestonengine.ll
@@ -133,13 +143,21 @@ entry:
   ret i1 %4
 }
 
-; 99 occurrences:
+; 105 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; arrow/optimized/api_aggregate.cc.ll
 ; arrow/optimized/compare.cc.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -208,8 +226,6 @@ entry:
 ; openvdb/optimized/ValueTransformer.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/math.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/tpeqd.cpp.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/basecorrelationstructure.ll
@@ -265,9 +281,11 @@ entry:
   ret i1 %4
 }
 
-; 53 occurrences:
+; 54 occurrences:
 ; abc/optimized/giaMf.c.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within.ll
 ; casadi/optimized/kinsol.c.ll
 ; darktable/optimized/snapshots.c.ll
 ; g2o/optimized/raw_laser.cpp.ll
@@ -307,7 +325,6 @@ entry:
 ; proj/optimized/generic_inverse.cpp.ll
 ; proj/optimized/grids.cpp.ll
 ; proj/optimized/horner.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; quantlib/optimized/blackvariancesurface.ll
 ; quantlib/optimized/chisquaredistribution.ll
 ; quantlib/optimized/extendedblackvariancesurface.ll
@@ -343,7 +360,8 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/intersection_box.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/generate-constraints.cpp.ll
 ; llvm/optimized/CodeLayout.cpp.ll
@@ -367,7 +385,17 @@ entry:
   ret i1 %4
 }
 
-; 36 occurrences:
+; 46 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within.ll
+; boost/optimized/within_sph_geo.ll
 ; casadi/optimized/scpgen.cpp.ll
 ; graphviz/optimized/geom.c.ll
 ; graphviz/optimized/poly.c.ll
@@ -412,9 +440,8 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; graphviz/optimized/legal.c.ll
-; openblas/optimized/dlacon.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i1 %0, double %1, double %2) #0 {
 entry:

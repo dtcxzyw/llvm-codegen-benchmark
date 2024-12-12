@@ -3,12 +3,12 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$6, %rsi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	subl	%edx, %esi
 	shrl	$3, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	subq	%rdx, %rsi
 	movabsq	$34359738360, %rax              # imm = 0x7FFFFFFF8
 	andq	%rsi, %rax
@@ -20,7 +20,7 @@ func0000000000000000:                   # @func0000000000000000
 	andq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	subl	%edx, %esi
 	shrl	$8, %esi
 	leaq	(%rdi,%rsi,2), %rax

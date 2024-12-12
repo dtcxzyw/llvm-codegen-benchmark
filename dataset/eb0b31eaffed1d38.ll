@@ -35,7 +35,7 @@ entry:
   %4 = xor i32 %1, -1
   %5 = icmp ugt i32 %3, %4
   %6 = zext i1 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

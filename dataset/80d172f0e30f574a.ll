@@ -1,6 +1,6 @@
 
-%struct.CacheItem.2593088 = type { i64, i64, ptr }
-%"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ExplicitProducer::BlockIndexEntry.2663362" = type { i64, ptr }
+%struct.CacheItem.2706813 = type { i64, i64, ptr }
+%"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ExplicitProducer::BlockIndexEntry.2776479" = type { i64, ptr }
 
 ; 5 occurrences:
 ; linux/optimized/printk_ringbuffer.ll
@@ -12,8 +12,8 @@
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = and i64 %3, %1
-  %5 = getelementptr %struct.CacheItem.2593088, ptr %0, i64 %4, i32 2
+  %4 = and i64 %1, %3
+  %5 = getelementptr %struct.CacheItem.2706813, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -51,8 +51,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = and i64 %3, %1
-  %5 = getelementptr nusw %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ExplicitProducer::BlockIndexEntry.2663362", ptr %0, i64 %4, i32 1
+  %4 = and i64 %1, %3
+  %5 = getelementptr nusw %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ExplicitProducer::BlockIndexEntry.2776479", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

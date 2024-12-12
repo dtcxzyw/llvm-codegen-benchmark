@@ -1,6 +1,7 @@
 
-; 372 occurrences:
+; 373 occurrences:
 ; abc/optimized/wlcGraft.c.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -376,7 +377,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 

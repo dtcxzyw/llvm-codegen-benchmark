@@ -1,9 +1,9 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	subq	%rsi, %rdx
 	shrq	$4, %rdx
 	leaq	64(%rdi,%rdx), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	subq	%rsi, %rdx
 	shrq	$16, %rdx
 	leaq	(%rdx,%rdx,4), %rax

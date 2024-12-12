@@ -129,10 +129,10 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000053(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
-  %3 = icmp ult i64 %0, 16
+  %3 = icmp samesign ult i64 %0, 16
   %4 = select i1 %3, i64 16, i64 %2
   ret i64 %4
 }

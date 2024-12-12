@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	-2                              # 0xfffffffffffffffe
-func000000000000014a:                   # @func000000000000014a
+func000000000000028a:                   # @func000000000000028a
 	vpsrlq	$3, %ymm1, %ymm1
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1

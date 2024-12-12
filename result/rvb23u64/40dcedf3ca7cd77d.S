@@ -48,6 +48,16 @@ func00000000000000f0:                   # @func00000000000000f0
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
+func00000000000000fd:                   # @func00000000000000fd
+	addi	a2, a2, 1
+	mul	a1, a1, a2
+	addw	a0, a0, a1
+	ret
+func00000000000000ed:                   # @func00000000000000ed
+	addi	a2, a2, 1
+	mul	a1, a1, a2
+	addw	a0, a0, a1
+	ret
 func00000000000000e5:                   # @func00000000000000e5
 	addi	a2, a2, 1
 	mul	a1, a1, a2

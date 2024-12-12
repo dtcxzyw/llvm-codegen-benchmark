@@ -27,8 +27,13 @@ func0000000000000019:                   # @func0000000000000019
 	sext.w	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	sltiu	a1, a1, 8
+	sext.w	a0, a0
+	czero.nez	a0, a0, a1
+	ret
+func0000000000000011:                   # @func0000000000000011
+	sltiu	a1, a1, 9
 	sext.w	a0, a0
 	czero.nez	a0, a0, a1
 	ret

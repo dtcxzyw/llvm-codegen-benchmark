@@ -12,7 +12,7 @@
 define float @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 9.000000e+00
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   %4 = select i1 %3, float %2, float %0
   ret float %4
 }
@@ -29,7 +29,7 @@ entry:
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 1.000000e+00
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   %4 = select i1 %3, float %2, float %0
   ret float %4
 }

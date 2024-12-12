@@ -1,89 +1,37 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v16.4s, #191, lsl #24
-	ldp	q18, q17, [sp, #32]
-	ldp	q19, q20, [sp]
-	fmul	v17.4s, v17.4s, v16.4s
-	fmul	v18.4s, v18.4s, v16.4s
-	fmul	v20.4s, v20.4s, v16.4s
-	fmul	v16.4s, v19.4s, v16.4s
-	fadd	v7.4s, v7.4s, v17.4s
-	fadd	v5.4s, v5.4s, v20.4s
-	fadd	v6.4s, v6.4s, v18.4s
-	fadd	v4.4s, v4.4s, v16.4s
-	fcmgt	v3.4s, v3.4s, v7.4s
-	fcmgt	v2.4s, v2.4s, v6.4s
-	fcmgt	v1.4s, v1.4s, v5.4s
-	fcmgt	v0.4s, v0.4s, v4.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fmov	s3, #-0.50000000
+	fmul	s2, s2, s3
+	fadd	s1, s1, s2
+	fcmp	s1, s0
+	cset	w0, mi
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v16.4s, #191, lsl #24
-	ldp	q18, q17, [sp, #32]
-	ldp	q19, q20, [sp]
-	fmul	v17.4s, v17.4s, v16.4s
-	fmul	v18.4s, v18.4s, v16.4s
-	fmul	v20.4s, v20.4s, v16.4s
-	fmul	v16.4s, v19.4s, v16.4s
-	fadd	v7.4s, v7.4s, v17.4s
-	fadd	v5.4s, v5.4s, v20.4s
-	fadd	v6.4s, v6.4s, v18.4s
-	fadd	v4.4s, v4.4s, v16.4s
-	fcmgt	v3.4s, v7.4s, v3.4s
-	fcmgt	v2.4s, v6.4s, v2.4s
-	fcmgt	v1.4s, v5.4s, v1.4s
-	fcmgt	v0.4s, v4.4s, v0.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fmov	s3, #-0.50000000
+	fmul	s2, s2, s3
+	fadd	s1, s1, s2
+	fcmp	s1, s0
+	cset	w0, gt
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	movi	v16.4s, #191, lsl #24
-	ldp	q18, q17, [sp, #32]
-	ldp	q19, q20, [sp]
-	fmul	v17.4s, v17.4s, v16.4s
-	fmul	v18.4s, v18.4s, v16.4s
-	fmul	v20.4s, v20.4s, v16.4s
-	fmul	v16.4s, v19.4s, v16.4s
-	fadd	v7.4s, v7.4s, v17.4s
-	fadd	v5.4s, v5.4s, v20.4s
-	fadd	v6.4s, v6.4s, v18.4s
-	fadd	v4.4s, v4.4s, v16.4s
-	fcmge	v3.4s, v3.4s, v7.4s
-	fcmge	v2.4s, v2.4s, v6.4s
-	fcmge	v1.4s, v1.4s, v5.4s
-	fcmge	v0.4s, v0.4s, v4.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fmov	s3, #-0.50000000
+	fmul	s2, s2, s3
+	fadd	s1, s1, s2
+	fcmp	s1, s0
+	cset	w0, ls
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mov	w8, #-1011613696                // =0xc3b40000
-	ldp	q18, q17, [sp, #32]
-	dup	v16.4s, w8
-	ldp	q19, q20, [sp]
-	fmul	v17.4s, v17.4s, v16.4s
-	fmul	v18.4s, v18.4s, v16.4s
-	fmul	v20.4s, v20.4s, v16.4s
-	fmul	v16.4s, v19.4s, v16.4s
-	fadd	v7.4s, v7.4s, v17.4s
-	fadd	v5.4s, v5.4s, v20.4s
-	fadd	v6.4s, v6.4s, v18.4s
-	fadd	v4.4s, v4.4s, v16.4s
-	fcmeq	v3.4s, v7.4s, v3.4s
-	fcmeq	v2.4s, v6.4s, v2.4s
-	fcmeq	v1.4s, v5.4s, v1.4s
-	fcmeq	v0.4s, v4.4s, v0.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fmov	s3, w8
+	fmul	s2, s2, s3
+	fadd	s1, s1, s2
+	fcmp	s1, s0
+	cset	w0, eq
 	ret
                                         // -- End function

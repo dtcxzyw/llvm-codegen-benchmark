@@ -4,7 +4,7 @@ func00000000000000c0:                   # @func00000000000000c0
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vsll.vv	v10, v10, v12
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret
 func0000000000000021:                   # @func0000000000000021
 	li	a0, 16
@@ -13,7 +13,7 @@ func0000000000000021:                   # @func0000000000000021
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vsll.vv	v10, v10, v12
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret
 func0000000000000020:                   # @func0000000000000020
 	li	a0, 16
@@ -54,5 +54,5 @@ func000000000000002d:                   # @func000000000000002d
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vsll.vv	v10, v10, v12
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret

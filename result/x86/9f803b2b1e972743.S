@@ -1,7 +1,7 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	shrl	$3, %esi
 	andl	$511, %esi                      # imm = 0x1FF
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al

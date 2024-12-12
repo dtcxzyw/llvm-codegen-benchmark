@@ -15,7 +15,13 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
+; 16 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; gromacs/optimized/bias.cpp.ll
 ; openmpi/optimized/ad_nfs_read.ll
 ; openmpi/optimized/ad_read_str.ll

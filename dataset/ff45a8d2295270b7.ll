@@ -17,9 +17,10 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
+; lvgl/optimized/lv_demo_render.ll
 ; openjdk/optimized/AlphaMath.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i64 %0) #0 {
@@ -30,15 +31,14 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/perfmon.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = lshr i32 %1, 1
-  %3 = or disjoint i32 %2, 64
+  %2 = lshr i32 %1, 16
+  %3 = or disjoint i32 %2, -2147483648
   ret i32 %3
 }
 

@@ -25,7 +25,7 @@ func00000000000000a0:                   # @func00000000000000a0
 	leal	(%rsi,%rax,4), %eax
 	leal	7(%rdi,%rax), %eax
 	retq
-func000000000000004f:                   # @func000000000000004f
+func000000000000014f:                   # @func000000000000014f
 	leal	13(%rsi), %eax
 	cmpq	$4096, %rdx                     # imm = 0x1000
 	cmovbl	%esi, %eax
@@ -38,7 +38,7 @@ func000000000000001f:                   # @func000000000000001f
 	cmovnel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000145:                   # @func0000000000000145
 	movabsq	$10000000000000000, %rax        # imm = 0x2386F26FC10000
 	cmpq	%rax, %rdx
 	movl	$17, %eax

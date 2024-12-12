@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; php/optimized/pcre2_match.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = xor i1 %2, true
-  %4 = icmp ugt i32 %1, 1073741823
-  %5 = or i1 %4, %3
-  %6 = select i1 %5, i1 true, i1 %0
-  ret i1 %6
-}
-
 ; 3 occurrences:
 ; hermes/optimized/TypeInference.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll

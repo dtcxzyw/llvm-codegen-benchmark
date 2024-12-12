@@ -12,7 +12,8 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/vm.ll

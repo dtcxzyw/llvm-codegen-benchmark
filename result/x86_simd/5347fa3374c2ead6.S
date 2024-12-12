@@ -1,4 +1,20 @@
 .LCPI0_0:
+	.short	65508                           # 0xffe4
+	.short	65508                           # 0xffe4
+	.short	65508                           # 0xffe4
+	.short	65508                           # 0xffe4
+	.short	65508                           # 0xffe4
+	.short	65508                           # 0xffe4
+	.short	65508                           # 0xffe4
+	.short	65508                           # 0xffe4
+func0000000000000080:                   # @func0000000000000080
+	vpaddd	%ymm1, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpmovdw	%ymm0, %xmm0
+	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
 	.short	24576                           # 0x6000
 	.short	24576                           # 0x6000
 	.short	24576                           # 0x6000
@@ -9,22 +25,6 @@
 	.short	24576                           # 0x6000
 func00000000000000c0:                   # @func00000000000000c0
 	vpslld	$6, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpmovdw	%ymm0, %xmm0
-	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI1_0:
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-func0000000000000080:                   # @func0000000000000080
-	vpaddd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpaddw	.LCPI1_0(%rip), %xmm0, %xmm0

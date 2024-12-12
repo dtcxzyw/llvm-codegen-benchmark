@@ -7,7 +7,7 @@ entry:
   %3 = getelementptr i32, ptr %2, i64 %1
   %4 = getelementptr i32, ptr %3, i64 %1
   %5 = getelementptr i32, ptr %4, i64 %1
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -71,12 +71,12 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002ac(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000007ec(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw ptr, ptr %2, i64 %1
-  %4 = getelementptr nusw ptr, ptr %3, i64 %1
-  %5 = getelementptr nusw ptr, ptr %4, i64 %1
-  %6 = icmp ne ptr %5, %0
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %1
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
@@ -147,12 +147,12 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000007e1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw ptr, ptr %2, i64 %1
-  %4 = getelementptr nusw ptr, ptr %3, i64 %1
-  %5 = getelementptr nusw ptr, ptr %4, i64 %1
-  %6 = icmp eq ptr %5, %0
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %1
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -166,12 +166,12 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a8(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000007e8(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 %1
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %1
-  %6 = icmp ult ptr %5, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %1
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -180,12 +180,12 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a4(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000007e4(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 %1
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %1
-  %6 = icmp ugt ptr %5, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %1
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -197,7 +197,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %1
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -209,7 +209,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %1
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 

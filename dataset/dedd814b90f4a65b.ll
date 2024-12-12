@@ -1,6 +1,5 @@
 
-; 172 occurrences:
-; abc/optimized/abcLog.c.ll
+; 170 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -86,6 +85,8 @@
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -118,9 +119,7 @@
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; openblas/optimized/dgelq.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dgeqr.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; opencv/optimized/aruco_detector.cpp.ll
@@ -151,7 +150,6 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/jcdctmgr.ll
-; openmpi/optimized/group_strided.ll
 ; openmpi/optimized/netpatterns_knomial_tree.ll
 ; openmpi/optimized/netpatterns_multinomial_tree.ll
 ; openmpi/optimized/netpatterns_nary_tree.ll
@@ -180,12 +178,13 @@ entry:
   ret i32 %4
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/sclBuffer.c.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; icu/optimized/collationweights.ll
 ; libquic/optimized/rsa_impl.c.ll
 ; linux/optimized/intel_display.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll

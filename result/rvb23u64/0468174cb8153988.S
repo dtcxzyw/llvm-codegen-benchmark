@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
 	sh1add	a1, a1, a1
-	li	a2, 4
+	li	a2, 3
 	sext.w	a1, a1
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 56 occurrences:
 ; c3c/optimized/float.c.ll
 ; opencv/optimized/gdal-image.cpp.ll
 ; proj/optimized/aeqd.cpp.ll
@@ -10,27 +10,21 @@
 ; proj/optimized/ccon.cpp.ll
 ; proj/optimized/cea.cpp.ll
 ; proj/optimized/col_urban.cpp.ll
-; proj/optimized/collg.cpp.ll
-; proj/optimized/crast.cpp.ll
 ; proj/optimized/denoy.cpp.ll
-; proj/optimized/eck1.cpp.ll
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/eck3.cpp.ll
 ; proj/optimized/eck5.cpp.ll
 ; proj/optimized/eqc.cpp.ll
 ; proj/optimized/eqdc.cpp.ll
 ; proj/optimized/eqearth.cpp.ll
-; proj/optimized/fahey.cpp.ll
 ; proj/optimized/gauss.cpp.ll
 ; proj/optimized/geos.cpp.ll
 ; proj/optimized/gins8.cpp.ll
 ; proj/optimized/gstmerc.cpp.ll
 ; proj/optimized/hatano.cpp.ll
 ; proj/optimized/labrd.cpp.ll
-; proj/optimized/larr.cpp.ll
 ; proj/optimized/lask.cpp.ll
 ; proj/optimized/lcca.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpp.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/merc.cpp.ll
@@ -38,7 +32,6 @@
 ; proj/optimized/natearth.cpp.ll
 ; proj/optimized/natearth2.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/ocea.cpp.ll
 ; proj/optimized/putp2.cpp.ll
 ; proj/optimized/putp3.cpp.ll
@@ -55,9 +48,6 @@
 ; proj/optimized/urmfps.cpp.ll
 ; proj/optimized/wag2.cpp.ll
 ; proj/optimized/wag3.cpp.ll
-; proj/optimized/wag7.cpp.ll
-; proj/optimized/wink1.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/analytich1hwengine.ll
 ; quantlib/optimized/analytichestonforwardeuropeanengine.ll
 ; quantlib/optimized/analytichestonhullwhiteengine.ll

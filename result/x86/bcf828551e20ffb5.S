@@ -10,3 +10,10 @@ func000000000000000c:                   # @func000000000000000c
 	andl	%esi, %eax
 	andb	%dl, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movabsq	$4503599625273344, %rax         # imm = 0xFFFFFFFE00000
+	testq	%rax, %rdx
+	sete	%al
+	andl	%esi, %edi
+	andb	%dil, %al
+	retq

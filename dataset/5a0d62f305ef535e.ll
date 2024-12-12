@@ -3,7 +3,7 @@
 ; qemu/optimized/hw_net_can_can_kvaser_pci.c.ll
 ; slurm/optimized/node_scheduler.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = or disjoint i64 %2, 8388608
@@ -18,7 +18,7 @@ entry:
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = or disjoint i64 %2, 4096
@@ -27,8 +27,7 @@ entry:
   ret i64 %5
 }
 
-; 72 occurrences:
-; llvm/optimized/AArch64Disassembler.cpp.ll
+; 71 occurrences:
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -101,11 +100,23 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = or disjoint i64 %2, 8388608
   %4 = icmp ult i32 %0, 8388608
+  %5 = select i1 %4, i64 %2, i64 %3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/AArch64Disassembler.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000074(i32 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = or disjoint i64 %2, -2097152
+  %4 = icmp samesign ult i32 %0, 1048576
   %5 = select i1 %4, i64 %2, i64 %3
   ret i64 %5
 }

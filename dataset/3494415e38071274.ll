@@ -8,7 +8,7 @@
 define i8 @func00000000000000ff(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 7
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   %6 = trunc i32 %5 to i8
   %7 = and i8 %6, 63

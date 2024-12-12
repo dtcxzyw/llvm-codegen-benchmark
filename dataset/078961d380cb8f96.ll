@@ -42,7 +42,7 @@ entry:
   %2 = lshr exact i8 %1, 2
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

@@ -12,3 +12,19 @@ func000000000000000a:                   // @func000000000000000a
 	sub	x0, x8, #16
 	ret
                                         // -- End function
+func000000000000000f:                   // @func000000000000000f
+// %bb.0:                               // %entry
+	mov	w8, #12                         // =0xc
+	madd	x8, x1, x8, x0
+	and	x8, x8, #0xfffffffffffffffe
+	add	x0, x8, #8
+	ret
+                                        // -- End function
+func000000000000000b:                   // @func000000000000000b
+// %bb.0:                               // %entry
+	mov	w8, #12                         // =0xc
+	madd	x8, x1, x8, x0
+	and	x8, x8, #0xfffffffffffffffe
+	add	x0, x8, #8
+	ret
+                                        // -- End function

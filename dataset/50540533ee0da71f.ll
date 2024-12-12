@@ -29,25 +29,23 @@ entry:
   %3 = xor i32 %1, %2
   %4 = and i32 %3, 7
   %5 = icmp ne i32 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 7 occurrences:
-; lightgbm/optimized/bin.cpp.ll
+; 5 occurrences:
 ; linux/optimized/acpi_pm.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/vht.ll
 ; linux/optimized/xhci-ring.ll
-; opencv/optimized/filter.dispatch.cpp.ll
 ; openjdk/optimized/cmsintrp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = and i32 %1, 65535
-  %5 = icmp ult i32 %4, %3
-  %6 = or i1 %5, %0
+  %5 = icmp samesign ult i32 %4, %3
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -75,50 +73,32 @@ entry:
   %3 = xor i32 %1, %2
   %4 = and i32 %3, 65280
   %5 = icmp eq i32 %4, 0
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 7 occurrences:
-; lief/optimized/psa_crypto.c.ll
-; lightgbm/optimized/bin.cpp.ll
-; linux/optimized/acpi_pm.ll
-; linux/optimized/mlme.ll
-; linux/optimized/xhci-ring.ll
-; php/optimized/zend_inheritance.ll
-; postgres/optimized/bufpage.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 64
-  %4 = and i32 %1, 64
-  %5 = icmp ugt i32 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 3 occurrences:
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMuxes.c.ll
-; llvm/optimized/SemaCast.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 536870911
-  %4 = and i32 %1, 536870911
-  %5 = icmp uge i32 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
-; libwebp/optimized/predictor_enc.c.ll
+; llvm/optimized/SemaCast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000032(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 255
-  %4 = and i32 %1, 255
-  %5 = icmp ule i32 %4, %3
+  %3 = and i32 %2, 65535
+  %4 = and i32 %1, 65535
+  %5 = icmp samesign uge i32 %4, %3
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; linux/optimized/acpi_pm.ll
+; linux/optimized/mlme.ll
+; linux/optimized/xhci-ring.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 3
+  %4 = and i32 %1, 3
+  %5 = icmp samesign ugt i32 %4, %3
   %6 = or i1 %5, %0
   ret i1 %6
 }

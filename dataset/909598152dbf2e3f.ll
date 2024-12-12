@@ -23,7 +23,7 @@ define i32 @func00000000000000a0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = add i32 %5, 2
   ret i32 %6
 }
@@ -41,11 +41,11 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000085(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000185(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 1
+  %3 = icmp samesign ugt i32 %2, 1
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = add nsw i32 %5, 4
   ret i32 %6
 }
@@ -100,7 +100,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = add i32 %5, 1
   ret i32 %6
 }
@@ -112,7 +112,7 @@ define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = add nuw nsw i32 %5, 2
   ret i32 %6
 }
@@ -120,11 +120,11 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/exponentiation.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 4
+  %3 = icmp samesign ugt i32 %2, 4
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = add nsw i32 %5, 64
   ret i32 %6
 }
@@ -141,8 +141,7 @@ entry:
   ret i32 %6
 }
 
-; 7 occurrences:
-; llvm/optimized/CGExprScalar.cpp.ll
+; 6 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -150,9 +149,9 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000145(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 256
+  %3 = icmp samesign ult i32 %2, 256
   %4 = select i1 %3, i32 %1, i32 0
   %5 = add nsw i32 %4, %0
   %6 = add nsw i32 %5, 128
@@ -172,13 +171,25 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/CGExprScalar.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 10
+  %4 = select i1 %3, i32 %1, i32 0
+  %5 = add nsw i32 %4, %0
+  %6 = add nsw i32 %5, -2
+  ret i32 %6
+}
+
+; 1 occurrences:
 ; gromacs/optimized/energyoutput.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = add nsw i32 %5, 1
   ret i32 %6
 }
@@ -192,6 +203,31 @@ entry:
   %4 = select i1 %3, i32 %1, i32 0
   %5 = add nsw i32 %4, %0
   %6 = add nsw i32 %5, 2
+  ret i32 %6
+}
+
+; 2 occurrences:
+; wireshark/optimized/packet-ipmi.c.ll
+; wireshark/optimized/packet-opensafety.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 %1, i32 1
+  %5 = add nuw nsw i32 %4, %0
+  %6 = add nuw nsw i32 %5, 2
+  ret i32 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-ncp2222.c.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000af(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %2, 4
+  %4 = select i1 %3, i32 %1, i32 0
+  %5 = add nuw nsw i32 %4, %0
+  %6 = add nuw nsw i32 %5, 4
   ret i32 %6
 }
 

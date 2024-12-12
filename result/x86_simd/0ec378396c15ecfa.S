@@ -8,7 +8,7 @@ func0000000000000220:                   # @func0000000000000220
 	vcmpeqps	.LCPI0_0(%rip){1to16}, %zmm1, %k1
 	vcmpeqps	.LCPI0_1(%rip){1to16}, %zmm1, %k2
 	korw	%k1, %k2, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -20,7 +20,7 @@ func0000000000000108:                   # @func0000000000000108
 	vcmpgtps	.LCPI1_0(%rip){1to16}, %zmm1, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
 	vcmpltps	%zmm0, %zmm1, %k2
-	korw	%k0, %k2, %k0
+	korw	%k2, %k0, %k0
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -33,7 +33,7 @@ func0000000000000204:                   # @func0000000000000204
 	vcmpeqps	.LCPI2_0(%rip){1to16}, %zmm1, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
 	vcmpunordps	%zmm0, %zmm1, %k2
-	korw	%k0, %k2, %k0
+	korw	%k2, %k0, %k0
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

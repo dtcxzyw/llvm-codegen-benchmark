@@ -1,33 +1,24 @@
 func0000000000000033:                   // @func0000000000000033
 // %bb.0:                               // %entry
-	uhadd	v2.4s, v2.4s, v4.4s
-	uhadd	v3.4s, v1.4s, v3.4s
-	ushll	v4.4s, v0.4h, #0
-	ushll2	v0.4s, v0.8h, #0
-	mul	v1.4s, v2.4s, v0.4s
-	mul	v0.4s, v3.4s, v4.4s
+	add	w8, w1, w2
+	and	w9, w0, #0xffff
+	lsr	w8, w8, #1
+	mul	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
-	add	v2.4s, v2.4s, v4.4s
-	add	v1.4s, v1.4s, v3.4s
-	ushll2	v3.4s, v0.8h, #0
-	ushll	v0.4s, v0.4h, #0
-	ushr	v2.4s, v2.4s, #3
-	ushr	v1.4s, v1.4s, #3
-	mul	v0.4s, v1.4s, v0.4s
-	mul	v1.4s, v2.4s, v3.4s
+	add	w8, w1, w2
+	and	w9, w0, #0xffff
+	lsr	w8, w8, #3
+	mul	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	add	v2.4s, v2.4s, v4.4s
-	add	v1.4s, v1.4s, v3.4s
-	ushr	v2.4s, v2.4s, #17
-	ushr	v1.4s, v1.4s, #17
-	uzp1	v2.8h, v1.8h, v2.8h
-	umull2	v1.4s, v2.8h, v0.8h
-	umull	v0.4s, v2.4h, v0.4h
+	add	w8, w1, w2
+	and	w9, w0, #0xffff
+	lsr	w8, w8, #17
+	mul	w0, w8, w9
 	ret
                                         // -- End function

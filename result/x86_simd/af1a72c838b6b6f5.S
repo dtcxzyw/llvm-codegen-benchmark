@@ -18,5 +18,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2   # ymm2 = [1970324836974592,1970324836974592,1970324836974592,1970324836974592]
 	vpbroadcastq	.LCPI1_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [58720256,58720256,58720256,58720256]
-	vpternlogq	$248, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & ymm1)
+	vpternlogq	$248, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & ymm2)
 	retq

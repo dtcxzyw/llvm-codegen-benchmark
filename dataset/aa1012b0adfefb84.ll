@@ -12,7 +12,14 @@ entry:
   ret float %5
 }
 
-; 10 occurrences:
+; 17 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll

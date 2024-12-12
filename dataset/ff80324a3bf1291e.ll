@@ -1,9 +1,10 @@
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abseil-cpp/optimized/chi_square_test.cc.ll
 ; assimp/optimized/IFCCurve.cpp.ll
+; boost/optimized/cpu_timer.ll
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; graphviz/optimized/emit.c.ll

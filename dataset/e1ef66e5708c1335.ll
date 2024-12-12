@@ -26,7 +26,7 @@ entry:
 define i1 @func0000000000000002(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float 0xFFFFFFFFE0000000, float %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fcmp olt float %4, -1.270000e+02
   ret i1 %5
 }
@@ -38,8 +38,30 @@ entry:
 define i1 @func000000000000000c(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float 0.000000e+00, float %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fcmp oge float %4, 0.000000e+00
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000003(float %0, i1 %1, float %2) #0 {
+entry:
+  %3 = select i1 %1, float 0x7FF8000000000000, float %2
+  %4 = fmul float %0, %3
+  %5 = fcmp ult float %4, 0.000000e+00
+  ret i1 %5
+}
+
+; 1 occurrences:
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(float %0, i1 %1, float %2) #0 {
+entry:
+  %3 = select i1 %1, float 0.000000e+00, float %2
+  %4 = fmul float %0, %3
+  %5 = fcmp ugt float %4, 0x3FA4B5DCC0000000
   ret i1 %5
 }
 

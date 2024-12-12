@@ -1,7 +1,8 @@
 
-; 69 occurrences:
+; 70 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; llvm/optimized/DWARFDebugFrame.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; mold/optimized/input-sections.cc.ALPHA.cc.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.ARM64.cc.ll
@@ -78,7 +79,7 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
@@ -93,6 +94,8 @@ entry:
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:

@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
-; hdf5/optimized/io_timer.c.ll
 ; icu/optimized/uperf.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; wolfssl/optimized/api.c.ll

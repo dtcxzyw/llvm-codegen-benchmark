@@ -12,7 +12,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = select i1 %3, i32 2, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

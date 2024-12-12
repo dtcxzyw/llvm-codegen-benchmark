@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/text_file_backend.ll
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; rayon-rs/optimized/2xi93mrj8f00xnic.ll
@@ -12,7 +13,7 @@
 define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 1000
-  %4 = icmp slt i64 %3, %1
+  %4 = icmp sgt i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -24,11 +25,11 @@ entry:
 ; grpc/optimized/stateful_session_filter.cc.ll
 ; opencv/optimized/keypoint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000032(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000052(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 56
-  %4 = icmp ule i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp uge i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

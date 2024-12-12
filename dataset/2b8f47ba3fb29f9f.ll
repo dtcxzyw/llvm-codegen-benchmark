@@ -10,9 +10,11 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; cmake/optimized/zstd_compress_sequences.c.ll
+; cmake/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
+; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

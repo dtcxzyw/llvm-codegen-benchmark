@@ -12,7 +12,7 @@ entry:
   ret i1 %4
 }
 
-; 52 occurrences:
+; 55 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/bmcCexMin2.c.ll
 ; abc/optimized/bzlib.c.ll
@@ -36,6 +36,8 @@ entry:
 ; abc/optimized/kitHop.c.ll
 ; abc/optimized/mpmTruth.c.ll
 ; abc/optimized/sscClass.c.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; clamav/optimized/cabd.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
@@ -65,6 +67,7 @@ entry:
 ; z3/optimized/sat_elim_eqs.cpp.ll
 ; z3/optimized/smt_internalizer.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -88,7 +91,7 @@ entry:
   ret i1 %4
 }
 
-; 50 occurrences:
+; 52 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -139,6 +142,8 @@ entry:
 ; openmpi/optimized/nbc_iexscan.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; openmpi/optimized/nbc_iscan.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -147,10 +152,14 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 7 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifMap.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -159,11 +168,13 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; abc/optimized/mpmAbc.c.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; openmpi/optimized/coll_base_bcast.ll
 ; openmpi/optimized/coll_base_reduce_scatter_block.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -202,6 +213,16 @@ define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = icmp ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %1, %2
+  %4 = icmp sle i32 %3, %0
   ret i1 %4
 }
 

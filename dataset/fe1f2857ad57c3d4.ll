@@ -1,6 +1,7 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/OpenGEXImporter.cpp.ll
+; boost/optimized/format_args.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/dictobject.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -12,7 +13,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 3, i64 2
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -25,7 +26,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %1
   %4 = select i1 %2, i64 %1, i64 %3
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -62,7 +63,7 @@ define i64 @func000000000000000d(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 5000000, i64 1000000
   %4 = mul nuw nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

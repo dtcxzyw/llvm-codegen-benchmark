@@ -1,5 +1,5 @@
 
-; 327 occurrences:
+; 332 occurrences:
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
@@ -11,6 +11,14 @@
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/linear_interpolant.cpp.ll
 ; casadi/optimized/newton.cpp.ll
@@ -112,7 +120,6 @@
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -220,7 +227,6 @@
 ; proj/optimized/sch.cpp.ll
 ; proj/optimized/som.cpp.ll
 ; proj/optimized/vandg4.cpp.ll
-; proj/optimized/vertoffset.cpp.ll
 ; quantlib/optimized/abcdmathfunction.ll
 ; quantlib/optimized/americanpayoffathit.ll
 ; quantlib/optimized/amortizingfixedratebond.ll
@@ -303,7 +309,6 @@
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/hyperloglog.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; ruby/optimized/gc.ll
 ; stat-rs/optimized/1957ju1ns40544yq.ll
 ; stat-rs/optimized/2y2d191rk1p8v5y4.ll

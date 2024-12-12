@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
@@ -16,6 +16,7 @@
 ; recastnavigation/optimized/imgui.cpp.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, i1 %1, float %2) #0 {
 entry:
@@ -70,7 +71,7 @@ entry:
   %3 = fcmp ogt float %2, 0x3FEFFFFDE0000000
   %4 = select i1 %3, float 0x3FEFFFFDE0000000, float %2
   %5 = select i1 %1, float 0x3EB0C6F7A0000000, float %4
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 

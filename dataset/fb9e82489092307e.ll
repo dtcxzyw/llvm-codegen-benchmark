@@ -57,6 +57,18 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(float %0, float %1) #0 {
+entry:
+  %2 = fcmp ole float %0, %1
+  %3 = fcmp one float %0, 0x7FF0000000000000
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
@@ -11,6 +11,7 @@
 ; openjdk/optimized/hb-ot-font.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:

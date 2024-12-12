@@ -15,18 +15,6 @@ entry:
 }
 
 ; 1 occurrences:
-; regex-rs/optimized/12jtvy3iayrg5nam.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 256
-  %4 = select i1 %0, i1 %1, i1 false
-  %5 = select i1 %4, i1 %3, i1 false
-  %6 = zext i1 %5 to i8
-  ret i8 %6
-}
-
-; 1 occurrences:
 ; llvm/optimized/Host.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {

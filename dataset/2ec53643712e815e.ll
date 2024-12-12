@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; llvm/optimized/BlockCounter.cpp.ll
 ; llvm/optimized/Environment.cpp.ll
@@ -8,6 +8,7 @@
 ; llvm/optimized/RegionStore.cpp.ll
 ; openssl/optimized/libssl-lib-rec_layer_s3.ll
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
 ; spike/optimized/fall_reciprocal.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

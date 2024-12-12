@@ -1,7 +1,6 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; icu/optimized/characterproperties.ll
-; libquic/optimized/d1_lib.c.ll
 ; linux/optimized/hwmon.ll
 ; linux/optimized/nf_nat_core.ll
 ; linux/optimized/nf_nat_proto.ll
@@ -19,7 +18,7 @@
 ; sundials/optimized/ida_ls.c.ll
 ; sundials/optimized/idas_ls.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000198(i32 %0) #0 {
+define i32 @func0000000000000318(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 3
   %2 = icmp ne i32 %0, 0

@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
-; meshlab/optimized/filter_plymc.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, float %1) #0 {

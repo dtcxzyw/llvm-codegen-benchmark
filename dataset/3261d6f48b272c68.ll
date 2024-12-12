@@ -1,8 +1,13 @@
 
-; 36 occurrences:
+; 41 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/qrsqp.cpp.ll

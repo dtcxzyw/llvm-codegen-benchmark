@@ -1,7 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
-	testb	$64, %dil
-	sete	%cl
-	cmpq	$-128, %rdi
+func0000000000000058:                   # @func0000000000000058
+	cmpq	$-64, %rdi
 	setb	%al
-	orb	%cl, %al
 	retq

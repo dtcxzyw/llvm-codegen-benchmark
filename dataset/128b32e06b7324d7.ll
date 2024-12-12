@@ -1,5 +1,5 @@
 
-; 329 occurrences:
+; 327 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
@@ -31,7 +31,6 @@
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -44,7 +43,6 @@
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/fraClass.c.ll
 ; abc/optimized/fraigTable.c.ll
-; abc/optimized/fxuMatrix.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -84,7 +82,6 @@
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/mpmTruth.c.ll
-; abc/optimized/nmApi.c.ll
 ; abc/optimized/nmTable.c.ll
 ; abc/optimized/nwkMerge.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
@@ -148,7 +145,6 @@
 ; libsodium/optimized/libsodium_la-argon2-fill-block-ref.ll
 ; libsodium/optimized/libssse3_la-argon2-fill-block-ssse3.ll
 ; lightgbm/optimized/gbdt.cpp.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/exfldio.ll
@@ -164,7 +160,6 @@
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/random.ll
 ; linux/optimized/regcache.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/selection.ll
 ; linux/optimized/skl_watermark.ll
@@ -202,7 +197,6 @@
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MCAssembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
@@ -222,6 +216,7 @@
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; luajit/optimized/lj_vmmath.ll
 ; luajit/optimized/lj_vmmath_dyn.ll
+; lvgl/optimized/lv_scale.ll
 ; memcached/optimized/memcached-extstore.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-extstore.ll
@@ -329,6 +324,9 @@
 ; z3/optimized/theory_seq.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
 ; z3/optimized/value_factory.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -355,7 +353,6 @@ entry:
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/fed.cpp.ll
 ; openmpi/optimized/coll_base_bcast.ll
-; openmpi/optimized/coll_sm_component.ll
 ; openssl/optimized/safe_math_test-bin-safe_math_test.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/hw_acpi_erst.c.ll
@@ -369,6 +366,7 @@ entry:
 ; wolfssl/optimized/kdf.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
@@ -377,27 +375,22 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
-; abc/optimized/giaSimBase.c.ll
-; libjpeg-turbo/optimized/jdapistd.c.ll
+; 4 occurrences:
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; slurm/optimized/affinity.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = urem i32 %0, %1
-  %3 = icmp ult i32 %2, 32768
+  %3 = icmp samesign ult i32 %2, 32768
   ret i1 %3
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; libjpeg-turbo/optimized/jccoefct.c.ll
-; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/jccoefct.ll
-; raylib/optimized/raudio.c.ll
 ; yosys/optimized/test_cell.ll
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/spacer_quant_generalizer.cpp.ll
@@ -410,16 +403,39 @@ entry:
   ret i1 %3
 }
 
+; 3 occurrences:
+; abc/optimized/giaSimBase.c.ll
+; libjpeg-turbo/optimized/jdapistd.c.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = urem i32 %0, %1
+  %3 = icmp ult i32 %2, 2147483647
+  ret i1 %3
+}
+
 ; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = urem i32 %0, %1
+  %3 = icmp samesign ugt i32 %2, 99
+  ret i1 %3
+}
+
+; 2 occurrences:
 ; libjpeg-turbo/optimized/jdapistd.c.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = urem i32 %0, %1
-  %3 = icmp ugt i32 %2, 99
+  %3 = icmp ugt i32 %2, 1
   ret i1 %3
 }
 

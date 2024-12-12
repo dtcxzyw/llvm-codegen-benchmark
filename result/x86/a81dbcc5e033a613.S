@@ -1,11 +1,19 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	decl	%esi
 	andl	$-3, %esi
 	xorl	$2, %edi
 	orl	%esi, %edi
 	sete	%al
 	retq
-func00000000000001c4:                   # @func00000000000001c4
+func0000000000000181:                   # @func0000000000000181
+	leal	1(%rsi), %ecx
+	andl	$2, %ecx
+	shrl	%ecx
+	cmpl	$-35, %edi
+	sete	%al
+	andb	%cl, %al
+	retq
+func0000000000000584:                   # @func0000000000000584
 	movl	$56319, %eax                    # imm = 0xDBFF
 	subl	%esi, %eax
 	testl	$65534, %eax                    # imm = 0xFFFE
@@ -14,7 +22,7 @@ func00000000000001c4:                   # @func00000000000001c4
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addl	$63, %esi
 	andl	$-64, %esi
 	cmpl	$321, %esi                      # imm = 0x141
@@ -23,15 +31,7 @@ func0000000000000041:                   # @func0000000000000041
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
-	incl	%esi
-	testb	$3, %sil
-	sete	%cl
-	testl	%edi, %edi
-	setne	%al
-	andb	%cl, %al
-	retq
-func0000000000000311:                   # @func0000000000000311
+func0000000000000c21:                   # @func0000000000000c21
 	incl	%esi
 	andl	$1021, %esi                     # imm = 0x3FD
 	xorl	$1, %esi

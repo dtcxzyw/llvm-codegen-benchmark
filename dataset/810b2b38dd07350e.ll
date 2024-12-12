@@ -12,7 +12,7 @@ entry:
   ret i64 %4
 }
 
-; 99 occurrences:
+; 100 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -92,6 +92,7 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll

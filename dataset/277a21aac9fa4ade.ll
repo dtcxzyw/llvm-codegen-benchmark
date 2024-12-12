@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
-; libevent/optimized/bufferevent_pair.c.ll
 ; linux/optimized/hda_codec.ll
 ; llvm/optimized/ARMWinEH.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll

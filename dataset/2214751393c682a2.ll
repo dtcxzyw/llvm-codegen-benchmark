@@ -1,11 +1,13 @@
 
-; 47 occurrences:
+; 51 occurrences:
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll
 ; llvm/optimized/ProfileSummary.cpp.ll
+; lvgl/optimized/lv_matrix.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/editpickpoints.cpp.ll
@@ -46,6 +48,8 @@
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; wireshark/optimized/packet-componentstatus.c.ll
 ; wireshark/optimized/packet-gmr1_rr.c.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {

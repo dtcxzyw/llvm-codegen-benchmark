@@ -1,6 +1,7 @@
 
-; 101 occurrences:
+; 104 occurrences:
 ; abseil-cpp/optimized/parse_test.cc.ll
+; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -85,6 +86,7 @@
 ; llvm/optimized/BasicBlockUtils.cpp.ll
 ; llvm/optimized/BlockCoverageInference.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
+; llvm/optimized/StandardInstrumentations.cpp.ll
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
@@ -98,6 +100,7 @@
 ; minetest/optimized/sidebyside.cpp.ll
 ; opencv/optimized/facemark_demo_aam.cpp.ll
 ; opencv/optimized/gapi_render_perf_tests_ocv.cpp.ll
+; openspiel/optimized/kuhn_poker.cc.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; tev/optimized/Common.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll

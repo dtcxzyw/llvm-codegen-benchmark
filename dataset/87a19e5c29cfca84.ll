@@ -1,12 +1,11 @@
 
-; 80 occurrences:
+; 78 occurrences:
 ; abc/optimized/aigRetF.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; coreutils-rs/optimized/31vrb73337u20kex.ll
 ; coreutils-rs/optimized/rs4z052ww3s256h.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
-; hermes/optimized/Executor.cpp.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -42,7 +41,6 @@
 ; llvm/optimized/OverflowInstAnalysis.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
@@ -73,25 +71,25 @@
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; meilisearch-rs/optimized/2d8gq047pqsnm94t.ll
 ; quickjs/optimized/libregexp.ll
-; ruby/optimized/symbol.ll
 ; tree-sitter-rs/optimized/18kt1xijwoc4jebp.ll
 ; vcpkg/optimized/commands.install.cpp.ll
 ; vcpkg/optimized/export.ifw.cpp.ll
 ; vcpkg/optimized/sourceparagraph.cpp.ll
 ; vcpkg/optimized/spdx.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000090(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 223
+  %3 = and i32 %2, -33
   %4 = add nsw i32 %3, -65
   %5 = icmp ult i32 %4, 26
-  %6 = or i1 %5, %1
-  %7 = or i1 %6, %0
+  %6 = or i1 %1, %5
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
-; 314 occurrences:
+; 315 occurrences:
 ; coreutils-rs/optimized/rs4z052ww3s256h.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
@@ -406,6 +404,7 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -413,7 +412,7 @@ entry:
   %4 = add i32 %3, -131072
   %5 = icmp ult i32 %4, 65534
   %6 = or i1 %5, %1
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; linux/optimized/bts.ll
 ; llvm/optimized/BlockCoverageInference.cpp.ll
@@ -18,6 +18,7 @@
 ; tev/optimized/Common.cpp.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

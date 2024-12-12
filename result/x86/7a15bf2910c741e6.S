@@ -4,9 +4,9 @@ func0000000000000004:                   # @func0000000000000004
 	cmpb	$26, %dl
 	cmovaeq	%rsi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movq	%rdi, %rax
-	addb	$-3, %dl
-	cmpb	$2, %dl
+	addb	$-54, %dl
+	cmpb	$3, %dl
 	cmovaeq	%rsi, %rax
 	retq

@@ -46,21 +46,3 @@ func0000000000000024:                   # @func0000000000000024
 .LBB2_4:                                # %entry
 	fmv.d	fa0, fa1
 	ret
-.LCPI3_0:
-	.quad	0x40c3880000000000              # double 1.0E+4
-func0000000000000044:                   # @func0000000000000044
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
-	flt.d	a0, fa5, fa1
-	beqz	a0, .LBB3_3
-	flt.d	a0, fa5, fa0
-	beqz	a0, .LBB3_4
-.LBB3_2:                                # %entry
-	ret
-.LBB3_3:                                # %entry
-	fmv.d	fa5, fa1
-	flt.d	a0, fa1, fa0
-	bnez	a0, .LBB3_2
-.LBB3_4:                                # %entry
-	fmv.d	fa0, fa5
-	ret

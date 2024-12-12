@@ -1,10 +1,14 @@
 
-; 51 occurrences:
+; 57 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/find_address_sse2.ll
+; boost/optimized/find_address_sse41.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -51,6 +55,8 @@
 ; wireshark/optimized/decode_as_delegate.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/uat_model.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

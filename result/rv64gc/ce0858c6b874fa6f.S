@@ -124,52 +124,32 @@ func0000000000000048:                   # @func0000000000000048
 	fmv.w.x	fa5, zero
 	feq.s	a0, fa0, fa5
 	ret
-func0000000000000043:                   # @func0000000000000043
+func000000000000002b:                   # @func000000000000002b
 	flt.s	a0, fa1, fa0
 	bnez	a0, .LBB14_2
 	fmv.s	fa0, fa1
 .LBB14_2:                               # %entry
-	lui	a0, 364544
-	fmv.w.x	fa5, a0
-	fle.s	a0, fa5, fa0
-	xori	a0, a0, 1
-	ret
-func0000000000000045:                   # @func0000000000000045
-	flt.s	a0, fa1, fa0
-	bnez	a0, .LBB15_2
-	fmv.s	fa0, fa1
-.LBB15_2:                               # %entry
-	lui	a0, 155648
-	fmv.w.x	fa5, a0
-	fle.s	a0, fa0, fa5
-	xori	a0, a0, 1
-	ret
-func000000000000002b:                   # @func000000000000002b
-	flt.s	a0, fa1, fa0
-	bnez	a0, .LBB16_2
-	fmv.s	fa0, fa1
-.LBB16_2:                               # %entry
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
 func0000000000000047:                   # @func0000000000000047
 	flt.s	a0, fa0, fa1
-	bnez	a0, .LBB17_2
+	bnez	a0, .LBB15_2
 	fmv.s	fa0, fa1
-.LBB17_2:                               # %entry
+.LBB15_2:                               # %entry
 	fmv.w.x	fa5, zero
 	feq.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
-.LCPI18_0:
+.LCPI16_0:
 	.word	0x3ba3d70a                      # float 0.00499999989
 func000000000000004a:                   # @func000000000000004a
 	flt.s	a0, fa1, fa0
-	bnez	a0, .LBB18_2
+	bnez	a0, .LBB16_2
 	fmv.s	fa0, fa1
-.LBB18_2:                               # %entry
-	lui	a0, %hi(.LCPI18_0)
-	flw	fa5, %lo(.LCPI18_0)(a0)
+.LBB16_2:                               # %entry
+	lui	a0, %hi(.LCPI16_0)
+	flw	fa5, %lo(.LCPI16_0)(a0)
 	fle.s	a0, fa0, fa5
 	ret

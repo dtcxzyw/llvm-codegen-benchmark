@@ -13,15 +13,13 @@ entry:
   ret i32 %2
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; gromacs/optimized/dgesdd.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dstedc.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll
 ; openspiel/optimized/go.cc.ll
 ; openspiel/optimized/phantom_go.cc.ll
@@ -70,8 +68,7 @@ entry:
   ret i32 %2
 }
 
-; 2 occurrences:
-; openblas/optimized/dsytrd_sy2sb.c.ll
+; 1 occurrences:
 ; opencv/optimized/aruco_dict_utils.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0) #0 {

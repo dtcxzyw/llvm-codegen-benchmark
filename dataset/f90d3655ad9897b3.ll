@@ -4,7 +4,7 @@
 ; git/optimized/tree-walk.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq i32 %0, 2
@@ -18,7 +18,7 @@ entry:
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000616(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001826(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/number_mapper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp eq i32 %0, 0

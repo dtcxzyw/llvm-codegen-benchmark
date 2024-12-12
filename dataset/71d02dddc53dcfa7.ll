@@ -6,7 +6,7 @@
 ; opencv/optimized/matmul_layer.cpp.ll
 ; opencv/optimized/scale_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000078a(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000f0a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 2
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/messagepattern.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1

@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; coremark/optimized/core_list_join.c.ll
@@ -22,6 +22,7 @@
 ; linux/optimized/tcp_ipv6.ll
 ; linux/optimized/tcp_offload.ll
 ; linux/optimized/xhci-ring.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openspiel/optimized/Moves.cpp.ll
@@ -49,8 +50,9 @@ entry:
   ret i32 %3
 }
 
-; 284 occurrences:
+; 281 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
@@ -124,7 +126,6 @@ entry:
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_hdmi.ll
@@ -141,7 +142,6 @@ entry:
 ; linux/optimized/ip_output.ll
 ; linux/optimized/kbuf.ll
 ; linux/optimized/mcast.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/message.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/nf_conntrack_reasm.ll
@@ -164,14 +164,17 @@ entry:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/connectionthreads.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/inventory.cpp.ll
@@ -224,10 +227,7 @@ entry:
 ; openjdk/optimized/mlib_c_ImageAffine_BL_U16.ll
 ; openjdk/optimized/nmethod.ll
 ; openmpi/optimized/pml_ob1_recvfrag.ll
-; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
-; openusd/optimized/decodetxb.c.ll
-; openusd/optimized/detokenize.c.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/fvarRefinement.cpp.ll
 ; openusd/optimized/intrapred.c.ll
@@ -249,7 +249,6 @@ entry:
 ; qemu/optimized/accel_tcg_translate-all.c.ll
 ; qemu/optimized/hw_display_bochs-display.c.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -293,7 +292,6 @@ entry:
 ; wireshark/optimized/packet-clnp.c.ll
 ; wireshark/optimized/packet-collectd.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
-; wireshark/optimized/packet-dhcp-failover.c.ll
 ; wireshark/optimized/packet-dhcpv6.c.ll
 ; wireshark/optimized/packet-dlsw.c.ll
 ; wireshark/optimized/packet-dlt.c.ll
@@ -320,18 +318,18 @@ entry:
 ; wireshark/optimized/packet-selfm.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-teamspeak2.c.ll
-; wireshark/optimized/packet-teap.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; wireshark/optimized/packet-wifi-nan.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/packet-zvt.c.ll
 ; wireshark/optimized/pci-ids.c.ll
-; wireshark/optimized/services.c.ll
 ; wireshark/optimized/tap-rtp-analysis.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
@@ -342,7 +340,7 @@ entry:
   ret i32 %3
 }
 
-; 67 occurrences:
+; 66 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
@@ -368,7 +366,6 @@ entry:
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/vmcore.ll
 ; llvm/optimized/LegalizeTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -418,7 +415,7 @@ entry:
   ret i32 %3
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; cmake/optimized/inftrees.c.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; hdf5/optimized/H5B2leaf.c.ll
@@ -433,6 +430,7 @@ entry:
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/decodetxb.c.ll
+; openusd/optimized/detokenize.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/capsa.c.ll
 ; wireshark/optimized/observer.c.ll
@@ -473,11 +471,12 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
+; lvgl/optimized/lv_roller.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; postgres/optimized/tsrank.ll
 ; redis/optimized/tcache.ll

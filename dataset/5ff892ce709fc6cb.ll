@@ -6,7 +6,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, 2
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -21,7 +21,7 @@ define i32 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, 2
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = mul nuw nsw i32 %4, %0
+  %5 = mul nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -48,7 +48,7 @@ define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %3 = select i1 %.not, i32 %2, i32 %1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 

@@ -1,9 +1,23 @@
 
-; 58 occurrences:
+; 71 occurrences:
 ; abc/optimized/llb2Flow.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/env.ll
+; boost/optimized/group.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/wargs_cmd.ll
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/pystate.ll
 ; freetype/optimized/smooth.c.ll
@@ -43,7 +57,6 @@
 ; php/optimized/array.ll
 ; postgres/optimized/int8.ll
 ; postgres/optimized/regexp.ll
-; proj/optimized/wkt_parser.cpp.ll
 ; protobuf/optimized/coded_stream.cc.ll
 ; quantlib/optimized/lmmcurvestate.ll
 ; quantlib/optimized/lmmdriftcalculator.ll
@@ -59,20 +72,21 @@
 ; velox/optimized/URLFunctions.cpp.ll
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
-; 527 occurrences:
+; 526 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaPat2.c.ll
 ; abc/optimized/ifLibLut.c.ll
 ; abc/optimized/ivyCutTrav.c.ll
+; abc/optimized/ltl_parser.c.ll
 ; arrow/optimized/UriNormalize.c.ll
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/builder_union.cc.ll
@@ -269,7 +283,6 @@ entry:
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
 ; openmpi/optimized/bml_r2.ll
-; openmpi/optimized/btl_tcp.ll
 ; openmpi/optimized/ess_base_bootstrap.ll
 ; openmpi/optimized/plm_ssh_module.ll
 ; openmpi/optimized/pml_ob1.ll
@@ -464,7 +477,6 @@ entry:
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -596,15 +608,15 @@ entry:
 ; zxing/optimized/QREncoder.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
-; 203 occurrences:
+; 208 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abseil-cpp/optimized/charconv_parse_test.cc.ll
@@ -615,6 +627,8 @@ entry:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/sparring_partner.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3GpuGridBroadphase.ll
 ; bullet3/optimized/b3GpuNarrowPhase.ll
@@ -705,7 +719,6 @@ entry:
 ; libwebp/optimized/pngdec.c.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/af_packet.ll
-; linux/optimized/auxiliary.ll
 ; linux/optimized/blk-map.ll
 ; linux/optimized/cppc_acpi.ll
 ; linux/optimized/proc_sysctl.ll
@@ -755,7 +768,6 @@ entry:
 ; openmpi/optimized/libompi_dbg_msgq_la-ompi_msgq_dll.ll
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
-; openmpi/optimized/proc_info.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -808,16 +820,21 @@ entry:
 ; xgboost/optimized/gbtree.cc.ll
 ; xgboost/optimized/tree_model.cc.ll
 ; yosys/optimized/memory_bram.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 409 occurrences:
+; 405 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -888,7 +905,6 @@ entry:
 ; gromacs/optimized/displacement.cpp.ll
 ; gromacs/optimized/forcefieldparameters.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gmx_disre.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; gromacs/optimized/inputrec.cpp.ll
@@ -936,7 +952,6 @@ entry:
 ; lightgbm/optimized/train_share_states.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -958,7 +973,6 @@ entry:
 ; ocio/optimized/ColorSpaceSet.cpp.ll
 ; ocio/optimized/Config.cpp.ll
 ; ocio/optimized/Context.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/NoOps.cpp.ll
 ; ocio/optimized/OpOptimizers.cpp.ll
 ; ocio/optimized/ViewingRules.cpp.ll
@@ -1053,8 +1067,6 @@ entry:
 ; pocketpy/optimized/expr.cpp.ll
 ; pocketpy/optimized/gc.cpp.ll
 ; pocketpy/optimized/tuplelist.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; protobuf/optimized/text_format.cc.ll
@@ -1169,6 +1181,7 @@ entry:
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/portlist.ll
 ; yosys/optimized/preproc.ll
+; yosys/optimized/proc_arst.ll
 ; yosys/optimized/proc_dff.ll
 ; yosys/optimized/proc_dlatch.ll
 ; yosys/optimized/proc_mux.ll
@@ -1232,7 +1245,7 @@ define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -1253,7 +1266,7 @@ define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 30
   %3 = ashr i64 %2, 32
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
@@ -1283,7 +1296,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -1294,7 +1307,7 @@ define i1 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
   ret i1 %4
 }
 
@@ -1350,15 +1363,15 @@ entry:
 ; yosys/optimized/fmt.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; bullet3/optimized/b3GpuParallelLinearBvh.ll
 ; c3c/optimized/parse_expr.c.ll
@@ -1382,6 +1395,7 @@ entry:
 ; oiio/optimized/exrinput.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
+; opencv/optimized/matrix_transform.cpp.ll
 ; opencv/optimized/merge.dispatch.cpp.ll
 ; opencv/optimized/net_impl.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
@@ -1399,11 +1413,11 @@ entry:
 ; yalantinglibs/optimized/tutorial.cpp.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -1420,11 +1434,11 @@ entry:
 ; postgres/optimized/int8.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
   ret i1 %4
 }
 
@@ -1448,7 +1462,7 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -1457,11 +1471,11 @@ entry:
 ; postgres/optimized/int8.ll
 ; slurm/optimized/libfile_bcast_la-file_bcast.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
@@ -1472,7 +1486,7 @@ define i1 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 44
   %3 = ashr i64 %2, 59
-  %4 = icmp sge i64 %3, %0
+  %4 = icmp sle i64 %0, %3
   ret i1 %4
 }
 
@@ -1484,7 +1498,7 @@ define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 44
   %3 = ashr i64 %2, 59
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
@@ -1499,29 +1513,29 @@ define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/ftypes.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; ceres/optimized/parallel_vector_ops.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = ashr exact i64 %2, 29
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -1529,33 +1543,33 @@ entry:
 ; postgres/optimized/int.ll
 ; postgres/optimized/int8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp sge i64 %3, %0
+  %4 = icmp sle i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; ozz-animation/optimized/local_to_model_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; faiss/optimized/quantize_lut.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   ret i1 %4
 }
 

@@ -14,7 +14,7 @@
 ; yosys/optimized/sim.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 10
   %4 = select i1 %1, i1 %3, i1 false
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/OptimizeDeadStore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = select i1 %1, i1 %3, i1 false

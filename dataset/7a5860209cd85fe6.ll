@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/pack.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, double %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = add nsw i32 %0, %1

@@ -12,7 +12,8 @@ entry:
   ret i64 %4
 }
 
-; 43 occurrences:
+; 44 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; freetype/optimized/autofit.c.ll
 ; hdf5/optimized/H5Tbit.c.ll

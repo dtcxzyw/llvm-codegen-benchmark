@@ -1,9 +1,9 @@
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	sub	a0, a0, a1
 	slti	a0, a0, 17
 	xori	a0, a0, 1
 	ret
-func00000000000003da:                   # @func00000000000003da
+func00000000000007aa:                   # @func00000000000007aa
 	sub	a0, a0, a1
 	slti	a0, a0, 17
 	xori	a0, a0, 1
@@ -15,11 +15,11 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -512
 	seqz	a0, a0
 	ret
-func0000000000000158:                   # @func0000000000000158
+func00000000000002a8:                   # @func00000000000002a8
 	sub	a0, a0, a1
 	bexti	a0, a0, 61
 	ret
-func000000000000028a:                   # @func000000000000028a
+func000000000000050a:                   # @func000000000000050a
 	sub	a0, a0, a1
 	not	a0, a0
 	bexti	a0, a0, 31

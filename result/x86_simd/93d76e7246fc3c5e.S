@@ -10,10 +10,10 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	63                              # 0x3f
-func0000000000000021:                   # @func0000000000000021
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm1, %xmm1
-	vptestmd	.LCPI1_0(%rip){1to4}, %xmm1, %k1
+func0000000000000041:                   # @func0000000000000041
+	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [63,63,63,63]
+	vpand	%xmm2, %xmm1, %xmm1
+	vpcmpneqd	%xmm2, %xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpxorq	%ymm1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0

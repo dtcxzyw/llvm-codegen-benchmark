@@ -9,3 +9,9 @@ func0000000000000003:                   # @func0000000000000003
 	movzbl	%dil, %eax
 	shll	$16, %eax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	movl	%edi, %eax
+	xorl	%esi, %eax
+	shll	$4, %eax
+	andl	$268435440, %eax                # imm = 0xFFFFFF0
+	retq

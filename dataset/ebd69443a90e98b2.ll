@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; graphviz/optimized/shortest.c.ll
-; linux/optimized/head64.ll
 ; linux/optimized/sky2.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; slurm/optimized/dist_tasks.ll

@@ -14,14 +14,36 @@ entry:
   ret i64 %7
 }
 
-; 89 occurrences:
-; clamav/optimized/infblock.c.ll
+; 16 occurrences:
 ; cmake/optimized/archive_write_set_format_ustar.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libquic/optimized/file_test.cc.ll
 ; libquic/optimized/v3_utl.c.ll
 ; libzmq/optimized/udp_engine.cpp.ll
 ; lz4/optimized/lz4.c.ll
+; openjdk/optimized/debugInit.ll
+; openjdk/optimized/virtualMemoryTracker.ll
+; openssl/optimized/libcrypto-lib-v3_utl.ll
+; openssl/optimized/libcrypto-shlib-v3_utl.ll
+; openusd/optimized/lz4.cpp.ll
+; php/optimized/phar.ll
+; php/optimized/tar.ll
+; php/optimized/zip.ll
+; ruby/optimized/date_strftime.ll
+; yosys/optimized/lz4.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = xor i64 %5, -1
+  %7 = add i64 %6, %4
+  ret i64 %7
+}
+
+; 73 occurrences:
+; clamav/optimized/infblock.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -94,20 +116,10 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; openjdk/optimized/debugInit.ll
-; openjdk/optimized/virtualMemoryTracker.ll
-; openssl/optimized/libcrypto-lib-v3_utl.ll
-; openssl/optimized/libcrypto-shlib-v3_utl.ll
-; openusd/optimized/lz4.cpp.ll
-; php/optimized/phar.ll
-; php/optimized/tar.ll
-; php/optimized/zip.ll
-; ruby/optimized/date_strftime.ll
-; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = xor i64 %5, -1

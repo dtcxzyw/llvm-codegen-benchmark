@@ -13,6 +13,7 @@
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/date_time_format_parser.ll
 ; cvc5/optimized/attempt_solution_simplex.cpp.ll
 ; cvc5/optimized/congruence_manager.cpp.ll
 ; cvc5/optimized/constraint.cpp.ll
@@ -43,6 +44,7 @@
 ; draco/optimized/shannon_entropy.cc.ll
 ; draco/optimized/symbol_bit_decoder.cc.ll
 ; draco/optimized/symbol_decoding.cc.ll
+; draco/optimized/symbol_encoding.cc.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
@@ -134,7 +136,6 @@
 ; rocksdb/optimized/write_batch_with_index.cc.ll
 ; tev/optimized/Common.cpp.ll
 ; velox/optimized/Filter.cpp.ll
-; velox/optimized/SparseHll.cpp.ll
 ; wasmedge/optimized/section.cpp.ll
 ; wasmedge/optimized/start.cpp.ll
 ; wasmedge/optimized/type.cpp.ll
@@ -150,7 +151,6 @@
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; xgboost/optimized/updater_refresh.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
-; z3/optimized/cmd_context.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0, i64 %1, ptr %2) #0 {
 entry:

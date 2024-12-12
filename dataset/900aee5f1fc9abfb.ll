@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; Function Attrs: nounwind

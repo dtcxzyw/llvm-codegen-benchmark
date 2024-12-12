@@ -109,7 +109,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = zext i64 %3 to i128
   %5 = mul nuw nsw i128 %4, 105
-  %6 = xor i128 %5, %0
+  %6 = xor i128 %0, %5
   %7 = trunc i128 %6 to i8
   ret i8 %7
 }

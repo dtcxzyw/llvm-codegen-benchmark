@@ -1,4 +1,20 @@
-func00000000000001e6:                   # @func00000000000001e6
+func00000000000003c6:                   # @func00000000000003c6
+	vpslld	$8, %ymm2, %ymm2
+	vpor	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm1, %ymm0, %ymm0
+	vpmovd2m	%ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func00000000000003cc:                   # @func00000000000003cc
+	vpslld	$8, %ymm2, %ymm2
+	vpor	%ymm1, %ymm2, %ymm1
+	vptestmd	%ymm1, %ymm1, %k1
+	vptestmd	%ymm0, %ymm0, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000386:                   # @func0000000000000386
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpmulld	%ymm0, %ymm1, %ymm0
@@ -6,23 +22,7 @@ func00000000000001e6:                   # @func00000000000001e6
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000001ec:                   # @func00000000000001ec
-	vpslld	$8, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
-	vptestmd	%ymm0, %ymm0, %k1
-	vptestmd	%ymm1, %ymm1, %k0 {%k1}
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-func00000000000001c6:                   # @func00000000000001c6
-	vpslld	$8, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
-	vpmovd2m	%ymm0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000381:                   # @func0000000000000381
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpmulld	%ymm0, %ymm1, %ymm0
@@ -32,7 +32,7 @@ func00000000000001c1:                   # @func00000000000001c1
 	retq
 .LCPI4_0:
 	.long	3                               # 0x3
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000003f8:                   # @func00000000000003f8
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpmulld	%ymm0, %ymm1, %ymm0
@@ -42,10 +42,10 @@ func00000000000001f8:                   # @func00000000000001f8
 	retq
 .LCPI5_0:
 	.long	4294967288                      # 0xfffffff8
-func00000000000001c4:                   # @func00000000000001c4
+func0000000000000384:                   # @func0000000000000384
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpcmpltud	.LCPI5_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

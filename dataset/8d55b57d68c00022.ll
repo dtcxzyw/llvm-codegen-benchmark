@@ -1,8 +1,10 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; linux/optimized/select.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGExprCXX.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
@@ -31,7 +33,7 @@ entry:
   ret ptr %4
 }
 
-; 73 occurrences:
+; 78 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -71,13 +73,17 @@ entry:
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaCoroutine.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; llvm/optimized/SemaOpenCL.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
@@ -99,6 +105,7 @@ entry:
 ; llvm/optimized/TransUnusedInitDelegate.cpp.ll
 ; llvm/optimized/TransZeroOutPropsInDealloc.cpp.ll
 ; llvm/optimized/Transforms.cpp.ll
+; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/UncountedCallArgsChecker.cpp.ll
 ; llvm/optimized/UncountedLambdaCapturesChecker.cpp.ll
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
@@ -106,21 +113,21 @@ entry:
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 9
   %3 = and i64 %2, 8388352
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; z3/optimized/dl_rule.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 34359738360
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   ret ptr %3
 }
 

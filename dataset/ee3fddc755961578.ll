@@ -1,5 +1,6 @@
 
-; 81 occurrences:
+; 83 occurrences:
+; boost/optimized/sort_by_side.ll
 ; brotli/optimized/encode.c.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/number_patternstring.ll
@@ -71,6 +72,7 @@
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86WinFixupBufferSecurityCheck.cpp.ll
 ; llvm/optimized/XCore.cpp.ll
+; lvgl/optimized/lv_anim.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
 ; openjdk/optimized/classFileParser.ll
@@ -90,7 +92,8 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; clamav/optimized/cabd.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openblas/optimized/dgegs.c.ll
 ; opencv/optimized/ts_arrtest.cpp.ll
@@ -111,7 +114,6 @@ entry:
 ; 11 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/blk-mq.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -119,23 +121,13 @@ entry:
 ; qemu/optimized/net_l2tpv3.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; redis/optimized/expire.ll
+; slurm/optimized/scancel.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = icmp ne i32 %0, 0
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; darktable/optimized/introspection_demosaic.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = or i1 %1, %2
-  %4 = icmp ugt i32 %0, 1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }

@@ -1,8 +1,12 @@
 
-; 55 occurrences:
-; assimp/optimized/BlenderModifier.cpp.ll
+; 53 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/matcher-byte-comp.c.ll
-; cpython/optimized/_json.ll
 ; freetype/optimized/autofit.c.ll
 ; hdf5/optimized/H5.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
@@ -24,26 +28,20 @@
 ; linux/optimized/namei.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/sch_api.ll
-; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/CriticalAntiDepBreaker.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; nghttp2/optimized/http.c.ll
 ; openjdk/optimized/png.ll
 ; openmpi/optimized/osc_rdma_comm.ll
-; openssl/optimized/libcrypto-lib-dh_gen.ll
-; openssl/optimized/libcrypto-shlib-dh_gen.ll
 ; php/optimized/html.ll
 ; php/optimized/ir_cfg.ll
 ; php/optimized/php_pcre.ll
 ; postgres/optimized/help.ll
-; postgres/optimized/trigger.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
 ; slurm/optimized/backfill.ll

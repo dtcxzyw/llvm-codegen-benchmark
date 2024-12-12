@@ -33,10 +33,3 @@ func0000000000000048:                   # @func0000000000000048
 	vmflt.vf	v12, v8, fa5
 	vmor.mm	v0, v16, v12
 	ret
-func00000000000001dc:                   # @func00000000000001dc
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfadd.vv	v12, v12, v16
-	vmfeq.vv	v16, v12, v12
-	vmfeq.vv	v12, v8, v8
-	vmor.mm	v0, v16, v12
-	ret

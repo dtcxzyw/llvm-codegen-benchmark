@@ -63,10 +63,11 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; luajit/optimized/lj_bcread.ll
 ; luajit/optimized/lj_bcread_dyn.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:

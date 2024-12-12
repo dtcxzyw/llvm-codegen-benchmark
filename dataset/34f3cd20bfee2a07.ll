@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; brotli/optimized/encode.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -16,24 +16,27 @@
 ; spike/optimized/vwaddu_vv.ll
 ; spike/optimized/vwaddu_vx.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; minetest/optimized/cavegen.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -50,12 +53,12 @@ entry:
 define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65280
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -63,6 +66,7 @@ entry:
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/ich8lan.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind

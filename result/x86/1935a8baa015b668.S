@@ -1,4 +1,10 @@
-func000000000000002a:                   # @func000000000000002a
+func0000000000000003:                   # @func0000000000000003
+	movabsq	$8589934590, %rax               # imm = 0x1FFFFFFFE
+	andq	%rdx, %rax
+	leaq	(%rsi,%rax,2), %rax
+	leaq	16(%rax,%rdi,4), %rax
+	retq
+func000000000000003f:                   # @func000000000000003f
 	shrq	$59, %rdx
 	andl	$1, %edx
 	leaq	(%rsi,%rdx,8), %rax
@@ -10,7 +16,7 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rsi, %rdx
 	leaq	12(%rdi,%rdx), %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	movabsq	$34359738352, %rax              # imm = 0x7FFFFFFF0
 	andq	%rdx, %rax
 	addq	%rsi, %rax

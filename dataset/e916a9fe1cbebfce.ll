@@ -78,7 +78,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967292
   %3 = shl i64 15, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -91,12 +91,12 @@ entry:
 ; abc/optimized/dsdTree.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967292
   %3 = lshr i64 %0, %2
   %4 = and i64 %3, 14
-  %5 = icmp ult i64 %4, 10
+  %5 = icmp samesign ult i64 %4, 10
   ret i1 %5
 }
 

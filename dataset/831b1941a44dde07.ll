@@ -8,7 +8,7 @@ entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc nuw nsw i64 %3 to i32
   %5 = trunc nuw nsw i64 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -25,7 +25,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
   %5 = trunc nuw i64 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -38,7 +38,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
   %5 = trunc i64 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -52,17 +52,13 @@ entry:
   %3 = lshr exact i64 %2, 4
   %4 = trunc i64 %3 to i32
   %5 = trunc i64 %1 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
 
-; 7 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
+; 3 occurrences:
 ; gromacs/optimized/conversions.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; yosys/optimized/equiv_struct.ll
 ; Function Attrs: nounwind
@@ -71,7 +67,7 @@ entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
   %5 = trunc i64 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -84,7 +80,7 @@ entry:
   %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
   %5 = trunc i64 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
@@ -97,7 +93,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
   %5 = trunc i64 %1 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
@@ -113,7 +109,7 @@ entry:
   %3 = lshr i64 %2, 16
   %4 = trunc nuw nsw i64 %3 to i32
   %5 = trunc nuw nsw i64 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -126,7 +122,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
   %5 = trunc nuw i64 %1 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
@@ -139,7 +135,7 @@ entry:
   %3 = lshr i64 %2, 16
   %4 = trunc i64 %3 to i32
   %5 = trunc i64 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }

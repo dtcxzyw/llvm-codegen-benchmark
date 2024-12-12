@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/treegen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0) #0 {
+define i1 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = call i16 @llvm.abs.i16(i16 %0, i1 true)
   %2 = icmp eq i16 %1, 1
@@ -47,10 +47,10 @@ entry:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0) #0 {
+define i1 @func0000000000000034(i16 %0) #0 {
 entry:
   %1 = tail call i16 @llvm.abs.i16(i16 %0, i1 true)
-  %2 = icmp ult i16 %1, 16384
+  %2 = icmp samesign ult i16 %1, 16384
   ret i1 %2
 }
 
@@ -58,10 +58,21 @@ entry:
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/mvref_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0) #0 {
+define i1 @func0000000000000038(i16 %0) #0 {
 entry:
   %1 = tail call i16 @llvm.abs.i16(i16 %0, i1 true)
-  %2 = icmp ugt i16 %1, 4
+  %2 = icmp samesign ugt i16 %1, 4
+  ret i1 %2
+}
+
+; 2 occurrences:
+; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
+; libwebp/optimized/token_enc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i16 %0) #0 {
+entry:
+  %1 = call i16 @llvm.abs.i16(i16 %0, i1 false)
+  %2 = icmp samesign ugt i16 %1, 99
   ret i1 %2
 }
 
@@ -70,7 +81,7 @@ entry:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0) #0 {
+define i1 @func0000000000000048(i16 %0) #0 {
 entry:
   %1 = call noundef i16 @llvm.abs.i16(i16 %0, i1 false)
   %2 = icmp ugt i16 %1, 99

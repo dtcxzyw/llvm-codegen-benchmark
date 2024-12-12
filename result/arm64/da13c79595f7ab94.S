@@ -1,4 +1,4 @@
-func00000000000000a2:                   // @func00000000000000a2
+func00000000000000f2:                   // @func00000000000000f2
 // %bb.0:                               // %entry
 	fcmp	s0, s1
 	mov	w8, #32                         // =0x20
@@ -7,7 +7,7 @@ func00000000000000a2:                   // @func00000000000000a2
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func00000000000000a4:                   // @func00000000000000a4
+func00000000000000f4:                   // @func00000000000000f4
 // %bb.0:                               // %entry
 	fcmp	s0, s1
 	mov	w8, #24                         // =0x18
@@ -16,7 +16,7 @@ func00000000000000a4:                   // @func00000000000000a4
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func00000000000000a5:                   // @func00000000000000a5
+func00000000000000f5:                   // @func00000000000000f5
 // %bb.0:                               // %entry
 	fcmp	s0, s1
 	mov	w8, #4                          // =0x4
@@ -25,7 +25,7 @@ func00000000000000a5:                   // @func00000000000000a5
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func00000000000000a8:                   // @func00000000000000a8
+func00000000000000f8:                   // @func00000000000000f8
 // %bb.0:                               // %entry
 	fcmp	s0, s1
 	mov	w8, #64                         // =0x40

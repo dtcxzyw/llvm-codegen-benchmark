@@ -1,5 +1,5 @@
 
-; 103 occurrences:
+; 121 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; cmake/optimized/cmCMakePath.cxx.ll
@@ -21,6 +21,10 @@
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/MsgPackDocument.cpp.ll
+; lvgl/optimized/lv_demo_render.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_refr.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
 ; mold/optimized/cmdline.cc.ARM32.cc.ll
 ; mold/optimized/cmdline.cc.ARM64.cc.ll
@@ -103,6 +107,20 @@
 ; yalantinglibs/optimized/client.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
+; zed-rs/optimized/2i8q3168bbbqfi20z5b5reakb.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/3w62movadz26xj1uazrxcr5i1.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/50rz8txij07gq3asz3v1w7m4v.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/83mjpyo5lbj96jldbmy8hsyj7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/a8gnqmwrn3029hplkci6d0ejl.ll
+; zed-rs/optimized/b3ou4m5dtc370x50ytakxr6ey.ll
+; zed-rs/optimized/b8qgowmgtglca3x1tojob83nm.ll
+; zed-rs/optimized/esrqbc7sctb290fsujuxslk6b.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(ptr %0) #0 {
 entry:

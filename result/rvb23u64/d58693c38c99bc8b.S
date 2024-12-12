@@ -1,61 +1,54 @@
-func0000000000000184:                   # @func0000000000000184
+func0000000000000304:                   # @func0000000000000304
 	bset	a2, zero, a2
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000189:                   # @func0000000000000189
-	bset	a2, zero, a2
-	add	a1, a1, a2
-	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	ret
-func0000000000000084:                   # @func0000000000000084
-	bset	a2, zero, a2
-	add	a1, a1, a2
-	sltu	a0, a1, a0
-	ret
-func0000000000000089:                   # @func0000000000000089
+func0000000000000309:                   # @func0000000000000309
 	bset	a2, zero, a2
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000188:                   # @func0000000000000188
-	bset	a2, zero, a2
-	add	a1, a1, a2
-	sltu	a0, a0, a1
-	ret
-func00000000000001a8:                   # @func00000000000001a8
-	bset	a2, zero, a2
-	add	a1, a1, a2
-	sltu	a0, a0, a1
-	ret
-func00000000000001a4:                   # @func00000000000001a4
+func0000000000000104:                   # @func0000000000000104
 	bset	a2, zero, a2
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000124:                   # @func0000000000000124
+func0000000000000109:                   # @func0000000000000109
+	bset	a2, zero, a2
+	add	a1, a1, a2
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
+	ret
+func0000000000000308:                   # @func0000000000000308
+	bset	a2, zero, a2
+	add	a1, a1, a2
+	sltu	a0, a0, a1
+	ret
+func0000000000000348:                   # @func0000000000000348
+	bset	a2, zero, a2
+	add	a1, a1, a2
+	sltu	a0, a0, a1
+	ret
+func0000000000000344:                   # @func0000000000000344
+	bset	a2, zero, a2
+	add	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+func0000000000000244:                   # @func0000000000000244
 	lui	a3, 244
 	addiw	a3, a3, 576
 	sll	a2, a3, a2
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	lui	a3, 1
 	sll	a2, a3, a2
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000109:                   # @func0000000000000109
-	lui	a3, 1
-	sll	a2, a3, a2
-	add	a1, a1, a2
-	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	ret
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	li	a3, 64
 	sll	a2, a3, a2
 	add	a1, a1, a2

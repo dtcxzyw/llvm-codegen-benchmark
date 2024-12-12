@@ -4,7 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	andq	%rdi, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	movq	%rsi, %rax
-	orl	%edi, %eax
+	movq	%rdi, %rax
+	orl	%esi, %eax
 	andl	$1, %eax
 	retq

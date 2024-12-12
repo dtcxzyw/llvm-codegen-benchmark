@@ -1,18 +1,16 @@
 
-; 29 occurrences:
+; 27 occurrences:
 ; assimp/optimized/zip.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; folly/optimized/Conv.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; hermes/optimized/zip.c.ll
-; jq/optimized/unicode_fold1_key.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/ssim_sse2.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; oniguruma/optimized/unicode_fold1_key.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
@@ -67,7 +65,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = zext nneg i16 %1 to i32
   %5 = add nuw nsw i32 %4, %3
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 

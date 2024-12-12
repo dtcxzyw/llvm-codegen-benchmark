@@ -1,35 +1,30 @@
-func0000000000000022:                   # @func0000000000000022
-	andl	$1, %esi
-	leaq	(%rsi,%rsi,4), %rax
-	leaq	32(%rdi,%rax,8), %rax
+func0000000000000033:                   # @func0000000000000033
+	leaq	64(%rdi), %rcx
+	leaq	24(%rdi), %rax
+	testb	$1, %sil
+	cmovneq	%rcx, %rax
+	addq	$8, %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000003f:                   # @func000000000000003f
 	andl	$1, %esi
 	shll	$4, %esi
 	leaq	64(%rdi,%rsi), %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
-	andl	$1, %esi
-	leaq	(%rsi,%rsi,2), %rax
-	leaq	14928(%rdi,%rax,8), %rax
+func000000000000003c:                   # @func000000000000003c
+	leaq	32(%rdi), %rcx
+	leaq	8(%rdi), %rax
+	testb	$1, %sil
+	cmovneq	%rcx, %rax
+	addq	$14920, %rax                    # imm = 0x3A48
 	retq
-func000000000000003b:                   # @func000000000000003b
-	andl	$1, %esi
-	imulq	$704, %rsi, %rax                # imm = 0x2C0
-	leaq	456(%rdi,%rax), %rax
+func0000000000000030:                   # @func0000000000000030
+	leaq	360(%rdi), %rcx
+	leaq	72(%rdi), %rax
+	testb	$1, %sil
+	cmovneq	%rcx, %rax
+	addq	$24, %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
-	andl	$1, %esi
-	imulq	$704, %rsi, %rax                # imm = 0x2C0
-	leaq	608(%rdi,%rax), %rax
-	retq
-func0000000000000020:                   # @func0000000000000020
-	andl	$1, %esi
-	leaq	(%rsi,%rsi,8), %rax
-	shll	$5, %eax
-	leaq	96(%rdi,%rax), %rax
-	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andl	$1, %esi
 	shll	$6, %esi
 	leaq	744(%rdi,%rsi), %rax

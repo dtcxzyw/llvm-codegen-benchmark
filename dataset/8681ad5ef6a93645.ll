@@ -1,5 +1,6 @@
 
-; 178 occurrences:
+; 179 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
@@ -43,7 +44,6 @@
 ; libzmq/optimized/mailbox.cpp.ll
 ; libzmq/optimized/mailbox_safe.cpp.ll
 ; libzmq/optimized/pipe.cpp.ll
-; linux/optimized/ff-core.ll
 ; linux/optimized/fib_frontend.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/ip6_output.ll
@@ -52,7 +52,6 @@
 ; linux/optimized/nl80211.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/radix-tree.ll
-; linux/optimized/scsiglue.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/Attributor.cpp.ll
@@ -88,6 +87,8 @@
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_font_manager.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/sched_mergeprioritized.c.ll
@@ -179,7 +180,7 @@
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, %0
   %3 = icmp eq ptr %0, null
@@ -194,7 +195,7 @@ entry:
 ; redis/optimized/cluster_legacy.ll
 ; rocksdb/optimized/skiplistrep.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000058(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ne ptr %0, %1
@@ -205,7 +206,7 @@ entry:
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(ptr %0, ptr %1) #0 {
+define i1 @func000000000000004a(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ule ptr %0, %1
@@ -213,7 +214,8 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/alloc_lib.ll
 ; git/optimized/ref-filter.ll
 ; git/optimized/shortlog.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -226,7 +228,7 @@ entry:
 ; postgres/optimized/snprintf_srv.ll
 ; slurm/optimized/update_job.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000102(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ult ptr %1, %0
   %3 = icmp eq ptr %0, null
@@ -241,7 +243,7 @@ entry:
 ; openjdk/optimized/peephole_x86_64.ll
 ; xgboost/optimized/fit_stump.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000302(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, %0
   %3 = icmp eq ptr %0, null
@@ -252,7 +254,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/strmatch.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000202(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ugt ptr %1, %0
   %3 = icmp eq ptr %0, null

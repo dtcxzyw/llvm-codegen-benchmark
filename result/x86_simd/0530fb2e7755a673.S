@@ -1,21 +1,21 @@
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vpsrlq	$5, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
-	vpcmpled	%xmm1, %xmm2, %k1
+	vpcmpnltd	%xmm2, %xmm1, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-func0000000000000025:                   # @func0000000000000025
+func0000000000000045:                   # @func0000000000000045
 	vpsrlq	$32, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
-	vpcmpltud	%xmm1, %xmm2, %k1
+	vpcmpnleud	%xmm2, %xmm1, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpsrlq	$32, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
-	vpcmpleud	%xmm1, %xmm2, %k1
+	vpcmpnltud	%xmm2, %xmm1, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
@@ -24,14 +24,14 @@ func0000000000000024:                   # @func0000000000000024
 func0000000000000001:                   # @func0000000000000001
 	vpsrlq	$1, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
-	vpcmpeqd	%xmm1, %xmm2, %k1
+	vpcmpeqd	%xmm2, %xmm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %xmm0 {%k1} # xmm0 {%k1} = [32768,32768,32768,32768]
 	vzeroupper
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpsrlq	$5, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
-	vpcmpeqd	%xmm1, %xmm2, %k1
+	vpcmpeqd	%xmm2, %xmm1, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vmovdqa32	%xmm1, %xmm0 {%k1}
 	vzeroupper
@@ -39,14 +39,14 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000004:                   # @func0000000000000004
 	vpsrlq	$5, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
-	vpcmpleud	%xmm1, %xmm2, %k1
+	vpcmpnltud	%xmm2, %xmm1, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsrlq	$32, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
-	vpcmpneqd	%xmm1, %xmm2, %k1
+	vpcmpneqd	%xmm2, %xmm1, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq

@@ -20,13 +20,13 @@
 ; yosys/optimized/spice.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp slt i32 %6, %0
+  %7 = icmp sgt i32 %0, %6
   ret i1 %7
 }
 
@@ -35,17 +35,17 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 5
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %6, %0
+  %7 = icmp ugt i32 %0, %6
   ret i1 %7
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; crow/optimized/example_chat.cpp.ll
 ; draco/optimized/attributes_decoder.cc.ll
@@ -70,7 +70,6 @@ entry:
 ; opencv/optimized/flatten_layer.cpp.ll
 ; opencv/optimized/gather_elements_layer.cpp.ll
 ; opencv/optimized/large_kinfu.cpp.ll
-; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/pct_clusterizer.cpp.ll
 ; opencv/optimized/pct_signatures.cpp.ll
 ; openusd/optimized/sdfdump.cpp.ll
@@ -83,13 +82,13 @@ entry:
 ; openusd/optimized/usdtree.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp sgt i32 %6, %0
+  %7 = icmp slt i32 %0, %6
   ret i1 %7
 }
 
@@ -99,32 +98,29 @@ entry:
 ; draco/optimized/corner_table.cc.ll
 ; llvm/optimized/ScheduleDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp ult i32 %0, %6
   ret i1 %7
 }
 
-; 31 occurrences:
+; 28 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
 ; cvc5/optimized/regexp_entail.cpp.ll
-; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestFixedMap.cpp.ll
 ; eastl/optimized/TestFixedSet.cpp.ll
 ; eastl/optimized/TestMap.cpp.ll
 ; eastl/optimized/TestSet.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; gromacs/optimized/gmxcalculatorcpu.cpp.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
-; lightgbm/optimized/dataset.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
@@ -142,26 +138,26 @@ entry:
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 2
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %6, %0
+  %7 = icmp eq i32 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; opencv/optimized/exposure_compensate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp ne i32 %6, %0
+  %7 = icmp ne i32 %0, %6
   ret i1 %7
 }
 

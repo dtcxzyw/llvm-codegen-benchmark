@@ -1,5 +1,6 @@
 
-; 43 occurrences:
+; 44 occurrences:
+; boost/optimized/path.ll
 ; cmake/optimized/dynhds.c.ll
 ; cmake/optimized/url.c.ll
 ; cpython/optimized/bytesobject.ll

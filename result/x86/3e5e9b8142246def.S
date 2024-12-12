@@ -22,13 +22,13 @@ func000000000000000c:                   # @func000000000000000c
 	cmpq	%rsi, %rdi
 	setne	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	imulq	%rdx, %rsi
 	addq	%rdi, %rdi
 	cmpq	%rsi, %rdi
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	imulq	%rdx, %rsi
 	addq	%rdi, %rdi
 	cmpq	%rsi, %rdi

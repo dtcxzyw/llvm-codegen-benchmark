@@ -1,5 +1,5 @@
 
-; 187 occurrences:
+; 185 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/table.cc.ll
@@ -43,8 +43,6 @@
 ; nix/optimized/build-remote.ll
 ; nix/optimized/dotgraph.ll
 ; nix/optimized/graphml.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/registry.ll
 ; nix/optimized/why-depends.ll
 ; opencv/optimized/bitmatrix.cpp.ll
@@ -106,7 +104,6 @@
 ; velox/optimized/BooleanMix.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
-; velox/optimized/CheckNestedNulls.cpp.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/DecodedVector.cpp.ll
@@ -185,6 +182,7 @@
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/torder.ll
+; yosys/optimized/verilog_backend.ll
 ; zxing/optimized/ODCode128Writer.cpp.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind

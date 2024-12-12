@@ -10,7 +10,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = udiv i32 %1, %3
   %5 = trunc i32 %4 to i16
-  %6 = add i16 %5, %0
+  %6 = add i16 %0, %5
   ret i16 %6
 }
 

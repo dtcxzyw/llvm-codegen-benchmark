@@ -1,4 +1,4 @@
 func0000000000000001:                   # @func0000000000000001
-	cmpw	%di, %si
+	cmpw	%si, %di
 	sete	%al
 	retq

@@ -1,5 +1,12 @@
 
-; 15 occurrences:
+; 22 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
 ; ceres/optimized/corrector.cc.ll
 ; libjpeg-turbo/optimized/rdppm.c.ll
 ; lightgbm/optimized/metric.cpp.ll

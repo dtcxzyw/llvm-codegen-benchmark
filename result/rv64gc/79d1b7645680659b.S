@@ -6,20 +6,19 @@ func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func000000000000009a:                   # @func000000000000009a
+func000000000000009f:                   # @func000000000000009f
 	sext.w	a2, a2
 	add	a1, a1, a2
 	slli	a0, a0, 3
 	add	a0, a0, a1
 	addi	a0, a0, 12
 	ret
-func0000000000000032:                   # @func0000000000000032
+func000000000000009e:                   # @func000000000000009e
 	sext.w	a2, a2
-	slli	a0, a0, 4
-	slli	a2, a2, 4
+	add	a1, a1, a2
+	slli	a0, a0, 2
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 80
+	addi	a0, a0, 12
 	ret
 func0000000000000080:                   # @func0000000000000080
 	sext.w	a2, a2
@@ -44,7 +43,7 @@ func0000000000000090:                   # @func0000000000000090
 	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000003f:                   # @func000000000000003f
 	sext.w	a2, a2
 	slli	a0, a0, 4
 	slli	a2, a2, 3
@@ -52,7 +51,7 @@ func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000033:                   # @func0000000000000033
 	sext.w	a2, a2
 	slli	a0, a0, 3
 	slli	a2, a2, 2

@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; hwloc/optimized/distances.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/block_nvme.c.ll

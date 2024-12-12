@@ -19,11 +19,11 @@
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = xor i64 %2, -1
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp slt i32 %0, 0
   %6 = select i1 %5, i64 %2, i64 %4
   ret i64 %6
@@ -34,11 +34,11 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i64 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = xor i64 %2, -1
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp sgt i32 %0, 2
   %6 = select i1 %5, i64 %2, i64 %4
   ret i64 %6
@@ -47,11 +47,11 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = xor i64 %2, -1
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i64 %2, i64 %4
   ret i64 %6

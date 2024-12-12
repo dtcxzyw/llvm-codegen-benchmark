@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; linux/optimized/mcast_snoop.ll
+; 2 occurrences:
 ; minetest/optimized/clouds.cpp.ll
 ; wireshark/optimized/packet-lbmc.c.ll
 ; Function Attrs: nounwind
@@ -62,7 +61,7 @@ entry:
   ret i32 %6
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; clamav/optimized/unzip.c.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; linux/optimized/filter.ll
@@ -83,7 +82,6 @@ entry:
 ; wireshark/optimized/packet-pathport.c.ll
 ; wireshark/optimized/packet-rsvp.c.ll
 ; wireshark/optimized/packet-smb.c.ll
-; wireshark/optimized/packet-teap.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i16 %2) #0 {
@@ -95,7 +93,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; brotli/optimized/huffman.c.ll
 ; openjdk/optimized/method.ll
 ; Function Attrs: nounwind
@@ -116,7 +115,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add i32 %1, -16384
   %5 = add i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -130,7 +129,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw nsw i32 %1, 2
   %5 = add nuw nsw i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

@@ -10,19 +10,19 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
-	leal	64(%rax,%rdi), %eax
+	leal	64(%rdi,%rax), %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
-	leal	2(%rax,%rdi), %eax
+	leal	2(%rdi,%rax), %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
-	leal	2(%rax,%rdi), %eax
+	leal	2(%rdi,%rax), %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax

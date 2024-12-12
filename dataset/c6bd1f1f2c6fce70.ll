@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/mapped_file.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cpython/optimized/difradix2.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -22,11 +23,8 @@ entry:
   ret i32 %5
 }
 
-; 241 occurrences:
-; cpython/optimized/mpdecimal.ll
-; cpython/optimized/sixstep.ll
+; 234 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
-; eastl/optimized/TestBitset.cpp.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -44,9 +42,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; hwloc/optimized/bitmap.ll
-; hwloc/optimized/cpukinds.ll
-; hwloc/optimized/topology-x86.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -263,7 +258,6 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
-; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i64 %1, i1 %2) #0 {
 entry:
@@ -384,6 +378,24 @@ entry:
   %.not = icmp eq i64 %1, 8589934592
   %4 = select i1 %.not, i32 %0, i32 %3
   ret i32 %4
+}
+
+; 8 occurrences:
+; cpython/optimized/mpdecimal.ll
+; cpython/optimized/sixstep.ll
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; eastl/optimized/TestBitset.cpp.ll
+; hwloc/optimized/bitmap.ll
+; hwloc/optimized/cpukinds.ll
+; hwloc/optimized/topology-x86.ll
+; z3/optimized/util.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 0, i32 32
+  %4 = icmp samesign ult i64 %1, 65536
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
 }
 
 ; 1 occurrences:

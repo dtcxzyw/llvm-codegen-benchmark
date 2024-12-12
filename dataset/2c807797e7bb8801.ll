@@ -35,7 +35,7 @@ define i64 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 32768
   %4 = add i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = lshr i32 %5, 24
   %7 = zext nneg i32 %6 to i64
   ret i64 %7

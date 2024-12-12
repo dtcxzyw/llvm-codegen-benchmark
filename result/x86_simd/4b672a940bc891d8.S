@@ -1,4 +1,4 @@
-func000000000000021a:                   # @func000000000000021a
+func000000000000042a:                   # @func000000000000042a
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$2, %xmm1, %xmm1

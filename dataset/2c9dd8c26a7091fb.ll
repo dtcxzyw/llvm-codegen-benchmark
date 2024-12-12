@@ -5,7 +5,7 @@
 define ptr @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, ptr null, ptr %0
   ret ptr %5
 }

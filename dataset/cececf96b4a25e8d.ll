@@ -4,7 +4,7 @@
 ; quickjs/optimized/libunicode.ll
 ; ruby/optimized/class.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp eq i8 %0, 42
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/ziplist.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp eq i8 %0, -1

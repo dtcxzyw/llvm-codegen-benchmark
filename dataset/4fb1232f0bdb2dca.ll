@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/UnixAPIChecker.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; vcpkg/optimized/commands.install.cpp.ll
 ; wireshark/optimized/packet-pw-satop.c.ll
 ; xgboost/optimized/charconv.cc.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:

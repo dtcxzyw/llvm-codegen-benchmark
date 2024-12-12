@@ -22,7 +22,7 @@ func0000000000000005:                   # @func0000000000000005
 	sete	%al
 	orl	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	cmpw	$2, %si
 	setae	%al

@@ -26,9 +26,8 @@ entry:
   ret i64 %4
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; cvc5/optimized/miplib_trick.cpp.ll
-; faiss/optimized/lattice_Zn.cpp.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; linux/optimized/sbitmap.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
@@ -46,7 +45,6 @@ entry:
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -73,7 +71,7 @@ define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 
@@ -84,7 +82,7 @@ define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 
@@ -95,7 +93,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 

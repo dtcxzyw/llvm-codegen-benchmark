@@ -9,7 +9,7 @@ func0000000000000008:                   # @func0000000000000008
 	vmul.vx	v8, v8, a0
 	vmerge.vim	v8, v8, -1, v0
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	li	a0, 3
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v8, a0

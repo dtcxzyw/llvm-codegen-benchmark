@@ -3,15 +3,15 @@ func0000000000000004:                   # @func0000000000000004
 	movslq	%edx, %rcx
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movq	%rsi, %rax
 	movslq	%edx, %rcx
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
@@ -19,7 +19,15 @@ func0000000000000008:                   # @func0000000000000008
 	movslq	%edx, %rcx
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
+	seta	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movq	%rsi, %rax
+	movslq	%edx, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	cmpq	%rax, %rdi
 	setb	%al
 	retq
 func0000000000000009:                   # @func0000000000000009
@@ -27,6 +35,6 @@ func0000000000000009:                   # @func0000000000000009
 	movslq	%edx, %rcx
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpq	%rdi, %rax
-	setbe	%al
+	cmpq	%rax, %rdi
+	setae	%al
 	retq

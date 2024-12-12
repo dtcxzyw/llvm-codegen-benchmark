@@ -9,9 +9,9 @@
 ; php/optimized/hash_sha.ll
 ; php/optimized/sha1.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000051(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 56
+  %1 = icmp samesign ult i32 %0, 56
   %2 = select i1 %1, i32 56, i32 120
   %3 = sub nsw i32 %2, %0
   ret i32 %3
@@ -82,9 +82,9 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/Int128_t.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
-  %1 = icmp ugt i32 %0, 63
+  %1 = icmp samesign ugt i32 %0, 63
   %2 = select i1 %1, i32 127, i32 63
   %3 = sub nsw i32 %2, %0
   ret i32 %3

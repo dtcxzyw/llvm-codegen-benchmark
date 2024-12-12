@@ -1,6 +1,7 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; clamav/optimized/pdf.c.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
@@ -115,8 +116,9 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; llvm/optimized/GlobalMerge.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll

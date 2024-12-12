@@ -2,7 +2,7 @@
 	.zero	16,16
 .LCPI0_1:
 	.byte	16                              # 0x10
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpbroadcastb	.LCPI0_1(%rip), %xmm0   # xmm0 = [16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16]

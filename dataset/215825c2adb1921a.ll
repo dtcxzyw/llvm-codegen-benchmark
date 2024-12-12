@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; clamav/optimized/str.c.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind

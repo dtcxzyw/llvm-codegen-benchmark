@@ -1,61 +1,43 @@
 .LCPI0_0:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
 .LCPI0_1:
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
 .LCPI0_2:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
+	.short	65024                           # 0xfe00
+	.short	65024                           # 0xfe00
 func0000000000000001:                   # @func0000000000000001
 	vpsraw	$15, %ymm0, %ymm1
-	vpsrlw	$8, %ymm1, %ymm1
+	vpsrlw	$7, %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm1
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0

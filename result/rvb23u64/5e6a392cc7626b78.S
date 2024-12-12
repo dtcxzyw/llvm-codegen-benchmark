@@ -1,16 +1,16 @@
-func00000000000001a4:                   # @func00000000000001a4
+func0000000000000344:                   # @func0000000000000344
 	sext.w	a2, a2
 	add	a1, a1, a2
 	addi	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	sext.w	a2, a2
 	sh2add	a1, a2, a1
 	addi	a1, a1, 668
 	sltu	a0, a0, a1
 	ret
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000361:                   # @func0000000000000361
 	sext.w	a2, a2
 	sh1add	a2, a2, a2
 	slli	a2, a2, 4

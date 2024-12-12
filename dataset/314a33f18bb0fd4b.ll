@@ -1,7 +1,15 @@
 
-; 151 occurrences:
+; 190 occurrences:
 ; abc/optimized/giaPat2.c.ll
 ; abc/optimized/msatVec.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/rational.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; clamav/optimized/extract.cpp.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cvc5/optimized/sort_inference.cpp.ll
@@ -35,7 +43,6 @@
 ; linux/optimized/ndisc.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
@@ -93,6 +100,7 @@
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/lj_carith.ll
 ; luajit/optimized/lj_carith_dyn.ll
+; lvgl/optimized/lv_svg_render.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/class.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
@@ -124,7 +132,6 @@
 ; openspiel/optimized/value_iteration.cc.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; php/optimized/avifinfo.ll
-; php/optimized/is_simh.ll
 ; postgres/optimized/tsvector_op.ll
 ; proxygen/optimized/HTTPServerAcceptor.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
@@ -151,6 +158,38 @@
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; z3/optimized/sat_model_converter.cpp.ll
+; zed-rs/optimized/0wlgaqlqpgcjsjsmk5ypsukh3.ll
+; zed-rs/optimized/12x3d7yxch19r9kog7sr8geci.ll
+; zed-rs/optimized/19l54bkp73b8vpqg6elueqjm7.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2ouh3ql8sx6p5h4phjh0p73m4.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; zed-rs/optimized/58eqxolkuiavjghtj45u3c5th.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/8qol7q25vqqdxkncrkeuuvo2e.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/9eafvdu9qxyugp5or14xw795l.ll
+; zed-rs/optimized/9m6pb7xfonzy0fntd1p7uja7t.ll
+; zed-rs/optimized/9ph9ik6f4o8cna26bqiztqhx1.ll
+; zed-rs/optimized/9sysltstjhp0j3770z48leqk1.ll
+; zed-rs/optimized/9upxkbg7t4a2myonrq663opfs.ll
+; zed-rs/optimized/aemqmt46uh053lsq1r4xaert7.ll
+; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/ckiwzakufh7d1bhz9acxsspq9.ll
+; zed-rs/optimized/dhtd8mxtyja4srmt3ddrqkjib.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/ensdmfe31f02o6ykga4vd445w.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f3ax6fwg663b1ze6yfrcfasp4.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -159,13 +198,18 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 13 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; icu/optimized/collationbuilder.ll
 ; jq/optimized/regparse.ll
 ; linux/optimized/i915_request.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/LoopIdiomRecognize.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
 ; oniguruma/optimized/regparse.ll
 ; openusd/optimized/stringUtils.cpp.ll
 ; Function Attrs: nounwind
@@ -176,11 +220,13 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
+; grpc/optimized/socket_utils_common_posix.cc.ll
+; grpc/optimized/tcp_socket_utils.cc.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
@@ -210,7 +256,8 @@ entry:
   ret i1 %3
 }
 
-; 47 occurrences:
+; 45 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; gromacs/optimized/dgebrd.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
@@ -229,9 +276,7 @@ entry:
 ; openblas/optimized/dgelqf.c.ll
 ; openblas/optimized/dgeqrf.c.ll
 ; openblas/optimized/dgeqrfp.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dlaqr2.c.ll
@@ -252,7 +297,6 @@ entry:
 ; openblas/optimized/dormrz.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; stb/optimized/stb_divide.c.ll
@@ -261,7 +305,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp slt i32 %2, 0
+  %3 = icmp slt i32 %2, 1
   %4 = select i1 %3, i1 %0, i1 %1
   ret i1 %4
 }

@@ -4,26 +4,13 @@
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i1 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 16, i32 0
   %4 = icmp eq i32 %1, 1
   %5 = select i1 %4, i32 4, i32 %3
   %6 = icmp eq i32 %0, 0
   %7 = select i1 %6, i32 0, i32 %5
-  ret i32 %7
-}
-
-; 1 occurrences:
-; arrow/optimized/key_map.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000046(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i32 5, i32 6
-  %4 = icmp ult i32 %1, 14
-  %5 = select i1 %4, i32 4, i32 %3
-  %6 = icmp slt i32 %0, 5
-  %7 = select i1 %6, i32 3, i32 %5
   ret i32 %7
 }
 

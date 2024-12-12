@@ -1,7 +1,5 @@
 
-; 56 occurrences:
-; abc/optimized/cbaNtk.c.ll
-; cmake/optimized/archive_read_support_format_iso9660.c.ll
+; 54 occurrences:
 ; cmake/optimized/zstd_decompress.c.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
@@ -74,13 +72,13 @@ entry:
 ; git/optimized/utf8.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
-; libpng/optimized/pngwutil.c.ll
 ; libuv/optimized/idna.c.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/cipso_ipv4.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/insn.ll
+; linux/optimized/ip_options.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/tcp_input.ll
 ; lua/optimized/lvm.ll
@@ -113,7 +111,6 @@ entry:
 ; postgres/optimized/heaptuple.ll
 ; postgres/optimized/mbprint.ll
 ; postgres/optimized/rangetypes.ll
-; postgres/optimized/regcomp.ll
 ; postgres/optimized/spell.ll
 ; postgres/optimized/xloginsert.ll
 ; pugixml/optimized/pugixml.cpp.ll
@@ -131,6 +128,7 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-atalk.c.ll
 ; wireshark/optimized/packet-cops.c.ll
+; wireshark/optimized/packet-dhcp.c.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-eigrp.c.ll
 ; wireshark/optimized/packet-ip.c.ll
@@ -149,43 +147,6 @@ entry:
 define i1 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 64
-  %3 = icmp eq i8 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_net_can_can_sja1000.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 1
-  %3 = icmp ne i8 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 4 occurrences:
-; libpng/optimized/pngwutil.c.ll
-; wireshark/optimized/packet-dhcpv6.c.ll
-; wireshark/optimized/packet-ieee80211-radiotap.c.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, -16
-  %3 = icmp ult i8 %2, 113
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; cpython/optimized/_struct.ll
-; linux/optimized/hid-sony.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
   %4 = and i1 %3, %0
   ret i1 %4

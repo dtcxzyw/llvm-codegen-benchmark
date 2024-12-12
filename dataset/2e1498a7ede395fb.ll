@@ -19,10 +19,10 @@
 ; wasmtime-rs/optimized/47nrdncov7567v7m.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 48
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = icmp ne i64 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -42,10 +42,10 @@ entry:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000098c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 24
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = icmp ne i64 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6

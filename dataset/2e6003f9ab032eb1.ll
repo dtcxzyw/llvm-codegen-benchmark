@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; linux/optimized/ehci-dbgp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; proxygen/optimized/QPACKEncoder.cpp.ll
 ; slurm/optimized/dist_tasks.ll

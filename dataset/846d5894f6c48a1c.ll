@@ -48,7 +48,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %.neg = xor i64 %3, -1
-  %4 = add i64 %.neg, %0
+  %4 = add i64 %0, %.neg
   ret i64 %4
 }
 

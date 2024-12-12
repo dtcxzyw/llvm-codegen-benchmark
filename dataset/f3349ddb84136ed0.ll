@@ -1,7 +1,6 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/abcExact.c.ll
-; abc/optimized/satUtil.c.ll
 ; grpc/optimized/static_stride_scheduler.cc.ll
 ; opencv/optimized/Drawing_2.cpp.ll
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll

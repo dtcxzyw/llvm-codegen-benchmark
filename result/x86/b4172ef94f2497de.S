@@ -1,9 +1,9 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	xorl	%eax, %eax
 	subl	%esi, %edi
 	cmovgl	%edi, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	xorl	%eax, %eax
 	subl	%esi, %edi
 	cmovgl	%edi, %eax

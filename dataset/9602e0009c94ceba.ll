@@ -19,7 +19,8 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; luau/optimized/IrAnalysis.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; opencv/optimized/perf_layer.cpp.ll
@@ -37,17 +38,16 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/dpm_nms.cpp.ll
 ; opencv/optimized/einsum_layer.cpp.ll
-; opencv/optimized/reduce_layer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000023(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 2
+  %1 = lshr exact i64 %0, 3
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, -2
+  %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

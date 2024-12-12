@@ -1,5 +1,5 @@
 
-; 594 occurrences:
+; 636 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcBlifMv.c.ll
@@ -48,7 +48,6 @@
 ; abc/optimized/bbrReach.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bdcDec.c.ll
-; abc/optimized/bdcTable.c.ll
 ; abc/optimized/bmcBmc.c.ll
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/bmcMulti.c.ll
@@ -79,7 +78,6 @@
 ; abc/optimized/cuddExport.c.ll
 ; abc/optimized/cuddGenCof.c.ll
 ; abc/optimized/cuddGroup.c.ll
-; abc/optimized/cuddInit.c.ll
 ; abc/optimized/cuddLinear.c.ll
 ; abc/optimized/cuddLiteral.c.ll
 ; abc/optimized/cuddPriority.c.ll
@@ -191,7 +189,6 @@
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswLcorr.c.ll
 ; abc/optimized/sswPairs.c.ll
-; abc/optimized/sswSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/sswUnique.c.ll
 ; abc/optimized/superAnd.c.ll
@@ -208,6 +205,52 @@
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/static_string.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/iso9660.c.ll
@@ -259,11 +302,9 @@
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/HeapTimekeeper.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
-; folly/optimized/LogName.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
@@ -317,7 +358,6 @@
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/addr.ll
-; linux/optimized/decompress_inflate.ll
 ; linux/optimized/decompress_unzstd.ll
 ; linux/optimized/indirect.ll
 ; linux/optimized/lz4_decompress.ll
@@ -464,7 +504,6 @@
 ; php/optimized/strlcpy.ll
 ; php/optimized/tar.ll
 ; php/optimized/xp_socket.ll
-; php/optimized/zend_call_stack.ll
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_constants.ll
 ; php/optimized/zend_execute.ll
@@ -541,7 +580,6 @@
 ; redis/optimized/lstrlib.ll
 ; redis/optimized/lzf_c.ll
 ; redis/optimized/networking.ll
-; redis/optimized/resp_parser.ll
 ; redis/optimized/strl.ll
 ; rocksdb/optimized/io_posix.cc.ll
 ; ruby/optimized/addr2line.ll
@@ -594,6 +632,10 @@
 ; yosys/optimized/rtlil_lexer.ll
 ; yosys/optimized/verilog_lexer.ll
 ; z3/optimized/aig.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0) #0 {
 entry:

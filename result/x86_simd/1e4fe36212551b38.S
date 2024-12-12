@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	7                               # 0x7
 .LCPI1_1:
 	.quad	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsrlq	$3, %ymm2, %ymm2
 	vptestnmq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
 	vpandq	.LCPI1_1(%rip){1to4}, %ymm2, %ymm0 {%k1}

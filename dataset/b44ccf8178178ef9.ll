@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/theory_sep.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -8,6 +8,7 @@
 ; openjdk/optimized/xLargePages_linux.ll
 ; openmpi/optimized/opal_info_support.ll
 ; postgres/optimized/partbounds.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:

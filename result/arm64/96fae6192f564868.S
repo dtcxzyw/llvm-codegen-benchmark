@@ -1,26 +1,38 @@
-func0000000000000034:                   // @func0000000000000034
+func0000000000000074:                   // @func0000000000000074
 // %bb.0:                               // %entry
-	fmov	x11, d5
-	fmov	x12, d4
-	mov	w10, #9                         // =0x9
-	mov	x8, v5.d[1]
-	mov	x9, v4.d[1]
-	dup	v4.2d, x10
-	lsl	x13, x11, #3
-	lsl	x14, x12, #3
-	cmhi	v3.2d, v4.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	sub	x11, x13, x11
-	sub	x12, x14, x12
-	lsl	x15, x8, #3
-	lsl	x10, x9, #3
-	fmov	d5, x11
-	fmov	d6, x12
-	sub	x8, x15, x8
-	sub	x9, x10, x9
-	mov	v5.d[1], x8
-	mov	v6.d[1], x9
-	bif	v0.16b, v6.16b, v2.16b
-	bif	v1.16b, v5.16b, v3.16b
+	lsl	x8, x2, #3
+	cmp	x1, #9
+	sub	x8, x8, x2
+	csel	x0, x0, x8, lo
+	ret
+                                        // -- End function
+func0000000000000021:                   // @func0000000000000021
+// %bb.0:                               // %entry
+	add	x8, x2, x2, lsl #1
+	cmp	x1, #0
+	lsl	x8, x8, #2
+	csel	x0, x0, x8, eq
+	ret
+                                        // -- End function
+func000000000000000c:                   // @func000000000000000c
+// %bb.0:                               // %entry
+	mov	x8, #2709                       // =0xa95
+	cmp	x1, #0
+	movk	x8, #10018, lsl #16
+	movk	x8, #49591, lsl #32
+	movk	x8, #20860, lsl #48
+	mul	x8, x2, x8
+	csel	x0, x8, x0, eq
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	mov	x8, #2709                       // =0xa95
+	cmp	x1, #0
+	movk	x8, #10018, lsl #16
+	movk	x8, #49591, lsl #32
+	movk	x8, #20860, lsl #48
+	mul	x8, x2, x8
+	csel	x0, x0, x8, eq
 	ret
                                         // -- End function

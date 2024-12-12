@@ -13,13 +13,14 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; cmake/optimized/index.c.ll
 ; hyperscan/optimized/Utf8ComponentClass.cpp.ll
+; lvgl/optimized/lv_style.ll
 ; openusd/optimized/json.cpp.ll
 ; php/optimized/ZendAccelerator.ll
 ; postgres/optimized/mcv.ll

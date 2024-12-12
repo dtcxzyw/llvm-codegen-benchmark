@@ -5,6 +5,7 @@
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_migrate.ll
 ; linux/optimized/rx.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -20,7 +21,6 @@
 ; meshlab/optimized/ssao.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; openjdk/optimized/X11Color.ll
 ; openjdk/optimized/gtk2_interface.ll
 ; openjdk/optimized/gtk3_interface.ll
@@ -30,11 +30,11 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nuw nsw i32 %2, 24
+  %3 = shl nuw nsw i32 %2, 8
   %4 = shl nuw nsw i32 %1, 16
   %5 = or disjoint i32 %4, %3
   %6 = or disjoint i32 %5, %0
-  %7 = or disjoint i32 %6, 256
+  %7 = or disjoint i32 %6, -16777216
   ret i32 %7
 }
 
@@ -51,21 +51,6 @@ entry:
   %5 = or i32 %4, %3
   %6 = or i32 %5, %0
   %7 = or i32 %6, -16777216
-  ret i32 %7
-}
-
-; 3 occurrences:
-; libdeflate/optimized/deflate_decompress.c.ll
-; linux/optimized/yenta_socket.ll
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 8
-  %4 = shl i32 %1, 16
-  %5 = or i32 %4, %3
-  %6 = or disjoint i32 %5, %0
-  %7 = or i32 %6, 49152
   ret i32 %7
 }
 
@@ -119,6 +104,19 @@ entry:
   %5 = or disjoint i32 %4, %3
   %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, 729088
+  ret i32 %7
+}
+
+; 1 occurrences:
+; linux/optimized/yenta_socket.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 8
+  %4 = shl i32 %1, 16
+  %5 = or i32 %4, %3
+  %6 = or disjoint i32 %5, %0
+  %7 = or i32 %6, -1342177280
   ret i32 %7
 }
 
@@ -202,7 +200,7 @@ entry:
   %3 = shl i32 %2, 24
   %4 = shl nuw nsw i32 %1, 16
   %5 = or disjoint i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or disjoint i32 %6, 57
   ret i32 %7
 }

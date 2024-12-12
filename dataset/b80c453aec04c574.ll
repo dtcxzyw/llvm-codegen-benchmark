@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; cmake/optimized/strcase.c.ll
 ; curl/optimized/libcurl_la-strcase.ll
 ; curl/optimized/libcurl_la-url.ll
@@ -13,7 +13,6 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openmpi/optimized/gds_shmem_utils.ll
 ; postgres/optimized/describe.ll
-; proj/optimized/crs.cpp.ll
 ; proxygen/optimized/HTTPPriorityFunctions.cpp.ll
 ; qemu/optimized/block_monitor_block-hmp-cmds.c.ll
 ; Function Attrs: nounwind
@@ -38,7 +37,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }

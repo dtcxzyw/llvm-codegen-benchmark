@@ -104,17 +104,9 @@ entry:
   ret i64 %4
 }
 
-; 33 occurrences:
+; 20 occurrences:
 ; arrow/optimized/double-to-string.cc.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
-; delta-rs/optimized/18hy949kj2hgmhpt.ll
-; delta-rs/optimized/2gd5h5hcnilezwzy.ll
-; delta-rs/optimized/3i6wl0c802davmoy.ll
-; delta-rs/optimized/4hbajsv9e0zw688t.ll
-; delta-rs/optimized/4yzqn3zldbxccs8p.ll
-; delta-rs/optimized/4zvphat0q9a964bz.ll
-; delta-rs/optimized/55engpi7kd52qzvr.ll
-; delta-rs/optimized/f3qrlbdk00xfer1.ll
 ; double_conversion/optimized/double-to-string.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -127,13 +119,8 @@ entry:
 ; linux/optimized/cdrom.ll
 ; linux/optimized/mon_bin.ll
 ; llvm/optimized/Instructions.cpp.ll
-; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; openusd/optimized/double-to-string.cc.ll
 ; php/optimized/stream.ll
-; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
-; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
-; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
-; rust-analyzer-rs/optimized/3jiy4rg0squ6unio.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; wasmedge/optimized/variableInstr.cpp.ll
 ; z3/optimized/mpf.cpp.ll
@@ -214,6 +201,30 @@ entry:
 }
 
 ; 3 occurrences:
+; abc/optimized/acbMfs.c.ll
+; opencv/optimized/canny.cpp.ll
+; wolfssl/optimized/tls.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -64
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nuw nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -48
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 3 occurrences:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -252,18 +263,6 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; opencv/optimized/canny.cpp.ll
-; wolfssl/optimized/tls.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -8
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nuw nsw i64 %0, %3
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; opencv/optimized/rand.cpp.ll
 ; Function Attrs: nounwind
@@ -283,17 +282,6 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %0, %3
-  ret i64 %4
-}
-
-; 1 occurrences:
-; delta-rs/optimized/9v8xvedf69luuxb.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -20
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 %0, %3
   ret i64 %4
 }
 

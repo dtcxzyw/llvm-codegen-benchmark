@@ -1,6 +1,10 @@
 
-; 11 occurrences:
+; 15 occurrences:
 ; libquic/optimized/cfb.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openssl/optimized/libcrypto-lib-cfb128.ll
 ; openssl/optimized/libcrypto-lib-e_des.ll
 ; openssl/optimized/libcrypto-lib-e_des3.ll
@@ -15,6 +19,20 @@
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
+  %2 = and i32 %1, 7
+  %3 = xor i32 %2, 7
+  %4 = shl nuw nsw i32 1, %3
+  ret i32 %4
+}
+
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; oiio/optimized/psdinput.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i64 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i64 %0 to i32
   %2 = and i32 %1, 7
   %3 = xor i32 %2, 7
   %4 = shl nuw nsw i32 1, %3

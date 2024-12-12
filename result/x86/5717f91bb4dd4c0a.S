@@ -16,11 +16,17 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$102, %ecx
 	setne	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	testl	$2130706432, %edi               # imm = 0x7F000000
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000004:                   # @func0000000000000004
+	shll	$15, %esi
+	orl	$-33024, %esi                   # imm = 0xFFFF7F00
+	testl	%esi, %edi
+	sete	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
 	testb	$1, %sil
 	movl	$65343, %eax                    # imm = 0xFF3F
 	movl	$16191, %ecx                    # imm = 0x3F3F

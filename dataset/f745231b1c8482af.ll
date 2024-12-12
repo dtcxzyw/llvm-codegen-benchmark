@@ -12,7 +12,7 @@ entry:
   %3 = shl i32 %2, 3
   %4 = and i32 %3, 131072
   %.masked = and i32 %0, -262145
-  %5 = or i32 %4, %.masked
+  %5 = or i32 %.masked, %4
   ret i32 %5
 }
 

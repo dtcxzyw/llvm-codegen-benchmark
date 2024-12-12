@@ -2,7 +2,7 @@
 	.quad	8                               # 0x8
 .LCPI0_1:
 	.quad	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vbroadcastsd	.LCPI0_1(%rip), %ymm1   # ymm1 = [1,1,1,1]
 	vorpd	%ymm1, %ymm0, %ymm1 {%k1}

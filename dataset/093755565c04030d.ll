@@ -8,7 +8,7 @@ define i1 @func0000000000000005(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 5.000000e-01
   %3 = fsub float 5.000000e-01, %2
-  %4 = fcmp ult float %3, %0
+  %4 = fcmp ugt float %0, %3
   ret i1 %4
 }
 

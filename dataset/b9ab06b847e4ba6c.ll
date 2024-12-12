@@ -10,7 +10,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/numeric.ll
 ; gromacs/optimized/matio.cpp.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind

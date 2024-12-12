@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -2
   %3 = shl nsw i64 %0, 2
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = shl nuw nsw i64 %0, 1
@@ -70,20 +70,9 @@ entry:
 }
 
 ; 1 occurrences:
-; qemu/optimized/block_parallels-ext.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -32
-  %3 = shl nuw nsw i64 %0, 3
-  %4 = icmp ugt i64 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -32
   %3 = shl nsw i64 %0, 4
@@ -113,7 +102,7 @@ entry:
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -96
   %3 = shl nuw i64 %0, 4
@@ -125,7 +114,7 @@ entry:
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4
   %3 = shl i64 %0, 2
@@ -137,7 +126,7 @@ entry:
 ; clamav/optimized/XzIn.c.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -4
   %3 = shl i64 %0, 1
@@ -148,7 +137,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 8
   %3 = shl nsw i64 %0, 3
@@ -163,7 +152,7 @@ entry:
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4
   %3 = shl nuw nsw i64 %0, 2
@@ -183,7 +172,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = shl nsw i64 %0, 1
@@ -194,7 +183,7 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = shl nsw i64 %0, 1
@@ -202,10 +191,25 @@ entry:
   ret i1 %4
 }
 
+; 5 occurrences:
+; linux/optimized/memalloc.ll
+; zed-rs/optimized/1v7j1lpugnisv9daukqm09uho.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -3
+  %3 = shl i64 %0, 1
+  %4 = icmp eq i64 %3, %2
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; linux/optimized/hda_codec.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ea(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = shl nuw nsw i64 %0, 1
@@ -213,22 +217,11 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; linux/optimized/memalloc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, 4096
-  %3 = shl i64 %0, 6
-  %4 = icmp eq i64 %3, %2
-  ret i1 %4
-}
-
 ; 2 occurrences:
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; postgres/optimized/postgres.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -524288
   %3 = shl nsw i64 %0, 10
@@ -239,7 +232,7 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 64
   %3 = shl nsw i64 %0, 3
@@ -250,7 +243,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/listobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = shl i64 %0, 1
@@ -261,7 +254,7 @@ entry:
 ; 1 occurrences:
 ; msgpack/optimized/asio_send_recv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = shl nuw i64 %0, 1

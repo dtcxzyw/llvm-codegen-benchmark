@@ -13,10 +13,9 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {

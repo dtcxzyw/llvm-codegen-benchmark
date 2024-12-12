@@ -28,7 +28,7 @@ entry:
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %0, %1
   %3 = mul i64 %2, 3
@@ -46,6 +46,17 @@ entry:
   %2 = add i64 %0, %1
   %3 = mul i64 %2, 12
   %4 = icmp ugt i64 %3, -13
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %0, %1
+  %3 = mul i64 %2, 60000000
+  %4 = icmp eq i64 %3, -9223372036854775808
   ret i1 %4
 }
 
@@ -173,7 +184,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/interface_toolbar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = mul i64 %2, 24

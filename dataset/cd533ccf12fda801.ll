@@ -8,7 +8,7 @@ define i1 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 4095
   %2 = and i64 %1, -4096
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
@@ -26,7 +26,7 @@ define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 63
   %2 = and i64 %1, -64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -36,11 +36,11 @@ entry:
 ; postgres/optimized/ginpostinglist.ll
 ; postgres/optimized/twophase.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 63
   %2 = and i64 %1, 9223372036854775744
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -49,11 +49,11 @@ entry:
 ; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
 ; ring-rs/optimized/52ihu0vizw1hcp4s.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0) #0 {
+define i1 @func0000000000000078(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 7
   %2 = and i64 %1, 9223372036854775800
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp samesign ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -61,11 +61,11 @@ entry:
 ; freetype/optimized/pshinter.c.ll
 ; postgres/optimized/tsvector.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1
   %2 = and i64 %1, -2
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -73,11 +73,11 @@ entry:
 ; rand-rs/optimized/3a37va2ifhzer5u4.ll
 ; rand-rs/optimized/4i6e8x5bs8w1jqsk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0) #0 {
+define i1 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = add nuw i64 %0, 3
   %2 = and i64 %1, -4
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 

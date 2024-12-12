@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; g2o/optimized/edge_se3_euler.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/types_icp.cpp.ll
@@ -31,7 +31,6 @@
 ; linux/optimized/sky2.ll
 ; linux/optimized/transport.ll
 ; linux/optimized/tree.ll
-; linux/optimized/umh.ll
 ; linux/optimized/urb.ll
 ; linux/optimized/virtgpu_ioctl.ll
 ; linux/optimized/virtgpu_kms.ll

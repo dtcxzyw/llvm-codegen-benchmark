@@ -7,10 +7,10 @@
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-atn-ulcs.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = icmp eq i32 %5, 804389138
   %7 = select i1 %6, i32 0, i32 -9
@@ -23,10 +23,10 @@ entry:
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000001e4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = icmp ult i32 %5, 33900
   %7 = select i1 %6, i32 1131, i32 32768

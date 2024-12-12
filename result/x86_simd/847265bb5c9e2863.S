@@ -34,16 +34,3 @@ func00000000000000bd:                   # @func00000000000000bd
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI3_0:
-	.long	0xcf000000                      # float -2.14748365E+9
-.LCPI3_1:
-	.long	0x4f000000                      # float 2.14748365E+9
-func000000000000002c:                   # @func000000000000002c
-	vpsllw	$7, %xmm0, %xmm0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vcmpgeps	.LCPI3_0(%rip){1to16}, %zmm1, %k1
-	vcmpltps	.LCPI3_1(%rip){1to16}, %zmm1, %k1 {%k1}
-	vpcmpgtb	%xmm0, %xmm2, %k0 {%k1}
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq

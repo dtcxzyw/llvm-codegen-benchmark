@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	andi	a0, a0, 255
 	addw	a1, a1, a2
 	negw	a2, a1
@@ -16,7 +16,7 @@ func0000000000000051:                   # @func0000000000000051
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	andi	a0, a0, 255
 	addw	a1, a1, a2
 	negw	a2, a1

@@ -1,11 +1,10 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcUtil.c.ll
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_highpass.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; libwebp/optimized/webpdec.c.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/intel_pstate.ll
@@ -25,7 +24,7 @@
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
@@ -43,7 +42,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = lshr i64 %3, 2
   ret i64 %4
 }
@@ -54,7 +53,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = lshr exact i64 %3, 8
   ret i64 %4
 }
@@ -66,7 +65,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = lshr exact i64 %3, 1
   ret i64 %4
 }

@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/lock.ll
 ; fmt/optimized/core-test.cc.ll
 ; git/optimized/config.ll
-; icu/optimized/parse.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; ncnn/optimized/squeeze.cpp.ll

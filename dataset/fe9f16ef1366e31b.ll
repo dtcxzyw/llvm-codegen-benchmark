@@ -1,6 +1,7 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/area.ll
 ; clamav/optimized/Bra.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/sparc.c.ll
@@ -26,7 +27,8 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/enc.c.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll

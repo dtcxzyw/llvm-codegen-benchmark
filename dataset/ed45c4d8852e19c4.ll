@@ -30,19 +30,18 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/tls.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
-  %2 = xor i8 %1, 7
+  %2 = xor i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 24
-  %5 = or disjoint i32 %4, %0
+  %4 = shl nuw nsw i32 %3, 14
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

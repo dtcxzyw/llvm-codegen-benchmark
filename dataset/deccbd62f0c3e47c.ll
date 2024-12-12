@@ -19,7 +19,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %.masked = and i32 %1, -1073676289
   %4 = or i32 %.masked, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -44,7 +44,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = and i32 %4, 15
   %6 = or disjoint i32 %5, %0
   ret i32 %6
@@ -56,9 +56,9 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = and i32 %4, 28
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -71,7 +71,7 @@ entry:
   %3 = zext i8 %2 to i32
   %.masked = and i32 %1, 8191
   %4 = or i32 %.masked, %3
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 7
   %3 = and i32 %2, 65528

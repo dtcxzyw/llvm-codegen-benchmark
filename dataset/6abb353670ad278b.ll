@@ -12,13 +12,14 @@ entry:
   ret i1 %5
 }
 
-; 162 occurrences:
-; assimp/optimized/ASELoader.cpp.ll
+; 147 occurrences:
+; boost/optimized/graphml.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/init_from_stream.ll
+; boost/optimized/settings_parser.ll
 ; folly/optimized/TimeoutQueue.cpp.ll
 ; hermes/optimized/CodeMotion.cpp.ll
-; hermes/optimized/IR.cpp.ll
 ; hermes/optimized/ISel.cpp.ll
-; hermes/optimized/Inlining.cpp.ll
 ; hermes/optimized/Instrs.cpp.ll
 ; hermes/optimized/InstructionEscapeAnalysis.cpp.ll
 ; hermes/optimized/Mem2Reg.cpp.ll
@@ -27,17 +28,13 @@ entry:
 ; hermes/optimized/SimplifyCFG.cpp.ll
 ; hermes/optimized/StackPromotion.cpp.ll
 ; hermes/optimized/String.cpp.ll
-; hermes/optimized/TDZDedup.cpp.ll
 ; hermes/optimized/Utils.cpp.ll
-; hermes/optimized/escape.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/AddDiscriminators.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AsmWriter.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
-; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/Attributor.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
@@ -57,7 +54,6 @@ entry:
 ; llvm/optimized/CodeExtractor.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/ConvergenceVerifier.cpp.ll
-; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/CoroSplit.cpp.ll
 ; llvm/optimized/DCE.cpp.ll
@@ -67,9 +63,7 @@ entry:
 ; llvm/optimized/DependenceGraphBuilder.cpp.ll
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/Evaluator.cpp.ll
-; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/ExtractGV.cpp.ll
-; llvm/optimized/FlattenCFG.cpp.ll
 ; llvm/optimized/FunctionAttrs.cpp.ll
 ; llvm/optimized/FunctionComparator.cpp.ll
 ; llvm/optimized/FunctionLoweringInfo.cpp.ll
@@ -81,7 +75,6 @@ entry:
 ; llvm/optimized/GuardWidening.cpp.ll
 ; llvm/optimized/HotColdSplitting.cpp.ll
 ; llvm/optimized/IRSimilarityIdentifier.cpp.ll
-; llvm/optimized/IndVarSimplify.cpp.ll
 ; llvm/optimized/InlineCost.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
@@ -109,9 +102,7 @@ entry:
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MachineModuleSlotTracker.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
-; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; llvm/optimized/MemorySSA.cpp.ll
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
@@ -149,7 +140,6 @@ entry:
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/SplitModule.cpp.ll
@@ -169,14 +159,9 @@ entry:
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/WinEHPrepare.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
-; meshlab/optimized/qualitymapperdialog.cpp.ll
-; openusd/optimized/collector.cpp.ll
-; openusd/optimized/eventContainer.cpp.ll
-; openusd/optimized/jsonSerialization.cpp.ll
-; openusd/optimized/testTraceEventContainer.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000041(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -56
   %4 = select i1 %1, ptr null, ptr %3
@@ -184,18 +169,64 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 26 occurrences:
+; assimp/optimized/ASELoader.cpp.ll
+; hermes/optimized/IR.cpp.ll
+; hermes/optimized/Inlining.cpp.ll
+; hermes/optimized/RegAlloc.cpp.ll
+; hermes/optimized/TDZDedup.cpp.ll
+; hermes/optimized/Utils.cpp.ll
+; hermes/optimized/escape.cpp.ll
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTWriterDecl.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
+; llvm/optimized/Core.cpp.ll
+; llvm/optimized/ExprCXX.cpp.ll
+; llvm/optimized/FlattenCFG.cpp.ll
+; llvm/optimized/Float2Int.cpp.ll
+; llvm/optimized/IndVarSimplify.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
+; llvm/optimized/PassBuilder.cpp.ll
+; llvm/optimized/PassBuilderPipelines.cpp.ll
+; llvm/optimized/SemaDeclObjC.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; meshlab/optimized/qualitymapperdialog.cpp.ll
+; openusd/optimized/collector.cpp.ll
+; openusd/optimized/eventContainer.cpp.ll
+; openusd/optimized/jsonSerialization.cpp.ll
+; openusd/optimized/testTraceEventContainer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(ptr %0, i1 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 72
+  %4 = select i1 %1, ptr null, ptr %3
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
 ; hermes/optimized/Dumper.cpp.ll
-; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/ExternalASTMerger.cpp.ll
+; sentencepiece/optimized/sentencepiece_processor.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(ptr %0, i1 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = select i1 %1, ptr null, ptr %3
+  %5 = icmp ult ptr %4, %0
+  ret i1 %5
+}
+
+; 4 occurrences:
+; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
 ; llvm/optimized/StackSafetyAnalysis.cpp.ll
-; sentencepiece/optimized/sentencepiece_processor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000044(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw i8, ptr %2, i64 -56
   %4 = select i1 %1, ptr null, ptr %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
@@ -208,24 +239,11 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000004c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -24
   %4 = select i1 %1, ptr null, ptr %3
   %5 = icmp ne ptr %4, %0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; llvm/optimized/Float2Int.cpp.ll
-; llvm/optimized/PassBuilder.cpp.ll
-; llvm/optimized/PassBuilderPipelines.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000031(ptr %0, i1 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
-  %4 = select i1 %1, ptr null, ptr %3
-  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -245,9 +263,9 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/rbutil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000068(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ugt ptr %3, %0
   %not. = xor i1 %1, true
   %5 = select i1 %not., i1 %4, i1 false

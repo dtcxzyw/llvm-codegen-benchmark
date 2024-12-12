@@ -14,7 +14,7 @@ entry:
   ret i32 %3
 }
 
-; 48 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/alone_decoder.c.ll
@@ -28,14 +28,12 @@ entry:
 ; hermes/optimized/Conversions.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; libjpeg-turbo/optimized/wrgif.c.ll
-; linux/optimized/8250_lpss.ll
 ; linux/optimized/amd_nb.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/mpage.ll
 ; linux/optimized/processor_throttling.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/util.ll
-; linux/optimized/vclock_gettime.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
@@ -62,7 +60,6 @@ entry:
 ; regex-rs/optimized/32jw1oy2yofrhudk.ll
 ; regex-rs/optimized/3bb5ih3626n2er1d.ll
 ; regex-rs/optimized/54dfm57uiwuw9jbd.ll
-; spike/optimized/i64_to_f32.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

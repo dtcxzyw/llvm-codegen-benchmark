@@ -4,6 +4,11 @@ func0000000000000028:                   # @func0000000000000028
 	orq	%rdi, %rax
 	shrq	%rax
 	retq
+func0000000000000037:                   # @func0000000000000037
+	movq	%rdi, %rax
+	shrq	$52, %rax
+	orl	%esi, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rsi, %rax
 	shlq	$32, %rax
@@ -39,11 +44,16 @@ func000000000000002a:                   # @func000000000000002a
 	shrq	$32, %rax
 	orl	%esi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
+func000000000000002e:                   # @func000000000000002e
 	movq	%rsi, %rax
-	shlq	$32, %rax
+	shlq	$48, %rax
 	orq	%rdi, %rax
-	shrq	$40, %rax
+	shrq	$32, %rax
+	retq
+func000000000000003e:                   # @func000000000000003e
+	movq	%rdi, %rax
+	shrq	$32, %rax
+	orl	%esi, %eax
 	retq
 func000000000000003b:                   # @func000000000000003b
 	movq	%rsi, %rax

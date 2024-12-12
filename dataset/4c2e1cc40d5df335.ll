@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/area.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; spike/optimized/fmsub_s.ll
 ; spike/optimized/fnmadd_s.ll

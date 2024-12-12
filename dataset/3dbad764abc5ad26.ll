@@ -24,7 +24,7 @@
 define float @func0000000000000000(float %0, i16 %1) #0 {
 entry:
   %2 = uitofp i16 %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   ret float %3
 }
 

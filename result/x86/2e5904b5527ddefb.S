@@ -1,14 +1,14 @@
-func0000000000000161:                   # @func0000000000000161
+func00000000000002c1:                   # @func00000000000002c1
 	addl	%edx, %edx
 	movslq	%edx, %rax
 	subq	%rax, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addl	%edx, %edx
 	movslq	%edx, %rax
 	subq	%rax, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq

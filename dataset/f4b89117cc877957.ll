@@ -1,13 +1,31 @@
 
-; 77 occurrences:
+; 95 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/archive_read_disk_posix.c.ll
 ; cpython/optimized/obmalloc.ll
 ; git/optimized/trace2.ll
 ; hdf5/optimized/H5FDcore.c.ll
 ; hdf5/optimized/H5FSsection.c.ll
 ; hdf5/optimized/H5MF.c.ll
-; hdf5/optimized/H5MFsection.c.ll
 ; hyperscan/optimized/gough.c.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; lief/optimized/ssl_msg.c.ll
@@ -95,7 +113,7 @@ entry:
 ; slurm/optimized/acct_gather_energy_ibmaem.ll
 ; slurm/optimized/acct_gather_energy_pm_counters.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %1, %0
   %3 = icmp eq i64 %0, 0

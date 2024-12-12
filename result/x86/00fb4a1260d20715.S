@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpl	$1, %edx
 	sete	%cl
 	cmpq	$1, %rsi
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	cmpl	$1401, %edx                     # imm = 0x579
 	setl	%cl
 	cmpq	$4, %rsi
@@ -14,7 +14,7 @@ func0000000000000061:                   # @func0000000000000061
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	cmpl	$4, %edx
 	setl	%cl
 	cmpq	$-9999999, %rsi                 # imm = 0xFF676981
@@ -22,7 +22,7 @@ func000000000000006c:                   # @func000000000000006c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	cmpl	$3, %edx
 	setb	%cl
 	cmpq	$3, %rsi
@@ -30,7 +30,7 @@ func0000000000000044:                   # @func0000000000000044
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testl	%edx, %edx
 	setne	%cl
 	testq	%rsi, %rsi
@@ -38,7 +38,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testl	%edx, %edx
 	sete	%cl
 	testq	%rsi, %rsi
@@ -46,7 +46,7 @@ func000000000000001c:                   # @func000000000000001c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	cmpl	$65536, %edx                    # imm = 0x10000
 	setae	%cl
 	testq	%rsi, %rsi

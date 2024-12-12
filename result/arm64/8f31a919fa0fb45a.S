@@ -1,46 +1,19 @@
 func000000000000007d:                   // @func000000000000007d
 // %bb.0:                               // %entry
 	mov	x8, #50637                      // =0xc5cd
-	fmov	x9, d4
-	fmov	x12, d3
+	neg	x10, x2
 	movk	x8, #3375, lsl #16
-	mov	x10, v4.d[1]
-	mov	x13, v3.d[1]
 	movk	x8, #225, lsl #32
 	movk	x8, #15, lsl #48
-	umulh	x11, x9, x8
-	umulh	x14, x12, x8
-	umulh	x15, x10, x8
-	sub	x16, x9, x11
-	umulh	x8, x13, x8
-	add	x11, x11, x16, lsr #1
-	sub	x16, x12, x14
-	add	x14, x14, x16, lsr #1
-	lsr	x11, x11, #15
-	mov	w16, #65521                     // =0xfff1
-	sub	x17, x10, x15
-	lsr	x14, x14, #15
-	msub	x9, x11, x16, x9
-	add	x15, x15, x17, lsr #1
-	sub	x11, x13, x8
-	add	x8, x8, x11, lsr #1
-	msub	x11, x14, x16, x12
-	lsr	x12, x15, #15
+	umulh	x8, x2, x8
+	sub	x9, x2, x8
+	add	x8, x8, x9, lsr #1
+	mov	w9, #65521                      // =0xfff1
 	lsr	x8, x8, #15
-	msub	x10, x12, x16, x10
-	fmov	d3, x9
-	msub	x8, x8, x16, x13
-	fmov	d4, x11
-	mov	v3.d[1], x10
-	mov	v4.d[1], x8
-	mov	x8, #-65506                     // =0xffffffffffff001e
-	movk	x8, #65534, lsl #16
-	sub	v1.2d, v1.2d, v3.2d
-	sub	v0.2d, v0.2d, v4.2d
-	uaddw2	v1.2d, v1.2d, v2.4s
-	uaddw	v0.2d, v0.2d, v2.2s
-	dup	v2.2d, x8
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
+	madd	x8, x8, x9, x10
+	add	x8, x0, x8
+	add	x8, x8, w1, uxtw
+	sub	x8, x8, #31, lsl #12            // =126976
+	sub	x0, x8, #4066
 	ret
                                         // -- End function

@@ -7,16 +7,14 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 28
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; arrow/optimized/writer.cc.ll
 ; git/optimized/xmerge.ll
-; linux/optimized/i915_cmd_parser.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; openblas/optimized/dsyr2k_kernel_L.c.ll
 ; php/optimized/parse_date.ll
 ; postgres/optimized/date.ll
 ; Function Attrs: nounwind
@@ -175,7 +173,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = shl i64 %3, 16
   %5 = ashr i64 %4, 32
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

@@ -14,11 +14,11 @@ entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = shl nuw nsw i16 %2, 3
   %4 = and i16 %3, 8
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 
-; 561 occurrences:
+; 563 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
@@ -347,7 +347,6 @@ entry:
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -495,6 +494,9 @@ entry:
 ; llvm/optimized/X86Subtarget.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_spinbox.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -621,7 +623,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = shl i16 %2, 2
   %4 = and i16 %3, 28
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   ret i16 %5
 }
 
@@ -634,7 +636,7 @@ entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = shl nuw nsw i16 %2, 2
   %4 = and i16 %3, 1016
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   ret i16 %5
 }
 

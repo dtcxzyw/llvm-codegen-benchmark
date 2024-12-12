@@ -1,0 +1,112 @@
+
+; 2 occurrences:
+; cmake/optimized/sendf.c.ll
+; curl/optimized/libcurl_la-sendf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = tail call i64 @llvm.smax.i64(i64 %3, i64 0)
+  %5 = icmp ugt i64 %4, %0
+  ret i1 %5
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smax.i64(i64, i64) #1
+
+; 2 occurrences:
+; arrow/optimized/compare.cc.ll
+; luau/optimized/isocline.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = tail call i64 @llvm.smax.i64(i64 %3, i64 0)
+  %5 = icmp slt i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/build_utility.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = tail call i64 @llvm.smax.i64(i64 %3, i64 0)
+  %5 = icmp ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/hrtimer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = tail call i64 @llvm.smax.i64(i64 %3, i64 0)
+  %5 = icmp slt i64 %4, %0
+  ret i1 %5
+}
+
+; 26 occurrences:
+; casadi/optimized/cvodes_bandpre.c.ll
+; casadi/optimized/cvodes_bbdpre.c.ll
+; casadi/optimized/cvodes_direct.c.ll
+; casadi/optimized/idas_bbdpre.c.ll
+; casadi/optimized/idas_direct.c.ll
+; casadi/optimized/kinsol_bbdpre.c.ll
+; casadi/optimized/kinsol_direct.c.ll
+; casadi/optimized/sundials_band.c.ll
+; sundials/optimized/arkode_bandpre.c.ll
+; sundials/optimized/arkode_bbdpre.c.ll
+; sundials/optimized/arkode_ls.c.ll
+; sundials/optimized/cvode_bandpre.c.ll
+; sundials/optimized/cvode_bbdpre.c.ll
+; sundials/optimized/cvode_ls.c.ll
+; sundials/optimized/cvodes_bandpre.c.ll
+; sundials/optimized/cvodes_bbdpre.c.ll
+; sundials/optimized/cvodes_ls.c.ll
+; sundials/optimized/ida_bbdpre.c.ll
+; sundials/optimized/ida_ls.c.ll
+; sundials/optimized/idas_bbdpre.c.ll
+; sundials/optimized/idas_ls.c.ll
+; sundials/optimized/kinsol_bbdpre.c.ll
+; sundials/optimized/kinsol_ls.c.ll
+; sundials/optimized/sundials_band.c.ll
+; sundials/optimized/sunmatrix_band.c.ll
+; sundials/optimized/sunmatrix_sparse.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = tail call i64 @llvm.smax.i64(i64 %3, i64 0)
+  %5 = icmp sgt i64 %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; casadi/optimized/sundials_direct.c.ll
+; sundials/optimized/sundials_direct.c.ll
+; sundials/optimized/sunmatrix_band.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = tail call i64 @llvm.smax.i64(i64 %3, i64 0)
+  %5 = icmp sgt i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; spdlog/optimized/spdlog.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = tail call i64 @llvm.smax.i64(i64 %3, i64 0)
+  %5 = icmp ult i64 %4, %0
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

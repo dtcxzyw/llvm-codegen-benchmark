@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovqd	%ymm2, %xmm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k1

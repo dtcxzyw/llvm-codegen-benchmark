@@ -95,7 +95,7 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 15 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; ockam-rs/optimized/2jdafynperrjfnwp.ll
@@ -108,8 +108,11 @@ entry:
 ; tls-rs/optimized/526n7g8rwc65lc9b.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i8 %0, 6
@@ -117,34 +120,7 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
-; image-rs/optimized/5ez7udly19o3uj1p.ll
-; llvm/optimized/BasicAliasAnalysis.cpp.ll
-; llvm/optimized/ScalarEvolutionExpander.cpp.ll
-; openjdk/optimized/escape.ll
-; typst-rs/optimized/26ex1w19ixz6ifuk.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
-entry:
-  %2 = trunc i8 %1 to i1
-  %3 = icmp ugt i8 %0, 1
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 2 occurrences:
-; image-rs/optimized/5ez7udly19o3uj1p.ll
-; typst-rs/optimized/26ex1w19ixz6ifuk.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i8 %1) #0 {
-entry:
-  %2 = trunc nuw i8 %1 to i1
-  %3 = icmp ugt i8 %0, 31
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 8 occurrences:
+; 32 occurrences:
 ; coreutils-rs/optimized/d2l5f8sei2pacyj.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
@@ -153,8 +129,32 @@ entry:
 ; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3di65m17000bk7br774s5jqap.ll
+; zed-rs/optimized/4h176o45n3uxzch53hiway9mu.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/7pufzunt0qgem8mrchwfb0f9s.ll
+; zed-rs/optimized/8saagxlqr1drbipxii3ylnn9h.ll
+; zed-rs/optimized/98w34cm3i57zhkhn56epbm5eb.ll
+; zed-rs/optimized/9dr2kwkk18o137jk0clql0t7q.ll
+; zed-rs/optimized/9eafvdu9qxyugp5or14xw795l.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9kzypu599rxw1s8z0tdtjo3oe.ll
+; zed-rs/optimized/ailyigpc30x7abusis8v0e3w5.ll
+; zed-rs/optimized/b0jacrvunbgse6y69p1vx4gkq.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bzs5z51c7x0xt2thexp0lbkvh.ll
+; zed-rs/optimized/czpyda74ta6m4oig1hr6iiwt6.ll
+; zed-rs/optimized/dbwuhn7ob83o6nu68k5f1g4py.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e8miey85a4w6kj2eow2y7dsus.ll
+; zed-rs/optimized/ebj1t6ydn0lm59l6uu3qqz6z0.ll
+; zed-rs/optimized/epuo8yz105556scsed5wrqb4z.ll
+; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i8 %0, 0
@@ -174,6 +174,19 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; llvm/optimized/BasicAliasAnalysis.cpp.ll
+; llvm/optimized/ScalarEvolutionExpander.cpp.ll
+; openjdk/optimized/escape.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = icmp ugt i8 %0, 1
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
 ; 4 occurrences:
 ; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
@@ -188,35 +201,15 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 3 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
-; ockam-rs/optimized/1j8f46ag92qmaepd.ll
-; ockam-rs/optimized/2qz3huiqqut486jt.ll
-; ockam-rs/optimized/39elqh75xhewanjo.ll
-; ockam-rs/optimized/445trp5tofqtvmh3.ll
-; ockam-rs/optimized/59na08zlxqp9p17s.ll
-; ockam-rs/optimized/lcclztcuaxx9mqt.ll
-; ockam-rs/optimized/scbbgml6cvr1nwt.ll
-; ockam-rs/optimized/y59h8jnu9k73im6.ll
 ; typst-rs/optimized/1u1bncyzo9yu1omp.ll
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000044(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ult i8 %0, 10
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; postgres/optimized/heapdesc.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i8 %0, i8 %1) #0 {
-entry:
-  %2 = trunc i8 %1 to i1
-  %3 = icmp sgt i8 %0, -1
   %4 = and i1 %3, %2
   ret i1 %4
 }

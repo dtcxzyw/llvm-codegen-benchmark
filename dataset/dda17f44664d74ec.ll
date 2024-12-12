@@ -1,5 +1,5 @@
 
-; 113 occurrences:
+; 112 occurrences:
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/api_vector.cc.ll
@@ -75,25 +75,17 @@
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/BasicBlock.cpp.ll
-; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/EditedSource.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
-; llvm/optimized/IVDescriptors.cpp.ll
-; llvm/optimized/InstCombineAddSub.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
-; llvm/optimized/InstCombineVectorOps.cpp.ll
-; llvm/optimized/InstrProfiling.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/LoopInterchange.cpp.ll
 ; llvm/optimized/MarkupFilter.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
-; llvm/optimized/PHITransAddr.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/VectorCombine.cpp.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
 ; nuklear/optimized/unity.c.ll
@@ -113,6 +105,13 @@
 ; rust-analyzer-rs/optimized/3jiy4rg0squ6unio.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; wireshark/optimized/packet-pn-dcp.c.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/5gzhlrfve63v3ndyg8t40tttn.ll
+; zed-rs/optimized/7vgle1vcww8f84ro2xl2r2u8f.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
+; zed-rs/optimized/cz5ff2u3nctci18cefn5uhmxt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i1 %1, i1 %2) #0 {
 entry:

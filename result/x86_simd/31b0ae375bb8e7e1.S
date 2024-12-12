@@ -4,7 +4,7 @@
 	.long	6                               # 0x6
 .LCPI0_2:
 	.long	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_2(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
@@ -16,7 +16,7 @@ func0000000000000021:                   # @func0000000000000021
 	.long	8192                            # 0x2000
 .LCPI1_2:
 	.long	1                               # 0x1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI1_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI1_2(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]

@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 61 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; bullet3/optimized/b3GpuNarrowPhase.ll
@@ -15,6 +15,7 @@
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/editpickpoints.cpp.ll
 ; meshlab/optimized/filter_camera.cpp.ll
@@ -59,6 +60,7 @@
 ; tev/optimized/ImageCanvas.cpp.ll
 ; wireshark/optimized/packet-cip.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

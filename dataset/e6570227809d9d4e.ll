@@ -29,14 +29,15 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/alloc_lib.ll
 ; linux/optimized/auditfilter.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = xor i32 %0, 31
+  %1 = xor i32 %0, 1
   %2 = shl nuw i32 1, %1
   %3 = xor i32 %2, -1
   ret i32 %3

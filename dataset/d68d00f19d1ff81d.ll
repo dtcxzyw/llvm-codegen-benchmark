@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; hermes/optimized/ConvertUTF.cpp.ll
 ; llvm/optimized/ConvertUTF.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; wireshark/optimized/packet-msrp.c.ll
 ; wireshark/optimized/packet-multipart.c.ll
@@ -249,7 +250,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp eq i32 %0, 0
@@ -289,12 +290,12 @@ entry:
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/saigIso.c.ll
 ; abc/optimized/sscCore.c.ll
-; abc/optimized/sscUtil.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; abc/optimized/wlnWlc.c.ll
+; boost/optimized/text_file_backend.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ult i32 %0, 15

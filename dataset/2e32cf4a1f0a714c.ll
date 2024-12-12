@@ -4,7 +4,7 @@
 ; openssl/optimized/rsa_test-bin-rsa_test.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne i32 %1, 0
@@ -18,7 +18,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-dh_ameth.ll
 ; openssl/optimized/libcrypto-shlib-dh_ameth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq i32 %1, 2

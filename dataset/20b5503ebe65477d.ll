@@ -1,5 +1,6 @@
 
-; 22 occurrences:
+; 21 occurrences:
+; boost/optimized/sparring_partner.ll
 ; linux/optimized/printk.ll
 ; nghttp2/optimized/nghttp2_ratelim.c.ll
 ; nix/optimized/cgroup.ll
@@ -7,8 +8,6 @@
 ; nix/optimized/globals.ll
 ; nix/optimized/lexer-tab.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/store-api.ll

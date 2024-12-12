@@ -8,7 +8,7 @@ func0000000000000019:                   # @func0000000000000019
 	slti	a1, a1, 3
 	subw	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	sext.w	a1, a1
 	sltiu	a1, a1, 3
 	subw	a0, a0, a1
@@ -40,6 +40,11 @@ func0000000000000031:                   # @func0000000000000031
 	snez	a1, a1
 	subw	a0, a0, a1
 	ret
+func0000000000000011:                   # @func0000000000000011
+	sext.w	a1, a1
+	sltiu	a1, a1, 3
+	subw	a0, a0, a1
+	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a1, a1
 	slti	a1, a1, -11
@@ -47,9 +52,14 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000020:                   # @func0000000000000020
 	sext.w	a1, a1
-	lui	a2, 786177
-	addiw	a2, a2, 823
-	sltu	a1, a2, a1
+	sltiu	a1, a1, 2
+	xori	a1, a1, 1
+	subw	a0, a0, a1
+	ret
+func0000000000000061:                   # @func0000000000000061
+	sext.w	a1, a1
+	sltiu	a1, a1, 4
+	xori	a1, a1, 1
 	subw	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
@@ -57,11 +67,5 @@ func0000000000000010:                   # @func0000000000000010
 	lui	a2, 786177
 	addiw	a2, a2, 823
 	sltu	a1, a1, a2
-	subw	a0, a0, a1
-	ret
-func0000000000000021:                   # @func0000000000000021
-	sext.w	a1, a1
-	sltiu	a1, a1, 33
-	xori	a1, a1, 1
 	subw	a0, a0, a1
 	ret

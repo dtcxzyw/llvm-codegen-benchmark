@@ -43,7 +43,7 @@ func000000000000003c:                   # @func000000000000003c
 	vpbroadcastq	.LCPI3_0(%rip), %ymm2   # ymm2 = [56,56,56,56]
 	vpbroadcastq	.LCPI3_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [72,72,72,72]
 	vpsllq	$5, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI4_0:
@@ -56,6 +56,6 @@ func0000000000000015:                   # @func0000000000000015
 	vpsllq	$4, %ymm2, %ymm1
 	vpbroadcastq	.LCPI4_0(%rip), %ymm2   # ymm2 = [96,96,96,96]
 	vpbroadcastq	.LCPI4_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [128,128,128,128]
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq

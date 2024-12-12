@@ -1,5 +1,5 @@
 
-; 588 occurrences:
+; 585 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcMini.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -18,7 +18,6 @@
 ; abc/optimized/cecIso.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cuddRef.c.ll
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -28,7 +27,6 @@
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
-; abc/optimized/fraClau.c.ll
 ; abc/optimized/fraSec.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaAigerExt.c.ll
@@ -71,12 +69,12 @@
 ; arrow/optimized/bpacking.cc.ll
 ; arrow/optimized/bpacking_avx2.cc.ll
 ; arrow/optimized/bpacking_avx512.cc.ll
-; arrow/optimized/cached-powers.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; assimp/optimized/ObjFileParser.cpp.ll
+; boost/optimized/gregorian.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/b3GpuPgsConstraintSolver.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
@@ -108,14 +106,13 @@
 ; darktable/optimized/introspection_toneequal.c.ll
 ; darktable/optimized/introspection_tonemap.cc.ll
 ; darktable/optimized/timeline.c.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; freetype/optimized/ftbase.c.ll
+; git/optimized/fetch.ll
 ; git/optimized/pretty.ll
 ; git/optimized/xhistogram.ll
-; gromacs/optimized/dlasdt.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/fft5d.cpp.ll
 ; gromacs/optimized/fft_fftw3.cpp.ll
@@ -130,14 +127,12 @@
 ; gromacs/optimized/powerspect.cpp.ll
 ; gromacs/optimized/reversetopology.cpp.ll
 ; gromacs/optimized/scanner.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; icu/optimized/cal.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/collationrootelements.ll
 ; icu/optimized/collationsets.ll
 ; icu/optimized/csrmbcs.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; icu/optimized/measunit.ll
 ; icu/optimized/number_longnames.ll
 ; icu/optimized/rbbi_cache.ll
@@ -154,7 +149,6 @@
 ; libphonenumber/optimized/area_code_map.cc.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
 ; libquic/optimized/a_bitstr.c.ll
-; libquic/optimized/a_enum.c.ll
 ; libquic/optimized/a_int.c.ll
 ; libquic/optimized/convert.c.ll
 ; libquic/optimized/prtime.cc.ll
@@ -260,6 +254,11 @@
 ; luajit/optimized/minilua.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -424,14 +423,12 @@
 ; openssl/optimized/libcrypto-lib-bn_shift.ll
 ; openssl/optimized/libcrypto-lib-ec_lib.ll
 ; openssl/optimized/libcrypto-lib-param_build.ll
-; openssl/optimized/libcrypto-lib-t_pkey.ll
 ; openssl/optimized/libcrypto-shlib-asn1_dsa.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-bn_rand.ll
 ; openssl/optimized/libcrypto-shlib-bn_shift.ll
 ; openssl/optimized/libcrypto-shlib-ec_lib.ll
 ; openssl/optimized/libcrypto-shlib-param_build.ll
-; openssl/optimized/libcrypto-shlib-t_pkey.ll
 ; openssl/optimized/quic_multistream_test-bin-quic_multistream_test.ll
 ; openusd/optimized/cached-powers.cc.ll
 ; openusd/optimized/cdef.c.ll
@@ -596,7 +593,7 @@ entry:
   ret i32 %2
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -604,7 +601,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; graphviz/optimized/gmlscan.c.ll
 ; graphviz/optimized/scan.c.ll
-; icu/optimized/ustring.ll
 ; libquic/optimized/a_object.c.ll
 ; nuttx/optimized/fs_files.c.ll
 ; openblas/optimized/dlansf.c.ll

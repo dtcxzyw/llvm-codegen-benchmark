@@ -30,8 +30,3 @@ func000000000000000f:                   # @func000000000000000f
 	leal	16(%rsi), %eax
 	addq	%rdi, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	movzbl	%sil, %eax
-	decl	%eax
-	addq	%rdi, %rax
-	retq

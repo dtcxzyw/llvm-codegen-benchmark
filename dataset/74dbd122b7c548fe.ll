@@ -14,9 +14,15 @@ entry:
   ret double %5
 }
 
-; 10 occurrences:
+; 16 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/fmu2.cpp.ll
-; libjpeg-turbo/optimized/rdppm.c.ll
 ; msdfgen/optimized/equation-solver.cpp.ll
 ; openblas/optimized/dlagtf.c.ll
 ; opencv/optimized/fisheye.cpp.ll

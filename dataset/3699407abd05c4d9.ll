@@ -74,7 +74,7 @@ define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483632
   %3 = add nuw nsw i32 %2, 16
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -106,7 +106,7 @@ define i64 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 511
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

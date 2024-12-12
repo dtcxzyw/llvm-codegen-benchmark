@@ -4,7 +4,7 @@
 ; wolfssl/optimized/dh.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %3, -29
@@ -13,11 +13,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; linux/optimized/ip_options.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nuw nsw i32 %3, 5
@@ -29,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ipsec.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000006a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nuw nsw i32 %3, 8
@@ -41,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/utresrc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %3, -1

@@ -1,9 +1,10 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; darktable/optimized/introspection_defringe.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; gromacs/optimized/colvargrid.cpp.ll
+; gromacs/optimized/topio.cpp.ll
 ; linux/optimized/deflate.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/exthdrs_core.ll
@@ -35,19 +36,18 @@ entry:
   ret ptr %6
 }
 
-; 20 occurrences:
-; bullet3/optimized/btMultiBodyDynamicsWorld.ll
+; 19 occurrences:
 ; gromacs/optimized/colvargrid.cpp.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/idef.cpp.ll
 ; gromacs/optimized/makebondedlinks.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
+; gromacs/optimized/topio.cpp.ll
 ; icu/optimized/unesctrn.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dgtrfs.c.ll
 ; openblas/optimized/dgtts2.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dtrevc.c.ll
@@ -66,7 +66,7 @@ entry:
   ret ptr %6
 }
 
-; 130 occurrences:
+; 133 occurrences:
 ; abc/optimized/acbAbc.c.ll
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -74,6 +74,7 @@ entry:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; bullet3/optimized/btMultiBody.ll
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
@@ -90,24 +91,20 @@ entry:
 ; ceres/optimized/schur_eliminator_2_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; cmake/optimized/divsufsort.c.ll
 ; freetype/optimized/smooth.c.ll
 ; git/optimized/apply.ll
 ; git/optimized/dir.ll
-; gromacs/optimized/forcetable.cpp.ll
-; gromacs/optimized/grompp.cpp.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/package.ll
-; icu/optimized/rematch.ll
 ; icu/optimized/swapimpl.ll
 ; icu/optimized/ucnvsel.ll
 ; icu/optimized/uset.ll
 ; icu/optimized/usprep.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libwebp/optimized/picture_csp_enc.c.ll
+; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; luau/optimized/lbuiltins.cpp.ll
-; lz4/optimized/lz4hc.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
@@ -179,6 +176,7 @@ entry:
 ; openjdk/optimized/stackwalk.ll
 ; openjdk/optimized/vframe.ll
 ; openmpi/optimized/flatten.ll
+; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/dynamic_routing_utils.cc.ll
 ; openspiel/optimized/history_tree.cc.ll
@@ -188,15 +186,20 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/scale_any.c.ll
 ; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/enum.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/feature_resolver.cc.ll
 ; protobuf/optimized/field_mask_util.cc.ll
 ; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; sqlite/optimized/sqlite3.ll
-; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -207,16 +210,11 @@ entry:
   ret ptr %6
 }
 
-; 36 occurrences:
-; abc/optimized/deflate.c.ll
-; cmake/optimized/deflate.c.ll
+; 28 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; gromacs/optimized/coupling.cpp.ll
-; gromacs/optimized/deflate.c.ll
-; libquic/optimized/deflate.c.ll
-; libwebp/optimized/analysis_enc.c.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlaein.c.ll
@@ -238,12 +236,9 @@ entry:
 ; openjdk/optimized/method.ll
 ; openjdk/optimized/methodData.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
-; openusd/optimized/restoration.c.ll
 ; php/optimized/ir.ll
 ; spike/optimized/fdt_rw.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
-; yosys/optimized/fstapi.ll
-; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -254,57 +249,74 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
+; 1 occurrences:
 ; chibicc/optimized/tokenize.ll
-; darktable/optimized/introspection_dither.c.ll
-; gromacs/optimized/dlasd2.cpp.ll
-; gromacs/optimized/slasd2.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 14 occurrences:
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libphonenumber/optimized/geocoding_data_test.cc.ll
-; openspiel/optimized/best_response.cc.ll
-; protobuf/optimized/command_line_interface.cc.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/feature_resolver.cc.ll
-; protobuf/optimized/file.cc.ll
-; protobuf/optimized/map.cc.ll
-; protobuf/optimized/message_builder.cc.ll
-; protobuf/optimized/message_builder_lite.cc.ll
+; 12 occurrences:
+; abc/optimized/deflate.c.ll
+; cmake/optimized/deflate.c.ll
+; darktable/optimized/introspection_dither.c.ll
+; gromacs/optimized/deflate.c.ll
+; libquic/optimized/deflate.c.ll
+; libwebp/optimized/analysis_enc.c.ll
+; opencv/optimized/mser.cpp.ll
+; openusd/optimized/restoration.c.ll
+; redis/optimized/redis-cli.ll
+; spike/optimized/fdt_rw.ll
+; yosys/optimized/fstapi.ll
+; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %0, i64 %1
-  %4 = sext i32 %2 to i64
-  %5 = getelementptr i32, ptr %3, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 -4
+  %3 = add i32 %2, 4
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %1
+  %6 = getelementptr nusw float, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 1 occurrences:
-; redis/optimized/redis-cli.ll
+; 3 occurrences:
+; darktable/optimized/introspection_dither.c.ll
+; gromacs/optimized/dlasd2.cpp.ll
+; gromacs/optimized/slasd2.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
+  %3 = add i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = getelementptr ptr, ptr %0, i64 %1
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
+  %5 = getelementptr nusw float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 11 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; gromacs/optimized/forcetable.cpp.ll
+; gromacs/optimized/grompp.cpp.ll
+; icu/optimized/rematch.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; libwebp/optimized/picture_csp_enc.c.ll
+; lz4/optimized/lz4hc.c.ll
+; nuklear/optimized/unity.c.ll
+; opencv/optimized/stereosgbm.cpp.ll
+; raylib/optimized/rtext.c.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
 

@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; cpython/optimized/dtoa.ll
-; openusd/optimized/json.cpp.ll
-; ruby/optimized/util.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp sgt i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = sub i32 %0, %4
-  ret i32 %5
-}
-
 ; 16 occurrences:
 ; clamav/optimized/pathfn.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -38,7 +25,9 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/tagging.c.ll
 ; icu/optimized/utrie2_builder.ll
 ; libquic/optimized/url_util.cc.ll
@@ -63,59 +52,17 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
 ; openblas/optimized/dgghd3.c.ll
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
   %5 = sub i32 %0, %4
-  ret i32 %5
-}
-
-; 1 occurrences:
-; openjdk/optimized/jdmarker.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 15
-  %4 = select i1 %3, i32 14, i32 %1
-  %5 = sub nsw i32 %0, %4
-  ret i32 %5
-}
-
-; 20 occurrences:
-; icu/optimized/choicfmt.ll
-; icu/optimized/collationbuilder.ll
-; icu/optimized/collationruleparser.ll
-; icu/optimized/messagepattern.ll
-; icu/optimized/msgfmt.ll
-; icu/optimized/nfrule.ll
-; icu/optimized/stringpiece.ll
-; icu/optimized/uniset_props.ll
-; icu/optimized/unistr.ll
-; icu/optimized/unistr_case.ll
-; icu/optimized/unistr_cnv.ll
-; libwebp/optimized/anim_encode.c.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; openblas/optimized/dlaqr0.c.ll
-; openblas/optimized/dlaqr4.c.ll
-; opencv/optimized/beblid.cpp.ll
-; opencv/optimized/data.cpp.ll
-; opencv/optimized/edgeboxes.cpp.ll
-; openjdk/optimized/TransformHelper.ll
-; postgres/optimized/selfuncs.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = sub nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -157,8 +104,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; csmith/optimized/ArrayVariable.cpp.ll
+; lvgl/optimized/lv_grid.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
@@ -169,12 +117,42 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; llvm/optimized/X86AsmBackend.cpp.ll
+; 20 occurrences:
+; icu/optimized/choicfmt.ll
+; icu/optimized/collationbuilder.ll
+; icu/optimized/collationruleparser.ll
+; icu/optimized/messagepattern.ll
+; icu/optimized/msgfmt.ll
+; icu/optimized/nfrule.ll
+; icu/optimized/stringpiece.ll
+; icu/optimized/uniset_props.ll
+; icu/optimized/unistr.ll
+; icu/optimized/unistr_case.ll
+; icu/optimized/unistr_cnv.ll
+; libwebp/optimized/anim_encode.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; openblas/optimized/dlaqr0.c.ll
+; openblas/optimized/dlaqr4.c.ll
+; opencv/optimized/beblid.cpp.ll
+; opencv/optimized/data.cpp.ll
+; opencv/optimized/edgeboxes.cpp.ll
+; postgres/optimized/selfuncs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 11
+  %3 = icmp slt i32 %2, 0
+  %4 = select i1 %3, i32 0, i32 %1
+  %5 = sub nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; openusd/optimized/json.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
   %5 = sub i32 %0, %4
   ret i32 %5

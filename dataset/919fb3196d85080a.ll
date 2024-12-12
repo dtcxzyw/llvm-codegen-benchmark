@@ -29,11 +29,11 @@
 ; yosys/optimized/rtlil.ll
 ; zxing/optimized/PDFDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i32 %0) #0 {
+define ptr @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = shl nsw i64 %1, 3
-  %3 = getelementptr nusw i8, ptr null, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr null, i64 %2
   ret ptr %3
 }
 

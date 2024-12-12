@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; clamav/optimized/cabd.c.ll
 ; git/optimized/read-cache.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -11,8 +11,9 @@
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-h223.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %.masked = and i32 %0, 16712191
@@ -42,7 +43,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, -1027
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -53,10 +54,10 @@ entry:
 ; icu/optimized/utf_impl.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %.tr = trunc i32 %0 to i8
-  %.narrow = or i8 %.tr, %1
+  %.narrow = or i8 %1, %.tr
   %2 = icmp eq i8 %.narrow, 0
   ret i1 %2
 }

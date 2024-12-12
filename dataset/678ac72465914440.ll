@@ -7,7 +7,6 @@
 ; graphviz/optimized/arrows.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; nuttx/optimized/lib_strtold.c.ll
 ; openssl/optimized/asn1_time_test-bin-a_time.ll
 ; openssl/optimized/ca_internals_test-bin-a_time.ll
@@ -18,6 +17,7 @@
 ; postgres/optimized/wparser_def.ll
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-atalk.c.ll
@@ -33,7 +33,7 @@ entry:
   ret i32 %5
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
@@ -54,6 +54,7 @@ entry:
 ; oniguruma/optimized/regparse.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; qemu/optimized/block_io.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll

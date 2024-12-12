@@ -9,7 +9,7 @@ func0000000000000015:                   # @func0000000000000015
 	vpcmpgtw	%ymm2, %ymm1, %k1
 	vpbroadcastb	.LCPI0_2(%rip), %xmm1   # xmm1 = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 	vmovdqu8	.LCPI0_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:

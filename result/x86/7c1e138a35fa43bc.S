@@ -9,10 +9,10 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000018:                   # @func0000000000000018
 	andl	$127, %esi
-	testb	$1, %dil
+	cmpl	$15, %esi
 	movl	$72, %ecx
 	movl	$96, %eax
 	cmovneq	%rcx, %rax
-	cmpl	$15, %esi
+	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq

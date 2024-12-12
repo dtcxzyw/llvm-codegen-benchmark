@@ -11,13 +11,13 @@
 ; rust-analyzer-rs/optimized/rilullg9p294yp1.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i1 %0, i64 %1) #0 {
 entry:
   %.fr1 = freeze i64 %1
   %2 = shl i64 %.fr1, 5
   %3 = urem i64 %2, 24
   %4 = icmp ne i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

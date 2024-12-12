@@ -1,6 +1,7 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/value_semantic.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
 ; cvc5/optimized/core_solver.cpp.ll
 ; cvc5/optimized/theory_sets_rels.cpp.ll
@@ -16,7 +17,7 @@
 ; opencv/optimized/planar_tracking.cpp.ll
 ; xgboost/optimized/column_matrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000128(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
@@ -29,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
@@ -49,7 +50,7 @@ entry:
 ; opencv/optimized/upcean_decoder.cpp.ll
 ; xgboost/optimized/auc.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -66,7 +67,7 @@ entry:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
@@ -77,9 +78,22 @@ entry:
 }
 
 ; 1 occurrences:
+; cvc5/optimized/core_solver.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000125(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 3
+  %5 = add nsw i64 %4, -1
+  %6 = zext i32 %0 to i64
+  %7 = icmp ule i64 %5, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
 ; arrow/optimized/validate.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4

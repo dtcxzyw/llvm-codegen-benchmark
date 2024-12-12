@@ -3,7 +3,7 @@
 ; abc/optimized/giaUtil.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 63
   %3 = trunc nuw nsw i64 %2 to i32
@@ -18,7 +18,7 @@ entry:
 ; openusd/optimized/patchTree.cpp.ll
 ; redis/optimized/networking.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc nuw nsw i64 %2 to i32
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -55,7 +55,7 @@ entry:
 ; abc/optimized/amapOutput.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 63
   %3 = trunc nuw nsw i64 %2 to i32
@@ -65,21 +65,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 48
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = and i32 %0, 536870911
-  %5 = icmp ugt i32 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

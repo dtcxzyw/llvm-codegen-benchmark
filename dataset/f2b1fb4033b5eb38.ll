@@ -18,7 +18,7 @@ entry:
   ret i32 %5
 }
 
-; 35 occurrences:
+; 33 occurrences:
 ; assimp/optimized/FBXExporter.cpp.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
@@ -36,8 +36,6 @@ entry:
 ; linux/optimized/intel_pps.ll
 ; linux/optimized/trace_output.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
-; llvm/optimized/CommentLexer.cpp.ll
-; llvm/optimized/CommentParser.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
@@ -98,8 +96,9 @@ entry:
   ret i32 %5
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; arrow/optimized/UriQuery.c.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; luajit/optimized/lj_dispatch.ll
@@ -112,8 +111,6 @@ entry:
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
-; openblas/optimized/dorcsd.c.ll
-; openblas/optimized/dorcsd2by1.c.ll
 ; openjdk/optimized/library_call.ll
 ; openusd/optimized/json.cpp.ll
 ; postgres/optimized/d2s.ll
@@ -122,7 +119,7 @@ entry:
 ; postgres/optimized/f2s.ll
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
-; redis/optimized/hdr_histogram.ll
+; redis/optimized/fpconv_dtoa.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
@@ -145,6 +142,30 @@ entry:
   ret i32 %5
 }
 
+; 14 occurrences:
+; arrow/optimized/UriQuery.c.ll
+; boost/optimized/src.ll
+; icu/optimized/ucbuf.ll
+; libjpeg-turbo/optimized/wrgif.c.ll
+; linux/optimized/ah6.ll
+; linux/optimized/md-bitmap.ll
+; linux/optimized/uncore_nhmex.ll
+; llvm/optimized/ExpandLargeFpConvert.cpp.ll
+; opencv/optimized/filter.dispatch.cpp.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1077
+  %4 = select i1 %1, i32 -1076, i32 %3
+  %5 = add i32 %0, %4
+  ret i32 %5
+}
+
 ; 6 occurrences:
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
@@ -161,31 +182,6 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
-; arrow/optimized/UriQuery.c.ll
-; icu/optimized/ucbuf.ll
-; libjpeg-turbo/optimized/wrgif.c.ll
-; linux/optimized/ah6.ll
-; linux/optimized/md-bitmap.ll
-; linux/optimized/uncore_nhmex.ll
-; llvm/optimized/ExpandLargeFpConvert.cpp.ll
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
-; opencv/optimized/filter.dispatch.cpp.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
-; zstd/optimized/zstd_v05.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -1
-  %4 = select i1 %1, i32 112, i32 %3
-  %5 = add i32 %4, %0
-  ret i32 %5
-}
-
 ; 2 occurrences:
 ; graphviz/optimized/graph_generator.c.ll
 ; postgres/optimized/fe-exec.ll
@@ -194,7 +190,18 @@ define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 2
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; nuttx/optimized/lib_libvsprintf.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw i32 %2, 1
+  %4 = select i1 %1, i32 5, i32 %3
+  %5 = add nuw i32 %4, %0
   ret i32 %5
 }
 

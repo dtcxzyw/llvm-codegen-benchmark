@@ -24,18 +24,18 @@ func0000000000000003:                   # @func0000000000000003
 	vnot.v	v8, v10
 	vsll.vi	v8, v8, 4
 	ret
-func000000000000002d:                   # @func000000000000002d
+func000000000000002f:                   # @func000000000000002f
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vsll.vi	v8, v10, 3
 	li	a0, 24
 	vrsub.vx	v8, v8, a0
 	ret
-func000000000000002f:                   # @func000000000000002f
+func0000000000000035:                   # @func0000000000000035
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	vsll.vi	v8, v10, 3
-	li	a0, 24
+	vsll.vi	v8, v10, 4
+	li	a0, 128
 	vrsub.vx	v8, v8, a0
 	ret
 func000000000000000d:                   # @func000000000000000d

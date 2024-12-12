@@ -1,6 +1,6 @@
 
-%"struct.irr::gui::CGUIButton::ButtonSprite.2578343" = type <{ i32, %"class.irr::video::SColor.2578344", i8, i8, [2 x i8] }>
-%"class.irr::video::SColor.2578344" = type { i32 }
+%"struct.irr::gui::CGUIButton::ButtonSprite.2692517" = type <{ i32, %"class.irr::video::SColor.2692518", i8, i8, [2 x i8] }>
+%"class.irr::video::SColor.2692518" = type { i32 }
 
 ; 8 occurrences:
 ; git/optimized/merge-ort.ll
@@ -12,10 +12,10 @@
 ; minetest/optimized/CGUIButton.cpp.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i1 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 4, i64 5
-  %3 = getelementptr [7 x %"struct.irr::gui::CGUIButton::ButtonSprite.2578343"], ptr %0, i64 0, i64 %2, i32 3
+  %3 = getelementptr nuw [7 x %"struct.irr::gui::CGUIButton::ButtonSprite.2692517"], ptr %0, i64 0, i64 %2, i32 3
   ret ptr %3
 }
 

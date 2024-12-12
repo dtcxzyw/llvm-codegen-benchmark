@@ -1,5 +1,7 @@
 
-; 39 occurrences:
+; 41 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; graphviz/optimized/multispline.c.ll

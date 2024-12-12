@@ -1,6 +1,7 @@
 
-; 45 occurrences:
+; 43 occurrences:
 ; arrow/optimized/bit_util.cc.ll
+; boost/optimized/numeric.ll
 ; clamav/optimized/client.c.ll
 ; cpython/optimized/mpdecimal.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
@@ -13,9 +14,6 @@
 ; linux/optimized/hdmi_chmap.ll
 ; linux/optimized/hid-debug.ll
 ; linux/optimized/tg3.ll
-; llvm/optimized/Core.cpp.ll
-; llvm/optimized/CoroSplit.cpp.ll
-; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; lua/optimized/lobject.ll
 ; luau/optimized/lutf8lib.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
@@ -53,10 +51,13 @@ entry:
   ret i64 %2
 }
 
-; 12 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/clock.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; hyperscan/optimized/ng_extparam.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; hyperscan/optimized/rose_build_groups.cpp.ll
@@ -74,21 +75,23 @@ entry:
   ret i64 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/numeric.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/ntp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = sub i64 0, %0
-  %2 = ashr i64 %1, 63
+  %1 = sub i64 171798691840, %0
+  %2 = ashr i64 %1, 32
   ret i64 %2
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/static_string.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; freetype/optimized/pfr.c.ll
@@ -106,7 +109,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
-  %1 = sub nsw i64 16, %0
+  %1 = sub nsw i64 44, %0
   %2 = ashr exact i64 %1, 2
   ret i64 %2
 }

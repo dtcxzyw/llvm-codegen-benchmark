@@ -3,7 +3,7 @@ func0000000000000006:                   # @func0000000000000006
 	subl	%esi, %edx
 	subq	%rdx, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	subl	%esi, %edx
 	andl	$1, %edx
 	subq	%rdx, %rdi

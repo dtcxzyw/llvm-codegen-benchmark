@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; libwebp/optimized/get_disto.c.ll
 ; openjdk/optimized/UshortGray.ll
 ; openvdb/optimized/Formats.cc.ll
-; proxy/optimized/proxy_freestanding_tests.cpp.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(double %0) #0 {

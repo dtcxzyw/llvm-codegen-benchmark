@@ -3,7 +3,7 @@
 ; rocksdb/optimized/comparator.cc.ll
 ; wireshark/optimized/packet-rf4ce-secur.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nuw nsw i32 %1, 1
@@ -16,7 +16,7 @@ entry:
 ; abc/optimized/dauDsd.c.ll
 ; hermes/optimized/JSLexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000ea(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = add nuw nsw i32 %1, 96
@@ -29,7 +29,7 @@ entry:
 ; hermes/optimized/JSLexer.cpp.ll
 ; hermes/optimized/SynthTraceParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000aa(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = add nsw i32 %1, 48
@@ -47,11 +47,11 @@ entry:
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; wireshark/optimized/packet-zbee-zcl-se.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nuw nsw i32 %1, 1
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-bthci_cmd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %1, -3
@@ -71,11 +71,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000035(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %1, -1
-  %5 = icmp ule i32 %4, %3
+  %5 = icmp samesign ule i32 %4, %3
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

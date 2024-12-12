@@ -1,5 +1,5 @@
 
-; 456 occurrences:
+; 455 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; git/optimized/apply.ll
 ; git/optimized/send-pack.ll
@@ -304,7 +304,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -463,7 +462,7 @@ entry:
   %4 = shl i16 %3, 6
   %5 = and i16 %4, 448
   %6 = or disjoint i16 %5, %1
-  %7 = or disjoint i16 %6, %0
+  %7 = or disjoint i16 %0, %6
   ret i16 %7
 }
 
@@ -476,7 +475,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = shl i16 %3, 9
   %5 = and i16 %4, 1536
-  %6 = or disjoint i16 %5, %1
+  %6 = or disjoint i16 %1, %5
   %7 = or i16 %6, %0
   ret i16 %7
 }
@@ -490,7 +489,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = shl i16 %3, 3
   %5 = and i16 %4, 8
-  %6 = or i16 %5, %1
+  %6 = or i16 %1, %5
   %7 = or i16 %6, %0
   ret i16 %7
 }
@@ -503,7 +502,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = shl i16 %3, 12
   %5 = and i16 %4, 4096
-  %6 = or i16 %5, %1
+  %6 = or i16 %1, %5
   %7 = or disjoint i16 %6, %0
   ret i16 %7
 }

@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/bmcCexMin2.c.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -17,13 +17,12 @@
 ; rust-analyzer-rs/optimized/34aixgz8bp7wb24p.ll
 ; rust-analyzer-rs/optimized/5amh0jp09v3snpag.ll
 ; rust-analyzer-rs/optimized/p6tl2rrfx0amk3d.ll
-; spike/optimized/bf16_to_f32.ll
 ; spike/optimized/s_addMagsF32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4161536
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   ret i64 %3
 }
 
@@ -37,7 +36,7 @@ define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 57
   %3 = and i64 %2, 288230376151711744
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

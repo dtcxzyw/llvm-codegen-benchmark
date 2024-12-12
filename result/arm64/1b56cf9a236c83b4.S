@@ -1,122 +1,42 @@
+.LCPI0_0:
+	.xword	0x3f9999999999999a              // double 0.025000000000000001
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	fsub	v3.4s, v3.4s, v7.4s
-	fsub	v2.4s, v2.4s, v6.4s
-	mov	x8, #-7378697629483820647       // =0x9999999999999999
-	fsub	v1.4s, v1.4s, v5.4s
-	fsub	v0.4s, v0.4s, v4.4s
-	movk	x8, #39322
-	movk	x8, #16281, lsl #48
-	dup	v4.2d, x8
-	fcvtl	v5.2d, v3.2s
-	fcvtl2	v3.2d, v3.4s
-	fcvtl	v7.2d, v2.2s
-	fcvtl2	v6.2d, v1.4s
-	fcvtl2	v2.2d, v2.4s
-	fcvtl	v16.2d, v0.2s
-	fcvtl2	v0.2d, v0.4s
-	fcvtl	v1.2d, v1.2s
-	fcmge	v3.2d, v4.2d, v3.2d
-	fcmge	v5.2d, v4.2d, v5.2d
-	fcmge	v7.2d, v4.2d, v7.2d
-	fcmge	v2.2d, v4.2d, v2.2d
-	fcmge	v6.2d, v4.2d, v6.2d
-	fcmge	v1.2d, v4.2d, v1.2d
-	fcmge	v0.2d, v4.2d, v0.2d
-	fcmge	v4.2d, v4.2d, v16.2d
-	uzp1	v3.4s, v5.4s, v3.4s
-	uzp1	v2.4s, v7.4s, v2.4s
-	uzp1	v1.4s, v1.4s, v6.4s
-	uzp1	v0.4s, v4.4s, v0.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	mvn	v1.16b, v2.16b
-	mvn	v0.16b, v0.16b
-	uzp1	v0.16b, v0.16b, v1.16b
+	fsub	s0, s0, s1
+	adrp	x8, .LCPI0_0
+	ldr	d1, [x8, :lo12:.LCPI0_0]
+	fcvt	d0, s0
+	fcmp	d0, d1
+	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fcmgt	v3.4s, v7.4s, v3.4s
-	fcmgt	v2.4s, v6.4s, v2.4s
-	fcmgt	v1.4s, v5.4s, v1.4s
-	fcmgt	v0.4s, v4.4s, v0.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fcmp	s0, s1
+	cset	w0, mi
 	ret
                                         // -- End function
+.LCPI2_0:
+	.xword	0x400921fb54442d18              // double 3.1415926535897931
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fsub	v3.4s, v3.4s, v7.4s
-	fsub	v2.4s, v2.4s, v6.4s
-	mov	x8, #11544                      // =0x2d18
-	fsub	v1.4s, v1.4s, v5.4s
-	fsub	v0.4s, v0.4s, v4.4s
-	movk	x8, #21572, lsl #16
-	movk	x8, #8699, lsl #32
-	movk	x8, #16393, lsl #48
-	fcvtl	v5.2d, v3.2s
-	fcvtl2	v3.2d, v3.4s
-	fcvtl	v7.2d, v2.2s
-	fcvtl2	v6.2d, v1.4s
-	fcvtl2	v2.2d, v2.4s
-	fcvtl	v16.2d, v0.2s
-	fcvtl2	v0.2d, v0.4s
-	fcvtl	v1.2d, v1.2s
-	dup	v4.2d, x8
-	fcmgt	v3.2d, v3.2d, v4.2d
-	fcmgt	v5.2d, v5.2d, v4.2d
-	fcmgt	v2.2d, v2.2d, v4.2d
-	fcmgt	v7.2d, v7.2d, v4.2d
-	fcmgt	v6.2d, v6.2d, v4.2d
-	fcmgt	v1.2d, v1.2d, v4.2d
-	fcmgt	v0.2d, v0.2d, v4.2d
-	fcmgt	v4.2d, v16.2d, v4.2d
-	uzp1	v3.4s, v5.4s, v3.4s
-	uzp1	v2.4s, v7.4s, v2.4s
-	uzp1	v1.4s, v1.4s, v6.4s
-	uzp1	v0.4s, v4.4s, v0.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fsub	s0, s0, s1
+	adrp	x8, .LCPI2_0
+	ldr	d1, [x8, :lo12:.LCPI2_0]
+	fcvt	d0, s0
+	fcmp	d0, d1
+	cset	w0, gt
 	ret
                                         // -- End function
+.LCPI3_0:
+	.xword	0x400921fb54442d18              // double 3.1415926535897931
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	fsub	v3.4s, v3.4s, v7.4s
-	fsub	v2.4s, v2.4s, v6.4s
-	mov	x8, #11544                      // =0x2d18
-	fsub	v1.4s, v1.4s, v5.4s
-	fsub	v0.4s, v0.4s, v4.4s
-	movk	x8, #21572, lsl #16
-	movk	x8, #8699, lsl #32
-	movk	x8, #16393, lsl #48
-	fcvtl	v5.2d, v3.2s
-	fcvtl2	v3.2d, v3.4s
-	fcvtl	v7.2d, v2.2s
-	fcvtl2	v6.2d, v1.4s
-	fcvtl2	v2.2d, v2.4s
-	fcvtl	v16.2d, v0.2s
-	fcvtl2	v0.2d, v0.4s
-	fcvtl	v1.2d, v1.2s
-	dup	v4.2d, x8
-	fcmge	v3.2d, v3.2d, v4.2d
-	fcmge	v5.2d, v5.2d, v4.2d
-	fcmge	v2.2d, v2.2d, v4.2d
-	fcmge	v7.2d, v7.2d, v4.2d
-	fcmge	v6.2d, v6.2d, v4.2d
-	fcmge	v1.2d, v1.2d, v4.2d
-	fcmge	v0.2d, v0.2d, v4.2d
-	fcmge	v4.2d, v16.2d, v4.2d
-	uzp1	v3.4s, v5.4s, v3.4s
-	uzp1	v2.4s, v7.4s, v2.4s
-	uzp1	v1.4s, v1.4s, v6.4s
-	uzp1	v0.4s, v4.4s, v0.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	mvn	v1.16b, v2.16b
-	mvn	v0.16b, v0.16b
-	uzp1	v0.16b, v0.16b, v1.16b
+	fsub	s0, s0, s1
+	adrp	x8, .LCPI3_0
+	ldr	d1, [x8, :lo12:.LCPI3_0]
+	fcvt	d0, s0
+	fcmp	d0, d1
+	cset	w0, lt
 	ret
                                         // -- End function

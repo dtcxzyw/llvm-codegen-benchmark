@@ -26,13 +26,12 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/abc.c.ll
-; abc/optimized/cnfUtil.c.ll
 ; abc/optimized/pdrMan.c.ll
 ; linux/optimized/namei.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000029(i32 %0) #0 {
+define i64 @func0000000000000049(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = icmp ult i32 %1, 15

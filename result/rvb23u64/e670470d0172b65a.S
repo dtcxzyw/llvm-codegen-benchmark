@@ -1,4 +1,4 @@
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	xori	a2, a2, 75
 	xori	a1, a1, 80
 	or	a1, a1, a2
@@ -7,7 +7,7 @@ func0000000000000111:                   # @func0000000000000111
 	andi	a0, a0, 255
 	seqz	a0, a0
 	ret
-func00000000000004c4:                   # @func00000000000004c4
+func0000000000001184:                   # @func0000000000001184
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	andi	a2, a2, 255
@@ -17,7 +17,24 @@ func00000000000004c4:                   # @func00000000000004c4
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func000000000000044c:                   # @func000000000000044c
+func0000000000001886:                   # @func0000000000001886
+	sext.b	a0, a0
+	sext.b	a2, a2
+	andi	a1, a1, 255
+	sltiu	a1, a1, 48
+	max	a0, a2, a0
+	slti	a0, a0, -64
+	and	a0, a0, a1
+	ret
+func00000000000018c6:                   # @func00000000000018c6
+	sext.b	a0, a0
+	sext.b	a2, a2
+	sext.b	a1, a1
+	max	a1, a1, a2
+	max	a0, a1, a0
+	slti	a0, a0, -64
+	ret
+func000000000000108c:                   # @func000000000000108c
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	andi	a2, a2, 255
@@ -28,7 +45,7 @@ func000000000000044c:                   # @func000000000000044c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000444:                   # @func0000000000000444
+func0000000000001084:                   # @func0000000000001084
 	andi	a0, a0, 255
 	andi	a2, a2, 255
 	andi	a1, a1, 255
@@ -36,19 +53,7 @@ func0000000000000444:                   # @func0000000000000444
 	maxu	a0, a1, a0
 	sltiu	a0, a0, 22
 	ret
-func0000000000000c4c:                   # @func0000000000000c4c
-	andi	a0, a0, 255
-	andi	a1, a1, 255
-	andi	a2, a2, 255
-	addi	a2, a2, -12
-	sltiu	a1, a1, 22
-	addi	a0, a0, -12
-	snez	a2, a2
-	snez	a0, a0
-	and	a0, a0, a2
-	and	a0, a0, a1
-	ret
-func0000000000000888:                   # @func0000000000000888
+func0000000000002108:                   # @func0000000000002108
 	andi	a0, a0, 255
 	andi	a2, a2, 255
 	andi	a1, a1, 255
@@ -57,7 +62,7 @@ func0000000000000888:                   # @func0000000000000888
 	sltiu	a0, a0, 29
 	xori	a0, a0, 1
 	ret
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	andi	a2, a2, 255
@@ -67,7 +72,7 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000011a:                   # @func000000000000011a
+func000000000000042a:                   # @func000000000000042a
 	sext.b	a0, a0
 	xori	a2, a2, 2
 	xori	a1, a1, 2
@@ -78,7 +83,7 @@ func000000000000011a:                   # @func000000000000011a
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
-func0000000000000cc1:                   # @func0000000000000cc1
+func0000000000003181:                   # @func0000000000003181
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	andi	a2, a2, 255
@@ -89,7 +94,7 @@ func0000000000000cc1:                   # @func0000000000000cc1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func00000000000004cc:                   # @func00000000000004cc
+func000000000000118c:                   # @func000000000000118c
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	andi	a2, a2, 255
@@ -101,7 +106,7 @@ func00000000000004cc:                   # @func00000000000004cc
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000c18:                   # @func0000000000000c18
+func0000000000003028:                   # @func0000000000003028
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	andi	a2, a2, 255

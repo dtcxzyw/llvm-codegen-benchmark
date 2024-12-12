@@ -24,12 +24,13 @@ define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 3
   %3 = zext i1 %2 to i64
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; abc/optimized/abcFraig.c.ll
+; abc/optimized/cuddSat.c.ll
 ; abc/optimized/fretMain.c.ll
 ; abc/optimized/fretTime.c.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
@@ -51,12 +52,13 @@ entry:
 ; rust-analyzer-rs/optimized/c249cixj978zg74.ll
 ; rust-analyzer-rs/optimized/lkt0vc36jo6l130.ll
 ; rust-analyzer-rs/optimized/sdlo5r5xb34d3pv.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 15
   %3 = zext i1 %2 to i64
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 

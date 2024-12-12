@@ -1,6 +1,5 @@
 
-; 54 occurrences:
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
+; 53 occurrences:
 ; draco/optimized/point_cloud_encoder.cc.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/AsyncUDPSocket.cpp.ll

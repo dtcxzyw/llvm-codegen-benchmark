@@ -1,3 +1,7 @@
+func000000000000000c:                   # @func000000000000000c
+	movq	%rdi, %rax
+	shll	$4, %eax
+	retq
 func000000000000000e:                   # @func000000000000000e
 	leal	(,%rdi,8), %eax
 	retq
@@ -12,9 +16,6 @@ func000000000000000f:                   # @func000000000000000f
 	leal	(,%rdi,8), %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
-	leal	(%rdi,%rdi), %eax
-	retq
-func000000000000000c:                   # @func000000000000000c
 	leal	(%rdi,%rdi), %eax
 	retq
 func0000000000000005:                   # @func0000000000000005

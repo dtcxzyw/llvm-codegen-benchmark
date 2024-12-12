@@ -1,8 +1,10 @@
 
-; 169 occurrences:
+; 170 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/rational.ll
 ; c3c/optimized/bigint.c.ll
 ; chibicc/optimized/parse.ll
 ; clamav/optimized/bytecode_vm.c.ll
@@ -82,7 +84,6 @@
 ; llvm/optimized/MCExpr.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -176,7 +177,7 @@ entry:
   ret i64 %2
 }
 
-; 208 occurrences:
+; 206 occurrences:
 ; arrow/optimized/ree_util.cc.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/disasm.c.ll
@@ -186,7 +187,6 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/lbr.ll
-; linux/optimized/maccess.ll
 ; linux/optimized/pt.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
@@ -308,7 +308,6 @@ entry:
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll

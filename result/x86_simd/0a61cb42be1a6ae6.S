@@ -17,10 +17,10 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpsllw	$15, %xmm0, %xmm0
-	vpmovdw	%ymm1, %xmm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpgtw	%xmm2, %xmm1, %k1
-	vpcmpgtw	%xmm0, %xmm2, %k0 {%k1}
+	vpmovw2m	%xmm0, %k1
+	vpmovdw	%ymm1, %xmm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtw	%xmm1, %xmm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -33,14 +33,14 @@ func000000000000000c:                   # @func000000000000000c
 	vzeroupper
 	retq
 .LCPI3_0:
-	.short	137                             # 0x89
-	.short	137                             # 0x89
-	.short	137                             # 0x89
-	.short	137                             # 0x89
-	.short	137                             # 0x89
-	.short	137                             # 0x89
-	.short	137                             # 0x89
-	.short	137                             # 0x89
+	.short	51                              # 0x33
+	.short	51                              # 0x33
+	.short	51                              # 0x33
+	.short	51                              # 0x33
+	.short	51                              # 0x33
+	.short	51                              # 0x33
+	.short	51                              # 0x33
+	.short	51                              # 0x33
 func0000000000000004:                   # @func0000000000000004
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1

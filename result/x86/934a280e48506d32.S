@@ -20,11 +20,16 @@ func0000000000000000:                   # @func0000000000000000
 	orq	%rcx, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	andl	$1, %edx
-	leaq	(%rdi,%rdx,8), %rax
-	andl	$1, %esi
-	shll	$7, %esi
-	orq	%rsi, %rax
+	xorl	%eax, %eax
+	testb	$1, %dl
+	movl	$5188, %ecx                     # imm = 0x1444
+	cmovneq	%rax, %rcx
+	orq	%rdi, %rcx
+	notb	%sil
+	movzbl	%sil, %eax
+	andl	$1, %eax
+	shll	$12, %eax
+	orq	%rcx, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	notb	%dl

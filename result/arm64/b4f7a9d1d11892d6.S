@@ -27,8 +27,8 @@ func0000000000000010:                   // @func0000000000000010
 	mul	x9, x2, x4
 	madd	x8, x2, x5, x8
 	madd	x8, x3, x4, x8
-	adds	x9, x9, x0
-	adc	x8, x8, x1
+	adds	x9, x0, x9
+	adc	x8, x1, x8
 	extr	x0, x8, x9, #55
 	lsr	x1, x8, #55
 	ret
@@ -50,8 +50,8 @@ func000000000000001a:                   // @func000000000000001a
 	mul	x9, x2, x4
 	madd	x8, x2, x5, x8
 	madd	x8, x3, x4, x8
-	adds	x9, x9, x0
-	adc	x8, x8, x1
+	adds	x9, x0, x9
+	adc	x8, x1, x8
 	extr	x0, x8, x9, #16
 	lsr	x1, x8, #16
 	ret

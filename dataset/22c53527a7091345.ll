@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; c3c/optimized/sema_stmts.c.ll
 ; linux/optimized/vgacon.ll
 ; llvm/optimized/PackedVersion.cpp.ll
@@ -11,6 +11,7 @@
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i8 %0) #0 {
 entry:

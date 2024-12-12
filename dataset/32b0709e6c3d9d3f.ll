@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
 ; abc/optimized/giaCSatP.c.ll
@@ -7,6 +7,7 @@
 ; git/optimized/pretty.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; opencv/optimized/eltwise_layer.cpp.ll
 ; postgres/optimized/command.ll
 ; wireshark/optimized/packet-mac-lte.c.ll

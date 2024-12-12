@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.quad	0x412e848000000000              # double 1.0E+6
+	.quad	0x408f400000000000              # double 1000
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)

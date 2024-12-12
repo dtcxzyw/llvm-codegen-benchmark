@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cmake/optimized/fse_compress.c.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/intel_backlight.ll
-; linux/optimized/jiffies.ll
 ; linux/optimized/mballoc.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MIRSampleProfile.cpp.ll

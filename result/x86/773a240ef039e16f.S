@@ -9,9 +9,9 @@ func0000000000000001:                   # @func0000000000000001
 	cmoveq	%rcx, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	andl	$1, %esi
-	leal	(%rsi,%rsi), %ecx
-	cmpb	$2, %dil
-	movl	$1, %eax
+	leal	(,%rsi,8), %ecx
+	orq	$-16, %rcx
+	xorl	%eax, %eax
+	cmpb	$5, %dil
 	cmovaeq	%rcx, %rax
 	retq

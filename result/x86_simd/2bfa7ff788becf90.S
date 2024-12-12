@@ -59,7 +59,7 @@ func000000000000000c:                   # @func000000000000000c
 	.short	128                             # 0x80
 	.short	128                             # 0x80
 	.short	128                             # 0x80
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vptestnmw	.LCPI2_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

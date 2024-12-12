@@ -4,7 +4,7 @@
 ; oniguruma/optimized/regexec.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/record.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -65,7 +65,7 @@ entry:
 ; luau/optimized/lvmexecute.cpp.ll
 ; redis/optimized/lvm.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 4
   %4 = sext i32 %3 to i64

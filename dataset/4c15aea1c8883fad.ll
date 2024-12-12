@@ -1,5 +1,5 @@
 
-%struct.TestObject.3716166 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
+%struct.TestObject.3895455 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
 
 ; 10 occurrences:
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
@@ -21,15 +21,14 @@ entry:
   ret ptr %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
-; msgpack/optimized/msgpack_variant_mapbased.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw %struct.TestObject.3716166, ptr %3, i64 %2
+  %4 = getelementptr nusw %struct.TestObject.3895455, ptr %3, i64 %2
   ret ptr %4
 }
 

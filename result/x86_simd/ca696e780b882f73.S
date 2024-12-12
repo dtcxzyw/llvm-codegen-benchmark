@@ -5,7 +5,7 @@ func0000000000000059:                   # @func0000000000000059
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpslld	$12, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000299:                   # @func0000000000000299
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
@@ -35,5 +35,5 @@ func0000000000000041:                   # @func0000000000000041
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpslld	$8, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

@@ -5,7 +5,7 @@ func000000000000001c:                   // @func000000000000001c
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000003e:                   // @func000000000000003e
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	mov	w8, #3                          // =0x3
 	mov	w9, #72                         // =0x48

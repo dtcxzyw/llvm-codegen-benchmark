@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; brotli/optimized/encode.c.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; nix/optimized/gc.ll
 ; openjdk/optimized/threadLocalAllocBuffer.ll
 ; rocksdb/optimized/block_cache_tier.cc.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(double %0, i64 %1) #0 {
 entry:

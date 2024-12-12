@@ -6,12 +6,13 @@ define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = add nsw i64 %4, -1
   ret i64 %5
 }
 
-; 169 occurrences:
+; 172 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -181,12 +182,14 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = add nsw i64 %4, -1
   ret i64 %5
 }
@@ -198,22 +201,26 @@ define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = add i64 %4, 4294967295
   ret i64 %5
 }
 
-; 4 occurrences:
+; 8 occurrences:
 ; linux/optimized/bitmap.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openusd/optimized/path.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = add nuw nsw i64 %4, 1
   ret i64 %5
 }
@@ -229,7 +236,7 @@ define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = add i64 %4, -32768
   ret i64 %5
 }

@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000118:                   # @func0000000000000118
 	srli	a3, a2, 32
 	beqz	a3, .LBB0_3
 	srli	a1, a1, 16
@@ -12,7 +12,7 @@ func0000000000000088:                   # @func0000000000000088
 	snez	a0, a3
 	slli	a0, a0, 5
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	srli	a3, a2, 32
 	bnez	a3, .LBB1_3
 	srli	a1, a1, 48
@@ -23,6 +23,20 @@ func0000000000000044:                   # @func0000000000000044
 	srli	a1, a2, 48
 	beqz	a1, .LBB1_2
 .LBB1_4:                                # %entry
+	seqz	a0, a3
+	slli	a0, a0, 5
+	ret
+func0000000000000284:                   # @func0000000000000284
+	srli	a3, a2, 32
+	bnez	a3, .LBB2_3
+	srli	a1, a1, 48
+	bnez	a1, .LBB2_4
+.LBB2_2:                                # %entry
+	ret
+.LBB2_3:                                # %entry
+	srli	a1, a2, 48
+	beqz	a1, .LBB2_2
+.LBB2_4:                                # %entry
 	seqz	a0, a3
 	slli	a0, a0, 5
 	ret

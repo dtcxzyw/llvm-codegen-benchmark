@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/rational.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; linux/optimized/aio.ll
@@ -16,8 +17,7 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
-; clamav/optimized/autoit.c.ll
+; 1 occurrences:
 ; minetest/optimized/CImage.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {

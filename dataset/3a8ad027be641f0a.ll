@@ -12,7 +12,7 @@ entry:
   ret i64 %3
 }
 
-; 233 occurrences:
+; 231 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
@@ -26,7 +26,6 @@ entry:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
-; darktable/optimized/jpeg.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; git/optimized/notes.ll
@@ -103,7 +102,6 @@ entry:
 ; z3/optimized/bv_bounds_tactic.cpp.ll
 ; z3/optimized/bv_size_reduction_tactic.cpp.ll
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_solver_simplify_tactic.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
 ; z3/optimized/degree_shift_tactic.cpp.ll
@@ -269,6 +267,7 @@ entry:
 ; 142 occurrences:
 ; abc/optimized/giaShow.c.ll
 ; arrow/optimized/data.cc.ll
+; boost/optimized/src.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/upack.c.ll
 ; clamav/optimized/vba_extract.c.ll
@@ -381,26 +380,23 @@ entry:
 ; linux/optimized/config.ll
 ; linux/optimized/dm-raid1.ll
 ; linux/optimized/drm_hdcp_helper.ll
-; linux/optimized/ds.ll
 ; linux/optimized/esrt.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/intel_dmc.ll
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
-; miniaudio/optimized/unity.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; opencv/optimized/contours2.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/pngread.ll
-; openspiel/optimized/hearts_test.cc.ll
 ; php/optimized/image.ll
 ; postgres/optimized/mcv.ll
 ; postgres/optimized/tsquery.ll
@@ -408,6 +404,8 @@ entry:
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; raylib/optimized/raudio.c.ll
+; velox/optimized/MallocAllocator.cpp.ll
+; velox/optimized/MmapAllocator.cpp.ll
 ; wireshark/optimized/file-elf.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0) #0 {
@@ -455,7 +453,7 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; cpython/optimized/frameobject.ll
 ; git/optimized/block.ll
@@ -463,7 +461,6 @@ entry:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -487,8 +484,9 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; hermes/optimized/escape.cpp.ll
+; imgui/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(i32 %0) #0 {
 entry:

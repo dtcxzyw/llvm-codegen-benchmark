@@ -1,12 +1,10 @@
 
-; 20 occurrences:
+; 18 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; freetype/optimized/pfr.c.ll
 ; linux/optimized/alps.ll
-; linux/optimized/ht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/pcmcia_cis.ll
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
@@ -33,7 +31,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0

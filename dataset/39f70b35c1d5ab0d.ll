@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/sim_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = freeze i64 %2

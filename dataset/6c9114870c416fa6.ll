@@ -1,23 +1,10 @@
 
-; 3 occurrences:
-; llvm/optimized/DLangDemangle.cpp.ll
-; openssl/optimized/libssl-lib-extensions.ll
-; openssl/optimized/libssl-shlib-extensions.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %2, -4
-  %4 = add nsw i64 %3, %1
-  %5 = add nsw i64 %4, -3
-  %6 = icmp ult i64 %5, %0
-  ret i1 %6
-}
-
-; 4 occurrences:
+; 5 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; lief/optimized/ssl_tls.c.ll
 ; openjdk/optimized/screencast_pipewire.ll
-; postgres/optimized/shm_toc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -40,7 +27,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 4
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, 1
   %6 = icmp ult i64 %5, %0
   ret i1 %6
@@ -50,7 +37,7 @@ entry:
 ; lief/optimized/ssl_tls12_server.c.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000007e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 36
   %4 = add nuw nsw i64 %3, %1
@@ -64,7 +51,7 @@ entry:
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -48
   %4 = add i64 %3, %1
@@ -74,9 +61,21 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/DLangDemangle.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000002a4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, -48
+  %4 = add nsw i64 %3, %1
+  %5 = add nsw i64 %4, -1
+  %6 = icmp ult i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; node/optimized/libnode.crypto_clienthello.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000404(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = add i64 %3, %1

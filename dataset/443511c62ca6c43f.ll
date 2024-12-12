@@ -43,7 +43,7 @@
 ; openjdk/optimized/zRelocationSet.ll
 ; spike/optimized/csrs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = and i64 %3, -65521
@@ -60,7 +60,7 @@ entry:
 ; spike/optimized/csrs.ll
 ; spike/optimized/mmu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = and i64 %3, 64
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-riemann.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000118(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = and i64 %3, 7
@@ -86,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000238(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000858(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = and i64 %3, 4503599627370495

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c8(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; ncnn/optimized/pooling3d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -233
   %4 = select i1 %3, i32 %1, i32 %2
@@ -39,7 +39,7 @@ entry:
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 128
   %4 = icmp slt i32 %1, 1
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fast_line_detector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
   %4 = icmp sgt i32 %1, -1

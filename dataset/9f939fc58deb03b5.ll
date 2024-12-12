@@ -92,18 +92,6 @@ entry:
 }
 
 ; 2 occurrences:
-; arrow/optimized/key_hash.cc.ll
-; minetest/optimized/COBJMeshFileLoader.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = and i64 %3, 3
-  %5 = sub nuw nsw i64 %0, %4
-  ret i64 %5
-}
-
-; 2 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; llvm/optimized/DbiStreamBuilder.cpp.ll
 ; Function Attrs: nounwind
@@ -162,6 +150,17 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
   %5 = sub nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; arrow/optimized/key_hash.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = and i64 %3, 15
+  %5 = sub nuw nsw i64 %0, %4
   ret i64 %5
 }
 

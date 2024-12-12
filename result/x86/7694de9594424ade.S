@@ -16,3 +16,8 @@ func000000000000000e:                   # @func000000000000000e
 	leaq	(%rdi,%rsi), %rax
 	shlq	$31, %rax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	andq	$-2, %rdi
+	leaq	(%rdi,%rsi), %rax
+	andq	$-2, %rax
+	retq

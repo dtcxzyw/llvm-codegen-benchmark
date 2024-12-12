@@ -1,5 +1,5 @@
 
-; 118 occurrences:
+; 119 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/cuddRef.c.ll
@@ -11,6 +11,7 @@
 ; abc/optimized/wlcNtk.c.ll
 ; abc/optimized/wlcShow.c.ll
 ; abc/optimized/wlcWriteVer.c.ll
+; boost/optimized/alloc_lib.ll
 ; cmake/optimized/tty.c.ll
 ; cpython/optimized/assemble.ll
 ; crow/optimized/example.cpp.ll
@@ -32,6 +33,7 @@
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; freetype/optimized/pfr.c.ll
+; git/optimized/commit-graph.ll
 ; git/optimized/setup.ll
 ; graphviz/optimized/dijkstra.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -55,7 +57,6 @@
 ; linux/optimized/io_uring.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/mac.ll
-; linux/optimized/mii.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/uncore_nhmex.ll
@@ -65,6 +66,7 @@
 ; llvm/optimized/MCCodeView.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_select.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -97,7 +99,6 @@
 ; openmpi/optimized/coll_base_reduce_scatter.ll
 ; openmpi/optimized/coll_base_reduce_scatter_block.ll
 ; openmpi/optimized/coll_basic_reduce_scatter.ll
-; openmpi/optimized/heap_sort.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; php/optimized/zend_inference.ll
@@ -126,8 +127,18 @@ entry:
   ret i32 %4
 }
 
-; 64 occurrences:
+; 68 occurrences:
 ; assimp/optimized/PlyExporter.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; flac/optimized/file.c.ll
@@ -138,11 +149,9 @@ entry:
 ; icu/optimized/cstring.ll
 ; libquic/optimized/file_posix.cc.ll
 ; libquic/optimized/transport_common.cc.ll
-; linux/optimized/advise.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/cancel.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/epoll.ll
 ; linux/optimized/ethtool.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/futex.ll
@@ -157,16 +166,13 @@ entry:
 ; linux/optimized/kbuf.ll
 ; linux/optimized/msg_ring.ll
 ; linux/optimized/net.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/rw.ll
-; linux/optimized/splice.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/timeout.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/via-rng.ll
 ; linux/optimized/waitid.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -181,7 +187,6 @@ entry:
 ; postgres/optimized/shmem.ll
 ; postgres/optimized/spell.ll
 ; qemu/optimized/hw_audio_es1370.c.ll
-; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/ui_cursor.c.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll

@@ -145,9 +145,10 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/decompress_unlzma.ll
 ; openjdk/optimized/graphKit.ll
+; openusd/optimized/avif.c.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind

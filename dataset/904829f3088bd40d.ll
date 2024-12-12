@@ -3,7 +3,7 @@
 ; darktable/optimized/RawImage.cpp.ll
 ; postgres/optimized/dsa.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i64 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 17
   %3 = and i64 %0, 15

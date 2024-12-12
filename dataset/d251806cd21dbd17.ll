@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 44 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/atkbd.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/host.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/nfs4proc.ll
@@ -27,6 +26,7 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; qemu/optimized/hw_block_m25p80.c.ll
 ; qemu/optimized/hw_char_serial.c.ll
 ; qemu/optimized/hw_pci_pcie_doe.c.ll
@@ -43,12 +43,13 @@
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 2
   %4 = and i8 %3, 4
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   %6 = and i8 %1, 1
   %7 = or disjoint i8 %5, %6
   ret i8 %7
@@ -62,7 +63,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 3
   %4 = and i8 %3, 8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   %6 = and i8 %1, -15
   %7 = or i8 %5, %6
   ret i8 %7

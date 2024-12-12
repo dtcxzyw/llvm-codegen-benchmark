@@ -1,5 +1,5 @@
 
-; 143 occurrences:
+; 141 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -73,8 +73,6 @@
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -147,7 +145,7 @@
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = sub i64 9223372036854775744, %3
   ret i64 %4
 }
@@ -161,7 +159,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = sub nsw i64 65536, %3
   ret i64 %4
 }
@@ -183,7 +181,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = sub nsw i64 65536, %3
   ret i64 %4
 }
@@ -196,7 +194,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = sub nuw nsw i64 3, %3
   ret i64 %4
 }
@@ -213,7 +211,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = sub i64 0, %3
   ret i64 %4
 }
@@ -224,7 +222,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = sub nsw i64 0, %3
   ret i64 %4
 }
@@ -236,7 +234,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = sub nsw i64 0, %3
   ret i64 %4
 }
@@ -248,7 +246,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = sub nsw i64 0, %3
   ret i64 %4
 }
@@ -260,7 +258,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = sub i64 0, %3
   ret i64 %4
 }
@@ -271,7 +269,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = sub nsw i64 0, %3
   ret i64 %4
 }
@@ -282,7 +280,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = sub nuw nsw i64 9223372036854775804, %3
   ret i64 %4
 }
@@ -293,7 +291,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = sub i64 55, %3
   ret i64 %4
 }

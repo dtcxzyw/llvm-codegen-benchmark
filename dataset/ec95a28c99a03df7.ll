@@ -9,7 +9,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = sitofp i32 %2 to double
   %4 = fdiv double %3, 4.095000e+03
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 

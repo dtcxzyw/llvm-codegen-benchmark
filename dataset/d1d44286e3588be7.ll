@@ -13,7 +13,7 @@
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/ruby.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000484(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -33
   %3 = add nsw i32 %2, -91
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/check_code.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000481(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2047
   %3 = icmp eq i32 %2, 1
@@ -39,7 +39,7 @@ entry:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000584(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = add nsw i32 %2, -1

@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; cpython/optimized/_codecs_kr.ll
+; diesel-rs/optimized/462o5qgxgzqa9ugn.ll
 ; diesel-rs/optimized/6qvzky2suxi9qri.ll
 ; llvm/optimized/MergeICmps.cpp.ll
 ; mitsuba3/optimized/func.cpp.ll

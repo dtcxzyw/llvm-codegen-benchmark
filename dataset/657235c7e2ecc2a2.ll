@@ -1,5 +1,5 @@
 
-; 380 occurrences:
+; 384 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/giaCex.c.ll
 ; abc/optimized/kitDsd.c.ll
@@ -77,7 +77,6 @@
 ; linux/optimized/kfifo.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/namei.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nf_conntrack_netlink.ll
 ; linux/optimized/nsnames.ll
 ; linux/optimized/ptp_clock.ll
@@ -90,8 +89,8 @@
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DiagnosticRenderer.cpp.ll
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
+; llvm/optimized/NestedNameSpecifier.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
@@ -105,6 +104,8 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_draw_label.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
@@ -119,6 +120,7 @@
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
+; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
 ; openjdk/optimized/JPLISAgent.ll
 ; openjdk/optimized/archiveBuilder.ll
@@ -313,12 +315,10 @@
 ; openmpi/optimized/schizo_prte.ll
 ; openmpi/optimized/schizo_slurm.ll
 ; openssl/optimized/ectest-bin-ectest.ll
-; openssl/optimized/libcrypto-lib-ec_check.ll
 ; openssl/optimized/libcrypto-lib-eng_ctrl.ll
 ; openssl/optimized/libcrypto-lib-evp_lib.ll
 ; openssl/optimized/libcrypto-lib-pcy_tree.ll
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
-; openssl/optimized/libcrypto-shlib-ec_check.ll
 ; openssl/optimized/libcrypto-shlib-eng_ctrl.ll
 ; openssl/optimized/libcrypto-shlib-evp_lib.ll
 ; openssl/optimized/libcrypto-shlib-pcy_tree.ll
@@ -326,7 +326,6 @@
 ; openssl/optimized/libssl-lib-ssl_conf.ll
 ; openssl/optimized/libssl-shlib-ssl_conf.ll
 ; openssl/optimized/openssl-bin-enc.ll
-; openssl/optimized/trace_api_test-bin-trace_api_test.ll
 ; openusd/optimized/rotation.cpp.ll
 ; php/optimized/escape_analysis.ll
 ; php/optimized/parse_date.ll
@@ -349,7 +348,9 @@
 ; redis/optimized/listpack.ll
 ; rocksdb/optimized/plain_table_key_coding.cc.ll
 ; ruby/optimized/prism.ll
+; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
 ; rust-analyzer-rs/optimized/266k6bqg3m0kg73d.ll
+; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
 ; slurm/optimized/partition_mgr.ll
 ; soc-simulator/optimized/verilated.ll
@@ -377,6 +378,9 @@
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/pkcs12.c.ll
 ; yosys/optimized/genrtlil.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
 ; zxing/optimized/ODCode39Reader.cpp.ll
 ; zxing/optimized/ODCode93Reader.cpp.ll
 ; zxing/optimized/ODCode93Writer.cpp.ll

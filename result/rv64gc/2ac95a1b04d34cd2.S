@@ -23,6 +23,11 @@ func00000000000000c0:                   # @func00000000000000c0
 	add	a0, a0, a1
 	addi	a0, a0, 7
 	ret
+func0000000000000080:                   # @func0000000000000080
+	add	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 2
+	ret
 func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
 	add	a0, a0, a1

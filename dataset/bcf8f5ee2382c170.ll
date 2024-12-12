@@ -4,12 +4,12 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = add i64 %2, 17179869180
   %4 = and i64 %3, 17179869180
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -17,24 +17,24 @@ entry:
 ; minetest/optimized/png.cpp.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = add i64 %2, 4
   %4 = and i64 %3, 4294967292
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; minetest/optimized/mapnode.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 2
   %4 = and i64 %3, 4294967294
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

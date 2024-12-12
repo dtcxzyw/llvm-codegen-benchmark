@@ -12,7 +12,7 @@ entry:
   %2 = lshr i16 %1, 4
   %3 = and i16 %2, 15
   %4 = zext nneg i16 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = add nsw i32 %5, 1
   ret i32 %6
 }

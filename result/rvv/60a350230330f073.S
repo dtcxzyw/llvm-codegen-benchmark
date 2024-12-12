@@ -1,4 +1,4 @@
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v12, v0
 	lui	a0, 272
@@ -48,6 +48,18 @@ func000000000000002b:                   # @func000000000000002b
 	vmv1r.v	v0, v12
 	vor.vx	v8, v8, a0, v0.t
 	ret
+func0000000000000023:                   # @func0000000000000023
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv1r.v	v12, v0
+	lui	a0, 272
+	addi	a0, a0, -1
+	vmsgtu.vx	v0, v10, a0
+	li	a0, 256
+	vor.vx	v8, v8, a0, v0.t
+	li	a0, 128
+	vmv1r.v	v0, v12
+	vor.vx	v8, v8, a0, v0.t
+	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
@@ -71,6 +83,15 @@ func0000000000000020:                   # @func0000000000000020
 	vmv1r.v	v0, v12
 	vor.vi	v8, v8, 8, v0.t
 	ret
+func0000000000000060:                   # @func0000000000000060
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv1r.v	v12, v0
+	li	a0, 255
+	vmsgtu.vx	v0, v10, a0
+	vor.vi	v8, v8, 8, v0.t
+	vmv1r.v	v0, v12
+	vor.vi	v8, v8, 4, v0.t
+	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v12, v0
@@ -78,7 +99,7 @@ func0000000000000005:                   # @func0000000000000005
 	vmv.v.i	v10, 6
 	lui	a0, 131072
 	vmerge.vxm	v10, v10, a0, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	lui	a0, 524288
 	vmv1r.v	v0, v12
 	vor.vx	v8, v8, a0, v0.t

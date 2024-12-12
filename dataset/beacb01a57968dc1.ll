@@ -1,5 +1,5 @@
 
-; 159 occurrences:
+; 155 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; clamav/optimized/cert_util.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -22,7 +22,6 @@
 ; lief/optimized/ResourceDialogItem.cpp.ll
 ; linux/optimized/ahci.ll
 ; linux/optimized/aio.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/coalesce.ll
@@ -81,7 +80,6 @@
 ; node/optimized/libnode.node_sockaddr.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/mulnode.ll
-; openssl/optimized/d2i_test-bin-d2i_test.ll
 ; openssl/optimized/ec_internal_test-bin-ec_internal_test.ll
 ; openssl/optimized/evp_extra_test-bin-evp_extra_test.ll
 ; openssl/optimized/evp_test-bin-evp_test.ll
@@ -109,8 +107,6 @@
 ; openssl/optimized/libcrypto-shlib-tasn_enc.ll
 ; openssl/optimized/openssl-bin-req.ll
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
-; openssl/optimized/sslcorrupttest-bin-sslcorrupttest.ll
-; openssl/optimized/x509aux-bin-x509aux.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/interaction.cpp.ll
@@ -163,7 +159,7 @@
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -181,16 +177,15 @@ entry:
 define i1 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; lief/optimized/ResourceDialog.cpp.ll
 ; lief/optimized/ResourceDialogItem.cpp.ll
-; linux/optimized/intel_hti.ll
 ; linux/optimized/metrics.ll
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/xhci.ll
@@ -204,18 +199,17 @@ entry:
 define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 102
   ret i1 %4
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; freetype/optimized/type1.c.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/coalesce.ll
 ; linux/optimized/pcm_lib.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
@@ -236,10 +230,10 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -455,10 +449,10 @@ entry:
 ; yosys/optimized/test_abcloop.ll
 ; yosys/optimized/xilinx_dffopt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -470,12 +464,12 @@ entry:
 define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
 
-; 44 occurrences:
+; 42 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -500,7 +494,6 @@ entry:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -512,7 +505,6 @@ entry:
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/satTruth.c.ll
@@ -521,11 +513,22 @@ entry:
 ; abc/optimized/sfmNtk.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/AutoUpgrade.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = and i32 %0, %2
+  %4 = icmp ugt i32 %3, 31
   ret i1 %4
 }
 
@@ -534,37 +537,47 @@ entry:
 ; icu/optimized/collationkeys.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, %0
-  %4 = icmp ugt i32 %3, 31
+  %3 = and i32 %0, %2
+  %4 = icmp samesign ugt i32 %3, 16
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; icu/optimized/collationkeys.ll
-; linux/optimized/dma-iommu.ll
 ; quickjs/optimized/libbf.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, %0
-  %4 = icmp ult i32 %3, 10
+  %3 = and i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 10
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/p4.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/dma-iommu.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = and i32 %0, %2
+  %4 = icmp ult i32 %3, 4096
   ret i1 %4
 }
 

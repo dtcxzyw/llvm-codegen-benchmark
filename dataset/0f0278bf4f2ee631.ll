@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 52 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; clamav/optimized/mszipd.c.ll
@@ -24,14 +24,12 @@
 ; jemalloc/optimized/sz.ll
 ; jemalloc/optimized/sz.pic.ll
 ; jemalloc/optimized/sz.sym.ll
-; linux/optimized/intel_tcc.ll
 ; linux/optimized/timer.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-shaper-use.ll
@@ -64,7 +62,7 @@ entry:
   ret i64 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/darLib.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -86,6 +84,7 @@ entry:
 ; z3/optimized/euf_solver.cpp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
@@ -139,13 +138,14 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/SemaAttr.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 %1, 3
-  %3 = and i32 %0, -57
+  %2 = shl i32 %1, 16
+  %3 = and i32 %0, -65536
   %4 = or i32 %3, %2
   %5 = zext i32 %4 to i64
   ret i64 %5
@@ -154,10 +154,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaAttr.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 6
-  %3 = and i32 %0, -193
+  %2 = shl nsw i32 %1, 3
+  %3 = and i32 %0, -57
   %4 = or i32 %3, %2
   %5 = zext i32 %4 to i64
   ret i64 %5

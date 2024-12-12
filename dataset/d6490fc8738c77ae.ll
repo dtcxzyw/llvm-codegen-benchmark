@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 65 occurrences:
 ; abc/optimized/cuddZddReord.c.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
@@ -9,7 +9,6 @@
 ; nori/optimized/main.cpp.ll
 ; nori/optimized/obj.cpp.ll
 ; openjdk/optimized/g1MonotonicArenaFreeMemoryTask.ll
-; openmpi/optimized/timer_linux_component.ll
 ; openvdb/optimized/Queue.cc.ll
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -21,7 +20,6 @@
 ; postgres/optimized/costsize.ll
 ; z3/optimized/api_tactic.cpp.ll
 ; z3/optimized/bit_matrix.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datalog_frontend.cpp.ll
 ; z3/optimized/dl_cmds.cpp.ll
 ; z3/optimized/dl_costs.cpp.ll
@@ -71,16 +69,6 @@
 define double @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 1000000
-  %2 = sitofp i64 %1 to double
-  ret double %2
-}
-
-; 1 occurrences:
-; meshlab/optimized/filter_func.cpp.ll
-; Function Attrs: nounwind
-define double @func0000000000000001(i64 %0) #0 {
-entry:
-  %1 = sdiv exact i64 %0, 48
   %2 = sitofp i64 %1 to double
   ret double %2
 }

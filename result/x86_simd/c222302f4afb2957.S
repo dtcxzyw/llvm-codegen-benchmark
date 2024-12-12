@@ -66,3 +66,27 @@ func0000000000000008:                   # @func0000000000000008
 	vpcmpleuw	%ymm1, %ymm0, %k1
 	vmovdqu16	%ymm2, %ymm0 {%k1} {z}
 	retq
+.LCPI2_0:
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+func0000000000000006:                   # @func0000000000000006
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k1
+	vmovdqu16	.LCPI2_0(%rip), %ymm1 {%k1} {z} # ymm1 {%k1} {z} = [256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256]
+	vpsraw	$15, %ymm0, %ymm0
+	vpandn	%ymm1, %ymm0, %ymm0
+	retq

@@ -67,7 +67,7 @@ func0000000000000008:                   # @func0000000000000008
 	.long	4                               # 0x4
 .LCPI3_2:
 	.long	613566757                       # 0x24924925
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpcmpgtd	.LCPI3_0(%rip){1to8}, %ymm0, %k1
 	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]

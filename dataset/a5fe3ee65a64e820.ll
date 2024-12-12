@@ -1,5 +1,5 @@
 
-; 710 occurrences:
+; 714 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -17,6 +17,12 @@
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
 ; assimp/optimized/MD5Loader.cpp.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/partition.ll
+; boost/optimized/test_system.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
@@ -218,6 +224,7 @@
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
 ; llvm/optimized/SveEmitter.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; llvm/optimized/Targets.cpp.ll
@@ -239,7 +246,6 @@
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -487,7 +493,6 @@
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pocketpy/optimized/collections.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; protobuf/optimized/context.cc.ll
 ; proxygen/optimized/RendezvousHash.cpp.ll
@@ -543,7 +548,6 @@
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; quantlib/optimized/bond.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/nonstandardswap.ll
 ; quantlib/optimized/squarerootclvmodel.ll
@@ -720,9 +724,11 @@ entry:
   ret i64 %5
 }
 
-; 150 occurrences:
+; 152 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -760,6 +766,7 @@ entry:
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/MacroExpansionContext.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
 ; meshlab/optimized/action_searcher.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -769,7 +776,6 @@ entry:
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll

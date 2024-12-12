@@ -1,6 +1,7 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
+; boost/optimized/area.ll
 ; casadi/optimized/cvodes.c.ll
 ; ceres/optimized/line_search_minimizer.cc.ll
 ; gromacs/optimized/gmx_bar.cpp.ll

@@ -41,12 +41,11 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; linux/optimized/intel_lrc.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; openjdk/optimized/countbitsnode.ll
 ; spike/optimized/spike.ll
@@ -82,6 +81,17 @@ define i32 @func0000000000000006(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i32 -1, i32 1
+  %5 = select i1 %0, i32 %1, i32 %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; miniaudio/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 4294967296
+  %4 = select i1 %3, i32 32, i32 0
   %5 = select i1 %0, i32 %1, i32 %4
   ret i32 %5
 }

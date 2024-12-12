@@ -1,4 +1,4 @@
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -11,7 +11,7 @@ func00000000000000d6:                   # @func00000000000000d6
 	vmacc.vx	v12, a0, v10
 	vmerge.vim	v8, v12, 0, v0
 	ret
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma

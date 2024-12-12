@@ -1,8 +1,7 @@
 
-; 57 occurrences:
+; 55 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
@@ -38,7 +37,6 @@
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; qemu/optimized/block_vmdk.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/jemalloc_nodump_allocator.cc.ll
@@ -49,7 +47,6 @@
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/f32_rem.ll
 ; spike/optimized/f64_sqrt.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/s_mul128MTo256M.ll
 ; spike/optimized/vmulhu_vv.ll
 ; spike/optimized/vmulhu_vx.ll
@@ -57,11 +54,12 @@
 ; tokio-rs/optimized/r9h5225tdo2hxm6.ll
 ; tokio-rs/optimized/rq81hdouiclvz49.ll
 ; xgboost/optimized/charconv.cc.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
@@ -76,7 +74,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = lshr i64 %3, 10
   ret i64 %4
 }
@@ -103,12 +101,12 @@ entry:
 define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 26
   ret i64 %4
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; draco/optimized/rans_bit_encoder.cc.ll
 ; libdeflate/optimized/deflate_compress.c.ll
@@ -120,14 +118,12 @@ entry:
 ; openssl/optimized/libcrypto-lib-i_cbc.ll
 ; openssl/optimized/libcrypto-shlib-i_cbc.ll
 ; openusd/optimized/openexr-c.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; spike/optimized/s_approxRecip32_1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
@@ -139,7 +135,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
@@ -153,7 +149,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = lshr exact i64 %3, 3
   ret i64 %4
 }
@@ -166,7 +162,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = lshr exact i64 %3, 3
   ret i64 %4
 }
@@ -192,7 +188,6 @@ entry:
 ; linux/optimized/ttm_device.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/GCOVProfiling.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; ncnn/optimized/allocator.cpp.ll
 ; openjdk/optimized/g1CollectedHeap.ll
@@ -210,11 +205,12 @@ entry:
 ; spike/optimized/f128_sqrt.ll
 ; unicode-normalization-rs/optimized/2dhzw0mhmvlvodqn.ll
 ; verilator/optimized/V3Number.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = lshr i64 %3, 10
   ret i64 %4
 }
@@ -230,7 +226,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   %4 = lshr exact i64 %3, 1
   ret i64 %4
 }
@@ -242,7 +238,7 @@ entry:
 define i64 @func0000000000000009(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = lshr exact i64 %3, 3
   ret i64 %4
 }

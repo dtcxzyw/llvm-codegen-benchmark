@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 35 occurrences:
 ; assimp/optimized/PretransformVertices.cpp.ll
 ; assimp/optimized/ProcessHelper.cpp.ll
 ; bullet3/optimized/b3TypedConstraint.ll
@@ -33,12 +33,14 @@
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fsub float %1, %0
   %3 = fmul float %2, 0x3FE99999A0000000
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

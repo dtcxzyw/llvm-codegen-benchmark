@@ -1,13 +1,11 @@
 
-; 27 occurrences:
+; 25 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; openblas/optimized/dtpmv_NLN.c.ll
 ; openblas/optimized/dtpmv_NLU.c.ll
-; openblas/optimized/dtpmv_TUN.c.ll
 ; openblas/optimized/dtpmv_TUU.c.ll
-; openblas/optimized/dtpsv_NUN.c.ll
 ; openblas/optimized/dtpsv_NUU.c.ll
 ; openblas/optimized/dtpsv_TLN.c.ll
 ; openblas/optimized/dtpsv_TLU.c.ll
@@ -222,7 +220,7 @@ entry:
   ret i64 %2
 }
 
-; 20 occurrences:
+; 13 occurrences:
 ; abc/optimized/abcUtil.c.ll
 ; arrow/optimized/diff.cc.ll
 ; casadi/optimized/convexify.cpp.ll
@@ -232,13 +230,6 @@ entry:
 ; coreutils-rs/optimized/450bow9j8399x84k.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dspr2_thread_U.c.ll
-; openblas/optimized/dspr_thread_U.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
 ; openblas/optimized/dtrsm_kernel_LN.c.ll
 ; openblas/optimized/strsm_kernel_LN.c.ll
 ; openusd/optimized/mapFunction.cpp.ll

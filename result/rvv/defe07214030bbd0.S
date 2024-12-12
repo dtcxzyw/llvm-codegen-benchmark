@@ -5,5 +5,5 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vx	v8, v8, a0
 	li	a0, 64
 	vmsltu.vx	v10, v8, a0
-	vmand.mm	v0, v10, v0
+	vmand.mm	v0, v0, v10
 	ret

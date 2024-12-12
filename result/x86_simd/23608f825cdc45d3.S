@@ -46,6 +46,21 @@ func0000000000000004:                   # @func0000000000000004
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI5_0:
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleuw	.LCPI5_0(%rip), %xmm1, %k1
+	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
+	retq
+func0000000000000014:                   # @func0000000000000014
+	retq
+.LCPI7_0:
 	.short	13                              # 0xd
 	.short	13                              # 0xd
 	.short	13                              # 0xd
@@ -55,6 +70,6 @@ func0000000000000004:                   # @func0000000000000004
 	.short	13                              # 0xd
 	.short	13                              # 0xd
 func000000000000000c:                   # @func000000000000000c
-	vpcmpneqw	.LCPI5_0(%rip), %xmm1, %k1
+	vpcmpneqw	.LCPI7_0(%rip), %xmm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq

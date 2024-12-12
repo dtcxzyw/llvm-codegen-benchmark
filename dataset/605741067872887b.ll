@@ -1,12 +1,19 @@
 
-; 516 occurrences:
+; 509 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
-; abseil-cpp/optimized/node_hash_map_test.cc.ll
-; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/key_value_metadata.cc.ll
 ; arrow/optimized/message.cc.ll
 ; assimp/optimized/LWOBLoader.cpp.ll
+; boost/optimized/cmdline.ll
+; boost/optimized/console_buffer.ll
+; boost/optimized/core.ll
+; boost/optimized/env.ll
+; boost/optimized/generator.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/parser_utils.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/text_ostream_backend.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; clamav/optimized/scantree.cpp.ll
 ; cmake/optimized/cmCMakePresetsGraphReadJSON.cxx.ll
@@ -33,7 +40,6 @@
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; cmake/optimized/cmVariableWatch.cxx.ll
 ; cmake/optimized/cmXcFramework.cxx.ll
-; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/inflate.c.ll
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/longobject.ll
@@ -42,20 +48,13 @@
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
 ; cvc5/optimized/cegis_core_connective.cpp.ll
-; cvc5/optimized/core_solver.cpp.ll
-; cvc5/optimized/dtype_cons.cpp.ll
 ; cvc5/optimized/eq_proof.cpp.ll
 ; cvc5/optimized/extended_rewrite.cpp.ll
-; cvc5/optimized/function_const.cpp.ll
-; cvc5/optimized/lfsc_post_processor.cpp.ll
-; cvc5/optimized/quantifiers_attributes.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/sygus_grammar.cpp.ll
 ; cvc5/optimized/sygus_random_enumerator.cpp.ll
 ; cvc5/optimized/sygus_repair_const.cpp.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
-; cvc5/optimized/theory_ff_rewriter.cpp.ll
-; cvc5/optimized/theory_uf_rewriter.cpp.ll
 ; cvc5/optimized/trigger_database.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
 ; draco/optimized/point_cloud.cc.ll
@@ -76,9 +75,7 @@
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/BenchmarkVector.cpp.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
@@ -437,7 +434,6 @@
 ; opencv/optimized/window.cpp.ll
 ; opencv/optimized/window_gtk.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
-; openjdk/optimized/continuationFreezeThaw.ll
 ; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/crateData.cpp.ll
 ; openusd/optimized/dependencies.cpp.ll
@@ -469,8 +465,6 @@
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_objects.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; quantlib/optimized/bond.ll
@@ -514,12 +508,36 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; zlib/optimized/inflate.c.ll
-; zstd/optimized/divsufsort.c.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = ashr exact i64 %4, 3
+  ret i64 %5
+}
+
+; 14 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; cmake/optimized/divsufsort.c.ll
+; eastl/optimized/EASprintfCore.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestVector.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; hermes/optimized/gtest-all.cc.ll
+; hyperscan/optimized/gtest-all.cc.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
+; opencv/optimized/ts_gtest.cpp.ll
+; openjdk/optimized/continuationFreezeThaw.ll
+; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 32
+  %2 = getelementptr nusw i8, ptr %1, i64 -16
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = ashr exact i64 %4, 3
@@ -565,9 +583,9 @@ entry:
 ; vcpkg/optimized/versions.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000018(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = ashr i64 %4, 5
@@ -590,9 +608,9 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, ptr %1) #0 {
+define i64 @func000000000000001b(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 16384
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 16384
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nsw i64 %0, %3
   %5 = ashr exact i64 %4, 3
@@ -602,20 +620,19 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000012(i64 %0, ptr %1) #0 {
+define i64 @func000000000000001a(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 16384
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 16384
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nsw i64 %0, %3
   %5 = ashr i64 %4, 3
   ret i64 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; cpython/optimized/sre.ll
 ; cpython/optimized/unicodeobject.ll
-; linux/optimized/auth_unix.ll
 ; linux/optimized/rx.ll
 ; wireshark/optimized/profile_model.cpp.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll

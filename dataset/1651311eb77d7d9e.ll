@@ -1,11 +1,10 @@
 
-; 78 occurrences:
+; 76 occurrences:
 ; draco/optimized/symbol_decoding.cc.ll
 ; icu/optimized/ucptrie.ll
 ; icu/optimized/utrie_swap.ll
 ; linux/optimized/ethtool.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_dvo.ll
 ; linux/optimized/setup.ll
@@ -52,7 +51,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -84,7 +82,7 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 4
   %4 = and i32 %3, 458752
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -107,7 +105,7 @@ entry:
   %2 = zext nneg i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 16
   %4 = and i32 %3, 16711680
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -122,7 +120,7 @@ entry:
   %2 = zext nneg i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -160,7 +158,7 @@ entry:
   %2 = zext nneg i16 %1 to i32
   %3 = shl nuw i32 %2, 18
   %4 = and i32 %3, 1835008
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -174,7 +172,7 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = and i32 %3, 32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

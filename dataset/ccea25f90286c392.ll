@@ -1,5 +1,5 @@
 
-; 641 occurrences:
+; 632 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/casCore.c.ll
@@ -26,7 +26,6 @@
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/decode.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/cert_util.c.ll
@@ -106,7 +105,6 @@
 ; linux/optimized/ahci.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/cancel.ll
@@ -133,7 +131,6 @@
 ; linux/optimized/gen2_engine_cs.ll
 ; linux/optimized/gen8_engine_cs.ll
 ; linux/optimized/generic.ll
-; linux/optimized/hda_hwdep.ll
 ; linux/optimized/hdmi_chmap.ll
 ; linux/optimized/hid-lg4ff.ll
 ; linux/optimized/hiddev.ll
@@ -146,7 +143,6 @@
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_hotplug.ll
-; linux/optimized/intel_hti.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/io_uring.ll
@@ -182,7 +178,6 @@
 ; linux/optimized/tctx.ll
 ; linux/optimized/tls.ll
 ; linux/optimized/trace_events_filter.ll
-; linux/optimized/tsc_msr.ll
 ; linux/optimized/vt_ioctl.ll
 ; linux/optimized/xarray.ll
 ; linux/optimized/xhci.ll
@@ -231,7 +226,6 @@
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
@@ -442,6 +436,7 @@
 ; luau/optimized/BuiltinFolding.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -483,7 +478,6 @@
 ; openspiel/optimized/spiel_bots.cc.ll
 ; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; openssl/optimized/cipherlist_test-bin-cipherlist_test.ll
-; openssl/optimized/d2i_test-bin-d2i_test.ll
 ; openssl/optimized/dtlstest-bin-dtlstest.ll
 ; openssl/optimized/ec_internal_test-bin-ec_internal_test.ll
 ; openssl/optimized/errtest-bin-errtest.ll
@@ -534,11 +528,8 @@
 ; openssl/optimized/openssl-bin-req.ll
 ; openssl/optimized/ossl_store_test-bin-ossl_store_test.ll
 ; openssl/optimized/provider_test-bin-provider_test.ll
-; openssl/optimized/quicfaultstest-bin-quicfaultstest.ll
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
-; openssl/optimized/sslcorrupttest-bin-sslcorrupttest.ll
-; openssl/optimized/x509aux-bin-x509aux.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -645,7 +636,7 @@
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 
@@ -666,11 +657,11 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/ifDelay.c.ll
@@ -685,7 +676,6 @@ entry:
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/stream.c.ll
 ; libquic/optimized/padding.c.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/coalesce.ll
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/p4.ll
@@ -730,11 +720,11 @@ entry:
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 
-; 271 occurrences:
+; 269 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcCascade.c.ll
@@ -769,7 +759,6 @@ entry:
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -782,7 +771,6 @@ entry:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/mapperUtils.c.ll
 ; abc/optimized/mioParse.c.ll
@@ -1010,7 +998,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 

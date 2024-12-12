@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; icu/optimized/gregocal.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_border.ll
 ; minetest/optimized/CGUIScrollBar.cpp.ll
 ; minetest/optimized/guiScrollBar.cpp.ll
 ; Function Attrs: nounwind
@@ -40,10 +41,11 @@ entry:
   ret i1 %.not
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; graphviz/optimized/rectangle.c.ll
+; lvgl/optimized/lv_draw_sw_border.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/splashscreen_gfx_impl.ll
@@ -55,8 +57,18 @@ entry:
   ret i1 %2
 }
 
-; 20 occurrences:
+; 3 occurrences:
 ; draco/optimized/adaptive_rans_bit_decoder.cc.ll
+; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
+; wireshark/optimized/packet-tftp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign uge i32 %0, %1
+  ret i1 %2
+}
+
+; 25 occurrences:
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/Reassociate.cpp.ll
@@ -75,7 +87,13 @@ entry:
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
-; wireshark/optimized/packet-tftp.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/4pyl8821jbmubnjyx7hxe0q2i.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
@@ -83,11 +101,12 @@ entry:
   ret i1 %2
 }
 
-; 25 occurrences:
+; 27 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; gromacs/optimized/threadaffinity.cpp.ll
 ; hwloc/optimized/topology.ll
+; lvgl/optimized/lv_draw_sw_border.ll
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
@@ -109,6 +128,7 @@ entry:
 ; openusd/optimized/decodeframe.c.ll
 ; postgres/optimized/localtime.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
@@ -116,11 +136,10 @@ entry:
   ret i1 %2
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
-; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; Function Attrs: nounwind
@@ -159,15 +178,12 @@ entry:
   ret i1 %2
 }
 
-; 8 occurrences:
+; 5 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; linux/optimized/pcmcia_cis.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
-; regex-rs/optimized/1pxsmct4oxs5dlep.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; z3/optimized/sat_binspr.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
@@ -185,13 +201,31 @@ entry:
   ret i1 %.not
 }
 
-; 10 occurrences:
+; 2 occurrences:
+; regex-rs/optimized/1pxsmct4oxs5dlep.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i32 %0, i32 %1) #0 {
+entry:
+  %.not = icmp samesign ugt i32 %0, %1
+  ret i1 %.not
+}
+
+; 1 occurrences:
+; openusd/optimized/reconinter.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i32 %0, i32 %1) #0 {
+entry:
+  %.not = icmp samesign ult i32 %0, %1
+  ret i1 %.not
+}
+
+; 9 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/rose_build_dedupe.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; hyperscan/optimized/stream.c.ll
-; openusd/optimized/reconinter.c.ll
 ; quickjs/optimized/quickjs.ll
 ; z3/optimized/qe_arith_plugin.cpp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
@@ -201,6 +235,15 @@ define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp ult i32 %0, %1
   ret i1 %.not
+}
+
+; 1 occurrences:
+; z3/optimized/sat_binspr.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ule i32 %0, %1
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

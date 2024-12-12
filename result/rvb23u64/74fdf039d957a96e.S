@@ -28,9 +28,3 @@ func0000000000000003:                   # @func0000000000000003
 	fli.d	fa4, 0.5
 	fmul.d	fa0, fa5, fa4
 	ret
-func0000000000000002:                   # @func0000000000000002
-	addi	a0, a0, -128
-	fcvt.d.wu	fa5, a0
-	fli.d	fa4, 0.5
-	fmul.d	fa0, fa5, fa4
-	ret

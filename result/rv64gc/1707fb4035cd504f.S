@@ -10,7 +10,7 @@ func0000000000000010:                   # @func0000000000000010
 	addiw	a1, a1, -1984
 	add	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	sext.w	a1, a1
 	li	a2, 8
 	bltu	a2, a1, .LBB1_2
@@ -21,17 +21,28 @@ func0000000000000022:                   # @func0000000000000022
 	li	a1, 36
 	add	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000063:                   # @func0000000000000063
 	sext.w	a1, a1
-	beqz	a1, .LBB2_2
-	li	a1, 12
+	li	a2, 8
+	bltu	a2, a1, .LBB2_2
+	li	a1, 32
 	add	a0, a0, a1
 	ret
 .LBB2_2:
+	li	a1, 36
+	add	a0, a0, a1
+	ret
+func0000000000000007:                   # @func0000000000000007
+	sext.w	a1, a1
+	beqz	a1, .LBB3_2
+	li	a1, 12
+	add	a0, a0, a1
+	ret
+.LBB3_2:
 	li	a1, 14
 	add	a0, a0, a1
 	ret
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	sext.w	a1, a1
 	seqz	a1, a1
 	xori	a1, a1, 7
@@ -43,7 +54,7 @@ func0000000000000018:                   # @func0000000000000018
 	add	a0, a0, a1
 	addi	a0, a0, 376
 	ret
-func0000000000000020:                   # @func0000000000000020
+func0000000000000060:                   # @func0000000000000060
 	sext.w	a1, a1
 	sltiu	a1, a1, 3
 	xori	a1, a1, 1

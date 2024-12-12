@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 28 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; libquic/optimized/e_rc2.c.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -7,8 +7,6 @@
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/ip6_offload.ll
-; linux/optimized/mcast_snoop.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/virtio_ring.ll
 ; minetest/optimized/mapgen.cpp.ll
@@ -16,7 +14,6 @@
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
-; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-csn1.c.ll
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
 ; wireshark/optimized/packet-docsis-macmgmt.c.ll
@@ -35,7 +32,7 @@
 define i32 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }
@@ -51,13 +48,14 @@ entry:
 define i32 @func0000000000000018(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; openjdk/optimized/cmsintrp.ll
+; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/ipfix.c.ll
 ; wireshark/optimized/packet-mqtt-sn.c.ll
 ; wireshark/optimized/packet-reload.c.ll
@@ -65,7 +63,7 @@ entry:
 define i32 @func0000000000000010(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }
@@ -76,7 +74,7 @@ entry:
 define i32 @func0000000000000008(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }

@@ -10,3 +10,9 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	notq	%rsi
+	addq	%rdx, %rsi
+	cmpq	%rdi, %rsi
+	setb	%al
+	retq

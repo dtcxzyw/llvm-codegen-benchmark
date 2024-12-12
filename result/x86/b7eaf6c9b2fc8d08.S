@@ -4,5 +4,6 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000000:                   # @func0000000000000000
 	orl	%esi, %edi
+	andb	$7, %dl
 	shlxl	%edx, %edi, %eax
 	retq

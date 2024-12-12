@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 69 occurrences:
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
 ; folly/optimized/EventBase.cpp.ll
@@ -15,7 +15,6 @@
 ; llvm/optimized/CodeLayout.cpp.ll
 ; llvm/optimized/LiveIntervals.cpp.ll
 ; llvm/optimized/SampleProfWriter.cpp.ll
-; meshlab/optimized/filter_texture_defragmentation.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; mini-lsm-rs/optimized/1p3sopfakd9d715u.ll
 ; mini-lsm-rs/optimized/5avg215hrxp5j19q.ll

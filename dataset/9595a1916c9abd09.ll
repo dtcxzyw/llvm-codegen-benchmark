@@ -23,10 +23,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/big5.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 160
+  %3 = icmp samesign ugt i32 %2, 160
   %4 = select i1 %3, i32 0, i32 -34
   %5 = select i1 %3, i32 34, i32 0
   %6 = select i1 %0, i32 %4, i32 %5

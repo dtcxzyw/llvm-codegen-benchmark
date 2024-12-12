@@ -15,11 +15,11 @@
 ; meshlab/optimized/balltree.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
-; ockam-rs/optimized/lrl69p7oh77nujn.ll
 ; openjdk/optimized/splashscreen_gfx_impl.ll
 ; qemu/optimized/util_userfaultfd.c.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

@@ -14,7 +14,7 @@ func0000000000000005:                   # @func0000000000000005
 	vnmsub.vx	v12, a0, v10
 	lui	a0, 1048540
 	vsra.vx	v10, v12, a1
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	addiw	a0, a0, 1360
 	vadd.vx	v8, v8, a0
 	ret

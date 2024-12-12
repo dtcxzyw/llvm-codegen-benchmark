@@ -11,7 +11,7 @@
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fsub float 0x400921FB60000000, %1
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   ret i1 %3
 }
 
@@ -24,7 +24,19 @@ entry:
 define i1 @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fsub float 1.000000e+00, %1
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
+  ret i1 %3
+}
+
+; 3 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(float %0, float %1) #0 {
+entry:
+  %2 = fsub float 1.000000e+00, %1
+  %3 = fcmp oeq float %0, %2
   ret i1 %3
 }
 
@@ -37,17 +49,7 @@ entry:
 define i1 @func0000000000000005(float %0, float %1) #0 {
 entry:
   %2 = fsub float 5.000000e-01, %1
-  %3 = fcmp ult float %2, %0
-  ret i1 %3
-}
-
-; 1 occurrences:
-; arrow/optimized/value_parsing.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(float %0, float %1) #0 {
-entry:
-  %2 = fsub float 1.000000e+00, %1
-  %3 = fcmp oeq float %2, %0
+  %3 = fcmp ugt float %0, %2
   ret i1 %3
 }
 
@@ -57,7 +59,7 @@ entry:
 define i1 @func000000000000000b(float %0, float %1) #0 {
 entry:
   %2 = fsub float 1.000000e+00, %1
-  %3 = fcmp uge float %2, %0
+  %3 = fcmp ule float %0, %2
   ret i1 %3
 }
 

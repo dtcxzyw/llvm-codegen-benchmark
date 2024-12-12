@@ -1,5 +1,5 @@
 
-; 272 occurrences:
+; 276 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/aigCanon.c.ll
@@ -63,7 +63,6 @@
 ; linux/optimized/8139too.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/flow_dissector.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/libata-pmp.ll
@@ -71,7 +70,6 @@
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/pci-sysfs.ll
 ; linux/optimized/quota.ll
-; linux/optimized/sd.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/virtio_ring.ll
@@ -118,6 +116,7 @@
 ; luau/optimized/IrDump.cpp.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; lz4/optimized/lz4.c.ll
 ; memcached/optimized/memcached-hash.ll
 ; memcached/optimized/memcached_debug-hash.ll
@@ -253,7 +252,6 @@
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
 ; wireshark/optimized/packet-isakmp.c.ll
 ; wireshark/optimized/packet-linx.c.ll
-; wireshark/optimized/packet-netanalyzer.c.ll
 ; wireshark/optimized/packet-osmo_trx.c.ll
 ; wireshark/optimized/packet-pim.c.ll
 ; wireshark/optimized/packet-rtp.c.ll
@@ -272,6 +270,12 @@
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/sat_model_converter.cpp.ll
 ; z3/optimized/smt_conflict_resolution.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -279,7 +283,7 @@ entry:
   ret i1 %1
 }
 
-; 124 occurrences:
+; 125 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/tg3.ll
@@ -293,6 +297,7 @@ entry:
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll

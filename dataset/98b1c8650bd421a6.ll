@@ -78,7 +78,6 @@
 ; openmpi/optimized/osc_rdma_component.ll
 ; openmpi/optimized/osc_rdma_peer.ll
 ; openmpi/optimized/pml_cm.ll
-; openmpi/optimized/pml_monitoring_isend.ll
 ; openmpi/optimized/pml_monitoring_start.ll
 ; openmpi/optimized/pml_ob1_comm.ll
 ; openmpi/optimized/pml_ob1_isend.ll
@@ -99,7 +98,6 @@
 ; ruby/optimized/iseq.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wireshark/optimized/resolved_addresses_models.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
@@ -111,6 +109,8 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0) #0 {
 entry:

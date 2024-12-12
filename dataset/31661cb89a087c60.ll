@@ -12,7 +12,8 @@ entry:
   ret i8 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; linux/optimized/i8042.ll
 ; llvm/optimized/InstCombineMulDivRem.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; wireshark/optimized/dot11decrypt_util.c.ll

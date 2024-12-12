@@ -9,9 +9,8 @@ func0000000000000002:                   # @func0000000000000002
 	cmpl	$2048, %edi                     # imm = 0x800
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	$15, %edi
+func0000000000000028:                   # @func0000000000000028
 	xorl	%eax, %eax
-	cmpw	$11, %di
-	setb	%al
+	testb	$-16, %dil
+	sete	%al
 	retq

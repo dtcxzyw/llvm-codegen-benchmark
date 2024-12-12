@@ -9,7 +9,7 @@ define i64 @func0000000000000031(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -22,7 +22,7 @@ define i64 @func0000000000000030(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -35,7 +35,7 @@ define i64 @func0000000000000020(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -46,7 +46,7 @@ define i64 @func0000000000000011(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

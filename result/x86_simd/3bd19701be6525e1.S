@@ -65,3 +65,45 @@ func0000000000000004:                   # @func0000000000000004
 	vpcmpltub	.LCPI3_0(%rip), %xmm0, %k0
 	vpmovm2d	%k0, %ymm0
 	retq
+.LCPI4_0:
+	.byte	200                             # 0xc8
+	.byte	200                             # 0xc8
+	.byte	200                             # 0xc8
+	.byte	200                             # 0xc8
+	.byte	200                             # 0xc8
+	.byte	200                             # 0xc8
+	.byte	200                             # 0xc8
+	.byte	200                             # 0xc8
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleub	.LCPI4_0(%rip), %xmm0, %k0
+	vpmovm2d	%k0, %ymm0
+	retq
+.LCPI5_0:
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltub	.LCPI5_0(%rip), %xmm0, %k0
+	vpmovm2d	%k0, %ymm0
+	retq

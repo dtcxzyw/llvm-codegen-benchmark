@@ -1,21 +1,21 @@
 func0000000000000010:                   # @func0000000000000010
 	movl	%edx, %eax
-	leaq	(%rax,%rsi), %rcx
-	leaq	-50(%rax,%rsi), %rax
+	leaq	(%rsi,%rax), %rcx
+	leaq	-50(%rsi,%rax), %rax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
 func000000000000001d:                   # @func000000000000001d
 	movl	%edx, %eax
-	leaq	(%rax,%rsi), %rcx
-	leaq	-131042(%rax,%rsi), %rax
+	leaq	(%rsi,%rax), %rcx
+	leaq	-131042(%rsi,%rax), %rax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
 func000000000000001f:                   # @func000000000000001f
 	movl	%edx, %eax
-	leaq	(%rax,%rsi), %rcx
-	leaq	8(%rax,%rsi), %rax
+	leaq	(%rsi,%rax), %rcx
+	leaq	8(%rsi,%rax), %rax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq

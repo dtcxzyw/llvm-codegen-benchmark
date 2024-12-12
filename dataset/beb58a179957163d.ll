@@ -1,5 +1,22 @@
 
-; 31 occurrences:
+; 6 occurrences:
+; git/optimized/checkout.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/ohci-hcd.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; mitsuba3/optimized/x86rapass.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 8
+  %3 = and i32 %2, 15
+  %4 = shl nuw nsw i32 1, %3
+  %5 = or i32 %0, %4
+  ret i32 %5
+}
+
+; 30 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -11,7 +28,6 @@
 ; cvc5/optimized/Solver.cc.ll
 ; linux/optimized/8139too.ll
 ; linux/optimized/r8169_main.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -37,24 +53,7 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 255
   %4 = shl nuw i32 1, %3
-  %5 = or i32 %4, %0
-  ret i32 %5
-}
-
-; 6 occurrences:
-; git/optimized/checkout.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/ohci-hcd.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; mitsuba3/optimized/x86rapass.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 8
-  %3 = and i32 %2, 15
-  %4 = shl nuw nsw i32 1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

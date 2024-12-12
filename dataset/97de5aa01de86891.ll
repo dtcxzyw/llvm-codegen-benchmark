@@ -1,7 +1,10 @@
 
-; 35 occurrences:
+; 38 occurrences:
 ; abc/optimized/abcSymm.c.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/rational.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/chnsecal.ll
 ; icu/optimized/gregocal.ll
@@ -43,10 +46,9 @@ entry:
   ret i1 %3
 }
 
-; 287 occurrences:
+; 285 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcRpo.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
 ; abc/optimized/bmcFault.c.ll
@@ -74,6 +76,8 @@ entry:
 ; abc/optimized/sclUpsize.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/iterative_schur_complement_solver.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
@@ -155,7 +159,6 @@ entry:
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -163,7 +166,6 @@ entry:
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -252,7 +254,6 @@ entry:
 ; openmpi/optimized/ad_darray.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; openmpi/optimized/coll_basic_reduce.ll
-; openmpi/optimized/coll_sm_component.ll
 ; openmpi/optimized/common_ompio_aggregators.ll
 ; openmpi/optimized/libmpi_c_profile_la-dims_create.ll
 ; openmpi/optimized/nbc_ibcast.ll
@@ -339,7 +340,7 @@ entry:
   ret i1 %3
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/giaSif.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -360,7 +361,6 @@ entry:
 ; openmpi/optimized/coll_base_allreduce.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; openmpi/optimized/group_bitmap.ll
-; openmpi/optimized/group_strided.ll
 ; openssl/optimized/safe_math_test-bin-safe_math_test.ll
 ; redis/optimized/server.ll
 ; wireshark/optimized/byte_view_text.cpp.ll
@@ -417,10 +417,9 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; wireshark/optimized/packet-spnego.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
@@ -433,10 +432,20 @@ entry:
 ; openspiel/optimized/chess_common.cc.ll
 ; wireshark/optimized/packet-spnego.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %0, %1
-  %3 = icmp ult i32 %2, 257
+  %3 = icmp samesign ult i32 %2, 257
+  ret i1 %3
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-spnego.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = srem i32 %0, %1
+  %3 = icmp samesign ugt i32 %2, 256
   ret i1 %3
 }
 

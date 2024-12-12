@@ -1,5 +1,7 @@
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
 ; g2o/optimized/dquat2mat.cpp.ll
 ; g2o/optimized/isometry3d_gradients.cpp.ll
 ; opencv/optimized/calibration_handeye.cpp.ll

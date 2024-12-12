@@ -4,7 +4,7 @@
 	.long	4294967270                      # 0xffffffe6
 .LCPI0_2:
 	.long	15                              # 0xf
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}

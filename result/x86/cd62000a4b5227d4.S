@@ -1,9 +1,3 @@
-func0000000000000050:                   # @func0000000000000050
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	cmovgl	%esi, %eax
-	addl	%edi, %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	testl	%edx, %edx

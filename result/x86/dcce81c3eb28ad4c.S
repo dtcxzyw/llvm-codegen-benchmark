@@ -1,8 +1,9 @@
-func000000000000003a:                   # @func000000000000003a
-	movzwl	%si, %eax
-	leaq	8(%rdi,%rax,2), %rax
-	retq
 func0000000000000030:                   # @func0000000000000030
 	movzwl	%si, %eax
-	leaq	2(%rdi,%rax,2), %rax
+	shll	$4, %eax
+	leaq	24(%rdi,%rax), %rax
+	retq
+func000000000000003f:                   # @func000000000000003f
+	movzwl	%si, %eax
+	leaq	8(%rdi,%rax,2), %rax
 	retq

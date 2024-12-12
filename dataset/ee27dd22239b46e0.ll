@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i16 %1) #0 {
+define i1 @func000000000000018a(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32767
   %3 = icmp ne i16 %2, 0
@@ -31,7 +31,7 @@ entry:
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 128
   %3 = icmp eq i16 %2, 0
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 64
   %3 = icmp ne i16 %2, 0
@@ -62,7 +62,7 @@ entry:
 ; llvm/optimized/ExprEngineCXX.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0
@@ -89,7 +89,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4
   %3 = icmp eq i16 %2, 0
@@ -98,10 +98,9 @@ entry:
   ret i1 %5
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; linux/optimized/vmscan.ll
 ; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -154,7 +153,7 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2
   %3 = icmp eq i16 %2, 0

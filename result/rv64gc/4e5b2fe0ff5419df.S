@@ -19,7 +19,7 @@ func000000000000002a:                   # @func000000000000002a
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000000ff:                   # @func00000000000000ff
 	slli	a3, a1, 5
 	slli	a1, a1, 3
 	slli	a0, a0, 3
@@ -27,7 +27,7 @@ func00000000000000ea:                   # @func00000000000000ea
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000006a:                   # @func000000000000006a
+func000000000000007e:                   # @func000000000000007e
 	slli	a3, a1, 5
 	slli	a1, a1, 3
 	slli	a0, a0, 3

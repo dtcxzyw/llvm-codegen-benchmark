@@ -1,5 +1,5 @@
 
-; 233 occurrences:
+; 232 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -150,7 +150,6 @@
 ; oiio/optimized/tiffoutput.cpp.ll
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; opencv/optimized/samplers.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/arrayKlass.ll

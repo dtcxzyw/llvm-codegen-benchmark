@@ -1,6 +1,9 @@
 
-; 34 occurrences:
+; 37 occurrences:
 ; abc/optimized/sclUpsize.c.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -15,9 +18,9 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_velvia.c.ll
 ; faiss/optimized/partitioning.cpp.ll
-; gromacs/optimized/slanst.cpp.ll
 ; gromacs/optimized/slasd2.cpp.ll
 ; gromacs/optimized/slasd7.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; minetest/optimized/CCameraSceneNode.cpp.ll
@@ -39,12 +42,16 @@ define float @func0000000000000044(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %1, %2
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp olt float %4, %0
+  %5 = fcmp ogt float %0, %4
   %6 = select i1 %5, float %0, float %4
   ret float %6
 }
 
-; 55 occurrences:
+; 60 occurrences:
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/b3OptimizedBvh.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
@@ -69,6 +76,7 @@ entry:
 ; gromacs/optimized/gmx_mindist.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/msdf-error-correction.cpp.ll
 ; msdfgen/optimized/rasterization.cpp.ll
@@ -105,7 +113,7 @@ define float @func0000000000000022(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp ogt float %4, %0
+  %5 = fcmp olt float %0, %4
   %6 = select i1 %5, float %0, float %4
   ret float %6
 }
@@ -119,7 +127,7 @@ define float @func00000000000000ac(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ole float %1, %2
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp ole float %4, %0
+  %5 = fcmp oge float %0, %4
   %6 = select i1 %5, float %0, float %4
   ret float %6
 }
@@ -133,7 +141,7 @@ define float @func00000000000000ca(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oge float %1, %2
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp oge float %4, %0
+  %5 = fcmp ole float %0, %4
   %6 = select i1 %5, float %0, float %4
   ret float %6
 }
@@ -146,7 +154,7 @@ define float @func0000000000000024(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp olt float %4, %0
+  %5 = fcmp ogt float %0, %4
   %6 = select i1 %5, float %0, float %4
   ret float %6
 }
@@ -160,7 +168,7 @@ define float @func0000000000000042(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %1, %2
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp ogt float %4, %0
+  %5 = fcmp olt float %0, %4
   %6 = select i1 %5, float %0, float %4
   ret float %6
 }
@@ -172,7 +180,7 @@ define float @func000000000000002c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp ole float %4, %0
+  %5 = fcmp oge float %0, %4
   %6 = select i1 %5, float %0, float %4
   ret float %6
 }
@@ -185,7 +193,7 @@ define float @func00000000000000c2(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oge float %1, %2
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp ogt float %4, %0
+  %5 = fcmp olt float %0, %4
   %6 = select i1 %5, float %0, float %4
   ret float %6
 }

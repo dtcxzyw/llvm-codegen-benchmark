@@ -1,6 +1,6 @@
 
-%struct._zend_op.2678406 = type { ptr, %union._znode_op.2678407, %union._znode_op.2678407, %union._znode_op.2678407, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2678407 = type { i32 }
+%struct._zend_op.2791343 = type { ptr, %union._znode_op.2791344, %union._znode_op.2791344, %union._znode_op.2791344, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791344 = type { i32 }
 
 ; 3 occurrences:
 ; openjdk/optimized/methodData.ll
@@ -17,7 +17,7 @@ entry:
   ret i64 %7
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ConvergenceVerifier.cpp.ll
@@ -28,13 +28,12 @@ entry:
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TypePromotion.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
+; opencv/optimized/tf_importer.cpp.ll
 ; php/optimized/dce.ll
-; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct._zend_op.2678406, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct._zend_op.2791343, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = lshr exact i64 %5, 5

@@ -40,12 +40,6 @@ func0000000000000015:                   # @func0000000000000015
 	movl	%esi, %eax
 	imulq	%rcx, %rax
 	retq
-func000000000000002c:                   # @func000000000000002c
-	movl	%edx, %ecx
-	imulq	%rdi, %rcx
-	movl	%esi, %eax
-	imulq	%rcx, %rax
-	retq
 func000000000000003c:                   # @func000000000000003c
 	movl	%edx, %ecx
 	imulq	%rdi, %rcx

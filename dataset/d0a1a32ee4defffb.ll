@@ -25,6 +25,20 @@ entry:
   ret float %5
 }
 
+; 3 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
+; ocio/optimized/CDLOpCPU.cpp.ll
+; ocio/optimized/FileFormat3DL.cpp.ll
+; Function Attrs: nounwind
+define float @func0000000000000004(i1 %0, float %1) #0 {
+entry:
+  %2 = fcmp ogt float %1, 3.600000e+02
+  %3 = select i1 %2, float %1, float 3.600000e+02
+  %4 = fmul float %3, 0x3E80000000000000
+  %5 = select i1 %0, float 0x3E80000000000000, float %4
+  ret float %5
+}
+
 ; 1 occurrences:
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; Function Attrs: nounwind
@@ -34,19 +48,6 @@ entry:
   %3 = select i1 %2, float %1, float 0.000000e+00
   %4 = fmul float %3, 1.270000e+02
   %5 = select i1 %0, float 1.270000e+02, float %4
-  ret float %5
-}
-
-; 2 occurrences:
-; ocio/optimized/CDLOpCPU.cpp.ll
-; ocio/optimized/FileFormat3DL.cpp.ll
-; Function Attrs: nounwind
-define float @func0000000000000004(i1 %0, float %1) #0 {
-entry:
-  %2 = fcmp ogt float %1, 0.000000e+00
-  %3 = select i1 %2, float %1, float 0.000000e+00
-  %4 = fmul float %3, 0x3FCB367A00000000
-  %5 = select i1 %0, float 0x3FCB367A00000000, float %4
   ret float %5
 }
 

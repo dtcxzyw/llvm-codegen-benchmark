@@ -12,7 +12,7 @@
 ; openssl/optimized/libcrypto-shlib-conf_def.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %1 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
@@ -22,7 +22,7 @@ entry:
   ret ptr %7
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; casadi/optimized/cs_maxtrans.c.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -31,6 +31,7 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; icu/optimized/uresdata.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -61,7 +62,7 @@ entry:
 ; openjdk/optimized/vframe.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %1 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
@@ -76,13 +77,13 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -93,13 +94,13 @@ entry:
 ; bullet3/optimized/btMultiBodySphericalJointLimit.ll
 ; bullet3/optimized/btMultiBodySphericalJointMotor.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 6
   %4 = zext i32 %3 to i64
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw float, ptr %0, i64 %5
-  %7 = getelementptr nusw float, ptr %6, i64 %4
+  %7 = getelementptr nusw nuw float, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -120,9 +121,20 @@ entry:
   ret ptr %7
 }
 
-; 9 occurrences:
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
+; 1 occurrences:
+; icu/optimized/bytestriebuilder.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000050(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 7 occurrences:
 ; openblas/optimized/dgtsv.c.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dlasd2.c.ll
@@ -137,20 +149,7 @@ entry:
   %4 = getelementptr nusw double, ptr %0, i64 %3
   %5 = sext i32 %2 to i64
   %6 = getelementptr double, ptr %4, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 8
-  ret ptr %7
-}
-
-; 1 occurrences:
-; icu/optimized/bytestriebuilder.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000050(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = sext i32 %1 to i64
-  %6 = getelementptr i8, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 %4
+  %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
 

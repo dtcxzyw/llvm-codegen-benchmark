@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
 ; cvc5/optimized/proof.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
@@ -22,11 +22,12 @@
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -97,7 +98,7 @@ entry:
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

@@ -1,9 +1,3 @@
-func0000000000000011:                   # @func0000000000000011
-	leal	65531(%rdi), %ecx
-	leal	1(%rdi), %eax
-	cmpl	$5, %esi
-	cmovael	%ecx, %eax
-	retq
 func0000000000000019:                   # @func0000000000000019
 	xorl	%eax, %eax
 	testl	%esi, %esi
@@ -16,7 +10,7 @@ func0000000000000007:                   # @func0000000000000007
 	cmpl	$768, %esi                      # imm = 0x300
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	xorl	%eax, %eax
 	cmpl	$127, %esi
 	seta	%al

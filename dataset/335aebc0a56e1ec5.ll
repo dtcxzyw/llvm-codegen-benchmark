@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 45 occurrences:
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; graphviz/optimized/arrows.c.ll
 ; hermes/optimized/DateUtil.cpp.ll
@@ -25,7 +25,6 @@
 ; openjdk/optimized/os_perf_linux.ll
 ; openjdk/optimized/shenandoahAdaptiveHeuristics.ll
 ; openusd/optimized/math.cpp.ll
-; osqp/optimized/amd_info.c.ll
 ; postgres/optimized/costsize.ll
 ; quantlib/optimized/hestonblackvolsurface.ll
 ; sqlite/optimized/sqlite3.ll

@@ -18,7 +18,7 @@ entry:
   ret i64 %3
 }
 
-; 1287 occurrences:
+; 1284 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
@@ -89,7 +89,6 @@ entry:
 ; linux/optimized/mipi-disco-img.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nfs4xdr.ll
-; linux/optimized/nsconvert.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/sky2.ll
@@ -409,7 +408,6 @@ entry:
 ; llvm/optimized/ProvenanceAnalysisEvaluator.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
@@ -780,7 +778,6 @@ entry:
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/check_sat_result.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/cofactor_term_ite_tactic.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
@@ -1315,12 +1312,11 @@ entry:
   ret i64 %3
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/giaResub2.c.ll
 ; cpython/optimized/ceval.ll
 ; icu/optimized/tzfmt.ll
 ; linux/optimized/hw_breakpoint.ll
-; linux/optimized/intel_audio.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
@@ -1354,9 +1350,11 @@ entry:
   ret i64 %3
 }
 
-; 19 occurrences:
+; 21 occurrences:
 ; abc/optimized/sclBuffer.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; icu/optimized/ucmstate.ll
@@ -1383,7 +1381,8 @@ entry:
   ret i64 %3
 }
 
-; 137 occurrences:
+; 135 occurrences:
+; abc/optimized/abcPrint.c.ll
 ; abc/optimized/mapperTree.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/compress_fragment.c.ll
@@ -1399,9 +1398,9 @@ entry:
 ; git/optimized/rebase-interactive.ll
 ; git/optimized/sequencer.ll
 ; git/optimized/shallow.ll
+; gromacs/optimized/pdb2gmx.cpp.ll
 ; gromacs/optimized/xtc3.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
@@ -1448,7 +1447,6 @@ entry:
 ; mitsuba3/optimized/builder.cpp.ll
 ; nuttx/optimized/msginternal.c.ll
 ; opencv/optimized/arithm.cpp.ll
-; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
@@ -1477,7 +1475,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/yuv_scale.c.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/pcre2_match_data.ll
 ; php/optimized/pcre2_substitute.ll
 ; php/optimized/zend_ast.ll
 ; php/optimized/zend_persist.ll
@@ -1510,7 +1507,6 @@ entry:
 ; raylib/optimized/rcore.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; redis/optimized/t_zset.ll
-; slurm/optimized/ebpf.ll
 ; slurm/optimized/hostlist.ll
 ; soc-simulator/optimized/verilated.ll
 ; sqlite/optimized/sqlite3.ll
@@ -1542,13 +1538,12 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; git/optimized/delta-islands.ll
 ; llvm/optimized/LoopDeletion.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
-; opencv/optimized/edge_drawing.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i32 %0) #0 {
@@ -1559,7 +1554,7 @@ entry:
   ret i64 %3
 }
 
-; 186 occurrences:
+; 185 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
@@ -1723,7 +1718,6 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
-; qemu/optimized/hw_pci_shpc.c.ll
 ; qemu/optimized/tcg.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -1749,8 +1743,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i32 %0) #0 {
 entry:
-  %1 = shl nuw nsw i32 %0, 2
-  %2 = add nsw i32 %1, -4
+  %1 = shl nuw nsw i32 %0, 3
+  %2 = add nsw i32 %1, -64
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
@@ -1867,8 +1861,9 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/luckyFast16.c.ll
+; opencv/optimized/edge_drawing.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i32 %0) #0 {
 entry:
@@ -1899,6 +1894,17 @@ define i64 @func0000000000000009(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 3
   %2 = add i32 %1, -8
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; opencv/optimized/edge_drawing.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i32 %0) #0 {
+entry:
+  %1 = shl nuw i32 %0, 1
+  %2 = add nuw nsw i32 %1, 2
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }

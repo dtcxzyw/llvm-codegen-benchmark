@@ -1,29 +1,11 @@
 
-; 9 occurrences:
-; folly/optimized/CPUThreadPoolExecutor.cpp.ll
-; libquic/optimized/print.c.ll
-; linux/optimized/maple_tree.ll
-; nuttx/optimized/lib_mbrtowc.c.ll
-; openssl/optimized/libcrypto-lib-t_pkey.ll
-; openssl/optimized/libcrypto-shlib-t_pkey.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/faceVertex.cpp.ll
-; wolfssl/optimized/asn.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
-entry:
-  %2 = lshr i8 %1, 7
-  %3 = zext nneg i8 %2 to i32
-  %4 = add nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 23 occurrences:
+; 24 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libpng/optimized/pngwutil.c.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
@@ -47,7 +29,24 @@ define i32 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 7 occurrences:
+; folly/optimized/CPUThreadPoolExecutor.cpp.ll
+; libquic/optimized/print.c.ll
+; linux/optimized/maple_tree.ll
+; nuttx/optimized/lib_mbrtowc.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/faceVertex.cpp.ll
+; wolfssl/optimized/asn.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
+entry:
+  %2 = lshr i8 %1, 1
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -76,7 +75,7 @@ define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 3
   %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -88,7 +87,7 @@ define i32 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = lshr exact i8 %1, 6
   %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -100,7 +99,7 @@ define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = lshr exact i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -111,7 +110,7 @@ define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 7
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

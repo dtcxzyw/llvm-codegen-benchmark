@@ -43,8 +43,3 @@ func0000000000000014:                   # @func0000000000000014
 	fle.s	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
-	fmul.s	fa5, fa0, fa1
-	feq.s	a1, fa5, fa5
-	or	a0, a0, a1
-	ret

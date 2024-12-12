@@ -4,7 +4,7 @@
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/ifDec75.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000098(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %.not = icmp eq i64 %1, 0

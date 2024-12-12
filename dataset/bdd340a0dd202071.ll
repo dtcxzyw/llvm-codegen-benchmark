@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 27
@@ -33,7 +33,7 @@ entry:
 ; pbrt-v4/optimized/soac.cpp.ll
 ; sentencepiece/optimized/filesystem.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, -1
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; yalantinglibs/optimized/client.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, -1
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 15
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CalcSpillWeights.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, 1073741824

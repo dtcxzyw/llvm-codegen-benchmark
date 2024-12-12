@@ -1,5 +1,5 @@
 
-; 160 occurrences:
+; 159 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
@@ -105,7 +105,6 @@
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll

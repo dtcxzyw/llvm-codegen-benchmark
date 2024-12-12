@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; clamav/optimized/matcher.c.ll
 ; cpython/optimized/ceval.ll
 ; eastl/optimized/Int128_t.cpp.ll
@@ -8,7 +8,6 @@
 ; linux/optimized/extents.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/sock_reuseport.ll
 ; nghttp2/optimized/libevent-client.c.ll
 ; nix/optimized/json-to-value.ll
@@ -25,6 +24,8 @@
 ; openssl/optimized/libcrypto-lib-bn_prime.ll
 ; openssl/optimized/libcrypto-shlib-bn_prime.ll
 ; php/optimized/ir.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; wireshark/optimized/eax.c.ll
 ; wireshark/optimized/packet-cbor.c.ll
 ; wireshark/optimized/packet-p_mul.c.ll

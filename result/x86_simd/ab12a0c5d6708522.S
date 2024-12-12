@@ -1,9 +1,9 @@
 .LCPI0_0:
-	.long	6                               # 0x6
+	.long	3                               # 0x3
 .LCPI0_1:
-	.long	86400                           # 0x15180
+	.long	40                              # 0x28
 func0000000000000005:                   # @func0000000000000005
-	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [6,6,6,6]
+	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [3,3,3,3]
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmulld	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0

@@ -29,8 +29,8 @@
 define i1 @func0000000000000008(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ult i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -41,13 +41,12 @@ entry:
 define i1 @func0000000000000004(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 26 occurrences:
-; linux/optimized/csum-wrappers_64.ll
+; 23 occurrences:
 ; linux/optimized/devio.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/eventpoll.ll
@@ -61,8 +60,6 @@ entry:
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/read_write.ll
-; linux/optimized/readdir.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/scm.ll
 ; linux/optimized/select.ll
 ; linux/optimized/seq_clientmgr.ll
@@ -77,8 +74,8 @@ entry:
 define i1 @func0000000000000009(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ule i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp uge i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -91,12 +88,12 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ne i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ne i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 8 occurrences:
+; 12 occurrences:
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; openmpi/optimized/fbtl_posix_preadv.ll
@@ -105,12 +102,16 @@ entry:
 ; rust-analyzer-rs/optimized/xh6m92l5tmfbxs4.ll
 ; typst-rs/optimized/3ze8abiqj6g8qouh.ll
 ; typst-rs/optimized/5e0rue5wyvshgkgw.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9k0j7f35vt58mons3nxvubmtw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp eq i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -120,7 +121,7 @@ entry:
 define i1 @func0000000000000005(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp ule i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }

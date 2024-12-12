@@ -20,11 +20,11 @@
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/hash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000079(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000f9(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
-  %5 = icmp uge i64 %4, %3
+  %5 = icmp samesign uge i64 %4, %3
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }
@@ -35,7 +35,7 @@ entry:
 ; rocksdb/optimized/lru_cache.cc.ll
 ; z3/optimized/theory_bv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -48,7 +48,7 @@ entry:
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %1, 7
@@ -63,27 +63,28 @@ entry:
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 3
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; hermes/optimized/CFG.cpp.ll
+; openjdk/optimized/memnode.ll
 ; openmpi/optimized/libdatatype_reliable_la-opal_datatype_pack.ll
 ; openmpi/optimized/opal_datatype_pack.ll
 ; php/optimized/cdf.ll
 ; z3/optimized/nlsat_interval_set.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000079(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
-  %5 = icmp uge i64 %4, %3
+  %5 = icmp samesign uge i64 %4, %3
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }
@@ -93,7 +94,7 @@ entry:
 ; icu/optimized/numparse_affixes.ll
 ; php/optimized/escape_analysis.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000ec(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -108,11 +109,11 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 6
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }
@@ -120,11 +121,11 @@ entry:
 ; 1 occurrences:
 ; git/optimized/line-log.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000f4(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }
@@ -132,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/FormatToken.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %1, -1
@@ -145,7 +146,7 @@ entry:
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -157,7 +158,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/formattedval_iterimpl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1

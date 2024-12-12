@@ -23,13 +23,3 @@ func0000000000000029:                   # @func0000000000000029
 	andl	$1, %ecx
 	leal	(%rax,%rcx,2), %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	xorl	%ecx, %ecx
-	cmpl	$2, %esi
-	setae	%cl
-	notb	%dil
-	movzbl	%dil, %eax
-	andl	$1, %eax
-	shll	$8, %eax
-	orl	%ecx, %eax
-	retq

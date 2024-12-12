@@ -35,9 +35,34 @@ func00000000000000c7:                   # @func00000000000000c7
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
+	.quad	4                               # 0x4
+func0000000000000183:                   # @func0000000000000183
+	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm1, %k0
+	vextracti128	$1, %ymm0, %xmm1
+	vpextrq	$1, %xmm1, %rdx
+	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
+	mulxq	%rax, %rcx, %rcx
+	vmovq	%rcx, %xmm2
+	vmovq	%xmm1, %rdx
+	mulxq	%rax, %rcx, %rcx
+	vmovq	%rcx, %xmm1
+	vpunpcklqdq	%xmm2, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm2[0]
+	vpextrq	$1, %xmm0, %rdx
+	mulxq	%rax, %rcx, %rcx
+	vmovq	%rcx, %xmm2
+	vmovq	%xmm0, %rdx
+	mulxq	%rax, %rax, %rax
+	vmovq	%rax, %xmm0
+	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
+	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpsrlq	$3, %ymm0, %ymm0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI3_0:
 	.quad	-1000000000                     # 0xffffffffc4653600
-func0000000000000043:                   # @func0000000000000043
-	vpcmpltuq	.LCPI2_0(%rip){1to4}, %ymm1, %k0
+func0000000000000143:                   # @func0000000000000143
+	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm1, %k0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	shrq	$9, %rdx
@@ -63,14 +88,14 @@ func0000000000000043:                   # @func0000000000000043
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI3_0:
+.LCPI4_0:
 	.quad	-9223372036854775807            # 0x8000000000000001
-.LCPI3_1:
+.LCPI4_1:
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
 func00000000000000a7:                   # @func00000000000000a7
-	vpbroadcastq	.LCPI3_0(%rip), %ymm2   # ymm2 = [9223372036854775809,9223372036854775809,9223372036854775809,9223372036854775809]
+	vpbroadcastq	.LCPI4_0(%rip), %ymm2   # ymm2 = [9223372036854775809,9223372036854775809,9223372036854775809,9223372036854775809]
 	vpsrlq	$3, %ymm0, %ymm0
-	vpmullq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0
+	vpmullq	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0
 	vpcmpgtq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq

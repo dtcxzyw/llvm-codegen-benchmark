@@ -1,9 +1,32 @@
 
-; 2 occurrences:
-; openjdk/optimized/codeHeapState.ll
+; 1 occurrences:
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000d4(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = lshr i64 %0, %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = icmp samesign ult i64 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; qemu/optimized/block_qcow2-refcount.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = lshr i64 %0, %3
+  %5 = zext i32 %1 to i64
+  %6 = icmp samesign ult i64 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/codeHeapState.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %0, %3
@@ -12,19 +35,7 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; qemu/optimized/block_qcow2-bitmap.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = lshr i64 %0, %3
-  %5 = zext i32 %1 to i64
-  %6 = icmp ne i64 %4, %5
-  ret i1 %6
-}
-
-; 11 occurrences:
+; 10 occurrences:
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
@@ -35,27 +46,13 @@ entry:
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
-; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = icmp ult i64 %4, %5
-  ret i1 %6
-}
-
-; 2 occurrences:
-; linux/optimized/dw.ll
-; openjdk/optimized/heap.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = lshr i64 %0, %3
-  %5 = zext i32 %1 to i64
-  %6 = icmp ugt i64 %4, %5
   ret i1 %6
 }
 

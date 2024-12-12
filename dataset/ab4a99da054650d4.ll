@@ -1,9 +1,12 @@
 
-; 17 occurrences:
+; 20 occurrences:
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; libwebp/optimized/quant_enc.c.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; opencv/optimized/color_hsv.dispatch.cpp.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/freetype.cpp.ll
@@ -55,14 +58,15 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_indev.ll
 ; openusd/optimized/warped_motion.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %0, %1
-  %3 = add i32 %2, 128
-  %4 = ashr i32 %3, 4
+  %3 = add i32 %2, 32768
+  %4 = ashr i32 %3, 16
   ret i32 %4
 }
 

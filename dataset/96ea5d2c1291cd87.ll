@@ -79,14 +79,15 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 18
   %4 = and i32 %3, 1073479680
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   %7 = and i32 %6, 2147483647
   ret i32 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/ifDec07.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -105,7 +106,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 10
   %4 = and i32 %3, 31744
   %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = and i32 %6, 2147483647
   ret i32 %7
 }

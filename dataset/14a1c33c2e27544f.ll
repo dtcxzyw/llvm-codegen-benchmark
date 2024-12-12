@@ -46,11 +46,11 @@ entry:
 
 ; 18 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/rational.ll
 ; casadi/optimized/function.cpp.ll
 ; cpython/optimized/abstract.ll
 ; cpython/optimized/sre.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; qemu/optimized/accel_tcg_tcg-accel-ops-icount.c.ll
@@ -71,7 +71,8 @@ entry:
   ret i1 %3
 }
 
-; 24 occurrences:
+; 25 occurrences:
+; boost/optimized/rational.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
@@ -104,21 +105,15 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 3 occurrences:
 ; linux/optimized/blk-iocost.ll
-; openexr/optimized/chunk.c.ll
-; openusd/optimized/openexr-c.c.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
-; qemu/optimized/audio_audio.c.ll
-; quantlib/optimized/fixedlocalvolsurface.ll
-; quantlib/optimized/hestonslvfdmmodel.ll
-; quantlib/optimized/hestonslvmcmodel.ll
 ; rocksdb/optimized/rate_limiter.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %0, %1
-  %3 = icmp ugt i64 %2, 90
+  %3 = icmp samesign ugt i64 %2, 90
   ret i1 %3
 }
 
@@ -133,6 +128,21 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %0, %1
   %3 = icmp ult i64 %2, 131072
+  ret i1 %3
+}
+
+; 6 occurrences:
+; openexr/optimized/chunk.c.ll
+; openusd/optimized/openexr-c.c.ll
+; qemu/optimized/audio_audio.c.ll
+; quantlib/optimized/fixedlocalvolsurface.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
+; quantlib/optimized/hestonslvmcmodel.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv i64 %0, %1
+  %3 = icmp ugt i64 %2, 65536
   ret i1 %3
 }
 

@@ -10,13 +10,12 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 654
 	vmsleu.vx	v0, v8, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vadd.vi	v8, v8, -1
 	vand.vi	v8, v8, 3
-	vmseq.vi	v0, v8, 0
+	vmseq.vi	v0, v8, 1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	lui	a0, 1048569

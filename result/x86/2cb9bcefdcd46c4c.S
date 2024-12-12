@@ -1,4 +1,28 @@
-func0000000000000a54:                   # @func0000000000000a54
+func00000000000000b8:                   # @func00000000000000b8
+	movl	%esi, %eax
+	subl	%edx, %eax
+	subl	%esi, %edx
+	cmovll	%eax, %edx
+	cmpl	%edi, %edx
+	seta	%al
+	retq
+func00000000000000a8:                   # @func00000000000000a8
+	movl	%esi, %eax
+	subl	%edx, %eax
+	subl	%esi, %edx
+	cmovll	%eax, %edx
+	cmpl	%edi, %edx
+	seta	%al
+	retq
+func00000000000000aa:                   # @func00000000000000aa
+	movl	%esi, %eax
+	subl	%edx, %eax
+	subl	%esi, %edx
+	cmovll	%eax, %edx
+	cmpl	%edi, %edx
+	setg	%al
+	retq
+func00000000000014b4:                   # @func00000000000014b4
 	movl	%esi, %eax
 	subl	%edx, %eax
 	subl	%esi, %edx

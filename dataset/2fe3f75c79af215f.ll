@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; Function Attrs: nounwind
 define i16 @func00000000000000fe(i32 %0, i32 %1, i32 %2) #0 {
 entry:

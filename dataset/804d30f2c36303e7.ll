@@ -1,5 +1,5 @@
 
-; 385 occurrences:
+; 400 occurrences:
 ; abseil-cpp/optimized/log_entry_test.cc.ll
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -35,6 +35,21 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/numeric.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/cmCTest.cxx.ll
@@ -399,7 +414,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
 ; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
   %4 = sub nuw i64 %0, %1

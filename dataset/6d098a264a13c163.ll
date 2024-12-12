@@ -1,10 +1,25 @@
 
-; 13 occurrences:
+; 28 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; cpython/optimized/_zoneinfo.ll
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; icu/optimized/ucnv.ll
+; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
+; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
 ; php/optimized/ZendAccelerator.ll
@@ -21,11 +36,9 @@ entry:
   ret i64 %2
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; hyperscan/optimized/rose_build_engine_blob.cpp.ll
 ; hyperscan/optimized/rose_build_instructions.cpp.ll
-; llvm/optimized/APINotesWriter.cpp.ll
-; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; openusd/optimized/retainedDataSource.cpp.ll
 ; openusd/optimized/value.cpp.ll
 ; spike/optimized/socketif.ll

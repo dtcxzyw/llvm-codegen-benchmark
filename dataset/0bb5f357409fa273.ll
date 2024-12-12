@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 19 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/intel_dp_mst.ll
@@ -17,6 +17,8 @@
 ; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-smb-logon.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -26,7 +28,7 @@ entry:
   ret i32 %3
 }
 
-; 77 occurrences:
+; 75 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaMinLut.c.ll
@@ -81,13 +83,11 @@ entry:
 ; openssl/optimized/ectest-bin-ectest.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-lib-bn_mont.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-lib-srp_lib.ll
 ; openssl/optimized/libcrypto-lib-srp_vfy.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_mont.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-srp_lib.ll
 ; openssl/optimized/libcrypto-shlib-srp_vfy.ll

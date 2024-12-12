@@ -1,6 +1,7 @@
 
-; 103 occurrences:
+; 105 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; g2o/optimized/edge_se2.cpp.ll
@@ -103,11 +104,12 @@
 ; ruby/optimized/numeric.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, double -4.715000e+03, double -4.716000e+03
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

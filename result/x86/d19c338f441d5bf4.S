@@ -48,6 +48,11 @@ func0000000000000015:                   # @func0000000000000015
 	imull	%esi, %edx
 	leal	(%rdx,%rdi), %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	sarl	$8, %edx
+	imull	%esi, %edx
+	leal	(%rdx,%rdi), %eax
+	retq
 func0000000000000010:                   # @func0000000000000010
 	sarl	%edx
 	imull	%esi, %edx

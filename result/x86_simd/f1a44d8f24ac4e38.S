@@ -48,7 +48,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000040:                   # @func0000000000000040
 	vpbroadcastd	.LCPI4_0(%rip), %ymm3   # ymm3 = [1024,1024,1024,1024,1024,1024,1024,1024]
 	vpsubd	%ymm2, %ymm3, %ymm2
-	vpmulld	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
 	retq

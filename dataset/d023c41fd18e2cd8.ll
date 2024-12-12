@@ -1,5 +1,5 @@
 
-; 443 occurrences:
+; 442 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; coremark/optimized/core_list_join.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -298,7 +298,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll

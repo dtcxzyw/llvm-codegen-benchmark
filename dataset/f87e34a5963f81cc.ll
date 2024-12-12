@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 70 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -66,13 +66,17 @@
 ; rocksdb/optimized/hash.cc.ll
 ; smol-rs/optimized/2nf71p5qpqz0dmgo.ll
 ; smol-rs/optimized/5836b0ge3mikiq0d.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, 8320639771003045937
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %4, %1
-  %6 = xor i128 %5, %0
+  %5 = mul nuw i128 %1, %4
+  %6 = xor i128 %0, %5
   %7 = trunc i128 %6 to i64
   ret i64 %7
 }

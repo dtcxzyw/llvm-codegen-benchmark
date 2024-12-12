@@ -1,34 +1,23 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ushll	v1.4s, v1.4h, #0
-	ushll	v0.4s, v0.4h, #0
+	tst	w1, #0x1
 	mov	w8, #-400                       // =0xfffffe70
-	uzp1	v2.4s, v2.4s, v3.4s
-	dup	v3.4s, w8
-	shl	v1.4s, v1.4s, #31
-	shl	v0.4s, v0.4s, #31
-	cmlt	v1.4s, v1.4s, #0
-	cmlt	v0.4s, v0.4s, #0
-	bsl	v1.16b, v2.16b, v3.16b
-	bic	v1.16b, v1.16b, v0.16b
-	sub	v0.4s, v1.4s, v0.4s
+	csel	w8, w2, w8, ne
+	tst	w0, #0x1
+	csinc	w0, w8, wzr, eq
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushll	v1.4s, v1.4h, #0
-	ushll	v0.4s, v0.4h, #0
-	uzp1	v2.4s, v2.4s, v3.4s
-	shl	v1.4s, v1.4s, #31
-	shl	v0.4s, v0.4s, #31
-	cmlt	v1.4s, v1.4s, #0
-	cmge	v0.4s, v0.4s, #0
-	and	v1.16b, v2.16b, v1.16b
-	and	v0.16b, v1.16b, v0.16b
+	tst	w1, #0x1
+	csel	w8, w2, wzr, ne
+	tst	w0, #0x1
+	csel	w0, wzr, w8, ne
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	uzp1	v0.4s, v2.4s, v3.4s
+	mov	x0, x2
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

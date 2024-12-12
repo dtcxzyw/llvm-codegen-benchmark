@@ -21,11 +21,11 @@ define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4161536
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 38 occurrences:
+; 35 occurrences:
 ; cpython/optimized/compile.ll
 ; git/optimized/ewah_bitmap.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -45,17 +45,14 @@ entry:
 ; rust-analyzer-rs/optimized/11fzjzs7q1iz2s6j.ll
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; spike/optimized/cbo_inval.ll
-; spike/optimized/f128_classify.ll
 ; spike/optimized/f128_roundToInt.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f32_classify.ll
 ; spike/optimized/f32_roundToInt.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64.ll
 ; spike/optimized/f32_to_i64_r_minMag.ll
 ; spike/optimized/f32_to_ui64.ll
 ; spike/optimized/f32_to_ui64_r_minMag.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/f64_roundToInt.ll
 ; spike/optimized/f64_to_i32_r_minMag.ll
 ; spike/optimized/f64_to_i64_r_minMag.ll
@@ -69,7 +66,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2251799813685244
   %3 = icmp eq i64 %2, 4
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -80,24 +77,10 @@ entry:
 ; spike/optimized/cm_push.ll
 ; spike/optimized/vaeskf2_vi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 240
-  %3 = icmp ugt i64 %2, 96
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 4 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/f32_to_i64_r_minMag.ll
-; spike/optimized/f32_to_ui64_r_minMag.ll
-; spike/optimized/s_addMagsF32.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 2130706432
-  %3 = icmp ult i64 %2, 1258291200
+  %3 = icmp samesign ugt i64 %2, 96
   %4 = and i1 %3, %0
   ret i1 %4
 }

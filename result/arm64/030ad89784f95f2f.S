@@ -1,62 +1,30 @@
-func0000000000000030:                   // @func0000000000000030
+func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	ushll	v3.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	cmhi	v1.4s, v1.4s, v2.4s
-	cmhi	v0.4s, v0.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	movi	v1.8b, #1
-	xtn	v0.8b, v0.8h
-	and	v0.8b, v0.8b, v1.8b
+	cmp	w0, w1, uxth
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000010:                   // @func0000000000000010
+func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	ushll	v3.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	cmhi	v1.4s, v1.4s, v2.4s
-	cmhi	v0.4s, v0.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	movi	v1.8b, #1
-	xtn	v0.8b, v0.8h
-	and	v0.8b, v0.8b, v1.8b
+	cmp	w0, w1, uxth
+	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	ushll	v3.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	cmeq	v1.4s, v2.4s, v1.4s
-	cmeq	v0.4s, v3.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	movi	v1.8b, #1
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
-	and	v0.8b, v0.8b, v1.8b
+	cmp	w0, w1, uxth
+	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000058:                   // @func0000000000000058
 // %bb.0:                               // %entry
-	ushll	v3.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	cmeq	v1.4s, v2.4s, v1.4s
-	cmeq	v0.4s, v3.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	movi	v1.8b, #1
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
-	and	v0.8b, v0.8b, v1.8b
+	cmp	w0, w1, uxth
+	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
-	ushll	v3.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	cmhi	v1.4s, v2.4s, v1.4s
-	cmhi	v0.4s, v3.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	movi	v1.8b, #1
-	xtn	v0.8b, v0.8h
-	and	v0.8b, v0.8b, v1.8b
+	cmp	w0, w1, uxth
+	cset	w0, lo
 	ret
                                         // -- End function

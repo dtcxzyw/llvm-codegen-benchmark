@@ -57,7 +57,7 @@
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -8
   %4 = icmp ult i64 %3, -9
@@ -66,12 +66,15 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 6 occurrences:
 ; openjdk/optimized/zBarrierSetC2.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; tokenizers-rs/optimized/4vpw5vpiz5qnu5om.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1999999999
   %4 = icmp ult i64 %3, -2
@@ -80,10 +83,27 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/within_pointlike_geometry.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, -7
+  %4 = icmp ult i64 %3, -6
+  %5 = icmp eq ptr %0, %1
+  %6 = and i1 %5, %4
+  ret i1 %6
+}
+
+; 2 occurrences:
+; boost/optimized/area.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, -1
   %4 = icmp ult ptr %0, %1

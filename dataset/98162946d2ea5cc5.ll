@@ -1,10 +1,11 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/adler32.c.ll
 ; cmake/optimized/adler32.c.ll
 ; gromacs/optimized/adler32.c.ll
 ; libevent/optimized/http.c.ll
 ; libquic/optimized/adler32.c.ll
+; lightgbm/optimized/metadata.cpp.ll
 ; linux/optimized/intel_pstate.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -28,6 +29,7 @@ entry:
 }
 
 ; 94 occurrences:
+; boost/optimized/numeric.ll
 ; cpython/optimized/unicodedata.ll
 ; cpython/optimized/zlibmodule.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -60,7 +62,6 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; nix/optimized/util.ll
 ; openjdk/optimized/epsilonInitLogger.ll
@@ -125,13 +126,14 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 10
+  %3 = shl i64 %2, 1
   %4 = select i1 %0, i64 %1, i64 %3
   ret i64 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/pool_resource.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll

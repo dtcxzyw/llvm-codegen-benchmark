@@ -16,7 +16,7 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vcvtuqq2ps	%ymm1, %xmm1
-	vcmpneqps	%xmm0, %xmm1, %xmm0
+	vcmpneqps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func000000000000000c:                   # @func000000000000000c
@@ -31,7 +31,7 @@ func0000000000000012:                   # @func0000000000000012
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vcvtuqq2ps	%ymm1, %xmm1
-	vcmpeqps	%xmm0, %xmm1, %xmm0
+	vcmpeqps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000003:                   # @func0000000000000003

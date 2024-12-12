@@ -19,7 +19,7 @@ entry:
 ; openjdk/optimized/parse1.ll
 ; openjdk/optimized/reg_split.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sub nuw i32 %2, %0
@@ -32,7 +32,7 @@ entry:
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; openjdk/optimized/reg_split.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -68,7 +68,7 @@ entry:
 ; quantlib/optimized/ukraine.ll
 ; quantlib/optimized/unitedkingdom.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub nsw i32 %2, %0
@@ -84,7 +84,7 @@ entry:
 ; quantlib/optimized/italy.ll
 ; quantlib/optimized/sweden.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub nsw i32 %2, %0
@@ -101,18 +101,6 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
   %4 = and i32 %3, 65535
-  %5 = icmp ne i32 %4, 0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/syncookies.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = sub i32 %2, %0
-  %4 = and i32 %3, 254
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }

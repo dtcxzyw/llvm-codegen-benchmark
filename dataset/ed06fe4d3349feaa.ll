@@ -10,8 +10,10 @@ entry:
   ret ptr %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; cmake/optimized/huf_compress.c.ll
 ; openjdk/optimized/classFileParser.ll
+; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:

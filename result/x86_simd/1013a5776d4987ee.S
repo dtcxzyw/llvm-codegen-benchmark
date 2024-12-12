@@ -3,11 +3,6 @@ func000000000000003f:                   # @func000000000000003f
 	vpslld	$8, %ymm1, %ymm1
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
-func0000000000000000:                   # @func0000000000000000
-	vpslld	$4, %ymm1, %ymm2
-	vpslld	$8, %ymm1, %ymm1
-	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
-	retq
 func000000000000002f:                   # @func000000000000002f
 	vpslld	$24, %ymm1, %ymm2
 	vpslld	$8, %ymm1, %ymm1
@@ -19,6 +14,11 @@ func000000000000003b:                   # @func000000000000003b
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 func000000000000003d:                   # @func000000000000003d
+	vpslld	$6, %ymm1, %ymm2
+	vpslld	$4, %ymm1, %ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
+	retq
+func0000000000000000:                   # @func0000000000000000
 	vpslld	$6, %ymm1, %ymm2
 	vpslld	$4, %ymm1, %ymm1
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2

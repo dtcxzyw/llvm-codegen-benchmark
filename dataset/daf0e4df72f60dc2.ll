@@ -111,7 +111,7 @@
 define i32 @func000000000000003c(i128 %0, i128 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i128
-  %4 = mul nuw nsw i128 %3, %0
+  %4 = mul nuw nsw i128 %0, %3
   %5 = add i128 %4, %1
   %6 = trunc i128 %5 to i32
   ret i32 %6

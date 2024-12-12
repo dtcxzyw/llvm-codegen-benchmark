@@ -36,7 +36,7 @@
 	.zero	4,253
 .LCPI0_3:
 	.zero	4,2
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpternlogd	$168, .LCPI0_2(%rip){1to4}, %xmm2, %xmm1 # xmm1 = mem & (xmm1 | xmm2)
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpord	.LCPI0_3(%rip){1to4}, %xmm1, %xmm0

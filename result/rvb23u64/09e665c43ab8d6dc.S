@@ -8,6 +8,11 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	add	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -1
+	ret
 func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a1
 	add	a0, a0, a1

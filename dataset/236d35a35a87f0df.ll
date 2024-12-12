@@ -13,8 +13,8 @@ define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 7
   %4 = and i32 %3, 7
-  %5 = icmp ne i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp ne i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -34,20 +34,7 @@ define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 16777215
-  %5 = icmp eq i32 %4, %1
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; lief/optimized/psa_crypto.c.ll
-; linux/optimized/xhci-ring.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 16
-  %4 = and i32 %3, 63
-  %5 = icmp ult i32 %4, %1
+  %5 = icmp eq i32 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -59,7 +46,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 19
   %4 = and i32 %3, 4095
-  %5 = icmp slt i32 %4, %1
+  %5 = icmp sgt i32 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -71,7 +58,7 @@ define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 19
   %4 = and i32 %3, 4095
-  %5 = icmp sgt i32 %4, %1
+  %5 = icmp slt i32 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }

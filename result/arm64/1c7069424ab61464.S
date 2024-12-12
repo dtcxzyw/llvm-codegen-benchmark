@@ -1,21 +1,17 @@
 func0000000000000035:                   // @func0000000000000035
 // %bb.0:                               // %entry
-	shl	v0.4s, v0.4s, #16
-	sshr	v0.4s, v0.4s, #16
+	sxth	w0, w0
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	shl	v0.4s, v0.4s, #26
-	sshr	v0.4s, v0.4s, #26
+	sbfx	w0, w0, #0, #6
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	shll	v1.2d, v0.2s, #32
-	shll2	v0.2d, v0.4s, #32
-	sshr	v0.2d, v0.2d, #40
-	sshr	v1.2d, v1.2d, #40
-	uzp1	v0.4s, v1.4s, v0.4s
+                                        // kill: def $w0 killed $w0 def $x0
+	sbfx	x0, x0, #8, #24
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

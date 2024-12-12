@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/setup-bus.ll
 ; logos-rs/optimized/3ih0g5a6fbccjl2z.ll
+; lvgl/optimized/lv_tlsf.ll
 ; pyo3-rs/optimized/36bd5489ry9qsmb9.ll
 ; wasmtime-rs/optimized/1y39e8j6qsvzx17r.ll
 ; Function Attrs: nounwind

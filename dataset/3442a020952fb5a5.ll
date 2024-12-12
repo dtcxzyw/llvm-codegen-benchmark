@@ -19,18 +19,18 @@
 ; verilator/optimized/V3EmitCImp.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000b4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ult i32 %0, %4
   ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 23 occurrences:
+; 25 occurrences:
 ; abc/optimized/wlcWriteVer.c.ll
 ; abc/optimized/wlnWriteVer.c.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -39,6 +39,8 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; libpng/optimized/pngwutil.c.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -55,22 +57,22 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000b8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -82,11 +84,11 @@ entry:
 ; llvm/optimized/SemaOverload.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -95,11 +97,11 @@ entry:
 ; opencv/optimized/ts_func.cpp.ll
 ; redis/optimized/lolwut.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -117,40 +119,51 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = call i32 @llvm.abs.i32(i32 %3, i1 false)
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abc/optimized/wlcReadVer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ult i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call noundef i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ult i32 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f9(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = tail call noundef i32 @llvm.abs.i32(i32 %3, i1 true)
+  %5 = icmp samesign uge i32 %0, %4
   ret i1 %5
 }
 
@@ -162,7 +175,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = call i32 @llvm.abs.i32(i32 %3, i1 false)
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -174,7 +187,7 @@ define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 false)
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 

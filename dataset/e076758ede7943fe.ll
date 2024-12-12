@@ -1,16 +1,14 @@
 
-; 344 occurrences:
+; 349 occurrences:
 ; abc/optimized/abcHaig.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/cutMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/giaRex.c.ll
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/mapperCut.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -111,6 +109,8 @@
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/train.cpp.ll
+; lvgl/optimized/lv_sdl_mouse.ll
+; lvgl/optimized/lv_sdl_window.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -338,6 +338,11 @@
 ; wireshark/optimized/proto_hier_stats.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll

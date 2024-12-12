@@ -1,56 +1,56 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	cltq
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func000000000000002b:                   # @func000000000000002b
+func000000000000004b:                   # @func000000000000004b
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	cltq
-	cmpq	%rdi, %rax
-	setle	%al
+	cmpq	%rax, %rdi
+	setge	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	$8, %eax
 	shlxl	%esi, %eax, %eax
 	cltq
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	cltq
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	cltq
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	$3, %eax
 	shlxl	%esi, %eax, %eax
 	cltq
-	cmpq	%rdi, %rax
-	seta	%al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	cltq
-	cmpq	%rdi, %rax
-	seta	%al
-	retq
-func0000000000000028:                   # @func0000000000000028
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	cltq
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setb	%al
+	retq
+func0000000000000044:                   # @func0000000000000044
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	cltq
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
+func0000000000000048:                   # @func0000000000000048
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	cltq
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

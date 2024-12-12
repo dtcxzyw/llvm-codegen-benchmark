@@ -1,12 +1,12 @@
-func000000000000000d:                   # @func000000000000000d
-	andl	$7, %esi
-	subl	%edi, %esi
-	leal	3(%rsi), %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	andl	$-4, %esi
 	subl	%edi, %esi
 	leal	-4(%rsi), %eax
+	retq
+func000000000000000d:                   # @func000000000000000d
+	andl	$7, %esi
+	subl	%edi, %esi
+	leal	3(%rsi), %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	andl	$2040, %esi                     # imm = 0x7F8

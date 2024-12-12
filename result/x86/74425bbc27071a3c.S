@@ -8,11 +8,6 @@ func0000000000000005:                   # @func0000000000000005
 	seta	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpl	%edx, %esi
-	setbe	%al
-	andb	%dil, %al
-	retq
 func000000000000000b:                   # @func000000000000000b
 	cmpl	%edx, %esi
 	setl	%al

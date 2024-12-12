@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 79 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -20,9 +20,7 @@
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/InlineCost.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/outline2_rasterizer.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -39,7 +37,6 @@
 ; openblas/optimized/dlalsa.c.ll
 ; openblas/optimized/dlasda.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
-; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; opencv/optimized/matrix_iterator.cpp.ll
 ; opencv/optimized/reduce_layer.cpp.ll
@@ -91,10 +88,11 @@ entry:
   ret i64 %5
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/numeric.ll
 ; clamav/optimized/str.c.ll
 ; clamav/optimized/upack.c.ll
 ; darktable/optimized/introspection_highlights.c.ll

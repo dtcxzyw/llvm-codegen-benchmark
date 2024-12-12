@@ -7,7 +7,7 @@ func000000000000000c:                   # @func000000000000000c
 	negq	%rax
 	retq
 func000000000000000f:                   # @func000000000000000f
-	shrq	$13, %rdi
-	decl	%edi
-	imulq	$8168, %rdi, %rax               # imm = 0x1FE8
+	shrq	$16, %rdi
+	incl	%edi
+	imulq	$100, %rdi, %rax
 	retq

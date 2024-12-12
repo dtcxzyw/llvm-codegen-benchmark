@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 21 occurrences:
 ; rust-analyzer-rs/optimized/1pxyofhmeataj0qk.ll
 ; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
 ; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
@@ -19,11 +19,13 @@
 ; rust-analyzer-rs/optimized/a1gz87jxvbvnc32.ll
 ; rust-analyzer-rs/optimized/lkt0vc36jo6l130.ll
 ; velox/optimized/Expressions.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = mul i64 %3, -7070675565921424023
   %5 = lshr i64 %4, 47
   ret i64 %5
@@ -42,7 +44,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = mul i64 %3, 5871781006564002453
   %5 = lshr i64 %4, 57
   ret i64 %5

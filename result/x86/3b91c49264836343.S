@@ -5,7 +5,7 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func0000000000000007:                   # @func0000000000000007
 	andl	$8, %esi
-	leal	49(%rsi,%rdi), %eax
+	leal	49(%rdi,%rsi), %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movzwl	%si, %eax

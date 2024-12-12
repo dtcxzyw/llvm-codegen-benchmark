@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000a0:                   # @func00000000000000a0
+func0000000000000120:                   # @func0000000000000120
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpcmpltub	.LCPI0_0(%rip), %xmm1, %k0
@@ -109,10 +109,10 @@ func0000000000000051:                   # @func0000000000000051
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
-	.byte	251                             # 0xfb
-	.byte	251                             # 0xfb
-	.byte	251                             # 0xfb
-	.byte	251                             # 0xfb
+	.byte	253                             # 0xfd
+	.byte	253                             # 0xfd
+	.byte	253                             # 0xfd
+	.byte	253                             # 0xfd
 	.zero	1
 	.zero	1
 	.zero	1
@@ -126,6 +126,46 @@ func0000000000000051:                   # @func0000000000000051
 	.zero	1
 	.zero	1
 .LCPI4_1:
+	.byte	254                             # 0xfe
+	.byte	254                             # 0xfe
+	.byte	254                             # 0xfe
+	.byte	254                             # 0xfe
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000022:                   # @func0000000000000022
+	vpaddb	.LCPI4_0(%rip), %xmm1, %xmm1
+	vpcmpltub	.LCPI4_1(%rip), %xmm1, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI5_0:
+	.byte	251                             # 0xfb
+	.byte	251                             # 0xfb
+	.byte	251                             # 0xfb
+	.byte	251                             # 0xfb
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI5_1:
 	.byte	3                               # 0x3
 	.byte	3                               # 0x3
 	.byte	3                               # 0x3
@@ -143,46 +183,6 @@ func0000000000000051:                   # @func0000000000000051
 	.zero	1
 	.zero	1
 func0000000000000023:                   # @func0000000000000023
-	vpaddb	.LCPI4_0(%rip), %xmm1, %xmm1
-	vpcmpltub	.LCPI4_1(%rip), %xmm1, %k0
-	vpmovm2q	%k0, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
-	retq
-.LCPI5_0:
-	.byte	253                             # 0xfd
-	.byte	253                             # 0xfd
-	.byte	253                             # 0xfd
-	.byte	253                             # 0xfd
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI5_1:
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-func00000000000000a2:                   # @func00000000000000a2
 	vpaddb	.LCPI5_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI5_1(%rip), %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -222,7 +222,7 @@ func00000000000000a2:                   # @func00000000000000a2
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000022:                   # @func0000000000000022
+func00000000000001a2:                   # @func00000000000001a2
 	vpaddb	.LCPI6_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI6_1(%rip), %xmm1, %k0
 	vpmovm2q	%k0, %ymm1

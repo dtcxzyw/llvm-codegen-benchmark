@@ -78,14 +78,24 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/kitSop.c.ll
 ; abc/optimized/mvcLits.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %0, 1
+  %4 = select i1 %3, i1 %2, i1 false
+  %5 = select i1 %4, i32 %0, i32 %1
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; postgres/optimized/procarray.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %0, 1
+  %3 = icmp ugt i32 %0, 2
   %4 = select i1 %3, i1 %2, i1 false
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5

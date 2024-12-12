@@ -17,5 +17,5 @@ func0000000000000003:                   # @func0000000000000003
 	li	a2, -4
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 6
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret

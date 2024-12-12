@@ -5,7 +5,6 @@
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -16,6 +15,7 @@
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
+; boost/optimized/src.ll
 ; cpython/optimized/difradix2.ll
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
 ; grpc/optimized/grpc_tls_crl_provider.cc.ll
@@ -163,7 +163,7 @@ define i128 @func0000000000000004(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %4, %0
+  %5 = mul nuw i128 %0, %4
   %6 = lshr i128 %5, 64
   ret i128 %6
 }
@@ -175,7 +175,7 @@ define i128 @func0000000000000000(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul i128 %4, %0
+  %5 = mul i128 %0, %4
   %6 = lshr i128 %5, 64
   ret i128 %6
 }
@@ -189,7 +189,7 @@ define i128 @func0000000000000014(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %4, %0
+  %5 = mul nuw i128 %0, %4
   %6 = lshr i128 %5, 64
   ret i128 %6
 }

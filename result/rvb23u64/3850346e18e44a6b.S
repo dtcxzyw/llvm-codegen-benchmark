@@ -24,14 +24,6 @@ func0000000000000009:                   # @func0000000000000009
 	slliw	a0, a0, 20
 	or	a0, a0, a1
 	ret
-func0000000000000047:                   # @func0000000000000047
-	sext.w	a1, a1
-	sltiu	a1, a1, 6
-	xori	a1, a1, 1
-	slliw	a1, a1, 5
-	slliw	a0, a0, 6
-	or	a0, a0, a1
-	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a1, a1
 	snez	a1, a1

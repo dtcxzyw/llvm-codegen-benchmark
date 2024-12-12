@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	4503599627370494                # 0xffffffffffffe
+	.quad	9223372036854775792             # 0x7ffffffffffffff0
 func0000000000000003:                   # @func0000000000000003
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpsrlq	$12, %ymm0, %ymm0
+	vpsllq	$3, %ymm0, %ymm0
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI1_0:

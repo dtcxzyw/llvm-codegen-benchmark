@@ -1,20 +1,20 @@
 .LCPI0_0:
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
-	.short	32768                           # 0x8000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
+	.short	16384                           # 0x4000
 func0000000000000002:                   # @func0000000000000002
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1

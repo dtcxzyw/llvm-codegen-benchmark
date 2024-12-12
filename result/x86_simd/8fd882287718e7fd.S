@@ -53,5 +53,5 @@ func0000000000000023:                   # @func0000000000000023
 	vpcmpnleud	.LCPI4_0(%rip){1to4}, %xmm1, %k1
 	vpbroadcastq	.LCPI4_1(%rip), %ymm1   # ymm1 = [9,9,9,9]
 	vpbroadcastq	.LCPI4_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [10,10,10,10]
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq

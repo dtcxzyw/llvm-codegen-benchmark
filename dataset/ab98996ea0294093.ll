@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -51,7 +51,6 @@
 ; linux/optimized/cstate.ll
 ; linux/optimized/page_alloc.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0) #0 {

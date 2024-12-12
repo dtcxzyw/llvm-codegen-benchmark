@@ -27,9 +27,8 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/fair.ll
-; linux/optimized/head64.ll
 ; linux/optimized/kallsyms.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; Function Attrs: nounwind
@@ -42,9 +41,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/dmar.ll
-; linux/optimized/head64.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:

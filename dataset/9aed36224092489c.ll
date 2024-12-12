@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/RISCVOptWInstrs.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; Function Attrs: nounwind

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	255                             # 0xff
-func0000000000000c08:                   # @func0000000000000c08
+func0000000000001808:                   # @func0000000000001808
 	vpxor	%xmm3, %xmm3, %xmm3
 	vextracti128	$1, %ymm0, %xmm4
 	vpextrq	$1, %xmm4, %rax
@@ -35,7 +35,7 @@ func0000000000000c08:                   # @func0000000000000c08
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000c01:                   # @func0000000000000c01
+func0000000000001801:                   # @func0000000000001801
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2

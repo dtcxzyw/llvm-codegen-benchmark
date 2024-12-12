@@ -4,13 +4,13 @@ func000000000000000a:                   # @func000000000000000a
 	neg	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addw	a0, a0, a1
 	bgtz	a0, .LBB1_2
 	li	a0, 16
 .LBB1_2:                                # %entry
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addw	a0, a0, a1
 	lui	a1, 2
 	addiw	a1, a1, 1809

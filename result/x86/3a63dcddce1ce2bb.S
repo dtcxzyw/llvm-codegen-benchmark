@@ -1,32 +1,44 @@
-func0000000000000086:                   # @func0000000000000086
+func0000000000000107:                   # @func0000000000000107
 	leaq	-16(%rdi), %rax
 	testq	%rdi, %rdi
 	cmoveq	%rdi, %rax
 	addq	$16, %rax
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000187:                   # @func0000000000000187
+	leaq	16(%rdi), %rax
+	testq	%rdi, %rdi
+	cmoveq	%rdi, %rax
+	addq	$16, %rax
+	retq
+func0000000000000186:                   # @func0000000000000186
+	leaq	16(%rdi), %rax
+	testq	%rdi, %rdi
+	cmoveq	%rdi, %rax
+	addq	$-16, %rax
+	retq
+func0000000000000104:                   # @func0000000000000104
 	leaq	-16(%rdi), %rax
 	testq	%rdi, %rdi
 	cmoveq	%rdi, %rax
 	addq	$64, %rax
 	retq
-func0000000000000087:                   # @func0000000000000087
+func0000000000000106:                   # @func0000000000000106
 	leaq	-24(%rdi), %rax
+	testq	%rdi, %rdi
+	cmoveq	%rdi, %rax
+	addq	$-32, %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	leaq	64(%rdi), %rax
 	testq	%rdi, %rdi
 	cmoveq	%rdi, %rax
 	addq	$56, %rax
 	retq
-func00000000000000c7:                   # @func00000000000000c7
-	leaq	8(%rdi), %rax
+func0000000000000184:                   # @func0000000000000184
+	leaq	616(%rdi), %rax
 	testq	%rdi, %rdi
 	cmoveq	%rdi, %rax
-	addq	$300, %rax                      # imm = 0x12C
-	retq
-func0000000000000006:                   # @func0000000000000006
-	leaq	-616(%rdi), %rax
-	testq	%rdi, %rdi
-	cmoveq	%rdi, %rax
-	addq	$16, %rax
+	addq	$-616, %rax                     # imm = 0xFD98
 	retq
 func0000000000000004:                   # @func0000000000000004
 	leaq	1(%rdi), %rax

@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orl	$1, %edx
 	testb	$1, %dil
 	cmovneq	%rsi, %rdx

@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/saigPhase.c.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/key_map.cc.ll
@@ -16,6 +16,7 @@
 ; protobuf/optimized/extension_set.cc.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
 ; sentencepiece/optimized/extension_set.cc.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

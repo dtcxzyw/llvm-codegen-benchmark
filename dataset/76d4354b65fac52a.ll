@@ -1,9 +1,8 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; clamav/optimized/chmd.c.ll
 ; curl/optimized/libcurl_la-tftp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; faiss/optimized/IndexLattice.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/constraint_gpu_helpers.cpp.ll
@@ -17,7 +16,9 @@
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; lightgbm/optimized/metadata.cpp.ll
 ; linux/optimized/backend.ll
+; linux/optimized/intel_pstate.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_math.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/svm.cpp.ll

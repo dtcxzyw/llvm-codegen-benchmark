@@ -33,7 +33,7 @@
 	.byte	30                              # 0x1e
 .LCPI0_1:
 	.long	2                               # 0x2
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	vmovdqa	.LCPI0_0(%rip), %ymm3           # ymm3 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
 	vpermi2b	%ymm2, %ymm1, %ymm3
 	vpor	%ymm0, %ymm3, %ymm0
@@ -76,7 +76,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	.byte	30                              # 0x1e
 .LCPI1_1:
 	.long	536936448                       # 0x20010000
-func00000000000000fc:                   # @func00000000000000fc
+func00000000000001ec:                   # @func00000000000001ec
 	vmovdqa	.LCPI1_0(%rip), %ymm3           # ymm3 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
 	vpermi2b	%ymm2, %ymm1, %ymm3
 	vpor	%ymm0, %ymm3, %ymm0
@@ -119,7 +119,7 @@ func00000000000000fc:                   # @func00000000000000fc
 	.byte	30                              # 0x1e
 .LCPI2_1:
 	.long	536936448                       # 0x20010000
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vmovdqa	.LCPI2_0(%rip), %ymm3           # ymm3 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
 	vpermi2b	%ymm2, %ymm1, %ymm3
 	vpor	%ymm0, %ymm3, %ymm0
@@ -129,7 +129,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	retq
 .LCPI3_0:
 	.long	1114112                         # 0x110000
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003e1:                   # @func00000000000003e1
 	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
 	vpslld	$6, %ymm1, %ymm1
 	vpternlogd	$254, %ymm2, %ymm0, %ymm1 # ymm1 = ymm1 | ymm0 | ymm2
@@ -170,17 +170,17 @@ func00000000000001f1:                   # @func00000000000001f1
 	.byte	28                              # 0x1c
 	.byte	29                              # 0x1d
 	.byte	30                              # 0x1e
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	vmovdqa	.LCPI4_0(%rip), %ymm3           # ymm3 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
 	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpor	%ymm0, %ymm3, %ymm0
+	vpor	%ymm3, %ymm0, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI5_0:
 	.long	1114113                         # 0x110001
-func00000000000001fc:                   # @func00000000000001fc
+func00000000000003ec:                   # @func00000000000003ec
 	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
 	vpslld	$6, %ymm1, %ymm1
 	vpternlogd	$254, %ymm2, %ymm0, %ymm1 # ymm1 = ymm1 | ymm0 | ymm2
@@ -190,7 +190,7 @@ func00000000000001fc:                   # @func00000000000001fc
 	retq
 .LCPI6_0:
 	.long	1114112                         # 0x110000
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000003f4:                   # @func00000000000003f4
 	vpslld	$6, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vpcmpltud	.LCPI6_0(%rip){1to8}, %ymm0, %k0
@@ -199,7 +199,7 @@ func00000000000001f4:                   # @func00000000000001f4
 	retq
 .LCPI7_0:
 	.long	64975                           # 0xfdcf
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000003f8:                   # @func00000000000003f8
 	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
 	vpslld	$6, %ymm1, %ymm1
 	vpternlogd	$254, %ymm2, %ymm0, %ymm1 # ymm1 = ymm1 | ymm0 | ymm2

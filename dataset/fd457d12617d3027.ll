@@ -6,15 +6,14 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 15
   %4 = and i32 %3, 524288
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = shl i32 %1, 16
   %7 = or i32 %5, %6
   ret i32 %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; glslang/optimized/Constant.cpp.ll
-; gromacs/optimized/vals16.c.ll
 ; linux/optimized/intel_crt.ll
 ; minetest/optimized/objdef.cpp.ll
 ; openjdk/optimized/ad_x86.ll
@@ -23,7 +22,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 24
   %4 = and i32 %3, 2130706432
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = shl i32 %0, 31
   %7 = or disjoint i32 %6, %5
   ret i32 %7
@@ -59,7 +58,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nuw nsw i32 %1, 28
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -92,7 +91,7 @@ define i32 @func000000000000002f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
   %4 = and i32 %3, 251658240
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nuw nsw i32 %1, 8
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -142,17 +141,16 @@ define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 15
   %4 = and i32 %3, 393216
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nuw nsw i32 %1, 12
   %7 = or disjoint i32 %5, %6
   ret i32 %7
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/msatClause.c.ll
 ; abc/optimized/rwrLib.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; graphviz/optimized/actions.c.ll
@@ -175,7 +173,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = and i32 %3, 2
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl i32 %1, 20
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -203,7 +201,7 @@ define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 18
   %4 = and i32 %3, 1835008
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = shl nuw nsw i32 %1, 6
   %7 = or i32 %5, %6
   ret i32 %7
@@ -216,7 +214,7 @@ define i32 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nuw i32 %1, 24
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -229,7 +227,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 18
   %4 = and i32 %3, 1073479680
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl i32 %1, 30
   %7 = or i32 %5, %6
   ret i32 %7
@@ -243,7 +241,7 @@ define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = and i32 %3, 16711680
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nuw i32 %1, 31
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -272,7 +270,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 13
   %4 = and i32 %3, 16384
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nuw nsw i32 %1, 13
   %7 = or i32 %5, %6
   ret i32 %7
@@ -285,7 +283,7 @@ define i32 @func0000000000000013(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 12
   %4 = and i32 %3, 2093056
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl i32 %1, 22
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -306,13 +304,26 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 16
+  %4 = and i32 %3, 16711680
+  %5 = or i32 %0, %4
+  %6 = shl nuw i32 %1, 24
+  %7 = or i32 %5, %6
+  ret i32 %7
+}
+
+; 1 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = and i32 %3, 2
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nsw i32 %1, 2
   %7 = or disjoint i32 %5, %6
   ret i32 %7

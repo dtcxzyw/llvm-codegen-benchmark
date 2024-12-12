@@ -34,27 +34,27 @@ func0000000000000002:                   # @func0000000000000002
 	vzeroupper
 	retq
 .LCPI2_0:
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-func0000000000000010:                   # @func0000000000000010
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+	.short	49152                           # 0xc000
+func000000000000000c:                   # @func000000000000000c
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
-	vpcmpnleuw	.LCPI2_0(%rip), %ymm0, %k1
+	vpcmpltw	.LCPI2_0(%rip), %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

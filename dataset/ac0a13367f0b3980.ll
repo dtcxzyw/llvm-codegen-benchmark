@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; bullet3/optimized/btMultiBodyDynamicsWorld.ll
+; 3 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cpython/optimized/floatobject.ll
 ; ruby/optimized/bignum.ll
@@ -15,14 +14,46 @@ entry:
   ret ptr %6
 }
 
-; 93 occurrences:
+; 26 occurrences:
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
 ; casadi/optimized/ipqp.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; hdf5/optimized/H5Tconv.c.ll
-; icu/optimized/unisetspan.ll
 ; libwebp/optimized/ssim_sse2.c.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
+; minetest/optimized/CImageWriterPNG.cpp.ll
+; mitsuba3/optimized/assembler.cpp.ll
+; nori/optimized/nanovg.c.ll
+; openblas/optimized/dgemm_incopy.c.ll
+; openblas/optimized/sgemm_incopy.c.ll
+; openmpi/optimized/ad_read_coll.ll
+; openmpi/optimized/ad_write_coll.ll
+; openmpi/optimized/common_monitoring.ll
+; openssl/optimized/libcrypto-lib-pvkfmt.ll
+; openssl/optimized/libcrypto-shlib-pvkfmt.ll
+; openssl/optimized/loader_attic-dso-pvkfmt.ll
+; openusd/optimized/stbImage.cpp.ll
+; osqp/optimized/amd_1.c.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; php/optimized/compact_literals.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define ptr @func00000000000002aa(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 %0
+  %3 = getelementptr nusw i8, ptr %2, i64 %0
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 72 occurrences:
+; icu/optimized/unisetspan.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -90,87 +121,18 @@ entry:
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; minetest/optimized/CImageLoaderPNG.cpp.ll
-; minetest/optimized/CImageWriterPNG.cpp.ll
-; mitsuba3/optimized/assembler.cpp.ll
-; nori/optimized/nanovg.c.ll
-; openblas/optimized/dgemm_incopy.c.ll
-; openblas/optimized/sgemm_incopy.c.ll
-; openmpi/optimized/ad_write_coll.ll
-; openmpi/optimized/common_monitoring.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
-; openusd/optimized/stbImage.cpp.ll
-; osqp/optimized/amd_1.c.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
-; php/optimized/compact_literals.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000002aa(i64 %0, ptr %1) #0 {
+define ptr @func00000000000003ff(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 %0
-  %3 = getelementptr nusw i8, ptr %2, i64 %0
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 2 occurrences:
-; openmpi/optimized/ad_read_coll.ll
-; openmpi/optimized/ad_write_coll.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr i32, ptr %1, i64 %0
-  %3 = getelementptr i32, ptr %2, i64 %0
-  %4 = getelementptr i32, ptr %3, i64 %0
-  %5 = getelementptr nusw i32, ptr %4, i64 %0
-  %6 = getelementptr nusw i32, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 2 occurrences:
-; openmpi/optimized/ad_read_coll.ll
-; openmpi/optimized/ad_write_coll.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr i32, ptr %1, i64 %0
-  %3 = getelementptr i32, ptr %2, i64 %0
-  %4 = getelementptr nusw i32, ptr %3, i64 %0
-  %5 = getelementptr nusw i32, ptr %4, i64 %0
-  %6 = getelementptr nusw i32, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openmpi/optimized/ad_write_coll.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr i32, ptr %1, i64 %0
-  %3 = getelementptr i32, ptr %2, i64 %0
-  %4 = getelementptr i32, ptr %3, i64 %0
-  %5 = getelementptr i32, ptr %4, i64 %0
-  %6 = getelementptr nusw i32, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openmpi/optimized/ad_write_coll.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000aa(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr i32, ptr %1, i64 %0
-  %3 = getelementptr nusw i32, ptr %2, i64 %0
-  %4 = getelementptr nusw i32, ptr %3, i64 %0
-  %5 = getelementptr nusw i32, ptr %4, i64 %0
-  %6 = getelementptr nusw i32, ptr %5, i64 %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

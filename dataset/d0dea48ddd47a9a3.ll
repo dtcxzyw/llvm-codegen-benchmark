@@ -5,7 +5,7 @@
 ; ncnn/optimized/innerproduct_x86_f16c.cpp.ll
 ; ncnn/optimized/innerproduct_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 16
   %not. = xor i1 %1, true
@@ -19,7 +19,7 @@ entry:
 ; git/optimized/unpack-trees.ll
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %not. = xor i1 %1, true

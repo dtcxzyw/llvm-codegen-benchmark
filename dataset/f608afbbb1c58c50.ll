@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 55 occurrences:
 ; assimp/optimized/Subdivision.cpp.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/archive_read_disk_posix.c.ll
@@ -8,6 +8,7 @@
 ; hwloc/optimized/lstopo-lstopo-draw.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
 ; hwloc/optimized/topology-linux.ll
+; hwloc/optimized/topology-xml.ll
 ; icu/optimized/edits.ll
 ; icu/optimized/number_compact.ll
 ; icu/optimized/util.ll
@@ -20,10 +21,12 @@
 ; linux/optimized/ptp_chardev.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/Gnu.cpp.ll
+; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/Parser.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; ncnn/optimized/deconvolution.cpp.ll
@@ -50,6 +53,8 @@
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/qffplra_tactic.cpp.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i32 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -59,7 +64,7 @@ entry:
   ret i1 %5
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; clamav/optimized/cabd.c.ll
 ; cpython/optimized/lexer.ll
 ; eastl/optimized/TestRandom.cpp.ll
@@ -72,7 +77,6 @@ entry:
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
-; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; openblas/optimized/dgesvd.c.ll
@@ -104,14 +108,13 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; bullet3/optimized/btConvexHull.ll
 ; cpython/optimized/_decimal.ll
 ; csmith/optimized/FunctionInvocation.cpp.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
-; openblas/optimized/daxpy.c.ll
 ; opencv/optimized/pointcloud.cpp.ll
 ; qemu/optimized/block_vpc.c.ll
 ; Function Attrs: nounwind
@@ -223,20 +226,16 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 10 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
 ; git/optimized/color.ll
-; glslang/optimized/ParseHelper.cpp.ll
 ; gromacs/optimized/deflate.c.ll
-; gromacs/optimized/mrcdensitymapheader.cpp.ll
 ; hwloc/optimized/lstopo-lstopo-text.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-text.ll
 ; libquic/optimized/deflate.c.ll
-; linux/optimized/nl80211.ll
 ; llvm/optimized/TokenLexer.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; regex-rs/optimized/1hv7a9vv5ulvjrv1.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i32 %0, i1 %1, i1 %2) #0 {
@@ -247,11 +246,10 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cpython/optimized/optimizer.ll
 ; icu/optimized/vtzone.ll
 ; libquic/optimized/logging.cc.ll
-; linux/optimized/openclose.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; postgres/optimized/interval.ll
 ; Function Attrs: nounwind
@@ -259,6 +257,29 @@ define i1 @func0000000000000014(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 true, i1 %2
   %4 = icmp sgt i32 %0, 1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; gromacs/optimized/mrcdensitymapheader.cpp.ll
+; linux/optimized/nl80211.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 100000
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openblas/optimized/daxpy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i32 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %1, i1 true, i1 %2
+  %4 = icmp samesign ult i32 %0, 10001
   %5 = or i1 %4, %3
   ret i1 %5
 }

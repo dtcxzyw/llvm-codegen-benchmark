@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 83 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
@@ -19,7 +19,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
@@ -81,6 +80,9 @@
 ; tev/optimized/main.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i64 %0) #0 {
 entry:

@@ -3,19 +3,19 @@ func0000000000000000:                   # @func0000000000000000
 	shll	$6, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andl	$32767, %esi                    # imm = 0x7FFF
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	andl	$32767, %esi                    # imm = 0x7FFF
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andl	$1, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	leal	(%rsi,%rsi), %eax
 	addq	%rdi, %rax
 	retq

@@ -1,9 +1,9 @@
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	imull	%edx, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	imull	%edx, %esi
 	cmpl	%edi, %esi
 	setl	%al

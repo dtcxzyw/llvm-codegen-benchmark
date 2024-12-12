@@ -6,7 +6,7 @@
 define i32 @func000000000000001c(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp une double %0, %2
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = sext i1 %4 to i32
   %6 = fptosi double %0 to i32
   %7 = add i32 %5, %6
@@ -22,7 +22,7 @@ entry:
 define i32 @func000000000000001d(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp une double %0, %2
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = sext i1 %4 to i32
   %6 = fptosi double %0 to i32
   %7 = add nsw i32 %5, %6

@@ -1,25 +1,19 @@
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	shrl	$6, %edx
 	shlq	$11, %rdx
 	leaq	2048(%rsi,%rdx), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func00000000000001a1:                   # @func00000000000001a1
-	shrl	%edx
-	leaq	16(%rsi,%rdx), %rax
-	cmpq	%rdi, %rax
-	sete	%al
-	retq
-func00000000000001a4:                   # @func00000000000001a4
-	shrl	%edx
-	leaq	16(%rsi,%rdx), %rax
-	cmpq	%rdi, %rax
-	seta	%al
-	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	shrl	$2, %edx
 	leaq	-1(%rsi,%rdx), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
+	retq
+func00000000000003c4:                   # @func00000000000003c4
+	shrl	$3, %edx
+	leaq	-8(%rsi,%rdx), %rax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

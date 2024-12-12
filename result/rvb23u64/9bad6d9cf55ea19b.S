@@ -12,6 +12,13 @@ func0000000000000006:                   # @func0000000000000006
 	or	a0, a0, a1
 	slliw	a0, a0, 30
 	ret
+func0000000000000051:                   # @func0000000000000051
+	andi	a2, a2, 128
+	czero.eqz	a1, a1, a2
+	czero.nez	a0, a0, a2
+	or	a0, a0, a1
+	slliw	a0, a0, 24
+	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a2, a2, 8
 	czero.eqz	a1, a1, a2

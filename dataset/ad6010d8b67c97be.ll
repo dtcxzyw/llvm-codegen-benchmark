@@ -65,7 +65,7 @@ entry:
   %3 = select i1 %2, i64 16, i64 4
   %4 = icmp slt i64 %1, 128
   %5 = select i1 %4, i64 %1, i64 %3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

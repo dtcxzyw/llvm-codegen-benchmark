@@ -1,5 +1,5 @@
 
-; 430 occurrences:
+; 429 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcIvy.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/crc32.c.ll
+; abc/optimized/cuddSat.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dchChoice.c.ll
 ; abc/optimized/dchSat.c.ll
@@ -35,8 +36,8 @@
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
+; boost/optimized/core.ll
 ; c3c/optimized/asm_target.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; cpython/optimized/hamt.ll
@@ -45,7 +46,6 @@
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; folly/optimized/CacheLocality.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/type1.c.ll
@@ -262,7 +262,6 @@
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
 ; llvm/optimized/ProvenanceAnalysis.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
@@ -390,7 +389,6 @@
 ; pcg-cpp/optimized/make-partytrick.cpp.ll
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
 ; pcg-cpp/optimized/use-partytrick.cpp.ll
-; php/optimized/engine_combinedlcg.ll
 ; php/optimized/engine_mt19937.ll
 ; php/optimized/softmagic.ll
 ; postgres/optimized/hashfunc.ll
@@ -405,7 +403,6 @@
 ; qemu/optimized/migration_dirtyrate.c.ll
 ; quantlib/optimized/burley2020sobolrsg.ll
 ; quickjs/optimized/quickjs.ll
-; rand-rs/optimized/3wentbx1vl0iwznb.ll
 ; raylib/optimized/rcore.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/server.ll
@@ -430,6 +427,8 @@
 ; z3/optimized/fpa_decl_plugin.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

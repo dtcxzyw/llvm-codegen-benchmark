@@ -32,9 +32,3 @@ func0000000000000054:                   # @func0000000000000054
 	sh1add	a0, a0, a1
 	addiw	a0, a0, -48
 	ret
-func0000000000000015:                   # @func0000000000000015
-	zext.h	a1, a1
-	sh2add	a0, a0, a0
-	sh1add	a0, a0, a1
-	addiw	a0, a0, -48
-	ret

@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	add	a1, a1, a0
 	czero.eqz	a0, a1, a0
 	ret

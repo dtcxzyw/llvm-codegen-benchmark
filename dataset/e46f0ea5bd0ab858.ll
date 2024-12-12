@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 16 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
@@ -7,14 +7,11 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/jdarith.c.ll
 ; libjpeg-turbo/optimized/jdphuff.c.ll
-; libquic/optimized/custom_extensions.c.ll
 ; linux/optimized/ahci.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/rsutils.ll
 ; llvm/optimized/Function.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/jdphuff.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; re2/optimized/prog.cc.ll
@@ -24,21 +21,20 @@ define i16 @func0000000000000010(i16 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = trunc i32 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/cgroup-v1.ll
 ; linux/optimized/cgroup.ll
-; linux/optimized/he.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(i16 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc i32 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
@@ -57,7 +53,7 @@ define i16 @func000000000000001c(i16 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc nuw i32 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
@@ -70,18 +66,17 @@ define i16 @func000000000000001e(i16 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc nuw nsw i32 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/trees.c.ll
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/trees.c.ll
 ; gromacs/optimized/trees.c.ll
 ; libquic/optimized/trees.c.ll
 ; linux/optimized/deftree.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
@@ -89,7 +84,7 @@ define i16 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 2, %1
   %3 = trunc i32 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 

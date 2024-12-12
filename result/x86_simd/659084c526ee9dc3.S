@@ -21,7 +21,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vpmovq2m	%ymm0, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

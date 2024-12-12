@@ -12,7 +12,11 @@ entry:
   ret i1 %7
 }
 
-; 18 occurrences:
+; 21 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
 ; entt/optimized/any.cpp.ll
 ; entt/optimized/meta_any.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -30,7 +34,6 @@ entry:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000888(double %0, double %1, double %2) #0 {
 entry:

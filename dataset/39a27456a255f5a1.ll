@@ -1,10 +1,10 @@
 
-%struct.ge_cached.2519218 = type { [10 x i32], [10 x i32], [10 x i32], [10 x i32] }
-%struct.NCQTransferState.2595511 = type { ptr, ptr, ptr, %struct.QEMUSGList.2595527, %struct.BlockAcctCookie.2595525, i32, i64, i8, i8, i8, i8, i8 }
-%struct.QEMUSGList.2595527 = type { ptr, i32, i32, i64, ptr, ptr }
-%struct.BlockAcctCookie.2595525 = type { i64, i64, i32 }
+%struct.ge_cached.2634118 = type { [10 x i32], [10 x i32], [10 x i32], [10 x i32] }
+%struct.NCQTransferState.2709092 = type { ptr, ptr, ptr, %struct.QEMUSGList.2709108, %struct.BlockAcctCookie.2709106, i32, i64, i8, i8, i8, i8, i8 }
+%struct.QEMUSGList.2709108 = type { ptr, i32, i32, i64, ptr, ptr }
+%struct.BlockAcctCookie.2709106 = type { i64, i64, i32 }
 
-; 34 occurrences:
+; 37 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/dauTree.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -38,13 +38,16 @@
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll
 ; ripgrep-rs/optimized/3aycb5gygqxgk68e.ll
 ; ripgrep-rs/optimized/3bctup5kmnkujhz5.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw [8 x %struct.ge_cached.2519218], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [8 x %struct.ge_cached.2634118], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -60,7 +63,7 @@ define ptr @func0000000000000004(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 3
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr [32 x %struct.NCQTransferState.2595511], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [32 x %struct.NCQTransferState.2709092], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

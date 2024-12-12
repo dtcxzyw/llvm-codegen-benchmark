@@ -33,7 +33,7 @@ define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

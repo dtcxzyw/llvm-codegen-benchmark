@@ -5,7 +5,7 @@
 ; slurm/optimized/parse_time.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -127
   %4 = select i1 %0, i32 %1, i32 %3

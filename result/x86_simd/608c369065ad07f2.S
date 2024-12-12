@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	1                               # 0x1
-func0000000000000181:                   # @func0000000000000181
+func0000000000000381:                   # @func0000000000000381
 	vpabsd	%ymm2, %ymm2
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpcmpnleud	%ymm3, %ymm2, %k1

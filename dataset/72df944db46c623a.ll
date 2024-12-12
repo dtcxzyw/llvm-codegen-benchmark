@@ -18,7 +18,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -68,15 +68,14 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 3
   %4 = shl nuw nsw i32 1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDec.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/acecMult.c.ll
 ; abc/optimized/acecTree.c.ll
@@ -113,7 +112,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -127,7 +126,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 7
   %4 = shl nuw nsw i32 1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -143,7 +142,7 @@ entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

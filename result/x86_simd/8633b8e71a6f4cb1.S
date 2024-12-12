@@ -6,11 +6,3 @@ func0000000000000065:                   # @func0000000000000065
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
-.LCPI1_0:
-	.quad	86400                           # 0x15180
-func0000000000000067:                   # @func0000000000000067
-	vpmovq2m	%ymm0, %k1
-	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
-	vpmovqd	%ymm0, %xmm0
-	vzeroupper
-	retq

@@ -11,7 +11,7 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 .LCPI1_0:
 	.quad	4294967296                      # 0x100000000
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$17, %ymm1, %ymm2, %ymm1        # ymm1 = ymm1[0],ymm2[1,2,3],ymm1[4],ymm2[5,6,7],ymm1[8],ymm2[9,10,11],ymm1[12],ymm2[13,14,15]
 	vptestmq	%ymm1, %ymm1, %k1

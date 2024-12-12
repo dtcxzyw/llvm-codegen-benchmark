@@ -11,7 +11,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 2147483647
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 

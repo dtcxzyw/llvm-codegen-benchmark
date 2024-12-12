@@ -14,7 +14,8 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/src.ll
 ; libquic/optimized/stack_trace.cc.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CoreEngine.cpp.ll

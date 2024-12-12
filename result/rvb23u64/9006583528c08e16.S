@@ -25,17 +25,23 @@ func0000000000000042:                   # @func0000000000000042
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
+func0000000000000024:                   # @func0000000000000024
+	flt.d	a0, fa1, fa2
+	fmv.d.x	fa5, zero
+	flt.d	a1, fa5, fa0
+	and	a0, a0, a1
+	ret
 func0000000000000047:                   # @func0000000000000047
 	flt.d	a0, fa2, fa1
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
-.LCPI5_0:
+.LCPI6_0:
 	.quad	0x4009220092718f51              # double 3.1416026535897932
 func000000000000002a:                   # @func000000000000002a
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
+	lui	a0, %hi(.LCPI6_0)
+	fld	fa5, %lo(.LCPI6_0)(a0)
 	flt.d	a0, fa1, fa2
 	fle.d	a1, fa0, fa5
 	and	a0, a0, a1

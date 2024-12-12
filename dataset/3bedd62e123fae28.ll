@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
 ; cmake/optimized/cmQtAutoGenGlobalInitializer.cxx.ll
@@ -36,12 +36,13 @@
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
-  %4 = and i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

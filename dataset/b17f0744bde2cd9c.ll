@@ -79,7 +79,7 @@ define float @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp une float %2, 0.000000e+00
   %4 = select i1 %3, float %1, float 2.000000e+00
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 
@@ -109,6 +109,19 @@ entry:
   ret float %5
 }
 
+; 3 occurrences:
+; darktable/optimized/introspection_tonemap.cc.ll
+; meshlab/optimized/glarea.cpp.ll
+; raylib/optimized/rcore.c.ll
+; Function Attrs: nounwind
+define float @func0000000000000005(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp ugt float %2, 0.000000e+00
+  %4 = select i1 %3, float %1, float 0xC02BA18AA0000000
+  %5 = fmul float %4, %0
+  ret float %5
+}
+
 ; 2 occurrences:
 ; pbrt-v4/optimized/interaction.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
@@ -117,19 +130,7 @@ define float @func0000000000000006(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp one float %2, 0x7FF0000000000000
   %4 = select i1 %3, float %1, float 0.000000e+00
-  %5 = fmul float %4, %0
-  ret float %5
-}
-
-; 2 occurrences:
-; meshlab/optimized/glarea.cpp.ll
-; raylib/optimized/rcore.c.ll
-; Function Attrs: nounwind
-define float @func0000000000000005(float %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp ugt float %2, 0.000000e+00
-  %4 = select i1 %3, float %1, float 0xBF50624DE0000000
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 
@@ -140,7 +141,7 @@ define float @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %2, 1.000000e+00
   %4 = select i1 %3, float %1, float 1.000000e+00
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

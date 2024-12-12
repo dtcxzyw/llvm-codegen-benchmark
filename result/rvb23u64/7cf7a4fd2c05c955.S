@@ -10,7 +10,7 @@ func00000000000000a5:                   # @func00000000000000a5
 	fle.d	a0, fa0, fa1
 	xori	a0, a0, 1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000144:                   # @func0000000000000144
 	sext.w	a0, a0
 	li	a1, 4
 	bltu	a0, a1, .LBB1_2

@@ -5,21 +5,14 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edx, %edx
 	sete	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
-	leal	1(%rsi), %eax
-	xorl	%edx, %edx
-	divl	%edi
-	cmpl	$32768, %edx                    # imm = 0x8000
-	setb	%al
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	14(%rsi), %eax
 	xorl	%edx, %edx
 	divl	%edi
 	testl	%edx, %edx
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leal	1(%rsi), %eax
 	xorl	%edx, %edx
 	divl	%edi
@@ -33,7 +26,7 @@ func000000000000000c:                   # @func000000000000000c
 	testl	%edx, %edx
 	setne	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	leal	1(%rsi), %eax
 	xorl	%edx, %edx
 	divl	%edi

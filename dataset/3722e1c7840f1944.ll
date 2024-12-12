@@ -1,6 +1,7 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; assimp/optimized/HL1MDLLoader.cpp.ll
+; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll

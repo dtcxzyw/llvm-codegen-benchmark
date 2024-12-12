@@ -16,10 +16,11 @@ func0000000000000000:                   # @func0000000000000000
 	vorpd	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI2_0:
-	.quad	128                             # 0x80
+	.quad	4096                            # 0x1000
 func0000000000000002:                   # @func0000000000000002
 	vpslld	$31, %xmm2, %xmm2
-	vpmovd2m	%xmm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%xmm3, %xmm2, %k1
 	vorpd	%ymm1, %ymm0, %ymm0
 	vorpd	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq

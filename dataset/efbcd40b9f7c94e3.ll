@@ -20,7 +20,7 @@ define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = sitofp i64 %0 to double
   %2 = fptosi double %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 

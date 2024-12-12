@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a11(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %.neg = sext i1 %3 to i32
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a01(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001401(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %.neg = sext i1 %3 to i32
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a0a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000140a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = zext i1 %3 to i32
@@ -44,7 +44,7 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a1a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000142a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = zext i1 %3 to i32
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/coll_base_allreduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c11(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001821(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %.neg = sext i1 %3 to i32
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/plane.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c1a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000182a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32

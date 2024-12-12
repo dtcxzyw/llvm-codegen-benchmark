@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
@@ -20,7 +20,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -29,7 +28,7 @@
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 8388608
   %3 = shl nuw i32 1, %0

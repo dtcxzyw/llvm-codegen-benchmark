@@ -8,7 +8,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %.neg = shl nsw i64 -1, %2
-  %3 = and i64 %.neg, %0
+  %3 = and i64 %0, %.neg
   ret i64 %3
 }
 
@@ -19,7 +19,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967288
   %.neg = shl nsw i64 -1, %2
-  %3 = and i64 %.neg, %0
+  %3 = and i64 %0, %.neg
   ret i64 %3
 }
 

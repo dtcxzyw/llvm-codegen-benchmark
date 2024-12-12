@@ -24,9 +24,31 @@ func0000000000000006:                   # @func0000000000000006
 	not	a0, a0
 	and	a0, a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	sltiu	a1, a1, 8
+	not	a0, a0
+	and	a0, a0, a1
+	ret
+func000000000000001c:                   # @func000000000000001c
+	addi	a1, a1, -3
+	snez	a1, a1
+	or	a0, a0, a1
+	ret
 func000000000000000a:                   # @func000000000000000a
 	slti	a1, a1, 0
 	xori	a1, a1, 1
 	not	a0, a0
 	and	a0, a0, a1
+	ret
+.LCPI8_0:
+	.quad	99999999999999999               # 0x16345785d89ffff
+func0000000000000018:                   # @func0000000000000018
+	lui	a2, %hi(.LCPI8_0)
+	ld	a2, %lo(.LCPI8_0)(a2)
+	sltu	a1, a2, a1
+	or	a0, a0, a1
+	ret
+func0000000000000011:                   # @func0000000000000011
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret

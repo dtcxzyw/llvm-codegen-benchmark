@@ -1,5 +1,5 @@
 
-; 169 occurrences:
+; 180 occurrences:
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
@@ -7,6 +7,7 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/formatter.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cvc5/optimized/alethe_post_processor.cpp.ll
@@ -20,6 +21,7 @@
 ; git/optimized/merge-ort.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; icu/optimized/alphaindex.ll
+; icu/optimized/anytrans.ll
 ; icu/optimized/choicfmt.ll
 ; icu/optimized/coleitr.ll
 ; icu/optimized/collationbuilder.ll
@@ -28,14 +30,18 @@
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/collationsets.ll
 ; icu/optimized/cpdtrans.ll
+; icu/optimized/datamap.ll
 ; icu/optimized/dayperiodrules.ll
 ; icu/optimized/dbgutil.ll
 ; icu/optimized/decimfmt.ll
+; icu/optimized/derb.ll
 ; icu/optimized/dtitvfmt.ll
 ; icu/optimized/dtitvinf.ll
 ; icu/optimized/dtptngen.ll
+; icu/optimized/emojiprops.ll
 ; icu/optimized/extradata.ll
 ; icu/optimized/filteredbrk.ll
+; icu/optimized/filterednormalizer2.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/gencnval.ll
 ; icu/optimized/gendict.ll
@@ -49,6 +55,8 @@
 ; icu/optimized/nfrs.ll
 ; icu/optimized/nfrule.ll
 ; icu/optimized/nfsubs.ll
+; icu/optimized/normalizer2.ll
+; icu/optimized/normalizer2impl.ll
 ; icu/optimized/number_affixutils.ll
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/number_longnames.ll
@@ -85,6 +93,7 @@
 ; icu/optimized/uconv.ll
 ; icu/optimized/uitercollationiterator.ll
 ; icu/optimized/uniset.ll
+; icu/optimized/uniset_closure.ll
 ; icu/optimized/uniset_props.ll
 ; icu/optimized/unistr.ll
 ; icu/optimized/unistr_case.ll
@@ -100,6 +109,7 @@
 ; icu/optimized/util_props.ll
 ; icu/optimized/uts46.ll
 ; icu/optimized/vtzone.ll
+; icu/optimized/wrtxml.ll
 ; icu/optimized/xmlparser.ll
 ; libevent/optimized/event.c.ll
 ; libphonenumber/optimized/phonenumbermatcher_test.cc.ll
@@ -126,6 +136,7 @@
 ; llvm/optimized/TpiHashing.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll

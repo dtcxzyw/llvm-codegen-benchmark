@@ -1,5 +1,5 @@
 
-; 137 occurrences:
+; 135 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -68,8 +68,6 @@
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -141,7 +139,7 @@
 define i32 @func0000000000000013(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = and i32 %3, 63
   %5 = sub nuw nsw i32 64, %4
   ret i32 %5
@@ -153,7 +151,7 @@ entry:
 define i32 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = and i32 %3, 1023
   %5 = sub nuw nsw i32 1024, %4
   ret i32 %5

@@ -6,22 +6,12 @@ func0000000000000018:                   # @func0000000000000018
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	2139095040                      # 0x7f800000
-.LCPI1_1:
-	.long	1065353216                      # 0x3f800000
-func0000000000000008:                   # @func0000000000000008
-	vpandd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
-	vpcmpltd	.LCPI1_1(%rip){1to4}, %xmm0, %k0
-	vpmovm2q	%k0, %ymm0
-	vpsrlq	$63, %ymm0, %ymm0
-	retq
-.LCPI2_0:
 	.long	448                             # 0x1c0
-.LCPI2_1:
+.LCPI1_1:
 	.long	128                             # 0x80
 func0000000000000002:                   # @func0000000000000002
-	vpandd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
-	vpcmpeqd	.LCPI2_1(%rip){1to4}, %xmm0, %k0
+	vpandd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
+	vpcmpeqd	.LCPI1_1(%rip){1to4}, %xmm0, %k0
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq

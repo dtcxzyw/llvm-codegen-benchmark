@@ -27,9 +27,19 @@ func000000000000002c:                   # @func000000000000002c
 	vminps	%zmm0, %zmm1, %zmm0
 	retq
 .LCPI3_0:
+	.long	0x42b40000                      # float 90
+.LCPI3_1:
+	.long	0x3f800000                      # float 1
+func0000000000000022:                   # @func0000000000000022
+	vbroadcastss	.LCPI3_0(%rip), %zmm1   # zmm1 = [9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1,9.0E+1]
+	vmaxps	%zmm0, %zmm1, %zmm0
+	vbroadcastss	.LCPI3_1(%rip), %zmm1   # zmm1 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
+	vmaxps	%zmm0, %zmm1, %zmm0
+	retq
+.LCPI4_0:
 	.long	0x3f800000                      # float 1
 func00000000000000ca:                   # @func00000000000000ca
-	vbroadcastss	.LCPI3_0(%rip), %zmm1   # zmm1 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
+	vbroadcastss	.LCPI4_0(%rip), %zmm1   # zmm1 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vminps	%zmm0, %zmm1, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpnleps	%zmm1, %zmm0, %k1

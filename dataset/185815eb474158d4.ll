@@ -18,22 +18,22 @@
 ; stb/optimized/stb_sprintf.c.ll
 ; zfp/optimized/bitstream.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 5
   %3 = and i64 %2, 288230376151711743
-  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = and i64 %2, 17179869180
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

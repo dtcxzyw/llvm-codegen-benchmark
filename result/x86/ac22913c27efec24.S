@@ -19,10 +19,3 @@ func0000000000000031:                   # @func0000000000000031
 	subq	%rdi, %rax
 	shrq	$5, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	movq	%rsi, %rax
-	shlq	$3, %rdx
-	subq	%rdx, %rax
-	subq	%rdi, %rax
-	shrq	$3, %rax
-	retq

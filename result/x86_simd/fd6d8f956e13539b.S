@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	4294966269                      # 0xfffffbfd
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpmovqd	%ymm1, %xmm1
 	vpternlogd	$168, .LCPI0_0(%rip){1to4}, %xmm0, %xmm1 # xmm1 = mem & (xmm1 | xmm0)
 	vpxor	%xmm0, %xmm0, %xmm0
@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpmovqd	%ymm1, %xmm1
 	vpternlogd	$168, .LCPI2_0(%rip){1to4}, %xmm0, %xmm1 # xmm1 = mem & (xmm1 | xmm0)
 	vpxor	%xmm0, %xmm0, %xmm0
@@ -27,7 +27,7 @@ func0000000000000041:                   # @func0000000000000041
 	retq
 .LCPI3_0:
 	.long	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpmovqd	%ymm1, %xmm1
 	vpternlogd	$168, .LCPI3_0(%rip){1to4}, %xmm0, %xmm1 # xmm1 = mem & (xmm1 | xmm0)
 	vpxor	%xmm0, %xmm0, %xmm0

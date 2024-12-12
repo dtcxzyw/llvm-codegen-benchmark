@@ -1,5 +1,7 @@
 
-; 82 occurrences:
+; 84 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll

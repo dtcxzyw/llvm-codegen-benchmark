@@ -160,7 +160,7 @@
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -8
   %3 = lshr i64 %2, 3
@@ -169,30 +169,42 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; openjdk/optimized/bitMap.ll
 ; openjdk/optimized/shenandoahMarkBitMap.ll
-; quantlib/optimized/burley2020sobolrsg.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = add nuw nsw i64 %3, 32
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp samesign ult i64 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/shenandoahMarkBitMap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000374(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = add nuw nsw i64 %3, 32
+  %5 = icmp samesign ult i64 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; lodepng/optimized/lodepng.cpp.ll
+; quantlib/optimized/burley2020sobolrsg.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -1
+  %3 = lshr i64 %2, 2
+  %4 = add nuw nsw i64 %3, 1
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -200,7 +212,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 1
@@ -221,7 +233,7 @@ entry:
 ; entt/optimized/version.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = lshr i64 %2, 1
@@ -233,7 +245,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 7
   %3 = lshr i64 %2, 3
@@ -245,7 +257,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 7
   %3 = lshr i64 %2, 3
@@ -258,7 +270,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; entt/optimized/storage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -8
   %3 = lshr i64 %2, 3
@@ -271,7 +283,7 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000368(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 7
   %3 = lshr i64 %2, 3
@@ -283,7 +295,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = lshr i64 %2, 1

@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
 ; git/optimized/read-cache.ll
 ; icu/optimized/collationfastlatin.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hid-debug.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/quota.ll
@@ -18,6 +17,7 @@
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/COFFAsmParser.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/blake3_dispatch.c.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
@@ -34,6 +34,7 @@
 ; redis/optimized/module.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
@@ -63,10 +64,10 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 240
-  %3 = icmp ugt i32 %2, 143
+  %3 = icmp samesign ugt i32 %2, 143
   %4 = select i1 %3, i32 32767, i32 0
   %5 = and i32 %0, 32768
   %6 = or disjoint i32 %4, %5

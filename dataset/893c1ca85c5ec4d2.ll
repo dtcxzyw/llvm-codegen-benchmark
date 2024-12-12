@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; ruby/optimized/gc.ll
-; ruby/optimized/type.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; verilator/optimized/V3SplitVar.cpp.ll
 ; Function Attrs: nounwind

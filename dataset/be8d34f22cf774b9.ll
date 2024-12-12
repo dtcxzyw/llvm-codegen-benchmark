@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 43 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; cpython/optimized/_codecs_kr.ll
 ; freetype/optimized/smooth.c.ll
@@ -10,6 +10,8 @@
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -49,14 +51,14 @@ entry:
   ret i16 %3
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; libquic/optimized/dtls_record.c.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/nvram.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; meshlab/optimized/miniz.c.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -71,6 +73,7 @@ entry:
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/wtap.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
@@ -80,6 +83,16 @@ entry:
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %0, %1
+  %3 = lshr i16 %2, 8
+  ret i16 %3
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_color.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i16 %0, i16 %1) #0 {
+entry:
+  %2 = add nuw i16 %0, %1
   %3 = lshr i16 %2, 8
   ret i16 %3
 }

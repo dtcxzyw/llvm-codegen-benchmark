@@ -12,7 +12,7 @@ func0000000000000050:                   # @func0000000000000050
 	.long	4                               # 0x4
 func0000000000000040:                   # @func0000000000000040
 	vpaddd	%ymm1, %ymm1, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0

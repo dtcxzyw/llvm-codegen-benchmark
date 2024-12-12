@@ -24,7 +24,7 @@
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = udiv i64 %3, 100
   ret i64 %4
 }
@@ -37,7 +37,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = udiv i64 %3, 9
   ret i64 %4
 }
@@ -51,19 +51,21 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   %4 = udiv i64 %3, 10000
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; linux/optimized/tsc.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
-  %4 = udiv i64 %3, 1000000
+  %3 = mul nuw nsw i64 %0, %2
+  %4 = udiv i64 %3, 750
   ret i64 %4
 }
 

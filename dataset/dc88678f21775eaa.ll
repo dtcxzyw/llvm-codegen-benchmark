@@ -13,10 +13,11 @@ entry:
   ret i64 %6
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
+; boost/optimized/src.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll

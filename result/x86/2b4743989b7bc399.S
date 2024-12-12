@@ -21,7 +21,7 @@ func0000000000000010:                   # @func0000000000000010
 	addl	%edi, %edi
 	leal	(%rdi,%rdi,2), %eax
 	retq
-func0000000000000015:                   # @func0000000000000015
+func0000000000000017:                   # @func0000000000000017
 	addl	%esi, %edi
 	imull	$1000, %edi, %eax               # imm = 0x3E8
 	retq

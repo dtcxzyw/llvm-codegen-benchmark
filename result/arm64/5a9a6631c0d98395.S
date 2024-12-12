@@ -1,13 +1,13 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	neg	v0.4s, v0.4s
-	neg	v1.4s, v1.4s
+	fmov	w8, s0
+	neg	w0, w8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v2.4s, #128, lsl #24
-	sub	v0.4s, v2.4s, v0.4s
-	sub	v1.4s, v2.4s, v1.4s
+	fmov	w9, s0
+	mov	w8, #-2147483648                // =0x80000000
+	sub	w0, w8, w9
 	ret
                                         // -- End function

@@ -12,16 +12,16 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edi, %edi
 	setg	%al
 	retq
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000001ca:                   # @func00000000000001ca
 	testl	$33554432, %edi                 # imm = 0x2000000
 	sete	%al
 	retq
-func00000000000000e6:                   # @func00000000000000e6
+func00000000000001c6:                   # @func00000000000001c6
 	movq	%rdi, %rax
 	shrl	$25, %eax
 	andl	$1, %eax
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addl	%edi, %edi
 	cmpl	$126, %edi
 	setb	%al
@@ -31,7 +31,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$64, %edi
 	setl	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	testl	$131072, %edi                   # imm = 0x20000
 	sete	%al
 	retq
@@ -39,7 +39,7 @@ func000000000000000c:                   # @func000000000000000c
 	negw	%di
 	setno	%al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	shll	$6, %edi
 	cmpl	$65, %edi
 	setb	%al
@@ -48,25 +48,25 @@ func0000000000000008:                   # @func0000000000000008
 	testl	$536870896, %edi                # imm = 0x1FFFFFF0
 	setne	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	addl	%edi, %edi
 	testl	%edi, %edi
 	setle	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	shlq	$36, %rdi
 	sete	%al
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	movq	%rdi, %rax
 	shrl	$27, %eax
 	andl	$1, %eax
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	shlq	$34, %rdi
 	sete	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	addl	%edi, %edi
 	cmpl	$-2097152, %edi                 # imm = 0xFFE00000
 	setae	%al

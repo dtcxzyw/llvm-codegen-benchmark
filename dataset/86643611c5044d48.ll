@@ -4,6 +4,10 @@
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/FBXParser.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/format_args.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; casadi/optimized/switch.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/RegularExpression.cxx.ll
@@ -27,13 +31,11 @@
 ; jemalloc/optimized/malloc_io.ll
 ; jemalloc/optimized/malloc_io.pic.ll
 ; jemalloc/optimized/malloc_io.sym.ll
-; libquic/optimized/a_enum.c.ll
 ; libquic/optimized/a_int.c.ll
 ; libquic/optimized/t_x509.c.ll
 ; libquic/optimized/x509_vfy.c.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/intel_color.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -86,8 +88,6 @@
 ; rust-analyzer-rs/optimized/36rfhun5ywaw64ay.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i64.ll
 ; spike/optimized/f64_to_i32_r_minMag.ll
 ; spike/optimized/kabs16.ll
 ; spike/optimized/kabs32.ll
@@ -112,7 +112,10 @@ entry:
   ret i64 %3
 }
 
-; 54 occurrences:
+; 55 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/numeric.ll
+; boost/optimized/src.ll
 ; clamav/optimized/str.c.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/ixpgh0gjooq08dy.ll
@@ -130,7 +133,6 @@ entry:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; lua/optimized/lbaselib.ll
@@ -140,9 +142,8 @@ entry:
 ; nuttx/optimized/lib_strtoull.c.ll
 ; openjdk/optimized/vectorization.ll
 ; openssl/optimized/libcrypto-lib-t_x509.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
 ; openssl/optimized/libcrypto-shlib-t_x509.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
+; php/optimized/interval.ll
 ; php/optimized/parse_date.ll
 ; php/optimized/var_unserializer.ll
 ; php/optimized/zend_operators.ll

@@ -11,14 +11,13 @@ define i16 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 4
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; libevent/optimized/poll.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/message.ll
 ; linux/optimized/phy-c45.ll
@@ -46,7 +45,7 @@ define i16 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 4
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }
@@ -71,7 +70,7 @@ define i16 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
   %3 = and i32 %2, 1023
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc nuw i32 %4 to i16
   ret i16 %5
 }
@@ -84,7 +83,7 @@ define i16 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = and i32 %2, 2046
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc nuw i32 %4 to i16
   ret i16 %5
 }
@@ -104,12 +103,12 @@ define i16 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = and i32 %2, 1
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
@@ -132,7 +131,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -145,12 +143,12 @@ define i16 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 32768
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nuw i32 %4 to i16
   ret i16 %5
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; meshoptimizer/optimized/quantization.cpp.ll
@@ -175,7 +173,6 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -198,7 +195,7 @@ define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 32768
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }

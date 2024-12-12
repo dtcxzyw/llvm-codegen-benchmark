@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/treegen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = icmp sge i32 %3, %1
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = icmp slt i32 %3, %1
@@ -35,7 +35,8 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
@@ -72,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = icmp sgt i32 %3, %1
@@ -83,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGCall.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 24
   %4 = icmp eq i32 %3, %1
@@ -105,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = icmp sle i32 %3, %1

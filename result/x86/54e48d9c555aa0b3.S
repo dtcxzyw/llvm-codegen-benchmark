@@ -34,13 +34,13 @@ func000000000000001c:                   # @func000000000000001c
 	shrq	$3, %rsi
 	leaq	16(%rsi,%rdi), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
-	shrq	%rsi
-	leaq	4(%rsi,%rdi), %rax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	shrq	%rsi
 	leaq	2(%rsi,%rdi), %rax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	shrq	%rsi
+	leaq	4(%rsi,%rdi), %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	shrq	$12, %rsi

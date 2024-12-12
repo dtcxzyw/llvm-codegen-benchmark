@@ -1,5 +1,8 @@
 
-; 3 occurrences:
+; 6 occurrences:
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; opencv/optimized/dynafu_tsdf.cpp.ll

@@ -1,16 +1,16 @@
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	decb	%dl
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
-	cmpl	%esi, %eax
-	setl	%al
+	cmpl	%eax, %esi
+	setg	%al
 	orb	%dil, %al
 	retq
-func000000000000006b:                   # @func000000000000006b
+func00000000000000cb:                   # @func00000000000000cb
 	incb	%dl
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
-	cmpl	%esi, %eax
-	setle	%al
+	cmpl	%eax, %esi
+	setge	%al
 	orb	%dil, %al
 	retq

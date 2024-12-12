@@ -15,7 +15,7 @@ entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fpext float %4 to double
-  %6 = fadd double %5, %0
+  %6 = fadd double %0, %5
   ret double %6
 }
 

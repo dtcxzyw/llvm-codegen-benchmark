@@ -3,18 +3,17 @@
 ; qemu/optimized/hw_net_rocker_rocker.c.ll
 ; qemu/optimized/hw_net_rocker_rocker_of_dpa.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -8
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
-; lightgbm/optimized/bin.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_F32.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
@@ -31,13 +30,14 @@ entry:
   ret ptr %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cbaWriteVer.c.ll
 ; abc/optimized/giaCSat3.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
+; ncnn/optimized/net.cpp.ll
 ; openjdk/optimized/bytecodeUtils.ll
 ; openjdk/optimized/mlib_ImageAffine_BL_D64.ll
 ; openjdk/optimized/mlib_ImageAffine_BL_F32.ll
@@ -53,12 +53,12 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i32, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 

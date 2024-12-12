@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	0x3f7fbe77                      # float 0.999000012
-func00000000000003cb:                   # @func00000000000003cb
+func00000000000006cb:                   # @func00000000000006cb
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpcmpneqq	%ymm1, %ymm2, %k1
@@ -8,7 +8,7 @@ func00000000000003cb:                   # @func00000000000003cb
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000003cd:                   # @func00000000000003cd
+func00000000000006cd:                   # @func00000000000006cd
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpcmpneqq	%ymm1, %ymm2, %k1
@@ -17,7 +17,7 @@ func00000000000003cd:                   # @func00000000000003cd
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000002c8:                   # @func00000000000002c8
+func00000000000004c8:                   # @func00000000000004c8
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpcmpneqq	%ymm1, %ymm2, %k1

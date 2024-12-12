@@ -5,7 +5,7 @@
 define i1 @func0000000000000007(float %0, float %1) #0 {
 entry:
   %2 = fadd float %0, %1
-  %3 = fcmp une float %2, %0
+  %3 = fcmp une float %0, %2
   ret i1 %3
 }
 
@@ -17,7 +17,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1) #0 {
 entry:
   %2 = fadd float %0, %1
-  %3 = fcmp oeq float %2, %0
+  %3 = fcmp oeq float %0, %2
   ret i1 %3
 }
 
@@ -32,7 +32,17 @@ entry:
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, %0
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; zed-rs/optimized/a5zoltfqgma86dzb1rp0ilkm9.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(float %0, float %1) #0 {
+entry:
+  %2 = fadd float %0, %1
+  %3 = fcmp ugt float %0, %2
   ret i1 %3
 }
 
@@ -42,7 +52,7 @@ entry:
 define i1 @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fadd float %0, %1
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   ret i1 %3
 }
 

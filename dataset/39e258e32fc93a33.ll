@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; glslang/optimized/PoolAlloc.cpp.ll
+; 4 occurrences:
 ; linux/optimized/cacheinfo.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; php/optimized/proc_open.ll

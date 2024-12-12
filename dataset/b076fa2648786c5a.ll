@@ -25,9 +25,8 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; clamav/optimized/pe_icons.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {

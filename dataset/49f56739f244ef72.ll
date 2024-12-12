@@ -1,5 +1,5 @@
 
-; 109 occurrences:
+; 106 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -35,8 +35,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -106,7 +104,6 @@
 ; rocksdb/optimized/point_lock_manager.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/mulhu.ll
-; spike/optimized/s_mul64To128M.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind

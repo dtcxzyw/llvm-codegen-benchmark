@@ -1,10 +1,7 @@
 
-; 182 occurrences:
-; arrow/optimized/cached-powers.cc.ll
+; 177 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; libquic/optimized/convert.c.ll
 ; libwebp/optimized/buffer_dec.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -151,10 +148,8 @@
 ; openspiel/optimized/bridge.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
 ; openssl/optimized/libcrypto-lib-param_build.ll
-; openssl/optimized/libcrypto-lib-t_pkey.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-param_build.ll
-; openssl/optimized/libcrypto-shlib-t_pkey.ll
 ; openusd/optimized/cached-powers.cc.ll
 ; openusd/optimized/cdef.c.ll
 ; slurm/optimized/dist_tasks.ll

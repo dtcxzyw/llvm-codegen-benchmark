@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 57 occurrences:
 ; arrow/optimized/builder_nested.cc.ll
 ; coreutils-rs/optimized/1e5pt7vtfxa4ahz7.ll
 ; git/optimized/diff.ll
@@ -32,6 +32,8 @@
 ; openusd/optimized/testSdfPathTable.cpp.ll
 ; postgres/optimized/freepage.ll
 ; rust-analyzer-rs/optimized/1egtj7ksojphluke.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
+; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
 ; rust-analyzer-rs/optimized/2deyu58ajds9ccnn.ll
 ; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
 ; rust-analyzer-rs/optimized/2opy4detkbqdwmaz.ll
@@ -45,15 +47,18 @@
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; rust-analyzer-rs/optimized/4wjr9n8d5oomu43d.ll
 ; rust-analyzer-rs/optimized/4z0mti9ae01vbv1s.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
 ; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
+; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; rust-analyzer-rs/optimized/rilullg9p294yp1.ll
+; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
 ; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = icmp eq ptr %0, null
@@ -61,7 +66,7 @@ entry:
   ret i1 %4
 }
 
-; 27 occurrences:
+; 52 occurrences:
 ; linux/optimized/slub.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
@@ -73,24 +78,49 @@ entry:
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; rust-analyzer-rs/optimized/150tm5mq81nfdpak.ll
 ; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
+; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
+; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; rust-analyzer-rs/optimized/206pid2yjlj5ool2.ll
 ; rust-analyzer-rs/optimized/24v97gdgi5w62z7s.ll
 ; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
+; rust-analyzer-rs/optimized/39qzrxn3p3f1jz7v.ll
+; rust-analyzer-rs/optimized/3o06gi7obg71ydg1.ll
 ; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
+; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
+; rust-analyzer-rs/optimized/4li1jw3llk76lkpw.ll
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; rust-analyzer-rs/optimized/4z0mti9ae01vbv1s.ll
 ; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/5cuaio8coq8lvmol.ll
+; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
+; rust-analyzer-rs/optimized/jp4yq85z7wea9l3.ll
 ; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
+; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
+; rust-analyzer-rs/optimized/ri7xfiosbc1bsgh.ll
 ; rust-analyzer-rs/optimized/rilullg9p294yp1.ll
+; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8epszlr2612bvdrsn7g83nprl.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 2
   %3 = icmp ne ptr %0, null
@@ -102,7 +132,7 @@ entry:
 ; hwloc/optimized/traversal.ll
 ; libquic/optimized/pickle.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000008c(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 3
   %3 = icmp ne ptr %0, null

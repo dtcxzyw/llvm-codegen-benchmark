@@ -17,6 +17,7 @@ func000000000000000d:                   # @func000000000000000d
 	imulq	%rdi, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
+	addl	%esi, %esi
 	leal	(%rsi,%rsi,4), %eax
 	imulq	%rdi, %rax
 	retq

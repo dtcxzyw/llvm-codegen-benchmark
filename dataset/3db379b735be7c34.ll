@@ -25,7 +25,8 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/sigtool.c.ll
 ; ring-rs/optimized/36n9a21mmta9vg69.ll
 ; rust-analyzer-rs/optimized/2c0n7dumpf7kecgy.ll
@@ -41,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = sub i64 %0, %3

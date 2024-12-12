@@ -8,7 +8,7 @@
 define i1 @func0000000000000004(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = sitofp i32 %1 to float
   %6 = fcmp ogt float %4, %5
   ret i1 %6
@@ -20,26 +20,26 @@ entry:
 define i1 @func0000000000000005(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = sitofp i32 %1 to float
   %6 = fcmp ugt float %4, %5
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/ShapeSpanIterator.ll
-; pbrt-v4/optimized/mipmap.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = sitofp i32 %1 to float
   %6 = fcmp ult float %4, %5
   ret i1 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; lvgl/optimized/lv_chart.ll
 ; ncnn/optimized/deformableconv2d.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
@@ -51,7 +51,7 @@ entry:
 define i1 @func0000000000000002(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = sitofp i32 %1 to float
   %6 = fcmp olt float %4, %5
   ret i1 %6

@@ -1,4 +1,19 @@
 
+; 5 occurrences:
+; cmake/optimized/archive_match.c.ll
+; cpython/optimized/formatter_unicode.ll
+; llvm/optimized/MarkupFilter.cpp.ll
+; ruby/optimized/random.ll
+; zed-rs/optimized/5gzhlrfve63v3ndyg8t40tttn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 1
+  %3 = sext i1 %2 to i64
+  %4 = add i64 %0, %3
+  ret i64 %4
+}
+
 ; 12 occurrences:
 ; cpython/optimized/Python-tokenize.ll
 ; graphviz/optimized/sfvscanf.c.ll
@@ -17,7 +32,7 @@ define i64 @func0000000000000031(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -44,11 +59,11 @@ define i64 @func0000000000000030(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; icu/optimized/ucnvmbcs.ll
@@ -59,12 +74,13 @@ entry:
 ; openjdk/optimized/dependencies.ll
 ; quantlib/optimized/actual365fixed.ll
 ; quantlib/optimized/zabr.ll
+; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -78,7 +94,7 @@ define i64 @func0000000000000019(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 3
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -161,20 +177,7 @@ define i64 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -5
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
-  ret i64 %4
-}
-
-; 3 occurrences:
-; cmake/optimized/archive_match.c.ll
-; cpython/optimized/formatter_unicode.ll
-; llvm/optimized/MarkupFilter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -187,7 +190,7 @@ define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 327680
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

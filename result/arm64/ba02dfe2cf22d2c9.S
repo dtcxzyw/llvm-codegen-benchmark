@@ -12,3 +12,17 @@ func000000000000005a:                   // @func000000000000005a
 	add	x0, x8, #8
 	ret
                                         // -- End function
+func000000000000005e:                   // @func000000000000005e
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #3
+	add	x8, x8, x2
+	add	x0, x8, #8
+	ret
+                                        // -- End function
+func000000000000005f:                   // @func000000000000005f
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #3
+	add	x8, x8, x2
+	add	x0, x8, #8
+	ret
+                                        // -- End function

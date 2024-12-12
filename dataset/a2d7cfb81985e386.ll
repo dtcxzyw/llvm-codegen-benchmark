@@ -25,9 +25,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/ConstantRange.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {

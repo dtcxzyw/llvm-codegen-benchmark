@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	5                               # 0x5
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	vptestnmb	%xmm2, %xmm2, %k0
 	vptestnmb	%xmm1, %xmm1, %k1
 	korb	%k0, %k1, %k0
@@ -45,7 +45,7 @@ func000000000000011c:                   # @func000000000000011c
 	.zero	1
 .LCPI1_2:
 	.long	1                               # 0x1
-func0000000000000c11:                   # @func0000000000000c11
+func0000000000003021:                   # @func0000000000003021
 	vpcmpneqb	.LCPI1_0(%rip), %xmm2, %k0
 	vpcmpeqb	.LCPI1_1(%rip), %xmm1, %k1
 	vpcmpeqd	.LCPI1_2(%rip){1to8}, %ymm0, %k2
@@ -88,7 +88,7 @@ func0000000000000c11:                   # @func0000000000000c11
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000141:                   # @func0000000000000141
+func0000000000000481:                   # @func0000000000000481
 	vpcmpeqb	.LCPI2_0(%rip), %xmm2, %k0
 	vpcmpltub	.LCPI2_1(%rip), %xmm1, %k1
 	vptestnmd	%ymm0, %ymm0, %k2
@@ -99,7 +99,7 @@ func0000000000000141:                   # @func0000000000000141
 	retq
 .LCPI3_0:
 	.long	13                              # 0xd
-func0000000000000c14:                   # @func0000000000000c14
+func0000000000003024:                   # @func0000000000003024
 	vptestmb	%xmm2, %xmm2, %k0
 	vptestnmb	%xmm1, %xmm1, %k1
 	korb	%k0, %k1, %k0
@@ -125,7 +125,7 @@ func0000000000000c14:                   # @func0000000000000c14
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	vpcmpneqb	.LCPI4_0(%rip), %xmm2, %k0
 	vptestmb	%xmm1, %xmm1, %k1
 	vptestmd	%ymm0, %ymm0, %k2
@@ -153,7 +153,7 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	.zero	1
 .LCPI5_1:
 	.long	255                             # 0xff
-func0000000000000cc8:                   # @func0000000000000cc8
+func0000000000003198:                   # @func0000000000003198
 	vptestmb	%xmm2, %xmm2, %k0
 	vpcmpneqb	.LCPI5_0(%rip), %xmm1, %k1
 	korb	%k0, %k1, %k0
@@ -163,49 +163,18 @@ func0000000000000cc8:                   # @func0000000000000cc8
 	vzeroupper
 	retq
 .LCPI6_0:
-	.byte	84                              # 0x54
-	.byte	84                              # 0x54
-	.byte	84                              # 0x54
-	.byte	84                              # 0x54
-	.byte	84                              # 0x54
-	.byte	84                              # 0x54
-	.byte	84                              # 0x54
-	.byte	84                              # 0x54
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI6_1:
-	.long	11                              # 0xb
-.LCPI6_2:
-	.byte	84                              # 0x54
-func0000000000000114:                   # @func0000000000000114
-	vpbroadcastb	.LCPI6_2(%rip), %xmm3   # xmm3 = [84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84]
+	.long	255                             # 0xff
+func0000000000000421:                   # @func0000000000000421
+	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	%xmm3, %xmm2, %k0
 	vpcmpeqb	%xmm3, %xmm1, %k1
 	korb	%k0, %k1, %k0
-	vpcmpltud	.LCPI6_1(%rip){1to8}, %ymm0, %k1
+	vpcmpeqd	.LCPI6_0(%rip){1to8}, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI7_0:
-	.long	255                             # 0xff
-func0000000000000111:                   # @func0000000000000111
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpeqb	%xmm3, %xmm2, %k0
-	vpcmpeqb	%xmm3, %xmm1, %k1
-	korb	%k0, %k1, %k0
-	vpcmpeqd	.LCPI7_0(%rip){1to8}, %ymm0, %k1
-	korb	%k1, %k0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI8_0:
 	.byte	63                              # 0x3f
 	.byte	63                              # 0x3f
 	.byte	63                              # 0x3f
@@ -222,8 +191,8 @@ func0000000000000111:                   # @func0000000000000111
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000008c1:                   # @func00000000000008c1
-	vpcmpnleub	.LCPI8_0(%rip), %xmm2, %k0
+func0000000000002181:                   # @func0000000000002181
+	vpcmpnleub	.LCPI7_0(%rip), %xmm2, %k0
 	vptestmb	%xmm1, %xmm1, %k1
 	vptestnmd	%ymm0, %ymm0, %k2
 	korb	%k2, %k1, %k1

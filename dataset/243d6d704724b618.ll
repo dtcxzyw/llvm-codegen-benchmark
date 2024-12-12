@@ -10,7 +10,7 @@
 ; openssl/optimized/libcrypto-shlib-evp_fetch.ll
 ; openssl/optimized/libcrypto-shlib-store_meth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne ptr %1, null

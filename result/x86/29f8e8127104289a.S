@@ -36,6 +36,15 @@ func0000000000000011:                   # @func0000000000000011
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	xorl	%eax, %eax
+	cmpl	$3142, %esi                     # imm = 0xC46
+	setb	%al
+	shll	$27, %eax
+	andl	$1, %edi
+	shll	$13, %edi
+	leal	269750433(%rdi,%rax), %eax
+	retq
 func0000000000000014:                   # @func0000000000000014
 	xorl	%eax, %eax
 	cmpl	$2, %esi

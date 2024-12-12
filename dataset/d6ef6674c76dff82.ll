@@ -1,6 +1,5 @@
 
-; 25 occurrences:
-; abc/optimized/msatSolverIo.c.ll
+; 23 occurrences:
 ; cmake/optimized/archive_rb.c.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/rx.ll
@@ -17,7 +16,6 @@
 ; php/optimized/plain_wrapper.ll
 ; postgres/optimized/wparser_def.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; redis/optimized/networking.ll
 ; redis/optimized/rax.ll
 ; ruby/optimized/regparse.ll

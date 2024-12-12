@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; jemalloc/optimized/ckh.ll
 ; jemalloc/optimized/ckh.pic.ll
 ; jemalloc/optimized/ckh.sym.ll
@@ -33,6 +33,7 @@
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rust-analyzer-rs/optimized/jp4yq85z7wea9l3.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0) #0 {
 entry:

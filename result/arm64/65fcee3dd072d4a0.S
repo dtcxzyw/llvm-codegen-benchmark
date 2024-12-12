@@ -1,45 +1,37 @@
-func0000000000000058:                   // @func0000000000000058
+func00000000000000b8:                   // @func00000000000000b8
 // %bb.0:                               // %entry
-	movi	v4.2d, #0x000000ffffffff
-	sub	v5.2d, v1.2d, v3.2d
-	sub	v6.2d, v0.2d, v2.2d
-	cmhi	v5.2d, v5.2d, v4.2d
-	cmhi	v6.2d, v6.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	add	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v5.16b
-	bit	v0.16b, v2.16b, v6.16b
+	sub	x9, x0, x1
+	mov	w8, #-1                         // =0xffffffff
+	lsr	x9, x9, #32
+	add	x8, x1, x8
+	cmp	x9, #0
+	csel	x0, x8, x0, ne
 	ret
                                         // -- End function
-func000000000000005a:                   // @func000000000000005a
+func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
-	mov	w8, #100                        // =0x64
-	sub	v4.2d, v3.2d, v1.2d
-	sub	v6.2d, v2.2d, v0.2d
-	dup	v5.2d, x8
-	mov	x8, #-100                       // =0xffffffffffffff9c
-	dup	v7.2d, x8
-	cmgt	v4.2d, v4.2d, v5.2d
-	cmgt	v5.2d, v6.2d, v5.2d
-	add	v3.2d, v3.2d, v7.2d
-	add	v2.2d, v2.2d, v7.2d
-	bit	v0.16b, v2.16b, v5.16b
-	bit	v1.16b, v3.16b, v4.16b
+	sub	x8, x1, x0
+	sub	x9, x1, #100
+	cmp	x8, #100
+	csel	x0, x9, x0, gt
+	ret
+                                        // -- End function
+func0000000000000018:                   // @func0000000000000018
+// %bb.0:                               // %entry
+	sub	x9, x0, x1
+	mov	w8, #1040187392                 // =0x3e000000
+	lsr	x9, x9, #24
+	add	x8, x1, x8
+	cmp	x9, #62
+	csel	x0, x8, x0, hi
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	w8, #1056964607                 // =0x3effffff
-	sub	v4.2d, v1.2d, v3.2d
-	sub	v6.2d, v0.2d, v2.2d
-	dup	v5.2d, x8
-	mov	w8, #1040187392                 // =0x3e000000
-	dup	v7.2d, x8
-	cmhi	v4.2d, v4.2d, v5.2d
-	cmhi	v5.2d, v6.2d, v5.2d
-	add	v3.2d, v3.2d, v7.2d
-	add	v2.2d, v2.2d, v7.2d
-	bit	v0.16b, v2.16b, v5.16b
-	bit	v1.16b, v3.16b, v4.16b
+	sub	x8, x1, x0
+	add	x9, x1, #136, lsl #12           // =557056
+	sub	x9, x9, #272, lsl #12           // =1114112
+	cmp	x8, #136, lsl #12               // =557056
+	csel	x0, x9, x0, hi
 	ret
                                         // -- End function

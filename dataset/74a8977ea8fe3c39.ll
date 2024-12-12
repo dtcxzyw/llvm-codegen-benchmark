@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 58 occurrences:
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -36,7 +36,6 @@
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; opencv/optimized/qualitybrisque.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
-; openexr/optimized/base.c.ll
 ; openjdk/optimized/cmsopt.ll
 ; openusd/optimized/flatNormals.cpp.ll
 ; openusd/optimized/smoothNormals.cpp.ll
@@ -54,6 +53,11 @@
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000024(float %0) #0 {
 entry:
@@ -114,6 +118,18 @@ entry:
   %2 = select i1 %1, float 0.000000e+00, float %0
   %3 = fcmp oge float %2, 6.553500e+04
   %4 = select i1 %3, float 6.553500e+04, float %2
+  ret float %4
+}
+
+; 1 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
+; Function Attrs: nounwind
+define float @func0000000000000022(float %0) #0 {
+entry:
+  %1 = fcmp olt float %0, 9.000000e+01
+  %2 = select i1 %1, float 9.000000e+01, float %0
+  %3 = fcmp olt float %2, 1.000000e+00
+  %4 = select i1 %3, float 1.000000e+00, float %2
   ret float %4
 }
 

@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/dlas2.cpp.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/sampling.ll

@@ -1,7 +1,9 @@
 
-; 37 occurrences:
+; 40 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/pct_format.ll
 ; cmake/optimized/Glob.cxx.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; eastl/optimized/EAMain.cpp.ll
@@ -23,6 +25,7 @@
 ; meshlab/optimized/ofbx.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
 ; openusd/optimized/av1_dx_iface.c.ll
+; pbrt-v4/optimized/string.cpp.ll
 ; php/optimized/browscap.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/php_cli_server.ll

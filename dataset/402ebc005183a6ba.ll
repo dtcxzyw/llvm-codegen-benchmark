@@ -1,6 +1,8 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; abc/optimized/giaSimBase.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -9,7 +11,7 @@
 ; openjdk/optimized/bytecodeUtils.ll
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3

@@ -11,7 +11,7 @@
 define i16 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -25,7 +25,7 @@ entry:
 define i16 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -44,7 +44,7 @@ entry:
 define i16 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -55,7 +55,7 @@ entry:
 define i16 @func000000000000001f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
@@ -66,7 +66,7 @@ entry:
 define i16 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -77,7 +77,7 @@ entry:
 define i16 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
@@ -88,7 +88,7 @@ entry:
 define i16 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }

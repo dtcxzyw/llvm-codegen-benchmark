@@ -6,17 +6,17 @@ func0000000000000000:                   # @func0000000000000000
 	cmoveq	%rdx, %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000001:                   # @func0000000000000001
 	movq	%rdi, %rax
-	andq	$-8, %rdx
+	andl	$496, %edx                      # imm = 0x1F0
 	testb	$1, %sil
 	movl	$32, %ecx
 	cmoveq	%rdx, %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+func0000000000000002:                   # @func0000000000000002
 	movq	%rdi, %rax
-	andl	$504, %edx                      # imm = 0x1F8
+	andl	$31, %edx
 	testb	$1, %sil
 	movl	$32, %ecx
 	cmoveq	%rdx, %rcx

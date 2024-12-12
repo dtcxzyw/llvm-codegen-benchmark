@@ -1,10 +1,10 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	bexti	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1
 	slli	a0, a0, 14
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	bexti	a1, a1, 2
 	snez	a0, a0
 	and	a0, a0, a1

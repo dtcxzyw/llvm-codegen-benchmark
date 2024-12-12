@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	addq	%rdx, %rsi
 	andq	$-8, %rsi
-	leaq	8(%rdi,%rsi), %rax
+	leaq	1(%rdi,%rsi), %rax
 	retq
 func0000000000000035:                   # @func0000000000000035
 	addq	%rdx, %rsi

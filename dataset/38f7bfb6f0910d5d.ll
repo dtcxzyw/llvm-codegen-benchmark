@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; gromacs/optimized/dasum.cpp.ll
 ; gromacs/optimized/sasum.cpp.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/RegionPrinter.cpp.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
+; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
 ; opencv/optimized/kmeans.cpp.ll
 ; openssl/optimized/quic_stream_test-bin-quic_stream_test.ll

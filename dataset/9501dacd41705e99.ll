@@ -1,5 +1,7 @@
 
-; 54 occurrences:
+; 57 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clamav/optimized/extract.cpp.ll
 ; cvc5/optimized/minisat.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -17,7 +19,6 @@
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AlignmentFromAssumptions.cpp.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/CoroSplit.cpp.ll
 ; llvm/optimized/DWARFVerifier.cpp.ll
@@ -37,6 +38,7 @@
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/ml_shared_data_context.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; mitsuba3/optimized/grid.cpp.ll
@@ -47,13 +49,14 @@
 ; openssl/optimized/libssl-shlib-ssl3_cbc.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
-; rayon-rs/optimized/4h6yllo6psxznznq.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
 ; rust-analyzer-rs/optimized/5aa2crkpwvrgj48h.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:

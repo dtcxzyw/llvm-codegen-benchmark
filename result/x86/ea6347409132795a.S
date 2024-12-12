@@ -8,14 +8,14 @@ func0000000000000001:                   # @func0000000000000001
 	shll	$5, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movl	%esi, %eax
-	shll	$8, %eax
-	orl	%edi, %eax
-	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax
 	shll	$12, %eax
+	orl	%edi, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	movl	%esi, %eax
+	shll	$6, %eax
 	orl	%edi, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002

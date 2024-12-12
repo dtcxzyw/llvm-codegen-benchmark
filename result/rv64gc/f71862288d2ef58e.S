@@ -36,6 +36,11 @@ func00000000000000c2:                   # @func00000000000000c2
 .LBB5_2:                                # %entry
 	flt.s	a0, fa1, fa0
 	ret
+func000000000000004a:                   # @func000000000000004a
+	fmv.w.x	fa5, zero
+	fmax.s	fa5, fa1, fa5
+	fle.s	a0, fa5, fa0
+	ret
 func000000000000004c:                   # @func000000000000004c
 	fmv.w.x	fa5, zero
 	fmax.s	fa5, fa1, fa5

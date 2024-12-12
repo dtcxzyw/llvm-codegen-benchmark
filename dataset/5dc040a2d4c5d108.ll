@@ -10,7 +10,7 @@ define i1 @func000000000000000a(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fcmp ugt double %3, 1.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -55,7 +55,7 @@ define i1 @func0000000000000004(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fcmp olt double %3, 0.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -86,7 +86,7 @@ define i1 @func0000000000000010(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fcmp oeq double %3, 0.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -111,7 +111,7 @@ define i1 @func0000000000000002(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fcmp uno double %3, 0.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

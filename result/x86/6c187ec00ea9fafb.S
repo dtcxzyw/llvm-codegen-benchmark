@@ -17,6 +17,6 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000003:                   # @func0000000000000003
 	movq	%rdi, %rax
 	subq	%rsi, %rax
-	shrq	$15, %rax
-	andq	$-8, %rax
+	shrq	$2, %rax
+	andq	$-2, %rax
 	retq

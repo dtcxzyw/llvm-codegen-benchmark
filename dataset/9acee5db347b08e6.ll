@@ -3,7 +3,7 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, ptr %1, ptr %2) #0 {
+define i32 @func0000000000000042(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = or disjoint i32 %0, 8
   %4 = icmp eq ptr %1, %2

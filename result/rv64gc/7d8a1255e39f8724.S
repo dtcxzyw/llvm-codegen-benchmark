@@ -25,3 +25,7 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a1, a1, 60
 	and	a0, a0, a1
 	ret
+func0000000000000028:                   # @func0000000000000028
+	sltiu	a1, a1, 3
+	and	a0, a0, a1
+	ret

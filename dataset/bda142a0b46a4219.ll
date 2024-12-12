@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 59 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
@@ -22,7 +22,6 @@
 ; faiss/optimized/quantize_lut.cpp.ll
 ; gromacs/optimized/rdf.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
-; gromacs/optimized/slarfg.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll

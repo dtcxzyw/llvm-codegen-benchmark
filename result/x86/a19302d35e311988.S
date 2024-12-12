@@ -54,7 +54,3 @@ func0000000000000010:                   # @func0000000000000010
 	movzwl	%si, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000d:                   # @func000000000000000d
-	movzwl	%di, %eax
-	addl	%esi, %eax
-	retq

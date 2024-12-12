@@ -1,12 +1,11 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/unicodedata.ll
 ; cpython/optimized/unicodeobject.ll
 ; cpython/optimized/xmltok.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-shaper-use.ll

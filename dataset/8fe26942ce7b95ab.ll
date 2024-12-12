@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; folly/optimized/json.cpp.ll
 ; linux/optimized/drm_buddy.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/i915_gem_region.ll
 ; linux/optimized/memblock.ll
 ; linux/optimized/scatterlist.ll
@@ -51,9 +50,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/buffered-io.ll
-; linux/optimized/i915_cmd_parser.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

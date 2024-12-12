@@ -1,18 +1,15 @@
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
-	ushll	v0.4s, v1.4h, #0
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x0, x1, #0xffff
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
-	movi	v2.4h, #6
-	movi	v3.4h, #7
-	cmhi	v0.4h, v2.4h, v0.4h
-	bsl	v0.8b, v1.8b, v3.8b
-	ushll	v0.4s, v0.4h, #0
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	and	w9, w0, #0xffff
+	mov	w8, #7                          // =0x7
+	cmp	w9, #6
+	csel	w8, w1, w8, lo
+	and	x0, x8, #0xffff
 	ret
                                         // -- End function

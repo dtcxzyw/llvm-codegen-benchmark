@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 68 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -31,6 +31,8 @@
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -74,8 +76,10 @@ entry:
   ret i32 %4
 }
 
-; 53 occurrences:
+; 54 occurrences:
 ; abc/optimized/cuddUtil.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -101,7 +105,6 @@ entry:
 ; libzmq/optimized/socket_base.cpp.ll
 ; libzmq/optimized/stream_connecter_base.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/guiInventoryList.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll

@@ -1,52 +1,28 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	sub	v3.2d, v4.2d, v3.2d
-	sub	v2.2d, v4.2d, v2.2d
-	ushl	v1.2d, v1.2d, v3.2d
-	ushl	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	movi	v1.4s, #1
-	and	v0.16b, v0.16b, v1.16b
+	sub	x8, x1, #1
+	lsr	x8, x0, x8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	sub	v3.2d, v4.2d, v3.2d
-	sub	v2.2d, v4.2d, v2.2d
-	ushl	v1.2d, v1.2d, v3.2d
-	ushl	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	movi	v1.4s, #1
-	and	v0.16b, v0.16b, v1.16b
+	sub	x8, x1, #1
+	lsr	x8, x0, x8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	mov	x8, #-48                        // =0xffffffffffffffd0
-	dup	v4.2d, x8
-	sub	v3.2d, v4.2d, v3.2d
-	sub	v2.2d, v4.2d, v2.2d
-	ushl	v1.2d, v1.2d, v3.2d
-	ushl	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	movi	v1.4s, #7
-	and	v0.16b, v0.16b, v1.16b
+	add	x8, x1, #48
+	lsr	x8, x0, x8
+	and	w0, w8, #0x7
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mov	x8, #-8                         // =0xfffffffffffffff8
-	dup	v4.2d, x8
-	sub	v3.2d, v4.2d, v3.2d
-	sub	v2.2d, v4.2d, v2.2d
-	ushl	v1.2d, v1.2d, v3.2d
-	ushl	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	movi	v1.4s, #127
-	and	v0.16b, v0.16b, v1.16b
+	add	x8, x1, #8
+	lsr	x8, x0, x8
+	and	w0, w8, #0x7f
 	ret
                                         // -- End function

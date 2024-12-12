@@ -1,4 +1,19 @@
 
+; 4 occurrences:
+; cpython/optimized/tracemalloc.ll
+; openjdk/optimized/cpCache.ll
+; openssl/optimized/libcrypto-lib-property_parse.ll
+; openssl/optimized/libcrypto-shlib-property_parse.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, -1
+  %2 = zext nneg i32 %1 to i64
+  %3 = mul nuw nsw i64 %2, 24
+  %4 = add nuw nsw i64 %3, 32
+  ret i64 %4
+}
+
 ; 8 occurrences:
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -18,8 +33,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/SLPVectorizer.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/cpCache.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i32 %0) #0 {
@@ -31,23 +45,7 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; cpython/optimized/tracemalloc.ll
-; darktable/optimized/pdf.c.ll
-; openjdk/optimized/cpCache.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i32 %0) #0 {
-entry:
-  %1 = add nsw i32 %0, -1
-  %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, 24
-  %4 = add nuw nsw i64 %3, 39
-  ret i64 %4
-}
-
-; 4 occurrences:
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
+; 2 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; postgres/optimized/dsm.ll
 ; Function Attrs: nounwind
@@ -55,8 +53,8 @@ define i64 @func000000000000000f(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -1
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, 48
-  %4 = add nuw nsw i64 %3, 48
+  %3 = mul nuw nsw i64 %2, 520
+  %4 = add nuw nsw i64 %3, 536
   ret i64 %4
 }
 

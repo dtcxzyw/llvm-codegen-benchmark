@@ -1,6 +1,5 @@
 
-; 11 occurrences:
-; linux/optimized/intel_audio.ll
+; 10 occurrences:
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-slabs.ll
@@ -17,12 +16,12 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 3
   %4 = and i32 %3, 248
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or disjoint i32 %5, -16777216
   ret i32 %6
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -38,7 +37,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -76,7 +74,7 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 5
   %4 = and i32 %3, 256
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = or i32 %5, 8
   ret i32 %6
 }
@@ -89,7 +87,7 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = shl i32 %2, 17
   %4 = and i32 %3, 33554432
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or i32 %5, 67108864
   ret i32 %6
 }

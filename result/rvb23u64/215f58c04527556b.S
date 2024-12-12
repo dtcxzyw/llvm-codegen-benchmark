@@ -31,7 +31,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000008:                   # @func0000000000000008
 	fli.s	fa5, 1.0
 	fdiv.s	fa5, fa5, fa2
-	fmul.s	fa5, fa5, fa1
+	fmul.s	fa5, fa1, fa5
 	fmv.w.x	fa4, zero
 	feq.s	a0, fa5, fa4
 	beqz	a0, .LBB2_2

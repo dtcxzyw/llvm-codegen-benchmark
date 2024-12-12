@@ -23,19 +23,21 @@
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; abc/optimized/mpmPre.c.ll
+; cmake/optimized/divsufsort.c.ll
 ; qemu/optimized/hw_misc_ivshmem.c.ll
+; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -118,7 +120,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -129,7 +131,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

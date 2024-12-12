@@ -1,5 +1,5 @@
 
-; 87 occurrences:
+; 90 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
@@ -7,6 +7,9 @@
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -95,10 +98,13 @@ entry:
   ret i64 %3
 }
 
-; 24 occurrences:
+; 28 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/p256-64.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
@@ -120,6 +126,7 @@ entry:
 ; spike/optimized/vaaddu_vx.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i128 %0, i128 %1) #0 {
 entry:
@@ -128,12 +135,13 @@ entry:
   ret i64 %3
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/mpdecimal.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/p256-64.c.ll
@@ -174,8 +182,9 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p256-64.c.ll
 ; quickjs/optimized/libbf.ll
 ; spike/optimized/vaadd_vv.ll

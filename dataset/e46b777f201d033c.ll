@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
-; linux/optimized/memattr.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; mimalloc/optimized/segment.c.ll
 ; openjdk/optimized/bitMap.ll
@@ -39,7 +38,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-cms_pwri.ll
 ; openssl/optimized/libcrypto-shlib-cms_pwri.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = sub nuw i64 %0, %1
@@ -114,7 +113,7 @@ entry:
 ; redis/optimized/sentinel.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = sub nsw i64 %0, %1
@@ -125,7 +124,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/region.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = sub nuw nsw i64 %0, %1
@@ -133,10 +132,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 9
   %4 = sub nuw i64 %0, %1
@@ -180,7 +180,7 @@ entry:
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = sub i64 %0, %1
@@ -201,7 +201,7 @@ entry:
 ; openjdk/optimized/methodLiveness.ll
 ; openusd/optimized/cpuPatchTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = sub i64 %0, %1
@@ -212,7 +212,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jfrObjectAllocationSample.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = sub nsw i64 %0, %1
@@ -241,7 +241,7 @@ entry:
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 2
   %4 = sub i64 %0, %1
@@ -252,7 +252,7 @@ entry:
 ; 1 occurrences:
 ; ring-rs/optimized/3r96bqjv88cu5m8n.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = sub nuw i64 %0, %1
@@ -263,7 +263,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/xdiffi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = sub i64 %0, %1
@@ -274,7 +274,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/pack-revindex.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = sub nuw nsw i64 %0, %1
@@ -289,23 +289,9 @@ entry:
 ; hermes/optimized/escape.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = sub i64 %0, %1
-  %5 = icmp eq i64 %4, %3
-  ret i1 %5
-}
-
-; 4 occurrences:
-; eastl/optimized/TestVector.cpp.ll
-; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; opencv/optimized/digits_svm.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 2
   %4 = sub i64 %0, %1
   %5 = icmp eq i64 %4, %3
   ret i1 %5
@@ -316,7 +302,7 @@ entry:
 ; llvm/optimized/GuardWidening.cpp.ll
 ; protobuf/optimized/enum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = sub nsw i64 %0, %1
@@ -327,7 +313,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = sub i64 %0, %1
@@ -338,7 +324,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = sub nsw i64 %0, %1
@@ -349,7 +335,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vmscan.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = sub i64 %0, %1
@@ -360,7 +346,7 @@ entry:
 ; 1 occurrences:
 ; ockam-rs/optimized/2px2is5654ttwkil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = sub nuw i64 %0, %1
@@ -371,7 +357,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/sentinel.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = sub nsw i64 %0, %1
@@ -383,7 +369,7 @@ entry:
 ; redis/optimized/cluster_legacy.ll
 ; redis/optimized/sentinel.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = sub nsw i64 %0, %1
@@ -394,7 +380,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = sub nsw i64 %0, %1
@@ -408,7 +394,7 @@ entry:
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 14
   %4 = sub i64 %0, %1
@@ -425,7 +411,7 @@ entry:
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = sub i64 %0, %1
@@ -433,10 +419,23 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; eastl/optimized/TestVector.cpp.ll
+; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
+; opencv/optimized/digits_svm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 2
+  %4 = sub i64 %0, %1
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = sub nuw i64 %0, %1

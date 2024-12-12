@@ -1,7 +1,9 @@
 
-; 52 occurrences:
+; 53 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; arrow/optimized/UriNormalize.c.ll
+; boost/optimized/console_buffer.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/frm_driver.c.ll
 ; git/optimized/apply.ll
 ; git/optimized/cache-tree.ll
@@ -27,7 +29,6 @@
 ; openjdk/optimized/nmethod.ll
 ; openjdk/optimized/stubs.ll
 ; php/optimized/rfc1867.ll
-; proj/optimized/wkt_parser.cpp.ll
 ; protobuf/optimized/parse_context.cc.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/sprintf.ll
@@ -58,14 +59,15 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
-; 93 occurrences:
+; 94 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
+; boost/optimized/collator.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; git/optimized/cache-tree.ll
 ; git/optimized/show-ref.ll
@@ -162,11 +164,11 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
-; 100 occurrences:
+; 99 occurrences:
 ; abc/optimized/inffast.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -185,7 +187,6 @@ entry:
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hermes/optimized/ASTBuilder.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; hyperscan/optimized/fdr.c.ll
 ; hyperscan/optimized/teddy.c.ll
@@ -273,11 +274,11 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
-; 112 occurrences:
+; 113 occurrences:
 ; abc/optimized/gzwrite.c.ll
 ; abc/optimized/verFormula.c.ll
 ; assimp/optimized/STLLoader.cpp.ll
@@ -308,6 +309,7 @@ entry:
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cmesh.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -396,7 +398,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -457,7 +459,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
@@ -476,7 +478,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp uge i32 %5, %0
+  %6 = icmp ule i32 %0, %5
   ret i1 %6
 }
 
@@ -492,7 +494,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp sle i32 %5, %0
+  %6 = icmp sge i32 %0, %5
   ret i1 %6
 }
 
@@ -507,7 +509,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp sge i32 %5, %0
+  %6 = icmp sle i32 %0, %5
   ret i1 %6
 }
 
@@ -520,7 +522,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp ule i32 %5, %0
+  %6 = icmp uge i32 %0, %5
   ret i1 %6
 }
 
@@ -534,7 +536,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp ne i32 %5, %0
+  %6 = icmp ne i32 %0, %5
   ret i1 %6
 }
 

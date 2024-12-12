@@ -1,18 +1,20 @@
 
-; 37 occurrences:
+; 39 occurrences:
 ; abc/optimized/cecSolveG.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/sbdWin.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
+; gromacs/optimized/gen_vsite.cpp.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/insn-eval.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/scsi_error.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/task_mmu.ll
+; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
@@ -42,7 +44,7 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -5
   %4 = icmp ne i64 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }
@@ -52,10 +54,10 @@ entry:
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/sbdWin.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; libquic/optimized/persistent_memory_allocator.cc.ll
 ; linux/optimized/filemap.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/task_mmu.ll
@@ -72,6 +74,7 @@ entry:
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/frame_x86.ll
 ; openjdk/optimized/modRefBarrierSetAssembler_x86.ll
 ; ruby/optimized/bignum.ll
@@ -79,9 +82,8 @@ entry:
 ; ruby/optimized/proc.ll
 ; ruby/optimized/vm.ll
 ; ruby/optimized/vm_trace.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
+; spike/optimized/f128_to_i32_r_minMag.ll
+; spike/optimized/f64_to_i32_r_minMag.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -106,7 +108,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }

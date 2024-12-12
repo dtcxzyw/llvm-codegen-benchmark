@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; gromacs/optimized/3dtransforms.cpp.ll
+; 3 occurrences:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/thinlens.cpp.ll

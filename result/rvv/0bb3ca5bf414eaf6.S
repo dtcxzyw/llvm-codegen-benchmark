@@ -18,11 +18,11 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmfeq.vv	v0, v10, v8
+	vmfeq.vv	v0, v8, v10
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmfne.vv	v0, v10, v8
+	vmfne.vv	v0, v8, v10
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -34,9 +34,9 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmfne.vv	v12, v8, v8
-	vmfne.vv	v8, v10, v10
-	vmor.mm	v0, v8, v12
+	vmfne.vv	v12, v10, v10
+	vmfne.vv	v10, v8, v8
+	vmor.mm	v0, v10, v12
 	ret
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 4, e64, m2, ta, ma

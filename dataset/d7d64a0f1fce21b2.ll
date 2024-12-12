@@ -1,5 +1,5 @@
 
-; 118 occurrences:
+; 116 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -35,8 +35,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

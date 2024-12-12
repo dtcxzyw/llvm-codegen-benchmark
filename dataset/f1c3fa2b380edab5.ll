@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/udp_offload.ll
 ; linux/optimized/virtio_net.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
@@ -9,6 +8,8 @@
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
@@ -18,7 +19,7 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/HasselbladDecompressor.cpp.ll
@@ -28,7 +29,6 @@ entry:
 ; hdf5/optimized/H5B2int.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; linux/optimized/ah6.ll
-; linux/optimized/hda_hwdep.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/ip6_output.ll
@@ -64,13 +64,12 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; icu/optimized/genmbcs.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i16 %1) #0 {
@@ -81,12 +80,13 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; icu/optimized/collationdatareader.ll
 ; icu/optimized/rbt_data.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; slurm/optimized/setup.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

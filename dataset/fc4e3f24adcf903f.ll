@@ -1,5 +1,5 @@
 
-%"class.vcg::Point3.3660419" = type { [3 x float] }
+%"class.vcg::Point3.3840533" = type { [3 x float] }
 
 ; 5 occurrences:
 ; clamav/optimized/unpack.cpp.ll
@@ -11,7 +11,7 @@
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
@@ -35,7 +35,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
@@ -48,7 +48,7 @@ entry:
 define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 4
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i32, ptr %0, i64 %5
   ret ptr %6
@@ -73,9 +73,9 @@ entry:
 define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.vcg::Point3.3660419", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.vcg::Point3.3840533", ptr %0, i64 %5
   ret ptr %6
 }
 

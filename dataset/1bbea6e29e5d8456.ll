@@ -17,7 +17,7 @@ entry:
 ; php/optimized/parse_posix.ll
 ; postgres/optimized/localtime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = srem i32 %2, 7
@@ -33,7 +33,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = srem i32 %2, 100
@@ -53,7 +53,7 @@ entry:
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = srem i32 %2, 400
@@ -74,10 +74,12 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = srem i32 %2, 7
@@ -85,7 +87,8 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/area.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
 ; wireshark/optimized/packet-amr.c.ll
 ; wireshark/optimized/packet-dcerpc-spoolss.c.ll
@@ -109,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = srem i32 %2, 2

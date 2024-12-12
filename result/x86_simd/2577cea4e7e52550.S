@@ -2,7 +2,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpsllq	$7, %ymm2, %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
 	vpsrlq	$7, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$7, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq

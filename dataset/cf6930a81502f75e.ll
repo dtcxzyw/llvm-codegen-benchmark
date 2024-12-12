@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 26 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; coreutils-rs/optimized/2467wwsnh7q897tf.ll
 ; coreutils-rs/optimized/2bhicjbgxru4bfck.ll
@@ -21,6 +21,11 @@
 ; ruby/optimized/transcode.ll
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; wasmtime-rs/optimized/2i7eys0ecsgyjusd.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/89pzn2sx18yjgerweenwud6qr.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -34,7 +39,7 @@ entry:
 ; libquic/optimized/pkcs8.c.ll
 ; mold/optimized/rust-demangle.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = xor i64 %0, -1
@@ -49,7 +54,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -57,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/keyctl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000109(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = xor i64 %0, -1
@@ -71,7 +76,7 @@ entry:
 ; linux/optimized/ldt.ll
 ; linux/optimized/mempolicy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000089(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = xor i64 %0, -1
@@ -82,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = xor i64 %0, -1

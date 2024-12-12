@@ -1,5 +1,5 @@
 
-; 172 occurrences:
+; 171 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; bdwgc/optimized/gc.c.ll
@@ -77,7 +77,6 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; linux/optimized/generic-radix-tree.ll
-; linux/optimized/reciprocal_div.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll

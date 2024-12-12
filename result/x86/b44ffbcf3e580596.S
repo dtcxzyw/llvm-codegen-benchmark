@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	xorl	%ecx, %ecx
 	testb	%sil, %sil
 	setne	%cl
@@ -8,7 +8,7 @@ func0000000000000022:                   # @func0000000000000022
 	movl	$-2147483648, %eax              # imm = 0x80000000
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	testl	%esi, %esi
 	setne	%al
 	cmpb	$121, %dil
@@ -17,7 +17,7 @@ func0000000000000198:                   # @func0000000000000198
 	movzbl	%cl, %eax
 	incl	%eax
 	retq
-func000000000000018c:                   # @func000000000000018c
+func000000000000030c:                   # @func000000000000030c
 	testl	%esi, %esi
 	setne	%al
 	testb	%dil, %dil
@@ -26,7 +26,7 @@ func000000000000018c:                   # @func000000000000018c
 	movzbl	%cl, %eax
 	shll	$21, %eax
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	xorl	%ecx, %ecx
 	testl	%esi, %esi
 	setne	%cl
@@ -36,17 +36,7 @@ func0000000000000182:                   # @func0000000000000182
 	movl	$288, %eax                      # imm = 0x120
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000118:                   # @func0000000000000118
-	cmpl	$20481, %esi                    # imm = 0x5001
-	setae	%al
-	cmpb	$3, %dil
-	setne	%cl
-	orb	%al, %cl
-	movzbl	%cl, %ecx
-	movl	$6, %eax
-	subl	%ecx, %eax
-	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	cmpb	$-37, %sil
 	sete	%al
 	testl	%edi, %edi
@@ -55,7 +45,7 @@ func0000000000000038:                   # @func0000000000000038
 	movzbl	%cl, %eax
 	incl	%eax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	testb	%sil, %sil
 	sete	%al
 	cmpl	$65536, %edi                    # imm = 0x10000

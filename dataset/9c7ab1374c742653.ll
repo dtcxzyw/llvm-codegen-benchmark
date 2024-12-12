@@ -23,12 +23,12 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 4
-  %3 = getelementptr nusw i8, ptr %0, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
   %.idx = shl nsw i64 %2, 5
-  %4 = getelementptr nusw i8, ptr %3, i64 %.idx
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 

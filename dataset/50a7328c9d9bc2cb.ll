@@ -18,7 +18,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp eq i8 %1, 0
@@ -61,7 +61,7 @@ entry:
 ; slurm/optimized/parse_time.ll
 ; wireshark/optimized/packet-iso15765.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
   %4 = icmp ult i8 %1, 10
@@ -69,7 +69,7 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; libpng/optimized/pngwrite.c.ll
 ; libquic/optimized/spdy_framer.cc.ll
@@ -83,6 +83,7 @@ entry:
 ; wireshark/optimized/packet-gsm_a_common.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-tn3270.c.ll
+; wireshark/optimized/packet-wtls.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i8 %1, i32 %2) #0 {
 entry:
@@ -95,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp eq i8 %1, -119
@@ -107,7 +108,7 @@ entry:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func000000000000006a(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
   %4 = icmp slt i8 %1, 0
@@ -125,7 +126,7 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/proc_rom.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i8 %1, 0
@@ -137,7 +138,7 @@ entry:
 ; linux/optimized/scsi_scan.ll
 ; llvm/optimized/JSON.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000068(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 65488
   %4 = icmp ugt i8 %1, 57
@@ -160,10 +161,10 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000074(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 9
-  %4 = icmp ult i8 %1, 65
+  %4 = icmp samesign ult i8 %1, 65
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -171,7 +172,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/lib_strtold.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
   %4 = icmp sgt i8 %1, 57
@@ -182,7 +183,7 @@ entry:
 ; 1 occurrences:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
   %4 = icmp ugt i8 %1, 64

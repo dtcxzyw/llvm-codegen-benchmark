@@ -32,7 +32,7 @@
 ; yosys/optimized/proc_dlatch.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000081(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
@@ -50,7 +50,7 @@ entry:
 ; opencv/optimized/matchers.cpp.ll
 ; opencv/optimized/points_classifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000086(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
@@ -68,7 +68,7 @@ entry:
 ; opencv/optimized/bound_min.cpp.ll
 ; opencv/optimized/face_beautification.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, ptr %1) #0 {
+define i1 @func00000000000000a8(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/edgeboxes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, ptr %1) #0 {
+define i1 @func000000000000008c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0

@@ -1,5 +1,6 @@
 
-; 28 occurrences:
+; 29 occurrences:
+; cmake/optimized/cmCTest.cxx.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; graphviz/optimized/arrows.c.ll

@@ -11,7 +11,7 @@ entry:
   %3 = xor i1 %2, true
   %4 = icmp eq i64 %1, 0
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

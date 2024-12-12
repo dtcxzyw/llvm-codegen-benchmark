@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leal	7(%rdi), %eax
 	andl	$56, %eax
 	cmpq	%rdi, %rax
@@ -22,13 +22,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	leal	-1(%rdi), %eax
 	andl	$7, %eax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leaq	3(%rdi), %rax
 	andq	$-4, %rax
 	cmpq	%rdi, %rax

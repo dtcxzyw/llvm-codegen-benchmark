@@ -16,12 +16,11 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255
-	sltiu	a1, a1, 6
+	sltiu	a1, a1, 15
 	xori	a1, a1, 1
 	and	a0, a0, a1
-	bnez	a0, .LBB2_2
-	li	a0, 118
-	ret
-.LBB2_2:
-	li	a0, 123
+	lui	a1, 2
+	addi	a0, a0, -1
+	addiw	a1, a1, 1808
+	and	a0, a0, a1
 	ret

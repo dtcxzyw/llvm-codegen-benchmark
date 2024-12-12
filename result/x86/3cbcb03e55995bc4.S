@@ -17,8 +17,8 @@ func0000000000000002:                   # @func0000000000000002
 	cmovnel	%ecx, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	leal	40(%rsi), %ecx
+	leal	-2(%rsi), %ecx
+	xorl	%eax, %eax
 	testb	$1, %dil
-	movl	$255, %eax
 	cmovnel	%ecx, %eax
 	retq

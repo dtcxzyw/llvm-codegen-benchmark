@@ -1,10 +1,9 @@
 
-; 427 occurrences:
+; 422 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/mapperTree.c.ll
-; abc/optimized/satUtil.c.ll
 ; abc/optimized/utilNam.c.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -16,6 +15,7 @@
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/btMultiBody.ll
 ; bullet3/optimized/btMultiBodyDynamicsWorld.ll
 ; c3c/optimized/llvm_codegen.c.ll
@@ -97,7 +97,6 @@
 ; linux/optimized/hwmon.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/indirect.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/intel_guc_submission.ll
@@ -105,11 +104,7 @@
 ; linux/optimized/intel_migrate.ll
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/kobject_uevent.ll
-; linux/optimized/libata-transport.ll
-; linux/optimized/mcast_snoop.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
@@ -130,6 +125,7 @@
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
@@ -155,7 +151,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
@@ -176,6 +171,10 @@
 ; luajit/optimized/lj_bcwrite.ll
 ; luajit/optimized/lj_bcwrite_dyn.ll
 ; luau/optimized/Compiler.cpp.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_textarea.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/alignDialog.cpp.ll
@@ -223,8 +222,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -288,14 +285,11 @@
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
@@ -401,7 +395,6 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; velox/optimized/LeadLag.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
-; wasmtime-rs/optimized/1cnnneruo9nr1th2.ll
 ; wireshark/optimized/address_types.c.ll
 ; wireshark/optimized/byte_view_text.cpp.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
@@ -426,17 +419,19 @@
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/ast_smt_pp.cpp.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 136 occurrences:
+; 137 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; gromacs/optimized/compute_io.cpp.ll
@@ -537,7 +532,6 @@ entry:
 ; llvm/optimized/PoisonChecking.cpp.ll
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RealtimeSanitizer.cpp.ll
 ; llvm/optimized/RelLookupTableConverter.cpp.ll
 ; llvm/optimized/ReplaceWithVeclib.cpp.ll
@@ -573,6 +567,8 @@ entry:
 ; velox/optimized/FindFirst.cpp.ll
 ; verilator/optimized/V3EmitCHeaders.cpp.ll
 ; yosys/optimized/btor.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
@@ -666,7 +662,7 @@ entry:
   ret i32 %4
 }
 
-; 154 occurrences:
+; 153 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -780,7 +776,6 @@ entry:
 ; llvm/optimized/PoisonChecking.cpp.ll
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RealtimeSanitizer.cpp.ll
 ; llvm/optimized/RelLookupTableConverter.cpp.ll
 ; llvm/optimized/ReplaceWithVeclib.cpp.ll
@@ -826,7 +821,7 @@ define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -843,7 +838,7 @@ entry:
   ret i32 %4
 }
 
-; 43 occurrences:
+; 41 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ioWriteBlifMv.c.ll
@@ -869,8 +864,6 @@ entry:
 ; luajit/optimized/minilua.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
-; openblas/optimized/dgbtrf.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; opencv/optimized/essential_solver.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openjdk/optimized/ProcessImpl_md.ll
@@ -913,7 +906,7 @@ define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -934,7 +927,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; openjdk/optimized/imageDecompressor.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
@@ -1191,11 +1185,12 @@ define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_imagebutton.ll
 ; php/optimized/phpdbg_help.ll
 ; postgres/optimized/lock.ll
 ; Function Attrs: nounwind
@@ -1372,7 +1367,7 @@ define i32 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nuw i32 %2, 4
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -1431,7 +1426,7 @@ define i32 @func0000000000000015(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add nsw i32 %2, 719468
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

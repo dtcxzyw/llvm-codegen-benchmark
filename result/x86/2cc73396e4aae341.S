@@ -1,4 +1,4 @@
-func0000000000001982:                   # @func0000000000001982
+func0000000000006302:                   # @func0000000000006302
 	testq	%rsi, %rsi
 	setne	%al
 	cmpq	$27, %rdi
@@ -8,7 +8,7 @@ func0000000000001982:                   # @func0000000000001982
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000382:                   # @func0000000000000382
+func0000000000000b02:                   # @func0000000000000b02
 	cmpq	$1, %rdi
 	sete	%al
 	testq	%rsi, %rsi
@@ -18,7 +18,7 @@ func0000000000000382:                   # @func0000000000000382
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000154c:                   # @func000000000000154c
+func000000000000528c:                   # @func000000000000528c
 	cmpq	$12, %rsi
 	setge	%al
 	cmpq	$8, %rdi
@@ -28,7 +28,7 @@ func000000000000154c:                   # @func000000000000154c
 	setle	%al
 	orb	%cl, %al
 	retq
-func0000000000000888:                   # @func0000000000000888
+func000000000000a528:                   # @func000000000000a528
 	cmpq	$100, %rdi
 	setb	%al
 	cmpq	$30000, %rsi                    # imm = 0x7530

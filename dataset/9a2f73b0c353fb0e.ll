@@ -1,10 +1,11 @@
 
-; 134 occurrences:
+; 137 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/ioaUtil.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; arrow/optimized/uri.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/Glob.cxx.ll
 ; cmake/optimized/escape.c.ll
@@ -32,6 +33,7 @@
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; icu/optimized/cstring.ll
 ; icu/optimized/uts46.ll
+; influxdb-rs/optimized/380gcqze52ow6205.ll
 ; libquic/optimized/prtime.cc.ll
 ; libquic/optimized/ssl_cipher.c.ll
 ; libquic/optimized/v3_utl.c.ll
@@ -115,7 +117,6 @@
 ; postgres/optimized/jsonapi_shlib.ll
 ; postgres/optimized/jsonapi_srv.ll
 ; postgres/optimized/string_utils.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/tokenizer.cc.ll
 ; qemu/optimized/monitor_hmp.c.ll
 ; qemu/optimized/util_uri.c.ll
@@ -125,6 +126,8 @@
 ; redis/optimized/sds.ll
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
 ; ripgrep-rs/optimized/rwbxp5vay147miz.ll
+; ruby/optimized/regexec.ll
+; ruby/optimized/symbol.ll
 ; slurm/optimized/serializer_url_encoded.ll
 ; stb/optimized/stb_c_lexer.c.ll
 ; vcpkg/optimized/strings.cpp.ll
@@ -135,7 +138,7 @@
 ; z3/optimized/api_log.cpp.ll
 ; z3/optimized/opt_parse.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000108(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -33
   %3 = add i8 %2, -65
@@ -149,7 +152,7 @@ entry:
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-wtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000388(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000b08(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
   %3 = add nsw i8 %2, -14

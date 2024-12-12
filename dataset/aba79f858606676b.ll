@@ -6,7 +6,7 @@
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000003a8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3

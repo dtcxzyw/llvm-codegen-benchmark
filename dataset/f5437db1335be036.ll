@@ -15,7 +15,7 @@ entry:
 ; icu/optimized/ucharstrie.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0) #0 {
+define i1 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 1
   %2 = sub nsw i32 %0, %1

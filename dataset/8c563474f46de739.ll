@@ -1,7 +1,10 @@
 
-; 234 occurrences:
+; 237 occurrences:
 ; abc/optimized/ivyCutTrav.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -238,7 +241,7 @@
 define i64 @func0000000000000003(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = and i64 %3, 25165823
   ret i64 %4
 }
@@ -273,12 +276,14 @@ entry:
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, -8
   ret i64 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
@@ -286,7 +291,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = and i64 %3, 511
   ret i64 %4
 }
@@ -307,7 +312,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = and i64 %3, 63
   ret i64 %4
 }

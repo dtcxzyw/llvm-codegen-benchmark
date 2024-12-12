@@ -1,22 +1,10 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	zip2	v6.8b, v0.8b, v0.8b
-	zip1	v0.8b, v0.8b, v0.8b
-	add	v5.4s, v2.4s, v4.4s
-	add	v7.4s, v1.4s, v3.4s
-	ushr	v5.4s, v5.4s, #1
-	ushll	v6.4s, v6.4h, #0
-	ushll	v0.4s, v0.4h, #0
-	ushr	v7.4s, v7.4s, #1
-	shl	v6.4s, v6.4s, #31
-	shl	v0.4s, v0.4s, #31
-	cmlt	v6.4s, v6.4s, #0
-	cmlt	v0.4s, v0.4s, #0
-	bif	v4.16b, v5.16b, v6.16b
-	bif	v3.16b, v7.16b, v0.16b
-	bit	v2.16b, v5.16b, v6.16b
-	bsl	v0.16b, v7.16b, v1.16b
-	sub	v1.4s, v2.4s, v4.4s
-	sub	v0.4s, v0.4s, v3.4s
+	add	w8, w1, w2
+	tst	w0, #0x1
+	lsr	w8, w8, #1
+	csel	w9, w2, w8, ne
+	csel	w8, w8, w1, ne
+	sub	w0, w8, w9
 	ret
                                         // -- End function

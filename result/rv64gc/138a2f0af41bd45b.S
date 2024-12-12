@@ -15,11 +15,19 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a2
 .LBB1_2:                                # %entry
 	ret
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	li	a2, 23
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 35
 	ret
 .LBB2_2:
+	addi	a0, a0, 3
+	ret
+func0000000000000009:                   # @func0000000000000009
+	li	a2, 23
+	bgeu	a1, a2, .LBB3_2
+	li	a0, 35
+	ret
+.LBB3_2:
 	addi	a0, a0, 3
 	ret

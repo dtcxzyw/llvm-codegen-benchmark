@@ -50,7 +50,9 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -60,18 +62,17 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 1
-  %4 = select i1 %0, i64 %3, i64 %1
-  %5 = add i64 %4, -1
-  %6 = icmp ult i64 %5, 1073741823
-  ret i1 %6
+  %3 = add i64 %1, -1
+  %4 = select i1 %0, i64 %2, i64 %3
+  %5 = icmp ult i64 %4, 1073741823
+  ret i1 %5
 }
 
 ; 2 occurrences:
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2000
   %4 = select i1 %0, i64 %3, i64 %1

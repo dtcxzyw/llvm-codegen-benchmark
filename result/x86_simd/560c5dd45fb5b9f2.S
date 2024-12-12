@@ -1,23 +1,23 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm4, %ymm4, %ymm4
 	vpaddq	%ymm4, %ymm2, %ymm2
 	vpxor	%xmm4, %xmm4, %xmm4
 	vpblendd	$170, %ymm4, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm4[1],ymm2[2],ymm4[3],ymm2[4],ymm4[5],ymm2[6],ymm4[7]
-	vpcmpeqq	%ymm1, %ymm2, %k1
+	vpcmpeqq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm4, %ymm4, %ymm4
 	vpsubq	%ymm4, %ymm2, %ymm2
 	vpxor	%xmm4, %xmm4, %xmm4
 	vpblendd	$170, %ymm4, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm4[1],ymm2[2],ymm4[3],ymm2[4],ymm4[5],ymm2[6],ymm4[7]
-	vpcmpnleuq	%ymm1, %ymm2, %k1
+	vpcmpltuq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -31,7 +31,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpandq	.LCPI2_1(%rip){1to4}, %ymm2, %ymm2
-	vpcmpnltuq	%ymm1, %ymm2, %k1
+	vpcmpleuq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -45,7 +45,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpandq	.LCPI3_1(%rip){1to4}, %ymm2, %ymm2
-	vpcmpeqq	%ymm1, %ymm2, %k1
+	vpcmpeqq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

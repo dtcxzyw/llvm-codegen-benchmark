@@ -14,12 +14,11 @@ entry:
   ret i8 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; hyperscan/optimized/rose_build_engine_blob.cpp.ll
 ; linux/optimized/sched.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; Function Attrs: nounwind
@@ -31,14 +30,13 @@ entry:
   ret i8 %3
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/funcobject.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; faiss/optimized/utils.cpp.ll
 ; hyperscan/optimized/ng_stop.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

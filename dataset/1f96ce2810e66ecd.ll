@@ -146,11 +146,11 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -11904
   %4 = icmp ult i32 %3, 30288
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp ult i32 %0, 11172
   %7 = or i1 %6, %5
   ret i1 %7
@@ -325,11 +325,11 @@ entry:
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000908(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -11904
   %4 = icmp ult i32 %3, 30288
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp ult i32 %0, 11172
   %7 = or i1 %6, %5
   ret i1 %7
@@ -338,11 +338,11 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/austria.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000102(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1919
   %4 = icmp ult i32 %3, 16
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp eq i32 %0, 1
   %7 = or i1 %6, %5
   ret i1 %7
@@ -353,11 +353,11 @@ entry:
 ; quantlib/optimized/austria.ll
 ; quantlib/optimized/norway.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000118(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -27
   %4 = icmp ult i32 %3, -2
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   %6 = icmp ne i32 %1, 12
   %7 = or i1 %5, %6
   ret i1 %7
@@ -366,11 +366,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000298(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000918(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -14
   %4 = icmp ult i32 %3, -4
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   %6 = icmp ne i32 %1, 0
   %7 = or i1 %5, %6
   ret i1 %7

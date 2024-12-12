@@ -22,7 +22,7 @@ func0000000000000009:                   # @func0000000000000009
 	.long	128                             # 0x80
 .LCPI2_1:
 	.long	512                             # 0x200
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vptestmd	%ymm2, %ymm2, %k1
 	vpord	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vpternlogd	$248, .LCPI2_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
@@ -40,19 +40,8 @@ func0000000000000003:                   # @func0000000000000003
 	.long	3072                            # 0xc00
 .LCPI4_1:
 	.long	2048                            # 0x800
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vptestmd	%ymm2, %ymm2, %k1
 	vpord	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vpternlogd	$248, .LCPI4_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
-	retq
-.LCPI5_0:
-	.long	4                               # 0x4
-.LCPI5_1:
-	.long	2                               # 0x2
-.LCPI5_2:
-	.long	1                               # 0x1
-func0000000000000028:                   # @func0000000000000028
-	vpcmpnltud	.LCPI5_0(%rip){1to8}, %ymm2, %k1
-	vpord	.LCPI5_1(%rip){1to8}, %ymm1, %ymm1 {%k1}
-	vpternlogd	$236, .LCPI5_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	retq

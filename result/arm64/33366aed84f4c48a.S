@@ -1,10 +1,8 @@
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	cmgt	v3.4s, v1.4s, #0
-	add	v1.4s, v1.4s, v2.4s
-	bit	v0.16b, v1.16b, v3.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	sub	w8, w1, #1
+	cmp	w1, #0
+	csel	w8, w8, w0, gt
+	sxtw	x0, w8
 	ret
                                         // -- End function

@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; linux/optimized/objpool.ll
 ; linux/optimized/vlv_dsi.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsa_gen.ll
 ; openssl/optimized/libcrypto-shlib-rsa_gen.ll
 ; openssl/optimized/safe_math_test-bin-safe_math_test.ll
@@ -19,7 +18,7 @@ entry:
   ret i32 %5
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/rebuildpe.c.ll
 ; clamav/optimized/upx.c.ll
@@ -54,6 +53,7 @@ entry:
 ; wireshark/optimized/sharkd_session.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:

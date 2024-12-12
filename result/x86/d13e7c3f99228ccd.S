@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$429496730, %eax                # imm = 0x1999999A
 	setae	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	movl	%edi, %eax
 	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
 	shrq	$37, %rax
@@ -29,7 +29,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$5000, %edi                     # imm = 0x1388
 	setb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	movl	$3518437209, %ecx               # imm = 0xD1B71759
 	imulq	%rax, %rcx
@@ -39,6 +39,6 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$7000, %edi                     # imm = 0x1B58
 	setb	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	xorl	%eax, %eax
 	retq

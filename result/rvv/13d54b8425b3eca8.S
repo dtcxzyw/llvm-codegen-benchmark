@@ -12,7 +12,7 @@ func0000000000000078:                   # @func0000000000000078
 	vzext.vf4	v14, v12
 	vmadd.vv	v14, v10, v8
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vnsrl.wi	v8, v14, 5
+	vnsrl.wi	v8, v14, 8
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v8, 0
 	ret

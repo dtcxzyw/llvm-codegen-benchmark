@@ -4,7 +4,7 @@ func000000000000001f:                   # @func000000000000001f
 	retq
 func0000000000000013:                   # @func0000000000000013
 	shll	$16, %esi
-	leaq	1(%rsi,%rdi), %rax
+	leaq	1(%rdi,%rsi), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%esi, %eax
@@ -19,5 +19,5 @@ func000000000000001c:                   # @func000000000000001c
 	retq
 func0000000000000003:                   # @func0000000000000003
 	shll	$5, %esi
-	leaq	12(%rsi,%rdi), %rax
+	leaq	12(%rdi,%rsi), %rax
 	retq

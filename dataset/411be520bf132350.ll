@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; openjdk/optimized/xBarrierSetC2.ll
 ; openjdk/optimized/zBarrierSetC2.ll
 ; php/optimized/pcre2_jit_compile.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

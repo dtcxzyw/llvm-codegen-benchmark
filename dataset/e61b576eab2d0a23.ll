@@ -24,7 +24,7 @@
 ; yosys/optimized/share.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %1
@@ -54,13 +54,13 @@ entry:
 ; opencv/optimized/calibrate_camera_charuco.cpp.ll
 ; yosys/optimized/firrtl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 4
   %4 = select i1 %1, i32 %3, i32 %2
   %5 = or disjoint i32 %4, 8
   %6 = select i1 %0, i32 %5, i32 %4
-  %7 = icmp ult i32 %6, 10
+  %7 = icmp samesign ult i32 %6, 10
   ret i1 %7
 }
 

@@ -38,8 +38,7 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
-; cmake/optimized/archive_read_support_format_rar5.c.ll
+; 6 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll

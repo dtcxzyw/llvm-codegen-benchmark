@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
@@ -10,6 +10,7 @@
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
+; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

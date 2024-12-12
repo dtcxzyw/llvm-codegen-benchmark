@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 59 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/extension_test.cc.ll
@@ -9,6 +9,7 @@
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; crow/optimized/example_session.cpp.ll
@@ -59,7 +60,7 @@
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = xor i32 %3, -1

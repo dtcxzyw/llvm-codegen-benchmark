@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; git/optimized/archive-zip.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -7,9 +7,10 @@
 ; grpc/optimized/hpack_parser.cc.ll
 ; hwloc/optimized/topology-xml.ll
 ; icu/optimized/normalizer2impl.ll
-; linux/optimized/i915_module.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/SveEmitter.cpp.ll
 ; opencv/optimized/local_optimization.cpp.ll
+; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openspiel/optimized/SolverIF.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll

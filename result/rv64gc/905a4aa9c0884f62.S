@@ -36,10 +36,6 @@ func0000000000000002:                   # @func0000000000000002
 	sub	a0, a0, a1
 	slli	a0, a0, 3
 	ret
-func000000000000000c:                   # @func000000000000000c
-	sub	a0, a0, a1
-	slli	a0, a0, 2
-	ret
 func000000000000001d:                   # @func000000000000001d
 	sub	a0, a0, a1
 	slli	a0, a0, 3
@@ -64,4 +60,8 @@ func000000000000001f:                   # @func000000000000001f
 func0000000000000028:                   # @func0000000000000028
 	subw	a0, a0, a1
 	slli	a0, a0, 32
+	ret
+func0000000000000031:                   # @func0000000000000031
+	sub	a0, a0, a1
+	slli	a0, a0, 2
 	ret

@@ -31,17 +31,19 @@ func0000000000000002:                   # @func0000000000000002
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
-	vucomisd	%xmm0, %xmm0
-	setp	%al
+.LCPI4_0:
+	.quad	0x4000000000000000              # double 2
+func0000000000000008:                   # @func0000000000000008
+	vucomisd	.LCPI4_0(%rip), %xmm0
+	setnp	%cl
+	sete	%al
+	andb	%cl, %al
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-.LCPI5_0:
-	.quad	0x7ff0000000000000              # double +Inf
-func0000000000000008:                   # @func0000000000000008
-	vucomisd	.LCPI5_0(%rip), %xmm0
-	setae	%al
+func0000000000000001:                   # @func0000000000000001
+	vucomisd	%xmm0, %xmm0
+	setp	%al
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq

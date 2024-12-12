@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/ioReadPla.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -7,13 +7,12 @@
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/vsprintf.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; qemu/optimized/hw_char_serial.c.ll
 ; spike/optimized/mmu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0

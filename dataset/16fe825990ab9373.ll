@@ -1,10 +1,8 @@
 
-; 23 occurrences:
-; assimp/optimized/zip.c.ll
+; 20 occurrences:
 ; lief/optimized/ssl_tls.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
-; node/optimized/libnode.crypto_common.ll
 ; openssl/optimized/asynciotest-bin-ssltestlib.ll
 ; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
 ; openssl/optimized/dtlstest-bin-ssltestlib.ll
@@ -18,13 +16,12 @@
 ; openssl/optimized/rpktest-bin-ssltestlib.ll
 ; openssl/optimized/servername_test-bin-ssltestlib.ll
 ; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
-; openssl/optimized/ssl_test-bin-handshake.ll
 ; openssl/optimized/sslapitest-bin-ssltestlib.ll
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = add nuw nsw i64 %3, 13
@@ -32,7 +29,7 @@ entry:
   ret i1 %5
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; flac/optimized/foreign_metadata.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
@@ -59,9 +56,8 @@ entry:
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = add nuw nsw i64 %3, 13
@@ -77,7 +73,7 @@ entry:
 ; openssl/optimized/libssl-shlib-d1_lib.ll
 ; openssl/optimized/libssl-shlib-extensions_srvr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = add nsw i64 %3, -12
@@ -85,23 +81,46 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 4 occurrences:
 ; openssl/optimized/asynciotest-bin-asynciotest.ll
-; openssl/optimized/libcommon-lib-ciphercommon_ccm.ll
-; openssl/optimized/libcrypto-lib-ct_oct.ll
-; openssl/optimized/libcrypto-shlib-ct_oct.ll
 ; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-shlib-d1_lib.ll
 ; openssl/optimized/tls13ccstest-bin-tls13ccstest.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = add nsw i64 %3, -35
+  %5 = icmp samesign ult i64 %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; assimp/optimized/zip.c.ll
+; node/optimized/libnode.crypto_common.ll
+; openssl/optimized/ssl_test-bin-handshake.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = add nuw nsw i64 %3, 2
+  %5 = icmp samesign ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 7 occurrences:
+; freetype/optimized/sfnt.c.ll
+; openssl/optimized/libcommon-lib-ciphercommon_ccm.ll
+; openssl/optimized/libcrypto-lib-ct_oct.ll
+; openssl/optimized/libcrypto-shlib-ct_oct.ll
 ; qemu/optimized/fdt_ro.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; spike/optimized/fdt_ro.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = add nsw i64 %3, -35
+  %4 = add nsw i64 %3, -1
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -175,7 +194,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = add i64 %3, -24
@@ -187,7 +206,7 @@ entry:
 ; linux/optimized/md.ll
 ; wireshark/optimized/packet-rtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = add i64 %3, 2147483648
@@ -195,9 +214,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; libzmq/optimized/v1_decoder.cpp.ll
-; linux/optimized/i915_gem_gtt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -219,9 +237,31 @@ entry:
 }
 
 ; 1 occurrences:
+; z3/optimized/dd_bdd.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or i64 %1, %2
+  %4 = add nuw nsw i64 %3, 1
+  %5 = icmp eq i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; node/optimized/libnode.crypto_clienthello.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f5(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = add nuw nsw i64 %3, 2
+  %5 = icmp samesign ule i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; node/optimized/libnode.crypto_clienthello.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = add nuw nsw i64 %3, 2

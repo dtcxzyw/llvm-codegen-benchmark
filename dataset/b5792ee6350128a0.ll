@@ -6,7 +6,7 @@
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 10
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

@@ -60,11 +60,10 @@ entry:
   ret i64 %5
 }
 
-; 25 occurrences:
+; 23 occurrences:
 ; cmake/optimized/nghttp2_stream.c.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; freetype/optimized/truetype.c.ll
 ; jq/optimized/regcomp.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
@@ -81,7 +80,6 @@ entry:
 ; openjdk/optimized/loopTransform.ll
 ; openjdk/optimized/loopnode.ll
 ; openmpi/optimized/ad_write_coll.ll
-; php/optimized/dow.ll
 ; php/optimized/interval.ll
 ; protobuf/optimized/time_util.cc.ll
 ; redis/optimized/localtime.ll
@@ -91,6 +89,18 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
+  %5 = add nsw i64 %4, %3
+  ret i64 %5
+}
+
+; 2 occurrences:
+; darktable/optimized/amaze.cc.ll
+; php/optimized/dow.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nuw nsw i64 %0, %1
   %5 = add nsw i64 %4, %3
   ret i64 %5
 }
@@ -113,17 +123,6 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %0, %1
-  %5 = add nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; darktable/optimized/amaze.cc.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = sub nuw nsw i64 %0, %1
   %5 = add nsw i64 %4, %3
   ret i64 %5
 }

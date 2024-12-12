@@ -46,11 +46,11 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = shl nuw i32 %3, %1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 68 occurrences:
+; 69 occurrences:
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/giaAiger.c.ll
@@ -62,6 +62,8 @@ entry:
 ; abc/optimized/sclLibScl.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
 ; clamav/optimized/bytecode.c.ll
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/frameobject.ll
@@ -92,7 +94,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -124,7 +125,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = shl i32 %3, %1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

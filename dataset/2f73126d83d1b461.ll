@@ -23,7 +23,7 @@
 ; soc-simulator/optimized/verilated.ll
 ; xgboost/optimized/tree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 262143
   %4 = zext nneg i32 %3 to i64
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; entt/optimized/view.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1048575
   %4 = zext nneg i32 %3 to i64

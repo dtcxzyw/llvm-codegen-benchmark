@@ -19,11 +19,11 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub i64 %1, %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 15 occurrences:
+; 19 occurrences:
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
@@ -39,12 +39,16 @@ entry:
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw i64 %1, %3
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -52,11 +56,11 @@ entry:
 ; cmake/optimized/block_util.c.ll
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw i64 %1, %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -71,7 +75,7 @@ define i1 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub i64 %1, %3
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -83,7 +87,7 @@ define i1 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub i64 %1, %3
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -91,11 +95,11 @@ entry:
 ; openjdk/optimized/memnode.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
@@ -111,7 +115,7 @@ define i1 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub i64 %1, %3
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -122,11 +126,11 @@ entry:
 ; opencc/optimized/bit-vector.cc.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -139,17 +143,19 @@ entry:
 ; redis/optimized/sds.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
-; 27 occurrences:
+; 29 occurrences:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/work_stealing.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
@@ -176,11 +182,11 @@ entry:
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -190,70 +196,71 @@ entry:
 ; redis/optimized/sds.ll
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000ac(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = icmp ne i64 %4, %0
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; llvm/optimized/FunctionComparator.cpp.ll
 ; php/optimized/array.ll
 ; rust-analyzer-rs/optimized/3elplf9uza0vvo88.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
+; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; velox/optimized/StackTrace.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; git/optimized/apply.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %1, %3
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; lief/optimized/x509_crt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nuw i64 %1, %3
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -262,11 +269,11 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
@@ -275,11 +282,11 @@ entry:
 ; hyperscan/optimized/stream.c.ll
 ; slurm/optimized/power_save.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -291,11 +298,11 @@ entry:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw i64 %1, %3
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -306,18 +313,7 @@ define i1 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub i64 %1, %3
-  %5 = icmp uge i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = sub nuw nsw i64 %1, %3
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ule i64 %0, %4
   ret i1 %5
 }
 
@@ -326,33 +322,33 @@ entry:
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw nsw i64 %1, %3
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/blk-core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nuw i64 %1, %3
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %1, %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 

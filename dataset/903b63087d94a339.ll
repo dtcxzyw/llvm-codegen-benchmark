@@ -1,5 +1,5 @@
 
-; 206 occurrences:
+; 202 occurrences:
 ; abc/optimized/absRefSelect.c.ll
 ; abc/optimized/darCore.c.ll
 ; abc/optimized/giaIso.c.ll
@@ -11,6 +11,7 @@
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/gregorian.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btCapsuleShape.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -49,7 +50,6 @@
 ; gromacs/optimized/gmx_rotmat.cpp.ll
 ; gromacs/optimized/gmx_sham.cpp.ll
 ; gromacs/optimized/groio.cpp.ll
-; gromacs/optimized/once.cpp.ll
 ; gromacs/optimized/pdbio.cpp.ll
 ; gromacs/optimized/swapcoords.cpp.ll
 ; hdf5/optimized/H5Cint.c.ll
@@ -61,7 +61,6 @@
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/collationsets.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/hebrwcal.ll
 ; icu/optimized/indiancal.ll
 ; icu/optimized/islamcal.ll
@@ -72,7 +71,6 @@
 ; jq/optimized/builtin.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; libquic/optimized/exponentiation.c.ll
-; libquic/optimized/random.c.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/rate.ll
@@ -88,7 +86,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -114,12 +111,10 @@
 ; meshlab/optimized/shell.cpp.ll
 ; minetest/optimized/gameui.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
-; mitsuba3/optimized/rgb2spec.c.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; mitsuba3/optimized/spiral.cpp.ll
 ; nori/optimized/block.cpp.ll
 ; nori/optimized/layout.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/Remap_Demo.cpp.ll
 ; opencv/optimized/charuco_detector.cpp.ll
@@ -198,6 +193,7 @@
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; zxing/optimized/DMBitLayout.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/ODDataBarExpandedBitDecoder.cpp.ll
@@ -214,7 +210,8 @@ entry:
   ret i32 %2
 }
 
-; 163 occurrences:
+; 161 occurrences:
+; boost/optimized/gregorian.ll
 ; chibicc/optimized/codegen.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/ceval_gil.ll
@@ -239,7 +236,6 @@ entry:
 ; linux/optimized/alps.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/drm_blend.ll
-; linux/optimized/head64.ll
 ; linux/optimized/intel_hdcp.ll
 ; linux/optimized/lib.ll
 ; linux/optimized/libata-eh.ll
@@ -254,7 +250,6 @@ entry:
 ; linux/optimized/xhci-ring.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; openspiel/optimized/TransTableL.cpp.ll
@@ -268,7 +263,6 @@ entry:
 ; postgres/optimized/strftime.ll
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/worker.ll
-; postgres/optimized/xlogprefetcher.ll
 ; postgres/optimized/zic.ll
 ; protobuf/optimized/dynamic_message.cc.ll
 ; qemu/optimized/block_nvme.c.ll

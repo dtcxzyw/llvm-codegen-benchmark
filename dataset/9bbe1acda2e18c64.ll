@@ -11,7 +11,7 @@
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = or disjoint i64 %0, %1
@@ -23,7 +23,6 @@ entry:
 ; 31 occurrences:
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/sfnt.c.ll
-; freetype/optimized/type1.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -52,8 +51,9 @@ entry:
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; qemu/optimized/hw_nvme_dif.c.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = or disjoint i64 %0, %1
@@ -62,10 +62,9 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/sfnt.c.ll
-; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-lib-statem_lib.ll
 ; openssl/optimized/libssl-shlib-d1_lib.ll
@@ -73,12 +72,24 @@ entry:
 ; openssl/optimized/packettest-bin-packettest.ll
 ; openssl/optimized/tls13ccstest-bin-tls13ccstest.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = or disjoint i64 %0, %1
   %5 = or disjoint i64 %4, %3
-  %6 = icmp ult i64 %5, 2
+  %6 = icmp samesign ult i64 %5, 2
+  ret i1 %6
+}
+
+; 1 occurrences:
+; image-rs/optimized/1njpscpjlgoe3i07.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = or disjoint i64 %0, %1
+  %5 = or disjoint i64 %4, %3
+  %6 = icmp ult i64 %5, -9223372036854775801
   ret i1 %6
 }
 
@@ -87,12 +98,12 @@ entry:
 ; grpc/optimized/alts_zero_copy_grpc_protector.cc.ll
 ; lief/optimized/ssl_msg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = or disjoint i64 %0, %1
   %5 = or disjoint i64 %4, %3
-  %6 = icmp ugt i64 %5, 16372
+  %6 = icmp samesign ugt i64 %5, 16372
   ret i1 %6
 }
 
@@ -107,6 +118,18 @@ entry:
   %4 = or i64 %0, %1
   %5 = or i64 %4, %3
   %6 = icmp eq i64 %5, 0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; freetype/optimized/type1.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000071(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = or disjoint i64 %0, %1
+  %5 = or disjoint i64 %4, %3
+  %6 = icmp samesign eq i64 %5, 0
   ret i1 %6
 }
 

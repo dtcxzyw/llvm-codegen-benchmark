@@ -1,12 +1,11 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
-; linux/optimized/intel_pstate.ll
 ; opencc/optimized/Config.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind

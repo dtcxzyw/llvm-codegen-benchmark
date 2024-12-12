@@ -1,25 +1,16 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fcvtzs	v3.4s, v3.4s
-	fcvtzs	v2.4s, v2.4s
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
-	cmge	v1.4s, v1.4s, #0
-	cmge	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	fcvtzs	w8, s0
+	orr	w8, w0, w8
+	mvn	w8, w8
+	lsr	w0, w8, #31
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fcvtzs	v3.4s, v3.4s
-	fcvtzs	v2.4s, v2.4s
-	movi	v4.4s, #1, lsl #8
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
-	cmhi	v1.4s, v4.4s, v1.4s
-	cmhi	v0.4s, v4.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	fcvtzs	w8, s0
+	orr	w8, w0, w8
+	cmp	w8, #256
+	cset	w0, lo
 	ret
                                         // -- End function

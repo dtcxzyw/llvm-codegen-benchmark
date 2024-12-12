@@ -3,7 +3,7 @@
 ; php/optimized/zend_jit.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -18,7 +18,7 @@ entry:
 ; php/optimized/zend_jit.ll
 ; wireshark/optimized/packet-icmpv6.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000046(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000086(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp eq i32 %1, 0

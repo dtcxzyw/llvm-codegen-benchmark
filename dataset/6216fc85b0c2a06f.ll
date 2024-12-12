@@ -7,12 +7,12 @@
 ; meshlab/optimized/trackmode.cpp.ll
 ; openjdk/optimized/jfrThreadSampler.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -35,12 +35,12 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 

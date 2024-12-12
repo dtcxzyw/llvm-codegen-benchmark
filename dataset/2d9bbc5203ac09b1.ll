@@ -120,7 +120,7 @@ entry:
   ret i16 %3
 }
 
-; 35 occurrences:
+; 37 occurrences:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/utf8.cc.ll
 ; freetype/optimized/autofit.c.ll
@@ -132,9 +132,9 @@ entry:
 ; icu/optimized/ushape.ll
 ; jq/optimized/decNumber.ll
 ; linux/optimized/8250_core.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/aspm.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; llvm/optimized/IfConversion.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
@@ -145,9 +145,11 @@ entry:
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; node/optimized/simdutf.ll
+; openjdk/optimized/ad_x86.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/level.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/nbtdedup.ll
 ; slurm/optimized/node_features_knl_generic.ll
@@ -160,7 +162,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = or i16 %0, %1
-  %3 = and i16 %2, 16
+  %3 = and i16 %2, 1
   ret i16 %3
 }
 

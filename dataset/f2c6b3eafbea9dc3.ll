@@ -37,8 +37,9 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
+; boost/optimized/area.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
@@ -56,6 +57,11 @@ entry:
 ; postgres/optimized/localtime.ll
 ; wireshark/optimized/packet-btavrcp.c.ll
 ; wireshark/optimized/packet-tivoconnect.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {

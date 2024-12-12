@@ -330,7 +330,7 @@ entry:
   ret i64 %5
 }
 
-; 232 occurrences:
+; 233 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
@@ -563,6 +563,7 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -1039,7 +1040,7 @@ entry:
   ret i64 %5
 }
 
-; 80 occurrences:
+; 78 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -1060,8 +1061,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

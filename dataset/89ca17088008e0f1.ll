@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_shadhi.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; mitsuba3/optimized/principled.cpp.ll

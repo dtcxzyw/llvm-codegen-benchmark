@@ -3,7 +3,7 @@
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = icmp ugt i32 %3, %1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/plaMan.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000036c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000ccc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/yuv_scale.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -36,31 +36,7 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-sna.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000038c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 2
-  %4 = icmp ugt i32 %3, %1
-  %5 = icmp ne i32 %0, 0
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/intel_overlay.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000381(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 1
-  %4 = icmp ugt i32 %3, %1
-  %5 = icmp eq i32 %0, 256
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
-; 201 occurrences:
+; 200 occurrences:
 ; z3/optimized/ackr_model_converter.cpp.ll
 ; z3/optimized/api_ast_map.cpp.ll
 ; z3/optimized/arith_axioms.cpp.ll
@@ -83,7 +59,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/ctx_solver_simplify_tactic.cpp.ll
 ; z3/optimized/datalog_parser.cpp.ll
@@ -263,23 +238,11 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = icmp ugt i32 %3, %1
   %5 = icmp ugt i32 %0, 16
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; zxing/optimized/AZEncoder.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000164(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %2, 6
-  %4 = icmp slt i32 %3, %1
-  %5 = icmp ult i32 %0, 4
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }

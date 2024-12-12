@@ -1,70 +1,70 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	movslq	%edx, %rax
 	imulq	$-86400000, %rax, %rax          # imm = 0xFAD9A400
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movslq	%edx, %rax
 	imulq	$-86400000, %rax, %rax          # imm = 0xFAD9A400
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	movslq	%edx, %rax
 	imulq	$1000000, %rax, %rax            # imm = 0xF4240
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
+	setl	%al
+	retq
+func00000000000000aa:                   # @func00000000000000aa
+	movslq	%edx, %rax
+	imulq	$1000000, %rax, %rax            # imm = 0xF4240
+	addq	%rsi, %rax
+	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func000000000000008a:                   # @func000000000000008a
 	movslq	%edx, %rax
 	imulq	$1000000, %rax, %rax            # imm = 0xF4240
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func0000000000000081:                   # @func0000000000000081
 	movslq	%edx, %rax
 	imulq	$1000000, %rax, %rax            # imm = 0xF4240
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setl	%al
-	retq
-func0000000000000041:                   # @func0000000000000041
-	movslq	%edx, %rax
-	imulq	$1000000, %rax, %rax            # imm = 0xF4240
-	addq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	movslq	%edx, %rax
 	imulq	$1000000, %rax, %rax            # imm = 0xF4240
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	movslq	%edx, %rax
 	imulq	$1000000, %rax, %rax            # imm = 0xF4240
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func000000000000004b:                   # @func000000000000004b
+func000000000000008b:                   # @func000000000000008b
 	movslq	%edx, %rax
 	imulq	$1000000, %rax, %rax            # imm = 0xF4240
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setle	%al
+	cmpq	%rax, %rdi
+	setge	%al
 	retq
-func0000000000000057:                   # @func0000000000000057
+func00000000000000a7:                   # @func00000000000000a7
 	movslq	%edx, %rax
 	imulq	$1000, %rax, %rax               # imm = 0x3E8
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setge	%al
+	cmpq	%rax, %rdi
+	setle	%al
 	retq

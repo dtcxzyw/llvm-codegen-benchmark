@@ -3,7 +3,7 @@
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp ne i32 %3, 0
@@ -19,7 +19,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000058c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = icmp ne i32 %3, 8
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv_u32.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000428(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2095104
   %4 = icmp eq i32 %3, 55296

@@ -1,29 +1,17 @@
 func00000000000000f5:                   // @func00000000000000f5
 // %bb.0:                               // %entry
-	movi	v3.4s, #10
-	ushll	v0.8h, v0.8b, #0
-	mov	w8, #-528                       // =0xfffffdf0
-	mul	v2.4s, v2.4s, v3.4s
-	mul	v1.4s, v1.4s, v3.4s
-	uaddw	v3.4s, v1.4s, v0.4h
-	uaddw2	v0.4s, v2.4s, v0.8h
-	dup	v2.4s, w8
-	add	v1.4s, v0.4s, v2.4s
-	add	v0.4s, v3.4s, v2.4s
+	mov	w8, #10                         // =0xa
+	mul	w8, w1, w8
+	add	w8, w8, w0, uxtb
+	sub	w0, w8, #528
 	ret
                                         // -- End function
 func00000000000000e5:                   // @func00000000000000e5
 // %bb.0:                               // %entry
-	movi	v3.4s, #21
-	ushll	v0.8h, v0.8b, #0
-	mov	w8, #39519                      // =0x9a5f
-	movk	w8, #65534, lsl #16
-	mul	v2.4s, v2.4s, v3.4s
-	mul	v1.4s, v1.4s, v3.4s
-	uaddw	v3.4s, v1.4s, v0.4h
-	uaddw2	v0.4s, v2.4s, v0.8h
-	dup	v2.4s, w8
-	add	v1.4s, v0.4s, v2.4s
-	add	v0.4s, v3.4s, v2.4s
+	mov	w8, #21                         // =0x15
+	mul	w8, w1, w8
+	add	w8, w8, w0, uxtb
+	sub	w8, w8, #22, lsl #12            // =90112
+	sub	w0, w8, #1441
 	ret
                                         // -- End function

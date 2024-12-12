@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 100, %1
   %3 = sub nsw i32 32000, %0
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sub nsw i32 0, %0
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sub nsw i32 0, %0
@@ -54,11 +54,11 @@ entry:
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000098(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sub i32 0, %0
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -76,11 +76,11 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/int.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
   %3 = sub i32 0, %0
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 

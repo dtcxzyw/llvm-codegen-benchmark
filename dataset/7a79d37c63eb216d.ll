@@ -1,11 +1,10 @@
 
-; 144 occurrences:
+; 143 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/textdet.c.ll
 ; cmake/optimized/RegularExpression.cxx.ll
@@ -148,14 +147,15 @@
 define i64 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; brotli/optimized/encode.c.ll
 ; gromacs/optimized/kerneldispatch.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
 ; icu/optimized/ucasemap.ll
 ; libquic/optimized/a_utf8.c.ll
 ; libquic/optimized/modp_b64.cc.ll
@@ -172,12 +172,12 @@ entry:
 define i64 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 75 occurrences:
+; 77 occurrences:
 ; clamav/optimized/binhex.c.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/oabd.c.ll
@@ -252,17 +252,19 @@ entry:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/k12.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 8 occurrences:
+; 18 occurrences:
 ; flac/optimized/metadata_iterators.c.ll
 ; libevent/optimized/event_tagging.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -271,11 +273,21 @@ entry:
 ; z3/optimized/sat_ddfw.cpp.ll
 ; z3/optimized/sat_prob.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -286,7 +298,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -298,7 +310,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -309,7 +321,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

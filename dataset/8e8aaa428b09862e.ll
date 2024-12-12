@@ -1,9 +1,10 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/formattedval_sbimpl.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll

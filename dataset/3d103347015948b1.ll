@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; clamav/optimized/list.cpp.ll
 ; cpython/optimized/unicodeobject.ll
@@ -16,7 +16,6 @@
 ; linux/optimized/8139too.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/fast_commit.ll
-; linux/optimized/intel_display_device.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/pme.ll
@@ -52,7 +51,7 @@ entry:
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 4092
   %2 = icmp eq i32 %1, 0
@@ -83,7 +82,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0) #0 {
+define i1 @func000000000000006c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1792
   %2 = icmp ne i32 %1, 0
@@ -93,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/mvref_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = icmp eq i32 %1, 0
@@ -107,7 +106,7 @@ entry:
 ; linux/optimized/skl_watermark.ll
 ; openusd/optimized/decodemv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = icmp eq i32 %1, 0
@@ -115,9 +114,19 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i32 %0) #0 {
+entry:
+  %1 = and i32 %0, 224
+  %2 = icmp samesign ult i32 %1, 96
+  ret i1 %2
+}
+
+; 1 occurrences:
 ; linux/optimized/scsi_ioctl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0) #0 {
+define i1 @func000000000000004c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 255
   %2 = icmp ne i32 %1, 0
@@ -127,20 +136,20 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 508
-  %2 = icmp ugt i32 %1, 99
+  %2 = icmp samesign ugt i32 %1, 99
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 510
-  %2 = icmp ult i32 %1, 10
+  %2 = icmp samesign ult i32 %1, 10
   ret i1 %2
 }
 

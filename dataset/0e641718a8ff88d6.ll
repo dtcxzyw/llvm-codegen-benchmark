@@ -8,21 +8,22 @@
 define i32 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = and i1 %4, %0
   %6 = zext i1 %5 to i32
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/Decl.cpp.ll
 ; openssl/optimized/evp_libctx_test-bin-evp_libctx_test.ll
+; php/optimized/pcre2_xclass.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 17
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   %6 = zext i1 %5 to i32
   ret i32 %6
 }
@@ -39,8 +40,8 @@ entry:
 define i32 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
   %6 = zext i1 %5 to i32
   ret i32 %6
 }
@@ -51,8 +52,8 @@ entry:
 define i32 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
   %6 = zext i1 %5 to i32
   ret i32 %6
 }

@@ -9,7 +9,7 @@ func0000000000000035:                   # @func0000000000000035
 	retq
 func0000000000000005:                   # @func0000000000000005
 	vpsraq	$2, %ymm2, %ymm2
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rcx
 	movabsq	$6640827866535438581, %rsi      # imm = 0x5C28F5C28F5C28F5
@@ -57,7 +57,7 @@ func0000000000000005:                   # @func0000000000000005
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
 func000000000000002d:                   # @func000000000000002d
 	vpsraq	$1, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsraq	$4, %ymm0, %ymm0
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0

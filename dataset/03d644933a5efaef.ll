@@ -9,7 +9,7 @@
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = and i64 %2, 4294967295
@@ -27,7 +27,7 @@ entry:
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 4294967295

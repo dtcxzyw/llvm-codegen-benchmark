@@ -13,12 +13,12 @@ func000000000000000e:                   # @func000000000000000e
 	sub	a0, a0, a1
 	sub	a0, a0, a2
 	ret
-func000000000000000d:                   # @func000000000000000d
+func0000000000000008:                   # @func0000000000000008
 	andi	a2, a2, 1
 	sub	a0, a0, a1
 	sub	a0, a0, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
+func000000000000000d:                   # @func000000000000000d
 	andi	a2, a2, 1
 	sub	a0, a0, a1
 	sub	a0, a0, a2

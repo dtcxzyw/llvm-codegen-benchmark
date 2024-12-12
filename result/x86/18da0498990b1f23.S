@@ -11,17 +11,21 @@ func0000000000000002:                   # @func0000000000000002
 	shlq	$6, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	imulq	%rdx, %rsi
 	shlq	$5, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	imulq	%rdx, %rsi
 	shlq	$7, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
 func000000000000003c:                   # @func000000000000003c
+	imulq	%rdx, %rsi
+	leaq	(%rdi,%rsi,4), %rax
+	retq
+func0000000000000032:                   # @func0000000000000032
 	imulq	%rdx, %rsi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
@@ -65,7 +69,7 @@ func0000000000000018:                   # @func0000000000000018
 	shlq	$4, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	imulq	%rdx, %rsi
 	shlq	$4, %rsi
 	leaq	(%rsi,%rdi), %rax
@@ -79,6 +83,10 @@ func0000000000000036:                   # @func0000000000000036
 	imulq	%rdx, %rsi
 	shlq	$4, %rsi
 	leaq	(%rsi,%rdi), %rax
+	retq
+func0000000000000013:                   # @func0000000000000013
+	imulq	%rdx, %rsi
+	leaq	(%rdi,%rsi,8), %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	imulq	%rdx, %rsi

@@ -28,6 +28,11 @@ func000000000000001d:                   # @func000000000000001d
 	movq	$-1, %rax
 	shlxq	%rdi, %rax, %rax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	addl	%esi, %edi
+	movq	$-1, %rax
+	shlxq	%rdi, %rax, %rax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	addl	%esi, %edi
 	movl	$1, %eax

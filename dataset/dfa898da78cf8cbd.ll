@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; flatbuffers/optimized/flatc.cpp.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
@@ -12,6 +12,8 @@
 ; openjdk/optimized/pngrtran.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0) #0 {
 entry:
@@ -30,6 +32,17 @@ entry:
   %1 = lshr i8 %0, 3
   %2 = zext nneg i8 %1 to i64
   %3 = shl i64 %2, 63
+  ret i64 %3
+}
+
+; 1 occurrences:
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i8 %0) #0 {
+entry:
+  %1 = lshr exact i8 %0, 1
+  %2 = zext nneg i8 %1 to i64
+  %3 = shl nuw nsw i64 %2, 8
   ret i64 %3
 }
 

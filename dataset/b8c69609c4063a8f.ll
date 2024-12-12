@@ -3,12 +3,12 @@
 ; nanosvg/optimized/nanosvg.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000047(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = add i32 %2, -2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -61,12 +61,12 @@ entry:
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/arith_sls.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -91,18 +91,6 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006c(ptr %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 2
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_pci_shpc.c.ll
-; Function Attrs: nounwind
 define ptr @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
@@ -112,10 +100,9 @@ entry:
   ret ptr %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
+; gromacs/optimized/pdb2gmx.cpp.ll
 ; jq/optimized/decNumber.ll
 ; openjdk/optimized/samplePriorityQueue.ll
 ; openmpi/optimized/common_ompio_file_read_all.ll
@@ -126,7 +113,7 @@ entry:
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
@@ -139,19 +126,19 @@ entry:
 ; openjdk/optimized/verifier.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = add i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -164,7 +151,7 @@ entry:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; opencv/optimized/cornersubpix.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -176,7 +163,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -213,12 +200,12 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -12,7 +12,7 @@
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sdiv i32 %1, %3
@@ -24,7 +24,7 @@ entry:
 ; gromacs/optimized/settle.cpp.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sdiv i32 %1, %3

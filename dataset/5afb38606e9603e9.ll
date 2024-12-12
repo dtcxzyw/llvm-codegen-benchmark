@@ -8,25 +8,36 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000085(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000185(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 2097151
+  %3 = icmp samesign ugt i32 %2, 2097151
   %4 = select i1 %3, i32 %1, i32 0
   %5 = add nsw i32 %4, %0
   %6 = sub nsw i32 0, %5
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000180(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 31
+  %4 = select i1 %3, i32 %1, i32 0
+  %5 = add i32 %4, %0
+  %6 = sub i32 0, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000080(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 31
-  %4 = select i1 %3, i32 %1, i32 0
-  %5 = add i32 %4, %0
-  %6 = sub i32 0, %5
+  %3 = icmp ugt i32 %2, 1
+  %4 = select i1 %3, i32 %1, i32 10
+  %5 = add i32 %0, %4
+  %6 = sub i32 3, %5
   ret i32 %6
 }
 

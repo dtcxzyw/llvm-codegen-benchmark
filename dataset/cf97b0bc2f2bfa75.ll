@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; arrow/optimized/light_array.cc.ll
 ; clamav/optimized/upack.c.ll
@@ -8,6 +8,8 @@
 ; linux/optimized/nvm.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/X86AvoidStoreForwardingBlocks.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; php/optimized/zend_execute.ll
 ; z3/optimized/doc.cpp.ll
 ; z3/optimized/tbv.cpp.ll
@@ -18,7 +20,7 @@ entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 0, i32 -2147483648
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

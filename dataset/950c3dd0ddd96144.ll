@@ -1,12 +1,10 @@
 
-; 29 occurrences:
+; 26 occurrences:
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; bullet3/optimized/b3Solver.ll
-; cmake/optimized/poll.c.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
-; libuv/optimized/poll.c.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/FloatingPointMode.cpp.ll
@@ -20,7 +18,6 @@
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
-; node/optimized/poll.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; openjdk/optimized/IntBgr.ll
 ; openjdk/optimized/Ushort4444Argb.ll
@@ -40,12 +37,10 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; libevent/optimized/poll.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; postgres/optimized/utf8_and_gb18030.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:

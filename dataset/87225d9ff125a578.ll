@@ -1,8 +1,6 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; ruby/optimized/bignum.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; xgboost/optimized/charconv.cc.ll

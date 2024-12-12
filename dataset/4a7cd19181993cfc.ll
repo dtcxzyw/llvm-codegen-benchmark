@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 38 occurrences:
 ; clamav/optimized/upx.c.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; hdf5/optimized/H5B2hdr.c.ll
@@ -35,6 +35,9 @@
 ; yosys/optimized/BigUnsignedInABase.ll
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -60,7 +63,7 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; graphviz/optimized/DotIO.c.ll
@@ -68,7 +71,6 @@ entry:
 ; linux/optimized/intel_pch_refclk.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
-; openusd/optimized/basisCurvesTopology.cpp.ll
 ; postgres/optimized/print.ll
 ; slurm/optimized/ring.ll
 ; wireshark/optimized/packet-fcswils.c.ll

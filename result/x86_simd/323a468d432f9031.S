@@ -19,3 +19,10 @@ func0000000000000003:                   # @func0000000000000003
 	vpmovdb	%ymm1, %xmm0
 	vzeroupper
 	retq
+func000000000000000a:                   # @func000000000000000a
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k1
+	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vpmovdb	%ymm1, %xmm0
+	vzeroupper
+	retq

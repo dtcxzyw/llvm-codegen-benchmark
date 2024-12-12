@@ -1,63 +1,63 @@
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	shrq	$32, %rdx
 	addl	%esi, %edx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func0000000000000114:                   # @func0000000000000114
+func0000000000000224:                   # @func0000000000000224
 	shrq	$2, %rdx
 	addl	%esi, %edx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
+func0000000000000228:                   # @func0000000000000228
+	shrq	$2, %rdx
+	addl	%esi, %edx
+	movslq	%edx, %rax
+	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000118:                   # @func0000000000000118
-	shrq	$2, %rdx
-	addl	%esi, %edx
-	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setb	%al
-	retq
-func0000000000000098:                   # @func0000000000000098
+func0000000000000128:                   # @func0000000000000128
 	shrq	$32, %rdx
 	addl	%esi, %edx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	shrq	$32, %rdx
 	addl	%esi, %edx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	shrq	$3, %rdx
 	addl	%esi, %edx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	shrq	$4, %rdx
 	addl	%esi, %edx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	shrq	$32, %rdx
 	addl	%esi, %edx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	shrq	$2, %rdx
 	addl	%esi, %edx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq

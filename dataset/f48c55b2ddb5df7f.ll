@@ -1,18 +1,22 @@
 
-; 6 occurrences:
+; 10 occurrences:
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_gem_shrinker.ll
 ; linux/optimized/synaptics.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = and i32 %2, 61440
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -34,18 +38,17 @@ entry:
   %2 = lshr i32 %1, 6
   %3 = and i32 %2, 127
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f32_div.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_sqrt.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64_r_minMag.ll
 ; spike/optimized/f32_to_ui32_r_minMag.ll
@@ -56,7 +59,7 @@ entry:
   %2 = lshr i32 %1, 23
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

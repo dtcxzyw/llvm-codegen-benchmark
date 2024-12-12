@@ -1,8 +1,9 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; libwebp/optimized/upsampling_sse2.c.ll
 ; libwebp/optimized/upsampling_sse41.c.ll
 ; libwebp/optimized/yuv.c.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
@@ -27,7 +28,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = add nsw i32 %2, -1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = lshr i32 %4, 3
   ret i32 %5
 }
@@ -39,7 +40,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = add nsw i32 %2, -1
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = lshr i32 %4, 3
   ret i32 %5
 }

@@ -6,12 +6,12 @@
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 4
   %4 = zext nneg i8 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -55,10 +55,11 @@ entry:
   ret i32 %6
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; hermes/optimized/Conversions.cpp.ll
 ; libquic/optimized/rsa_impl.c.ll
 ; linux/optimized/memory.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; openblas/optimized/dsbgst.c.ll
 ; postgres/optimized/freespace.ll
 ; redis/optimized/hyperloglog.ll

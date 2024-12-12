@@ -1,5 +1,5 @@
 
-; 156 occurrences:
+; 157 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddAnneal.c.ll
@@ -65,6 +65,7 @@
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/Lexer.cpp.ll
 ; luau/optimized/ltablib.cpp.ll
+; lvgl/optimized/lv_fs.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
@@ -223,7 +224,7 @@ entry:
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -248,7 +249,7 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaSatLut.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -256,6 +257,8 @@ entry:
 ; icu/optimized/number_decimalquantity.ll
 ; openjdk/optimized/cmstypes.ll
 ; qemu/optimized/nbd_client.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
@@ -272,7 +275,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -298,7 +301,7 @@ entry:
   ret i64 %4
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; cmake/optimized/huf_compress.c.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
@@ -314,7 +317,6 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; oniguruma/optimized/regparse.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlansf.c.ll
@@ -324,7 +326,6 @@ entry:
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/augmented_unscented_kalman.cpp.ll
 ; opencv/optimized/unscented_kalman.cpp.ll
-; openjdk/optimized/OGLPaints.ll
 ; openmpi/optimized/netpatterns_multinomial_tree.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
@@ -340,50 +341,7 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
-; abc/optimized/sbdSat.c.ll
-; cmake/optimized/archive_read_support_format_lha.c.ll
-; hermes/optimized/APFloat.cpp.ll
-; hyperscan/optimized/repeat.c.ll
-; linux/optimized/mpi-div.ll
-; linux/optimized/reciprocal_div.ll
-; linux/optimized/tree.ll
-; llvm/optimized/KnownBits.cpp.ll
-; openjdk/optimized/c1_GraphBuilder.ll
-; openjdk/optimized/ciTypeFlow.ll
-; openjdk/optimized/methodData.ll
-; quickjs/optimized/quickjs.ll
-; redis/optimized/hdr_histogram.ll
-; redis/optimized/redis-cli.ll
-; wireshark/optimized/packet-nvme-rdma.c.ll
-; wireshark/optimized/wireshark_main_window.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 1
-  %3 = sub i32 %2, %0
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 7 occurrences:
-; git/optimized/read-cache.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/generic.ll
-; openjdk/optimized/node.ll
-; wireshark/optimized/dot11decrypt.c.ll
-; yosys/optimized/BigUnsigned.ll
-; z3/optimized/fpa2bv_converter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
-entry:
-  %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 190 occurrences:
+; 191 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -549,6 +507,7 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
+; openjdk/optimized/OGLPaints.ll
 ; php/optimized/zend_alloc.ll
 ; postgres/optimized/allpaths.ll
 ; postgres/optimized/bitmapset.ll
@@ -577,8 +536,49 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
+  %2 = add nsw i32 %1, -2
+  %3 = sub nsw i32 %2, %0
+  %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
+; 14 occurrences:
+; abc/optimized/sbdSat.c.ll
+; cmake/optimized/archive_read_support_format_lha.c.ll
+; hermes/optimized/APFloat.cpp.ll
+; hyperscan/optimized/repeat.c.ll
+; linux/optimized/tree.ll
+; llvm/optimized/KnownBits.cpp.ll
+; openjdk/optimized/c1_GraphBuilder.ll
+; openjdk/optimized/ciTypeFlow.ll
+; openjdk/optimized/methodData.ll
+; quickjs/optimized/quickjs.ll
+; redis/optimized/hdr_histogram.ll
+; redis/optimized/redis-cli.ll
+; wireshark/optimized/packet-nvme-rdma.c.ll
+; wireshark/optimized/wireshark_main_window.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 1
+  %3 = sub i32 %2, %0
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 7 occurrences:
+; git/optimized/read-cache.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; linux/optimized/generic.ll
+; openjdk/optimized/node.ll
+; wireshark/optimized/dot11decrypt.c.ll
+; yosys/optimized/BigUnsigned.ll
+; z3/optimized/fpa2bv_converter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -616,7 +616,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -685,7 +685,7 @@ entry:
 define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

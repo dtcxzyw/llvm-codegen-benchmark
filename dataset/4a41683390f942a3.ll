@@ -19,11 +19,11 @@ define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl nsw i64 -1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 756 occurrences:
+; 751 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddEssent.c.ll
@@ -57,6 +57,10 @@ entry:
 ; assimp/optimized/RemoveRedundantMaterials.cpp.ll
 ; assimp/optimized/SplitByBoneCountProcess.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/options_description.ll
+; boost/optimized/pin_thread.ll
+; boost/optimized/topology.ll
+; boost/optimized/xml_grammar.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/fmu.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
@@ -154,7 +158,6 @@ entry:
 ; gromacs/optimized/matio.cpp.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; gromacs/optimized/mpiinfo.cpp.ll
-; gromacs/optimized/pthreads.cpp.ll
 ; gromacs/optimized/qmmmtopologypreprocessor.cpp.ll
 ; gromacs/optimized/readpull.cpp.ll
 ; gromacs/optimized/sm_keywords.cpp.ll
@@ -263,7 +266,6 @@ entry:
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
@@ -328,7 +330,6 @@ entry:
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
@@ -407,7 +408,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -613,8 +613,6 @@ entry:
 ; php/optimized/ir_sccp.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/brin_validate.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/context.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; protobuf/optimized/message_differencer.cc.ll
@@ -633,7 +631,6 @@ entry:
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/plugins_core.c.ll
 ; qemu/optimized/tcg.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; qemu/optimized/util_qemu-thread-posix.c.ll
@@ -649,7 +646,6 @@ entry:
 ; quantlib/optimized/fdm2dimsolver.ll
 ; quantlib/optimized/fdm3dimsolver.ll
 ; quantlib/optimized/fdmarithmeticaveragecondition.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dcapfloorengine.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
@@ -763,7 +759,6 @@ entry:
 ; yosys/optimized/flatten.ll
 ; yosys/optimized/fsm_opt.ll
 ; yosys/optimized/glift.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/memory_dff.ll
 ; yosys/optimized/opt_expr.ll
@@ -785,7 +780,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl nuw i64 1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -797,7 +792,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl i64 3, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -835,7 +830,7 @@ define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 62
   %3 = shl nuw nsw i64 1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

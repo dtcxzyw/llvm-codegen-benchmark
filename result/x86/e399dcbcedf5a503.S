@@ -19,3 +19,10 @@ func0000000000000003:                   # @func0000000000000003
 	cmovel	%esi, %eax
 	addl	%edx, %eax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	andl	$1, %edx
+	testb	$1, %dil
+	movl	$5, %eax
+	cmovel	%esi, %eax
+	addl	%edx, %eax
+	retq

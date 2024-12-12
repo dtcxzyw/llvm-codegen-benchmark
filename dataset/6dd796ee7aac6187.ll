@@ -1,17 +1,15 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; hdf5/optimized/H5HFhdr.c.ll
 ; hdf5/optimized/H5HFhuge.c.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/dec_sse2.c.ll
 ; libwebp/optimized/enc.c.ll
 ; libwebp/optimized/enc_sse2.c.ll
-; linux/optimized/isadma.ll
 ; openssl/optimized/openssl-bin-s_client.ll
 ; openusd/optimized/loopfilter.c.ll
 ; qemu/optimized/hw_core_loader.c.ll
 ; wireshark/optimized/androiddump.c.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-ecmp.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i8 %0, i8 %1) #0 {

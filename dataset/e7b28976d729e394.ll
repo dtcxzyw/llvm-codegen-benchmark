@@ -5,7 +5,7 @@
 ; ruby/optimized/zlib.ll
 ; wireshark/optimized/vms.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -18,7 +18,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; linux/optimized/ialloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 48
   %3 = ashr exact i64 %2, 48
@@ -31,7 +31,7 @@ entry:
 ; llvm/optimized/VPlan.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -44,7 +44,7 @@ entry:
 ; linux/optimized/indirect.ll
 ; linux/optimized/skbuff.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/sbitmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32

@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; cpython/optimized/compile.ll
 ; graphviz/optimized/mainwindow.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
@@ -27,6 +27,7 @@
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; z3/optimized/dl_costs.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:

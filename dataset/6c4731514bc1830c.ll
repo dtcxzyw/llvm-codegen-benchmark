@@ -1,5 +1,5 @@
 
-; 453 occurrences:
+; 454 occurrences:
 ; arrow/optimized/base64.cpp.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
@@ -117,14 +117,12 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/8139too.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/boot.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/hbm.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/i8042.ll
@@ -132,16 +130,13 @@
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/md.ll
 ; linux/optimized/nfs4proc.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/policydb.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
-; linux/optimized/utosi.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/yenta_socket.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
@@ -176,6 +171,10 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mimalloc/optimized/page.c.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -440,6 +439,7 @@
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/erf.c.ll
+; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-ax25.c.ll
 ; wireshark/optimized/packet-btle.c.ll
 ; wireshark/optimized/packet-ebhscr.c.ll
@@ -453,18 +453,20 @@
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 5
   %3 = and i8 %2, 4
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; hermes/optimized/HiddenClass.cpp.ll
 ; linux/optimized/8250_port.ll
+; linux/optimized/keyboard.ll
 ; linux/optimized/sd.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/Decl.cpp.ll

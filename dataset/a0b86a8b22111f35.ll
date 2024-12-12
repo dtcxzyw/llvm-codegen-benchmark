@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 19 occurrences:
 ; abc/optimized/cmdPlugin.c.ll
 ; arrow/optimized/bit_util.cc.ll
 ; c3c/optimized/parse_expr.c.ll
@@ -17,6 +17,8 @@
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wireshark/optimized/packet-nbt.c.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
@@ -59,7 +61,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   ret i8 %3
 }
 
@@ -78,7 +80,7 @@ entry:
 define i8 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, 8
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   ret i8 %3
 }
 

@@ -1,11 +1,11 @@
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	testq	%rsi, %rsi
 	movl	$20, %eax
 	cmovneq	%rax, %rsi
 	testq	%rdi, %rdi
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	testq	%rsi, %rsi
 	movl	$160, %ecx
 	movl	$80, %eax
@@ -13,7 +13,7 @@ func0000000000000022:                   # @func0000000000000022
 	testq	%rdi, %rdi
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	xorl	%ecx, %ecx
 	testq	%rsi, %rsi
 	setne	%cl
@@ -22,7 +22,7 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	$8, %rdi
 	cmovaeq	%rcx, %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	xorl	%ecx, %ecx
 	testq	%rsi, %rsi
 	setne	%cl
@@ -31,7 +31,7 @@ func0000000000000038:                   # @func0000000000000038
 	testq	%rdi, %rdi
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	testq	%rsi, %rsi
 	setne	%al
 	cmpq	$8, %rdi

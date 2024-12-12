@@ -1,8 +1,7 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; folly/optimized/CacheLocality.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; llvm/optimized/AArch64PBQPRegAlloc.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
@@ -49,7 +48,7 @@ entry:
   %2 = lshr i64 %1, 11
   %3 = xor i64 %2, %1
   %4 = mul i64 %3, 65
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

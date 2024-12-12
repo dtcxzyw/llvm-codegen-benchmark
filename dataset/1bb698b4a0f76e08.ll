@@ -11,7 +11,7 @@ entry:
   %3 = and i16 %2, 32
   %4 = and i16 %0, 128
   %.masked1 = and i16 %1, -833
-  %.masked = or i16 %3, %.masked1
+  %.masked = or i16 %.masked1, %3
   %5 = or i16 %4, %.masked
   ret i16 %5
 }

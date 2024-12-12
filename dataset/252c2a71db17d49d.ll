@@ -6,7 +6,7 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000ec(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -30,7 +30,7 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000e1(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -45,12 +45,12 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; wireshark/optimized/packet-iso7816.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000f4(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ult i32 %5, 4
+  %6 = icmp samesign ult i32 %5, 4
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7
 }

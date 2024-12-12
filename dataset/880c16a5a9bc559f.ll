@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 47 occurrences:
 ; arrow/optimized/bpacking.cc.ll
 ; freetype/optimized/ftbase.c.ll
 ; hyperscan/optimized/mpv.c.ll
@@ -26,14 +26,12 @@
 ; protobuf/optimized/struct.pb.cc.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
-; spike/optimized/f32_classify.ll
 ; spike/optimized/f32_div.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_rem.ll
 ; spike/optimized/f32_roundToInt.ll
 ; spike/optimized/f32_sqrt.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
 ; spike/optimized/f32_to_i32.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64.ll
@@ -43,8 +41,12 @@
 ; spike/optimized/f32_to_ui64.ll
 ; spike/optimized/f32_to_ui64_r_minMag.ll
 ; spike/optimized/fall_reciprocal.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wireshark/optimized/ftype-ipv4.c.ll
 ; wireshark/optimized/packet-iso15765.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:

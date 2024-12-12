@@ -11,11 +11,10 @@ entry:
   ret i64 %2
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/archive_write_add_filter_b64encode.c.ll
 ; cmake/optimized/archive_write_add_filter_bzip2.c.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
-; cmake/optimized/archive_write_add_filter_gzip.c.ll
 ; cmake/optimized/archive_write_add_filter_uuencode.c.ll
 ; cmake/optimized/archive_write_add_filter_xz.c.ll
 ; coreutils-rs/optimized/1rcidqes8gd7e6wh.ll

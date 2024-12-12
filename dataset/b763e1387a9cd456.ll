@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000049(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw i64 %1, 1
@@ -24,7 +24,7 @@ entry:
 ; postgres/optimized/regress.ll
 ; slurm/optimized/node_features.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003b(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000006b(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1

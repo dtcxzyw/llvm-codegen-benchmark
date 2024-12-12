@@ -183,7 +183,7 @@ entry:
   ret i64 %4
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; abc/optimized/cecSim.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -207,7 +207,6 @@ entry:
 ; ncnn/optimized/padding_x86_fma.cpp.ll
 ; ncnn/optimized/tile.cpp.ll
 ; oiio/optimized/Writer.cpp.ll
-; openblas/optimized/dtfsm.c.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/gfluidcore.cpp.ll

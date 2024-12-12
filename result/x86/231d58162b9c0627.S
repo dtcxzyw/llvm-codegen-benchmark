@@ -1,4 +1,4 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setnp	%al

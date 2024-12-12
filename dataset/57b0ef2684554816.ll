@@ -79,6 +79,18 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 12
+  %4 = add nsw i32 %0, %1
+  %5 = add nsw i32 %4, %3
+  %6 = add nsw i32 %5, -57344
+  ret i32 %6
+}
+
 ; 4 occurrences:
 ; linux/optimized/hub.ll
 ; linux/optimized/intel_guc_submission.ll

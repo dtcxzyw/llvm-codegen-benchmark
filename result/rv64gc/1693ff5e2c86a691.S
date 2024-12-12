@@ -1,4 +1,4 @@
-func0000000000000119:                   # @func0000000000000119
+func0000000000000219:                   # @func0000000000000219
 	srliw	a3, a1, 30
 	sext.w	a1, a1
 	beqz	a3, .LBB0_3
@@ -12,7 +12,7 @@ func0000000000000119:                   # @func0000000000000119
 .LBB0_4:                                # %entry
 	addiw	a0, a2, -11
 	ret
-func000000000000011b:                   # @func000000000000011b
+func000000000000021b:                   # @func000000000000021b
 	srliw	a3, a1, 30
 	sext.w	a1, a1
 	beqz	a3, .LBB1_3
@@ -26,7 +26,7 @@ func000000000000011b:                   # @func000000000000011b
 .LBB1_4:                                # %entry
 	addiw	a0, a2, 21
 	ret
-func0000000000000111:                   # @func0000000000000111
+func0000000000000a51:                   # @func0000000000000a51
 	sext.w	a1, a1
 	lui	a3, 1
 	addiw	a3, a3, -2047

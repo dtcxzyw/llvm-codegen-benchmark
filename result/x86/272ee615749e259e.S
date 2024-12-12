@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	cmpw	$40, %di
 	setne	%al
 	andb	%sil, %al
@@ -23,12 +23,12 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%sil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	cmpw	$24, %di
 	sete	%al
 	andb	%sil, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	cmpw	$2, %di
 	setb	%al
 	andb	%sil, %al

@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
-; linux/optimized/attr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:

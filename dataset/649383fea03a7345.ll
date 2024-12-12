@@ -62,32 +62,10 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; recastnavigation/optimized/RecastRegion.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp sgt i64 %1, 4611686018427387902
-  %3 = mul i64 %0, 12
-  %4 = select i1 %2, i64 -12, i64 %3
-  ret i64 %4
-}
-
-; 2 occurrences:
-; brotli/optimized/block_splitter.c.ll
-; gromacs/optimized/parser.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 5000
-  %3 = mul nuw nsw i64 %0, 18
-  %4 = select i1 %2, i64 180000, i64 %3
-  ret i64 %4
-}
-
-; 18 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
+; boost/optimized/dump_avx2.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; grpc/optimized/call.cc.ll
@@ -107,9 +85,20 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp eq i64 %1, 0
-  %3 = mul nuw nsw i64 %0, 40
-  %4 = select i1 %2, i64 80, i64 %3
+  %2 = icmp eq i64 %1, 32
+  %3 = mul nuw nsw i64 %0, 3
+  %4 = select i1 %2, i64 96, i64 %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; recastnavigation/optimized/RecastRegion.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp sgt i64 %1, 4611686018427387902
+  %3 = mul i64 %0, 12
+  %4 = select i1 %2, i64 -12, i64 %3
   ret i64 %4
 }
 
@@ -121,6 +110,17 @@ entry:
   %2 = icmp eq i64 %1, 0
   %3 = mul nsw i64 %0, -40
   %4 = select i1 %2, i64 -80, i64 %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; brotli/optimized/block_splitter.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000023(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ugt i64 %1, 54399
+  %3 = mul nuw nsw i64 %0, 1040
+  %4 = select i1 %2, i64 104000, i64 %3
   ret i64 %4
 }
 

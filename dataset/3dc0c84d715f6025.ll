@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 29 occurrences:
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
@@ -14,11 +14,9 @@
 ; opencv/optimized/termination.cpp.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; proj/optimized/ell_set.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/laea.cpp.ll
 ; proj/optimized/proj.cpp.ll
 ; proj/optimized/proj_mdist.cpp.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; quantlib/optimized/beta.ll
 ; quantlib/optimized/blackformula.ll
 ; quantlib/optimized/conundrumpricer.ll
@@ -34,8 +32,8 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0) #0 {
 entry:
-  %1 = fsub double 1.000000e+00, %0
-  %2 = fdiv double 1.000000e+07, %1
+  %1 = fsub double 1.000000e+02, %0
+  %2 = fdiv double 1.000000e+02, %1
   ret double %2
 }
 

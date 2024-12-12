@@ -1,15 +1,13 @@
 
-; 3 occurrences:
+; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = freeze i32 %2
-  %4 = add i32 %3, 193
-  %5 = icmp ult i32 %4, -39
+  %4 = add i32 %3, -2
+  %5 = icmp ult i32 %4, -3
   ret i1 %5
 }
 

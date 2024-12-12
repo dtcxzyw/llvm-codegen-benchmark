@@ -1,7 +1,7 @@
 
 ; 2 occurrences:
 ; git/optimized/http.ll
-; qemu/optimized/hw_char_sifive_uart.c.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000031(i32 %0) #0 {
 entry:

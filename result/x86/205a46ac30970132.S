@@ -1,4 +1,4 @@
-func0000000000000258:                   # @func0000000000000258
+func00000000000004a8:                   # @func00000000000004a8
 	movl	%esi, %eax
 	imulq	$-100, %rax, %rax
 	movl	%edi, %ecx
@@ -6,7 +6,7 @@ func0000000000000258:                   # @func0000000000000258
 	cmpq	$100, %rcx
 	setae	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	movl	%esi, %eax
 	leaq	(%rax,%rax,4), %rax
 	movl	%edi, %ecx
@@ -14,7 +14,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	andq	$-2147483648, %rax              # imm = 0x80000000
 	sete	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	movl	%esi, %eax
 	leaq	(%rax,%rax,4), %rax
 	movl	%edi, %ecx
@@ -22,7 +22,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
 	seta	%al
 	retq
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000003f4:                   # @func00000000000003f4
 	movl	%esi, %eax
 	leaq	(%rax,%rax,4), %rax
 	movl	%edi, %ecx
@@ -30,7 +30,7 @@ func00000000000001f4:                   # @func00000000000001f4
 	shrq	$32, %rax
 	sete	%al
 	retq
-func00000000000003f8:                   # @func00000000000003f8
+func00000000000007f8:                   # @func00000000000007f8
 	movl	%esi, %eax
 	imulq	$1000000, %rax, %rax            # imm = 0xF4240
 	movl	%edi, %ecx
@@ -39,7 +39,7 @@ func00000000000003f8:                   # @func00000000000003f8
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func000000000000035a:                   # @func000000000000035a
+func00000000000006aa:                   # @func00000000000006aa
 	movl	%esi, %eax
 	imulq	$-1000000000, %rax, %rax        # imm = 0xC4653600
 	movl	%edi, %ecx

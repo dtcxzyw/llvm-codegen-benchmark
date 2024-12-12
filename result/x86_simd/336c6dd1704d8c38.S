@@ -65,7 +65,7 @@ func0000000000000006:                   # @func0000000000000006
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpmovdb	%ymm0, %xmm0
 	vpcmpgtb	.LCPI5_0(%rip), %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -88,7 +88,7 @@ func000000000000002a:                   # @func000000000000002a
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpmovdb	%ymm0, %xmm0
 	vpcmpltb	.LCPI6_0(%rip), %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -97,6 +97,52 @@ func0000000000000026:                   # @func0000000000000026
 func000000000000000c:                   # @func000000000000000c
 	vpmovdb	%ymm0, %xmm0
 	vptestmb	%xmm0, %xmm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI8_0:
+	.byte	58                              # 0x3a
+	.byte	58                              # 0x3a
+	.byte	58                              # 0x3a
+	.byte	58                              # 0x3a
+	.byte	58                              # 0x3a
+	.byte	58                              # 0x3a
+	.byte	58                              # 0x3a
+	.byte	58                              # 0x3a
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000014:                   # @func0000000000000014
+	vpmovdb	%ymm0, %xmm0
+	vpcmpltub	.LCPI8_0(%rip), %xmm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI9_0:
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000018:                   # @func0000000000000018
+	vpmovdb	%ymm0, %xmm0
+	vpcmpnleub	.LCPI9_0(%rip), %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

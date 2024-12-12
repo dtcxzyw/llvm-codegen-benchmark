@@ -1,27 +1,16 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	cmeq	v3.4s, v3.4s, #0
-	cmeq	v2.4s, v2.4s, #0
-	uzp1	v2.8h, v2.8h, v3.8h
-	xtn	v2.8b, v2.8h
-	eor	v1.8b, v2.8b, v1.8b
-	orr	v0.8b, v1.8b, v0.8b
+	tst	w2, #0x1
+	cset	w8, eq
+	eor	w8, w8, w1
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	movi	v4.4s, #8
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	cmeq	v3.4s, v3.4s, #0
-	cmeq	v2.4s, v2.4s, #0
-	uzp1	v2.8h, v2.8h, v3.8h
-	mvn	v2.16b, v2.16b
-	xtn	v2.8b, v2.8h
-	eor	v1.8b, v2.8b, v1.8b
-	orr	v0.8b, v1.8b, v0.8b
+	eor	w8, w1, w2, lsr #3
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

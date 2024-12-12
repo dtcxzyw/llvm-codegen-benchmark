@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	leaq	64(%rdi), %rax
 	cmpl	%edx, %esi
 	cmovbeq	%rdi, %rax
@@ -8,12 +8,12 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edx, %esi
 	cmovgeq	%rdi, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leaq	4(%rdi), %rax
 	cmpl	%edx, %esi
 	cmovgeq	%rdi, %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	leaq	16777216(%rdi), %rax
 	cmpl	%edx, %esi
 	cmovaeq	%rdi, %rax

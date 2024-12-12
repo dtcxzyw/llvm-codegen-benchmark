@@ -5,7 +5,7 @@
 ; node/optimized/tcp.ll
 ; postgres/optimized/inv_api.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %.masked = and i32 %0, 2048

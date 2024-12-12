@@ -28,5 +28,5 @@ func0000000000000019:                   # @func0000000000000019
 	vmslt.vv	v0, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vnsrl.wi	v9, v10, 0, v0.t
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret

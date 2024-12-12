@@ -3,7 +3,7 @@
 func00000000000001fa:                   # @func00000000000001fa
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpsrld	$8, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
@@ -13,7 +13,7 @@ func00000000000001fa:                   # @func00000000000001fa
 func00000000000000a8:                   # @func00000000000000a8
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpsrld	$8, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
@@ -23,7 +23,7 @@ func00000000000000a8:                   # @func00000000000000a8
 func0000000000000000:                   # @func0000000000000000
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpsrld	$12, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
@@ -33,7 +33,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000080:                   # @func0000000000000080
 	vpmulld	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpsrld	$6, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
@@ -43,7 +43,7 @@ func0000000000000080:                   # @func0000000000000080
 func0000000000000102:                   # @func0000000000000102
 	vpmulld	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpsrld	$16, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper

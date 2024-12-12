@@ -1,7 +1,6 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; brotli/optimized/block_splitter.c.ll
-; gromacs/optimized/merge_sort.c.ll
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; libwebp/optimized/ssim.c.ll
 ; openmpi/optimized/coll_inter_allgatherv.ll
@@ -10,6 +9,8 @@
 ; openmpi/optimized/nbc_ireduce_scatter.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; xgboost/optimized/gradient_index.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -89,7 +90,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add i64 %3, 1
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -100,7 +101,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, 1
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -124,7 +125,7 @@ define i64 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add nuw nsw i64 %3, 1
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 

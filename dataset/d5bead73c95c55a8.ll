@@ -30,7 +30,7 @@ entry:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = srem i32 %1, %3
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = srem i32 %1, %3
@@ -53,7 +53,7 @@ entry:
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; slurm/optimized/cbuf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = srem i32 %1, %3
@@ -65,7 +65,7 @@ entry:
 ; icu/optimized/punycode.ll
 ; opencv/optimized/fed.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = srem i32 %1, %3

@@ -26,5 +26,17 @@ func0000000000000000:                   # @func0000000000000000
 	movl	%edi, %eax
 	shll	$16, %eax
 	orl	%esi, %eax
-	orl	$1073741824, %eax               # imm = 0x40000000
+	orl	$-1073741824, %eax              # imm = 0xC0000000
+	retq
+func0000000000000006:                   # @func0000000000000006
+	movl	%edi, %eax
+	shll	$21, %eax
+	orl	%esi, %eax
+	orl	$83886080, %eax                 # imm = 0x5000000
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movl	%edi, %eax
+	shll	$16, %eax
+	orl	%esi, %eax
+	orl	$53, %eax
 	retq

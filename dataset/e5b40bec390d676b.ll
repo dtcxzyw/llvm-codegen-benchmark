@@ -48,10 +48,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; icu/optimized/sprintf.ll
-; icu/optimized/sscanf.ll
-; icu/optimized/uscanf.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0) #0 {
 entry:

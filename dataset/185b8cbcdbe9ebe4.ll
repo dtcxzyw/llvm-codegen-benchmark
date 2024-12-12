@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000ea(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 1250256
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1250256
   %5 = getelementptr nusw float, ptr %4, i64 %3
   %6 = getelementptr float, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 52
@@ -25,15 +25,13 @@ entry:
   ret ptr %7
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
-; meshlab/optimized/filter_ssynth.cpp.ll
-; meshlab/optimized/io_x3d.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000009a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000db(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 -1
@@ -90,13 +88,27 @@ entry:
 ; meshlab/optimized/io_collada.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ba(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000fb(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
   %5 = getelementptr nusw ptr, ptr %4, i64 %3
   %6 = getelementptr ptr, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+; 2 occurrences:
+; meshlab/optimized/filter_ssynth.cpp.ll
+; meshlab/optimized/io_x3d.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000da(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %5 = getelementptr nusw ptr, ptr %4, i64 %3
+  %6 = getelementptr ptr, ptr %5, i64 %0
+  %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }
 

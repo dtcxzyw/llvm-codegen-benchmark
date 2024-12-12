@@ -21,7 +21,7 @@
 define double @func0000000000000000(double %0, i16 %1) #0 {
 entry:
   %2 = uitofp i16 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 
@@ -32,7 +32,7 @@ entry:
 define double @func0000000000000001(double %0, i16 %1) #0 {
 entry:
   %2 = uitofp nneg i16 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

@@ -1,5 +1,8 @@
 
-; 1 occurrences:
+; 4 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
 ; openjdk/optimized/jquant1.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -10,10 +13,14 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 17 occurrences:
 ; abc/optimized/lpkCut.c.ll
+; ceres/optimized/covariance_impl.cc.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll

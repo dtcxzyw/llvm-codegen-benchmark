@@ -1,6 +1,8 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; assimp/optimized/FBXUtil.cpp.ll
+; cmake/optimized/noproxy.c.ll
+; curl/optimized/libcurl_la-noproxy.ll
 ; git/optimized/add-interactive.ll
 ; git/optimized/ws.ll
 ; grpc/optimized/ssl_transport_security.cc.ll
@@ -16,13 +18,12 @@
 ; ruby/optimized/bignum.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 45
-  %3 = sext i1 %2 to i64
-  %4 = sub i64 0, %0
-  %5 = icmp eq i64 %3, %4
-  ret i1 %5
+  %.neg = zext i1 %2 to i64
+  %3 = icmp eq i64 %0, %.neg
+  ret i1 %3
 }
 
 ; 6 occurrences:
@@ -33,11 +34,11 @@ entry:
 ; protobuf/optimized/lexer.cc.ll
 ; re2/optimized/re2.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 45
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp ugt i64 %4, 2
   ret i1 %5
 }
@@ -47,11 +48,11 @@ entry:
 ; curl/optimized/libcurl_la-vtls.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 46
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp ult i64 %4, 65535
   ret i1 %5
 }
@@ -62,25 +63,23 @@ entry:
 ; eastl/optimized/EAString.cpp.ll
 ; linux/optimized/clocksource.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 10
-  %3 = sext i1 %2 to i64
-  %4 = sub i64 0, %0
-  %5 = icmp eq i64 %3, %4
-  ret i1 %5
+  %.neg = zext i1 %2 to i64
+  %3 = icmp eq i64 %0, %.neg
+  ret i1 %3
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/addr_resolv.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000ac(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 46
-  %3 = sext i1 %2 to i64
-  %4 = sub i64 0, %0
-  %5 = icmp ne i64 %3, %4
-  ret i1 %5
+  %.neg = zext i1 %2 to i64
+  %3 = icmp ne i64 %0, %.neg
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -89,11 +88,11 @@ entry:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000196(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000326(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp slt i8 %1, 3
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = icmp slt i64 %4, 0
   ret i1 %5
 }
@@ -102,11 +101,11 @@ entry:
 ; casadi/optimized/code_generator.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 46
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = icmp sgt i64 %4, 2
   ret i1 %5
 }

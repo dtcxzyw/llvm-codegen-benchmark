@@ -1,10 +1,9 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; icu/optimized/ubidiwrt.ll
 ; libevent/optimized/bufferevent.c.ll
-; linux/optimized/attr.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/mlme.ll

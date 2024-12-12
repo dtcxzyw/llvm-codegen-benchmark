@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	lui	a2, 1048304
 	addw	a2, a2, a0
 	lui	a3, 1048318
@@ -10,10 +10,10 @@ func0000000000000014:                   # @func0000000000000014
 .LBB0_2:                                # %entry
 	ret
 func0000000000000004:                   # @func0000000000000004
-	addiw	a2, a0, -4
-	sltiu	a2, a2, 11
+	addiw	a2, a0, -3
+	sltiu	a2, a2, 2
 	and	a1, a1, a2
 	beqz	a1, .LBB1_2
-	li	a0, 13
+	li	a0, 2
 .LBB1_2:                                # %entry
 	ret

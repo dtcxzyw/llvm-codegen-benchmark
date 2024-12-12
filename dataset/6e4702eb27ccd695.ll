@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; cpython/optimized/bytesobject.ll
@@ -15,7 +15,6 @@
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
 ; php/optimized/php_ini_builder.ll
-; php/optimized/state.ll
 ; postgres/optimized/tab-complete.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1, ptr %2) #0 {

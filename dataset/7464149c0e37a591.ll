@@ -3,11 +3,11 @@
 ; ceres/optimized/polynomial.cc.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
+define i1 @func00000000000000b8(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 32
   %2 = mul nsw i64 %1, %1
-  %3 = icmp ugt i64 %2, 2305843009213693951
+  %3 = icmp samesign ugt i64 %2, 2305843009213693951
   ret i1 %3
 }
 
@@ -18,7 +18,7 @@ entry:
 ; quantlib/optimized/genericlsregression.ll
 ; quantlib/optimized/haganirregularswaptionengine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 4
   %2 = mul i64 %1, %1
@@ -33,7 +33,7 @@ entry:
 ; quantlib/optimized/genericlsregression.ll
 ; quantlib/optimized/haganirregularswaptionengine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0) #0 {
+define i1 @func0000000000000088(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 4
   %2 = mul i64 %1, %1

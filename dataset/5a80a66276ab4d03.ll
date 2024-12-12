@@ -1,7 +1,7 @@
 
-%class.rational.3431182 = type { %class.mpq.3431183 }
-%class.mpq.3431183 = type { %class.mpz.3431184, %class.mpz.3431184 }
-%class.mpz.3431184 = type { i32, i8, ptr }
+%class.rational.3615514 = type { %class.mpq.3615515 }
+%class.mpq.3615515 = type { %class.mpz.3615516, %class.mpz.3615516 }
+%class.mpz.3615516 = type { i32, i8, ptr }
 
 ; 2 occurrences:
 ; ruby/optimized/regparse.ll
@@ -52,36 +52,36 @@ entry:
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; php/optimized/der.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000047(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005f(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -91,12 +91,12 @@ entry:
 ; llvm/optimized/Archive.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -105,12 +105,12 @@ entry:
 ; openusd/optimized/testHioAvif.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000004f(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -119,12 +119,12 @@ entry:
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000063(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -156,60 +156,60 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/theory_utvpi.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000004b(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nsw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %class.rational.3431182, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %class.rational.3615514, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; icu/optimized/olsontz.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw double, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

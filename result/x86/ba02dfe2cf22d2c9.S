@@ -8,3 +8,11 @@ func000000000000005a:                   # @func000000000000005a
 	addq	%rdi, %rsi
 	leaq	8(%rsi,%rdx,4), %rax
 	retq
+func000000000000005e:                   # @func000000000000005e
+	leaq	(%rdi,%rsi,8), %rax
+	leaq	8(%rdx,%rax), %rax
+	retq
+func000000000000005f:                   # @func000000000000005f
+	leaq	(%rdi,%rsi,8), %rax
+	leaq	8(%rdx,%rax), %rax
+	retq

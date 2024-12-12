@@ -1,4 +1,4 @@
-func000000000000009a:                   # @func000000000000009a
+func000000000000009b:                   # @func000000000000009b
 	shrq	$2, %rsi
 	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
 	cltq

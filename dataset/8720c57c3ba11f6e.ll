@@ -74,6 +74,18 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i64 %0) #0 {
+entry:
+  %1 = lshr exact i64 %0, 2
+  %2 = trunc nuw i64 %1 to i32
+  %3 = add i32 %2, 1
+  %4 = lshr i32 %3, 24
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; lua/optimized/ldebug.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000022(i64 %0) #0 {

@@ -1,5 +1,5 @@
 
-; 256 occurrences:
+; 255 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/dauDsd.c.ll
@@ -16,6 +16,7 @@
 ; abc/optimized/rsbDec6.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/http.c.ll
 ; curl/optimized/libcurl_la-http.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -40,12 +41,10 @@
 ; linux/optimized/clocksource.ll
 ; linux/optimized/commoncap.ll
 ; linux/optimized/core.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/cpuset.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/exfldio.ll
 ; linux/optimized/fair.ll
-; linux/optimized/features.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/find_bit.ll
 ; linux/optimized/genalloc.ll

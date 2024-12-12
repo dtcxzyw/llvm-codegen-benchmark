@@ -16,8 +16,10 @@ entry:
   ret i64 %4
 }
 
-; 61 occurrences:
+; 60 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clamav/optimized/clamdtop.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
@@ -41,19 +43,16 @@ entry:
 ; git/optimized/xdiff-interface.ll
 ; hermes/optimized/ItaniumDemangle.cpp.ll
 ; hermes/optimized/String.cpp.ll
-; jemalloc/optimized/util.ll
-; jemalloc/optimized/util.pic.ll
-; jemalloc/optimized/util.sym.ll
 ; libquic/optimized/prtime.cc.ll
 ; libuv/optimized/stream.c.ll
 ; lief/optimized/pem.c.ll
-; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
 ; llvm/optimized/CommentLexer.cpp.ll
 ; llvm/optimized/LoopInterchange.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; nix/optimized/get-drvs.ll
@@ -79,10 +78,10 @@ entry:
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i1 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

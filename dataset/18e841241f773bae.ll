@@ -1,12 +1,13 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; ceres/optimized/schur_jacobi_preconditioner.cc.ll
 ; git/optimized/xmerge.ll
 ; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/StackColoring.cpp.ll
 ; postgres/optimized/pg_proc.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -28,7 +29,7 @@ entry:
 ; llvm/optimized/StackColoring.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -42,7 +43,7 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006b1(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000d61(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -57,13 +58,13 @@ entry:
 ; opencv/optimized/persistence.cpp.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 
@@ -75,7 +76,7 @@ entry:
 ; yosys/optimized/muxpack.ll
 ; zxing/optimized/QRDataBlock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -89,20 +90,20 @@ entry:
 ; cvc5/optimized/core_solver.cpp.ll
 ; llvm/optimized/StackColoring.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000002e1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nuw i32 %3, %1
@@ -115,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nuw nsw i32 %3, %1
@@ -128,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/bitmap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007f1(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000fe1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nuw nsw i32 %3, %1
@@ -141,7 +142,7 @@ entry:
 ; 1 occurrences:
 ; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000471(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000008e1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -154,7 +155,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/pg_regress.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000671(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000ce1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub i32 %3, %1

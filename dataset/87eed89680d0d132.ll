@@ -3,7 +3,7 @@
 ; llvm/optimized/RawCommentList.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000504(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RawCommentList.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000508(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -35,7 +35,7 @@ entry:
 ; protobuf/optimized/php_generator.cc.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000041a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000082a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000028a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000050a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000029a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000052a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000296(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000526(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

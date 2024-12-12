@@ -7,7 +7,7 @@
 ; ruby/optimized/pack.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
   %4 = or disjoint i64 %3, %1
@@ -37,7 +37,7 @@ entry:
 ; redis/optimized/listpack.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
@@ -64,26 +64,23 @@ entry:
 ; wireshark/optimized/packet-asterix.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 8
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
-; 18 occurrences:
+; 15 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5Cimage.c.ll
 ; hdf5/optimized/H5Oattr.c.ll
 ; hdf5/optimized/H5Odrvinfo.c.ll
-; hdf5/optimized/H5Oefl.c.ll
 ; hdf5/optimized/H5Ofill.c.ll
 ; hdf5/optimized/H5Olayout.c.ll
 ; hdf5/optimized/H5Olink.c.ll
 ; lief/optimized/psa_crypto_storage.c.ll
 ; lief/optimized/ssl_tls12_client.c.ll
-; linux/optimized/extents.ll
 ; linux/optimized/intel_hdmi.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
@@ -92,7 +89,7 @@ entry:
 ; php/optimized/pcre2_dfa_match.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
@@ -138,7 +135,7 @@ entry:
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -170,7 +167,7 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -178,26 +175,25 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
-; freetype/optimized/type1.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; openjdk/optimized/hb-ucd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 6
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
-; 43 occurrences:
+; 46 occurrences:
 ; gromacs/optimized/awh.cpp.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/constr.cpp.ll
@@ -241,8 +237,11 @@ entry:
 ; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/0eh1fm3h72yjwo2ipis72ui0f.ll
+; zed-rs/optimized/adlc6qfcwjhvmcaovuwfkwg5s.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -253,7 +252,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -265,7 +264,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -280,7 +279,7 @@ entry:
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -291,7 +290,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -302,7 +301,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -313,7 +312,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -325,7 +324,7 @@ entry:
 ; qemu/optimized/optimize.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -343,7 +342,7 @@ entry:
 ; wireshark/optimized/opcua.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -351,21 +350,17 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 5 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; freetype/optimized/sfnt.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -378,7 +373,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 42
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -394,7 +389,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 42
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
@@ -405,7 +400,7 @@ entry:
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; openjdk/optimized/hb-ucd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 21
   %4 = or i64 %3, %1
@@ -413,15 +408,16 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/miniz.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -429,13 +425,37 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/RawImage.cpp.ll
-; lief/optimized/ssl_tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp samesign ule i64 %4, %0
+  ret i1 %5
+}
+
+; 4 occurrences:
+; hdf5/optimized/H5Cimage.c.ll
+; hdf5/optimized/H5Oefl.c.ll
+; lief/optimized/psa_crypto_storage.c.ll
+; linux/optimized/extents.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 24
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp samesign ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; lief/optimized/ssl_tls.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e5(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
   %5 = icmp ule i64 %4, %0
   ret i1 %5
@@ -444,7 +464,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineOperand.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -455,7 +475,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a9(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
@@ -485,10 +505,22 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; freetype/optimized/type1.c.ll
+; z3/optimized/dd_bdd.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = or i64 %3, %1
+  %5 = icmp samesign ult i64 %4, %0
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jdmarker.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ec(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
@@ -496,10 +528,25 @@ entry:
   ret i1 %5
 }
 
+; 5 occurrences:
+; freetype/optimized/sfnt.c.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 1
+  %4 = or disjoint i64 %3, %1
+  %5 = icmp samesign ult i64 %4, %0
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; freetype/optimized/pfr.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ea(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1

@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = and i64 %3, 3
   %5 = icmp eq i64 %4, 1
   ret i1 %5
@@ -25,7 +25,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, 3
   %5 = icmp ne i64 %4, 0
   ret i1 %5

@@ -10,12 +10,12 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vcvtusi2sd	%edi, %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000078:                   # @func0000000000000078
 	vcvtsi2sd	%edi, %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000054:                   # @func0000000000000054
@@ -30,12 +30,12 @@ func0000000000000074:                   # @func0000000000000074
 	retq
 func0000000000000018:                   # @func0000000000000018
 	vcvtsi2sd	%edi, %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000058:                   # @func0000000000000058
 	vcvtsi2sd	%edi, %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000072:                   # @func0000000000000072
@@ -45,6 +45,6 @@ func0000000000000072:                   # @func0000000000000072
 	retq
 func0000000000000077:                   # @func0000000000000077
 	vcvtsi2sd	%edi, %xmm1, %xmm1
-	vcmpneqsd	%xmm0, %xmm1, %k0
+	vcmpneqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq

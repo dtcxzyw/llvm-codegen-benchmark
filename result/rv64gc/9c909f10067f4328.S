@@ -39,14 +39,14 @@ func0000000000000055:                   # @func0000000000000055
 	addw	a0, a0, a1
 	ret
 func0000000000000050:                   # @func0000000000000050
-	slli	a3, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a3
-	lui	a3, 1
-	addi	a3, a3, -496
+	lui	a3, 10
+	addi	a3, a3, 1163
 	mul	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	lui	a3, 9310
+	addi	a3, a3, 474
+	add	a0, a0, a2
+	mul	a1, a1, a3
+	addw	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
 	li	a3, 1013

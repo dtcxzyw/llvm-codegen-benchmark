@@ -21,9 +21,8 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; libquic/optimized/curve25519.c.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
@@ -32,7 +31,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = sub nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -60,6 +59,7 @@ entry:
 }
 
 ; 48 occurrences:
+; boost/optimized/url_base.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
@@ -85,7 +85,6 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/zRelocate.ll
 ; qemu/optimized/hw_intc_riscv_aclint.c.ll
-; qemu/optimized/hw_rtc_goldfish_rtc.c.ll
 ; quickjs/optimized/libbf.ll
 ; spike/optimized/f128_div.ll
 ; spike/optimized/f128_rem.ll
@@ -139,7 +138,7 @@ define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 4
   %4 = sub nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -170,7 +169,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = sub nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

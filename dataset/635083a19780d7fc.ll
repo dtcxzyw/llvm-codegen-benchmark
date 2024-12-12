@@ -19,7 +19,7 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = trunc i32 %3 to i8
   %5 = select i1 %1, i8 0, i8 %4
-  %6 = or i8 %5, %0
+  %6 = or i8 %0, %5
   ret i8 %6
 }
 

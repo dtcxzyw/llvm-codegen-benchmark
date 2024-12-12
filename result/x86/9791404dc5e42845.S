@@ -9,6 +9,6 @@ func0000000000000000:                   # @func0000000000000000
 	shrb	$6, %sil
 	movzbl	%sil, %ecx
 	testb	$1, %dil
-	movl	$1, %eax
+	movl	$3, %eax
 	cmovnel	%ecx, %eax
 	retq

@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_toneequal.c.ll
 ; linux/optimized/skbuff.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; postgres/optimized/xid.ll

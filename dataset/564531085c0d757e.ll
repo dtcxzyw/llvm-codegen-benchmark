@@ -1,5 +1,7 @@
 
-; 21 occurrences:
+; 24 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; cpython/optimized/basearith.ll
@@ -21,11 +23,12 @@
 ; quickjs/optimized/libbf.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -63,30 +66,30 @@ entry:
 ; openspiel/optimized/mcts.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000584(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000588(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 

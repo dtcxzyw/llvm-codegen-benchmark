@@ -22,7 +22,7 @@
 ; opencv/optimized/slic.cpp.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, -1
   %4 = select i1 %0, i1 %3, i1 false
@@ -35,7 +35,7 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, -2
   %4 = select i1 %0, i1 %3, i1 false
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/unzip.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c5(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000185(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -63,7 +63,7 @@ entry:
 ; llvm/optimized/SemaType.cpp.ll
 ; ozz-animation/optimized/options.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, 0
   %4 = select i1 %0, i1 %3, i1 false

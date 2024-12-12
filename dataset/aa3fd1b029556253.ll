@@ -1,5 +1,6 @@
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/formatter.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; opencv/optimized/polynom_solver.cpp.ll
@@ -18,10 +19,11 @@ entry:
   ret i1 %2
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cuddAnneal.c.ll
+; boost/optimized/formatter.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; cvc5/optimized/Solver.cc.ll
 ; graphviz/optimized/dotsplines.c.ll
@@ -55,8 +57,10 @@ entry:
   ret i1 %2
 }
 
-; 35 occurrences:
+; 37 occurrences:
 ; abseil-cpp/optimized/chi_square_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/formatter.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/cmProcess.cxx.ll
@@ -99,11 +103,12 @@ entry:
   ret i1 %2
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; clamav/optimized/libfreshclam_internal.c.ll
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; darktable/optimized/NefDecoder.cpp.ll
+; folly/optimized/FunctionScheduler.cpp.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/gvusershape.c.ll
 ; libpng/optimized/png.c.ll
@@ -115,8 +120,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(double %0) #0 {
 entry:
-  %1 = fdiv double %0, 1.000000e+03
-  %2 = fcmp ult double %1, 1.000000e+03
+  %1 = fdiv double %0, 0x41DFFFFFFF800000
+  %2 = fcmp ult double %1, 1.000000e+00
   ret i1 %2
 }
 
@@ -166,6 +171,19 @@ entry:
 }
 
 ; 4 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; opencv/optimized/ocr_hmm_decoder.cpp.ll
+; proj/optimized/geodesic.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(double %0) #0 {
+entry:
+  %1 = fdiv double %0, 6.000000e+00
+  %2 = fcmp ole double %1, 0.000000e+00
+  ret i1 %2
+}
+
+; 4 occurrences:
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/ocr_hmm_decoder.cpp.ll
@@ -185,17 +203,6 @@ define i1 @func0000000000000001(double %0) #0 {
 entry:
   %1 = fdiv double %0, 1.352300e+00
   %2 = fcmp uno double %1, 0.000000e+00
-  ret i1 %2
-}
-
-; 2 occurrences:
-; opencv/optimized/ocr_hmm_decoder.cpp.ll
-; proj/optimized/geodesic.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(double %0) #0 {
-entry:
-  %1 = fdiv double %0, 6.000000e+00
-  %2 = fcmp ole double %1, 0.000000e+00
   ret i1 %2
 }
 

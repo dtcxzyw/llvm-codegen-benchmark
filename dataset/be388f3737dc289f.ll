@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; entt/optimized/meta_ctor.cpp.ll
@@ -41,7 +41,6 @@
 ; rust-analyzer-rs/optimized/48pgggm69rrbw655.ll
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; wireshark/optimized/packet-woww.c.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
@@ -54,7 +53,7 @@ entry:
   ret i64 %5
 }
 
-; 41 occurrences:
+; 43 occurrences:
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; cmake/optimized/cmGlobalNinjaGenerator.cxx.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -63,6 +62,7 @@ entry:
 ; grpc/optimized/parsing.cc.ll
 ; hermes/optimized/JSLexer.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/CFIInstrInserter.cpp.ll
@@ -96,6 +96,7 @@ entry:
 ; yosys/optimized/sim.ll
 ; z3/optimized/dl_bound_relation.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i32 %0, i8 %1) #0 {
 entry:

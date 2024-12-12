@@ -1,5 +1,5 @@
 
-; 141 occurrences:
+; 140 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -64,7 +64,6 @@
 ; php/optimized/ir_emit.ll
 ; php/optimized/ir_ra.ll
 ; ruby/optimized/iseq.ll
-; stockfish/optimized/half_ka_v2_hm.ll
 ; stockfish/optimized/movegen.ll
 ; stockfish/optimized/movepick.ll
 ; stockfish/optimized/position.ll
@@ -145,7 +144,7 @@
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = call range(i64 0, 65) i64 @llvm.ctpop.i64(i64 %0)
-  %2 = icmp ult i64 %1, 2
+  %2 = icmp samesign ult i64 %1, 2
   ret i1 %2
 }
 
@@ -226,10 +225,10 @@ entry:
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = call range(i64 0, 65) i64 @llvm.ctpop.i64(i64 %0)
-  %2 = icmp ult i64 %1, 2
+  %2 = icmp samesign ult i64 %1, 2
   ret i1 %2
 }
 
@@ -237,7 +236,7 @@ entry:
 ; bdwgc/optimized/gc.c.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 4294967295
   %2 = and i64 %1, %0
@@ -250,7 +249,7 @@ entry:
 ; php/optimized/random.ll
 ; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = add nuw i64 %0, 1
   %2 = and i64 %1, %0
@@ -258,13 +257,12 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaSatLut.c.ll
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; hermes/optimized/zip.c.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
@@ -281,10 +279,10 @@ entry:
 ; cmake/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = call range(i64 0, 65) i64 @llvm.ctpop.i64(i64 %0)
-  %2 = icmp ugt i64 %1, 1
+  %2 = icmp samesign ugt i64 %1, 1
   ret i1 %2
 }
 

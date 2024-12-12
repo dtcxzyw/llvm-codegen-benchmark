@@ -8,6 +8,11 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, 127
 	slt	a0, a0, a1
 	ret
+func0000000000000008:                   # @func0000000000000008
+	sext.w	a1, a1
+	andi	a0, a0, 127
+	sltu	a0, a1, a0
+	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a1, a1
 	andi	a0, a0, 15
@@ -18,12 +23,6 @@ func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1
 	andi	a0, a0, -4
 	sltu	a0, a0, a1
-	ret
-func0000000000000008:                   # @func0000000000000008
-	sext.w	a1, a1
-	slli	a0, a0, 3
-	srli	a0, a0, 3
-	sltu	a0, a1, a0
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a1, a1

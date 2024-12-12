@@ -10,22 +10,22 @@
 ; mitsuba3/optimized/filesystem.cpp.ll
 ; opencv/optimized/accum_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = add nsw i64 %2, -2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 88
   %3 = add nsw i64 %2, -2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -47,7 +47,7 @@ entry:
 ; openusd/optimized/clip.cpp.ll
 ; openusd/optimized/clipSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002c4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = add nsw i64 %2, -1
@@ -59,18 +59,18 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = add nsw i64 %2, -2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000288(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = add nsw i64 %2, -1

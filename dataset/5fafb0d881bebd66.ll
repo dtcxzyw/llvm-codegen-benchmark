@@ -18,7 +18,7 @@
 ; vcpkg/optimized/configuration.cpp.ll
 ; vcpkg/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000484(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48

@@ -10,23 +10,23 @@ func0000000000000000:                   # @func0000000000000000
 	srliw	a1, a1, 2
 	sh2add	a0, a1, a0
 	ret
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	addi	a1, a1, 3
 	srliw	a1, a1, 2
 	sh2add	a0, a1, a0
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	addi	a1, a1, 1
 	andi	a1, a1, 63
 	sh3add	a0, a1, a0
 	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	addi	a1, a1, -1
 	slli	a1, a1, 47
 	srli	a1, a1, 47
 	sh3add	a0, a1, a0
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	addi	a1, a1, -1
 	slli	a1, a1, 52
 	srli	a1, a1, 52
@@ -50,7 +50,7 @@ func000000000000000c:                   # @func000000000000000c
 	zext.h	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	addi	a1, a1, 9
 	srliw	a1, a1, 1
 	sh1add	a0, a1, a0

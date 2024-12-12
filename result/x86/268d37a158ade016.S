@@ -23,8 +23,18 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$1, %edx
 	cmoveq	%rsi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000014:                   # @func0000000000000014
+	movq	%rdi, %rax
+	cmpl	$4, %edx
+	cmovaeq	%rsi, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
 	movq	%rdi, %rax
 	cmpl	$32, %edx
+	cmovbq	%rsi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdi, %rax
+	cmpl	$10000, %edx                    # imm = 0x2710
 	cmovbq	%rsi, %rax
 	retq

@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 105 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; bullet3/optimized/b3ConvexUtility.ll
@@ -37,6 +37,8 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -84,6 +86,8 @@
 ; stb/optimized/stb_connected_components.c.ll
 ; stockfish/optimized/thread.ll
 ; stockfish/optimized/tt.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
@@ -92,6 +96,15 @@
 ; wasmtime-rs/optimized/33slbp9da8waph2q.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -100,7 +113,7 @@ entry:
   ret i1 %4
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
@@ -115,6 +128,7 @@ entry:
 ; postgres/optimized/nbtinsert.ll
 ; postgres/optimized/nbtpage.ll
 ; proj/optimized/grids.cpp.ll
+; qemu/optimized/hw_net_e1000.c.ll
 ; slurm/optimized/job_test.ll
 ; slurm/optimized/partition_mgr.ll
 ; slurm/optimized/step_mgr.ll
@@ -165,7 +179,7 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; icu/optimized/normalizer2.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/uprops.ll
@@ -173,7 +187,6 @@ entry:
 ; linux/optimized/nlattr.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
-; recastnavigation/optimized/RecastRegion.cpp.ll
 ; slurm/optimized/job_test.ll
 ; wireshark/optimized/packet-lbmc.c.ll
 ; Function Attrs: nounwind
@@ -209,11 +222,14 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; oiio/optimized/iffinput.cpp.ll
 ; opencv/optimized/gfluidcore.cpp.ll
 ; postgres/optimized/nbtsearch.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/c500hnb79kuh9h85697qija6o.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
@@ -226,8 +242,7 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 7 occurrences:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TargetRegisterInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -252,6 +267,27 @@ entry:
 define i1 @func0000000000000009(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp uge i16 %1, %2
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 2 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; openjdk/optimized/hb-ot-shape-normalize.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i16 %1, %2
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/binary_descriptor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = icmp samesign uge i16 %1, %2
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
 }

@@ -25,21 +25,39 @@ func000000000000000d:                   # @func000000000000000d
 	slli	a0, a2, 1
 	addiw	a0, a0, -2
 	ret
-func000000000000000f:                   # @func000000000000000f
+func0000000000000001:                   # @func0000000000000001
 	andi	a3, a0, 1
 	bnez	a3, .LBB3_2
 	mv	a0, a1
 	ret
 .LBB3_2:
-	slli	a0, a2, 1
-	addiw	a0, a0, 4
+	slli	a2, a2, 2
+	addiw	a0, a2, 64
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000009:                   # @func0000000000000009
 	andi	a3, a0, 1
 	bnez	a3, .LBB4_2
 	mv	a0, a1
 	ret
 .LBB4_2:
+	slli	a2, a2, 1
+	addiw	a0, a2, 64
+	ret
+func000000000000000f:                   # @func000000000000000f
+	andi	a3, a0, 1
+	bnez	a3, .LBB5_2
+	mv	a0, a1
+	ret
+.LBB5_2:
+	slli	a0, a2, 1
+	addiw	a0, a0, 4
+	ret
+func0000000000000008:                   # @func0000000000000008
+	andi	a3, a0, 1
+	bnez	a3, .LBB6_2
+	mv	a0, a1
+	ret
+.LBB6_2:
 	slli	a0, a2, 1
 	addiw	a0, a0, -1
 	ret

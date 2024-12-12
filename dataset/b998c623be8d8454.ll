@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 48 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
 ; casadi/optimized/getnonzeros.cpp.ll
@@ -10,7 +10,6 @@
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
@@ -50,7 +49,7 @@
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; yosys/optimized/eval.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = sub nuw nsw i64 %2, %0
@@ -62,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = sub nuw nsw i64 %2, %0
@@ -75,7 +74,7 @@ entry:
 ; opencv/optimized/data.cpp.ll
 ; opencv/optimized/perf_optflowpyrlk.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = sub nuw i64 %2, %0

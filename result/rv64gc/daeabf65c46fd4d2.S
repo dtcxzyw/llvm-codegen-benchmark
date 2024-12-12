@@ -12,6 +12,10 @@ func0000000000000003:                   # @func0000000000000003
 	srli	a1, a1, 32
 	sub	a0, a1, a0
 	ret
+func000000000000001d:                   # @func000000000000001d
+	slliw	a1, a1, 3
+	sub	a0, a1, a0
+	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 33
 	srli	a1, a1, 32
@@ -22,10 +26,6 @@ func000000000000000f:                   # @func000000000000000f
 	sub	a0, a1, a0
 	ret
 func000000000000000d:                   # @func000000000000000d
-	slliw	a1, a1, 2
-	sub	a0, a1, a0
-	ret
-func000000000000001d:                   # @func000000000000001d
 	slliw	a1, a1, 2
 	sub	a0, a1, a0
 	ret

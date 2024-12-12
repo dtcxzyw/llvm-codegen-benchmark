@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addq	$511, %rsi                      # imm = 0x1FF
 	shrq	$9, %rsi
 	movslq	%edi, %rax
@@ -12,7 +12,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rax, %rsi
 	seta	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	addq	$511, %rsi                      # imm = 0x1FF
 	shrq	$9, %rsi
 	movslq	%edi, %rax

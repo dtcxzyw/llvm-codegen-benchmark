@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; linux/optimized/filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 18
   %3 = select i1 %2, i32 0, i32 %1

@@ -1,17 +1,17 @@
-func0000000000000159:                   # @func0000000000000159
+func00000000000004a9:                   # @func00000000000004a9
 	movq	%rsi, %rax
 	negq	%rax
-	cmpq	%rdi, %rax
-	setae	%cl
+	cmpq	%rax, %rdi
+	setbe	%cl
 	cmpq	%rsi, %rdi
 	setae	%al
 	andb	%cl, %al
 	retq
-func000000000000016b:                   # @func000000000000016b
+func00000000000004cb:                   # @func00000000000004cb
 	movq	%rsi, %rax
 	negq	%rax
-	cmpq	%rdi, %rax
-	setle	%cl
+	cmpq	%rax, %rdi
+	setge	%cl
 	cmpq	%rsi, %rdi
 	setl	%al
 	andb	%cl, %al

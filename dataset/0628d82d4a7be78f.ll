@@ -1,25 +1,20 @@
 
-%"class.doctest::String.2835128" = type { %union.anon.7.2835129 }
-%union.anon.7.2835129 = type { %"struct.doctest::String::view.2835130", [8 x i8] }
-%"struct.doctest::String::view.2835130" = type { ptr, i32, i32 }
+%"class.doctest::String.2946892" = type { %union.anon.7.2946893 }
+%union.anon.7.2946893 = type { %"struct.doctest::String::view.2946894", [8 x i8] }
+%"struct.doctest::String::view.2946894" = type { ptr, i32, i32 }
 
-; 10 occurrences:
-; abseil-cpp/optimized/cord.cc.ll
+; 5 occurrences:
 ; arrow/optimized/builder_nested.cc.ll
-; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
-; libwebp/optimized/frame_dec.c.ll
-; llvm/optimized/Path.cpp.ll
+; boost/optimized/process.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; php/optimized/html.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
-; xgboost/optimized/io.cc.ll
-; xgboost/optimized/recordio.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000007(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = getelementptr nusw ptr, ptr %4, i64 %0
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -32,7 +27,25 @@ define ptr @func0000000000000004(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = getelementptr %"class.doctest::String.2835128", ptr %4, i64 %0
+  %5 = getelementptr %"class.doctest::String.2946892", ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 8 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
+; libwebp/optimized/frame_dec.c.ll
+; llvm/optimized/Path.cpp.ll
+; xgboost/optimized/io.cc.ll
+; xgboost/optimized/recordio.cc.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, -9223372036854775808
+  %4 = select i1 %3, ptr null, ptr %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5
 }
 

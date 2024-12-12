@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; bullet3/optimized/btBoxBoxDetector.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/luaentity_sao.cpp.ll
 ; minetest/optimized/test_utilities.cpp.ll
 ; nori/optimized/nanovg.c.ll

@@ -6,7 +6,7 @@
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %not. = xor i1 %0, true
   %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
@@ -24,7 +24,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp sgt i64 %3, -1
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp slt i64 %3, 0
@@ -67,10 +67,10 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

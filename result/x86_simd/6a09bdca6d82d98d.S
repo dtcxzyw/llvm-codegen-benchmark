@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI1_0:
 	.quad	33                              # 0x21
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vptestnmq	%ymm1, %ymm1, %k1
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm0 {%k1}
 	vpmovqd	%ymm0, %xmm0

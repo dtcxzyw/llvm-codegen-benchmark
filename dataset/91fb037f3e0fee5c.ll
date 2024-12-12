@@ -36,8 +36,11 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; cmake/optimized/frm_driver.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_grid.ll
 ; opencv/optimized/contours_link.cpp.ll
 ; opencv/optimized/cuda_test.cpp.ll
 ; opencv/optimized/opencl_custom_kernel.cpp.ll

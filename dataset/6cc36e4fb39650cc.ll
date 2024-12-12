@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.0.2622262" = type { %struct.BEInt.1.2622266 }
-%struct.BEInt.1.2622266 = type { [2 x i8] }
+%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
+%struct.BEInt.1.2735703 = type { [2 x i8] }
 
 ; 6 occurrences:
 ; freetype/optimized/sfnt.c.ll
@@ -10,13 +10,13 @@
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000015a(i32 %0, ptr %1) #0 {
+define ptr @func00000000000001ff(i32 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 2
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 2
   %3 = zext nneg i32 %0 to i64
-  %4 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %2, i64 %3
-  %5 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %4, i64 %3
-  %6 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %5, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %2, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %4, i64 %3
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -89,13 +89,13 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000014a(i32 %0, ptr %1) #0 {
+define ptr @func00000000000001ef(i32 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 24
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 24
   %3 = zext i32 %0 to i64
-  %4 = getelementptr nusw ptr, ptr %2, i64 %3
-  %5 = getelementptr nusw ptr, ptr %4, i64 %3
-  %6 = getelementptr nusw ptr, ptr %5, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %2, i64 %3
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %3
   ret ptr %6
 }
 

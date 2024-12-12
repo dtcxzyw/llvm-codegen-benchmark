@@ -48,3 +48,8 @@ func0000000000000009:                   # @func0000000000000009
 	vmsleu.vv	v12, v10, v8
 	vmand.mm	v0, v12, v0
 	ret
+func0000000000000019:                   # @func0000000000000019
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vmsleu.vv	v12, v10, v8
+	vmand.mm	v0, v12, v0
+	ret

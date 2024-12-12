@@ -10,6 +10,18 @@ func000000000000007f:                   # @func000000000000007f
 	movl	%edi, %eax
 	addq	%rcx, %rax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	addq	%rdx, %rsi
+	leaq	(%rsi,%rsi,4), %rax
+	movl	%edi, %ecx
+	leaq	(%rcx,%rax,2), %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	addq	%rdx, %rsi
+	leaq	(%rsi,%rsi,4), %rax
+	movl	%edi, %ecx
+	leaq	(%rcx,%rax,2), %rax
+	retq
 func0000000000000030:                   # @func0000000000000030
 	addq	%rdx, %rsi
 	imulq	$666643, %rsi, %rcx             # imm = 0xA2C13
@@ -34,10 +46,4 @@ func0000000000000060:                   # @func0000000000000060
 	imulq	$1540483477, %rsi, %rcx         # imm = 0x5BD1E995
 	movl	%edi, %eax
 	addq	%rcx, %rax
-	retq
-func0000000000000010:                   # @func0000000000000010
-	addq	%rdx, %rsi
-	leaq	(%rsi,%rsi,4), %rax
-	movl	%edi, %ecx
-	leaq	(%rcx,%rax,2), %rax
 	retq

@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -27,6 +27,7 @@
 ; lightgbm/optimized/gbdt_prediction.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; luau/optimized/BytecodeAnalysis.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -34,13 +35,13 @@
 ; yosys/optimized/fstapi.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

@@ -3,13 +3,13 @@ func0000000000000007:                   # @func0000000000000007
 	testb	$1, %sil
 	movl	$127, %eax
 	cmovel	%edx, %eax
-	cmpl	%edi, %eax
-	setge	%al
+	cmpl	%eax, %edi
+	setle	%al
 	retq
 func0000000000000005:                   # @func0000000000000005
 	notl	%edx
-	cmpl	%edi, %edx
-	setae	%al
+	cmpl	%edx, %edi
+	setbe	%al
 	orb	%sil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -19,7 +19,7 @@ func0000000000000001:                   # @func0000000000000001
 	negb	%sil
 	sbbl	%eax, %eax
 	orl	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -29,6 +29,6 @@ func0000000000000006:                   # @func0000000000000006
 	negb	%sil
 	sbbl	%eax, %eax
 	orl	%edx, %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq

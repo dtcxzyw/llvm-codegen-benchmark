@@ -1,25 +1,25 @@
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	sarl	$5, %eax
 	addl	%edi, %eax
 	sete	%al
 	retq
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	sarl	$5, %eax
 	addl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	sarl	%eax
 	addl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	sarl	%eax

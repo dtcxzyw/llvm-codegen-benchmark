@@ -14,7 +14,7 @@
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 8, i64 0
   %3 = or disjoint i64 %2, %0

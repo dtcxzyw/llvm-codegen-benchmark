@@ -4,7 +4,7 @@
 ; libquic/optimized/pickle.cc.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0) #0 {
+define i1 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = shl nsw i64 %1, 3
@@ -19,13 +19,14 @@ entry:
 ; php/optimized/zend_jit.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0) #0 {
+define i1 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, -2
   ret i1 %1
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/sparring_partner.ll
 ; ncnn/optimized/modelbin.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; protobuf/optimized/cord_field.cc.ll
@@ -45,7 +46,7 @@ entry:
 ; protobuf/optimized/wire_format.cc.ll
 ; protobuf/optimized/wire_format_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0) #0 {
+define i1 @func00000000000000a8(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = shl nsw i64 %1, 1

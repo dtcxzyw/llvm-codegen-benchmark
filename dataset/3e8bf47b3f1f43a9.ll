@@ -2,10 +2,8 @@
 ; 22 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
 ; cpython/optimized/_ctypes_test.ll
-; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/tx.ll
@@ -22,19 +20,20 @@
 ; ruby/optimized/io.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 96 occurrences:
+; 94 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bmcMaj.c.ll
-; abc/optimized/dauDsd.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/sbdLut.c.ll
@@ -61,6 +60,7 @@ entry:
 ; icu/optimized/olsontz.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
@@ -77,7 +77,6 @@ entry:
 ; ncnn/optimized/scale_x86_avx512.cpp.ll
 ; oiio/optimized/hdroutput.cpp.ll
 ; openblas/optimized/dsbtrd.c.ll
-; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/how_to_use_OpenCV_parallel_for_new.cpp.ll
@@ -122,7 +121,6 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/t_zset.ll
 ; ruby/optimized/time.ll
-; slurm/optimized/reservation.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; sundials/optimized/arkode_arkstep.c.ll
@@ -133,11 +131,11 @@ define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 76 occurrences:
+; 72 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; arrow/optimized/message.cc.ll
@@ -169,8 +167,6 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/sgioutput.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/simpleflow.cpp.ll
@@ -197,8 +193,6 @@ entry:
 ; openjdk/optimized/loopnode.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/spades.cc.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/av1_inv_txfm1d.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -219,13 +213,15 @@ define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 249 occurrences:
+; 251 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -478,7 +474,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -491,7 +487,7 @@ define i64 @func0000000000000007(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

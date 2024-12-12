@@ -8,7 +8,7 @@
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = mul nsw i32 %4, %0
   ret i32 %5
 }

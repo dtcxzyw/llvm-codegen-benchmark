@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 71 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaStr.c.ll
@@ -23,7 +23,6 @@
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
@@ -82,7 +81,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; graphviz/optimized/actions.c.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/fault.ll
@@ -92,7 +91,6 @@ entry:
 ; linux/optimized/process_64.ll
 ; linux/optimized/step.ll
 ; linux/optimized/super.ll
-; linux/optimized/sys_ia32.ll
 ; linux/optimized/taskstats.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -104,12 +102,12 @@ define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 9
   %3 = and i32 %2, -2147483648
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 57 occurrences:
+; 56 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/giaIso.c.ll
 ; abc/optimized/ifDec07.c.ll
@@ -159,7 +157,6 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -172,7 +169,7 @@ define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 18
   %3 = and i32 %2, 1835008
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -187,7 +184,7 @@ define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
   %3 = and i32 %2, 448
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -241,7 +238,7 @@ define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = and i32 %2, 65280
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

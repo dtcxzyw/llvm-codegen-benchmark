@@ -217,7 +217,7 @@ entry:
   ret i32 %3
 }
 
-; 245 occurrences:
+; 244 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -384,7 +384,6 @@ entry:
 ; postgres/optimized/acl.ll
 ; postgres/optimized/gistproc.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/util_iova-tree.c.ll
 ; redis/optimized/t_set.ll
 ; redis/optimized/t_stream.ll
 ; rocksdb/optimized/write_batch_with_index_internal.cc.ll
@@ -490,7 +489,8 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/gregorian.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; openmpi/optimized/coll_base_topo.ll

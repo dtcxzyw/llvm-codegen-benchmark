@@ -8,7 +8,7 @@ define i8 @func0000000000000004(i8 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 -256, %1
   %3 = trunc i32 %2 to i8
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 
@@ -21,7 +21,7 @@ define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 -129, %1
   %3 = trunc i32 %2 to i8
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 

@@ -1,10 +1,11 @@
 
-; 70 occurrences:
+; 71 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/resFilter.c.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/ipv6_address_rule.ll
 ; clamav/optimized/optparser.c.ll
 ; cvc5/optimized/cardinality_extension.cpp.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
@@ -14,13 +15,10 @@
 ; gromacs/optimized/dlasq3.cpp.ll
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/muParserBase.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; icu/optimized/decNumber.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/intel_pstate.ll
@@ -69,6 +67,9 @@
 ; wireshark/optimized/packet-ssh.c.ll
 ; wireshark/optimized/packet-tplink-smarthome.c.ll
 ; wireshark/optimized/packet-wcp.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -90,7 +91,7 @@ entry:
   ret i64 %4
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -107,9 +108,7 @@ entry:
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/ostream.ll
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
-; openssl/optimized/libcrypto-lib-rsa_pss.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
-; openssl/optimized/libcrypto-shlib-rsa_pss.ll
 ; openusd/optimized/bignum.cc.ll
 ; postgres/optimized/fe-protocol3.ll
 ; postgres/optimized/plancat.ll
@@ -120,7 +119,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -2
+  %2 = add nsw i32 %1, -3
   %3 = sub i32 %2, %0
   %4 = sext i32 %3 to i64
   ret i64 %4
@@ -187,18 +186,17 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; openjdk/optimized/ciTypeFlow.ll
-; postgres/optimized/datapagemap.ll
 ; wireshark/optimized/sharkd_session.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i32 %0, i32 %1) #0 {

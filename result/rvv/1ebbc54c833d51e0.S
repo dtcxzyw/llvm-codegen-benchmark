@@ -9,7 +9,7 @@ func0000000000000004:                   # @func0000000000000004
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v11, v11, 8
-	vor.vv	v10, v11, v10
+	vor.vv	v10, v10, v11
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwaddu.wv	v8, v8, v11
@@ -17,7 +17,7 @@ func000000000000000d:                   # @func000000000000000d
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v11, v11, 8
-	vor.vv	v10, v11, v10
+	vor.vv	v10, v10, v11
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwaddu.wv	v8, v8, v11

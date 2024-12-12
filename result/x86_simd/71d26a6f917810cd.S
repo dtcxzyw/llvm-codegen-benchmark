@@ -35,10 +35,10 @@ func0000000000000008:                   # @func0000000000000008
 	vzeroupper
 	retq
 .LCPI1_0:
-	.quad	100                             # 0x64
+	.quad	1000                            # 0x3e8
 .LCPI1_1:
-	.quad	4294967292                      # 0xfffffffc
-func0000000000000004:                   # @func0000000000000004
+	.long	50                              # 0x32
+func0000000000000204:                   # @func0000000000000204
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx
@@ -65,14 +65,15 @@ func0000000000000004:                   # @func0000000000000004
 	vmovq	%rax, %xmm0
 	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vptestnmq	.LCPI1_1(%rip){1to4}, %ymm0, %k0
+	vpmovqd	%ymm0, %xmm0
+	vpcmpltud	.LCPI1_1(%rip){1to4}, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI2_0:
-	.quad	1000                            # 0x3e8
+	.quad	1000000                         # 0xf4240
 .LCPI2_1:
-	.long	50                              # 0x32
+	.long	100                             # 0x64
 func0000000000000104:                   # @func0000000000000104
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
@@ -106,10 +107,10 @@ func0000000000000104:                   # @func0000000000000104
 	vzeroupper
 	retq
 .LCPI3_0:
-	.quad	1000000                         # 0xf4240
+	.quad	1000                            # 0x3e8
 .LCPI3_1:
-	.long	100                             # 0x64
-func0000000000000084:                   # @func0000000000000084
+	.long	10                              # 0xa
+func0000000000000004:                   # @func0000000000000004
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx

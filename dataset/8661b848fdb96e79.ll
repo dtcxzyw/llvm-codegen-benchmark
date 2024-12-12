@@ -20,7 +20,7 @@
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; z3/optimized/sat_cut_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 128
   %3 = icmp eq i32 %2, 0
@@ -38,7 +38,7 @@ entry:
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; qemu/optimized/hw_audio_intel-hda.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108864
   %3 = icmp eq i32 %2, 0
@@ -55,10 +55,10 @@ entry:
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 14
-  %3 = icmp ult i32 %2, 6
+  %3 = icmp samesign ult i32 %2, 6
   %4 = shl nuw nsw i32 1, %0
   %5 = select i1 %3, i32 1, i32 %4
   ret i32 %5
@@ -67,10 +67,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/lpkCut.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 62
-  %3 = icmp ult i32 %2, 6
+  %3 = icmp samesign ult i32 %2, 6
   %4 = shl nuw i32 1, %0
   %5 = select i1 %3, i32 1, i32 %4
   ret i32 %5
@@ -79,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0

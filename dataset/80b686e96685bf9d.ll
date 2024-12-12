@@ -13,10 +13,9 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; cvc5/optimized/alf_node_converter.cpp.ll
-; openblas/optimized/dgbmv_thread_t.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:

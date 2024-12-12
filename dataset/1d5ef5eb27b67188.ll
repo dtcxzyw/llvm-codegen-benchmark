@@ -1,5 +1,5 @@
 
-%struct.TCGTemp.2593549 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
 
 ; 2 occurrences:
 ; postgres/optimized/generic_xlog.ll
@@ -9,7 +9,7 @@ define i64 @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.TCGTemp.2593549, ptr %1, i64 %4
+  %5 = getelementptr %struct.TCGTemp.2707225, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
@@ -151,11 +151,11 @@ entry:
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000001c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

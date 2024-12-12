@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; cpython/optimized/floatobject.ll
@@ -20,7 +20,6 @@
 ; wireshark/optimized/packet-hcrt.c.ll
 ; wireshark/optimized/packet-ieee1722.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
-; wireshark/optimized/packet-ipmi-trace.c.ll
 ; wireshark/optimized/packet-lwm2mtlv.c.ll
 ; wireshark/optimized/packet-opus.c.ll
 ; wireshark/optimized/packet-pw-atm.c.ll
@@ -34,30 +33,9 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-ieee802154.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i8 %0) #0 {
-entry:
-  %1 = and i8 %0, 24
-  %2 = icmp ne i8 %1, 0
-  ret i1 %2
-}
-
-; 2 occurrences:
-; linux/optimized/intel_step.ll
-; lz4/optimized/lz4frame.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0) #0 {
-entry:
-  %1 = and i8 %0, 48
-  %2 = icmp ne i8 %1, 48
-  ret i1 %2
-}
-
-; 1 occurrences:
 ; libwebp/optimized/webpinfo.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0) #0 {
+define i1 @func0000000000000018(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 32
   %2 = icmp ne i8 %1, 0

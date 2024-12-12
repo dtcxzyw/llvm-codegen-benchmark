@@ -1,11 +1,11 @@
 
-; 104 occurrences:
+; 155 occurrences:
 ; actix-rs/optimized/4js91cppjrha4sux.ll
 ; actix-rs/optimized/x5wdyzwp9hx5e8t.ll
+; boost/optimized/numeric.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/str.c.ll
 ; clap-rs/optimized/58cs3pckwcmstm46.ll
-; cmake/optimized/cmGlobalUnixMakefileGenerator3.cxx.ll
 ; coreutils-rs/optimized/2x3fhuh70larpm5m.ll
 ; coreutils-rs/optimized/44vvtk2pjfi12lr9.ll
 ; coreutils-rs/optimized/ixpgh0gjooq08dy.ll
@@ -23,9 +23,7 @@
 ; just-rs/optimized/52uhuxfcop8n85cu.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/kstrtox.ll
-; linux/optimized/pcm_timer.ll
 ; linux/optimized/regmap.ll
-; llvm/optimized/CheckPlacementNew.cpp.ll
 ; llvm/optimized/RustDemangle.cpp.ll
 ; llvm/optimized/VLASizeChecker.cpp.ll
 ; meilisearch-rs/optimized/134vr9xz294dqnvo.ll
@@ -35,7 +33,6 @@
 ; ockam-rs/optimized/10k16szy9z0gnoyc.ll
 ; ockam-rs/optimized/2v5jo34gglxi7dx1.ll
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
-; openjdk/optimized/g1RegionToSpaceMapper.ll
 ; openjdk/optimized/jvmFlagConstraintsGC.ll
 ; openjdk/optimized/os.ll
 ; openjdk/optimized/shenandoahHeap.ll
@@ -104,22 +101,77 @@
 ; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
 ; wasmtime-rs/optimized/u9l4sc0a46h6g9z.ll
 ; xgboost/optimized/elementwise_metric.cc.ll
+; zed-rs/optimized/0pbj35jdb0n0bb6blyk493qkr.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1bfxcgu4mo1q7tli6nvnmpmbr.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/20igqmfettcex48uahr8huyna.ll
+; zed-rs/optimized/20kfz4gqlv1t1gmkf0vxm6kb9.ll
+; zed-rs/optimized/20wexgg4z3ww9j4h4iowli6fi.ll
+; zed-rs/optimized/27vlvcehd5fwhym4kjj7notsh.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/2qu3ksqe5t2g2a0ursek881ws.ll
+; zed-rs/optimized/2stbxmle5qyblpbm85idqsgvv.ll
+; zed-rs/optimized/2xv7gcyhgnpwydetyfctbxzbn.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/3p631vu9oxnxxo7ycky8j4ebp.ll
+; zed-rs/optimized/3qd92cr7jt80yrt25363ufvvn.ll
+; zed-rs/optimized/3wk2sbofyuh9r9t3rhig8ynyg.ll
+; zed-rs/optimized/54arwywyn44uhdmfvofjwixkx.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5bbqzb8q5kgxioclo37bxny1o.ll
+; zed-rs/optimized/5uzqbdqe1c2211uhbr477llbz.ll
+; zed-rs/optimized/5xfke1jw0ac7pab611oym1u20.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/7upr0o9ppxwcohq9brd8pyu8y.ll
+; zed-rs/optimized/7znph2z4y55emrpyaq53m67p1.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/8qol7q25vqqdxkncrkeuuvo2e.ll
+; zed-rs/optimized/8saagxlqr1drbipxii3ylnn9h.ll
+; zed-rs/optimized/95avnjj492qn9kfp6atrvkp2o.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9k41n0dnz3hh6kxq426e2leu5.ll
+; zed-rs/optimized/9ydmyaey957xyuywtl3djlzml.ll
+; zed-rs/optimized/a8gnqmwrn3029hplkci6d0ejl.ll
+; zed-rs/optimized/axxbjhn7tbipaimusvotj6onb.ll
+; zed-rs/optimized/b1zstcip87cpnqp265tsc7n2q.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/b9loi3at7jzhs8cuay6b4rmu9.ll
+; zed-rs/optimized/bpfch6rcllnvcfn46n7uygw1d.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/d2f5qcalm9pb33cbqtyxaq7pg.ll
+; zed-rs/optimized/d5b8zvtgw734y7w1gjv52oafa.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/dhtd8mxtyja4srmt3ddrqkjib.ll
+; zed-rs/optimized/dkhmsd4tzriarxaiwjx408jm6.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e75fjpzj3bpzufgy33hoqk9eo.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/ejoihjspszurkh40ggiznjxps.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
+; zed-rs/optimized/ept7l7id9yl52ab8m2qhombt7.ll
+; zed-rs/optimized/f09trre04aklz40q4fa9nhffu.ll
+; zed-rs/optimized/f2qsfrlgh226gsylx7h444e9w.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
-; 76 occurrences:
+; 79 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/SMDLoader.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/3q8ukvkopatfv0x0.ll
 ; cpython/optimized/mpdecimal.ll
-; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/partition_generator.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -147,7 +199,6 @@ entry:
 ; lightgbm/optimized/parser.cpp.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/fair.ll
-; linux/optimized/hexdump.ll
 ; linux/optimized/ialloc.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/DWARFDebugAddr.cpp.ll
@@ -160,7 +211,6 @@ entry:
 ; opencv/optimized/matrix_transform.cpp.ll
 ; opencv/optimized/reduce_layer.cpp.ll
 ; openjdk/optimized/codeHeapState.ll
-; openjdk/optimized/g1RegionToSpaceMapper.ll
 ; openjdk/optimized/shenandoahFullGC.ll
 ; openjdk/optimized/symtab.ll
 ; openmpi/optimized/mpl_shm_mmap.ll
@@ -188,12 +238,16 @@ entry:
 ; tev/optimized/MultiGraph.cpp.ll
 ; wasmtime-rs/optimized/2y3wfjzj02o80wks.ll
 ; wireshark/optimized/l16decode.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -202,7 +256,6 @@ entry:
 ; clamav/optimized/str.c.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
-; hdf5/optimized/H5MFsection.c.ll
 ; hdf5/optimized/H5Ocopy_ref.c.ll
 ; hdf5/optimized/H5PB.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
@@ -232,11 +285,12 @@ entry:
 ; tev/optimized/Ipc.cpp.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; tev/optimized/StbiImageLoader.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -249,7 +303,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -260,17 +314,44 @@ entry:
 define i1 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   ret i1 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; cmake/optimized/cmGlobalUnixMakefileGenerator3.cxx.ll
+; llvm/optimized/CheckPlacementNew.cpp.ll
+; openjdk/optimized/g1RegionToSpaceMapper.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = udiv i64 %1, %2
+  %4 = icmp samesign ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 4 occurrences:
+; cpython/optimized/unicodeobject.ll
+; linux/optimized/hexdump.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; openjdk/optimized/g1RegionToSpaceMapper.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = udiv i64 %1, %2
+  %4 = icmp samesign ult i64 %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; hdf5/optimized/H5MF.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
@@ -280,7 +361,7 @@ entry:
 define i1 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   ret i1 %4
 }
 
@@ -291,7 +372,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 

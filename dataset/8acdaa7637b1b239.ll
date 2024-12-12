@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 21 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/zend_jit.ll
@@ -16,6 +16,11 @@
 ; wasmtime-rs/optimized/2mzhr81bqzbenmxl.ll
 ; wireshark/optimized/packet-alp.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0) #0 {
 entry:

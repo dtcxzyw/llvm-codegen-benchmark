@@ -11,6 +11,30 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; php/optimized/dow.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = add nuw nsw i64 %0, 7
+  %4 = sub nuw nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 3 occurrences:
+; boost/optimized/static_string.ll
+; diesel-rs/optimized/1mcix0ravw4ybg9k.ll
+; wireshark/optimized/blf.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = add i64 %0, 1
+  %4 = sub i64 %3, %2
+  ret i64 %4
+}
+
 ; 4 occurrences:
 ; abseil-cpp/optimized/pool_urbg_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
@@ -60,18 +84,6 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %0, 1
   %4 = sub nsw i64 %3, %2
-  ret i64 %4
-}
-
-; 2 occurrences:
-; diesel-rs/optimized/1mcix0ravw4ybg9k.ll
-; wireshark/optimized/blf.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i64
-  %3 = add i64 %0, -16
-  %4 = sub i64 %3, %2
   ret i64 %4
 }
 

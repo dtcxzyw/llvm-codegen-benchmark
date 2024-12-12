@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/ia64.c.ll
 ; linux/optimized/fixup.ll
 ; linux/optimized/uncore.ll
@@ -7,7 +7,6 @@
 ; mold/optimized/arch-s390x.cc.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; spike/optimized/disasm.ll
-; wireshark/optimized/packet-etag.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:

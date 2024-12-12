@@ -13,13 +13,13 @@
 ; php/optimized/compact_vars.ll
 ; php/optimized/zend_dfg.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = add nsw i32 %2, -5
   %4 = lshr i32 %3, 6
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 

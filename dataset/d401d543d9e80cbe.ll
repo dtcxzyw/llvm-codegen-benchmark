@@ -1,10 +1,9 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/31vrb73337u20kex.ll
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
-; gromacs/optimized/lmmin.cpp.ll
 ; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
@@ -37,27 +36,52 @@ entry:
 }
 
 ; 3 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; lvgl/optimized/lv_style.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000df(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -1
+  ret ptr %6
+}
+
+; 1 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000d3(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr double, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -8
+  ret ptr %6
+}
+
+; 3 occurrences:
 ; opencv/optimized/p3p.cpp.ll
 ; openusd/optimized/matrix4d.cpp.ll
 ; openusd/optimized/matrix4f.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 5
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr double, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 
-; 2 occurrences:
-; hyperscan/optimized/teddy_compile.cpp.ll
+; 1 occurrences:
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000de(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
@@ -87,8 +111,7 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
+; 7 occurrences:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -97,10 +120,10 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/epnp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr double, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
@@ -115,6 +138,18 @@ entry:
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr double, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -8
+  ret ptr %6
+}
+
+; 1 occurrences:
+; casadi/optimized/sparsity_internal.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 4
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr i64, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 

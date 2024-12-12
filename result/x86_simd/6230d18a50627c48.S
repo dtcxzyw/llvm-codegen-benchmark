@@ -78,3 +78,35 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+func0000000000000014:                   # @func0000000000000014
+	vpsllw	$15, %xmm0, %xmm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpltud	%ymm2, %ymm1, %k1
+	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000019:                   # @func0000000000000019
+	vpsllw	$15, %xmm0, %xmm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltud	%ymm2, %ymm1, %k1
+	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000018:                   # @func0000000000000018
+	vpsllw	$15, %xmm0, %xmm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnleud	%ymm2, %ymm1, %k1
+	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000015:                   # @func0000000000000015
+	vpsllw	$15, %xmm0, %xmm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpleud	%ymm2, %ymm1, %k1
+	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

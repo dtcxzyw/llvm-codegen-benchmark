@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; lief/optimized/camellia.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; php/optimized/avifinfo.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll

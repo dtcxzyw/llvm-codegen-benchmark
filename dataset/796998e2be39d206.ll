@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; assimp/optimized/MD5Parser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cvc5/optimized/attempt_solution_simplex.cpp.ll
@@ -18,6 +18,7 @@
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/shannon_entropy.cc.ll
+; draco/optimized/symbol_encoding.cc.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll

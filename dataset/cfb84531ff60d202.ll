@@ -1,5 +1,5 @@
 
-; 91 occurrences:
+; 98 occurrences:
 ; arrow/optimized/caching.cc.ll
 ; arrow/optimized/expression.cc.ll
 ; casadi/optimized/options.cpp.ll
@@ -9,8 +9,15 @@
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_gen_cpp.cpp.ll
 ; flatbuffers/optimized/java_generator.cc.ll
+; hermes/optimized/DependencyExtractor.cpp.ll
+; hermes/optimized/JSLibInternal.cpp.ll
+; hermes/optimized/JSRegExp.cpp.ll
+; hermes/optimized/RegexParser.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; jemalloc/optimized/extent_dss.ll
 ; jemalloc/optimized/extent_dss.pic.ll
 ; jemalloc/optimized/extent_dss.sym.ll
@@ -111,6 +118,19 @@ entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %6 = sub i64 %1, %2
+  %7 = getelementptr i8, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %2, %3
+  %5 = getelementptr i8, ptr %0, i64 %4
   %6 = sub i64 %1, %2
   %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7

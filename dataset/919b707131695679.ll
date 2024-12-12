@@ -1,8 +1,9 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/cmSetSourceFilesPropertiesCommand.cxx.ll
 ; cpython/optimized/frameobject.ll
 ; cpython/optimized/typeobject.ll
@@ -36,13 +37,28 @@
 ; openvdb/optimized/AttributeSet.cc.ll
 ; verilator/optimized/V3TSP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 64
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 64
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = and i64 %4, 137438953440
   %6 = icmp eq i64 %5, 32
+  ret i1 %6
+}
+
+; 3 occurrences:
+; linux/optimized/algboss.ll
+; qemu/optimized/migration_qemu-file.c.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 4
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = and i64 %4, 2147483648
+  %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
 
@@ -57,40 +73,13 @@ entry:
 ; proj/optimized/cct.cpp.ll
 ; proj/optimized/gie.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, ptr %1) #0 {
+define i1 @func000000000000018c(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 10
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 10
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = and i64 %4, 4294967292
   %6 = icmp ne i64 %5, 0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; linux/optimized/algboss.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr i8, ptr %1, i64 1
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %0, %3
-  %5 = and i64 %4, 2147483648
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; wireshark/optimized/rfc7468.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr i8, ptr %1, i64 1
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %0, %3
-  %5 = and i64 %4, 4294967295
-  %6 = icmp ult i64 %5, 11
   ret i1 %6
 }
 

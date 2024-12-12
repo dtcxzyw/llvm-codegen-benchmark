@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/date.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1) #0 {

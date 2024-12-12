@@ -18,7 +18,7 @@
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000361(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 63
@@ -36,13 +36,13 @@ entry:
 ; llvm/optimized/VarLenCodeEmitterGen.cpp.ll
 ; openjdk/optimized/g1CardSet.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b4(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000374(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 63
   %4 = lshr i64 %3, 6
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -50,13 +50,13 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000134(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -1
   %4 = lshr i64 %3, 1
   %5 = add nsw i64 %0, -1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 

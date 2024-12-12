@@ -1,17 +1,18 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
-; llvm/optimized/Minidump.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; regex-rs/optimized/3ixfkxlmcuecmmus.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 3
@@ -20,11 +21,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/amd_bus.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 8

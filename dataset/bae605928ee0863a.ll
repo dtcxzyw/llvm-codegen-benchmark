@@ -45,7 +45,7 @@ entry:
   ret float %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -56,6 +56,7 @@ entry:
 ; gromacs/optimized/slasd7.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; minetest/optimized/l_camera.cpp.ll
 ; nori/optimized/warptest.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll

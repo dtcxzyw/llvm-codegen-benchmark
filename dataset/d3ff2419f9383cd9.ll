@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; abc/optimized/absRef.c.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -15,7 +15,6 @@
 ; darktable/optimized/introspection_highlights.c.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll

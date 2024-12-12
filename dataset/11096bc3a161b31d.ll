@@ -1,13 +1,13 @@
 
 ; 10 occurrences:
 ; cmake/optimized/index.c.ll
-; folly/optimized/Subprocess.cpp.ll
 ; hdf5/optimized/H5LT.c.ll
 ; linux/optimized/iov_iter.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; minetest/optimized/string.cpp.ll
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
@@ -15,8 +15,8 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -8
-  %5 = add i64 %0, 8
-  %6 = add i64 %5, %4
+  %5 = add i64 %0, 1
+  %6 = add i64 %4, %5
   ret i64 %6
 }
 

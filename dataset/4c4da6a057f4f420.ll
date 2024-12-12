@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 95 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/memory_pool.cc.ll
@@ -43,7 +43,6 @@
 ; llvm/optimized/ParseExpr.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/RISCV.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
@@ -91,6 +90,9 @@
 ; qemu/optimized/job.c.ll
 ; qemu/optimized/system_vl.c.ll
 ; spike/optimized/socketif.ll
+; turborepo-rs/optimized/8oe5vwmwwrst9p60jy1zusiyz.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; verilator/optimized/V3EmitCImp.cpp.ll
 ; verilator/optimized/V3Trace.cpp.ll
 ; Function Attrs: nounwind
@@ -102,7 +104,8 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 18 occurrences:
+; boost/optimized/console_buffer.ll
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
 ; llvm/optimized/Iterator.cpp.ll
 ; llvm/optimized/MCCodeView.cpp.ll
@@ -118,6 +121,8 @@ entry:
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; rust-analyzer-rs/optimized/k1iwjb50a8mvwg2.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/70ymcp0y6yqkpw3c0y4yzyh2l.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:

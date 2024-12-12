@@ -18,8 +18,3 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %esi
 	setb	%al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	andl	$536870911, %esi                # imm = 0x1FFFFFFF
-	cmpl	%edi, %esi
-	seta	%al
-	retq

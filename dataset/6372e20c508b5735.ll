@@ -1,7 +1,8 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_lens.cc.ll
 ; linux/optimized/vmcore.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_persist_calc.ll
 ; postgres/optimized/brin_tuple.ll

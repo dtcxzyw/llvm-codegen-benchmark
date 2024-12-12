@@ -52,7 +52,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/hw_riscv_numa.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -65,7 +65,7 @@ entry:
 ; llvm/optimized/UDTLayout.cpp.ll
 ; openjdk/optimized/shenandoahFreeSet.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -73,11 +73,23 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %2, 1
+  %4 = icmp ult i64 %3, %1
+  %5 = select i1 %4, i64 %0, i64 1
+  ret i64 %5
+}
+
+; 5 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; hdf5/optimized/H5FDonion.c.ll
 ; libquic/optimized/quic_stream_sequencer_buffer.cc.ll
+; sentencepiece/optimized/sentencepiece_processor.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -92,10 +104,10 @@ entry:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; opencv/optimized/rotcalipers.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ult i64 %3, %1
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
 }
@@ -104,7 +116,7 @@ entry:
 ; box2d/optimized/b2_polygon_shape.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp slt i64 %3, %1
@@ -115,7 +127,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/StackColoring.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000006c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %.not = icmp eq i64 %3, %1
@@ -126,7 +138,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/clockevents.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp ult i64 %3, %1
@@ -148,7 +160,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/arraymodule.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000006a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 65536
   %4 = icmp sgt i64 %3, %1

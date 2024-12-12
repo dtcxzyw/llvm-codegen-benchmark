@@ -1,14 +1,12 @@
 
-; 58 occurrences:
+; 56 occurrences:
 ; abc/optimized/abcHaig.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/cutMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/mapperCut.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; darktable/optimized/histogram.c.ll

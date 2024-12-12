@@ -19,7 +19,7 @@ entry:
   %2 = shl i64 %1, 29
   %3 = add i64 %2, -4294967296
   %4 = ashr i64 %3, 32
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -35,12 +35,12 @@ entry:
 ; yosys/optimized/opt_muxtree.ll
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, -4294967296
   %4 = ashr exact i64 %3, 32
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -49,12 +49,12 @@ entry:
 ; opencv/optimized/darknet_importer.cpp.ll
 ; qemu/optimized/hw_9pfs_9p-xattr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, 4294967296
   %4 = ashr exact i64 %3, 32
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -63,12 +63,12 @@ entry:
 ; openjdk/optimized/management.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add nsw i64 %2, -4294967296
   %4 = ashr exact i64 %3, 32
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -80,7 +80,7 @@ entry:
   %2 = shl i64 %1, 29
   %3 = add i64 %2, -4294967296
   %4 = ashr i64 %3, 32
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
@@ -97,12 +97,12 @@ entry:
 ; slurm/optimized/step_launch.ll
 ; wireshark/optimized/import_text_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, -4294967296
   %4 = ashr exact i64 %3, 32
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -114,7 +114,7 @@ entry:
   %2 = shl i64 %1, 26
   %3 = add i64 %2, 8589934592
   %4 = ashr i64 %3, 32
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -122,12 +122,12 @@ entry:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, -8589934592
   %4 = ashr exact i64 %3, 32
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
@@ -140,7 +140,7 @@ entry:
   %2 = shl i64 %1, 29
   %3 = add i64 %2, -12884901888
   %4 = ashr i64 %3, 32
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -149,48 +149,48 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add nsw i64 %2, -4294967296
   %4 = ashr exact i64 %3, 32
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/tg3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 30
   %3 = add nsw i64 %2, -12884901888
   %4 = ashr i64 %3, 32
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add nsw i64 %2, -17179869184
   %4 = ashr exact i64 %3, 32
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; casadi/optimized/kinsol.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000012a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 32
   %3 = add i64 %2, 4294967296
   %4 = ashr exact i64 %3, 32
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 

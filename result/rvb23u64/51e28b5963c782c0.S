@@ -9,11 +9,11 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000022:                   # @func0000000000000022
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
+	not	a0, a0
 	flt.d	a1, fa0, fa5
 	fmv.d.x	fa5, zero
-	not	a1, a1
 	flt.d	a2, fa0, fa5
-	orn	a0, a1, a0
+	orn	a0, a0, a1
 	and	a0, a0, a2
 	ret
 func00000000000000c2:                   # @func00000000000000c2
@@ -54,11 +54,11 @@ func00000000000000c4:                   # @func00000000000000c4
 func0000000000000042:                   # @func0000000000000042
 	lui	a1, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a1)
+	not	a0, a0
 	flt.d	a1, fa5, fa0
 	fmv.d.x	fa5, zero
-	not	a1, a1
 	flt.d	a2, fa0, fa5
-	orn	a0, a1, a0
+	orn	a0, a0, a1
 	and	a0, a0, a2
 	ret
 .LCPI6_0:
@@ -66,10 +66,10 @@ func0000000000000042:                   # @func0000000000000042
 func0000000000000044:                   # @func0000000000000044
 	lui	a1, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a1)
+	not	a0, a0
 	flt.d	a1, fa5, fa0
 	fli.d	fa5, 1.0
-	not	a1, a1
 	flt.d	a2, fa5, fa0
-	orn	a0, a1, a0
+	orn	a0, a0, a1
 	and	a0, a0, a2
 	ret

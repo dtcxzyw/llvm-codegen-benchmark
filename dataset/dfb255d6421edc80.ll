@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; box2d/optimized/b2_gear_joint.cpp.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; bullet3/optimized/btSliderConstraint.ll
@@ -20,12 +20,13 @@
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; pbrt-v4/optimized/transform.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
   %4 = fneg float %3
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

@@ -10,7 +10,7 @@ entry:
   %2 = add nuw nsw i32 %1, 11
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -26,7 +26,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -95,7 +95,7 @@ entry:
   %2 = add nsw i32 %1, -64
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -132,7 +132,7 @@ entry:
   %2 = add i32 %1, -44
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -147,7 +147,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -160,7 +160,7 @@ entry:
   %2 = add nuw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -176,7 +176,7 @@ entry:
   ret i64 %5
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; linux/optimized/amdtopology.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/compaction.ll
@@ -186,7 +186,6 @@ entry:
 ; linux/optimized/init_64.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/kcore.ll
-; linux/optimized/list_lru.ll
 ; linux/optimized/memory-tiers.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/mm_init.ll
@@ -209,7 +208,7 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -235,11 +234,14 @@ entry:
   %2 = add i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
-; 1 occurrences:
+; 4 occurrences:
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; linux/optimized/mempolicy.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
@@ -247,7 +249,7 @@ entry:
   %2 = add nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

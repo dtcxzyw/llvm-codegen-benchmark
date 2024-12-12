@@ -66,16 +66,17 @@
 ; rocksdb/optimized/hash.cc.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 4
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; abc/optimized/abcRec3.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -87,12 +88,12 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -101,12 +102,12 @@ entry:
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 24
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
@@ -114,24 +115,24 @@ entry:
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; gromacs/optimized/gmx_velacc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000134(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/gmx_velacc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 

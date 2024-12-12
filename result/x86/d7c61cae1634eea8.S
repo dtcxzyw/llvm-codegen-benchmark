@@ -1,9 +1,13 @@
-func0000000000000044:                   # @func0000000000000044
-	addq	$-1023, %rdi                    # imm = 0xFC01
-	cmpq	$-1021, %rdi                    # imm = 0xFC03
-	setb	%al
-	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	testq	%rdi, %rdi
 	sete	%al
+	retq
+func0000000000000094:                   # @func0000000000000094
+	addq	$-25, %rdi
+	cmpq	$-13, %rdi
+	setb	%al
+	retq
+func000000000000008c:                   # @func000000000000008c
+	cmpq	$2, %rdi
+	setne	%al
 	retq

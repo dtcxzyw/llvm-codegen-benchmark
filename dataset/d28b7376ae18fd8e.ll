@@ -1,5 +1,8 @@
 
-; 11 occurrences:
+; 14 occurrences:
+; duckdb/optimized/ub_duckdb_parallel.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
+; hyperscan/optimized/fdr_compile.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
@@ -12,25 +15,22 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000003e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
-  %4 = getelementptr i8, ptr %1, i64 40
-  %5 = getelementptr i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 40
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
 
-; 105 occurrences:
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
+; 102 occurrences:
 ; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -129,12 +129,12 @@ entry:
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967292
-  %4 = getelementptr nusw i8, ptr %1, i64 4
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

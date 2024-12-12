@@ -52,13 +52,12 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/stats.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:

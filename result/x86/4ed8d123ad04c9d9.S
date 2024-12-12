@@ -12,6 +12,10 @@ func000000000000000c:                   # @func000000000000000c
 	shll	$7, %eax
 	addl	%edi, %eax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	shll	$8, %esi
+	leal	(%rsi,%rdi), %eax
+	retq
 func000000000000001f:                   # @func000000000000001f
 	shll	$10, %esi
 	leal	(%rsi,%rdi), %eax

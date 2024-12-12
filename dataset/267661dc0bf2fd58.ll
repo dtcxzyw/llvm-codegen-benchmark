@@ -19,10 +19,10 @@ entry:
 ; libquic/optimized/adler32.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000063(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000e3(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -65521
-  %3 = icmp ugt i64 %1, 65520
+  %3 = icmp samesign ugt i64 %1, 65520
   %4 = select i1 %3, i64 %2, i64 %1
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
@@ -38,7 +38,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; libevent/optimized/evutil_time.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000059(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000099(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1000000
   %3 = icmp slt i64 %1, 0
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/io.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000098(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 3
   %3 = icmp slt i64 %1, 0

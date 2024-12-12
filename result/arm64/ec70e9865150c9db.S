@@ -1,4 +1,4 @@
-func000000000000000a:                   // @func000000000000000a
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	and	w8, w1, #0xffff
 	sub	w8, w8, #1
@@ -6,7 +6,7 @@ func000000000000000a:                   // @func000000000000000a
 	add	x0, x8, #28
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	and	w9, w1, #0xffff
 	mov	w8, #104                        // =0x68

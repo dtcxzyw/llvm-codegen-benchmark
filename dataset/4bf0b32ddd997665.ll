@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; cmake/optimized/divsufsort.c.ll
@@ -13,6 +13,7 @@
 ; linux/optimized/zstd_decompress.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
+; lz4/optimized/lz4hc.c.ll
 ; postgres/optimized/tsquery_cleanup.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/prism.ll
@@ -27,14 +28,11 @@ entry:
   ret i64 %6
 }
 
-; 146 occurrences:
+; 90 occurrences:
 ; abc/optimized/dauDsd.c.ll
-; abc/optimized/inffast.c.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; abseil-cpp/optimized/substitute.cc.ll
 ; casadi/optimized/sparsity.cpp.ll
-; cmake/optimized/huf_compress.c.ll
-; cmake/optimized/xmltok.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
@@ -44,65 +42,28 @@ entry:
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; darktable/optimized/print_settings.c.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
-; eastl/optimized/TestString.cpp.ll
 ; git/optimized/cache-tree.ll
 ; git/optimized/name-hash.ll
 ; git/optimized/sparse-index.ll
 ; git/optimized/unpack-trees.ll
-; gromacs/optimized/inffast.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/H5Oshared.c.ll
-; hermes/optimized/BytecodeDataProvider.cpp.ll
-; hermes/optimized/HiddenClass.cpp.ll
-; hermes/optimized/Interpreter.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
-; hermes/optimized/zip.c.ll
-; hyperscan/optimized/fdr.c.ll
-; hyperscan/optimized/limex_compile.cpp.ll
-; hyperscan/optimized/ng_haig.cpp.ll
-; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
-; libdeflate/optimized/deflate_compress.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; lief/optimized/ssl_client.c.ll
-; lief/optimized/ssl_tls.c.ll
-; llvm/optimized/AArch64Disassembler.cpp.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/CStringChecker.cpp.ll
-; llvm/optimized/CallSiteSplitting.cpp.ll
-; llvm/optimized/Coroutines.cpp.ll
-; llvm/optimized/CoverageMappingReader.cpp.ll
-; llvm/optimized/MCPseudoProbe.cpp.ll
-; llvm/optimized/MemCpyOptimizer.cpp.ll
-; llvm/optimized/Pragma.cpp.ll
-; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; llvm/optimized/Signals.cpp.ll
-; llvm/optimized/Stmt.cpp.ll
-; llvm/optimized/User.cpp.ll
-; llvm/optimized/WasmObjectFile.cpp.ll
-; lua/optimized/lvm.ll
-; luajit/optimized/lj_ffrecord.ll
-; luajit/optimized/lj_ffrecord_dyn.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; memcached/optimized/memcached-proto_text.ll
-; memcached/optimized/memcached_debug-proto_text.ll
 ; meshlab/optimized/GLLogStream.cpp.ll
 ; meshlab/optimized/additionalgui.cpp.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
-; meshlab/optimized/miniz.c.ll
 ; meshlab/optimized/multiViewer_Container.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; mold/optimized/main.cc.ALPHA.cc.ll
@@ -128,20 +89,12 @@ entry:
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/hb-buffer-serialize.ll
 ; openjdk/optimized/hb-common.ll
-; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/jvmciCodeInstaller.ll
 ; openjdk/optimized/klassVtable.ll
 ; openjdk/optimized/methodData.ll
 ; openspiel/optimized/spades.cc.ll
-; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/zipFile.cpp.ll
-; php/optimized/is_simh.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/php_pcre.ll
 ; php/optimized/string.ll
-; pugixml/optimized/pugixml.cpp.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; redis/optimized/networking.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
@@ -149,7 +102,6 @@ entry:
 ; rust-analyzer-rs/optimized/1vx00lq5wtnxtv17.ll
 ; rust-analyzer-rs/optimized/24v97gdgi5w62z7s.ll
 ; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
-; snappy/optimized/snappy.cc.ll
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
@@ -159,25 +111,18 @@ entry:
 ; wasmtime-rs/optimized/1tgax70bn3x2nad4.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
-; yosys/optimized/fstapi.ll
-; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
-; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 60
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 60
   %4 = getelementptr nusw i8, ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
@@ -219,10 +164,98 @@ entry:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func0000000000000030(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16624
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16624
   %4 = getelementptr i64, ptr %3, i64 %1
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %0, %5
+  ret i64 %6
+}
+
+; 13 occurrences:
+; abc/optimized/inffast.c.ll
+; gromacs/optimized/inffast.c.ll
+; libdeflate/optimized/deflate_compress.c.ll
+; llvm/optimized/CallSiteSplitting.cpp.ll
+; llvm/optimized/Coroutines.cpp.ll
+; llvm/optimized/MemCpyOptimizer.cpp.ll
+; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
+; llvm/optimized/User.cpp.ll
+; luajit/optimized/lj_ffrecord.ll
+; luajit/optimized/lj_ffrecord_dyn.ll
+; openjdk/optimized/jvmciCodeInstaller.ll
+; openusd/optimized/openexr-c.c.ll
+; php/optimized/pcre2_compile.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -100
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %0, %5
+  ret i64 %6
+}
+
+; 53 occurrences:
+; cmake/optimized/huf_compress.c.ll
+; cmake/optimized/xmltok.c.ll
+; eastl/optimized/TestString.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hdf5/optimized/H5Oshared.c.ll
+; hermes/optimized/BytecodeDataProvider.cpp.ll
+; hermes/optimized/HiddenClass.cpp.ll
+; hermes/optimized/Interpreter.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/zip.c.ll
+; hyperscan/optimized/dfa_min.cpp.ll
+; hyperscan/optimized/fdr.c.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/ng_find_matches.cpp.ll
+; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/ng_mcclellan.cpp.ll
+; hyperscan/optimized/ng_squash.cpp.ll
+; lief/optimized/ssl_tls.c.ll
+; llvm/optimized/AArch64Disassembler.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/CStringChecker.cpp.ll
+; llvm/optimized/CoverageMappingReader.cpp.ll
+; llvm/optimized/MCPseudoProbe.cpp.ll
+; llvm/optimized/Pragma.cpp.ll
+; llvm/optimized/RISCVDisassembler.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
+; llvm/optimized/Signals.cpp.ll
+; llvm/optimized/Stmt.cpp.ll
+; llvm/optimized/WasmObjectFile.cpp.ll
+; lua/optimized/lvm.ll
+; memcached/optimized/memcached-proto_text.ll
+; memcached/optimized/memcached_debug-proto_text.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; openjdk/optimized/hb-buffer-serialize.ll
+; openjdk/optimized/hb-ot-color.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openusd/optimized/zipFile.cpp.ll
+; php/optimized/pcre2_compile.ll
+; php/optimized/string.ll
+; snappy/optimized/snappy.cc.ll
+; yosys/optimized/fstapi.ll
+; zstd/optimized/huf_compress.c.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003c(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6
@@ -235,6 +268,19 @@ define i64 @func0000000000000008(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
   %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %0, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
+; pugixml/optimized/pugixml.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002c(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6

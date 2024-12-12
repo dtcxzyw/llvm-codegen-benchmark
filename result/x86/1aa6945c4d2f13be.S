@@ -10,8 +10,8 @@ func0000000000000000:                   # @func0000000000000000
 	shrq	$39, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	leal	719162(%rsi,%rdi), %eax
+	leal	719468(%rsi,%rdi), %eax
 	shrl	$2, %eax
-	imulq	$963321983, %rax, %rax          # imm = 0x396B207F
-	shrq	$43, %rax
+	imulq	$1506180313, %rax, %rax         # imm = 0x59C67CD9
+	shrq	$39, %rax
 	retq

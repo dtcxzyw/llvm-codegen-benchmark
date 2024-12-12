@@ -1,17 +1,16 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; hermes/optimized/Metadata.cpp.ll
 ; llvm/optimized/TemplateName.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
 ; rust-analyzer-rs/optimized/4o4li8dzw61k3tqx.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000001(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
-  %2 = shl i32 %1, 16
-  %3 = and i32 %2, 16711680
-  %4 = trunc i64 %0 to i32
-  %5 = shl i32 %4, 24
+  %2 = trunc i64 %1 to i32
+  %3 = shl i32 %2, 16
+  %4 = shl i32 %0, 8
+  %5 = and i32 %4, 65280
   %6 = or disjoint i32 %5, %3
   ret i32 %6
 }

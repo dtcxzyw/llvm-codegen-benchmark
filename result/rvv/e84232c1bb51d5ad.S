@@ -1,4 +1,4 @@
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	li	a0, -2
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -9,7 +9,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	li	a0, -2
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -19,7 +19,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	bseti	a0, zero, 31
 	vmsltu.vx	v0, v8, a0
 	ret
-func00000000000000fc:                   # @func00000000000000fc
+func00000000000001ec:                   # @func00000000000001ec
 	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
@@ -31,7 +31,7 @@ func00000000000000fc:                   # @func00000000000000fc
 	ret
 .LCPI3_0:
 	.quad	1844674407370955161             # 0x1999999999999999
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	li	a0, -2
 	lui	a1, %hi(.LCPI3_0)
 	zext.w	a0, a0

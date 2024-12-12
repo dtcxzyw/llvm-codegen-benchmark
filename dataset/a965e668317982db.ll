@@ -7,7 +7,7 @@
 ; libquic/optimized/deflate.c.ll
 ; linux/optimized/deflate.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = zext i32 %0 to i64
   %4 = add i64 %1, %2

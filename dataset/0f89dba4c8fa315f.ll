@@ -34,7 +34,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4095
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = add nsw i32 %3, -4096
   ret i32 %4
 }
@@ -42,7 +42,6 @@ entry:
 ; 23 occurrences:
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/hfsplus.c.ll
-; cpython/optimized/ceval.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -52,6 +51,7 @@ entry:
 ; lua/optimized/lcode.ll
 ; luajit/optimized/lj_lex.ll
 ; luajit/optimized/lj_lex_dyn.ll
+; lvgl/optimized/lv_calendar.ll
 ; qemu/optimized/tcg.c.ll
 ; redis/optimized/hyperloglog.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
@@ -67,14 +67,13 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = add nuw nsw i32 %3, 2
   ret i32 %4
 }
 
 ; 47 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
-; cpython/optimized/ceval.ll
 ; cvc5/optimized/bv_inverter_utils.cpp.ll
 ; cvc5/optimized/cvc5.cpp.ll
 ; cvc5/optimized/function_const.cpp.ll
@@ -84,6 +83,7 @@ entry:
 ; linux/optimized/ndisc.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
@@ -210,7 +210,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -4
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add i32 %3, 4
   ret i32 %4
 }
@@ -222,7 +222,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nuw nsw i32 %3, 1
   ret i32 %4
 }

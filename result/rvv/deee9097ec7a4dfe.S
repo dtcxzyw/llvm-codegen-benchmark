@@ -1,42 +1,8 @@
 .LCPI0_0:
-	.quad	1403534266930087369             # 0x137a5afac274c5c9
-func0000000000000065:                   # @func0000000000000065
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v12, v8
-	vmulh.vx	v10, v10, a0
-	li	a0, 63
-	vsrl.vx	v12, v10, a0
-	lui	a0, 262144
-	addiw	a0, a0, -1225
-	vsra.vi	v10, v10, 11
-	vadd.vv	v10, v10, v12
-	vadd.vv	v8, v8, v10
-	slli	a0, a0, 2
-	vadd.vx	v8, v8, a0
-	ret
-func0000000000000029:                   # @func0000000000000029
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v12, v10
-	lui	a0, 629146
-	addi	a0, a0, -1639
-	slli	a1, a0, 32
-	add.uw	a0, a0, a1
-	li	a1, 63
-	vmulh.vx	v8, v8, a0
-	vsrl.vx	v12, v8, a1
-	vsra.vi	v8, v8, 5
-	vadd.vv	v8, v8, v12
-	vadd.vv	v8, v10, v8
-	li	a0, 31
-	vadd.vx	v8, v8, a0
-	ret
-.LCPI2_0:
 	.quad	6640827866535438581             # 0x5c28f5c28f5c28f5
 func0000000000000000:                   # @func0000000000000000
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
 	vmulh.vx	v12, v10, a0
@@ -61,11 +27,11 @@ func0000000000000035:                   # @func0000000000000035
 	vmadd.vx	v10, a0, v8
 	vadd.vi	v8, v10, 1
 	ret
-.LCPI4_0:
+.LCPI2_0:
 	.quad	6640827866535438581             # 0x5c28f5c28f5c28f5
 func0000000000000025:                   # @func0000000000000025
-	lui	a0, %hi(.LCPI4_0)
-	ld	a0, %lo(.LCPI4_0)(a0)
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
 	vmulh.vx	v12, v10, a0
@@ -78,20 +44,6 @@ func0000000000000025:                   # @func0000000000000025
 	vadd.vv	v8, v8, v10
 	addiw	a0, a0, 1846
 	vadd.vx	v8, v8, a0
-	ret
-func000000000000007d:                   # @func000000000000007d
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v12, v8
-	vsra.vi	v10, v10, 4
-	lui	a0, 699051
-	addiw	a0, a0, -1365
-	slli	a1, a0, 32
-	add	a0, a0, a1
-	lui	a1, 81007
-	slli	a1, a1, 3
-	vmadd.vx	v10, a0, v8
-	addi	a0, a1, -1607
-	vadd.vx	v8, v10, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e64, m2, ta, ma

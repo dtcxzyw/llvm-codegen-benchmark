@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; ruby/optimized/date_strftime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = zext nneg i32 %0 to i64
   %6 = icmp sgt i64 %4, %5
   ret i1 %6
@@ -15,7 +15,7 @@ entry:
 ; jq/optimized/regexec.ll
 ; oniguruma/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add nsw i64 %3, 1
@@ -31,7 +31,7 @@ entry:
 ; node/optimized/inet.ll
 ; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, 46
@@ -64,19 +64,20 @@ entry:
 define i1 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = zext i32 %0 to i64
   %6 = icmp ugt i64 %4, %5
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; hyperscan/optimized/stream.c.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = add i64 %3, 1
+  %3 = xor i64 %2, -1
+  %4 = add i64 %1, %3
   %5 = zext i32 %0 to i64
   %6 = icmp ult i64 %4, %5
   ret i1 %6

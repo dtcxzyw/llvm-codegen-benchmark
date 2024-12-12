@@ -8,7 +8,7 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a0, a1, -315
 	seqz	a0, a0
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	andi	a0, a0, 1
 	srliw	a1, a1, 7
 	sltiu	a1, a1, 675
@@ -31,4 +31,14 @@ func0000000000000014:                   # @func0000000000000014
 	sgtz	a1, a1
 	addi	a0, a0, -1
 	or	a0, a0, a1
+	ret
+func0000000000000010:                   # @func0000000000000010
+	andi	a0, a0, 1
+	bnez	a0, .LBB4_2
+	li	a0, 2
+	ret
+.LBB4_2:
+	sext.w	a1, a1
+	sltiu	a0, a1, 4
+	xori	a0, a0, 1
 	ret

@@ -11,7 +11,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = sitofp i32 %4 to double
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

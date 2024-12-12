@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	262144                          # 0x40000
+	.long	64                              # 0x40
 .LCPI0_1:
-	.long	524288                          # 0x80000
-func0000000000000000:                   # @func0000000000000000
+	.long	128                             # 0x80
+func0000000000000007:                   # @func0000000000000007
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm0, %k1
@@ -11,10 +11,10 @@ func0000000000000000:                   # @func0000000000000000
 	vorps	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	64                              # 0x40
+	.long	8192                            # 0x2000
 .LCPI1_1:
-	.long	128                             # 0x80
-func0000000000000007:                   # @func0000000000000007
+	.long	49152                           # 0xc000
+func0000000000000006:                   # @func0000000000000006
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm0, %k1
@@ -23,10 +23,10 @@ func0000000000000007:                   # @func0000000000000007
 	vorps	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.long	8192                            # 0x2000
+	.long	553646080                       # 0x20fff800
 .LCPI2_1:
-	.long	49152                           # 0xc000
-func0000000000000006:                   # @func0000000000000006
+	.long	256                             # 0x100
+func0000000000000000:                   # @func0000000000000000
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm0, %k1

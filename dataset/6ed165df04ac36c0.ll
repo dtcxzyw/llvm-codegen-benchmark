@@ -21,9 +21,10 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; slurm/optimized/setup.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0, i16 %1) #0 {

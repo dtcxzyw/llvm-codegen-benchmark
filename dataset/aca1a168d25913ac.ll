@@ -1,5 +1,9 @@
 
-; 13 occurrences:
+; 17 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stdin.ll
 ; crow/optimized/example_ws.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
@@ -14,7 +18,7 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i32 %1, 0

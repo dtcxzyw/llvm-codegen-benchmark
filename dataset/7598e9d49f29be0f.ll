@@ -13,13 +13,22 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 10 occurrences:
+; libwebp/optimized/yuv.c.ll
+; meshlab/optimized/gltf_loader.cpp.ll
 ; mixbox/optimized/mixbox.ll
+; nori/optimized/nanovg.c.ll
+; openusd/optimized/reconintra.c.ll
+; openusd/optimized/scale_common.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006e(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000007e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = mul nsw i32 %3, 85
+  %4 = mul nuw nsw i32 %3, 85
   %5 = add nuw nsw i32 %4, %0
   %6 = lshr i32 %5, 8
   ret i32 %6
@@ -33,28 +42,8 @@ define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = mul i32 %3, 85
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = lshr i32 %5, 8
-  ret i32 %6
-}
-
-; 9 occurrences:
-; libwebp/optimized/yuv.c.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; nori/optimized/nanovg.c.ll
-; openusd/optimized/reconintra.c.ll
-; openusd/optimized/scale_common.c.ll
-; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; Function Attrs: nounwind
-define i32 @func000000000000007e(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = mul nuw nsw i32 %3, 3
-  %5 = add nuw nsw i32 %4, %0
-  %6 = lshr i32 %5, 4
   ret i32 %6
 }
 
@@ -65,7 +54,7 @@ define i32 @func000000000000007a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = mul nuw nsw i32 %3, 75
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = lshr i32 %5, 16
   ret i32 %6
 }
@@ -77,7 +66,7 @@ define i32 @func000000000000007c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = mul nuw nsw i32 %3, 3596
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   %6 = lshr i32 %5, 14
   ret i32 %6
 }
@@ -89,7 +78,7 @@ define i32 @func0000000000000060(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = mul i32 %3, 67104180
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = lshr i32 %5, 18
   ret i32 %6
 }
@@ -101,7 +90,7 @@ define i32 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = mul nsw i32 %3, -4684
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = lshr i32 %5, 18
   ret i32 %6
 }

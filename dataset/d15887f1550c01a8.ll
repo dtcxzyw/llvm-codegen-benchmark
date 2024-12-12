@@ -35,7 +35,7 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, %0
+  %2 = add i64 %0, %1
   %3 = trunc i64 %2 to i32
   ret i32 %3
 }
@@ -74,7 +74,7 @@ entry:
 define i32 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
@@ -97,7 +97,7 @@ entry:
 define i32 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 15
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -112,12 +112,12 @@ entry:
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967280
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
 
-; 44 occurrences:
+; 51 occurrences:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -150,6 +150,13 @@ entry:
 ; php/optimized/der.ll
 ; postgres/optimized/heaptuple.ll
 ; postgres/optimized/xlog.ll
+; proxygen/optimized/HPACKDecoder.cpp.ll
+; proxygen/optimized/HPACKDecoderBase.cpp.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/HeaderTable.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
+; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -165,7 +172,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, %0
+  %2 = add i64 %0, %1
   %3 = trunc i64 %2 to i32
   ret i32 %3
 }
@@ -265,7 +272,7 @@ entry:
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967280
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
@@ -311,7 +318,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, %0
+  %2 = add i64 %0, %1
   %3 = trunc i64 %2 to i32
   ret i32 %3
 }

@@ -1,4 +1,18 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000014:                   # @func0000000000000014
+	slli	a1, a1, 32
+	lui	a2, 65793
+	slli	a0, a0, 32
+	srli	a1, a1, 32
+	slli	a2, a2, 3
+	srli	a0, a0, 32
+	addi	a2, a2, 129
+	mul	a1, a1, a2
+	mul	a0, a0, a2
+	srli	a1, a1, 39
+	srli	a0, a0, 39
+	sltu	a0, a0, a1
+	ret
+func0000000000000018:                   # @func0000000000000018
 	slli	a1, a1, 32
 	lui	a2, 171
 	slli	a0, a0, 32

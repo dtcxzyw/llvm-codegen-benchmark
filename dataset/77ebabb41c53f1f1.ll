@@ -15,7 +15,7 @@ entry:
   ret i32 %6
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; darktable/optimized/introspection_levels.c.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; hdf5/optimized/H5Oalloc.c.ll
@@ -26,8 +26,6 @@ entry:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/ndisc.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-slabs.ll

@@ -1,5 +1,5 @@
 
-; 305 occurrences:
+; 330 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/flag_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -8,6 +8,7 @@
 ; actix-rs/optimized/3n72oqe5sm1a0541.ll
 ; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
 ; arrow/optimized/api_scalar.cc.ll
+; boost/optimized/static_string.ll
 ; coreutils-rs/optimized/3ywtsphs2aeo07ms.ll
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
 ; cpython/optimized/codeobject.ll
@@ -40,11 +41,10 @@
 ; just-rs/optimized/bulvmt5gknxyhsd.ll
 ; just-rs/optimized/xt6bvrk4jdo7mpy.ll
 ; libpng/optimized/pngrtran.c.ll
+; libquic/optimized/reliable_quic_stream.cc.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/i8042.ll
 ; linux/optimized/intel_dmc.ll
-; linux/optimized/intel_engine_user.ll
-; linux/optimized/match.ll
 ; linux/optimized/netlabel_kapi.ll
 ; linux/optimized/scsi.ll
 ; linux/optimized/sd.ll
@@ -79,6 +79,8 @@
 ; llvm/optimized/X86InstrMappingEmitter.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
@@ -274,6 +276,7 @@
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
 ; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
@@ -305,6 +308,28 @@
 ; yosys/optimized/test_pmgen.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; yosys/optimized/xilinx_srl.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -336,7 +361,7 @@ entry:
   ret i1 %4
 }
 
-; 245 occurrences:
+; 243 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -346,9 +371,7 @@ entry:
 ; folly/optimized/TimedDrivableExecutor.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
-; linux/optimized/severity.ll
 ; llvm/optimized/InlineFunction.cpp.ll
-; llvm/optimized/MCDwarf.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-ppc64v1.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -610,6 +633,16 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign uge i8 %1, %2
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
@@ -622,7 +655,7 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; cmake/optimized/cmParsePHPCoverage.cxx.ll
@@ -634,6 +667,7 @@ entry:
 ; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
 ; openjdk/optimized/reg_split.ll
 ; openspiel/optimized/chess_board.cc.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -661,6 +695,16 @@ entry:
 define i1 @func0000000000000009(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp uge i8 %1, %2
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/MCDwarf.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %1, %2
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
 }

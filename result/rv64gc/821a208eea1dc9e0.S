@@ -23,9 +23,10 @@ func0000000000000144:                   # @func0000000000000144
 	addw	a0, a0, a2
 	ret
 func0000000000000330:                   # @func0000000000000330
-	add	a1, a1, a2
+	slli	a2, a2, 1
 	slli	a1, a1, 1
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 func0000000000000310:                   # @func0000000000000310
 	add	a1, a1, a2

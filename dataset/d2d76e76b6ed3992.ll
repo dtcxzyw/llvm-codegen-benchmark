@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 13 occurrences:
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; rust-analyzer-rs/optimized/1a0ojo5v21uuli03.ll
@@ -10,14 +10,17 @@
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; wasmtime-rs/optimized/9ms3k9wtxzjgu1g.ll
 ; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000003a1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 152
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 152
   %4 = ptrtoint ptr %3 to i64
   %5 = sub nuw i64 %1, %4
   %6 = udiv exact i64 %5, 152
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 

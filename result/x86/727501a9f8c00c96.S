@@ -1,15 +1,15 @@
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	imulq	%rdx, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	imulq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	seta	%cl
+	cmpq	%rsi, %rdi
+	setb	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al

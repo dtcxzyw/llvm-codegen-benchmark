@@ -1,25 +1,4 @@
 
-; 11 occurrences:
-; eastl/optimized/TestBitVector.cpp.ll
-; jq/optimized/utf16_be.ll
-; llvm/optimized/CloneFunction.cpp.ll
-; llvm/optimized/Evaluator.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
-; llvm/optimized/StructurizeCFG.cpp.ll
-; oniguruma/optimized/utf16_be.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
-entry:
-  %2 = icmp eq i64 %1, 1
-  %3 = sext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
 ; 22 occurrences:
 ; clap-rs/optimized/thb07xvb2pkztra.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
@@ -52,6 +31,25 @@ entry:
   ret ptr %4
 }
 
+; 9 occurrences:
+; eastl/optimized/TestBitVector.cpp.ll
+; jq/optimized/utf16_be.ll
+; llvm/optimized/CloneFunction.cpp.ll
+; llvm/optimized/Evaluator.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/StructurizeCFG.cpp.ll
+; oniguruma/optimized/utf16_be.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp eq i64 %1, 1
+  %3 = sext i1 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
 ; 4 occurrences:
 ; llvm/optimized/MustExecute.cpp.ll
 ; nuttx/optimized/lib_glob.c.ll
@@ -66,25 +64,55 @@ entry:
   ret ptr %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 1000000000000000
+  %2 = icmp ult i64 %1, 42949672960
   %3 = sext i1 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
+; taskflow/optimized/exclusive_scan.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp eq i64 %1, 0
+  %3 = sext i1 %2 to i64
+  %4 = getelementptr i32, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 8 occurrences:
 ; cpython/optimized/file_tokenizer.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/336xmb53s74x7fvnwv8sppb05.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000028(ptr %0, i64 %1) #0 {
 entry:
-  %2 = icmp sgt i64 %1, 0
+  %2 = icmp sgt i64 %1, -1
   %3 = sext i1 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %4 = getelementptr { { { { ptr, i64 } }, {}, {} }, { { { { i64, ptr, {} }, i64 } }, { { { i64, ptr, {} }, i64 } }, { i64, [2 x i64] } } }, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000052(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 1000000000000000
+  %3 = sext i1 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

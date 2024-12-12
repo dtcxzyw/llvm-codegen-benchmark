@@ -8,7 +8,7 @@ func0000000000000005:                   # @func0000000000000005
 	vsrl.vi	v10, v9, 31
 	vadd.vv	v9, v9, v10
 	vsra.vi	v9, v9, 2
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	addi	a0, a0, 384
 	vwmul.vx	v8, v10, a0
 	ret
@@ -22,7 +22,7 @@ func0000000000000001:                   # @func0000000000000001
 	vsrl.vi	v10, v9, 31
 	vadd.vv	v9, v9, v10
 	vsra.vi	v9, v9, 2
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	addi	a0, a0, 384
 	vwmul.vx	v8, v10, a0
 	ret

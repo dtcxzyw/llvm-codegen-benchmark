@@ -6,7 +6,7 @@ func000000000000000b:                   # @func000000000000000b
 	addi	a0, a0, -1
 	vand.vx	v10, v10, a0
 	vsrl.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 24
@@ -34,7 +34,7 @@ func0000000000000009:                   # @func0000000000000009
 	li	a0, 511
 	vand.vx	v10, v10, a0
 	vsrl.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000019:                   # @func0000000000000019
 	li	a0, 17
@@ -44,5 +44,5 @@ func0000000000000019:                   # @func0000000000000019
 	addi	a0, a0, -1
 	vand.vx	v10, v10, a0
 	vsrl.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

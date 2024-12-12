@@ -3,7 +3,7 @@
 ; hyperscan/optimized/stream.c.ll
 ; lua/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000301(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2

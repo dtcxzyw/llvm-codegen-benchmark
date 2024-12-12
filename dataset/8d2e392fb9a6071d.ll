@@ -11,7 +11,7 @@
 ; opencv/optimized/matrix_wrap.cpp.ll
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000134(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000264(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 280
   %3 = shl i64 %2, 32
@@ -32,7 +32,7 @@ entry:
 ; opencv/optimized/matrix_wrap.cpp.ll
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000138(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000268(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 72
   %3 = shl i64 %2, 32
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/hfs_core.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 96
   %3 = shl i64 %2, 32
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/hfs_core.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 96
   %3 = shl i64 %2, 32

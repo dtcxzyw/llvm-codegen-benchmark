@@ -3,10 +3,10 @@
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ugt i32 %2, 32
+  %3 = icmp samesign ugt i32 %2, 32
   %4 = select i1 %0, i1 true, i1 %3
   ret i1 %4
 }
@@ -19,7 +19,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; openblas/optimized/dlatmt.c.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = icmp eq i32 %2, 4

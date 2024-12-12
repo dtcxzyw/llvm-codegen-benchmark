@@ -1,18 +1,18 @@
 func0000000000000008:                   # @func0000000000000008
 	incq	%rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq
-func0000000000000042:                   # @func0000000000000042
+func00000000000000c2:                   # @func00000000000000c2
 	addq	$8, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000d8:                   # @func00000000000000d8
 	addq	$8, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setne	%al
 	retq

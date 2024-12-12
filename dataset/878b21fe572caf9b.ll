@@ -1,6 +1,8 @@
 
-%struct._PyCfgInstruction.3762165 = type { i32, i32, %struct._PyCompilerSrcLocation.3762166, ptr, ptr }
-%struct._PyCompilerSrcLocation.3762166 = type { i32, i32, i32, i32 }
+%struct.Str_Mux_t_.2877130 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877129] }
+%struct.Str_Edg_t_.2877129 = type { i32, i32, i32, i32 }
+%struct._PyCfgInstruction.3940415 = type { i32, i32, %struct._PyCompilerSrcLocation.3940416, ptr, ptr }
+%struct._PyCompilerSrcLocation.3940416 = type { i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/vm.ll
@@ -15,7 +17,25 @@ entry:
   ret ptr %7
 }
 
-; 27 occurrences:
+; 6 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; opencv/optimized/brisk.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; openjdk/optimized/continuationFreezeThaw.ll
+; pocketpy/optimized/vm.cpp.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006a(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw i64, ptr %1, i64 %4
+  %6 = getelementptr nusw i64, ptr %5, i64 %0
+  %7 = getelementptr nusw i8, ptr %6, i64 -8
+  ret ptr %7
+}
+
+; 18 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
@@ -29,29 +49,47 @@ entry:
 ; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
 ; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
-; cmake/optimized/divsufsort.c.ll
-; freetype/optimized/smooth.c.ll
 ; lua/optimized/ldo.ll
 ; lua/optimized/ltm.ll
 ; luajit/optimized/minilua.ll
-; opencv/optimized/brisk.cpp.ll
-; opencv/optimized/stardetector.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/verifier.ll
-; openusd/optimized/stbImage.cpp.ll
-; pocketpy/optimized/vm.cpp.ll
 ; redis/optimized/lvm.ll
-; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000006f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i64, ptr %1, i64 %4
-  %6 = getelementptr nusw i64, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 -8
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
   ret ptr %7
+}
+
+; 1 occurrences:
+; abc/optimized/giaStr.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006c(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw %struct.Str_Mux_t_.2877130, ptr %1, i64 %4
+  %6 = getelementptr %struct.Str_Mux_t_.2877130, ptr %5, i64 %0, i32 4, i64 0, i32 2
+  ret ptr %6
+}
+
+; 4 occurrences:
+; abc/optimized/giaStr.c.ll
+; freetype/optimized/smooth.c.ll
+; opencv/optimized/stardetector.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw %struct.Str_Mux_t_.2877130, ptr %1, i64 %4
+  %6 = getelementptr %struct.Str_Mux_t_.2877130, ptr %5, i64 %0, i32 4, i64 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -84,12 +122,12 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/flowgraph.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000043(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct._PyCfgInstruction.3762165, ptr %1, i64 %4
-  %6 = getelementptr %struct._PyCfgInstruction.3762165, ptr %5, i64 %0, i32 1
+  %5 = getelementptr %struct._PyCfgInstruction.3940415, ptr %1, i64 %4
+  %6 = getelementptr %struct._PyCfgInstruction.3940415, ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 

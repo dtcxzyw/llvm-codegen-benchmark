@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; graphviz/optimized/shapes.c.ll
@@ -15,7 +15,6 @@
 ; opencv/optimized/pyrlk_optical_flow.cpp.ll
 ; openmpi/optimized/test_overhead.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/rouss.cpp.ll
 ; qemu/optimized/migration_migration.c.ll
 ; quantlib/optimized/binomialtree.ll

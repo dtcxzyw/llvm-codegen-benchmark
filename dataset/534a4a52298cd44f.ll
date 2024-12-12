@@ -6,25 +6,9 @@
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = lshr i32 %2, %0
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
-}
-
-; 6 occurrences:
-; flac/optimized/bitwriter.c.ll
-; flac/optimized/options.c.ll
-; linux/optimized/mmconfig-shared.ll
-; linux/optimized/page_alloc.ll
-; linux/optimized/tcp_metrics.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, %0
   %4 = icmp eq i32 %3, 0
   ret i1 %4
@@ -42,9 +26,24 @@ entry:
 ; qemu/optimized/hw_sd_sd.c.ll
 ; yosys/optimized/blifparse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
+  %3 = lshr i32 %2, %0
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
+}
+
+; 5 occurrences:
+; flac/optimized/bitwriter.c.ll
+; flac/optimized/options.c.ll
+; linux/optimized/mmconfig-shared.ll
+; linux/optimized/page_alloc.ll
+; linux/optimized/tcp_metrics.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, %0
   %4 = icmp eq i32 %3, 0
   ret i1 %4
@@ -61,7 +60,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, %0

@@ -103,95 +103,26 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI9_0:
-	.long	129                             # 0x81
-.LCPI9_2:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
+	.long	8                               # 0x8
 .LCPI9_1:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-func0000000000000003:                   # @func0000000000000003
+	.long	1073741823                      # 0x3fffffff
+.LCPI9_2:
+	.long	4294967292                      # 0xfffffffc
+func000000000000000a:                   # @func000000000000000a
 	vpaddd	.LCPI9_0(%rip){1to4}, %xmm0, %xmm0
-	vpandd	.LCPI9_2(%rip){1to4}, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpaddd	%xmm1, %xmm0, %xmm0
+	vpandd	.LCPI9_1(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI9_2(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI10_0:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-.LCPI10_1:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-func000000000000001b:                   # @func000000000000001b
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vpandd	.LCPI10_1(%rip){1to4}, %xmm0, %xmm0
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	retq
-.LCPI11_0:
-	.long	8                               # 0x8
-.LCPI11_1:
-	.long	1073741823                      # 0x3fffffff
-.LCPI11_2:
-	.long	4294967292                      # 0xfffffffc
-func000000000000000a:                   # @func000000000000000a
-	vpaddd	.LCPI11_0(%rip){1to4}, %xmm0, %xmm0
-	vpandd	.LCPI11_1(%rip){1to4}, %xmm0, %xmm0
-	vpaddd	.LCPI11_2(%rip){1to4}, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	retq
-.LCPI12_0:
 	.long	3                               # 0x3
-.LCPI12_1:
+.LCPI10_1:
 	.long	1020                            # 0x3fc
-.LCPI12_2:
+.LCPI10_2:
 	.long	4294967294                      # 0xfffffffe
 func000000000000001a:                   # @func000000000000001a
-	vpaddd	.LCPI12_0(%rip){1to4}, %xmm0, %xmm0
-	vpandd	.LCPI12_1(%rip){1to4}, %xmm0, %xmm0
-	vpaddd	.LCPI12_2(%rip){1to4}, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	retq
-.LCPI13_0:
-	.long	3                               # 0x3
-func0000000000000017:                   # @func0000000000000017
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpandd	.LCPI13_0(%rip){1to4}, %xmm0, %xmm0
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpaddd	.LCPI10_0(%rip){1to4}, %xmm0, %xmm0
+	vpandd	.LCPI10_1(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI10_2(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

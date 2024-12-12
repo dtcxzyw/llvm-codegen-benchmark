@@ -5,23 +5,24 @@
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ugt i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/dauDsd.c.ll
+; boost/optimized/numeric.ll
 ; icu/optimized/ustring.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -35,7 +36,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -55,7 +56,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -66,7 +67,18 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/xml_grammar.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000b(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = sext i8 %2 to i32
+  %4 = icmp sge i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

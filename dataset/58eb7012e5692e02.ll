@@ -36,7 +36,7 @@ define i64 @func0000000000000003(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 44
   %4 = and i64 %3, 8192
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = select i1 %1, i64 0, i64 5188
   %7 = or disjoint i64 %5, %6
   ret i64 %7

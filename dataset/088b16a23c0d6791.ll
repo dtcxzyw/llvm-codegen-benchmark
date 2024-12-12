@@ -1,6 +1,5 @@
 
-; 16 occurrences:
-; darktable/optimized/darkroom.c.ll
+; 15 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_colorcorrection.c.ll

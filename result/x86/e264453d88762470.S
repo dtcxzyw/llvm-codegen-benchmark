@@ -12,13 +12,6 @@ func0000000000000006:                   # @func0000000000000006
 	testb	$1, %dl
 	cmovel	%esi, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	movl	%edi, %eax
-	testl	%esi, %esi
-	cmovlel	%esi, %eax
-	testb	$1, %dl
-	cmovel	%esi, %eax
-	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	cmpl	$-28, %esi
@@ -30,6 +23,13 @@ func0000000000000008:                   # @func0000000000000008
 	movl	%edi, %eax
 	cmpl	$-2, %esi
 	cmovbl	%esi, %eax
+	testb	$1, %dl
+	cmovel	%esi, %eax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	movl	%edi, %eax
+	testl	%esi, %esi
+	cmovlel	%esi, %eax
 	testb	$1, %dl
 	cmovel	%esi, %eax
 	retq

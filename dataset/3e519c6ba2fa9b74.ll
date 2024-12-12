@@ -59,7 +59,7 @@ entry:
   ret i32 %5
 }
 
-; 52 occurrences:
+; 54 occurrences:
 ; assimp/optimized/AssxmlFileWriter.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
@@ -112,6 +112,8 @@ entry:
 ; z3/optimized/mpz_matrix.cpp.ll
 ; z3/optimized/substitution.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -137,7 +139,7 @@ entry:
   ret i32 %5
 }
 
-; 123 occurrences:
+; 117 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcVerify.c.ll
 ; abc/optimized/absGla.c.ll
@@ -179,18 +181,12 @@ entry:
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/average.cpp.ll
 ; gromacs/optimized/comm.cpp.ll
-; gromacs/optimized/dgebd2.cpp.ll
-; gromacs/optimized/dgeqr2.cpp.ll
-; gromacs/optimized/dlange.cpp.ll
 ; gromacs/optimized/gmx_hydorder.cpp.ll
 ; gromacs/optimized/gmx_nmeig.cpp.ll
 ; gromacs/optimized/gmx_sham.cpp.ll
 ; gromacs/optimized/gmx_trjorder.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; gromacs/optimized/pairdist.cpp.ll
-; gromacs/optimized/sgebd2.cpp.ll
-; gromacs/optimized/sgeqr2.cpp.ll
-; gromacs/optimized/slange.cpp.ll
 ; gromacs/optimized/vcm.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; ipopt/optimized/IpDenseGenMatrix.ll
@@ -294,7 +290,7 @@ entry:
   ret i32 %5
 }
 
-; 47 occurrences:
+; 45 occurrences:
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
@@ -313,7 +309,6 @@ entry:
 ; gromacs/optimized/tng_compress.c.ll
 ; hdf5/optimized/H5HFiter.c.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
-; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; linux/optimized/drm_gem_framebuffer_helper.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/orphan.ll
@@ -326,7 +321,6 @@ entry:
 ; minetest/optimized/CNullDriver.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dtbrfs.c.ll
 ; opencv/optimized/cornersubpix.cpp.ll
@@ -351,7 +345,7 @@ entry:
   ret i32 %5
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
@@ -363,11 +357,10 @@ entry:
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/fft5d.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; gromacs/optimized/tng_compress.c.ll
+; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
@@ -431,7 +424,7 @@ entry:
   ret i32 %5
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/exorCubes.c.ll
@@ -459,7 +452,6 @@ entry:
 ; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll

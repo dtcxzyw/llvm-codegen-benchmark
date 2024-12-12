@@ -13,6 +13,7 @@
 ; linux/optimized/fair.ll
 ; llvm/optimized/MachineOutliner.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; z3/optimized/aig.cpp.ll
 ; z3/optimized/api_ast_vector.cpp.ll
 ; z3/optimized/arith_decl_plugin.cpp.ll
@@ -33,7 +34,6 @@
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
@@ -191,7 +191,7 @@ entry:
   ret i64 %5
 }
 
-; 57 occurrences:
+; 56 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; hermes/optimized/PlatformUnicodeICU.cpp.ll
 ; linux/optimized/huf_decompress.ll
@@ -199,7 +199,6 @@ entry:
 ; z3/optimized/ast_counter.cpp.ll
 ; z3/optimized/automaton.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll

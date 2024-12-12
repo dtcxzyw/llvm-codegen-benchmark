@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000059(i64 %0) #0 {
+define i32 @func0000000000000099(i64 %0) #0 {
 entry:
   %1 = srem i64 %0, 86400
   %2 = icmp slt i64 %1, 0
@@ -19,7 +19,7 @@ entry:
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005b(i64 %0) #0 {
+define i32 @func000000000000009b(i64 %0) #0 {
 entry:
   %1 = srem i64 %0, 86400
   %2 = icmp slt i64 %1, 0
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(i64 %0) #0 {
+define i32 @func0000000000000098(i64 %0) #0 {
 entry:
   %1 = srem i64 %0, 4000000000
   %2 = icmp slt i64 %1, 0

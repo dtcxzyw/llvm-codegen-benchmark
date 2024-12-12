@@ -31,7 +31,7 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000074:                   # @func0000000000000074
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 24
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 7
 	ret

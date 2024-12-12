@@ -49,7 +49,7 @@ func000000000000001a:                   # @func000000000000001a
 func000000000000003c:                   # @func000000000000003c
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	.LCPI5_1(%rip){1to8}, %ymm1, %ymm1
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI6_0:
 	.long	63                              # 0x3f

@@ -36,9 +36,9 @@ entry:
 ; velox/optimized/ExprCompiler.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i1 %0, i64 %1) #0 {
+define i64 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 6
+  %2 = icmp samesign ugt i64 %1, 6
   %3 = select i1 %2, i64 14, i64 6
   %4 = select i1 %0, i64 %3, i64 2
   ret i64 %4

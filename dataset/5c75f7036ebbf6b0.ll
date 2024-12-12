@@ -19,7 +19,6 @@
 ; gromacs/optimized/gmx_velacc.cpp.ll
 ; gromacs/optimized/hardwaretopology.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
@@ -48,6 +47,7 @@
 ; openblas/optimized/dsytrd_sb2st.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
+; opencv/optimized/OpenEXRimages_HDR_Retina_toneMapping.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
@@ -96,7 +96,7 @@ entry:
   ret float %3
 }
 
-; 60 occurrences:
+; 63 occurrences:
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btAxisSweep3.ll
@@ -157,6 +157,9 @@ entry:
 ; wireshark/optimized/tap-macltestat.c.ll
 ; wireshark/optimized/tap-rlcltestat.c.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:

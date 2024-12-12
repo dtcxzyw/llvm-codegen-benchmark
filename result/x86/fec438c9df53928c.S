@@ -1,4 +1,4 @@
-func0000000000000144:                   # @func0000000000000144
+func0000000000000484:                   # @func0000000000000484
 	addl	$-1012, %edx                    # imm = 0xFC0C
 	movzwl	%dx, %eax
 	cmpl	$2988, %eax                     # imm = 0xBAC
@@ -8,7 +8,7 @@ func0000000000000144:                   # @func0000000000000144
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addl	$-257, %edx                     # imm = 0xFEFF
 	movzwl	%dx, %eax
 	cmpl	$65280, %eax                    # imm = 0xFF00

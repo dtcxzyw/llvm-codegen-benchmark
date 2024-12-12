@@ -1,4 +1,4 @@
-func0000000000000341:                   # @func0000000000000341
+func0000000000000c81:                   # @func0000000000000c81
 	leal	-65(%rsi), %eax
 	leal	32(%rsi), %ecx
 	cmpb	$26, %al
@@ -7,7 +7,7 @@ func0000000000000341:                   # @func0000000000000341
 	cmpb	%dil, %al
 	sete	%al
 	retq
-func0000000000000146:                   # @func0000000000000146
+func0000000000000486:                   # @func0000000000000486
 	leal	-97(%rsi), %eax
 	leal	-32(%rsi), %ecx
 	cmpb	$26, %al
@@ -16,7 +16,7 @@ func0000000000000146:                   # @func0000000000000146
 	cmpb	%dil, %al
 	setl	%al
 	retq
-func000000000000014a:                   # @func000000000000014a
+func000000000000048a:                   # @func000000000000048a
 	leal	-97(%rsi), %eax
 	leal	-32(%rsi), %ecx
 	cmpb	$26, %al
@@ -25,7 +25,7 @@ func000000000000014a:                   # @func000000000000014a
 	cmpb	%dil, %al
 	setg	%al
 	retq
-func0000000000000141:                   # @func0000000000000141
+func0000000000000481:                   # @func0000000000000481
 	leal	-97(%rsi), %eax
 	leal	-32(%rsi), %ecx
 	cmpb	$26, %al
@@ -34,7 +34,7 @@ func0000000000000141:                   # @func0000000000000141
 	cmpb	%dil, %al
 	sete	%al
 	retq
-func0000000000000346:                   # @func0000000000000346
+func0000000000000c86:                   # @func0000000000000c86
 	leal	-65(%rsi), %eax
 	leal	32(%rsi), %ecx
 	cmpb	$26, %al
@@ -43,7 +43,7 @@ func0000000000000346:                   # @func0000000000000346
 	cmpb	%dil, %al
 	setl	%al
 	retq
-func000000000000034a:                   # @func000000000000034a
+func0000000000000c8a:                   # @func0000000000000c8a
 	leal	-65(%rsi), %eax
 	leal	32(%rsi), %ecx
 	cmpb	$26, %al
@@ -52,7 +52,7 @@ func000000000000034a:                   # @func000000000000034a
 	cmpb	%dil, %al
 	setg	%al
 	retq
-func0000000000000344:                   # @func0000000000000344
+func0000000000000c84:                   # @func0000000000000c84
 	leal	-65(%rsi), %eax
 	leal	32(%rsi), %ecx
 	cmpb	$26, %al
@@ -61,7 +61,7 @@ func0000000000000344:                   # @func0000000000000344
 	cmpb	%dil, %al
 	setb	%al
 	retq
-func000000000000034c:                   # @func000000000000034c
+func0000000000000c8c:                   # @func0000000000000c8c
 	leal	-65(%rsi), %eax
 	leal	32(%rsi), %ecx
 	cmpb	$26, %al
@@ -70,7 +70,7 @@ func000000000000034c:                   # @func000000000000034c
 	cmpb	%dil, %al
 	setne	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	leal	-65(%rsi), %eax
 	leal	32(%rsi), %ecx
 	cmpb	$26, %al

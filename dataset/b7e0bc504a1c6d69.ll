@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 100 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddLCache.c.ll
@@ -12,6 +12,8 @@
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; assimp/optimized/ACLoader.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; darktable/optimized/amaze.cc.ll
@@ -130,8 +132,78 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 77 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/authority_view.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/chrono.ll
+; boost/optimized/cmd.ll
+; boost/optimized/codecvt_error_category.ll
+; boost/optimized/contract.ll
+; boost/optimized/date_time.ll
+; boost/optimized/directory.ll
+; boost/optimized/dynamic_binding.ll
+; boost/optimized/environment_posix.ll
+; boost/optimized/error.ll
+; boost/optimized/except.ll
+; boost/optimized/exception.ll
+; boost/optimized/exceptions.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/future.ll
+; boost/optimized/generator.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; boost/optimized/ipc_reliable_message_queue.ll
+; boost/optimized/ipv4_address.ll
+; boost/optimized/ipv6_address.ll
+; boost/optimized/last_error.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/localization_backend.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/operations.ll
+; boost/optimized/origin_form_rule.ll
+; boost/optimized/params_encoded_view.ll
+; boost/optimized/params_view.ll
+; boost/optimized/path_traits.ll
+; boost/optimized/pattern.ll
+; boost/optimized/pct_string_view.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/process_cpu_clocks.ll
+; boost/optimized/random_device.ll
+; boost/optimized/segments_encoded_view.ll
+; boost/optimized/segments_view.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/static_url.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/thread.ll
+; boost/optimized/thread_clock.ll
+; boost/optimized/throw_error.ll
+; boost/optimized/url.ll
+; boost/optimized/url_base.ll
+; boost/optimized/url_view.ll
+; boost/optimized/vformat.ll
+; boost/optimized/wait.ll
 ; duckdb/optimized/ub_duckdb_storage_metadata.cpp.ll
 ; folly/optimized/FsUtil.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -169,13 +241,14 @@ define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = mul nsw i32 %2, 1000
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 107 occurrences:
+; 108 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/amaze.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -312,17 +385,16 @@ define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nuw nsw i32 %2, 7
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddGenCof.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; git/optimized/apply.ll
 ; icu/optimized/hebrwcal.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
 ; yosys/optimized/memory_libmap.ll
 ; zxing/optimized/AZDetector.cpp.ll
@@ -350,7 +422,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul i32 %2, 6
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -377,7 +449,7 @@ define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nuw nsw i32 %2, 7
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -388,7 +460,7 @@ define i32 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = mul nuw nsw i32 %2, 5
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -399,7 +471,7 @@ define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nsw i32 %2, 6
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -410,7 +482,7 @@ define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul i32 %2, 3
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -445,7 +517,7 @@ define i32 @func000000000000002f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = mul nuw nsw i32 %2, 3600
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 

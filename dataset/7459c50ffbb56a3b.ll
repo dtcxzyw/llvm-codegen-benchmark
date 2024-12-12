@@ -1,11 +1,9 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; libquic/optimized/time_support.c.ll
 ; minetest/optimized/treegen.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; re2/optimized/dfa.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
@@ -27,7 +25,9 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/init_from_settings.ll
 ; clamav/optimized/XzIn.c.ll
 ; cmake/optimized/cmGlobalUnixMakefileGenerator3.cxx.ll
 ; jemalloc/optimized/ckh.ll
@@ -56,6 +56,47 @@ entry:
   %2 = add i64 %1, 1
   %3 = add i64 %2, %0
   %4 = mul nuw nsw i64 %3, 24
+  ret i64 %4
+}
+
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/init_from_settings.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -48
+  %3 = add i64 %2, %0
+  %4 = mul nuw i64 %3, 10
+  ret i64 %4
+}
+
+; 8 occurrences:
+; boost/optimized/src.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ocio/optimized/Lut1DOpGPU.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -480
+  %3 = add i64 %2, %0
+  %4 = mul i64 %3, 10
+  ret i64 %4
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -48
+  %3 = add i64 %2, %0
+  %4 = mul nsw i64 %3, 10
   ret i64 %4
 }
 
@@ -104,23 +145,6 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; ocio/optimized/Lut1DOpGPU.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -1
-  %3 = add i64 %2, %0
-  %4 = mul i64 %3, 24
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
@@ -132,16 +156,17 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; eastl/optimized/EADateTime.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000035(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, -14035608
+  %2 = add nuw nsw i64 %1, 3
   %3 = add nsw i64 %2, %0
-  %4 = mul nsw i64 %3, 60
+  %4 = mul nsw i64 %3, 48
   ret i64 %4
 }
 

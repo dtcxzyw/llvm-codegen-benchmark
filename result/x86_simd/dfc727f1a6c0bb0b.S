@@ -14,6 +14,6 @@ func0000000000000000:                   # @func0000000000000000
 	kshiftrw	$8, %k1, %k2
 	vmovapd	%zmm4, %zmm3 {%k2}
 	vmovapd	%zmm2, %zmm5 {%k1}
-	vaddpd	%zmm0, %zmm5, %zmm0
-	vaddpd	%zmm1, %zmm3, %zmm1
+	vaddpd	%zmm5, %zmm0, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
 	retq

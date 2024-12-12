@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
 	movq	%rdi, %rdx
 	mulxq	%rax, %rdx, %rdx

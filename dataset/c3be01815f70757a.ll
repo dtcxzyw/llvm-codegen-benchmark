@@ -1,6 +1,8 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -16,7 +18,7 @@
 define i64 @func0000000000000092(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp ugt i64 %2, %3
   %5 = zext i1 %4 to i64
   %6 = trunc nuw i128 %0 to i64
   %7 = add nuw i64 %5, %6
@@ -30,7 +32,7 @@ entry:
 define i64 @func0000000000000090(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp ugt i64 %2, %3
   %5 = zext i1 %4 to i64
   %6 = trunc nuw i128 %0 to i64
   %7 = add i64 %5, %6

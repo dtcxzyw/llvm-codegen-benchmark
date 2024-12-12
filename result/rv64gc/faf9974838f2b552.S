@@ -5,7 +5,7 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -13,7 +13,7 @@ func000000000000000e:                   # @func000000000000000e
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2

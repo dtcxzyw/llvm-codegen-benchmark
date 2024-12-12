@@ -1,9 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; cvc5/optimized/synth_rew_rules.cpp.ll
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; gromacs/optimized/trjconv.cpp.ll
 ; openjdk/optimized/macro.ll
+; postgres/optimized/subselect.ll
 ; vcpkg/optimized/vcpkgcmdarguments.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i8 %0, i8 %1) #0 {

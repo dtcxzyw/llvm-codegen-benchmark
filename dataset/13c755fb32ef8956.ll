@@ -3,7 +3,7 @@
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
@@ -17,7 +17,7 @@ entry:
 ; abc/optimized/cecSatG3.c.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 62
   %4 = trunc nuw nsw i64 %3 to i32
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32

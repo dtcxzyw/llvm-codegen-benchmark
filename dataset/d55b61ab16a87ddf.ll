@@ -1,8 +1,5 @@
 
-; 181 occurrences:
-; abc/optimized/abc.c.ll
-; abc/optimized/ifDsd.c.ll
-; abc/optimized/verStream.c.ll
+; 175 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/builder_base.cc.ll
@@ -23,14 +20,13 @@
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; arrow/optimized/writer.cc.ll
 ; assimp/optimized/B3DImporter.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
-; ceres/optimized/reorder_program.cc.ll
 ; clamav/optimized/XzIn.c.ll
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/server-th.c.ll
 ; cmake/optimized/signal.c.ll
 ; cpython/optimized/_zoneinfo.ll
-; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; draco/optimized/sequential_attribute_decoder.cc.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
@@ -56,7 +52,6 @@
 ; libquic/optimized/tasn_dec.c.ll
 ; libuv/optimized/signal.c.ll
 ; linux/optimized/badblocks.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/resize.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
@@ -65,7 +60,7 @@
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/X86AvoidStoreForwardingBlocks.cpp.ll
-; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -159,7 +154,6 @@
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/gc.ll
 ; ruby/optimized/iseq.ll
-; ruby/optimized/qsort.ll
 ; ruby/optimized/strscan.ll
 ; slurm/optimized/bitstring.ll
 ; spike/optimized/kaddh.ll
@@ -190,7 +184,7 @@ entry:
   ret i64 %4
 }
 
-; 212 occurrences:
+; 220 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/llb3Image.c.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -241,6 +235,7 @@ entry:
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -260,7 +255,6 @@ entry:
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/eltwise_layer.cpp.ll
-; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/fast_icp.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
@@ -403,6 +397,14 @@ entry:
 ; yosys/optimized/abc9_exe.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -443,7 +445,7 @@ entry:
   ret i64 %4
 }
 
-; 82 occurrences:
+; 81 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -525,13 +527,12 @@ entry:
 ; spike/optimized/vadc_vim.ll
 ; spike/optimized/vadd_vi.ll
 ; yosys/optimized/ql_dsp_simd.ll
-; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -577,7 +578,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -590,7 +591,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 48
   %3 = ashr exact i64 %2, 16
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

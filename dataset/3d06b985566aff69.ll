@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 79 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/log_format.cc.ll
@@ -26,6 +26,9 @@
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/InitPreprocessor.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
+; lvgl/optimized/lv_demo_flex_layout_view_ctrl_pad.ll
+; lvgl/optimized/lv_obj_style_gen.ll
+; lvgl/optimized/lv_style_gen.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; openspiel/optimized/crazy_eights.cc.ll
@@ -58,7 +61,6 @@
 ; wireshark/optimized/packet-ipv6.c.ll
 ; wireshark/optimized/packet-isakmp.c.ll
 ; wireshark/optimized/packet-lte-rrc.c.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; wireshark/optimized/packet-nr-rrc.c.ll
 ; wireshark/optimized/packet-obex.c.ll
 ; wireshark/optimized/packet-pldm.c.ll
@@ -68,6 +70,15 @@
 ; wireshark/optimized/packet-websocket.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/packet-zvt.c.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9lkxb3wr7oqpe4y4naurquros.ll
+; zed-rs/optimized/b7azyji7w0gj79cpvibdmzbyg.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i8 %0) #0 {
 entry:
@@ -76,7 +87,7 @@ entry:
   ret ptr %2
 }
 
-; 39 occurrences:
+; 133 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; actix-rs/optimized/xcr5yeosl21p44j.ll
@@ -94,7 +105,6 @@ entry:
 ; influxdb-rs/optimized/u7z03ejdn0bs7a8.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; linux/optimized/acpi-cpufreq.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/x_tables.ll
 ; meilisearch-rs/optimized/1cgo24wrkn2cjv53.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
@@ -116,6 +126,101 @@ entry:
 ; wireshark/optimized/packet-l2tp.c.ll
 ; wireshark/optimized/packet-rohc.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
+; zed-rs/optimized/0fv2ekz5cqmfp10c07ot56iad.ll
+; zed-rs/optimized/0k39p9up5rytvke5pw0rpnqq3.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0uhls3bdwbtw819jw54cjlb1g.ll
+; zed-rs/optimized/0vnbmlxu10ddx9givt7eswndf.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/160h40gmjuq6w4py8cgz7ceyb.ll
+; zed-rs/optimized/1mwyngh2duuoqbqyg0d7k37yf.ll
+; zed-rs/optimized/1qlbycllwhv2lkix7kwefnz53.ll
+; zed-rs/optimized/1t00sx04wxddh9gaenzu20fkj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/22yhhw1zn4ojjgxq4acy3keo1.ll
+; zed-rs/optimized/2i8q3168bbbqfi20z5b5reakb.ll
+; zed-rs/optimized/2iqtdraa6u0k4qeql889pav3y.ll
+; zed-rs/optimized/2ko2h6cyv14vtd7gtva137r5r.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/2n7zpxtwrm3x59l3dobu4rzwd.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/2zyms9mv478g6wz6fiwkjcirv.ll
+; zed-rs/optimized/37r3t47pkz6irsdctz9dqfv7q.ll
+; zed-rs/optimized/39lzktwx2nvisrblfh35ru2f3.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/3qbpk93sn2x4kpb6yir9ia55w.ll
+; zed-rs/optimized/3w62movadz26xj1uazrxcr5i1.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/52tvc7nloivzgksu0gme9ypvb.ll
+; zed-rs/optimized/58zzb6x6eudh3n5ke423zp84i.ll
+; zed-rs/optimized/5c2faqsf00aa345gpwuha0168.ll
+; zed-rs/optimized/5mqaql67fk8cb5w1h1xcbyeu9.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/62anrzttoarjq1pjtw5plvct0.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
+; zed-rs/optimized/79csf9u0488pypzcoup4hx6r6.ll
+; zed-rs/optimized/7offj6lzxoas51l1lkjnpl1i7.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/7upr0o9ppxwcohq9brd8pyu8y.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/8eqvz1cros5avqdf3zxmr42sw.ll
+; zed-rs/optimized/8j1o11gelhgfvrp0ni2s36o5y.ll
+; zed-rs/optimized/8wv9z8bsh382qkns7z2j1g5g5.ll
+; zed-rs/optimized/9awmqr28bdho83r0fgrej0t00.ll
+; zed-rs/optimized/9dr2kwkk18o137jk0clql0t7q.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9fdv7qxvc9ek9liffc7407f9x.ll
+; zed-rs/optimized/9hvnxe4idsbiksc0p73mzewwy.ll
+; zed-rs/optimized/9lkxb3wr7oqpe4y4naurquros.ll
+; zed-rs/optimized/9oud1h62u03nz2mcyi55yd787.ll
+; zed-rs/optimized/9s8zak994auro8i1pbj07dshc.ll
+; zed-rs/optimized/9vqlxftjnt72m01zwkt5hp8sa.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
+; zed-rs/optimized/ai9j7gmxmmw0mus75ngkrkium.ll
+; zed-rs/optimized/aiv1yyy6z36fx5c8hiy972edv.ll
+; zed-rs/optimized/aktvc84j83s8sqq1xgqfsdyza.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/atq9mmg913h76iyxx32io10uu.ll
+; zed-rs/optimized/axxbjhn7tbipaimusvotj6onb.ll
+; zed-rs/optimized/ayy5pqcx1yuz6kdx9ooq2ruee.ll
+; zed-rs/optimized/b0b1iz0x61wc5hi8bcpifcod2.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/b3ou4m5dtc370x50ytakxr6ey.ll
+; zed-rs/optimized/b7azyji7w0gj79cpvibdmzbyg.ll
+; zed-rs/optimized/b8qgowmgtglca3x1tojob83nm.ll
+; zed-rs/optimized/bt0k6necr66kdxm446j75ei1q.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/cmu2b94ut8bnj8sijwxnxwwfq.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/d5b8zvtgw734y7w1gjv52oafa.ll
+; zed-rs/optimized/d9u9g3e4j8a6dko6rysohoksz.ll
+; zed-rs/optimized/dally6x569ysgd5tzonzxraaq.ll
+; zed-rs/optimized/de4xf1plz4ya209x66ee15yyx.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e66tc8fpopkhvcaubi5eloc1x.ll
+; zed-rs/optimized/e85mfp4znq1rfhk7zzynew4fw.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; zed-rs/optimized/en3uai7yd5bkmxrsnuaiiokvq.ll
+; zed-rs/optimized/esrqbc7sctb290fsujuxslk6b.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
+; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
+; zed-rs/optimized/f3ax6fwg663b1ze6yfrcfasp4.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i8 %0) #0 {
 entry:

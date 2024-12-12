@@ -7,16 +7,16 @@
 ; postgres/optimized/reloptions.ll
 ; ruby/optimized/rjit_c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i32 %0, i64 %1) #0 {
+define ptr @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = sext i32 %0 to i64
   %5 = getelementptr i64, ptr %3, i64 %4
   ret ptr %5
 }
 
-; 62 occurrences:
+; 61 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
@@ -50,7 +50,6 @@ entry:
 ; llvm/optimized/MachineSink.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
@@ -80,10 +79,10 @@ entry:
 ; protobuf/optimized/message.cc.ll
 ; protobuf/optimized/retention.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i32 %0, i64 %1) #0 {
+define ptr @func000000000000000e(i32 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 72
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 72
   %4 = sext i32 %0 to i64
   %5 = getelementptr nusw i64, ptr %3, i64 %4
   ret ptr %5

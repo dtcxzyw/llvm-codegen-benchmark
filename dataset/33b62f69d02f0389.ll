@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; cmake/optimized/json_writer.cpp.ll
 ; draco/optimized/adaptive_rans_bit_decoder.cc.ll
 ; draco/optimized/rans_bit_decoder.cc.ll
@@ -27,7 +27,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -53,7 +52,7 @@
 ; re2/optimized/rune.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0) #0 {
+define i1 @func0000000000000074(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 31744
   %2 = icmp eq i32 %1, 0
@@ -62,6 +61,7 @@ entry:
 
 ; 27 occurrences:
 ; abc/optimized/acecFadds.c.ll
+; boost/optimized/file_descriptor.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; hwloc/optimized/topology-x86.ll
 ; icu/optimized/ucnvhz.ll
@@ -86,7 +86,6 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; wireshark/optimized/packet-afp.c.ll
-; wireshark/optimized/packet-fractalgeneratorprotocol.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
@@ -96,7 +95,7 @@ entry:
   ret i1 %2
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; linux/optimized/ip_fragment.ll
@@ -116,7 +115,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -152,14 +150,14 @@ entry:
 ; recastnavigation/optimized/fastlz.c.ll
 ; yosys/optimized/fastlz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 15
   %2 = icmp eq i32 %1, 0
   ret i1 %2
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; brotli/optimized/utf8_util.c.ll
 ; eastl/optimized/string.cpp.ll
 ; libuv/optimized/idna.c.ll
@@ -180,7 +178,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -202,7 +199,7 @@ entry:
 ; openvdb/optimized/points.cc.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0) #0 {
+define i1 @func0000000000000078(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 31744
   %2 = icmp ne i32 %1, 0
@@ -220,7 +217,7 @@ entry:
 ; wireshark/optimized/packet-afp.c.ll
 ; wireshark/optimized/packet-gsm_rlcmac.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 31744
   %2 = icmp ne i32 %1, 0
@@ -237,18 +234,19 @@ entry:
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; wireshark/optimized/packet-afp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 31744
   %2 = icmp ne i32 %1, 31744
   ret i1 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; icu/optimized/ucnvmbcs.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; verilator/optimized/V3CCtors.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 7
   %2 = icmp eq i32 %1, 0
@@ -263,7 +261,7 @@ entry:
 ; hermes/optimized/JSONEmitter.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000034(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 14
   %2 = icmp ne i32 %1, 14
@@ -278,7 +276,7 @@ entry:
 ; llvm/optimized/YAMLParser.cpp.ll
 ; sentencepiece/optimized/util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000038(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 30
   %2 = icmp ne i32 %1, 0
@@ -292,7 +290,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0) #0 {
+define i1 @func000000000000006c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 3
   %2 = icmp ne i32 %1, 0
@@ -319,7 +317,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 31744
   %2 = icmp eq i32 %1, 0

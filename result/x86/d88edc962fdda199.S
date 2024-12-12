@@ -1,6 +1,6 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movzwl	%dx, %eax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	sete	%cl
 	testq	%rdi, %rdi
 	setne	%al

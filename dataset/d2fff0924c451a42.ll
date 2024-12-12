@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/gmx_make_edi.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; postgres/optimized/freespace.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

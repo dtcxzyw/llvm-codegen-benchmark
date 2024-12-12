@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-lib-decoder_lib.ll
 ; openssl/optimized/libcrypto-shlib-decoder_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
@@ -23,7 +23,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-txt_db.ll
 ; openssl/optimized/libcrypto-shlib-txt_db.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
@@ -50,7 +50,7 @@ entry:
 ; gromacs/optimized/dtrsm.cpp.ll
 ; gromacs/optimized/strsm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64

@@ -15,7 +15,7 @@ entry:
 ; 3 occurrences:
 ; llvm/optimized/ModuleMap.cpp.ll
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
-; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
+; rust-analyzer-rs/optimized/3aojx6tzw7bx942t.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:

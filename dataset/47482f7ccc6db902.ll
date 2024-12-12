@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
@@ -10,17 +10,14 @@
 ; openvdb/optimized/LevelSetMorph.cc.ll
 ; openvdb/optimized/RayTracer.cc.ll
 ; ozz-animation/optimized/track_triggering_job.cc.ll
-; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
 ; qdrant-rs/optimized/4iacc535829shmz2.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; raylib/optimized/rtextures.c.ll
-; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ult float %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -56,8 +53,12 @@ entry:
   ret i1 %4
 }
 
-; 95 occurrences:
+; 99 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/within.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; box2d/optimized/b2_polygon_shape.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -125,23 +126,18 @@ entry:
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; oiio/optimized/imagebufalgo_deep.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
-; opencv/optimized/ar_hmdb_benchmark.cpp.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
-; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/emdL1.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll
 ; opencv/optimized/fitellipse.cpp.ll
-; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/motionSaliencyBinWangApr2014.cpp.ll
 ; opencv/optimized/motion_stabilizing.cpp.ll
-; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/tree.cpp.ll
-; opencv/optimized/warpfield.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/math.cpp.ll
 ; pbrt-v4/optimized/mipmap.cpp.ll
@@ -151,16 +147,21 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 85 occurrences:
+; 90 occurrences:
 ; abc/optimized/superGate.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
@@ -246,6 +247,11 @@ entry:
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; yoga/optimized/Cache.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, float %1, float %2) #0 {
 entry:
@@ -254,8 +260,10 @@ entry:
   ret i1 %4
 }
 
-; 24 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3TypedConstraint.ll
 ; bullet3/optimized/btTypedConstraint.ll
 ; darktable/optimized/introspection_crop.c.ll
@@ -283,11 +291,11 @@ entry:
 define i1 @func000000000000000a(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ole float %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 60 occurrences:
+; 56 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; bullet3/optimized/btSliderConstraint.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -337,26 +345,22 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; mitsuba3/optimized/blender.cpp.ll
 ; openblas/optimized/slamch.c.ll
-; opencv/optimized/ar_hmdb_benchmark.cpp.ll
-; opencv/optimized/calibinit.cpp.ll
-; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/onnx_graph_simplifier.cpp.ll
-; opencv/optimized/ppf_helpers.cpp.ll
-; opencv/optimized/warpfield.cpp.ll
 ; openvdb/optimized/Merge.cc.ll
 ; raylib/optimized/rmodels.c.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
@@ -364,6 +368,7 @@ entry:
 ; darktable/optimized/masks.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; openblas/optimized/slamch.c.ll
@@ -373,7 +378,7 @@ entry:
 define i1 @func0000000000000007(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp une float %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -388,7 +393,11 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 11 occurrences:
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/within.ll
 ; bullet3/optimized/btContinuousConvexCollision.ll
 ; bullet3/optimized/btGjkConvexCast.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -429,11 +438,10 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/btGImpactCollisionAlgorithm.ll
 ; bullet3/optimized/btSoftBody.ll
-; darktable/optimized/introspection_basicadj.c.ll
 ; gromacs/optimized/swapcoords.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/blobdetector.cpp.ll
@@ -446,7 +454,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ule float %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

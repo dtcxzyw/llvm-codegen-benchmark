@@ -1,5 +1,5 @@
 
-; 830 occurrences:
+; 849 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcDec.c.ll
@@ -67,6 +67,25 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/XmlSerializer.cpp.ll
 ; bdwgc/optimized/cordbscs.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/expand.ll
+; boost/optimized/format_parser.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/numeric.ll
+; boost/optimized/parser_utils.ll
+; boost/optimized/process_id.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/src.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/thread_id.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
+; boost/optimized/xml_grammar.ll
 ; brotli/optimized/brotli.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/dlp.c.ll
@@ -77,7 +96,6 @@
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cmake/optimized/bzlib.c.ll
 ; cmake/optimized/cmCMakeHostSystemInformationCommand.cxx.ll
@@ -226,6 +244,7 @@
 ; icu/optimized/udbgutil.ll
 ; icu/optimized/uhash.ll
 ; icu/optimized/uloc_tag.ll
+; icu/optimized/uts46.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jq/optimized/jv_dtoa.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
@@ -321,7 +340,6 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/i8042.ll
 ; linux/optimized/rate.ll
 ; linux/optimized/tcp_output.ll
@@ -391,6 +409,11 @@
 ; luau/optimized/lstrlib.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; luau/optimized/lvmload.cpp.ll
+; lvgl/optimized/lv_animimage.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; meshlab/optimized/filter_developability.cpp.ll
@@ -434,8 +457,6 @@
 ; nix/optimized/local-store.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/profiles.ll
 ; nix/optimized/shared.ll
@@ -633,7 +654,6 @@
 ; postgres/optimized/parse_manifest_srv.ll
 ; postgres/optimized/relcache.ll
 ; postgres/optimized/tsquery.ll
-; proj/optimized/dmstor.cpp.ll
 ; proj/optimized/geod.cpp.ll
 ; proj/optimized/proj.cpp.ll
 ; proj/optimized/proj_strtod.cpp.ll
@@ -799,7 +819,6 @@
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/file-rbm.c.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/log3gpp.c.ll
 ; wireshark/optimized/packet-catapult-dct2000.c.ll

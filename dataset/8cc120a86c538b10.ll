@@ -1,86 +1,12 @@
 
-; 123 occurrences:
+; 48 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; meshoptimizer/optimized/quantization.cpp.ll
-; nlohmann_json/optimized/unit-regression1.cpp.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
-; nlohmann_json/optimized/unit-to_chars.cpp.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; ocio/optimized/Lut1DOpData.cpp.ll
-; oiio/optimized/CineonHeader.cpp.ll
-; oiio/optimized/argparse.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
-; oiio/optimized/bmpinput.cpp.ll
-; oiio/optimized/bmpoutput.cpp.ll
-; oiio/optimized/cineoninput.cpp.ll
-; oiio/optimized/color_ocio.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; oiio/optimized/dpxinput.cpp.ll
-; oiio/optimized/dpxoutput.cpp.ll
-; oiio/optimized/environment.cpp.ll
-; oiio/optimized/errorhandler.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/fitsinput.cpp.ll
-; oiio/optimized/fitsoutput.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/hdroutput.cpp.ll
-; oiio/optimized/icc.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/icooutput.cpp.ll
-; oiio/optimized/iffinput.cpp.ll
-; oiio/optimized/iffoutput.cpp.ll
-; oiio/optimized/imagebuf.cpp.ll
-; oiio/optimized/imagebufalgo.cpp.ll
-; oiio/optimized/imagebufalgo_addsub.cpp.ll
-; oiio/optimized/imagebufalgo_channels.cpp.ll
-; oiio/optimized/imagebufalgo_compare.cpp.ll
-; oiio/optimized/imagebufalgo_copy.cpp.ll
-; oiio/optimized/imagebufalgo_deep.cpp.ll
-; oiio/optimized/imagebufalgo_draw.cpp.ll
-; oiio/optimized/imagebufalgo_mad.cpp.ll
-; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
-; oiio/optimized/imagebufalgo_muldiv.cpp.ll
-; oiio/optimized/imagebufalgo_opencv.cpp.ll
-; oiio/optimized/imagebufalgo_orient.cpp.ll
-; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageio.cpp.ll
-; oiio/optimized/imageioplugin.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; oiio/optimized/paramlist.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/pngoutput.cpp.ll
-; oiio/optimized/pnmoutput.cpp.ll
-; oiio/optimized/printinfo.cpp.ll
-; oiio/optimized/psdinput.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
-; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/sgiinput.cpp.ll
-; oiio/optimized/sgioutput.cpp.ll
-; oiio/optimized/softimageinput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
-; oiio/optimized/targainput.cpp.ll
-; oiio/optimized/targaoutput.cpp.ll
-; oiio/optimized/termoutput.cpp.ll
-; oiio/optimized/texture3d.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; oiio/optimized/typedesc.cpp.ll
-; oiio/optimized/xmp.cpp.ll
-; oiio/optimized/zfile.cpp.ll
 ; opencv/optimized/convert.dispatch.cpp.ll
 ; opencv/optimized/convert_scale.dispatch.cpp.ll
 ; opencv/optimized/copy.cpp.ll
@@ -102,7 +28,6 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -124,96 +49,22 @@
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(float %0) #0 {
+define i1 @func0000000000000018(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
-  %2 = icmp ugt i32 %1, 947912703
+  %2 = icmp samesign ugt i32 %1, 947912703
   ret i1 %2
 }
 
-; 124 occurrences:
+; 49 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; meshoptimizer/optimized/quantization.cpp.ll
-; nlohmann_json/optimized/unit-regression1.cpp.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
-; nlohmann_json/optimized/unit-to_chars.cpp.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; ocio/optimized/Lut1DOpData.cpp.ll
 ; ocio/optimized/MathUtils.cpp.ll
-; oiio/optimized/CineonHeader.cpp.ll
-; oiio/optimized/argparse.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
-; oiio/optimized/bmpinput.cpp.ll
-; oiio/optimized/bmpoutput.cpp.ll
-; oiio/optimized/cineoninput.cpp.ll
-; oiio/optimized/color_ocio.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; oiio/optimized/dpxinput.cpp.ll
-; oiio/optimized/dpxoutput.cpp.ll
-; oiio/optimized/environment.cpp.ll
-; oiio/optimized/errorhandler.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/fitsinput.cpp.ll
-; oiio/optimized/fitsoutput.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/hdroutput.cpp.ll
-; oiio/optimized/icc.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/icooutput.cpp.ll
-; oiio/optimized/iffinput.cpp.ll
-; oiio/optimized/iffoutput.cpp.ll
-; oiio/optimized/imagebuf.cpp.ll
-; oiio/optimized/imagebufalgo.cpp.ll
-; oiio/optimized/imagebufalgo_addsub.cpp.ll
-; oiio/optimized/imagebufalgo_channels.cpp.ll
-; oiio/optimized/imagebufalgo_compare.cpp.ll
-; oiio/optimized/imagebufalgo_copy.cpp.ll
-; oiio/optimized/imagebufalgo_deep.cpp.ll
-; oiio/optimized/imagebufalgo_draw.cpp.ll
-; oiio/optimized/imagebufalgo_mad.cpp.ll
-; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
-; oiio/optimized/imagebufalgo_muldiv.cpp.ll
-; oiio/optimized/imagebufalgo_opencv.cpp.ll
-; oiio/optimized/imagebufalgo_orient.cpp.ll
-; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageio.cpp.ll
-; oiio/optimized/imageioplugin.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; oiio/optimized/paramlist.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/pngoutput.cpp.ll
-; oiio/optimized/pnmoutput.cpp.ll
-; oiio/optimized/printinfo.cpp.ll
-; oiio/optimized/psdinput.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
-; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/sgiinput.cpp.ll
-; oiio/optimized/sgioutput.cpp.ll
-; oiio/optimized/softimageinput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
-; oiio/optimized/targainput.cpp.ll
-; oiio/optimized/targaoutput.cpp.ll
-; oiio/optimized/termoutput.cpp.ll
-; oiio/optimized/texture3d.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; oiio/optimized/typedesc.cpp.ll
-; oiio/optimized/xmp.cpp.ll
-; oiio/optimized/zfile.cpp.ll
 ; opencv/optimized/convert.dispatch.cpp.ll
 ; opencv/optimized/convert_scale.dispatch.cpp.ll
 ; opencv/optimized/copy.cpp.ll
@@ -235,7 +86,6 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -257,14 +107,14 @@ entry:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(float %0) #0 {
+define i1 @func0000000000000014(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
-  %2 = icmp ult i32 %1, 855638017
+  %2 = icmp samesign ult i32 %1, 855638017
   ret i1 %2
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
@@ -287,7 +137,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -307,7 +156,8 @@ entry:
   ret i1 %1
 }
 
-; 229 occurrences:
+; 231 occurrences:
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -537,6 +387,7 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(float %0) #0 {
 entry:
@@ -545,10 +396,11 @@ entry:
   ret i1 %2
 }
 
-; 254 occurrences:
+; 256 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; assimp/optimized/SpatialSort.cpp.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
@@ -800,11 +652,180 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = icmp slt i32 %1, 0
+  ret i1 %2
+}
+
+; 75 occurrences:
+; boost/optimized/to_chars.ll
+; nlohmann_json/optimized/unit-regression1.cpp.ll
+; nlohmann_json/optimized/unit-regression2.cpp.ll
+; nlohmann_json/optimized/unit-to_chars.cpp.ll
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/argparse.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
+; oiio/optimized/bmpinput.cpp.ll
+; oiio/optimized/bmpoutput.cpp.ll
+; oiio/optimized/cineoninput.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
+; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/errorhandler.cpp.ll
+; oiio/optimized/exrinput.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/filesystem.cpp.ll
+; oiio/optimized/fitsinput.cpp.ll
+; oiio/optimized/fitsoutput.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/hdroutput.cpp.ll
+; oiio/optimized/icc.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/iffinput.cpp.ll
+; oiio/optimized/iffoutput.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_opencv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/imageioplugin.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/pnmoutput.cpp.ll
+; oiio/optimized/printinfo.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/rlaoutput.cpp.ll
+; oiio/optimized/sgiinput.cpp.ll
+; oiio/optimized/sgioutput.cpp.ll
+; oiio/optimized/softimageinput.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/termoutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; oiio/optimized/typedesc.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; oiio/optimized/zfile.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(float %0) #0 {
+entry:
+  %1 = bitcast float %0 to i32
+  %2 = icmp ult i32 %1, 8388608
+  ret i1 %2
+}
+
+; 75 occurrences:
+; nlohmann_json/optimized/unit-regression1.cpp.ll
+; nlohmann_json/optimized/unit-regression2.cpp.ll
+; nlohmann_json/optimized/unit-to_chars.cpp.ll
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/argparse.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
+; oiio/optimized/bmpinput.cpp.ll
+; oiio/optimized/bmpoutput.cpp.ll
+; oiio/optimized/cineoninput.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
+; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/errorhandler.cpp.ll
+; oiio/optimized/exrinput.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/filesystem.cpp.ll
+; oiio/optimized/fitsinput.cpp.ll
+; oiio/optimized/fitsoutput.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/hdroutput.cpp.ll
+; oiio/optimized/icc.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/iffinput.cpp.ll
+; oiio/optimized/iffoutput.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_opencv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/imageioplugin.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/pnmoutput.cpp.ll
+; oiio/optimized/printinfo.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/rlaoutput.cpp.ll
+; oiio/optimized/sgiinput.cpp.ll
+; oiio/optimized/sgioutput.cpp.ll
+; oiio/optimized/softimageinput.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/termoutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; oiio/optimized/typedesc.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; oiio/optimized/zfile.cpp.ll
+; openexr/optimized/ImfConvert.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(float %0) #0 {
+entry:
+  %1 = bitcast float %0 to i32
+  %2 = icmp ugt i32 %1, 16777215
   ret i1 %2
 }
 

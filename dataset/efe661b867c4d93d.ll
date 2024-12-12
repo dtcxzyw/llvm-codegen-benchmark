@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 57 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/phishcheck.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -8,7 +8,6 @@
 ; hdf5/optimized/H5B2int.c.ll
 ; hermes/optimized/zip.c.ll
 ; jq/optimized/unicode.ll
-; jq/optimized/unicode_fold1_key.ll
 ; libwebp/optimized/cost.c.ll
 ; libwebp/optimized/cost_sse2.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
@@ -22,7 +21,6 @@
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
 ; oniguruma/optimized/unicode.ll
-; oniguruma/optimized/unicode_fold1_key.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
@@ -95,7 +93,7 @@ entry:
   ret i32 %5
 }
 
-; 66 occurrences:
+; 68 occurrences:
 ; assimp/optimized/MaterialSystem.cpp.ll
 ; clamav/optimized/unzip.c.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
@@ -113,7 +111,6 @@ entry:
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/mcast.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/netpoll.ll
 ; linux/optimized/nf_conntrack_proto_tcp.ll
@@ -122,6 +119,9 @@ entry:
 ; linux/optimized/tg3.ll
 ; linux/optimized/udp_offload.ll
 ; linux/optimized/xdp.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_text.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; openjdk/optimized/vframe_hp.ll
@@ -186,8 +186,8 @@ entry:
 ; brotli/optimized/huffman.c.ll
 ; freetype/optimized/truetype.c.ll
 ; libwebp/optimized/frame_enc.c.ll
-; linux/optimized/gso.ll
 ; linux/optimized/ip6_output.ll
+; lvgl/optimized/lv_label.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; openjdk/optimized/method.ll
 ; openusd/optimized/av1_inv_txfm2d.c.ll
@@ -204,8 +204,9 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_lut3d.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i16 %2) #0 {
 entry:

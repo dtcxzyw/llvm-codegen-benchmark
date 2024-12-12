@@ -3,5 +3,5 @@ func0000000000000008:                   # @func0000000000000008
 	bseti	a0, a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v10, v8, a0
-	vmand.mm	v0, v10, v0
+	vmand.mm	v0, v0, v10
 	ret

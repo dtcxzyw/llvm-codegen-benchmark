@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 128
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	zext.h	a0, a0
 	sltiu	a0, a0, 6
 	li	a1, -7
@@ -39,4 +39,16 @@ func000000000000000c:                   # @func000000000000000c
 	zext.h	a0, a0
 	snez	a0, a0
 	addi	a0, a0, 1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	zext.h	a0, a0
+	sltiu	a0, a0, 256
+	slli	a0, a0, 3
+	ret
+func0000000000000018:                   # @func0000000000000018
+	zext.h	a0, a0
+	sltiu	a0, a0, 61
+	li	a1, -64
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 128
 	ret

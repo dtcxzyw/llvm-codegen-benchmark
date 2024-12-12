@@ -1,6 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
 	vpsrlq	$2, %ymm1, %ymm3
-	vpaddq	%ymm2, %ymm3, %ymm2
+	vpaddq	%ymm3, %ymm2, %ymm2
 	vpxor	%ymm1, %ymm2, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
@@ -30,7 +30,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000003:                   # @func0000000000000003
 	vpsrlq	$2, %ymm1, %ymm3
-	vpaddq	%ymm2, %ymm3, %ymm2
+	vpaddq	%ymm3, %ymm2, %ymm2
 	vpxor	%ymm1, %ymm2, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax

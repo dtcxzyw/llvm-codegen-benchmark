@@ -12,6 +12,13 @@ func000000000000003f:                   # @func000000000000003f
 	movl	$8, %ecx
 	shlxl	%eax, %ecx, %eax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	shll	$2, %edi
+	movb	$24, %al
+	subb	%dil, %al
+	movl	$1, %ecx
+	shlxl	%eax, %ecx, %eax
+	retq
 func0000000000000035:                   # @func0000000000000035
 	shll	$3, %edi
 	negb	%dil
@@ -23,13 +30,6 @@ func000000000000003e:                   # @func000000000000003e
 	movb	$28, %al
 	subb	%dil, %al
 	movl	$15, %ecx
-	shlxl	%eax, %ecx, %eax
-	retq
-func0000000000000002:                   # @func0000000000000002
-	shll	$3, %edi
-	movb	$30, %al
-	subb	%dil, %al
-	movl	$3, %ecx
 	shlxl	%eax, %ecx, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000

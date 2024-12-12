@@ -29,7 +29,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = or disjoint i32 %0, 8
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6
@@ -65,19 +65,6 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; icu/optimized/collationfastlatin.ll
-; mitsuba3/optimized/x86instapi.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 8
-  %4 = and i1 %3, %1
-  %5 = or disjoint i32 %0, 4096
-  %6 = select i1 %4, i32 %5, i32 %0
-  ret i32 %6
-}
-
 ; 4 occurrences:
 ; git/optimized/pathspec.ll
 ; linux/optimized/workqueue.ll
@@ -87,7 +74,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = or i32 %0, 4
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6

@@ -60,4 +60,17 @@ entry:
   ret i64 %5
 }
 
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ult ptr %1, %2
+  %4 = select i1 %3, ptr %0, ptr %1
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
 attributes #0 = { nounwind }

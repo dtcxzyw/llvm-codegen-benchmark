@@ -1,9 +1,11 @@
 
-; 195 occurrences:
+; 197 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMaj.c.ll
+; abc/optimized/giaEra.c.ll
 ; abc/optimized/ifMap.c.ll
 ; assimp/optimized/unzip.c.ll
+; boost/optimized/matches_relation_factory.ll
 ; cmake/optimized/SystemTools.cxx.ll
 ; git/optimized/combine-diff.ll
 ; graphviz/optimized/adjust.c.ll
@@ -11,6 +13,7 @@
 ; gromacs/optimized/dorml2.cpp.ll
 ; gromacs/optimized/sorml2.cpp.ll
 ; gromacs/optimized/tng_compress.c.ll
+; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hwloc/optimized/topology-linux.ll
@@ -67,7 +70,6 @@
 ; openjdk/optimized/output.ll
 ; openjdk/optimized/pngrtran.ll
 ; openjdk/optimized/referenceProcessor.ll
-; openmpi/optimized/libmpi_c_profile_la-get_elements.ll
 ; openmpi/optimized/p2p_aggregation.ll
 ; openspiel/optimized/Par.cpp.ll
 ; openspiel/optimized/havannah.cc.ll
@@ -93,7 +95,6 @@
 ; php/optimized/parse_iso_intervals.ll
 ; php/optimized/zend_jit.ll
 ; portaudio/optimized/pa_front.c.ll
-; postgres/optimized/xlogprefetcher.ll
 ; protobuf/optimized/coded_stream.cc.ll
 ; qemu/optimized/block_mirror.c.ll
 ; qemu/optimized/hw_audio_intel-hda.c.ll
@@ -193,6 +194,7 @@
 ; wireshark/optimized/voip_calls_info_model.cpp.ll
 ; wolfssl/optimized/tls.c.ll
 ; yosys/optimized/memory_libmap.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind

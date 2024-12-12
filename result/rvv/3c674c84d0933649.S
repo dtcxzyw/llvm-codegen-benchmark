@@ -30,6 +30,12 @@ func000000000000002b:                   # @func000000000000002b
 	vwsll.vi	v10, v8, 1
 	vmv2r.v	v8, v10
 	ret
+func000000000000003f:                   # @func000000000000003f
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmacc.vv	v8, v10, v9
+	vwsll.vi	v10, v8, 3
+	vmv2r.v	v8, v10
+	ret
 func0000000000000023:                   # @func0000000000000023
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmacc.vv	v8, v10, v9

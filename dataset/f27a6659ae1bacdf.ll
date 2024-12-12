@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 56 occurrences:
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.ARM64.cc.ll
@@ -36,22 +36,6 @@
 ; mold/optimized/relocatable.cc.SH4.cc.ll
 ; mold/optimized/relocatable.cc.SPARC64.cc.ll
 ; mold/optimized/relocatable.cc.X86_64.cc.ll
-; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Filter.cc.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000814(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
-  %4 = icmp eq ptr %3, %0
-  %5 = add i64 %1, -8
-  %6 = icmp ult i64 %5, -9
-  %7 = and i1 %6, %4
-  ret i1 %7
-}
-
-; 16 occurrences:
 ; openusd/optimized/bboxCache.cpp.ll
 ; openusd/optimized/changeManager.cpp.ll
 ; openusd/optimized/diagnosticMgr.cpp.ll
@@ -68,13 +52,34 @@ entry:
 ; openusd/optimized/stageCacheContext.cpp.ll
 ; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
 ; openusd/optimized/usdzResolver.cpp.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c14(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000003024(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 24
   %4 = icmp eq ptr %3, %0
   %5 = add i64 %1, -8
   %6 = icmp ult i64 %5, -9
+  %7 = and i1 %6, %4
+  ret i1 %7
+}
+
+; 5 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/within_pointlike_geometry.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000d01(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, -7
+  %4 = icmp ult i64 %3, -6
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %6 = icmp eq ptr %5, %0
   %7 = and i1 %6, %4
   ret i1 %7
 }

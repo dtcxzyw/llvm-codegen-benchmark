@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %0, -6
@@ -40,7 +40,7 @@ entry:
 ; abc/optimized/sbdSat.c.ll
 ; z3/optimized/nlarith_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000060a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add i32 %0, -1
@@ -53,7 +53,7 @@ entry:
 ; abseil-cpp/optimized/int128.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000356(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %0, 190
@@ -78,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/sis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000124(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000244(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add i32 %0, -4
@@ -90,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a4(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %0, -64
@@ -102,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000358(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a8(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %0, -64
@@ -127,7 +127,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/patchMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %0, 1
@@ -139,7 +139,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-rlc-nr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000404(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %0, 1
@@ -151,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/netscaler.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000481(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nsw i32 %0, -35
@@ -176,7 +176,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %0, 1
@@ -201,7 +201,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/inline.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %0, -4

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	15                              # 0xf
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	knotw	%k0, %k1

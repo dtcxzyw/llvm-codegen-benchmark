@@ -3,11 +3,11 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$2, %edi
 	setb	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	cmpl	$17, %edi
 	setne	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addl	$-58, %edi
 	cmpl	$-10, %edi
 	setb	%al
@@ -21,11 +21,11 @@ func0000000000000010:                   # @func0000000000000010
 	cmpl	$-18, %edi
 	setb	%al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	cmpl	$1, %edi
 	sete	%al
 	retq
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	cmpl	$3, %edi
 	sete	%al
 	retq

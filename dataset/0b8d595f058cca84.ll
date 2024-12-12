@@ -18,7 +18,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -30,7 +30,7 @@ define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
@@ -46,7 +46,7 @@ define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -61,7 +61,7 @@ define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -72,7 +72,7 @@ define i1 @func000000000000000b(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
   ret i1 %4
 }
 

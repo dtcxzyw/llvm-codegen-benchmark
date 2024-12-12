@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; arrow/optimized/table.cc.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/nlpsol.cpp.ll
@@ -36,7 +36,6 @@
 ; cvc5/optimized/theory_proof_step_buffer.cpp.ll
 ; cvc5/optimized/theory_uf_rewriter.cpp.ll
 ; git/optimized/fmt-merge-msg.ll
-; hermes/optimized/FlowHelpers.cpp.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; openjdk/optimized/screencast_pipewire.ll
@@ -48,11 +47,11 @@
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i64 4, i64 0
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -65,10 +64,22 @@ entry:
 ; verilator/optimized/V3EmitCModel.cpp.ll
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i64 0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; hermes/optimized/FlowHelpers.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 1
+  %3 = select i1 %2, i64 -2, i64 0
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
@@ -77,9 +88,9 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vsprintf.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000050(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 10
+  %2 = icmp samesign ult i32 %1, 10
   %3 = select i1 %2, i64 1, i64 2
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64

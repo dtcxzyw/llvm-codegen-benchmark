@@ -1,11 +1,12 @@
 
-; 87 occurrences:
+; 92 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cpython/optimized/basearith.ll
@@ -24,7 +25,6 @@
 ; hyperscan/optimized/ue2string.cpp.ll
 ; libquic/optimized/e_aes.c.ll
 ; libquic/optimized/gcm.c.ll
-; libquic/optimized/hkdf.c.ll
 ; lief/optimized/gcm.c.ll
 ; lief/optimized/rsa.c.ll
 ; lightgbm/optimized/boosting.cpp.ll
@@ -65,7 +65,6 @@
 ; openusd/optimized/testHdSortedIds.cpp.ll
 ; openusd/optimized/testHdSortedIdsPerf.cpp.ll
 ; openusd/optimized/testUsdStageThreading.cpp.ll
-; postgres/optimized/shm_toc.ll
 ; qemu/optimized/system_memory.c.ll
 ; quantlib/optimized/fireflyalgorithm.ll
 ; quantlib/optimized/particleswarmoptimization.ll
@@ -86,18 +85,23 @@
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; yosys/optimized/BigUnsigned.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/bc27zh41i1ia1dszunchw7cbt.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp ugt i64 %2, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
 
-; 4 occurrences:
-; linux/optimized/ioport.ll
+; 3 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; qemu/optimized/hw_pci_pci.c.ll
@@ -117,14 +121,13 @@ entry:
 define i1 @func0000000000000012(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = icmp uge i64 %3, %2
+  %4 = icmp ule i64 %2, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; hdf5/optimized/H5FDstdio.c.ll
-; linux/optimized/fadvise.ll
 ; linux/optimized/hrtimer.ll
 ; redis/optimized/t_string.ll
 ; Function Attrs: nounwind
@@ -132,7 +135,7 @@ define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %1
   %4 = icmp slt i64 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

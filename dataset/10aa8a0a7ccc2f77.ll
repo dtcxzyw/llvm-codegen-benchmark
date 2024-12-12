@@ -1,6 +1,7 @@
 
-; 92 occurrences:
+; 94 occurrences:
 ; arrow/optimized/utf8.cc.ll
+; boost/optimized/test_codecvt.ll
 ; chibicc/optimized/tokenize.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/unicodeobject.ll
@@ -92,6 +93,7 @@
 ; rust-analyzer-rs/optimized/2rmfmj0e763aielg.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -119,7 +121,7 @@ entry:
   ret i16 %3
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; linux/optimized/nls_base.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
@@ -142,7 +144,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll

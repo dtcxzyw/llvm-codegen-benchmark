@@ -3,17 +3,17 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$16, %eax
 	setb	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	leal	-2(%rdi,%rsi), %eax
 	cmpl	$-64, %eax
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	leal	63(%rdi,%rsi), %eax
 	cmpl	$64, %eax
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	leal	15(%rdi,%rsi), %eax
 	cmpl	$16, %eax
 	setb	%al
@@ -28,7 +28,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$-1, %eax
 	setl	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	leal	-1(%rdi,%rsi), %eax
 	cmpl	$-64, %eax
 	setb	%al

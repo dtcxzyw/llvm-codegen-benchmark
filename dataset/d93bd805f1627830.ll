@@ -1,7 +1,8 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; freetype/optimized/ftbase.c.ll
-; libevent/optimized/poll.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; openjdk/optimized/classPrinter.ll

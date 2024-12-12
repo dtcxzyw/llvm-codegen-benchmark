@@ -1,12 +1,10 @@
 
-; 15 occurrences:
+; 13 occurrences:
 ; abc/optimized/wlnRead.c.ll
 ; clamav/optimized/pe.c.ll
 ; cpython/optimized/dtoa.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
 ; openjdk/optimized/gcm.ll
 ; openjdk/optimized/ifg.ll
 ; openjdk/optimized/lcm.ll
@@ -35,7 +33,9 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; opencv/optimized/svm.cpp.ll
 ; php/optimized/fastcgi.ll
 ; postgres/optimized/d2s.ll

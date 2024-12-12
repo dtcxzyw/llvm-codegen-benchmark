@@ -1,5 +1,6 @@
 
-; 44 occurrences:
+; 45 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
@@ -104,7 +105,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = add nuw i64 %2, 1
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 

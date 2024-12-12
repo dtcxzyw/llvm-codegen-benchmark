@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; abc/optimized/plaRead.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
@@ -29,6 +29,7 @@
 ; openmpi/optimized/netpatterns_knomial_tree.ll
 ; openmpi/optimized/opal_bitmap.ll
 ; openmpi/optimized/pmix_bitmap.ll
+; openspiel/optimized/spiel.cc.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/nodeHash.ll
@@ -96,7 +97,8 @@ entry:
   ret i64 %5
 }
 
-; 65 occurrences:
+; 69 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; draco/optimized/corner_table.cc.ll
@@ -162,6 +164,9 @@ entry:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wireshark/optimized/pcapng.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:

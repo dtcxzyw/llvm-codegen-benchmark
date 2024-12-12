@@ -1,8 +1,9 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
-; abc/optimized/cnfMap.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/alignset.cpp.ll
 ; ncnn/optimized/crop_x86_avx.cpp.ll
 ; ncnn/optimized/crop_x86_avx512.cpp.ll

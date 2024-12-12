@@ -1,21 +1,21 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addq	%rdx, %rsi
 	leaq	4(%rdi), %rax
 	cmpq	$4096, %rsi                     # imm = 0x1000
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	leaq	-2(%rdi), %rax
 	addq	%rdx, %rsi
 	cmovgq	%rdi, %rax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	addq	%rdx, %rsi
 	leaq	2(%rdi), %rax
 	cmpq	$6, %rsi
 	cmovlq	%rdi, %rax
 	retq
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001a8:                   # @func00000000000001a8
 	addq	%rdx, %rsi
 	movabsq	$-4293984256, %rax              # imm = 0xFFFFFFFF000F0000
 	addq	%rdi, %rax

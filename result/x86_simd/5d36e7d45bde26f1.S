@@ -1,4 +1,4 @@
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001b4:                   # @func00000000000001b4
 	vpsubd	%ymm1, %ymm0, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpnltud	%ymm1, %ymm0, %k1
@@ -18,7 +18,7 @@ func0000000000000008:                   # @func0000000000000008
 	.long	1                               # 0x1
 .LCPI2_1:
 	.long	2                               # 0x2
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vpsubd	%ymm0, %ymm1, %ymm2
 	vpcmpnltud	%ymm0, %ymm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	4                               # 0x4
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestmd	.LCPI0_0(%rip){1to4}, %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
 	korw	%k1, %k0, %k0
@@ -11,7 +11,7 @@ func0000000000000011:                   # @func0000000000000011
 	.quad	1                               # 0x1
 .LCPI1_1:
 	.long	4                               # 0x4
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
 	vptestnmd	.LCPI1_1(%rip){1to4}, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0

@@ -9,3 +9,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmovnel	%esi, %edx
 	leal	(%rdx,%rdi), %eax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	andl	$1024, %edx                     # imm = 0x400
+	cmovnel	%esi, %edx
+	leal	(%rdx,%rdi), %eax
+	retq

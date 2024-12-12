@@ -1,54 +1,45 @@
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setle	%cl
+	cmpq	%rax, %rdi
+	setge	%cl
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	orb	%cl, %al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setl	%cl
+	cmpq	%rax, %rdi
+	setg	%cl
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%cl
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000000b7:                   # @func00000000000000b7
+func0000000000000167:                   # @func0000000000000167
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setle	%cl
+	cmpq	%rax, %rdi
+	setge	%cl
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setge	%al
+	cmpq	%rax, %rdi
+	setle	%al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setb	%cl
+	cmpq	%rax, %rdi
+	seta	%cl
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	seta	%al
-	orb	%cl, %al
-	retq
-func00000000000000a7:                   # @func00000000000000a7
-	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setl	%cl
-	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setge	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	orb	%cl, %al
 	retq

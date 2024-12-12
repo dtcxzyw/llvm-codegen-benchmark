@@ -1,6 +1,7 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
+; boost/optimized/src.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/Conversions.cpp.ll

@@ -5,7 +5,7 @@
 ; quantlib/optimized/imm.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = urem i32 %0, %2
@@ -13,7 +13,7 @@ entry:
   ret i1 %4
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; linux/optimized/pcm_lib.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -26,7 +26,6 @@ entry:
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoopUnrollAndJamPass.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -55,23 +54,11 @@ entry:
 ; llvm/optimized/CheckPlacementNew.cpp.ll
 ; openmpi/optimized/coll_base_bcast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = urem i32 %0, %2
   %4 = icmp eq i32 %3, 0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = urem i32 %0, %2
-  %4 = icmp ugt i32 %3, 99
   ret i1 %4
 }
 
@@ -101,7 +88,7 @@ entry:
 ; openmpi/optimized/coll_base_bcast.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = urem i32 %0, %2

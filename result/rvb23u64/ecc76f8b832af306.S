@@ -1,27 +1,37 @@
-func0000000000000022:                   # @func0000000000000022
+func00000000000000a3:                   # @func00000000000000a3
 	sltiu	a1, a1, 4
 	sh2add	a0, a1, a0
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	seqz	a1, a1
 	sh3add	a0, a1, a0
 	ret
-func0000000000000062:                   # @func0000000000000062
+func0000000000000023:                   # @func0000000000000023
+	sltiu	a1, a1, 2
+	sh3add	a0, a1, a0
+	ret
+func0000000000000063:                   # @func0000000000000063
 	snez	a1, a1
 	sh3add	a0, a1, a0
 	ret
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	srli	a1, a1, 59
 	snez	a1, a1
 	sh2add	a0, a1, a0
 	ret
-func0000000000000052:                   # @func0000000000000052
+func0000000000000053:                   # @func0000000000000053
 	not	a1, a1
 	srli	a1, a1, 63
 	sh2add	a0, a1, a0
 	ret
-func0000000000000040:                   # @func0000000000000040
+func00000000000000c0:                   # @func00000000000000c0
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
+	sh3add	a0, a1, a0
+	ret
+func00000000000000c3:                   # @func00000000000000c3
+	sltiu	a1, a1, 2
+	xori	a1, a1, 1
+	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
 	ret

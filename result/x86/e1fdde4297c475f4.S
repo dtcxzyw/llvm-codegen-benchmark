@@ -19,7 +19,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmovll	%edi, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpl	$-2, %esi
-	movl	$-4, %eax
+	cmpl	$1114112, %esi                  # imm = 0x110000
+	movl	$63, %eax
 	cmovbl	%edi, %eax
 	retq

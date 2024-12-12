@@ -35,7 +35,7 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
 ; ockam-rs/optimized/1kl4v6vvko2mygns.ll
@@ -54,6 +54,7 @@ entry:
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0, i64 %1) #0 {
 entry:
@@ -64,7 +65,7 @@ entry:
   ret i64 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -86,6 +87,7 @@ entry:
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
@@ -96,7 +98,7 @@ entry:
   ret i64 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -117,6 +119,7 @@ entry:
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i16 %1) #0 {
 entry:

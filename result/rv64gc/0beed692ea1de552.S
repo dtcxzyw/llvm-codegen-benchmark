@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	sext.w	a1, a1
 	addiw	a2, a2, -1
 	sltiu	a2, a2, 21
@@ -7,7 +7,7 @@ func0000000000000028:                   # @func0000000000000028
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000288:                   # @func0000000000000288
+func0000000000000908:                   # @func0000000000000908
 	sext.w	a1, a1
 	addiw	a2, a2, -48
 	sltiu	a2, a2, 10
@@ -15,7 +15,7 @@ func0000000000000288:                   # @func0000000000000288
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000388:                   # @func0000000000000388
+func0000000000000b08:                   # @func0000000000000b08
 	sext.w	a1, a1
 	addiw	a2, a2, -16
 	sltiu	a2, a2, -8
@@ -24,7 +24,20 @@ func0000000000000388:                   # @func0000000000000388
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000188:                   # @func0000000000000188
+func0000000000000848:                   # @func0000000000000848
+	sext.w	a1, a1
+	lui	a3, 1048573
+	addi	a3, a3, -448
+	addw	a2, a2, a3
+	lui	a3, 3
+	addiw	a3, a3, -384
+	xor	a1, a1, a3
+	sltiu	a2, a2, 48
+	seqz	a1, a1
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000308:                   # @func0000000000000308
 	sext.w	a1, a1
 	addiw	a2, a2, -29
 	sltiu	a2, a2, -2
@@ -33,25 +46,7 @@ func0000000000000188:                   # @func0000000000000188
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000308:                   # @func0000000000000308
-	sext.w	a1, a1
-	addiw	a2, a2, -11
-	sltiu	a2, a2, 4
-	sltiu	a1, a1, 128
-	xori	a1, a1, 1
-	or	a0, a0, a2
-	or	a0, a0, a1
-	ret
-func0000000000000228:                   # @func0000000000000228
-	sext.w	a1, a1
-	addiw	a2, a2, -17
-	sltiu	a2, a2, 2
-	addi	a1, a1, -4
-	seqz	a1, a1
-	or	a0, a0, a2
-	or	a0, a0, a1
-	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	sext.w	a1, a1
 	addiw	a2, a2, -403
 	sltiu	a2, a2, 103

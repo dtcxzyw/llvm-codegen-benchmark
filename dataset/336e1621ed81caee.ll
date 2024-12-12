@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
@@ -11,6 +11,7 @@
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
@@ -53,7 +54,7 @@ entry:
   ret i8 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; freetype/optimized/ftbitmap.c.ll
@@ -65,7 +66,6 @@ entry:
 ; linux/optimized/trace_uprobe.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; opencv/optimized/nary_eltwise_layers.cpp.ll
 ; postgres/optimized/varbit.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
@@ -78,10 +78,9 @@ entry:
   ret i8 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
-; linux/optimized/rsmisc.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:
@@ -102,8 +101,7 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
-; linux/optimized/rsmisc.ll
+; 3 occurrences:
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
 ; llvm/optimized/X86InstrMappingEmitter.cpp.ll

@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	testl	%eax, %eax
 	setne	%al
 	retq
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000001c4:                   # @func00000000000001c4
 	imull	%esi, %edi
 	movl	%edi, %eax
 	shll	$8, %eax
@@ -20,14 +20,14 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$65535, %eax                    # imm = 0xFFFF
 	setb	%al
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	imull	%esi, %edi
 	shll	$2, %edi
 	leal	(%rdi,%rdi,8), %eax
 	testl	%eax, %eax
 	setns	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	imull	%esi, %edi
 	leal	(%rdi,%rdi,2), %eax
 	testl	%eax, %eax
@@ -44,7 +44,7 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	imull	%esi, %edi
 	leal	(%rdi,%rdi,2), %eax
 	cmpl	$3, %eax

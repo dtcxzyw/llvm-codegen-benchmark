@@ -13,8 +13,9 @@ func0000000000000039:                   # @func0000000000000039
 	orq	%rsi, %rax
 	retq
 func000000000000003d:                   # @func000000000000003d
-	shrl	$31, %esi
-	shlq	$63, %rsi
-	shlq	$29, %rdi
-	leaq	(%rdi,%rsi), %rax
+	movq	%rdi, %rax
+	shrl	$8, %esi
+	shlq	$40, %rsi
+	shlq	$8, %rax
+	orq	%rsi, %rax
 	retq

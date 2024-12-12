@@ -1,10 +1,10 @@
 
-%"struct.folly::threadlocal_detail::ElementWrapper.2568976" = type { ptr, %union.anon.144.2568977, i8, %"struct.folly::threadlocal_detail::ThreadEntryNode.2568978" }
-%union.anon.144.2568977 = type { ptr }
-%"struct.folly::threadlocal_detail::ThreadEntryNode.2568978" = type { i32, ptr, ptr, ptr }
-%struct.rv_opcode_data.2593539 = type { ptr, i32, ptr, ptr, i16, i16, i16, i16 }
+%"struct.folly::threadlocal_detail::ElementWrapper.2683350" = type { ptr, %union.anon.144.2683351, i8, %"struct.folly::threadlocal_detail::ThreadEntryNode.2683352" }
+%union.anon.144.2683351 = type { ptr }
+%"struct.folly::threadlocal_detail::ThreadEntryNode.2683352" = type { i32, ptr, ptr, ptr }
+%struct.rv_opcode_data.2707215 = type { ptr, i32, ptr, ptr, i16, i16, i16, i16 }
 
-; 174 occurrences:
+; 171 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -40,9 +40,7 @@
 ; folly/optimized/ThreadCachedArena.cpp.ll
 ; folly/optimized/ThreadLocalDetail.cpp.ll
 ; hyperscan/optimized/gough.c.ll
-; hyperscan/optimized/mcclellan.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
-; hyperscan/optimized/mcsheng.c.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
 ; llvm/optimized/AArch64ConditionOptimizer.cpp.ll
@@ -163,7 +161,6 @@
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
-; protobuf/optimized/descriptor_database.cc.ll
 ; proxygen/optimized/ResourceStats.cpp.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
@@ -180,11 +177,11 @@
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"struct.folly::threadlocal_detail::ElementWrapper.2568976", ptr %0, i64 %3, i32 3
+  %4 = getelementptr nusw nuw %"struct.folly::threadlocal_detail::ElementWrapper.2683350", ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -206,7 +203,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.rv_opcode_data.2593539, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.rv_opcode_data.2707215, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

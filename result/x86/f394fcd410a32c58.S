@@ -9,12 +9,12 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	xorb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	cmpb	$18, %sil
 	sete	%al
 	xorb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	movl	%esi, %eax
 	andl	$8, %eax
 	shrl	$3, %eax

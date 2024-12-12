@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/gvrender_core_pic.c.ll
 ; graphviz/optimized/shapes.c.ll
@@ -8,7 +8,6 @@
 ; opencv/optimized/tldDetector.cpp.ll
 ; openjdk/optimized/g1IHOPControl.ll
 ; proj/optimized/conversion.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/noarbsabr.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind

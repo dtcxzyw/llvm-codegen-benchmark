@@ -1,10 +1,9 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; openssl/optimized/libcrypto-lib-cfb_enc.ll
 ; openssl/optimized/libcrypto-lib-param_build.ll
 ; openssl/optimized/libcrypto-shlib-cfb_enc.ll
 ; openssl/optimized/libcrypto-shlib-param_build.ll
-; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Assert.cpp.ll
 ; verilator/optimized/V3AssertPre.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
@@ -48,12 +47,12 @@
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -64,12 +63,12 @@ entry:
 ; wireshark/optimized/packet-ber.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 63
   %3 = sdiv i32 %2, 64
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -117,12 +116,12 @@ entry:
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 31
   %3 = sdiv i32 %2, 32
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -130,12 +129,12 @@ entry:
 ; velox/optimized/LazyVector.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 63
   %3 = sdiv i32 %2, 64
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -146,48 +145,48 @@ entry:
 ; raylib/optimized/rcore.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 6
   %3 = sdiv i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
   %4 = zext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
   %4 = zext i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sdiv i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 

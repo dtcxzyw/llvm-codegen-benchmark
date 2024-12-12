@@ -1,7 +1,7 @@
 func000000000000003f:                   # @func000000000000003f
-	shll	$10, %edx
+	shll	$24, %edx
 	orl	%esi, %edi
-	leal	65536(%rdx,%rdi), %eax
+	leal	134217728(%rdx,%rdi), %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	shll	$9, %edx

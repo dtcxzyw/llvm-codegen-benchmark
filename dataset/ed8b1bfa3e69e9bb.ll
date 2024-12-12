@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; linux/optimized/ff-memless.ll
+; 2 occurrences:
 ; php/optimized/encode.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind

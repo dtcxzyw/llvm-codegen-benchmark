@@ -23,6 +23,15 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	notb	%dil
+	cmpl	$3, %esi
+	setae	%al
+	orb	%dil, %al
+	movzbl	%al, %eax
+	andl	$1, %eax
+	leal	-25(,%rax,8), %eax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	cmpl	$5, %esi
 	setl	%al
@@ -38,7 +47,7 @@ func0000000000000004:                   # @func0000000000000004
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	cmpl	$64, %esi
 	setae	%al
 	andb	%dil, %al

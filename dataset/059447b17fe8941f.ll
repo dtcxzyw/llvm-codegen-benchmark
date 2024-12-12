@@ -5,9 +5,9 @@
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -8
+  %3 = or disjoint i8 %2, 1
   %.masked = and i8 %0, -6
-  %3 = or i8 %2, %.masked
-  %4 = or disjoint i8 %3, 1
+  %4 = or i8 %.masked, %3
   ret i8 %4
 }
 
@@ -19,9 +19,9 @@ entry:
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -102
+  %3 = or disjoint i8 %2, 4
   %.masked = and i8 %0, -101
-  %3 = or i8 %2, %.masked
-  %4 = or disjoint i8 %3, 4
+  %4 = or i8 %.masked, %3
   ret i8 %4
 }
 
@@ -32,9 +32,9 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -8
+  %3 = or disjoint i8 %2, 1
   %.masked = and i8 %0, -6
-  %3 = or i8 %2, %.masked
-  %4 = or disjoint i8 %3, 1
+  %4 = or i8 %.masked, %3
   ret i8 %4
 }
 

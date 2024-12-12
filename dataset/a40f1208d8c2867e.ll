@@ -6,7 +6,7 @@ define i32 @func00000000000000c0(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = add i32 %4, -1
   ret i32 %5
 }
@@ -18,19 +18,20 @@ define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 16
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add i32 %4, 8
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000e0(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = add i32 %4, -1
   ret i32 %5
 }
@@ -48,7 +49,7 @@ define i32 @func0000000000000040(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = add i32 %4, -1
   ret i32 %5
 }
@@ -60,7 +61,7 @@ define i32 @func00000000000000f0(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = add i32 %4, -1
   ret i32 %5
 }

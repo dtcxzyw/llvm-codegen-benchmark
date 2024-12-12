@@ -6,6 +6,21 @@ func00000000000000f5:                   # @func00000000000000f5
 	imull	$60, %esi, %eax
 	leal	120(%rax,%rdi,2), %eax
 	retq
+func0000000000000021:                   # @func0000000000000021
+	leal	(%rsi,%rsi,2), %eax
+	addl	%edi, %edi
+	leal	-28(%rdi,%rax,4), %eax
+	retq
+func00000000000000e5:                   # @func00000000000000e5
+	leal	(%rsi,%rsi,2), %eax
+	addl	%edi, %edi
+	leal	-28(%rdi,%rax,4), %eax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	leal	(%rsi,%rsi,2), %eax
+	addl	%edi, %edi
+	leal	65508(%rdi,%rax,4), %eax
+	retq
 func0000000000000075:                   # @func0000000000000075
 	imull	$-12289, %esi, %eax             # imm = 0xCFFF
 	leal	196624(%rax,%rdi,8), %eax

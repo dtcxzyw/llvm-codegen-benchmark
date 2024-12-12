@@ -68,14 +68,15 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/area.ll
 ; opencv/optimized/msd.cpp.ll
 ; openusd/optimized/warped_motion.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = shl nsw i32 %3, 2
+  %4 = shl nsw i32 %3, 3
   %5 = sub nsw i32 %0, %4
   ret i32 %5
 }

@@ -1,5 +1,10 @@
 
-; 5 occurrences:
+; 10 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
+; casadi/optimized/dm_instantiator.cpp.ll
+; casadi/optimized/im_instantiator.cpp.ll
+; casadi/optimized/sx_instantiator.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll

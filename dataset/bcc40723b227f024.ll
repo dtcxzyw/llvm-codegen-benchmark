@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
-; icu/optimized/gregoimp.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; openjdk/optimized/jmemmgr.ll
 ; sqlite/optimized/sqlite3.ll

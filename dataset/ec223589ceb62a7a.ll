@@ -1,5 +1,5 @@
 
-; 227 occurrences:
+; 225 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/dauDivs.c.ll
 ; cmake/optimized/ia64.c.ll
@@ -25,7 +25,6 @@
 ; jemalloc/optimized/emap.pic.ll
 ; jemalloc/optimized/emap.sym.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/efi_64.ll
 ; linux/optimized/fixup.ll
@@ -34,7 +33,6 @@
 ; linux/optimized/i915_gem_shrinker.ll
 ; linux/optimized/iommu.ll
 ; linux/optimized/lbr.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/page.ll
 ; linux/optimized/pasid.ll
@@ -138,6 +136,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
+; lvgl/optimized/lv_freetype_glyph.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-s390x.cc.ll
 ; opencv/optimized/checker_detector.cpp.ll
@@ -224,7 +223,6 @@
 ; wasmedge/optimized/vinode.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wireshark/optimized/mpeg.c.ll
-; wireshark/optimized/packet-etag.c.ll
 ; wireshark/optimized/packet-mpeg-pes.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
@@ -237,7 +235,7 @@ entry:
   ret i64 %5
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -267,7 +265,6 @@ entry:
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; hermes/optimized/Executor.cpp.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/task_mmu.ll

@@ -11,7 +11,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmv.v.x	v14, a0
 	vmv1r.v	v0, v10
 	vmerge.vvm	v10, v14, v12, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000003:                   # @func0000000000000003
 	lui	a0, 2
@@ -23,5 +23,5 @@ func0000000000000003:                   # @func0000000000000003
 	vmseq.vi	v0, v10, 0
 	vmv.v.x	v10, a0
 	vsll.vi	v10, v12, 15, v0.t
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

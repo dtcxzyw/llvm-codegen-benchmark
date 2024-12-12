@@ -18,7 +18,7 @@ func0000000000000014:                   # @func0000000000000014
 	setge	%al
 	andb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	cmpl	$3, %esi
 	setae	%al
 	andb	%dil, %al

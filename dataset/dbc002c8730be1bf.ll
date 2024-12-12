@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; git/optimized/statinfo.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = icmp ne i64 %1, 0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Simplify.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 1
   %3 = icmp eq i32 %0, 4
@@ -28,7 +28,7 @@ entry:
 ; llvm/optimized/OpenMPKinds.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = icmp eq i64 %1, 0
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xhci-hub.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp eq i32 %0, 320

@@ -4,7 +4,7 @@
 ; redis/optimized/lgc.ll
 ; yosys/optimized/smt2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000226(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = trunc i64 %2 to i32

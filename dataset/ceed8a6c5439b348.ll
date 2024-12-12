@@ -1,9 +1,8 @@
 
-; 2 occurrences:
-; icu/optimized/utext.ll
+; 1 occurrences:
 ; minetest/optimized/CColorConverter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i1 %0, i32 %1) #0 {
 entry:
   %2 = select i1 %0, i32 7, i32 %1
   %3 = add nsw i32 %2, -1
@@ -36,24 +35,12 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = select i1 %0, i32 3, i32 %1
   %3 = icmp eq i32 %2, 0
   %4 = add nsw i32 %2, -1
   %5 = select i1 %3, i32 3, i32 %4
-  ret i32 %5
-}
-
-; 1 occurrences:
-; icu/optimized/number_decimalquantity.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i1 %0, i32 %1) #0 {
-entry:
-  %2 = select i1 %0, i32 2147483647, i32 %1
-  %3 = add i32 %2, -2
-  %4 = icmp slt i32 %2, -2147483646
-  %5 = select i1 %4, i32 -2147483648, i32 %3
   ret i32 %5
 }
 

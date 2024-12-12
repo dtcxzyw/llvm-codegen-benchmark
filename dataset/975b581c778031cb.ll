@@ -32,7 +32,7 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc nuw i64 %3 to i32

@@ -14,19 +14,19 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/btl_sm_sendi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nuw nsw i64 %3, 39
   %5 = and i64 %4, -32
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp samesign ugt i64 %5, %0
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; postgres/optimized/spell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, 8

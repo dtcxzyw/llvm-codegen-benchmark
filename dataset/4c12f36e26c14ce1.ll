@@ -3,7 +3,7 @@
 ; lightgbm/optimized/gradient_discretizer.cpp.ll
 ; opencv/optimized/data.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl nsw i32 %3, 1
@@ -17,7 +17,7 @@ entry:
 ; lightgbm/optimized/gradient_discretizer.cpp.ll
 ; opencv/optimized/data.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl nsw i32 %3, 1
@@ -31,7 +31,7 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl i32 %3, 1
@@ -45,7 +45,7 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl i32 %3, 1

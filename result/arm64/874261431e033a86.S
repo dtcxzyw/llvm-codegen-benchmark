@@ -1,33 +1,21 @@
 func00000000000000a8:                   // @func00000000000000a8
 // %bb.0:                               // %entry
-	movi	v6.2d, #0000000000000000
-	smin	v4.4s, v4.4s, v6.4s
-	smin	v5.4s, v5.4s, v6.4s
-	add	v1.4s, v5.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
-	sub	v0.4s, v2.4s, v0.4s
-	sub	v1.4s, v3.4s, v1.4s
+	and	w8, w2, w2, asr #31
+	sub	w9, w1, w0
+	sub	w0, w9, w8
 	ret
                                         // -- End function
-func00000000000001ad:                   // @func00000000000001ad
+func00000000000002ad:                   // @func00000000000002ad
 // %bb.0:                               // %entry
-	movi	v6.2d, #0000000000000000
-	smin	v4.4s, v4.4s, v6.4s
-	smin	v5.4s, v5.4s, v6.4s
-	add	v1.4s, v5.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
-	sub	v0.4s, v2.4s, v0.4s
-	sub	v1.4s, v3.4s, v1.4s
+	and	w8, w2, w2, asr #31
+	sub	w9, w1, w0
+	sub	w0, w9, w8
 	ret
                                         // -- End function
-func00000000000001ac:                   // @func00000000000001ac
+func00000000000002ac:                   // @func00000000000002ac
 // %bb.0:                               // %entry
-	movi	v6.2d, #0000000000000000
-	smin	v4.4s, v4.4s, v6.4s
-	smin	v5.4s, v5.4s, v6.4s
-	add	v1.4s, v5.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
-	sub	v0.4s, v2.4s, v0.4s
-	sub	v1.4s, v3.4s, v1.4s
+	and	w8, w2, w2, asr #31
+	sub	w9, w1, w0
+	sub	w0, w9, w8
 	ret
                                         // -- End function

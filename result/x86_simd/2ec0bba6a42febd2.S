@@ -33,7 +33,7 @@
 	.byte	30                              # 0x1e
 .LCPI0_1:
 	.long	2                               # 0x2
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001d8:                   # @func00000000000001d8
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vmovdqa	.LCPI0_0(%rip), %ymm0           # ymm0 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
@@ -77,14 +77,14 @@ func00000000000000f8:                   # @func00000000000000f8
 	.byte	29                              # 0x1d
 	.byte	30                              # 0x1e
 .LCPI1_1:
-	.long	12                              # 0xc
-func00000000000000e8:                   # @func00000000000000e8
+	.long	5                               # 0x5
+func00000000000001e8:                   # @func00000000000001e8
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vmovdqa	.LCPI1_0(%rip), %ymm0           # ymm0 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
 	vpermi2b	%ymm2, %ymm1, %ymm0
 	vpcmpltd	.LCPI1_1(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -121,26 +121,26 @@ func00000000000000e8:                   # @func00000000000000e8
 	.byte	28                              # 0x1c
 	.byte	29                              # 0x1d
 	.byte	30                              # 0x1e
-func00000000000000e2:                   # @func00000000000000e2
+func00000000000001c2:                   # @func00000000000001c2
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vmovdqa	.LCPI2_0(%rip), %ymm0           # ymm0 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
 	vpermi2b	%ymm2, %ymm1, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:
 	.long	1114112                         # 0x110000
-func00000000000001e2:                   # @func00000000000001e2
+func00000000000003c2:                   # @func00000000000003c2
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpmovzxbd	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
 	vpslld	$6, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	.LCPI3_0(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -179,26 +179,26 @@ func00000000000001e2:                   # @func00000000000001e2
 	.byte	30                              # 0x1e
 .LCPI4_1:
 	.long	1718382433                      # 0x666c6f61
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vmovdqa	.LCPI4_0(%rip), %ymm0           # ymm0 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
 	vpermi2b	%ymm2, %ymm1, %ymm0
 	vpcmpeqd	.LCPI4_1(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI5_0:
 	.long	1114111                         # 0x10ffff
-func0000000000000134:                   # @func0000000000000134
+func0000000000000254:                   # @func0000000000000254
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpmovzxbd	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
 	vpslld	$6, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vpcmpgtd	.LCPI5_0(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

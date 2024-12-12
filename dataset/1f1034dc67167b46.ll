@@ -1,10 +1,9 @@
 
-; 57 occurrences:
+; 56 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaMan.c.ll
-; abc/optimized/mapperCore.c.ll
 ; abc/optimized/mfsMan.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclBuffer.c.ll

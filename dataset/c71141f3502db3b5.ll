@@ -1,46 +1,35 @@
 
-; 42 occurrences:
+; 31 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
+; boost/optimized/cmdline.ll
+; boost/optimized/src.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; clamav/optimized/Lzma2Dec.c.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; cvc5/optimized/sygus_unif_strat.cpp.ll
-; folly/optimized/CPUThreadPoolExecutor.cpp.ll
-; hyperscan/optimized/fdr_engine_description.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; libpng/optimized/pngwrite.c.ll
 ; libpng/optimized/pngwutil.c.ll
-; libquic/optimized/ctr.c.ll
-; libquic/optimized/tls_cbc.c.ll
 ; libwebp/optimized/demux.c.ll
 ; lief/optimized/psa_crypto_cipher.c.ll
 ; lief/optimized/ssl_msg.c.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/idr.ll
-; linux/optimized/trace_seq.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; openblas/optimized/dlarrd.c.ll
 ; openssl/optimized/libcrypto-lib-bio_lib.ll
-; openssl/optimized/libcrypto-lib-ctr128.ll
-; openssl/optimized/libcrypto-lib-e_chacha20_poly1305.ll
 ; openssl/optimized/libcrypto-shlib-bio_lib.ll
-; openssl/optimized/libcrypto-shlib-ctr128.ll
-; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
-; openssl/optimized/libdefault-lib-cipher_chacha20_hw.ll
 ; openssl/optimized/libssl-lib-tls_common.ll
 ; openssl/optimized/libssl-shlib-tls_common.ll
 ; php/optimized/filter.ll
 ; postgres/optimized/basebackup_incremental.ll
 ; qemu/optimized/block_vhdx-log.c.ll
 ; ruby/optimized/gc.ll
-; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/follow_stream_dialog.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
@@ -125,7 +114,27 @@ entry:
   ret i32 %4
 }
 
-; 54 occurrences:
+; 11 occurrences:
+; folly/optimized/CPUThreadPoolExecutor.cpp.ll
+; hyperscan/optimized/fdr_engine_description.cpp.ll
+; libquic/optimized/ctr.c.ll
+; libquic/optimized/tls_cbc.c.ll
+; openblas/optimized/dlarrd.c.ll
+; openssl/optimized/libcrypto-lib-ctr128.ll
+; openssl/optimized/libcrypto-lib-e_chacha20_poly1305.ll
+; openssl/optimized/libcrypto-shlib-ctr128.ll
+; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
+; openssl/optimized/libdefault-lib-cipher_chacha20_hw.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %1, %2
+  %4 = select i1 %3, i32 0, i32 %0
+  ret i32 %4
+}
+
+; 50 occurrences:
 ; abc/optimized/luckyFast6.c.ll
 ; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -143,7 +152,6 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; fmt/optimized/printf-test.cc.ll
 ; libevent/optimized/event_tagging.c.ll
 ; libquic/optimized/dsa.c.ll
@@ -154,18 +162,15 @@ entry:
 ; linux/optimized/filemap.ll
 ; linux/optimized/pcm_native.ll
 ; llama.cpp/optimized/grammar-parser.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; openjdk/optimized/arguments.ll
-; openusd/optimized/patchBuilder.cpp.ll
 ; pocketpy/optimized/random.cpp.ll
 ; qemu/optimized/block_accounting.c.ll
 ; slurm/optimized/acct_policy.ll
 ; slurm/optimized/gres.ll
 ; slurm/optimized/step_mgr.ll
 ; velox/optimized/MmapAllocator.cpp.ll
-; wireshark/optimized/packet-pkcs12.c.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
@@ -248,6 +253,18 @@ entry:
   %.not = icmp ugt i64 %1, %2
   %3 = select i1 %.not, i32 %0, i32 0
   ret i32 %3
+}
+
+; 3 occurrences:
+; llvm/optimized/CGBuiltin.cpp.ll
+; openusd/optimized/patchBuilder.cpp.ll
+; wireshark/optimized/packet-pkcs12.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %1, %2
+  %4 = select i1 %3, i32 0, i32 %0
+  ret i32 %4
 }
 
 ; 1 occurrences:

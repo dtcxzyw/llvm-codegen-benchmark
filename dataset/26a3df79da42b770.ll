@@ -1,5 +1,7 @@
 
-; 12 occurrences:
+; 14 occurrences:
+; arrow/optimized/light_array.cc.ll
+; boost/optimized/cmdline.ll
 ; node/optimized/libnode.crypto_util.ll
 ; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; openjdk/optimized/symbol.ll

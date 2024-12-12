@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-cms_smime.ll
 ; openssl/optimized/libcrypto-shlib-cms_smime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = or i1 %3, %0
@@ -18,7 +18,7 @@ entry:
 ; openjdk/optimized/reflection.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %0
@@ -32,7 +32,7 @@ entry:
 ; openjdk/optimized/matcher.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %0
@@ -46,10 +46,10 @@ entry:
 ; llvm/optimized/ParseDecl.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000318(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp ne i32 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ParseDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000308(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = or i1 %3, %0
@@ -71,7 +71,7 @@ entry:
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %0
@@ -84,7 +84,7 @@ entry:
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %0
@@ -96,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/FileFormatCTF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000310(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = or i1 %3, %0

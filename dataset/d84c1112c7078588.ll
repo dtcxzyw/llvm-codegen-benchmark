@@ -9,7 +9,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 %2, 20
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %2, 12
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -46,7 +46,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 %2, 6
   %4 = sext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -61,7 +61,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 12
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -73,7 +73,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

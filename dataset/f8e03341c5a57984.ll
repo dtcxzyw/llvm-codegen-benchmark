@@ -11,11 +11,10 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; cvc5/optimized/Solver.cc.ll
-; linux/optimized/akcipher.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; yosys/optimized/Solver.ll
@@ -33,7 +32,7 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   ret i1 %3
 }
 

@@ -18,7 +18,7 @@
 	.short	6                               # 0x6
 .LCPI0_2:
 	.short	6                               # 0x6
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm1    # [9363,9363,9363,9363,9363,9363,9363,9363]
@@ -51,7 +51,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	.short	269                             # 0x10d
 	.short	269                             # 0x10d
 	.short	269                             # 0x10d
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpmullw	.LCPI1_0(%rip), %xmm0, %xmm0    # [6203,6203,6203,6203,6203,6203,6203,6203]
@@ -77,7 +77,7 @@ func00000000000000e1:                   # @func00000000000000e1
 	.short	259                             # 0x103
 	.short	259                             # 0x103
 	.short	259                             # 0x103
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpmullw	.LCPI2_0(%rip), %xmm0, %xmm0    # [7253,7253,7253,7253,7253,7253,7253,7253]

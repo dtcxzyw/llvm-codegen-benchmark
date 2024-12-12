@@ -52,6 +52,12 @@ func0000000000000015:                   # @func0000000000000015
 	shlq	$16, %rsi
 	subq	%rsi, %rax
 	retq
+func000000000000003c:                   # @func000000000000003c
+	movq	%rdi, %rax
+	imulq	%rdx, %rsi
+	shlq	$2, %rsi
+	subq	%rsi, %rax
+	retq
 func0000000000000030:                   # @func0000000000000030
 	movq	%rdi, %rax
 	imulq	%rdx, %rsi

@@ -7,7 +7,7 @@ entry:
   %2 = add i32 %1, 3
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 1023
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = trunc nuw i32 %5 to i16
   ret i16 %6
 }
@@ -20,7 +20,7 @@ entry:
   %2 = add nsw i32 %1, 3
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 1023
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = trunc nuw i32 %5 to i16
   ret i16 %6
 }

@@ -12,14 +12,28 @@ func0000000000000002:                   # @func0000000000000002
 	add	a0, a0, a1
 	addi	a0, a0, -8
 	ret
-func000000000000002a:                   # @func000000000000002a
+func0000000000000003:                   # @func0000000000000003
+	zext.h	a2, a2
+	add	a0, a0, a2
+	zext.h	a1, a1
+	add	a0, a0, a1
+	addi	a0, a0, 6
+	ret
+func000000000000003e:                   # @func000000000000003e
 	zext.h	a2, a2
 	add	a0, a0, a2
 	zext.h	a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, -8
 	ret
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000000ff:                   # @func00000000000000ff
+	zext.h	a2, a2
+	add	a0, a0, a2
+	zext.h	a1, a1
+	add	a0, a0, a1
+	addi	a0, a0, 1
+	ret
+func000000000000003f:                   # @func000000000000003f
 	zext.h	a2, a2
 	add	a0, a0, a2
 	zext.h	a1, a1

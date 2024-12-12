@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 17 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; linux/optimized/idt.ll
@@ -14,6 +14,9 @@
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(ptr %0) #0 {
 entry:

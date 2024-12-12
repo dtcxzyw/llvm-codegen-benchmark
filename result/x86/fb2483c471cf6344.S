@@ -8,9 +8,9 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000003:                   # @func0000000000000003
 	andl	$20703, %edx                    # imm = 0x50DF
-	leal	2097152(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
+	leal	2097152(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

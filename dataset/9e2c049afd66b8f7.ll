@@ -7,7 +7,7 @@ entry:
   %3 = fcmp ogt float %2, 3.100750e+05
   %4 = fcmp ogt float %1, 3.100750e+05
   %5 = select i1 %4, i1 true, i1 %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

@@ -2,17 +2,20 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/qmc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i128 %0) #0 {
+define i1 @func0000000000000046(i128 %0) #0 {
 entry:
   %1 = and i128 %0, 9223372036854775808
   %2 = icmp ne i128 %1, 0
   ret i1 %2
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/mpdecimal.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; qemu/optimized/hw_vfio_common.c.ll
@@ -22,16 +25,19 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i128 %0) #0 {
+define i1 @func0000000000000041(i128 %0) #0 {
 entry:
   %1 = trunc nuw i128 %0 to i64
   %2 = icmp eq i64 %1, 0
   ret i1 %2
 }
 
-; 13 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/mpdecimal.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -44,17 +50,18 @@ entry:
 ; wasmedge/optimized/int128.cpp.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i128 %0) #0 {
+define i1 @func0000000000000061(i128 %0) #0 {
 entry:
   %1 = trunc nuw nsw i128 %0 to i64
   %2 = icmp eq i64 %1, 0
   ret i1 %2
 }
 
-; 104 occurrences:
+; 105 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/hash_generator_testing.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -206,14 +213,15 @@ entry:
 ; openssl/optimized/libcrypto-shlib-f_generic.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i128 %0) #0 {
+define i1 @func0000000000000021(i128 %0) #0 {
 entry:
   %1 = trunc nsw i128 %0 to i64
   %2 = icmp eq i64 %1, 0
   ret i1 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
@@ -224,14 +232,15 @@ entry:
   ret i1 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i128 %0) #0 {
+define i1 @func0000000000000074(i128 %0) #0 {
 entry:
   %1 = trunc nuw nsw i128 %0 to i64
-  %2 = icmp ult i64 %1, 19073486328125
+  %2 = icmp samesign ult i64 %1, 19073486328125
   ret i1 %2
 }
 
@@ -274,23 +283,26 @@ entry:
   ret i1 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; qemu/optimized/hw_vfio_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i128 %0) #0 {
+define i1 @func0000000000000044(i128 %0) #0 {
 entry:
   %1 = and i128 %0, 18446744069414584320
   %2 = icmp eq i128 %1, 0
   ret i1 %2
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i128 %0) #0 {
+define i1 @func000000000000004c(i128 %0) #0 {
 entry:
   %1 = trunc nuw i128 %0 to i64
   %2 = icmp ne i64 %1, 0
@@ -301,41 +313,44 @@ entry:
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i128 %0) #0 {
+define i1 @func000000000000002c(i128 %0) #0 {
 entry:
   %1 = trunc nsw i128 %0 to i64
   %2 = icmp ne i64 %1, 1
   ret i1 %2
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; linux/optimized/i915_hwmon.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i128 %0) #0 {
+define i1 @func000000000000006c(i128 %0) #0 {
 entry:
   %1 = trunc nuw nsw i128 %0 to i64
   %2 = icmp ne i64 %1, 1
   ret i1 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/to_chars.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i128 %0) #0 {
+define i1 @func0000000000000078(i128 %0) #0 {
 entry:
   %1 = trunc nuw nsw i128 %0 to i64
-  %2 = icmp ugt i64 %1, 1999999999
+  %2 = icmp samesign ugt i64 %1, 429496729599999999
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i128 %0) #0 {
+define i1 @func0000000000000048(i128 %0) #0 {
 entry:
   %1 = trunc nuw i128 %0 to i64
   %2 = icmp ugt i64 %1, 39
@@ -345,7 +360,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i128 %0) #0 {
+define i1 @func000000000000004a(i128 %0) #0 {
 entry:
   %1 = and i128 %0, 9223372036854775808
   %2 = icmp eq i128 %1, 0

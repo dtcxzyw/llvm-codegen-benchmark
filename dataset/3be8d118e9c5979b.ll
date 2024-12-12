@@ -7,19 +7,7 @@ define i64 @func0000000000000080(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = add i64 %3, %1
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %notmask = shl nsw i64 -1, %2
-  %3 = xor i64 %notmask, -1
-  %4 = add nuw i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }

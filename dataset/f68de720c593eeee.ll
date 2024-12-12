@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; linux/optimized/wep.ll
+; 1 occurrences:
 ; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i32 %1, ptr %2) #0 {
@@ -8,7 +7,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %1
+  %6 = add i32 %1, %5
   ret i32 %6
 }
 
@@ -22,7 +21,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %1
+  %6 = add i32 %1, %5
   ret i32 %6
 }
 

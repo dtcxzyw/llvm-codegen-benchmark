@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 36 occurrences:
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -15,7 +15,6 @@
 ; darktable/optimized/introspection_shadhi.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
-; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/long_range_correction.cpp.ll
 ; gromacs/optimized/qmmminputgenerator.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
@@ -34,6 +33,9 @@
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

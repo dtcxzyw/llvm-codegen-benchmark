@@ -5,11 +5,11 @@
 ; spike/optimized/vmseq_vi.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 63
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -34,11 +34,11 @@ entry:
 ; yosys/optimized/spice.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -47,11 +47,11 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -93,30 +93,27 @@ entry:
 ; openusd/optimized/usdtree.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
-; 32 occurrences:
+; 29 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
 ; cvc5/optimized/regexp_entail.cpp.ll
-; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestFixedMap.cpp.ll
 ; eastl/optimized/TestFixedSet.cpp.ll
 ; eastl/optimized/TestMap.cpp.ll
 ; eastl/optimized/TestSet.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; gromacs/optimized/gmxcalculatorcpu.cpp.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
-; lightgbm/optimized/dataset.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
@@ -135,11 +132,11 @@ entry:
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -149,11 +146,11 @@ entry:
 ; draco/optimized/corner_table.cc.ll
 ; llvm/optimized/ScheduleDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -161,66 +158,66 @@ entry:
 ; abc/optimized/abcHieGia.c.ll
 ; linux/optimized/vsprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 33
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; spike/optimized/vmsle_vi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000027(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 59
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; spike/optimized/vmsne_vi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 59
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; spike/optimized/vmsgt_vi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 59
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/vsprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 40
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; opencv/optimized/exposure_compensate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
@@ -231,7 +228,7 @@ define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 

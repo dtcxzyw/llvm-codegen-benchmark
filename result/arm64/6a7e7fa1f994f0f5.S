@@ -1,4 +1,4 @@
-func0000000000000018:                   // @func0000000000000018
+func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	add	x8, x0, w1, uxth #3
@@ -12,46 +12,39 @@ func0000000000000010:                   // @func0000000000000010
 	add	x0, x8, #432
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	add	x8, x0, w1, uxth #1
 	add	x0, x8, #24
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	add	x8, x0, w1, uxth
 	add	x0, x8, #258
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	add	x8, x0, w1, uxth #3
 	add	x0, x8, #16
 	ret
                                         // -- End function
-func0000000000000012:                   // @func0000000000000012
+func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
-	add	x8, x0, w1, uxth #2
-	add	x0, x8, #2124
+	add	x8, x0, w1, uxth
+	add	x0, x8, #112
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	add	x8, x0, w1, uxth #3
-	add	x0, x8, #104
-	ret
-                                        // -- End function
-func000000000000001e:                   // @func000000000000001e
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	add	x8, x0, w1, uxth #3
-	add	x0, x8, #104
+	add	x0, x8, #4
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000

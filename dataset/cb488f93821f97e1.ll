@@ -3,7 +3,7 @@
 ; lz4/optimized/lz4hc.c.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 137438953440
@@ -12,8 +12,9 @@ entry:
   ret ptr %6
 }
 
-; 101 occurrences:
+; 105 occurrences:
 ; abseil-cpp/optimized/parse_test.cc.ll
+; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -97,7 +98,9 @@ entry:
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
 ; llvm/optimized/BlockCoverageInference.cpp.ll
+; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
+; llvm/optimized/StandardInstrumentations.cpp.ll
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
@@ -111,6 +114,7 @@ entry:
 ; minetest/optimized/sidebyside.cpp.ll
 ; opencv/optimized/facemark_demo_aam.cpp.ll
 ; opencv/optimized/gapi_render_perf_tests_ocv.cpp.ll
+; openspiel/optimized/kuhn_poker.cc.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; tev/optimized/Common.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
@@ -124,9 +128,8 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -134,6 +137,18 @@ entry:
   %4 = and i64 %3, -4
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = and i64 %3, -16
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 32
   ret ptr %6
 }
 

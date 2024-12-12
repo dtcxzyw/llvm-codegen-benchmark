@@ -1,7 +1,8 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll

@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; openssl/optimized/libcrypto-lib-bio_b64.ll
-; openssl/optimized/libcrypto-shlib-bio_b64.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %0, %1
-  %3 = select i1 %2, i32 1, i32 %0
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
 ; 14 occurrences:
 ; clamav/optimized/Delta.c.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -36,7 +23,7 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/plaSimple.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -54,7 +41,6 @@ entry:
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
@@ -98,6 +84,17 @@ entry:
   %2 = icmp ugt i32 %0, %1
   %3 = select i1 %2, i32 0, i32 %0
   %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %0, %1
+  %3 = select i1 %2, i32 0, i32 %0
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

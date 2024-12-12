@@ -8,7 +8,7 @@ entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, 8388608
   %.masked = and i32 %0, -7340033
-  %5 = or i32 %4, %.masked
+  %5 = or i32 %.masked, %4
   ret i32 %5
 }
 
@@ -80,7 +80,7 @@ entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, -7
   %.masked = and i32 %0, -5
-  %5 = or i32 %4, %.masked
+  %5 = or i32 %.masked, %4
   ret i32 %5
 }
 

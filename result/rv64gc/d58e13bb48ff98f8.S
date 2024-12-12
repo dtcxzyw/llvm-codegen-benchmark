@@ -40,28 +40,21 @@ func00000000000000d0:                   # @func00000000000000d0
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func00000000000001fa:                   # @func00000000000001fa
+func00000000000001ff:                   # @func00000000000001ff
 	sext.w	a2, a2
 	slli	a1, a1, 2
 	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func00000000000001f2:                   # @func00000000000001f2
-	sext.w	a2, a2
-	slli	a1, a1, 3
-	slli	a2, a2, 3
-	add	a0, a0, a1
-	add	a0, a0, a2
-	ret
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000ff:                   # @func00000000000000ff
 	slli	a2, a2, 32
 	slli	a1, a1, 2
 	srli	a2, a2, 27
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ce:                   # @func00000000000000ce
 	slli	a2, a2, 32
 	slli	a1, a1, 3
 	srli	a2, a2, 29

@@ -24,7 +24,7 @@ define i16 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
   %not. = xor i1 %0, true
   %2 = zext i1 %not. to i16
-  %3 = add i16 %2, %1
+  %3 = add i16 %1, %2
   ret i16 %3
 }
 

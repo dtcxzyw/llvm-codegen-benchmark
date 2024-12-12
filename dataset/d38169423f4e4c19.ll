@@ -3,7 +3,7 @@
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = ashr exact i64 %0, 5
@@ -16,12 +16,12 @@ entry:
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001b4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = ashr exact i64 %0, 5
   %4 = add i64 %.neg, %3
-  %5 = icmp ult i64 %4, 16
+  %5 = icmp samesign ult i64 %4, 16
   ret i1 %5
 }
 
@@ -48,7 +48,7 @@ entry:
 ; openusd/optimized/extComputationPrimvarPruningSceneIndex.cpp.ll
 ; spike/optimized/tsi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = ashr exact i64 %0, 2
@@ -57,19 +57,12 @@ entry:
   ret i1 %5
 }
 
-; 28 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
 ; abseil-cpp/optimized/crc_cord_state_test.cc.ll
 ; cvc5/optimized/cadical.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestExtra.cpp.ll
-; eastl/optimized/TestIterator.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
 ; gromacs/optimized/lifetime.cpp.ll
 ; gromacs/optimized/muParserTokenReader.cpp.ll
 ; hyperscan/optimized/ng_calc_components.cpp.ll
@@ -87,12 +80,12 @@ entry:
 ; openusd/optimized/extComputationPrimvarPruningSceneIndex.cpp.ll
 ; spike/optimized/tsi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000b4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = ashr exact i64 %0, 2
   %4 = add i64 %.neg, %3
-  %5 = icmp ult i64 %4, 128
+  %5 = icmp samesign ult i64 %4, 128
   ret i1 %5
 }
 
@@ -100,7 +93,7 @@ entry:
 ; entt/optimized/meta_container.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = ashr exact i64 %0, 2
@@ -113,12 +106,30 @@ entry:
 ; entt/optimized/meta_container.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = ashr exact i64 %0, 2
   %4 = add i64 %.neg, %3
-  %5 = icmp ult i64 %4, 128
+  %5 = icmp samesign ult i64 %4, 128
+  ret i1 %5
+}
+
+; 7 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestExtra.cpp.ll
+; eastl/optimized/TestIterator.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %.neg = sub i64 %2, %1
+  %3 = ashr exact i64 %0, 3
+  %4 = add i64 %.neg, %3
+  %5 = icmp ult i64 %4, 32
   ret i1 %5
 }
 

@@ -22,7 +22,7 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/decPrint.c.ll
 ; abc/optimized/extraUtilPath.c.ll
@@ -38,6 +38,7 @@ entry:
 ; linux/optimized/xfrm_user.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/CGExprComplex.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; opencv/optimized/contours.cpp.ll
@@ -54,16 +55,9 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; linux/optimized/mlme.ll
-; linux/optimized/vlv_dsi_pll.ll
-; postgres/optimized/tsvector_op.ll
+; 2 occurrences:
 ; qemu/optimized/hw_net_rtl8139.c.ll
-; slurm/optimized/launch.ll
 ; wireshark/optimized/packet-tipc.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -73,19 +67,22 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
-; freetype/optimized/cff.c.ll
+; 10 occurrences:
+; git/optimized/wildmatch.ll
+; icu/optimized/uniset.ll
+; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/mlme.ll
+; opencv/optimized/filter.dispatch.cpp.ll
 ; openjdk/optimized/cmsintrp.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/nbtpage.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ult i32 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -104,6 +101,26 @@ entry:
   ret i1 %5
 }
 
+; 10 occurrences:
+; lief/optimized/psa_crypto.c.ll
+; linux/optimized/mlme.ll
+; linux/optimized/vlv_dsi_pll.ll
+; php/optimized/zend_inheritance.ll
+; postgres/optimized/bufpage.ll
+; postgres/optimized/tsvector_op.ll
+; slurm/optimized/launch.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 64
+  %4 = icmp samesign ugt i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
@@ -115,9 +132,11 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/giaCut.c.ll
+; abc/optimized/giaLf.c.ll
+; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
@@ -128,10 +147,10 @@ entry:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp samesign uge i32 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -155,6 +174,17 @@ define i1 @func0000000000000007(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = icmp sle i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/cff.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 65535
+  %4 = icmp ult i32 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

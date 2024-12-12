@@ -18,14 +18,24 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; linux/optimized/intel_rps.ll
+; 1 occurrences:
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp ugt i8 %1, -4
+  %5 = select i1 %4, i32 %0, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; linux/optimized/intel_rps.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i8 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 255
+  %4 = icmp samesign ugt i8 %1, 5
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }

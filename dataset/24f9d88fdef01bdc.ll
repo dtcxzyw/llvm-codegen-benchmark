@@ -20,7 +20,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i1 %1 to i32
-  %4 = add nsw i32 %3, %2
+  %4 = add nsw i32 %2, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw [25 x float], ptr %0, i64 0, i64 %5
   ret ptr %6
@@ -32,7 +32,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i1 %1 to i32
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr [3 x ptr], ptr %0, i64 0, i64 %5
   ret ptr %6

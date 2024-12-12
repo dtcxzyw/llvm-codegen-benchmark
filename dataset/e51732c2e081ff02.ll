@@ -27,7 +27,7 @@
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 41984, i32 107520
@@ -36,14 +36,13 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/rsbDec6.c.ll
-; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/countbitsnode.ll
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000084(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 4294967296
   %4 = select i1 %3, i32 33, i32 1
@@ -56,7 +55,7 @@ entry:
 ; freetype/optimized/ftbase.c.ll
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000066(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func00000000000000c6(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i32 -1, i32 1
@@ -69,11 +68,11 @@ entry:
 ; abc/optimized/luckyFast16.c.ll
 ; sentencepiece/optimized/int128.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000088(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000118(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 4294967295
   %4 = select i1 %3, i32 32, i32 0
-  %5 = icmp ugt i64 %1, 65535
+  %5 = icmp samesign ugt i64 %1, 65535
   %6 = select i1 %5, i32 %0, i32 %4
   ret i32 %6
 }
@@ -81,9 +80,21 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000084(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000104(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, -4294967297
+  %4 = select i1 %3, i32 32, i32 0
+  %5 = icmp ult i64 %1, 281474976710656
+  %6 = select i1 %5, i32 %0, i32 %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; miniaudio/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000284(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 4294967296
   %4 = select i1 %3, i32 32, i32 0
   %5 = icmp ult i64 %1, 281474976710656
   %6 = select i1 %5, i32 %0, i32 %4

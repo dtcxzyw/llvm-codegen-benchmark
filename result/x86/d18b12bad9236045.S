@@ -16,7 +16,7 @@ func0000000000000006:                   # @func0000000000000006
 func000000000000000a:                   # @func000000000000000a
 	vmovss	.LCPI1_0(%rip), %xmm2           # xmm2 = [1.6E+1,0.0E+0,0.0E+0,0.0E+0]
 	vdivss	%xmm1, %xmm2, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vmovss	.LCPI1_1(%rip), %xmm1           # xmm1 = [8.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm0, %xmm1
 	setb	%al

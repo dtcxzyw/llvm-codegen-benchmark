@@ -6,21 +6,10 @@
 ; linux/optimized/mlme.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000064(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, %2
-  %4 = icmp ugt i8 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; qemu/optimized/optimize.c.ll
-; rust-analyzer-rs/optimized/6218mmeycy2lka1.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = add nuw nsw i8 %1, %2
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp ult i8 %0, %3
   ret i1 %4
 }
 
@@ -38,7 +27,17 @@ entry:
 define i1 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %1, %2
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; rust-analyzer-rs/optimized/6218mmeycy2lka1.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = add nuw nsw i8 %1, %2
+  %4 = icmp ugt i8 %0, %3
   ret i1 %4
 }
 
@@ -52,7 +51,7 @@ entry:
 define i1 @func0000000000000008(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %1, %2
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp ugt i8 %0, %3
   ret i1 %4
 }
 
@@ -65,17 +64,17 @@ entry:
 define i1 @func0000000000000004(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %1, %2
-  %4 = icmp ugt i8 %3, %0
+  %4 = icmp ult i8 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/mlme.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000069(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, %2
-  %4 = icmp ule i8 %3, %0
+  %4 = icmp uge i8 %0, %3
   ret i1 %4
 }
 

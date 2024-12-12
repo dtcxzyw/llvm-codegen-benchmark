@@ -23,9 +23,3 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	andb	%dil, %al
 	retq
-func0000000000000005:                   # @func0000000000000005
-	cmpq	%rsi, %rcx
-	sbbq	%rdx, %r8
-	setae	%al
-	andb	%dil, %al
-	retq

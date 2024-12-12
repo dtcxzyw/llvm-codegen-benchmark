@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/tls.ll
 ; linux/optimized/yenta_socket.ll
+; lvgl/optimized/lv_label.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; qemu/optimized/hw_char_serial.c.ll
 ; Function Attrs: nounwind
@@ -23,7 +24,7 @@ entry:
   %3 = trunc i32 %2 to i8
   %4 = and i8 %3, 4
   %5 = and i8 %1, 18
-  %6 = or disjoint i8 %5, %0
+  %6 = or disjoint i8 %0, %5
   %7 = or i8 %6, %4
   ret i8 %7
 }

@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 107 occurrences:
 ; abc/optimized/decFactor.c.ll
 ; abc/optimized/mvcApi.c.ll
 ; abc/optimized/mvcUtils.c.ll
@@ -25,7 +25,6 @@
 ; glslang/optimized/reflection.cpp.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/e_rc2.c.ll
-; libquic/optimized/random.c.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/intel_color.ll

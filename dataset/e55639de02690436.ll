@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-cms_pwri.ll
 ; openssl/optimized/libcrypto-shlib-cms_pwri.ll
-; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
 entry:

@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; openusd/optimized/bignum.cc.ll
 ; postgres/optimized/dependencies.ll
 ; postgres/optimized/mcv.ll

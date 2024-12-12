@@ -1,11 +1,12 @@
 
 ; 36 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; cpython/optimized/textio.ll
 ; darktable/optimized/histogram.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/position.c.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; ipopt/optimized/IpCGPenaltyLSAcceptor.ll
 ; ipopt/optimized/IpFilterLSAcceptor.ll
 ; ipopt/optimized/IpTNLPAdapter.ll
@@ -19,7 +20,6 @@
 ; opencv/optimized/speech_recognition.cpp.ll
 ; openjdk/optimized/g1Analytics.ll
 ; openjdk/optimized/g1IHOPControl.ll
-; openspiel/optimized/state_distribution.cc.ll
 ; openusd/optimized/simplify.cpp.ll
 ; openusd/optimized/spline_KeyFrames.cpp.ll
 ; proj/optimized/phi2.cpp.ll
@@ -41,12 +41,14 @@ define double @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 1.000000e+00
   %3 = select i1 %2, double %1, double 1.000000e+00
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; minetest/optimized/camera.cpp.ll
 ; opencv/optimized/canny.cpp.ll
 ; opencv/optimized/rand.cpp.ll
@@ -124,18 +126,7 @@ define double @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fcmp ole double %1, 1.000000e+00
   %3 = select i1 %2, double %1, double 1.000000e+00
-  %4 = fmul double %3, %0
-  ret double %4
-}
-
-; 1 occurrences:
-; openblas/optimized/dlaqp2rk.c.ll
-; Function Attrs: nounwind
-define double @func000000000000000c(double %0, double %1) #0 {
-entry:
-  %2 = fcmp oge double %1, 0.000000e+00
-  %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

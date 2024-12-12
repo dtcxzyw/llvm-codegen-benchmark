@@ -1,5 +1,5 @@
 
-; 300 occurrences:
+; 296 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/array_nested.cc.ll
@@ -73,7 +73,6 @@
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/ng_width.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -215,7 +214,6 @@
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; nghttp2/optimized/url_parser.c.ll
 ; node/optimized/linux.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; openexr/optimized/ImfPizCompressor.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
 ; openjdk/optimized/hb-unicode.ll
@@ -240,7 +238,6 @@
 ; postgres/optimized/bloomfilter.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/catcache.ll
-; postgres/optimized/datapagemap.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/event_trigger.ll
 ; postgres/optimized/execExprInterp.ll
@@ -277,7 +274,6 @@
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/ui_input-linux.c.ll
 ; redis/optimized/cluster_legacy.ll
-; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/plain_table_reader.cc.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; sqlite/optimized/sqlite3.ll

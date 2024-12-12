@@ -1,10 +1,10 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movslq	%edx, %rax
 	addq	%rsi, %rax
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movslq	%edx, %rax
 	addq	%rsi, %rax
 	setg	%al

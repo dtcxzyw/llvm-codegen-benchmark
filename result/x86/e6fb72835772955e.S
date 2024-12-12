@@ -1,17 +1,17 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorb	$112, %sil
 	xorb	$112, %dil
 	orb	%sil, %dil
 	setne	%al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	cmpb	$7, %sil
 	sete	%cl
 	cmpb	$7, %dil
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000294:                   # @func0000000000000294
 	cmpb	$3, %sil
 	setae	%cl
 	cmpb	$3, %dil

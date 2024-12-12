@@ -1,5 +1,5 @@
 
-; 149 occurrences:
+; 151 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/abcQuant.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -149,6 +149,8 @@
 ; velox/optimized/ZipWith.cpp.ll
 ; wireshark/optimized/k12.c.ll
 ; yosys/optimized/rtlil.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:

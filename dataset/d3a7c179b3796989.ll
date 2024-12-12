@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; libzmq/optimized/v2_decoder.cpp.ll
@@ -9,10 +9,12 @@
 ; linux/optimized/vt.ll
 ; llvm/optimized/NestedNameSpecifier.cpp.ll
 ; llvm/optimized/TemplateBase.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; openusd/optimized/changes.cpp.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; wireshark/optimized/erf.c.ll
+; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind

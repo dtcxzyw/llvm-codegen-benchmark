@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 69 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; clamav/optimized/arcread.cpp.ll
 ; freetype/optimized/pcf.c.ll
@@ -20,7 +20,6 @@
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_dram.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/pcmcia_resource.ll
@@ -43,7 +42,6 @@
 ; luajit/optimized/lj_cdata_dyn.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
@@ -80,7 +78,7 @@ entry:
   ret i32 %3
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -97,7 +95,6 @@ entry:
 ; linux/optimized/8139too.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/xhci-ring.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -146,11 +143,10 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/lpkAbcUtil.c.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/tcp_output.ll
-; linux/optimized/vsmp_64.ll
 ; luajit/optimized/lj_ccall.ll
 ; luajit/optimized/lj_ccall_dyn.ll
 ; luajit/optimized/lj_cconv.ll

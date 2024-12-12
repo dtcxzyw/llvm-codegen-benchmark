@@ -8,10 +8,10 @@
 ; ruby/optimized/ripper.ll
 ; verilator/optimized/V3ParseGrammar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = icmp ne i64 %0, 1
   %6 = and i1 %5, %4
   ret i1 %6

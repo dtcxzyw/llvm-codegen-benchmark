@@ -10,7 +10,7 @@
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 16384
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ult i64 %3, 536870912
   ret i1 %4
 }
@@ -18,10 +18,10 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 2
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ugt i64 %3, 2305843009213693951
   ret i1 %4
 }
@@ -32,7 +32,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 4611686018427387904
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }

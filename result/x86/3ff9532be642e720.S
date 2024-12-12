@@ -1,47 +1,41 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	subl	%edx, %esi
 	shrxl	%esi, %edi, %eax
 	testl	%eax, %eax
 	sete	%al
 	retq
-func0000000000000025:                   # @func0000000000000025
+func0000000000000045:                   # @func0000000000000045
 	subl	%edx, %esi
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
-	cmpl	%edi, %eax
-	setae	%al
+	cmpl	%eax, %edi
+	setbe	%al
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	subl	%edx, %esi
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
-	cmpl	%edi, %eax
-	setg	%al
-	retq
-func0000000000000064:                   # @func0000000000000064
-	subl	%edx, %esi
-	shrxl	%esi, %edi, %eax
-	testl	%eax, %eax
-	sete	%al
-	retq
-func000000000000006b:                   # @func000000000000006b
-	subl	%edx, %esi
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	cmpl	%edi, %eax
-	setle	%al
-	retq
-func000000000000006a:                   # @func000000000000006a
-	subl	%edx, %esi
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000067:                   # @func0000000000000067
+func00000000000000cb:                   # @func00000000000000cb
 	subl	%edx, %esi
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setge	%al
+	retq
+func00000000000000ca:                   # @func00000000000000ca
+	subl	%edx, %esi
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	cmpl	%eax, %edi
+	setg	%al
+	retq
+func00000000000000c7:                   # @func00000000000000c7
+	subl	%edx, %esi
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	cmpl	%eax, %edi
+	setle	%al
 	retq

@@ -1,34 +1,21 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v1.2d, v1.2d, v3.2d
-	cmlt	v3.2d, v2.2d, #0
-	and	v0.8b, v0.8b, v5.8b
-	usra	v2.2d, v3.2d, #58
-	cmlt	v3.2d, v1.2d, #0
-	ushll	v4.4s, v0.4h, #0
-	sshr	v2.2d, v2.2d, #6
-	usra	v1.2d, v3.2d, #58
-	ushll	v0.2d, v4.2s, #0
-	ssra	v0.2d, v1.2d, #6
-	uaddw2	v1.2d, v2.2d, v4.4s
+	sub	x8, x1, x2
+                                        // kill: def $w0 killed $w0 def $x0
+	add	x9, x8, #63
+	cmp	x8, #0
+	csel	x8, x9, x8, lt
+	and	x9, x0, #0x1
+	add	x0, x9, x8, asr #6
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v1.2d, v1.2d, v3.2d
-	cmlt	v3.2d, v2.2d, #0
-	and	v0.8b, v0.8b, v5.8b
-	usra	v2.2d, v3.2d, #58
-	cmlt	v3.2d, v1.2d, #0
-	ushll	v4.4s, v0.4h, #0
-	sshr	v2.2d, v2.2d, #6
-	usra	v1.2d, v3.2d, #58
-	ushll	v0.2d, v4.2s, #0
-	ssra	v0.2d, v1.2d, #6
-	uaddw2	v1.2d, v2.2d, v4.4s
+	subs	x8, x1, x2
+                                        // kill: def $w0 killed $w0 def $x0
+	add	x9, x8, #63
+	csel	x8, x9, x8, lt
+	and	x9, x0, #0x1
+	add	x0, x9, x8, asr #6
 	ret
                                         // -- End function

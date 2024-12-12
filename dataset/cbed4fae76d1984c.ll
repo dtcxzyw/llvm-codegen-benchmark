@@ -3,12 +3,12 @@
 ; linux/optimized/vlv_dsi_pll.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 24
   %3 = select i1 %2, i32 0, i32 59
   %4 = and i32 %0, 63
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
@@ -24,7 +24,7 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; wireshark/optimized/packet-vssmonitoring.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 2, i32 3
@@ -37,24 +37,24 @@ entry:
 ; icu/optimized/umutablecptrie.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = select i1 %2, i32 13, i32 15
   %4 = and i32 %0, 15
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; z3/optimized/sat_parallel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000094(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 41
   %3 = select i1 %2, i32 147456, i32 49152
   %4 = and i32 %0, 4177920
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -62,7 +62,7 @@ entry:
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 4, i32 0

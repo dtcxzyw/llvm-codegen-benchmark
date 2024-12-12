@@ -34,7 +34,7 @@ entry:
   ret i32 %3
 }
 
-; 86 occurrences:
+; 83 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
 ; flac/optimized/bitreader.c.ll
@@ -49,7 +49,6 @@ entry:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/hashtab.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_active.ll
 ; linux/optimized/i915_gem_create.ll
@@ -58,7 +57,6 @@ entry:
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/inet_hashtables.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_context.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_ddi.ll
@@ -71,7 +69,6 @@ entry:
 ; linux/optimized/intel_gt_pm_debugfs.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_hotplug.ll
-; linux/optimized/intel_hti.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/intel_reset.ll
 ; linux/optimized/intel_sprite.ll

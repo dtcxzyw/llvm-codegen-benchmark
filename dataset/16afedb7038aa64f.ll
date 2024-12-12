@@ -1,20 +1,20 @@
 
-%struct.page.3358159 = type { i64, %union.anon.11.3358160, %union.anon.19.3358161, %struct.atomic_t.3358128, [8 x i8] }
-%union.anon.11.3358160 = type { %struct.anon.12.3358162 }
-%struct.anon.12.3358162 = type { %union.anon.13.3358163, ptr, %union.anon.15.3358164, i64 }
-%union.anon.13.3358163 = type { %struct.list_head.3358122 }
-%struct.list_head.3358122 = type { ptr, ptr }
-%union.anon.15.3358164 = type { i64 }
-%union.anon.19.3358161 = type { %struct.atomic_t.3358128 }
-%struct.atomic_t.3358128 = type { i32 }
-%struct.Node.3498466 = type { %union.TValue.3498467, %union.TValue.3498467, %struct.MRef.3498468 }
-%union.TValue.3498467 = type { i64 }
-%struct.MRef.3498468 = type { i64 }
+%struct.page.3545263 = type { i64, %union.anon.11.3545264, %union.anon.19.3545265, %struct.atomic_t.3545232, [8 x i8] }
+%union.anon.11.3545264 = type { %struct.anon.12.3545266 }
+%struct.anon.12.3545266 = type { %union.anon.13.3545267, ptr, %union.anon.15.3545268, i64 }
+%union.anon.13.3545267 = type { %struct.list_head.3545226 }
+%struct.list_head.3545226 = type { ptr, ptr }
+%union.anon.15.3545268 = type { i64 }
+%union.anon.19.3545265 = type { %struct.atomic_t.3545232 }
+%struct.atomic_t.3545232 = type { i32 }
+%struct.Node.3680639 = type { %union.TValue.3680640, %union.TValue.3680640, %struct.MRef.3680641 }
+%union.TValue.3680640 = type { i64 }
+%struct.MRef.3680641 = type { i64 }
 
 ; 1 occurrences:
 ; openjdk/optimized/virtualspace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %3, i64 %0
@@ -43,21 +43,32 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %struct.page.3358159, ptr %3, i64 %0
+  %4 = getelementptr %struct.page.3545263, ptr %3, i64 %0
   %5 = inttoptr i64 %1 to ptr
   %6 = icmp eq ptr %4, %5
   ret i1 %6
 }
 
-; 3 occurrences:
-; cmake/optimized/cmCTestBinPacker.cxx.ll
+; 2 occurrences:
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw %struct.Node.3498466, ptr %3, i64 %0
+  %4 = getelementptr nusw nuw %struct.Node.3680639, ptr %3, i64 %0
+  %5 = inttoptr i64 %1 to ptr
+  %6 = icmp eq ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; cmake/optimized/cmCTestBinPacker.cxx.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw ptr, ptr %3, i64 %0
   %5 = inttoptr i64 %1 to ptr
   %6 = icmp eq ptr %4, %5
   ret i1 %6

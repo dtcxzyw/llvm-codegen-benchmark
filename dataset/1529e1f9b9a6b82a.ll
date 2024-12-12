@@ -8,13 +8,13 @@
 ; minetest/optimized/pipeline.cpp.ll
 ; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp ult i32 %0, %6
   ret i1 %7
 }
 
@@ -34,13 +34,13 @@ entry:
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 6
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %6, %0
+  %7 = icmp ugt i32 %0, %6
   ret i1 %7
 }
 
@@ -55,7 +55,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 4
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %6, %0
+  %7 = icmp eq i32 %0, %6
   ret i1 %7
 }
 
@@ -99,13 +99,13 @@ entry:
 ; yosys/optimized/opt_muxtree.ll
 ; yosys/optimized/ql_bram_merge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %6, %0
+  %7 = icmp eq i32 %0, %6
   ret i1 %7
 }
 
@@ -129,13 +129,13 @@ entry:
 ; yosys/optimized/test_pmgen.ll
 ; yosys/optimized/xilinx_srl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 5
   %6 = trunc i64 %5 to i32
-  %7 = icmp sgt i32 %6, %0
+  %7 = icmp slt i32 %0, %6
   ret i1 %7
 }
 
@@ -157,26 +157,26 @@ entry:
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp slt i32 %6, %0
+  %7 = icmp sgt i32 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; yosys/optimized/ast.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004b(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008b(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp sge i32 %6, %0
+  %7 = icmp sle i32 %0, %6
   ret i1 %7
 }
 

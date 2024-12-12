@@ -15,11 +15,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; icu/optimized/calendar.ll
-; icu/optimized/gregoimp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000059(i32 %0) #0 {
+define i32 @func0000000000000099(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 2440589
   %2 = srem i32 %1, 7

@@ -22,13 +22,6 @@ func00000000000003ff:                   # @func00000000000003ff
 	addl	%edi, %eax
 	imull	$85, %eax, %eax
 	retq
-func00000000000003fd:                   # @func00000000000003fd
-	imull	$85, %edx, %eax
-	addl	%esi, %eax
-	imull	$85, %eax, %eax
-	addl	%edi, %eax
-	imull	$85, %eax, %eax
-	retq
 func0000000000000155:                   # @func0000000000000155
 	leal	(%rdx,%rdx,4), %eax
 	leal	(%rsi,%rax,2), %eax

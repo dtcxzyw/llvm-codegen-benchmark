@@ -6,14 +6,14 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -1
 	andi	a0, a0, 255
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slt	a0, a0, a1
 	addi	a0, a0, -1
 	ori	a0, a0, 1
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sltu	a0, a1, a0
@@ -44,13 +44,4 @@ func0000000000000006:                   # @func0000000000000006
 	slt	a0, a1, a0
 	neg	a0, a0
 	ori	a0, a0, 1
-	ret
-func000000000000000a:                   # @func000000000000000a
-	sext.w	a0, a0
-	sext.w	a1, a1
-	slt	a0, a0, a1
-	lui	a1, 1
-	addi	a0, a0, -1
-	addiw	a1, a1, -28
-	or	a0, a0, a1
 	ret

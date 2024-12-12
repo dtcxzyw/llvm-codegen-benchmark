@@ -43,13 +43,19 @@ entry:
   ret i16 %1
 }
 
-; 298 occurrences:
+; 309 occurrences:
 ; abc/optimized/amapPerm.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
+; boost/optimized/boundary.ll
+; boost/optimized/codepage.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/date_time.ll
+; boost/optimized/formatter.ll
 ; c3c/optimized/project.c.ll
 ; c3c/optimized/target.c.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -257,6 +263,7 @@ entry:
 ; linux/optimized/ff-memless.ll
 ; linux/optimized/page_alloc.ll
 ; llvm/optimized/DeclarationFragments.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -341,6 +348,10 @@ entry:
 ; stockfish/optimized/evaluate_nnue.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; velox/optimized/CastExpr.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0) #0 {

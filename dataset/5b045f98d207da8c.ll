@@ -7,7 +7,7 @@
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0) #0 {
+define i32 @func0000000000000043(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 1
   %2 = select i1 %1, i32 262144, i32 0

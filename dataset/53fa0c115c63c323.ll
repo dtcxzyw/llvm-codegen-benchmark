@@ -1,10 +1,9 @@
 
-; 44 occurrences:
+; 47 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; libwebp/optimized/webp_dec.c.ll
 ; linux/optimized/sky2.ll
@@ -44,6 +43,10 @@
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i16 %0, i16 %1) #0 {
 entry:
@@ -54,8 +57,9 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; minetest/optimized/gameui.cpp.ll
+; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i16 %0, i16 %1) #0 {
 entry:

@@ -26,6 +26,17 @@ entry:
 }
 
 ; 1 occurrences:
+; folly/optimized/FunctionScheduler.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000003(i64 %0) #0 {
+entry:
+  %1 = uitofp i64 %0 to double
+  %2 = fdiv double %1, 0x41DFFFFFFF800000
+  %3 = fcmp ult double %2, 1.000000e+00
+  ret i1 %3
+}
+
+; 1 occurrences:
 ; quantlib/optimized/noarbsabr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {

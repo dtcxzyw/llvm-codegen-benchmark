@@ -6,6 +6,6 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000004:                   # @func0000000000000004
 	notl	%esi
 	andl	$1, %esi
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

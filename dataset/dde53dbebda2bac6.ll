@@ -11,7 +11,7 @@ entry:
   ret ptr %4
 }
 
-; 19 occurrences:
+; 7 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; git/optimized/fast-import.ll
 ; openjdk/optimized/xRelocationSetSelector.ll
@@ -19,6 +19,15 @@ entry:
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; regex-rs/optimized/32jw1oy2yofrhudk.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %1, %2
+  %4 = getelementptr nusw nuw [2048 x i32], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 12 occurrences:
 ; rust-analyzer-rs/optimized/1pxyofhmeataj0qk.ll
 ; rust-analyzer-rs/optimized/1s18tltm0lum0s3z.ll
 ; rust-analyzer-rs/optimized/25eqaaqjz071ug6q.ll
@@ -35,7 +44,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = getelementptr nusw [2048 x i32], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw [0 x { { { i64 } }, { { { { ptr, i64, i64, i64 }, {}, {} }, { {} } } } }], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

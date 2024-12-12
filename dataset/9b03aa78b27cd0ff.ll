@@ -1,6 +1,5 @@
 
-; 14 occurrences:
-; abseil-cpp/optimized/arg.cc.ll
+; 13 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -40,11 +39,11 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; openusd/optimized/bboxCache.cpp.ll
 ; openusd/optimized/changeManager.cpp.ll
 ; openusd/optimized/diagnosticMgr.cpp.ll
@@ -61,13 +60,14 @@ entry:
 ; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
 ; openusd/optimized/usdzResolver.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
+; qemu/optimized/util_buffer.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 8
+  %3 = icmp ugt i64 %2, 65535
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -80,7 +80,7 @@ entry:
   %3 = icmp slt i64 %2, 0
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

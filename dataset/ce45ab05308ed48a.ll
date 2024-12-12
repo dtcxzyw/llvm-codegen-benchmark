@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, 4294967296
   %3 = icmp eq i8 %1, 4
@@ -27,7 +27,7 @@ entry:
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; wireshark/optimized/packet-bacapp.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, 64
   %3 = icmp slt i8 %1, 0

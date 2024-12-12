@@ -9,7 +9,7 @@ func0000000000000002:                   # @func0000000000000002
 .LCPI1_0:
 	.zero	16,1
 func0000000000000008:                   # @func0000000000000008
-	vpsrld	$4, %ymm1, %ymm1
+	vpsrld	$8, %ymm1, %ymm1
 	vpcmpltud	%ymm0, %ymm1, %k1
 	vmovdqu8	.LCPI1_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper

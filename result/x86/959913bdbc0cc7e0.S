@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movq	%rsi, %rdx
 	shrq	%rdx
 	movabsq	$-6640827866535438581, %rax     # imm = 0xA3D70A3D70A3D70B
@@ -18,6 +18,17 @@ func0000000000000008:                   # @func0000000000000008
 	subq	%rax, %rsi
 	cmpq	%rdi, %rsi
 	seta	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movq	%rsi, %rdx
+	shrq	$2, %rdx
+	movabsq	$2951479051793528259, %rax      # imm = 0x28F5C28F5C28F5C3
+	mulxq	%rax, %rax, %rax
+	shrq	$2, %rax
+	imulq	$100, %rax, %rax
+	subq	%rax, %rsi
+	cmpq	%rdi, %rsi
+	setb	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movq	%rsi, %rdx

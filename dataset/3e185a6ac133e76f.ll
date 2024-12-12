@@ -27,7 +27,7 @@
 ; vcpkg/optimized/json.cpp.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48

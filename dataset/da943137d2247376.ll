@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; casadi/optimized/dm_instantiator.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/pipeline.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(double %0, ptr %1, ptr %2) #0 {

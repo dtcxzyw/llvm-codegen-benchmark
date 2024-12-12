@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/espfix_64.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/pasid.ll
@@ -24,7 +23,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1096
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
@@ -35,7 +34,7 @@ entry:
 define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1096
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
@@ -60,7 +59,7 @@ define i64 @func000000000000001e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

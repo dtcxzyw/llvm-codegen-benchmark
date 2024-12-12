@@ -1,6 +1,5 @@
 
-; 205 occurrences:
-; c3c/optimized/decltable.c.ll
+; 204 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -211,7 +210,7 @@ entry:
   %2 = lshr i64 %1, 16
   %3 = xor i64 %2, %1
   %4 = trunc i64 %3 to i32
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

@@ -4,11 +4,11 @@
 ; brotli/optimized/encode.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [4 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -16,11 +16,11 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8191
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [8192 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [8192 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

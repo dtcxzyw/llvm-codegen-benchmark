@@ -6,7 +6,7 @@ func000000000000000a:                   # @func000000000000000a
 	andq	$-8, %rsi
 	leaq	24(%rsi,%rdi), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andq	$-4, %rsi
 	leaq	32(%rsi,%rdi), %rax
 	retq

@@ -1,4 +1,4 @@
-func0000000000001982:                   # @func0000000000001982
+func0000000000006302:                   # @func0000000000006302
 	cmpl	$1281450528, %esi               # imm = 0x4C616220
 	setne	%al
 	cmpl	$1482250784, %esi               # imm = 0x58595A20
@@ -8,7 +8,7 @@ func0000000000001982:                   # @func0000000000001982
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000001998:                   # @func0000000000001998
+func0000000000006318:                   # @func0000000000006318
 	cmpl	$25, %esi
 	setne	%al
 	cmpl	$12, %esi
@@ -18,7 +18,7 @@ func0000000000001998:                   # @func0000000000001998
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000001882:                   # @func0000000000001882
+func0000000000006102:                   # @func0000000000006102
 	cmpl	$2, %esi
 	setne	%al
 	cmpl	$7, %esi
@@ -28,7 +28,7 @@ func0000000000001882:                   # @func0000000000001882
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000001918:                   # @func0000000000001918
+func0000000000006218:                   # @func0000000000006218
 	cmpl	$3, %esi
 	setne	%al
 	cmpl	$2, %esi
@@ -38,7 +38,7 @@ func0000000000001918:                   # @func0000000000001918
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000988:                   # @func0000000000000988
+func0000000000002308:                   # @func0000000000002308
 	cmpl	$36, %esi
 	setb	%al
 	cmpl	$32, %esi

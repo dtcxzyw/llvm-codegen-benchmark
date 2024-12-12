@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -8,7 +8,6 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; opencv/optimized/aff_trans.cpp.ll
 ; openexr/optimized/ImfAcesFile.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll

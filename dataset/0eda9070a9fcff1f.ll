@@ -1,10 +1,11 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; hermes/optimized/Executor.cpp.ll
+; icu/optimized/ubidiln.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/tdls.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -21,7 +22,7 @@
 define i32 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

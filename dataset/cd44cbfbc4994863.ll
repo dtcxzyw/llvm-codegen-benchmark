@@ -70,11 +70,12 @@ entry:
   %4 = add i64 %3, %1
   %5 = sub nsw i64 0, %1
   %6 = and i64 %4, %5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/alloc_lib.ll
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
 ; jemalloc/optimized/base.sym.ll
@@ -99,11 +100,11 @@ entry:
   %4 = add i64 %3, %1
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; ockam-rs/optimized/10k16szy9z0gnoyc.ll
@@ -111,6 +112,8 @@ entry:
 ; ockam-rs/optimized/2v5jo34gglxi7dx1.ll
 ; ockam-rs/optimized/3ai7h96ib4cyqp26.ll
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000080(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -118,11 +121,11 @@ entry:
   %4 = add i64 %3, %1
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
-; 19 occurrences:
+; 21 occurrences:
 ; coreutils-rs/optimized/1pz43lsbr7l0inxv.ll
 ; coreutils-rs/optimized/45ibbzl0las8sgut.ll
 ; coreutils-rs/optimized/4wx66ytsj6r522cv.ll
@@ -142,6 +145,8 @@ entry:
 ; openjdk/optimized/xPhysicalMemoryBacking_linux.ll
 ; openjdk/optimized/zPhysicalMemoryBacking_linux.ll
 ; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000040(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -163,7 +168,7 @@ entry:
   %4 = add i64 %3, %1
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -176,7 +181,7 @@ entry:
   %4 = add nuw i64 %3, %1
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

@@ -9,7 +9,7 @@
 ; wolfssl/optimized/tls.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000044(i8 %0) #0 {
+define i8 @func0000000000000084(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 64
   %2 = icmp eq i8 %0, 7

@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 109 occurrences:
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -86,7 +86,6 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; openblas/optimized/dlahqr.c.ll
 ; openblas/optimized/dlarre.c.ll
-; openblas/optimized/dstein.c.ll
 ; postgres/optimized/selfuncs.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll

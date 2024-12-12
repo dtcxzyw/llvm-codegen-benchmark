@@ -1,6 +1,6 @@
 func000000000000000e:                   # @func000000000000000e
 	andi	a1, a1, 255
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	andi	a1, a1, 255

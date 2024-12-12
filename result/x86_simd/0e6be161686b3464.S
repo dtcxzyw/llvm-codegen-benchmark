@@ -52,7 +52,7 @@ func0000000000000002:                   # @func0000000000000002
 	.long	63488                           # 0xf800
 func0000000000000000:                   # @func0000000000000000
 	vpsrld	$3, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI3_0:
@@ -73,6 +73,6 @@ func0000000000000007:                   # @func0000000000000007
 	.long	4                               # 0x4
 func0000000000000004:                   # @func0000000000000004
 	vpsrld	$12, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI5_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq

@@ -4,7 +4,7 @@
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 1
   %3 = select i1 %0, i1 %2, i1 false

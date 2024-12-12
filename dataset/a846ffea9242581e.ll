@@ -8,7 +8,7 @@
 ; stb/optimized/stb_truetype.c.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i16 %0, i8 %1) #0 {
+define i1 @func00000000000000a1(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw i16 %2, 8

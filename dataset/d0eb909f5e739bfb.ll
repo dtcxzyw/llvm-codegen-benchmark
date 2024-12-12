@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %.neg = shl nsw i32 -1, %1
   %2 = sub i32 0, %0
@@ -14,7 +14,7 @@ entry:
 ; abc/optimized/luckyFast16.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000012a(i32 %0, i32 %1) #0 {
 entry:
   %.neg = shl nsw i32 -1, %1
   %2 = add i32 %.neg, %0
@@ -28,7 +28,7 @@ entry:
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/sg.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1) #0 {
 entry:
   %.neg = shl nsw i32 -1, %1
   %2 = add i32 %.neg, %0
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/dma-iommu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %.neg = shl nsw i32 -1, %1
   %2 = sub i32 0, %0

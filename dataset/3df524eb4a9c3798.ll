@@ -10,15 +10,16 @@ entry:
   ret i16 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; spike/optimized/clrs16.ll
 ; spike/optimized/clz16.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000010(i16 %0, i16 %1) #0 {
+define i16 @func0000000000000012(i16 %0, i16 %1) #0 {
 entry:
-  %2 = icmp ult i16 %1, 4096
+  %2 = icmp ult i16 %1, 256
   %3 = select i1 %2, i16 %0, i16 %1
-  %4 = shl i16 %3, 2
+  %4 = shl nuw i16 %3, 4
   ret i16 %4
 }
 
@@ -30,17 +31,6 @@ entry:
   %2 = icmp slt i16 %1, 0
   %3 = select i1 %2, i16 %0, i16 %1
   %4 = shl i16 %3, 6
-  ret i16 %4
-}
-
-; 1 occurrences:
-; libjpeg-turbo/optimized/jcdctmgr.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000012(i16 %0, i16 %1) #0 {
-entry:
-  %2 = icmp ult i16 %1, 256
-  %3 = select i1 %2, i16 %0, i16 %1
-  %4 = shl nuw i16 %3, 4
   ret i16 %4
 }
 

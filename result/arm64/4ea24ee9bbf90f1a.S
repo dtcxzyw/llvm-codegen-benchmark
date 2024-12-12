@@ -1,16 +1,14 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mvni	v3.4s, #3
-	usra	v3.4s, v2.4s, #2
-	saddw2	v1.2d, v1.2d, v3.4s
-	saddw	v0.2d, v0.2d, v3.2s
+	lsr	w8, w1, #2
+	sub	w8, w8, #4
+	add	x0, x0, w8, sxtw
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mvni	v3.4s, #126
-	usra	v3.4s, v2.4s, #24
-	saddw2	v1.2d, v1.2d, v3.4s
-	saddw	v0.2d, v0.2d, v3.2s
+	lsr	w8, w1, #24
+	sub	w8, w8, #127
+	add	x0, x0, w8, sxtw
 	ret
                                         // -- End function

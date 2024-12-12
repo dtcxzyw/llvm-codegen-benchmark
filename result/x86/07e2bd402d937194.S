@@ -24,8 +24,18 @@ func000000000000000c:                   # @func000000000000000c
 	sets	%al
 	orb	%dil, %al
 	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpw	$2, %si
+	setae	%al
+	orb	%dil, %al
+	retq
 func0000000000000014:                   # @func0000000000000014
 	cmpw	$127, %si
 	setg	%al
+	orb	%dil, %al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpw	$56, %si
+	setb	%al
 	orb	%dil, %al
 	retq

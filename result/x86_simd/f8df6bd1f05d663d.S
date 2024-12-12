@@ -24,7 +24,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.quad	2                               # 0x2
@@ -49,7 +49,7 @@ func0000000000000000:                   # @func0000000000000000
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
 	vpsllq	$2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.quad	-15                             # 0xfffffffffffffff1
@@ -74,7 +74,7 @@ func000000000000000c:                   # @func000000000000000c
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpsrlq	$9, %ymm1, %ymm1
 	vpsllq	$2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.quad	-529                            # 0xfffffffffffffdef

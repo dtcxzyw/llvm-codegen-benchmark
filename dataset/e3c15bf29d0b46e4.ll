@@ -12,15 +12,16 @@ entry:
   ret i16 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/eeepc-laptop.ll
+; lvgl/optimized/lv_color.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i16
-  %2 = mul nuw i16 %1, 191
-  %3 = udiv i16 %2, 255
+  %2 = mul nuw i16 %1, 255
+  %3 = udiv i16 %2, 100
   ret i16 %3
 }
 

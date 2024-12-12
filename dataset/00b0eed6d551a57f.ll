@@ -7,7 +7,7 @@ define i1 @func0000000000000004(i1 %0, double %1) #0 {
 entry:
   %2 = fsub double 1.000000e+00, %1
   %3 = fcmp ogt double %2, 0x3EB0C6F7A0B5ED8D
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -27,7 +27,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp oeq double %1, 0.000000e+00
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

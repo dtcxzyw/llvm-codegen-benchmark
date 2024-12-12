@@ -13,6 +13,11 @@ func0000000000000002:                   # @func0000000000000002
 	addiw	a1, a1, -1
 	sh3add	a0, a1, a0
 	ret
+func0000000000000003:                   # @func0000000000000003
+	add	a1, a1, a2
+	addiw	a1, a1, -1
+	sh3add	a0, a1, a0
+	ret
 func000000000000003a:                   # @func000000000000003a
 	add	a1, a1, a2
 	addiw	a1, a1, 1
@@ -45,7 +50,12 @@ func000000000000000e:                   # @func000000000000000e
 	addiw	a1, a1, -1
 	sh3add	a0, a1, a0
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000017:                   # @func0000000000000017
+	add	a1, a1, a2
+	addiw	a1, a1, 3
+	sh1add	a0, a1, a0
+	ret
+func0000000000000013:                   # @func0000000000000013
 	add	a1, a1, a2
 	addiw	a1, a1, -34
 	sh3add	a0, a1, a0

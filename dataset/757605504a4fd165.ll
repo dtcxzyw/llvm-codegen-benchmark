@@ -7,7 +7,7 @@
 ; ripgrep-rs/optimized/3bctup5kmnkujhz5.ll
 ; ripgrep-rs/optimized/nfnpl33n8tyk5ff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000a4(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ule i8 %2, %1
   %4 = icmp ult i8 %0, %1

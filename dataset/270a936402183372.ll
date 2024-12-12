@@ -1,8 +1,7 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; ipopt/optimized/IpTNLPReducer.ll
 ; libwebp/optimized/predictor_enc.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; openblas/optimized/lapacke_ctp_trans.c.ll
 ; openblas/optimized/lapacke_ctr_nancheck.c.ll
@@ -26,7 +25,7 @@
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %.neg = sext i1 %1 to i32
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   ret i32 %2
 }
 
@@ -64,7 +63,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %.neg = sext i1 %1 to i32
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   ret i32 %2
 }
 
@@ -76,7 +75,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %.neg = sext i1 %1 to i32
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   ret i32 %2
 }
 
@@ -89,7 +88,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %.neg = sext i1 %1 to i32
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   ret i32 %2
 }
 

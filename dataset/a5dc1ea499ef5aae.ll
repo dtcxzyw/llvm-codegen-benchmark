@@ -1,15 +1,4 @@
 
-; 1 occurrences:
-; bdwgc/optimized/gc.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
-entry:
-  %2 = getelementptr nusw i8, ptr %0, i64 4096
-  %.idx = mul i64 %1, -16
-  %3 = getelementptr nusw i8, ptr %2, i64 %.idx
-  ret ptr %3
-}
-
 ; 12 occurrences:
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
 ; entt/optimized/benchmark.cpp.ll
@@ -58,6 +47,30 @@ entry:
   %4 = getelementptr nusw i8, ptr %0, i64 -4
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
+}
+
+; 1 occurrences:
+; gromacs/optimized/partition.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 6
+  %3 = sub i64 64, %2
+  %4 = getelementptr i8, ptr %0, i64 1308
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 2 occurrences:
+; postgres/optimized/bufmgr.ll
+; postgres/optimized/tuplesort.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000d0(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %0, i64 -20
+  %.idx = mul i64 %1, -40
+  %3 = getelementptr i8, ptr %2, i64 %.idx
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

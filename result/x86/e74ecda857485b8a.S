@@ -5,21 +5,20 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andl	$1, %edx
-	negl	%edx
-	addl	%esi, %edx
+	cmpl	%edx, %esi
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andl	$1, %edx
 	subl	%edx, %esi
 	cmpl	$257, %esi                      # imm = 0x101
 	setge	%al
 	andb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andl	$1, %edx
 	subl	%edx, %esi
 	cmpl	$2, %esi
@@ -28,8 +27,7 @@ func0000000000000016:                   # @func0000000000000016
 	retq
 func000000000000000c:                   # @func000000000000000c
 	andl	$1, %edx
-	negl	%edx
-	addl	%esi, %edx
+	cmpl	%edx, %esi
 	setne	%al
 	andb	%dil, %al
 	retq

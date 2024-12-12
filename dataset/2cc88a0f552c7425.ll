@@ -6,14 +6,15 @@
 ; gromacs/optimized/coolstuff.cpp.ll
 ; rocksdb/optimized/transaction_test_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0) #0 {
+define i1 @func0000000000000184(i64 %0) #0 {
 entry:
   %1 = mul i64 %0, 10
   %2 = icmp ult i64 %1, 6
   ret i1 %2
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -113,7 +114,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i64 %0) #0 {
+define i1 @func0000000000000384(i64 %0) #0 {
 entry:
   %1 = mul i64 %0, -6067343680855748867
   %2 = icmp ult i64 %1, -6067343680855748867
@@ -121,9 +122,29 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000188(i64 %0) #0 {
+entry:
+  %1 = mul i64 %0, 184467440738
+  %2 = icmp ugt i64 %1, -9223371852387335071
+  ret i1 %2
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/float_conversion.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000018c(i64 %0) #0 {
+entry:
+  %1 = mul i64 %0, 10
+  %2 = icmp ne i64 %1, 0
+  ret i1 %2
+}
+
+; 1 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0) #0 {
+define i1 @func0000000000000101(i64 %0) #0 {
 entry:
   %1 = mul i64 %0, -8
   %2 = icmp eq i64 %1, 0
@@ -133,7 +154,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0) #0 {
+define i1 @func0000000000000181(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 0
   ret i1 %1

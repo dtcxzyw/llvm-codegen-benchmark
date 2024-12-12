@@ -1,6 +1,8 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; opencv/optimized/perf_joint_bilateral_filter.cpp.ll

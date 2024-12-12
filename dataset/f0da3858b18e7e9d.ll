@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 38 occurrences:
 ; coreutils-rs/optimized/12z6icc2yyeo0v0b.ll
 ; coreutils-rs/optimized/4h7z3ghynwnbx7iw.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
@@ -29,6 +29,15 @@
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/packet-geonw.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/cogvsa3bjgiftuxgwhwbiuj8x.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -40,7 +49,8 @@ entry:
   ret ptr %7
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/alloc_lib.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
 ; luajit/optimized/lj_alloc.ll
@@ -48,13 +58,27 @@ entry:
 ; redis/optimized/rax.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %3 = and i64 %2, 15
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 944
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fb(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 7
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 880
   %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 3
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 

@@ -1,7 +1,10 @@
 
-; 8 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; linux/optimized/ohci-hcd.ll
+; lvgl/optimized/lv_freetype_glyph.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; openexr/optimized/ImfWav.cpp.ll
 ; openexr/optimized/internal_piz.c.ll

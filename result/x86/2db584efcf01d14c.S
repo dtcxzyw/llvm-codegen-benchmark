@@ -25,7 +25,7 @@ func000000000000001f:                   # @func000000000000001f
 	cmovnel	%ecx, %eax
 	addl	$65535, %eax                    # imm = 0xFFFF
 	retq
-func0000000000000085:                   # @func0000000000000085
+func0000000000000185:                   # @func0000000000000185
 	xorl	%eax, %eax
 	cmpb	$-95, %sil
 	setb	%al

@@ -22,6 +22,18 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	add	a1, a1, a2
+	sub	a0, a0, a1
+	sltiu	a0, a0, 512
+	ret
+func0000000000000018:                   # @func0000000000000018
+	add	a1, a1, a2
+	sub	a0, a0, a1
+	srli	a0, a0, 22
+	sltiu	a0, a0, 25
+	xori	a0, a0, 1
+	ret
 func0000000000000006:                   # @func0000000000000006
 	add	a1, a1, a2
 	sub	a0, a0, a1

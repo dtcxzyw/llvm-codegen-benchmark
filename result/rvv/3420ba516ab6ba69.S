@@ -10,7 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	vmv1r.v	v0, v12
 	vor.vv	v8, v14, v10, v0.t
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv1r.v	v12, v0
 	vmv1r.v	v0, v8

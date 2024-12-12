@@ -18,7 +18,7 @@
 ; z3/optimized/bound_propagator.cpp.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 1
   %3 = and i1 %2, %1
@@ -32,10 +32,10 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000301(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %0, 4
-  %3 = and i1 %2, %1
+  %2 = icmp samesign ugt i32 %0, 4
+  %3 = and i1 %1, %2
   %4 = icmp eq i32 %0, 5
   %5 = or i1 %3, %4
   ret i1 %5
@@ -45,10 +45,10 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i1 %1) #0 {
+define i1 @func000000000000030a(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %0, 4
-  %3 = and i1 %2, %1
+  %2 = icmp samesign ugt i32 %0, 4
+  %3 = and i1 %1, %2
   %4 = icmp sgt i32 %0, 1
   %5 = or i1 %3, %4
   ret i1 %5
@@ -58,7 +58,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000114(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ugt i32 %0, 55295
   %3 = and i1 %2, %1
@@ -72,7 +72,7 @@ entry:
 ; git/optimized/stash.ll
 ; opencv/optimized/contours.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, -1
   %3 = and i1 %2, %1
@@ -90,10 +90,10 @@ entry:
 ; opencv/optimized/contours.cpp.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
-  %3 = and i1 %2, %1
+  %3 = and i1 %1, %2
   %4 = icmp sgt i32 %0, 0
   %5 = or i1 %3, %4
   ret i1 %5
@@ -102,10 +102,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-mq.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, 132
-  %3 = and i1 %2, %1
+  %3 = and i1 %1, %2
   %4 = icmp eq i32 %0, 0
   %5 = or i1 %3, %4
   ret i1 %5
@@ -114,10 +114,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/csrucode.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i1 %1) #0 {
+define i1 @func000000000000028c(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp ult i32 %0, 100
-  %3 = and i1 %2, %1
+  %2 = icmp samesign ult i32 %0, 100
+  %3 = and i1 %1, %2
   %4 = icmp ne i32 %0, 0
   %not. = xor i1 %3, true
   %5 = select i1 %not., i1 %4, i1 false

@@ -18,8 +18,9 @@ func0000000000000001:                   # @func0000000000000001
 	andl	$2, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
+	movl	%esi, %eax
 	testb	$1, %dil
-	cmovel	%edx, %esi
-	leal	(%rsi,%rsi), %eax
-	andl	$64, %eax
+	cmovel	%edx, %eax
+	andl	$7, %eax
+	shll	$12, %eax
 	retq

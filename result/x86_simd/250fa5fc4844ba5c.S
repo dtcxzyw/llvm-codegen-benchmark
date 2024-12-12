@@ -18,8 +18,8 @@ func0000000000000000:                   # @func0000000000000000
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vmovdqa32	%ymm2, %ymm3 {%k1}
-	vpaddd	%ymm1, %ymm3, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm3, %ymm1, %ymm1
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	939524096                       # 0x38000000

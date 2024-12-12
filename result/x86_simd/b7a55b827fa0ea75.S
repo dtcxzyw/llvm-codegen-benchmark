@@ -2,7 +2,7 @@
 	.long	100                             # 0x64
 .LCPI0_1:
 	.long	69                              # 0x45
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %ecx
@@ -112,7 +112,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	100                             # 0x64
 .LCPI2_1:
 	.long	8                               # 0x8
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %ecx
@@ -167,7 +167,7 @@ func0000000000000024:                   # @func0000000000000024
 	.long	100                             # 0x64
 .LCPI3_1:
 	.long	255                             # 0xff
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpmulld	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %ecx
@@ -220,7 +220,7 @@ func0000000000000028:                   # @func0000000000000028
 	retq
 .LCPI4_0:
 	.long	100                             # 0x64
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpbroadcastd	.LCPI4_0(%rip), %ymm2   # ymm2 = [100,100,100,100,100,100,100,100]
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm3
@@ -274,7 +274,7 @@ func0000000000000021:                   # @func0000000000000021
 	retq
 .LCPI5_0:
 	.long	100                             # 0x64
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpbroadcastd	.LCPI5_0(%rip), %ymm2   # ymm2 = [100,100,100,100,100,100,100,100]
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm3

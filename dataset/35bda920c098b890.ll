@@ -25,18 +25,17 @@
 ; openspiel/optimized/policy.cc.ll
 ; wasmedge/optimized/helper.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 1
   %6 = and i64 %5, 4294967295
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 2 occurrences:
-; opencv/optimized/nonrigid_icp.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, ptr %2) #0 {

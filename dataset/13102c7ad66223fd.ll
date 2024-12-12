@@ -11,7 +11,7 @@ entry:
   %2 = bitcast double %1 to i64
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }

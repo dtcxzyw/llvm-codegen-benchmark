@@ -31,11 +31,11 @@ func0000000000000008:                   # @func0000000000000008
 .LBB3_2:                                # %entry
 	ret
 func000000000000000a:                   # @func000000000000000a
-	fmv.s	fa5, fa0
-	fmv.w.x	fa0, zero
-	fle.s	a0, fa5, fa0
-	bnez	a0, .LBB4_2
-	fmv.s	fa0, fa5
+	fmv.w.x	fa5, zero
+	fle.s	a0, fa0, fa5
+	beqz	a0, .LBB4_2
+	lui	a0, 267264
+	fmv.w.x	fa0, a0
 .LBB4_2:                                # %entry
 	ret
 .LCPI5_0:

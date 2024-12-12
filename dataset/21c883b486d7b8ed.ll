@@ -23,7 +23,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/gregorian.ll
 ; icu/optimized/calendar.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; Function Attrs: nounwind

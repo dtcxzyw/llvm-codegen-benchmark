@@ -31,8 +31,51 @@
 	.byte	12                              # 0xc
 	.byte	15                              # 0xf
 	.byte	14                              # 0xe
-func0000000000000000:                   # @func0000000000000000
+.LCPI0_1:
+	.byte	1                               # 0x1
+	.byte	2                               # 0x2
+	.byte	4                               # 0x4
+	.byte	8                               # 0x8
+	.byte	16                              # 0x10
+	.byte	32                              # 0x20
+	.byte	64                              # 0x40
+	.byte	128                             # 0x80
+	.byte	1                               # 0x1
+	.byte	2                               # 0x2
+	.byte	4                               # 0x4
+	.byte	8                               # 0x8
+	.byte	16                              # 0x10
+	.byte	32                              # 0x20
+	.byte	64                              # 0x40
+	.byte	128                             # 0x80
+	.byte	1                               # 0x1
+	.byte	2                               # 0x2
+	.byte	4                               # 0x4
+	.byte	8                               # 0x8
+	.byte	16                              # 0x10
+	.byte	32                              # 0x20
+	.byte	64                              # 0x40
+	.byte	128                             # 0x80
+	.byte	1                               # 0x1
+	.byte	2                               # 0x2
+	.byte	4                               # 0x4
+	.byte	8                               # 0x8
+	.byte	16                              # 0x10
+	.byte	32                              # 0x20
+	.byte	64                              # 0x40
+	.byte	128                             # 0x80
+.LCPI0_2:
+	.byte	1                               # 0x1
+	.byte	2                               # 0x2
+	.byte	4                               # 0x4
+	.byte	8                               # 0x8
+	.byte	16                              # 0x10
+	.byte	32                              # 0x20
+	.byte	64                              # 0x40
+	.byte	128                             # 0x80
+func0000000000000001:                   # @func0000000000000001
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0    # ymm0 = ymm0[1,0,3,2,5,4,7,6,9,8,11,10,13,12,15,14,17,16,19,18,21,20,23,22,25,24,27,26,29,28,31,30]
+	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	1                               # 0x1
@@ -67,6 +110,49 @@ func0000000000000000:                   # @func0000000000000000
 	.byte	12                              # 0xc
 	.byte	15                              # 0xf
 	.byte	14                              # 0xe
-func0000000000000001:                   # @func0000000000000001
+.LCPI1_1:
+	.byte	1                               # 0x1
+	.byte	2                               # 0x2
+	.byte	4                               # 0x4
+	.byte	8                               # 0x8
+	.byte	16                              # 0x10
+	.byte	32                              # 0x20
+	.byte	64                              # 0x40
+	.byte	128                             # 0x80
+	.byte	1                               # 0x1
+	.byte	2                               # 0x2
+	.byte	4                               # 0x4
+	.byte	8                               # 0x8
+	.byte	16                              # 0x10
+	.byte	32                              # 0x20
+	.byte	64                              # 0x40
+	.byte	128                             # 0x80
+	.byte	1                               # 0x1
+	.byte	2                               # 0x2
+	.byte	4                               # 0x4
+	.byte	8                               # 0x8
+	.byte	16                              # 0x10
+	.byte	32                              # 0x20
+	.byte	64                              # 0x40
+	.byte	128                             # 0x80
+	.byte	1                               # 0x1
+	.byte	2                               # 0x2
+	.byte	4                               # 0x4
+	.byte	8                               # 0x8
+	.byte	16                              # 0x10
+	.byte	32                              # 0x20
+	.byte	64                              # 0x40
+	.byte	128                             # 0x80
+.LCPI1_2:
+	.byte	1                               # 0x1
+	.byte	2                               # 0x2
+	.byte	4                               # 0x4
+	.byte	8                               # 0x8
+	.byte	16                              # 0x10
+	.byte	32                              # 0x20
+	.byte	64                              # 0x40
+	.byte	128                             # 0x80
+func0000000000000000:                   # @func0000000000000000
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0    # ymm0 = ymm0[1,0,3,2,5,4,7,6,9,8,11,10,13,12,15,14,17,16,19,18,21,20,23,22,25,24,27,26,29,28,31,30]
+	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to4}, %ymm0, %ymm0
 	retq

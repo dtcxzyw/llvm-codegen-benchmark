@@ -1,8 +1,16 @@
-func0000000000000028:                   # @func0000000000000028
+func000000000000003c:                   # @func000000000000003c
 	andl	$1, %esi
 	leaq	(%rsi,%rdx), %rax
 	subq	%rdi, %rax
 	addq	$2, %rax
+	retq
+func0000000000000028:                   # @func0000000000000028
+	notb	%sil
+	movzbl	%sil, %eax
+	shll	$3, %eax
+	orq	$-16, %rax
+	addq	%rdx, %rax
+	subq	%rdi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	notb	%sil

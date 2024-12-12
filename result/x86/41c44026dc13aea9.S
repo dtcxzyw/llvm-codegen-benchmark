@@ -10,6 +10,13 @@ func000000000000000f:                   # @func000000000000000f
 	movl	$4294967275, %ecx               # imm = 0xFFFFFFEB
 	leaq	(%rcx,%rax,8), %rax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	movzbl	%dil, %eax
+	movabsq	$1051668233026429277, %rcx      # imm = 0xE9846AF9B1A615D
+	imulq	%rax, %rcx
+	movabsq	$1650762746860425525, %rax      # imm = 0x16E8AFF8DF105135
+	addq	%rcx, %rax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	movzbl	%dil, %eax
 	movabsq	$-1225172306242737336, %rcx     # imm = 0xEEFF504759C16B48

@@ -12,5 +12,5 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %sil
 	movl	$-6, %ecx
 	cmovel	%eax, %ecx
-	leal	6(%rcx,%rdi), %eax
+	leal	6(%rdi,%rcx), %eax
 	retq

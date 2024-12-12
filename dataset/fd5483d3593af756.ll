@@ -39,7 +39,7 @@ entry:
   ret i32 %5
 }
 
-; 30 occurrences:
+; 28 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
@@ -56,7 +56,6 @@ entry:
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
-; linux/optimized/ethtool.ll
 ; openjdk/optimized/hb-buffer.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
@@ -68,7 +67,6 @@ entry:
 ; redis/optimized/large.sym.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
-; stockfish/optimized/search.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
@@ -79,13 +77,26 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 2 occurrences:
+; linux/optimized/ethtool.ll
+; stockfish/optimized/search.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %1, 7
+  %4 = and i1 %2, %3
+  %5 = select i1 %4, i32 %0, i32 %1
+  ret i32 %5
+}
+
+; 12 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/31i6j0ayu6bevt9n.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; lief/optimized/dhm.c.ll
 ; lief/optimized/rsa.c.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; nuttx/optimized/fs_poll.c.ll
 ; postgres/optimized/detoast.ll
 ; postgres/optimized/strftime.ll
@@ -95,7 +106,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, -128
-  %4 = and i1 %3, %2
+  %4 = and i1 %2, %3
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }
@@ -113,15 +124,25 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; slurm/optimized/sbatch.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %1, 32
+  %4 = and i1 %3, %2
+  %5 = select i1 %4, i32 %0, i32 %1
+  ret i32 %5
+}
+
+; 2 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
-; slurm/optimized/sbatch.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = icmp slt i32 %1, 32
-  %4 = and i1 %3, %2
+  %3 = icmp slt i32 %1, 0
+  %4 = and i1 %2, %3
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }

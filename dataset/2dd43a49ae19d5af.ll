@@ -72,7 +72,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = add nsw i32 %4, 1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

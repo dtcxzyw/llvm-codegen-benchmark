@@ -14,18 +14,19 @@
 ; linux/optimized/filter.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hosts.ll
-; linux/optimized/i8237.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/processor_idle.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
 ; linux/optimized/tcp_output.ll
+; linux/optimized/tg3.ll
 ; linux/optimized/xfrm_input.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; openjdk/optimized/Ushort555Rgb.ll
@@ -39,7 +40,6 @@
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/ruby.ll
 ; wireshark/optimized/camins.c.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/eyesdn.c.ll
 ; wireshark/optimized/packet-hartip.c.ll
 ; wireshark/optimized/packet-ipmi-se.c.ll
@@ -53,7 +53,7 @@ entry:
   ret i16 %2
 }
 
-; 891 occurrences:
+; 894 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
@@ -121,6 +121,7 @@ entry:
 ; libevent/optimized/epoll.c.ll
 ; libpng/optimized/png.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -202,7 +203,6 @@ entry:
 ; linux/optimized/dvo_ivch.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/hcd.ll
 ; linux/optimized/hda_intel.ll
@@ -218,9 +218,7 @@ entry:
 ; linux/optimized/intel_dram.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/nfnetlink_log.ll
@@ -238,7 +236,6 @@ entry:
 ; linux/optimized/tcp_metrics.ll
 ; linux/optimized/tcp_minisocks.ll
 ; linux/optimized/uhci-hcd.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/vgacon.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; linux/optimized/vmscan.ll
@@ -554,7 +551,6 @@ entry:
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -706,6 +702,13 @@ entry:
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_spinbox.ll
+; lvgl/optimized/lv_switch.ll
 ; memcached/optimized/memcached-assoc.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached-items.ll
@@ -965,7 +968,7 @@ entry:
   ret i16 %2
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; coreutils-rs/optimized/17ojgxcnujh4nt6.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
@@ -976,6 +979,7 @@ entry:
 ; linux/optimized/drm_edid.ll
 ; llvm/optimized/DWARFAbbreviationDeclaration.cpp.ll
 ; llvm/optimized/SMTConstraintManager.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openjdk/optimized/Ushort555Rgb.ll
 ; openjdk/optimized/png.ll
 ; ripgrep-rs/optimized/17szqs4crgj36yow.ll

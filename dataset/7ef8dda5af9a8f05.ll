@@ -1,10 +1,12 @@
 
-; 27 occurrences:
+; 29 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/decode.c.ll
 ; cpython/optimized/_operator.ll
 ; eastl/optimized/EAMemory.cpp.ll
@@ -41,7 +43,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %1, %2
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 

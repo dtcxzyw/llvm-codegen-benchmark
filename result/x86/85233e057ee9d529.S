@@ -51,11 +51,7 @@ func0000000000000031:                   # @func0000000000000031
 	subq	%rsi, %rax
 	sarq	$4, %rax
 	retq
-func000000000000003b:                   # @func000000000000003b
-	movq	%rdi, %rax
-	subq	%rsi, %rax
-	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	subq	%rsi, %rdi
 	leaq	(,%rdi,4), %rax
 	sarq	$2, %rax

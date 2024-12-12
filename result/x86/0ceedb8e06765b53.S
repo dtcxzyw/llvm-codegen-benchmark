@@ -3,12 +3,12 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%esi, %edi
 	seta	%al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	addl	%edx, %esi
 	cmpl	%esi, %edi
 	setge	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	%edx, %esi
 	cmpl	%esi, %edi
 	sete	%al
@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	%edx, %esi
 	cmpl	%esi, %edi
 	setg	%al

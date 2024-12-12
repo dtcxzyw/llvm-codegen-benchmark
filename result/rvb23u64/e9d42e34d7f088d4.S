@@ -52,14 +52,14 @@ func0000000000000008:                   # @func0000000000000008
 	bnez	a0, .LBB5_2
 	fli.d	fa1, -1.0
 .LBB5_2:                                # %entry
-	feq.d	a0, fa1, fa0
+	feq.d	a0, fa0, fa1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a0, a0, 1
 	bnez	a0, .LBB6_2
 	fmv.d.x	fa1, zero
 .LBB6_2:                                # %entry
-	feq.d	a0, fa1, fa0
+	feq.d	a0, fa0, fa1
 	xori	a0, a0, 1
 	ret
 func000000000000000d:                   # @func000000000000000d

@@ -4,7 +4,7 @@
 ; libquic/optimized/pkcs8.c.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 2
@@ -24,7 +24,7 @@ entry:
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 1

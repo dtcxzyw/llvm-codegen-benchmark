@@ -19,12 +19,12 @@ entry:
 ; redis/optimized/hyperloglog.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000037(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -41,24 +41,24 @@ entry:
 ; openusd/optimized/lz4.cpp.ll
 ; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = lshr i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; ocio/optimized/FileFormatSpi3D.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 

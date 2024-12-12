@@ -1,9 +1,10 @@
 func0000000000000009:                   # @func0000000000000009
-	leal	7(%rdi), %eax
-	addl	$14, %edi
+	leal	255(%rdi), %eax
+	addl	$510, %edi                      # imm = 0x1FE
 	testl	%eax, %eax
 	cmovnsl	%eax, %edi
-	sarl	$3, %edi
+	sarl	$8, %edi
+	shll	$2, %edi
 	leal	(%rdi,%rdi,2), %eax
 	cltq
 	retq

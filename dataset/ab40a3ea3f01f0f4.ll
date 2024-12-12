@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/symbol.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c44(i32 %0, i64 %1) #0 {
+define i1 @func0000000000003084(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add i32 %2, -58
@@ -12,13 +12,15 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/pbc.cpp.ll
 ; linux/optimized/filter.ll
 ; llvm/optimized/IRMover.cpp.ll
+; lvgl/optimized/lv_grid.ll
+; openspiel/optimized/tarok.cc.ll
 ; openssl/optimized/quic_ackm_test-bin-quic_ackm_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -3
@@ -28,15 +30,13 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; git/optimized/date.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; php/optimized/html.ll
-; qemu/optimized/block_blklogwrites.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_display_ati.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 624
@@ -59,11 +59,26 @@ entry:
 }
 
 ; 3 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; qemu/optimized/block_blklogwrites.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000284(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, -32
+  %4 = icmp ult i32 %3, 16777184
+  %5 = icmp samesign ult i32 %0, 2
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
 ; php/optimized/html.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -160
@@ -76,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/collect.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 18
@@ -88,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/collect.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 18
@@ -100,7 +115,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000d44(i32 %0, i64 %1) #0 {
+define i1 @func0000000000003484(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -1
@@ -113,12 +128,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000844(i32 %0, i64 %1) #0 {
+define i1 @func0000000000002284(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -8
   %4 = icmp ult i32 %3, 57
-  %5 = icmp ult i32 %0, 2
+  %5 = icmp samesign ult i32 %0, 2
   %6 = and i1 %4, %5
   ret i1 %6
 }
@@ -126,12 +141,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000d84(i32 %0, i64 %1) #0 {
+define i1 @func0000000000003704(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = icmp ult i32 %3, 63
-  %5 = icmp ugt i32 %0, 52
+  %5 = icmp samesign ugt i32 %0, 52
   %6 = and i1 %4, %5
   ret i1 %6
 }
@@ -141,7 +156,7 @@ entry:
 ; wireshark/optimized/packet-tcp.c.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
@@ -154,7 +169,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/OffloadBundler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -3
@@ -164,12 +179,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/IRMover.cpp.ll
-; openspiel/optimized/tarok.cc.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -7

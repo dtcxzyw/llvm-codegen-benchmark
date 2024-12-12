@@ -1,65 +1,33 @@
-func000000000000056c:                   // @func000000000000056c
+func00000000000014cc:                   // @func00000000000014cc
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	add	v5.4s, v5.4s, v6.4s
-	add	v4.4s, v4.4s, v6.4s
-	cmeq	v3.4s, v3.4s, v6.4s
-	cmeq	v2.4s, v2.4s, v6.4s
-	cmgt	v1.4s, v1.4s, v5.4s
-	cmgt	v0.4s, v0.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	bic	v0.16b, v0.16b, v1.16b
-	xtn	v0.8b, v0.8h
+	add	w8, w2, #1
+	cmp	w1, #1
+	ccmp	w8, w0, #0, ne
+	cset	w0, lt
 	ret
                                         // -- End function
-func000000000000004c:                   // @func000000000000004c
+func000000000000008c:                   // @func000000000000008c
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	add	v5.4s, v5.4s, v6.4s
-	add	v4.4s, v4.4s, v6.4s
-	cmeq	v3.4s, v3.4s, v6.4s
-	cmeq	v2.4s, v2.4s, v6.4s
-	cmhi	v1.4s, v1.4s, v5.4s
-	cmhi	v0.4s, v0.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	bic	v0.16b, v0.16b, v1.16b
-	xtn	v0.8b, v0.8h
+	add	w8, w2, #1
+	cmp	w1, #1
+	ccmp	w8, w0, #2, ne
+	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000046c:                   // @func000000000000046c
+func00000000000010cc:                   // @func00000000000010cc
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	add	v5.4s, v5.4s, v6.4s
-	add	v4.4s, v4.4s, v6.4s
-	cmeq	v3.4s, v3.4s, v6.4s
-	cmeq	v2.4s, v2.4s, v6.4s
-	cmgt	v1.4s, v1.4s, v5.4s
-	cmgt	v0.4s, v0.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	bic	v0.16b, v0.16b, v1.16b
-	xtn	v0.8b, v0.8h
+	add	w8, w2, #1
+	cmp	w1, #1
+	ccmp	w8, w0, #0, ne
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000564:                   // @func0000000000000564
+func00000000000014c4:                   // @func00000000000014c4
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	mov	w8, #-925                       // =0xfffffc63
-	movi	v16.4s, #3
-	dup	v7.4s, w8
-	add	v5.4s, v5.4s, v6.4s
-	add	v4.4s, v4.4s, v6.4s
-	add	v2.4s, v2.4s, v7.4s
-	add	v3.4s, v3.4s, v7.4s
-	cmgt	v1.4s, v1.4s, v5.4s
-	cmgt	v0.4s, v0.4s, v4.4s
-	cmhi	v2.4s, v16.4s, v2.4s
-	cmhi	v3.4s, v16.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	and	v0.16b, v1.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	sub	w8, w1, #925
+	add	w9, w2, #1
+	cmp	w8, #3
+	ccmp	w9, w0, #0, lo
+	cset	w0, lt
 	ret
                                         // -- End function

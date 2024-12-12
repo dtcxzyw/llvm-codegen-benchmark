@@ -1,5 +1,5 @@
 
-; 152 occurrences:
+; 153 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
@@ -11,6 +11,7 @@
 ; abseil-cpp/optimized/bind.cc.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
+; boost/optimized/alloc_lib.ll
 ; c3c/optimized/diagnostics.c.ll
 ; cpython/optimized/gcmodule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -19,11 +20,7 @@
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; folly/optimized/CPUThreadPoolExecutor.cpp.ll
-; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/ManualExecutor.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
-; folly/optimized/ThreadPoolExecutor.cpp.ll
 ; git/optimized/sequencer.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; jemalloc/optimized/emap.ll
@@ -34,7 +31,6 @@
 ; jemalloc/optimized/extent.sym.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/io_apic.ll
-; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/iommu.ll
 ; linux/optimized/p4.ll
 ; linux/optimized/page.ll
@@ -43,6 +39,7 @@
 ; linux/optimized/pgtable.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/rmap.ll
+; linux/optimized/set_memory.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -113,6 +110,8 @@
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -152,17 +151,20 @@
 ; wireshark/optimized/erf.c.ll
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -983041
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = or disjoint i64 %3, 524288
   ret i64 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/ifDelay.c.ll
+; boost/optimized/alloc_lib.ll
 ; cmake/optimized/archive_rb.c.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; linux/optimized/scsi_scan.ll
@@ -190,7 +192,7 @@ entry:
   ret i64 %4
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; jemalloc/optimized/emap.ll
 ; jemalloc/optimized/emap.pic.ll
 ; jemalloc/optimized/emap.sym.ll
@@ -230,28 +232,26 @@ entry:
 ; redis/optimized/extent.sym.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -32
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or disjoint i64 %3, 8
   ret i64 %4
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
+; boost/optimized/alloc_lib.ll
 ; freetype/optimized/truetype.c.ll
 ; linux/optimized/apic.ll
 ; linux/optimized/cpu_entry_area.ll
 ; linux/optimized/ds.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/memory.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; linux/optimized/open.ll
 ; linux/optimized/page.ll
 ; linux/optimized/pcmcia_resource.ll
@@ -287,7 +287,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4294967296
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or i64 %3, 2
   ret i64 %4
 }

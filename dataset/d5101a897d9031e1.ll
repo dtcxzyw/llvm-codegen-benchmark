@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 45 occurrences:
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
@@ -37,15 +37,14 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
-; postgres/optimized/ginentrypage.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
 ; redis/optimized/extent_dss.ll
 ; redis/optimized/extent_dss.sym.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f32_classify.ll
 ; spike/optimized/processor.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i1 %1) #0 {
 entry:

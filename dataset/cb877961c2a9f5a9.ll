@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; openssl/optimized/libssl-lib-extensions.ll
-; openssl/optimized/libssl-shlib-extensions.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
-entry:
-  %2 = sdiv exact i64 %1, 40
-  %3 = and i64 %2, 4294967295
-  %4 = icmp ult i64 %3, 29
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; Function Attrs: nounwind
@@ -28,7 +15,7 @@ entry:
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = and i64 %2, 4294967295
@@ -42,12 +29,12 @@ entry:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

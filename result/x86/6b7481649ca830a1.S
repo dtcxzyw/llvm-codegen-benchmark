@@ -19,9 +19,8 @@ func0000000000000005:                   # @func0000000000000005
 	leal	(%rdi,%rsi,2), %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leal	(%rdi,%rsi), %eax
-	shll	$4, %esi
-	addl	%esi, %eax
+	addl	%esi, %edi
+	leal	(%rdi,%rsi,2), %eax
 	retq
 func0000000000000011:                   # @func0000000000000011
 	addl	%edi, %esi

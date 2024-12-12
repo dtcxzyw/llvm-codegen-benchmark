@@ -1,5 +1,6 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -16,6 +17,7 @@
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i64 %0) #0 {
 entry:

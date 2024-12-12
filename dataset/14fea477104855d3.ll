@@ -13,7 +13,7 @@
 define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %1, 3
   %5 = sub nsw i32 %3, %4
   %6 = zext i32 %5 to i64
@@ -26,7 +26,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = lshr i32 %1, 1
   %5 = sub i32 %3, %4
   %6 = zext i32 %5 to i64

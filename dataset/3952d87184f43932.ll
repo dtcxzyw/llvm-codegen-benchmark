@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; icu/optimized/ucurr.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; quickjs/optimized/quickjs.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
 entry:

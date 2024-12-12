@@ -4,7 +4,7 @@
 ; linux/optimized/ahci.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000331(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000661(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -27,7 +27,7 @@ entry:
 ; faiss/optimized/ProductQuantizer.cpp.ll
 ; yosys/optimized/test_abcloop.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003e1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000007c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaHash.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -57,7 +57,7 @@ entry:
 ; yosys/optimized/anlogic_eqn.ll
 ; yosys/optimized/blifparse.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000007e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000321(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000641(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/freduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -98,7 +98,7 @@ entry:
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000541(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw i32 1, %2

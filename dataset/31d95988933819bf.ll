@@ -8,7 +8,7 @@
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %.neg = add i32 %3, %2
+  %.neg = add i32 %2, %3
   %.neg1 = sub i32 %.neg, %0
   ret i32 %.neg1
 }

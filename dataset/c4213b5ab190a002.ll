@@ -5,7 +5,7 @@
 ; minetest/optimized/content_mapblock.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000056(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000057(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24

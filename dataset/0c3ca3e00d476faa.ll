@@ -4,7 +4,7 @@
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; spike/optimized/aes64im.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0) #0 {
+define i32 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2251799813685248
   %2 = icmp eq i64 %1, 0
@@ -17,7 +17,7 @@ entry:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0) #0 {
+define i32 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2305843009213693952
   %2 = icmp eq i64 %1, 0

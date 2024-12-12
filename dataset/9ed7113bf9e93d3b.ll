@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 98 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; assimp/optimized/zip.c.ll
@@ -9,7 +9,6 @@
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; gromacs/optimized/huffmem.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5Ofill.c.ll
@@ -88,6 +87,11 @@
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -152,7 +156,7 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -161,12 +165,18 @@ entry:
 ; hermes/optimized/HiddenClass.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SymbolCache.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; postgres/optimized/ginget.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/055l6m6wb4e4jq2j59cjsdkaz.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38pyrye3lmvdaenlt6t0na0m3.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i16 %1) #0 {
 entry:

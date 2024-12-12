@@ -22,6 +22,22 @@ func0000000000000006:                   // @func0000000000000006
 	cset	w0, lt
 	ret
                                         // -- End function
+func0000000000000086:                   // @func0000000000000086
+// %bb.0:                               // %entry
+	sub	x8, x1, x2
+                                        // kill: def $w0 killed $w0 def $x0
+	cmp	x8, w0, uxth
+	cset	w0, lt
+	ret
+                                        // -- End function
+func0000000000000084:                   // @func0000000000000084
+// %bb.0:                               // %entry
+	sub	x8, x1, x2
+                                        // kill: def $w0 killed $w0 def $x0
+	cmp	x8, w0, uxth
+	cset	w0, lo
+	ret
+                                        // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	sub	x8, x1, x2

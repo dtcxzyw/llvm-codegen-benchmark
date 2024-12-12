@@ -73,3 +73,9 @@ func000000000000000e:                   # @func000000000000000e
 	sub	a0, a0, a1
 	addi	a0, a0, 1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	orn	a1, a1, a2
+	add	a0, a0, a1
+	ret

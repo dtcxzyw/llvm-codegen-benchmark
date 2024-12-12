@@ -3,7 +3,7 @@
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_levels.c.ll
-; darktable/optimized/introspection_rgblevels.c.ll
+; darktable/optimized/introspection_primaries.c.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll

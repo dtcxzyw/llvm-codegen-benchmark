@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; linux/optimized/hda_codec.ll
+; 1 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i16 %2) #0 {

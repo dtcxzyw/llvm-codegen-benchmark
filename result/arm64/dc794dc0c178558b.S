@@ -1,57 +1,24 @@
+.LCPI0_0:
+	.xword	0x3fe999999999999a              // double 0.80000000000000004
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sshll2	v4.2d, v3.4s, #0
-	sshll	v3.2d, v3.2s, #0
-	mov	x8, #-7378697629483820647       // =0x9999999999999999
-	sshll2	v5.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	movk	x8, #39322
-	movk	x8, #16361, lsl #48
-	scvtf	v4.2d, v4.2d
-	scvtf	v3.2d, v3.2d
-	dup	v6.2d, x8
-	scvtf	v5.2d, v5.2d
-	scvtf	v2.2d, v2.2d
-	fmul	v4.2d, v4.2d, v6.2d
-	fmul	v3.2d, v3.2d, v6.2d
-	fmul	v2.2d, v2.2d, v6.2d
-	fmul	v5.2d, v5.2d, v6.2d
-	fcvtzs	v4.2d, v4.2d
-	fcvtzs	v3.2d, v3.2d
-	fcvtzs	v5.2d, v5.2d
-	fcvtzs	v2.2d, v2.2d
-	uzp1	v3.4s, v3.4s, v4.4s
-	uzp1	v2.4s, v2.4s, v5.4s
-	sub	v1.4s, v3.4s, v1.4s
-	sub	v0.4s, v2.4s, v0.4s
+	scvtf	d0, w1
+	adrp	x8, .LCPI0_0
+	ldr	d1, [x8, :lo12:.LCPI0_0]
+	fmul	d0, d0, d1
+	fcvtzs	w8, d0
+	sub	w0, w8, w0
 	ret
                                         // -- End function
+.LCPI1_0:
+	.xword	0x40234413509f79ff              // double 9.6329598612473983
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sshll2	v4.2d, v3.4s, #0
-	sshll	v3.2d, v3.2s, #0
-	mov	x8, #31231                      // =0x79ff
-	sshll2	v5.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	movk	x8, #20639, lsl #16
-	movk	x8, #17427, lsl #32
-	movk	x8, #16419, lsl #48
-	scvtf	v4.2d, v4.2d
-	scvtf	v3.2d, v3.2d
-	scvtf	v5.2d, v5.2d
-	scvtf	v2.2d, v2.2d
-	dup	v6.2d, x8
-	fmul	v4.2d, v4.2d, v6.2d
-	fmul	v3.2d, v3.2d, v6.2d
-	fmul	v2.2d, v2.2d, v6.2d
-	fmul	v5.2d, v5.2d, v6.2d
-	fcvtzs	v4.2d, v4.2d
-	fcvtzs	v3.2d, v3.2d
-	fcvtzs	v5.2d, v5.2d
-	fcvtzs	v2.2d, v2.2d
-	uzp1	v3.4s, v3.4s, v4.4s
-	uzp1	v2.4s, v2.4s, v5.4s
-	sub	v1.4s, v3.4s, v1.4s
-	sub	v0.4s, v2.4s, v0.4s
+	scvtf	d0, w1
+	adrp	x8, .LCPI1_0
+	ldr	d1, [x8, :lo12:.LCPI1_0]
+	fmul	d0, d0, d1
+	fcvtzs	w8, d0
+	sub	w0, w8, w0
 	ret
                                         // -- End function

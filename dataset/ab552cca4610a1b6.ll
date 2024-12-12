@@ -1,9 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; grpc/optimized/fault_injection_filter.cc.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; openjdk/optimized/ciMethod.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {

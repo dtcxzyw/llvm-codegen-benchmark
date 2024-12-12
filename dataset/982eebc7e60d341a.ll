@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; libquic/optimized/prtime.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000581(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000501(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ult i32 %1, 4096

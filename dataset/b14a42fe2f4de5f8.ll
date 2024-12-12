@@ -1,12 +1,11 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_monochrome.c.ll
-; darktable/optimized/introspection_vibrance.c.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll

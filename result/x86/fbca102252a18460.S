@@ -1,19 +1,19 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movq	$-16, %rax
 	subq	%rdx, %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	movabsq	$1152921504606846975, %rax      # imm = 0xFFFFFFFFFFFFFFF
-	cmovaq	%rdi, %rax
+	cmovbq	%rdi, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	negq	%rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	movq	$-1, %rax
-	cmovaq	%rdi, %rax
+	cmovbq	%rdi, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	negq	%rdx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rdx
-	cmovgq	%rdi, %rax
+	cmpq	%rdx, %rsi
+	cmovlq	%rdi, %rax
 	retq

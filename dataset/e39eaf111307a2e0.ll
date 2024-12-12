@@ -4,10 +4,10 @@
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ult i32 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -18,7 +18,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 536870911
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -48,7 +48,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1048575
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }

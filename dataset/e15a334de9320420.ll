@@ -29,10 +29,9 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
-; opencv/optimized/tf_importer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:

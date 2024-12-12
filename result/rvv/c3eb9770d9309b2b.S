@@ -62,7 +62,7 @@ func000000000000003a:                   # @func000000000000003a
 	li	a0, 56
 	vsll.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func000000000000000c:                   # @func000000000000000c
 	li	a0, 42
@@ -98,6 +98,15 @@ func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 16
 	vsll.vi	v10, v10, 8
+	vor.vv	v10, v10, v12
+	vor.vv	v8, v10, v8
+	ret
+func0000000000000020:                   # @func0000000000000020
+	li	a0, 63
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vx	v12, v12, a0
+	li	a0, 52
+	vsll.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	ret

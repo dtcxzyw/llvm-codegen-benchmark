@@ -1,9 +1,11 @@
 
-; 24 occurrences:
+; 26 occurrences:
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; luajit/optimized/lib_base.ll
 ; luajit/optimized/lib_base_dyn.ll

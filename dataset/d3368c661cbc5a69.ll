@@ -1,14 +1,13 @@
 
-; 142 occurrences:
-; abc/optimized/fraSim.c.ll
-; abc/optimized/sswSim.c.ll
+%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
+
+; 138 occurrences:
+; boost/optimized/numeric.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
@@ -136,19 +135,18 @@
 ; mold/optimized/input-files.cc.SH4.cc.ll
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
-; nuttx/optimized/mm_free.c.ll
-; openspiel/optimized/bridge.cc.ll
 ; openusd/optimized/lz4.cpp.ll
-; stockfish/optimized/tbprobe.ll
 ; yosys/optimized/fstapi.ll
 ; yosys/optimized/lz4.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000003f(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 12
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 12
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   %5 = and i64 %1, 8589934584
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -188,35 +186,108 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; abc/optimized/fraSim.c.ll
+; abc/optimized/sswSim.c.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; openspiel/optimized/bridge.cc.ll
+; stockfish/optimized/tbprobe.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 48
+  %4 = getelementptr nusw i32, ptr %3, i64 %0
+  %5 = and i64 %1, 134217727
+  %6 = getelementptr nusw nuw i32, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
 ; cpython/optimized/ceval.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; postgres/optimized/integerset.ll
-; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000030(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 39
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 39
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = and i64 %1, 31
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 6 occurrences:
-; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = and i64 %1, 15
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003c(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
+  %4 = getelementptr nusw nuw i16, ptr %3, i64 %0
+  %5 = and i64 %1, 504
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -24
+  %4 = getelementptr nusw %"class.llvm::Use.3181463", ptr %3, i64 %0
+  %5 = and i64 %1, -128
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; nuttx/optimized/mm_free.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = and i64 %1, -4
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
-  %4 = getelementptr nusw i16, ptr %3, i64 %0
-  %5 = and i64 %1, 504
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = and i64 %1, -32
   %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 64
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = and i64 %1, -64
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -1,9 +1,8 @@
 
-%struct.cvEMDEdge.3588744 = type { float, i32, ptr, ptr, ptr }
+%struct.cvEMDEdge.3769351 = type { float, i32, ptr, ptr, ptr }
 
-; 204 occurrences:
+; 202 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
-; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -21,7 +20,6 @@
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
@@ -226,7 +224,7 @@ entry:
   %4 = sext i32 %2 to i64
   %5 = sub nuw nsw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr %struct.cvEMDEdge.3588744, ptr %6, i64 %5
+  %7 = getelementptr %struct.cvEMDEdge.3769351, ptr %6, i64 %5
   ret ptr %7
 }
 

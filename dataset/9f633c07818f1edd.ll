@@ -24,7 +24,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i8 %1, i8 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = icmp ult i8 %1, 26
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/iov_iter.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1, i8 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = icmp eq i8 %1, 0

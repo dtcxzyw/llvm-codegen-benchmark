@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; cxxopts/optimized/example.cpp.ll
 ; darktable/optimized/Camera.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
@@ -36,7 +36,6 @@
 ; nix/optimized/gc.ll
 ; nix/optimized/git-utils.ll
 ; nix/optimized/hilite.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/search.ll
 ; ocio/optimized/CTFReaderHelper.cpp.ll
@@ -46,7 +45,7 @@
 ; vcpkg/optimized/tools.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
@@ -66,7 +65,7 @@ entry:
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; rocksdb/optimized/ldb_cmd.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
@@ -86,7 +85,7 @@ entry:
 ; hdf5/optimized/H5Opline.c.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000110(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
@@ -146,12 +145,25 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000102(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
   %5 = icmp ult i64 %4, 9
   %6 = icmp eq ptr %0, %1
+  %7 = or i1 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000190(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %2, %3
+  %5 = icmp slt i64 %4, 18
+  %6 = icmp ugt ptr %0, %1
   %7 = or i1 %6, %5
   ret i1 %7
 }
@@ -165,7 +177,7 @@ entry:
 ; hdf5/optimized/H5Olink.c.ll
 ; hdf5/optimized/H5Oshmesg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000050(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
@@ -179,7 +191,7 @@ entry:
 ; lodepng/optimized/lodepng.cpp.ll
 ; node/optimized/libnode.node_large_page.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000092(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000112(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
@@ -192,7 +204,7 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d2(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000192(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
@@ -208,7 +220,7 @@ entry:
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; opencv/optimized/face_alignment.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000202(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3

@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 77 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -75,6 +75,8 @@
 ; tinympc/optimized/tiny_api.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

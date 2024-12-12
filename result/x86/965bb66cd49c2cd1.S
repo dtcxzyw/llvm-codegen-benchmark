@@ -31,6 +31,6 @@ func0000000000000012:                   # @func0000000000000012
 	leal	(%rsi,%rdi), %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	andl	$63, %esi
+	andl	$1073741823, %esi               # imm = 0x3FFFFFFF
 	leal	(%rsi,%rdi), %eax
 	retq

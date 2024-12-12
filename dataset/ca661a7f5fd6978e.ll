@@ -5,7 +5,7 @@
 ; libuv/optimized/inet.c.ll
 ; node/optimized/inet.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000048a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000110a(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
   %3 = add i64 %1, 46
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/mem.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004aa(i32 %0, i64 %1) #0 {
+define i1 @func000000000000114a(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
   %3 = add i64 %1, 1

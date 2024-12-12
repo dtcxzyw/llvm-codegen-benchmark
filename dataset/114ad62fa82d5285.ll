@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {

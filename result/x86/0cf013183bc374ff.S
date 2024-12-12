@@ -4,13 +4,13 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$10, %eax
 	sbbl	$0, %eax
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	shrxq	%rsi, %rdi, %rax
 	cmpl	$100000000, %eax                # imm = 0x5F5E100
 	movl	$9, %eax
 	sbbl	$0, %eax
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000118:                   # @func0000000000000118
 	shrxq	%rsi, %rdi, %rax
 	xorl	%ecx, %ecx
 	cmpl	$10, %eax

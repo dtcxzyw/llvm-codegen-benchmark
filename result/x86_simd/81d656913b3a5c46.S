@@ -15,7 +15,7 @@
 	.short	31744                           # 0x7c00
 	.short	31744                           # 0x7c00
 	.short	31744                           # 0x7c00
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vptestmw	.LCPI0_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -37,7 +37,7 @@ func0000000000000038:                   # @func0000000000000038
 	.short	32767                           # 0x7fff
 	.short	32767                           # 0x7fff
 	.short	32767                           # 0x7fff
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vptestnmw	.LCPI1_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -61,7 +61,7 @@ func0000000000000031:                   # @func0000000000000031
 	.short	31744                           # 0x7c00
 .LCPI2_1:
 	.short	31744                           # 0x7c00
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpbroadcastw	.LCPI2_1(%rip), %ymm1   # ymm1 = [31744,31744,31744,31744,31744,31744,31744,31744,31744,31744,31744,31744,31744,31744,31744,31744]
 	vpand	%ymm1, %ymm0, %ymm0
 	vpcmpneqw	%ymm1, %ymm0, %k0
@@ -85,7 +85,7 @@ func0000000000000034:                   # @func0000000000000034
 	.short	1023                            # 0x3ff
 	.short	1023                            # 0x3ff
 	.short	1023                            # 0x3ff
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	vptestmw	.LCPI3_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

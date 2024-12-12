@@ -1,6 +1,8 @@
 
-; 87 occurrences:
+; 89 occurrences:
 ; assimp/optimized/XFileImporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll

@@ -1,5 +1,5 @@
 
-; 717 occurrences:
+; 720 occurrences:
 ; abc/optimized/cuddAnneal.c.ll
 ; abc/optimized/ioWriteBook.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -14,6 +14,13 @@
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/cs_updown.c.ll
@@ -141,9 +148,7 @@
 ; gromacs/optimized/dlae2.cpp.ll
 ; gromacs/optimized/dlaev2.cpp.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
-; gromacs/optimized/dlarrfx.cpp.ll
 ; gromacs/optimized/dlas2.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/dlasq3.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
@@ -214,7 +219,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
@@ -279,7 +283,6 @@
 ; openblas/optimized/dlasd3.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; openblas/optimized/dlasv2.c.ll
 ; openblas/optimized/dlasyf.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
@@ -291,7 +294,6 @@
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
 ; opencv/optimized/ap3p.cpp.ll
 ; opencv/optimized/benchmark.cpp.ll
@@ -699,6 +701,7 @@
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; tokio-rs/optimized/um69cc05lgsv45r.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/QueryConfig.cpp.ll
@@ -721,7 +724,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

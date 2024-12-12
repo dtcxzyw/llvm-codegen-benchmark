@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/bdcCore.c.ll
 ; hermes/optimized/SimpleBytecodeBuilder.cpp.ll
 ; lief/optimized/BuildVersion.cpp.ll
@@ -23,6 +23,7 @@
 ; mold/optimized/gdb-index.cc.SH4.cc.ll
 ; mold/optimized/gdb-index.cc.SPARC64.cc.ll
 ; mold/optimized/gdb-index.cc.X86_64.cc.ll
+; opencv/optimized/simple_color_balance.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000040(i64 %0) #0 {
 entry:

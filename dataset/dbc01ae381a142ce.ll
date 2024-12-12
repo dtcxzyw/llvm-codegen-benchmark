@@ -8,34 +8,25 @@
 define i1 @func000000000000000c(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 12 occurrences:
+; 3 occurrences:
 ; folly/optimized/AsyncSSLSocket.cpp.ll
-; freetype/optimized/sfnt.c.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; openjdk/optimized/symtab.ll
-; slurm/optimized/gres_select_filter.ll
-; slurm/optimized/job_state.ll
-; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-dof.c.ll
-; wireshark/optimized/packet-irda.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 49 occurrences:
+; 33 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -43,27 +34,10 @@ entry:
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
 ; html5ever-rs/optimized/427f68nqtcfpg289.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; influxdb-rs/optimized/4xdswox27ronf9w0.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; mini-lsm-rs/optimized/1m9jerzd56wr2irm.ll
-; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
-; ockam-rs/optimized/1kl4v6vvko2mygns.ll
-; ockam-rs/optimized/27nutj9k22uohtyi.ll
-; ockam-rs/optimized/2r89va29k151cr5y.ll
-; ockam-rs/optimized/2ugp26prskc4lvz4.ll
-; ockam-rs/optimized/2wtjkff0coegvdww.ll
-; ockam-rs/optimized/38s5hbhbeh1uyvuz.ll
-; ockam-rs/optimized/4muscr8i25faa6zl.ll
-; ockam-rs/optimized/4mw292rh9wiw0hhj.ll
-; ockam-rs/optimized/4vgir7i3jcnfee5s.ll
-; ockam-rs/optimized/51t9q4mnxr7eznlm.ll
-; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
-; ockam-rs/optimized/aq9jti6tz0dykb7.ll
-; ockam-rs/optimized/i22eb1mfvlgesy1.ll
-; ockam-rs/optimized/luz5e0okyn0ri51.ll
-; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; qdrant-rs/optimized/2v88rld7ajfr8cux.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; rust-analyzer-rs/optimized/2rdswb8f6bh7ph2o.ll
@@ -85,11 +59,12 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000015(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp samesign ule i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -152,7 +127,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -160,10 +135,10 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i1 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000025(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp ule i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -230,7 +205,28 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 11 occurrences:
+; freetype/optimized/sfnt.c.ll
+; libpng/optimized/pngread.c.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; openjdk/optimized/pngread.ll
+; openjdk/optimized/symtab.ll
+; slurm/optimized/gres_select_filter.ll
+; slurm/optimized/job_state.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-dof.c.ll
+; wireshark/optimized/packet-irda.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -238,10 +234,10 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -251,10 +247,37 @@ entry:
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 17 occurrences:
+; influxdb-rs/optimized/4xdswox27ronf9w0.ll
+; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
+; ockam-rs/optimized/1kl4v6vvko2mygns.ll
+; ockam-rs/optimized/27nutj9k22uohtyi.ll
+; ockam-rs/optimized/2r89va29k151cr5y.ll
+; ockam-rs/optimized/2ugp26prskc4lvz4.ll
+; ockam-rs/optimized/2wtjkff0coegvdww.ll
+; ockam-rs/optimized/38s5hbhbeh1uyvuz.ll
+; ockam-rs/optimized/4muscr8i25faa6zl.ll
+; ockam-rs/optimized/4mw292rh9wiw0hhj.ll
+; ockam-rs/optimized/4vgir7i3jcnfee5s.ll
+; ockam-rs/optimized/51t9q4mnxr7eznlm.ll
+; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
+; ockam-rs/optimized/aq9jti6tz0dykb7.ll
+; ockam-rs/optimized/i22eb1mfvlgesy1.ll
+; ockam-rs/optimized/luz5e0okyn0ri51.ll
+; ockam-rs/optimized/u4cgd14nodyt386.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(i1 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = icmp ule i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

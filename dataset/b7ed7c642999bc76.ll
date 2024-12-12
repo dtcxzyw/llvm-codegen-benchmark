@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; freetype/optimized/pfr.c.ll
-; linux/optimized/nfs3xdr.ll
 ; openusd/optimized/drawModeAdapter.cpp.ll
 ; qemu/optimized/hw_char_cadence_uart.c.ll
 ; qemu/optimized/hw_char_serial.c.ll

@@ -1,6 +1,7 @@
 
-; 45 occurrences:
+; 46 occurrences:
 ; darktable/optimized/introspection_clipping.c.ll
+; gromacs/optimized/coupling.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; mitsuba3/optimized/area.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll

@@ -1,5 +1,6 @@
-func0000000000000011:                   # @func0000000000000011
-	testb	$1, %dl
+func0000000000000021:                   # @func0000000000000021
+	notl	%edx
+	testb	$7, %dl
 	cmovneq	%rsi, %rdi
 	testq	%rdi, %rdi
 	sete	%al

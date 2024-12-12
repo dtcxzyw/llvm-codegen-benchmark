@@ -20,6 +20,6 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000006:                   # @func0000000000000006
 	testl	%esi, %esi
-	setns	%al
+	setg	%al
 	orb	%dil, %al
 	retq

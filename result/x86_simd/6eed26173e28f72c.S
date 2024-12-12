@@ -29,7 +29,7 @@
 func000000000000000a:                   # @func000000000000000a
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm1, %xmm1
 	vpaddb	.LCPI0_1(%rip), %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI1_0:
 	.byte	8                               # 0x8
@@ -62,5 +62,5 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000000:                   # @func0000000000000000
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm1, %xmm1
 	vpaddb	.LCPI1_1(%rip), %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq

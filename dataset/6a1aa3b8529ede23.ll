@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 %2, i64 0
   %4 = add nsw i64 %0, -1
@@ -21,26 +21,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; clamav/optimized/regexec.c.ll
-; cpython/optimized/mpdecimal.ll
-; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; llama.cpp/optimized/ggml.c.ll
-; luau/optimized/main.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
-; nlohmann_json/optimized/unit.cpp.ll
-; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %1, i64 %2, i64 1024
-  %4 = add nuw nsw i64 %0, 1
-  %5 = icmp eq i64 %4, %3
-  ret i1 %5
-}
-
-; 11 occurrences:
+; 12 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
@@ -52,6 +33,7 @@ entry:
 ; minetest/optimized/clientmap.cpp.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; php/optimized/streams.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -61,7 +43,7 @@ entry:
   ret i1 %5
 }
 
-; 43 occurrences:
+; 48 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; clamav/optimized/regex_pcre.c.ll
 ; duckdb/optimized/ub_duckdb_operator_order.cpp.ll
@@ -105,19 +87,53 @@ entry:
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %0, 1
-  %4 = icmp eq i64 %3, %2
+  %4 = icmp eq i64 %2, %3
   %5 = select i1 %1, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; php/optimized/streams.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %0, 8192
+  %4 = icmp ult i64 %2, %3
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 true, i1 %4
+  ret i1 %5
+}
+
+; 7 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; clamav/optimized/regexec.c.ll
+; cpython/optimized/mpdecimal.ll
+; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; llama.cpp/optimized/ggml.c.ll
+; luau/optimized/main.cpp.ll
+; nlohmann_json/optimized/unit.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 %2, i64 2
+  %4 = add nuw nsw i64 %0, 1
+  %5 = icmp eq i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 %2, i64 0
   %4 = add nsw i64 %0, -1
@@ -131,7 +147,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, -2
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp ugt i64 %2, %3
   %5 = select i1 %1, i1 %4, i1 false
   ret i1 %5
 }

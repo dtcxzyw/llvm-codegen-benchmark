@@ -8,17 +8,17 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$1, %eax
 	cmovbl	%esi, %eax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	xorl	%eax, %eax
 	testb	%dil, %dil
 	cmovnsl	%esi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	testb	%dil, %dil
 	cmovnel	%esi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	xorl	%eax, %eax
 	testb	%dil, %dil
 	cmovnel	%esi, %eax

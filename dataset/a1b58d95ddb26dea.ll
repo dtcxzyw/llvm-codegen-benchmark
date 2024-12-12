@@ -1,12 +1,11 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/cbc.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/extents_status.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/intel_fb.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll

@@ -1,7 +1,9 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/log_format.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cmFileAPI.cxx.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -16,7 +18,6 @@
 ; postgres/optimized/strftime.ll
 ; postgres/optimized/zic.ll
 ; protobuf/optimized/unparser.cc.ll
-; qemu/optimized/net_dump.c.ll
 ; ruby/optimized/time.ll
 ; slurm/optimized/parse_time.ll
 ; sqlite/optimized/sqlite3.ll

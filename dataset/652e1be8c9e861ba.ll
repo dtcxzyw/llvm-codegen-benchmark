@@ -34,10 +34,11 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; gromacs/optimized/xtc3.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:

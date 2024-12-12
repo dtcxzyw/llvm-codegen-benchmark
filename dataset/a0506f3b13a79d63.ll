@@ -7,11 +7,12 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = zext i1 %1 to i32
   %5 = add i32 %4, %3
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -187,7 +188,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = add i32 %4, %3
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
@@ -195,36 +196,36 @@ entry:
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecXor.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fa(i32 %0, i64 %1, i1 %2) #0 {
+define i1 @func00000000000001ea(i32 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = trunc nuw nsw i64 %1 to i32
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i32 %0, i64 %1, i1 %2) #0 {
+define i1 @func00000000000001e6(i32 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = trunc nuw nsw i64 %1 to i32
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llama.cpp/optimized/ggml-alloc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 

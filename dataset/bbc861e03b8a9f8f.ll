@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
@@ -23,7 +23,6 @@
 ; llvm/optimized/Metadata.cpp.ll
 ; proxygen/optimized/PersistentQuicPskCache.cpp.ll
 ; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
-; ruby/optimized/bignum.ll
 ; stb/optimized/stb_ds.c.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; velox/optimized/Counters.cpp.ll
@@ -32,9 +31,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 6
+  %2 = mul i64 %1, -7070675565921424023
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

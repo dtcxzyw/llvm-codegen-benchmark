@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_levels.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
@@ -11,7 +11,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll

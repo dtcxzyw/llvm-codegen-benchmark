@@ -1,5 +1,7 @@
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; grpc/optimized/flow_control.cc.ll
 ; opencv/optimized/adaptive_manifold_filter_n.cpp.ll

@@ -12,13 +12,12 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; opencv/optimized/fundamental_solver.cpp.ll
-; openusd/optimized/cdef_block.c.ll
 ; openusd/optimized/level.cpp.ll
 ; postgres/optimized/rangetypes_gist.ll
 ; Function Attrs: nounwind

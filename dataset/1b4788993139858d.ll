@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ea(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = ashr exact i64 %1, 2
@@ -16,7 +16,7 @@ entry:
 ; faiss/optimized/NSG.cpp.ll
 ; openspiel/optimized/kuhn_poker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = ashr exact i64 %1, 4

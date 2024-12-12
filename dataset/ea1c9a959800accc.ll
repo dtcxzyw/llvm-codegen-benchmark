@@ -1,9 +1,10 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i16 %1) #0 {
+define i1 @func000000000000008c(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8192
   %3 = icmp ne i16 %2, 0
@@ -23,7 +24,7 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4
   %3 = icmp eq i16 %2, 0
@@ -37,7 +38,7 @@ entry:
 ; wireshark/optimized/dfilter-macro.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2
   %3 = icmp ne i16 %2, 0

@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	cmpl	$-1, %edx
 	cmovnel	%edx, %esi
 	leaq	(%rsi,%rsi,2), %rax

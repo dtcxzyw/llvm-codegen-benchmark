@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrld	$4, %ymm1, %ymm1
 	vpmovdw	%ymm1, %xmm1
-	vpaddw	%xmm0, %xmm1, %xmm0
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
@@ -21,6 +21,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrld	$4, %ymm1, %ymm1
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpmovdw	%ymm1, %xmm1
-	vpaddw	%xmm0, %xmm1, %xmm0
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

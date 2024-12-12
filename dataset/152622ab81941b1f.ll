@@ -1,5 +1,11 @@
 
-; 219 occurrences:
+; 226 occurrences:
+; boost/optimized/boundary.ll
+; boost/optimized/codepage.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/date_time.ll
+; boost/optimized/formatter.ll
 ; icu/optimized/alphaindex.ll
 ; icu/optimized/anytrans.ll
 ; icu/optimized/brktrans.ll
@@ -213,12 +219,13 @@
 ; minetest/optimized/serverpackethandler.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
-; opencv/optimized/ts_func.cpp.ll
 ; openusd/optimized/faceSurface.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; postgres/optimized/strftime.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i16 %2) #0 {
 entry:

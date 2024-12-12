@@ -22,17 +22,4 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %.neg = shl nsw i32 -1, %2
-  %3 = shl i32 %0, %1
-  %4 = add i32 %.neg, %3
-  ret i32 %4
-}
-
 attributes #0 = { nounwind }

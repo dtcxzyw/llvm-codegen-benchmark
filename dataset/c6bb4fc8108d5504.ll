@@ -148,7 +148,6 @@ entry:
 ; rust-analyzer-rs/optimized/2u22uu4kc5lsbxda.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; spike/optimized/aes64ks1i.ll
-; spike/optimized/bf16_to_f32.ll
 ; spike/optimized/fdt.ll
 ; spike/optimized/fdt_ro.ll
 ; spike/optimized/fdt_rw.ll
@@ -164,6 +163,7 @@ entry:
 ; wireshark/optimized/pppdump.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000ff(i64 %0, i64 %1, i64 %2) #0 {
@@ -176,7 +176,7 @@ entry:
   ret i64 %7
 }
 
-; 50 occurrences:
+; 51 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -227,6 +227,7 @@ entry:
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000bf(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -238,10 +239,11 @@ entry:
   ret i64 %7
 }
 
-; 27 occurrences:
+; 31 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; luau/optimized/IrCallWrapperX64.cpp.ll
@@ -261,11 +263,14 @@ entry:
 ; spike/optimized/sunpkd830.ll
 ; spike/optimized/sunpkd831.ll
 ; spike/optimized/sunpkd832.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wireshark/optimized/packet-ptp.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000ef(i64 %0, i64 %1, i64 %2) #0 {
 entry:

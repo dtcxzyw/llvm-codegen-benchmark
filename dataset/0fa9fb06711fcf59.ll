@@ -108,7 +108,7 @@ define i64 @func000000000000018f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = and i64 %5, 4294967295
   %7 = add nuw nsw i64 %6, %0
   ret i64 %7

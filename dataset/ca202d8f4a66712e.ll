@@ -12,11 +12,11 @@ define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = icmp sgt i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/giaBalAig.c.ll
@@ -26,7 +26,6 @@ entry:
 ; abc/optimized/giaStr.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; icu/optimized/nfrule.ll
-; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/VNCoercion.cpp.ll
 ; re2/optimized/prog.cc.ll
@@ -36,7 +35,7 @@ define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = icmp ult i32 %3, 16
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -51,7 +50,7 @@ define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = icmp ne i32 %3, 3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -66,7 +65,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = icmp slt i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -77,7 +76,7 @@ define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = icmp ugt i32 %3, 255
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

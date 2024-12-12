@@ -1,5 +1,5 @@
 
-; 476 occurrences:
+; 499 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/kitPla.c.ll
@@ -8,6 +8,28 @@
 ; arrow/optimized/align_util.cc.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; c3c/optimized/c_abi_x64.c.ll
 ; casadi/optimized/interpolant.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
@@ -106,7 +128,6 @@
 ; hdf5/optimized/H5DO.c.ll
 ; hdf5/optimized/H5Dbtree.c.ll
 ; hdf5/optimized/H5Dchunk.c.ll
-; hdf5/optimized/H5FAdbg.c.ll
 ; hdf5/optimized/H5FDcore.c.ll
 ; hdf5/optimized/H5FDonion.c.ll
 ; hdf5/optimized/H5FDspace.c.ll
@@ -114,7 +135,6 @@
 ; hdf5/optimized/H5Fsuper.c.ll
 ; hdf5/optimized/H5MF.c.ll
 ; hdf5/optimized/H5MFaggr.c.ll
-; hdf5/optimized/H5MFsection.c.ll
 ; hdf5/optimized/H5PB.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Tconv_float.c.ll
@@ -188,7 +208,6 @@
 ; llvm/optimized/NaryReassociate.cpp.ll
 ; llvm/optimized/PDBFile.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
@@ -318,10 +337,8 @@
 ; openssl/optimized/libcrypto-shlib-bn_prime.ll
 ; openssl/optimized/libcrypto-shlib-cms_pwri.ll
 ; openssl/optimized/libcrypto-shlib-sha3.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; openusd/optimized/primDefinition.cpp.ll
@@ -453,7 +470,6 @@
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
-; wasmtime-rs/optimized/rodgfxfn0hg2efa.ll
 ; wireshark/optimized/tap-iostat.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; xgboost/optimized/auc.cc.ll
@@ -475,6 +491,13 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; z3/optimized/prime_generator.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -484,9 +507,11 @@ entry:
   ret i1 %3
 }
 
-; 66 occurrences:
+; 69 occurrences:
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; assimp/optimized/PlyLoader.cpp.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; bullet3/optimized/btGenericPoolAllocator.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/mpool.c.ll
@@ -513,7 +538,6 @@ entry:
 ; llvm/optimized/ExpandMemCmp.cpp.ll
 ; llvm/optimized/LegalityPredicates.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; mini-lsm-rs/optimized/1zm93ee80v61t4c3.ll
 ; mini-lsm-rs/optimized/2vbarw74mreksmkr.ll
@@ -550,6 +574,8 @@ entry:
 ; xgboost/optimized/regression_obj.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
@@ -559,17 +585,11 @@ entry:
   ret i1 %3
 }
 
-; 10 occurrences:
+; 4 occurrences:
 ; coreutils-rs/optimized/3a0v4ncg7do5itt4.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
-; icu/optimized/ufmt_cmn.ll
-; libquic/optimized/prime.c.ll
-; openspiel/optimized/cards.cc.ll
-; openssl/optimized/libcrypto-lib-bn_prime.ll
-; openssl/optimized/libcrypto-shlib-bn_prime.ll
 ; postgres/optimized/xlog.ll
 ; rocksdb/optimized/xxhash.cc.ll
-; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -578,11 +598,24 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; icu/optimized/ufmt_cmn.ll
+; libquic/optimized/prime.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
+; openspiel/optimized/cards.cc.ll
+; openssl/optimized/libcrypto-lib-bn_prime.ll
+; openssl/optimized/libcrypto-shlib-bn_prime.ll
+; z3/optimized/bv_rewriter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = urem i64 %0, %1
+  %3 = icmp samesign ult i64 %2, 2
+  ret i1 %3
+}
+
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; eastl/optimized/EAString.cpp.ll
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; proxygen/optimized/RendezvousHash.cpp.ll
 ; Function Attrs: nounwind
@@ -590,6 +623,18 @@ define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %0, %1
   %3 = icmp ugt i64 %2, 1152921504606846975
+  ret i1 %3
+}
+
+; 3 occurrences:
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; eastl/optimized/EAString.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = urem i64 %0, %1
+  %3 = icmp samesign ugt i64 %2, 99
   ret i1 %3
 }
 

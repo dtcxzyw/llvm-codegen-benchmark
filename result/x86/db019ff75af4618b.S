@@ -1,4 +1,4 @@
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	shll	$4, %esi
 	andl	$16, %esi
 	leal	8(%rsi), %eax
@@ -6,7 +6,7 @@ func0000000000000029:                   # @func0000000000000029
 	cmovael	%esi, %eax
 	orl	$4, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	shll	$4, %esi
 	andl	$16, %esi
 	leal	8(%rsi), %eax
@@ -14,7 +14,7 @@ func0000000000000023:                   # @func0000000000000023
 	cmovnel	%esi, %eax
 	orl	$4, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000071:                   # @func0000000000000071
 	shll	$4, %esi
 	andl	$16, %esi
 	leal	8(%rsi), %eax
@@ -22,7 +22,7 @@ func0000000000000031:                   # @func0000000000000031
 	cmovbl	%esi, %eax
 	orl	$4, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	xorl	%eax, %eax
 	cmpl	$32768, %edi                    # imm = 0x8000
 	sete	%al

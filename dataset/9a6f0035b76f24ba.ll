@@ -8,7 +8,7 @@
 define double @func0000000000000001(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = uitofp nneg i32 %2 to double
-  %4 = fadd double %3, %1
+  %4 = fadd double %1, %3
   %5 = select i1 %0, double %4, double %1
   ret double %5
 }
@@ -20,7 +20,7 @@ entry:
 define double @func0000000000000000(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to double
-  %4 = fadd double %3, %1
+  %4 = fadd double %1, %3
   %5 = select i1 %0, double %4, double %1
   ret double %5
 }

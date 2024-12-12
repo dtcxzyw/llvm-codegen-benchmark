@@ -51,7 +51,7 @@ func0000000000000018:                   # @func0000000000000018
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000098:                   # @func0000000000000098
+func0000000000000118:                   # @func0000000000000118
 	vptestmq	.LCPI1_1(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vpsrld	$31, %xmm0, %xmm0

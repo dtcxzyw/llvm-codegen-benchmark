@@ -15,7 +15,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.quad	16                              # 0x10
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -26,7 +26,7 @@ func0000000000000154:                   # @func0000000000000154
 	retq
 .LCPI3_0:
 	.quad	18                              # 0x12
-func00000000000001d4:                   # @func00000000000001d4
+func00000000000003a4:                   # @func00000000000003a4
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -35,7 +35,7 @@ func00000000000001d4:                   # @func00000000000001d4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000308:                   # @func0000000000000308
+func0000000000000608:                   # @func0000000000000608
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm0, %ymm0
@@ -44,7 +44,7 @@ func0000000000000308:                   # @func0000000000000308
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000204:                   # @func0000000000000204
+func0000000000000404:                   # @func0000000000000404
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm0, %ymm0
@@ -53,7 +53,7 @@ func0000000000000204:                   # @func0000000000000204
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000201:                   # @func0000000000000201
+func0000000000000401:                   # @func0000000000000401
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm0, %ymm0
@@ -73,7 +73,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000141:                   # @func0000000000000141
+func0000000000000281:                   # @func0000000000000281
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -103,7 +104,7 @@ define i64 @func00000000000000a0(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add nuw i64 %4, %1
+  %5 = add nuw i64 %1, %4
   %6 = mul i64 %0, 4294966296
   %7 = add i64 %6, %5
   ret i64 %7

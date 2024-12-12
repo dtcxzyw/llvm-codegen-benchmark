@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/TestFixedHash.cpp.ll
@@ -14,6 +14,7 @@
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; llvm/optimized/X86SelectionDAGInfo.cpp.ll
+; rocksdb/optimized/block_based_table_reader.cc.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; spike/optimized/rfb.ll
 ; spike/optimized/vector_unit.ll
@@ -32,7 +33,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 6
+  %2 = lshr i64 %1, 7
   %3 = urem i64 %0, %2
   ret i64 %3
 }

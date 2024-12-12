@@ -8,15 +8,15 @@
 ; qemu/optimized/util_qemu-thread-posix.c.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = lshr i64 %0, 5
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; delta-rs/optimized/1x96nto90vd3u3mo.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; delta-rs/optimized/5f0eiaabmf6x2cpj.ll
@@ -41,12 +41,13 @@ entry:
 ; ockam-rs/optimized/8vw3dw8isly7xg2.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
+; zed-rs/optimized/driumlpfhwzx6147be2mcsi4u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = lshr i64 %0, 5
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 

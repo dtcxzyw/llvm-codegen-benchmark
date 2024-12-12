@@ -60,11 +60,11 @@
 ; tinympc/optimized/quadrotor_tracking.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000366(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %0, 128
   %4 = select i1 %3, i64 %0, i64 %2
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = icmp slt i64 %5, %0
   ret i1 %6
 }

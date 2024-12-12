@@ -10,20 +10,20 @@ func0000000000000006:                   # @func0000000000000006
 	vrem.vv	v8, v10, v8
 	vmsle.vi	v0, v8, -1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	vrem.vv	v8, v10, v8
 	vmseq.vi	v0, v8, 0
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v10, v10, a0
 	vrem.vv	v8, v10, v8
 	vmsle.vi	v0, v8, -1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	vrem.vv	v8, v10, v8

@@ -1,5 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
 	movl	%esi, %eax
-	shrb	$4, %al
+	shrb	%al
 	xorb	%dil, %al
 	retq

@@ -13,7 +13,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = shl i64 255, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = shl nuw nsw i64 255, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -37,7 +37,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 4
   %3 = shl nuw i64 65535, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -50,7 +50,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

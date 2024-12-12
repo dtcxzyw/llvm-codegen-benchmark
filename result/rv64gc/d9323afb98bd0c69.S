@@ -21,3 +21,11 @@ func000000000000003d:                   # @func000000000000003d
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func000000000000003b:                   # @func000000000000003b
+	slli	a2, a2, 32
+	slli	a1, a1, 32
+	slli	a0, a0, 48
+	srli	a2, a2, 32
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret

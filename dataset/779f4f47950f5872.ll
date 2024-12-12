@@ -9,11 +9,25 @@
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = srem i64 %2, %0
   %4 = icmp eq i64 %3, 0
+  ret i1 %4
+}
+
+; 4 occurrences:
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; raylib/optimized/rmodels.c.ll
+; sundials/optimized/kinsol.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 1
+  %3 = srem i64 %2, %0
+  %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
 

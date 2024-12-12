@@ -54,7 +54,3 @@ func0000000000000010:                   # @func0000000000000010
 	zext.h	a1, a1
 	addw	a0, a0, a1
 	ret
-func000000000000000d:                   # @func000000000000000d
-	zext.h	a0, a0
-	addw	a0, a0, a1
-	ret

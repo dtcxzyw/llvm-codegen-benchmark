@@ -1,43 +1,39 @@
 
-%struct.Str_Mux_t_.2764875 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2764874] }
-%struct.Str_Edg_t_.2764874 = type { i32, i32, i32, i32 }
-%"class.llvm::Use.2955340" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3043010" = type { ptr, ptr, ptr, ptr }
+%struct.Str_Mux_t_.2877130 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877129] }
+%struct.Str_Edg_t_.2877129 = type { i32, i32, i32, i32 }
 
 ; 3 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; clamav/optimized/petite.c.ll
-; hyperscan/optimized/program_runtime.c.ll
+; llvm/optimized/ThinLTOBitcodeWriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000ef(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct.Str_Mux_t_.2764875, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.Str_Mux_t_.2877130, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %struct.Str_Mux_t_.2764875, ptr %4, i64 %5, i32 4, i64 0, i32 1
+  %6 = getelementptr nuw %struct.Str_Mux_t_.2877130, ptr %4, i64 %5, i32 4, i64 0, i32 1
   ret ptr %6
 }
 
-; 6 occurrences:
-; clamav/optimized/petite.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; llvm/optimized/AssumeBundleQueries.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; lz4/optimized/lz4.c.ll
-; lz4/optimized/lz4hc.c.ll
+; 3 occurrences:
+; abc/optimized/giaStr.c.ll
+; cmake/optimized/divsufsort.c.ll
+; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000ec(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 1
-  ret ptr %7
+  %4 = getelementptr nusw %struct.Str_Mux_t_.2877130, ptr %0, i64 %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr %struct.Str_Mux_t_.2877130, ptr %4, i64 %5, i32 4, i64 0, i32 2
+  ret ptr %6
 }
 
-; 15 occurrences:
+; 18 occurrences:
+; clamav/optimized/petite.c.ll
 ; llvm/optimized/AssumeBundleBuilder.cpp.ll
+; llvm/optimized/AssumeBundleQueries.cpp.ll
 ; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/CallSiteSplitting.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
@@ -52,26 +48,31 @@ entry:
 ; llvm/optimized/InterpFrame.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/SeparateConstOffsetFromGEP.cpp.ll
+; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ab(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000af(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.2955340", ptr %0, i64 %3
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr %"class.llvm::Use.2955340", ptr %4, i64 %5, i32 1
-  ret ptr %6
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
+  ret ptr %7
 }
 
-; 1 occurrences:
-; llvm/optimized/ThinLTOBitcodeWriter.cpp.ll
+; 3 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; lz4/optimized/lz4.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000eb(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000ae(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3043010", ptr %0, i64 %3
-  %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %"class.llvm::Use.3043010", ptr %4, i64 %5, i32 1
-  ret ptr %6
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = zext i32 %1 to i64
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 -1
+  ret ptr %7
 }
 
 ; 3 occurrences:
@@ -79,26 +80,12 @@ entry:
 ; lz4/optimized/lz4hc.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a8(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000ac(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i32, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i32, ptr %4, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 4
-  ret ptr %7
-}
-
-; 2 occurrences:
-; cmake/optimized/divsufsort.c.ll
-; zstd/optimized/divsufsort.c.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000e8(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
-  %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i32, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 4
   ret ptr %7
 }
@@ -107,13 +94,13 @@ entry:
 ; cmake/optimized/zstd_opt.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000082(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000083(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 3
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 3
   ret ptr %7
 }
 
@@ -127,6 +114,19 @@ entry:
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fe(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 -8
   ret ptr %7
 }
 

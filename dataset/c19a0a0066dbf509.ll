@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; graphviz/optimized/shapes.c.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -8,13 +8,14 @@
 ; linux/optimized/nfs3proc.ll
 ; linux/optimized/seccomp.ll
 ; linux/optimized/vmalloc.ll
+; lvgl/optimized/lv_text.ll
 ; openssl/optimized/libcrypto-lib-pcy_tree.ll
 ; openssl/optimized/libcrypto-shlib-pcy_tree.ll
 ; qemu/optimized/tcg-op-ldst.c.ll
 ; quantlib/optimized/markovfunctional.ll
 ; wireshark/optimized/packet-pw-fr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 1
   %3 = icmp eq i32 %2, 0
@@ -26,7 +27,7 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; wireshark/optimized/packet-wassp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000042c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 1
   %3 = icmp ne i32 %2, 0
@@ -37,7 +38,7 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/vmalloc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 16777216
   %3 = icmp ne i32 %2, 0
@@ -54,7 +55,7 @@ entry:
 ; linux/optimized/intel_display.ll
 ; linux/optimized/pata_amd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = and i32 %0, 16

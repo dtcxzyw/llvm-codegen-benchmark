@@ -158,14 +158,13 @@ entry:
   ret i64 %5
 }
 
-; 56 occurrences:
+; 55 occurrences:
 ; hermes/optimized/PlatformUnicodeICU.cpp.ll
 ; hermes/optimized/PrettyStackTrace.cpp.ll
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/ast_counter.cpp.ll
 ; z3/optimized/automaton.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll

@@ -34,7 +34,7 @@ func0000000000000054:                   # @func0000000000000054
 	vpaddd	.LCPI3_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	.LCPI3_1(%rip){1to4}, %xmm1, %xmm1
 	vpmulld	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI4_0:
@@ -46,7 +46,7 @@ func0000000000000254:                   # @func0000000000000254
 	vpaddd	.LCPI4_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	.LCPI4_1(%rip){1to4}, %xmm1, %xmm1
 	vpmulld	%xmm1, %xmm2, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000055:                   # @func0000000000000055
@@ -55,7 +55,7 @@ func0000000000000055:                   # @func0000000000000055
 	vpsubd	%xmm3, %xmm2, %xmm2
 	vpsubd	%xmm3, %xmm1, %xmm1
 	vpmulld	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000255:                   # @func0000000000000255
@@ -64,6 +64,6 @@ func0000000000000255:                   # @func0000000000000255
 	vpsubd	%xmm3, %xmm2, %xmm2
 	vpsubd	%xmm3, %xmm1, %xmm1
 	vpmulld	%xmm1, %xmm2, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

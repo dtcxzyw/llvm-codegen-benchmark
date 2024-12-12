@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; folly/optimized/NestedCommandLineApp.cpp.ll
 ; folly/optimized/ProgramOptions.cpp.ll
-; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0) #0 {
 entry:

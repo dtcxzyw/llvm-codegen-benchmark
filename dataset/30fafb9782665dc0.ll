@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/message.ll
 ; hdf5/optimized/H5Odtype.c.ll
 ; hdf5/optimized/H5Olayout.c.ll
 ; hdf5/optimized/H5Osdspace.c.ll
@@ -20,7 +21,7 @@ entry:
 ; hdf5/optimized/H5Olayout.c.ll
 ; hdf5/optimized/H5Osdspace.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %3, 1

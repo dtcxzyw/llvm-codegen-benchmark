@@ -23,7 +23,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i64 %1) #0 {
@@ -43,7 +44,7 @@ entry:
 define i32 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
   %2 = sext i1 %0 to i64
-  %3 = add nsw i64 %2, %1
+  %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -69,7 +70,7 @@ entry:
 define i32 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = zext i1 %0 to i64
-  %3 = add nuw nsw i64 %2, %1
+  %3 = add nuw nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

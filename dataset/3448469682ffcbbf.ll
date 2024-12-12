@@ -5,7 +5,7 @@
 ; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
 ; wireshark/optimized/packet-dbus.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000282(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000902(i8 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -65
@@ -19,7 +19,7 @@ entry:
 ; graphviz/optimized/write.c.ll
 ; nix/optimized/names.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000908(i8 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48

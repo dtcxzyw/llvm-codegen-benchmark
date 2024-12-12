@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cvc5/optimized/instantiate.cpp.ll
-; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; rocksdb/optimized/point_lock_manager.cc.ll

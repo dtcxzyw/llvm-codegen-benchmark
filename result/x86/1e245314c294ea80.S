@@ -10,9 +10,3 @@ func0000000000000005:                   # @func0000000000000005
 	shlq	$32, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movl	%esi, %eax
-	notl	%eax
-	shlq	$47, %rax
-	orq	%rdi, %rax
-	retq

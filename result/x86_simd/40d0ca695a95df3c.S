@@ -34,7 +34,7 @@
 	.zero	1
 .LCPI0_2:
 	.long	46                              # 0x2e
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpaddb	.LCPI0_0(%rip), %xmm2, %xmm2
 	vpcmpltub	.LCPI0_1(%rip), %xmm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}

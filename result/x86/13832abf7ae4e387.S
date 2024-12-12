@@ -1,7 +1,7 @@
-func0000000000000261:                   # @func0000000000000261
+func00000000000008c1:                   # @func00000000000008c1
 	leaq	(%rdi,%rdx), %rax
 	cmpq	$12, %rdx
 	cmovgeq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

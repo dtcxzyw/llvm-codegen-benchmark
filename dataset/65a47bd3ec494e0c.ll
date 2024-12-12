@@ -16,11 +16,22 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/lgc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nsw i32 %2, 3
   %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = mul i32 %2, -10
+  %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
 

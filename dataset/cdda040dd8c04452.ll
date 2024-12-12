@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 62 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -57,7 +57,11 @@
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll
+; yoga/optimized/AbsoluteLayout.cpp.ll
 ; z3/optimized/tbv.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0) #0 {
 entry:
@@ -66,14 +70,13 @@ entry:
   ret i32 %2
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/timDump.c.ll
 ; brotli/optimized/decode.c.ll
 ; luajit/optimized/lib_jit.ll
 ; luajit/optimized/lib_jit_dyn.ll
 ; openusd/optimized/tile_common.c.ll
-; spike/optimized/interactive.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:

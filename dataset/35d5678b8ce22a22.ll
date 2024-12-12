@@ -1,8 +1,7 @@
 
-; 153 occurrences:
+; 154 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_stmts.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; cvc5/optimized/cvc5.cpp.ll
@@ -88,6 +87,7 @@
 ; llvm/optimized/SimplifyIndVar.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; minetest/optimized/pointabilities.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -153,6 +153,7 @@
 ; wireshark/optimized/packet-usbms-uasp.c.ll
 ; wireshark/optimized/packet-xra.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i8 %0) #0 {
 entry:
@@ -162,11 +163,12 @@ entry:
   ret i16 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; linux/optimized/alps.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/intel_sdvo.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; wireshark/optimized/packet-e164.c.ll
@@ -179,8 +181,9 @@ entry:
   ret i16 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i8 %0) #0 {
@@ -191,9 +194,10 @@ entry:
   ret i16 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/DeclObjC.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; openusd/optimized/refinement.cpp.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll

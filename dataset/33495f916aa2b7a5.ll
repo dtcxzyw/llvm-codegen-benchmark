@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; clamav/optimized/dsig.c.ll
 ; hdf5/optimized/H5LTparse.c.ll
 ; hermes/optimized/DateUtil.cpp.ll
@@ -14,7 +14,6 @@
 ; openmpi/optimized/opal_datatype_unpack.ll
 ; php/optimized/browscap.ll
 ; postgres/optimized/fe-exec.ll
-; rocksdb/optimized/keyrange.cc.ll
 ; rocksdb/optimized/locktree.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
@@ -60,11 +59,11 @@ entry:
 ; openjdk/optimized/hb-buffer-serialize.ll
 ; openjdk/optimized/hb-number.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sext i8 %0 to i32
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 

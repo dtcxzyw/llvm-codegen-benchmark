@@ -45,7 +45,7 @@ entry:
   ret i64 %4
 }
 
-; 145 occurrences:
+; 148 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -134,8 +134,8 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imagecache.cpp.ll
+; opencv/optimized/lsd.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openjdk/optimized/oopRecorder.ll
 ; openspiel/optimized/Init.cpp.ll
 ; openspiel/optimized/SolverIF.cpp.ll
@@ -167,6 +167,7 @@ entry:
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/lzf_c.ll
+; redis/optimized/rax.ll
 ; redis/optimized/redis-cli.ll
 ; ruby/optimized/util.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
@@ -182,6 +183,8 @@ entry:
 ; wireshark/optimized/packet-iuup.c.ll
 ; wireshark/optimized/packet-pldm.c.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v01.c.ll
@@ -200,7 +203,7 @@ entry:
   ret i64 %4
 }
 
-; 69 occurrences:
+; 68 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -224,7 +227,6 @@ entry:
 ; opencv/optimized/subdivision2d.cpp.ll
 ; openjdk/optimized/cmssm.ll
 ; openjdk/optimized/defaultMethods.ll
-; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openspiel/optimized/SolverIF.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -279,7 +281,7 @@ entry:
   ret i64 %4
 }
 
-; 53 occurrences:
+; 54 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -303,6 +305,7 @@ entry:
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; opencv/optimized/lsc.cpp.ll
 ; opencv/optimized/slic.cpp.ll
+; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openspiel/optimized/maedn.cc.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/path.cpp.ll
@@ -369,12 +372,13 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/sswSim.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; openjdk/optimized/classFileParser.ll
+; openjdk/optimized/mlib_ImageScanPoly.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:

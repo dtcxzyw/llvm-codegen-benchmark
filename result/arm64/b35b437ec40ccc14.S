@@ -11,16 +11,24 @@ func000000000000000a:                   // @func000000000000000a
                                         // kill: def $w2 killed $w2 def $x2
 	and	x9, x2, #0x1
 	mov	w8, #144                        // =0x90
-	add	x9, x9, x1
+	add	x9, x1, x9
 	madd	x0, x9, x8, x0
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func0000000000000003:                   // @func0000000000000003
+// %bb.0:                               // %entry
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x8, x1, x8
+	add	x0, x0, x8, lsl #2
+	ret
+                                        // -- End function
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	and	x9, x2, #0x1
 	mov	w8, #24                         // =0x18
-	add	x9, x9, x1
+	add	x9, x1, x9
 	madd	x0, x9, x8, x0
 	ret
                                         // -- End function

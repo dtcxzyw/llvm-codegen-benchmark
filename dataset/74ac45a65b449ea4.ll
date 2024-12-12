@@ -1,11 +1,44 @@
 
-%struct.Mig_Obj_t_.2765506 = type { [4 x %struct.Mig_Fan_t_.2765507] }
-%struct.Mig_Fan_t_.2765507 = type { i32 }
-%"class.llvm::Use.3048289" = type { ptr, ptr, ptr, ptr }
+%struct.Mig_Obj_t_.2877741 = type { [4 x %struct.Mig_Fan_t_.2877742] }
+%struct.Mig_Fan_t_.2877742 = type { i32 }
+%"class.llvm::Use.3145316" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3241632" = type { ptr, ptr, ptr, ptr }
 
-; 65 occurrences:
-; icu/optimized/normalizer2impl.ll
+; 2 occurrences:
 ; libdeflate/optimized/deflate_decompress.c.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 7
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 7
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 7 occurrences:
+; abc/optimized/mpmMap.c.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/LowerExpectIntrinsic.cpp.ll
+; llvm/optimized/MemoryTaggingSupport.cpp.ll
+; llvm/optimized/OMPIRBuilder.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SROA.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000050(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 4095
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr i8, ptr %0, i64 -16
+  %6 = getelementptr %struct.Mig_Obj_t_.2877741, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 63 occurrences:
+; icu/optimized/normalizer2impl.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
@@ -68,34 +101,14 @@
 ; llvm/optimized/StackLifetime.cpp.ll
 ; llvm/optimized/StackProtector.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll
-; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005a(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 7
+  %2 = and i32 %1, 134217727
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 7
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 7 occurrences:
-; abc/optimized/mpmMap.c.ll
-; llvm/optimized/CodeGenPrepare.cpp.ll
-; llvm/optimized/LowerExpectIntrinsic.cpp.ll
-; llvm/optimized/MemoryTaggingSupport.cpp.ll
-; llvm/optimized/OMPIRBuilder.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SROA.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000050(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 4095
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr i8, ptr %0, i64 -16
-  %6 = getelementptr %struct.Mig_Obj_t_.2765506, ptr %5, i64 %4
+  %5 = getelementptr nusw i8, ptr %0, i64 -24
+  %6 = getelementptr nusw %"class.llvm::Use.3145316", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -103,13 +116,13 @@ entry:
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i32 %1) #0 {
+define ptr @func000000000000005c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 134217727
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 32
-  %6 = getelementptr %"class.llvm::Use.3048289", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %6 = getelementptr %"class.llvm::Use.3241632", ptr %5, i64 %4
   ret ptr %6
 }
 

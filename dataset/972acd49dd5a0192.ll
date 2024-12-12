@@ -1,10 +1,12 @@
 
-%"class.std::unique_ptr.56.2897937" = type { %"struct.std::__uniq_ptr_data.57.2897938" }
-%"struct.std::__uniq_ptr_data.57.2897938" = type { %"class.std::__uniq_ptr_impl.58.2897939" }
-%"class.std::__uniq_ptr_impl.58.2897939" = type { %"class.std::tuple.59.2897940" }
-%"class.std::tuple.59.2897940" = type { %"struct.std::_Tuple_impl.60.2897941" }
-%"struct.std::_Tuple_impl.60.2897941" = type { %"struct.std::_Head_base.63.2897942" }
-%"struct.std::_Head_base.63.2897942" = type { ptr }
+%"class.std::unique_ptr.56.3092400" = type { %"struct.std::__uniq_ptr_data.57.3092401" }
+%"struct.std::__uniq_ptr_data.57.3092401" = type { %"class.std::__uniq_ptr_impl.58.3092402" }
+%"class.std::__uniq_ptr_impl.58.3092402" = type { %"class.std::tuple.59.3092403" }
+%"class.std::tuple.59.3092403" = type { %"struct.std::_Tuple_impl.60.3092404" }
+%"struct.std::_Tuple_impl.60.3092404" = type { %"struct.std::_Head_base.63.3092405" }
+%"struct.std::_Head_base.63.3092405" = type { ptr }
+%"struct.Yosys::RTLIL::SigBit.3115142" = type <{ ptr, %union.anon.538.3115143, [4 x i8] }>
+%union.anon.538.3115143 = type { i32 }
 
 ; 5 occurrences:
 ; llvm/optimized/SemaAttr.cpp.ll
@@ -13,7 +15,7 @@
 ; openjdk/optimized/diagnosticFramework.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000002c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 2
@@ -25,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/kahalesmilesection.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a8(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func00000000000000ac(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr double, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
@@ -34,14 +36,24 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; oiio/optimized/thread.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000006c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %"class.std::unique_ptr.56.3092400", ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  ret i64 %5
+}
+
+; 2 occurrences:
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000007c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::unique_ptr.56.2897937", ptr %1, i64 %2
+  %3 = getelementptr %"struct.Yosys::RTLIL::SigBit.3115142", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   ret i64 %5
@@ -50,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000e8(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func00000000000000fc(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 7

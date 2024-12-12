@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
 ; luau/optimized/CostModel.cpp.ll
 ; ruby/optimized/array.ll
 ; Function Attrs: nounwind

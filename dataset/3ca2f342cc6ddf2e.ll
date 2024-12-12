@@ -15,7 +15,7 @@
 ; oiio/optimized/xmp.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000110(i64 %0, i16 %1) #0 {
+define i64 @func0000000000000210(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 2048
   %3 = select i1 %2, i64 2, i64 3

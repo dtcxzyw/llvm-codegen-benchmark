@@ -21,7 +21,7 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 19 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -37,8 +37,6 @@ entry:
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/zonevector.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openusd/optimized/convolve.c.ll

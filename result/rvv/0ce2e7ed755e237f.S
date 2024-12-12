@@ -1,13 +1,12 @@
 func0000000000000003:                   # @func0000000000000003
+	lui	a0, 1048571
+	addi	a0, a0, -1365
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vsrl.vi	v10, v8, 2
-	lui	a0, 1
-	addi	a0, a0, 1147
-	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 1
-	li	a0, 100
+	vmulhu.vx	v10, v8, a0
+	vsrl.vi	v10, v10, 2
+	li	a0, 6
 	vnmsub.vx	v10, a0, v8
-	vadd.vv	v8, v10, v10
+	vsll.vi	v8, v10, 3
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e16, m2, ta, ma

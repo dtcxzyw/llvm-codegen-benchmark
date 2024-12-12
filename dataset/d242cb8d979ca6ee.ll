@@ -11,12 +11,11 @@ entry:
   ret i64 %5
 }
 
-; 145 occurrences:
+; 152 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/textdet.c.ll
 ; cmake/optimized/RegularExpression.cxx.ll
@@ -61,7 +60,6 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/op_def.pb.cc.ll
@@ -152,6 +150,15 @@ entry:
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -183,12 +190,12 @@ define i64 @func000000000000000b(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; git/optimized/midx.ll
 ; gromacs/optimized/bwlzh.c.ll
@@ -202,12 +209,14 @@ entry:
 ; qemu/optimized/fdt.c.ll
 ; spike/optimized/fdt.ll
 ; wireshark/optimized/addr_resolv.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -236,7 +245,7 @@ define i64 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl i32 %2, 30
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -274,7 +283,7 @@ define i64 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -290,6 +299,18 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
+  %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; linux/optimized/huf_decompress.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = shl nuw nsw i32 %2, 8
+  %4 = or i32 %3, %0
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

@@ -18,9 +18,10 @@ entry:
   ret i1 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
@@ -46,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = add i32 %1, -1

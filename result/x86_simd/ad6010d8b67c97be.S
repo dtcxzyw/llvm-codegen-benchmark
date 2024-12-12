@@ -11,5 +11,5 @@ func000000000000001b:                   # @func000000000000001b
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [16,16,16,16]
 	vpcmpltq	.LCPI0_2(%rip){1to4}, %ymm1, %k1
 	vmovdqa64	%ymm1, %ymm2 {%k1}
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq

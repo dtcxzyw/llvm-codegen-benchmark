@@ -58,7 +58,7 @@ entry:
   ret i32 %6
 }
 
-; 45 occurrences:
+; 47 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -104,6 +104,8 @@ entry:
 ; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; ruby/optimized/regparse.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
@@ -128,7 +130,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 7
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = lshr i32 %4, 2
   %6 = and i32 %5, 992
   ret i32 %6
@@ -156,7 +158,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 2
   %3 = and i32 %2, 50529027
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = lshr i32 %4, 8
   %6 = and i32 %5, 458759
   ret i32 %6

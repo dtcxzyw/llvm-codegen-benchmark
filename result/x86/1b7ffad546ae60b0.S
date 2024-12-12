@@ -13,7 +13,7 @@ func0000000000000006:                   # @func0000000000000006
 	movl	$300, %eax                      # imm = 0x12C
 	cmovll	%ecx, %eax
 	retq
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	addl	%edx, %esi
 	subl	%esi, %edi
 	xorl	%ecx, %ecx

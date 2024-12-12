@@ -35,6 +35,12 @@ func0000000000000023:                   # @func0000000000000023
 	seta	%al
 	addl	%edi, %eax
 	retq
+func000000000000005b:                   # @func000000000000005b
+	xorl	%eax, %eax
+	vucomisd	%xmm1, %xmm0
+	setbe	%al
+	addl	%edi, %eax
+	retq
 func0000000000000013:                   # @func0000000000000013
 	xorl	%eax, %eax
 	vucomisd	%xmm0, %xmm1

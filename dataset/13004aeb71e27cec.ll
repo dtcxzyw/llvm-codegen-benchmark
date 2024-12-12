@@ -5,7 +5,7 @@
 ; linux/optimized/intel_color.ll
 ; openjdk/optimized/instanceKlass.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i8 %0, i1 %1) #0 {
+define i32 @func0000000000000043(i8 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 3, i32 0
   %3 = or disjoint i32 %2, 4
@@ -19,7 +19,7 @@ entry:
 ; openexr/optimized/write_header.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0, i1 %1) #0 {
+define i32 @func0000000000000051(i8 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2, i32 4098
   %3 = or disjoint i32 %2, 1024

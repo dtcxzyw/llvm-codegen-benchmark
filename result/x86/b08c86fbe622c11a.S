@@ -1,32 +1,32 @@
-func00000000000003c1:                   # @func00000000000003c1
+func0000000000000d81:                   # @func0000000000000d81
 	cmpq	$15, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	cmpq	$1, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000003cc:                   # @func00000000000003cc
+func0000000000000d8c:                   # @func0000000000000d8c
 	cmpq	$63, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	cmpq	$1, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	decq	%rsi
 	cmpq	$8, %rsi
 	setb	%cl

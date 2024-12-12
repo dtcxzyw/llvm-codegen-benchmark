@@ -1,5 +1,5 @@
 
-; 129 occurrences:
+; 128 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
@@ -98,7 +98,6 @@
 ; llvm/optimized/PoisonChecking.cpp.ll
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RealtimeSanitizer.cpp.ll
 ; llvm/optimized/RelLookupTableConverter.cpp.ll
 ; llvm/optimized/ReplaceWithVeclib.cpp.ll
@@ -135,7 +134,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = zext i32 %6 to i64
   ret i64 %7
 }
@@ -152,7 +151,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }
@@ -171,7 +170,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }

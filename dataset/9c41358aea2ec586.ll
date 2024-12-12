@@ -1,10 +1,11 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; darktable/optimized/export.c.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
+; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_lens.cc.ll

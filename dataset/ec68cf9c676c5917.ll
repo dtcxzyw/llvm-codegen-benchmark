@@ -82,7 +82,7 @@ entry:
   ret i32 %3
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; clamav/optimized/upx.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; freetype/optimized/sfnt.c.ll
@@ -115,7 +115,6 @@ entry:
 ; openjdk/optimized/hb-ot-var.ll
 ; recastnavigation/optimized/DebugDraw.cpp.ll
 ; wireshark/optimized/packet-obd-ii.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:

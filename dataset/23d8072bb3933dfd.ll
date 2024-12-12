@@ -1,12 +1,12 @@
 
-%"struct.std::pair.2884112" = type { %"class.hermes::vm::GCSymbolID.2884113", %"struct.hermes::vm::NamedPropertyDescriptor.2884114" }
-%"class.hermes::vm::GCSymbolID.2884113" = type { %"class.hermes::vm::SymbolID.2884115" }
-%"class.hermes::vm::SymbolID.2884115" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.2884114" = type { %"struct.hermes::vm::PropertyDescriptor.2884116" }
-%"struct.hermes::vm::PropertyDescriptor.2884116" = type { %union.anon.3.2884117, i32 }
-%union.anon.3.2884117 = type { i32 }
+%"struct.std::pair.3078635" = type { %"class.hermes::vm::GCSymbolID.3078636", %"struct.hermes::vm::NamedPropertyDescriptor.3078637" }
+%"class.hermes::vm::GCSymbolID.3078636" = type { %"class.hermes::vm::SymbolID.3078638" }
+%"class.hermes::vm::SymbolID.3078638" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3078637" = type { %"struct.hermes::vm::PropertyDescriptor.3078639" }
+%"struct.hermes::vm::PropertyDescriptor.3078639" = type { %union.anon.3.3078640, i32 }
+%union.anon.3.3078640 = type { i32 }
 
-; 126 occurrences:
+; 130 occurrences:
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/ArrayStorage.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
@@ -133,14 +133,18 @@
 ; luajit/optimized/lj_ffrecord_dyn.ll
 ; openjdk/optimized/g1CardSet.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i32 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = zext i32 %0 to i64
-  %6 = getelementptr nusw ptr, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -171,13 +175,13 @@ entry:
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i32 %0, i64 %1) #0 {
+define ptr @func000000000000001f(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2097152
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 456
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 456
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr nusw i64, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -197,13 +201,13 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(i32 %0, i64 %1) #0 {
+define ptr @func0000000000000013(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -64
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 922880
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr nusw float, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -218,7 +222,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 4
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr %"struct.std::pair.2884112", ptr %4, i64 %5
+  %6 = getelementptr %"struct.std::pair.3078635", ptr %4, i64 %5
   ret ptr %6
 }
 

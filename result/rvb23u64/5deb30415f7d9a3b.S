@@ -15,3 +15,11 @@ func00000000000000c5:                   # @func00000000000000c5
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
+func0000000000000047:                   # @func0000000000000047
+	fmv.d.x	fa5, zero
+	li	a0, 2
+	flt.d	a1, fa5, fa0
+	sub	a0, a0, a1
+	feq.d	a1, fa0, fa5
+	czero.nez	a0, a0, a1
+	ret

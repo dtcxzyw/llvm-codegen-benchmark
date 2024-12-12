@@ -6,7 +6,7 @@ define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = zext i32 %2 to i64
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
@@ -20,51 +20,51 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/sharedRuntime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = call noundef i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp samesign ult i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/sharedRuntime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -88,7 +88,7 @@ define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = zext i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -96,37 +96,57 @@ entry:
 ; darktable/optimized/introspection_lens.cc.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; abc/optimized/wlnWlc.c.ll
-; llvm/optimized/SemaDeclObjC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp samesign ult i64 %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; abc/optimized/wlcBlast.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
+entry:
+  %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp samesign ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; slurm/optimized/common.ll
 ; slurm/optimized/print_fields.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/SemaDeclObjC.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
+entry:
+  %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 

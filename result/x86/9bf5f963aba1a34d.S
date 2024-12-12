@@ -1,47 +1,39 @@
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	incl	%edx
-	cmpl	%edi, %edx
-	setl	%cl
-	cmpl	%esi, %edi
-	setl	%al
-	orb	%cl, %al
-	retq
-func00000000000000a6:                   # @func00000000000000a6
-	decl	%edx
-	cmpl	%edi, %edx
-	setl	%cl
-	cmpl	%esi, %edi
-	setl	%al
-	orb	%cl, %al
-	retq
-func0000000000000085:                   # @func0000000000000085
-	addl	$-4, %edx
-	cmpl	%edi, %edx
-	setb	%cl
-	cmpl	%esi, %edi
-	setbe	%al
-	orb	%cl, %al
-	retq
-func000000000000016b:                   # @func000000000000016b
-	addl	$-15, %edx
-	cmpl	%edi, %edx
+	cmpl	%edx, %edi
 	setg	%cl
+	cmpl	%esi, %edi
+	setl	%al
+	orb	%cl, %al
+	retq
+func0000000000000146:                   # @func0000000000000146
+	decl	%edx
+	cmpl	%edx, %edi
+	setg	%cl
+	cmpl	%esi, %edi
+	setl	%al
+	orb	%cl, %al
+	retq
+func00000000000004cb:                   # @func00000000000004cb
+	addl	$-15, %edx
+	cmpl	%edx, %edi
+	setl	%cl
 	cmpl	%esi, %edi
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	incl	%edx
-	cmpl	%edi, %edx
+	cmpl	%edx, %edi
 	sete	%cl
 	cmpl	%esi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	decl	%edx
-	cmpl	%edi, %edx
-	setg	%cl
+	cmpl	%edx, %edi
+	setl	%cl
 	cmpl	%esi, %edi
 	setg	%al
 	orb	%cl, %al

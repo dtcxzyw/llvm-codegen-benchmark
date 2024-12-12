@@ -1,20 +1,19 @@
 
-; 26 occurrences:
+; 25 occurrences:
+; boost/optimized/parser_utils.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; hermes/optimized/ArrayStorage.cpp.ll
 ; icu/optimized/collationfastlatinbuilder.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; just-rs/optimized/uwydcyn8qeoqoev.ll
+; libdeflate/optimized/deflate_compress.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
-; lief/optimized/aria.c.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/X86FrameLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
-; php/optimized/decode.ll
+; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/gdbstub.c.ll
-; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
@@ -24,10 +23,10 @@
 ; rust-analyzer-rs/optimized/3hcpc53socutnyz5.ll
 ; rust-analyzer-rs/optimized/3nofq7oo06gx5fjm.ll
 ; stb/optimized/stb_easy_font.c.ll
-; wasmtime-rs/optimized/4vgjsomnctxfipp1.ll
-; zxing/optimized/QRDetector.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -123
   %3 = icmp ult i32 %2, -26
@@ -35,22 +34,19 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 10 occurrences:
 ; cmake/optimized/process.c.ll
 ; git/optimized/run-command.ll
 ; libuv/optimized/process.c.ll
 ; node/optimized/process.ll
 ; php/optimized/proc_open.ll
-; postgres/optimized/wait_error.ll
-; postgres/optimized/wait_error_shlib.ll
-; postgres/optimized/wait_error_srv.ll
 ; redis/optimized/sentinel.ll
 ; redis/optimized/server.ll
 ; ruby/optimized/process.ll
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/prep_script_slurmd.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 16777216
   %3 = icmp sgt i32 %2, 33554431
@@ -58,7 +54,7 @@ entry:
   ret i32 %4
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/time.cc.ll
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
@@ -71,7 +67,6 @@ entry:
 ; glslang/optimized/Intermediate.cpp.ll
 ; glslang/optimized/glslang_c_interface.cpp.ll
 ; graphviz/optimized/exparse.c.ll
-; gromacs/optimized/gmx_h2order.cpp.ll
 ; gromacs/optimized/pairlistparams.cpp.ll
 ; html5ever-rs/optimized/scjfsdpdca697ba.ll
 ; hwloc/optimized/topology-xml.ll
@@ -128,11 +123,9 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; abc/optimized/abc.c.ll
-; git/optimized/diff.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/inline.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/netdev.ll
 ; wireshark/optimized/packet-iso14443.c.ll
@@ -159,7 +152,7 @@ entry:
 ; linux/optimized/nsaccess.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = select i1 %2, i32 %0, i32 0

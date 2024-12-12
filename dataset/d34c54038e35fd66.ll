@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 88 occurrences:
 ; darktable/optimized/import.c.ll
 ; darktable/optimized/masks.c.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -19,7 +19,6 @@
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
-; openblas/optimized/dggbak.c.ll
 ; opencv/optimized/Utils.cpp.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
@@ -97,7 +96,7 @@ entry:
   ret i64 %2
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cuddApa.c.ll
@@ -125,7 +124,6 @@ entry:
 ; luau/optimized/lbuiltins.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/l_inventory.cpp.ll

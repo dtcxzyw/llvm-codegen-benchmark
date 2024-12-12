@@ -4,19 +4,19 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdi, %rdi
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	movq	%rdi, %rax
-	subq	%rsi, %rax
-	testq	%rdi, %rdi
-	cmoveq	%rdi, %rax
-	retq
-func0000000000000061:                   # @func0000000000000061
-	movq	%rdi, %rax
-	subq	%rsi, %rax
-	testq	%rdi, %rdi
-	cmoveq	%rdi, %rax
-	retq
 func0000000000000041:                   # @func0000000000000041
+	movq	%rdi, %rax
+	subq	%rsi, %rax
+	testq	%rdi, %rdi
+	cmoveq	%rdi, %rax
+	retq
+func00000000000000c1:                   # @func00000000000000c1
+	movq	%rdi, %rax
+	subq	%rsi, %rax
+	testq	%rdi, %rdi
+	cmoveq	%rdi, %rax
+	retq
+func0000000000000081:                   # @func0000000000000081
 	movq	%rdi, %rax
 	subq	%rsi, %rax
 	retq

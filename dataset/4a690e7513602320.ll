@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 37 occurrences:
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; freetype/optimized/ftstroke.c.ll
@@ -24,17 +24,32 @@
 ; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; wasmtime-rs/optimized/1jbxepb6u2xll6bg.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/336xmb53s74x7fvnwv8sppb05.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/bx05yi7k15cz36qdtwh95aj38.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/dkpymwf72m1w0twqv9sm36jup.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000053(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw { { { i64, ptr, {} }, i64 } }, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw { { { i64, ptr, {} }, i64 } }, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 94 occurrences:
+; 97 occurrences:
 ; abseil-cpp/optimized/span_test.cc.ll
+; boost/optimized/authority_view.ll
+; boost/optimized/url_view_base.ll
 ; cvc5/optimized/prop_proof_manager.cpp.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
@@ -121,6 +136,7 @@ entry:
 ; oiio/optimized/maketexture.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openspiel/optimized/chess_board.cc.ll
+; quantlib/optimized/imm.ll
 ; spike/optimized/processor.ll
 ; vcpkg/optimized/postbuildlint.cpp.ll
 ; verilator/optimized/V3ExecGraph.cpp.ll
@@ -129,15 +145,15 @@ entry:
 ; wasmtime-rs/optimized/1tgax70bn3x2nad4.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000063(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/mioUtils.c.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
@@ -151,6 +167,7 @@ entry:
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
+; quantlib/optimized/fdmarithmeticaveragecondition.ll
 ; ripgrep-rs/optimized/2425miidforqaenw.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; wasmtime-rs/optimized/1tgax70bn3x2nad4.ll
@@ -158,33 +175,11 @@ entry:
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
-entry:
-  %2 = icmp eq i64 %1, 0
-  %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw float, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; quantlib/optimized/imm.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000063(ptr %0, i64 %1) #0 {
-entry:
-  %2 = icmp ne i64 %1, 0
-  %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; quantlib/optimized/fdmarithmeticaveragecondition.ll
-; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -214,8 +209,7 @@ entry:
   ret ptr %4
 }
 
-; 46 occurrences:
-; imgui/optimized/imgui.cpp.ll
+; 44 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -260,13 +254,24 @@ entry:
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/WinEHPrepare.cpp.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 7
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 2 occurrences:
+; imgui/optimized/imgui.cpp.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000c3(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 1
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -276,9 +281,9 @@ entry:
 ; linux/optimized/nf_conntrack_core.ll
 ; linux/optimized/ohci-hcd.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000040(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000c0(ptr %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 2047
+  %2 = icmp samesign ugt i64 %1, 2047
   %3 = zext i1 %2 to i64
   %4 = getelementptr i16, ptr %0, i64 %3
   ret ptr %4
@@ -288,11 +293,22 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, -10
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000a3(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 1000000000000000
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

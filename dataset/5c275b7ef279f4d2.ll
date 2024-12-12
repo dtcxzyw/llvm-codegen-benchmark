@@ -9,13 +9,13 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   %6 = and i32 %5, -7340033
   ret i32 %6
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; cmake/optimized/easy.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-easy.ll
@@ -27,6 +27,7 @@ entry:
 ; icu/optimized/utf_impl.ll
 ; linux/optimized/iosf_mbi.ll
 ; linux/optimized/sd.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; node/optimized/libnode.string_bytes.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-tag.ll
@@ -41,23 +42,24 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = and i32 %5, 16712191
   ret i32 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/ucnv_u32.ll
 ; linux/optimized/iosf_mbi.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; php/optimized/image.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = and i32 %5, 2147483631
   ret i32 %6
@@ -72,10 +74,20 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
-  %4 = or disjoint i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = or disjoint i32 %1, %3
+  %5 = or i32 %0, %4
   %6 = and i32 %5, 2147481600
   ret i32 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %0, %1
+  %4 = and i32 %3, 16777215
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -85,7 +97,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 4
   %4 = or i32 %3, %1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = and i32 %5, 256
   ret i32 %6
 }

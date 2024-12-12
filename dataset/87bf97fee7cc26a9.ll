@@ -1,5 +1,5 @@
 
-; 159 occurrences:
+; 161 occurrences:
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; openusd/optimized/TestPcpDynamicFileFormatPlugin.cpp.ll
 ; openusd/optimized/TestSdfNoAssetFileFormat.cpp.ll
@@ -159,6 +159,8 @@
 ; openusd/optimized/vtBufferSource.cpp.ll
 ; openusd/optimized/xformCache.cpp.ll
 ; spike/optimized/f128_sqrt.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -205,7 +207,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = lshr exact i64 %4, 1
   ret i64 %5
 }
@@ -315,7 +317,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = lshr i64 %4, 1
   ret i64 %5
 }
@@ -448,7 +450,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = lshr i64 %4, 1
   ret i64 %5
 }
@@ -473,7 +475,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   %5 = lshr i64 %4, 1
   ret i64 %5
 }
@@ -487,7 +489,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   %5 = lshr i64 %4, 1
   ret i64 %5
 }

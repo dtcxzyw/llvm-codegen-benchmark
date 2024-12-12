@@ -16,7 +16,7 @@ func0000000000000019:                   # @func0000000000000019
 	orl	$5, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	movl	%edi, %eax
 	addl	$2440589, %eax                  # imm = 0x253D8D
 	cltq

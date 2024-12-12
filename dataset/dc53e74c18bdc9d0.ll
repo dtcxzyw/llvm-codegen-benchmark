@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 54 occurrences:
 ; abc/optimized/abcAuto.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcCas.c.ll
@@ -47,8 +47,6 @@
 ; openmpi/optimized/coll_base_reduce_scatter_block.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; openmpi/optimized/nbc_ireduce.ll
-; openssl/optimized/libcrypto-lib-ffc_key_generate.ll
-; openssl/optimized/libcrypto-shlib-ffc_key_generate.ll
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/ir.ll
 ; php/optimized/ir_ra.ll
@@ -64,8 +62,9 @@ entry:
   ret i32 %4
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/solver_api.c.ll
+; boost/optimized/to_chars.ll
 ; glslang/optimized/Constant.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll

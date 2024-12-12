@@ -1,11 +1,10 @@
 
-; 39 occurrences:
+; 37 occurrences:
 ; arrow/optimized/record_batch.cc.ll
 ; arrow/optimized/table.cc.ll
 ; assimp/optimized/clipper.cpp.ll
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/gradient_checker.cc.ll
-; ceres/optimized/trust_region_minimizer.cc.ll
 ; faiss/optimized/HNSW.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; glslang/optimized/Intermediate.cpp.ll
@@ -13,7 +12,6 @@
 ; gromacs/optimized/gmx_nmtraj.cpp.ll
 ; ipopt/optimized/IpStdAugSystemSolver.ll
 ; lightgbm/optimized/metadata.cpp.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/i915_perf.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -40,7 +38,7 @@
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %.mask = and i64 %2, 17179869184
@@ -54,7 +52,7 @@ entry:
 ; oniguruma/optimized/euc_jp.ll
 ; oniguruma/optimized/sjis.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -71,7 +69,7 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -82,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %.mask = and i64 %2, 2147483648
@@ -90,7 +88,7 @@ entry:
   ret i1 %3
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/chunked_array.cc.ll
 ; arrow/optimized/concatenate.cc.ll
@@ -106,7 +104,6 @@ entry:
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/clipper.cpp.ll
-; brotli/optimized/brotli_bit_stream.c.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/gradient_checking_cost_function.cc.ll
@@ -159,7 +156,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000328(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 %0, %1
   %.mask = and i64 %2, 2147483648
@@ -167,14 +164,10 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
-; ceres/optimized/cgnr_solver.cc.ll
-; ceres/optimized/iterative_schur_complement_solver.cc.ll
-; ceres/optimized/power_series_expansion_preconditioner.cc.ll
-; ceres/optimized/schur_complement_solver.cc.ll
+; 1 occurrences:
 ; gromacs/optimized/selectioncollection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000128(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %.mask = and i64 %2, 2147483648
@@ -188,11 +181,25 @@ entry:
 ; ceres/optimized/power_series_expansion_preconditioner.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000012a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = trunc i64 %2 to i32
   %4 = icmp sgt i32 %3, 3
+  ret i1 %4
+}
+
+; 4 occurrences:
+; ceres/optimized/cgnr_solver.cc.ll
+; ceres/optimized/iterative_schur_complement_solver.cc.ll
+; ceres/optimized/power_series_expansion_preconditioner.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000138(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 %0, %1
+  %3 = and i64 %2, 4294967288
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 
@@ -209,6 +216,18 @@ entry:
 }
 
 ; 2 occurrences:
+; ceres/optimized/trust_region_minimizer.cc.ll
+; opencv/optimized/tree.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = and i64 %2, 4294967288
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; arrow/optimized/csf_converter.cc.ll
 ; pocketpy/optimized/random.cpp.ll
 ; Function Attrs: nounwind
@@ -217,6 +236,17 @@ entry:
   %2 = sub i64 %0, %1
   %3 = trunc i64 %2 to i35
   %4 = icmp sgt i35 %3, 15
+  ret i1 %4
+}
+
+; 1 occurrences:
+; brotli/optimized/brotli_bit_stream.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = and i64 %2, 34359738352
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 

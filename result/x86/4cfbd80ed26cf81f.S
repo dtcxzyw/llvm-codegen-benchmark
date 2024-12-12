@@ -1,6 +1,6 @@
-func00000000000003d1:                   # @func00000000000003d1
+func00000000000007a1:                   # @func00000000000007a1
 	movzwl	%dx, %eax
 	incq	%rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

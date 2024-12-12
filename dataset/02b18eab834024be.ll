@@ -1,5 +1,5 @@
 
-; 107 occurrences:
+; 106 occurrences:
 ; abc/optimized/wlcNdr.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/matcher-byte-comp.c.ll
@@ -21,7 +21,6 @@
 ; hyperscan/optimized/repeat.c.ll
 ; lief/optimized/psa_crypto_rsa.c.ll
 ; linux/optimized/buffered-io.ll
-; linux/optimized/map.ll
 ; linux/optimized/nf_conntrack_core.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_minisocks.ll
@@ -49,6 +48,7 @@
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
 ; meshlab/optimized/glarea.cpp.ll
+; minetest/optimized/CFileSystem.cpp.ll
 ; minetest/optimized/CGUIFileOpenDialog.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; minetest/optimized/chat.cpp.ll
@@ -64,9 +64,6 @@
 ; openblas/optimized/dlansf.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
-; opencv/optimized/cornersubpix.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/g1HeapRegionManager.ll
@@ -100,6 +97,8 @@
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; z3/optimized/dl_table.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll

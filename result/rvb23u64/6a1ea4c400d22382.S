@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.h	a0, a0
 	neg	a1, a0
 	max	a0, a0, a1
@@ -18,21 +18,28 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a0, 100
 	xori	a0, a0, 1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	sext.h	a0, a0
 	neg	a1, a0
 	max	a0, a0, a1
 	srli	a0, a0, 14
 	seqz	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	sext.h	a0, a0
 	neg	a1, a0
 	max	a0, a0, a1
 	sltiu	a0, a0, 5
 	xori	a0, a0, 1
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000018:                   # @func0000000000000018
+	sext.h	a0, a0
+	neg	a1, a0
+	max	a0, a0, a1
+	sltiu	a0, a0, 100
+	xori	a0, a0, 1
+	ret
+func0000000000000048:                   # @func0000000000000048
 	sext.h	a0, a0
 	neg	a1, a0
 	max	a0, a0, a1

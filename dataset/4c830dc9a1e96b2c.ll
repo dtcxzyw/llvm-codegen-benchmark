@@ -1,5 +1,7 @@
 
-; 591 occurrences:
+; 589 occurrences:
+; boost/optimized/channel.ll
+; boost/optimized/main.ll
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/ChecksumFile.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
@@ -435,13 +437,10 @@
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info-disk-cache.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
@@ -577,7 +576,6 @@
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/descriptor.struct_pb.cc.ll
 ; yalantinglibs/optimized/example.cpp.ll
-; yalantinglibs/optimized/field_mask.struct_pb.cc.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
@@ -592,25 +590,24 @@
 ; yalantinglibs/optimized/type.struct_pb.cc.ll
 ; yalantinglibs/optimized/wrappers.struct_pb.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000086(i64 %0, ptr %1, ptr %2) #0 {
+define i64 @func0000000000000186(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
-  %4 = icmp eq ptr %3, %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = icmp eq ptr %1, %3
   %5 = shl nuw i64 %0, 1
   %6 = select i1 %4, i64 30, i64 %5
   ret i64 %6
 }
 
-; 25 occurrences:
-; arrow/optimized/utf8.cc.ll
+; 23 occurrences:
+; boost/optimized/code_conversion.ll
+; boost/optimized/test_codecvt.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
-; fmt/optimized/xchar-test.cc.ll
 ; hermes/optimized/BCP47Parser.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
-; jsonnet/optimized/parser.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; libquic/optimized/string16.cc.ll
@@ -626,14 +623,25 @@ entry:
 ; nlohmann_json/optimized/unit-bson.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
-; pbrt-v4/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000087(i64 %0, ptr %1, ptr %2) #0 {
+define i64 @func0000000000000187(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
-  %4 = icmp eq ptr %3, %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = icmp eq ptr %1, %3
   %5 = shl nuw nsw i64 %0, 1
   %6 = select i1 %4, i64 6, i64 %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; glslang/optimized/iomapper.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000106(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -64
+  %4 = icmp eq ptr %1, %3
+  %5 = shl nuw i64 %0, 1
+  %6 = select i1 %4, i64 30, i64 %5
   ret i64 %6
 }
 
@@ -642,10 +650,10 @@ entry:
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000084(i64 %0, ptr %1, ptr %2) #0 {
+define i64 @func0000000000000184(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 88
-  %4 = icmp eq ptr %3, %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 88
+  %4 = icmp eq ptr %1, %3
   %5 = shl i64 %0, 1
   %6 = select i1 %4, i64 30, i64 %5
   ret i64 %6

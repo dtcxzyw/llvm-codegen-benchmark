@@ -4,7 +4,7 @@
 ; opencv/optimized/persistence_yml.cpp.ll
 ; quickjs/optimized/qjsc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000888(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000002108(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 26
   %4 = icmp ult i8 %1, 10

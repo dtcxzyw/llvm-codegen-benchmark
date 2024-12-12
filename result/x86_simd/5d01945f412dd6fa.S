@@ -66,3 +66,28 @@ func000000000000000f:                   # @func000000000000000f
 	vpaddw	%ymm1, %ymm0, %ymm0
 	vpaddw	%ymm2, %ymm0, %ymm0
 	retq
+.LCPI2_0:
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+.LCPI2_1:
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+func000000000000000c:                   # @func000000000000000c
+	vpandd	.LCPI2_1(%rip){1to8}, %ymm2, %ymm2
+	vpaddw	%ymm1, %ymm0, %ymm0
+	vpaddw	%ymm2, %ymm0, %ymm0
+	retq

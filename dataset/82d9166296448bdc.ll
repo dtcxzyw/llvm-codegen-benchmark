@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
@@ -12,7 +12,6 @@
 ; spike/optimized/f32_to_ui32.ll
 ; spike/optimized/f64_to_i32.ll
 ; spike/optimized/f64_to_ui32.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_addMagsF64.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll

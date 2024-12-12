@@ -1,11 +1,11 @@
 
-%struct.XHCIInterrupter.2593270 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2593248], i32, i32 }
-%struct.XHCIEvent.2593248 = type { i32, i32, i64, i32, i32, i8, i8 }
-%struct.object_slot.2709045 = type { i32, i32, %struct.jv.2709043, %struct.jv.2709043 }
-%struct.jv.2709043 = type { i8, i8, i16, i32, %union.anon.2709044 }
-%union.anon.2709044 = type { ptr }
+%struct.XHCIInterrupter.2706965 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2706950], i32, i32 }
+%struct.XHCIEvent.2706950 = type { i32, i32, i64, i32, i32, i8, i8 }
+%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
+%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
+%union.anon.2821744 = type { ptr }
 
-; 64 occurrences:
+; 63 occurrences:
 ; cpython/optimized/dictobject.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; linux/optimized/algboss.ll
@@ -22,7 +22,6 @@
 ; linux/optimized/hugetlb_cgroup.ll
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/i915_sysfs.ll
-; linux/optimized/irqinit.ll
 ; linux/optimized/knc.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/mballoc.ll
@@ -78,27 +77,98 @@ entry:
   ret ptr %3
 }
 
-; 283 occurrences:
-; abc/optimized/abcHieNew.c.ll
+; 78 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cmdHist.c.ll
-; abc/optimized/compress.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/giaMinLut.c.ll
-; abc/optimized/lpkCut.c.ll
-; abc/optimized/trees.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/decimal.cc.ll
 ; clamav/optimized/extinfo.cpp.ll
-; clamav/optimized/fanotif.c.ll
 ; clamav/optimized/filefn.cpp.ll
 ; clamav/optimized/pathfn.cpp.ll
-; cmake/optimized/archive_read_disk_set_standard_lookup.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/blocksort.c.ll
+; eastl/optimized/EAScanfCore.cpp.ll
+; git/optimized/diff.ll
+; git/optimized/kwset.ll
+; git/optimized/pack-write.ll
+; gromacs/optimized/biasstate.cpp.ll
+; gromacs/optimized/nbsearch.cpp.ll
+; hermes/optimized/MicrosoftDemangle.cpp.ll
+; icu/optimized/brkiter.ll
+; icu/optimized/package.ll
+; jq/optimized/euc_jp.ll
+; jq/optimized/sjis.ll
+; libjpeg-turbo/optimized/jchuff.c.ll
+; libquic/optimized/pem_lib.c.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; meshlab/optimized/baseio.cpp.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_img_patch_param.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_texture_defragmentation.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/intersection.cpp.ll
+; meshlab/optimized/mesh.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; meshlab/optimized/seam_remover.cpp.ll
+; mitsuba3/optimized/rgb2spec_opt.cpp.ll
+; nori/optimized/textarea.cpp.ll
+; ocio/optimized/Lut3DOpCPU.cpp.ll
+; oniguruma/optimized/euc_jp.ll
+; oniguruma/optimized/sjis.ll
+; openblas/optimized/dpbtrf.c.ll
+; opencv/optimized/mser.cpp.ll
+; opencv/optimized/persistence_types.cpp.ll
+; openjdk/optimized/ProcessPath.ll
+; openjdk/optimized/TimeZone_md.ll
+; openjdk/optimized/UnixNativeDispatcher.ll
+; openjdk/optimized/UnixOperatingSystem.ll
+; openjdk/optimized/bootstrapInfo.ll
+; openjdk/optimized/childproc.ll
+; openjdk/optimized/jchuff.ll
+; openjdk/optimized/sharedRuntimeTrig.ll
+; openmpi/optimized/fs_base_get_parent_dir.ll
+; openspiel/optimized/Par.cpp.ll
+; openspiel/optimized/dou_dizhu_utils.cc.ll
+; openusd/optimized/mvref_common.c.ll
+; ozz-animation/optimized/animation_builder.cc.ll
+; php/optimized/document.ll
+; php/optimized/php_xmlreader.ll
+; raylib/optimized/rmodels.c.ll
+; redis/optimized/redis-benchmark.ll
+; redis/optimized/redis-cli.ll
+; slurm/optimized/spank.ll
+; wolfssl/optimized/sp_int.c.ll
+; yosys/optimized/fstapi.ll
+; zxing/optimized/ODCode93Reader.cpp.ll
+; zxing/optimized/PDFReader.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 32
+  %3 = getelementptr nusw nuw [3 x double], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 221 occurrences:
+; abc/optimized/abcHieNew.c.ll
+; abc/optimized/compress.c.ll
+; abc/optimized/lpkCut.c.ll
+; abc/optimized/trees.c.ll
 ; cmake/optimized/trees.c.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -208,40 +278,27 @@ entry:
 ; cvc5/optimized/type_node.cpp.ll
 ; darktable/optimized/metadata.c.ll
 ; draco/optimized/float_points_tree_encoder.cc.ll
-; eastl/optimized/EAScanfCore.cpp.ll
 ; git/optimized/apply.ll
-; git/optimized/diff.ll
 ; git/optimized/fsmonitor.ll
-; git/optimized/kwset.ll
 ; git/optimized/object-name.ll
-; git/optimized/pack-write.ll
 ; git/optimized/update-index.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/nbsearch.cpp.ll
 ; gromacs/optimized/trees.c.ll
 ; grpc/optimized/party.cc.ll
 ; hdf5/optimized/sio_engine.c.ll
-; hermes/optimized/MicrosoftDemangle.cpp.ll
-; icu/optimized/brkiter.ll
 ; icu/optimized/ctest.ll
 ; icu/optimized/package.ll
 ; icu/optimized/rbnf.ll
 ; icu/optimized/ucnvisci.ll
-; jq/optimized/euc_jp.ll
 ; jq/optimized/jv.ll
-; jq/optimized/sjis.ll
-; libjpeg-turbo/optimized/jchuff.c.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
-; libquic/optimized/pem_lib.c.ll
 ; libquic/optimized/trees.c.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
-; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
@@ -249,39 +306,18 @@ entry:
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_texture_defragmentation.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
-; meshlab/optimized/intersection.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
-; mitsuba3/optimized/rgb2spec_opt.cpp.ll
-; nori/optimized/textarea.cpp.ll
 ; nuttx/optimized/fs_foreachinode.c.ll
-; ocio/optimized/Lut3DOpCPU.cpp.ll
-; oniguruma/optimized/euc_jp.ll
-; oniguruma/optimized/sjis.ll
-; openblas/optimized/dgbtrf.c.ll
-; openblas/optimized/dpbtrf.c.ll
 ; opencv/optimized/cv2_convert.cpp.ll
-; opencv/optimized/mser.cpp.ll
-; opencv/optimized/persistence_types.cpp.ll
-; openjdk/optimized/ProcessPath.ll
-; openjdk/optimized/TimeZone_md.ll
-; openjdk/optimized/UnixNativeDispatcher.ll
-; openjdk/optimized/UnixOperatingSystem.ll
-; openjdk/optimized/bootstrapInfo.ll
-; openjdk/optimized/childproc.ll
 ; openjdk/optimized/cmsgamma.ll
 ; openjdk/optimized/freeBlocks.ll
-; openjdk/optimized/jchuff.ll
-; openjdk/optimized/sharedRuntimeTrig.ll
-; openmpi/optimized/fs_base_get_parent_dir.ll
-; openspiel/optimized/Par.cpp.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openspiel/optimized/SolveBoard.cpp.ll
@@ -300,23 +336,15 @@ entry:
 ; openssl/optimized/libssl-lib-ssl_ciph.ll
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
 ; openusd/optimized/decoder.c.ll
-; openusd/optimized/mvref_common.c.ll
 ; openvdb/optimized/RayTracer.cc.ll
-; ozz-animation/optimized/animation_builder.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
-; php/optimized/document.ll
 ; php/optimized/network.ll
-; php/optimized/php_xmlreader.ll
 ; php/optimized/zend_jit_vm_helpers.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/untyped_message.cc.ll
 ; raylib/optimized/raudio.c.ll
-; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/InputGeom.cpp.ll
-; redis/optimized/redis-benchmark.ll
-; redis/optimized/redis-cli.ll
-; slurm/optimized/spank.ll
 ; stockfish/optimized/tbprobe.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
@@ -356,31 +384,28 @@ entry:
 ; taskflow/optimized/text_pipeline.cpp.ll
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
-; wolfssl/optimized/sp_int.c.ll
 ; wolfssl/optimized/wc_port.c.ll
-; yosys/optimized/fstapi.ll
 ; zlib/optimized/trees.c.ll
-; zxing/optimized/ODCode93Reader.cpp.ll
-; zxing/optimized/PDFReader.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = getelementptr nusw [3 x double], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw [24 x ptr], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; jq/optimized/jv.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/intel_migrate.ll
 ; linux/optimized/neighbour.ll
+; postgres/optimized/tsvector_op.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr [16 x %struct.XHCIInterrupter.2593270], ptr %0, i64 0, i64 %2
+  %3 = getelementptr [16 x %struct.XHCIInterrupter.2706965], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
@@ -399,7 +424,18 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr nusw [0 x %struct.object_slot.2709045], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw [0 x %struct.object_slot.2821745], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 2 occurrences:
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr i64 %1, 32
+  %3 = getelementptr nusw nuw [3 x float], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

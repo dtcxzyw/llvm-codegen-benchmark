@@ -19,7 +19,7 @@ define i8 @func0000000000000008(i8 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 1
   %3 = trunc nuw i16 %2 to i8
-  %4 = add i8 %3, %0
+  %4 = add i8 %0, %3
   ret i8 %4
 }
 
@@ -33,7 +33,7 @@ define i8 @func000000000000000f(i8 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 14
   %3 = trunc nuw nsw i16 %2 to i8
-  %4 = add nuw nsw i8 %3, %0
+  %4 = add nuw nsw i8 %0, %3
   ret i8 %4
 }
 
@@ -45,7 +45,7 @@ define i8 @func000000000000000c(i8 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 15
   %3 = trunc nuw nsw i16 %2 to i8
-  %4 = add i8 %3, %0
+  %4 = add i8 %0, %3
   ret i8 %4
 }
 
@@ -57,7 +57,7 @@ define i8 @func000000000000000e(i8 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
   %3 = trunc nuw nsw i16 %2 to i8
-  %4 = add nuw i8 %3, %0
+  %4 = add nuw i8 %0, %3
   ret i8 %4
 }
 
@@ -68,7 +68,7 @@ define i8 @func0000000000000009(i8 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
   %3 = trunc nuw i16 %2 to i8
-  %4 = add nsw i8 %3, %0
+  %4 = add nsw i8 %0, %3
   ret i8 %4
 }
 

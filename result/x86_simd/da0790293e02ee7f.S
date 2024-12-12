@@ -2,7 +2,7 @@
 	.long	4294967288                      # 0xfffffff8
 func0000000000000000:                   # @func0000000000000000
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpsrad	$31, %xmm0, %xmm1
 	vpsrld	$29, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm1
@@ -16,7 +16,7 @@ func0000000000000000:                   # @func0000000000000000
 	.long	6                               # 0x6
 func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [715827883,715827883,715827883,715827883]
 	vpmuldq	%xmm2, %xmm1, %xmm1
@@ -35,7 +35,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	6                               # 0x6
 func0000000000000004:                   # @func0000000000000004
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2   # xmm2 = [715827883,715827883,715827883,715827883]
 	vpmuldq	%xmm2, %xmm1, %xmm1
@@ -54,7 +54,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	6                               # 0x6
 func000000000000000c:                   # @func000000000000000c
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
 	vpbroadcastd	.LCPI3_0(%rip), %xmm2   # xmm2 = [715827883,715827883,715827883,715827883]
 	vpmuldq	%xmm2, %xmm1, %xmm1
@@ -73,7 +73,7 @@ func000000000000000c:                   # @func000000000000000c
 	.long	113                             # 0x71
 func000000000000000d:                   # @func000000000000000d
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
 	vpbroadcastd	.LCPI4_0(%rip), %xmm2   # xmm2 = [1216273925,1216273925,1216273925,1216273925]
 	vpmuldq	%xmm2, %xmm1, %xmm1
@@ -91,7 +91,7 @@ func000000000000000d:                   # @func000000000000000d
 	.long	2454267027                      # 0x92492493
 func0000000000000005:                   # @func0000000000000005
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
 	vpbroadcastd	.LCPI5_0(%rip), %xmm2   # xmm2 = [2454267027,2454267027,2454267027,2454267027]
 	vpmuldq	%xmm2, %xmm1, %xmm1

@@ -55,6 +55,12 @@ func000000000000000e:                   # @func000000000000000e
 	leal	16128(%rsi), %eax
 	orl	%edx, %eax
 	retq
+func0000000000000034:                   # @func0000000000000034
+	shll	$9, %edx
+	orl	%edi, %edx
+	leal	-1(%rsi), %eax
+	orl	%edx, %eax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	shll	$7, %edx
 	orl	%edi, %edx

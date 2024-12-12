@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqb	.LCPI1_0(%rip), %xmm0, %xmm0
 	retq
 .LCPI2_0:
-	.zero	16,32
+	.zero	16,246
 func0000000000000004:                   # @func0000000000000004
 	vpcmpltub	.LCPI2_0(%rip), %xmm0, %k0
 	vpmovm2b	%k0, %xmm0

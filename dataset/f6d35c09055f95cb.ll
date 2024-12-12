@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/management.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add nsw i64 %2, -4294967296
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, -4294967296
@@ -36,7 +36,7 @@ entry:
 ; gromacs/optimized/updategroups.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 31
   %3 = add i64 %2, -4294967296
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 26
   %3 = add i64 %2, 8589934592
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, -4294967296
@@ -76,7 +76,7 @@ entry:
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, -4294967296
@@ -91,7 +91,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add nsw i64 %2, -4294967296
@@ -117,7 +117,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fa(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001ea(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add nsw i64 %2, -17179869184
@@ -130,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ea(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, -8589934592

@@ -135,16 +135,4 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; delta-rs/optimized/43y2svfstmvqcl15.ll
-; delta-rs/optimized/4zvphat0q9a964bz.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = shl nuw nsw i64 %0, 32
-  %5 = or disjoint i64 %4, %3
-  ret i64 %5
-}
-
 attributes #0 = { nounwind }

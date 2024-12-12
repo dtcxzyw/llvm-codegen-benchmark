@@ -101,7 +101,7 @@
 define float @func0000000000000000(float %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, float 0x401921FB60000000, float 0.000000e+00
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   ret float %3
 }
 

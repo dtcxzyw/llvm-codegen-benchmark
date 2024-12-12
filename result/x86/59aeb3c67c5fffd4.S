@@ -25,7 +25,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vmulss	%xmm2, %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
@@ -40,7 +40,7 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vmulss	%xmm2, %xmm1, %xmm1
-	vucomiss	%xmm0, %xmm1
+	vucomiss	%xmm1, %xmm0
 	setnp	%al
 	retq
 func000000000000000b:                   # @func000000000000000b
@@ -50,6 +50,6 @@ func000000000000000b:                   # @func000000000000000b
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vmulss	%xmm2, %xmm1, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq

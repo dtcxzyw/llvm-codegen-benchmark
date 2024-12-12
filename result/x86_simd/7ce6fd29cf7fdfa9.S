@@ -20,7 +20,7 @@
 	.long	28                              # 0x1c
 .LCPI0_3:
 	.long	29                              # 0x1d
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpmovdw	%ymm0, %xmm0
 	vpmullw	.LCPI0_0(%rip), %xmm0, %xmm0    # [23593,23593,23593,23593,23593,23593,23593,23593]
 	vpshrdw	$4, %xmm0, %xmm0, %xmm0

@@ -3,7 +3,7 @@
 ; icu/optimized/ucnv_lmb.ll
 ; linux/optimized/apic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001022(i8 %0, i8 %1) #0 {
+define i1 @func0000000000004042(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 14
   %3 = icmp eq i8 %0, 2
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/processor_perflib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000822(i8 %0, i8 %1) #0 {
+define i1 @func0000000000002042(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 10
   %3 = icmp eq i8 %0, 16

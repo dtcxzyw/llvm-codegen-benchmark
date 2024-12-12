@@ -30,7 +30,7 @@
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -50,16 +50,15 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4398046511103
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/inflate.c.ll
 ; arrow/optimized/scalar_cast_nested.cc.ll
 ; cmake/optimized/inflate.c.ll
-; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; gromacs/optimized/gpp_atomtype.cpp.ll
 ; gromacs/optimized/inflate.c.ll
 ; libquic/optimized/inflate.c.ll
@@ -77,10 +76,21 @@ entry:
 ; wireshark/optimized/packet-pdcp-nr.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = icmp samesign ult i64 %1, %3
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -91,20 +101,32 @@ entry:
 define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -16
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp ule i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
 ; 3 occurrences:
+; hermes/optimized/CharacterProperties.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/RegAllocGreedy.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = icmp samesign uge i64 %1, %3
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; linux/optimized/compaction.ll
 ; llvm/optimized/DWARFUnit.cpp.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -112,10 +134,10 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 63
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ugt i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

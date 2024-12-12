@@ -15,4 +15,16 @@ entry:
   ret float %3
 }
 
+; 2 occurrences:
+; opencv/optimized/mathfuncs.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; Function Attrs: nounwind
+define float @func0000000000000004(double %0) #0 {
+entry:
+  %1 = fcmp ogt double %0, 1.000000e+00
+  %2 = select i1 %1, double 1.000000e+00, double %0
+  %3 = fptrunc double %2 to float
+  ret float %3
+}
+
 attributes #0 = { nounwind }

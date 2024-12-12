@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -103,7 +104,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
   %4 = lshr i64 %3, %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }

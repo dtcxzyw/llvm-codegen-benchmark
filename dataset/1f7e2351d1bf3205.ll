@@ -2,13 +2,13 @@
 ; 1 occurrences:
 ; folly/optimized/Elf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c2(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000c3(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 6
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 4
   ret ptr %7
 }
 
@@ -41,8 +41,61 @@ entry:
   ret ptr %7
 }
 
-; 11 occurrences:
+; 1 occurrences:
 ; git/optimized/packfile.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001ff(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
+  ret ptr %7
+}
+
+; 1 occurrences:
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000f0(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr ptr, ptr %5, i64 %0
+  %7 = getelementptr i8, ptr %6, i64 -8
+  ret ptr %7
+}
+
+; 3 occurrences:
+; freetype/optimized/sfnt.c.ll
+; hyperscan/optimized/mpv.c.ll
+; llvm/optimized/MachOObjectFile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ff(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 2
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; redis/optimized/rax.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001fb(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+; 10 occurrences:
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/match.c.ll
@@ -54,42 +107,26 @@ entry:
 ; hyperscan/optimized/stream_compress.c.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001ea(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000001fe(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw i8, ptr %6, i64 -8
   ret ptr %7
 }
 
 ; 1 occurrences:
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000e0(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr ptr, ptr %5, i64 %0
-  %7 = getelementptr i8, ptr %6, i64 -8
-  ret ptr %7
-}
-
-; 4 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
-; freetype/optimized/sfnt.c.ll
-; hyperscan/optimized/mpv.c.ll
-; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000fe(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw i8, ptr %6, i64 -4
   ret ptr %7
 }
 

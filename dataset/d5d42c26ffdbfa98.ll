@@ -1,8 +1,10 @@
 
-; 87 occurrences:
+; 109 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/future.cc.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
+; boost/optimized/pattern.ll
+; boost/optimized/url_view_base.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -64,7 +66,6 @@
 ; openusd/optimized/meshGeneratorBase.cpp.ll
 ; php/optimized/array.ll
 ; php/optimized/hash_sha.ll
-; php/optimized/math.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; quantlib/optimized/hestonslvmcmodel.ll
@@ -86,12 +87,33 @@
 ; velox/optimized/Split.cpp.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/5syv1375c7i7870jctt3co1ip.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -121,12 +143,14 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 45 occurrences:
+; 57 occurrences:
+; boost/optimized/to_chars.ll
+; boost/optimized/url_base.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
@@ -171,17 +195,28 @@ entry:
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/9fz5l76t5byggb8exxkeuxjql.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
-; 108 occurrences:
+; 109 occurrences:
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; cpython/optimized/basearith.ll
@@ -294,7 +329,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -308,7 +343,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -320,12 +355,12 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -334,11 +369,12 @@ entry:
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -351,7 +387,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }
@@ -362,7 +398,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }

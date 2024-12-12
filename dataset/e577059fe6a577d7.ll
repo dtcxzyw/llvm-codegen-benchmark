@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; actix-rs/optimized/2m9lq42maoywd5kd.ll
 ; coreutils-rs/optimized/4ooodgzovc6dgngk.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -17,7 +17,6 @@
 ; spike/optimized/f128_to_i32.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3ze8abiqj6g8qouh.ll
 ; typst-rs/optimized/5e0rue5wyvshgkgw.ll
@@ -31,7 +30,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; linux/optimized/printk_ringbuffer.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
@@ -45,6 +44,8 @@ entry:
 ; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/codeCache.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:

@@ -1,3 +1,3 @@
 func0000000000000000:                   # @func0000000000000000
-	vandps	%xmm0, %xmm1, %xmm0
+	vandps	%xmm1, %xmm0, %xmm0
 	retq

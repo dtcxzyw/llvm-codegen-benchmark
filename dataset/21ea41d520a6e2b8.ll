@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; assimp/optimized/BlenderScene.cpp.ll
+; 3 occurrences:
 ; assimp/optimized/STLLoader.cpp.ll
 ; linux/optimized/xhci-ring.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll

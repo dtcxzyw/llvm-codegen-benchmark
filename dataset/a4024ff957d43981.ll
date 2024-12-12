@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/multibit_build.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -9,16 +9,17 @@
 ; openssl/optimized/libcrypto-shlib-x_long.ll
 ; rand-rs/optimized/qpqwmytuo9t2y51.ll
 ; wireshark/optimized/packet-ismacryp.c.ll
+; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 7
   ret i32 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; arrow/optimized/diff.cc.ll
@@ -27,6 +28,7 @@ entry:
 ; clamav/optimized/rebuildpe.c.ll
 ; libquic/optimized/error_correction.c.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; slurm/optimized/step_launch.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; velox/optimized/Sequence.cpp.ll
@@ -36,12 +38,12 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = and i32 %3, 3
   ret i32 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/fretTime.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -49,6 +51,7 @@ entry:
 ; abc/optimized/sbdCut.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/mbox.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; libquic/optimized/error_correction.c.ll
@@ -64,7 +67,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = and i32 %3, 1048575
   ret i32 %4
 }

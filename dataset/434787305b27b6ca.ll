@@ -1,5 +1,5 @@
 
-; 998 occurrences:
+; 1009 occurrences:
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/satSolver2.c.ll
@@ -209,7 +209,6 @@
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/hbm.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hda_jack.ll
@@ -225,7 +224,6 @@
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/ip6_output.ll
@@ -234,7 +232,6 @@
 ; linux/optimized/keyboard.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/libata-sff.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/md.ll
 ; linux/optimized/message.ll
 ; linux/optimized/mon_bin.ll
@@ -243,7 +240,6 @@
 ; linux/optimized/pci.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/policydb.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/reg.ll
@@ -268,7 +264,6 @@
 ; linux/optimized/tdls.ll
 ; linux/optimized/tls.ll
 ; linux/optimized/uhci-hcd.ll
-; linux/optimized/utosi.ll
 ; linux/optimized/vgacon.ll
 ; linux/optimized/vsyscall_64.ll
 ; linux/optimized/vt.ll
@@ -379,7 +374,6 @@
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/Warnings.cpp.ll
-; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
@@ -399,13 +393,29 @@
 ; luajit/optimized/lj_profile_dyn.ll
 ; luajit/optimized/lj_str.ll
 ; luajit/optimized/lj_str_dyn.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/IrCallWrapperX64.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_render.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_draw_rect.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_menu.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_switch.ll
 ; mimalloc/optimized/page.c.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
@@ -500,10 +510,8 @@
 ; openjdk/optimized/zBarrierSetC2.ll
 ; openssl/optimized/libcrypto-lib-decoder_lib.ll
 ; openssl/optimized/libcrypto-lib-ecx_backend.ll
-; openssl/optimized/libcrypto-lib-ecx_key.ll
 ; openssl/optimized/libcrypto-shlib-decoder_lib.ll
 ; openssl/optimized/libcrypto-shlib-ecx_backend.ll
-; openssl/optimized/libcrypto-shlib-ecx_key.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_reactor.ll
 ; openssl/optimized/libssl-lib-quic_sstream.ll
@@ -515,7 +523,6 @@
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_wire.ll
 ; openssl/optimized/libtestutil-lib-driver.ll
-; openssl/optimized/quic_ackm_test-bin-quic_ackm_test.ll
 ; openssl/optimized/quic_fifd_test-bin-quic_fifd_test.ll
 ; openusd/optimized/changes.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
@@ -534,6 +541,7 @@
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_ssa.ll
 ; postgres/optimized/procarray.ll
+; postgres/optimized/regcomp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
@@ -794,6 +802,7 @@
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/erf.c.ll
+; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-alp.c.ll
 ; wireshark/optimized/packet-btle.c.ll
 ; wireshark/optimized/packet-clnp.c.ll
@@ -998,6 +1007,8 @@
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
 ; z3/optimized/wmax.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:

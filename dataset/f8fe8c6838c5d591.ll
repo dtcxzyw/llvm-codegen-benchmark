@@ -15,7 +15,7 @@ entry:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0) #0 {
+define i1 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 16
   %2 = add i32 %1, -458752

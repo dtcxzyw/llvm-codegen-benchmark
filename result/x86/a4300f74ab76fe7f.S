@@ -1,12 +1,12 @@
-func000000000000000c:                   # @func000000000000000c
+func0000000000000005:                   # @func0000000000000005
 	movzbl	%sil, %ecx
-	movl	$256, %eax                      # imm = 0x100
+	movl	$100, %eax
 	subl	%ecx, %eax
 	imull	%edi, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+func000000000000000c:                   # @func000000000000000c
 	movzbl	%sil, %ecx
-	movl	$64, %eax
+	movl	$256, %eax                      # imm = 0x100
 	subl	%ecx, %eax
 	imull	%edi, %eax
 	retq

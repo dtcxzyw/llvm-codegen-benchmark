@@ -1,12 +1,12 @@
 
-%class.QCPBarsData.3260434 = type { double, double }
+%class.QCPBarsData.3451180 = type { double, double }
 
 ; 3 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; openjdk/optimized/mutableNUMASpace.ll
 ; openjdk/optimized/os.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000045(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %0, i64 %1
@@ -14,25 +14,20 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 11 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; hyperscan/optimized/teddy.c.ll
 ; hyperscan/optimized/teddy_avx2.c.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
-; luajit/optimized/lj_api.ll
-; luajit/optimized/lj_api_dyn.ll
-; luajit/optimized/lj_snap.ll
-; luajit/optimized/lj_snap_dyn.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/mutableNUMASpace.ll
 ; openjdk/optimized/os.ll
 ; openjdk/optimized/psYoungGen.ll
-; openjdk/optimized/verifier.ll
 ; openjdk/optimized/virtualspace.ll
 ; openmpi/optimized/common_sm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %0, i64 %1
@@ -40,13 +35,9 @@ entry:
   ret i1 %5
 }
 
-; 82 occurrences:
+; 78 occurrences:
 ; hwloc/optimized/topology-linux.ll
-; llvm/optimized/Value.cpp.ll
-; luajit/optimized/lj_func.ll
-; luajit/optimized/lj_func_dyn.ll
 ; openjdk/optimized/cardTableRS.ll
-; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/g1AllocRegion.ll
 ; openjdk/optimized/g1Allocator.ll
 ; openjdk/optimized/g1Arguments.ll
@@ -124,7 +115,7 @@ entry:
 ; php/optimized/phpdbg_watch.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw ptr, ptr %0, i64 %1
@@ -144,21 +135,16 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaEnable.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
-; luajit/optimized/lj_func.ll
-; luajit/optimized/lj_func_dyn.ll
-; luajit/optimized/lj_tab.ll
-; luajit/optimized/lj_tab_dyn.ll
-; nix/optimized/nix-build.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/os_linux_x86.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %0, i64 %1
@@ -170,11 +156,41 @@ entry:
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/os_linux_x86.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %0, i64 %1
   %5 = icmp ne ptr %4, %3
+  ret i1 %5
+}
+
+; 5 occurrences:
+; llvm/optimized/Value.cpp.ll
+; luajit/optimized/lj_func.ll
+; luajit/optimized/lj_func_dyn.ll
+; openjdk/optimized/constMethod.ll
+; openjdk/optimized/serialFullGC.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = icmp ugt ptr %4, %3
+  ret i1 %5
+}
+
+; 5 occurrences:
+; luajit/optimized/lj_api.ll
+; luajit/optimized/lj_api_dyn.ll
+; luajit/optimized/lj_snap.ll
+; luajit/optimized/lj_snap_dyn.ll
+; openjdk/optimized/verifier.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = icmp ult ptr %4, %3
   ret i1 %5
 }
 
@@ -191,6 +207,21 @@ entry:
   ret i1 %5
 }
 
+; 5 occurrences:
+; boost/optimized/area.ll
+; luajit/optimized/lj_func.ll
+; luajit/optimized/lj_func_dyn.ll
+; luajit/optimized/lj_tab.ll
+; luajit/optimized/lj_tab_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = icmp eq ptr %4, %3
+  ret i1 %5
+}
+
 ; 4 occurrences:
 ; linux/optimized/gup.ll
 ; linux/optimized/hugetlb.ll
@@ -200,7 +231,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %class.QCPBarsData.3260434, ptr %0, i64 %1
+  %4 = getelementptr %class.QCPBarsData.3451180, ptr %0, i64 %1
   %5 = icmp eq ptr %4, %3
   ret i1 %5
 }

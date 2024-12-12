@@ -1,6 +1,7 @@
 
-; 104 occurrences:
+; 103 occurrences:
 ; abc/optimized/decompress.c.ll
+; boost/optimized/topology.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/decompress.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -75,7 +76,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -102,14 +102,13 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = trunc i32 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -120,7 +119,7 @@ define i8 @func000000000000000f(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 4
   %3 = trunc nuw nsw i32 %2 to i8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -134,7 +133,7 @@ define i8 @func0000000000000007(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = trunc nuw nsw i32 %2 to i8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -149,7 +148,7 @@ define i8 @func0000000000000006(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 28
   %3 = trunc nuw nsw i32 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -160,7 +159,7 @@ define i8 @func0000000000000008(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 16
   %3 = trunc i32 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 

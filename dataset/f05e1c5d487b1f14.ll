@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 70 occurrences:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/batch.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -32,7 +32,6 @@
 ; mitsuba3/optimized/null.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
@@ -92,31 +91,6 @@ entry:
 }
 
 ; 2 occurrences:
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 33
-  %3 = shl nuw i64 %0, 1
-  %4 = select i1 %2, i64 %3, i64 32
-  ret i64 %4
-}
-
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
-; eastl/optimized/EACallback.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 33
-  %3 = shl i64 %0, 5
-  %4 = select i1 %2, i64 %3, i64 512
-  ret i64 %4
-}
-
-; 2 occurrences:
 ; cpython/optimized/frameobject.ll
 ; pbrt-v4/optimized/color.cpp.ll
 ; Function Attrs: nounwind
@@ -125,6 +99,17 @@ entry:
   %2 = icmp sgt i64 %1, 0
   %3 = shl nuw nsw i64 %0, 32
   %4 = select i1 %2, i64 %3, i64 0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; eastl/optimized/EACallback.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ugt i64 %1, 8
+  %3 = shl i64 %0, 3
+  %4 = select i1 %2, i64 %3, i64 32
   ret i64 %4
 }
 

@@ -1,18 +1,19 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	sext.w	a0, a0
 	slli	a1, a1, 48
-	lui	a2, 160000
-	mulhu	a1, a1, a2
+	srli	a1, a1, 48
+	slli	a2, a1, 1
+	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	lui	a2, 736
 	mulhu	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	lui	a2, 4112

@@ -1,9 +1,10 @@
 
-; 170 occurrences:
+; 177 occurrences:
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/GenVertexNormalsProcess.cpp.ll
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; bullet3/optimized/b3FixedConstraint.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -113,7 +114,6 @@
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; opencv/optimized/vgg.cpp.ll
-; openexr/optimized/base.c.ll
 ; openjdk/optimized/callGenerator.ll
 ; openjdk/optimized/cmsintrp.ll
 ; openjdk/optimized/cmsopt.ll
@@ -170,6 +170,13 @@
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, i1 %1, float %2) #0 {
 entry:

@@ -1,6 +1,5 @@
 
-; 12 occurrences:
-; gromacs/optimized/slasq5.cpp.ll
+; 11 occurrences:
 ; meshlab/optimized/alignDialog.cpp.ll
 ; meshlab/optimized/edit_mutualcorrsDialog.cpp.ll
 ; meshlab/optimized/edit_referencingDialog.cpp.ll
@@ -32,7 +31,7 @@ entry:
   %3 = add i32 %2, -8
   %4 = sub i32 %3, %1
   %5 = add nsw i32 %4, 4
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

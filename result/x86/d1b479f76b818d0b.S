@@ -17,3 +17,9 @@ func0000000000000004:                   # @func0000000000000004
 	leaq	(%rdi,%rax,4), %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
+func0000000000000016:                   # @func0000000000000016
+	movzbl	%sil, %eax
+	shlq	$11, %rdi
+	leaq	(%rdi,%rax,8), %rax
+	leaq	(%rax,%rax,2), %rax
+	retq

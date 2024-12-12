@@ -1,4 +1,4 @@
-func0000000000000008:                   // @func0000000000000008
+func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	add	x8, x1, w2, uxtw
 	add	x8, x8, w0, sxtw #4
@@ -14,7 +14,7 @@ func0000000000000042:                   // @func0000000000000042
 	sub	x0, x8, #120
 	ret
                                         // -- End function
-func000000000000002a:                   // @func000000000000002a
+func000000000000003e:                   // @func000000000000003e
 // %bb.0:                               // %entry
 	mov	w8, #88                         // =0x58
 	umaddl	x8, w2, w8, x1
@@ -22,7 +22,7 @@ func000000000000002a:                   // @func000000000000002a
 	add	x0, x8, #52
 	ret
                                         // -- End function
-func000000000000006a:                   // @func000000000000006a
+func000000000000007e:                   // @func000000000000007e
 // %bb.0:                               // %entry
 	add	x8, x1, w2, uxtw #4
 	add	x8, x8, w0, sxtw #2

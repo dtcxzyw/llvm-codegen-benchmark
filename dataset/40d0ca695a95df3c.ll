@@ -14,7 +14,7 @@
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -97
   %4 = icmp ult i8 %3, 26

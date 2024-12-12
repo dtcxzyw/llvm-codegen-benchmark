@@ -34,3 +34,9 @@ func000000000000007d:                   # @func000000000000007d
 	subq	%rdi, %rax
 	addq	$1280, %rax                     # imm = 0x500
 	retq
+func000000000000007c:                   # @func000000000000007c
+	movl	%esi, %eax
+	shlq	$2, %rax
+	subq	%rdi, %rax
+	addq	$4, %rax
+	retq

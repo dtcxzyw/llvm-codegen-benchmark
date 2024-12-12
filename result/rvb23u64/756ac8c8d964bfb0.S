@@ -47,3 +47,27 @@ func0000000000000042:                   # @func0000000000000042
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	fmul.s	fa0, fa4, fa5
 	ret
+func0000000000000022:                   # @func0000000000000022
+	lui	a0, 273216
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa0, fa5
+	beqz	a0, .LBB2_3
+	fli.s	fa4, 1.0
+	flt.s	a0, fa5, fa4
+	beqz	a0, .LBB2_4
+.LBB2_2:                                # %entry
+	lui	a0, 212992
+	fmv.w.x	fa5, a0
+	fmul.s	fa0, fa4, fa5
+	ret
+.LBB2_3:                                # %entry
+	fmv.s	fa5, fa0
+	fli.s	fa4, 1.0
+	flt.s	a0, fa0, fa4
+	bnez	a0, .LBB2_2
+.LBB2_4:                                # %entry
+	fmv.s	fa4, fa5
+	lui	a0, 212992
+	fmv.w.x	fa5, a0
+	fmul.s	fa0, fa4, fa5
+	ret

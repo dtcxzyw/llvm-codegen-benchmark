@@ -8,7 +8,7 @@
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = or i32 %3, 128
   ret i32 %4
 }
@@ -26,12 +26,12 @@ entry:
 ; libevent/optimized/evutil_rand.c.ll
 ; libwebp/optimized/alpha_processing.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
-; linux/optimized/early.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/rx.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -75,7 +75,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = or disjoint i32 %3, 256
   ret i32 %4
 }
@@ -89,7 +89,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = or i32 %3, 4096
   ret i32 %4
 }
@@ -111,25 +111,13 @@ entry:
 define i32 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = or disjoint i32 %3, 1073741824
   ret i32 %4
 }
 
-; 3 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/yenta_socket.ll
-; qemu/optimized/pci-pc.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
-  %4 = or i32 %3, -2147483648
-  ret i32 %4
-}
-
-; 3 occurrences:
+; 4 occurrences:
+; hermes/optimized/HBC.cpp.ll
 ; linux/optimized/intel_fbc.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
@@ -137,8 +125,20 @@ entry:
 define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = or i32 %3, 1073741824
+  ret i32 %4
+}
+
+; 2 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; linux/optimized/yenta_socket.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = or disjoint i32 %0, %2
+  %4 = or i32 %3, -1342177280
   ret i32 %4
 }
 

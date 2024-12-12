@@ -1,24 +1,17 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	seqz	a1, a1
 	andi	a0, a0, 255
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
-	srli	a1, a1, 32
-	andi	a0, a0, 3
-	xori	a0, a0, 1
+func0000000000000101:                   # @func0000000000000101
+	srli	a1, a1, 31
+	not	a0, a0
+	snez	a1, a1
+	bexti	a0, a0, 32
 	or	a0, a0, a1
-	seqz	a0, a0
 	ret
-func0000000000000041:                   # @func0000000000000041
-	sltiu	a1, a1, 2
-	andi	a0, a0, 12
-	addi	a0, a0, -4
-	seqz	a0, a0
-	andn	a0, a0, a1
-	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	snez	a1, a1
 	srliw	a0, a0, 1
 	lui	a2, 104858

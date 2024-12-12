@@ -1,5 +1,5 @@
 
-; 151 occurrences:
+; 150 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/sclSize.c.ll
 ; assimp/optimized/BlenderModifier.cpp.ll
@@ -59,7 +59,6 @@
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/cost_evaluator.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
@@ -152,18 +151,20 @@
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/zstring.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; hermes/optimized/Conversions.cpp.ll
 ; nghttp2/optimized/llhttp.c.ll
 ; pbrt-v4/optimized/progressreporter.cpp.ll
+; php/optimized/snprintf.ll
 ; wireshark/optimized/opcua.c.ll
 ; wireshark/optimized/packet-lorawan.c.ll
 ; wireshark/optimized/packet-quic.c.ll
@@ -171,7 +172,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -225,12 +226,12 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -241,12 +242,12 @@ entry:
 ; opencv/optimized/reed_solomon_decoder.cpp.ll
 ; openjdk/optimized/block.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -256,7 +257,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -265,12 +266,12 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 44 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; clamav/optimized/filtering.c.ll
@@ -19,6 +19,7 @@
 ; lua/optimized/lgc.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_obj_style.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; openjdk/optimized/check_code.ll
@@ -44,21 +45,20 @@
 ; stb/optimized/stb_voxel_render.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; linux/optimized/rate.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
@@ -66,7 +66,7 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -80,11 +80,11 @@ entry:
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -100,7 +100,7 @@ entry:
 ; proxygen/optimized/QPACKDecoder.cpp.ll
 ; qemu/optimized/system_memory.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -134,7 +134,7 @@ entry:
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -148,11 +148,11 @@ entry:
 ; php/optimized/zend_jit.ll
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000ec(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -163,7 +163,7 @@ entry:
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl i32 33554432, %2
@@ -176,7 +176,7 @@ entry:
 ; linux/optimized/virtio_pci_modern_dev.ll
 ; linux/optimized/yenta_socket.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 64, %2
@@ -188,7 +188,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_measure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl i32 262144, %2

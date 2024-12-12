@@ -16,13 +16,13 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fe(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
   %6 = mul nuw nsw i64 %5, %4
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -33,26 +33,26 @@ entry:
 ; php/optimized/xml.ll
 ; php/optimized/zend_ini.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000de(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000df(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 16
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
   %6 = mul nuw nsw i64 %4, %5
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; php/optimized/array.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ee(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000ef(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 16
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
   %6 = mul nuw nsw i64 %5, %4
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -72,26 +72,26 @@ entry:
 ; 1 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = zext i32 %1 to i64
   %6 = mul nuw nsw i64 %5, %4
-  %7 = getelementptr nusw float, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw float, ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; freetype/optimized/ftbitmap.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
   %6 = mul nuw nsw i64 %4, %5
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

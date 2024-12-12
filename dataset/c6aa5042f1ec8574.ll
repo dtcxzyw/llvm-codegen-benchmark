@@ -21,7 +21,7 @@ entry:
   ret i32 %4
 }
 
-; 266 occurrences:
+; 268 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -31,6 +31,8 @@ entry:
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
+; boost/optimized/partition.ll
+; boost/optimized/to_chars.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

@@ -1,5 +1,5 @@
 
-; 165 occurrences:
+; 166 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
@@ -122,6 +122,7 @@
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/crop_and_resize_layer.cpp.ll
 ; opencv/optimized/depth_to_3d.cpp.ll
+; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/digits_svm.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
 ; opencv/optimized/dynafu_tsdf.cpp.ll

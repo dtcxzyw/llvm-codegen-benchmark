@@ -14,7 +14,7 @@ func000000000000000d:                   # @func000000000000000d
 	addiw	a0, a0, -3
 	ret
 func0000000000000003:                   # @func0000000000000003
-	addiw	a0, a0, -5
+	addiw	a0, a0, 1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	addiw	a0, a0, 2

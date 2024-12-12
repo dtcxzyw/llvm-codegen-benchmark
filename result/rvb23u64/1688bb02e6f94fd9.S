@@ -5,19 +5,6 @@ func000000000000001f:                   # @func000000000000001f
 	or	a0, a0, a2
 	ori	a0, a0, 256
 	ret
-func000000000000003f:                   # @func000000000000003f
-	slliw	a2, a2, 24
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ori	a0, a0, 256
-	ret
-func000000000000001c:                   # @func000000000000001c
-	andi	a2, a2, 255
-	slli	a2, a2, 16
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ori	a0, a0, 256
-	ret
 func000000000000003c:                   # @func000000000000003c
 	andi	a2, a2, 255
 	slli	a2, a2, 9
@@ -41,13 +28,12 @@ func000000000000001a:                   # @func000000000000001a
 	addiw	a1, a1, 1024
 	or	a0, a0, a1
 	ret
-func000000000000001b:                   # @func000000000000001b
+func000000000000003f:                   # @func000000000000003f
 	andi	a2, a2, 255
-	or	a0, a0, a1
-	lui	a1, 524288
-	slli	a2, a2, 8
+	slli	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
+	bseti	a0, a0, 13
 	ret
 func0000000000000017:                   # @func0000000000000017
 	slliw	a2, a2, 24
@@ -92,6 +78,13 @@ func0000000000000019:                   # @func0000000000000019
 	slli	a2, a2, 2
 	or	a0, a0, a1
 	or	a0, a0, a2
+	ret
+func000000000000001c:                   # @func000000000000001c
+	andi	a2, a2, 191
+	slli	a2, a2, 16
+	or	a0, a0, a1
+	or	a0, a0, a2
+	bseti	a0, a0, 22
 	ret
 func0000000000000014:                   # @func0000000000000014
 	slliw	a2, a2, 24

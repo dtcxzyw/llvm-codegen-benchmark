@@ -50,6 +50,12 @@ func000000000000003d:                   # @func000000000000003d
 	leaq	(%rsi,%rax,4), %rax
 	addq	%rdi, %rax
 	retq
+func000000000000003e:                   # @func000000000000003e
+	movl	%edx, %eax
+	shlq	$28, %rax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
 func0000000000000038:                   # @func0000000000000038
 	movl	%edx, %eax
 	leaq	(%rsi,%rax,2), %rax

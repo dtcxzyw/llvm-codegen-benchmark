@@ -15,7 +15,7 @@ entry:
   %2 = lshr i32 %1, 28
   %3 = trunc nuw nsw i32 %2 to i8
   %4 = and i8 %3, 6
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 
@@ -30,11 +30,11 @@ entry:
   %2 = lshr i32 %1, 18
   %3 = trunc i32 %2 to i8
   %4 = and i8 %3, 12
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
 ; brotli/optimized/transform.c.ll
@@ -47,7 +47,6 @@ entry:
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/tcp_minisocks.ll
@@ -88,7 +87,7 @@ entry:
   %2 = lshr i32 %1, 25
   %3 = trunc nuw nsw i32 %2 to i8
   %4 = and i8 %3, 32
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

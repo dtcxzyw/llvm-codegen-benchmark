@@ -1,19 +1,31 @@
 
-%"struct.irr::video::S3DVertex.2577651" = type { %"class.irr::core::vector3d.2577639", %"class.irr::core::vector3d.2577639", %"class.irr::video::SColor.2577638", %"class.irr::core::vector2d.2577652" }
-%"class.irr::core::vector3d.2577639" = type { float, float, float }
-%"class.irr::video::SColor.2577638" = type { i32 }
-%"class.irr::core::vector2d.2577652" = type { float, float }
+%"struct.irr::video::S3DVertex.2691827" = type { %"class.irr::core::vector3d.2691815", %"class.irr::core::vector3d.2691815", %"class.irr::video::SColor.2691814", %"class.irr::core::vector2d.2691828" }
+%"class.irr::core::vector3d.2691815" = type { float, float, float }
+%"class.irr::video::SColor.2691814" = type { i32 }
+%"class.irr::core::vector2d.2691828" = type { float, float }
 
 ; 2 occurrences:
 ; minetest/optimized/sky.cpp.ll
 ; openspiel/optimized/phantom_go.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %"struct.irr::video::S3DVertex.2577651", ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw %"struct.irr::video::S3DVertex.2691827", ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; minetest/optimized/mapnode.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 1
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr i8, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -26,23 +38,23 @@ entry:
   %3 = shl i32 %2, 2
   %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_display_vga.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000381(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 371 occurrences:
+; 370 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; assimp/optimized/CSMLoader.cpp.ll
@@ -111,7 +123,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -415,12 +426,12 @@ entry:
 ; z3/optimized/wmax.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -430,12 +441,12 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr nusw nuw float, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -443,12 +454,12 @@ entry:
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/tpxio.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw float, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 

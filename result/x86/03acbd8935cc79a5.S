@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shrxl	%edx, %esi, %eax
 	incl	%edi
 	cmpl	%eax, %edi
@@ -10,13 +10,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shrxl	%edx, %esi, %eax
 	incl	%edi
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	shrxl	%edx, %esi, %eax
 	incl	%edi
 	cmpl	%eax, %edi

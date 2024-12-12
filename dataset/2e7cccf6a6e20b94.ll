@@ -27,20 +27,23 @@ entry:
   ret ptr %5
 }
 
-; 63 occurrences:
+; 67 occurrences:
 ; abc/optimized/giaEdge.c.ll
+; graphviz/optimized/dotsplines.c.ll
 ; hermes/optimized/dtoa.c.ll
+; icu/optimized/ubidi.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
+; linux/optimized/ip6_output.ll
+; linux/optimized/ip_output.ll
 ; linux/optimized/keyring.ll
+; linux/optimized/tcp.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openjdk/optimized/check_code.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/brin_pageops.ll
-; postgres/optimized/brin_revmap.ll
-; postgres/optimized/brin_xlog.ll
 ; postgres/optimized/bufmgr.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/freespace.ll
@@ -52,7 +55,6 @@ entry:
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/gininsert.ll
 ; postgres/optimized/ginutil.ll
 ; postgres/optimized/ginvacuum.ll
 ; postgres/optimized/ginxlog.ll
@@ -90,7 +92,9 @@ entry:
 ; postgres/optimized/xloginsert.ll
 ; postgres/optimized/xlogutils.ll
 ; raylib/optimized/rtextures.c.ll
+; redis/optimized/t_zset.ll
 ; stb/optimized/stb_image_resize2.c.ll
+; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i32 %1) #0 {
 entry:
@@ -101,24 +105,21 @@ entry:
   ret ptr %5
 }
 
-; 22 occurrences:
+; 19 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; graphviz/optimized/cluster.c.ll
 ; graphviz/optimized/make_map.c.ll
 ; graphviz/optimized/stress.c.ll
 ; icu/optimized/ustring.ll
+; llama.cpp/optimized/ggml-alloc.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll

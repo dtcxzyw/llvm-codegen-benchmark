@@ -1,48 +1,32 @@
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	cmeq	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v2.2d, #0
-	movi	v4.4s, #21
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmgt	v1.4s, v4.4s, v1.4s
-	orr	v1.16b, v2.16b, v1.16b
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v1.8b, v0.8b
+	cmp	x2, #0
+	ccmp	w1, #21, #8, ne
+	cset	w8, lt
+	and	w0, w0, w8
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	cmeq	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v2.2d, #0
-	movi	v4.4s, #4
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmgt	v1.4s, v1.4s, v4.4s
-	orr	v1.16b, v2.16b, v1.16b
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v1.8b, v0.8b
+	cmp	x2, #0
+	ccmp	w1, #4, #0, ne
+	cset	w8, gt
+	and	w0, w8, w0
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	cmeq	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v2.2d, #0
-	movi	v4.4s, #6
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmeq	v1.4s, v1.4s, v4.4s
-	bic	v1.16b, v1.16b, v2.16b
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v1.8b, v0.8b
+	cmp	x2, #0
+	ccmp	w1, #6, #0, ne
+	cset	w8, eq
+	and	w0, w0, w8
 	ret
                                         // -- End function
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
-	cmeq	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v2.2d, #0
-	cmeq	v1.4s, v1.4s, #0
-	uzp1	v2.4s, v2.4s, v3.4s
-	mvn	v2.16b, v2.16b
-	bic	v1.16b, v2.16b, v1.16b
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v1.8b, v0.8b
+	cmp	x2, #0
+	ccmp	w1, #0, #4, ne
+	cset	w8, ne
+	and	w0, w0, w8
 	ret
                                         // -- End function

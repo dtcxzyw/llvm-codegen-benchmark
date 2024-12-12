@@ -21,7 +21,7 @@
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, -64
@@ -34,7 +34,7 @@ entry:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 3
@@ -47,7 +47,7 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, -32
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-openflow_v6.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 65535
@@ -72,7 +72,7 @@ entry:
 ; wireshark/optimized/packet-dmx.c.ll
 ; wireshark/optimized/packet-enttec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, 65535
@@ -84,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/anim_encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, -8

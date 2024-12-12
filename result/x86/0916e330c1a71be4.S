@@ -5,14 +5,14 @@ func000000000000000c:                   # @func000000000000000c
 	andb	%sil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	testl	%edx, %edx
+	cmpl	$256, %edx                      # imm = 0x100
 	sete	%al
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	testl	%edx, %edx
-	setg	%al
+	setns	%al
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq

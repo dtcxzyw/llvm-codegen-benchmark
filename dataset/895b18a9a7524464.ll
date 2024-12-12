@@ -24,7 +24,7 @@ define i64 @func0000000000000000(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add i128 %1, %2
   %4 = lshr i128 %3, 55
-  %5 = add i128 %4, %0
+  %5 = add i128 %0, %4
   %6 = trunc i128 %5 to i64
   ret i64 %6
 }
@@ -52,7 +52,7 @@ define i64 @func000000000000004c(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw i128 %1, %2
   %4 = lshr i128 %3, 56
-  %5 = add nuw nsw i128 %4, %0
+  %5 = add nuw nsw i128 %0, %4
   %6 = trunc i128 %5 to i64
   ret i64 %6
 }
@@ -77,7 +77,7 @@ define i64 @func0000000000000064(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw nsw i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = add nsw i128 %4, %0
+  %5 = add nsw i128 %0, %4
   %6 = trunc i128 %5 to i64
   ret i64 %6
 }
@@ -89,7 +89,7 @@ define i64 @func0000000000000024(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nsw i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = add nsw i128 %4, %0
+  %5 = add nsw i128 %0, %4
   %6 = trunc i128 %5 to i64
   ret i64 %6
 }
@@ -102,7 +102,7 @@ define i64 @func0000000000000068(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw nsw i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = add nuw i128 %4, %0
+  %5 = add nuw i128 %0, %4
   %6 = trunc i128 %5 to i64
   ret i64 %6
 }

@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	cmpl	%edx, %esi
 	sete	%cl
 	testl	%esi, %esi
@@ -6,7 +6,7 @@ func000000000000002c:                   # @func000000000000002c
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	cmpl	$-409203, %esi                  # imm = 0xFFF9C18D
 	sete	%cl
 	cmpl	%edx, %esi

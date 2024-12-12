@@ -12,9 +12,8 @@ entry:
   ret i16 %6
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/vmscan.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
@@ -28,7 +27,7 @@ entry:
 define i16 @func0000000000000003(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, -833
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = select i1 %1, i16 256, i16 0
   %6 = or disjoint i16 %4, %5
   ret i16 %6

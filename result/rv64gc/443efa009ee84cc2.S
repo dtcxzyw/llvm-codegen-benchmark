@@ -1,11 +1,11 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	addi	a1, a1, 3
 	srliw	a1, a1, 2
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 12
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	lui	a2, 32
 	addiw	a2, a2, -12
 	add	a1, a1, a2
@@ -35,13 +35,13 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	addi	a1, a1, 1
 	andi	a1, a1, 7
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	addi	a1, a1, 1
 	andi	a1, a1, 255
 	slli	a1, a1, 3

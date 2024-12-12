@@ -6,7 +6,7 @@
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 1, %0
@@ -29,7 +29,7 @@ entry:
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 1, %0

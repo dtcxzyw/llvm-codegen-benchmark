@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 65 occurrences:
 ; cmake/optimized/cmCMakePresetsGraph.cxx.ll
 ; cmake/optimized/cmCMakePresetsGraphReadJSON.cxx.ll
 ; cmake/optimized/multi.c.ll
@@ -9,7 +9,6 @@
 ; icu/optimized/ufmt_cmn.ll
 ; linux/optimized/ats.ll
 ; linux/optimized/cistpl.ll
-; linux/optimized/early.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/AArch64MachineFunctionInfo.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
@@ -26,7 +25,6 @@
 ; llvm/optimized/MCTargetOptionsCommandFlags.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/ParseObjc.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
@@ -75,7 +73,7 @@ entry:
   ret i16 %2
 }
 
-; 95 occurrences:
+; 92 occurrences:
 ; arrow/optimized/bridge.cc.ll
 ; cpython/optimized/codecs.ll
 ; cpython/optimized/unicodeobject.ll
@@ -91,7 +89,6 @@ entry:
 ; linux/optimized/ip_output.ll
 ; linux/optimized/psparse.ll
 ; linux/optimized/tcp_input.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -137,7 +134,6 @@ entry:
 ; llvm/optimized/ModuleUtils.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
@@ -162,7 +158,6 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; minetest/optimized/itemdef.cpp.ll
 ; nix/optimized/misc-store-flags.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/prefetch.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; openspiel/optimized/chess_board.cc.ll
@@ -179,8 +174,7 @@ entry:
   ret i16 %2
 }
 
-; 2 occurrences:
-; linux/optimized/early.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i8 %0) #0 {

@@ -7,7 +7,7 @@
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000318(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq ptr %0, null
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; curl/optimized/libcurl_la-url.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000058(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq ptr %0, null
@@ -32,7 +32,7 @@ entry:
 ; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
 ; rust-analyzer-rs/optimized/54fx8hdjlkc0fd42.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne ptr %0, null
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000302(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ne ptr %0, null

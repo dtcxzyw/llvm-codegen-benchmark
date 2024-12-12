@@ -37,7 +37,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltub	.LCPI1_0(%rip), %xmm1, %k1
 	vpsubq	%ymm0, %ymm2, %ymm0 {%k1}
@@ -59,14 +59,14 @@ func0000000000000014:                   # @func0000000000000014
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpneqb	.LCPI2_0(%rip), %xmm1, %k1
 	vpsubq	%ymm0, %ymm2, %ymm0 {%k1}
 	retq
 .LCPI3_0:
 	.quad	3                               # 0x3
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpbroadcastq	.LCPI3_0(%rip), %ymm2   # ymm2 = [3,3,3,3]
 	vptestmb	%xmm1, %xmm1, %k1
 	vpsubq	%ymm0, %ymm2, %ymm0 {%k1}

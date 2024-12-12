@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 106 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; arrow/optimized/array_base.cc.ll
@@ -42,7 +42,13 @@
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; ockam-rs/optimized/1sna1kukcpmrcv4c.ll
 ; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
@@ -78,6 +84,8 @@
 ; spike/optimized/vsrl_vi.ll
 ; spike/optimized/vsrl_vv.ll
 ; spike/optimized/vsrl_vx.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/BitUtil.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
@@ -94,6 +102,10 @@
 ; wireshark/optimized/packet-openflow_v5.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:

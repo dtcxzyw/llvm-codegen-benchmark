@@ -1,4 +1,4 @@
-func00000000000005a6:                   # @func00000000000005a6
+func0000000000001546:                   # @func0000000000001546
 	shll	$8, %edx
 	orw	%dx, %si
 	setg	%cl
@@ -6,14 +6,14 @@ func00000000000005a6:                   # @func00000000000005a6
 	sets	%al
 	andb	%cl, %al
 	retq
-func0000000000000511:                   # @func0000000000000511
+func0000000000001421:                   # @func0000000000001421
 	shll	$8, %edx
 	orl	%esi, %edx
 	notl	%edx
 	orw	%di, %dx
 	sete	%al
 	retq
-func0000000000000518:                   # @func0000000000000518
+func0000000000001428:                   # @func0000000000001428
 	shll	$8, %edx
 	orl	%esi, %edx
 	cmpw	$3, %dx

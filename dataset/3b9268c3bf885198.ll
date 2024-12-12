@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/approximately_equals.ll
 ; c3c/optimized/bigint.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; qemu/optimized/util_bitmap.c.ll

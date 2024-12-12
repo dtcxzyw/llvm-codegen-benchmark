@@ -6,7 +6,7 @@
 ; mitsuba3/optimized/stratified.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %0, %1
   %3 = and i64 %2, 2147483648

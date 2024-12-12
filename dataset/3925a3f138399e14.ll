@@ -1,11 +1,9 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/calculate_spline_moduli.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; php/optimized/timelib.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1, double %2) #0 {

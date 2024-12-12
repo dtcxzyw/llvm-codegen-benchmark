@@ -30,9 +30,3 @@ func000000000000002f:                   # @func000000000000002f
 	cmpl	$1, %esi
 	adcl	$59, %eax
 	retq
-func0000000000000105:                   # @func0000000000000105
-	andl	$8388607, %esi                  # imm = 0x7FFFFF
-	cmpl	$3474675, %esi                  # imm = 0x3504F3
-	sbbl	$-1, %edi
-	leal	-127(%rdi), %eax
-	retq

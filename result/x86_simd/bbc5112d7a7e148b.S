@@ -6,9 +6,9 @@
 	.long	117901063                       # 0x7070707
 func000000000000000b:                   # @func000000000000000b
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI1_0:
@@ -19,9 +19,9 @@ func000000000000000b:                   # @func000000000000000b
 	.long	983055                          # 0xf000f
 func000000000000000f:                   # @func000000000000000f
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
@@ -32,7 +32,7 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000000:                   # @func0000000000000000
 	vpbroadcastd	.LCPI2_0(%rip), %ymm3   # ymm3 = [0,0,255,0,0,0,255,0,0,0,255,0,0,0,255,0,0,0,255,0,0,0,255,0,0,0,255,0,0,0,255,0]
 	vpand	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpand	%ymm3, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpand	%ymm3, %ymm0, %ymm0

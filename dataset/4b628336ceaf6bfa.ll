@@ -9,7 +9,7 @@
 ; php/optimized/pcre2_match.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000063(i32 %0) #0 {
+define i64 @func00000000000000c3(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 1024, %0
   %2 = icmp eq i32 %0, 0
@@ -23,7 +23,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0) #0 {
+define i64 @func0000000000000043(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 60, %0
   %2 = icmp eq i32 %0, 63
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i32 %0) #0 {
+define i64 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 61, %0
   %2 = icmp eq i32 %0, 63

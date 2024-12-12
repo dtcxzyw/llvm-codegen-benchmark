@@ -34,7 +34,7 @@ entry:
   ret i32 %3
 }
 
-; 67 occurrences:
+; 66 occurrences:
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -42,7 +42,6 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/jpeg.c.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; git/optimized/diff.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
@@ -133,36 +132,7 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
-; openjdk/optimized/FourByteAbgr.ll
-; openjdk/optimized/FourByteAbgrPre.ll
-; openjdk/optimized/IntArgb.ll
-; openjdk/optimized/IntArgbBm.ll
-; openjdk/optimized/IntArgbPre.ll
-; openjdk/optimized/IntBgr.ll
-; openjdk/optimized/IntRgb.ll
-; openjdk/optimized/IntRgbx.ll
-; openjdk/optimized/ThreeByteBgr.ll
-; openjdk/optimized/Ushort555Rgb.ll
-; openjdk/optimized/Ushort555Rgbx.ll
-; openjdk/optimized/Ushort565Rgb.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i64 %0) #0 {
-entry:
-  %1 = trunc i64 %0 to i32
-  %2 = mul nuw nsw i32 %1, 3
-  %3 = add nuw nsw i32 %2, 2
-  ret i32 %3
-}
-
-; 12 occurrences:
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
+; 5 occurrences:
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; openjdk/optimized/cgroupV2Subsystem_linux.ll

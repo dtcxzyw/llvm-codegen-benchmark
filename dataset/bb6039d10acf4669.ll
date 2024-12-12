@@ -42,10 +42,9 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/cfield.ll
 ; linux/optimized/base64.ll
-; linux/optimized/int_log.ll
 ; wireshark/optimized/charsets.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {

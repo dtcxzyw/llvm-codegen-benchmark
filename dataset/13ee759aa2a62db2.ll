@@ -3,7 +3,7 @@
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; openjdk/optimized/jdhuff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = add nsw i32 %0, 1

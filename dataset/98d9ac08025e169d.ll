@@ -10,7 +10,7 @@
 define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 2048
   %5 = icmp ult i64 %4, 4096
   ret i1 %5
@@ -28,10 +28,10 @@ entry:
 ; velox/optimized/TimestampConversion.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, -2147483648
   %5 = icmp ult i64 %4, -4294967296
   ret i1 %5
@@ -41,10 +41,10 @@ entry:
 ; openjdk/optimized/c1_LIRGenerator_x86.ll
 ; openjdk/optimized/type.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add i64 %3, -2147483648
   %5 = icmp ult i64 %4, -4294967296
   ret i1 %5
@@ -57,7 +57,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, -2147483647
   %5 = icmp ult i64 %4, -2147483648
   ret i1 %5
@@ -66,10 +66,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stackblur.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add i64 %3, -1017
   %5 = icmp ult i64 %4, -1033
   ret i1 %5

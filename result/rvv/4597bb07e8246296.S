@@ -20,7 +20,7 @@ func000000000000001a:                   # @func000000000000001a
 	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v12, v12, a0
-	lui	a0, 4096
+	lui	a0, 2048
 	addi	a0, a0, -256
 	vsrl.vi	v12, v12, 8
 	vand.vx	v12, v12, a0

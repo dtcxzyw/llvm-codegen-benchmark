@@ -20,7 +20,7 @@ func0000000000000010:                   # @func0000000000000010
 	cmovbl	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	cmpq	$20480, %rdx                    # imm = 0x5000
 	cmovael	%esi, %eax
@@ -36,9 +36,21 @@ func0000000000000028:                   # @func0000000000000028
 	andnl	%esi, %edx, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000060:                   # @func0000000000000060
+	xorl	%eax, %eax
+	cmpq	$32, %rdx
+	cmovael	%esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	xorl	%eax, %eax
+	testq	%rdx, %rdx
+	cmovel	%esi, %eax
+	addl	%edi, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
-	cmpq	$1, %rdx
-	movl	$31, %eax
+	xorl	%eax, %eax
+	testq	%rdx, %rdx
 	cmovel	%esi, %eax
 	addl	%edi, %eax
 	retq

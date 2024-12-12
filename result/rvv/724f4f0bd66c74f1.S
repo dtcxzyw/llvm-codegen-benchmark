@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	vand.vx	v10, v10, a0
 	vmseq.vi	v9, v10, 0
 	vmor.mm	v8, v8, v9
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret
 func0000000000000018:                   # @func0000000000000018
 	lui	a0, 4080
@@ -17,5 +17,5 @@ func0000000000000018:                   # @func0000000000000018
 	bseti	a0, zero, 48
 	vmsne.vx	v9, v10, a0
 	vmor.mm	v8, v8, v9
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret

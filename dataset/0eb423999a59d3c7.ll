@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; c3c/optimized/json_output.c.ll
 ; c3c/optimized/sema_expr.c.ll
@@ -8,6 +8,8 @@
 ; icu/optimized/collationbuilder.ll
 ; linux/optimized/act_api.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/file.ll
 ; slurm/optimized/info_job.ll
@@ -38,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
+define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
   %2 = and i64 %1, 2097024
@@ -49,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationbuilder.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
+define i1 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
   %2 = and i64 %1, 2

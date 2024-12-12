@@ -15,3 +15,9 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	orb	%dil, %al
 	retq
+func0000000000000006:                   # @func0000000000000006
+	testl	%esi, %esi
+	setle	%al
+	xorb	$1, %dil
+	andb	%dil, %al
+	retq

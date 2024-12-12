@@ -1,12 +1,30 @@
-func0000000000000235:                   # @func0000000000000235
+func0000000000001475:                   # @func0000000000001475
 	cmpq	%rdi, %rsi
 	adcq	$0, %rsi
 	cmpq	%rdi, %rsi
 	setbe	%al
 	retq
-func0000000000000225:                   # @func0000000000000225
+func0000000000000445:                   # @func0000000000000445
 	cmpq	%rdi, %rsi
 	adcq	$0, %rsi
 	cmpq	%rdi, %rsi
 	setbe	%al
+	retq
+func0000000000000468:                   # @func0000000000000468
+	cmpq	%rdi, %rsi
+	adcq	$0, %rsi
+	cmpq	%rdi, %rsi
+	seta	%al
+	retq
+func0000000000000404:                   # @func0000000000000404
+	cmpq	%rdi, %rsi
+	adcq	$0, %rsi
+	cmpq	%rdi, %rsi
+	setb	%al
+	retq
+func0000000000000409:                   # @func0000000000000409
+	cmpq	%rdi, %rsi
+	adcq	$0, %rsi
+	cmpq	%rdi, %rsi
+	setae	%al
 	retq

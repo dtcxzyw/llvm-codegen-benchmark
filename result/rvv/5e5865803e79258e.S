@@ -96,6 +96,15 @@ func000000000000004a:                   # @func000000000000004a
 	vmfle.vf	v13, v8, fa5
 	vmor.mm	v0, v12, v13
 	ret
+func0000000000000024:                   # @func0000000000000024
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmv1r.v	v12, v0
+	fmv.w.x	fa5, zero
+	vmflt.vf	v0, v8, fa5
+	vmerge.vim	v8, v8, 0, v0
+	vmfgt.vf	v13, v8, fa5
+	vmor.mm	v0, v12, v13
+	ret
 func0000000000000045:                   # @func0000000000000045
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v12, v0
@@ -107,14 +116,14 @@ func0000000000000045:                   # @func0000000000000045
 	vmnot.m	v8, v12
 	vmandn.mm	v0, v8, v13
 	ret
-.LCPI10_0:
+.LCPI11_0:
 	.word	0x3d25aee6                      # float 0.0404499993
 func0000000000000025:                   # @func0000000000000025
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v12, v0
 	fmv.w.x	fa5, zero
-	lui	a0, %hi(.LCPI10_0)
-	flw	fa4, %lo(.LCPI10_0)(a0)
+	lui	a0, %hi(.LCPI11_0)
+	flw	fa4, %lo(.LCPI11_0)(a0)
 	vmflt.vf	v0, v8, fa5
 	vmerge.vim	v8, v8, 0, v0
 	vmfle.vf	v13, v8, fa4

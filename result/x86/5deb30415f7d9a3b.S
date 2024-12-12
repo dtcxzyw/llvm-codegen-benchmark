@@ -12,3 +12,14 @@ func00000000000000c5:                   # @func00000000000000c5
 	movl	$1, %eax
 	cmovbl	%ecx, %eax
 	retq
+func0000000000000047:                   # @func0000000000000047
+	vxorpd	%xmm1, %xmm1, %xmm1
+	xorl	%ecx, %ecx
+	vucomisd	%xmm1, %xmm0
+	setbe	%cl
+	incl	%ecx
+	xorl	%eax, %eax
+	vucomisd	%xmm1, %xmm0
+	cmovnel	%ecx, %eax
+	cmovpl	%ecx, %eax
+	retq

@@ -3,7 +3,7 @@
 ; jq/optimized/regcomp.ll
 ; oniguruma/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000142(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000282(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 1
   %4 = icmp eq i32 %2, -1
@@ -20,7 +20,7 @@ entry:
 ; wireshark/optimized/packet-acn.c.ll
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -17
   %4 = icmp eq i32 %3, 0

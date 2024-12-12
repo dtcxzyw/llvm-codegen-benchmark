@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; flac/optimized/operations_shorthand_picture.c.ll
 ; gromacs/optimized/trjconv.cpp.ll
 ; icu/optimized/decNumber.ll
@@ -18,6 +18,7 @@
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; wireshark/optimized/packet-obd-ii.c.ll
 ; z3/optimized/dl_mk_scale.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:

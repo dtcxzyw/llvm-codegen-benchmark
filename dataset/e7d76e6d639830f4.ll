@@ -1,5 +1,5 @@
 
-; 340 occurrences:
+; 343 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/aigRet.c.ll
@@ -10,6 +10,14 @@
 ; abc/optimized/giaPat.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; abc/optimized/inflate.c.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; brotli/optimized/encode.c.ll
 ; c3c/optimized/c_abi_riscv.c.ll
 ; c3c/optimized/parse_stmt.c.ll
@@ -58,9 +66,9 @@
 ; icu/optimized/ucnv_ext.ll
 ; icu/optimized/usearch.ll
 ; ipopt/optimized/IpTripletToCSRConverter.ll
-; libphonenumber/optimized/rune.c.ll
 ; libquic/optimized/inflate.c.ll
 ; lief/optimized/x509.c.ll
+; linux/optimized/8139too.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/addrconf.ll
@@ -95,7 +103,6 @@
 ; linux/optimized/swap_state.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/user_defined.ll
 ; linux/optimized/virtio_scsi.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
@@ -132,7 +139,6 @@
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/ParseTentative.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SampleProfWriter.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -172,7 +178,6 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/IrAnalysis.cpp.ll
-; luau/optimized/isocline.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CImageWriterPNG.cpp.ll
 ; minetest/optimized/emerge.cpp.ll
@@ -242,8 +247,6 @@
 ; openjdk/optimized/vectorization.ll
 ; openjdk/optimized/vectornode.ll
 ; openmpi/optimized/gds_shmem_utils.ll
-; openmpi/optimized/libmpi_mpit_profile_la-cvar_get_info.ll
-; openmpi/optimized/libmpi_mpit_profile_la-cvar_handle_alloc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
 ; openssl/optimized/libapps-lib-apps.ll

@@ -9,12 +9,10 @@ func0000000000000000:                   # @func0000000000000000
 	orl	%ecx, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	notb	%dl
-	movzbl	%dl, %ecx
-	andl	$1, %ecx
-	shll	$19, %ecx
-	xorl	%eax, %eax
+	andl	$1, %edx
+	shll	$4, %edx
 	testb	$1, %dil
+	movl	$4, %eax
 	cmovel	%esi, %eax
-	orl	%ecx, %eax
+	orl	%edx, %eax
 	retq

@@ -7,7 +7,7 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a3, a2, 63
 	srli	a2, a2, 10
 	add	a2, a2, a3
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000040:                   # @func0000000000000040

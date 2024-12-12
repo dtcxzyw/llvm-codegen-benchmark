@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 16 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
@@ -12,6 +12,10 @@
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; ruby/optimized/bignum.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:

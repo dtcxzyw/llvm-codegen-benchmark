@@ -6,7 +6,7 @@ define i32 @func0000000000000355(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 298
   %4 = add nsw i32 %3, -4640
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = mul nsw i32 %1, -208
   %7 = add nsw i32 %5, %6
   ret i32 %7
@@ -92,7 +92,7 @@ entry:
   ret i32 %7
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
@@ -101,6 +101,7 @@ entry:
 ; libquic/optimized/prtime.cc.ll
 ; libquic/optimized/t_x509.c.ll
 ; libwebp/optimized/sharpyuv_dsp.c.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/log3gpp.c.ll
 ; Function Attrs: nounwind

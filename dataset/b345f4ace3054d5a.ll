@@ -25,7 +25,7 @@
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 1
   %.mask = and i64 %1, -2
@@ -39,7 +39,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 63
   %2 = lshr i64 %1, 6
@@ -52,7 +52,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0) #0 {
+define i1 @func0000000000000121(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 7
   %.mask = and i64 %1, -8
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0) #0 {
+define i1 @func0000000000000124(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 7
   %2 = lshr i64 %1, 3

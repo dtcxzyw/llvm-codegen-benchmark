@@ -10,7 +10,7 @@
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/weighted_median_filter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i32 %0) #0 {
+define i64 @func00000000000000a6(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
   %2 = sext i32 %1 to i64
@@ -34,7 +34,7 @@ entry:
 ; opencv/optimized/stereosgbm.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i32 %0) #0 {
+define i64 @func00000000000000e6(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
   %2 = sext i32 %1 to i64

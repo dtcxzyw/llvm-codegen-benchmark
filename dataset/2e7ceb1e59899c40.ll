@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
+; mixbox/optimized/mixbox.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
@@ -11,7 +12,7 @@ define i8 @func0000000000000000(i1 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = trunc i32 %2 to i8
-  %4 = select i1 %0, i8 -1, i8 %3
+  %4 = select i1 %0, i8 0, i8 %3
   ret i8 %4
 }
 

@@ -8,6 +8,15 @@ func0000000000000023:                   # @func0000000000000023
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
+func0000000000000063:                   # @func0000000000000063
+	xorl	%eax, %eax
+	cmpq	$65536, %rdx                    # imm = 0x10000
+	setae	%al
+	shll	$4, %eax
+	orl	%edi, %eax
+	andl	$1, %esi
+	leal	(%rax,%rsi,8), %eax
+	retq
 func0000000000000007:                   # @func0000000000000007
 	xorl	%eax, %eax
 	testq	%rdx, %rdx

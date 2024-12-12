@@ -1,5 +1,40 @@
 
-; 229 occurrences:
+; 6 occurrences:
+; ocio/optimized/MathUtils.cpp.ll
+; ocio/optimized/OpHelpers.cpp.ll
+; openexr/optimized/ImfCRgbaFile.cpp.ll
+; openexr/optimized/ImfConvert.cpp.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000181(i16 %0) #0 {
+entry:
+  %1 = and i16 %0, 127
+  %2 = icmp ne i16 %1, 0
+  %3 = and i16 %0, 128
+  %4 = icmp eq i16 %3, 0
+  %5 = and i1 %4, %2
+  ret i1 %5
+}
+
+; 5 occurrences:
+; c3c/optimized/sema_types.c.ll
+; linux/optimized/hub.ll
+; linux/optimized/libata-scsi.ll
+; llvm/optimized/ConstantFolding.cpp.ll
+; llvm/optimized/InlineFunction.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000018c(i16 %0) #0 {
+entry:
+  %1 = and i16 %0, 15360
+  %2 = icmp ne i16 %1, 0
+  %3 = and i16 %0, 504
+  %4 = icmp ne i16 %3, 8
+  %5 = and i1 %4, %2
+  ret i1 %5
+}
+
+; 228 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; abc/optimized/wlcNtk.c.ll
@@ -156,7 +191,6 @@
 ; oiio/optimized/tiffoutput.cpp.ll
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -230,46 +264,12 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0) #0 {
+define i1 @func000000000000002c(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, -1024
-  %2 = icmp eq i16 %1, -32768
-  %3 = and i16 %0, 32767
-  %4 = icmp ne i16 %3, 0
-  %5 = and i1 %4, %2
-  ret i1 %5
-}
-
-; 5 occurrences:
-; ocio/optimized/MathUtils.cpp.ll
-; ocio/optimized/OpHelpers.cpp.ll
-; openexr/optimized/ImfCRgbaFile.cpp.ll
-; openexr/optimized/ImfConvert.cpp.ll
-; qemu/optimized/fpu_softfloat.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0) #0 {
-entry:
-  %1 = and i16 %0, 1023
-  %2 = icmp ne i16 %1, 0
-  %3 = and i16 %0, 31744
-  %4 = icmp eq i16 %3, 0
-  %5 = and i1 %4, %2
-  ret i1 %5
-}
-
-; 5 occurrences:
-; c3c/optimized/sema_types.c.ll
-; linux/optimized/hub.ll
-; linux/optimized/libata-scsi.ll
-; llvm/optimized/ConstantFolding.cpp.ll
-; llvm/optimized/InlineFunction.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0) #0 {
-entry:
-  %1 = and i16 %0, 15360
-  %2 = icmp ne i16 %1, 0
-  %3 = and i16 %0, 504
-  %4 = icmp ne i16 %3, 8
+  %1 = and i16 %0, 255
+  %2 = icmp eq i16 %1, 34
+  %3 = and i16 %0, 3840
+  %4 = icmp ne i16 %3, 512
   %5 = and i1 %4, %2
   ret i1 %5
 }

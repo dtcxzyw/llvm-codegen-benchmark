@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; box2d/optimized/b2_contact.cpp.ll
 ; clamav/optimized/extract.cpp.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
@@ -31,6 +31,7 @@
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
@@ -39,7 +40,7 @@ entry:
   ret i1 %3
 }
 
-; 27 occurrences:
+; 32 occurrences:
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
@@ -49,6 +50,7 @@ entry:
 ; llvm/optimized/AssumptionCache.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -67,6 +69,10 @@ entry:
 ; yosys/optimized/dfflibmap.ll
 ; yosys/optimized/genrtlil.ll
 ; z3/optimized/int_solver.cpp.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:

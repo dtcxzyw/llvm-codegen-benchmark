@@ -10,9 +10,3 @@ func000000000000005d:                   # @func000000000000005d
 	shlq	$5, %rcx
 	leaq	(%rcx,%rax,8), %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
-	movl	%esi, %ecx
-	shlq	$4, %rcx
-	leaq	(%rdi,%rdi,2), %rax
-	addq	%rcx, %rax
-	retq

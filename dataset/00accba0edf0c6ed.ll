@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openusd/optimized/utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2147483648
   %4 = icmp ult i64 %3, 4294967296

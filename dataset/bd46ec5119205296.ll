@@ -12,12 +12,12 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = mul nuw nsw i64 %4, 11
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -28,7 +28,7 @@ entry:
 define ptr @func0000000000000012(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = mul i64 %4, 20
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
@@ -40,7 +40,7 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = mul nsw i64 %4, -7
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6

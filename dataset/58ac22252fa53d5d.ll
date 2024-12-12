@@ -53,7 +53,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 11
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = sub i32 %4, %0
   %6 = and i32 %5, 65535
   ret i32 %6

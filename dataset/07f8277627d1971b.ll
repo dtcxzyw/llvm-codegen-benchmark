@@ -1,10 +1,8 @@
 
-; 3 occurrences:
-; abc/optimized/luckyFast16.c.ll
+; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; sentencepiece/optimized/int128.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000051(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 32
   %3 = icmp ugt i64 %1, 2048
@@ -21,12 +19,25 @@ entry:
 ; qemu/optimized/io_channel-websock.c.ll
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000029(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000049(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 4
   %3 = icmp ult i64 %1, 8192
   %4 = select i1 %3, i32 %2, i32 %0
   %5 = or disjoint i32 %4, 16
+  ret i32 %5
+}
+
+; 2 occurrences:
+; abc/optimized/luckyFast16.c.ll
+; sentencepiece/optimized/int128.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000071(i32 %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, 16
+  %3 = icmp samesign ugt i64 %1, 65535
+  %4 = select i1 %3, i32 %2, i32 %0
+  %5 = or disjoint i32 %4, 8
   ret i32 %5
 }
 
@@ -56,7 +67,7 @@ entry:
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 16
   %3 = icmp eq i64 %1, 0

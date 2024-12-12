@@ -1,7 +1,7 @@
 
-%"class.hermes::vm::GCHermesValueBase.177.2880829" = type { %"class.hermes::vm::HermesValue32.2880830" }
-%"class.hermes::vm::HermesValue32.2880830" = type { i32 }
-%struct.rlimit.3348327 = type { i64, i64 }
+%"class.hermes::vm::GCHermesValueBase.177.3075353" = type { %"class.hermes::vm::HermesValue32.3075354" }
+%"class.hermes::vm::HermesValue32.3075354" = type { i32 }
+%struct.rlimit.3536714 = type { i64, i64 }
 
 ; 9 occurrences:
 ; brotli/optimized/backward_references.c.ll
@@ -14,24 +14,24 @@
 ; luajit/optimized/lj_ccall.ll
 ; luajit/optimized/lj_ccall_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
-  %6 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.177.2880829", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.177.3075353", ptr %5, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/sys.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 672
-  %6 = getelementptr %struct.rlimit.3348327, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 672
+  %6 = getelementptr %struct.rlimit.3536714, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -52,12 +52,12 @@ entry:
 ; brotli/optimized/compound_dictionary.c.ll
 ; hyperscan/optimized/fdr.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 24
-  %6 = getelementptr nusw i32, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -48,10 +48,15 @@ func000000000000002b:                   # @func000000000000002b
 	addl	%edi, %eax
 	shrl	$6, %eax
 	retq
+func000000000000002a:                   # @func000000000000002a
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
+	shrl	$12, %eax
+	retq
 func0000000000000022:                   # @func0000000000000022
 	leal	(%rsi,%rdx), %eax
 	addl	%edi, %eax
-	shrl	$24, %eax
+	shrl	$12, %eax
 	retq
 func000000000000006b:                   # @func000000000000006b
 	leal	(%rsi,%rdx), %eax
@@ -67,11 +72,6 @@ func0000000000000070:                   # @func0000000000000070
 	leal	(%rsi,%rdx), %eax
 	addl	%edi, %eax
 	shrl	$14, %eax
-	retq
-func000000000000002a:                   # @func000000000000002a
-	leal	(%rsi,%rdx), %eax
-	addl	%edi, %eax
-	shrl	$24, %eax
 	retq
 func000000000000007b:                   # @func000000000000007b
 	leal	(%rsi,%rdx), %eax

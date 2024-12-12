@@ -45,17 +45,16 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; git/optimized/revision.ll
 ; linux/optimized/forcedeth.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
-; wireshark/optimized/golay.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = shl i32 %3, 4
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

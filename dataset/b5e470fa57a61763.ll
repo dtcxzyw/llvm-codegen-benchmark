@@ -1,5 +1,7 @@
 
 ; 215 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -134,7 +136,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -212,7 +213,6 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
@@ -220,7 +220,7 @@ define i64 @func00000000000000c5(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul nsw i64 %4, 7
   ret i64 %5
 }
@@ -277,7 +277,7 @@ define i64 @func00000000000000c4(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul i64 %4, 7
   ret i64 %5
 }

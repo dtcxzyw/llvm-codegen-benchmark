@@ -15,7 +15,7 @@
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; slurm/optimized/cgroup_v2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 4
   %3 = select i1 %0, i1 true, i1 %2
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/cgroup_v2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 7
   %3 = select i1 %0, i1 true, i1 %2
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -3
   %3 = icmp ult i32 %2, -2
@@ -44,11 +44,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/DwarfDebug.cpp.ll
-; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp ult i32 %2, 2

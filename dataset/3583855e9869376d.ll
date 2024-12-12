@@ -11,7 +11,11 @@ entry:
   ret i1 %6
 }
 
-; 19 occurrences:
+; 22 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
 ; entt/optimized/any.cpp.ll
 ; entt/optimized/meta_any.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -29,7 +33,6 @@ entry:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/metadata.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i1 %0, double %1, double %2) #0 {
@@ -64,6 +67,19 @@ define i1 @func0000000000000022(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 1.000000e-01
   %4 = fcmp olt double %1, 5.000000e-02
+  %5 = select i1 %4, i1 %3, i1 false
+  %6 = select i1 %5, i1 %0, i1 false
+  ret i1 %6
+}
+
+; 2 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp olt double %2, 0x400921FB54442D18
+  %4 = fcmp ogt double %1, 0x3D719799812DEA11
   %5 = select i1 %4, i1 %3, i1 false
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6

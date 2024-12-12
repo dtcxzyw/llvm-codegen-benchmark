@@ -6,7 +6,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 2
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -14,11 +14,11 @@ entry:
 ; hermes/optimized/LEB128.cpp.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i8 %2, 64
+  %3 = icmp samesign ult i8 %2, 64
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -36,8 +36,9 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i8 %2) #0 {
 entry:

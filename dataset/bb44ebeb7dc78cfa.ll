@@ -1,11 +1,7 @@
 
-; 10 occurrences:
+; 6 occurrences:
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
-; jq/optimized/utf32_be.ll
-; jq/optimized/utf32_le.ll
-; oniguruma/optimized/utf32_be.ll
-; oniguruma/optimized/utf32_le.ll
 ; qemu/optimized/chardev_char-mux.c.ll
 ; quickjs/optimized/libbf.ll
 ; ruby/optimized/utf_32be.ll
@@ -18,11 +14,13 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/kernel_timeout.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/concatenate.cc.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/wait_for.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll

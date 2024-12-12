@@ -3,7 +3,7 @@
 ; freetype/optimized/sfnt.c.ll
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c8(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -41,7 +41,7 @@ entry:
 ; openjdk/optimized/ArrayReferenceImpl.ll
 ; openjdk/optimized/ThreadReferenceImpl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i32 %1, i32 %2
@@ -54,7 +54,7 @@ entry:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = select i1 %3, i32 %1, i32 %2

@@ -1,5 +1,8 @@
 
-; 159 occurrences:
+%"struct.std::atomic.30.2777666" = type { %"struct.std::__atomic_base.31.2777676" }
+%"struct.std::__atomic_base.31.2777676" = type { i64 }
+
+; 161 occurrences:
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/mapperMatch.c.ll
 ; abc/optimized/mapperTime.c.ll
@@ -7,6 +10,7 @@
 ; abc/optimized/sfmDec.c.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
+; boost/optimized/get_turns.ll
 ; cmake/optimized/archive_rb.c.ll
 ; cmake/optimized/cmDocumentationFormatter.cxx.ll
 ; cvc5/optimized/eq_proof.cpp.ll
@@ -21,6 +25,8 @@
 ; jemalloc/optimized/psset.sym.ll
 ; luajit/optimized/lj_carith.ll
 ; luajit/optimized/lj_carith_dyn.ll
+; luajit/optimized/lj_ffrecord.ll
+; luajit/optimized/lj_ffrecord_dyn.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -146,7 +152,6 @@
 ; redis/optimized/psset.ll
 ; redis/optimized/psset.sym.ll
 ; stb/optimized/stb_truetype.c.ll
-; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
@@ -160,10 +165,22 @@
 ; yalantinglibs/optimized/server.cpp.ll
 ; zxing/optimized/PerspectiveTransform.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 7
-  %3 = getelementptr nusw [8 x i8], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [8 x i8], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 3 occurrences:
+; yalantinglibs/optimized/channel.cpp.ll
+; yalantinglibs/optimized/client_pool.cpp.ll
+; yalantinglibs/optimized/client_pools.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+entry:
+  %2 = xor i64 %1, 1
+  %3 = getelementptr nusw [2 x %"struct.std::atomic.30.2777666"], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

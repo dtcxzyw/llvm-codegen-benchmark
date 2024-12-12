@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 30 occurrences:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/lzma_encoder.c.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
@@ -16,6 +16,8 @@
 ; llvm/optimized/LoadStoreOpt.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -37,7 +39,7 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 11 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/hwregs.ll
 ; linux/optimized/intel_sseu.ll
@@ -45,9 +47,6 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; openblas/optimized/dsfrk.c.ll
-; openblas/optimized/dtfsm.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/ui_cursor.c.ll
@@ -68,7 +67,7 @@ entry:
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 3
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -93,7 +92,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -105,7 +104,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

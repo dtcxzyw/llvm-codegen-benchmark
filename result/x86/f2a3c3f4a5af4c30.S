@@ -6,14 +6,6 @@ func0000000000000002:                   # @func0000000000000002
 	cmovneq	%rdx, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	xorl	%eax, %eax
-	cmpw	$2, %si
-	setae	%al
-	shll	$12, %eax
-	orq	%rdi, %rax
-	orq	$1654, %rax                     # imm = 0x676
-	retq
 func0000000000000003:                   # @func0000000000000003
 	xorl	%eax, %eax
 	testw	%si, %si

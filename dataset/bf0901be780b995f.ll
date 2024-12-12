@@ -11,12 +11,11 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/cm_get_date.c.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; Function Attrs: nounwind

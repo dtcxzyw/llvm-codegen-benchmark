@@ -19,7 +19,7 @@
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/sls_engine.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = icmp eq i32 %2, 256

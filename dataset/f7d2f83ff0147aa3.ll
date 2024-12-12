@@ -119,9 +119,10 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
+; boost/optimized/process_cpu_clocks.ll
 ; darktable/optimized/introspection_equalizer.c.ll
 ; gromacs/optimized/pme_spread.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
@@ -282,9 +283,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/unicodeobject.ll
-; llvm/optimized/TypeLoc.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; opencv/optimized/gather_layer.cpp.ll
 ; Function Attrs: nounwind

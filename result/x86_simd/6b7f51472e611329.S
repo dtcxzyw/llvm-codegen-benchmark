@@ -45,25 +45,25 @@ func0000000000000002:                   # @func0000000000000002
 	vpternlogd	$254, .LCPI1_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
 .LCPI2_0:
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
-	.short	128                             # 0x80
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
 .LCPI2_1:
-	.short	128                             # 0x80
-	.short	128                             # 0x80
+	.short	256                             # 0x100
+	.short	256                             # 0x100
 func0000000000000000:                   # @func0000000000000000
 	vpternlogd	$254, .LCPI2_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq

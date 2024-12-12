@@ -54,3 +54,14 @@ func0000000000000016:                   # @func0000000000000016
 	slt	a0, a0, a1
 	xori	a0, a0, 1
 	ret
+func0000000000000028:                   # @func0000000000000028
+	andi	a1, a1, 255
+	andi	a0, a0, 255
+	sltu	a0, a0, a1
+	ret
+func0000000000000032:                   # @func0000000000000032
+	andi	a1, a1, 255
+	andi	a0, a0, 255
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	ret

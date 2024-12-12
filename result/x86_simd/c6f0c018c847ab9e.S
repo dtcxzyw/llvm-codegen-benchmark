@@ -5,7 +5,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpcmpnleud	%ymm1, %ymm2, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1]
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpslld	$8, %ymm2, %ymm2
 	vpcmpnltud	%ymm1, %ymm2, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
@@ -26,14 +26,14 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI4_0:
 	.long	2                               # 0x2
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	vpaddd	%ymm2, %ymm2, %ymm2
 	vpcmpnleud	%ymm1, %ymm2, %k1
 	vpbroadcastd	.LCPI4_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [2,2,2,2,2,2,2,2]
 	retq
 .LCPI5_0:
 	.long	15                              # 0xf
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpaddd	%ymm2, %ymm2, %ymm2
 	vpcmpgtd	%ymm1, %ymm2, %k1
 	vpbroadcastd	.LCPI5_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [15,15,15,15,15,15,15,15]

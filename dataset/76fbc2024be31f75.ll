@@ -1,11 +1,15 @@
 
-%"class.Ipopt::TripletToCSRConverter::TripletEntry.2496215" = type { i32, i32, i32 }
-%class.QCPCurveData.3260428 = type { double, double, double }
+%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489" = type { i32, i32, i32 }
+%class.QCPCurveData.3451174 = type { double, double, double }
 
-; 40 occurrences:
+; 44 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
 ; gromacs/optimized/transformations.cpp.ll
@@ -49,7 +53,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = udiv exact i64 %3, 12
   %5 = or i64 %4, 1
-  %6 = getelementptr %"class.Ipopt::TripletToCSRConverter::TripletEntry.2496215", ptr %0, i64 %5
+  %6 = getelementptr %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489", ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -24
   ret ptr %7
 }
@@ -62,7 +66,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = udiv exact i64 %3, 24
   %5 = or i64 %4, 1
-  %6 = getelementptr %class.QCPCurveData.3260428, ptr %0, i64 %5
+  %6 = getelementptr %class.QCPCurveData.3451174, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -48
   ret ptr %7
 }

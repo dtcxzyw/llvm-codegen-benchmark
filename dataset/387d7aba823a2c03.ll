@@ -1,9 +1,10 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; git/optimized/pretty.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/tdls.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/ControlHeightReduction.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
@@ -21,11 +22,11 @@
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000082(i8 %0, i1 %1) #0 {
 entry:
   %2 = and i8 %0, -2
   %3 = icmp eq i8 %2, 26
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq i8 %0, 28
   %6 = or i1 %5, %4
   ret i1 %6

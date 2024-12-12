@@ -5,7 +5,7 @@
 ; proj/optimized/4D_api.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c5(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000185(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i64 %1, 0
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/geo_ops.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c4(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000184(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i64 %1, 0

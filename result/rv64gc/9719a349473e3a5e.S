@@ -27,3 +27,19 @@ func0000000000000008:                   # @func0000000000000008
 	andi	a0, a1, 1
 	addi	a0, a0, 6
 	ret
+func0000000000000018:                   # @func0000000000000018
+	slli	a0, a0, 48
+	andi	a1, a1, 1
+	srli	a0, a0, 48
+	bnez	a1, .LBB2_2
+	li	a1, -7
+	sltiu	a0, a0, 65
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, -39
+	sltiu	a0, a0, 65
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret

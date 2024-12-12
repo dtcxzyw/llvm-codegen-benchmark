@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/rational.ll
 ; freetype/optimized/ftbbox.c.ll
 ; freetype/optimized/smooth.c.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
@@ -15,18 +16,16 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
+; 25 occurrences:
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/decode.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/smooth.c.ll
-; linux/optimized/gen_estimator.ll
-; linux/optimized/ptp_kvm_x86.ll
 ; linux/optimized/pvclock.ll
 ; linux/optimized/readahead.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/shmem.ll
-; linux/optimized/vclock_gettime.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; openjdk/optimized/cardTable.ll

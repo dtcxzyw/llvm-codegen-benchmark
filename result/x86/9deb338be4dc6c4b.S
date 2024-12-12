@@ -1,11 +1,11 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrl	%esi
 	andl	$4, %esi
 	andl	$1, %edi
 	orl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	shrl	$4, %esi
 	andl	$15, %esi
 	andl	$240, %edi
@@ -13,7 +13,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpl	$71, %edi
 	setae	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	shrl	$12, %esi
 	andl	$240, %esi
 	andl	$15, %edi
@@ -27,7 +27,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	shrl	$30, %esi
 	andl	$1, %esi
 	andl	$2, %edi
@@ -35,7 +35,7 @@ func000000000000001c:                   # @func000000000000001c
 	cmpl	$3, %edi
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shrl	%esi
 	andl	$256, %esi                      # imm = 0x100
 	andl	$1, %edi

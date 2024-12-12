@@ -35,6 +35,20 @@ entry:
   ret i32 %5
 }
 
+; 3 occurrences:
+; miniaudio/optimized/unity.c.ll
+; z3/optimized/small_object_allocator.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001b(i1 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 23
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = zext i1 %0 to i32
+  %5 = add nuw nsw i32 %4, %3
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; linux/optimized/intel_guc_submission.ll
 ; Function Attrs: nounwind
@@ -44,19 +58,6 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = zext i1 %0 to i32
   %5 = add i32 %4, %3
-  ret i32 %5
-}
-
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; z3/optimized/small_object_allocator.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001b(i1 %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 3
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = zext i1 %0 to i32
-  %5 = add nuw nsw i32 %4, %3
   ret i32 %5
 }
 

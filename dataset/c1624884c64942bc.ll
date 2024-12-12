@@ -1,5 +1,7 @@
 
-; 17 occurrences:
+; 19 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; mitsuba3/optimized/cylinder.cpp.ll

@@ -1,11 +1,20 @@
 
-; 133 occurrences:
+; 142 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; brotli/optimized/bit_cost.c.ll
 ; brotli/optimized/literal_cost.c.ll
 ; casadi/optimized/cvodes.c.ll

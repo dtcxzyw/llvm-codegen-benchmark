@@ -45,11 +45,9 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/utf8collationiterator.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-enrp.c.ll
 ; wireshark/optimized/packet-m3ua.c.ll
 ; wireshark/optimized/packet-sua.c.ll
 ; Function Attrs: nounwind

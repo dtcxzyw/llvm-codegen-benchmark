@@ -1,5 +1,7 @@
 
-; 24 occurrences:
+; 26 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/test_system.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
@@ -25,7 +27,7 @@
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; openusd/optimized/textFileFormat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %0, 1
   %4 = or disjoint i64 %3, 1

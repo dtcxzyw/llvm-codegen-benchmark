@@ -51,3 +51,31 @@ func0000000000000042:                   # @func0000000000000042
 	fli.d	fa5, 32768.0
 	fmul.d	fa0, fa4, fa5
 	ret
+.LCPI2_0:
+	.quad	0x4066800000000000              # double 180
+.LCPI2_1:
+	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
+func0000000000000022:                   # @func0000000000000022
+	lui	a0, %hi(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	flt.d	a0, fa0, fa5
+	beqz	a0, .LBB2_3
+	fli.d	fa4, 1.0
+	flt.d	a0, fa5, fa4
+	beqz	a0, .LBB2_4
+.LBB2_2:                                # %entry
+	lui	a0, %hi(.LCPI2_1)
+	fld	fa5, %lo(.LCPI2_1)(a0)
+	fmul.d	fa0, fa4, fa5
+	ret
+.LBB2_3:                                # %entry
+	fmv.d	fa5, fa0
+	fli.d	fa4, 1.0
+	flt.d	a0, fa0, fa4
+	bnez	a0, .LBB2_2
+.LBB2_4:                                # %entry
+	fmv.d	fa4, fa5
+	lui	a0, %hi(.LCPI2_1)
+	fld	fa5, %lo(.LCPI2_1)(a0)
+	fmul.d	fa0, fa4, fa5
+	ret

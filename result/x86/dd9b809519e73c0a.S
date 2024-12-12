@@ -4,29 +4,11 @@ func0000000000000002:                   # @func0000000000000002
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000052:                   # @func0000000000000052
+func0000000000000092:                   # @func0000000000000092
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	setae	%al
-	retq
-func000000000000002c:                   # @func000000000000002c
-	incl	%esi
-	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	setl	%al
-	retq
-func0000000000000038:                   # @func0000000000000038
-	incl	%esi
-	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	setne	%al
-	retq
-func000000000000006c:                   # @func000000000000006c
-	incl	%esi
-	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	setl	%al
 	retq
 func000000000000004c:                   # @func000000000000004c
 	incl	%esi
@@ -34,37 +16,55 @@ func000000000000004c:                   # @func000000000000004c
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000058:                   # @func0000000000000058
+	incl	%esi
+	xorl	%eax, %eax
+	cmpl	%edi, %esi
+	setne	%al
+	retq
+func00000000000000cc:                   # @func00000000000000cc
+	incl	%esi
+	xorl	%eax, %eax
+	cmpl	%edi, %esi
+	setl	%al
+	retq
+func000000000000008c:                   # @func000000000000008c
+	incl	%esi
+	xorl	%eax, %eax
+	cmpl	%edi, %esi
+	setl	%al
+	retq
+func0000000000000012:                   # @func0000000000000012
+	decl	%esi
+	xorl	%eax, %eax
+	cmpl	%edi, %esi
+	setae	%al
+	retq
+func0000000000000042:                   # @func0000000000000042
 	addl	$-3, %esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000056:                   # @func0000000000000056
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	setge	%al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	seta	%al
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000052:                   # @func0000000000000052
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	setae	%al
 	retq
-func0000000000000012:                   # @func0000000000000012
-	incl	%esi
-	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	setae	%al
-	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000d8:                   # @func00000000000000d8
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
@@ -76,19 +76,19 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%edi, %esi
 	setbe	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	setne	%al
 	retq
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	addl	$3, %esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000076:                   # @func0000000000000076
+func00000000000000d6:                   # @func00000000000000d6
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi

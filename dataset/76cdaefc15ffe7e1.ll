@@ -1,7 +1,9 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcFx.c.ll
+; boost/optimized/area.ll
+; graphviz/optimized/scan.c.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/lz4_decompress.ll
 ; linux/optimized/trace_probe.ll
@@ -9,7 +11,6 @@
 ; openspiel/optimized/bridge.cc.ll
 ; openssl/optimized/libcrypto-lib-v3_ncons.ll
 ; openssl/optimized/libcrypto-shlib-v3_ncons.ll
-; openusd/optimized/lz4.cpp.ll
 ; wireshark/optimized/packet-quakeworld.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
@@ -22,16 +23,8 @@ entry:
   ret i64 %7
 }
 
-; 65 occurrences:
+; 53 occurrences:
 ; abc/optimized/bblif.c.ll
-; abc/optimized/dauDsd.c.ll
-; abc/optimized/dauGia.c.ll
-; cvc5/optimized/cut_log.cpp.ll
-; git/optimized/writer.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; llvm/optimized/LazyCallGraph.cpp.ll
 ; luau/optimized/lvmutils.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/io_collada.cpp.ll
@@ -71,7 +64,6 @@ entry:
 ; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/shenandoahRuntime.ll
 ; openjdk/optimized/shenandoahVerifier.ll
-; openjdk/optimized/stackChunkOop.ll
 ; openjdk/optimized/xBarrier.ll
 ; openjdk/optimized/xBarrierSetRuntime.ll
 ; openjdk/optimized/xHeapIterator.ll
@@ -82,10 +74,7 @@ entry:
 ; openjdk/optimized/zRelocate.ll
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
-; openspiel/optimized/bridge.cc.ll
-; openspiel/optimized/spades.cc.ll
 ; openusd/optimized/lz4.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_opcode.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
@@ -94,6 +83,29 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i64, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -16
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+; 11 occurrences:
+; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauGia.c.ll
+; cvc5/optimized/cut_log.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; llvm/optimized/LazyCallGraph.cpp.ll
+; openjdk/optimized/stackChunkOop.ll
+; openspiel/optimized/bridge.cc.ll
+; openspiel/optimized/spades.cc.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002c(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i64, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

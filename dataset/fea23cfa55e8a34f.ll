@@ -1,19 +1,4 @@
 
-; 4 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; protobuf/optimized/unparser.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000040(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 1900
-  %3 = add i32 %2, %0
-  %4 = mul i32 %3, 1461
-  %5 = add i32 %4, 7012800
-  ret i32 %5
-}
-
 ; 8 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
@@ -45,7 +30,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
@@ -67,6 +53,19 @@ entry:
   %3 = add nuw nsw i32 %2, %0
   %4 = mul nuw nsw i32 %3, 10
   %5 = add nsw i32 %4, -2428
+  ret i32 %5
+}
+
+; 2 occurrences:
+; libquic/optimized/time_support.c.ll
+; protobuf/optimized/unparser.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000040(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, 1900
+  %3 = add i32 %2, %0
+  %4 = mul i32 %3, 1461
+  %5 = add i32 %4, 7012800
   ret i32 %5
 }
 

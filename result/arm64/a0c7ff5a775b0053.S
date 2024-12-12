@@ -1,45 +1,38 @@
-func0000000000000a44:                   // @func0000000000000a44
+func0000000000002884:                   // @func0000000000002884
 // %bb.0:                               // %entry
+	sub	w9, w1, w0
+	subs	w10, w0, w1
 	mov	w8, #60001                      // =0xea61
-	uabd	v0.4s, v0.4s, v2.4s
-	uabd	v1.4s, v1.4s, v3.4s
-	dup	v2.4s, w8
-	cmhi	v1.4s, v2.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	csel	w9, w10, w9, hi
+	cmp	w9, w8
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000a48:                   // @func0000000000000a48
+func0000000000002888:                   // @func0000000000002888
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	uabd	v0.4s, v0.4s, v2.4s
-	uabd	v1.4s, v1.4s, v3.4s
-	cmhi	v1.4s, v1.4s, v4.4s
-	cmhi	v0.4s, v0.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	sub	w8, w1, w0
+	subs	w9, w0, w1
+	csel	w8, w9, w8, hi
+	cmp	w8, #1
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	movi	v4.4s, #5
-	uabd	v0.4s, v0.4s, v2.4s
-	uabd	v1.4s, v1.4s, v3.4s
-	cmhi	v1.4s, v4.4s, v1.4s
-	cmhi	v0.4s, v4.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	sub	w8, w1, w0
+	subs	w9, w0, w1
+	csel	w8, w9, w8, hi
+	cmp	w8, #5
+	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000006a:                   // @func000000000000006a
+func00000000000000ca:                   // @func00000000000000ca
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffff00ffffff
-	sabd	v0.4s, v0.4s, v2.4s
-	sabd	v1.4s, v1.4s, v3.4s
-	cmgt	v1.4s, v1.4s, v4.4s
-	cmgt	v0.4s, v0.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	sub	w9, w1, w0
+	subs	w10, w0, w1
+	mov	w8, #16777215                   // =0xffffff
+	csel	w9, w10, w9, gt
+	cmp	w9, w8
+	cset	w0, gt
 	ret
                                         // -- End function

@@ -8,7 +8,7 @@ func0000000000000020:                   # @func0000000000000020
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
-func0000000000000024:                   # @func0000000000000024
+func00000000000000a4:                   # @func00000000000000a4
 	sext.w	a2, a2
 	sext.w	a3, a0
 	bltu	a3, a2, .LBB1_2

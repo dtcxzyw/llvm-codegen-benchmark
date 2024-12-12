@@ -1,18 +1,18 @@
-func0000000000000058:                   # @func0000000000000058
+func000000000000005c:                   # @func000000000000005c
 	leaq	8553(%rdi,%rsi,2), %rax
 	retq
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	shlq	$5, %rsi
 	leaq	24(%rdi,%rsi), %rax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	leaq	(%rdi,%rsi,2), %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	shlq	$4, %rsi
 	leaq	60(%rdi,%rsi), %rax
 	retq
-func0000000000000078:                   # @func0000000000000078
+func000000000000007c:                   # @func000000000000007c
 	leaq	33(%rdi,%rsi,2), %rax
 	retq
 func0000000000000070:                   # @func0000000000000070
@@ -22,7 +22,7 @@ func0000000000000070:                   # @func0000000000000070
 func0000000000000050:                   # @func0000000000000050
 	leaq	29(%rdi,%rsi,2), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	shlq	$4, %rsi
 	leaq	88(%rdi,%rsi), %rax
 	retq

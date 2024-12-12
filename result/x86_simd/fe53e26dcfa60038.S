@@ -32,7 +32,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000008e:                   # @func000000000000008e
+func000000000000010e:                   # @func000000000000010e
 	vpaddb	.LCPI0_0(%rip), %xmm2, %xmm2
 	vpcmpltub	.LCPI0_1(%rip), %xmm2, %k0
 	vpcmpled	%ymm1, %ymm0, %k1
@@ -74,7 +74,7 @@ func000000000000008e:                   # @func000000000000008e
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vpaddb	.LCPI1_0(%rip), %xmm2, %xmm2
 	vpcmpltub	.LCPI1_1(%rip), %xmm2, %k0
 	vpcmpgtd	%ymm0, %ymm1, %k1
@@ -116,7 +116,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000288:                   # @func0000000000000288
+func0000000000000d08:                   # @func0000000000000d08
 	vpaddb	.LCPI2_0(%rip), %xmm2, %xmm2
 	vpcmpltub	.LCPI2_1(%rip), %xmm2, %k0
 	vpcmpltud	%ymm1, %ymm0, %k1

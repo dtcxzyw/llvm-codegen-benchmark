@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; linux/optimized/hdac_controller.ll
+; 6 occurrences:
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/tx.ll
 ; qemu/optimized/hw_net_tulip.c.ll
@@ -53,7 +52,7 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; brotli/optimized/huffman.c.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; image-rs/optimized/34r8dryqmufipcqz.ll
@@ -70,6 +69,8 @@ entry:
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; xgboost/optimized/c_api.cc.ll
 ; xgboost/optimized/simple_dmatrix.cc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i16 %0) #0 {
 entry:

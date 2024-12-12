@@ -11,7 +11,7 @@ entry:
   ret i8 %3
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; flac/optimized/stream_encoder.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; libphonenumber/optimized/rune.c.ll
@@ -21,6 +21,8 @@ entry:
 ; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; yaml-cpp/optimized/stream.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
@@ -29,10 +31,11 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; grpc/optimized/hpack_parser.cc.ll
 ; libquic/optimized/e_aes.c.ll
 ; libquic/optimized/e_chacha20poly1305.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:

@@ -5,7 +5,7 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmslt_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
   %3 = ashr exact i32 %2, 24
@@ -20,7 +20,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmsle_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i8 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
   %3 = ashr exact i32 %2, 24
@@ -36,7 +36,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmsgt_vx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
   %3 = ashr exact i32 %2, 24
@@ -49,7 +49,7 @@ entry:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; spike/optimized/vmsne_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
   %3 = ashr exact i32 %2, 24
@@ -73,7 +73,7 @@ entry:
 ; spike/optimized/vmseq_vx.ll
 ; wireshark/optimized/packet-dbus.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
   %3 = ashr exact i32 %2, 24
@@ -87,7 +87,7 @@ entry:
 ; llvm/optimized/CGCall.cpp.ll
 ; slurm/optimized/slurm_protocol_api.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i8 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
   %3 = ashr exact i32 %2, 24
@@ -99,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i8 %0, i32 %1) #0 {
+define i1 @func00000000000000ac(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
   %3 = ashr exact i32 %2, 24
@@ -111,7 +111,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/trace_events_filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000027(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
   %3 = ashr exact i32 %2, 24

@@ -13,7 +13,7 @@ define i32 @func0000000000000020(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 123
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -25,8 +25,8 @@ define i32 @func000000000000018e(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
-  %6 = add nuw i32 %5, %0
+  %5 = add nuw nsw i32 %1, %4
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 
@@ -43,7 +43,7 @@ define i32 @func0000000000000025(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 123
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -56,7 +56,7 @@ define i32 @func0000000000000185(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -71,7 +71,7 @@ define i32 @func000000000000002f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 10
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -83,7 +83,7 @@ define i32 @func0000000000000080(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 16
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -97,21 +97,20 @@ define i32 @func000000000000002c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -1
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
-; icu/optimized/wrtjava.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000100(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 3
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -124,7 +123,7 @@ define i32 @func0000000000000180(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -139,7 +138,7 @@ define i32 @func000000000000018f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -151,7 +150,7 @@ define i32 @func0000000000000024(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 60
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }

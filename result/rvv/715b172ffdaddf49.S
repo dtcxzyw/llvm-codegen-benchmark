@@ -1,4 +1,4 @@
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	bseti	a0, zero, 31
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10

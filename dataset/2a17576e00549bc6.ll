@@ -45,7 +45,6 @@ entry:
 ; 43 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/EAStopwatch.cpp.ll
-; eastl/optimized/TestChrono.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -59,6 +58,7 @@ entry:
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; minetest/optimized/server.cpp.ll
+; nuttx/optimized/lib_gmtimer.c.ll
 ; oiio/optimized/benchmark.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; openblas/optimized/utest_main.c.ll
@@ -95,7 +95,7 @@ entry:
   ret i64 %5
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/thrmgr.c.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -107,7 +107,6 @@ entry:
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libquic/optimized/curve25519.c.ll
@@ -118,6 +117,9 @@ entry:
 ; php/optimized/tm2unixtime.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; rocksdb/optimized/replayer_impl.cc.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -177,6 +179,17 @@ entry:
   %3 = sub i64 %1, %2
   %4 = mul nsw i64 %0, 1000000
   %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; slurm/optimized/srun_job.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, 1000000
+  %4 = sub i64 %0, %1
+  %5 = add nsw i64 %4, %3
   ret i64 %5
 }
 

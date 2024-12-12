@@ -38,7 +38,7 @@ entry:
   ret i32 %2
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; cpython/optimized/mpdecimal.ll
@@ -46,7 +46,6 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; hwloc/optimized/bitmap.ll
 ; linux/optimized/intel_lrc.ll
-; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/countbitsnode.ll
 ; spike/optimized/spike.ll
 ; z3/optimized/util.cpp.ll
@@ -75,6 +74,16 @@ entry:
 }
 
 ; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000031(i64 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i64 %0, -4294967297
+  %2 = select i1 %1, i32 16, i32 48
+  ret i32 %2
+}
+
+; 1 occurrences:
 ; linux/optimized/intel_sprite.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000019(i64 %0) #0 {
@@ -82,6 +91,17 @@ entry:
   %.not = icmp eq i64 %0, 0
   %1 = select i1 %.not, i32 -2147287040, i32 -2147270656
   ret i32 %1
+}
+
+; 2 occurrences:
+; eastl/optimized/TestBitset.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000029(i64 %0) #0 {
+entry:
+  %1 = icmp samesign ult i64 %0, 4294967296
+  %2 = select i1 %1, i32 48, i32 16
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

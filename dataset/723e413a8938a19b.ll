@@ -161,12 +161,12 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000161(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = add nsw i64 %3, -2
   %5 = ashr exact i64 %4, 1
-  %6 = icmp eq i64 %5, %1
+  %6 = icmp eq i64 %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
@@ -318,12 +318,12 @@ entry:
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/symmetry_reduce_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 3
   %4 = add nsw i64 %3, -2
   %5 = ashr exact i64 %4, 1
-  %6 = icmp eq i64 %5, %1
+  %6 = icmp eq i64 %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }

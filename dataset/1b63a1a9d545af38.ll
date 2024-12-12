@@ -1,5 +1,5 @@
 
-; 1426 occurrences:
+; 1425 occurrences:
 ; abc/optimized/extraUtilEnum.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -10,6 +10,9 @@
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/options_description.ll
+; boost/optimized/src.ll
 ; clamav/optimized/filestr.cpp.ll
 ; clamav/optimized/hashtab.c.ll
 ; crow/optimized/example_session.cpp.ll
@@ -866,7 +869,6 @@
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1216,8 +1218,6 @@
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/installables.ll
 ; nix/optimized/lexer-tab.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parser-tab.ll
 ; nix/optimized/print-ambiguous.ll
@@ -1331,21 +1331,18 @@
 ; qemu/optimized/migration_savevm.c.ll
 ; qemu/optimized/plugins_core.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/random.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
-; spike/optimized/f32_classify.ll
 ; spike/optimized/f32_div.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_rem.ll
 ; spike/optimized/f32_roundToInt.ll
 ; spike/optimized/f32_sqrt.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
 ; spike/optimized/f32_to_i32.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64.ll
@@ -1355,6 +1352,8 @@
 ; spike/optimized/f32_to_ui64.ll
 ; spike/optimized/f32_to_ui64_r_minMag.ll
 ; spike/optimized/fall_reciprocal.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/2i7eys0ecsgyjusd.ll
 ; wasmtime-rs/optimized/2y3wfjzj02o80wks.ll
@@ -1370,7 +1369,6 @@
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
 ; z3/optimized/dl_external_relation.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
@@ -1409,7 +1407,8 @@
 ; z3/optimized/symmetry_reduce_tactic.cpp.ll
 ; z3/optimized/theory_str_mc.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
-; z3/optimized/watch_list.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode1f.c.ll
 ; zfp/optimized/encode1i.c.ll
@@ -1434,12 +1433,16 @@ entry:
   ret i64 %2
 }
 
-; 445 occurrences:
+; 451 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/codegen_internal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/pin_thread.ll
+; boost/optimized/src.ll
+; boost/optimized/xml_grammar.ll
 ; cmake/optimized/xmlparse.c.ll
 ; coreutils-rs/optimized/1aqq6ooh2lp9lqic.ll
 ; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
@@ -1477,7 +1480,6 @@ entry:
 ; folly/optimized/dynamic.cpp.ll
 ; graphviz/optimized/partition.c.ll
 ; gromacs/optimized/hardwaretopology.cpp.ll
-; gromacs/optimized/pthreads.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -1708,7 +1710,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -1872,6 +1873,10 @@ entry:
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; wireshark/optimized/packet-lldp.c.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode1f.c.ll
 ; zfp/optimized/encode2d.c.ll

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000508(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 2047
@@ -21,7 +21,7 @@ entry:
 ; opencv/optimized/convolution_layer.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004ca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sgt i64 %3, 0
@@ -35,7 +35,7 @@ entry:
 ; grpc/optimized/ssl_transport_security.cc.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ne i64 %1, %2

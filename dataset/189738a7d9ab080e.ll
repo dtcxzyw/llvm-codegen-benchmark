@@ -25,9 +25,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; flatbuffers/optimized/flatc.cpp.ll
-; freetype/optimized/autofit.c.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {

@@ -19,9 +19,7 @@ entry:
   ret double %3
 }
 
-; 5 occurrences:
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-enrp.c.ll
+; 3 occurrences:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll

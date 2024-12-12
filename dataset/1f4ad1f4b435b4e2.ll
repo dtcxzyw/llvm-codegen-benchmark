@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 88 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; arrow/optimized/tdigest.cc.ll
 ; arrow/optimized/writer.cc.ll
@@ -13,7 +13,6 @@
 ; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_helper.cpp.ll
-; duckdb/optimized/ub_duckdb_planner_operator.cpp.ll
 ; duckdb/optimized/ub_duckdb_transformer_helpers.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -45,6 +44,7 @@
 ; opencv/optimized/PnPProblem.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/ccalib.cpp.ll
+; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/fundam.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
@@ -59,7 +59,6 @@
 ; portaudio/optimized/pa_front.c.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/interval.ll
-; postgres/optimized/orderedsetaggs.ll
 ; postgres/optimized/pg_basebackup.ll
 ; postgres/optimized/pgbench.ll
 ; postgres/optimized/plancat.ll
@@ -98,8 +97,16 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; redis/optimized/hyperloglog.ll
 ; ruby/optimized/complex.ll
 ; slurm/optimized/print_fields.ll
@@ -170,7 +177,7 @@ entry:
   ret i1 %3
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; cmake/optimized/json_value.cpp.ll
 ; gromacs/optimized/eigio.cpp.ll
 ; llvm/optimized/MsgPackWriter.cpp.ll
@@ -187,14 +194,12 @@ entry:
 ; node/optimized/libnode.Protocol.ll
 ; opencv/optimized/bgfg_gmg.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/proj_json_streaming_writer.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; proxygen/optimized/Sampling.cpp.ll
 ; quantlib/optimized/recoveryratequote.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; sqlite/optimized/sqlite3.ll
-; stat-rs/optimized/4d9pj14shc9lbmph.ll
 ; xgboost/optimized/quantile_obj.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
@@ -267,6 +272,7 @@ entry:
 ; 30 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/formatter.ll
 ; casadi/optimized/idas_io.c.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
 ; draco/optimized/obj_encoder.cc.ll
@@ -274,7 +280,6 @@ entry:
 ; hdf5/optimized/H5C.c.ll
 ; hermes/optimized/IR.cpp.ll
 ; hermes/optimized/ISel.cpp.ll
-; hermes/optimized/Passes.cpp.ll
 ; hermes/optimized/SerializedLiteralGenerator.cpp.ll
 ; libpng/optimized/png.c.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
@@ -304,7 +309,7 @@ entry:
   ret i1 %3
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; g2o/optimized/types_icp.cpp.ll
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
 ; g2o/optimized/vertex_cam.cpp.ll
@@ -320,7 +325,6 @@ entry:
 ; g2o/optimized/vertex_se3_euler.cpp.ll
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; g2o/optimized/vertex_segment2d.cpp.ll
-; gromacs/optimized/forcetable.cpp.ll
 ; openjdk/optimized/gcm.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000042(double %0) #0 {
@@ -403,7 +407,7 @@ entry:
   ret i1 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; casadi/optimized/kinsol_io.c.ll
 ; gromacs/optimized/scattering.cpp.ll
 ; memcached/optimized/memcached-memcached.ll
@@ -415,7 +419,6 @@ entry:
 ; proj/optimized/nsper.cpp.ll
 ; proj/optimized/urm5.cpp.ll
 ; proj/optimized/urmfps.cpp.ll
-; stat-rs/optimized/4d9pj14shc9lbmph.ll
 ; sundials/optimized/arkode_io.c.ll
 ; sundials/optimized/kinsol_io.c.ll
 ; Function Attrs: nounwind
@@ -438,6 +441,43 @@ entry:
   ret i1 %3
 }
 
+; 5 occurrences:
+; duckdb/optimized/ub_duckdb_planner_operator.cpp.ll
+; openusd/optimized/utils.c.ll
+; postgres/optimized/orderedsetaggs.ll
+; postgres/optimized/selfuncs.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000086(double %0) #0 {
+entry:
+  %1 = fcmp ogt double %0, 1.000000e+02
+  %2 = fcmp ult double %0, 0.000000e+00
+  %3 = or i1 %2, %1
+  ret i1 %3
+}
+
+; 1 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d0(double %0) #0 {
+entry:
+  %1 = fcmp one double %0, 0x7FF0000000000000
+  %2 = fcmp oeq double %0, 1.800000e+02
+  %3 = or i1 %2, %1
+  ret i1 %3
+}
+
+; 1 occurrences:
+; stat-rs/optimized/4d9pj14shc9lbmph.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000096(double %0) #0 {
+entry:
+  %1 = fcmp ogt double %0, 1.000000e+00
+  %2 = fcmp ule double %0, 0.000000e+00
+  %3 = or i1 %2, %1
+  ret i1 %3
+}
+
 ; 2 occurrences:
 ; stat-rs/optimized/n94tvlll45kxl7r.ll
 ; sundials/optimized/arkode_io.c.ll
@@ -446,6 +486,18 @@ define i1 @func0000000000000158(double %0) #0 {
 entry:
   %1 = fcmp ole double %0, 0.000000e+00
   %2 = fcmp oge double %0, 1.000000e+00
+  %3 = or i1 %2, %1
+  ret i1 %3
+}
+
+; 2 occurrences:
+; hermes/optimized/ISel.cpp.ll
+; hermes/optimized/Passes.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(double %0) #0 {
+entry:
+  %1 = fcmp ult double %0, 0.000000e+00
+  %2 = fcmp ogt double %0, 2.550000e+02
   %3 = or i1 %2, %1
   ret i1 %3
 }
@@ -469,19 +521,6 @@ define i1 @func0000000000000082(double %0) #0 {
 entry:
   %1 = fcmp ogt double %0, 0x41DFFFFFFFC00000
   %2 = fcmp uno double %0, 0.000000e+00
-  %3 = or i1 %2, %1
-  ret i1 %3
-}
-
-; 3 occurrences:
-; openusd/optimized/utils.c.ll
-; postgres/optimized/selfuncs.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000086(double %0) #0 {
-entry:
-  %1 = fcmp ogt double %0, 0x41EFFFFFFFE00000
-  %2 = fcmp ult double %0, 0.000000e+00
   %3 = or i1 %2, %1
   ret i1 %3
 }
@@ -517,17 +556,6 @@ define i1 @func0000000000000028(double %0) #0 {
 entry:
   %1 = fcmp uno double %0, 0.000000e+00
   %2 = fcmp ogt double %0, 1.000000e+100
-  %3 = or i1 %2, %1
-  ret i1 %3
-}
-
-; 1 occurrences:
-; proj/optimized/io.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000104(double %0) #0 {
-entry:
-  %1 = fcmp oeq double %0, 1.000000e+00
-  %2 = fcmp olt double %0, 0.000000e+00
   %3 = or i1 %2, %1
   ret i1 %3
 }

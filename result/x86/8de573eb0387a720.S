@@ -1,15 +1,15 @@
-func000000000000019c:                   # @func000000000000019c
+func000000000000072c:                   # @func000000000000072c
 	shrl	%edx
-	cmpq	%rsi, %rdx
-	setbe	%cl
+	cmpq	%rdx, %rsi
+	setae	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000015c:                   # @func000000000000015c
+func00000000000006ac:                   # @func00000000000006ac
 	shrl	%edx
-	cmpq	%rsi, %rdx
-	setae	%cl
+	cmpq	%rdx, %rsi
+	setbe	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al

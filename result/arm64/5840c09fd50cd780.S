@@ -1,162 +1,40 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	ext	v5.16b, v4.16b, v4.16b, #8
-	zip2	v6.8b, v4.8b, v0.8b
-	zip1	v4.8b, v4.8b, v0.8b
-	zip1	v7.8b, v5.8b, v0.8b
-	zip2	v5.8b, v5.8b, v0.8b
-	shl	v6.4h, v6.4h, #8
-	shl	v4.4h, v4.4h, #8
-	sshr	v6.4h, v6.4h, #8
-	shl	v7.4h, v7.4h, #8
-	shl	v5.4h, v5.4h, #8
-	sshr	v4.4h, v4.4h, #8
-	sshll	v6.4s, v6.4h, #0
-	sshr	v7.4h, v7.4h, #8
-	sshr	v5.4h, v5.4h, #8
-	sshll	v4.4s, v4.4h, #0
-	scvtf	v6.4s, v6.4s
-	sshll	v7.4s, v7.4h, #0
-	sshll	v5.4s, v5.4h, #0
-	scvtf	v4.4s, v4.4s
-	scvtf	v7.4s, v7.4s
-	scvtf	v5.4s, v5.4s
-	fcmeq	v1.4s, v6.4s, v1.4s
-	fcmeq	v0.4s, v4.4s, v0.4s
-	fcmeq	v3.4s, v5.4s, v3.4s
-	fcmeq	v2.4s, v7.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v1.16b
+	sxtb	w8, w0
+	scvtf	s1, w8
+	fcmp	s0, s1
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ext	v5.16b, v4.16b, v4.16b, #8
-	zip2	v6.8b, v4.8b, v0.8b
-	zip1	v4.8b, v4.8b, v0.8b
-	zip1	v7.8b, v5.8b, v0.8b
-	zip2	v5.8b, v5.8b, v0.8b
-	shl	v6.4h, v6.4h, #8
-	shl	v4.4h, v4.4h, #8
-	sshr	v6.4h, v6.4h, #8
-	shl	v7.4h, v7.4h, #8
-	shl	v5.4h, v5.4h, #8
-	sshr	v4.4h, v4.4h, #8
-	sshll	v6.4s, v6.4h, #0
-	sshr	v7.4h, v7.4h, #8
-	sshr	v5.4h, v5.4h, #8
-	sshll	v4.4s, v4.4h, #0
-	scvtf	v6.4s, v6.4s
-	sshll	v7.4s, v7.4h, #0
-	sshll	v5.4s, v5.4h, #0
-	scvtf	v4.4s, v4.4s
-	scvtf	v7.4s, v7.4s
-	scvtf	v5.4s, v5.4s
-	fcmeq	v1.4s, v6.4s, v1.4s
-	fcmeq	v0.4s, v4.4s, v0.4s
-	fcmeq	v3.4s, v5.4s, v3.4s
-	fcmeq	v2.4s, v7.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v1.16b
-	mvn	v0.16b, v0.16b
+	sxtb	w8, w0
+	scvtf	s1, w8
+	fcmp	s0, s1
+	cset	w0, ne
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	ext	v5.16b, v4.16b, v4.16b, #8
-	zip2	v6.8b, v4.8b, v0.8b
-	zip1	v4.8b, v4.8b, v0.8b
-	zip1	v7.8b, v5.8b, v0.8b
-	zip2	v5.8b, v5.8b, v0.8b
-	shl	v6.4h, v6.4h, #8
-	shl	v4.4h, v4.4h, #8
-	sshr	v6.4h, v6.4h, #8
-	shl	v7.4h, v7.4h, #8
-	shl	v5.4h, v5.4h, #8
-	sshr	v4.4h, v4.4h, #8
-	sshll	v6.4s, v6.4h, #0
-	sshr	v7.4h, v7.4h, #8
-	sshr	v5.4h, v5.4h, #8
-	sshll	v4.4s, v4.4h, #0
-	scvtf	v6.4s, v6.4s
-	sshll	v7.4s, v7.4h, #0
-	sshll	v5.4s, v5.4h, #0
-	scvtf	v4.4s, v4.4s
-	scvtf	v7.4s, v7.4s
-	scvtf	v5.4s, v5.4s
-	fcmge	v1.4s, v1.4s, v6.4s
-	fcmge	v0.4s, v0.4s, v4.4s
-	fcmge	v3.4s, v3.4s, v5.4s
-	fcmge	v2.4s, v2.4s, v7.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v1.16b
+	sxtb	w8, w0
+	scvtf	s1, w8
+	fcmp	s0, s1
+	cset	w0, ge
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ext	v5.16b, v4.16b, v4.16b, #8
-	zip2	v6.8b, v4.8b, v0.8b
-	zip1	v4.8b, v4.8b, v0.8b
-	zip1	v7.8b, v5.8b, v0.8b
-	zip2	v5.8b, v5.8b, v0.8b
-	shl	v6.4h, v6.4h, #8
-	shl	v4.4h, v4.4h, #8
-	sshr	v6.4h, v6.4h, #8
-	shl	v7.4h, v7.4h, #8
-	shl	v5.4h, v5.4h, #8
-	sshr	v4.4h, v4.4h, #8
-	sshll	v6.4s, v6.4h, #0
-	sshr	v7.4h, v7.4h, #8
-	sshr	v5.4h, v5.4h, #8
-	sshll	v4.4s, v4.4h, #0
-	scvtf	v6.4s, v6.4s
-	sshll	v7.4s, v7.4h, #0
-	sshll	v5.4s, v5.4h, #0
-	scvtf	v4.4s, v4.4s
-	scvtf	v7.4s, v7.4s
-	scvtf	v5.4s, v5.4s
-	fcmgt	v1.4s, v1.4s, v6.4s
-	fcmgt	v0.4s, v0.4s, v4.4s
-	fcmgt	v3.4s, v3.4s, v5.4s
-	fcmgt	v2.4s, v2.4s, v7.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v1.16b
+	sxtb	w8, w0
+	scvtf	s1, w8
+	fcmp	s0, s1
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ext	v5.16b, v4.16b, v4.16b, #8
-	zip2	v6.8b, v4.8b, v0.8b
-	zip1	v4.8b, v4.8b, v0.8b
-	zip1	v7.8b, v5.8b, v0.8b
-	zip2	v5.8b, v5.8b, v0.8b
-	shl	v6.4h, v6.4h, #8
-	shl	v4.4h, v4.4h, #8
-	sshr	v6.4h, v6.4h, #8
-	shl	v7.4h, v7.4h, #8
-	shl	v5.4h, v5.4h, #8
-	sshr	v4.4h, v4.4h, #8
-	sshll	v6.4s, v6.4h, #0
-	sshr	v7.4h, v7.4h, #8
-	sshr	v5.4h, v5.4h, #8
-	sshll	v4.4s, v4.4h, #0
-	scvtf	v6.4s, v6.4s
-	sshll	v7.4s, v7.4h, #0
-	sshll	v5.4s, v5.4h, #0
-	scvtf	v4.4s, v4.4s
-	scvtf	v7.4s, v7.4s
-	scvtf	v5.4s, v5.4s
-	fcmge	v1.4s, v6.4s, v1.4s
-	fcmge	v0.4s, v4.4s, v0.4s
-	fcmge	v3.4s, v5.4s, v3.4s
-	fcmge	v2.4s, v7.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v1.16b
-	mvn	v0.16b, v0.16b
+	sxtb	w8, w0
+	scvtf	s1, w8
+	fcmp	s0, s1
+	cset	w0, hi
 	ret
                                         // -- End function

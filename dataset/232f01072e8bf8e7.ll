@@ -18,7 +18,7 @@ entry:
   %3 = fpext float %2 to double
   %4 = fdiv double %1, %3
   %5 = fptrunc double %4 to float
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 

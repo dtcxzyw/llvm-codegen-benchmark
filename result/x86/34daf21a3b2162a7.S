@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	shll	$7, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrxl	%esi, %edi, %eax
 	andl	$14, %eax
 	cmpl	$10, %eax

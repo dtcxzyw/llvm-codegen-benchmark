@@ -1,20 +1,20 @@
-func0000000000000018:                   # @func0000000000000018
-	cmpl	%edi, %edx
-	setb	%cl
+func0000000000000028:                   # @func0000000000000028
+	cmpl	%edx, %edi
+	seta	%cl
 	testb	%sil, %sil
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	cmpl	%edi, %edx
+func0000000000000021:                   # @func0000000000000021
+	cmpl	%edx, %edi
 	sete	%cl
 	testb	%sil, %sil
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
-	cmpl	%edi, %edx
-	setg	%cl
+func0000000000000026:                   # @func0000000000000026
+	cmpl	%edx, %edi
+	setl	%cl
 	cmpb	$1, %sil
 	sete	%al
 	andb	%cl, %al

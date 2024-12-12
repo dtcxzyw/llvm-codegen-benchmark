@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wasmtime-rs/optimized/kpzz8s92vshq6im.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0) #0 {
 entry:

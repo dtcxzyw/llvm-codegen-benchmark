@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 47 occurrences:
 ; cpython/optimized/optimizer.ll
 ; icu/optimized/ucnv2022.ll
 ; icu/optimized/utf16collationiterator.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/82571.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/utownerid.ll
 ; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
@@ -26,7 +25,6 @@
 ; llvm/optimized/MachineSink.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll

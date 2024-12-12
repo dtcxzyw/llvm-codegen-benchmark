@@ -31,26 +31,33 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI4_0:
 	.quad	2147483562                      # 0x7fffffaa
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpcmpleq	%ymm1, %ymm0, %k1
 	vpbroadcastq	.LCPI4_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [2147483562,2147483562,2147483562,2147483562]
 	retq
 .LCPI5_0:
-	.quad	32                              # 0x20
+	.quad	-9223372036854775808            # 0x8000000000000000
 .LCPI5_1:
-	.quad	1                               # 0x1
-.LCPI5_2:
-	.quad	3                               # 0x3
-func0000000000000008:                   # @func0000000000000008
+	.quad	9223372036854775806             # 0x7ffffffffffffffe
+func0000000000000021:                   # @func0000000000000021
 	vpsubq	%ymm1, %ymm0, %ymm0
-	vpcmpnleuq	.LCPI5_0(%rip){1to4}, %ymm0, %k1
-	vpbroadcastq	.LCPI5_1(%rip), %ymm0   # ymm0 = [1,1,1,1]
-	vpbroadcastq	.LCPI5_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [3,3,3,3]
+	vpbroadcastq	.LCPI5_0(%rip), %ymm1   # ymm1 = [9223372036854775808,9223372036854775808,9223372036854775808,9223372036854775808]
+	vpcmpeqq	%ymm1, %ymm0, %k1
+	vpbroadcastq	.LCPI5_1(%rip), %ymm0   # ymm0 = [9223372036854775806,9223372036854775806,9223372036854775806,9223372036854775806]
+	vmovdqa64	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI6_0:
+	.quad	16                              # 0x10
+func0000000000000008:                   # @func0000000000000008
+	vpsubq	%ymm1, %ymm0, %ymm0
+	vpbroadcastq	.LCPI6_0(%rip), %ymm1   # ymm1 = [16,16,16,16]
+	vpcmpnleuq	%ymm1, %ymm0, %k1
+	vmovdqa64	%ymm1, %ymm0 {%k1} {z}
+	retq
+.LCPI7_0:
 	.quad	1                               # 0x1
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpcmpgtq	%ymm1, %ymm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpbroadcastq	.LCPI6_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1]
+	vpbroadcastq	.LCPI7_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1]
 	retq

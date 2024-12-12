@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmovnsl	%esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	xorl	%eax, %eax
 	cmpl	$48, %edx
 	cmovnel	%esi, %eax
@@ -17,7 +17,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmovael	%esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	xorl	%eax, %eax
 	cmpl	$4094, %edx                     # imm = 0xFFE
 	cmovnel	%esi, %eax

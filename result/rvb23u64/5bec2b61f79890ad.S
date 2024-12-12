@@ -1,23 +1,23 @@
-func0000000000000046:                   # @func0000000000000046
+func0000000000000047:                   # @func0000000000000047
 	add	a1, a1, a2
 	addi	a1, a1, -1
 	srliw	a1, a1, 1
 	slli	a1, a1, 1
 	sh3add	a0, a1, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func0000000000000057:                   # @func0000000000000057
 	add	a1, a1, a2
 	addi	a1, a1, -7
 	srliw	a1, a1, 5
 	sh3add	a0, a1, a0
 	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	add	a1, a1, a2
 	addi	a1, a1, -6
 	srliw	a1, a1, 6
 	sh3add	a0, a1, a0
 	ret
-func0000000000000076:                   # @func0000000000000076
+func0000000000000077:                   # @func0000000000000077
 	add	a1, a1, a2
 	addi	a1, a1, -1
 	srliw	a1, a1, 6
@@ -29,10 +29,19 @@ func00000000000000f4:                   # @func00000000000000f4
 	srliw	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000000f7:                   # @func00000000000000f7
 	add	a1, a1, a2
 	addi	a1, a1, 2
 	srliw	a1, a1, 3
+	add	a0, a0, a1
+	ret
+func0000000000000087:                   # @func0000000000000087
+	add	a1, a1, a2
+	addi	a1, a1, 1
+	srliw	a1, a1, 1
+	slli	a2, a1, 3
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func00000000000000d4:                   # @func00000000000000d4

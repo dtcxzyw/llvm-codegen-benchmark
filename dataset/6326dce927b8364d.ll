@@ -1,5 +1,5 @@
 
-; 142 occurrences:
+; 140 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -73,8 +73,6 @@
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -143,55 +141,11 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = sub i64 %3, %1
   %5 = icmp ult i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = sub nsw i64 %3, %1
-  %5 = icmp slt i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000db(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = sub nsw i64 %3, %1
-  %5 = icmp sge i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = sub nsw i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d7(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = sub nsw i64 %3, %1
-  %5 = icmp sle i64 %4, %0
   ret i1 %5
 }
 
@@ -210,22 +164,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; hdf5/optimized/H5RS.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 1
-  %4 = sub i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; hermes/optimized/CommandLine.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = sub nsw i64 %3, %1
@@ -349,7 +292,7 @@ entry:
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; llvm/optimized/driver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = sub nsw i64 %3, %1
@@ -360,7 +303,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = sub nsw i64 %3, %1

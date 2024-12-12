@@ -13,7 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -21,7 +21,7 @@ func0000000000000064:                   # @func0000000000000064
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -37,7 +37,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpmovqd	%ymm0, %xmm0

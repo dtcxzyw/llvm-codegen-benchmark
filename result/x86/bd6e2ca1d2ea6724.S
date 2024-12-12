@@ -8,5 +8,5 @@ func0000000000000040:                   # @func0000000000000040
 	xorl	%ecx, %ecx
 	cmpq	%rax, %rsi
 	sete	%cl
-	leal	6(%rcx,%rdi), %eax
+	leal	6(%rdi,%rcx), %eax
 	retq

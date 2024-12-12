@@ -18,3 +18,9 @@ func0000000000000005:                   # @func0000000000000005
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	movl	%esi, %ecx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rcx, %rax
+	retq

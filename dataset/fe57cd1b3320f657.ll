@@ -1,6 +1,9 @@
 
-; 14 occurrences:
+; 17 occurrences:
 ; abc/optimized/ioWriteBook.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; gromacs/optimized/colvarvalue.cpp.ll
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; meshlab/optimized/qhull_tools.cpp.ll

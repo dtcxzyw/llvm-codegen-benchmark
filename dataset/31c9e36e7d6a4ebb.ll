@@ -18,28 +18,29 @@ entry:
 ; openjdk/optimized/awt_ImagingLib.ll
 ; verilator/optimized/V3EmitCHeaders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
   %3 = icmp slt i32 %2, %0
   ret i1 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cmake/optimized/divsufsort.c.ll
+; lvgl/optimized/lv_math.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
   %3 = icmp sgt i32 %2, %0
   ret i1 %3
 }
 
-; 104 occurrences:
+; 101 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
@@ -71,7 +72,6 @@ entry:
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -84,7 +84,6 @@ entry:
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/fraClass.c.ll
 ; abc/optimized/fraigTable.c.ll
-; abc/optimized/fxuMatrix.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -124,7 +123,6 @@ entry:
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/mpmTruth.c.ll
-; abc/optimized/nmApi.c.ll
 ; abc/optimized/nmTable.c.ll
 ; abc/optimized/nwkMerge.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
@@ -145,19 +143,27 @@ entry:
 ; abc/optimized/wlnRetime.c.ll
 ; abc/optimized/wlnWlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, %1
   %3 = icmp ugt i32 %2, %0
   ret i1 %3
 }
 
-; 3 occurrences:
-; libwebp/optimized/quant_enc.c.ll
-; opencv/optimized/dxt.cpp.ll
+; 1 occurrences:
+; lvgl/optimized/lv_math.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, %1
+  %3 = icmp ugt i32 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
 ; openspiel/optimized/colored_trails_board_generator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
   %3 = icmp ugt i32 %2, %0
@@ -169,7 +175,7 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
   %3 = icmp eq i32 %2, %0
@@ -179,10 +185,21 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stardetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
   %3 = icmp sge i32 %2, %0
+  ret i1 %3
+}
+
+; 2 occurrences:
+; libwebp/optimized/quant_enc.c.ll
+; opencv/optimized/dxt.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, %1
+  %3 = icmp samesign ugt i32 %2, %0
   ret i1 %3
 }
 

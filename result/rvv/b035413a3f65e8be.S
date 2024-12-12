@@ -17,6 +17,6 @@ func0000000000000001:                   # @func0000000000000001
 	vmv.v.x	v12, a0
 	vmv1r.v	v0, v10
 	vmerge.vim	v12, v12, 3, v0
-	vmseq.vv	v10, v12, v8
+	vmseq.vv	v10, v8, v12
 	vmor.mm	v0, v11, v10
 	ret

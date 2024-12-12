@@ -1,4 +1,4 @@
-func000000000000020a:                   # @func000000000000020a
+func000000000000040b:                   # @func000000000000040b
 	cmpl	$2, %edx
 	setb	%al
 	cmpl	$14, %esi
@@ -7,7 +7,7 @@ func000000000000020a:                   # @func000000000000020a
 	movzbl	%cl, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010b:                   # @func000000000000010b
 	testl	%edx, %edx
 	movl	$24, %ecx
 	movl	$48, %eax
@@ -16,7 +16,7 @@ func000000000000008a:                   # @func000000000000008a
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000060a:                   # @func000000000000060a
+func0000000000000c0b:                   # @func0000000000000c0b
 	testl	%edx, %edx
 	setne	%al
 	testl	%esi, %esi

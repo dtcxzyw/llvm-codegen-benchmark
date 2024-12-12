@@ -17,12 +17,13 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; linux/optimized/platform.ll
 ; llvm/optimized/BitwiseShiftChecker.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_chart.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0) #0 {

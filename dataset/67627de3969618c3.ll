@@ -25,7 +25,7 @@ define i1 @func0000000000000006(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -48,7 +48,7 @@ define i1 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -65,7 +65,7 @@ define i1 @func000000000000000a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
@@ -91,7 +91,7 @@ define i1 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -109,18 +109,18 @@ define i1 @func0000000000000004(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc nuw nsw i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ult i32 %0, %4
   ret i1 %5
 }
 
@@ -130,56 +130,55 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; wireshark/optimized/file-elf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; llvm/optimized/CheckPlacementNew.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000025(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = udiv i64 %1, %2
-  %4 = trunc nuw i64 %3 to i32
-  %5 = icmp uge i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/CheckPlacementNew.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000045(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = udiv i64 %1, %2
+  %4 = trunc nuw i64 %3 to i32
+  %5 = icmp ule i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/file-elf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/resize.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 

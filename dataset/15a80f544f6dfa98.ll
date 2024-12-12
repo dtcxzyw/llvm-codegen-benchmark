@@ -1,8 +1,7 @@
 
-; 35 occurrences:
+; 33 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/cistpl.ll
-; linux/optimized/dw.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
@@ -23,7 +22,6 @@
 ; luajit/optimized/minilua.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; ncnn/optimized/mat.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/klass.ll
@@ -112,10 +110,9 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; redis/optimized/lcode.ll
@@ -128,13 +125,14 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; cpython/optimized/floatobject.ll
+; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 32768, i32 0
-  %3 = shl nuw nsw i32 %0, 10
+  %2 = select i1 %1, i32 4096, i32 0
+  %3 = shl nuw nsw i32 %0, 9
   %4 = or i32 %3, %2
   ret i32 %4
 }

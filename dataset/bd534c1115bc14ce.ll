@@ -15,7 +15,7 @@ define i32 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 1
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }
@@ -29,7 +29,7 @@ define i32 @func0000000000000006(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 4294901760
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }

@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; hermes/optimized/regcomp.c.ll
-; linux/optimized/drm_scdc_helper.ll
 ; linux/optimized/power_supply_core.ll
 ; linux/optimized/rpcb_clnt.ll
 ; llvm/optimized/regcomp.c.ll
@@ -30,9 +29,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/pi.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i1 %1) #0 {

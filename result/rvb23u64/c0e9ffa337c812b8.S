@@ -1,10 +1,3 @@
-func0000000000000008:                   # @func0000000000000008
-	slli	a1, a1, 52
-	or	a0, a0, a1
-	li	a1, 2047
-	slli	a1, a1, 52
-	and	a0, a0, a1
-	ret
 func000000000000000f:                   # @func000000000000000f
 	sext.w	a1, a1
 	slli	a1, a1, 8

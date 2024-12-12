@@ -24,6 +24,7 @@
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; openjdk/optimized/defNewGeneration.ll
 ; openjdk/optimized/g1CardSet.ll
@@ -31,7 +32,6 @@
 ; openjdk/optimized/psPromotionManager.ll
 ; openjdk/optimized/psScavenge.ll
 ; openjdk/optimized/shenandoahMark.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/tcg-op-vec.c.ll
 ; qemu/optimized/tcg.c.ll

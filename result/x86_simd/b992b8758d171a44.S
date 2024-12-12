@@ -24,7 +24,7 @@ func000000000000001f:                   # @func000000000000001f
 	retq
 func000000000000001c:                   # @func000000000000001c
 	vpslld	$6, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq
@@ -48,5 +48,11 @@ func000000000000000f:                   # @func000000000000000f
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpternlogd	$236, .LCPI6_0(%rip){1to8}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
 	vpmovdw	%ymm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000006:                   # @func0000000000000006
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm0, %ymm1, %ymm0
+	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq

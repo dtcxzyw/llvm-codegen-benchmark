@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/giaIso.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp slt i32 %1, 2
@@ -15,7 +15,7 @@ entry:
 ; gromacs/optimized/trjcat.cpp.ll
 ; libjpeg-turbo/optimized/tjexample.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i32 %1, -1

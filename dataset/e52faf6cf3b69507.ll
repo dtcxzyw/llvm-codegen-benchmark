@@ -6,7 +6,7 @@
 define i32 @func0000000000000003(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16711680
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = or disjoint i32 %4, %5
   ret i32 %6
@@ -43,7 +43,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2097152
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext nneg i16 %1 to i32
   %6 = or i32 %4, %5
   ret i32 %6
@@ -55,20 +55,19 @@ entry:
 define i32 @func0000000000000000(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = or i32 %4, %5
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/uring_cmd.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4096
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext nneg i16 %1 to i32
   %6 = or i32 %4, %5
   ret i32 %6

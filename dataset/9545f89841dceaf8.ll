@@ -4,7 +4,7 @@
 ; oniguruma/optimized/regparse.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000842(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null

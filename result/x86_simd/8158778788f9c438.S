@@ -18,7 +18,7 @@ func000000000000002a:                   # @func000000000000002a
 	.quad	2                               # 0x2
 func0000000000000020:                   # @func0000000000000020
 	vpsubq	%ymm2, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$1, %ymm0, %ymm0
 	retq

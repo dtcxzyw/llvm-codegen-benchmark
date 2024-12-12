@@ -23,9 +23,9 @@ func000000000000000a:                   # @func000000000000000a
 	cmovgel	%ecx, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	andl	$-256, %edi
-	cmpl	$16777215, %esi                 # imm = 0xFFFFFF
-	movl	$-256, %eax
+	andl	$65536, %edi                    # imm = 0x10000
+	xorl	%eax, %eax
+	cmpl	$32768, %esi                    # imm = 0x8000
 	cmovbl	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004

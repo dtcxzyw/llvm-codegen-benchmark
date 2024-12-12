@@ -40,7 +40,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -51,6 +50,7 @@ entry:
 ; postgres/optimized/f2s.ll
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {

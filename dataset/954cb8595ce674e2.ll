@@ -1,5 +1,5 @@
 
-; 330 occurrences:
+; 334 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
@@ -105,6 +105,9 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/cistpl.ll
 ; llama.cpp/optimized/grammar-parser.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
 ; luau/optimized/Transpiler.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -172,6 +175,7 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll
+; pocketpy/optimized/lexer.cpp.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; qemu/optimized/util_uri.c.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll

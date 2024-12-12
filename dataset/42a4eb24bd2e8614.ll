@@ -7,7 +7,7 @@
 ; duckdb/optimized/ub_duckdb_operator_projection.cpp.ll
 ; quantlib/optimized/mt19937uniformrng.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add i64 %0, 1

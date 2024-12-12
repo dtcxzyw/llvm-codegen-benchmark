@@ -1,10 +1,10 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	%edx, %edx
 	cmpl	%esi, %edx
 	setg	%al
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	shll	$6, %edx
 	cmpl	%esi, %edx
 	seta	%al
@@ -16,13 +16,13 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	addl	%edx, %edx
 	cmpl	%esi, %edx
 	setge	%al
 	orb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addl	%edx, %edx
 	cmpl	%esi, %edx
 	setl	%al
@@ -40,7 +40,7 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	orb	%dil, %al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	shll	$3, %edx
 	cmpl	%esi, %edx
 	setne	%al

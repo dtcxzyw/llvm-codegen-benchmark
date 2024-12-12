@@ -10,7 +10,6 @@
 ; linux/optimized/printk.ll
 ; linux/optimized/socket.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CoroElide.cpp.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
@@ -43,6 +42,7 @@
 ; wireshark/optimized/packet-bthfp.c.ll
 ; wireshark/optimized/packet-bthsp.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
+; wireshark/optimized/packet-giop.c.ll
 ; wireshark/optimized/packet-slimp3.c.ll
 ; wireshark/optimized/packet-tplink-smarthome.c.ll
 ; wireshark/optimized/print.c.ll

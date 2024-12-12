@@ -22,7 +22,7 @@ func0000000000000095:                   # @func0000000000000095
 func0000000000000015:                   # @func0000000000000015
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmulld	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq

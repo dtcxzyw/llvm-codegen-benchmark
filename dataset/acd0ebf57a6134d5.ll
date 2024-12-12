@@ -10,7 +10,7 @@ entry:
   ret ptr %4
 }
 
-; 17 occurrences:
+; 26 occurrences:
 ; gromacs/optimized/convert_tpr.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
@@ -18,7 +18,6 @@ entry:
 ; gromacs/optimized/topio.cpp.ll
 ; gromacs/optimized/tpr.cpp.ll
 ; gromacs/optimized/tpxio.cpp.ll
-; meshlab/optimized/ml_selection_buffers.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
@@ -28,8 +27,18 @@ entry:
 ; mitsuba3/optimized/principledthin.cpp.ll
 ; mitsuba3/optimized/spectrum.cpp.ll
 ; mitsuba3/optimized/stokes.cpp.ll
+; openspiel/optimized/euchre.cc.ll
+; openspiel/optimized/hearts.cc.ll
+; openspiel/optimized/twixt.cc.ll
+; openusd/optimized/selection.cpp.ll
+; zed-rs/optimized/0e9rir1vw7pjj8ded1rj85jpj.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/35m4w66vj9d6yjwnspezb0ps3.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/ch3ywh4ed1oz4ae4c1dkspuyz.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 24
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -37,7 +46,8 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
@@ -68,7 +78,7 @@ entry:
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000008b(ptr %0, i64 %1) #0 {
 entry:
   %.idx = mul i64 %1, 144
   %2 = getelementptr i8, ptr %0, i64 %.idx
@@ -80,45 +90,11 @@ entry:
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000ab(ptr %0, i64 %1) #0 {
 entry:
   %.idx = mul i64 %1, 144
   %2 = getelementptr i8, ptr %0, i64 %.idx
   %3 = getelementptr i8, ptr %2, i64 64
-  ret ptr %3
-}
-
-; 2 occurrences:
-; openspiel/optimized/twixt.cc.ll
-; openusd/optimized/selection.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000fb(ptr %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %1, 56
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 16
-  ret ptr %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/vwr.c.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000f0(ptr %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %1, 24
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 9
-  ret ptr %4
-}
-
-; 1 occurrences:
-; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
-entry:
-  %.idx = mul i64 %1, 36
-  %2 = getelementptr i8, ptr %0, i64 %.idx
-  %3 = getelementptr i8, ptr %2, i64 16
   ret ptr %3
 }
 

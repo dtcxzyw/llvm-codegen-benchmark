@@ -32,7 +32,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000cc3:                   # @func0000000000000cc3
+func00000000000018c3:                   # @func00000000000018c3
 	vpcmpneqb	.LCPI0_0(%rip), %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsrlq	$63, %ymm1, %ymm1
@@ -40,7 +40,7 @@ func0000000000000cc3:                   # @func0000000000000cc3
 	vpmovm2q	%k0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000113:                   # @func0000000000000113
+func0000000000000213:                   # @func0000000000000213
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpeqb	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -68,7 +68,7 @@ func0000000000000113:                   # @func0000000000000113
 	.zero	1
 .LCPI2_1:
 	.byte	27                              # 0x1b
-func0000000000000443:                   # @func0000000000000443
+func0000000000002943:                   # @func0000000000002943
 	vpbroadcastb	.LCPI2_1(%rip), %xmm2   # xmm2 = [27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27]
 	vpcmpltub	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -77,7 +77,7 @@ func0000000000000443:                   # @func0000000000000443
 	vpmovm2q	%k0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000c13:                   # @func0000000000000c13
+func0000000000001813:                   # @func0000000000001813
 	vptestmb	%xmm1, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsrlq	$63, %ymm1, %ymm1

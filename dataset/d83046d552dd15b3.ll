@@ -11,7 +11,7 @@ define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 64
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -67,21 +67,6 @@ entry:
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i1 %1, i1 false
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 5 occurrences:
-; llvm/optimized/AttributorAttributes.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
-; llvm/optimized/LazyValueInfo.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
-; openjdk/optimized/verifier.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ugt i8 %2, -5
   %4 = select i1 %3, i1 %1, i1 false
   %5 = or i1 %4, %0
   ret i1 %5

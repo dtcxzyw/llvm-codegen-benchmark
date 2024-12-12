@@ -1,49 +1,38 @@
-func0000000000000502:                   // @func0000000000000502
+func0000000000000204:                   // @func0000000000000204
 // %bb.0:                               // %entry
-	mvni	v4.4s, #64
-	movi	v5.4s, #26
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v4.4s
-	movi	v4.8b, #95
-	cmhi	v3.4s, v5.4s, v3.4s
-	cmhi	v2.4s, v5.4s, v2.4s
-	cmeq	v0.8b, v0.8b, v4.8b
-	uzp1	v2.8h, v2.8h, v3.8h
-	orr	v0.8b, v0.8b, v1.8b
-	xtn	v2.8b, v2.8h
-	orr	v0.8b, v0.8b, v2.8b
+	sub	w8, w2, #1601
+	cmn	w8, #1600
+	cset	w8, lo
+	tst	w1, #0xff
+	cset	w9, eq
+	orr	w9, w0, w9
+	orr	w8, w8, w9
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000104:                   // @func0000000000000104
+func0000000000001202:                   // @func0000000000001202
 // %bb.0:                               // %entry
-	mov	w8, #-1601                      // =0xfffff9bf
-	cmeq	v1.8b, v1.8b, #0
-	dup	v4.4s, w8
-	mov	w8, #-1600                      // =0xfffff9c0
-	orr	v0.8b, v0.8b, v1.8b
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v4.4s
-	dup	v4.4s, w8
-	cmhi	v3.4s, v4.4s, v3.4s
-	cmhi	v2.4s, v4.4s, v2.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	xtn	v2.8b, v2.8h
-	orr	v0.8b, v2.8b, v0.8b
+	sub	w8, w2, #65
+	and	w9, w0, #0xff
+	cmp	w8, #26
+	cset	w8, lo
+	cmp	w9, #95
+	orr	w8, w1, w8
+	cset	w9, eq
+	orr	w8, w9, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000510:                   // @func0000000000000510
+func0000000000001210:                   // @func0000000000001210
 // %bb.0:                               // %entry
-	mvni	v4.4s, #18
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v4.4s
-	mvni	v4.4s, #1
-	cmhi	v3.4s, v4.4s, v3.4s
-	cmhi	v2.4s, v4.4s, v2.4s
-	movi	v4.8b, #21
-	uzp1	v2.8h, v2.8h, v3.8h
-	cmhi	v0.8b, v0.8b, v4.8b
-	xtn	v2.8b, v2.8h
-	orr	v0.8b, v0.8b, v1.8b
-	orr	v0.8b, v0.8b, v2.8b
+	sub	w8, w2, #19
+	and	w9, w0, #0xff
+	cmn	w8, #2
+	cset	w8, lo
+	cmp	w9, #21
+	orr	w8, w1, w8
+	cset	w9, hi
+	orr	w8, w9, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

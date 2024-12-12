@@ -12,7 +12,7 @@
 ; llvm/optimized/SemaRISCV.cpp.ll
 ; opencv/optimized/dtfilter_cpu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 12
   %3 = icmp eq i32 %0, 1
@@ -21,11 +21,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; glslang/optimized/intermOut.cpp.ll
-; linux/optimized/xarray.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp eq i32 %0, 0
@@ -34,11 +33,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; linux/optimized/xarray.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = icmp eq i32 %0, 3
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hrtimer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, 16
   ret i1 %2

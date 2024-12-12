@@ -8,11 +8,11 @@
 define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ult i8 %0, %2
   ret i1 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; delta-rs/optimized/1hj0ksbtyfwxzh2n.ll
 ; delta-rs/optimized/56nvjt5b8qxnt1we.ll
 ; git/optimized/packed-backend.ll
@@ -27,11 +27,22 @@ entry:
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; wireshark/optimized/tap-rlc-graph.c.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(i8 %0, i8 %1) #0 {
+entry:
+  %2 = freeze i8 %1
+  %3 = icmp ule i8 %0, %2
   ret i1 %3
 }
 
@@ -42,7 +53,7 @@ entry:
 define i1 @func0000000000000006(i8 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
-  %3 = icmp sgt i8 %2, %0
+  %3 = icmp slt i8 %0, %2
   ret i1 %3
 }
 

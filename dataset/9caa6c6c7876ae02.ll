@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 41 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -13,7 +13,6 @@
 ; libpng/optimized/pngwrite.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/nfs3xdr.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -35,7 +34,6 @@
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; sentencepiece/optimized/sentencepiece_model.pb.cc.ll

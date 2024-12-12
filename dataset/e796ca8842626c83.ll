@@ -1,6 +1,9 @@
 
-; 32 occurrences:
+; 36 occurrences:
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
+; boost/optimized/numeric.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; clamav/optimized/readdb.c.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
 ; cvc5/optimized/sygus_reconstruct.cpp.ll
@@ -32,6 +35,7 @@
 ; yosys/optimized/lz4.ll
 ; z3/optimized/monomial_bounds.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -41,7 +45,7 @@ entry:
   ret i1 %5
 }
 
-; 28 occurrences:
+; 31 occurrences:
 ; cpython/optimized/_xxinterpchannelsmodule.ll
 ; cpython/optimized/interpreteridobject.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -70,6 +74,9 @@ entry:
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -110,13 +117,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; cvc5/optimized/soi_simplex.cpp.ll
-; wireshark/optimized/packet-dnp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 10
+  %3 = icmp ult i32 %2, 3
   %4 = select i1 %3, i1 true, i1 %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5

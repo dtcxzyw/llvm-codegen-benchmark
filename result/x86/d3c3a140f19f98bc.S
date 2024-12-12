@@ -1,9 +1,9 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movslq	%edx, %rax
 	leaq	(%rax,%rax), %rcx
 	shlq	$31, %rax
 	subq	%rcx, %rax
-	cmpq	%rsi, %rax
-	seta	%al
+	cmpq	%rax, %rsi
+	setb	%al
 	orb	%dil, %al
 	retq

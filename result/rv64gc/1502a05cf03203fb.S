@@ -46,6 +46,13 @@ func00000000000000fd:                   # @func00000000000000fd
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
+func0000000000000088:                   # @func0000000000000088
+	li	a3, 10
+	mul	a2, a2, a3
+	add	a1, a1, a2
+	mul	a1, a1, a3
+	add	a0, a0, a1
+	ret
 func0000000000000040:                   # @func0000000000000040
 	lui	a3, 1048555
 	addiw	a3, a3, -384

@@ -3,6 +3,11 @@ func0000000000000035:                   # @func0000000000000035
 	subl	%esi, %edi
 	leal	-967(%rdi), %eax
 	retq
+func0000000000000020:                   # @func0000000000000020
+	addl	%esi, %esi
+	subl	%esi, %edi
+	leal	-2(%rdi), %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	shll	$3, %esi
 	subl	%esi, %edi
@@ -32,11 +37,6 @@ func0000000000000010:                   # @func0000000000000010
 	shll	$3, %esi
 	subl	%esi, %edi
 	leal	347(%rdi), %eax
-	retq
-func0000000000000020:                   # @func0000000000000020
-	leal	(,%rsi,4), %eax
-	notl	%eax
-	addl	%edi, %eax
 	retq
 func0000000000000030:                   # @func0000000000000030
 	shll	$5, %esi

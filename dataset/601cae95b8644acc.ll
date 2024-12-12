@@ -32,10 +32,10 @@ entry:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; openspiel/optimized/mcts.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(ptr %0, i64 %1) #0 {
+define i64 @func000000000000003c(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 96
-  %3 = getelementptr nusw i8, ptr %0, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 24
   %4 = getelementptr i8, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
@@ -61,18 +61,6 @@ entry:
   %2 = mul nsw i64 %1, 12
   %3 = getelementptr i8, ptr %0, i64 8
   %4 = getelementptr i8, ptr %3, i64 %2
-  %5 = ptrtoint ptr %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003a(ptr %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %1, 6
-  %3 = getelementptr nusw i8, ptr %0, i64 6
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

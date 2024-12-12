@@ -1,78 +1,24 @@
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	xtn	v2.2s, v2.2d
-	mov	w8, v1.s[1]
-	mov	w12, v1.s[3]
-	mov	w9, v2.s[1]
-	fmov	w10, s2
-	xtn	v2.2s, v3.2d
-	sdiv	w8, w8, w9
-	fmov	w9, s1
-	fmov	w11, s2
-	sdiv	w9, w9, w10
-	mov	w10, v1.s[2]
-	sdiv	w10, w10, w11
-	mov	w11, v2.s[1]
-	fmov	s1, w9
-	movi	v2.4s, #1
-	mov	v1.s[1], w8
-	add	v0.4s, v0.4s, v2.4s
-	sdiv	w8, w12, w11
-	mov	v1.s[2], w10
-	mov	v1.s[3], w8
-	cmeq	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sdiv	w8, w1, w2
+	add	w9, w0, #1
+	cmp	w9, w8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	xtn	v2.2s, v2.2d
-	mov	w8, v1.s[1]
-	mov	w12, v1.s[3]
-	mov	w9, v2.s[1]
-	fmov	w10, s2
-	xtn	v2.2s, v3.2d
-	sdiv	w8, w8, w9
-	fmov	w9, s1
-	fmov	w11, s2
-	sdiv	w9, w9, w10
-	mov	w10, v1.s[2]
-	sdiv	w10, w10, w11
-	mov	w11, v2.s[1]
-	fmov	s1, w9
-	movi	v2.4s, #1
-	mov	v1.s[1], w8
-	add	v0.4s, v0.4s, v2.4s
-	sdiv	w8, w12, w11
-	mov	v1.s[2], w10
-	mov	v1.s[3], w8
-	cmeq	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sdiv	w8, w1, w2
+	add	w9, w0, #1
+	cmp	w9, w8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000131:                   // @func0000000000000131
+func0000000000000261:                   // @func0000000000000261
 // %bb.0:                               // %entry
-	xtn	v2.2s, v2.2d
-	mov	w8, v1.s[1]
-	mov	w12, v1.s[3]
-	mov	w9, v2.s[1]
-	fmov	w10, s2
-	xtn	v2.2s, v3.2d
-	sdiv	w8, w8, w9
-	fmov	w9, s1
-	fmov	w11, s2
-	sdiv	w9, w9, w10
-	mov	w10, v1.s[2]
-	sdiv	w10, w10, w11
-	mov	w11, v2.s[1]
-	fmov	s1, w9
-	movi	v2.4s, #1
-	mov	v1.s[1], w8
-	add	v0.4s, v0.4s, v2.4s
-	sdiv	w8, w12, w11
-	mov	v1.s[2], w10
-	mov	v1.s[3], w8
-	cmeq	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sdiv	w8, w1, w2
+	add	w9, w0, #1
+	cmp	w9, w8
+	cset	w0, eq
 	ret
                                         // -- End function

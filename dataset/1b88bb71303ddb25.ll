@@ -1,8 +1,9 @@
 
-; 37 occurrences:
+; 38 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/EditedSource.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
 ; llvm/optimized/ParseTentative.cpp.ll

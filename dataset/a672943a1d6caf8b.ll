@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/contract.ll
 ; git/optimized/unpack-trees.ll
 ; libquic/optimized/tasn_prn.c.ll
 ; linux/optimized/libata-acpi.ll
@@ -22,7 +23,7 @@ define i1 @func0000000000000018(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

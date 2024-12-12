@@ -21,13 +21,13 @@ entry:
 ; openjdk/optimized/zGeneration.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
   %3 = and i64 %2, -64
   %4 = inttoptr i64 %3 to ptr
   %5 = shl nuw nsw i64 %0, 6
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

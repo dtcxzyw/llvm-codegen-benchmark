@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
@@ -14,7 +14,6 @@
 ; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/8139too.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/MIRFSDiscriminator.cpp.ll

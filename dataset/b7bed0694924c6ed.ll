@@ -1,14 +1,12 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; darktable/optimized/Cr2Decoder.cpp.ll
-; freetype/optimized/truetype.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ult i32 %0, %3
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }
@@ -24,7 +22,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %.not = icmp slt i32 %3, %0
+  %.not = icmp sgt i32 %0, %3
   %4 = select i1 %.not, i32 %1, i32 %0
   ret i32 %4
 }
@@ -35,7 +33,18 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
+  %5 = select i1 %4, i32 %0, i32 %1
+  ret i32 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/truetype.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = icmp ult i32 %0, %3
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }

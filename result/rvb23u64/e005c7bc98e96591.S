@@ -70,10 +70,6 @@ func000000000000001f:                   # @func000000000000001f
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
-	sh1add	a0, a0, a1
-	sext.w	a0, a0
-	ret
 func0000000000000025:                   # @func0000000000000025
 	sh3add	a0, a0, a1
 	sext.w	a0, a0

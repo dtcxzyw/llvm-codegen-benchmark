@@ -1,5 +1,7 @@
 
-; 61 occurrences:
+; 63 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll

@@ -232,7 +232,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 1
@@ -244,10 +244,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/darCut.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d8(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000001b8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = icmp ugt i32 %3, 3
+  %4 = icmp samesign ugt i32 %3, 3
   %5 = sub nsw i32 5, %3
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6

@@ -8,7 +8,7 @@ entry:
   %2 = shl i64 %1, 28
   %3 = add i64 %2, 4294967296
   %4 = ashr i64 %3, 32
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -36,7 +36,7 @@ entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, 4294967296
   %4 = ashr exact i64 %3, 32
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -73,7 +73,7 @@ entry:
   %2 = shl nuw i64 %1, 32
   %3 = add i64 %2, -85899345920
   %4 = ashr exact i64 %3, 32
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 

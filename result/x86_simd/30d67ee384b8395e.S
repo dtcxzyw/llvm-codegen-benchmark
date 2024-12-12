@@ -7,6 +7,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovw2m	%xmm1, %k1
 	vbroadcastss	.LCPI0_0(%rip), %ymm1   # ymm1 = [5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1]
 	vbroadcastss	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1]
-	vaddps	%ymm0, %ymm1, %ymm0
+	vaddps	%ymm1, %ymm0, %ymm0
 	vcvttps2dq	%ymm0, %ymm0
 	retq

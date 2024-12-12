@@ -17,7 +17,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = sub nsw i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -82,18 +82,19 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 8
   %4 = sub nsw i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/APFixedPoint.cpp.ll
+; lvgl/optimized/lv_slider.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = ashr i32 %2, 19
+  %3 = ashr i32 %2, 1
   %4 = sub nsw i32 %1, %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

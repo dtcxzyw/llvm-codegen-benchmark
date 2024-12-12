@@ -46,15 +46,15 @@ func0000000000000002:                   # @func0000000000000002
 	orl	%esi, %edi
 	andb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	cmpl	$17, %edx
-	setae	%al
-	orl	%esi, %edi
-	andb	%dil, %al
-	retq
 func0000000000000008:                   # @func0000000000000008
 	cmpl	$2, %edx
 	setb	%al
+	orl	%esi, %edi
+	andb	%dil, %al
+	retq
+func0000000000000010:                   # @func0000000000000010
+	cmpl	$33, %edx
+	setae	%al
 	orl	%esi, %edi
 	andb	%dil, %al
 	retq

@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 36 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -20,15 +20,22 @@
 ; opencv/optimized/imgwarp.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
+; postgres/optimized/brin_minmax_multi.ll
+; postgres/optimized/indexcmds.ll
 ; postgres/optimized/mcv.ll
 ; postgres/optimized/nbtutils.ll
 ; postgres/optimized/partcache.ll
 ; postgres/optimized/partprune.ll
 ; postgres/optimized/plancat.ll
 ; postgres/optimized/sqlda.ll
+; postgres/optimized/syscache.ll
+; postgres/optimized/tablecmds.ll
+; postgres/optimized/trigger.ll
 ; postgres/optimized/tupdesc.ll
 ; postgres/optimized/varlena.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i16 %0) #0 {
 entry:

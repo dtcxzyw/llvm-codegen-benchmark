@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; openjdk/optimized/postaloc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %.tr = trunc i64 %1 to i32
   %.narrow = sub i32 %2, %.tr
   %3 = zext i32 %.narrow to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   ret ptr %4
 }
 

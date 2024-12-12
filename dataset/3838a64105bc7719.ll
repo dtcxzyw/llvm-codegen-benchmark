@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 48 occurrences:
 ; arrow/optimized/data.cc.ll
 ; cmake/optimized/SystemTools.cxx.ll
 ; cmake/optimized/cmQtAutoGenInitializer.cxx.ll
@@ -22,6 +22,8 @@
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; lief/optimized/CorePrStatus.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
@@ -50,7 +52,7 @@
 define { i64, i64 } @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = insertvalue { i64, i64 } poison, i64 %3, 0
   ret { i64, i64 } %4
 }
@@ -64,7 +66,7 @@ entry:
 define { i64, i64 } @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9187201950435737471
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = insertvalue { i64, i64 } poison, i64 %3, 0
   ret { i64, i64 } %4
 }

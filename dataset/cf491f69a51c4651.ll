@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 134217785
   %4 = icmp eq i32 %1, 134217785
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000304(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000604(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 7
   %4 = icmp eq i32 %1, 0
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000305(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000605(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i32 %1, 131072
@@ -43,7 +43,7 @@ entry:
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/matrix_c.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i32 %1, 0

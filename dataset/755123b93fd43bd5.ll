@@ -12,44 +12,24 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000001e4(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 %1
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
-; 8 occurrences:
+; 3 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v02.c.ll
-; zxing/optimized/ODCodabarReader.cpp.ll
-; zxing/optimized/ODCode128Reader.cpp.ll
-; zxing/optimized/ODCode39Reader.cpp.ll
-; zxing/optimized/ODCode93Reader.cpp.ll
-; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000001e8(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 %1
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
   %5 = icmp ugt ptr %4, %0
-  ret i1 %5
-}
-
-; 5 occurrences:
-; linux/optimized/efi.ll
-; linux/optimized/efi_64.ll
-; linux/optimized/memattr.ll
-; linux/optimized/quirks.ll
-; linux/optimized/runtime-map.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %2, i64 %1
-  %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp ule ptr %4, %0
   ret i1 %5
 }
 
@@ -72,6 +52,34 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = icmp ult ptr %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; linux/optimized/efi.ll
+; linux/optimized/efi_64.ll
+; linux/optimized/quirks.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %1
+  %5 = icmp ule ptr %4, %0
+  ret i1 %5
+}
+
+; 5 occurrences:
+; zxing/optimized/ODCodabarReader.cpp.ll
+; zxing/optimized/ODCode128Reader.cpp.ll
+; zxing/optimized/ODCode39Reader.cpp.ll
+; zxing/optimized/ODCode93Reader.cpp.ll
+; zxing/optimized/ODMultiUPCEANReader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000148(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i16, ptr %2, i64 %1
+  %4 = getelementptr nusw i16, ptr %3, i64 %1
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 

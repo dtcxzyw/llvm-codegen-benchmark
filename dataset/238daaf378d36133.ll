@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 44 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/bacBlast.c.ll
@@ -24,7 +24,6 @@
 ; abc/optimized/ivyTable.c.ll
 ; abc/optimized/sbdSat.c.ll
 ; abc/optimized/wlnRead.c.ll
-; brotli/optimized/decode.c.ll
 ; git/optimized/read-cache.ll
 ; gromacs/optimized/bwt.c.ll
 ; icu/optimized/rbbi_cache.ll
@@ -34,6 +33,7 @@
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/PPCaching.cpp.ll
 ; lua/optimized/ldebug.ll
+; lvgl/optimized/lv_obj_style.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; opencv/optimized/accum.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
@@ -42,51 +42,44 @@
 ; php/optimized/zend_jit.ll
 ; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; stockfish/optimized/tbprobe.ll
 ; velox/optimized/Sequence.cpp.ll
 ; z3/optimized/grobner.cpp.ll
-; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
-  %4 = icmp eq i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 9 occurrences:
-; abc/optimized/sbdWin.c.ll
+; 5 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/xhci-ring.ll
-; llvm/optimized/DXILEmitter.cpp.ll
-; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
-; ozz-animation/optimized/jsoncpp.cpp.ll
 ; php/optimized/pcre2_convert.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ult i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/acpi_pm.ll
 ; linux/optimized/ehci-pci.ll
 ; linux/optimized/xhci-ring.ll
 ; php/optimized/pcre2_convert.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
-; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16383
-  %4 = icmp ult i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp samesign ugt i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -97,26 +90,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
-  %4 = icmp slt i32 %3, %1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 8 occurrences:
-; abc/optimized/giaSatLE.c.ll
-; libwebp/optimized/predictor_enc.c.ll
-; linux/optimized/intel_crt.ll
-; linux/optimized/libata-core.ll
-; opencv/optimized/channels.cpp.ll
-; openmpi/optimized/btl_sm_component.ll
-; openmpi/optimized/btl_sm_send.ll
-; openmpi/optimized/btl_sm_sendi.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 15
-  %4 = icmp uge i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp sgt i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -139,7 +114,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -147,10 +122,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TokenLexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483647
-  %4 = icmp ule i32 %3, %1
+  %4 = icmp samesign uge i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -161,7 +136,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483647
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -172,7 +147,21 @@ entry:
 define i1 @func0000000000000007(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483647
-  %4 = icmp sge i32 %3, %1
+  %4 = icmp sle i32 %1, %3
+  %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 4 occurrences:
+; libwebp/optimized/predictor_enc.c.ll
+; linux/optimized/intel_crt.ll
+; linux/optimized/libata-core.ll
+; opencv/optimized/channels.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 255
+  %4 = icmp samesign ule i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }

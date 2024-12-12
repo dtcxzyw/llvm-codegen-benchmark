@@ -31,12 +31,12 @@ entry:
 ; llvm/optimized/RangedConstraintManager.cpp.ll
 ; verilator/optimized/V3SplitVar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc i64 %2 to i8
   %4 = and i8 %3, 1
-  %5 = icmp ult i8 %4, %0
+  %5 = icmp samesign ult i8 %4, %0
   ret i1 %5
 }
 

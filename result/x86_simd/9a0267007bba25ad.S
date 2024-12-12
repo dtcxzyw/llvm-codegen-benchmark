@@ -57,5 +57,5 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000007:                   # @func0000000000000007
 	vptestnmq	.LCPI2_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastq	.LCPI2_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [8,8,8,8]
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

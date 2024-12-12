@@ -1,8 +1,30 @@
 
-; 7 occurrences:
-; abc/optimized/cnfData.c.ll
-; cmake/optimized/huf_compress.c.ll
+; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = trunc i64 %5 to i8
+  ret i8 %6
+}
+
+; 1 occurrences:
+; folly/optimized/SplitStringSimd.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000033(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = trunc nuw nsw i64 %5 to i8
+  ret i8 %6
+}
+
+; 5 occurrences:
+; cmake/optimized/huf_compress.c.ll
 ; php/optimized/hash_md.ll
 ; php/optimized/uuencode.ll
 ; sqlite/optimized/sqlite3.ll
@@ -17,8 +39,7 @@ entry:
   ret i8 %6
 }
 
-; 2 occurrences:
-; folly/optimized/SplitStringSimd.cpp.ll
+; 1 occurrences:
 ; libevent/optimized/evdns.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000023(i64 %0, ptr %1, i64 %2) #0 {
@@ -44,8 +65,7 @@ entry:
   ret i8 %6
 }
 
-; 3 occurrences:
-; lz4/optimized/lz4.c.ll
+; 2 occurrences:
 ; openusd/optimized/lz4.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
@@ -70,6 +90,18 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = trunc i64 %5 to i8
+  ret i8 %6
+}
+
+; 1 occurrences:
+; lz4/optimized/lz4.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000032(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = trunc nuw i64 %5 to i8
   ret i8 %6
 }
 

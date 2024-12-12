@@ -54,5 +54,5 @@ func000000000000000c:                   # @func000000000000000c
 	vpbroadcastd	.LCPI1_1(%rip), %ymm3   # ymm3 = [32,32,32,32,32,32,32,32]
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpsrlvd	%ymm2, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

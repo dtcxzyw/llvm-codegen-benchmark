@@ -1,4 +1,4 @@
-func0000000000000091:                   # @func0000000000000091
+func0000000000000321:                   # @func0000000000000321
 	addi	a2, a2, 1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
@@ -7,7 +7,7 @@ func0000000000000091:                   # @func0000000000000091
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addi	a2, a2, -1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
@@ -16,35 +16,13 @@ func0000000000000041:                   # @func0000000000000041
 	sltiu	a1, a1, 8
 	and	a0, a0, a1
 	ret
-func00000000000000c8:                   # @func00000000000000c8
-	addi	a2, a2, 1
-	slli	a2, a2, 32
-	srli	a2, a2, 32
-	sltu	a0, a2, a0
-	snez	a1, a1
-	and	a0, a0, a1
-	ret
-func00000000000004c8:                   # @func00000000000004c8
-	addi	a2, a2, 1
-	slli	a2, a2, 32
-	srli	a2, a2, 32
-	sltu	a0, a2, a0
-	snez	a1, a1
-	and	a0, a0, a1
-	ret
-func000000000000034c:                   # @func000000000000034c
+func0000000000000e8c:                   # @func0000000000000e8c
 	addiw	a2, a2, -1
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000344:                   # @func0000000000000344
-	addiw	a2, a2, -2
-	sltu	a1, a1, a2
-	sltiu	a0, a0, 127
-	and	a0, a0, a1
-	ret
-func0000000000000211:                   # @func0000000000000211
+func0000000000000821:                   # @func0000000000000821
 	addi	a2, a2, -1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
@@ -52,7 +30,7 @@ func0000000000000211:                   # @func0000000000000211
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000021c:                   # @func000000000000021c
+func000000000000082c:                   # @func000000000000082c
 	addi	a2, a2, -1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
@@ -61,7 +39,7 @@ func000000000000021c:                   # @func000000000000021c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	addi	a2, a2, 1
 	slti	a1, a1, 2
 	slli	a2, a2, 32

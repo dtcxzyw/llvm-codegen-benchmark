@@ -10,7 +10,7 @@ func0000000000000014:                   # @func0000000000000014
 	movl	$-1, %ecx
 	shlxl	%eax, %ecx, %eax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000001c:                   # @func000000000000001c
 	movb	$7, %al
 	subb	%dil, %al
 	movl	$1, %ecx
@@ -21,9 +21,4 @@ func0000000000000034:                   # @func0000000000000034
 	subb	%dil, %al
 	movl	$-1, %ecx
 	shlxl	%eax, %ecx, %eax
-	retq
-func000000000000001c:                   # @func000000000000001c
-	negb	%dil
-	movl	$255, %eax
-	shlxl	%edi, %eax, %eax
 	retq

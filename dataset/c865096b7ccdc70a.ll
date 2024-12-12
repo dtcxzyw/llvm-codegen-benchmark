@@ -1,5 +1,6 @@
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -35,7 +36,7 @@ define i64 @func0000000000000048(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, -3483294
   %4 = ashr i32 %3, 20
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = zext nneg i32 %5 to i64
   %7 = shl i64 %0, %6
   ret i64 %7

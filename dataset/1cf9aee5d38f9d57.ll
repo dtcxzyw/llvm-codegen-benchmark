@@ -1,16 +1,15 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/ifTruth.c.ll
-; linux/optimized/blk-merge.ll
 ; qemu/optimized/hw_audio_es1370.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = lshr i32 %1, 2
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp samesign ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -24,12 +23,24 @@ entry:
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sfmLib.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 27
   %4 = lshr i32 %1, 27
   %5 = add nuw nsw i32 %4, %3
   %6 = icmp sgt i32 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; linux/optimized/blk-merge.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 9
+  %4 = lshr i32 %1, 9
+  %5 = add nuw nsw i32 %4, %3
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 

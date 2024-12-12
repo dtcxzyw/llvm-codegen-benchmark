@@ -1,16 +1,14 @@
 func0000000000000009:                   # @func0000000000000009
-	testb	$1, %dl
-	movq	%rsi, %rax
-	cmovneq	%rdi, %rax
 	cmpq	$-1, %rsi
-	cmoveq	%rdi, %rax
-	addq	$262144, %rax                   # imm = 0x40000
+	cmoveq	%rdi, %rsi
+	testb	$1, %dl
+	cmovneq	%rdi, %rsi
+	leaq	262144(%rsi), %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	testb	$1, %dl
-	movq	%rsi, %rax
-	cmovneq	%rdi, %rax
 	cmpq	$-1, %rsi
-	cmoveq	%rdi, %rax
-	incq	%rax
+	cmoveq	%rdi, %rsi
+	testb	$1, %dl
+	cmovneq	%rdi, %rsi
+	leaq	1(%rsi), %rax
 	retq

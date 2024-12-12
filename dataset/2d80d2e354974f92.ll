@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/retInit.c.ll
 ; hermes/optimized/Conversions.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; openjdk/optimized/classLoaderStats.ll
 ; openjdk/optimized/macroAssembler_x86.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll

@@ -1,9 +1,7 @@
 
-; 12 occurrences:
-; abc/optimized/kitIsop.c.ll
+; 10 occurrences:
 ; cpython/optimized/flowgraph.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; linux/optimized/datagram.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/trace_events_filter.ll
@@ -23,7 +21,7 @@ entry:
   ret ptr %7
 }
 
-; 99 occurrences:
+; 98 occurrences:
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bblif.c.ll
@@ -75,7 +73,11 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/e_aes.c.ll
 ; libwebp/optimized/io_dec.c.ll
+; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/lossless.c.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -90,13 +92,9 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
-; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-lib-rsa_none.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
-; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-shlib-rsa_none.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/yv12extend.c.ll
 ; php/optimized/ir_gcm.ll
@@ -109,7 +107,6 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; velox/optimized/LzoDecompressor.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
-; verilator/optimized/V3PreProc.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll

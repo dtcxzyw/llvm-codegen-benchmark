@@ -6,12 +6,22 @@ func0000000000000042:                   # @func0000000000000042
 	seta	%al
 	andb	%cl, %al
 	retq
-.LCPI1_0:
+func0000000000000018:                   # @func0000000000000018
+	cmpq	%rsi, %rdi
+	sete	%cl
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	setnp	%dl
+	sete	%al
+	andb	%dl, %al
+	andb	%cl, %al
+	retq
+.LCPI2_0:
 	.quad	0x3ff0000000000000              # double 1
 func00000000000000c8:                   # @func00000000000000c8
 	cmpq	%rsi, %rdi
 	setne	%cl
-	vucomisd	.LCPI1_0(%rip), %xmm0
+	vucomisd	.LCPI2_0(%rip), %xmm0
 	setnp	%dl
 	sete	%al
 	andb	%dl, %al

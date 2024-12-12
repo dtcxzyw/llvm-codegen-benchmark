@@ -234,7 +234,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 31
   %3 = udiv i8 %2, 3

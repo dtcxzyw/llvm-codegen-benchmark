@@ -1,9 +1,10 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; assimp/optimized/3DSExporter.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; cpython/optimized/longobject.ll
-; linux/optimized/mii.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/vht.ll
 ; luajit/optimized/lj_bcread.ll
@@ -31,16 +32,14 @@ entry:
   ret i16 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; llvm/optimized/DwarfUnit.cpp.ll
-; openssl/optimized/libcrypto-lib-rsa_lib.ll
-; openssl/optimized/libcrypto-shlib-rsa_lib.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i32 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i16 256, i16 1200
-  %3 = icmp ult i32 %0, 7681
-  %4 = select i1 %3, i16 192, i16 %2
+  %2 = select i1 %1, i16 3, i16 4
+  %3 = icmp ult i32 %0, 256
+  %4 = select i1 %3, i16 10, i16 %2
   ret i16 %4
 }
 

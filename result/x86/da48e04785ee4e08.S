@@ -7,10 +7,9 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func0000000000000015:                   # @func0000000000000015
 	subl	%edx, %esi
-	leal	86400(%rsi), %eax
+	leal	-86400(%rsi), %eax
 	testb	$1, %dil
-	cmovel	%esi, %eax
-	addl	$-86400, %eax                   # imm = 0xFFFEAE80
+	cmovnel	%esi, %eax
 	retq
 func0000000000000035:                   # @func0000000000000035
 	subl	%edx, %esi

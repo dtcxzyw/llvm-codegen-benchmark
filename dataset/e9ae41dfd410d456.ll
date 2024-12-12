@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; arrow/optimized/array_run_end.cc.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; freetype/optimized/autofit.c.ll
@@ -18,7 +18,6 @@
 ; libzmq/optimized/trie.cpp.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/filter.ll
-; linux/optimized/gso.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/skbuff.ll
@@ -53,9 +52,11 @@
 ; spike/optimized/vsbc_vxm.ll
 ; spike/optimized/vssub_vx.ll
 ; spike/optimized/vsub_vx.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; wireshark/optimized/netscaler.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i64 %1) #0 {
 entry:

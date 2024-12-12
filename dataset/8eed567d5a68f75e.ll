@@ -1,5 +1,12 @@
 
-; 33 occurrences:
+; 42 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
 ; coreutils-rs/optimized/nchybjntbm98czw.ll
 ; cpython/optimized/bytesobject.ll
@@ -33,6 +40,8 @@
 ; yosys/optimized/fmt.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/4j81zvwpo3may7k9k6shk9eiu.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ipopt/optimized/SensIndexSchurData.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = sext i32 %2 to i64
@@ -25,7 +25,7 @@ entry:
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; protobuf/optimized/dynamic_message.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = sext i32 %2 to i64
@@ -42,7 +42,7 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = sext i32 %2 to i64
@@ -56,7 +56,7 @@ entry:
 ; opencv/optimized/svm.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = sext i32 %2 to i64

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/qrqp.cpp.ll
@@ -13,6 +13,7 @@
 ; proj/optimized/chamb.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/sconics.cpp.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; sundials/optimized/arkode.c.ll
 ; sundials/optimized/cvode.c.ll
 ; sundials/optimized/cvodes.c.ll

@@ -30,7 +30,7 @@ func000000000000000c:                   # @func000000000000000c
 .LBB2_2:
 	li	a0, 770
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	sext.w	a1, a1
@@ -41,6 +41,16 @@ func0000000000000008:                   # @func0000000000000008
 .LBB3_2:
 	li	a0, 3
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 1
+	bnez	a0, .LBB4_2
+	sext.w	a1, a1
+	sltiu	a0, a1, 100
+	xori	a0, a0, 3
+	ret
+.LBB4_2:
+	li	a0, 1
+	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a0, a0, 1
 	sraiw	a1, a1, 31
@@ -50,12 +60,28 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, 1
-	bnez	a0, .LBB5_2
+	bnez	a0, .LBB6_2
 	sext.w	a1, a1
 	slti	a0, a1, 0
 	xori	a0, a0, 1
 	slli	a0, a0, 1
 	ret
-.LBB5_2:
+.LBB6_2:
 	li	a0, 4
+	ret
+func0000000000000008:                   # @func0000000000000008
+	sext.w	a2, a1
+	lui	a1, 32768
+	addiw	a3, a1, 35
+	andi	a1, a0, 1
+	bltu	a3, a2, .LBB7_2
+	li	a0, 536
+	bnez	a1, .LBB7_3
+	j	.LBB7_4
+.LBB7_2:
+	li	a0, 600
+	beqz	a1, .LBB7_4
+.LBB7_3:
+	li	a0, 664
+.LBB7_4:                                # %entry
 	ret

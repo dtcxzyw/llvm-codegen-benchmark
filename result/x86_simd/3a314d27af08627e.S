@@ -36,7 +36,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpxor	%ymm1, %ymm0, %ymm0
 	vptestnmd	.LCPI0_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

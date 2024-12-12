@@ -1,24 +1,24 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	incq	%rdx
 	imulq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setg	%al
+	cmpq	%rdx, %rdi
+	setl	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	incq	%rdx
 	imulq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	incq	%rdx
 	imulq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	seta	%al
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq
 func0000000000000009:                   # @func0000000000000009
 	incq	%rdx
 	imulq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setbe	%al
+	cmpq	%rdx, %rdi
+	setae	%al
 	retq

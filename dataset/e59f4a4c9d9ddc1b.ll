@@ -8,7 +8,7 @@ entry:
   %3 = mul nsw i64 %2, 1000
   %4 = add nsw i64 %3, %1
   %5 = sdiv i64 %4, 1000000000
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -20,12 +20,13 @@ entry:
   %3 = mul nsw i64 %2, -400
   %4 = add i64 %3, %1
   %5 = sdiv i64 %4, 4
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
+; boost/optimized/exit_code.ll
 ; redis/optimized/redis-cli.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
@@ -72,7 +73,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 1000000000
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sdiv i64 %4, 1000
   %6 = add i64 %5, %0
   ret i64 %6
@@ -87,7 +88,7 @@ entry:
   %3 = mul i64 %2, 1000000000
   %4 = add i64 %3, %1
   %5 = sdiv i64 %4, 1000
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

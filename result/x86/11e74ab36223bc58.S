@@ -1,4 +1,4 @@
-func00000000000000e2:                   # @func00000000000000e2
+func00000000000001c2:                   # @func00000000000001c2
 	shll	$6, %edx
 	orl	%esi, %edx
 	andl	$63488, %edx                    # imm = 0xF800
@@ -6,7 +6,7 @@ func00000000000000e2:                   # @func00000000000000e2
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	shll	$6, %edx
 	andl	$-2, %esi
 	orl	%edx, %esi
@@ -21,7 +21,7 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func00000000000000a2:                   # @func00000000000000a2
+func0000000000000142:                   # @func0000000000000142
 	shll	$16, %edx
 	andl	$-2048, %esi                    # imm = 0xF800
 	orl	%edx, %esi

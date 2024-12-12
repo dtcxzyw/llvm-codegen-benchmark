@@ -6,7 +6,7 @@
 ; oniguruma/optimized/regexec.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i32

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/decode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i8 %0) #0 {
+define i32 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i32
   %2 = add nsw i32 %1, -64
@@ -23,7 +23,7 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-bacapp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i8 %0) #0 {
+define i32 @func0000000000000028(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i32
   %2 = add nsw i32 %1, -8
@@ -37,7 +37,7 @@ entry:
 ; luajit/optimized/lj_strscan_dyn.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i8 %0) #0 {
+define i32 @func0000000000000068(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i32
   %2 = add nuw nsw i32 %1, 19
@@ -49,11 +49,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-iec104.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i8 %0) #0 {
+define i32 @func00000000000000f4(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
   %2 = add nuw nsw i32 %1, 100
-  %3 = icmp ult i8 %0, 70
+  %3 = icmp samesign ult i8 %0, 70
   %4 = select i1 %3, i32 %2, i32 %1
   ret i32 %4
 }
@@ -61,11 +61,11 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EATextUtil.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000078(i8 %0) #0 {
+define i32 @func00000000000000f8(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
   %2 = add nuw nsw i32 %1, 7
-  %3 = icmp ugt i8 %0, 57
+  %3 = icmp samesign ugt i8 %0, 57
   %4 = select i1 %3, i32 %2, i32 %1
   ret i32 %4
 }

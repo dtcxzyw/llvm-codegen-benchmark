@@ -1,60 +1,25 @@
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	cmeq	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v2.2d, #0
-	dup	v4.2d, x8
-	bic	v2.16b, v4.16b, v2.16b
-	bic	v3.16b, v4.16b, v3.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	ret
-                                        // -- End function
 func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
-	dup	v4.2d, x8
 	mov	w8, #11                         // =0xb
-	dup	v5.2d, x8
-	mov	w8, #3                          // =0x3
-	cmhi	v3.2d, v4.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	dup	v4.2d, x8
-	bsl	v2.16b, v4.16b, v5.16b
-	bsl	v3.16b, v4.16b, v5.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
+	cmp	x1, #2
+	mov	w9, #3                          // =0x3
+	csel	w8, w9, w8, lo
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func00000000000000c0:                   // @func00000000000000c0
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	cmeq	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v2.2d, #0
-	dup	v4.2d, x8
-	bic	v2.16b, v4.16b, v2.16b
-	bic	v3.16b, v4.16b, v3.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
+	cmp	x1, #0
+	cset	w8, ne
+	add	w0, w0, w8, lsl #3
 	ret
                                         // -- End function
-func000000000000004f:                   // @func000000000000004f
+func000000000000014f:                   // @func000000000000014f
 // %bb.0:                               // %entry
-	mov	w8, #513                        // =0x201
-	dup	v4.2d, x8
 	mov	w8, #58                         // =0x3a
-	dup	v5.2d, x8
-	mov	w8, #2                          // =0x2
-	cmhi	v3.2d, v4.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	dup	v4.2d, x8
-	bsl	v2.16b, v4.16b, v5.16b
-	bsl	v3.16b, v4.16b, v5.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
+	cmp	x1, #513
+	mov	w9, #2                          // =0x2
+	csel	w8, w9, w8, lo
+	add	w0, w0, w8
 	ret
                                         // -- End function

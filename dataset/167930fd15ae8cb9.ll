@@ -1,13 +1,24 @@
 
-%"struct.std::atomic.25.3491695" = type { %"struct.std::__atomic_base.26.3491696" }
-%"struct.std::__atomic_base.26.3491696" = type { ptr }
+%"class.hermes::vm::GCHermesValueBase.3076855" = type { %"class.hermes::vm::HermesValue.3076856" }
+%"class.hermes::vm::HermesValue.3076856" = type { i64 }
+%"struct.std::atomic.25.3673878" = type { %"struct.std::__atomic_base.26.3673879" }
+%"struct.std::__atomic_base.26.3673879" = type { ptr }
 
-; 27 occurrences:
+; 2 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; hermes/optimized/ArrayStorage.cpp.ll
+; openjdk/optimized/mallocTracker.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 32
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 22 occurrences:
 ; libwebp/optimized/webp_enc.c.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
 ; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/compileBroker.ll
 ; openjdk/optimized/constantPool.ll
@@ -22,7 +33,6 @@
 ; openjdk/optimized/jvmtiEnvBase.ll
 ; openjdk/optimized/jvmtiExport.ll
 ; openjdk/optimized/jvmtiImpl.ll
-; openjdk/optimized/mallocTracker.ll
 ; openjdk/optimized/reflection.ll
 ; openjdk/optimized/scopedMemoryAccess.ll
 ; openjdk/optimized/sharedRuntime.ll
@@ -31,12 +41,24 @@
 ; openjdk/optimized/stackwalk.ll
 ; openjdk/optimized/vframe.ll
 ; Function Attrs: nounwind
+define ptr @func000000000000002e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw i64, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
+  %6 = getelementptr nusw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/continuation.ll
+; Function Attrs: nounwind
 define ptr @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 32
-  %6 = getelementptr nusw i64, ptr %5, i64 %0
+  %4 = getelementptr nusw ptr, ptr %3, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 -16
+  %6 = getelementptr nusw ptr, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -50,6 +72,20 @@ entry:
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 64
   %6 = getelementptr float, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 3 occurrences:
+; hermes/optimized/ArrayStorage.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076855", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -68,12 +104,12 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 16
-  %6 = getelementptr nusw %"struct.std::atomic.25.3491695", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"struct.std::atomic.25.3673878", ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -15,14 +15,6 @@ func000000000000000b:                   # @func000000000000000b
 	bseti	a0, zero, 32
 	vor.vx	v8, v8, a0
 	ret
-func0000000000000010:                   # @func0000000000000010
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vsll.vi	v8, v8, 8
-	vor.vv	v8, v8, v12
-	li	a0, 128
-	vor.vx	v8, v8, a0
-	ret
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10

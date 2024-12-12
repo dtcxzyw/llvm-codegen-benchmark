@@ -96,20 +96,6 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
-; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/intel_dpll.ll
-; linux/optimized/intel_snps_phy.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003b(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %0, %1
-  %5 = udiv i64 %4, %3
-  %6 = trunc nuw nsw i64 %5 to i32
-  ret i32 %6
-}
-
 ; 1 occurrences:
 ; libwebp/optimized/rescaler_utils.c.ll
 ; Function Attrs: nounwind

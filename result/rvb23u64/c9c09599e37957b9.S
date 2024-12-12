@@ -18,6 +18,14 @@ func0000000000000000:                   # @func0000000000000000
 	or	a0, a0, a2
 	ori	a0, a0, 2
 	ret
+func0000000000000003:                   # @func0000000000000003
+	lui	a3, 4095
+	slli	a3, a3, 28
+	and	a2, a2, a3
+	or	a0, a0, a1
+	or	a0, a0, a2
+	bseti	a0, a0, 20
+	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, 992
 	or	a0, a0, a1
@@ -32,12 +40,4 @@ func0000000000000006:                   # @func0000000000000006
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ori	a0, a0, 64
-	ret
-func0000000000000003:                   # @func0000000000000003
-	lui	a3, 16383
-	slli	a3, a3, 36
-	and	a2, a2, a3
-	or	a0, a0, a1
-	or	a0, a0, a2
-	bseti	a0, a0, 62
 	ret

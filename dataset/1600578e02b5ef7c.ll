@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_label.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; Function Attrs: nounwind

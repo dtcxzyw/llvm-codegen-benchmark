@@ -43,7 +43,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovw2m	%xmm0, %k2
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0   # ymm0 = [5,5,5,5,5,5,5,5]
 	vpbroadcastd	.LCPI2_1(%rip), %ymm0 {%k2} # ymm0 {%k2} = [7,7,7,7,7,7,7,7]
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI2_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI3_0:

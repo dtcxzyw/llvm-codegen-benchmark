@@ -1,5 +1,5 @@
 
-; 127 occurrences:
+; 126 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/acecMult.c.ll
@@ -17,7 +17,6 @@
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/mpmPre.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; abc/optimized/sswRarity.c.ll
@@ -131,7 +130,7 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 
@@ -143,7 +142,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 -1453760514566526364, %1
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 

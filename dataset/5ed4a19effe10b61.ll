@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cxxopts/optimized/example.cpp.ll
 ; entt/optimized/version.cpp.ll
@@ -47,13 +47,12 @@
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nix/optimized/fetchMercurial.ll
 ; nix/optimized/gc.ll
-; nix/optimized/nix-build.ll
 ; ocio/optimized/FileRules.cpp.ll
 ; openusd/optimized/mallocTag.cpp.ll
 ; openusd/optimized/reporter.cpp.ll
 ; vcpkg/optimized/tools.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000038(i8 %0, ptr %1, ptr %2) #0 {
+define i8 @func0000000000000058(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ne i8 %0, 0
@@ -65,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/quic_connection.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000198(i8 %0, ptr %1, ptr %2) #0 {
+define i8 @func0000000000000318(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne i8 %0, 0

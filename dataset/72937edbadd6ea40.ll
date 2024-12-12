@@ -4,7 +4,7 @@
 ; openjdk/optimized/jdmarker.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = zext i32 %1 to i64
   %4 = add i64 %2, -32

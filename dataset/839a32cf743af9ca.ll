@@ -7,7 +7,7 @@
 ; php/optimized/pcre2_match.ll
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %3, 2
@@ -33,7 +33,7 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000d81(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = icmp ne ptr %0, %1
@@ -45,7 +45,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/escape.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -331
   %4 = icmp ult i32 %3, 3
@@ -59,7 +59,7 @@ entry:
 ; luau/optimized/lvmexecute.cpp.ll
 ; redis/optimized/lvm.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000048c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = icmp ult ptr %0, %1
@@ -72,7 +72,7 @@ entry:
 ; llvm/optimized/PostRASchedulerList.cpp.ll
 ; llvm/optimized/ScheduleDAGFast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp ne ptr %0, %1
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/stringUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000584(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
   %4 = icmp ult i32 %3, 10
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/keyFrameMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000d8c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 2
   %4 = icmp ne ptr %0, %1
@@ -106,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -48
   %4 = icmp ult i32 %3, 10
@@ -119,7 +119,7 @@ entry:
 ; cmake/optimized/cm_utf8.c.ll
 ; lua/optimized/ldebug.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000058c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = icmp ne ptr %0, %1
@@ -130,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000ac(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = icmp ule ptr %0, %1

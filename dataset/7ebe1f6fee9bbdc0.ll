@@ -15,13 +15,13 @@
 ; luajit/optimized/minilua.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1
   %4 = zext nneg i16 %3 to i64
   %5 = zext nneg i16 %1 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
-  %7 = getelementptr nusw ptr, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw ptr, ptr %6, i64 %4
   ret ptr %7
 }
 

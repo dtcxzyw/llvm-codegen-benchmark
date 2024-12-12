@@ -1,5 +1,7 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; lz4/optimized/lz4hc.c.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; quantlib/optimized/date.ll
@@ -58,6 +60,17 @@ entry:
   %2 = udiv i32 %1, 12
   %3 = add i32 %0, 1
   %4 = add i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; boost/optimized/gregorian.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, 1900
+  %3 = udiv i32 %0, 12
+  %4 = add nsw i32 %3, %2
   ret i32 %4
 }
 

@@ -1,6 +1,5 @@
 
-; 16 occurrences:
-; linux/optimized/intel_audio.ll
+; 15 occurrences:
 ; linux/optimized/intel_psr.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll

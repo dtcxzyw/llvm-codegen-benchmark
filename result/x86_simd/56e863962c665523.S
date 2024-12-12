@@ -3,7 +3,7 @@ func0000000000000185:                   # @func0000000000000185
 	vptestmb	%xmm2, %xmm2, %k0
 	vpslld	$31, %ymm1, %ymm1
 	vpsrad	$31, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
@@ -29,7 +29,7 @@ func0000000000000021:                   # @func0000000000000021
 	vpcmpeqb	.LCPI1_0(%rip), %xmm2, %k0
 	vpslld	$31, %ymm1, %ymm1
 	vpsrad	$31, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
@@ -55,7 +55,7 @@ func0000000000000025:                   # @func0000000000000025
 	vpcmpeqb	.LCPI2_0(%rip), %xmm2, %k0
 	vpslld	$31, %ymm1, %ymm1
 	vpsrad	$31, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq

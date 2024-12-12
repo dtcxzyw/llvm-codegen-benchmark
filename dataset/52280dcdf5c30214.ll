@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/QuadTree.c.ll
@@ -10,7 +10,6 @@
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; proj/optimized/aeqd.cpp.ll
-; proj/optimized/dmstor.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/stere.cpp.ll
 ; quantlib/optimized/blackcallablebondengine.ll
@@ -32,7 +31,8 @@ entry:
   ret double %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/area.ll
 ; opencv/optimized/shapedescr.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll

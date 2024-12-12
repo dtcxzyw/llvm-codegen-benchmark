@@ -11,8 +11,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; linux/optimized/utids.ll
+; 1 occurrences:
 ; openusd/optimized/blend_a64_mask.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000064(i32 %0, i64 %1) #0 {

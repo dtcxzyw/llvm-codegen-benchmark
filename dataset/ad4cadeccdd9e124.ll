@@ -4,7 +4,7 @@
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/RawVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nuw i64 1, %0
@@ -16,7 +16,7 @@ entry:
 ; hdf5/optimized/H5SL.c.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nuw i64 1, %0

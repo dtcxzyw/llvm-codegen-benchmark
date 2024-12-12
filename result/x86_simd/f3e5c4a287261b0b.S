@@ -14,7 +14,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	31                              # 0x1f
 .LCPI1_1:
 	.quad	33554432                        # 0x2000000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsrlq	$7, %ymm0, %ymm1
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpternlogq	$248, .LCPI1_1(%rip){1to4}, %ymm0, %ymm1 # ymm1 = ymm1 | (ymm0 & mem)
@@ -120,7 +120,7 @@ func000000000000000c:                   # @func000000000000000c
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsrlq	$12, %ymm0, %ymm1
 	vpandq	.LCPI3_3(%rip){1to4}, %ymm1, %ymm1
 	vpternlogq	$248, .LCPI3_4(%rip){1to4}, %ymm0, %ymm1 # ymm1 = ymm1 | (ymm0 & mem)

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; icu/optimized/cal.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/ds.ll
@@ -14,7 +14,6 @@
 ; spike/optimized/fsr.ll
 ; spike/optimized/fsri.ll
 ; spike/optimized/fsrw.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
@@ -65,7 +64,7 @@ entry:
 define i64 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
   %2 = zext i1 %0 to i32
-  %3 = add nuw nsw i32 %2, %1
+  %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -76,7 +75,7 @@ entry:
 define i64 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = zext i1 %0 to i32
-  %3 = add nuw i32 %2, %1
+  %3 = add nuw i32 %1, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

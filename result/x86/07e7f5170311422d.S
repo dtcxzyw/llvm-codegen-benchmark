@@ -8,7 +8,7 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func0000000000000004:                   # @func0000000000000004
 	andl	$-2, %esi
-	leaq	-48(%rsi,%rdi), %rax
+	leaq	-48(%rdi,%rsi), %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movl	%esi, %eax

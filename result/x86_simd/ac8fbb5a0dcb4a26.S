@@ -62,7 +62,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -94,7 +94,7 @@ func0000000000000011:                   # @func0000000000000011
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1

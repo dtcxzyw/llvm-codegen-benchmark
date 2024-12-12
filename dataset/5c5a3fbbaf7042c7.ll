@@ -28,7 +28,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/src.ll
 ; qemu/optimized/hw_vfio_spapr.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i128 %1) #0 {

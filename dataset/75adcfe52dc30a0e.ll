@@ -1,43 +1,4 @@
 
-; 1 occurrences:
-; ruby/optimized/nextafter.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ogt double %2, 0.000000e+00
-  %4 = and i1 %3, %0
-  %5 = fcmp oeq double %1, 0x7FF0000000000000
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 4 occurrences:
-; opencv/optimized/ts_func.cpp.ll
-; openusd/optimized/stencilBuilder.cpp.ll
-; proj/optimized/4D_api.cpp.ll
-; ruby/optimized/nextafter.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp oeq double %2, 0x7FEFFFFFFFFFFFFF
-  %4 = and i1 %3, %0
-  %5 = fcmp oeq double %1, 0x7FF0000000000000
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; ruby/optimized/nextafter.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp olt double %2, 0.000000e+00
-  %4 = and i1 %3, %0
-  %5 = fcmp oeq double %1, 0x7FF0000000000000
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
 ; 4 occurrences:
 ; proj/optimized/c_api.cpp.ll
 ; quantlib/optimized/noarbsabr.ll
@@ -59,7 +20,7 @@ entry:
 define i1 @func00000000000000aa(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %2, 0.000000e+00
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = fcmp ole double %0, 0.000000e+00
   %6 = and i1 %5, %4
   ret i1 %6
@@ -77,34 +38,6 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; quantlib/optimized/kahalesmilesection.ll
-; quantlib/optimized/normaldistribution.ll
-; quantlib/optimized/tcopulapolicy.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d6(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp uge double %2, -1.000000e+00
-  %4 = and i1 %3, %0
-  %5 = fcmp one double %1, 0x7FF0000000000000
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 3 occurrences:
-; quantlib/optimized/kahalesmilesection.ll
-; quantlib/optimized/normaldistribution.ll
-; quantlib/optimized/tcopulapolicy.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000b6(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ule double %2, 0.000000e+00
-  %4 = and i1 %3, %0
-  %5 = fcmp one double %1, 0x7FF0000000000000
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; quantlib/optimized/qdplusamericanengine.ll
@@ -112,7 +45,7 @@ entry:
 define i1 @func0000000000000022(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 0.000000e+00
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = fcmp olt double %0, 0.000000e+00
   %6 = and i1 %5, %4
   ret i1 %6
@@ -127,6 +60,31 @@ entry:
   %4 = and i1 %3, %0
   %5 = fcmp ugt double %1, 0.000000e+00
   %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; stat-rs/optimized/4d9pj14shc9lbmph.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ac(double %0, i1 %1, double %2) #0 {
+entry:
+  %3 = fcmp ole double %2, 1.000000e+00
+  %4 = and i1 %1, %3
+  %5 = fcmp oge double %0, 0.000000e+00
+  %6 = and i1 %5, %4
+  ret i1 %6
+}
+
+; 2 occurrences:
+; opencv/optimized/fgs_filter.cpp.ll
+; stat-rs/optimized/4d9pj14shc9lbmph.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000cc(double %0, i1 %1, double %2) #0 {
+entry:
+  %3 = fcmp oge double %2, 0.000000e+00
+  %4 = and i1 %3, %1
+  %5 = fcmp oge double %0, 0.000000e+00
+  %6 = and i1 %5, %4
   ret i1 %6
 }
 
@@ -148,7 +106,7 @@ entry:
 define i1 @func0000000000000066(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp one double %2, 0x7FF0000000000000
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = fcmp one double %1, 0x7FF0000000000000
   %6 = and i1 %4, %5
   ret i1 %6
@@ -160,7 +118,7 @@ entry:
 define i1 @func0000000000000084(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %2, 5.000000e-01
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = fcmp ogt double %1, 1.000000e+00
   %6 = and i1 %4, %5
   ret i1 %6
@@ -176,7 +134,7 @@ entry:
 define i1 @func0000000000000063(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp one double %2, 0x7FF0000000000000
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = fcmp ult double %0, 0x41DFFFFFFFC00000
   %6 = and i1 %5, %4
   ret i1 %6
@@ -189,7 +147,7 @@ entry:
 define i1 @func00000000000000db(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp uge double %2, 0x3870000000000000
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = fcmp ule double %0, 1.000000e+00
   %6 = and i1 %5, %4
   ret i1 %6
@@ -209,6 +167,20 @@ entry:
 }
 
 ; 3 occurrences:
+; opencv/optimized/ts_func.cpp.ll
+; openusd/optimized/stencilBuilder.cpp.ll
+; proj/optimized/4D_api.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp oeq double %2, 0.000000e+00
+  %4 = and i1 %0, %3
+  %5 = fcmp oeq double %1, 0.000000e+00
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
 ; postgres/optimized/float.ll
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/gistproc.ll
@@ -216,7 +188,7 @@ entry:
 define i1 @func0000000000000087(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %2, 0.000000e+00
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = fcmp une double %0, 0.000000e+00
   %6 = and i1 %5, %4
   ret i1 %6
@@ -257,7 +229,7 @@ entry:
 define i1 @func000000000000004c(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %2, 0.000000e+00
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = fcmp oge double %1, 0.000000e+00
   %6 = and i1 %4, %5
   ret i1 %6
@@ -269,7 +241,7 @@ entry:
 define i1 @func00000000000000c4(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %2, 0.000000e+00
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = fcmp ogt double %1, 0.000000e+00
   %6 = and i1 %4, %5
   ret i1 %6
@@ -288,40 +260,15 @@ entry:
 }
 
 ; 2 occurrences:
-; opencv/optimized/fgs_filter.cpp.ll
-; osqp/optimized/amd_info.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000cc(double %0, i1 %1, double %2) #0 {
-entry:
-  %3 = fcmp oge double %2, 0.000000e+00
-  %4 = and i1 %3, %1
-  %5 = fcmp oge double %0, 0.000000e+00
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 2 occurrences:
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/fast_line_detector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %2, 0.000000e+00
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = fcmp ogt double %1, 0.000000e+00
   %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/odometry.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000e7(double %0, i1 %1, double %2) #0 {
-entry:
-  %3 = fcmp ord double %2, 0.000000e+00
-  %4 = and i1 %3, %1
-  %5 = fcmp une double %0, 0x7FF0000000000000
-  %6 = and i1 %5, %4
   ret i1 %6
 }
 

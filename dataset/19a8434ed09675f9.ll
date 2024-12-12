@@ -1,8 +1,7 @@
 
-; 41 occurrences:
+; 39 occurrences:
 ; icu/optimized/ucnv2022.ll
 ; icu/optimized/utf16collationiterator.ll
-; linux/optimized/utownerid.ll
 ; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
@@ -20,7 +19,6 @@
 ; llvm/optimized/MachineSink.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -42,7 +40,7 @@
 ; qemu/optimized/hw_net_e1000x_common.c.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 31
   %3 = zext nneg i16 %2 to i32
@@ -57,12 +55,12 @@ entry:
 ; linux/optimized/selection.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 31
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -81,7 +79,7 @@ entry:
 ; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 7
   %3 = zext nneg i16 %2 to i32
@@ -100,7 +98,7 @@ entry:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 31
   %3 = zext nneg i16 %2 to i32
@@ -115,7 +113,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 7
   %3 = zext nneg i16 %2 to i32

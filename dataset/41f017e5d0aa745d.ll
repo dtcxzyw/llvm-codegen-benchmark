@@ -1,7 +1,10 @@
 
-; 211 occurrences:
+; 221 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -111,6 +114,9 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_freetype.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -210,7 +216,11 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
@@ -237,12 +247,13 @@ entry:
   ret i32 %2
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; bullet3/optimized/b3BulletFile.ll
 ; bullet3/optimized/b3DNA.ll
 ; bullet3/optimized/b3File.ll
 ; bullet3/optimized/b3OverlappingPairCache.ll
 ; linux/optimized/intel_dp_mst.ll
+; linux/optimized/intel_pstate.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; postgres/optimized/base64.ll
 ; postgres/optimized/base64_shlib.ll

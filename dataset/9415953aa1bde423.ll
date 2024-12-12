@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
-; llvm/optimized/TypeLoc.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openssl/optimized/libdefault-lib-hkdf.ll
@@ -73,7 +72,6 @@ entry:
 ; llvm/optimized/PDBFile.cpp.ll
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; llvm/optimized/ParentMapContext.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -126,6 +124,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-rpcrdma.c.ll
 ; xgboost/optimized/input_split_base.cc.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -143,7 +142,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = udiv i64 %1, %3
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -165,7 +164,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = udiv i64 %1, %3
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

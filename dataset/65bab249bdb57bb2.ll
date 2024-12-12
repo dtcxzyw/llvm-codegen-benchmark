@@ -1,5 +1,5 @@
 
-; 361 occurrences:
+; 360 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -13,6 +13,7 @@
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/gzip.ll
 ; brotli/optimized/encode.c.ll
 ; brotli/optimized/metablock.c.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
@@ -140,7 +141,6 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/amdtopology.ll
 ; linux/optimized/blk-mq-tag.ll
@@ -167,7 +167,6 @@
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/MIRFSDiscriminator.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
@@ -369,8 +368,9 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/ifDec16.c.ll
+; boost/optimized/buffer_piece_border.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/HNSW.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
@@ -430,23 +430,25 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; icu/optimized/utrie2.ll
 ; linux/optimized/vlv_dsi.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; opencv/optimized/ean13_decoder.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
 ; quickjs/optimized/libregexp.ll
 ; wireshark/optimized/packet-scte35.c.ll
 ; zfp/optimized/zfp.c.ll
+; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -464,6 +466,7 @@ entry:
 ; abc/optimized/satProof.c.ll
 ; abc/optimized/sbdSat.c.ll
 ; abc/optimized/sswRarity.c.ll
+; boost/optimized/gzip.ll
 ; clamav/optimized/disasm.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; darktable/optimized/introspection_diffuse.c.ll
@@ -534,11 +537,10 @@ entry:
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/reconintra.c.ll
+; openusd/optimized/restoration.c.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
@@ -576,7 +578,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -587,7 +589,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -612,7 +614,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -632,7 +634,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -661,7 +663,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

@@ -5,20 +5,20 @@ func000000000000000a:                   # @func000000000000000a
 	slliw	a0, a1, 23
 .LBB0_2:                                # %entry
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a2, a1
 	li	a3, 2
 	beq	a2, a3, .LBB1_2
 	slliw	a0, a1, 3
 .LBB1_2:                                # %entry
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	sext.w	a2, a1
 	blez	a2, .LBB2_2
 	slliw	a0, a1, 1
 .LBB2_2:                                # %entry
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a2, a1
 	beqz	a2, .LBB3_2
 	slliw	a0, a1, 1
@@ -32,19 +32,19 @@ func0000000000000008:                   # @func0000000000000008
 	slliw	a0, a1, 1
 .LBB4_2:                                # %entry
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sext.w	a2, a1
 	blez	a2, .LBB5_2
 	slliw	a0, a1, 1
 .LBB5_2:                                # %entry
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	sext.w	a2, a1
 	bltz	a2, .LBB6_2
 	slliw	a0, a1, 1
 .LBB6_2:                                # %entry
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	srliw	a2, a1, 16
 	bnez	a2, .LBB7_2
 	slliw	a0, a1, 8

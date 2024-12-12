@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI1_0:
 	.quad	65536                           # 0x10000
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpmovqb	%ymm1, %xmm1
 	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
 	vpcmpeqd	%xmm0, %xmm0, %xmm0

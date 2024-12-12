@@ -1,5 +1,5 @@
 
-; 488 occurrences:
+; 499 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -62,17 +62,20 @@
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/cmdline.ll
+; boost/optimized/ext.ll
+; boost/optimized/partition.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/generic_type.cpp.ll
 ; casadi/optimized/mx.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
+; csmith/optimized/Bookkeeper.cpp.ll
 ; csmith/optimized/Function.cpp.ll
 ; csmith/optimized/VariableSelector.cpp.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
@@ -107,7 +110,6 @@
 ; eastl/optimized/TestFixedSet.cpp.ll
 ; eastl/optimized/TestMap.cpp.ll
 ; eastl/optimized/TestSet.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; faiss/optimized/HNSW.cpp.ll
@@ -127,6 +129,7 @@
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; gromacs/optimized/biassharing.cpp.ll
+; gromacs/optimized/biaswriter.cpp.ll
 ; gromacs/optimized/colvarvalue.cpp.ll
 ; gromacs/optimized/datastorage.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
@@ -143,7 +146,9 @@
 ; gromacs/optimized/specbond.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; gromacs/optimized/trjcat.cpp.ll
+; grpc/optimized/priority.cc.ll
 ; grpc/optimized/tcp_server_posix.cc.ll
+; grpc/optimized/weighted_round_robin.cc.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -169,7 +174,6 @@
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/c_api.cpp.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
-; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; lightgbm/optimized/dcg_calculator.cpp.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
@@ -198,6 +202,7 @@
 ; llvm/optimized/DXILEmitter.cpp.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; llvm/optimized/DeadArgumentElimination.cpp.ll
+; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/ExegesisEmitter.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
@@ -216,6 +221,7 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScheduleDAG.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
+; llvm/optimized/SymbolCache.cpp.ll
 ; llvm/optimized/SymbolSize.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/ThreadPool.cpp.ll
@@ -228,6 +234,7 @@
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/balltree.cpp.ll
+; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/decorate_raster_proj.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -235,9 +242,11 @@
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_texture_defragmentation.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
+; meshlab/optimized/seam_remover.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/connectionthreads.cpp.ll
@@ -332,7 +341,6 @@
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/fast_hough_transform.cpp.ll
 ; opencv/optimized/featureselect.cpp.ll
-; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/flatten_layer.cpp.ll
 ; opencv/optimized/fourier_descriptors_demo.cpp.ll
 ; opencv/optimized/gather_elements_layer.cpp.ll
@@ -436,12 +444,13 @@
 ; pybind11/optimized/test_kwargs_and_defaults.cpp.ll
 ; pybind11/optimized/test_pytypes.cpp.ll
 ; quantlib/optimized/discretizedswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gmres.ll
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/nonstandardswap.ll
+; re2/optimized/prefilter_tree.cc.ll
 ; rocksdb/optimized/backup_engine.cc.ll
+; rocksdb/optimized/block_builder.cc.ll
 ; rocksdb/optimized/c.cc.ll
 ; rocksdb/optimized/merge_helper.cc.ll
 ; rocksdb/optimized/threadpool_imp.cc.ll
@@ -449,6 +458,7 @@
 ; spike/optimized/htif.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
+; velox/optimized/AsyncDataCache.cpp.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; velox/optimized/LeadLag.cpp.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
@@ -459,6 +469,7 @@
 ; velox/optimized/VariantToVector.cpp.ll
 ; velox/optimized/WidthBucketArray.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
+; verilator/optimized/V3Sched.cpp.ll
 ; wasmedge/optimized/elem.cpp.ll
 ; wasmedge/optimized/formchecker.cpp.ll
 ; wasmedge/optimized/helper.cpp.ll

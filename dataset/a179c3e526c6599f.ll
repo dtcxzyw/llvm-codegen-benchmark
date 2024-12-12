@@ -1,5 +1,5 @@
 
-; 714 occurrences:
+; 709 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/aigOper.c.ll
 ; abc/optimized/aigTable.c.ll
@@ -19,7 +19,7 @@
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
-; cpython/optimized/critical_section.ll
+; boost/optimized/attribute_name.ll
 ; cpython/optimized/gcmodule.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; eastl/optimized/TestSegmentedVector.cpp.ll
@@ -51,7 +51,6 @@
 ; hermes/optimized/Interpreter-slowpaths.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/JSArray.cpp.ll
-; hermes/optimized/JSArrayBuffer.cpp.ll
 ; hermes/optimized/JSCallSite.cpp.ll
 ; hermes/optimized/JSCallableProxy.cpp.ll
 ; hermes/optimized/JSError.cpp.ll
@@ -114,7 +113,6 @@
 ; linux/optimized/mutex.ll
 ; linux/optimized/pgtable.ll
 ; linux/optimized/poll.ll
-; linux/optimized/process_keys.ll
 ; linux/optimized/pti.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/request.ll
@@ -500,8 +498,6 @@
 ; luajit/optimized/lj_lex_dyn.ll
 ; luajit/optimized/lj_lib.ll
 ; luajit/optimized/lj_lib_dyn.ll
-; luajit/optimized/lj_load.ll
-; luajit/optimized/lj_load_dyn.ll
 ; luajit/optimized/lj_mcode.ll
 ; luajit/optimized/lj_mcode_dyn.ll
 ; luajit/optimized/lj_meta.ll
@@ -672,7 +668,6 @@
 ; z3/optimized/array_model.cpp.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/bv_internalize.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/decl_collector.cpp.ll
 ; z3/optimized/dt_solver.cpp.ll
 ; z3/optimized/euf_etable.cpp.ll
@@ -722,11 +717,14 @@ entry:
   ret i64 %2
 }
 
-; 196 occurrences:
+; 199 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/cuddBddIte.c.ll
 ; abc/optimized/cuddGenCof.c.ll
 ; abc/optimized/cuddUtil.c.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/main.ll
+; boost/optimized/system_test2.ll
 ; cpython/optimized/lock.ll
 ; darktable/optimized/camera.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -746,7 +744,6 @@ entry:
 ; folly/optimized/IOThreadPoolExecutor.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -796,6 +793,7 @@ entry:
 ; llvm/optimized/CheckObjCDealloc.cpp.ll
 ; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
 ; llvm/optimized/ContainerModeling.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/DIE.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/Decl.cpp.ll

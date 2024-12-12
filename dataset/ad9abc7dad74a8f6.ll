@@ -11,10 +11,9 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/linkstate.ll
-; linux/optimized/pse-pd.ll
 ; linux/optimized/rx.ll
 ; openjdk/optimized/cmstypes.ll
 ; redis/optimized/redis-cli.ll

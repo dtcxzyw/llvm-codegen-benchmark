@@ -1,11 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
-	leaq	4095(%rdi), %rcx
-	andq	$-4096, %rcx                    # imm = 0xF000
-	cmpq	$134213633, %rdi                # imm = 0x7FFF001
-	movl	$134217728, %eax                # imm = 0x8000000
-	cmovaeq	%rcx, %rax
-	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leal	1(%rdi), %ecx
 	xorl	%eax, %eax
 	cmpq	$2, %rdi
@@ -17,21 +10,34 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$2, %eax
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leal	1(%rdi), %ecx
 	xorl	%eax, %eax
 	cmpq	$2, %rdi
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
-	leaq	2097151(%rdi), %rcx
-	andq	$-1048576, %rcx                 # imm = 0xFFF00000
-	shrq	$34, %rdi
-	cmpl	$63, %edi
-	movabsq	$1082331758592, %rax            # imm = 0xFC00000000
+func0000000000000074:                   # @func0000000000000074
+	leal	23(%rdi), %ecx
+	andl	$496, %ecx                      # imm = 0x1F0
+	cmpq	$23, %rdi
+	movl	$32, %eax
 	cmovaeq	%rcx, %rax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000044:                   # @func0000000000000044
+	leaq	23(%rdi), %rcx
+	andq	$-16, %rcx
+	cmpq	$23, %rdi
+	movl	$32, %eax
+	cmovaeq	%rcx, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	leaq	23(%rdi), %rcx
+	andq	$-16, %rcx
+	cmpq	$23, %rdi
+	movl	$32, %eax
+	cmovaeq	%rcx, %rax
+	retq
+func0000000000000066:                   # @func0000000000000066
 	leaq	32(%rdi), %rax
 	movabsq	$9223372036854775744, %rcx      # imm = 0x7FFFFFFFFFFFFFC0
 	andq	%rax, %rcx

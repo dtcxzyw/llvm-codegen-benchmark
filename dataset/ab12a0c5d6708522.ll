@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; git/optimized/merge-ort.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; openspiel/optimized/euchre.cc.ll
 ; openspiel/optimized/hearts.cc.ll
@@ -9,8 +10,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0) #0 {
 entry:
-  %1 = sub nsw i32 6, %0
-  %2 = mul nsw i32 %1, 86400
+  %1 = sub nsw i32 3, %0
+  %2 = mul nsw i32 %1, 40
   %3 = sext i32 %2 to i64
   ret i64 %3
 }

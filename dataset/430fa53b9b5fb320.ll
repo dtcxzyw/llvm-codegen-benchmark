@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; mitsuba3/optimized/principled.cpp.ll
 ; nori/optimized/nanovg.c.ll

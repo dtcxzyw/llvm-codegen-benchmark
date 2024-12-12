@@ -1,15 +1,15 @@
-func0000000000000034:                   // @func0000000000000034
+func0000000000000064:                   // @func0000000000000064
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
-	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc
-	asr	x8, x8, #5
-	movk	x9, #52429
+	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	asr	x8, x8, #3
+	movk	x9, #43691
 	mul	x8, x8, x9
 	cmp	x8, x0, asr #4
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
@@ -20,7 +20,7 @@ func0000000000000038:                   // @func0000000000000038
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
@@ -31,7 +31,7 @@ func0000000000000031:                   // @func0000000000000031
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
@@ -42,7 +42,7 @@ func0000000000000014:                   // @func0000000000000014
 	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000003c:                   // @func000000000000003c
+func000000000000006c:                   // @func000000000000006c
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
@@ -53,7 +53,7 @@ func000000000000003c:                   // @func000000000000003c
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000035:                   // @func0000000000000035
+func0000000000000065:                   // @func0000000000000065
 // %bb.0:                               // %entry
 	mov	x9, #36409                      // =0x8e39
 	sub	x8, x2, x1
@@ -66,7 +66,7 @@ func0000000000000035:                   // @func0000000000000035
 	cset	w0, ls
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc
@@ -77,7 +77,7 @@ func0000000000000011:                   // @func0000000000000011
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000036:                   // @func0000000000000036
+func0000000000000066:                   // @func0000000000000066
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
@@ -88,7 +88,7 @@ func0000000000000036:                   // @func0000000000000036
 	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	add	x9, x8, #3
@@ -99,7 +99,7 @@ func0000000000000028:                   // @func0000000000000028
 	cset	w0, hi
 	ret
                                         // -- End function
-func000000000000003b:                   // @func000000000000003b
+func000000000000006b:                   // @func000000000000006b
 // %bb.0:                               // %entry
 	mov	x9, #28087                      // =0x6db7
 	sub	x8, x2, x1

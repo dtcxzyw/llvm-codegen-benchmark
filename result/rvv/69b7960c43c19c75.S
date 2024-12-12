@@ -8,7 +8,7 @@ func0000000000000006:                   # @func0000000000000006
 	vsra.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	li	a0, 32
 	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -18,7 +18,7 @@ func0000000000000016:                   # @func0000000000000016
 	vsra.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
@@ -27,7 +27,7 @@ func0000000000000014:                   # @func0000000000000014
 	vsra.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	li	a0, 32
 	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -47,7 +47,7 @@ func000000000000000a:                   # @func000000000000000a
 	vsra.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	li	a0, 32
 	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -55,7 +55,7 @@ func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 32
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -64,9 +64,9 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vx	v10, v10, a0
 	li	a0, 32
 	vsra.vx	v10, v10, a0
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	li	a0, 32
 	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -86,7 +86,7 @@ func0000000000000008:                   # @func0000000000000008
 	vsra.vx	v10, v10, a0
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	li	a0, 32
 	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -94,9 +94,9 @@ func0000000000000031:                   # @func0000000000000031
 	slli	a1, a1, 32
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 30
 	li	a0, -3
@@ -106,7 +106,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	vsra.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	li	a0, 32
 	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -116,7 +116,7 @@ func000000000000003a:                   # @func000000000000003a
 	vsra.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
 	ret
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0

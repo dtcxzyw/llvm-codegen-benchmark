@@ -23,13 +23,13 @@ func0000000000000007:                   # @func0000000000000007
 	imulq	%rdi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
+	movabsq	$-6640827866535438581, %rcx     # imm = 0xA3D70A3D70A3D70B
 	movq	%rdi, %rax
-	movabsq	$1749024623285053783, %rcx      # imm = 0x1845C8A0CE512957
 	imulq	%rcx
-	movq	%rdx, %rcx
-	shrq	$63, %rcx
-	sarq	$13, %rdx
-	addq	%rdx, %rcx
-	movl	$4294880896, %eax               # imm = 0xFFFEAE80
-	imulq	%rcx, %rax
+	addq	%rdi, %rdx
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	sarq	$6, %rdx
+	addq	%rax, %rdx
+	imulq	$3600, %rdx, %rax               # imm = 0xE10
 	retq

@@ -1,7 +1,8 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; git/optimized/diff.ll
 ; libpng/optimized/pngrtran.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openjdk/optimized/pngrtran.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
@@ -27,8 +28,9 @@ entry:
   ret ptr %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/to_chars.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; libpng/optimized/pngrtran.c.ll
@@ -59,9 +61,9 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000052(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 10
+  %2 = icmp samesign ult i32 %1, 10
   %3 = sext i1 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   ret ptr %4

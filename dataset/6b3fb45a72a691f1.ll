@@ -109,10 +109,9 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/hamt.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
-; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
 ; postgres/optimized/tsvector.ll
 ; Function Attrs: nounwind
@@ -146,6 +145,18 @@ entry:
   %2 = add nuw nsw i32 %1, 3
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
+  ret i64 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/edge_drawing.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000005f(i32 %0) #0 {
+entry:
+  %1 = shl nuw i32 %0, 1
+  %2 = add nuw nsw i32 %1, 2
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/bmcBmcG.c.ll
 ; abc/optimized/bmcBmcS.c.ll
@@ -10,7 +10,6 @@
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll

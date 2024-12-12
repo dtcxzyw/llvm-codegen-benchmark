@@ -13,12 +13,12 @@ func0000000000000005:                   # @func0000000000000005
 	andl	$1, %esi
 	orl	%esi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
+func0000000000000006:                   # @func0000000000000006
 	movq	%rdi, %rax
 	andl	$1, %esi
 	orl	%esi, %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	movq	%rdi, %rax
 	andl	$1, %esi
 	orl	%esi, %eax

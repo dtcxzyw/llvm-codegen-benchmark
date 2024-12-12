@@ -1,12 +1,10 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; abc/optimized/fretInit.c.ll
 ; folly/optimized/EventBaseBackendBase.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
-; linux/optimized/extents.ll
 ; linux/optimized/inotify_user.ll
-; linux/optimized/tg3.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i16 %1) #0 {
@@ -23,7 +21,7 @@ entry:
 ; folly/optimized/File.cpp.ll
 ; vcpkg/optimized/strings.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 6
   %3 = icmp eq i16 %2, 0
@@ -41,7 +39,7 @@ entry:
   %2 = and i16 %1, -4096
   %3 = icmp eq i16 %2, 16384
   %4 = select i1 %3, i32 134225920, i32 8192
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

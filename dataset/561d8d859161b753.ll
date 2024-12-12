@@ -15,6 +15,16 @@ entry:
 }
 
 ; 1 occurrences:
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
+entry:
+  %reass.sub = sub i64 %0, %1
+  %2 = add i64 %reass.sub, 4
+  ret i64 %2
+}
+
+; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000035(i64 %0, i64 %1) #0 {

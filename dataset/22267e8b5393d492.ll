@@ -5,7 +5,7 @@
 define i1 @func000000000000000c(i1 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -28,7 +28,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

@@ -51,12 +51,9 @@ entry:
   ret i32 %2
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:

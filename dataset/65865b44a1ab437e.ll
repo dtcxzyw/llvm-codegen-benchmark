@@ -1,10 +1,5 @@
 
-%"class.llvm::SDValue.2956774" = type <{ ptr, i32, [4 x i8] }>
-%"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3235950" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3235951", %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3.3235952" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3235951" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3235953" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3235953" = type { i32 }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3.3235952" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3235954" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3235954" = type { i32 }
+%"class.llvm::SDValue.3150307" = type <{ ptr, i32, [4 x i8] }>
 
 ; 4 occurrences:
 ; linux/optimized/regmap.ll
@@ -20,18 +15,9 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 5 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = udiv i64 %1, %2
-  %4 = getelementptr %"class.llvm::SDValue.2956774", ptr %0, i64 %3, i32 1
-  ret ptr %4
-}
-
-; 3 occurrences:
 ; openspiel/optimized/mcts.cc.ll
 ; openusd/optimized/testHdSortedIds.cpp.ll
 ; openusd/optimized/testHdSortedIdsPerf.cpp.ll
@@ -39,7 +25,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = getelementptr %"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3235950", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.llvm::SDValue.3150307", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

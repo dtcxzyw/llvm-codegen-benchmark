@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
@@ -19,6 +19,7 @@
 ; llvm/optimized/LegalizerInfo.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; openjdk/optimized/block.ll
 ; openjdk/optimized/loopnode.ll
 ; openjdk/optimized/node.ll
@@ -42,7 +43,7 @@ entry:
 ; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
 ; mold/optimized/thunks.cc.PPC64V1.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 44
   %4 = icmp slt i32 %1, 32768
@@ -51,38 +52,11 @@ entry:
   ret i64 %6
 }
 
-; 16 occurrences:
-; linux/optimized/rock.ll
-; openjdk/optimized/FourByteAbgr.ll
-; openjdk/optimized/FourByteAbgrPre.ll
-; openjdk/optimized/IntArgb.ll
-; openjdk/optimized/IntArgbBm.ll
-; openjdk/optimized/IntArgbPre.ll
-; openjdk/optimized/IntBgr.ll
-; openjdk/optimized/IntRgb.ll
-; openjdk/optimized/IntRgbx.ll
-; openjdk/optimized/ThreeByteBgr.ll
-; openjdk/optimized/Ushort555Rgb.ll
-; openjdk/optimized/Ushort555Rgbx.ll
-; openjdk/optimized/Ushort565Rgb.ll
-; openjdk/optimized/vectset.ll
-; pbrt-v4/optimized/integrator.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000063(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 2
-  %4 = icmp eq i32 %1, 0
-  %5 = select i1 %4, i32 %3, i32 %0
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
-}
-
 ; 2 occurrences:
 ; openjdk/optimized/node.ll
 ; openjdk/optimized/phaseX.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000082(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp eq i32 %1, 1
@@ -92,12 +66,27 @@ entry:
 }
 
 ; 4 occurrences:
+; linux/optimized/rock.ll
+; openjdk/optimized/vectset.ll
+; pbrt-v4/optimized/integrator.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000c3(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 1
+  %4 = icmp eq i32 %1, 1
+  %5 = select i1 %4, i32 %3, i32 %0
+  %6 = zext nneg i32 %5 to i64
+  ret i64 %6
+}
+
+; 4 occurrences:
 ; spike/optimized/kcras32.ll
 ; spike/optimized/kcrsa32.ll
 ; spike/optimized/kstas32.ll
 ; spike/optimized/kstsa32.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000094(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 2147483647
   %4 = icmp slt i32 %1, 0
@@ -112,7 +101,7 @@ entry:
 ; spike/optimized/kstas32.ll
 ; spike/optimized/kstsa32.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 2147483647
   %4 = icmp slt i32 %1, 0
@@ -134,19 +123,6 @@ entry:
   %4 = select i1 %.not, i32 %0, i32 %3
   %5 = zext i32 %4 to i64
   ret i64 %5
-}
-
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -511
-  %4 = icmp ugt i32 %1, 511
-  %5 = select i1 %4, i32 %3, i32 %0
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
 }
 
 ; 1 occurrences:

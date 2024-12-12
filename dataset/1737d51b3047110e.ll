@@ -25,7 +25,7 @@
 ; openssl/optimized/libcrypto-shlib-tasn_prn.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp ne ptr %0, null
@@ -33,7 +33,7 @@ entry:
   ret i1 %4
 }
 
-; 128 occurrences:
+; 133 occurrences:
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; grpc/optimized/pick_first.cc.ll
 ; llvm/optimized/APValue.cpp.ll
@@ -162,8 +162,13 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; rust-analyzer-rs/optimized/4jgoi87ys7cbhj0l.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 1
   %3 = icmp eq ptr %0, null
@@ -178,7 +183,7 @@ entry:
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1) #0 {
 entry:
   %.not = icmp ne i64 %1, 0
   %2 = icmp ne ptr %0, null
@@ -189,7 +194,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000101(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 8
   %3 = icmp eq ptr %0, null
@@ -200,7 +205,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineFunction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i64 %1) #0 {
 entry:
   %.not = icmp eq i64 %1, 0
   %2 = icmp eq ptr %0, null

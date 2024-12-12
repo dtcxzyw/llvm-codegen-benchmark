@@ -40,10 +40,3 @@ func0000000000000022:                   // @func0000000000000022
 	add	x0, x0, w8, sxtw #3
 	ret
                                         // -- End function
-func0000000000000182:                   // @func0000000000000182
-// %bb.0:                               // %entry
-	cmp	w2, #0
-	cinc	w8, w1, ne
-	add	x0, x0, w8, sxtw #4
-	ret
-                                        // -- End function

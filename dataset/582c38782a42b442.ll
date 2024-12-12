@@ -1,5 +1,5 @@
 
-; 131 occurrences:
+; 127 occurrences:
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/smb.c.ll
 ; curl/optimized/libcurl_la-smb.ll
@@ -12,7 +12,6 @@
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; lief/optimized/File.cpp.ll
 ; lief/optimized/rsa.c.ll
-; linux/optimized/ah6.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/intel_crtc_state_dump.ll
@@ -58,8 +57,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -126,7 +123,6 @@
 ; qemu/optimized/ahci.c.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; quickjs/optimized/libregexp.ll
-; ropey-rs/optimized/4i14j6kjvp3g1a3p.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
@@ -167,19 +163,20 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
-; luau/optimized/IrRegAllocA64.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i8 %0) #0 {
 entry:

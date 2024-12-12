@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI1_0:
 	.long	0x3f800000                      # float 1
 	.long	0xbf800000                      # float -1
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorl	%eax, %eax
 	testb	$32, %dil
 	sete	%al

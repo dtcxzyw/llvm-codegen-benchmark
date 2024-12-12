@@ -1,5 +1,6 @@
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/within_sph_geo.ll
 ; cmake/optimized/cmCPackLog.cxx.ll
 ; cvc5/optimized/function_const.cpp.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
@@ -14,6 +15,16 @@
 define i8 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 0
+  %2 = zext i1 %1 to i8
+  ret i8 %2
+}
+
+; 1 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = icmp slt i32 %0, 1
   %2 = zext i1 %1 to i8
   ret i8 %2
 }

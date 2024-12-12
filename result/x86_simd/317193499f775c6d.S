@@ -3,13 +3,13 @@
 func0000000000000001:                   # @func0000000000000001
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vcvtdq2pd	%ymm2, %zmm2
-	vmulpd	%zmm1, %zmm2, %zmm1
+	vmulpd	%zmm2, %zmm1, %zmm1
 	vdivpd	%zmm0, %zmm1, %zmm0
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vcvtdq2pd	%ymm2, %zmm2
-	vmulpd	%zmm1, %zmm2, %zmm1
+	vmulpd	%zmm2, %zmm1, %zmm1
 	vdivpd	%zmm0, %zmm1, %zmm0
 	retq

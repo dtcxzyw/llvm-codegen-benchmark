@@ -30,23 +30,33 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
   %3 = lshr i32 %0, %2
-  %4 = icmp ult i32 %3, 5
+  %4 = icmp samesign ult i32 %3, 5
   ret i1 %4
 }
 
-; 2 occurrences:
-; node/optimized/libnode.stream_base.ll
+; 1 occurrences:
 ; protobuf/optimized/csharp_field_base.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i32
+  %3 = lshr i32 %0, %2
+  %4 = icmp samesign ugt i32 %3, 1
+  ret i1 %4
+}
+
+; 1 occurrences:
+; node/optimized/libnode.stream_base.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
   %3 = lshr i32 %0, %2
-  %4 = icmp ugt i32 %3, 1
+  %4 = icmp ugt i32 %3, 16
   ret i1 %4
 }
 

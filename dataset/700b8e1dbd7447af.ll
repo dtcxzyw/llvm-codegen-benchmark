@@ -10,9 +10,8 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/acpi_video.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:

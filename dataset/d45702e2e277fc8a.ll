@@ -1,5 +1,5 @@
 
-; 147 occurrences:
+; 146 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -41,7 +41,6 @@
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/sbitmap.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll

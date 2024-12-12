@@ -21,3 +21,9 @@ func000000000000000f:                   # @func000000000000000f
 	sll	a0, a2, a0
 	add.uw	a0, a1, a0
 	ret
+func000000000000001f:                   # @func000000000000001f
+	zext.w	a2, a2
+	sll	a0, a2, a0
+	sext.w	a1, a1
+	add	a0, a0, a1
+	ret

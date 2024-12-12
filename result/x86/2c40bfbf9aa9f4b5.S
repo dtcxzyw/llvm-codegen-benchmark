@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subl	%esi, %edx
 	addl	%edx, %edi
 	sete	%al
@@ -15,7 +15,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	subq	%rsi, %rdx
 	addq	%rdi, %rdx
 	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000

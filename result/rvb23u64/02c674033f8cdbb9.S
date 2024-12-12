@@ -1,15 +1,15 @@
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a0, a0
 	bset	a1, zero, a1
 	sltiu	a0, a0, 65
 	czero.eqz	a0, a1, a0
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	bset	a1, zero, a1
 	czero.eqz	a0, a1, a0
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	li	a2, 8
 	sll	a1, a2, a1

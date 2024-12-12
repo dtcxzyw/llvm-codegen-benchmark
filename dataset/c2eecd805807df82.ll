@@ -40,9 +40,9 @@ entry:
 ; cpython/optimized/mpdecimal.ll
 ; cpython/optimized/sixstep.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000105(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000305(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 1
+  %2 = icmp samesign ugt i64 %1, 1
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %0, -1
   %5 = add nsw i32 %4, %3

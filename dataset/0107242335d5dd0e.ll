@@ -1,5 +1,6 @@
 
-; 60 occurrences:
+; 61 occurrences:
+; boost/optimized/formatters_cache.ll
 ; cmake/optimized/select.c.ll
 ; curl/optimized/libcurl_la-select.ll
 ; icu/optimized/caniter.ll

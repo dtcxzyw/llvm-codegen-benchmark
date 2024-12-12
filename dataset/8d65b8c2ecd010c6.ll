@@ -1,6 +1,7 @@
 
 ; 92 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; flatbuffers/optimized/flatc.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -68,7 +69,6 @@
 ; llvm/optimized/UninitializedObjectChecker.cpp.ll
 ; llvm/optimized/UnixAPIChecker.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/block_pass.ll
 ; php/optimized/compact_literals.ll
@@ -102,7 +102,8 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/alloc_lib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
@@ -119,7 +120,8 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; git/optimized/apply.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1, ptr %2) #0 {

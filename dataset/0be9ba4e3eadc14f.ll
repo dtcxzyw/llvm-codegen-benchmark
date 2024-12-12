@@ -1,10 +1,18 @@
 
-; 60 occurrences:
+; 68 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
 ; abseil-cpp/optimized/reflection.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
 ; cmake/optimized/cmArgumentParser.cxx.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cmake/optimized/cmList.cxx.ll
@@ -85,12 +93,14 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; libquic/optimized/modp_b64.cc.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/md-bitmap.ll
 ; llvm/optimized/DeclCXX.cpp.ll
+; minetest/optimized/texturesource.cpp.ll
+; openusd/optimized/evalUtils.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; rocksdb/optimized/clock_cache.cc.ll

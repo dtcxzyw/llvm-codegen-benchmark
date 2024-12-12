@@ -1,8 +1,18 @@
 
-; 62 occurrences:
+; 80 occurrences:
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/json_writer.cpp.ll
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/utf_impl.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
@@ -62,6 +72,14 @@
 ; wireshark/optimized/packet-q931.c.ll
 ; wireshark/optimized/packet-q933.c.ll
 ; wolfssl/optimized/asn.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
@@ -72,7 +90,7 @@ entry:
   ret i32 %5
 }
 
-; 67 occurrences:
+; 72 occurrences:
 ; clamav/optimized/Bra.c.ll
 ; clamav/optimized/explode.c.ll
 ; cmake/optimized/armthumb.c.ll
@@ -108,11 +126,9 @@ entry:
 ; minetest/optimized/nodedef.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; node/optimized/idna.ll
 ; node/optimized/simdutf.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; openjdk/optimized/bytecodeUtils.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -134,6 +150,13 @@ entry:
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-rpc.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
@@ -150,9 +173,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; re2/optimized/re2.cc.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
@@ -165,7 +189,7 @@ entry:
   ret i32 %5
 }
 
-; 20 occurrences:
+; 25 occurrences:
 ; icu/optimized/collationcompare.ll
 ; icu/optimized/collationfastlatin.ll
 ; icu/optimized/collationkeys.ll
@@ -176,16 +200,21 @@ entry:
 ; linux/optimized/tcp_minisocks.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/servermap.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; wireshark/optimized/addr_resolv.c.ll
-; wireshark/optimized/packet-fcct.c.ll
 ; wireshark/optimized/packet-fcdns.c.ll
 ; wireshark/optimized/packet-fcfcs.c.ll
 ; wireshark/optimized/packet-fcfzs.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
@@ -234,8 +263,12 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; php/optimized/decode.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i8 %1) #0 {
 entry:

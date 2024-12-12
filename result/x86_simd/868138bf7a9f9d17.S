@@ -1,14 +1,14 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vpsubd	%ymm0, %ymm1, %ymm3
 	vpcmpgtd	%ymm0, %ymm1, %k1
 	vpmulld	%ymm2, %ymm3, %ymm0 {%k1} {z}
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vpsubd	%ymm0, %ymm1, %ymm3
 	vpcmpgtd	%ymm0, %ymm1, %k1
 	vpmulld	%ymm2, %ymm3, %ymm0 {%k1} {z}
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpsubd	%ymm1, %ymm0, %ymm3
 	vpcmpgtd	%ymm1, %ymm0, %k1
 	vpmulld	%ymm2, %ymm3, %ymm0 {%k1} {z}

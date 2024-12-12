@@ -8,7 +8,7 @@ entry:
   %2 = uitofp i32 %1 to float
   %3 = fmul float %2, 0x3DF0000000000000
   %4 = fadd float %3, 1.000000e+00
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

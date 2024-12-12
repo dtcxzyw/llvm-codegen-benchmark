@@ -1,4 +1,4 @@
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000003e4:                   # @func00000000000003e4
 	vpextrd	$1, %xmm2, %ecx
 	movl	$2147483645, %eax               # imm = 0x7FFFFFFD
 	xorl	%edx, %edx
@@ -24,7 +24,7 @@ func00000000000001f4:                   # @func00000000000001f4
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm1, %ymm1
 	vpmullq	%ymm2, %ymm1, %ymm1
-	vpcmpnleuq	%ymm0, %ymm1, %k0
+	vpcmpltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

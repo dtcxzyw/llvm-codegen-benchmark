@@ -1,6 +1,8 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -15,22 +17,24 @@ entry:
   %4 = xor i64 %1, -1
   %5 = icmp ult i64 %4, %3
   %6 = zext i1 %5 to i64
-  %7 = add nuw i64 %6, %0
+  %7 = add nuw i64 %0, %6
   ret i64 %7
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000422(i64 %0, i64 %1, i128 %2) #0 {
+define i64 @func0000000000000822(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
   %4 = xor i64 %1, -1
   %5 = icmp ult i64 %4, %3
   %6 = zext i1 %5 to i64
-  %7 = add nuw i64 %6, %0
+  %7 = add nuw i64 %0, %6
   ret i64 %7
 }
 
@@ -45,7 +49,7 @@ entry:
   %4 = xor i64 %1, -1
   %5 = icmp ult i64 %4, %3
   %6 = zext i1 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

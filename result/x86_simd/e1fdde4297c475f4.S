@@ -29,10 +29,10 @@ func000000000000000a:                   # @func000000000000000a
 	vpbroadcastd	.LCPI3_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [6,6,6,6,6,6,6,6]
 	retq
 .LCPI4_0:
-	.long	4294967293                      # 0xfffffffd
+	.long	1114111                         # 0x10ffff
 .LCPI4_1:
-	.long	4294967292                      # 0xfffffffc
+	.long	63                              # 0x3f
 func0000000000000008:                   # @func0000000000000008
 	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
-	vpbroadcastd	.LCPI4_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4294967292,4294967292,4294967292,4294967292,4294967292,4294967292,4294967292,4294967292]
+	vpbroadcastd	.LCPI4_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [63,63,63,63,63,63,63,63]
 	retq

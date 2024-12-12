@@ -1,12 +1,19 @@
 
-%"class.std::vector.14.2796930" = type { %"struct.std::_Vector_base.15.2796931" }
-%"struct.std::_Vector_base.15.2796931" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2796932" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2796932" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2796933" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2796933" = type { ptr, ptr, ptr }
+%"class.std::vector.14.2908984" = type { %"struct.std::_Vector_base.15.2908985" }
+%"struct.std::_Vector_base.15.2908985" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908986" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908986" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908987" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908987" = type { ptr, ptr, ptr }
+%"class.duckdb::unique_ptr.1737.2965502" = type { %"class.std::unique_ptr.1738.2965503" }
+%"class.std::unique_ptr.1738.2965503" = type { %"struct.std::__uniq_ptr_data.1739.2965504" }
+%"struct.std::__uniq_ptr_data.1739.2965504" = type { %"class.std::__uniq_ptr_impl.1740.2965505" }
+%"class.std::__uniq_ptr_impl.1740.2965505" = type { %"class.std::tuple.1741.2965506" }
+%"class.std::tuple.1741.2965506" = type { %"struct.std::_Tuple_impl.1742.2965507" }
+%"struct.std::_Tuple_impl.1742.2965507" = type { %"struct.std::_Head_base.1745.2965508" }
+%"struct.std::_Head_base.1745.2965508" = type { ptr }
+%struct.pointf_s.3884849 = type { double, double }
 
-; 11 occurrences:
+; 10 occurrences:
 ; git/optimized/diff.ll
-; libquic/optimized/cmp.c.ll
 ; opencv/optimized/rapid.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
@@ -41,35 +48,69 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/cuddExact.c.ll
-; graphviz/optimized/multispline.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = sub nsw i64 %4, %1
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 8 occurrences:
-; duckdb/optimized/ub_duckdb_main.cpp.ll
+; 6 occurrences:
 ; gromacs/optimized/orires.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/topio.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/facemarkAAM.cpp.ll
-; opencv/optimized/generalized_hough.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = sub nuw nsw i64 %4, %1
-  %6 = getelementptr nusw %"class.std::vector.14.2796930", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.std::vector.14.2908984", ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_main.cpp.ll
+; opencv/optimized/generalized_hough.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = sub nuw nsw i64 %4, %1
+  %6 = getelementptr nusw nuw %"class.duckdb::unique_ptr.1737.2965502", ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; boost/optimized/conversion.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000018(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = sub nuw i64 %4, %1
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = sext i32 %3 to i64
+  %5 = sub nsw i64 %4, %1
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -120,6 +161,18 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = sub nsw i64 %4, %1
   %6 = getelementptr double, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; graphviz/optimized/multispline.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, -2
+  %4 = sext i32 %3 to i64
+  %5 = sub nsw i64 %4, %1
+  %6 = getelementptr nusw %struct.pointf_s.3884849, ptr %0, i64 %5
   ret ptr %6
 }
 

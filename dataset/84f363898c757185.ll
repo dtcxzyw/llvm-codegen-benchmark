@@ -17,10 +17,12 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/skl_watermark.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -31,9 +33,8 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/blk-iocost.ll
-; linux/optimized/intel_audio.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000040(i64 %0, i64 %1, i64 %2) #0 {
 entry:

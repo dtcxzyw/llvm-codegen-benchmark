@@ -1,6 +1,8 @@
 
-; 60 occurrences:
+; 62 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/console_buffer.ll
+; boost/optimized/static_string.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/IR.cpp.ll

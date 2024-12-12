@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 15
   %4 = sext i32 %3 to i64

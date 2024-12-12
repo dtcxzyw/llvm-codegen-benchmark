@@ -1,7 +1,5 @@
 
-; 3 occurrences:
-; icu/optimized/ucnv_u8.ll
-; icu/optimized/utf_impl.ll
+; 1 occurrences:
 ; llvm/optimized/RISCVTargetParser.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000013(i32 %0, i32 %1, i8 %2) #0 {

@@ -12,9 +12,8 @@ entry:
   ret double %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
-; abseil-cpp/optimized/exponential_biased.cc.ll
 ; openjdk/optimized/threadHeapSampler.ll
 ; pcg-cpp/optimized/cppref-sample.cpp.ll
 ; Function Attrs: nounwind

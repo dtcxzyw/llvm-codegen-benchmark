@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	setne	%al
 	shll	$31, %eax
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	decb	%sil
 	movzbl	%sil, %ecx
 	xorl	%eax, %eax

@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 51 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; cpython/optimized/unicodedata.ll
 ; double_conversion/optimized/string-to-double.cc.ll
@@ -37,18 +37,20 @@
 ; openjdk/optimized/ad_x86.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; openusd/optimized/string-to-double.cc.ll
+; php/optimized/apprentice.ll
 ; postgres/optimized/unicode_norm.ll
 ; postgres/optimized/unicode_norm_shlib.ll
 ; postgres/optimized/unicode_norm_srv.ll
-; proj/optimized/io.cpp.ll
 ; pyo3-rs/optimized/4z0qp503bgjcdxcv.ll
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmedge/optimized/engine.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -58,7 +60,7 @@ entry:
   ret i1 %5
 }
 
-; 198 occurrences:
+; 207 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -71,6 +73,7 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/ipv6_address.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; clamav/optimized/archive.cpp.ll
 ; clamav/optimized/hostid.c.ll
@@ -101,6 +104,7 @@ entry:
 ; icu/optimized/rbt_pars.ll
 ; icu/optimized/ucnv.ll
 ; icu/optimized/vtzone.ll
+; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; linux/optimized/alps.ll
@@ -128,6 +132,9 @@ entry:
 ; luajit/optimized/buildvm_lib.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_textarea.ll
 ; minetest/optimized/COpenGLExtensionHandler.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/guiChatConsole.cpp.ll
@@ -179,7 +186,6 @@ entry:
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/infer_single_roi.cpp.ll
 ; opencv/optimized/onevpl_infer_with_advanced_device_selection.cpp.ll
-; opencv/optimized/stringutils.cpp.ll
 ; openjdk/optimized/MaskFill.ll
 ; openjdk/optimized/elfFile.ll
 ; openmpi/optimized/cmd_line.ll
@@ -209,6 +215,8 @@ entry:
 ; slurm/optimized/env.ll
 ; stb/optimized/stb_image.c.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
@@ -221,7 +229,6 @@ entry:
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
-; wireshark/optimized/dpa400.c.ll
 ; wireshark/optimized/packet-acr122.c.ll
 ; wireshark/optimized/packet-amqp.c.ll
 ; wireshark/optimized/packet-atm.c.ll
@@ -257,6 +264,10 @@ entry:
 ; z3/optimized/tactic_cmds.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -302,30 +313,13 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
-; llvm/optimized/InstCombineCasts.cpp.ll
-; llvm/optimized/InstCombineCompares.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
-; llvm/optimized/LoopUtils.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/ScalarEvolutionExpander.cpp.ll
+; 2 occurrences:
 ; wireshark/optimized/packet-3g-a11.c.ll
 ; wireshark/optimized/packet-oran.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ugt i8 %2, 28
-  %4 = select i1 %3, i1 %1, i1 false
-  %5 = select i1 %4, i1 %0, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/nf_conntrack_proto_icmpv6.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp slt i8 %2, 0
+  %3 = icmp ugt i8 %2, 1
   %4 = select i1 %3, i1 %1, i1 false
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5

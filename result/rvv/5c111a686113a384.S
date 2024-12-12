@@ -7,7 +7,7 @@ func0000000000000006:                   # @func0000000000000006
 	vmv.v.i	v10, 1
 	vwsll.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vv	v8, v12, v8
+	vand.vv	v8, v8, v12
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e8, mf4, ta, ma
@@ -28,7 +28,7 @@ func0000000000000005:                   # @func0000000000000005
 	vzext.vf8	v12, v10
 	vmv.v.i	v10, -1
 	vsll.vv	v10, v10, v12
-	vand.vv	v8, v10, v8
+	vand.vv	v8, v8, v10
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 63

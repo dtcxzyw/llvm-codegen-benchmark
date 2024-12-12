@@ -343,18 +343,6 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
-; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %1, %2
-  %4 = select i1 %3, i32 2, i32 0
-  %5 = or disjoint i32 %4, %0
-  ret i32 %5
-}
-
 ; 1 occurrences:
 ; qemu/optimized/hw_char_cadence_uart.c.ll
 ; Function Attrs: nounwind
@@ -362,7 +350,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = select i1 %3, i32 0, i32 1024
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -393,7 +381,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %3, i32 16, i32 0
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -416,7 +404,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp sgt i32 %1, %2
   %3 = select i1 %.not, i32 0, i32 256
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -427,7 +415,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i32 0, i32 2
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

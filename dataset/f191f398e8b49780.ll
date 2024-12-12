@@ -72,7 +72,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = trunc nuw nsw i64 %1 to i32
   %5 = add nuw nsw i32 %4, %3
-  %6 = mul nsw i32 %5, %0
+  %6 = mul nsw i32 %0, %5
   ret i32 %6
 }
 

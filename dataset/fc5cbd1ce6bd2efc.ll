@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/hex.c.ll
-; linux/optimized/he.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tty_ioctl.ll

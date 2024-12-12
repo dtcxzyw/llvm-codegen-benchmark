@@ -21,9 +21,9 @@ func0000000000000008:                   # @func0000000000000008
 .LCPI2_1:
 	.long	0x44004000                      # float 513
 .LCPI2_2:
-	.long	0x43800000                      # float 256
+	.long	0x41000000                      # float 8
 func0000000000000004:                   # @func0000000000000004
 	vmulps	.LCPI2_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpgtps	.LCPI2_1(%rip){1to16}, %zmm1, %k1
-	vbroadcastss	.LCPI2_2(%rip), %zmm0 {%k1} # zmm0 {%k1} = [2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2,2.56E+2]
+	vbroadcastss	.LCPI2_2(%rip), %zmm0 {%k1} # zmm0 {%k1} = [8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0,8.0E+0]
 	retq

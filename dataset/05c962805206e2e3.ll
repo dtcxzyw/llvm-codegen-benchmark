@@ -1,10 +1,13 @@
 
-; 76 occurrences:
+; 80 occurrences:
 ; abc/optimized/cecSim.c.ll
 ; abc/optimized/cutSeq.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/dlp.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -23,6 +26,7 @@
 ; icu/optimized/hebrwcal.ll
 ; libquic/optimized/prtime.cc.ll
 ; lief/optimized/aes.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
@@ -85,6 +89,9 @@ entry:
 }
 
 ; 63 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/test_iostream.ll
 ; clamav/optimized/clamdscan.c.ll
 ; clamav/optimized/clamscan.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -98,13 +105,11 @@ entry:
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; icu/optimized/calendar.ll
 ; jq/optimized/builtin.ll
 ; linux/optimized/dmar.ll
-; linux/optimized/head64.ll
 ; linux/optimized/intel_hdcp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
@@ -113,7 +118,6 @@ entry:
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
-; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/pose_3d.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/resize.cpp.ll

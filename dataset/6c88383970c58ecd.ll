@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 79 occurrences:
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; c3c/optimized/parse_global.c.ll
 ; c3c/optimized/sema_decls.c.ll
@@ -8,7 +8,6 @@
 ; folly/optimized/Compression.cpp.ll
 ; git/optimized/commit-graph.ll
 ; grpc/optimized/parsing.cc.ll
-; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
@@ -21,7 +20,6 @@
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/manager.ll
-; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTMatchersInternal.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -62,7 +60,6 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
-; protobuf/optimized/json.cc.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
 ; redis/optimized/rdb.ll
@@ -78,6 +75,7 @@
 ; yosys/optimized/sim.ll
 ; z3/optimized/dl_bound_relation.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -87,14 +85,13 @@ entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 24
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; folly/optimized/IPAddressV6.cpp.ll
 ; linux/optimized/drm_edid.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
@@ -129,7 +126,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw i64 %3, 63
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -141,7 +138,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw i64 %3, 63
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

@@ -24,7 +24,7 @@ func0000000000000004:                   # @func0000000000000004
 	orl	$65535, %eax                    # imm = 0xFFFF
 	andl	%ecx, %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	cmpq	$513, %rdx                      # imm = 0x201
 	movq	$-8, %rax
 	movq	$-64, %rcx
@@ -32,7 +32,7 @@ func0000000000000013:                   # @func0000000000000013
 	leaq	(%rdi,%rsi), %rax
 	andq	%rcx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	cmpq	$513, %rdx                      # imm = 0x201
 	movq	$-8, %rax
 	movq	$-64, %rcx

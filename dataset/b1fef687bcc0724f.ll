@@ -1,8 +1,6 @@
 
-; 16 occurrences:
-; gromacs/optimized/dorm2l.cpp.ll
+; 14 occurrences:
 ; gromacs/optimized/dorml2.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; gromacs/optimized/sorml2.cpp.ll
 ; icu/optimized/ushape.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -20,7 +18,7 @@
 define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 1, i64 -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 

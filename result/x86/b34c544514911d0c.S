@@ -1,36 +1,36 @@
-func0000000000000055:                   # @func0000000000000055
+func00000000000000a5:                   # @func00000000000000a5
 	shll	$8, %edx
 	orl	%esi, %edx
-	cmpw	%di, %dx
-	setae	%al
+	cmpw	%dx, %di
+	setbe	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	shll	$8, %edx
 	orl	%esi, %edx
-	cmpw	%di, %dx
-	setl	%al
-	retq
-func0000000000000056:                   # @func0000000000000056
-	shll	$8, %edx
-	orl	%esi, %edx
-	cmpw	%di, %dx
+	cmpw	%dx, %di
 	setg	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a6:                   # @func00000000000000a6
 	shll	$8, %edx
 	orl	%esi, %edx
-	cmpw	%di, %dx
+	cmpw	%dx, %di
+	setl	%al
+	retq
+func00000000000000a1:                   # @func00000000000000a1
+	shll	$8, %edx
+	orl	%esi, %edx
+	cmpw	%dx, %di
 	sete	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	shll	$8, %edx
 	orl	%esi, %edx
-	cmpw	%di, %dx
-	seta	%al
-	retq
-func0000000000000058:                   # @func0000000000000058
-	shll	$8, %edx
-	orl	%esi, %edx
-	cmpw	%di, %dx
+	cmpw	%dx, %di
 	setb	%al
+	retq
+func00000000000000a8:                   # @func00000000000000a8
+	shll	$8, %edx
+	orl	%esi, %edx
+	cmpw	%dx, %di
+	seta	%al
 	retq

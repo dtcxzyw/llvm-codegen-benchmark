@@ -1,10 +1,16 @@
 
-; 21 occurrences:
+; 27 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/sdf.c.ll
 ; libquic/optimized/cfb.c.ll
 ; linux/optimized/decompress_bunzip2.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; openssl/optimized/libcrypto-lib-cfb128.ll
 ; openssl/optimized/libcrypto-lib-e_des.ll
@@ -30,13 +36,14 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/auditfilter.ll
 ; linux/optimized/bus.ll
 ; linux/optimized/ip6_fib.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; wireshark/optimized/packet-mac-lte.c.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
 ; xgboost/optimized/tree_model.cc.ll

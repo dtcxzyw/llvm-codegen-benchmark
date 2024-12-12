@@ -4,7 +4,20 @@
 ; cpython/optimized/sixstep.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i64 %0, i1 %1, i32 %2) #0 {
+define i32 @func00000000000000f4(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %2, 4
+  %4 = select i1 %1, i32 %2, i32 %3
+  %5 = add nuw nsw i32 %4, 2
+  %6 = icmp samesign ult i64 %0, 4
+  %7 = select i1 %6, i32 %4, i32 %5
+  ret i32 %7
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000e4(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 4
   %4 = select i1 %1, i32 %2, i32 %3
@@ -18,7 +31,7 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; hwloc/optimized/bitmap.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i64 %0, i1 %1, i32 %2) #0 {
+define i32 @func00000000000000e1(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 4
   %4 = select i1 %1, i32 %2, i32 %3

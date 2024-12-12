@@ -1,10 +1,11 @@
 
-; 23 occurrences:
+; 29 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; hdf5/optimized/H5Cimage.c.ll
 ; icu/optimized/scrptrun.ll
 ; linux/optimized/nexthop.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; minetest/optimized/collision.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
@@ -23,6 +24,11 @@
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
 ; spike/optimized/s_countLeadingZeros64.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i1 %0, i8 %1) #0 {
 entry:

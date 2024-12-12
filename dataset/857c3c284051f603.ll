@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; php/optimized/basic_functions.ll
 ; rocksdb/optimized/crc32c.cc.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
@@ -7,6 +7,7 @@
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -23,7 +24,6 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/bts.ll
-; linux/optimized/nmi.ll
 ; llvm/optimized/BlockCoverageInference.cpp.ll
 ; llvm/optimized/BreakFalseDeps.cpp.ll
 ; llvm/optimized/DbiStream.cpp.ll
@@ -52,6 +52,7 @@ entry:
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-netflow.c.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

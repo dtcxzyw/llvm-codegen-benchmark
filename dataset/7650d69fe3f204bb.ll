@@ -5,7 +5,7 @@
 define i1 @func0000000000000164(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp ule double %2, 0x3EB0C6F7A0000000
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = fcmp ogt double %0, 0x3EB0C6F7A0000000
   %6 = and i1 %5, %4
   ret i1 %6
@@ -19,7 +19,7 @@ entry:
 define i1 @func00000000000000a5(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp ugt double %2, 1.200000e+00
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = fcmp ugt double %0, 0x3F571547652B82FE
   %6 = and i1 %5, %4
   ret i1 %6
@@ -64,18 +64,6 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004c(double %0, i1 %1, double %2) #0 {
-entry:
-  %3 = fcmp olt double %2, 0.000000e+00
-  %4 = or i1 %3, %1
-  %5 = fcmp oge double %0, 0.000000e+00
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
 ; 3 occurrences:
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
@@ -84,7 +72,7 @@ entry:
 define i1 @func00000000000000c6(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp one double %2, 0x7FF0000000000000
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = fcmp one double %0, 0x7FF0000000000000
   %6 = and i1 %5, %4
   ret i1 %6
@@ -113,7 +101,7 @@ entry:
 define i1 @func00000000000000cc(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp one double %2, 0x7FF0000000000000
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = fcmp one double %1, 0x7FF0000000000000
   %6 = and i1 %4, %5
   ret i1 %6

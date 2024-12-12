@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/hb-outline.ll

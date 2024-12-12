@@ -1,7 +1,5 @@
 
-%class.btVector3.2705429 = type { [4 x float] }
-%"struct.OpenSubdiv::v3_6_0::Far::GregoryTriConverter<float>::CornerTopology.3226405" = type { i16, i32, i32, i32, float, float, %"class.OpenSubdiv::v3_6_0::Vtr::internal::StackBuffer.27.3226406" }
-%"class.OpenSubdiv::v3_6_0::Vtr::internal::StackBuffer.27.3226406" = type { ptr, i32, i32, [120 x i8], ptr }
+%class.btVector3.2818144 = type { [4 x float] }
 
 ; 45 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
@@ -20,7 +18,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -46,28 +43,17 @@
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw [3 x %class.btVector3.2705429], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openusd/optimized/loopPatchBuilder.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294967295
-  %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %6 = getelementptr nusw [3 x %"struct.OpenSubdiv::v3_6_0::Far::GregoryTriConverter<float>::CornerTopology.3226405"], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw [3 x %class.btVector3.2818144], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

@@ -20,7 +20,7 @@ func0000000000000010:                   # @func0000000000000010
 	addiw	a1, a2, 1280
 	add	a0, a0, a1
 	ret
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	andi	a1, a1, -64
 	li	a2, 640
 	mul	a0, a0, a2
@@ -38,11 +38,20 @@ func0000000000000012:                   # @func0000000000000012
 	addiw	a1, a2, -128
 	add	a0, a0, a1
 	ret
-func000000000000003a:                   # @func000000000000003a
-	andi	a1, a1, -4
+func000000000000003f:                   # @func000000000000003f
+	slli	a1, a1, 16
 	slli	a2, a0, 2
 	slli	a0, a0, 4
+	srli	a1, a1, 16
 	sub	a0, a0, a2
 	add	a0, a0, a1
-	addi	a0, a0, 4
+	addi	a0, a0, 28
+	ret
+func000000000000001e:                   # @func000000000000001e
+	andi	a1, a1, -16
+	slli	a2, a0, 3
+	slli	a0, a0, 7
+	sub	a0, a0, a2
+	add	a0, a0, a1
+	addi	a0, a0, 512
 	ret

@@ -13,7 +13,7 @@
 ; oiio/optimized/xmp.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0) #0 {
+define i1 @func0000000000000041(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 34
   %2 = select i1 %1, i32 34, i32 39

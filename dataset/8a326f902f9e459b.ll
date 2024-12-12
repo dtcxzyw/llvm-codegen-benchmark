@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/abcQbf.c.ll
 ; abc/optimized/absRpmOld.c.ll
@@ -31,7 +31,6 @@
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/saigIso.c.ll
 ; abc/optimized/sscCore.c.ll
-; abc/optimized/sscUtil.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; abc/optimized/wlnWlc.c.ll
@@ -40,7 +39,7 @@
 ; quantlib/optimized/thirty360.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %not. = xor i1 %0, true
@@ -54,7 +53,7 @@ entry:
 ; minetest/optimized/guiTable.cpp.ll
 ; quantlib/optimized/thirty360.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %not. = xor i1 %0, true

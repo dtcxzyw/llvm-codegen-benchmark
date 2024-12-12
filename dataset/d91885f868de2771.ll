@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 76 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/static_dict.c.ll
@@ -67,6 +67,14 @@
 ; wireshark/optimized/rtp_audio_routing_filter.cpp.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
@@ -76,16 +84,12 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 8 occurrences:
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/source_s_addMagsF16.c.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui64.ll
 ; spike/optimized/s_addMagsF16.ll
 ; spike/optimized/s_subMagsF16.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
@@ -97,13 +101,15 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
 entry:
@@ -112,13 +118,11 @@ entry:
   ret i64 %3
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; brotli/optimized/static_dict.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; linux/optimized/compress.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/extents.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mpage.ll
 ; linux/optimized/xarray.ll

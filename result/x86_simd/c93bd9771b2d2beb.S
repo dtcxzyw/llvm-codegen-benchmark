@@ -59,7 +59,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrq	$1, %xmm3, %rdx
 	movabsq	$8589934597, %rax               # imm = 0x200000005

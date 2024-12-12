@@ -26,12 +26,12 @@
 define i64 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; abc/optimized/aigFrames.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/compress.c.ll
@@ -91,6 +91,7 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/samples.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; redis/optimized/hdr_histogram.ll
 ; stb/optimized/stb_image_write.c.ll
 ; stockfish/optimized/position.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
@@ -99,7 +100,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

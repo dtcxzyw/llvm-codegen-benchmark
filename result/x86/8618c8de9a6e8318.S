@@ -1,3 +1,8 @@
+func000000000000003f:                   # @func000000000000003f
+	decl	%edi
+	leaq	(%rdi,%rdi,2), %rax
+	leaq	32(,%rax,8), %rax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	incl	%edi
 	leaq	(%rdi,%rdi,2), %rax
@@ -10,16 +15,11 @@ func0000000000000030:                   # @func0000000000000030
 	movabsq	$20937965568, %rax              # imm = 0x4E0000000
 	addq	%rcx, %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
-	decl	%edi
-	leaq	(%rdi,%rdi,2), %rax
-	leaq	39(,%rax,8), %rax
-	retq
 func000000000000000f:                   # @func000000000000000f
 	decl	%edi
-	leaq	(%rdi,%rdi,2), %rax
-	shlq	$4, %rax
-	addq	$48, %rax
+	movq	%rdi, %rax
+	shlq	$9, %rax
+	leaq	536(%rax,%rdi,8), %rax
 	retq
 func000000000000007d:                   # @func000000000000007d
 	incl	%edi

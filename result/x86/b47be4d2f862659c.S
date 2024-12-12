@@ -26,10 +26,3 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$7, %edx
 	cmovael	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	testb	$1, %sil
-	movl	$1, %eax
-	cmovel	%edi, %eax
-	cmpl	$101, %edx
-	cmovbl	%edi, %eax
-	retq

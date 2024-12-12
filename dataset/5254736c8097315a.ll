@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/cuddGenCof.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:

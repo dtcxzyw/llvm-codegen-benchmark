@@ -18,10 +18,3 @@ func0000000000000004:                   # @func0000000000000004
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	andl	$252, %edx
-	cmpl	$196, %edx
-	setae	%al
-	orl	%esi, %edi
-	orb	%dil, %al
-	retq

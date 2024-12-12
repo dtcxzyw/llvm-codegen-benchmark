@@ -1,10 +1,10 @@
 
 ; 41 occurrences:
+; boost/optimized/area_box_sg.ll
 ; graphviz/optimized/spring_electrical.c.ll
 ; gromacs/optimized/colvar.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
-; openblas/optimized/dtgsna.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/p3p.cpp.ll
@@ -45,8 +45,8 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %3, %0
-  %5 = fmul double %4, %0
+  %4 = fmul double %0, %3
+  %5 = fmul double %0, %4
   ret double %5
 }
 

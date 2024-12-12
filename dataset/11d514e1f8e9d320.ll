@@ -11,7 +11,7 @@
 define i8 @func0000000000000007(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 24
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   %5 = and i8 %1, 32
   %6 = or disjoint i8 %4, %5
   %7 = or disjoint i8 %6, 2
@@ -37,7 +37,7 @@ entry:
 define i8 @func0000000000000005(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 18
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   %5 = and i8 %1, 23
   %6 = or i8 %4, %5
   %7 = or i8 %6, 8
@@ -64,7 +64,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 4
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   %5 = and i8 %1, 64
   %6 = or i8 %4, %5
   %7 = or disjoint i8 %6, 1

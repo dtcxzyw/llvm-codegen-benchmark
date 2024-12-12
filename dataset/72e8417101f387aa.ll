@@ -5,7 +5,7 @@
 define i64 @func0000000000000008(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = shl i64 %4, 2
   %6 = select i1 %0, i64 -1, i64 %5
   ret i64 %6
@@ -18,7 +18,7 @@ entry:
 define i64 @func0000000000000000(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = shl i64 %4, 2
   %6 = select i1 %0, i64 -1, i64 %5
   ret i64 %6
@@ -30,21 +30,23 @@ entry:
 define i64 @func0000000000000002(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = shl nuw i64 %4, 2
   %6 = select i1 %0, i64 -1, i64 %5
   ret i64 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = shl nuw i64 %4, 3
   %6 = select i1 %0, i64 -1, i64 %5
   ret i64 %6
@@ -56,7 +58,7 @@ entry:
 define i64 @func000000000000000c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = shl i64 %4, 4
   %6 = select i1 %0, i64 -1, i64 %5
   ret i64 %6
@@ -71,7 +73,7 @@ entry:
 define i64 @func0000000000000010(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = shl i64 %4, 2
   %6 = select i1 %0, i64 -1, i64 %5
   ret i64 %6
@@ -83,7 +85,7 @@ entry:
 define i64 @func000000000000000e(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = shl nuw i64 %4, 3
   %6 = select i1 %0, i64 -1, i64 %5
   ret i64 %6

@@ -7,29 +7,30 @@
 ; ruby/optimized/bignum.ll
 ; xgboost/optimized/broadcast.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %notmask = shl nsw i32 -1, %1
   %2 = xor i32 %notmask, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; cpython/optimized/floatobject.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; linux/optimized/hdac_device.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1) #0 {
 entry:
   %notmask = shl nsw i32 -1, %1
   %2 = xor i32 %notmask, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -53,11 +54,11 @@ entry:
 ; linux/optimized/mballoc.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000121(i32 %0, i32 %1) #0 {
 entry:
   %notmask = shl nsw i32 -1, %1
   %2 = xor i32 %notmask, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -65,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/celledges.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000012c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 2, %1
   %3 = add nsw i32 %2, -1
@@ -77,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001ec(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 3, %1
   %3 = add nuw nsw i32 %2, 2097151
@@ -86,25 +87,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; cmake/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
-entry:
-  %notmask = shl nsw i32 -1, %1
-  %2 = xor i32 %notmask, -1
-  %3 = and i32 %2, %0
-  %4 = icmp ult i32 %3, 2
-  ret i1 %4
-}
-
 ; 3 occurrences:
 ; hyperscan/optimized/gough.c.ll
 ; hyperscan/optimized/mcclellan.c.ll
 ; hyperscan/optimized/mcsheng.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 16, %1
   %3 = add nuw i32 %2, 65535

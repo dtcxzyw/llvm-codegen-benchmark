@@ -9,7 +9,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI1_0:
 	.quad	2305843009213693951             # 0x1fffffffffffffff
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpaddq	%ymm1, %ymm1, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm1, %k1

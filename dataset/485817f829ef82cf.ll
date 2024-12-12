@@ -1,16 +1,4 @@
 
-; 2 occurrences:
-; freetype/optimized/sfnt.c.ll
-; qemu/optimized/hw_pci_pcie_doe.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 24
-  %3 = sub nuw nsw i32 32, %2
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
 ; 10 occurrences:
 ; git/optimized/sha1.ll
 ; jsonnet/optimized/md5.cpp.ll
@@ -23,11 +11,11 @@ entry:
 ; php/optimized/hash_sha.ll
 ; php/optimized/sha1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = sub nuw nsw i32 64, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -39,11 +27,11 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = sub nuw nsw i32 13, %2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -52,11 +40,11 @@ entry:
 ; redis/optimized/quicklist.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = sub nsw i32 0, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -65,11 +53,11 @@ entry:
 ; opencv/optimized/phasecorr.cpp.ll
 ; wireshark/optimized/print.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = sub nuw nsw i32 8, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -77,11 +65,11 @@ entry:
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = sub nsw i32 1, %2
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 

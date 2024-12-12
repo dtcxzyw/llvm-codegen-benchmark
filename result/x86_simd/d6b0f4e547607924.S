@@ -16,7 +16,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI2_0:
 	.long	2130706432                      # 0x7f000000
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vcvtpd2ps	%zmm0, %ymm0
 	vptestmd	.LCPI2_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

@@ -12,13 +12,12 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; graphviz/optimized/adjust.c.ll
 ; graphviz/optimized/pack.c.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll
-; postgres/optimized/xlogprefetcher.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i1 %1) #0 {
 entry:

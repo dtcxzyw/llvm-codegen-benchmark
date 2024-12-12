@@ -40,3 +40,18 @@ func0000000000000005:                   # @func0000000000000005
 	vpbroadcastq	.LCPI2_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [18446744073709551608,18446744073709551608,18446744073709551608,18446744073709551608]
 	vpand	%ymm1, %ymm0, %ymm0
 	retq
+.LCPI3_0:
+	.quad	12                              # 0xc
+.LCPI3_1:
+	.quad	-64                             # 0xffffffffffffffc0
+.LCPI3_2:
+	.quad	-8                              # 0xfffffffffffffff8
+func000000000000000f:                   # @func000000000000000f
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	vpbroadcastq	.LCPI3_1(%rip), %ymm1   # ymm1 = [18446744073709551552,18446744073709551552,18446744073709551552,18446744073709551552]
+	vpbroadcastq	.LCPI3_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [18446744073709551608,18446744073709551608,18446744073709551608,18446744073709551608]
+	vpand	%ymm1, %ymm0, %ymm0
+	retq

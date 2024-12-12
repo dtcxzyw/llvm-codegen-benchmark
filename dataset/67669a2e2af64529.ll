@@ -10,7 +10,7 @@
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -25,7 +25,7 @@ entry:
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -39,7 +39,7 @@ entry:
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; yosys/optimized/muxpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -53,7 +53,7 @@ entry:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -67,7 +67,7 @@ entry:
 ; ceres/optimized/schur_jacobi_preconditioner.cc.ll
 ; opencv/optimized/hough.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/messagepattern.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 1
@@ -96,7 +96,7 @@ entry:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 5

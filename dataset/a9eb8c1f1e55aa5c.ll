@@ -8,7 +8,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = mul i32 %3, %1
   %5 = icmp ult i32 %4, 65
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

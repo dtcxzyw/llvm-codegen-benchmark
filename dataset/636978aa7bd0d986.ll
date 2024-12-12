@@ -13,13 +13,13 @@
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i8 %1, i8 %2) #0 {
+define ptr @func0000000000000053(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = and i8 %1, 1
-  %5 = icmp ult i8 %4, %3
+  %5 = icmp samesign ult i8 %4, %3
   %6 = select i1 %5, i64 16, i64 24
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

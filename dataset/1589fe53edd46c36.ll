@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.2991474" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3184941" = type { ptr, ptr, ptr, ptr }
 
 ; 31 occurrences:
 ; arrow/optimized/message.cc.ll
@@ -34,24 +34,24 @@
 ; opencv/optimized/tflite_importer.cpp.ll
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i16 %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = zext i16 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/ConstraintElimination.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i16 %1, i64 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.2991474", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3184941", ptr %0, i64 %3
   %5 = zext nneg i16 %1 to i64
-  %6 = getelementptr nusw %"class.llvm::Use.2991474", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3184941", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -79,12 +79,12 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/lbr.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = zext nneg i16 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

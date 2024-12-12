@@ -38,7 +38,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsllvd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	21                              # 0x15
@@ -49,5 +49,5 @@ func0000000000000009:                   # @func0000000000000009
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpbroadcastd	.LCPI4_1(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

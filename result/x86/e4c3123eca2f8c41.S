@@ -18,7 +18,14 @@ func0000000000000006:                   # @func0000000000000006
 	shrl	$31, %esi
 	leal	2147483647(%rsi), %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000018:                   # @func0000000000000018
+	testb	$1, %dil
+	cmovel	%edx, %esi
+	cmpl	$10, %esi
+	movl	$1, %eax
+	sbbl	$-1, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	cmpl	$10, %esi

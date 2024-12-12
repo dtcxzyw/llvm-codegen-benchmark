@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/close_handles.ll
 ; quantlib/optimized/australia.ll
 ; quantlib/optimized/botswana.ll
 ; quantlib/optimized/hongkong.ll
@@ -7,7 +8,7 @@
 ; quantlib/optimized/target.ll
 ; quantlib/optimized/unitedkingdom.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000842(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -3
   %3 = icmp eq i32 %2, %1
@@ -21,7 +22,7 @@ entry:
 ; linux/optimized/balloc.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, 1
   %3 = icmp eq i32 %2, %1

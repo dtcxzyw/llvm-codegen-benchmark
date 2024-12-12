@@ -4,13 +4,13 @@ func0000000000000020:                   # @func0000000000000020
 	movslq	%esi, %rax
 	leaq	-8(%rdi,%rax,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	addl	%edx, %esi
 	sarl	$6, %esi
 	movslq	%esi, %rax
 	leaq	456(%rdi,%rax,8), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002e:                   # @func000000000000002e
 	addl	%edx, %esi
 	sarl	%esi
 	movslq	%esi, %rax

@@ -22,12 +22,12 @@ entry:
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a1(ptr %0, i8 %1) #0 {
+define ptr @func00000000000001e1(ptr %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = icmp eq i8 %2, 34
   %.v = select i1 %3, i64 2, i64 1
-  %4 = getelementptr nusw i8, ptr %0, i64 %.v
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %.v
   ret ptr %4
 }
 

@@ -26,11 +26,10 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
-; php/optimized/dow.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -38,6 +37,18 @@ entry:
   %4 = mul nsw i64 %3, 24
   %5 = add nsw i64 %0, -24
   %6 = add nsw i64 %5, %4
+  ret i64 %6
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = mul i64 %3, 10
+  %5 = add nsw i64 %0, -480
+  %6 = add i64 %5, %4
   ret i64 %6
 }
 

@@ -4,11 +4,11 @@
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = tail call noundef i32 @llvm.abs.i32(i32 %2, i1 true)
-  %4 = icmp ult i32 %3, 4
+  %4 = icmp samesign ult i32 %3, 4
   ret i1 %4
 }
 
@@ -34,22 +34,22 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; zxing/optimized/PDFReader.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000b8(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
-  %4 = icmp ugt i32 %3, 15
+  %4 = icmp samesign ugt i32 %3, 15
   ret i1 %4
 }
 
 ; 23 occurrences:
-; abc/optimized/wlcSim.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/snapshots.c.ll
 ; freetype/optimized/sdf.c.ll
 ; gromacs/optimized/dssp.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; opencv/optimized/bound_min.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
@@ -67,11 +67,11 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000b4(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = call i32 @llvm.abs.i32(i32 %2, i1 true)
-  %4 = icmp ult i32 %3, 40
+  %4 = icmp samesign ult i32 %3, 40
   ret i1 %4
 }
 
@@ -82,11 +82,11 @@ entry:
 ; stockfish/optimized/evaluate.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
-  %4 = icmp ugt i32 %3, 1050
+  %4 = icmp samesign ugt i32 %3, 1050
   ret i1 %4
 }
 
@@ -99,7 +99,7 @@ entry:
 ; openspiel/optimized/chess_board.cc.ll
 ; openspiel/optimized/rbc.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = call i32 @llvm.abs.i32(i32 %2, i1 true)
@@ -156,7 +156,7 @@ entry:
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/slamch.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)

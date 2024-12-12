@@ -1,7 +1,7 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
-	testl	%esi, %eax
+	testl	%eax, %esi
 	sete	%cl
 	negl	%edi
 	setno	%al

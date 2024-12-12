@@ -1,4 +1,18 @@
 
+; 4 occurrences:
+; boost/optimized/to_chars.ll
+; icu/optimized/normalizer2impl.ll
+; sqlite/optimized/sqlite3.ll
+; wolfssl/optimized/internal.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000004(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = sub nsw i32 %0, %2
+  %4 = trunc i32 %3 to i8
+  ret i8 %4
+}
+
 ; 2 occurrences:
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
@@ -18,19 +32,6 @@ define i8 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub i32 %0, %2
-  %4 = trunc i32 %3 to i8
-  ret i8 %4
-}
-
-; 3 occurrences:
-; icu/optimized/normalizer2impl.ll
-; sqlite/optimized/sqlite3.ll
-; wolfssl/optimized/internal.c.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000004(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i32
-  %3 = sub nsw i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }

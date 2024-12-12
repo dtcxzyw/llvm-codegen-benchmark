@@ -19,8 +19,10 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; abc/optimized/darLib.c.ll
+; abc/optimized/ifDec08.c.ll
+; abc/optimized/ifDec10.c.ll
 ; libquic/optimized/deflate.c.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/drm_ioctl.ll

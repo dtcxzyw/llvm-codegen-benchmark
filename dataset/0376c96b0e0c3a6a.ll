@@ -9,7 +9,7 @@
 define i32 @func000000000000000d(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add nsw i32 %3, -1
   ret i32 %4
 }
@@ -22,7 +22,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = add i32 %3, 1
   ret i32 %4
 }
@@ -110,12 +110,12 @@ entry:
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add nsw i32 %3, -16
   ret i32 %4
 }
 
-; 66 occurrences:
+; 68 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; flac/optimized/operations.c.ll
@@ -136,7 +136,6 @@ entry:
 ; lief/optimized/ssl_tls12_client.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/mpicoder.ll
-; linux/optimized/scsicam.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -166,13 +165,13 @@ entry:
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/pcre2_compile.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/hyperloglog.ll
 ; redis/optimized/listpack.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
+; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-ssh.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
@@ -182,11 +181,14 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add nuw nsw i32 %3, 13
   ret i32 %4
 }
@@ -229,7 +231,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add i32 %3, 1640531527
   ret i32 %4
 }
@@ -241,7 +243,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = add nsw i32 %3, -32
   ret i32 %4
 }
@@ -256,7 +258,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add i32 %3, 2
   ret i32 %4
 }
@@ -267,7 +269,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add nuw nsw i32 %3, 8
   ret i32 %4
 }
@@ -278,7 +280,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add nuw i32 %3, 1
   ret i32 %4
 }

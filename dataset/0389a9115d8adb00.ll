@@ -1,5 +1,7 @@
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -12,7 +14,7 @@ define i1 @func0000000000000018(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %1, %2
   %4 = icmp ne i16 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

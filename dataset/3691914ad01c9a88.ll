@@ -1,5 +1,5 @@
 
-; 230 occurrences:
+; 233 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/decompress.c.ll
@@ -96,7 +96,6 @@
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/libps2.ll
 ; linux/optimized/mac.ll
-; linux/optimized/rsmisc.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -118,6 +117,10 @@
 ; llvm/optimized/UpdateCompilerUsed.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; meshlab/optimized/mutual.cpp.ll

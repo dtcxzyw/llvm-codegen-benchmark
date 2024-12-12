@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 69 occurrences:
 ; ceres/optimized/block_structure.cc.ll
 ; ceres/optimized/schur_jacobi_preconditioner.cc.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
@@ -10,7 +10,6 @@
 ; git/optimized/read-cache.ll
 ; icu/optimized/package.ll
 ; icu/optimized/ucbuf.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/acpi_video.ll
 ; linux/optimized/coredump.ll
 ; linux/optimized/decompress_unlzma.ll
@@ -52,13 +51,24 @@
 ; postgres/optimized/snapbuild.ll
 ; qemu/optimized/block_qcow2-cache.c.ll
 ; qemu/optimized/hw_usb_dev-storage.c.ll
-; qemu/optimized/util_filemonitor-inotify.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/prism.ll
 ; ruby/optimized/rjit_c.ll
 ; ruby/optimized/vm.ll
 ; velox/optimized/SimdUtil.cpp.ll
 ; wireshark/optimized/packet-http.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
@@ -68,7 +78,7 @@ entry:
   ret i64 %4
 }
 
-; 72 occurrences:
+; 73 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaResub2.c.ll
@@ -79,6 +89,8 @@ entry:
 ; abc/optimized/wlnRead.c.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/grouper.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/console_buffer.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
@@ -108,7 +120,6 @@ entry:
 ; git/optimized/object-name.ll
 ; git/optimized/path.ll
 ; git/optimized/tree-walk.ll
-; git/optimized/worktree.ll
 ; gromacs/optimized/listed_forces.cpp.ll
 ; gromacs/optimized/topio.cpp.ll
 ; icu/optimized/package.ll
@@ -187,7 +198,7 @@ entry:
   ret i64 %4
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/bacWriteVer.c.ll
@@ -225,7 +236,6 @@ entry:
 ; openjdk/optimized/parse2.ll
 ; openjdk/optimized/replacednodes.ll
 ; openmpi/optimized/coll_han_topo.ll
-; openmpi/optimized/libmpi_c_profile_la-startall.ll
 ; openspiel/optimized/laser_tag_test.cc.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; php/optimized/zend_alloc.ll

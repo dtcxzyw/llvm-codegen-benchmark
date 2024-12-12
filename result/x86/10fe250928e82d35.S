@@ -1,6 +1,6 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andl	$32767, %esi                    # imm = 0x7FFF
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%cl
 	testl	%edi, %edi
 	setne	%al

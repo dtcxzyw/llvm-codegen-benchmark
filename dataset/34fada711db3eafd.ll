@@ -8,7 +8,7 @@
 ; ruby/optimized/ripper.ll
 ; verilator/optimized/V3ParseGrammar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = trunc nsw i64 %0 to i32
@@ -21,7 +21,7 @@ entry:
 ; abc/optimized/ivyCut.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32

@@ -8,7 +8,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 2
   %4 = udiv i32 %3, 10
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

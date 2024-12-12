@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_lens.cc.ll
+; icu/optimized/number_decimalquantity.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i1 %1, i32 %2) #0 {

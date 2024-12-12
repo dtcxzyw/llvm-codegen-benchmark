@@ -24,10 +24,9 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; linux/optimized/buffer.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/shrinker.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; opencv/optimized/rand.cpp.ll
@@ -43,12 +42,10 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; linux/optimized/acpi-cpufreq.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/hda_intel.ll

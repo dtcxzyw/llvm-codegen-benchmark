@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; linux/optimized/rc80211_minstrel_ht.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openjdk/optimized/Ushort4444Argb.ll
 ; openjdk/optimized/Ushort565Rgb.ll

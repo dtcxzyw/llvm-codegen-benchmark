@@ -1,6 +1,5 @@
 
-; 12 occurrences:
-; icu/optimized/uresdata.ll
+; 10 occurrences:
 ; lightgbm/optimized/gbdt_prediction.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
@@ -10,7 +9,6 @@
 ; openssl/optimized/libssl-shlib-quic_reactor.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-btrfcomm.c.ll
-; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i8 %1) #0 {
@@ -36,18 +34,7 @@ define i1 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp eq i8 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-epl.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 32
-  %3 = icmp ne i8 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

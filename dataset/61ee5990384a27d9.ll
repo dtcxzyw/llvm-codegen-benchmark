@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/slice.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -32
   %3 = select i1 %0, i8 %2, i8 %1
@@ -13,32 +13,33 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/slice.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000038(i1 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -32
   %3 = select i1 %0, i8 %2, i8 %1
-  %4 = icmp ugt i8 %3, 57
+  %4 = icmp samesign ugt i8 %3, 57
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; rocksdb/optimized/slice.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000034(i1 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -32
   %3 = select i1 %0, i8 %2, i8 %1
-  %4 = icmp ult i8 %3, 58
+  %4 = icmp samesign ult i8 %3, 58
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/scheme.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; luau/optimized/isocline.c.ll
 ; openjdk/optimized/hb-common.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 32
   %3 = select i1 %0, i8 %2, i8 %1
@@ -46,7 +47,7 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -54,8 +55,9 @@ entry:
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; openblas/optimized/dgemmt.c.ll
 ; wireshark/optimized/packet-megaco.c.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -32
   %3 = select i1 %0, i8 %2, i8 %1
@@ -68,7 +70,7 @@ entry:
 ; openblas/optimized/dgemmt.c.ll
 ; openblas/optimized/dimatcopy.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -32
   %3 = select i1 %0, i8 %2, i8 %1

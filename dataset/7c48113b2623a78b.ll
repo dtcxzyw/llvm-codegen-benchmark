@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
   %4 = or disjoint i32 %3, %1
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/stackdepot.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 27
   %4 = or disjoint i32 %3, %1

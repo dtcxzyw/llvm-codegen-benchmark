@@ -1,10 +1,11 @@
 
-; 275 occurrences:
+; 276 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
 ; abseil-cpp/optimized/node_hash_set_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cvc5/optimized/term_formula_removal.cpp.ll
 ; folly/optimized/TimeoutQueue.cpp.ll
 ; freetype/optimized/truetype.c.ll
@@ -279,7 +280,7 @@
 define i1 @func0000000000000001(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
   ret i1 %4
 }
 
@@ -289,7 +290,7 @@ entry:
 define i1 @func0000000000000005(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = icmp uge ptr %3, %0
+  %4 = icmp ule ptr %0, %3
   ret i1 %4
 }
 
@@ -302,11 +303,13 @@ entry:
 define i1 @func0000000000000008(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = icmp ult ptr %3, %0
+  %4 = icmp ugt ptr %0, %3
   ret i1 %4
 }
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/truetype.c.ll
 ; git/optimized/kwset.ll
@@ -409,7 +412,7 @@ entry:
 define i1 @func000000000000000c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = icmp ne ptr %3, %0
+  %4 = icmp ne ptr %0, %3
   ret i1 %4
 }
 

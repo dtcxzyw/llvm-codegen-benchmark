@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; darktable/optimized/image.c.ll
 ; gromacs/optimized/tune_pme.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -12,7 +12,6 @@
 ; openspiel/optimized/goofspiel.cc.ll
 ; openssl/optimized/libdefault-lib-rsa_kmgmt.ll
 ; postgres/optimized/execSRF.ll
-; proj/optimized/projsync.cpp.ll
 ; z3/optimized/old_interval.cpp.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind

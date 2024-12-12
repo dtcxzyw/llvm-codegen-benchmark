@@ -17,11 +17,11 @@ define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 668265295
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/AssumeBundleBuilder.cpp.ll
@@ -34,6 +34,7 @@ entry:
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/MIRFSDiscriminator.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; llvm/optimized/VTTBuilder.cpp.ll
@@ -46,17 +47,19 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 3066638151
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; linux/optimized/vsprintf.ll
+; llvm/optimized/APINotesWriter.cpp.ll
+; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nsw i64 %1, 4294967040
-  %3 = and i64 %2, 4294967040
+  %2 = mul nsw i64 %1, 1512728442
+  %3 = and i64 %2, 4294967294
   %4 = or disjoint i64 %3, %0
   ret i64 %4
 }

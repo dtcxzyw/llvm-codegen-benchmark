@@ -1,9 +1,8 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/GuardPageAllocator.cpp.ll
 ; folly/optimized/HeapTimekeeper.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -18,7 +17,7 @@ entry:
   %3 = lshr i64 %2, 47
   %4 = xor i64 %3, %2
   %5 = mul i64 %4, -7070675565921424023
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

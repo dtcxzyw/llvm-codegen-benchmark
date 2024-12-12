@@ -28,15 +28,13 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
-; qemu/optimized/source_s_shiftRightJam32.c.ll
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_shiftRightJam32.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:

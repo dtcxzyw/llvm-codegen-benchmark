@@ -17,11 +17,11 @@
 ; openjdk/optimized/Ushort565Rgb.ll
 ; openjdk/optimized/UshortGray.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000009(i64 %0, ptr %1) #0 {
+define ptr @func000000000000000d(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5
 }
@@ -34,23 +34,24 @@ define ptr @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -2
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; clamav/optimized/hash.cpp.ll
 ; linux/optimized/jump_label.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openmpi/optimized/btl_self.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; openmpi/optimized/osc_rdma_dynamic.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, ptr %1) #0 {
+define ptr @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 2304
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 2304
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5
 }

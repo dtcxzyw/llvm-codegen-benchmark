@@ -4,7 +4,7 @@
 ; rocksdb/optimized/memtable.cc.ll
 ; rocksdb/optimized/statistics.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nuw i64 %0, 1
@@ -24,7 +24,7 @@ entry:
 ; redis/optimized/ckh.sym.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add i64 %0, 1

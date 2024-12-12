@@ -1,9 +1,13 @@
 
-; 102 occurrences:
+; 105 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/src.ll
 ; c3c/optimized/bigint.c.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; cmake/optimized/content_stream.cpp.ll
@@ -96,7 +100,6 @@
 ; ruby/optimized/memory_view.ll
 ; ruby/optimized/util.ll
 ; sentencepiece/optimized/strutil.cc.ll
-; spdlog/optimized/spdlog.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
@@ -106,7 +109,7 @@
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
@@ -317,7 +320,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 

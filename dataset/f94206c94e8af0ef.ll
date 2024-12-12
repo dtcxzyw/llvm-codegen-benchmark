@@ -6,7 +6,7 @@
 ; openjdk/optimized/vectornode.ll
 ; wireshark/optimized/packet-gtp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000042(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp eq i8 %0, 10
@@ -20,7 +20,7 @@ entry:
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000094(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000114(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 63
   %3 = icmp sgt i8 %0, -1
@@ -34,7 +34,7 @@ entry:
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000008c(i8 %0, i8 %1) #0 {
+define i32 @func000000000000010c(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 63
   %3 = icmp slt i8 %0, -3

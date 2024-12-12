@@ -12,10 +12,11 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; php/optimized/zend_strtod.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind

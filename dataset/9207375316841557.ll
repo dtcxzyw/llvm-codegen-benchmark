@@ -9,7 +9,7 @@
 ; wireshark/optimized/packet-cigi.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 3
   %3 = zext nneg i8 %2 to i64

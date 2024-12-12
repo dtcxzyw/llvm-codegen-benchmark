@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
 ; openssl/optimized/gmdifftest-bin-gmdifftest.ll
 ; postgres/optimized/xloginsert.ll
 ; Function Attrs: nounwind

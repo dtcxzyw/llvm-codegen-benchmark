@@ -9,7 +9,7 @@
 	.short	2115                            # 0x843
 func000000000000001e:                   # @func000000000000001e
 	vpslld	$8, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm1    # [2115,2115,2115,2115,2115,2115,2115,2115]
 	vpsubw	%xmm1, %xmm0, %xmm2

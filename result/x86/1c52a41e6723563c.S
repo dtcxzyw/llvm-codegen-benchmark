@@ -8,11 +8,6 @@ func0000000000000007:                   # @func0000000000000007
 	andb	$-8, %dil
 	leal	(%rdi,%rsi), %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	andb	$3, %sil
-	andb	$-16, %dil
-	leal	(%rdi,%rsi), %eax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	andb	$7, %sil
 	andb	$56, %dil

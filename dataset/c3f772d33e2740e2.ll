@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; libpng/optimized/pngset.c.ll
 ; linux/optimized/trace_output.ll
 ; linux/optimized/trace_probe.ll
+; llvm/optimized/NestedNameSpecifier.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
 ; openjdk/optimized/pngset.ll
@@ -16,7 +17,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -31,7 +32,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

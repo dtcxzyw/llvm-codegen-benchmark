@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpb	$2, %dil
 	cmovael	%ecx, %eax
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	leal	-4(,%rsi,4), %ecx
 	xorl	%eax, %eax
 	testb	%dil, %dil

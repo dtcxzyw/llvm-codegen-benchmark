@@ -1,5 +1,5 @@
 
-; 113 occurrences:
+; 119 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -22,6 +22,7 @@
 ; icu/optimized/messagepattern.ll
 ; icu/optimized/rbnf.ll
 ; icu/optimized/servlk.ll
+; icu/optimized/smpdtfmt.ll
 ; icu/optimized/translit.ll
 ; icu/optimized/ucase.ll
 ; icu/optimized/uchar.ll
@@ -92,6 +93,7 @@
 ; postgres/optimized/amutils.ll
 ; postgres/optimized/lsyscache.ll
 ; postgres/optimized/parse_clause.ll
+; postgres/optimized/trigger.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/hw_net_net_rx_pkt.c.ll
@@ -113,6 +115,10 @@
 ; verilator/optimized/V3PreProc.cpp.ll
 ; verilator/optimized/V3SchedTiming.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i16 %0) #0 {
 entry:
@@ -121,7 +127,7 @@ entry:
   ret i8 %2
 }
 
-; 72 occurrences:
+; 71 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_boolean.cc.ll
@@ -158,9 +164,7 @@ entry:
 ; icu/optimized/ucmstate.ll
 ; icu/optimized/ustrcase.ll
 ; linux/optimized/airtime.ll
-; linux/optimized/intel_dp_aux_backlight.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/virtio_console.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CheckExprLifetime.cpp.ll
@@ -187,6 +191,7 @@ entry:
 ; qemu/optimized/hw_char_virtio-serial-bus.c.ll
 ; qemu/optimized/hw_usb_dev-storage.c.ll
 ; qemu/optimized/net_eth.c.ll
+; slurm/optimized/conmgr.ll
 ; slurm/optimized/data_parser_v0_0_41_la-openapi.ll
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/preempt_partition_prio.ll
@@ -202,14 +207,12 @@ entry:
   ret i8 %2
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_fbc.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/rc80211_minstrel_ht.ll
 ; llvm/optimized/DWARFVerifier.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i16 %0) #0 {
 entry:
@@ -218,9 +221,10 @@ entry:
   ret i8 %2
 }
 
-; 20 occurrences:
+; 22 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; double_conversion/optimized/string-to-double.cc.ll
+; icu/optimized/collationbuilder.ll
 ; icu/optimized/double-conversion-string-to-double.ll
 ; icu/optimized/normalizer2.ll
 ; icu/optimized/punycode.ll
@@ -229,6 +233,7 @@ entry:
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/ODRHash.cpp.ll
+; llvm/optimized/PtrState.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
@@ -255,6 +260,17 @@ entry:
 define i8 @func0000000000000014(i16 %0) #0 {
 entry:
   %1 = icmp sgt i16 %0, -1
+  %2 = zext i1 %1 to i8
+  ret i8 %2
+}
+
+; 2 occurrences:
+; linux/optimized/rc80211_minstrel_ht.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000030(i16 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i16 %0, 16383
   %2 = zext i1 %1 to i8
   ret i8 %2
 }

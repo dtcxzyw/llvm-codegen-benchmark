@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
-; linux/optimized/intel_audio.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/dt_common.ll
 ; Function Attrs: nounwind
@@ -10,7 +9,7 @@ entry:
   %2 = add i32 %1, 65534
   %3 = udiv i32 %2, 65535
   %4 = mul nuw nsw i32 %3, 40
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -27,7 +26,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; quantlib/optimized/date.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
@@ -36,7 +37,7 @@ entry:
   %2 = add i32 %1, 2
   %3 = udiv i32 %2, 1530
   %4 = mul i32 %3, 65524
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -49,7 +50,7 @@ entry:
   %2 = add i32 %.fr1, 11
   %3 = urem i32 %2, 12
   %4 = sub i32 %3, %2
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 335 occurrences:
+; 362 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/dauGia.c.ll
@@ -18,6 +18,30 @@
 ; abc/optimized/wlnRead.c.ll
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; c3c/optimized/sema_decls.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/readdb.c.ll
@@ -47,6 +71,7 @@
 ; fmt/optimized/os.cc.ll
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
+; git/optimized/wildmatch.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; hermes/optimized/zip.c.ll
@@ -59,6 +84,7 @@
 ; icu/optimized/smpdtfmt.ll
 ; icu/optimized/ucnv_err.ll
 ; icu/optimized/ucnvscsu.ll
+; icu/optimized/uresdata.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libevent/optimized/evutil.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -134,13 +160,9 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/addrconf.ll
-; linux/optimized/af_packet.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/ip_tunnel_core.ll
-; linux/optimized/nsproxy.ll
 ; linux/optimized/open.ll
-; linux/optimized/pagewalk.ll
-; linux/optimized/raw.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/xhci-mem.ll
 ; linux/optimized/yenta_socket.ll
@@ -182,6 +204,10 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -333,6 +359,7 @@
 ; z3/optimized/arith_internalize.cpp.ll
 ; z3/optimized/theory_array_base.cpp.ll
 ; z3/optimized/theory_array_full.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -340,15 +367,16 @@ define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = icmp eq i32 %3, 27
-  %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %5 = or i1 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 112 occurrences:
+; 111 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/nwkFlow.c.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
@@ -372,7 +400,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; git/optimized/dir.ll
 ; git/optimized/pretty.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; grpc/optimized/ev_epoll1_linux.cc.ll
@@ -387,7 +414,6 @@ entry:
 ; linux/optimized/io_uring.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/open.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/rw.ll
 ; linux/optimized/slab_common.ll
@@ -464,20 +490,7 @@ entry:
   %3 = and i32 %2, -8388608
   %4 = icmp ne i32 %3, 67108864
   %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; clamav/optimized/upx.c.ll
-; luau/optimized/isocline.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000020(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 64512
-  %4 = icmp ugt i32 %3, 49920
-  %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

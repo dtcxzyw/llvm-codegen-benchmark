@@ -1,8 +1,10 @@
 
-; 86 occurrences:
+; 87 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/sundials_sptfqmr.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -78,7 +80,6 @@
 ; proj/optimized/nsper.cpp.ll
 ; proj/optimized/proj_mdist.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
-; proj/optimized/wag7.cpp.ll
 ; quantlib/optimized/cashflows.ll
 ; quantlib/optimized/conundrumpricer.ll
 ; quantlib/optimized/coshestonengine.ll

@@ -1,5 +1,5 @@
 
-; 179 occurrences:
+; 180 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -18,6 +18,7 @@
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; oiio/optimized/texture3d.cpp.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; spike/optimized/vaadd_vv.ll

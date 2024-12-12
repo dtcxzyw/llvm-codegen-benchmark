@@ -18,3 +18,9 @@ func0000000000000006:                   // @func0000000000000006
 	orr	x0, x0, x8, lsl #8
 	ret
                                         // -- End function
+func0000000000000005:                   // @func0000000000000005
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	orr	x0, x0, x1, lsl #56
+	ret
+                                        // -- End function

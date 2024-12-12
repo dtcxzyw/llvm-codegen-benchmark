@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; cmake/optimized/byte_order.c.ll
@@ -9,7 +9,6 @@
 ; gromacs/optimized/fft_fftw3.cpp.ll
 ; gromacs/optimized/muParserBytecode.cpp.ll
 ; linux/optimized/drm_cache.ll
-; linux/optimized/i915_memcpy.ll
 ; linux/optimized/if.ll
 ; linux/optimized/lskcipher.ll
 ; miniaudio/optimized/unity.c.ll

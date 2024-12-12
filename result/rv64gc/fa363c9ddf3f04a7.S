@@ -1,15 +1,4 @@
-func0000000000003118:                   # @func0000000000003118
-	lui	a3, 16
-	xori	a2, a2, 768
-	addiw	a3, a3, -1
-	or	a0, a0, a2
-	and	a1, a1, a3
-	and	a0, a0, a3
-	sltiu	a1, a1, 768
-	snez	a0, a0
-	or	a0, a0, a1
-	ret
-func0000000000002050:                   # @func0000000000002050
+func0000000000008090:                   # @func0000000000008090
 	lui	a3, 16
 	lui	a4, 1
 	addiw	a3, a3, -1
@@ -24,7 +13,7 @@ func0000000000002050:                   # @func0000000000002050
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000003042:                   # @func0000000000003042
+func000000000000c082:                   # @func000000000000c082
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a0, a0, a3
@@ -38,7 +27,20 @@ func0000000000003042:                   # @func0000000000003042
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000502:                   # @func0000000000000502
+func0000000000004202:                   # @func0000000000004202
+	lui	a3, 16
+	addiw	a3, a3, -1
+	and	a0, a0, a3
+	and	a1, a1, a3
+	and	a2, a2, a3
+	sltiu	a2, a2, 26
+	sltiu	a1, a1, 10
+	addi	a0, a0, -95
+	or	a1, a1, a2
+	seqz	a0, a0
+	or	a0, a0, a1
+	ret
+func0000000000001202:                   # @func0000000000001202
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a0, a0, a3
@@ -52,7 +54,7 @@ func0000000000000502:                   # @func0000000000000502
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000001108:                   # @func0000000000001108
+func0000000000004208:                   # @func0000000000004208
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a0, a0, a3
@@ -64,7 +66,7 @@ func0000000000001108:                   # @func0000000000001108
 	sltiu	a0, a0, 32
 	or	a0, a0, a1
 	ret
-func0000000000001110:                   # @func0000000000001110
+func0000000000004210:                   # @func0000000000004210
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a0, a0, a3
@@ -76,7 +78,7 @@ func0000000000001110:                   # @func0000000000001110
 	sltiu	a0, a0, 21
 	or	a0, a0, a1
 	ret
-func0000000000001042:                   # @func0000000000001042
+func0000000000004082:                   # @func0000000000004082
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a0, a0, a3
@@ -93,4 +95,19 @@ func0000000000001042:                   # @func0000000000001042
 	seqz	a0, a0
 	or	a0, a0, a1
 	or	a0, a0, a2
+	ret
+func0000000000004088:                   # @func0000000000004088
+	lui	a3, 16
+	addiw	a3, a3, -1
+	and	a0, a0, a3
+	and	a1, a1, a3
+	and	a2, a2, a3
+	lui	a3, 2
+	addiw	a3, a3, 12
+	sltiu	a2, a2, 5
+	xor	a1, a1, a3
+	sltiu	a0, a0, 4
+	seqz	a1, a1
+	or	a0, a0, a2
+	or	a0, a0, a1
 	ret

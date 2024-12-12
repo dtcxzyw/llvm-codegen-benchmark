@@ -11,8 +11,9 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/dauMerge.c.ll
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/mpdecimal.ll
 ; git/optimized/sequencer.ll
 ; git/optimized/string-list.ll
@@ -93,7 +94,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = shl i64 %3, 6
   ret i64 %4
 }
@@ -162,12 +163,12 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = shl i64 %3, 3
   ret i64 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cpython/optimized/listobject.ll
@@ -180,6 +181,7 @@ entry:
 ; openblas/optimized/dgemm_beta.c.ll
 ; openblas/optimized/sgemm_beta.c.ll
 ; quantlib/optimized/svd.ll
+; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -245,7 +247,9 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
@@ -347,7 +351,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = shl i64 %3, 32
   ret i64 %4
 }

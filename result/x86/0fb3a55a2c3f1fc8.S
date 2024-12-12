@@ -1,6 +1,6 @@
-func00000000000000dc:                   # @func00000000000000dc
+func000000000000019c:                   # @func000000000000019c
 	movzwl	%si, %ecx
 	leal	1(%rsi), %eax
-	cmpl	%edi, %ecx
-	cmovgel	%edi, %eax
+	cmpl	%ecx, %edi
+	cmovlel	%edi, %eax
 	retq

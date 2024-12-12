@@ -7,7 +7,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, 5
   %5 = mul nuw i64 %4, %3
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   ret i64 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = lshr i64 %1, 32
   %5 = mul nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -109,7 +109,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = lshr i64 %1, 32
   %5 = mul nuw i64 %4, %3
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   ret i64 %6
 }
 
@@ -127,7 +127,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, 3
   %5 = mul nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -143,19 +143,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = lshr i64 %1, 4
   %5 = mul i64 %4, %3
-  %6 = add i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; openusd/optimized/avif.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = lshr exact i64 %1, 32
-  %5 = mul nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

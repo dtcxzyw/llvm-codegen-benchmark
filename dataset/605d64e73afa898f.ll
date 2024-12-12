@@ -7,7 +7,7 @@
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000406(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 2

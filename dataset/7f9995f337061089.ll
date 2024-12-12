@@ -1,22 +1,16 @@
 
-%class.btVector3.2706490 = type { [4 x float] }
-
-; 20 occurrences:
+; 16 occurrences:
 ; abc/optimized/trees.c.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
-; box2d/optimized/b2_collide_circle.cpp.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
-; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; cmake/optimized/trees.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; git/optimized/xpatience.ll
 ; gromacs/optimized/trees.c.ll
 ; libquic/optimized/trees.c.ll
-; openblas/optimized/dlarrv.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; openmpi/optimized/odls_base_default_fns.ll
-; openusd/optimized/blendShapeQuery.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; slurm/optimized/port_mgr.ll
@@ -28,7 +22,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = getelementptr nusw %class.btVector3.2706490, ptr %0, i64 %5
+  %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

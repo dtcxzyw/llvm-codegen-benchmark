@@ -16,14 +16,14 @@ func0000000000000030:                   # @func0000000000000030
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
-.LCPI3_0:
-	.long	10                              # 0xa
-func0000000000000000:                   # @func0000000000000000
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
-	retq
 func0000000000000040:                   # @func0000000000000040
 	vpaddd	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI4_0:
+	.long	12                              # 0xc
+func0000000000000000:                   # @func0000000000000000
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.long	16                              # 0x10

@@ -45,8 +45,8 @@ func0000000000000018:                   # @func0000000000000018
 func000000000000001a:                   # @func000000000000001a
 	addl	%edx, %esi
 	leal	63(%rdi,%rsi), %eax
-	movl	%esi, %ecx
-	addl	%edi, %ecx
+	movl	%edi, %ecx
+	addl	%esi, %ecx
 	cmovnsl	%ecx, %eax
 	sarl	$6, %eax
 	retq

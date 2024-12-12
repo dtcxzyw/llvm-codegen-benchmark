@@ -8,7 +8,7 @@ func000000000000018c:                   # @func000000000000018c
 	addl	%eax, %ecx
 	imull	$400, %ecx, %eax                # imm = 0x190
 	retq
-func000000000000010c:                   # @func000000000000010c
+func000000000000050c:                   # @func000000000000050c
 	movl	%edi, %eax
 	imulq	$963315389, %rax, %rax          # imm = 0x396B06BD
 	shrq	$47, %rax
@@ -16,7 +16,7 @@ func000000000000010c:                   # @func000000000000010c
 	adcl	$0, %eax
 	imull	$146097, %eax, %eax             # imm = 0x23AB1
 	retq
-func000000000000010d:                   # @func000000000000010d
+func000000000000050d:                   # @func000000000000050d
 	movl	%edi, %eax
 	imulq	$963315389, %rax, %rax          # imm = 0x396B06BD
 	shrq	$47, %rax

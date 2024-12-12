@@ -48,8 +48,3 @@ func0000000000000030:                   # @func0000000000000030
 	slli	a0, a0, 33
 	vmadd.vx	v8, a0, v10
 	ret
-func000000000000003d:                   # @func000000000000003d
-	li	a0, 65
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
-	ret

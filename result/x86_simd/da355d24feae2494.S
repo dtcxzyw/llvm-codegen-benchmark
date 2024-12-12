@@ -18,7 +18,7 @@
 	.zero	2
 .LCPI0_2:
 	.quad	-20                             # 0xffffffffffffffec
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpaddw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpcmpltuw	.LCPI0_1(%rip), %xmm1, %k1
 	vpaddq	.LCPI0_2(%rip){1to4}, %ymm0, %ymm0 {%k1} {z}
@@ -46,7 +46,7 @@ func0000000000000054:                   # @func0000000000000054
 .LCPI1_3:
 	.short	65532                           # 0xfffc
 	.short	65532                           # 0xfffc
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqw	.LCPI1_1(%rip), %xmm1, %k1
 	vpaddq	.LCPI1_2(%rip){1to4}, %ymm0, %ymm0 {%k1} {z}

@@ -1,4 +1,4 @@
-func0000000000000344:                   # @func0000000000000344
+func0000000000000e94:                   # @func0000000000000e94
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setb	%cl
@@ -6,15 +6,7 @@ func0000000000000344:                   # @func0000000000000344
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000219:                   # @func0000000000000219
-	incq	%rdx
-	cmpq	%rdi, %rdx
-	setae	%cl
-	cmpq	%rsi, %rdx
-	sete	%al
-	orb	%cl, %al
-	retq
-func0000000000000384:                   # @func0000000000000384
+func0000000000000d14:                   # @func0000000000000d14
 	addq	$3, %rdx
 	cmpq	%rdi, %rdx
 	setb	%cl
@@ -22,7 +14,7 @@ func0000000000000384:                   # @func0000000000000384
 	seta	%al
 	orb	%cl, %al
 	retq
-func00000000000001a7:                   # @func00000000000001a7
+func0000000000000547:                   # @func0000000000000547
 	addq	$86400, %rdx                    # imm = 0x15180
 	cmpq	%rdi, %rdx
 	setle	%cl
@@ -30,7 +22,7 @@ func00000000000001a7:                   # @func00000000000001a7
 	setg	%al
 	orb	%cl, %al
 	retq
-func000000000000031b:                   # @func000000000000031b
+func0000000000000c2b:                   # @func0000000000000c2b
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setge	%cl

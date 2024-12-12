@@ -18,7 +18,7 @@
 ; duckdb/optimized/ub_duckdb_optimizer_rules.cpp.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 12
   %4 = select i1 %3, ptr %0, ptr %1
@@ -26,7 +26,7 @@ entry:
   ret i1 %5
 }
 
-; 173 occurrences:
+; 168 occurrences:
 ; abc/optimized/abcSweep.c.ll
 ; abc/optimized/mpmMap.c.ll
 ; abseil-cpp/optimized/atomic_hook_test.cc.ll
@@ -155,10 +155,7 @@ entry:
 ; git/optimized/parse-options.ll
 ; glog/optimized/logging_unittest.cc.ll
 ; hwloc/optimized/bind.ll
-; icu/optimized/normalizer2.ll
-; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ustrcase.ll
-; icu/optimized/uts46.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; libevent/optimized/evthread.c.ll
 ; libquic/optimized/ssl_cipher.c.ll
@@ -169,6 +166,7 @@ entry:
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/Subtyping.cpp.ll
+; lvgl/optimized/lv_demos.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; nlohmann_json/optimized/unit-bson.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
@@ -181,11 +179,8 @@ entry:
 ; openjdk/optimized/nmethod.ll
 ; openmpi/optimized/state.ll
 ; openmpi/optimized/state_base_fns.ll
-; openssl/optimized/libssl-lib-quic_record_util.ll
-; openssl/optimized/libssl-shlib-quic_record_util.ll
 ; openssl/optimized/openssl-bin-pkcs12.ll
 ; openssl/optimized/openssl-bin-rehash.ll
-; openssl/optimized/ssl_handshake_rtt_test-bin-ssl_handshake_rtt_test.ll
 ; openusd/optimized/primIndex.cpp.ll
 ; php/optimized/pdo_stmt.ll
 ; php/optimized/phpdbg_frame.ll
@@ -201,7 +196,7 @@ entry:
 ; yosys/optimized/simplify.ll
 ; z3/optimized/tab_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, ptr %0, ptr %1
@@ -213,7 +208,7 @@ entry:
 ; icu/optimized/locdispnames.ll
 ; openjdk/optimized/classLoaderDataGraph.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000141(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, ptr %0, ptr %1
@@ -229,7 +224,7 @@ entry:
 ; postgres/optimized/fe-connect.ll
 ; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 32
   %4 = select i1 %3, ptr %0, ptr %1
@@ -237,13 +232,14 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; icu/optimized/sortkey.ll
 ; linux/optimized/virtgpu_vq.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; node/optimized/libnode.crypto_tls.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, ptr %0, ptr %1

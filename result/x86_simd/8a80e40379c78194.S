@@ -6,8 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	vbroadcastsd	.LCPI0_0(%rip), %zmm6   # zmm6 = [5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1]
 	vmulpd	%zmm6, %zmm4, %zmm4
 	vmulpd	%zmm6, %zmm5, %zmm5
-	vmulpd	%zmm1, %zmm5, %zmm1
-	vmulpd	%zmm0, %zmm4, %zmm0
+	vmulpd	%zmm5, %zmm1, %zmm1
+	vmulpd	%zmm4, %zmm0, %zmm0
 	vbroadcastsd	.LCPI0_1(%rip), %zmm4   # zmm4 = [2.5E-1,2.5E-1,2.5E-1,2.5E-1,2.5E-1,2.5E-1,2.5E-1,2.5E-1]
 	vmulpd	%zmm4, %zmm3, %zmm3
 	vmulpd	%zmm3, %zmm1, %zmm1

@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 27 occurrences:
 ; casadi/optimized/cvodes_bandpre.c.ll
 ; casadi/optimized/cvodes_bbdpre.c.ll
 ; casadi/optimized/cvodes_direct.c.ll
@@ -12,8 +12,6 @@
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; openblas/optimized/dgemm_small_matrix_permit.c.ll
-; openblas/optimized/sgemm_small_matrix_permit.c.ll
 ; opencv/optimized/freetype.cpp.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; osqp/optimized/amd_2.c.ll

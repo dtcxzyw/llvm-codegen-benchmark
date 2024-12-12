@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 22 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/introspection_blurs.c.ll
@@ -10,6 +10,9 @@
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; libwebp/optimized/ssim.c.ll
 ; linux/optimized/swiotlb.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
 ; mitsuba3/optimized/envmap.cpp.ll
 ; oiio/optimized/Writer.cpp.ll
 ; oiio/optimized/imageio.cpp.ll
@@ -17,6 +20,8 @@
 ; openmpi/optimized/tm_kpartitioning.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; raylib/optimized/rmodels.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -35,7 +40,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   %6 = shl nuw i64 %5, 32
   ret i64 %6
@@ -78,6 +83,19 @@ entry:
 }
 
 ; 2 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
+; openspiel/optimized/chess_board.cc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = add nuw nsw i32 %0, %3
+  %5 = zext nneg i32 %4 to i64
+  %6 = shl nuw nsw i64 %5, 3
+  ret i64 %6
+}
+
+; 2 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; Function Attrs: nounwind
@@ -113,7 +131,7 @@ entry:
 define i64 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   %6 = shl nuw i64 %5, 32
   ret i64 %6

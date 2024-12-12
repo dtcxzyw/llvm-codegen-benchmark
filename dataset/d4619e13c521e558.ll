@@ -1,12 +1,10 @@
 
-; 46 occurrences:
+; 44 occurrences:
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
-; luajit/optimized/lj_prng.ll
-; luajit/optimized/lj_prng_dyn.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; openusd/optimized/authoring.cpp.ll
 ; openusd/optimized/bboxCache.cpp.ll
@@ -50,8 +48,8 @@
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
-  %5 = xor i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -72,8 +70,8 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 5853367888539878671
-  %4 = or i64 %3, %1
-  %5 = xor i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 

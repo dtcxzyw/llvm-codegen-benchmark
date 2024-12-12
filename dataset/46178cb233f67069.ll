@@ -1,5 +1,5 @@
 
-; 428 occurrences:
+; 449 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/extraUtilUtil.c.ll
@@ -60,6 +60,34 @@
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; arrow/optimized/writer.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/finite_differences.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -108,7 +136,6 @@
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; clamav/optimized/bytecode_vm.c.ll
-; clamav/optimized/tar.c.ll
 ; cmake/optimized/archive_entry.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -200,8 +227,6 @@
 ; icu/optimized/plurrule.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
-; jq/optimized/utf32_be.ll
-; jq/optimized/utf32_le.ll
 ; libquic/optimized/bssl_shim.cc.ll
 ; libquic/optimized/time_posix.cc.ll
 ; libuv/optimized/fs.c.ll
@@ -244,11 +269,8 @@
 ; nix/optimized/sqlite.ll
 ; node/optimized/fs.ll
 ; nori/optimized/parser.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; oiio/optimized/Writer.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
-; oniguruma/optimized/utf32_be.ll
-; oniguruma/optimized/utf32_le.ll
 ; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
 ; openblas/optimized/dgemm_small_kernel_nn.c.ll
 ; openblas/optimized/dsyrk_thread_LN.c.ll
@@ -268,7 +290,6 @@
 ; openspiel/optimized/pentago.cc.ll
 ; openspiel/optimized/tic_tac_toe.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
-; openssl/optimized/libtestutil-lib-random.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; php/optimized/cdf.ll
 ; php/optimized/cdf_time.ll
@@ -286,7 +307,6 @@
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/buffile.ll
 ; postgres/optimized/command.ll
-; postgres/optimized/compat.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/findtimezone.ll
 ; postgres/optimized/formatting.ll
@@ -310,8 +330,6 @@
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; qemu/optimized/blockdev.c.ll
 ; qemu/optimized/chardev_char-mux.c.ll
-; qemu/optimized/net_dump.c.ll
-; qemu/optimized/qapi_qmp-event.c.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; qemu/optimized/semihosting_syscalls.c.ll
 ; quantlib/optimized/argentina.ll
@@ -426,6 +444,9 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/PDFHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind

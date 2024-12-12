@@ -1,5 +1,5 @@
-func0000000000000028:                   # @func0000000000000028
-	xorb	$1, %sil
+func0000000000000048:                   # @func0000000000000048
+	notb	%sil
 	addl	$-58, %edx
 	cmpl	$-10, %edx
 	setae	%al

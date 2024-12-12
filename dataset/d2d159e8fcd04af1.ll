@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000186(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000306(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, 0
   %4 = select i1 %3, i32 %0, i32 %1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/ciTypeFlow.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, -1
   %4 = select i1 %3, i32 %0, i32 %1
@@ -27,7 +27,7 @@ entry:
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, -1
   %4 = select i1 %3, i32 %0, i32 %1
@@ -41,7 +41,7 @@ entry:
 ; opencv/optimized/reshape_layer.cpp.ll
 ; opencv/optimized/scale_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, -1
   %4 = select i1 %3, i32 %0, i32 %1

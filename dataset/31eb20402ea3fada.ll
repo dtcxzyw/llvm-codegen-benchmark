@@ -1,17 +1,23 @@
 
-%"struct.std::pair.2635679" = type { i32, i32 }
-%"struct.std::pair.2797043" = type <{ i32, i8, [3 x i8] }>
-%"struct.std::pair.3087.2948581" = type { i32, %"class.clang::DiagnosticMapping.2948582" }
-%"class.clang::DiagnosticMapping.2948582" = type { i8, [3 x i8] }
-%"struct.std::pair.3258423" = type { i32, i32 }
+%"struct.std::pair.2749024" = type { i32, i32 }
+%"struct.std::pair.2909097" = type <{ i32, i8, [3 x i8] }>
+%"struct.std::pair.3449273" = type { i32, i32 }
 
-; 38 occurrences:
+; 61 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; ceres/optimized/compressed_row_jacobian_writer.cc.ll
 ; cmake/optimized/cmOrderDirectories.cxx.ll
+; g2o/optimized/matrix_structure.cpp.ll
+; g2o/optimized/slam2d_linear.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; gromacs/optimized/molecules.cpp.ll
 ; hermes/optimized/Exceptions.cpp.ll
@@ -19,6 +25,21 @@
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; libphonenumber/optimized/phonenumberutil.cc.ll
 ; lightgbm/optimized/bin.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/CGProfile.cpp.ll
+; llvm/optimized/CoverageMappingReader.cpp.ll
+; llvm/optimized/IndirectCallPromotion.cpp.ll
+; llvm/optimized/InstrProf.cpp.ll
+; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/LegacyLegalizerInfo.cpp.ll
+; llvm/optimized/MacroExpansionContext.cpp.ll
+; llvm/optimized/PromoteMemoryToRegister.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/CmShow.cpp.ll
@@ -45,17 +66,20 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ba(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000bb(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.2635679", ptr %0, i64 %3
+  %4 = getelementptr %"struct.std::pair.2749024", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -12
   ret ptr %5
 }
 
-; 10 occurrences:
+; 13 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; z3/optimized/dl_instruction.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
@@ -66,57 +90,11 @@ entry:
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
-entry:
-  %2 = ashr i64 %1, 3
-  %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.2797043", ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -12
-  ret ptr %5
-}
-
-; 3 occurrences:
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ASTWriter.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; Function Attrs: nounwind
 define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 3
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.3087.2948581", ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -12
-  ret ptr %5
-}
-
-; 21 occurrences:
-; g2o/optimized/matrix_structure.cpp.ll
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ASTWriter.cpp.ll
-; llvm/optimized/CGProfile.cpp.ll
-; llvm/optimized/CoverageMappingReader.cpp.ll
-; llvm/optimized/IndirectCallPromotion.cpp.ll
-; llvm/optimized/InstrProf.cpp.ll
-; llvm/optimized/InstrProfReader.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/LegacyLegalizerInfo.cpp.ll
-; llvm/optimized/MacroExpansionContext.cpp.ll
-; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SourceManager.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000bb(ptr %0, i64 %1) #0 {
-entry:
-  %2 = ashr exact i64 %1, 3
-  %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.3087.2948581", ptr %0, i64 %3
+  %4 = getelementptr %"struct.std::pair.2909097", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -12
   ret ptr %5
 }
@@ -125,11 +103,11 @@ entry:
 ; annoy/optimized/annoymodule.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000b2(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000b3(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.3258423", ptr %0, i64 %3
+  %4 = getelementptr %"struct.std::pair.3449273", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -12
   ret ptr %5
 }

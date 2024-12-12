@@ -20,7 +20,7 @@
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sub nuw i64 %3, %0
@@ -38,7 +38,7 @@ entry:
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = sub nuw i64 %3, %0
@@ -47,13 +47,12 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; assimp/optimized/SIBImporter.cpp.ll
+; 3 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; openusd/optimized/crateData.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sub nuw nsw i64 %3, %0

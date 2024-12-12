@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
@@ -27,17 +27,10 @@ func0000000000000001:                   # @func0000000000000001
 	shll	$5, %eax
 	orl	$17, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
 	setne	%al
 	addl	%eax, %eax
-	retq
-func0000000000000038:                   # @func0000000000000038
-	addq	%rdx, %rsi
-	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	seta	%al
-	shll	$2, %eax
 	retq

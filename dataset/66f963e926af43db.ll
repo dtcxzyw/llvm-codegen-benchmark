@@ -1,16 +1,17 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/dmar.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/netdev.ll
 ; postgres/optimized/jsonb_util.ll
 ; qemu/optimized/hw_display_vga.c.ll
+; qemu/optimized/hw_pci_shpc.c.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 7
-  %3 = and i32 %2, 32640
+  %2 = shl i32 %1, 2
+  %3 = and i32 %2, 124
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
@@ -94,12 +95,12 @@ entry:
 ; php/optimized/pcre2_study.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

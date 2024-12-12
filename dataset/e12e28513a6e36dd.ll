@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_fs.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; qemu/optimized/hw_display_vga.c.ll
@@ -14,7 +16,9 @@ entry:
   ret i8 %3
 }
 
-; 13 occurrences:
+; 15 occurrences:
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_fs.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; coreutils-rs/optimized/2atmtah7pt1us1n0.ll

@@ -1,4 +1,4 @@
-func0000000000000104:                   // @func0000000000000104
+func0000000000000204:                   // @func0000000000000204
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x9, x1, #7
@@ -6,7 +6,7 @@ func0000000000000104:                   // @func0000000000000104
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000108:                   // @func0000000000000108
+func0000000000000208:                   // @func0000000000000208
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	add	x9, x1, #1
@@ -14,7 +14,7 @@ func0000000000000108:                   // @func0000000000000108
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000a4:                   // @func00000000000000a4
+func0000000000000164:                   // @func0000000000000164
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x9, x1, #12
@@ -22,7 +22,7 @@ func00000000000000a4:                   // @func00000000000000a4
 	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000001a8:                   // @func00000000000001a8
+func0000000000000368:                   // @func0000000000000368
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x9, x1, #15
@@ -30,7 +30,7 @@ func00000000000001a8:                   // @func00000000000001a8
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000001a1:                   // @func00000000000001a1
+func00000000000003e1:                   // @func00000000000003e1
 // %bb.0:                               // %entry
 	mov	w8, #36                         // =0x24
 	add	x9, x1, #36
@@ -39,7 +39,7 @@ func00000000000001a1:                   // @func00000000000001a1
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000128:                   // @func0000000000000128
+func0000000000000268:                   // @func0000000000000268
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x9, x1, #32
@@ -47,7 +47,7 @@ func0000000000000128:                   // @func0000000000000128
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000121:                   // @func0000000000000121
+func0000000000000261:                   // @func0000000000000261
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x9, x1, #32
@@ -55,7 +55,7 @@ func0000000000000121:                   // @func0000000000000121
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000a8:                   // @func00000000000000a8
+func0000000000000168:                   // @func0000000000000168
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x9, x1, #8
@@ -63,7 +63,7 @@ func00000000000000a8:                   // @func00000000000000a8
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000188:                   // @func0000000000000188
+func0000000000000388:                   // @func0000000000000388
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw #1
 	add	x9, x1, #8
@@ -71,7 +71,7 @@ func0000000000000188:                   // @func0000000000000188
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000001a4:                   // @func00000000000001a4
+func00000000000003e4:                   // @func00000000000003e4
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	add	x9, x1, #16
@@ -79,7 +79,7 @@ func00000000000001a4:                   // @func00000000000001a4
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000084:                   // @func0000000000000084
+func0000000000000184:                   // @func0000000000000184
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	add	x9, x1, #36
@@ -95,7 +95,7 @@ func0000000000000004:                   // @func0000000000000004
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000184:                   // @func0000000000000184
+func0000000000000384:                   // @func0000000000000384
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	add	x9, x1, #20
@@ -103,13 +103,38 @@ func0000000000000184:                   // @func0000000000000184
 	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000000a1:                   // @func00000000000000a1
+func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	mov	w9, #11640                      // =0x2d78
 	add	x9, x1, x9
 	cmp	x8, x9
 	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000161:                   // @func0000000000000161
+// %bb.0:                               // %entry
+	add	x8, x0, w2, uxtw #3
+	sub	x9, x1, #8
+	cmp	x8, x9
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000361:                   // @func0000000000000361
+// %bb.0:                               // %entry
+	mov	w8, #48                         // =0x30
+	sub	x9, x1, #48
+	umaddl	x8, w2, w8, x0
+	cmp	x8, x9
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000364:                   // @func0000000000000364
+// %bb.0:                               // %entry
+	add	x8, x0, w2, uxtw
+	sub	x9, x1, #64
+	cmp	x8, x9
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
@@ -121,7 +146,23 @@ func0000000000000008:                   // @func0000000000000008
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func00000000000001e8:                   // @func00000000000001e8
+// %bb.0:                               // %entry
+	add	x8, x0, w2, uxtw
+	add	x9, x1, #1
+	cmp	x8, x9
+	cset	w0, hi
+	ret
+                                        // -- End function
+func00000000000001e4:                   // @func00000000000001e4
+// %bb.0:                               // %entry
+	add	x8, x0, w2, uxtw
+	add	x9, x1, #10
+	cmp	x8, x9
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000064:                   // @func0000000000000064
 // %bb.0:                               // %entry
 	mov	w8, #80                         // =0x50
 	add	x9, x1, #264

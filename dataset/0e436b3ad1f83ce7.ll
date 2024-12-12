@@ -44,18 +44,6 @@ entry:
 }
 
 ; 1 occurrences:
-; yosys/optimized/ezminisat.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003d(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, -2
-  %3 = add nuw nsw i32 %2, 2
-  %4 = trunc nuw nsw i64 %0 to i32
-  %5 = add nsw i32 %3, %4
-  ret i32 %5
-}
-
-; 1 occurrences:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0, i32 %1) #0 {

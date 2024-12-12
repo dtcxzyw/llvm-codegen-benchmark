@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; hermes/optimized/Executor.cpp.ll
 ; hyperscan/optimized/gough.c.ll
 ; hyperscan/optimized/mcclellan.c.ll
@@ -14,7 +14,6 @@
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/DeclPrinter.cpp.ll
 ; llvm/optimized/DeclarationFragments.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
@@ -34,6 +33,8 @@
 ; wasmedge/optimized/export.cpp.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i16 %0) #0 {
 entry:
@@ -42,7 +43,7 @@ entry:
   ret i1 %2
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; c3c/optimized/sema_expr.c.ll
@@ -62,7 +63,6 @@ entry:
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; rust-analyzer-rs/optimized/4wjr9n8d5oomu43d.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
-; wireshark/optimized/packet-netlink-netfilter.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i16 %0) #0 {
@@ -104,26 +104,29 @@ entry:
   ret i1 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/unicodeobject.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i16 %0) #0 {
+define i1 @func000000000000004a(i16 %0) #0 {
 entry:
   %1 = trunc nuw i16 %0 to i8
-  %2 = icmp sgt i8 %1, 117
+  %2 = icmp sgt i8 %1, 48
   ret i1 %2
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; llvm/optimized/ItaniumDemangle.cpp.ll
+; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, 128
-  %2 = icmp ne i16 %1, 0
+  %1 = and i16 %0, 192
+  %2 = icmp eq i16 %1, 128
   ret i1 %2
 }
 
@@ -141,7 +144,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/pci.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i16 %0) #0 {
+define i1 @func0000000000000044(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 192
   %2 = icmp eq i16 %1, 0

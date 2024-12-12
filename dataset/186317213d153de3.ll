@@ -35,8 +35,7 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; imgui/optimized/imgui_widgets.cpp.ll
+; 1 occurrences:
 ; minetest/optimized/clientmap.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(float %0, i32 %1) #0 {
@@ -51,7 +50,7 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; minetest/optimized/serverlist.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, float %1) #0 {
+define i1 @func00000000000000e1(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp une float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 1
@@ -62,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, float %1) #0 {
+define i1 @func0000000000000141(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ole float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 2
@@ -73,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, float %1) #0 {
+define i1 @func0000000000000041(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 2
@@ -84,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, float %1) #0 {
+define i1 @func000000000000014c(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ole float %1, 0x3810000000000000
   %3 = icmp ne i32 %0, 0
@@ -102,7 +101,7 @@ entry:
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, float %1) #0 {
+define i1 @func000000000000008c(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 0.000000e+00
   %3 = icmp ne i32 %0, 0
@@ -150,7 +149,7 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, float %1) #0 {
+define i1 @func0000000000000081(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 0x3E80000000000000
   %3 = icmp eq i32 %0, 0
@@ -195,7 +194,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, float %1) #0 {
+define i1 @func00000000000000aa(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ugt float %1, 0x3F647AE140000000
   %3 = icmp sgt i32 %0, -1
@@ -233,7 +232,7 @@ entry:
 ; oiio/optimized/pnminput.cpp.ll
 ; opencv/optimized/fast_line_detector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, float %1) #0 {
+define i1 @func000000000000008a(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 0.000000e+00
   %3 = icmp sgt i32 %0, 0
@@ -244,7 +243,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/NavMeshTesterTool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, float %1) #0 {
+define i1 @func000000000000004c(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 5.000000e-01
   %3 = icmp ne i32 %0, 0
@@ -287,7 +286,7 @@ entry:
 ; opencv/optimized/daisy.cpp.ll
 ; openusd/optimized/patchTree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i32 %0, float %1) #0 {
+define i1 @func00000000000000ea(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp une float %1, 0.000000e+00
   %3 = icmp sgt i32 %0, 0
@@ -298,7 +297,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, float %1) #0 {
+define i1 @func0000000000000161(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ule float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 0
@@ -306,14 +305,35 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
+; imgui/optimized/imgui_widgets.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000018c(i32 %0, float %1) #0 {
+entry:
+  %2 = fcmp oge float %1, 0.000000e+00
+  %3 = icmp ne i32 %0, 8
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; pbrt-v4/optimized/film.cpp.ll
-; postgres/optimized/plancat.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000c8(float %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = fcmp oeq float %0, 0.000000e+00
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/plancat.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000188(i32 %0, float %1) #0 {
+entry:
+  %2 = fcmp oge float %1, 0.000000e+00
+  %3 = icmp ugt i32 %0, 1
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -344,7 +364,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, float %1) #0 {
+define i1 @func0000000000000101(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp oeq float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 0

@@ -12,7 +12,7 @@
 ; wireshark/optimized/packet-aeron.c.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -26,7 +26,7 @@ entry:
 ; llvm/optimized/SymbolRecordMapping.cpp.ll
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000181(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %1, i1 false

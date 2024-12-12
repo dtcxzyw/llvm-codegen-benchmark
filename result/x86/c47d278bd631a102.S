@@ -1,4 +1,4 @@
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	movl	%esi, %eax
 	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
 	shrq	$39, %rax
@@ -8,7 +8,7 @@ func00000000000000d6:                   # @func00000000000000d6
 	testl	%edi, %edi
 	cmovlel	%ecx, %eax
 	retq
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	movl	%esi, %eax
 	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
 	shrq	$39, %rax

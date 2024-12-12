@@ -38,15 +38,24 @@ func0000000000000006:                   # @func0000000000000006
 	slli	a0, a0, 24
 	or	a0, a0, a1
 	ret
-func000000000000000d:                   # @func000000000000000d
+func0000000000000007:                   # @func0000000000000007
 	andi	a1, a1, 1
 	bnez	a1, .LBB3_2
-	sext.w	a2, a2
+	slli	a1, a2, 32
+	srli	a1, a1, 32
 	slli	a0, a0, 32
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 .LBB3_2:
-	li	a2, 6
+	li	a1, 1
 	slli	a0, a0, 32
-	or	a0, a0, a2
+	or	a0, a0, a1
+	ret
+func000000000000000d:                   # @func000000000000000d
+	andi	a1, a1, 1
+	sext.w	a2, a2
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	slli	a0, a0, 32
+	or	a0, a0, a1
 	ret

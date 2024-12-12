@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/notes.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; ockam-rs/optimized/1sna1kukcpmrcv4c.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:

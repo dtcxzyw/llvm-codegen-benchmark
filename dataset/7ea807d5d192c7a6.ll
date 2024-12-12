@@ -1,6 +1,7 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; assimp/optimized/LWOMaterial.cpp.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/unzip.c.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
@@ -36,10 +37,10 @@
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i16 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr nusw ptr, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw ptr, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -76,15 +77,15 @@ entry:
 ; llvm/optimized/TypePrinter.cpp.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i16 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
 
-; 77 occurrences:
+; 72 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/ah6.ll
@@ -97,7 +98,6 @@ entry:
 ; linux/optimized/filter.ll
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/gso.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/icmp.ll
 ; linux/optimized/igmp.ll
@@ -112,14 +112,11 @@ entry:
 ; linux/optimized/ip_tunnel_core.ll
 ; linux/optimized/lsm_audit.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/neighbour.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/nf_log_syslog.ll
 ; linux/optimized/nf_nat_proto.ll
@@ -156,7 +153,6 @@ entry:
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/hashovfl.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/heapdesc.ll
 ; postgres/optimized/xlogreader.ll
 ; qemu/optimized/accel_tcg_tb-maint.c.ll
 ; qemu/optimized/hw_acpi_core.c.ll

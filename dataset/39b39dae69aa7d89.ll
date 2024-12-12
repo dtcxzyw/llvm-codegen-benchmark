@@ -1,17 +1,5 @@
 
-; 1 occurrences:
-; stb/optimized/stb_dxt.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000002(i16 %0, i16 %1) #0 {
-entry:
-  %2 = lshr i16 %1, 3
-  %3 = and i16 %2, 4064
-  %4 = and i16 %0, -2048
-  %5 = add nuw i16 %3, %4
-  ret i16 %5
-}
-
-; 89 occurrences:
+; 91 occurrences:
 ; grpc/optimized/writing.cc.ll
 ; linux/optimized/nf_reject_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
@@ -50,6 +38,8 @@ entry:
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/TransEmptyStatementsAndDealloc.cpp.ll
 ; llvm/optimized/TransProtectedScope.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; postgres/optimized/trigger.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -104,10 +94,22 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
-  %2 = lshr i16 %1, 12
-  %3 = and i16 %2, 1
-  %4 = and i16 %0, 1
+  %2 = lshr i16 %1, 5
+  %3 = and i16 %2, 63
+  %4 = and i16 %0, 63
   %5 = add nuw nsw i16 %4, %3
+  ret i16 %5
+}
+
+; 1 occurrences:
+; stb/optimized/stb_dxt.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000002(i16 %0, i16 %1) #0 {
+entry:
+  %2 = lshr i16 %1, 3
+  %3 = and i16 %2, 4064
+  %4 = and i16 %0, -2048
+  %5 = add nuw i16 %3, %4
   ret i16 %5
 }
 

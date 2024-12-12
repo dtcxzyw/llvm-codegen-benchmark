@@ -36,6 +36,5 @@ func000000000000000d:                   # @func000000000000000d
 	retq
 func0000000000000007:                   # @func0000000000000007
 	subq	%rdi, %rsi
-	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
-	addq	%rsi, %rax
+	leaq	32(%rsi), %rax
 	retq

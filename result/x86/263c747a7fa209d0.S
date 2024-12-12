@@ -21,8 +21,3 @@ func0000000000000003:                   # @func0000000000000003
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	vdivss	%xmm0, %xmm2, %xmm0
 	retq
-func0000000000000004:                   # @func0000000000000004
-	vmaxss	%xmm0, %xmm1, %xmm2
-	vminss	%xmm1, %xmm0, %xmm0
-	vdivss	%xmm2, %xmm0, %xmm0
-	retq

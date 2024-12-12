@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 18 occurrences:
 ; diesel-rs/optimized/ejac3nrysber2ti.ll
 ; lief/optimized/bignum.c.ll
 ; linux/optimized/gro.ll
@@ -8,16 +8,21 @@
 ; qemu/optimized/util_cutils.c.ll
 ; rust-analyzer-rs/optimized/3aojx6tzw7bx942t.ll
 ; rust-analyzer-rs/optimized/4nb8vdkq52ctjgzb.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; syn/optimized/2i67i8azb4r5b3mw.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/9fz5l76t5byggb8exxkeuxjql.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -38,7 +43,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
@@ -64,7 +69,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = icmp ugt i64 %3, 5000000000000000000
   ret i1 %4
 }
@@ -75,10 +80,10 @@ entry:
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }

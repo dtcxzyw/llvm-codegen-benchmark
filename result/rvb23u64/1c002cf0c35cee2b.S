@@ -15,15 +15,27 @@ func000000000000000a:                   # @func000000000000000a
 	neg	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	srli	a0, a0, 32
-	snez	a0, a0
-	addi	a0, a0, -1
+	lui	a1, 227374
+	addiw	a1, a1, -1329
+	slli	a1, a1, 12
+	addi	a1, a1, -1575
+	slli	a1, a1, 18
+	sltu	a0, a0, a1
+	neg	a0, a0
 	ret
 .LCPI5_0:
 	.quad	-153722867280912930             # 0xfdddddddddddddde
-func0000000000000006:                   # @func0000000000000006
+func0000000000000014:                   # @func0000000000000014
 	lui	a1, %hi(.LCPI5_0)
 	ld	a1, %lo(.LCPI5_0)(a1)
+	sltu	a0, a0, a1
+	neg	a0, a0
+	ret
+.LCPI6_0:
+	.quad	-153722867280912930             # 0xfdddddddddddddde
+func0000000000000006:                   # @func0000000000000006
+	lui	a1, %hi(.LCPI6_0)
+	ld	a1, %lo(.LCPI6_0)(a1)
 	slt	a0, a0, a1
 	neg	a0, a0
 	ret

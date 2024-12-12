@@ -6,7 +6,7 @@
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add i32 %4, 32769
   %6 = add i32 %5, %0
   ret i32 %6
@@ -25,11 +25,22 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 2 occurrences:
+; libwebp/optimized/frame_enc.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 65535
+  %4 = mul nuw nsw i32 %3, %1
+  %5 = add nuw i32 %4, 12
+  %6 = add i32 %5, %0
+  ret i32 %6
+}
+
+; 2 occurrences:
 ; opencv/optimized/array.cpp.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
-; typst-rs/optimized/3lt7g0yvt7qzv13u.ll
-; typst-rs/optimized/p1dgiootfedk7bo.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -37,18 +48,6 @@ entry:
   %4 = mul nuw nsw i32 %3, %1
   %5 = add nuw nsw i32 %4, 3
   %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; libwebp/optimized/frame_enc.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 65535
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nuw i32 %4, 2048
-  %6 = add i32 %5, %0
   ret i32 %6
 }
 

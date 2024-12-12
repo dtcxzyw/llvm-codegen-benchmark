@@ -10,18 +10,18 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; php/optimized/logical_filters.ll
-; proj/optimized/factory.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; z3/optimized/aig.cpp.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %.not = icmp eq i64 %1, 0
-  %2 = or i1 %.not, %0
+  %2 = or i1 %0, %.not
   ret i1 %2
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; grpc/optimized/grpc_tls_certificate_distributor.cc.ll
@@ -33,12 +33,13 @@ entry:
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; rust-analyzer-rs/optimized/2c0n7dumpf7kecgy.ll
 ; spike/optimized/csrs.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; z3/optimized/dl_mk_unbound_compressor.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -9223372036854775808
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

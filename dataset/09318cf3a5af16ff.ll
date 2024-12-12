@@ -8,7 +8,7 @@ entry:
   %3 = sdiv i64 %2, 86400
   %4 = add nsw i64 %3, 719468
   %5 = add nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

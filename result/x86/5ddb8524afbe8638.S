@@ -4,11 +4,6 @@ func0000000000000007:                   # @func0000000000000007
 	sete	%al
 	leal	8(%rdi,%rax,8), %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	$1, %esi
-	shll	$4, %esi
-	leal	56(%rsi,%rdi), %eax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	shrb	$2, %sil
 	movzbl	%sil, %eax
@@ -16,4 +11,9 @@ func0000000000000005:                   # @func0000000000000005
 	negl	%eax
 	orl	$1, %eax
 	addl	%edi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	$1, %esi
+	shll	$4, %esi
+	leal	56(%rsi,%rdi), %eax
 	retq

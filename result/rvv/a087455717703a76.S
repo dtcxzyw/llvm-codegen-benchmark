@@ -11,11 +11,6 @@ func0000000000000009:                   # @func0000000000000009
 	li	a0, 64
 	vor.vx	v8, v8, a0, v0.t
 	ret
-func0000000000000011:                   # @func0000000000000011
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsltu.vv	v0, v12, v10
-	vor.vi	v8, v8, 2, v0.t
-	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vv	v0, v10, v12

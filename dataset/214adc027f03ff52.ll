@@ -26,6 +26,7 @@
 ; fmt/optimized/xchar-test.cc.ll
 ; freetype/optimized/psaux.c.ll
 ; git/optimized/commit.ll
+; git/optimized/wildmatch.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -39,7 +40,6 @@
 ; hwloc/optimized/topology-linux.ll
 ; icu/optimized/reslist.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
-; libquic/optimized/a_type.c.ll
 ; libquic/optimized/ssl_cipher.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -118,7 +118,6 @@
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/mac.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/r8169_main.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
@@ -333,6 +332,7 @@
 ; wireshark/optimized/packet-ethercat-datagram.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; yosys/optimized/subcircuit.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:

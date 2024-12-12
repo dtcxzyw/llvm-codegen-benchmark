@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; bullet3/optimized/btLemkeAlgorithm.ll
 ; bullet3/optimized/btMLCPSolver.ll
@@ -28,6 +28,7 @@
 ; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/methodData.ll
+; openspiel/optimized/quoridor.cc.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -49,12 +50,12 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/cuddGenetic.c.ll
 ; abc/optimized/fraImp.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -65,7 +66,6 @@ entry:
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dtrevc.c.ll
-; opencv/optimized/lkpyramid.cpp.ll
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
@@ -82,7 +82,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

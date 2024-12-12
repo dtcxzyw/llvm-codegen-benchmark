@@ -91,7 +91,7 @@ entry:
   ret i64 %3
 }
 
-; 63 occurrences:
+; 61 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -119,12 +119,12 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DWARFVerifier.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/LiveIntervalUnion.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/NativeSession.cpp.ll
-; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -153,8 +153,6 @@ entry:
 ; redis/optimized/geohash.ll
 ; redis/optimized/prof_data.ll
 ; redis/optimized/prof_data.sym.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

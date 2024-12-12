@@ -49,7 +49,7 @@
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; yosys/optimized/eval.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/perf_optflowpyrlk.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3

@@ -15,3 +15,23 @@ func0000000000000003:                   # @func0000000000000003
 .LBB1_2:
 	srliw	a0, a0, 1
 	ret
+func0000000000000010:                   # @func0000000000000010
+	sext.w	a1, a1
+	li	a2, 255
+	bgeu	a2, a1, .LBB2_2
+	lui	a0, 4090
+	addiw	a0, a0, 256
+	ret
+.LBB2_2:
+	srliw	a0, a0, 8
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a1, a1
+	li	a2, 64
+	bge	a2, a1, .LBB3_2
+	lui	a0, 131072
+	addiw	a0, a0, -1
+	ret
+.LBB3_2:
+	srliw	a0, a0, 1
+	ret

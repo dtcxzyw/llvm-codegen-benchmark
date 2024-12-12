@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; linux/optimized/dmar.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:

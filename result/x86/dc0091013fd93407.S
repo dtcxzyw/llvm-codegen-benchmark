@@ -1,16 +1,16 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	movl	%eax, %eax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	movl	$256, %eax                      # imm = 0x100
 	shlxl	%edx, %eax, %eax
 	movl	%eax, %eax
-	cmpq	%rsi, %rax
-	seta	%al
+	cmpq	%rax, %rsi
+	setb	%al
 	orb	%dil, %al
 	retq

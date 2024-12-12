@@ -1,5 +1,5 @@
 
-; 386 occurrences:
+; 399 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -13,6 +13,7 @@
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -101,7 +102,6 @@
 ; linux/optimized/intel_timeline.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/kfifo.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/move_extent.ll
 ; linux/optimized/netconsole.ll
 ; linux/optimized/netdev.ll
@@ -204,6 +204,20 @@
 ; llvm/optimized/X86MachObjectWriter.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_table.ll
+; lvgl/optimized/lv_textarea.ll
 ; memcached/optimized/memcached-itoa_ljust.ll
 ; memcached/optimized/memcached-slab_automove_extstore.ll
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
@@ -235,18 +249,13 @@
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; oiio/optimized/Writer.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlahr2.c.ll
 ; openblas/optimized/dlarfb.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dormql.c.ll
 ; openblas/optimized/dormrq.c.ll
 ; openblas/optimized/dpbtrf.c.ll
@@ -276,10 +285,8 @@
 ; openspiel/optimized/deep_sea.cc.ll
 ; openspiel/optimized/expected_returns.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-lib-sha256.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-sha256.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; openusd/optimized/grain_synthesis.c.ll
@@ -381,6 +388,12 @@
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; z3/optimized/dl_table.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; zstd/optimized/xxhash.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
@@ -390,12 +403,12 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 182 occurrences:
+; 181 occurrences:
 ; bullet3/optimized/b3File.ll
 ; libquic/optimized/prtime.cc.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -550,7 +563,6 @@ entry:
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/gfluidbackend.cpp.ll
 ; opencv/optimized/tracker_vit.cpp.ll
-; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/checkers.cc.ll
 ; openspiel/optimized/coin_game.cc.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
@@ -582,7 +594,7 @@ entry:
 define i32 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -596,13 +608,15 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; opencv/optimized/lsc.cpp.ll
@@ -617,12 +631,12 @@ entry:
 define i32 @func0000000000000037(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
-; 131 occurrences:
+; 129 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/absOut.c.ll
@@ -698,9 +712,7 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; gromacs/optimized/displacement.cpp.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; icu/optimized/pkgitems.ll
 ; ipopt/optimized/SensAlgorithm.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
@@ -758,12 +770,12 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 62 occurrences:
+; 74 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -791,15 +803,27 @@ entry:
 ; libquic/optimized/prtime.cc.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_textarea.ll
 ; meshlab/optimized/packing.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/guiHyperText.cpp.ll
 ; minetest/optimized/guiInventoryList.cpp.ll
 ; nix/optimized/lexer-tab.ll
 ; openblas/optimized/dlagsy.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
-; openblas/optimized/dorgr2.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dtgsja.c.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/rand.cpp.ll
@@ -830,7 +854,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -844,14 +868,13 @@ entry:
 define i32 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 35 occurrences:
+; 37 occurrences:
 ; abc/optimized/giaLf.c.ll
-; abc/optimized/giaTransduction.cpp.ll
 ; cpython/optimized/_datetimemodule.ll
 ; darktable/optimized/PhaseOneDecompressor.cpp.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
@@ -862,11 +885,15 @@ entry:
 ; icu/optimized/package.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_textarea.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
@@ -874,7 +901,6 @@ entry:
 ; oiio/optimized/Writer.cpp.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; opencv/optimized/blenders.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
@@ -889,12 +915,12 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
-; 67 occurrences:
+; 68 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -926,6 +952,7 @@ entry:
 ; llvm/optimized/PseudoLoweringEmitter.cpp.ll
 ; llvm/optimized/Rewriter.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/meshio.cpp.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
@@ -966,26 +993,29 @@ entry:
 define i32 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; git/optimized/apply.ll
 ; git/optimized/log-tree.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; icu/optimized/dictbe.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_scale.ll
 ; minetest/optimized/guiHyperText.cpp.ll
-; openblas/optimized/dlaqp2rk.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; opencv/optimized/tracker_vit.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -999,7 +1029,7 @@ entry:
 define i32 @func000000000000003c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -1010,7 +1040,7 @@ entry:
 define i32 @func0000000000000038(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -1044,12 +1074,12 @@ entry:
 define i32 @func000000000000003f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
-; 74 occurrences:
+; 72 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/pdrMan.c.ll
 ; abc/optimized/wlcAbs.c.ll
@@ -1102,10 +1132,8 @@ entry:
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; darktable/optimized/amaze.cc.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; linux/optimized/lib.ll
 ; llvm/optimized/Instructions.cpp.ll
@@ -1128,8 +1156,8 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -1139,7 +1167,7 @@ entry:
 define i32 @func000000000000002d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -1154,8 +1182,8 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -1166,7 +1194,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -1177,7 +1205,7 @@ entry:
 define i32 @func0000000000000023(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -1195,7 +1223,7 @@ entry:
 define i32 @func0000000000000034(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -1208,29 +1236,13 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 7 occurrences:
-; gromacs/optimized/grid.cpp.ll
-; hermes/optimized/CharacterProperties.cpp.ll
-; linux/optimized/gso.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; opencv/optimized/denoising.cpp.ll
-; opencv/optimized/imgwarp.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
-  ret i32 %5
-}
-
 ; 28 occurrences:
+; boost/optimized/to_chars.ll
 ; freetype/optimized/sdf.c.ll
 ; linux/optimized/lib.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -1243,7 +1255,6 @@ entry:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; openblas/optimized/dlaorhr_col_getrfnp.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
 ; opencv/optimized/denoising.cpp.ll
@@ -1263,13 +1274,28 @@ entry:
 define i32 @func0000000000000035(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
-; 5 occurrences:
-; openblas/optimized/dsygst.c.ll
+; 6 occurrences:
+; gromacs/optimized/grid.cpp.ll
+; hermes/optimized/CharacterProperties.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; opencv/optimized/denoising.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nsw i64 %2 to i32
+  %4 = add nsw i32 %1, %3
+  %5 = add nsw i32 %4, %0
+  ret i32 %5
+}
+
+; 4 occurrences:
 ; opencv/optimized/estimated_covariance.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
@@ -1278,8 +1304,8 @@ entry:
 define i32 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -1289,7 +1315,7 @@ entry:
 define i32 @func000000000000003d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -1301,8 +1327,8 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add nuw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add nuw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -1312,7 +1338,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -1324,8 +1350,8 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -1335,8 +1361,8 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -1346,7 +1372,7 @@ entry:
 define i32 @func000000000000002f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -1357,7 +1383,7 @@ entry:
 define i32 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = add nuw i32 %4, %0
   ret i32 %5
 }
@@ -1369,7 +1395,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -1381,7 +1407,7 @@ entry:
 define i32 @func0000000000000028(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -1392,8 +1418,8 @@ entry:
 define i32 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

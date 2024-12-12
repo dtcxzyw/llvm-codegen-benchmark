@@ -11,7 +11,7 @@ entry:
   ret ptr %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; graphviz/optimized/multispline.c.ll
 ; postgres/optimized/alter.ll
 ; postgres/optimized/execGrouping.ll
@@ -28,7 +28,6 @@ entry:
 ; postgres/optimized/nodeWindowAgg.ll
 ; postgres/optimized/ri_triggers.ll
 ; wireshark/optimized/logcat.c.ll
-; wireshark/optimized/packet-csn1.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i16 %1) #0 {
 entry:

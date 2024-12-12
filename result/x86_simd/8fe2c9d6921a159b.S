@@ -13,6 +13,6 @@ func0000000000000020:                   # @func0000000000000020
 	vpsrld	$4, %ymm1, %ymm1
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpmovdw	%ymm1, %xmm1
-	vpaddw	%xmm0, %xmm1, %xmm0
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

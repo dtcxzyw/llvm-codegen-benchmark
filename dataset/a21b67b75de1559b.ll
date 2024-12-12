@@ -6,11 +6,11 @@
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
 ; wireshark/optimized/packet-sprt.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 3
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr [128 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -29,12 +29,12 @@ entry:
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; openjdk/optimized/cmsopt.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 1552
-  %5 = getelementptr nusw [256 x i32], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1552
+  %5 = getelementptr nusw nuw [256 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

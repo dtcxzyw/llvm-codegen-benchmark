@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; crow/optimized/example.cpp.ll
@@ -15,7 +15,6 @@
 ; crow/optimized/example_static_file.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/ldt.ll
@@ -30,7 +29,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 512
   %3 = and i32 %2, 7680
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or disjoint i32 %4, 8192
   ret i32 %5
 }
@@ -43,7 +42,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 255
   %3 = and i32 %2, 191
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = or disjoint i32 %4, 64
   ret i32 %5
 }
@@ -81,7 +80,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = xor i32 %2, 4
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or i32 %4, 16776216
   ret i32 %5
 }
@@ -105,7 +104,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 2047
   %3 = and i32 %2, 2047
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or disjoint i32 %4, -2147483648
   ret i32 %5
 }

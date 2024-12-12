@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 65 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
@@ -9,7 +9,6 @@
 ; libquic/optimized/p224-64.c.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/buffered-io.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/swap_state.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
@@ -74,7 +73,7 @@ entry:
   ret i64 %3
 }
 
-; 37 occurrences:
+; 39 occurrences:
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -99,9 +98,11 @@ entry:
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/imgproc_calcHist.cpp.ll
 ; opencv/optimized/plot.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
+; openspiel/optimized/morpion_solitaire.cc.ll
 ; postgres/optimized/freespace.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; ruby/optimized/parser.ll
@@ -120,10 +121,13 @@ entry:
   ret i64 %3
 }
 
-; 152 occurrences:
+; 157 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/dictobject.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -183,9 +187,7 @@ entry:
 ; linux/optimized/e820.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/filemap.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_gem_create.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/i915_gem_region.ll
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/memblock.ll
@@ -198,6 +200,7 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/CostModel.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; mini-lsm-rs/optimized/211qm7emy1a6xqse.ll
 ; mini-lsm-rs/optimized/45avienzelzw747t.ll
 ; mini-lsm-rs/optimized/4lbrpk7rlft27pjz.ll
@@ -273,15 +276,19 @@ entry:
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; z3/optimized/hwf.cpp.ll
+; zed-rs/optimized/70ymcp0y6yqkpw3c0y4yzyh2l.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 32768
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 
 ; 30 occurrences:
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
@@ -305,7 +312,6 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openmpi/optimized/osc_rdma_dynamic.ll
 ; openusd/optimized/openexr-c.c.ll
-; rocksdb/optimized/clock_cache.cc.ll
 ; ruby/optimized/hash.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
@@ -320,10 +326,12 @@ entry:
   ret i64 %3
 }
 
-; 110 occurrences:
+; 127 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
 ; coreutils-rs/optimized/2zjxva3p2avqok6n.ll
 ; coreutils-rs/optimized/3xc4e7mmntf4esc6.ll
@@ -431,6 +439,21 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/memlib.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/22ahis4uxapmr5sot3uwhf47g.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
+; zed-rs/optimized/bx60353v5ms1nsmjqyoxenjec.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/ept7l7id9yl52ab8m2qhombt7.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:

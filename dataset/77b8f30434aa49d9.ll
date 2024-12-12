@@ -47,15 +47,16 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; llvm/optimized/ASTMatchFinder.cpp.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
-  %2 = add nsw i8 %1, -5
+  %2 = add nsw i8 %1, -3
   %3 = icmp ult i8 %2, 2
-  %4 = select i1 %3, i8 undef, i8 %0
+  %4 = select i1 %3, i8 1, i8 %0
   ret i8 %4
 }
 

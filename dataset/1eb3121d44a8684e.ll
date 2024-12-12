@@ -104,7 +104,7 @@ entry:
   ret i32 %4
 }
 
-; 63 occurrences:
+; 61 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; clamav/optimized/manager.c.ll
 ; cmake/optimized/select.c.ll
@@ -129,7 +129,6 @@ entry:
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_dpll.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_fbc.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/intel_vdsc.ll
@@ -159,7 +158,6 @@ entry:
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/rewriteHandler.ll
 ; qemu/optimized/net_tap-linux.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/ui_keymaps.c.ll
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/lolwut5.ll

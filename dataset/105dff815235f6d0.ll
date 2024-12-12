@@ -1,8 +1,12 @@
 
-; 8 occurrences:
+; 12 occurrences:
 ; libpng/optimized/pngread.c.ll
 ; linux/optimized/intel_dram.ll
 ; linux/optimized/intel_rps.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll

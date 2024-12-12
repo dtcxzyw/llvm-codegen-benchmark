@@ -7,18 +7,16 @@ define i64 @func0000000000000002(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 75000, i64 %3
-  %5 = mul nuw i64 %4, %0
+  %5 = mul nuw i64 %0, %4
   ret i64 %5
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; git/optimized/diffcore-break.ll
 ; jemalloc/optimized/malloc_io.ll
 ; jemalloc/optimized/malloc_io.pic.ll
 ; jemalloc/optimized/malloc_io.sym.ll
 ; ncnn/optimized/matmul.cpp.ll
-; openblas/optimized/lapacke_dgbcon_work.c.ll
-; openblas/optimized/lapacke_dgbtrf_work.c.ll
 ; opencv/optimized/rapid.cpp.ll
 ; opencv/optimized/zmaxheap.cpp.ll
 ; openmpi/optimized/ad_darray.ll
@@ -30,7 +28,7 @@ define i64 @func0000000000000004(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 
@@ -42,7 +40,7 @@ define i64 @func0000000000000005(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -58,7 +56,7 @@ define i64 @func0000000000000000(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 5, i64 %3
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 
@@ -70,7 +68,7 @@ define i64 @func0000000000000003(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 5, i64 %3
-  %5 = mul nuw nsw i64 %4, %0
+  %5 = mul nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -81,7 +79,7 @@ define i64 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 1, i64 %3
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -93,7 +91,7 @@ define i64 @func0000000000000007(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 64, i64 %3
-  %5 = mul nuw nsw i64 %4, %0
+  %5 = mul nuw nsw i64 %0, %4
   ret i64 %5
 }
 

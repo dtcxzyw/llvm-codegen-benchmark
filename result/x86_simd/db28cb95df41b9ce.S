@@ -35,3 +35,17 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI6_0:
+	.long	24                              # 0x18
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltud	.LCPI6_0(%rip){1to8}, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.long	2                               # 0x2
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

@@ -34,7 +34,7 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
@@ -48,7 +48,6 @@ entry:
 ; ockam-rs/optimized/3ai7h96ib4cyqp26.ll
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
 ; openjdk/optimized/regmask.ll
-; openmpi/optimized/osc_rdma_component.ll
 ; spike/optimized/vrol_vv.ll
 ; spike/optimized/vrol_vx.ll
 ; spike/optimized/vror_vv.ll
@@ -56,6 +55,8 @@ entry:
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
 ; typst-rs/optimized/42n69x09j7wzwnay.ll
 ; typst-rs/optimized/4p30esqzpn2o5olu.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

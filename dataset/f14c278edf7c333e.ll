@@ -1,5 +1,5 @@
 
-; 100 occurrences:
+; 98 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -31,7 +31,6 @@
 ; hwloc/optimized/hwloc-info.ll
 ; hwloc/optimized/lstopo-lstopo.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo.ll
-; hyperscan/optimized/huge.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -88,7 +87,6 @@
 ; openssl/optimized/libcrypto-lib-err.ll
 ; openssl/optimized/libcrypto-shlib-err.ll
 ; openssl/optimized/quic_multistream_test-bin-quic_multistream_test.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
 ; spike/optimized/vmadc_vi.ll
 ; spike/optimized/vmadc_vim.ll
 ; spike/optimized/vmadc_vv.ll

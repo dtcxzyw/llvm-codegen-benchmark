@@ -3,7 +3,7 @@
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %3, 0
@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/generic-radix-tree.ll
 ; qemu/optimized/linux-user_main.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
@@ -85,7 +85,7 @@ entry:
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %3, 0
@@ -97,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 8589934591
   %4 = icmp eq i64 %3, 1
@@ -110,7 +110,7 @@ entry:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2
   %4 = icmp eq i64 %3, 0

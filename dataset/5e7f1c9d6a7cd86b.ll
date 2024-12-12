@@ -1,14 +1,21 @@
 
-; 14 occurrences:
+; 21 occurrences:
 ; abc/optimized/mapperRefs.c.ll
 ; abc/optimized/sfmSat.c.ll
 ; arrow/optimized/diff.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; libpng/optimized/pngread.c.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; qemu/optimized/block_vhdx.c.ll
@@ -22,11 +29,17 @@ entry:
   ret i64 %2
 }
 
-; 9 occurrences:
+; 15 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/multi.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; curl/optimized/libcurl_la-multi.ll
-; gromacs/optimized/domdec_network.cpp.ll
 ; linux/optimized/zstd_decompress.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; tls-rs/optimized/2xhpv4vf07do7r8g.ll
@@ -52,10 +65,8 @@ entry:
   ret i64 %2
 }
 
-; 3 occurrences:
-; linux/optimized/nf_conntrack_ftp.ll
+; 1 occurrences:
 ; linux/optimized/nf_conntrack_proto_tcp.ll
-; linux/optimized/nf_nat_sip.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i32 %0) #0 {
 entry:

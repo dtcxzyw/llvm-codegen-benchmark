@@ -134,6 +134,19 @@ entry:
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
 ; Function Attrs: nounwind
+define i32 @func0000000000000028(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ult i8 %1, 32
+  %3 = or i1 %2, %0
+  %4 = select i1 %3, i32 -1, i32 1
+  ret i32 %4
+}
+
+; 3 occurrences:
+; postgres/optimized/wchar.ll
+; postgres/optimized/wchar_shlib.ll
+; postgres/optimized/wchar_srv.ll
+; Function Attrs: nounwind
 define i32 @func0000000000000014(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, -1

@@ -22,6 +22,14 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$9, %esi
 	cmovaeq	%rcx, %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$1055, %esi                     # imm = 0x41F
+	setae	%al
+	orb	%dil, %al
+	movzbl	%al, %eax
+	andl	$1, %eax
+	shll	$4, %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	cmpl	$2, %esi
 	setge	%al

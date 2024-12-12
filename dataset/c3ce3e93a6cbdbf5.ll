@@ -32,9 +32,8 @@ entry:
   ret i64 %2
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/cgroup.ll
-; linux/optimized/sysfs_engines.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:

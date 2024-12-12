@@ -35,9 +35,11 @@ entry:
   ret i32 %4
 }
 
-; 33 occurrences:
+; 35 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/mioRead.c.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/arith_rewriter.cpp.ll
 ; cvc5/optimized/congruence_manager.cpp.ll

@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	%dil, %dl
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	%esi, %edi
 	testb	%dil, %dl
 	sete	%al

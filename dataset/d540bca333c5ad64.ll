@@ -260,7 +260,7 @@ entry:
 define i32 @func000000000000000a(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = zext i16 %3 to i32
   %5 = shl nuw i32 %4, 16
   ret i32 %5
@@ -283,7 +283,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i16 %0, i16 %1) #0 {
 entry:
-  %2 = or i16 %1, %0
+  %2 = or i16 %0, %1
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, 24
   ret i32 %4
@@ -295,7 +295,7 @@ entry:
 define i32 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -32768
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = zext i16 %3 to i32
   %5 = shl nuw nsw i32 %4, 13
   ret i32 %5

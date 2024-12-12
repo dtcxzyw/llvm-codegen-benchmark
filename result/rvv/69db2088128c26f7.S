@@ -36,11 +36,3 @@ func000000000000001d:                   # @func000000000000001d
 	vadd.vi	v10, v10, 4
 	vwaddu.wv	v8, v8, v10
 	ret
-func000000000000000f:                   # @func000000000000000f
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vi	v10, v10, -8
-	vwaddu.wv	v8, v8, v10
-	li	a0, 296
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
-	ret

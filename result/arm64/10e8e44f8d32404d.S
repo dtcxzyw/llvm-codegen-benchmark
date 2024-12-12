@@ -12,3 +12,10 @@ func000000000000000c:                   // @func000000000000000c
 	csel	x0, xzr, x8, eq
 	ret
                                         // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	and	x8, x1, #0xffffffffffffff00
+	cmp	x0, #257
+	csel	x0, x8, xzr, lo
+	ret
+                                        // -- End function

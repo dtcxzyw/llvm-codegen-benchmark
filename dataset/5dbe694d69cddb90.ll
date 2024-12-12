@@ -140,7 +140,7 @@ entry:
   ret i64 %3
 }
 
-; 229 occurrences:
+; 228 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/exec.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -204,7 +204,6 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; gromacs/optimized/awh.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/colvar.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll

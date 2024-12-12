@@ -1,11 +1,9 @@
 
-; 24 occurrences:
+; 21 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; faiss/optimized/random.cpp.ll
-; graphviz/optimized/randomkit.c.ll
-; openmpi/optimized/tm_mt.ll
 ; quantlib/optimized/burley2020sobolrsg.ll
 ; quantlib/optimized/differentialevolution.ll
 ; quantlib/optimized/fireflyalgorithm.ll
@@ -20,7 +18,6 @@
 ; quantlib/optimized/seedgenerator.ll
 ; quantlib/optimized/sobolrsg.ll
 ; quantlib/optimized/zigguratrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; rocksdb/optimized/cache_key.cc.ll
 ; stockfish/optimized/bitboard.ll
 ; stockfish/optimized/position.ll

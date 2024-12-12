@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; meshlab/optimized/matching.cpp.ll
 ; wasmedge/optimized/elem.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
-; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -27,11 +26,11 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = and i64 %5, 4294967295
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
@@ -39,7 +38,6 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
-; yosys/optimized/calc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -47,7 +45,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 5
   %6 = and i64 %5, 1
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 

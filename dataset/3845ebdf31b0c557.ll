@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/longobject.ll
-; linux/optimized/fs-writeback.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
@@ -27,19 +26,19 @@ entry:
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = add nuw nsw i64 %0, %1
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ult i64 %5, 11
+  %6 = icmp samesign ult i64 %5, 11
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func000000000000010a(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = add nuw i64 %0, %1
@@ -51,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = add nsw i64 %0, %1
@@ -64,7 +63,7 @@ entry:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = add nsw i64 %0, %1
@@ -137,19 +136,19 @@ entry:
 ; 1 occurrences:
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func00000000000000f8(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = add nsw i64 %0, %1
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, 2046
+  %6 = icmp samesign ugt i64 %5, 2046
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = add nuw i64 %0, %1
@@ -161,7 +160,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = add nuw nsw i64 %0, %1

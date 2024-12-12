@@ -1,9 +1,16 @@
 
-%"struct.Stockfish::Search::RootMove.2766372" = type { i32, i32, i32, i32, i8, i8, i32, i32, i32, %"class.std::vector.2766366" }
-%"class.std::vector.2766366" = type { %"struct.std::_Vector_base.2766367" }
-%"struct.std::_Vector_base.2766367" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2766368" }
-%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2766368" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2766369" }
-%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2766369" = type { ptr, ptr, ptr }
+%"struct.Stockfish::Search::RootMove.2878603" = type { i32, i32, i32, i32, i8, i8, i32, i32, i32, %"class.std::vector.2878597" }
+%"class.std::vector.2878597" = type { %"struct.std::_Vector_base.2878598" }
+%"struct.std::_Vector_base.2878598" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878599" }
+%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878599" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878600" }
+%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878600" = type { ptr, ptr, ptr }
+%"struct.llvm::opt::OptTable::Info.3149860" = type { %"class.llvm::ArrayRef.0.3149861", %"class.llvm::StringLiteral.3149862", ptr, %"struct.std::array.3149863", ptr, i32, i8, i8, i32, i32, i16, i16, ptr, ptr }
+%"class.llvm::ArrayRef.0.3149861" = type { ptr, i64 }
+%"class.llvm::StringLiteral.3149862" = type { %"class.llvm::StringRef.3149864" }
+%"class.llvm::StringRef.3149864" = type { ptr, i64 }
+%"struct.std::array.3149863" = type { [1 x %"struct.std::pair.3149865"] }
+%"struct.std::pair.3149865" = type { %"struct.std::array.1.3149866", ptr }
+%"struct.std::array.1.3149866" = type { [2 x i32] }
 
 ; 12 occurrences:
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
@@ -29,8 +36,7 @@ entry:
   ret i64 %7
 }
 
-; 39 occurrences:
-; abseil-cpp/optimized/time_zone_info.cc.ll
+; 36 occurrences:
 ; abseil-cpp/optimized/vlog_config.cc.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; eastl/optimized/TestDeque.cpp.ll
@@ -42,7 +48,6 @@ entry:
 ; llvm/optimized/ASTUnit.cpp.ll
 ; llvm/optimized/AsmLexer.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
-; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CodeGenTarget.cpp.ll
 ; llvm/optimized/ControlHeightReduction.cpp.ll
@@ -57,7 +62,6 @@ entry:
 ; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
-; llvm/optimized/OptTable.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SafeStackLayout.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
@@ -72,11 +76,26 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.Stockfish::Search::RootMove.2766372", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.Stockfish::Search::RootMove.2878603", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4
   %7 = udiv exact i64 %6, 56
+  ret i64 %7
+}
+
+; 3 occurrences:
+; abseil-cpp/optimized/time_zone_info.cc.ll
+; llvm/optimized/AsmWriterEmitter.cpp.ll
+; llvm/optimized/OptTable.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %"struct.llvm::opt::OptTable::Info.3149860", ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = sub i64 %5, %4
+  %7 = udiv exact i64 %6, 104
   ret i64 %7
 }
 

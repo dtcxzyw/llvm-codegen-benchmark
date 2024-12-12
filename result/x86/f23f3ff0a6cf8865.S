@@ -16,10 +16,10 @@ func0000000000000001:                   # @func0000000000000001
 	movq	$-2147483648, %rcx              # imm = 0x80000000
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	cmoveq	%rax, %rcx
-	testb	$1, %dil
-	cmoveq	%rcx, %rax
 	cmpq	$2047, %rdx                     # imm = 0x7FF
 	cmovneq	%rcx, %rax
+	testb	$1, %dil
+	cmoveq	%rcx, %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	testb	$1, %sil

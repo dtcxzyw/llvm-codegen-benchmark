@@ -1,5 +1,7 @@
 
 ; 214 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -134,7 +136,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -211,7 +212,6 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
@@ -254,17 +254,16 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; hwloc/optimized/lstopo-lstopo.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo.ll
-; lief/optimized/timing.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = sdiv i64 %3, 1000
+  %4 = sdiv i64 %3, 1000000
   %5 = mul i64 %0, 1000
-  %6 = add i64 %4, %5
+  %6 = add i64 %5, %4
   ret i64 %6
 }
 

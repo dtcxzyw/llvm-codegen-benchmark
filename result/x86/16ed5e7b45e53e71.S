@@ -10,7 +10,13 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	andl	%edx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000a:                   # @func000000000000000a
+	andl	$63, %edx
+	xorl	%eax, %eax
+	cmpl	%esi, %edi
+	cmovgl	%edx, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
 	movzbl	%dl, %ecx
 	cmpl	%esi, %edi
 	movl	$16, %eax
@@ -21,4 +27,10 @@ func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
 	cmovbl	%edx, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	andl	$-8, %edx
+	xorl	%eax, %eax
+	cmpl	%esi, %edi
+	cmoval	%edx, %eax
 	retq

@@ -17,20 +17,19 @@ func0000000000000038:                   // @func0000000000000038
                                         // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
-func000000000000001b:                   // @func000000000000001b
+func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
-	mov	w8, #6                          // =0x6
+	mov	x8, #43979                      // =0xabcb
+	movk	x8, #32553, lsl #16
+	movk	x8, #429, lsl #32
 	umulh	x0, x0, x8
                                         // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
-func000000000000003b:                   // @func000000000000003b
+func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	mov	w8, #51712                      // =0xca00
-	movk	w8, #15258, lsl #16
-	mul	x9, x0, x8
-	umulh	x8, x0, x8
-	extr	x0, x8, x9, #52
+	mov	w8, #2000                       // =0x7d0
+	umulh	x0, x0, x8
                                         // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

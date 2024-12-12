@@ -13,3 +13,9 @@ func0000000000000007:                   # @func0000000000000007
 	shll	$15, %eax
 	subl	%edi, %eax
 	retq
+func0000000000000063:                   # @func0000000000000063
+	xorl	%eax, %eax
+	cmpq	$6, %rsi
+	adcl	$12, %eax
+	subl	%edi, %eax
+	retq

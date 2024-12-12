@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 60 occurrences:
 ; abc/optimized/ifDec10.c.ll
 ; cmake/optimized/cover.c.ll
 ; cpython/optimized/obmalloc.ll
@@ -25,7 +25,6 @@
 ; linux/optimized/exfldio.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hwregs.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/intel-gtt.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll

@@ -9,11 +9,11 @@
 ; openjdk/optimized/edgeStore.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 10
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -52,17 +52,16 @@ entry:
 ; z3/optimized/theory_special_relations.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 6
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/wlcReadSmt.c.ll
-; linux/optimized/mpih-mul.ll
 ; opencv/optimized/version.cpp.ll
 ; postgres/optimized/appendinfo.ll
 ; postgres/optimized/execPartition.ll
@@ -81,11 +80,11 @@ entry:
 ; z3/optimized/euf_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

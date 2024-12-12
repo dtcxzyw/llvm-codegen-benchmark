@@ -12,8 +12,9 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; git/optimized/pack-redundant.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i64 %1, i64 %2) #0 {
 entry:

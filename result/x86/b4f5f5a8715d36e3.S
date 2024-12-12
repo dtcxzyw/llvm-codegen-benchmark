@@ -3,11 +3,6 @@ func000000000000003f:                   # @func000000000000003f
 	imull	$60, %edi, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	imull	$3600, %esi, %ecx               # imm = 0xE10
-	imull	$60, %edi, %eax
-	addl	%ecx, %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	imull	$-862048943, %esi, %ecx         # imm = 0xCC9E2D51
 	imull	$461845907, %edi, %eax          # imm = 0x1B873593
@@ -16,6 +11,11 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000004:                   # @func0000000000000004
 	imull	$1013, %esi, %ecx               # imm = 0x3F5
 	imull	$31337, %edi, %eax              # imm = 0x7A69
+	addl	%ecx, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	imull	$38134234, %esi, %ecx           # imm = 0x245E1DA
+	imull	$42123, %edi, %eax              # imm = 0xA48B
 	addl	%ecx, %eax
 	retq
 func0000000000000015:                   # @func0000000000000015

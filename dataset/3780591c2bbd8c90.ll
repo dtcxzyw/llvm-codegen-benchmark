@@ -1,7 +1,8 @@
 
-; 97 occurrences:
+; 99 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/floatobject.ll
 ; linux/optimized/md-bitmap.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -94,30 +95,17 @@
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; qemu/optimized/disas_riscv.c.ll
+; redis/optimized/fpconv_dtoa.ll
 ; spike/optimized/kslra16_u.ll
 ; spike/optimized/kslra8_u.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 15
   %2 = icmp eq i32 %1, 15
   %3 = add nsw i32 %1, -3
   %4 = select i1 %2, i32 13, i32 %3
-  ret i32 %4
-}
-
-; 3 occurrences:
-; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkAbcUtil.c.ll
-; nuttx/optimized/lib_trunc.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
-entry:
-  %1 = and i32 %0, 31
-  %2 = icmp ult i32 %1, 6
-  %3 = add nsw i32 %1, -5
-  %4 = select i1 %2, i32 0, i32 %3
   ret i32 %4
 }
 
@@ -128,7 +116,7 @@ entry:
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; wireshark/optimized/packet-rtp-ed137.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 3
   %2 = add nuw nsw i32 %1, 1

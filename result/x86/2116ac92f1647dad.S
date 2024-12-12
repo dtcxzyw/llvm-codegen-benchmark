@@ -5,19 +5,19 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$2, %edi
 	setb	%al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	incl	%esi
 	incl	%edi
 	orl	%esi, %edi
 	setns	%al
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	addl	$2147483647, %esi               # imm = 0x7FFFFFFF
 	decl	%edi
 	orl	%esi, %edi
 	setns	%al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	addl	$-17, %esi
 	addl	$-17, %edi
 	orl	%esi, %edi
@@ -30,7 +30,7 @@ func000000000000000a:                   # @func000000000000000a
 	orl	%esi, %edi
 	setns	%al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	addl	$-17, %esi
 	addl	$-17, %edi
 	orl	%esi, %edi

@@ -92,24 +92,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpsubw	%ymm0, %ymm1, %ymm0
 	vpaddw	.LCPI5_0(%rip), %ymm0, %ymm0
 	retq
-.LCPI6_0:
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
-	.short	65533                           # 0xfffd
 func0000000000000002:                   # @func0000000000000002
-	vpsubw	%ymm0, %ymm1, %ymm0
-	vpaddw	.LCPI6_0(%rip), %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
+	vpaddw	%ymm0, %ymm1, %ymm0
 	retq

@@ -39,6 +39,7 @@ func0000000000000012:                   # @func0000000000000012
 	zext.w	a0, a0
 	ret
 func0000000000000003:                   # @func0000000000000003
-	andi	a1, a1, 63
+	slli	a1, a1, 34
+	srli	a1, a1, 34
 	addw	a0, a0, a1
 	ret

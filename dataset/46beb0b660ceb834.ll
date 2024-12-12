@@ -23,35 +23,34 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
-; delta-rs/optimized/1rw3q64nilk4jthd.ll
-; delta-rs/optimized/2braxl0lj34anf5z.ll
-; diesel-rs/optimized/2nqojkvzec127ieh.ll
-; graphviz/optimized/shapes.c.ll
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; php/optimized/parse_posix.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, 0
-  %3 = select i1 %0, i1 %2, i1 false
-  %4 = zext i1 %3 to i64
-  ret i64 %4
-}
-
-; 6 occurrences:
+; 7 occurrences:
 ; llvm/optimized/DiagnosticRenderer.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; php/optimized/html.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; spike/optimized/vcpop_m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 16
+  %3 = select i1 %0, i1 %2, i1 false
+  %4 = zext i1 %3 to i64
+  ret i64 %4
+}
+
+; 6 occurrences:
+; delta-rs/optimized/1rw3q64nilk4jthd.ll
+; delta-rs/optimized/2braxl0lj34anf5z.ll
+; diesel-rs/optimized/2nqojkvzec127ieh.ll
+; graphviz/optimized/shapes.c.ll
+; libquic/optimized/time_support.c.ll
+; php/optimized/parse_posix.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, 59
   %3 = select i1 %0, i1 %2, i1 false
   %4 = zext i1 %3 to i64
   ret i64 %4

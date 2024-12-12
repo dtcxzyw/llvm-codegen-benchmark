@@ -59,6 +59,13 @@ func000000000000000e:                   # @func000000000000000e
 	shll	$5, %eax
 	orl	%edx, %eax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	movl	%esi, %eax
+	andl	$16711680, %edx                 # imm = 0xFF0000
+	orl	%edi, %edx
+	shll	$24, %eax
+	orl	%edx, %eax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	movl	%esi, %eax
 	andl	$-32768, %edx                   # imm = 0x8000

@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	btq	%rsi, %rdi
 	setae	%al
 	xorb	$49, %al

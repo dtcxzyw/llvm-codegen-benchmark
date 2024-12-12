@@ -49,7 +49,7 @@
 	.short	96                              # 0x60
 	.short	96                              # 0x60
 	.short	96                              # 0x60
-func0000000000000308:                   # @func0000000000000308
+func0000000000000e08:                   # @func0000000000000e08
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpaddw	.LCPI0_0(%rip), %ymm1, %ymm0

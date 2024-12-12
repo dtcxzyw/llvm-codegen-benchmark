@@ -6,11 +6,11 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax
-	cmpl	$13, %eax
+	cmpl	$32, %eax
 	setb	%al
 	andb	%dil, %al
 	retq

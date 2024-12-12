@@ -3,6 +3,11 @@ func0000000000000060:                   # @func0000000000000060
 	leal	78(%rdi,%rsi), %eax
 	shrl	%eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	shll	$10, %esi
+	leal	-56613888(%rdi,%rsi), %eax
+	shrl	$18, %eax
+	retq
 func000000000000007e:                   # @func000000000000007e
 	shll	$6, %esi
 	leal	128(%rdi,%rsi), %eax

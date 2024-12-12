@@ -6,7 +6,7 @@
 ; quantlib/optimized/lmdif.ll
 ; yosys/optimized/opt_share.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %3, %1
@@ -46,7 +46,7 @@ entry:
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -60,7 +60,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/ceval.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %3, %1

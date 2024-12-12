@@ -1,5 +1,5 @@
 
-; 158 occurrences:
+; 159 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/nwkTiming.c.ll
@@ -44,6 +44,7 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll
 ; llama.cpp/optimized/train.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -115,7 +116,6 @@
 ; opencv/optimized/tracker_dasiamrpn.cpp.ll
 ; opencv/optimized/tvl1_optical_flow.cpp.ll
 ; opencv/optimized/va_intel.cpp.ll
-; opencv/optimized/weighted_median_filter.cpp.ll
 ; openexr/optimized/ImfAcesFile.cpp.ll
 ; openexr/optimized/ImfEnvmap.cpp.ll
 ; openjdk/optimized/HBShaper.ll
@@ -158,6 +158,7 @@
 ; wireshark/optimized/packet-lte-rrc.c.ll
 ; wireshark/optimized/packet-mbim.c.ll
 ; wireshark/optimized/packet-nr-rrc.c.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:

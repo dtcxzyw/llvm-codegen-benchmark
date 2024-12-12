@@ -1,6 +1,6 @@
-func0000000000000048:                   // @func0000000000000048
+func0000000000000088:                   // @func0000000000000088
 // %bb.0:                               // %entry
-	cmp	x3, x0
-	cset	w0, hi
+	cmp	x0, x3
+	cset	w0, lo
 	ret
                                         // -- End function

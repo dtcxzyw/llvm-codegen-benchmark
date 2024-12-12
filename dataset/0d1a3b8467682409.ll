@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/ivyFraig.c.ll
+; boost/optimized/area.ll
 ; graphviz/optimized/mincross.c.ll
 ; libpng/optimized/png.c.ll
 ; lightgbm/optimized/bin.cpp.ll

@@ -9,7 +9,7 @@
 ; openjdk/optimized/hb-set.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2

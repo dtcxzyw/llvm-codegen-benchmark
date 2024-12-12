@@ -1,7 +1,10 @@
 
-; 3 occurrences:
+; 6 occurrences:
 ; clamav/optimized/lzxd.c.ll
 ; icu/optimized/collationdata.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i8 %0, i16 %1) #0 {

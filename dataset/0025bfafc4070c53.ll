@@ -6,7 +6,7 @@
 ; ruby/optimized/vm.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = select i1 %3, i1 true, i1 %0
@@ -23,7 +23,7 @@ entry:
 ; slurm/optimized/node_mgr.ll
 ; wireshark/optimized/packet-spice.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 32767
   %4 = select i1 %3, i1 true, i1 %0
@@ -39,7 +39,7 @@ entry:
 ; yalantinglibs/optimized/example.cpp.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, -4000
   %4 = select i1 %3, i1 true, i1 %0
@@ -52,7 +52,7 @@ entry:
 ; oiio/optimized/rlainput.cpp.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 32
   %4 = select i1 %3, i1 true, i1 %0
@@ -67,7 +67,7 @@ entry:
 ; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/packet-ranap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = select i1 %3, i1 true, i1 %0

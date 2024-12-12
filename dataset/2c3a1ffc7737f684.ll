@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 32 occurrences:
 ; arrow/optimized/row_internal.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -9,7 +9,6 @@
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/listed_forces.cpp.ll
 ; gromacs/optimized/tpxio.cpp.ll
-; hermes/optimized/SourceMapGenerator.cpp.ll
 ; hyperscan/optimized/ng_depth.cpp.ll
 ; hyperscan/optimized/ng_expr_info.cpp.ll
 ; hyperscan/optimized/ng_extparam.cpp.ll
@@ -24,7 +23,6 @@
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
 ; llvm/optimized/ScheduleDAG.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
-; meshlab/optimized/rimls.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/expand_layer.cpp.ll
@@ -35,7 +33,7 @@
 ; rocksdb/optimized/skiplistrep.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = and i64 %0, 4294967295
@@ -43,7 +41,7 @@ entry:
   ret i1 %4
 }
 
-; 25 occurrences:
+; 23 occurrences:
 ; arrow/optimized/row_internal.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -53,7 +51,6 @@ entry:
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/listed_forces.cpp.ll
 ; gromacs/optimized/tpxio.cpp.ll
-; hermes/optimized/SourceMapGenerator.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/AsmPrinterInlineAsm.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -62,7 +59,6 @@ entry:
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
 ; llvm/optimized/ScheduleDAG.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
-; meshlab/optimized/rimls.cpp.ll
 ; opencv/optimized/expand_layer.cpp.ll
 ; opencv/optimized/quantization_utils.cpp.ll
 ; opencv/optimized/reshape_layer.cpp.ll
@@ -70,11 +66,35 @@ entry:
 ; opencv/optimized/tile_layer.cpp.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = and i64 %0, 4294967295
   %4 = icmp ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; hermes/optimized/SourceMapGenerator.cpp.ll
+; meshlab/optimized/rimls.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 5
+  %3 = and i64 %0, 4294967295
+  %4 = icmp samesign ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; hermes/optimized/SourceMapGenerator.cpp.ll
+; meshlab/optimized/rimls.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 5
+  %3 = and i64 %0, 4294967295
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 

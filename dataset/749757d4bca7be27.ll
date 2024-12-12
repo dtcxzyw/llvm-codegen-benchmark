@@ -7,7 +7,7 @@
 ; rocksdb/optimized/version_set.cc.ll
 ; slurm/optimized/burst_buffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000366(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000cc6(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -21,7 +21,7 @@ entry:
 ; abc/optimized/ioReadPlaMo.c.ll
 ; postgres/optimized/spgtextproc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a6(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000d46(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -35,7 +35,7 @@ entry:
 ; abc/optimized/Fxch.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c6(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000d86(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -54,7 +54,7 @@ entry:
 ; slurm/optimized/node_features.ll
 ; slurm/optimized/prep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000316(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000c26(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000004c6(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1
@@ -78,22 +78,9 @@ entry:
 }
 
 ; 1 occurrences:
-; openexr/optimized/ImfHuf.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000146(i32 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %1, 1
-  %5 = icmp slt i64 %4, %3
-  %6 = icmp ult i32 %0, 260
-  %7 = select i1 %5, i1 %6, i1 false
-  ret i1 %7
-}
-
-; 1 occurrences:
 ; casadi/optimized/cs_maxtrans.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c6(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000586(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1

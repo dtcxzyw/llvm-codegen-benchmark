@@ -1,11 +1,12 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; coreutils-rs/optimized/17ojgxcnujh4nt6.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; libjpeg-turbo/optimized/jdmerge.c.ll
 ; libquic/optimized/poly.c.ll
 ; linux/optimized/i2c-core-base.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
@@ -26,7 +27,7 @@ define i16 @func0000000000000003(i16 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 3
   %3 = zext nneg i8 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
@@ -37,7 +38,7 @@ define i16 @func0000000000000002(i16 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 2
   %3 = zext nneg i8 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 

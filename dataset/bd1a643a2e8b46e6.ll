@@ -14,7 +14,7 @@ define i64 @func0000000000000001(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -31,11 +31,11 @@ define i64 @func0000000000000003(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 26 occurrences:
+; 29 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; cpython/optimized/unicodeobject.ll
@@ -60,6 +60,9 @@ entry:
 ; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
 ; tree-sitter-rs/optimized/5edwf61672v3jzil.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
@@ -67,7 +70,7 @@ define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

@@ -1,11 +1,10 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; libquic/optimized/prtime.cc.ll
 ; nix/optimized/fromTOML.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/mvref_common.c.ll
 ; postgres/optimized/pgtz.ll
@@ -24,13 +23,12 @@ entry:
   ret i1 %2
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; libquic/optimized/prtime.cc.ll
 ; meilisearch-rs/optimized/1onj4gqrvchfzpwo.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i16 %0) #0 {
 entry:

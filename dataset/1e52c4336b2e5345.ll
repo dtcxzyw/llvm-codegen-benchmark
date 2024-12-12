@@ -1,5 +1,5 @@
 
-; 123 occurrences:
+; 142 occurrences:
 ; actix-rs/optimized/27zn2x05lna4a2z7.ll
 ; actix-rs/optimized/38w83wyqv1thu0n9.ll
 ; actix-rs/optimized/4vksfexudgt1qids.ll
@@ -123,6 +123,25 @@
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
 ; wasmtime-rs/optimized/yijsgxkf5yj6ls1.ll
+; zed-rs/optimized/06rtve3sizrg126ldkmgb72ea.ll
+; zed-rs/optimized/1688ufmsinybjfg22qw487apg.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/336xmb53s74x7fvnwv8sppb05.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/57a4rocbj9i58n508ja77m5jt.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5zwiozx0qizoaz5dy257szmof.ll
+; zed-rs/optimized/655upmhuk5u49g6wx9tv0hih8.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/6wndapbw172jkqxtgmm5s37me.ll
+; zed-rs/optimized/7od02cvs02zg2t1jcuk4h4evv.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a48ncfl2mo4yu8srnhcxrs0e7.ll
+; zed-rs/optimized/ab01r9sf75x1uliqc5hdvn2v4.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/erzde9u7wnx5zkvy3kzdy8721.ll
 ; Function Attrs: nounwind
 define { ptr, i64 } @func0000000000000005(ptr %0, i64 %1, ptr %2) #0 {
 entry:
@@ -134,8 +153,9 @@ entry:
   ret { ptr, i64 } %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/cardTable.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define { ptr, i64 } @func0000000000000000(ptr %0, i64 %1, ptr %2) #0 {
 entry:

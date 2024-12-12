@@ -22,7 +22,7 @@ func0000000000000031:                   # @func0000000000000031
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vptestmw	%ymm2, %ymm2, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vpord	.LCPI0_1(%rip){1to8}, %ymm0, %ymm1
 	vmovdqu16	%ymm1, %ymm0 {%k1}
 	retq
@@ -50,7 +50,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vptestnmw	%ymm2, %ymm2, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vpord	.LCPI1_1(%rip){1to8}, %ymm0, %ymm1
 	vmovdqu16	%ymm1, %ymm0 {%k1}
 	retq

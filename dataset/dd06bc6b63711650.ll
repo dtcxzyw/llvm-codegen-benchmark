@@ -6,7 +6,7 @@
 ; openusd/optimized/strtod.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = and i64 %2, 9007199254740990
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = and i64 %2, 9007199254740990

@@ -8,13 +8,13 @@ func0000000000000006:                   # @func0000000000000006
 	imulq	%rsi, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	shrl	$3, %edx
 	movzwl	%dx, %eax
 	imulq	%rsi, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	shrq	$2, %rdx
 	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
 	imulq	%rsi, %rdx

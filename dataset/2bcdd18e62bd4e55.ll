@@ -11,11 +11,11 @@
 define double @func0000000000000001(double %0, i8 %1) #0 {
 entry:
   %2 = uitofp nneg i8 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
@@ -23,7 +23,6 @@ entry:
 ; hdf5/optimized/H5Ztrans.c.ll
 ; hermes/optimized/Operations.cpp.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; opencv/optimized/accum.dispatch.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
@@ -42,7 +41,7 @@ entry:
 define double @func0000000000000000(double %0, i8 %1) #0 {
 entry:
   %2 = uitofp i8 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

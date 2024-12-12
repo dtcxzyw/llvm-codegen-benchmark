@@ -1,6 +1,7 @@
 
-; 74 occurrences:
+; 73 occurrences:
 ; abc/optimized/retArea.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/tcp.c.ll
 ; cmake/optimized/uv-common.c.ll
@@ -16,7 +17,6 @@
 ; libuv/optimized/tcp.c.ll
 ; libuv/optimized/uv-common.c.ll
 ; lief/optimized/psa_crypto.c.ll
-; lief/optimized/psa_crypto_aead.c.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/link_watch.ll
@@ -28,7 +28,6 @@
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/SemaExprMember.cpp.ll
-; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; node/optimized/tcp.ll
 ; node/optimized/uv-common.ll
 ; nuttx/optimized/lib_lgamma.c.ll
@@ -79,8 +78,8 @@ define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1032
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %1
-  %6 = and i1 %5, %0
+  %5 = or i1 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -121,20 +120,8 @@ define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2048
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %4, %1
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-acdr.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 15
-  %4 = icmp ult i32 %3, 3
-  %5 = or i1 %4, %1
-  %6 = and i1 %5, %0
+  %5 = or i1 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

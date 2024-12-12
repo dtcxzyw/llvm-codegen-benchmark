@@ -2,7 +2,7 @@
 	.long	8192                            # 0x2000
 .LCPI0_1:
 	.long	49152                           # 0xc000
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpsrld	$12, %ymm1, %ymm1
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpternlogd	$254, .LCPI0_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
@@ -24,7 +24,7 @@ func0000000000000002:                   # @func0000000000000002
 	.long	16777216                        # 0x1000000
 .LCPI2_2:
 	.long	1                               # 0x1
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vptestmd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vorps	.LCPI2_2(%rip){1to8}, %ymm0, %ymm0

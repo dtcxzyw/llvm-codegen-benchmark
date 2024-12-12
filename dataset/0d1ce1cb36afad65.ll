@@ -37,4 +37,15 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = trunc nuw i8 %1 to i1
+  %5 = select i1 %4, i32 %0, i32 %3
+  ret i32 %5
+}
+
 attributes #0 = { nounwind }

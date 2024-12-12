@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 96 occurrences:
 ; abc/optimized/cuddGroup.c.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
@@ -9,6 +9,8 @@
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; assimp/optimized/IFCCurve.cpp.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/fmu_function.cpp.ll
 ; casadi/optimized/nlpsol.cpp.ll
@@ -53,7 +55,6 @@
 ; nuklear/optimized/unity.c.ll
 ; openblas/optimized/dlarrj.c.ll
 ; openblas/optimized/dlarrv.c.ll
-; openblas/optimized/dstein.c.ll
 ; opencv/optimized/rand.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; openjdk/optimized/g1HeapSizingPolicy.ll
@@ -103,11 +104,10 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; graphviz/optimized/shapes.c.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; ipopt/optimized/IpCGPenaltyLSAcceptor.ll
-; ipopt/optimized/IpUtils.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/edge-selectors.cpp.ll
 ; openblas/optimized/dlaebz.c.ll
@@ -122,13 +122,14 @@ entry:
   ret i1 %4
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
+; boost/optimized/expand_on_spheroid.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; graphviz/optimized/shapes.c.ll
 ; graphviz/optimized/xlabels.c.ll
@@ -201,8 +202,11 @@ entry:
   ret i1 %4
 }
 
-; 87 occurrences:
+; 90 occurrences:
 ; assimp/optimized/LWOAnimation.cpp.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
 ; casadi/optimized/ipqp.cpp.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -310,7 +314,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 5 occurrences:
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_sph_geo.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind

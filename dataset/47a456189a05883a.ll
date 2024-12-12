@@ -69,14 +69,37 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 1 occurrences:
+; hdf5/optimized/H5Spoint.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %.neg = sub i32 %2, %1
+  %3 = trunc nuw i64 %0 to i32
+  %4 = add i32 %.neg, %3
+  ret i32 %4
+}
+
+; 6 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; icu/optimized/ustrtrns.ll
 ; icu/optimized/utext.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; opencv/optimized/blenders.cpp.ll
 ; slurm/optimized/cbuf.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %.neg = sub i32 %2, %1
+  %3 = trunc i64 %0 to i32
+  %4 = add i32 %.neg, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_refr.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000020(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg = sub i32 %2, %1
   %3 = trunc i64 %0 to i32
@@ -126,6 +149,17 @@ define i32 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg = sub i32 %2, %1
   %3 = trunc nsw i64 %0 to i32
+  %4 = add i32 %.neg, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; linux/optimized/huf_decompress.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %.neg = sub i32 %2, %1
+  %3 = trunc i64 %0 to i32
   %4 = add i32 %.neg, %3
   ret i32 %4
 }

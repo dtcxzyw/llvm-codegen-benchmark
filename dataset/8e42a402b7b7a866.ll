@@ -11,10 +11,10 @@
 ; wireshark/optimized/packet-p1.c.ll
 ; wireshark/optimized/packet-tcap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -35,10 +35,10 @@ entry:
 ; wireshark/optimized/pref_models.cpp.ll
 ; wireshark/optimized/supported_protocols_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -50,10 +50,10 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp eq ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -69,10 +69,10 @@ entry:
 ; wireshark/optimized/pref_models.cpp.ll
 ; wireshark/optimized/supported_protocols_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000014c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -81,10 +81,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/common.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 256
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -93,10 +93,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/nfrule.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000141(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp eq ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -105,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/posixmodule.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -100
   %4 = and i1 %3, %0

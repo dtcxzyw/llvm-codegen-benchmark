@@ -32,12 +32,13 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 2487297242801635328
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   ret i64 %3
 }
 
-; 13 occurrences:
-; darktable/optimized/introspection_demosaic.c.ll
+; 14 occurrences:
+; delta-rs/optimized/43y2svfstmvqcl15.ll
+; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
@@ -54,7 +55,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 105553116266496
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   ret i64 %3
 }
 
@@ -75,7 +76,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 48
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 
@@ -107,7 +108,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 1000000000
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 

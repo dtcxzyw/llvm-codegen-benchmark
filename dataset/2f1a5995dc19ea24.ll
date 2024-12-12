@@ -9,8 +9,8 @@
 ; linux/optimized/ibs.ll
 ; linux/optimized/mlock.ll
 ; linux/optimized/virtio_pci_modern.ll
+; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
-; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
@@ -48,7 +48,7 @@ entry:
 ; rust-analyzer-rs/optimized/2jyyuxshs9vnz9u0.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %.masked = and i64 %0, -4294967295
@@ -57,17 +57,15 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = or i64 %1, %0
-  %3 = and i64 %2, 17179869183
+  %2 = or i64 %0, %1
+  %3 = and i64 %2, 4
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }

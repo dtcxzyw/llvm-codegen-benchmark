@@ -50,8 +50,9 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:

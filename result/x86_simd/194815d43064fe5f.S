@@ -57,6 +57,29 @@ func0000000000000030:                   # @func0000000000000030
 	vpternlogd	$242, .LCPI3_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (mem & ~ymm1)
 	retq
 .LCPI4_0:
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+func0000000000000011:                   # @func0000000000000011
+	vpcmpltuw	.LCPI4_0(%rip), %ymm1, %k0
+	vpmovm2w	%k0, %ymm1
+	vpsrlw	$15, %ymm1, %ymm1
+	vpor	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI5_0:
 	.short	1140                            # 0x474
 	.short	1140                            # 0x474
 	.short	1140                            # 0x474
@@ -74,8 +97,8 @@ func0000000000000030:                   # @func0000000000000030
 	.short	1140                            # 0x474
 	.short	1140                            # 0x474
 func0000000000000020:                   # @func0000000000000020
-	vpcmpnleuw	.LCPI4_0(%rip), %ymm1, %k0
+	vpcmpnleuw	.LCPI5_0(%rip), %ymm1, %k0
 	vpmovm2w	%k0, %ymm1
 	vpsrlw	$15, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

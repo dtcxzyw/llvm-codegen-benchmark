@@ -10,8 +10,9 @@ func0000000000000007:                   # @func0000000000000007
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
 	setne	%al
+	shll	$20, %eax
 	orl	%esi, %edi
-	leal	(%rdi,%rax,2), %eax
+	orl	%edi, %eax
 	retq
 func0000000000000033:                   # @func0000000000000033
 	xorl	%eax, %eax

@@ -4,6 +4,7 @@
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/float16.cc.ll
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
@@ -207,7 +208,6 @@
 ; openusd/optimized/vec3h.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll

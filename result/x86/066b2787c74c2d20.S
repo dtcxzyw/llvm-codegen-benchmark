@@ -34,6 +34,12 @@ func0000000000000042:                   # @func0000000000000042
 	subq	%rdi, %rax
 	addq	$2, %rax
 	retq
+func0000000000000012:                   # @func0000000000000012
+	sarq	$32, %rsi
+	leaq	(%rsi,%rdx), %rax
+	notq	%rdi
+	addq	%rdi, %rax
+	retq
 func0000000000000044:                   # @func0000000000000044
 	sarq	$3, %rdx
 	leaq	(%rdx,%rsi), %rax

@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; delta-rs/optimized/5d242f2by7re2olg.ll
 ; delta-rs/optimized/ji6jbkbato2odt0.ll
 ; libwebp/optimized/webp_enc.c.ll
@@ -7,7 +7,6 @@
 ; php/optimized/random.ll
 ; php/optimized/randomizer.ll
 ; proxygen/optimized/Sampling.cpp.ll
-; redis/optimized/mt19937-64.ll
 ; Function Attrs: nounwind
 define double @func0000000000000001(i64 %0) #0 {
 entry:

@@ -1,18 +1,18 @@
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	sext.w	a2, a2
 	bgez	a2, .LBB0_2
 	neg	a1, a1
 .LBB0_2:                                # %entry
 	addw	a0, a0, a1
 	ret
-func0000000000000069:                   # @func0000000000000069
+func00000000000000a9:                   # @func00000000000000a9
 	sext.w	a2, a2
 	blez	a2, .LBB1_2
 	neg	a1, a1
 .LBB1_2:                                # %entry
 	addw	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	sext.w	a2, a2
 	li	a3, 100
 	bne	a2, a3, .LBB2_2
@@ -20,7 +20,7 @@ func0000000000000044:                   # @func0000000000000044
 .LBB2_2:                                # %entry
 	addw	a0, a0, a1
 	ret
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	sext.w	a2, a2
 	li	a3, 45
 	bne	a2, a3, .LBB3_2
@@ -28,7 +28,7 @@ func0000000000000045:                   # @func0000000000000045
 .LBB3_2:                                # %entry
 	addw	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	sext.w	a2, a2
 	bgez	a2, .LBB4_2
 	neg	a1, a1

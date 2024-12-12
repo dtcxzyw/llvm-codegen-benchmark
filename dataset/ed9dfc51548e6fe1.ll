@@ -1,5 +1,6 @@
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -103,7 +104,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = trunc i128 %1 to i64
   %5 = lshr i64 %4, %3
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }

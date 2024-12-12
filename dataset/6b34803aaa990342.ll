@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -3
   %3 = add i64 %.neg, %1
@@ -16,7 +16,7 @@ entry:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -1080
   %3 = add i64 %.neg, %1
@@ -199,7 +199,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -10
   %3 = add i64 %.neg, %1

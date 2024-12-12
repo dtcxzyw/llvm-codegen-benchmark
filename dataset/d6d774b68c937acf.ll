@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; folly/optimized/Subprocess.cpp.ll
 ; git/optimized/index-pack.ll
 ; git/optimized/revert.ll
@@ -8,7 +8,6 @@
 ; gromacs/optimized/nbnxm_setup.cpp.ll
 ; gromacs/optimized/tmpi_init.cpp.ll
 ; libwebp/optimized/picture_enc.c.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/posix_acl.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; ninja/optimized/ninja.cc.ll
@@ -54,7 +53,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -62,6 +60,7 @@ entry:
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; luau/optimized/DenseHash.test.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; openjdk/optimized/hb-set.ll
 ; postgres/optimized/int.ll
 ; postgres/optimized/like_support.ll
@@ -108,13 +107,12 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
 ; icu/optimized/ppucd.ll
 ; icu/optimized/ucmstate.ll
 ; icu/optimized/uparse.ll
-; linux/optimized/kexec.ll
 ; linux/optimized/svc.ll
 ; linux/optimized/svcauth_unix.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
@@ -196,10 +194,22 @@ entry:
 ; opencv/optimized/tracker_goturn.cpp.ll
 ; opencv/optimized/tracking_feature.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp slt i32 %2, 1
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; grpc/optimized/socket_utils_posix.cc.ll
+; grpc/optimized/tcp_socket_utils.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp samesign ugt i32 %2, 33554432
   %4 = select i1 %0, i1 true, i1 %3
   ret i1 %4
 }

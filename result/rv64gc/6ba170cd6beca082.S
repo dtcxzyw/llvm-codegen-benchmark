@@ -22,11 +22,19 @@ func000000000000000c:                   # @func000000000000000c
 .LBB2_2:
 	addi	a0, a2, 1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func000000000000000e:                   # @func000000000000000e
 	andi	a3, a0, 1
 	bnez	a3, .LBB3_2
 	mv	a0, a1
 	ret
 .LBB3_2:
+	addi	a0, a2, 1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	andi	a3, a0, 1
+	bnez	a3, .LBB4_2
+	mv	a0, a1
+	ret
+.LBB4_2:
 	addi	a0, a2, 1
 	ret

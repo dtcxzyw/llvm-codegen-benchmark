@@ -1,44 +1,44 @@
+func0000000000000401:                   # @func0000000000000401
+	addiw	a2, a2, 1
+	subw	a0, a0, a1
+	xor	a0, a0, a2
+	seqz	a0, a0
+	ret
+func0000000000000601:                   # @func0000000000000601
+	addiw	a2, a2, 1
+	subw	a0, a0, a1
+	xor	a0, a0, a2
+	seqz	a0, a0
+	ret
+func0000000000000641:                   # @func0000000000000641
+	addiw	a2, a2, 1
+	subw	a0, a0, a1
+	xor	a0, a0, a2
+	seqz	a0, a0
+	ret
 func0000000000000201:                   # @func0000000000000201
 	addiw	a2, a2, 1
 	subw	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000301:                   # @func0000000000000301
-	addiw	a2, a2, 1
-	subw	a0, a0, a1
-	xor	a0, a0, a2
-	seqz	a0, a0
-	ret
-func0000000000000321:                   # @func0000000000000321
-	addiw	a2, a2, 1
-	subw	a0, a0, a1
-	xor	a0, a0, a2
-	seqz	a0, a0
-	ret
-func0000000000000101:                   # @func0000000000000101
-	addiw	a2, a2, 1
-	subw	a0, a0, a1
-	xor	a0, a0, a2
-	seqz	a0, a0
-	ret
-func00000000000003da:                   # @func00000000000003da
+func00000000000007aa:                   # @func00000000000007aa
 	addiw	a2, a2, 1
 	subw	a0, a0, a1
 	slt	a0, a2, a0
 	ret
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	addiw	a2, a2, 1
 	subw	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func000000000000039a:                   # @func000000000000039a
+func000000000000072a:                   # @func000000000000072a
 	addiw	a2, a2, 2
 	subw	a0, a0, a1
 	slt	a0, a2, a0
 	ret
-func0000000000000331:                   # @func0000000000000331
+func0000000000000661:                   # @func0000000000000661
 	addiw	a2, a2, 1
 	subw	a0, a0, a1
 	xor	a0, a0, a2
@@ -50,50 +50,45 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	addiw	a2, a2, 1
 	subw	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func000000000000038a:                   # @func000000000000038a
+func000000000000070a:                   # @func000000000000070a
 	addiw	a2, a2, 1
 	subw	a0, a0, a1
 	slt	a0, a2, a0
 	ret
-func0000000000000134:                   # @func0000000000000134
+func0000000000000264:                   # @func0000000000000264
 	addiw	a2, a2, -1
 	subw	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	addiw	a2, a2, -1
 	subw	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000298:                   # @func0000000000000298
-	addiw	a2, a2, 1
-	subw	a0, a0, a1
-	sltu	a0, a2, a0
-	ret
-func000000000000032c:                   # @func000000000000032c
+func000000000000064c:                   # @func000000000000064c
 	addiw	a2, a2, 1
 	subw	a0, a0, a1
 	xor	a0, a0, a2
 	snez	a0, a0
 	ret
-func0000000000000396:                   # @func0000000000000396
+func0000000000000726:                   # @func0000000000000726
 	addiw	a2, a2, 4
 	subw	a0, a0, a1
 	slt	a0, a0, a2
 	ret
-func0000000000000311:                   # @func0000000000000311
+func0000000000000621:                   # @func0000000000000621
 	addiw	a2, a2, 1
 	subw	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000141:                   # @func0000000000000141
+func0000000000000281:                   # @func0000000000000281
 	addiw	a2, a2, -1
 	subw	a0, a0, a1
 	xor	a0, a0, a2

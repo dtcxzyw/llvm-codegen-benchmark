@@ -3,11 +3,11 @@
 ; fmt/optimized/chrono-test.cc.ll
 ; folly/optimized/Singleton.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000216(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000426(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = icmp slt i32 %5, 3
   ret i1 %6
 }
@@ -19,13 +19,12 @@ entry:
 ; fmt/optimized/chrono-test.cc.ll
 ; folly/optimized/Singleton.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
-  %4 = sext i1 %3 to i32
-  %5 = sub i32 0, %0
-  %6 = icmp eq i32 %4, %5
-  ret i1 %6
+  %.neg = zext i1 %3 to i32
+  %4 = icmp eq i32 %0, %.neg
+  ret i1 %4
 }
 
 ; 229 occurrences:
@@ -259,13 +258,12 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
-  %4 = sext i1 %3 to i32
-  %5 = sub i32 0, %0
-  %6 = icmp eq i32 %4, %5
-  ret i1 %6
+  %.neg = zext i1 %3 to i32
+  %4 = icmp eq i32 %0, %.neg
+  ret i1 %4
 }
 
 ; 56 occurrences:
@@ -326,24 +324,23 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
-  %4 = sext i1 %3 to i32
-  %5 = sub i32 0, %0
-  %6 = icmp ne i32 %4, %5
-  ret i1 %6
+  %.neg = zext i1 %3 to i32
+  %4 = icmp ne i32 %0, %.neg
+  ret i1 %4
 }
 
 ; 2 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = icmp slt i32 %5, 9
   ret i1 %6
 }
@@ -351,11 +348,11 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = icmp sgt i32 %5, -1
   ret i1 %6
 }
@@ -367,11 +364,11 @@ entry:
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000019a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000032a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = icmp sgt i32 %5, -719469
   ret i1 %6
 }
@@ -380,11 +377,11 @@ entry:
 ; openblas/optimized/dsbtrd.c.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000029a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000052a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = icmp sgt i32 %5, -719469
   ret i1 %6
 }

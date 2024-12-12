@@ -1,10 +1,9 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/tznames_impl.ll
 ; icu/optimized/uspoof_conf.ll
 ; linux/optimized/intel_dp_hdcp.ll
-; linux/optimized/ioport.ll
 ; linux/optimized/nfs4xdr.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
@@ -57,7 +56,8 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; jq/optimized/decNumber.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll

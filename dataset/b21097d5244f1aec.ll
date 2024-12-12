@@ -30,9 +30,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
-; gromacs/optimized/merge_sort.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

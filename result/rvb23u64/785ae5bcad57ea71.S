@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	sext.w	a1, a1
 	andi	a2, a2, 255
 	addi	a2, a2, -51
@@ -8,7 +8,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	and	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	andi	a2, a2, 255
 	sext.w	a1, a1
 	snez	a1, a1
@@ -16,7 +16,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	and	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	sext.w	a1, a1
 	andi	a2, a2, 255
 	sltiu	a2, a2, 222

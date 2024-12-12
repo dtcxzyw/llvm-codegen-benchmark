@@ -9,7 +9,7 @@ define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 127
   %3 = icmp ne i16 %2, 21
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = freeze i1 %4
   ret i1 %5
 }

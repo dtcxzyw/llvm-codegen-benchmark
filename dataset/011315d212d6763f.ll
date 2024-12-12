@@ -1,9 +1,8 @@
 
-; 136 occurrences:
+; 130 occurrences:
 ; assimp/optimized/ColladaExporter.cpp.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; c3c/optimized/linker.c.ll
-; casadi/optimized/kinsol_spbcgs.c.ll
-; casadi/optimized/kinsol_sptfqmr.c.ll
 ; chibicc/optimized/codegen.ll
 ; clamav/optimized/crtmgr.c.ll
 ; cmake/optimized/archive_acl.c.ll
@@ -11,7 +10,6 @@
 ; cmake/optimized/cmMakefile.cxx.ll
 ; cpython/optimized/_json.ll
 ; csmith/optimized/Type.cpp.ll
-; git/optimized/count-objects.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; graphviz/optimized/SparseMatrix.c.ll
@@ -48,7 +46,6 @@
 ; llvm/optimized/Linux.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/PGOMemOPSizeOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RecordStreamer.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
@@ -67,7 +64,6 @@
 ; meshlab/optimized/alignset.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; nanobind/optimized/nb_ndarray.cpp.ll
-; nuttx/optimized/lib_pathconf.c.ll
 ; ocio/optimized/BitDepthUtils.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/GpuShaderUtils.cpp.ll
@@ -114,8 +110,6 @@
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
-; wireshark/optimized/packet-asphodel.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-isakmp.c.ll
 ; wireshark/optimized/packet-l2tp.c.ll
@@ -144,7 +138,7 @@ entry:
   ret i8 %2
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -179,7 +173,6 @@ entry:
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll

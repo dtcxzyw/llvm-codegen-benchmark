@@ -1,14 +1,12 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libwebp/optimized/quant_dec.c.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
-; openblas/optimized/lapacke_dgbcon_work.c.ll
-; openblas/optimized/lapacke_dgbtrf_work.c.ll
 ; openusd/optimized/quant_common.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002d(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000004d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -17,9 +15,8 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/sfmNtk.c.ll
-; icu/optimized/usprep.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -45,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0

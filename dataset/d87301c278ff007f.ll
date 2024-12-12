@@ -1,7 +1,8 @@
 
-; 77 occurrences:
+; 78 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
+; boost/optimized/src.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -80,7 +81,7 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000052(i128 %0, i128 %1, i128 %2) #0 {
 entry:
-  %3 = mul nuw i128 %1, %2
+  %3 = mul nuw i128 %2, %1
   %4 = lshr i128 %3, 64
   %5 = mul nuw i128 %0, %1
   %6 = add nuw i128 %4, %5

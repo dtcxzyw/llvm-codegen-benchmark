@@ -11,9 +11,3 @@ func000000000000000c:                   # @func000000000000000c
 	movzwl	%ax, %eax
 	shrl	$15, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	$2147483520, %esi               # imm = 0x7FFFFF80
-	shrxl	%edi, %esi, %eax
-	testb	%al, %al
-	setns	%al
-	retq

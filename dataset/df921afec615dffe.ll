@@ -1,17 +1,5 @@
 
 ; 2 occurrences:
-; minetest/optimized/cavegen.cpp.ll
-; raylib/optimized/rtextures.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -1
-  %4 = select i1 %1, i32 %3, i32 0
-  %5 = sub nsw i32 %0, %4
-  ret i32 %5
-}
-
-; 2 occurrences:
 ; proxygen/optimized/HeaderTable.cpp.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; Function Attrs: nounwind
@@ -46,9 +34,7 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; openblas/optimized/dlarrv.c.ll
-; postgres/optimized/parse_func.ll
+; 1 occurrences:
 ; postgres/optimized/rangetypes_typanalyze.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
@@ -68,6 +54,17 @@ entry:
   %.neg1 = select i1 %1, i32 %.neg, i32 0
   %3 = add i32 %.neg1, %0
   ret i32 %3
+}
+
+; 1 occurrences:
+; raylib/optimized/rtextures.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = select i1 %1, i32 %3, i32 0
+  %5 = sub nsw i32 %0, %4
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

@@ -38,9 +38,9 @@ entry:
 ; postgres/optimized/quote.ll
 ; postgres/optimized/tsearchcmds.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %0, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %2
   %5 = icmp ult ptr %3, %4
   ret i1 %5
@@ -49,12 +49,10 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000144(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
-  %5 = icmp ult ptr %3, %4
-  ret i1 %5
+  %3 = icmp sgt i64 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

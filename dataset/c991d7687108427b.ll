@@ -8,7 +8,7 @@ entry:
   %3 = add nuw nsw i64 %2, 209
   %4 = and i64 %3, 255
   %5 = shl nuw i64 %1, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = add nsw i64 %2, 30
   %4 = and i64 %3, 255
   %5 = shl i64 %1, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

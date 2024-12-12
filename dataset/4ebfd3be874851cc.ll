@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -16,7 +16,6 @@
 ; openjdk/optimized/assembler_x86.ll
 ; openssl/optimized/libcrypto-lib-ccm128.ll
 ; openssl/optimized/libcrypto-shlib-ccm128.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; qemu/optimized/hw_usb_dev-wacom.c.ll
 ; qemu/optimized/tcg.c.ll
 ; quickjs/optimized/quickjs.ll

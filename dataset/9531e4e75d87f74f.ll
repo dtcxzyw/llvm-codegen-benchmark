@@ -183,7 +183,6 @@ entry:
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReplaceWithVeclib.cpp.ll
@@ -235,6 +234,7 @@ entry:
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; minetest/optimized/guiHyperText.cpp.ll
 ; openusd/optimized/avif.c.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:

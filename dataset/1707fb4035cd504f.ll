@@ -1,5 +1,5 @@
 
-%struct.resource.3359651 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
+%struct.resource.3546544 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_net_e1000e_core.c.ll
@@ -16,11 +16,23 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 8
   %3 = select i1 %2, i64 9, i64 8
-  %4 = getelementptr nusw [10 x i32], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [10 x i32], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 2 occurrences:
+; libdeflate/optimized/deflate_compress.c.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000063(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 8
+  %3 = select i1 %2, i64 9, i64 8
+  %4 = getelementptr nusw nuw [10 x i32], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -254,22 +266,22 @@ entry:
 ; php/optimized/util.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i64 14, i64 12
-  %4 = getelementptr nusw [1 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [1 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i64 6, i64 7
-  %3 = getelementptr nusw [20 x i8], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [20 x i8], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
@@ -288,11 +300,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel-gtt.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000060(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 2
+  %2 = icmp samesign ugt i32 %1, 2
   %3 = select i1 %2, i64 2, i64 0
-  %4 = getelementptr [11 x %struct.resource.3359651], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [11 x %struct.resource.3546544], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -9,11 +9,9 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
-; gromacs/optimized/muParserBase.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {

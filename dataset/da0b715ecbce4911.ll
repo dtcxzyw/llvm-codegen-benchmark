@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-rsa_pss.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pss.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %1
   %4 = sub i32 %2, %3
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/xhistogram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %1
   %4 = sub i32 %2, %3
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/padding.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %1
   %4 = sub i32 %2, %3

@@ -1,6 +1,9 @@
 
-; 22 occurrences:
+; 25 occurrences:
+; cmake/optimized/cmELF.cxx.ll
+; linux/optimized/tg3.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll

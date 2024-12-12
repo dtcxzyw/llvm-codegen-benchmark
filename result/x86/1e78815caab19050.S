@@ -23,8 +23,3 @@ func0000000000000030:                   # @func0000000000000030
 	subl	%edi, %eax
 	addl	$58, %eax
 	retq
-func0000000000000040:                   # @func0000000000000040
-	leal	(%rsi,%rdx), %eax
-	subl	%edi, %eax
-	addl	$2, %eax
-	retq

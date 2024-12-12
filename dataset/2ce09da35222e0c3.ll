@@ -1,5 +1,5 @@
 
-; 435 occurrences:
+; 439 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaIso3.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -8,6 +8,13 @@
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/any_segments_iter.ll
+; boost/optimized/dump.ll
+; boost/optimized/dump_avx2.ll
+; boost/optimized/dump_ssse3.ll
+; boost/optimized/src.ll
+; boost/optimized/url_base.ll
 ; clamav/optimized/phishcheck.c.ll
 ; cmake/optimized/cmCryptoHash.cxx.ll
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
@@ -93,7 +100,6 @@
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/base64.c.ll
 ; libquic/optimized/digest.cc.ll
-; libquic/optimized/hexdump.c.ll
 ; libquic/optimized/md5.cc.ll
 ; libquic/optimized/string_number_conversions.cc.ll
 ; libquic/optimized/url_canon_etc.cc.ll
@@ -236,10 +242,8 @@
 ; php/optimized/pcre2_script_run.ll
 ; php/optimized/pcre2_study.ll
 ; php/optimized/pcre2_xclass.ll
-; php/optimized/php_syslog.ll
 ; php/optimized/quot_print.ll
 ; php/optimized/url.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/cryptohashfuncs.ll
 ; postgres/optimized/dbsize.ll
 ; postgres/optimized/dependencies.ll

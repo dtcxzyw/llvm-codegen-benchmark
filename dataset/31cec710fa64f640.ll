@@ -37,8 +37,32 @@ entry:
 define i8 @func000000000000000c(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 2, i64 58
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc i64 %3 to i8
+  ret i8 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000f(i64 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i64 2, i64 0
+  %3 = add nuw nsw i64 %2, %0
+  %4 = trunc nuw nsw i64 %3 to i8
+  ret i8 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000e(i64 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i64 2, i64 0
+  %3 = add nuw nsw i64 %0, %2
+  %4 = trunc nuw i64 %3 to i8
   ret i8 %4
 }
 

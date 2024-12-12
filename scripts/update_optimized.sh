@@ -21,7 +21,7 @@ scripts/gen_optimized.py dataset llvm/llvm-build/bin/llc result rvb23u64
 scripts/gen_optimized.py build/output llvm/llvm-build/bin/llc result rvv
 scripts/gen_optimized.py dataset llvm/llvm-build/bin/llc result x86
 scripts/gen_optimized.py build/output llvm/llvm-build/bin/llc result x86_simd
-scripts/gen_optimized.py build/output llvm/llvm-build/bin/llc result arm64
+scripts/gen_optimized.py dataset llvm/llvm-build/bin/llc result arm64
 
 ret=$?
 if [ $PRE_COMMIT_MODE -eq 0 ]

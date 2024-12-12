@@ -1,8 +1,6 @@
 
-; 3 occurrences:
+; 1 occurrences:
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:

@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; hyperscan/optimized/fdr_confirm_compile.cpp.ll
+; 6 occurrences:
 ; libwebp/optimized/vp8l_enc.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; openjdk/optimized/zMark.ll

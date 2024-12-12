@@ -1,33 +1,35 @@
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmlt	v3.4s, v2.4s, #0
-	bif	v1.16b, v2.16b, v3.16b
-	add	v0.4s, v1.4s, v0.4s
+	cmp	w2, #0
+	csel	w8, w1, w2, lt
+	add	w0, w0, w8
+	ret
+                                        // -- End function
+func0000000000000028:                   // @func0000000000000028
+// %bb.0:                               // %entry
+	cmp	w2, #15
+	csel	w8, w1, w2, gt
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffffff
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmeq	v3.4s, v2.4s, v4.4s
-	bif	v1.16b, v2.16b, v3.16b
-	add	v0.4s, v1.4s, v0.4s
+	cmn	w2, #1
+	csel	w8, w1, w2, eq
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmle	v3.4s, v2.4s, #0
-	bif	v1.16b, v2.16b, v3.16b
-	add	v0.4s, v1.4s, v0.4s
+	cmp	w2, #1
+	csel	w8, w1, w2, lt
+	add	w0, w8, w0
 	ret
                                         // -- End function
-func0000000000000098:                   // @func0000000000000098
+func0000000000000118:                   // @func0000000000000118
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmle	v3.4s, v2.4s, #0
-	bif	v1.16b, v2.16b, v3.16b
-	add	v0.4s, v1.4s, v0.4s
+	cmp	w2, #1
+	csel	w8, w1, w2, lt
+	add	w0, w8, w0
 	ret
                                         // -- End function

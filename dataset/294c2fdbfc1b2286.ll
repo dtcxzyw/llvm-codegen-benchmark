@@ -16,15 +16,14 @@ entry:
   %3 = shl nsw i64 -1, %2
   %4 = trunc i64 %3 to i32
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; linux/optimized/i915_active.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/i915_pmu.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_context.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dmc.ll
@@ -41,7 +40,7 @@ entry:
   %3 = shl nuw i64 1, %2
   %4 = trunc i64 %3 to i32
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 
@@ -55,7 +54,7 @@ entry:
   %3 = shl nuw i64 1, %2
   %4 = trunc i64 %3 to i32
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 
@@ -68,7 +67,7 @@ entry:
   %3 = shl nuw nsw i64 1, %2
   %4 = trunc i64 %3 to i32
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 

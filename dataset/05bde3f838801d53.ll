@@ -4,7 +4,7 @@
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 16
   %3 = add nsw i32 %2, -1
@@ -22,7 +22,7 @@ entry:
 ; openusd/optimized/resize.c.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 16
   %3 = add nsw i32 %2, 1
@@ -39,7 +39,7 @@ entry:
 ; php/optimized/zend_alloc.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 6
   %3 = add nsw i32 %2, 1

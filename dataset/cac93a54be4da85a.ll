@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; clamav/optimized/upack.c.ll
+; 2 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind

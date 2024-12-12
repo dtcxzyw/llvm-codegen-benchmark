@@ -23,12 +23,20 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$770, %eax                      # imm = 0x302
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	cmpl	$20, %esi
 	movl	$1, %ecx
 	sbbq	$-1, %rcx
 	testb	$1, %dil
 	movl	$3, %eax
+	cmoveq	%rcx, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$100, %esi
+	movl	$3, %ecx
+	sbbq	$0, %rcx
+	testb	$1, %dil
+	movl	$1, %eax
 	cmoveq	%rcx, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -47,4 +55,14 @@ func0000000000000006:                   # @func0000000000000006
 	testb	$1, %dil
 	movl	$4, %eax
 	cmoveq	%rsi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%ecx, %ecx
+	cmpl	$134217764, %esi                # imm = 0x8000024
+	setae	%cl
+	shll	$6, %ecx
+	orq	$536, %rcx                      # imm = 0x218
+	testb	$1, %dil
+	movl	$664, %eax                      # imm = 0x298
+	cmoveq	%rcx, %rax
 	retq

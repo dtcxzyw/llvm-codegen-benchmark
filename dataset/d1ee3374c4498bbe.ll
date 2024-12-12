@@ -4,7 +4,7 @@
 ; linux/optimized/hdac_device.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 236
@@ -18,7 +18,7 @@ entry:
 ; linux/optimized/i915_gem_execbuffer.ll
 ; wireshark/optimized/packet-ssh.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = icmp eq i32 %2, 0
@@ -32,7 +32,7 @@ entry:
 ; icu/optimized/utrie_swap.ll
 ; redis/optimized/aof.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0

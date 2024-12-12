@@ -12,12 +12,13 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; faiss/optimized/sorting.cpp.ll
 ; git/optimized/apply.ll
 ; gromacs/optimized/constr.cpp.ll
 ; gromacs/optimized/fft5d.cpp.ll
 ; linux/optimized/icl_dsi.ll
+; lvgl/optimized/lv_bar.ll
 ; ncnn/optimized/pooling.cpp.ll
 ; ncnn/optimized/pooling1d.cpp.ll
 ; ncnn/optimized/pooling3d.cpp.ll

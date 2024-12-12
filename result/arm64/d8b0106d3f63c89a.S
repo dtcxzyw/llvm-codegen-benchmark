@@ -29,7 +29,14 @@ func0000000000000006:                   // @func0000000000000006
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	sub	x8, x1, x0
-	cmn	x8, #10
+	cmn	x8, #8
 	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000000011:                   // @func0000000000000011
+// %bb.0:                               // %entry
+	sub	x8, x0, #1
+	cmp	x8, x1
+	cset	w0, eq
 	ret
                                         // -- End function

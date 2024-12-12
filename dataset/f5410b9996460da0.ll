@@ -1,5 +1,6 @@
 
-; 102 occurrences:
+; 104 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -13,6 +14,7 @@
 ; gromacs/optimized/readpull.cpp.ll
 ; gromacs/optimized/sm_keywords.cpp.ll
 ; llama.cpp/optimized/common.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
@@ -71,7 +73,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -100,18 +101,21 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   %4 = icmp eq i16 %3, 0
   ret i1 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -119,15 +123,17 @@ entry:
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   %4 = icmp eq i16 %3, 0
   ret i1 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -135,10 +141,10 @@ entry:
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   %4 = icmp ne i16 %3, 0
   ret i1 %4
 }
@@ -149,10 +155,10 @@ entry:
 ; linux/optimized/rx.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   %4 = icmp eq i16 %3, 0
   ret i1 %4
 }
@@ -160,10 +166,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/mlme.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   %4 = icmp ne i16 %3, -1
   ret i1 %4
 }

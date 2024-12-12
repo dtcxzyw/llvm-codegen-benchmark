@@ -16,13 +16,13 @@ entry:
 ; 1 occurrences:
 ; coremark/optimized/core_list_join.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ba(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000bf(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 4
-  %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %1, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -50,13 +50,13 @@ entry:
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 3
-  %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %1, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 

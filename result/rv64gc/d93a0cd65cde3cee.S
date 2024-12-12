@@ -13,8 +13,3 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a1, a1, 48
 	sllw	a0, a1, a0
 	ret
-func000000000000001c:                   # @func000000000000001c
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	sllw	a0, a1, a0
-	ret

@@ -1,4 +1,4 @@
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	leaq	-9(%rdi), %rax
 	addq	$3, %rdi
 	cmpq	$1530, %rsi                     # imm = 0x5FA
@@ -6,14 +6,14 @@ func0000000000000116:                   # @func0000000000000116
 	cmpq	$3, %rdi
 	setl	%al
 	retq
-func000000000000029a:                   # @func000000000000029a
+func000000000000052a:                   # @func000000000000052a
 	notq	%rsi
 	sarq	$63, %rsi
 	orq	$1, %rsi
 	addq	%rdi, %rsi
 	setns	%al
 	retq
-func0000000000000208:                   # @func0000000000000208
+func0000000000000408:                   # @func0000000000000408
 	movabsq	$-100000000000000000, %rax      # imm = 0xFE9CBA87A2760000
 	addq	%rdi, %rax
 	movabsq	$99999999999999999, %rcx        # imm = 0x16345785D89FFFF
@@ -22,7 +22,7 @@ func0000000000000208:                   # @func0000000000000208
 	cmpq	$100, %rax
 	setae	%al
 	retq
-func0000000000000308:                   # @func0000000000000308
+func0000000000000608:                   # @func0000000000000608
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
@@ -31,7 +31,7 @@ func0000000000000308:                   # @func0000000000000308
 	cmpq	$16, %rax
 	setae	%al
 	retq
-func0000000000000118:                   # @func0000000000000118
+func0000000000000228:                   # @func0000000000000228
 	shrq	$62, %rsi
 	cmpq	$1, %rsi
 	movq	$-127, %rax
@@ -40,7 +40,7 @@ func0000000000000118:                   # @func0000000000000118
 	cmpq	$253, %rax
 	setae	%al
 	retq
-func000000000000011c:                   # @func000000000000011c
+func000000000000022c:                   # @func000000000000022c
 	shrq	$62, %rsi
 	cmpq	$1, %rsi
 	movq	$-127, %rax
@@ -49,15 +49,15 @@ func000000000000011c:                   # @func000000000000011c
 	cmpq	$253, %rax
 	setne	%al
 	retq
-func0000000000000191:                   # @func0000000000000191
+func0000000000000321:                   # @func0000000000000321
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
-	setg	%al
+	setle	%al
 	leaq	-1(%rax,%rax), %rax
-	addq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	xorl	%eax, %eax
 	cmpq	$9, %rsi
 	setge	%al

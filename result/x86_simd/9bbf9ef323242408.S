@@ -5,5 +5,5 @@ func000000000000007c:                   # @func000000000000007c
 	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [6,6,6,6]
 	vpmuludq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq

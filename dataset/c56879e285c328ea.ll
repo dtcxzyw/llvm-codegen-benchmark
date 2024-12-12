@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/decode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = add i32 %2, -48325
@@ -28,7 +28,7 @@ entry:
 ; luajit/optimized/minilua.ll
 ; redis/optimized/lcode.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000003a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = icmp eq i32 %2, 131069
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = icmp eq i32 %2, 131070

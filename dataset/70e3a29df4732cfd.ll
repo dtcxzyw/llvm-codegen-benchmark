@@ -11,7 +11,7 @@
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000007e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = shl nuw nsw i32 1, %2
@@ -30,7 +30,7 @@ entry:
 ; abc/optimized/mpmTruth.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -6
   %3 = shl nuw nsw i32 1, %2
@@ -57,7 +57,7 @@ entry:
 ; abc/optimized/sfmCnf.c.ll
 ; lightgbm/optimized/linker_topo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000371(i64 %0, i32 %1) #0 {
+define i1 @func00000000000006e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = shl nuw i32 1, %2
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/kitIsop.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000271(i64 %0, i32 %1) #0 {
+define i1 @func00000000000004e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -6
   %3 = shl i32 2, %2
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -6
   %3 = shl nuw i32 1, %2
@@ -99,7 +99,7 @@ entry:
 ; z3/optimized/recover_01_tactic.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000261(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = shl nuw i32 1, %2

@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 67 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
 ; assimp/optimized/OgreStructs.cpp.ll
@@ -21,6 +21,10 @@
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; hyperscan/optimized/smallwrite_build.cpp.ll
 ; lief/optimized/MapList.cpp.ll
+; llvm/optimized/IfConversion.cpp.ll
+; llvm/optimized/LegacyLegalizerInfo.cpp.ll
+; llvm/optimized/LowerGlobalDtors.cpp.ll
+; llvm/optimized/X86RegisterInfo.cpp.ll
 ; minetest/optimized/activeobjectmgr.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
@@ -64,26 +68,27 @@
 ; pocketpy/optimized/vm.cpp.ll
 ; proxygen/optimized/SecondaryAuthManager.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %1, %2
   %4 = select i1 %3, i64 24, i64 16
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; linux/optimized/uncore_discovery.ll
+; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/staticobject.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %1, %2
   %4 = select i1 %3, i64 16, i64 24
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -93,45 +98,20 @@ entry:
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %1, %2
-  %4 = select i1 %3, i64 24, i64 16
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; assimp/optimized/HL1MDLLoader.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = icmp sgt i16 %1, %2
-  %4 = select i1 %3, i64 16, i64 24
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 4 occurrences:
-; llvm/optimized/IfConversion.cpp.ll
-; llvm/optimized/LegacyLegalizerInfo.cpp.ll
-; llvm/optimized/LowerGlobalDtors.cpp.ll
-; llvm/optimized/X86RegisterInfo.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000013(ptr %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = icmp ult i16 %1, %2
   %4 = select i1 %3, i64 24, i64 16
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
-; llvm/optimized/LegacyLegalizerInfo.cpp.ll
+; assimp/optimized/HL1MDLLoader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000023(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = icmp ugt i16 %1, %2
+  %3 = icmp sgt i16 %1, %2
   %4 = select i1 %3, i64 16, i64 24
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
@@ -153,11 +133,11 @@ entry:
 ; pocketpy/optimized/ceval.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %1, %2
   %4 = select i1 %3, i64 2, i64 0
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

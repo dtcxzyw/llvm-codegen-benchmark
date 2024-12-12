@@ -1,22 +1,22 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	andl	$1, %edx
 	negq	%rdx
 	imulq	$152, %rdx, %rax
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	andl	$1, %edx
 	shll	$3, %edx
 	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setne	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	andl	$1, %edx
 	shll	$2, %edx
 	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq

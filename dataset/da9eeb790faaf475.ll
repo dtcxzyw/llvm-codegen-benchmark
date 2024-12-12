@@ -5,7 +5,7 @@
 define i16 @func000000000000000a(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp sgt i16 %1, -1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i16 64, i16 0
   ret i16 %4
 }
@@ -16,17 +16,15 @@ entry:
 define i16 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 22528
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i16 20480, i16 22528
   ret i16 %4
 }
 
-; 6 occurrences:
-; libquic/optimized/ssl_lib.c.ll
+; 4 occurrences:
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/nvm.ll
 ; llvm/optimized/DwarfCompileUnit.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i1 %0, i16 %1) #0 {
@@ -37,18 +35,7 @@ entry:
   ret i16 %4
 }
 
-; 1 occurrences:
-; libquic/optimized/ssl_lib.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000004(i1 %0, i16 %1) #0 {
-entry:
-  %2 = icmp ult i16 %1, -256
-  %3 = and i1 %2, %0
-  %4 = select i1 %3, i16 -257, i16 0
-  ret i16 %4
-}
-
-; 42 occurrences:
+; 41 occurrences:
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/nvm.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
@@ -72,7 +59,6 @@ entry:
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll

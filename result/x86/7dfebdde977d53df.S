@@ -1,10 +1,10 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrl	$15, %esi
 	andl	$1, %esi
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%esi, %eax
 	movzbl	%ah, %eax
 	cmpl	%edi, %eax
@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	shrl	$18, %esi
 	andl	$1, %esi
 	cmpl	%edi, %esi
@@ -34,13 +34,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %esi
 	seta	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	shrl	$10, %esi
 	andl	$1, %esi
 	cmpl	%edi, %esi
 	setb	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	shrl	$4, %esi
 	andl	$262112, %esi                   # imm = 0x3FFE0
 	cmpl	%edi, %esi

@@ -11,7 +11,7 @@ define i1 @func0000000000000072(i1 %0, float %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = uitofp nneg i32 %3 to float
-  %5 = fcmp ogt float %4, %1
+  %5 = fcmp olt float %1, %4
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }

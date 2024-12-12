@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltiu	a2, a2, 49
@@ -7,7 +7,7 @@ func0000000000000088:                   # @func0000000000000088
 	neg	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	sext.w	a1, a1
 	sext.w	a2, a2
 	seqz	a2, a2
@@ -17,7 +17,7 @@ func0000000000000022:                   # @func0000000000000022
 	li	a0, 1
 .LBB1_2:                                # %entry
 	ret
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltiu	a2, a2, 3
@@ -27,7 +27,20 @@ func0000000000000082:                   # @func0000000000000082
 	li	a0, 2
 .LBB2_2:                                # %entry
 	ret
-func000000000000008c:                   # @func000000000000008c
+func0000000000000058:                   # @func0000000000000058
+	sext.w	a1, a1
+	sext.w	a2, a2
+	lui	a3, 131072
+	addiw	a4, a3, -1
+	xor	a1, a1, a3
+	xor	a2, a2, a4
+	seqz	a2, a2
+	snez	a1, a1
+	or	a1, a1, a2
+	neg	a1, a1
+	and	a0, a0, a1
+	ret
+func000000000000010c:                   # @func000000000000010c
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltiu	a2, a2, 96
@@ -36,7 +49,7 @@ func000000000000008c:                   # @func000000000000008c
 	neg	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	sext.w	a1, a1
 	sext.w	a2, a2
 	seqz	a2, a2
@@ -45,7 +58,7 @@ func000000000000002c:                   # @func000000000000002c
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	sext.w	a2, a2
 	srliw	a1, a1, 21
 	seqz	a2, a2
@@ -53,14 +66,4 @@ func0000000000000030:                   # @func0000000000000030
 	or	a1, a1, a2
 	addi	a1, a1, -1
 	or	a0, a0, a1
-	ret
-func0000000000000038:                   # @func0000000000000038
-	sext.w	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -18
-	seqz	a2, a2
-	snez	a1, a1
-	or	a1, a1, a2
-	neg	a1, a1
-	and	a0, a0, a1
 	ret

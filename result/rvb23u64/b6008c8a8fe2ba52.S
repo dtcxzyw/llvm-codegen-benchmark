@@ -68,14 +68,6 @@ func0000000000000001:                   # @func0000000000000001
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-.LCPI10_0:
-	.quad	0x43e0000000000000              # double 9.2233720368547758E+18
-func000000000000000c:                   # @func000000000000000c
-	lui	a1, %hi(.LCPI10_0)
-	fld	fa5, %lo(.LCPI10_0)(a1)
-	fle.d	a1, fa5, fa0
-	or	a0, a0, a1
-	ret
 func000000000000000e:                   # @func000000000000000e
 	feq.d	a1, fa0, fa0
 	or	a0, a0, a1
@@ -86,6 +78,14 @@ func0000000000000009:                   # @func0000000000000009
 	flt.d	a2, fa5, fa0
 	or	a1, a1, a2
 	xori	a1, a1, 1
+	or	a0, a0, a1
+	ret
+.LCPI12_0:
+	.quad	0x43e0000000000000              # double 9.2233720368547758E+18
+func000000000000000c:                   # @func000000000000000c
+	lui	a1, %hi(.LCPI12_0)
+	fld	fa5, %lo(.LCPI12_0)(a1)
+	fle.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; brotli/optimized/transform.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -11,6 +11,7 @@
 ; linux/optimized/drm_edid.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-common.ll
@@ -32,7 +33,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 7
   %4 = and i32 %3, 256
   %5 = or disjoint i32 %4, %1
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -48,8 +49,8 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 10
   %4 = and i32 %3, 1047552
-  %5 = or disjoint i32 %4, %1
-  %6 = add nuw nsw i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -63,8 +64,8 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = and i32 %3, -16777216
-  %5 = or disjoint i32 %4, %1
-  %6 = add i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -79,7 +80,20 @@ entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = and i32 %3, 4
   %5 = or disjoint i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
+  ret i32 %6
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 16
+  %4 = and i32 %3, 16711680
+  %5 = or i32 %1, %4
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -96,25 +110,13 @@ entry:
 }
 
 ; 1 occurrences:
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 4
-  %4 = and i32 %3, 65520
-  %5 = or i32 %4, %1
-  %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 24
   %4 = and i32 %3, 251658240
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }

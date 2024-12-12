@@ -19,7 +19,7 @@ define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i32 64, i32 32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = add nsw i32 %4, -32
   ret i32 %5
 }

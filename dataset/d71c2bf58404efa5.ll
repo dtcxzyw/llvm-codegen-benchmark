@@ -11,12 +11,12 @@
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; flac/optimized/bitwriter.c.ll
+; lief/optimized/camellia.c.ll
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/resize.ll
 ; openmpi/optimized/coll_base_reduce.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; php/optimized/hash_snefru.ll
-; wireshark/optimized/golay.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {

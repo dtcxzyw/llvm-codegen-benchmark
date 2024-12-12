@@ -21,7 +21,14 @@ entry:
   ret float %5
 }
 
-; 28 occurrences:
+; 35 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll

@@ -1,42 +1,54 @@
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001e4:                   # @func00000000000001e4
 	movzbl	%sil, %eax
 	leal	8(%rax,%rax), %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq
-func00000000000000fc:                   # @func00000000000000fc
+func00000000000001ec:                   # @func00000000000001ec
 	movzbl	%sil, %eax
 	leal	6(%rax,%rax), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setne	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	movzbl	%sil, %eax
 	leal	6(%rax,%rax), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	movzbl	%sil, %eax
 	leal	48(,%rax,8), %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func00000000000000dc:                   # @func00000000000000dc
+func00000000000001f4:                   # @func00000000000001f4
+	movzbl	%sil, %eax
+	leal	8(,%rax,8), %eax
+	cmpl	%eax, %edi
+	setb	%al
+	retq
+func00000000000001ac:                   # @func00000000000001ac
 	movzbl	%sil, %eax
 	leal	-1(,%rax,4), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setne	%al
 	retq
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	movzbl	%sil, %eax
 	leal	-2(%rax,%rax), %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001e8:                   # @func00000000000001e8
 	movzbl	%sil, %eax
 	leal	8(,%rax,4), %eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
+	retq
+func00000000000001f8:                   # @func00000000000001f8
+	movzbl	%sil, %eax
+	leal	8(,%rax,8), %eax
+	cmpl	%eax, %edi
+	seta	%al
 	retq

@@ -7,7 +7,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltuw	.LCPI0_0(%rip), %xmm2, %k1

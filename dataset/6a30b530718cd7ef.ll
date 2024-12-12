@@ -1,21 +1,4 @@
 
-; 8 occurrences:
-; ring-rs/optimized/1y6av6yno9dk5en7.ll
-; ruby/optimized/ancdata.ll
-; ruby/optimized/closure.ll
-; ruby/optimized/fiddle.ll
-; ruby/optimized/handle.ll
-; ruby/optimized/iseq.ll
-; ruby/optimized/pointer.ll
-; wasmtime-rs/optimized/5euizg9wb5pa0ryd.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(ptr %0) #0 {
-entry:
-  %1 = ptrtoint ptr %0 to i64
-  %2 = shl nsw i64 %1, 1
-  ret i64 %2
-}
-
 ; 5 occurrences:
 ; pocketpy/optimized/cffi.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
@@ -30,7 +13,23 @@ entry:
   ret i64 %2
 }
 
-; 295 occurrences:
+; 7 occurrences:
+; ring-rs/optimized/1y6av6yno9dk5en7.ll
+; ruby/optimized/ancdata.ll
+; ruby/optimized/fiddle.ll
+; ruby/optimized/handle.ll
+; ruby/optimized/iseq.ll
+; ruby/optimized/pointer.ll
+; wasmtime-rs/optimized/5euizg9wb5pa0ryd.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(ptr %0) #0 {
+entry:
+  %1 = ptrtoint ptr %0 to i64
+  %2 = shl nsw i64 %1, 1
+  ret i64 %2
+}
+
+; 293 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -82,7 +81,6 @@ entry:
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/File.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/HeapTimekeeper.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
@@ -101,15 +99,12 @@ entry:
 ; lief/optimized/TLS.cpp.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/auth_gss.ll
-; linux/optimized/bsg.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/dev.ll
 ; linux/optimized/direct-io.ll
 ; linux/optimized/dma-buf.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/drm_gem_shmem_helper.ll
-; linux/optimized/drm_prime.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/fib_semantics.ll
@@ -127,14 +122,11 @@ entry:
 ; linux/optimized/nf_log.ll
 ; linux/optimized/nf_nat_proto.ll
 ; linux/optimized/nsfs.ll
-; linux/optimized/nsproxy.ll
 ; linux/optimized/page.ll
 ; linux/optimized/pci-sysfs.ll
 ; linux/optimized/pipe.ll
-; linux/optimized/process_keys.ll
 ; linux/optimized/route.ll
 ; linux/optimized/rpc_pipe.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/sg.ll
 ; linux/optimized/socket.ll
 ; linux/optimized/sys.ll
@@ -166,6 +158,8 @@ entry:
 ; luajit/optimized/lj_snap_dyn.ll
 ; luau/optimized/ConstraintSolver.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -326,11 +320,26 @@ entry:
 ; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/packet.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = shl i64 %1, 32
+  ret i64 %2
+}
+
+; 3 occurrences:
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(ptr %0) #0 {
+entry:
+  %1 = ptrtoint ptr %0 to i64
+  %2 = shl nuw i64 %1, 3
   ret i64 %2
 }
 

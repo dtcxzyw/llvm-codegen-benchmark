@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/mioSop.c.ll
 ; clamav/optimized/crtmgr.c.ll
@@ -21,7 +21,6 @@
 ; folly/optimized/IOThreadPoolExecutor.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/MicroLock.cpp.ll

@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	leaq	8(%rdx), %rax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
@@ -12,19 +12,13 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	andl	$1, %esi
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	andl	$1, %esi
-	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setb	%al
-	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	leaq	8(%rdx), %rax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
@@ -44,27 +38,34 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	leaq	256(%rdx), %rax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
 	cmpq	%rdi, %rax
 	setg	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000024:                   # @func0000000000000024
+	leaq	65535(%rdx), %rax
+	testb	$1, %sil
+	cmoveq	%rdx, %rax
+	cmpq	%rdi, %rax
+	setb	%al
+	retq
+func0000000000000026:                   # @func0000000000000026
 	andl	$1, %esi
 	subq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setl	%al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	leaq	-1000000(%rdx), %rax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
 	cmpq	%rdi, %rax
 	setge	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leaq	-1000000000(%rdx), %rax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax

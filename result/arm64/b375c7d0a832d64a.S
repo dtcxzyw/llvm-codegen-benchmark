@@ -1,109 +1,60 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v2.4s, #60, lsl #8
-	add	v0.4s, v0.4s, v0.4s
-	add	v1.4s, v1.4s, v1.4s
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	mvni	v2.4s, #3, msl #8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
+	lsl	w8, w0, #1
+	and	w8, w8, #0x3c00
+	sub	w0, w8, #1024
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	shl	v0.4s, v0.4s, #24
-	shl	v1.4s, v1.4s, #24
-	movi	v2.4s, #1, lsl #24
-	bic	v1.4s, #128, lsl #24
-	bic	v0.4s, #128, lsl #24
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
+	ubfiz	w8, w0, #24, #7
+	mov	w9, #16777216                   // =0x1000000
+	add	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	movi	v2.4s, #15, lsl #16
-	shl	v0.4s, v0.4s, #16
-	shl	v1.4s, v1.4s, #16
-	movi	v3.4s, #1, lsl #16
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	add	v0.4s, v0.4s, v3.4s
-	add	v1.4s, v1.4s, v3.4s
+	ubfiz	w8, w0, #16, #4
+	add	w0, w8, #16, lsl #12            // =65536
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v0.4s, v0.4s, v0.4s
-	add	v1.4s, v1.4s, v1.4s
-	movi	v2.4s, #32
-	bic	v1.4s, #14
-	bic	v0.4s, #14
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
+	lsl	w8, w0, #1
+	and	w8, w8, #0xfffffff0
+	add	w0, w8, #32
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	mov	w8, #4194240                    // =0x3fffc0
-	shl	v0.4s, v0.4s, #6
-	shl	v1.4s, v1.4s, #6
-	dup	v2.4s, w8
-	mov	w8, #16390                      // =0x4006
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	dup	v2.4s, w8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
+	ubfiz	w8, w0, #6, #16
+	mov	w9, #16390                      // =0x4006
+	add	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #1048560                    // =0xffff0
-	shl	v0.4s, v0.4s, #4
-	shl	v1.4s, v1.4s, #4
-	dup	v2.4s, w8
-	mov	w8, #14346                      // =0x380a
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	dup	v2.4s, w8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
+	ubfiz	w8, w0, #4, #16
+	mov	w9, #14346                      // =0x380a
+	add	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	movi	v2.4s, #60
-	shl	v0.4s, v0.4s, #2
-	shl	v1.4s, v1.4s, #2
-	movi	v3.2d, #0xffffffffffffffff
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	add	v0.4s, v0.4s, v3.4s
-	add	v1.4s, v1.4s, v3.4s
+	ubfiz	w8, w0, #2, #4
+	sub	w0, w8, #1
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	movi	v2.4s, #240, lsl #8
-	shl	v0.4s, v0.4s, #12
-	shl	v1.4s, v1.4s, #12
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	mvni	v2.4s, #223, msl #8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
+	ubfiz	w8, w0, #12, #4
+	sub	w0, w8, #14, lsl #12            // =57344
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	shl	v0.4s, v0.4s, #13
-	shl	v1.4s, v1.4s, #13
-	movi	v2.4s, #56, lsl #24
-	bic	v1.4s, #240, lsl #24
-	bic	v0.4s, #240, lsl #24
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
+	ubfiz	w8, w0, #13, #15
+	mov	w9, #939524096                  // =0x38000000
+	add	w0, w8, w9
 	ret
                                         // -- End function

@@ -49,25 +49,17 @@ func000000000000006d:                   # @func000000000000006d
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
-.LCPI6_0:
-	.long	0x7f7fffff                      # float 3.40282347E+38
-.LCPI6_1:
-	.long	0xff7fffff                      # float -3.40282347E+38
-func00000000000000ca:                   # @func00000000000000ca
-	vmovss	.LCPI6_0(%rip), %xmm2           # xmm2 = [3.40282347E+38,0.0E+0,0.0E+0,0.0E+0]
-	vcmpleps	%xmm2, %xmm0, %k1
-	vmovss	.LCPI6_1(%rip), %xmm0           # xmm0 = [-3.40282347E+38,0.0E+0,0.0E+0,0.0E+0]
-	vcmpleps	%xmm1, %xmm0, %k0 {%k1}
+func0000000000000078:                   # @func0000000000000078
+	vxorps	%xmm2, %xmm2, %xmm2
+	vcmpeqps	%xmm2, %xmm0, %k1
+	vcmpneqps	%xmm2, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
-.LCPI7_0:
-	.long	0x3f800000                      # float 1
-func0000000000000024:                   # @func0000000000000024
+func0000000000000074:                   # @func0000000000000074
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%xmm0, %xmm2, %k1
-	vmovss	.LCPI7_0(%rip), %xmm0           # xmm0 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
-	vcmpltps	%xmm0, %xmm1, %k0 {%k1}
+	vcmpneqps	%xmm2, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
@@ -92,20 +84,17 @@ func000000000000002c:                   # @func000000000000002c
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
+func0000000000000024:                   # @func0000000000000024
+	vxorps	%xmm2, %xmm2, %xmm2
+	vcmpltps	%xmm0, %xmm2, %k1
+	vcmpltps	%xmm2, %xmm1, %k0 {%k1}
+	kmovd	%k0, %eax
+	andb	%dil, %al
+	retq
 func0000000000000087:                   # @func0000000000000087
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpneqps	%xmm2, %xmm0, %k1
 	vcmpeqps	%xmm2, %xmm1, %k0 {%k1}
-	kmovd	%k0, %eax
-	andb	%dil, %al
-	retq
-.LCPI11_0:
-	.long	0x4e6e6b28                      # float 1.0E+9
-func000000000000002e:                   # @func000000000000002e
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpordps	%xmm2, %xmm0, %k1
-	vmovss	.LCPI11_0(%rip), %xmm0          # xmm0 = [1.0E+9,0.0E+0,0.0E+0,0.0E+0]
-	vcmpltps	%xmm0, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq

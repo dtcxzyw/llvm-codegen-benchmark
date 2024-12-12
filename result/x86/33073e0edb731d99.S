@@ -1,9 +1,9 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	imull	%esi, %edi
 	testl	%edi, %edi
 	setns	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	imull	%esi, %edi
 	testl	$2147483647, %edi               # imm = 0x7FFFFFFF
 	setne	%al

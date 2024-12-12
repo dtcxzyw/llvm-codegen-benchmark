@@ -1,5 +1,6 @@
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/get_clusters.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; gromacs/optimized/kernel_gpu_ref.cpp.ll
@@ -20,7 +21,7 @@
 define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float 0x3F1A36E2E0000000, float %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fmul float %4, 0x400921FB60000000
   ret float %5
 }

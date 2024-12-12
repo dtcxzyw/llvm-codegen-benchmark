@@ -150,7 +150,7 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 13 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; cmake/optimized/archive_write_set_format_cpio_binary.c.ll
@@ -160,6 +160,10 @@ entry:
 ; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
 ; rust-analyzer-rs/optimized/4bwxw2k86ri9mh4p.ll
 ; wasmtime-rs/optimized/3yirtpiqdnll1kue.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
@@ -339,19 +343,6 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
-; brotli/optimized/block_splitter.c.ll
-; cpython/optimized/frameobject.ll
-; gromacs/optimized/parser.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 5000
-  %3 = shl nuw nsw i64 %0, 1
-  %4 = select i1 %2, i64 20000, i64 %3
-  ret i64 %4
-}
-
 ; 33 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; graphviz/optimized/bcomps.c.ll
@@ -408,14 +399,13 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/page-writeback.ll
-; openblas/optimized/dgemv_n.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000029(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002b(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 1023
-  %3 = shl nsw i64 %0, 1
+  %3 = shl nuw nsw i64 %0, 1
   %4 = select i1 %2, i64 4096, i64 %3
   ret i64 %4
 }
@@ -433,8 +423,7 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; brotli/optimized/brotli_bit_stream.c.ll
+; 3 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -445,6 +434,40 @@ entry:
   %3 = shl nuw nsw i64 %0, 2
   %4 = select i1 %2, i64 16, i64 %3
   ret i64 %4
+}
+
+; 2 occurrences:
+; brotli/optimized/block_splitter.c.ll
+; cpython/optimized/frameobject.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000023(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ugt i64 %1, 54399
+  %3 = shl nuw nsw i64 %0, 11
+  %4 = select i1 %2, i64 204800, i64 %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; brotli/optimized/brotli_bit_stream.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000053(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 16
+  %3 = shl nuw nsw i64 %0, 2
+  %4 = select i1 %2, i64 16, i64 %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; openblas/optimized/dgemv_n.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000063(i64 %0, i64 %1) #0 {
+entry:
+  %.inv = icmp ult i64 %1, 2048
+  %2 = shl nuw nsw i64 %0, 3
+  %3 = select i1 %.inv, i64 %2, i64 16384
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

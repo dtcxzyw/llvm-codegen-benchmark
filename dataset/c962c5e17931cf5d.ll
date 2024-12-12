@@ -20,7 +20,7 @@ entry:
 ; openusd/optimized/json.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006b(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000ab(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %.inv = icmp slt i32 %2, 0

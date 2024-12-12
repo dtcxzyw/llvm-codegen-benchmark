@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; slurm/optimized/gres_filter.ll
 ; wireshark/optimized/packet-ethercat-datagram.c.ll
@@ -28,9 +27,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i16 %2) #0 {
 entry:

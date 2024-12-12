@@ -19,10 +19,20 @@ func0000000000000010:                   # @func0000000000000010
 	cmpq	$32769, %rdx                    # imm = 0x8001
 	cmovbl	%esi, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	movl	%edi, %eax
+	cmpq	$3, %rdx
+	cmovael	%esi, %eax
+	retq
 func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	testq	%rdx, %rdx
 	cmovsl	%esi, %eax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	movl	%edi, %eax
+	cmpq	$3, %rdx
+	cmovgel	%esi, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018
 	movl	%edi, %eax
@@ -34,7 +44,7 @@ func0000000000000003:                   # @func0000000000000003
 	testq	%rdx, %rdx
 	cmovnel	%esi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	movl	%edi, %eax
 	cmpq	$2, %rdx
 	cmovbl	%esi, %eax

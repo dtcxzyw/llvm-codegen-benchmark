@@ -1,12 +1,11 @@
 
-; 113 occurrences:
+; 111 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; bdwgc/optimized/gc.c.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; faiss/optimized/random.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -65,7 +64,6 @@
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; openmpi/optimized/tm_mt.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -90,7 +88,6 @@
 ; quantlib/optimized/seedgenerator.ll
 ; quantlib/optimized/sobolrsg.ll
 ; quantlib/optimized/zigguratrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; quickjs/optimized/quickjs.ll
 ; rayon-rs/optimized/5ev50in5ju1pej99.ll
 ; redis/optimized/memtest.ll
@@ -113,6 +110,7 @@
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
+; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

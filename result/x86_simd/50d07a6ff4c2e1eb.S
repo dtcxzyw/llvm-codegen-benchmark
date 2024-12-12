@@ -74,7 +74,7 @@ func0000000000000004:                   # @func0000000000000004
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm1
-	vpcmpnleud	%xmm0, %xmm1, %k0
+	vpcmpltud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -101,10 +101,10 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm1
-	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpmovqd	%ymm2, %xmm3
 	vpextrd	$1, %xmm1, %ecx
 	vpextrd	$1, %xmm3, %eax
@@ -127,10 +127,10 @@ func0000000000000061:                   # @func0000000000000061
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm1
-	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpmovqd	%ymm2, %xmm3
 	vpextrd	$1, %xmm1, %ecx
 	vpextrd	$1, %xmm3, %eax
@@ -153,6 +153,6 @@ func0000000000000041:                   # @func0000000000000041
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm1
-	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

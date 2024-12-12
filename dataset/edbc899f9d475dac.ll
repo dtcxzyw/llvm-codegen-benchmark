@@ -8,7 +8,7 @@
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0) #0 {
+define i64 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 62
   %2 = select i1 %1, i64 8, i64 0

@@ -1,4 +1,7 @@
 
+%"class.hermes::vm::PinnedHermesValue.3085840" = type { %"class.hermes::vm::HermesValue.3085841" }
+%"class.hermes::vm::HermesValue.3085841" = type { i64 }
+
 ; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -17,18 +20,67 @@ entry:
   ret ptr %5
 }
 
-; 176 occurrences:
+; 22 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/acecCover.c.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; abseil-cpp/optimized/substitute.cc.ll
-; cmake/optimized/divsufsort.c.ll
-; hermes/optimized/JSCallableProxy.cpp.ll
 ; jemalloc/optimized/large.ll
 ; jemalloc/optimized/large.pic.ll
 ; jemalloc/optimized/large.sym.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/gcm.c.ll
+; openjdk/optimized/pngrutil.ll
+; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
+; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
+; openssl/optimized/libcrypto-lib-gcm128.ll
+; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
+; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
+; openssl/optimized/libcrypto-shlib-gcm128.ll
+; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
+; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
+; php/optimized/crypt_sha256.ll
+; php/optimized/crypt_sha512.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 16
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
+; postgres/optimized/lwlock.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = sub nuw nsw i64 4, %2
+  %4 = getelementptr i8, ptr %0, i64 -2
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; nuklear/optimized/unity.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003c(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 3
+  %3 = sub nuw nsw i64 4, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 464
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 153 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; hermes/optimized/JSCallableProxy.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
@@ -148,7 +200,6 @@ entry:
 ; llvm/optimized/PseudoProbeInserter.cpp.ll
 ; llvm/optimized/PseudoProbePrinter.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RemoveRedundantDebugValues.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SampleContextTracker.cpp.ll
@@ -180,52 +231,14 @@ entry:
 ; llvm/optimized/X86DiscriminateMemOps.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86InsertPrefetch.cpp.ll
-; openjdk/optimized/pngrutil.ll
-; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
-; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
-; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
-; openssl/optimized/libcrypto-lib-gcm128.ll
-; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
-; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
-; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
-; openssl/optimized/libcrypto-shlib-gcm128.ll
-; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
-; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; php/optimized/crypt_sha256.ll
-; php/optimized/crypt_sha512.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 16
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 32
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 2 occurrences:
-; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
-; postgres/optimized/lwlock.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000030(ptr %0, i64 %1) #0 {
-entry:
   %2 = and i64 %1, 4294967295
-  %3 = sub nuw nsw i64 4, %2
-  %4 = getelementptr i8, ptr %0, i64 -2
-  %5 = getelementptr i8, ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 1 occurrences:
-; nuklear/optimized/unity.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 3
-  %3 = sub nuw nsw i64 4, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 464
-  %5 = getelementptr i8, ptr %4, i64 %3
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 -56
+  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3085840", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -242,18 +255,6 @@ entry:
   %2 = and i64 %1, -8
   %3 = sub i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 -8
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 1 occurrences:
-; hyperscan/optimized/mpv.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 15
-  %3 = sub nuw nsw i64 16, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
 }

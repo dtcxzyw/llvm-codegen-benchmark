@@ -19,10 +19,10 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; proxygen/optimized/Window.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000038a(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000f0a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 2147483647, %0
-  %3 = icmp ult i32 %2, %1
+  %3 = icmp samesign ugt i32 %1, %2
   %4 = icmp sgt i32 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -137,10 +137,10 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000054a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 2147483646, %0
-  %3 = icmp slt i32 %2, %1
+  %3 = icmp sgt i32 %1, %2
   %4 = icmp sgt i32 %0, -1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -314,10 +314,10 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003aa(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000d4a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 2147483647, %0
-  %3 = icmp slt i32 %2, %1
+  %3 = icmp sgt i32 %1, %2
   %4 = icmp sgt i32 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -326,10 +326,10 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_image.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000037a(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000cea(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 2147483647, %0
-  %3 = icmp sge i32 %2, %1
+  %3 = icmp sle i32 %1, %2
   %4 = icmp sgt i32 %0, -1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -338,23 +338,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000566(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
-  %3 = icmp sle i32 %2, %1
+  %3 = icmp sge i32 %1, %2
   %4 = icmp slt i32 %0, 1
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-pw-atm.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i32 0, %0
-  %3 = icmp eq i32 %2, %1
-  %4 = icmp ugt i32 %0, 51
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -366,10 +354,10 @@ entry:
 ; libjpeg-turbo/optimized/jdphuff.c.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004c6(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 -2147483648, %0
-  %3 = icmp sgt i32 %2, %1
+  %3 = icmp slt i32 %1, %2
   %4 = icmp slt i32 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -378,10 +366,10 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000486(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
-  %3 = icmp ugt i32 %2, %1
+  %3 = icmp ult i32 %1, %2
   %4 = icmp slt i32 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

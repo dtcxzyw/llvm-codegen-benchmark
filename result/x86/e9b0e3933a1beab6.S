@@ -1,12 +1,12 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vcvttss2si	%xmm0, %eax
-	cmpl	%edi, %eax
-	setle	%al
-	retq
-func000000000000001a:                   # @func000000000000001a
-	vcvttss2si	%xmm0, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setge	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
+	vcvttss2si	%xmm0, %eax
+	cmpl	%eax, %edi
+	setle	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vcvttss2si	%xmm0, %eax

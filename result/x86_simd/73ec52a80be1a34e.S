@@ -11,7 +11,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm2, %xmm2
 	vpcmpneqb	.LCPI0_1(%rip), %xmm2, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq

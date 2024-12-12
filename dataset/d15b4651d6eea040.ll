@@ -1,17 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/x86assembler.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 382
-  %4 = select i1 %3, i1 %0, i1 false
-  %5 = and i32 %1, 1835008
-  %6 = icmp ugt i32 %5, 1048576
-  %7 = or i1 %6, %4
-  ret i1 %7
-}
-
 ; 5 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -19,7 +6,7 @@ entry:
 ; openssl/optimized/libssl-shlib-extensions.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -29,8 +16,7 @@ entry:
   ret i1 %7
 }
 
-; 83 occurrences:
-; linux/optimized/feat_ctl.ll
+; 82 occurrences:
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDumper.cpp.ll
@@ -114,7 +100,7 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -127,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000118(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp ne i32 %3, 0
@@ -140,7 +126,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 60
   %4 = icmp eq i32 %3, 0
@@ -154,7 +140,7 @@ entry:
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 40
   %4 = select i1 %3, i1 %0, i1 false

@@ -3,8 +3,8 @@ func000000000000000b:                   # @func000000000000000b
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	xorl	%edx, %edx
 	divl	%ecx
-	cmpl	%esi, %eax
-	setle	%al
+	cmpl	%eax, %esi
+	setge	%al
 	orb	%dil, %al
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -12,16 +12,16 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	xorl	%edx, %edx
 	divl	%ecx
-	cmpl	%esi, %eax
-	setl	%al
+	cmpl	%eax, %esi
+	setg	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movl	%edx, %ecx
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	xorl	%edx, %edx
 	divl	%ecx
-	cmpl	%esi, %eax
-	setb	%al
+	cmpl	%eax, %esi
+	seta	%al
 	orb	%dil, %al
 	retq

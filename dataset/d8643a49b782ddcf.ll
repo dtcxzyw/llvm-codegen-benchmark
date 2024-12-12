@@ -47,17 +47,6 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; assimp/optimized/IFCOpenings.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000005a(double %0, double %1) #0 {
-entry:
-  %2 = fcmp olt double %0, 1.000000e-05
-  %3 = fcmp uge double %0, %1
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
 ; 6 occurrences:
 ; quantlib/optimized/blackformula.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
@@ -98,23 +87,23 @@ entry:
 }
 
 ; 1 occurrences:
-; quantlib/optimized/qdplusamericanengine.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000aa(double %0, double %1) #0 {
-entry:
-  %2 = fcmp ugt double %0, %1
-  %3 = fcmp ugt double %0, 0.000000e+00
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; quantlib/optimized/fdmcev1dmesher.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000070(double %0, double %1) #0 {
 entry:
   %2 = fcmp ult double %0, %1
   %3 = fcmp oeq double %0, 0x47EFFFFFE0000000
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b2(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ugt double %0, %1
+  %3 = fcmp ueq double %0, 0x7FF0000000000000
   %4 = or i1 %3, %2
   ret i1 %4
 }
@@ -152,6 +141,25 @@ entry:
   ret i1 %4
 }
 
+; 9 occurrences:
+; postgres/optimized/float.ll
+; postgres/optimized/gistproc.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/25la7m7vywfxvwku7cmlhn88p.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/d3p7qidwwfiy8pzimmi7epq9h.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000182(double %0, double %1) #0 {
+entry:
+  %2 = fcmp oge double %0, %1
+  %3 = fcmp uno double %0, 0.000000e+00
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
 ; 4 occurrences:
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/float.ll
@@ -161,18 +169,6 @@ entry:
 define i1 @func0000000000000082(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %0, %1
-  %3 = fcmp uno double %0, 0.000000e+00
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 2 occurrences:
-; postgres/optimized/float.ll
-; postgres/optimized/gistproc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000182(double %0, double %1) #0 {
-entry:
-  %2 = fcmp oge double %0, %1
   %3 = fcmp uno double %0, 0.000000e+00
   %4 = or i1 %3, %2
   ret i1 %4
@@ -190,34 +186,12 @@ entry:
 }
 
 ; 1 occurrences:
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000058(double %0, double %1) #0 {
-entry:
-  %2 = fcmp olt double %0, 0.000000e+00
-  %3 = fcmp oge double %0, %1
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; g2o/optimized/hyper_dijkstra.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000090(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %0, %1
   %3 = fcmp oeq double %0, 0x7FEFFFFFFFFFFFFF
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; openblas/optimized/dgbcon.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000050(double %0, double %1) #0 {
-entry:
-  %2 = fcmp olt double %0, %1
-  %3 = fcmp oeq double %0, 0.000000e+00
   %4 = or i1 %3, %2
   ret i1 %4
 }

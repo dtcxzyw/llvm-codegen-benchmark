@@ -12,7 +12,18 @@ define ptr @func0000000000000050(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 5
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 160
+  %4 = getelementptr i8, ptr %3, i64 184
+  ret ptr %4
+}
+
+; 1 occurrences:
+; assimp/optimized/IFCOpenings.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 4
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 24
   ret ptr %4
 }
 
@@ -36,7 +47,7 @@ entry:
 ; quantlib/optimized/strippedoptionletadapter.ll
 ; quantlib/optimized/zabr.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -47,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000008b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -59,7 +70,7 @@ entry:
 ; darktable/optimized/introspection_highpass.c.ll
 ; llvm/optimized/PHIElimination.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1) #0 {
 entry:
   %.idx = shl i64 %1, 4
   %2 = getelementptr i8, ptr %0, i64 %.idx
@@ -70,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaExist.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1) #0 {
 entry:
   %.idx = shl i64 %1, 3
   %2 = getelementptr i8, ptr %0, i64 %.idx
@@ -104,7 +115,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -115,7 +126,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000073(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -127,7 +138,7 @@ entry:
 ; meshlab/optimized/matching.cpp.ll
 ; openblas/optimized/strsm_kernel_RT.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 5
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -138,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/matching.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000004b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 5
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -164,7 +175,7 @@ entry:
 ; openblas/optimized/strsm_kernel_LN.c.ll
 ; openblas/optimized/strsm_kernel_RT.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 7
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -175,7 +186,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f8(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000fc(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = getelementptr i8, ptr %0, i64 %2

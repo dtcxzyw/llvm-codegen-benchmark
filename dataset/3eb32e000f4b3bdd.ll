@@ -11,7 +11,7 @@
 define i16 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
@@ -24,7 +24,7 @@ entry:
 define i16 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }

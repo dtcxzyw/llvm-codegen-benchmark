@@ -1,9 +1,9 @@
 
-%"struct.OT::IntType.0.2622262" = type { %struct.BEInt.1.2622266 }
-%struct.BEInt.1.2622266 = type { [2 x i8] }
-%class.symbol.3428956 = type { ptr }
+%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
+%struct.BEInt.1.2735703 = type { [2 x i8] }
+%class.symbol.3613505 = type { ptr }
 
-; 109 occurrences:
+; 108 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; openjdk/optimized/hb-face.ll
@@ -20,7 +20,6 @@
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/degree_shift_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
@@ -114,13 +113,13 @@
 ; z3/optimized/uses_theory.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000014a(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000001ef(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 2
-  %4 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %3, i64 %0
-  %5 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %4, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %3, i64 %0
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %4, i64 %0
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -183,11 +182,11 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000158(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000001fc(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 80
-  %4 = getelementptr nusw ptr, ptr %3, i64 %0
-  %5 = getelementptr nusw %class.symbol.3428956, ptr %4, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 80
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw %class.symbol.3613505, ptr %4, i64 %0
   %6 = zext nneg i32 %1 to i64
   %7 = getelementptr ptr, ptr %5, i64 %6
   ret ptr %7

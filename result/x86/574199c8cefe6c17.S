@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%esi, %eax
 	sete	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movzbl	%dil, %eax
 	cmpl	%esi, %eax
 	seta	%al

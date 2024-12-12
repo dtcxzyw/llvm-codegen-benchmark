@@ -4,7 +4,7 @@ func0000000000000006:                   // @func0000000000000006
 	tst	w1, #0x1
 	sxtw	x8, w8
 	csel	x8, x8, xzr, ne
-	add	x0, x0, x8, lsl #4
+	add	x0, x0, x8
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e

@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/cuddGroup.c.ll
 ; hdf5/optimized/h5diff_array.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; lvgl/optimized/lv_anim_timeline.ll
 ; ocio/optimized/MathUtils.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; slurm/optimized/slurm_pmi.ll
@@ -12,7 +13,7 @@
 ; wireshark/optimized/packet-netlink.c.ll
 ; wireshark/optimized/sequence_analysis.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = icmp ugt i32 %1, %2
@@ -20,7 +21,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -30,9 +31,10 @@ entry:
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tls-rs/optimized/59h61akxu6z29dlt.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %2, %1
   %4 = icmp ult i32 %1, %2
@@ -67,15 +69,14 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; graphviz/optimized/gvplugin_vt.c.ll
+; 2 occurrences:
 ; spike/optimized/pbsad.ll
 ; spike/optimized/pbsada.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
-  %4 = icmp ugt i32 %1, %2
+  %4 = icmp samesign ugt i32 %1, %2
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }
@@ -86,7 +87,7 @@ entry:
 ; meshlab/optimized/solver.cpp.ll
 ; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp sgt i32 %1, %2
@@ -105,6 +106,17 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
+  %4 = icmp ugt i32 %1, %2
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; graphviz/optimized/gvplugin_vt.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nuw nsw i32 %1, %2
   %4 = icmp ugt i32 %1, %2
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5

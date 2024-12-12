@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 103 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -60,7 +60,6 @@
 ; lightgbm/optimized/metadata.cpp.ll
 ; linux/optimized/base.ll
 ; linux/optimized/drm_vblank.ll
-; linux/optimized/intel_pstate.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; lua/optimized/lgc.ll
 ; luajit/optimized/lj_carith.ll

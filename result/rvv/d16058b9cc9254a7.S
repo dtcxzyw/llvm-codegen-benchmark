@@ -52,14 +52,3 @@ func0000000000000007:                   # @func0000000000000007
 	vand.vi	v9, v10, 1
 	vor.vv	v8, v9, v8
 	ret
-func0000000000000011:                   # @func0000000000000011
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	lui	a0, 16
-	vnsrl.wi	v10, v8, 0
-	addi	a0, a0, -1
-	vand.vx	v8, v12, a0
-	lui	a0, 983040
-	vand.vx	v9, v10, a0
-	vor.vv	v8, v9, v8
-	ret

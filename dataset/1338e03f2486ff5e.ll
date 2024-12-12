@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nuttx/optimized/lib_lgamma.c.ll
 ; opencv/optimized/daisy.cpp.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll

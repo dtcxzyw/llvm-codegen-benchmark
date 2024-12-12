@@ -1,5 +1,6 @@
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/newton.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -26,7 +27,7 @@ define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 2.000000e+00
   %3 = fsub double 3.000000e+00, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

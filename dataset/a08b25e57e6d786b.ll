@@ -6,7 +6,7 @@
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = ashr exact i64 %1, 3
@@ -27,7 +27,7 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = ashr exact i64 %1, 2
@@ -43,7 +43,7 @@ entry:
 ; openusd/optimized/valueUtils.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = ashr exact i64 %1, 3

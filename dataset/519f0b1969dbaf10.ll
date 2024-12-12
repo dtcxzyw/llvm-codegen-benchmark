@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; cxxopts/optimized/example.cpp.ll
 ; faiss/optimized/index_factory.cpp.ll
 ; gromacs/optimized/readpull.cpp.ll
@@ -31,7 +31,6 @@
 ; nix/optimized/gc.ll
 ; nix/optimized/git-utils.ll
 ; nix/optimized/hilite.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/search.ll
 ; ocio/optimized/FileRules.cpp.ll

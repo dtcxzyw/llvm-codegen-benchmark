@@ -1,5 +1,5 @@
 
-; 103 occurrences:
+; 102 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/amaze.cc.ll
@@ -35,7 +35,6 @@
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

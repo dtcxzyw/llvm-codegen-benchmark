@@ -1,5 +1,5 @@
 
-; 158 occurrences:
+; 157 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; assimp/optimized/MMDImporter.cpp.ll
@@ -59,7 +59,6 @@
 ; ipopt/optimized/SensIndexPCalculator.ll
 ; ipopt/optimized/SensIndexSchurData.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/nl80211.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -159,7 +158,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = icmp slt i32 %0, 0
@@ -167,7 +166,48 @@ entry:
   ret i64 %4
 }
 
-; 158 occurrences:
+; 199 occurrences:
+; abc/optimized/abcExact.c.ll
+; abc/optimized/abcGen.c.ll
+; abc/optimized/abcIf.c.ll
+; abc/optimized/abcStrash.c.ll
+; abc/optimized/abcUtil.c.ll
+; abc/optimized/absRpm.c.ll
+; abc/optimized/acecFadds.c.ll
+; abc/optimized/amapParse.c.ll
+; abc/optimized/cbaCom.c.ll
+; abc/optimized/cbaReadBlif.c.ll
+; abc/optimized/cbaReadVer.c.ll
+; abc/optimized/cnfWrite.c.ll
+; abc/optimized/extraUtilEnum.c.ll
+; abc/optimized/giaAiger.c.ll
+; abc/optimized/giaCof.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaFrames.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaMini.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaRex.c.ll
+; abc/optimized/giaSatLE.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaSplit.c.ll
+; abc/optimized/giaStg.c.ll
+; abc/optimized/giaStoch.c.ll
+; abc/optimized/ioReadAiger.c.ll
+; abc/optimized/ioReadBaf.c.ll
+; abc/optimized/ioReadBlif.c.ll
+; abc/optimized/ioaReadAig.c.ll
+; abc/optimized/ivyDsd.c.ll
+; abc/optimized/mioParse.c.ll
+; abc/optimized/pdrInv.c.ll
+; abc/optimized/satProof.c.ll
+; abc/optimized/sclSize.c.ll
+; abc/optimized/sfmDec.c.ll
+; abc/optimized/sswRarity.c.ll
+; abc/optimized/utilBridge.c.ll
+; abc/optimized/utilNam.c.ll
+; abc/optimized/verFormula.c.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -327,7 +367,7 @@ entry:
 ; rocksdb/optimized/manager.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = icmp slt i32 %0, 0
@@ -339,7 +379,7 @@ entry:
 ; linux/optimized/vgaarb.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = icmp eq i32 %0, 0
@@ -399,11 +439,25 @@ entry:
 ; z3/optimized/th_rewriter.cpp.ll
 ; z3/optimized/tseitin_cnf_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 41
   %3 = icmp eq i32 %0, 0
   %4 = select i1 %3, i64 0, i64 %2
+  ret i64 %4
+}
+
+; 4 occurrences:
+; abc/optimized/abcDfs.c.ll
+; abc/optimized/abcFraig.c.ll
+; abc/optimized/abcSweep.c.ll
+; ninja/optimized/deps_log.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000074(i32 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 3
+  %3 = icmp samesign ult i32 %0, 17
+  %4 = select i1 %3, i64 128, i64 %2
   ret i64 %4
 }
 
@@ -416,7 +470,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; wireshark/optimized/packet-frame.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000068(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 56
   %3 = icmp ugt i32 %0, 127
@@ -425,20 +479,9 @@ entry:
 }
 
 ; 1 occurrences:
-; ninja/optimized/deps_log.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 3
-  %3 = icmp ult i32 %0, 12
-  %4 = select i1 %3, i64 -1, i64 %2
-  ret i64 %4
-}
-
-; 1 occurrences:
 ; linux/optimized/vsprintf.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(i32 %0, i64 %1) #0 {
+define i64 @func000000000000006a(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 48
   %3 = icmp sgt i32 %0, 32766
@@ -450,7 +493,7 @@ entry:
 ; linux/optimized/af_packet.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 12
   %3 = icmp eq i32 %0, 31

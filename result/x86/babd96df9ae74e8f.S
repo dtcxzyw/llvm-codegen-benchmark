@@ -1,6 +1,6 @@
 func0000000000000003:                   # @func0000000000000003
 	shll	$31, %edx
-	leal	(%rdx,%rsi), %eax
+	leal	(%rsi,%rdx), %eax
 	andl	$-8388608, %eax                 # imm = 0xFF800000
 	addq	%rdi, %rax
 	retq
@@ -11,7 +11,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func000000000000000d:                   # @func000000000000000d
 	shll	$31, %edx
-	leal	(%rdx,%rsi), %eax
+	leal	(%rsi,%rdx), %eax
 	andl	$-8388608, %eax                 # imm = 0xFF800000
 	addq	%rdi, %rax
 	retq
@@ -35,7 +35,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000007:                   # @func0000000000000007
 	shll	$31, %edx
-	leal	(%rdx,%rsi), %eax
+	leal	(%rsi,%rdx), %eax
 	andl	$-8388608, %eax                 # imm = 0xFF800000
 	addq	%rdi, %rax
 	retq

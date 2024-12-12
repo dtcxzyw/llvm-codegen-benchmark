@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movq	%rdi, %rax
 	sarq	$62, %rax
 	cmpq	%rsi, %rax
@@ -7,7 +7,7 @@ func0000000000000028:                   # @func0000000000000028
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000222:                   # @func0000000000000222
+func0000000000000842:                   # @func0000000000000842
 	movq	%rdi, %rax
 	sarq	$29, %rax
 	cmpq	%rsi, %rax

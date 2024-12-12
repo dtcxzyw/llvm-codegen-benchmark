@@ -62,9 +62,11 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func0000000000000020:                   # @func0000000000000020
 	sext.w	a1, a0
-	addiw	a0, a0, -1
-	li	a2, 126
-	sltiu	a1, a1, 129
+	lui	a2, 4080
+	addw	a0, a0, a2
+	lui	a2, 4096
+	sltiu	a1, a1, -2
+	addiw	a2, a2, -3
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

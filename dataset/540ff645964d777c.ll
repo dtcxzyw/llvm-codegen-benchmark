@@ -15,7 +15,7 @@ entry:
   ret ptr %7
 }
 
-; 76 occurrences:
+; 74 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; icu/optimized/uresdata.ll
 ; libpng/optimized/pngwrite.c.ll
@@ -89,17 +89,29 @@ entry:
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; openusd/optimized/level.cpp.ll
-; openusd/optimized/patchBuilder.cpp.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = xor i32 %3, 2
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i16, ptr %0, i64 %1
-  %7 = getelementptr nusw i16, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %1
+  %7 = getelementptr nusw nuw i16, ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 2 occurrences:
+; openusd/optimized/level.cpp.ll
+; openusd/optimized/patchBuilder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 3
+  %4 = xor i32 %3, 2
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr nusw i32, ptr %0, i64 %1
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %5
   ret ptr %7
 }
 

@@ -1,5 +1,7 @@
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/ixpgh0gjooq08dy.ll
 ; graphviz/optimized/solvers.c.ll
@@ -16,7 +18,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fneg double %4
   ret double %5
 }

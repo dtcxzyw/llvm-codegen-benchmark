@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
@@ -8,6 +8,7 @@
 ; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
 ; mini-lsm-rs/optimized/59xebgypolxascxr.ll
 ; verilator/optimized/V3Number.cpp.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i1 %1, i64 %2) #0 {
 entry:

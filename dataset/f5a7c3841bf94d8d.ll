@@ -1,8 +1,9 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; abc/optimized/acecPolyn.c.ll
 ; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
+; boost/optimized/numeric.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
@@ -16,7 +17,6 @@
 ; gromacs/optimized/slar1vx.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
-; libwebp/optimized/filters.c.ll
 ; linux/optimized/flex_proportions.ll
 ; linux/optimized/keyboard.ll
 ; luajit/optimized/lib_jit.ll
@@ -35,6 +35,7 @@
 ; php/optimized/zend_language_scanner.ll
 ; sundials/optimized/cvodea.c.ll
 ; sundials/optimized/idaa.c.ll
+; z3/optimized/sat_aig_cuts.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:

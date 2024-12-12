@@ -12,7 +12,7 @@
 ; meshlab/optimized/io_collada.cpp.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = xor i64 %0, -1
@@ -30,17 +30,28 @@ entry:
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
-; 5 occurrences:
-; linux/optimized/csum-wrappers_64.ll
-; linux/optimized/readdir.ll
+; 3 occurrences:
+; linux/optimized/resize.ll
+; postgres/optimized/procarray.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = xor i64 %0, -1
+  %4 = icmp ult i64 %3, %2
+  ret i1 %4
+}
+
+; 3 occurrences:
 ; linux/optimized/scm.ll
 ; linux/optimized/seq_memory.ll
 ; linux/optimized/x_tables.ll
@@ -53,25 +64,13 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; linux/optimized/resize.ll
-; postgres/optimized/procarray.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = xor i64 %0, -1
-  %4 = icmp ult i64 %3, %2
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; faiss/optimized/distances.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ule i64 %3, %0
   ret i1 %4
 }
@@ -83,7 +82,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }

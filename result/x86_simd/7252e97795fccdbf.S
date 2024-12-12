@@ -21,7 +21,7 @@ func0000000000000064:                   # @func0000000000000064
 	retq
 func0000000000000074:                   # @func0000000000000074
 	vpslld	$3, %xmm2, %xmm2
-	vpor	%xmm0, %xmm2, %xmm0
+	vpor	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper

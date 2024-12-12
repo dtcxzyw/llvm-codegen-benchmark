@@ -1,7 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a2, a0
-	bnez	a2, .LBB0_2
-	andi	a0, a1, 255
+	li	a3, 1
+	bne	a2, a3, .LBB0_2
+	andi	a0, a1, 12
 .LBB0_2:                                # %entry
 	ret
 func0000000000000008:                   # @func0000000000000008

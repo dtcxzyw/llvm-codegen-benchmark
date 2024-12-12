@@ -8,7 +8,7 @@
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tls-rs/optimized/59h61akxu6z29dlt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000884(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = icmp ult i32 %1, %2
@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000248(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000888(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = icmp ult i32 %1, %2
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/libunicode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp eq i32 %1, %2
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/gtest-all.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp ult i32 %1, %2
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/assemble.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp slt i32 %1, %2

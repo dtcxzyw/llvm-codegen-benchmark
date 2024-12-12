@@ -5,10 +5,3 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dl
 	cmovel	%esi, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	movl	%edi, %eax
-	testl	%esi, %esi
-	cmovnsl	%esi, %eax
-	testb	$1, %dl
-	cmovel	%esi, %eax
-	retq

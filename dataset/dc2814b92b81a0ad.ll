@@ -7,7 +7,7 @@
 ; openjdk/optimized/jniCheck.ll
 ; wireshark/optimized/packet-pn-dcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c1(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000d81(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 15
   %3 = icmp eq i8 %0, -85
@@ -23,23 +23,11 @@ entry:
 ; php/optimized/session.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 9223372036854775807
   %3 = icmp ult i64 %2, -2
   %4 = icmp eq i8 %0, 0
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; rust-analyzer-rs/optimized/17y19x1rgmlymeti.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000144(i8 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -1
-  %3 = icmp ult i64 %2, 2
-  %4 = icmp ult i8 %0, 4
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -55,7 +43,7 @@ entry:
 ; nuttx/optimized/lib_libfread_unlocked.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 1
   %3 = icmp ne i8 %0, 10
@@ -66,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/gcm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000501(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -14
   %3 = icmp ult i64 %2, -13
@@ -75,11 +63,21 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; cmake/optimized/vli_decoder.c.ll
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000d8c(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ne i64 %1, 6
+  %3 = icmp ne i8 %0, 97
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; hdf5/optimized/H5Tbit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = icmp ne i64 %2, 8
@@ -91,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i8 %0, i64 %1) #0 {
+define i1 @func000000000000058c(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 1
   %3 = icmp ne i8 %0, 0
@@ -103,7 +101,7 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/options.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000050c(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -3
   %3 = icmp ult i64 %2, -2
@@ -116,7 +114,7 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/options.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -3
   %3 = icmp ult i64 %2, -2

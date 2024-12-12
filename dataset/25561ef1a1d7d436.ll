@@ -13,7 +13,7 @@ entry:
   %4 = and i8 %3, 2
   %5 = shl i8 %1, 7
   %6 = or disjoint i8 %5, %4
-  %7 = or disjoint i8 %6, %0
+  %7 = or disjoint i8 %0, %6
   ret i8 %7
 }
 

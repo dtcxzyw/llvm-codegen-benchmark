@@ -5,7 +5,7 @@
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000d8(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
   %3 = and i64 %2, 1
@@ -18,7 +18,7 @@ entry:
 ; fmt/optimized/std-test.cc.ll
 ; mimalloc/optimized/arena.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000098(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
   %3 = and i64 %2, 1

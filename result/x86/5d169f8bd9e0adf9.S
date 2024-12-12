@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	orl	$8388608, %esi                  # imm = 0x800000
 	addb	$-94, %dl
 	shlxl	%edx, %esi, %eax
@@ -6,7 +6,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	setno	%al
 	orb	%dil, %al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	orl	$8388608, %esi                  # imm = 0x800000
 	addb	$-94, %dl
 	shlxl	%edx, %esi, %eax

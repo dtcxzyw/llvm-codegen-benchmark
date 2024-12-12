@@ -1,10 +1,12 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; hermes/optimized/TypeInference.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
+; qemu/optimized/tcg-op-ldst.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:

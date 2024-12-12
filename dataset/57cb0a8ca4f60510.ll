@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/vmcore.ll
+; php/optimized/fastcgi.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
@@ -34,19 +35,6 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; linux/optimized/kcore.ll
-; php/optimized/fastcgi.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294967295
-  %4 = add nsw i64 %1, 8
-  %5 = add i64 %4, %3
-  %6 = add i64 %5, %0
-  ret i64 %6
-}
-
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
@@ -68,7 +56,7 @@ entry:
   %3 = and i64 %2, -8
   %4 = add nuw nsw i64 %1, 32
   %5 = add i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -97,6 +85,18 @@ entry:
   %4 = add nsw i64 %1, 104
   %5 = add nsw i64 %4, %3
   %6 = add nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; linux/optimized/kcore.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -4
+  %4 = add nsw i64 %1, 556
+  %5 = add i64 %4, %3
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

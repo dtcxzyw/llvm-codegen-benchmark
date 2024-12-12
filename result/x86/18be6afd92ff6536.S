@@ -34,3 +34,15 @@ func0000000000000006:                   # @func0000000000000006
 	sets	%al
 	andb	%sil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	andl	%edx, %esi
+	cmpq	$61, %rdi
+	setb	%al
+	andb	%sil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	andl	%edx, %esi
+	cmpq	$4, %rdi
+	setae	%al
+	andb	%sil, %al
+	retq

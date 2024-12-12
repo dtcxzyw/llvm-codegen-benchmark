@@ -36,10 +36,18 @@ func000000000000000a:                   # @func000000000000000a
 	mv	a0, a1
 .LBB4_2:                                # %entry
 	ret
+func0000000000000014:                   # @func0000000000000014
+	slli	a2, a2, 48
+	srli	a2, a2, 48
+	li	a3, 256
+	bltu	a2, a3, .LBB5_2
+	mv	a0, a1
+.LBB5_2:                                # %entry
+	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a2, a2, 48
-	beqz	a2, .LBB5_2
+	beqz	a2, .LBB6_2
 	mv	a1, a0
-.LBB5_2:                                # %entry
+.LBB6_2:                                # %entry
 	mv	a0, a1
 	ret

@@ -13,33 +13,6 @@ entry:
 }
 
 ; 1 occurrences:
-; proxygen/optimized/HTTP1xCodec.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 8192
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 %1, i32 32768
-  %6 = or disjoint i32 %5, %0
-  %7 = or i32 %6, 2097152
-  ret i32 %7
-}
-
-; 2 occurrences:
-; libquic/optimized/file_posix.cc.ll
-; linux/optimized/attr.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 16
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 %1, i32 512
-  %6 = or disjoint i32 %5, %0
-  %7 = or disjoint i32 %6, 2304
-  ret i32 %7
-}
-
-; 1 occurrences:
 ; linux/optimized/xt_addrtype.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {

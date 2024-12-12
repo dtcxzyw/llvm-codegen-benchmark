@@ -27,7 +27,7 @@
 func0000000000000014:                   # @func0000000000000014
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm2, %xmm2
 	vpmovdb	%ymm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
-	vpaddb	%xmm0, %xmm2, %xmm0
+	vpaddb	%xmm1, %xmm0, %xmm0
+	vpaddb	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq

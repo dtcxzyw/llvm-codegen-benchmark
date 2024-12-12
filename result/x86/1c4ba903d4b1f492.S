@@ -10,15 +10,15 @@ func0000000000000002:                   # @func0000000000000002
 	xorb	%dil, %al
 	andb	$1, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000000c:                   # @func000000000000000c
 	testl	%esi, %esi
-	setne	%al
+	setle	%al
 	xorb	%dil, %al
 	andb	$1, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
+func0000000000000018:                   # @func0000000000000018
 	testl	%esi, %esi
-	sets	%al
+	setne	%al
 	xorb	%dil, %al
 	andb	$1, %al
 	retq

@@ -5,7 +5,7 @@ func00000000000000c0:                   # @func00000000000000c0
 	vpcmpgtd	%ymm2, %ymm3, %ymm2
 	vpsrld	$31, %ymm2, %ymm2
 	vpsllvd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	16                              # 0x10
@@ -14,7 +14,7 @@ func0000000000000021:                   # @func0000000000000021
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
 	vpsrld	$31, %ymm2, %ymm2
 	vpsllvd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	16                              # 0x10
@@ -59,5 +59,5 @@ func000000000000002d:                   # @func000000000000002d
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
 	vpsrld	$31, %ymm2, %ymm2
 	vpsllvd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq

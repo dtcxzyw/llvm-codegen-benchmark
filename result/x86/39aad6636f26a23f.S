@@ -1,112 +1,122 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shrq	$32, %rsi
 	andl	$2146435072, %esi               # imm = 0x7FF00000
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	shrq	$32, %rsi
 	andl	$7, %esi
-	cmpl	%edi, %esi
-	seta	%al
+	cmpl	%esi, %edi
+	setb	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	shrl	$3, %esi
 	movzwl	%si, %eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	shrl	$8, %esi
 	movzwl	%si, %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
-	shrq	$61, %rsi
-	andl	$1, %esi
-	cmpl	%edi, %esi
+func000000000000006c:                   # @func000000000000006c
+	btq	$61, %rsi
+	sbbl	$0, %edi
 	setne	%al
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000059:                   # @func0000000000000059
 	shrq	$32, %rsi
 	andl	$536870911, %esi                # imm = 0x1FFFFFFF
-	cmpl	%edi, %esi
-	setbe	%al
+	cmpl	%esi, %edi
+	setae	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	shrq	$32, %rsi
 	andl	$536870911, %esi                # imm = 0x1FFFFFFF
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
-	shrq	$61, %rsi
-	andl	$1, %esi
-	cmpl	%edi, %esi
+func0000000000000061:                   # @func0000000000000061
+	btq	$61, %rsi
+	sbbl	$0, %edi
 	sete	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	shrq	$32, %rsi
 	andl	$16777215, %esi                 # imm = 0xFFFFFF
-	cmpl	%edi, %esi
-	setl	%al
-	retq
-func0000000000000028:                   # @func0000000000000028
-	shrq	$32, %rsi
-	andl	$16777215, %esi                 # imm = 0xFFFFFF
-	cmpl	%edi, %esi
-	setb	%al
-	retq
-func0000000000000026:                   # @func0000000000000026
-	shrq	$32, %rsi
-	movzwl	%si, %eax
-	cmpl	%edi, %eax
+	cmpl	%esi, %edi
 	setg	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
-	shrl	$6, %esi
-	cmpl	%edi, %esi
+func0000000000000058:                   # @func0000000000000058
+	shrq	$32, %rsi
+	andl	$16777215, %esi                 # imm = 0xFFFFFF
+	cmpl	%esi, %edi
 	seta	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000046:                   # @func0000000000000046
+	shrq	$32, %rsi
+	movzwl	%si, %eax
+	cmpl	%eax, %edi
+	setl	%al
+	retq
+func0000000000000074:                   # @func0000000000000074
+	shrl	$6, %esi
+	cmpl	%esi, %edi
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
 	movq	%rsi, %rax
 	movzbl	%ah, %eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	shrq	$19, %rsi
 	andl	$16777215, %esi                 # imm = 0xFFFFFF
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	shrq	$38, %rsi
 	movzwl	%si, %eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq
-func0000000000000039:                   # @func0000000000000039
+func0000000000000079:                   # @func0000000000000079
 	shrq	$38, %rsi
 	movzwl	%si, %eax
-	cmpl	%edi, %eax
-	setbe	%al
+	cmpl	%eax, %edi
+	setae	%al
+	retq
+func0000000000000064:                   # @func0000000000000064
+	shrq	$38, %rsi
+	movzwl	%si, %eax
+	cmpl	%eax, %edi
+	setb	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	shrl	$24, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	setne	%al
+	retq
+func0000000000000048:                   # @func0000000000000048
+	shrq	$32, %rsi
+	andl	$8388607, %esi                  # imm = 0x7FFFFF
+	cmpl	%esi, %edi
+	seta	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	shrq	$3, %rsi
 	andl	$-4, %esi
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	shrq	$3, %rsi
 	andl	$-3, %esi
-	cmpl	%edi, %esi
-	seta	%al
+	cmpl	%esi, %edi
+	setb	%al
 	retq

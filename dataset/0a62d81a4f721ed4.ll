@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/path_util.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = select i1 %0, i32 0, i32 %1
@@ -54,7 +54,7 @@ entry:
 ; abc/optimized/sfmDec.c.ll
 ; icu/optimized/emojiprops.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 1, i32 %1
@@ -68,7 +68,7 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %0, i32 1, i32 %1
@@ -91,7 +91,7 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = select i1 %0, i32 0, i32 %1
@@ -102,18 +102,18 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/ssl_msg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = select i1 %0, i32 -27648, i32 %1
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 16, i32 %1
@@ -124,21 +124,17 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/matcher.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %0, i32 0, i32 %1
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
-; 7 occurrences:
-; linux/optimized/trace_seq.ll
+; 3 occurrences:
 ; llvm/optimized/LoopVectorize.cpp.ll
-; opencv/optimized/fast_gemm.cpp.ll
-; opencv/optimized/fast_norm.cpp.ll
-; opencv/optimized/matmul_layer.cpp.ll
-; opencv/optimized/scale_layer.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i64 %2) #0 {
@@ -154,7 +150,7 @@ entry:
 ; icu/optimized/collationkeys.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 1, i32 %1
@@ -174,6 +170,20 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = select i1 %0, i32 2147483647, i32 %1
   %5 = icmp sgt i32 %4, %3
+  ret i1 %5
+}
+
+; 4 occurrences:
+; opencv/optimized/fast_gemm.cpp.ll
+; opencv/optimized/fast_norm.cpp.ll
+; opencv/optimized/matmul_layer.cpp.ll
+; opencv/optimized/scale_layer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = select i1 %0, i32 0, i32 %1
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 

@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	sext.w	a2, a2
 	lui	a3, 262144
 	and	a3, a3, a0
@@ -9,7 +9,7 @@ func0000000000000022:                   # @func0000000000000022
 	mv	a0, a1
 .LBB0_2:                                # %entry
 	ret
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	sext.w	a2, a2
 	andi	a3, a0, 3
 	seqz	a3, a3
@@ -18,14 +18,4 @@ func0000000000000182:                   # @func0000000000000182
 	bnez	a2, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
-	ret
-func0000000000000082:                   # @func0000000000000082
-	sext.w	a2, a2
-	andi	a3, a0, 16
-	seqz	a3, a3
-	sltiu	a2, a2, 4
-	or	a2, a2, a3
-	bnez	a2, .LBB2_2
-	mv	a0, a1
-.LBB2_2:                                # %entry
 	ret

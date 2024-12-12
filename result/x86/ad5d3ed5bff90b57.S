@@ -25,11 +25,12 @@ func000000000000000c:                   # @func000000000000000c
 	cmovel	%ecx, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpw	$9, %si
-	movl	$234881025, %eax                # imm = 0xE000001
-	movl	$1, %ecx
-	cmovael	%eax, %ecx
+	xorl	%ecx, %ecx
+	cmpw	$12, %si
+	setb	%cl
+	shll	$14, %ecx
+	addl	$16384, %ecx                    # imm = 0x4000
+	xorl	%eax, %eax
 	testb	$1, %dil
-	movl	$1040187393, %eax               # imm = 0x3E000001
 	cmovel	%ecx, %eax
 	retq

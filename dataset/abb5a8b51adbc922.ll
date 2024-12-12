@@ -455,14 +455,12 @@ entry:
   ret i64 %3
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; openblas/optimized/dtpmv_NLN.c.ll
 ; openblas/optimized/dtpmv_NLU.c.ll
-; openblas/optimized/dtpmv_TUN.c.ll
 ; openblas/optimized/dtpmv_TUU.c.ll
-; openblas/optimized/dtpsv_NUN.c.ll
 ; openblas/optimized/dtpsv_NUU.c.ll
 ; openblas/optimized/dtpsv_TLN.c.ll
 ; openblas/optimized/dtpsv_TLU.c.ll

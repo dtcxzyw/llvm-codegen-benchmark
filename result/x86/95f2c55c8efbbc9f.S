@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdx, %rdx
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rdi, %rax
 	movl	%esi, %ecx
 	cqto
@@ -14,7 +14,7 @@ func0000000000000011:                   # @func0000000000000011
 	testq	%rdx, %rdx
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movq	%rdi, %rax
 	movl	%esi, %ecx
 	cqto

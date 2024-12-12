@@ -11,17 +11,19 @@ entry:
   ret i16 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; linux/optimized/intel_color.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 22
+  %1 = lshr i64 %0, 52
   %2 = trunc nuw nsw i64 %1 to i16
-  %3 = add nuw nsw i16 %2, 4
-  %4 = and i16 %3, 4088
+  %3 = add nuw nsw i16 %2, 45
+  %4 = and i16 %3, 127
   ret i16 %4
 }
 

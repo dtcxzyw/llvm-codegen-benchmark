@@ -2,7 +2,7 @@
 	.quad	3                               # 0x3
 .LCPI0_1:
 	.long	4294967293                      # 0xfffffffd
-func0000000000000053:                   # @func0000000000000053
+func00000000000000d3:                   # @func00000000000000d3
 	vpcmpnltuq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vpaddd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -13,7 +13,7 @@ func0000000000000053:                   # @func0000000000000053
 	.long	12                              # 0xc
 .LCPI1_1:
 	.long	8                               # 0x8
-func00000000000000c7:                   # @func00000000000000c7
+func0000000000000187:                   # @func0000000000000187
 	vptestmq	%ymm1, %ymm1, %k1
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vpaddd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
@@ -35,7 +35,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	2                               # 0x2
 .LCPI3_2:
 	.long	1075                            # 0x433
-func0000000000000051:                   # @func0000000000000051
+func0000000000000091:                   # @func0000000000000091
 	vpcmpnltuq	.LCPI3_0(%rip){1to4}, %ymm1, %k1
 	vpaddd	.LCPI3_1(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vpaddd	.LCPI3_2(%rip){1to4}, %xmm0, %xmm0
@@ -45,7 +45,7 @@ func0000000000000051:                   # @func0000000000000051
 	.quad	4                               # 0x4
 .LCPI4_1:
 	.long	2                               # 0x2
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001d1:                   # @func00000000000001d1
 	vpcmpnltuq	.LCPI4_0(%rip){1to4}, %ymm1, %k1
 	vpaddd	.LCPI4_1(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -56,7 +56,7 @@ func00000000000000d1:                   # @func00000000000000d1
 	.long	4294967280                      # 0xfffffff0
 .LCPI5_1:
 	.long	4294967288                      # 0xfffffff8
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	vptestmq	%ymm1, %ymm1, %k1
 	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vpaddd	.LCPI5_1(%rip){1to4}, %xmm0, %xmm0
@@ -64,7 +64,7 @@ func0000000000000045:                   # @func0000000000000045
 	retq
 .LCPI6_0:
 	.long	4294967294                      # 0xfffffffe
-func0000000000000047:                   # @func0000000000000047
+func0000000000000087:                   # @func0000000000000087
 	vptestmq	%ymm1, %ymm1, %k1
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

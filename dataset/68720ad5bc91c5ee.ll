@@ -7,7 +7,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw nsw i64 %3 to i32
   %5 = and i32 %1, 16519168
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -21,7 +21,7 @@ entry:
   %3 = lshr i64 %2, 63
   %4 = trunc nuw nsw i64 %3 to i32
   %5 = and i32 %1, 2
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -34,7 +34,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
   %5 = and i32 %1, 255
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

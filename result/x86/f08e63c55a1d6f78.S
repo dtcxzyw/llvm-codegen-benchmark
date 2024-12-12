@@ -1,6 +1,6 @@
 func000000000000000c:                   # @func000000000000000c
-	incq	%rsi
-	addq	%rdi, %rsi
+	notq	%rsi
+	cmpq	%rsi, %rdi
 	setne	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -12,13 +12,20 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$8192, %rax                     # imm = 0x2000
 	setae	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
-	decq	%rsi
-	addq	%rdi, %rsi
+func0000000000000101:                   # @func0000000000000101
+	movl	$1, %eax
+	subq	%rsi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000008c:                   # @func000000000000008c
-	addq	$8, %rsi
-	addq	%rdi, %rsi
+func0000000000000181:                   # @func0000000000000181
+	notq	%rsi
+	cmpq	%rsi, %rdi
+	sete	%al
+	retq
+func000000000000018c:                   # @func000000000000018c
+	movq	$-8, %rax
+	subq	%rsi, %rax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq

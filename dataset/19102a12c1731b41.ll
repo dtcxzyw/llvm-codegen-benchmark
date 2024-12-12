@@ -1,6 +1,9 @@
 
-; 42 occurrences:
+; 48 occurrences:
 ; actix-rs/optimized/2l54a10og4z99516.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; freetype/optimized/ftbase.c.ll
 ; glslang/optimized/Constant.cpp.ll
 ; hyperscan/optimized/shengcompile.cpp.ll
@@ -14,7 +17,6 @@
 ; linux/optimized/ah6.ll
 ; linux/optimized/gre_offload.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/skbuff.ll
@@ -42,6 +44,10 @@
 ; wireshark/optimized/eax.c.ll
 ; wireshark/optimized/logcat.c.ll
 ; wireshark/optimized/sctp_graph_byte_dialog.cpp.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
@@ -50,8 +56,9 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; icu/optimized/olsontz.ll
+; lvgl/optimized/lv_math.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; wireshark/optimized/packet-csn1.c.ll
@@ -80,6 +87,16 @@ entry:
 define i64 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %0, %1
+  %3 = zext i16 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; hermes/optimized/JSONLexer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i16 %0, i16 %1) #0 {
+entry:
+  %2 = add nuw i16 %0, %1
   %3 = zext i16 %2 to i64
   ret i64 %3
 }

@@ -1,5 +1,7 @@
 
 ; 419 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -101,10 +103,8 @@
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/mpih-div.ll
 ; linux/optimized/physaddr.ll
-; linux/optimized/ptp_kvm_x86.ll
 ; linux/optimized/pvclock.ll
 ; linux/optimized/tlb.ll
-; linux/optimized/vclock_gettime.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/CGExprConstant.cpp.ll

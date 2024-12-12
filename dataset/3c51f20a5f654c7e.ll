@@ -8,7 +8,7 @@
 ; spike/optimized/option_parser.ll
 ; spike/optimized/spike_dasm_option_parser.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, %0
   %3 = icmp ne i8 %0, 0
@@ -33,7 +33,7 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, %0
   %3 = icmp ne i8 %0, 0
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/packed-backend.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, %0
   %3 = icmp ne i8 %0, 10
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LoopUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000028(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, %0
   %3 = icmp ugt i8 %0, 28
@@ -66,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/unicode_norm_srv.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000188(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ugt i8 %0, %1
@@ -77,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/unicodedata.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000010c(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, %0
   %3 = icmp ne i8 %0, 0

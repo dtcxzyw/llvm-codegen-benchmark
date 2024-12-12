@@ -10,7 +10,12 @@ entry:
   ret i64 %2
 }
 
-; 1 occurrences:
+; 6 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i1 %0, i64 %1) #0 {
@@ -20,8 +25,7 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
-; hyperscan/optimized/ng_util.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i64 %1) #0 {
@@ -49,16 +53,15 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/socketmodule.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
-; hyperscan/optimized/ng_util.cpp.ll
 ; libwebp/optimized/quality_estimate.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -32
-  %3 = select i1 %0, i64 -16, i64 %2
+  %2 = add i64 %1, 11
+  %3 = select i1 %0, i64 -9223372036854775807, i64 %2
   ret i64 %3
 }
 

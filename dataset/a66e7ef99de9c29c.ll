@@ -8,11 +8,11 @@
 ; recastnavigation/optimized/Sample_TempObstacles.cpp.ll
 ; recastnavigation/optimized/Sample_TileMesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -23,12 +23,12 @@ entry:
 ; postgres/optimized/postmaster.ll
 ; postgres/optimized/rangetypes_spgist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = sub i32 0, %0
-  %5 = icmp eq i32 %3, %4
+  %4 = sub nsw i32 0, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 

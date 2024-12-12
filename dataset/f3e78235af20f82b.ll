@@ -1,5 +1,5 @@
 
-; 102 occurrences:
+; 99 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/darBalance.c.ll
 ; abc/optimized/sclLibUtil.c.ll
@@ -29,6 +29,7 @@
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; lua/optimized/ldebug.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -77,8 +78,6 @@
 ; openjdk/optimized/zGeneration.ll
 ; openmpi/optimized/comm_cid.ll
 ; openmpi/optimized/group_init.ll
-; openmpi/optimized/tm_mt.ll
-; openmpi/optimized/topo_base_cart_map.ll
 ; openspiel/optimized/spiel_utils.cc.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; postgres/optimized/attmap.ll
@@ -88,8 +87,6 @@
 ; postgres/optimized/localbuf.ll
 ; postgres/optimized/nbtutils.ll
 ; postgres/optimized/nodeIndexscan.ll
-; proj/optimized/io.cpp.ll
-; quest/optimized/mt19937ar.c.ll
 ; raylib/optimized/rcore.c.ll
 ; re2/optimized/dfa.cc.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
@@ -110,7 +107,7 @@ entry:
   ret i32 %3
 }
 
-; 66 occurrences:
+; 59 occurrences:
 ; abc/optimized/infback.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -145,28 +142,21 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; minetest/optimized/CGUIListBox.cpp.ll
 ; minetest/optimized/profiler.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
-; nori/optimized/nanovg.c.ll
-; openjdk/optimized/awt_GraphicsEnv.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openmpi/optimized/pml_ob1_recvreq.ll
 ; openmpi/optimized/proc.ll
-; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/zend_hash.ll
-; postgres/optimized/detoast.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/heapam_handler.ll
 ; postgres/optimized/print.ll
 ; postgres/optimized/syncscan.ll
 ; qemu/optimized/hw_riscv_numa.c.ll
 ; ruby/optimized/loop.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-aeron.c.ll
 ; wireshark/optimized/packet-snort.c.ll
@@ -185,11 +175,10 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
-; gromacs/optimized/resourcedivision.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
@@ -202,7 +191,7 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; gromacs/optimized/sm_merge.cpp.ll
 ; icu/optimized/ustdio.ll
@@ -211,6 +200,7 @@ entry:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openexr/optimized/decoding.c.ll
 ; openjdk/optimized/arraycopynode.ll
 ; openjdk/optimized/ifnode.ll
@@ -232,6 +222,26 @@ entry:
   ret i32 %3
 }
 
+; 11 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; openjdk/optimized/awt_GraphicsEnv.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; postgres/optimized/detoast.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %0, %1
+  %3 = select i1 %2, i32 %0, i32 0
+  ret i32 %3
+}
+
 ; 2 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; openjdk/optimized/assembler.ll
@@ -240,6 +250,16 @@ define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, %1
   %3 = select i1 %2, i32 %0, i32 0
+  ret i32 %3
+}
+
+; 1 occurrences:
+; gromacs/optimized/resourcedivision.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %0, %1
+  %3 = select i1 %2, i32 %0, i32 1
   ret i32 %3
 }
 

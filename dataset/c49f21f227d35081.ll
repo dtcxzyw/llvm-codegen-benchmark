@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 27 occurrences:
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
 ; html5ever-rs/optimized/4e9vfrmeneic1jap.ll
@@ -22,12 +22,17 @@
 ; protobuf/optimized/struct.pb.cc.ll
 ; protobuf/optimized/type.pb.cc.ll
 ; protobuf/optimized/unparser.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a1(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000001e1(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 16
-  %5 = getelementptr nusw i8, ptr %1, i64 24
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 24
   %6 = icmp eq i64 %0, 0
   %7 = select i1 %6, ptr %5, ptr %4
   ret ptr %7

@@ -1,5 +1,6 @@
 
-; 34 occurrences:
+; 35 occurrences:
+; llvm/optimized/SampleProfile.cpp.ll
 ; node/optimized/libnode.crypto_aes.ll
 ; node/optimized/libnode.crypto_dh.ll
 ; node/optimized/libnode.crypto_dsa.ll
@@ -35,9 +36,9 @@
 ; pybind11/optimized/test_smart_ptr.cpp.ll
 ; rocksdb/optimized/skiplistrep.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000003(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = urem i64 %3, %0
   ret i64 %4

@@ -1,4 +1,4 @@
-func0000000000000204:                   # @func0000000000000204
+func0000000000000404:                   # @func0000000000000404
 	li	a0, 10
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsext.vf4	v9, v8
@@ -18,7 +18,7 @@ func0000000000000204:                   # @func0000000000000204
 	ret
 .LCPI1_0:
 	.quad	999999999999999999              # 0xde0b6b3a763ffff
-func0000000000000208:                   # @func0000000000000208
+func0000000000000408:                   # @func0000000000000408
 	li	a0, 10
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsext.vf4	v9, v8

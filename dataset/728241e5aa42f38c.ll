@@ -1,10 +1,9 @@
 
-; 116 occurrences:
+; 110 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
-; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; casadi/optimized/getnonzeros.cpp.ll
 ; casadi/optimized/mx.cpp.ll
@@ -15,11 +14,9 @@
 ; casadi/optimized/sx_function.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
-; gromacs/optimized/colvargrid.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/gmx_chi.cpp.ll
@@ -34,7 +31,6 @@
 ; gromacs/optimized/topio.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
-; hyperscan/optimized/ng_netflow.cpp.ll
 ; hyperscan/optimized/rdfa_merge.cpp.ll
 ; ipopt/optimized/IpTNLPAdapter.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -45,11 +41,9 @@
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
-; meshlab/optimized/io_ctm.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; ncnn/optimized/detectionoutput.cpp.ll
@@ -117,7 +111,7 @@
 ; yosys/optimized/memory_bram.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = sub nuw nsw i64 %0, %2
@@ -142,6 +136,8 @@ entry:
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/collate.ll
+; boost/optimized/range.ll
 ; casadi/optimized/fmu.cpp.ll
 ; casadi/optimized/fmu_function.cpp.ll
 ; casadi/optimized/getnonzeros.cpp.ll
@@ -255,7 +251,6 @@ entry:
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -286,7 +281,6 @@ entry:
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh_model.cpp.ll
@@ -446,12 +440,28 @@ entry:
 ; xgboost/optimized/random.cc.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = sub nuw i64 %0, %2
   %4 = xor i64 %2, 576460752303423487
   %5 = icmp ult i64 %4, %3
+  ret i1 %5
+}
+
+; 5 occurrences:
+; assimp/optimized/SIBImporter.cpp.ll
+; faiss/optimized/IndexPQ.cpp.ll
+; gromacs/optimized/colvargrid.cpp.ll
+; hyperscan/optimized/ng_netflow.cpp.ll
+; meshlab/optimized/io_ctm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 2
+  %3 = sub nuw nsw i64 %0, %2
+  %4 = xor i64 %2, 2305843009213693951
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

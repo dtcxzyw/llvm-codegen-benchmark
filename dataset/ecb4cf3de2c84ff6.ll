@@ -11,10 +11,11 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifDsd.c.ll
+; boost/optimized/area.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; bullet3/optimized/b3Solver.ll
 ; clamav/optimized/rebuildpe.c.ll
@@ -56,19 +57,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl nsw i32 %3, 1
-  ret i32 %4
-}
-
-; 1 occurrences:
-; abc/optimized/exor.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sdiv i32 %1, -2
-  %3 = add i32 %2, %0
-  %4 = shl nuw nsw i32 %3, 1
   ret i32 %4
 }
 

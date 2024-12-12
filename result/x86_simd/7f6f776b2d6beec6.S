@@ -5,9 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	vpternlogd	$120, .LCPI0_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 ^ (ymm1 & mem)
 	retq
 .LCPI1_0:
-	.long	2863311530                      # 0xaaaaaaaa
+	.long	4042322160                      # 0xf0f0f0f0
 func0000000000000002:                   # @func0000000000000002
-	vpaddd	%ymm1, %ymm1, %ymm1
+	vpslld	$4, %ymm1, %ymm1
 	vpternlogd	$120, .LCPI1_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 ^ (ymm1 & mem)
 	retq
 .LCPI2_0:

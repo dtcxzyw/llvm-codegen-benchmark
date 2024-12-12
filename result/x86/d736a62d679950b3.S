@@ -54,7 +54,7 @@ func000000000000002c:                   # @func000000000000002c
 	vcmpltss	%xmm1, %xmm0, %k1
 	vmovss	.LCPI3_0(%rip), %xmm2           # xmm2 = [5.0E-1,0.0E+0,0.0E+0,0.0E+0]
 	vmovss	.LCPI3_1(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [-5.0E-1,0.0E+0,0.0E+0,0.0E+0]
-	vaddss	%xmm0, %xmm2, %xmm0
+	vaddss	%xmm2, %xmm0, %xmm0
 	vucomiss	%xmm1, %xmm0
 	setae	%al
 	retq

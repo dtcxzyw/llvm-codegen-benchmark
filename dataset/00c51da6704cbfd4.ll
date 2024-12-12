@@ -1,6 +1,5 @@
 
-; 34 occurrences:
-; clamav/optimized/filcreat.cpp.ll
+; 32 occurrences:
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
 ; flac/optimized/metadata.cpp.ll
 ; git/optimized/add-patch.ll
@@ -13,7 +12,6 @@
 ; imgui/optimized/imgui.cpp.ll
 ; jq/optimized/jv.ll
 ; libwebp/optimized/cwebp.c.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/LLLexer.cpp.ll

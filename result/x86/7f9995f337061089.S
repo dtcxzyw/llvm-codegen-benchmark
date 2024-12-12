@@ -4,7 +4,6 @@ func0000000000000006:                   # @func0000000000000006
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rcx, %rax
-	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
 func000000000000000e:                   # @func000000000000000e

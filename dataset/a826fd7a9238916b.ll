@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -15,7 +15,6 @@
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
 ; oiio/optimized/exroutput.cpp.ll
-; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -21,13 +21,14 @@ entry:
   ret float %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; gromacs/optimized/editconf.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; mitsuba3/optimized/progress.cpp.ll
 ; recastnavigation/optimized/imgui.cpp.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(i1 %0, float %1) #0 {
 entry:

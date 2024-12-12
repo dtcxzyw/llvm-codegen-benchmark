@@ -5,7 +5,7 @@
 ; cvc5/optimized/SimpSolver.cc.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000061a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c2a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, %1
   %4 = select i1 %3, i32 %2, i32 0
@@ -21,7 +21,7 @@ entry:
 ; cvc5/optimized/SimpSolver.cc.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000611(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c21(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i32 %0, i32 0
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000060a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c0a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i32 %0, i32 0
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_guc_capture.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000401(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000801(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = select i1 %3, i32 %0, i32 0

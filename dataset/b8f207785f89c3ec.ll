@@ -10,8 +10,7 @@ entry:
   ret i8 %3
 }
 
-; 5 occurrences:
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
+; 4 occurrences:
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; linux/optimized/drm_client_modeset.ll
 ; llvm/optimized/Archive.cpp.ll

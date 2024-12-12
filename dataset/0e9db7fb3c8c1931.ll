@@ -1,4 +1,18 @@
 
+; 3 occurrences:
+; lvgl/optimized/lv_calendar.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 7
+  %4 = add nsw i32 %1, %3
+  %5 = xor i32 %0, -1
+  %6 = add i32 %4, %5
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
 ; Function Attrs: nounwind
@@ -18,7 +32,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, 17973513
   %6 = sub i32 %5, %0
   ret i32 %6
@@ -32,7 +46,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, 17973513
   %6 = sub i32 %5, %0
   ret i32 %6

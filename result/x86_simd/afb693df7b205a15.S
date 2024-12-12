@@ -14,7 +14,7 @@ func0000000000000009:                   # @func0000000000000009
 	vpsraw	$7, %xmm1, %xmm1
 	vpaddw	%xmm2, %xmm1, %xmm1
 	vpmovsxwd	%xmm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.short	5243                            # 0x147b
@@ -32,7 +32,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpsraw	$5, %xmm1, %xmm1
 	vpaddw	%xmm2, %xmm1, %xmm1
 	vpmovsxwd	%xmm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.short	5243                            # 0x147b
@@ -50,5 +50,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpsraw	$5, %xmm1, %xmm1
 	vpaddw	%xmm2, %xmm1, %xmm1
 	vpmovsxwd	%xmm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

@@ -5,7 +5,7 @@
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0) #0 {
+define i32 @func0000000000000021(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 15
   %2 = icmp eq i8 %1, 4

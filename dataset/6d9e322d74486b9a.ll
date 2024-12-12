@@ -1,5 +1,5 @@
 
-; 154 occurrences:
+; 153 occurrences:
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; wireshark/optimized/sequence_analysis.c.ll
 ; z3/optimized/aig_exporter.cpp.ll
@@ -18,7 +18,6 @@
 ; z3/optimized/bv_bounds_tactic.cpp.ll
 ; z3/optimized/bv_size_reduction_tactic.cpp.ll
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_solver_simplify_tactic.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
 ; z3/optimized/degree_shift_tactic.cpp.ll
@@ -167,11 +166,11 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/wlnRead.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 5
   %3 = add i32 %2, -6
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -191,11 +190,11 @@ entry:
 ; linux/optimized/pci-acpi.ll
 ; z3/optimized/mpfx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 14
   %3 = add i32 %2, 2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 

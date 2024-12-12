@@ -20,11 +20,15 @@ func0000000000000000:                   # @func0000000000000000
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	andi	a2, a2, 1
 	andi	a1, a1, 1
-	slli	a2, a2, 3
+	andi	a2, a2, 1
+	lui	a3, 1
+	addi	a2, a2, -1
+	addiw	a4, a3, 1092
+	addi	a1, a1, -1
+	and	a2, a2, a4
 	or	a0, a0, a2
-	slli	a1, a1, 7
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001

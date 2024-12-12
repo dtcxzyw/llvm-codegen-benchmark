@@ -1,12 +1,11 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
 ; mold/optimized/arch-m68k.cc.ll
 ; mold/optimized/arch-ppc32.cc.ll
 ; mold/optimized/arch-sh4.cc.ll
@@ -24,9 +23,11 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; nix/optimized/parser-tab.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
 entry:

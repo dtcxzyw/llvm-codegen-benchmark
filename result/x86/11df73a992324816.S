@@ -1,8 +1,8 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
-	shll	$4, %eax
+	shll	$5, %eax
 	addq	%rdx, %rax
 	leaq	(%rax,%rdi,4), %rax
 	retq

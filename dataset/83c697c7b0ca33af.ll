@@ -1,5 +1,8 @@
 
-; 250 occurrences:
+%"struct.entt::internal::dense_map_node.274.3104692" = type { i64, %"struct.std::pair.85.3104693" }
+%"struct.std::pair.85.3104693" = type { i32, i32 }
+
+; 360 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; actix-rs/optimized/34v80y29y6uwgxas.ll
 ; actix-rs/optimized/3vuztpi76sfr8ij.ll
@@ -19,19 +22,16 @@
 ; coreutils-rs/optimized/2t0y7t7n5luzzzcl.ll
 ; coreutils-rs/optimized/31ndbnr1d3v04hlo.ll
 ; coreutils-rs/optimized/46f95inzk3jhcqx1.ll
-; coreutils-rs/optimized/kzw0j36g3iuvoct.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
-; entt/optimized/dense_map.cpp.ll
-; entt/optimized/dense_set.cpp.ll
+; egg-rs/optimized/4kyf9c0dbd7gw6jh.ll
 ; folly/optimized/AsyncUDPSocket.cpp.ll
 ; folly/optimized/Elf.cpp.ll
 ; gromacs/optimized/angle.cpp.ll
 ; gromacs/optimized/basicoptions.cpp.ll
 ; gromacs/optimized/bias.cpp.ll
-; gromacs/optimized/booltype.cpp.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/constr.cpp.ll
 ; gromacs/optimized/constraint_gpu_helpers.cpp.ll
@@ -83,7 +83,6 @@
 ; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/MachineLoopInfo.cpp.ll
 ; llvm/optimized/MachinePostDominators.cpp.ll
-; llvm/optimized/Patterns.cpp.ll
 ; logos-rs/optimized/3mt0owpv3a6q89fi.ll
 ; meilisearch-rs/optimized/11m597hzfugnyzhs.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -212,6 +211,14 @@
 ; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; turborepo-rs/optimized/1ndqmllq8mi5y5aeb5nl95w3q.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/5oyfkcp83qeshlhfpeq645wiv.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
+; turborepo-rs/optimized/8oe5vwmwwrst9p60jy1zusiyz.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/d72w0e3d392jdxg8lc3zx40z4.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
@@ -229,7 +236,6 @@
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/1r2x5absurxbrq18.ll
-; wasmtime-rs/optimized/1ufb8v5je5nssh4i.ll
 ; wasmtime-rs/optimized/21u7ulsejlra6dc6.ll
 ; wasmtime-rs/optimized/23pphsjwudwti3b1.ll
 ; wasmtime-rs/optimized/2kevz0g5e1myujwd.ll
@@ -250,10 +256,130 @@
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wasmtime-rs/optimized/yvuhygn8g1cm0um.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/12x3d7yxch19r9kog7sr8geci.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1mcybofnqlkuygv3uh10isuki.ll
+; zed-rs/optimized/1mwyngh2duuoqbqyg0d7k37yf.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/22ahis4uxapmr5sot3uwhf47g.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3f78yk9qk3t4va3r28yxv6tpa.ll
+; zed-rs/optimized/3rui5mencljqz2yol5qi2c13x.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/3x9hk0kmwft7qehj3poulcr6l.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/57a4rocbj9i58n508ja77m5jt.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5gnz59sfffv4rrga3ynjcilqc.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5q8zw1h1kdgz0fiksol53zkaa.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/5yhp42dn62csd0zd7b3dkqa52.ll
+; zed-rs/optimized/616rp2zngqhnd0pszesmvl987.ll
+; zed-rs/optimized/645sb9j0cpiprkfm7s339qqf6.ll
+; zed-rs/optimized/692vrpxgy6b0d4pl6sd9tdrhf.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/6ekeyfm197maw5n7s1cbq34ws.ll
+; zed-rs/optimized/6fmtxmq32k2tm6vxa1i5afd46.ll
+; zed-rs/optimized/6xnl2dtjielbqfefatr8dqq3k.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/7od02cvs02zg2t1jcuk4h4evv.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/835zkucuw8h9aw73lp3nfl4bh.ll
+; zed-rs/optimized/83mjpyo5lbj96jldbmy8hsyj7.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zed-rs/optimized/8c9m4dxfbx8n642b944htcs78.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/8z2isjxwaoh85i1nm1foocihu.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/92ohmf8wjinb2rin9q3h25rho.ll
+; zed-rs/optimized/9eafvdu9qxyugp5or14xw795l.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9g3waalevdqq841zqdk6xauvq.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
+; zed-rs/optimized/9jlworagd4ne92tsld97hkqun.ll
+; zed-rs/optimized/9ld5vmlj2ufuzyru6e6aorg0l.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/a1jdntn5hiutu9tuect63bb1g.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/a4ig8dgz5t1q56qsxep8b7iux.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
+; zed-rs/optimized/a89xbd6f7wd6x8iomyva9pzwz.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/bzs5z51c7x0xt2thexp0lbkvh.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/c6zcqmm1tlbhiy5p6czlxqg9e.ll
+; zed-rs/optimized/ca5us8h013in59yvcsgdq94h9.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/cowgpcky6sb4letat8onbvuca.ll
+; zed-rs/optimized/d236qqx54dpqso3cyloa7ybaj.ll
+; zed-rs/optimized/d334eo7xhndhquqddprlqx6j8.ll
+; zed-rs/optimized/dhtd8mxtyja4srmt3ddrqkjib.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dqm8wfigtkp7d5m4478r0qw46.ll
+; zed-rs/optimized/dtqpsl4w47n2m18dddhdjmklr.ll
+; zed-rs/optimized/dyvad4f2160xvx8b9yj3b8wnj.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/erzde9u7wnx5zkvy3kzdy8721.ll
+; zed-rs/optimized/etkkpijil810uxaq6a1xhpkj9.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f2p4o1tfqflk9ggs4gjk0qweh.ll
+; zed-rs/optimized/f2qsfrlgh226gsylx7h444e9w.ll
 ; Function Attrs: nounwind
 define { ptr, ptr } @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %0, i64 %1
+  %3 = insertvalue { ptr, ptr } poison, ptr %0, 0
+  %4 = insertvalue { ptr, ptr } %3, ptr %2, 1
+  ret { ptr, ptr } %4
+}
+
+; 3 occurrences:
+; entt/optimized/dense_map.cpp.ll
+; entt/optimized/dense_set.cpp.ll
+; llvm/optimized/Patterns.cpp.ll
+; Function Attrs: nounwind
+define { ptr, ptr } @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw %"struct.entt::internal::dense_map_node.274.3104692", ptr %0, i64 %1
   %3 = insertvalue { ptr, ptr } poison, ptr %0, 0
   %4 = insertvalue { ptr, ptr } %3, ptr %2, 1
   ret { ptr, ptr } %4

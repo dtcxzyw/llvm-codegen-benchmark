@@ -9,9 +9,9 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000007:                   # @func0000000000000007
 	andl	$1, %edx
-	leal	8(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
+	leal	8(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	orl	$16, %eax

@@ -43,7 +43,7 @@
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -71,21 +71,7 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; darktable/optimized/Cr2Decompressor.cpp.ll
-; linux/optimized/netdev.ll
-; php/optimized/is_simh.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or i32 %1, %2
-  %4 = icmp eq i32 %3, 0
-  %not. = xor i1 %0, true
-  %5 = select i1 %not., i1 %4, i1 false
-  ret i1 %5
-}
-
-; 51 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/abcNtk.c.ll
@@ -133,15 +119,28 @@ entry:
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/area.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; openspiel/optimized/blotto.cc.ll
 ; openspiel/optimized/goofspiel.cc.ll
 ; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; darktable/optimized/Cr2Decompressor.cpp.ll
+; linux/optimized/netdev.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp eq i32 %3, 0
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -152,7 +151,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %not. = xor i1 %0, true
   %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
@@ -162,7 +161,7 @@ entry:
 ; postgres/optimized/walwriter.ll
 ; zxing/optimized/DMDataBlock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 0
@@ -173,7 +172,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = icmp slt i32 %3, 0

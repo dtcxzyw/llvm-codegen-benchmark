@@ -12,10 +12,9 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
-; rocksdb/optimized/clock_cache.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
@@ -45,7 +44,7 @@ entry:
 define i64 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, 32768
   %6 = select i1 %0, i64 %5, i64 %4
   ret i64 %6

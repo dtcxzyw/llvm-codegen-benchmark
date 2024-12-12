@@ -32,10 +32,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0) #0 {
+define i64 @func0000000000000031(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 255
-  %2 = icmp ugt i32 %1, 14
+  %2 = icmp samesign ugt i32 %1, 14
   %3 = select i1 %2, i32 0, i32 %1
   %4 = zext nneg i32 %3 to i64
   ret i64 %4

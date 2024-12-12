@@ -1,11 +1,8 @@
 
-; 21 occurrences:
+; 17 occurrences:
 ; assimp/optimized/FindInvalidDataProcess.cpp.ll
 ; cmake/optimized/zstd_compress.c.ll
-; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
-; darktable/optimized/VC5Decompressor.cpp.ll
-; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_colorin.c.ll
@@ -14,7 +11,6 @@
 ; darktable/optimized/introspection_diffuse.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; darktable/optimized/introspection_rawprepare.c.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/SMEPeepholeOpt.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -38,6 +34,7 @@ entry:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/yc.c.ll
 ; cmake/optimized/cover.c.ll
+; git/optimized/dir.ll
 ; git/optimized/range-diff.ll
 ; graphviz/optimized/sfprint.c.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
@@ -59,7 +56,6 @@ entry:
 ; postgres/optimized/elog.ll
 ; postgres/optimized/option_utils.ll
 ; postgres/optimized/pg_receivewal.ll
-; redis/optimized/bitops.ll
 ; redis/optimized/ldebug.ll
 ; ruby/optimized/ruby.ll
 ; slurm/optimized/step_mgr.ll
@@ -103,8 +99,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
+; 8 occurrences:
 ; cpython/optimized/flowgraph.ll
 ; freetype/optimized/psaux.c.ll
 ; gromacs/optimized/angle.cpp.ll
@@ -118,6 +113,21 @@ define i1 @func0000000000000006(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = icmp slt i32 %0, 1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 5 occurrences:
+; darktable/optimized/ArwDecoder.cpp.ll
+; darktable/optimized/VC5Decompressor.cpp.ll
+; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_rawprepare.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = or i1 %1, %2
+  %4 = icmp samesign ult i32 %0, 8
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }

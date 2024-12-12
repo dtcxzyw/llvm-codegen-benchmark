@@ -8,7 +8,7 @@
 ; php/optimized/zend_generators.ll
 ; rocksdb/optimized/cuckoo_table_builder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
@@ -24,7 +24,7 @@ entry:
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/zend_hash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/sbdCore.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -51,7 +51,7 @@ entry:
 ; abc/optimized/sbdCore.c.ll
 ; cvc5/optimized/shared_terms_database.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -68,7 +68,7 @@ entry:
 ; openusd/optimized/childrenUtils.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -78,17 +78,16 @@ entry:
   ret i1 %7
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; lua/optimized/ldebug.ll
 ; luajit/optimized/minilua.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; yosys/optimized/memlib.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -102,7 +101,7 @@ entry:
 ; icu/optimized/messagepattern.ll
 ; llvm/optimized/LazyCallGraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -122,7 +121,7 @@ entry:
 ; opencv/optimized/rapid.cpp.ll
 ; openspiel/optimized/observation_history.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3

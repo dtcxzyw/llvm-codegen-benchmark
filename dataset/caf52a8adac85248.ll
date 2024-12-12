@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/ifTune.c.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/pt.ll
 ; llvm/optimized/RISCVTargetParser.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll

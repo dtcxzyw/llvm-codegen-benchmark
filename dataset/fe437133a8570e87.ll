@@ -13,7 +13,7 @@ entry:
   ret i64 %7
 }
 
-; 31 occurrences:
+; 29 occurrences:
 ; icu/optimized/regexcmp.ll
 ; linux/optimized/intel_pstate.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
@@ -22,7 +22,6 @@ entry:
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/hash_tsdf.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
-; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
@@ -32,7 +31,6 @@ entry:
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -89,7 +87,7 @@ entry:
   ret i64 %7
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; graphviz/optimized/actions.c.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/fault.ll
@@ -99,7 +97,6 @@ entry:
 ; linux/optimized/process_64.ll
 ; linux/optimized/step.ll
 ; linux/optimized/super.ll
-; linux/optimized/sys_ia32.ll
 ; linux/optimized/taskstats.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll

@@ -40,7 +40,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI4_0:
 	.quad	2147483648                      # 0x80000000
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vptestmq	.LCPI4_0(%rip){1to4}, %ymm1, %k1

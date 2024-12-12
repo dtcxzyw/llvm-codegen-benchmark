@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
@@ -10,8 +10,6 @@
 ; eastl/optimized/TestSort.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; entt/optimized/dispatcher.cpp.ll
-; hermes/optimized/IR.cpp.ll
-; hermes/optimized/StringRef.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; openssl/optimized/libcrypto-lib-bss_mem.ll

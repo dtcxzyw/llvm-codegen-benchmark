@@ -16,15 +16,15 @@ func0000000000000019:                   # @func0000000000000019
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func000000000000001b:                   # @func000000000000001b
-	leal	256(%rdx), %ecx
-	leal	-1(%rsi), %eax
+func0000000000000000:                   # @func0000000000000000
+	leal	8(%rdx), %ecx
+	leal	16(%rsi), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	leal	1(%rdx), %ecx
-	leal	-2(%rsi), %eax
+func000000000000001b:                   # @func000000000000001b
+	leal	256(%rdx), %ecx
+	leal	-1(%rsi), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

@@ -29,6 +29,11 @@ func0000000000000004:                   # @func0000000000000004
 	imulq	$1000000, %rdi, %rax            # imm = 0xF4240
 	addq	%rsi, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	imulq	$1000000, %rdx, %rax            # imm = 0xF4240
+	subq	%rsi, %rdi
+	addq	%rdi, %rax
+	retq
 func0000000000000030:                   # @func0000000000000030
 	imulq	$-19, %rdx, %rax
 	subq	%rsi, %rdi

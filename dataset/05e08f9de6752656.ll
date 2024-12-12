@@ -1,11 +1,9 @@
 
-; 29 occurrences:
+; 26 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaCut.c.ll
 ; abc/optimized/giaMf.c.ll
-; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/ifDsd.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/mpmTruth.c.ll
 ; abc/optimized/sbdCut.c.ll
@@ -16,7 +14,6 @@
 ; gromacs/optimized/simd_prune_kernel.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; libquic/optimized/exponentiation.c.ll
-; libquic/optimized/ntt.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -34,7 +31,7 @@ define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -51,7 +48,7 @@ define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 4, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -69,7 +66,7 @@ define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -82,40 +79,33 @@ define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; abc/optimized/dauDivs.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000017(i64 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw i32 1, %1
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
 ; 1 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 2, %1
   %3 = zext i32 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
+; brotli/optimized/compound_dictionary.c.ll
+; brotli/optimized/encode.c.ll
+; linux/optimized/move_extent.ll
+; llvm/optimized/SelectionDAG.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000012(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000013(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 2, %1
   %3 = zext i32 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -127,21 +117,7 @@ define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 4 occurrences:
-; brotli/optimized/compound_dictionary.c.ll
-; brotli/optimized/encode.c.ll
-; linux/optimized/move_extent.ll
-; llvm/optimized/SelectionDAG.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw i32 1, %1
-  %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -152,7 +128,7 @@ define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -165,7 +141,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 5, %1
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

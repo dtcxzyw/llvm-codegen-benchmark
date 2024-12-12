@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_math.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/block_parallels.c.ll
 ; Function Attrs: nounwind

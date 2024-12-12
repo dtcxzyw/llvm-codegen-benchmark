@@ -1,5 +1,5 @@
 
-; 258 occurrences:
+; 255 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -20,7 +20,6 @@
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/dauDivs.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -108,9 +107,7 @@
 ; graphviz/optimized/QuadTree.c.ll
 ; graphviz/optimized/furtherest_point.c.ll
 ; graphviz/optimized/sfcvt.c.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; hdf5/optimized/H5EAhdr.c.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
@@ -266,7 +263,7 @@ entry:
   ret i64 %2
 }
 
-; 71 occurrences:
+; 70 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -319,7 +316,6 @@ entry:
 ; libquic/optimized/mul.c.ll
 ; linux/optimized/8250_core.ll
 ; linux/optimized/8250_early.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/swiotlb.ll

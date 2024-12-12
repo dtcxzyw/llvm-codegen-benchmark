@@ -28,8 +28,8 @@ func0000000000000003:                   # @func0000000000000003
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI5_0:
-	.quad	9223372036854775807             # 0x7fffffffffffffff
+	.quad	9223372036854775744             # 0x7fffffffffffffc0
 func0000000000000004:                   # @func0000000000000004
-	vpsraq	$3, %ymm0, %ymm0
+	vpsraq	$2, %ymm0, %ymm0
 	vpaddq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
 	retq

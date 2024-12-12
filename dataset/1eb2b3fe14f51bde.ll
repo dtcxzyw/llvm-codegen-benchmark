@@ -22,7 +22,7 @@ define i32 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %2 = and i32 %0, 255
   %3 = icmp eq i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = or disjoint i32 %0, 8
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6

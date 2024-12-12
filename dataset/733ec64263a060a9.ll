@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; linux/optimized/machine_kexec_64.ll
 ; openspiel/optimized/chess_test.cc.ll
 ; openspiel/optimized/outcome_sampling_mccfr.cc.ll
 ; openspiel/optimized/spiel_bots.cc.ll

@@ -7,3 +7,10 @@ func0000000000000002:                   # @func0000000000000002
 	vmovaps	%zmm2, %zmm1 {%k1}
 	vminps	%zmm0, %zmm1, %zmm0
 	retq
+func000000000000000a:                   # @func000000000000000a
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k1
+	vmovaps	%zmm2, %zmm1 {%k1} {z}
+	vcmpleps	%zmm0, %zmm1, %k1
+	vmovaps	%zmm1, %zmm0 {%k1}
+	retq

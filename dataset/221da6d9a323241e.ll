@@ -1,7 +1,8 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; abc/optimized/sbdCore.c.ll
 ; abseil-cpp/optimized/time_zone_fixed.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libwebp/optimized/vp8l_enc.c.ll
@@ -46,14 +47,15 @@ entry:
   ret i8 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/area.ll
 ; wireshark/optimized/packet-opsi.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i8
-  %2 = sdiv i8 %1, 2
+  %2 = sdiv i8 %1, 8
   ret i8 %2
 }
 

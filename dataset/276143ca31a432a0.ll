@@ -1,12 +1,13 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/format_args.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i64 2, i64 3
+  %3 = select i1 %2, i64 3, i64 1
   %4 = mul i64 %3, %0
   ret i64 %4
 }

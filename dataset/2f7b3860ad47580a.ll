@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 50 occurrences:
 ; cmake/optimized/escape.c.ll
 ; cpython/optimized/_codecs_kr.ll
 ; curl/optimized/libcurl_la-escape.ll
@@ -13,6 +13,7 @@
 ; linux/optimized/rx.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
@@ -47,6 +48,8 @@
 ; wireshark/optimized/packet-sprt.c.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/Node.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
 entry:

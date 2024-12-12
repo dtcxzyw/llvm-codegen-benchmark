@@ -1,20 +1,23 @@
 
-; 15 occurrences:
+; 18 occurrences:
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd8.c.ll
+; cmake/optimized/cover.c.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; linux/optimized/quota_tree.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; wireshark/optimized/packet-ecatmb.c.ll
+; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

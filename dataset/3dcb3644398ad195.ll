@@ -6,7 +6,7 @@
 ; meilisearch-rs/optimized/1cgo24wrkn2cjv53.ll
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func00000000000000a1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nuw i64 %3, %1

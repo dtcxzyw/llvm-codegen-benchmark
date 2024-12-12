@@ -13,11 +13,11 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/shenandoahMark.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = select i1 %0, i32 %1, i32 %3
-  %5 = icmp ugt i32 %4, 30
+  %5 = icmp samesign ugt i32 %4, 30
   ret i1 %5
 }
 
@@ -252,7 +252,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = select i1 %0, i32 %1, i32 %3
@@ -263,7 +263,7 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = select i1 %0, i32 %1, i32 %3
@@ -274,7 +274,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 13, %2
   %4 = select i1 %0, i32 %1, i32 %3
@@ -288,7 +288,7 @@ entry:
 ; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 13, %2
   %4 = select i1 %0, i32 %1, i32 %3
@@ -311,11 +311,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/casCore.c.ll
 ; abc/optimized/giaDup.c.ll
+; wireshark/optimized/packet-nat-pmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = select i1 %0, i32 %1, i32 %3
@@ -323,13 +324,12 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/giaMuxes.c.ll
-; wireshark/optimized/packet-nat-pmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = select i1 %0, i32 %1, i32 %3
@@ -341,18 +341,18 @@ entry:
 ; abc/optimized/giaMuxes.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = select i1 %0, i32 %1, i32 %3
-  %5 = icmp ult i32 %4, 6
+  %5 = icmp samesign ult i32 %4, 6
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 -2147483648, %2
   %4 = select i1 %0, i32 %1, i32 %3

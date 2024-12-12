@@ -1,8 +1,6 @@
 
-; 19 occurrences:
-; c3c/optimized/benchmark.c.ll
+; 17 occurrences:
 ; clamav/optimized/clamdtop.c.ll
-; openmpi/optimized/libmpi_c_profile_la-wtime.ll
 ; openmpi/optimized/tm_tree.ll
 ; quantlib/optimized/btp.ll
 ; quantlib/optimized/chfliborswap.ll
@@ -24,7 +22,7 @@ define double @func0000000000000001(double %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = sitofp i64 %3 to double
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 
@@ -36,7 +34,7 @@ define double @func0000000000000000(double %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sitofp i64 %3 to double
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 

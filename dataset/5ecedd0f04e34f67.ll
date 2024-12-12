@@ -22,7 +22,7 @@ entry:
 define i16 @func000000000000003c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 100
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -100,7 +100,9 @@ entry:
   ret i16 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; jq/optimized/decNumber.ll
 ; quantlib/optimized/date.ll
 ; wireshark/optimized/packet-ssyncp.c.ll

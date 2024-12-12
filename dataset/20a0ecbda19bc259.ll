@@ -8,6 +8,7 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
+; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CoverageMappingGen.cpp.ll
 ; llvm/optimized/LLLexer.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
@@ -53,7 +54,6 @@
 ; spike/optimized/vwsubu_vx.ll
 ; spike/optimized/vwsubu_wv.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/protobuf_lang_scanner.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i16 %0) #0 {
 entry:

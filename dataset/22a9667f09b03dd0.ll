@@ -3,7 +3,7 @@
 ; redis/optimized/server.ll
 ; rocksdb/optimized/rate_limiter.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 100
   %3 = sdiv i64 %2, %0
@@ -14,11 +14,11 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/rate_limiter.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 100
   %3 = sdiv i64 %2, %0
-  %4 = icmp ugt i64 %3, 90
+  %4 = icmp samesign ugt i64 %3, 90
   ret i1 %4
 }
 
@@ -36,11 +36,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/blk-iocost.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 100
   %3 = sdiv i64 %2, %0
-  %4 = icmp ugt i64 %3, 24999
+  %4 = icmp samesign ugt i64 %3, 24999
   ret i1 %4
 }
 
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/server.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 100
   %3 = sdiv i64 %2, %0

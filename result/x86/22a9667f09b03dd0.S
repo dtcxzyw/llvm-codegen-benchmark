@@ -1,11 +1,11 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	imulq	$100, %rsi, %rax
 	cqto
 	idivq	%rdi
 	cmpq	$50, %rax
 	setl	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000058:                   # @func0000000000000058
 	imulq	$100, %rsi, %rax
 	cqto
 	idivq	%rdi
@@ -19,7 +19,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	$501, %rax                      # imm = 0x1F5
 	setl	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	imulq	$100, %rsi, %rax
 	cqto
 	idivq	%rdi
@@ -35,7 +35,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	imulq	$100, %rsi, %rax
 	cqto
 	idivq	%rdi

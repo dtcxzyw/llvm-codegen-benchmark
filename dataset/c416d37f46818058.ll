@@ -1,5 +1,7 @@
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/ci_string.ll
+; boost/optimized/normalize.ll
 ; imgui/optimized/imgui.cpp.ll
 ; opencv/optimized/contours_new.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll

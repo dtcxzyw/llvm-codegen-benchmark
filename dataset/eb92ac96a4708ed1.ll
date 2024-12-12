@@ -1,5 +1,5 @@
 
-; 264 occurrences:
+; 310 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/cordz_test.cc.ll
@@ -14,6 +14,7 @@
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; actix-rs/optimized/bcivtj360kt2ve.ll
+; boost/optimized/syslog_backend.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; clamav/optimized/mbox.c.ll
@@ -71,7 +72,6 @@
 ; icu/optimized/derb.ll
 ; icu/optimized/dtptngen.ll
 ; icu/optimized/genbrk.ll
-; icu/optimized/genccode.ll
 ; icu/optimized/gencfu.ll
 ; icu/optimized/gencmn.ll
 ; icu/optimized/genrb.ll
@@ -90,9 +90,7 @@
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/keyboard.ll
-; linux/optimized/libata-eh.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/nsobject.ll
 ; linux/optimized/pcm_misc.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/slub.ll
@@ -117,6 +115,7 @@
 ; llvm/optimized/LLLexer.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
+; llvm/optimized/RunLoopAutoreleaseLeakChecker.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
@@ -147,19 +146,13 @@
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/loaderConstraints.ll
-; openmpi/optimized/opal_installdirs_env.ll
-; openmpi/optimized/pmix_pinstalldirs_env.ll
-; openmpi/optimized/prte_installdirs_env.ll
 ; openspiel/optimized/dynamic_routing_utils.cc.ll
 ; openspiel/optimized/human_bot.cc.ll
-; openssl/optimized/ca_internals_test-bin-app_provider.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
-; openssl/optimized/libapps-lib-app_provider.ll
 ; openssl/optimized/libapps-lib-apps.ll
 ; openssl/optimized/libcrypto-lib-obj_dat.ll
 ; openssl/optimized/libcrypto-shlib-obj_dat.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
-; openssl/optimized/libtestutil-lib-stanza.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; openssl/optimized/openssl-bin-req.ll
 ; openssl/optimized/openssl-bin-spkac.ll
@@ -264,6 +257,59 @@
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; z3/optimized/datalog_parser.cpp.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; zed-rs/optimized/0edto9xfb03ghurp74gwvgvrr.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/12x3d7yxch19r9kog7sr8geci.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/160h40gmjuq6w4py8cgz7ceyb.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1t00sx04wxddh9gaenzu20fkj.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/38pyrye3lmvdaenlt6t0na0m3.ll
+; zed-rs/optimized/455yb6ma6j3a5kpbn5166o5rm.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5mqaql67fk8cb5w1h1xcbyeu9.ll
+; zed-rs/optimized/5zwiozx0qizoaz5dy257szmof.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/7la7lih0ughh74a0k2a34khk7.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
+; zed-rs/optimized/8x58xp4s22l8izlb56sviitm3.ll
+; zed-rs/optimized/9awmqr28bdho83r0fgrej0t00.ll
+; zed-rs/optimized/9dr2kwkk18o137jk0clql0t7q.ll
+; zed-rs/optimized/9llazb78bmu9grt6fsh6yj218.ll
+; zed-rs/optimized/9m8v6uy2305b0acd84bvd598m.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
+; zed-rs/optimized/aktvc84j83s8sqq1xgqfsdyza.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/b6ps497cu7xjd0as5oqedkmfl.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/ck3kc7tiio8an4sl3pcex3tmd.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/d9u9g3e4j8a6dko6rysohoksz.ll
+; zed-rs/optimized/de4xf1plz4ya209x66ee15yyx.ll
+; zed-rs/optimized/dvn8qit1prase6mygaqh1d4z0.ll
+; zed-rs/optimized/e7sq1vacbh4jwrroyxorjc2j4.ll
+; zed-rs/optimized/e8bv0rfzqk9lxg765unikokbu.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/epsv5gdpg9wii0jlawu81wh31.ll
+; zed-rs/optimized/etkkpijil810uxaq6a1xhpkj9.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
+; zed-rs/optimized/f3ax6fwg663b1ze6yfrcfasp4.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i8 %1) #0 {
 entry:
@@ -283,17 +329,16 @@ entry:
   ret ptr %3
 }
 
-; 24 occurrences:
-; delta-rs/optimized/4zvphat0q9a964bz.ll
+; 27 occurrences:
 ; hermes/optimized/InstructionEscapeAnalysis.cpp.ll
 ; hermes/optimized/LowerBuiltinCalls.cpp.ll
 ; hermes/optimized/Passes.cpp.ll
 ; hermes/optimized/RegAlloc.cpp.ll
 ; hermes/optimized/Utils.cpp.ll
-; influxdb-rs/optimized/380gcqze52ow6205.ll
 ; llvm/optimized/AsmWriter.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CGStmt.cpp.ll
+; llvm/optimized/CStringChecker.cpp.ll
 ; llvm/optimized/CalledOnceCheck.cpp.ll
 ; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/DXContainer.cpp.ll
@@ -301,9 +346,13 @@ entry:
 ; llvm/optimized/ExpandVectorPredication.cpp.ll
 ; llvm/optimized/InferAddressSpaces.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
+; llvm/optimized/LLLexer.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/SimpleLoopUnswitch.cpp.ll
 ; llvm/optimized/StackLifetime.cpp.ll
+; llvm/optimized/StandardInstrumentations.cpp.ll
 ; llvm/optimized/Transforms.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; openusd/optimized/eventData.cpp.ll

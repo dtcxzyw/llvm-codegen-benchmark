@@ -12,5 +12,5 @@ func000000000000002d:                   # @func000000000000002d
 	li	a2, 1
 	sllw	a1, a2, a1
 	addi	a1, a1, 4
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret

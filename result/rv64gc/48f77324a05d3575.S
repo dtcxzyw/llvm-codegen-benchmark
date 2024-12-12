@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	sext.w	a1, a1
 	sext.w	a0, a0
 	lui	a2, 2048
@@ -24,15 +24,6 @@ func000000000000012e:                   # @func000000000000012e
 	feq.s	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
-	ret
-func0000000000000142:                   # @func0000000000000142
-	sext.w	a1, a1
-	sext.w	a0, a0
-	fmv.w.x	fa5, zero
-	fle.s	a2, fa0, fa5
-	xor	a0, a0, a1
-	seqz	a0, a0
-	or	a0, a0, a2
 	ret
 func0000000000000034:                   # @func0000000000000034
 	sext.w	a1, a1

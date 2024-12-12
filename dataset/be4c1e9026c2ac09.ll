@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 36 occurrences:
 ; cvc5/optimized/linear_equality.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_invert.c.ll
@@ -13,6 +13,15 @@
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
 ; opencv/optimized/face_beautification.cpp.ll
 ; opencv/optimized/gapi_render_perf_tests.cpp.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1FullGCMarker.ll
+; openjdk/optimized/g1ParScanThreadState.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/psScavenge.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahMark.ll
+; openjdk/optimized/xHeapIterator.ll
+; openjdk/optimized/zHeapIterator.ll
 ; openssl/optimized/libcrypto-lib-i_cbc.ll
 ; openssl/optimized/libcrypto-shlib-i_cbc.ll
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll

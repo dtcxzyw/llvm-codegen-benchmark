@@ -1,18 +1,19 @@
 
 ; 3 occurrences:
 ; folly/optimized/DistributedMutex.cpp.ll
-; linux/optimized/cap_audit.ll
+; openblas/optimized/sscal_k.c.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = and i64 %0, 63
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
+; boost/optimized/alloc_lib.ll
 ; linux/optimized/conditional.ll
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/policydb.ll
@@ -49,7 +50,7 @@ entry:
 ; cvc5/optimized/transcendental_state.cpp.ll
 ; minetest/optimized/l_minimap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = and i64 %0, 4294967295
@@ -57,10 +58,11 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/memnode.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4
   %3 = and i64 %0, -4
@@ -68,11 +70,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; openblas/optimized/sscal_k.c.ll
+; 1 occurrences:
 ; openjdk/optimized/memnode.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4
   %3 = and i64 %0, -4
@@ -80,13 +81,12 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cvc5/optimized/sygus_grammar_norm.cpp.ll
-; darktable/optimized/DeflateDecompressor.cpp.ll
 ; libquic/optimized/rsa_impl.c.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 16
   %3 = and i64 %0, -16
@@ -111,7 +111,7 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f64_rem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = and i64 %0, 2047
@@ -119,40 +119,52 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
-; cmake/optimized/archive_read_support_filter_uu.c.ll
-; cmake/optimized/archive_read_support_format_mtree.c.ll
-; faiss/optimized/DirectMap.cpp.ll
-; linux/optimized/compaction.ll
-; llvm/optimized/Signals.cpp.ll
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -12
-  %3 = and i64 %0, 4294967295
+  %2 = add nuw i64 %1, 8
+  %3 = and i64 %0, -8
   %4 = icmp ult i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
-; linux/optimized/mmconf-fam10h_64.ll
+; lvgl/optimized/lv_tlsf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 269484032
-  %3 = and i64 %0, -1048576
-  %4 = icmp uge i64 %3, %2
+  %2 = add nuw nsw i64 %1, 32
+  %3 = and i64 %0, -4
+  %4 = icmp ult i64 %3, %2
+  ret i1 %4
+}
+
+; 6 occurrences:
+; cmake/optimized/archive_read_support_filter_uu.c.ll
+; cmake/optimized/archive_read_support_format_mtree.c.ll
+; faiss/optimized/DirectMap.cpp.ll
+; linux/optimized/compaction.ll
+; llvm/optimized/Signals.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 32
+  %3 = and i64 %0, -4
+  %4 = icmp ult i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; faiss/optimized/AutoTune.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2
   %3 = and i64 %0, 9223372036854775804
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -160,7 +172,7 @@ entry:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000049(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 8
   %3 = and i64 %0, -4

@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; cmake/optimized/cmCTestRunTest.cxx.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; graphviz/optimized/arrows.c.ll
@@ -27,7 +27,6 @@
 ; openusd/optimized/testTs_HardToReach.cpp.ll
 ; openusd/optimized/typeRegistry.cpp.ll
 ; proj/optimized/grids.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; quantlib/optimized/analytic_discr_geom_av_strike.ll
 ; quantlib/optimized/analyticpartialtimebarrieroptionengine.ll
 ; quantlib/optimized/analytictwoassetbarrierengine.ll

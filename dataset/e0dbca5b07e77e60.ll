@@ -15,7 +15,7 @@
 ; opencv/optimized/umatrix.cpp.ll
 ; z3/optimized/nlqsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 25769803782
   ret i1 %1

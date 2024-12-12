@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; cmake/optimized/MD5.c.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
@@ -16,7 +16,6 @@
 ; z3/optimized/ast_counter.cpp.ll
 ; z3/optimized/automaton.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -75,7 +74,7 @@ entry:
   ret i64 %4
 }
 
-; 102 occurrences:
+; 101 occurrences:
 ; abc/optimized/deflate.c.ll
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/deflate.c.ll
@@ -83,7 +82,6 @@ entry:
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; hermes/optimized/RuntimeJSONUtils.cpp.ll
 ; libquic/optimized/deflate.c.ll
-; lief/optimized/Builder.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
@@ -187,7 +185,7 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/ifDec08.c.ll
@@ -196,8 +194,6 @@ entry:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; gromacs/optimized/dorg2r.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -213,7 +209,7 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; cmake/optimized/block_header_encoder.c.ll
 ; freetype/optimized/bdf.c.ll
 ; linux/optimized/deflate.ll
@@ -223,6 +219,7 @@ entry:
 ; mitsuba3/optimized/builder.cpp.ll
 ; openusd/optimized/subset.cpp.ll
 ; wireshark/optimized/packet-wcp.c.ll
+; wireshark/optimized/packet_list_model.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
@@ -251,7 +248,7 @@ entry:
   ret i64 %4
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; assimp/optimized/MD5Parser.cpp.ll
@@ -275,6 +272,7 @@ entry:
 ; draco/optimized/mesh_cleanup.cc.ll
 ; draco/optimized/ply_decoder.cc.ll
 ; draco/optimized/shannon_entropy.cc.ll
+; draco/optimized/symbol_encoding.cc.ll
 ; draco/optimized/triangle_soup_mesh_builder.cc.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
@@ -408,9 +406,10 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
+; graphviz/optimized/sfcvt.c.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; linux/optimized/svcsock.ll
 ; z3/optimized/bv_internalize.cpp.ll

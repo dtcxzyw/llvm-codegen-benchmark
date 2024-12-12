@@ -1,15 +1,15 @@
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	decq	%rdx
-	cmpq	%rsi, %rdx
-	setb	%cl
+	cmpq	%rdx, %rsi
+	seta	%cl
 	testl	%edi, %edi
 	setle	%al
 	orb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	addq	$2, %rdx
-	cmpq	%rsi, %rdx
-	seta	%cl
+	cmpq	%rdx, %rsi
+	setb	%cl
 	testl	%edi, %edi
 	setne	%al
 	orb	%cl, %al

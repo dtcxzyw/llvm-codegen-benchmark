@@ -34,9 +34,10 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
+; freetype/optimized/ftbase.c.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; ncnn/optimized/flatten_x86_avx.cpp.ll
 ; ncnn/optimized/flatten_x86_fma.cpp.ll

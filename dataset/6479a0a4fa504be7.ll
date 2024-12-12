@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -17,7 +17,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -41,7 +40,7 @@
 define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, %0
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, 947912704
   %6 = shl nuw nsw i32 %0, 23
   %7 = sub nuw i32 %5, %6

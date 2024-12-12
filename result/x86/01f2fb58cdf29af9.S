@@ -13,6 +13,11 @@ func000000000000000c:                   # @func000000000000000c
 	addb	$-7, %sil
 	shlxl	%esi, %eax, %eax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	movzbl	%dil, %eax
+	decb	%sil
+	shlxl	%esi, %eax, %eax
+	retq
 func000000000000000b:                   # @func000000000000000b
 	movzbl	%dil, %eax
 	addb	$-2, %sil

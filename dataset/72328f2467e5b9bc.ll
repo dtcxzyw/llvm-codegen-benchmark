@@ -4,7 +4,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nsw i32 %0, 2

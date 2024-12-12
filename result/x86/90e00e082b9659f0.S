@@ -4,7 +4,7 @@ func000000000000000a:                   # @func000000000000000a
 	sarl	$31, %eax
 	andl	%edi, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	cmovgl	%edi, %eax
@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$-64, %eax
 	cmovnel	%edi, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subl	%edx, %esi
 	cmpl	$15, %esi
 	movl	$7, %eax
@@ -38,7 +38,7 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$189, %eax
 	cmovbl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subl	%edx, %esi
 	xorl	%eax, %eax
 	cmpl	$40, %esi

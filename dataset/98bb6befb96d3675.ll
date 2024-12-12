@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 109 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/LowerBuiltinCalls.cpp.ll
@@ -18,7 +18,6 @@
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGProfile.cpp.ll
@@ -115,7 +114,7 @@ define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 29
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -128,7 +127,7 @@ define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 4
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

@@ -1,66 +1,36 @@
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	cmeq	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #1
-	mvn	v2.8b, v2.8b
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	and	v4.16b, v4.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
+	and	w8, w1, #0xff
+	cmp	w8, w2, uxtb
+	cset	w8, ne
+	orr	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	cmeq	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #1
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	and	v4.16b, v4.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
+	and	w8, w1, #0xff
+	cmp	w8, w2, uxtb
+	cinc	w0, w0, eq
 	ret
                                         // -- End function
 func0000000000000025:                   // @func0000000000000025
 // %bb.0:                               // %entry
-	cmhs	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #1
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	and	v4.16b, v4.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
+	and	w8, w1, #0xff
+	cmp	w8, w2, uxtb
+	cinc	w0, w0, hs
 	ret
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	cmhi	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #1
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	and	v4.16b, v4.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
+	and	w8, w1, #0xff
+	cmp	w8, w2, uxtb
+	cinc	w0, w0, hi
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	cmhi	v2.8b, v3.8b, v2.8b
-	movi	v3.4s, #1
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	and	v4.16b, v4.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
+	and	w8, w1, #0xff
+	cmp	w8, w2, uxtb
+	cinc	w0, w0, lo
 	ret
                                         // -- End function

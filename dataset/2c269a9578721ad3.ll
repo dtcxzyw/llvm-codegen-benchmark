@@ -1,15 +1,25 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; openjdk/optimized/g1ConcurrentMark.ll
 ; openjdk/optimized/g1FullGCMarker.ll
 ; openjdk/optimized/g1ParScanThreadState.ll
 ; openjdk/optimized/psParallelCompact.ll
-; openjdk/optimized/psPromotionManager.ll
 ; openjdk/optimized/psScavenge.ll
 ; openjdk/optimized/shenandoahHeap.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 0, i32 %2
+  %4 = and i32 %0, 131071
+  %5 = icmp samesign ugt i32 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openjdk/optimized/psPromotionManager.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
 entry:

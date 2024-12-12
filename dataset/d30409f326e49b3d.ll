@@ -1,12 +1,11 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i1 %1) #0 {
 entry:
@@ -16,11 +15,13 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; hdf5/optimized/H5Oginfo.c.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i1 %1) #0 {

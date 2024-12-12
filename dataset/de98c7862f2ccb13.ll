@@ -8,12 +8,11 @@ define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 1022
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
-; linux/optimized/ip6_flowlabel.ll
+; 1 occurrences:
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
@@ -28,7 +27,7 @@ entry:
 ; arrow/optimized/value_parsing.cc.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 30

@@ -1,8 +1,19 @@
 
 ; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -2
+  %3 = getelementptr i64, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 16
+  ret ptr %4
+}
+
+; 1 occurrences:
 ; llvm/optimized/blake3.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
   %3 = and i64 %2, -32

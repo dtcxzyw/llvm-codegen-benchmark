@@ -1,9 +1,7 @@
 
-; 21 occurrences:
+; 18 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; faiss/optimized/random.cpp.ll
-; graphviz/optimized/randomkit.c.ll
-; openmpi/optimized/tm_mt.ll
 ; quantlib/optimized/burley2020sobolrsg.ll
 ; quantlib/optimized/differentialevolution.ll
 ; quantlib/optimized/fireflyalgorithm.ll
@@ -18,7 +16,6 @@
 ; quantlib/optimized/seedgenerator.ll
 ; quantlib/optimized/sobolrsg.ll
 ; quantlib/optimized/zigguratrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; stockfish/optimized/bitboard.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind

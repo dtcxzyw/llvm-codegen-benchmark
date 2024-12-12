@@ -34,7 +34,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/numeric.ll
 ; git/optimized/color.ll
 ; git/optimized/packfile.ll
 ; Function Attrs: nounwind

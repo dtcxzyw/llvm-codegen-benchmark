@@ -1,7 +1,7 @@
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmax.vx	v10, v10, zero
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -14,7 +14,7 @@ func0000000000000029:                   # @func0000000000000029
 	li	a0, 30
 	vmv.v.x	v12, a0
 	vmerge.vvm	v10, v12, v10, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000030:                   # @func0000000000000030
 	li	a0, 1
@@ -26,7 +26,7 @@ func0000000000000010:                   # @func0000000000000010
 	li	a0, 3
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vminu.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000002b:                   # @func000000000000002b
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -37,11 +37,4 @@ func0000000000000020:                   # @func0000000000000020
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgtu.vi	v0, v10, 1
 	vadd.vv	v8, v8, v10, v0.t
-	ret
-func0000000000000021:                   # @func0000000000000021
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vi	v0, v10, 3
-	vmv.v.i	v12, 1
-	vmerge.vvm	v10, v12, v10, v0
-	vadd.vv	v8, v10, v8
 	ret

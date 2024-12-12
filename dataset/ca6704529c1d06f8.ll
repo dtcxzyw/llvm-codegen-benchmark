@@ -24,7 +24,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 4
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -48,7 +48,7 @@ entry:
   %2 = shl i32 %1, 2
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

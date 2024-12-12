@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:

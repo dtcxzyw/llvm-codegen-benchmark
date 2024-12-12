@@ -1,19 +1,11 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
-	mov	w8, #43691                      // =0xaaab
-	movk	w8, #43690, lsl #16
-	dup	v2.4s, w8
-	shl	v0.4s, v0.4s, #2
-	shl	v1.4s, v1.4s, #2
-	umull2	v3.2d, v0.4s, v2.4s
-	umull	v0.2d, v0.2s, v2.2s
-	umull2	v4.2d, v1.4s, v2.4s
-	umull	v1.2d, v1.2s, v2.2s
-	uzp2	v0.4s, v0.4s, v3.4s
-	uzp2	v1.4s, v1.4s, v4.4s
-	ushr	v0.4s, v0.4s, #1
-	ushr	v1.4s, v1.4s, #1
+	add	w8, w0, w1
+	mov	w9, #43691                      // =0xaaab
+	lsl	w8, w8, #2
+	movk	w9, #43690, lsl #16
+	umull	x8, w8, w9
+	lsr	x0, x8, #33
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

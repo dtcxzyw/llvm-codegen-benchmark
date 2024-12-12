@@ -11,7 +11,7 @@
 ; llvm/optimized/SummaryBasedOptimizations.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i64 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl nuw i64 1, %2
@@ -30,7 +30,7 @@ entry:
 ; grpc/optimized/percent_encoding.cc.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl nuw i64 1, %2

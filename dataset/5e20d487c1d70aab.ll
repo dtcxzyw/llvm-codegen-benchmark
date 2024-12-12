@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/dictionarydata.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2097151
   %3 = sub nsw i32 %0, %2
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = sub nsw i32 %0, %2

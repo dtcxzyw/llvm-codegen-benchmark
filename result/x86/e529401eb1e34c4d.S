@@ -14,7 +14,7 @@ func0000000000000015:                   # @func0000000000000015
 	shlq	$31, %rax
 	retq
 func0000000000000010:                   # @func0000000000000010
-	leal	(%rsi,%rdi), %eax
+	leal	(%rdi,%rsi), %eax
 	shlq	$32, %rax
 	retq
 func0000000000000013:                   # @func0000000000000013

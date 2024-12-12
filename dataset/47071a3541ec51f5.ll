@@ -1,12 +1,11 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; hyperscan/optimized/charreach.cpp.ll
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; spike/optimized/kadd8.ll
-; spike/optimized/vsadd_vi.ll
 ; spike/optimized/vsadd_vv.ll
 ; spike/optimized/vsadd_vx.ll
 ; wireshark/optimized/packet-atm.c.ll

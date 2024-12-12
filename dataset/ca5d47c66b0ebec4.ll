@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; assimp/optimized/IFCUtil.cpp.ll
 ; hdf5/optimized/H5FDint.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -10,6 +10,7 @@
 ; llvm/optimized/X86FastISel.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
 ; openjdk/optimized/compilerDefinitions.ll
+; php/optimized/php_pcre.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

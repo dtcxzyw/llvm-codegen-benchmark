@@ -1,10 +1,9 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; grpc/optimized/weighted_round_robin.cc.ll
 ; llvm/optimized/BranchFolding.cpp.ll
 ; llvm/optimized/ParseObjc.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; slurm/optimized/node_scheduler.ll
 ; vcpkg/optimized/paragraphs.cpp.ll
 ; Function Attrs: nounwind
@@ -17,10 +16,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/BranchFolding.cpp.ll
 ; llvm/optimized/MCExpr.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:

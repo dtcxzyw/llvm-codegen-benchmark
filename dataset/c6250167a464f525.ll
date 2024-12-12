@@ -13,8 +13,7 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; hyperscan/optimized/fdr_confirm_compile.cpp.ll
+; 3 occurrences:
 ; linux/optimized/lzo1x_decompress_safe.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; qemu/optimized/hw_riscv_virt.c.ll

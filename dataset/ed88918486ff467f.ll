@@ -15,7 +15,7 @@
 define i8 @func0000000000000004(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 392
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -31,7 +31,7 @@ entry:
 define i8 @func0000000000000030(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

@@ -15,7 +15,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	15                              # 0xf
 .LCPI1_1:
 	.long	4                               # 0x4
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vptestnmd	%xmm0, %xmm0, %k1

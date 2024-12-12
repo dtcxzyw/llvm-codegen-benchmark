@@ -6,6 +6,15 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a1, a1, 768
 	and	a0, a0, a1
 	ret
+func0000000000000000:                   # @func0000000000000000
+	slli	a1, a1, 3
+	li	a2, 31
+	srli	a0, a0, 2
+	slli	a2, a2, 10
+	and	a1, a1, a2
+	andi	a0, a0, 992
+	or	a0, a0, a1
+	ret
 func0000000000000007:                   # @func0000000000000007
 	srli	a1, a1, 7
 	slli	a0, a0, 62
@@ -17,13 +26,6 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 34
 	slli	a0, a0, 57
 	srli	a1, a1, 63
-	srli	a0, a0, 56
-	or	a0, a0, a1
-	ret
-func0000000000000000:                   # @func0000000000000000
-	slli	a1, a1, 5
-	slli	a0, a0, 53
-	andi	a1, a1, 192
 	srli	a0, a0, 56
 	or	a0, a0, a1
 	ret

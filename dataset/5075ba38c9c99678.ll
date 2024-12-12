@@ -19,7 +19,7 @@
 ; rocksdb/optimized/version_set.cc.ll
 ; rocksdb/optimized/write_batch_with_index.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000241(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 96
   %4 = add i64 %3, %1
@@ -36,10 +36,10 @@ entry:
 ; rocksdb/optimized/backup_engine.cc.ll
 ; xgboost/optimized/loop.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 520
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nuw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/memtable_list.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000124(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000244(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 104
   %4 = add i64 %3, %1
@@ -61,7 +61,7 @@ entry:
 ; rocksdb/optimized/blob_source.cc.ll
 ; rocksdb/optimized/db_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 40
   %4 = add i64 %3, %1
@@ -108,10 +108,10 @@ entry:
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 16
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %0, 1
   %6 = icmp slt i64 %5, %4
   ret i1 %6
@@ -121,7 +121,7 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; quantlib/optimized/bumpinstrumentjacobian.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = add nsw i64 %3, %1
@@ -133,10 +133,10 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/hpack_header_table.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000284(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 120
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add i64 %0, -1
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -145,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000261(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, -80
   %4 = add i64 %3, %1
@@ -157,7 +157,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 19
   %4 = add nsw i64 %3, %1

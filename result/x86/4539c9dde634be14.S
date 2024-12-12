@@ -1,4 +1,4 @@
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	addl	$-2, %esi
 	movslq	%esi, %rax
 	imulq	$715827883, %rax, %rax          # imm = 0x2AAAAAAB
@@ -10,7 +10,7 @@ func0000000000000096:                   # @func0000000000000096
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	addl	$12, %esi
 	movslq	%esi, %rax
 	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
@@ -22,7 +22,7 @@ func0000000000000036:                   # @func0000000000000036
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addl	$-16, %esi
 	movslq	%esi, %rax
 	imulq	$715827883, %rax, %rax          # imm = 0x2AAAAAAB
@@ -34,7 +34,7 @@ func0000000000000031:                   # @func0000000000000031
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	leal	-4(%rsi), %eax
 	addl	$3, %esi
 	testl	%eax, %eax
@@ -44,7 +44,7 @@ func00000000000000b1:                   # @func00000000000000b1
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	movl	%esi, %eax
 	incl	%eax
 	shrl	$31, %eax
@@ -54,7 +54,7 @@ func0000000000000091:                   # @func0000000000000091
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	movl	%esi, %eax
 	incl	%eax
 	shrl	$31, %eax

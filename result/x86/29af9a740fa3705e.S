@@ -1,4 +1,4 @@
-func0000000000000408:                   # @func0000000000000408
+func0000000000000808:                   # @func0000000000000808
 	cmpl	$3, %edx
 	setb	%cl
 	orb	%dil, %cl
@@ -7,7 +7,7 @@ func0000000000000408:                   # @func0000000000000408
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	cmpl	$1600, %edx                     # imm = 0x640
 	sete	%cl
 	orb	%dil, %cl
@@ -16,7 +16,7 @@ func0000000000000108:                   # @func0000000000000108
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000448:                   # @func0000000000000448
+func0000000000000888:                   # @func0000000000000888
 	cmpl	$-3875, %edx                    # imm = 0xF0DD
 	setb	%cl
 	orb	%dil, %cl
@@ -25,7 +25,7 @@ func0000000000000448:                   # @func0000000000000448
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000608:                   # @func0000000000000608
+func0000000000000c08:                   # @func0000000000000c08
 	testl	%edx, %edx
 	setle	%cl
 	orb	%dil, %cl
@@ -34,7 +34,7 @@ func0000000000000608:                   # @func0000000000000608
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000210:                   # @func0000000000000210
+func0000000000000410:                   # @func0000000000000410
 	addl	$-5, %edx
 	cmpl	$-4, %edx
 	setb	%cl
@@ -43,7 +43,7 @@ func0000000000000210:                   # @func0000000000000210
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	addl	$-48, %edx
 	cmpl	$10, %edx
 	setb	%cl
@@ -52,7 +52,7 @@ func0000000000000110:                   # @func0000000000000110
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000148:                   # @func0000000000000148
+func0000000000000288:                   # @func0000000000000288
 	cmpl	$2, %edx
 	sete	%cl
 	orb	%dil, %cl
@@ -61,7 +61,7 @@ func0000000000000148:                   # @func0000000000000148
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000c48:                   # @func0000000000000c48
+func0000000000001888:                   # @func0000000000001888
 	testl	%edx, %edx
 	setne	%cl
 	orb	%dil, %cl
@@ -70,7 +70,7 @@ func0000000000000c48:                   # @func0000000000000c48
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000450:                   # @func0000000000000450
+func0000000000001090:                   # @func0000000000001090
 	addl	$-44, %edx
 	cmpl	$-7, %edx
 	setb	%cl
@@ -79,7 +79,7 @@ func0000000000000450:                   # @func0000000000000450
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000c08:                   # @func0000000000000c08
+func0000000000001808:                   # @func0000000000001808
 	cmpl	$8, %edx
 	setne	%cl
 	orb	%dil, %cl
@@ -88,7 +88,7 @@ func0000000000000c08:                   # @func0000000000000c08
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	addl	$-11, %edx
 	cmpl	$3, %edx
 	setb	%cl
@@ -97,7 +97,7 @@ func0000000000000050:                   # @func0000000000000050
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000808:                   # @func0000000000000808
+func0000000000001008:                   # @func0000000000001008
 	cmpl	$86400000, %edx                 # imm = 0x5265C00
 	setae	%cl
 	orb	%dil, %cl
@@ -106,7 +106,7 @@ func0000000000000808:                   # @func0000000000000808
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000190:                   # @func0000000000000190
+func0000000000000310:                   # @func0000000000000310
 	addl	$-7, %edx
 	cmpl	$-8, %edx
 	setb	%cl
@@ -115,7 +115,7 @@ func0000000000000190:                   # @func0000000000000190
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000590:                   # @func0000000000000590
+func0000000000001310:                   # @func0000000000001310
 	addl	$-7, %edx
 	cmpl	$-8, %edx
 	setb	%cl

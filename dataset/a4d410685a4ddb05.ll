@@ -1,5 +1,5 @@
 
-; 117 occurrences:
+; 126 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; c3c/optimized/sema_decls.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -43,7 +43,6 @@
 ; linux/optimized/io_apic.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/rx.ll
@@ -74,10 +73,20 @@
 ; llvm/optimized/SemaLambda.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
-; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_rect.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_menu.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_span.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; oiio/optimized/targainput.cpp.ll
 ; openjdk/optimized/hb-ot-shape.ll

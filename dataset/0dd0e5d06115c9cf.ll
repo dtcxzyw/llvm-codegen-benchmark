@@ -358,12 +358,12 @@
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 816 occurrences:
+; 818 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaForce.c.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
@@ -383,6 +383,14 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/cmd.ll
+; boost/optimized/cwd.ll
+; boost/optimized/exe.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process_name.ll
 ; c3c/optimized/codegen_asm.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; c3c/optimized/parse_global.c.ll
@@ -569,7 +577,6 @@ entry:
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/i915_gem_pages.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/mpi-bit.ll
@@ -671,9 +678,6 @@ entry:
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
@@ -913,8 +917,6 @@ entry:
 ; pocketpy/optimized/vm.cpp.ll
 ; postgres/optimized/jsonb_util.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/doc_comment.cc.ll
 ; protobuf/optimized/php_generator.cc.ll
@@ -1184,7 +1186,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -1441,7 +1443,8 @@ entry:
   ret i64 %4
 }
 
-; 289 occurrences:
+; 290 occurrences:
+; boost/optimized/src.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -1735,7 +1738,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -1774,7 +1777,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -1790,7 +1793,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 13
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -1807,9 +1810,10 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/sfmLib.c.ll
+; boost/optimized/src.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; postgres/optimized/f2s.ll
 ; postgres/optimized/f2s_shlib.ll
@@ -1818,7 +1822,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 28
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -1829,7 +1833,7 @@ entry:
 define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

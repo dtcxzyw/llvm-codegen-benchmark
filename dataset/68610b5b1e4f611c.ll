@@ -1,7 +1,8 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/sbdWin.c.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; icu/optimized/unifilt.ll
 ; linux/optimized/user.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
@@ -31,9 +32,9 @@ entry:
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000032(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp uge i32 %1, %2
+  %3 = icmp samesign uge i32 %1, %2
   %4 = select i1 %0, i1 %3, i1 false
   %5 = zext i1 %4 to i32
   ret i32 %5

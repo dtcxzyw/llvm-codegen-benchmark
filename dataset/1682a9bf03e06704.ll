@@ -18,7 +18,7 @@
 ; yosys/optimized/test_cell.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
@@ -34,7 +34,7 @@ entry:
 ; gromacs/optimized/vsite.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3

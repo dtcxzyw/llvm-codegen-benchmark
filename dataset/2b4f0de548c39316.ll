@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/huffman.c.ll
 ; cmake/optimized/huffman.c.ll
@@ -14,6 +14,7 @@
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; openssl/optimized/priority_queue_test-bin-priority_queue_test.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:

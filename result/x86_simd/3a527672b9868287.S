@@ -31,7 +31,7 @@ func000000000000003e:                   # @func000000000000003e
 func000000000000002e:                   # @func000000000000002e
 	vpmovsxbd	.LCPI2_1(%rip), %ymm3   # ymm3 = [0,8,1,9,2,10,3,11]
 	vpermi2d	%ymm2, %ymm1, %ymm3
-	vpor	%ymm0, %ymm3, %ymm0
+	vpor	%ymm3, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.long	0                               # 0x0

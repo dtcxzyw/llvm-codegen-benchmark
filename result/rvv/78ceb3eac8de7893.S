@@ -3,14 +3,14 @@ func0000000000000000:                   # @func0000000000000000
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsll.vi	v10, v10, 3
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000003f:                   # @func000000000000003f
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v10, v10, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000003c:                   # @func000000000000003c
 	vsetivli	zero, 8, e16, m1, ta, ma

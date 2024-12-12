@@ -39,11 +39,12 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/default_formatter_factory.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libjpeg-turbo/optimized/jidctred.c.ll
 ; openjdk/optimized/XToolkit.ll
@@ -51,22 +52,24 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 1000
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 %0, %4
   ret i64 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; php/optimized/basic_functions.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 10
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nuw i64 %0, %4
   ret i64 %5
 }
@@ -77,7 +80,7 @@ entry:
 define i64 @func0000000000000032(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 40
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nuw i64 %0, %4
   ret i64 %5
 }
@@ -88,7 +91,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 1000
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %0, %4
   ret i64 %5
 }
@@ -99,7 +102,7 @@ entry:
 define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 10
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -145,7 +148,7 @@ entry:
 define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 6270
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nsw i64 %0, %4
   ret i64 %5
 }

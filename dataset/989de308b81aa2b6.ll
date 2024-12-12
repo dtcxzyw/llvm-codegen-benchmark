@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; clamav/optimized/pe_icons.c.ll
 ; graphviz/optimized/lab.c.ll
 ; minetest/optimized/touchscreengui.cpp.ll
@@ -19,7 +20,7 @@
 define double @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = uitofp nneg i32 %3 to double
   ret double %4
 }
@@ -31,7 +32,7 @@ entry:
 define double @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = uitofp i32 %3 to double
   ret double %4
 }

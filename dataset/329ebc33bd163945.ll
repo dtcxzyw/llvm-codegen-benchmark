@@ -43,15 +43,4 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; cpython/optimized/pystrtod.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, double %1) #0 {
-entry:
-  %2 = fcmp oge double %1, 1.000000e+00
-  %3 = icmp ne ptr %0, null
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
 attributes #0 = { nounwind }

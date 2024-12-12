@@ -11,13 +11,12 @@ entry:
   ret i64 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; jq/optimized/utf16_le.ll
-; linux/optimized/gso.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/udp.ll

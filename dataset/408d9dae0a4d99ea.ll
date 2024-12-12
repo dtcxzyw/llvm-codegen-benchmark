@@ -3,7 +3,7 @@
 ; spike/optimized/kaddh.ll
 ; spike/optimized/kaddw.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 48
   %3 = ashr exact i64 %2, 48
@@ -17,7 +17,7 @@ entry:
 ; spike/optimized/kaddh.ll
 ; spike/optimized/kaddw.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 48
   %3 = ashr exact i64 %2, 48
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr exact i64 %2, 32
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 16
   %3 = ashr i64 %2, 32

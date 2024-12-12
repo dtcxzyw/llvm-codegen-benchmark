@@ -5,7 +5,7 @@
 ; llvm/optimized/CGDeclCXX.cpp.ll
 ; openssl/optimized/modes_internal_test-bin-modes_internal_test.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = or disjoint i64 %0, 16
   %2 = icmp eq i64 %0, 0
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MemoryLocation.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0) #0 {
+define i64 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = or disjoint i64 %0, -9223372036854775808
   %2 = icmp ugt i64 %0, 4611686018427387899

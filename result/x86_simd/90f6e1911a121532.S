@@ -1,12 +1,12 @@
 .LCPI0_0:
 	.long	65534                           # 0xfffe
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1

@@ -22,7 +22,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 31
   %4 = and i64 %3, 4
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -44,7 +44,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 8
   %4 = and i64 %3, 71776119061217280
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }

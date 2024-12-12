@@ -1,8 +1,8 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func000000000000005e:                   # @func000000000000005e
 	sext.w	a2, a2
 	sub	a0, a0, a1
 	add	a0, a0, a2
@@ -16,16 +16,16 @@ func0000000000000010:                   # @func0000000000000010
 	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+func000000000000005c:                   # @func000000000000005c
 	sext.w	a2, a2
 	sub	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	addi	a0, a0, 7

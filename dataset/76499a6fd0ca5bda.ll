@@ -13,7 +13,7 @@
 ; wireshark/optimized/packet-rtps.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000302(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -22,19 +22,7 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; qemu/optimized/hw_scsi_scsi-disk.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000102(i32 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 63
-  %3 = icmp eq i8 %2, 63
-  %4 = icmp ugt i32 %0, 254
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 26 occurrences:
+; 25 occurrences:
 ; freetype/optimized/cff.c.ll
 ; hdf5/optimized/H5Ocache.c.ll
 ; hermes/optimized/Executor.cpp.ll
@@ -47,7 +35,6 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/simdutf.ll
 ; nuklear/optimized/unity.c.ll
-; openjdk/optimized/jvmtiEnterTrace.ll
 ; postgres/optimized/wchar.ll
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
@@ -62,7 +49,7 @@ entry:
 ; wireshark/optimized/packet-gquic.c.ll
 ; wireshark/optimized/packet-iscsi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp eq i8 %2, 0
@@ -71,8 +58,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; gromacs/optimized/tng_io.c.ll
+; 8 occurrences:
 ; hdf5/optimized/H5Ocache.c.ll
 ; luajit/optimized/minilua.ll
 ; php/optimized/pcre2_study.ll
@@ -82,7 +68,7 @@ entry:
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/packet-cql.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000058(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = icmp eq i8 %2, 1
@@ -95,7 +81,7 @@ entry:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000318(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 64
   %3 = icmp ne i8 %2, 0
@@ -105,23 +91,9 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-acdr.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 1
-  %3 = icmp eq i8 %2, 0
-  %4 = icmp ult i32 %0, 3
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 3 occurrences:
-; luajit/optimized/lj_opt_loop.ll
-; luajit/optimized/lj_opt_loop_dyn.ll
 ; wireshark/optimized/packet-gquic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000118(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 9
   %3 = icmp ne i8 %2, 9

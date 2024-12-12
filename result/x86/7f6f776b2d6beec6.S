@@ -5,8 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edi, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	leal	(%rsi,%rsi), %eax
-	andl	$-1431655766, %eax              # imm = 0xAAAAAAAA
+	movl	%esi, %eax
+	shll	$4, %eax
+	andl	$-252645136, %eax               # imm = 0xF0F0F0F0
 	xorl	%edi, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003

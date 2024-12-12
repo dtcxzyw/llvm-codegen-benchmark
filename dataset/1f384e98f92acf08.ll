@@ -1,5 +1,5 @@
 
-; 205 occurrences:
+; 204 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; abc/optimized/wlcShow.c.ll
 ; c3c/optimized/sema_expr.c.ll
@@ -13,8 +13,6 @@
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/SocketAddress.cpp.ll
 ; git/optimized/apply.ll
-; git/optimized/diff.ll
-; git/optimized/diffcore-rename.ll
 ; git/optimized/match-trees.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -59,7 +57,6 @@
 ; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/OverflowInstAnalysis.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -205,6 +202,8 @@
 ; wireshark/optimized/packet-someip.c.ll
 ; wireshark/optimized/packet-stun.c.ll
 ; wireshark/optimized/pcapng.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
@@ -283,13 +282,28 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 4 occurrences:
+; abseil-cpp/optimized/generators_test.cc.ll
+; llvm/optimized/InstCombineSelect.cpp.ll
+; wireshark/optimized/packet-ieee80211-radio.c.ll
+; wireshark/optimized/packet-oampdu.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 48
+  %3 = icmp eq i16 %2, 0
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 2 occurrences:
+; cpython/optimized/_codecs_kr.ll
 ; wireshark/optimized/mac_hd_generic_decoder.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2046
-  %3 = icmp ugt i16 %2, 9
+  %3 = icmp samesign ugt i16 %2, 9
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
 }

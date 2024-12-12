@@ -37,12 +37,16 @@
 define i8 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
 }
 
-; 22 occurrences:
+; 27 occurrences:
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_wiprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libpng/optimized/pngrutil.c.ll
@@ -53,6 +57,7 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll
@@ -69,7 +74,7 @@ entry:
 define i8 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }
@@ -82,7 +87,7 @@ entry:
 define i8 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }

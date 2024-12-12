@@ -18,8 +18,8 @@
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
-  %3 = or i64 %2, %0
-  %4 = or i64 %3, 192
+  %3 = or disjoint i64 %2, 192
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -29,8 +29,8 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
-  %3 = or i64 %2, %0
-  %4 = or i64 %3, 128
+  %3 = or disjoint i64 %2, 128
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

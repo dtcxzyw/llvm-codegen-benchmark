@@ -22,7 +22,7 @@ entry:
   %2 = freeze i32 %1
   %3 = lshr i32 %2, 7
   %4 = and i32 %3, 7
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

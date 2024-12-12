@@ -14,7 +14,7 @@ func0000000000000002:                   # @func0000000000000002
 	.long	2147483648                      # 0x80000000
 .LCPI1_3:
 	.long	33554432                        # 0x2000000
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vandps	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI1_1(%rip){1to8}, %ymm0, %k1
 	vorps	.LCPI1_2(%rip){1to8}, %ymm1, %ymm1 {%k1}
@@ -26,7 +26,7 @@ func0000000000000023:                   # @func0000000000000023
 	.long	4                               # 0x4
 .LCPI2_2:
 	.long	8                               # 0x8
-func0000000000000035:                   # @func0000000000000035
+func0000000000000055:                   # @func0000000000000055
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm2   # ymm2 = [4,4,4,4,4,4,4,4]
 	vpcmpgtd	%ymm2, %ymm0, %k1

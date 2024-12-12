@@ -7,7 +7,7 @@ entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = fcmp une float %2, 1.000000e+00
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -33,7 +33,7 @@ entry:
   %3 = fcmp olt float %2, 0xBFB64FD6C0000000
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }

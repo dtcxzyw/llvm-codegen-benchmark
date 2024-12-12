@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%eax, %eax
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$7, %esi
 	shrxl	%edi, %esi, %eax
 	cmpl	$4, %eax

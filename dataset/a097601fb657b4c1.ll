@@ -20,7 +20,8 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; lvgl/optimized/lv_style.ll
 ; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/best_response_test.cc.ll
 ; openspiel/optimized/cfr_br.cc.ll

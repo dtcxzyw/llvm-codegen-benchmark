@@ -80,6 +80,6 @@ func000000000000001b:                   # @func000000000000001b
 	retq
 func0000000000000016:                   # @func0000000000000016
 	subq	%rdx, %rsi
-	shrq	$2, %rsi
+	shrq	$6, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq

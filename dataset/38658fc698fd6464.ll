@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; curl/optimized/libcurl_la-url.ll
 ; gromacs/optimized/pme_grid.cpp.ll
@@ -10,7 +10,6 @@
 ; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MCExpr.cpp.ll
-; llvm/optimized/VectorCombine.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
@@ -19,6 +18,8 @@
 ; wireshark/optimized/packet-openvpn.c.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/register.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

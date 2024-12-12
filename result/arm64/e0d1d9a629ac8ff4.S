@@ -6,7 +6,7 @@ func0000000000000018:                   // @func0000000000000018
                                         // -- End function
 func0000000000000058:                   // @func0000000000000058
 // %bb.0:                               // %entry
-	sub	x8, x1, w2, uxtw #3
+	sub	x8, x1, w2, uxtw #2
 	sub	x0, x8, x0
 	ret
                                         // -- End function

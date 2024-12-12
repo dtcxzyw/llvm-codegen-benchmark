@@ -23,7 +23,7 @@ entry:
   %3 = xor i8 %1, %2
   %4 = and i8 %3, 15
   %5 = icmp ne i8 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -31,11 +31,11 @@ entry:
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000015(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 3
   %4 = and i8 %1, 3
-  %5 = icmp ule i8 %4, %3
+  %5 = icmp samesign ule i8 %4, %3
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -43,12 +43,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/pci-acpi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
   %4 = and i8 %1, 15
-  %5 = icmp uge i8 %4, %3
-  %6 = and i1 %5, %0
+  %5 = icmp samesign uge i8 %4, %3
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

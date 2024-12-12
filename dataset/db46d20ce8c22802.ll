@@ -1,5 +1,6 @@
 
-; 20 occurrences:
+; 21 occurrences:
+; boost/optimized/approximately_equals.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; hdf5/optimized/h5tools_utils.c.ll
 ; icu/optimized/decNumber.ll
@@ -21,12 +22,12 @@
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; z3/optimized/mpq.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000034(i1 %0, ptr %1, i8 %2) #0 {
+define ptr @func000000000000003e(i1 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 43
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %.v = select i1 %4, i64 2, i64 1
-  %5 = getelementptr nusw i8, ptr %1, i64 %.v
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %.v
   ret ptr %5
 }
 

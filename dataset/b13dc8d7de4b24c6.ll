@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
@@ -19,7 +19,7 @@ entry:
 ; icu/optimized/double-conversion-bignum.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000005e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext i32 %1 to i64
@@ -46,13 +46,13 @@ entry:
 ; lodepng/optimized/lodepng.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002f8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000005f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
   %6 = add nuw nsw i64 %5, %0
-  %7 = icmp ugt i64 %6, 1
+  %7 = icmp samesign ugt i64 %6, 1
   ret i1 %7
 }
 
@@ -60,7 +60,7 @@ entry:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; linux/optimized/drm_framebuffer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000148(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
@@ -74,7 +74,7 @@ entry:
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64

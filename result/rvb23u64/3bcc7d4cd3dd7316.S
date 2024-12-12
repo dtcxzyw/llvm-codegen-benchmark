@@ -64,3 +64,23 @@ func00000000000000ca:                   # @func00000000000000ca
 .LBB2_4:                                # %entry
 	fmv.d	fa0, fa5
 	ret
+.LCPI3_0:
+	.quad	0x4066800000000000              # double 180
+func0000000000000022:                   # @func0000000000000022
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
+	flt.d	a0, fa0, fa5
+	beqz	a0, .LBB3_3
+	fli.d	fa0, 1.0
+	flt.d	a0, fa5, fa0
+	beqz	a0, .LBB3_4
+.LBB3_2:                                # %entry
+	ret
+.LBB3_3:                                # %entry
+	fmv.d	fa5, fa0
+	fli.d	fa0, 1.0
+	flt.d	a0, fa5, fa0
+	bnez	a0, .LBB3_2
+.LBB3_4:                                # %entry
+	fmv.d	fa0, fa5
+	ret

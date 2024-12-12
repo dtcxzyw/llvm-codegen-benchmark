@@ -1,16 +1,14 @@
 
-%"struct.rocksdb::FdWithKeyRange.2499118" = type { %"struct.rocksdb::FileDescriptor.2499119", ptr, %"class.rocksdb::Slice.2499098", %"class.rocksdb::Slice.2499098" }
-%"struct.rocksdb::FileDescriptor.2499119" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2499098" = type { ptr, i64 }
-%"class.QuantLib::Date.2718954" = type { i64 }
+%"struct.rocksdb::FdWithKeyRange.2614359" = type { %"struct.rocksdb::FileDescriptor.2614360", ptr, %"class.rocksdb::Slice.2614339", %"class.rocksdb::Slice.2614339" }
+%"struct.rocksdb::FileDescriptor.2614360" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2614339" = type { ptr, i64 }
 
-; 305 occurrences:
+; 314 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
-; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
@@ -134,7 +132,6 @@
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
 ; llvm/optimized/WindowScheduler.cpp.ll
-; lz4/optimized/lz4.c.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -242,7 +239,6 @@
 ; openusd/optimized/bakeSkinning.cpp.ll
 ; openusd/optimized/clip.cpp.ll
 ; openusd/optimized/clipSet.cpp.ll
-; openusd/optimized/lz4.cpp.ll
 ; openusd/optimized/primAdapter.cpp.ll
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; openusd/optimized/stageLoadRules.cpp.ll
@@ -255,6 +251,19 @@
 ; protobuf/optimized/padding_optimizer.cc.ll
 ; protobuf/optimized/text_format.cc.ll
 ; protobuf/optimized/wire_format.cc.ll
+; quantlib/optimized/analyticptdhestonengine.ll
+; quantlib/optimized/bond.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/concentrating1dmesher.ll
+; quantlib/optimized/discounter.ll
+; quantlib/optimized/exponentialfittinghestonengine.ll
+; quantlib/optimized/fixedlocalvolsurface.ll
+; quantlib/optimized/lfmhullwhiteparam.ll
+; quantlib/optimized/liborforwardmodel.ll
+; quantlib/optimized/optionletstripper2.ll
+; quantlib/optimized/overnightindexedcouponpricer.ll
+; quantlib/optimized/pathwisediscounter.ll
+; quantlib/optimized/timegrid.ll
 ; rocksdb/optimized/compacted_db_impl.cc.ll
 ; rocksdb/optimized/cuckoo_table_reader.cc.ll
 ; rocksdb/optimized/histogram.cc.ll
@@ -285,7 +294,6 @@
 ; xgboost/optimized/stats.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
-; yosys/optimized/lz4.ll
 ; yosys/optimized/recover_names.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
@@ -311,34 +319,23 @@
 ; z3/optimized/theory_arith.cpp.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2499118", ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 80
+  %3 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614359", ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 80
   %5 = select i1 %0, ptr %4, ptr %1
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
 
-; 13 occurrences:
-; quantlib/optimized/analyticptdhestonengine.ll
-; quantlib/optimized/bond.ll
-; quantlib/optimized/cmsmarketcalibration.ll
-; quantlib/optimized/concentrating1dmesher.ll
-; quantlib/optimized/discounter.ll
-; quantlib/optimized/exponentialfittinghestonengine.ll
-; quantlib/optimized/fixedlocalvolsurface.ll
-; quantlib/optimized/lfmhullwhiteparam.ll
-; quantlib/optimized/liborforwardmodel.ll
-; quantlib/optimized/optionletstripper2.ll
-; quantlib/optimized/overnightindexedcouponpricer.ll
-; quantlib/optimized/pathwisediscounter.ll
-; quantlib/optimized/timegrid.ll
+; 2 occurrences:
+; cmake/optimized/cmCTestBinPacker.cxx.ll
+; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000b(i1 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.QuantLib::Date.2718954", ptr %1, i64 %2
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -65536
   %5 = select i1 %0, ptr %4, ptr %1
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
@@ -351,6 +348,19 @@ define i64 @func0000000000000008(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 1
+  %5 = select i1 %0, ptr %4, ptr %1
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 2 occurrences:
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -65536
   %5 = select i1 %0, ptr %4, ptr %1
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6

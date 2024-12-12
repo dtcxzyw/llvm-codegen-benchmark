@@ -47,7 +47,7 @@ func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfmul.vv	v16, v16, v24
-	vmfeq.vv	v0, v16, v8
+	vmfeq.vv	v0, v8, v16
 	ret
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 16, e64, m8, ta, ma

@@ -38,8 +38,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; linux/optimized/i915_cmd_parser.ll
+; 1 occurrences:
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {

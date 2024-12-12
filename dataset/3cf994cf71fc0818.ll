@@ -11,7 +11,10 @@ entry:
   ret i64 %5
 }
 
-; 32 occurrences:
+; 39 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/params_iter_impl.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; eastl/optimized/TestDeque.cpp.ll
@@ -44,6 +47,10 @@ entry:
 ; qemu/optimized/fdt_overlay.c.ll
 ; ruby/optimized/bignum.ll
 ; spike/optimized/fdt_overlay.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

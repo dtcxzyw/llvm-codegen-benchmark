@@ -12,7 +12,7 @@
 define i64 @func0000000000000053(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = shl i64 %4, 9
   %6 = shl i64 %0, 3
   %7 = add i64 %5, %6

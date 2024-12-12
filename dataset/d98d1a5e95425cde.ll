@@ -131,12 +131,12 @@ entry:
 ; darktable/optimized/camera.c.ll
 ; duckdb/optimized/ub_duckdb_transformer_expression.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
   %4 = and i64 %3, -128
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -145,13 +145,13 @@ entry:
 ; cmake/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i8, ptr %0, i64 2
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 2
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 

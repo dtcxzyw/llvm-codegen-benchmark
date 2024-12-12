@@ -1,7 +1,7 @@
 func0000000000000015:                   # @func0000000000000015
 	movzwl	%dx, %eax
 	imull	%esi, %eax
-	leal	1000000(%rax,%rdi), %eax
+	leal	1000000(%rdi,%rax), %eax
 	retq
 func0000000000000037:                   # @func0000000000000037
 	movzwl	%dx, %eax

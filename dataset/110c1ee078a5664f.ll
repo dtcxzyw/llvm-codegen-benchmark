@@ -2,18 +2,17 @@
 ; 1 occurrences:
 ; ruby/optimized/parser.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(i64 %0, i8 %1) #0 {
+define i1 @func00000000000001d4(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %0
-  %5 = icmp ult i64 %4, 128
+  %4 = or i64 %0, %3
+  %5 = icmp samesign ult i64 %4, 128
   ret i1 %5
 }
 
-; 48 occurrences:
+; 46 occurrences:
 ; assimp/optimized/zip.c.ll
-; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -58,10 +57,9 @@ entry:
 ; openssl/optimized/ssl_test-bin-handshake.ll
 ; openssl/optimized/tls13ccstest-bin-tls13ccstest.ll
 ; php/optimized/pcre2_compile.ll
-; php/optimized/pcre2_match.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
@@ -83,12 +81,12 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; php/optimized/zip.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000f8(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %0
-  %5 = icmp ugt i64 %4, 256
+  %5 = icmp samesign ugt i64 %4, 256
   ret i1 %5
 }
 
@@ -112,12 +110,12 @@ entry:
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %0
-  %5 = icmp ult i64 %4, 4
+  %5 = icmp samesign ult i64 %4, 4
   ret i1 %5
 }
 
@@ -127,7 +125,7 @@ entry:
 ; openssl/optimized/libssl-lib-extensions_srvr.ll
 ; openssl/optimized/libssl-shlib-extensions_srvr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000ec(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
@@ -137,15 +135,28 @@ entry:
 }
 
 ; 2 occurrences:
+; freetype/optimized/sfnt.c.ll
+; php/optimized/pcre2_match.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f1(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i64
+  %3 = shl nuw nsw i64 %2, 8
+  %4 = or disjoint i64 %3, %0
+  %5 = icmp samesign eq i64 %4, 0
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; libquic/optimized/s3_srvr.c.ll
 ; wireshark/optimized/scanner.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i8 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %0
-  %5 = icmp ugt i64 %4, 4096
+  %5 = icmp samesign ugt i64 %4, 4096
   ret i1 %5
 }
 
@@ -153,12 +164,12 @@ entry:
 ; libquic/optimized/s3_srvr.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i8 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %0
-  %5 = icmp ult i64 %4, 3
+  %5 = icmp samesign ult i64 %4, 3
   ret i1 %5
 }
 
@@ -166,7 +177,7 @@ entry:
 ; cpython/optimized/marshal.ll
 ; llvm/optimized/blake3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 6
@@ -178,7 +189,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_hdmi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i64 %0, i8 %1) #0 {
+define i1 @func00000000000001ec(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
@@ -190,7 +201,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i8 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 32
@@ -202,11 +213,11 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/marshal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000c8(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 24
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp ugt i64 %4, 2147483647
   ret i1 %5
 }

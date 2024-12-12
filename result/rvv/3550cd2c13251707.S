@@ -2,7 +2,7 @@
 	.word	0x3f666666                      # float 0.899999976
 .LCPI0_1:
 	.word	0x3dcccccd                      # float 0.100000001
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v8, 4
 	fli.s	fa5, 0.5

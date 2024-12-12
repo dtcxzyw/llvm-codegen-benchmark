@@ -28,7 +28,7 @@
 	.byte	2                               # 0x2
 .LCPI0_3:
 	.zero	4,1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm1, %xmm1
 	vpternlogd	$236, .LCPI0_3(%rip){1to4}, %xmm0, %xmm1 # xmm1 = (xmm1 & mem) | xmm0
 	vpxor	%xmm0, %xmm0, %xmm0
@@ -76,32 +76,32 @@ func000000000000000c:                   # @func000000000000000c
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-	.byte	128                             # 0x80
-	.byte	64                              # 0x40
-	.byte	32                              # 0x20
-	.byte	16                              # 0x10
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	128                             # 0x80
 	.byte	64                              # 0x40
 	.byte	32                              # 0x20
-	.byte	16                              # 0x10
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	128                             # 0x80
+	.byte	64                              # 0x40
+	.byte	32                              # 0x20
 .LCPI2_1:
-	.zero	16,7
+	.zero	16,1
 .LCPI2_2:
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
+	.byte	0                               # 0x0
 	.byte	128                             # 0x80
 	.byte	64                              # 0x40
 	.byte	32                              # 0x20
-	.byte	16                              # 0x10
 .LCPI2_3:
-	.zero	4,7
-func000000000000001c:                   # @func000000000000001c
+	.zero	4,1
+func000000000000002c:                   # @func000000000000002c
 	vgf2p8affineqb	$0, .LCPI2_2(%rip){1to2}, %xmm1, %xmm1
 	vpternlogd	$236, .LCPI2_3(%rip){1to4}, %xmm0, %xmm1 # xmm1 = (xmm1 & mem) | xmm0
 	vpxor	%xmm0, %xmm0, %xmm0

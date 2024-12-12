@@ -1,5 +1,6 @@
 
 ; 22 occurrences:
+; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/log_severity_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
@@ -8,7 +9,6 @@
 ; gromacs/optimized/dssp.cpp.ll
 ; gromacs/optimized/insert_molecules.cpp.ll
 ; gromacs/optimized/msd.cpp.ll
-; gromacs/optimized/neldermead.cpp.ll
 ; gromacs/optimized/pme_redistribute.cpp.ll
 ; gromacs/optimized/tpr.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
@@ -32,7 +32,9 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -50,7 +52,8 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; gromacs/optimized/neldermead.cpp.ll
 ; quantlib/optimized/fdklugeextouspreadengine.ll
 ; quantlib/optimized/fdsimpleklugeextouvppengine.ll
 ; Function Attrs: nounwind

@@ -8,16 +8,15 @@
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 3, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 0, i32 -2147483648
   ret i32 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/abcNpn.c.ll
 ; abc/optimized/absOldSim.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/exorUtil.c.ll
 ; abc/optimized/extraBddKmap.c.ll
@@ -39,22 +38,25 @@ entry:
 ; php/optimized/sccp.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 2, i32 3
   ret i32 %5
 }
 
-; 14 occurrences:
+; 17 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/hid-lg4ff.ll
-; nuttx/optimized/lib_wcwidth.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; postgres/optimized/tsgistidx.ll
 ; wireshark/optimized/msg_ulmap.c.ll
 ; wireshark/optimized/packet-erldp.c.ll
@@ -64,7 +66,7 @@ entry:
 ; z3/optimized/udoc_relation.cpp.ll
 ; zxing/optimized/ODCode39Writer.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = and i32 %2, %0

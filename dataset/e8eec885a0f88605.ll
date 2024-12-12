@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 135 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -129,6 +129,7 @@
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; openspiel/optimized/chess.cc.ll
 ; openspiel/optimized/chess_common.cc.ll
@@ -158,7 +159,7 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = and i64 %1, -17592454479872
   %6 = or i64 %5, %4
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 

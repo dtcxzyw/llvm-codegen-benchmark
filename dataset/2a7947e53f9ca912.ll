@@ -49,7 +49,7 @@ define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, -8
   %2 = icmp ne i64 %.mask, 256
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

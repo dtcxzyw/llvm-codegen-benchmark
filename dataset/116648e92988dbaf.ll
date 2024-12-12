@@ -10,7 +10,7 @@ entry:
   %3 = mul nuw nsw i32 %2, 20
   %4 = and i32 %3, 613566756
   %5 = and i32 %1, 153391689
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

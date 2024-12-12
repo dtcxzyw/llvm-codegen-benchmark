@@ -1,5 +1,19 @@
 
-; 21 occurrences:
+; 3 occurrences:
+; image-rs/optimized/30755d6iao7ojcvl.ll
+; typst-rs/optimized/4p46tkw2iv8zjgza.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
+; Function Attrs: nounwind
+define { i64, ptr } @func0000000000000002(ptr %0, ptr %1) #0 {
+entry:
+  %2 = icmp eq ptr %1, null
+  %3 = zext i1 %2 to i64
+  %4 = insertvalue { i64, ptr } poison, i64 %3, 0
+  %5 = insertvalue { i64, ptr } %4, ptr %0, 1
+  ret { i64, ptr } %5
+}
+
+; 22 occurrences:
 ; coreutils-rs/optimized/1xfs2h41cvux42ap.ll
 ; influxdb-rs/optimized/2i5qqg1f0a0eo8eq.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
@@ -21,6 +35,7 @@
 ; tokenizers-rs/optimized/58hth72z9dib25am.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define { i64, ptr } @func0000000000000018(ptr %0, ptr %1) #0 {
 entry:

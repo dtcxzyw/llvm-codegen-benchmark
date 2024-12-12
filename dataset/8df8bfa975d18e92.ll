@@ -5,7 +5,7 @@
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, 8
   %3 = icmp eq i64 %1, 0
@@ -37,7 +37,7 @@ entry:
 ; openmpi/optimized/ompi_datatype_create_struct.ll
 ; redis/optimized/memtest.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -4
   %3 = icmp eq i64 %1, 0
@@ -61,10 +61,10 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -15
-  %3 = icmp ult i64 %1, 8
+  %3 = icmp samesign ult i64 %1, 8
   %4 = select i1 %3, i64 %0, i64 %2
   ret i64 %4
 }

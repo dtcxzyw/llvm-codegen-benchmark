@@ -1,12 +1,11 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; hdf5/optimized/H5EAcache.c.ll
 ; hdf5/optimized/H5FS.c.ll
 ; hdf5/optimized/H5FScache.c.ll
 ; hdf5/optimized/H5FSsection.c.ll
 ; hdf5/optimized/H5FSstat.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; hdf5/optimized/H5Ofsinfo.c.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; Function Attrs: nounwind

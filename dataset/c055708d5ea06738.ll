@@ -1,12 +1,10 @@
 
-; 54 occurrences:
+; 52 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CacheLocality.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
-; folly/optimized/F14Table.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -58,7 +56,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 24
   %5 = xor i64 %4, %3
   %6 = mul i64 %5, 265
@@ -76,7 +74,7 @@ entry:
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 24
   %5 = xor i64 %4, %3
   %6 = mul nsw i64 %5, 265

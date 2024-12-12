@@ -31,8 +31,21 @@ func0000000000000010:                   # @func0000000000000010
 	orb	%dil, %al
 	retq
 func0000000000000014:                   # @func0000000000000014
-	testq	%rdx, %rdx
-	setns	%al
+	movabsq	$-4611686018427387905, %rax     # imm = 0xBFFFFFFFFFFFFFFF
+	cmpq	%rax, %rdx
+	setg	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpq	$101, %rdx
+	setb	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpq	$2, %rdx
+	setae	%al
 	andb	%sil, %al
 	orb	%dil, %al
 	retq

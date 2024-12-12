@@ -1,11 +1,9 @@
 
-; 11 occurrences:
-; icu/optimized/ucnv2022.ll
+; 9 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
-; llvm/optimized/RISCVDeadRegisterDefinitions.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll

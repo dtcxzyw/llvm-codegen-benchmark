@@ -33,7 +33,7 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI1_2:
 	.short	3                               # 0x3
 	.short	3                               # 0x3
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm2, %xmm2
 	vpcmpeqw	.LCPI1_1(%rip), %xmm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

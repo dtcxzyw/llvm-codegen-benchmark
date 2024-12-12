@@ -1,14 +1,14 @@
 
-%"class.WasmEdge::Variant.2656461" = type { %"union.WasmEdge::VariadicUnion.2656462" }
-%"union.WasmEdge::VariadicUnion.2656462" = type { %"union.WasmEdge::VariadicUnion.122.2656463" }
-%"union.WasmEdge::VariadicUnion.122.2656463" = type { %"union.WasmEdge::VariadicUnion.123.2656464" }
-%"union.WasmEdge::VariadicUnion.123.2656464" = type { %"union.WasmEdge::VariadicUnion.124.2656465" }
-%"union.WasmEdge::VariadicUnion.124.2656465" = type { %"union.WasmEdge::VariadicUnion.125.2656466" }
-%"union.WasmEdge::VariadicUnion.125.2656466" = type { %"union.WasmEdge::VariadicUnion.126.2656467" }
-%"union.WasmEdge::VariadicUnion.126.2656467" = type { %"union.WasmEdge::VariadicUnion.127.2656468" }
-%"union.WasmEdge::VariadicUnion.127.2656468" = type { i128 }
+%"class.WasmEdge::Variant.2769674" = type { %"union.WasmEdge::VariadicUnion.2769675" }
+%"union.WasmEdge::VariadicUnion.2769675" = type { %"union.WasmEdge::VariadicUnion.122.2769676" }
+%"union.WasmEdge::VariadicUnion.122.2769676" = type { %"union.WasmEdge::VariadicUnion.123.2769677" }
+%"union.WasmEdge::VariadicUnion.123.2769677" = type { %"union.WasmEdge::VariadicUnion.124.2769678" }
+%"union.WasmEdge::VariadicUnion.124.2769678" = type { %"union.WasmEdge::VariadicUnion.125.2769679" }
+%"union.WasmEdge::VariadicUnion.125.2769679" = type { %"union.WasmEdge::VariadicUnion.126.2769680" }
+%"union.WasmEdge::VariadicUnion.126.2769680" = type { %"union.WasmEdge::VariadicUnion.127.2769681" }
+%"union.WasmEdge::VariadicUnion.127.2769681" = type { i128 }
 
-; 288 occurrences:
+; 287 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -260,7 +260,6 @@
 ; llvm/optimized/PseudoProbeInserter.cpp.ll
 ; llvm/optimized/PseudoProbePrinter.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RemoveRedundantDebugValues.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SampleContextTracker.cpp.ll
@@ -303,7 +302,7 @@ entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 4294967295
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.WasmEdge::Variant.2656461", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.WasmEdge::Variant.2769674", ptr %0, i64 %4
   ret ptr %5
 }
 

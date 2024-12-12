@@ -8,7 +8,7 @@
 ; oiio/optimized/psdinput.cpp.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %.neg = add i32 %1, -15
   %2 = add i32 %.neg, %0
@@ -20,7 +20,7 @@ entry:
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %.neg = add i32 %1, -324
   %2 = add i32 %.neg, %0
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/bitreader.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %.neg = add i32 %1, -64
   %2 = add i32 %.neg, %0
@@ -54,7 +54,7 @@ entry:
 ; flac/optimized/md5.c.ll
 ; linux/optimized/md5.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001c8(i32 %0, i32 %1) #0 {
 entry:
   %.neg = add i32 %1, -64
   %2 = add i32 %.neg, %0
@@ -66,7 +66,7 @@ entry:
 ; freetype/optimized/ftlzw.c.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1) #0 {
 entry:
   %.neg = add i32 %1, -512
   %2 = add i32 %.neg, %0
@@ -85,7 +85,7 @@ entry:
 ; faiss/optimized/hamming.cpp.ll
 ; faiss/optimized/index_read.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1) #0 {
 entry:
   %.neg = add i32 %1, -8
   %2 = add i32 %.neg, %0
@@ -97,7 +97,7 @@ entry:
 ; cpython/optimized/floatobject.ll
 ; icu/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %.neg = add i32 %1, -1
   %2 = add i32 %.neg, %0
@@ -108,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %.neg = add i32 %1, -8
   %2 = add i32 %.neg, %0

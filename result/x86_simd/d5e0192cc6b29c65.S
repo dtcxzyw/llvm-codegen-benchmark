@@ -36,6 +36,11 @@ func000000000000002c:                   # @func000000000000002c
 	vcmpleps	%zmm1, %zmm0, %k1
 	vmovaps	%zmm1, %zmm0 {%k1}
 	retq
+func000000000000004a:                   # @func000000000000004a
+	vmaxps	%zmm2, %zmm1, %zmm1
+	vcmpleps	%zmm0, %zmm1, %k1
+	vmovaps	%zmm1, %zmm0 {%k1}
+	retq
 func00000000000000ac:                   # @func00000000000000ac
 	vcmpleps	%zmm2, %zmm1, %k1
 	vmovaps	%zmm1, %zmm2 {%k1}

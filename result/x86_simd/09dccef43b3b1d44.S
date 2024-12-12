@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmb	%xmm0, %xmm0, %k1
 	vpmovzxdq	%xmm1, %ymm0 {%k1} {z}  # ymm0 {%k1} {z} = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	retq
@@ -45,7 +45,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 .LCPI2_1:
 	.quad	255                             # 0xff
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpcmpltub	.LCPI2_0(%rip), %xmm0, %k1
 	vpbroadcastq	.LCPI2_1(%rip), %ymm0   # ymm0 = [255,255,255,255]
 	vpmovzxdq	%xmm1, %ymm0 {%k1}      # ymm0 {%k1} = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero

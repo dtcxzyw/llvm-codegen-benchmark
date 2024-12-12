@@ -1,5 +1,5 @@
 
-; 217 occurrences:
+; 213 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaAigerExt.c.ll
@@ -49,7 +49,6 @@
 ; hdf5/optimized/H5Odtype.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; icu/optimized/csrsbcs.ll
 ; icu/optimized/rle.ll
 ; icu/optimized/uchar.ll
@@ -71,7 +70,6 @@
 ; linux/optimized/intel_pmdemand.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/md.ll
-; linux/optimized/mii.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/radiotap.ll
 ; linux/optimized/sky2.ll
@@ -149,12 +147,10 @@
 ; php/optimized/ir_sccp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_match.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/euc_jp_and_sjis.ll
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/gistvacuum.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/mac8.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtsplitloc.ll
@@ -218,266 +214,14 @@
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 64 occurrences:
-; darktable/optimized/RawImageDataFloat.cpp.ll
-; darktable/optimized/RawImageDataU16.cpp.ll
-; flac/optimized/bitwriter.c.ll
-; freetype/optimized/pfr.c.ll
-; freetype/optimized/sfnt.c.ll
-; glslang/optimized/iomapper.cpp.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-static.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; hermes/optimized/zip.c.ll
-; imgui/optimized/imgui_draw.cpp.ll
-; libquic/optimized/d1_both.c.ll
-; lief/optimized/ssl_msg.c.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
-; nori/optimized/nanovg.c.ll
-; nuklear/optimized/unity.c.ll
-; openjdk/optimized/hb-aat-layout.ll
-; openjdk/optimized/hb-common.ll
-; openjdk/optimized/hb-face.ll
-; openjdk/optimized/hb-font.ll
-; openjdk/optimized/hb-ot-color.ll
-; openjdk/optimized/hb-ot-font.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-ot-math.ll
-; openjdk/optimized/hb-ot-metrics.ll
-; openjdk/optimized/hb-ot-shape-fallback.ll
-; openjdk/optimized/hb-ot-shaper-arabic.ll
-; openjdk/optimized/hb-ot-var.ll
-; openjdk/optimized/zip_util.ll
-; openssl/optimized/asynciotest-bin-ssltestlib.ll
-; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
-; openssl/optimized/dtlstest-bin-ssltestlib.ll
-; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
-; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
-; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
-; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
-; openssl/optimized/quicapitest-bin-ssltestlib.ll
-; openssl/optimized/quicfaultstest-bin-ssltestlib.ll
-; openssl/optimized/recordlentest-bin-ssltestlib.ll
-; openssl/optimized/rpktest-bin-ssltestlib.ll
-; openssl/optimized/servername_test-bin-ssltestlib.ll
-; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
-; openssl/optimized/sslapitest-bin-ssltestlib.ll
-; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
-; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
-; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; postgres/optimized/ginget.ll
-; postgres/optimized/itemptr.ll
-; postgres/optimized/mac8.ll
-; postgres/optimized/nodeTidscan.ll
-; postgres/optimized/vacuum.ll
-; qemu/optimized/block_vvfat.c.ll
-; qemu/optimized/fdt.c.ll
-; qemu/optimized/fdt_rw.c.ll
-; raylib/optimized/rtext.c.ll
-; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; spike/optimized/fdt.ll
-; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_truetype.c.ll
-; wireshark/optimized/editcap.c.ll
-; wireshark/optimized/observer.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
-; 102 occurrences:
-; assimp/optimized/Assimp.cpp.ll
-; assimp/optimized/zip.c.ll
-; clamav/optimized/cabd.c.ll
-; clamav/optimized/oabd.c.ll
-; darktable/optimized/introspection_cacorrect.c.ll
-; draco/optimized/float_points_tree_decoder.cc.ll
-; draco/optimized/kd_tree_attributes_decoder.cc.ll
-; flac/optimized/metadata_iterators.c.ll
-; flac/optimized/picture.c.ll
-; freetype/optimized/cff.c.ll
-; freetype/optimized/pfr.c.ll
-; freetype/optimized/sfnt.c.ll
-; git/optimized/hash-lookup.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
-; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/H5Ocache.c.ll
-; hdf5/optimized/H5Odtype.c.ll
-; hyperscan/optimized/rose_build_lookaround.cpp.ll
-; icu/optimized/ucptrie.ll
-; imgui/optimized/imgui_draw.cpp.ll
-; libquic/optimized/d1_both.c.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; mold/optimized/output-chunks.cc.ARM32.cc.ll
-; mold/optimized/output-chunks.cc.I386.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; mold/optimized/output-chunks.cc.RV32LE.cc.ll
-; mold/optimized/output-chunks.cc.SH4.cc.ll
-; nori/optimized/nanovg.c.ll
-; nuklear/optimized/unity.c.ll
-; openjdk/optimized/hb-aat-layout.ll
-; openjdk/optimized/hb-face.ll
-; openjdk/optimized/hb-font.ll
-; openjdk/optimized/hb-ot-cff1-table.ll
-; openjdk/optimized/hb-ot-cff2-table.ll
-; openjdk/optimized/hb-ot-color.ll
-; openjdk/optimized/hb-ot-font.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-ot-math.ll
-; openjdk/optimized/hb-ot-metrics.ll
-; openjdk/optimized/hb-ot-name.ll
-; openjdk/optimized/hb-ot-shape-fallback.ll
-; openjdk/optimized/hb-ot-shaper-arabic.ll
-; openjdk/optimized/hb-ot-var.ll
-; openjdk/optimized/zip_util.ll
-; openssl/optimized/asynciotest-bin-ssltestlib.ll
-; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
-; openssl/optimized/dtlstest-bin-ssltestlib.ll
-; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
-; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
-; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
-; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
-; openssl/optimized/quicapitest-bin-ssltestlib.ll
-; openssl/optimized/quicfaultstest-bin-ssltestlib.ll
-; openssl/optimized/recordlentest-bin-ssltestlib.ll
-; openssl/optimized/rpktest-bin-ssltestlib.ll
-; openssl/optimized/servername_test-bin-ssltestlib.ll
-; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
-; openssl/optimized/sslapitest-bin-ssltestlib.ll
-; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
-; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
-; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/stbImage.cpp.ll
-; php/optimized/hash_gost.ll
-; php/optimized/pcre2_match.ll
-; php/optimized/pcre2_substring.ll
-; postgres/optimized/ginget.ll
-; postgres/optimized/itemptr.ll
-; postgres/optimized/mac8.ll
-; postgres/optimized/nodeTidscan.ll
-; postgres/optimized/tuplesortvariants.ll
-; postgres/optimized/vacuum.ll
-; qemu/optimized/fdt.c.ll
-; qemu/optimized/fdt_ro.c.ll
-; qemu/optimized/hw_scsi_esp.c.ll
-; quickjs/optimized/libunicode.ll
-; raylib/optimized/raudio.c.ll
-; raylib/optimized/rmodels.c.ll
-; raylib/optimized/rtext.c.ll
-; raylib/optimized/rtextures.c.ll
-; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; spike/optimized/fdt.ll
-; spike/optimized/fdt_ro.ll
-; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_image.c.ll
-; stb/optimized/stb_truetype.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; wireshark/optimized/netscaler.c.ll
-; wireshark/optimized/packet-rtp.c.ll
-; wireshark/optimized/packet-zbee-aps.c.ll
-; wolfssl/optimized/internal.c.ll
-; wolfssl/optimized/tls13.c.ll
-; zxing/optimized/zueci.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
-  ret i1 %4
-}
-
-; 41 occurrences:
-; clamav/optimized/petite.c.ll
-; cvc5/optimized/fun_def_fmf.cpp.ll
-; gromacs/optimized/xtc3.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; icu/optimized/rle.ll
-; icu/optimized/usprep.ll
-; imgui/optimized/imgui_draw.cpp.ll
-; nori/optimized/nanovg.c.ll
-; nuklear/optimized/unity.c.ll
-; openjdk/optimized/hb-aat-layout.ll
-; openjdk/optimized/hb-aat-map.ll
-; openssl/optimized/asynciotest-bin-ssltestlib.ll
-; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
-; openssl/optimized/dtlstest-bin-ssltestlib.ll
-; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
-; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
-; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
-; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
-; openssl/optimized/quicapitest-bin-ssltestlib.ll
-; openssl/optimized/quicfaultstest-bin-ssltestlib.ll
-; openssl/optimized/recordlentest-bin-ssltestlib.ll
-; openssl/optimized/rpktest-bin-ssltestlib.ll
-; openssl/optimized/servername_test-bin-ssltestlib.ll
-; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
-; openssl/optimized/sslapitest-bin-ssltestlib.ll
-; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
-; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
-; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/ir_sccp.ll
-; php/optimized/pcre2_dfa_match.ll
-; php/optimized/pcre2_study.ll
-; raylib/optimized/rtext.c.ll
-; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_truetype.c.ll
-; velox/optimized/PrestoSerializer.cpp.ll
-; wireshark/optimized/ftype-ieee-11073-float.c.ll
-; wireshark/optimized/lanalyzer.c.ll
-; wireshark/optimized/packet_diagram.cpp.ll
-; wireshark/optimized/vwr.c.ll
-; yosys/optimized/rtlil.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = icmp sgt i32 %3, %0
-  ret i1 %4
-}
-
-; 9 occurrences:
-; freetype/optimized/sfnt.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-static.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; openjdk/optimized/hb-common.ll
-; openjdk/optimized/hb-ot-font.ll
-; openjdk/optimized/hb-ot-layout.ll
-; postgres/optimized/mac8.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = icmp ule i32 %3, %0
-  ret i1 %4
-}
-
-; 51 occurrences:
+; 52 occurrences:
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/giaAigerExt.c.ll
 ; abc/optimized/giaFanout.c.ll
@@ -526,6 +270,7 @@ entry:
 ; openusd/optimized/read.c.ll
 ; php/optimized/ir_emit.ll
 ; quickjs/optimized/quickjs.ll
+; re2/optimized/onepass.cc.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/imgui.cpp.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
@@ -533,7 +278,308 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
+  ret i1 %4
+}
+
+; 43 occurrences:
+; darktable/optimized/RawImageDataFloat.cpp.ll
+; darktable/optimized/RawImageDataU16.cpp.ll
+; freetype/optimized/sfnt.c.ll
+; glslang/optimized/iomapper.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; libquic/optimized/d1_both.c.ll
+; lief/optimized/ssl_msg.c.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-common.ll
+; openjdk/optimized/hb-face.ll
+; openjdk/optimized/hb-font.ll
+; openjdk/optimized/hb-ot-color.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-math.ll
+; openjdk/optimized/hb-ot-metrics.ll
+; openjdk/optimized/hb-ot-shape-fallback.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; openjdk/optimized/hb-ot-var.ll
+; openjdk/optimized/zip_util.ll
+; openssl/optimized/asynciotest-bin-ssltestlib.ll
+; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
+; openssl/optimized/dtlstest-bin-ssltestlib.ll
+; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
+; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
+; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
+; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
+; openssl/optimized/quicapitest-bin-ssltestlib.ll
+; openssl/optimized/quicfaultstest-bin-ssltestlib.ll
+; openssl/optimized/recordlentest-bin-ssltestlib.ll
+; openssl/optimized/rpktest-bin-ssltestlib.ll
+; openssl/optimized/servername_test-bin-ssltestlib.ll
+; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
+; openssl/optimized/sslapitest-bin-ssltestlib.ll
+; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
+; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
+; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 53 occurrences:
+; assimp/optimized/zip.c.ll
+; clamav/optimized/cabd.c.ll
+; freetype/optimized/sfnt.c.ll
+; git/optimized/hash-lookup.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hdf5/optimized/H5Ocache.c.ll
+; icu/optimized/ucptrie.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-face.ll
+; openjdk/optimized/hb-ot-cff1-table.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-math.ll
+; openjdk/optimized/hb-ot-metrics.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; openjdk/optimized/hb-ot-var.ll
+; openjdk/optimized/zip_util.ll
+; openssl/optimized/asynciotest-bin-ssltestlib.ll
+; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
+; openssl/optimized/dtlstest-bin-ssltestlib.ll
+; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
+; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
+; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
+; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
+; openssl/optimized/quicapitest-bin-ssltestlib.ll
+; openssl/optimized/quicfaultstest-bin-ssltestlib.ll
+; openssl/optimized/recordlentest-bin-ssltestlib.ll
+; openssl/optimized/rpktest-bin-ssltestlib.ll
+; openssl/optimized/servername_test-bin-ssltestlib.ll
+; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
+; openssl/optimized/sslapitest-bin-ssltestlib.ll
+; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
+; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
+; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
+; qemu/optimized/hw_scsi_esp.c.ll
+; raylib/optimized/raudio.c.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ult i32 %0, %3
+  ret i1 %4
+}
+
+; 41 occurrences:
+; clamav/optimized/petite.c.ll
+; cvc5/optimized/fun_def_fmf.cpp.ll
+; gromacs/optimized/xtc3.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; icu/optimized/rle.ll
+; icu/optimized/usprep.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-aat-map.ll
+; openssl/optimized/asynciotest-bin-ssltestlib.ll
+; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
+; openssl/optimized/dtlstest-bin-ssltestlib.ll
+; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
+; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
+; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
+; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
+; openssl/optimized/quicapitest-bin-ssltestlib.ll
+; openssl/optimized/quicfaultstest-bin-ssltestlib.ll
+; openssl/optimized/recordlentest-bin-ssltestlib.ll
+; openssl/optimized/rpktest-bin-ssltestlib.ll
+; openssl/optimized/servername_test-bin-ssltestlib.ll
+; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
+; openssl/optimized/sslapitest-bin-ssltestlib.ll
+; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
+; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
+; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
+; php/optimized/ir_sccp.ll
+; php/optimized/pcre2_dfa_match.ll
+; php/optimized/pcre2_study.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_truetype.c.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; wireshark/optimized/ftype-ieee-11073-float.c.ll
+; wireshark/optimized/lanalyzer.c.ll
+; wireshark/optimized/packet_diagram.cpp.ll
+; wireshark/optimized/vwr.c.ll
+; yosys/optimized/rtlil.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp slt i32 %0, %3
+  ret i1 %4
+}
+
+; 38 occurrences:
+; darktable/optimized/RawImageDataU16.cpp.ll
+; flac/optimized/bitwriter.c.ll
+; freetype/optimized/pfr.c.ll
+; freetype/optimized/sfnt.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hermes/optimized/zip.c.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-common.ll
+; openjdk/optimized/hb-face.ll
+; openjdk/optimized/hb-ot-color.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-math.ll
+; openjdk/optimized/hb-ot-shape-fallback.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; postgres/optimized/ginget.ll
+; postgres/optimized/mac8.ll
+; postgres/optimized/nodeTidscan.ll
+; postgres/optimized/vacuum.ll
+; qemu/optimized/block_vvfat.c.ll
+; qemu/optimized/fdt.c.ll
+; qemu/optimized/fdt_rw.c.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; spike/optimized/fdt.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_truetype.c.ll
+; wireshark/optimized/editcap.c.ll
+; wireshark/optimized/observer.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 66 occurrences:
+; assimp/optimized/Assimp.cpp.ll
+; clamav/optimized/oabd.c.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; draco/optimized/float_points_tree_decoder.cc.ll
+; draco/optimized/kd_tree_attributes_decoder.cc.ll
+; flac/optimized/metadata_iterators.c.ll
+; flac/optimized/picture.c.ll
+; freetype/optimized/cff.c.ll
+; freetype/optimized/pfr.c.ll
+; freetype/optimized/sfnt.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
+; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
+; harfbuzz/optimized/hb-subset-cff-common.cc.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hdf5/optimized/H5Odtype.c.ll
+; hyperscan/optimized/rose_build_lookaround.cpp.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; libquic/optimized/d1_both.c.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-face.ll
+; openjdk/optimized/hb-font.ll
+; openjdk/optimized/hb-ot-cff1-table.ll
+; openjdk/optimized/hb-ot-cff2-table.ll
+; openjdk/optimized/hb-ot-color.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-math.ll
+; openjdk/optimized/hb-ot-metrics.ll
+; openjdk/optimized/hb-ot-name.ll
+; openjdk/optimized/hb-ot-shape-fallback.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; openjdk/optimized/hb-ot-var.ll
+; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; php/optimized/hash_gost.ll
+; php/optimized/pcre2_match.ll
+; php/optimized/pcre2_substring.ll
+; postgres/optimized/ginget.ll
+; postgres/optimized/mac8.ll
+; postgres/optimized/nodeTidscan.ll
+; postgres/optimized/tuplesortvariants.ll
+; postgres/optimized/vacuum.ll
+; qemu/optimized/fdt.c.ll
+; qemu/optimized/fdt_ro.c.ll
+; quickjs/optimized/libunicode.ll
+; raylib/optimized/rmodels.c.ll
+; raylib/optimized/rtext.c.ll
+; raylib/optimized/rtextures.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; spike/optimized/fdt.ll
+; spike/optimized/fdt_ro.ll
+; stb/optimized/stb_image.c.ll
+; stb/optimized/stb_truetype.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; wireshark/optimized/netscaler.c.ll
+; wireshark/optimized/packet-rtp.c.ll
+; wireshark/optimized/packet-zbee-aps.c.ll
+; wolfssl/optimized/internal.c.ll
+; wolfssl/optimized/tls13.c.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp ult i32 %0, %3
+  ret i1 %4
+}
+
+; 6 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; openjdk/optimized/hb-common.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-layout.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000039(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign uge i32 %0, %3
   ret i1 %4
 }
 
@@ -557,15 +603,14 @@ entry:
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
-; 36 occurrences:
-; abc/optimized/mvcCompare.c.ll
+; 34 occurrences:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/ComponentSequence.cpp.ll
@@ -590,7 +635,6 @@ entry:
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
-; llvm/optimized/RegBankSelect.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; llvm/optimized/RenameIndependentSubregs.cpp.ll
@@ -605,24 +649,52 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
-; 8 occurrences:
+; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-face.ll
+; openjdk/optimized/hb-ot-font.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ule i32 %0, %3
+  ret i1 %4
+}
+
+; 7 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; postgres/optimized/mac8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp uge i32 %3, %0
+  %4 = icmp ule i32 %0, %3
+  ret i1 %4
+}
+
+; 6 occurrences:
+; freetype/optimized/sfnt.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; openjdk/optimized/hb-ot-layout.ll
+; postgres/optimized/mac8.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp uge i32 %0, %3
   ret i1 %4
 }
 
@@ -635,10 +707,10 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; postgres/optimized/nodeTidscan.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
@@ -647,15 +719,62 @@ entry:
 ; php/optimized/pcre2_dfa_match.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 
-; 30 occurrences:
-; abc/optimized/mvcCompare.c.ll
+; 4 occurrences:
+; abc/optimized/mvcUtils.c.ll
+; abc/optimized/satSolver2.c.ll
+; icu/optimized/edits.ll
+; linux/optimized/mlme.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp ne i32 %0, %3
+  ret i1 %4
+}
+
+; 4 occurrences:
+; abc/optimized/ifSelect.c.ll
+; abc/optimized/satSolver.c.ll
+; abc/optimized/satSolver2.c.ll
+; abc/optimized/satSolver3.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp slt i32 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; abc/optimized/cecSolveG.c.ll
+; gromacs/optimized/xtc3.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp sle i32 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; abc/optimized/giaMinLut.c.ll
+; slurm/optimized/eval_nodes_block.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp sgt i32 %0, %3
+  ret i1 %4
+}
+
+; 29 occurrences:
 ; icu/optimized/collationrootelements.ll
 ; linux/optimized/extents_status.ll
 ; llama.cpp/optimized/llama.cpp.ll
@@ -689,55 +808,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
-; 4 occurrences:
-; abc/optimized/mvcUtils.c.ll
-; abc/optimized/satSolver2.c.ll
-; icu/optimized/edits.ll
-; linux/optimized/mlme.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or i32 %1, %2
-  %4 = icmp ne i32 %3, %0
-  ret i1 %4
-}
-
-; 4 occurrences:
-; abc/optimized/ifSelect.c.ll
-; abc/optimized/satSolver.c.ll
-; abc/optimized/satSolver2.c.ll
-; abc/optimized/satSolver3.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or i32 %1, %2
-  %4 = icmp sgt i32 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; abc/optimized/cecSolveG.c.ll
-; gromacs/optimized/xtc3.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = icmp sge i32 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; abc/optimized/giaMinLut.c.ll
-; slurm/optimized/eval_nodes_block.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or i32 %1, %2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -752,7 +823,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = icmp uge i32 %3, %0
+  %4 = icmp ule i32 %0, %3
   ret i1 %4
 }
 
@@ -763,7 +834,17 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = icmp ule i32 %3, %0
+  %4 = icmp uge i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/RegBankSelect.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp samesign ult i32 %0, %3
   ret i1 %4
 }
 

@@ -25,7 +25,7 @@ entry:
 ; icu/optimized/usearch.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 3
   %4 = icmp eq i16 %3, 2

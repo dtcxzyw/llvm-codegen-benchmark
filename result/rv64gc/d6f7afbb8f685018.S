@@ -34,10 +34,12 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
-	addi	a0, a1, -32
+	addi	a0, a1, 11
 	ret
 .LBB4_2:
-	li	a0, -16
+	li	a0, -1
+	slli	a0, a0, 63
+	addi	a0, a0, 1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 1

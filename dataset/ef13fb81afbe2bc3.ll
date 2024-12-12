@@ -1,8 +1,9 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; linux/optimized/memblock.ll
 ; llvm/optimized/ASTReader.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; minetest/optimized/main.cpp.ll
 ; opencv/optimized/perf_joint_bilateral_filter.cpp.ll
 ; opencv/optimized/perf_l0_smooth.cpp.ll

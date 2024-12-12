@@ -1,6 +1,8 @@
 
-; 10 occurrences:
+; 11 occurrences:
+; abseil-cpp/optimized/hash_test.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/options_description.ll
 ; cvc5/optimized/match_trie.cpp.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; gromacs/optimized/biasgrid.cpp.ll
@@ -8,7 +10,6 @@
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; php/optimized/dce.ll
-; proj/optimized/io.cpp.ll
 ; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
@@ -16,18 +17,16 @@ entry:
   %2 = add i64 %1, 63
   %3 = and i64 %2, 63
   %4 = shl nuw i64 1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 9 occurrences:
-; abseil-cpp/optimized/hash_test.cc.ll
+; 7 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; gromacs/optimized/colvarbias_histogram.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
-; meshlab/optimized/load_project.cpp.ll
 ; quantlib/optimized/schedule.ll
 ; rust-analyzer-rs/optimized/5c13ae2xelsf4ggd.ll
 ; Function Attrs: nounwind
@@ -36,7 +35,7 @@ entry:
   %2 = add i64 %1, 63
   %3 = and i64 %2, 63
   %4 = shl nuw i64 1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -50,7 +49,7 @@ entry:
   %2 = add nuw nsw i64 %1, 4294967231
   %3 = and i64 %2, 4294967295
   %4 = shl nuw i64 1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

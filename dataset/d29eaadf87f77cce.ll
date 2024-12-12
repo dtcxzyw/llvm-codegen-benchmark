@@ -16,8 +16,8 @@ entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 1
   %.masked = and i32 %1, -3
-  %5 = or i32 %4, %.masked
-  %6 = or disjoint i32 %5, %0
+  %5 = or i32 %.masked, %4
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

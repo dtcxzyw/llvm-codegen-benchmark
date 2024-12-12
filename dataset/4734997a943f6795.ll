@@ -1,11 +1,10 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cpython/optimized/long.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; freetype/optimized/ftbase.c.ll
 ; postgres/optimized/localtime.ll
 ; postgres/optimized/nodeWindowAgg.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/monitor_hmp.c.ll
 ; qemu/optimized/optimize.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
@@ -59,7 +58,7 @@ define i64 @func0000000000000005(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = select i1 %1, i64 %2, i64 %3
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 21 occurrences:
 ; clamav/optimized/rawread.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/type1.c.ll
@@ -19,6 +19,8 @@
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i8 %0, i16 %1) #0 {
 entry:

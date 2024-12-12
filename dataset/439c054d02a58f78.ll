@@ -19,11 +19,12 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/dmar.ll
 ; linux/optimized/drm_buddy.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/libahci.ll
+; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind

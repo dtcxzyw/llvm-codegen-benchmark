@@ -1,19 +1,21 @@
 func0000000000000001:                   # @func0000000000000001
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	shll	$4, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	subq	%rdi, %rsi
+	xorl	%eax, %eax
+	cmpq	$17, %rsi
+	setb	%al
+	shll	$4, %eax
+	addq	$-16, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	subq	%rdi, %rsi
 	xorl	%eax, %eax
-	cmpq	$33, %rsi
+	cmpq	$17, %rsi
 	setae	%al
-	leaq	1(%rax,%rax), %rax
-	retq
-func0000000000000004:                   # @func0000000000000004
-	subq	%rdi, %rsi
-	cmpq	$1048577, %rsi                  # imm = 0x100001
-	movl	$6, %eax
-	sbbq	$0, %rax
+	shll	$4, %eax
 	retq

@@ -1,14 +1,12 @@
 
-; 75 occurrences:
+; 71 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/amapMerge.c.ll
-; abc/optimized/fraigUtil.c.ll
 ; abc/optimized/fretMain.c.ll
-; abc/optimized/giaEra2.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/solver.c.ll
 ; abc/optimized/xsatSolver.c.ll
@@ -18,7 +16,6 @@
 ; curl/optimized/libcurl_la-easy.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; hermes/optimized/Path.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ucnvmbcs.ll
@@ -59,7 +56,6 @@
 ; ncnn/optimized/lstm_x86_fma.cpp.ll
 ; ncnn/optimized/lstm_x86_xop.cpp.ll
 ; opencv/optimized/deriv.cpp.ll
-; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
@@ -85,12 +81,8 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
-; abc/optimized/giaCof.c.ll
-; abc/optimized/giaEra2.c.ll
-; abc/optimized/giaMf.c.ll
+; 5 occurrences:
 ; abc/optimized/ivyUtil.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; libquic/optimized/e_rc2.c.ll
 ; linux/optimized/io_apic.ll
 ; qemu/optimized/tcg.c.ll

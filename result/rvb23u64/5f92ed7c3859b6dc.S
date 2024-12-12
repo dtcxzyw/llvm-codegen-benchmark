@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	sext.w	a0, a0
 	fli.s	fa5, 1.0
 	flt.s	a1, fa0, fa5
@@ -12,14 +12,14 @@ func000000000000003c:                   # @func000000000000003c
 	feq.s	a1, fa0, fa0
 	or	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	sext.w	a0, a0
 	feq.s	a1, fa0, fa0
 	xori	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001d4:                   # @func00000000000001d4
 	sext.w	a0, a0
 	fli.s	fa5, 1.0
 	feq.s	a1, fa0, fa5
@@ -27,7 +27,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	sgtz	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001d8:                   # @func00000000000001d8
 	sext.w	a0, a0
 	fli.s	fa5, 1.0
 	feq.s	a1, fa0, fa5
@@ -92,7 +92,7 @@ func0000000000000148:                   # @func0000000000000148
 	flt.s	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
@@ -100,7 +100,7 @@ func0000000000000102:                   # @func0000000000000102
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000162:                   # @func0000000000000162
+func00000000000002c2:                   # @func00000000000002c2
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
@@ -108,7 +108,7 @@ func0000000000000162:                   # @func0000000000000162
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
@@ -130,7 +130,7 @@ func0000000000000084:                   # @func0000000000000084
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	sext.w	a0, a0
 	fli.s	fa5, 1.0
 	flt.s	a1, fa0, fa5
@@ -161,7 +161,7 @@ func00000000000000d6:                   # @func00000000000000d6
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func00000000000000e2:                   # @func00000000000000e2
+func00000000000001c2:                   # @func00000000000001c2
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5

@@ -1,50 +1,40 @@
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	saddl	v4.4s, v2.4h, v3.4h
-	saddl2	v2.4s, v2.8h, v3.8h
-	cmgt	v1.4s, v1.4s, v2.4s
-	cmgt	v0.4s, v0.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	sxth	w8, w1
+	add	w8, w8, w2, sxth
+	cmp	w8, w0
+	cset	w0, lt
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	saddl	v4.4s, v2.4h, v3.4h
-	saddl2	v2.4s, v2.8h, v3.8h
-	cmgt	v1.4s, v2.4s, v1.4s
-	cmgt	v0.4s, v4.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	sxth	w8, w1
+	add	w8, w8, w2, sxth
+	cmp	w8, w0
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000017:                   // @func0000000000000017
+func0000000000000027:                   // @func0000000000000027
 // %bb.0:                               // %entry
-	saddl	v4.4s, v2.4h, v3.4h
-	saddl2	v2.4s, v2.8h, v3.8h
-	cmge	v1.4s, v1.4s, v2.4s
-	cmge	v0.4s, v0.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	sxth	w8, w1
+	add	w8, w8, w2, sxth
+	cmp	w8, w0
+	cset	w0, le
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	saddl	v4.4s, v2.4h, v3.4h
-	saddl2	v2.4s, v2.8h, v3.8h
-	cmhi	v1.4s, v2.4s, v1.4s
-	cmhi	v0.4s, v4.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	sxth	w8, w1
+	add	w8, w8, w2, sxth
+	cmp	w8, w0
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	saddl	v4.4s, v2.4h, v3.4h
-	saddl2	v2.4s, v2.8h, v3.8h
-	cmeq	v1.4s, v2.4s, v1.4s
-	cmeq	v0.4s, v4.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	sxth	w8, w1
+	add	w8, w8, w2, sxth
+	cmp	w8, w0
+	cset	w0, eq
 	ret
                                         // -- End function

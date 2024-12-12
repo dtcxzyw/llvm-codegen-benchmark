@@ -1,10 +1,9 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/forcerec.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; nix/optimized/dotgraph.ll
-; opencv/optimized/circlesgrid.cpp.ll
 ; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
 ; openexr/optimized/ImfOutputFile.cpp.ll
 ; openusd/optimized/testSdfPathTable.cpp.ll

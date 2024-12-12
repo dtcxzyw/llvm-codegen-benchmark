@@ -1,10 +1,11 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/marshalling.cc.ll
 ; abseil-cpp/optimized/pow10_helper_test.cc.ll
+; boost/optimized/area.ll
 ; graphviz/optimized/exeval.c.ll
 ; hermes/optimized/String.cpp.ll
 ; jq/optimized/jv.ll

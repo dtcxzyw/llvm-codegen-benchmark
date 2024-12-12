@@ -1,5 +1,5 @@
 
-; 194 occurrences:
+; 198 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
@@ -53,7 +53,6 @@
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/uncore_snb.ll
-; linux/optimized/virtgpu_plane.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -78,7 +77,6 @@
 ; llvm/optimized/MicrosoftCXXABI.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -108,12 +106,16 @@
 ; llvm/optimized/X86TileConfig.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; memcached/optimized/memcached-slab_automove.ll
 ; memcached/optimized/memcached-slab_automove_extstore.ll
 ; memcached/optimized/memcached_debug-slab_automove.ll
 ; memcached/optimized/memcached_debug-slab_automove_extstore.ll
+; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/mutual.cpp.ll
+; meshlab/optimized/solver.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
@@ -194,6 +196,8 @@
 ; z3/optimized/substitution_tree.cpp.ll
 ; z3/optimized/unifier.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -203,11 +207,13 @@ entry:
   ret i64 %5
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; freetype/optimized/sdf.c.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; linux/optimized/intel_overlay.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; mitsuba3/optimized/rgb2spec.c.ll
@@ -222,7 +228,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -246,7 +252,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -278,19 +284,18 @@ entry:
 define i64 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; g2o/optimized/marginal_covariance_cholesky.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; opencv/optimized/moments.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openspiel/optimized/clobber.cc.ll
@@ -309,7 +314,7 @@ entry:
 define i64 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -396,7 +401,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -408,23 +413,24 @@ entry:
 define i64 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; cmake/optimized/cmELF.cxx.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; linux/optimized/intel_overlay.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MicrosoftCXXABI.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -448,7 +454,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

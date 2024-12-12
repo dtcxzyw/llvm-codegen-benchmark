@@ -2,7 +2,7 @@
 	.long	4096                            # 0x1000
 .LCPI0_1:
 	.long	8                               # 0x8
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [8,8,8,8,8,8,8,8]
 	vpslld	$3, %ymm0, %ymm1 {%k1}
@@ -58,7 +58,7 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI2_3(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI2_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %ymm1   # ymm1 = [4294967274,4294967274,4294967274,4294967274,4294967274,4294967274,4294967274,4294967274]

@@ -26,7 +26,7 @@ entry:
   ret i32 %4
 }
 
-; 35 occurrences:
+; 38 occurrences:
 ; abc/optimized/ioReadBlifAig.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; clamav/optimized/cmddata.cpp.ll
@@ -37,6 +37,7 @@ entry:
 ; libquic/optimized/a_strex.c.ll
 ; libquic/optimized/url_canon_ip.cc.ll
 ; linux/optimized/power_supply_core.ll
+; linux/optimized/spurious.ll
 ; linux/optimized/xprtsock.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -62,6 +63,8 @@ entry:
 ; wireshark/optimized/packet-ses.c.ll
 ; wolfssl/optimized/test.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -94,15 +97,14 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; linux/optimized/hash.ll
+; 1 occurrences:
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp ugt i32 %2, -3
-  %4 = select i1 %3, i32 -4, i32 %0
+  %3 = icmp ugt i32 %2, 1114111
+  %4 = select i1 %3, i32 63, i32 %0
   ret i32 %4
 }
 

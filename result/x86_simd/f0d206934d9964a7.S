@@ -22,14 +22,13 @@ func000000000000001c:                   # @func000000000000001c
 	vpandq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.quad	13                              # 0xd
+	.quad	429497                          # 0x68db9
 .LCPI2_1:
-	.quad	88                              # 0x58
-.LCPI2_2:
-	.quad	504                             # 0x1f8
+	.quad	4294967294                      # 0xfffffffe
 func000000000000001e:                   # @func000000000000001e
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
-	vpsrlq	$3, %ymm0, %ymm0
-	vpandq	.LCPI2_2(%rip){1to4}, %ymm0, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	vpsrlq	$31, %ymm0, %ymm0
+	vpandq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
 	retq

@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 25 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -18,10 +18,12 @@
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openusd/optimized/bignum.cc.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
 ; raylib/optimized/raudio.c.ll
 ; slurm/optimized/job_mgr.ll
-; spike/optimized/s_approxRecip32_1.ll
+; zed-rs/optimized/0431hruu0kb4k1yxxvcap38im.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0, i32 %1) #0 {
@@ -44,12 +46,13 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; qemu/optimized/hw_display_bochs-display.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i16 %1) #0 {
 entry:

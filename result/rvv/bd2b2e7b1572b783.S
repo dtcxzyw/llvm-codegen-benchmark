@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vv	v12, v12, v14
 	li	a0, 360
 	vnmsub.vx	v12, a0, v10
-	vmul.vv	v8, v12, v8
+	vmul.vv	v8, v8, v12
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 349525

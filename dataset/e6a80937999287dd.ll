@@ -15,7 +15,7 @@ define i32 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 4
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = lshr i32 %4, 1
   ret i32 %5
 }
@@ -49,25 +49,13 @@ entry:
 }
 
 ; 1 occurrences:
-; opencv/optimized/cap_v4l.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = lshr i32 %0, 16
-  %4 = add nuw nsw i32 %3, %2
-  %5 = and i32 %4, 65535
-  ret i32 %5
-}
-
-; 1 occurrences:
 ; brotli/optimized/transform.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 12
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = lshr i32 %4, 18
   ret i32 %5
 }

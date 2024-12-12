@@ -5,14 +5,15 @@
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 16
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = or disjoint i64 %3, 16384
   ret i64 %4
 }
 
-; 13 occurrences:
+; 16 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; gromacs/optimized/atomdata.cpp.ll
+; libjpeg-turbo/optimized/transupp.c.ll
 ; linux/optimized/intel_guc_ads.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
@@ -24,11 +25,13 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; yosys/optimized/blif.ll
 ; yosys/optimized/satgen.ll
+; z3/optimized/mam.cpp.ll
+; z3/optimized/q_mam.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 15
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = or disjoint i64 %3, 16384
   ret i64 %4
 }
@@ -39,7 +42,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = or disjoint i64 %3, 12
   ret i64 %4
 }
@@ -93,12 +96,13 @@ entry:
 define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 4
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = or disjoint i64 %3, 12
   ret i64 %4
 }
 
-; 26 occurrences:
+; 28 occurrences:
+; bullet3/optimized/b3GpuSapBroadphase.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
@@ -113,6 +117,7 @@ entry:
 ; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
+; openusd/optimized/decodemv.c.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/flowmap.ll
@@ -134,6 +139,22 @@ entry:
   ret i64 %4
 }
 
+; 6 occurrences:
+; bullet3/optimized/b3GpuSapBroadphase.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; openusd/optimized/av1_dx_iface.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nsw i64 %1, 5
+  %3 = add nsw i64 %2, %0
+  %4 = or disjoint i64 %3, 4
+  ret i64 %4
+}
+
 ; 3 occurrences:
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; grpc/optimized/b64.cc.ll
@@ -150,21 +171,10 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nsw i64 %1, 2
-  %3 = add nsw i64 %2, %0
-  %4 = or disjoint i64 %3, 12
-  ret i64 %4
-}
-
-; 1 occurrences:
-; darktable/optimized/introspection_demosaic.c.ll
-; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = or disjoint i64 %3, 8
   ret i64 %4
 }
@@ -186,7 +196,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 5
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = or disjoint i64 %3, 16
   ret i64 %4
 }

@@ -1,10 +1,9 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; icu/optimized/ucase.ll
 ; linux/optimized/pci.ll
-; llvm/optimized/MCWin64EH.cpp.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind

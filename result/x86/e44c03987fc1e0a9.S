@@ -19,7 +19,7 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000007:                   # @func0000000000000007
 	vmulsd	.LCPI2_0(%rip), %xmm1, %xmm1
 	vcvtsd2ss	%xmm1, %xmm1, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 .LCPI3_0:

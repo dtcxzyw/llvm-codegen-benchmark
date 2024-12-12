@@ -277,7 +277,7 @@ entry:
   ret i32 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaTsim.c.ll
@@ -289,7 +289,6 @@ entry:
 ; libquic/optimized/convert.c.ll
 ; lief/optimized/bignum.c.ll
 ; linux/optimized/gen8_ppgtt.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll

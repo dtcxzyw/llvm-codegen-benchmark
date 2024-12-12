@@ -233,7 +233,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1, i8 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 6
   %4 = select i1 %3, i32 16944, i32 25136
@@ -245,7 +245,7 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1, i8 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 6
   %4 = select i1 %3, i32 16944, i32 25136

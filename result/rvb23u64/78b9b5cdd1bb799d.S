@@ -1,3 +1,11 @@
+func00000000000000c0:                   # @func00000000000000c0
+	sh3add	a0, a1, a0
+	addi	a0, a0, 13
+	ret
+func00000000000000e0:                   # @func00000000000000e0
+	sh1add	a0, a1, a0
+	addi	a0, a0, 7
+	ret
 func00000000000000f0:                   # @func00000000000000f0
 	slli	a1, a1, 6
 	add	a0, a0, a1

@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/clipper.cpp.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
@@ -18,7 +18,6 @@
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/bignum.ll
-; spike/optimized/s_mul64To128M.ll
 ; spike/optimized/ukmar64.ll
 ; spike/optimized/umar64.ll
 ; spike/optimized/vwmaccu_vv.ll
@@ -27,46 +26,12 @@
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 24 occurrences:
-; gromacs/optimized/biasstate.cpp.ll
-; libjpeg-turbo/optimized/turbojpeg.c.ll
-; libquic/optimized/curve25519.c.ll
-; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; llvm/optimized/MachObjectWriter.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; nori/optimized/nanovg.c.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; opencv/optimized/autocalib.cpp.ll
-; opencv/optimized/motion_estimators.cpp.ll
-; opencv/optimized/tree.cpp.ll
-; openssl/optimized/libcrypto-lib-curve25519.ll
-; openssl/optimized/libcrypto-shlib-curve25519.ll
-; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
-; postgres/optimized/mcv.ll
-; ruby/optimized/qsort.ll
-; spike/optimized/mulh.ll
-; spike/optimized/mulhsu.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; wasmedge/optimized/refInstr.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 2147483647
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 95 occurrences:
+; 96 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; c3c/optimized/bigint.c.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -162,17 +127,50 @@ entry:
 ; velox/optimized/StringFunctions.cpp.ll
 ; xgboost/optimized/charconv.cc.ll
 ; z3/optimized/mpn.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = mul nuw i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
-; 27 occurrences:
+; 21 occurrences:
+; libjpeg-turbo/optimized/turbojpeg.c.ll
+; libquic/optimized/curve25519.c.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; llvm/optimized/MachObjectWriter.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; opencv/optimized/autocalib.cpp.ll
+; opencv/optimized/motion_estimators.cpp.ll
+; openssl/optimized/libcrypto-lib-curve25519.ll
+; openssl/optimized/libcrypto-shlib-curve25519.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; postgres/optimized/mcv.ll
+; spike/optimized/mulh.ll
+; spike/optimized/mulhsu.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; wasmedge/optimized/refInstr.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 2097151
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 28 occurrences:
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/alloc_lib.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; duckdb/optimized/generators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
@@ -203,8 +201,8 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = mul i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -223,12 +221,11 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
-; opencv/optimized/convolution_layer.cpp.ll
 ; openjdk/optimized/mulnode.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
 ; Function Attrs: nounwind
@@ -236,7 +233,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = mul nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -253,8 +250,8 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -264,8 +261,8 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 

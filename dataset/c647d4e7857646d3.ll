@@ -5,7 +5,6 @@
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_time_of_impact.cpp.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
-; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; darktable/optimized/introspection_highpass.c.ll
@@ -40,6 +39,7 @@
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll

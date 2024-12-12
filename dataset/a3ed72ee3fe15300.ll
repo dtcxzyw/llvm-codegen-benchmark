@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 40 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/kitPla.c.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
@@ -15,9 +15,7 @@
 ; openjdk/optimized/vtableStubs.ll
 ; openssl/optimized/libcrypto-lib-cms_pwri.ll
 ; openssl/optimized/libcrypto-shlib-cms_pwri.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; openusd/optimized/skinningQuery.cpp.ll
 ; pbrt-v4/optimized/paramdict.cpp.ll
@@ -51,9 +49,8 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; lief/optimized/bignum.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
 ; xgboost/optimized/updater_approx.cc.ll
@@ -81,11 +78,11 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EAString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = urem i64 %0, %2
-  %4 = icmp ugt i64 %3, 9
+  %4 = icmp samesign ugt i64 %3, 9
   ret i1 %4
 }
 

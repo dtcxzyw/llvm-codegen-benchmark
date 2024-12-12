@@ -1,12 +1,12 @@
 
-%struct._zval_struct.2679598 = type { %union._zend_value.2679608, %union.anon.2679609, %union.anon.2.2679610 }
-%union._zend_value.2679608 = type { i64 }
-%union.anon.2679609 = type { i32 }
-%union.anon.2.2679610 = type { i32 }
-%"class.llvm::MachineOperand.3093774" = type { i32, %union.anon.302.3093775, ptr, %"union.llvm::MachineOperand::ContentsUnion.3093776" }
-%union.anon.302.3093775 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3093776" = type { %"class.llvm::ArrayRef.303.3093777" }
-%"class.llvm::ArrayRef.303.3093777" = type { ptr, i64 }
+%struct._zval_struct.2792479 = type { %union._zend_value.2792489, %union.anon.2792490, %union.anon.2.2792491 }
+%union._zend_value.2792489 = type { i64 }
+%union.anon.2792490 = type { i32 }
+%union.anon.2.2792491 = type { i32 }
+%"class.llvm::MachineOperand.3286536" = type { i32, %union.anon.302.3286537, ptr, %"union.llvm::MachineOperand::ContentsUnion.3286538" }
+%union.anon.302.3286537 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3286538" = type { %"class.llvm::ArrayRef.303.3286539" }
+%"class.llvm::ArrayRef.303.3286539" = type { ptr, i64 }
 
 ; 5 occurrences:
 ; bullet3/optimized/btBoxBoxDetector.ll
@@ -15,16 +15,16 @@
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i1 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1, i32 -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -45,7 +45,6 @@ entry:
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utrie2.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/nativeInst_x86.ll
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
@@ -54,16 +53,16 @@ entry:
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i1 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
@@ -79,17 +78,16 @@ entry:
 ; llvm/optimized/ExprEngineCXX.cpp.ll
 ; llvm/optimized/MDBuilder.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; php/optimized/sqlite3.ll
 ; proj/optimized/tinshift.cpp.ll
 ; redis/optimized/zipmap.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i1 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 0
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %struct._zval_struct.2679598, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct._zval_struct.2792479, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -102,7 +100,7 @@ entry:
 define ptr @func000000000000001c(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 284, i32 4
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -111,12 +109,12 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i1 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 4, i32 3
   %4 = add nuw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -124,12 +122,12 @@ entry:
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i1 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -2, i32 -3
   %4 = add nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.llvm::MachineOperand.3093774", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3286536", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -140,7 +138,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -1, i32 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -164,7 +162,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1, i32 -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr ptr, ptr %0, i64 %5
   ret ptr %6

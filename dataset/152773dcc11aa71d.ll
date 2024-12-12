@@ -35,18 +35,17 @@ entry:
 ; openssl/optimized/libcrypto-lib-cmac.ll
 ; openssl/optimized/libcrypto-shlib-cmac.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; minetest/optimized/CImage.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; xgboost/optimized/gblinear.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
@@ -65,12 +64,12 @@ entry:
 ; php/optimized/xml.ll
 ; php/optimized/zend_ini.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -81,12 +80,12 @@ entry:
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -109,17 +108,19 @@ entry:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; postgres/optimized/arrayfuncs.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
@@ -128,6 +129,20 @@ entry:
   %4 = zext nneg i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
   %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = zext i32 %1 to i64
+  %5 = mul nuw i64 %4, %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

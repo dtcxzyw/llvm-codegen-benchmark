@@ -1,54 +1,36 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmgt	v4.4s, v4.4s, v2.4s
-	cmgt	v3.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v2.8h, v3.8h, v4.8h
-	bif	v0.16b, v1.16b, v2.16b
+	cmp	w1, w2
+	csel	w0, w0, w1, lt
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	cmhi	v4.4s, v2.4s, v4.4s
-	cmhi	v3.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v2.8h, v3.8h, v4.8h
-	bif	v0.16b, v1.16b, v2.16b
+	cmp	w1, w2
+	csel	w0, w0, w1, hi
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	cmgt	v4.4s, v2.4s, v4.4s
-	cmgt	v3.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v2.8h, v3.8h, v4.8h
-	bif	v0.16b, v1.16b, v2.16b
+	cmp	w1, w2
+	csel	w0, w0, w1, gt
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmhi	v4.4s, v4.4s, v2.4s
-	cmhi	v3.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v2.8h, v3.8h, v4.8h
-	bif	v0.16b, v1.16b, v2.16b
+	cmp	w1, w2
+	csel	w0, w0, w1, lo
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	cmhi	v4.4s, v2.4s, v4.4s
-	cmhi	v3.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v2.8h, v3.8h, v4.8h
-	bif	v0.16b, v1.16b, v2.16b
+	cmp	w1, w2
+	csel	w0, w0, w1, hi
 	ret
                                         // -- End function
-func0000000000000026:                   // @func0000000000000026
+func0000000000000046:                   // @func0000000000000046
 // %bb.0:                               // %entry
-	cmgt	v4.4s, v4.4s, v2.4s
-	cmgt	v3.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v2.8h, v3.8h, v4.8h
-	bif	v0.16b, v1.16b, v2.16b
+	cmp	w1, w2
+	csel	w0, w0, w1, lt
 	ret
                                         // -- End function

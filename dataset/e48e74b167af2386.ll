@@ -1,5 +1,5 @@
 
-; 292 occurrences:
+; 291 occurrences:
 ; abc/optimized/bblif.c.ll
 ; annoy/optimized/annoymodule.ll
 ; chibicc/optimized/codegen.ll
@@ -73,7 +73,6 @@
 ; linux/optimized/i2c-algo-bit.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dp_mst.ll
@@ -104,6 +103,7 @@
 ; linux/optimized/xhci-hub.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luau/optimized/loslib.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; minetest/optimized/CGUIFileOpenDialog.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -121,8 +121,6 @@
 ; nuttx/optimized/lib_dayofweek.c.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; openjdk/optimized/parse2.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openssl/optimized/openssl-bin-engine.ll
 ; openusd/optimized/reformat.c.ll
 ; php/optimized/ir.ll
@@ -262,7 +260,6 @@
 ; wireshark/optimized/packet-icq.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-igmp.c.ll
-; wireshark/optimized/packet-kpm-v2.c.ll
 ; wireshark/optimized/packet-mpeg-pes.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/packet-oran.c.ll
@@ -290,6 +287,8 @@
 ; wireshark/optimized/uat_load.c.ll
 ; wireshark/optimized/wimaxasncp_dict.c.ll
 ; wireshark/optimized/ws_strptime.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zxing/optimized/BitArray.cpp.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
@@ -300,7 +299,7 @@ entry:
   ret i32 %2
 }
 
-; 719 occurrences:
+; 702 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/bacPrsBuild.c.ll
@@ -326,12 +325,12 @@ entry:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/align_util.cc.ll
-; arrow/optimized/cached-powers.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/gregorian.ll
 ; bullet3/optimized/b3PrefixScanCL.ll
 ; bullet3/optimized/b3PrefixScanFloat4CL.ll
 ; bullet3/optimized/b3RadixSort32CL.ll
@@ -358,7 +357,6 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/timeline.c.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; faiss/optimized/IndexIVFSpectralHash.cpp.ll
 ; faiss/optimized/IndexLSH.cpp.ll
@@ -390,7 +388,6 @@ entry:
 ; gromacs/optimized/autocorr.cpp.ll
 ; gromacs/optimized/bwlzh.c.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
 ; gromacs/optimized/expfit.cpp.ll
@@ -401,7 +398,6 @@ entry:
 ; gromacs/optimized/perf_est.cpp.ll
 ; gromacs/optimized/pme_solve.cpp.ll
 ; gromacs/optimized/scanner.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
@@ -415,9 +411,7 @@ entry:
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/collationsets.ll
 ; icu/optimized/decNumber.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ucnvisci.ll
 ; icu/optimized/ucnvsel.ll
@@ -437,7 +431,6 @@ entry:
 ; libquic/optimized/convert.c.ll
 ; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/prtime.cc.ll
-; libquic/optimized/random.c.ll
 ; libquic/optimized/time_support.c.ll
 ; libwebp/optimized/buffer_dec.c.ll
 ; libwebp/optimized/cwebp.c.ll
@@ -526,7 +519,6 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_dkl_phy.ll
 ; linux/optimized/intel_migrate.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/rate.ll
@@ -535,6 +527,11 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/loslib.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_theme_default.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
@@ -561,8 +558,6 @@ entry:
 ; nix/optimized/dotgraph.ll
 ; nix/optimized/graphml.ll
 ; nix/optimized/lexer-tab.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/registry.ll
 ; nix/optimized/why-depends.ll
 ; node/optimized/libnode.crypto_dh.ll
@@ -762,20 +757,15 @@ entry:
 ; openssl/optimized/libcrypto-lib-cfb_enc.ll
 ; openssl/optimized/libcrypto-lib-ctrl_params_translate.ll
 ; openssl/optimized/libcrypto-lib-der_writer.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-lib-dh_key.ll
-; openssl/optimized/libcrypto-lib-dh_lib.ll
 ; openssl/optimized/libcrypto-lib-dsa_ossl.ll
 ; openssl/optimized/libcrypto-lib-ec2_oct.ll
 ; openssl/optimized/libcrypto-lib-ec2_smpl.ll
-; openssl/optimized/libcrypto-lib-ec_deprecated.ll
 ; openssl/optimized/libcrypto-lib-ec_key.ll
 ; openssl/optimized/libcrypto-lib-ec_lib.ll
-; openssl/optimized/libcrypto-lib-ec_pmeth.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
 ; openssl/optimized/libcrypto-lib-ecdsa_ossl.ll
 ; openssl/optimized/libcrypto-lib-ecp_oct.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-lib-ofb_enc.ll
 ; openssl/optimized/libcrypto-lib-p_lib.ll
 ; openssl/optimized/libcrypto-lib-param_build.ll
@@ -788,9 +778,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-sm2_sign.ll
 ; openssl/optimized/libcrypto-lib-srp_lib.ll
 ; openssl/optimized/libcrypto-lib-srp_vfy.ll
-; openssl/optimized/libcrypto-lib-t_pkey.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
-; openssl/optimized/libcrypto-lib-x_bignum.ll
 ; openssl/optimized/libcrypto-shlib-a_int.ll
 ; openssl/optimized/libcrypto-shlib-a_object.ll
 ; openssl/optimized/libcrypto-shlib-aria.ll
@@ -803,20 +791,15 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cfb_enc.ll
 ; openssl/optimized/libcrypto-shlib-ctrl_params_translate.ll
 ; openssl/optimized/libcrypto-shlib-der_writer.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-shlib-dh_key.ll
-; openssl/optimized/libcrypto-shlib-dh_lib.ll
 ; openssl/optimized/libcrypto-shlib-dsa_ossl.ll
 ; openssl/optimized/libcrypto-shlib-ec2_oct.ll
 ; openssl/optimized/libcrypto-shlib-ec2_smpl.ll
-; openssl/optimized/libcrypto-shlib-ec_deprecated.ll
 ; openssl/optimized/libcrypto-shlib-ec_key.ll
 ; openssl/optimized/libcrypto-shlib-ec_lib.ll
-; openssl/optimized/libcrypto-shlib-ec_pmeth.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
 ; openssl/optimized/libcrypto-shlib-ecdsa_ossl.ll
 ; openssl/optimized/libcrypto-shlib-ecp_oct.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-ofb_enc.ll
 ; openssl/optimized/libcrypto-shlib-p_lib.ll
 ; openssl/optimized/libcrypto-shlib-param_build.ll
@@ -829,9 +812,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-sm2_sign.ll
 ; openssl/optimized/libcrypto-shlib-srp_lib.ll
 ; openssl/optimized/libcrypto-shlib-srp_vfy.ll
-; openssl/optimized/libcrypto-shlib-t_pkey.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
-; openssl/optimized/libcrypto-shlib-x_bignum.ll
 ; openssl/optimized/libdefault-lib-crngt.ll
 ; openssl/optimized/libdefault-lib-ec_kem.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
@@ -872,6 +853,7 @@ entry:
 ; postgres/optimized/help.ll
 ; postgres/optimized/jsonpath_scan.ll
 ; postgres/optimized/pgc.ll
+; postgres/optimized/rangetypes_gist.ll
 ; postgres/optimized/repl_scanner.ll
 ; postgres/optimized/specscanner.ll
 ; postgres/optimized/syncrep_scanner.ll
@@ -1028,7 +1010,7 @@ entry:
   ret i32 %2
 }
 
-; 82 occurrences:
+; 85 occurrences:
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
 ; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
@@ -1111,6 +1093,9 @@ entry:
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/show_packet_bytes_dialog.cpp.ll
 ; wireshark/optimized/tap-iostat.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0) #0 {
 entry:

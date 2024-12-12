@@ -1,45 +1,23 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	ushll	v4.8h, v4.8b, #0
-	shl	v2.4s, v2.4s, #8
-	shl	v3.4s, v3.4s, #8
-	ushll	v5.4s, v4.4h, #0
-	ushll2	v4.4s, v4.8h, #0
-	orr	v3.16b, v3.16b, v4.16b
-	orr	v2.16b, v2.16b, v5.16b
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	ushr	v1.4s, v1.4s, #8
-	ushr	v0.4s, v0.4s, #8
+	bfi	w2, w1, #8, #24
+	add	w8, w0, w2
+	lsr	w0, w8, #8
 	ret
                                         // -- End function
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	ushll	v4.8h, v4.8b, #0
-	shl	v2.4s, v2.4s, #8
-	shl	v3.4s, v3.4s, #8
-	ushll	v5.4s, v4.4h, #0
-	ushll2	v4.4s, v4.8h, #0
-	orr	v3.16b, v3.16b, v4.16b
-	orr	v2.16b, v2.16b, v5.16b
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	ushr	v1.4s, v1.4s, #6
-	ushr	v0.4s, v0.4s, #6
+	and	w8, w2, #0xff
+	orr	w8, w8, w1, lsl #8
+	add	w8, w8, w0
+	lsr	w0, w8, #6
 	ret
                                         // -- End function
 func000000000000003e:                   // @func000000000000003e
 // %bb.0:                               // %entry
-	ushll	v4.8h, v4.8b, #0
-	shl	v2.4s, v2.4s, #8
-	shl	v3.4s, v3.4s, #8
-	ushll	v5.4s, v4.4h, #0
-	ushll2	v4.4s, v4.8h, #0
-	orr	v3.16b, v3.16b, v4.16b
-	orr	v2.16b, v2.16b, v5.16b
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	ushr	v1.4s, v1.4s, #8
-	ushr	v0.4s, v0.4s, #8
+	and	w8, w2, #0xff
+	orr	w8, w8, w1, lsl #8
+	add	w8, w0, w8
+	lsr	w0, w8, #8
 	ret
                                         // -- End function

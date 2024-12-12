@@ -15,7 +15,8 @@ entry:
   ret i64 %4
 }
 
-; 19 occurrences:
+; 21 occurrences:
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/special.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
@@ -27,6 +28,7 @@ entry:
 ; openjdk/optimized/Index8Gray.ll
 ; openjdk/optimized/zip_util.ll
 ; pbrt-v4/optimized/image.cpp.ll
+; php/optimized/decode.ll
 ; postgres/optimized/numeric.ll
 ; qemu/optimized/fdt_sw.c.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -40,11 +42,11 @@ define i64 @func000000000000000f(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = mul nuw nsw i64 %2, 4278190080
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
@@ -56,7 +58,6 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; wireshark/optimized/packet-iec104.c.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i8 %1) #0 {
 entry:

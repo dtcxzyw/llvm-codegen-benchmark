@@ -19,7 +19,7 @@
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = select i1 %3, i32 255, i32 0
   ret i32 %4
 }
@@ -28,10 +28,10 @@ entry:
 ; fmt/optimized/format-impl-test.cc.ll
 ; postgres/optimized/freespace.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = select i1 %3, i32 1, i32 -1
   ret i32 %4
 }
@@ -42,7 +42,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %.not = icmp sgt i32 %2, %0
+  %.not = icmp slt i32 %0, %2
   %3 = select i1 %.not, i32 2, i32 1
   ret i32 %3
 }
@@ -59,7 +59,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = select i1 %3, i32 1, i32 2
   ret i32 %4
 }
@@ -71,7 +71,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = select i1 %3, i32 0, i32 8
   ret i32 %4
 }
@@ -83,7 +83,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = select i1 %3, i32 46, i32 49
   ret i32 %4
 }
@@ -95,7 +95,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = select i1 %3, i32 2, i32 1
   ret i32 %4
 }
@@ -103,10 +103,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/sock_diag.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = select i1 %3, i32 0, i32 -116
   ret i32 %4
 }
@@ -117,7 +117,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %.not = icmp slt i32 %2, %0
+  %.not = icmp sgt i32 %0, %2
   %3 = select i1 %.not, i32 0, i32 256
   ret i32 %3
 }

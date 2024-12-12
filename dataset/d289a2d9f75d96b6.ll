@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/StreamChecker.cpp.ll
 ; openjdk/optimized/c2compiler.ll
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i1 %0, i8 %1) #0 {
 entry:

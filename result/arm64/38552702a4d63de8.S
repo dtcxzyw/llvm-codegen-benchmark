@@ -1,11 +1,11 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	adds	x9, x2, x0
-	mov	x8, #72057594037927935          // =0xffffffffffffff
+	mov	x8, #-1                         // =0xffffffffffffffff
 	adc	x10, x3, x1
-	add	x8, x10, x8
-	extr	x0, x8, x9, #16
-	lsr	x1, x8, #16
+	cmp	x9, #1
+	mov	x1, #0                          // =0x0
+	adc	x0, x10, x8
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e

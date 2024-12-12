@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; icu/optimized/gregoimp.ll
+; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0) #0 {
@@ -11,9 +10,8 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
-; icu/optimized/gregoimp.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/timestamp.ll
 ; ruby/optimized/numeric.ll

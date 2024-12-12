@@ -73,7 +73,7 @@ func000000000000000d:                   # @func000000000000000d
 .LCPI4_0:
 	.long	2147483648                      # 0x80000000
 func0000000000000000:                   # @func0000000000000000
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpslld	$16, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI4_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; clamav/optimized/udf.c.ll
 ; hdf5/optimized/H5EAcache.c.ll
 ; hdf5/optimized/H5FS.c.ll
@@ -8,7 +8,6 @@
 ; hdf5/optimized/H5FSstat.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; hdf5/optimized/H5Ofsinfo.c.ll
 ; lief/optimized/ssl_tls12_client.c.ll
 ; llvm/optimized/CGBlocks.cpp.ll

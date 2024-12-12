@@ -10,23 +10,6 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
-; hermes/optimized/APInt.cpp.ll
-; libquic/optimized/time_support.c.ll
-; linux/optimized/regcache-rbtree.ll
-; llvm/optimized/APInt.cpp.ll
-; openjdk/optimized/shenandoahMarkBitMap.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 3
-  %3 = lshr i64 %2, 2
-  %4 = sub nsw i64 %0, %3
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
@@ -69,7 +52,7 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; duckdb/optimized/boolean_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -88,13 +71,28 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; git/optimized/ewah_bitmap.ll
-; linux/optimized/machine_kexec_64.ll
 ; openjdk/optimized/bitMap.ll
 ; openjdk/optimized/shenandoahMarkBitMap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
+  %3 = lshr i64 %2, 6
+  %4 = sub nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 6 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; hermes/optimized/APInt.cpp.ll
+; libquic/optimized/time_support.c.ll
+; linux/optimized/regcache-rbtree.ll
+; llvm/optimized/APInt.cpp.ll
+; openjdk/optimized/shenandoahMarkBitMap.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = sub nsw i64 %0, %3
   ret i64 %4
@@ -136,17 +134,6 @@ entry:
   %2 = add nuw i64 %1, 1
   %3 = lshr i64 %2, 1
   %4 = sub i64 %0, %3
-  ret i64 %4
-}
-
-; 1 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, 8
-  %3 = lshr exact i64 %2, 3
-  %4 = sub nuw i64 %0, %3
   ret i64 %4
 }
 

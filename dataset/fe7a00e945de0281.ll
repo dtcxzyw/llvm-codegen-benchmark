@@ -1,12 +1,11 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
 ; graphviz/optimized/cluster.c.ll
 ; icu/optimized/ucnvmbcs.ll
 ; linux/optimized/acpi_video.ll
 ; linux/optimized/intel_sseu.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll

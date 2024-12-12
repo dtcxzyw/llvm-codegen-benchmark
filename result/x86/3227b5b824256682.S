@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd
@@ -6,7 +6,7 @@ func000000000000001a:                   # @func000000000000001a
 	addl	%edi, %edx
 	setns	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd

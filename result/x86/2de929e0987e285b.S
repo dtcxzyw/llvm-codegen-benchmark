@@ -16,11 +16,11 @@ func000000000000000c:                   # @func000000000000000c
 	cmovel	%edi, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	testb	$1, %sil
-	movl	$32, %eax
-	cmovel	%edi, %eax
-	cmpq	$4, %rdx
+	cmpq	$2, %rdx
+	movl	$2, %eax
 	cmovbl	%edi, %eax
+	testb	$1, %sil
+	cmovel	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	shrq	$32, %rdx

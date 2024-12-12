@@ -10,7 +10,7 @@ entry:
   ret i64 %4
 }
 
-; 44 occurrences:
+; 57 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; coreutils-rs/optimized/1y438ox107i37q6b.ll
@@ -53,8 +53,21 @@ entry:
 ; tokio-rs/optimized/4mr1mvhll2ekuv31.ll
 ; tokio-rs/optimized/r9h5225tdo2hxm6.ll
 ; tree-sitter-rs/optimized/2nyb27tvwtmdn06o.ll
+; turborepo-rs/optimized/8atlatu7zsjescxq9jjfyqxjo.ll
+; turborepo-rs/optimized/allq2hqzkn1ywqvzl6k501g1q.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/3di65m17000bk7br774s5jqap.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/583y325aopre8a32cz1ntgg8y.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/ckiwzakufh7d1bhz9acxsspq9.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/e8miey85a4w6kj2eow2y7dsus.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -75,9 +88,11 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/colvarcomp_gpath.cpp.ll
 ; rust-analyzer-rs/optimized/5cv6fzh8luwt5r60.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -68,22 +68,26 @@ func0000000000000003:                   # @func0000000000000003
 	vfmv.v.f	v8, fa4
 	vfmerge.vfm	v8, v8, fa3, v0
 	ret
+.LCPI6_0:
+	.quad	0xc066800000000000              # double -180
+.LCPI6_1:
+	.quad	0x4066800000000000              # double 180
+func000000000000000a:                   # @func000000000000000a
+	lui	a0, %hi(.LCPI6_0)
+	fld	fa5, %lo(.LCPI6_0)(a0)
+	lui	a0, %hi(.LCPI6_1)
+	fld	fa4, %lo(.LCPI6_1)(a0)
+	fmv.d.x	fa3, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfle.vf	v0, v8, fa3
+	vfmv.v.f	v8, fa5
+	vfmerge.vfm	v8, v8, fa4, v0
+	ret
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vv	v0, v8, v8
 	fli.d	fa5, 0.5
 	fneg.d	fa4, fa5
-	vfmv.v.f	v8, fa4
-	vfmerge.vfm	v8, v8, fa5, v0
-	ret
-.LCPI7_0:
-	.quad	0x406fe00000000000              # double 255
-func000000000000000a:                   # @func000000000000000a
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
-	fli.d	fa4, 1.0
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfle.vf	v0, v8, fa4
 	vfmv.v.f	v8, fa4
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret

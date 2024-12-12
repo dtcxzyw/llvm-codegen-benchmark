@@ -15,7 +15,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = shl nuw i32 1, %0
@@ -33,7 +33,7 @@ entry:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/xarray.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = shl nuw nsw i32 1, %0
@@ -48,7 +48,7 @@ entry:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; wireshark/optimized/packet-obd-ii.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = or i32 %0, %1
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/frustum.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = shl nuw nsw i32 1, %0
@@ -73,7 +73,7 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = or i32 %0, %1

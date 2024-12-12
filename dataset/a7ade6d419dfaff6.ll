@@ -11,7 +11,7 @@ entry:
   ret i32 %3
 }
 
-; 80 occurrences:
+; 82 occurrences:
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/disasm.c.ll
 ; clamav/optimized/gif.c.ll
@@ -90,6 +90,8 @@ entry:
 ; wireshark/optimized/packet-wisun.c.ll
 ; z3/optimized/dl_finite_product_relation.cpp.ll
 ; z3/optimized/dl_sieve_relation.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind

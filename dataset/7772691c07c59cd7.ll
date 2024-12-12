@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -20,7 +20,6 @@
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; llvm/optimized/UnreachableBlockElim.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
@@ -32,7 +31,7 @@
 define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
-  %4 = select i1 %3, i32 100663296, i32 117440512
+  %4 = select i1 %3, i32 8, i32 0
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }

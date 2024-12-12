@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; cpython/optimized/mpdecimal.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -15,6 +15,7 @@
 ; linux/optimized/lifebook.ll
 ; llvm/optimized/InitPreprocessor.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
+; lvgl/optimized/lv_draw_rect.ll
 ; openjdk/optimized/rewriter.ll
 ; openjdk/optimized/verifier.ll
 ; slurm/optimized/hostlist.ll

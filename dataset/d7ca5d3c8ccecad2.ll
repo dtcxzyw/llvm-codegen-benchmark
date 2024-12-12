@@ -16,7 +16,7 @@
 define i8 @func0000000000000000(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = mul i8 %2, %0
+  %3 = mul i8 %0, %2
   ret i8 %3
 }
 

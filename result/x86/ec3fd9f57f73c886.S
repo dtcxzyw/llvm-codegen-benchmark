@@ -1,7 +1,7 @@
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	setl	%cl
+	cmpq	%rsi, %rdi
+	setg	%cl
 	testq	%rdi, %rdi
 	setle	%al
 	orb	%cl, %al

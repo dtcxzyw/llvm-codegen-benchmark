@@ -1,14 +1,13 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; llvm/optimized/GlobalMerge.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; oiio/optimized/printinfo.cpp.ll
-; opencv/optimized/motion_estimators.cpp.ll
-; opencv/optimized/nldiffusion_functions.cpp.ll
 ; php/optimized/string.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; yosys/optimized/equiv_mark.ll

@@ -1,45 +1,63 @@
-func00000000000003a1:                   # @func00000000000003a1
+func0000000000000601:                   # @func0000000000000601
+	imulq	$224, %rdx, %rax
+	leaq	88(%rsi,%rax), %rax
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
+func0000000000000661:                   # @func0000000000000661
+	imulq	$224, %rdx, %rax
+	leaq	8(%rsi,%rax), %rax
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
+func00000000000007e1:                   # @func00000000000007e1
 	leaq	(%rdx,%rdx,4), %rax
 	leaq	(%rdx,%rax,2), %rax
 	leaq	10(%rsi,%rax), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000003ac:                   # @func00000000000003ac
+func00000000000007ec:                   # @func00000000000007ec
 	leaq	(%rdx,%rdx,2), %rax
 	leaq	4(%rsi,%rax,2), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	leaq	(%rdx,%rdx,2), %rax
 	leaq	8(%rsi,%rax,8), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000304:                   # @func0000000000000304
+func0000000000000604:                   # @func0000000000000604
 	leaq	(%rdx,%rdx,2), %rax
-	leaq	4(%rsi,%rax,4), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	leaq	6(%rsi,%rax,2), %rax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func00000000000003a4:                   # @func00000000000003a4
+func0000000000000001:                   # @func0000000000000001
+	leaq	(%rdx,%rdx,8), %rax
+	leaq	48(%rsi,%rax,8), %rax
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
+func00000000000007e4:                   # @func00000000000007e4
 	imulq	$104, %rdx, %rax
 	leaq	8(%rsi,%rax), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	shlq	$3, %rdx
 	subq	%rdx, %rsi
 	addq	$8, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	leaq	(%rdx,%rdx,4), %rax
 	shlq	$4, %rax
 	leaq	264(%rsi,%rax), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

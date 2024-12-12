@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.2811879 = type { %union.Value.2811880, [1 x i32], i32 }
-%union.Value.2811880 = type { ptr }
+%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
+%union.Value.2923858 = type { ptr }
 
 ; 25 occurrences:
 ; abc/optimized/giaMf.c.ll
@@ -29,26 +29,39 @@
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1023
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
-  %7 = getelementptr nusw i32, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %0
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; luau/optimized/lvmexecute.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000068(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000070(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %struct.lua_TValue.2811879, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 16
-  %7 = getelementptr %struct.lua_TValue.2811879, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %1, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 60
+  %7 = getelementptr i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 1 occurrences:
+; luau/optimized/lvmexecute.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007c(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 255
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
+  %7 = getelementptr %struct.lua_TValue.2923857, ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -91,13 +104,26 @@ entry:
 ; postgres/optimized/tsvector.ll
 ; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000048(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000004c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4194302
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 2
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   %7 = getelementptr i16, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 1 occurrences:
+; icu/optimized/uresdata.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 268435455
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  %7 = getelementptr nusw i32, ptr %6, i64 %0
   ret ptr %7
 }
 

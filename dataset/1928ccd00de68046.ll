@@ -55,7 +55,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/area.ll
 ; gromacs/optimized/xvgr.cpp.ll
 ; llvm/optimized/FunctionAttrs.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -63,8 +64,8 @@ entry:
 define i32 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
-  %3 = select i1 %2, i32 212, i32 213
-  %4 = select i1 %0, i32 214, i32 %3
+  %3 = select i1 %2, i32 1, i32 -1
+  %4 = select i1 %0, i32 0, i32 %3
   ret i32 %4
 }
 

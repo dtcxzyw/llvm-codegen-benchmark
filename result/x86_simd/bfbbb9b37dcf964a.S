@@ -38,7 +38,7 @@
 	.byte	0                               # 0x0
 func000000000000000e:                   # @func000000000000000e
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq

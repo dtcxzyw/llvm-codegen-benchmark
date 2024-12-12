@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; cmake/optimized/archive_pathmatch.c.ll
 ; git/optimized/list-objects-filter.ll
 ; gromacs/optimized/poscalc.cpp.ll
@@ -18,6 +18,7 @@
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; opencv/optimized/loadsave.cpp.ll
+; openjdk/optimized/c1_LIRGenerator.ll
 ; openssl/optimized/openssl-bin-smime.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
@@ -30,32 +31,21 @@ entry:
   ret i32 %2
 }
 
-; 17 occurrences:
-; llvm/optimized/BitcodeReader.cpp.ll
-; llvm/optimized/CGCUDANV.cpp.ll
+; 7 occurrences:
 ; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGVTT.cpp.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/CoroSplit.cpp.ll
-; llvm/optimized/ExpandVariadics.cpp.ll
-; llvm/optimized/FunctionImport.cpp.ll
-; llvm/optimized/FunctionImportUtils.cpp.ll
-; llvm/optimized/GlobalOpt.cpp.ll
-; llvm/optimized/IRMover.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/LTOCodeGenerator.cpp.ll
-; llvm/optimized/LowerEmuTLS.cpp.ll
-; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %0, -832
-  %3 = icmp ult i32 %1, 2
-  %4 = select i1 %3, i32 %2, i32 %0
-  %5 = and i32 %4, -16
-  ret i32 %5
+  %2 = icmp ult i32 %1, 2
+  %.v = select i1 %2, i32 -832, i32 -16
+  %3 = and i32 %0, %.v
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

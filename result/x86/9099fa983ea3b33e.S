@@ -1,6 +1,10 @@
 func0000000000000004:                   # @func0000000000000004
-	leaq	1(%rdx), %rax
+	leaq	-1(%rdi), %rax
 	cmpb	$45, %sil
-	cmovneq	%rdi, %rax
-	decq	%rax
+	cmoveq	%rdx, %rax
+	retq
+func0000000000000104:                   # @func0000000000000104
+	leaq	-1(%rdi), %rax
+	cmpb	$-1, %sil
+	cmoveq	%rdx, %rax
 	retq

@@ -15,7 +15,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = add i64 %3, 32
   %5 = icmp ult i64 %4, 64
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

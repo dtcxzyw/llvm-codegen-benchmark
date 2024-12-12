@@ -24,7 +24,7 @@ entry:
   %3 = and i64 %2, 2251799813685247
   %4 = lshr i64 %1, 51
   %5 = add nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = and i64 %2, -8
   %4 = lshr i64 %1, 1
   %5 = add i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

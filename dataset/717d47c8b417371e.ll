@@ -1,6 +1,7 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; abseil-cpp/optimized/parse.cc.ll
+; boost/optimized/message.ll
 ; casadi/optimized/casadi_cli.cpp.ll
 ; cmake/optimized/cmListCommand.cxx.ll
 ; cmake/optimized/cmakemain.cxx.ll
@@ -47,11 +48,11 @@
 ; yosys/optimized/sim.ll
 ; yosys/optimized/smt2.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = ashr exact i64 %2, 2
-  %4 = getelementptr nusw double, ptr null, i64 %3
+  %4 = getelementptr nusw nuw double, ptr null, i64 %3
   ret ptr %4
 }
 

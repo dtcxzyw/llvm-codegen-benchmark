@@ -3,7 +3,7 @@
 ; linux/optimized/libata-core.ll
 ; qemu/optimized/block_nbd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32
   %3 = icmp ne i16 %2, 0
@@ -29,7 +29,7 @@ entry:
 ; openmpi/optimized/pml_cm_start.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -1024
   %3 = icmp eq i16 %2, -10240

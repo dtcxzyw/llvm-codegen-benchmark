@@ -34,9 +34,8 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; wireshark/optimized/byte_view_text.cpp.ll
 ; wireshark/optimized/packet_diagram.cpp.ll

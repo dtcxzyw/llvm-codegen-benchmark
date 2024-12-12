@@ -8,7 +8,7 @@
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000141(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %0, 252
   %3 = icmp eq i16 %2, 100

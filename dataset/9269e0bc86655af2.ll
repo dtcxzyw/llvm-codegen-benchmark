@@ -1,8 +1,10 @@
 
-; 65 occurrences:
+; 69 occurrences:
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/nvector_serial.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -35,6 +37,7 @@
 ; hermes/optimized/HermesBuiltin.cpp.ll
 ; hermes/optimized/IREval.cpp.ll
 ; hermes/optimized/Math.cpp.ll
+; icu/optimized/putil.ll
 ; llvm/optimized/FileUtilities.cpp.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -62,6 +65,7 @@
 ; quantlib/optimized/localvolsurface.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/enum.ll
+; ruby/optimized/nextafter.ll
 ; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
 ; sundials/optimized/nvector_serial.c.ll
 ; wasmedge/optimized/engine.cpp.ll
@@ -70,33 +74,6 @@ define i1 @func0000000000000088(double %0, double %1) #0 {
 entry:
   %2 = fcmp oeq double %1, 0x7FF0000000000000
   %3 = fcmp oeq double %0, 0x7FF0000000000000
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 3 occurrences:
-; proj/optimized/concatenatedoperation.cpp.ll
-; quantlib/optimized/hestonprocess.ll
-; ruby/optimized/nextafter.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(double %0, double %1) #0 {
-entry:
-  %2 = fcmp ogt double %1, 0.000000e+00
-  %3 = fcmp oeq double %0, 0x7FEFFFFFFFFFFFFF
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 4 occurrences:
-; arrow/optimized/tdigest.cc.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; quantlib/optimized/qdplusamericanengine.ll
-; ruby/optimized/nextafter.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(double %0, double %1) #0 {
-entry:
-  %2 = fcmp olt double %1, 0.000000e+00
-  %3 = fcmp oeq double %0, 0xFFEFFFFFFFFFFFFF
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -113,7 +90,13 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 17 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; graphviz/optimized/ellipse.c.ll
 ; ipopt/optimized/IpCGPenaltyLSAcceptor.ll
 ; lua/optimized/lvm.ll
@@ -134,7 +117,7 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; gromacs/optimized/dgemv.cpp.ll
 ; grpc/optimized/flow_control.cc.ll
@@ -143,8 +126,6 @@ entry:
 ; opencv/optimized/trackerKCF.cpp.ll
 ; openjdk/optimized/DrawParallelogram.ll
 ; openusd/optimized/rotation.cpp.ll
-; proj/optimized/aasincos.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/hestonprocess.ll
@@ -156,17 +137,6 @@ define i1 @func0000000000000022(double %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 3.500000e-01
   %3 = fcmp olt double %0, 0x3FCFAEE41E6A7498
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; yoga/optimized/PixelGrid.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002e(double %0, double %1) #0 {
-entry:
-  %2 = fcmp olt double %1, 1.000000e-04
-  %3 = fcmp ord double %0, 0.000000e+00
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -349,11 +319,12 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/get_turn_info.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/local_optimization.cpp.ll
 ; opencv/optimized/resize.cpp.ll
-; osqp/optimized/amd_info.c.ll
 ; quantlib/optimized/bivariatenormaldistribution.ll
 ; quantlib/optimized/noarbsabr.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
@@ -367,8 +338,7 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; proj/optimized/coordinateoperationfactory.cpp.ll
+; 3 occurrences:
 ; quantlib/optimized/noarbsabr.ll
 ; quantlib/optimized/qdplusamericanengine.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
@@ -407,6 +377,18 @@ entry:
 }
 
 ; 2 occurrences:
+; proj/optimized/concatenatedoperation.cpp.ll
+; quantlib/optimized/hestonprocess.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ogt double %1, 0.000000e+00
+  %3 = fcmp oeq double %0, 0.000000e+00
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; quantlib/optimized/digitalcoupon.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
@@ -414,6 +396,19 @@ define i1 @func0000000000000078(double %0, double %1) #0 {
 entry:
   %2 = fcmp une double %1, 0x47EFFFFFE0000000
   %3 = fcmp oeq double %0, 0x47EFFFFFE0000000
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 3 occurrences:
+; arrow/optimized/tdigest.cc.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; quantlib/optimized/qdplusamericanengine.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(double %0, double %1) #0 {
+entry:
+  %2 = fcmp olt double %1, 0.000000e+00
+  %3 = fcmp oeq double %0, 0.000000e+00
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -454,6 +449,41 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; proj/optimized/geodesic.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a8(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ole double %1, 0.000000e+00
+  %3 = fcmp oeq double %0, 0.000000e+00
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 12 occurrences:
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; hermes/optimized/DateUtil.cpp.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000066(double %0, double %1) #0 {
+entry:
+  %2 = fcmp one double %1, 0x7FF0000000000000
+  %3 = fcmp one double %0, 0x7FF0000000000000
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; hdf5/optimized/h5diff_array.c.ll
@@ -473,25 +503,6 @@ define i1 @func00000000000000ce(double %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %1, 0.000000e+00
   %3 = fcmp ord double %0, 0.000000e+00
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 9 occurrences:
-; hermes/optimized/DateUtil.cpp.ll
-; typst-rs/optimized/1ru1rhojhbz2vfey.ll
-; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
-; typst-rs/optimized/3rk2ctuzbghb17s4.ll
-; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
-; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000066(double %0, double %1) #0 {
-entry:
-  %2 = fcmp one double %1, 0x7FF0000000000000
-  %3 = fcmp one double %0, 0x7FF0000000000000
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -528,7 +539,7 @@ entry:
 define i1 @func0000000000000065(double %0, double %1) #0 {
 entry:
   %2 = fcmp one double %1, 0x7FF0000000000000
-  %3 = fcmp ugt double %0, 0xC3E0000000000000
+  %3 = fcmp ugt double %0, -1.000000e+00
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -616,17 +627,6 @@ entry:
 }
 
 ; 1 occurrences:
-; openspiel/optimized/tabular_best_response_mdp.cc.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008e(double %0, double %1) #0 {
-entry:
-  %2 = fcmp oeq double %1, 0x7FF0000000000000
-  %3 = fcmp ord double %0, 0.000000e+00
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; postgres/optimized/costsize.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000045(double %0, double %1) #0 {
@@ -655,17 +655,6 @@ define i1 @func00000000000000a2(double %0, double %1) #0 {
 entry:
   %2 = fcmp ole double %1, 0x3EB0C6F7A0B5ED8D
   %3 = fcmp olt double %0, 0.000000e+00
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; proj/optimized/geodesic.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a8(double %0, double %1) #0 {
-entry:
-  %2 = fcmp ole double %1, 0.000000e+00
-  %3 = fcmp oeq double %0, 0.000000e+00
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -710,17 +699,6 @@ define i1 @func00000000000000e1(double %0, double %1) #0 {
 entry:
   %2 = fcmp ord double %1, 0.000000e+00
   %3 = fcmp uno double %0, 0.000000e+00
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/odometry.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000de(double %0, double %1) #0 {
-entry:
-  %2 = fcmp uge double %1, 0x3EB0C6F7A0B5ED8D
-  %3 = fcmp ord double %0, 0.000000e+00
   %4 = and i1 %3, %2
   ret i1 %4
 }

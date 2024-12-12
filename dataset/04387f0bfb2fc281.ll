@@ -1,4 +1,17 @@
 
+; 2 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; mitsuba3/optimized/cpuinfo.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 61
+  %5 = or disjoint i64 %1, %4
+  %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
 ; 5 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -11,19 +24,17 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 48
   %5 = or disjoint i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; hermes/optimized/LowerBuiltinCalls.cpp.ll
 ; linux/optimized/generic.ll
-; linux/optimized/head64.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/virtio_pci_modern.ll
@@ -49,6 +60,18 @@ entry:
   %4 = shl nuw i64 %3, 32
   %5 = or disjoint i64 %4, %1
   %6 = add i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; flac/optimized/foreign_metadata.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw i64 %3, 32
+  %5 = or disjoint i64 %4, %1
+  %6 = add nuw i64 %5, %0
   ret i64 %6
 }
 
@@ -86,7 +109,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 30
   %5 = or i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

@@ -17,12 +17,6 @@ func000000000000000c:                   # @func000000000000000c
 	andl	%esi, %edi
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpl	$2, %edx
-	setae	%al
-	andl	%esi, %edi
-	andb	%dil, %al
-	retq
 func0000000000000004:                   # @func0000000000000004
 	cmpl	$8, %edx
 	setb	%al

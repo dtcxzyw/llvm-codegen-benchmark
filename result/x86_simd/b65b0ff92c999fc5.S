@@ -1,11 +1,11 @@
 .LCPI0_0:
-	.long	1073741952                      # 0x40000080
+	.long	1                               # 0x1
 .LCPI0_1:
-	.long	1073741688                      # 0x3fffff78
+	.long	2                               # 0x2
 .LCPI0_2:
-	.long	1073741823                      # 0x3fffffff
-func0000000000000011:                   # @func0000000000000011
-	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [1073741952,1073741952,1073741952,1073741952,1073741952,1073741952,1073741952,1073741952]
+	.long	7                               # 0x7
+func0000000000000021:                   # @func0000000000000021
+	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
 	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm1, %ymm2 # ymm2 = ymm2 | (ymm1 & mem)
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm2 {%k1}

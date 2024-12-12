@@ -1,15 +1,15 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	orb	%sil, %dil
 	sete	%al
 	retq
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	testb	%sil, %sil
 	setne	%cl
 	testb	%dil, %dil
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	testb	%sil, %sil
 	setne	%cl
 	testb	%dil, %dil

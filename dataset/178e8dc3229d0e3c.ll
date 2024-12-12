@@ -11,7 +11,7 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -20,7 +20,6 @@ entry:
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/SmallPtrSet.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; xgboost/optimized/c_api.cc.ll
 ; z3/optimized/euf_proof.cpp.ll

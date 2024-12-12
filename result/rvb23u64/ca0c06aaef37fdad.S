@@ -1,4 +1,4 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	addw	a1, a1, a2
 	lui	a2, 524288
 	addiw	a0, a0, 8
@@ -14,4 +14,10 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a1, a1, 16
 	addiw	a0, a0, -16
 	czero.nez	a0, a0, a1
+	ret
+func0000000000000026:                   # @func0000000000000026
+	add	a1, a1, a2
+	addiw	a0, a0, 1
+	sraiw	a1, a1, 31
+	and	a0, a0, a1
 	ret

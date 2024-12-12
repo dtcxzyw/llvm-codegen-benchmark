@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; bullet3/optimized/btGjkPairDetector.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; openusd/optimized/composeSite.cpp.ll

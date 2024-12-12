@@ -6,7 +6,7 @@
 ; darktable/optimized/png.c.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0) #0 {
+define i1 @func00000000000000e1(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 3
   %2 = icmp eq i32 %1, 0
@@ -33,10 +33,11 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; darktable/optimized/introspection_liquify.c.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 3
   %2 = and i32 %1, 8388608
@@ -50,24 +51,22 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 7
-  %2 = and i32 %1, 7
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = and i32 %0, 7
+  %2 = icmp eq i32 %1, 1
+  ret i1 %2
 }
 
 ; 2 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0) #0 {
+define i1 @func0000000000000081(i32 %0) #0 {
 entry:
-  %1 = add nuw i32 %0, 1
-  %2 = and i32 %1, 7
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = and i32 %0, 7
+  %2 = icmp eq i32 %1, 7
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

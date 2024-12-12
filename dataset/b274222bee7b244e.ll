@@ -6,7 +6,7 @@
 define i16 @func00000000000000a0(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw i32 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   %5 = trunc nuw i32 %1 to i16
   %6 = add i16 %4, %5
   ret i16 %6
@@ -20,7 +20,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   %5 = trunc i32 %1 to i16
   %6 = add i16 %4, %5
   ret i16 %6
@@ -32,7 +32,7 @@ entry:
 define i16 @func0000000000000080(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw i32 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   %5 = trunc i32 %1 to i16
   %6 = add i16 %4, %5
   ret i16 %6

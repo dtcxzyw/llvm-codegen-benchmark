@@ -1,8 +1,10 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; flac/optimized/encode.c.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/face_position_cache.cpp.ll

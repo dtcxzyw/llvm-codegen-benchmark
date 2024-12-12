@@ -1,6 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
 	vcvtudq2ps	%ymm1, %ymm1
-	vcmpeqps	%ymm0, %ymm1, %k0
+	vcmpeqps	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

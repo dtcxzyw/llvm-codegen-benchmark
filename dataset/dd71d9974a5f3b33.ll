@@ -1,6 +1,7 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll

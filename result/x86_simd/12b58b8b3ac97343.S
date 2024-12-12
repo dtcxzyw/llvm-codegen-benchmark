@@ -1,15 +1,15 @@
 .LCPI0_0:
-	.short	31                              # 0x1f
-	.short	31                              # 0x1f
-	.short	31                              # 0x1f
-	.short	31                              # 0x1f
-	.short	31                              # 0x1f
-	.short	31                              # 0x1f
-	.short	31                              # 0x1f
-	.short	31                              # 0x1f
+	.short	7936                            # 0x1f00
+	.short	7936                            # 0x1f00
+	.short	7936                            # 0x1f00
+	.short	7936                            # 0x1f00
+	.short	7936                            # 0x1f00
+	.short	7936                            # 0x1f00
+	.short	7936                            # 0x1f00
+	.short	7936                            # 0x1f00
 .LCPI0_1:
-	.short	31                              # 0x1f
-	.short	31                              # 0x1f
+	.short	7936                            # 0x1f00
+	.short	7936                            # 0x1f00
 func0000000000000001:                   # @func0000000000000001
 	vpxord	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vptestmd	%ymm0, %ymm0, %k1

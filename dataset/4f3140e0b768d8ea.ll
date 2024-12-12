@@ -9,7 +9,7 @@ entry:
   ret i1 %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/mioSop.c.ll
 ; entt/optimized/registry.cpp.ll
 ; entt/optimized/view.cpp.ll
@@ -17,6 +17,7 @@ entry:
 ; libquic/optimized/quic_protocol.cc.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/selection.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; openjdk/optimized/objArrayKlass.ll
 ; openjdk/optimized/shenandoahBarrierSet.ll
 ; openjdk/optimized/shenandoahCodeRoots.ll

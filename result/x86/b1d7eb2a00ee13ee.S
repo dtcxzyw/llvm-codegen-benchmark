@@ -1,3 +1,9 @@
+func0000000000000060:                   # @func0000000000000060
+	leal	(%rdi,%rsi), %ecx
+	cmpl	$4, %edi
+	leal	-7(%rdi,%rsi), %eax
+	cmovll	%ecx, %eax
+	retq
 func0000000000000065:                   # @func0000000000000065
 	xorl	%eax, %eax
 	testl	%esi, %esi
@@ -19,18 +25,6 @@ func00000000000000c5:                   # @func00000000000000c5
 	setne	%al
 	addl	%edi, %esi
 	leal	(%rsi,%rax,4), %eax
-	retq
-func0000000000000060:                   # @func0000000000000060
-	leal	(%rdi,%rsi), %ecx
-	cmpl	$50, %esi
-	leal	100(%rdi,%rsi), %eax
-	cmovgel	%ecx, %eax
-	retq
-func0000000000000085:                   # @func0000000000000085
-	cmpl	$161, %esi
-	leal	65438(%rdi,%rsi), %ecx
-	leal	65472(%rdi,%rsi), %eax
-	cmovael	%ecx, %eax
 	retq
 func0000000000000080:                   # @func0000000000000080
 	xorl	%eax, %eax

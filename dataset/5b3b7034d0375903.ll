@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 94 occurrences:
 ; cmake/optimized/lzma2_decoder.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
 ; cpython/optimized/unicodedata.ll
@@ -9,7 +9,6 @@
 ; libevent/optimized/event_tagging.c.ll
 ; libpng/optimized/pngwtran.c.ll
 ; libquic/optimized/hpack_input_stream.cc.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
@@ -103,7 +102,7 @@ entry:
   ret i32 %3
 }
 
-; 199 occurrences:
+; 201 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -114,7 +113,6 @@ entry:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -169,8 +167,10 @@ entry:
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/inet.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
@@ -210,6 +210,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-obj_dat.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
+; openusd/optimized/restoration.c.ll
 ; php/optimized/hash_whirlpool.ll
 ; postgres/optimized/base64.ll
 ; postgres/optimized/base64_shlib.ll
@@ -320,6 +321,8 @@ entry:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/gzip.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/disasm.c.ll
 ; clamav/optimized/kwajd.c.ll
@@ -351,7 +354,6 @@ entry:
 ; linux/optimized/cistpl.ll
 ; linux/optimized/deflate.ll
 ; linux/optimized/ehci-dbgp.ll
-; linux/optimized/hwsleep.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_gmbus.ll
@@ -377,7 +379,6 @@ entry:
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nix/optimized/util.ll
@@ -510,7 +511,6 @@ entry:
 
 ; 19 occurrences:
 ; abc/optimized/ifDec16.c.ll
-; linux/optimized/rsmisc.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -523,6 +523,7 @@ entry:
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
 ; llvm/optimized/X86InstrMappingEmitter.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; oiio/optimized/DPXHeader.cpp.ll
 ; openjdk/optimized/compilerDirectives.ll
 ; openjdk/optimized/jcphuff.ll

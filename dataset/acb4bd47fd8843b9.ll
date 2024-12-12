@@ -64,13 +64,15 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; git/optimized/strbuf.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; linux/optimized/tdls.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; wireshark/optimized/packet-cops.c.ll
 ; wireshark/optimized/packet-epl.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i8 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -110,6 +112,18 @@ define i1 @func000000000000000a(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = icmp sgt i8 %0, -1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/LoopVectorizationLegality.cpp.ll
+; llvm/optimized/SemaBoundsSafety.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ult i8 %2, 5
+  %4 = or i1 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }

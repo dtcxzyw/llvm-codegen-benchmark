@@ -3,14 +3,14 @@ func0000000000000008:                   # @func0000000000000008
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
-	slli	a2, a2, 33
-	srli	a2, a2, 33
+func000000000000000a:                   # @func000000000000000a
+	zext.w	a2, a2
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
-	zext.w	a2, a2
+func000000000000000f:                   # @func000000000000000f
+	slli	a2, a2, 43
+	srli	a2, a2, 43
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

@@ -27,7 +27,7 @@ entry:
 define i16 @func00000000000000fe(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 100
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   %6 = trunc nuw i32 %5 to i16
   ret i16 %6
@@ -40,7 +40,7 @@ entry:
 define i16 @func00000000000000ff(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 10
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   %6 = trunc nuw nsw i32 %5 to i16
   ret i16 %6

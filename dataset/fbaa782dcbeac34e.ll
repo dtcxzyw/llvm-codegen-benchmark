@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
@@ -28,6 +28,7 @@
 ; tev/optimized/Common.cpp.ll
 ; velox/optimized/Base64.cpp.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:

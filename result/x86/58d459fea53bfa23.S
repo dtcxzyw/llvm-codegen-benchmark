@@ -6,7 +6,8 @@ func0000000000000008:                   # @func0000000000000008
 	leal	8(,%rdi,8), %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	leal	-128(,%rdi,8), %eax
+	shll	$4, %edi
+	leal	-256(%rdi), %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	leal	-32(,%rdi,8), %eax

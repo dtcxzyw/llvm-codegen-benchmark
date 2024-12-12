@@ -1,11 +1,10 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f64_div.ll
 ; z3/optimized/arith_eq_solver.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; z3/optimized/factor_rewriter.cpp.ll
@@ -64,7 +63,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, -4
   %5 = add i64 %4, 4
   ret i64 %5
@@ -76,7 +75,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, -4
   %5 = add i64 %4, 516
   ret i64 %5

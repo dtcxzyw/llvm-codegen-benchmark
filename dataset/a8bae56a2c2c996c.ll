@@ -12,8 +12,8 @@ entry:
 }
 
 ; 3 occurrences:
-; casadi/optimized/sparsity.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/rdfa_merge.cpp.ll
 ; openvdb/optimized/AttributeSet.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, ptr %2) #0 {
@@ -52,41 +52,43 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 3
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 5 occurrences:
+; 8 occurrences:
 ; coreutils-rs/optimized/aci7fhqxjjsavmn.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
+; zed-rs/optimized/0alphtuk5g34mh3kiiec4rpgf.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nuw i64 %3, %1
   %5 = lshr i64 %4, 5
-  %6 = getelementptr nusw [32 x i8], ptr %0, i64 %5
+  %6 = getelementptr nusw nuw [32 x i8], ptr %0, i64 %5
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openusd/optimized/clipSet.cpp.ll
-; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

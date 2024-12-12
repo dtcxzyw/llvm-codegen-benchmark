@@ -15,10 +15,12 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_rps.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:

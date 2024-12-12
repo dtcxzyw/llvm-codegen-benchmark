@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; coreutils-rs/optimized/4u84izbtaxbdqvdv.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
@@ -10,6 +10,8 @@
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; wasmtime-rs/optimized/32ocpkosjxmve1yg.ll
 ; zxing/optimized/QRDetector.cpp.ll

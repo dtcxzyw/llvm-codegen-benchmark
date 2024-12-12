@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/vlog_config.cc.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -28,15 +28,14 @@
 ; php/optimized/phar.ll
 ; protobuf/optimized/code_generator.cc.ll
 ; protobuf/optimized/file.cc.ll
-; ruby/optimized/random.ll
 ; yalantinglibs/optimized/helpers.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 1
-  %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %2 = add i64 %0, -3
+  %3 = icmp eq i32 %1, 2
+  %4 = select i1 %3, i64 %2, i64 %0
   ret i64 %4
 }
 
@@ -48,7 +47,7 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i64 %0, 4
   %3 = icmp eq i32 %1, -1
@@ -61,7 +60,7 @@ entry:
 ; openjdk/optimized/zGeneration.ll
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, 2
   %3 = icmp eq i32 %1, 2
@@ -69,8 +68,33 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; clamav/optimized/unicode.cpp.ll
+; 3 occurrences:
+; boost/optimized/area.ll
+; diesel-rs/optimized/2zzzvc1em6im74h3.ll
+; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000026(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i64 %0, 8
+  %3 = icmp slt i32 %1, 0
+  %4 = select i1 %3, i64 %2, i64 %0
+  ret i64 %4
+}
+
+; 3 occurrences:
+; boost/optimized/numeric.ll
+; cpython/optimized/socketmodule.ll
+; linux/optimized/intel_execlists_submission.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add i64 %0, -25769803776
+  %3 = icmp sgt i32 %1, 15
+  %4 = select i1 %3, i64 %2, i64 %0
+  ret i64 %4
+}
+
+; 3 occurrences:
 ; hdf5/optimized/H5Fsuper.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; linux/optimized/kdebugfs.ll
@@ -86,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003c(i64 %0, i32 %1) #0 {
+define i64 @func000000000000006c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, 24
   %.not = icmp eq i32 %1, 0
@@ -97,34 +121,10 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i64 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i64 %0, 4
   %3 = icmp sgt i32 %1, 19
-  %4 = select i1 %3, i64 %2, i64 %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; diesel-rs/optimized/2zzzvc1em6im74h3.ll
-; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i64 %0, 100
-  %3 = icmp slt i32 %1, 0
-  %4 = select i1 %3, i64 %2, i64 %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; cpython/optimized/socketmodule.ll
-; linux/optimized/intel_execlists_submission.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add i64 %0, 4294967248
-  %3 = icmp sgt i32 %1, 5
   %4 = select i1 %3, i64 %2, i64 %0
   ret i64 %4
 }

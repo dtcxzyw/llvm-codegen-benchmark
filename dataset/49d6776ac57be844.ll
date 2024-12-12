@@ -196,15 +196,65 @@ define i64 @func000000000000001e(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = shl i64 %0, 3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = sub i64 %3, %5
   %7 = and i64 %6, -8
   ret i64 %7
 }
 
-; 48 occurrences:
+; 3 occurrences:
+; gromacs/optimized/lifetime.cpp.ll
+; gromacs/optimized/selectioncollection.cpp.ll
+; llvm/optimized/LoopPass.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = shl i64 %0, 3
+  %5 = add i64 %1, %4
+  %6 = sub i64 %3, %5
+  %7 = and i64 %6, -8
+  ret i64 %7
+}
+
+; 2 occurrences:
+; nix/optimized/outputs-spec.ll
+; nix/optimized/path.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000013(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = shl i64 %0, 3
+  %5 = add i64 %1, %4
+  %6 = sub i64 %3, %5
+  %7 = and i64 %6, -8
+  ret i64 %7
+}
+
+; 10 occurrences:
+; arrow/optimized/expression.cc.ll
+; hyperscan/optimized/ng_violet.cpp.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; hyperscan/optimized/rose_build_compile.cpp.ll
+; hyperscan/optimized/rose_build_infix.cpp.ll
+; hyperscan/optimized/rose_build_lookaround.cpp.ll
+; hyperscan/optimized/rose_build_merge.cpp.ll
+; hyperscan/optimized/rose_build_misc.cpp.ll
+; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
+; hyperscan/optimized/rose_in_util.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = shl i64 %0, 2
+  %5 = add i64 %1, %4
+  %6 = sub i64 %3, %5
+  %7 = and i64 %6, -4
+  ret i64 %7
+}
+
+; 46 occurrences:
 ; eastl/optimized/TestString.cpp.ll
-; hermes/optimized/StringPrimitive.cpp.ll
 ; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
 ; hyperscan/optimized/asserts.cpp.ll
 ; hyperscan/optimized/buildstate.cpp.ll
@@ -250,66 +300,14 @@ entry:
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; hyperscan/optimized/smallwrite_build.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
-; pbrt-v4/optimized/string.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = shl i64 %0, 1
-  %5 = add i64 %4, %1
+  %4 = shl i64 %0, 4
+  %5 = add i64 %1, %4
   %6 = sub i64 %3, %5
-  %7 = and i64 %6, -2
-  ret i64 %7
-}
-
-; 3 occurrences:
-; gromacs/optimized/lifetime.cpp.ll
-; gromacs/optimized/selectioncollection.cpp.ll
-; llvm/optimized/LoopPass.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = shl i64 %0, 3
-  %5 = add i64 %4, %1
-  %6 = sub i64 %3, %5
-  %7 = and i64 %6, -8
-  ret i64 %7
-}
-
-; 2 occurrences:
-; nix/optimized/outputs-spec.ll
-; nix/optimized/path.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = shl i64 %0, 3
-  %5 = add i64 %4, %1
-  %6 = sub i64 %3, %5
-  %7 = and i64 %6, -8
-  ret i64 %7
-}
-
-; 10 occurrences:
-; arrow/optimized/expression.cc.ll
-; hyperscan/optimized/ng_violet.cpp.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/rose_build_compile.cpp.ll
-; hyperscan/optimized/rose_build_infix.cpp.ll
-; hyperscan/optimized/rose_build_lookaround.cpp.ll
-; hyperscan/optimized/rose_build_merge.cpp.ll
-; hyperscan/optimized/rose_build_misc.cpp.ll
-; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; hyperscan/optimized/rose_in_util.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = shl i64 %0, 2
-  %5 = add i64 %4, %1
-  %6 = sub i64 %3, %5
-  %7 = and i64 %6, -4
+  %7 = and i64 %6, -16
   ret i64 %7
 }
 

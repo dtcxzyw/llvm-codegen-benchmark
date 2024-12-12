@@ -1,27 +1,4 @@
 
-; 1 occurrences:
-; ruby/optimized/japanese.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000038(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %0, %1
-  %3 = icmp ugt i32 %2, 254
-  %4 = select i1 %3, i8 -96, i8 -97
-  ret i8 %4
-}
-
-; 2 occurrences:
-; openspiel/optimized/is_mcts.cc.ll
-; re2/optimized/regexp.cc.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000034(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %0, %1
-  %3 = icmp ult i32 %2, 16
-  %4 = select i1 %3, i8 -128, i8 -2
-  ret i8 %4
-}
-
 ; 3 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -35,7 +12,7 @@ entry:
   ret i8 %4
 }
 
-; 87 occurrences:
+; 85 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; lief/optimized/File.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
@@ -61,8 +38,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -124,7 +99,7 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = icmp slt i32 %2, 1
@@ -148,10 +123,10 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/pngdetail.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
-  %3 = icmp ult i32 %2, 240
+  %3 = icmp samesign ult i32 %2, 240
   %4 = select i1 %3, i8 61, i8 35
   ret i8 %4
 }
@@ -170,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i8 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = icmp sgt i32 %2, 0
@@ -181,10 +156,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/gss_generic_token.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
-  %3 = icmp ult i32 %2, 16777216
+  %3 = icmp samesign ult i32 %2, 16777216
   %4 = select i1 %3, i8 -125, i8 -124
   ret i8 %4
 }

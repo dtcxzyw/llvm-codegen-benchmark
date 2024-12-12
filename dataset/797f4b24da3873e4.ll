@@ -12,10 +12,10 @@
 ; postgres/optimized/pg_dump_sort.ll
 ; ruby/optimized/re.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -27,7 +27,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = sub nsw i32 %2, %0
@@ -39,17 +39,17 @@ entry:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = sub nsw i32 %2, %0

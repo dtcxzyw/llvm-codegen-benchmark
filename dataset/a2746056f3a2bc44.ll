@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/jitallocator.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 2
-  %4 = icmp ult i32 %1, 193
-  %5 = select i1 %4, i1 %3, i1 false
-  %6 = select i1 %5, i32 %0, i32 64
-  ret i32 %6
-}
-
 ; 8 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; gromacs/optimized/dorml2.cpp.ll
@@ -21,7 +9,7 @@ entry:
 ; openjdk/optimized/loopnode.ll
 ; openssl/optimized/ssl_test-bin-ssl_test.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -41,7 +29,7 @@ entry:
 ; wireshark/optimized/packet-usbip.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -55,7 +43,7 @@ entry:
 ; wireshark/optimized/decode_as_model.cpp.ll
 ; wireshark/optimized/voip_calls_info_model.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
   %4 = icmp sgt i32 %1, -1
@@ -67,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/FunctionSpecialization.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %1, 1
@@ -79,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = icmp slt i32 %1, 0
@@ -91,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SampleProfileProbe.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ult i32 %1, 8192
@@ -101,21 +89,9 @@ entry:
 }
 
 ; 1 occurrences:
-; postgres/optimized/xlogprefetcher.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000ac(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp sgt i32 %2, 0
-  %4 = icmp ne i32 %1, 0
-  %5 = select i1 %4, i1 %3, i1 false
-  %6 = select i1 %5, i32 %0, i32 2
-  ret i32 %6
-}
-
-; 1 occurrences:
 ; icu/optimized/number_formatimpl.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 2
   %4 = icmp eq i32 %1, 0

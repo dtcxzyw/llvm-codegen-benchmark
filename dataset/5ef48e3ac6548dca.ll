@@ -13,7 +13,7 @@ define i64 @func0000000000000039(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = or disjoint i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = and i32 %5, 63
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
@@ -26,7 +26,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %1, %0
+  %3 = add i32 %0, %1
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
   ret i64 %5

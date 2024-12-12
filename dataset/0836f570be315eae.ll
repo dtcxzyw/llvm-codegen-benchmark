@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %.neg = add i64 %0, 1
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000321(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %.neg = add i64 %0, 1
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/hdrinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000007a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %.neg = add i64 %0, 1
@@ -80,9 +80,21 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 6
+  %3 = sub i64 %2, %0
+  %4 = add i64 %3, 7
+  %5 = icmp ult i64 %4, 8
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/drm_edid.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000358(i64 %0, i64 %1) #0 {
+define i1 @func00000000000006a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = sub nsw i64 %2, %0

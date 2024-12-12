@@ -1,13 +1,32 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	andi	a1, a1, 255
 	li	a3, 4
 	beq	a1, a3, .LBB0_2
 	addi	a0, a2, 2
 .LBB0_2:                                # %entry
 	ret
-func0000000000000026:                   # @func0000000000000026
-	slli	a1, a1, 56
-	bltz	a1, .LBB1_2
-	addi	a0, a2, 8
+func0000000000000041:                   # @func0000000000000041
+	andi	a1, a1, 255
+	beqz	a1, .LBB1_2
+	addi	a0, a2, -10
 .LBB1_2:                                # %entry
+	ret
+func0000000000000001:                   # @func0000000000000001
+	andi	a1, a1, 255
+	li	a3, 34
+	beq	a1, a3, .LBB2_2
+	addi	a0, a2, 1
+.LBB2_2:                                # %entry
+	ret
+func0000000000000066:                   # @func0000000000000066
+	slli	a1, a1, 56
+	bltz	a1, .LBB3_2
+	addi	a0, a2, 8
+.LBB3_2:                                # %entry
+	ret
+func0000000000000046:                   # @func0000000000000046
+	slli	a1, a1, 56
+	bltz	a1, .LBB4_2
+	addi	a0, a2, -128
+.LBB4_2:                                # %entry
 	ret

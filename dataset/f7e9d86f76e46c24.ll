@@ -1,5 +1,5 @@
 
-%"struct.std::pair.28.2486663" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
 
 ; 32 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/gro.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/iov_iter.ll
@@ -34,6 +33,7 @@
 ; ruby/optimized/util.ll
 ; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
@@ -43,7 +43,7 @@ entry:
   ret i64 %4
 }
 
-; 364 occurrences:
+; 368 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; arrow/optimized/expression.cc.ll
@@ -83,13 +83,16 @@ entry:
 ; hermes/optimized/Runtime.cpp.ll
 ; hermes/optimized/Statistic.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
+; hyperscan/optimized/dfa_min.cpp.ll
 ; hyperscan/optimized/fdr.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/ng_find_matches.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; hyperscan/optimized/ng_misc_opt.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
+; hyperscan/optimized/ng_squash.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -399,6 +402,7 @@ entry:
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zdict.c.ll
@@ -409,10 +413,10 @@ entry:
 ; zstd/optimized/zstd_ldm.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = getelementptr nusw %"struct.std::pair.28.2486663", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.std::pair.28.2602107", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

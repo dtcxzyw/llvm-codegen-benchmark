@@ -44,4 +44,15 @@ entry:
   ret i32 %2
 }
 
+; 2 occurrences:
+; abseil-cpp/optimized/demangle.cc.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0) #0 {
+entry:
+  %1 = ashr i32 %0, 6
+  %2 = and i32 %1, -4
+  ret i32 %2
+}
+
 attributes #0 = { nounwind }

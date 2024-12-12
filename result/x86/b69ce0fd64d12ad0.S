@@ -1,11 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
-	testb	$1, %sil
-	movl	$1024, %eax                     # imm = 0x400
-	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
-	sete	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
@@ -22,6 +15,6 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq

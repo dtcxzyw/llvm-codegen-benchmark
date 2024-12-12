@@ -5,7 +5,7 @@
 ; nuttx/optimized/lib_hexdumpstream.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1, i32 %2) #0 {
+define i8 @func0000000000000024(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i8
   %4 = icmp ult i8 %3, -96

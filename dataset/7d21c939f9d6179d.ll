@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; imgui/optimized/imgui_widgets.cpp.ll
+; 3 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
@@ -8,7 +7,7 @@
 define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16742639
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

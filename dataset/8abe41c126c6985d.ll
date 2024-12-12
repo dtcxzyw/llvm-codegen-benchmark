@@ -16,7 +16,7 @@ entry:
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = icmp slt i32 %2, 1
@@ -24,16 +24,17 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; openusd/optimized/rotation.cpp.ll
 ; stb/optimized/stb_c_lexer.c.ll
 ; stb/optimized/stb_include.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
-  %3 = icmp eq i32 %2, 23
-  %4 = select i1 %3, i64 2, i64 1
+  %3 = icmp eq i32 %2, -1
+  %4 = select i1 %3, i64 7, i64 8
   ret i64 %4
 }
 
@@ -64,10 +65,10 @@ entry:
 ; linux/optimized/aspm.ll
 ; redis/optimized/networking.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, %1
-  %3 = icmp ult i32 %2, 1048
+  %3 = icmp samesign ult i32 %2, 1048
   %4 = select i1 %3, i64 1023, i64 32767
   ret i64 %4
 }

@@ -1,21 +1,22 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; abc/optimized/fxuCreate.c.ll
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; entt/optimized/meta_data.cpp.ll
+; freetype/optimized/type1.c.ll
 ; libphonenumber/optimized/phonenumberutil_test.cc.ll
 ; lief/optimized/constant_time.c.ll
-; linux/optimized/direct_write.ll
-; linux/optimized/gss_krb5_seal.ll
 ; linux/optimized/gss_krb5_wrap.ll
 ; linux/optimized/hdmi_chmap.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/uhci-hcd.ll
 ; llvm/optimized/TextStub.cpp.ll
 ; llvm/optimized/TextStubV5.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; nuklear/optimized/unity.c.ll

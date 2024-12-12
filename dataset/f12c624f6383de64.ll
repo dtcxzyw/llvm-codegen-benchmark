@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; folly/optimized/AsyncFileWriter.cpp.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
@@ -13,7 +13,6 @@
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ObjectToString.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
 ; folly/optimized/SSLOptions.cpp.ll
@@ -44,7 +43,7 @@
 ; velox/optimized/StackTrace.cpp.ll
 ; velox/optimized/Type.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i8 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 23, %2
   %4 = icmp ult i8 %1, 24
@@ -55,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i8 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 48, %2
   %4 = icmp eq i8 %1, 45
@@ -74,14 +73,13 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i8 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 23, %2
   %4 = icmp slt i8 %1, 0

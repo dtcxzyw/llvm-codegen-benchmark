@@ -1,7 +1,9 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; flac/optimized/metadata_object.c.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_color.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
@@ -32,7 +34,7 @@ define i32 @func0000000000000013(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = lshr i32 %3, 31
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -80,17 +82,17 @@ entry:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; jq/optimized/decNumber.ll
 ; linux/optimized/airtime.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openjdk/optimized/mulnode.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = lshr i32 %3, 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -115,7 +117,7 @@ define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = lshr exact i32 %3, 2
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -138,7 +140,7 @@ define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 1
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -150,7 +152,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -166,10 +168,8 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; openblas/optimized/dsptrf.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/sortmax.cpp.ll
@@ -179,7 +179,7 @@ define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -190,7 +190,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = lshr i32 %3, 17
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

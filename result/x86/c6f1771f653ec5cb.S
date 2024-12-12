@@ -8,25 +8,25 @@ func0000000000000001:                   # @func0000000000000001
 	orl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1, %esi
 	orl	%edi, %esi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andl	$1, %esi
 	orl	%edi, %esi
 	setne	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func000000000000002a:                   # @func000000000000002a
 	andl	$1, %esi
 	orl	%edi, %esi
-	cmpl	$-2147483135, %esi              # imm = 0x80000201
-	setl	%al
-	retq
-func000000000000001a:                   # @func000000000000001a
-	andl	$1, %esi
-	orl	%edi, %esi
-	cmpl	$2147483136, %esi               # imm = 0x7FFFFE00
+	cmpl	$-2, %esi
 	setge	%al
+	retq
+func0000000000000026:                   # @func0000000000000026
+	andl	$1, %esi
+	orl	%edi, %esi
+	cmpl	$7, %esi
+	setl	%al
 	retq

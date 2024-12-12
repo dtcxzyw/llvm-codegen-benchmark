@@ -1,9 +1,10 @@
 
-; 58 occurrences:
+; 60 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cswTable.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ivyFastMap.c.ll
+; boost/optimized/area.ll
 ; draco/optimized/hash_utils.cc.ll
 ; folly/optimized/Compression.cpp.ll
 ; folly/optimized/SocketAddress.cpp.ll
@@ -18,8 +19,12 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
+; luajit/optimized/lj_snap.ll
+; luajit/optimized/lj_snap_dyn.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; node/optimized/libnode.node_i18n.ll
+; opencv/optimized/approx.cpp.ll
+; openusd/optimized/decodemv.c.ll
 ; php/optimized/image.ll
 ; postgres/optimized/inval.ll
 ; postgres/optimized/namespace.ll
@@ -27,7 +32,6 @@
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; qemu/optimized/audio_mixeng.c.ll
 ; qemu/optimized/source_s_addMagsF16.c.ll
-; ruby/optimized/closure.ll
 ; ruby/optimized/date_parse.ll
 ; ruby/optimized/io_buffer.ll
 ; ruby/optimized/memory_view.ll
@@ -40,10 +44,8 @@
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; spike/optimized/f16_sqrt.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f32.ll
-; spike/optimized/f16_to_f64.ll
 ; spike/optimized/s_addMagsF16.ll
+; wireshark/optimized/voip_calls.c.ll
 ; yalantinglibs/optimized/addressbook.struct_pb.cc.ll
 ; yalantinglibs/optimized/any.struct_pb.cc.ll
 ; yalantinglibs/optimized/conformance.struct_pb.cc.ll

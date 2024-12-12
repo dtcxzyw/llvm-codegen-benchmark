@@ -16,7 +16,7 @@ entry:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/tm_bucket.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = add nuw i32 %0, 1

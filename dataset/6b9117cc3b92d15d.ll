@@ -1,5 +1,7 @@
 
-; 55 occurrences:
+%"class.std::complex.2845632" = type { { double, double } }
+
+; 54 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -53,15 +55,43 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_study.ll
-; redis/optimized/listpack.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 4 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/hb-ot-layout.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 9
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 6
+  ret ptr %6
+}
+
+; 3 occurrences:
+; php/optimized/pcre2_auto_possess.ll
+; php/optimized/pcre2_jit_compile.ll
+; redis/optimized/listpack.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 8
+  %4 = or disjoint i64 %3, %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -1
   ret ptr %6
 }
 
@@ -69,22 +99,34 @@ entry:
 ; opencv/optimized/checker_model.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; jemalloc/optimized/ckh.ll
 ; jemalloc/optimized/ckh.pic.ll
 ; jemalloc/optimized/ckh.sym.ll
+; quantlib/optimized/garch.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 1
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr %"class.std::complex.2845632", ptr %0, i64 %4, i32 0, i32 1
+  ret ptr %5
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -123,18 +165,6 @@ entry:
 }
 
 ; 1 occurrences:
-; nuklear/optimized/unity.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 1
-  ret ptr %6
-}
-
-; 1 occurrences:
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
@@ -151,12 +181,12 @@ entry:
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
   %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 2
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   ret ptr %6
 }
 

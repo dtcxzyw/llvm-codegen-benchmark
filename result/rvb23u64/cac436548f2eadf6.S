@@ -1,10 +1,10 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	or	a0, a0, a2
 	seqz	a0, a0
 	ret
-func00000000000002b1:                   # @func00000000000002b1
+func0000000000000561:                   # @func0000000000000561
 	slti	a2, a2, 3
 	li	a3, 1
 	czero.eqz	a3, a3, a2

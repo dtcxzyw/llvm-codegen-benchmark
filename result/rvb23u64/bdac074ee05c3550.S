@@ -1,4 +1,4 @@
-func00000000000001ba:                   # @func00000000000001ba
+func00000000000001bf:                   # @func00000000000001bf
 	not	a2, a2
 	zext.h	a1, a1
 	slli	a2, a2, 4

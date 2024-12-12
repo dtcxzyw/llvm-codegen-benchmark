@@ -6,6 +6,14 @@ func0000000000000000:                   # @func0000000000000000
 	andnl	%esi, %edx, %eax
 	addl	%edi, %eax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	andnl	%esi, %edx, %eax
+	addl	%edi, %eax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	andnl	%esi, %edx, %eax
+	addl	%edi, %eax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	andnl	%esi, %edx, %eax
 	addl	%edi, %eax

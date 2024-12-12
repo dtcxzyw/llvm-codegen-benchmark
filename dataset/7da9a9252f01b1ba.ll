@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; clamav/optimized/XzCrc64.c.ll
+; 5 occurrences:
 ; libquic/optimized/gcm.c.ll
 ; linux/optimized/gf128mul.ll
 ; opencv/optimized/mace.cpp.ll

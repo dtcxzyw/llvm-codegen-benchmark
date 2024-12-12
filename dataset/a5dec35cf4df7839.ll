@@ -25,13 +25,15 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; ockam-rs/optimized/10k16szy9z0gnoyc.ll
 ; ockam-rs/optimized/1u7cc2g6nvmoyh9z.ll
 ; ockam-rs/optimized/2v5jo34gglxi7dx1.ll
 ; ockam-rs/optimized/3ai7h96ib4cyqp26.ll
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -53,7 +55,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, -9
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

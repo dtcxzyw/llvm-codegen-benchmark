@@ -29,13 +29,6 @@ func00000000000000ff:                   # @func00000000000000ff
 	vmadd.vx	v10, a0, v8
 	vmul.vx	v8, v10, a0
 	ret
-func00000000000000fd:                   # @func00000000000000fd
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v10, v12
-	li	a0, 85
-	vmadd.vx	v10, a0, v8
-	vmul.vx	v8, v10, a0
-	ret
 func00000000000000c1:                   # @func00000000000000c1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12

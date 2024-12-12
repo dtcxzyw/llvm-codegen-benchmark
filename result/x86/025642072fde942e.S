@@ -5,6 +5,6 @@ func0000000000000006:                   # @func0000000000000006
 	cqto
 	idivq	%rcx
 	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	setg	%al
+	cmpq	%rsi, %rdi
+	setl	%al
 	retq

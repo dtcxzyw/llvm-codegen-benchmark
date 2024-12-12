@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000010b:                   # @func000000000000010b
 	cmpb	$-57, %sil
 	sete	%al
 	cmpb	$15, %sil
@@ -6,4 +6,13 @@ func000000000000008a:                   # @func000000000000008a
 	orb	%al, %cl
 	movzbl	%cl, %eax
 	leaq	1(%rax,%rdi), %rax
+	retq
+func0000000000000108:                   # @func0000000000000108
+	cmpb	$1, %sil
+	movl	$108, %ecx
+	movl	$88, %eax
+	cmoveq	%rcx, %rax
+	cmpb	$4, %sil
+	cmoveq	%rcx, %rax
+	addq	%rdi, %rax
 	retq

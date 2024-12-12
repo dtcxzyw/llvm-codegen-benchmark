@@ -3,6 +3,7 @@
 ; cmake/optimized/urlapi.c.ll
 ; cpython/optimized/weakrefobject.ll
 ; curl/optimized/libcurl_la-urlapi.ll
+; git/optimized/merge-recursive.ll
 ; git/optimized/object-file.ll
 ; git/optimized/unpack-trees.ll
 ; graphviz/optimized/neatoinit.c.ll
@@ -24,8 +25,6 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/php_http_parser.ll
 ; proj/optimized/geodesic.c.ll
-; ripgrep-rs/optimized/1tu4ff7k1l20r9ex.ll
-; ripgrep-rs/optimized/1zzjpab9m5homdm3.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll
@@ -33,6 +32,7 @@
 ; wasmtime-rs/optimized/1diuaeh8guxl7hpm.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/50oljwux3amwt8rq.ll
+; z3/optimized/ast.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i1 %1, i1 %2) #0 {
 entry:

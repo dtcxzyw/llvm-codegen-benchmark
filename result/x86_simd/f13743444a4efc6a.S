@@ -8,6 +8,12 @@ func0000000000000008:                   # @func0000000000000008
 	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm2, %k1
 	vorpd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
+.LCPI2_0:
+	.quad	32                              # 0x20
+func0000000000000028:                   # @func0000000000000028
+	vpcmpltuq	.LCPI2_0(%rip){1to4}, %ymm2, %k1
+	vorpd	%ymm1, %ymm0, %ymm0 {%k1}
+	retq
 func0000000000000003:                   # @func0000000000000003
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpeqq	%ymm3, %ymm2, %k1
@@ -17,18 +23,16 @@ func0000000000000018:                   # @func0000000000000018
 	vptestmq	%ymm2, %ymm2, %k1
 	vorpd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
-.LCPI4_0:
+.LCPI5_0:
 	.quad	9223372032559808512             # 0x7fffffff00000000
+func0000000000000030:                   # @func0000000000000030
+	vpcmpnleuq	.LCPI5_0(%rip){1to4}, %ymm2, %k1
+	vorpd	%ymm1, %ymm0, %ymm0 {%k1}
+	retq
+.LCPI6_0:
+	.quad	7                               # 0x7
 func0000000000000010:                   # @func0000000000000010
-	vpcmpnleuq	.LCPI4_0(%rip){1to4}, %ymm2, %k1
-	vorpd	%ymm1, %ymm0, %ymm0 {%k1}
-	retq
-func000000000000000c:                   # @func000000000000000c
-	vpmovq2m	%ymm2, %k1
-	vorpd	%ymm1, %ymm0, %ymm0 {%k1}
-	retq
-func000000000000000d:                   # @func000000000000000d
-	vpmovq2m	%ymm2, %k1
+	vpcmpnleuq	.LCPI6_0(%rip){1to4}, %ymm2, %k1
 	vorpd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI7_0:
@@ -40,4 +44,10 @@ func0000000000000009:                   # @func0000000000000009
 	vpbroadcastq	.LCPI7_1(%rip), %ymm2   # ymm2 = [8,8,8,8]
 	vmovdqa64	%ymm1, %ymm2 {%k1}
 	vpor	%ymm0, %ymm2, %ymm0
+	retq
+.LCPI8_0:
+	.quad	4294967296                      # 0x100000000
+func0000000000000029:                   # @func0000000000000029
+	vpcmpltuq	.LCPI8_0(%rip){1to4}, %ymm2, %k1
+	vorpd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq

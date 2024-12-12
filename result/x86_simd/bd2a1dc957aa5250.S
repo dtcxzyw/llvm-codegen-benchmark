@@ -202,14 +202,3 @@ func0000000000000028:                   # @func0000000000000028
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI11_2(%rip){1to8}, %ymm0, %ymm0
 	retq
-.LCPI12_0:
-	.long	7                               # 0x7
-.LCPI12_1:
-	.long	12                              # 0xc
-func000000000000000f:                   # @func000000000000000f
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpandd	.LCPI12_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	.LCPI12_1(%rip){1to8}, %ymm0, %ymm0
-	retq

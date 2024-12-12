@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; linux/optimized/keyboard.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; Function Attrs: nounwind
@@ -13,21 +14,7 @@ entry:
   ret i8 %7
 }
 
-; 2 occurrences:
-; llvm/optimized/ComputeDependence.cpp.ll
-; yosys/optimized/fstapi.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000002(i8 %0, i8 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i8 0, i8 64
-  %4 = and i8 %1, -65
-  %5 = or disjoint i8 %4, %3
-  %6 = and i8 %0, -128
-  %7 = or i8 %5, %6
-  ret i8 %7
-}
-
-; 38 occurrences:
+; 39 occurrences:
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_vma.ll
@@ -39,6 +26,7 @@ entry:
 ; llvm/optimized/Descriptor.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -67,13 +55,27 @@ entry:
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000003(i8 %0, i1 %1, i8 %2) #0 {
+define i8 @func0000000000000003(i8 %0, i8 %1, i1 %2) #0 {
 entry:
-  %3 = and i8 %2, 1
-  %4 = select i1 %1, i8 2, i8 0
+  %3 = select i1 %2, i8 32, i8 0
+  %4 = and i8 %1, -40
   %5 = or disjoint i8 %4, %3
-  %6 = and i8 %0, -4
+  %6 = and i8 %0, 7
   %7 = or disjoint i8 %5, %6
+  ret i8 %7
+}
+
+; 2 occurrences:
+; llvm/optimized/ComputeDependence.cpp.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000002(i8 %0, i8 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i8 0, i8 64
+  %4 = and i8 %1, -65
+  %5 = or disjoint i8 %4, %3
+  %6 = and i8 %0, -128
+  %7 = or i8 %5, %6
   ret i8 %7
 }
 

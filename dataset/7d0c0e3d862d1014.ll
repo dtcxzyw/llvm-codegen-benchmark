@@ -5,7 +5,7 @@
 ; openjdk/optimized/peephole_x86_64.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i16 %0) #0 {
+define i1 @func00000000000000cc(i16 %0) #0 {
 entry:
   %1 = icmp slt i16 %0, 616
   %2 = icmp ne i16 %0, -1
@@ -33,7 +33,7 @@ entry:
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0) #0 {
+define i1 @func000000000000018c(i16 %0) #0 {
 entry:
   %1 = icmp ne i16 %0, 291
   %2 = icmp ne i16 %0, 221
@@ -41,12 +41,11 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i16 %0) #0 {
+define i1 @func000000000000008c(i16 %0) #0 {
 entry:
   %1 = icmp ult i16 %0, 16
   %2 = icmp ne i16 %0, 8
@@ -59,7 +58,7 @@ entry:
 ; linux/optimized/md.ll
 ; postgres/optimized/spgtextproc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i16 %0) #0 {
+define i1 @func0000000000000188(i16 %0) #0 {
 entry:
   %1 = icmp ne i16 %0, -3
   %2 = icmp ugt i16 %0, -257

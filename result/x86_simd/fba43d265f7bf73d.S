@@ -1,5 +1,5 @@
 func0000000000000008:                   # @func0000000000000008
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$8, %ymm0, %ymm0
 	vpmovqb	%ymm0, %xmm0
 	vzeroupper
@@ -57,13 +57,13 @@ func000000000000001a:                   # @func000000000000001a
 	.quad	1                               # 0x1
 func0000000000000012:                   # @func0000000000000012
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$56, %ymm0, %ymm0
 	vpmovqb	%ymm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000018:                   # @func0000000000000018
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$8, %ymm0, %ymm0
 	vpmovqb	%ymm0, %xmm0
 	vzeroupper
@@ -72,7 +72,7 @@ func0000000000000018:                   # @func0000000000000018
 	.quad	1                               # 0x1
 func0000000000000000:                   # @func0000000000000000
 	vpandq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$8, %ymm0, %ymm0
 	vpmovqb	%ymm0, %xmm0
 	vzeroupper

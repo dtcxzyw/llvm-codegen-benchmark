@@ -15,10 +15,12 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; git/optimized/xhistogram.ll
 ; hyperscan/optimized/stream.c.ll
 ; linux/optimized/vsprintf.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -37,7 +39,7 @@ entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = and i64 %2, 71776153420955648
   %4 = xor i64 %3, 71776153420955648
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

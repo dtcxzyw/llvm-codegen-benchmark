@@ -18,3 +18,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$100, %eax
 	setae	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movslq	%edi, %rax
+	imulq	$1321528399, %rax, %rax         # imm = 0x4EC4EC4F
+	movq	%rax, %rcx
+	shrq	$63, %rcx
+	sarq	$34, %rax
+	addl	%ecx, %eax
+	cmpl	$4, %eax
+	setb	%al
+	retq

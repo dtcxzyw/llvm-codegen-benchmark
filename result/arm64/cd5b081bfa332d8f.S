@@ -1,17 +1,8 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fcvtzs	v5.2d, v5.2d
-	fcvtzs	v4.2d, v4.2d
-	fcvtzs	v3.2d, v3.2d
-	fcvtzs	v2.2d, v2.2d
-	uzp1	v4.4s, v4.4s, v5.4s
-	uzp1	v2.4s, v2.4s, v3.4s
-	movi	v3.4s, #124, lsl #8
-	shl	v4.4s, v4.4s, #3
-	shl	v2.4s, v2.4s, #3
-	and	v4.16b, v4.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	orr	v1.16b, v4.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
+	fcvtzs	w8, d0
+	lsl	w8, w8, #3
+	and	w8, w8, #0x7c00
+	orr	w0, w0, w8
 	ret
                                         // -- End function

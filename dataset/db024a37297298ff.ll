@@ -10,9 +10,9 @@
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = icmp eq i32 %3, %2
-  ret i1 %4
+  %.neg = add nuw nsw i32 %2, 1
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

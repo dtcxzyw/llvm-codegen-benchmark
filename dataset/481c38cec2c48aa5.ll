@@ -1,5 +1,5 @@
 
-; 135 occurrences:
+; 132 occurrences:
 ; abc/optimized/aigTable.c.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -25,11 +25,11 @@
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
 ; ceres/optimized/triplet_sparse_matrix.cc.ll
-; clamav/optimized/XzCrc64.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; crow/optimized/example_session.cpp.ll
 ; cvc5/optimized/partition_generator.cpp.ll
@@ -38,7 +38,6 @@
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/random.cpp.ll
 ; g2o/optimized/sampler.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; gromacs/optimized/coolstuff.cpp.ll
 ; gromacs/optimized/seed.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
@@ -60,14 +59,12 @@
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; nix/optimized/filetransfer.ll
 ; ocio/optimized/Platform.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/mace.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
@@ -141,7 +138,7 @@ entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 0, i64 2567483615
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 

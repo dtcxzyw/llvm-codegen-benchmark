@@ -6,7 +6,7 @@
 	.quad	4294967237                      # 0xffffffc5
 .LCPI0_3:
 	.quad	5                               # 0x5
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpnltuq	.LCPI0_1(%rip){1to4}, %ymm1, %k1
 	vbroadcastsd	.LCPI0_2(%rip), %ymm1   # ymm1 = [4294967237,4294967237,4294967237,4294967237]
@@ -21,7 +21,7 @@ func0000000000000018:                   # @func0000000000000018
 	.quad	4294967237                      # 0xffffffc5
 .LCPI1_3:
 	.quad	5                               # 0x5
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpnltuq	.LCPI1_1(%rip){1to4}, %ymm1, %k1
 	vbroadcastsd	.LCPI1_2(%rip), %ymm1   # ymm1 = [4294967237,4294967237,4294967237,4294967237]

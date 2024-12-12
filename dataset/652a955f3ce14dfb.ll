@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 79 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/xmlparse.c.ll
@@ -16,7 +16,6 @@
 ; hermes/optimized/HostModel.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/JSArray.cpp.ll
-; hermes/optimized/JSArrayBuffer.cpp.ll
 ; hermes/optimized/JSCallSite.cpp.ll
 ; hermes/optimized/JSCallableProxy.cpp.ll
 ; hermes/optimized/JSDataView.cpp.ll
@@ -44,7 +43,6 @@
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; linux/optimized/trace_probe.ll
-; linux/optimized/trace_seq.ll
 ; linux/optimized/xdp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SourceMgr.cpp.ll
@@ -54,9 +52,6 @@
 ; mold/optimized/passes.cc.ARM32.cc.ll
 ; mold/optimized/passes.cc.I386.cc.ll
 ; mold/optimized/passes.cc.LOONGARCH32.cc.ll
-; mold/optimized/passes.cc.M68K.cc.ll
-; mold/optimized/passes.cc.PPC32.cc.ll
-; mold/optimized/passes.cc.RV32BE.cc.ll
 ; mold/optimized/passes.cc.RV32LE.cc.ll
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; msgpack/optimized/class_intrusive_map.cpp.ll

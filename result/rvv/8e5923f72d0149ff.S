@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.f.x.v	v10, v10
-	vmfne.vv	v0, v10, v8
+	vmfne.vv	v0, v8, v10
 	ret
 .LCPI3_0:
 	.word	0x3727c5ac                      # float 9.99999974E-6
@@ -33,5 +33,5 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.f.x.v	v10, v10
-	vmfeq.vv	v0, v10, v8
+	vmfeq.vv	v0, v8, v10
 	ret

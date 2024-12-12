@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpmovqd	%ymm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpcmpltud	%xmm2, %xmm1, %k1
@@ -8,7 +8,7 @@ func0000000000000041:                   # @func0000000000000041
 	retq
 .LCPI1_0:
 	.long	4                               # 0x4
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovqd	%ymm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm1, %k1

@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; darktable/optimized/introspection_filmic.c.ll
 ; mitsuba3/optimized/envmap.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
@@ -20,6 +20,7 @@
 ; openusd/optimized/timeSampleArray.cpp.ll
 ; openusd/optimized/vec3h.cpp.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(float %0, float %1) #0 {
 entry:

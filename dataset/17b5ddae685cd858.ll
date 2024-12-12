@@ -11,7 +11,7 @@ entry:
   ret i32 %3
 }
 
-; 339 occurrences:
+; 341 occurrences:
 ; darktable/optimized/introspection_diffuse.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
@@ -113,6 +113,8 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/printk_ringbuffer.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -361,6 +363,7 @@ entry:
 
 ; 393 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
+; freetype/optimized/ftgzip.c.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/CodeMotion.cpp.ll
@@ -750,7 +753,6 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/packet-dof.c.ll
-; wireshark/optimized/packet-gprs-llc.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; Function Attrs: nounwind
@@ -773,10 +775,10 @@ entry:
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/dynahash.ll
-; postgres/optimized/oracle_compat.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; wireshark/optimized/packet-nvme.c.ll
+; wireshark/optimized/packet-opensafety.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {

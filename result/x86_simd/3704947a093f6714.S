@@ -1,6 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
 	vpsrld	$1, %ymm2, %ymm2
-	vpcmpltud	%ymm1, %ymm2, %k1
+	vpcmpnleud	%ymm2, %ymm1, %k1
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
 func000000000000000a:                   # @func000000000000000a

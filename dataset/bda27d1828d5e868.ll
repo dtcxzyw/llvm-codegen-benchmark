@@ -1,5 +1,5 @@
 
-; 237 occurrences:
+; 231 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/extraUtilUtil.c.ll
@@ -7,7 +7,8 @@
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
-; c3c/optimized/benchmark.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/scpgen.cpp.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/clamdtop.c.ll
@@ -49,7 +50,6 @@
 ; gromacs/optimized/splineutil.cpp.ll
 ; grpc/optimized/flow_control.cc.ll
 ; hdf5/optimized/H5timer.c.ll
-; hdf5/optimized/io_timer.c.ll
 ; hermes/optimized/FileCheck.cpp.ll
 ; hermes/optimized/GCBase.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
@@ -59,7 +59,6 @@
 ; icu/optimized/gregocal.ll
 ; icu/optimized/smpdtfmt.ll
 ; icu/optimized/uperf.ll
-; ipopt/optimized/IpUtils.ll
 ; jq/optimized/builtin.ll
 ; libjpeg-turbo/optimized/tjutil.c.ll
 ; libquic/optimized/time.cc.ll
@@ -105,7 +104,6 @@
 ; openmpi/optimized/iof_base_output.ll
 ; openmpi/optimized/iof_hnp_read.ll
 ; openmpi/optimized/iof_prted_read.ll
-; openmpi/optimized/libmpi_c_profile_la-wtime.ll
 ; openmpi/optimized/libprrte_la-pmix_server_dyn.ll
 ; openmpi/optimized/libprrte_la-pmix_server_gen.ll
 ; openmpi/optimized/libprrte_la-prted_comm.ll
@@ -134,7 +132,6 @@
 ; openmpi/optimized/tm_tree.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; osqp/optimized/amd_2.c.ll
-; osqp/optimized/timing_linux.c.ll
 ; php/optimized/SAPI.ll
 ; php/optimized/astro.ll
 ; php/optimized/microtime.ll
@@ -151,10 +148,8 @@
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/vacuumlazy.ll
 ; proj/optimized/calcofi.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/hgridshift.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/vgridshift.cpp.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; qemu/optimized/ui_vnc.c.ll
@@ -228,7 +223,6 @@
 ; wireshark/optimized/sparkline_delegate.cpp.ll
 ; wireshark/optimized/tap-camelsrt.c.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
-; wireshark/optimized/time_util.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; wolfssl/optimized/api.c.ll
 ; wolfssl/optimized/benchmark.c.ll

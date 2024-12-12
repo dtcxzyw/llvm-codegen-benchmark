@@ -1,9 +1,8 @@
 
-; 447 occurrences:
+; 441 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
 ; abseil-cpp/optimized/no_destructor_test.cc.ll
-; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/array_nested.cc.ll
 ; arrow/optimized/codegen_internal.cc.ll
@@ -114,7 +113,6 @@
 ; openusd/optimized/cylinderLight.cpp.ll
 ; openusd/optimized/cylinder_1.cpp.ll
 ; openusd/optimized/dataSourceLegacyPrim.cpp.ll
-; openusd/optimized/dataSourcePrim.cpp.ll
 ; openusd/optimized/dataSourceRenderPrims.cpp.ll
 ; openusd/optimized/dirtyList.cpp.ll
 ; openusd/optimized/diskLight.cpp.ll
@@ -194,9 +192,6 @@
 ; openusd/optimized/var.cpp.ll
 ; openusd/optimized/visibilityAPI.cpp.ll
 ; openusd/optimized/xformable.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/crs.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; pybind11/optimized/test_buffers.cpp.ll
@@ -322,7 +317,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -448,10 +442,10 @@
 ; zxing/optimized/PDFDecoder.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0) #0 {
+define ptr @func0000000000000007(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 3
-  %2 = getelementptr nusw i8, ptr null, i64 %1
+  %2 = getelementptr nusw nuw i8, ptr null, i64 %1
   ret ptr %2
 }
 
@@ -465,9 +459,14 @@ entry:
   ret ptr %2
 }
 
-; 2 occurrences:
+; 7 occurrences:
+; casadi/optimized/sparsity.cpp.ll
+; opencv/optimized/graph_simplifier.cpp.ll
+; openusd/optimized/dataSourcePrim.cpp.ll
+; openusd/optimized/json.cpp.ll
 ; quantlib/optimized/methodoflinesscheme.ll
 ; quantlib/optimized/polynomialmathfunction.ll
+; yosys/optimized/satgen.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0) #0 {
 entry:
@@ -476,20 +475,28 @@ entry:
   ret ptr %2
 }
 
-; 3 occurrences:
-; casadi/optimized/sparsity.cpp.ll
-; opencv/optimized/graph_simplifier.cpp.ll
-; openusd/optimized/json.cpp.ll
+; 1 occurrences:
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0) #0 {
+define ptr @func0000000000000003(i64 %0) #0 {
 entry:
-  %1 = shl nuw nsw i64 %0, 4
+  %1 = shl i64 %0, 2
+  %2 = getelementptr nusw nuw i8, ptr null, i64 %1
+  ret ptr %2
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(i64 %0) #0 {
+entry:
+  %1 = shl nsw i64 %0, 3
   %2 = getelementptr nusw i8, ptr null, i64 %1
   ret ptr %2
 }
 
 ; 1 occurrences:
-; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; abseil-cpp/optimized/span_test.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i64 %0) #0 {
 entry:

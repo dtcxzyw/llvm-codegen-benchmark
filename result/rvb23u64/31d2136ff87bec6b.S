@@ -6,11 +6,13 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	ret
+func0000000000000004:                   # @func0000000000000004
+	add	a0, a0, a1
+	li	a1, 2
+	bseti	a1, a1, 63
+	add	a0, a0, a1
+	ret
 func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
 	addi	a0, a0, 1
-	ret
-func0000000000000004:                   # @func0000000000000004
-	add	a0, a0, a1
-	addi	a0, a0, -1
 	ret

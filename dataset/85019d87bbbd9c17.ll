@@ -1,6 +1,8 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -48,7 +50,8 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/to_chars.ll
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -69,8 +72,8 @@ entry:
 }
 
 ; 6 occurrences:
+; boost/optimized/alloc_lib.ll
 ; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
-; gromacs/optimized/tng_io.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
 ; quantlib/optimized/cmsmarketcalibration.ll

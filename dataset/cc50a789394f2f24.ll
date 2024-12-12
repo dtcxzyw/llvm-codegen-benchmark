@@ -23,7 +23,8 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll

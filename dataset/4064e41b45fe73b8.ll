@@ -10,8 +10,9 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
@@ -21,7 +22,7 @@ entry:
   ret i32 %4
 }
 
-; 52 occurrences:
+; 54 occurrences:
 ; duckdb/optimized/ub_duckdb_transaction.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
@@ -74,6 +75,8 @@ entry:
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -83,11 +86,9 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; eastl/optimized/BenchmarkSort.cpp.ll
+; 2 occurrences:
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
-; postgres/optimized/spgutils.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
@@ -130,28 +131,6 @@ entry:
   %3 = trunc nuw nsw i64 %0 to i32
   %4 = select i1 %2, i32 3, i32 %3
   ret i32 %4
-}
-
-; 1 occurrences:
-; grpc/optimized/hpack_parser.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000013(i64 %0, i64 %1) #0 {
-entry:
-  %.inv = icmp ugt i64 %1, 1
-  %2 = trunc nuw nsw i64 %0 to i32
-  %3 = select i1 %.inv, i32 %2, i32 1
-  ret i32 %3
-}
-
-; 1 occurrences:
-; openblas/optimized/dgemv_n.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000029(i64 %0, i64 %1) #0 {
-entry:
-  %.inv = icmp slt i64 %1, 2048
-  %2 = trunc nsw i64 %0 to i32
-  %3 = select i1 %.inv, i32 %2, i32 2048
-  ret i32 %3
 }
 
 attributes #0 = { nounwind }

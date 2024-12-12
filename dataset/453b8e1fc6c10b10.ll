@@ -3,7 +3,7 @@
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/Cr2LJpegDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = icmp eq i32 %2, %0
@@ -15,7 +15,7 @@ entry:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; postgres/optimized/execExpr.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp eq i32 %2, %0
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/hierarchy.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp slt i32 %2, %0

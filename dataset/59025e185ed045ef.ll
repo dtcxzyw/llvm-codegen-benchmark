@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
@@ -7,6 +7,7 @@
 ; icu/optimized/simpletz.ll
 ; icu/optimized/ucnvbocu.ll
 ; linux/optimized/icl_dsi.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll

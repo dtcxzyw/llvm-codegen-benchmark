@@ -25,7 +25,7 @@ func000000000000018e:                   # @func000000000000018e
 	vptestmb	%xmm2, %xmm2, %k0
 	vpmovm2d	%k0, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.byte	123                             # 0x7b

@@ -12,12 +12,19 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$55296, %esi                    # imm = 0xD800
 	cmovbl	%esi, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func0000000000000018:                   # @func0000000000000018
 	movl	%edi, %eax
+	cmpl	$8, %esi
+	cmovbl	%esi, %eax
 	testb	$1, %dl
 	cmovel	%esi, %eax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	movl	%edi, %eax
 	cmpl	$-127, %esi
 	cmovll	%esi, %eax
+	testb	$1, %dl
+	cmovel	%esi, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
@@ -26,12 +33,19 @@ func000000000000000c:                   # @func000000000000000c
 	testl	%esi, %esi
 	cmovel	%esi, %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	testb	$1, %dl
 	cmovel	%esi, %eax
 	cmpl	$32, %esi
-	cmovgel	%esi, %eax
+	cmovael	%esi, %eax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	movl	%edi, %eax
+	testl	%esi, %esi
+	cmovnsl	%esi, %eax
+	testb	$1, %dl
+	cmovel	%esi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%edi, %eax

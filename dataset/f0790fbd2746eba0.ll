@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 79 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -20,8 +20,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -82,17 +80,17 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000604(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000c04(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = mul i64 %1, 10
   %7 = icmp ult i64 %5, %6
   ret i1 %7
 }
 
-; 81 occurrences:
+; 79 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -113,8 +111,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -175,11 +171,11 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000609(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000c09(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = mul i64 %1, 10
   %7 = icmp uge i64 %5, %6
   ret i1 %7

@@ -54,10 +54,6 @@ func00000000000000cc:                   # @func00000000000000cc
 	addl	%edx, %edi
 	leal	4096(%rsi,%rdi), %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
-	addl	%edx, %edi
-	leal	40(%rsi,%rdi), %eax
-	retq
 func0000000000000020:                   # @func0000000000000020
 	addl	%edx, %edi
 	leal	1(%rsi,%rdi), %eax

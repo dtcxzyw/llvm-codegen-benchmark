@@ -14,7 +14,7 @@ entry:
   ret i1 %3
 }
 
-; 179 occurrences:
+; 180 occurrences:
 ; abc/optimized/cuddAnneal.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -194,6 +194,7 @@ entry:
 ; z3/optimized/sat_ddfw.cpp.ll
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
@@ -249,10 +250,15 @@ entry:
   ret i1 %3
 }
 
-; 25 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; abseil-cpp/optimized/pool_urbg_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytesio.ll
 ; cpython/optimized/stringio.ll
@@ -283,7 +289,7 @@ entry:
   ret i1 %3
 }
 
-; 99 occurrences:
+; 96 occurrences:
 ; arrow/optimized/future.cc.ll
 ; assimp/optimized/StandardShapes.cpp.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
@@ -320,8 +326,6 @@ entry:
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/serverpackethandler.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlag2.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
@@ -356,7 +360,6 @@ entry:
 ; openjdk/optimized/shenandoahHeuristics.ll
 ; openusd/optimized/mathUtils.cpp.ll
 ; openvdb/optimized/Maps.cc.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
 ; portaudio/optimized/pa_sndio.c.ll
 ; postgres/optimized/geo_ops.ll

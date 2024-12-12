@@ -7,7 +7,7 @@ func0000000000000006:                   # @func0000000000000006
 	li	a0, 45
 	vmerge.vxm	v8, v8, a0, v0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	bseti	a0, zero, 36
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0

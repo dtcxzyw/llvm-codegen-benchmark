@@ -1,6 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
 	leal	(%rsi,%rdx), %ecx
-	shll	$20, %ecx
+	addl	%ecx, %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
@@ -10,13 +10,6 @@ func000000000000000f:                   # @func000000000000000f
 	shll	$3, %ecx
 	testb	$1, %dil
 	movl	$8, %eax
-	cmovnel	%ecx, %eax
-	retq
-func0000000000000003:                   # @func0000000000000003
-	leal	(%rsi,%rdx), %ecx
-	addl	%ecx, %ecx
-	xorl	%eax, %eax
-	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c

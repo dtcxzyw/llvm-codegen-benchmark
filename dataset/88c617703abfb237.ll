@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = add i64 %2, 31
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/xprepare.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = add i64 %2, 3
@@ -25,7 +25,7 @@ entry:
 ; linux/optimized/badblocks.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000007f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %0, %1
   %3 = icmp ult i64 %2, 7

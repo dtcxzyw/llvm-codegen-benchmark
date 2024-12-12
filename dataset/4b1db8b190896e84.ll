@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/sygus_extension.cpp.ll
 ; cvc5/optimized/sygus_unif_io.cpp.ll
@@ -19,6 +19,7 @@
 ; openmpi/optimized/opal_info_support.ll
 ; postgres/optimized/fd.ll
 ; postgres/optimized/partbounds.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:

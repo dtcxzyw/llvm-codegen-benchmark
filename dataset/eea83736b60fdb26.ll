@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; folly/optimized/dynamic.cpp.ll
-; llvm/optimized/ShrinkWrap.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {

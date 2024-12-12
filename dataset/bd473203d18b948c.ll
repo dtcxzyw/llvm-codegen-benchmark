@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, 4
   %4 = select i1 %3, i1 true, i1 %0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/subset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, 0
   %4 = select i1 %3, i1 true, i1 %0

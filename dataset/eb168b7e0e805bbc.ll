@@ -1,11 +1,10 @@
 
-; 58 occurrences:
+; 56 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; libquic/optimized/ssl_lib.c.ll
 ; linux/optimized/access.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/hooks.ll
@@ -32,7 +31,6 @@
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll

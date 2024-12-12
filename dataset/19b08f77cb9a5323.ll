@@ -6,7 +6,7 @@
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 131072, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -14,10 +14,10 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/Bra86.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 7, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -30,10 +30,10 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 256, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -45,7 +45,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 7, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -54,11 +54,11 @@ entry:
 ; openexr/optimized/ImfCRgbaFile.cpp.ll
 ; openexr/optimized/ImfRgbaYca.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %0, %1
   %3 = and i32 %2, 64512
-  %4 = icmp ugt i32 %3, 31743
+  %4 = icmp samesign ugt i32 %3, 31743
   ret i1 %4
 }
 

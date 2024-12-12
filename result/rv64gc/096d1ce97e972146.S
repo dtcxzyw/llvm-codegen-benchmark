@@ -4,15 +4,15 @@ func0000000000000008:                   # @func0000000000000008
 	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000009:                   # @func0000000000000009
+func000000000000000b:                   # @func000000000000000b
 	andi	a1, a1, 255
 	addi	a1, a1, -32
 	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
-func000000000000000b:                   # @func000000000000000b
+func0000000000000009:                   # @func0000000000000009
 	andi	a1, a1, 255
-	addi	a1, a1, -2
+	addi	a1, a1, -10
 	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
@@ -46,7 +46,7 @@ func0000000000000062:                   # @func0000000000000062
 	snez	a1, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	andi	a1, a1, 255
 	sltiu	a1, a1, 4
 	xori	a1, a1, 1
@@ -76,6 +76,18 @@ func0000000000000023:                   # @func0000000000000023
 	sltiu	a1, a1, 254
 	addw	a0, a0, a1
 	ret
+func0000000000000030:                   # @func0000000000000030
+	slli	a1, a1, 56
+	srai	a1, a1, 56
+	slti	a1, a1, -64
+	addw	a0, a0, a1
+	ret
+func0000000000000043:                   # @func0000000000000043
+	andi	a1, a1, 255
+	sltiu	a1, a1, 100
+	xori	a1, a1, 1
+	addw	a0, a0, a1
+	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a1, a1, 255
 	addi	a1, a1, -45
@@ -95,7 +107,13 @@ func0000000000000050:                   # @func0000000000000050
 	xori	a1, a1, 1
 	addw	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
+func00000000000000c0:                   # @func00000000000000c0
+	andi	a1, a1, 255
+	sltiu	a1, a1, 240
+	xori	a1, a1, 1
+	addw	a0, a0, a1
+	ret
+func00000000000000c1:                   # @func00000000000000c1
 	andi	a1, a1, 255
 	sltiu	a1, a1, 5
 	xori	a1, a1, 1

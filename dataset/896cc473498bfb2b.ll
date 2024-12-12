@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/Executor.cpp.ll
 ; openjdk/optimized/hb-buffer.ll
@@ -7,8 +7,10 @@
 ; ruby/optimized/process.ll
 ; ruby/optimized/ruby.ll
 ; ruby/optimized/string.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -91
   %3 = icmp ult i32 %2, -26

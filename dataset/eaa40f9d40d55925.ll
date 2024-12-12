@@ -1,5 +1,6 @@
 
-; 23 occurrences:
+; 24 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
@@ -34,7 +35,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 215 occurrences:
+; 222 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/bacNtk.c.ll
 ; abc/optimized/bacPrsTrans.c.ll
@@ -125,6 +126,14 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; lodepng/optimized/lodepng.cpp.ll
 ; lua/optimized/lcode.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_switch.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/chat.cpp.ll
@@ -196,7 +205,6 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; openjdk/optimized/pngrutil.ll
 ; openmpi/optimized/pml_ob1_recvfrag.ll
 ; openmpi/optimized/reachable_netlink_module.ll
-; openmpi/optimized/reachable_weighted.ll
 ; openspiel/optimized/backgammon.cc.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; openspiel/optimized/colored_trails.cc.ll

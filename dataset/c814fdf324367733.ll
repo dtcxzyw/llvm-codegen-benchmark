@@ -59,7 +59,7 @@
 ; z3/optimized/pb2bv_tactic.cpp.ll
 ; z3/optimized/solve_context_eqs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = udiv exact i64 %0, 24

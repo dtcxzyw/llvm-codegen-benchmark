@@ -217,14 +217,13 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.abs.i64(i64 %2, i1 false)
   %4 = icmp ult i64 %3, %1
-  %5 = sext i1 %4 to i32
-  %6 = sub i32 0, %0
-  %7 = icmp eq i32 %5, %6
-  ret i1 %7
+  %.neg = zext i1 %4 to i32
+  %5 = icmp eq i32 %0, %.neg
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

@@ -1,10 +1,9 @@
 func0000000000000018:                   # @func0000000000000018
-	xorl	%eax, %eax
-	testb	$1, %dil
-	movl	$20, %ecx
-	cmovneq	%rcx, %rax
 	testq	%rsi, %rsi
-	cmovneq	%rcx, %rax
+	movl	$20, %eax
+	cmovneq	%rax, %rsi
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	xorl	%eax, %eax

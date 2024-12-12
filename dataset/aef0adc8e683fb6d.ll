@@ -1,5 +1,6 @@
 
-; 116 occurrences:
+; 117 occurrences:
+; abc/optimized/ivyCutTrav.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -121,7 +122,7 @@ define i64 @func0000000000000063(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = and i64 %4, 4294967295
   ret i64 %5
 }
@@ -133,7 +134,7 @@ define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = and i64 %4, 15
   ret i64 %5
 }
@@ -146,7 +147,7 @@ define i64 @func0000000000000060(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = and i64 %4, 4294967295
   ret i64 %5
 }
@@ -158,7 +159,7 @@ define i64 @func0000000000000023(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = and i64 %4, 4294967295
   ret i64 %5
 }

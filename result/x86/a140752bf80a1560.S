@@ -10,7 +10,7 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	subq	%rdx, %rsi
 	cmpq	$128, %rsi
 	setb	%al
@@ -30,20 +30,21 @@ func000000000000000c:                   # @func000000000000000c
 	notb	%dil
 	andb	%dil, %al
 	retq
+func000000000000002a:                   # @func000000000000002a
+	cmpq	%rdx, %rsi
+	setg	%al
+	notb	%dil
+	andb	%dil, %al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	cmpq	%rdx, %rsi
+	sete	%al
+	notb	%dil
+	andb	%dil, %al
+	retq
 func0000000000000006:                   # @func0000000000000006
 	subq	%rdx, %rsi
 	testq	%rsi, %rsi
 	setle	%al
-	orb	%dil, %al
-	retq
-func000000000000001a:                   # @func000000000000001a
-	cmpq	%rdx, %rsi
-	setg	%al
-	orb	%dil, %al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	subq	%rdx, %rsi
-	cmpq	$2048, %rsi                     # imm = 0x800
-	sete	%al
 	orb	%dil, %al
 	retq

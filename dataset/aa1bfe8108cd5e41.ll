@@ -10,11 +10,11 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; clap-rs/optimized/421wxj3t0b5xgmkw.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/hdac_stream.ll
@@ -25,7 +25,6 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; mitsuba3/optimized/func.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/ir_ra.ll
@@ -36,7 +35,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -66,11 +65,11 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -79,6 +78,7 @@ entry:
 ; linux/optimized/compress.ll
 ; linux/optimized/hygon.ll
 ; linux/optimized/processor_throttling.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; proxygen/optimized/Huffman.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
@@ -88,7 +88,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -102,7 +102,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -114,7 +114,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl i32 262144, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

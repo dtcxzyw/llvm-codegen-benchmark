@@ -1,6 +1,8 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; mitsuba3/optimized/string.cpp.ll

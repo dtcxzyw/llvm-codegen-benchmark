@@ -38,17 +38,11 @@ func0000000000000008:                   # @func0000000000000008
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000000e:                   # @func000000000000000e
-	vdivsd	%xmm1, %xmm0, %xmm0
-	vucomisd	%xmm0, %xmm0
-	setnp	%al
-	andb	%dil, %al
-	retq
-.LCPI6_0:
+.LCPI5_0:
 	.quad	0x4024000000000000              # double 10
 func0000000000000003:                   # @func0000000000000003
 	vdivsd	%xmm1, %xmm0, %xmm0
-	vucomisd	.LCPI6_0(%rip), %xmm0
+	vucomisd	.LCPI5_0(%rip), %xmm0
 	setb	%al
 	andb	%dil, %al
 	retq

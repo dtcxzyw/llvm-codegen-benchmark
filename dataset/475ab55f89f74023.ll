@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/HiddenClass.cpp.ll
@@ -12,14 +12,13 @@
 ; llvm/optimized/Stmt.cpp.ll
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
-; php/optimized/is_simh.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000003c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 4
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7
@@ -33,11 +32,11 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; openjdk/optimized/hb-buffer-serialize.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000007c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7

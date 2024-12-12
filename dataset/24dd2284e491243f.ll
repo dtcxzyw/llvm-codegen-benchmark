@@ -4,7 +4,7 @@
 ; linux/optimized/hooks.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %0, 1073741824
   %4 = icmp eq i32 %3, 0
@@ -43,24 +43,11 @@ entry:
 ; wireshark/optimized/packet-dcerpc-wkssvc.c.ll
 ; wireshark/optimized/packet-dcom-typeinfo.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000182(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000302(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %0, 3
   %4 = icmp eq i32 %3, 0
   %5 = icmp ne i32 %2, 0
-  %6 = or i1 %4, %5
-  %7 = select i1 %6, i32 %0, i32 %1
-  ret i32 %7
-}
-
-; 1 occurrences:
-; linux/optimized/8139too.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000082(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %0, 16
-  %4 = icmp eq i32 %3, 0
-  %5 = icmp ult i32 %2, 4
   %6 = or i1 %4, %5
   %7 = select i1 %6, i32 %0, i32 %1
   ret i32 %7

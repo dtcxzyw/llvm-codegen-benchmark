@@ -1,28 +1,26 @@
 
-%class.relocInfo.2620323 = type { i16 }
+%class.relocInfo.2733766 = type { i16 }
 
 ; 1 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 16624
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16624
   %5 = getelementptr i64, ptr %4, i64 %3
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
-; 3 occurrences:
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
+; 1 occurrences:
 ; openjdk/optimized/codeBuffer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 16777215
-  %4 = getelementptr nusw i8, ptr %1, i64 30
-  %5 = getelementptr nusw %class.relocInfo.2620323, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 30
+  %5 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %4, i64 %3
   %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
@@ -52,6 +50,34 @@ entry:
   %4 = getelementptr i8, ptr %1, i64 -448
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = icmp ult ptr %5, %0
+  ret i1 %6
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000164(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 15
+  %4 = getelementptr nusw i8, ptr %1, i64 -95
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp ult ptr %5, %0
+  ret i1 %6
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -112,31 +138,40 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; llvm/optimized/SemaModule.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %1, i64 4
-  %5 = getelementptr nusw i32, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; llvm/optimized/InstrProfReader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c8(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = icmp ugt ptr %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
 ; llvm/optimized/MCPseudoProbe.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -8
-  %4 = getelementptr nusw i8, ptr %1, i64 8
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }

@@ -1,11 +1,12 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; graphviz/optimized/constraint.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/edit_select.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll

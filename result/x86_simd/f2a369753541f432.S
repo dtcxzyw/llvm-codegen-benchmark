@@ -15,7 +15,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [4294967294,4294967294,4294967294,4294967294]
 	vmovdqa32	%xmm1, %xmm2 {%k1}
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 .LCPI2_0:
@@ -33,7 +33,7 @@ func0000000000000004:                   # @func0000000000000004
 	vptestnmd	%xmm1, %xmm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %xmm1   # xmm1 = [8,8,8,8]
 	vpbroadcastd	.LCPI3_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [4294967288,4294967288,4294967288,4294967288]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 .LCPI4_0:

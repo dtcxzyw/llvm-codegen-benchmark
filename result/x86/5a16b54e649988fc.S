@@ -7,6 +7,16 @@ func0000000000000003:                   # @func0000000000000003
 	cmovel	%esi, %eax
 	orl	$8192, %eax                     # imm = 0x2000
 	retq
+func0000000000000031:                   # @func0000000000000031
+	movabsq	$-4294967296, %rcx              # imm = 0xFFFFFFFF00000000
+	xorl	%eax, %eax
+	cmpq	%rcx, %rdx
+	setb	%al
+	shll	$5, %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	orl	$8, %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	movabsq	$-4294967296, %rcx              # imm = 0xFFFFFFFF00000000
 	xorl	%eax, %eax
@@ -25,4 +35,13 @@ func0000000000000009:                   # @func0000000000000009
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	orl	$8, %eax
+	retq
+func0000000000000029:                   # @func0000000000000029
+	xorl	%eax, %eax
+	cmpq	$65536, %rdx                    # imm = 0x10000
+	setae	%al
+	shll	$4, %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	orl	$4, %eax
 	retq

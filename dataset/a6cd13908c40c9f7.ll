@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/IOBuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = shl i64 %3, 2
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; rustfmt-rs/optimized/5genfix4t5066ss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = shl i64 %3, 4
@@ -92,7 +92,7 @@ entry:
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -103,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -111,10 +111,11 @@ entry:
   ret i1 %5
 }
 
-; 185 occurrences:
+; 183 occurrences:
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/FindInvalidDataProcess.cpp.ll
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/fmu.cpp.ll
 ; casadi/optimized/integration_tools.cpp.ll
@@ -223,13 +224,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -298,7 +296,7 @@ entry:
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -352,15 +350,14 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; nix/optimized/build-remote.ll
 ; nix/optimized/build.ll
 ; nix/optimized/gc.ll
 ; nix/optimized/graphml.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/why-depends.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -371,7 +368,7 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -382,7 +379,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl nuw nsw i64 %3, 3
@@ -393,7 +390,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/suggestions.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl nsw i64 %3, 1

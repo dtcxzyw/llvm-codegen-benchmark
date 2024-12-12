@@ -1,20 +1,5 @@
 
-; 4 occurrences:
-; llvm/optimized/Verifier.cpp.ll
-; openssl/optimized/libssl-lib-rec_layer_s3.ll
-; openssl/optimized/libssl-shlib-rec_layer_s3.ll
-; postgres/optimized/tablecmds.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000058(i8 %0, i1 %1, ptr %2) #0 {
-entry:
-  %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %1
-  %5 = icmp ne i8 %0, 22
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 42 occurrences:
+; 41 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
@@ -43,7 +28,6 @@ entry:
 ; llvm/optimized/LowerConstantIntrinsics.cpp.ll
 ; llvm/optimized/OverflowInstAnalysis.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -58,11 +42,24 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i8 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000090(i8 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %1
   %5 = icmp ugt i8 %0, 21
+  %6 = or i1 %5, %4
+  ret i1 %6
+}
+
+; 2 occurrences:
+; llvm/optimized/Verifier.cpp.ll
+; postgres/optimized/tablecmds.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000098(i8 %0, i1 %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = or i1 %1, %3
+  %5 = icmp ne i8 %0, 30
   %6 = or i1 %5, %4
   ret i1 %6
 }

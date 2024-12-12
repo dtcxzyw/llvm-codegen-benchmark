@@ -9,7 +9,7 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	andi	a0, a0, 1
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	seqz	a0, a0

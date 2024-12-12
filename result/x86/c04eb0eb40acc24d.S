@@ -14,6 +14,10 @@ func000000000000003f:                   # @func000000000000003f
 	leal	4(,%rsi,4), %eax
 	imull	%edi, %eax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	leal	4(,%rsi,4), %eax
+	imull	%edi, %eax
+	retq
 func000000000000003c:                   # @func000000000000003c
 	leal	4(,%rsi,4), %eax
 	imull	%edi, %eax

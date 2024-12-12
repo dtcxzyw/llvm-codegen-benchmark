@@ -45,7 +45,7 @@ entry:
   ret i32 %4
 }
 
-; 115 occurrences:
+; 110 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/abcDec.c.ll
@@ -70,14 +70,12 @@ entry:
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bdcDec.c.ll
-; abc/optimized/bdcTable.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cnfCut.c.ll
 ; abc/optimized/cswCut.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -129,12 +127,9 @@ entry:
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; abc/optimized/lpkCut.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/lpkMulti.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/luckyRead.c.ll
 ; abc/optimized/luckySwap.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/nwkBidec.c.ll
@@ -170,7 +165,7 @@ entry:
   ret i32 %4
 }
 
-; 30 occurrences:
+; 25 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcRpo.c.ll
@@ -182,7 +177,6 @@ entry:
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -192,11 +186,7 @@ entry:
 ; abc/optimized/lpkAbcUtil.c.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; libquic/optimized/quic_crypto_client_stream.cc.ll
-; linux/optimized/devio.ll
 ; linux/optimized/hid-core.ll
-; linux/optimized/hub.ll
-; linux/optimized/message.ll
-; linux/optimized/transport.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll

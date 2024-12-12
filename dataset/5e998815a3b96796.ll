@@ -1,6 +1,7 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/sbdCore.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/psmouse-base.ll
@@ -34,6 +35,17 @@ define i32 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = trunc nsw i32 %0 to i8
   %2 = sdiv i8 %1, 4
+  %3 = sext i8 %2 to i32
+  ret i32 %3
+}
+
+; 1 occurrences:
+; boost/optimized/area.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0) #0 {
+entry:
+  %1 = trunc i32 %0 to i8
+  %2 = sdiv i8 %1, 8
   %3 = sext i8 %2 to i32
   ret i32 %3
 }

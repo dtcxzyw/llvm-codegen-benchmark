@@ -1,54 +1,36 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	mvni	v5.4s, #9
-	neg	v1.4s, v1.4s
-	neg	v2.4s, v2.4s
-	mul	v3.4s, v3.4s, v5.4s
-	mul	v4.4s, v4.4s, v5.4s
-	cmeq	v2.4s, v4.4s, v2.4s
-	cmeq	v1.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	mvn	v1.16b, v1.16b
-	xtn	v1.8b, v1.8h
-	and	v0.8b, v1.8b, v0.8b
+	mov	w8, #-10                        // =0xfffffff6
+	mul	w8, w2, w8
+	cmn	w8, w1
+	cset	w8, ne
+	and	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	movi	v5.4s, #7
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v2.4s, v4.4s, v5.4s
-	cmhi	v2.4s, v2.4s, v5.4s
-	cmhi	v1.4s, v1.4s, v5.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	and	v0.8b, v1.8b, v0.8b
+	sub	w8, w1, w2
+	add	w8, w8, w2, lsl #3
+	cmp	w8, #7
+	cset	w8, hi
+	and	w0, w8, w0
 	ret
                                         // -- End function
-func0000000000000054:                   // @func0000000000000054
+func00000000000000a4:                   // @func00000000000000a4
 // %bb.0:                               // %entry
-	mvni	v5.4s, #99
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v2.4s, v4.4s, v5.4s
-	movi	v3.4s, #10
-	cmhi	v2.4s, v3.4s, v2.4s
-	cmhi	v1.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	and	v0.8b, v1.8b, v0.8b
+	mov	w8, #-100                       // =0xffffff9c
+	madd	w8, w2, w8, w1
+	cmp	w8, #10
+	cset	w8, lo
+	and	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mvni	v5.4s, #99
-	neg	v1.4s, v1.4s
-	neg	v2.4s, v2.4s
-	mul	v3.4s, v3.4s, v5.4s
-	mul	v4.4s, v4.4s, v5.4s
-	cmeq	v2.4s, v4.4s, v2.4s
-	cmeq	v1.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	and	v0.8b, v1.8b, v0.8b
+	mov	w8, #-100                       // =0xffffff9c
+	mul	w8, w2, w8
+	cmn	w8, w1
+	cset	w8, eq
+	and	w0, w0, w8
 	ret
                                         // -- End function

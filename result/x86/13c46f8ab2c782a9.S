@@ -8,7 +8,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	$31, %sil
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movl	%edx, %eax
 	cmpb	$6, %sil
 	cmovaeq	%rdi, %rax

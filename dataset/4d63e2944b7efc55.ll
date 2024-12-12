@@ -52,15 +52,15 @@
 ; quickjs/optimized/libbf.ll
 ; rocksdb/optimized/lru_cache.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 259 occurrences:
+; 257 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -157,8 +157,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -321,7 +319,7 @@ entry:
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %.highbits = lshr i64 %0, %2
@@ -337,11 +335,11 @@ entry:
 ; linux/optimized/drm_cache.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -351,7 +349,7 @@ entry:
 ; qemu/optimized/system_physmem.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %.highbits = lshr i64 %0, %2
@@ -362,11 +360,11 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -374,11 +372,11 @@ entry:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000065(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c5(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   ret i1 %4
 }
 
@@ -386,11 +384,11 @@ entry:
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -398,11 +396,11 @@ entry:
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -410,22 +408,22 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -434,15 +432,15 @@ entry:
 ; quest/optimized/QuEST_validation.c.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000ca(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; jemalloc/optimized/ckh.ll
@@ -450,17 +448,16 @@ entry:
 ; jemalloc/optimized/ckh.sym.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/timekeeping.ll
-; linux/optimized/vsyscall.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 4, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -468,11 +465,11 @@ entry:
 ; linux/optimized/hugetlb.ll
 ; postgres/optimized/aset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 4096, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -481,11 +478,11 @@ entry:
 ; quest/optimized/QuEST_validation.c.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c6(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -500,14 +497,14 @@ define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 16, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %.highbits = lshr i64 %0, %2
@@ -518,33 +515,33 @@ entry:
 ; 1 occurrences:
 ; quest/optimized/QuEST_validation.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006b(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000cb(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; quest/optimized/QuEST_cpu.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; cpython/optimized/frameobject.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 7, %2
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 

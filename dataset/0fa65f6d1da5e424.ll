@@ -7,7 +7,7 @@ entry:
   %2 = add i32 %1, 12345
   %3 = sdiv i32 %2, 65536
   %4 = and i32 %3, 1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -44,7 +44,7 @@ entry:
   %2 = add nsw i32 %1, 3
   %3 = sdiv i32 %2, 4
   %4 = and i32 %3, 1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

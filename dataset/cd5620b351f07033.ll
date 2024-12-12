@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 52 occurrences:
 ; abc/optimized/wlcAbs.c.ll
 ; c3c/optimized/types.c.ll
 ; crow/optimized/example.cpp.ll
@@ -20,10 +20,10 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
+; libevent/optimized/bufferevent_pair.c.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/filter.ll
-; linux/optimized/he.ll
-; linux/optimized/ht.ll
+; linux/optimized/genetlink.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/mlme.ll
@@ -41,6 +41,7 @@
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; luajit/optimized/lj_opt_narrow.ll
 ; luajit/optimized/lj_opt_narrow_dyn.ll
+; lvgl/optimized/lv_table.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openmpi/optimized/ras_base_allocate.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
@@ -64,7 +65,7 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000004(i16 %0) #0 {
+define i16 @func0000000000000014(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 6
   %.not = icmp eq i16 %1, 6

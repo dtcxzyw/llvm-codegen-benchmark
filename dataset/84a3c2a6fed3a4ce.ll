@@ -10,7 +10,7 @@
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 6
   ret i64 %4
@@ -23,7 +23,7 @@ entry:
 define i64 @func0000000000000053(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
   ret i64 %4
@@ -35,7 +35,7 @@ entry:
 define i64 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   ret i64 %4
@@ -47,7 +47,7 @@ entry:
 define i64 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   ret i64 %4
@@ -59,7 +59,7 @@ entry:
 define i64 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   ret i64 %4
@@ -83,7 +83,7 @@ entry:
 define i64 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 58
   ret i64 %4
@@ -95,7 +95,7 @@ entry:
 define i64 @func000000000000002f(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
   ret i64 %4
@@ -107,7 +107,7 @@ entry:
 define i64 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 4
   ret i64 %4

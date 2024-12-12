@@ -1,5 +1,10 @@
 
-; 33 occurrences:
+; 38 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/process.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/cmListCommand.cxx.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -34,7 +39,7 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 5
   %3 = or disjoint i64 %0, 1
@@ -46,7 +51,7 @@ entry:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; yosys/optimized/btor.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = or disjoint i64 %0, 1
@@ -57,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/maccmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = or disjoint i64 %0, 1

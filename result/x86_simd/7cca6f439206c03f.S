@@ -23,10 +23,9 @@ func0000000000000010:                   # @func0000000000000010
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	retq
-.LCPI3_0:
-	.long	1048576                         # 0x100000
 func0000000000000000:                   # @func0000000000000000
-	vpaddd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0

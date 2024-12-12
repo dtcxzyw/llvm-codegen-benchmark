@@ -6,12 +6,12 @@ func000000000000000f:                   # @func000000000000000f
 	ori	a0, a0, 4
 	ret
 func000000000000000e:                   # @func000000000000000e
-	andi	a3, a2, 1
-	lui	a2, 24576
+	andi	a3, a1, 1
+	slliw	a1, a2, 10
+	lui	a2, 512
 	bnez	a3, .LBB1_2
-	lui	a2, 28672
+	lui	a2, 1536
 .LBB1_2:                                # %entry
-	slliw	a1, a1, 16
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -45,6 +45,13 @@ func0000000000000000:                   # @func0000000000000000
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
+func000000000000000c:                   # @func000000000000000c
+	andi	a2, a2, 1
+	slliw	a1, a1, 9
+	slli	a2, a2, 12
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func0000000000000003:                   # @func0000000000000003
 	slliw	a2, a2, 4
 	andi	a1, a1, 1
@@ -64,9 +71,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000009:                   # @func0000000000000009
 	andi	a3, a2, 1
 	lui	a2, 262144
-	bnez	a3, .LBB7_2
+	bnez	a3, .LBB8_2
 	lui	a2, 262146
-.LBB7_2:                                # %entry
+.LBB8_2:                                # %entry
 	slliw	a1, a1, 16
 	or	a1, a1, a2
 	or	a0, a0, a1

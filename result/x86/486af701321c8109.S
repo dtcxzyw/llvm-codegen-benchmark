@@ -1,4 +1,4 @@
-func0000000000000128:                   # @func0000000000000128
+func0000000000000228:                   # @func0000000000000228
 	cmpl	%edi, %esi
 	setb	%al
 	testl	%edi, %edi
@@ -6,7 +6,7 @@ func0000000000000128:                   # @func0000000000000128
 	orb	%al, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000284:                   # @func0000000000000284
 	cmpl	%edi, %esi
 	setbe	%al
 	testl	%edi, %edi
@@ -14,7 +14,7 @@ func0000000000000144:                   # @func0000000000000144
 	orb	%al, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	cmpl	%edi, %esi
 	sete	%al
 	cmpl	$-32766, %edi                   # imm = 0x8002
@@ -22,7 +22,7 @@ func0000000000000044:                   # @func0000000000000044
 	orb	%al, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000a8:                   # @func00000000000000a8
 	cmpl	$1, %esi
 	sete	%al
 	cmpl	%esi, %edi

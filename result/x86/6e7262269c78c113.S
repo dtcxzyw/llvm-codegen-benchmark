@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	movslq	%edx, %rax
 	imulq	%rsi, %rdi
 	imulq	%rax, %rdi
@@ -19,21 +19,21 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdi, %rdi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movslq	%edx, %rax
 	imulq	%rsi, %rdi
 	imulq	%rax, %rdi
 	testq	%rdi, %rdi
 	sete	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movslq	%edx, %rax
 	imulq	%rsi, %rdi
 	imulq	%rax, %rdi
 	cmpq	$8, %rdi
 	setb	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movslq	%edx, %rax
 	imulq	%rsi, %rdi
 	imulq	%rax, %rdi
@@ -54,13 +54,13 @@ func000000000000000c:                   # @func000000000000000c
 	testq	%rdi, %rdi
 	setne	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	movslq	%edx, %rax
 	imulq	%rsi, %rdi
 	imulq	%rdi, %rax
 	shrq	$63, %rax
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	testq	%rsi, %rsi
 	sete	%al
 	testq	%rdi, %rdi
@@ -77,21 +77,21 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rdi, %rdi
 	setg	%al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	movslq	%edx, %rax
 	imulq	%rsi, %rdi
 	imulq	%rax, %rdi
 	testq	%rdi, %rdi
 	setne	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	movslq	%edx, %rax
 	imulq	%rsi, %rdi
 	imulq	%rax, %rdi
 	shrq	$62, %rdi
 	setne	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	movslq	%edx, %rax
 	imulq	%rsi, %rdi
 	imulq	%rax, %rdi

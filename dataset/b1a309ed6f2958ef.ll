@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 60 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; hwloc/optimized/hwloc-annotate.ll
 ; hwloc/optimized/hwloc-bind.ll
@@ -29,7 +29,6 @@
 ; llvm/optimized/InlineCost.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MachineTraceMetrics.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
@@ -60,7 +59,6 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; verilator/optimized/V3Trace.cpp.ll
-; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {

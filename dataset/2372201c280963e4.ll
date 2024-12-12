@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 75 occurrences:
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -8,23 +8,9 @@
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFileAPI.cxx.ll
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
-; cvc5/optimized/arith_poly_norm.cpp.ll
 ; cvc5/optimized/attribute.cpp.ll
-; cvc5/optimized/cegis_core_connective.cpp.ll
-; cvc5/optimized/extended_rewrite.cpp.ll
-; cvc5/optimized/miplib_trick.cpp.ll
-; cvc5/optimized/monomial.cpp.ll
-; cvc5/optimized/proof_cnf_stream.cpp.ll
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
-; cvc5/optimized/sat_proof_manager.cpp.ll
-; cvc5/optimized/sequences_rewriter.cpp.ll
-; cvc5/optimized/symmetry_breaker.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
-; cvc5/optimized/theory_arrays_rewriter.cpp.ll
-; cvc5/optimized/theory_bv_rewriter.cpp.ll
-; cvc5/optimized/theory_bv_utils.cpp.ll
-; cvc5/optimized/theory_proof_step_buffer.cpp.ll
-; cvc5/optimized/trigger_trie.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
@@ -55,7 +41,6 @@
 ; llvm/optimized/MCPseudoProbe.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/SanitizerCoverage.cpp.ll
-; llvm/optimized/SemaCoroutine.cpp.ll
 ; llvm/optimized/SymbolCache.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; nlohmann_json/optimized/unit-algorithms.cpp.ll
@@ -91,7 +76,7 @@
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; z3/optimized/euf_proof.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
@@ -119,7 +104,7 @@ entry:
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; velox/optimized/MemoryAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
@@ -221,7 +206,7 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; z3/optimized/hilbert_basis.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
@@ -235,11 +220,38 @@ entry:
 ; velox/optimized/ArraySort.cpp.ll
 ; velox/optimized/MemoryArbitrator.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
   %5 = icmp sgt i64 %0, %1
+  %6 = select i1 %5, i64 %4, i64 %3
+  ret i64 %6
+}
+
+; 16 occurrences:
+; cvc5/optimized/arith_poly_norm.cpp.ll
+; cvc5/optimized/cegis_core_connective.cpp.ll
+; cvc5/optimized/extended_rewrite.cpp.ll
+; cvc5/optimized/miplib_trick.cpp.ll
+; cvc5/optimized/monomial.cpp.ll
+; cvc5/optimized/proof_cnf_stream.cpp.ll
+; cvc5/optimized/sat_proof_manager.cpp.ll
+; cvc5/optimized/sequences_rewriter.cpp.ll
+; cvc5/optimized/symmetry_breaker.cpp.ll
+; cvc5/optimized/theory_arith_private.cpp.ll
+; cvc5/optimized/theory_arrays_rewriter.cpp.ll
+; cvc5/optimized/theory_bv_rewriter.cpp.ll
+; cvc5/optimized/theory_bv_utils.cpp.ll
+; cvc5/optimized/theory_proof_step_buffer.cpp.ll
+; cvc5/optimized/trigger_trie.cpp.ll
+; llvm/optimized/SemaCoroutine.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 2
+  %4 = or disjoint i64 %2, 1
+  %5 = icmp samesign ult i64 %0, %1
   %6 = select i1 %5, i64 %4, i64 %3
   ret i64 %6
 }

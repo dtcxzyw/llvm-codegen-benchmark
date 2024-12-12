@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; assimp/optimized/clipper.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -11,7 +11,6 @@
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/net_impl.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; quantlib/optimized/haltonrsg.ll
 ; quickjs/optimized/quickjs.ll
 ; slurm/optimized/job_info.ll

@@ -1,15 +1,28 @@
 
-; 654 occurrences:
+; 670 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bacReadVer.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/text_file_backend.ll
 ; box2d/optimized/b2_contact.cpp.ll
 ; bullet3/optimized/b3OpenCLUtils.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/btMultiBody.ll
 ; bullet3/optimized/btSoftBody.ll
-; c3c/optimized/number.c.ll
 ; c3c/optimized/sema_decls.c.ll
 ; casadi/optimized/idas.c.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -56,6 +69,7 @@
 ; cvc5/optimized/theory_datatypes.cpp.ll
 ; cvc5/optimized/theory_model_builder.cpp.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
+; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -120,6 +134,7 @@
 ; icu/optimized/numparse_affixes.ll
 ; icu/optimized/olsontz.ll
 ; icu/optimized/simpletz.ll
+; icu/optimized/tzfmt.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; ipopt/optimized/IpStdCInterface.ll
@@ -242,7 +257,6 @@
 ; llvm/optimized/Descriptor.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
-; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/FuchsiaHandleChecker.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
@@ -307,6 +321,7 @@
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/VTEmitter.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
+; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86DisassemblerTables.cpp.ll
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
@@ -316,7 +331,7 @@
 ; llvm/optimized/X86TargetParser.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luau/optimized/IrUtils.cpp.ll
-; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -485,6 +500,7 @@
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/basebackup.ll
 ; postgres/optimized/dt_common.ll
+; postgres/optimized/dumputils.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/informix.ll
@@ -498,7 +514,6 @@
 ; postgres/optimized/vacuum.ll
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/zic.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
@@ -518,7 +533,6 @@
 ; redis/optimized/quicklist.ll
 ; redis/optimized/rax.ll
 ; redis/optimized/util.ll
-; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; rocksdb/optimized/block.cc.ll
@@ -551,10 +565,6 @@
 ; slurm/optimized/job_test.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spike/optimized/execute.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/processor.ll
 ; stockfish/optimized/search.ll
 ; stockfish/optimized/tbprobe.ll
@@ -584,7 +594,6 @@
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; velox/optimized/BaseVector.cpp.ll
@@ -651,6 +660,13 @@
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/PDFBoundingBox.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
@@ -658,7 +674,7 @@
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

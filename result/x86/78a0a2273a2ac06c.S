@@ -12,6 +12,15 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$2, %edi
 	cmovnel	%edi, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	andb	$1, %sil
+	xorl	%eax, %eax
+	negb	%sil
+	sbbl	%eax, %eax
+	orl	%edi, %eax
+	cmpl	$55296, %edi                    # imm = 0xD800
+	cmovbl	%edi, %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	testb	$1, %sil
 	movl	$-8, %eax

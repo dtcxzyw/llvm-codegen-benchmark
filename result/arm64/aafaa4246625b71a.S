@@ -1,152 +1,55 @@
-func0000000000000096:                   // @func0000000000000096
+func0000000000000126:                   // @func0000000000000126
 // %bb.0:                               // %entry
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	mov	x8, #28087                      // =0x6db7
-	movk	x8, #46811, lsl #16
-	movk	x8, #56173, lsl #32
-	ushr	v3.2d, v3.2d, #3
-	ushr	v2.2d, v2.2d, #3
-	movk	x8, #28086, lsl #48
-	fmov	x9, d3
-	fmov	x11, d2
-	mov	x10, v3.d[1]
-	mov	x12, v2.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d2, x9
-	mul	x8, x12, x8
-	fmov	d3, x11
-	mov	v2.d[1], x10
-	mov	v3.d[1], x8
-	shl	v2.2d, v2.2d, #32
-	shl	v3.2d, v3.2d, #32
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	cmgt	v1.2d, v2.2d, v1.2d
-	cmgt	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x2
+	mov	w9, #28087                      // =0x6db7
+	lsr	x8, x8, #3
+	movk	w9, #46811, lsl #16
+	mul	w8, w8, w9
+	cmp	x0, w8, sxtw
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000091:                   // @func0000000000000091
+func0000000000000121:                   // @func0000000000000121
 // %bb.0:                               // %entry
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	mov	x8, #-3689348814741910324       // =0xcccccccccccccccc
-	movk	x8, #52429
-	ushr	v3.2d, v3.2d, #3
-	ushr	v2.2d, v2.2d, #3
-	fmov	x9, d3
-	fmov	x11, d2
-	mov	x10, v3.d[1]
-	mov	x12, v2.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d2, x9
-	mul	x8, x12, x8
-	fmov	d3, x11
-	mov	v2.d[1], x10
-	mov	v3.d[1], x8
-	shl	v2.2d, v2.2d, #32
-	shl	v3.2d, v3.2d, #32
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x2
+	mov	w9, #52429                      // =0xcccd
+	lsr	x8, x8, #3
+	movk	w9, #52428, lsl #16
+	mul	w8, w8, w9
+	cmp	x0, w8, sxtw
+	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000009b:                   // @func000000000000009b
+func000000000000012b:                   // @func000000000000012b
 // %bb.0:                               // %entry
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
-	movk	x8, #43691
-	ushr	v3.2d, v3.2d, #5
-	ushr	v2.2d, v2.2d, #5
-	fmov	x9, d3
-	fmov	x11, d2
-	mov	x10, v3.d[1]
-	mov	x12, v2.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d2, x9
-	mul	x8, x12, x8
-	fmov	d3, x11
-	mov	v2.d[1], x10
-	mov	v3.d[1], x8
-	shl	v2.2d, v2.2d, #32
-	shl	v3.2d, v3.2d, #32
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	cmge	v1.2d, v1.2d, v2.2d
-	cmge	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x2
+	mov	w9, #43691                      // =0xaaab
+	lsr	x8, x8, #5
+	movk	w9, #43690, lsl #16
+	mul	w8, w8, w9
+	cmp	x0, w8, sxtw
+	cset	w0, ge
 	ret
                                         // -- End function
-func0000000000000094:                   // @func0000000000000094
+func0000000000000124:                   // @func0000000000000124
 // %bb.0:                               // %entry
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
-	movk	x8, #43691
-	ushr	v3.2d, v3.2d, #5
-	ushr	v2.2d, v2.2d, #5
-	fmov	x9, d3
-	fmov	x11, d2
-	mov	x10, v3.d[1]
-	mov	x12, v2.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d2, x9
-	mul	x8, x12, x8
-	fmov	d3, x11
-	mov	v2.d[1], x10
-	mov	v3.d[1], x8
-	shl	v2.2d, v2.2d, #32
-	shl	v3.2d, v3.2d, #32
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x2
+	mov	w9, #43691                      // =0xaaab
+	lsr	x8, x8, #5
+	movk	w9, #43690, lsl #16
+	mul	w8, w8, w9
+	cmp	x0, w8, sxtw
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000098:                   // @func0000000000000098
+func0000000000000128:                   // @func0000000000000128
 // %bb.0:                               // %entry
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
-	movk	x8, #43691
-	ushr	v3.2d, v3.2d, #5
-	ushr	v2.2d, v2.2d, #5
-	fmov	x9, d3
-	fmov	x11, d2
-	mov	x10, v3.d[1]
-	mov	x12, v2.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d2, x9
-	mul	x8, x12, x8
-	fmov	d3, x11
-	mov	v2.d[1], x10
-	mov	v3.d[1], x8
-	shl	v2.2d, v2.2d, #32
-	shl	v3.2d, v3.2d, #32
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x2
+	mov	w9, #43691                      // =0xaaab
+	lsr	x8, x8, #5
+	movk	w9, #43690, lsl #16
+	mul	w8, w8, w9
+	cmp	x0, w8, sxtw
+	cset	w0, hi
 	ret
                                         // -- End function

@@ -38,10 +38,6 @@ func000000000000000a:                   # @func000000000000000a
 	fmv.w.x	fa5, a0
 	fle.s	a0, fa0, fa5
 	ret
-func000000000000000c:                   # @func000000000000000c
-	fmv.w.x	fa5, zero
-	fle.s	a0, fa5, fa0
-	ret
 func000000000000000d:                   # @func000000000000000d
 	lui	a0, 798688
 	fmv.w.x	fa5, a0
@@ -54,6 +50,10 @@ func0000000000000009:                   # @func0000000000000009
 	flt.s	a1, fa5, fa0
 	or	a0, a0, a1
 	xori	a0, a0, 1
+	ret
+func000000000000000c:                   # @func000000000000000c
+	fmv.w.x	fa5, zero
+	fle.s	a0, fa5, fa0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	feq.s	a0, fa0, fa0

@@ -1,10 +1,9 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; c3c/optimized/bigint.c.ll
-; icu/optimized/taiwncal.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005a(i32 %0) #0 {
+define i32 @func00000000000000aa(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 64, %0
   %2 = add nsw i32 %0, -64

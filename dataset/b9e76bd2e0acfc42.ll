@@ -20,7 +20,7 @@ entry:
 define i16 @func00000000000000e0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 7
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = add i32 %4, %0
   %6 = lshr i32 %5, 15
   %7 = trunc i32 %6 to i16
@@ -34,8 +34,8 @@ entry:
 define i16 @func00000000000000ea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = or disjoint i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = lshr i32 %5, 16
   %7 = trunc nuw i32 %6 to i16
   ret i16 %7

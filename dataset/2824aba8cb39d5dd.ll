@@ -18,7 +18,7 @@ entry:
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp slt i64 %2, 0
@@ -27,14 +27,13 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cmake/optimized/ProcessUNIX.c.ll
 ; eastl/optimized/EATest.cpp.ll
 ; libevent/optimized/evutil_time.c.ll
-; libquic/optimized/d1_lib.c.ll
 ; php/optimized/network.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = icmp slt i64 %2, 0

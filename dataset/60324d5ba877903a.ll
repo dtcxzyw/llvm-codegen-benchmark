@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 75 occurrences:
 ; clamav/optimized/lzxd.c.ll
 ; gromacs/optimized/bwlzh.c.ll
 ; gromacs/optimized/huffmem.c.ll
@@ -9,7 +9,6 @@
 ; hdf5/optimized/H5FDonion_index.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; hermes/optimized/MD5.cpp.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; libjpeg-turbo/optimized/rdbmp.c.ll
@@ -33,6 +32,9 @@
 ; llvm/optimized/blake3.c.ll
 ; llvm/optimized/blake3_portable.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -71,6 +73,8 @@
 ; wireshark/optimized/print.c.ll
 ; wireshark/optimized/sequence_analysis.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
@@ -128,7 +132,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %1, 16
   %5 = or disjoint i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -203,7 +207,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %1, 16
   %5 = or disjoint i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

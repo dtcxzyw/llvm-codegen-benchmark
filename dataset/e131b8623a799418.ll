@@ -1,7 +1,10 @@
 
-; 12 occurrences:
+; 15 occurrences:
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
+; darktable/optimized/introspection_bilateral.cc.ll
+; darktable/optimized/introspection_tonemap.cc.ll
 ; draco/optimized/corner_table.cc.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; llvm/optimized/DbiStream.cpp.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
@@ -21,10 +24,14 @@ entry:
   ret i1 %3
 }
 
-; 77 occurrences:
+; 81 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
@@ -100,7 +107,7 @@ entry:
 ; yosys/optimized/xaiger.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = udiv exact i64 %0, 12
   %2 = and i64 %1, 1
@@ -123,22 +130,22 @@ entry:
 ; git/optimized/date.ll
 ; linux/optimized/threshold.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
+define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 10000
   %2 = and i64 %1, 4294967295
-  %3 = icmp ult i64 %2, 25
+  %3 = icmp samesign ult i64 %2, 25
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; postgres/optimized/to_tsany.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
+define i1 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 6
   %2 = and i64 %1, 2147483647
-  %3 = icmp ugt i64 %2, 44739242
+  %3 = icmp samesign ugt i64 %2, 44739242
   ret i1 %3
 }
 
@@ -146,7 +153,7 @@ entry:
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = udiv exact i64 %0, 296
   %2 = and i64 %1, 7

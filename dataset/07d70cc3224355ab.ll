@@ -9,7 +9,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = lshr i32 %3, %1
   %5 = trunc nuw nsw i32 %4 to i8
-  %6 = or i8 %5, %0
+  %6 = or i8 %0, %5
   ret i8 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = lshr i32 %3, %1
   %5 = trunc nuw i32 %4 to i8
-  %6 = or i8 %5, %0
+  %6 = or i8 %0, %5
   ret i8 %6
 }
 

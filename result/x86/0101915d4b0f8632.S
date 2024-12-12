@@ -1,8 +1,8 @@
-func0000000000000161:                   # @func0000000000000161
+func00000000000004c1:                   # @func00000000000004c1
 	addl	$-2, %edx
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setg	%cl
+	cmpq	%rax, %rsi
+	setl	%cl
 	testb	%dil, %dil
 	sete	%al
 	andb	%cl, %al

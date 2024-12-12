@@ -1,11 +1,14 @@
 
-; 162 occurrences:
+; 165 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; c3c/optimized/bigint.c.ll
 ; cmake/optimized/huf_compress.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -172,6 +175,7 @@ entry:
 
 ; 77 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/bigint.c.ll
 ; clamav/optimized/pdfdecode.c.ll
 ; cmake/optimized/huf_compress.c.ll
@@ -196,7 +200,6 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; spike/optimized/f128_to_i64.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f128_to_ui64.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64.ll

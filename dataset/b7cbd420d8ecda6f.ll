@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 19 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/giaEquiv.c.ll
@@ -12,13 +12,8 @@
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_vblank.ll
 ; linux/optimized/irq.ll
-; llvm/optimized/MCWin64EH.cpp.ll
 ; luajit/optimized/minilua.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openjdk/optimized/os_linux.ll
 ; redis/optimized/ltable.ll
 ; wireshark/optimized/packet-h265.c.ll
@@ -44,7 +39,7 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 2
   %4 = icmp eq i32 %1, 0

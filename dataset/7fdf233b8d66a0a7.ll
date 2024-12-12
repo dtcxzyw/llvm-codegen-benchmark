@@ -98,7 +98,7 @@ entry:
   ret i32 %7
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -108,6 +108,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll

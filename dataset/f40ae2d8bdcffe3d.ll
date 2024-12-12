@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; spike/optimized/fcvtmod_w_d.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1011
   %3 = zext nneg i32 %2 to i64
@@ -21,7 +21,7 @@ entry:
 ; zfp/optimized/encode4d.c.ll
 ; zfp/optimized/encode4l.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/sd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -9
   %3 = zext nneg i32 %2 to i64

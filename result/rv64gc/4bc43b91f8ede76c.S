@@ -94,10 +94,22 @@ func000000000000000f:                   # @func000000000000000f
 	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func000000000000001d:                   # @func000000000000001d
-	li	a2, -40
+func0000000000000017:                   # @func0000000000000017
+	lui	a2, 1
+	addiw	a2, a2, -496
 	mul	a1, a1, a2
-	li	a2, 40
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	sub	a0, a0, a2
+	add	a0, a0, a1
+	ret
+func000000000000001d:                   # @func000000000000001d
+	lui	a2, 244
+	addiw	a2, a2, 576
+	mul	a1, a1, a2
+	lui	a2, 2575
+	addiw	a2, a2, -325
+	slli	a2, a2, 13
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret

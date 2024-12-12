@@ -24,12 +24,12 @@ func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v9, v12, fa5
 	vmand.mm	v8, v9, v8
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v9, v12, fa5
 	vmand.mm	v8, v9, v8
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret

@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
+; 1 occurrences:
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i16 %2) #0 {
@@ -28,12 +27,24 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000001c4(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = mul nuw nsw i64 %0, %1
   %5 = mul nuw i64 %4, %3
   %6 = icmp ult i64 %5, 8
+  ret i1 %6
+}
+
+; 1 occurrences:
+; miniaudio/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = mul i64 %0, %1
+  %5 = mul i64 %4, %3
+  %6 = icmp samesign ult i64 %5, 8
   ret i1 %6
 }
 

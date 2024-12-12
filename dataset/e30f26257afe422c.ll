@@ -5,7 +5,7 @@
 ; folly/optimized/HugePages.cpp.ll
 ; opencv/optimized/approx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %2, %1
@@ -39,7 +39,7 @@ entry:
 ; protobuf/optimized/import_writer.cc.ll
 ; protobuf/optimized/text_format_decode_data.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %2, %1
@@ -55,7 +55,7 @@ entry:
 ; php/optimized/php_cli_server.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i64 %1) #0 {
+define i1 @func000000000000014c(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %2, %1

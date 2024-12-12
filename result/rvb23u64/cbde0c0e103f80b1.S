@@ -10,15 +10,7 @@ func000000000000000c:                   # @func000000000000000c
 	or	a0, a0, a2
 	zext.w	a0, a0
 	ret
-func0000000000000063:                   # @func0000000000000063
-	sext.w	a1, a1
-	addi	a2, a2, 2
-	czero.eqz	a2, a2, a1
-	czero.nez	a0, a0, a1
-	or	a0, a0, a2
-	sext.w	a0, a0
-	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	sext.w	a1, a1
 	addi	a2, a2, 2
 	slti	a1, a1, 0
@@ -44,7 +36,7 @@ func0000000000000009:                   # @func0000000000000009
 	or	a0, a0, a2
 	sext.w	a0, a0
 	ret
-func0000000000000069:                   # @func0000000000000069
+func00000000000000c9:                   # @func00000000000000c9
 	sext.w	a1, a1
 	addi	a2, a2, 256
 	sltiu	a1, a1, 257
@@ -53,7 +45,16 @@ func0000000000000069:                   # @func0000000000000069
 	or	a0, a0, a2
 	sext.w	a0, a0
 	ret
-func0000000000000042:                   # @func0000000000000042
+func00000000000000e9:                   # @func00000000000000e9
+	sext.w	a1, a1
+	addi	a2, a2, 256
+	sltiu	a1, a1, 257
+	czero.nez	a2, a2, a1
+	czero.eqz	a0, a0, a1
+	or	a0, a0, a2
+	sext.w	a0, a0
+	ret
+func0000000000000082:                   # @func0000000000000082
 	sext.w	a1, a1
 	addi	a2, a2, 1
 	czero.eqz	a2, a2, a1
@@ -69,10 +70,18 @@ func0000000000000018:                   # @func0000000000000018
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000f1:                   # @func00000000000000f1
 	sext.w	a1, a1
 	addi	a2, a2, 1
 	sltiu	a1, a1, 65
+	czero.eqz	a2, a2, a1
+	czero.nez	a0, a0, a1
+	or	a0, a0, a2
+	sext.w	a0, a0
+	ret
+func00000000000000c3:                   # @func00000000000000c3
+	sext.w	a1, a1
+	addi	a2, a2, 4
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
@@ -106,7 +115,7 @@ func0000000000000014:                   # @func0000000000000014
 	or	a0, a0, a2
 	zext.w	a0, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addi	a2, a2, -1
 	srliw	a1, a1, 27
 	czero.eqz	a2, a2, a1

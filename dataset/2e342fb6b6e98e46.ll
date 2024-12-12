@@ -5,7 +5,7 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
@@ -25,7 +25,7 @@ entry:
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/migration_qemu-file.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -47,7 +47,7 @@ entry:
 ; openjdk/optimized/parse2.ll
 ; php/optimized/tm2unixtime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -55,7 +55,7 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; arrow/optimized/builder_run_end.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
@@ -64,12 +64,13 @@ entry:
 ; graphviz/optimized/hedges.c.ll
 ; icu/optimized/rbbi.ll
 ; icu/optimized/unisetspan.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; openjdk/optimized/jvmciCodeInstaller.ll
 ; openjdk/optimized/parse2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -94,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/spprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw i64 %3, %1
@@ -106,7 +107,7 @@ entry:
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; velox/optimized/AllocationPool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
@@ -117,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -136,7 +137,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -147,7 +148,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_invert.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw i64 %3, %1
@@ -171,7 +172,7 @@ entry:
 ; opencv/optimized/radial_variance_hash.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -194,7 +195,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
@@ -205,7 +206,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw i64 %3, %1

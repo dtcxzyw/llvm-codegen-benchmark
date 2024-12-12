@@ -8,7 +8,7 @@
 ; vcpkg/optimized/binaryparagraph.cpp.ll
 ; vcpkg/optimized/strings.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000048(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 %0
   %4 = icmp ugt i64 %0, %1

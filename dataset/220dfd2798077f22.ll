@@ -40,4 +40,16 @@ entry:
   ret i32 %3
 }
 
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i8 %0) #0 {
+entry:
+  %1 = freeze i8 %0
+  %2 = zext i8 %1 to i32
+  %3 = shl nuw i32 %2, 24
+  ret i32 %3
+}
+
 attributes #0 = { nounwind }

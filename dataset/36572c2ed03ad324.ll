@@ -5,13 +5,13 @@
 ; ocio/optimized/HashUtils.cpp.ll
 ; rocksdb/optimized/hash.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ab(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -1024
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = shl nuw i64 %1, 6
   %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 384
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 384
   ret ptr %7
 }
 
@@ -72,13 +72,13 @@ entry:
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -1024
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = shl i64 %1, 6
   %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 320
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 320
   ret ptr %7
 }
 
@@ -98,13 +98,13 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/twophase.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = shl nsw i64 %1, 4
   %6 = getelementptr i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 4
   ret ptr %7
 }
 

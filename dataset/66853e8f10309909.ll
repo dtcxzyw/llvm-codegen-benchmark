@@ -4,11 +4,11 @@
 ; libuv/optimized/inet.c.ll
 ; node/optimized/inet.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000188(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = mul nuw nsw i32 %2, 10
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp ugt i32 %4, 255
   ret i1 %5
 }
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ua3g.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = mul nsw i32 %2, -6

@@ -20,7 +20,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wasmtime-rs/optimized/5lt5r4zkd9qrbog.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = lshr i32 %0, %2
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = lshr i32 %0, %2
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = lshr i32 %0, %2
@@ -54,7 +54,7 @@ entry:
 ; linux/optimized/tcp_output.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = lshr i32 %0, %2

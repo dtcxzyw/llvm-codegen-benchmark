@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; nix/optimized/util.ll
-; velox/optimized/VectorFuzzer.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -12,7 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 30 occurrences:
+; 28 occurrences:
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
 ; nix/optimized/build.ll
@@ -31,8 +30,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -44,7 +41,7 @@ entry:
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 15, i64 %2
   %4 = shl nuw nsw i64 %0, 1

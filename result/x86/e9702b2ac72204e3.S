@@ -12,14 +12,14 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	testb	$1, %dl
 	movl	$1, %eax
 	cmovneq	%rsi, %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	xorl	%eax, %eax
 	testb	$1, %dl
 	cmovneq	%rsi, %rax
@@ -39,4 +39,11 @@ func0000000000000009:                   # @func0000000000000009
 	cmovneq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setae	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	testb	$1, %dl
+	movl	$120000, %eax                   # imm = 0x1D4C0
+	cmovneq	%rsi, %rax
+	cmpq	%rdi, %rax
+	seta	%al
 	retq

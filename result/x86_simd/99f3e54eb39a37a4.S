@@ -8,7 +8,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
@@ -28,10 +28,18 @@ func0000000000000030:                   # @func0000000000000030
 	vzeroupper
 	retq
 .LCPI4_0:
+	.long	239                             # 0xef
+func0000000000000014:                   # @func0000000000000014
+	vpsubd	%ymm0, %ymm1, %ymm0
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
+	vpmovdb	%ymm0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
 	.long	3                               # 0x3
 func000000000000003e:                   # @func000000000000003e
 	vpsubd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq

@@ -6,7 +6,7 @@
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 1072693248
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -43,17 +43,17 @@ entry:
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
+; boost/optimized/message.ll
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/upack.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/intel_ggtt_fencing.ll
-; linux/optimized/utids.ll
 ; linux/optimized/virtio_ring.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/StmtOpenMP.cpp.ll
@@ -62,7 +62,6 @@ entry:
 ; openjdk/optimized/callnode.ll
 ; openjdk/optimized/macro.ll
 ; openusd/optimized/blend_a64_mask.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/sortmax.cpp.ll
@@ -71,7 +70,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or disjoint i32 %1, 6
+  %2 = or disjoint i32 %1, 1
   %3 = add i32 %2, %0
   %4 = zext i32 %3 to i64
   ret i64 %4
@@ -83,7 +82,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 536870912
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -99,9 +98,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
+; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
@@ -132,7 +132,7 @@ entry:
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -143,7 +143,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 3
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

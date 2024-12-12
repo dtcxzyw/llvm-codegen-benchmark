@@ -7,8 +7,8 @@ func000000000000000d:                   # @func000000000000000d
 	retq
 func0000000000000004:                   # @func0000000000000004
 	andl	$1048575, %edx                  # imm = 0xFFFFF
-	leaq	(%rdx,%rsi), %rcx
-	leaq	48576(%rdx,%rsi), %rax
+	leaq	(%rsi,%rdx), %rcx
+	leaq	48576(%rsi,%rdx), %rax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq

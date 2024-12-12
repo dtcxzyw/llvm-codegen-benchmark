@@ -4,7 +4,7 @@
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = zext nneg i8 %2 to i16

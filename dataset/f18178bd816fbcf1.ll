@@ -66,6 +66,17 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; linux/optimized/huf_decompress.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = add i32 %0, 33554432
+  %4 = or i32 %3, %2
+  ret i32 %4
+}
+
 ; 2 occurrences:
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/utf_impl.ll

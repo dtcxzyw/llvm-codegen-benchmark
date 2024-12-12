@@ -65,16 +65,15 @@ entry:
   ret i16 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/hfsplus.c.ll
-; git/optimized/merge-ort.ll
 ; linux/optimized/exthdrs.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-selfm.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000c(i16 %0, i16 %1) #0 {
 entry:
-  %2 = shl nuw nsw i16 %1, 8
+  %2 = shl nuw nsw i16 %1, 1
   %3 = sub i16 %0, %2
   ret i16 %3
 }

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; gromacs/optimized/xtc3.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = icmp sgt i32 %3, 2
@@ -15,7 +15,7 @@ entry:
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = icmp sgt i32 %3, 0
@@ -30,7 +30,7 @@ entry:
 ; opencv/optimized/matrix.cpp.ll
 ; opencv/optimized/umatrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/levmarq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -66,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/backward_references_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = icmp slt i32 %3, 9

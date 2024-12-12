@@ -1,12 +1,17 @@
 
-; 5 occurrences:
+; 10 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; quantlib/optimized/expcorrelations.ll
 ; quantlib/optimized/nothingexercisevalue.ll
 ; quantlib/optimized/timehomogeneousforwardcorrelation.ll
 ; ruby/optimized/vm_backtrace.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp eq ptr %0, %1
@@ -41,7 +46,7 @@ entry:
 ; llvm/optimized/DIBuilder.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq ptr %0, %1

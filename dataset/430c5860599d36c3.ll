@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 45 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/avc.ll
@@ -8,9 +8,7 @@
 ; linux/optimized/hwmon.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/iommu-traces.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/sched.ll
@@ -28,7 +26,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
@@ -41,15 +38,6 @@
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/VLASizeChecker.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; openjdk/optimized/g1ConcurrentMark.ll
-; openjdk/optimized/g1FullGCMarker.ll
-; openjdk/optimized/g1ParScanThreadState.ll
-; openjdk/optimized/psParallelCompact.ll
-; openjdk/optimized/psScavenge.ll
-; openjdk/optimized/shenandoahHeap.ll
-; openjdk/optimized/shenandoahMark.ll
-; openjdk/optimized/xHeapIterator.ll
-; openjdk/optimized/zHeapIterator.ll
 ; php/optimized/ir_cfg.ll
 ; php/optimized/ir_sccp.ll
 ; postgres/optimized/auth.ll
@@ -61,13 +49,13 @@
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add i32 %1, 1
-  %3 = and i32 %2, 131071
+  %2 = add i32 %1, 63
+  %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; icu/optimized/package.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -80,7 +68,6 @@ entry:
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -157,18 +144,6 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; z3/optimized/watch_list.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0) #0 {
-entry:
-  %1 = trunc nuw i64 %0 to i32
-  %2 = add nuw i32 %1, 3
-  %3 = and i32 %2, -4
-  %4 = zext i32 %3 to i64
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -15,7 +15,6 @@
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/IfConversion.cpp.ll
 ; llvm/optimized/MemorySSA.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; openmpi/optimized/opal_datatype_add.ll
@@ -26,6 +25,8 @@
 ; ruby/optimized/prism.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; sqlite/optimized/sqlite3.ll
+; wasmtime-rs/optimized/33slbp9da8waph2q.ll
+; wasmtime-rs/optimized/lin3yywv836im8d.ll
 ; wireshark/optimized/packet-mysql.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {

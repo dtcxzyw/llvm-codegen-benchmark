@@ -56,7 +56,51 @@ entry:
   ret i64 %4
 }
 
-; 68 occurrences:
+; 112 occurrences:
+; abc/optimized/abcDfs.c.ll
+; abc/optimized/abcExact.c.ll
+; abc/optimized/abcFraig.c.ll
+; abc/optimized/abcGen.c.ll
+; abc/optimized/abcIf.c.ll
+; abc/optimized/abcStrash.c.ll
+; abc/optimized/abcSweep.c.ll
+; abc/optimized/abcUtil.c.ll
+; abc/optimized/absRpm.c.ll
+; abc/optimized/acecFadds.c.ll
+; abc/optimized/amapParse.c.ll
+; abc/optimized/cbaCom.c.ll
+; abc/optimized/cbaReadBlif.c.ll
+; abc/optimized/cbaReadVer.c.ll
+; abc/optimized/cnfWrite.c.ll
+; abc/optimized/extraUtilEnum.c.ll
+; abc/optimized/giaAiger.c.ll
+; abc/optimized/giaCof.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaFrames.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaMini.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaRex.c.ll
+; abc/optimized/giaSatLE.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaSplit.c.ll
+; abc/optimized/giaStg.c.ll
+; abc/optimized/giaStoch.c.ll
+; abc/optimized/ioReadAiger.c.ll
+; abc/optimized/ioReadBaf.c.ll
+; abc/optimized/ioReadBlif.c.ll
+; abc/optimized/ioaReadAig.c.ll
+; abc/optimized/ivyDsd.c.ll
+; abc/optimized/mioParse.c.ll
+; abc/optimized/pdrInv.c.ll
+; abc/optimized/satProof.c.ll
+; abc/optimized/sclSize.c.ll
+; abc/optimized/sfmDec.c.ll
+; abc/optimized/sswRarity.c.ll
+; abc/optimized/utilBridge.c.ll
+; abc/optimized/utilNam.c.ll
+; abc/optimized/verFormula.c.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/string-to-double.cc.ll
 ; arrow/optimized/strtod.cc.ll

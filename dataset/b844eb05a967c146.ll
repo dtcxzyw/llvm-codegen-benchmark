@@ -1,5 +1,5 @@
 
-; 229 occurrences:
+; 226 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; clamav/optimized/hash.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/espfix_64.ll
 ; linux/optimized/fault.ll
 ; linux/optimized/gup.ll
-; linux/optimized/hibernate.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/insn-eval.ll
@@ -22,14 +21,11 @@
 ; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/ioremap.ll
 ; linux/optimized/kexec_core.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/pasid.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/pti.ll
@@ -226,6 +222,7 @@
 ; llvm/optimized/Type.cpp.ll
 ; llvm/optimized/TypeStreamMerger.cpp.ll
 ; llvm/optimized/VforkChecker.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; protobuf/optimized/arena.cc.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
@@ -245,7 +242,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 562949953421308
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
@@ -257,7 +254,7 @@ entry:
 define ptr @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

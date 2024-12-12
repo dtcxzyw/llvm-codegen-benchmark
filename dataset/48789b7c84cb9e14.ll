@@ -43,7 +43,7 @@
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 27
   %3 = add i64 %2, 4294967296
@@ -97,7 +97,7 @@ entry:
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 27
   %3 = add i64 %2, 4294967296
@@ -111,7 +111,7 @@ entry:
 ; lightgbm/optimized/metadata.cpp.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 30
   %3 = add i64 %2, 4294967296
@@ -125,7 +125,7 @@ entry:
 ; lightgbm/optimized/metadata.cpp.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 30
   %3 = add i64 %2, 4294967296

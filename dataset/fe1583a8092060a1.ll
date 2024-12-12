@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; cpython/optimized/ceval.ll
+; 7 occurrences:
 ; linux/optimized/mlme.ll
 ; openjdk/optimized/cdsEnumKlass.ll
 ; openjdk/optimized/systemDictionaryShared.ll
@@ -26,17 +25,31 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/ps_core.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000006f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -4
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 12
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 12
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
-; 112 occurrences:
+; 2 occurrences:
+; openjdk/optimized/stackValue.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 536870908
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %6 = getelementptr nusw i64, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 110 occurrences:
 ; icu/optimized/ucase.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTDumper.cpp.ll
@@ -141,34 +154,45 @@ entry:
 ; memcached/optimized/memcached_debug-restart.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; memcached/optimized/memcached_debug-storage.ll
-; openjdk/optimized/stackValue.ll
 ; redis/optimized/rax.ll
-; sqlite/optimized/sqlite3.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_clause_proof.cpp.ll
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 536870908
+  %3 = and i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 16
-  %6 = getelementptr nusw i64, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; linux/optimized/hid-core.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 -168
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr ptr, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; cpython/optimized/ceval.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000070(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 72
+  %6 = getelementptr ptr, ptr %5, i64 %0
   %7 = getelementptr ptr, ptr %6, i64 %4
   ret ptr %7
 }

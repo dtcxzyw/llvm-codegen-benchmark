@@ -42,7 +42,7 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
@@ -51,8 +51,9 @@ entry:
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
 ; wasmtime-rs/optimized/1hiygxwyk6ulivti.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv exact i64 %2, 12
   %4 = add nuw nsw i64 %3, %1
@@ -61,9 +62,20 @@ entry:
 }
 
 ; 1 occurrences:
+; turborepo-rs/optimized/allq2hqzkn1ywqvzl6k501g1q.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = udiv exact i64 %2, 48
+  %4 = add nuw i64 %3, %1
+  %5 = icmp ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/addrconf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 1000
   %4 = add nsw i64 %3, %1

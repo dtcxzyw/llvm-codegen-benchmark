@@ -1,11 +1,13 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
+; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; openjdk/optimized/HBShaper.ll
 ; openjdk/optimized/constantPool.ll
@@ -32,12 +34,12 @@ entry:
 ; openusd/optimized/testHioImage.cpp.ll
 ; yosys/optimized/coolrunner2_sop.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = shl nuw nsw i64 %3, 1
   %5 = or disjoint i64 %4, 1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -71,8 +73,11 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 4 occurrences:
 ; darktable/optimized/amaze.cc.ll
+; zed-rs/optimized/2y3d15fhybcig6chysm503x7k.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -83,16 +88,15 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_blurs.c.ll
-; gromacs/optimized/grompp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000006f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = shl nsw i64 %3, 2
   %5 = or disjoint i64 %4, 3
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -118,6 +122,31 @@ entry:
   %4 = shl i64 %3, 2
   %5 = or disjoint i64 %4, 3
   %6 = getelementptr nusw float, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; gromacs/optimized/grompp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = shl nsw i64 %3, 2
+  %5 = or disjoint i64 %4, 1
+  %6 = getelementptr nusw float, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = shl nsw i64 %3, 2
+  %5 = or disjoint i64 %4, 2
+  %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

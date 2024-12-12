@@ -35,7 +35,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = shl i64 %2, 40
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

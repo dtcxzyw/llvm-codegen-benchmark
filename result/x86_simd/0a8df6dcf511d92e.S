@@ -1,9 +1,8 @@
 func000000000000000c:                   # @func000000000000000c
 	vpsllw	$15, %xmm2, %xmm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpneqd	%ymm4, %ymm0, %k1
-	vpcmpgtw	%xmm2, %xmm3, %k1 {%k1}
+	vpmovw2m	%xmm2, %k1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpcmpneqd	%ymm2, %ymm0, %k1 {%k1}
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
 .LCPI1_0:

@@ -9,11 +9,12 @@ entry:
   %2 = icmp ne i64 %0, 0
   %3 = select i1 %1, i1 %2, i1 false
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/qdplusamericanengine.ll
 ; Function Attrs: nounwind
@@ -22,7 +23,7 @@ entry:
   %2 = icmp ugt i64 %0, 1
   %3 = select i1 %1, i1 %2, i1 false
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

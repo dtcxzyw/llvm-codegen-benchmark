@@ -1,34 +1,32 @@
-func0000000000000110:                   // @func0000000000000110
+func0000000000000230:                   // @func0000000000000230
 // %bb.0:                               // %entry
-	movi	v6.2d, #0x000000ffffffff
-	cmhi	v7.2d, v4.2d, v6.2d
-	cmhi	v6.2d, v5.2d, v6.2d
-	bif	v3.16b, v5.16b, v6.16b
-	bif	v2.16b, v4.16b, v7.16b
-	movi	v4.2d, #0x0000000000ffff
-	cmhi	v5.2d, v2.2d, v4.2d
-	cmhi	v4.2d, v3.2d, v4.2d
-	bif	v1.16b, v3.16b, v4.16b
-	bif	v0.16b, v2.16b, v5.16b
-	ushr	v0.2d, v0.2d, #8
-	ushr	v1.2d, v1.2d, #8
+	lsr	x8, x2, #32
+	cmp	x8, #0
+	csel	x8, x1, x2, ne
+	lsr	x9, x8, #16
+	cmp	x9, #0
+	csel	x8, x0, x8, ne
+	lsr	x0, x8, #8
 	ret
                                         // -- End function
-func0000000000000088:                   // @func0000000000000088
+func0000000000000630:                   // @func0000000000000630
 // %bb.0:                               // %entry
-	mov	x8, #72057594037927936          // =0x100000000000000
-	dup	v6.2d, x8
-	mov	x8, #1152921504606846976        // =0x1000000000000000
-	cmhi	v7.2d, v6.2d, v4.2d
-	cmhi	v6.2d, v6.2d, v5.2d
-	bif	v3.16b, v5.16b, v6.16b
-	bif	v2.16b, v4.16b, v7.16b
-	dup	v4.2d, x8
-	cmhi	v5.2d, v4.2d, v2.2d
-	cmhi	v4.2d, v4.2d, v3.2d
-	bif	v1.16b, v3.16b, v4.16b
-	bif	v0.16b, v2.16b, v5.16b
-	ushr	v0.2d, v0.2d, #60
-	ushr	v1.2d, v1.2d, #60
+	lsr	x8, x2, #16
+	cmp	x8, #0
+	csel	x8, x1, x2, ne
+	cmp	x8, #255
+	csel	x8, x0, x8, hi
+	lsr	x0, x8, #4
+	ret
+                                        // -- End function
+func0000000000000108:                   // @func0000000000000108
+// %bb.0:                               // %entry
+	lsr	x8, x2, #56
+	cmp	x8, #0
+	csel	x8, x1, x2, eq
+	lsr	x9, x8, #60
+	cmp	x9, #0
+	csel	x8, x0, x8, eq
+	lsr	x0, x8, #60
 	ret
                                         // -- End function

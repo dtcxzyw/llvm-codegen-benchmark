@@ -1,22 +1,22 @@
 
-%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2511718" = type { i64, i64 }
-%"class.std::__cxx11::basic_string.3032510" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3032550", i64, %union.anon.3032551 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3032550" = type { ptr }
-%union.anon.3032551 = type { i64, [8 x i8] }
-%struct.netdev_queue.3358894 = type { ptr, %struct.netdevice_tracker.3358895, ptr, ptr, %struct.kobject.3358896, i32, i64, %struct.atomic64_t.3358897, ptr, ptr, %struct.spinlock.3358848, i32, i64, i64, [40 x i8], %struct.dql.3358898 }
-%struct.netdevice_tracker.3358895 = type {}
-%struct.kobject.3358896 = type { ptr, %struct.list_head.3358849, ptr, ptr, ptr, ptr, %struct.kref.3358899, i8 }
-%struct.list_head.3358849 = type { ptr, ptr }
-%struct.kref.3358899 = type { %struct.refcount_struct.3358900 }
-%struct.refcount_struct.3358900 = type { %struct.atomic_t.3358854 }
-%struct.atomic_t.3358854 = type { i32 }
-%struct.atomic64_t.3358897 = type { i64 }
-%struct.spinlock.3358848 = type { %union.anon.0.3358850 }
-%union.anon.0.3358850 = type { %struct.raw_spinlock.3358851 }
-%struct.raw_spinlock.3358851 = type { %struct.qspinlock.3358852 }
-%struct.qspinlock.3358852 = type { %union.anon.1.3358853 }
-%union.anon.1.3358853 = type { %struct.atomic_t.3358854 }
-%struct.dql.3358898 = type { i32, i32, i32, [52 x i8], i32, i32, i32, i32, i32, i32, i64, i32, i32, i32, [20 x i8] }
+%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852" = type { i64, i64 }
+%"class.std::__cxx11::basic_string.3225886" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3225926", i64, %union.anon.3225927 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3225926" = type { ptr }
+%union.anon.3225927 = type { i64, [8 x i8] }
+%struct.netdev_queue.3545812 = type { ptr, %struct.netdevice_tracker.3545813, ptr, ptr, %struct.kobject.3545814, i32, i64, %struct.atomic64_t.3545815, ptr, ptr, %struct.spinlock.3545766, i32, i64, i64, [40 x i8], %struct.dql.3545816 }
+%struct.netdevice_tracker.3545813 = type {}
+%struct.kobject.3545814 = type { ptr, %struct.list_head.3545767, ptr, ptr, ptr, ptr, %struct.kref.3545817, i8 }
+%struct.list_head.3545767 = type { ptr, ptr }
+%struct.kref.3545817 = type { %struct.refcount_struct.3545818 }
+%struct.refcount_struct.3545818 = type { %struct.atomic_t.3545772 }
+%struct.atomic_t.3545772 = type { i32 }
+%struct.atomic64_t.3545815 = type { i64 }
+%struct.spinlock.3545766 = type { %union.anon.0.3545768 }
+%union.anon.0.3545768 = type { %struct.raw_spinlock.3545769 }
+%struct.raw_spinlock.3545769 = type { %struct.qspinlock.3545770 }
+%struct.qspinlock.3545770 = type { %union.anon.1.3545771 }
+%union.anon.1.3545771 = type { %struct.atomic_t.3545772 }
+%struct.dql.3545816 = type { i32, i32, i32, [52 x i8], i32, i32, i32, i32, i32, i32, i64, i32, i32, i32, [20 x i8] }
 
 ; 30 occurrences:
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
@@ -50,24 +50,24 @@
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 4
   %4 = add i64 %3, %1
   %5 = and i64 %4, 31
-  %6 = getelementptr nusw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2511718", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852", ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.3032510", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.3225886", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -79,19 +79,19 @@ entry:
   %3 = ashr i64 %2, 63
   %4 = add nsw i64 %3, %1
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr %struct.netdev_queue.3358894, ptr %0, i64 %5
+  %6 = getelementptr %struct.netdev_queue.3545812, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = add i64 %3, %1
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -4,12 +4,6 @@ func0000000000000006:                   # @func0000000000000006
 	orl	%esi, %eax
 	andl	$1008, %eax                     # imm = 0x3F0
 	retq
-func0000000000000000:                   # @func0000000000000000
-	shlq	$52, %rsi
-	orq	%rdi, %rsi
-	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
-	andq	%rsi, %rax
-	retq
 func0000000000000007:                   # @func0000000000000007
 	movq	%rdi, %rax
 	shll	$8, %esi
@@ -20,6 +14,12 @@ func0000000000000001:                   # @func0000000000000001
 	shlq	$8, %rsi
 	orq	%rdi, %rsi
 	movb	$52, %al
+	bzhiq	%rax, %rsi, %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	shlq	$32, %rsi
+	orq	%rdi, %rsi
+	movb	$48, %al
 	bzhiq	%rax, %rsi, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005

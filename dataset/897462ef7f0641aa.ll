@@ -27,11 +27,11 @@
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000408(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 20479
   %4 = select i1 %3, i64 40960, i64 %1
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   %6 = icmp ugt i64 %5, 72057594037927935
   ret i1 %6
 }

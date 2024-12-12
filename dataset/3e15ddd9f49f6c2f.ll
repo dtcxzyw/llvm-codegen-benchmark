@@ -1,10 +1,12 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; linux/optimized/hda_codec.ll
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
@@ -20,7 +22,7 @@ entry:
 ; php/optimized/hash_sha.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i64 %0) #0 {
+define i32 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 768
   %2 = icmp eq i64 %1, 0

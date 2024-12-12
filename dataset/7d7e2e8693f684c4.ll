@@ -18,5 +18,15 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 
+; 1 occurrences:
+; boost/optimized/text_file_backend.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0) #0 {
+entry:
+  %1 = srem i64 %0, 1000000
+  %2 = call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
+  ret i64 %2
+}
+
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

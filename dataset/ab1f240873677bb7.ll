@@ -11,12 +11,11 @@ entry:
   ret i8 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; c3c/optimized/json.c.ll
 ; casadi/optimized/serializing_stream.cpp.ll
 ; clamav/optimized/pdf.c.ll
 ; openusd/optimized/decodemv.c.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/fe-exec.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; Function Attrs: nounwind

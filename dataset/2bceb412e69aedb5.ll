@@ -5,7 +5,7 @@
 ; oiio/optimized/imageinput.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i32 %2, %1
@@ -20,7 +20,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000546(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %2, %1
@@ -35,7 +35,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp slt i32 %1, %2

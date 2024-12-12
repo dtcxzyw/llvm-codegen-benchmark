@@ -12,3 +12,9 @@ func000000000000001e:                   # @func000000000000001e
 	orl	%edi, %eax
 	shrl	$9, %eax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	movzbl	%dl, %eax
+	orl	%esi, %edi
+	shrl	$24, %edi
+	orl	%edi, %eax
+	retq

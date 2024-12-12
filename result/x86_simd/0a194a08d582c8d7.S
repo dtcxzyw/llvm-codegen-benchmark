@@ -52,3 +52,11 @@ func0000000000000005:                   # @func0000000000000005
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpaddq	.LCPI5_1(%rip){1to4}, %ymm0, %ymm0
 	retq
+.LCPI6_0:
+	.quad	7                               # 0x7
+func0000000000000007:                   # @func0000000000000007
+	vpaddq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
+	vpsrlq	$3, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
+	retq

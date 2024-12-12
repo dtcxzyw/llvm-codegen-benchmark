@@ -1,12 +1,10 @@
 
-%"class.llvm::SDUse.3049059" = type { %"class.llvm::SDValue.3049039", ptr, ptr, ptr }
-%"class.llvm::SDValue.3049039" = type <{ ptr, i32, [4 x i8] }>
-%"class.llvm::SDUse.3050189" = type { %"class.llvm::SDValue.3050147", ptr, ptr, ptr }
-%"class.llvm::SDValue.3050147" = type <{ ptr, i32, [4 x i8] }>
-%struct.conversation_element.3258475 = type { i32, %union.anon.3258476 }
-%union.anon.3258476 = type { %struct._address.3258474 }
-%struct._address.3258474 = type { i32, i32, ptr, ptr }
-%struct.VP8LBackwardRefs.3715740 = type { i32, i32, ptr, ptr, ptr, ptr }
+%"class.llvm::SDUse.3242400" = type { %"class.llvm::SDValue.3242380", ptr, ptr, ptr }
+%"class.llvm::SDValue.3242380" = type <{ ptr, i32, [4 x i8] }>
+%struct.conversation_element.3449322 = type { i32, %union.anon.3449323 }
+%union.anon.3449323 = type { %struct._address.3449321 }
+%struct._address.3449321 = type { i32, i32, ptr, ptr }
+%struct.VP8LBackwardRefs.3895034 = type { i32, i32, ptr, ptr, ptr, ptr }
 
 ; 8 occurrences:
 ; cmake/optimized/zstd_decompress.c.ll
@@ -39,7 +37,7 @@ entry:
   ret ptr %4
 }
 
-; 390 occurrences:
+; 388 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -47,6 +45,7 @@ entry:
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; bullet3/optimized/b3DNA.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -106,10 +105,8 @@ entry:
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; glslang/optimized/SpvPostProcess.cpp.ll
 ; glslang/optimized/doc.cpp.ll
-; graphviz/optimized/DotIO.c.ll
 ; graphviz/optimized/actions.c.ll
 ; graphviz/optimized/acyclic.c.ll
-; graphviz/optimized/adjust.c.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/bcomps.c.ll
 ; graphviz/optimized/blockpath.c.ll
@@ -125,12 +122,10 @@ entry:
 ; graphviz/optimized/compile.c.ll
 ; graphviz/optimized/compound.c.ll
 ; graphviz/optimized/conc.c.ll
-; graphviz/optimized/constraint.c.ll
 ; graphviz/optimized/decomp.c.ll
 ; graphviz/optimized/dotinit.c.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/edge.c.ll
-; graphviz/optimized/edgepaintmain.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/fastgr.c.ll
 ; graphviz/optimized/flat.c.ll
@@ -140,7 +135,6 @@ entry:
 ; graphviz/optimized/gv2gml.c.ll
 ; graphviz/optimized/gv2gxl.c.ll
 ; graphviz/optimized/gvcolor.c.ll
-; graphviz/optimized/gvevent.c.ll
 ; graphviz/optimized/gvpack.cpp.ll
 ; graphviz/optimized/gvrender_core_json.c.ll
 ; graphviz/optimized/gvtool_tred.c.ll
@@ -155,11 +149,9 @@ entry:
 ; graphviz/optimized/ns.c.ll
 ; graphviz/optimized/ortho.c.ll
 ; graphviz/optimized/output.c.ll
-; graphviz/optimized/pack.c.ll
 ; graphviz/optimized/position.c.ll
 ; graphviz/optimized/postproc.c.ll
 ; graphviz/optimized/rank.c.ll
-; graphviz/optimized/rec.c.ll
 ; graphviz/optimized/routespl.c.ll
 ; graphviz/optimized/sameport.c.ll
 ; graphviz/optimized/sccmap.c.ll
@@ -171,7 +163,6 @@ entry:
 ; graphviz/optimized/tred.c.ll
 ; graphviz/optimized/unflatten.c.ll
 ; graphviz/optimized/write.c.ll
-; graphviz/optimized/xlayout.c.ll
 ; gromacs/optimized/basicoptions.cpp.ll
 ; gromacs/optimized/colvarbias_histogram.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
@@ -188,7 +179,6 @@ entry:
 ; jemalloc/optimized/pac.pic.ll
 ; jemalloc/optimized/pac.sym.ll
 ; jsonnet/optimized/vm.cpp.ll
-; libevent/optimized/evdns.c.ll
 ; libjpeg-turbo/optimized/jcparam.c.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; libwebp/optimized/anim_encode.c.ll
@@ -199,19 +189,24 @@ entry:
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/seq_ports.ll
 ; linux/optimized/therm_throt.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
+; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
+; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeFloatTypes.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGAddressAnalysis.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_asm.ll
@@ -279,8 +274,10 @@ entry:
 ; openjdk/optimized/hb-ot-math.ll
 ; openjdk/optimized/screencast_pipewire.ll
 ; openspiel/optimized/deep_sea.cc.ll
+; openspiel/optimized/leduc_poker.cc.ll
 ; openspiel/optimized/sheriff.cc.ll
 ; openusd/optimized/animMapper.cpp.ll
+; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/pointInstancer.cpp.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
@@ -290,10 +287,8 @@ entry:
 ; php/optimized/crypt_sha512.ll
 ; php/optimized/php_fopen_wrapper.ll
 ; pocketpy/optimized/vm.cpp.ll
+; portaudio/optimized/pa_linux_alsa.c.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
-; proj/optimized/rtodms.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/file.cc.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -349,6 +344,7 @@ entry:
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
+; quantlib/optimized/schedule.ll
 ; redis/optimized/pac.ll
 ; redis/optimized/pac.sym.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
@@ -431,22 +427,6 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 63
-  %3 = select i1 %2, i64 8, i64 0
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
-  ret ptr %5
-}
-
-; 5 occurrences:
-; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
-; openspiel/optimized/leduc_poker.cc.ll
-; portaudio/optimized/pa_linux_alsa.c.ll
-; quantlib/optimized/schedule.ll
-; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 63
@@ -456,13 +436,12 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
-; linux/optimized/e1000_hw.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000080(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000180(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 1
+  %2 = icmp samesign ugt i32 %1, 1
   %3 = select i1 %2, i64 1428864, i64 714432
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 178608
@@ -472,65 +451,101 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000082(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000183(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 1
+  %2 = icmp samesign ugt i32 %1, 1
   %3 = select i1 %2, i64 1428864, i64 714432
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 119072
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 119072
   ret ptr %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; abc/optimized/wlcWriteVer.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i64 16, i64 48
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
-}
-
-; 2 occurrences:
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; openusd/optimized/detokenize.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 2
-  %3 = select i1 %2, i64 808, i64 224
+  %2 = icmp eq i32 %1, 0
+  %3 = select i1 %2, i64 16, i64 48
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 16
+  %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 
-; 3 occurrences:
-; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/LTO.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
+; 64 occurrences:
+; graphviz/optimized/DotIO.c.ll
+; graphviz/optimized/actions.c.ll
+; graphviz/optimized/acyclic.c.ll
+; graphviz/optimized/adjust.c.ll
+; graphviz/optimized/bcomps.c.ll
+; graphviz/optimized/blockpath.c.ll
+; graphviz/optimized/blocktree.c.ll
+; graphviz/optimized/ccomps.c.ll
+; graphviz/optimized/circle.c.ll
+; graphviz/optimized/circularinit.c.ll
+; graphviz/optimized/class1.c.ll
+; graphviz/optimized/class2.c.ll
+; graphviz/optimized/cluster.c.ll
+; graphviz/optimized/clusteredges.c.ll
+; graphviz/optimized/comp.c.ll
+; graphviz/optimized/compile.c.ll
+; graphviz/optimized/compound.c.ll
+; graphviz/optimized/conc.c.ll
+; graphviz/optimized/constraint.c.ll
+; graphviz/optimized/decomp.c.ll
+; graphviz/optimized/dotinit.c.ll
+; graphviz/optimized/dotsplines.c.ll
+; graphviz/optimized/edge.c.ll
+; graphviz/optimized/edgepaintmain.c.ll
+; graphviz/optimized/emit.c.ll
+; graphviz/optimized/fastgr.c.ll
+; graphviz/optimized/flat.c.ll
+; graphviz/optimized/gc.c.ll
+; graphviz/optimized/grammar.c.ll
+; graphviz/optimized/gv2gml.c.ll
+; graphviz/optimized/gv2gxl.c.ll
+; graphviz/optimized/gvcolor.c.ll
+; graphviz/optimized/gvevent.c.ll
+; graphviz/optimized/gvpack.cpp.ll
+; graphviz/optimized/gvrender_core_json.c.ll
+; graphviz/optimized/htmltable.c.ll
+; graphviz/optimized/labels.c.ll
+; graphviz/optimized/layout.c.ll
+; graphviz/optimized/mincross.c.ll
+; graphviz/optimized/multispline.c.ll
+; graphviz/optimized/neatoinit.c.ll
+; graphviz/optimized/neatosplines.c.ll
+; graphviz/optimized/ns.c.ll
+; graphviz/optimized/ortho.c.ll
+; graphviz/optimized/output.c.ll
+; graphviz/optimized/pack.c.ll
+; graphviz/optimized/position.c.ll
+; graphviz/optimized/postproc.c.ll
+; graphviz/optimized/rank.c.ll
+; graphviz/optimized/rec.c.ll
+; graphviz/optimized/routespl.c.ll
+; graphviz/optimized/sameport.c.ll
+; graphviz/optimized/sccmap.c.ll
+; graphviz/optimized/sgd.c.ll
+; graphviz/optimized/shapes.c.ll
+; graphviz/optimized/splines.c.ll
+; graphviz/optimized/stuff.c.ll
+; graphviz/optimized/tlayout.c.ll
+; graphviz/optimized/tred.c.ll
+; graphviz/optimized/unflatten.c.ll
+; graphviz/optimized/write.c.ll
+; graphviz/optimized/xlayout.c.ll
+; libevent/optimized/evdns.c.ll
+; proj/optimized/rtodms.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 335
-  %3 = select i1 %2, i64 80, i64 40
+  %2 = icmp eq i32 %1, 1
+  %3 = select i1 %2, i64 -80, i64 -96
   %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
-  ret ptr %5
-}
-
-; 3 occurrences:
-; llvm/optimized/HWAddressSanitizer.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
-; openusd/optimized/decodemv.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 83886080
-  %3 = select i1 %2, i64 368, i64 288
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 252
   ret ptr %5
 }
 
@@ -539,74 +554,123 @@ entry:
 ; linux/optimized/af_packet.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000cf(ptr %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i64 1, i64 2
-  %3 = getelementptr %"class.llvm::SDUse.3049059", ptr %0, i64 %2, i32 0, i32 1
+  %3 = getelementptr nuw %"class.llvm::SDUse.3242400", ptr %0, i64 %2, i32 0, i32 1
   ret ptr %3
 }
 
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000008a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 890
-  %3 = select i1 %2, i64 2, i64 1
-  %4 = getelementptr %"class.llvm::SDUse.3050189", ptr %0, i64 %3, i32 0, i32 1
-  ret ptr %4
-}
-
-; 3 occurrences:
-; icu/optimized/normalizer2impl.ll
+; 2 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; redis/optimized/zipmap.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000004f(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
   %3 = select i1 %2, i64 40, i64 0
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/conversation.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c2(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000c3(ptr %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i64 2, i64 1
-  %3 = getelementptr %struct.conversation_element.3258475, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.conversation_element.3449322, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
-; 4 occurrences:
+; 1 occurrences:
+; linux/optimized/nf_conntrack_ftp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000083(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 2
+  %3 = select i1 %2, i64 16, i64 72
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 20
+  ret ptr %5
+}
+
+; 5 occurrences:
 ; linux/optimized/intel_sdvo.ll
+; linux/optimized/io-wq.ll
 ; linux/optimized/selftests.ll
 ; linux/optimized/seq_ports.ll
 ; postgres/optimized/nodeAgg.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i64 0, i64 4
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 9
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 9
+  ret ptr %5
+}
+
+; 1 occurrences:
+; linux/optimized/nf_nat_sip.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000140(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 3
+  %3 = select i1 %2, i64 16, i64 72
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 1 occurrences:
+; linux/optimized/nf_nat_sip.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000143(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 3
+  %3 = select i1 %2, i64 16, i64 72
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/xhci-hub.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000af(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 63
   %3 = select i1 %2, i64 3192, i64 3120
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 1 occurrences:
+; linux/optimized/e1000_hw.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000080(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 2
+  %3 = select i1 %2, i64 21504, i64 64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; linux/optimized/nf_nat_proto.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000043(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 3
+  %3 = select i1 %2, i64 72, i64 16
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 20
   ret ptr %5
 }
 
@@ -614,23 +678,47 @@ entry:
 ; cvc5/optimized/simplex.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000006f(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i64 264, i64 232
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
+  ret ptr %5
+}
+
+; 1 occurrences:
+; icu/optimized/normalizer2impl.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 65536
+  %3 = select i1 %2, i64 -1, i64 -2
+  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -2
+  ret ptr %5
+}
+
+; 1 occurrences:
+; icu/optimized/normalizer2impl.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004b(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 65536
+  %3 = select i1 %2, i64 -1, i64 -2
+  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; libwebp/optimized/backward_references_enc.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c8(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000cc(ptr %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i64 1, i64 2
-  %3 = getelementptr %struct.VP8LBackwardRefs.3715740, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.VP8LBackwardRefs.3895034, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 

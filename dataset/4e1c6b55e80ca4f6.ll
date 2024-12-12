@@ -1,7 +1,5 @@
 
-; 41 occurrences:
-; abc/optimized/solver.c.ll
-; abc/optimized/xsatSolver.c.ll
+; 36 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; gromacs/optimized/poscalc.cpp.ll
@@ -10,7 +8,6 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jq/optimized/regcomp.ll
-; linux/optimized/8139too.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/libahci.ll
@@ -25,18 +22,16 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; miniaudio/optimized/unity.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/canny.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/hb-buffer-verify.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; openusd/optimized/read.c.ll
-; qemu/optimized/hw_usb_hcd-ohci.c.ll
-; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/util_log.c.ll
 ; ruby/optimized/sprintf.ll
 ; sqlite/optimized/sqlite3.ll

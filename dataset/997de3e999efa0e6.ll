@@ -1,9 +1,15 @@
 
-; 343 occurrences:
+; 345 occurrences:
 ; abc/optimized/ioWriteBook.c.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/cs_updown.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -108,12 +114,10 @@
 ; openblas/optimized/dsytri_rook.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtgsyl.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrsen.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/autocalib.cpp.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; opencv/optimized/bound_min.cpp.ll
@@ -172,7 +176,6 @@
 ; proj/optimized/labrd.cpp.ll
 ; proj/optimized/laea.cpp.ll
 ; proj/optimized/lagrng.cpp.ll
-; proj/optimized/larr.cpp.ll
 ; proj/optimized/moll.cpp.ll
 ; proj/optimized/molodensky.cpp.ll
 ; proj/optimized/omerc.cpp.ll
@@ -188,7 +191,6 @@
 ; proj/optimized/sts.cpp.ll
 ; proj/optimized/vandg.cpp.ll
 ; proj/optimized/vandg4.cpp.ll
-; proj/optimized/vertoffset.cpp.ll
 ; proj/optimized/wag3.cpp.ll
 ; quantlib/optimized/abcd.ll
 ; quantlib/optimized/actualactual.ll

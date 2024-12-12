@@ -17,7 +17,7 @@ func0000000000000013:                   # @func0000000000000013
 	ret
 func0000000000000003:                   # @func0000000000000003
 	sraiw	a1, a1, 16
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	lui	a1, 2
 	addw	a0, a0, a1
 	ret

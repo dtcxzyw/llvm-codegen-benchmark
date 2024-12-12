@@ -1,13 +1,27 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; bullet3/optimized/b3GpuSapBroadphase.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000001d0(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = or disjoint i64 %3, 6
+  %3 = shl nuw nsw i64 %2, 6
+  %4 = or disjoint i64 %3, 16
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = shl nsw i64 %1, 2
+  %6 = shl nsw i64 %1, 5
+  %7 = getelementptr i8, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; bullet3/optimized/b3GpuSapBroadphase.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000f0(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 5
+  %4 = or disjoint i64 %3, 16
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = shl nuw nsw i64 %1, 6
   %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7
 }

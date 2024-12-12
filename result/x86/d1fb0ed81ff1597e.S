@@ -38,10 +38,9 @@ func0000000000000001:                   # @func0000000000000001
 	orl	%edx, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
-	movl	%esi, %eax
-	shll	$6, %edx
-	andl	$64, %edx
-	andl	$4096, %eax                     # imm = 0x1000
-	orl	%edi, %eax
-	orl	%edx, %eax
+	leal	(,%rdx,8), %eax
+	andl	$2016, %eax                     # imm = 0x7E0
+	andl	$-2048, %esi                    # imm = 0xF800
+	orl	%edi, %esi
+	orl	%esi, %eax
 	retq

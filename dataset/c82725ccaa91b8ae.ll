@@ -1,6 +1,7 @@
 
-; 69 occurrences:
-; darktable/optimized/introspection_cacorrect.c.ll
+; 70 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; g2o/optimized/robust_kernel_impl.cpp.ll
 ; graphviz/optimized/route.c.ll
@@ -73,7 +74,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fmul double %4, %0
   ret double %5
 }

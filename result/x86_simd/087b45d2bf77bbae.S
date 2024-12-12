@@ -25,21 +25,22 @@ func000000000000000b:                   # @func000000000000000b
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000000c:                   # @func000000000000000c
-	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovaps	%zmm1, %zmm2 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpleps	%zmm2, %zmm0, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
 func0000000000000007:                   # @func0000000000000007
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vmovaps	%zmm1, %zmm2 {%k1}
 	vpxor	%xmm0, %xmm0, %xmm0
 	vcmpneqps	%zmm0, %zmm2, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.long	0x40c90fdb                      # float 6.28318548
+func000000000000000c:                   # @func000000000000000c
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	vmovaps	%zmm1, %zmm2 {%k1}
+	vcmpgeps	.LCPI4_0(%rip){1to16}, %zmm2, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

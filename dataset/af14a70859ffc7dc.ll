@@ -7,7 +7,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = ashr exact i32 %0, 16

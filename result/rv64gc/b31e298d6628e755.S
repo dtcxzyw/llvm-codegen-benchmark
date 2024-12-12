@@ -1,9 +1,9 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	addiw	a1, a0, -1
 	addiw	a0, a0, -2
 	sltu	a0, a0, a1
 	ret
-func0000000000000059:                   # @func0000000000000059
+func00000000000000a9:                   # @func00000000000000a9
 	addiw	a1, a0, -1
 	addiw	a0, a0, -4
 	sltu	a0, a0, a1

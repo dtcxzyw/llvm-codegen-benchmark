@@ -54,7 +54,7 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/wlcBlast.c.ll
-; cmake/optimized/archive_pack_dev.c.ll
+; boost/optimized/src.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/setopt.c.ll
 ; cpython/optimized/unicodeobject.ll
@@ -136,6 +136,7 @@ entry:
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
+; lvgl/optimized/lv_freetype_glyph.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; mold/optimized/arch-s390x.cc.ll
@@ -189,7 +190,6 @@ entry:
 ; wasmedge/optimized/vinode.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/51r9csr3d9dou1a2.ll
-; wireshark/optimized/packet-etag.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/spacer_global_generalizer.cpp.ll
 ; Function Attrs: nounwind
@@ -273,7 +273,8 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; gromacs/optimized/kernel_gpu_ref.cpp.ll
 ; linux/optimized/hugetlb.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
@@ -282,10 +283,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 9
-  %3 = and i64 %2, -72340172838076928
-  %4 = and i64 %0, 9187201950435737344
-  %5 = or i64 %4, %3
+  %2 = shl i64 %1, 32
+  %3 = and i64 %2, 1095216660480
+  %4 = and i64 %0, 255
+  %5 = or disjoint i64 %3, %4
   ret i64 %5
 }
 

@@ -29,7 +29,7 @@ entry:
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 0
   %.masked = and i32 %0, -267386881
-  %6 = or i32 %5, %.masked
+  %6 = or i32 %.masked, %5
   ret i32 %6
 }
 

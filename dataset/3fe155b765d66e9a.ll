@@ -1,34 +1,5 @@
 
-%struct.ieee80211_sband_iftype_data.3354293 = type <{ i16, %struct.ieee80211_sta_he_cap.3354294, %struct.ieee80211_he_6ghz_capa.3354295, %struct.ieee80211_sta_eht_cap.3354296, %struct.anon.141.3354297 }>
-%struct.ieee80211_sta_he_cap.3354294 = type <{ i8, %struct.ieee80211_he_cap_elem.3354298, %struct.ieee80211_he_mcs_nss_supp.3354299, [25 x i8] }>
-%struct.ieee80211_he_cap_elem.3354298 = type { [6 x i8], [11 x i8] }
-%struct.ieee80211_he_mcs_nss_supp.3354299 = type { i16, i16, i16, i16, i16, i16 }
-%struct.ieee80211_he_6ghz_capa.3354295 = type { i16 }
-%struct.ieee80211_sta_eht_cap.3354296 = type { i8, %struct.ieee80211_eht_cap_elem_fixed.3354300, %struct.ieee80211_eht_mcs_nss_supp.3354301, [32 x i8] }
-%struct.ieee80211_eht_cap_elem_fixed.3354300 = type { [2 x i8], [9 x i8] }
-%struct.ieee80211_eht_mcs_nss_supp.3354301 = type { %union.anon.135.3354302 }
-%union.anon.135.3354302 = type { %struct.anon.138.3354303 }
-%struct.anon.138.3354303 = type { %struct.ieee80211_eht_mcs_nss_supp_bw.3354304, %struct.ieee80211_eht_mcs_nss_supp_bw.3354304, %struct.ieee80211_eht_mcs_nss_supp_bw.3354304 }
-%struct.ieee80211_eht_mcs_nss_supp_bw.3354304 = type { %union.anon.139.3354305 }
-%union.anon.139.3354305 = type { %struct.anon.140.3354306 }
-%struct.anon.140.3354306 = type { i8, i8, i8 }
-%struct.anon.141.3354297 = type { ptr, i32 }
-%struct.ieee80211_sband_iftype_data.3355807 = type <{ i16, %struct.ieee80211_sta_he_cap.3355808, %struct.ieee80211_he_6ghz_capa.3355809, %struct.ieee80211_sta_eht_cap.3355810, %struct.anon.144.3355811 }>
-%struct.ieee80211_sta_he_cap.3355808 = type <{ i8, %struct.ieee80211_he_cap_elem.3355812, %struct.ieee80211_he_mcs_nss_supp.3355813, [25 x i8] }>
-%struct.ieee80211_he_cap_elem.3355812 = type { [6 x i8], [11 x i8] }
-%struct.ieee80211_he_mcs_nss_supp.3355813 = type { i16, i16, i16, i16, i16, i16 }
-%struct.ieee80211_he_6ghz_capa.3355809 = type { i16 }
-%struct.ieee80211_sta_eht_cap.3355810 = type { i8, %struct.ieee80211_eht_cap_elem_fixed.3355814, %struct.ieee80211_eht_mcs_nss_supp.3355815, [32 x i8] }
-%struct.ieee80211_eht_cap_elem_fixed.3355814 = type { [2 x i8], [9 x i8] }
-%struct.ieee80211_eht_mcs_nss_supp.3355815 = type { %union.anon.105.3355816 }
-%union.anon.105.3355816 = type { %struct.anon.108.3355817 }
-%struct.anon.108.3355817 = type { %struct.ieee80211_eht_mcs_nss_supp_bw.3355818, %struct.ieee80211_eht_mcs_nss_supp_bw.3355818, %struct.ieee80211_eht_mcs_nss_supp_bw.3355818 }
-%struct.ieee80211_eht_mcs_nss_supp_bw.3355818 = type { %union.anon.109.3355819 }
-%union.anon.109.3355819 = type { %struct.anon.110.3355820 }
-%struct.anon.110.3355820 = type { i8, i8, i8 }
-%struct.anon.144.3355811 = type { ptr, i32 }
-
-; 133 occurrences:
+; 131 occurrences:
 ; arrow/optimized/buffered.cc.ll
 ; arrow/optimized/compressed.cc.ll
 ; arrow/optimized/device.cc.ll
@@ -36,6 +7,8 @@
 ; arrow/optimized/hdfs.cc.ll
 ; arrow/optimized/memory.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/environment.ll
+; boost/optimized/process.ll
 ; clap-rs/optimized/ms9r2ilwmkwzn0d.ll
 ; cmake/optimized/fty_enum.c.ll
 ; coreutils-rs/optimized/11fdr7kbbvsdssj2.ll
@@ -46,7 +19,6 @@
 ; coreutils-rs/optimized/1c0bwvv43j289y30.ll
 ; coreutils-rs/optimized/1e5pt7vtfxa4ahz7.ll
 ; coreutils-rs/optimized/1iiitxeck9g2ksb7.ll
-; coreutils-rs/optimized/1mhb4e8l0v9dncti.ll
 ; coreutils-rs/optimized/1pn74b1r3k1s4pck.ll
 ; coreutils-rs/optimized/1ui3yxdetdbghtw.ll
 ; coreutils-rs/optimized/1unp4st43r7zdtb0.ll
@@ -54,7 +26,6 @@
 ; coreutils-rs/optimized/1w8bjqmsfkf0ntfz.ll
 ; coreutils-rs/optimized/1xrz1ag37fklzklg.ll
 ; coreutils-rs/optimized/26a2uyrtdxle93un.ll
-; coreutils-rs/optimized/2ahdhlyatyqueo1a.ll
 ; coreutils-rs/optimized/2eb96ulhupdvrip8.ll
 ; coreutils-rs/optimized/2etc5gfaqs8pnymi.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
@@ -67,7 +38,6 @@
 ; coreutils-rs/optimized/3q8ukvkopatfv0x0.ll
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; coreutils-rs/optimized/3r2vyvwpz7j7c5gy.ll
-; coreutils-rs/optimized/3ummpw5ql7d4y98b.ll
 ; coreutils-rs/optimized/3vfybkcp5ufzff0e.ll
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; coreutils-rs/optimized/420s040g7rwxzzqz.ll
@@ -86,12 +56,10 @@
 ; coreutils-rs/optimized/942h4e64iw767xo.ll
 ; coreutils-rs/optimized/d2l5f8sei2pacyj.ll
 ; coreutils-rs/optimized/exyrvqdrhfrgv84.ll
-; coreutils-rs/optimized/ga96dm5uabspngk.ll
 ; coreutils-rs/optimized/gy31avu15bepulc.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; coreutils-rs/optimized/icw7irkz6mu05a9.ll
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
-; coreutils-rs/optimized/plvfu1855xjk96c.ll
 ; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; coreutils-rs/optimized/vylkzjuq6grxql.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -114,7 +82,6 @@
 ; linux/optimized/ndisc.ll
 ; linux/optimized/nf_conntrack_core.ll
 ; linux/optimized/nf_conntrack_netlink.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/nf_conntrack_proto_icmp.ll
 ; linux/optimized/nf_nat_core.ll
 ; linux/optimized/xhci-ring.ll
@@ -162,6 +129,8 @@
 ; wasmtime-rs/optimized/3hwarn3zl2ncla2z.ll
 ; wireshark/optimized/camins.c.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/cogvsa3bjgiftuxgwhwbiuj8x.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
@@ -171,7 +140,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 16 occurrences:
 ; grpc/optimized/slice_buffer.cc.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; linux/optimized/ndisc.ll
@@ -185,6 +154,9 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9tt6eh72scdop5d6biwv5himz.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
@@ -208,7 +180,7 @@ entry:
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000101(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr nusw { i32, [1 x i32], { { i64, [3 x i64] } } }, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -40
@@ -219,40 +191,12 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000010c(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr nusw i32, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -4
   %4 = icmp ne ptr %3, null
   ret i1 %4
-}
-
-; 8 occurrences:
-; linux/optimized/af_packet.ll
-; linux/optimized/eht.ll
-; linux/optimized/he.ll
-; linux/optimized/mlme.ll
-; linux/optimized/nl80211.ll
-; linux/optimized/raw.ll
-; linux/optimized/slub.ll
-; linux/optimized/socket.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
-entry:
-  %2 = getelementptr %struct.ieee80211_sband_iftype_data.3354293, ptr %0, i64 %1, i32 1
-  %3 = icmp eq ptr %2, null
-  ret i1 %3
-}
-
-; 2 occurrences:
-; linux/optimized/mlme.ll
-; linux/optimized/ndisc.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
-entry:
-  %2 = getelementptr %struct.ieee80211_sband_iftype_data.3355807, ptr %0, i64 %1, i32 1
-  %3 = icmp ne ptr %2, null
-  ret i1 %3
 }
 
 attributes #0 = { nounwind }

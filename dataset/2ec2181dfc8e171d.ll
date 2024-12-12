@@ -5,7 +5,7 @@
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   ret i32 %4
 }
@@ -13,12 +13,13 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddGenCof.c.ll
 ; abc/optimized/msatRead.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; libquic/optimized/error_correction.c.ll
+; lvgl/optimized/lv_math.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {

@@ -8,13 +8,13 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$32, %dl
 	cmovel	%esi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	andl	$14, %edx
 	cmpl	$10, %edx
 	cmovael	%esi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movl	%edi, %eax
 	andl	$64512, %edx                    # imm = 0xFC00
 	cmpl	$31744, %edx                    # imm = 0x7C00

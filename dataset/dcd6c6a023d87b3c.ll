@@ -1,11 +1,23 @@
 
-; 14 occurrences:
-; cmake/optimized/entropy_common.c.ll
+; 5 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; jq/optimized/jv.ll
 ; lz4/optimized/lz4hc.c.ll
 ; postgres/optimized/quote.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000c0(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = shl i32 %5, 1
+  ret i32 %6
+}
+
+; 9 occurrences:
+; cmake/optimized/entropy_common.c.ll
 ; zstd/optimized/entropy_common.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -17,11 +29,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000080(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 16
+  %2 = getelementptr nusw i8, ptr %1, i64 -4
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = trunc i64 %4 to i32
-  %6 = shl i32 %5, 1
+  %6 = shl i32 %5, 3
   ret i32 %6
 }
 

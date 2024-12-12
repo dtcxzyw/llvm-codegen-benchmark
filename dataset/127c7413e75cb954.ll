@@ -1,8 +1,55 @@
 
-; 162 occurrences:
-; coremark/optimized/core_matrix.c.ll
+; 36 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; libwebp/optimized/histogram_enc.c.ll
+; libwebp/optimized/vp8l_enc.c.ll
+; libwebp/optimized/webp_enc.c.ll
+; mimalloc/optimized/segment.c.ll
+; mitsuba3/optimized/builder.cpp.ll
+; mitsuba3/optimized/constpool.cpp.ll
+; node/optimized/libnode.node_http2.ll
+; openblas/optimized/dgetrf_single.c.ll
+; opencv/optimized/arithm.cpp.ll
+; opencv/optimized/bilateral_filter.dispatch.cpp.ll
+; opencv/optimized/convolution.cpp.ll
+; opencv/optimized/distransform.cpp.ll
+; opencv/optimized/filter.dispatch.cpp.ll
+; opencv/optimized/geometry.cpp.ll
+; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; opencv/optimized/optflowgf.cpp.ll
+; opencv/optimized/perf_umat.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; opencv/optimized/stackblur.cpp.ll
+; opencv/optimized/stereo_binary_bm.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; openjdk/optimized/archiveUtils.ll
+; openjdk/optimized/verifier.ll
+; openjdk/optimized/zGeneration.ll
+; openjdk/optimized/zMark.ll
+; openusd/optimized/stbImage.cpp.ll
+; php/optimized/ir_emit.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_image_resize2.c.ll
+; stockfish/optimized/tbprobe.ll
+; velox/optimized/Allocation.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = add i64 %2, 7
+  %4 = and i64 %3, -8
+  %5 = inttoptr i64 %4 to ptr
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 141 occurrences:
+; coremark/optimized/core_matrix.c.ll
+; darktable/optimized/amaze.cc.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
@@ -11,9 +58,6 @@
 ; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/scratch.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
-; libwebp/optimized/histogram_enc.c.ll
-; libwebp/optimized/vp8l_enc.c.ll
-; libwebp/optimized/webp_enc.c.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -109,18 +153,11 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; mimalloc/optimized/segment.c.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/builder.cpp.ll
-; mitsuba3/optimized/constpool.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
-; node/optimized/libnode.node_http2.ll
-; openblas/optimized/dgetrf_single.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
-; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
-; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/fully_connected_layer.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
@@ -128,14 +165,11 @@
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/merge.dispatch.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
-; opencv/optimized/perf_umat.cpp.ll
-; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/split.dispatch.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; openjdk/optimized/archiveUtils.ll
 ; openjdk/optimized/check_code.ll
 ; openjdk/optimized/g1FromCardCache.ll
 ; openjdk/optimized/psPromotionManager.ll
@@ -143,33 +177,26 @@
 ; openjdk/optimized/xCPU.ll
 ; openjdk/optimized/zCPU.ll
 ; openjdk/optimized/zGeneration.ll
-; openjdk/optimized/zMark.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; openusd/optimized/stbImage.cpp.ll
-; php/optimized/ir_emit.ll
 ; raylib/optimized/raudio.c.ll
-; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_image_resize2.c.ll
-; stockfish/optimized/tbprobe.ll
-; velox/optimized/Allocation.cpp.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_clause_proof.cpp.ll
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1) #0 {
+define ptr @func0000000000000003(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, 7
-  %4 = and i64 %3, -8
+  %3 = add i64 %2, 3
+  %4 = and i64 %3, -4
   %5 = inttoptr i64 %4 to ptr
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -193,22 +220,6 @@ entry:
   %4 = and i64 %3, -64
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 4 occurrences:
-; openblas/optimized/dlauum_L_single.c.ll
-; openblas/optimized/dlauum_U_single.c.ll
-; openblas/optimized/dpotrf_U_single.c.ll
-; openusd/optimized/yuv_scale.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = add nsw i64 %2, 63
-  %4 = and i64 %3, -64
-  %5 = inttoptr i64 %4 to ptr
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; linux/optimized/acpi_lpit.ll
 ; openjdk/optimized/screencast_pipewire.ll
@@ -8,6 +8,7 @@
 ; quantlib/optimized/overnightindexedcoupon.ll
 ; redis/optimized/emap.ll
 ; redis/optimized/emap.sym.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:

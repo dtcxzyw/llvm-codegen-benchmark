@@ -1,5 +1,5 @@
 
-; 668 occurrences:
+; 629 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcCut.c.ll
@@ -42,22 +42,18 @@
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/casDec.c.ll
 ; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/cgtCore.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddCheck.c.ll
 ; abc/optimized/cuddSplit.c.ll
 ; abc/optimized/cuddUtil.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauNpn2.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/fraImp.c.ll
@@ -117,7 +113,6 @@
 ; abc/optimized/resCore.c.ll
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/retDelay.c.ll
-; abc/optimized/rwrMan.c.ll
 ; abc/optimized/saigStrSim.c.ll
 ; abc/optimized/saigSwitch.c.ll
 ; abc/optimized/satInter.c.ll
@@ -150,6 +145,7 @@
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/rational.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; clamav/optimized/bytecode_api.c.ll
@@ -212,14 +208,12 @@
 ; gromacs/optimized/colvargrid.cpp.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
 ; gromacs/optimized/distribute.cpp.ll
-; gromacs/optimized/dlasdt.cpp.ll
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
 ; gromacs/optimized/eneconv.cpp.ll
 ; gromacs/optimized/energyterm.cpp.ll
 ; gromacs/optimized/enxio.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/freevolume.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; gromacs/optimized/gmx_angle.cpp.ll
@@ -264,7 +258,6 @@
 ; hdf5/optimized/sio_perf.c.ll
 ; hwloc/optimized/lstopo-lstopo-cairo.ll
 ; icu/optimized/csrsbcs.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/ucurr.ll
 ; icu/optimized/uperf.ll
 ; ipopt/optimized/IpAdaptiveMuUpdate.ll
@@ -277,7 +270,6 @@
 ; libquic/optimized/histogram.cc.ll
 ; libwebp/optimized/cwebp.c.ll
 ; libzmq/optimized/inproc_lat.cpp.ll
-; libzmq/optimized/remote_lat.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/boosting.cpp.ll
 ; lightgbm/optimized/c_api.cpp.ll
@@ -358,9 +350,6 @@
 ; openblas/optimized/dgedmd.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlalsd.c.ll
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/dlarre.c.ll
@@ -368,19 +357,7 @@
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dsbmv_thread_L.c.ll
 ; openblas/optimized/dsbmv_thread_U.c.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dspr2_thread_L.c.ll
-; openblas/optimized/dspr2_thread_U.c.ll
-; openblas/optimized/dspr_thread_L.c.ll
-; openblas/optimized/dspr_thread_U.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsymv_thread_L.c.ll
-; openblas/optimized/dsymv_thread_U.c.ll
-; openblas/optimized/dsyr2_thread_L.c.ll
-; openblas/optimized/dsyr2_thread_U.c.ll
-; openblas/optimized/dsyr_thread_L.c.ll
-; openblas/optimized/dsyr_thread_U.c.ll
 ; openblas/optimized/dtbmv_thread_NLN.c.ll
 ; openblas/optimized/dtbmv_thread_NLU.c.ll
 ; openblas/optimized/dtbmv_thread_NUN.c.ll
@@ -389,22 +366,6 @@
 ; openblas/optimized/dtbmv_thread_TLU.c.ll
 ; openblas/optimized/dtbmv_thread_TUN.c.ll
 ; openblas/optimized/dtbmv_thread_TUU.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
-; openblas/optimized/dtrmv_thread_NLN.c.ll
-; openblas/optimized/dtrmv_thread_NLU.c.ll
-; openblas/optimized/dtrmv_thread_NUN.c.ll
-; openblas/optimized/dtrmv_thread_NUU.c.ll
-; openblas/optimized/dtrmv_thread_TLN.c.ll
-; openblas/optimized/dtrmv_thread_TLU.c.ll
-; openblas/optimized/dtrmv_thread_TUN.c.ll
-; openblas/optimized/dtrmv_thread_TUU.c.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/OpenEXRimages_HDR_Retina_toneMapping.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll

@@ -16,7 +16,7 @@
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i32 %0) #0 {
+define i16 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 50380844
   %2 = select i1 %1, i16 24, i16 0
@@ -25,17 +25,15 @@ entry:
   ret i16 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; llvm/optimized/DwarfUnit.cpp.ll
-; openssl/optimized/libcrypto-lib-rsa_lib.ll
-; openssl/optimized/libcrypto-shlib-rsa_lib.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000044(i32 %0) #0 {
+define i16 @func0000000000000084(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 15361
-  %2 = select i1 %1, i16 256, i16 1200
-  %3 = icmp ult i32 %0, 7681
-  %4 = select i1 %3, i16 192, i16 %2
+  %1 = icmp ult i32 %0, 65536
+  %2 = select i1 %1, i16 3, i16 4
+  %3 = icmp ult i32 %0, 256
+  %4 = select i1 %3, i16 10, i16 %2
   ret i16 %4
 }
 
@@ -43,7 +41,7 @@ entry:
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000061(i32 %0) #0 {
+define i16 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 0
   %2 = select i1 %1, i16 2, i16 1

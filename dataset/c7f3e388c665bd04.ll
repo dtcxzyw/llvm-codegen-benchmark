@@ -1,5 +1,36 @@
 
-; 64 occurrences:
+; 21 occurrences:
+; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; arrow/optimized/float16.cc.ll
+; boost/optimized/test_codecvt.ll
+; brotli/optimized/backward_references_hq.c.ll
+; delta-rs/optimized/4say4x9grcidoih4.ll
+; folly/optimized/json.cpp.ll
+; icu/optimized/collationiterator.ll
+; icu/optimized/ucnvbocu.ll
+; linux/optimized/intel_vdsc.ll
+; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
+; meshoptimizer/optimized/quantization.cpp.ll
+; postgres/optimized/utf8_and_gb18030.ll
+; qdrant-rs/optimized/49gep1elv33vxlrq.ll
+; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
+; serde-rs-json/optimized/30jxdu82z9wuspjj.ll
+; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; wireshark/optimized/packet-lbmr.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i16 %0) #0 {
+entry:
+  %1 = zext nneg i16 %0 to i32
+  %2 = shl nuw nsw i32 %1, 10
+  %3 = add nuw nsw i32 %2, 65536
+  ret i32 %3
+}
+
+; 61 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -10,7 +41,6 @@
 ; icu/optimized/utrie2.ll
 ; icu/optimized/utrie_swap.ll
 ; libquic/optimized/error_correction.c.ll
-; linux/optimized/filter.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/mcast.ll
@@ -24,8 +54,6 @@
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; openjdk/optimized/methodData.ll
 ; openjdk/optimized/oopMapCache.ll
-; openssl/optimized/libcrypto-lib-dh_gen.ll
-; openssl/optimized/libcrypto-shlib-dh_gen.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/loopfilter.c.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -68,37 +96,8 @@
 define i32 @func000000000000000f(i16 %0) #0 {
 entry:
   %1 = zext i16 %0 to i32
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %2, 24
-  ret i32 %3
-}
-
-; 19 occurrences:
-; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; arrow/optimized/float16.cc.ll
-; brotli/optimized/backward_references_hq.c.ll
-; delta-rs/optimized/4say4x9grcidoih4.ll
-; folly/optimized/json.cpp.ll
-; icu/optimized/collationiterator.ll
-; icu/optimized/ucnvbocu.ll
-; linux/optimized/intel_vdsc.ll
-; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
-; meshoptimizer/optimized/quantization.cpp.ll
-; postgres/optimized/utf8_and_gb18030.ll
-; qdrant-rs/optimized/49gep1elv33vxlrq.ll
-; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
-; serde-rs-json/optimized/30jxdu82z9wuspjj.ll
-; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
-; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
-; wireshark/optimized/packet-ieee80211.c.ll
-; wireshark/optimized/packet-lbmr.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i16 %0) #0 {
-entry:
-  %1 = zext nneg i16 %0 to i32
-  %2 = shl nuw nsw i32 %1, 10
-  %3 = add nuw nsw i32 %2, 65536
+  %2 = shl nuw nsw i32 %1, 3
+  %3 = add nuw nsw i32 %2, 32
   ret i32 %3
 }
 

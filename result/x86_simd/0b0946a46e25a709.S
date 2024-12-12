@@ -41,7 +41,7 @@
 func0000000000000003:                   # @func0000000000000003
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm2, %ymm2
 	vpandd	.LCPI0_3(%rip){1to8}, %ymm0, %ymm0
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI1_0:
 	.short	63488                           # 0xf800

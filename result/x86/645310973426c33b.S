@@ -1,10 +1,10 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orl	%edx, %esi
 	sete	%al
 	xorb	$1, %dil
 	orb	%dil, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testl	%edx, %edx
 	setne	%cl
 	testl	%esi, %esi

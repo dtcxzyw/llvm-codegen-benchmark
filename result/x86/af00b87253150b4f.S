@@ -6,3 +6,13 @@ func000000000000001a:                   # @func000000000000001a
 	andq	$-16, %rsi
 	subq	%rsi, %rax
 	retq
+func000000000000001e:                   # @func000000000000001e
+	leaq	(%rsi,%rsi,2), %rcx
+	shrq	%rsi
+	negq	%rsi
+	shlq	$5, %rcx
+	addq	%rdi, %rcx
+	leaq	(%rsi,%rsi,2), %rax
+	shlq	$5, %rax
+	addq	%rcx, %rax
+	retq

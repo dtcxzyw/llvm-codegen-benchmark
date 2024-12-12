@@ -20,7 +20,7 @@ func0000000000000190:                   # @func0000000000000190
 	.long	4238353408                      # 0xfca02400
 func0000000000000067:                   # @func0000000000000067
 	vpslld	$4, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	vpslld	$10, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0

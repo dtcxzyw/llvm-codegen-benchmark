@@ -1,6 +1,10 @@
 
-; 27 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/floatobject.ll
 ; darktable/optimized/gamepad.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -24,6 +28,7 @@
 ; quantlib/optimized/hestonprocess.ll
 ; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; ruby/optimized/date_core.ll
 ; wasmedge/optimized/engine.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -35,7 +40,28 @@ entry:
   ret i32 %2
 }
 
-; 28 occurrences:
+; 48 occurrences:
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
@@ -51,7 +77,6 @@ entry:
 ; postgres/optimized/float.ll
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/pgbench.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/qsc.cpp.ll
 ; proj/optimized/s2.cpp.ll
 ; proj/optimized/stere.cpp.ll
@@ -85,12 +110,10 @@ entry:
   ret i32 %2
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; clamav/optimized/clamdtop.c.ll
 ; gromacs/optimized/dlaev2.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openjdk/optimized/cmstypes.ll
 ; openusd/optimized/frustum.cpp.ll
 ; Function Attrs: nounwind
@@ -134,7 +157,9 @@ entry:
   ret i32 %2
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; openusd/optimized/frustum.cpp.ll
 ; quantlib/optimized/yearfractiontodate.ll

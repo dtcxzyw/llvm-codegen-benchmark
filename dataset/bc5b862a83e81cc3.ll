@@ -1,30 +1,18 @@
 
-; 26 occurrences:
+; 14 occurrences:
 ; linux/optimized/early-quirks.ll
 ; linux/optimized/nf_conntrack_proto_tcp.ll
 ; linux/optimized/nf_log_syslog.ll
-; linux/optimized/pci.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/xt_TCPMSS.ll
 ; linux/optimized/xt_tcpudp.ll
-; llvm/optimized/AArch64AsmPrinter.cpp.ll
-; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTStructuralEquivalence.cpp.ll
-; llvm/optimized/AtomicExpandPass.cpp.ll
-; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
-; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaTemplateVariadic.cpp.ll
-; llvm/optimized/SemaType.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
-; llvm/optimized/TargetLoweringBase.cpp.ll
-; llvm/optimized/Verifier.cpp.ll
+; llvm/optimized/TypePrinter.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i16 %0) #0 {

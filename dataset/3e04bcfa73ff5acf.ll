@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ucnv_u8.ll
@@ -16,7 +16,6 @@
 ; stb/optimized/stb_vorbis.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-ppp.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0) #0 {

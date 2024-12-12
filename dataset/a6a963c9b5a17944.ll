@@ -1,5 +1,5 @@
 
-; 254 occurrences:
+; 252 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/bmcBmcG.c.ll
 ; abc/optimized/bmcBmcS.c.ll
@@ -8,10 +8,9 @@
 ; abc/optimized/cuddSymmetry.c.ll
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/ifTune.c.ll
-; abc/optimized/sbdCut.c.ll
-; abc/optimized/sbdWin.c.ll
 ; abc/optimized/utilCex.c.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/process.c.ll
@@ -47,7 +46,6 @@
 ; libuv/optimized/process.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; linux/optimized/aspm.ll
-; linux/optimized/attr.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/dm-ioctl.ll
@@ -58,13 +56,13 @@
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/i915_gem_evict.ll
 ; linux/optimized/i915_gem_pages.ll
-; linux/optimized/inline.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/locks.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/netlabel_kapi.ll
+; linux/optimized/nfs4proc.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/rscalc.ll
@@ -72,7 +70,6 @@
 ; linux/optimized/sd.ll
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/utbuffer.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/xhci-ring.ll
 ; linux/optimized/xt_addrtype.ll
@@ -93,7 +90,6 @@
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/OMPContext.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
@@ -116,6 +112,7 @@
 ; luajit/optimized/lj_ctype_dyn.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_dropdown.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/map.cpp.ll
@@ -188,7 +185,6 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/vm.ll
-; rust-analyzer-rs/optimized/6218mmeycy2lka1.ll
 ; slurm/optimized/accounting_storage_slurmdbd.ll
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/prep_script_slurmd.ll
@@ -205,6 +201,7 @@
 ; stb/optimized/stb_easy_font.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; unicode-normalization-rs/optimized/2dhzw0mhmvlvodqn.ll
 ; wasmedge/optimized/alias.cpp.ll
@@ -249,6 +246,7 @@
 ; wireshark/optimized/packet-c1222.c.ll
 ; wireshark/optimized/packet-msgpack.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
+; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-radius.c.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; wolfssl/optimized/sp_int.c.ll

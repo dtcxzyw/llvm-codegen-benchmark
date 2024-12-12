@@ -80,7 +80,7 @@ entry:
   %3 = and i64 %2, -274877923329
   %.masked = and i64 %1, -16385
   %4 = or i64 %3, %.masked
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -106,7 +106,7 @@ entry:
   %3 = and i64 %2, 268435456
   %.masked = and i64 %1, -68719476737
   %4 = or i64 %3, %.masked
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -130,7 +130,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = or i64 %2, %1
+  %3 = or i64 %1, %2
   %4 = and i64 %3, 7
   %5 = or i64 %4, %0
   ret i64 %5

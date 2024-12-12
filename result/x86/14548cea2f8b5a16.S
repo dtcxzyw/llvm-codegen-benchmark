@@ -22,9 +22,3 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	xorl	%edi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	xorl	%eax, %eax
-	cmpl	$2, %esi
-	setae	%al
-	xorl	%edi, %eax
-	retq

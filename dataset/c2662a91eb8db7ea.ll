@@ -56,7 +56,7 @@ entry:
   %.masked = and i8 %1, -7
   %4 = or i8 %3, %.masked
   %.masked1 = and i8 %0, -5
-  %5 = or i8 %4, %.masked1
+  %5 = or i8 %.masked1, %4
   ret i8 %5
 }
 
@@ -65,8 +65,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = or i8 %2, %1
-  %4 = or i8 %3, %0
+  %3 = or i8 %1, %2
+  %4 = or i8 %0, %3
   %5 = and i8 %4, 127
   ret i8 %5
 }

@@ -10,7 +10,7 @@
 ; rocksdb/optimized/db_impl.cc.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -34,7 +34,7 @@ entry:
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -132,7 +132,7 @@ entry:
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000606(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
@@ -178,7 +178,7 @@ entry:
 ; yosys/optimized/opt_muxtree.ll
 ; yosys/optimized/ql_bram_merge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -205,7 +205,7 @@ entry:
 ; protobuf/optimized/descriptor.cc.ll
 ; zxing/optimized/MultiFormatReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -223,7 +223,7 @@ entry:
 ; yosys/optimized/test_pmgen.ll
 ; yosys/optimized/xilinx_srl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000060a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
@@ -236,7 +236,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000608(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -263,7 +263,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_nmtraj.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -276,7 +276,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_nmtraj.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000040a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -290,7 +290,7 @@ entry:
 ; openspiel/optimized/battleship_types.cc.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a7(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000147(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -323,7 +323,7 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ab(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014b(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -349,7 +349,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -362,7 +362,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/einsum_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000401(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -375,7 +375,7 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/gbtree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000022a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000044a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32

@@ -15,6 +15,6 @@ func0000000000000003:                   # @func0000000000000003
 	.quad	33554431                        # 0x1ffffff
 func0000000000000002:                   # @func0000000000000002
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$150, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 ^ ymm0 ^ ymm1
+	vpternlogq	$150, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 ^ ymm1 ^ ymm0
 	vpsllq	$32, %ymm2, %ymm0
 	retq

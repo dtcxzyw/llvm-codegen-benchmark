@@ -1,5 +1,5 @@
 
-; 311 occurrences:
+; 309 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
@@ -16,6 +16,7 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -178,9 +179,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -312,7 +310,7 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 63
   %4 = icmp ult i64 %0, %1
@@ -350,7 +348,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/tng_io.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp slt i64 %0, %1
@@ -388,7 +386,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp ugt i64 %0, %1
@@ -399,23 +397,12 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ugt i64 %0, %1
   %5 = select i1 %4, i64 0, i64 %3
   ret i64 %5
-}
-
-; 1 occurrences:
-; cpython/optimized/longobject.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %2, 24
-  %.not = icmp ugt i64 %0, %1
-  %4 = select i1 %.not, i64 %3, i64 28
-  ret i64 %4
 }
 
 attributes #0 = { nounwind }

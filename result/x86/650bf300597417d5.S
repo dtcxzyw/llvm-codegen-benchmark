@@ -1,4 +1,4 @@
-func000000000000010c:                   # @func000000000000010c
+func000000000000030c:                   # @func000000000000030c
 	subq	%rsi, %rdx
 	addq	$421, %rdx                      # imm = 0x1A5
 	cmpq	$5, %rdx
@@ -12,10 +12,15 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	notq	%rsi
 	addq	%rdx, %rsi
 	cmpq	$-1, %rsi
+	sete	%al
+	orb	%dil, %al
+	retq
+func0000000000000302:                   # @func0000000000000302
+	cmpq	%rsi, %rdx
 	sete	%al
 	orb	%dil, %al
 	retq

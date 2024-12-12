@@ -1,5 +1,5 @@
 
-; 315 occurrences:
+; 290 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkMulti.c.ll
@@ -102,11 +102,11 @@
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/Signals.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lua/optimized/lgc.ll
+; lvgl/optimized/lv_grid.ll
 ; meilisearch-rs/optimized/17jh51lasapq4j93.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
@@ -171,57 +171,6 @@
 ; postgres/optimized/spgxlog.ll
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/tsvector_op.ll
-; pybind11/optimized/cross_module_gil_utils.cpp.ll
-; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
-; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
-; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
-; pybind11/optimized/pybind11_tests.cpp.ll
-; pybind11/optimized/test_async.cpp.ll
-; pybind11/optimized/test_buffers.cpp.ll
-; pybind11/optimized/test_builtin_casters.cpp.ll
-; pybind11/optimized/test_call_policies.cpp.ll
-; pybind11/optimized/test_callbacks.cpp.ll
-; pybind11/optimized/test_chrono.cpp.ll
-; pybind11/optimized/test_class.cpp.ll
-; pybind11/optimized/test_const_name.cpp.ll
-; pybind11/optimized/test_constants_and_functions.cpp.ll
-; pybind11/optimized/test_copy_move.cpp.ll
-; pybind11/optimized/test_custom_type_casters.cpp.ll
-; pybind11/optimized/test_custom_type_setup.cpp.ll
-; pybind11/optimized/test_docstring_options.cpp.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
-; pybind11/optimized/test_eigen_tensor.cpp.ll
-; pybind11/optimized/test_enum.cpp.ll
-; pybind11/optimized/test_eval.cpp.ll
-; pybind11/optimized/test_exceptions.cpp.ll
-; pybind11/optimized/test_factory_constructors.cpp.ll
-; pybind11/optimized/test_gil_scoped.cpp.ll
-; pybind11/optimized/test_iostream.cpp.ll
-; pybind11/optimized/test_kwargs_and_defaults.cpp.ll
-; pybind11/optimized/test_local_bindings.cpp.ll
-; pybind11/optimized/test_methods_and_attributes.cpp.ll
-; pybind11/optimized/test_modules.cpp.ll
-; pybind11/optimized/test_multiple_inheritance.cpp.ll
-; pybind11/optimized/test_numpy_array.cpp.ll
-; pybind11/optimized/test_numpy_dtypes.cpp.ll
-; pybind11/optimized/test_numpy_vectorize.cpp.ll
-; pybind11/optimized/test_opaque_types.cpp.ll
-; pybind11/optimized/test_operator_overloading.cpp.ll
-; pybind11/optimized/test_pickling.cpp.ll
-; pybind11/optimized/test_python_multiple_inheritance.cpp.ll
-; pybind11/optimized/test_pytypes.cpp.ll
-; pybind11/optimized/test_sequences_and_iterators.cpp.ll
-; pybind11/optimized/test_smart_ptr.cpp.ll
-; pybind11/optimized/test_stl.cpp.ll
-; pybind11/optimized/test_stl_binders.cpp.ll
-; pybind11/optimized/test_tagbased_polymorphic.cpp.ll
-; pybind11/optimized/test_thread.cpp.ll
-; pybind11/optimized/test_type_caster_pyobject_ptr.cpp.ll
-; pybind11/optimized/test_union.cpp.ll
-; pybind11/optimized/test_unnamed_namespace_a.cpp.ll
-; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
-; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
-; pybind11/optimized/test_virtual_functions.cpp.ll
 ; qemu/optimized/accel_tcg_perf.c.ll
 ; qemu/optimized/accel_tcg_translate-all.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
@@ -315,12 +264,38 @@
 ; xgboost/optimized/stats.cc.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
+; zed-rs/optimized/0lpqjgmxwongdkn1etmfasxzh.ll
+; zed-rs/optimized/1z9x99vx9jfns7mxpwa762fd3.ll
+; zed-rs/optimized/21l651k8emcdlqbvfstrxfddk.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4h176o45n3uxzch53hiway9mu.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/6dn0ge6k6n2ik0ce7lwpgjvce.ll
+; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/8eg3c68hjyduepshag5n9ghr7.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/b7n4ebe7bkw4hnagh8ndf0qla.ll
+; zed-rs/optimized/by8gv54o76v0inyrwjxd65d9p.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/d334eo7xhndhquqddprlqx6j8.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/edm0tyzllcff5rtqrop0amdwq.ll
+; zed-rs/optimized/erzde9u7wnx5zkvy3kzdy8721.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %0, 1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -330,7 +305,7 @@ entry:
 ; openjdk/optimized/machnode.ll
 ; re2/optimized/simplify.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i16 %1) #0 {
+define i1 @func000000000000006c(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %0, 1
@@ -338,7 +313,7 @@ entry:
   ret i1 %4
 }
 
-; 443 occurrences:
+; 452 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/kitDsd.c.ll
@@ -347,6 +322,8 @@ entry:
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/block_splitter.c.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; clamav/optimized/aspack.c.ll
@@ -414,11 +391,9 @@ entry:
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/cpu_rmap.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/eht.ll
 ; linux/optimized/ematch.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/fib_frontend.ll
-; linux/optimized/he.ll
 ; linux/optimized/i2c-core-smbus.ll
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/i915_vma.ll
@@ -441,7 +416,6 @@ entry:
 ; linux/optimized/rx.ll
 ; linux/optimized/services.ll
 ; linux/optimized/sock_reuseport.ll
-; linux/optimized/strict_rwx.ll
 ; linux/optimized/tdls.ll
 ; linux/optimized/trans_virtio.ll
 ; linux/optimized/virtio_net.ll
@@ -489,7 +463,6 @@ entry:
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
@@ -540,6 +513,9 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86TileConfig.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
@@ -751,6 +727,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
 ; stb/optimized/stb_vorbis.c.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/2hn3w9bvpn4vosvc.ll
@@ -782,8 +759,15 @@ entry:
 ; xgboost/optimized/stats.cc.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %0, 1
@@ -791,7 +775,7 @@ entry:
   ret i1 %4
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/ishield.c.ll
 ; clamav/optimized/pe.c.ll
@@ -837,6 +821,7 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wireshark/optimized/blf.c.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i16 %1) #0 {
 entry:
@@ -846,7 +831,7 @@ entry:
   ret i1 %4
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -894,8 +879,9 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add i64 %0, 1
@@ -935,7 +921,7 @@ entry:
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nsw i64 %0, 1
@@ -943,7 +929,7 @@ entry:
   ret i1 %4
 }
 
-; 82 occurrences:
+; 89 occurrences:
 ; abc/optimized/dsdProc.c.ll
 ; abc/optimized/ivyCut.c.ll
 ; abc/optimized/ivySeq.c.ll
@@ -974,6 +960,9 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_spinbox.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/test_connection.cpp.ll
@@ -1006,6 +995,7 @@ entry:
 ; postgres/optimized/nbtutils.ll
 ; postgres/optimized/partbounds.ll
 ; postgres/optimized/planner.ll
+; postgres/optimized/refint.ll
 ; postgres/optimized/regproc.ll
 ; postgres/optimized/relcache.ll
 ; postgres/optimized/relnode.ll
@@ -1026,8 +1016,11 @@ entry:
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-tds.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add nuw nsw i64 %0, 1
@@ -1035,10 +1028,9 @@ entry:
   ret i1 %4
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; lief/optimized/ResourcesParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -1099,7 +1091,7 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 21 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/fse_decompress.c.ll
@@ -1108,6 +1100,9 @@ entry:
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/tcp_offload.ll
 ; linux/optimized/zstd_decompress_block.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_style.ll
 ; php/optimized/cdf.ll
 ; postgres/optimized/help.ll
 ; postgres/optimized/nbtdedup.ll
@@ -1119,11 +1114,11 @@ entry:
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add nuw nsw i64 %0, 8
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -1135,7 +1130,7 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; qemu/optimized/block_nbd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nsw i64 %0, -6
@@ -1149,7 +1144,7 @@ entry:
 ; slurm/optimized/gres.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nsw i64 %0, 1
@@ -1157,11 +1152,10 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; icu/optimized/udataswp.ll
 ; linux/optimized/ipconfig.ll
 ; php/optimized/dns.ll
-; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
@@ -1169,10 +1163,21 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %0, 2
+  %4 = icmp samesign ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = add nuw nsw i64 %0, 15
   %4 = icmp ugt i64 %3, %2
   ret i1 %4
 }
@@ -1181,7 +1186,7 @@ entry:
 ; clamav/optimized/arcread.cpp.ll
 ; lief/optimized/ResourcesParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add i64 %0, 1
@@ -1189,7 +1194,7 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; clamav/optimized/jpeg.c.ll
 ; linux/optimized/radiotap.ll
 ; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
@@ -1208,6 +1213,7 @@ entry:
 ; ockam-rs/optimized/luz5e0okyn0ri51.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; openusd/optimized/path.cpp.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i16 %1) #0 {
 entry:
@@ -1225,7 +1231,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nsw i64 %0, 1
@@ -1236,7 +1242,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TypePrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add nuw i64 %0, 1
@@ -1249,11 +1255,11 @@ entry:
 ; linux/optimized/prmt.ll
 ; openusd/optimized/fvarRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000079(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %0, 1
-  %4 = icmp uge i64 %3, %2
+  %4 = icmp samesign uge i64 %3, %2
   ret i1 %4
 }
 
@@ -1269,7 +1275,7 @@ entry:
 ; ockam-rs/optimized/i22eb1mfvlgesy1.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw i64 %0, 1
@@ -1277,11 +1283,22 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000071(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = add nuw nsw i64 %0, 1
+  %4 = icmp samesign eq i64 %3, %2
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; postgres/optimized/nbtsort.ll
 ; postgres/optimized/nbtutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add nsw i64 %0, -8
@@ -1293,11 +1310,72 @@ entry:
 ; icu/optimized/olsontz.ll
 ; postgres/optimized/autoinc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add nsw i64 %0, 2
   %4 = icmp slt i64 %3, %2
+  ret i1 %4
+}
+
+; 51 occurrences:
+; pybind11/optimized/cross_module_gil_utils.cpp.ll
+; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
+; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
+; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
+; pybind11/optimized/pybind11_tests.cpp.ll
+; pybind11/optimized/test_async.cpp.ll
+; pybind11/optimized/test_buffers.cpp.ll
+; pybind11/optimized/test_builtin_casters.cpp.ll
+; pybind11/optimized/test_call_policies.cpp.ll
+; pybind11/optimized/test_callbacks.cpp.ll
+; pybind11/optimized/test_chrono.cpp.ll
+; pybind11/optimized/test_class.cpp.ll
+; pybind11/optimized/test_const_name.cpp.ll
+; pybind11/optimized/test_constants_and_functions.cpp.ll
+; pybind11/optimized/test_copy_move.cpp.ll
+; pybind11/optimized/test_custom_type_casters.cpp.ll
+; pybind11/optimized/test_custom_type_setup.cpp.ll
+; pybind11/optimized/test_docstring_options.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; pybind11/optimized/test_eigen_tensor.cpp.ll
+; pybind11/optimized/test_enum.cpp.ll
+; pybind11/optimized/test_eval.cpp.ll
+; pybind11/optimized/test_exceptions.cpp.ll
+; pybind11/optimized/test_factory_constructors.cpp.ll
+; pybind11/optimized/test_gil_scoped.cpp.ll
+; pybind11/optimized/test_iostream.cpp.ll
+; pybind11/optimized/test_kwargs_and_defaults.cpp.ll
+; pybind11/optimized/test_local_bindings.cpp.ll
+; pybind11/optimized/test_methods_and_attributes.cpp.ll
+; pybind11/optimized/test_modules.cpp.ll
+; pybind11/optimized/test_multiple_inheritance.cpp.ll
+; pybind11/optimized/test_numpy_array.cpp.ll
+; pybind11/optimized/test_numpy_dtypes.cpp.ll
+; pybind11/optimized/test_numpy_vectorize.cpp.ll
+; pybind11/optimized/test_opaque_types.cpp.ll
+; pybind11/optimized/test_operator_overloading.cpp.ll
+; pybind11/optimized/test_pickling.cpp.ll
+; pybind11/optimized/test_python_multiple_inheritance.cpp.ll
+; pybind11/optimized/test_pytypes.cpp.ll
+; pybind11/optimized/test_sequences_and_iterators.cpp.ll
+; pybind11/optimized/test_smart_ptr.cpp.ll
+; pybind11/optimized/test_stl.cpp.ll
+; pybind11/optimized/test_stl_binders.cpp.ll
+; pybind11/optimized/test_tagbased_polymorphic.cpp.ll
+; pybind11/optimized/test_thread.cpp.ll
+; pybind11/optimized/test_type_caster_pyobject_ptr.cpp.ll
+; pybind11/optimized/test_union.cpp.ll
+; pybind11/optimized/test_unnamed_namespace_a.cpp.ll
+; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
+; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
+; pybind11/optimized/test_virtual_functions.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = add nuw nsw i64 %0, 1
+  %4 = icmp ult i64 %3, %2
   ret i1 %4
 }
 

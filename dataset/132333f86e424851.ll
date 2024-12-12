@@ -24,11 +24,11 @@
 ; velox/optimized/CastExpr.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -44,11 +44,11 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -61,11 +61,11 @@ entry:
 ; minetest/optimized/pipeline.cpp.ll
 ; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -85,25 +85,25 @@ entry:
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 6
   %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
 ; 4 occurrences:
 ; linux/optimized/intel_ggtt.ll
 ; llvm/optimized/DbiStream.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/srp.cpp.ll
-; qemu/optimized/hw_net_vmxnet3.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -127,11 +127,11 @@ entry:
 ; quantlib/optimized/period.ll
 ; zxing/optimized/MultiFormatReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -143,11 +143,11 @@ define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/smooth.c.ll
@@ -156,7 +156,6 @@ entry:
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/DAGISelMatcherGen.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
@@ -184,7 +183,7 @@ define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -231,11 +230,11 @@ entry:
 ; yosys/optimized/opt_muxtree.ll
 ; yosys/optimized/ql_bram_merge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -264,11 +263,11 @@ entry:
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -281,22 +280,22 @@ entry:
 ; lief/optimized/ecp_curves.c.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; spike/optimized/ukcras32.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -320,22 +319,22 @@ entry:
 ; yosys/optimized/test_pmgen.ll
 ; yosys/optimized/xilinx_srl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; yosys/optimized/ast.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004b(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008b(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 
@@ -347,7 +346,7 @@ define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 9
   %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
@@ -355,11 +354,11 @@ entry:
 ; gromacs/optimized/gridset.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
@@ -371,7 +370,7 @@ define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -379,11 +378,11 @@ entry:
 ; openspiel/optimized/battleship_types.cc.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000027(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000047(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 
@@ -397,7 +396,7 @@ define i1 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -408,11 +407,11 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002b(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004b(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 

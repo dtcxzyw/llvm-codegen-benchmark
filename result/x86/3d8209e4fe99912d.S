@@ -8,11 +8,6 @@ func000000000000000c:                   # @func000000000000000c
 	seto	%al
 	andb	%dil, %al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	testq	%rsi, %rsi
-	setns	%al
-	andb	%dil, %al
-	retq
 func000000000000000a:                   # @func000000000000000a
 	testq	%rsi, %rsi
 	setle	%al

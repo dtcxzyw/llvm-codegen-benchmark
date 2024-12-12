@@ -1,5 +1,5 @@
 
-; 125 occurrences:
+; 124 occurrences:
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/TiffIFD.cpp.ll
@@ -120,7 +120,6 @@
 ; minetest/optimized/mesh_generator_thread.cpp.ll
 ; minetest/optimized/shader.cpp.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
-; quantlib/optimized/actualactual.ll
 ; yosys/optimized/check.ll
 ; yosys/optimized/dft_tag.ll
 ; yosys/optimized/gatemate_foldinv.ll

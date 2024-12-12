@@ -1,6 +1,5 @@
 
-; 31 occurrences:
-; abc/optimized/fxuPair.c.ll
+; 30 occurrences:
 ; abc/optimized/resSim.c.ll
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; darktable/optimized/image.c.ll

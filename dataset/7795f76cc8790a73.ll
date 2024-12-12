@@ -3,11 +3,11 @@
 ; libquic/optimized/d1_both.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw nsw i32 %1, 10
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }
@@ -28,7 +28,7 @@ entry:
 ; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/packet-lmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = add nsw i32 %1, -95
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-sapms.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = add nsw i32 %1, -10
@@ -53,7 +53,7 @@ entry:
 ; linux/optimized/utresrc.ll
 ; linux/optimized/virtgpu_display.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = add nsw i32 %1, -16
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/netfilter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw i32 %1, 16
@@ -77,11 +77,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/package.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000078(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw nsw i32 %1, 4
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }

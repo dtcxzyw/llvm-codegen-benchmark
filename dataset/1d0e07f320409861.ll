@@ -21,7 +21,7 @@ define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 14
   %3 = add nsw i64 %2, -31129600
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -37,7 +37,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 15
   %3 = add i64 %2, 32768
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -71,7 +71,7 @@ define i64 @func000000000000001b(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 10
   %3 = add nsw i64 %2, -56557568
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -89,7 +89,8 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/approximately_equals.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; git/optimized/record.ll
 ; hermes/optimized/SourceMgr.cpp.ll
@@ -112,11 +113,12 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; linux/optimized/lzo1x_compress.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/l3869xz334uj87z.ll
 ; Function Attrs: nounwind
@@ -159,7 +161,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 9
   %3 = add nuw nsw i64 %2, 18432
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -181,7 +183,7 @@ define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = add nuw nsw i64 %2, 2
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

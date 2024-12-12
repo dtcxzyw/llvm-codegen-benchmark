@@ -38,7 +38,7 @@
 ; z3/optimized/seq_offset_eq.cpp.ll
 ; z3/optimized/tactic_cmds.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp eq i8 %1, 0

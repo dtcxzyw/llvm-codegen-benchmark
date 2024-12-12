@@ -22,6 +22,7 @@
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/match.c.ll
 ; icu/optimized/csr2022.ll
+; icu/optimized/numparse_affixes.ll
 ; icu/optimized/ubidi.ll
 ; libquic/optimized/s3_both.c.ll
 ; libwebp/optimized/frame_enc.c.ll
@@ -51,13 +52,12 @@
 ; llvm/optimized/UnwrappedLineFormatter.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
-; memcached/optimized/memcached-storage.ll
-; memcached/optimized/memcached_debug-storage.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/persistence.cpp.ll
-; opencv/optimized/stringutils.cpp.ll
 ; openexr/optimized/context.c.ll
 ; openjdk/optimized/methodData.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
@@ -122,7 +122,7 @@ entry:
 ; qemu/optimized/hw_nvme_dif.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i8 %0) #0 {
+define i32 @func0000000000000030(i8 %0) #0 {
 entry:
   %1 = lshr i8 %0, 3
   %.lobit = and i8 %1, 1
@@ -130,7 +130,7 @@ entry:
   ret i32 %2
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; clamav/optimized/Lzma2Dec.c.ll
 ; clamav/optimized/regex_list.c.ll
 ; cmake/optimized/nghttp2_stream.c.ll
@@ -152,7 +152,6 @@ entry:
 ; openjdk/optimized/c1_Canonicalizer.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; php/optimized/zend_inference.ll
-; pocketpy/optimized/str.cpp.ll
 ; postgres/optimized/regcomp.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-epl.c.ll

@@ -16,6 +16,18 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; boost/optimized/src.ll
+; icu/optimized/indiancal.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, -732923
+  %3 = add i32 %2, 789358071
+  %4 = select i1 %0, i32 788625148, i32 %3
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; linux/optimized/intel_opregion.ll
 ; Function Attrs: nounwind
@@ -40,17 +52,6 @@ entry:
   %2 = mul i32 %1, 78913
   %3 = add i32 %2, -11994776
   %4 = select i1 %0, i32 -11915863, i32 %3
-  ret i32 %4
-}
-
-; 1 occurrences:
-; icu/optimized/indiancal.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = mul i32 %1, 30
-  %3 = add i32 %2, 30
-  %4 = select i1 %0, i32 30, i32 %3
   ret i32 %4
 }
 

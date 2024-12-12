@@ -1,7 +1,8 @@
 
-; 49 occurrences:
+; 51 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/giaResub.c.ll
+; boost/optimized/rational.ll
 ; lightgbm/optimized/linker_topo.cpp.ll
 ; lightgbm/optimized/network.cpp.ll
 ; linux/optimized/hid-lg4ff.ll
@@ -12,6 +13,7 @@
 ; linux/optimized/vlv_dsi.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; minetest/optimized/areastore.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll

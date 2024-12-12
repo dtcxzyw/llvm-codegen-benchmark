@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/utilNam.c.ll
+; linux/optimized/filter.ll
 ; openjdk/optimized/objectSampleCheckpoint.ll
 ; openmpi/optimized/libmpi_c_profile_la-type_create_f90_complex.ll
 ; openmpi/optimized/libmpi_c_profile_la-type_create_f90_real.ll

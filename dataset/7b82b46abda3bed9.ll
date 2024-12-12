@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 34 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -33,8 +33,6 @@
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; minetest/optimized/CGUITTFont.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
@@ -45,7 +43,7 @@ entry:
   ret i64 %4
 }
 
-; 68 occurrences:
+; 65 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -95,9 +93,6 @@ entry:
 ; linux/optimized/memory.ll
 ; linux/optimized/snapshot.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
-; minetest/optimized/CGUIFont.cpp.ll
-; minetest/optimized/COpenGLDriver.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openusd/optimized/cdef_block.c.ll
@@ -117,20 +112,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 60
-  %3 = ashr i64 %2, 63
-  %4 = add i64 %3, %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; minetest/optimized/CSkinnedMesh.cpp.ll
-; minetest/optimized/CXMeshFileLoader.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
-entry:
-  %2 = lshr exact i64 %1, 2
-  %3 = and i64 %2, 3
+  %2 = lshr i64 %1, 1
+  %3 = and i64 %2, 4294967295
   %4 = sub nsw i64 %0, %3
   ret i64 %4
 }
@@ -163,8 +146,7 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; 3 occurrences:
 ; luau/optimized/lnumprint.cpp.ll
 ; openblas/optimized/dasum_k.c.ll
 ; openblas/optimized/sasum_k.c.ll

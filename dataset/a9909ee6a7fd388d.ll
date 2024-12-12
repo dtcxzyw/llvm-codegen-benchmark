@@ -6,7 +6,7 @@
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fmul float %1, %1
   %6 = fcmp ugt float %4, %5
   ret i1 %6
@@ -18,7 +18,7 @@ entry:
 define i1 @func000000000000000d(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fmul float %1, %1
   %6 = fcmp uge float %4, %5
   ret i1 %6
@@ -30,7 +30,7 @@ entry:
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fmul float %1, %1
   %6 = fcmp ult float %4, %5
   ret i1 %6
@@ -49,7 +49,7 @@ entry:
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fmul float %1, %1
   %6 = fcmp ogt float %4, %5
   ret i1 %6
@@ -73,7 +73,7 @@ entry:
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fmul float %1, %1
   %6 = fcmp olt float %4, %5
   ret i1 %6
@@ -85,7 +85,7 @@ entry:
 define i1 @func000000000000000b(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fmul float %1, %1
   %6 = fcmp ule float %4, %5
   ret i1 %6
@@ -97,7 +97,7 @@ entry:
 define i1 @func000000000000000a(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fmul float %1, %1
   %6 = fcmp ole float %4, %5
   ret i1 %6

@@ -26,6 +26,12 @@ func0000000000000043:                   # @func0000000000000043
 	sbbl	$-1, %edi
 	leal	5(%rdi), %eax
 	retq
+func00000000000000c3:                   # @func00000000000000c3
+	andl	$1, %edi
+	cmpl	$1000000, %esi                  # imm = 0xF4240
+	sbbl	$-1, %edi
+	leal	5(%rdi), %eax
+	retq
 func0000000000000053:                   # @func0000000000000053
 	xorl	%eax, %eax
 	cmpl	$16777216, %esi                 # imm = 0x1000000

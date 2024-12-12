@@ -9,7 +9,7 @@ entry:
   %2 = add nsw i32 %1, 1
   %3 = sdiv i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 
@@ -30,7 +30,7 @@ entry:
   %2 = add nsw i32 %1, 1
   %3 = sdiv i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 

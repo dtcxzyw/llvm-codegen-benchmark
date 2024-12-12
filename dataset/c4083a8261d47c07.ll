@@ -5,7 +5,7 @@
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i8 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq i8 %1, 0
@@ -20,7 +20,7 @@ entry:
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i8 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000042c(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i8 %1, 0

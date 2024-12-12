@@ -17,7 +17,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add i32 %4, 71
   ret i32 %5
 }
@@ -34,7 +34,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add i32 %4, 5
   ret i32 %5
 }
@@ -46,7 +46,7 @@ entry:
 define i32 @func00000000000003ff(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = add nuw i32 %4, 8
   ret i32 %5
 }
@@ -58,7 +58,7 @@ entry:
 define i32 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add i32 %4, 8
   ret i32 %5
 }

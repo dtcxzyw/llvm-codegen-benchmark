@@ -1,14 +1,11 @@
 
-; 7 occurrences:
-; icu/optimized/collationbuilder.ll
+; 4 occurrences:
 ; icu/optimized/n2builder.ll
 ; llvm/optimized/ParseExpr.cpp.ll
 ; php/optimized/decode.ll
-; quickjs/optimized/libregexp.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
-; wireshark/optimized/filter_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000544(i32 %0) #0 {
+define i1 @func0000000000001484(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -253
   %2 = icmp ult i32 %1, -125
@@ -21,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/uchar.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i32 %0) #0 {
+define i1 @func0000000000001084(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -97
   %2 = icmp ult i32 %1, -26

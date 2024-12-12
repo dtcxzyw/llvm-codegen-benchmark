@@ -12,11 +12,11 @@ define i64 @func000000000000001c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 6
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; cmake/optimized/lzma2_decoder.c.ll
 ; draco/optimized/kd_tree_attributes_decoder.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -26,7 +26,6 @@ entry:
 ; folly/optimized/SpookyHashV2.cpp.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/namei_vfat.ll
-; linux/optimized/probe_roms.ll
 ; linux/optimized/super.ll
 ; llvm/optimized/DWARFDebugRangeList.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -45,11 +44,11 @@ define i64 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 194 occurrences:
+; 195 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -75,7 +74,6 @@ entry:
 ; hermes/optimized/Runtime.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
 ; libquic/optimized/x25519-x86_64.c.ll
-; linux/optimized/csum-wrappers_64.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/huf_decompress.ll
@@ -234,6 +232,8 @@ entry:
 ; quickjs/optimized/libregexp.ll
 ; wireshark/optimized/androiddump.c.ll
 ; wireshark/optimized/packet-dhcp.c.ll
+; z3/optimized/mam.cpp.ll
+; z3/optimized/q_mam.cpp.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
@@ -260,7 +260,7 @@ define i64 @func000000000000000b(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw i64 %2, 56
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -275,18 +275,66 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 15 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
+; hermes/optimized/APFloat.cpp.ll
 ; libquic/optimized/x25519-x86_64.c.ll
-; llvm/optimized/CoverageMappingGen.cpp.ll
+; llvm/optimized/APFloat.cpp.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 48
   %4 = add nuw nsw i64 %3, %0
+  ret i64 %4
+}
+
+; 9 occurrences:
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i64
+  %3 = shl nuw i64 %2, 56
+  %4 = add i64 %3, %0
+  ret i64 %4
+}
+
+; 9 occurrences:
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001e(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = shl nuw nsw i64 %2, 56
+  %4 = add nuw i64 %3, %0
   ret i64 %4
 }
 

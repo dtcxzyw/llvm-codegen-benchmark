@@ -19,16 +19,16 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nsw i64 %0, 1
   %6 = icmp slt i64 %5, %4
   ret i1 %6
 }
 
-; 55 occurrences:
+; 67 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -38,6 +38,18 @@ entry:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/mutex.ll
+; boost/optimized/partition.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
@@ -85,7 +97,7 @@ entry:
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000007a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = mul nuw nsw i64 %3, %1
@@ -99,10 +111,10 @@ entry:
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000744(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = add nuw i64 %0, 1
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -131,7 +143,7 @@ entry:
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = mul i64 %3, %1
@@ -143,19 +155,7 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f4(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; bullet3/optimized/btBatchedConstraints.ll
-; Function Attrs: nounwind
-define i1 @func00000000000003d6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000007a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = mul nuw nsw i64 %3, %1
@@ -167,10 +167,10 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nsw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -179,7 +179,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000356(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = mul nsw i64 %3, %1
@@ -198,7 +198,7 @@ entry:
 ; openblas/optimized/dsymm_thread_RL.c.ll
 ; openblas/optimized/dsymm_thread_RU.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = mul i64 %3, %1
@@ -217,7 +217,7 @@ entry:
 ; openblas/optimized/dsymm_thread_RL.c.ll
 ; openblas/optimized/dsymm_thread_RU.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000316(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000626(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = mul i64 %3, %1
@@ -229,10 +229,10 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nuw nsw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6

@@ -11,7 +11,7 @@ func0000000000000023:                   # @func0000000000000023
 func000000000000002b:                   # @func000000000000002b
 	subl	%edi, %esi
 	leal	-2(%rsi), %eax
-	shlq	$3, %rax
+	shlq	$2, %rax
 	retq
 func0000000000000013:                   # @func0000000000000013
 	notl	%edi

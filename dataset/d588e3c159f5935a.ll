@@ -8,7 +8,7 @@
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = lshr i32 %1, 3
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -88,7 +88,7 @@ entry:
 define i32 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = lshr i32 %0, 2
   %6 = add nuw nsw i32 %5, %4
   ret i32 %6

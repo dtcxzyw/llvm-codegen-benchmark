@@ -1,5 +1,5 @@
 
-; 111 occurrences:
+; 113 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -10,7 +10,7 @@
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
-; cmake/optimized/archive_pack_dev.c.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
 ; linux/optimized/blk-core.ll
@@ -111,6 +111,8 @@
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/btsnoop.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -284,7 +286,8 @@ entry:
   ret i64 %6
 }
 
-; 45 occurrences:
+; 46 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/page.ll
@@ -368,6 +371,20 @@ entry:
   ret i64 %6
 }
 
+; 3 occurrences:
+; abc/optimized/bdcSpfd.c.ll
+; linux/optimized/init_64.ll
+; llvm/optimized/ASTReader.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 40
+  %4 = and i64 %3, 4502500115742720
+  %5 = or i64 %0, %1
+  %6 = or disjoint i64 %5, %4
+  ret i64 %6
+}
+
 ; 2 occurrences:
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; spike/optimized/triggers.ll
@@ -392,19 +409,6 @@ entry:
   %4 = and i64 %3, 61440
   %5 = or i64 %0, %1
   %6 = or i64 %5, %4
-  ret i64 %6
-}
-
-; 2 occurrences:
-; linux/optimized/init_64.ll
-; llvm/optimized/ASTReader.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 35
-  %4 = and i64 %3, 34359738368
-  %5 = or i64 %0, %1
-  %6 = or disjoint i64 %5, %4
   ret i64 %6
 }
 

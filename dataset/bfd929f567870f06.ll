@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; luau/optimized/Compiler.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -7,6 +7,7 @@
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
@@ -15,9 +16,8 @@ entry:
   ret i8 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; linux/optimized/drm_edid.ll
-; linux/optimized/eht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/tdls.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
@@ -37,13 +37,14 @@ entry:
   ret i8 %3
 }
 
-; 75 occurrences:
+; 87 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; assimp/optimized/ColladaParser.cpp.ll
+; boost/optimized/parser_utils.ll
 ; c3c/optimized/json.c.ll
 ; casadi/optimized/serializing_stream.cpp.ll
 ; clamav/optimized/pdf.c.ll
@@ -67,10 +68,12 @@ entry:
 ; linux/optimized/vgacon.ll
 ; linux/optimized/xhci-hub.ll
 ; luau/optimized/Compiler.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; mixbox/optimized/mixbox.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/c1_CodeStubs_x86.ll
 ; openjdk/optimized/deoptimization.ll
+; openmpi/optimized/hb_tree.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; openusd/optimized/decodemv.c.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -79,7 +82,6 @@ entry:
 ; php/optimized/string.ll
 ; php/optimized/var_unserializer.ll
 ; pocketpy/optimized/compiler.cpp.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/fe-exec.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
@@ -94,6 +96,7 @@ entry:
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; qemu/optimized/util_qtree.c.ll
 ; qoi/optimized/qoi.ll
 ; raylib/optimized/rtextures.c.ll
 ; sentencepiece/optimized/strutil.cc.ll
@@ -112,6 +115,15 @@ entry:
 ; wireshark/optimized/packet-scsi.c.ll
 ; wireshark/optimized/packet-someip-sd.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
@@ -132,7 +144,7 @@ entry:
   ret i8 %3
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
@@ -144,6 +156,8 @@ entry:
 ; spike/optimized/s_subMagsF32.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wireshark/optimized/packet-dof.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
@@ -152,7 +166,8 @@ entry:
   ret i8 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/parser_utils.ll
 ; cpython/optimized/_codecs_kr.ll
 ; spike/optimized/clrs8.ll
 ; wireshark/optimized/msg_dlmap.c.ll
@@ -164,6 +179,30 @@ define i8 @func0000000000000005(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -1
   %3 = add nsw i8 %2, %0
+  ret i8 %3
+}
+
+; 15 occurrences:
+; arrow/optimized/bridge.cc.ll
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/scalar_cast_numeric.cc.ll
+; arrow/optimized/scalar_cast_temporal.cc.ll
+; arrow/optimized/uri.cc.ll
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/init_from_settings.ll
+; linux/optimized/x509_cert_parser.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
+entry:
+  %2 = add i8 %1, -48
+  %3 = add nuw nsw i8 %2, %0
   ret i8 %3
 }
 
@@ -194,23 +233,7 @@ entry:
 define i8 @func0000000000000008(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nuw i8 %1, 1
-  %3 = add i8 %2, %0
-  ret i8 %3
-}
-
-; 7 occurrences:
-; arrow/optimized/bridge.cc.ll
-; arrow/optimized/scalar.cc.ll
-; arrow/optimized/scalar_cast_numeric.cc.ll
-; arrow/optimized/scalar_cast_temporal.cc.ll
-; arrow/optimized/uri.cc.ll
-; arrow/optimized/value_parsing.cc.ll
-; linux/optimized/x509_cert_parser.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
-entry:
-  %2 = add i8 %1, -48
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 

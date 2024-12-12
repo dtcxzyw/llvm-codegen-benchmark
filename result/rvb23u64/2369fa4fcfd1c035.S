@@ -21,13 +21,12 @@ func0000000000000001:                   # @func0000000000000001
 	sllw	a0, a1, a0
 	addi	a0, a0, 1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	li	a1, 32
+	bset	a0, a1, a0
+	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a1, 16
 	sllw	a0, a1, a0
 	bseti	a0, a0, 28
-	ret
-func0000000000000006:                   # @func0000000000000006
-	li	a1, 2
-	sllw	a0, a1, a0
-	ori	a0, a0, 512
 	ret

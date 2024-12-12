@@ -11,12 +11,11 @@ entry:
   ret i32 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/saigSwitch.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/cacheinfo.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/move_extent.ll
 ; llvm/optimized/LinePrinter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
@@ -37,7 +36,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -64,7 +63,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/numeric.ll
 ; icu/optimized/uspoof_impl.ll
 ; libjpeg-turbo/optimized/jccoefct.c.ll
 ; openjdk/optimized/jccoefct.ll
@@ -92,7 +92,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -233
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -112,7 +112,7 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; icu/optimized/calendar.ll
 ; icu/optimized/reldtfmt.ll
 ; llvm/optimized/BreakableToken.cpp.ll
@@ -120,6 +120,7 @@ entry:
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; llvm/optimized/ScoreboardHazardRecognizer.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; php/optimized/parse_posix.ll
 ; postgres/optimized/localtime.ll
@@ -159,18 +160,6 @@ entry:
 }
 
 ; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 1024
-  %4 = select i1 %3, i32 %1, i32 %2
-  %5 = add nuw nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 2 occurrences:
 ; libwebp/optimized/cost_enc.c.ll
 ; libwebp/optimized/token_enc.c.ll
 ; Function Attrs: nounwind
@@ -178,7 +167,7 @@ define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, -131073
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 

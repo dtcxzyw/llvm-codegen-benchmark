@@ -1,32 +1,32 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	andi	a2, a2, 1
 	add	a0, a0, a2
 	andi	a1, a1, 1
 	subw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	andi	a2, a2, 1
 	addw	a0, a0, a2
 	andi	a1, a1, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	andi	a2, a2, 1
 	addw	a0, a0, a2
 	andi	a1, a1, 1
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	andi	a2, a2, 1
 	add	a0, a0, a2
 	andi	a1, a1, 1
 	subw	a0, a0, a1
 	slti	a0, a0, 1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	andi	a2, a2, 1
 	add	a0, a0, a2
 	andi	a1, a1, 1
@@ -40,21 +40,21 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	andi	a2, a2, 1
 	add	a0, a0, a2
 	andi	a1, a1, 1
 	subw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000018a:                   # @func000000000000018a
 	andi	a2, a2, 1
 	add	a0, a0, a2
 	andi	a1, a1, 1
 	subw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	andi	a2, a2, 1
 	add	a0, a0, a2
 	andi	a1, a1, 1

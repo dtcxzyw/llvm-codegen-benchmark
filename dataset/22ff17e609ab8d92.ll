@@ -4,7 +4,7 @@
 ; luajit/optimized/lj_record_dyn.ll
 ; ruby/optimized/unicode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000424(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 540672
   %3 = icmp eq i32 %2, 0
@@ -18,7 +18,7 @@ entry:
 ; gromacs/optimized/poscalc.cpp.ll
 ; ruby/optimized/regenc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8192
   %3 = icmp eq i32 %2, 0

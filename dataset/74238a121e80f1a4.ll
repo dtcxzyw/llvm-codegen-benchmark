@@ -11,11 +11,11 @@ entry:
   ret ptr %4
 }
 
-; 29 occurrences:
-; git/optimized/apply.ll
+; 28 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; openjdk/optimized/shenandoahHeap.ll
 ; openmpi/optimized/state_base_fns.ll
@@ -24,7 +24,6 @@ entry:
 ; postgres/optimized/dependencies.ll
 ; postgres/optimized/dict.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/like.ll
 ; postgres/optimized/mcv.ll
@@ -42,11 +41,23 @@ entry:
 ; wolfssl/optimized/suites.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a1(ptr %0, i8 %1) #0 {
+define ptr @func00000000000001e1(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
   %.v = select i1 %3, i64 8, i64 24
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %.v
+  ret ptr %4
+}
+
+; 1 occurrences:
+; git/optimized/apply.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000141(ptr %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 2
+  %3 = icmp eq i8 %2, 0
+  %.v = select i1 %3, i64 -8, i64 -10
   %4 = getelementptr nusw i8, ptr %0, i64 %.v
   ret ptr %4
 }

@@ -7,7 +7,7 @@
 ; openssl/optimized/ca_internals_test-bin-ca.ll
 ; openssl/optimized/openssl-bin-ca.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -20,7 +20,7 @@ entry:
 ; linux/optimized/extents_status.ll
 ; openssl/optimized/openssl-bin-x509.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -35,7 +35,7 @@ entry:
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; openjdk/optimized/packageEntry.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %0, i1 true, i1 %3
@@ -58,7 +58,7 @@ entry:
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3

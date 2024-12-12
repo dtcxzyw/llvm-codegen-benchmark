@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; rustfmt-rs/optimized/3n0n7c4xrusd0kzl.ll
 ; wasmtime-rs/optimized/1ab4bwgkzfvm86m5.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
-; wasmtime-rs/optimized/4i2whcl4s27dqb04.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -16,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -113,7 +112,7 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = icmp sgt i64 %3, %1
@@ -124,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = icmp eq i64 %3, %1
@@ -135,7 +134,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000065(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 5
   %4 = icmp ule i64 %3, %1
@@ -146,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000045(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 6
   %4 = icmp ule i64 %3, %1
@@ -158,7 +157,7 @@ entry:
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
   %4 = icmp eq i64 %3, %1

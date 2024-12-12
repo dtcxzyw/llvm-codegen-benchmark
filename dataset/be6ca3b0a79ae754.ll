@@ -5,10 +5,10 @@
 define i16 @func0000000000000048(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = lshr i32 %4, 16
   %6 = trunc nuw i32 %5 to i16
-  %7 = add i16 %6, %0
+  %7 = add i16 %0, %6
   ret i16 %7
 }
 
@@ -49,10 +49,10 @@ entry:
 define i16 @func000000000000006c(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = lshr i32 %4, 13
   %6 = trunc nuw nsw i32 %5 to i16
-  %7 = add i16 %6, %0
+  %7 = add i16 %0, %6
   ret i16 %7
 }
 
@@ -65,7 +65,7 @@ entry:
   %4 = add i32 %3, %1
   %5 = lshr i32 %4, 16
   %6 = trunc nuw i32 %5 to i16
-  %7 = add i16 %6, %0
+  %7 = add i16 %0, %6
   ret i16 %7
 }
 

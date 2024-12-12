@@ -1,7 +1,16 @@
 
-; 2 occurrences:
+; 11 occurrences:
 ; meilisearch-rs/optimized/3boqjkyppnj30yn0.ll
 ; meilisearch-rs/optimized/7ttx3vegu0k1psi.ll
+; zed-rs/optimized/18fe87pvcvcmccnycfh7q0atj.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(i64 %0) #0 {
 entry:
@@ -11,7 +20,7 @@ entry:
   ret ptr %3
 }
 
-; 32 occurrences:
+; 35 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
@@ -44,6 +53,9 @@ entry:
 ; tokio-rs/optimized/2i86qkpybymk1snv.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/18fe87pvcvcmccnycfh7q0atj.ll
+; zed-rs/optimized/a4ig8dgz5t1q56qsxep8b7iux.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(i64 %0) #0 {
 entry:

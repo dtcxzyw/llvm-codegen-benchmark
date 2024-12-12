@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	208                             # 0xd0
-	.byte	208                             # 0xd0
-	.byte	208                             # 0xd0
-	.byte	208                             # 0xd0
-	.byte	208                             # 0xd0
-	.byte	208                             # 0xd0
-	.byte	208                             # 0xd0
-	.byte	208                             # 0xd0
+	.byte	191                             # 0xbf
+	.byte	191                             # 0xbf
+	.byte	191                             # 0xbf
+	.byte	191                             # 0xbf
+	.byte	191                             # 0xbf
+	.byte	191                             # 0xbf
+	.byte	191                             # 0xbf
+	.byte	191                             # 0xbf
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,14 +16,14 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
+	.byte	26                              # 0x1a
+	.byte	26                              # 0x1a
+	.byte	26                              # 0x1a
+	.byte	26                              # 0x1a
+	.byte	26                              # 0x1a
+	.byte	26                              # 0x1a
+	.byte	26                              # 0x1a
+	.byte	26                              # 0x1a
 	.zero	1
 	.zero	1
 	.zero	1
@@ -71,7 +71,7 @@ func0000000000000004:                   # @func0000000000000004
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddb	.LCPI1_0(%rip), %xmm2, %xmm2
 	vpcmpltub	.LCPI1_1(%rip), %xmm2, %k1
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}

@@ -2,7 +2,7 @@
 	.long	56                              # 0x38
 .LCPI0_1:
 	.long	120                             # 0x78
-func0000000000000022:                   # @func0000000000000022
+func00000000000000a2:                   # @func00000000000000a2
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [56,56,56,56]
 	vpcmpltud	%xmm1, %xmm0, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm2   # xmm2 = [120,120,120,120]
@@ -35,7 +35,7 @@ func0000000000000053:                   # @func0000000000000053
 	.long	63                              # 0x3f
 .LCPI3_1:
 	.long	127                             # 0x7f
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	vpbroadcastd	.LCPI3_0(%rip), %xmm1   # xmm1 = [63,63,63,63]
 	vpcmpnleud	%xmm1, %xmm0, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [127,127,127,127]

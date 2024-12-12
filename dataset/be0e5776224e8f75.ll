@@ -13,7 +13,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp ne i32 %3, 0
   %5 = select i1 %4, i1 true, i1 %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = and i32 %2, 8
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i1 true, i1 %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

@@ -12,7 +12,7 @@ entry:
   ret i8 %3
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -23,7 +23,6 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
-; linux/optimized/he.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll

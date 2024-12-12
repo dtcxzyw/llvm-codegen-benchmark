@@ -16,3 +16,9 @@ func0000000000000005:                   # @func0000000000000005
 	shrq	$38, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	shrl	$9, %esi
+	imulq	$281475, %rsi, %rax             # imm = 0x44B83
+	shrq	$39, %rax
+	addq	%rdi, %rax
+	retq

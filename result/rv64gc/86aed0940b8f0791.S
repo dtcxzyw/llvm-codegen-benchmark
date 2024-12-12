@@ -18,6 +18,18 @@ func000000000000002f:                   # @func000000000000002f
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
+func0000000000000018:                   # @func0000000000000018
+	addiw	a1, a1, -48
+	li	a2, 10
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	ret
+func0000000000000010:                   # @func0000000000000010
+	addiw	a1, a1, -48
+	li	a2, 10
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	ret
 func0000000000000030:                   # @func0000000000000030
 	addiw	a1, a1, -48
 	li	a2, 10

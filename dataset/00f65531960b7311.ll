@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
-; hermes/optimized/Interpreter.cpp.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; vcpkg/optimized/cmd-parser.cpp.ll
 ; wireshark/optimized/proto.c.ll

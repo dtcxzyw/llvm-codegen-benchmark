@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	xorl	%eax, %eax
 	vucomiss	%xmm1, %xmm0
 	seta	%al

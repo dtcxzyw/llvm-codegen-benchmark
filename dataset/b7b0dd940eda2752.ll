@@ -1,8 +1,9 @@
 
-; 45 occurrences:
+; 46 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/buffer_piece_border.ll
 ; casadi/optimized/cvodes.c.ll
 ; graphviz/optimized/partition.c.ll
 ; graphviz/optimized/triang.c.ll

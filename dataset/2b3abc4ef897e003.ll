@@ -1,13 +1,13 @@
 
-%struct.aiFace.2717035 = type { i32, ptr }
-%"class.hermes::vm::GCHermesValueBase.2881673" = type { %"class.hermes::vm::HermesValue32.2881674" }
-%"class.hermes::vm::HermesValue32.2881674" = type { i32 }
-%"class.hermes::vm::GCHermesValueBase.2886505" = type { %"class.hermes::vm::HermesValue32.2886506" }
-%"class.hermes::vm::HermesValue32.2886506" = type { i32 }
-%"class.clang::QualType.3055354" = type { %"class.llvm::PointerIntPair.3055355" }
-%"class.llvm::PointerIntPair.3055355" = type { %"struct.llvm::detail::PunnedPointer.3055356" }
-%"struct.llvm::detail::PunnedPointer.3055356" = type { [8 x i8] }
-%struct.list_head.3363014 = type { ptr, ptr }
+%struct.aiFace.2829568 = type { i32, ptr }
+%"class.hermes::vm::GCHermesValueBase.3076197" = type { %"class.hermes::vm::HermesValue32.3076198" }
+%"class.hermes::vm::HermesValue32.3076198" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3081026" = type { %"class.hermes::vm::HermesValue32.3081027" }
+%"class.hermes::vm::HermesValue32.3081027" = type { i32 }
+%"class.clang::QualType.3248271" = type { %"class.llvm::PointerIntPair.3248272" }
+%"class.llvm::PointerIntPair.3248272" = type { %"struct.llvm::detail::PunnedPointer.3248273" }
+%"struct.llvm::detail::PunnedPointer.3248273" = type { [8 x i8] }
+%struct.list_head.3549476 = type { ptr, ptr }
 
 ; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -16,50 +16,59 @@
 ; openjdk/optimized/gtk2_interface.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 4
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 13 occurrences:
-; abc/optimized/inffast.c.ll
+; 9 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; freetype/optimized/ftcache.c.ll
-; gromacs/optimized/inffast.c.ll
 ; libquic/optimized/padding.c.ll
 ; llvm/optimized/CompressInstEmitter.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
-; lz4/optimized/lz4hc.c.ll
 ; miniaudio/optimized/unity.c.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
-  %6 = getelementptr nusw %struct.aiFace.2717035, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw %struct.aiFace.2829568, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 2 occurrences:
+; abc/optimized/inffast.c.ll
+; gromacs/optimized/inffast.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004b(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nuw i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %0, i64 -1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
 ; 3 occurrences:
 ; abc/optimized/inffast.c.ll
-; clamav/optimized/pe.c.ll
 ; gromacs/optimized/inffast.c.ll
+; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub nuw i32 %1, %2
+  %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 -1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -72,6 +81,18 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 -2
   %6 = getelementptr i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; clamav/optimized/pe.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004f(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nuw i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 2
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -89,12 +110,12 @@ entry:
 ; hermes/optimized/RuntimeJSONUtils.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000005f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
-  %6 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.2881673", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076197", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -107,24 +128,24 @@ entry:
 ; hermes/optimized/JSCallableProxy.cpp.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
-  %6 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.2886505", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3081026", ptr %5, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 48
-  %6 = getelementptr nusw %"class.clang::QualType.3055354", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 48
+  %6 = getelementptr nusw nuw %"class.clang::QualType.3248271", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -161,7 +182,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 -16
-  %6 = getelementptr %struct.list_head.3363014, ptr %5, i64 %4
+  %6 = getelementptr %struct.list_head.3549476, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -180,23 +201,23 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 144
-  %6 = getelementptr nusw i16, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 144
+  %6 = getelementptr nusw nuw i16, ptr %5, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; icu/optimized/collationdatareader.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 32
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 32
   %6 = getelementptr i16, ptr %5, i64 %4
   ret ptr %6
 }

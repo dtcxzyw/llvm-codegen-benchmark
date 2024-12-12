@@ -9,7 +9,7 @@ define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   ret i1 %4
 }
 
@@ -21,11 +21,11 @@ entry:
 ; postgres/optimized/nodeWindowAgg.ll
 ; postgres/optimized/rowtypes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000084(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   ret i1 %4
 }
 
@@ -37,11 +37,11 @@ entry:
 ; postgres/optimized/proc.ll
 ; postgres/optimized/slru.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000184(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   ret i1 %4
 }
 

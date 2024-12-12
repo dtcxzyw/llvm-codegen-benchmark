@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; icu/optimized/decNumber.ll
 ; icu/optimized/scrptrun.ll
 ; jq/optimized/decNumber.ll
@@ -24,6 +24,7 @@
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_subMagsF16.ll
 ; spike/optimized/s_subMagsF32.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i1 %1) #0 {
 entry:

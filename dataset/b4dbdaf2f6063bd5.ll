@@ -21,7 +21,7 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; mold/optimized/arch-ppc64v1.cc.ll
 ; mold/optimized/input-sections.cc.PPC64V1.cc.ll
 ; mold/optimized/mapfile.cc.PPC64V1.cc.ll
@@ -37,6 +37,7 @@ entry:
 ; openmpi/optimized/io_ompio.ll
 ; php/optimized/spl_heap.ll
 ; sentencepiece/optimized/strutil.cc.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -53,6 +54,30 @@ define i32 @func000000000000000d(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = add nsw i32 %3, -2
+  %5 = select i1 %0, i32 %4, i32 %1
+  ret i32 %5
+}
+
+; 3 occurrences:
+; velox/optimized/LazyVector.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; velox/optimized/RawVector.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 2
+  %4 = add nsw i32 %3, 64
+  %5 = select i1 %0, i32 %4, i32 %1
+  ret i32 %5
+}
+
+; 1 occurrences:
+; velox/optimized/PrestoSerializer.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw i32 %2, 1
+  %4 = add nsw i32 %3, 64
   %5 = select i1 %0, i32 %4, i32 %1
   ret i32 %5
 }

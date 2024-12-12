@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; cpython/optimized/timemodule.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
@@ -23,7 +23,6 @@
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/IndVarSimplify.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
@@ -47,7 +46,7 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/giaMfs.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -57,7 +56,6 @@ entry:
 ; luajit/optimized/lj_parse_dyn.ll
 ; openssl/optimized/libcrypto-lib-asn1_lib.ll
 ; openssl/optimized/libcrypto-shlib-asn1_lib.ll
-; rust-analyzer-rs/optimized/2opy4detkbqdwmaz.ll
 ; xgboost/optimized/adaptive.cc.ll
 ; xgboost/optimized/auc.cc.ll
 ; xgboost/optimized/hist_util.cc.ll
@@ -68,14 +66,14 @@ entry:
 ; xgboost/optimized/stats.cc.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = select i1 %2, i1 true, i1 %0
   ret i1 %3
 }
 
-; 69 occurrences:
+; 75 occurrences:
 ; coreutils-rs/optimized/3z39203exqv32wuh.ll
 ; coreutils-rs/optimized/aci7fhqxjjsavmn.ll
 ; coreutils-rs/optimized/tjkohna6p7ofvip.ll
@@ -141,38 +139,22 @@ entry:
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; rust-analyzer-rs/optimized/2vxuaelrlwl3fq0k.ll
-; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/x7jq6ogp3t9ef5k.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/4pyl8821jbmubnjyx7hxe0q2i.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = select i1 %2, i1 true, i1 %0
   ret i1 %3
-}
-
-; 12 occurrences:
-; cpython/optimized/_codecs_kr.ll
-; darktable/optimized/VC5Decompressor.cpp.ll
-; darktable/optimized/introspection_demosaic.c.ll
-; duckdb/optimized/ub_duckdb_common.cpp.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; jq/optimized/gb18030.ll
-; libquic/optimized/a_mbstr.c.ll
-; linux/optimized/mmconfig-shared.ll
-; oniguruma/optimized/gb18030.ll
-; proxygen/optimized/QPACKCodec.cpp.ll
-; typst-rs/optimized/ef603zin5qw49hb.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -129
-  %3 = icmp ult i64 %2, 126
-  %4 = select i1 %3, i1 true, i1 %0
-  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -188,11 +170,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; tomlplusplus/optimized/toml.cpp.ll
+; 1 occurrences:
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -58
   %3 = icmp ult i64 %2, -10
@@ -200,7 +181,32 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 14 occurrences:
+; cpython/optimized/_codecs_kr.ll
+; darktable/optimized/VC5Decompressor.cpp.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; libquic/optimized/a_mbstr.c.ll
+; proxygen/optimized/QPACKCodec.cpp.ll
+; typst-rs/optimized/ef603zin5qw49hb.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -1
+  %3 = icmp ult i64 %2, 8
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
+}
+
+; 5 occurrences:
+; boost/optimized/expand_on_spheroid.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/ip6_fib.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -208,7 +214,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ne i64 %1, -1
+  %2 = icmp ne i64 %1, 1
   %3 = select i1 %2, i1 true, i1 %0
   ret i1 %3
 }
@@ -218,7 +224,7 @@ entry:
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 128
   %3 = select i1 %2, i1 true, i1 %0
@@ -278,7 +284,7 @@ entry:
 ; protobuf/optimized/relative_path.cc.ll
 ; protobuf/optimized/versions.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 15
   %3 = select i1 %2, i1 true, i1 %0
@@ -299,11 +305,32 @@ entry:
 ; opencv/optimized/serialization.cpp.ll
 ; opencv/optimized/streaming.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, -2
   %3 = select i1 %2, i1 true, i1 %0
   ret i1 %3
+}
+
+; 1 occurrences:
+; casadi/optimized/serializing_stream.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ne i64 %1, 1
+  %3 = select i1 %2, i1 true, i1 %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; tomlplusplus/optimized/toml.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -109
+  %3 = icmp ult i64 %2, -64
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

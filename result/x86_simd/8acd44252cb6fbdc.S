@@ -12,7 +12,7 @@
 	.short	31744                           # 0x7c00
 func000000000000003d:                   # @func000000000000003d
 	vpslld	$15, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpord	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
@@ -88,7 +88,7 @@ func000000000000003e:                   # @func000000000000003e
 	.short	220                             # 0xdc
 func0000000000000039:                   # @func0000000000000039
 	vpslld	$8, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpord	.LCPI4_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
@@ -107,7 +107,7 @@ func0000000000000039:                   # @func0000000000000039
 	.short	2048                            # 0x800
 func000000000000003f:                   # @func000000000000003f
 	vpslld	$8, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpord	.LCPI5_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper

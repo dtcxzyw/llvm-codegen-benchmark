@@ -50,7 +50,21 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; llvm/optimized/APINotesWriter.cpp.ll
+; llvm/optimized/LoadStoreVectorizer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nsw i64 %1, 1512728442
+  %3 = and i64 %2, 4294967294
+  %4 = shl nuw i64 %0, 32
+  %5 = or disjoint i64 %3, %4
+  ret i64 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/MIRFSDiscriminator.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {

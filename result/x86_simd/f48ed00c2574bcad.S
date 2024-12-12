@@ -14,7 +14,7 @@ func0000000000000060:                   # @func0000000000000060
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0

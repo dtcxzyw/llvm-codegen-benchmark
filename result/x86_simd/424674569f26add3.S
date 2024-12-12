@@ -24,7 +24,7 @@ func000000000000001f:                   # @func000000000000001f
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [3221225472,3221225472,3221225472,3221225472,3221225472,3221225472,3221225472,3221225472]
 	vpbroadcastd	.LCPI0_2(%rip), %ymm2 {%k1} # ymm2 {%k1} = [2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648]
 	vpslld	$8, %ymm1, %ymm1
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI1_0:
 	.byte	2                               # 0x2

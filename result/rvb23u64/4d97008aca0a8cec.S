@@ -10,6 +10,12 @@ func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
 	addi	a0, a0, 40
 	ret
+func000000000000000d:                   # @func000000000000000d
+	andi	a1, a1, 1
+	czero.eqz	a1, a2, a1
+	add	a0, a0, a1
+	addi	a0, a0, 2
+	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 1
 	czero.eqz	a1, a2, a1

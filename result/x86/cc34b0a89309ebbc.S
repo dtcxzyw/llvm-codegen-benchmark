@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	andl	$-257, %edx                     # imm = 0xFEFF
 	orl	%esi, %edx
 	movl	%edx, %eax
@@ -14,11 +14,11 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	$16, %dil
 	cmovnel	%edx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andl	$1, %edx
-	leal	2048(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
+	leal	2048(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	testb	%dil, %dil
 	cmovnel	%ecx, %eax
 	retq

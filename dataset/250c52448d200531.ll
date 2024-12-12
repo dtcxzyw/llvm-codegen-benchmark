@@ -17,8 +17,8 @@ entry:
 define i16 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = add nuw nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   %6 = trunc i64 %5 to i16
   ret i16 %6
 }
@@ -29,7 +29,7 @@ entry:
 define i16 @func00000000000000fc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 11
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   %6 = trunc i64 %5 to i16
   ret i16 %6

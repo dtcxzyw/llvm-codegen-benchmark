@@ -15,7 +15,7 @@
 define double @func0000000000000000(double %0, i16 %1) #0 {
 entry:
   %2 = sitofp i16 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

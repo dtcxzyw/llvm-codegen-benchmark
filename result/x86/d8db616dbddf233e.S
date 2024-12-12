@@ -13,3 +13,8 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpb	$2, %sil
+	setae	%al
+	andb	%dil, %al
+	retq

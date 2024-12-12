@@ -1,6 +1,7 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/mpdecimal.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -33,10 +34,11 @@ entry:
   ret i64 %4
 }
 
-; 112 occurrences:
+; 113 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -151,6 +153,19 @@ define i64 @func000000000000001b(i64 %0) #0 {
 entry:
   %1 = zext i64 %0 to i128
   %2 = mul nuw nsw i128 %1, 10
+  %3 = lshr i128 %2, 64
+  %4 = trunc nuw nsw i128 %3 to i64
+  ret i64 %4
+}
+
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003b(i64 %0) #0 {
+entry:
+  %1 = zext nneg i64 %0 to i128
+  %2 = mul nuw nsw i128 %1, 1844674407371
   %3 = lshr i128 %2, 64
   %4 = trunc nuw nsw i128 %3 to i64
   ret i64 %4

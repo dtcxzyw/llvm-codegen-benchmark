@@ -1,12 +1,12 @@
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	fcmeq	v0.2d, v0.2d, v0.2d
-	fcmeq	v1.2d, v1.2d, v1.2d
+	fcmp	d0, d0
+	csetm	x0, vc
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fcmlt	v0.2d, v0.2d, #0.0
-	fcmlt	v1.2d, v1.2d, #0.0
+	fcmp	d0, #0.0
+	csetm	x0, mi
 	ret
                                         // -- End function

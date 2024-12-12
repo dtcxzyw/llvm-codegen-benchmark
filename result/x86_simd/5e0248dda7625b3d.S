@@ -9,7 +9,7 @@
 	.short	256                             # 0x100
 func0000000000000004:                   # @func0000000000000004
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddw	%xmm1, %xmm0, %xmm0

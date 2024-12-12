@@ -1,12 +1,11 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; git/optimized/ls-files.ll
 ; git/optimized/path.ll
 ; icu/optimized/smpdtfmt.ll
-; linux/optimized/dns_key.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; opencv/optimized/layer_norm.cpp.ll
 ; openjdk/optimized/FileSystemSupport_md.ll
@@ -36,7 +35,7 @@ entry:
   ret i32 %4
 }
 
-; 36 occurrences:
+; 41 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; freetype/optimized/type42.c.ll
@@ -69,6 +68,11 @@ entry:
 ; xgboost/optimized/iterative_dmatrix.cc.ll
 ; yosys/optimized/simplify.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; zxing/optimized/ODDataBarExpandedBitDecoder.cpp.ll
 ; zxing/optimized/ODEAN13Writer.cpp.ll
 ; zxing/optimized/ODEAN8Writer.cpp.ll
@@ -106,7 +110,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; gromacs/optimized/gmx_dielectric.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll

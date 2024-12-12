@@ -41,7 +41,7 @@
 ; verilator/optimized/V3Width.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000068(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
@@ -51,8 +51,13 @@ entry:
   ret i1 %6
 }
 
-; 45 occurrences:
+; 50 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; csmith/optimized/VariableSelector.cpp.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
@@ -98,7 +103,7 @@ entry:
 ; xgboost/optimized/indexed_recordio_split.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000064(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0

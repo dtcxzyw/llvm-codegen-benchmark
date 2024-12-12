@@ -1,10 +1,11 @@
 
-%"class.std::__cxx11::basic_string.6.2589344" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2589345", i64, %union.anon.10.2589346 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2589345" = type { ptr }
-%union.anon.10.2589346 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.6.2703189" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2703190", i64, %union.anon.10.2703191 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2703190" = type { ptr }
+%union.anon.10.2703191 = type { i64, [8 x i8] }
 
-; 11 occurrences:
+; 12 occurrences:
 ; faiss/optimized/ProductQuantizer.cpp.ll
+; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/membed.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
@@ -16,11 +17,11 @@
 ; opencv/optimized/tree.cpp.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -34,12 +35,12 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr %"class.std::__cxx11::basic_string.6.2589344", ptr %0, i64 %4
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr %"class.std::__cxx11::basic_string.6.2703189", ptr %0, i64 %4
   ret ptr %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
 ; darktable/optimized/histogram.c.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -47,6 +48,7 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
 ; pbrt-v4/optimized/mesh.cpp.ll
 ; qemu/optimized/block_qcow2-cache.c.ll
 ; Function Attrs: nounwind
@@ -58,7 +60,7 @@ entry:
   ret ptr %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_system.cpp.ll
@@ -66,7 +68,6 @@ entry:
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; meshoptimizer/optimized/indexgenerator.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
@@ -77,7 +78,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -107,6 +108,19 @@ entry:
   ret ptr %5
 }
 
+; 3 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = mul i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
 ; 16 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
@@ -130,6 +144,17 @@ entry:
   %3 = and i64 %2, 536870911
   %4 = mul nsw i64 %3, %1
   %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; lodepng/optimized/lodepng.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000d(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = mul nuw nsw i64 %3, %1
+  %5 = getelementptr nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
 ; stb/optimized/stb_easy_font.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -19,7 +19,7 @@ entry:
 ; libquic/optimized/cipher.c.ll
 ; redis/optimized/ldo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub i32 %1, %3
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3

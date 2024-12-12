@@ -9,3 +9,9 @@ func000000000000000a:                   # @func000000000000000a
 	shlq	$32, %rax
 	orq	%rdi, %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	orl	%esi, %edi
+	movq	%rdi, %rax
+	shlq	$32, %rax
+	orq	%rdi, %rax
+	retq

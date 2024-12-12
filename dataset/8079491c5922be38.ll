@@ -21,6 +21,7 @@ entry:
 ; 244 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
+; boost/optimized/area.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; cmake/optimized/nghttp2_submit.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
@@ -214,7 +215,6 @@ entry:
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -272,7 +272,7 @@ entry:
   ret i64 %5
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -288,7 +288,6 @@ entry:
 ; cpython/optimized/_zoneinfo.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; curl/optimized/libcurl_la-progress.ll
-; darktable/optimized/DeflateDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
@@ -319,7 +318,8 @@ entry:
   ret i64 %5
 }
 
-; 99 occurrences:
+; 100 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -428,7 +428,7 @@ entry:
   ret i64 %5
 }
 
-; 35 occurrences:
+; 37 occurrences:
 ; arrow/optimized/counting_semaphore.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
@@ -460,6 +460,8 @@ entry:
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3ThreadPool.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; xgboost/optimized/coll_c_api.cc.ll
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll
@@ -508,7 +510,8 @@ entry:
   ret i64 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; git/optimized/date.ll
@@ -618,7 +621,7 @@ entry:
   ret i64 %5
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
@@ -638,7 +641,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; php/optimized/ZendAccelerator.ll
-; php/optimized/dow.ll
 ; php/optimized/html.ll
 ; php/optimized/tm2unixtime.ll
 ; php/optimized/zend_hash.ll
@@ -688,6 +690,17 @@ entry:
   %3 = mul i64 %2, 9
   %4 = add nuw nsw i64 %0, %1
   %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; php/optimized/unixtime2tm.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = mul nuw nsw i64 %0, 4294963696
+  %5 = add nuw nsw i64 %4, %3
   ret i64 %5
 }
 

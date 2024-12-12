@@ -41,14 +41,3 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI4_0:
-	.quad	0x400a934f0979a371              # double 3.3219280948873622
-.LCPI4_1:
-	.long	4294967275                      # 0xffffffeb
-func0000000000000004:                   # @func0000000000000004
-	vdivpd	.LCPI4_0(%rip){1to8}, %zmm0, %zmm0
-	vcvttpd2dq	%zmm0, %ymm0
-	vpcmpltud	.LCPI4_1(%rip){1to8}, %ymm0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq

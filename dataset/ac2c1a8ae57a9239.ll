@@ -56,13 +56,15 @@ entry:
   ret i32 %5
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; freetype/optimized/sdf.c.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
@@ -125,7 +127,6 @@ entry:
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_timer.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/vmaster.ll
 ; linux/optimized/wpa.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
@@ -141,13 +142,14 @@ entry:
 ; llvm/optimized/SourceMgr.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_obj.ll
 ; lz4/optimized/lz4hc.c.ll
 ; minetest/optimized/CFileSystem.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; mold/optimized/arch-m68k.cc.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgtts2.c.ll
 ; openblas/optimized/dlarfb.c.ll
 ; openblas/optimized/dlatms.c.ll
@@ -242,7 +244,7 @@ entry:
   ret i32 %5
 }
 
-; 180 occurrences:
+; 179 occurrences:
 ; abc/optimized/giaCex.c.ll
 ; arrow/optimized/grouper.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -410,7 +412,6 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
 ; openblas/optimized/dtgevc.c.ll
@@ -432,7 +433,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/CGUIImage.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
@@ -507,19 +509,6 @@ entry:
 }
 
 ; 3 occurrences:
-; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/i64_to_f32.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = sub nuw nsw i32 %0, %1
-  %5 = add i32 %4, %3
-  ret i32 %5
-}
-
-; 3 occurrences:
 ; hdf5/optimized/H5Spoint.c.ll
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
@@ -540,6 +529,18 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nuw nsw i32 %0, %1
   %5 = add nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = sub nuw nsw i32 %0, %1
+  %5 = add i32 %4, %3
   ret i32 %5
 }
 
@@ -603,9 +604,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; openblas/optimized/dorgr2.c.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {

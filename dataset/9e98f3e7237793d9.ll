@@ -4,7 +4,7 @@
 ; cvc5/optimized/Solver.cc.ll
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 24
   %4 = and i64 %3, 255
@@ -24,7 +24,7 @@ entry:
 ; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = and i64 %3, 2147483647

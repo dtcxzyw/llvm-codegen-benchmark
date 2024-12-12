@@ -18,7 +18,7 @@ entry:
 ; openvdb/optimized/Archive.cc.ll
 ; stb/optimized/stb_ds.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000041(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = getelementptr nusw i8, ptr %0, i64 %2
@@ -27,10 +27,11 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; jq/optimized/execute.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000061(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000c1(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = getelementptr nusw i8, ptr %0, i64 %2
@@ -45,7 +46,7 @@ entry:
 ; linux/optimized/xfrm_policy.ll
 ; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000041(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000081(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = getelementptr i8, ptr %0, i64 %2

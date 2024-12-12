@@ -1,6 +1,8 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
@@ -21,7 +23,7 @@ entry:
   ret i64 %4
 }
 
-; 50 occurrences:
+; 51 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -72,12 +74,35 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = sub nsw i64 %0, %2
   %4 = shl nsw i64 %3, 6
+  ret i64 %4
+}
+
+; 1 occurrences:
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = sub nuw i64 %0, %2
+  %4 = shl i64 %3, 5
+  ret i64 %4
+}
+
+; 1 occurrences:
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = shl i64 %3, 5
   ret i64 %4
 }
 

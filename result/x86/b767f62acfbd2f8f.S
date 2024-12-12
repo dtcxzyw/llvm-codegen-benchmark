@@ -4,14 +4,14 @@ func0000000000000007:                   # @func0000000000000007
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	orb	$8, %dl
+func0000000000000004:                   # @func0000000000000004
+	orb	$48, %dl
 	movzbl	%dl, %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	orb	$48, %dl
+func0000000000000000:                   # @func0000000000000000
+	orb	$8, %dl
 	movzbl	%dl, %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax

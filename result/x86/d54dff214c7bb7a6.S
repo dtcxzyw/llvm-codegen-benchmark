@@ -11,6 +11,6 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$1, %eax
 	shll	$13, %eax
 	orl	$5, %eax
-	testw	%di, %ax
+	testw	%ax, %di
 	setne	%al
 	retq

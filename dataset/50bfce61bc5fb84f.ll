@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; qemu/optimized/virtio-mmio.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000038(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 3
-  %3 = or disjoint i32 %2, 6
-  %4 = add i32 %3, %0
-  %5 = zext i32 %4 to i64
-  ret i64 %5
-}
-
 ; 4 occurrences:
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; qemu/optimized/virtio-pci.c.ll
@@ -39,7 +27,8 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/message.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/virtio_ring.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -53,8 +42,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 1
-  %3 = or disjoint i32 %2, 1
+  %2 = shl i32 %1, 3
+  %3 = or disjoint i32 %2, 4
   %4 = add i32 %3, %0
   %5 = zext i32 %4 to i64
   ret i64 %5
@@ -67,7 +56,7 @@ define i64 @func000000000000003b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

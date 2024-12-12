@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/c_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %0, 1
@@ -28,7 +28,7 @@ entry:
 ; openblas/optimized/dgemmt.c.ll
 ; opencv/optimized/upcean_decoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nuw nsw i64 %0, 1

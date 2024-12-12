@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 97 occurrences:
 ; cmake/optimized/cmake.cxx.ll
 ; coreutils-rs/optimized/45371cbry3cnr73y.ll
 ; darktable/optimized/geotagging.c.ll
@@ -58,7 +58,6 @@
 ; opencv/optimized/matrix_wrap.cpp.ll
 ; openusd/optimized/layer.cpp.ll
 ; postgres/optimized/guc.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; redis/optimized/arena.ll
@@ -103,7 +102,7 @@ define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = xor i1 %3, true
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

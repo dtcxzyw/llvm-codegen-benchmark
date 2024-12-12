@@ -7,7 +7,7 @@ func0000000000000020:                   # @func0000000000000020
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func00000000000000e3:                   # @func00000000000000e3
+func00000000000001e3:                   # @func00000000000001e3
 	addw	a3, a0, a2
 	sltiu	a3, a3, 65
 	czero.eqz	a2, a2, a3
@@ -23,7 +23,7 @@ func0000000000000028:                   # @func0000000000000028
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	addw	a3, a2, a0
 	slti	a3, a3, 0
 	czero.nez	a2, a2, a3

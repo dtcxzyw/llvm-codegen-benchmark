@@ -8,7 +8,7 @@
 ; postgres/optimized/pathkeys.ll
 ; postgres/optimized/pg_isready.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000318(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp ne ptr %2, null
@@ -62,7 +62,7 @@ entry:
 ; yosys/optimized/wreduce.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
@@ -75,7 +75,7 @@ entry:
 ; graphviz/optimized/twopiinit.c.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000058(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
@@ -87,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/twopiinit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000302(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null

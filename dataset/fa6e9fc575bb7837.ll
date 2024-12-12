@@ -9,11 +9,11 @@
 ; rust-analyzer-rs/optimized/4howns4eudvt5lxk.ll
 ; rust-analyzer-rs/optimized/4nvu4secqsdy9xf3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 6
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw [3 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [3 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -21,11 +21,11 @@ entry:
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 6
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw [8 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [8 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

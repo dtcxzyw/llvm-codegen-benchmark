@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	63                              # 0x3f
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm2
 	vpsrld	$26, %xmm2, %xmm2
@@ -15,7 +15,7 @@ func0000000000000071:                   # @func0000000000000071
 	retq
 .LCPI1_0:
 	.long	63                              # 0x3f
-func0000000000000271:                   # @func0000000000000271
+func00000000000004e1:                   # @func00000000000004e1
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm2
 	vpsrld	$26, %xmm2, %xmm2
@@ -30,7 +30,7 @@ func0000000000000271:                   # @func0000000000000271
 	retq
 .LCPI2_0:
 	.long	6                               # 0x6
-func0000000000000171:                   # @func0000000000000171
+func00000000000002e1:                   # @func00000000000002e1
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vpsrld	$31, %xmm1, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -42,7 +42,7 @@ func0000000000000171:                   # @func0000000000000171
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000131:                   # @func0000000000000131
+func0000000000000261:                   # @func0000000000000261
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrld	$31, %xmm1, %xmm2

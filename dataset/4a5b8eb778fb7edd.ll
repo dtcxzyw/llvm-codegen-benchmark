@@ -20,7 +20,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; abc/optimized/aigObj.c.ll
 ; abc/optimized/aigTiming.c.ll
 ; abc/optimized/bacBlast.c.ll
@@ -30,6 +30,8 @@ entry:
 ; openexr/optimized/channel_list.c.ll
 ; openexr/optimized/string_vector.c.ll
 ; openusd/optimized/openexr-c.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:

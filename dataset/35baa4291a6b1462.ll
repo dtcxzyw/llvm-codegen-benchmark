@@ -1,6 +1,8 @@
 
-; 112 occurrences:
+; 114 occurrences:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/fast_newton.cpp.ll

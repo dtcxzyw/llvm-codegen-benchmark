@@ -34,17 +34,6 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; hermes/optimized/hbc-attribute.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw i64 %1 to i32
-  %3 = and i32 %2, 2147483647
-  %4 = shl nuw i32 %3, %0
-  ret i32 %4
-}
-
 ; 6 occurrences:
 ; cpython/optimized/frameobject.ll
 ; linux/optimized/md.ll
@@ -58,19 +47,6 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 3
   %4 = shl i32 %3, %0
-  ret i32 %4
-}
-
-; 3 occurrences:
-; abseil-cpp/optimized/cord.cc.ll
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
-; abseil-cpp/optimized/cord_test.cc.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = and i32 %2, 255
-  %4 = shl nuw nsw i32 %3, %0
   ret i32 %4
 }
 

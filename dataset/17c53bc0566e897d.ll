@@ -9,7 +9,7 @@
 define i8 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 6
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   %4 = or i8 %3, -128
   ret i8 %4
 }
@@ -24,7 +24,7 @@ entry:
 define i8 @func000000000000000f(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 %1, 2
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   %4 = or disjoint i8 %3, 16
   ret i8 %4
 }
@@ -35,7 +35,7 @@ entry:
 define i8 @func000000000000000e(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 %1, 2
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   %4 = or i8 %3, 8
   ret i8 %4
 }
@@ -84,7 +84,7 @@ entry:
 define i8 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 %1, 2
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   %4 = or i8 %3, -128
   ret i8 %4
 }

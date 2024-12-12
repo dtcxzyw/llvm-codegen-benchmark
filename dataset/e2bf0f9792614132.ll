@@ -27,17 +27,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/isadma.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000007(i64 %0) #0 {
-entry:
-  %1 = trunc i64 %0 to i16
-  %2 = shl nuw nsw i16 %1, 1
-  %3 = or disjoint i16 %2, 1
-  ret i16 %3
-}
-
-; 1 occurrences:
 ; linux/optimized/intel_cx0_phy.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i64 %0) #0 {

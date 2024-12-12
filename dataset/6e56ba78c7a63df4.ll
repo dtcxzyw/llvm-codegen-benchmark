@@ -12,8 +12,8 @@ define i64 @func000000000000001f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 10
   %4 = and i64 %3, 64512
-  %5 = or disjoint i64 %4, %1
-  %6 = add nuw nsw i64 %5, %0
+  %5 = or disjoint i64 %1, %4
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -28,7 +28,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = and i64 %3, 2031616
   %5 = or disjoint i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -48,8 +48,8 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
   %4 = and i64 %3, 192
-  %5 = or disjoint i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = or disjoint i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -61,7 +61,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
   %4 = and i64 %3, 1024
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
@@ -86,7 +86,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = and i64 %3, 2031616
   %5 = or disjoint i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

@@ -1,5 +1,5 @@
 
-; 200 occurrences:
+; 196 occurrences:
 ; abc/optimized/dsdProc.c.ll
 ; abc/optimized/dsdTree.c.ll
 ; abc/optimized/ivyFastMap.c.ll
@@ -21,7 +21,6 @@
 ; cmake/optimized/fld_def.c.ll
 ; cmake/optimized/fld_dup.c.ll
 ; cmake/optimized/frm_driver.c.ll
-; cmake/optimized/frm_post.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/nghttp2_http.c.ll
 ; cpython/optimized/_cursesmodule.ll
@@ -120,7 +119,6 @@
 ; openjdk/optimized/filemap.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; openmpi/optimized/keyval_lex.ll
-; openssl/optimized/rpktest-bin-rpktest.ll
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/cdef_block.c.ll
 ; openusd/optimized/decodetxb.c.ll
@@ -190,7 +188,6 @@
 ; stockfish/optimized/search.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; wireshark/optimized/logcat.c.ll
-; wireshark/optimized/packet-csn1.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll
 ; wireshark/optimized/packet-mausb.c.ll
 ; wireshark/optimized/packet-mih.c.ll
@@ -199,12 +196,11 @@
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet-usb-audio.c.ll
 ; zstd/optimized/fse_compress.c.ll
-; zxing/optimized/AZToken.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i16 %0) #0 {
 entry:
   %1 = sext i16 %0 to i32
-  %2 = add nsw i32 %1, -256
+  %2 = add nsw i32 %1, 1
   ret i32 %2
 }
 

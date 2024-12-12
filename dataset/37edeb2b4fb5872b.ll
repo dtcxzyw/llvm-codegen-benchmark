@@ -1,5 +1,5 @@
 
-; 155 occurrences:
+; 157 occurrences:
 ; linux/optimized/af_packet.ll
 ; linux/optimized/drm_displayid.ll
 ; linux/optimized/drm_drv.ll
@@ -48,6 +48,7 @@
 ; wireshark/optimized/dissector_syntax_line_edit.cpp.ll
 ; wireshark/optimized/dissector_tables_dialog.cpp.ll
 ; wireshark/optimized/dissector_tables_model.cpp.ll
+; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/enabled_protocols_dialog.cpp.ll
 ; wireshark/optimized/enabled_protocols_model.cpp.ll
 ; wireshark/optimized/erf.c.ll
@@ -155,12 +156,13 @@
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; wireshark/optimized/wmem_allocator_block.c.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = icmp eq ptr %3, null
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

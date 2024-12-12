@@ -3,7 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dl, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	cmpq	%rsi, %rdi
 	setne	%al
 	orb	%dl, %al
@@ -13,12 +13,17 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	orb	%dl, %al
 	retq
-func0000000000000052:                   # @func0000000000000052
+func0000000000000092:                   # @func0000000000000092
 	cmpq	%rsi, %rdi
 	setae	%al
 	orb	%dl, %al
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000090:                   # @func0000000000000090
+	cmpq	%rsi, %rdi
+	seta	%al
+	orb	%dl, %al
+	retq
+func00000000000000b2:                   # @func00000000000000b2
 	cmpq	%rsi, %rdi
 	setae	%al
 	orb	%dl, %al
@@ -33,8 +38,18 @@ func000000000000000a:                   # @func000000000000000a
 	setbe	%al
 	orb	%dl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000082:                   # @func0000000000000082
+	cmpq	%rsi, %rdi
+	sete	%al
+	orb	%dl, %al
+	retq
+func0000000000000088:                   # @func0000000000000088
 	cmpq	%rsi, %rdi
 	setb	%al
+	orb	%dl, %al
+	retq
+func0000000000000032:                   # @func0000000000000032
+	cmpq	%rsi, %rdi
+	setae	%al
 	orb	%dl, %al
 	retq

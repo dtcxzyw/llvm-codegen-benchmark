@@ -13,7 +13,7 @@ define i64 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %sext = add nsw i32 %1, -1
-  %2 = add i32 %sext, %0
+  %2 = add i32 %0, %sext
   %3 = sext i32 %2 to i64
   ret i64 %3
 }

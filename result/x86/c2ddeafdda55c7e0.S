@@ -1,9 +1,9 @@
-func00000000000003f4:                   # @func00000000000003f4
+func00000000000007f4:                   # @func00000000000007f4
 	addl	%esi, %edi
 	cmpl	$48, %edi
 	setb	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	%esi, %edi
 	cmpl	$24, %edi
 	setge	%al
@@ -16,11 +16,11 @@ func000000000000000a:                   # @func000000000000000a
 	addl	%esi, %edi
 	setns	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	addl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000201:                   # @func0000000000000201
+func0000000000000401:                   # @func0000000000000401
 	addl	%esi, %edi
 	cmpl	$-1, %edi
 	sete	%al
@@ -30,21 +30,21 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$32, %edi
 	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	%esi, %edi
 	sete	%al
 	retq
-func00000000000003f1:                   # @func00000000000003f1
+func00000000000007e1:                   # @func00000000000007e1
 	addl	%esi, %edi
 	cmpl	$32, %edi
 	sete	%al
 	retq
-func00000000000003f8:                   # @func00000000000003f8
+func00000000000007f8:                   # @func00000000000007f8
 	addl	%esi, %edi
 	cmpl	$64, %edi
 	setae	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	(%rdi,%rsi), %eax
 	shrl	$31, %eax
 	retq
@@ -57,12 +57,12 @@ func000000000000000c:                   # @func000000000000000c
 	addl	%esi, %edi
 	setne	%al
 	retq
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001a8:                   # @func00000000000001a8
 	addl	%esi, %edi
 	cmpl	$32, %edi
 	setae	%al
 	retq
-func000000000000028a:                   # @func000000000000028a
+func000000000000050a:                   # @func000000000000050a
 	addl	%esi, %edi
 	testl	%edi, %edi
 	setg	%al
@@ -72,46 +72,46 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$513, %edi                      # imm = 0x201
 	setae	%al
 	retq
-func0000000000000208:                   # @func0000000000000208
+func0000000000000408:                   # @func0000000000000408
 	addl	%esi, %edi
 	cmpl	$1000000000, %edi               # imm = 0x3B9ACA00
 	setae	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	addl	%esi, %edi
 	cmpl	$32769, %edi                    # imm = 0x8001
 	setae	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addl	%esi, %edi
 	cmpl	$32768, %edi                    # imm = 0x8000
 	sete	%al
 	retq
-func0000000000000296:                   # @func0000000000000296
+func0000000000000526:                   # @func0000000000000526
 	leal	(%rdi,%rsi), %eax
 	shrl	$31, %eax
 	retq
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	leal	(%rdi,%rsi), %eax
 	shrl	$31, %eax
 	retq
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	leal	(%rdi,%rsi), %eax
 	shrl	$31, %eax
 	retq
-func000000000000029a:                   # @func000000000000029a
+func000000000000052a:                   # @func000000000000052a
 	addl	%esi, %edi
 	setg	%al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	addl	%esi, %edi
 	setns	%al
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	addl	%esi, %edi
 	setns	%al
 	retq
-func0000000000000288:                   # @func0000000000000288
+func0000000000000508:                   # @func0000000000000508
 	addl	%esi, %edi
 	cmpl	$2147483647, %edi               # imm = 0x7FFFFFFF
 	setae	%al

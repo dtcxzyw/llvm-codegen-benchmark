@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; bullet3/optimized/poly34.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/gmx_dyecoupl.cpp.ll
@@ -7,6 +7,7 @@
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll

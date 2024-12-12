@@ -1,6 +1,8 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
@@ -12,7 +14,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
@@ -34,6 +37,19 @@ entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = and i64 %2, 1085102592571150095
   %4 = mul i64 %3, 72340172838076673
+  ret i64 %4
+}
+
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; openspiel/optimized/phantom_go_board.cc.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %0, %1
+  %3 = and i64 %2, 4294967295
+  %4 = mul nuw nsw i64 %3, 140737489
   ret i64 %4
 }
 
@@ -110,17 +126,6 @@ entry:
   %2 = add nuw i64 %0, %1
   %3 = and i64 %2, 4294967295
   %4 = mul nuw i64 %3, 4164903690
-  ret i64 %4
-}
-
-; 1 occurrences:
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %0, %1
-  %3 = and i64 %2, 4294967295
-  %4 = mul nuw nsw i64 %3, 109951163
   ret i64 %4
 }
 

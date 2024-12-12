@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; linux/optimized/blk-settings.ll
+; 2 occurrences:
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; Function Attrs: nounwind

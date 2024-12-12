@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; duckdb/optimized/ub_duckdb_common_crypto.cpp.ll
 ; jsonnet/optimized/md5.cpp.ll
 ; libjpeg-turbo/optimized/md5.c.ll
@@ -7,7 +7,6 @@
 ; libsodium/optimized/libsodium_la-hash_sha256_cp.ll
 ; libsodium/optimized/libsodium_la-hash_sha512_cp.ll
 ; linux/optimized/exthdrs.ll
-; linux/optimized/rpl.ll
 ; llvm/optimized/CGExpr.cpp.ll
 ; oiio/optimized/SHA1.cpp.ll
 ; openjdk/optimized/cmsmd5.ll

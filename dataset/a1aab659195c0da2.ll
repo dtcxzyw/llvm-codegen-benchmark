@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
@@ -7,6 +7,7 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
+; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; opencv/optimized/objects_associator.cpp.ll

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; ocio/optimized/GammaOpData.cpp.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
@@ -8,7 +8,6 @@
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/linefit.cpp.ll
 ; openusd/optimized/homogeneous.cpp.ll
-; osqp/optimized/scaling.c.ll
 ; proj/optimized/vandg.cpp.ll
 ; quantlib/optimized/markovfunctional.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll

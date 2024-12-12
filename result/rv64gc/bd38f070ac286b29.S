@@ -3,17 +3,17 @@ func000000000000000a:                   # @func000000000000000a
 	sraiw	a1, a1, 31
 	or	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	add	a1, a1, a2
 	sraiw	a1, a1, 31
 	or	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	add	a1, a1, a2
 	sraiw	a1, a1, 31
 	and	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addw	a1, a1, a2
 	sltiu	a1, a1, 17
 	neg	a1, a1
@@ -38,14 +38,14 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addw	a1, a1, a2
 	addi	a1, a1, -1
 	seqz	a1, a1
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	addw	a1, a1, a2
 	sltiu	a1, a1, 32
 	neg	a1, a1

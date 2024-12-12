@@ -1,12 +1,11 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; cmake/optimized/archive_pathmatch.c.ll
 ; git/optimized/list-objects-filter.ll
 ; linux/optimized/cpufreq.ll
 ; linux/optimized/gen8_engine_cs.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_dp.ll
-; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openusd/optimized/decodeframe.c.ll

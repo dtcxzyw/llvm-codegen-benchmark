@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	63                              # 0x3f
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpbroadcastd	.LCPI0_0(%rip), %xmm3   # xmm3 = [63,63,63,63]
 	vpcmpneqd	%xmm3, %xmm2, %k1
 	vpcmpeqd	%xmm3, %xmm1, %k0 {%k1}
@@ -9,7 +9,7 @@ func0000000000000023:                   # @func0000000000000023
 	retq
 .LCPI1_0:
 	.long	63                              # 0x3f
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpbroadcastd	.LCPI1_0(%rip), %xmm3   # xmm3 = [63,63,63,63]
 	vpcmpneqd	%xmm3, %xmm2, %k1
 	vpcmpeqd	%xmm3, %xmm1, %k0 {%k1}

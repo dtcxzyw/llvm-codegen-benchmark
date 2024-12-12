@@ -1,7 +1,9 @@
 
-; 169 occurrences:
+; 172 occurrences:
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; assimp/optimized/PlyLoader.cpp.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; bullet3/optimized/btGenericPoolAllocator.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/mpool.c.ll
@@ -85,7 +87,6 @@
 ; llvm/optimized/PDBFile.cpp.ll
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; llvm/optimized/ParentMapContext.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -169,6 +170,8 @@
 ; xgboost/optimized/regression_obj.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
 entry:

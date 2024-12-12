@@ -1,11 +1,13 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; git/optimized/sequencer.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/4h176o45n3uxzch53hiway9mu.ll
+; zed-rs/optimized/8qol7q25vqqdxkncrkeuuvo2e.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:

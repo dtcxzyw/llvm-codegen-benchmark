@@ -5,7 +5,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003b1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000761(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -56613888
   %4 = add nuw nsw i32 %3, %1
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-x25.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007b4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000f64(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = add nuw nsw i32 %3, %1

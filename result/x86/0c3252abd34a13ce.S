@@ -9,6 +9,11 @@ func000000000000003d:                   # @func000000000000003d
 	leal	(%rsi,%rsi,2), %eax
 	addl	%edi, %eax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	addl	%edx, %esi
+	imull	$360, %esi, %eax                # imm = 0x168
+	addl	%edi, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	addl	%edx, %esi
 	leal	(%rsi,%rsi,2), %eax

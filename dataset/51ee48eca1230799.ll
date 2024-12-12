@@ -23,7 +23,7 @@
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i8 %0) #0 {
+define i1 @func0000000000000046(i8 %0) #0 {
 entry:
   %1 = icmp slt i8 %0, 0
   ret i1 %1
@@ -34,7 +34,7 @@ entry:
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i8 %0) #0 {
+define i1 @func000000000000004a(i8 %0) #0 {
 entry:
   %1 = icmp sgt i8 %0, -1
   ret i1 %1

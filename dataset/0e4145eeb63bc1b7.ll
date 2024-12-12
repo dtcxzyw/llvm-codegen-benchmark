@@ -18,13 +18,13 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = add i32 %1, 2
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -45,13 +45,13 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw nsw i32 %1, 2
   %5 = add nuw nsw i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

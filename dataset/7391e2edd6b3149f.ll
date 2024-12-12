@@ -1,7 +1,8 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; hyperscan/optimized/ng_som.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/CheckSecuritySyntaxOnly.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; wasmedge/optimized/compiler.cpp.ll

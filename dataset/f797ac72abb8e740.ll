@@ -1,6 +1,5 @@
 
 ; 325 occurrences:
-; cmake/optimized/cmExprParser.cxx.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -101,6 +100,7 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/vmscan.ll
 ; llvm/optimized/FastISelEmitter.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll

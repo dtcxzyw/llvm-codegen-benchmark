@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 25 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/giaFalse.c.ll
@@ -9,6 +9,8 @@
 ; graphviz/optimized/graph_generator.c.ll
 ; gromacs/optimized/gmx_angle.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_label.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/gapi_core_perf_tests.cpp.ll
 ; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll

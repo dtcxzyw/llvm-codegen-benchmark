@@ -1,16 +1,14 @@
 
-; 36 occurrences:
+; 34 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/aperfmperf.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/page-writeback.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/shrinker.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/SemaType.cpp.ll
@@ -66,12 +64,10 @@ entry:
   ret i64 %3
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; linux/optimized/acpi-cpufreq.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/hda_intel.ll

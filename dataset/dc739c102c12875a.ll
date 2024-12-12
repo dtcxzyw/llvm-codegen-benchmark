@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openssl/optimized/libapps-lib-s_socket.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -1
   %4 = icmp eq i32 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000661(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000018c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 5
   %4 = icmp slt i32 %1, 1
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000466(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000050c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 6
   %4 = icmp slt i32 %1, 1
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000666(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000018c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 7
   %4 = icmp slt i32 %1, 1
@@ -56,7 +56,7 @@ entry:
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000046c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000050cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 6
   %4 = icmp slt i32 %1, 1
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ObjCMT.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/addrconf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp slt i32 %1, 3
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000424(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 2
   %4 = icmp eq i32 %1, 0

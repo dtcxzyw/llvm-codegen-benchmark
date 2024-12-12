@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 25 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/utilBridge.c.ll
@@ -8,6 +8,21 @@
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openspiel/optimized/Scheduler.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
@@ -19,7 +34,7 @@ entry:
   ret i64 %4
 }
 
-; 73 occurrences:
+; 72 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
 ; clamav/optimized/bzlib.c.ll
@@ -48,7 +63,6 @@ entry:
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll

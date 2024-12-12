@@ -14,7 +14,7 @@
 define i16 @func0000000000000000(i16 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 

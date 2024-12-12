@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
+; lvgl/optimized/lv_text.ll
 ; openssl/optimized/libssl-lib-s3_enc.ll
 ; openssl/optimized/libssl-shlib-s3_enc.ll
 ; quickjs/optimized/quickjs.ll

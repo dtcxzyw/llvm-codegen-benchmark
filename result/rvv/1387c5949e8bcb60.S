@@ -37,17 +37,3 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 576
 	vnmsub.vx	v8, a0, v10
 	ret
-func0000000000000004:                   # @func0000000000000004
-	lui	a0, 24
-	addi	a0, a0, 1696
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v0, v10, a0
-	lui	a0, 274878
-	addi	a0, a0, -381
-	vmerge.vvm	v10, v10, v8, v0
-	vmulhu.vx	v8, v10, a0
-	lui	a0, 244
-	vsrl.vi	v8, v8, 18
-	addi	a0, a0, 576
-	vnmsub.vx	v8, a0, v10
-	ret

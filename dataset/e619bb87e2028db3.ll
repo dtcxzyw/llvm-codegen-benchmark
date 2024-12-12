@@ -126,7 +126,7 @@
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000049(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 63
   %3 = shl nuw i64 1, %2
@@ -261,7 +261,7 @@ entry:
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 63
   %3 = shl nuw i64 1, %2
@@ -274,7 +274,7 @@ entry:
 ; velox/optimized/MmapAllocator.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 63
   %3 = shl nuw nsw i64 1, %2
@@ -291,7 +291,7 @@ entry:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/RawVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 63
   %3 = shl nuw i64 1, %2

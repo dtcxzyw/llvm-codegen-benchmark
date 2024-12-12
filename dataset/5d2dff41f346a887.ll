@@ -1,11 +1,14 @@
 
-; 24 occurrences:
+; 27 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/gmx_nmeig.cpp.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nori/optimized/chi2test.cpp.ll
 ; nori/optimized/ttest.cpp.ll
 ; nori/optimized/warptest.cpp.ll

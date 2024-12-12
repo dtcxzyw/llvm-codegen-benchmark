@@ -53,8 +53,3 @@ func0000000000000014:                   # @func0000000000000014
 	imulq	%rdi, %rax
 	shrq	$16, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	movl	%esi, %eax
-	imulq	%rdi, %rax
-	shrq	$16, %rax
-	retq

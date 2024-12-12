@@ -1,17 +1,17 @@
 
-%struct.hpdata_age_heap_t.3476691 = type { %struct.ph_s.3476692 }
-%struct.ph_s.3476692 = type { ptr, i64 }
+%struct.hpdata_age_heap_t.3660674 = type { %struct.ph_s.3660675 }
+%struct.ph_s.3660675 = type { ptr, i64 }
 
 ; 2 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = and i64 %3, 2
-  %5 = or disjoint i64 %4, %1
-  %6 = getelementptr nusw [4 x i32], ptr %0, i64 0, i64 %5
+  %5 = or disjoint i64 %1, %4
+  %6 = getelementptr nusw nuw [4 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -30,12 +30,12 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/kernel_gpu_ref.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = and i64 %3, 24
   %5 = or i64 %4, %1
-  %6 = getelementptr nusw [32 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [32 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -46,12 +46,12 @@ entry:
 ; redis/optimized/psset.ll
 ; redis/optimized/psset.sym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
   %4 = and i64 %3, 4294967232
   %5 = or disjoint i64 %4, %1
-  %6 = getelementptr nusw [64 x %struct.hpdata_age_heap_t.3476691], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [64 x %struct.hpdata_age_heap_t.3660674], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

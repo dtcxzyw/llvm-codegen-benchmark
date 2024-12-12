@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000010:                   # @func0000000000000010
 	imulq	$100, %rsi, %rax
 	xorl	%edx, %edx
 	divq	%rdi
@@ -8,8 +8,8 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divq	%rdi
 	retq
-func0000000000000010:                   # @func0000000000000010
-	imulq	$100, %rsi, %rax
+func0000000000000018:                   # @func0000000000000018
+	imulq	$200, %rsi, %rax
 	xorl	%edx, %edx
 	divq	%rdi
 	retq

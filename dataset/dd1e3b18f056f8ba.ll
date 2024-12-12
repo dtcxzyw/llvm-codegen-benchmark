@@ -1,5 +1,5 @@
 
-; 1144 occurrences:
+; 1141 occurrences:
 ; abc/optimized/ioReadPla.c.ll
 ; abc/optimized/plaMan.c.ll
 ; arrow/optimized/codegen_internal.cc.ll
@@ -50,7 +50,6 @@
 ; faiss/optimized/hamming.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; git/optimized/cbtree.ll
-; graphviz/optimized/randomkit.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
@@ -821,7 +820,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1135,7 +1133,6 @@
 ; lua/optimized/lmathlib.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; openjdk/optimized/regmask.ll
-; openspiel/optimized/2048.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_div.ll
 ; openssl/optimized/libcrypto-lib-bn_shift.ll
 ; openssl/optimized/libcrypto-shlib-bn_div.ll
@@ -1185,7 +1182,7 @@ entry:
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 60
-  %2 = or disjoint i64 %1, %0
+  %2 = or disjoint i64 %0, %1
   ret i64 %2
 }
 

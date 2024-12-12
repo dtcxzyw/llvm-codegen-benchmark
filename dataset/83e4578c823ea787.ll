@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
 entry:
   %2 = select i1 %0, i32 1114112, i32 %1
   %3 = icmp ne i32 %2, 1114112
@@ -11,7 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -40,11 +40,10 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; icu/optimized/icuexportdata.ll
 ; linux/optimized/i915_gem_tiling.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; slurm/optimized/cgroup_v2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %not. = xor i1 %0, true
@@ -55,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/cgroup_v2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 7
   %3 = select i1 %0, i1 true, i1 %2

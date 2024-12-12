@@ -29,7 +29,8 @@ entry:
   ret i64 %3
 }
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -205,6 +206,28 @@ entry:
   %1 = lshr i128 %0, 71
   %2 = trunc nuw nsw i128 %1 to i64
   %3 = add nsw i64 %2, -1
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i128 %0) #0 {
+entry:
+  %1 = lshr i128 %0, 6
+  %2 = trunc i128 %1 to i64
+  %3 = add i64 %2, 2
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i128 %0) #0 {
+entry:
+  %1 = lshr i128 %0, 6
+  %2 = trunc i128 %1 to i64
+  %3 = add nuw i64 %2, 1
   ret i64 %3
 }
 

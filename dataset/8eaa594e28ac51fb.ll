@@ -67,7 +67,7 @@
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nuw nsw i32 %0, 1
@@ -80,7 +80,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
 ; openusd/optimized/decodetxb.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = add nsw i32 %0, -1
@@ -88,12 +88,11 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/acecCover.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/mvcPrint.c.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; libwebp/optimized/image_enc.c.ll
 ; meshlab/optimized/packing.cpp.ll
@@ -107,7 +106,7 @@ entry:
 ; postgres/optimized/bitmapset.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nuw nsw i32 %0, 1
@@ -123,7 +122,7 @@ entry:
 ; openjdk/optimized/jvmciCompiler.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 100
   %3 = add nsw i32 %0, 1
@@ -134,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006b(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
   %3 = add nuw nsw i32 %0, 1
@@ -163,7 +162,7 @@ entry:
 ; opencv/optimized/stereobm.cpp.ll
 ; postgres/optimized/arrayfuncs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nsw i32 %0, 1
@@ -185,7 +184,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/feature.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nuw nsw i32 %0, 8

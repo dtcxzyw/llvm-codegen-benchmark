@@ -8,6 +8,11 @@ func0000000000000003:                   # @func0000000000000003
 	cmpl	%edx, %esi
 	cmovnel	%edi, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	cmpl	%edx, %esi
+	movl	$1073741823, %eax               # imm = 0x3FFFFFFF
+	cmovael	%edi, %eax
+	retq
 func0000000000000009:                   # @func0000000000000009
 	cmpl	%edx, %esi
 	movl	$1073741823, %eax               # imm = 0x3FFFFFFF

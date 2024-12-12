@@ -25,11 +25,11 @@ define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   ret i1 %4
 }
 
-; 422 occurrences:
+; 426 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
@@ -119,6 +119,9 @@ entry:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
 ; cmake/optimized/archive_rb.c.ll
 ; cpython/optimized/gcmodule.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -388,6 +391,7 @@ entry:
 ; luajit/optimized/lj_debug_dyn.ll
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; mini-lsm-rs/optimized/1p3sopfakd9d715u.ll
 ; mini-lsm-rs/optimized/1pvec8aj5zmr89ee.ll
 ; mini-lsm-rs/optimized/45da4db1y19tqmo.ll
@@ -457,7 +461,7 @@ define i1 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
   ret i1 %4
 }
 
@@ -478,7 +482,7 @@ define i1 @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp uge ptr %3, %0
+  %4 = icmp ule ptr %0, %3
   ret i1 %4
 }
 
@@ -610,7 +614,7 @@ define i1 @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ne ptr %3, %0
+  %4 = icmp ne ptr %0, %3
   ret i1 %4
 }
 
@@ -632,7 +636,7 @@ define i1 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775804
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ult ptr %3, %0
+  %4 = icmp ugt ptr %0, %3
   ret i1 %4
 }
 
@@ -643,7 +647,7 @@ define i1 @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -524288
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ule ptr %3, %0
+  %4 = icmp uge ptr %0, %3
   ret i1 %4
 }
 

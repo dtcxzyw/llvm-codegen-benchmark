@@ -11,6 +11,17 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; boost/optimized/get_turns.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 1
+  %3 = icmp slt i64 %2, %0
+  %4 = select i1 %3, i64 3, i64 2
+  ret i64 %4
+}
+
 ; 54 occurrences:
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -75,22 +86,21 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/Minidump.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 4
+  %2 = add nuw nsw i64 %1, 1
   %3 = icmp ult i64 %2, %0
-  %4 = select i1 %3, i64 8, i64 4
+  %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/proto.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp eq i64 %2, %0
@@ -101,7 +111,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/proto.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = icmp eq i64 %2, %0

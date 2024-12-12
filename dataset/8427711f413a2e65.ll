@@ -90,7 +90,8 @@ entry:
   ret float %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; opencv/optimized/lsc.cpp.ll
 ; opencv/optimized/simpleflow.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000003(float %0, i64 %1) #0 {

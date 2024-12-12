@@ -2,21 +2,32 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000d8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 100
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
 
-; 49 occurrences:
+; 60 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/mutex.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; taskflow/optimized/async.cpp.ll
@@ -64,17 +75,19 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 2147483646
-  %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
 ; taskflow/optimized/parallel_sort.cpp.ll
@@ -83,27 +96,28 @@ entry:
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 2147483646
-  %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/work_stealing.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 2147483646
-  %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 81 occurrences:
+; 79 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -124,8 +138,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -189,7 +201,7 @@ entry:
 define i1 @func0000000000000012(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 10
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

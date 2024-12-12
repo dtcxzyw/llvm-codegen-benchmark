@@ -5,7 +5,7 @@
 ; rocksdb/optimized/column_family.cc.ll
 ; rocksdb/optimized/db_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000214(i64 %0, i8 %1, i64 %2) #0 {
+define i1 @func0000000000000824(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ult i64 %3, %0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i8 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = icmp ult i64 %3, %0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i8 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = icmp uge i64 %3, %0

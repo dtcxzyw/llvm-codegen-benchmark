@@ -33,14 +33,3 @@ func0000000000000007:                   # @func0000000000000007
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
-	andi	a0, a0, 1
-	bnez	a0, .LBB3_2
-	srai	a0, a1, 63
-	srli	a0, a0, 60
-	add	a0, a0, a1
-	andi	a0, a0, -16
-	ret
-.LBB3_2:
-	li	a0, 64
-	ret

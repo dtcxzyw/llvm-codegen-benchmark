@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/mg_ore.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000ac(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000014c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
   %3 = call i32 @llvm.smin.i32(i32 %1, i32 %0)
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000010c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
   %3 = call i32 @llvm.umax.i32(i32 %0, i32 %1)
@@ -27,7 +27,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
   %3 = call i32 @llvm.smin.i32(i32 %0, i32 %1)

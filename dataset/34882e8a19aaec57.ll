@@ -1,7 +1,9 @@
 
-; 29 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/message.ll
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
+; icu/optimized/parse.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; linux/optimized/i8042.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -29,6 +31,7 @@
 ; wasmedge/optimized/formchecker.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/packet-cip.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -37,9 +40,12 @@ entry:
   ret i1 %4
 }
 
-; 60 occurrences:
+; 64 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/test_fs.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/cmCTestSubmitHandler.cxx.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
@@ -51,14 +57,13 @@ entry:
 ; icu/optimized/uconv.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; linux/optimized/cdrom.ll
-; linux/optimized/hwvalid.ll
 ; linux/optimized/intel_dp_mst.ll
-; linux/optimized/severity.ll
 ; linux/optimized/trace_events_filter.ll
 ; llvm/optimized/DWARFDebugAddr.cpp.ll
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; logos-rs/optimized/r8lrmz9t8pnb4ov.ll
+; lvgl/optimized/lv_bar.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
@@ -98,6 +103,8 @@ entry:
 ; velox/optimized/Variant.cpp.ll
 ; wireshark/optimized/packet-uts.c.ll
 ; yosys/optimized/sim.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -106,7 +113,7 @@ entry:
   ret i1 %4
 }
 
-; 59 occurrences:
+; 61 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; mold/optimized/gdb-index.cc.ALPHA.cc.ll
 ; mold/optimized/gdb-index.cc.ARM32.cc.ll
@@ -166,6 +173,8 @@ entry:
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
 ; ripgrep-rs/optimized/2em4rg5w0gfs6ula.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -174,11 +183,9 @@ entry:
   ret i1 %4
 }
 
-; 53 occurrences:
-; arrow/optimized/int_util.cc.ll
+; 52 occurrences:
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
-; icu/optimized/decimfmt.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/ip_options.ll
 ; linux/optimized/rcec.ll
@@ -228,6 +235,7 @@ entry:
 ; opencv/optimized/gfluidcore.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
 ; php/optimized/array.ll
+; tokenizers-rs/optimized/4vpw5vpiz5qnu5om.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -270,9 +278,30 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ule i8 %1, %2
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; cmake/optimized/archive_pathmatch.c.ll
+; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
+; nuttx/optimized/lib_fnmatch.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp sgt i8 %1, %2
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; llvm/optimized/FunctionLoweringInfo.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i1 %0, i8 %1, i8 %2) #0 {
@@ -282,15 +311,22 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; arrow/optimized/int_util.cc.ll
-; cmake/optimized/archive_pathmatch.c.ll
-; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
-; nuttx/optimized/lib_fnmatch.c.ll
+; 1 occurrences:
+; icu/optimized/decimfmt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000a(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp sgt i8 %1, %2
+  %3 = icmp samesign ugt i8 %1, %2
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; typst-rs/optimized/40w6rezair915kkd.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %1, %2
   %4 = select i1 %0, i1 true, i1 %3
   ret i1 %4
 }

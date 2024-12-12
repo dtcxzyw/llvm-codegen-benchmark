@@ -1,10 +1,10 @@
-func000000000000010b:                   # @func000000000000010b
+func000000000000010f:                   # @func000000000000010f
 	notl	%edx
 	addl	%esi, %edx
 	leaq	(%rdx,%rdx,8), %rax
 	leaq	8(%rdi,%rax,8), %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+func000000000000000f:                   # @func000000000000000f
 	notl	%edx
 	addl	%esi, %edx
 	imulq	$176, %rdx, %rax
@@ -19,9 +19,4 @@ func0000000000000000:                   # @func0000000000000000
 	subl	%edx, %esi
 	addl	$-2, %esi
 	leaq	1(%rdi,%rsi), %rax
-	retq
-func000000000000000a:                   # @func000000000000000a
-	subl	%edx, %esi
-	addl	$-5, %esi
-	leaq	5(%rdi,%rsi), %rax
 	retq

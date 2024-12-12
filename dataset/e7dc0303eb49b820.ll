@@ -1,16 +1,17 @@
 
-%"struct.rocksdb::ConcurrentArena::Shard.2510489" = type { [40 x i8], %"class.rocksdb::SpinMutex.2510490", ptr, %"struct.std::atomic.2510491" }
-%"class.rocksdb::SpinMutex.2510490" = type { %"struct.std::atomic.94.2510492" }
-%"struct.std::atomic.94.2510492" = type { %"struct.std::__atomic_base.95.2510493" }
-%"struct.std::__atomic_base.95.2510493" = type { i8 }
-%"struct.std::atomic.2510491" = type { %"struct.std::__atomic_base.2510494" }
-%"struct.std::__atomic_base.2510494" = type { i64 }
-%"struct.std::atomic.265.2524554" = type { %"struct.std::__atomic_base.266.2524555" }
-%"struct.std::__atomic_base.266.2524555" = type { ptr }
+%"struct.rocksdb::ConcurrentArena::Shard.2625629" = type { [40 x i8], %"class.rocksdb::SpinMutex.2625630", ptr, %"struct.std::atomic.2625631" }
+%"class.rocksdb::SpinMutex.2625630" = type { %"struct.std::atomic.94.2625632" }
+%"struct.std::atomic.94.2625632" = type { %"struct.std::__atomic_base.95.2625633" }
+%"struct.std::__atomic_base.95.2625633" = type { i8 }
+%"struct.std::atomic.2625631" = type { %"struct.std::__atomic_base.2625634" }
+%"struct.std::__atomic_base.2625634" = type { i64 }
+%"struct.std::atomic.265.2638962" = type { %"struct.std::__atomic_base.266.2638963" }
+%"struct.std::__atomic_base.266.2638963" = type { ptr }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
 ; cpython/optimized/dictobject.ll
+; faiss/optimized/IndexPQ.cpp.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; linux/optimized/zstd_decompress_block.ll
@@ -22,7 +23,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = getelementptr i32, ptr %0, i64 %5
   ret ptr %6
 }
@@ -217,12 +218,12 @@ entry:
 ; rocksdb/optimized/concurrent_arena.cc.ll
 ; rocksdb/optimized/memtable.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %1
-  %6 = getelementptr nusw %"struct.rocksdb::ConcurrentArena::Shard.2510489", ptr %0, i64 %5
+  %5 = and i64 %1, %4
+  %6 = getelementptr nusw nuw %"struct.rocksdb::ConcurrentArena::Shard.2625629", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -272,8 +273,8 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %1
-  %6 = getelementptr nusw %"struct.std::atomic.265.2524554", ptr %0, i64 %5
+  %5 = and i64 %1, %4
+  %6 = getelementptr nusw %"struct.std::atomic.265.2638962", ptr %0, i64 %5
   ret ptr %6
 }
 

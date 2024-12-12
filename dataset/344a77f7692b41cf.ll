@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; clamav/optimized/clamdtop.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, 2
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvscsu.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000044c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000108c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add i32 %3, -56671232
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvscsu.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000054c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000148c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp ne i32 %3, 56679167

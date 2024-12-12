@@ -33,12 +33,12 @@
 	.byte	128                             # 0x80
 func0000000000000001:                   # @func0000000000000001
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1    # ymm1 = zero,zero,ymm1[1],zero,zero,zero,ymm1[5],zero,zero,zero,ymm1[9],zero,zero,zero,ymm1[13],zero,zero,zero,ymm1[17],zero,zero,zero,ymm1[21],zero,zero,zero,ymm1[25],zero,zero,zero,ymm1[29],zero
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	768                             # 0x300
+	.long	8126464                         # 0x7c0000
 func0000000000000007:                   # @func0000000000000007
-	vpslld	$8, %ymm1, %ymm1
+	vpslld	$18, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI1_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI2_0:
@@ -94,7 +94,7 @@ func0000000000000000:                   # @func0000000000000000
 	.byte	128                             # 0x80
 func0000000000000006:                   # @func0000000000000006
 	vpshufb	.LCPI5_0(%rip), %ymm1, %ymm1    # ymm1 = zero,ymm1[0],zero,zero,zero,ymm1[4],zero,zero,zero,ymm1[8],zero,zero,zero,ymm1[12],zero,zero,zero,ymm1[16],zero,zero,zero,ymm1[20],zero,zero,zero,ymm1[24],zero,zero,zero,ymm1[28],zero,zero
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI6_0:
 	.long	117440512                       # 0x7000000

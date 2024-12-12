@@ -1,4 +1,39 @@
 
+; 4 occurrences:
+; linux/optimized/rc80211_minstrel_ht.ll
+; openspiel/optimized/Moves.cpp.ll
+; qemu/optimized/ui_vnc.c.ll
+; stb/optimized/stb_connected_components.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, 7360
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = mul nsw i64 %1, 184
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 9 occurrences:
+; abc/optimized/sbdSat.c.ll
+; darktable/optimized/common.c.ll
+; darktable/optimized/introspection_channelmixerrgb.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; gromacs/optimized/orires.cpp.ll
+; icu/optimized/reldatefmt.ll
+; linux/optimized/rc80211_minstrel_ht.ll
+; qemu/optimized/ui_vnc.c.ll
+; stb/optimized/stb_connected_components.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000f0(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 7360
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = mul nuw nsw i64 %1, 184
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
 ; 1 occurrences:
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; Function Attrs: nounwind
@@ -8,22 +43,6 @@ entry:
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = mul nuw i64 %1, 3
   %6 = getelementptr nusw i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 5 occurrences:
-; abc/optimized/sbdSat.c.ll
-; darktable/optimized/common.c.ll
-; darktable/optimized/introspection_channelmixerrgb.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
-; gromacs/optimized/orires.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000f0(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nuw nsw i64 %2, 80
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = mul nuw nsw i64 %1, 72
-  %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -48,36 +67,37 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000de(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 20
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = mul nsw i64 %1, -20
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; clamav/optimized/matcher-bm.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; ozz-animation/optimized/animation.cc.ll
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 296
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = mul nuw nsw i64 %1, 1688
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ce(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 56
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = mul i64 %1, 56
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
@@ -87,12 +107,12 @@ entry:
 ; gromacs/optimized/orires.cpp.ll
 ; opencv/optimized/epnp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000bf(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul i64 %2, 48
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %.idx = mul i64 %1, 12
-  %5 = getelementptr nusw i8, ptr %4, i64 %.idx
+  %3 = mul nuw i64 %2, 48
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %.idx = mul nuw i64 %1, 12
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 
@@ -111,6 +131,18 @@ entry:
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = mul i64 %1, 24
   %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; linux/optimized/rc80211_minstrel_ht.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000d0(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 252
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = mul nsw i64 %1, 24
+  %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -141,10 +173,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/epnp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c8(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000cc(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 96
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = mul i64 %1, 24
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
@@ -153,10 +185,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/epnp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f8(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000fc(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 96
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = mul nuw nsw i64 %1, 24
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

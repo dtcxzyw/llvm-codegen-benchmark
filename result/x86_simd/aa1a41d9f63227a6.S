@@ -23,7 +23,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [198,198,198,198,198,198,198,198]
 	vpbroadcastd	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [102,102,102,102,102,102,102,102]
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	12                              # 0xc

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 1
@@ -15,7 +15,7 @@ entry:
 ; libquic/optimized/pcy_tree.c.ll
 ; opencv/optimized/data.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 1

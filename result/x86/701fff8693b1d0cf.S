@@ -5,6 +5,20 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	leal	(%rsi,%rsi), %ecx
+	movl	%ecx, %eax
+	orl	$33554432, %eax                 # imm = 0x2000000
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	leal	(%rsi,%rsi), %ecx
+	movl	%ecx, %eax
+	orl	$10, %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	shll	$4, %esi
 	movl	%esi, %eax

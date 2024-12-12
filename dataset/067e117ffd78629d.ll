@@ -1,6 +1,6 @@
 
-%struct.Gia_Obj_t_.2763752 = type <{ i64, i32 }>
-%"class.llvm::Use.2998109" = type { ptr, ptr, ptr, ptr }
+%struct.Gia_Obj_t_.2876024 = type <{ i64, i32 }>
+%"class.llvm::Use.3191562" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/codeBuffer.ll
@@ -26,9 +26,9 @@ entry:
 define i64 @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2763752, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2876024, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %struct.Gia_Obj_t_.2763752, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct.Gia_Obj_t_.2876024, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -41,9 +41,9 @@ entry:
 define i64 @func0000000000000052(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.llvm::Use.2998109", ptr %0, i64 %3
+  %4 = getelementptr %"class.llvm::Use.3191562", ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %"class.llvm::Use.2998109", ptr %4, i64 %5
+  %6 = getelementptr nusw %"class.llvm::Use.3191562", ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

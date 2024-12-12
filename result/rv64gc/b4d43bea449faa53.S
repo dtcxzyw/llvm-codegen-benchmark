@@ -40,12 +40,8 @@ func000000000000000b:                   # @func000000000000000b
 	srli	a0, a0, 56
 	ret
 func000000000000000a:                   # @func000000000000000a
-	slli	a1, a1, 24
-	or	a0, a0, a1
-	lui	a1, 4112
-	srli	a0, a0, 7
-	addiw	a1, a1, 257
-	and	a0, a0, a1
+	slli	a0, a0, 40
+	srli	a0, a0, 56
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 16

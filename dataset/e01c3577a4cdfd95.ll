@@ -1,13 +1,11 @@
 
-; 3 occurrences:
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/ht.ll
+; 1 occurrences:
 ; qemu/optimized/hw_sd_sd.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 9
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = and i32 %4, 8191
   %6 = and i32 %0, 8192
   %7 = or disjoint i32 %6, %5
@@ -43,7 +41,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = and i32 %4, 269488144
   %6 = and i32 %0, -269488145
   %7 = or disjoint i32 %6, %5
@@ -56,7 +54,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 23
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = and i32 %4, 14651391
   %6 = and i32 %0, -16777216
   %7 = or disjoint i32 %6, %5

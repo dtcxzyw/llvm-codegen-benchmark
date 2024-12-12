@@ -30,5 +30,5 @@ func000000000000000f:                   # @func000000000000000f
 	vpcmpnltw	%xmm3, %xmm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [256,256,256,256,256,256,256,256]
 	vpsubd	%ymm2, %ymm1, %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq

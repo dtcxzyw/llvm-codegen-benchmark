@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
 	notl	%esi
-	testw	%di, %si
+	testw	%si, %di
 	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004

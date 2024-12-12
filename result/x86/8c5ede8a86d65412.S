@@ -37,9 +37,3 @@ func000000000000001e:                   # @func000000000000001e
 	subb	%sil, %cl
 	btsl	%ecx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movl	%edi, %eax
-	movb	$20, %cl
-	subb	%sil, %cl
-	btsl	%ecx, %eax
-	retq

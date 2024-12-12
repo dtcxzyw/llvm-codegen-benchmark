@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; git/optimized/http.ll
 ; linux/optimized/netdev-genl.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; Function Attrs: nounwind

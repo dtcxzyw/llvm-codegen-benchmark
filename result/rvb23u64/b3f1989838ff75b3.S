@@ -1,29 +1,34 @@
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	slli	a1, a1, 45
 	srli	a1, a1, 45
 	addi	a1, a1, 5
 	sltu	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
-	srliw	a1, a1, 4
-	slli	a1, a1, 4
-	lui	a2, 1
-	add	a1, a1, a2
-	sltu	a0, a1, a0
+func00000000000000f8:                   # @func00000000000000f8
+	slli	a1, a1, 45
+	srli	a1, a1, 45
+	addi	a1, a1, 5
+	sltu	a0, a0, a1
 	ret
-func0000000000000054:                   # @func0000000000000054
-	zext.h	a1, a1
-	addi	a1, a1, -1
-	sltu	a0, a1, a0
-	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	lui	a2, 16
 	addiw	a2, a2, -8
 	and	a1, a1, a2
 	addi	a1, a1, 16
 	sltu	a0, a1, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func00000000000000a4:                   # @func00000000000000a4
+	andi	a1, a1, 255
+	addi	a1, a1, -1
+	sltu	a0, a1, a0
+	ret
+func00000000000000b4:                   # @func00000000000000b4
+	slli	a1, a1, 40
+	srli	a1, a1, 40
+	addi	a1, a1, -32
+	sltu	a0, a1, a0
+	ret
+func0000000000000068:                   # @func0000000000000068
 	srliw	a1, a1, 1
 	slli	a1, a1, 1
 	addi	a1, a1, 8

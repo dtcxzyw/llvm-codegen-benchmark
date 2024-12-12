@@ -1,12 +1,11 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; curl/optimized/libcurl_la-pop3.ll
 ; eastl/optimized/EAString.cpp.ll
 ; flatbuffers/optimized/idl_gen_python.cpp.ll
 ; hermes/optimized/Executor.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; icu/optimized/decNumber.ll
-; linux/optimized/ht.ll
 ; linux/optimized/rtc-cmos.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/InstCombineMulDivRem.cpp.ll
@@ -43,7 +42,7 @@ entry:
 define i1 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
-  %3 = and i8 %2, %0
+  %3 = and i8 %0, %2
   %4 = icmp ne i8 %3, 0
   ret i1 %4
 }

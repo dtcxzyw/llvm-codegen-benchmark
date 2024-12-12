@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; lief/optimized/nist_kw.c.ll
@@ -10,8 +10,9 @@
 ; ring-rs/optimized/52ihu0vizw1hcp4s.ll
 ; rocksdb/optimized/arena.cc.ll
 ; wireshark/optimized/pcapng.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0) #0 {
+define i64 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = sub nuw nsw i64 16, %0
   %2 = icmp eq i64 %0, 0
@@ -19,8 +20,7 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
-; bdwgc/optimized/gc.c.ll
+; 3 occurrences:
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; ockam-rs/optimized/1nr6pb10qh86z9fy.ll
 ; qemu/optimized/fpu_softfloat.c.ll
@@ -28,20 +28,28 @@ entry:
 define i64 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = sub i64 0, %0
-  %2 = icmp ugt i64 %0, 16383
-  %3 = select i1 %2, i64 -16384, i64 %1
+  %2 = icmp ugt i64 %0, 128
+  %3 = select i1 %2, i64 -128, i64 %1
   ret i64 %3
 }
 
-; 6 occurrences:
-; actix-rs/optimized/4vksfexudgt1qids.ll
+; 14 occurrences:
 ; cmake/optimized/archive_blake2sp_ref.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; linux/optimized/fair.ll
 ; ockam-rs/optimized/3pv8r5vqgt8gdr9t.ll
 ; qemu/optimized/io_channel-websock.c.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/2rng14wd6tcwuthhb5s7ekmqe.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9wd9ok5kgn8j922db1jwm4yni.ll
+; zed-rs/optimized/d3d8em3dqdchyj1r4knj7yk2s.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0) #0 {
+define i64 @func0000000000000068(i64 %0) #0 {
 entry:
   %1 = sub nuw nsw i64 8192, %0
   %2 = icmp ugt i64 %0, 8191
@@ -68,8 +76,9 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
+; boost/optimized/static_string.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; linux/optimized/compat_binfmt_elf.ll
@@ -81,7 +90,7 @@ entry:
 ; postgres/optimized/sqlda.ll
 ; spike/optimized/fall_reciprocal.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = sub nsw i64 0, %0
   %2 = icmp eq i64 %0, -9223372036854775808
@@ -99,7 +108,7 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0) #0 {
+define i64 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = sub nsw i64 21, %0
   %2 = icmp ult i64 %0, -13

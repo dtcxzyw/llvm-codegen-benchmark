@@ -1,4 +1,33 @@
 
+; 6 occurrences:
+; llvm/optimized/MemorySSA.cpp.ll
+; openjdk/optimized/jfrTypeSet.ll
+; openjdk/optimized/klassVtable.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; slurm/optimized/gres_filter.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000002(i16 %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = icmp eq i16 %0, 0
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
+; 3 occurrences:
+; llvm/optimized/NamespaceEndCommentsFixer.cpp.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000082(i16 %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = icmp eq i16 %0, 0
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; Function Attrs: nounwind
@@ -10,13 +39,12 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; cvc5/optimized/theory_arrays.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/ParseExpr.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/UnwrappedLineFormatter.cpp.ll
@@ -35,32 +63,17 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; llvm/optimized/MemorySSA.cpp.ll
-; openjdk/optimized/jfrTypeSet.ll
-; openjdk/optimized/klassVtable.ll
-; slurm/optimized/gres_filter.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000002(i16 %0, i8 %1) #0 {
-entry:
-  %2 = trunc i8 %1 to i1
-  %3 = icmp eq i16 %0, 0
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 9 occurrences:
+; 8 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; diesel-rs/optimized/6cb7zukciz78xvw.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; icu/optimized/double-conversion-string-to-double.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; wasmtime-rs/optimized/33slbp9da8waph2q.ll
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000098(i16 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i16 %0, 48
@@ -76,17 +89,6 @@ define i1 @func0000000000000008(i16 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = icmp ult i16 %0, -3
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/NamespaceEndCommentsFixer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000042(i16 %0, i8 %1) #0 {
-entry:
-  %2 = trunc nuw i8 %1 to i1
-  %3 = icmp eq i16 %0, 72
   %4 = or i1 %3, %2
   ret i1 %4
 }

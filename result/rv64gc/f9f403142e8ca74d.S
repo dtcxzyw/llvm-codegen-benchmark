@@ -53,10 +53,10 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000009:                   # @func0000000000000009
 	andi	a0, a0, 1
-	sext.w	a1, a1
-	sltiu	a1, a1, 2
+	srliw	a1, a1, 16
+	snez	a1, a1
 	addi	a0, a0, -1
-	slli	a1, a1, 9
-	andi	a0, a0, 2
+	slli	a1, a1, 4
+	andi	a0, a0, 8
 	or	a0, a0, a1
 	ret

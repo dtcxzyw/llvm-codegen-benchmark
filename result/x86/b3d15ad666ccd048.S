@@ -1,6 +1,5 @@
 func0000000000000003:                   # @func0000000000000003
-	cmpl	$768, %edi                      # imm = 0x300
-	movl	$30, %ecx
-	movl	$24, %eax
-	cmovel	%ecx, %eax
+	testl	%edi, %edi
+	movl	$255, %eax
+	cmovel	%edi, %eax
 	retq

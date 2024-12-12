@@ -1,63 +1,63 @@
-func0000000000000085:                   # @func0000000000000085
+func0000000000000105:                   # @func0000000000000105
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setae	%cl
-	cmpq	%rsi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	setbe	%cl
+	cmpq	%rax, %rsi
+	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000055:                   # @func0000000000000055
+func00000000000000a5:                   # @func00000000000000a5
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setae	%cl
-	cmpq	%rsi, %rax
-	setae	%al
+	cmpq	%rax, %rdi
+	setbe	%cl
+	cmpq	%rax, %rsi
+	setbe	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	seta	%cl
-	cmpq	%rsi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	setb	%cl
+	cmpq	%rax, %rsi
+	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%edx, %eax
 	xorq	%rax, %rdi
 	xorq	%rax, %rsi
 	orq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setb	%cl
-	cmpq	%rsi, %rax
-	setae	%al
-	andb	%cl, %al
-	retq
-func00000000000001a7:                   # @func00000000000001a7
-	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setge	%cl
-	cmpq	%rsi, %rax
-	setl	%al
-	andb	%cl, %al
-	retq
-func0000000000000044:                   # @func0000000000000044
-	movl	%edx, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	seta	%cl
-	cmpq	%rsi, %rax
-	seta	%al
+	cmpq	%rax, %rsi
+	setbe	%al
 	andb	%cl, %al
 	retq
-func00000000000000b7:                   # @func00000000000000b7
+func0000000000000547:                   # @func0000000000000547
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setge	%cl
-	cmpq	%rsi, %rax
-	setle	%al
+	cmpq	%rax, %rdi
+	setle	%cl
+	cmpq	%rax, %rsi
+	setg	%al
+	andb	%cl, %al
+	retq
+func0000000000000084:                   # @func0000000000000084
+	movl	%edx, %eax
+	cmpq	%rax, %rdi
+	setb	%cl
+	cmpq	%rax, %rsi
+	setb	%al
+	andb	%cl, %al
+	retq
+func0000000000000167:                   # @func0000000000000167
+	movl	%edx, %eax
+	cmpq	%rax, %rdi
+	setle	%cl
+	cmpq	%rax, %rsi
+	setge	%al
 	andb	%cl, %al
 	retq

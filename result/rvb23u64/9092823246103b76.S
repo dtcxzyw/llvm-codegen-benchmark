@@ -10,3 +10,9 @@ func0000000000000006:                   # @func0000000000000006
 	sext.b	a0, a0
 	slti	a0, a0, 1
 	ret
+func0000000000000104:                   # @func0000000000000104
+	subw	a1, a1, a0
+	andi	a1, a1, 255
+	sltiu	a0, a1, 253
+	xori	a0, a0, 1
+	ret

@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 36 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -23,8 +23,6 @@
 ; meshlab/optimized/baseio.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
 ; minetest/optimized/noise.cpp.ll
-; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/measured_polarized.cpp.ll
 ; oiio/optimized/targainput.cpp.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; openjdk/optimized/pngrutil.ll
@@ -42,7 +40,7 @@
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %0, %1
-  %3 = add i32 %2, -1
+  %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -60,14 +58,9 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 6 occurrences:
 ; abc/optimized/wlcBlast.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-static.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/i915_query.ll
-; openjdk/optimized/hb-common.ll
-; openjdk/optimized/hb-ot-font.ll
 ; openusd/optimized/blockd.c.ll
 ; qemu/optimized/target_riscv_monitor.c.ll
 ; qemu/optimized/tcg.c.ll

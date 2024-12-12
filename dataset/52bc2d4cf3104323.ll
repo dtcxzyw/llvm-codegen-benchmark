@@ -1,5 +1,7 @@
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/mm2gv.c.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll

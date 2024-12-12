@@ -17,7 +17,12 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000014:                   # @func0000000000000014
+	xorl	$65535, %esi                    # imm = 0xFFFF
+	cmpl	%edi, %esi
+	setb	%al
+	retq
+func0000000000000015:                   # @func0000000000000015
 	xorl	$127, %esi
 	cmpl	%edi, %esi
 	setbe	%al
@@ -31,4 +36,9 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%esi, %edi
 	cmpl	$1, %edi
 	setne	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	$128, %esi
+	cmpl	%edi, %esi
+	seta	%al
 	retq

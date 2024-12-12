@@ -2,26 +2,26 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000030a(ptr %0, i1 %1, i8 %2) #0 {
+define ptr @func000000000000030f(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i64
   %5 = zext i1 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000020a(ptr %0, i1 %1, i8 %2) #0 {
+define ptr @func000000000000020f(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 1
   %4 = zext i1 %3 to i64
   %5 = zext i1 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -40,13 +40,13 @@ entry:
 ; openmpi/optimized/mpl_env.ll
 ; php/optimized/apprentice.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i1 %1, i8 %2) #0 {
+define ptr @func000000000000004f(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 10
   %4 = zext i1 %3 to i64
   %5 = zext i1 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

@@ -1,10 +1,10 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	shrq	$2, %rsi
 	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
 	shrl	$6, %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	movq	%rsi, %rax
 	movabsq	$3074457345618258603, %rcx      # imm = 0x2AAAAAAAAAAAAAAB
 	imulq	%rcx

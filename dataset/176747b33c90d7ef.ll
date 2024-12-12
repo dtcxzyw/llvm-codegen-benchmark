@@ -1,5 +1,7 @@
 
-; 62 occurrences:
+; 64 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; faiss/optimized/Clustering.cpp.ll
 ; faiss/optimized/kmeans1d.cpp.ll
 ; faiss/optimized/utils.cpp.ll

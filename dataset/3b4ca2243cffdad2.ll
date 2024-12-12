@@ -1,5 +1,7 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll

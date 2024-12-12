@@ -37,6 +37,17 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; Function Attrs: nounwind
+define i16 @func000000000000003d(i16 %0, i32 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i32 %1 to i16
+  %3 = add nuw nsw i16 %2, 6
+  %4 = add nsw i16 %3, %0
+  ret i16 %4
+}
+
+; 1 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000025(i16 %0, i32 %1) #0 {

@@ -1,9 +1,53 @@
 
-; 41 occurrences:
+%"class.llvm::Use.3151881" = type { ptr, ptr, ptr, ptr }
+
+; 8 occurrences:
 ; hermes/optimized/HiddenClass.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; opencv/optimized/geometry.cpp.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i32, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = lshr exact i64 %5, 2
+  %7 = and i64 %6, 4294967295
+  ret i64 %7
+}
+
+; 1 occurrences:
+; openjdk/optimized/methodData.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = lshr i64 %5, 3
+  %7 = and i64 %6, 268435455
+  ret i64 %7
+}
+
+; 1 occurrences:
+; lief/optimized/File.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = lshr i64 %5, 1
+  %7 = and i64 %6, 65535
+  ret i64 %7
+}
+
+; 34 occurrences:
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AbstractCallSite.cpp.ll
 ; llvm/optimized/AsmWriter.cpp.ll
@@ -23,10 +67,8 @@
 ; llvm/optimized/InlineCost.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
-; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/MemoryLocation.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
@@ -40,35 +82,19 @@
 ; llvm/optimized/TypePromotion.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
-; openvdb/optimized/PoissonSolver.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i32, ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3151881", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
-  %6 = lshr exact i64 %5, 2
+  %6 = lshr exact i64 %5, 5
   %7 = and i64 %6, 4294967295
   ret i64 %7
 }
 
-; 2 occurrences:
-; lief/optimized/File.cpp.ll
-; openjdk/optimized/methodData.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %0, %4
-  %6 = lshr i64 %5, 3
-  %7 = and i64 %6, 268435455
-  ret i64 %7
-}
-
-; 2 occurrences:
+; 1 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
-; opencv/optimized/geometry.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/unicodectype.ll
@@ -7,6 +7,8 @@
 ; linux/optimized/trace_output.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; luau/optimized/IrTranslateBuiltins.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; openjdk/optimized/dither.ll
 ; openjdk/optimized/net_util.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll

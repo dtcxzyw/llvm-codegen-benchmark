@@ -5,7 +5,7 @@
 ; libquic/optimized/trees.c.ll
 ; linux/optimized/deftree.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000001a8(i16 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000348(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 256
   %4 = add nsw i32 %1, -1

@@ -25,16 +25,15 @@ func0000000000000004:                   # @func0000000000000004
 	vmovdqa	%ymm2, %ymm0
 	retq
 .LCPI2_0:
-	.long	86400                           # 0x15180
-.LCPI2_1:
-	.long	4294880896                      # 0xfffeae80
+	.long	8                               # 0x8
 func0000000000000005:                   # @func0000000000000005
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpsllw	$15, %xmm1, %xmm0
 	vpmovw2m	%xmm0, %k2
-	vpaddd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2 {%k2}
-	vpaddd	.LCPI2_1(%rip){1to8}, %ymm2, %ymm2 {%k1}
+	vpbroadcastd	.LCPI2_0(%rip), %ymm0   # ymm0 = [8,8,8,8,8,8,8,8]
+	vpaddd	%ymm0, %ymm2, %ymm2 {%k2}
+	vpaddd	%ymm0, %ymm2, %ymm2 {%k1}
 	vmovdqa	%ymm2, %ymm0
 	retq
 .LCPI3_0:

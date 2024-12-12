@@ -34,7 +34,8 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/area.ll
 ; clamav/optimized/extract.cpp.ll
 ; cmake/optimized/epoll.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -82,14 +83,16 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; gromacs/optimized/cellsizes.cpp.ll
 ; icu/optimized/number_mapper.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/seq_prioq.ll
 ; openblas/optimized/dhgeqz.c.ll
+; openblas/optimized/dsyevx.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openusd/optimized/faceSurface.cpp.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
 ; postgres/optimized/varlena.ll
 ; wireshark/optimized/packet-communityid.c.ll
 ; wireshark/optimized/sdjournal.c.ll

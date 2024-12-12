@@ -5,12 +5,12 @@
 ; openjdk/optimized/g1CollectedHeap.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = lshr i64 %3, 6
   %5 = and i64 %4, 67108863
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 

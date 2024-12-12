@@ -8,7 +8,7 @@
 define i1 @func0000000000000004(i1 %0, float %1, double %2) #0 {
 entry:
   %3 = fptrunc double %2 to float
-  %4 = fcmp olt float %3, %1
+  %4 = fcmp ogt float %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -21,7 +21,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, float %1, double %2) #0 {
 entry:
   %3 = fptrunc double %2 to float
-  %4 = fcmp ole float %3, %1
+  %4 = fcmp oge float %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

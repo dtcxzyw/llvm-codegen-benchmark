@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/zip_util.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %0, %1
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000002aa(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %0, %1
@@ -66,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %0, %1

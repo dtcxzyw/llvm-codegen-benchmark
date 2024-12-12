@@ -18,8 +18,3 @@ func0000000000000006:                   # @func0000000000000006
 	cmovnsl	%esi, %edi
 	movslq	%edi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	cmpq	$6, %rdx
-	cmovael	%esi, %edi
-	movslq	%edi, %rax
-	retq

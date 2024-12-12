@@ -65,3 +65,12 @@ func0000000000000013:                   # @func0000000000000013
 	vpaddd	.LCPI3_2(%rip){1to8}, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
+.LCPI4_0:
+	.long	1                               # 0x1
+func0000000000000006:                   # @func0000000000000006
+	vptestmb	%xmm1, %xmm1, %k1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpbroadcastd	.LCPI4_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
+	vpsubd	%ymm2, %ymm0, %ymm1 {%k1}
+	vmovdqa	%ymm1, %ymm0
+	retq

@@ -34,8 +34,8 @@ func000000000000001f:                   # @func000000000000001f
 	addl	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	imull	$52429, %esi, %eax              # imm = 0xCCCD
-	shrl	$19, %eax
+	imull	$-732923, %esi, %eax            # imm = 0xFFF4D105
+	shrl	$20, %eax
 	addl	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004

@@ -18,10 +18,3 @@ func000000000000000c:                   # @func000000000000000c
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	lui	a2, 88
-	addiw	a2, a2, -2047
-	sltu	a1, a1, a2
-	or	a0, a0, a1
-	andi	a0, a0, 1
-	ret

@@ -20,13 +20,13 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/gough.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = trunc nuw i64 %1 to i32
   %5 = mul i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

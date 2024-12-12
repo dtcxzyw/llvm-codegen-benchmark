@@ -1,25 +1,25 @@
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	sub	x8, x1, x0
 	ubfx	x0, x8, #34, #1
                                         // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
 	sub	w8, w1, w0
 	cmp	w8, #31
 	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
 	sub	w8, w1, w0
 	cmp	w8, #0
 	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
 	sub	w8, w1, w0
 	lsr	w0, w8, #31

@@ -1,58 +1,32 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v4.4s, #16
-	movi	v5.4s, #79
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	movi	v4.4s, #69
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	bsl	v3.16b, v5.16b, v4.16b
-	bsl	v2.16b, v5.16b, v4.16b
-	movi	v4.4s, #78
-	bsl	v0.16b, v4.16b, v2.16b
-	bsl	v1.16b, v4.16b, v3.16b
+	mov	w8, #69                         // =0x45
+	tst	w1, #0x10
+	mov	w9, #79                         // =0x4f
+	csel	w8, w9, w8, eq
+	cmp	w0, #0
+	mov	w9, #78                         // =0x4e
+	csel	w0, w9, w8, eq
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	bic	v3.4s, #6
-	bic	v2.4s, #6
-	movi	v4.4s, #175
-	movi	v5.4s, #174
-	movi	v6.4s, #3
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	cmhi	v1.4s, v6.4s, v1.4s
-	cmhi	v0.4s, v6.4s, v0.4s
-	bsl	v3.16b, v5.16b, v4.16b
-	bsl	v2.16b, v5.16b, v4.16b
-	movi	v4.4s, #190
-	bsl	v0.16b, v4.16b, v2.16b
-	bsl	v1.16b, v4.16b, v3.16b
+	mov	w8, #174                        // =0xae
+	tst	w1, #0xfffffff9
+	mov	w9, #190                        // =0xbe
+	cinc	w8, w8, ne
+	cmp	w0, #3
+	csel	w0, w9, w8, lo
 	ret
                                         // -- End function
-func00000000000000c1:                   // @func00000000000000c1
+func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
-	movi	v4.4s, #16
 	mov	w8, #697                        // =0x2b9
-	movi	v6.4s, #4
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	dup	v4.4s, w8
-	mov	w8, #636                        // =0x27c
-	cmeq	v1.4s, v1.4s, v6.4s
-	cmeq	v0.4s, v0.4s, v6.4s
-	dup	v5.4s, w8
-	mov	w8, #584                        // =0x248
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	bsl	v3.16b, v5.16b, v4.16b
-	bsl	v2.16b, v5.16b, v4.16b
-	dup	v4.4s, w8
-	bsl	v0.16b, v4.16b, v2.16b
-	bsl	v1.16b, v4.16b, v3.16b
+	tst	w1, #0x10
+	mov	w9, #636                        // =0x27c
+	csel	w8, w9, w8, eq
+	cmp	w0, #4
+	mov	w9, #584                        // =0x248
+	csel	w0, w9, w8, eq
 	ret
                                         // -- End function

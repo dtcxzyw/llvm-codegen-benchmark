@@ -3,16 +3,6 @@ func0000000000000002:                   # @func0000000000000002
 	addq	%rsi, %rdi
 	leaq	16(%rdx,%rdi), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	andq	$-8, %rdx
-	addq	%rsi, %rdi
-	leaq	8(%rdx,%rdi), %rax
-	retq
-func000000000000003e:                   # @func000000000000003e
-	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
-	leaq	(%rdi,%rsi,4), %rax
-	leaq	4(%rax,%rdx,4), %rax
-	retq
 func0000000000000012:                   # @func0000000000000012
 	andl	$134217727, %esi                # imm = 0x7FFFFFF
 	leaq	(%rdi,%rsi,8), %rax

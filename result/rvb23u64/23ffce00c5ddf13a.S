@@ -3,7 +3,7 @@ func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0
 	sgtz	a0, a0
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	srai	a0, a0, 32
 	sgtz	a0, a0
 	ret

@@ -2,9 +2,9 @@
 ; 1 occurrences:
 ; libquic/optimized/exponentiation.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000080(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000180(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 4
+  %3 = icmp samesign ugt i32 %2, 4
   %4 = select i1 %3, i32 %1, i32 0
   %5 = shl i32 %0, 3
   %6 = add i32 %5, %4
@@ -19,12 +19,24 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 1
+  %3 = icmp samesign ugt i32 %2, 1
   %4 = select i1 %3, i32 %1, i32 1
   %5 = shl i32 %0, 4
   %6 = add nsw i32 %5, %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-usbip.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 %1, i32 48
+  %5 = shl i32 %0, 4
+  %6 = add i32 %5, %4
   ret i32 %6
 }
 

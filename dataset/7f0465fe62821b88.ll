@@ -23,8 +23,7 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {

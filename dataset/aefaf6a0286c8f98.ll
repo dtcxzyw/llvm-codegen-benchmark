@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/extents.ll
-; linux/optimized/fils_aead.ll
 ; lz4/optimized/lz4.c.ll
 ; openjdk/optimized/g1BlockOffsetTable.ll
 ; openusd/optimized/lz4.cpp.ll
@@ -22,9 +21,8 @@ entry:
   ret i64 %6
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
-; brotli/optimized/compress_fragment.c.ll
 ; clamav/optimized/phishcheck.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; git/optimized/urlmatch.ll
@@ -44,50 +42,49 @@ entry:
   ret i64 %6
 }
 
-; 45 occurrences:
-; assimp/optimized/glTF2Importer.cpp.ll
+; 11 occurrences:
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/compress_fragment.c.ll
-; clamav/optimized/pdf.c.ll
-; cmake/optimized/zstd_compress_superblock.c.ll
-; crow/optimized/example.cpp.ll
-; crow/optimized/example_blueprint.cpp.ll
-; crow/optimized/example_catchall.cpp.ll
-; crow/optimized/example_chat.cpp.ll
-; crow/optimized/example_cookies.cpp.ll
-; crow/optimized/example_cors.cpp.ll
-; crow/optimized/example_file_upload.cpp.ll
-; crow/optimized/example_json_map.cpp.ll
-; crow/optimized/example_middleware.cpp.ll
-; crow/optimized/example_session.cpp.ll
-; crow/optimized/example_static_file.cpp.ll
-; crow/optimized/example_ws.cpp.ll
-; crow/optimized/helloworld.cpp.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; git/optimized/archive.ll
 ; lz4/optimized/lz4.c.ll
-; lz4/optimized/lz4hc.c.ll
 ; nghttp2/optimized/client.c.ll
-; node/optimized/simdutf.ll
-; nuklear/optimized/unity.c.ll
-; nuttx/optimized/mm_memalign.c.ll
 ; opencv/optimized/tflite_importer.cpp.ll
-; openjdk/optimized/g1BarrierSetRuntime.ll
-; openjdk/optimized/jvmciCodeInstaller_x86.ll
-; openjdk/optimized/objArrayKlass.ll
-; openjdk/optimized/stubRoutines.ll
 ; openssl/optimized/quic_multistream_test-bin-quictestlib.ll
 ; openssl/optimized/quic_newcid_test-bin-quictestlib.ll
 ; openssl/optimized/quic_srt_gen_test-bin-quictestlib.ll
 ; openssl/optimized/quicapitest-bin-quictestlib.ll
 ; openssl/optimized/quicfaultstest-bin-quictestlib.ll
+; ruby/optimized/ripper.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = add i64 %5, -3
+  ret i64 %6
+}
+
+; 22 occurrences:
+; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
+; clamav/optimized/pdf.c.ll
+; cmake/optimized/zstd_compress_superblock.c.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; git/optimized/archive.ll
+; lz4/optimized/lz4hc.c.ll
+; node/optimized/simdutf.ll
+; nuklear/optimized/unity.c.ll
+; nuttx/optimized/mm_memalign.c.ll
+; openjdk/optimized/g1BarrierSetRuntime.ll
+; openjdk/optimized/jvmciCodeInstaller_x86.ll
+; openjdk/optimized/objArrayKlass.ll
+; openjdk/optimized/stubRoutines.ll
 ; openusd/optimized/lz4.cpp.ll
-; php/optimized/php_http_parser.ll
 ; php/optimized/state_doctype.ll
 ; php/optimized/str.ll
-; proxygen/optimized/http_parser_cpp.cpp.ll
 ; rocksdb/optimized/memtable.cc.ll
-; ruby/optimized/ripper.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
@@ -96,13 +93,38 @@ entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = add i64 %5, -3
+  %6 = add i64 %5, -8
+  ret i64 %6
+}
+
+; 1 occurrences:
+; folly/optimized/SplitStringSimd.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000033(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = add nuw nsw i64 %5, 7
   ret i64 %6
 }
 
 ; 3 occurrences:
+; boost/optimized/segments_iter_impl.ll
+; boost/optimized/static_string.ll
+; brotli/optimized/compress_fragment.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000031(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = add nsw i64 %5, 1
+  ret i64 %6
+}
+
+; 2 occurrences:
 ; cmake/optimized/huf_compress.c.ll
-; folly/optimized/SplitStringSimd.cpp.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000023(i64 %0, ptr %1, i64 %2) #0 {
@@ -110,7 +132,7 @@ entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = add nuw nsw i64 %5, 7
+  %6 = add nuw nsw i64 %5, 1
   ret i64 %6
 }
 

@@ -10,7 +10,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	%rdi, %rsi
 	cmovgeq	%rdi, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi

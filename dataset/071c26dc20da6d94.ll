@@ -63,19 +63,6 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %0, %1
-  %3 = shl i64 %2, 2
-  %4 = add i64 %3, 274276
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind

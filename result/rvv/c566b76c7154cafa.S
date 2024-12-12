@@ -3,7 +3,7 @@ func0000000000000035:                   # @func0000000000000035
 	vsll.vi	v12, v12, 14
 	lui	a0, 1040976
 	vadd.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	ret
 func0000000000000014:                   # @func0000000000000014

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; opencv/optimized/nbayes.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {

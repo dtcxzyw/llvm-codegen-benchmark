@@ -24,12 +24,12 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vmovd	%edi, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovw	%k0, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	vmovd	%edi, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovw	%k0, %eax
 	retq
 func0000000000000016:                   # @func0000000000000016

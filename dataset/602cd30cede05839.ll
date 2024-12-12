@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -10,6 +10,7 @@
 ; glog/optimized/signalhandler.cc.ll
 ; grpc/optimized/slice.cc.ll
 ; mitsuba3/optimized/assembler.cpp.ll
+; openjdk/optimized/chunklevel.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; yalantinglibs/optimized/data_def.struct_pb.cc.ll
 ; Function Attrs: nounwind

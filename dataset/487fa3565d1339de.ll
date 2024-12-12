@@ -1,9 +1,8 @@
 
-; 430 occurrences:
+; 428 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/abcLib.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcNpn.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcSop.c.ll
@@ -47,7 +46,6 @@
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/exorBits.c.ll
 ; abc/optimized/extraUtilBitMatrix.c.ll
@@ -78,7 +76,6 @@
 ; abc/optimized/llb4Cex.c.ll
 ; abc/optimized/mfsResub.c.ll
 ; abc/optimized/mvcLits.c.ll
-; abc/optimized/mvcPrint.c.ll
 ; abc/optimized/pdrTsim.c.ll
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/rsbDec6.c.ll
@@ -93,7 +90,6 @@
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSemi.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/utilCex.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcMem.c.ll
@@ -114,6 +110,7 @@
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/unique_path.ll
 ; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/rarvm.cpp.ll
@@ -228,6 +225,7 @@
 ; luajit/optimized/minilua.ll
 ; luau/optimized/IrUtils.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
@@ -235,7 +233,6 @@
 ; mitsuba3/optimized/rapass.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuttx/optimized/fs_select.c.ll
-; nuttx/optimized/sig_ismember.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -358,7 +355,6 @@
 ; qemu/optimized/block_qed-check.c.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/hw_net_eepro100.c.ll
@@ -406,7 +402,6 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; verilator/optimized/V3Number.cpp.ll
-; verilator/optimized/V3String.cpp.ll
 ; verilator/optimized/V3Table.cpp.ll
 ; wasmedge/optimized/engine.cpp.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
@@ -422,6 +417,9 @@
 ; z3/optimized/sat_proof_trim.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/entropy_common.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll

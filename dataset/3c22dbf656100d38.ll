@@ -12,7 +12,7 @@ entry:
   ret i32 %7
 }
 
-; 49 occurrences:
+; 47 occurrences:
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaOf.c.ll
@@ -20,12 +20,10 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/early-lookup.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/initramfs.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/md.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -106,9 +104,8 @@ entry:
   ret i32 %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/coleitr.ll
-; linux/optimized/feat_ctl.ll
 ; mold/optimized/output-chunks.cc.M68K.cc.ll
 ; mold/optimized/output-chunks.cc.PPC32.cc.ll
 ; mold/optimized/output-chunks.cc.RV32BE.cc.ll

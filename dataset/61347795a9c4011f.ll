@@ -13,10 +13,9 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; opencv/optimized/weighted_median_filter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {

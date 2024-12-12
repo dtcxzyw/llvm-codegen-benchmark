@@ -1,4 +1,4 @@
-func0000000000003210:                   # @func0000000000003210
+func000000000000c410:                   # @func000000000000c410
 	testl	%edx, %edx
 	setne	%cl
 	movzwl	%si, %eax
@@ -10,7 +10,7 @@ func0000000000003210:                   # @func0000000000003210
 	orb	%dl, %al
 	orb	%cl, %al
 	retq
-func0000000000003310:                   # @func0000000000003310
+func000000000000c610:                   # @func000000000000c610
 	testw	%dx, %dx
 	setne	%al
 	cmpl	$1416784178, %esi               # imm = 0x54726932

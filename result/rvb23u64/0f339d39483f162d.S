@@ -13,18 +13,18 @@ func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 4
 	or	a0, a0, a1
 	ret
+func0000000000000009:                   # @func0000000000000009
+	andi	a1, a1, 255
+	sltiu	a1, a1, 5
+	andi	a0, a0, -3
+	sh1add	a0, a1, a0
+	ret
 func0000000000000019:                   # @func0000000000000019
 	andi	a1, a1, 255
 	snez	a1, a1
 	slli	a1, a1, 5
 	andi	a0, a0, -33
 	or	a0, a0, a1
-	ret
-func0000000000000009:                   # @func0000000000000009
-	andi	a1, a1, 255
-	sltiu	a1, a1, 4
-	andi	a0, a0, 1
-	sh2add	a0, a1, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 255

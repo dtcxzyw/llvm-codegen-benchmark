@@ -1,22 +1,29 @@
 
-; 178 occurrences:
+; 191 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/arg.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/ComputeUVMappingProcess.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
+; assimp/optimized/zip.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; clamav/optimized/XzDec.c.ll
-; clamav/optimized/filtering.c.ll
 ; clamav/optimized/pe.c.ll
+; cmake/optimized/zstd_decompress_block.c.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
 ; cpython/optimized/_codecs_jp.ll
 ; cpython/optimized/sre.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; flac/optimized/encode.c.ll
-; flatbuffers/optimized/idl_gen_swift.cpp.ll
 ; freetype/optimized/sfnt.c.ll
+; git/optimized/apply.ll
 ; git/optimized/commit.ll
 ; git/optimized/diffcore-rename.ll
 ; git/optimized/shortlog.ll
@@ -38,11 +45,14 @@
 ; hdf5/optimized/H5Oalloc.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hermes/optimized/dtoa.c.ll
+; hermes/optimized/zip.c.ll
 ; hwloc/optimized/topology.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
+; icu/optimized/collationfastlatinbuilder.ll
 ; icu/optimized/olsontz.ll
 ; icu/optimized/ucm.ll
+; icu/optimized/ucnv2022.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
@@ -96,25 +106,26 @@
 ; llvm/optimized/X86RecognizableInstr.cpp.ll
 ; logos-rs/optimized/5f38ll801i7djw99.ll
 ; luau/optimized/Transpiler.cpp.ll
-; luau/optimized/main.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; nanobind/optimized/nb_ndarray.cpp.ll
-; nlohmann_json/optimized/unit.cpp.ll
 ; nuttx/optimized/fs_mmap.c.ll
 ; opencv/optimized/matrix_transform.cpp.ll
+; opencv/optimized/norm.cpp.ll
 ; opencv/optimized/shapedescr.cpp.ll
 ; openjdk/optimized/addnode.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/instanceStackChunkKlass.ll
 ; openjdk/optimized/memnode.ll
+; openjdk/optimized/sharedRuntimeTrans.ll
 ; openjdk/optimized/signals_posix.ll
 ; openmpi/optimized/common_ompio_file_read.ll
 ; openmpi/optimized/common_ompio_file_write.ll
 ; openmpi/optimized/osc_rdma_comm.ll
-; openspiel/optimized/Moves.cpp.ll
 ; openspiel/optimized/tarok.cc.ll
 ; openssl/optimized/openssl-bin-dsaparam.ll
 ; openssl/optimized/openssl-bin-ecparam.ll
@@ -130,7 +141,6 @@
 ; postgres/optimized/network_selfuncs.ll
 ; postgres/optimized/standby.ll
 ; postgres/optimized/statscmds.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; qemu/optimized/hw_core_numa.c.ll
 ; qemu/optimized/migration_savevm.c.ll
@@ -154,20 +164,21 @@
 ; quantlib/optimized/slovakia.ll
 ; quantlib/optimized/switzerland.ll
 ; quantlib/optimized/thailand.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/module.ll
 ; redis/optimized/script.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/regparse.ll
+; ruby/optimized/strftime.ll
 ; rust-analyzer-rs/optimized/32bq2465pah9s0xr.ll
 ; slurm/optimized/fed_mgr.ll
 ; slurm/optimized/gres.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wireshark/optimized/packet-acdr.c.ll
+; wireshark/optimized/packet-bgp.c.ll
+; wireshark/optimized/packet-gprs-llc.c.ll
 ; wireshark/optimized/packet-nas_5gs.c.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; wireshark/optimized/packet-waveagent.c.ll
@@ -178,6 +189,8 @@
 ; yalantinglibs/optimized/example.cpp.ll
 ; yosys/optimized/deminout.ll
 ; yosys/optimized/share.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

@@ -4,7 +4,7 @@
 	.long	128                             # 0x80
 .LCPI0_2:
 	.long	2048                            # 0x800
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
 	vpord	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vpternlogd	$248, .LCPI0_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)

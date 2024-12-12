@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; minetest/optimized/clientmap.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i16 %0, i16 %1) #0 {
 entry:
@@ -21,10 +22,11 @@ entry:
   ret i1 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; wireshark/optimized/packet-isis-lsp.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:

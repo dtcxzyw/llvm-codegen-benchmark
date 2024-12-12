@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; ncnn/optimized/pooling.cpp.ll
@@ -9,6 +9,8 @@
 ; opencv/optimized/tree.cpp.ll
 ; openusd/optimized/utils.c.ll
 ; qemu/optimized/block_parallels.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
@@ -31,11 +33,13 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:

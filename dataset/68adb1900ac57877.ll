@@ -5,7 +5,7 @@
 define i1 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %0, 1
   %6 = icmp ugt i64 %5, %4
   ret i1 %6
@@ -38,10 +38,10 @@ entry:
 ; darktable/optimized/tethering.c.ll
 ; faiss/optimized/IndexIVFSpectralHash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add nuw i64 %0, 4
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -74,10 +74,10 @@ entry:
 ; postgres/optimized/print.ll
 ; tev/optimized/Image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nuw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -89,10 +89,10 @@ entry:
 ; darktable/optimized/introspection_profile_gamma.c.ll
 ; faiss/optimized/VectorTransform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add nuw i64 %0, 8
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -104,10 +104,10 @@ entry:
 ; darktable/optimized/introspection_colorin.c.ll
 ; postgres/optimized/pgbench.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nuw nsw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -116,10 +116,10 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/normal_prior.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nsw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -129,10 +129,10 @@ entry:
 ; faiss/optimized/Clustering.cpp.ll
 ; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add nuw nsw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -141,10 +141,10 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add i64 %0, 1
   %6 = icmp ugt i64 %5, %4
   ret i1 %6

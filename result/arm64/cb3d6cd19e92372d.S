@@ -1,50 +1,32 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	bic	v4.4s, #255
-	bic	v5.4s, #255
-	bic	v2.4s, #255
-	bic	v3.4s, #255
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v5.4s
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	and	w8, w2, #0xffffff00
+	and	w9, w1, #0xffffff00
+	add	w8, w9, w8
+	orr	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v2.16b, v2.16b, v6.16b
-	and	v3.16b, v3.16b, v6.16b
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v5.4s
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	and	w8, w2, #0x1
+	and	w9, w1, #0x1
+	add	w8, w9, w8
+	orr	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	bic	v4.4s, #128, lsl #24
-	bic	v5.4s, #128, lsl #24
-	bic	v2.4s, #128, lsl #24
-	bic	v3.4s, #128, lsl #24
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v5.4s
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	and	w8, w2, #0x7fffffff
+	and	w9, w1, #0x7fffffff
+	add	w8, w9, w8
+	orr	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mvni	v6.4s, #3, msl #8
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v2.16b, v2.16b, v6.16b
-	and	v3.16b, v3.16b, v6.16b
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v5.4s
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	and	w8, w2, #0xfffffc00
+	and	w9, w1, #0xfffffc00
+	add	w8, w9, w8
+	orr	w0, w0, w8
 	ret
                                         // -- End function

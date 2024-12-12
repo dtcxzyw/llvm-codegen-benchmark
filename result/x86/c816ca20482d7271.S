@@ -1,17 +1,17 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	$64, %ecx
 	subq	%rsi, %rcx
 	testq	%rdi, %rdi
 	movl	$1, %eax
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	negq	%rsi
 	negq	%rdi
 	movl	$31, %eax
 	cmovnoq	%rsi, %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	movl	$64, %ecx
 	subq	%rsi, %rcx
 	cmpq	$2, %rdi
@@ -24,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdi, %rdi
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movl	$688, %ecx                      # imm = 0x2B0
 	subq	%rsi, %rcx
 	cmpq	$-13, %rdi

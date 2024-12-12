@@ -1,4 +1,4 @@
-func0000000000000dac:                   # @func0000000000000dac
+func000000000000354c:                   # @func000000000000354c
 	sext.w	a3, a0
 	bset	a2, zero, a2
 	addw	a0, a0, a1

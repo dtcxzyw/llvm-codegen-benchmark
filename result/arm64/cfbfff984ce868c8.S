@@ -3,7 +3,7 @@ func0000000000000004:                   // @func0000000000000004
 	and	x0, x0, #0xffffffffffff0000
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	and	x8, x0, #0xffffffffffffffc0
 	add	x0, x8, #64

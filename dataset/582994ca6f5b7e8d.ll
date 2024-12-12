@@ -3,11 +3,11 @@
 ; openssl/optimized/libssl-lib-t1_trce.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000381(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nuw nsw i64 %2, 4
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -23,11 +23,11 @@ entry:
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 4
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -41,31 +41,19 @@ entry:
 ; mold/optimized/input-files.cc.RV32LE.cc.ll
 ; mold/optimized/input-files.cc.SH4.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 4
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
-}
-
-; 1 occurrences:
-; velox/optimized/HashStringAllocator.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001f8(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, 4
-  %4 = sub nuw nsw i64 %0, %3
-  %5 = icmp ugt i64 %4, 3072
-  ret i1 %5
 }
 
 ; 2 occurrences:
 ; clamav/optimized/jpeg.c.ll
 ; clamav/optimized/pe.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001c8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 2

@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vor.vv	v9, v9, v10
 	vor.vv	v8, v9, v8
@@ -34,10 +34,4 @@ func000000000000000c:                   # @func000000000000000c
 	vor.vv	v9, v9, v10
 	vor.vv	v8, v9, v8
 	vmsne.vi	v0, v8, 0
-	ret
-func0000000000000038:                   # @func0000000000000038
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vor.vv	v9, v9, v10
-	vor.vv	v8, v9, v8
-	vmsgtu.vi	v0, v8, 3
 	ret

@@ -7,7 +7,7 @@
 ; postgres/optimized/scan.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000181(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %1

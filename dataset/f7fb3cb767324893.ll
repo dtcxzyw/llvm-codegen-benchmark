@@ -20,20 +20,21 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/AArch64AsmParser.cpp.ll
+; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000030(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 86399
+  %2 = icmp samesign ugt i32 %1, 86399
   %3 = zext i1 %2 to i32
   %4 = select i1 %0, i32 %3, i32 -1
   ret i32 %4
 }
 
-; 39 occurrences:
+; 41 occurrences:
 ; abc/optimized/mioRead.c.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/arith_rewriter.cpp.ll
 ; cvc5/optimized/congruence_manager.cpp.ll
@@ -90,6 +91,17 @@ entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i32
   %4 = select i1 %0, i32 %3, i32 -1
+  ret i32 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/AArch64AsmParser.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 3
+  %3 = zext i1 %2 to i32
+  %4 = select i1 %0, i32 %3, i32 2
   ret i32 %4
 }
 

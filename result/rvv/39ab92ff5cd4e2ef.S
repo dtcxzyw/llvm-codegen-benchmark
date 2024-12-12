@@ -3,7 +3,7 @@ func0000000000000007:                   # @func0000000000000007
 	vzext.vf2	v14, v12
 	vfwcvt.f.xu.v	v16, v14
 	vsetvli	zero, zero, e32, m4, ta, ma
-	vmfne.vv	v0, v16, v8
+	vmfne.vv	v0, v8, v16
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e16, m2, ta, ma

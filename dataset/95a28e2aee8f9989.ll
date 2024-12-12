@@ -9,7 +9,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000086(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000106(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = shl i32 %1, %2

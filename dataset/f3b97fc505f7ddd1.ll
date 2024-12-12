@@ -16,15 +16,26 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
-; icu/optimized/umutablecptrie.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 44, i32 45
   %4 = select i1 %1, i32 81, i32 43
   %5 = icmp ult i32 %0, 3
+  %6 = select i1 %5, i32 %4, i32 %3
+  ret i32 %6
+}
+
+; 1 occurrences:
+; icu/optimized/umutablecptrie.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 17, i32 21
+  %4 = select i1 %1, i32 12, i32 15
+  %5 = icmp samesign ult i32 %0, 32783
   %6 = select i1 %5, i32 %4, i32 %3
   ret i32 %6
 }

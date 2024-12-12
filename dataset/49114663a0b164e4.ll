@@ -1,9 +1,7 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; libevent/optimized/evmap.c.ll
 ; linux/optimized/8250_pci.ll
-; linux/optimized/he.ll
-; linux/optimized/sky2.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/IfConversion.cpp.ll
 ; openusd/optimized/mvref_common.c.ll

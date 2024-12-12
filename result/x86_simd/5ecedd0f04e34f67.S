@@ -10,7 +10,7 @@ func000000000000003f:                   # @func000000000000003f
 	.long	100                             # 0x64
 func000000000000003c:                   # @func000000000000003c
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq

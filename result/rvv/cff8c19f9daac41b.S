@@ -15,7 +15,7 @@ func0000000000000004:                   # @func0000000000000004
 	vor.vx	v9, v9, a0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	lui	a0, 2
 	addi	a0, a0, 112
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -24,7 +24,7 @@ func0000000000000014:                   # @func0000000000000014
 	vor.vx	v9, v9, a0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	li	a0, -5
 	slli	a0, a0, 11
 	vsetivli	zero, 8, e32, m2, ta, ma

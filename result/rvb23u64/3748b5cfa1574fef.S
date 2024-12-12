@@ -39,12 +39,3 @@ func0000000000000030:                   # @func0000000000000030
 	addw	a0, a0, a1
 	andi	a0, a0, -128
 	ret
-func0000000000000013:                   # @func0000000000000013
-	sext.w	a1, a1
-	sltiu	a1, a1, 96
-	li	a2, -100
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 2000
-	zext.h	a0, a0
-	ret

@@ -1,18 +1,23 @@
 
-%"struct.folly::detail::SingleElementQueue.2577052" = type { %"union.std::aligned_storage<112, 16>::type.2576916", %"struct.folly::detail::TurnSequencer.2577053", [12 x i8] }
-%"union.std::aligned_storage<112, 16>::type.2576916" = type { [112 x i8] }
-%"struct.folly::detail::TurnSequencer.2577053" = type { %"struct.std::atomic.33.2576861" }
-%"struct.std::atomic.33.2576861" = type { %"struct.std::__atomic_base.34.2576862" }
-%"struct.std::__atomic_base.34.2576862" = type { i32 }
+%"struct.folly::detail::SingleElementQueue.2691228" = type { %"union.std::aligned_storage<112, 16>::type.2691092", %"struct.folly::detail::TurnSequencer.2691229", [12 x i8] }
+%"union.std::aligned_storage<112, 16>::type.2691092" = type { [112 x i8] }
+%"struct.folly::detail::TurnSequencer.2691229" = type { %"struct.std::atomic.33.2691037" }
+%"struct.std::atomic.33.2691037" = type { %"struct.std::__atomic_base.34.2691038" }
+%"struct.std::__atomic_base.34.2691038" = type { i32 }
+%"class.boost::json::value.2995760" = type { %union.anon.1.2995761 }
+%union.anon.1.2995761 = type { %"class.boost::json::array.2995762" }
+%"class.boost::json::array.2995762" = type { %"class.boost::json::storage_ptr.2995763", i8, ptr }
+%"class.boost::json::storage_ptr.2995763" = type { i64 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
+; zed-rs/optimized/2coqqf198wkzirvxqog0epalb.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 272
-  %4 = getelementptr %"struct.folly::detail::SingleElementQueue.2577052", ptr %3, i64 %2
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr %"struct.folly::detail::SingleElementQueue.2691228", ptr %3, i64 %2
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -21,11 +26,11 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000003c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 168
   %4 = getelementptr { i64, i64, i64, i64 }, ptr %3, i64 %2
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -35,11 +40,22 @@ entry:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000007e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 258
   %4 = getelementptr i16, ptr %3, i64 %2
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %1, i64 32
+  %4 = getelementptr %"class.boost::json::value.2995760", ptr %3, i64 %2
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -50,29 +66,29 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 33
   %4 = getelementptr i8, ptr %3, i64 %2
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; grpc/optimized/parser.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 33
   %4 = getelementptr i8, ptr %3, i64 %2
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001cc(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 -1
   %4 = getelementptr i8, ptr %3, i64 %2
-  %5 = icmp ne ptr %4, %0
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 

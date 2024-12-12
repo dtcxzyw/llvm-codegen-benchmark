@@ -1,5 +1,13 @@
 
-; 13 occurrences:
+; 21 occurrences:
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; git/optimized/sequencer.ll
 ; gromacs/optimized/pbc.cpp.ll
 ; gromacs/optimized/runner.cpp.ll

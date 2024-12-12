@@ -5,7 +5,7 @@
 ; minetest/optimized/content_mapblock.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 24
@@ -19,7 +19,7 @@ entry:
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp eq i64 %2, -96
@@ -30,7 +30,7 @@ entry:
 ; ceres/optimized/cuda_block_structure.cc.ll
 ; opencv/optimized/multicalib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 40

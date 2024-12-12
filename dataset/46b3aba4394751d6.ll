@@ -1,15 +1,14 @@
 
-%"class.clang::NestedNameSpecifierLoc.2989233" = type { ptr, ptr }
-%class.symbol.3428956 = type { ptr }
+%"class.clang::NestedNameSpecifierLoc.3182702" = type { ptr, ptr }
+%class.symbol.3613505 = type { ptr }
 
-; 22 occurrences:
+; 23 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/match.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -20,19 +19,21 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
+; lvgl/optimized/lv_draw_buf.ll
+; openjdk/optimized/buildOopMap.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; php/optimized/zend_ssa.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 26
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -78,13 +79,13 @@ entry:
 ; php/optimized/ir_cfg.ll
 ; redis/optimized/lvm.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
-  %7 = getelementptr nusw i64, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i64, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -102,30 +103,29 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
-; imgui/optimized/imgui_draw.cpp.ll
-; openjdk/optimized/buildOopMap.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 5
-  %4 = zext nneg i32 %3 to i64
-  %5 = zext i32 %1 to i64
-  %6 = getelementptr i32, ptr %0, i64 %5
-  %7 = getelementptr nusw i32, ptr %6, i64 %4
-  ret ptr %7
-}
-
 ; 1 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 20
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw %"class.clang::NestedNameSpecifierLoc.2989233", ptr %0, i64 %5
-  %7 = getelementptr nusw ptr, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182702", ptr %0, i64 %5
+  %7 = getelementptr nusw nuw ptr, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = zext i32 %1 to i64
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -189,12 +189,12 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw %class.symbol.3428956, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.symbol.3613505, ptr %0, i64 %5
   %7 = getelementptr ptr, ptr %6, i64 %4
   ret ptr %7
 }
@@ -203,13 +203,13 @@ entry:
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000005f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 3
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

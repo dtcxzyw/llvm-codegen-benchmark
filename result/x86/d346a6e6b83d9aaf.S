@@ -1,4 +1,4 @@
-func000000000000044c:                   # @func000000000000044c
+func000000000000108c:                   # @func000000000000108c
 	movl	%edi, %eax
 	subq	%rdx, %rsi
 	cmpq	%rax, %rsi
@@ -7,7 +7,7 @@ func000000000000044c:                   # @func000000000000044c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000041a:                   # @func000000000000041a
+func000000000000102a:                   # @func000000000000102a
 	movl	%edi, %eax
 	subq	%rdx, %rsi
 	cmpq	%rax, %rsi
@@ -16,7 +16,7 @@ func000000000000041a:                   # @func000000000000041a
 	setg	%al
 	andb	%cl, %al
 	retq
-func000000000000044a:                   # @func000000000000044a
+func000000000000108a:                   # @func000000000000108a
 	movl	%edi, %eax
 	subq	%rdx, %rsi
 	cmpq	%rax, %rsi
@@ -25,7 +25,7 @@ func000000000000044a:                   # @func000000000000044a
 	setg	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	movl	%edi, %eax
 	subq	%rdx, %rsi
 	cmpq	%rax, %rsi

@@ -6,13 +6,13 @@
 ; openjdk/optimized/jidctred.ll
 ; openjdk/optimized/pngrtran.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 18
   %5 = and i32 %4, 1023
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -23,13 +23,13 @@ entry:
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = lshr i32 %3, 5
   %5 = and i32 %4, 2040
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -37,19 +37,18 @@ entry:
 ; libpng/optimized/pngrtran.c.ll
 ; openjdk/optimized/pngrtran.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000037(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 8
   %5 = and i32 %4, 255
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; php/optimized/zend_alloc.ll
-; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000034(ptr %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,5 +1,11 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	leaq	(%rsi,%rdx,2), %rcx
+	xorl	%eax, %eax
+	testb	%dil, %dil
+	cmovneq	%rcx, %rax
+	retq
+func0000000000000041:                   # @func0000000000000041
+	leaq	(%rsi,%rdx), %rcx
 	xorl	%eax, %eax
 	testb	%dil, %dil
 	cmovneq	%rcx, %rax

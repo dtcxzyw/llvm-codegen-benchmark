@@ -23,12 +23,12 @@ func000000000000000a:                   # @func000000000000000a
 	setbe	%al
 	orb	%dil, %al
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	cmpl	%edx, %esi
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	cmpl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
@@ -48,12 +48,12 @@ func000000000000000c:                   # @func000000000000000c
 	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	cmpl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	cmpl	%edx, %esi
 	setne	%al
 	orb	%dil, %al
@@ -63,22 +63,22 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	cmpl	%edx, %esi
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	cmpl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	cmpl	%edx, %esi
 	setb	%al
 	orb	%dil, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	cmpl	%edx, %esi
 	setl	%al
 	orb	%dil, %al

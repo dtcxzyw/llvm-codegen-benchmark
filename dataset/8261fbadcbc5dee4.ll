@@ -1,18 +1,17 @@
 
-%"class.llvm::Use.2995275" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3188737" = type { ptr, ptr, ptr, ptr }
 
-; 5 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; lief/optimized/pem.c.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, ptr %1, i1 %2) #0 {
+define i64 @func000000000000000f(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -21,11 +20,23 @@ entry:
 ; llvm/optimized/LoopInterchange.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i1 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw %"class.llvm::Use.2995275", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.llvm::Use.3188737", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %0
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, ptr %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

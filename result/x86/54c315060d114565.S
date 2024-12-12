@@ -4,29 +4,29 @@ func0000000000000020:                   # @func0000000000000020
 	cmpl	%edx, %esi
 	adcl	$0, %eax
 	retq
-func00000000000000a0:                   # @func00000000000000a0
+func0000000000000120:                   # @func0000000000000120
 	movl	%edi, %eax
 	shll	$3, %edx
 	cmpl	%edx, %esi
 	adcl	$0, %eax
 	retq
-func00000000000000cb:                   # @func00000000000000cb
+func000000000000014b:                   # @func000000000000014b
 	movl	%edi, %eax
 	shll	$2, %edx
 	cmpl	%edx, %esi
 	sbbl	$-1, %eax
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	addl	%edx, %edx
 	xorl	%eax, %eax
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	sete	%al
 	addl	%edi, %eax
 	retq
 func0000000000000060:                   # @func0000000000000060
 	shll	$5, %edx
 	xorl	%eax, %eax
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	setne	%al
 	addl	%edi, %eax
 	retq

@@ -13,9 +13,8 @@ entry:
   ret i1 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/status_internal.cc.ll
-; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/boolean_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_arrow.cpp.ll
@@ -38,7 +37,7 @@ entry:
 ; git/optimized/ewah_bitmap.ll
 ; linux/optimized/rsrc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = sub nsw i64 %0, %2
@@ -60,11 +59,11 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = sub nuw nsw i64 %0, %2
-  %4 = icmp ult i64 %3, 6
+  %4 = icmp samesign ult i64 %3, 6
   ret i1 %4
 }
 
@@ -72,7 +71,7 @@ entry:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 47
   %3 = sub nuw i64 %0, %2
@@ -83,11 +82,11 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/4vksfexudgt1qids.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = sub nuw nsw i64 %0, %2
-  %4 = icmp ult i64 %3, 2
+  %4 = icmp samesign ult i64 %3, 2
   ret i1 %4
 }
 
@@ -120,7 +119,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -132,7 +131,7 @@ entry:
 ; abseil-cpp/optimized/node_hash_set_test.cc.ll
 ; grpc/optimized/work_serializer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = sub nsw i64 %0, %2
@@ -143,10 +142,10 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -154,7 +153,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = sub nsw i64 %0, %2
@@ -178,7 +177,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = sub nuw i64 %0, %2
@@ -191,7 +190,7 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/arena.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = sub nsw i64 %0, %2
@@ -202,11 +201,22 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = sub nsw i64 %0, %2
   %4 = icmp slt i64 %3, -307445734561825859
+  ret i1 %4
+}
+
+; 1 occurrences:
+; cpython/optimized/obmalloc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 25
+  %3 = sub nsw i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 63
   ret i1 %4
 }
 

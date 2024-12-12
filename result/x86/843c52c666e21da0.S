@@ -9,9 +9,8 @@ func0000000000000010:                   # @func0000000000000010
 	andb	%dil, %al
 	retq
 func0000000000000014:                   # @func0000000000000014
-	movabsq	$-9223372036854775807, %rax     # imm = 0x8000000000000001
-	cmpq	%rax, %rsi
-	setg	%al
+	testq	%rsi, %rsi
+	setns	%al
 	andb	%dil, %al
 	retq
 func0000000000000018:                   # @func0000000000000018

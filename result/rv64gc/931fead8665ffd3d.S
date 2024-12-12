@@ -1,13 +1,4 @@
-func0000000000000315:                   # @func0000000000000315
-	sext.w	a0, a0
-	sext.w	a2, a2
-	addiw	a1, a1, 8
-	sltu	a1, a2, a1
-	not	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
-	ret
-func0000000000000116:                   # @func0000000000000116
+func0000000000000426:                   # @func0000000000000426
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addiw	a1, a1, 25
@@ -16,7 +7,7 @@ func0000000000000116:                   # @func0000000000000116
 	slti	a0, a0, 2024
 	and	a0, a0, a1
 	ret
-func000000000000011a:                   # @func000000000000011a
+func000000000000042a:                   # @func000000000000042a
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addiw	a1, a1, 39
@@ -26,7 +17,7 @@ func000000000000011a:                   # @func000000000000011a
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000311:                   # @func0000000000000311
+func0000000000000c21:                   # @func0000000000000c21
 	addi	a1, a1, 1
 	xor	a1, a1, a2
 	xori	a0, a0, 6

@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/alphafinder.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000052(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000092(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw i64 %1, 1
@@ -32,12 +32,12 @@ entry:
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000d6(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = icmp sge i64 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -46,24 +46,24 @@ entry:
 ; opencv/optimized/termination.cpp.ll
 ; slurm/optimized/eval_nodes_block.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000056(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1
   %5 = icmp sge i64 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -15
   %5 = icmp eq i64 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -71,7 +71,7 @@ entry:
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -4
@@ -88,19 +88,19 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add i64 %1, 1
   %5 = icmp eq i64 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; icu/optimized/ucol.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = icmp slt i64 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -112,7 +112,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add i64 %1, 88
   %5 = icmp ugt i64 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

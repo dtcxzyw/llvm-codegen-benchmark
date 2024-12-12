@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; ceres/optimized/cgnr_solver.cc.ll
@@ -11,7 +11,6 @@
 ; gromacs/optimized/energydrifttracker.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/statistics.cpp.ll
-; gromacs/optimized/walltime_accounting.cpp.ll
 ; libwebp/optimized/quant_levels_utils.c.ll
 ; opencv/optimized/bgfg_gmg.cpp.ll
 ; opencv/optimized/cornerDetector_Demo.cpp.ll

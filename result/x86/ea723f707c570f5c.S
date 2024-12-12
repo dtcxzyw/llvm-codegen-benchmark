@@ -16,7 +16,7 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func0000000000000004:                   # @func0000000000000004
 	subq	%rsi, %rdi
-	sarq	$3, %rdi
-	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
+	sarq	$2, %rdi
+	movabsq	$9223372036854775744, %rax      # imm = 0x7FFFFFFFFFFFFFC0
 	addq	%rdi, %rax
 	retq

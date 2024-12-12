@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; freetype/optimized/sdf.c.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dp_hdcp.ll
 ; linux/optimized/intel_dpll.ll
 ; lodepng/optimized/lodepng.cpp.ll

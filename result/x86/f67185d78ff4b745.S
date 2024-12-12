@@ -1,14 +1,14 @@
 func0000000000000006:                   # @func0000000000000006
 	sarq	%rsi
 	xorl	%ecx, %ecx
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	movl	$20, %eax
-	cmovleq	%rcx, %rax
+	cmovgeq	%rcx, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	sarq	%rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	setl	%al
+	cmpq	%rsi, %rdi
+	setg	%al
 	leaq	-1(,%rax,4), %rax
 	retq

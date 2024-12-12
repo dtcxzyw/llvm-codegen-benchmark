@@ -1,5 +1,5 @@
 
-; 166 occurrences:
+; 168 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/bmcBmcS.c.ll
@@ -10,6 +10,8 @@
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; ceres/optimized/linear_least_squares_problems.cc.ll
@@ -206,10 +208,10 @@ entry:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcExact.c.ll
-; abc/optimized/satUtil.c.ll
 ; abc/optimized/solver.c.ll
 ; abc/optimized/xsatSolver.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/area.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; hermes/optimized/GCBase.cpp.ll

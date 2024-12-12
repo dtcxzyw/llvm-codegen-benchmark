@@ -1,7 +1,6 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; linux/optimized/i915_hwmon.ll
 ; openspiel/optimized/ce.cc.ll
@@ -15,7 +14,7 @@
 define i128 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = zext i64 %3 to i128
   ret i128 %4
 }

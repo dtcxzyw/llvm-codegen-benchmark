@@ -19,7 +19,7 @@ entry:
   ret double %2
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
@@ -45,7 +45,6 @@ entry:
 ; meshlab/optimized/meshio.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/fourier_descriptors.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll

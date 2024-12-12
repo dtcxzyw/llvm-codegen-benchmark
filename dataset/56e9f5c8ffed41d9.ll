@@ -1,5 +1,5 @@
 
-; 147 occurrences:
+; 151 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/uri.cc.ll
@@ -71,6 +71,7 @@
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -147,23 +148,27 @@
 ; wireshark/optimized/packet-iso15765.c.ll
 ; wireshark/optimized/packet-nordic_ble.c.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 
-; 458 occurrences:
+; 459 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/STEPFileEncoding.cpp.ll
+; boost/optimized/ipv6_address.ll
+; boost/optimized/topology.ll
 ; brotli/optimized/transform.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/XzIn.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/ishield.c.ll
 ; clamav/optimized/rawread.cpp.ll
@@ -333,6 +338,7 @@ entry:
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; logos-rs/optimized/5f38ll801i7djw99.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
@@ -397,7 +403,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -497,7 +502,6 @@ entry:
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
 ; qemu/optimized/hw_usb_u2f-passthru.c.ll
-; qemu/optimized/i2c.c.ll
 ; qemu/optimized/scsi_utils.c.ll
 ; qemu/optimized/ui_console-vc.c.ll
 ; qemu/optimized/ui_vnc.c.ll
@@ -539,9 +543,7 @@ entry:
 ; wireshark/optimized/camins.c.ll
 ; wireshark/optimized/charsets.c.ll
 ; wireshark/optimized/commview.c.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/dot11decrypt.c.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/eyesdn.c.ll
@@ -556,7 +558,6 @@ entry:
 ; wireshark/optimized/packet-bluetooth.c.ll
 ; wireshark/optimized/packet-btlmp.c.ll
 ; wireshark/optimized/packet-btmesh.c.ll
-; wireshark/optimized/packet-chdlc.c.ll
 ; wireshark/optimized/packet-cops.c.ll
 ; wireshark/optimized/packet-dect.c.ll
 ; wireshark/optimized/packet-dhcp.c.ll
@@ -598,7 +599,6 @@ entry:
 ; wireshark/optimized/pcap-common.c.ll
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/peektagged.c.ll
-; wireshark/optimized/radcom.c.ll
 ; wireshark/optimized/snoop.c.ll
 ; wireshark/optimized/stanag4607.c.ll
 ; wireshark/optimized/tvbuff.c.ll
@@ -612,13 +612,18 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 
@@ -661,7 +666,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -687,7 +692,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 

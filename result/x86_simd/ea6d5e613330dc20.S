@@ -1,4 +1,4 @@
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$63, %ymm1, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -11,7 +11,7 @@ func000000000000009a:                   # @func000000000000009a
 	retq
 .LCPI1_0:
 	.quad	32                              # 0x20
-func0000000000000094:                   # @func0000000000000094
+func0000000000000134:                   # @func0000000000000134
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$63, %ymm1, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -21,7 +21,7 @@ func0000000000000094:                   # @func0000000000000094
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$63, %ymm1, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -34,7 +34,7 @@ func000000000000001a:                   # @func000000000000001a
 	retq
 .LCPI3_0:
 	.quad	16                              # 0x10
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$63, %ymm1, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -87,12 +87,12 @@ func0000000000000006:                   # @func0000000000000006
 	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovq2m	%ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
@@ -127,7 +127,7 @@ func0000000000000016:                   # @func0000000000000016
 	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovq2m	%ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

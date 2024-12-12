@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 31 occurrences:
 ; assimp/optimized/ProcessHelper.cpp.ll
 ; box2d/optimized/b2_chain_shape.cpp.ll
 ; box2d/optimized/b2_edge_shape.cpp.ll
@@ -22,6 +22,9 @@
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; opencv/optimized/dynafu_tsdf.cpp.ll
+; opencv/optimized/short_term_imageless_tracker.cpp.ll
+; opencv/optimized/tracker.cpp.ll
+; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
@@ -32,7 +35,7 @@
 define float @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   %5 = select i1 %4, float %0, float %3
   ret float %5
 }
@@ -44,7 +47,7 @@ entry:
 define float @func000000000000000a(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp oge float %3, %0
+  %4 = fcmp ole float %0, %3
   %5 = select i1 %4, float %0, float %3
   ret float %5
 }
@@ -60,12 +63,12 @@ entry:
 define float @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp ole float %3, %0
+  %4 = fcmp oge float %0, %3
   %5 = select i1 %4, float %0, float %3
   ret float %5
 }
 
-; 21 occurrences:
+; 25 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifTime.c.ll
@@ -79,7 +82,6 @@ entry:
 ; box2d/optimized/b2_polygon_shape.cpp.ll
 ; bullet3/optimized/btPolarDecomposition.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; gromacs/optimized/slanst.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
@@ -87,11 +89,16 @@ entry:
 ; gromacs/optimized/sstein.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; raylib/optimized/rcore.c.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   %5 = select i1 %4, float %0, float %3
   ret float %5
 }

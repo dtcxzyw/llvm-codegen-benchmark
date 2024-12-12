@@ -7,7 +7,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %1, 2147483647
   %5 = icmp uge i32 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %1, -4
   %5 = icmp ugt i32 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

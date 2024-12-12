@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; clamav/optimized/hashtab.c.ll
 ; hdf5/optimized/H5Fquery.c.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/blk-map.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/drm_client_modeset.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/intel_gt_irq.ll
 ; linux/optimized/intel_hotplug.ll
 ; linux/optimized/sg.ll
@@ -34,12 +33,12 @@
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 
-; 115 occurrences:
+; 111 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; clamav/optimized/hashtab.c.ll
 ; cmake/optimized/nghttp2_map.c.ll
@@ -56,7 +55,6 @@ entry:
 ; linux/optimized/blk-map.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/blk-mq-debugfs.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/client.ll
 ; linux/optimized/core.ll
@@ -83,11 +81,9 @@ entry:
 ; linux/optimized/intel_crtc_state_dump.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_gt_irq.ll
 ; linux/optimized/intel_hotplug.ll
 ; linux/optimized/intel_memory_region.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/iov_iter.ll
@@ -107,7 +103,6 @@ entry:
 ; linux/optimized/setup-res.ll
 ; linux/optimized/skcipher.ll
 ; linux/optimized/swiotlb.ll
-; linux/optimized/sysfs_engines.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/xhci-trace.ll
 ; llvm/optimized/ArchitectureSet.cpp.ll
@@ -159,7 +154,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -211,10 +206,10 @@ entry:
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; wireshark/optimized/packet-socketcan.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -222,10 +217,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/io_apic.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }

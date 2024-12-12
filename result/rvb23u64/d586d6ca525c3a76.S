@@ -1,9 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
-	li	a1, 1461
-	mul	a0, a0, a1
-	lui	a1, 1712
-	addi	a1, a1, 448
+	lui	a1, 943431
+	sh2add	a0, a0, a0
+	addi	a1, a1, -1180
 	addw	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
@@ -70,6 +69,13 @@ func000000000000003d:                   # @func000000000000003d
 	slli	a0, a0, 1
 	addiw	a0, a0, -480
 	ret
+func0000000000000030:                   # @func0000000000000030
+	add	a0, a0, a1
+	lui	a1, 1
+	addi	a1, a1, -496
+	mul	a0, a0, a1
+	addw	a0, a0, a1
+	ret
 func0000000000000013:                   # @func0000000000000013
 	add	a0, a0, a1
 	li	a1, -137
@@ -82,10 +88,4 @@ func000000000000000d:                   # @func000000000000000d
 	sh2add	a0, a0, a0
 	slli	a0, a0, 2
 	addiw	a0, a0, -1900
-	ret
-func0000000000000030:                   # @func0000000000000030
-	add	a0, a0, a1
-	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, 15
 	ret

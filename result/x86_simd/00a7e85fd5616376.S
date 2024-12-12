@@ -22,7 +22,7 @@ func0000000000000008:                   # @func0000000000000008
 	.long	4                               # 0x4
 .LCPI2_1:
 	.quad	9                               # 0x9
-func000000000000001a:                   # @func000000000000001a
+func000000000000003a:                   # @func000000000000003a
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2   # xmm2 = [4,4,4,4]
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero

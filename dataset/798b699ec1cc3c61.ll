@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 37 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; cmake/optimized/nghttp2_stream.c.ll
@@ -8,12 +8,10 @@
 ; csmith/optimized/DefaultRndNumGenerator.cpp.ll
 ; cvc5/optimized/bv_inverter.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; icu/optimized/cstring.ll
 ; libquic/optimized/e_ssl3.c.ll
 ; libquic/optimized/e_tls.c.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/dm-stripe.ll
 ; linux/optimized/dm.ll
 ; linux/optimized/ialloc.ll
@@ -48,9 +46,8 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/blk-merge.ll
-; linux/optimized/blk-settings.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; wireshark/optimized/packet-rlc-nr.c.ll

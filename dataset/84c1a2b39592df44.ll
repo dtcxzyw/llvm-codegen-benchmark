@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/introspection_borders.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul nsw i64 %2, 3
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/DateUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul nsw i64 %2, 7
@@ -27,7 +27,7 @@ entry:
 ; postgres/optimized/predicate.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul nsw i64 %2, 10

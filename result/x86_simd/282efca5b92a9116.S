@@ -22,14 +22,6 @@ func0000000000000018:                   # @func0000000000000018
 	vmovdqa32	%ymm1, %ymm2 {%k1}
 	vpsubd	%ymm0, %ymm2, %ymm0
 	retq
-.LCPI3_0:
-	.long	1                               # 0x1
-func0000000000000020:                   # @func0000000000000020
-	vpbroadcastd	.LCPI3_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
-	vpcmpnleud	%ymm3, %ymm2, %k1
-	vmovdqa32	%ymm1, %ymm3 {%k1}
-	vpsubd	%ymm0, %ymm3, %ymm0
-	retq
 func0000000000000004:                   # @func0000000000000004
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
@@ -37,6 +29,16 @@ func0000000000000005:                   # @func0000000000000005
 	vptestnmd	%ymm2, %ymm2, %k1
 	vmovdqa32	%ymm1, %ymm1 {%k1} {z}
 	vpsubd	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI5_0:
+	.long	2                               # 0x2
+.LCPI5_1:
+	.long	10                              # 0xa
+func0000000000000020:                   # @func0000000000000020
+	vpcmpnleud	.LCPI5_0(%rip){1to8}, %ymm2, %k1
+	vpbroadcastd	.LCPI5_1(%rip), %ymm2   # ymm2 = [10,10,10,10,10,10,10,10]
+	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vpsubd	%ymm0, %ymm2, %ymm0
 	retq
 func0000000000000028:                   # @func0000000000000028
 	vpsrad	$31, %ymm2, %ymm2

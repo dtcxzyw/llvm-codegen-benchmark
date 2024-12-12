@@ -23,7 +23,8 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/to_chars.ll
 ; icu/optimized/collationdatareader.ll
 ; linux/optimized/tcp_output.ll
 ; postgres/optimized/nbtsplitloc.ll
@@ -49,12 +50,11 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; freetype/optimized/pcf.c.ll
 ; jq/optimized/decNumber.ll
-; libquic/optimized/ntt.c.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/rscalc.ll
 ; postgres/optimized/gindatapage.ll
@@ -92,7 +92,7 @@ define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -115,7 +115,7 @@ define i32 @func0000000000000011(i32 %0, i16 %1) #0 {
 entry:
   %2 = xor i16 %1, -1
   %3 = sext i16 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

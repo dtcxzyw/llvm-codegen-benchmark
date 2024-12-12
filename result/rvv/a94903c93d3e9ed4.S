@@ -23,7 +23,7 @@ func0000000000000005:                   # @func0000000000000005
 	li	a0, -64
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	li	a0, 128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0
@@ -33,7 +33,7 @@ func0000000000000011:                   # @func0000000000000011
 	li	a0, -64
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	li	a0, 40
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0

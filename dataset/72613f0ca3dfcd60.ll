@@ -35,12 +35,12 @@
 ; verilator/optimized/V3Undriven.cpp.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000098(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ne i64 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -78,10 +78,10 @@ entry:
 ; yosys/optimized/memory_bram.ll
 ; yosys/optimized/opt_muxtree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000082(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp eq i64 %4, 0
   %6 = or i1 %5, %0
   ret i1 %6
@@ -94,7 +94,7 @@ entry:
 ; quickjs/optimized/qjsc.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000062(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c2(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 1, %2
   %4 = and i64 %3, %1
@@ -108,12 +108,12 @@ entry:
 ; postgres/optimized/spgvalidate.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000d8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 1, %2
   %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

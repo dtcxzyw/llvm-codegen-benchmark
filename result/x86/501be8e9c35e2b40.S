@@ -1,39 +1,39 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	movslq	%edi, %rax
-	cmpq	%rsi, %rax
-	setl	%cl
+	cmpq	%rax, %rsi
+	setg	%cl
 	testl	%eax, %eax
 	setns	%al
 	andb	%cl, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	movslq	%edi, %rax
-	cmpq	%rsi, %rax
-	seta	%cl
-	testl	%eax, %eax
-	setns	%al
-	andb	%cl, %al
-	retq
-func000000000000008c:                   # @func000000000000008c
-	movslq	%edi, %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	setb	%cl
+	testl	%eax, %eax
+	setns	%al
+	andb	%cl, %al
+	retq
+func000000000000010c:                   # @func000000000000010c
+	movslq	%edi, %rax
+	cmpq	%rax, %rsi
+	seta	%cl
 	cmpl	$256, %eax                      # imm = 0x100
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	movslq	%edi, %rax
-	cmpq	%rsi, %rax
-	setl	%cl
+	cmpq	%rax, %rsi
+	setg	%cl
 	testl	%eax, %eax
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	movslq	%edi, %rax
-	cmpq	%rsi, %rax
-	setg	%cl
+	cmpq	%rax, %rsi
+	setl	%cl
 	cmpl	$-1, %eax
 	setne	%al
 	andb	%cl, %al

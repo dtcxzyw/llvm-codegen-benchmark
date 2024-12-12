@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	4                               # 0x4
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vporq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
@@ -22,7 +22,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.quad	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vporq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2

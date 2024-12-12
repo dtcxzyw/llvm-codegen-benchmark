@@ -50,62 +50,72 @@ func0000000000000007:                   # @func0000000000000007
 	vzeroupper
 	retq
 .LCPI3_0:
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
 .LCPI3_1:
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-func0000000000000005:                   # @func0000000000000005
-	vpmovdw	%ymm1, %xmm1
-	vpternlogd	$248, .LCPI3_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
-	vzeroupper
-	retq
-.LCPI4_0:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-.LCPI4_1:
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
 func0000000000000006:                   # @func0000000000000006
 	vpmovdw	%ymm1, %xmm1
+	vpternlogd	$248, .LCPI3_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
+	vzeroupper
+	retq
+.LCPI4_0:
+	.short	72                              # 0x48
+	.short	72                              # 0x48
+	.short	72                              # 0x48
+	.short	72                              # 0x48
+	.short	72                              # 0x48
+	.short	72                              # 0x48
+	.short	72                              # 0x48
+	.short	72                              # 0x48
+.LCPI4_1:
+	.short	72                              # 0x48
+	.short	72                              # 0x48
+func0000000000000000:                   # @func0000000000000000
+	vpmovdw	%ymm1, %xmm1
 	vpternlogd	$248, .LCPI4_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vzeroupper
 	retq
 .LCPI5_0:
-	.short	72                              # 0x48
-	.short	72                              # 0x48
-	.short	72                              # 0x48
-	.short	72                              # 0x48
-	.short	72                              # 0x48
-	.short	72                              # 0x48
-	.short	72                              # 0x48
-	.short	72                              # 0x48
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
 .LCPI5_1:
-	.short	72                              # 0x48
-	.short	72                              # 0x48
-func0000000000000000:                   # @func0000000000000000
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+func0000000000000005:                   # @func0000000000000005
 	vpmovdw	%ymm1, %xmm1
 	vpternlogd	$248, .LCPI5_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vzeroupper

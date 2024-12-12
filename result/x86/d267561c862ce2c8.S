@@ -1,4 +1,4 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000070:                   # @func0000000000000070
 	movl	%esi, %eax
 	movabsq	$-2147483649, %rcx              # imm = 0xFFFFFFFF7FFFFFFF
 	addq	%rax, %rcx
@@ -6,8 +6,20 @@ func0000000000000030:                   # @func0000000000000030
 	setb	%al
 	orb	%dil, %al
 	retq
-func00000000000000b0:                   # @func00000000000000b0
+func0000000000000150:                   # @func0000000000000150
 	cmpl	$2, %esi
 	setb	%al
+	orb	%dil, %al
+	retq
+func0000000000000170:                   # @func0000000000000170
+	movl	%esi, %eax
+	addq	$-3, %rax
+	cmpq	$-2, %rax
+	setb	%al
+	orb	%dil, %al
+	retq
+func0000000000000050:                   # @func0000000000000050
+	testl	%esi, %esi
+	sete	%al
 	orb	%dil, %al
 	retq

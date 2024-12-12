@@ -18,7 +18,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = icmp sgt i32 %2, 0
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = sub nsw i32 0, %2

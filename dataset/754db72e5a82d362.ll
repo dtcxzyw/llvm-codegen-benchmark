@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; linux/optimized/intel_tv.ll
@@ -9,6 +9,7 @@
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/4cdqbvjes2p52ply.ll
 ; wireshark/optimized/packet-gsm_osmux.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -20,7 +21,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 27 occurrences:
+; 29 occurrences:
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddGenCof.c.ll
 ; abc/optimized/msatRead.c.ll
@@ -43,6 +44,8 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_math.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
@@ -69,13 +72,15 @@ entry:
   ret i32 %3
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; draco/optimized/attribute_octahedron_transform.cc.ll
 ; flac/optimized/fixed.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_gridnav.ll
+; lvgl/optimized/lv_slider.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
 ; opencv/optimized/motionSaliencyBinWangApr2014.cpp.ll

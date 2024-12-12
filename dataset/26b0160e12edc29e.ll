@@ -50,7 +50,8 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/ipv6_address.ll
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/netmon.c.ll

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; imgui/optimized/imgui_demo.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
@@ -10,6 +10,7 @@
 ; openjdk/optimized/jfrMemorySizer.ll
 ; openjdk/optimized/metaspaceDCmd.ll
 ; postgres/optimized/nodeSort.ll
+; postgres/optimized/rangetypes_gist.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/firrtl.ll

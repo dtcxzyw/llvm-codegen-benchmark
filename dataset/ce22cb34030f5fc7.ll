@@ -1,48 +1,5 @@
 
-; 2 occurrences:
-; gromacs/optimized/gmx_densorder.cpp.ll
-; ruby/optimized/strftime.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 2
-  %3 = select i1 %0, i32 11, i32 %2
-  ret i32 %3
-}
-
-; 24 occurrences:
-; arrow/optimized/fast-dtoa.cc.ll
-; arrow/optimized/fixed-dtoa.cc.ll
-; assimp/optimized/glTF2Exporter.cpp.ll
-; assimp/optimized/glTFExporter.cpp.ll
-; double_conversion/optimized/fast-dtoa.cc.ll
-; double_conversion/optimized/fixed-dtoa.cc.ll
-; fmt/optimized/format-impl-test.cc.ll
-; icu/optimized/double-conversion-fast-dtoa.ll
-; icu/optimized/regexcmp.ll
-; icu/optimized/ucnvscsu.ll
-; linux/optimized/ah6.ll
-; luau/optimized/lnumprint.cpp.ll
-; minetest/optimized/CColorConverter.cpp.ll
-; opencv/optimized/colormap.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
-; openusd/optimized/fast-dtoa.cc.ll
-; openusd/optimized/fixed-dtoa.cc.ll
-; openusd/optimized/quadRefinement.cpp.ll
-; pbrt-v4/optimized/samples.cpp.ll
-; php/optimized/dtoa.ll
-; ruby/optimized/strftime.ll
-; slurm/optimized/cbuf.ll
-; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_hexwave.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
-entry:
-  %2 = select i1 %0, i32 6, i32 %1
-  ret i32 %2
-}
-
-; 251 occurrences:
+; 250 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -51,6 +8,7 @@ entry:
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/nlp_builder.cpp.ll
@@ -172,8 +130,6 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -302,8 +258,38 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; opencv/optimized/slice_layer.cpp.ll
+; 22 occurrences:
+; arrow/optimized/fast-dtoa.cc.ll
+; arrow/optimized/fixed-dtoa.cc.ll
+; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; double_conversion/optimized/fast-dtoa.cc.ll
+; double_conversion/optimized/fixed-dtoa.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
+; icu/optimized/double-conversion-fast-dtoa.ll
+; icu/optimized/regexcmp.ll
+; icu/optimized/ucnvscsu.ll
+; linux/optimized/ah6.ll
+; luau/optimized/lnumprint.cpp.ll
+; minetest/optimized/CColorConverter.cpp.ll
+; opencv/optimized/colormap.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
+; openusd/optimized/fast-dtoa.cc.ll
+; openusd/optimized/fixed-dtoa.cc.ll
+; openusd/optimized/quadRefinement.cpp.ll
+; pbrt-v4/optimized/samples.cpp.ll
+; php/optimized/dtoa.ll
+; slurm/optimized/cbuf.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -2
+  %3 = select i1 %0, i32 6, i32 %2
+  ret i32 %3
+}
+
+; 1 occurrences:
 ; qemu/optimized/hw_scsi_mptconfig.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i1 %0, i32 %1) #0 {
@@ -337,22 +323,22 @@ entry:
 }
 
 ; 1 occurrences:
+; gromacs/optimized/gmx_densorder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 2
+  %3 = select i1 %0, i32 2, i32 %2
+  ret i32 %3
+}
+
+; 1 occurrences:
 ; wireshark/optimized/packet-iso14443.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = select i1 %0, i32 3, i32 %2
-  ret i32 %3
-}
-
-; 1 occurrences:
-; linux/optimized/nfs4trace.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i1 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %1, 36
-  %3 = select i1 %0, i32 36, i32 %2
   ret i32 %3
 }
 

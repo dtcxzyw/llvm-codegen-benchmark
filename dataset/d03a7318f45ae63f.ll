@@ -1,6 +1,8 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; git/optimized/xmerge.ll
 ; linux/optimized/page-writeback.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -10,11 +12,12 @@ define i64 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 3
   %4 = select i1 %3, i64 -1, i64 %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/area.ll
 ; graphviz/optimized/shapes.c.ll
 ; jq/optimized/regexec.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -30,13 +33,14 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
   %4 = select i1 %3, i64 1, i64 %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 40 occurrences:
+; 43 occurrences:
 ; assimp/optimized/FBXExporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/area.ll
 ; clamav/optimized/js-norm.c.ll
 ; clamav/optimized/rawread.cpp.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -73,6 +77,8 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/listpack.ll
 ; redis/optimized/rax.ll
+; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
@@ -80,7 +86,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -91,7 +97,7 @@ define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -113,41 +119,40 @@ define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
 ; 12 occurrences:
-; cpython/optimized/unicodeobject.ll
-; eastl/optimized/EAString.cpp.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
 ; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
-; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; typst-rs/optimized/481g0nj22rl2z9g.ll
 ; typst-rs/optimized/4khbogid70pr8yfn.ll
-; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000050(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 2048
+  %3 = icmp samesign ult i32 %2, 2048
   %4 = select i1 %3, i64 -2, i64 %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 4 occurrences:
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; 3 occurrences:
 ; linux/optimized/aspm.ll
 ; rust-analyzer-rs/optimized/1gmgjb2cqrqdy4oz.ll
 ; rust-analyzer-rs/optimized/3lcvg5e4mhakwunj.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000053(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 2048
+  %3 = icmp samesign ult i32 %2, 2048
   %4 = select i1 %3, i64 2, i64 %1
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
@@ -161,6 +166,20 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i64 0, i64 %1
   %5 = add nuw i64 %4, %0
+  ret i64 %5
+}
+
+; 4 occurrences:
+; cpython/optimized/unicodeobject.ll
+; eastl/optimized/EAString.cpp.ll
+; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 5
+  %4 = select i1 %3, i64 4, i64 %1
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -187,9 +206,9 @@ entry:
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000012(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000052(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 15
+  %3 = icmp samesign ult i32 %2, 15
   %4 = select i1 %3, i64 4095, i64 %1
   %5 = add nuw i64 %4, %0
   ret i64 %5
@@ -215,6 +234,17 @@ entry:
   %3 = select i1 %.not, i64 %1, i64 16
   %4 = add i64 %3, %0
   ret i64 %4
+}
+
+; 1 occurrences:
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000013(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 524288
+  %4 = select i1 %3, i64 12, i64 %1
+  %5 = add nuw nsw i64 %4, %0
+  ret i64 %5
 }
 
 ; 1 occurrences:

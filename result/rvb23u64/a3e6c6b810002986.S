@@ -7,6 +7,14 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
 	addi	a0, a0, 128
 	ret
+func0000000000000029:                   # @func0000000000000029
+	zext.h	a1, a1
+	sltiu	a1, a1, 256
+	xori	a1, a1, 1
+	slli	a1, a1, 8
+	andi	a0, a0, 1
+	or	a0, a0, a1
+	ret
 func0000000000000002:                   # @func0000000000000002
 	zext.h	a1, a1
 	li	a2, 512

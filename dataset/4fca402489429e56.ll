@@ -18,7 +18,7 @@ entry:
   ret i32 %3
 }
 
-; 92 occurrences:
+; 90 occurrences:
 ; lief/optimized/File.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -41,8 +41,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -178,6 +176,19 @@ entry:
   ret i32 %3
 }
 
+; 3 occurrences:
+; linux/optimized/mlme.ll
+; lvgl/optimized/lv_freetype.ll
+; nuttx/optimized/lib_b16sin.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 6
+  %2 = trunc i64 %1 to i32
+  %3 = sub i32 0, %2
+  ret i32 %3
+}
+
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
@@ -186,18 +197,6 @@ entry:
   %1 = lshr i64 %0, 3
   %2 = trunc i64 %1 to i32
   %3 = sub nuw nsw i32 8, %2
-  ret i32 %3
-}
-
-; 2 occurrences:
-; linux/optimized/mlme.ll
-; nuttx/optimized/lib_b16sin.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i64 %0) #0 {
-entry:
-  %1 = lshr i64 %0, 4
-  %2 = trunc i64 %1 to i32
-  %3 = sub i32 0, %2
   ret i32 %3
 }
 

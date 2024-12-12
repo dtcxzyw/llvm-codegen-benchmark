@@ -11,6 +11,12 @@ func00000000000000f8:                   # @func00000000000000f8
 	imulq	%rax, %rcx
 	leaq	(%rdi,%rcx,4), %rax
 	retq
+func00000000000000bc:                   # @func00000000000000bc
+	movl	%edx, %eax
+	movl	%esi, %ecx
+	imulq	%rax, %rcx
+	leaq	(%rdi,%rcx,8), %rax
+	retq
 func00000000000000fa:                   # @func00000000000000fa
 	movl	%edx, %ecx
 	movl	%esi, %eax
@@ -24,4 +30,10 @@ func0000000000000030:                   # @func0000000000000030
 	imulq	%rcx, %rax
 	shlq	$7, %rax
 	addq	%rdi, %rax
+	retq
+func00000000000000fc:                   # @func00000000000000fc
+	movl	%edx, %eax
+	movl	%esi, %ecx
+	imulq	%rax, %rcx
+	leaq	(%rdi,%rcx,8), %rax
 	retq

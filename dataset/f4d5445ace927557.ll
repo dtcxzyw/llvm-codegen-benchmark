@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; linux/optimized/nfs3xdr.ll
+; 3 occurrences:
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
 ; openusd/optimized/drawModeAdapter.cpp.ll
 ; qemu/optimized/hw_char_cadence_uart.c.ll

@@ -7,7 +7,7 @@ func0000000000000006:                   # @func0000000000000006
 	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
 	knotw	%k0, %k1
 	vpsllvq	%ymm1, %ymm2, %ymm1 {%k1} {z}
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000005:                   # @func0000000000000005
 	vpslld	$31, %xmm1, %xmm1

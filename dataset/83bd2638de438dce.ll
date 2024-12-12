@@ -43,7 +43,7 @@
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i1 %1, i8 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 2
   %4 = select i1 %1, i1 %3, i1 false
@@ -52,13 +52,14 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; oiio/optimized/imagecache.cpp.ll
+; sqlite/optimized/sqlite3.ll
 ; verilator/optimized/V3EmitCModel.cpp.ll
 ; verilator/optimized/V3Trace.cpp.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 1
   %4 = select i1 %0, i1 %3, i1 false
@@ -73,7 +74,7 @@ entry:
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -85,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
@@ -97,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 2
   %4 = select i1 %1, i1 %3, i1 false
@@ -109,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/uts46.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i1 %1, i8 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = select i1 %1, i1 %3, i1 false

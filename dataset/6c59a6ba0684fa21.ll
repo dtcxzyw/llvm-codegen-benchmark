@@ -15,7 +15,7 @@ entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

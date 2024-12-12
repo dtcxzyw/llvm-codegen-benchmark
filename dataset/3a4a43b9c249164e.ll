@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -9, %0
   %4 = sub i64 %2, %1
@@ -32,7 +32,7 @@ entry:
 ; minetest/optimized/imagefilters.cpp.ll
 ; openjdk/optimized/debugInit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -53,7 +53,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -5, %0
   %4 = sub i64 %2, %1

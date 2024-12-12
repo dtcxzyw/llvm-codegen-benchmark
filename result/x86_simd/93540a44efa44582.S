@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000001822:                   # @func0000000000001822
+func0000000000006042:                   # @func0000000000006042
 	vpcmpneqb	.LCPI0_0(%rip), %xmm2, %k0
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpeqb	%xmm2, %xmm1, %k1
@@ -61,7 +61,7 @@ func0000000000001822:                   # @func0000000000001822
 	.zero	1
 .LCPI1_2:
 	.long	2                               # 0x2
-func0000000000000828:                   # @func0000000000000828
+func0000000000002048:                   # @func0000000000002048
 	vpcmpltub	.LCPI1_0(%rip), %xmm2, %k0
 	vpcmpeqb	.LCPI1_1(%rip), %xmm1, %k1
 	vpcmpltud	.LCPI1_2(%rip){1to8}, %ymm0, %k2

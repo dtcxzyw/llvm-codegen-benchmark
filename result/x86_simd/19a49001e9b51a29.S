@@ -32,7 +32,7 @@
 	.short	1                               # 0x1
 	.short	1                               # 0x1
 	.short	1                               # 0x1
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpcmpeqw	.LCPI0_0(%rip), %ymm0, %k0
 	vpcmpeqw	.LCPI0_1(%rip), %ymm0, %k1
 	korw	%k0, %k1, %k0
@@ -56,7 +56,7 @@ func0000000000000022:                   # @func0000000000000022
 	.short	127                             # 0x7f
 	.short	127                             # 0x7f
 	.short	127                             # 0x7f
-func0000000000000142:                   # @func0000000000000142
+func0000000000000282:                   # @func0000000000000282
 	vpcmpgtw	.LCPI1_0(%rip), %ymm0, %k0
 	vptestnmw	%ymm0, %ymm0, %k1
 	korw	%k0, %k1, %k0
@@ -97,7 +97,7 @@ func0000000000000142:                   # @func0000000000000142
 	.short	32769                           # 0x8001
 	.short	32769                           # 0x8001
 	.short	32769                           # 0x8001
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpcmpeqw	.LCPI2_0(%rip), %ymm0, %k0
 	vpcmpltuw	.LCPI2_1(%rip), %ymm0, %k1
 	korw	%k0, %k1, %k0
@@ -138,7 +138,7 @@ func0000000000000028:                   # @func0000000000000028
 	.short	559                             # 0x22f
 	.short	559                             # 0x22f
 	.short	559                             # 0x22f
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	vpcmpnleuw	.LCPI3_0(%rip), %ymm0, %k0
 	vpcmpeqw	.LCPI3_1(%rip), %ymm0, %k1
 	korw	%k0, %k1, %k0
@@ -179,7 +179,7 @@ func0000000000000102:                   # @func0000000000000102
 	.short	45                              # 0x2d
 	.short	45                              # 0x2d
 	.short	45                              # 0x2d
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	vpcmpeqw	.LCPI4_0(%rip), %ymm0, %k0
 	vpcmpnleuw	.LCPI4_1(%rip), %ymm0, %k1
 	korw	%k0, %k1, %k0

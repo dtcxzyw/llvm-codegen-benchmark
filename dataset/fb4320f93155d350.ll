@@ -7,7 +7,7 @@
 ; php/optimized/output.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i1 true, i1 %0
@@ -31,7 +31,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 true, i1 %0
@@ -47,7 +47,7 @@ entry:
 ; wireshark/optimized/copy_from_profile_button.cpp.ll
 ; wireshark/optimized/profile_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i1 true, i1 %0
@@ -64,7 +64,7 @@ entry:
 ; openssl/optimized/openssl-bin-ca.ll
 ; wolfssl/optimized/server.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i1 true, i1 %0
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/awt_ImageRep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000101(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 256
   %4 = select i1 %3, i1 true, i1 %0
@@ -91,7 +91,7 @@ entry:
 ; git/optimized/read-tree.ll
 ; llvm/optimized/CodeGenTBAA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 true, i1 %0
@@ -103,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/explain.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000014c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 1
   %4 = select i1 %3, i1 true, i1 %0

@@ -1,58 +1,5 @@
 
-; 44 occurrences:
-; abc/optimized/abcIf.c.ll
-; clamav/optimized/Ppmd7Dec.c.ll
-; clamav/optimized/unpack.cpp.ll
-; cmake/optimized/archive_ppmd7.c.ll
-; cmake/optimized/archive_ppmd8.c.ll
-; eastl/optimized/TestBitVector.cpp.ll
-; freetype/optimized/sfnt.c.ll
-; freetype/optimized/truetype.c.ll
-; libpng/optimized/pngread.c.ll
-; libquic/optimized/a_bitstr.c.ll
-; libquic/optimized/random.c.ll
-; lief/optimized/ssl_msg.c.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/flow_dissector.ll
-; linux/optimized/hid-lg-g15.ll
-; linux/optimized/hid-lg4ff.ll
-; linux/optimized/hwregs.ll
-; linux/optimized/show_mem.ll
-; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
-; llvm/optimized/X86ISelDAGToDAG.cpp.ll
-; minetest/optimized/clientmap.cpp.ll
-; minetest/optimized/content_mapblock.cpp.ll
-; minetest/optimized/log.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; node/optimized/libnode.crypto_aes.ll
-; openjdk/optimized/pngread.ll
-; openjdk/optimized/socketTransport.ll
-; openssl/optimized/libcrypto-lib-a_bitstr.ll
-; openssl/optimized/libcrypto-lib-bn_rand.ll
-; openssl/optimized/libcrypto-shlib-a_bitstr.ll
-; openssl/optimized/libcrypto-shlib-bn_rand.ll
-; postgres/optimized/brin_minmax_multi.ll
-; postgres/optimized/heaptuple.ll
-; postgres/optimized/network.ll
-; qemu/optimized/hw_acpi_aml-build.c.ll
-; qemu/optimized/target_riscv_translate.c.ll
-; redis/optimized/hyperloglog.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
-; wireshark/optimized/addr_resolv.c.ll
-; wireshark/optimized/editcap.c.ll
-; wireshark/optimized/packet-diameter.c.ll
-; wireshark/optimized/packet-dnp.c.ll
-; wireshark/optimized/packet-ldp.c.ll
-; wireshark/optimized/packet-oer.c.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000c(i32 %0) #0 {
-entry:
-  %1 = shl nuw nsw i32 1, %0
-  %2 = trunc i32 %1 to i8
-  ret i8 %2
-}
-
-; 184 occurrences:
+; 178 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; arrow/optimized/bit_util.cc.ll
 ; clamav/optimized/regcomp.c.ll
@@ -72,7 +19,6 @@ entry:
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/ng_stop.cpp.ll
@@ -97,16 +43,12 @@ entry:
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; llvm/optimized/SemaRISCV.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/regcomp.c.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -150,7 +92,6 @@ entry:
 ; postgres/optimized/bloomfilter.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/clog.ll
-; postgres/optimized/datapagemap.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/varbit.ll
 ; qemu/optimized/hw_acpi_aml-build.c.ll
@@ -245,7 +186,59 @@ entry:
   ret i8 %2
 }
 
-; 47 occurrences:
+; 43 occurrences:
+; abc/optimized/abcIf.c.ll
+; clamav/optimized/Ppmd7Dec.c.ll
+; clamav/optimized/unpack.cpp.ll
+; cmake/optimized/archive_ppmd7.c.ll
+; cmake/optimized/archive_ppmd8.c.ll
+; eastl/optimized/TestBitVector.cpp.ll
+; freetype/optimized/sfnt.c.ll
+; freetype/optimized/truetype.c.ll
+; libpng/optimized/pngread.c.ll
+; libquic/optimized/a_bitstr.c.ll
+; lief/optimized/ssl_msg.c.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/flow_dissector.ll
+; linux/optimized/hid-lg-g15.ll
+; linux/optimized/hid-lg4ff.ll
+; linux/optimized/hwregs.ll
+; linux/optimized/show_mem.ll
+; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
+; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; minetest/optimized/clientmap.cpp.ll
+; minetest/optimized/content_mapblock.cpp.ll
+; minetest/optimized/log.cpp.ll
+; node/optimized/libnode.crypto_aes.ll
+; openjdk/optimized/pngread.ll
+; openjdk/optimized/socketTransport.ll
+; openssl/optimized/libcrypto-lib-a_bitstr.ll
+; openssl/optimized/libcrypto-lib-bn_rand.ll
+; openssl/optimized/libcrypto-shlib-a_bitstr.ll
+; openssl/optimized/libcrypto-shlib-bn_rand.ll
+; postgres/optimized/brin_minmax_multi.ll
+; postgres/optimized/heaptuple.ll
+; postgres/optimized/network.ll
+; qemu/optimized/hw_acpi_aml-build.c.ll
+; qemu/optimized/target_riscv_translate.c.ll
+; redis/optimized/hyperloglog.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; wireshark/optimized/addr_resolv.c.ll
+; wireshark/optimized/editcap.c.ll
+; wireshark/optimized/packet-diameter.c.ll
+; wireshark/optimized/packet-dnp.c.ll
+; wireshark/optimized/packet-ldp.c.ll
+; wireshark/optimized/packet-oer.c.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000c(i32 %0) #0 {
+entry:
+  %1 = shl nuw nsw i32 3, %0
+  %2 = trunc i32 %1 to i8
+  ret i8 %2
+}
+
+; 46 occurrences:
 ; abc/optimized/extraUtilCanon.c.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -274,7 +267,6 @@ entry:
 ; linux/optimized/skbuff.ll
 ; linux/optimized/uhci-hcd.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; lua/optimized/ltm.ll
 ; luajit/optimized/lj_meta.ll
@@ -301,7 +293,7 @@ entry:
   ret i8 %2
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; lief/optimized/ecp.c.ll
 ; linux/optimized/intel_dram.ll
 ; linux/optimized/yenta_socket.ll
@@ -313,7 +305,6 @@ entry:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
-; zxing/optimized/MCBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i32 %0) #0 {
 entry:

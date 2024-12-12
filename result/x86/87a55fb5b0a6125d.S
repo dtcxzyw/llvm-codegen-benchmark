@@ -3,12 +3,12 @@ func0000000000000015:                   # @func0000000000000015
 	subq	%rax, %rdi
 	leaq	6(%rdi), %rax
 	retq
-func000000000000000d:                   # @func000000000000000d
+func0000000000000005:                   # @func0000000000000005
 	movq	%rdi, %rax
 	movl	%esi, %ecx
 	subq	%rcx, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+func000000000000000d:                   # @func000000000000000d
 	movq	%rdi, %rax
 	movl	%esi, %ecx
 	subq	%rcx, %rax

@@ -32,6 +32,11 @@ func0000000000000013:                   # @func0000000000000013
 	addl	%edi, %eax
 	shll	$2, %eax
 	retq
+func0000000000000017:                   # @func0000000000000017
+	movzbl	%sil, %eax
+	addl	%edi, %eax
+	shll	$12, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	movzbl	%sil, %eax
 	addl	%edi, %eax
@@ -76,9 +81,4 @@ func000000000000001e:                   # @func000000000000001e
 	movzbl	%sil, %eax
 	addl	%edi, %eax
 	shll	$16, %eax
-	retq
-func0000000000000017:                   # @func0000000000000017
-	movzbl	%sil, %eax
-	addl	%edi, %eax
-	shll	$12, %eax
 	retq

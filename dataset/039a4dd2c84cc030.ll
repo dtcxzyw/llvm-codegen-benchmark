@@ -1,8 +1,8 @@
 
-%struct.qnode.3348215 = type { %struct.mcs_spinlock.3348216 }
-%struct.mcs_spinlock.3348216 = type { ptr, i32, i32 }
+%struct.qnode.3536602 = type { %struct.mcs_spinlock.3536603 }
+%struct.mcs_spinlock.3536603 = type { ptr, i32, i32 }
 
-; 143 occurrences:
+; 44 occurrences:
 ; gromacs/optimized/calcmu.cpp.ll
 ; gromacs/optimized/calculator.cpp.ll
 ; gromacs/optimized/colvarsforceprovider.cpp.ll
@@ -26,20 +26,75 @@
 ; opencv/optimized/stackblur.cpp.ll
 ; openjdk/optimized/BufferedMaskBlit.ll
 ; openjdk/optimized/BufferedRenderPipe.ll
+; openjdk/optimized/c1_Runtime1.ll
+; openjdk/optimized/compileBroker.ll
+; openjdk/optimized/constantPool.ll
+; openjdk/optimized/continuation.ll
+; openjdk/optimized/forte.ll
+; openjdk/optimized/javaClasses.ll
+; openjdk/optimized/javaThread.ll
+; openjdk/optimized/jfrResolution.ll
+; openjdk/optimized/jfrStackTrace.ll
+; openjdk/optimized/jvm.ll
+; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/jvmtiEnvBase.ll
+; openjdk/optimized/jvmtiExport.ll
+; openjdk/optimized/jvmtiImpl.ll
+; openjdk/optimized/reflection.ll
+; openjdk/optimized/scopedMemoryAccess.ll
+; openjdk/optimized/sharedRuntime.ll
+; openjdk/optimized/stackChunkOop.ll
+; openjdk/optimized/stackValue.ll
+; openjdk/optimized/stackwalk.ll
+; openjdk/optimized/vframe.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = inttoptr i64 %0 to ptr
+  %4 = getelementptr nusw i64, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
+  ret ptr %5
+}
+
+; 16 occurrences:
+; openjdk/optimized/Any3Byte.ll
+; openjdk/optimized/ByteGray.ll
+; openjdk/optimized/ByteIndexed.ll
+; openjdk/optimized/FourByteAbgr.ll
+; openjdk/optimized/FourByteAbgrPre.ll
+; openjdk/optimized/Index12Gray.ll
+; openjdk/optimized/Index8Gray.ll
+; openjdk/optimized/IntBgr.ll
+; openjdk/optimized/IntRgb.ll
+; openjdk/optimized/IntRgbx.ll
+; openjdk/optimized/ThreeByteBgr.ll
+; openjdk/optimized/Ushort555Rgb.ll
+; openjdk/optimized/Ushort555Rgbx.ll
+; openjdk/optimized/Ushort565Rgb.ll
+; openjdk/optimized/UshortGray.ll
+; openjdk/optimized/UshortIndexed.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = inttoptr i64 %0 to ptr
+  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 1
+  ret ptr %5
+}
+
+; 102 occurrences:
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/bfsClosure.ll
-; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/cardTableRS.ll
 ; openjdk/optimized/classLoaderData.ll
-; openjdk/optimized/compileBroker.ll
-; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/continuation.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/continuationWrapper.ll
 ; openjdk/optimized/defNewGeneration.ll
 ; openjdk/optimized/dfsClosure.ll
-; openjdk/optimized/forte.ll
 ; openjdk/optimized/g1AllocRegion.ll
 ; openjdk/optimized/g1Allocator.ll
 ; openjdk/optimized/g1Arguments.ll
@@ -102,15 +157,7 @@
 ; openjdk/optimized/instanceKlass.ll
 ; openjdk/optimized/instanceStackChunkKlass.ll
 ; openjdk/optimized/iterator.ll
-; openjdk/optimized/javaClasses.ll
-; openjdk/optimized/javaThread.ll
-; openjdk/optimized/jfrResolution.ll
-; openjdk/optimized/jfrStackTrace.ll
 ; openjdk/optimized/jvm.ll
-; openjdk/optimized/jvmciCompilerToVM.ll
-; openjdk/optimized/jvmtiEnvBase.ll
-; openjdk/optimized/jvmtiExport.ll
-; openjdk/optimized/jvmtiImpl.ll
 ; openjdk/optimized/mutableSpace.ll
 ; openjdk/optimized/parMarkBitMap.ll
 ; openjdk/optimized/psCardTable.ll
@@ -118,11 +165,8 @@
 ; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/psPromotionManager.ll
 ; openjdk/optimized/psScavenge.ll
-; openjdk/optimized/reflection.ll
-; openjdk/optimized/scopedMemoryAccess.ll
 ; openjdk/optimized/serialFullGC.ll
 ; openjdk/optimized/serialHeap.ll
-; openjdk/optimized/sharedRuntime.ll
 ; openjdk/optimized/shenandoahBarrierSet.ll
 ; openjdk/optimized/shenandoahFullGC.ll
 ; openjdk/optimized/shenandoahHeap.ll
@@ -131,9 +175,6 @@
 ; openjdk/optimized/shenandoahRuntime.ll
 ; openjdk/optimized/shenandoahVerifier.ll
 ; openjdk/optimized/stackChunkOop.ll
-; openjdk/optimized/stackValue.ll
-; openjdk/optimized/stackwalk.ll
-; openjdk/optimized/vframe.ll
 ; openjdk/optimized/whitebox.ll
 ; openjdk/optimized/xBarrier.ll
 ; openjdk/optimized/xBarrierSetRuntime.ll
@@ -152,41 +193,13 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
   %4 = getelementptr nusw i64, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %4, i64 16
+  %5 = getelementptr nusw i8, ptr %4, i64 -16
   ret ptr %5
 }
 
-; 16 occurrences:
-; openjdk/optimized/Any3Byte.ll
-; openjdk/optimized/ByteGray.ll
-; openjdk/optimized/ByteIndexed.ll
-; openjdk/optimized/FourByteAbgr.ll
-; openjdk/optimized/FourByteAbgrPre.ll
-; openjdk/optimized/Index12Gray.ll
-; openjdk/optimized/Index8Gray.ll
-; openjdk/optimized/IntBgr.ll
-; openjdk/optimized/IntRgb.ll
-; openjdk/optimized/IntRgbx.ll
-; openjdk/optimized/ThreeByteBgr.ll
-; openjdk/optimized/Ushort555Rgb.ll
-; openjdk/optimized/Ushort555Rgbx.ll
-; openjdk/optimized/Ushort565Rgb.ll
-; openjdk/optimized/UshortGray.ll
-; openjdk/optimized/UshortIndexed.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 1
-  ret ptr %5
-}
-
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/binfmt_misc.ll
 ; linux/optimized/gf128mul.ll
-; linux/optimized/trace_event_perf.ll
 ; openjdk/optimized/IntArgbPre.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i32 %1) #0 {
@@ -202,11 +215,11 @@ entry:
 ; linux/optimized/drm_property.ll
 ; linux/optimized/qspinlock.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i32 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.qnode.3348215, ptr %3, i64 %2, i32 0, i32 1
+  %4 = getelementptr %struct.qnode.3536602, ptr %3, i64 %2, i32 0, i32 1
   ret ptr %4
 }
 

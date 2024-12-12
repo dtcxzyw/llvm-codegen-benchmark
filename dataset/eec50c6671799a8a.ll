@@ -123,7 +123,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, double %1) #0 {
+define i32 @func0000000000000021(i32 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = and i64 %2, 9218868437227405312

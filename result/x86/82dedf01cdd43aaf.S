@@ -4,12 +4,6 @@ func00000000000001ba:                   # @func00000000000001ba
 	imull	$32896, %ecx, %ecx              # imm = 0x8080
 	leal	32768(%rax,%rcx), %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movzwl	%si, %eax
-	imull	$192000, %eax, %eax             # imm = 0x2EE00
-	imull	$1000, %edi, %ecx               # imm = 0x3E8
-	leal	-1(%rcx,%rax), %eax
-	retq
 func00000000000001ff:                   # @func00000000000001ff
 	movzwl	%si, %eax
 	imull	$19235, %eax, %eax              # imm = 0x4B23

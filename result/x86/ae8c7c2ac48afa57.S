@@ -24,7 +24,7 @@ func000000000000004c:                   # @func000000000000004c
 .LCPI3_0:
 	.quad	0x3ff0000000000000              # double 1
 func0000000000000022:                   # @func0000000000000022
-	vminsd	%xmm1, %xmm0, %xmm0
+	vmaxsd	%xmm1, %xmm0, %xmm0
 	vmovsd	.LCPI3_0(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0]
 	vmaxsd	%xmm0, %xmm1, %xmm0
 	retq

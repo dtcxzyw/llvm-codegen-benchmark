@@ -5,7 +5,6 @@
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; folly/optimized/Compression.cpp.ll
 ; git/optimized/packfile.ll
-; git/optimized/patch-delta.ll
 ; hermes/optimized/LEB128.cpp.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/xz_dec_stream.ll
@@ -57,6 +56,7 @@
 ; yalantinglibs/optimized/type.struct_pb.cc.ll
 ; yalantinglibs/optimized/wrappers.struct_pb.cc.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
 entry:
@@ -80,7 +80,7 @@ entry:
   %3 = and i8 %2, 1
   %4 = zext nneg i8 %3 to i64
   %5 = shl nuw i64 %4, %1
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

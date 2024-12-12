@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edi, %edx
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shrl	$3, %edx
 	imull	%esi, %edx
 	cmpl	%edi, %edx
@@ -16,25 +16,31 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %edx
 	seta	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	shrl	$3, %edx
 	imull	%esi, %edx
 	cmpl	%edi, %edx
 	setg	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	shrl	$3, %edx
 	imull	%esi, %edx
 	cmpl	%edi, %edx
 	seta	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	shrl	$3, %edx
 	imull	%esi, %edx
 	cmpl	%edi, %edx
 	seta	%al
 	retq
-func000000000000003a:                   # @func000000000000003a
+func0000000000000068:                   # @func0000000000000068
+	shrl	$3, %edx
+	imull	%esi, %edx
+	cmpl	%edi, %edx
+	seta	%al
+	retq
+func000000000000006a:                   # @func000000000000006a
 	shrl	$24, %edx
 	imull	%esi, %edx
 	cmpl	%edi, %edx

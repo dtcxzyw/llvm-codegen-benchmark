@@ -9,7 +9,7 @@
 define i128 @func0000000000000004(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = or disjoint i128 %2, %0
+  %3 = or disjoint i128 %0, %2
   %4 = add i128 %3, -1
   ret i128 %4
 }
@@ -20,7 +20,7 @@ entry:
 define i128 @func0000000000000005(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = or disjoint i128 %2, %0
+  %3 = or disjoint i128 %0, %2
   %4 = add nsw i128 %3, -1
   ret i128 %4
 }

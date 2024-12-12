@@ -11,7 +11,7 @@ func0000000000000006:                   # @func0000000000000006
 	andb	%dil, %al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	decl	%esi
+	incl	%edx
 	cmpl	%edx, %esi
 	setne	%al
 	andb	%dil, %al

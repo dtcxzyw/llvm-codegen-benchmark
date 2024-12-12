@@ -51,7 +51,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.quad	1099511626496                   # 0xfffffffb00
@@ -115,10 +115,57 @@ func0000000000000005:                   # @func0000000000000005
 	vpternlogq	$242, .LCPI4_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (mem & ~ymm1)
 	retq
 .LCPI5_0:
-	.quad	112                             # 0x70
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
 .LCPI5_1:
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+func0000000000000002:                   # @func0000000000000002
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpternlogq	$248, .LCPI5_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	retq
+.LCPI6_0:
+	.quad	112                             # 0x70
+.LCPI6_1:
 	.quad	137438953344                    # 0x1fffffff80
 func0000000000000006:                   # @func0000000000000006
-	vpaddq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
-	vpternlogq	$248, .LCPI5_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	vpaddq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
+	vpternlogq	$248, .LCPI6_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq

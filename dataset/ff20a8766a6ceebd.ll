@@ -17,13 +17,18 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
   %4 = add i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 247 occurrences:
+; 250 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -180,7 +185,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -265,7 +269,6 @@ entry:
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/rtlil.ll
@@ -273,7 +276,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 72
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -325,13 +328,14 @@ entry:
   ret i64 %5
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/exit_code.ll
 ; ceres/optimized/dense_cholesky.cc.ll
 ; cmake/optimized/archive_entry.c.ll
 ; cmake/optimized/multi.c.ll
@@ -367,8 +371,6 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; openjdk/optimized/os.ll
 ; openjdk/optimized/vm_version_x86.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/timestamp.ll
 ; quickjs/optimized/quickjs.ll
@@ -376,8 +378,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv i64 %2, 1461001
-  %4 = add nsw i64 %3, %1
+  %3 = sdiv i64 %2, 1000
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -472,8 +474,8 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, -2
-  %4 = add i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -485,7 +487,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }

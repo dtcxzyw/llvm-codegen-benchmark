@@ -1,10 +1,3 @@
-func000000000000001b:                   # @func000000000000001b
-	andl	$3, %edx
-	shll	$8, %edx
-	movzbl	%sil, %eax
-	orl	%edx, %eax
-	orl	%edi, %eax
-	retq
 func000000000000001f:                   # @func000000000000001f
 	andl	$15, %edx
 	shll	$6, %edx
@@ -14,6 +7,13 @@ func000000000000001f:                   # @func000000000000001f
 	retq
 func0000000000000003:                   # @func0000000000000003
 	andl	$127, %edx
+	shll	$8, %edx
+	movzbl	%sil, %eax
+	orl	%edx, %eax
+	orl	%edi, %eax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	andl	$1, %edx
 	shll	$8, %edx
 	movzbl	%sil, %eax
 	orl	%edx, %eax

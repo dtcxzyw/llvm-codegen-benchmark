@@ -29,11 +29,11 @@
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1032
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp eq i32 %0, 0
   %7 = and i1 %6, %5
   ret i1 %7
@@ -43,11 +43,11 @@ entry:
 ; libpng/optimized/pngwutil.c.ll
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000030c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2048
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp ne i32 %0, 2064
   %7 = and i1 %6, %5
   ret i1 %7
@@ -68,7 +68,7 @@ entry:
 ; ruby/optimized/prism.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 897
   %4 = icmp eq i32 %3, 0
@@ -89,7 +89,7 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000301(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp ne i32 %3, 0
@@ -103,11 +103,11 @@ entry:
 ; libpng/optimized/png.c.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -5
   %4 = icmp eq i32 %3, 2
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp slt i32 %0, 8
   %7 = and i1 %6, %5
   ret i1 %7
@@ -116,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_API.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16
   %4 = icmp ne i32 %3, 0
@@ -133,11 +133,11 @@ entry:
 ; quantlib/optimized/singapore.ll
 ; quantlib/optimized/slovakia.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = icmp eq i32 %3, 22
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp eq i32 %1, 1
   %7 = and i1 %5, %6
   ret i1 %7
@@ -146,11 +146,11 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/china.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = icmp eq i32 %3, 2010
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp ult i32 %0, 7
   %7 = and i1 %6, %5
   ret i1 %7
@@ -159,11 +159,11 @@ entry:
 ; 1 occurrences:
 ; hwloc/optimized/topology-x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp ugt i32 %0, 7
   %7 = and i1 %6, %5
   ret i1 %7

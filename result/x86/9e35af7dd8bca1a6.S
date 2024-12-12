@@ -10,18 +10,6 @@ func0000000000000005:                   # @func0000000000000005
 	setbe	%al
 	andb	%dil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
-	movzbl	%dl, %eax
-	cmpl	%esi, %eax
-	setne	%al
-	andb	%dil, %al
-	retq
-func0000000000000008:                   # @func0000000000000008
-	movzbl	%dl, %eax
-	cmpl	%esi, %eax
-	seta	%al
-	andb	%dil, %al
-	retq
 func0000000000000004:                   # @func0000000000000004
 	andl	$262143, %edx                   # imm = 0x3FFFF
 	cmpl	%esi, %edx
@@ -50,5 +38,41 @@ func0000000000000009:                   # @func0000000000000009
 	andl	$1073741823, %edx               # imm = 0x3FFFFFFF
 	cmpl	%esi, %edx
 	setae	%al
+	andb	%dil, %al
+	retq
+func000000000000000c:                   # @func000000000000000c
+	andl	$1, %edx
+	cmpl	%esi, %edx
+	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	andl	$32767, %edx                    # imm = 0x7FFF
+	cmpl	%esi, %edx
+	seta	%al
+	andb	%dil, %al
+	retq
+func0000000000000019:                   # @func0000000000000019
+	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
+	cmpl	%esi, %edx
+	setae	%al
+	andb	%dil, %al
+	retq
+func0000000000000015:                   # @func0000000000000015
+	movzbl	%dl, %eax
+	cmpl	%esi, %eax
+	setbe	%al
+	andb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movzbl	%dl, %eax
+	cmpl	%esi, %eax
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	andl	$16777215, %edx                 # imm = 0xFFFFFF
+	cmpl	%esi, %edx
+	seta	%al
 	andb	%dil, %al
 	retq

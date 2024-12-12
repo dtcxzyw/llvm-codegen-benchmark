@@ -51,13 +51,12 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; libzmq/optimized/zap_client.cpp.ll
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
@@ -79,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i64 %0, 36

@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	imulq	%rdx, %rsi
 	cmpq	$536870913, %rsi                # imm = 0x20000001
 	setae	%al
@@ -17,7 +17,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	sete	%al
@@ -35,7 +35,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	imulq	%rdx, %rsi
 	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
 	seta	%al
@@ -47,19 +47,19 @@ func000000000000000a:                   # @func000000000000000a
 	setge	%al
 	orb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	imulq	%rdx, %rsi
 	cmpq	$1025, %rsi                     # imm = 0x401
 	setge	%al

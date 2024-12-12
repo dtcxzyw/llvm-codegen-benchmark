@@ -1,13 +1,20 @@
 
-%struct.ExprEvalStep.3470120 = type { i64, ptr, ptr, %union.anon.3470121 }
-%union.anon.3470121 = type { %struct.anon.22.3470122 }
-%struct.anon.22.3470122 = type { ptr, ptr, i32, i32, ptr, ptr }
+%struct._ir_insn.2790007 = type { %struct.anon.2790008, %union.anon.5.2790009 }
+%struct.anon.2790008 = type { %union.anon.2790010, %union.anon.4.2790011 }
+%union.anon.2790010 = type { i32 }
+%union.anon.4.2790011 = type { i32 }
+%union.anon.5.2790009 = type { %union._ir_val.2790012 }
+%union._ir_val.2790012 = type { double }
+%struct.ExprEvalStep.3654220 = type { i64, ptr, ptr, %union.anon.3654221 }
+%union.anon.3654221 = type { %struct.anon.22.3654222 }
+%struct.anon.22.3654222 = type { ptr, ptr, i32, i32, ptr, ptr }
 
-; 276 occurrences:
+; 263 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; arrow/optimized/table.cc.ll
+; boost/optimized/topology.ll
 ; ceres/optimized/manifold.cc.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
@@ -20,7 +27,6 @@
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; glslang/optimized/SymbolTable.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
-; graphviz/optimized/trapezoid.c.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/colvarbias.cpp.ll
@@ -33,7 +39,6 @@
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/gen_vsite.cpp.ll
-; gromacs/optimized/pme_solve.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
@@ -143,13 +148,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -205,7 +207,6 @@
 ; nix/optimized/worker.ll
 ; opencv/optimized/bitmatrix.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
-; opencv/optimized/cascadedetect.cpp.ll
 ; opencv/optimized/charuco_detector.cpp.ll
 ; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
@@ -236,7 +237,6 @@
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openjdk/optimized/constMethod.ll
-; openmpi/optimized/ad_coll_build_req_new.ll
 ; openspiel/optimized/battleship.cc.ll
 ; openspiel/optimized/deep_sea.cc.ll
 ; openspiel/optimized/euchre.cc.ll
@@ -245,17 +245,9 @@
 ; openspiel/optimized/leduc_poker.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; openusd/optimized/animMapper.cpp.ll
-; openusd/optimized/patchBuilder.cpp.ll
-; openusd/optimized/patchTreeBuilder.cpp.ll
-; openusd/optimized/ptexIndices.cpp.ll
-; openusd/optimized/stencilTableFactory.cpp.ll
-; pbrt-v4/optimized/aggregates.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; php/optimized/ir_ra.ll
-; php/optimized/zend_execute.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; verilator/optimized/V3Undriven.cpp.ll
-; xgboost/optimized/tree_model.cc.ll
 ; yosys/optimized/abc9_ops.ll
 ; yosys/optimized/check.ll
 ; yosys/optimized/cxxrtl_backend.ll
@@ -277,6 +269,7 @@
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/torder.ll
+; yosys/optimized/verilog_backend.ll
 ; zxing/optimized/ODCode128Writer.cpp.ll
 ; zxing/optimized/ODWriterHelper.cpp.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
@@ -287,6 +280,32 @@ entry:
   %4 = getelementptr nusw i64, ptr %0, i64 %3
   %5 = select i1 %1, i64 -8, i64 0
   %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 15 occurrences:
+; graphviz/optimized/trapezoid.c.ll
+; gromacs/optimized/pme_solve.cpp.ll
+; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
+; opencv/optimized/cascadedetect.cpp.ll
+; openmpi/optimized/ad_coll_build_req_new.ll
+; openusd/optimized/faceVertex.cpp.ll
+; openusd/optimized/patchBuilder.cpp.ll
+; openusd/optimized/patchTreeBuilder.cpp.ll
+; openusd/optimized/ptexIndices.cpp.ll
+; openusd/optimized/stencilTableFactory.cpp.ll
+; pbrt-v4/optimized/aggregates.cpp.ll
+; php/optimized/ir_ra.ll
+; php/optimized/zend_execute.ll
+; redis/optimized/evict.ll
+; xgboost/optimized/tree_model.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw %struct._ir_insn.2790007, ptr %0, i64 %3
+  %5 = select i1 %1, i64 4, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -310,12 +329,12 @@ entry:
 ; postgres/optimized/execExpr.ll
 ; postgres/optimized/fe-connect.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.ExprEvalStep.3470120, ptr %0, i64 %3
+  %4 = getelementptr %struct.ExprEvalStep.3654220, ptr %0, i64 %3
   %5 = select i1 %1, i64 40, i64 24
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

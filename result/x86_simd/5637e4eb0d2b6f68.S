@@ -44,7 +44,7 @@ func0000000000000007:                   # @func0000000000000007
 	vzeroupper
 	retq
 .LCPI4_0:
-	.long	0x4e6e6b28                      # float 1.0E+9
+	.long	0x3f400000                      # float 0.75
 func0000000000000002:                   # @func0000000000000002
 	vpsllw	$7, %xmm0, %xmm0
 	vpsllw	$7, %xmm1, %xmm1

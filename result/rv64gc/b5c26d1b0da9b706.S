@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -254
@@ -6,7 +6,7 @@ func0000000000000044:                   # @func0000000000000044
 	sltiu	a0, a0, 4
 	and	a0, a0, a1
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -1
@@ -15,7 +15,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -99
@@ -23,11 +23,19 @@ func0000000000000014:                   # @func0000000000000014
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000144:                   # @func0000000000000144
+func0000000000000484:                   # @func0000000000000484
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -1
 	sltiu	a1, a1, 31
 	sltiu	a0, a0, 249
+	and	a0, a0, a1
+	ret
+func0000000000000284:                   # @func0000000000000284
+	andi	a0, a0, 255
+	andi	a1, a1, 255
+	addi	a1, a1, -8
+	sltiu	a1, a1, 57
+	sltiu	a0, a0, 2
 	and	a0, a0, a1
 	ret

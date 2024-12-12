@@ -27,10 +27,10 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
-  %4 = icmp ugt i32 %1, 3
+  %4 = icmp samesign ugt i32 %1, 3
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dcerpc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = icmp eq i32 %1, 0
@@ -56,7 +56,7 @@ entry:
 ; opencv/optimized/trackerMIL_legacy.cpp.ll
 ; opencv/optimized/tracking_by_matching.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = icmp slt i32 %1, 0
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = icmp sgt i32 %1, 3

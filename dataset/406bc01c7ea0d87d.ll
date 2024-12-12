@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -10,7 +10,6 @@
 ; ruby/optimized/pm_integer.ll
 ; wireshark/optimized/lanalyzer.c.ll
 ; wireshark/optimized/packet-dnp.c.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
@@ -30,7 +29,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 8
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = udiv i64 %3, 1000000000
   ret i64 %4
 }

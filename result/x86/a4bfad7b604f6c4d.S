@@ -42,10 +42,3 @@ func0000000000000022:                   # @func0000000000000022
 	cltq
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000182:                   # @func0000000000000182
-	cmpl	$1, %edx
-	sbbl	$-1, %esi
-	movslq	%esi, %rax
-	shlq	$4, %rax
-	addq	%rdi, %rax
-	retq

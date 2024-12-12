@@ -1,11 +1,11 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	zext.w	a1, a1
 	neg	a1, a1
 	slli	a0, a0, 3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	zext.w	a1, a1
 	neg	a1, a1
 	slli	a0, a0, 3

@@ -1,4 +1,4 @@
-func0000000000000266:                   # @func0000000000000266
+func00000000000008c6:                   # @func00000000000008c6
 	li	a0, 128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0

@@ -16,16 +16,15 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; faiss/optimized/ProductQuantizer.cpp.ll
 ; linux/optimized/mballoc.ll
 ; miniaudio/optimized/unity.c.ll
-; spike/optimized/s_shortShiftLeft64To96M.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = sub nsw i32 32, %2
+  %3 = sub nsw i32 23, %2
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %0, %4
   ret i64 %5

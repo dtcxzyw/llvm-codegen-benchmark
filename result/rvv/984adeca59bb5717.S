@@ -103,7 +103,7 @@ func0000000000000027:                   # @func0000000000000027
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, -1
 	ret
-func0000000000000105:                   # @func0000000000000105
+func0000000000000305:                   # @func0000000000000305
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v0, v10, 1
 	vmv.v.i	v10, 0
@@ -111,7 +111,7 @@ func0000000000000105:                   # @func0000000000000105
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, -7
 	ret
-func000000000000010f:                   # @func000000000000010f
+func000000000000030f:                   # @func000000000000030f
 	li	a0, 62
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
@@ -131,7 +131,7 @@ func000000000000014f:                   # @func000000000000014f
 	li	a0, 243
 	vadd.vx	v8, v8, a0
 	ret
-func000000000000008f:                   # @func000000000000008f
+func000000000000028f:                   # @func000000000000028f
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v10, 9
 	vmv.v.i	v10, 0

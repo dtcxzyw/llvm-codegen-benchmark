@@ -25,7 +25,7 @@ entry:
   ret i64 %5
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -71,7 +71,6 @@ entry:
 ; velox/optimized/JsonType.cpp.ll
 ; wasmedge/optimized/vinode.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
-; wireshark/optimized/packet-etag.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:

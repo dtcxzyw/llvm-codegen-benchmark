@@ -44,7 +44,7 @@
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000546(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %0, 4
   %3 = shl nsw i64 %2, 2

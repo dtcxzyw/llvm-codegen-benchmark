@@ -14,9 +14,8 @@ entry:
   ret double %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/xsatSolver.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; git/optimized/diffcore-break.ll
 ; jq/optimized/jv.ll

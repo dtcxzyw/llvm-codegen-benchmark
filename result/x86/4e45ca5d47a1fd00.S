@@ -1,17 +1,17 @@
-func000000000000018a:                   # @func000000000000018a
+func000000000000018f:                   # @func000000000000018f
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	setne	%al
 	shll	$4, %eax
 	leaq	56(%rdi,%rax), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	sete	%al
 	leaq	40(%rdi,%rax,8), %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func000000000000002c:                   # @func000000000000002c
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	sete	%al

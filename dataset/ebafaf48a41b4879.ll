@@ -1,8 +1,12 @@
 
-; 42 occurrences:
+; 46 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
 ; gromacs/optimized/transformations.cpp.ll
@@ -43,7 +47,7 @@
 ; openvdb/optimized/Prune.cc.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = udiv exact i64 %2, 12
@@ -67,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/crc32c.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %0, %1
   %3 = udiv i64 %2, 24
@@ -76,23 +80,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; linux/optimized/threshold.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub i64 %0, %1
-  %3 = udiv i64 %2, 1000
-  %4 = and i64 %3, 4294967232
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ac(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %0, %1
   %3 = udiv exact i64 %2, 296

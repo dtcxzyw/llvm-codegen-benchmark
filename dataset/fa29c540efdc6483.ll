@@ -11,12 +11,12 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %1
-  %6 = or i64 %5, %0
+  %5 = and i64 %1, %4
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
-; 137 occurrences:
+; 135 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -85,8 +85,6 @@ entry:
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -159,8 +157,8 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %1
-  %6 = or i64 %5, %0
+  %5 = and i64 %1, %4
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -175,7 +173,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -227,8 +225,8 @@ define i64 @func000000000000000b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %1
-  %6 = or disjoint i64 %5, %0
+  %5 = and i64 %1, %4
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -242,7 +240,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 65535, %3
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
@@ -258,8 +256,8 @@ define i64 @func000000000000000d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 65535, %3
-  %5 = and i64 %4, %1
-  %6 = or disjoint i64 %5, %0
+  %5 = and i64 %1, %4
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -284,7 +282,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 65535, %3
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -296,7 +294,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 255, %3
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }

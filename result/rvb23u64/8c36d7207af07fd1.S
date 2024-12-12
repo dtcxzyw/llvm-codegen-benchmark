@@ -6,12 +6,12 @@ func0000000000000000:                   # @func0000000000000000
 	fli.s	fa4, 0.00390625
 	beqz	a0, .LBB0_4
 .LBB0_2:                                # %entry
-	fmul.s	fa0, fa4, fa0
+	fmul.s	fa0, fa0, fa4
 	ret
 .LBB0_3:                                # %entry
 	fmv.w.x	fa5, zero
 	fli.s	fa4, 0.00390625
 	bnez	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa0, fa0, fa5
 	ret

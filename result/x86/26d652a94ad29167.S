@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	0x3ff0000000000000              # double 1
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	andl	$1, %esi
 	subl	%esi, %edi
 	cmpl	$23, %edi
@@ -12,7 +12,7 @@ func0000000000000028:                   # @func0000000000000028
 	retq
 .LCPI1_0:
 	.quad	0x3ff0000000000000              # double 1
-func0000000000000128:                   # @func0000000000000128
+func0000000000000248:                   # @func0000000000000248
 	andl	$1, %esi
 	subl	%esi, %edi
 	cmpl	$23, %edi

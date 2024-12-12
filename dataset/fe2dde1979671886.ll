@@ -1,5 +1,5 @@
 
-; 230 occurrences:
+; 236 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -64,7 +64,6 @@
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; llvm/optimized/MustExecute.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
@@ -230,6 +229,13 @@
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/prefilter_tree.cc.ll
 ; re2/optimized/regexp.cc.ll
+; zed-rs/optimized/20wexgg4z3ww9j4h4iowli6fi.ll
+; zed-rs/optimized/5eo3r6xqgcl9c03ocnkjc70d3.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/etkkpijil810uxaq6a1xhpkj9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:

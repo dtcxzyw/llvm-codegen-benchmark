@@ -1,7 +1,8 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/xxhash.c.ll
 ; cpython/optimized/setobject.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll

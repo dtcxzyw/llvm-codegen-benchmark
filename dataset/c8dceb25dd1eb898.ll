@@ -34,24 +34,24 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.Protocol.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = lshr i32 %2, %0
   %4 = and i32 %3, 14
-  %5 = icmp ult i32 %4, 10
+  %5 = icmp samesign ult i32 %4, 10
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; freetype/optimized/cff.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = lshr i32 %2, %0
   %4 = and i32 %3, 14
-  %5 = icmp ugt i32 %4, 9
+  %5 = icmp samesign ugt i32 %4, 9
   ret i1 %5
 }
 

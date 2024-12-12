@@ -1,3 +1,8 @@
+func0000000000000005:                   # @func0000000000000005
+	add	a0, a0, a1
+	addi	a0, a0, 47
+	andi	a0, a0, 63
+	ret
 func000000000000000f:                   # @func000000000000000f
 	zext.h	a1, a1
 	add	a0, a0, a1
@@ -16,13 +21,4 @@ func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
 	addi	a0, a0, 7
 	zext.h	a0, a0
-	ret
-func0000000000000005:                   # @func0000000000000005
-	zext.h	a1, a1
-	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
-	addw	a0, a0, a1
-	lui	a1, 1048572
-	and	a0, a0, a1
 	ret

@@ -1,8 +1,7 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; icu/optimized/uresdata.ll
-; linux/optimized/int_log.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/Disasm.cpp.ll

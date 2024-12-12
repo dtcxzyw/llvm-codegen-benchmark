@@ -6,7 +6,7 @@
 define i64 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -42,7 +42,19 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 2
+  %3 = or i1 %0, %2
+  %4 = zext i1 %3 to i64
+  ret i64 %4
+}
+
+; 15 occurrences:
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
 ; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
@@ -55,21 +67,13 @@ entry:
 ; llvm/optimized/TargetTransformInfo.cpp.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 55
-  %3 = or i1 %2, %0
-  %4 = zext i1 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/SLPVectorizer.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 4
   %3 = or i1 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4

@@ -3,7 +3,7 @@ func0000000000000011:                   # @func0000000000000011
 	cmpq	%rdx, %rsi
 	setae	%al
 	andl	$1, %edi
-	leal	(%rdi,%rax,2), %eax
+	leal	-2(%rdi,%rax,2), %eax
 	retq
 func0000000000000029:                   # @func0000000000000029
 	xorl	%eax, %eax

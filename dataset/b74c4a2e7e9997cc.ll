@@ -11,15 +11,16 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaTranStoch.c.ll
 ; assimp/optimized/StepExporter.cpp.ll
 ; graphviz/optimized/multispline.c.ll
 ; icu/optimized/formattedval_iterimpl.ll
+; openusd/optimized/tessellation.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i64 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nuw nsw i64 %0, 1
@@ -33,7 +34,7 @@ entry:
 ; assimp/optimized/IFCUtil.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %0, 1

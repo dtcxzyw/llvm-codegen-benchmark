@@ -24,15 +24,14 @@ entry:
   ret i16 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; clamav/optimized/hfsplus.c.ll
-; git/optimized/merge-ort.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000030(i16 %0, i16 %1) #0 {
 entry:
-  %2 = shl nuw nsw i16 %1, 8
+  %2 = shl nuw nsw i16 %1, 1
   %3 = sub i16 %0, %2
-  %4 = add i16 %3, 1792
+  %4 = add i16 %3, -2
   ret i16 %4
 }
 

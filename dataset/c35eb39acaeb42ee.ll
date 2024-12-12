@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/marshal.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000005e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
   %3 = ashr exact i32 %2, 24
@@ -17,7 +17,7 @@ entry:
 ; abc/optimized/ivyCut.c.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
@@ -32,7 +32,7 @@ entry:
 ; hermes/optimized/regcomp.c.ll
 ; llvm/optimized/regcomp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
   %3 = ashr exact i32 %2, 24
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/fastpath.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16

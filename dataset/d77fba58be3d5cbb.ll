@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -23,7 +23,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 6
   %4 = sext i32 %3 to i64

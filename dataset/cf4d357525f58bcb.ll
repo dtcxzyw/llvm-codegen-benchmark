@@ -3,6 +3,7 @@
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/cuddLinear.c.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/_datetimemodule.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -13,7 +14,6 @@
 ; fmt/optimized/util.cc.ll
 ; icu/optimized/utrie2_builder.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -265,12 +265,11 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; libwebp/optimized/lossless_enc_sse41.c.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/parse_utilcmd.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:

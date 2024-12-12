@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	15                              # 0xf
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpsrld	$9, %ymm1, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [15,15,15,15,15,15,15,15]
 	vpand	%ymm2, %ymm1, %ymm1
@@ -20,7 +20,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI2_0:
 	.long	7                               # 0x7
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpsrld	$4, %ymm1, %ymm1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2   # ymm2 = [7,7,7,7,7,7,7,7]
 	vpand	%ymm2, %ymm1, %ymm1
@@ -67,7 +67,7 @@ func0000000000000008:                   # @func0000000000000008
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000009:                   # @func0000000000000009
+func0000000000000019:                   # @func0000000000000019
 	vpshufb	.LCPI3_0(%rip), %ymm1, %ymm1    # ymm1 = ymm1[2],zero,zero,zero,ymm1[6],zero,zero,zero,ymm1[10],zero,zero,zero,ymm1[14],zero,zero,zero,ymm1[18],zero,zero,zero,ymm1[22],zero,zero,zero,ymm1[26],zero,zero,zero,ymm1[30],zero,zero,zero
 	vpandd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	vpcmpnltud	%ymm0, %ymm1, %k0
@@ -85,7 +85,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI5_0:
 	.long	63                              # 0x3f
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	vpsrld	$16, %ymm1, %ymm1
 	vpbroadcastd	.LCPI5_0(%rip), %ymm2   # ymm2 = [63,63,63,63,63,63,63,63]
 	vpand	%ymm2, %ymm1, %ymm1

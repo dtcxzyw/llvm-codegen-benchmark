@@ -64,6 +64,12 @@ func0000000000000019:                   # @func0000000000000019
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+func000000000000001c:                   # @func000000000000001c
+	vpaddd	%xmm2, %xmm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpsubd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
 func000000000000002c:                   # @func000000000000002c
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0

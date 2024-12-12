@@ -1,11 +1,13 @@
 
-; 363 occurrences:
+; 366 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; abseil-cpp/optimized/substitute.cc.ll
+; boost/optimized/addr2line.ll
+; boost/optimized/basic.ll
 ; clamav/optimized/strfn.cpp.ll
 ; cmake/optimized/archive_write_set_format_ar.c.ll
 ; cmake/optimized/hex.c.ll
@@ -178,6 +180,7 @@
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/ToString.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; node/optimized/libnode.string_decoder.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/argparse.cpp.ll

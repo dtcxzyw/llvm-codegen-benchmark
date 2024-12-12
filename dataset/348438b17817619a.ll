@@ -9,16 +9,17 @@
 define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 1000
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = sdiv i64 %3, 1000000000
   ret i64 %4
 }
 
-; 26 occurrences:
+; 29 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
+; boost/optimized/exit_code.ll
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -38,6 +39,8 @@ entry:
 ; redis/optimized/server.ll
 ; velox/optimized/Sequence.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3ThreadPool.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; xgboost/optimized/coll_c_api.cc.ll
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll
@@ -50,11 +53,10 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; cpython/optimized/semaphore.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
-; eastl/optimized/TestChrono.cpp.ll
 ; folly/optimized/BridgeFromGoogleLogging.cpp.ll
 ; glog/optimized/logging.cc.ll
 ; linux/optimized/thermal.ll
@@ -142,7 +144,7 @@ entry:
 define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, -40
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = sdiv exact i64 %3, 40
   ret i64 %4
 }
@@ -165,7 +167,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 1000000000
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = sdiv i64 %3, 1000000000
   ret i64 %4
 }

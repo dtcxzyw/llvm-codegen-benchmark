@@ -1,5 +1,5 @@
 
-; 751 occurrences:
+; 752 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -42,6 +42,8 @@
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -98,6 +100,9 @@
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
 ; jemalloc/optimized/base.sym.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; libdeflate/optimized/deflate_decompress.c.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; libjpeg-turbo/optimized/jdlhuff.c.ll
@@ -184,7 +189,6 @@
 ; linux/optimized/balloc.ll
 ; linux/optimized/dm-region-hash.ll
 ; linux/optimized/drm_buddy.ll
-; linux/optimized/dw.ll
 ; linux/optimized/ebitmap.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/gro.ll
@@ -195,12 +199,12 @@
 ; linux/optimized/mpi-bit.ll
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/sd.ll
-; linux/optimized/vclock_gettime.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -221,8 +225,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -593,7 +595,6 @@
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; spike/optimized/s_shortShiftLeft64To96M.ll
 ; spike/optimized/vnsrl_wv.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -760,7 +761,8 @@ entry:
   ret i32 %4
 }
 
-; 113 occurrences:
+; 114 occurrences:
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -920,7 +922,7 @@ entry:
   ret i32 %4
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; cmake/optimized/fse_compress.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
@@ -937,6 +939,7 @@ entry:
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/hw_display_ati.c.ll

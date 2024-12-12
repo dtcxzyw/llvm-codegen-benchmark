@@ -1,6 +1,6 @@
 
-%struct.Vec_Int_t_.2765125 = type { i32, i32, ptr }
-%struct.pollfd.2862702 = type { i32, i16, i16 }
+%struct.Vec_Int_t_.2877372 = type { i32, i32, ptr }
+%struct.pollfd.3056553 = type { i32, i16, i16 }
 
 ; 1 occurrences:
 ; abc/optimized/giaCut.c.ll
@@ -9,7 +9,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.Vec_Int_t_.2765125, ptr %0, i64 %4, i32 2
+  %5 = getelementptr %struct.Vec_Int_t_.2877372, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -35,7 +35,7 @@ define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct.pollfd.2862702, ptr %0, i64 %4, i32 2
+  %5 = getelementptr nusw %struct.pollfd.3056553, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

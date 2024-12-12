@@ -5,7 +5,7 @@
 func0000000000000001:                   # @func0000000000000001
 	vpaddq	%ymm1, %ymm2, %ymm1
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vmulpd	%ymm0, %ymm1, %ymm0
+	vmulpd	%ymm1, %ymm0, %ymm0
 	vbroadcastsd	.LCPI0_1(%rip), %ymm1   # ymm1 = [5.0E-1,5.0E-1,5.0E-1,5.0E-1]
 	vsubpd	%ymm0, %ymm1, %ymm0
 	retq

@@ -1,18 +1,18 @@
-func0000000000000d8a:                   # @func0000000000000d8a
+func000000000000370a:                   # @func000000000000370a
 	addl	%edx, %esi
 	testl	%esi, %esi
 	setg	%cl
 	xorl	$2147483647, %esi               # imm = 0x7FFFFFFF
-	cmpl	%edi, %esi
-	setb	%al
+	cmpl	%esi, %edi
+	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000daa:                   # @func0000000000000daa
+func000000000000354a:                   # @func000000000000354a
 	addl	%edx, %esi
 	testl	%esi, %esi
 	setg	%cl
 	xorl	$2147483647, %esi               # imm = 0x7FFFFFFF
-	cmpl	%edi, %esi
-	setl	%al
+	cmpl	%esi, %edi
+	setg	%al
 	andb	%cl, %al
 	retq

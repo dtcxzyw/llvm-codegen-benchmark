@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 93 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; bullet3/optimized/btMultiBody.ll
@@ -32,10 +32,11 @@
 ; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/ssim.c.ll
 ; linux/optimized/alps.ll
-; linux/optimized/input-mt.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/GVNSink.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; meshlab/optimized/mutual.cpp.ll
@@ -89,6 +90,8 @@
 ; verilator/optimized/V3TSP.cpp.ll
 ; xgboost/optimized/gblinear.cc.ll
 ; z3/optimized/sat_cut_simplifier.cpp.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
@@ -97,7 +100,7 @@ entry:
   ret i32 %1
 }
 
-; 313 occurrences:
+; 308 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/bbrImage.c.ll
 ; abc/optimized/bmcFault.c.ll
@@ -106,7 +109,6 @@ entry:
 ; abc/optimized/extraBddSymm.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
 ; abc/optimized/fxuCreate.c.ll
-; abc/optimized/fxuPair.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -117,6 +119,9 @@ entry:
 ; abc/optimized/sswRarity.c.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/partition.ll
+; boost/optimized/relative_order.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; bullet3/optimized/btMultiBody.ll
@@ -179,7 +184,6 @@ entry:
 ; gromacs/optimized/comm.cpp.ll
 ; gromacs/optimized/dens_filter.cpp.ll
 ; gromacs/optimized/dgesdd.cpp.ll
-; gromacs/optimized/dlasd1.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
@@ -197,7 +201,6 @@ entry:
 ; gromacs/optimized/pme_error.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
 ; gromacs/optimized/simd_energy_accumulator.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
@@ -216,6 +219,12 @@ entry:
 ; libwebp/optimized/ssim_sse2.c.ll
 ; lightgbm/optimized/config.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_gridnav.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
@@ -248,30 +257,19 @@ entry:
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; openblas/optimized/dgeesx.c.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dggesx.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlaed7.c.ll
-; openblas/optimized/dlaeda.c.ll
-; openblas/optimized/dlalsa.c.ll
 ; openblas/optimized/dlalsd.c.ll
-; openblas/optimized/dlasd0.c.ll
-; openblas/optimized/dlasda.c.ll
 ; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dsbevd.c.ll
-; openblas/optimized/dsbgvd.c.ll
 ; openblas/optimized/dsfrk.c.ll
 ; openblas/optimized/dstedc.c.ll
-; openblas/optimized/dsyevd.c.ll
-; openblas/optimized/dtfsm.c.ll
 ; openblas/optimized/dtgex2.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; opencv/optimized/approx.cpp.ll
@@ -418,7 +416,7 @@ entry:
   ret i32 %1
 }
 
-; 198 occurrences:
+; 205 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
@@ -451,7 +449,6 @@ entry:
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -464,7 +461,6 @@ entry:
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/fraClass.c.ll
 ; abc/optimized/fraigTable.c.ll
-; abc/optimized/fxuMatrix.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -504,7 +500,6 @@ entry:
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/mpmTruth.c.ll
-; abc/optimized/nmApi.c.ll
 ; abc/optimized/nmTable.c.ll
 ; abc/optimized/nwkMerge.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
@@ -553,6 +548,9 @@ entry:
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/numa.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -567,10 +565,13 @@ entry:
 ; ocio/optimized/FileFormatSpi3D.cpp.ll
 ; ocio/optimized/FileFormatTruelight.cpp.ll
 ; ockam-rs/optimized/4h15go5rbmdr09f8.ll
+; openblas/optimized/dlaed0.c.ll
+; openblas/optimized/dlaed7.c.ll
+; openblas/optimized/dlaeda.c.ll
+; openblas/optimized/dlalsa.c.ll
+; openblas/optimized/dlasd0.c.ll
 ; openblas/optimized/dlasda.c.ll
-; openblas/optimized/dstevd.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; openblas/optimized/dtfsm.c.ll
+; openblas/optimized/dstedc.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/aruco_dict_utils.cpp.ll
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
@@ -617,6 +618,10 @@ entry:
 ; wasmtime-rs/optimized/2mkio291uuli263d.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/3yirtpiqdnll1kue.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:

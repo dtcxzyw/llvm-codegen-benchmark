@@ -1,10 +1,12 @@
 
-; 85 occurrences:
+; 88 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/sclUpsize.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/ComputeUVMappingProcess.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -28,6 +30,7 @@
 ; gromacs/optimized/readir.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -93,7 +96,7 @@ entry:
   ret i1 %4
 }
 
-; 133 occurrences:
+; 139 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
 ; abseil-cpp/optimized/compressed_tuple_test.cc.ll
@@ -110,6 +113,13 @@ entry:
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within.ll
 ; box2d/optimized/b2_collide_circle.cpp.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_prismatic_joint.cpp.ll
@@ -152,7 +162,6 @@ entry:
 ; gromacs/optimized/calculator.cpp.ll
 ; gromacs/optimized/gmx_densmap.cpp.ll
 ; gromacs/optimized/gmx_gyrate.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -235,10 +244,11 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; msdfgen/optimized/rasterization.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; Function Attrs: nounwind
@@ -250,35 +260,6 @@ entry:
 }
 
 ; 20 occurrences:
-; bullet3/optimized/btSoftBodyHelpers.ll
-; darktable/optimized/introspection_colorzones.c.ll
-; imgui/optimized/imgui_draw.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; minetest/optimized/test_utilities.cpp.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/pplastic.cpp.ll
-; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
-; nori/optimized/nanovg.c.ll
-; nuklear/optimized/unity.c.ll
-; oiio/optimized/texturesys.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/primitive.cpp.ll
-; raylib/optimized/rtext.c.ll
-; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
-; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; stb/optimized/stb_truetype.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, float %1, float %2) #0 {
-entry:
-  %3 = select i1 %0, float %1, float %2
-  %4 = fcmp oge float %3, 0.000000e+00
-  ret i1 %4
-}
-
-; 19 occurrences:
 ; bullet3/optimized/btMLCPSolver.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -298,6 +279,7 @@ entry:
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i1 %0, float %1, float %2) #0 {
 entry:
@@ -306,7 +288,37 @@ entry:
   ret i1 %4
 }
 
-; 35 occurrences:
+; 21 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; bullet3/optimized/btSoftBodyHelpers.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; minetest/optimized/test_utilities.cpp.ll
+; mitsuba3/optimized/cylinder.cpp.ll
+; mitsuba3/optimized/measured.cpp.ll
+; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; oiio/optimized/texturesys.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/primitive.cpp.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, float %1, float %2) #0 {
+entry:
+  %3 = select i1 %0, float %1, float %2
+  %4 = fcmp oge float %3, 0x401921FB60000000
+  ret i1 %4
+}
+
+; 34 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
 ; abseil-cpp/optimized/compressed_tuple_test.cc.ll
@@ -330,7 +342,6 @@ entry:
 ; entt/optimized/meta_type.cpp.ll
 ; entt/optimized/registry.cpp.ll
 ; gromacs/optimized/gmx_enemat.cpp.ll
-; gromacs/optimized/slartg.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/environment.cpp.ll
@@ -359,8 +370,8 @@ entry:
 ; gromacs/optimized/gmx_enemat.cpp.ll
 ; gromacs/optimized/slaebz.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
-; gromacs/optimized/slartg.cpp.ll
 ; gromacs/optimized/wall.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/alignset.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
@@ -411,7 +422,7 @@ entry:
   ret i1 %4
 }
 
-; 36 occurrences:
+; 38 occurrences:
 ; abc/optimized/sclSize.c.ll
 ; bullet3/optimized/btConvexHull.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -422,6 +433,7 @@ entry:
 ; gromacs/optimized/sbdsqr.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -448,6 +460,7 @@ entry:
 ; pbrt-v4/optimized/math.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; pbrt-v4/optimized/transform.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, float %1, float %2) #0 {
 entry:

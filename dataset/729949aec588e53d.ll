@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
 ; abc/optimized/giaCSatP.c.ll
@@ -10,7 +10,6 @@
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/uid16.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
@@ -26,7 +25,6 @@
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/c1_LIRGenerator_x86.ll
-; openjdk/optimized/c1_LinearScan.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:

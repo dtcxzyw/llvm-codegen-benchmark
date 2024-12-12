@@ -1,11 +1,3 @@
-func0000000000000009:                   # @func0000000000000009
-	andi	a2, a2, 255
-	li	a3, 81
-	bgeu	a2, a3, .LBB0_2
-	lui	a1, 49152
-.LBB0_2:                                # %entry
-	or	a0, a0, a1
-	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a2, a2, 255
 	seqz	a2, a2

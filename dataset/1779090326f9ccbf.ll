@@ -1,12 +1,25 @@
 
-; 10 occurrences:
+; 23 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; libevent/optimized/event.c.ll
 ; linux/optimized/pasid.ll
+; linux/optimized/pci.ll
 ; linux/optimized/scsi_transport_spi.ll
 ; linux/optimized/sd.ll
+; llvm/optimized/AArch64AsmPrinter.cpp.ll
+; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AtomicExpandPass.cpp.ll
+; llvm/optimized/AutoUpgrade.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/SelectionDAGDumper.cpp.ll
+; llvm/optimized/SemaTemplateVariadic.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; redis/optimized/redis-cli.ll
 ; wireshark/optimized/packet-ethercat-datagram.c.ll
@@ -19,7 +32,7 @@ entry:
   ret i16 %3
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; hermes/optimized/escape.cpp.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/exthdrs.ll
@@ -64,7 +77,6 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; ncnn/optimized/mat.cpp.ll
-; nuttx/optimized/sched_getscheduler.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; stockfish/optimized/position.ll
 ; stockfish/optimized/uci.ll

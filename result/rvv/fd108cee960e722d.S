@@ -6,7 +6,7 @@ func000000000000000a:                   # @func000000000000000a
 	vnsrl.wx	v12, v10, a0
 	vfwcvt.f.x.v	v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vfmul.vv	v8, v10, v8
+	vfmul.vv	v8, v8, v10
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -15,5 +15,5 @@ func0000000000000004:                   # @func0000000000000004
 	vnsrl.wi	v12, v10, 3
 	vfwcvt.f.x.v	v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vfmul.vv	v8, v10, v8
+	vfmul.vv	v8, v8, v10
 	ret

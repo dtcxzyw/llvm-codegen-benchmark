@@ -6,12 +6,24 @@
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; openusd/optimized/dataSourceLocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = zext i32 %0 to i64
   %4 = mul nuw i64 %3, %2
   %5 = icmp ult i64 %4, 513
+  ret i1 %5
+}
+
+; 1 occurrences:
+; mitsuba3/optimized/zonevector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = zext i32 %0 to i64
+  %4 = mul nuw i64 %3, %2
+  %5 = icmp samesign ult i64 %4, 129
   ret i1 %5
 }
 
@@ -25,7 +37,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = zext i32 %0 to i64
@@ -34,7 +46,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
@@ -49,8 +61,10 @@ entry:
 ; openjdk/optimized/jmemmgr.ll
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/approx_nat.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = zext i32 %0 to i64
@@ -62,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = zext i32 %0 to i64
@@ -79,12 +93,12 @@ entry:
 ; opencv/optimized/matrix_c.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001f8(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = zext nneg i32 %0 to i64
   %4 = mul nuw nsw i64 %3, %2
-  %5 = icmp ugt i64 %4, 13
+  %5 = icmp samesign ugt i64 %4, 13
   ret i1 %5
 }
 
@@ -92,12 +106,12 @@ entry:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; openexr/optimized/ImfTiledRgbaFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = zext i32 %0 to i64
   %4 = mul nuw nsw i64 %3, %2
-  %5 = icmp ugt i64 %4, 36
+  %5 = icmp samesign ugt i64 %4, 36
   ret i1 %5
 }
 
@@ -106,7 +120,7 @@ entry:
 ; darktable/optimized/RawDecoder.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = zext i32 %0 to i64
@@ -118,12 +132,12 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001f4(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = zext nneg i32 %0 to i64
   %4 = mul nuw nsw i64 %3, %2
-  %5 = icmp ult i64 %4, 2305843009213693952
+  %5 = icmp samesign ult i64 %4, 2305843009213693952
   ret i1 %5
 }
 
@@ -131,12 +145,12 @@ entry:
 ; luajit/optimized/lj_buf.ll
 ; luajit/optimized/lj_buf_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000178(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = zext i32 %0 to i64
   %4 = mul nuw nsw i64 %3, %2
-  %5 = icmp ugt i64 %4, 2147483392
+  %5 = icmp samesign ugt i64 %4, 2147483392
   ret i1 %5
 }
 
@@ -144,7 +158,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = zext nneg i32 %0 to i64
@@ -157,7 +171,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ec(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = zext nneg i32 %0 to i64
@@ -170,7 +184,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000f8(i32 %0, i32 %1) #0 {
 entry:
   %umul = call { i32, i1 } @llvm.umul.with.overflow.i32(i32 %0, i32 %1)
   %2 = extractvalue { i32, i1 } %umul, 1

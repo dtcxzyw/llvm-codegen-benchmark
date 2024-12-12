@@ -1,6 +1,8 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0) #0 {
@@ -20,6 +22,17 @@ entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = mul nsw i32 %1, 217706
   %3 = ashr i32 %2, 16
+  ret i32 %3
+}
+
+; 1 occurrences:
+; linux/optimized/intel_pstate.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = mul i32 %1, 100
+  %3 = ashr i32 %2, 8
   ret i32 %3
 }
 

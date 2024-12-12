@@ -1,6 +1,8 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i1 %0, i64 %1) #0 {
 entry:
@@ -16,7 +18,7 @@ entry:
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(i1 %0, i64 %1) #0 {
+define i64 @func000000000000004a(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = icmp sgt i64 %1, -1

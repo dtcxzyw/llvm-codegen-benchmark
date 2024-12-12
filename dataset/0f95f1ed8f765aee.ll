@@ -1,5 +1,5 @@
 
-; 131 occurrences:
+; 160 occurrences:
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.ARM64.cc.ll
@@ -127,20 +127,50 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; mold/optimized/perf.cc.ll
+; openusd/optimized/adapterManager.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/changeManager.cpp.ll
+; openusd/optimized/dataSourceMaterial.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/dependencyForwardingSceneIndex.cpp.ll
+; openusd/optimized/diagnosticMgr.cpp.ll
+; openusd/optimized/dirtyList.cpp.ll
+; openusd/optimized/dispatcher.cpp.ll
+; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
+; openusd/optimized/materialBindingAPI.cpp.ll
+; openusd/optimized/noticeRegistry.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primGather.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/registry.cpp.ll
+; openusd/optimized/registryManager.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/reporterBase.cpp.ll
+; openusd/optimized/resolvedAttributeCache.cpp.ll
+; openusd/optimized/resolver.cpp.ll
+; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
+; openusd/optimized/stageCacheContext.cpp.ll
+; openusd/optimized/stageSceneIndex.cpp.ll
+; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
+; openusd/optimized/usdzResolver.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
+; turborepo-rs/optimized/2nugbu58bpckifsmteww668r2.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, ptr %1) #0 {
+define i64 @func0000000000000061(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 56
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 56
   %3 = icmp eq ptr %2, %0
   %4 = select i1 %3, i64 3, i64 64
   ret i64 %4
 }
 
-; 190 occurrences:
+; 191 occurrences:
+; llvm/optimized/LoopDistribute.cpp.ll
 ; quantlib/optimized/analytic_cont_geom_av_price.ll
 ; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
 ; quantlib/optimized/analytic_discr_geom_av_price.ll
@@ -332,60 +362,11 @@ entry:
 ; quantlib/optimized/yoyinflationoptionletvolatilitystructure.ll
 ; quantlib/optimized/yoyoptionlethelpers.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(ptr %0, ptr %1) #0 {
+define i64 @func0000000000000064(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 56
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 56
   %3 = icmp ult ptr %2, %0
   %4 = select i1 %3, i64 16, i64 24
-  ret i64 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/LoopDistribute.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000034(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %3 = icmp ult ptr %2, %0
-  %4 = select i1 %3, i64 16, i64 24
-  ret i64 %4
-}
-
-; 28 occurrences:
-; openusd/optimized/adapterManager.cpp.ll
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/changeManager.cpp.ll
-; openusd/optimized/dataSourceMaterial.cpp.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/dependencyForwardingSceneIndex.cpp.ll
-; openusd/optimized/diagnosticMgr.cpp.ll
-; openusd/optimized/dirtyList.cpp.ll
-; openusd/optimized/dispatcher.cpp.ll
-; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
-; openusd/optimized/materialBindingAPI.cpp.ll
-; openusd/optimized/noticeRegistry.cpp.ll
-; openusd/optimized/piPrototypeSceneIndex.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/primGather.cpp.ll
-; openusd/optimized/primTypeIndex.cpp.ll
-; openusd/optimized/registry.cpp.ll
-; openusd/optimized/registryManager.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/reporterBase.cpp.ll
-; openusd/optimized/resolvedAttributeCache.cpp.ll
-; openusd/optimized/resolver.cpp.ll
-; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
-; openusd/optimized/stageCacheContext.cpp.ll
-; openusd/optimized/stageSceneIndex.cpp.ll
-; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
-; openusd/optimized/usdzResolver.cpp.ll
-; openusd/optimized/value.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000031(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 64
-  %3 = icmp eq ptr %2, %0
-  %4 = select i1 %3, i64 63, i64 64
   ret i64 %4
 }
 

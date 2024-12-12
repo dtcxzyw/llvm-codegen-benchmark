@@ -11,7 +11,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 3, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = mul nsw i64 %5, %1
+  %6 = mul nsw i64 %1, %5
   %7 = getelementptr nusw float, ptr %0, i64 %6
   ret ptr %7
 }
@@ -19,13 +19,13 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/allreduce.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i32 1, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = mul i64 %5, %1
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %6 = mul i64 %1, %5
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

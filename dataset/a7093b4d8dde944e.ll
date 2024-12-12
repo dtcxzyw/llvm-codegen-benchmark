@@ -37,7 +37,7 @@ entry:
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/mlib_c_ImageLookUp_f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -51,7 +51,7 @@ entry:
 ; openjdk/optimized/ad_x86.ll
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp eq i32 %3, 8
@@ -66,7 +66,7 @@ entry:
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; openjdk/optimized/ad_x86.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 63
@@ -74,10 +74,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/get_turns.ll
 ; openjdk/optimized/ad_x86.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp ne i32 %3, 64
@@ -88,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/ftp_fopen_wrapper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -102,7 +103,7 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp ugt i32 %3, 536870911
@@ -118,10 +119,10 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-opus.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
-  %4 = icmp ugt i32 %3, 536870911
+  %4 = icmp samesign ugt i32 %3, 536870911
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -129,10 +130,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_vdsc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
-  %4 = icmp ult i32 %3, 30000
+  %4 = icmp samesign ult i32 %3, 30000
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

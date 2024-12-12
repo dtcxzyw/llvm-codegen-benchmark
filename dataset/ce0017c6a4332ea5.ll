@@ -1,6 +1,8 @@
 
-; 102 occurrences:
+; 104 occurrences:
 ; abc/optimized/sclSize.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_world.cpp.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
@@ -110,7 +112,7 @@ entry:
   ret i1 %3
 }
 
-; 49 occurrences:
+; 51 occurrences:
 ; assimp/optimized/ObjExporter.cpp.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -160,6 +162,8 @@ entry:
 ; opencv/optimized/kinfu_frame.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i1 %0, float %1) #0 {
 entry:
@@ -168,7 +172,7 @@ entry:
   ret i1 %3
 }
 
-; 57 occurrences:
+; 58 occurrences:
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; assimp/optimized/TextureTransform.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -211,6 +215,7 @@ entry:
 ; opencv/optimized/region_layer.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
+; opencv/optimized/simpleflow_demo.cpp.ll
 ; opencv/optimized/subdivision2d.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
@@ -292,7 +297,7 @@ entry:
   ret i1 %3
 }
 
-; 99 occurrences:
+; 105 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -322,6 +327,9 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_matrix.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -392,6 +400,9 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, float %1) #0 {
 entry:
@@ -449,7 +460,7 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; opencv/optimized/fast_icp.cpp.ll
 ; opencv/optimized/intersection.cpp.ll
@@ -458,6 +469,8 @@ entry:
 ; opencv/optimized/optical_flow_evaluation.cpp.ll
 ; openjdk/optimized/c1_Canonicalizer.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(i1 %0, float %1) #0 {
 entry:

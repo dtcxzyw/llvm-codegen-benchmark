@@ -11,7 +11,7 @@ entry:
   ret i32 %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; bullet3/optimized/b3Solver.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
@@ -35,7 +35,6 @@ entry:
 ; openusd/optimized/predicateExpression.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
-; wireshark/optimized/mpeg-audio.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {

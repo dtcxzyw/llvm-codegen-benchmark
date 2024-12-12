@@ -1,10 +1,3 @@
-func0000000000000001:                   # @func0000000000000001
-	decl	%edx
-	testb	$1, %dil
-	cmovel	%esi, %edx
-	incl	%edx
-	movslq	%edx, %rax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	addl	$7, %edx
 	testb	$1, %dil
@@ -13,9 +6,8 @@ func0000000000000005:                   # @func0000000000000005
 	movslq	%edx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	incl	%edx
+	decl	%esi
 	testb	$1, %dil
-	cmovel	%esi, %edx
-	decl	%edx
-	movslq	%edx, %rax
+	cmovnel	%edx, %esi
+	movslq	%esi, %rax
 	retq

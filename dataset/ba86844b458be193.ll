@@ -41,7 +41,7 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 7
@@ -63,26 +63,13 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 7
   %5 = icmp eq i64 %4, 0
   %6 = select i1 %5, i64 %0, i64 %1
   %7 = icmp sgt i64 %6, 0
-  ret i1 %7
-}
-
-; 1 occurrences:
-; linux/optimized/string.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = and i64 %3, 7
-  %5 = icmp eq i64 %4, 0
-  %6 = select i1 %5, i64 %0, i64 %1
-  %7 = icmp ugt i64 %6, 7
   ret i1 %7
 }
 

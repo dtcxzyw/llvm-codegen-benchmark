@@ -5,9 +5,9 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000064(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ult ptr %3, %0
   %not. = xor i1 %1, true
   %5 = select i1 %not., i1 %4, i1 false
@@ -24,9 +24,9 @@ entry:
 ; vcpkg/optimized/commands.integrate.cpp.ll
 ; vcpkg/optimized/sourceparagraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000061(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp eq ptr %3, %0
   %5 = select i1 %1, i1 true, i1 %4
   ret i1 %5
@@ -36,9 +36,9 @@ entry:
 ; git/optimized/add-patch.ll
 ; llvm/optimized/SemaStmtAttr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000006c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ne ptr %3, %0
   %not. = xor i1 %1, true
   %5 = select i1 %not., i1 %4, i1 false

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -9,6 +9,7 @@
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; lightgbm/optimized/linkers_socket.cpp.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; slurm/optimized/job_scheduler.ll
@@ -19,12 +20,13 @@
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = mul nsw i64 %3, 666643
   ret i64 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/src.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM64.cc.ll
 ; mold/optimized/passes.cc.LOONGARCH32.cc.ll
@@ -45,7 +47,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = mul i64 %3, -12
   ret i64 %4
 }
@@ -58,7 +60,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = mul nuw nsw i64 %3, 24
   ret i64 %4
 }
@@ -210,7 +212,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = mul i64 %3, 3
   ret i64 %4
 }
@@ -225,7 +227,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul i64 %3, -8
   ret i64 %4
 }
@@ -236,7 +238,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul nuw nsw i64 %3, 24
   ret i64 %4
 }
@@ -251,8 +253,33 @@ entry:
 define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul nuw nsw i64 %3, 40
+  ret i64 %4
+}
+
+; 3 occurrences:
+; boost/optimized/default_filter_factory.ll
+; linux/optimized/elevator.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add i64 %0, %2
+  %4 = mul i64 %3, 10
+  ret i64 %4
+}
+
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000012(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add i64 %0, %2
+  %4 = mul nuw i64 %3, 10
   ret i64 %4
 }
 
@@ -266,7 +293,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul i64 %3, 52369
   ret i64 %4
 }
@@ -286,7 +313,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul nuw nsw i64 %3, 3
   ret i64 %4
 }
@@ -297,7 +324,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = mul i64 %3, -7046029254386353067
   ret i64 %4
 }
@@ -311,7 +338,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = mul i64 %3, 44
   ret i64 %4
 }
@@ -322,7 +349,7 @@ entry:
 define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul i64 %3, 1536
   ret i64 %4
 }
@@ -341,20 +368,8 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = mul nsw i64 %3, 37
-  ret i64 %4
-}
-
-; 2 occurrences:
-; linux/optimized/elevator.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
-  %4 = mul i64 %3, 7046029254386353131
   ret i64 %4
 }
 
@@ -364,7 +379,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul nsw i64 %3, 86400
   ret i64 %4
 }
@@ -376,19 +391,8 @@ entry:
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul nsw i64 %3, -7373
-  ret i64 %4
-}
-
-; 1 occurrences:
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000012(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
-  %4 = mul nuw i64 %3, 10
   ret i64 %4
 }
 

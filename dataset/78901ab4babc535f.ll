@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 33 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -21,7 +21,6 @@
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -31,12 +30,11 @@
 ; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/satTruth.c.ll
 ; abc/optimized/sbdSat.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -5
@@ -54,7 +52,7 @@ entry:
 ; abc/optimized/sfmNtk.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -6
@@ -75,7 +73,7 @@ entry:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -5
@@ -88,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000361(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -1
@@ -101,12 +99,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/rtnetlink.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = shl nuw nsw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -114,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/rapl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000371(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -1
@@ -127,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -31

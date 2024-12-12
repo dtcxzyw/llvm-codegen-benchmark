@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 54 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bullet3/optimized/btCylinderShape.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -53,11 +53,12 @@
 ; pbrt-v4/optimized/transform.cpp.ll
 ; pocketpy/optimized/linalg.cpp.ll
 ; raylib/optimized/rshapes.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:
   %1 = fmul float %0, 5.000000e+00
-  %2 = fmul float %1, %0
+  %2 = fmul float %0, %1
   ret float %2
 }
 

@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovw2m	%xmm1, %k1
 	vpsrld	$1, %ymm2, %ymm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
-	vpcmpnleud	%ymm0, %ymm1, %k0
+	vpcmpltud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovw2m	%xmm1, %k1
 	vpsrld	$6, %ymm2, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
-	vpcmpeqd	%ymm0, %ymm1, %k0
+	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -1,8 +1,9 @@
 
-; 163 occurrences:
+; 161 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/Subdivision.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; bullet3/optimized/b3ConvexUtility.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btConvexPolyhedron.ll
@@ -44,7 +45,6 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/i915_gem.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/AsmWriter.cpp.ll
@@ -80,7 +80,6 @@
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/StandardInstrumentations.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
-; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; luajit/optimized/lj_alloc.ll
@@ -101,7 +100,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -174,6 +172,7 @@ entry:
 
 ; 29 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; c3c/optimized/lexer.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -200,7 +199,6 @@ entry:
 ; mold/optimized/output-chunks.cc.RV64LE.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; openusd/optimized/openexr-c.c.ll
-; postgres/optimized/spgutils.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
@@ -211,8 +209,9 @@ entry:
   ret i64 %4
 }
 
-; 36 occurrences:
+; 34 occurrences:
 ; assimp/optimized/Subdivision.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -230,7 +229,6 @@ entry:
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
@@ -245,8 +243,6 @@ entry:
 ; meshlab/optimized/seam_remover.cpp.ll
 ; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
-; velox/optimized/MmapAllocator.cpp.ll
-; z3/optimized/sat_lookahead.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1) #0 {

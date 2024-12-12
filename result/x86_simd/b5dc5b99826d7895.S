@@ -23,7 +23,7 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000002:                   # @func0000000000000002
 	vpaddq	%ymm2, %ymm2, %ymm2
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI4_0:
 	.quad	16256                           # 0x3f80
@@ -51,7 +51,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000000:                   # @func0000000000000000
 	vpsllq	$3, %ymm2, %ymm2
 	vpandq	.LCPI7_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI8_0:
 	.byte	128                             # 0x80
@@ -125,19 +125,19 @@ func000000000000000b:                   # @func000000000000000b
 	.byte	128                             # 0x80
 func000000000000000a:                   # @func000000000000000a
 	vpshufb	.LCPI9_0(%rip), %ymm2, %ymm2    # ymm2 = zero,ymm2[0],zero,zero,zero,zero,zero,zero,zero,ymm2[8],zero,zero,zero,zero,zero,zero,zero,ymm2[16],zero,zero,zero,zero,zero,zero,zero,ymm2[24],zero,zero,zero,zero,zero,zero
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI10_0:
 	.quad	1920                            # 0x780
 func000000000000000c:                   # @func000000000000000c
 	vpsllq	$7, %ymm2, %ymm2
 	vpandq	.LCPI10_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI11_0:
 	.quad	17179869184                     # 0x400000000
 func0000000000000001:                   # @func0000000000000001
 	vpsllq	$34, %ymm2, %ymm2
 	vpandq	.LCPI11_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq

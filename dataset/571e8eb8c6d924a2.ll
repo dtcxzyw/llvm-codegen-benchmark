@@ -1,9 +1,9 @@
 
-%"struct.TristateVisitor::RefStrength.2637849" = type <{ ptr, %class.VStrength.2637800, [7 x i8] }>
-%class.VStrength.2637800 = type { i8 }
-%class.QCPGraphData.3260420 = type { double, double }
+%"struct.TristateVisitor::RefStrength.2751168" = type <{ ptr, %class.VStrength.2751119, [7 x i8] }>
+%class.VStrength.2751119 = type { i8 }
+%class.QCPGraphData.3451166 = type { double, double }
 
-; 237 occurrences:
+; 239 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
@@ -168,6 +168,8 @@
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; protobuf/optimized/context.cc.ll
+; quantlib/optimized/markovfunctional.ll
+; quantlib/optimized/nonstandardswap.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/prog.cc.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
@@ -242,16 +244,16 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 366 occurrences:
+; 372 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -266,6 +268,12 @@ entry:
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
@@ -371,6 +379,7 @@ entry:
 ; llvm/optimized/ProfileSummaryBuilder.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
@@ -386,7 +395,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -619,12 +627,12 @@ entry:
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = add nsw i64 %2, -2
   %4 = lshr exact i64 %3, 1
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -658,26 +666,12 @@ entry:
 ; yosys/optimized/equiv_induct.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 4
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw %"struct.TristateVisitor::RefStrength.2637849", ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 3 occurrences:
-; quantlib/optimized/floatfloatswap.ll
-; quantlib/optimized/markovfunctional.ll
-; quantlib/optimized/nonstandardswap.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002b(ptr %0, i64 %1) #0 {
-entry:
-  %2 = ashr exact i64 %1, 3
-  %3 = add nsw i64 %2, 63
-  %4 = lshr i64 %3, 6
-  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.TristateVisitor::RefStrength.2751168", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -708,7 +702,7 @@ entry:
   %2 = ashr exact i64 %1, 4
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr %class.QCPGraphData.3260420, ptr %0, i64 %4
+  %5 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %4
   ret ptr %5
 }
 

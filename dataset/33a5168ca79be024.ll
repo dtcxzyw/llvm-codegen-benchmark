@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 13 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; git/optimized/push.ll
@@ -9,10 +9,8 @@
 ; linux/optimized/p4.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
-; openjdk/optimized/c1_LIRGenerator.ll
 ; qemu/optimized/accel_tcg_translate-all.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; ruby/optimized/coverage.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
@@ -24,24 +22,24 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; cpython/optimized/dtoa.ll
-; llvm/optimized/CompilerInvocation.cpp.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 4503599627370496
+  %3 = icmp samesign ult i64 %2, 4503599627370496
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = and i32 %4, 7
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/mpmDsd.c.ll
 ; linux/optimized/tg3.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i64 %2) #0 {
 entry:

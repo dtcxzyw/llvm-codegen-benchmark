@@ -24,3 +24,13 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$60000000, %eax                 # imm = 0x3938700
 	cmovlq	%rdi, %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpq	$7, %rdi
+	movl	$5, %eax
+	cmovbq	%rdi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$80, %rdi
+	movl	$64, %eax
+	cmovaeq	%rdi, %rax
+	retq

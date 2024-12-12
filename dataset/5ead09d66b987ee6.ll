@@ -1,7 +1,7 @@
 
-%"struct.std::pair.28.2486663" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
 
-; 243 occurrences:
+; 244 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; arrow/optimized/expression.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -181,6 +181,7 @@
 ; mold/optimized/thunks.cc.PPC64V1.cc.ll
 ; mold/optimized/thunks.cc.PPC64V2.cc.ll
 ; nix/optimized/nixexpr.ll
+; oiio/optimized/deepdata.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
@@ -246,9 +247,9 @@
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000226(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.std::pair.28.2486663", ptr %2, i64 %0
+  %3 = getelementptr nusw %"struct.std::pair.28.2602107", ptr %2, i64 %0
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = ashr exact i64 %5, 4
@@ -256,16 +257,15 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
-; eastl/optimized/BenchmarkSort.cpp.ll
-; oiio/optimized/deepdata.cpp.ll
+; 1 occurrences:
+; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i32, ptr %2, i64 %0
+  %3 = getelementptr ptr, ptr %2, i64 %0
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
-  %6 = ashr exact i64 %5, 2
+  %6 = ashr exact i64 %5, 3
   %7 = icmp slt i64 %6, %0
   ret i1 %7
 }
@@ -274,9 +274,9 @@ entry:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000032a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i32, ptr %2, i64 %0
+  %3 = getelementptr nusw nuw i32, ptr %2, i64 %0
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = ashr exact i64 %5, 2
@@ -287,7 +287,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/sre.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i32, ptr %2, i64 %0
   %4 = ptrtoint ptr %3 to i64

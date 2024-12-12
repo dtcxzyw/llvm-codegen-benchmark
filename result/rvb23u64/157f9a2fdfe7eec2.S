@@ -28,6 +28,16 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	ori	a0, a0, 4
 	ret
+func0000000000000031:                   # @func0000000000000031
+	andi	a0, a0, 1
+	srliw	a2, a2, 23
+	snez	a2, a2
+	addi	a2, a2, 2
+	czero.eqz	a1, a1, a0
+	czero.nez	a0, a2, a0
+	or	a0, a0, a1
+	ori	a0, a0, 4
+	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 1
 	ori	a1, a1, 2

@@ -1,6 +1,7 @@
 
-; 210 occurrences:
+; 209 occurrences:
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/xxhash.c.ll
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/introspection_censorize.c.ll
@@ -20,8 +21,6 @@
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
-; folly/optimized/F14Table.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -248,19 +247,6 @@ entry:
   %3 = xor i64 %2, %1
   %4 = mul i64 %3, 21
   %5 = lshr i64 %4, 28
-  ret i64 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/MIRFSDiscriminator.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0) #0 {
-entry:
-  %1 = mul i64 %0, -4658895280553007687
-  %2 = lshr i64 %1, 31
-  %3 = xor i64 %2, %1
-  %4 = mul i64 %3, 2082041510483722240
-  %5 = lshr exact i64 %4, 31
   ret i64 %5
 }
 

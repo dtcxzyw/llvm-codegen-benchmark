@@ -1,7 +1,11 @@
 
-; 159 occurrences:
+; 163 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; assimp/optimized/ASELoader.cpp.ll
+; boost/optimized/graphml.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/init_from_stream.ll
+; boost/optimized/settings_parser.ll
 ; folly/optimized/TimeoutQueue.cpp.ll
 ; hermes/optimized/CodeMotion.cpp.ll
 ; hermes/optimized/IR.cpp.ll
@@ -160,7 +164,7 @@
 ; openusd/optimized/jsonSerialization.cpp.ll
 ; openusd/optimized/testTraceEventContainer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
@@ -180,7 +184,7 @@ entry:
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
@@ -197,7 +201,7 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
@@ -208,7 +212,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/escape.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000029(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
@@ -219,7 +223,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/rbutil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000028(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ugt ptr %1, %0

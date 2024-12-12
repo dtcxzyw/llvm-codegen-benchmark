@@ -1,16 +1,16 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setl	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
 	cmpq	%rdi, %rdx
@@ -22,7 +22,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	movl	%edx, %eax
 	shlq	$21, %rax
 	orq	%rsi, %rax
@@ -35,20 +35,20 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movl	%edx, %eax
 	shlq	$21, %rax
 	orq	%rsi, %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func0000000000000059:                   # @func0000000000000059
+func00000000000000a9:                   # @func00000000000000a9
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
 	cmpq	%rdi, %rdx

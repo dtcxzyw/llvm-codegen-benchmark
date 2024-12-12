@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; libpng/optimized/png.c.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/osl.ll
 ; openjdk/optimized/png.ll
 ; qemu/optimized/ui_console-vc.c.ll
@@ -30,6 +29,18 @@ entry:
   %3 = and i16 %2, 4
   %4 = or disjoint i16 %3, %0
   %5 = zext nneg i16 %4 to i32
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i16 %0, i16 %1) #0 {
+entry:
+  %2 = shl nuw i16 %1, 8
+  %3 = and i16 %2, -2048
+  %4 = or disjoint i16 %0, %3
+  %5 = zext i16 %4 to i32
   ret i32 %5
 }
 

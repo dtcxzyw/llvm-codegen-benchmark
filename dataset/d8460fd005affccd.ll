@@ -21,7 +21,7 @@
 ; sentencepiece/optimized/filesystem.cc.ll
 ; yalantinglibs/optimized/client.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, -1
@@ -40,7 +40,7 @@ entry:
 ; assimp/optimized/mesh_splitter.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 0
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/tm_mapping.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000010c(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ugt i32 %2, 5

@@ -13,7 +13,7 @@
 ; openmpi/optimized/pmix_ring_buffer.ll
 ; openusd/optimized/obu.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 1
   %3 = icmp eq i32 %0, %1
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/job_info.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 1
   %.not = icmp ult i32 %0, %1
@@ -61,7 +61,7 @@ entry:
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 1
   %.not = icmp slt i32 %0, %1

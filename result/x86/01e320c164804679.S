@@ -3,8 +3,9 @@ func0000000000000003:                   # @func0000000000000003
 	decl	%eax
 	retq
 func0000000000000007:                   # @func0000000000000007
+	addb	$7, %dil
+	andb	$56, %dil
 	movzbl	%dil, %eax
-	addl	$-32, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movzbl	%dil, %eax

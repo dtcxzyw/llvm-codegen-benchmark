@@ -37,21 +37,9 @@ define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i64 %0, 32
   %.tr = trunc nuw i64 %2 to i32
-  %.narrow = add i32 %.tr, %1
+  %.narrow = add i32 %1, %.tr
   %3 = zext i32 %.narrow to i64
   ret i64 %3
-}
-
-; 1 occurrences:
-; linux/optimized/drm_self_refresh_helper.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 4
-  %4 = add i64 %3, %0
-  %5 = lshr i64 %4, 2
-  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -73,7 +61,7 @@ define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i64 %0, 32
   %.tr = trunc nuw i64 %2 to i32
-  %.narrow = add i32 %.tr, %1
+  %.narrow = add i32 %1, %.tr
   %3 = zext i32 %.narrow to i64
   ret i64 %3
 }

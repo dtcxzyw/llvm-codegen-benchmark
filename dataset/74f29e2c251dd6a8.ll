@@ -11,7 +11,7 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; clamav/optimized/vba_extract.c.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; icu/optimized/number_grouping.ll
@@ -29,6 +29,8 @@ entry:
 ; spike/optimized/kstas16.ll
 ; spike/optimized/kstsa16.ll
 ; wireshark/optimized/packet-erf.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -38,11 +40,12 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; spike/optimized/kcras16.ll
 ; spike/optimized/kcrsa16.ll
 ; spike/optimized/kstas16.ll
 ; spike/optimized/kstsa16.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i16 %1, i16 %2) #0 {
 entry:

@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; qemu/optimized/fdt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000288(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -15,22 +15,21 @@ entry:
 ; graphviz/optimized/gvgetfontlist_pango.c.ll
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000168(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000002c8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
-; 114 occurrences:
+; 113 occurrences:
 ; cvc5/optimized/arith_rewriter.cpp.ll
 ; cvc5/optimized/constraint.cpp.ll
 ; cvc5/optimized/ff_bitsum.cpp.ll
 ; cvc5/optimized/theory_ff_rewriter.cpp.ll
 ; cvc5/optimized/theory_strings_utils.cpp.ll
-; hyperscan/optimized/limex_compile.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -140,12 +139,12 @@ entry:
 ; protobuf/optimized/naming.cc.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000002c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw ptr, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -153,24 +152,24 @@ entry:
 ; cmake/optimized/divsufsort.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000002c4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; eastl/optimized/TestVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000169(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000002c9(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = icmp ule ptr %5, %0
+  %6 = icmp uge ptr %0, %5
   ret i1 %6
 }
 

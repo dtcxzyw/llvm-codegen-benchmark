@@ -1,19 +1,12 @@
 
-; 12 occurrences:
-; abc/optimized/adler32.c.ll
-; cmake/optimized/adler32.c.ll
+; 5 occurrences:
 ; cpython/optimized/crt.ll
-; cpython/optimized/longobject.ll
 ; eastl/optimized/TestBitset.cpp.ll
-; gromacs/optimized/adler32.c.ll
-; libquic/optimized/adler32.c.ll
 ; openssl/optimized/clienthellotest-bin-clienthellotest.ll
 ; openssl/optimized/servername_test-bin-servername_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
-; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
-; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0) #0 {
+define i64 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -34
   %2 = icmp ugt i64 %0, 33
@@ -66,7 +59,6 @@ entry:
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
 ; libevent/optimized/evutil_time.c.ll
-; libquic/optimized/d1_lib.c.ll
 ; php/optimized/network.ll
 ; php/optimized/tm2unixtime.ll
 ; php/optimized/unixtime2tm.ll
@@ -78,8 +70,9 @@ entry:
 ; quantlib/optimized/lecuyeruniformrng.ll
 ; redis/optimized/object.ll
 ; velox/optimized/Timestamp.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0) #0 {
+define i64 @func0000000000000026(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1000000
   %2 = icmp slt i64 %0, 0
@@ -89,20 +82,37 @@ entry:
 
 ; 10 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/ProcessUNIX.c.ll
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/eathread_pool.cpp.ll
-; libevent/optimized/evthread_pthread.c.ll
 ; libquic/optimized/quic_connection.cc.ll
 ; lua/optimized/lutf8lib.ll
 ; openspiel/optimized/backgammon.cc.ll
 ; php/optimized/dow.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0) #0 {
+define i64 @func000000000000002a(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -7
   %2 = icmp sgt i64 %0, 4
+  %3 = select i1 %2, i64 %1, i64 %0
+  ret i64 %3
+}
+
+; 7 occurrences:
+; abc/optimized/adler32.c.ll
+; cmake/optimized/adler32.c.ll
+; cpython/optimized/longobject.ll
+; gromacs/optimized/adler32.c.ll
+; libquic/optimized/adler32.c.ll
+; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
+; zlib/optimized/adler32.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000038(i64 %0) #0 {
+entry:
+  %1 = add nsw i64 %0, -576460752303423488
+  %2 = icmp samesign ugt i64 %0, 576460752303423488
   %3 = select i1 %2, i64 %1, i64 %0
   ret i64 %3
 }
@@ -133,10 +143,10 @@ entry:
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0) #0 {
+define i64 @func0000000000000074(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 1900
-  %2 = icmp ult i64 %0, 100
+  %2 = icmp samesign ult i64 %0, 100
   %3 = select i1 %2, i64 %1, i64 %0
   ret i64 %3
 }
@@ -144,7 +154,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/unicodedata.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i64 %0) #0 {
+define i64 @func0000000000000066(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 10
   %2 = icmp slt i64 %0, 9223372036854775798

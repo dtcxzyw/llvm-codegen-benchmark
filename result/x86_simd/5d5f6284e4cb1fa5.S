@@ -21,7 +21,7 @@ func0000000000000085:                   # @func0000000000000085
 	vpbroadcastd	.LCPI1_1(%rip), %xmm2   # xmm2 = [18,18,18,18]
 	vpbroadcastd	.LCPI1_2(%rip), %xmm2 {%k1} # xmm2 {%k1} = [19,19,19,19]
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI2_0:
@@ -47,14 +47,14 @@ func00000000000000a0:                   # @func00000000000000a0
 	vpbroadcastd	.LCPI3_1(%rip), %xmm2   # xmm2 = [7,7,7,7]
 	vpbroadcastd	.LCPI3_2(%rip), %xmm2 {%k1} # xmm2 {%k1} = [11,11,11,11]
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI4_0:
 	.quad	4096                            # 0x1000
 .LCPI4_1:
 	.long	13                              # 0xd
-func000000000000004f:                   # @func000000000000004f
+func000000000000014f:                   # @func000000000000014f
 	vpcmpnltuq	.LCPI4_0(%rip){1to4}, %ymm2, %k1
 	vpaddd	.LCPI4_1(%rip){1to4}, %xmm1, %xmm1 {%k1}
 	vpaddd	%xmm0, %xmm1, %xmm0
@@ -69,7 +69,7 @@ func000000000000001f:                   # @func000000000000001f
 	vpbroadcastd	.LCPI5_0(%rip), %xmm2   # xmm2 = [408,408,408,408]
 	vpbroadcastd	.LCPI5_1(%rip), %xmm2 {%k1} # xmm2 {%k1} = [8,8,8,8]
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI6_0:
@@ -78,7 +78,7 @@ func000000000000001f:                   # @func000000000000001f
 	.long	17                              # 0x11
 .LCPI6_2:
 	.long	16                              # 0x10
-func0000000000000045:                   # @func0000000000000045
+func0000000000000145:                   # @func0000000000000145
 	vpcmpltuq	.LCPI6_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastd	.LCPI6_1(%rip), %xmm2   # xmm2 = [17,17,17,17]
 	vpbroadcastd	.LCPI6_2(%rip), %xmm2 {%k1} # xmm2 {%k1} = [16,16,16,16]

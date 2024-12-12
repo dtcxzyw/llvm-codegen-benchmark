@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
-	andl	$-256, %esi
-	cmpl	$1073758976, %esi               # imm = 0x40004300
+	andl	$-64, %esi
+	cmpl	$448, %esi                      # imm = 0x1C0
 	sete	%al
 	andb	%dil, %al
 	retq

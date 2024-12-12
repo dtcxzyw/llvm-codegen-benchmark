@@ -42,7 +42,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -80,7 +80,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -92,7 +92,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 31
   %4 = shl nsw i32 -1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -266,7 +266,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -313,7 +313,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 31
   %4 = shl nsw i32 -1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

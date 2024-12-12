@@ -30,11 +30,20 @@ func0000000000000008:                   # @func0000000000000008
 	vzeroupper
 	retq
 .LCPI4_0:
+	.long	99999999                        # 0x5f5e0ff
+func0000000000000018:                   # @func0000000000000018
+	vpsrlvq	%ymm1, %ymm0, %ymm0
+	vpmovqd	%ymm0, %xmm0
+	vpcmpnleud	.LCPI4_0(%rip){1to4}, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
 	.long	1                               # 0x1
 func0000000000000006:                   # @func0000000000000006
 	vpsrlvq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
-	vpbroadcastd	.LCPI4_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpbroadcastd	.LCPI5_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq

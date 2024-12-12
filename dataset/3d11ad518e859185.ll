@@ -1,10 +1,9 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_regr.cpp.ll
 ; gromacs/optimized/colvarbias_alb.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; libquic/optimized/histogram.cc.ll
 ; nori/optimized/ttest.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
@@ -20,7 +19,7 @@ define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %2, %0
   %4 = fdiv double %3, %1
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 

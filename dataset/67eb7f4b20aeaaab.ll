@@ -1,5 +1,5 @@
 
-; 853 occurrences:
+; 847 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaOf.c.ll
@@ -40,9 +40,11 @@
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/core.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -80,9 +82,7 @@
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; folly/optimized/FiberManager.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -107,7 +107,6 @@
 ; folly/optimized/dynamic.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
 ; g2o/optimized/sampler.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; gromacs/optimized/coolstuff.cpp.ll
 ; gromacs/optimized/seed.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
@@ -532,7 +531,6 @@
 ; memcached/optimized/memcached_debug-hash.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -546,7 +544,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -626,7 +623,6 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-set.ll
 ; openjdk/optimized/shenandoahEvacOOMHandler.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
@@ -735,7 +731,6 @@
 ; quantlib/optimized/sobolrsg.ll
 ; quantlib/optimized/xoshiro256starstaruniformrng.ll
 ; quantlib/optimized/zigguratrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rcore.c.ll
 ; rayon-rs/optimized/5ev50in5ju1pej99.ll
@@ -745,7 +740,6 @@
 ; redis/optimized/dict.ll
 ; redis/optimized/hyperloglog.ll
 ; redis/optimized/memtest.ll
-; redis/optimized/mt19937-64.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/cache_key.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll

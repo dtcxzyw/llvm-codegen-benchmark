@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 41 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/darCore.c.ll
@@ -8,6 +8,8 @@
 ; abseil-cpp/optimized/crc.cc.ll
 ; arrow/optimized/crc32.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
 ; clamav/optimized/XzDec.c.ll
 ; cmake/optimized/bzlib.c.ll
 ; cmake/optimized/crc32_fast.c.ll
@@ -59,7 +61,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

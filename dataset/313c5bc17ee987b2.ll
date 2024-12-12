@@ -14,7 +14,8 @@ entry:
   ret i64 %2
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/approximately_equals.ll
 ; libquic/optimized/p224-64.c.ll
 ; llvm/optimized/xxhash.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
@@ -316,13 +317,14 @@ entry:
   ret i64 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i128 %0) #0 {
 entry:
   %1 = trunc nuw nsw i128 %0 to i64
-  %2 = shl i64 %1, 51
+  %2 = shl i64 %1, 32
   ret i64 %2
 }
 

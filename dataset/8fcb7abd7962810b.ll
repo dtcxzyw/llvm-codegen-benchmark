@@ -27,7 +27,7 @@ entry:
   ret i1 %4
 }
 
-; 136 occurrences:
+; 135 occurrences:
 ; abc/optimized/cuddAddIte.c.ll
 ; abc/optimized/cuddBddIte.c.ll
 ; abc/optimized/cuddZddSetop.c.ll
@@ -35,6 +35,7 @@ entry:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/FBXProperties.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/mbox.c.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; cmake/optimized/cmCTestP4.cxx.ll
@@ -46,7 +47,6 @@ entry:
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
 ; cmake/optimized/cmOrderDirectories.cxx.ll
-; cmake/optimized/vli_encoder.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; cpython/optimized/setobject.ll
 ; cvc5/optimized/array_info.cpp.ll
@@ -81,7 +81,6 @@ entry:
 ; glslang/optimized/Initialize.cpp.ll
 ; graphviz/optimized/strmatch.c.ll
 ; gromacs/optimized/keyvaluetreetransform.cpp.ll
-; gromacs/optimized/scan.cpp.ll
 ; grpc/optimized/outlier_detection.cc.ll
 ; grpc/optimized/xds_certificate_provider.cc.ll
 ; grpc/optimized/xds_override_host.cc.ll
@@ -172,10 +171,9 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; assimp/optimized/XmlSerializer.cpp.ll
-; cmake/optimized/vli_encoder.c.ll
 ; cvc5/optimized/arith_ite_utils.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll

@@ -1,11 +1,10 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; libwebp/optimized/webp_enc.c.ll
 ; llvm/optimized/DbiStream.cpp.ll
 ; luau/optimized/lgc.cpp.ll
 ; luau/optimized/lgcdebug.cpp.ll
 ; oiio/optimized/icooutput.cpp.ll
-; php/optimized/dow.ll
 ; ruby/optimized/io.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; Function Attrs: nounwind
@@ -50,7 +49,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -41212800
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = add nsw i64 %4, %5
   ret i64 %6

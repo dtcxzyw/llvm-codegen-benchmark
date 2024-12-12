@@ -13,7 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, -1
 	slli	a0, a0, 32
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vor.vi	v8, v8, 2
 	ret
 func0000000000000000:                   # @func0000000000000000
@@ -22,7 +22,7 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, -1
 	slli	a0, a0, 32
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vor.vi	v8, v8, 2
 	ret
 .LCPI3_0:

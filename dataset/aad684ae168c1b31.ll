@@ -8,12 +8,12 @@
 ; linux/optimized/generic.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/rscalc.ll
+; lvgl/optimized/lv_indev.ll
 ; minetest/optimized/areastore.cpp.ll
 ; node/optimized/libnode.Protocol.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/softimageinput.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; openjdk/optimized/utf8.ll
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; wireshark/optimized/packet-aprs.c.ll
@@ -111,13 +111,15 @@ entry:
   ret i16 %2
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; icu/optimized/ufmt_cmn.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i8 %0) #0 {
 entry:
@@ -126,10 +128,12 @@ entry:
   ret i16 %2
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/uri.cc.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/port_rule.ll
 ; git/optimized/fast-import.ll
 ; linux/optimized/intel_bios.ll
 ; openjdk/optimized/check_classname.ll

@@ -7,7 +7,7 @@ entry:
   %3 = and i32 %2, 2047
   %4 = sub nuw nsw i32 2048, %3
   %5 = select i1 %1, i32 0, i32 %4
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 
@@ -28,7 +28,7 @@ entry:
   %3 = and i32 %2, 511
   %4 = sub nuw nsw i32 512, %3
   %5 = select i1 %1, i32 0, i32 %4
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -42,7 +42,7 @@ entry:
   %3 = and i32 %2, 3
   %4 = sub nuw nsw i32 4, %3
   %5 = select i1 %1, i32 0, i32 %4
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 

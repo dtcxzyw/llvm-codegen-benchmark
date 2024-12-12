@@ -11,9 +11,9 @@ func0000000000000003:                   # @func0000000000000003
 	vand.vi	v12, v12, -2
 	vmseq.vi	v0, v12, 2
 	vmerge.vim	v10, v10, 2, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	li	a0, 7
 	slli	a0, a0, 9
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -22,5 +22,5 @@ func0000000000000011:                   # @func0000000000000011
 	slli	a0, a0, 8
 	vmsgtu.vx	v0, v12, a0
 	vmerge.vim	v10, v10, 9, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

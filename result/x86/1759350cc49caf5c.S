@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testb	$1, %sil
 	movl	$26, %eax
 	movl	$161, %ecx
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	cmpl	%edi, %ecx
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	shrq	$56, %rsi
 	andl	$1, %esi
 	shll	$5, %esi
@@ -14,10 +14,24 @@ func0000000000000014:                   # @func0000000000000014
 	cmpl	%edi, %esi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000024:                   # @func0000000000000024
+	xorl	%eax, %eax
+	btq	$41, %rsi
+	adcl	$1, %eax
+	cmpl	%edi, %eax
+	setb	%al
+	retq
+func0000000000000038:                   # @func0000000000000038
 	xorl	%eax, %eax
 	btq	$36, %rsi
 	adcl	$1, %eax
+	cmpl	%edi, %eax
+	seta	%al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpl	$1, %esi
+	movl	$21, %eax
+	sbbl	$0, %eax
 	cmpl	%edi, %eax
 	seta	%al
 	retq

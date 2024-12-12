@@ -10,16 +10,16 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$2, %eax
 	sete	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	andl	$-2147483585, %edi              # imm = 0x8000003F
 	cmpl	$-2147483647, %edi              # imm = 0x80000001
 	setae	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testb	$7, %dil
 	setne	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	imull	$-1431655765, %edi, %eax        # imm = 0xAAAAAAAB
 	addl	$715827880, %eax                # imm = 0x2AAAAAA8
 	rorxl	$3, %eax, %eax

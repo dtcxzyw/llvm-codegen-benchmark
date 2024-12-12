@@ -6,7 +6,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -19,7 +19,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 

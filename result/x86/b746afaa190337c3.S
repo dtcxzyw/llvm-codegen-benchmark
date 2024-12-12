@@ -1,11 +1,11 @@
-func0000000000000068:                   # @func0000000000000068
+func00000000000000d8:                   # @func00000000000000d8
 	movl	$8, %eax
 	subl	%esi, %eax
 	shrl	$3, %edi
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movl	$8, %eax
 	subl	%esi, %eax
 	shrl	$3, %edi
@@ -24,7 +24,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000058:                   # @func0000000000000058
 	xorl	$2147483647, %esi               # imm = 0x7FFFFFFF
 	shrl	%edi
 	cmpl	%esi, %edi

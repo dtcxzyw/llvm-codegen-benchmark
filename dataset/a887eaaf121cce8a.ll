@@ -18,24 +18,11 @@ entry:
   %3 = and i8 %2, 1
   %4 = icmp ne i8 %3, 0
   %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 2 occurrences:
-; image-rs/optimized/5ez7udly19o3uj1p.ll
-; typst-rs/optimized/26ex1w19ixz6ifuk.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = and i8 %2, 14
-  %4 = icmp ne i8 %3, 0
-  %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 15 occurrences:
+; 14 occurrences:
 ; git/optimized/refs.ll
 ; glslang/optimized/hlslParseables.cpp.ll
 ; linux/optimized/nl80211.ll
@@ -43,10 +30,9 @@ entry:
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/WinEHPrepare.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; openjdk/optimized/verifier.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; postgres/optimized/data.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-atm.c.ll
 ; wireshark/optimized/packet-epl.c.ll
@@ -54,9 +40,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = and i8 %2, 32
-  %4 = icmp eq i8 %3, 0
-  %5 = and i1 %4, %1
+  %3 = and i8 %2, -4
+  %4 = icmp eq i8 %3, -8
+  %5 = and i1 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }

@@ -1,19 +1,19 @@
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	incl	%edi
 	cmpw	%si, %di
 	setb	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	incl	%edi
 	cmpw	%si, %di
 	setb	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	incl	%edi
 	cmpw	%si, %di
 	setb	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	incl	%edi
 	cmpw	%si, %di
 	seta	%al
@@ -23,17 +23,17 @@ func0000000000000008:                   # @func0000000000000008
 	cmpw	%si, %di
 	seta	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
-	incl	%edi
-	cmpw	%si, %di
-	sete	%al
-	retq
 func0000000000000001:                   # @func0000000000000001
 	incl	%edi
 	cmpw	%si, %di
 	sete	%al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000041:                   # @func0000000000000041
+	incl	%edi
+	cmpw	%si, %di
+	sete	%al
+	retq
+func0000000000000184:                   # @func0000000000000184
 	decl	%edi
 	cmpw	%si, %di
 	setb	%al

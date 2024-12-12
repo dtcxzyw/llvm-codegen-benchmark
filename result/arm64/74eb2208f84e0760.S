@@ -1,73 +1,48 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fcvtzs	v2.4s, v2.4s
-	fcvtzs	v3.4s, v3.4s
-	fcvtzs	v0.4s, v0.4s
-	fcvtzs	v1.4s, v1.4s
-	cmgt	v0.4s, v0.4s, v2.4s
-	cmgt	v1.4s, v1.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	fcvtzs	w8, s1
+	fcvtzs	w9, s0
+	cmp	w9, w8
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	fcvtzs	v2.4s, v2.4s
-	fcvtzs	v3.4s, v3.4s
-	fcvtzs	v0.4s, v0.4s
-	fcvtzs	v1.4s, v1.4s
-	cmgt	v0.4s, v2.4s, v0.4s
-	cmgt	v1.4s, v3.4s, v1.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	fcvtzs	w8, s1
+	fcvtzs	w9, s0
+	cmp	w9, w8
+	cset	w0, lt
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fcvtzs	v2.4s, v2.4s
-	fcvtzs	v3.4s, v3.4s
-	fcvtzs	v0.4s, v0.4s
-	fcvtzs	v1.4s, v1.4s
-	cmeq	v0.4s, v0.4s, v2.4s
-	cmeq	v1.4s, v1.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	fcvtzs	w8, s1
+	fcvtzs	w9, s0
+	cmp	w9, w8
+	cset	w0, eq
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	fcvtzs	v2.4s, v2.4s
-	fcvtzs	v3.4s, v3.4s
-	fcvtzs	v0.4s, v0.4s
-	fcvtzs	v1.4s, v1.4s
-	cmeq	v0.4s, v0.4s, v2.4s
-	cmeq	v1.4s, v1.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	fcvtzs	w8, s1
+	fcvtzs	w9, s0
+	cmp	w9, w8
+	cset	w0, ne
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	fcvtzs	v2.4s, v2.4s
-	fcvtzs	v3.4s, v3.4s
-	fcvtzs	v0.4s, v0.4s
-	fcvtzs	v1.4s, v1.4s
-	cmge	v0.4s, v2.4s, v0.4s
-	cmge	v1.4s, v3.4s, v1.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	fcvtzs	w8, s1
+	fcvtzs	w9, s0
+	cmp	w9, w8
+	cset	w0, le
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	fcvtzs	v2.4s, v2.4s
-	fcvtzs	v3.4s, v3.4s
-	fcvtzs	v0.4s, v0.4s
-	fcvtzs	v1.4s, v1.4s
-	cmge	v0.4s, v0.4s, v2.4s
-	cmge	v1.4s, v1.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	fcvtzs	w8, s1
+	fcvtzs	w9, s0
+	cmp	w9, w8
+	cset	w0, ge
 	ret
                                         // -- End function

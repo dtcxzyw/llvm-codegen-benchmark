@@ -1,14 +1,15 @@
 
-%struct.VuVirtq.2593021 = type { %struct.VuRing.2593022, ptr, ptr, i16, i64, i16, i16, i16, i16, i8, i8, i32, ptr, i32, i32, i32, i32, i8, %struct.vhost_vring_addr.2593023 }
-%struct.VuRing.2593022 = type { i32, ptr, ptr, ptr, i64, i32 }
-%struct.vhost_vring_addr.2593023 = type { i32, i32, i64, i64, i64, i64 }
-%struct.CacheSet.2595264 = type { ptr, ptr, i64, ptr }
-%"struct.btSoftBody::Node.2706815" = type <{ %"struct.btSoftBody::Feature.2706816", %class.btVector3.2706810, %class.btVector3.2706810, %class.btVector3.2706810, %class.btVector3.2706810, %class.btVector3.2706810, %class.btVector3.2706810, float, float, ptr, i32, i8, [3 x i8], i32, %class.btVector3.2706810, %class.btMatrix3x3.2706813, %class.btMatrix3x3.2706813, [4 x i8] }>
-%"struct.btSoftBody::Feature.2706816" = type { %"struct.btSoftBody::Element.2706817", ptr }
-%"struct.btSoftBody::Element.2706817" = type { ptr }
-%class.btVector3.2706810 = type { [4 x float] }
-%class.btMatrix3x3.2706813 = type { [3 x %class.btVector3.2706810] }
-%struct._PyCoLineInstrumentationData.3810097 = type { i8, i8 }
+%struct.VuVirtq.2706746 = type { %struct.VuRing.2706747, ptr, ptr, i16, i64, i16, i16, i16, i16, i8, i8, i32, ptr, i32, i32, i32, i32, i8, %struct.vhost_vring_addr.2706748 }
+%struct.VuRing.2706747 = type { i32, ptr, ptr, ptr, i64, i32 }
+%struct.vhost_vring_addr.2706748 = type { i32, i32, i64, i64, i64, i64 }
+%struct.CacheSet.2708850 = type { ptr, ptr, i64, ptr }
+%"struct.btSoftBody::Node.2819528" = type <{ %"struct.btSoftBody::Feature.2819529", %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, float, float, ptr, i32, i8, [3 x i8], i32, %class.btVector3.2819523, %class.btMatrix3x3.2819526, %class.btMatrix3x3.2819526, [4 x i8] }>
+%"struct.btSoftBody::Feature.2819529" = type { %"struct.btSoftBody::Element.2819530", ptr }
+%"struct.btSoftBody::Element.2819530" = type { ptr }
+%class.btVector3.2819523 = type { [4 x float] }
+%class.btMatrix3x3.2819526 = type { [3 x %class.btVector3.2819523] }
+%struct.Column.3662203 = type { ptr, i8, i8, i8, i8, i16, i16 }
+%struct._PyCoLineInstrumentationData.3988294 = type { i8, i8 }
 
 ; 9 occurrences:
 ; abc/optimized/giaUtil.c.ll
@@ -25,11 +26,11 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr %struct.VuVirtq.2593021, ptr %0, i64 %3, i32 14
+  %4 = getelementptr %struct.VuVirtq.2706746, ptr %0, i64 %3, i32 14
   ret ptr %4
 }
 
-; 76 occurrences:
+; 73 occurrences:
 ; abc/optimized/bmcBmcG.c.ll
 ; abc/optimized/bmcBmcS.c.ll
 ; abc/optimized/giaDup.c.ll
@@ -41,7 +42,6 @@ entry:
 ; assimp/optimized/zip.c.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btSoftBody.ll
-; cmake/optimized/huf_compress.c.ll
 ; cvc5/optimized/ceg_instantiator.cpp.ll
 ; cvc5/optimized/minisat.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -72,7 +72,6 @@ entry:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -105,13 +104,12 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
-; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw %struct.CacheSet.2595264, ptr %0, i64 %3, i32 3
+  %4 = getelementptr nusw %struct.CacheSet.2708850, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -124,7 +122,18 @@ define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 24
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %"struct.btSoftBody::Node.2706815", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.btSoftBody::Node.2819528", ptr %0, i64 %3, i32 1
+  ret ptr %4
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 16
+  %3 = ashr exact i64 %2, 16
+  %4 = getelementptr nusw nuw %struct.Column.3662203, ptr %0, i64 %3, i32 6
   ret ptr %4
 }
 
@@ -135,7 +144,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 31
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %struct._PyCoLineInstrumentationData.3810097, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct._PyCoLineInstrumentationData.3988294, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

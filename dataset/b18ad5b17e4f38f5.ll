@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 37 occurrences:
 ; abc/optimized/sclBuffer.c.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
@@ -18,6 +18,11 @@
 ; darktable/optimized/introspection_spots.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; imgui/optimized/imgui.cpp.ll
+; lvgl/optimized/lv_draw_line.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_draw_triangle.ll
+; lvgl/optimized/lv_matrix.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; ncnn/optimized/gridsample_x86.cpp.ll
@@ -41,11 +46,18 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; darktable/optimized/introspection_bilat.c.ll
 ; darktable/optimized/introspection_soften.c.ll
 ; gromacs/optimized/gmx_cluster.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_line.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_draw_triangle.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_matrix.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; opencv/optimized/quasi_dense_stereo.cpp.ll
 ; raylib/optimized/rtextures.c.ll

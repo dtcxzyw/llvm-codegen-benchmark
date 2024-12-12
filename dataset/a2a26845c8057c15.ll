@@ -12,7 +12,7 @@ entry:
   ret i64 %4
 }
 
-; 137 occurrences:
+; 136 occurrences:
 ; cpython/optimized/dictobject.ll
 ; hdf5/optimized/H5FAcache.c.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
@@ -108,7 +108,6 @@ entry:
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -155,7 +154,7 @@ define i64 @func0000000000000018(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -166,11 +165,11 @@ define i64 @func000000000000001d(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 179 occurrences:
+; 178 occurrences:
 ; brotli/optimized/static_dict.c.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
@@ -305,7 +304,6 @@ entry:
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -355,7 +353,7 @@ define i64 @func000000000000001a(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -372,7 +370,7 @@ define i64 @func000000000000001c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -395,7 +393,7 @@ define i64 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -418,7 +416,7 @@ define i64 @func0000000000000010(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl i64 64, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

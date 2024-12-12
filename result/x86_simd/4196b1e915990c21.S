@@ -1,7 +1,7 @@
 .LCPI0_0:
 	.long	1                               # 0x1
 .LCPI0_1:
-	.quad	256                             # 0x100
+	.quad	2                               # 0x2
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

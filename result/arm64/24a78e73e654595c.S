@@ -1,54 +1,24 @@
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	ushll	v3.8h, v2.8b, #0
-	ushll2	v2.8h, v2.16b, #0
-	mov	v4.16b, v1.16b
-	mov	v5.16b, v0.16b
-	shl	v3.8h, v3.8h, #15
-	shl	v2.8h, v2.8h, #15
-	orr	v4.8h, #64
-	orr	v5.8h, #64
-	cmlt	v3.8h, v3.8h, #0
-	cmlt	v2.8h, v2.8h, #0
-	bit	v0.16b, v5.16b, v3.16b
-	bit	v1.16b, v4.16b, v2.16b
-	orr	v1.8h, #16
-	orr	v0.8h, #16
+	orr	w8, w0, #0x40
+	tst	w1, #0x1
+	csel	w8, w8, w0, ne
+	orr	w0, w8, #0x10
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	ushll	v3.8h, v2.8b, #0
-	ushll2	v2.8h, v2.16b, #0
-	mov	v4.16b, v1.16b
-	mov	v5.16b, v0.16b
-	shl	v3.8h, v3.8h, #15
-	shl	v2.8h, v2.8h, #15
-	orr	v4.8h, #16
-	orr	v5.8h, #16
-	cmlt	v3.8h, v3.8h, #0
-	cmlt	v2.8h, v2.8h, #0
-	bit	v0.16b, v5.16b, v3.16b
-	bit	v1.16b, v4.16b, v2.16b
-	orr	v1.8h, #96
-	orr	v0.8h, #96
+	orr	w8, w0, #0x10
+	tst	w1, #0x1
+	csel	w8, w8, w0, ne
+	orr	w0, w8, #0x60
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushll	v3.8h, v2.8b, #0
-	ushll2	v2.8h, v2.16b, #0
-	mov	v4.16b, v1.16b
-	mov	v5.16b, v0.16b
-	shl	v3.8h, v3.8h, #15
-	shl	v2.8h, v2.8h, #15
-	orr	v4.8h, #96
-	orr	v5.8h, #96
-	cmlt	v3.8h, v3.8h, #0
-	cmlt	v2.8h, v2.8h, #0
-	bit	v0.16b, v5.16b, v3.16b
-	bit	v1.16b, v4.16b, v2.16b
-	orr	v1.8h, #2
-	orr	v0.8h, #2
+	orr	w8, w0, #0x60
+	tst	w1, #0x1
+	csel	w8, w8, w0, ne
+	orr	w0, w8, #0x2
 	ret
                                         // -- End function

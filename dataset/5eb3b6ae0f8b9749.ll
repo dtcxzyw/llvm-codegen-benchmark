@@ -191,7 +191,8 @@ entry:
   ret i32 %4
 }
 
-; 370 occurrences:
+; 371 occurrences:
+; freetype/optimized/ftgzip.c.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/CodeMotion.cpp.ll
@@ -571,8 +572,9 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_diffuse.c.ll
+; lvgl/optimized/lv_refr.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
@@ -586,27 +588,14 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; lief/optimized/aria.c.ll
-; postgres/optimized/oracle_compat.ll
+; 1 occurrences:
+; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 128
+  %2 = icmp eq i32 %1, 0
   %3 = add nuw nsw i32 %0, 1
   %4 = select i1 %2, i32 %3, i32 1
-  ret i32 %4
-}
-
-; 2 occurrences:
-; wireshark/optimized/packet-gprs-llc.c.ll
-; z3/optimized/sat_cutset.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 2
-  %3 = add i32 %0, -1
-  %4 = select i1 %2, i32 %3, i32 -1
   ret i32 %4
 }
 
@@ -630,6 +619,17 @@ entry:
   %.inv = icmp slt i32 %1, 0
   %3 = select i1 %.inv, i32 0, i32 %2
   ret i32 %3
+}
+
+; 1 occurrences:
+; z3/optimized/sat_cutset.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 1
+  %3 = add i32 %0, -1640531527
+  %4 = select i1 %2, i32 %3, i32 -1640531528
+  ret i32 %4
 }
 
 ; 1 occurrences:

@@ -7,13 +7,13 @@
 ; openssl/optimized/libcrypto-lib-tasn_prn.ll
 ; openssl/optimized/libcrypto-shlib-tasn_prn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 64
   %4 = icmp eq i64 %3, 0
   %5 = icmp ne ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -40,13 +40,13 @@ entry:
 ; rust-analyzer-rs/optimized/4jgoi87ys7cbhj0l.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 0
   %5 = icmp eq ptr %1, null
   %6 = select i1 %4, i1 true, i1 %5
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

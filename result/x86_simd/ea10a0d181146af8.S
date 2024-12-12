@@ -186,20 +186,30 @@ func0000000000000047:                   # @func0000000000000047
 	vzeroupper
 	retq
 .LCPI20_0:
-	.long	0x447a0000                      # float 1000
-func0000000000000074:                   # @func0000000000000074
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpltps	%zmm0, %zmm1, %k1
-	vcmpneqps	.LCPI20_0(%rip){1to16}, %zmm0, %k0 {%k1}
+	.long	0x7f800000                      # float +Inf
+.LCPI20_1:
+	.long	0x5f000000                      # float 9.22337203E+18
+func0000000000000036:                   # @func0000000000000036
+	vcmpneq_oqps	.LCPI20_0(%rip){1to16}, %zmm0, %k1
+	vcmpngeps	.LCPI20_1(%rip){1to16}, %zmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI21_0:
+	.long	0x447a0000                      # float 1000
+func0000000000000074:                   # @func0000000000000074
+	vxorps	%xmm1, %xmm1, %xmm1
+	vcmpltps	%zmm0, %zmm1, %k1
+	vcmpneqps	.LCPI21_0(%rip){1to16}, %zmm0, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI22_0:
 	.long	0x3f800000                      # float 1
 func000000000000007e:                   # @func000000000000007e
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpordps	%zmm1, %zmm0, %k1
-	vcmpneqps	.LCPI21_0(%rip){1to16}, %zmm0, %k0 {%k1}
+	vcmpneqps	.LCPI22_0(%rip){1to16}, %zmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

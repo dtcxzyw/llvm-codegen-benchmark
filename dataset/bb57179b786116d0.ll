@@ -1,11 +1,10 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openusd/optimized/stbImage.cpp.ll

@@ -15,7 +15,7 @@
 	.short	4                               # 0x4
 	.short	4                               # 0x4
 	.short	4                               # 0x4
-func0000000000000511:                   # @func0000000000000511
+func0000000000001421:                   # @func0000000000001421
 	vpsllw	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpcmpeqw	.LCPI0_0(%rip), %ymm1, %k1

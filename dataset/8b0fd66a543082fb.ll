@@ -1,34 +1,30 @@
 
-%"class.irr::video::SMaterial.2577636" = type <{ [4 x %"class.irr::video::SMaterialLayer.2577637"], i32, %"class.irr::video::SColor.2577638", %"class.irr::video::SColor.2577638", %"class.irr::video::SColor.2577638", %"class.irr::video::SColor.2577638", float, float, float, i8, i8, i16, float, float, float, i16, [6 x i8] }>
-%"class.irr::video::SMaterialLayer.2577637" = type { ptr, i16, i32, i32, i8, i8, ptr }
-%"class.irr::video::SColor.2577638" = type { i32 }
-%struct.XHCISlot.2593258 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
-%struct.NVMeRequest.2594196 = type { ptr, ptr, i32, ptr, i64, i32 }
-%struct.extCard.3294557 = type { i32, i32, i32 }
-%"struct.Scheduler::groupType.3297551" = type { i32, i32, i32, i32, i32, i32 }
-%struct.ItemPointerData.3468104 = type { %struct.BlockIdData.3468105, i16 }
-%struct.BlockIdData.3468105 = type { i16, i16 }
-
-; 12 occurrences:
+; 17 occurrences:
 ; bullet3/optimized/btPersistentManifold.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; icu/optimized/dtptngen.ll
 ; imgui/optimized/imgui.cpp.ll
 ; llama.cpp/optimized/ggml-backend.c.ll
+; llvm/optimized/blake3.c.ll
 ; lua/optimized/lstrlib.ll
 ; minetest/optimized/sky.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; openspiel/optimized/Moves.cpp.ll
+; openspiel/optimized/QuickTricks.cpp.ll
+; openspiel/optimized/SolverIF.cpp.ll
+; openusd/optimized/decodemv.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; velox/optimized/VectorPool.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 5
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 248
-  %5 = getelementptr [12 x %"class.irr::video::SMaterial.2577636"], ptr %4, i64 0, i64 %3, i32 1
+  %.idx = mul nsw i64 %3, 184
+  %4 = getelementptr i8, ptr %0, i64 376
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 
@@ -72,12 +68,13 @@ entry:
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 12496
-  %5 = getelementptr [64 x %struct.XHCISlot.2593258], ptr %4, i64 0, i64 %3, i32 1
+  %.idx = mul nsw i64 %3, 272
+  %4 = getelementptr i8, ptr %0, i64 12497
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 
@@ -98,78 +95,41 @@ entry:
 ; postgres/optimized/tablecmds.ll
 ; qemu/optimized/block_nvme.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000073(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 160
-  %5 = getelementptr [127 x %struct.NVMeRequest.2594196], ptr %4, i64 0, i64 %3, i32 1
+  %.idx = mul nsw i64 %3, 48
+  %4 = getelementptr i8, ptr %0, i64 168
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
-}
-
-; 2 occurrences:
-; recastnavigation/optimized/ConvexVolumeTool.cpp.ll
-; recastnavigation/optimized/DetourCrowd.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -3
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 32
-  %5 = getelementptr nusw [36 x float], ptr %4, i64 0, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 4
-  ret ptr %6
-}
-
-; 2 occurrences:
-; llvm/optimized/blake3.c.ll
-; openusd/optimized/decodemv.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -64
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 145
-  %5 = getelementptr nusw [1760 x i8], ptr %4, i64 0, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 1
-  ret ptr %6
 }
 
 ; 3 occurrences:
-; openspiel/optimized/Moves.cpp.ll
-; openspiel/optimized/QuickTricks.cpp.ll
-; openspiel/optimized/SolverIF.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 76
-  %5 = getelementptr [4 x %struct.extCard.3294557], ptr %4, i64 0, i64 %3, i32 1
-  ret ptr %5
-}
-
-; 1 occurrences:
 ; openspiel/optimized/Scheduler.cpp.ll
+; recastnavigation/optimized/ConvexVolumeTool.cpp.ll
+; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003b(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1
+  %2 = add i32 %1, -3
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 22400
-  %5 = getelementptr [200 x %"struct.Scheduler::groupType.3297551"], ptr %4, i64 0, i64 %3, i32 5
-  ret ptr %5
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %5 = getelementptr nusw [36 x float], ptr %4, i64 0, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  ret ptr %6
 }
 
 ; 1 occurrences:
 ; postgres/optimized/vacuum.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000030(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8
-  %5 = getelementptr [0 x %struct.ItemPointerData.3468104], ptr %4, i64 0, i64 %3, i32 0, i32 1
+  %.idx = mul nsw i64 %3, 6
+  %4 = getelementptr i8, ptr %0, i64 10
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 

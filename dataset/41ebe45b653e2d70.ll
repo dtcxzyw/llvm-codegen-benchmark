@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; clamav/optimized/hashtab.c.ll
 ; git/optimized/object-file.ll
 ; linux/optimized/cgroup.ll
@@ -13,7 +13,6 @@
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/intel_hotplug.ll
 ; linux/optimized/intel_memory_region.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/libata-sata.ll
 ; linux/optimized/mdio_bus.ll
@@ -36,7 +35,7 @@
 ; verilator/optimized/V3Width.cpp.ll
 ; wireshark/optimized/packet-tdmop.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 1, %0
@@ -54,7 +53,7 @@ entry:
 ; linux/optimized/pt.ll
 ; qemu/optimized/migration_migration.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %0
@@ -63,7 +62,7 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; linux/optimized/blk-mq-debugfs.ll
 ; linux/optimized/drm_blend.ll
@@ -71,7 +70,6 @@ entry:
 ; linux/optimized/i915_gem_create.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_hotplug.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/mlme.ll
@@ -88,7 +86,7 @@ entry:
 ; wireshark/optimized/proto.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 1, %0
@@ -108,7 +106,7 @@ entry:
 ; wireshark/optimized/k12.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 1, %0
@@ -124,7 +122,7 @@ entry:
 ; linux/optimized/intel_gt_mcr.ll
 ; linux/optimized/link.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %2, %0
@@ -132,14 +130,13 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/intel_gt_irq.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/rcec.ll
-; linux/optimized/sysfs_engines.ll
 ; linux/optimized/xhci-trace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = lshr i64 %2, %0
@@ -152,7 +149,7 @@ entry:
 ; linux/optimized/intel_atomic_plane.ll
 ; linux/optimized/intel_sseu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %0
@@ -161,12 +158,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; linux/optimized/drm_self_refresh_helper.ll
+; 2 occurrences:
 ; linux/optimized/intel_gt_irq.ll
 ; linux/optimized/intel_hotplug.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 1, %0

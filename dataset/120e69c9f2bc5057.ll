@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/introspection_invert.c.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
@@ -13,12 +13,14 @@
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4095
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -32,7 +34,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -51,7 +53,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8388607
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

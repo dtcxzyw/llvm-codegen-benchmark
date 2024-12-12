@@ -1,44 +1,40 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v4.4s, #1, lsl #8
-	ushr	v3.4s, v3.4s, #24
-	ushr	v2.4s, v2.4s, #24
-	sub	v1.4s, v4.4s, v1.4s
-	sub	v0.4s, v4.4s, v0.4s
-	mul	v0.4s, v0.4s, v2.4s
-	mul	v1.4s, v1.4s, v3.4s
+	mov	w8, #256                        // =0x100
+	lsr	w9, w1, #24
+	sub	w8, w8, w0
+	mul	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	movi	v4.4s, #32
-	ushr	v3.4s, v3.4s, #7
-	ushr	v2.4s, v2.4s, #7
-	sub	v1.4s, v4.4s, v1.4s
-	sub	v0.4s, v4.4s, v0.4s
-	mul	v0.4s, v0.4s, v2.4s
-	mul	v1.4s, v1.4s, v3.4s
+	mov	w8, #32                         // =0x20
+	lsr	w9, w1, #7
+	sub	w8, w8, w0
+	mul	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	movi	v4.4s, #32
-	ushr	v3.4s, v3.4s, #7
-	ushr	v2.4s, v2.4s, #7
-	sub	v1.4s, v4.4s, v1.4s
-	sub	v0.4s, v4.4s, v0.4s
-	mul	v0.4s, v0.4s, v2.4s
-	mul	v1.4s, v1.4s, v3.4s
+	mov	w8, #32                         // =0x20
+	lsr	w9, w1, #7
+	sub	w8, w8, w0
+	mul	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	movi	v4.4s, #4, lsl #8
-	ushr	v1.4s, v1.4s, #5
-	ushr	v0.4s, v0.4s, #5
-	sub	v3.4s, v4.4s, v3.4s
-	sub	v2.4s, v4.4s, v2.4s
-	mul	v0.4s, v0.4s, v2.4s
-	mul	v1.4s, v1.4s, v3.4s
+	mov	w8, #1024                       // =0x400
+	lsr	w9, w0, #5
+	sub	w8, w8, w1
+	mul	w0, w9, w8
+	ret
+                                        // -- End function
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+	mov	w8, #255                        // =0xff
+	lsr	w9, w0, #10
+	sub	w8, w8, w1
+	mul	w0, w9, w8
 	ret
                                         // -- End function

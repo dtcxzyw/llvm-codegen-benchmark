@@ -50,7 +50,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	6                               # 0x6
 .LCPI1_1:
 	.long	512                             # 0x200
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3   # ymm3 = [6,6,6,6,6,6,6,6]
 	vpand	%ymm3, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm2, %k1

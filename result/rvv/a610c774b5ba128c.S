@@ -5,7 +5,7 @@ func000000000000000e:                   # @func000000000000000e
 	vand.vx	v10, v10, a1
 	lui	a1, 524408
 	addi	a1, a1, 113
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vmulhu.vx	v8, v10, a1

@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; re2/optimized/compile.cc.ll
-; Function Attrs: nounwind
-define i1 @func000000000000010c(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 96
-  %4 = icmp slt i32 %1, 91
-  %5 = or i1 %4, %3
-  %6 = select i1 %5, i1 %0, i1 false
-  ret i1 %6
-}
-
 ; 12 occurrences:
 ; llvm/optimized/AArch64MachObjectWriter.cpp.ll
 ; llvm/optimized/CommonArgs.cpp.ll
@@ -25,7 +13,7 @@ entry:
 ; php/optimized/zend_jit.ll
 ; wireshark/optimized/packet-do-irp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = icmp eq i32 %1, 2
@@ -37,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/quic_multistream_test-bin-quic_multistream_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = icmp ult i32 %1, 2
@@ -53,7 +41,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cms_smime.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -70,7 +58,7 @@ entry:
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; zxing/optimized/QRReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -83,7 +71,7 @@ entry:
 ; quantlib/optimized/brazil.ll
 ; wireshark/optimized/tshark.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 12
   %4 = icmp ne i32 %1, 25
@@ -98,7 +86,7 @@ entry:
 ; wireshark/optimized/packet-do-irp.c.ll
 ; z3/optimized/dimacs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
   %4 = icmp eq i32 %1, 28
@@ -107,11 +95,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; icu/optimized/wrtxml.ll
+; 1 occurrences:
 ; llvm/optimized/IVDescriptors.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 12
   %4 = icmp ult i32 %1, 4

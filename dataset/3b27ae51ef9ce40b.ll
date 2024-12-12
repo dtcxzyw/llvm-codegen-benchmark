@@ -91,9 +91,10 @@ entry:
   ret i32 %3
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -252,8 +253,9 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:

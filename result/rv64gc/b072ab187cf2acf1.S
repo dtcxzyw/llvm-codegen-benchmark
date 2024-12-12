@@ -45,3 +45,19 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, 13
 .LBB2_4:                                # %entry
 	ret
+func0000000000000014:                   # @func0000000000000014
+	srliw	a3, a1, 11
+	andi	a1, a0, 1
+	bnez	a3, .LBB3_2
+	li	a0, 2
+	bnez	a1, .LBB3_3
+	j	.LBB3_4
+.LBB3_2:
+	andi	a2, a2, 1
+	li	a0, 4
+	sub	a0, a0, a2
+	beqz	a1, .LBB3_4
+.LBB3_3:
+	li	a0, 1
+.LBB3_4:                                # %entry
+	ret

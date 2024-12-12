@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 80 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/amapUniq.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
@@ -53,6 +53,7 @@
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
+; gromacs/optimized/partition.cpp.ll
 ; libwebp/optimized/io_dec.c.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -73,6 +74,8 @@
 ; opencv/optimized/stackblur.cpp.ll
 ; openjdk/optimized/jvmtiEnvBase.ll
 ; openmpi/optimized/ompi_datatype_args.ll
+; openusd/optimized/av1_dx_iface.c.ll
+; openusd/optimized/decodeframe.c.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; re2/optimized/dfa.cc.ll
@@ -86,7 +89,7 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
+; 29 occurrences:
 ; darktable/optimized/RawImage.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -114,6 +117,8 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-ntlmssp.c.ll
+; z3/optimized/mam.cpp.ll
+; z3/optimized/q_mam.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
@@ -181,11 +186,12 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; jq/optimized/regexec.ll
 ; oniguruma/optimized/regexec.ll
+; openusd/optimized/decodemv.c.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_optimizer.ll
 ; Function Attrs: nounwind
@@ -219,7 +225,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; bullet3/optimized/b3GpuSapBroadphase.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; nori/optimized/warptest.cpp.ll
 ; php/optimized/zend_opcode.ll

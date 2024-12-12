@@ -1,10 +1,11 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; icu/optimized/uniset.ll
 ; linux/optimized/tcp_offload.ll
 ; linux/optimized/xhci-ring.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/tsrank.ll
 ; ruby/optimized/time.ll

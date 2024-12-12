@@ -11,12 +11,6 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$256, %eax                      # imm = 0x100
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	leaq	-1(%rdi), %rcx
-	cmpl	$20, %esi
-	movl	$31, %eax
-	cmovaeq	%rcx, %rax
-	retq
 func0000000000000007:                   # @func0000000000000007
 	leaq	1(%rdi), %rcx
 	testl	%esi, %esi

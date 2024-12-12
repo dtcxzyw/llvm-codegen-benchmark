@@ -7,7 +7,7 @@ entry:
   %3 = fcmp olt float %1, %2
   %4 = fcmp ogt float %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = fcmp ule float %1, %2
   %4 = fcmp uge float %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

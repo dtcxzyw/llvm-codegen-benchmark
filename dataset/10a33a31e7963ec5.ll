@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; cpython/optimized/compile.ll
 ; darktable/optimized/amaze.cc.ll
+; darktable/optimized/introspection_atrous.c.ll
 ; nuttx/optimized/lib_b16sin.c.ll
 ; ozz-animation/optimized/skeleton.cc.ll
 ; postgres/optimized/lwlock.ll

@@ -1,10 +1,12 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
 ; taskflow/optimized/parallel_sort.cpp.ll
@@ -47,7 +49,7 @@ entry:
   %4 = sext i32 %1 to i64
   %5 = sub nsw i64 %4, %3
   %6 = add nsw i64 %5, 1
-  %7 = mul i64 %6, %0
+  %7 = mul i64 %0, %6
   ret i64 %7
 }
 

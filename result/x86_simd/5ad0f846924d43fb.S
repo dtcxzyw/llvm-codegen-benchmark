@@ -6,7 +6,7 @@
 	.long	16843008                        # 0x1010100
 func0000000000000001:                   # @func0000000000000001
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	vpcmpleud	.LCPI0_2(%rip){1to8}, %ymm0, %k0
@@ -19,9 +19,9 @@ func0000000000000001:                   # @func0000000000000001
 	.long	715827882                       # 0x2aaaaaaa
 .LCPI1_2:
 	.long	1431655764                      # 0x55555554
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	vpcmpleud	.LCPI1_2(%rip){1to8}, %ymm0, %k0

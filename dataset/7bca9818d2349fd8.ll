@@ -1,8 +1,9 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw nsw i64 %2 to i32
@@ -17,12 +18,12 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 40
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 255
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = icmp eq i32 %5, 65535
   ret i1 %6
 }
@@ -31,7 +32,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 24
   %3 = trunc i64 %2 to i32
@@ -52,7 +53,7 @@ entry:
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -65,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaPat.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000ec(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 61
   %3 = trunc nuw nsw i64 %2 to i32
@@ -79,7 +80,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

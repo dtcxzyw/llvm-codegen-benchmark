@@ -1,6 +1,6 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ce:                   # @func00000000000000ce
 	imulq	%rdx, %rsi
-	leaq	8(%rdi,%rsi,4), %rax
+	leaq	36(%rdi,%rsi,4), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	imulq	%rdx, %rsi

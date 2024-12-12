@@ -1,5 +1,7 @@
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_rps.ll

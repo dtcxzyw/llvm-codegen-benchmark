@@ -1,7 +1,8 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
+; boost/optimized/area.ll
 ; clamav/optimized/cache.c.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
@@ -35,8 +36,6 @@
 ; postgres/optimized/xlog.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/geohash.ll
-; rocksdb/optimized/ribbon_config.cc.ll
-; slurm/optimized/reservation_info.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; xgboost/optimized/cpu_predictor.cc.ll

@@ -37,6 +37,6 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000007:                   # @func0000000000000007
 	vcvttps2dq	%xmm1, %xmm1
 	vcvtdq2ps	%xmm1, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq

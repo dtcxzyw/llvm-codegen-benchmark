@@ -8,7 +8,7 @@ entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
   %5 = sext i1 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

@@ -13,11 +13,11 @@
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 15
   %3 = lshr i16 %0, 15
-  %4 = icmp ult i16 %3, %2
+  %4 = icmp samesign ult i16 %3, %2
   ret i1 %4
 }
 
@@ -44,11 +44,11 @@ entry:
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; openjdk/optimized/hb-ot-shape-normalize.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
   %3 = lshr i16 %0, 8
-  %4 = icmp ugt i16 %3, %2
+  %4 = icmp samesign ugt i16 %3, %2
   ret i1 %4
 }
 

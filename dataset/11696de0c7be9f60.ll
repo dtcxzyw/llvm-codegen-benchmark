@@ -1,15 +1,17 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; llvm/optimized/BranchProbability.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; qemu/optimized/block_parallels.c.ll
 ; ruby/optimized/bignum.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %.tr = trunc i64 %0 to i32
-  %.narrow = mul i32 %.tr, %1
+  %.narrow = mul i32 %1, %.tr
   %2 = zext i32 %.narrow to i64
   ret i64 %2
 }
@@ -24,7 +26,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = and i64 %3, 65535
   ret i64 %4
 }
@@ -44,7 +46,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = and i64 %3, -65536
   ret i64 %4
 }
@@ -64,7 +66,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = and i64 %3, 7
   ret i64 %4
 }
@@ -76,7 +78,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %.tr = trunc i64 %0 to i32
-  %.narrow = mul i32 %.tr, %1
+  %.narrow = mul i32 %1, %.tr
   %2 = zext i32 %.narrow to i64
   ret i64 %2
 }
@@ -88,7 +90,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = and i64 %3, 63
   ret i64 %4
 }

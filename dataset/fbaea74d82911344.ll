@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/within_sph_geo.ll
 ; gromacs/optimized/dlasq3.cpp.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; minetest/optimized/clientpackethandler.cpp.ll
@@ -28,9 +29,10 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ipopt/optimized/IpPiecewisePenalty.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(double %0, double %1) #0 {
@@ -41,7 +43,11 @@ entry:
   ret i1 %4
 }
 
-; 46 occurrences:
+; 49 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
 ; cpython/optimized/cmathmodule.ll
 ; cpython/optimized/complexobject.ll
 ; entt/optimized/any.cpp.ll
@@ -77,7 +83,6 @@ entry:
 ; postgres/optimized/float.ll
 ; proj/optimized/adams.cpp.ll
 ; proj/optimized/common.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/metadata.cpp.ll
 ; proj/optimized/stere.cpp.ll
 ; quantlib/optimized/americanpayoffathit.ll
@@ -97,7 +102,7 @@ entry:
   ret i1 %4
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; brotli/optimized/encode.c.ll
@@ -114,7 +119,6 @@ entry:
 ; proj/optimized/adams.cpp.ll
 ; proj/optimized/aitoff.cpp.ll
 ; proj/optimized/conversion.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/ortho.cpp.ll
 ; quantlib/optimized/analyticcompoundoptionengine.ll
@@ -177,7 +181,7 @@ entry:
   ret i1 %4
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; graphviz/optimized/neatosplines.c.ll
 ; graphviz/optimized/position.c.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
@@ -194,7 +198,6 @@ entry:
 ; openjdk/optimized/cmsxform.ll
 ; openjdk/optimized/g1Policy.ll
 ; proj/optimized/conversion.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; quantlib/optimized/analyticcompoundoptionengine.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/blackdeltacalculator.ll
@@ -261,11 +264,10 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; graphviz/optimized/position.c.ll
 ; opencv/optimized/gdal-image.cpp.ll
 ; openjdk/optimized/TransformHelper.ll
-; osqp/optimized/amd_info.c.ll
 ; proj/optimized/adams.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
@@ -330,10 +332,11 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; opencv/optimized/svm.cpp.ll
 ; proj/optimized/adams.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind

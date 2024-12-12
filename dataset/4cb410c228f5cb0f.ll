@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 60 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -38,6 +38,7 @@
 ; linux/optimized/pci-acpi.ll
 ; llvm/optimized/LiveVariables.cpp.ll
 ; llvm/optimized/MCRegisterInfo.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; openusd/optimized/convolve.c.ll
 ; qemu/optimized/hw_net_tulip.c.ll

@@ -1,72 +1,64 @@
-func0000000000000051:                   # @func0000000000000051
+func000000000000042c:                   # @func000000000000042c
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setae	%cl
-	testb	$7, %sil
-	sete	%al
-	andb	%cl, %al
-	retq
-func000000000000011c:                   # @func000000000000011c
-	movl	%edx, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%cl
 	testb	$7, %sil
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+func000000000000050c:                   # @func000000000000050c
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setb	%cl
+	cmpq	%rax, %rdi
+	seta	%cl
 	testb	%sil, %sil
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000019:                   # @func0000000000000019
+func0000000000000039:                   # @func0000000000000039
 	testl	$16384, %edx                    # imm = 0x4000
 	sete	%cl
 	movl	%esi, %eax
-	cmpq	%rdi, %rax
-	setbe	%al
+	cmpq	%rax, %rdi
+	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$-2, %edx
 	cmpl	$2, %edx
 	sete	%cl
 	movl	%esi, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%cl
 	testb	$32, %sil
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	andb	%sil, %al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000194:                   # @func0000000000000194
 	shrl	$30, %edx
 	andl	$1, %edx
 	movl	%esi, %eax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	andb	%dl, %al
 	retq
-func0000000000000114:                   # @func0000000000000114
+func0000000000000434:                   # @func0000000000000434
 	notl	%edx
 	testb	$14, %dl
 	sete	%cl
 	movl	%esi, %eax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	andb	%cl, %al
 	retq

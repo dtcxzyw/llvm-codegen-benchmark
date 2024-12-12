@@ -8,7 +8,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, ptr %1) #0 {
+define i32 @func0000000000000021(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq i32 %0, 0
@@ -25,7 +25,7 @@ entry:
 ; luau/optimized/lstrlib.cpp.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, ptr %1) #0 {
+define i32 @func000000000000002c(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = icmp ne ptr %1, null

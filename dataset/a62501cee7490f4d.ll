@@ -5,7 +5,7 @@
 ; spike/optimized/f16_sqrt.ll
 ; spike/optimized/f32_sqrt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
   %3 = add nuw nsw i64 %2, 2

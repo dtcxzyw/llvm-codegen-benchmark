@@ -1,10 +1,11 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; linux/optimized/alternative.ll
+; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/init_64.ll
-; linux/optimized/machine_kexec_64.ll
+; linux/optimized/mprotect.ll
 ; linux/optimized/pgtable.ll
 ; linux/optimized/pti.ll
 ; linux/optimized/set_memory.ll
@@ -23,7 +24,7 @@ entry:
   %3 = and i64 %2, 63
   %4 = icmp eq i64 %3, 63
   %5 = select i1 %4, i64 -1, i64 %1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

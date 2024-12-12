@@ -12,10 +12,3 @@ func0000000000000030:                   # @func0000000000000030
 	shrq	$9, %rax
 	leaq	1(%rdi,%rax,4), %rax
 	retq
-func00000000000000b0:                   # @func00000000000000b0
-	leaq	-529(%rsi), %rdx
-	movabsq	$-9187201950435737471, %rax     # imm = 0x8080808080808081
-	mulxq	%rax, %rax, %rax
-	shrq	$8, %rax
-	leaq	4(%rdi,%rax,2), %rax
-	retq

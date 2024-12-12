@@ -1,6 +1,7 @@
 
-; 85 occurrences:
+; 90 occurrences:
 ; abc/optimized/giaCSatOld.c.ll
+; boost/optimized/alloc_lib.ll
 ; c3c/optimized/diagnostics.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -19,6 +20,7 @@
 ; linux/optimized/pgtable.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/rmap.ll
+; linux/optimized/set_memory.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -53,6 +55,7 @@
 ; llvm/optimized/LowLevelType.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; llvm/optimized/MCELFStreamer.cpp.ll
+; llvm/optimized/MSVC.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/MemRegion.cpp.ll
@@ -70,6 +73,8 @@
 ; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/X86CompressEVEX.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/nativeInst_x86.ll
 ; openmpi/optimized/instance.ll

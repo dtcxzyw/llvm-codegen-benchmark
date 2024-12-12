@@ -1,36 +1,24 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v2.2d, v4.2d, v2.2d
-	add	v3.2d, v5.2d, v3.2d
-	mvn	v1.16b, v1.16b
-	mvn	v0.16b, v0.16b
-	add	v1.2d, v1.2d, v3.2d
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v1.2d
-	add	v0.2d, v0.2d, v0.2d
+	add	x8, x2, x1
+	mvn	x9, x0
+	add	x8, x9, x8
+	lsl	x0, x8, #1
 	ret
                                         // -- End function
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	add	v2.2d, v4.2d, v2.2d
-	add	v3.2d, v5.2d, v3.2d
-	mvn	v1.16b, v1.16b
-	mvn	v0.16b, v0.16b
-	add	v1.2d, v1.2d, v3.2d
-	add	v0.2d, v0.2d, v2.2d
-	shl	v1.2d, v1.2d, #32
-	shl	v0.2d, v0.2d, #32
+	add	w8, w2, w1
+	mvn	w9, w0
+	add	w8, w9, w8
+	lsl	x0, x8, #32
 	ret
                                         // -- End function
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	add	v2.2d, v4.2d, v2.2d
-	add	v3.2d, v5.2d, v3.2d
-	mvn	v1.16b, v1.16b
-	mvn	v0.16b, v0.16b
-	add	v1.2d, v1.2d, v3.2d
-	add	v0.2d, v0.2d, v2.2d
-	shl	v1.2d, v1.2d, #32
-	shl	v0.2d, v0.2d, #32
+	add	w8, w2, w1
+	mvn	w9, w0
+	add	w8, w9, w8
+	lsl	x0, x8, #32
 	ret
                                         // -- End function

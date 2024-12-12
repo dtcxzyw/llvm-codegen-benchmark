@@ -1,5 +1,5 @@
 
-; 806 occurrences:
+; 798 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaIso3.c.ll
@@ -12,8 +12,14 @@
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/any_segments_iter.ll
+; boost/optimized/dump.ll
+; boost/optimized/dump_avx2.ll
+; boost/optimized/dump_ssse3.ll
+; boost/optimized/src.ll
+; boost/optimized/url_base.ll
 ; clamav/optimized/Lzma2Dec.c.ll
-; clamav/optimized/adc.c.ll
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/disasm.c.ll
 ; clamav/optimized/packlibs.c.ll
@@ -159,7 +165,6 @@
 ; libpng/optimized/pngwutil.c.ll
 ; libquic/optimized/base64.c.ll
 ; libquic/optimized/digest.cc.ll
-; libquic/optimized/hexdump.c.ll
 ; libquic/optimized/md5.cc.ll
 ; libquic/optimized/modp_b64.cc.ll
 ; libquic/optimized/string_number_conversions.cc.ll
@@ -186,7 +191,6 @@
 ; linux/optimized/alps.ll
 ; linux/optimized/apic.ll
 ; linux/optimized/avc.ll
-; linux/optimized/bcd.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_dp_mst_topology.ll
@@ -196,7 +200,6 @@
 ; linux/optimized/hexdump.ll
 ; linux/optimized/hid-lg-g15.ll
 ; linux/optimized/hid-sony.ll
-; linux/optimized/ht.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/i8042.ll
 ; linux/optimized/igmp.ll
@@ -205,14 +208,11 @@
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dp_link_training.ll
 ; linux/optimized/intel_dsi_vbt.ll
-; linux/optimized/intel_step.ll
 ; linux/optimized/irq.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/lz4_decompress.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/pcc.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/pcm_misc.ll
@@ -394,7 +394,6 @@
 ; php/optimized/pcre2_study.ll
 ; php/optimized/pcre2_xclass.ll
 ; php/optimized/phar.ll
-; php/optimized/php_syslog.ll
 ; php/optimized/quot_print.ll
 ; php/optimized/url.ll
 ; php/optimized/zip.ll
@@ -404,7 +403,6 @@
 ; postgres/optimized/be-fsstubs.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/brin_tuple.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/cryptohashfuncs.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/datum.ll
@@ -424,7 +422,6 @@
 ; postgres/optimized/json.ll
 ; postgres/optimized/jsonb.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/jsonpath_exec.ll
@@ -441,7 +438,6 @@
 ; postgres/optimized/oracle_compat.ll
 ; postgres/optimized/quote.ll
 ; postgres/optimized/rangetypes.ll
-; postgres/optimized/rangetypes_gist.ll
 ; postgres/optimized/regexp.ll
 ; postgres/optimized/regress.ll
 ; postgres/optimized/reorderbuffer.ll
@@ -701,7 +697,6 @@
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-igmp.c.ll
 ; wireshark/optimized/packet-ipmi-se.c.ll
-; wireshark/optimized/packet-ipmi-trace.c.ll
 ; wireshark/optimized/packet-ipmi.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll
 ; wireshark/optimized/packet-irda.c.ll
@@ -786,14 +781,11 @@
 ; wireshark/optimized/tvbuff_hpackhuff.c.ll
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
 ; wireshark/optimized/wimax_compact_ulmap_ie_decoder.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; wireshark/optimized/wmem_strbuf.c.ll
 ; wireshark/optimized/xdlc.c.ll
 ; wolfssl/optimized/aes.c.ll
-; yalantinglibs/optimized/benchmark.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; yosys/optimized/lz4.ll
 ; zstd/optimized/zstd_decompress.c.ll
@@ -814,7 +806,7 @@ entry:
   ret i32 %2
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; cmake/optimized/hex.c.ll
 ; cpython/optimized/binascii.ll
@@ -845,7 +837,6 @@ entry:
 ; wireshark/optimized/packet-btrfcomm.c.ll
 ; wireshark/optimized/packet-dect-nwk.c.ll
 ; wireshark/optimized/packet-etsi_card_app_toolkit.c.ll
-; wireshark/optimized/packet-gprscdr.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-gtp.c.ll
@@ -878,14 +869,13 @@ entry:
   ret i32 %2
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; icu/optimized/bytestrie.ll
 ; libpng/optimized/pngrutil.c.ll
 ; linux/optimized/libata-sff.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; nuttx/optimized/uart_16550.c.ll
 ; openjdk/optimized/pngrutil.ll
-; postgres/optimized/brin_xlog.ll
 ; postgres/optimized/decode.ll
 ; postgres/optimized/gistxlog.ll
 ; postgres/optimized/hash_xlog.ll

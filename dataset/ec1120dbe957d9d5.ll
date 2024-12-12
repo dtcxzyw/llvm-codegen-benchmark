@@ -51,17 +51,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/utaddress.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
-entry:
-  %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, -1
-  %4 = add i32 %3, %1
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000055(i64 %0, i32 %1) #0 {

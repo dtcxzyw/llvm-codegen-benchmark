@@ -41,14 +41,14 @@ func0000000000000020:                   # @func0000000000000020
 	vpaddq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI7_0:
-	.quad	3                               # 0x3
-func0000000000000008:                   # @func0000000000000008
+	.quad	4                               # 0x4
+func000000000000003f:                   # @func000000000000003f
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI8_0:
-	.quad	4                               # 0x4
-func000000000000003f:                   # @func000000000000003f
+	.quad	25                              # 0x19
+func0000000000000008:                   # @func0000000000000008
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0
 	retq

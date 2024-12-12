@@ -14,11 +14,11 @@
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; libjpeg-turbo/optimized/jidctflt.c.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/kinfu_frame.cpp.ll
 ; opencv/optimized/types.cpp.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
 ; pbrt-v4/optimized/interaction.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll

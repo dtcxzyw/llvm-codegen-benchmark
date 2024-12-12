@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpternlogd	$206, %ymm1, %ymm0, %ymm2 # ymm2 = (ymm1 & ~ymm2) | ymm0
@@ -6,7 +6,7 @@ func0000000000000061:                   # @func0000000000000061
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpandn	%ymm1, %ymm2, %ymm1
@@ -18,7 +18,7 @@ func0000000000000051:                   # @func0000000000000051
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpandn	%ymm1, %ymm2, %ymm1
@@ -27,7 +27,7 @@ func0000000000000071:                   # @func0000000000000071
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpandn	%ymm1, %ymm2, %ymm1

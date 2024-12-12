@@ -4,7 +4,7 @@
 ; openjdk/optimized/pngrutil.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, %1
   %4 = icmp slt i32 %1, 0

@@ -1,14 +1,19 @@
 
-; 78 occurrences:
+; 86 occurrences:
+; abc/optimized/abcNtk.c.ll
 ; abc/optimized/cuddBddAbs.c.ll
+; abc/optimized/dauNpn.c.ll
 ; abc/optimized/giaEnable.c.ll
 ; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
+; faiss/optimized/lattice_Zn.cpp.ll
 ; llvm/optimized/AArch64StackTaggingPreRA.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
+; llvm/optimized/AccelTable.cpp.ll
 ; llvm/optimized/AssumeBundleBuilder.cpp.ll
 ; llvm/optimized/AssumeBundleQueries.cpp.ll
 ; llvm/optimized/Attributor.cpp.ll
@@ -78,6 +83,9 @@
 ; rocksdb/optimized/hash.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; slurm/optimized/KeccakP-1600-opt64.ll
+; spike/optimized/vsadd_vi.ll
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
+; z3/optimized/sat_aig_cuts.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

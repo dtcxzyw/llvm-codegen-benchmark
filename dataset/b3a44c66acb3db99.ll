@@ -208,7 +208,7 @@ entry:
   ret i1 %2
 }
 
-; 104 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; clamav/optimized/autoit.c.ll
@@ -256,7 +256,6 @@ entry:
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -321,11 +320,37 @@ entry:
   ret i1 %2
 }
 
-; 16 occurrences:
+; 4 occurrences:
+; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
+; icu/optimized/number_decimalquantity.ll
+; openjdk/optimized/hb-ot-cff1-table.ll
+; rocksdb/optimized/filter_policy.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(double %0) #0 {
+entry:
+  %1 = fptosi double %0 to i32
+  %2 = icmp samesign ult i32 %1, 3581
+  ret i1 %2
+}
+
+; 5 occurrences:
+; icu/optimized/number_decimalquantity.ll
+; luajit/optimized/lj_tab.ll
+; luajit/optimized/lj_tab_dyn.ll
+; opencv/optimized/edge_drawing.cpp.ll
+; rocksdb/optimized/filter_policy.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(double %0) #0 {
+entry:
+  %1 = fptosi double %0 to i32
+  %2 = icmp samesign ugt i32 %1, 50000
+  ret i1 %2
+}
+
+; 14 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
-; icu/optimized/number_decimalquantity.ll
 ; libpng/optimized/png.c.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
@@ -337,36 +362,30 @@ entry:
 ; openjdk/optimized/png.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/script_lua.ll
-; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
-  %2 = icmp ult i32 %1, 3581
+  %2 = icmp ult i32 %1, 256
   ret i1 %2
 }
 
-; 15 occurrences:
+; 10 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; graphviz/optimized/sfcvt.c.ll
 ; hermes/optimized/DateUtil.cpp.ll
-; icu/optimized/number_decimalquantity.ll
 ; jq/optimized/builtin.ll
 ; jq/optimized/jv.ll
-; luajit/optimized/lj_tab.ll
-; luajit/optimized/lj_tab_dyn.ll
 ; luau/optimized/IrTranslateBuiltins.cpp.ll
-; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/thresh.cpp.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; redis/optimized/script_lua.ll
-; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
-  %2 = icmp ugt i32 %1, 50000
+  %2 = icmp ugt i32 %1, 99
   ret i1 %2
 }
 

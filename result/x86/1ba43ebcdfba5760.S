@@ -62,15 +62,15 @@ func000000000000001d:                   # @func000000000000001d
 	movl	%esi, %eax
 	leaq	4(%rdi,%rax), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
-	movl	%esi, %eax
-	leaq	-1(%rdi,%rax), %rax
-	retq
 func000000000000001a:                   # @func000000000000001a
 	movl	%esi, %ecx
 	addq	%rdi, %rcx
 	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
 	addq	%rcx, %rax
+	retq
+func0000000000000012:                   # @func0000000000000012
+	movl	%esi, %eax
+	leaq	-1(%rdi,%rax), %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax

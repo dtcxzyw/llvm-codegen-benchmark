@@ -1,10 +1,10 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpcmpnleuw	%ymm0, %ymm1, %k1
 	vptestmw	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpcmpeqw	%ymm0, %ymm1, %k1
 	vptestmw	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
@@ -27,7 +27,7 @@ func000000000000001c:                   # @func000000000000001c
 	.short	51080                           # 0xc788
 	.short	51080                           # 0xc788
 	.short	51080                           # 0xc788
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpcmpneqw	%ymm0, %ymm1, %k1
 	vpcmpneqw	.LCPI2_0(%rip), %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
@@ -50,7 +50,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	.short	64513                           # 0xfc01
 	.short	64513                           # 0xfc01
 	.short	64513                           # 0xfc01
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpcmpleuw	%ymm0, %ymm1, %k1
 	vpcmpltuw	.LCPI3_0(%rip), %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; gromacs/optimized/dgebrd.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
@@ -9,7 +9,6 @@
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; openblas/optimized/dlagsy.c.ll
-; openblas/optimized/dsygst.c.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
@@ -136,10 +135,7 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
-; gromacs/optimized/dtrtri.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
+; 3 occurrences:
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; yosys/optimized/booth.ll

@@ -80,12 +80,11 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %1, i1 true, i1 %4
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 3 occurrences:
-; linux/optimized/openclose.ll
+; 2 occurrences:
 ; llvm/optimized/DeclBase.cpp.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
@@ -94,7 +93,7 @@ entry:
   %3 = and i64 %2, 71776123356184575
   %4 = icmp ne i64 %3, 281474976710656
   %5 = select i1 %1, i1 true, i1 %4
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

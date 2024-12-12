@@ -1,5 +1,7 @@
 
-; 13 occurrences:
+; 15 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -22,7 +24,9 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -38,19 +42,30 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; ceres/optimized/inner_product_computer.cc.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
 ; g2o/optimized/solver_csparse.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
-; opencv/optimized/version.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = select i1 %0, i64 %3, i64 %1
   %5 = trunc i64 %4 to i32
+  ret i32 %5
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; opencv/optimized/version.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000e(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 1
+  %4 = select i1 %0, i64 %3, i64 %1
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 

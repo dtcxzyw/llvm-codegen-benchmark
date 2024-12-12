@@ -45,7 +45,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	14                              # 0xe
 .LCPI1_1:
 	.long	10                              # 0xa
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpltd	.LCPI1_1(%rip){1to8}, %ymm2, %k1
 	vpblendmb	%xmm0, %xmm1, %xmm0 {%k1}
@@ -55,7 +55,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	15                              # 0xf
 .LCPI2_1:
 	.long	4                               # 0x4
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpgtd	.LCPI2_1(%rip){1to8}, %ymm2, %k1
 	vpblendmb	%xmm0, %xmm1, %xmm0 {%k1}

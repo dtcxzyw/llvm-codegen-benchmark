@@ -30,13 +30,13 @@ entry:
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 7
-  %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr nusw i8, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }
 

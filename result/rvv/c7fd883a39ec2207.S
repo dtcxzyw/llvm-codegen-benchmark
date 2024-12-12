@@ -45,11 +45,6 @@ func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v0, v8, fa5
 	ret
-func000000000000000c:                   # @func000000000000000c
-	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfge.vf	v0, v8, fa5
-	ret
 func000000000000000d:                   # @func000000000000000d
 	lui	a0, 798688
 	fmv.w.x	fa5, a0
@@ -63,6 +58,11 @@ func0000000000000009:                   # @func0000000000000009
 	vmflt.vf	v12, v8, fa5
 	vmfgt.vf	v13, v8, fa5
 	vmnor.mm	v0, v13, v12
+	ret
+func000000000000000c:                   # @func000000000000000c
+	fmv.w.x	fa5, zero
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmfge.vf	v0, v8, fa5
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 16, e32, m4, ta, ma

@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andl	$268435455, %esi                # imm = 0xFFFFFFF
 	addl	$-16777216, %esi                # imm = 0xFF000000
 	cmpl	$-16777183, %esi                # imm = 0xFF000021

@@ -21,7 +21,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovb2m	%xmm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpltuw	.LCPI0_0(%rip), %ymm2, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -49,7 +49,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovb2m	%xmm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpnleuw	.LCPI1_0(%rip), %ymm2, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -77,7 +77,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovb2m	%xmm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqw	.LCPI2_0(%rip), %ymm2, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -105,7 +105,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovb2m	%xmm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpneqw	.LCPI3_0(%rip), %ymm2, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

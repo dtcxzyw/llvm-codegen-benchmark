@@ -1,8 +1,10 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/sclUpsize.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll

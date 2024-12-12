@@ -1,5 +1,5 @@
 
-; 202 occurrences:
+; 205 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -16,6 +16,7 @@
 ; freetype/optimized/ftgasp.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; graphviz/optimized/htmltable.c.ll
+; grpc/optimized/ev_poll_posix.cc.ll
 ; hermes/optimized/IdentifierHashTable.cpp.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -36,7 +37,7 @@
 ; icu/optimized/ushape.ll
 ; icu/optimized/utext.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; libevent/optimized/evmap.c.ll
+; libevent/optimized/poll.c.ll
 ; libuv/optimized/udp.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; lief/optimized/psa_crypto.c.ll
@@ -44,7 +45,6 @@
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/ematch.ll
-; linux/optimized/ff-memless.ll
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/hugetlb.ll
@@ -56,7 +56,6 @@
 ; linux/optimized/ip_output.ll
 ; linux/optimized/ip_sockglue.ll
 ; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memfd.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mmu_gather.ll
@@ -94,7 +93,6 @@
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/ParsePragma.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/ScheduleDAGFast.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
@@ -115,6 +113,8 @@
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_text.ll
 ; node/optimized/simdutf.ll
 ; node/optimized/udp.ll
 ; oiio/optimized/DPXHeader.cpp.ll
@@ -202,6 +202,9 @@
 ; wireshark/optimized/packet_list.cpp.ll
 ; wolfssl/optimized/internal.c.ll
 ; z3/optimized/pb_sls.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i16 %2) #0 {
 entry:
@@ -210,49 +213,30 @@ entry:
   ret i32 %4
 }
 
-; 31 occurrences:
-; abc/optimized/trees.c.ll
-; darktable/optimized/Rw2Decoder.cpp.ll
+; 6 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; fmt/optimized/compile-test.cc.ll
 ; folly/optimized/File.cpp.ll
-; gromacs/optimized/trees.c.ll
-; icu/optimized/collationdatabuilder.ll
-; libjpeg-turbo/optimized/jcdctmgr.c.ll
-; libpng/optimized/pngwrite.c.ll
-; libquic/optimized/trees.c.ll
-; linux/optimized/deftree.ll
-; linux/optimized/extents.ll
-; linux/optimized/fast_commit.ll
-; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_psr.ll
-; linux/optimized/move_extent.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/X86InstructionSelector.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; ocio/optimized/MathUtils.cpp.ll
 ; vcpkg/optimized/strings.cpp.ll
-; wireshark/optimized/packet-dis.c.ll
-; wireshark/optimized/packet-drda.c.ll
-; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; wireshark/optimized/packet-gvcp.c.ll
-; wireshark/optimized/packet-ospf.c.ll
-; wireshark/optimized/packet-rtps.c.ll
-; wireshark/optimized/packet-sll.c.ll
-; wireshark/optimized/packet-smpp.c.ll
 ; wireshark/optimized/packet-u3v.c.ll
-; wireshark/optimized/packet-v5ua.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
 entry:
-  %3 = icmp ult i16 %2, 2
+  %3 = icmp samesign ult i16 %2, 2
   %4 = select i1 %3, i32 %0, i32 %1
   ret i32 %4
 }
 
-; 222 occurrences:
+; 228 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/boundary.ll
+; boost/optimized/codepage.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/date_time.ll
+; boost/optimized/formatter.ll
 ; icu/optimized/alphaindex.ll
 ; icu/optimized/anytrans.ll
 ; icu/optimized/brktrans.ll
@@ -481,12 +465,9 @@ entry:
   ret i32 %4
 }
 
-; 23 occurrences:
+; 20 occurrences:
 ; clamav/optimized/lzwdec.c.ll
-; cpython/optimized/optimizer.ll
 ; icu/optimized/collationdatabuilder.ll
-; linux/optimized/ebda.ll
-; linux/optimized/ff-memless.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_display_irq.ll
@@ -509,6 +490,42 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 255
+  %4 = select i1 %3, i32 %0, i32 %1
+  ret i32 %4
+}
+
+; 27 occurrences:
+; abc/optimized/trees.c.ll
+; darktable/optimized/Rw2Decoder.cpp.ll
+; gromacs/optimized/trees.c.ll
+; icu/optimized/collationdatabuilder.ll
+; libjpeg-turbo/optimized/jcdctmgr.c.ll
+; libpng/optimized/pngwrite.c.ll
+; libquic/optimized/trees.c.ll
+; linux/optimized/deftree.ll
+; linux/optimized/extents.ll
+; linux/optimized/fast_commit.ll
+; linux/optimized/i9xx_wm.ll
+; linux/optimized/intel_psr.ll
+; linux/optimized/move_extent.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/X86InstructionSelector.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; ocio/optimized/MathUtils.cpp.ll
+; wireshark/optimized/packet-dis.c.ll
+; wireshark/optimized/packet-drda.c.ll
+; wireshark/optimized/packet-dvb-s2-bb.c.ll
+; wireshark/optimized/packet-gvcp.c.ll
+; wireshark/optimized/packet-ospf.c.ll
+; wireshark/optimized/packet-rtps.c.ll
+; wireshark/optimized/packet-sll.c.ll
+; wireshark/optimized/packet-smpp.c.ll
+; wireshark/optimized/packet-u3v.c.ll
+; wireshark/optimized/packet-v5ua.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = icmp ult i16 %2, 5
   %4 = select i1 %3, i32 %0, i32 %1
   ret i32 %4
 }
@@ -543,6 +560,17 @@ entry:
   %.not = icmp eq i16 %2, 18761
   %3 = select i1 %.not, i32 %1, i32 %0
   ret i32 %3
+}
+
+; 2 occurrences:
+; cpython/optimized/optimizer.ll
+; linux/optimized/ff-memless.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i16 %2, 180
+  %4 = select i1 %3, i32 %0, i32 %1
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

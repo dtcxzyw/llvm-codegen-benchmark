@@ -14,7 +14,7 @@ entry:
   ret ptr %6
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/kitCloud.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; darktable/optimized/amaze.cc.ll
@@ -53,7 +53,6 @@ entry:
 ; openjdk/optimized/FourByteAbgrPre.ll
 ; openjdk/optimized/HBShaper.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
-; openspiel/optimized/2048.cc.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; sqlite/optimized/sqlite3.ll
@@ -92,10 +91,9 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/wlnRead.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; openjdk/optimized/ciMethodData.ll
 ; tev/optimized/ImageCanvas.cpp.ll

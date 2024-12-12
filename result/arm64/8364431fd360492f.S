@@ -1,15 +1,10 @@
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	movi	v6.4s, #16
-	cmeq	v5.4s, v5.4s, #0
-	cmeq	v4.4s, v4.4s, #0
-	bic	v0.4s, #3
-	bic	v1.4s, #3
-	bif	v2.16b, v6.16b, v4.16b
-	bif	v3.16b, v6.16b, v5.16b
-	cmhi	v1.4s, v3.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	cmp	w2, #0
+	mov	w8, #16                         // =0x10
+	and	w9, w0, #0xfffffffc
+	csel	w8, w1, w8, eq
+	cmp	w9, w8
+	cset	w0, lo
 	ret
                                         // -- End function

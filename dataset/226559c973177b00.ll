@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/x86func.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i8 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i32 218103808, i32 234881024
-  %4 = icmp ult i8 %1, 81
-  %5 = select i1 %4, i32 201326592, i32 %3
-  %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
-}
-
 ; 5 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; php/optimized/php_libmagic.ll
@@ -23,7 +11,7 @@ entry:
   %3 = select i1 %2, i32 4, i32 1
   %4 = icmp eq i8 %1, 126
   %5 = select i1 %4, i32 2, i32 %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -60,7 +48,7 @@ entry:
   %3 = select i1 %2, i32 -87, i32 -55
   %4 = icmp ult i8 %1, 10
   %5 = select i1 %4, i32 -48, i32 %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -125,7 +113,7 @@ entry:
   %3 = select i1 %2, i32 20, i32 5
   %4 = icmp eq i8 %1, 2
   %5 = select i1 %4, i32 10, i32 %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

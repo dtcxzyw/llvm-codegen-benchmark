@@ -1,4 +1,4 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	vpmovsxdq	%xmm2, %ymm2
 	vpsraq	$32, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1

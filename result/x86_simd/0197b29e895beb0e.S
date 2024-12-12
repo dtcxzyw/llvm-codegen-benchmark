@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	2305843009213693948             # 0x1ffffffffffffffc
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -12,7 +12,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$8, %xmm0, %xmm0
 	vpsrad	$8, %xmm0, %xmm0

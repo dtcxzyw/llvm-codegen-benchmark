@@ -32,3 +32,14 @@ func0000000000000006:                   # @func0000000000000006
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	and	a1, a1, a2
+	sltiu	a0, a0, 61
+	and	a0, a0, a1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	and	a1, a1, a2
+	sltiu	a0, a0, 4
+	xori	a0, a0, 1
+	and	a0, a0, a1
+	ret

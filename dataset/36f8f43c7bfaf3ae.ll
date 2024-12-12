@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; cvc5/optimized/core_solver.cpp.ll
+; 4 occurrences:
 ; gromacs/optimized/block.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll

@@ -3,7 +3,7 @@
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 7
   %3 = icmp ult i64 %2, %0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000248(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000888(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = icmp ult i64 %2, %0
@@ -32,7 +32,7 @@ entry:
 ; clamav/optimized/unpack.cpp.ll
 ; postgres/optimized/pg_waldump.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = icmp ugt i64 %2, %0

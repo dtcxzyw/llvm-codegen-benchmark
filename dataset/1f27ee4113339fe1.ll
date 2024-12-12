@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; cvc5/optimized/miplib_trick.cpp.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; linux/optimized/sbitmap.ll
@@ -18,7 +18,6 @@
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -29,7 +28,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/vectornode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
@@ -41,11 +40,11 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   %5 = icmp eq i64 %4, -1
   ret i1 %5
 }

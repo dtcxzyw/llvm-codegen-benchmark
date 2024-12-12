@@ -29,7 +29,7 @@ entry:
   ret i32 %5
 }
 
-; 46 occurrences:
+; 42 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acecXor.c.ll
@@ -69,12 +69,8 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; pcg-cpp/optimized/make-partytrick.cpp.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; ruby/optimized/bignum.ll
 ; soc-simulator/optimized/verilated.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
@@ -104,7 +100,7 @@ entry:
   ret i32 %5
 }
 
-; 151 occurrences:
+; 140 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder.cc.ll
@@ -115,6 +111,7 @@ entry:
 ; arrow/optimized/thread_pool.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
+; boost/optimized/area.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
@@ -139,7 +136,6 @@ entry:
 ; libwebp/optimized/cwebp.c.ll
 ; libwebp/optimized/syntax_enc.c.ll
 ; linux/optimized/cfg.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/intel_renderstate.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/mballoc.ll
@@ -190,20 +186,10 @@ entry:
 ; openblas/optimized/dgemm_thread_tt.c.ll
 ; openblas/optimized/dgemv_thread_n.c.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
-; openblas/optimized/dsbmv_thread_L.c.ll
-; openblas/optimized/dsbmv_thread_U.c.ll
 ; openblas/optimized/dsymm_thread_LL.c.ll
 ; openblas/optimized/dsymm_thread_LU.c.ll
 ; openblas/optimized/dsymm_thread_RL.c.ll
 ; openblas/optimized/dsymm_thread_RU.c.ll
-; openblas/optimized/dtbmv_thread_NLN.c.ll
-; openblas/optimized/dtbmv_thread_NLU.c.ll
-; openblas/optimized/dtbmv_thread_NUN.c.ll
-; openblas/optimized/dtbmv_thread_NUU.c.ll
-; openblas/optimized/dtbmv_thread_TLN.c.ll
-; openblas/optimized/dtbmv_thread_TLU.c.ll
-; openblas/optimized/dtbmv_thread_TUN.c.ll
-; openblas/optimized/dtbmv_thread_TUU.c.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/function.pb.cc.ll
@@ -243,7 +229,6 @@ entry:
 ; rocksdb/optimized/rate_limiter.cc.ll
 ; rocksdb/optimized/threadpool_imp.cc.ll
 ; slurm/optimized/locks.ll
-; spike/optimized/s_mul64To128M.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; verilator/optimized/V3FileLine.cpp.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
@@ -265,7 +250,7 @@ entry:
   ret i32 %5
 }
 
-; 41 occurrences:
+; 38 occurrences:
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -299,10 +284,7 @@ entry:
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; php/optimized/unixtime2tm.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; rocksdb/optimized/c.cc.ll
@@ -329,7 +311,8 @@ entry:
   ret i32 %5
 }
 
-; 100 occurrences:
+; 112 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -410,6 +393,17 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; openblas/optimized/dgemv_thread_n.c.ll
+; openblas/optimized/dsbmv_thread_L.c.ll
+; openblas/optimized/dsbmv_thread_U.c.ll
+; openblas/optimized/dtbmv_thread_NLN.c.ll
+; openblas/optimized/dtbmv_thread_NLU.c.ll
+; openblas/optimized/dtbmv_thread_NUN.c.ll
+; openblas/optimized/dtbmv_thread_NUU.c.ll
+; openblas/optimized/dtbmv_thread_TLN.c.ll
+; openblas/optimized/dtbmv_thread_TLU.c.ll
+; openblas/optimized/dtbmv_thread_TUN.c.ll
+; openblas/optimized/dtbmv_thread_TUU.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -439,14 +433,13 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; arrow/optimized/align_util.cc.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; openblas/optimized/dgbmv_thread_t.c.ll
 ; openblas/optimized/dgemm_thread_nn.c.ll
 ; openblas/optimized/dgemm_thread_nt.c.ll
 ; openblas/optimized/dgemm_thread_tn.c.ll
@@ -461,6 +454,18 @@ define i32 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add i64 %3, %0
+  %5 = trunc i64 %4 to i32
+  ret i32 %5
+}
+
+; 2 occurrences:
+; darktable/optimized/LJpegDecompressor.cpp.ll
+; php/optimized/unixtime2tm.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = add nuw nsw i64 %0, %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }
@@ -480,13 +485,14 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; cpython/optimized/longobject.ll
 ; git/optimized/pack-bitmap.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; postgres/optimized/zic.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -508,17 +514,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; darktable/optimized/LJpegDecompressor.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
-  %5 = trunc i64 %4 to i32
-  ret i32 %5
-}
-
 ; 6 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; gromacs/optimized/gmx_disre.cpp.ll
@@ -530,7 +525,7 @@ entry:
 define i32 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = trunc nsw i64 %4 to i32
   ret i32 %5
 }
@@ -545,6 +540,20 @@ entry:
   %3 = add i64 %1, %2
   %4 = add i64 %3, %0
   %5 = trunc nuw nsw i64 %4 to i32
+  ret i32 %5
+}
+
+; 4 occurrences:
+; boost/optimized/attribute_name.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; hyperscan/optimized/rose_build_misc.cpp.ll
+; hyperscan/optimized/slot_manager.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = add nsw i64 %3, %0
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -612,19 +621,6 @@ define i32 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add i64 %3, %0
-  %5 = trunc nuw i64 %4 to i32
-  ret i32 %5
-}
-
-; 3 occurrences:
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/rose_build_misc.cpp.ll
-; hyperscan/optimized/slot_manager.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }

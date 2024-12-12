@@ -5,7 +5,7 @@ func0000000000000024:                   # @func0000000000000024
 	vmerge.vvm	v16, v24, v16, v0
 	fmv.d.x	fa5, zero
 	vfmax.vf	v16, v16, fa5
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	ret
 .LCPI1_0:
 	.quad	0x40dfffc000000000              # double 32767

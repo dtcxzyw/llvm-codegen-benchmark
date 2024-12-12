@@ -21,11 +21,17 @@ func0000000000000001:                   # @func0000000000000001
 	cmovnel	%esi, %edi
 	movzbl	%dil, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movl	%edi, %eax
+	cmpl	$1048576, %edx                  # imm = 0x100000
+	cmovael	%esi, %eax
+	andl	$7, %eax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	testl	%edx, %edx
 	cmovel	%esi, %eax
-	andl	$63, %eax
+	andl	$1024, %eax                     # imm = 0x400
 	retq
 func0000000000000008:                   # @func0000000000000008
 	cmpl	$65537, %edx                    # imm = 0x10001

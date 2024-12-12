@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 41 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/obmalloc.ll
 ; hdf5/optimized/H5FDcore.c.ll
@@ -34,6 +34,13 @@
 ; spike/optimized/vmv8r_v.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1x0js6flb76ylaa82e6lu27uy.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/6pzok54tcf7jgyfxt7910tckc.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -42,9 +49,15 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 8 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; qemu/optimized/block_mirror.c.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1x0js6flb76ylaa82e6lu27uy.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/6pzok54tcf7jgyfxt7910tckc.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:

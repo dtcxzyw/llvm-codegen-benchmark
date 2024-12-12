@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	subl	%esi, %edi
 	xorl	%eax, %eax
 	cmpl	$65, %edx
@@ -14,6 +14,12 @@ func0000000000000020:                   # @func0000000000000020
 	subl	%esi, %edi
 	xorl	%eax, %eax
 	cmpl	$65537, %edx                    # imm = 0x10001
+	cmovael	%edi, %eax
+	retq
+func0000000000000021:                   # @func0000000000000021
+	subl	%esi, %edi
+	xorl	%eax, %eax
+	cmpl	$131073, %edx                   # imm = 0x20001
 	cmovael	%edi, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005

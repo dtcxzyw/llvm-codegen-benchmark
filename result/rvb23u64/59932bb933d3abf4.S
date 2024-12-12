@@ -1,11 +1,11 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	srai	a1, a0, 63
 	lui	a2, 488281
 	addiw	a2, a2, 1024
 	and	a1, a1, a2
 	sh1add	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	slli	a1, a0, 16
 	lui	a2, 16
 	addiw	a2, a2, -16
@@ -15,7 +15,7 @@ func0000000000000058:                   # @func0000000000000058
 	czero.eqz	a0, a2, a0
 	add	a0, a0, a1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	lui	a1, 122
 	lui	a2, 1048332
 	addiw	a1, a1, 288

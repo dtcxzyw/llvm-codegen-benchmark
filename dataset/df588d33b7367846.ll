@@ -30,8 +30,7 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
-; abc/optimized/verStream.c.ll
+; 4 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; libquic/optimized/asn1_par.c.ll
 ; postgres/optimized/inv_api.ll

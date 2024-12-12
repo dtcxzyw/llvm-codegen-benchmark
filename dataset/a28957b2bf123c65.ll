@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/divnode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, 63
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/kslra32_u.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = xor i32 %2, -1
@@ -28,7 +28,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, 63

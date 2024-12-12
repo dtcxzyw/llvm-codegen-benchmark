@@ -3,7 +3,7 @@
 ; ruby/optimized/date_parse.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i8 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000a1(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sub nsw i64 0, %3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/x509_vfy.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000d1(i8 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000001a1(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = sub nsw i64 0, %3

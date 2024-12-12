@@ -3,7 +3,7 @@
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -29,7 +29,7 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = icmp ne i8 %2, 1
@@ -38,14 +38,16 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/mlme.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/g1BarrierSetC1.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 32
   %3 = icmp ne i8 %2, 0
@@ -160,7 +162,7 @@ entry:
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; php/optimized/logical_filters.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -8
   %3 = icmp ne i8 %2, 48
@@ -169,13 +171,14 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; git/optimized/add-patch.ll
 ; git/optimized/remote-curl.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; linux/optimized/ibs.ll
+; lvgl/optimized/lv_flex.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 4
   %3 = icmp eq i8 %2, 0
@@ -187,7 +190,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaAccess.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 4
   %3 = icmp eq i8 %2, 0
@@ -203,7 +206,7 @@ entry:
 ; linux/optimized/nl80211.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0

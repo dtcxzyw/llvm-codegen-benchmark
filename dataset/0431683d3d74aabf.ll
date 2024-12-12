@@ -30,13 +30,12 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = select i1 %1, i32 -2147483648, i32 -1073741824
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
 
-; 3 occurrences:
-; linux/optimized/dw.ll
+; 2 occurrences:
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
@@ -71,7 +70,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
   %5 = select i1 %1, i32 -2147483648, i32 0
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }

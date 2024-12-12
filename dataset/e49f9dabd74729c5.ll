@@ -12,9 +12,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; faiss/optimized/AutoTune.cpp.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:

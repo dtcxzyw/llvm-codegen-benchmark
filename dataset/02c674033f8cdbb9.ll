@@ -1,9 +1,8 @@
 
-; 2 occurrences:
-; eastl/optimized/Int128_t.cpp.ll
+; 1 occurrences:
 ; flac/optimized/bitreader.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000c8(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
@@ -18,7 +17,7 @@ entry:
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
@@ -31,7 +30,7 @@ entry:
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 8, %2

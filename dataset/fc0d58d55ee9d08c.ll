@@ -1,11 +1,12 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/inline.ll
 ; linux/optimized/intel_crtc.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/tcp_output.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; opencv/optimized/floodfill.cpp.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; quickjs/optimized/libunicode.ll
@@ -45,7 +46,7 @@ entry:
   ret i32 %5
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -82,6 +83,7 @@ entry:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i16 %2) #0 {
 entry:
@@ -91,7 +93,13 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 16 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cpython/optimized/_datetimemodule.ll
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll

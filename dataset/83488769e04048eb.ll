@@ -1,12 +1,11 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; casadi/optimized/kinsol.c.ll
 ; ipopt/optimized/IpRestoConvCheck.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/svmsgd.cpp.ll
 ; opencv/optimized/tree.cpp.ll
-; osqp/optimized/scaling.c.ll
 ; quantlib/optimized/chisquaredistribution.ll
 ; quantlib/optimized/noarbsabr.ll
 ; sundials/optimized/kinsol.c.ll
@@ -14,7 +13,7 @@
 define i1 @func0000000000000004(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0.000000e+00, double %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 
@@ -65,7 +64,7 @@ entry:
 define i1 @func0000000000000002(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0x10000000000000, double %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -78,12 +77,11 @@ entry:
 define i1 @func0000000000000003(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0.000000e+00, double %2
-  %4 = fcmp ugt double %3, %0
+  %4 = fcmp ult double %0, %3
   ret i1 %4
 }
 
-; 9 occurrences:
-; gromacs/optimized/dlagtf.cpp.ll
+; 8 occurrences:
 ; openblas/optimized/dlagtf.c.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/edgepreserving_filter.cpp.ll
@@ -96,7 +94,7 @@ entry:
 define i1 @func0000000000000005(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0x3F66719F3601671A, double %2
-  %4 = fcmp ult double %3, %0
+  %4 = fcmp ugt double %0, %3
   ret i1 %4
 }
 
@@ -110,7 +108,7 @@ entry:
 define i1 @func0000000000000008(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0.000000e+00, double %2
-  %4 = fcmp oeq double %3, %0
+  %4 = fcmp oeq double %0, %3
   ret i1 %4
 }
 
@@ -122,7 +120,7 @@ entry:
 define i1 @func0000000000000007(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0x7FF8000000000000, double %2
-  %4 = fcmp une double %3, %0
+  %4 = fcmp une double %0, %3
   ret i1 %4
 }
 
@@ -133,7 +131,7 @@ entry:
 define i1 @func000000000000000e(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0.000000e+00, double %2
-  %4 = fcmp ord double %3, %0
+  %4 = fcmp ord double %0, %3
   ret i1 %4
 }
 
@@ -144,7 +142,7 @@ entry:
 define i1 @func000000000000000c(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0.000000e+00, double %2
-  %4 = fcmp ole double %3, %0
+  %4 = fcmp oge double %0, %3
   ret i1 %4
 }
 
@@ -154,7 +152,7 @@ entry:
 define i1 @func000000000000000a(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0.000000e+00, double %2
-  %4 = fcmp oge double %3, %0
+  %4 = fcmp ole double %0, %3
   ret i1 %4
 }
 

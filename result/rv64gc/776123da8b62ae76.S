@@ -1,17 +1,8 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	subw	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 5
 	sltiu	a0, a0, 27
-	ret
-func0000000000000008:                   # @func0000000000000008
-	subw	a1, a1, a2
-	lui	a2, 1048574
-	add	a0, a0, a1
-	addi	a1, a2, -1758
-	addw	a0, a0, a1
-	addiw	a1, a2, -1759
-	sltu	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	subw	a1, a1, a2

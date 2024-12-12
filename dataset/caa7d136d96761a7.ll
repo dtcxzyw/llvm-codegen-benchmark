@@ -1,9 +1,12 @@
 
-; 21 occurrences:
+; 24 occurrences:
+; boost/optimized/to_chars.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/Commit.cpp.ll
 ; llvm/optimized/DWARFUnit.cpp.ll
+; llvm/optimized/DebugProgramInstruction.cpp.ll
+; llvm/optimized/IntrinsicInst.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/RegisterBankInfo.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll

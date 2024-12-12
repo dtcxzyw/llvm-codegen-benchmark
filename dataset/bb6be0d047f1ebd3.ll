@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 48 occurrences:
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; hermes/optimized/SemanticValidator.cpp.ll
 ; hyperscan/optimized/ng_som.cpp.ll
@@ -18,7 +18,6 @@
 ; llvm/optimized/IndVarSimplify.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll

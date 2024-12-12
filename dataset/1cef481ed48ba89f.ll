@@ -1,6 +1,8 @@
 
-; 99 occurrences:
+; 102 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/context.ll
 ; cmake/optimized/index.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cpython/optimized/codeobject.ll
@@ -35,6 +37,7 @@
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; mold/optimized/thunks.cc.ARM32.cc.ll
 ; nix/optimized/serialise.ll
 ; opencc/optimized/louds-trie.cc.ll
@@ -108,18 +111,6 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/measured_polarized.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 4294967295
-  %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw i64 %3, %0
-  ret i64 %4
-}
-
 ; 28 occurrences:
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
@@ -158,7 +149,7 @@ entry:
   ret i64 %4
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
@@ -180,6 +171,7 @@ entry:
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; postgres/optimized/xlog.ll
 ; qemu/optimized/block_vhdx.c.ll
 ; qemu/optimized/migration_ram.c.ll
@@ -202,7 +194,7 @@ entry:
   ret i64 %4
 }
 
-; 140 occurrences:
+; 138 occurrences:
 ; abc/optimized/adler32.c.ll
 ; abc/optimized/giaIso2.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -262,8 +254,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -352,7 +342,7 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; jemalloc/optimized/tcache.ll
@@ -362,6 +352,7 @@ entry:
 ; linux/optimized/extents.ll
 ; linux/optimized/i915_gem_stolen.ll
 ; linux/optimized/pcmcia_resource.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; openjdk/optimized/dumpTimeClassInfo.ll
 ; postgres/optimized/slru.ll
 ; qemu/optimized/fdt_sw.c.ll
@@ -412,7 +403,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/alloc_lib.ll
 ; openjdk/optimized/jmemmgr.ll
 ; openmpi/optimized/pmix_vmem.ll
 ; postgres/optimized/aset.ll
@@ -422,7 +414,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = add nuw i64 %2, 24
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

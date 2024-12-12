@@ -1,12 +1,11 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; freetype/optimized/cff.c.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -26,7 +25,12 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 
-; 4 occurrences:
+; 9 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll

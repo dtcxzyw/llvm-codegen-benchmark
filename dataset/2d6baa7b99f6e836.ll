@@ -10,7 +10,7 @@ entry:
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
   %6 = shl nuw i64 1, %5
-  %7 = or i64 %6, %0
+  %7 = or i64 %0, %6
   ret i64 %7
 }
 
@@ -25,7 +25,7 @@ entry:
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
   %6 = shl nuw i64 1, %5
-  %7 = or i64 %6, %0
+  %7 = or i64 %0, %6
   ret i64 %7
 }
 

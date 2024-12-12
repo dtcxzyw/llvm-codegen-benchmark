@@ -10,7 +10,7 @@ func0000000000000002:                   # @func0000000000000002
 	cmpl	$23808, %edi                    # imm = 0x5D00
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	andl	$2139095040, %edi               # imm = 0x7F800000
 	xorl	%eax, %eax
 	cmpl	$1065353216, %edi               # imm = 0x3F800000

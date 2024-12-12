@@ -1,5 +1,5 @@
 func0000000000000012:                   # @func0000000000000012
-	xorb	$1, %dil
+	notb	%dil
 	cmpl	%edx, %esi
 	setb	%al
 	andb	%dil, %al
@@ -17,13 +17,13 @@ func000000000000000c:                   # @func000000000000000c
 	andb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	xorb	$1, %dil
+	notb	%dil
 	cmpl	%edx, %esi
 	setae	%al
 	andb	%dil, %al
 	retq
 func0000000000000018:                   # @func0000000000000018
-	xorb	$1, %dil
+	notb	%dil
 	cmpl	%edx, %esi
 	sete	%al
 	andb	%dil, %al

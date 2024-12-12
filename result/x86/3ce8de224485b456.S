@@ -4,7 +4,7 @@ func0000000000000010:                   # @func0000000000000010
 	sete	%al
 	leaq	6(%rdi,%rax,2), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	xorl	%eax, %eax
 	testw	%si, %si
 	setne	%al

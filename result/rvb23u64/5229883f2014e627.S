@@ -44,11 +44,31 @@ func0000000000000008:                   # @func0000000000000008
 	zext.h	a1, a1
 	sltu	a0, a0, a1
 	ret
+func0000000000000018:                   # @func0000000000000018
+	zext.h	a0, a0
+	add	a1, a1, a2
+	zext.h	a1, a1
+	sltu	a0, a0, a1
+	ret
 func0000000000000004:                   # @func0000000000000004
 	zext.h	a0, a0
 	add	a1, a1, a2
 	zext.h	a1, a1
 	sltu	a0, a1, a0
+	ret
+func0000000000000061:                   # @func0000000000000061
+	zext.h	a0, a0
+	add	a1, a1, a2
+	zext.h	a1, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000045:                   # @func0000000000000045
+	zext.h	a0, a0
+	add	a1, a1, a2
+	zext.h	a1, a1
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
 	ret
 func0000000000000009:                   # @func0000000000000009
 	zext.h	a0, a0
@@ -57,29 +77,15 @@ func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000031:                   # @func0000000000000031
-	zext.h	a0, a0
-	add	a1, a1, a2
-	zext.h	a1, a1
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	zext.h	a0, a0
 	add	a1, a1, a2
 	zext.h	a1, a1
 	sltu	a0, a1, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	zext.h	a0, a0
 	add	a1, a1, a2
 	zext.h	a1, a1
 	sltu	a0, a0, a1
-	ret
-func0000000000000025:                   # @func0000000000000025
-	zext.h	a0, a0
-	add	a1, a1, a2
-	zext.h	a1, a1
-	sltu	a0, a0, a1
-	xori	a0, a0, 1
 	ret

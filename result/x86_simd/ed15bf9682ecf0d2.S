@@ -1,17 +1,3 @@
-func0000000000000080:                   # @func0000000000000080
-	vpcmpltuq	%ymm2, %ymm1, %k0
-	vpmovm2d	%k0, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-func000000000000010c:                   # @func000000000000010c
-	vpcmpnleuq	%ymm2, %ymm1, %k0
-	vpmovm2d	%k0, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
 func000000000000008c:                   # @func000000000000008c
 	vpcmpltuq	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1

@@ -34,16 +34,15 @@ entry:
 define i64 @func0000000000000032(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 16
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; folly/optimized/TimeUtil.cpp.ll
 ; hermes/optimized/FileCheck.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
-; rust-analyzer-rs/optimized/2hhegu64ori9jrrl.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; zxing/optimized/GTIN.cpp.ll
 ; Function Attrs: nounwind
@@ -55,8 +54,11 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 4 occurrences:
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
+; zed-rs/optimized/5m9bjvwazi0alu2tzwf9y1ejc.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -66,7 +68,7 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
 ; arrow/optimized/key_hash.cc.ll
 ; hyperscan/optimized/noodle_engine.c.ll
@@ -77,13 +79,12 @@ entry:
 ; openjdk/optimized/xMarkStackAllocator.ll
 ; openjdk/optimized/zMarkStackAllocator.ll
 ; redis/optimized/lstrlib.ll
-; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; stat-rs/optimized/1dt2wsqttaly1xii.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 33554432
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -125,17 +126,6 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; proxygen/optimized/HTTPMessage.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %.neg = xor i64 %2, -1
-  %3 = sub i64 %0, %1
-  %4 = add i64 %3, %.neg
-  ret i64 %4
-}
-
 ; 2 occurrences:
 ; arrow/optimized/uri.cc.ll
 ; proxygen/optimized/ParseURL.cpp.ll
@@ -148,8 +138,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; ockam-rs/optimized/2rihuzhmont6zqqo.ll
+; zed-rs/optimized/dq2w60loei6lzivjguqmeajyy.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -159,8 +150,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; protobuf/optimized/parser.cc.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -168,17 +160,6 @@ entry:
   %3 = sub nuw i64 %0, %1
   %4 = add i64 %3, %.neg
   ret i64 %4
-}
-
-; 1 occurrences:
-; hyperscan/optimized/ng_squash.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 8
-  %4 = add i64 %3, %1
-  %5 = sub i64 %0, %4
-  ret i64 %5
 }
 
 attributes #0 = { nounwind }

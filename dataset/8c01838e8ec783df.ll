@@ -1,11 +1,16 @@
 
-; 97 occurrences:
+; 102 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; faiss/optimized/kmeans1d.cpp.ll
 ; faiss/optimized/utils.cpp.ll

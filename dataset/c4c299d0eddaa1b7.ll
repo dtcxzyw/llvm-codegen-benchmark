@@ -1,5 +1,5 @@
 
-; 336 occurrences:
+; 335 occurrences:
 ; arrow/optimized/exec.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
@@ -211,7 +211,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -337,7 +336,7 @@
 ; yosys/optimized/zinit.ll
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000276(i64 %0, i64 %1) #0 {
+define i1 @func00000000000004e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 56
   %3 = shl i64 %2, 32
@@ -351,7 +350,7 @@ entry:
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000251(i64 %0, i64 %1) #0 {
+define i1 @func00000000000004a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = shl i64 %2, 32
@@ -367,7 +366,7 @@ entry:
 ; opencv/optimized/multicalib.cpp.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000256(i64 %0, i64 %1) #0 {
+define i1 @func00000000000004a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 376
   %3 = shl i64 %2, 32
@@ -380,7 +379,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/surfacearea.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 3
   %3 = shl i64 %2, 32
@@ -393,7 +392,7 @@ entry:
 ; 1 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000261(i64 %0, i64 %1) #0 {
+define i1 @func00000000000004c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = shl i64 %2, 32

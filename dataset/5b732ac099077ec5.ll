@@ -7,8 +7,8 @@
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = icmp eq i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -21,8 +21,8 @@ entry:
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = icmp ugt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -34,8 +34,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 9
-  %4 = icmp ult i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -46,7 +46,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 9
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -58,12 +58,12 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = icmp slt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp sgt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; coreutils-rs/optimized/1vsll3ssk1zrfv2c.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
@@ -80,13 +80,12 @@ entry:
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
-; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = icmp ne i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ne i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -96,8 +95,8 @@ entry:
 define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = icmp uge i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ule i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

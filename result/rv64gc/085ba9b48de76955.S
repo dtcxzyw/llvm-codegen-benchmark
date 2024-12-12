@@ -12,14 +12,6 @@ func0000000000000017:                   # @func0000000000000017
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
-	slli	a2, a2, 48
-	srli	a2, a2, 48
-	slli	a2, a2, 8
-	slli	a1, a1, 24
-	or	a1, a1, a2
-	addw	a0, a0, a1
-	ret
 func000000000000007c:                   # @func000000000000007c
 	slli	a2, a2, 48
 	srli	a2, a2, 48

@@ -21,7 +21,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; folly/optimized/json.cpp.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/markovfunctional.ll
@@ -34,18 +35,6 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; abc/optimized/dauCount.c.ll
-; postgres/optimized/network.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001e(i32 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 3
-  %3 = zext nneg i32 %0 to i64
-  %4 = shl nuw i64 %3, %2
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; linux/optimized/exoparg1.ll
 ; Function Attrs: nounwind
@@ -54,6 +43,17 @@ entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = zext i32 %0 to i64
   %4 = shl i64 %3, %2
+  ret i64 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/network.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001e(i32 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 3
+  %3 = zext nneg i32 %0 to i64
+  %4 = shl nuw i64 %3, %2
   ret i64 %4
 }
 

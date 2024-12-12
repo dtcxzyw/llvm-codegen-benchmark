@@ -1,10 +1,10 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movl	$8, %eax
 	shlxq	%rdi, %rax, %rax
 	cmpq	$2048, %rax                     # imm = 0x800
 	setb	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movl	$8, %eax
 	shlxq	%rdi, %rax, %rax
 	cmpq	$4096, %rax                     # imm = 0x1000

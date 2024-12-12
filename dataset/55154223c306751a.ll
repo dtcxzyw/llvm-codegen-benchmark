@@ -1,13 +1,13 @@
 
-; 76 occurrences:
+; 80 occurrences:
 ; abc/optimized/abcCollapse.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/sclBuffer.c.ll
+; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/introspection_diffuse.c.ll
@@ -41,7 +41,12 @@
 ; linux/optimized/intel_vdsc.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_flex.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -52,7 +57,6 @@
 ; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/blenders.cpp.ll
@@ -84,7 +88,8 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 20 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
 ; gromacs/optimized/constr.cpp.ll
 ; gromacs/optimized/gmx_disre.cpp.ll
 ; gromacs/optimized/manage_threading.cpp.ll
@@ -92,6 +97,12 @@ entry:
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/regcache-rbtree.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_grid.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; openjdk/optimized/jquant1.ll
 ; openspiel/optimized/chess_common.cc.ll
 ; pbrt-v4/optimized/parallel.cpp.ll

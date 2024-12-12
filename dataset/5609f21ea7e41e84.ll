@@ -4,7 +4,7 @@
 ; verilator/optimized/V3Expand.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 -1, %0
   %2 = icmp eq i32 %0, 0
@@ -17,7 +17,7 @@ entry:
 ; linux/optimized/aspm.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 1, %0
   %2 = icmp eq i32 %0, 18
@@ -29,7 +29,7 @@ entry:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0) #0 {
+define i32 @func0000000000000068(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 1, %0
   %2 = icmp ugt i32 %0, 3
@@ -46,7 +46,7 @@ entry:
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0) #0 {
+define i32 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
   %2 = icmp eq i32 %0, 0
@@ -54,12 +54,11 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/resize.ll
 ; openusd/optimized/crease.cpp.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0) #0 {
+define i32 @func0000000000000048(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
   %2 = icmp ugt i32 %0, 2
@@ -70,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0) #0 {
+define i32 @func000000000000004a(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
   %2 = icmp sgt i32 %0, 31

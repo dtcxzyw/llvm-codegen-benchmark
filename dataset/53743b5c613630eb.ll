@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; memcached/optimized/memcached-slab_automove.ll
@@ -7,6 +7,7 @@
 ; opencv/optimized/regtree.cpp.ll
 ; velox/optimized/SsdCache.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i64 %1, i64 %2) #0 {
 entry:

@@ -20,13 +20,12 @@ entry:
   ret i64 %4
 }
 
-; 75 occurrences:
+; 74 occurrences:
 ; abc/optimized/abcExact.c.ll
-; abc/optimized/nmApi.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
-; actix-rs/optimized/2l54a10og4z99516.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/matches_relation_factory.ll
 ; casadi/optimized/sundials_direct.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/zdict.c.ll
@@ -105,8 +104,9 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/absRef.c.ll
+; boost/optimized/cmdline.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -226,7 +226,7 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; coreutils-rs/optimized/4kegmj2upwa8iiok.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -242,6 +242,8 @@ entry:
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
@@ -273,7 +275,7 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
@@ -284,9 +286,11 @@ entry:
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; postgres/optimized/reorderbuffer.ll
 ; postgres/optimized/snapmgr.ll
-; raylib/optimized/raudio.c.ll
-; stb/optimized/stb_vorbis.c.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
@@ -296,13 +300,12 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; casadi/optimized/polynomial.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/autofit.c.ll
 ; libquic/optimized/a_int.c.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -358,14 +361,27 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %0, %1
-  %3 = shl i64 %2, 1
-  %4 = add nuw i64 %3, 2
+  %3 = shl i64 %2, 2
+  %4 = add nuw i64 %3, 4
+  ret i64 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %0, %1
+  %3 = shl i64 %2, 6
+  %4 = add nuw i64 %3, 64
   ret i64 %4
 }
 

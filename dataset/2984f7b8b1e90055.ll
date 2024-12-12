@@ -11,10 +11,13 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 6 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; ripgrep-rs/optimized/1tu4ff7k1l20r9ex.ll
 ; ripgrep-rs/optimized/w48b1qsmd8jodkv.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i8 %0, i8 %1, i8 %2) #0 {
 entry:

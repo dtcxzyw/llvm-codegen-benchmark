@@ -31,10 +31,11 @@ func000000000000000e:                   # @func000000000000000e
 	mulhu	a5, a4, a2
 	mul	a2, a4, a2
 	add	a3, a3, a5
-	add	a0, a0, a2
+	add	a2, a2, a0
 	add	a1, a1, a3
-	sltu	a2, a0, a2
-	add	a1, a1, a2
+	sltu	a0, a2, a0
+	add	a1, a1, a0
+	mv	a0, a2
 	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a4, a4, 8
@@ -43,8 +44,9 @@ func000000000000000d:                   # @func000000000000000d
 	mulhu	a5, a4, a2
 	mul	a2, a4, a2
 	add	a3, a3, a5
-	add	a0, a0, a2
+	add	a2, a2, a0
 	add	a1, a1, a3
-	sltu	a2, a0, a2
-	add	a1, a1, a2
+	sltu	a0, a2, a0
+	add	a1, a1, a0
+	mv	a0, a2
 	ret

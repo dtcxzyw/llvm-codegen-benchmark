@@ -17,9 +17,8 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; linux/optimized/intel_pstate.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; Function Attrs: nounwind

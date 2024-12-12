@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v8, v8, 0
 	li	a0, 95
 	vmseq.vx	v8, v8, a0
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -18,7 +18,7 @@ func000000000000000c:                   # @func000000000000000c
 	vnsrl.wi	v8, v8, 0
 	li	a0, 18
 	vmsne.vx	v8, v8, a0
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 224

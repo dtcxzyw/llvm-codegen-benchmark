@@ -1,5 +1,8 @@
 
-; 34 occurrences:
+; 37 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; folly/optimized/EventBase.cpp.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/freevolume.cpp.ll

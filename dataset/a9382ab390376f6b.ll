@@ -10,7 +10,8 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/alloc_lib.ll
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
 ; cpython/optimized/rangeobject.ll

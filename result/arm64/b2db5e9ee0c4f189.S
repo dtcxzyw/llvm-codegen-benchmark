@@ -1,42 +1,46 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
+	tst	w0, #0x1
+	csel	x8, x1, x2, ne
+	cmp	x8, #34
 	mov	w8, #34                         // =0x22
-	ushll2	v5.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	shl	v5.2d, v5.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v5.2d, v5.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	bif	v2.16b, v4.16b, v5.16b
-	bsl	v0.16b, v1.16b, v3.16b
-	dup	v3.2d, x8
-	cmhi	v0.2d, v3.2d, v0.2d
-	cmhi	v1.2d, v3.2d, v2.2d
-	bic	v1.16b, v3.16b, v1.16b
-	bic	v0.16b, v3.16b, v0.16b
+	csel	x0, xzr, x8, lo
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	mov	w8, #1                          // =0x1
-	ushll2	v5.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	shl	v5.2d, v5.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v5.2d, v5.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	bif	v2.16b, v4.16b, v5.16b
-	bsl	v0.16b, v1.16b, v3.16b
-	dup	v1.2d, x8
-	mov	w8, #4                          // =0x4
-	dup	v3.2d, x8
+	tst	w0, #0x1
+	csel	x8, x1, x2, ne
+	cmp	x8, #1
 	mov	w8, #3                          // =0x3
-	cmeq	v0.2d, v0.2d, v1.2d
-	cmeq	v1.2d, v2.2d, v1.2d
-	dup	v2.2d, x8
-	bsl	v1.16b, v2.16b, v3.16b
-	bsl	v0.16b, v2.16b, v3.16b
+	cinc	x0, x8, ne
+	ret
+                                        // -- End function
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	tst	w0, #0x1
+	csel	x8, x1, x2, ne
+	cmp	x8, #0
+	mov	x8, #9223372036854775807        // =0x7fffffffffffffff
+	cinv	x0, x8, le
+	ret
+                                        // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	tst	w0, #0x1
+	csel	x8, x1, x2, ne
+	lsr	x8, x8, #32
+	cmp	x8, #0
+	cset	w8, eq
+	ubfiz	x0, x8, #1, #32
+	ret
+                                        // -- End function
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+	tst	w0, #0x1
+	csel	x8, x1, x2, ne
+	cmp	x8, #0
+	mov	w8, #2                          // =0x2
+	cinc	x0, x8, lt
 	ret
                                         // -- End function

@@ -1,10 +1,9 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/ccm.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/gcm.ll
-; linux/optimized/rss.ll
 ; linux/optimized/slab_common.ll
 ; llvm/optimized/Descriptor.cpp.ll
 ; wireshark/optimized/packet-rtps.c.ll

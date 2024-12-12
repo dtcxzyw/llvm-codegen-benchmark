@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$268369920, %esi                # imm = 0xFFF0000
 	cmpl	$851968, %esi                   # imm = 0xD0000
 	setb	%al
@@ -15,7 +15,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$16777212, %esi                 # imm = 0xFFFFFC
 	cmpl	$524289, %esi                   # imm = 0x80001
 	setae	%al

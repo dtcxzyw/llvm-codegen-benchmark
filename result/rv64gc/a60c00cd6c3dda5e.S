@@ -1,10 +1,15 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	bne	a1, a0, .LBB0_2
 	addi	a0, a1, -40
 .LBB0_2:                                # %entry
 	ret
-func0000000000000028:                   # @func0000000000000028
-	bgeu	a0, a1, .LBB1_2
-	addi	a0, a1, 1
+func0000000000000061:                   # @func0000000000000061
+	bne	a1, a0, .LBB1_2
+	addi	a0, a1, 32
 .LBB1_2:                                # %entry
+	ret
+func0000000000000068:                   # @func0000000000000068
+	bgeu	a0, a1, .LBB2_2
+	addi	a0, a1, 1
+.LBB2_2:                                # %entry
 	ret

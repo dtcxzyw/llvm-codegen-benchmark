@@ -34,16 +34,6 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-tftp.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp uge i32 %0, %1
-  %3 = zext i1 %2 to i32
-  ret i32 %3
-}
-
-; 1 occurrences:
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {

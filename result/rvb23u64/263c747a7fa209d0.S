@@ -22,11 +22,3 @@ func0000000000000003:                   # @func0000000000000003
 .LBB2_2:
 	fdiv.s	fa0, fa0, fa1
 	ret
-func0000000000000004:                   # @func0000000000000004
-	flt.s	a0, fa0, fa1
-	bnez	a0, .LBB3_2
-	fdiv.s	fa0, fa1, fa0
-	ret
-.LBB3_2:
-	fdiv.s	fa0, fa0, fa1
-	ret

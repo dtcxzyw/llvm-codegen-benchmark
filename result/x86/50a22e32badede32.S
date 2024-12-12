@@ -8,7 +8,7 @@ func000000000000000f:                   # @func000000000000000f
 	leaq	(%rdi,%rdx,8), %rax
 	leaq	-8(%rax,%rsi,8), %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
 	leaq	-8(%rax,%rsi,8), %rax
@@ -23,6 +23,11 @@ func000000000000007a:                   # @func000000000000007a
 	leaq	(%rdi,%rdx,8), %rax
 	leaq	8(%rax,%rsi,8), %rax
 	retq
+func000000000000007b:                   # @func000000000000007b
+	imulq	%rsi, %rdx
+	leaq	(%rdi,%rdx,8), %rax
+	leaq	8(%rax,%rsi,8), %rax
+	retq
 func0000000000000050:                   # @func0000000000000050
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
@@ -33,7 +38,7 @@ func0000000000000058:                   # @func0000000000000058
 	leaq	(%rdi,%rdx,8), %rax
 	leaq	-8(%rax,%rsi,8), %rax
 	retq
-func0000000000000072:                   # @func0000000000000072
+func0000000000000073:                   # @func0000000000000073
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
 	leaq	8(%rax,%rsi,8), %rax

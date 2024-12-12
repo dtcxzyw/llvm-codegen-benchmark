@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 %0, %1
   %3 = and i32 %2, 1
@@ -24,10 +24,23 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; openblas/optimized/dlaeda.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 %0, %1
+  %3 = and i32 %2, 63
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = and i32 %2, 63

@@ -1,10 +1,10 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	addl	$-8, %edx
 	leal	-4190208(%rsi), %eax
 	cmpl	$32776, %edx                    # imm = 0x8008
 	cmovbl	%edi, %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addl	$-8, %edx
 	leal	-4190208(%rsi), %eax
 	cmpl	$16388, %edx                    # imm = 0x4004

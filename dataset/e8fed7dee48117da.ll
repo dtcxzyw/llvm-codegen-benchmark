@@ -181,7 +181,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, %0
@@ -192,7 +192,7 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003b(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000006b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %.not = icmp slt i32 %3, %0
@@ -205,7 +205,7 @@ entry:
 ; nlohmann_json/optimized/unit.cpp.ll
 ; openspiel/optimized/y.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp eq i32 %3, %0
@@ -234,24 +234,34 @@ entry:
 ; clamav/optimized/pe_icons.c.ll
 ; openusd/optimized/pred_common.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   %5 = select i1 %4, i32 24, i32 16
   ret i32 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; clamav/optimized/mszipd.c.ll
-; opencv/optimized/tree.cpp.ll
-; openusd/optimized/pred_common.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp ugt i32 %3, %0
   %5 = select i1 %4, i32 32768, i32 0
+  ret i32 %5
+}
+
+; 2 occurrences:
+; opencv/optimized/tree.cpp.ll
+; openusd/optimized/pred_common.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, %0
+  %5 = select i1 %4, i32 0, i32 2
   ret i32 %5
 }
 
@@ -280,7 +290,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/cascadedetect.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, %0

@@ -8,11 +8,11 @@
 ; linux/optimized/intel_tc.ll
 ; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = shl nuw i32 192, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -30,11 +30,11 @@ entry:
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = shl nuw nsw i32 64, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -43,7 +43,7 @@ entry:
 ; abc/optimized/dauNonDsd.c.ll
 ; php/optimized/zend_API.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = shl i32 768, %2
@@ -56,7 +56,7 @@ entry:
 ; abc/optimized/mioSop.c.ll
 ; linux/optimized/intel_sseu_debugfs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = shl nuw i32 1, %2
@@ -68,11 +68,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = shl i32 255, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -81,7 +81,7 @@ entry:
 ; linux/optimized/intel_display_irq.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = shl nuw nsw i32 8, %2
@@ -107,7 +107,7 @@ entry:
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/libata-acpi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = shl nuw i32 65536, %2
@@ -120,7 +120,7 @@ entry:
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_overlay.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = shl i32 255, %2
@@ -132,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_display_power_well.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = shl i32 3, %2
@@ -148,7 +148,7 @@ define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = shl i32 4, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }

@@ -1,6 +1,7 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; arrow/optimized/chunk_resolver.cc.ll
+; boost/optimized/collate.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/polynomial.cpp.ll

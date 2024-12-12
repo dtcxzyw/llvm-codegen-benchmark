@@ -10,7 +10,7 @@ entry:
   %3 = fcmp olt double %2, 0x3EB0C6F7A0B5ED8D
   %4 = fcmp ogt float %1, 0x401921FB60000000
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

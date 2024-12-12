@@ -8,5 +8,5 @@ func000000000000001c:                   # @func000000000000001c
 	vsll.vi	v10, v10, 8
 	vor.vv	v10, v10, v14
 	vmul.vx	v10, v10, a0
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret

@@ -1,6 +1,5 @@
 
-; 54 occurrences:
-; assimp/optimized/HL1MDLLoader.cpp.ll
+; 55 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; freetype/optimized/truetype.c.ll
 ; graphviz/optimized/DotIO.c.ll
@@ -54,6 +53,8 @@
 ; snappy/optimized/snappy.cc.ll
 ; wireshark/optimized/packet-bacapp.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i8 %2) #0 {
 entry:
@@ -62,7 +63,8 @@ entry:
   ret i64 %4
 }
 
-; 158 occurrences:
+; 157 occurrences:
+; boost/optimized/topology.ll
 ; coreutils-rs/optimized/4ws6541n7p4pbb05.ll
 ; folly/optimized/dynamic.cpp.ll
 ; lightgbm/optimized/parser.cpp.ll
@@ -155,13 +157,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -220,6 +219,7 @@ entry:
 ; rust-analyzer-rs/optimized/n2ltxs27br91fc6.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; serde-rs-json/optimized/1z3u82elh7pk3w5r.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i8 %2) #0 {

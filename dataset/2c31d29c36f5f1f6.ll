@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; opencv/optimized/buffer_area.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i16 %2) #0 {
 entry:
@@ -12,8 +14,10 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i16 %2) #0 {
 entry:
@@ -23,8 +27,10 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i64 %1, i16 %2) #0 {
 entry:

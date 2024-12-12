@@ -8,7 +8,7 @@ define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = sub i8 %1, %2
   %4 = shl nsw i8 %3, 4
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   %6 = xor i8 %5, -128
   ret i8 %6
 }

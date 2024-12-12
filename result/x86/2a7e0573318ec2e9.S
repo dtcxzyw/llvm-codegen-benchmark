@@ -69,13 +69,18 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	$1, %rsi
 	sbbq	$-1, %rax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func00000000000000a3:                   # @func00000000000000a3
+	movq	%rdi, %rax
+	cmpq	$4, %rsi
+	adcq	$0, %rax
+	retq
+func00000000000000c3:                   # @func00000000000000c3
 	movq	%rdi, %rax
 	shrq	$48, %rsi
 	cmpq	$1, %rsi
 	sbbq	$-1, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	movq	%rdi, %rax
 	cmpq	$1023, %rsi                     # imm = 0x3FF
 	adcq	$0, %rax
@@ -85,16 +90,31 @@ func0000000000000062:                   # @func0000000000000062
 	cmpq	$1, %rsi
 	sbbq	$-1, %rax
 	retq
+func0000000000000043:                   # @func0000000000000043
+	movq	%rdi, %rax
+	cmpq	$4097, %rsi                     # imm = 0x1001
+	sbbq	$-1, %rax
+	retq
+func00000000000000c0:                   # @func00000000000000c0
+	movq	%rdi, %rax
+	cmpq	$8, %rsi
+	sbbq	$-1, %rax
+	retq
 func0000000000000050:                   # @func0000000000000050
 	notq	%rsi
 	shrq	$63, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000041:                   # @func0000000000000041
+func00000000000000c1:                   # @func00000000000000c1
 	movq	%rdi, %rax
 	shrq	$54, %rsi
 	cmpq	$1, %rsi
 	sbbq	$-1, %rax
+	retq
+func0000000000000021:                   # @func0000000000000021
+	movq	%rdi, %rax
+	cmpq	$-2, %rsi
+	adcq	$0, %rax
 	retq
 func0000000000000020:                   # @func0000000000000020
 	movq	%rdi, %rax

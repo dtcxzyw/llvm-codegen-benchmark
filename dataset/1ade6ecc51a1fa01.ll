@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btContinuousConvexCollision.ll
@@ -15,6 +15,7 @@
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_profile_gamma.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/microfacet.cpp.ll

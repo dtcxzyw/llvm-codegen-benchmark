@@ -47,7 +47,7 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; bullet3/optimized/btThreads.ll
 ; clamav/optimized/strfn.cpp.ll
 ; cmake/optimized/archive_read_support_filter_compress.c.ll
@@ -56,6 +56,8 @@ entry:
 ; linux/optimized/md.ll
 ; linux/optimized/mmp.ll
 ; linux/optimized/rx.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_timer.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -124,7 +126,7 @@ entry:
 ; redis/optimized/latency.ll
 ; yosys/optimized/log.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
   %2 = icmp eq i32 %1, 2147483647
@@ -135,10 +137,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0) #0 {
+define i32 @func0000000000000038(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
-  %2 = icmp ugt i32 %1, 9997
+  %2 = icmp samesign ugt i32 %1, 9997
   %3 = select i1 %2, i32 609, i32 %1
   ret i32 %3
 }
@@ -185,7 +187,7 @@ entry:
 ; proj/optimized/isea.cpp.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = icmp eq i32 %1, 3

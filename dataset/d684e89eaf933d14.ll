@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cmake/optimized/pipe.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; hdf5/optimized/H5Fsuper.c.ll
@@ -10,7 +10,6 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; node/optimized/pipe.ll
 ; opencv/optimized/boost.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; php/optimized/zend_inference.ll

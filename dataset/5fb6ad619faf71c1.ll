@@ -1,9 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/int128.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i128 %0, i64 %1) #0 {
@@ -11,7 +12,20 @@ entry:
   %2 = zext i64 %1 to i128
   %3 = shl nuw i128 %2, 64
   %4 = or disjoint i128 %3, %0
-  %5 = lshr i128 %4, 44
+  %5 = lshr i128 %4, 6
+  %6 = trunc i128 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002c(i128 %0, i64 %1) #0 {
+entry:
+  %2 = zext i64 %1 to i128
+  %3 = shl nuw i128 %2, 64
+  %4 = or disjoint i128 %3, %0
+  %5 = lshr exact i128 %4, 3
   %6 = trunc i128 %5 to i64
   ret i64 %6
 }
@@ -39,7 +53,7 @@ define i64 @func000000000000000a(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = shl i128 %2, 65
-  %4 = or disjoint i128 %3, %0
+  %4 = or disjoint i128 %0, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
   ret i64 %6

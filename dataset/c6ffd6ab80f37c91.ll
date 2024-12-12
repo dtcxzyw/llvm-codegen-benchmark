@@ -14,17 +14,17 @@
 ; wireshark/optimized/packet-c1222.c.ll
 ; z3/optimized/bv_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func00000000000001f8(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext i1 %1 to i32
   %6 = add nuw nsw i32 %4, %5
-  %7 = icmp ugt i32 %6, 1
+  %7 = icmp samesign ugt i32 %6, 1
   ret i1 %7
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; draco/optimized/ply_decoder.cc.ll
 ; grpc/optimized/legacy_inproc_transport.cc.ll
@@ -35,14 +35,13 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/net_socket.c.ll
-; slurm/optimized/ebpf.ll
 ; wireshark/optimized/libpcap.c.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext i1 %1 to i32
   %6 = or i32 %4, %5
   %7 = icmp eq i32 %6, 0
@@ -55,10 +54,10 @@ entry:
 ; opencv/optimized/fast_hough_transform.cpp.ll
 ; qemu/optimized/block_io.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i1 %1 to i32
   %6 = add nsw i32 %4, %5
   %7 = icmp sgt i32 %6, 1024
@@ -75,23 +74,23 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; xgboost/optimized/learner.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func00000000000001f4(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext i1 %1 to i32
   %6 = add nuw nsw i32 %4, %5
-  %7 = icmp ult i32 %6, 268435456
+  %7 = icmp samesign ult i32 %6, 268435456
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; chibicc/optimized/codegen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i1 %1 to i32
   %6 = add nsw i32 %4, %5
   %7 = icmp slt i32 %6, 8
@@ -103,10 +102,10 @@ entry:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func00000000000001ec(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext i1 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   %7 = icmp ne i32 %6, 1
@@ -121,7 +120,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %.neg = sext i1 %1 to i32
   %5 = icmp eq i32 %4, %.neg
   ret i1 %5
@@ -133,7 +132,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i1 %1 to i32
   %6 = add i32 %4, %5
   %7 = icmp slt i32 %6, 2
@@ -143,10 +142,10 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fa(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func00000000000001ea(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext i1 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   %7 = icmp sgt i32 %6, 3

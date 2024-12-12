@@ -92,7 +92,7 @@ define i16 @func0000000000000002(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = and i16 %3, -2049
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   ret i16 %5
 }
 
@@ -110,7 +110,7 @@ define i16 @func0000000000000001(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or i16 %1, %2
   %4 = and i16 %3, 16
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 93 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
@@ -39,7 +39,6 @@
 ; linux/optimized/airtime.ll
 ; linux/optimized/drm_gem_framebuffer_helper.ll
 ; linux/optimized/drm_modes.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/kyber-iosched.ll
 ; linux/optimized/pcm_misc.ll
@@ -54,7 +53,6 @@
 ; llvm/optimized/CodeGenTypes.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -63,6 +61,12 @@
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_blend.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_switch.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
@@ -128,19 +132,15 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 12 occurrences:
 ; coremark/optimized/core_matrix.c.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/splashscreen_gfx_impl.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/vmulhu_vv.ll
 ; spike/optimized/vmulhu_vx.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
@@ -177,7 +177,7 @@ entry:
   ret i32 %3
 }
 
-; 55 occurrences:
+; 62 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -197,18 +197,26 @@ entry:
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/8250_pci.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_demo_render.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openblas/optimized/dsfrk.c.ll
-; openblas/optimized/dspcon.c.ll
-; openblas/optimized/dspsvx.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsptri.c.ll
 ; openblas/optimized/dsptrs.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtptri.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openblas/optimized/lapacke_ctp_trans.c.ll
 ; openblas/optimized/lapacke_dtp_trans.c.ll
 ; openblas/optimized/lapacke_stp_trans.c.ll
@@ -222,7 +230,6 @@ entry:
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openusd/optimized/entdec.c.ll
 ; proj/optimized/horner.cpp.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
@@ -252,7 +259,7 @@ entry:
   ret i32 %3
 }
 
-; 32 occurrences:
+; 36 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaShrink7.c.ll
 ; abc/optimized/wlcNtk.c.ll
@@ -263,6 +270,10 @@ entry:
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; minetest/optimized/CImage.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll

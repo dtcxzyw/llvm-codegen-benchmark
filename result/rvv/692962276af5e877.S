@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	slli	a0, a1, 32
 	add.uw	a0, a1, a0
 	vand.vx	v8, v8, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000005:                   # @func0000000000000005
 	li	a0, 32

@@ -8,11 +8,6 @@ func0000000000000017:                   # @func0000000000000017
 	shrl	%eax
 	incl	%eax
 	retq
-func0000000000000015:                   # @func0000000000000015
-	leal	-256(%rdi), %eax
-	shrl	$3, %eax
-	addq	$-8, %rax
-	retq
 func0000000000000007:                   # @func0000000000000007
 	leal	7(%rdi), %eax
 	shrl	$3, %eax
@@ -23,6 +18,11 @@ func0000000000000037:                   # @func0000000000000037
 	shrl	$6, %ecx
 	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
 	addq	%rcx, %rax
+	retq
+func0000000000000015:                   # @func0000000000000015
+	leal	-1(%rdi), %eax
+	shrl	$7, %eax
+	decq	%rax
 	retq
 func0000000000000027:                   # @func0000000000000027
 	leal	1(%rdi), %eax

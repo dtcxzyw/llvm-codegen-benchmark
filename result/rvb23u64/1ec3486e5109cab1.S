@@ -24,6 +24,11 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	srliw	a0, a0, 1
 	ret
+func000000000000000d:                   # @func000000000000000d
+	slli	a1, a1, 33
+	srli	a1, a1, 56
+	or	a0, a0, a1
+	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 16
 	zext.h	a0, a0

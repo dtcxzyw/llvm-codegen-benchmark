@@ -9,11 +9,17 @@ entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = udiv i16 %2, 255
   %4 = zext nneg i16 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
-; 3 occurrences:
+; 9 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cpython/optimized/_datetimemodule.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
@@ -23,7 +29,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = udiv i16 %2, 400
   %4 = zext nneg i16 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -35,7 +41,7 @@ entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = udiv i16 %2, 400
   %4 = zext nneg i16 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -47,7 +53,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = udiv i16 %2, 400
   %4 = zext nneg i16 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

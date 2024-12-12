@@ -1,5 +1,5 @@
 
-; 109 occurrences:
+; 107 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -38,7 +38,6 @@
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/guiChatConsole.cpp.ll
@@ -86,7 +85,6 @@
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/security_barrier_camera.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
-; opencv/optimized/signal_resample.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; opencv/optimized/tracking_by_matching.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
@@ -150,9 +148,10 @@ entry:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/decorate_background.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/texture_object.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
@@ -191,7 +190,6 @@ entry:
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
-; opencv/optimized/signal_resample.cpp.ll
 ; opencv/optimized/sinusoidalpattern.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; opencv/optimized/surf_matcher.cpp.ll
@@ -296,9 +294,19 @@ entry:
   ret i1 %2
 }
 
-; 6 occurrences:
-; darktable/optimized/introspection_bilateral.cc.ll
+; 2 occurrences:
 ; darktable/optimized/introspection_colorequal.c.ll
+; darktable/optimized/introspection_defringe.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(float %0) #0 {
+entry:
+  %1 = fptosi float %0 to i32
+  %2 = icmp samesign ult i32 %1, 32
+  ret i1 %2
+}
+
+; 5 occurrences:
+; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_defringe.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -307,7 +315,7 @@ entry:
 define i1 @func0000000000000004(float %0) #0 {
 entry:
   %1 = fptosi float %0 to i32
-  %2 = icmp ult i32 %1, 32
+  %2 = icmp ult i32 %1, 4
   ret i1 %2
 }
 

@@ -1,49 +1,6 @@
 
-; 34 occurrences:
-; cpython/optimized/sre.ll
-; darktable/optimized/introspection_tonecurve.c.ll
-; git/optimized/commit.ll
-; git/optimized/diffcore-rename.ll
-; graphviz/optimized/sfvscanf.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/H5Cint.c.ll
-; hdf5/optimized/H5Oalloc.c.ll
-; hwloc/optimized/topology.ll
-; icu/optimized/ucm.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; libwebp/optimized/frame_enc.c.ll
-; lief/optimized/asn1parse.c.ll
-; linux/optimized/cpuset.ll
-; linux/optimized/device_pm.ll
-; linux/optimized/md.ll
-; linux/optimized/scsi_scan.ll
-; llvm/optimized/Driver.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/RegisterCoalescer.cpp.ll
-; meshlab/optimized/Scanner.cpp.ll
-; mitsuba3/optimized/x86assembler.cpp.ll
-; opencv/optimized/shapedescr.cpp.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openmpi/optimized/osc_rdma_comm.ll
-; openssl/optimized/openssl-bin-dsaparam.ll
-; openssl/optimized/openssl-bin-ecparam.ll
-; postgres/optimized/dt_common.ll
-; postgres/optimized/euc_jp_and_sjis.ll
-; slurm/optimized/gres.ll
-; wireshark/optimized/packet-acdr.c.ll
-; wireshark/optimized/packet-protobuf.c.ll
-; yosys/optimized/share.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ne i32 %2, 1
-  %4 = and i1 %3, %1
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
-; 50 occurrences:
+; 54 occurrences:
+; git/optimized/apply.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
@@ -64,6 +21,8 @@ entry:
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; nuttx/optimized/fs_mmap.c.ll
+; opencv/optimized/norm.cpp.ll
+; openjdk/optimized/sharedRuntimeTrans.ll
 ; openjdk/optimized/signals_posix.ll
 ; openmpi/optimized/osc_rdma_comm.ll
 ; openspiel/optimized/tarok.cc.ll
@@ -89,6 +48,7 @@ entry:
 ; quantlib/optimized/slovakia.ll
 ; quantlib/optimized/switzerland.ll
 ; quantlib/optimized/thailand.ll
+; ruby/optimized/strftime.ll
 ; slurm/optimized/fed_mgr.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
@@ -97,30 +57,70 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp eq i32 %2, 4
+  %3 = icmp eq i32 %2, 3
   %4 = and i1 %3, %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
 
-; 12 occurrences:
-; flatbuffers/optimized/idl_gen_swift.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; logos-rs/optimized/5f38ll801i7djw99.ll
-; luau/optimized/main.cpp.ll
+; 37 occurrences:
+; cpython/optimized/sre.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; git/optimized/commit.ll
+; git/optimized/diffcore-rename.ll
+; graphviz/optimized/sfvscanf.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hdf5/optimized/H5Cint.c.ll
+; hdf5/optimized/H5Oalloc.c.ll
+; hwloc/optimized/topology.ll
+; icu/optimized/collationfastlatinbuilder.ll
+; icu/optimized/ucm.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; libwebp/optimized/frame_enc.c.ll
+; lief/optimized/asn1parse.c.ll
+; linux/optimized/cpuset.ll
+; linux/optimized/device_pm.ll
+; linux/optimized/md.ll
+; linux/optimized/scsi_scan.ll
+; llvm/optimized/Driver.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/RegisterCoalescer.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
-; nlohmann_json/optimized/unit.cpp.ll
+; mitsuba3/optimized/x86assembler.cpp.ll
+; opencv/optimized/shapedescr.cpp.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/sharedRuntimeTrans.ll
+; openmpi/optimized/osc_rdma_comm.ll
+; openssl/optimized/openssl-bin-dsaparam.ll
+; openssl/optimized/openssl-bin-ecparam.ll
+; postgres/optimized/dt_common.ll
+; postgres/optimized/euc_jp_and_sjis.ll
+; slurm/optimized/gres.ll
+; wireshark/optimized/packet-acdr.c.ll
+; wireshark/optimized/packet-gprs-llc.c.ll
+; wireshark/optimized/packet-protobuf.c.ll
+; yosys/optimized/share.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ne i32 %2, 1
+  %4 = and i1 %3, %1
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 5 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/escape.ll
 ; openspiel/optimized/tarok.cc.ll
-; postgres/optimized/euc_jp_and_sjis.ll
 ; quantlib/optimized/switzerland.ll
 ; quantlib/optimized/thailand.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -133,12 +133,12 @@ entry:
 define i1 @func0000000000000006(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; gromacs/optimized/tune_pme.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/ucm.ll
@@ -153,6 +153,7 @@ entry:
 ; quantlib/optimized/newzealand.ll
 ; redis/optimized/module.ll
 ; redis/optimized/script.ll
+; wireshark/optimized/packet-bgp.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -166,9 +167,23 @@ entry:
 ; logos-rs/optimized/5f38ll801i7djw99.ll
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 96
+  %3 = icmp samesign ugt i32 %2, 96
+  %4 = and i1 %1, %3
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 4 occurrences:
+; logos-rs/optimized/5f38ll801i7djw99.ll
+; meshlab/optimized/Scanner.cpp.ll
+; opencv/optimized/norm.cpp.ll
+; postgres/optimized/euc_jp_and_sjis.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 98
   %4 = and i1 %3, %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5

@@ -14,12 +14,11 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaSatLut.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; linux/optimized/ebitmap.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/srcutree.ll
 ; linux/optimized/tree.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll

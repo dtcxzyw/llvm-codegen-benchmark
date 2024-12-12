@@ -1,26 +1,33 @@
 
-; 12 occurrences:
+; 18 occurrences:
+; abc/optimized/extraUtilMacc.c.ll
+; git/optimized/revision.ll
 ; git/optimized/show-branch.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
+; libdeflate/optimized/deflate_decompress.c.ll
+; linux/optimized/intel_dpio_phy.ll
 ; linux/optimized/intel_fbc.ll
 ; linux/optimized/intel_opregion.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; lua/optimized/lcode.ll
-; mitsuba3/optimized/x86func.cpp.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; php/optimized/zend_inference.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or i32 %1, %0
-  %3 = or i32 %2, 1024
+  %2 = or disjoint i32 %1, 1024
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 
-; 52 occurrences:
+; 59 occurrences:
+; abc/optimized/giaNf.c.ll
 ; brotli/optimized/decode.c.ll
 ; brotli/optimized/encode.c.ll
 ; darktable/optimized/amaze.cc.ll
@@ -36,8 +43,12 @@ entry:
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; linux/optimized/apic.ll
 ; linux/optimized/cacheinfo.ll
+; linux/optimized/e1000_hw.ll
+; linux/optimized/hda_codec.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/intel_gmbus.ll
+; llvm/optimized/AutoUpgrade.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/InlineAsmLowering.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
@@ -46,6 +57,7 @@ entry:
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaSwift.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -59,6 +71,7 @@ entry:
 ; postgres/optimized/wchar.ll
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
@@ -76,17 +89,24 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or i32 %1, %0
-  %3 = or i32 %2, 2
+  %2 = or disjoint i32 %1, 2
+  %3 = or disjoint i32 %0, %2
   ret i32 %3
 }
 
-; 62 occurrences:
+; 72 occurrences:
+; abc/optimized/extraUtilMacc.c.ll
+; abseil-cpp/optimized/spinlock.cc.ll
+; hyperscan/optimized/arg_checks.cpp.ll
 ; icu/optimized/ubidi.ll
+; linux/optimized/cacheinfo.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/intel_uc_fw.ll
+; linux/optimized/ip6_tables.ll
+; linux/optimized/ip_tables.ll
+; linux/optimized/tg3.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
@@ -101,6 +121,8 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
+; php/optimized/zend_alloc.ll
+; php/optimized/zend_inference.ll
 ; postgres/optimized/gram.ll
 ; postgres/optimized/typcache.ll
 ; qemu/optimized/hw_char_cadence_uart.c.ll
@@ -144,15 +166,17 @@ entry:
 ; taskflow/optimized/text_pipeline.cpp.ll
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
+; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or i32 %1, %0
-  %3 = or i32 %2, 256
+  %2 = or i32 %1, 256
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; linux/optimized/e1000_hw.ll
 ; php/optimized/zend_alloc.ll
 ; php/optimized/zend_inference.ll
 ; wireshark/optimized/packet-dhcp.c.ll

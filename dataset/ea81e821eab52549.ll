@@ -1,15 +1,15 @@
 
-%"class.absl::debian2::string_view.2486695" = type { ptr, i64 }
-%struct.TCGArgConstraint.2593567 = type <{ i40, i32 }>
+%"class.absl::debian2::string_view.2602139" = type { ptr, i64 }
+%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
 
 ; 2 occurrences:
 ; luau/optimized/CodeGenX64.cpp.ll
 ; re2/optimized/re2.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %"class.absl::debian2::string_view.2486695", ptr %0, i64 %2
+  %3 = getelementptr %"class.absl::debian2::string_view.2602139", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -768
   ret ptr %4
 }
@@ -26,7 +26,7 @@ entry:
 ; opencv/optimized/rgbe.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -57,7 +57,7 @@ entry:
 define ptr @func000000000000002c(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %struct.TCGArgConstraint.2593567, ptr %0, i64 %2
+  %3 = getelementptr %struct.TCGArgConstraint.2707243, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -576
   ret ptr %4
 }
@@ -76,8 +76,7 @@ entry:
   ret ptr %4
 }
 
-; 20 occurrences:
-; clamav/optimized/crtmgr.c.ll
+; 18 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
@@ -86,7 +85,6 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; nuklear/optimized/unity.c.ll
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/thresh.cpp.ll
 ; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
@@ -98,23 +96,11 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = getelementptr ptr, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
-}
-
-; 2 occurrences:
-; gromacs/optimized/pdb2gmx.cpp.ll
-; opencv/optimized/color_yuv.dispatch.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i64
-  %3 = getelementptr i32, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 4
   ret ptr %4
 }
 

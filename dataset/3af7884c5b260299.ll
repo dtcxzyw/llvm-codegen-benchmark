@@ -1,34 +1,20 @@
 
-%"class.pxrInternal_v0_24__pxrReserved__::TfToken.3190141" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3190142" }
-%"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3190142" = type { ptr }
-%struct.WordEntry.3470009 = type { i32 }
+%struct.WordEntry.3654110 = type { i32 }
 
-; 1 occurrences:
+; 2 occurrences:
+; php/optimized/url.ll
 ; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [1 x i8], ptr %1, i64 0, i64 %2
-  %4 = getelementptr nusw i8, ptr %0, i64 1
+  %3 = getelementptr nusw nuw [1 x i8], ptr %1, i64 0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1
   %5 = icmp ult ptr %4, %3
   ret i1 %5
 }
 
-; 4 occurrences:
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; 41 occurrences:
 ; llvm/optimized/RewriteRope.cpp.ll
-; php/optimized/zend_language_scanner.ll
-; serde-rs-json/optimized/3o41byb1p1zh3720.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw [1 x i8], ptr %1, i64 0, i64 %2
-  %4 = getelementptr nusw i8, ptr %0, i64 1
-  %5 = icmp eq ptr %4, %3
-  ret i1 %5
-}
-
-; 39 occurrences:
 ; openusd/optimized/basisCurvesTopologySchema.cpp.ll
 ; openusd/optimized/cameraSchema.cpp.ll
 ; openusd/optimized/capsuleSchema.cpp.ll
@@ -68,11 +54,12 @@ entry:
 ; openusd/optimized/usdRenderSettingsSchema.cpp.ll
 ; openusd/optimized/usdRenderVarSchema.cpp.ll
 ; openusd/optimized/volumeFieldSchema.cpp.ll
+; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [3 x %"class.pxrInternal_v0_24__pxrReserved__::TfToken.3190141"], ptr %1, i64 0, i64 %2
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %3 = getelementptr nusw nuw [1 x i8], ptr %1, i64 0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1
   %5 = icmp eq ptr %4, %3
   ret i1 %5
 }
@@ -80,10 +67,32 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/clip.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr [5 x double], ptr %1, i64 0, i64 %2
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = icmp eq ptr %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw [6 x ptr], ptr %1, i64 0, i64 %2
+  %4 = getelementptr i8, ptr %0, i64 8
+  %5 = icmp eq ptr %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; serde-rs-json/optimized/3o41byb1p1zh3720.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw [0 x i8], ptr %1, i64 0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1
   %5 = icmp eq ptr %4, %3
   ret i1 %5
 }
@@ -93,7 +102,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [0 x %struct.WordEntry.3470009], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [0 x %struct.WordEntry.3654110], ptr %1, i64 0, i64 %2
   %4 = getelementptr i8, ptr %0, i64 4
   %5 = icmp ult ptr %4, %3
   ret i1 %5

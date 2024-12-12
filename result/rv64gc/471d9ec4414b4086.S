@@ -13,16 +13,14 @@ func0000000000000038:                   # @func0000000000000038
 	mulhu	a0, a0, a1
 	srli	a0, a0, 26
 	ret
-func000000000000001b:                   # @func000000000000001b
-	li	a1, 6
+func000000000000003b:                   # @func000000000000003b
+	lui	a1, 109951
+	addiw	a1, a1, 667
+	slli	a1, a1, 12
+	addi	a1, a1, -1077
 	mulhu	a0, a0, a1
 	ret
-func000000000000003b:                   # @func000000000000003b
-	lui	a1, 244141
-	addiw	a1, a1, -1536
-	mul	a2, a0, a1
+func000000000000001b:                   # @func000000000000001b
+	li	a1, 2000
 	mulhu	a0, a0, a1
-	slli	a0, a0, 12
-	srli	a2, a2, 52
-	or	a0, a0, a2
 	ret

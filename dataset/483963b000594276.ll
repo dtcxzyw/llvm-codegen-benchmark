@@ -1,5 +1,5 @@
 
-; 105 occurrences:
+; 106 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/giaFalse.c.ll
@@ -34,7 +34,6 @@
 ; jq/optimized/jv_dtoa.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; libquic/optimized/dtoa.cc.ll
-; libquic/optimized/x_long.c.ll
 ; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
@@ -105,6 +104,8 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yosys/optimized/SimpSolver.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -118,11 +119,11 @@ entry:
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ivyCut.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
+; boost/optimized/basic_text_iprimitive.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; flac/optimized/window.c.ll
 ; libquic/optimized/f_enum.c.ll
 ; libquic/optimized/f_int.c.ll
-; linux/optimized/mpih-mul.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; ncnn/optimized/innerproduct_x86.cpp.ll
 ; ncnn/optimized/padding_x86.cpp.ll
@@ -156,7 +157,7 @@ entry:
   ret i64 %2
 }
 
-; 52 occurrences:
+; 53 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -172,6 +173,7 @@ entry:
 ; linux/optimized/mballoc.ll
 ; linux/optimized/percpu.ll
 ; luau/optimized/BytecodeAnalysis.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; opencv/optimized/phase_corr.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll

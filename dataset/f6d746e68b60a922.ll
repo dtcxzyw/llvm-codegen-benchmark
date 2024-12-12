@@ -1,14 +1,13 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/extraUtilUtil.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
-; php/optimized/dow.ll
 ; postgres/optimized/pgtz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i16
-  %2 = sdiv i16 %1, 100
+  %2 = sdiv i16 %1, 10
   %3 = sext i16 %2 to i64
   ret i64 %3
 }

@@ -1,161 +1,99 @@
-func00000000000004aa:                   // @func00000000000004aa
+func000000000000114a:                   // @func000000000000114a
 // %bb.0:                               // %entry
-	add	v6.4s, v5.4s, v1.4s
-	add	v7.4s, v4.4s, v0.4s
-	cmgt	v6.4s, v6.4s, v3.4s
-	cmgt	v7.4s, v7.4s, v2.4s
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
-	cmgt	v1.4s, v1.4s, #0
-	cmgt	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w2, w0
+	sub	w9, w1, w2
+	cmp	w8, w1
+	csel	w8, w9, w0, gt
+	cmp	w8, #0
+	cset	w0, gt
 	ret
                                         // -- End function
-func00000000000005a6:                   // @func00000000000005a6
+func0000000000001546:                   // @func0000000000001546
 // %bb.0:                               // %entry
-	add	v6.4s, v1.4s, v5.4s
-	add	v7.4s, v0.4s, v4.4s
-	cmgt	v6.4s, v6.4s, v3.4s
-	cmgt	v7.4s, v7.4s, v2.4s
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
-	cmle	v1.4s, v1.4s, #0
-	cmle	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w0, w2
+	sub	w9, w1, w2
+	cmp	w8, w1
+	csel	w8, w9, w0, gt
+	cmp	w8, #1
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000081:                   // @func0000000000000081
+func0000000000000101:                   // @func0000000000000101
 // %bb.0:                               // %entry
-	add	v6.4s, v5.4s, v1.4s
-	add	v7.4s, v4.4s, v0.4s
-	cmhi	v6.4s, v6.4s, v3.4s
-	cmhi	v7.4s, v7.4s, v2.4s
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w2, w0
+	sub	w9, w1, w2
+	cmp	w8, w1
+	csel	w8, w9, w0, hi
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000005aa:                   // @func00000000000005aa
+func000000000000154a:                   // @func000000000000154a
 // %bb.0:                               // %entry
-	add	v6.4s, v1.4s, v5.4s
-	add	v7.4s, v0.4s, v4.4s
-	cmgt	v6.4s, v6.4s, v3.4s
-	cmgt	v7.4s, v7.4s, v2.4s
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
-	cmgt	v1.4s, v1.4s, #0
-	cmgt	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w0, w2
+	sub	w9, w1, w2
+	cmp	w8, w1
+	csel	w8, w9, w0, gt
+	cmp	w8, #0
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000566:                   // @func0000000000000566
+func00000000000014c6:                   // @func00000000000014c6
 // %bb.0:                               // %entry
-	add	v6.4s, v1.4s, v5.4s
-	add	v7.4s, v0.4s, v4.4s
-	cmgt	v6.4s, v3.4s, v6.4s
-	cmgt	v7.4s, v2.4s, v7.4s
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
-	cmlt	v1.4s, v1.4s, #0
-	cmlt	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w0, w2
+	sub	w9, w1, w2
+	cmp	w8, w1
+	csel	w8, w9, w0, lt
+	lsr	w0, w8, #31
 	ret
                                         // -- End function
-func0000000000000561:                   // @func0000000000000561
+func00000000000014c1:                   // @func00000000000014c1
 // %bb.0:                               // %entry
-	add	v6.4s, v1.4s, v5.4s
-	add	v7.4s, v0.4s, v4.4s
-	cmgt	v6.4s, v3.4s, v6.4s
-	cmgt	v7.4s, v2.4s, v7.4s
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w0, w2
+	sub	w9, w1, w2
+	cmp	w8, w1
+	csel	w8, w9, w0, lt
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000da1:                   // @func0000000000000da1
+func000000000000014a:                   // @func000000000000014a
 // %bb.0:                               // %entry
-	add	v6.4s, v1.4s, v5.4s
-	add	v7.4s, v0.4s, v4.4s
-	cmgt	v6.4s, v6.4s, v3.4s
-	cmgt	v7.4s, v7.4s, v2.4s
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w0, w2
+	sub	w9, w1, w2
+	cmp	w8, w1
+	csel	w8, w9, w0, gt
+	cmp	w8, #0
+	cset	w0, gt
 	ret
                                         // -- End function
-func00000000000005a1:                   // @func00000000000005a1
+func0000000000003541:                   // @func0000000000003541
 // %bb.0:                               // %entry
-	add	v6.4s, v5.4s, v1.4s
-	add	v7.4s, v4.4s, v0.4s
-	cmgt	v6.4s, v6.4s, v3.4s
-	cmgt	v7.4s, v7.4s, v2.4s
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w0, w2
+	sub	w9, w1, w2
+	cmp	w8, w1
+	csel	w8, w9, w0, gt
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000aa:                   // @func00000000000000aa
+func0000000000001541:                   // @func0000000000001541
 // %bb.0:                               // %entry
-	add	v6.4s, v1.4s, v5.4s
-	add	v7.4s, v0.4s, v4.4s
-	cmgt	v6.4s, v6.4s, v3.4s
-	cmgt	v7.4s, v7.4s, v2.4s
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
-	cmgt	v1.4s, v1.4s, #0
-	cmgt	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w2, w0
+	sub	w9, w1, w2
+	cmp	w8, w1
+	csel	w8, w9, w0, gt
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000005ac:                   // @func00000000000005ac
+func000000000000154c:                   // @func000000000000154c
 // %bb.0:                               // %entry
-	add	v6.4s, v1.4s, v5.4s
-	add	v7.4s, v0.4s, v4.4s
-	cmgt	v6.4s, v6.4s, v3.4s
-	cmgt	v7.4s, v7.4s, v2.4s
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	add	w8, w0, w2
+	sub	w9, w1, w2
+	cmp	w8, w1
+	csel	w8, w9, w0, gt
+	cmp	w8, #0
+	cset	w0, ne
 	ret
                                         // -- End function

@@ -4,7 +4,7 @@
 	.quad	3                               # 0x3
 .LCPI0_2:
 	.quad	4                               # 0x4
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%xmm3, %xmm1, %k1

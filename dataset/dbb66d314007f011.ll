@@ -3,6 +3,7 @@
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/ehci-dbgp.ll
 ; linux/optimized/insn.ll
+; llvm/optimized/AArch64Disassembler.cpp.ll
 ; opencv/optimized/compat_ptsetreg.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
@@ -13,7 +14,6 @@
 ; ruby/optimized/strftime.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-dis.c.ll
-; wireshark/optimized/packet-ipmi-trace.c.ll
 ; wolfssl/optimized/ecc.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
@@ -25,7 +25,7 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; icu/optimized/collationbuilder.ll
 ; linux/optimized/aspm.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -37,6 +37,7 @@ entry:
 ; opencv/optimized/grfmt_jpeg.cpp.ll
 ; openjdk/optimized/cmspack.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
+; wireshark/optimized/packet-gmhdr.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
@@ -64,18 +65,19 @@ entry:
 ; llvm/optimized/VLASizeChecker.cpp.ll
 ; wireshark/optimized/packet-zbee-nwk.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 260046848
-  %3 = icmp ugt i32 %2, 242745344
+  %3 = icmp samesign ugt i32 %2, 242745344
   %4 = select i1 %3, i1 %0, i1 false
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; icu/optimized/ucptrie.ll
 ; wireshark/optimized/packet-tipc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 402653184
   %3 = icmp eq i32 %2, 0

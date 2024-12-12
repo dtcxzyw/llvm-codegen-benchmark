@@ -6,5 +6,5 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	kmovd	%eax, %k1
 	vmovsd	%xmm2, %xmm1, %xmm1 {%k1}
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	retq

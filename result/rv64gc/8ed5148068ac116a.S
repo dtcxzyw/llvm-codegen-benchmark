@@ -5,9 +5,9 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	srliw	a0, a0, 11
-	snez	a0, a0
-	addi	a0, a0, -1
+	srliw	a0, a0, 24
+	sltiu	a0, a0, 51
+	neg	a0, a0
 	and	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a

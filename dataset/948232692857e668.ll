@@ -1,10 +1,8 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; linux/optimized/efi.ll
 ; linux/optimized/efi_64.ll
-; linux/optimized/memattr.ll
 ; linux/optimized/quirks.ll
-; linux/optimized/runtime-map.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/deepdata.cpp.ll
 ; qemu/optimized/libvhost-user.c.ll

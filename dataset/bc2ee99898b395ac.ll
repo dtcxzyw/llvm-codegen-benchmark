@@ -12,8 +12,7 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; linux/optimized/attr.ll
+; 2 occurrences:
 ; linux/optimized/intel_display_power.ll
 ; wireshark/optimized/packet-ipmi.c.ll
 ; Function Attrs: nounwind

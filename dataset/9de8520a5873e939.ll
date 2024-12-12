@@ -1,14 +1,18 @@
 
-; 164 occurrences:
+; 167 occurrences:
 ; abc/optimized/cuddBddIte.c.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
 ; abseil-cpp/optimized/substitute.cc.ll
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/url_base.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; clamav/optimized/yara_exec.c.ll
+; cmake/optimized/connect.c.ll
 ; coreutils-rs/optimized/1dsngyyz5dcg9o6n.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
@@ -16,6 +20,7 @@
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/cmathmodule.ll
 ; cpython/optimized/unicodeobject.ll
+; curl/optimized/libcurl_la-connect.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
@@ -66,7 +71,6 @@
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/ParsePragma.cpp.ll
 ; llvm/optimized/Patterns.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMakeCompressible.cpp.ll
 ; llvm/optimized/SPIR.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -97,9 +101,7 @@
 ; oiio/optimized/imagecache.cpp.ll
 ; openexr/optimized/parse_header.c.ll
 ; openssl/optimized/libcrypto-lib-bn_mont.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-bn_mont.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -121,7 +123,6 @@
 ; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; rust-analyzer-rs/optimized/266k6bqg3m0kg73d.ll
-; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; rust-analyzer-rs/optimized/2o0d131ok2fe9kmx.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
@@ -142,9 +143,6 @@
 ; rust-analyzer-rs/optimized/sdlo5r5xb34d3pv.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; serde-rs-json/optimized/1z3u82elh7pk3w5r.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
 ; spike/optimized/vcpop_m.ll
 ; spike/optimized/vmsof_m.ll
 ; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
@@ -155,6 +153,7 @@
 ; tree-sitter-rs/optimized/3akexam875pc2p1h.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; tree-sitter-rs/optimized/5exgj98ug936yba5.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
@@ -164,6 +163,10 @@
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
 ; z3/optimized/seq_rewriter.cpp.ll
+; zed-rs/optimized/3ly3b3fonqg7nd45488b8bsgs.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

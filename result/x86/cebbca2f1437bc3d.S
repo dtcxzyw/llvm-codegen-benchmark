@@ -24,3 +24,8 @@ func0000000000000011:                   # @func0000000000000011
 	notl	%eax
 	addl	%edi, %eax
 	retq
+func0000000000000145:                   # @func0000000000000145
+	cmpb	$3, %sil
+	sbbl	$0, %edi
+	leal	-399(%rdi), %eax
+	retq

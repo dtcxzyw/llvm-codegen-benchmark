@@ -1,14 +1,15 @@
 
-; 310 occurrences:
+; 329 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/idaa.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/kinsol_direct.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -52,8 +53,6 @@
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
-; gromacs/optimized/dlarfg.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
 ; gromacs/optimized/dlasv2.cpp.ll
 ; gromacs/optimized/dnrm2.cpp.ll
@@ -84,7 +83,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -119,17 +117,13 @@
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/ddisna.c.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgelsx.c.ll
 ; openblas/optimized/dgelsy.c.ll
 ; openblas/optimized/dgerfs.c.ll
-; openblas/optimized/dgesc2.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetrf2.c.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
 ; openblas/optimized/dggesx.c.ll
@@ -141,11 +135,8 @@
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dgtrfs.c.ll
 ; openblas/optimized/dgtsv.c.ll
-; openblas/optimized/dgttrf.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dhsein.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlaebz.c.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlaed2.c.ll
@@ -168,7 +159,6 @@
 ; openblas/optimized/dlantp.c.ll
 ; openblas/optimized/dlanv2.c.ll
 ; openblas/optimized/dlaorhr_col_getrfnp2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlaqr0.c.ll
@@ -182,7 +172,6 @@
 ; openblas/optimized/dlarfgp.c.ll
 ; openblas/optimized/dlarge.c.ll
 ; openblas/optimized/dlaror.c.ll
-; openblas/optimized/dlarra.c.ll
 ; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dlarre.c.ll
 ; openblas/optimized/dlarrf.c.ll
@@ -199,7 +188,6 @@
 ; openblas/optimized/dlasyf.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs.c.ll
@@ -210,7 +198,6 @@
 ; openblas/optimized/dsptri.c.ll
 ; openblas/optimized/dstebz.c.ll
 ; openblas/optimized/dstedc.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsteqr.c.ll
 ; openblas/optimized/dsterf.c.ll
 ; openblas/optimized/dsyequb.c.ll
@@ -226,7 +213,6 @@
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrrfs.c.ll
 ; openblas/optimized/dtrsen.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/ap3p.cpp.ll
@@ -309,6 +295,39 @@
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wireshark/optimized/asn1.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4i7kbhd18au0o53jm2t49fldp.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/7diapbiz116z58qz43ov3nwc9.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/a1202jdosca6jpmc3o2s7syhq.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, double %1) #0 {

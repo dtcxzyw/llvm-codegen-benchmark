@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/work_stealing.ll
 ; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
 ; cvc5/optimized/bv_gauss.cpp.ll
 ; folly/optimized/AsyncFileWriter.cpp.ll
@@ -14,7 +15,7 @@
 ; rocksdb/optimized/db_impl.cc.ll
 ; yosys/optimized/aiger.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nuw i64 %1, 1
@@ -43,7 +44,7 @@ entry:
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nuw nsw i64 %1, 1
@@ -58,7 +59,7 @@ entry:
 ; ozz-animation/optimized/import2ozz_track.cc.ll
 ; wireshark/optimized/simple_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e6(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = add nuw nsw i64 %1, 1
@@ -68,9 +69,21 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/work_stealing.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 2
+  %4 = add i64 %1, 1
+  %5 = icmp ult i64 %4, %3
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = add nsw i64 %1, 1
@@ -82,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/pullutil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ec(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = add nuw nsw i64 %1, 1
@@ -96,7 +109,7 @@ entry:
 ; openspiel/optimized/gin_rummy_utils.cc.ll
 ; openspiel/optimized/tarok_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000cc(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = add nuw i64 %1, 1

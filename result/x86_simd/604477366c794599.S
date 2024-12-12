@@ -27,7 +27,7 @@
 func0000000000000001:                   # @func0000000000000001
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpternlogq	$86, %xmm2, %xmm1, %xmm0 # xmm0 = xmm2 ^ (xmm0 | xmm1)
+	vpternlogq	$54, %xmm1, %xmm2, %xmm0 # xmm0 = xmm2 ^ (xmm0 | xmm1)
 	retq
 .LCPI1_0:
 	.byte	8                               # 0x8

@@ -19,7 +19,7 @@
 ; yosys/optimized/test_cell.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %0
@@ -34,7 +34,7 @@ entry:
 ; gromacs/optimized/vsite.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %0
@@ -99,7 +99,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = add nsw i64 %3, %0
@@ -112,10 +112,10 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp sgt i64 %4, %5
   ret i1 %6

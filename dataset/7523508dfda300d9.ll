@@ -1,11 +1,9 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
-; glslang/optimized/Scan.cpp.ll
 ; glslang/optimized/disassemble.cpp.ll
 ; gromacs/optimized/computemultibodycutoffs.cpp.ll
-; gromacs/optimized/domdec_network.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; gromacs/optimized/plot.cpp.ll
 ; hermes/optimized/gmock-all.cc.ll
@@ -18,13 +16,13 @@
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/codeBuffer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = trunc i64 %4 to i32
   %6 = icmp sgt i32 %5, 0
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
@@ -37,13 +35,13 @@ entry:
 ; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
 ; ocio/optimized/ViewingRules.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
   %5 = trunc i64 %4 to i32
   %6 = icmp ne i32 %5, 1
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
@@ -58,26 +56,25 @@ entry:
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; yosys/optimized/equiv_struct.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = trunc i64 %4 to i32
   %6 = icmp eq i32 %5, 4
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
-; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = and i64 %3, 137438952960
+  %4 = and i64 %3, 137438953408
   %5 = icmp ne i64 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -90,7 +87,7 @@ entry:
   %4 = lshr i64 %3, 5
   %5 = trunc i64 %4 to i32
   %6 = icmp sgt i32 %5, 0
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 

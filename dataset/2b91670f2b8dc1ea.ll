@@ -1,6 +1,6 @@
 
-%"struct.llvm::support::detail::packed_endian_specific_integral.3024507" = type { %struct.anon.3024508 }
-%struct.anon.3024508 = type { [4 x i8] }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3217932" = type { %struct.anon.3217933 }
+%struct.anon.3217933 = type { [4 x i8] }
 
 ; 4 occurrences:
 ; llvm/optimized/MappedBlockStream.cpp.ll
@@ -37,7 +37,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = udiv i64 %1, %3
-  %5 = getelementptr nusw %"struct.llvm::support::detail::packed_endian_specific_integral.3024507", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.llvm::support::detail::packed_endian_specific_integral.3217932", ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -3,16 +3,17 @@
 ; abc/optimized/fretTime.c.ll
 ; qemu/optimized/block_vhdx-log.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000d8(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = lshr i32 %0, 12
-  %6 = icmp ugt i32 %5, %4
+  %6 = icmp samesign ugt i32 %5, %4
   ret i1 %6
 }
 
-; 170 occurrences:
+; 171 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -187,7 +188,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = lshr i32 %0, 1
   %6 = icmp ult i32 %5, %4
   ret i1 %6
@@ -198,12 +199,12 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000d4(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = lshr i32 %0, 12
-  %6 = icmp ult i32 %5, %4
+  %6 = icmp samesign ult i32 %5, %4
   ret i1 %6
 }
 

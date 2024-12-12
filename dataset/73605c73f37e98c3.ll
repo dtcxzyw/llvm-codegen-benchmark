@@ -47,13 +47,24 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; softposit-rs/optimized/8mae6k72v4zmmji.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 2
+  %3 = select i1 %2, i32 %0, i32 1207959552
+  %4 = sub nsw i32 0, %3
+  ret i32 %4
+}
+
 ; 2 occurrences:
 ; gromacs/optimized/md5.c.ll
 ; gromacs/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 56
+  %2 = icmp samesign ugt i32 %1, 56
   %3 = sub nsw i32 8, %0
   %4 = select i1 %2, i32 %3, i32 0
   ret i32 %4

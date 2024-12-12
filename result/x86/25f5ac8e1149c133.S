@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	-1(%rsi), %eax
 	testb	$1, %dl
 	cmovel	%edi, %eax
@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	$5, %dl
 	cmovel	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leal	1(%rsi), %eax
 	testb	$1, %dl
 	cmovel	%edi, %eax

@@ -13,5 +13,5 @@ func0000000000000014:                   # @func0000000000000014
 	vwmul.vx	v12, v11, a0
 	vwadd.wv	v12, v12, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret

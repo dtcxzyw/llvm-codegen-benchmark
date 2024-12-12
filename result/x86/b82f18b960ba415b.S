@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	$23, %eax
 	subq	%rdx, %rax
 	testb	$1, %dil
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	testq	%rax, %rax
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movl	$23, %eax
 	subq	%rdx, %rax
 	testb	$1, %dil
@@ -14,7 +14,7 @@ func000000000000001a:                   # @func000000000000001a
 	testq	%rax, %rax
 	setg	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movl	$23, %eax
 	subq	%rdx, %rax
 	testb	$1, %dil
@@ -22,7 +22,7 @@ func000000000000001c:                   # @func000000000000001c
 	testq	%rax, %rax
 	setne	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movl	$23, %eax
 	subq	%rdx, %rax
 	testb	$1, %dil
@@ -30,7 +30,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	$16, %rax
 	setae	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movl	$4096, %eax                     # imm = 0x1000
 	subq	%rdx, %rax
 	testb	$1, %dil
@@ -45,7 +45,7 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdx, %rdx
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	$1, %eax
 	subq	%rdx, %rax
 	testb	$1, %dil

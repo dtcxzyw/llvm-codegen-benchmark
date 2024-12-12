@@ -1,4 +1,4 @@
-func0000000000000467:                   # @func0000000000000467
+func0000000000000c67:                   # @func0000000000000c67
 	lui	a0, 8192
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -7,6 +7,6 @@ func0000000000000467:                   # @func0000000000000467
 	vmv.v.i	v9, 0
 	vnsrl.wi	v12, v10, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v8, v9
 	ret

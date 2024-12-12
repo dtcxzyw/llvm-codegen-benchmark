@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 22 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -12,16 +12,14 @@
 ; linux/optimized/smpboot.ll
 ; linux/optimized/timekeeping.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
-; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/DetectDeadLanes.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/LegalizerInfo.cpp.ll
 ; llvm/optimized/LiveInterval.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
+; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; qemu/optimized/hw_vfio_common.c.ll
 ; stockfish/optimized/movegen.ll
 ; Function Attrs: nounwind

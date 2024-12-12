@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
@@ -17,6 +17,8 @@
 ; spike/optimized/vmsbc_vx.ll
 ; spike/optimized/vmsbc_vxm.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000003(i128 %0, i128 %1) #0 {
 entry:
@@ -24,10 +26,11 @@ entry:
   ret i128 %2
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/int128.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; linux/optimized/kvm.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll

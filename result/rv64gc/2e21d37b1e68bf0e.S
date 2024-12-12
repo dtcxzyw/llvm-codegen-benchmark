@@ -28,6 +28,12 @@ func00000000000000a8:                   # @func00000000000000a8
 	add	a0, a0, a2
 	srliw	a0, a0, 12
 	ret
+func00000000000000aa:                   # @func00000000000000aa
+	slli	a2, a2, 8
+	add	a0, a0, a1
+	add	a0, a0, a2
+	srliw	a0, a0, 12
+	ret
 func0000000000000182:                   # @func0000000000000182
 	slli	a2, a2, 16
 	add	a0, a0, a1

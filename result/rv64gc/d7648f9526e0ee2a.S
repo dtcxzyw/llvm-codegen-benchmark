@@ -54,3 +54,9 @@ func000000000000001d:                   # @func000000000000001d
 	slli	a0, a0, 2
 	or	a0, a0, a1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	addi	a1, a1, 1
+	andi	a1, a1, 31
+	slli	a0, a0, 5
+	or	a0, a0, a1
+	ret

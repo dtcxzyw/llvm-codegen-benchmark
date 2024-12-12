@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, ptr %1) #0 {
+define i1 @func000000000000002c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 2147483648
@@ -12,11 +12,12 @@ entry:
   ret i1 %6
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; libphonenumber/optimized/phonenumber.pb.cc.ll
 ; linux/optimized/consolemap.ll
 ; linux/optimized/i915_gem_context.ll
+; openmpi/optimized/crc.ll
 ; openmpi/optimized/libdatatype_reliable_la-opal_datatype_pack.ll
 ; openmpi/optimized/libdatatype_reliable_la-opal_datatype_unpack.ll
 ; openmpi/optimized/opal_datatype_pack.ll
@@ -29,7 +30,7 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; z3/optimized/ast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 1
@@ -49,7 +50,7 @@ entry:
 ; postgres/optimized/rowtypes.ll
 ; postgres/optimized/xloginsert.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000081(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 7
@@ -63,7 +64,7 @@ entry:
 ; eastl/optimized/EAMemory.cpp.ll
 ; redis/optimized/bitops.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, ptr %1) #0 {
+define i1 @func000000000000018c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 3

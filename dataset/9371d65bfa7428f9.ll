@@ -1,10 +1,8 @@
 
-; 16 occurrences:
+; 14 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; jq/optimized/builtin.ll
 ; opencv/optimized/resize.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
@@ -25,7 +23,9 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; libquic/optimized/prtime.cc.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll

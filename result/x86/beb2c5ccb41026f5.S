@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	testb	$1, %dil
 	movl	$65520, %ecx                    # imm = 0xFFF0
 	cmovneq	%rsi, %rcx

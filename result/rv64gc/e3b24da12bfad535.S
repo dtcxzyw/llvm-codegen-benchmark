@@ -27,10 +27,24 @@ func0000000000000012:                   # @func0000000000000012
 func000000000000000c:                   # @func000000000000000c
 	slt	a0, a0, a1
 	ret
+func0000000000000028:                   # @func0000000000000028
+	sltu	a0, a0, a1
+	ret
 func000000000000000e:                   # @func000000000000000e
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	slt	a0, a1, a0
+	ret
+func0000000000000030:                   # @func0000000000000030
+	sltu	a0, a1, a0
+	ret
+func000000000000002a:                   # @func000000000000002a
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
+	ret
+func0000000000000032:                   # @func0000000000000032
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
 	ret

@@ -15,13 +15,15 @@ entry:
   ret ptr %4
 }
 
-; 90 occurrences:
+; 88 occurrences:
 ; abc/optimized/cuddAddIte.c.ll
 ; abc/optimized/cuddZddSetop.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/UriParse.c.ll
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_codecvt.ll
 ; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; bullet3/optimized/btBoxBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btBoxBoxDetector.ll
@@ -51,15 +53,11 @@ entry:
 ; hermes/optimized/HandleRootOwner.cpp.ll
 ; hermes/optimized/ISel.cpp.ll
 ; hermes/optimized/SemanticValidator.cpp.ll
-; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; icu/optimized/normlzr.ll
 ; jsonnet/optimized/formatter.cpp.ll
 ; libevent/optimized/buffer.c.ll
 ; libquic/optimized/ssl_cipher.c.ll
 ; lief/optimized/bignum.c.ll
-; linux/optimized/libata-transport.ll
-; linux/optimized/mpi-mul.ll
-; linux/optimized/utaddress.ll
 ; linux/optimized/xfrm_policy.ll
 ; linux/optimized/xfrm_state.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
@@ -77,6 +75,7 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/VPlanHCFGBuilder.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
+; lvgl/optimized/lv_slider.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
@@ -90,7 +89,6 @@ entry:
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
 ; openusd/optimized/copyUtils.cpp.ll
 ; php/optimized/zend_jit.ll
-; proj/optimized/crs.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; redis/optimized/cluster.ll
 ; ripgrep-rs/optimized/15yuur60snxgm6cb.ll

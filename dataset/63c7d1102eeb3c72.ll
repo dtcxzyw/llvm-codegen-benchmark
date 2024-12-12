@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; folly/optimized/Random.cpp.ll
 ; g2o/optimized/edge_se3_line.cpp.ll
@@ -8,6 +8,7 @@
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; linux/optimized/md.ll
 ; openusd/optimized/drawModeStandin.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:

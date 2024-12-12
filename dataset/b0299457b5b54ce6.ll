@@ -1,5 +1,5 @@
 
-; 183 occurrences:
+; 180 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -13,7 +13,6 @@
 ; abc/optimized/bmcChain.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMulti.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecPat.c.ll
@@ -75,7 +74,6 @@
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/early-lookup.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/ibs.ll
@@ -90,7 +88,6 @@
 ; linux/optimized/p4.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/swap.ll
 ; linux/optimized/tcp_minisocks.ll
 ; linux/optimized/vfs_inode_dotl.ll
@@ -117,7 +114,6 @@
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
 ; llvm/optimized/ParseTemplate.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -183,13 +179,14 @@
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 4
   %4 = and i32 %3, 64
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -287,7 +284,19 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 3
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = lshr i32 %2, 1
+  %4 = and i32 %3, 1
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -301,7 +310,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr exact i32 %2, 6
   %4 = and i32 %3, 15
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

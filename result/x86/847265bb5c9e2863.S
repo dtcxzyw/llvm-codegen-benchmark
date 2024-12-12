@@ -28,15 +28,3 @@ func00000000000000bd:                   # @func00000000000000bd
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
-.LCPI3_0:
-	.long	0xcf000000                      # float -2.14748365E+9
-.LCPI3_1:
-	.long	0x4f000000                      # float 2.14748365E+9
-func000000000000002c:                   # @func000000000000002c
-	vmovss	.LCPI3_0(%rip), %xmm1           # xmm1 = [-2.14748365E+9,0.0E+0,0.0E+0,0.0E+0]
-	vcmpleps	%xmm0, %xmm1, %k1
-	vmovss	.LCPI3_1(%rip), %xmm1           # xmm1 = [2.14748365E+9,0.0E+0,0.0E+0,0.0E+0]
-	vcmpltps	%xmm1, %xmm0, %k0 {%k1}
-	kmovd	%k0, %eax
-	andb	%dil, %al
-	retq

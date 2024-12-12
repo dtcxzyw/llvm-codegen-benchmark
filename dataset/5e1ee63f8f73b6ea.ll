@@ -1,25 +1,19 @@
 
-; 14 occurrences:
-; git/optimized/wildmatch.ll
-; icu/optimized/uniset.ll
-; lightgbm/optimized/bin.cpp.ll
+; 8 occurrences:
 ; linux/optimized/acpi_pm.ll
-; linux/optimized/dma-resv.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/vht.ll
 ; linux/optimized/xhci-ring.ll
-; llvm/optimized/ASTWriter.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
-; opencv/optimized/filter.dispatch.cpp.ll
 ; openjdk/optimized/check_code.ll
 ; openjdk/optimized/cmsintrp.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
-  %4 = icmp ult i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp samesign ult i32 %3, %1
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -67,11 +61,11 @@ define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4095
   %4 = icmp ne i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -86,6 +80,7 @@ entry:
 ; linux/optimized/x_tables.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_scale.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
 ; opencv/optimized/copy.cpp.ll
@@ -108,38 +103,23 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 65535
+  %3 = and i32 %2, -65505
   %4 = icmp eq i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 19 occurrences:
+; 4 occurrences:
 ; clamav/optimized/nulsft.c.ll
-; clamav/optimized/pe.c.ll
-; git/optimized/wildmatch.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; icu/optimized/uniset.ll
-; libpng/optimized/pngtrans.c.ll
-; lief/optimized/psa_crypto.c.ll
-; lightgbm/optimized/bin.cpp.ll
-; linux/optimized/acpi_pm.ll
-; linux/optimized/hooks.ll
-; linux/optimized/keyboard.ll
-; linux/optimized/mlme.ll
 ; linux/optimized/namei.ll
-; linux/optimized/xhci-ring.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/pngtrans.ll
-; php/optimized/zend_inheritance.ll
-; postgres/optimized/bufpage.ll
-; wireshark/optimized/packet-flip.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = icmp ugt i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -158,16 +138,33 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 8 occurrences:
+; libpng/optimized/pngtrans.c.ll
+; linux/optimized/acpi_pm.ll
+; linux/optimized/hooks.ll
+; linux/optimized/keyboard.ll
+; linux/optimized/mlme.ll
+; linux/optimized/xhci-ring.ll
+; openjdk/optimized/pngtrans.ll
+; wireshark/optimized/packet-flip.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 3
+  %4 = icmp samesign ugt i32 %3, %1
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; abc/optimized/fraSat.c.ll
-; libwebp/optimized/predictor_enc.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16777215
   %4 = icmp ule i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -179,14 +176,13 @@ define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
   %4 = icmp slt i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcScorr.c.ll
 ; abc/optimized/giaDup.c.ll
-; linux/optimized/wep.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; Function Attrs: nounwind
@@ -194,23 +190,43 @@ define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
   %4 = icmp sge i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 6 occurrences:
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMuxes.c.ll
+; 2 occurrences:
+; linux/optimized/dma-resv.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 2147483647
+  %4 = icmp ult i32 %3, %1
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; llvm/optimized/RegisterScavenging.cpp.ll
-; llvm/optimized/SemaCast.cpp.ll
 ; quickjs/optimized/quickjs.ll
-; redis/optimized/quicklist.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 536870911
+  %3 = and i32 %2, 2147483647
   %4 = icmp uge i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/SemaCast.cpp.ll
+; redis/optimized/quicklist.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000032(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 65535
+  %4 = icmp samesign uge i32 %3, %1
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; linux/optimized/he.ll
+; 2 occurrences:
 ; linux/optimized/vht.ll
 ; spike/optimized/vcpop_v.ll
 ; Function Attrs: nounwind

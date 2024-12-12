@@ -1,70 +1,63 @@
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	ushr	v6.2d, v5.2d, #1
-	ushr	v7.2d, v4.2d, #1
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	mvn	v16.16b, v6.16b
-	mvn	v17.16b, v7.16b
-	add	v5.2d, v16.2d, v5.2d
-	add	v4.2d, v17.2d, v4.2d
-	bsl	v0.16b, v4.16b, v7.16b
-	bsl	v1.16b, v5.16b, v6.16b
+	lsr	x8, x2, #1
+	cmp	x0, x1
+	mvn	x9, x8
+	add	x9, x2, x9
+	csel	x0, x9, x8, lo
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	ushr	v6.2d, v5.2d, #1
-	ushr	v7.2d, v4.2d, #1
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	mvn	v16.16b, v6.16b
-	mvn	v17.16b, v7.16b
-	add	v5.2d, v16.2d, v5.2d
-	add	v4.2d, v17.2d, v4.2d
-	bsl	v0.16b, v4.16b, v7.16b
-	bsl	v1.16b, v5.16b, v6.16b
+	lsr	x8, x2, #1
+	cmp	x0, x1
+	mvn	x9, x8
+	add	x9, x2, x9
+	csel	x0, x9, x8, hi
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	ushr	v6.2d, v5.2d, #1
-	ushr	v7.2d, v4.2d, #1
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	mvn	v16.16b, v6.16b
-	mvn	v17.16b, v7.16b
-	add	v5.2d, v16.2d, v5.2d
-	add	v4.2d, v17.2d, v4.2d
-	bsl	v0.16b, v4.16b, v7.16b
-	bsl	v1.16b, v5.16b, v6.16b
+	lsr	x8, x2, #1
+	cmp	x0, x1
+	mvn	x9, x8
+	add	x9, x2, x9
+	csel	x0, x9, x8, lt
+	ret
+                                        // -- End function
+func0000000000000038:                   // @func0000000000000038
+// %bb.0:                               // %entry
+	lsr	x8, x2, #1
+	cmp	x0, x1
+	mvn	x9, x8
+	add	x9, x2, x9
+	csel	x0, x9, x8, hi
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ushr	v6.2d, v5.2d, #1
-	ushr	v7.2d, v4.2d, #1
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	mvn	v16.16b, v6.16b
-	mvn	v17.16b, v7.16b
-	add	v5.2d, v16.2d, v5.2d
-	add	v4.2d, v17.2d, v4.2d
-	bsl	v0.16b, v4.16b, v7.16b
-	bsl	v1.16b, v5.16b, v6.16b
+	lsr	x8, x2, #1
+	cmp	x0, x1
+	mvn	x9, x8
+	add	x9, x2, x9
+	csel	x0, x9, x8, lo
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	ushr	v6.2d, v5.2d, #1
-	ushr	v7.2d, v4.2d, #1
-	cmgt	v1.2d, v1.2d, v3.2d
-	cmgt	v0.2d, v0.2d, v2.2d
-	mvn	v16.16b, v6.16b
-	mvn	v17.16b, v7.16b
-	add	v5.2d, v16.2d, v5.2d
-	add	v4.2d, v17.2d, v4.2d
-	bsl	v0.16b, v4.16b, v7.16b
-	bsl	v1.16b, v5.16b, v6.16b
+	lsr	x8, x2, #1
+	cmp	x0, x1
+	mvn	x9, x8
+	add	x9, x2, x9
+	csel	x0, x9, x8, gt
+	ret
+                                        // -- End function
+func0000000000000034:                   // @func0000000000000034
+// %bb.0:                               // %entry
+	lsr	x8, x2, #1
+	cmp	x0, x1
+	mvn	x9, x8
+	add	x9, x2, x9
+	csel	x0, x9, x8, lo
 	ret
                                         // -- End function

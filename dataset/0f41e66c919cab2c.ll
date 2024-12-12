@@ -1,5 +1,5 @@
 
-; 124 occurrences:
+; 122 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/absOldSim.c.ll
@@ -9,6 +9,7 @@
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ivyHaig.c.ll
 ; abc/optimized/pdrTsim.c.ll
+; boost/optimized/target.ll
 ; brotli/optimized/encode.c.ll
 ; c3c/optimized/target.c.ll
 ; clamav/optimized/bytecode_api.c.ll
@@ -18,7 +19,6 @@
 ; cvc5/optimized/cegis_unif.cpp.ll
 ; flac/optimized/format.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
-; folly/optimized/SSLErrors.cpp.ll
 ; folly/optimized/Zlib.cpp.ll
 ; git/optimized/parse-options.ll
 ; git/optimized/read-cache.ll
@@ -94,8 +94,6 @@
 ; ncnn/optimized/requantize_x86_avx512.cpp.ll
 ; ncnn/optimized/requantize_x86_fma.cpp.ll
 ; ncnn/optimized/slice_x86.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
-; nuttx/optimized/pthread_mutexattr_setrobust.c.ll
 ; ocio/optimized/GammaOpData.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/norm.cpp.ll
@@ -133,7 +131,7 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
+; 13 occurrences:
 ; c3c/optimized/llvm_codegen_builtins.c.ll
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; hdf5/optimized/H5B2internal.c.ll
@@ -142,13 +140,8 @@ entry:
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/tcp_timer.ll
-; llvm/optimized/AArch64MCTargetDesc.cpp.ll
-; llvm/optimized/AArch64Subtarget.cpp.ll
 ; llvm/optimized/SemaCUDA.cpp.ll
-; opencv/optimized/norm.cpp.ll
 ; openjdk/optimized/Net.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
-; qemu/optimized/tcg-op-ldst.c.ll
 ; ruby/optimized/date_strftime.ll
 ; wireshark/optimized/busmaster.c.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
@@ -156,12 +149,12 @@ entry:
 define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 36000
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i32 1, i32 2
   ret i32 %4
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; arrow/optimized/UriRecompose.c.ll
@@ -210,7 +203,6 @@ entry:
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/command.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
-; qemu/optimized/tcg-op-ldst.c.ll
 ; ruby/optimized/date_strftime.ll
 ; wireshark/optimized/packet-cip.c.ll
 ; wireshark/optimized/packet-rpc.c.ll
@@ -225,12 +217,11 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/X86PartialReduction.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/jvmtiEnv.ll
@@ -246,15 +237,10 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
-; fmt/optimized/format-impl-test.cc.ll
+; 5 occurrences:
 ; llvm/optimized/X86PartialReduction.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; qemu/optimized/tcg.c.ll
-; raylib/optimized/raudio.c.ll
-; wireshark/optimized/lemon.c.ll
-; wireshark/optimized/packet-acdr.c.ll
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; Function Attrs: nounwind
@@ -276,8 +262,36 @@ entry:
 define i32 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 3
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i32 33566765, i32 16777261
+  ret i32 %4
+}
+
+; 5 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; wireshark/optimized/lemon.c.ll
+; wireshark/optimized/packet-acdr.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 16777215
+  %3 = and i1 %0, %2
+  %4 = select i1 %3, i32 3, i32 2
+  ret i32 %4
+}
+
+; 3 occurrences:
+; llvm/optimized/AArch64MCTargetDesc.cpp.ll
+; llvm/optimized/AArch64Subtarget.cpp.ll
+; opencv/optimized/norm.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 5
+  %3 = and i1 %0, %2
+  %4 = select i1 %3, i32 1648, i32 1649
   ret i32 %4
 }
 

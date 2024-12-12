@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/mpdecimal.ll
@@ -9,7 +9,6 @@
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/hw_intc_riscv_aclint.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_virtio_vhost.c.ll
 ; qemu/optimized/system_memory.c.ll
 ; qemu/optimized/system_physmem.c.ll

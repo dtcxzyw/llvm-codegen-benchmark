@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 87 occurrences:
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
 ; abc/optimized/giaCSatP.c.ll
@@ -18,7 +18,6 @@
 ; linux/optimized/compaction.ll
 ; linux/optimized/dquot.ll
 ; linux/optimized/drm_buddy.ll
-; linux/optimized/head64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/mm_init.ll

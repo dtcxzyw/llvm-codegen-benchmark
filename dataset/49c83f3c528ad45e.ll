@@ -1,79 +1,22 @@
 
-; 61 occurrences:
-; abc/optimized/luckyFast6.c.ll
-; folly/optimized/CPUThreadPoolExecutor.cpp.ll
-; folly/optimized/DynamicParser.cpp.ll
-; folly/optimized/EventBaseLocal.cpp.ll
-; folly/optimized/LogConfigParser.cpp.ll
-; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
-; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
-; folly/optimized/ObserverManager.cpp.ll
-; folly/optimized/Request.cpp.ll
-; folly/optimized/StrandExecutor.cpp.ll
-; folly/optimized/ThreadedExecutor.cpp.ll
-; folly/optimized/TimedDrivableExecutor.cpp.ll
-; folly/optimized/dynamic.cpp.ll
-; folly/optimized/json.cpp.ll
-; folly/optimized/json_patch.cpp.ll
+; 3 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/type1.c.ll
-; linux/optimized/e820.ll
-; llvm/optimized/DFAEmitter.cpp.ll
-; llvm/optimized/InheritViz.cpp.ll
-; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
-; ockam-rs/optimized/1sh1jgeif2r7m14r.ll
-; ockam-rs/optimized/4mv3oanfto174c2o.ll
-; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
-; proxygen/optimized/HTTPSession.cpp.ll
-; proxygen/optimized/Service.cpp.ll
 ; ruby/optimized/numeric.ll
-; typst-rs/optimized/49m3cs7hus53ztof.ll
-; velox/optimized/ArrayDistinct.cpp.ll
-; velox/optimized/ArrayDuplicates.cpp.ll
-; velox/optimized/ArrayIntersectExcept.cpp.ll
-; velox/optimized/BaseVector.cpp.ll
-; velox/optimized/Bridge.cpp.ll
-; velox/optimized/EvalCtx.cpp.ll
-; velox/optimized/ExprToSubfieldFilter.cpp.ll
-; velox/optimized/Expressions.cpp.ll
-; velox/optimized/Filter.cpp.ll
-; velox/optimized/FlatVector.cpp.ll
-; velox/optimized/FromUtf8.cpp.ll
-; velox/optimized/GenericWriter.cpp.ll
-; velox/optimized/HashStringAllocator.cpp.ll
-; velox/optimized/InPredicate.cpp.ll
-; velox/optimized/IsNull.cpp.ll
-; velox/optimized/JsonFunctions.cpp.ll
-; velox/optimized/JsonType.cpp.ll
-; velox/optimized/Not.cpp.ll
-; velox/optimized/PlanNode.cpp.ll
-; velox/optimized/Re2Functions.cpp.ll
-; velox/optimized/SequenceVector.cpp.ll
-; velox/optimized/Split.cpp.ll
-; velox/optimized/SubscriptUtil.cpp.ll
-; velox/optimized/ToUtf8.cpp.ll
-; velox/optimized/Type.cpp.ll
-; velox/optimized/UnsafeRowSerializer.cpp.ll
-; velox/optimized/VectorSaver.cpp.ll
-; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
-; wasmtime-rs/optimized/enal6epyb0tyurl.ll
-; wireshark/optimized/packet-quic.c.ll
-; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp samesign ult i64 %0, %3
   ret i1 %4
 }
 
-; 91 occurrences:
+; 92 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/cordxtra.c.ll
+; boost/optimized/approximately_equals.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -162,110 +105,19 @@ entry:
 ; yosys/optimized/memory_libmap.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 231 occurrences:
+; 39 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; cpython/optimized/obmalloc.ll
-; fmt/optimized/chrono-test.cc.ll
-; fmt/optimized/compile-test.cc.ll
-; fmt/optimized/enforce-checks-test.cc.ll
-; fmt/optimized/format-impl-test.cc.ll
-; fmt/optimized/format-test.cc.ll
-; fmt/optimized/format.cc.ll
-; fmt/optimized/gtest-extra.cc.ll
-; fmt/optimized/header-only-test.cc.ll
-; fmt/optimized/os.cc.ll
-; fmt/optimized/printf-test.cc.ll
-; fmt/optimized/ranges-test.cc.ll
-; fmt/optimized/std-test.cc.ll
-; fmt/optimized/unicode-test.cc.ll
-; fmt/optimized/util.cc.ll
-; fmt/optimized/xchar-test.cc.ll
 ; freetype/optimized/sfnt.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5Cimage.c.ll
-; hdf5/optimized/H5HGdbg.c.ll
-; hdf5/optimized/H5Oefl.c.ll
 ; hermes/optimized/APInt.cpp.ll
-; lief/optimized/ASN1Reader.cpp.ll
-; lief/optimized/AndroidIdent.cpp.ll
-; lief/optimized/BinaryParser.cpp.ll
-; lief/optimized/BuildToolVersion.cpp.ll
-; lief/optimized/Builder.cpp.ll
-; lief/optimized/ChainedFixup.cpp.ll
-; lief/optimized/CodeIntegrity.cpp.ll
-; lief/optimized/CodeView.cpp.ll
-; lief/optimized/CodeViewPDB.cpp.ll
-; lief/optimized/CoreAuxv.cpp.ll
-; lief/optimized/CoreFile.cpp.ll
-; lief/optimized/CorePrPsInfo.cpp.ll
-; lief/optimized/CorePrStatus.cpp.ll
-; lief/optimized/CoreSigInfo.cpp.ll
-; lief/optimized/Debug.cpp.ll
-; lief/optimized/DelayImport.cpp.ll
-; lief/optimized/DelayImportEntry.cpp.ll
-; lief/optimized/DyldChainedFixups.cpp.ll
-; lief/optimized/DyldInfo.cpp.ll
-; lief/optimized/DynamicEntryArray.cpp.ll
-; lief/optimized/DynamicEntryLibrary.cpp.ll
-; lief/optimized/DynamicEntryRpath.cpp.ll
-; lief/optimized/DynamicEntryRunPath.cpp.ll
-; lief/optimized/DynamicSharedObject.cpp.ll
-; lief/optimized/File.cpp.ll
-; lief/optimized/FileStream.cpp.ll
-; lief/optimized/GenericContent.cpp.ll
-; lief/optimized/LangCodeItem.cpp.ll
-; lief/optimized/LinkEdit.cpp.ll
-; lief/optimized/LoadConfiguration.cpp.ll
-; lief/optimized/LoadConfigurationV0.cpp.ll
-; lief/optimized/LoadConfigurationV1.cpp.ll
-; lief/optimized/LoadConfigurationV10.cpp.ll
-; lief/optimized/LoadConfigurationV11.cpp.ll
-; lief/optimized/LoadConfigurationV3.cpp.ll
-; lief/optimized/LoadConfigurationV4.cpp.ll
-; lief/optimized/LoadConfigurationV5.cpp.ll
-; lief/optimized/LoadConfigurationV6.cpp.ll
-; lief/optimized/LoadConfigurationV7.cpp.ll
-; lief/optimized/LoadConfigurationV8.cpp.ll
-; lief/optimized/LoadConfigurationV9.cpp.ll
-; lief/optimized/MemoryStream.cpp.ll
-; lief/optimized/Note.cpp.ll
-; lief/optimized/NoteAbi.cpp.ll
-; lief/optimized/NoteGnuProperty.cpp.ll
-; lief/optimized/PKCS9SigningTime.cpp.ll
-; lief/optimized/Pogo.cpp.ll
-; lief/optimized/PogoEntry.cpp.ll
-; lief/optimized/RelocationEntry.cpp.ll
-; lief/optimized/RelocationFixup.cpp.ll
-; lief/optimized/Repro.cpp.ll
-; lief/optimized/ResourceNode.cpp.ll
-; lief/optimized/ResourceStringFileInfo.cpp.ll
-; lief/optimized/ResourceVarFileInfo.cpp.ll
-; lief/optimized/ResourceVersion.cpp.ll
-; lief/optimized/ResourcesManager.cpp.ll
-; lief/optimized/ResourcesParser.cpp.ll
-; lief/optimized/RichHeader.cpp.ll
-; lief/optimized/Signature.cpp.ll
-; lief/optimized/SignatureParser.cpp.ll
-; lief/optimized/SignerInfo.cpp.ll
-; lief/optimized/SpanStream.cpp.ll
-; lief/optimized/SpcIndirectData.cpp.ll
-; lief/optimized/StackSize.cpp.ll
-; lief/optimized/TLS.cpp.ll
-; lief/optimized/TrieNode.cpp.ll
-; lief/optimized/Type.cpp.ll
-; lief/optimized/VectorStream.cpp.ll
-; lief/optimized/hash_stream.cpp.ll
-; lief/optimized/x509.cpp.ll
-; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/block_validity.ll
-; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
@@ -277,151 +129,46 @@ entry:
 ; mold/optimized/input-sections.cc.RV32LE.cc.ll
 ; mold/optimized/input-sections.cc.SH4.cc.ll
 ; node/optimized/libnode.crypto_clienthello.ll
-; oiio/optimized/CineonHeader.cpp.ll
-; oiio/optimized/argparse.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
-; oiio/optimized/bmpinput.cpp.ll
-; oiio/optimized/bmpoutput.cpp.ll
-; oiio/optimized/cineoninput.cpp.ll
-; oiio/optimized/color_ocio.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; oiio/optimized/dpxinput.cpp.ll
-; oiio/optimized/dpxoutput.cpp.ll
-; oiio/optimized/environment.cpp.ll
-; oiio/optimized/errorhandler.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/fitsinput.cpp.ll
-; oiio/optimized/fitsoutput.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/hdroutput.cpp.ll
-; oiio/optimized/icc.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/icooutput.cpp.ll
-; oiio/optimized/iffinput.cpp.ll
-; oiio/optimized/iffoutput.cpp.ll
-; oiio/optimized/imagebuf.cpp.ll
-; oiio/optimized/imagebufalgo.cpp.ll
-; oiio/optimized/imagebufalgo_addsub.cpp.ll
-; oiio/optimized/imagebufalgo_channels.cpp.ll
-; oiio/optimized/imagebufalgo_compare.cpp.ll
-; oiio/optimized/imagebufalgo_copy.cpp.ll
-; oiio/optimized/imagebufalgo_deep.cpp.ll
-; oiio/optimized/imagebufalgo_draw.cpp.ll
-; oiio/optimized/imagebufalgo_mad.cpp.ll
-; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
-; oiio/optimized/imagebufalgo_muldiv.cpp.ll
-; oiio/optimized/imagebufalgo_opencv.cpp.ll
-; oiio/optimized/imagebufalgo_orient.cpp.ll
-; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageio.cpp.ll
-; oiio/optimized/imageioplugin.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; oiio/optimized/paramlist.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/pngoutput.cpp.ll
-; oiio/optimized/pnmoutput.cpp.ll
-; oiio/optimized/printinfo.cpp.ll
-; oiio/optimized/psdinput.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
-; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/sgiinput.cpp.ll
-; oiio/optimized/sgioutput.cpp.ll
-; oiio/optimized/softimageinput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
-; oiio/optimized/targainput.cpp.ll
-; oiio/optimized/targaoutput.cpp.ll
-; oiio/optimized/termoutput.cpp.ll
-; oiio/optimized/texture3d.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; oiio/optimized/typedesc.cpp.ll
-; oiio/optimized/xmp.cpp.ll
-; oiio/optimized/zfile.cpp.ll
-; openjdk/optimized/hb-face.ll
 ; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
 ; openssl/optimized/libcrypto-lib-e_rc4_hmac_md5.ll
 ; openssl/optimized/libcrypto-shlib-e_rc4_hmac_md5.ll
 ; openssl/optimized/liblegacy-lib-cipher_rc4_hmac_md5_hw.ll
-; openssl/optimized/libssl-lib-d1_lib.ll
-; openssl/optimized/libssl-lib-extensions.ll
-; openssl/optimized/libssl-lib-statem_dtls.ll
-; openssl/optimized/libssl-shlib-d1_lib.ll
-; openssl/optimized/libssl-shlib-extensions.ll
-; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; postgres/optimized/ginbulk.ll
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/ginpostinglist.ll
 ; postgres/optimized/gistproc.ll
-; postgres/optimized/mac.ll
-; postgres/optimized/vacuum.ll
 ; qemu/optimized/fdt_sw.c.ll
 ; qemu/optimized/optimize.c.ll
-; redis/optimized/listpack.ll
 ; rocksdb/optimized/dbformat.cc.ll
 ; soc-simulator/optimized/verilated.ll
-; spdlog/optimized/bundled_fmtlib_format.cpp.ll
-; spdlog/optimized/spdlog.cpp.ll
 ; spike/optimized/fdt_sw.ll
-; tev/optimized/Channel.cpp.ll
-; tev/optimized/ClipboardImageLoader.cpp.ll
-; tev/optimized/Common.cpp.ll
-; tev/optimized/EmptyImageLoader.cpp.ll
-; tev/optimized/ExrImageLoader.cpp.ll
-; tev/optimized/ExrImageSaver.cpp.ll
-; tev/optimized/Image.cpp.ll
-; tev/optimized/ImageButton.cpp.ll
-; tev/optimized/ImageCanvas.cpp.ll
-; tev/optimized/ImageViewer.cpp.ll
-; tev/optimized/Ipc.cpp.ll
-; tev/optimized/MultiGraph.cpp.ll
-; tev/optimized/PfmImageLoader.cpp.ll
-; tev/optimized/QoiImageLoader.cpp.ll
-; tev/optimized/QoiImageSaver.cpp.ll
-; tev/optimized/StbiImageLoader.cpp.ll
-; tev/optimized/StbiLdrImageSaver.cpp.ll
-; tev/optimized/UberShader.cpp.ll
-; tev/optimized/main.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/mpn.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
-; 97 occurrences:
+; 75 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; ceres/optimized/line_search_direction.cc.ll
 ; cvc5/optimized/timeout_core_manager.cpp.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; freetype/optimized/sfnt.c.ll
-; freetype/optimized/truetype.c.ll
 ; git/optimized/chunk-format.ll
-; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5FDonion_history.c.ll
 ; hdf5/optimized/H5FDonion_index.c.ll
 ; hdf5/optimized/H5FScache.c.ll
@@ -431,44 +178,28 @@ entry:
 ; libwebp/optimized/webp_dec.c.ll
 ; libzmq/optimized/mechanism.cpp.ll
 ; lief/optimized/ssl_tls.c.ll
-; lief/optimized/ssl_tls12_client.c.ll
-; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/fsmap.ll
 ; linux/optimized/ialloc.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/virtio_pci_modern.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
-; openjdk/optimized/hb-face.ll
-; openjdk/optimized/hb-ot-color.ll
-; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openssl/optimized/asynciotest-bin-asynciotest.ll
 ; openssl/optimized/clienthellotest-bin-clienthellotest.ll
 ; openssl/optimized/libcrypto-lib-asn1_dsa.ll
-; openssl/optimized/libcrypto-lib-ct_oct.ll
 ; openssl/optimized/libcrypto-shlib-asn1_dsa.ll
-; openssl/optimized/libcrypto-shlib-ct_oct.ll
-; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-lib-extensions_srvr.ll
 ; openssl/optimized/libssl-lib-ssl_rsa.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
-; openssl/optimized/libssl-lib-statem_dtls.ll
 ; openssl/optimized/libssl-lib-statem_lib.ll
 ; openssl/optimized/libssl-lib-statem_srvr.ll
 ; openssl/optimized/libssl-lib-t1_trce.ll
-; openssl/optimized/libssl-shlib-d1_lib.ll
 ; openssl/optimized/libssl-shlib-extensions.ll
 ; openssl/optimized/libssl-shlib-extensions_srvr.ll
 ; openssl/optimized/libssl-shlib-ssl_rsa.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
-; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; openssl/optimized/libssl-shlib-statem_lib.ll
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
@@ -484,18 +215,13 @@ entry:
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/ginpostinglist.ll
 ; postgres/optimized/gistproc.ll
-; postgres/optimized/heapam.ll
-; postgres/optimized/mac.ll
 ; postgres/optimized/rewriteheap.ll
 ; postgres/optimized/snapbuild.ll
-; postgres/optimized/vacuum.ll
 ; postgres/optimized/xid8funcs.ll
-; qemu/optimized/fdt.c.ll
 ; qemu/optimized/fdt_check.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; qemu/optimized/optimize.c.ll
-; redis/optimized/listpack.ll
 ; redis/optimized/lua_cmsgpack.ll
 ; rocksdb/optimized/dbformat.cc.ll
 ; spike/optimized/fdt_ro.ll
@@ -507,15 +233,18 @@ entry:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/packet-rtp.c.ll
+; zed-rs/optimized/0eh1fm3h72yjwo2ipis72ui0f.ll
+; zed-rs/optimized/adlc6qfcwjhvmcaovuwfkwg5s.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
-; 126 occurrences:
+; 125 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -539,7 +268,6 @@ entry:
 ; linux/optimized/init_64.ll
 ; linux/optimized/intel.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/msr.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/tsc_sync.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -646,25 +374,24 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/resize.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; openssl/optimized/libcrypto-lib-wrap128.ll
 ; openssl/optimized/libcrypto-shlib-wrap128.ll
 ; postgres/optimized/gindatapage.ll
-; postgres/optimized/mac.ll
 ; postgres/optimized/walsummary.ll
 ; qemu/optimized/optimize.c.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   ret i1 %4
 }
 
@@ -682,10 +409,57 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
+  ret i1 %4
+}
+
+; 38 occurrences:
+; freetype/optimized/sfnt.c.ll
+; freetype/optimized/truetype.c.ll
+; harfbuzz/optimized/gsubgpos-context.cc.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-cff-common.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; lief/optimized/ssl_tls12_client.c.ll
+; lief/optimized/ssl_tls12_server.c.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; openjdk/optimized/hb-face.ll
+; openjdk/optimized/hb-ot-color.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; openssl/optimized/asynciotest-bin-asynciotest.ll
+; openssl/optimized/clienthellotest-bin-clienthellotest.ll
+; openssl/optimized/libcrypto-lib-asn1_dsa.ll
+; openssl/optimized/libcrypto-lib-ct_oct.ll
+; openssl/optimized/libcrypto-shlib-asn1_dsa.ll
+; openssl/optimized/libcrypto-shlib-ct_oct.ll
+; openssl/optimized/libssl-lib-d1_lib.ll
+; openssl/optimized/libssl-lib-extensions.ll
+; openssl/optimized/libssl-lib-statem_dtls.ll
+; openssl/optimized/libssl-shlib-d1_lib.ll
+; openssl/optimized/libssl-shlib-extensions.ll
+; openssl/optimized/libssl-shlib-statem_dtls.ll
+; openssl/optimized/servername_test-bin-servername_test.ll
+; openssl/optimized/sslapitest-bin-sslapitest.ll
+; openssl/optimized/tls13ccstest-bin-tls13ccstest.ll
+; postgres/optimized/heapam.ll
+; postgres/optimized/mac.ll
+; postgres/optimized/vacuum.ll
+; qemu/optimized/fdt.c.ll
+; redis/optimized/listpack.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = icmp samesign ult i64 %0, %3
   ret i1 %4
 }
 
@@ -700,7 +474,211 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 195 occurrences:
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/compile-test.cc.ll
+; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
+; fmt/optimized/format-test.cc.ll
+; fmt/optimized/format.cc.ll
+; fmt/optimized/gtest-extra.cc.ll
+; fmt/optimized/header-only-test.cc.ll
+; fmt/optimized/os.cc.ll
+; fmt/optimized/printf-test.cc.ll
+; fmt/optimized/ranges-test.cc.ll
+; fmt/optimized/std-test.cc.ll
+; fmt/optimized/unicode-test.cc.ll
+; fmt/optimized/util.cc.ll
+; fmt/optimized/xchar-test.cc.ll
+; freetype/optimized/sfnt.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hdf5/optimized/H5Cimage.c.ll
+; hdf5/optimized/H5Oefl.c.ll
+; lief/optimized/ASN1Reader.cpp.ll
+; lief/optimized/AndroidIdent.cpp.ll
+; lief/optimized/BinaryParser.cpp.ll
+; lief/optimized/BuildToolVersion.cpp.ll
+; lief/optimized/Builder.cpp.ll
+; lief/optimized/ChainedFixup.cpp.ll
+; lief/optimized/CodeIntegrity.cpp.ll
+; lief/optimized/CodeView.cpp.ll
+; lief/optimized/CodeViewPDB.cpp.ll
+; lief/optimized/CoreAuxv.cpp.ll
+; lief/optimized/CoreFile.cpp.ll
+; lief/optimized/CorePrPsInfo.cpp.ll
+; lief/optimized/CorePrStatus.cpp.ll
+; lief/optimized/CoreSigInfo.cpp.ll
+; lief/optimized/Debug.cpp.ll
+; lief/optimized/DelayImport.cpp.ll
+; lief/optimized/DelayImportEntry.cpp.ll
+; lief/optimized/DyldChainedFixups.cpp.ll
+; lief/optimized/DyldInfo.cpp.ll
+; lief/optimized/DynamicEntryArray.cpp.ll
+; lief/optimized/DynamicEntryLibrary.cpp.ll
+; lief/optimized/DynamicEntryRpath.cpp.ll
+; lief/optimized/DynamicEntryRunPath.cpp.ll
+; lief/optimized/DynamicSharedObject.cpp.ll
+; lief/optimized/File.cpp.ll
+; lief/optimized/FileStream.cpp.ll
+; lief/optimized/GenericContent.cpp.ll
+; lief/optimized/LangCodeItem.cpp.ll
+; lief/optimized/LinkEdit.cpp.ll
+; lief/optimized/LoadConfiguration.cpp.ll
+; lief/optimized/LoadConfigurationV0.cpp.ll
+; lief/optimized/LoadConfigurationV1.cpp.ll
+; lief/optimized/LoadConfigurationV10.cpp.ll
+; lief/optimized/LoadConfigurationV11.cpp.ll
+; lief/optimized/LoadConfigurationV3.cpp.ll
+; lief/optimized/LoadConfigurationV4.cpp.ll
+; lief/optimized/LoadConfigurationV5.cpp.ll
+; lief/optimized/LoadConfigurationV6.cpp.ll
+; lief/optimized/LoadConfigurationV7.cpp.ll
+; lief/optimized/LoadConfigurationV8.cpp.ll
+; lief/optimized/LoadConfigurationV9.cpp.ll
+; lief/optimized/MemoryStream.cpp.ll
+; lief/optimized/Note.cpp.ll
+; lief/optimized/NoteAbi.cpp.ll
+; lief/optimized/NoteGnuProperty.cpp.ll
+; lief/optimized/PKCS9SigningTime.cpp.ll
+; lief/optimized/Pogo.cpp.ll
+; lief/optimized/PogoEntry.cpp.ll
+; lief/optimized/RelocationEntry.cpp.ll
+; lief/optimized/RelocationFixup.cpp.ll
+; lief/optimized/Repro.cpp.ll
+; lief/optimized/ResourceNode.cpp.ll
+; lief/optimized/ResourceStringFileInfo.cpp.ll
+; lief/optimized/ResourceVarFileInfo.cpp.ll
+; lief/optimized/ResourceVersion.cpp.ll
+; lief/optimized/ResourcesManager.cpp.ll
+; lief/optimized/ResourcesParser.cpp.ll
+; lief/optimized/RichHeader.cpp.ll
+; lief/optimized/Signature.cpp.ll
+; lief/optimized/SignatureParser.cpp.ll
+; lief/optimized/SignerInfo.cpp.ll
+; lief/optimized/SpanStream.cpp.ll
+; lief/optimized/SpcIndirectData.cpp.ll
+; lief/optimized/StackSize.cpp.ll
+; lief/optimized/TLS.cpp.ll
+; lief/optimized/TrieNode.cpp.ll
+; lief/optimized/Type.cpp.ll
+; lief/optimized/VectorStream.cpp.ll
+; lief/optimized/hash_stream.cpp.ll
+; lief/optimized/x509.cpp.ll
+; lightgbm/optimized/tree.cpp.ll
+; llama.cpp/optimized/ggml.c.ll
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/argparse.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
+; oiio/optimized/bmpinput.cpp.ll
+; oiio/optimized/bmpoutput.cpp.ll
+; oiio/optimized/cineoninput.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
+; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/errorhandler.cpp.ll
+; oiio/optimized/exrinput.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/filesystem.cpp.ll
+; oiio/optimized/fitsinput.cpp.ll
+; oiio/optimized/fitsoutput.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/hdroutput.cpp.ll
+; oiio/optimized/icc.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/iffinput.cpp.ll
+; oiio/optimized/iffoutput.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_opencv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/imageioplugin.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/pnmoutput.cpp.ll
+; oiio/optimized/printinfo.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/rlaoutput.cpp.ll
+; oiio/optimized/sgiinput.cpp.ll
+; oiio/optimized/sgioutput.cpp.ll
+; oiio/optimized/softimageinput.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/termoutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; oiio/optimized/typedesc.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; oiio/optimized/zfile.cpp.ll
+; openjdk/optimized/hb-face.ll
+; openssl/optimized/libssl-lib-d1_lib.ll
+; openssl/optimized/libssl-lib-extensions.ll
+; openssl/optimized/libssl-lib-statem_dtls.ll
+; openssl/optimized/libssl-shlib-d1_lib.ll
+; openssl/optimized/libssl-shlib-extensions.ll
+; openssl/optimized/libssl-shlib-statem_dtls.ll
+; postgres/optimized/mac.ll
+; postgres/optimized/vacuum.ll
+; qemu/optimized/fdt_sw.c.ll
+; redis/optimized/listpack.ll
+; spdlog/optimized/bundled_fmtlib_format.cpp.ll
+; spdlog/optimized/spdlog.cpp.ll
+; spike/optimized/fdt_sw.ll
+; tev/optimized/Channel.cpp.ll
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; tev/optimized/Common.cpp.ll
+; tev/optimized/EmptyImageLoader.cpp.ll
+; tev/optimized/ExrImageLoader.cpp.ll
+; tev/optimized/ExrImageSaver.cpp.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageButton.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; tev/optimized/MultiGraph.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; tev/optimized/QoiImageSaver.cpp.ll
+; tev/optimized/StbiImageLoader.cpp.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; tev/optimized/UberShader.cpp.ll
+; tev/optimized/main.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = icmp samesign ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -749,24 +727,89 @@ entry:
 ; qemu/optimized/optimize.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
-; 5 occurrences:
+; 58 occurrences:
+; abc/optimized/luckyFast6.c.ll
+; folly/optimized/CPUThreadPoolExecutor.cpp.ll
+; folly/optimized/DynamicParser.cpp.ll
+; folly/optimized/EventBaseLocal.cpp.ll
+; folly/optimized/LogConfigParser.cpp.ll
+; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
+; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
+; folly/optimized/ObserverManager.cpp.ll
+; folly/optimized/Request.cpp.ll
+; folly/optimized/StrandExecutor.cpp.ll
+; folly/optimized/ThreadedExecutor.cpp.ll
+; folly/optimized/TimedDrivableExecutor.cpp.ll
+; folly/optimized/dynamic.cpp.ll
+; folly/optimized/json.cpp.ll
+; folly/optimized/json_patch.cpp.ll
+; linux/optimized/e820.ll
+; llvm/optimized/DFAEmitter.cpp.ll
+; llvm/optimized/InheritViz.cpp.ll
+; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
+; ockam-rs/optimized/1sh1jgeif2r7m14r.ll
+; ockam-rs/optimized/4mv3oanfto174c2o.ll
+; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
+; proxygen/optimized/HTTPSession.cpp.ll
+; proxygen/optimized/Service.cpp.ll
+; typst-rs/optimized/49m3cs7hus53ztof.ll
+; velox/optimized/ArrayDistinct.cpp.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/ArrayIntersectExcept.cpp.ll
+; velox/optimized/BaseVector.cpp.ll
+; velox/optimized/Bridge.cpp.ll
+; velox/optimized/EvalCtx.cpp.ll
+; velox/optimized/ExprToSubfieldFilter.cpp.ll
+; velox/optimized/Expressions.cpp.ll
+; velox/optimized/Filter.cpp.ll
+; velox/optimized/FlatVector.cpp.ll
+; velox/optimized/FromUtf8.cpp.ll
+; velox/optimized/GenericWriter.cpp.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; velox/optimized/InPredicate.cpp.ll
+; velox/optimized/IsNull.cpp.ll
+; velox/optimized/JsonFunctions.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/Not.cpp.ll
+; velox/optimized/PlanNode.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
+; velox/optimized/SequenceVector.cpp.ll
+; velox/optimized/Split.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; velox/optimized/ToUtf8.cpp.ll
+; velox/optimized/Type.cpp.ll
+; velox/optimized/UnsafeRowSerializer.cpp.ll
+; velox/optimized/VectorSaver.cpp.ll
+; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; wireshark/optimized/packet-quic.c.ll
+; wireshark/optimized/vwr.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or i64 %1, %2
+  %4 = icmp ult i64 %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
-; node/optimized/libnode.crypto_clienthello.ll
-; postgres/optimized/mac.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   ret i1 %4
 }
 
@@ -778,30 +821,30 @@ entry:
 ; postgres/optimized/heapam.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp sge i64 %3, %0
+  %4 = icmp sle i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
   ret i1 %4
 }
 
@@ -819,7 +862,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
@@ -832,7 +875,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -844,7 +887,7 @@ entry:
 define i1 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp sge i64 %3, %0
+  %4 = icmp sle i64 %0, %3
   ret i1 %4
 }
 
@@ -854,7 +897,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
@@ -864,7 +907,28 @@ entry:
 define i1 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; node/optimized/libnode.crypto_clienthello.ll
+; postgres/optimized/mac.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = icmp samesign ule i64 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/mac.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000039(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = icmp samesign uge i64 %0, %3
   ret i1 %4
 }
 

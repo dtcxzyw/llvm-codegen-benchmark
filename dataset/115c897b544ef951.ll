@@ -1,5 +1,5 @@
 
-; 155 occurrences:
+; 153 occurrences:
 ; abc/optimized/giaSatLut.c.ll
 ; abc/optimized/giaStr.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
@@ -52,7 +52,6 @@
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -76,7 +75,6 @@
 ; qemu/optimized/util_hbitmap.c.ll
 ; ruby/optimized/iseq.ll
 ; simdjson/optimized/simdjson.cpp.ll
-; stockfish/optimized/half_ka_v2_hm.ll
 ; stockfish/optimized/movegen.ll
 ; stockfish/optimized/movepick.ll
 ; stockfish/optimized/position.ll

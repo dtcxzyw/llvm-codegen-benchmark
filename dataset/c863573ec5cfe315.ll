@@ -10,10 +10,9 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; graphviz/optimized/sfprint.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:

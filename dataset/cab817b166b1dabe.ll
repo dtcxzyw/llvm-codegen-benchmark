@@ -1,9 +1,8 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; php/optimized/html.ll
-; sentencepiece/optimized/util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i32 %0, i32 %1) #0 {
+define i1 @func00000000000003a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1835008
   %3 = shl nuw nsw i32 %0, 12
@@ -18,7 +17,7 @@ entry:
 ; nlohmann_json/optimized/unit.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = and i32 %0, 63
@@ -31,13 +30,26 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000194(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000334(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
   %3 = shl nuw nsw i32 %0, 8
   %4 = or i32 %3, %2
   %5 = add nsw i32 %4, -32768
-  %6 = icmp ult i32 %5, 809
+  %6 = icmp samesign ult i32 %5, 809
+  ret i1 %6
+}
+
+; 1 occurrences:
+; sentencepiece/optimized/util.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003b4(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 1835008
+  %3 = shl nuw nsw i32 %0, 12
+  %4 = or disjoint i32 %3, %2
+  %5 = add nsw i32 %4, -57344
+  %6 = icmp samesign ult i32 %5, 1056768
   ret i1 %6
 }
 

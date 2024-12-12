@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; brotli/optimized/transform.c.ll
 ; cmake/optimized/archive_write_set_format_shar.c.ll
 ; diesel-rs/optimized/27d1dwdaey9nml16.ll
@@ -19,6 +19,7 @@
 ; luajit/optimized/lj_ccallback_dyn.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; node/optimized/simdutf.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openjdk/optimized/pngread.ll
@@ -33,7 +34,7 @@
 define i32 @func000000000000001e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 2
   ret i32 %4
 }
@@ -50,7 +51,8 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/src.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; crow/optimized/example.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
@@ -74,13 +76,17 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 10
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 6
   ret i32 %4
 }
 
-; 48 occurrences:
+; 52 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/message.ll
+; boost/optimized/src.ll
 ; clamav/optimized/Bra.c.ll
 ; clamav/optimized/hashtab.c.ll
 ; cmake/optimized/sparc.c.ll
@@ -153,7 +159,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 1
   ret i32 %4
 }
@@ -164,7 +170,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 16
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = lshr i32 %3, 1
   ret i32 %4
 }
@@ -175,19 +181,18 @@ entry:
 define i32 @func000000000000001d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 16
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = lshr exact i32 %3, 1
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; icu/optimized/utrie2.ll
-; opencv/optimized/cap_v4l.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 10
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 11
   ret i32 %4
 }

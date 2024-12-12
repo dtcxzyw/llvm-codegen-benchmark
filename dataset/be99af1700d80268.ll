@@ -74,7 +74,7 @@ entry:
   ret float %2
 }
 
-; 30 occurrences:
+; 32 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
 ; darktable/optimized/introspection_dither.c.ll
@@ -105,6 +105,8 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; wireshark/optimized/packet-ftdi-mpsse.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:

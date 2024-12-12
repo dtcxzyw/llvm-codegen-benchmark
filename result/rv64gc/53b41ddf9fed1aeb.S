@@ -46,6 +46,10 @@ func0000000000000003:                   # @func0000000000000003
 	mul	a1, a1, a2
 	sub	a0, a1, a0
 	ret
+func000000000000000c:                   # @func000000000000000c
+	mul	a1, a1, a2
+	sub	a0, a1, a0
+	ret
 func000000000000000e:                   # @func000000000000000e
 	mul	a1, a1, a2
 	sub	a0, a1, a0

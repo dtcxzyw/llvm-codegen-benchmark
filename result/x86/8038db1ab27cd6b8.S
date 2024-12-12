@@ -1,4 +1,4 @@
-func0000000000000146:                   # @func0000000000000146
+func0000000000000486:                   # @func0000000000000486
 	leal	-97(%rdi), %eax
 	leal	-32(%rdi), %ecx
 	cmpb	$6, %al
@@ -7,7 +7,7 @@ func0000000000000146:                   # @func0000000000000146
 	cmpb	$48, %al
 	setl	%al
 	retq
-func0000000000000148:                   # @func0000000000000148
+func0000000000000498:                   # @func0000000000000498
 	leal	-97(%rdi), %eax
 	leal	-32(%rdi), %ecx
 	cmpb	$6, %al
@@ -16,7 +16,7 @@ func0000000000000148:                   # @func0000000000000148
 	cmpb	$58, %al
 	setae	%al
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000494:                   # @func0000000000000494
 	leal	-97(%rdi), %eax
 	leal	-32(%rdi), %ecx
 	cmpb	$6, %al
@@ -25,7 +25,7 @@ func0000000000000144:                   # @func0000000000000144
 	cmpb	$58, %al
 	setb	%al
 	retq
-func0000000000000341:                   # @func0000000000000341
+func0000000000000c81:                   # @func0000000000000c81
 	leal	-65(%rdi), %eax
 	leal	32(%rdi), %ecx
 	cmpb	$26, %al
@@ -34,7 +34,7 @@ func0000000000000341:                   # @func0000000000000341
 	cmpb	$111, %al
 	sete	%al
 	retq
-func0000000000000141:                   # @func0000000000000141
+func0000000000000481:                   # @func0000000000000481
 	leal	-97(%rdi), %eax
 	leal	-32(%rdi), %ecx
 	cmpb	$26, %al
@@ -43,7 +43,7 @@ func0000000000000141:                   # @func0000000000000141
 	testb	%al, %al
 	sete	%al
 	retq
-func000000000000014c:                   # @func000000000000014c
+func000000000000048c:                   # @func000000000000048c
 	leal	-97(%rdi), %eax
 	leal	-32(%rdi), %ecx
 	cmpb	$26, %al

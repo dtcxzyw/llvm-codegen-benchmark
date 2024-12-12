@@ -12,8 +12,8 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %reass.add = shl i64 %1, 1
-  %3 = add i64 %reass.add, %2
-  %4 = xor i64 %3, %0
+  %3 = add i64 %2, %reass.add
+  %4 = xor i64 %0, %3
   %5 = mul i64 %4, -49064778989728563
   ret i64 %5
 }

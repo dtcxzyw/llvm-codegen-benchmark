@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	1                               # 0x1
-func0000000000000196:                   # @func0000000000000196
+func0000000000000326:                   # @func0000000000000326
 	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

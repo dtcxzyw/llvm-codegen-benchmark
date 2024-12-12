@@ -19,7 +19,7 @@
 ; postgres/optimized/f2s_srv.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 1024
   %3 = icmp eq i32 %1, 0
@@ -40,9 +40,7 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; freetype/optimized/type1.c.ll
-; freetype/optimized/type1cid.c.ll
+; 2 occurrences:
 ; linux/optimized/intel_ggtt.ll
 ; wireshark/optimized/packet-iso10681.c.ll
 ; Function Attrs: nounwind

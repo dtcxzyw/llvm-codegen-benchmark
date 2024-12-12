@@ -1,5 +1,6 @@
 
-; 140 occurrences:
+; 141 occurrences:
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/packlibs.c.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/yara_arena.c.ll
@@ -141,7 +142,7 @@
 ; velox/optimized/VectorSaver.cpp.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000089(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %0, %2
   %4 = icmp uge ptr %0, %1
@@ -149,7 +150,7 @@ entry:
   ret i1 %5
 }
 
-; 164 occurrences:
+; 168 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/parser_test.cc.ll
 ; assimp/optimized/IFCCurve.cpp.ll
@@ -158,6 +159,12 @@ entry:
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dple.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/optistack_internal.cpp.ll
@@ -257,7 +264,6 @@ entry:
 ; nix/optimized/local-store.ll
 ; nix/optimized/misc.ll
 ; nix/optimized/mounted-input-accessor.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/store-api.ll
 ; node/optimized/libnode.crypto_util.ll
@@ -283,7 +289,6 @@ entry:
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; pocketpy/optimized/str.cpp.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/message_lite.cc.ll
 ; protobuf/optimized/relative_path.cc.ll
 ; quantlib/optimized/schedule.ll
@@ -315,7 +320,7 @@ entry:
 ; zxing/optimized/ODReader.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %0, %2
   %4 = icmp ne ptr %0, %1
@@ -323,12 +328,13 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %0, %2
   %4 = icmp eq ptr %0, %1
@@ -348,7 +354,7 @@ entry:
 ; openjdk/optimized/vmError_posix.ll
 ; openjdk/optimized/whitebox.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000124(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %0, %2
   %4 = icmp ult ptr %0, %1
@@ -356,7 +362,7 @@ entry:
   ret i1 %5
 }
 
-; 28 occurrences:
+; 26 occurrences:
 ; cmake/optimized/cmcmd.cxx.ll
 ; eastl/optimized/BenchmarkList.cpp.ll
 ; eastl/optimized/TestFixedList.cpp.ll
@@ -377,16 +383,14 @@ entry:
 ; llvm/optimized/PlaceSafepoints.cpp.ll
 ; opencv/optimized/umatrix.cpp.ll
 ; openjdk/optimized/jvm.ll
-; openusd/optimized/mapFunction.cpp.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; quantlib/optimized/timebasket.ll
 ; wireshark/optimized/packet-http.c.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/basic_cmds.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/smt2parser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %0, %2
   %4 = icmp ne ptr %0, %1
@@ -402,7 +406,7 @@ entry:
 ; wireshark/optimized/packet-ipp.c.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %0, %2
   %4 = icmp ugt ptr %0, %1
@@ -421,7 +425,7 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; openjdk/optimized/shenandoahSupport.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %0, %2
   %4 = icmp eq ptr %0, %1
@@ -633,7 +637,7 @@ entry:
 ; llvm/optimized/driver.cpp.ll
 ; openjdk/optimized/relocInfo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000a9(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %0, %2
   %4 = icmp uge ptr %0, %1
@@ -644,7 +648,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %0, %2
   %4 = icmp ult ptr %0, %1
@@ -656,7 +660,7 @@ entry:
 ; linux/optimized/dumpstack.ll
 ; linux/optimized/unwind_orc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000a8(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %0, %2
   %4 = icmp ugt ptr %0, %1
@@ -667,7 +671,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/zstd_decompress_block.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %0, %2
   %4 = icmp ult ptr %0, %1
@@ -678,7 +682,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/FileFormatIridasLook.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000ac(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %0, %2
   %4 = icmp ne ptr %0, %1
@@ -689,7 +693,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/exceptions.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %0, %2
   %4 = icmp ne ptr %0, %1

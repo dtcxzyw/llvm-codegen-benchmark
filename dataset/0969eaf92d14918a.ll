@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/kitCloud.c.ll
@@ -13,6 +13,8 @@
 ; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:

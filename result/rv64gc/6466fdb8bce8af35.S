@@ -46,6 +46,18 @@ func0000000000000014:                   # @func0000000000000014
 	add	a0, a0, a1
 	slli	a0, a0, 2
 	ret
+func0000000000000001:                   # @func0000000000000001
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	add	a0, a0, a1
+	slli	a0, a0, 2
+	ret
+func0000000000000009:                   # @func0000000000000009
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	add	a0, a0, a1
+	slli	a0, a0, 2
+	ret
 func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 48
 	srli	a1, a1, 48

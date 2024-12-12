@@ -15,7 +15,7 @@
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 1
   %3 = icmp ult i16 %2, %0

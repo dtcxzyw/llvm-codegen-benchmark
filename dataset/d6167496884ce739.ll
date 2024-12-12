@@ -11,11 +11,24 @@
 ; php/optimized/fastcgi.ll
 ; rocksdb/optimized/log_reader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
   %5 = icmp eq i32 %4, 0
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 2 occurrences:
+; icu/optimized/utf_impl.ll
+; qemu/optimized/hw_scsi_esp.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f4(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 16
+  %4 = or disjoint i32 %3, %1
+  %5 = icmp samesign ult i32 %4, 17
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -34,7 +47,7 @@ entry:
 ; php/optimized/fastcgi.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ec(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
@@ -46,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/avifinfo.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
   %4 = or disjoint i32 %3, %1
@@ -58,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; coreutils-rs/optimized/12183t08bisz8vo8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 8
   %4 = or disjoint i32 %3, %1
@@ -67,14 +80,16 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
 ; sentencepiece/optimized/util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f8(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = or disjoint i32 %3, %1
-  %5 = icmp ugt i32 %4, 65535
+  %5 = icmp samesign ugt i32 %4, 65535
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -82,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/e100.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = or disjoint i32 %3, %1
@@ -92,21 +107,9 @@ entry:
 }
 
 ; 1 occurrences:
-; icu/optimized/utf_impl.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000074(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 18
-  %4 = or disjoint i32 %3, %1
-  %5 = icmp ult i32 %4, 1114112
-  %6 = select i1 %0, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ac(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = or disjoint i32 %3, %1

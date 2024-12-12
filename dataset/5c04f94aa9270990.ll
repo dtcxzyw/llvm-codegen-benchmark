@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -20,7 +20,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -37,13 +36,14 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; bullet3/optimized/gim_contact.ll
 ; bullet3/optimized/gim_tri_collision.ll
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(float %0) #0 {
 entry:

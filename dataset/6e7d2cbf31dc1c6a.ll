@@ -82,7 +82,7 @@ entry:
   ret i1 %5
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cnfMap.c.ll
@@ -92,7 +92,6 @@ entry:
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/mapperMatch.c.ll
-; abc/optimized/mapperVec.c.ll
 ; abc/optimized/satInter.c.ll
 ; abc/optimized/satInterA.c.ll
 ; abc/optimized/satInterB.c.ll
@@ -112,16 +111,16 @@ entry:
 ; ruby/optimized/time.ll
 ; z3/optimized/sat_gc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 9
   %3 = and i32 %2, 15
   %4 = and i32 %0, 15
-  %5 = icmp ult i32 %3, %4
+  %5 = icmp samesign ult i32 %3, %4
   ret i1 %5
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -134,7 +133,6 @@ entry:
 ; abc/optimized/lpkAbcDec.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/mapperMatch.c.ll
-; abc/optimized/mapperVec.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; cpython/optimized/unicodeobject.ll
@@ -152,24 +150,24 @@ entry:
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = and i32 %2, 7
   %4 = and i32 %0, 7
-  %5 = icmp ugt i32 %3, %4
+  %5 = icmp samesign ugt i32 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/tcg-op-vec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 255
   %4 = and i32 %0, 255
-  %5 = icmp uge i32 %3, %4
+  %5 = icmp samesign uge i32 %3, %4
   ret i1 %5
 }
 
@@ -198,12 +196,12 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/psa_crypto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 63
   %4 = and i32 %0, 63
-  %5 = icmp ule i32 %3, %4
+  %5 = icmp samesign ule i32 %3, %4
   ret i1 %5
 }
 

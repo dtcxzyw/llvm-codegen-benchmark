@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; darktable/optimized/filtering.c.ll
-; linux/optimized/attr.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/skl_universal_plane.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll

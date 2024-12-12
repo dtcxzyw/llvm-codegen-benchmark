@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000af:                   # @func00000000000000af
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	zext.h	a1, a1

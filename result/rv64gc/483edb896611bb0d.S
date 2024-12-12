@@ -26,7 +26,15 @@ func0000000000000011:                   # @func0000000000000011
 .LBB2_2:                                # %entry
 	mv	a0, a2
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000030:                   # @func0000000000000030
+	lui	a2, 1
+	bltu	a2, a0, .LBB3_2
+	slli	a1, a1, 32
+	srli	a2, a1, 32
+.LBB3_2:                                # %entry
+	mv	a0, a2
+	ret
+func00000000000000a8:                   # @func00000000000000a8
 	lui	a2, 209715
 	addiw	a2, a2, 820
 	sltu	a0, a0, a2

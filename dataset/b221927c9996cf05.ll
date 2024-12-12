@@ -17,6 +17,17 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, float %1) #0 {
+entry:
+  %2 = fcmp olt float %1, 0.000000e+00
+  %3 = select i1 %2, i32 4, i32 3
+  %4 = add i32 %3, %0
+  ret i32 %4
+}
+
 ; 13 occurrences:
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll

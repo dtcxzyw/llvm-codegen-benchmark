@@ -1,28 +1,24 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ushr	v2.8h, v2.8h, #8
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	and	w8, w1, #0xff00
+	add	w0, w0, w8, lsr #8
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	ushr	v2.8h, v2.8h, #1
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	and	w8, w1, #0xfffe
+	add	w0, w0, w8, lsr #1
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushr	v2.8h, v2.8h, #2
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	and	w8, w1, #0xfffc
+	add	w0, w0, w8, lsr #2
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushr	v2.8h, v2.8h, #11
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	and	w8, w1, #0xf800
+	add	w0, w0, w8, lsr #11
 	ret
                                         // -- End function

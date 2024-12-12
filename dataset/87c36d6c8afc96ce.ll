@@ -8,7 +8,7 @@ entry:
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 992
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
@@ -24,7 +24,7 @@ entry:
   %3 = lshr i32 %2, 18
   %4 = and i32 %3, 31
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }
@@ -38,7 +38,7 @@ entry:
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 2
   %5 = zext nneg i32 %4 to i64
-  %6 = or i64 %5, %1
+  %6 = or i64 %1, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }

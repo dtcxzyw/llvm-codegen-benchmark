@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/clamd_others.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32

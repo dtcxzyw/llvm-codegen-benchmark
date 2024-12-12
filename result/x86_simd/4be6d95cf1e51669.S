@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	vptestnmb	%xmm0, %xmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpor	%xmm2, %xmm1, %xmm0

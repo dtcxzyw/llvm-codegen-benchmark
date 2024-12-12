@@ -3,7 +3,7 @@
 ; llvm/optimized/VarLenCodeEmitterGen.cpp.ll
 ; openjdk/optimized/g1FullGCCompactionPoint.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp eq i32 %1, 1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/cecProve.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp eq i32 %1, 0
@@ -35,7 +35,7 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp eq i32 %1, 0
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/joinrels.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp eq i32 %1, 2

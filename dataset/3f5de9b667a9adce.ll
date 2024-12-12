@@ -6,7 +6,7 @@
 ; openjdk/optimized/reflection.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000042(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq ptr %1, null
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/virtualspace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000102(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp eq ptr %1, null

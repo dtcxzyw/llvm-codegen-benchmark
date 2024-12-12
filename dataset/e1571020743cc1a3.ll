@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/giaBalAig.c.ll
@@ -14,7 +14,6 @@
 ; abc/optimized/giaTim.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/wlnRead.c.ll
-; linux/optimized/pagewalk.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
@@ -36,14 +35,13 @@ define i1 @func0000000000000004(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp eq i64 %3, 27
-  %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %5 = or i1 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; lief/optimized/bignum.c.ll
-; linux/optimized/pagewalk.ll
 ; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000030(i1 %0, i1 %1, i64 %2) #0 {
@@ -51,7 +49,7 @@ entry:
   %3 = and i64 %2, 4286578688
   %4 = icmp ne i64 %3, 67108864
   %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -73,11 +71,11 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b0(i1 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000130(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 524288
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }

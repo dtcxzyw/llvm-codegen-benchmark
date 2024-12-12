@@ -1,12 +1,13 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 9
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add nuw nsw i32 %0, 1
   %7 = add nuw nsw i32 %6, %5
   ret i32 %7
@@ -60,6 +61,19 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000073(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = shl nuw nsw i32 %3, 9
+  %5 = or disjoint i32 %1, %4
+  %6 = add i32 %0, 1
+  %7 = add nuw nsw i32 %6, %5
+  ret i32 %7
+}
+
+; 1 occurrences:
 ; linux/optimized/xfrm_policy.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000044(i32 %0, i32 %1, i16 %2) #0 {
@@ -80,7 +94,7 @@ define i32 @func0000000000000075(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add nsw i32 %0, -8388608
   %7 = add nsw i32 %6, %5
   ret i32 %7

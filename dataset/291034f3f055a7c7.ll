@@ -63,9 +63,10 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/dictobject.ll
+; lvgl/optimized/lv_tlsf.ll
 ; ruby/optimized/array.ll
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind

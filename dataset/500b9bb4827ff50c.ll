@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -15,7 +15,7 @@ entry:
 ; openexr/optimized/parse_header.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64

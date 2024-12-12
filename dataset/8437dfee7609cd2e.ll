@@ -1,10 +1,10 @@
 
-%union.yyalloc.2485222 = type { %union.YYSTYPE.2485221, [8 x i8] }
-%union.YYSTYPE.2485221 = type { i64 }
-%union.yyalloc.2486236 = type { %union.YYSTYPE.2486235, [8 x i8] }
-%union.YYSTYPE.2486235 = type { i64 }
-%union.yyalloc.3467091 = type { %union.YYSTYPE.3467090 }
-%union.YYSTYPE.3467090 = type { i64 }
+%union.yyalloc.2600711 = type { %union.YYSTYPE.2600710, [8 x i8] }
+%union.YYSTYPE.2600710 = type { i64 }
+%union.yyalloc.2601680 = type { %union.YYSTYPE.2601679, [8 x i8] }
+%union.YYSTYPE.2601679 = type { i64 }
+%union.yyalloc.3651302 = type { %union.YYSTYPE.3651301 }
+%union.YYSTYPE.3651301 = type { i64 }
 
 ; 4 occurrences:
 ; postgres/optimized/gram.ll
@@ -16,8 +16,8 @@ define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 15
   %4 = sdiv i64 %3, 16
-  %5 = getelementptr %union.yyalloc.2485222, ptr %1, i64 %4
-  %6 = getelementptr %union.YYSTYPE.2485221, ptr %5, i64 %0
+  %5 = getelementptr %union.yyalloc.2600711, ptr %1, i64 %4
+  %6 = getelementptr %union.YYSTYPE.2600710, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
@@ -43,8 +43,8 @@ define ptr @func00000000000000aa(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 15
   %4 = sdiv i64 %3, 16
-  %5 = getelementptr nusw %union.yyalloc.2486236, ptr %1, i64 %4
-  %6 = getelementptr nusw %union.YYSTYPE.2486235, ptr %5, i64 %0
+  %5 = getelementptr nusw %union.yyalloc.2601680, ptr %1, i64 %4
+  %6 = getelementptr nusw %union.YYSTYPE.2601679, ptr %5, i64 %0
   %7 = getelementptr nusw i8, ptr %6, i64 -8
   ret ptr %7
 }
@@ -61,8 +61,8 @@ define ptr @func0000000000000080(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 7
   %4 = sdiv i64 %3, 8
-  %5 = getelementptr %union.yyalloc.3467091, ptr %1, i64 %4
-  %6 = getelementptr %union.YYSTYPE.3467090, ptr %5, i64 %0
+  %5 = getelementptr %union.yyalloc.3651302, ptr %1, i64 %4
+  %6 = getelementptr %union.YYSTYPE.3651301, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }

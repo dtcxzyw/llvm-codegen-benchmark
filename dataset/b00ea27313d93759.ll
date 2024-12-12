@@ -1,6 +1,5 @@
 
 ; 9 occurrences:
-; clamav/optimized/filtering.c.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; rocksdb/optimized/instrumented_mutex.cc.ll
@@ -9,12 +8,13 @@
 ; rust-analyzer-rs/optimized/lyex85fppj8jw50.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-zebra.c.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 4
-  %4 = or i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -31,11 +31,11 @@ entry:
 ; icu/optimized/utrie2_builder.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/kyber-iosched.ll
-; linux/optimized/utosi.ll
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; mold/optimized/thunks.cc.ARM32.cc.ll
 ; openjdk/optimized/loopTransform.ll
@@ -114,12 +114,14 @@ entry:
 define i1 @func0000000000000018(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 32
-  %4 = or i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 60 occurrences:
+; 66 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cpython/optimized/_codecs_jp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -127,13 +129,13 @@ entry:
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; git/optimized/add-patch.ll
+; gromacs/optimized/tng_io.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hermes/optimized/Passes.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/rx.ll
-; linux/optimized/utosi.ll
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
@@ -180,6 +182,10 @@ entry:
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; wireshark/optimized/packet-sna.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -214,8 +220,8 @@ entry:
 define i1 @func0000000000000014(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -1
-  %4 = or i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

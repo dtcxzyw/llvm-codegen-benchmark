@@ -23,7 +23,7 @@ entry:
   ret i64 %6
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; jemalloc/optimized/emap.ll
 ; jemalloc/optimized/emap.pic.ll
 ; jemalloc/optimized/emap.sym.ll
@@ -31,7 +31,6 @@ entry:
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
 ; linux/optimized/ds.ll
-; linux/optimized/set_memory.ll
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/zMark.ll
 ; redis/optimized/emap.ll
@@ -65,6 +64,19 @@ entry:
 }
 
 ; 2 occurrences:
+; abc/optimized/bdcSpfd.c.ll
+; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4502500115742720
+  %4 = or i64 %0, %1
+  %5 = or disjoint i64 %4, %3
+  %6 = or disjoint i64 %5, 1048576
+  ret i64 %6
+}
+
+; 2 occurrences:
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
@@ -86,18 +98,6 @@ entry:
   %4 = or disjoint i64 %0, %1
   %5 = or disjoint i64 %4, %3
   %6 = or i64 %5, 64
-  ret i64 %6
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4611404543450677248
-  %4 = or i64 %0, %1
-  %5 = or disjoint i64 %4, %3
-  %6 = or disjoint i64 %5, 4611686018427387904
   ret i64 %6
 }
 

@@ -9,6 +9,7 @@
 ; assimp/optimized/IFCMaterial.cpp.ll
 ; assimp/optimized/OpenGEXImporter.cpp.ll
 ; assimp/optimized/StepExporter.cpp.ll
+; boost/optimized/thread.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -168,7 +169,6 @@
 ; openvdb/optimized/Archive.cc.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; pocketpy/optimized/expr.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proxygen/optimized/Service.cpp.ll
 ; quantlib/optimized/fftengine.ll
 ; rocksdb/optimized/write_batch.cc.ll
@@ -214,9 +214,10 @@ entry:
   ret ptr %4
 }
 
-; 127 occurrences:
+; 128 occurrences:
 ; abc/optimized/abcMap.c.ll
 ; assimp/optimized/shapes.cc.ll
+; boost/optimized/alloc_lib.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; entt/optimized/any.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
@@ -228,7 +229,6 @@ entry:
 ; git/optimized/merge-recursive.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hermes/optimized/ItaniumDemangle.cpp.ll
-; hyperscan/optimized/ng_util.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; icu/optimized/ustrcase.ll
@@ -340,6 +340,7 @@ entry:
 ; redis/optimized/hpdata.sym.ll
 ; redis/optimized/module.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
+; verilator/optimized/V3Split.cpp.ll
 ; verilator/optimized/V3Unroll.cpp.ll
 ; wireshark/optimized/mate_util.c.ll
 ; Function Attrs: nounwind
@@ -361,11 +362,13 @@ entry:
   ret ptr %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; entt/optimized/meta_data.cpp.ll
 ; entt/optimized/meta_func.cpp.ll
 ; smol-rs/optimized/28cdo1glt4bo5dm3.ll
 ; smol-rs/optimized/3jwiggzh2qey4o2f.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eb0f70f7qg0lwhfftqxruwlu9.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, ptr %1, ptr %2) #0 {
 entry:

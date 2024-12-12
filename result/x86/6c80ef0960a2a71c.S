@@ -11,7 +11,7 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%edi, %eax
 	andb	$1, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	shrl	$17, %eax
 	xorl	%edi, %eax

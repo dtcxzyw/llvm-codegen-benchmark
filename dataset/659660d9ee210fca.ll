@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; spike/optimized/kslra32.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i32 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = sub nsw i32 0, %2
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d4(i64 %0, i64 %1) #0 {
+define i32 @func00000000000001a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub nsw i32 11, %2
@@ -23,13 +23,11 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; cpython/optimized/_testinternalcapi.ll
-; nuttx/optimized/lib_flsl.c.ll
-; nuttx/optimized/lib_flsll.c.ll
 ; yosys/optimized/BigUnsigned.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i32 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub nuw nsw i32 64, %2
@@ -41,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/dynahash.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f4(i64 %0, i64 %1) #0 {
+define i32 @func00000000000001e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub nuw nsw i32 64, %2

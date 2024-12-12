@@ -19,7 +19,7 @@ entry:
   %2 = icmp eq i32 %1, 1
   %3 = select i1 %2, i32 1, i32 -1
   %4 = sitofp i32 %3 to double
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

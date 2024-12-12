@@ -10,10 +10,10 @@
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i128 %1, i64 %2) #0 {
+define i1 @func0000000000000224(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = trunc i128 %1 to i64
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = ashr exact i64 %0, 2
   %6 = icmp ult i64 %5, %4
   ret i1 %6

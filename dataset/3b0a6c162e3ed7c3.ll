@@ -4,7 +4,7 @@
 ; llvm/optimized/SemaStmt.cpp.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000318(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2048
   %3 = icmp ne i16 %2, 0
@@ -28,7 +28,7 @@ entry:
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; openjdk/optimized/classListWriter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000302(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0
@@ -51,7 +51,7 @@ entry:
 ; wireshark/optimized/tshark.c.ll
 ; wireshark/optimized/voip_calls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000042(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8
   %3 = icmp eq i16 %2, 0
@@ -67,7 +67,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; wireshark/optimized/packet-adb_cs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000058(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4
   %3 = icmp ne i16 %2, 0

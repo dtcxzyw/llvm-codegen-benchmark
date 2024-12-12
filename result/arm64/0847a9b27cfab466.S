@@ -1,31 +1,27 @@
-func000000000000014a:                   // @func000000000000014a
+func000000000000028a:                   // @func000000000000028a
 // %bb.0:                               // %entry
-	saba	v0.4s, v2.4s, v4.4s
-	saba	v1.4s, v3.4s, v5.4s
-	cmgt	v1.4s, v1.4s, #0
-	cmgt	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	subs	w8, w1, w2
+	cneg	w8, w8, mi
+	add	w8, w0, w8
+	cmp	w8, #0
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000154:                   // @func0000000000000154
+func00000000000002a4:                   // @func00000000000002a4
 // %bb.0:                               // %entry
-	saba	v0.4s, v2.4s, v4.4s
-	saba	v1.4s, v3.4s, v5.4s
-	movi	v2.4s, #1, lsl #8
-	cmhi	v1.4s, v2.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	subs	w8, w1, w2
+	cneg	w8, w8, mi
+	add	w8, w8, w0
+	cmp	w8, #256
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000156:                   // @func0000000000000156
+func00000000000002a6:                   // @func00000000000002a6
 // %bb.0:                               // %entry
-	saba	v0.4s, v2.4s, v4.4s
-	saba	v1.4s, v3.4s, v5.4s
-	cmle	v1.4s, v1.4s, #0
-	cmle	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	subs	w8, w1, w2
+	cneg	w8, w8, mi
+	add	w8, w0, w8
+	cmp	w8, #1
+	cset	w0, lt
 	ret
                                         // -- End function

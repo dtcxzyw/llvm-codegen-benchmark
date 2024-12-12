@@ -4,7 +4,7 @@
 ; ruby/optimized/array.ll
 ; ruby/optimized/file.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sdiv i64 %0, 2
@@ -20,7 +20,7 @@ entry:
 ; sentencepiece/optimized/char_model_trainer.cc.ll
 ; sentencepiece/optimized/word_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sdiv exact i64 %0, 24
@@ -28,7 +28,7 @@ entry:
   ret i1 %4
 }
 
-; 307 occurrences:
+; 403 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; arrow/optimized/encode_internal.cc.ll
@@ -71,6 +71,104 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/cmdline.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/framework.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/parsers.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/variables_map.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; cmake/optimized/cmCustomCommandGenerator.cxx.ll
 ; cmake/optimized/cmELF.cxx.ll
 ; cmake/optimized/cmForEachCommand.cxx.ll
@@ -195,7 +293,6 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshio.cpp.ll
@@ -236,7 +333,6 @@ entry:
 ; node/optimized/libnode.node_messaging.ll
 ; nori/optimized/obj.cpp.ll
 ; ocio/optimized/Baker.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/GpuShader.cpp.ll
 ; ocio/optimized/LookParse.cpp.ll
 ; ocio/optimized/LookTransform.cpp.ll
@@ -337,7 +433,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sdiv exact i64 %0, 40
@@ -345,7 +441,38 @@ entry:
   ret i1 %4
 }
 
-; 124 occurrences:
+; 21 occurrences:
+; llama.cpp/optimized/grammar-parser.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
+; llvm/optimized/AsmParser.cpp.ll
+; llvm/optimized/GCOV.cpp.ll
+; llvm/optimized/MCCodeView.cpp.ll
+; llvm/optimized/MasmParser.cpp.ll
+; llvm/optimized/SwitchLoweringUtils.cpp.ll
+; minetest/optimized/CBillboardSceneNode.cpp.ll
+; minetest/optimized/CGUITTFont.cpp.ll
+; minetest/optimized/CMeshManipulator.cpp.ll
+; minetest/optimized/COBJMeshFileLoader.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; minetest/optimized/clouds.cpp.ll
+; minetest/optimized/content_cao.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
+; minetest/optimized/mesh.cpp.ll
+; minetest/optimized/minimap.cpp.ll
+; minetest/optimized/sky.cpp.ll
+; minetest/optimized/wieldmesh.cpp.ll
+; rocksdb/optimized/point_lock_manager.cc.ll
+; rocksdb/optimized/range_tree_lock_manager.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = sdiv exact i64 %0, 40
+  %4 = icmp samesign ult i64 %3, %2
+  ret i1 %4
+}
+
+; 118 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -386,10 +513,8 @@ entry:
 ; hyperscan/optimized/teddy_engine_description.cpp.ll
 ; libquic/optimized/activity_tracker.cc.ll
 ; lightgbm/optimized/bin.cpp.ll
-; llama.cpp/optimized/grammar-parser.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/AccelTable.cpp.ll
@@ -400,18 +525,15 @@ entry:
 ; llvm/optimized/DFAEmitter.cpp.ll
 ; llvm/optimized/DFAJumpThreading.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/GlobalISelEmitter.cpp.ll
 ; llvm/optimized/InjectedSourceStream.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/LazyRandomTypeCollection.cpp.ll
-; llvm/optimized/MCCodeView.cpp.ll
 ; llvm/optimized/MCPseudoProbe.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/MacroArgs.cpp.ll
-; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/MemProfReader.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
@@ -430,7 +552,6 @@ entry:
 ; luau/optimized/Parser.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CBillboardSceneNode.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
@@ -471,7 +592,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sdiv exact i64 %0, 40
@@ -479,9 +600,10 @@ entry:
   ret i1 %4
 }
 
-; 80 occurrences:
+; 81 occurrences:
 ; arrow/optimized/exec.cc.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/message.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; gromacs/optimized/domdec_vsite.cpp.ll
@@ -561,7 +683,7 @@ entry:
 ; yosys/optimized/show.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sdiv exact i64 %0, 36
@@ -569,7 +691,19 @@ entry:
   ret i1 %4
 }
 
-; 30 occurrences:
+; 2 occurrences:
+; gromacs/optimized/toppush.cpp.ll
+; minetest/optimized/sky.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = sdiv exact i64 %0, 36
+  %4 = icmp samesign ult i64 %3, %2
+  ret i1 %4
+}
+
+; 29 occurrences:
 ; assimp/optimized/FBXParser.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
@@ -578,7 +712,6 @@ entry:
 ; gromacs/optimized/nbsearch.cpp.ll
 ; gromacs/optimized/pme.cpp.ll
 ; gromacs/optimized/readrot.cpp.ll
-; gromacs/optimized/toppush.cpp.ll
 ; gromacs/optimized/updategroupscog.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/LazyRandomTypeCollection.cpp.ll
@@ -601,7 +734,7 @@ entry:
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sdiv exact i64 %0, 36
@@ -609,12 +742,108 @@ entry:
   ret i1 %4
 }
 
-; 29 occurrences:
+; 124 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/DXFLoader.cpp.ll
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/framework.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; cvc5/optimized/node_manager.cpp.ll
 ; draco/optimized/float_points_tree_decoder.cc.ll
 ; gromacs/optimized/colvarmodule.cpp.ll
@@ -633,14 +862,13 @@ entry:
 ; meshlab/optimized/save_project.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/inventory.cpp.ll
 ; node/optimized/libnode.node_http2.ll
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sdiv exact i64 %0, 312
@@ -664,7 +892,7 @@ entry:
 ; llvm/optimized/BranchFolding.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sdiv exact i64 %0, 24
@@ -687,7 +915,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_sequential_decoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sdiv i64 %0, 3
@@ -707,11 +935,29 @@ entry:
   ret i1 %4
 }
 
+; 8 occurrences:
+; hyperscan/optimized/teddy_engine_description.cpp.ll
+; llama.cpp/optimized/grammar-parser.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
+; llvm/optimized/AsmParser.cpp.ll
+; llvm/optimized/GCOV.cpp.ll
+; llvm/optimized/MCCodeView.cpp.ll
+; llvm/optimized/MasmParser.cpp.ll
+; llvm/optimized/SwitchLoweringUtils.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = sdiv exact i64 %0, 120
+  %4 = icmp samesign ugt i64 %3, %2
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; gromacs/optimized/gpp_atomtype.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sdiv exact i64 %0, 40
@@ -726,7 +972,7 @@ entry:
 ; gromacs/optimized/make_ndx.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sdiv exact i64 %0, 24
@@ -737,7 +983,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gpp_atomtype.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000037(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000067(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sdiv exact i64 %0, 184
@@ -760,7 +1006,7 @@ entry:
 ; gromacs/optimized/gpp_atomtype.cpp.ll
 ; icu/optimized/denseranges.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sdiv i64 %0, 184
@@ -774,7 +1020,7 @@ entry:
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/tsvector.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sdiv exact i64 %0, 24
@@ -785,7 +1031,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/ginpostinglist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sdiv exact i64 %0, 6
@@ -798,7 +1044,7 @@ entry:
 ; hyperscan/optimized/teddy_engine_description.cpp.ll
 ; opencv/optimized/perf_common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000025(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sdiv exact i64 %0, 24
@@ -810,11 +1056,11 @@ entry:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sdiv i64 %0, 8
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 

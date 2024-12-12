@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; darktable/optimized/introspection_shadhi.c.ll
@@ -14,6 +14,7 @@
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/interaction.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
@@ -38,12 +39,13 @@ entry:
 define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fcmp oeq float %4, 0.000000e+00
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; darktable/optimized/introspection_soften.c.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll
@@ -52,7 +54,7 @@ entry:
 define i1 @func000000000000000a(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fcmp ole float %4, 0.000000e+00
   ret i1 %5
 }
@@ -79,12 +81,13 @@ entry:
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fcmp ogt float %4, 0.000000e+00
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; darktable/optimized/introspection_soften.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/targainput.cpp.ll
 ; oiio/optimized/targaoutput.cpp.ll

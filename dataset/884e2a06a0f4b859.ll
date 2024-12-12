@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; lvgl/optimized/lv_math.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
@@ -23,8 +24,20 @@ entry:
 define i16 @func0000000000000035(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = mul nuw nsw i16 %2, 3
-  %4 = add nsw i16 %3, %1
+  %4 = add nsw i16 %1, %3
   %5 = add nsw i16 %4, %0
+  ret i16 %5
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_color.ll
+; opencv/optimized/smooth.dispatch.cpp.ll
+; Function Attrs: nounwind
+define i16 @func000000000000003e(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = mul nuw nsw i16 %2, 635
+  %4 = add nuw nsw i16 %1, %3
+  %5 = add nuw i16 %4, %0
   ret i16 %5
 }
 
@@ -36,7 +49,7 @@ entry:
 define i16 @func000000000000003f(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = mul nuw nsw i16 %2, 9
-  %4 = add nuw nsw i16 %3, %1
+  %4 = add nuw nsw i16 %1, %3
   %5 = add nuw nsw i16 %4, %0
   ret i16 %5
 }
@@ -58,18 +71,7 @@ entry:
 define i16 @func000000000000003a(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = mul nuw nsw i16 %2, 96
-  %4 = add nuw i16 %3, %1
-  %5 = add nuw i16 %4, %0
-  ret i16 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/smooth.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i16 @func000000000000003e(i16 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = mul nuw nsw i16 %2, 96
-  %4 = add nuw nsw i16 %3, %1
+  %4 = add nuw i16 %1, %3
   %5 = add nuw i16 %4, %0
   ret i16 %5
 }

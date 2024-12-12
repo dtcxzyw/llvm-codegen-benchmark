@@ -30,13 +30,13 @@ func000000000000000d:                   # @func000000000000000d
 	cmovel	%edx, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
-func0000000000000027:                   # @func0000000000000027
+func00000000000000a7:                   # @func00000000000000a7
 	cmpl	$10, %edx
 	movl	$1, %eax
 	cmovael	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	cmpl	$2, %edx
 	movl	$3, %eax
 	cmovael	%esi, %eax
@@ -48,21 +48,9 @@ func000000000000000a:                   # @func000000000000000a
 	cmovnel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
-	xorl	%eax, %eax
-	cmpl	$2, %edx
-	cmovael	%esi, %eax
-	addl	%edi, %eax
-	retq
 func000000000000000b:                   # @func000000000000000b
 	xorl	%eax, %eax
 	cmpl	$2, %edx
 	cmovnel	%esi, %eax
-	addl	%edi, %eax
-	retq
-func0000000000000033:                   # @func0000000000000033
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	cmovgl	%esi, %eax
 	addl	%edi, %eax
 	retq

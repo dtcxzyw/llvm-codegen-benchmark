@@ -1,5 +1,5 @@
 
-; 375 occurrences:
+; 374 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
@@ -374,24 +374,22 @@
 ; spike/optimized/sim.ll
 ; xgboost/optimized/adapter.cc.ll
 ; yosys/optimized/lz4.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 16
   ret i64 %4
 }
 
-; 2 occurrences:
-; icu/optimized/decNumber.ll
+; 1 occurrences:
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = add nuw i64 %3, 10
   ret i64 %4
 }
@@ -404,7 +402,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw i64 %3, 1
   ret i64 %4
 }

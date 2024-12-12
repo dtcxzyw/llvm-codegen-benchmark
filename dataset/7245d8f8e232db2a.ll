@@ -26,17 +26,18 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
+; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c5(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000185(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2047
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i32 -1076, i32 %1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

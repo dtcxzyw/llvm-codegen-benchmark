@@ -2,15 +2,14 @@ func0000000000000003:                   # @func0000000000000003
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	sete	%al
-	leal	39(%rdi,%rax,2), %eax
+	leal	8(%rdi,%rax,8), %eax
 	retq
 func0000000000000009:                   # @func0000000000000009
 	xorl	%eax, %eax
-	cmpb	$40, %sil
-	setae	%al
-	shll	$24, %eax
+	cmpb	$12, %sil
+	setb	%al
+	shll	$11, %eax
 	orl	%edi, %eax
-	orl	$100663296, %eax                # imm = 0x6000000
 	retq
 func0000000000000002:                   # @func0000000000000002
 	xorl	%eax, %eax
@@ -48,14 +47,6 @@ func0000000000000011:                   # @func0000000000000011
 	orl	%edi, %eax
 	orl	$10, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	xorl	%eax, %eax
-	cmpb	$64, %sil
-	setae	%al
-	shll	$12, %eax
-	orl	%edi, %eax
-	orl	$285212672, %eax                # imm = 0x11000000
-	retq
 func000000000000000c:                   # @func000000000000000c
 	shrb	$7, %sil
 	movzbl	%sil, %eax
@@ -74,5 +65,11 @@ func0000000000000014:                   # @func0000000000000014
 	testb	%sil, %sil
 	setns	%al
 	incl	%eax
+	orl	%edi, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	cmpb	$2, %sil
+	adcl	$1, %eax
 	orl	%edi, %eax
 	retq

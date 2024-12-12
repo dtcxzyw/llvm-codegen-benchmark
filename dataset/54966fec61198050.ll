@@ -1,9 +1,8 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; llvm/optimized/Mangler.cpp.ll
 ; llvm/optimized/PDBFile.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; openmpi/optimized/onesided_aggregation.ll
 ; wireshark/optimized/packet-rpcrdma.c.ll

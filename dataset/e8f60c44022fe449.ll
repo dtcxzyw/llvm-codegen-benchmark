@@ -9,59 +9,13 @@
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sdiv i64 %4, 1000000000
   ret i64 %5
 }
 
-; 4 occurrences:
-; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
-; abseil-cpp/optimized/cord_test.cc.ll
-; pybind11/optimized/test_chrono.cpp.ll
-; yosys/optimized/eval.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = add i64 %3, %0
-  %5 = sdiv i64 %4, 64
-  ret i64 %5
-}
-
-; 9 occurrences:
-; arrow/optimized/byte_size.cc.ll
-; eastl/optimized/TestChrono.cpp.ll
-; nix/optimized/worker.ll
-; postgres/optimized/isolationtester.ll
-; postgres/optimized/pgstat_io.ll
-; postgres/optimized/sync.ll
-; quickjs/optimized/quickjs.ll
-; redis/optimized/redis-cli.ll
-; z3/optimized/sat_local_search.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = add i64 %3, %0
-  %5 = sdiv i64 %4, 100
-  ret i64 %5
-}
-
-; 4 occurrences:
-; arrow/optimized/diff.cc.ll
-; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
-; opencv/optimized/layers_common.cpp.ll
-; z3/optimized/sat_local_search.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = add nsw i64 %3, %0
-  %5 = sdiv i64 %4, 1000000
-  ret i64 %5
-}
-
-; 146 occurrences:
+; 144 occurrences:
+; boost/optimized/topology.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
 ; nix/optimized/archive.ll
@@ -148,13 +102,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -214,6 +165,52 @@ entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = add nsw i64 %3, %0
   %5 = sdiv i64 %4, 2
+  ret i64 %5
+}
+
+; 4 occurrences:
+; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
+; abseil-cpp/optimized/cord_test.cc.ll
+; pybind11/optimized/test_chrono.cpp.ll
+; yosys/optimized/eval.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = add i64 %3, %0
+  %5 = sdiv i64 %4, 64
+  ret i64 %5
+}
+
+; 8 occurrences:
+; arrow/optimized/byte_size.cc.ll
+; nix/optimized/worker.ll
+; postgres/optimized/isolationtester.ll
+; postgres/optimized/pgstat_io.ll
+; postgres/optimized/sync.ll
+; quickjs/optimized/quickjs.ll
+; redis/optimized/redis-cli.ll
+; z3/optimized/sat_local_search.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = add i64 %3, %0
+  %5 = sdiv i64 %4, 100
+  ret i64 %5
+}
+
+; 4 occurrences:
+; arrow/optimized/diff.cc.ll
+; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
+; opencv/optimized/layers_common.cpp.ll
+; z3/optimized/sat_local_search.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = add nsw i64 %3, %0
+  %5 = sdiv i64 %4, 1000000
   ret i64 %5
 }
 

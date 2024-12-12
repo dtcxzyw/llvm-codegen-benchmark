@@ -13,7 +13,7 @@
 ; velox/optimized/TypeCalculation.yy.cc.ll
 ; velox/optimized/TypeParser.yy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = sext i8 %0 to i32
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/c_keywords.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000028(i8 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = sext i8 %0 to i32

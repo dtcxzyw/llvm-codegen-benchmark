@@ -4,13 +4,13 @@ func0000000000000000:                   # @func0000000000000000
 	movzwl	%si, %eax
 	addq	%rcx, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	movslq	%edx, %rcx
 	addq	%rdi, %rcx
 	movzwl	%si, %eax
 	addq	%rcx, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	movslq	%edx, %rcx
 	shlq	$4, %rcx
 	addq	%rdi, %rcx

@@ -1,10 +1,8 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; git/optimized/remote.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; linux/optimized/io-wq.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; rocksdb/optimized/plain_table_bloom.cc.ll
 ; z3/optimized/nlsat_solver.cpp.ll

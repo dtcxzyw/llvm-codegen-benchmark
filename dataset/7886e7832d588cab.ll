@@ -1,5 +1,5 @@
 
-; 150 occurrences:
+; 152 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -127,7 +127,6 @@
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -147,6 +146,9 @@
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_scale.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; qemu/optimized/tcg.c.ll
@@ -161,8 +163,7 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
-; glslang/optimized/Intermediate.cpp.ll
+; 4 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; linux/optimized/swap_state.ll
@@ -178,7 +179,7 @@ entry:
   ret i64 %6
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
 ; abc/optimized/absOut.c.ll
@@ -206,7 +207,6 @@ entry:
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; Function Attrs: nounwind

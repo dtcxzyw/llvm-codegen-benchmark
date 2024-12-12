@@ -35,7 +35,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = lshr i32 %3, 24
   %5 = and i32 %4, 3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

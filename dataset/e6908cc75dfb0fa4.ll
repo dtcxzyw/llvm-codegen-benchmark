@@ -4,7 +4,7 @@
 ; spike/optimized/s_roundPackToI32.ll
 ; spike/optimized/s_roundPackToUI32.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i32 %0, i8 %1) #0 {
+define i64 @func0000000000000042(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 92
   %3 = icmp eq i32 %0, 0
@@ -19,7 +19,7 @@ entry:
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000188(i8 %0, i32 %1) #0 {
+define i64 @func0000000000000308(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ult i8 %0, 64
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/read.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i32 %0, i8 %1) #0 {
+define i64 @func0000000000000058(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 92
   %3 = icmp ne i32 %0, 1
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/pg_publication.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000030(i32 %0, i8 %1) #0 {
+define i64 @func0000000000000050(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 112
   %3 = icmp ugt i32 %0, 16383

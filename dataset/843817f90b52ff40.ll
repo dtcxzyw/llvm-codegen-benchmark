@@ -1,6 +1,8 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; snappy/optimized/snappy.cc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i1 %0, i64 %1, i32 %2) #0 {
 entry:

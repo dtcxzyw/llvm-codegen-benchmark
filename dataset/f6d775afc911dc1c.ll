@@ -3,7 +3,7 @@
 ; cpython/optimized/posixmodule.ll
 ; ruby/optimized/dir.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000382(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000b02(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 47
   %3 = icmp ne i32 %1, 0
@@ -19,7 +19,7 @@ entry:
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000894(i8 %0, i32 %1) #0 {
+define i1 @func0000000000002114(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 10
   %3 = icmp ult i8 %0, 64
@@ -40,7 +40,7 @@ entry:
 ; postgres/optimized/storage.ll
 ; wireshark/optimized/packet-cops.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000842(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 92
   %3 = icmp eq i32 %1, 0
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Path.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000302(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000a02(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 92
   %3 = icmp ugt i32 %1, 1

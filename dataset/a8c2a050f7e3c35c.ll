@@ -33,7 +33,7 @@ entry:
 define i8 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 19
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = trunc i64 %3 to i8
   ret i8 %4
 }
@@ -50,7 +50,7 @@ entry:
 define i8 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = trunc nuw i64 %3 to i8
   ret i8 %4
 }

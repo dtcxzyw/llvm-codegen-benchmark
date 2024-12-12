@@ -9,14 +9,14 @@ func0000000000000001:                   # @func0000000000000001
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	sltiu	a1, a1, 513
 	li	a2, -56
 	czero.nez	a1, a2, a1
 	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	sltiu	a1, a1, 3
 	li	a2, 16
 	czero.eqz	a1, a2, a1

@@ -1,7 +1,5 @@
 
-%class.btVector3.2705573 = type { [4 x float] }
-
-; 50 occurrences:
+; 51 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
 ; bullet3/optimized/btGImpactCollisionAlgorithm.ll
@@ -14,6 +12,7 @@
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
 ; nuklear/optimized/unity.c.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
 ; taskflow/optimized/cancel.cpp.ll
@@ -53,12 +52,14 @@
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 2, i64 %2
-  %4 = getelementptr nusw i8, ptr %0, i64 80
-  %5 = getelementptr [3 x %class.btVector3.2705573], ptr %4, i64 0, i64 %3, i32 0, i64 2
-  ret ptr %5
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 80
+  %4 = shl nuw i64 %2, 4
+  %5 = or disjoint i64 %4, 8
+  %.offs = select i1 %1, i64 40, i64 %5
+  %6 = getelementptr nuw i8, ptr %3, i64 %.offs
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

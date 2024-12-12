@@ -1,8 +1,9 @@
 
-; 67 occurrences:
+; 70 occurrences:
 ; actix-rs/optimized/27zn2x05lna4a2z7.ll
 ; arrow/optimized/UriFile.c.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/obmalloc.ll
@@ -67,6 +68,8 @@
 ; yosys/optimized/opt_expr.ll
 ; z3/optimized/nlsat_interval_set.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

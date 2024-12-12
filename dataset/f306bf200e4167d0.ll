@@ -47,7 +47,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; gromacs/optimized/correlationhistory.cpp.ll
@@ -57,6 +57,8 @@ entry:
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; quantlib/optimized/fdm3dimsolver.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

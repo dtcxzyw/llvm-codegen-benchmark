@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/bytearrayobject.ll
 ; folly/optimized/MemoryIdler.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
-; icu/optimized/uconv.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {

@@ -4,7 +4,7 @@ func0000000000000020:                   # @func0000000000000020
 	cltq
 	leaq	-8(%rdi,%rax,8), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	movl	$8, %eax
 	shlxl	%esi, %eax, %eax
 	cltq

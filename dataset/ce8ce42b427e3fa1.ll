@@ -3,10 +3,10 @@
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; proxygen/optimized/HPACKDecodeBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -29,10 +29,10 @@ entry:
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
@@ -40,10 +40,10 @@ entry:
 ; 1 occurrences:
 ; flatbuffers/optimized/flatc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -54,7 +54,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -66,7 +66,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -75,10 +75,10 @@ entry:
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/typedesc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
@@ -86,10 +86,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -97,10 +97,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -111,7 +111,7 @@ entry:
 define i1 @func0000000000000009(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = icmp uge i64 %4, %0
   ret i1 %5
 }

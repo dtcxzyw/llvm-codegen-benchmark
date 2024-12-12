@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; icu/optimized/ucnv_err.ll
 ; lief/optimized/psa_crypto.c.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -12,12 +12,11 @@
 ; quantlib/optimized/austria.ll
 ; quantlib/optimized/finland.ll
 ; quantlib/optimized/france.ll
-; recastnavigation/optimized/Tests_RecastFilter.cpp.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; z3/optimized/arith_internalize.cpp.ll
 ; z3/optimized/theory_array_base.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001082(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 24
   %3 = icmp eq i32 %0, 31
@@ -40,7 +39,7 @@ entry:
 ; llvm/optimized/TypeLocBuilder.cpp.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001042(i32 %0, i32 %1) #0 {
+define i1 @func0000000000004082(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 37
   %3 = icmp eq i32 %0, 431
@@ -50,25 +49,10 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; linux/optimized/tg3.ll
-; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
-; wireshark/optimized/tap-sctp-analysis.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000502(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 64
-  %3 = icmp ult i32 %0, 17
-  %4 = or i1 %3, %2
-  %5 = icmp eq i32 %0, 193
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001050(i32 %0, i32 %1) #0 {
+define i1 @func0000000000004090(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 6400
   %3 = icmp eq i32 %0, 127
@@ -78,10 +62,24 @@ entry:
   ret i1 %6
 }
 
+; 2 occurrences:
+; linux/optimized/tg3.ll
+; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001202(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 28672
+  %3 = icmp ult i32 %0, 4096
+  %4 = or i1 %3, %2
+  %5 = icmp eq i32 %0, 12288
+  %6 = or i1 %5, %4
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; z3/optimized/theory_array_base.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001084(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 4
   %3 = icmp eq i32 %1, 0
@@ -94,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/uniset_props.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001102(i32 %0, i32 %1) #0 {
+define i1 @func0000000000004202(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 25
   %3 = icmp ult i32 %0, 75
@@ -107,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/lexer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001054(i32 %0, i32 %1) #0 {
+define i1 @func0000000000004094(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 26
   %3 = icmp eq i32 %0, 95

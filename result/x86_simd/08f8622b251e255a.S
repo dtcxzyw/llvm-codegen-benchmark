@@ -35,7 +35,7 @@
 .LCPI0_2:
 	.short	65534                           # 0xfffe
 	.short	65534                           # 0xfffe
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpsllw	$8, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI0_2(%rip){1to8}, %ymm0, %ymm1 # ymm1 = ymm1 | (ymm0 & mem)
 	vpcmpeqw	.LCPI0_1(%rip), %ymm1, %k0

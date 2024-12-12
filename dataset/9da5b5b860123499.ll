@@ -41,9 +41,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

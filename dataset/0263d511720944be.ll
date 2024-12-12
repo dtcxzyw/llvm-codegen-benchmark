@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_bar.ll
 ; minetest/optimized/thread.cpp.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openjdk/optimized/img_globals.ll

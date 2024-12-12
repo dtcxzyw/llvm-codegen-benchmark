@@ -18,19 +18,21 @@ define i64 @func000000000000003f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or disjoint i64 %5, %0
   %7 = mul nuw nsw i64 %6, 1000000
   ret i64 %7
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
@@ -49,8 +51,8 @@ define i64 @func0000000000000038(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 40
-  %5 = or disjoint i64 %4, %1
-  %6 = or i64 %5, %0
+  %5 = or disjoint i64 %1, %4
+  %6 = or i64 %0, %5
   %7 = mul i64 %6, 8503243848024064
   ret i64 %7
 }
@@ -62,7 +64,7 @@ define i64 @func000000000000003d(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or disjoint i64 %5, %0
   %7 = mul nsw i64 %6, -7
   ret i64 %7

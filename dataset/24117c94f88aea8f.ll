@@ -1,13 +1,14 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/buildOopMap.ll
+; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 5
   %4 = sext i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = getelementptr i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   %7 = getelementptr nusw i32, ptr %6, i64 %4
   ret ptr %7
 }
@@ -17,12 +18,12 @@ entry:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 5
   %4 = sext i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   %7 = getelementptr nusw i32, ptr %6, i64 %4
   ret ptr %7
 }
@@ -38,19 +39,6 @@ entry:
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr i32, ptr %0, i64 %5
   %7 = getelementptr i64, ptr %6, i64 %4
-  ret ptr %7
-}
-
-; 1 occurrences:
-; soc-simulator/optimized/verilated.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = ashr i32 %2, 5
-  %4 = sext i32 %3 to i64
-  %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
-  %7 = getelementptr nusw i32, ptr %6, i64 %4
   ret ptr %7
 }
 

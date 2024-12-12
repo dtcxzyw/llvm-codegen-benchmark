@@ -10,8 +10,8 @@
 define i1 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = and i32 %5, 31
   %7 = icmp eq i32 %6, 0
   ret i1 %7
@@ -20,10 +20,10 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = and i32 %5, 3
   %7 = icmp eq i32 %6, 0
@@ -34,10 +34,10 @@ entry:
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/slamch.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = and i32 %5, -2147483647
   %7 = icmp eq i32 %6, 1

@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 20 occurrences:
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; regex-rs/optimized/11vfjke4utuj478u.ll
@@ -17,6 +17,9 @@
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/d1la7tbj4bxfzuf7lklrygwfp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0) #0 {
 entry:

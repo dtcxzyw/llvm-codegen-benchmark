@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_blurs.c.ll
@@ -55,6 +55,7 @@
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

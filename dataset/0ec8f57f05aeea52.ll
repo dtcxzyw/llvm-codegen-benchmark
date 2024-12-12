@@ -26,7 +26,7 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -35,6 +35,7 @@ entry:
 ; lua/optimized/ldblib.ll
 ; luajit/optimized/lib_debug.ll
 ; luajit/optimized/lib_debug_dyn.ll
+; lvgl/optimized/lv_arc.ll
 ; opencv/optimized/torch_importer.cpp.ll
 ; redis/optimized/ldblib.ll
 ; ruby/optimized/process.ll
@@ -47,19 +48,13 @@ entry:
   ret i32 %5
 }
 
-; 12 occurrences:
+; 6 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
 ; icu/optimized/collationkeys.ll
 ; linux/optimized/cpu_entry_area.ll
-; linux/optimized/fhandle.ll
-; linux/optimized/fsopen.ll
-; linux/optimized/ich8lan.ll
-; linux/optimized/open.ll
 ; llvm/optimized/OptTable.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
-; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -96,6 +91,21 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 0
+  %5 = select i1 %4, i32 %0, i32 %1
+  ret i32 %5
+}
+
+; 5 occurrences:
+; linux/optimized/fhandle.ll
+; linux/optimized/fsopen.ll
+; linux/optimized/ich8lan.ll
+; linux/optimized/open.ll
+; wireshark/optimized/packet-nvme.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = icmp samesign ult i32 %3, 161
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }

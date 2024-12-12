@@ -1,11 +1,10 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
 ; graphviz/optimized/shapes.c.ll
 ; libpng/optimized/pngread.c.ll
 ; lief/optimized/nist_kw.c.ll
-; linux/optimized/i915_driver.ll
 ; openjdk/optimized/pngread.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {

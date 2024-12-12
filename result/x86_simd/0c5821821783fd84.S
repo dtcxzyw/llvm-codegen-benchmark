@@ -3,7 +3,7 @@
 func0000000000000009:                   # @func0000000000000009
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpsrld	$31, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 .LCPI1_0:
@@ -11,14 +11,14 @@ func0000000000000009:                   # @func0000000000000009
 func0000000000000018:                   # @func0000000000000018
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpsrld	$6, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 func000000000000001d:                   # @func000000000000001d
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpsrld	$4, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 .LCPI3_0:
@@ -40,13 +40,13 @@ func000000000000000c:                   # @func000000000000000c
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrld	$1, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 func000000000000001c:                   # @func000000000000001c
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpsrld	$1, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq

@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 91 occurrences:
 ; box2d/optimized/b2_time_of_impact.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3ConvexUtility.ll
@@ -33,7 +33,6 @@
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_lowlight.c.ll
-; darktable/optimized/introspection_soften.c.ll
 ; darktable/optimized/introspection_splittoning.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll

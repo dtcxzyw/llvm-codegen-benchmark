@@ -40,20 +40,19 @@
 ; tev/optimized/main.cpp.ll
 ; yosys/optimized/anlogic_eqn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, double %1) #0 {
+define i1 @func0000000000000021(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/import.c.ll
 ; darktable/optimized/masks.c.ll
 ; graphviz/optimized/partition.c.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
-; openblas/optimized/dggbak.c.ll
 ; opencv/optimized/ocr_hmm_decoder.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; opencv/optimized/undistort.dispatch.cpp.ll
@@ -62,7 +61,7 @@ define i1 @func0000000000000001(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -70,22 +69,11 @@ entry:
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; openspiel/optimized/bargaining.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, double %1) #0 {
+define i1 @func0000000000000028(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; openmpi/optimized/common_ompio_file_read.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, double %1) #0 {
-entry:
-  %2 = fptosi double %1 to i32
-  %3 = zext nneg i32 %2 to i64
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 

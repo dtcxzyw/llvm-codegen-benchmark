@@ -17,6 +17,20 @@ func000000000000007f:                   # @func000000000000007f
 	addiw	a1, a2, 576
 	mul	a0, a0, a1
 	ret
+func0000000000000040:                   # @func0000000000000040
+	sext.w	a1, a1
+	li	a2, 10
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	mul	a0, a0, a2
+	ret
+func0000000000000062:                   # @func0000000000000062
+	sext.w	a1, a1
+	li	a2, 10
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	mul	a0, a0, a2
+	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a1, a1, 32
 	li	a2, 37
@@ -43,13 +57,6 @@ func000000000000003c:                   # @func000000000000003c
 	mul	a0, a0, a2
 	ret
 func0000000000000054:                   # @func0000000000000054
-	sext.w	a1, a1
-	li	a2, 10
-	mul	a0, a0, a2
-	add	a0, a0, a1
-	mul	a0, a0, a2
-	ret
-func0000000000000040:                   # @func0000000000000040
 	sext.w	a1, a1
 	li	a2, 10
 	mul	a0, a0, a2

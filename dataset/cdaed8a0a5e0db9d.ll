@@ -1,5 +1,5 @@
 
-; 481 occurrences:
+; 490 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/HMPLoader.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
@@ -99,6 +99,7 @@
 ; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_gamma.c.ll
 ; darktable/optimized/introspection_globaltonemap.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; darktable/optimized/introspection_grain.c.ll
@@ -227,6 +228,7 @@
 ; libjpeg-turbo/optimized/jidctflt.c.ll
 ; libquic/optimized/cubic_bytes.cc.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -242,7 +244,6 @@
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -336,6 +337,11 @@
 ; ncnn/optimized/priorbox.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
 ; ncnn/optimized/yolodetectionoutput.cpp.ll
+; ncnn/optimized/yolov3detectionoutput.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; nori/optimized/button.cpp.ll
 ; nori/optimized/colorwheel.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -481,6 +487,9 @@
 ; velox/optimized/MemoryArbitrator.cpp.ll
 ; velox/optimized/SpillStats.cpp.ll
 ; xgboost/optimized/multiclass_obj.cc.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

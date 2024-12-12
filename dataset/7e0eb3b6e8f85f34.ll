@@ -1,10 +1,11 @@
 
-; 410 occurrences:
+; 412 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; clamav/optimized/is_tar.c.ll
 ; clamav/optimized/list.cpp.ll
 ; clamav/optimized/message.c.ll
+; clamav/optimized/pe_icons.c.ll
 ; cvc5/optimized/abduction_solver.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -160,7 +161,6 @@
 ; cvc5/optimized/node_converter.cpp.ll
 ; cvc5/optimized/node_manager.cpp.ll
 ; cvc5/optimized/node_traversal.cpp.ll
-; cvc5/optimized/node_utils.cpp.ll
 ; cvc5/optimized/node_value.cpp.ll
 ; cvc5/optimized/non_clausal_simp.cpp.ll
 ; cvc5/optimized/normal_form.cpp.ll
@@ -367,7 +367,6 @@
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
 ; grpc/optimized/subchannel.cc.ll
 ; grpc/optimized/subchannel_stream_client.cc.ll
-; hdf5/optimized/H5dbg.c.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; jq/optimized/execute.ll
 ; linux/optimized/e1000_hw.ll
@@ -390,6 +389,7 @@
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
+; lvgl/optimized/lv_switch.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; php/optimized/is_tar.ll
@@ -410,6 +410,8 @@
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet_list.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
@@ -423,10 +425,22 @@ entry:
 ; cpython/optimized/ceval.ll
 ; meshoptimizer/optimized/quantization.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 31744
   %3 = icmp eq i16 %2, 0
+  %4 = select i1 %3, i32 0, i32 %0
+  ret i32 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_image.ll
+; wireshark/optimized/packet-e164.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 3840
+  %3 = icmp samesign ugt i16 %2, 2560
   %4 = select i1 %3, i32 0, i32 %0
   ret i32 %4
 }
@@ -440,17 +454,6 @@ entry:
   %.not = icmp eq i16 %2, 0
   %3 = select i1 %.not, i32 %0, i32 524288
   ret i32 %3
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-e164.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 14
-  %3 = icmp ugt i16 %2, 9
-  %4 = select i1 %3, i32 0, i32 %0
-  ret i32 %4
 }
 
 attributes #0 = { nounwind }

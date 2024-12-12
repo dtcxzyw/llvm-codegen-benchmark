@@ -51,12 +51,3 @@ func0000000000000007:                   # @func0000000000000007
 	or	a0, a0, a1
 	addi	a0, a0, 1
 	ret
-func0000000000000006:                   # @func0000000000000006
-	slli	a1, a1, 60
-	andi	a0, a0, 63
-	srli	a1, a1, 54
-	or	a0, a0, a1
-	lui	a1, 14
-	addiw	a1, a1, -1024
-	or	a0, a0, a1
-	ret

@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 37 occurrences:
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -34,17 +34,21 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wolfssl/optimized/tls.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/d1la7tbj4bxfzuf7lklrygwfp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 64
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/cstring_ref.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; hyperscan/optimized/gtest-all.cc.ll
 ; icu/optimized/double-conversion-string-to-double.ll
@@ -57,7 +61,7 @@ entry:
 define i8 @func0000000000000030(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -69,7 +73,7 @@ entry:
 define i8 @func0000000000000010(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

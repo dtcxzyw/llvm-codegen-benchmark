@@ -23,11 +23,9 @@ entry:
   ret i32 %3
 }
 
-; 18 occurrences:
+; 16 occurrences:
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; arrow/optimized/float16.cc.ll
-; cpython/optimized/ceval.ll
 ; icu/optimized/edits.ll
 ; icu/optimized/uset.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll

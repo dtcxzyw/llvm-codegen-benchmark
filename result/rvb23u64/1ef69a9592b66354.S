@@ -38,12 +38,12 @@ func0000000000000010:                   # @func0000000000000010
 	sub	a0, a1, a0
 	slli	a0, a0, 2
 	ret
-func0000000000000014:                   # @func0000000000000014
-	sext.w	a1, a1
-	sub	a0, a1, a0
-	slli	a0, a0, 2
-	ret
 func000000000000000e:                   # @func000000000000000e
 	subw	a0, a1, a0
 	slli	a0, a0, 32
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a1, a1
+	sub	a0, a1, a0
+	slli	a0, a0, 3
 	ret

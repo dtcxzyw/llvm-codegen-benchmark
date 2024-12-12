@@ -6,7 +6,7 @@
 define i16 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = select i1 %3, i16 0, i16 256
   ret i16 %4
 }
@@ -16,7 +16,7 @@ entry:
 ; luajit/optimized/lj_ffrecord.ll
 ; luajit/optimized/lj_ffrecord_dyn.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i16 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = icmp slt i32 %2, 0

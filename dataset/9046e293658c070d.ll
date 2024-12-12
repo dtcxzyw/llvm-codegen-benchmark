@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 42 occurrences:
 ; hyperscan/optimized/fdr_engine_description.cpp.ll
 ; linux/optimized/blk-mq-tag.ll
 ; linux/optimized/blk-mq.ll
@@ -20,7 +20,6 @@
 ; llvm/optimized/InlineCost.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MachineTraceMetrics.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
@@ -43,7 +42,6 @@
 ; slurm/optimized/srun_job.ll
 ; slurm/optimized/step_mgr.ll
 ; verilator/optimized/V3Trace.cpp.ll
-; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

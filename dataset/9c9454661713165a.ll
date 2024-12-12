@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000010a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc i64 %2 to i32

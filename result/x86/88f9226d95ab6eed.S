@@ -36,6 +36,13 @@ func000000000000001b:                   # @func000000000000001b
 func0000000000000011:                   # @func0000000000000011
 	leaq	3(%rdi,%rdi), %rax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	shlq	$6, %rdi
+	leaq	-56(%rdi), %rax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	leaq	-2(,%rdi,4), %rax
+	retq
+func0000000000000019:                   # @func0000000000000019
+	leaq	6(,%rdi,4), %rax
 	retq

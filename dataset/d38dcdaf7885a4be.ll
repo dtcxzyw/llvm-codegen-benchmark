@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 107 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -24,7 +24,6 @@
 ; git/optimized/column.ll
 ; git/optimized/ewah_bitmap.ll
 ; graphviz/optimized/mincross.c.ll
-; hermes/optimized/Interpreter.cpp.ll
 ; icu/optimized/escapesrc.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libwebp/optimized/frame_enc.c.ll
@@ -48,7 +47,6 @@
 ; mold/optimized/arch-m68k.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
-; oiio/optimized/pnminput.cpp.ll
 ; opencv/optimized/attention_layer.cpp.ll
 ; openexr/optimized/context.c.ll
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_MidiUtils.ll
@@ -63,13 +61,10 @@
 ; openmpi/optimized/coll_base_gather.ll
 ; openspiel/optimized/blotto.cc.ll
 ; openssl/optimized/cmactest-bin-cmactest.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
-; openssl/optimized/siphash_internal_test-bin-siphash_internal_test.ll
 ; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
 ; php/optimized/fastcgi.ll
 ; php/optimized/interval.ll
@@ -109,7 +104,9 @@
 ; wireshark/optimized/byte_view_text.cpp.ll
 ; wireshark/optimized/k12text.c.ll
 ; wireshark/optimized/packet-nbt.c.ll
+; wireshark/optimized/packet_list.cpp.ll
 ; wireshark/optimized/proto.c.ll
+; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
@@ -118,7 +115,7 @@ entry:
   ret i64 %3
 }
 
-; 657 occurrences:
+; 659 occurrences:
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -161,6 +158,10 @@ entry:
 ; arrow/optimized/vector_hash.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -283,7 +284,6 @@ entry:
 ; faiss/optimized/index_factory.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/lpc.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -350,7 +350,6 @@ entry:
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
-; libquic/optimized/cmp.c.ll
 ; libquic/optimized/file_util_posix.cc.ll
 ; libquic/optimized/prtime.cc.ll
 ; libquic/optimized/rand_util.cc.ll
@@ -387,6 +386,7 @@ entry:
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -502,9 +502,7 @@ entry:
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
@@ -571,6 +569,7 @@ entry:
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/pnminput.cpp.ll
 ; oiio/optimized/targainput.cpp.ll
 ; oniguruma/optimized/regexec.ll
 ; openblas/optimized/dgbbrd.c.ll
@@ -765,11 +764,11 @@ entry:
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/opt_share.ll
 ; yosys/optimized/qbfsat.ll
 ; z3/optimized/mpff.cpp.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
@@ -784,7 +783,7 @@ entry:
   ret i64 %3
 }
 
-; 732 occurrences:
+; 730 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -796,6 +795,7 @@ entry:
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
+; boost/optimized/boundary.ll
 ; casadi/optimized/csparse_cholesky_interface.cpp.ll
 ; casadi/optimized/csparse_interface.cpp.ll
 ; casadi/optimized/nlp_builder.cpp.ll
@@ -824,7 +824,6 @@ entry:
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
-; draco/optimized/symbol_encoding.cc.ll
 ; draco/optimized/triangle_soup_mesh_builder.cc.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
@@ -999,7 +998,6 @@ entry:
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -1386,7 +1384,6 @@ entry:
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -1525,10 +1522,11 @@ entry:
   ret i64 %3
 }
 
-; 73 occurrences:
+; 74 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/reader.cc.ll
+; boost/optimized/conversion.ll
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/cmProcess.cxx.ll
 ; darktable/optimized/introspection_invert.c.ll

@@ -1,9 +1,3 @@
-func000000000000001d:                   # @func000000000000001d
-	andi	a0, a0, 255
-	addi	a0, a0, -14
-	li	a1, -1
-	sll	a0, a1, a0
-	ret
 func000000000000001e:                   # @func000000000000001e
 	andi	a0, a0, 255
 	bset	a0, zero, a0

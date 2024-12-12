@@ -1,5 +1,5 @@
 
-; 112 occurrences:
+; 115 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
@@ -31,6 +31,7 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -112,6 +113,8 @@
 ; raylib/optimized/raudio.c.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; wireshark/optimized/packet-ansi_801.c.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

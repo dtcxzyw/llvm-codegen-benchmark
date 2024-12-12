@@ -1,14 +1,9 @@
-func00000000000001d1:                   // @func00000000000001d1
+func00000000000003a1:                   // @func00000000000003a1
 // %bb.0:                               // %entry
-	mov	w8, #-1023                      // =0xfffffc01
-	uzp2	v2.4s, v0.4s, v1.4s
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	dup	v3.4s, w8
+	lsr	x9, x0, #52
 	mov	w8, #-1022                      // =0xfffffc02
-	uzp1	v0.4s, v0.4s, v1.4s
-	usra	v3.4s, v2.4s, #20
-	dup	v1.4s, w8
-	bsl	v0.16b, v1.16b, v3.16b
+	cmp	x0, #0
+	sub	w9, w9, #1023
+	csel	w0, w8, w9, eq
 	ret
                                         // -- End function

@@ -28,6 +28,24 @@ func0000000000000008:                   # @func0000000000000008
 	setbe	%al
 	leaq	16(,%rax,8), %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	seta	%al
+	leaq	16(,%rax,8), %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	setb	%al
+	leaq	2(,%rax,8), %rax
+	retq
+func000000000000000b:                   # @func000000000000000b
+	cmpq	%rsi, %rdi
+	movl	$8, %ecx
+	movl	$48, %eax
+	cmovlq	%rcx, %rax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	movabsq	$-7046029254386353131, %rcx     # imm = 0x9E3779B97F4A7C15
 	leaq	1(%rcx), %rax

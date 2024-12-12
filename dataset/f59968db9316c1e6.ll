@@ -26,7 +26,7 @@ entry:
   ret i32 %3
 }
 
-; 99 occurrences:
+; 98 occurrences:
 ; abc/optimized/abcMerge.c.ll
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -70,7 +70,6 @@ entry:
 ; linux/optimized/bitset.ll
 ; linux/optimized/e1000_ethtool.ll
 ; linux/optimized/ethtool.ll
-; linux/optimized/hda_hwdep.ll
 ; linux/optimized/hw-me.ll
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/isoch.ll
@@ -80,16 +79,16 @@ entry:
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_scale.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/guiEngine.cpp.ll
 ; minetest/optimized/guiPathSelectMenu.cpp.ll
 ; minetest/optimized/renderingengine.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/strutil.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
+; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/c1_FrameMap.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll

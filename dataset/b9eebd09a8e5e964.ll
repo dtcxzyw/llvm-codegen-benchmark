@@ -45,17 +45,17 @@ entry:
 ; gromacs/optimized/kernel_ElecRF_VdwLJCombLB_VgrpF.cpp.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
   %4 = or disjoint i32 %3, 4
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw float, ptr %1, i64 %5
-  %7 = getelementptr nusw float, ptr %6, i64 %0
+  %7 = getelementptr nusw nuw float, ptr %6, i64 %0
   ret ptr %7
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
@@ -65,6 +65,7 @@ entry:
 ; openblas/optimized/dgelsy.c.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlar1v.c.ll
+; opencv/optimized/cornersubpix.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
 entry:

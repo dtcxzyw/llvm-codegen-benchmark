@@ -1,30 +1,30 @@
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	addl	$2, %edx
-	cmpl	%esi, %edx
-	setbe	%cl
+	cmpl	%edx, %esi
+	setae	%cl
 	testw	%di, %di
 	sets	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	addl	$4, %edx
-	cmpl	%esi, %edx
-	seta	%cl
+	cmpl	%edx, %esi
+	setb	%cl
 	testw	%di, %di
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000016c:                   # @func000000000000016c
+func00000000000004cc:                   # @func00000000000004cc
 	addl	$-2, %edx
-	cmpl	%esi, %edx
-	setg	%cl
+	cmpl	%edx, %esi
+	setl	%cl
 	testw	%di, %di
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	incl	%edx
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	sete	%cl
 	testw	%di, %di
 	setne	%al

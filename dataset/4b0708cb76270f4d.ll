@@ -29,7 +29,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/collate.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/ossl_asn1.ll
 ; ruby/optimized/process.ll

@@ -5,7 +5,7 @@
 ; php/optimized/zend_inference.ll
 ; wireshark/optimized/packet-mikey.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1174405120
   %3 = icmp eq i8 %0, 12
@@ -28,7 +28,7 @@ entry:
 ; icu/optimized/ucnv2022.ll
 ; linux/optimized/intel_fbc.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i8 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i8 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 536870912
   %3 = icmp sgt i8 %0, -1

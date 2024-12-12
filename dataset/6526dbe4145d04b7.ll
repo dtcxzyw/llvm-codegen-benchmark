@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -9,7 +9,6 @@
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; openspiel/optimized/negotiation.cc.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
-; redis/optimized/script.ll
 ; spike/optimized/s_subMagsF16.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {

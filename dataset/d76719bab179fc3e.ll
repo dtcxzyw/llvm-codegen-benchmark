@@ -7,37 +7,24 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 63
   %4 = zext nneg i16 %3 to i32
-  %5 = icmp eq i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp eq i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/nlattr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 16383
   %4 = zext nneg i16 %3 to i32
-  %5 = icmp sgt i32 %4, %1
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; linux/optimized/nlattr.ll
-; linux/optimized/xt_TCPMSS.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = and i16 %2, 16383
-  %4 = zext nneg i16 %3 to i32
-  %5 = icmp ugt i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp slt i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

@@ -1,4 +1,4 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v11, v11, v11
 	vwadd.wv	v8, v8, v11
@@ -6,7 +6,7 @@ func0000000000000056:                   # @func0000000000000056
 	vsext.vf2	v12, v10
 	vmslt.vv	v0, v8, v12
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v11, v11, v11
 	vwadd.wv	v8, v8, v11
@@ -14,7 +14,7 @@ func0000000000000016:                   # @func0000000000000016
 	vsext.vf2	v12, v10
 	vmslt.vv	v0, v8, v12
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v11, v11, 6
 	vwadd.wv	v8, v8, v11
@@ -22,7 +22,7 @@ func0000000000000036:                   # @func0000000000000036
 	vsext.vf2	v12, v10
 	vmslt.vv	v0, v8, v12
 	ret
-func000000000000007c:                   # @func000000000000007c
+func00000000000000ec:                   # @func00000000000000ec
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v11, v11, 3
 	vwadd.wv	v8, v8, v11
@@ -30,7 +30,7 @@ func000000000000007c:                   # @func000000000000007c
 	vsext.vf2	v12, v10
 	vmsne.vv	v0, v8, v12
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v11, v11, v11
 	vwadd.wv	v8, v8, v11

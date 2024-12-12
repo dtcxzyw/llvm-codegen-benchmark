@@ -39,26 +39,14 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; php/optimized/streams.ll
+; 1 occurrences:
 ; rayon-rs/optimized/1j5m2t9gtbur4l2z.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, 8192
-  %5 = select i1 %0, i64 %4, i64 8192
-  ret i64 %5
-}
-
-; 1 occurrences:
-; clamav/optimized/readdb.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
   %4 = add nuw nsw i64 %3, 1
-  %5 = select i1 %0, i64 %4, i64 33
+  %5 = select i1 %0, i64 %4, i64 1
   ret i64 %5
 }
 

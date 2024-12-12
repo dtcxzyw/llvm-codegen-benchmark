@@ -19,6 +19,7 @@ entry:
 ; 24 occurrences:
 ; arrow/optimized/io_util.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/obmalloc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libsodium/optimized/libsodium_la-utils.ll
@@ -38,7 +39,6 @@ entry:
 ; openjdk/optimized/os_linux.ll
 ; openjdk/optimized/shenandoahCollectionSet.ll
 ; openjdk/optimized/virtualspace.ll
-; php/optimized/phpdbg_sigsafe.ll
 ; php/optimized/phpdbg_watch.ll
 ; qemu/optimized/hw_virtio_virtio-balloon.c.ll
 ; Function Attrs: nounwind

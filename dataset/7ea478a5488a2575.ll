@@ -7,7 +7,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 2
   %5 = ashr i32 %4, 31
-  %6 = add i32 %5, %1
+  %6 = add i32 %1, %5
   %7 = add i32 %6, %0
   ret i32 %7
 }
@@ -21,7 +21,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 16
   %5 = ashr i32 %4, 24
-  %6 = add nsw i32 %5, %1
+  %6 = add nsw i32 %1, %5
   %7 = add i32 %6, %0
   ret i32 %7
 }

@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; linux/optimized/xhci-ring.ll
 ; quickjs/optimized/libunicode.ll
 ; re2/optimized/regexp.cc.ll
 ; recastnavigation/optimized/DetourCommon.cpp.ll
@@ -52,6 +53,20 @@ define i64 @func000000000000001f(i32 %0) #0 {
 entry:
   %1 = mul nuw i32 %0, 12
   %2 = add nuw i32 %1, 12
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
+}
+
+; 4 occurrences:
+; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
+; libwebp/optimized/syntax_enc.c.ll
+; linux/optimized/intel_dmc.ll
+; linux/optimized/pcm_lib.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i32 %0) #0 {
+entry:
+  %1 = mul i32 %0, 88
+  %2 = add i32 %1, -264
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
@@ -111,17 +126,6 @@ entry:
   %1 = mul i32 %0, 3
   %2 = add i32 %1, -3
   %3 = zext i32 %2 to i64
-  ret i64 %3
-}
-
-; 1 occurrences:
-; libwebp/optimized/syntax_enc.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i32 %0) #0 {
-entry:
-  %1 = mul i32 %0, 3
-  %2 = add i32 %1, -3
-  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 

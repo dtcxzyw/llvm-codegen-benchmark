@@ -3,11 +3,23 @@
 ; jq/optimized/regcomp.ll
 ; oniguruma/optimized/regcomp.ll
 ; Function Attrs: nounwind
+define i1 @func0000000000000032(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = udiv i32 -1, %2
+  %4 = icmp samesign uge i32 %1, %3
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; jq/optimized/regcomp.ll
+; oniguruma/optimized/regcomp.ll
+; Function Attrs: nounwind
 define i1 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 -1, %2
-  %4 = icmp ule i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp uge i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -24,7 +36,7 @@ entry:
 define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 2147483647, %2
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -36,8 +48,8 @@ entry:
 define i1 @func000000000000000e(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 -49, %2
-  %4 = icmp sge i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sle i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -48,8 +60,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 -49, %2
-  %4 = icmp uge i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ule i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

@@ -12,12 +12,11 @@ entry:
   ret i32 %7
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; icu/optimized/utf_impl.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/mesh.cpp.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; wireshark/optimized/packet-cipmotion.c.ll
 ; wireshark/optimized/packet-cpfi.c.ll
 ; Function Attrs: nounwind

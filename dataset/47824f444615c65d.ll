@@ -12,7 +12,8 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; postgres/optimized/float.ll
 ; wireshark/optimized/packet_list_header.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, double %2) #0 {

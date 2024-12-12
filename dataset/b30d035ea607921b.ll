@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; cpython/optimized/mathmodule.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
@@ -15,15 +15,12 @@
 ; libquic/optimized/t1_lib.c.ll
 ; linux/optimized/acpi_lpit.ll
 ; linux/optimized/cipso_ipv4.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/fib_trie.ll
 ; miniaudio/optimized/unity.c.ll
 ; nori/optimized/layout.cpp.ll
 ; openjdk/optimized/Index12Gray.ll
 ; openjdk/optimized/Index8Gray.ll
 ; php/optimized/ir.ll
-; php/optimized/pcre2_compile.ll
-; php/optimized/pcre2_pattern_info.ll
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg.c.ll
@@ -33,6 +30,8 @@
 ; stockfish/optimized/tbprobe.ll
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:

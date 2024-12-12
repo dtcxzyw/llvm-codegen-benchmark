@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, double %1) #0 {
+define i1 @func000000000000002a(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = icmp sgt i64 %2, -1
@@ -11,8 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 82 occurrences:
-; abc/optimized/epd.c.ll
+; 79 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -33,8 +32,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -95,11 +92,11 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, double %1) #0 {
+define i1 @func0000000000000028(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
-  %3 = icmp ugt i64 %2, -4503599627370497
-  %4 = icmp eq i64 %0, 2251799813685248
+  %3 = icmp ugt i64 %2, 9007199254740991
+  %4 = icmp eq i64 %0, 0
   %5 = and i1 %3, %4
   ret i1 %5
 }

@@ -1,17 +1,3 @@
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
-	sub	x8, x2, x1
-	sub	x8, x0, x8, lsr #2
-	lsl	x0, x8, #2
-	ret
-                                        // -- End function
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
-	sub	x8, x2, x1
-	sub	x8, x0, x8, lsr #2
-	lsl	x0, x8, #2
-	ret
-                                        // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
@@ -26,11 +12,25 @@ func000000000000001f:                   // @func000000000000001f
 	lsl	x0, x8, #2
 	ret
                                         // -- End function
+func000000000000001a:                   // @func000000000000001a
+// %bb.0:                               // %entry
+	sub	x8, x2, x1
+	sub	x8, x0, x8, lsr #4
+	lsl	x0, x8, #4
+	ret
+                                        // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	sub	x8, x0, x8, lsr #4
 	lsl	x0, x8, #4
+	ret
+                                        // -- End function
+func0000000000000018:                   // @func0000000000000018
+// %bb.0:                               // %entry
+	sub	x8, x2, x1
+	sub	x8, x0, x8, lsr #3
+	lsl	x0, x8, #3
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010

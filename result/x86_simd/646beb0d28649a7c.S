@@ -21,7 +21,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	8                               # 0x8
 .LCPI2_2:
 	.long	4294967279                      # 0xffffffef
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vorps	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vorps	.LCPI2_1(%rip){1to8}, %ymm1, %ymm1 {%k1}
@@ -29,7 +29,7 @@ func0000000000000031:                   # @func0000000000000031
 	retq
 .LCPI3_0:
 	.long	1048448                         # 0xfff80
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vmovdqa	%ymm1, %ymm0
 	vpternlogd	$168, .LCPI3_0(%rip){1to8}, %ymm2, %ymm0 # ymm0 = mem & (ymm0 | ymm2)
 	retq

@@ -8,7 +8,7 @@ define i16 @func000000000000001e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = and i32 %2, 63488
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc nuw i32 %4 to i16
   ret i16 %5
 }
@@ -21,7 +21,7 @@ define i16 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = and i32 %2, 63488
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nuw i32 %4 to i16
   ret i16 %5
 }
@@ -41,7 +41,7 @@ define i16 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 7
   %3 = and i32 %2, 31744
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }
@@ -53,7 +53,7 @@ entry:
 define i16 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -103,6 +103,17 @@ entry:
   %4 = or disjoint i32 %3, %0
   %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000006(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 8
+  %3 = or i32 %2, %0
+  %4 = trunc i32 %3 to i16
+  ret i16 %4
 }
 
 attributes #0 = { nounwind }

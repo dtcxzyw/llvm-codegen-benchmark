@@ -5,7 +5,7 @@
 define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = getelementptr nusw ptr, ptr %1, i64 %4
   %6 = getelementptr nusw ptr, ptr %5, i64 %0
   ret ptr %6
@@ -16,12 +16,12 @@ entry:
 ; graphviz/optimized/smart_ini_x.c.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = getelementptr nusw i32, ptr %5, i64 %0
+  %4 = mul nuw nsw i64 %0, %3
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -33,7 +33,7 @@ entry:
 define ptr @func0000000000000070(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   %5 = getelementptr double, ptr %1, i64 %4
   %6 = getelementptr double, ptr %5, i64 %0
   ret ptr %6
@@ -45,7 +45,7 @@ entry:
 define ptr @func0000000000000050(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   %5 = getelementptr float, ptr %1, i64 %4
   %6 = getelementptr float, ptr %5, i64 %0
   ret ptr %6

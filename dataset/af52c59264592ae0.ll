@@ -3,7 +3,7 @@
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, ptr %1, ptr %2) #0 {
+define i32 @func0000000000000042(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq i32 %0, 2

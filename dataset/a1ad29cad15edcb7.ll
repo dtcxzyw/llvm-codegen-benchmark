@@ -1,6 +1,23 @@
 
-%"struct.std::atomic.217.2869635" = type { %"struct.std::__atomic_base.218.2869636" }
-%"struct.std::__atomic_base.218.2869636" = type { ptr }
+%"struct.std::atomic.217.3063212" = type { %"struct.std::__atomic_base.218.3063213" }
+%"struct.std::__atomic_base.218.3063213" = type { ptr }
+
+; 6 occurrences:
+; luau/optimized/ConstraintGenerator.cpp.ll
+; luau/optimized/ConstraintSolver.cpp.ll
+; luau/optimized/Frontend.cpp.ll
+; luau/optimized/IrBuilder.cpp.ll
+; luau/optimized/Normalize.cpp.ll
+; luau/optimized/TopoSortStatements.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 1
+  %4 = add i64 %3, -1
+  %5 = and i64 %1, %4
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
+  ret ptr %6
+}
 
 ; 9 occurrences:
 ; cmake/optimized/archive_entry_link_resolver.c.ll
@@ -17,7 +34,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = getelementptr nusw ptr, ptr %0, i64 %5
   ret ptr %6
 }
@@ -66,8 +83,8 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = add nsw i64 %3, -1
-  %5 = and i64 %4, %1
-  %6 = getelementptr nusw %"struct.std::atomic.217.2869635", ptr %0, i64 %5
+  %5 = and i64 %1, %4
+  %6 = getelementptr nusw %"struct.std::atomic.217.3063212", ptr %0, i64 %5
   ret ptr %6
 }
 

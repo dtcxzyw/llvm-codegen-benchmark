@@ -1,5 +1,5 @@
 
-; 185 occurrences:
+; 184 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; cvc5/optimized/theory_arrays.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
@@ -166,7 +166,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -214,7 +213,7 @@ entry:
 define i64 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 1000
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %0, -1000000000
   %6 = add i64 %5, %4
   ret i64 %6
@@ -267,7 +266,7 @@ entry:
 define i64 @func00000000000000d5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 136657
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul nsw i64 %1, -683901
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -285,7 +284,7 @@ entry:
 define i64 @func00000000000000f5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 136657
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul nuw nsw i64 %1, 470296
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -345,7 +344,7 @@ entry:
 define i64 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -997805
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul nsw i64 %1, -683901
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -400,7 +399,7 @@ entry:
 define i64 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 654183
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul i64 %1, -997805
   %6 = add i64 %4, %5
   ret i64 %6
@@ -414,13 +413,13 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -997805
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul nsw i64 %1, 136657
   %6 = add nsw i64 %4, %5
   ret i64 %6
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -440,6 +439,8 @@ entry:
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3ThreadPool.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; xgboost/optimized/coll_c_api.cc.ll
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll
@@ -447,7 +448,7 @@ entry:
 define i64 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 654183
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %0, 654183
   %6 = add i64 %5, %4
   ret i64 %6
@@ -467,7 +468,7 @@ entry:
 define i64 @func0000000000000040(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 136657
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul i64 %1, -683901
   %6 = add i64 %4, %5
   ret i64 %6
@@ -482,7 +483,7 @@ entry:
 define i64 @func00000000000000c0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 470296
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul i64 %1, -997805
   %6 = add i64 %4, %5
   ret i64 %6
@@ -507,7 +508,7 @@ entry:
 define i64 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 666643
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul nsw i64 %1, 654183
   %6 = add i64 %4, %5
   ret i64 %6
@@ -529,7 +530,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -997805
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul nsw i64 %1, 136657
   %6 = add i64 %4, %5
   ret i64 %6
@@ -545,7 +546,7 @@ entry:
 define i64 @func00000000000000d0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 666643
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul nsw i64 %1, 654183
   %6 = add i64 %4, %5
   ret i64 %6
@@ -557,7 +558,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 654183
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = mul nsw i64 %0, 654183
   %6 = add i64 %5, %4
   ret i64 %6
@@ -606,7 +607,7 @@ entry:
 define i64 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 8304
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = mul nsw i64 %0, -8304
   %6 = add i64 %5, %4
   ret i64 %6
@@ -618,7 +619,7 @@ entry:
 define i64 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 10
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = mul i64 %1, 42949672960
   %6 = add i64 %4, %5
   ret i64 %6

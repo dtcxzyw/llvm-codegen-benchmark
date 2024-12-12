@@ -6,7 +6,7 @@
 ; nghttp2/optimized/nghttp2_submit.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, ptr %1) #0 {
+define i8 @func0000000000000021(i8 %0, ptr %1) #0 {
 entry:
   %2 = or disjoint i8 %0, 32
   %3 = icmp eq ptr %1, null

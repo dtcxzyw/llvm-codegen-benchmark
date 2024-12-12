@@ -37,6 +37,19 @@ entry:
 }
 
 ; 2 occurrences:
+; lvgl/optimized/lv_tlsf.ll
+; postgres/optimized/inv_api.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0) #0 {
+entry:
+  %1 = and i64 %0, -8
+  %2 = add nsw i64 %1, -15
+  %3 = and i64 %2, -8
+  %4 = add nsw i64 %3, -8
+  ret i64 %4
+}
+
+; 2 occurrences:
 ; linux/optimized/nfs4xdr.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; Function Attrs: nounwind
@@ -46,18 +59,6 @@ entry:
   %2 = add nuw nsw i64 %1, 15
   %3 = and i64 %2, 68719476728
   %4 = add nuw nsw i64 %3, 8
-  ret i64 %4
-}
-
-; 1 occurrences:
-; postgres/optimized/inv_api.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 2047
-  %2 = add nsw i64 %1, -1
-  %3 = and i64 %2, -8
-  %4 = add nsw i64 %3, 8
   ret i64 %4
 }
 
@@ -77,12 +78,11 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; openblas/optimized/daxpy_k.c.ll
 ; openblas/optimized/ddot_k.c.ll
 ; openblas/optimized/dgemv_n.c.ll
 ; openblas/optimized/dsdot_k.c.ll
-; openblas/optimized/dsum_k.c.ll
 ; openblas/optimized/saxpy_k.c.ll
 ; openblas/optimized/sdsdot_k.c.ll
 ; Function Attrs: nounwind

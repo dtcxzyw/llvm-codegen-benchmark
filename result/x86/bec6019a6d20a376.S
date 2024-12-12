@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdx, %rcx
 	cmovneq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leaq	136(%rsi), %rax
 	testb	$4, %dl
 	cmovneq	%rdi, %rax

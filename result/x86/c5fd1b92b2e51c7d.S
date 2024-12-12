@@ -1,6 +1,6 @@
-func0000000000000011:                   # @func0000000000000011
-	andq	$-8, %rdx
-	leaq	4(%rdx), %rax
+func0000000000000021:                   # @func0000000000000021
+	andq	$-55, %rdx
+	leaq	2(%rdx), %rax
 	testq	%rsi, %rsi
 	cmoveq	%rdi, %rax
 	retq

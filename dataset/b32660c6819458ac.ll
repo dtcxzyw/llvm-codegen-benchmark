@@ -23,13 +23,12 @@ define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/reduce_layer.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
@@ -39,7 +38,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 

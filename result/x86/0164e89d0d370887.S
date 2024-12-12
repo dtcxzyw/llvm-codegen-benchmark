@@ -11,14 +11,16 @@ func0000000000000004:                   # @func0000000000000004
 	orl	%ecx, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testq	%rdx, %rdx
-	setne	%al
+	setne	%cl
+	shll	$20, %ecx
 	notb	%sil
-	movzbl	%sil, %ecx
-	andl	$1, %ecx
-	leal	(%rdi,%rcx,8), %ecx
-	leal	(%rcx,%rax,2), %eax
+	movzbl	%sil, %eax
+	andl	$1, %eax
+	shll	$18, %eax
+	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 func0000000000000033:                   # @func0000000000000033
 	xorl	%eax, %eax

@@ -3,7 +3,7 @@
 ; openjdk/optimized/divnode.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = add nsw i32 %0, 1
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 10
   %3 = add i32 %0, 4

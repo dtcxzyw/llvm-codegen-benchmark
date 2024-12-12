@@ -1,5 +1,5 @@
 
-; 171 occurrences:
+; 172 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; folly/optimized/farmhash.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -162,7 +162,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -171,6 +170,8 @@
 ; oiio/optimized/ustring.cpp.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i8 %1) #0 {
 entry:

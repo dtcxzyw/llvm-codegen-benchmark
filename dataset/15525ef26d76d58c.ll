@@ -1,9 +1,10 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
 ; clamav/optimized/inflate64.c.ll
 ; cmake/optimized/inflate.c.ll
+; darktable/optimized/print_settings.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; gromacs/optimized/inflate.c.ll
@@ -17,14 +18,13 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 48
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = icmp eq i64 %3, 48
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
-; linux/optimized/gen6_ppgtt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

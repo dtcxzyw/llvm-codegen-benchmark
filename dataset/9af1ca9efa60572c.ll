@@ -1,5 +1,5 @@
 
-; 326 occurrences:
+; 325 occurrences:
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/cutMan.c.ll
 ; abc/optimized/giaGen.c.ll
@@ -10,6 +10,8 @@
 ; assimp/optimized/TextureTransform.cpp.ll
 ; assimp/optimized/X3DExporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/poly34.ll
 ; darktable/optimized/DngDecoder.cpp.ll
@@ -152,7 +154,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -293,7 +294,6 @@
 ; redis/optimized/dict.ll
 ; redis/optimized/redis-cli.ll
 ; redis/optimized/server.ll
-; ruby/optimized/scheduler.ll
 ; slurm/optimized/get_mach_stat.ll
 ; slurm/optimized/job_mgr.ll
 ; stb/optimized/stb_hexwave.c.ll
@@ -323,13 +323,12 @@
 ; wireshark/optimized/packet-s1ap.c.ll
 ; wireshark/optimized/packet-ulp.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(float %0) #0 {
 entry:
-  %1 = fmul float %0, 0x3EB0C6F7A0000000
+  %1 = fmul float %0, 0x3F84AFFA00000000
   %2 = fpext float %1 to double
   ret double %2
 }

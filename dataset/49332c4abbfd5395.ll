@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; cmake/optimized/ftp.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
+; lvgl/optimized/lv_calendar.ll
 ; wireshark/optimized/packet-smpp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i8 %1) #0 {

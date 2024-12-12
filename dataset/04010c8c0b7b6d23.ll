@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -10,6 +10,7 @@
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/timeout_core_manager.cpp.ll
 ; folly/optimized/Random.cpp.ll

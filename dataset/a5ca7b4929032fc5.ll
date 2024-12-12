@@ -31,7 +31,7 @@ entry:
   ret i32 %2
 }
 
-; 49 occurrences:
+; 50 occurrences:
 ; assimp/optimized/zip.c.ll
 ; freetype/optimized/cff.c.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
@@ -60,6 +60,7 @@ entry:
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; oiio/optimized/strutil.cpp.ll

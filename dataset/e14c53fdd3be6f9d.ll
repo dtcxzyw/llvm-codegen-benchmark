@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/yuv_scale.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0) #0 {
+define i1 @func0000000000000021(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = add nsw i64 %1, 63

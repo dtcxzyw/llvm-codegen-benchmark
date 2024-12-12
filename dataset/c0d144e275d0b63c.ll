@@ -19,7 +19,7 @@ entry:
 ; gromacs/optimized/grompp.cpp.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; libwebp/optimized/webp_enc.c.ll
-; linux/optimized/input-mt.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
@@ -54,12 +54,10 @@ entry:
   ret i32 %2
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; abc/optimized/resSim.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgghd3.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -78,9 +76,7 @@ entry:
   ret i32 %2
 }
 
-; 3 occurrences:
-; openblas/optimized/dsbevd.c.ll
-; openblas/optimized/dsbgvd.c.ll
+; 1 occurrences:
 ; openblas/optimized/dtgex2.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0) #0 {

@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	decl	%esi
 	andl	$11, %esi
 	decl	%edi
@@ -21,7 +21,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	addq	$32, %rsi
 	addq	$32, %rdi
 	xorq	%rsi, %rdi

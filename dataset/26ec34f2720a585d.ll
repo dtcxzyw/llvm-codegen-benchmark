@@ -1,7 +1,8 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; bdwgc/optimized/cordprnt.c.ll
 ; cpython/optimized/_asynciomodule.ll
+; freetype/optimized/psaux.c.ll
 ; hyperscan/optimized/ng_depth.cpp.ll
 ; hyperscan/optimized/ng_width.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -59,8 +60,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; linux/optimized/blk-sysfs.ll
+; 3 occurrences:
 ; simdjson/optimized/simdjson.cpp.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; wolfssl/optimized/tls_bench.c.ll

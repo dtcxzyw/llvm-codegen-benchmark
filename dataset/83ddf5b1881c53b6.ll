@@ -1,5 +1,5 @@
 
-; 264 occurrences:
+; 263 occurrences:
 ; abc/optimized/ifDec10.c.ll
 ; cmake/optimized/cover.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -164,7 +164,6 @@
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/ParseHLSL.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -269,7 +268,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 6
   %4 = select i1 %3, i64 -1, i64 %1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -282,14 +281,13 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 63
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -299,19 +297,40 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
-; llvm/optimized/CGExprCXX.cpp.ll
-; llvm/optimized/Constants.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/LowerSwitch.cpp.ll
-; llvm/optimized/OMPIRBuilder.cpp.ll
-; llvm/optimized/SeparateConstOffsetFromGEP.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 33554432
   %4 = select i1 %3, i64 0, i64 %1
+  %5 = and i64 %0, %4
+  ret i64 %5
+}
+
+; 5 occurrences:
+; llvm/optimized/CGExprCXX.cpp.ll
+; llvm/optimized/Constants.cpp.ll
+; llvm/optimized/OMPIRBuilder.cpp.ll
+; llvm/optimized/SeparateConstOffsetFromGEP.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 256
+  %4 = select i1 %3, i64 0, i64 %1
+  %5 = and i64 %4, %0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 63
+  %4 = select i1 %3, i64 -9223372036854775808, i64 %1
   %5 = and i64 %4, %0
   ret i64 %5
 }

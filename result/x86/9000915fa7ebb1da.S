@@ -32,7 +32,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vmulsd	%xmm2, %xmm1, %xmm1
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	seta	%al
@@ -46,14 +46,14 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vmulsd	%xmm2, %xmm1, %xmm1
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vmulsd	%xmm2, %xmm1, %xmm1
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm0
 	setp	%al
 	retq
@@ -67,14 +67,14 @@ func000000000000000b:                   # @func000000000000000b
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vmulsd	%xmm2, %xmm1, %xmm1
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpneqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vmulsd	%xmm2, %xmm1, %xmm1
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm0
 	setnp	%al
 	retq

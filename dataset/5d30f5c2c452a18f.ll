@@ -9,7 +9,7 @@
 ; qemu/optimized/hw_usb_hcd-ehci-pci.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %1
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/apprentice.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -48
   %4 = add i64 %3, %1

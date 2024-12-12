@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 30 occurrences:
 ; assimp/optimized/Subdivision.cpp.ll
 ; cmake/optimized/cover.c.ll
 ; cpython/optimized/suggestions.ll
@@ -11,7 +11,6 @@
 ; icu/optimized/repattrn.ll
 ; ipopt/optimized/IpStdJInterface.ll
 ; libquic/optimized/example_mul.c.ll
-; linux/optimized/evregion.ll
 ; linux/optimized/workqueue.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
@@ -28,7 +27,6 @@
 ; qemu/optimized/system_vl.c.ll
 ; rocksdb/optimized/compaction_iterator.cc.ll
 ; wireshark/optimized/packet-enip.c.ll
-; wireshark/optimized/packet-rtmpt.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; zstd/optimized/cover.c.ll
@@ -37,7 +35,7 @@ define i1 @func0000000000000002(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -70,7 +68,7 @@ define i1 @func0000000000000018(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

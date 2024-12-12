@@ -3,7 +3,7 @@
 ; opencv/optimized/convolution_layer.cpp.ll
 ; php/optimized/fastcgi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 8
@@ -17,7 +17,7 @@ entry:
 ; glslang/optimized/Pp.cpp.ll
 ; glslang/optimized/PpAtom.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 1
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000065(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 1

@@ -1,5 +1,5 @@
 
-; 974 occurrences:
+; 969 occurrences:
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
@@ -31,7 +31,6 @@
 ; cmake/optimized/http2.c.ll
 ; cmake/optimized/json_value.cpp.ll
 ; cmake/optimized/vtls.c.ll
-; coremark/optimized/core_util.c.ll
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytes_methods.ll
 ; cpython/optimized/bytesobject.ll
@@ -76,7 +75,6 @@
 ; graphviz/optimized/mocs_compilation.cpp.ll
 ; graphviz/optimized/ortho.c.ll
 ; graphviz/optimized/position.c.ll
-; gromacs/optimized/densityfittingparameters.cpp.ll
 ; gromacs/optimized/hardwaretopology.cpp.ll
 ; gromacs/optimized/index.cpp.ll
 ; gromacs/optimized/inputrec.cpp.ll
@@ -122,7 +120,6 @@
 ; jq/optimized/decNumber.ll
 ; jq/optimized/unicode.ll
 ; libquic/optimized/quic_protocol.cc.ll
-; libquic/optimized/reliable_quic_stream.cc.ll
 ; libquic/optimized/values.cc.ll
 ; lightgbm/optimized/c_api.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
@@ -421,7 +418,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -841,7 +837,6 @@
 ; postgres/optimized/view.ll
 ; postgres/optimized/worker.ll
 ; postgres/optimized/xlog.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/map_field.cc.ll
 ; proxygen/optimized/HTTPCommonHeaders.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
@@ -983,18 +978,7 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; qemu/optimized/hw_char_serial.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
-entry:
-  %2 = xor i8 %0, %1
-  %3 = and i8 %2, 8
-  %4 = icmp eq i8 %3, 0
-  ret i1 %4
-}
-
-; 54 occurrences:
+; 53 occurrences:
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; graphviz/optimized/ortho.c.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -1041,7 +1025,6 @@ entry:
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; postgres/optimized/equalfuncs.ll
 ; postgres/optimized/rangetypes.ll
-; proj/optimized/io.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/dd_pdd.cpp.ll

@@ -63,9 +63,10 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
+; opencv/optimized/reduce_layer.cpp.ll
 ; opencv/optimized/rmat.cpp.ll
 ; openspiel/optimized/pathfinding.cc.ll
 ; velox/optimized/SsdFile.cpp.ll

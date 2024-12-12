@@ -10,7 +10,7 @@ entry:
   ret i32 %2
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; abc/optimized/aigPartReg.c.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
@@ -25,15 +25,14 @@ entry:
 ; libquic/optimized/x509_vfy.c.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/quant_enc.c.ll
-; libzmq/optimized/mechanism_base.cpp.ll
 ; linux/optimized/hash.ll
 ; llvm/optimized/ComparisonCategories.cpp.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/HeaderMap.cpp.ll
 ; llvm/optimized/PPCLinux.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

@@ -1,11 +1,11 @@
-func00000000000000d6:                   # @func00000000000000d6
+func0000000000000196:                   # @func0000000000000196
 	orl	%edi, %edx
 	sets	%cl
 	cmpl	%esi, %edi
 	setge	%al
 	orb	%cl, %al
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+func0000000000000194:                   # @func0000000000000194
 	orl	%edi, %edx
 	sets	%cl
 	cmpl	%esi, %edi

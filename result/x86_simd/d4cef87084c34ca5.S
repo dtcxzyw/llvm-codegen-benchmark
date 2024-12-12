@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltw	%ymm2, %ymm0, %k1
 	vpmovwb	%ymm1, %xmm0 {%k1} {z}
@@ -50,7 +50,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI3_0:
 	.zero	16,246
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpmovwb	%ymm1, %xmm1
 	vptestnmw	%ymm0, %ymm0, %k1
 	vmovdqu8	.LCPI3_0(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [246,246,246,246,246,246,246,246,246,246,246,246,246,246,246,246]

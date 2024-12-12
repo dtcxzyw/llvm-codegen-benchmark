@@ -19,7 +19,7 @@
 ; openssl/optimized/libcrypto-shlib-e_rc2.ll
 ; openssl/optimized/liblegacy-lib-cipher_des_hw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %2, %1
   %4 = add i64 %0, %1

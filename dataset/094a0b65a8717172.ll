@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1) #0 {
 entry:
   %reass.sub = sub i32 %0, %1
   %2 = add i32 %reass.sub, 8
@@ -14,7 +14,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %reass.sub = sub i32 %0, %1
   %2 = icmp eq i32 %reass.sub, 504
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/hash_whirlpool.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1) #0 {
 entry:
   %reass.sub = sub i32 %0, %1
   %2 = icmp eq i32 %reass.sub, 504
@@ -206,7 +206,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %reass.sub = sub i32 %0, %1
   %2 = add i32 %reass.sub, 348
@@ -217,7 +217,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1) #0 {
 entry:
   %reass.sub = sub i32 %0, %1
   %2 = add i32 %reass.sub, -2016

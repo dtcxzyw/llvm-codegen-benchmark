@@ -1,7 +1,8 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; faiss/optimized/IndexBinaryHNSW.cpp.ll
 ; faiss/optimized/IndexHNSW.cpp.ll
+; luau/optimized/IrAnalysis.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/large_kinfu.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
@@ -14,7 +15,7 @@
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0) #0 {
+define i1 @func000000000000020a(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = trunc i64 %1 to i32
@@ -26,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000012a(i64 %0) #0 {
+define i1 @func000000000000024a(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = trunc i64 %1 to i32
@@ -38,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0) #0 {
+define i1 @func00000000000002a4(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 48
   %2 = trunc nsw i64 %1 to i32
@@ -54,7 +55,7 @@ entry:
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0) #0 {
+define i1 @func0000000000000201(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 5
   %2 = trunc i64 %1 to i32
@@ -62,7 +63,7 @@ entry:
   ret i1 %3
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; luajit/optimized/lib_table.ll
 ; luajit/optimized/lib_table_dyn.ll
 ; luajit/optimized/lj_api.ll
@@ -71,12 +72,10 @@ entry:
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll
-; luajit/optimized/lj_obj.ll
-; luajit/optimized/lj_obj_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0) #0 {
+define i1 @func00000000000000a4(i64 %0) #0 {
 entry:
   %1 = ashr i64 %0, 47
   %2 = trunc nsw i64 %1 to i32
@@ -95,7 +94,7 @@ entry:
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0) #0 {
+define i1 @func0000000000000208(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = trunc i64 %1 to i32
@@ -107,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfMisc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0) #0 {
+define i1 @func0000000000000206(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 3
   %2 = trunc i64 %1 to i32

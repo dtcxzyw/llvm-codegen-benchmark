@@ -5,7 +5,7 @@
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp slt i64 %3, %0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_intc_riscv_aclint.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d0(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000190(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ugt i64 %3, %0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/selectors.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ne i64 %3, %0
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ugt i64 %3, %0

@@ -1,7 +1,12 @@
 
-%"struct.rocksdb::(anonymous namespace)::Fsize.2500336" = type { i64, ptr }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
+%struct.ChatFormattedLine.2693933 = type <{ %"class.std::vector.5.2693929", i8, [7 x i8] }>
+%"class.std::vector.5.2693929" = type { %"struct.std::_Vector_base.6.2693930" }
+%"struct.std::_Vector_base.6.2693930" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693931" }
+%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693931" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693932" }
+%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693932" = type { ptr, ptr, ptr }
 
-; 126 occurrences:
+; 110 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
@@ -9,7 +14,6 @@
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
-; bullet3/optimized/b3GpuSapBroadphase.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -17,12 +21,9 @@
 ; cmake/optimized/cmDebuggerVariables.cxx.ll
 ; cvc5/optimized/normal_form.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
-; darktable/optimized/introspection_ashift.c.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
@@ -61,14 +62,8 @@
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
-; llvm/optimized/AArch64SIMDInstrOpt.cpp.ll
 ; llvm/optimized/ClangAttrEmitter.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/LegalizeDAG.cpp.ll
-; llvm/optimized/Localizer.cpp.ll
-; llvm/optimized/MemProf.cpp.ll
 ; luau/optimized/ToString.cpp.ll
-; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -91,10 +86,7 @@
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
 ; minetest/optimized/CSceneManager.cpp.ll
-; minetest/optimized/chat.cpp.ll
-; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/map.cpp.ll
-; minetest/optimized/mapnode.cpp.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; nix/optimized/value-to-xml.ll
 ; opencv/optimized/akaze.cpp.ll
@@ -102,13 +94,11 @@
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
-; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/graphsegmentation.cpp.ll
 ; opencv/optimized/intelligent_scissors.cpp.ll
 ; opencv/optimized/keypoint.cpp.ll
-; opencv/optimized/kuhn_munkres.cpp.ll
 ; opencv/optimized/matchers.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
@@ -125,18 +115,17 @@
 ; vcpkg/optimized/commands.install.cpp.ll
 ; verilator/optimized/V3Gate.cpp.ll
 ; verilator/optimized/V3Tristate.cpp.ll
-; yosys/optimized/maccmap.ll
 ; z3/optimized/dl_instruction.cpp.ll
 ; zxing/optimized/MultiFormatReader.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2500336", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -168,7 +157,6 @@ entry:
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
 ; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; protobuf/optimized/enum.cc.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; quantlib/optimized/differentialevolution.ll
@@ -187,7 +175,32 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2500336", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %2, i32 1
+  ret ptr %3
+}
+
+; 16 occurrences:
+; bullet3/optimized/b3GpuSapBroadphase.ll
+; darktable/optimized/introspection_ashift.c.ll
+; duckdb/optimized/ub_duckdb_parallel.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
+; llvm/optimized/AArch64SIMDInstrOpt.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/LegalizeDAG.cpp.ll
+; llvm/optimized/Localizer.cpp.ll
+; llvm/optimized/MemProf.cpp.ll
+; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
+; minetest/optimized/chat.cpp.ll
+; minetest/optimized/guiTable.cpp.ll
+; minetest/optimized/mapnode.cpp.ll
+; opencv/optimized/dxt.cpp.ll
+; opencv/optimized/kuhn_munkres.cpp.ll
+; yosys/optimized/maccmap.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i64 %1, 1
+  %3 = getelementptr nusw nuw %struct.ChatFormattedLine.2693933, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

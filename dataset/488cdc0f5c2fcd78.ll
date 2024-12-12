@@ -27,6 +27,18 @@ entry:
   ret i8 %4
 }
 
+; 1 occurrences:
+; qemu/optimized/hw_sd_sd.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000048(i64 %0) #0 {
+entry:
+  %1 = trunc nuw i64 %0 to i32
+  %2 = add i32 %1, 262143
+  %3 = lshr i32 %2, 10
+  %4 = trunc i32 %3 to i8
+  ret i8 %4
+}
+
 ; 4 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; recastnavigation/optimized/fastlz.c.ll
@@ -55,6 +67,30 @@ entry:
   %2 = add i32 %1, 1
   %3 = lshr i32 %2, 24
   %4 = trunc nuw i32 %3 to i8
+  ret i8 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000042(i64 %0) #0 {
+entry:
+  %1 = trunc nuw i64 %0 to i32
+  %2 = add i32 %1, 1
+  %3 = lshr i32 %2, 24
+  %4 = trunc nuw i32 %3 to i8
+  ret i8 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000040(i64 %0) #0 {
+entry:
+  %1 = trunc nuw i64 %0 to i32
+  %2 = add i32 %1, 1
+  %3 = lshr i32 %2, 16
+  %4 = trunc i32 %3 to i8
   ret i8 %4
 }
 

@@ -3,6 +3,6 @@ func0000000000000000:                   # @func0000000000000000
 	vfwcvt.f.xu.v	v16, v12
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfdiv.vv	v8, v16, v8
-	fli.d	fa5, -1.0
+	fli.d	fa5, 0.5
 	vfadd.vf	v8, v8, fa5
 	ret

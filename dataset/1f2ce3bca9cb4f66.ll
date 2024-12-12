@@ -22,7 +22,7 @@ entry:
   ret i64 %2
 }
 
-; 64 occurrences:
+; 59 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -72,17 +72,12 @@ entry:
 ; slurm/optimized/read_config.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/bf16_to_f32.ll
 ; spike/optimized/execute.ll
-; spike/optimized/f16_classify.ll
 ; spike/optimized/f16_div.ll
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f16_rem.ll
 ; spike/optimized/f16_roundToInt.ll
 ; spike/optimized/f16_sqrt.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f32.ll
-; spike/optimized/f16_to_f64.ll
 ; spike/optimized/fall_reciprocal.ll
 ; stockfish/optimized/tbprobe.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll

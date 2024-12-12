@@ -1,5 +1,7 @@
 
-; 66 occurrences:
+; 68 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
@@ -74,7 +76,7 @@ entry:
   ret i64 %4
 }
 
-; 555 occurrences:
+; 541 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
@@ -86,10 +88,8 @@ entry:
 ; darktable/optimized/RawDecoder.cpp.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
 ; darktable/optimized/SrwDecoder.cpp.ll
-; eastl/optimized/BenchmarkString.cpp.ll
 ; entt/optimized/storage.cpp.ll
 ; folly/optimized/DeterministicSchedule.cpp.ll
-; freetype/optimized/truetype.c.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; glslang/optimized/ParseContextBase.cpp.ll
@@ -109,25 +109,8 @@ entry:
 ; glslang/optimized/reflection.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; hdf5/optimized/H5HL.c.ll
-; hermes/optimized/BCP47Parser.cpp.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
-; hermes/optimized/StringPrimitive.cpp.ll
-; jsonnet/optimized/formatter.cpp.ll
-; jsonnet/optimized/string_utils.cpp.ll
-; jsonnet/optimized/vm.cpp.ll
 ; libquic/optimized/cubic.cc.ll
 ; libquic/optimized/cubic_bytes.cc.ll
-; libquic/optimized/string16.cc.ll
-; lief/optimized/BinaryStream.cpp.ll
-; lief/optimized/LangCodeItem.cpp.ll
-; lief/optimized/ResourceDialog.cpp.ll
-; lief/optimized/ResourceDialogItem.cpp.ll
-; lief/optimized/ResourceNode.cpp.ll
-; lief/optimized/ResourceStringFileInfo.cpp.ll
-; lief/optimized/ResourceStringTable.cpp.ll
-; lief/optimized/ResourceVarFileInfo.cpp.ll
-; lief/optimized/ResourceVersion.cpp.ll
-; lief/optimized/ResourcesParser.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
@@ -313,6 +296,7 @@ entry:
 ; mold/optimized/main.cc.SH4.cc.ll
 ; mold/optimized/main.cc.SPARC64.cc.ll
 ; mold/optimized/main.cc.X86_64.cc.ll
+; mold/optimized/main.cc.ll
 ; mold/optimized/mapfile.cc.ALPHA.cc.ll
 ; mold/optimized/mapfile.cc.ARM32.cc.ll
 ; mold/optimized/mapfile.cc.ARM64.cc.ll
@@ -498,13 +482,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
@@ -552,6 +533,7 @@ entry:
 ; nix/optimized/suggestions.ll
 ; nix/optimized/tarball.ll
 ; nix/optimized/tarfile.ll
+; nix/optimized/terminal.ll
 ; nix/optimized/tests.ll
 ; nix/optimized/thread-pool.ll
 ; nix/optimized/trivial.ll
@@ -568,10 +550,7 @@ entry:
 ; nix/optimized/verify.ll
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
-; nlohmann_json/optimized/unit-bson.cpp.ll
-; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
-; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; openexr/optimized/attributes.c.ll
 ; openjdk/optimized/psOldGen.ll
@@ -595,15 +574,16 @@ entry:
 ; spike/optimized/isa_parser.ll
 ; spike/optimized/ns16550.ll
 ; spike/optimized/plic.ll
+; spike/optimized/processor.ll
 ; spike/optimized/socketif.ll
 ; spike/optimized/spike-dasm.ll
 ; spike/optimized/spike-log-parser.ll
 ; spike/optimized/spike.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; velox/optimized/MemoryPool.cpp.ll
-; velox/optimized/VectorFuzzer.cpp.ll
 ; yalantinglibs/optimized/EnumFieldGenerator.cpp.ll
 ; yalantinglibs/optimized/FieldGenerator.cpp.ll
+; yalantinglibs/optimized/MessageGenerator.cpp.ll
 ; yalantinglibs/optimized/PrimitiveFieldGenerator.cpp.ll
 ; yalantinglibs/optimized/StructGenerator.cpp.ll
 ; yalantinglibs/optimized/basic_usage.cpp.ll
@@ -616,19 +596,27 @@ entry:
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; yalantinglibs/optimized/concurrent_clients.cpp.ll
 ; yalantinglibs/optimized/conformance.pb.cc.ll
+; yalantinglibs/optimized/conformance.struct_pb.cc.ll
 ; yalantinglibs/optimized/conformance_cpp.cc.ll
 ; yalantinglibs/optimized/conformance_test.cc.ll
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
+; yalantinglibs/optimized/descriptor.struct_pb.cc.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; yalantinglibs/optimized/field_mask.struct_pb.cc.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/non_aggregated_type.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; yalantinglibs/optimized/struct.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; yalantinglibs/optimized/tutorial.cpp.ll
+; yalantinglibs/optimized/type.struct_pb.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
@@ -656,9 +644,8 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
-; freetype/optimized/autofit.c.ll
 ; hdf5/optimized/H5FDcore.c.ll
 ; jemalloc/optimized/decay.ll
 ; jemalloc/optimized/decay.pic.ll
@@ -670,7 +657,6 @@ entry:
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openjdk/optimized/psAdaptiveSizePolicy.ll
-; php/optimized/array.ll
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/decay.ll
 ; redis/optimized/decay.sym.ll
@@ -678,6 +664,7 @@ entry:
 ; redis/optimized/replication.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -686,12 +673,47 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 27 occurrences:
+; arrow/optimized/utf8.cc.ll
+; eastl/optimized/BenchmarkString.cpp.ll
+; freetype/optimized/truetype.c.ll
+; hermes/optimized/BCP47Parser.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/StringPrimitive.cpp.ll
+; jsonnet/optimized/desugarer.cpp.ll
+; jsonnet/optimized/formatter.cpp.ll
+; jsonnet/optimized/parser.cpp.ll
+; jsonnet/optimized/string_utils.cpp.ll
+; jsonnet/optimized/vm.cpp.ll
+; libquic/optimized/string16.cc.ll
+; lief/optimized/BinaryStream.cpp.ll
+; lief/optimized/LangCodeItem.cpp.ll
+; lief/optimized/ResourceDialog.cpp.ll
+; lief/optimized/ResourceDialogItem.cpp.ll
+; lief/optimized/ResourceNode.cpp.ll
+; lief/optimized/ResourceStringFileInfo.cpp.ll
+; lief/optimized/ResourceStringTable.cpp.ll
+; lief/optimized/ResourceVarFileInfo.cpp.ll
+; lief/optimized/ResourceVersion.cpp.ll
+; lief/optimized/ResourcesParser.cpp.ll
+; nlohmann_json/optimized/unit-bson.cpp.ll
+; nlohmann_json/optimized/unit-cbor.cpp.ll
+; nlohmann_json/optimized/unit-msgpack.cpp.ll
+; pbrt-v4/optimized/string.cpp.ll
+; velox/optimized/VectorFuzzer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %1, %2
+  %4 = select i1 %3, i64 %0, i64 %1
+  ret i64 %4
+}
+
+; 9 occurrences:
 ; cpython/optimized/multibytecodec.ll
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; libjpeg-turbo/optimized/jcarith.c.ll
-; nuttx/optimized/clock_settime.c.ll
 ; openmpi/optimized/ad_read_coll.ll
 ; openmpi/optimized/ad_write_coll.ll
 ; php/optimized/cgi_main.ll
@@ -705,15 +727,35 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; php/optimized/zend_inheritance.ll
-; redis/optimized/t_string.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %.not = icmp ult i64 %1, %2
+  %.not = icmp samesign ult i64 %1, %2
   %3 = select i1 %.not, i64 %1, i64 %0
   ret i64 %3
+}
+
+; 2 occurrences:
+; freetype/optimized/autofit.c.ll
+; php/optimized/array.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %1, %2
+  %4 = select i1 %3, i64 %0, i64 %1
+  ret i64 %4
+}
+
+; 1 occurrences:
+; boost/optimized/test_codecvt.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign eq i64 %1, %2
+  %4 = select i1 %3, i64 %0, i64 %1
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -723,6 +765,16 @@ entry:
 define i64 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.not = icmp slt i64 %1, %2
+  %3 = select i1 %.not, i64 %1, i64 %0
+  ret i64 %3
+}
+
+; 1 occurrences:
+; redis/optimized/t_string.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %.not = icmp ult i64 %1, %2
   %3 = select i1 %.not, i64 %1, i64 %0
   ret i64 %3
 }

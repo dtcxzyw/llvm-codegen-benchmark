@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 82 occurrences:
 ; bullet3/optimized/btConeShape.ll
 ; bullet3/optimized/btConvexHullShape.ll
 ; bullet3/optimized/btConvexInternalShape.ll
@@ -14,6 +14,7 @@
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/calculator.cpp.ll
+; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/editconf.cpp.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/restcbt.cpp.ll

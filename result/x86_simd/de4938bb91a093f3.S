@@ -31,3 +31,13 @@ func0000000000000015:                   # @func0000000000000015
 	vpsllq	$32, %ymm0, %ymm0
 	vporq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
 	retq
+.LCPI3_0:
+	.quad	1                               # 0x1
+func00000000000000df:                   # @func00000000000000df
+	vpaddd	%xmm0, %xmm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpaddq	%ymm0, %ymm0, %ymm0
+	vporq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	retq

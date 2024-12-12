@@ -2,9 +2,9 @@
 ; 3 occurrences:
 ; llvm/optimized/CGExpr.cpp.ll
 ; qemu/optimized/block_io.c.ll
-; spike/optimized/f128_classify.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ne i64 %0, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ult i64 %0, 19

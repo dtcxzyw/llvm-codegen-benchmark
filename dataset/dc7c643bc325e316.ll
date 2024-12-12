@@ -14,10 +14,10 @@ entry:
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, double %1) #0 {
+define i1 @func0000000000000026(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -25,7 +25,7 @@ entry:
 ; graphviz/optimized/pack.c.ll
 ; opencv/optimized/brisk.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, double %1) #0 {
+define i1 @func000000000000002a(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sub nsw i32 %2, %0

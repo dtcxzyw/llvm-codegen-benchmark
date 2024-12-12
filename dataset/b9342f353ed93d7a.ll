@@ -4,7 +4,7 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000118(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -238
@@ -14,12 +14,10 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; grpc/optimized/socket_utils_posix.cc.ll
-; grpc/optimized/tcp_socket_utils.cc.ll
+; 1 occurrences:
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000102(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1440
@@ -32,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 38

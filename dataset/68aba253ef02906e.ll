@@ -1,21 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/json.cpp.ll
 ; openusd/optimized/strtod.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000053(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, -1086
-  %3 = sub nsw i32 4, %0
-  %4 = select i1 %2, i32 -49, i32 %3
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000057(i32 %0, i32 %1) #0 {
@@ -27,7 +16,8 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {

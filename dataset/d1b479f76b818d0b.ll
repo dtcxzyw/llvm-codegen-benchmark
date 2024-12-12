@@ -1,5 +1,5 @@
 
-; 170 occurrences:
+; 169 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; folly/optimized/farmhash.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -161,7 +161,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -212,6 +211,18 @@ entry:
   %3 = shl i64 %0, 8
   %4 = or disjoint i64 %3, %2
   %5 = mul i64 %4, 20
+  ret i64 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000016(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i64
+  %3 = shl nuw i64 %0, 8
+  %4 = or disjoint i64 %3, %2
+  %5 = mul nuw i64 %4, 24
   ret i64 %5
 }
 

@@ -36,11 +36,11 @@ entry:
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 112
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/B3DImporter.cpp.ll
@@ -54,6 +54,7 @@ entry:
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/src.ll
 ; gromacs/optimized/conversions.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/index.cpp.ll
@@ -111,7 +112,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 48
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -124,7 +125,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = sdiv i64 %4, 4
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

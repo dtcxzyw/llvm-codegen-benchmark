@@ -1,4 +1,4 @@
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
 	and	w8, w2, #0xff
 	cmp	x0, x1
@@ -6,7 +6,7 @@ func0000000000000014:                   // @func0000000000000014
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	and	w8, w2, #0xff
 	cmp	x0, x1
@@ -15,28 +15,28 @@ func0000000000000011:                   // @func0000000000000011
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
 	tst	w2, #0xff
 	ccmp	x0, x1, #4, eq
 	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000000cc:                   // @func00000000000000cc
+func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	tst	w2, #0xff
 	ccmp	x0, x1, #4, ne
 	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000000c1:                   // @func00000000000000c1
+func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
 	tst	w2, #0xff
 	ccmp	x0, x1, #0, ne
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000045:                   // @func0000000000000045
+func0000000000000085:                   // @func0000000000000085
 // %bb.0:                               // %entry
 	and	w8, w2, #0xff
 	cmp	x0, x1
@@ -44,7 +44,7 @@ func0000000000000045:                   // @func0000000000000045
 	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000000c4:                   // @func00000000000000c4
+func0000000000000184:                   // @func0000000000000184
 // %bb.0:                               // %entry
 	and	w8, w2, #0xff
 	cmp	x0, x1
@@ -52,7 +52,7 @@ func00000000000000c4:                   // @func00000000000000c4
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	and	w8, w2, #0xff
 	cmp	x0, x1

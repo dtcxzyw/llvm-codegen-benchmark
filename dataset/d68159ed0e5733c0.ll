@@ -1,5 +1,5 @@
 
-; 182 occurrences:
+; 191 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -18,7 +18,6 @@
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; gromacs/optimized/huffmem.c.ll
 ; grpc/optimized/frame_data.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -80,7 +79,6 @@
 ; llvm/optimized/LowerGlobalDtors.cpp.ll
 ; llvm/optimized/NativeFunctionSymbol.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -156,6 +154,7 @@
 ; spike/optimized/sunpkd832.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; tls-rs/optimized/7y9936vu35zt2sp.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
@@ -176,6 +175,16 @@
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/055l6m6wb4e4jq2j59cjsdkaz.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38pyrye3lmvdaenlt6t0na0m3.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -186,12 +195,14 @@
 define i64 @func0000000000000001(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   ret i64 %3
 }
 
-; 32 occurrences:
+; 35 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
+; boost/optimized/find_address_sse2.ll
+; boost/optimized/find_address_sse41.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -223,24 +234,21 @@ entry:
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
 ; wireshark/optimized/packet-netflow.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   ret i64 %3
 }
 
-; 17 occurrences:
+; 13 occurrences:
 ; folly/optimized/ThreadedExecutor.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/Service.cpp.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArrayIntersectExcept.cpp.ll
@@ -253,11 +261,11 @@ entry:
 define i64 @func0000000000000002(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 
-; 22 occurrences:
+; 25 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; icu/optimized/icuexportdata.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
@@ -280,11 +288,14 @@ entry:
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; wireshark/optimized/bluetooth_hci_summary_dialog.cpp.ll
 ; wireshark/optimized/packet-per.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 

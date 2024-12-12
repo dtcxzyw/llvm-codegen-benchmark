@@ -4,7 +4,7 @@
 ; openjdk/optimized/pngerror.ll
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000088c(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = add nuw i64 %1, 1

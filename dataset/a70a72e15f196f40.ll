@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/bmcMulti.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -17,6 +17,7 @@
 ; abc/optimized/sfmCore.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/wlnRetime.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; gromacs/optimized/gmx_anaeig.cpp.ll
 ; libpng/optimized/png.c.ll
 ; opencv/optimized/filterdemo.cpp.ll

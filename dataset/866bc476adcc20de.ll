@@ -239,21 +239,20 @@ entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 2147483648
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; freetype/optimized/sdf.c.ll
-; llvm/optimized/OSTargets.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, 10
-  %5 = and i1 %4, %0
+  %4 = icmp eq i32 %3, 7
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

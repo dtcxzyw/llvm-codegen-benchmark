@@ -1,28 +1,28 @@
-func0000000000000331:                   # @func0000000000000331
+func0000000000000661:                   # @func0000000000000661
 	btq	%rsi, %rdi
 	setae	%al
 	retq
-func00000000000003e1:                   # @func00000000000003e1
+func00000000000007c1:                   # @func00000000000007c1
 	btq	%rsi, %rdi
 	setae	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	btq	%rsi, %rdi
 	setae	%al
 	retq
-func00000000000003f1:                   # @func00000000000003f1
+func00000000000007e1:                   # @func00000000000007e1
 	btq	%rsi, %rdi
 	setae	%al
 	retq
-func0000000000000321:                   # @func0000000000000321
+func0000000000000641:                   # @func0000000000000641
 	btq	%rsi, %rdi
 	setae	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	btq	%rsi, %rdi
 	setae	%al
 	retq
-func00000000000002a1:                   # @func00000000000002a1
+func0000000000000541:                   # @func0000000000000541
 	btq	%rsi, %rdi
 	setae	%al
 	retq

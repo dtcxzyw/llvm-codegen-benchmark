@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 71 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/sclSize.c.ll
@@ -16,7 +16,6 @@
 ; graphviz/optimized/stress.c.ll
 ; gromacs/optimized/colvarbias_alb.cpp.ll
 ; gromacs/optimized/eneconv.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/gmx_energy.cpp.ll

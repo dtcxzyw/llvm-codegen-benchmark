@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; linux/optimized/percpu.ll
 ; luau/optimized/CostModel.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -20,7 +21,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = and i64 %4, 72057594037927935
   ret i64 %5
 }

@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/simSymStr.c.ll
 ; icu/optimized/utf8collationiterator.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
@@ -11,10 +10,10 @@
 ; z3/optimized/nlqsat.cpp.ll
 ; z3/optimized/pb_constraint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 16
-  %3 = and i32 %2, 255
+  %2 = lshr i32 %1, 8
+  %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
   %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
@@ -36,7 +35,7 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; quickjs/optimized/libunicode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 20
   %3 = and i32 %2, 15

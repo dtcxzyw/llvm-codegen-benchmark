@@ -25,7 +25,7 @@ entry:
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; openusd/optimized/dataSourceLegacyPrim.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, float %1, float %2) #0 {
+define i1 @func000000000000008c(i64 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %1, %2
   %4 = icmp ne i64 %0, 0
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, float %1, float %2) #0 {
+define i1 @func000000000000008a(i64 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %1, %2
   %4 = icmp sgt i64 %0, 0
@@ -45,31 +45,9 @@ entry:
 }
 
 ; 1 occurrences:
-; gromacs/optimized/pairlist_tuning.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp olt float %1, %2
-  %4 = icmp ult i64 %0, 5
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; pbrt-v4/optimized/aggregates.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp ogt float %1, %2
-  %4 = icmp ult i64 %0, 16
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; opencv/optimized/motionSaliencyBinWangApr2014.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, float %1, float %2) #0 {
+define i1 @func0000000000000041(i64 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = icmp eq i64 %0, 0

@@ -27,7 +27,7 @@ entry:
 define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp oeq double %4, 0.000000e+00
   ret i1 %5
 }
@@ -45,12 +45,13 @@ entry:
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp olt double %4, 0.000000e+00
   ret i1 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/buffer_piece_border.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
 ; g2o/optimized/dquat2mat.cpp.ll
 ; g2o/optimized/edge_project_stereo_xyz_onlypose.cpp.ll
@@ -73,7 +74,7 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ogt double %4, 2.550000e+02
   ret i1 %5
 }
@@ -89,7 +90,7 @@ entry:
 define i1 @func0000000000000007(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp une double %4, 0.000000e+00
   ret i1 %5
 }
@@ -117,7 +118,7 @@ entry:
 define i1 @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp oge double %4, 0x43E0000000000000
   ret i1 %5
 }
@@ -143,7 +144,7 @@ entry:
 define i1 @func000000000000000e(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ord double %4, 0.000000e+00
   ret i1 %5
 }

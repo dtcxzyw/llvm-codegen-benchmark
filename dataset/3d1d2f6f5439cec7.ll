@@ -1,9 +1,12 @@
 
-; 11 occurrences:
+; 14 occurrences:
 ; actix-rs/optimized/2l54a10og4z99516.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
 ; cpython/optimized/_codecs_kr.ll
 ; grpc/optimized/timeout_encoding.cc.ll
 ; icu/optimized/loclikelysubtags.ll

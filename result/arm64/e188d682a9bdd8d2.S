@@ -1,40 +1,18 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v4.8h, #4
-	and	v3.16b, v3.16b, v4.16b
-	cmeq	v3.8h, v3.8h, #0
-	xtn	v3.8b, v3.8h
-	orr	v2.8b, v3.8b, v2.8b
-	zip1	v3.8b, v2.8b, v0.8b
-	zip2	v2.8b, v2.8b, v0.8b
-	ushll	v3.4s, v3.4h, #0
-	ushll	v2.4s, v2.4h, #0
-	shl	v3.4s, v3.4s, #31
-	shl	v2.4s, v2.4s, #31
-	cmlt	v3.4s, v3.4s, #0
-	cmlt	v2.4s, v2.4s, #0
-	bic	v0.16b, v0.16b, v3.16b
-	bic	v1.16b, v1.16b, v2.16b
-	sub	v0.4s, v0.4s, v3.4s
-	sub	v1.4s, v1.4s, v2.4s
+	tst	w2, #0x4
+	cset	w8, eq
+	orr	w8, w8, w1
+	tst	w8, #0x1
+	csinc	w0, w0, wzr, eq
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	movi	v4.8h, #8
-	cmtst	v3.8h, v3.8h, v4.8h
-	movi	v4.4s, #133
-	xtn	v3.8b, v3.8h
-	orr	v2.8b, v3.8b, v2.8b
-	zip1	v3.8b, v2.8b, v0.8b
-	zip2	v2.8b, v2.8b, v0.8b
-	ushll	v3.4s, v3.4h, #0
-	ushll	v2.4s, v2.4h, #0
-	shl	v3.4s, v3.4s, #31
-	shl	v2.4s, v2.4s, #31
-	cmlt	v3.4s, v3.4s, #0
-	cmlt	v2.4s, v2.4s, #0
-	bit	v0.16b, v4.16b, v3.16b
-	bit	v1.16b, v4.16b, v2.16b
+	and	w8, w2, #0x8
+	orr	w8, w1, w8, lsr #3
+	tst	w8, #0x1
+	mov	w8, #133                        // =0x85
+	csel	w0, w8, w0, ne
 	ret
                                         // -- End function

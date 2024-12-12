@@ -24,15 +24,28 @@ func00000000000000c7:                   # @func00000000000000c7
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
 	ret
-.LCPI2_0:
+func0000000000000183:                   # @func0000000000000183
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsgtu.vi	v0, v10, 4
+	vmv.v.i	v10, 0
+	lui	a0, 838861
+	vmerge.vim	v10, v10, 1, v0
+	addiw	a0, a0, -819
+	slli	a1, a0, 32
+	add	a0, a0, a1
+	vmulhu.vx	v8, v8, a0
+	vsrl.vi	v8, v8, 3
+	vadd.vv	v8, v8, v10
+	ret
+.LCPI3_0:
 	.quad	19342813113834067               # 0x44b82fa09b5a53
-func0000000000000043:                   # @func0000000000000043
+func0000000000000143:                   # @func0000000000000143
 	lui	a0, 804435
 	addiw	a0, a0, 1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
 	vsrl.vi	v8, v8, 9

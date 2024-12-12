@@ -1,45 +1,12 @@
+.LCPI0_0:
+	.xword	0x3f50624dd2f1a9fc              // double 0.001
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	x8, #43516                      // =0xa9fc
-	ldr	q16, [sp, #48]
-	movk	x8, #54001, lsl #16
-	movk	x8, #25165, lsl #32
-	fcvtl2	v17.2d, v16.4s
-	fcvtl	v16.2d, v16.2s
-	movk	x8, #16208, lsl #48
-	dup	v18.2d, x8
-	fadd	v16.2d, v16.2d, v18.2d
-	fadd	v17.2d, v17.2d, v18.2d
-	fdiv	v6.2d, v6.2d, v16.2d
-	ldr	q16, [sp, #32]
-	fdiv	v7.2d, v7.2d, v17.2d
-	fcvtl2	v17.2d, v16.4s
-	fcvtl	v16.2d, v16.2s
-	fadd	v16.2d, v16.2d, v18.2d
-	fadd	v17.2d, v17.2d, v18.2d
-	fdiv	v4.2d, v4.2d, v16.2d
-	ldr	q16, [sp, #16]
-	fdiv	v5.2d, v5.2d, v17.2d
-	fcvtl	v17.2d, v16.2s
-	fadd	v17.2d, v17.2d, v18.2d
-	fdiv	v2.2d, v2.2d, v17.2d
-	ldr	q17, [sp]
-	fcvtl2	v19.2d, v17.4s
-	fadd	v19.2d, v19.2d, v18.2d
-	fdiv	v19.2d, v1.2d, v19.2d
-	fcvtl	v1.2d, v17.2s
-	fadd	v1.2d, v1.2d, v18.2d
-	fdiv	v0.2d, v0.2d, v1.2d
-	fcvtl2	v1.2d, v16.4s
-	fadd	v1.2d, v1.2d, v18.2d
-	fdiv	v16.2d, v3.2d, v1.2d
-	fcvtn	v1.2s, v2.2d
-	fcvtn	v2.2s, v4.2d
-	fcvtn	v3.2s, v6.2d
-	fcvtn	v0.2s, v0.2d
-	fcvtn2	v2.4s, v5.2d
-	fcvtn2	v3.4s, v7.2d
-	fcvtn2	v0.4s, v19.2d
-	fcvtn2	v1.4s, v16.2d
+	fcvt	d1, s1
+	adrp	x8, .LCPI0_0
+	ldr	d2, [x8, :lo12:.LCPI0_0]
+	fadd	d1, d1, d2
+	fdiv	d0, d0, d1
+	fcvt	s0, d0
 	ret
                                         // -- End function

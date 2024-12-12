@@ -12,7 +12,7 @@
 define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -30,7 +30,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

@@ -33,5 +33,5 @@
 	.byte	128                             # 0x80
 func0000000000000001:                   # @func0000000000000001
 	vpshufb	.LCPI0_0(%rip), %ymm2, %ymm2    # ymm2 = ymm2[4],zero,zero,zero,zero,zero,zero,zero,ymm2[12],zero,zero,zero,zero,zero,zero,zero,ymm2[20],zero,zero,zero,zero,zero,zero,zero,ymm2[28],zero,zero,zero,zero,zero,zero,zero
-	vpternlogq	$30, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 ^ (ymm2 | ymm1)
+	vpternlogq	$30, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 ^ (ymm1 | ymm2)
 	retq

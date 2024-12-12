@@ -93,7 +93,7 @@
 ; rocksdb/optimized/lru_cache.cc.ll
 ; rust-analyzer-rs/optimized/11fzjzs7q1iz2s6j.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = add nuw i64 %0, 1
@@ -253,7 +253,7 @@ entry:
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = add i64 %0, 1
@@ -264,7 +264,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, 1
   %.highbits = lshr i64 %2, %1
@@ -278,7 +278,7 @@ entry:
 ; memcached/optimized/memcached-assoc.ll
 ; memcached/optimized/memcached_debug-assoc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = add i64 %0, 1
@@ -325,7 +325,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 2, %1
   %3 = add nuw i64 %0, 1
@@ -336,7 +336,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/sixstep.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %0, 2
   %.highbits = lshr i64 %2, %1
@@ -347,7 +347,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/dictobject.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = add nuw nsw i64 %0, 1

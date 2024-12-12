@@ -17,7 +17,7 @@ func0000000000000007:                   # @func0000000000000007
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
-	vmfne.vv	v0, v12, v8
+	vmfne.vv	v0, v8, v12
 	ret
 .LCPI3_0:
 	.word	0x3c23d70a                      # float 0.00999999977
@@ -36,7 +36,7 @@ func0000000000000008:                   # @func0000000000000008
 	flw	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
-	vmfeq.vv	v0, v12, v8
+	vmfeq.vv	v0, v8, v12
 	ret
 func000000000000000a:                   # @func000000000000000a
 	fli.s	fa5, 1.52587890625e-05

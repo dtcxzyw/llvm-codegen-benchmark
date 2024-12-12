@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -26,7 +26,6 @@
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; graphviz/optimized/arrows.c.ll
-; gromacs/optimized/dlarfg.cpp.ll
 ; gromacs/optimized/fixpoint.c.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll

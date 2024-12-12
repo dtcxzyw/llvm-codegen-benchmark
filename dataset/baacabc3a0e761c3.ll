@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; openssl/optimized/libdefault-lib-rsa_kmgmt.ll
+; slurm/optimized/update_job.ll
 ; verilator/optimized/V3Assert.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1) #0 {

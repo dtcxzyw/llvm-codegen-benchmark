@@ -41,6 +41,17 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i64 %0) #0 {
+entry:
+  %1 = udiv i64 %0, 100000000
+  %2 = trunc i64 %1 to i32
+  %3 = shl nuw nsw i32 %2, 1
+  ret i32 %3
+}
+
+; 1 occurrences:
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0) #0 {

@@ -15,39 +15,39 @@
 ; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
 ; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = lshr i64 %0, 6
-  %6 = getelementptr nusw i64, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -64
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 922880
   %5 = lshr i64 %0, 1
-  %6 = getelementptr nusw float, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -64
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 922880
   %5 = lshr exact i64 %0, 1
-  %6 = getelementptr nusw float, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %4, i64 %5
   ret ptr %6
 }
 

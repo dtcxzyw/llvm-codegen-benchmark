@@ -25,10 +25,9 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000040(i32 %0, i64 %1, i64 %2) #0 {
 entry:

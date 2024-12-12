@@ -226,7 +226,7 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -234,6 +234,7 @@ entry:
 ; hermes/optimized/GCBase.cpp.ll
 ; linux/optimized/i915_hwmon.ll
 ; linux/optimized/io_uring.ll
+; openusd/optimized/avif.c.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; quickjs/optimized/quickjs.ll

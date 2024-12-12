@@ -42,13 +42,15 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/cmdline.ll
 ; gromacs/optimized/qmmminputgenerator.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 3
-  %3 = lshr exact i64 %0, 3
+  %2 = ashr exact i64 %1, 5
+  %3 = lshr exact i64 %0, 5
   %4 = add nsw i64 %3, %2
   ret i64 %4
 }

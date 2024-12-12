@@ -1,12 +1,12 @@
-func0000000000000261:                   # @func0000000000000261
+func00000000000004c1:                   # @func00000000000004c1
 	shrq	$5, %rdx
 	imull	$-1431655765, %edx, %eax        # imm = 0xAAAAAAAB
 	cltq
 	leaq	(%rsi,%rax,4), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movq	%rdx, %rax
 	movabsq	$3074457345618258603, %rcx      # imm = 0x2AAAAAAAAAAAAAAB
 	imulq	%rcx
@@ -18,6 +18,6 @@ func0000000000000061:                   # @func0000000000000061
 	leaq	(%rax,%rax,2), %rax
 	shlq	$5, %rax
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

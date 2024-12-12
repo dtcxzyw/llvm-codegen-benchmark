@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/nbd_server.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i16 %1, i16 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = icmp eq i16 %1, 0
@@ -45,21 +45,9 @@ entry:
 ; icu/optimized/rbbitblb.ll
 ; icu/optimized/reslist.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i16 %1, i16 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp slt i16 %1, 0
-  %5 = select i1 %4, i32 %0, i32 %3
-  ret i32 %5
-}
-
-; 2 occurrences:
-; icu/optimized/collationdatabuilder.ll
-; icu/optimized/dtptngen.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
   %4 = icmp slt i16 %1, 0
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5

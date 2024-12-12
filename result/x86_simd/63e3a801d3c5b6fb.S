@@ -51,6 +51,6 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastq	.LCPI4_0(%rip), %ymm2   # ymm2 = [1342177280,1342177280,1342177280,1342177280]
 	vpbroadcastq	.LCPI4_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [1744830464,1744830464,1744830464,1744830464]
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogq	$254, .LCPI4_2(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq

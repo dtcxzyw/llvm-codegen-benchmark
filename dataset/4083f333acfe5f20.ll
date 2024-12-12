@@ -234,7 +234,7 @@ define i32 @func0000000000000061(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = zext nneg i16 %4 to i32
   ret i32 %5
 }

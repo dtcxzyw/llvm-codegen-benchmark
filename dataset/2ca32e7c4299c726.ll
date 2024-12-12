@@ -3,7 +3,7 @@
 ; openvdb/optimized/Merge.cc.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -17,7 +17,7 @@ entry:
 ; llvm/optimized/IVDescriptors.cpp.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp eq i8 %2, 0
@@ -34,7 +34,7 @@ entry:
 ; nuttx/optimized/lib_setvbuf.c.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -5
   %3 = icmp eq i8 %2, 0
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_dp_helper.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i8 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0

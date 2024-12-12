@@ -1,11 +1,20 @@
 
-; 321 occurrences:
+; 329 occurrences:
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
 ; brotli/optimized/cluster.c.ll
 ; brotli/optimized/metablock.c.ll
 ; casadi/optimized/casadi_misc.cpp.ll
@@ -227,7 +236,6 @@
 ; proj/optimized/grids.cpp.ll
 ; proj/optimized/gridshift.cpp.ll
 ; proj/optimized/krovak.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/unitconvert.cpp.ll
 ; proj/optimized/xyzgridshift.cpp.ll
 ; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
@@ -256,6 +264,7 @@
 ; quantlib/optimized/fdmhestonop.ll
 ; quantlib/optimized/fdmshoutloginnervaluecalculator.ll
 ; quantlib/optimized/fdmsquarerootfwdop.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/gsrprocesscore.ll
 ; quantlib/optimized/hestonexpansionengine.ll
@@ -292,7 +301,6 @@
 ; stat-rs/optimized/rkxxfn3f5mhspne.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; sundials/optimized/arkode.c.ll
-; sundials/optimized/arkode_butcher_dirk.c.ll
 ; sundials/optimized/arkode_root.c.ll
 ; sundials/optimized/cvode.c.ll
 ; sundials/optimized/cvodes.c.ll

@@ -10,7 +10,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	vpmovqd	%ymm1, %xmm1
 	vpsllvd	%xmm0, %xmm1, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1

@@ -1,6 +1,8 @@
 
-; 23 occurrences:
+; 21 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -8,11 +10,8 @@
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; libquic/optimized/xts.c.ll
-; linux/optimized/mlme.ll
-; linux/optimized/utxface.ll
 ; llvm/optimized/ImplicitNullChecks.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; openssl/optimized/libcrypto-lib-e_aes.ll
@@ -22,7 +21,6 @@
 ; openssl/optimized/libdefault-lib-sskdf.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
-; ruby/optimized/util.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -34,11 +32,12 @@ entry:
 
 ; 92 occurrences:
 ; abc/optimized/aigRetF.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; clamav/optimized/qopen.cpp.ll
 ; clamav/optimized/str.c.ll
@@ -71,6 +70,7 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
+; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
@@ -114,13 +114,11 @@ entry:
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; slurm/optimized/acct_policy.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wireshark/optimized/packet-9p.c.ll
 ; wireshark/optimized/packet-windows-common.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; zfp/optimized/decode4d.c.ll
 ; zfp/optimized/decode4f.c.ll
 ; zfp/optimized/decode4i.c.ll
@@ -134,7 +132,7 @@ entry:
   ret i1 %5
 }
 
-; 80 occurrences:
+; 107 occurrences:
 ; abc/optimized/mpmPre.c.ll
 ; assimp/optimized/Compression.cpp.ll
 ; clamav/optimized/hash.c.ll
@@ -215,6 +213,33 @@ entry:
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; yosys/optimized/abc9_ops.ll
+; zed-rs/optimized/0shzia4rq4g6h8kjkikjoiomb.ll
+; zed-rs/optimized/1v7j1lpugnisv9daukqm09uho.ll
+; zed-rs/optimized/2b5epevbd7jhjlkz6ehj52cc4.ll
+; zed-rs/optimized/2cln4wwtbatakisd00mkyigjx.ll
+; zed-rs/optimized/33rkokx33jojn4e2zze21122o.ll
+; zed-rs/optimized/3ovedgaw1yidfseciw93ubpv7.ll
+; zed-rs/optimized/3yuucpqql1loab77fqweoks3j.ll
+; zed-rs/optimized/4rde7ei8d9umgrx3gilbh5pcm.ll
+; zed-rs/optimized/4yqh3b8m7vpg06mecus93mbzu.ll
+; zed-rs/optimized/5bn6wrz9qaifqeni05lf8cibk.ll
+; zed-rs/optimized/5vqglwavs7x5ah6w1ejgztrvj.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/8bdv6qixt9qul7ot3pqkuv6y0.ll
+; zed-rs/optimized/9dixi1f5n9fsuw6rta4qv392p.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9fsh6tyjlyb0bbg5pjtpyx575.ll
+; zed-rs/optimized/aeb08iti0f05mbycbtihrb869.ll
+; zed-rs/optimized/b24zfxrgx5tc187baf12e3yvr.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/coubwx0ymivp1eppm9661q4wd.ll
+; zed-rs/optimized/csxkqny0wxpy2b3vgxe7eo7wr.ll
+; zed-rs/optimized/d9ca0x39ei2n59u3v4jxmnvzg.ll
+; zed-rs/optimized/dqctrxtodg7m16ametxw8bpap.ll
+; zed-rs/optimized/e9q9l7f0w4ywe2gh59is8xhs3.ll
+; zed-rs/optimized/ebs384vwi5poocupeo8nd3jof.ll
+; zed-rs/optimized/egm0sjwfqjsh1euhtb2jbtx6o.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -224,7 +249,7 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -232,7 +257,6 @@ entry:
 ; cmake/optimized/index_hash.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; folly/optimized/Codel.cpp.ll
 ; linux/optimized/msg.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; nuttx/optimized/wd_start.c.ll
@@ -251,7 +275,7 @@ entry:
   ret i1 %5
 }
 
-; 36 occurrences:
+; 38 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/giaBalAig.c.ll
@@ -287,7 +311,9 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/string.ll
+; slurm/optimized/job_test.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i64 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -297,9 +323,7 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMuxes.c.ll
+; 17 occurrences:
 ; hyperscan/optimized/ng_edge_redundancy.cpp.ll
 ; jemalloc/optimized/ctl.ll
 ; jemalloc/optimized/ctl.pic.ll
@@ -326,28 +350,36 @@ entry:
   ret i1 %5
 }
 
-; 28 occurrences:
+; 2 occurrences:
+; linux/optimized/mlme.ll
+; ruby/optimized/util.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = or i1 %1, %2
+  %4 = icmp samesign ult i64 %0, 9007199254740992
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 24 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; clamav/optimized/hash.c.ll
 ; cmake/optimized/archive_blake2s_ref.c.ll
 ; cmake/optimized/archive_blake2sp_ref.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
-; cmake/optimized/setopt.c.ll
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; cpython/optimized/blake2b_impl.ll
 ; cpython/optimized/blake2s_impl.ll
-; curl/optimized/libcurl_la-setopt.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; libevent/optimized/buffer.c.ll
 ; lief/optimized/ccm.c.ll
-; linux/optimized/p4.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
-; nuttx/optimized/pthread_attr_setstack.c.ll
 ; ocio/optimized/LogOpData.cpp.ll
 ; openssl/optimized/libdefault-lib-sskdf.ll
 ; openssl/optimized/libdefault-lib-x942kdf.ll
@@ -364,10 +396,9 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; hermes/optimized/TypedArray.cpp.ll
-; icu/optimized/putil.ll
 ; qemu/optimized/util_async.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i64 %0, i1 %1, i1 %2) #0 {
@@ -378,26 +409,14 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; lief/optimized/pkcs12.c.ll
 ; linux/optimized/journal.ll
 ; llvm/optimized/TargetTransformInfo.cpp.ll
-; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000020(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 4999999
-  %4 = or i1 %0, %1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; icu/optimized/putil.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %2, -1
+  %3 = icmp ugt i64 %2, 64
   %4 = or i1 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5

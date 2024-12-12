@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 10 occurrences:
 ; icu/optimized/ubidi.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
@@ -10,13 +10,11 @@
 ; mold/optimized/passes.cc.RV32BE.cc.ll
 ; mold/optimized/passes.cc.RV32LE.cc.ll
 ; mold/optimized/passes.cc.SH4.cc.ll
-; qemu/optimized/source_s_mulAddF16.c.ll
-; spike/optimized/s_mulAddF16.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -30,7 +28,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -58,7 +56,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -70,7 +68,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

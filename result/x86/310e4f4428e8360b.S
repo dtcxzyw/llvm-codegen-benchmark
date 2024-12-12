@@ -1,3 +1,11 @@
+func00000000000000c0:                   # @func00000000000000c0
+	leaq	(%rsi,%rdx,8), %rax
+	leaq	8(%rdi,%rax), %rax
+	retq
+func00000000000000e0:                   # @func00000000000000e0
+	leaq	(%rsi,%rdx,2), %rax
+	leaq	2(%rdi,%rax), %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	shlq	$4, %rdx
 	addq	%rsi, %rdx

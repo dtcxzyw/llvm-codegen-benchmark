@@ -1,28 +1,25 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; llvm/optimized/SplitKit.cpp.ll
 ; ruby/optimized/rjit_c.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_ui32_r_minMag.ll
 ; spike/optimized/f64_to_i32_r_minMag.ll
 ; spike/optimized/f64_to_i64_r_minMag.ll
 ; spike/optimized/f64_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 26
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   ret i1 %3
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; freetype/optimized/sfnt.c.ll
-; hdf5/optimized/H5B2internal.c.ll
-; hdf5/optimized/H5Gstab.c.ll
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/kexec_core.ll
 ; node/optimized/libnode.node_dir.ll
@@ -46,10 +43,10 @@ entry:
 ; yosys/optimized/test_cell.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -113,14 +110,15 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 192
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; clamav/optimized/regexec.c.ll
 ; cvc5/optimized/linear_equality.cpp.ll
 ; cvc5/optimized/parse.cpp.ll
+; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/introspection_bloom.c.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
@@ -182,17 +180,17 @@ entry:
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/dd_pdd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 16
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
 ; 33 occurrences:
 ; abseil-cpp/optimized/marshalling.cc.ll
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/xlm_extract.c.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256_nosse.ll
 ; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll
 ; lief/optimized/x509.c.ll
@@ -224,10 +222,10 @@ entry:
 ; postgres/optimized/mvdistinct.ll
 ; postgres/optimized/trigger.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 33
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
@@ -270,7 +268,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -325,12 +323,11 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
-; 19 occurrences:
-; linux/optimized/page_alloc.ll
+; 18 occurrences:
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
 ; mold/optimized/icf.cc.ARM64.cc.ll
@@ -353,11 +350,12 @@ entry:
 define i1 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = icmp uge i64 %2, %0
+  %3 = icmp ule i64 %0, %2
   ret i1 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; cpython/optimized/io.ll
 ; freetype/optimized/autofit.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -368,10 +366,22 @@ entry:
 ; sentencepiece/optimized/strutil.cc.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, -9223372036854775808
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
+  ret i1 %3
+}
+
+; 3 occurrences:
+; hdf5/optimized/H5B2internal.c.ll
+; hdf5/optimized/H5Gstab.c.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i64 %1, 2
+  %3 = icmp samesign ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -380,10 +390,10 @@ entry:
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 3
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 
@@ -394,7 +404,17 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, -9223372036854775808
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i64 %1, 2
+  %3 = icmp samesign ult i64 %0, %2
   ret i1 %3
 }
 

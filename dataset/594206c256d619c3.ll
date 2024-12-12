@@ -1,21 +1,9 @@
 
 ; 2 occurrences:
-; ruby/optimized/addr2line.ll
-; wireshark/optimized/packet-bthid.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
-entry:
-  %2 = add nsw i32 %0, -128
-  %3 = icmp ult i8 %1, 64
-  %4 = select i1 %3, i32 %0, i32 %2
-  ret i32 %4
-}
-
-; 2 occurrences:
 ; icu/optimized/ucnv_lmb.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -5
   %3 = icmp slt i8 %1, 5
@@ -33,7 +21,7 @@ entry:
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/phpdbg_utils.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 2
   %3 = icmp eq i8 %1, 0
@@ -70,7 +58,7 @@ entry:
 ; wireshark/optimized/pcapio.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 3
   %3 = icmp eq i8 %1, 0
@@ -82,7 +70,7 @@ entry:
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; wireshark/optimized/packet-scte35.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i8 %1) #0 {
+define i32 @func000000000000006a(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 4
   %3 = icmp slt i8 %1, 0
@@ -91,9 +79,20 @@ entry:
 }
 
 ; 1 occurrences:
+; wireshark/optimized/packet-bthid.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000024(i32 %0, i8 %1) #0 {
+entry:
+  %2 = add nsw i32 %0, -1000
+  %3 = icmp ult i8 %1, -6
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; linux/optimized/intel_display_power_well.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000068(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 7
   %3 = icmp ugt i8 %1, 2
@@ -102,24 +101,13 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/wol.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
-entry:
-  %2 = add nuw i32 %0, 12
-  %3 = icmp eq i8 %1, 0
-  %4 = select i1 %3, i32 %0, i32 %2
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; graphviz/optimized/sgd.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

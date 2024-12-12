@@ -51,7 +51,7 @@ func0000000000000013:                   # @func0000000000000013
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000043:                   # @func0000000000000043
+func0000000000000143:                   # @func0000000000000143
 	vpcmpltub	.LCPI2_0(%rip), %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsrlq	$63, %ymm1, %ymm1

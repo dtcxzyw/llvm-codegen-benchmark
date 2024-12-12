@@ -47,7 +47,7 @@ entry:
 ; yosys/optimized/ezsat.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -79,7 +79,7 @@ entry:
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -110,7 +110,7 @@ entry:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw nsw i64 %1, %3
@@ -155,7 +155,7 @@ entry:
 ; openspiel/optimized/spades.cc.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -169,7 +169,7 @@ entry:
 ; protobuf/optimized/enum.cc.ll
 ; qemu/optimized/migration_qemu-file.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -191,7 +191,7 @@ entry:
 ; openjdk/optimized/loopnode.ll
 ; openjdk/optimized/parse2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -208,7 +208,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/tm2unixtime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -219,7 +219,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -253,7 +253,7 @@ entry:
 ; git/optimized/record.ll
 ; nuttx/optimized/lib_meminstream.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw i64 %1, %3
@@ -264,7 +264,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/record.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw i64 %1, %3
@@ -311,7 +311,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3

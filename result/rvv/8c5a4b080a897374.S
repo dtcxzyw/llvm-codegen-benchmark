@@ -5,6 +5,16 @@ func000000000000007d:                   # @func000000000000007d
 	addi	a0, a0, 576
 	vwmaccu.vx	v8, a0, v10
 	ret
+func000000000000002f:                   # @func000000000000002f
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vadd.vv	v10, v10, v11
+	lui	a0, 2575
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v12, v10
+	addiw	a0, a0, -325
+	slli	a0, a0, 13
+	vmacc.vx	v8, a0, v12
+	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v10, v11

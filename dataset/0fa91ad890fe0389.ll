@@ -1,5 +1,5 @@
 
-; 166 occurrences:
+; 164 occurrences:
 ; arrow/optimized/bridge.cc.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
@@ -97,7 +97,6 @@
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -128,7 +127,6 @@
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -167,7 +165,7 @@
 ; quantlib/optimized/upperboundengine.ll
 ; velox/optimized/ConjunctExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = sdiv exact i64 %0, 12
@@ -235,7 +233,7 @@ entry:
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = sdiv exact i64 %0, 12
@@ -250,7 +248,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %0, 24
@@ -267,7 +265,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %0, 24
@@ -278,7 +276,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = sdiv exact i64 %0, 104
@@ -289,7 +287,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = sdiv exact i64 %0, 96
@@ -303,7 +301,7 @@ entry:
 ; gromacs/optimized/atomsbuilder.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %0, 12
@@ -315,7 +313,7 @@ entry:
 ; wireshark/optimized/proto_tree.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %0, 24
@@ -326,7 +324,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = sdiv exact i64 %0, 24

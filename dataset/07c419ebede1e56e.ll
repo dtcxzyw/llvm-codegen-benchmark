@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 33 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; git/optimized/pretty.ll
 ; linux/optimized/base.ll
@@ -21,17 +21,28 @@
 ; ruby/optimized/sprintf.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 86 occurrences:
+; 83 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/bignum.cc.ll
@@ -76,8 +87,6 @@ entry:
 ; openblas/optimized/dlasda.c.ll
 ; openblas/optimized/dlaswlq.c.ll
 ; openblas/optimized/dlatsqr.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/blenders.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; openjdk/optimized/BufferedMaskBlit.ll
@@ -103,7 +112,6 @@ entry:
 ; openjdk/optimized/UshortGray.ll
 ; openjdk/optimized/UshortIndexed.ll
 ; openmpi/optimized/ad_aggregate.ll
-; openmpi/optimized/topo_base_dist_graph_create.ll
 ; openusd/optimized/bignum.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; php/optimized/interval.ll
@@ -123,12 +131,13 @@ define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
+; clamav/optimized/bytecode_api.c.ll
 ; draco/optimized/rans_bit_encoder.cc.ll
 ; git/optimized/preload-index.ll
 ; graphviz/optimized/exeval.c.ll
@@ -170,11 +179,11 @@ define i64 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaQbf.c.ll
@@ -188,7 +197,6 @@ entry:
 ; gromacs/optimized/makebondedlinks.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; opencv/optimized/blenders.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
@@ -234,7 +242,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -245,7 +253,7 @@ define i64 @func0000000000000009(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

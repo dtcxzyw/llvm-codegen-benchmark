@@ -8,13 +8,3 @@ func0000000000000002:                   # @func0000000000000002
 	andq	$-4096, %rdi                    # imm = 0xF000
 	leaq	(%rdi,%rdx), %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	subq	%rsi, %rdx
-	andl	$-4, %edi
-	leaq	(%rdi,%rdx), %rax
-	retq
-func0000000000000001:                   # @func0000000000000001
-	subq	%rsi, %rdx
-	andq	$-2, %rdi
-	leaq	(%rdi,%rdx), %rax
-	retq

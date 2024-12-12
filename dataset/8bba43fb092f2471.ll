@@ -1,11 +1,16 @@
 
-; 206 occurrences:
+; 215 occurrences:
 ; abc/optimized/giaEdge.c.ll
 ; abc/optimized/retDelay.c.ll
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; brotli/optimized/encode.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
+; clamav/optimized/cabd.c.ll
 ; clamav/optimized/cmddata.cpp.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
@@ -71,13 +76,11 @@
 ; llvm/optimized/DecoderEmitter.cpp.ll
 ; llvm/optimized/DirectX.cpp.ll
 ; llvm/optimized/DwarfCFIException.cpp.ll
-; llvm/optimized/EditedSource.cpp.ll
 ; llvm/optimized/FormatString.cpp.ll
 ; llvm/optimized/HIPUtility.cpp.ll
 ; llvm/optimized/Hexagon.cpp.ll
 ; llvm/optimized/InstCombineAddSub.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/Lanai.cpp.ll
 ; llvm/optimized/LoongArch.cpp.ll
 ; llvm/optimized/M68k.cpp.ll
@@ -131,6 +134,8 @@
 ; llvm/optimized/X86WinFixupBufferSecurityCheck.cpp.ll
 ; llvm/optimized/XCore.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/inputhandler.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -158,6 +163,8 @@
 ; openssl/optimized/libcrypto-shlib-bn_mont.ll
 ; openssl/optimized/libcrypto-shlib-cms_smime.ll
 ; openssl/optimized/libcrypto-shlib-encode.ll
+; openssl/optimized/libssl-lib-rec_layer_s3.ll
+; openssl/optimized/libssl-shlib-rec_layer_s3.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; php/optimized/dfa_pass.ll
@@ -179,6 +186,7 @@
 ; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
+; slurm/optimized/scancel.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/verilated.ll
@@ -205,6 +213,7 @@
 ; z3/optimized/theory_array_base.cpp.ll
 ; z3/optimized/theory_array_full.cpp.ll
 ; z3/optimized/theory_opt.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

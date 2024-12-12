@@ -11,7 +11,13 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 8 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind
@@ -41,7 +47,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; eastl/optimized/EAScanfCore.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; icu/optimized/messagepattern.ll
 ; Function Attrs: nounwind
@@ -63,18 +70,6 @@ entry:
   %3 = add nsw i32 %2, -48
   %4 = mul nsw i32 %0, 10
   %5 = add i32 %3, %4
-  ret i32 %5
-}
-
-; 1 occurrences:
-; eastl/optimized/EAScanfCore.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000015(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i32
-  %3 = add nsw i32 %2, -48
-  %4 = mul nsw i32 %0, 10
-  %5 = add nsw i32 %3, %4
   ret i32 %5
 }
 

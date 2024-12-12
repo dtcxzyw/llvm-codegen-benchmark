@@ -3,11 +3,6 @@ func000000000000000c:                   # @func000000000000000c
 	setno	%al
 	negb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	xorl	%eax, %eax
-	cmpq	$1073741824, %rdi               # imm = 0x40000000
-	sbbl	%eax, %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	shrq	$32, %rdi
 	xorl	%eax, %eax
@@ -15,7 +10,7 @@ func0000000000000008:                   # @func0000000000000008
 	sbbl	%eax, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	cmpq	$3, %rdi
-	sete	%al
-	negb	%al
+	xorl	%eax, %eax
+	cmpq	$1, %rdi
+	sbbl	%eax, %eax
 	retq

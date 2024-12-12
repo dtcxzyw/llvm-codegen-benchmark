@@ -1,5 +1,5 @@
 
-%union.TValue.3498591 = type { i64 }
+%union.TValue.3680757 = type { i64 }
 
 ; 9 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
@@ -12,7 +12,7 @@
 ; quickjs/optimized/cutils.ll
 ; wireshark/optimized/ascend_scanner.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -26,7 +26,7 @@ entry:
 ; git/optimized/dir.ll
 ; openjdk/optimized/interpreterRuntime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -55,7 +55,7 @@ entry:
 ; verilator/optimized/V3ParseLex.cpp.ll
 ; verilator/optimized/V3PreProc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 30
@@ -64,13 +64,12 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/cmListFileLexer.c.ll
-; git/optimized/sequencer.ll
 ; php/optimized/zend_jit.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -82,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -94,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/distribution.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
@@ -104,9 +103,21 @@ entry:
 }
 
 ; 1 occurrences:
+; git/optimized/sequencer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 32
+  %5 = getelementptr i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; linux/optimized/filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -119,11 +130,11 @@ entry:
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
-  %5 = getelementptr nusw %union.TValue.3498591, ptr %1, i64 %4
+  %5 = getelementptr nusw %union.TValue.3680757, ptr %1, i64 %4
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }

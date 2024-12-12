@@ -1,16 +1,15 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
-; ring-rs/optimized/2r3wc2wo4j1ozk7e.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -163,20 +162,21 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; hermes/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -186,8 +186,8 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 

@@ -8,6 +8,10 @@ func000000000000003d:                   # @func000000000000003d
 	andi	a0, a0, -8
 	addi	a0, a0, 56
 	ret
+func0000000000000020:                   # @func0000000000000020
+	andi	a0, a0, -2
+	addi	a0, a0, 4
+	ret
 func0000000000000039:                   # @func0000000000000039
 	andi	a0, a0, -8
 	ret

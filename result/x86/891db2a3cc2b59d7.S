@@ -11,11 +11,12 @@ func0000000000000006:                   # @func0000000000000006
 	shlb	$7, %al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	andb	$1, %dil
-	shlb	$3, %dil
-	orb	$96, %dil
 	cmpb	$96, %sil
-	movzbl	%dil, %ecx
+	setne	%al
+	shlb	$3, %al
+	orb	$96, %al
+	movzbl	%al, %ecx
+	testb	$1, %dil
 	movl	$96, %eax
 	cmovnel	%ecx, %eax
 	retq
@@ -30,10 +31,10 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
-	testb	$1, %dil
-	setne	%al
 	cmpb	$3, %sil
+	setb	%al
 	leal	1(%rax,%rax,2), %ecx
+	testb	$1, %dil
 	movl	$1, %eax
-	cmovbl	%ecx, %eax
+	cmovnel	%ecx, %eax
 	retq

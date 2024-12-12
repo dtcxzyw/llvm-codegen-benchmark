@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-lib-a_time.ll
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i8 %0, i32 %1) #0 {
+define i1 @func00000000000002a6(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
   %3 = add nsw i32 %2, -480
@@ -23,7 +23,7 @@ entry:
 ; php/optimized/spprintf.ll
 ; redis/optimized/lua_struct.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i8 %0, i32 %1) #0 {
+define i1 @func000000000000020a(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
   %3 = add i32 %2, -48
@@ -52,7 +52,7 @@ entry:
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000206(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
   %3 = add i32 %2, -48
@@ -66,7 +66,7 @@ entry:
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000201(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
   %3 = add i32 %2, -48
@@ -79,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; libevent/optimized/http.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000228(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
   %3 = add i32 %2, -48

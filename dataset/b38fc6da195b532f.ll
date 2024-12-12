@@ -1,11 +1,10 @@
 
-; 39 occurrences:
+; 46 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/cuddDecomp.c.ll
 ; abc/optimized/cuddGenCof.c.ll
-; abc/optimized/cuddSat.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/hopUtil.c.ll
@@ -23,6 +22,13 @@
 ; linux/optimized/string.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_span.ll
 ; node/optimized/libnode.string_bytes.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
@@ -39,6 +45,7 @@
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-pn-rt.c.ll
 ; z3/optimized/euf_solver.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0) #0 {
 entry:
@@ -48,12 +55,13 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/hopUtil.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; arrow/optimized/crc32.cc.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-dcerpc-nt.c.ll
 ; Function Attrs: nounwind
@@ -65,12 +73,27 @@ entry:
   ret i1 %3
 }
 
+; 4 occurrences:
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_refr.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(ptr %0) #0 {
+entry:
+  %1 = ptrtoint ptr %0 to i64
+  %2 = trunc i64 %1 to i32
+  %3 = and i32 %2, -1610612737
+  %4 = icmp sgt i32 %3, 268435455
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; linux/optimized/virtio_net.ll
 ; wireshark/optimized/packet-dcerpc-nt.c.ll
 ; wireshark/optimized/packet-pn-ptcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(ptr %0) #0 {
+define i1 @func0000000000000018(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = and i64 %1, 65534

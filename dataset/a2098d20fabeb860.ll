@@ -11,7 +11,7 @@ entry:
   ret i8 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; ocio/optimized/GradingPrimary.cpp.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
@@ -19,6 +19,7 @@ entry:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i1 %0, float %1) #0 {
 entry:

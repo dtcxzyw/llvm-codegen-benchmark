@@ -13,13 +13,14 @@ entry:
   ret i64 %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/sub_launcher.ll
 ; cpython/optimized/compile.ll
 ; cvc5/optimized/core_solver.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; gromacs/optimized/block.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
@@ -47,13 +48,10 @@ entry:
   ret i64 %4
 }
 
-; 161 occurrences:
+; 158 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; oiio/optimized/printinfo.cpp.ll
-; opencv/optimized/nldiffusion_functions.cpp.ll
 ; velox/optimized/MallocAllocator.cpp.ll
-; wireshark/optimized/packet_list.cpp.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/abc.ll
 ; yosys/optimized/abc9_ops.ll
 ; yosys/optimized/aiger.ll

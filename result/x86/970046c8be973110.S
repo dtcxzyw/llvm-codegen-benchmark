@@ -1,6 +1,6 @@
 func000000000000001e:                   # @func000000000000001e
 	andl	$2097151, %esi                  # imm = 0x1FFFFF
-	leaq	1048576(%rsi,%rdi), %rax
+	leaq	1048576(%rdi,%rsi), %rax
 	shrq	$21, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
@@ -18,6 +18,6 @@ func000000000000001a:                   # @func000000000000001a
 	retq
 func0000000000000002:                   # @func0000000000000002
 	andq	$-8, %rsi
-	leaq	-1(%rsi,%rdi), %rax
+	leaq	-1(%rdi,%rsi), %rax
 	shrq	$3, %rax
 	retq

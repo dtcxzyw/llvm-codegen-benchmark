@@ -10,7 +10,7 @@ entry:
   ret double %2
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; graphviz/optimized/make_map.c.ll
 ; graphviz/optimized/position.c.ll
 ; lightgbm/optimized/objective_function.cpp.ll
@@ -20,7 +20,6 @@ entry:
 ; luajit/optimized/lj_tab_dyn.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/hough.cpp.ll

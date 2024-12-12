@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; abc/optimized/sclDnsize.c.ll
 ; abc/optimized/sclSize.c.ll
 ; abc/optimized/sclUpsize.c.ll
@@ -23,7 +23,6 @@
 ; meshlab/optimized/edit_manipulators.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; minetest/optimized/guiChatConsole.cpp.ll

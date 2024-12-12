@@ -19,8 +19,7 @@ entry:
   ret double %2
 }
 
-; 46 occurrences:
-; abseil-cpp/optimized/exponential_biased.cc.ll
+; 45 occurrences:
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/casadi_low.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll

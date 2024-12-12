@@ -1,18 +1,18 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
+	movl	$1, %eax
+	shlxq	%rdx, %rax, %rax
+	testq	%rax, %rsi
+	setne	%al
+	orb	%dil, %al
+	retq
+func000000000000006c:                   # @func000000000000006c
 	movl	$1, %eax
 	shlxq	%rdx, %rax, %rax
 	testq	%rsi, %rax
 	setne	%al
 	orb	%dil, %al
 	retq
-func000000000000003c:                   # @func000000000000003c
-	movl	$1, %eax
-	shlxq	%rdx, %rax, %rax
-	testq	%rsi, %rax
-	setne	%al
-	orb	%dil, %al
-	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	$1, %eax
 	shlxq	%rdx, %rax, %rax
 	testq	%rsi, %rax
@@ -26,10 +26,10 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movl	$1, %eax
 	shlxq	%rdx, %rax, %rax
-	testq	%rsi, %rax
+	testq	%rax, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq

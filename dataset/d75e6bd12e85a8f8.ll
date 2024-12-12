@@ -11,8 +11,10 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/rational.ll
 ; hermes/optimized/InstSimplify.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/map.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; openjdk/optimized/constantTable.ll
@@ -42,21 +44,34 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; llvm/optimized/LegalizerHelper.cpp.ll
+; 2 occurrences:
+; boost/optimized/rational.ll
+; bullet3/optimized/btConvexPolyhedron.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = trunc nuw i32 %1 to i16
+  %2 = trunc i32 %1 to i16
   %3 = trunc i32 %0 to i16
-  %4 = icmp ugt i16 %3, %2
+  %4 = icmp sgt i16 %3, %2
   ret i1 %4
 }
 
-; 5 occurrences:
+; 1 occurrences:
+; boost/optimized/rational.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i32 %1 to i16
+  %3 = trunc i32 %0 to i16
+  %4 = icmp slt i16 %3, %2
+  ret i1 %4
+}
+
+; 6 occurrences:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
+; lvgl/optimized/lv_obj.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; Function Attrs: nounwind
@@ -65,6 +80,17 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = trunc i32 %0 to i16
   %4 = icmp ult i16 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/LegalizerHelper.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
+entry:
+  %2 = trunc nuw i32 %1 to i16
+  %3 = trunc i32 %0 to i16
+  %4 = icmp ugt i16 %3, %2
   ret i1 %4
 }
 
@@ -85,7 +111,7 @@ entry:
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = trunc i32 %0 to i16

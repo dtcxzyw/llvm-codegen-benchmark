@@ -1,6 +1,11 @@
 
-; 32 occurrences:
+; 41 occurrences:
 ; actix-rs/optimized/2l54a10og4z99516.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/url_base.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -32,6 +37,10 @@
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-woww.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i16 %0) #0 {
 entry:

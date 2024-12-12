@@ -1,61 +1,19 @@
 
 ; 2 occurrences:
-; abc/optimized/wlcNtk.c.ll
-; qemu/optimized/block_vhdx-log.c.ll
-; Function Attrs: nounwind
-define i32 @func00000000000001e3(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 2
-  %3 = and i32 %2, 127
-  %4 = icmp ne i32 %3, 0
-  %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 2 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; qemu/optimized/block_vhdx-log.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000063(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 2
-  %3 = and i32 %2, 127
-  %4 = icmp ne i32 %3, 0
-  %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
+  %2 = and i32 %1, 127
+  %3 = icmp ne i32 %2, 126
+  %4 = zext i1 %3 to i32
+  %5 = add nuw nsw i32 %0, %4
+  ret i32 %5
 }
 
-; 2 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; openjdk/optimized/hb-set.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 1
-  %3 = and i32 %2, 511
-  %4 = icmp eq i32 %3, 0
-  %5 = zext i1 %4 to i32
-  %6 = add nuw i32 %5, %0
-  ret i32 %6
-}
-
-; 2 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; openjdk/optimized/hb-set.ll
-; Function Attrs: nounwind
-define i32 @func000000000000010a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %1, 1
-  %3 = and i32 %2, 511
-  %4 = icmp eq i32 %3, 0
-  %5 = zext i1 %4 to i32
-  %6 = add nuw i32 %5, %0
-  ret i32 %6
-}
-
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -226,12 +184,12 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000e0(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000160(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 152
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -244,14 +202,13 @@ entry:
 ; abc/optimized/mfsMan.c.ll
 ; clamav/optimized/rebuildpe.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000e1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000161(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 31
-  %3 = and i32 %2, 31
-  %4 = icmp ne i32 %3, 0
-  %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
-  ret i32 %6
+  %2 = and i32 %1, 31
+  %3 = icmp ne i32 %2, 1
+  %4 = zext i1 %3 to i32
+  %5 = add nsw i32 %0, %4
+  ret i32 %5
 }
 
 ; 3 occurrences:
@@ -261,12 +218,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 31
-  %3 = and i32 %2, 31
-  %4 = icmp ne i32 %3, 0
-  %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
-  ret i32 %6
+  %2 = and i32 %1, 31
+  %3 = icmp ne i32 %2, 1
+  %4 = zext i1 %3 to i32
+  %5 = add nsw i32 %0, %4
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

@@ -14,7 +14,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	andb	%dl, %al
 	xorb	%cl, %al
 	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	vucomisd	%xmm1, %xmm0
 	setbe	%cl
 	cmpl	$2, %edi

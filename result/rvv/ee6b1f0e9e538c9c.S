@@ -8,7 +8,7 @@ func0000000000000002:                   # @func0000000000000002
 	vfmerge.vfm	v12, v12, fa5, v0
 	fli.s	fa5, 4.0
 	vfmul.vf	v12, v12, fa5
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fli.s	fa5, 1.0

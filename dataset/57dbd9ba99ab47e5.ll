@@ -16,7 +16,7 @@ entry:
   %3 = fmul double %2, 3.000000e-01
   %4 = fmul double %3, %1
   %5 = fptrunc double %4 to float
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 

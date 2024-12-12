@@ -1,7 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpxor	%ymm0, %ymm1, %ymm0
+	vpxor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	4276993783                      # 0xfeedbef7

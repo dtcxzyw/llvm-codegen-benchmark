@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 14 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; hyperscan/optimized/rose_build_castle.cpp.ll
 ; luau/optimized/Normalize.cpp.ll
@@ -9,6 +9,11 @@
 ; rust-analyzer-rs/optimized/3jiy4rg0squ6unio.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/ca5us8h013in59yvcsgdq94h9.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
@@ -18,7 +23,8 @@ entry:
   ret i1 %4
 }
 
-; 35 occurrences:
+; 36 occurrences:
+; boost/optimized/static_string.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
@@ -45,7 +51,6 @@ entry:
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; openjdk/optimized/mutableNUMASpace.ll
-; proj/optimized/factory.cpp.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; redis/optimized/stats.ll
 ; redis/optimized/stats.sym.ll
@@ -54,6 +59,7 @@ entry:
 ; rocksdb/optimized/compaction_iterator.cc.ll
 ; rocksdb/optimized/file_prefetch_buffer.cc.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
@@ -91,6 +97,19 @@ entry:
 define i1 @func0000000000000006(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 60
+  %3 = xor i1 %0, true
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 3 occurrences:
+; casadi/optimized/dm_instantiator.cpp.ll
+; casadi/optimized/im_instantiator.cpp.ll
+; casadi/optimized/sx_instantiator.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 3
   %3 = xor i1 %0, true
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4

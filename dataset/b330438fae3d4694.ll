@@ -10,7 +10,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = and i64 %2, 63
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -39,7 +39,7 @@ entry:
   %3 = and i64 %2, 63
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -52,7 +52,7 @@ entry:
   %3 = and i64 %2, 63
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

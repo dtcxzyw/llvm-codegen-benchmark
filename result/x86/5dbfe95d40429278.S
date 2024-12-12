@@ -1,11 +1,11 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	addq	%rdx, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addq	%rdx, %rsi
 	cmpq	$6, %rsi
 	setb	%cl
@@ -13,14 +13,14 @@ func0000000000000041:                   # @func0000000000000041
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	addq	%rdx, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	addq	%rdx, %rsi
 	testq	%rsi, %rsi
 	setg	%cl
@@ -28,7 +28,7 @@ func00000000000001aa:                   # @func00000000000001aa
 	setg	%al
 	andb	%cl, %al
 	retq
-func000000000000034c:                   # @func000000000000034c
+func0000000000000e8c:                   # @func0000000000000e8c
 	addq	%rdx, %rsi
 	cmpq	$16, %rsi
 	setb	%cl
@@ -36,14 +36,14 @@ func000000000000034c:                   # @func000000000000034c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000003ca:                   # @func00000000000003ca
+func0000000000000d8a:                   # @func0000000000000d8a
 	orq	%rdx, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000148:                   # @func0000000000000148
+func0000000000000698:                   # @func0000000000000698
 	addq	%rdx, %rsi
 	cmpq	$2, %rsi
 	setb	%cl
@@ -51,21 +51,21 @@ func0000000000000148:                   # @func0000000000000148
 	setae	%al
 	andb	%cl, %al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	addq	%rdx, %rsi
 	setns	%cl
 	testq	%rdi, %rdi
 	sets	%al
 	andb	%cl, %al
 	retq
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	addq	%rdx, %rsi
 	sets	%cl
 	testq	%rdi, %rdi
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	addq	%rdx, %rsi
 	testq	%rsi, %rsi
 	setg	%cl
@@ -73,7 +73,7 @@ func00000000000001a6:                   # @func00000000000001a6
 	sets	%al
 	andb	%cl, %al
 	retq
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	addq	%rdx, %rsi
 	testq	%rsi, %rsi
 	setg	%cl
@@ -81,14 +81,14 @@ func00000000000000ac:                   # @func00000000000000ac
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	addq	%rdx, %rsi
 	setne	%cl
 	cmpq	$4096, %rdi                     # imm = 0x1000
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	addq	%rdx, %rsi
 	cmpq	$262144, %rsi                   # imm = 0x40000
 	setb	%cl
@@ -96,13 +96,13 @@ func000000000000004c:                   # @func000000000000004c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	negq	%rdx
 	xorq	%rsi, %rdx
 	orq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addq	%rdx, %rsi
 	cmpq	$65536, %rsi                    # imm = 0x10000
 	setb	%cl
@@ -110,7 +110,7 @@ func0000000000000044:                   # @func0000000000000044
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000003cc:                   # @func00000000000003cc
+func0000000000000d8c:                   # @func0000000000000d8c
 	addq	%rdx, %rsi
 	cmpq	$40000, %rsi                    # imm = 0x9C40
 	setne	%cl
@@ -118,7 +118,7 @@ func00000000000003cc:                   # @func00000000000003cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000241:                   # @func0000000000000241
+func0000000000000881:                   # @func0000000000000881
 	addq	%rdx, %rsi
 	cmpq	$10, %rsi
 	setb	%cl
@@ -126,14 +126,21 @@ func0000000000000241:                   # @func0000000000000241
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	addq	%rdx, %rsi
 	xorq	$3, %rsi
 	xorq	$2, %rdi
 	orq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000586:                   # @func0000000000000586
+	addq	%rdx, %rsi
+	setne	%cl
+	testq	%rdi, %rdi
+	sets	%al
+	andb	%cl, %al
+	retq
+func0000000000000494:                   # @func0000000000000494
 	addq	%rdx, %rsi
 	cmpq	$100, %rsi
 	setb	%cl

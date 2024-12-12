@@ -22,7 +22,7 @@
 ; mold/optimized/cmdline.cc.X86_64.cc.ll
 ; node/optimized/libnode.node_blob.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000028c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/parse.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000102(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000194(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

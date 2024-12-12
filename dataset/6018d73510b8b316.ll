@@ -58,11 +58,11 @@
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/packet-smtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp eq i32 %3, %4
+  %4 = sub nsw i32 0, %3
+  %5 = icmp eq i32 %1, %4
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -73,9 +73,9 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ugt i32 %4, 11
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -85,21 +85,9 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp eq i32 %4, 6
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; postgres/optimized/numeric.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
-  %5 = icmp ugt i32 %4, 9
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

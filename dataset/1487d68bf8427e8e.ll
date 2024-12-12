@@ -1,15 +1,17 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsa_lib.ll
 ; openssl/optimized/libcrypto-shlib-rsa_lib.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -45,7 +47,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
   %3 = or i64 %2, 16384
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -195,7 +197,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = or disjoint i64 %2, 1
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 

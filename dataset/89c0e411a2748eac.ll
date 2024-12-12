@@ -5,7 +5,7 @@
 define i16 @func0000000000000004(i16 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = select i1 %4, i16 %0, i16 0
   ret i16 %5
 }

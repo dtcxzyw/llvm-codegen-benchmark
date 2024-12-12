@@ -1,5 +1,5 @@
 
-; 313 occurrences:
+; 171 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -93,99 +93,9 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; oiio/optimized/CineonHeader.cpp.ll
-; oiio/optimized/argparse.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
-; oiio/optimized/bmpinput.cpp.ll
-; oiio/optimized/bmpoutput.cpp.ll
-; oiio/optimized/cineoninput.cpp.ll
-; oiio/optimized/color_ocio.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; oiio/optimized/dpxinput.cpp.ll
-; oiio/optimized/dpxoutput.cpp.ll
-; oiio/optimized/environment.cpp.ll
-; oiio/optimized/errorhandler.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/fitsinput.cpp.ll
-; oiio/optimized/fitsoutput.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/hdroutput.cpp.ll
-; oiio/optimized/icc.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/icooutput.cpp.ll
-; oiio/optimized/iffinput.cpp.ll
-; oiio/optimized/iffoutput.cpp.ll
-; oiio/optimized/imagebuf.cpp.ll
-; oiio/optimized/imagebufalgo.cpp.ll
-; oiio/optimized/imagebufalgo_addsub.cpp.ll
-; oiio/optimized/imagebufalgo_channels.cpp.ll
-; oiio/optimized/imagebufalgo_compare.cpp.ll
-; oiio/optimized/imagebufalgo_copy.cpp.ll
-; oiio/optimized/imagebufalgo_deep.cpp.ll
-; oiio/optimized/imagebufalgo_draw.cpp.ll
-; oiio/optimized/imagebufalgo_mad.cpp.ll
-; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
-; oiio/optimized/imagebufalgo_muldiv.cpp.ll
-; oiio/optimized/imagebufalgo_opencv.cpp.ll
-; oiio/optimized/imagebufalgo_orient.cpp.ll
-; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageio.cpp.ll
-; oiio/optimized/imageioplugin.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; oiio/optimized/paramlist.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/pngoutput.cpp.ll
-; oiio/optimized/pnmoutput.cpp.ll
-; oiio/optimized/printinfo.cpp.ll
-; oiio/optimized/psdinput.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
-; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/sgiinput.cpp.ll
-; oiio/optimized/sgioutput.cpp.ll
-; oiio/optimized/softimageinput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
-; oiio/optimized/targainput.cpp.ll
-; oiio/optimized/targaoutput.cpp.ll
-; oiio/optimized/termoutput.cpp.ll
-; oiio/optimized/texture3d.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; oiio/optimized/typedesc.cpp.ll
-; oiio/optimized/xmp.cpp.ll
-; oiio/optimized/zfile.cpp.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; tev/optimized/Channel.cpp.ll
-; tev/optimized/ClipboardImageLoader.cpp.ll
-; tev/optimized/Common.cpp.ll
-; tev/optimized/EmptyImageLoader.cpp.ll
-; tev/optimized/ExrImageLoader.cpp.ll
-; tev/optimized/ExrImageSaver.cpp.ll
-; tev/optimized/Image.cpp.ll
-; tev/optimized/ImageButton.cpp.ll
-; tev/optimized/ImageCanvas.cpp.ll
-; tev/optimized/ImageViewer.cpp.ll
-; tev/optimized/Ipc.cpp.ll
-; tev/optimized/MultiGraph.cpp.ll
-; tev/optimized/PfmImageLoader.cpp.ll
-; tev/optimized/QoiImageLoader.cpp.ll
-; tev/optimized/QoiImageSaver.cpp.ll
-; tev/optimized/StbiImageLoader.cpp.ll
-; tev/optimized/StbiLdrImageSaver.cpp.ll
-; tev/optimized/UberShader.cpp.ll
-; tev/optimized/main.cpp.ll
 ; vcpkg/optimized/archives.cpp.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; vcpkg/optimized/binaryparagraph.cpp.ll
@@ -261,62 +171,10 @@
 ; vcpkg/optimized/vcpkgpaths.cpp.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
-; velox/optimized/Expressions.cpp.ll
-; wasmedge/optimized/alias.cpp.ll
-; wasmedge/optimized/aot_section.cpp.ll
-; wasmedge/optimized/canon.cpp.ll
-; wasmedge/optimized/canonical.cpp.ll
-; wasmedge/optimized/codegen.cpp.ll
-; wasmedge/optimized/compiler.cpp.ll
-; wasmedge/optimized/compilerTool.cpp.ll
-; wasmedge/optimized/component.cpp.ll
-; wasmedge/optimized/controlInstr.cpp.ll
-; wasmedge/optimized/description.cpp.ll
-; wasmedge/optimized/elem.cpp.ll
-; wasmedge/optimized/engine.cpp.ll
-; wasmedge/optimized/environ.cpp.ll
-; wasmedge/optimized/errinfo.cpp.ll
-; wasmedge/optimized/executor.cpp.ll
-; wasmedge/optimized/export.cpp.ll
-; wasmedge/optimized/expression.cpp.ll
-; wasmedge/optimized/formchecker.cpp.ll
-; wasmedge/optimized/global.cpp.ll
-; wasmedge/optimized/helper.cpp.ll
-; wasmedge/optimized/import.cpp.ll
-; wasmedge/optimized/import_export.cpp.ll
-; wasmedge/optimized/instance.cpp.ll
-; wasmedge/optimized/instruction.cpp.ll
-; wasmedge/optimized/jit.cpp.ll
-; wasmedge/optimized/loader.cpp.ll
-; wasmedge/optimized/memory.cpp.ll
-; wasmedge/optimized/memoryInstr.cpp.ll
-; wasmedge/optimized/module.cpp.ll
-; wasmedge/optimized/plugin.cpp.ll
-; wasmedge/optimized/proxy.cpp.ll
-; wasmedge/optimized/refInstr.cpp.ll
-; wasmedge/optimized/section.cpp.ll
-; wasmedge/optimized/segment.cpp.ll
-; wasmedge/optimized/serial_description.cpp.ll
-; wasmedge/optimized/serial_expression.cpp.ll
-; wasmedge/optimized/serial_instruction.cpp.ll
-; wasmedge/optimized/serial_module.cpp.ll
-; wasmedge/optimized/serial_section.cpp.ll
-; wasmedge/optimized/serial_segment.cpp.ll
-; wasmedge/optimized/serial_type.cpp.ll
-; wasmedge/optimized/shared_library.cpp.ll
-; wasmedge/optimized/sort.cpp.ll
-; wasmedge/optimized/start.cpp.ll
-; wasmedge/optimized/table.cpp.ll
-; wasmedge/optimized/tableInstr.cpp.ll
-; wasmedge/optimized/threadInstr.cpp.ll
-; wasmedge/optimized/type.cpp.ll
-; wasmedge/optimized/validator.cpp.ll
-; wasmedge/optimized/vm.cpp.ll
-; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000063(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 1114111
+  %3 = icmp samesign ugt i32 %2, 1114111
   %4 = select i1 %3, i32 256, i32 0
   %5 = select i1 %1, i32 64, i32 0
   %6 = or disjoint i32 %5, %0
@@ -324,7 +182,7 @@ entry:
   ret i32 %7
 }
 
-; 335 occurrences:
+; 336 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/resSim.c.ll
 ; arrow/optimized/light_array.cc.ll
@@ -659,6 +517,7 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i1 %1, i32 %2) #0 {
@@ -666,7 +525,7 @@ entry:
   %3 = icmp eq i32 %2, 55296
   %4 = select i1 %3, i32 128, i32 0
   %5 = select i1 %1, i32 256, i32 0
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -686,8 +545,162 @@ entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 4, i32 0
   %5 = select i1 %1, i32 32, i32 0
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or i32 %6, %4
+  ret i32 %7
+}
+
+; 142 occurrences:
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/argparse.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
+; oiio/optimized/bmpinput.cpp.ll
+; oiio/optimized/bmpoutput.cpp.ll
+; oiio/optimized/cineoninput.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
+; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/errorhandler.cpp.ll
+; oiio/optimized/exrinput.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/filesystem.cpp.ll
+; oiio/optimized/fitsinput.cpp.ll
+; oiio/optimized/fitsoutput.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/hdroutput.cpp.ll
+; oiio/optimized/icc.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/iffinput.cpp.ll
+; oiio/optimized/iffoutput.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_opencv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/imageioplugin.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/pnmoutput.cpp.ll
+; oiio/optimized/printinfo.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/rlaoutput.cpp.ll
+; oiio/optimized/sgiinput.cpp.ll
+; oiio/optimized/sgioutput.cpp.ll
+; oiio/optimized/softimageinput.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/termoutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; oiio/optimized/typedesc.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; oiio/optimized/zfile.cpp.ll
+; tev/optimized/Channel.cpp.ll
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; tev/optimized/Common.cpp.ll
+; tev/optimized/EmptyImageLoader.cpp.ll
+; tev/optimized/ExrImageLoader.cpp.ll
+; tev/optimized/ExrImageSaver.cpp.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageButton.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; tev/optimized/MultiGraph.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; tev/optimized/QoiImageSaver.cpp.ll
+; tev/optimized/StbiImageLoader.cpp.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; tev/optimized/UberShader.cpp.ll
+; tev/optimized/main.cpp.ll
+; velox/optimized/Expressions.cpp.ll
+; wasmedge/optimized/alias.cpp.ll
+; wasmedge/optimized/aot_section.cpp.ll
+; wasmedge/optimized/canon.cpp.ll
+; wasmedge/optimized/canonical.cpp.ll
+; wasmedge/optimized/codegen.cpp.ll
+; wasmedge/optimized/compiler.cpp.ll
+; wasmedge/optimized/compilerTool.cpp.ll
+; wasmedge/optimized/component.cpp.ll
+; wasmedge/optimized/controlInstr.cpp.ll
+; wasmedge/optimized/description.cpp.ll
+; wasmedge/optimized/elem.cpp.ll
+; wasmedge/optimized/engine.cpp.ll
+; wasmedge/optimized/environ.cpp.ll
+; wasmedge/optimized/errinfo.cpp.ll
+; wasmedge/optimized/executor.cpp.ll
+; wasmedge/optimized/export.cpp.ll
+; wasmedge/optimized/expression.cpp.ll
+; wasmedge/optimized/formchecker.cpp.ll
+; wasmedge/optimized/global.cpp.ll
+; wasmedge/optimized/helper.cpp.ll
+; wasmedge/optimized/import.cpp.ll
+; wasmedge/optimized/import_export.cpp.ll
+; wasmedge/optimized/instance.cpp.ll
+; wasmedge/optimized/instruction.cpp.ll
+; wasmedge/optimized/jit.cpp.ll
+; wasmedge/optimized/loader.cpp.ll
+; wasmedge/optimized/memory.cpp.ll
+; wasmedge/optimized/memoryInstr.cpp.ll
+; wasmedge/optimized/module.cpp.ll
+; wasmedge/optimized/plugin.cpp.ll
+; wasmedge/optimized/proxy.cpp.ll
+; wasmedge/optimized/refInstr.cpp.ll
+; wasmedge/optimized/section.cpp.ll
+; wasmedge/optimized/segment.cpp.ll
+; wasmedge/optimized/serial_description.cpp.ll
+; wasmedge/optimized/serial_expression.cpp.ll
+; wasmedge/optimized/serial_instruction.cpp.ll
+; wasmedge/optimized/serial_module.cpp.ll
+; wasmedge/optimized/serial_section.cpp.ll
+; wasmedge/optimized/serial_segment.cpp.ll
+; wasmedge/optimized/serial_type.cpp.ll
+; wasmedge/optimized/shared_library.cpp.ll
+; wasmedge/optimized/sort.cpp.ll
+; wasmedge/optimized/start.cpp.ll
+; wasmedge/optimized/table.cpp.ll
+; wasmedge/optimized/tableInstr.cpp.ll
+; wasmedge/optimized/threadInstr.cpp.ll
+; wasmedge/optimized/type.cpp.ll
+; wasmedge/optimized/validator.cpp.ll
+; wasmedge/optimized/vm.cpp.ll
+; wasmedge/optimized/wasmedge.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000023(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 1114111
+  %4 = select i1 %3, i32 256, i32 0
+  %5 = select i1 %1, i32 64, i32 0
+  %6 = or disjoint i32 %5, %0
+  %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
 
@@ -701,7 +714,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 262144
   %5 = select i1 %1, i32 0, i32 131072
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -713,9 +726,9 @@ entry:
 ; recastnavigation/optimized/Sample_TileMesh.cpp.ll
 ; z3/optimized/bit_util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000020(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000060(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 255
+  %3 = icmp samesign ugt i32 %2, 255
   %4 = select i1 %3, i32 8, i32 0
   %5 = select i1 %1, i32 16, i32 0
   %6 = or i32 %5, %0
@@ -732,7 +745,7 @@ entry:
   %3 = icmp ult i32 %2, 1501
   %4 = select i1 %3, i32 0, i32 32
   %5 = select i1 %1, i32 0, i32 4
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -743,7 +756,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1040, i32 16
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i32 8, i32 4
   %7 = or disjoint i32 %6, %4

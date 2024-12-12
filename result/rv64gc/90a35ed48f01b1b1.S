@@ -1,11 +1,11 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a0, a0
 	slli	a1, a1, 58
 	srli	a1, a1, 63
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	sext.w	a0, a0
 	andi	a1, a1, 48
 	addi	a1, a1, -16
@@ -14,7 +14,7 @@ func000000000000004c:                   # @func000000000000004c
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sext.w	a0, a0
 	lui	a2, 496
 	and	a1, a1, a2

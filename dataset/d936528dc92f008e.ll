@@ -1,10 +1,9 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; git/optimized/diff-merges.ll
 ; linux/optimized/set_memory.ll
 ; llvm/optimized/DWARFTypePrinter.cpp.ll
 ; llvm/optimized/DarwinSDKInfo.cpp.ll
-; llvm/optimized/TypePrinter.cpp.ll
 ; php/optimized/phpdbg_prompt.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; rocksdb/optimized/clock_cache.cc.ll

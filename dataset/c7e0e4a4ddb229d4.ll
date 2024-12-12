@@ -2,16 +2,18 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 3
   %4 = getelementptr i32, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 137 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
 ; cmake/optimized/cmMakefile.cxx.ll
@@ -78,7 +80,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -146,16 +147,15 @@ entry:
 ; yaml-cpp/optimized/scanner.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 7
   %4 = getelementptr ptr, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 8
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 

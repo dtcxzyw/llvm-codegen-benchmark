@@ -1,9 +1,9 @@
 
-; 100 occurrences:
+; 141 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
+; abseil-cpp/optimized/str_split_test.cc.ll
 ; assimp/optimized/zip.c.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; cmake/optimized/json_writer.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
@@ -14,8 +14,6 @@
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; git/optimized/merge-index.ll
 ; glslang/optimized/ParseHelper.cpp.ll
-; gromacs/optimized/dtrtri.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
 ; hermes/optimized/AST2JS.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/zip.c.ll
@@ -59,18 +57,55 @@
 ; openjdk/optimized/bootstrapInfo.ll
 ; openjdk/optimized/bytecodeTracer.ll
 ; openjdk/optimized/bytecodes.ll
+; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
 ; openjdk/optimized/ciEnv.ll
 ; openjdk/optimized/ciReplay.ll
 ; openjdk/optimized/classListParser.ll
+; openjdk/optimized/compilationPolicy.ll
+; openjdk/optimized/compileBroker.ll
 ; openjdk/optimized/constantPool.ll
+; openjdk/optimized/continuationEntry.ll
+; openjdk/optimized/continuationFreezeThaw.ll
+; openjdk/optimized/deoptimization.ll
+; openjdk/optimized/escapeBarrier.ll
+; openjdk/optimized/forte.ll
+; openjdk/optimized/frame.ll
 ; openjdk/optimized/g1CardSet.ll
+; openjdk/optimized/instanceStackChunkKlass.ll
+; openjdk/optimized/javaClasses.ll
+; openjdk/optimized/javaThread.ll
+; openjdk/optimized/jfrCallTrace.ll
+; openjdk/optimized/jfrResolution.ll
+; openjdk/optimized/jfrStackTrace.ll
+; openjdk/optimized/jvm.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/jvmciRuntime.ll
+; openjdk/optimized/jvmtiEnvBase.ll
+; openjdk/optimized/jvmtiEventController.ll
+; openjdk/optimized/jvmtiExport.ll
+; openjdk/optimized/jvmtiImpl.ll
 ; openjdk/optimized/methodComparator.ll
 ; openjdk/optimized/methodHandles.ll
 ; openjdk/optimized/pngread.ll
 ; openjdk/optimized/pngrtran.ll
+; openjdk/optimized/reflection.ll
+; openjdk/optimized/rootResolver.ll
+; openjdk/optimized/runtime.ll
+; openjdk/optimized/safepoint.ll
+; openjdk/optimized/scopedMemoryAccess.ll
+; openjdk/optimized/sharedRuntime.ll
+; openjdk/optimized/stackChunkOop.ll
+; openjdk/optimized/stackWatermark.ll
+; openjdk/optimized/stackWatermarkSet.ll
+; openjdk/optimized/stackwalk.ll
 ; openjdk/optimized/verifier.ll
+; openjdk/optimized/vframe.ll
+; openjdk/optimized/vframeArray.ll
+; openjdk/optimized/vmError.ll
+; openjdk/optimized/whitebox.ll
+; openjdk/optimized/xVerify.ll
+; openjdk/optimized/zBarrierSet.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/hearts.cc.ll
 ; openssl/optimized/libcrypto-lib-asn1_lib.ll
@@ -81,6 +116,11 @@
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; postgres/optimized/nbtsplitloc.ll
+; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
 ; protobuf/optimized/writer.cc.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
@@ -95,11 +135,12 @@
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
+; verilator/optimized/V3Const__gen.cpp.ll
 ; wireshark/optimized/packet-dcm.c.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; wolfssl/optimized/coding.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -109,7 +150,7 @@ entry:
   ret i64 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; clamav/optimized/upack.c.ll
 ; clamav/optimized/upx.c.ll
 ; icu/optimized/collationfastlatinbuilder.ll
@@ -123,6 +164,7 @@ entry:
 ; luau/optimized/EmitCommonX64.cpp.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
+; luau/optimized/OptimizeDeadStore.cpp.ll
 ; nuttx/optimized/intel64_irq.c.ll
 ; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; redis/optimized/hpa.ll

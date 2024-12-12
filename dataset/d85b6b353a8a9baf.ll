@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; hdf5/optimized/H5PB.c.ll
 ; linux/optimized/aperfmperf.ll
 ; linux/optimized/compaction.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/tcp_cubic.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
@@ -12,7 +11,7 @@
 define i32 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = udiv i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -31,7 +30,7 @@ entry:
 define i32 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = udiv i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -45,7 +44,7 @@ entry:
 define i32 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = udiv i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -58,7 +57,7 @@ entry:
 define i32 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = udiv i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -71,7 +70,7 @@ entry:
 define i32 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = udiv i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -85,7 +84,7 @@ entry:
 define i32 @func0000000000000020(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = udiv i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6

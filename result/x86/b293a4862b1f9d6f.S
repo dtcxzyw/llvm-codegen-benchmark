@@ -3,12 +3,12 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rsi
 	seta	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	imulq	%rsi, %rsi
 	cmpq	%rdi, %rsi
 	seta	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	imulq	%rsi, %rsi
 	cmpq	%rdi, %rsi
 	sete	%al
@@ -18,17 +18,17 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	imulq	%rsi, %rsi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	imulq	%rsi, %rsi
 	cmpq	%rdi, %rsi
 	seta	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	imulq	%rsi, %rsi
 	cmpq	%rdi, %rsi
 	seta	%al

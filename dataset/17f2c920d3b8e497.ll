@@ -16,7 +16,7 @@
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 16
   %4 = add nsw i32 %3, %1
@@ -31,7 +31,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, -26
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -79,7 +79,7 @@ entry:
 ; openmpi/optimized/coll_base_reduce_scatter.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 3
   %4 = add nsw i32 %3, %1
@@ -90,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, -2
   %4 = add nsw i32 %3, %1
@@ -123,10 +123,10 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 3
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -137,7 +137,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 256
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -145,22 +145,22 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/agast_score.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = add nsw i32 %3, %1
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ult i32 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/agast_score.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000039(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = add nsw i32 %3, %1
-  %5 = icmp uge i32 %4, %0
+  %5 = icmp samesign uge i32 %4, %0
   ret i1 %5
 }
 
@@ -170,7 +170,7 @@ entry:
 define i1 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp sle i32 %4, %0
   ret i1 %5
 }

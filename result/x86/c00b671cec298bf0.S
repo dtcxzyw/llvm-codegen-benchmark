@@ -3,7 +3,17 @@ func0000000000000005:                   # @func0000000000000005
 	movl	%edi, %eax
 	orq	%rsi, %rax
 	retq
+func000000000000001f:                   # @func000000000000001f
+	shlq	$32, %rsi
+	movl	%edi, %eax
+	orq	%rsi, %rax
+	retq
 func000000000000000d:                   # @func000000000000000d
+	shlq	$32, %rsi
+	movl	%edi, %eax
+	orq	%rsi, %rax
+	retq
+func0000000000000017:                   # @func0000000000000017
 	shlq	$32, %rsi
 	movl	%edi, %eax
 	orq	%rsi, %rax

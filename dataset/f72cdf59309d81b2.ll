@@ -1,5 +1,7 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/value_semantic.ll
 ; cmake/optimized/cmOutputConverter.cxx.ll
 ; cvc5/optimized/inst_strategy_enumerative.cpp.ll
 ; llvm/optimized/MCPseudoProbe.cpp.ll

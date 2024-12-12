@@ -1,7 +1,7 @@
 
-%struct.TileSpec.2587673 = type { i8, i8, i8, [5 x i8], [2 x %struct.TileLayer.2587674] }
-%struct.TileLayer.2587674 = type <{ ptr, ptr, ptr, i32, i32, i16, i16, i8, i8, i8, i8, ptr, %"class.irr::video::SColor.2587675", i8, [3 x i8] }>
-%"class.irr::video::SColor.2587675" = type { i32 }
+%struct.TileSpec.2701562 = type { i8, i8, i8, [5 x i8], [2 x %struct.TileLayer.2701563] }
+%struct.TileLayer.2701563 = type <{ ptr, ptr, ptr, i32, i32, i16, i16, i8, i8, i8, i8, ptr, %"class.irr::video::SColor.2701564", i8, [3 x i8] }>
+%"class.irr::video::SColor.2701564" = type { i32 }
 
 ; 3 occurrences:
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
@@ -37,7 +37,7 @@ entry:
   %3 = icmp eq ptr %1, null
   %4 = select i1 %3, ptr %0, ptr %1
   %5 = sext i32 %2 to i64
-  %6 = getelementptr nusw %struct.TileSpec.2587673, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct.TileSpec.2701562, ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -9,7 +9,7 @@
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = srem i32 %3, %0
@@ -28,7 +28,7 @@ entry:
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; redis/optimized/linenoise.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = srem i32 %3, %0
@@ -63,7 +63,7 @@ entry:
 ; abc/optimized/giaSif.c.ll
 ; openmpi/optimized/coll_base_allreduce.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = srem i32 %3, %0
@@ -71,10 +71,22 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; boost/optimized/gregorian.ll
+; icu/optimized/calendar.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = srem i32 %3, %0
+  %5 = icmp slt i32 %4, 0
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = srem i32 %3, %0
@@ -90,17 +102,6 @@ entry:
   %3 = add i32 %1, %2
   %4 = srem i32 %3, %0
   %5 = icmp sgt i32 %4, 0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; icu/optimized/calendar.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %1, %2
-  %4 = srem i32 %3, %0
-  %5 = icmp slt i32 %4, 0
   ret i1 %5
 }
 

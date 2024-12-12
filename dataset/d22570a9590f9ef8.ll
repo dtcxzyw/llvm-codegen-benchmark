@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
@@ -12,6 +12,8 @@
 ; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; wireshark/optimized/packet-eth.c.ll
+; zed-rs/optimized/1x0js6flb76ylaa82e6lu27uy.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -22,7 +24,7 @@ entry:
   ret i1 %6
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; clamav/optimized/extract.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
@@ -37,7 +39,6 @@ entry:
 ; openjdk/optimized/loopnode.ll
 ; openjdk/optimized/packageEntry.ll
 ; openusd/optimized/pathExpressionEval.cpp.ll
-; proj/optimized/io.cpp.ll
 ; qemu/optimized/system_vl.c.ll
 ; vcpkg/optimized/paragraphs.cpp.ll
 ; wireshark/optimized/packet-snmp.c.ll

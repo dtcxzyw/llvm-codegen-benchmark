@@ -22,7 +22,7 @@ define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -41,15 +41,14 @@ define i1 @func000000000000000a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/aigScl.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaSweep.c.ll
-; abc/optimized/ifSeq.c.ll
 ; icu/optimized/package.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
@@ -82,16 +81,18 @@ entry:
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-quakeworld.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/wlnRead.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
@@ -110,7 +111,6 @@ entry:
 ; meshlab/optimized/io_x3d.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dorbdb.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dstebz.c.ll
 ; openexr/optimized/ImfMisc.cpp.ll
 ; openspiel/optimized/TransTableL.cpp.ll
@@ -122,15 +122,15 @@ entry:
 ; zstd/optimized/divsufsort.c.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
-; 256 occurrences:
+; 243 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -176,7 +176,6 @@ entry:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaxi.c.ll
 ; abc/optimized/bmcUnroll.c.ll
@@ -224,7 +223,6 @@ entry:
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifDec16.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTime.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/ifUtil.c.ll
@@ -240,7 +238,6 @@ entry:
 ; abc/optimized/saigPhase.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; abc/optimized/sscSim.c.ll
-; abc/optimized/sscUtil.c.ll
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswCore.c.ll
 ; abc/optimized/sswRarity.c.ll
@@ -327,10 +324,7 @@ entry:
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dorbdb.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
@@ -345,7 +339,6 @@ entry:
 ; opencv/optimized/joint_bilateral_filter.cpp.ll
 ; opencv/optimized/lbph_faces.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
-; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -378,21 +371,15 @@ entry:
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/parse_context.cc.ll
 ; redis/optimized/db.ll
-; sentencepiece/optimized/extension_set.cc.ll
-; sentencepiece/optimized/parse_context.cc.ll
 ; wolfssl/optimized/internal.c.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -416,7 +403,7 @@ define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -443,20 +430,22 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; abc/optimized/bacPrsBuild.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; linux/optimized/drm_format_helper.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/StackSlotColoring.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
 ; openjdk/optimized/mlib_ImageConv_32nw.ll
@@ -474,7 +463,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -507,11 +496,11 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -525,22 +514,22 @@ entry:
 ; yosys/optimized/simplify.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp sle i64 %4, %0
+  %5 = icmp sge i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; git/optimized/index-pack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -558,11 +547,28 @@ entry:
 ; openspiel/optimized/rbc.cc.ll
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
+  ret i1 %5
+}
+
+; 7 occurrences:
+; opencv/optimized/opencv-caffe.pb.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; protobuf/optimized/parse_context.cc.ll
+; sentencepiece/optimized/extension_set.cc.ll
+; sentencepiece/optimized/parse_context.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
@@ -574,7 +580,7 @@ define i1 @func000000000000000c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp ne i64 %4, %0
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
@@ -587,7 +593,7 @@ define i1 @func000000000000000b(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp sle i64 %4, %0
+  %5 = icmp sge i64 %0, %4
   ret i1 %5
 }
 
@@ -599,18 +605,7 @@ define i1 @func0000000000000007(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp sge i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dorgr2.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = icmp sge i64 %4, %0
+  %5 = icmp sle i64 %0, %4
   ret i1 %5
 }
 

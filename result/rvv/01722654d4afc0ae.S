@@ -1,7 +1,7 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v14, v12
-	vor.vv	v10, v14, v10
+	vor.vv	v10, v10, v14
 	vsrl.vi	v10, v10, 6
 	li	a0, 192
 	vor.vx	v10, v10, a0

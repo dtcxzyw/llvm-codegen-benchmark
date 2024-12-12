@@ -13,7 +13,7 @@ entry:
   ret i32 %6
 }
 
-; 69 occurrences:
+; 67 occurrences:
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaOf.c.ll
@@ -21,12 +21,10 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/early-lookup.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/initramfs.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/md.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -127,14 +125,13 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 255
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; icu/optimized/coleitr.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/insn-eval.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; mold/optimized/output-chunks.cc.M68K.cc.ll
@@ -170,7 +167,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 1
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -183,7 +180,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = and i32 %3, 255
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }

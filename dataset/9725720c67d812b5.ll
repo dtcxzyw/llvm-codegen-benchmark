@@ -1,5 +1,5 @@
 
-; 619 occurrences:
+; 597 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -106,7 +106,6 @@
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -121,7 +120,6 @@
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/cecProve.c.ll
 ; abc/optimized/cecSat.c.ll
@@ -134,20 +132,17 @@
 ; abc/optimized/cecSynth.c.ll
 ; abc/optimized/cgtCore.c.ll
 ; abc/optimized/cgtDecide.c.ll
-; abc/optimized/cgtMan.c.ll
 ; abc/optimized/cmdAuto.c.ll
 ; abc/optimized/cmdPlugin.c.ll
 ; abc/optimized/cmdStarter.c.ll
 ; abc/optimized/cnfUtil.c.ll
 ; abc/optimized/covCore.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddAnneal.c.ll
 ; abc/optimized/cutMan.c.ll
 ; abc/optimized/cutOracle.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/darCore.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/darScript.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -155,7 +150,6 @@
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/dchCore.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/extraBddMisc.c.ll
 ; abc/optimized/extraUtilCube.c.ll
 ; abc/optimized/extraUtilDsd.c.ll
@@ -220,7 +214,6 @@
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaRetime.c.ll
-; abc/optimized/giaSat3.c.ll
 ; abc/optimized/giaSatEdge.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/giaSatLut.c.ll
@@ -244,14 +237,12 @@
 ; abc/optimized/giaTsim.c.ll
 ; abc/optimized/giaUnate.c.ll
 ; abc/optimized/giaUtil.c.ll
-; abc/optimized/hopMan.c.ll
 ; abc/optimized/ifCore.c.ll
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifReduce.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTest.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/intCore.c.ll
@@ -265,7 +256,6 @@
 ; abc/optimized/ivyFastMap.c.ll
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/ivyMan.c.ll
-; abc/optimized/ivyResyn.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; abc/optimized/kitGraph.c.ll
 ; abc/optimized/kliveness.c.ll
@@ -279,7 +269,6 @@
 ; abc/optimized/llb3Nonlin.c.ll
 ; abc/optimized/llb4Nonlin.c.ll
 ; abc/optimized/lpkCore.c.ll
-; abc/optimized/mapperCore.c.ll
 ; abc/optimized/mapperCreate.c.ll
 ; abc/optimized/mapperCut.c.ll
 ; abc/optimized/mapperLib.c.ll
@@ -305,10 +294,7 @@
 ; abc/optimized/retFlow.c.ll
 ; abc/optimized/retInit.c.ll
 ; abc/optimized/rwrExp.c.ll
-; abc/optimized/rwrMan.c.ll
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtMan.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigInd.c.ll
 ; abc/optimized/saigIso.c.ll
@@ -364,8 +350,9 @@
 ; arrow/optimized/caching.cc.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/Importer.cpp.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/cpu_timer.ll
 ; brotli/optimized/brotli.c.ll
-; c3c/optimized/benchmark.c.ll
 ; clamav/optimized/clamdtop.c.ll
 ; clamav/optimized/libfreshclam_internal.c.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
@@ -379,9 +366,7 @@
 ; cmake/optimized/cmsysTestsCxx.cxx.ll
 ; cmake/optimized/getinfo.c.ll
 ; cmake/optimized/progress.c.ll
-; coremark/optimized/core_portme.c.ll
 ; cpython/optimized/signalmodule.ll
-; cpython/optimized/xxsubtype.ll
 ; curl/optimized/libcurl_la-getinfo.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; cvc5/optimized/partition_generator.cpp.ll
@@ -397,11 +382,9 @@
 ; git/optimized/diffcore-rename.ll
 ; graphviz/optimized/actions.c.ll
 ; graphviz/optimized/country_graph_coloring.c.ll
-; graphviz/optimized/timing.c.ll
 ; grpc/optimized/backoff.cc.ll
 ; grpc/optimized/periodic_update.cc.ll
 ; hdf5/optimized/H5timer.c.ll
-; hdf5/optimized/io_timer.c.ll
 ; hermes/optimized/GCBase.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
 ; hermes/optimized/Timer.cpp.ll
@@ -409,7 +392,6 @@
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; hyperscan/optimized/gtest-all.cc.ll
 ; icu/optimized/uperf.ll
-; ipopt/optimized/IpUtils.ll
 ; jq/optimized/builtin.ll
 ; libjpeg-turbo/optimized/tjutil.c.ll
 ; libquic/optimized/histogram.cc.ll
@@ -463,7 +445,6 @@
 ; openmpi/optimized/iof_base_output.ll
 ; openmpi/optimized/iof_hnp_read.ll
 ; openmpi/optimized/iof_prted_read.ll
-; openmpi/optimized/libmpi_c_profile_la-wtime.ll
 ; openmpi/optimized/libprrte_la-pmix_server_dyn.ll
 ; openmpi/optimized/libprrte_la-pmix_server_gen.ll
 ; openmpi/optimized/libprrte_la-prted_comm.ll
@@ -499,7 +480,6 @@
 ; openusd/optimized/testTiming.cpp.ll
 ; openusd/optimized/timing.cpp.ll
 ; openvdb/optimized/Queue.cc.ll
-; osqp/optimized/timing_linux.c.ll
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/log.cpp.ll
@@ -558,7 +538,6 @@
 ; wireshark/optimized/packet-bitcoin.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
-; wireshark/optimized/time_util.c.ll
 ; wolfssl/optimized/api.c.ll
 ; wolfssl/optimized/benchmark.c.ll
 ; wolfssl/optimized/client.c.ll
@@ -573,7 +552,6 @@
 ; yosys/optimized/driver.ll
 ; z3/optimized/api_tactic.cpp.ll
 ; z3/optimized/bit_matrix.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datalog_frontend.cpp.ll
 ; z3/optimized/dl_cmds.cpp.ll
 ; z3/optimized/dl_costs.cpp.ll

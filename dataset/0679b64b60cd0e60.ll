@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 15 occurrences:
+; boost/optimized/src.ll
 ; cmake/optimized/escape.c.ll
 ; cpython/optimized/_codecs_kr.ll
 ; curl/optimized/libcurl_la-escape.ll
@@ -11,6 +12,8 @@
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; ruby/optimized/pack.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0) #0 {

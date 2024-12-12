@@ -7,22 +7,22 @@
 ; hdf5/optimized/H5Opline.c.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000308(i1 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = icmp ult i64 %5, 2
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000030c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = icmp slt i64 %5, 0
@@ -40,11 +40,12 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = icmp slt i64 %5, 5
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/any_params_iter.ll
 ; hdf5/optimized/H5Fsuper_cache.c.ll
 ; hdf5/optimized/H5Gcache.c.ll
 ; hdf5/optimized/H5Gent.c.ll
@@ -53,13 +54,13 @@ entry:
 ; hdf5/optimized/H5Olayout.c.ll
 ; hdf5/optimized/H5Olink.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000302(i1 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = icmp eq i64 %5, -1
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -72,7 +73,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = icmp ult i64 %5, 4
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

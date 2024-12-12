@@ -43,7 +43,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	48828125                        # 0x2e90edd
 func0000000000000004:                   # @func0000000000000004
 	vpshufb	.LCPI1_0(%rip), %ymm1, %ymm1    # ymm1 = ymm1[2],zero,zero,zero,ymm1[6],zero,zero,zero,ymm1[10],zero,zero,zero,ymm1[14],zero,zero,zero,ymm1[18],zero,zero,zero,ymm1[22],zero,zero,zero,ymm1[26],zero,zero,zero,ymm1[30],zero,zero,zero
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI2_0:

@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 72 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/cuddDecomp.c.ll
 ; cmake/optimized/url.c.ll
@@ -46,6 +46,8 @@
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; llvm/optimized/MachineCopyPropagation.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
 ; lua/optimized/lvm.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
@@ -59,7 +61,6 @@
 ; openjdk/optimized/loopPredicate.ll
 ; openjdk/optimized/matcher.ll
 ; openjdk/optimized/templateTable.ll
-; openssl/optimized/ssl_handshake_rtt_test-bin-ssl_handshake_rtt_test.ll
 ; php/optimized/dfa_pass.ll
 ; slurm/optimized/acct_policy.ll
 ; z3/optimized/array_rewriter.cpp.ll
@@ -72,12 +73,12 @@
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, ptr %0, ptr %1
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -85,8 +86,8 @@ entry:
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/mioSop.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
+; llvm/optimized/InstCombinePHI.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/mvdistinct.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, ptr %1, i32 %2) #0 {
@@ -95,20 +96,6 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, ptr %0, ptr %1
   %6 = getelementptr i8, ptr %5, i64 12
-  ret ptr %6
-}
-
-; 3 occurrences:
-; llvm/optimized/Interp.cpp.ll
-; llvm/optimized/MachineCopyPropagation.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 255
-  %4 = icmp eq i32 %3, 12
-  %5 = select i1 %4, ptr %0, ptr %1
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
   ret ptr %6
 }
 

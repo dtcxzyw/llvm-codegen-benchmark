@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; qemu/optimized/crypto_block-luks.c.ll
 ; wolfssl/optimized/sp_int.c.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -53,9 +52,9 @@ entry:
 define i64 @func000000000000001f(i32 %0) #0 {
 entry:
   %1 = mul nuw nsw i32 %0, 1000
-  %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, 50
-  ret i64 %3
+  %narrow = add nuw i32 %1, 50
+  %2 = zext i32 %narrow to i64
+  ret i64 %2
 }
 
 ; 4 occurrences:

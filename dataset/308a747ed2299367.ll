@@ -1,9 +1,8 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/hid-ntrig.ll
 ; linux/optimized/intel_hdcp.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/policydb.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/CGCUDANV.cpp.ll

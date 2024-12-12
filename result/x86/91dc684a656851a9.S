@@ -1,4 +1,4 @@
-func00000000000001fa:                   # @func00000000000001fa
+func00000000000001ff:                   # @func00000000000001ff
 	addl	$2, %edx
 	imulq	%rsi, %rdx
 	leaq	1(%rdi,%rdx), %rax
@@ -8,12 +8,12 @@ func00000000000000f0:                   # @func00000000000000f0
 	imulq	%rsi, %rdx
 	leaq	1(%rdi,%rdx), %rax
 	retq
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000ff:                   # @func00000000000000ff
 	incl	%edx
 	imulq	%rsi, %rdx
 	leaq	1(%rdi,%rdx), %rax
 	retq
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000001fc:                   # @func00000000000001fc
 	addl	$2, %edx
 	imulq	%rsi, %rdx
 	leaq	8(%rdi,%rdx,4), %rax
@@ -23,7 +23,7 @@ func0000000000000030:                   # @func0000000000000030
 	imulq	%rsi, %rdx
 	leaq	4(%rdi,%rdx,4), %rax
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000cb:                   # @func00000000000000cb
 	decl	%edx
 	imulq	%rsi, %rdx
 	leaq	8(%rdi,%rdx), %rax

@@ -34,9 +34,3 @@ func0000000000000005:                   # @func0000000000000005
 	shlq	$32, %rdi
 	leaq	(%rdi,%rdx), %rax
 	retq
-func000000000000001d:                   # @func000000000000001d
-	andl	$1090519039, %edx               # imm = 0x40FFFFFF
-	orl	%esi, %edx
-	shlq	$32, %rdi
-	leaq	(%rdi,%rdx), %rax
-	retq

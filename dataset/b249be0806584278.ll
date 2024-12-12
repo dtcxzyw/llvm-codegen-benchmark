@@ -23,7 +23,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = add nuw i32 %0, 1
@@ -58,7 +58,7 @@ entry:
 ; openspiel/optimized/oh_hell.cc.ll
 ; redis/optimized/memtest.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = add nsw i32 %0, 1
@@ -309,7 +309,7 @@ entry:
 ; qemu/optimized/block_vvfat.c.ll
 ; zxing/optimized/DMWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -320,7 +320,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/ui_cursor.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000166(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -334,7 +334,7 @@ entry:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -342,8 +342,9 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; cmake/optimized/frm_driver.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; opencv/optimized/obsensor_uvc_stream_channel.cpp.ll
 ; openusd/optimized/reformat.c.ll
@@ -351,7 +352,7 @@ entry:
 ; openvdb/optimized/points.cc.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = add nuw i32 %0, 1
@@ -406,7 +407,7 @@ entry:
 ; openjdk/optimized/XlibWrapper.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -417,7 +418,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jdmarker.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = add nsw i32 %0, -14
@@ -433,7 +434,7 @@ entry:
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
 ; slurm/optimized/job_info.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = add nuw i32 %0, 1
@@ -447,7 +448,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = add nuw i32 %0, 1
@@ -467,7 +468,7 @@ entry:
 ; ncnn/optimized/gridsample_x86_fma.cpp.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = add nuw nsw i32 %0, 2
@@ -475,7 +476,8 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; graphviz/optimized/graph_generator.c.ll
 ; gromacs/optimized/insert_molecules.cpp.ll
 ; hwloc/optimized/hwloc-annotate.ll
 ; hwloc/optimized/hwloc-bind.ll
@@ -491,7 +493,7 @@ entry:
 ; openspiel/optimized/quoridor.cc.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = add nsw i32 %0, 7
@@ -499,8 +501,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; graphviz/optimized/graph_generator.c.ll
+; 8 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; ncnn/optimized/rmsnorm_x86.cpp.ll
@@ -510,7 +511,7 @@ entry:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openmpi/optimized/coll_adapt_ibcast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = add nsw i32 %0, 1
@@ -524,7 +525,7 @@ entry:
 ; ncnn/optimized/layernorm_x86_avx512.cpp.ll
 ; ncnn/optimized/layernorm_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = add nuw nsw i32 %0, 16
@@ -538,7 +539,7 @@ entry:
 ; ncnn/optimized/layernorm_x86_avx512.cpp.ll
 ; ncnn/optimized/layernorm_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = add nuw nsw i32 %0, 16
@@ -551,7 +552,7 @@ entry:
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
 ; openmpi/optimized/coll_adapt_ireduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = add i32 %0, 1
@@ -563,11 +564,11 @@ entry:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = add nuw nsw i32 %0, 6
-  %5 = icmp ule i32 %4, %3
+  %5 = icmp samesign ule i32 %4, %3
   ret i1 %5
 }
 
@@ -575,7 +576,7 @@ entry:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = add nuw nsw i32 %0, 4
@@ -586,7 +587,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = add nuw nsw i32 %0, 4
@@ -594,11 +595,21 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 1 occurrences:
+; darktable/optimized/SonyArw2Decompressor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = add nuw nsw i32 %0, 4
+  %5 = icmp samesign ugt i32 %4, %3
+  ret i1 %5
+}
+
+; 6 occurrences:
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll
 ; hdf5/optimized/H5Iint.c.ll
-; linux/optimized/intel_audio.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; slurm/optimized/xhash.ll
@@ -625,7 +636,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = add nsw i32 %0, 1
@@ -636,7 +647,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/fft.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = add nuw nsw i32 %0, 2
@@ -647,7 +658,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-csn1.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = add i32 %0, -1

@@ -1,15 +1,16 @@
 
-%struct.rb_ractor_basket.2485922 = type { %union.anon.13.2485923, i64, %union.anon.14.2485924 }
-%union.anon.13.2485923 = type { i32 }
-%union.anon.14.2485924 = type { %struct.anon.15.2485925 }
-%struct.anon.15.2485925 = type { i64, i8 }
-%struct.FrameSpec.2585047 = type { i32, ptr, ptr, ptr }
+%struct.rb_ractor_basket.2601380 = type { %union.anon.13.2601381, i64, %union.anon.14.2601382 }
+%union.anon.13.2601381 = type { i32 }
+%union.anon.14.2601382 = type { %struct.anon.15.2601383 }
+%struct.anon.15.2601383 = type { i64, i8 }
+%struct.FrameSpec.2699064 = type { i32, ptr, ptr, ptr }
 
-; 9 occurrences:
+; 10 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; linux/optimized/blk-map.ll
 ; linux/optimized/vmalloc.ll
+; opencv/optimized/fed.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; postgres/optimized/print.ll
 ; postgres/optimized/tuplesort.ll
@@ -20,11 +21,11 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.rb_ractor_basket.2485922, ptr %0, i64 %4
+  %5 = getelementptr %struct.rb_ractor_basket.2601380, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 264 occurrences:
+; 262 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcNtk.c.ll
@@ -131,7 +132,6 @@ entry:
 ; opencv/optimized/aruco_board.cpp.ll
 ; opencv/optimized/aruco_calib.cpp.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll
-; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/batch_distance.cpp.ll
 ; opencv/optimized/batch_norm_layer.cpp.ll
@@ -238,7 +238,6 @@ entry:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/solvepnp.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
-; opencv/optimized/speech_recognition.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
 ; opencv/optimized/svm.cpp.ll
 ; opencv/optimized/svmsgd.cpp.ll
@@ -294,7 +293,7 @@ define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct.FrameSpec.2585047, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct.FrameSpec.2699064, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -5,7 +5,7 @@
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/nettrace_3gpp_32_423.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sdiv i32 %2, 2
@@ -19,7 +19,7 @@ entry:
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/ciMethodData.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sdiv i32 %2, 2

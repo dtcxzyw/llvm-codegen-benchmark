@@ -1,11 +1,12 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_defringe.c.ll
 ; libquic/optimized/cubic.cc.ll
 ; libquic/optimized/cubic_bytes.cc.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; nori/optimized/textbox.cpp.ll

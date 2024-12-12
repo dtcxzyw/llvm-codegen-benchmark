@@ -1,11 +1,15 @@
 
-; 6 occurrences:
+; 10 occurrences:
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; regex-rs/optimized/3ixfkxlmcuecmmus.ll
 ; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:

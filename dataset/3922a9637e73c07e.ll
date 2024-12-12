@@ -19,7 +19,7 @@
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = and i32 %4, 1
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -32,7 +32,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = and i32 %4, 1
   %6 = icmp ne i32 %5, 0
   ret i1 %6
@@ -43,10 +43,10 @@ entry:
 ; yosys/optimized/xilinx_srl.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = and i32 %4, 6
   %6 = icmp eq i32 %5, 0
   ret i1 %6

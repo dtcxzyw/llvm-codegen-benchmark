@@ -1,7 +1,11 @@
 
-; 3 occurrences:
+; 7 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_fb.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i8 %0, i16 %1) #0 {
@@ -12,7 +16,7 @@ entry:
   ret i32 %4
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngrtran.c.ll
@@ -21,7 +25,6 @@ entry:
 ; linux/optimized/battery.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/skl_watermark.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
 ; opencv/optimized/resize.cpp.ll
@@ -43,17 +46,20 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 8 occurrences:
 ; linux/optimized/intel_fb.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; oiio/optimized/targainput.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000b(i16 %0, i8 %1) #0 {
+define i32 @func000000000000000b(i8 %0, i16 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = zext i16 %0 to i32
+  %2 = zext nneg i16 %1 to i32
+  %3 = zext i8 %0 to i32
   %4 = mul nuw nsw i32 %3, %2
   ret i32 %4
 }

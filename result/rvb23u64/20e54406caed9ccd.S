@@ -50,6 +50,6 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000010:                   # @func0000000000000010
 	andi	a1, a1, 255
-	slli	a0, a0, 4
-	addw	a0, a0, a1
+	sh3add	a0, a0, a1
+	sext.w	a0, a0
 	ret

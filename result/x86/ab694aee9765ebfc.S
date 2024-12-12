@@ -1,3 +1,10 @@
+func00000000000000c0:                   # @func00000000000000c0
+	xorl	%eax, %eax
+	testb	%dl, %dl
+	sete	%al
+	leaq	(%rdi,%rsi,8), %rcx
+	leaq	-8(%rcx,%rax,8), %rax
+	retq
 func000000000000001a:                   # @func000000000000001a
 	xorl	%eax, %eax
 	cmpb	$-40, %dl
@@ -5,14 +12,14 @@ func000000000000001a:                   # @func000000000000001a
 	addq	%rsi, %rdi
 	leaq	-2(%rdi,%rax,2), %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000004f:                   # @func000000000000004f
 	xorl	%eax, %eax
 	cmpb	$2, %dl
 	setb	%al
 	addq	%rsi, %rdi
 	leaq	1(%rdi,%rax,2), %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000006f:                   # @func000000000000006f
 	xorl	%eax, %eax
 	testb	%dl, %dl
 	setg	%al
@@ -20,7 +27,38 @@ func000000000000006a:                   # @func000000000000006a
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func000000000000001e:                   # @func000000000000001e
+	xorl	%eax, %eax
+	cmpb	$103, %dl
+	setne	%al
+	shll	$5, %eax
+	shlq	$5, %rsi
+	addq	%rdi, %rsi
+	leaq	-32(%rax,%rsi), %rax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	xorl	%eax, %eax
+	cmpb	$-2, %dl
+	sete	%al
+	leaq	(%rsi,%rsi,4), %rcx
+	leaq	(%rdi,%rcx,4), %rcx
+	leaq	4(%rcx,%rax,4), %rax
+	retq
+func00000000000000af:                   # @func00000000000000af
+	xorl	%eax, %eax
+	cmpb	$49, %dl
+	setge	%al
+	addq	%rsi, %rdi
+	leaq	3(%rax,%rdi), %rax
+	retq
+func000000000000001f:                   # @func000000000000001f
+	xorl	%eax, %eax
+	cmpb	$110, %dl
+	sete	%al
+	addq	%rsi, %rdi
+	leaq	3(%rax,%rdi), %rax
+	retq
+func0000000000000013:                   # @func0000000000000013
 	xorl	%eax, %eax
 	testb	%dl, %dl
 	setne	%al

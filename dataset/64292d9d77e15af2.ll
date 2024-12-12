@@ -1,6 +1,6 @@
 
-%"union.std::aligned_storage<8, 8>::type.2568893" = type { [8 x i8] }
-%struct.ItemIdData.3469633 = type { i32 }
+%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
+%struct.ItemIdData.3653742 = type { i32 }
 
 ; 36 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -40,10 +40,10 @@
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i16 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2568893"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -54,7 +54,7 @@ entry:
 define i64 @func0000000000000004(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr [0 x %struct.ItemIdData.3469633], ptr %0, i64 0, i64 %2
+  %3 = getelementptr [0 x %struct.ItemIdData.3653742], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

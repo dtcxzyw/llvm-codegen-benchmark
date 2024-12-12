@@ -22,3 +22,9 @@ func0000000000000000:                   # @func0000000000000000
 	movslq	%esi, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	addl	%edx, %esi
+	sarl	%esi
+	movslq	%esi, %rax
+	leaq	(%rdi,%rax,4), %rax
+	retq

@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 34 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; libjpeg-turbo/optimized/rdppm.c.ll
@@ -32,6 +32,8 @@
 ; spike/optimized/ukstas16.ll
 ; spike/optimized/ukstsa16.ll
 ; spike/optimized/uksub16.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

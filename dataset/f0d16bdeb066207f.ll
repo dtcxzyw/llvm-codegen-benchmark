@@ -1,5 +1,6 @@
 
-; 74 occurrences:
+; 77 occurrences:
+; boost/optimized/ipv6_address.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -51,7 +52,6 @@
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/aethra.c.ll
 ; wireshark/optimized/charsets.c.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/eyesdn.c.ll
 ; wireshark/optimized/k12.c.ll
@@ -74,11 +74,14 @@
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }
@@ -97,7 +100,7 @@ entry:
 define i32 @func0000000000000003(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = zext nneg i16 %3 to i32
   ret i32 %4
 }
@@ -108,7 +111,7 @@ entry:
 define i32 @func0000000000000001(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = zext nneg i16 %3 to i32
   ret i32 %4
 }
@@ -122,7 +125,7 @@ entry:
 define i32 @func0000000000000007(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = zext nneg i16 %3 to i32
   ret i32 %4
 }
@@ -133,7 +136,7 @@ entry:
 define i32 @func0000000000000004(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }
@@ -147,7 +150,7 @@ entry:
 define i32 @func0000000000000000(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }

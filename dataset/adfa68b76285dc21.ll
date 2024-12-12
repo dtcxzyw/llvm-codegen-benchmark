@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; z3/optimized/sat_lookahead.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 1

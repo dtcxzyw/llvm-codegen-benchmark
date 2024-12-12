@@ -1,5 +1,5 @@
 
-; 258 occurrences:
+; 262 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bmcCexMin2.c.ll
@@ -80,7 +80,6 @@
 ; llvm/optimized/ParsePragma.cpp.ll
 ; llvm/optimized/ParseTemplate.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
@@ -116,6 +115,11 @@
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_image_decoder.ll
 ; openjdk/optimized/defNewGeneration.ll
 ; openjdk/optimized/g1CardSet.ll
 ; openjdk/optimized/g1ParScanThreadState.ll
@@ -353,7 +357,7 @@ entry:
 ; ruby/optimized/sha2.ll
 ; wireshark/optimized/packet-cimd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
+define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 448
   %2 = icmp ne i64 %1, 448
@@ -391,7 +395,7 @@ entry:
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
+define i1 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 12288
   %2 = icmp eq i64 %1, 12288
@@ -403,7 +407,7 @@ entry:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0) #0 {
+define i1 @func00000000000000c1(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2146435072
   %2 = icmp eq i64 %1, 0
@@ -534,7 +538,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0) #0 {
+define i1 @func000000000000008c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 65280
   %2 = icmp ne i64 %1, 0
@@ -546,7 +550,7 @@ entry:
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/vsyscall_64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 261632
   %2 = icmp eq i64 %1, 0
@@ -557,7 +561,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2146435072
   %2 = icmp eq i64 %1, 0
@@ -568,20 +572,20 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0) #0 {
+define i1 @func0000000000000098(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2146435072
-  %2 = icmp ugt i64 %1, 1092616192
+  %2 = icmp samesign ugt i64 %1, 1092616192
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; cpython/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0) #0 {
+define i1 @func0000000000000094(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2146435072
-  %2 = icmp ult i64 %1, 112197632
+  %2 = icmp samesign ult i64 %1, 112197632
   ret i1 %2
 }
 

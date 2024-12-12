@@ -1,7 +1,8 @@
 
-; 42 occurrences:
+; 47 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/dauTree.c.ll
+; boost/optimized/xml_grammar.ll
 ; eastl/optimized/BenchmarkBitset.cpp.ll
 ; entt/optimized/benchmark.cpp.ll
 ; entt/optimized/custom_identifier.cpp.ll
@@ -42,6 +43,10 @@
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/packet-lldp.c.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:

@@ -35,7 +35,7 @@
 func000000000000001d:                   # @func000000000000001d
 	vpmovsxbw	.LCPI0_1(%rip), %ymm3   # ymm3 = [16,0,1,2,17,4,5,6,18,8,9,10,19,12,13,14]
 	vpermi2w	%ymm2, %ymm1, %ymm3
-	vpaddq	%ymm0, %ymm3, %ymm0
+	vpaddq	%ymm3, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.short	16                              # 0x10
@@ -113,7 +113,7 @@ func000000000000001c:                   # @func000000000000001c
 func000000000000001f:                   # @func000000000000001f
 	vpmovsxbw	.LCPI2_1(%rip), %ymm3   # ymm3 = [16,0,1,2,17,4,5,6,18,8,9,10,19,12,13,14]
 	vpermi2w	%ymm2, %ymm1, %ymm3
-	vpaddq	%ymm0, %ymm3, %ymm0
+	vpaddq	%ymm3, %ymm0, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpmovzxwq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero

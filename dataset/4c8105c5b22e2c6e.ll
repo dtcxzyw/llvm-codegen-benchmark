@@ -1,4 +1,18 @@
 
+; 2 occurrences:
+; minetest/optimized/minimap.cpp.ll
+; openspiel/optimized/chess_board.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000050(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = shl nsw i64 %4, 3
+  %6 = getelementptr i8, ptr %0, i64 106
+  %7 = getelementptr i8, ptr %6, i64 %5
+  ret ptr %7
+}
+
 ; 48 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/inner_product_computer.cc.ll
@@ -59,15 +73,17 @@ entry:
   ret ptr %7
 }
 
-; 1 occurrences:
-; postgres/optimized/tsvector_op.ll
+; 3 occurrences:
+; openspiel/optimized/chess.cc.ll
+; openspiel/optimized/chess_board.cc.ll
+; openspiel/optimized/kriegspiel.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000005c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %1, %2
+  %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = shl nsw i64 %4, 2
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = shl nsw i64 %4, 1
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 7
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }

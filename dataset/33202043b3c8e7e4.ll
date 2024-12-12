@@ -1,5 +1,5 @@
 
-; 91 occurrences:
+; 90 occurrences:
 ; cmake/optimized/nghttp2_hd.c.ll
 ; cpython/optimized/unicodedata.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
@@ -7,7 +7,6 @@
 ; libevent/optimized/event_tagging.c.ll
 ; libpng/optimized/pngwtran.c.ll
 ; libquic/optimized/hpack_input_stream.cc.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
@@ -123,9 +122,8 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/ifDec16.c.ll
-; linux/optimized/rsmisc.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll

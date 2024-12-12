@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 64 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/mpdecimal.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/filter.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/nfs4proc.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tls.ll
 ; linux/optimized/vt.ll
@@ -38,24 +37,21 @@
 ; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
-; lua/optimized/lgc.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_cdata.ll
 ; luajit/optimized/lj_cdata_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
-; openssl/optimized/quic_ackm_test-bin-quic_ackm_test.ll
 ; openssl/optimized/quic_fifd_test-bin-quic_fifd_test.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; qemu/optimized/backends_tpm_tpm_emulator.c.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; redis/optimized/bio.ll
 ; ruby/optimized/ruby.ll
@@ -67,6 +63,7 @@
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/blf.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
@@ -116,11 +113,11 @@ entry:
 ; linux/optimized/pcm_lib.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
-; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/TemplateBase.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openssl/optimized/libcommon-lib-ciphercommon_ccm.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -139,8 +136,7 @@ entry:
   ret i8 %3
 }
 
-; 5 occurrences:
-; linux/optimized/evgpeinit.ll
+; 4 occurrences:
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; luajit/optimized/lj_parse.ll

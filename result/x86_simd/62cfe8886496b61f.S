@@ -1,9 +1,8 @@
 func00000000000000c4:                   # @func00000000000000c4
 	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpneqd	%ymm4, %ymm2, %k1
-	vpcmpgtw	%xmm0, %xmm3, %k1 {%k1}
+	vpmovw2m	%xmm0, %k1
+	vpcmpeqd	%ymm0, %ymm0, %ymm0
+	vpcmpneqd	%ymm0, %ymm2, %k1 {%k1}
 	vpxor	%xmm0, %xmm0, %xmm0
 	vcmpltps	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0

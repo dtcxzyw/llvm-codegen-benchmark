@@ -1,10 +1,11 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
 ; abc/optimized/giaCSatP.c.ll
 ; abc/optimized/giaCTas.c.ll
 ; flac/optimized/fixed.c.ll
+; git/optimized/shortlog.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/unistr.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -61,9 +62,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; c3c/optimized/sema_asm.c.ll
-; wireshark/optimized/packet-bvlc.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:

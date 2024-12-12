@@ -1,5 +1,5 @@
 
-%"struct.pkpy::CodeObject::LineInfo.3844076" = type { i32, i8 }
+%"struct.pkpy::CodeObject::LineInfo.4022172" = type { i32, i8 }
 
 ; 3 occurrences:
 ; cmake/optimized/divsufsort.c.ll
@@ -24,7 +24,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.pkpy::CodeObject::LineInfo.3844076", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.pkpy::CodeObject::LineInfo.4022172", ptr %0, i64 %5
   ret ptr %6
 }
 

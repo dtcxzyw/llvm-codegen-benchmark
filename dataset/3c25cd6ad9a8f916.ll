@@ -1,10 +1,10 @@
 
-%struct.succ_dict_block.2485796 = type { i32, i64, [8 x i64] }
-%struct.ossl_qrl_enc_level_st.2519981 = type { %struct.quic_hdr_protector_st.2519982, ptr, [2 x ptr], ptr, ptr, i64, i64, i32, i32, i8, i8, [2 x [16 x i8]], [64 x i8] }
-%struct.quic_hdr_protector_st.2519982 = type { ptr, ptr, ptr, ptr, i32 }
-%"struct.gjkepa2_impl::GJK::sSimplex.2705732" = type { [4 x ptr], [4 x float], i32 }
-%struct.deal.3297925 = type { i32, i32, [3 x i32], [3 x i32], [4 x [4 x i32]] }
-%struct.anon.134.3354213 = type { i32, [10 x i8], [8 x i16], [8 x i16], i32, i32, i32 }
+%struct.succ_dict_block.2601266 = type { i32, i64, [8 x i64] }
+%struct.ossl_qrl_enc_level_st.2634709 = type { %struct.quic_hdr_protector_st.2634710, ptr, [2 x ptr], ptr, ptr, i64, i64, i32, i32, i8, i8, [2 x [16 x i8]], [64 x i8] }
+%struct.quic_hdr_protector_st.2634710 = type { ptr, ptr, ptr, ptr, i32 }
+%"struct.gjkepa2_impl::GJK::sSimplex.2818447" = type { [4 x ptr], [4 x float], i32 }
+%struct.tinfl_huff_table.2828286 = type { [288 x i8], [1024 x i16], [576 x i16] }
+%struct.anon.134.3541755 = type { i32, [10 x i8], [8 x i16], [8 x i16], i32, i32, i32 }
 
 ; 6 occurrences:
 ; postgres/optimized/dsa.ll
@@ -14,11 +14,11 @@
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000048(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000004c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [0 x %struct.succ_dict_block.2485796], ptr %1, i64 0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 16
+  %4 = getelementptr [0 x %struct.succ_dict_block.2601266], ptr %1, i64 0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = getelementptr [8 x i64], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
@@ -35,47 +35,63 @@ entry:
 ; openssl/optimized/libssl-lib-quic_record_shared.ll
 ; openssl/optimized/libssl-shlib-quic_record_shared.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [4 x %struct.ossl_qrl_enc_level_st.2519981], ptr %1, i64 0, i64 %3, i32 2, i64 %0
+  %4 = getelementptr nuw [4 x %struct.ossl_qrl_enc_level_st.2634709], ptr %1, i64 0, i64 %3, i32 2, i64 %0
   ret ptr %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
 ; clamav/optimized/unpack.cpp.ll
 ; flac/optimized/stream_decoder.c.ll
+; openspiel/optimized/SolveBoard.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [2 x %"struct.gjkepa2_impl::GJK::sSimplex.2705732"], ptr %1, i64 0, i64 %3, i32 1, i64 %0
+  %4 = getelementptr nuw [2 x %"struct.gjkepa2_impl::GJK::sSimplex.2818447"], ptr %1, i64 0, i64 %3, i32 1, i64 %0
+  ret ptr %4
+}
+
+; 5 occurrences:
+; assimp/optimized/zip.c.ll
+; hermes/optimized/zip.c.ll
+; icu/optimized/dictbe.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr [3 x %struct.tinfl_huff_table.2828286], ptr %1, i64 0, i64 %3, i32 2, i64 %0
   ret ptr %4
 }
 
 ; 1 occurrences:
-; openspiel/optimized/SolveBoard.cpp.ll
+; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [200 x %struct.deal.3297925], ptr %1, i64 0, i64 %3, i32 2, i64 %0
-  ret ptr %4
+  %4 = getelementptr nuw [0 x { i8, [63 x i8] }], ptr %1, i64 0, i64 %3, i32 1, i64 3
+  %5 = getelementptr nusw [0 x i32], ptr %4, i64 0, i64 %0
+  ret ptr %5
 }
 
 ; 2 occurrences:
 ; linux/optimized/mq-deadline.ll
 ; linux/optimized/nl80211.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [6 x %struct.anon.134.3354213], ptr %1, i64 0, i64 %3, i32 1, i64 %0
+  %4 = getelementptr [6 x %struct.anon.134.3541755], ptr %1, i64 0, i64 %3, i32 1, i64 %0
   ret ptr %4
 }
 

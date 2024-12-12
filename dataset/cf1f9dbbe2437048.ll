@@ -17,7 +17,8 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/to_chars.ll
 ; openjdk/optimized/g1ConcurrentMark.ll
 ; openjdk/optimized/g1FullGCMarker.ll
 ; openjdk/optimized/g1FullGCOopClosures.ll

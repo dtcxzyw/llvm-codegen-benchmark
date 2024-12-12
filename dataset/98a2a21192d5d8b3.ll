@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; linux/optimized/8250_exar.ll
+; 9 occurrences:
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; luajit/optimized/lj_ccallback.ll

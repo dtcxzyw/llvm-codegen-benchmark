@@ -11,7 +11,7 @@ entry:
   %2 = lshr i8 %1, 3
   %3 = and i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = add i32 %5, 5
   ret i32 %6
 }

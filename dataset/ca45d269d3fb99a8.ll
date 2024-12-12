@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 14 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; cpython/optimized/call.ll
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/textio.ll
@@ -11,6 +12,8 @@
 ; redis/optimized/rax.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; ruby/optimized/array.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5gzhlrfve63v3ndyg8t40tttn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -27,7 +30,7 @@ entry:
 ; protobuf/optimized/descriptor_database.cc.ll
 ; rocksdb/optimized/merging_iterator.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000004a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 2
   %4 = icmp sgt i32 %1, 0
@@ -42,7 +45,7 @@ entry:
 ; protobuf/optimized/file.cc.ll
 ; rocksdb/optimized/merging_iterator.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000046(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 2
   %4 = icmp slt i32 %1, 0
@@ -50,9 +53,10 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; hdf5/optimized/H5FDint.c.ll
+; lightgbm/optimized/metadata.cpp.ll
 ; openssl/optimized/libcrypto-lib-ec2_oct.ll
 ; openssl/optimized/libcrypto-lib-ecp_oct.ll
 ; openssl/optimized/libcrypto-shlib-ec2_oct.ll
@@ -60,7 +64,7 @@ entry:
 ; openusd/optimized/fileSystem.cpp.ll
 ; redis/optimized/expire.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = icmp eq i32 %1, 2
@@ -121,7 +125,7 @@ entry:
 ; velox/optimized/JsonType.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 80
   %4 = icmp eq i32 %1, 1
@@ -135,7 +139,7 @@ entry:
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 719468
   %4 = icmp sgt i32 %1, -719469
@@ -143,10 +147,15 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 6 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; luau/optimized/Linter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000044(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 2
   %4 = icmp ult i32 %1, 10
@@ -159,10 +168,10 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000018(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 3
-  %4 = icmp ugt i32 %1, 999
+  %4 = icmp samesign ugt i32 %1, 999
   %5 = select i1 %4, i64 %3, i64 %0
   ret i64 %5
 }
@@ -170,21 +179,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Builtins.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000041(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp eq i32 %1, 0
-  %5 = select i1 %4, i64 %3, i64 %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/IRMover.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, -1
-  %4 = icmp ult i32 %1, 10
   %5 = select i1 %4, i64 %3, i64 %0
   ret i64 %5
 }
@@ -193,7 +191,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -2208988800
   %4 = icmp slt i32 %1, 0
@@ -204,7 +202,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/snapmgr.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000006a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 120
   %4 = icmp sgt i32 %1, 0
@@ -215,7 +213,7 @@ entry:
 ; 1 occurrences:
 ; hwloc/optimized/bitmap.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp ult i32 %1, 65537

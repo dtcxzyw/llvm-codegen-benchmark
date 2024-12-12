@@ -32,10 +32,9 @@ entry:
   ret i32 %3
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
-; folly/optimized/LogName.cpp.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/timekeeping.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll

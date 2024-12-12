@@ -25,13 +25,20 @@ func000000000000000f:                   # @func000000000000000f
 	sbbl	$0, %edi
 	leal	2(%rdi), %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	shrl	$5, %edi
 	leal	320(%rdi), %eax
 	cmpl	$880, %esi                      # imm = 0x370
 	cmovael	%edi, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
+	xorl	%eax, %eax
+	cmpl	$254, %esi
+	setae	%al
+	shrl	$3, %edi
+	leal	2(%rdi,%rax,2), %eax
+	retq
+func00000000000000a2:                   # @func00000000000000a2
 	xorl	%eax, %eax
 	cmpl	$62, %esi
 	setae	%al

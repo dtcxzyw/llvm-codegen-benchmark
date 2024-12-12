@@ -1,7 +1,11 @@
 
-; 50 occurrences:
+; 54 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; assimp/optimized/PlyParser.cpp.ll
+; boost/optimized/graphml.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/src.ll
 ; clamav/optimized/pdfng.c.ll
 ; curl/optimized/libcurl_la-imap.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -89,7 +93,7 @@ entry:
   ret i64 %5
 }
 
-; 30 occurrences:
+; 28 occurrences:
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -99,7 +103,6 @@ entry:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestAny.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
@@ -111,7 +114,6 @@ entry:
 ; eastl/optimized/TestOptional.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll

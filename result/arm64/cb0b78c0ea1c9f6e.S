@@ -1,11 +1,8 @@
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	mvni	v1.4s, #85
-	cmle	v2.4s, v0.4s, #0
-	fneg	v1.4s, v1.4s
-	and	v1.16b, v2.16b, v1.16b
-	add	v0.4s, v0.4s, v1.4s
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	add	w8, w0, #48
+	cmp	w0, #0
+	csel	w8, w8, w0, lt
+	sxtw	x0, w8
 	ret
                                         // -- End function

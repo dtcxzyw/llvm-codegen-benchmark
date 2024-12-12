@@ -106,21 +106,53 @@ func0000000000000013:                   # @func0000000000000013
 .LBB14_2:                               # %entry
 	addw	a0, a0, a1
 	ret
+func0000000000000053:                   # @func0000000000000053
+	sext.w	a2, a2
+	li	a3, 10
+	bgeu	a2, a3, .LBB15_2
+	li	a1, 1
+.LBB15_2:                               # %entry
+	addw	a0, a0, a1
+	ret
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a2, a2
-	li	a3, 1979
-	bge	a3, a2, .LBB15_2
-	lui	a1, 1048575
-	addi	a1, a1, 216
-.LBB15_2:                               # %entry
+	li	a3, 99
+	bge	a3, a2, .LBB16_2
+	li	a1, 5
+.LBB16_2:                               # %entry
+	addw	a0, a0, a1
+	ret
+func0000000000000023:                   # @func0000000000000023
+	sext.w	a2, a2
+	lui	a3, 2
+	addiw	a3, a3, 1808
+	bgeu	a3, a2, .LBB17_2
+	li	a1, 1023
+.LBB17_2:                               # %entry
+	addw	a0, a0, a1
+	ret
+func0000000000000051:                   # @func0000000000000051
+	sext.w	a2, a2
+	li	a3, 2
+	bgeu	a2, a3, .LBB18_2
+	li	a1, 3
+.LBB18_2:                               # %entry
+	addw	a0, a0, a1
+	ret
+func0000000000000050:                   # @func0000000000000050
+	sext.w	a2, a2
+	li	a3, 128
+	bgeu	a2, a3, .LBB19_2
+	li	a1, 1
+.LBB19_2:                               # %entry
 	addw	a0, a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021
 	sext.w	a2, a2
 	lui	a3, 878478
 	addiw	a3, a3, 1991
-	bgeu	a3, a2, .LBB16_2
+	bgeu	a3, a2, .LBB20_2
 	li	a1, -306
-.LBB16_2:                               # %entry
+.LBB20_2:                               # %entry
 	addw	a0, a0, a1
 	ret

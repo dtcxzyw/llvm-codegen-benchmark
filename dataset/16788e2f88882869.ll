@@ -1,5 +1,5 @@
 
-; 175 occurrences:
+; 174 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
@@ -173,14 +173,13 @@
 ; wireshark/optimized/packet-iso15765.c.ll
 ; wireshark/optimized/packet-lldp.c.ll
 ; wireshark/optimized/packet-mpeg-pes.c.ll
-; yosys/optimized/calc.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 1073741816
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -208,11 +207,11 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = and i64 %2, 2097151
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 114 occurrences:
+; 113 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; brotli/optimized/encode.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -238,15 +237,12 @@ entry:
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/tcp_sigpool.ll
 ; linux/optimized/trans_virtio.ll
-; linux/optimized/ttm_range_manager.ll
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TemplateBase.cpp.ll
-; minetest/optimized/clientmap.cpp.ll
 ; node/optimized/libnode.crypto_aes.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
@@ -327,6 +323,8 @@ entry:
 ; spike/optimized/vsuxei8_v.ll
 ; velox/optimized/Allocation.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -336,7 +334,7 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; meshlab/optimized/matching.cpp.ll
 ; mini-lsm-rs/optimized/211qm7emy1a6xqse.ll
 ; mini-lsm-rs/optimized/3jirohyl4so2bgw0.ll
@@ -346,8 +344,11 @@ entry:
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
 ; wasmedge/optimized/elem.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
-; yosys/optimized/qwp.ll
 ; z3/optimized/sat_clause.cpp.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
@@ -368,7 +369,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 4294967295
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -388,7 +389,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 16
   %3 = and i64 %2, 65535
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -411,7 +412,7 @@ define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 12
   %3 = and i64 %2, 1023
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

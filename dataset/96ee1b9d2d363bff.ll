@@ -1,5 +1,29 @@
 
-; 40 occurrences:
+; 64 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/yc.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -41,7 +65,7 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000082(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = or i1 %2, %0
@@ -55,42 +79,28 @@ entry:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; openusd/optimized/assetPath.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -257
   %3 = icmp eq i32 %2, 37
   %4 = icmp eq i32 %1, 292
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = or i1 %5, %3
   ret i1 %6
 }
 
-; 5 occurrences:
-; llvm/optimized/Host.cpp.ll
+; 4 occurrences:
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-btatt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000202(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 32
+  %2 = icmp ult i32 %1, 6144
   %3 = or i1 %2, %0
-  %4 = and i32 %1, -16
-  %5 = icmp eq i32 %4, 160
-  %6 = or i1 %5, %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; openusd/optimized/assetPath.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000104(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 2147483616
-  %3 = icmp eq i32 %2, 128
-  %4 = icmp ult i32 %1, 32
-  %5 = or i1 %4, %0
+  %4 = and i32 %1, 61440
+  %5 = icmp eq i32 %4, 61440
   %6 = or i1 %5, %3
   ret i1 %6
 }
@@ -99,12 +109,12 @@ entry:
 ; icu/optimized/ustrtrns.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000504(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2048
   %3 = icmp eq i32 %2, 55296
   %4 = icmp sgt i32 %1, 1114111
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = or i1 %5, %3
   ret i1 %6
 }

@@ -44,18 +44,16 @@ entry:
   ret i64 %6
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; abc/optimized/bacPrsBuild.c.ll
+; boost/optimized/area.ll
 ; cpython/optimized/frameobject.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/gmx_make_edi.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; linux/optimized/netpoll.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlarfb.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; openexr/optimized/ImfMisc.cpp.ll
 ; openspiel/optimized/oware.cc.ll
@@ -83,9 +81,8 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
@@ -110,9 +107,8 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:

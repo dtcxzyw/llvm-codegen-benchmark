@@ -17,10 +17,12 @@ entry:
   ret i16 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
 ; icu/optimized/uconv.ll
+; llvm/optimized/DataFlowSanitizer.cpp.ll
+; llvm/optimized/MemorySanitizer.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; sqlite/optimized/sqlite3.ll

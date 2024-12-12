@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; arrow/optimized/array_nested.cc.ll
 ; linux/optimized/vmstat.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -7,7 +7,6 @@
 ; llvm/optimized/CoroSplit.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; nuttx/optimized/lib_hexdumpstream.c.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; postgres/optimized/date.ll
@@ -22,7 +21,7 @@ entry:
   ret i64 %3
 }
 
-; 47 occurrences:
+; 42 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -36,15 +35,11 @@ entry:
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
-; llvm/optimized/IRTranslator.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/JSONNodeDumper.cpp.ll
-; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/ParseCXXInlineMethods.cpp.ll
-; llvm/optimized/ParseDecl.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -68,10 +63,9 @@ entry:
 ; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; luau/optimized/Linter.cpp.ll
-; luau/optimized/lstrlib.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i32 %0) #0 {
+define i64 @func0000000000000048(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -48
   %2 = icmp ult i32 %1, 10
@@ -118,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i32 %0) #0 {
+define i64 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, -1
   %2 = zext i1 %1 to i64

@@ -52,12 +52,11 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; brotli/optimized/decode.c.ll
 ; hdf5/optimized/H5HFsection.c.ll
 ; linux/optimized/blk-merge.ll
 ; openmpi/optimized/common_ompio_file_write.ll
-; ozz-animation/optimized/animation_utils.cc.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
@@ -85,7 +84,7 @@ entry:
 ; redis/optimized/networking.ll
 ; redis/optimized/sentinel.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sgt i64 %3, %0
@@ -96,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/replication.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002e(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000004e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sle i64 %3, %0
@@ -108,7 +107,7 @@ entry:
 ; freetype/optimized/ftbase.c.ll
 ; redis/optimized/sentinel.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp slt i64 %3, %0
@@ -130,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/ThreadPool.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sge i64 %3, %0

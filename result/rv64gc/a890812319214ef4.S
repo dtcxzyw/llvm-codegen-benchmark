@@ -42,43 +42,16 @@ func000000000000000b:                   # @func000000000000000b
 	andi	a1, a1, 100
 	addw	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
-	sext.w	a2, a2
-	sltiu	a2, a2, 196
-	not	a2, a2
-	or	a1, a1, a2
-	andi	a1, a1, 1
-	bnez	a1, .LBB5_2
-	li	a1, 30
-	addw	a0, a0, a1
-	ret
-.LBB5_2:
-	li	a1, 90
-	addw	a0, a0, a1
-	ret
 func0000000000000060:                   # @func0000000000000060
 	sext.w	a2, a2
 	snez	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1
-	bnez	a1, .LBB6_2
+	bnez	a1, .LBB5_2
 	li	a1, 72
 	addw	a0, a0, a1
 	ret
-.LBB6_2:
-	li	a1, 68
-	addw	a0, a0, a1
-	ret
-func0000000000000020:                   # @func0000000000000020
-	sext.w	a2, a2
-	sltiu	a2, a2, 4
-	or	a1, a1, a2
-	andi	a1, a1, 1
-	bnez	a1, .LBB7_2
-	li	a1, 72
-	addw	a0, a0, a1
-	ret
-.LBB7_2:
+.LBB5_2:
 	li	a1, 68
 	addw	a0, a0, a1
 	ret

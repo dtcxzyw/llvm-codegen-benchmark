@@ -42,19 +42,19 @@
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %1, 1
-  %5 = icmp ult i64 %4, %3
-  %6 = and i1 %5, %0
+  %5 = icmp samesign ult i64 %4, %3
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nsw i64 %1, -1
@@ -69,7 +69,7 @@ entry:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %1, 1
@@ -93,12 +93,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %1, 1
   %5 = icmp eq i64 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -117,12 +117,12 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/rematch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nsw i64 %1, 1
   %5 = icmp uge i64 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

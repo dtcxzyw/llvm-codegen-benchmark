@@ -8,18 +8,7 @@ func0000000000000144:                   # @func0000000000000144
 	sgtz	a1, a1
 	addw	a0, a0, a1
 	ret
-func000000000000018f:                   # @func000000000000018f
-	sext.w	a1, a1
-	addi	a1, a1, 2
-	snez	a1, a1
-	addw	a0, a0, a1
-	ret
 func0000000000000180:                   # @func0000000000000180
-	sext.w	a1, a1
-	snez	a1, a1
-	addw	a0, a0, a1
-	ret
-func000000000000018e:                   # @func000000000000018e
 	sext.w	a1, a1
 	snez	a1, a1
 	addw	a0, a0, a1

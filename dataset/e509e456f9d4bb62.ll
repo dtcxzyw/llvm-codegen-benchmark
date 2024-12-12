@@ -51,10 +51,9 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/autocorr.cpp.ll
-; linux/optimized/intel_audio.ll
 ; llvm/optimized/DWARFUnitIndex.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openspiel/optimized/goofspiel.cc.ll
@@ -99,28 +98,6 @@ entry:
   %3 = mul nuw nsw i32 %2, 100
   %4 = mul nsw i32 %0, %1
   %5 = add nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dgesdd.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul i32 %1, %2
-  %4 = mul nsw i32 %0, 3
-  %5 = add nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dgesdd.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul i32 %1, %2
-  %4 = mul nsw i32 %0, 3
-  %5 = add i32 %4, %3
   ret i32 %5
 }
 

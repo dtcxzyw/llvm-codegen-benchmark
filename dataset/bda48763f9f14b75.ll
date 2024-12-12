@@ -1,8 +1,7 @@
 
-; 120 occurrences:
+; 118 occurrences:
 ; graphviz/optimized/exeval.c.ll
 ; hermes/optimized/APInt.cpp.ll
-; linux/optimized/maccess.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -34,7 +33,6 @@
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/LICM.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll

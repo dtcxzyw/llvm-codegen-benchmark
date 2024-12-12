@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/archive_read_support_filter_rpm.c.ll
 ; curl/optimized/libcurl_la-rtsp.ll
@@ -49,7 +49,6 @@
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_pattern_info.ll
 ; redis/optimized/listpack.ll
@@ -100,7 +99,7 @@ define i64 @func0000000000000017(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw i64 %2, 56
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = add nuw nsw i64 %4, 8
   ret i64 %5
 }
@@ -112,7 +111,7 @@ define i64 @func0000000000000019(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 24
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = add nsw i64 %4, -2147483648
   ret i64 %5
 }

@@ -1,11 +1,13 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; graphviz/optimized/constraint.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/intel_panel.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_slider.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/CGUIScrollBar.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
@@ -38,15 +40,43 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/gregorian.ll
+; opencv/optimized/gapi_core_perf_tests.cpp.ll
+; opencv/optimized/gnnparsers.cpp.ll
+; zxing/optimized/QREncoder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = sdiv i32 %0, 400
+  %5 = add i32 %4, %3
+  ret i32 %5
+}
+
+; 3 occurrences:
 ; libquic/optimized/prtime.cc.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_dropdown.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sdiv i32 %0, 1000000
   %5 = add nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 3 occurrences:
+; lvgl/optimized/lv_area.ll
+; openblas/optimized/dsbgst.c.ll
+; opencv/optimized/tldEnsembleClassifier.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sdiv i32 %2, 2
+  %4 = sub nsw i32 %0, %1
+  %5 = add i32 %4, %3
   ret i32 %5
 }
 
@@ -58,31 +88,6 @@ entry:
   %3 = sdiv i32 %2, 2
   %4 = sub nsw i32 %0, %1
   %5 = add nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 3 occurrences:
-; opencv/optimized/gapi_core_perf_tests.cpp.ll
-; opencv/optimized/gnnparsers.cpp.ll
-; zxing/optimized/QREncoder.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = sdiv i32 %0, -8
-  %5 = add i32 %4, %3
-  ret i32 %5
-}
-
-; 2 occurrences:
-; openblas/optimized/dsbgst.c.ll
-; opencv/optimized/tldEnsembleClassifier.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sdiv i32 %2, 2
-  %4 = sub nsw i32 %0, %1
-  %5 = add i32 %4, %3
   ret i32 %5
 }
 

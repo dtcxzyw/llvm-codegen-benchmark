@@ -1,5 +1,5 @@
 
-; 176 occurrences:
+; 175 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -61,7 +61,6 @@
 ; msdfgen/optimized/edge-segments.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; openblas/optimized/dlaic1.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; opencv/optimized/bif.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/dls.cpp.ll
@@ -180,7 +179,7 @@
 define double @func0000000000000000(double %0) #0 {
 entry:
   %1 = fmul double %0, 3.000000e+00
-  %2 = fmul double %1, %0
+  %2 = fmul double %0, %1
   ret double %2
 }
 

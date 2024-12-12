@@ -8,7 +8,7 @@ func0000000000000019:                   # @func0000000000000019
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpaddd	%ymm1, %ymm1, %ymm0
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	vpcmpnleud	%ymm2, %ymm0, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpslld	$12, %ymm1, %ymm0

@@ -20,7 +20,7 @@ entry:
   ret i64 %4
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaMinLut.c.ll
@@ -31,6 +31,7 @@ entry:
 ; libquic/optimized/process_metrics_linux.cc.ll
 ; libwebp/optimized/cwebp.c.ll
 ; libwebp/optimized/webpdec.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; openblas/optimized/dlansf.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
@@ -50,7 +51,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

@@ -10,13 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$-1, %eax
 	cmovlel	%ecx, %eax
 	retq
-func0000000000000041:                   # @func0000000000000041
-	leal	5(%rsi,%rdi), %ecx
-	testl	%ecx, %ecx
-	movl	$7, %eax
-	cmovnel	%ecx, %eax
-	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	leal	-3(%rsi,%rdi), %ecx
 	testl	%ecx, %ecx
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF

@@ -63,7 +63,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, -2048144789
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = mul i32 %3, -1028477387
   %5 = lshr i32 %4, 16
   %6 = xor i32 %5, %4
@@ -80,7 +80,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 4097
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = mul nsw i32 %3, 17
   %5 = lshr i32 %4, 9
   %6 = xor i32 %5, %4
@@ -98,7 +98,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 17
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = mul i32 %3, 1025
   %5 = lshr i32 %4, 2
   %6 = xor i32 %5, %4
@@ -111,7 +111,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 4097
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = mul i32 %3, 17
   %5 = lshr i32 %4, 9
   %6 = xor i32 %5, %4

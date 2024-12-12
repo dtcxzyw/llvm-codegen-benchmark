@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 36 occurrences:
 ; assimp/optimized/FindInstancesProcess.cpp.ll
 ; assimp/optimized/MakeVerboseFormat.cpp.ll
 ; assimp/optimized/ProcessHelper.cpp.ll
@@ -11,7 +11,6 @@
 ; draco/optimized/ply_decoder.cc.ll
 ; folly/optimized/IOBuf.cpp.ll
 ; git/optimized/submodule.ll
-; libpng/optimized/pngread.c.ll
 ; libquic/optimized/rsa_impl.c.ll
 ; linux/optimized/initramfs.ll
 ; llvm/optimized/BugReporter.cpp.ll
@@ -25,10 +24,8 @@
 ; minetest/optimized/localplayer.cpp.ll
 ; nanobind/optimized/nb_enum.cpp.ll
 ; openjdk/optimized/cfgnode.ll
-; openjdk/optimized/pngread.ll
 ; ozz-animation/optimized/ik_two_bone_job.cc.ll
 ; php/optimized/cgi_main.ll
-; php/optimized/output.ll
 ; php/optimized/phpdbg_prompt.ll
 ; rocksdb/optimized/column_family.cc.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
@@ -44,7 +41,7 @@ define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

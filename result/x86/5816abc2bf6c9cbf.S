@@ -31,8 +31,9 @@ func0000000000000023:                   # @func0000000000000023
 	leal	5(%rdi), %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
+	shrq	$2, %rdi
 	andl	$-2, %edi
-	leal	2(%rdi), %eax
+	leal	-1(%rdi), %eax
 	retq
 func0000000000000045:                   # @func0000000000000045
 	shrq	$2, %rdi

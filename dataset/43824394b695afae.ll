@@ -34,13 +34,13 @@
 ; openjdk/optimized/mlib_ImageConv_8nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, %1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i16, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i16, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i16, ptr %5, i64 %6
   ret ptr %7
 }
 

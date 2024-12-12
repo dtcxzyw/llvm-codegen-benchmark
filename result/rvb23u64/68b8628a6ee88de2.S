@@ -13,14 +13,14 @@ func000000000000000c:                   # @func000000000000000c
 	slti	a1, a1, 0
 	or	a0, a0, a1
 	ret
-func00000000000000b0:                   # @func00000000000000b0
+func0000000000000150:                   # @func0000000000000150
 	sh1add	a2, a2, a2
 	addw	a1, a1, a2
 	sltiu	a1, a1, 7
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	sh1add	a2, a2, a2
 	addw	a1, a1, a2
 	slti	a1, a1, 0

@@ -1,6 +1,9 @@
 
-; 130 occurrences:
+; 133 occurrences:
+; boost/optimized/to_chars.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/json_value.cpp.ll
+; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -29,20 +32,20 @@
 ; jq/optimized/decNumber.ll
 ; libevent/optimized/http.c.ll
 ; libquic/optimized/quic_unacked_packet_map.cc.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_dmc.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/Availability.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/CGException.cpp.ll
 ; llvm/optimized/CommonArgs.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
+; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
+; llvm/optimized/CoverageMappingWriter.cpp.ll
 ; llvm/optimized/DFAPacketizer.cpp.ll
 ; llvm/optimized/Darwin.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
@@ -52,9 +55,7 @@
 ; llvm/optimized/GlobalISelEmitter.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/HIPUtility.cpp.ll
-; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; llvm/optimized/Loads.cpp.ll
 ; llvm/optimized/NativeFunctionSymbol.cpp.ll
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
@@ -130,6 +131,8 @@
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_recfun.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

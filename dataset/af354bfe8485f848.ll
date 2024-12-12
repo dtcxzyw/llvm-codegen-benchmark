@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 96 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/solver.c.ll
@@ -9,6 +9,7 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
+; boost/optimized/cmdline.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/lzma2_encoder.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -21,14 +22,12 @@
 ; eastl/optimized/EADateTime.cpp.ll
 ; git/optimized/pack-write.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5HFiblock.c.ll
 ; hermes/optimized/ConvertUTF.cpp.ll
 ; hwloc/optimized/topology.ll
 ; icu/optimized/number_decimalquantity.ll
 ; jq/optimized/regcomp.ll
 ; linux/optimized/entropy_common.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pipe.ll
 ; linux/optimized/seq_buf.ll
@@ -42,7 +41,6 @@
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -56,6 +54,8 @@
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/lj_vmmath.ll
 ; luajit/optimized/lj_vmmath_dyn.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshoptimizer/optimized/vcacheoptimizer.cpp.ll
 ; oniguruma/optimized/regcomp.ll
@@ -92,6 +92,7 @@
 ; z3/optimized/core_solver_pretty_printer.cpp.ll
 ; z3/optimized/dl_base.cpp.ll
 ; z3/optimized/mpff.cpp.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; zstd/optimized/zstd_opt.c.ll
@@ -103,7 +104,7 @@ entry:
   ret i32 %4
 }
 
-; 327 occurrences:
+; 330 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/abcQbf.c.ll
 ; abc/optimized/absRpmOld.c.ll
@@ -137,10 +138,10 @@ entry:
 ; abc/optimized/pdrCnf.c.ll
 ; abc/optimized/saigIso.c.ll
 ; abc/optimized/sscCore.c.ll
-; abc/optimized/sscUtil.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; abc/optimized/wlnWlc.c.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/entropy_common.c.ll
 ; cmake/optimized/frm_driver.c.ll
@@ -249,6 +250,8 @@ entry:
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_switch.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/guiScrollBar.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
@@ -335,6 +338,7 @@ entry:
 ; openjdk/optimized/fieldLayoutBuilder.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/screencast_pipewire.ll
+; openmpi/optimized/tm_tree.ll
 ; openspiel/optimized/backgammon.cc.ll
 ; openspiel/optimized/tiny_hanabi.cc.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
@@ -450,9 +454,11 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; wireshark/optimized/tap-follow.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:

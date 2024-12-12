@@ -1,4 +1,4 @@
-func000000000000022c:                   # @func000000000000022c
+func000000000000084c:                   # @func000000000000084c
 	addl	$-3, %esi
 	testl	$-3, %esi
 	sete	%cl
@@ -6,7 +6,7 @@ func000000000000022c:                   # @func000000000000022c
 	sets	%al
 	andb	%cl, %al
 	retq
-func0000000000000221:                   # @func0000000000000221
+func0000000000000841:                   # @func0000000000000841
 	cmpl	$747, %esi                      # imm = 0x2EB
 	sete	%al
 	cmpl	$711, %esi                      # imm = 0x2C7

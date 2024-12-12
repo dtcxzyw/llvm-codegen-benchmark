@@ -2,7 +2,7 @@ func0000000000000075:                   # @func0000000000000075
 	andl	$31, %edx
 	shll	$16, %edx
 	orq	%rsi, %rdx
-	leaq	1048576(%rdx,%rdi), %rax
+	leaq	1048576(%rdi,%rdx), %rax
 	retq
 func000000000000007f:                   # @func000000000000007f
 	andl	$31, %edx
@@ -14,7 +14,7 @@ func0000000000000070:                   # @func0000000000000070
 	andl	$31, %edx
 	shll	$16, %edx
 	orq	%rsi, %rdx
-	leaq	1048576(%rdx,%rdi), %rax
+	leaq	1048576(%rdi,%rdx), %rax
 	retq
 func000000000000000d:                   # @func000000000000000d
 	andl	$2147483647, %edx               # imm = 0x7FFFFFFF

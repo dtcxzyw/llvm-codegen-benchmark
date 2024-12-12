@@ -11,7 +11,7 @@ func0000000000000051:                   # @func0000000000000051
 	vmsgt.vi	v0, v12, 0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000061:                   # @func0000000000000061
 	lui	a0, 349525
@@ -25,7 +25,7 @@ func0000000000000061:                   # @func0000000000000061
 	vmsne.vi	v0, v12, 2
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000031:                   # @func0000000000000031
 	lui	a0, 174763
@@ -40,5 +40,5 @@ func0000000000000031:                   # @func0000000000000031
 	vmsle.vi	v0, v12, 1
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

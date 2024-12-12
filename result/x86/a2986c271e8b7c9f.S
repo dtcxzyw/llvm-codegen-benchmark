@@ -13,6 +13,16 @@ func000000000000000e:                   # @func000000000000000e
 	imull	%esi, %edi
 	imull	%edi, %eax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	movzbl	%dl, %eax
+	imull	%esi, %edi
+	imull	%edi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movzbl	%dl, %eax
+	imull	%esi, %edi
+	imull	%edi, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movzbl	%dl, %eax
 	imull	%esi, %edi
@@ -29,16 +39,6 @@ func0000000000000018:                   # @func0000000000000018
 	imull	%edi, %eax
 	retq
 func000000000000001f:                   # @func000000000000001f
-	movzbl	%dl, %eax
-	imull	%esi, %edi
-	imull	%edi, %eax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	movzbl	%dl, %eax
-	imull	%esi, %edi
-	imull	%edi, %eax
-	retq
-func0000000000000004:                   # @func0000000000000004
 	movzbl	%dl, %eax
 	imull	%esi, %edi
 	imull	%edi, %eax

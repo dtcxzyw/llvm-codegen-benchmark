@@ -79,7 +79,7 @@ func0000000000000019:                   # @func0000000000000019
 	vnot.v	v8, v8
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000035:                   # @func0000000000000035
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v12, v10
 	lui	a0, 1048400
@@ -87,7 +87,7 @@ func0000000000000034:                   # @func0000000000000034
 	addi	a0, a0, 1733
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000035:                   # @func0000000000000035
+func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v12, v10
 	lui	a0, 1048400

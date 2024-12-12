@@ -43,7 +43,7 @@ func0000000000000005:                   # @func0000000000000005
 	cmovneq	%rsi, %rdi
 	leaq	(,%rdi,4), %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	shrq	$32, %rdx
 	cmovneq	%rsi, %rdi
 	leaq	(,%rdi,8), %rax

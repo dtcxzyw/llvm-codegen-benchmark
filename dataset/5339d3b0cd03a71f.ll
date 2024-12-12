@@ -1,8 +1,9 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; bdwgc/optimized/cordprnt.c.ll
 ; clamav/optimized/regexec.c.ll
 ; cpython/optimized/_asynciomodule.ll
+; freetype/optimized/psaux.c.ll
 ; hermes/optimized/regexec.c.ll
 ; hyperscan/optimized/ng_depth.cpp.ll
 ; hyperscan/optimized/ng_width.cpp.ll
@@ -77,8 +78,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; linux/optimized/nls_utf8.ll
+; 1 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {

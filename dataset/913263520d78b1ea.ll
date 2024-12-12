@@ -1,5 +1,5 @@
 
-; 114 occurrences:
+; 118 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/acecCl.c.ll
 ; abc/optimized/bacWriteVer.c.ll
@@ -29,7 +29,6 @@
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/filter.ll
-; linux/optimized/gso.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/ip_tunnel_core.ll
@@ -47,6 +46,10 @@
 ; linux/optimized/xfrm_input.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_slider.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -98,6 +101,7 @@
 ; wireshark/optimized/packet-h264.c.ll
 ; wireshark/optimized/packet-h265.c.ll
 ; wireshark/optimized/packet-per.c.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; zfp/optimized/decode1f.c.ll
 ; zfp/optimized/decode1i.c.ll
 ; zfp/optimized/decode2f.c.ll
@@ -122,7 +126,7 @@ entry:
   ret i32 %2
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
 ; graphviz/optimized/lab.c.ll
 ; graphviz/optimized/pack.c.ll
@@ -142,7 +146,6 @@ entry:
 ; openusd/optimized/decodemv.c.ll
 ; php/optimized/session.ll
 ; postgres/optimized/nbtcompare.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/db.ll

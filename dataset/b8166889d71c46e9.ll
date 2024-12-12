@@ -1,6 +1,7 @@
 
-; 71 occurrences:
+; 66 occurrences:
 ; assimp/optimized/SMDLoader.cpp.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; brotli/optimized/cluster.c.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/optistack.cpp.ll
@@ -33,12 +34,6 @@
 ; mitsuba3/optimized/xml.cpp.ll
 ; openblas/optimized/dlarrj.c.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
-; opencv/optimized/benchmark.cpp.ll
-; opencv/optimized/cv2.cpp.ll
-; opencv/optimized/nms.cpp.ll
-; opencv/optimized/perf_common.cpp.ll
-; opencv/optimized/tldUtils.cpp.ll
-; opencv/optimized/trackerKCF.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openusd/optimized/keyFrameUtils.cpp.ll
 ; postgres/optimized/geo_ops.ll
@@ -75,7 +70,7 @@
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -99,13 +94,14 @@ entry:
 define i1 @func0000000000000003(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp ugt double %3, %0
+  %4 = fcmp ult double %0, %3
   ret i1 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/reoSift.c.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/expand_on_spheroid.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
@@ -131,7 +127,7 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 
@@ -151,11 +147,27 @@ entry:
 define i1 @func0000000000000005(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp ult double %3, %0
+  %4 = fcmp ugt double %0, %3
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_sph_geo.ll
+; gromacs/optimized/dstebz.cpp.ll
+; openblas/optimized/dlarrd.c.ll
+; openblas/optimized/dstebz.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fsub double %1, %2
+  %4 = fcmp uge double %0, %3
+  ret i1 %4
+}
+
+; 8 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; gromacs/optimized/dstebz.cpp.ll
 ; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dlarrf.c.ll
@@ -167,19 +179,7 @@ entry:
 define i1 @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp ole double %3, %0
-  ret i1 %4
-}
-
-; 3 occurrences:
-; gromacs/optimized/dstebz.cpp.ll
-; openblas/optimized/dlarrd.c.ll
-; openblas/optimized/dstebz.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fsub double %1, %2
-  %4 = fcmp ule double %3, %0
+  %4 = fcmp oge double %0, %3
   ret i1 %4
 }
 
@@ -192,7 +192,7 @@ entry:
 define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp oeq double %3, %0
+  %4 = fcmp oeq double %0, %3
   ret i1 %4
 }
 
@@ -206,7 +206,7 @@ entry:
 define i1 @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp oge double %3, %0
+  %4 = fcmp ole double %0, %3
   ret i1 %4
 }
 
@@ -216,7 +216,7 @@ entry:
 define i1 @func0000000000000001(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp uno double %3, %0
+  %4 = fcmp uno double %0, %3
   ret i1 %4
 }
 
@@ -226,7 +226,7 @@ entry:
 define i1 @func000000000000000b(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp uge double %3, %0
+  %4 = fcmp ule double %0, %3
   ret i1 %4
 }
 

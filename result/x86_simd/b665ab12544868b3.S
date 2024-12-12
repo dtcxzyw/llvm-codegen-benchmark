@@ -7,7 +7,7 @@
 	.short	96                              # 0x60
 	.short	96                              # 0x60
 	.short	96                              # 0x60
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vptestnmw	.LCPI0_0(%rip), %xmm2, %k1
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
 	retq

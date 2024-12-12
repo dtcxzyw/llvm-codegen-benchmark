@@ -1,6 +1,5 @@
 
-; 12 occurrences:
-; hdf5/optimized/H5MFsection.c.ll
+; 11 occurrences:
 ; hdf5/optimized/H5PB.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/virtualSpaceNode.ll
@@ -21,18 +20,15 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; clamav/optimized/fmap.c.ll
+; 2 occurrences:
 ; cmake/optimized/cmGlobalUnixMakefileGenerator3.cxx.ll
 ; openjdk/optimized/g1RegionToSpaceMapper.ll
-; postgres/optimized/reorderbuffer.ll
-; redis/optimized/rdb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, %1
   %4 = udiv i64 %0, %1
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 
@@ -66,6 +62,19 @@ entry:
   %3 = udiv i64 %2, %1
   %4 = udiv i64 %0, %1
   %5 = icmp ne i64 %4, %3
+  ret i1 %5
+}
+
+; 3 occurrences:
+; clamav/optimized/fmap.c.ll
+; postgres/optimized/reorderbuffer.ll
+; redis/optimized/rdb.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = udiv i64 %2, %1
+  %4 = udiv i64 %0, %1
+  %5 = icmp ugt i64 %4, %3
   ret i1 %5
 }
 

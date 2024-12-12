@@ -11,7 +11,7 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
@@ -26,6 +26,7 @@ entry:
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:

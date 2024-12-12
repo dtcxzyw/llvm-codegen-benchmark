@@ -1,24 +1,25 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/giaResub.c.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; icu/optimized/cecal.ll
 ; libquic/optimized/time_support.c.ll
 ; llvm/optimized/InlineCost.cpp.ll
 ; luau/optimized/loslib.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_gridnav.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; nori/optimized/layout.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; opencv/optimized/sinusoidalpattern.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; postgres/optimized/dt_common.ll
 ; protobuf/optimized/unparser.cc.ll
 ; qemu/optimized/util_cutils.c.ll
@@ -37,7 +38,7 @@ entry:
   ret i32 %5
 }
 
-; 27 occurrences:
+; 30 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/acbTest.c.ll
@@ -48,6 +49,9 @@ entry:
 ; cpython/optimized/_zoneinfo.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; libquic/optimized/prtime.cc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -74,9 +78,13 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 11 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_table.ll
 ; minetest/optimized/guiScrollBar.cpp.ll
 ; nuttx/optimized/lib_dayofweek.c.ll
 ; opencv/optimized/gaze_estimation.cpp.ll
@@ -91,8 +99,12 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 6 occurrences:
 ; abc/optimized/abcExact.c.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_table.ll
 ; opencv/optimized/denoising.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
@@ -104,27 +116,29 @@ entry:
 }
 
 ; 4 occurrences:
-; cpython/optimized/_datetimemodule.ll
-; graphviz/optimized/constrained_majorization_ipsep.c.ll
-; icu/optimized/decNumber.ll
-; nori/optimized/nanovg.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = sdiv i32 %0, 2
-  %5 = add nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 3 occurrences:
+; lvgl/optimized/lv_chart.ll
 ; nuttx/optimized/lib_dayofweek.c.ll
 ; opencv/optimized/disparity_filtering.cpp.ll
 ; opencv/optimized/tldEnsembleClassifier.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %1, %2
+  %3 = sdiv i32 %2, 2
+  %4 = add i32 %0, %1
+  %5 = add nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 5 occurrences:
+; cpython/optimized/_datetimemodule.ll
+; graphviz/optimized/constrained_majorization_ipsep.c.ll
+; icu/optimized/decNumber.ll
+; lvgl/optimized/lv_table.ll
+; nori/optimized/nanovg.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
   %4 = sdiv i32 %0, 2
   %5 = add nsw i32 %4, %3
   ret i32 %5

@@ -3,7 +3,7 @@
 ; gromacs/optimized/gridset.cpp.ll
 ; openjdk/optimized/generateOopMap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 40
@@ -23,7 +23,7 @@ entry:
 ; ocio/optimized/FileRules.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24

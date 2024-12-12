@@ -31,6 +31,11 @@ func000000000000001b:                   # @func000000000000001b
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func000000000000001d:                   # @func000000000000001d
+	slli	a2, a2, 48
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func000000000000001a:                   # @func000000000000001a
 	lui	a3, 8
 	and	a2, a2, a3

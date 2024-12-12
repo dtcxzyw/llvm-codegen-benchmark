@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -23,7 +23,6 @@
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/MustExecute.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
@@ -40,7 +39,7 @@ entry:
   ret i1 %4
 }
 
-; 36 occurrences:
+; 34 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/ArgumentPromotion.cpp.ll
@@ -61,7 +60,6 @@ entry:
 ; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
-; llvm/optimized/SimplifyCFGPass.cpp.ll
 ; llvm/optimized/SimplifyIndVar.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; oiio/optimized/exroutput.cpp.ll
@@ -70,7 +68,6 @@ entry:
 ; openusd/optimized/diagnosticMgr.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/ginlogic.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/relcache.ll
 ; postgres/optimized/tablecmds.ll
@@ -104,10 +101,10 @@ entry:
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   %4 = icmp eq i8 %3, 0
   ret i1 %4
 }
@@ -116,26 +113,25 @@ entry:
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000038(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 4
-  %3 = or i8 %2, %0
-  %4 = icmp ugt i8 %3, 3
+  %3 = or i8 %0, %2
+  %4 = icmp samesign ugt i8 %3, 3
   ret i1 %4
 }
 
-; 6 occurrences:
-; linux/optimized/logips2pp.ll
+; 5 occurrences:
 ; wireshark/optimized/packet-cemi.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 12
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   %4 = icmp ne i8 %3, 14
   ret i1 %4
 }

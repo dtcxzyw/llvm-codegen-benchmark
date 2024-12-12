@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
@@ -7,6 +7,7 @@
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; rust-analyzer-rs/optimized/4mz36mxu8r0g7zqk.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000001ff(i64 %0, i16 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 52 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; brotli/optimized/decode.c.ll
@@ -49,6 +49,9 @@
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; redis/optimized/hdr_histogram.ll
 ; ruby/optimized/numeric.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -81,8 +84,7 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
-; image-rs/optimized/4srzh4wujeew249y.ll
+; 8 occurrences:
 ; libpng/optimized/pngrutil.c.ll
 ; linux/optimized/io_uring.ll
 ; luajit/optimized/minilua.ll

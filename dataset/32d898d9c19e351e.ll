@@ -1,7 +1,8 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; casadi/optimized/idas.c.ll
 ; darktable/optimized/darktable.c.ll
+; darktable/optimized/introspection_cacorrect.c.ll
 ; graphviz/optimized/imageviewer.cpp.ll
 ; graphviz/optimized/xlayout.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll

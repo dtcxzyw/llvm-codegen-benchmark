@@ -1,10 +1,12 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; llvm/optimized/Sanitizers.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:

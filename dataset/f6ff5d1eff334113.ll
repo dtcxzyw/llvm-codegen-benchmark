@@ -1,8 +1,11 @@
 
-; 17 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
 ; clamav/optimized/clamdtop.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -17,6 +20,10 @@
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i32 %0) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 55 occurrences:
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/udf.c.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
@@ -17,7 +17,6 @@
 ; hdf5/optimized/H5Gstab.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; hdf5/optimized/H5Ocache_image.c.ll
 ; hdf5/optimized/H5Ofsinfo.c.ll
@@ -30,6 +29,7 @@
 ; linux/optimized/x509_cert_parser.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/CGBlocks.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; memcached/optimized/memcached-items.ll
@@ -40,6 +40,7 @@
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; memcached/optimized/memcached_debug-storage.ll
+; php/optimized/decode.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; ripgrep-rs/optimized/544b63jf571x6ld1.ll
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
@@ -50,6 +51,10 @@
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wireshark/optimized/androiddump.c.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i8 %1) #0 {
 entry:
@@ -75,7 +80,7 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/lzma2_decoder.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
@@ -87,6 +92,7 @@ entry:
 ; php/optimized/compact_literals.ll
 ; php/optimized/softmagic.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i8 %1) #0 {
@@ -154,6 +160,19 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; boost/optimized/src.ll
+; nlohmann_json/optimized/unit-constructor1.cpp.ll
+; nlohmann_json/optimized/unit-hash.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001c(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = add nuw nsw i64 %2, 2654435769
+  %4 = add i64 %3, %0
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; libquic/optimized/cbs.c.ll
 ; Function Attrs: nounwind
@@ -184,18 +203,6 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = add nuw nsw i64 %2, 9
   %4 = add nuw i64 %3, %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; nlohmann_json/optimized/unit-constructor1.cpp.ll
-; nlohmann_json/optimized/unit-hash.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i64
-  %3 = add nuw nsw i64 %2, 2654435769
-  %4 = add i64 %3, %0
   ret i64 %4
 }
 

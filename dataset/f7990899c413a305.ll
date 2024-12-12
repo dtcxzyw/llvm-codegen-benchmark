@@ -5,7 +5,7 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/packet-btavrcp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i32 65536, i32 196608

@@ -6,7 +6,7 @@
 ; postgres/optimized/mbprint.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = add nsw i32 %2, -1
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/JSError.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
   %3 = add nuw i32 %2, 2
@@ -47,7 +47,7 @@ entry:
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/UnreachableCodeChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = add nuw nsw i32 %2, -6

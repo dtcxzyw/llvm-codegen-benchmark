@@ -4,11 +4,11 @@
 ; linux/optimized/tcp_ipv4.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = xor i32 %2, %0
-  %4 = icmp ult i32 %3, 128
+  %3 = xor i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 128
   ret i1 %4
 }
 
@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = icmp eq i32 %3, 32
   ret i1 %4
 }

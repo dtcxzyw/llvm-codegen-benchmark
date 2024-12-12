@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; hyperscan/optimized/repeatcompile.cpp.ll
 ; ruby/optimized/numeric.ll
 ; velox/optimized/DecimalUtil.cpp.ll
+; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i32 %0) #0 {
 entry:

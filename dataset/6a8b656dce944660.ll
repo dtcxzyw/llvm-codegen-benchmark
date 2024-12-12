@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/constantPool.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %1, 1
@@ -15,7 +15,7 @@ entry:
 ; abc/optimized/cecPat.c.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %1, 1
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %1, 6
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/multixact.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000049(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add i32 %1, 1047040
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/multixact.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add i32 %1, 1047040
@@ -76,7 +76,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000001e8(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %1, 1
@@ -89,7 +89,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000001ec(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %1, 1
@@ -101,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %1, 1

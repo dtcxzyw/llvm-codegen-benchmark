@@ -1,5 +1,5 @@
 
-%"struct.hb_hashmap_t<unsigned int, unsigned int, true>::item_t.2616654" = type { i32, i32, i32 }
+%"struct.hb_hashmap_t<unsigned int, unsigned int, true>::item_t.2730106" = type { i32, i32, i32 }
 
 ; 39 occurrences:
 ; clamav/optimized/ishield.c.ll
@@ -42,12 +42,12 @@
 ; z3/optimized/spacer_pdr.cpp.ll
 ; z3/optimized/spacer_prop_solver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1073741823
   %4 = urem i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %"struct.hb_hashmap_t<unsigned int, unsigned int, true>::item_t.2616654", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.hb_hashmap_t<unsigned int, unsigned int, true>::item_t.2730106", ptr %0, i64 %5
   ret ptr %6
 }
 

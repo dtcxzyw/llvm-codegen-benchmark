@@ -1,30 +1,7 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	w8, s2
-	fmov	w9, s1
-	mov	w10, v1.s[1]
-	mov	w11, v1.s[2]
-	mov	w12, v1.s[3]
-	sdiv	w8, w9, w8
-	mov	w9, v2.s[1]
-	sdiv	w9, w10, w9
-	mov	w10, v2.s[2]
-	sdiv	w10, w11, w10
-	mov	w11, v2.s[3]
-	sdiv	w11, w12, w11
-	mov	w12, v0.s[3]
-	sdiv	w11, w12, w11
-	mov	w12, v0.s[2]
-	sdiv	w10, w12, w10
-	fmov	w12, s0
-	sdiv	w8, w12, w8
-	mov	w12, v0.s[1]
-	fmov	s1, w10
-	mov	v1.s[1], w11
-	sshll	v1.2d, v1.2s, #0
-	sdiv	w9, w12, w9
-	fmov	s0, w8
-	mov	v0.s[1], w9
-	sshll	v0.2d, v0.2s, #0
+	sdiv	w8, w1, w2
+	sdiv	w8, w0, w8
+	sxtw	x0, w8
 	ret
                                         // -- End function

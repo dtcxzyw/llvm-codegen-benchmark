@@ -1,79 +1,79 @@
-func0000000000000161:                   # @func0000000000000161
+func00000000000004c1:                   # @func00000000000004c1
 	decq	%rdx
-	cmpq	%rsi, %rdx
-	setg	%cl
+	cmpq	%rdx, %rsi
+	setl	%cl
 	cmpl	$-1, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	decq	%rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
+	setb	%cl
+	testl	%edi, %edi
+	sete	%al
+	andb	%cl, %al
+	retq
+func000000000000010c:                   # @func000000000000010c
+	decq	%rdx
+	cmpq	%rdx, %rsi
+	seta	%cl
+	testl	%edi, %edi
+	setne	%al
+	andb	%cl, %al
+	retq
+func0000000000000d01:                   # @func0000000000000d01
+	incq	%rdx
+	cmpq	%rdx, %rsi
 	seta	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
-	decq	%rdx
-	cmpq	%rsi, %rdx
-	setb	%cl
-	testl	%edi, %edi
-	setne	%al
-	andb	%cl, %al
-	retq
-func0000000000000381:                   # @func0000000000000381
+func0000000000000d0c:                   # @func0000000000000d0c
 	incq	%rdx
-	cmpq	%rsi, %rdx
-	setb	%cl
-	testl	%edi, %edi
-	sete	%al
-	andb	%cl, %al
-	retq
-func000000000000038c:                   # @func000000000000038c
-	incq	%rdx
-	cmpq	%rsi, %rdx
-	setb	%cl
-	testl	%edi, %edi
-	setne	%al
-	andb	%cl, %al
-	retq
-func0000000000000071:                   # @func0000000000000071
-	addq	$200000, %rdx                   # imm = 0x30D40
-	cmpq	%rsi, %rdx
-	setge	%cl
-	testl	%edi, %edi
-	sete	%al
-	andb	%cl, %al
-	retq
-func000000000000007c:                   # @func000000000000007c
-	addq	$200000, %rdx                   # imm = 0x30D40
-	cmpq	%rsi, %rdx
-	setge	%cl
-	testl	%edi, %edi
-	setne	%al
-	andb	%cl, %al
-	retq
-func0000000000000141:                   # @func0000000000000141
-	decq	%rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	seta	%cl
+	testl	%edi, %edi
+	setne	%al
+	andb	%cl, %al
+	retq
+func00000000000000e1:                   # @func00000000000000e1
+	addq	$200000, %rdx                   # imm = 0x30D40
+	cmpq	%rdx, %rsi
+	setle	%cl
+	testl	%edi, %edi
+	sete	%al
+	andb	%cl, %al
+	retq
+func00000000000000ec:                   # @func00000000000000ec
+	addq	$200000, %rdx                   # imm = 0x30D40
+	cmpq	%rdx, %rsi
+	setle	%cl
+	testl	%edi, %edi
+	setne	%al
+	andb	%cl, %al
+	retq
+func0000000000000481:                   # @func0000000000000481
+	decq	%rdx
+	cmpq	%rdx, %rsi
+	setb	%cl
 	cmpl	$3, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	$-5, %rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000028c:                   # @func000000000000028c
+func000000000000090c:                   # @func000000000000090c
 	incq	%rdx
-	cmpq	%rsi, %rdx
-	setb	%cl
+	cmpq	%rdx, %rsi
+	seta	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al

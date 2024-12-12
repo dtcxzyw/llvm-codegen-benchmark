@@ -1,5 +1,8 @@
 
-; 9 occurrences:
+; 12 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
@@ -18,7 +21,8 @@ entry:
   ret double %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i32 %0, i32 %1) #0 {

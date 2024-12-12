@@ -7,13 +7,12 @@ func0000000000000000:                   # @func0000000000000000
 	orl	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	notb	%dl
-	movzbl	%dl, %ecx
-	andl	$1, %ecx
-	shll	$24, %ecx
-	addl	$218103808, %ecx                # imm = 0xD000000
+	testb	$1, %dl
+	movl	$64, %eax
+	movl	$2, %ecx
+	cmovnel	%eax, %ecx
 	testb	$1, %sil
-	movl	$201326592, %eax                # imm = 0xC000000
+	movl	$8, %eax
 	cmovel	%ecx, %eax
 	orl	%edi, %eax
 	retq

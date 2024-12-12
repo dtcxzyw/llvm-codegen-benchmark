@@ -23,7 +23,7 @@ entry:
   ret i32 %3
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/intel_vdsc.ll
@@ -42,7 +42,6 @@ entry:
 ; slurm/optimized/env.ll
 ; slurm/optimized/eval_nodes.ll
 ; slurm/optimized/gang.ll
-; slurm/optimized/node_data.ll
 ; slurm/optimized/slurmd.ll
 ; slurm/optimized/step_mgr.ll
 ; wireshark/optimized/packet-cp2179.c.ll

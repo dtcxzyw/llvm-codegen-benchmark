@@ -1,8 +1,6 @@
 
-; 30 occurrences:
+; 28 occurrences:
 ; abc/optimized/abcRec3.c.ll
-; abc/optimized/cecMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaCSat3.c.ll

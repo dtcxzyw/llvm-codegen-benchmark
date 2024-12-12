@@ -1,9 +1,10 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; folly/optimized/ThreadedExecutor.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mimalloc/optimized/segment.c.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/Service.cpp.ll
@@ -23,7 +24,7 @@ entry:
   ret i64 %4
 }
 
-; 598 occurrences:
+; 606 occurrences:
 ; abc/optimized/aigMffc.c.ll
 ; abc/optimized/aigObj.c.ll
 ; abc/optimized/aigUtil.c.ll
@@ -163,7 +164,6 @@ entry:
 ; cvc5/optimized/eq_proof.cpp.ll
 ; cvc5/optimized/eqc_info.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; cvc5/optimized/equality_engine_iterator.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
 ; cvc5/optimized/equality_solver.cpp.ll
 ; cvc5/optimized/equality_substitution.cpp.ll
@@ -600,10 +600,19 @@ entry:
 ; opencv/optimized/webcam_demo.cpp.ll
 ; openexr/optimized/ImfDeepTiledOutputFile.cpp.ll
 ; openexr/optimized/ImfTiledOutputFile.cpp.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1FullGCMarker.ll
+; openjdk/optimized/g1ParScanThreadState.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/psScavenge.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/waitBarrier_generic.ll
+; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/xMarkStack.ll
 ; openjdk/optimized/xMarkStackAllocator.ll
+; openjdk/optimized/zHeapIterator.ll
 ; openjdk/optimized/zMark.ll
 ; openjdk/optimized/zMarkStack.ll
 ; openjdk/optimized/zMarkStackAllocator.ll
@@ -627,12 +636,11 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 16
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 7 occurrences:
-; abc/optimized/bdcSpfd.c.ll
+; 6 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; freetype/optimized/autofit.c.ll
@@ -675,14 +683,14 @@ define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2147483648
   %3 = and i64 %2, 562945658454016
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
 ; 4 occurrences:
+; boost/optimized/alloc_lib.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; linux/optimized/memblock.ll
-; linux/optimized/reciprocal_div.ll
 ; luau/optimized/CostModel.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
@@ -690,6 +698,17 @@ entry:
   %2 = and i64 %1, 1
   %3 = xor i64 %2, 1
   %4 = or disjoint i64 %3, %0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; abc/optimized/bdcSpfd.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 255
+  %3 = and i64 %2, 255
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -702,7 +721,7 @@ define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 112
   %3 = and i64 %2, 137438953344
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

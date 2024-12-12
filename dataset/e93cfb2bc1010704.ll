@@ -1,11 +1,10 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; git/optimized/object-file.ll
 ; linux/optimized/intel_ring_submission.ll
-; linux/optimized/ttm_execbuf_util.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = select i1 %1, i1 true, i1 %3
@@ -19,7 +18,7 @@ entry:
 ; grpc/optimized/xds_wrr_locality.cc.ll
 ; linux/optimized/sit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018c(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3

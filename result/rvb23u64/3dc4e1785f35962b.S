@@ -1,11 +1,11 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	slli	a2, a2, 2
 	srli	a2, a2, 2
 	addi	a1, a1, 1
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000039:                   # @func0000000000000039
+func0000000000000079:                   # @func0000000000000079
 	zext.w	a2, a2
 	addi	a1, a1, 1
 	sltu	a1, a1, a2
@@ -20,20 +20,20 @@ func0000000000000004:                   # @func0000000000000004
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	zext.w	a2, a2
 	addi	a1, a1, 32
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	zext.w	a2, a2
 	addi	a1, a1, 1
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	slli	a2, a2, 33
 	srli	a2, a2, 33
 	addi	a1, a1, 1

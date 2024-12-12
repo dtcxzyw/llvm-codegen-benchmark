@@ -6,7 +6,7 @@ func0000000000000003:                   # @func0000000000000003
 	vpslld	$14, %ymm2, %ymm2
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI1_0:
 	.long	4063232                         # 0x3e0000

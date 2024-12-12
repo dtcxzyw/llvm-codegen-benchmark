@@ -29,7 +29,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
   %5 = sub i32 %4, %1
-  %6 = mul i32 %5, %0
+  %6 = mul i32 %0, %5
   ret i32 %6
 }
 

@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/str.c.ll
@@ -9,7 +9,6 @@
 ; cpython/optimized/xmltok.ll
 ; curl/optimized/libcurl_la-doh.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
-; icu/optimized/genccode.ll
 ; linux/optimized/gen8_engine_cs.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll
@@ -55,17 +54,18 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
 ; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i8 %0) #0 {
+define i32 @func0000000000000018(i8 %0) #0 {
 entry:
   %1 = freeze i8 %0
-  %2 = icmp ugt i8 %1, 9
+  %2 = icmp samesign ugt i8 %1, 9
   %3 = select i1 %2, i32 49, i32 48
   ret i32 %3
 }

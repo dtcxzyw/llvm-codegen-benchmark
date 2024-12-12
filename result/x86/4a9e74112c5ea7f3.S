@@ -7,8 +7,8 @@ func00000000000000ce:                   # @func00000000000000ce
 func00000000000000cc:                   # @func00000000000000cc
 	shll	$6, %edx
 	movslq	%edx, %rax
-	leaq	(%rdi,%rax,4), %rax
-	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rdi,%rsi,4), %rcx
+	leaq	(%rcx,%rax,4), %rax
 	retq
 func0000000000000016:                   # @func0000000000000016
 	addl	%edx, %edx

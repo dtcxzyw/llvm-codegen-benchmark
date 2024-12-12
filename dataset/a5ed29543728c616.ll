@@ -46,7 +46,7 @@ entry:
   %2 = fdiv double 1.000000e+00, %1
   %3 = fcmp une double %1, 0.000000e+00
   %4 = select i1 %3, double %2, double 1.000000e+00
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

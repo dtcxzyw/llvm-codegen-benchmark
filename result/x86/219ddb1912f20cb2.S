@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	cmpl	$11, %edi
 	setne	%al
 	cmpl	$90, %edi

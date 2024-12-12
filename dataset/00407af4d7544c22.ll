@@ -1,5 +1,6 @@
 
-; 25 occurrences:
+; 27 occurrences:
+; arrow/optimized/value_parsing.cc.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_bbdpre.c.ll
@@ -15,6 +16,7 @@
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/hestonprocess.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
 ; sundials/optimized/arkode.c.ll

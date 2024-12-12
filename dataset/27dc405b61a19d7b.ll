@@ -45,7 +45,7 @@ define i1 @func0000000000000007(double %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
   %4 = fdiv double %1, %3
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   %6 = fcmp une double %5, 0.000000e+00
   ret i1 %6
 }

@@ -8,11 +8,6 @@ func0000000000000004:                   # @func0000000000000004
 	cmovneq	%rsi, %rdi
 	leaq	-24(%rdi), %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	testb	$1, %dl
-	cmovneq	%rsi, %rdi
-	leaq	24(%rdi), %rax
-	retq
 func0000000000000006:                   # @func0000000000000006
 	testb	$7, %dl
 	cmovneq	%rsi, %rdi

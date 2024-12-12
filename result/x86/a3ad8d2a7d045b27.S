@@ -21,3 +21,10 @@ func000000000000000c:                   # @func000000000000000c
 	vaddss	.LCPI2_0(%rip), %xmm0, %xmm0
 	vmaxss	.LCPI2_1(%rip), %xmm0, %xmm0
 	retq
+.LCPI3_0:
+	.long	0x3f000000                      # float 0.5
+func000000000000000e:                   # @func000000000000000e
+	vaddss	.LCPI3_0(%rip), %xmm0, %xmm0
+	vcmpordss	%xmm0, %xmm0, %k1
+	vmovss	%xmm0, %xmm0, %xmm0 {%k1} {z}
+	retq

@@ -1,14 +1,17 @@
 
-; 7 occurrences:
+; 10 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; php/optimized/pcre2_jit_compile.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = or disjoint i32 %2, %0
@@ -23,7 +26,7 @@ entry:
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ec(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = or disjoint i32 %2, %0
@@ -37,10 +40,10 @@ entry:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 27
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = freeze i32 %3
   %5 = icmp ult i32 %4, 134217728
   ret i1 %5
@@ -57,7 +60,7 @@ entry:
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/TpiStream.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
   %3 = or disjoint i32 %2, %0
@@ -69,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/brin.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ac(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = or disjoint i32 %2, %0

@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	2251799813685247                # 0x7ffffffffffff
 func000000000000000d:                   # @func000000000000000d
 	vpsllq	$51, %ymm1, %ymm1
-	vpaddq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm2, %ymm1
 	vpternlogq	$228, .LCPI1_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm1 ^ (mem & (ymm0 ^ ymm1))
 	retq
 .LCPI2_0:
@@ -48,13 +48,13 @@ func000000000000000d:                   # @func000000000000000d
 	.byte	28                              # 0x1c
 func0000000000000019:                   # @func0000000000000019
 	vpsrlq	$44, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm2
+	vpaddq	%ymm2, %ymm1, %ymm2
 	vmovdqa	.LCPI2_0(%rip), %ymm1           # ymm1 = [32,33,34,0,1,2,3,4,40,41,42,8,9,10,11,12,48,49,50,16,17,18,19,20,56,57,58,24,25,26,27,28]
 	vpermi2b	%ymm0, %ymm2, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
 func0000000000000011:                   # @func0000000000000011
 	vpsllq	$32, %ymm1, %ymm1
-	vpaddq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm2, %ymm1
 	vpblendd	$170, %ymm1, %ymm0, %ymm0       # ymm0 = ymm0[0],ymm1[1],ymm0[2],ymm1[3],ymm0[4],ymm1[5],ymm0[6],ymm1[7]
 	retq

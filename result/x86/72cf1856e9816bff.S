@@ -1,4 +1,4 @@
-func0000000000000039:                   # @func0000000000000039
+func0000000000000059:                   # @func0000000000000059
 	andl	$1, %esi
 	xorl	%eax, %eax
 	cmpl	$-1, %edi
@@ -6,7 +6,7 @@ func0000000000000039:                   # @func0000000000000039
 	shll	$5, %eax
 	leal	32769(%rsi,%rax), %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -16,7 +16,7 @@ func0000000000000023:                   # @func0000000000000023
 	setne	%cl
 	leal	9(%rax,%rcx,4), %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	xorl	%eax, %eax
 	testb	$1, %sil
 	movl	$-1073741760, %ecx              # imm = 0xC0000040
@@ -42,7 +42,7 @@ func0000000000000003:                   # @func0000000000000003
 	testl	%edi, %edi
 	jne	.LBB3_4
 	jmp	.LBB3_5
-func0000000000000029:                   # @func0000000000000029
+func0000000000000069:                   # @func0000000000000069
 	notb	%sil
 	movzbl	%sil, %ecx
 	andl	$1, %ecx

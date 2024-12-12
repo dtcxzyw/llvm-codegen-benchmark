@@ -13,9 +13,9 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func0000000000000003:                   # @func0000000000000003
 	movl	%esi, %ecx
-	shlq	$3, %rcx
+	shlq	$2, %rcx
 	testb	$1, %dil
-	movl	$32, %eax
+	movl	$1024, %eax                     # imm = 0x400
 	cmoveq	%rcx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000

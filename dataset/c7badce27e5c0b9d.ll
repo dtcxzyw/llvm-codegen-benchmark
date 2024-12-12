@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; freetype/optimized/raster.c.ll
-; libquic/optimized/random.c.ll
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
 ; Function Attrs: nounwind

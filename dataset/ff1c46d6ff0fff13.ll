@@ -11,7 +11,6 @@
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_vblank.ll
 ; linux/optimized/ialloc.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dpll.ll
@@ -34,6 +33,7 @@
 ; velox/optimized/ScanTracker.cpp.ll
 ; wireshark/optimized/tap-sipstat.c.ll
 ; z3/optimized/smt_context_stat.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -112,19 +112,6 @@ entry:
   %3 = add i64 %1, %2
   %4 = udiv i64 %3, %0
   %5 = trunc nuw i64 %4 to i32
-  ret i32 %5
-}
-
-; 3 occurrences:
-; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/intel_dpll.ll
-; linux/optimized/intel_snps_phy.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = udiv i64 %3, %0
-  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 

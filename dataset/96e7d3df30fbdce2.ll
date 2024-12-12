@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; velox/optimized/Utf8Utils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 12
   %3 = and i32 %2, 196608
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp ult i32 %4, 1048576
   ret i1 %5
 }
@@ -15,11 +15,11 @@ entry:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000124(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp ult i32 %4, 2
   ret i1 %5
 }
@@ -28,11 +28,11 @@ entry:
 ; node/optimized/simdutf.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 12
   %3 = and i32 %2, 196608
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp ult i32 %4, -1048576
   ret i1 %5
 }
@@ -64,24 +64,12 @@ entry:
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/UnreachableCodeChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = and i32 %2, 48
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp ult i32 %4, 11
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 4
-  %3 = and i32 %2, 496
-  %4 = add nuw nsw i32 %3, %0
-  %5 = icmp ult i32 %4, 256
   ret i1 %5
 }
 

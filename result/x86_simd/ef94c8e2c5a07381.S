@@ -11,7 +11,7 @@ func00000000000000d5:                   # @func00000000000000d5
 	.quad	16777216                        # 0x1000000
 func0000000000000015:                   # @func0000000000000015
 	vpsllq	$2, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm0, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
@@ -20,14 +20,14 @@ func0000000000000015:                   # @func0000000000000015
 	.quad	16777216                        # 0x1000000
 func0000000000000045:                   # @func0000000000000045
 	vpsllq	$3, %ymm2, %ymm2
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsraq	$2, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 func0000000000000040:                   # @func0000000000000040
 	vpsllq	$3, %ymm2, %ymm2
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsraq	$2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1

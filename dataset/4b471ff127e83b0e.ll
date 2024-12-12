@@ -17,11 +17,22 @@ define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = icmp ne i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 62 occurrences:
+; 1 occurrences:
+; folly/optimized/AsyncUDPSocket.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = icmp ult i64 %3, 41
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 61 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -56,7 +67,6 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; folly/optimized/AsyncUDPSocket.cpp.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
 ; g2o/optimized/edge_se2_twopointsxy.cpp.ll
@@ -85,11 +95,11 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = icmp ult i64 %3, 41
-  %5 = and i1 %4, %0
+  %4 = icmp samesign ult i64 %3, 32769
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -100,30 +110,18 @@ define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = icmp eq i64 %3, 4
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; casadi/optimized/feasiblesqpmethod.cpp.ll
-; gromacs/optimized/tng_io.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nsw i64 %1, %2
-  %4 = icmp sgt i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -142,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -154,21 +152,21 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = icmp ne i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
-; openblas/optimized/sgemm_direct_performant.c.ll
+; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 2097151
+  %4 = icmp sgt i64 %3, 0
   %5 = and i1 %4, %0
   ret i1 %5
 }

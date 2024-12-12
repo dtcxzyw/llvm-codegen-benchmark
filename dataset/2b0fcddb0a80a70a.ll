@@ -14,7 +14,7 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; libquic/optimized/poly1305_vec.c.ll
 ; linux/optimized/intel_vblank.ll
 ; linux/optimized/tg3.ll
@@ -25,6 +25,8 @@ entry:
 ; ruby/optimized/bignum.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; spike/optimized/debug_module.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
@@ -35,7 +37,20 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
+; 4 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; mitsuba3/optimized/string.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %0, 52
+  %3 = or i64 %2, %1
+  ret i64 %3
+}
+
+; 29 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; cmake/optimized/xmltok.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -60,6 +75,8 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; spike/optimized/vghsh_vv.ll
 ; spike/optimized/vgmul_vv.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; yyjson/optimized/yyjson.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
@@ -87,19 +104,16 @@ entry:
   ret i64 %4
 }
 
-; 36 occurrences:
+; 30 occurrences:
 ; cpython/optimized/longobject.ll
 ; git/optimized/writer.ll
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/amd.ll
 ; linux/optimized/apic.ll
-; linux/optimized/centaur.ll
 ; linux/optimized/core.ll
 ; linux/optimized/ds.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/generic.ll
 ; linux/optimized/intel.ll
-; linux/optimized/intel_epb.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/knc.ll
 ; linux/optimized/lbr.ll
@@ -111,12 +125,9 @@ entry:
 ; linux/optimized/pt.ll
 ; linux/optimized/step.ll
 ; linux/optimized/therm_throt.ll
-; linux/optimized/tsc_msr.ll
-; linux/optimized/tsx.ll
 ; linux/optimized/uncore_snbep.ll
 ; linux/optimized/via-rng.ll
 ; linux/optimized/x86_pkg_temp_thermal.ll
-; linux/optimized/zhaoxin.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; openusd/optimized/avif_obu.c.ll
 ; pbrt-v4/optimized/plytool.cpp.ll
@@ -128,18 +139,19 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = lshr i64 %3, 48
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; cpython/optimized/sre.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; libjpeg-turbo/optimized/jdmerge.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
@@ -165,7 +177,7 @@ entry:
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 58
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = lshr exact i64 %3, 1
   ret i64 %4
 }
@@ -195,8 +207,9 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:

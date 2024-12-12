@@ -8,11 +8,10 @@ func000000000000000a:                   # @func000000000000000a
 	orb	%dil, %al
 	retq
 .LCPI1_0:
-	.long	0xc8976760                      # float -310075
-func0000000000000004:                   # @func0000000000000004
+	.long	0x48976760                      # float 310075
+func0000000000000008:                   # @func0000000000000008
 	orl	%esi, %edi
-	vmovss	.LCPI1_0(%rip), %xmm1           # xmm1 = [-3.10075E+5,0.0E+0,0.0E+0,0.0E+0]
-	vucomiss	%xmm0, %xmm1
+	vucomiss	.LCPI1_0(%rip), %xmm0
 	seta	%al
 	orb	%dil, %al
 	retq

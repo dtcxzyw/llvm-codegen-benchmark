@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; ruby/optimized/pm_buffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -14,11 +14,11 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -30,7 +30,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
@@ -39,11 +39,11 @@ entry:
 ; git/optimized/sequencer.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -54,11 +54,11 @@ entry:
 ; openspiel/optimized/dark_hex.cc.ll
 ; openspiel/optimized/phantom_ttt.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -69,11 +69,11 @@ entry:
 ; oiio/optimized/argparse.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
@@ -84,11 +84,11 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
@@ -107,11 +107,11 @@ entry:
 ; gromacs/optimized/vsite.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
@@ -120,11 +120,11 @@ entry:
 ; gromacs/optimized/manage_threading.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000126(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
@@ -134,11 +134,11 @@ entry:
 ; gromacs/optimized/hbond.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -146,11 +146,11 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/vsite.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -163,7 +163,7 @@ define i1 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -171,12 +171,26 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -5
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp eq i64 %5, %0
+  ret i1 %6
+}
+
+; 3 occurrences:
+; faiss/optimized/lattice_Zn.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = add i64 %1, %4
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -187,20 +201,8 @@ define i1 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 8
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp slt i64 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; faiss/optimized/lattice_Zn.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, -1
-  %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

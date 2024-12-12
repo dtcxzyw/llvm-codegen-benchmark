@@ -13,7 +13,7 @@
 ; wireshark/optimized/packet-mac-nr.c.ll
 ; wireshark/optimized/packet-smc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0) #0 {
+define i1 @func0000000000000042(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 7
   %2 = icmp eq i8 %1, 0
@@ -26,10 +26,10 @@ entry:
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-obex.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0) #0 {
+define i1 @func0000000000000068(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 31
-  %2 = icmp ult i8 %1, 29
+  %2 = icmp samesign ult i8 %1, 29
   %3 = icmp eq i8 %1, 31
   %4 = or i1 %2, %3
   ret i1 %4

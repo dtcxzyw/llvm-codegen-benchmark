@@ -301,4 +301,16 @@ entry:
   ret ptr %4
 }
 
+; 1 occurrences:
+; eastl/optimized/TestMemory.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -256
+  %3 = inttoptr i64 %2 to ptr
+  %4 = icmp ult i64 %0, 257
+  %5 = select i1 %4, ptr %3, ptr null
+  ret ptr %5
+}
+
 attributes #0 = { nounwind }

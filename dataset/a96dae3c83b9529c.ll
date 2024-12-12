@@ -1,5 +1,5 @@
 
-%"struct.V3NumberData::ValueAndX.2636811" = type { i32, i32 }
+%"struct.V3NumberData::ValueAndX.2750129" = type { i32, i32 }
 
 ; 42 occurrences:
 ; verilator/optimized/V3Assert.cpp.ll
@@ -45,39 +45,39 @@
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000341(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000681(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 31
   %4 = lshr i32 %3, 5
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %"struct.V3NumberData::ValueAndX.2636811", ptr %1, i64 %5
-  %7 = icmp eq ptr %6, %0
+  %6 = getelementptr %"struct.V3NumberData::ValueAndX.2750129", ptr %1, i64 %5
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; hyperscan/optimized/castle.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000344(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000684(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 7
   %4 = lshr i32 %3, 3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = icmp ugt ptr %6, %0
+  %7 = icmp ult ptr %0, %6
   ret i1 %7
 }
 

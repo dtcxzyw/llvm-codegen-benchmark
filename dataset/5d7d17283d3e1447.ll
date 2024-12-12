@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; abc/optimized/giaCSat3.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/AMFImporter_Material.cpp.ll
@@ -24,6 +24,7 @@
 ; linux/optimized/bitmap.ll
 ; linux/optimized/i915_syncmap.ll
 ; linux/optimized/mballoc.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; mold/optimized/gdb-index.cc.ALPHA.cc.ll
 ; mold/optimized/gdb-index.cc.ARM32.cc.ll
@@ -60,11 +61,11 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 1072693248
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
-; 161 occurrences:
+; 159 occurrences:
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/cnfMan.c.ll
 ; abc/optimized/cuddGenetic.c.ll
@@ -73,6 +74,7 @@ entry:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/kitHop.c.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; boost/optimized/message.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/upack.c.ll
@@ -108,7 +110,6 @@ entry:
 ; linux/optimized/intel_pps.ll
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/uhci-hcd.ll
-; linux/optimized/utids.ll
 ; linux/optimized/virtio_ring.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/DXContainerPSVInfo.cpp.ll
@@ -116,11 +117,11 @@ entry:
 ; llvm/optimized/MachineUniformityAnalysis.cpp.ll
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -144,7 +145,6 @@ entry:
 ; openblas/optimized/lapacke_dtp_trans.c.ll
 ; openblas/optimized/lapacke_stp_trans.c.ll
 ; openblas/optimized/lapacke_ztp_trans.c.ll
-; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/matrix_c.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -184,7 +184,6 @@ entry:
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/tcg.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
@@ -284,7 +283,6 @@ entry:
 ; openblas/optimized/dlasda.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dstemr.c.ll
-; openblas/optimized/dstevd.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
@@ -292,6 +290,7 @@ entry:
 ; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/methodData.ll
+; openspiel/optimized/quoridor.cc.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -312,7 +311,7 @@ entry:
   ret i32 %3
 }
 
-; 111 occurrences:
+; 108 occurrences:
 ; abc/optimized/exorBits.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/wlnWriteVer.c.ll
@@ -338,9 +337,6 @@ entry:
 ; hdf5/optimized/H5Odbg.c.ll
 ; hdf5/optimized/H5Oint.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; jemalloc/optimized/bin.ll
-; jemalloc/optimized/bin.pic.ll
-; jemalloc/optimized/bin.sym.ll
 ; jemalloc/optimized/sec.ll
 ; jemalloc/optimized/sec.pic.ll
 ; jemalloc/optimized/sec.sym.ll
@@ -428,7 +424,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -441,7 +437,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 28
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -477,7 +473,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 

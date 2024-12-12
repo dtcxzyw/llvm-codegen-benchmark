@@ -22,7 +22,7 @@ entry:
 define ptr @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = ashr i64 %4, 6
   %6 = getelementptr i64, ptr %0, i64 %5
   ret ptr %6

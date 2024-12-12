@@ -37,3 +37,15 @@ func00000000000000ca:                   # @func00000000000000ca
 	vmfle.vf	v0, v8, fa4
 	vfmerge.vfm	v8, v8, fa4, v0
 	ret
+.LCPI3_0:
+	.quad	0x4066800000000000              # double 180
+func0000000000000022:                   # @func0000000000000022
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vf	v0, v8, fa5
+	vfmerge.vfm	v8, v8, fa5, v0
+	fli.d	fa5, 1.0
+	vmflt.vf	v0, v8, fa5
+	vfmerge.vfm	v8, v8, fa5, v0
+	ret

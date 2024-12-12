@@ -2,11 +2,11 @@ func0000000000000004:                   # @func0000000000000004
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpcmpgtb	%xmm1, %xmm0, %xmm0
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtb	%xmm1, %xmm0, %xmm0
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtb	%xmm0, %xmm1, %xmm0
 	retq

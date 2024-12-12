@@ -11,7 +11,7 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000000:                   # @func0000000000000000
 	movzwl	%si, %eax
 	imull	%edi, %eax
-	shll	$3, %eax
+	shll	$10, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
 	movzwl	%si, %eax

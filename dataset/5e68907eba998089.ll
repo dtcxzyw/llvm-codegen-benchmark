@@ -9,7 +9,7 @@ define i8 @func000000000000007a(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 12
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr i32 %4, 10
   %6 = trunc nuw i32 %5 to i8
   ret i8 %6
@@ -25,7 +25,7 @@ define i8 @func0000000000000078(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 10
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr i32 %4, 12
   %6 = trunc i32 %5 to i8
   ret i8 %6
@@ -39,7 +39,7 @@ define i8 @func000000000000007c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 10
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr exact i32 %4, 6
   %6 = trunc i32 %5 to i8
   ret i8 %6
@@ -53,7 +53,7 @@ define i8 @func0000000000000030(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 18
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = lshr i32 %4, 16
   %6 = trunc i32 %5 to i8
   ret i8 %6
@@ -88,13 +88,24 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000022(i32 %0, i8 %1) #0 {
+entry:
+  %2 = lshr i32 %0, 24
+  %3 = trunc nuw i32 %2 to i8
+  %4 = or i8 %1, %3
+  ret i8 %4
+}
+
+; 1 occurrences:
 ; grpc/optimized/hpack_parser.cc.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000007e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 18
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr exact i32 %4, 16
   %6 = trunc nuw i32 %5 to i8
   ret i8 %6

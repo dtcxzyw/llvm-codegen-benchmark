@@ -28,27 +28,28 @@ entry:
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hermes/optimized/Memory.cpp.ll
 ; llvm/optimized/Memory.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; mitsuba3/optimized/zone.cpp.ll
 ; openjdk/optimized/cardTable.ll
 ; openusd/optimized/aom_mem.c.ll
-; ozz-animation/optimized/allocator.cc.ll
 ; pbrt-v4/optimized/parser.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000030(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 24
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 24
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %0, -1
   %5 = add i64 %4, %3
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_tlsf.ll
 ; mitsuba3/optimized/zone.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000034(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 24
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 24
   %3 = ptrtoint ptr %2 to i64
   %4 = add nsw i64 %0, -1
   %5 = add i64 %4, %3

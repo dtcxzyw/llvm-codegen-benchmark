@@ -15,20 +15,7 @@
 define i1 @func0000000000000004(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 5.000000e-01
-  %3 = xor i1 %2, %0
-  ret i1 %3
-}
-
-; 4 occurrences:
-; mitsuba3/optimized/volpath.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_image_resize2.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000007(i1 %0, float %1) #0 {
-entry:
-  %2 = fcmp une float %1, 0x7FF0000000000000
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -43,7 +30,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp uno float %1, 0.000000e+00
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -62,7 +49,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0.000000e+00
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -77,7 +64,7 @@ entry:
 define i1 @func000000000000000d(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp uge float %1, 0.000000e+00
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -105,7 +92,19 @@ entry:
 define i1 @func0000000000000008(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp oeq float %1, 0x7FF0000000000000
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
+  ret i1 %3
+}
+
+; 3 occurrences:
+; openusd/optimized/stbImage.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_image_resize2.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(i1 %0, float %1) #0 {
+entry:
+  %2 = fcmp une float %1, 0x47EC363CC0000000
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -115,7 +114,7 @@ entry:
 define i1 @func0000000000000003(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ult float %1, 0.000000e+00
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 

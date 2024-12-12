@@ -16,3 +16,12 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
+func000000000000000f:                   # @func000000000000000f
+	andi	a2, a2, 1
+	li	a3, -2
+	czero.nez	a2, a3, a2
+	andi	a1, a1, 1
+	sh1add	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 4
+	ret

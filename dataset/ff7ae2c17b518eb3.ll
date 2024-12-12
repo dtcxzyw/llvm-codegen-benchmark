@@ -9,21 +9,20 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = add i32 %4, -1
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/c1_CodeStubs_x86.ll
-; proj/optimized/wkt_parser.cpp.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = add nsw i32 %4, 5
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
@@ -35,7 +34,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = add i32 %4, -1
-  %6 = icmp sle i32 %5, %0
+  %6 = icmp sge i32 %0, %5
   ret i1 %6
 }
 
@@ -48,14 +47,13 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = add i32 %4, -2
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/reassembly.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/tcp_ipv4.ll
@@ -69,31 +67,19 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = add i32 %4, 64
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openmpi/optimized/onesided_aggregation.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = add nsw i32 %4, 1
-  %6 = icmp eq i32 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/mcast_snoop.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, 40
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -105,19 +91,19 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = add i32 %4, 16
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = add i32 %4, 27
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 

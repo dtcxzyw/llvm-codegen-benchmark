@@ -3,7 +3,7 @@
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483648
   %3 = icmp eq i64 %2, 0

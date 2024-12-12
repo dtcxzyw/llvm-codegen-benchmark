@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 30 occurrences:
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/mx.cpp.ll
@@ -30,17 +30,15 @@
 ; osqp/optimized/kkt.c.ll
 ; php/optimized/zend_hash.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
-; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
-; rust-analyzer-rs/optimized/4edzq05522y1zalf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %.neg = sext i1 %1 to i64
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   ret i64 %2
 }
 
-; 191 occurrences:
+; 190 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; cpython/optimized/unicodeobject.ll
@@ -158,7 +156,6 @@ entry:
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -236,7 +233,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %.neg = sext i1 %1 to i64
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   ret i64 %2
 }
 
@@ -254,18 +251,52 @@ entry:
 define i64 @func0000000000000002(i64 %0, i1 %1) #0 {
 entry:
   %.neg = sext i1 %1 to i64
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   ret i64 %2
 }
 
-; 2 occurrences:
+; 36 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/partition.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; xgboost/optimized/auc.cc.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i1 %1) #0 {
 entry:
   %.neg = sext i1 %1 to i64
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   ret i64 %2
 }
 

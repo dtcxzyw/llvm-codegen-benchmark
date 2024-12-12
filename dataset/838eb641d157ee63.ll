@@ -1,9 +1,8 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; cmake/optimized/zstd_opt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/mmconfig_64.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/orb.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll

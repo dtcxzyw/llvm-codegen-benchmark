@@ -10,7 +10,7 @@ func0000000000000002:                   # @func0000000000000002
 	flt.s	a0, fa1, fa5
 	beqz	a0, .LBB0_4
 .LBB0_2:                                # %entry
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa0, fa0, fa5
 	ret
 .LBB0_3:
 	lui	a0, %hi(.LCPI0_0)
@@ -20,7 +20,7 @@ func0000000000000002:                   # @func0000000000000002
 	flt.s	a0, fa1, fa5
 	bnez	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	fmul.s	fa0, fa1, fa0
+	fmul.s	fa0, fa0, fa1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 1

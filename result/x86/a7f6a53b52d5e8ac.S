@@ -45,7 +45,7 @@ func0000000000000031:                   # @func0000000000000031
 	addl	%edi, %eax
 	cltq
 	retq
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	cmpq	%rdx, %rsi
 	adcl	$0, %edi
 	movslq	%edi, %rax

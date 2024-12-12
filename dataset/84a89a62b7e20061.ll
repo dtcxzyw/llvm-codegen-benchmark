@@ -1,15 +1,14 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; fmt/optimized/compile-test.cc.ll
 ; folly/optimized/File.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
 ; vcpkg/optimized/strings.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i16 %1, i1 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i16 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 16944, i32 25136
-  %4 = icmp ult i16 %1, 2
+  %4 = icmp samesign ult i16 %1, 2
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }
@@ -29,6 +28,17 @@ define i32 @func0000000000000001(i32 %0, i16 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 5273, i32 7147
   %4 = icmp eq i16 %1, 7
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/ScalarEvolution.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i16 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 39, i32 35
+  %4 = icmp ult i16 %1, 2
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }

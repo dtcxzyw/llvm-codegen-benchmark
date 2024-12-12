@@ -1,17 +1,10 @@
 
-; 1 occurrences:
-; ruby/optimized/japanese.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000008(i8 %0, i8 %1) #0 {
-entry:
-  %2 = xor i8 %0, -128
-  %3 = icmp ugt i8 %1, -33
-  %4 = select i1 %3, i8 %2, i8 %0
-  ret i8 %4
-}
-
-; 1 occurrences:
+; 5 occurrences:
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/cguh9zihnfg4v76y73tdlg6o2.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
@@ -30,17 +23,6 @@ entry:
   %3 = icmp slt i8 %1, 0
   %4 = select i1 %3, i8 %2, i8 %0
   ret i8 %4
-}
-
-; 1 occurrences:
-; linux/optimized/vt.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000c(i8 %0, i8 %1) #0 {
-entry:
-  %2 = xor i8 %0, -128
-  %.not = icmp eq i8 %1, 0
-  %3 = select i1 %.not, i8 %0, i8 %2
-  ret i8 %3
 }
 
 attributes #0 = { nounwind }

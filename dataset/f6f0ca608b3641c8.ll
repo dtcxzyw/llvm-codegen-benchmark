@@ -12,7 +12,7 @@ entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 32, i64 0
   %5 = select i1 %1, i64 8, i64 0
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }

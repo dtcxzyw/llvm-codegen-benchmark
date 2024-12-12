@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pack.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = select i1 %0, i64 %3, i64 %1
@@ -29,7 +29,7 @@ entry:
 ; spike/optimized/f32_to_ui64.ll
 ; spike/optimized/s_addMagsF64.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 40
   %4 = select i1 %0, i64 %3, i64 %1
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; regex-rs/optimized/32jw1oy2yofrhudk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = select i1 %0, i64 %3, i64 %1
@@ -52,7 +52,7 @@ entry:
 ; abseil-cpp/optimized/span_test.cc.ll
 ; protobuf/optimized/retention.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = select i1 %0, i64 %3, i64 %1

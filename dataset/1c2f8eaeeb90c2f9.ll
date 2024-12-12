@@ -13,25 +13,12 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/dwarf.ll
-; openjdk/optimized/elfFile.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 63
-  %4 = xor i1 %1, true
-  %5 = select i1 %4, i1 true, i1 %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/InstructionCombining.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 11
   %4 = xor i1 %1, true
   %5 = select i1 %4, i1 true, i1 %3
   %6 = or i1 %5, %0
@@ -48,7 +35,7 @@ entry:
   %3 = icmp ne i32 %2, 2
   %4 = xor i1 %1, true
   %5 = select i1 %4, i1 true, i1 %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

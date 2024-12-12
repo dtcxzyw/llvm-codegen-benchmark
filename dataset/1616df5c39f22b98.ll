@@ -4,10 +4,10 @@
 ; abc/optimized/simSeq.c.ll
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -18,10 +18,10 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_x931p.ll
 ; openssl/optimized/libcrypto-shlib-rsa_sp800_56b_check.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -100
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -35,10 +35,10 @@ entry:
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -47,10 +47,10 @@ entry:
 ; abc/optimized/ifDec16.c.ll
 ; openjdk/optimized/klass.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c2(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -66,10 +66,10 @@ entry:
 ; openjdk/optimized/jcmaster.ll
 ; openusd/optimized/obu.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -85,7 +85,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -99,7 +99,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -110,10 +110,10 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -124,7 +124,7 @@ entry:
 define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 68
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -138,7 +138,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -151,7 +151,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -162,7 +162,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 7
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -171,10 +171,10 @@ entry:
 ; openblas/optimized/dsytrd_sb2st.c.ll
 ; postgres/optimized/rangetypes_typanalyze.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000056(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -186,7 +186,7 @@ entry:
 define i32 @func0000000000000012(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -64
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -194,10 +194,10 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002e(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004e(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 262144
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

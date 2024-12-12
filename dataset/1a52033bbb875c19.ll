@@ -1,5 +1,5 @@
 
-; 386 occurrences:
+; 378 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -10,6 +10,10 @@
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/encode.c.ll
 ; c3c/optimized/symtab.c.ll
@@ -94,7 +98,6 @@
 ; linux/optimized/blk-map.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/blk-mq-debugfs.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/bts.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/client.ll
@@ -109,16 +112,11 @@
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/drm_connector.ll
 ; linux/optimized/drm_plane.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/fault.ll
 ; linux/optimized/fd.ll
 ; linux/optimized/fops.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hid-lg4ff.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hwgpe.ll
@@ -136,12 +134,10 @@
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_gt_irq.ll
 ; linux/optimized/intel_hotplug.ll
 ; linux/optimized/intel_memory_region.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/iov_iter.ll
@@ -150,7 +146,6 @@
 ; linux/optimized/libata-sata.ll
 ; linux/optimized/locks.ll
 ; linux/optimized/lskcipher.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/manage.ll
 ; linux/optimized/mdio_bus.ll
 ; linux/optimized/memory.ll
@@ -158,9 +153,7 @@
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/namei.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/pcm.ll
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/percpu.ll
@@ -179,7 +172,6 @@
 ; linux/optimized/skcipher.ll
 ; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/swiotlb.ll
-; linux/optimized/sysfs_engines.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/xhci-trace.ll
@@ -390,7 +382,7 @@
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   ret i64 %3
 }
 
@@ -522,7 +514,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   ret i64 %3
 }
 

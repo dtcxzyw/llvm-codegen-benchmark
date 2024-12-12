@@ -1,6 +1,5 @@
 
-; 21 occurrences:
-; clamav/optimized/upack.c.ll
+; 20 occurrences:
 ; cmake/optimized/http1.c.ll
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/unicodeobject.ll
@@ -26,15 +25,21 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 507 occurrences:
+; 434 occurrences:
 ; abc/optimized/ioReadBlif.c.ll
 ; abseil-cpp/optimized/time_zone_posix.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
+; boost/optimized/url_base.ll
 ; clamav/optimized/hash.cpp.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/upack.c.ll
@@ -42,7 +47,6 @@ entry:
 ; cmake/optimized/cmDebuggerAdapter.cxx.ll
 ; cmake/optimized/cmDebuggerBreakpointManager.cxx.ll
 ; cmake/optimized/cmDebuggerThread.cxx.ll
-; cmake/optimized/ftp.c.ll
 ; cmake/optimized/jsoncpp_json_serializer.cpp.ll
 ; cmake/optimized/mprintf.c.ll
 ; cmake/optimized/protocol_events.cpp.ll
@@ -50,7 +54,6 @@ entry:
 ; cmake/optimized/protocol_response.cpp.ll
 ; cmake/optimized/protocol_types.cpp.ll
 ; cmake/optimized/typeof.cpp.ll
-; curl/optimized/libcurl_la-ftp.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
@@ -89,8 +92,6 @@ entry:
 ; hermes/optimized/Conversions.cpp.ll
 ; hermes/optimized/Memory.cpp.ll
 ; hyperscan/optimized/gough.c.ll
-; hyperscan/optimized/mcclellan.c.ll
-; hyperscan/optimized/mcsheng.c.ll
 ; icu/optimized/ucnvhz.ll
 ; icu/optimized/ucnvisci.ll
 ; icu/optimized/uloc.ll
@@ -169,7 +170,6 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/ccm.ll
-; linux/optimized/ctr.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/gcm.ll
 ; linux/optimized/jump_label.ll
@@ -182,6 +182,7 @@ entry:
 ; llvm/optimized/SemaType.cpp.ll
 ; luajit/optimized/buildvm.ll
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; mitsuba3/optimized/zone.cpp.ll
 ; nanobind/optimized/nb_type.cpp.ll
 ; ninja/optimized/depfile_parser.cc.ll
@@ -273,13 +274,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -334,77 +332,6 @@ entry:
 ; nix/optimized/verify.ll
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
-; oiio/optimized/CineonHeader.cpp.ll
-; oiio/optimized/argparse.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
-; oiio/optimized/bmpinput.cpp.ll
-; oiio/optimized/bmpoutput.cpp.ll
-; oiio/optimized/cineoninput.cpp.ll
-; oiio/optimized/color_ocio.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; oiio/optimized/dpxinput.cpp.ll
-; oiio/optimized/dpxoutput.cpp.ll
-; oiio/optimized/environment.cpp.ll
-; oiio/optimized/errorhandler.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/fitsinput.cpp.ll
-; oiio/optimized/fitsoutput.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/hdroutput.cpp.ll
-; oiio/optimized/icc.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/icooutput.cpp.ll
-; oiio/optimized/iffinput.cpp.ll
-; oiio/optimized/iffoutput.cpp.ll
-; oiio/optimized/imagebuf.cpp.ll
-; oiio/optimized/imagebufalgo.cpp.ll
-; oiio/optimized/imagebufalgo_addsub.cpp.ll
-; oiio/optimized/imagebufalgo_channels.cpp.ll
-; oiio/optimized/imagebufalgo_compare.cpp.ll
-; oiio/optimized/imagebufalgo_copy.cpp.ll
-; oiio/optimized/imagebufalgo_deep.cpp.ll
-; oiio/optimized/imagebufalgo_draw.cpp.ll
-; oiio/optimized/imagebufalgo_mad.cpp.ll
-; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
-; oiio/optimized/imagebufalgo_muldiv.cpp.ll
-; oiio/optimized/imagebufalgo_opencv.cpp.ll
-; oiio/optimized/imagebufalgo_orient.cpp.ll
-; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageio.cpp.ll
-; oiio/optimized/imageioplugin.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; oiio/optimized/paramlist.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/pngoutput.cpp.ll
-; oiio/optimized/pnmoutput.cpp.ll
-; oiio/optimized/printinfo.cpp.ll
-; oiio/optimized/psdinput.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
-; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/sgiinput.cpp.ll
-; oiio/optimized/sgioutput.cpp.ll
-; oiio/optimized/softimageinput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
-; oiio/optimized/targainput.cpp.ll
-; oiio/optimized/targaoutput.cpp.ll
-; oiio/optimized/termoutput.cpp.ll
-; oiio/optimized/texture3d.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; oiio/optimized/typedesc.cpp.ll
-; oiio/optimized/xmp.cpp.ll
-; oiio/optimized/zfile.cpp.ll
 ; opencc/optimized/Config.cpp.ll
 ; openjdk/optimized/cardTable.ll
 ; openjdk/optimized/dwarf.ll
@@ -417,7 +344,6 @@ entry:
 ; openmpi/optimized/osc_rdma_dynamic.ll
 ; openusd/optimized/aom_mem.c.ll
 ; openusd/optimized/stringUtils.cpp.ll
-; ozz-animation/optimized/allocator.cc.ll
 ; pbrt-v4/optimized/parser.cpp.ll
 ; php/optimized/json_scanner.ll
 ; php/optimized/parse_posix.ll
@@ -430,7 +356,6 @@ entry:
 ; php/optimized/url_scanner_ex.ll
 ; php/optimized/zend_compile.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
@@ -538,12 +463,13 @@ entry:
 ; velox/optimized/LzoDecompressor.cpp.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 24
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 24
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -566,11 +492,99 @@ entry:
 ; openjdk/optimized/Ushort565Rgb.ll
 ; openjdk/optimized/UshortGray.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, ptr %1) #0 {
+define i64 @func000000000000000d(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 78 occurrences:
+; boost/optimized/params_iter_impl.ll
+; clamav/optimized/pdf.c.ll
+; cmake/optimized/ftp.c.ll
+; curl/optimized/libcurl_la-ftp.ll
+; hyperscan/optimized/mcclellan.c.ll
+; hyperscan/optimized/mcsheng.c.ll
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/argparse.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
+; oiio/optimized/bmpinput.cpp.ll
+; oiio/optimized/bmpoutput.cpp.ll
+; oiio/optimized/cineoninput.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
+; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/errorhandler.cpp.ll
+; oiio/optimized/exrinput.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/filesystem.cpp.ll
+; oiio/optimized/fitsinput.cpp.ll
+; oiio/optimized/fitsoutput.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/hdroutput.cpp.ll
+; oiio/optimized/icc.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/iffinput.cpp.ll
+; oiio/optimized/iffoutput.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_opencv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/imageioplugin.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/pnmoutput.cpp.ll
+; oiio/optimized/printinfo.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/rlaoutput.cpp.ll
+; oiio/optimized/sgiinput.cpp.ll
+; oiio/optimized/sgioutput.cpp.ll
+; oiio/optimized/softimageinput.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/termoutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; oiio/optimized/typedesc.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; oiio/optimized/zfile.cpp.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

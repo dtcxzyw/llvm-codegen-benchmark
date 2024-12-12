@@ -11,7 +11,7 @@ define i128 @func0000000000000002(i128 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 269446386856070085
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %0
+  %4 = mul nuw i128 %0, %3
   ret i128 %4
 }
 
@@ -23,7 +23,7 @@ define i128 @func000000000000001f(i128 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 20
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %0
+  %4 = mul nuw nsw i128 %0, %3
   ret i128 %4
 }
 

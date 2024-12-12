@@ -1,5 +1,7 @@
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; proj/optimized/geodesic.c.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -7,7 +9,7 @@ define i1 @func0000000000000003(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, %2
   %4 = fmul double %3, %1
-  %5 = fcmp ugt double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 
@@ -20,7 +22,7 @@ define i1 @func0000000000000005(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, %2
   %4 = fmul double %3, %1
-  %5 = fcmp ult double %4, %0
+  %5 = fcmp ugt double %0, %4
   ret i1 %5
 }
 
@@ -30,8 +32,8 @@ entry:
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, %2
-  %4 = fmul double %3, %1
-  %5 = fcmp ogt double %4, %0
+  %4 = fmul double %1, %3
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 
@@ -42,7 +44,7 @@ define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, %2
   %4 = fmul double %3, %1
-  %5 = fcmp olt double %4, %0
+  %5 = fcmp ogt double %0, %4
   ret i1 %5
 }
 

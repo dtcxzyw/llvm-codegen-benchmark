@@ -1,5 +1,17 @@
 
-; 37 occurrences:
+; 2 occurrences:
+; cpython/optimized/dtoa.ll
+; ruby/optimized/util.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 20
+  %3 = or i32 %0, 1072693248
+  %4 = sub i32 %3, %2
+  ret i32 %4
+}
+
+; 36 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -17,7 +29,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -46,10 +57,11 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/i64_to_f32.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:

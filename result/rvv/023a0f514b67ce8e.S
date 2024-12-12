@@ -18,7 +18,7 @@ func000000000000001c:                   # @func000000000000001c
 	vzext.vf4	v11, v10
 	vwsll.vx	v12, v11, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	bseti	a0, zero, 45
 	vor.vx	v8, v8, a0
 	ret

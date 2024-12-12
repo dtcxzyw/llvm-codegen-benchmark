@@ -5,11 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a0, a0, 3
 	ret
 func000000000000001e:                   # @func000000000000001e
-	lui	a1, 36
-	addiw	a1, a1, -1359
-	mul	a0, a0, a1
-	addi	a0, a0, 3
-	srli	a0, a0, 2
+	sh1add	a0, a0, a0
+	addi	a0, a0, 1
+	srli	a0, a0, 1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a1, 315653

@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; delta-rs/optimized/1r1w77ke32wmydhz.ll
 ; delta-rs/optimized/22gnjb10gks9zxxp.ll
 ; delta-rs/optimized/4o825sfdss6k6lzp.ll
@@ -8,6 +8,8 @@
 ; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
 ; openjdk/optimized/cardTable.ll
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
+; zed-rs/optimized/5xfke1jw0ac7pab611oym1u20.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
 define { ptr, i64 } @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

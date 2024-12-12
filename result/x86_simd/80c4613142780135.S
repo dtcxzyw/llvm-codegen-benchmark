@@ -28,7 +28,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI3_0:
 	.long	128                             # 0x80
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpsrld	$8, %ymm2, %ymm0
@@ -39,7 +39,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI4_0:
 	.long	16                              # 0x10
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpsrld	$3, %ymm2, %ymm0

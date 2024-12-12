@@ -8,7 +8,7 @@
 ; wasmtime-rs/optimized/4hvnupd8slkxulls.ll
 ; wasmtime-rs/optimized/lin3yywv836im8d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, %1

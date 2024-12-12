@@ -10,6 +10,19 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; ruby/optimized/thread.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 -1, i64 %2
+  %4 = sub nuw i64 %0, %3
+  %5 = icmp ult i64 %4, 1000000
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; qemu/optimized/net_eth.c.ll
 ; Function Attrs: nounwind
@@ -21,21 +34,33 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
 ; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; cmake/optimized/nghttp2_session.c.ll
-; cpython/optimized/_hashopenssl.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 32, i64 %2
+  %4 = sub nsw i64 %0, %3
+  %5 = icmp ult i64 %4, 32
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -54,35 +79,11 @@ entry:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %1, i64 32, i64 %2
-  %4 = sub nuw i64 %0, %3
-  %5 = icmp ult i64 %4, 65537
-  ret i1 %5
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 32, i64 %2
   %4 = sub nuw i64 %0, %3
   %5 = icmp ugt i64 %4, 31
-  ret i1 %5
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %1, i64 32, i64 %2
-  %4 = sub nsw i64 %0, %3
-  %5 = icmp ult i64 %4, 32
   ret i1 %5
 }
 

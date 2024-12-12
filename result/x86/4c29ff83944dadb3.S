@@ -13,3 +13,24 @@ func0000000000000022:                   # @func0000000000000022
 	movl	$1, %eax
 	cmovbel	%ecx, %eax
 	retq
+func0000000000000028:                   # @func0000000000000028
+	vxorpd	%xmm1, %xmm1, %xmm1
+	xorl	%eax, %eax
+	vucomisd	%xmm0, %xmm1
+	seta	%al
+	leal	-1(%rax,%rax), %ecx
+	xorl	%eax, %eax
+	vucomisd	%xmm1, %xmm0
+	cmovnel	%ecx, %eax
+	cmovpl	%ecx, %eax
+	retq
+func0000000000000048:                   # @func0000000000000048
+	xorl	%eax, %eax
+	vxorpd	%xmm1, %xmm1, %xmm1
+	xorl	%ecx, %ecx
+	vucomisd	%xmm1, %xmm0
+	seta	%cl
+	leal	-1(%rcx,%rcx), %ecx
+	cmovnel	%ecx, %eax
+	cmovpl	%ecx, %eax
+	retq

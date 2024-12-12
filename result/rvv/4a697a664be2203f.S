@@ -49,7 +49,7 @@ func0000000000000010:                   # @func0000000000000010
 	vsrl.vx	v12, v12, a0
 	li	a0, -19
 	vmadd.vx	v12, a0, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a0, 32

@@ -1,40 +1,24 @@
-func0000000000000054:                   // @func0000000000000054
+func00000000000000a4:                   // @func00000000000000a4
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	sshll2	v1.2d, v0.4s, #3
-	sshll	v0.2d, v0.2s, #3
-	dup	v2.2d, x8
-	mov	w8, #1024                       // =0x400
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
-	dup	v2.2d, x8
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w0 killed $w0 def $x0
+	sbfiz	x8, x0, #3, #32
+	add	x8, x8, #8
+	cmp	x8, #1024
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000051:                   // @func0000000000000051
+func00000000000000a1:                   // @func00000000000000a1
 // %bb.0:                               // %entry
-	mvni	v2.4s, #1
-	cmeq	v1.4s, v1.4s, v2.4s
-	cmeq	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	cmn	w0, #2
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000058:                   // @func0000000000000058
+func00000000000000a8:                   // @func00000000000000a8
 // %bb.0:                               // %entry
 	mov	x8, #-4611686018427387901       // =0xc000000000000003
-	sshll2	v1.2d, v0.4s, #1
-	sshll	v0.2d, v0.2s, #1
-	dup	v2.2d, x8
-	fmov	v3.2d, #-2.00000000
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x8, w0, sxtw #1
+	lsr	x8, x8, #62
+	cmp	x8, #3
+	cset	w0, lo
 	ret
                                         // -- End function

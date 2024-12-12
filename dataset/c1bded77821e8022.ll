@@ -9,10 +9,10 @@
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; rocksdb/optimized/db_impl_files.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000548(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a88(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl nsw i64 %1, 6
   %6 = add i64 %4, %5
   %7 = icmp ugt i64 %6, 1152921504606846975
@@ -27,10 +27,10 @@ entry:
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000054a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a8a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl nsw i64 %1, 5
   %6 = add i64 %4, %5
   %7 = icmp sgt i64 %6, 0
@@ -49,10 +49,10 @@ entry:
 ; openusd/optimized/instanceAdapter.cpp.ll
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000541(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a81(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl nsw i64 %1, 5
   %6 = add i64 %4, %5
   %7 = icmp eq i64 %6, 576460752303423487
@@ -68,10 +68,10 @@ entry:
 ; llvm/optimized/DFAEmitter.cpp.ll
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000441(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000881(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl i64 %1, 2
   %6 = add i64 %4, %5
   %7 = icmp eq i64 %6, 576460752303423487
@@ -89,10 +89,10 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000044a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000088a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl i64 %1, 2
   %6 = add i64 %4, %5
   %7 = icmp sgt i64 %6, -1

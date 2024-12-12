@@ -16,7 +16,7 @@ func0000000000000002:                   # @func0000000000000002
 	cmovnel	%edi, %eax
 	orl	$1073742080, %eax               # imm = 0x40000100
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax

@@ -43,6 +43,17 @@ entry:
   ret i64 %3
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = icmp samesign ugt i32 %1, 999
+  %3 = zext i1 %2 to i64
+  ret i64 %3
+}
+
 ; 12 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CallAndMessageChecker.cpp.ll

@@ -39,3 +39,13 @@ func0000000000000021:                   # @func0000000000000021
 	cmpb	$2, %sil
 	adcl	$-1, %eax
 	retq
+func0000000000000061:                   # @func0000000000000061
+	movl	%edi, %eax
+	cmpb	$-55, %sil
+	adcl	$-1, %eax
+	retq
+func0000000000000051:                   # @func0000000000000051
+	movl	%edi, %eax
+	cmpb	$3, %sil
+	sbbl	$0, %eax
+	retq

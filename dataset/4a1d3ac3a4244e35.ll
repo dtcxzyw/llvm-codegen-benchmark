@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 72 occurrences:
 ; duckdb/optimized/ub_duckdb_optimizer_compressed_materialization.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
@@ -9,7 +9,6 @@
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; libquic/optimized/quic_packet_creator.cc.ll
 ; linux/optimized/alternative.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/tree.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -59,6 +58,20 @@
 ; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/3w62movadz26xj1uazrxcr5i1.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/8l6j9aar0oaoyhr62czfg3g36.ll
+; zed-rs/optimized/99xtkjwhw46g7fh9gdw0hgerp.ll
+; zed-rs/optimized/a8gnqmwrn3029hplkci6d0ejl.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/eb0f70f7qg0lwhfftqxruwlu9.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:

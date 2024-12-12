@@ -59,7 +59,8 @@ entry:
   ret i16 %4
 }
 
-; 82 occurrences:
+; 81 occurrences:
+; boost/optimized/to_chars.ll
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -80,8 +81,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -197,6 +196,17 @@ entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = trunc i32 %2 to i16
   %4 = add i16 %3, 2
+  ret i16 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000011(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %0, %1
+  %3 = trunc i32 %2 to i16
+  %4 = add nsw i16 %3, 6
   ret i16 %4
 }
 

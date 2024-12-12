@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 28 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -13,6 +13,9 @@
 ; icu/optimized/uniset.ll
 ; libquic/optimized/convert.c.ll
 ; libquic/optimized/prtime.cc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; opencv/optimized/adaptive_threshold_mean_binarizer.cpp.ll
@@ -29,37 +32,8 @@
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 1000
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nsw i32 %3, 2
-  ret i32 %4
-}
-
-; 19 occurrences:
-; abc/optimized/giaDup.c.ll
-; cpython/optimized/_datetimemodule.ll
-; cpython/optimized/_zoneinfo.ll
-; libquic/optimized/time_support.c.ll
-; linux/optimized/i915_cmd_parser.ll
-; linux/optimized/kallsyms.ll
-; linux/optimized/uncore_nhmex.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; postgres/optimized/dt_common.ll
-; postgres/optimized/integerset.ll
-; postgres/optimized/nbtsearch.ll
-; postgres/optimized/regcomp.ll
-; postgres/optimized/syscache.ll
-; postgres/optimized/xact.ll
-; protobuf/optimized/unparser.cc.ll
-; wireshark/optimized/msg_dlmap.c.ll
-; wireshark/optimized/nettrace_3gpp_32_423.c.ll
-; wireshark/optimized/packet-mac-lte.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sdiv i32 %1, 12
-  %3 = add i32 %2, %0
-  %4 = add i32 %3, 4900
   ret i32 %4
 }
 
@@ -84,6 +58,32 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nsw i32 %2, %0
+  %4 = add i32 %3, -1
+  ret i32 %4
+}
+
+; 16 occurrences:
+; abc/optimized/giaDup.c.ll
+; cpython/optimized/_datetimemodule.ll
+; cpython/optimized/_zoneinfo.ll
+; libquic/optimized/time_support.c.ll
+; linux/optimized/kallsyms.ll
+; linux/optimized/uncore_nhmex.ll
+; postgres/optimized/dt_common.ll
+; postgres/optimized/integerset.ll
+; postgres/optimized/nbtsearch.ll
+; postgres/optimized/regcomp.ll
+; postgres/optimized/syscache.ll
+; postgres/optimized/xact.ll
+; protobuf/optimized/unparser.cc.ll
+; wireshark/optimized/msg_dlmap.c.ll
+; wireshark/optimized/nettrace_3gpp_32_423.c.ll
+; wireshark/optimized/packet-mac-lte.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sdiv i32 %1, -2
+  %3 = add i32 %0, %2
   %4 = add i32 %3, -1
   ret i32 %4
 }

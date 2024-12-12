@@ -13,7 +13,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = shl nuw i32 255, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
+  %6 = and i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -28,7 +28,7 @@ entry:
   %3 = shl i32 %2, 3
   %4 = shl nuw i32 255, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
+  %6 = and i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -42,8 +42,8 @@ entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = shl nuw nsw i32 15, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
-  %7 = or i32 %6, %0
+  %6 = and i32 %1, %5
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 
@@ -62,7 +62,7 @@ entry:
   %3 = shl i32 %2, 1
   %4 = shl i32 3, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
+  %6 = and i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -76,7 +76,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = shl i32 3, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
+  %6 = and i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -89,7 +89,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = shl nuw nsw i32 3, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
+  %6 = and i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }

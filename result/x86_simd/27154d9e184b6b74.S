@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	1                               # 0x1
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -11,7 +11,7 @@ func0000000000000051:                   # @func0000000000000051
 	.long	2                               # 0x2
 .LCPI1_2:
 	.long	9                               # 0x9
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltud	.LCPI1_1(%rip){1to8}, %ymm1, %k1
 	vpaddd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0 {%k1}

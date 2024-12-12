@@ -1,5 +1,5 @@
 
-%"struct.CFF::number_t.2618739" = type { double }
+%"struct.CFF::number_t.2732186" = type { double }
 
 ; 7 occurrences:
 ; cpython/optimized/hamt.ll
@@ -10,11 +10,11 @@
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_pcnet-pci.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 440
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 9484
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 9484
   %5 = getelementptr [512 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -28,12 +28,12 @@ entry:
 ; stockfish/optimized/evaluate.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 24
-  %5 = getelementptr nusw [513 x %"struct.CFF::number_t.2618739"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %5 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732186"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -45,17 +45,16 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; php/optimized/pcre2_substring.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 104
-  %5 = getelementptr nusw [131072 x i64], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 104
+  %5 = getelementptr nusw nuw [131072 x i64], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 3 occurrences:
-; cpython/optimized/hamt.ll
+; 2 occurrences:
 ; linux/optimized/hdac_bus.ll
 ; postgres/optimized/fsmpage.ll
 ; Function Attrs: nounwind
@@ -71,11 +70,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/aes.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 240
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 240
   %5 = getelementptr [60 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

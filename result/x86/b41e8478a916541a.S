@@ -22,15 +22,15 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%sil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	xorb	$1, %sil
-	cmpl	$1073741824, %edi               # imm = 0x40000000
-	setae	%al
-	orb	%sil, %al
-	retq
 func0000000000000008:                   # @func0000000000000008
 	xorb	$1, %sil
 	cmpl	$2, %edi
 	setb	%al
+	orb	%sil, %al
+	retq
+func0000000000000010:                   # @func0000000000000010
+	xorb	$1, %sil
+	cmpl	$67108864, %edi                 # imm = 0x4000000
+	setae	%al
 	orb	%sil, %al
 	retq

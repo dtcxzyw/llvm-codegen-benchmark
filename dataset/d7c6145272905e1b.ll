@@ -1,5 +1,5 @@
 
-; 180 occurrences:
+; 179 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -50,7 +50,6 @@
 ; luau/optimized/lbuiltins.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/plylib.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/fontengine.cpp.ll
 ; minetest/optimized/l_object.cpp.ll

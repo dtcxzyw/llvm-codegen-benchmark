@@ -28,7 +28,7 @@ entry:
   %3 = and i32 %2, 65535
   %4 = and i32 %3, %1
   %5 = icmp eq i32 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

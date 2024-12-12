@@ -44,7 +44,7 @@ entry:
   %2 = and i32 %1, 2144
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 1, i32 2
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -95,11 +95,11 @@ entry:
 ; linux/optimized/indirect.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/namei.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/NativeFormatting.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; opencv/optimized/contours.cpp.ll
 ; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/nativeLookup.ll
@@ -127,7 +127,7 @@ entry:
   %2 = and i32 %1, 8
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 1, i32 2
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -144,15 +144,16 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2146435072
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 -1076, i32 -1023
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -160,10 +161,10 @@ entry:
 ; clamav/optimized/vba_extract.c.ll
 ; postgres/optimized/big5.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4095
-  %3 = icmp ugt i32 %2, 16
+  %3 = icmp samesign ugt i32 %2, 16
   %4 = select i1 %3, i32 11, i32 12
   %5 = add nsw i32 %4, %0
   ret i32 %5
@@ -182,38 +183,37 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; cmake/optimized/lz_encoder.c.ll
-; linux/optimized/fec.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000063(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 4
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 16, i32 244
-  %5 = add nuw i32 %4, %0
+  %2 = and i32 %1, 15
+  %3 = icmp samesign ugt i32 %2, 2
+  %4 = select i1 %3, i32 1025, i32 1
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
 ; 1 occurrences:
 ; cmake/optimized/lz_encoder.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 15
-  %3 = icmp ugt i32 %2, 2
-  %4 = select i1 %3, i32 1025, i32 1
-  %5 = add nuw nsw i32 %4, %0
+  %2 = and i32 %1, 16
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 4, i32 16
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
 ; 1 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000012(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000052(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 510
-  %3 = icmp ult i32 %2, 62
+  %3 = icmp samesign ult i32 %2, 62
   %4 = select i1 %3, i32 129, i32 193
   %5 = add nuw i32 %4, %0
   ret i32 %5

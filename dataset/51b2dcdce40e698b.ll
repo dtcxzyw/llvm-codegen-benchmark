@@ -32,13 +32,14 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/cuddZddReord.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; cpython/optimized/dtoa.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; ninja/optimized/deps_log.cc.ll
+; php/optimized/zend_jit.ll
 ; postgres/optimized/varbit.ll
 ; ruby/optimized/util.ll
 ; soc-simulator/optimized/verilated.ll

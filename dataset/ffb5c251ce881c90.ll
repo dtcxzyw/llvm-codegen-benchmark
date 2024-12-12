@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
@@ -9,6 +9,7 @@
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; nuklear/optimized/unity.c.ll
+; php/optimized/crypt_sha256.ll
 ; postgres/optimized/spell.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
@@ -71,14 +72,13 @@ entry:
   ret i32 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/fretTime.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/hopObj.c.ll
 ; abc/optimized/ivyUtil.c.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/isoch.ll
 ; Function Attrs: nounwind

@@ -3,7 +3,7 @@
 func0000000000000005:                   # @func0000000000000005
 	vptestnmw	%xmm2, %xmm2, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [65530,65530,65530,65530,65530,65530,65530,65530]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vptestmw	%xmm2, %xmm2, %k1

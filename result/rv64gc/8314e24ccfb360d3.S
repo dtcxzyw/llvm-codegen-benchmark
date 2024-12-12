@@ -139,74 +139,74 @@ func0000000000000043:                   # @func0000000000000043
 	fle.s	a0, fa0, fa1
 	xori	a0, a0, 1
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004d:                   # @func000000000000004d
 	flt.s	a0, fa2, fa1
 	bnez	a0, .LBB19_2
 	fmv.s	fa1, fa2
 .LBB19_2:                               # %entry
+	flt.s	a0, fa1, fa0
+	xori	a0, a0, 1
+	ret
+func000000000000002a:                   # @func000000000000002a
+	flt.s	a0, fa2, fa1
+	bnez	a0, .LBB20_2
+	fmv.s	fa1, fa2
+.LBB20_2:                               # %entry
 	fle.s	a0, fa1, fa0
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	fle.s	a0, fa2, fa1
-	bnez	a0, .LBB20_2
+	bnez	a0, .LBB21_2
 	fmv.s	fa1, fa2
-.LBB20_2:                               # %entry
+.LBB21_2:                               # %entry
 	flt.s	a0, fa0, fa1
 	ret
 func0000000000000027:                   # @func0000000000000027
 	flt.s	a0, fa2, fa1
-	bnez	a0, .LBB21_2
+	bnez	a0, .LBB22_2
 	fmv.s	fa1, fa2
-.LBB21_2:                               # %entry
+.LBB22_2:                               # %entry
 	feq.s	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret
 func00000000000000b4:                   # @func00000000000000b4
 	flt.s	a0, fa1, fa2
-	bnez	a0, .LBB22_2
+	bnez	a0, .LBB23_2
 	fmv.s	fa2, fa1
-.LBB22_2:                               # %entry
+.LBB23_2:                               # %entry
 	flt.s	a0, fa0, fa2
 	ret
 func00000000000000c2:                   # @func00000000000000c2
 	fle.s	a0, fa2, fa1
-	bnez	a0, .LBB23_2
+	bnez	a0, .LBB24_2
 	fmv.s	fa1, fa2
-.LBB23_2:                               # %entry
+.LBB24_2:                               # %entry
 	flt.s	a0, fa1, fa0
 	ret
 func000000000000002c:                   # @func000000000000002c
 	flt.s	a0, fa1, fa2
-	bnez	a0, .LBB24_2
+	bnez	a0, .LBB25_2
 	fmv.s	fa1, fa2
-.LBB24_2:                               # %entry
+.LBB25_2:                               # %entry
 	fle.s	a0, fa0, fa1
 	ret
 func000000000000004b:                   # @func000000000000004b
 	flt.s	a0, fa2, fa1
-	bnez	a0, .LBB25_2
+	bnez	a0, .LBB26_2
 	fmv.s	fa1, fa2
-.LBB25_2:                               # %entry
+.LBB26_2:                               # %entry
 	flt.s	a0, fa0, fa1
 	xori	a0, a0, 1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	flt.s	a0, fa2, fa1
-	bnez	a0, .LBB26_2
+	bnez	a0, .LBB27_2
 	fmv.s	fa1, fa2
-.LBB26_2:                               # %entry
+.LBB27_2:                               # %entry
 	feq.s	a0, fa1, fa0
 	ret
 func000000000000002d:                   # @func000000000000002d
 	flt.s	a0, fa1, fa2
-	bnez	a0, .LBB27_2
-	fmv.s	fa1, fa2
-.LBB27_2:                               # %entry
-	flt.s	a0, fa1, fa0
-	xori	a0, a0, 1
-	ret
-func000000000000004d:                   # @func000000000000004d
-	flt.s	a0, fa2, fa1
 	bnez	a0, .LBB28_2
 	fmv.s	fa1, fa2
 .LBB28_2:                               # %entry

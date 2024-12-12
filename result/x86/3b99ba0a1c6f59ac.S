@@ -1,12 +1,14 @@
-func000000000000000a:                   # @func000000000000000a
-	andl	$1, %esi
+func000000000000000b:                   # @func000000000000000b
+	xorl	%eax, %eax
 	cmpl	$3, %edx
-	leaq	16(,%rsi,8), %rcx
+	sete	%al
+	leaq	16(,%rax,8), %rcx
+	testb	$1, %sil
 	movl	$24, %eax
-	cmovneq	%rcx, %rax
+	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	cmpl	$2, %edx
 	setb	%al
 	orb	%sil, %al
@@ -14,7 +16,7 @@ func0000000000000022:                   # @func0000000000000022
 	andl	$1, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -24,7 +26,7 @@ func0000000000000032:                   # @func0000000000000032
 	cmovnsq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000062:                   # @func0000000000000062
+func0000000000000063:                   # @func0000000000000063
 	testl	%edx, %edx
 	setne	%al
 	orb	%sil, %al
@@ -33,39 +35,30 @@ func0000000000000062:                   # @func0000000000000062
 	subq	%rax, %rdi
 	leaq	136(%rdi), %rax
 	retq
-func0000000000000023:                   # @func0000000000000023
-	andl	$1, %esi
-	shll	$7, %esi
-	leaq	56(%rsi), %rcx
-	cmpl	$-7, %edx
-	movl	$184, %eax
-	cmovaeq	%rcx, %rax
-	addq	%rdi, %rax
-	retq
-func000000000000000b:                   # @func000000000000000b
-	andl	$1, %esi
-	testl	%edx, %edx
-	leaq	1072(,%rsi,8), %rcx
-	movl	$1080, %eax                     # imm = 0x438
-	cmovneq	%rcx, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000008:                   # @func0000000000000008
-	testb	$1, %sil
-	movl	$16, %ecx
-	movl	$40, %eax
-	cmovneq	%rcx, %rax
-	cmpl	$22, %edx
+	cmpl	$1, %edx
+	movl	$108, %ecx
+	movl	$88, %eax
 	cmoveq	%rcx, %rax
+	testb	$1, %sil
+	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000052:                   # @func0000000000000052
-	notb	%sil
-	movzbl	%sil, %ecx
-	andl	$1, %ecx
+func000000000000000a:                   # @func000000000000000a
+	andl	$1, %esi
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	leaq	-8(,%rsi,8), %rcx
+	cmovneq	%rcx, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000053:                   # @func0000000000000053
+	xorl	%ecx, %ecx
+	cmpl	$500, %edx                      # imm = 0x1F4
+	setl	%cl
 	shll	$3, %ecx
 	xorl	%eax, %eax
-	cmpl	$500, %edx                      # imm = 0x1F4
-	cmovlq	%rcx, %rax
+	testb	$1, %sil
+	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq

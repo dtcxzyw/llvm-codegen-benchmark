@@ -1,18 +1,36 @@
 
-; 6 occurrences:
+; 12 occurrences:
 ; crow/optimized/example.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; php/optimized/phpdbg_lexer.ll
-; re2/optimized/re2.cc.ll
 ; ruby/optimized/date_strptime.ll
 ; typst-rs/optimized/2llfsdqplv1n1omy.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5syv1375c7i7870jctt3co1ip.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000022(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 45
   %4 = zext i1 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; re2/optimized/re2.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000023(ptr %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, 45
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -164,8 +182,8 @@ define ptr @func0000000000000026(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -178,20 +196,8 @@ define ptr @func000000000000002a(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 90
   %4 = zext i1 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
-  ret ptr %6
-}
-
-; 1 occurrences:
-; git/optimized/fetch.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000182(ptr %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ne i8 %2, 0
-  %4 = zext i1 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -202,8 +208,39 @@ define ptr @func000000000000018a(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 1
   %4 = zext i1 %3 to i64
-  %5 = getelementptr { { { { i64, [1 x i64] } } }, ptr, i64, i64 }, ptr %0, i64 %4
-  %6 = getelementptr { { { { i64, [1 x i64] } } }, ptr, i64, i64 }, ptr %5, i64 %1
+  %5 = getelementptr { { { { i64, [1 x i64] } } }, ptr, i64, i64 }, ptr %0, i64 %1
+  %6 = getelementptr { { { { i64, [1 x i64] } } }, ptr, i64, i64 }, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 2 occurrences:
+; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; Function Attrs: nounwind
+define ptr @func000000000000008a(ptr %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ult i8 %2, -2
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr { { { i64, ptr, {} }, i64 }, { i64, [4 x i64] }, { { { i32, i16, [1 x i16] }, i64, i64, i8, [7 x i8] }, { { i32, i16, [1 x i16] }, i64, i64, i8, [7 x i8] } }, i64, { ptr, [1 x i64] } }, ptr %0, i64 %1
+  %6 = getelementptr { { { i64, ptr, {} }, i64 }, { i64, [4 x i64] }, { { { i32, i16, [1 x i16] }, i64, i64, i8, [7 x i8] }, { { i32, i16, [1 x i16] }, i64, i64, i8, [7 x i8] } }, i64, { ptr, [1 x i64] } }, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 7 occurrences:
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5syv1375c7i7870jctt3co1ip.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000182(ptr %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ne i8 %2, -1
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr { i32, i32 }, ptr %0, i64 %1
+  %6 = getelementptr { i32, i32 }, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -212,12 +249,12 @@ entry:
 ; mini-lsm-rs/optimized/4xntel1vrsy72qk8.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008a(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000028a(ptr %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i8 %2, -2
+  %3 = icmp samesign ult i8 %2, -2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr { i64, i32, i32 }, ptr %0, i64 %4
-  %6 = getelementptr { i64, i32, i32 }, ptr %5, i64 %1
+  %5 = getelementptr { i64, i32, i32 }, ptr %0, i64 %1
+  %6 = getelementptr { i64, i32, i32 }, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -228,8 +265,8 @@ define ptr @func0000000000000180(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 10
   %4 = zext i1 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -28,6 +28,11 @@ func0000000000000007:                   # @func0000000000000007
 	subq	%rdi, %rax
 	shlq	$3, %rax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	movzwl	%si, %eax
+	subl	%edi, %eax
+	shlq	$32, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movzwl	%si, %eax
 	subq	%rdi, %rax

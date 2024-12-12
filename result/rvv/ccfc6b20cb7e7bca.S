@@ -24,6 +24,20 @@ func0000000000000019:                   # @func0000000000000019
 	vmerge.vvm	v8, v10, v8, v0
 	vsll.vi	v8, v8, 3
 	ret
+func0000000000000053:                   # @func0000000000000053
+	lui	a0, 1
+	addi	a0, a0, 1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsltu.vx	v0, v8, a0
+	vmerge.vvm	v8, v10, v8, v0
+	vsll.vi	v8, v8, 3
+	ret
+func0000000000000050:                   # @func0000000000000050
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsleu.vi	v0, v8, 7
+	vmerge.vvm	v8, v10, v8, v0
+	vsll.vi	v8, v8, 23
+	ret
 func0000000000000012:                   # @func0000000000000012
 	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma

@@ -6,7 +6,7 @@ func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.f.xu.v	v10, v10
 	vfmul.vf	v10, v10, fa5
-	vmfeq.vv	v0, v10, v8
+	vmfeq.vv	v0, v8, v10
 	ret
 .LCPI1_0:
 	.word	0x3b808081                      # float 0.00392156886

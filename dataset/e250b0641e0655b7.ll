@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/cuddLinear.c.ll
@@ -8,6 +8,8 @@
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/cuddZddLin.c.ll
 ; abc/optimized/cuddZddReord.c.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; linux/optimized/dm-table.ll
 ; ruby/optimized/io.ll
 ; slurm/optimized/controller.ll
@@ -49,7 +51,8 @@ entry:
   ret i32 %5
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

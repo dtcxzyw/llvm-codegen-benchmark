@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; c3c/optimized/sema_types.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -20,6 +20,7 @@
 ; fmt/optimized/compile-test.cc.ll
 ; hermes/optimized/InstSimplify.cpp.ll
 ; icu/optimized/normalizer2impl.ll
+; icu/optimized/ubidiwrt.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tcp_input.ll
@@ -29,8 +30,6 @@
 ; minetest/optimized/serverenvironment.cpp.ll
 ; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/reflection.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
 ; postgres/optimized/gistget.ll
 ; re2/optimized/prog.cc.ll
 ; slurm/optimized/step_mgr.ll
@@ -44,19 +43,18 @@
 define i1 @func000000000000000c(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 47 occurrences:
+; 45 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/InstSimplify.cpp.ll
 ; jq/optimized/decNumber.ll
-; lief/optimized/psa_crypto_aead.c.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/intel_pch.ll
 ; linux/optimized/virtio_input.ll
@@ -74,9 +72,9 @@ entry:
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/ValueLattice.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_draw_image.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-hebrew.ll
 ; openjdk/optimized/reflection.ll
 ; openssl/optimized/libssl-lib-statem_dtls.ll
@@ -84,7 +82,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/util.ll
 ; php/optimized/zend_compile.ll
-; spike/optimized/f16_classify.ll
 ; wireshark/optimized/packet-at.c.ll
 ; wireshark/optimized/packet-btatt.c.ll
 ; wireshark/optimized/packet-bthfp.c.ll
@@ -102,44 +99,19 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; openjdk/optimized/classLoaderExt.ll
-; spike/optimized/f16_classify.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 14 occurrences:
-; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; linux/optimized/hdac_device.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/DAGISelMatcher.cpp.ll
-; llvm/optimized/LegalizeVectorOps.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; postgres/optimized/print.ll
-; wireshark/optimized/packet-ieee80211-radio.c.ll
-; wolfssl/optimized/ssl.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i16 %2) #0 {
-entry:
-  %3 = icmp ult i16 %2, 8
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -150,8 +122,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp sgt i16 %2, -1
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -167,8 +139,29 @@ entry:
 define i1 @func0000000000000008(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 70
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 11 occurrences:
+; icu/optimized/ubidiwrt.ll
+; linux/optimized/hdac_device.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; llvm/optimized/DAGISelMatcher.cpp.ll
+; llvm/optimized/LegalizeVectorOps.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; postgres/optimized/print.ll
+; wolfssl/optimized/ssl.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i1 %1, i16 %2) #0 {
+entry:
+  %3 = icmp ult i16 %2, -8
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

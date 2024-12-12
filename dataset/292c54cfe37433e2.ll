@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; opencv/optimized/ransac_solvers.cpp.ll
-; osqp/optimized/amd_info.c.ll
 ; quantlib/optimized/payoffs.ll
 ; spike/optimized/interactive.ll
 ; Function Attrs: nounwind

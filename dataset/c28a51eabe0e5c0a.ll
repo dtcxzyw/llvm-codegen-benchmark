@@ -11,7 +11,7 @@ define i32 @func0000000000000075(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add nsw i32 %0, -1
   %7 = add nsw i32 %6, %5
   ret i32 %7
@@ -28,7 +28,7 @@ define i32 @func0000000000000050(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add i32 %0, 1352829926
   %7 = add i32 %6, %5
   ret i32 %7
@@ -46,13 +46,13 @@ define i32 @func0000000000000070(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add i32 %0, 1640531527
   %7 = add i32 %6, %5
   ret i32 %7
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/zip.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
@@ -60,6 +60,7 @@ entry:
 ; php/optimized/pcre2_dfa_match.ll
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
@@ -114,9 +115,22 @@ define i32 @func000000000000004d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = add nsw i32 %1, 9
   %7 = add nsw i32 %5, %6
+  ret i32 %7
+}
+
+; 1 occurrences:
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000073(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = shl nuw nsw i32 %3, 1
+  %5 = or disjoint i32 %4, %1
+  %6 = add i32 %0, 1
+  %7 = add nuw nsw i32 %6, %5
   ret i32 %7
 }
 
@@ -127,7 +141,7 @@ define i32 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = add i32 %1, -559038725
   %7 = add i32 %5, %6
   ret i32 %7

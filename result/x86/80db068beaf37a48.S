@@ -1,4 +1,27 @@
-func0000000000000211:                   # @func0000000000000211
+func0000000000000821:                   # @func0000000000000821
+	movl	$1, %eax
+	shlxl	%edx, %eax, %eax
+	testl	%eax, %esi
+	sete	%cl
+	testl	%edi, %edi
+	sete	%al
+	orb	%cl, %al
+	retq
+func000000000000098c:                   # @func000000000000098c
+	movl	$1, %eax
+	shlxl	%edx, %eax, %eax
+	andl	%esi, %eax
+	orl	%edi, %eax
+	setne	%al
+	retq
+func0000000000000d8c:                   # @func0000000000000d8c
+	movl	$1, %eax
+	shlxl	%edx, %eax, %eax
+	andl	%esi, %eax
+	orl	%edi, %eax
+	setne	%al
+	retq
+func0000000000000c21:                   # @func0000000000000c21
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	testl	%esi, %eax
@@ -7,30 +30,7 @@ func0000000000000211:                   # @func0000000000000211
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000002cc:                   # @func00000000000002cc
-	movl	$1, %eax
-	shlxl	%edx, %eax, %eax
-	andl	%esi, %eax
-	orl	%edi, %eax
-	setne	%al
-	retq
-func00000000000003cc:                   # @func00000000000003cc
-	movl	$1, %eax
-	shlxl	%edx, %eax, %eax
-	andl	%esi, %eax
-	orl	%edi, %eax
-	setne	%al
-	retq
-func0000000000000311:                   # @func0000000000000311
-	movl	$1, %eax
-	shlxl	%edx, %eax, %eax
-	testl	%esi, %eax
-	sete	%cl
-	testl	%edi, %edi
-	sete	%al
-	orb	%cl, %al
-	retq
-func00000000000003c1:                   # @func00000000000003c1
+func0000000000000d81:                   # @func0000000000000d81
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	testl	%esi, %eax

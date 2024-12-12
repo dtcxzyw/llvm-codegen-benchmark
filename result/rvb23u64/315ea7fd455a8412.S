@@ -4,12 +4,12 @@ func0000000000000100:                   # @func0000000000000100
 	sh3add	a0, a0, a1
 	addi	a0, a0, 64
 	ret
-func00000000000001aa:                   # @func00000000000001aa
+func00000000000001bf:                   # @func00000000000001bf
 	sub	a1, a1, a2
 	sh3add	a0, a0, a1
 	addi	a0, a0, 61
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000af:                   # @func00000000000000af
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -4
@@ -18,4 +18,9 @@ func00000000000001a8:                   # @func00000000000001a8
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -11
+	ret
+func00000000000001ab:                   # @func00000000000001ab
+	slli	a2, a2, 2
+	sub	a1, a1, a2
+	sh2add	a0, a0, a1
 	ret

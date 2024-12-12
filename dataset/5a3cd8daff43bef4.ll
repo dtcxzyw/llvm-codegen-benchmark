@@ -12,11 +12,11 @@
 ; openblas/optimized/dgsvj0.c.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -29,11 +29,11 @@ entry:
 ; openmpi/optimized/coll_base_allreduce.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sdiv i32 %3, 100
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
@@ -44,11 +44,11 @@ entry:
 ; opencv/optimized/guided_filter.cpp.ll
 ; openmpi/optimized/check_monitoring.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 

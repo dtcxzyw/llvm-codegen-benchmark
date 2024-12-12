@@ -31,7 +31,7 @@ define i64 @func0000000000000008(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -6
   %4 = icmp ult i32 %3, -3
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = select i1 %5, i64 0, i64 %0
   ret i64 %6
 }

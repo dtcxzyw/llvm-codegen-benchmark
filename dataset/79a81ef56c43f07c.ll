@@ -1,11 +1,12 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; linux/optimized/ata_piix.ll
 ; linux/optimized/intel_dmc.ll
 ; linux/optimized/intel_guc_ct.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; minetest/optimized/guiInventoryList.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; redis/optimized/t_stream.ll

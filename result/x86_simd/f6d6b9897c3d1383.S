@@ -30,5 +30,5 @@ func0000000000000002:                   # @func0000000000000002
 	vpcmpneqb	.LCPI1_0(%rip), %xmm1, %k1
 	vbroadcastss	.LCPI1_1(%rip), %ymm1   # ymm1 = [1024,1024,1024,1024,1024,1024,1024,1024]
 	vandps	.LCPI1_2(%rip){1to8}, %ymm2, %ymm1 {%k1}
-	vorps	%ymm0, %ymm1, %ymm0
+	vorps	%ymm1, %ymm0, %ymm0
 	retq

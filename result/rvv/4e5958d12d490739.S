@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	fli.d	fa5, 1.0
 	vfdiv.vv	v16, v16, v24
 	vfadd.vf	v16, v16, fa5
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	fli.d	fa5, -1.0
 	vmflt.vf	v0, v8, fa5
 	ret
@@ -14,7 +14,7 @@ func0000000000000008:                   # @func0000000000000008
 	fli.d	fa5, 1.0
 	vfdiv.vv	v16, v16, v24
 	vfadd.vf	v16, v16, fa5
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	fli.d	fa5, -1.0
 	vmfeq.vf	v0, v8, fa5
 	ret

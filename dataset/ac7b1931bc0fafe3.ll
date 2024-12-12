@@ -7,7 +7,7 @@ entry:
   %2 = lshr i64 %1, 20
   %3 = and i64 %2, 31
   %4 = shl nuw nsw i64 1, %3
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -29,7 +29,7 @@ entry:
   %2 = lshr i64 %1, 20
   %3 = and i64 %2, 63
   %4 = shl nuw i64 1, %3
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 

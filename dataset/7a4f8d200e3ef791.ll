@@ -9,7 +9,7 @@
 define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fmul double %3, 3.276800e+04
   %5 = fmul double %4, 3.276800e+04
   ret double %5

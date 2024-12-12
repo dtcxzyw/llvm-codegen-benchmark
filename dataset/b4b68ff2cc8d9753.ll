@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
@@ -10,14 +10,15 @@
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ba(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func00000000000000bf(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = zext i16 %1 to i64
   %5 = sub nuw nsw i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 8
-  %7 = getelementptr nusw { [3 x i64] }, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %7 = getelementptr nusw nuw { [3 x i64] }, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -25,12 +26,12 @@ entry:
 ; linux/optimized/sock_reuseport.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = zext i16 %1 to i64
   %5 = sub nsw i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 11488
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 11488
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }

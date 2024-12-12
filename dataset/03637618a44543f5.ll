@@ -1,9 +1,8 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/simSymStr.c.ll
 ; icu/optimized/utf8collationiterator.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; sentencepiece/optimized/builder.cc.ll
@@ -17,7 +16,7 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 255
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -56,7 +55,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 7
   %4 = shl nsw i32 -1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; arrow/optimized/value_parsing.cc.ll
+; 9 occurrences:
 ; cpython/optimized/_json.ll
 ; jq/optimized/jv_parse.ll
 ; linux/optimized/phy_device.ll
@@ -14,13 +13,13 @@
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, 6291456
   %5 = icmp eq i32 %4, 4194304
   ret i1 %5
 }
 
-; 14 occurrences:
+; 19 occurrences:
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/packlibs.c.ll
 ; cpython/optimized/unicodeobject.ll
@@ -32,11 +31,16 @@ entry:
 ; libphonenumber/optimized/rune.c.ll
 ; openjdk/optimized/hb-buffer.ll
 ; php/optimized/encoding.ll
-; velox/optimized/StringView.cpp.ll
 ; wireshark/optimized/packet-mtp2.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 16
   %3 = or disjoint i32 %2, %0
@@ -49,7 +53,7 @@ entry:
 ; clamav/optimized/xlm_extract.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = or i32 %2, %0
@@ -61,22 +65,23 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/escape.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, 128
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/vt.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-h223.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 8
   %3 = or disjoint i32 %2, %0
@@ -88,10 +93,10 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000d8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, 63488
   %5 = icmp ne i32 %4, 0
   ret i1 %5
@@ -100,11 +105,11 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %.masked = and i32 %0, -2048
-  %3 = or i32 %2, %.masked
+  %3 = or i32 %.masked, %2
   %4 = icmp eq i32 %3, 55296
   ret i1 %4
 }

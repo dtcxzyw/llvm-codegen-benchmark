@@ -1,4 +1,4 @@
-func0000000000000284:                   # @func0000000000000284
+func0000000000000904:                   # @func0000000000000904
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v10, a0
@@ -8,7 +8,7 @@ func0000000000000284:                   # @func0000000000000284
 	vmsltu.vv	v8, v8, v9
 	vmor.mm	v0, v8, v10
 	ret
-func00000000000002a6:                   # @func00000000000002a6
+func0000000000000946:                   # @func0000000000000946
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v10, a0
@@ -18,7 +18,7 @@ func00000000000002a6:                   # @func00000000000002a6
 	vmslt.vv	v8, v8, v9
 	vmor.mm	v0, v8, v10
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 6
 	vsetvli	zero, zero, e32, m1, ta, ma

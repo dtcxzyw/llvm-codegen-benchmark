@@ -57,11 +57,3 @@ func00000000000000cb:                   # @func00000000000000cb
 	vmflt.vv	v24, v16, v8
 	vmnot.m	v0, v24
 	ret
-func00000000000000c7:                   # @func00000000000000c7
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
-	fmv.d.x	fa5, zero
-	vmfge.vf	v0, v16, fa5
-	vmerge.vvm	v16, v24, v16, v0
-	vmfne.vv	v0, v16, v8
-	ret

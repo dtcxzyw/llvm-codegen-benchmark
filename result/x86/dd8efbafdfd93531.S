@@ -11,14 +11,14 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$61, %rax
 	setne	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movq	%rdi, %rax
 	shrq	$2, %rax
 	addq	%rdi, %rax
 	shrq	$59, %rax
 	setne	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	movq	%rdi, %rax
 	shrq	%rax
 	addq	%rdi, %rax

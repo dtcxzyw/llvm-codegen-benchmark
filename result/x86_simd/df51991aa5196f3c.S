@@ -20,7 +20,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI2_0:
 	.quad	256                             # 0x100
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsraq	$63, %ymm0, %ymm1
 	vpaddq	%ymm0, %ymm0, %ymm0
 	vpxor	%ymm1, %ymm0, %ymm0
@@ -30,7 +30,7 @@ func0000000000000014:                   # @func0000000000000014
 	retq
 .LCPI3_0:
 	.quad	126                             # 0x7e
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpsraq	$63, %ymm0, %ymm1
 	vpaddq	%ymm0, %ymm0, %ymm0
 	vpxor	%ymm1, %ymm0, %ymm0

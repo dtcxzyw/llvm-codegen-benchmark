@@ -62,6 +62,12 @@ func0000000000000051:                   # @func0000000000000051
 	addq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+func000000000000005f:                   # @func000000000000005f
+	imulq	$3600, %rdx, %rcx               # imm = 0xE10
+	imulq	$60, %rsi, %rax
+	addq	%rcx, %rax
+	addq	%rdi, %rax
+	retq
 func00000000000000e0:                   # @func00000000000000e0
 	imulq	$1734723475, %rdx, %rax         # imm = 0x6765C793
 	movl	$4195354525, %ecx               # imm = 0xFA10079D

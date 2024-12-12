@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	36                              # 0x24
+	.long	42949673                        # 0x28f5c29
 func000000000000001c:                   # @func000000000000001c
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq

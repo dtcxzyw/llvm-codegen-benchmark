@@ -1,5 +1,6 @@
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -170,13 +171,13 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000604(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000c04(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = icmp ne i32 %3, 2
   %5 = zext i1 %4 to i64
-  %6 = add i64 %5, %1
-  %7 = icmp ugt i64 %6, %0
+  %6 = add i64 %1, %5
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 

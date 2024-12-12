@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -35,14 +35,14 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI4_0:
 	.long	4294967294                      # 0xfffffffe
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm2, %ymm0
 	vpcmpgtd	.LCPI4_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

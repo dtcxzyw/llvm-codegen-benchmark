@@ -31,17 +31,17 @@
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/abcGen.c.ll
+; boost/optimized/message.ll
 ; graphviz/optimized/triang.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libjpeg-turbo/optimized/jdapistd.c.ll
 ; linux/optimized/aio.ll
-; linux/optimized/blk-settings.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
@@ -76,26 +76,26 @@ entry:
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/theory_char.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; libjpeg-turbo/optimized/jdapistd.c.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/jdmarker.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -32
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jdmarker.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -32
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_lens.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
@@ -51,7 +51,7 @@ entry:
 ; gromacs/optimized/dsyevr.cpp.ll
 ; gromacs/optimized/ssyevr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -84,13 +84,10 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
+; 1 occurrences:
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1

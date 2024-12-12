@@ -1,5 +1,5 @@
 
-; 127 occurrences:
+; 130 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/acecCore.c.ll
@@ -22,6 +22,8 @@
 ; abc/optimized/kitHop.c.ll
 ; abc/optimized/sscClass.c.ll
 ; abc/optimized/sscCore.c.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; git/optimized/diff-delta.ll
 ; git/optimized/ls-files.ll
@@ -127,15 +129,16 @@
 ; z3/optimized/theory_seq.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; z3/optimized/used_vars.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 31 occurrences:
+; 33 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -167,23 +170,29 @@ entry:
 ; msgpack/optimized/msgpack_variant_capitalize.cpp.ll
 ; msgpack/optimized/msgpack_variant_mapbased.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 7 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifMap.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -197,18 +206,20 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; abc/optimized/mpmAbc.c.ll
 ; opencv/optimized/mathfuncs.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 
@@ -218,7 +229,17 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %1, %2
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 
@@ -229,7 +250,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 

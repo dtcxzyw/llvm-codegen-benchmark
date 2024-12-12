@@ -22,16 +22,13 @@ func0000000000000005:                   # @func0000000000000005
 	fli.d	fa5, 4.0
 	fmul.d	fa0, fa0, fa5
 	ret
-.LCPI2_0:
-	.quad	0x4024000000000000              # double 10
 func000000000000000c:                   # @func000000000000000c
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa5, fa0
 	bnez	a0, .LBB2_2
 	fmv.d	fa0, fa1
 .LBB2_2:                                # %entry
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	fli.d	fa5, 0.5
 	fmul.d	fa0, fa0, fa5
 	ret
 func0000000000000004:                   # @func0000000000000004

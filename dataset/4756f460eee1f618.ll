@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 53 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; gromacs/optimized/minimize.cpp.ll
@@ -51,6 +51,8 @@
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; pbrt-v4/optimized/materials.cpp.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 106 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/decompress.c.ll
@@ -8,6 +8,7 @@
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/basic_text_wiprimitive.ll
 ; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/rarvm.cpp.ll
@@ -68,6 +69,7 @@
 ; luau/optimized/BuiltinFolding.cpp.ll
 ; luau/optimized/lbitlib.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll

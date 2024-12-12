@@ -6,7 +6,7 @@
 	.long	33899                           # 0x846b
 .LCPI0_3:
 	.long	32768                           # 0x8000
-func0000000000000296:                   # @func0000000000000296
+func0000000000000526:                   # @func0000000000000526
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [107,107,107,107,107,107,107,107]

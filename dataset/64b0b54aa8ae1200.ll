@@ -1,5 +1,6 @@
 
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/date.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
@@ -23,7 +24,7 @@
 define i8 @func000000000000000f(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl nuw nsw i8 %2, 4
-  %4 = or disjoint i8 %3, %1
+  %4 = or disjoint i8 %1, %3
   %5 = or disjoint i8 %4, %0
   ret i8 %5
 }
@@ -58,7 +59,7 @@ entry:
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 5
-  %4 = or disjoint i8 %3, %1
+  %4 = or disjoint i8 %1, %3
   %5 = or disjoint i8 %4, %0
   ret i8 %5
 }
@@ -80,7 +81,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 2
-  %4 = or i8 %3, %1
+  %4 = or i8 %1, %3
   %5 = or disjoint i8 %4, %0
   ret i8 %5
 }
@@ -91,7 +92,7 @@ entry:
 define i8 @func000000000000000e(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl nuw nsw i8 %2, 2
-  %4 = or disjoint i8 %3, %1
+  %4 = or disjoint i8 %1, %3
   %5 = or i8 %4, %0
   ret i8 %5
 }
@@ -142,7 +143,7 @@ entry:
 define i8 @func0000000000000008(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl nuw i8 %2, 6
-  %4 = or i8 %3, %1
+  %4 = or i8 %1, %3
   %5 = or i8 %4, %0
   ret i8 %5
 }
@@ -153,7 +154,7 @@ entry:
 define i8 @func000000000000000d(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl nuw nsw i8 %2, 2
-  %4 = or i8 %3, %1
+  %4 = or i8 %1, %3
   %5 = or disjoint i8 %4, %0
   ret i8 %5
 }

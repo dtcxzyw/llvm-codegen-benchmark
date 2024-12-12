@@ -12,7 +12,7 @@
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 1, i32 3
-  %2 = or i32 %.v, %1
+  %2 = or i32 %1, %.v
   ret i32 %2
 }
 
@@ -24,7 +24,7 @@ entry:
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 16777216, i32 17170432
-  %2 = or disjoint i32 %.v, %1
+  %2 = or disjoint i32 %1, %.v
   ret i32 %2
 }
 
@@ -34,7 +34,7 @@ entry:
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 16777216, i32 25165824
-  %2 = or i32 %.v, %1
+  %2 = or i32 %1, %.v
   ret i32 %2
 }
 
@@ -45,7 +45,7 @@ entry:
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 96, i32 64
-  %2 = or i32 %.v, %1
+  %2 = or i32 %1, %.v
   ret i32 %2
 }
 

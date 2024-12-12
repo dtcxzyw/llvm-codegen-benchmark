@@ -25,7 +25,7 @@ entry:
   ret i64 %5
 }
 
-; 93 occurrences:
+; 94 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcInse.c.ll
@@ -61,9 +61,12 @@ entry:
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -80,7 +83,6 @@ entry:
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dtfsm.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/copy.cpp.ll
@@ -118,7 +120,6 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/sim.ll
-; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -128,12 +129,10 @@ entry:
   ret i64 %5
 }
 
-; 28 occurrences:
+; 26 occurrences:
 ; abc/optimized/sscSim.c.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
@@ -161,20 +160,16 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
 
-; 11 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
+; 7 occurrences:
 ; gromacs/optimized/pme_spread.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; libwebp/optimized/lossless.c.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; openblas/optimized/dlasd0.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
@@ -193,7 +188,7 @@ entry:
 define i64 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

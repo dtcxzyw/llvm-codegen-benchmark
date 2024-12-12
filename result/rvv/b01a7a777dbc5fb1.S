@@ -3,6 +3,6 @@ func0000000000000000:                   # @func0000000000000000
 	vfcvt.f.x.v	v10, v10
 	fli.s	fa5, 1.0
 	vfrdiv.vf	v10, v10, fa5
-	vfmul.vv	v12, v10, v8
+	vfmul.vv	v12, v8, v10
 	vfwcvt.f.f.v	v8, v12
 	ret

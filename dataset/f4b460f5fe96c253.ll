@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0) #0 {
 entry:

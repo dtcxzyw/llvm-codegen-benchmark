@@ -1,6 +1,5 @@
 
-; 11 occurrences:
-; libquic/optimized/persistent_memory_allocator.cc.ll
+; 10 occurrences:
 ; linux/optimized/dma-resv.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/maple_tree.ll

@@ -30,7 +30,7 @@ entry:
 ; postgres/optimized/interval.ll
 ; yosys/optimized/select.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i1 true, i1 %0
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/spacer_qe_project.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i1 true, i1 %0

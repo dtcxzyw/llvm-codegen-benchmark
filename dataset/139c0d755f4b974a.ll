@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 52 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ivyDsd.c.ll
@@ -17,7 +17,6 @@
 ; just-rs/optimized/2sotx4bdu006z307.ll
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/i2c-i801.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/iosf_mbi.ll
 ; linux/optimized/xhci-ring.ll
@@ -111,8 +110,7 @@ entry:
   ret i32 %7
 }
 
-; 8 occurrences:
-; linux/optimized/intel_audio.ll
+; 7 occurrences:
 ; linux/optimized/intel_vdsc.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll

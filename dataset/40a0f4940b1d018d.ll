@@ -32,7 +32,7 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_dpll.ll
@@ -41,6 +41,7 @@ entry:
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; php/optimized/pdo_dbh.ll
 ; php/optimized/zend_inference.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:

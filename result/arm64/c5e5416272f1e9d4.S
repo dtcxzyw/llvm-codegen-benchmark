@@ -1,62 +1,36 @@
-func00000000000000d8:                   // @func00000000000000d8
+func00000000000001a8:                   // @func00000000000001a8
 // %bb.0:                               // %entry
-	movi	v3.8b, #191
-	shl	v5.4s, v1.4s, #8
-	shl	v1.4s, v2.4s, #8
-	cmhi	v0.8b, v0.8b, v3.8b
-	mvni	v3.4s, #127, msl #8
-	sshll	v0.8h, v0.8b, #0
-	sshll	v4.4s, v0.4h, #0
-	sshll2	v0.4s, v0.8h, #0
-	and	v0.16b, v0.16b, v3.16b
-	and	v2.16b, v4.16b, v3.16b
-	add	v1.4s, v1.4s, v0.4s
-	add	v0.4s, v5.4s, v2.4s
+	lsl	w8, w1, #8
+	and	w9, w0, #0xff
+	cmp	w9, #191
+	sub	w10, w8, #8, lsl #12            // =32768
+	csel	w0, w10, w8, hi
 	ret
                                         // -- End function
-func00000000000000f1:                   // @func00000000000000f1
+func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
-	movi	v3.8b, #6
-	shl	v5.4s, v1.4s, #6
-	shl	v1.4s, v2.4s, #6
-	cmeq	v0.8b, v0.8b, v3.8b
-	movi	v3.4s, #128
-	sshll	v0.8h, v0.8b, #0
-	sshll	v4.4s, v0.4h, #0
-	sshll2	v0.4s, v0.8h, #0
-	and	v0.16b, v0.16b, v3.16b
-	and	v2.16b, v4.16b, v3.16b
-	add	v1.4s, v1.4s, v0.4s
-	add	v0.4s, v5.4s, v2.4s
+	lsl	w8, w1, #6
+	and	w9, w0, #0xff
+	cmp	w9, #6
+	add	w10, w8, #128
+	csel	w0, w10, w8, eq
 	ret
                                         // -- End function
-func000000000000005a:                   // @func000000000000005a
+func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
-	movi	v3.8b, #52
-	add	v4.4s, v1.4s, v1.4s
-	add	v1.4s, v2.4s, v2.4s
-	cmgt	v0.8b, v0.8b, v3.8b
-	sshll	v0.8h, v0.8b, #0
-	sshll	v3.4s, v0.4h, #0
-	sshll2	v0.4s, v0.8h, #0
-	bic	v0.4s, #8
-	bic	v3.4s, #8
-	add	v1.4s, v1.4s, v0.4s
-	add	v0.4s, v4.4s, v3.4s
+	sxtb	w8, w0
+	lsl	w9, w1, #1
+	sub	w10, w9, #9
+	cmp	w8, #52
+	csel	w0, w10, w9, gt
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v3.8b, #80
-	shl	v4.4s, v1.4s, #3
-	shl	v1.4s, v2.4s, #3
-	cmeq	v0.8b, v0.8b, v3.8b
-	sshll	v0.8h, v0.8b, #0
-	sshll	v3.4s, v0.4h, #0
-	sshll2	v0.4s, v0.8h, #0
-	bic	v0.4s, #3
-	bic	v3.4s, #3
-	add	v1.4s, v1.4s, v0.4s
-	add	v0.4s, v4.4s, v3.4s
+	lsl	w8, w1, #3
+	and	w9, w0, #0xff
+	cmp	w9, #80
+	sub	w10, w8, #4
+	csel	w0, w10, w8, eq
 	ret
                                         // -- End function

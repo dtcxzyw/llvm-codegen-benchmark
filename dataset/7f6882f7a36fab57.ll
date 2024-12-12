@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; folly/optimized/Checksum.cpp.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; linux/optimized/coalesce.ll
@@ -8,7 +8,6 @@
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_hotplug.ll
-; linux/optimized/intel_hti.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -29,7 +28,7 @@ define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -40,7 +39,7 @@ define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -52,7 +51,7 @@ define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -67,7 +66,7 @@ define i32 @func000000000000000e(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = trunc nuw i64 %2 to i32
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

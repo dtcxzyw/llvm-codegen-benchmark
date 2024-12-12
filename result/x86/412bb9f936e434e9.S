@@ -1,4 +1,4 @@
-func0000000000000544:                   # @func0000000000000544
+func0000000000001484:                   # @func0000000000001484
 	addl	$-58, %esi
 	cmpl	$-10, %esi
 	setb	%cl
@@ -7,7 +7,7 @@ func0000000000000544:                   # @func0000000000000544
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addl	$-97, %esi
 	cmpl	$7964, %esi                     # imm = 0x1F1C
 	setb	%cl
@@ -16,14 +16,14 @@ func0000000000000044:                   # @func0000000000000044
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000002cc:                   # @func00000000000002cc
+func000000000000098c:                   # @func000000000000098c
 	cmpl	$1, %esi
 	setne	%cl
 	cmpl	$-2, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000541:                   # @func0000000000000541
+func0000000000001481:                   # @func0000000000001481
 	addl	$-13, %esi
 	cmpl	$4, %esi
 	setb	%cl
@@ -31,7 +31,7 @@ func0000000000000541:                   # @func0000000000000541
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+func000000000000050c:                   # @func000000000000050c
 	addl	$-28, %esi
 	cmpl	$-14, %esi
 	setb	%cl
@@ -39,7 +39,7 @@ func000000000000018c:                   # @func000000000000018c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000004c8:                   # @func00000000000004c8
+func0000000000001188:                   # @func0000000000001188
 	cmpl	$1, %esi
 	setne	%cl
 	addl	$-3, %edi
@@ -47,14 +47,14 @@ func00000000000004c8:                   # @func00000000000004c8
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000005c1:                   # @func00000000000005c1
+func0000000000001581:                   # @func0000000000001581
 	cmpl	$54, %esi
 	setne	%cl
 	cmpl	$44, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	cmpl	$1, %esi
 	setne	%cl
 	cmpl	$4, %edi

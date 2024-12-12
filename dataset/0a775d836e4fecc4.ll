@@ -16,10 +16,9 @@ entry:
   ret ptr %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; postgres/optimized/brin.ll
 ; postgres/optimized/extended_stats.ll
-; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:

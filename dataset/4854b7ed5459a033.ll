@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 19 occurrences:
+; boost/optimized/url_impl.ll
 ; clamav/optimized/hwp.c.ll
 ; libsodium/optimized/libsodium_la-poly1305_donna.ll
 ; llvm/optimized/DWARFDebugArangeSet.cpp.ll
@@ -15,12 +16,15 @@
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wolfssl/optimized/poly1305.c.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 -2, i64 -1
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -51,7 +55,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 -3, i64 -2
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -70,6 +74,29 @@ entry:
   ret i64 %6
 }
 
+; 12 occurrences:
+; assimp/optimized/AMFImporter.cpp.ll
+; assimp/optimized/ColladaParser.cpp.ll
+; assimp/optimized/D3MFImporter.cpp.ll
+; assimp/optimized/D3MFOpcPackage.cpp.ll
+; assimp/optimized/IRRLoader.cpp.ll
+; assimp/optimized/IRRMeshLoader.cpp.ll
+; assimp/optimized/OgreImporter.cpp.ll
+; assimp/optimized/OgreXmlSerializer.cpp.ll
+; assimp/optimized/X3DImporter.cpp.ll
+; assimp/optimized/XGLLoader.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; pugixml/optimized/pugixml.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000a0(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = icmp sgt i8 %2, -1
+  %4 = select i1 %3, i64 1, i64 2
+  %5 = add i64 %4, %1
+  %6 = add i64 %0, %5
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
@@ -78,7 +105,7 @@ entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 128, i64 96
   %5 = add nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

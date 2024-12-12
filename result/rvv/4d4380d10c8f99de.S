@@ -7,11 +7,10 @@ func000000000000006c:                   # @func000000000000006c
 	vand.vx	v8, v8, a0
 	ret
 func0000000000000000:                   # @func0000000000000000
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v8, v8, 7
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 2
-	vand.vi	v8, v10, -2
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 0
+	vadd.vi	v8, v10, 7
+	vand.vi	v8, v8, -8
 	ret
 func0000000000000020:                   # @func0000000000000020
 	vsetivli	zero, 4, e32, m1, ta, ma

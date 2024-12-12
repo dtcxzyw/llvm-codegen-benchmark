@@ -16,11 +16,10 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/cuddLinear.c.ll
 ; cpython/optimized/_datetimemodule.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; openusd/optimized/warped_motion.c.ll

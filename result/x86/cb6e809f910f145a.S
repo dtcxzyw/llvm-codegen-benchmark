@@ -7,6 +7,6 @@ func0000000000000004:                   # @func0000000000000004
 	shlxq	%rdi, %rsi, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	movzbl	%sil, %eax
-	shlxq	%rdi, %rax, %rax
+	andl	$1, %esi
+	shlxq	%rdi, %rsi, %rax
 	retq

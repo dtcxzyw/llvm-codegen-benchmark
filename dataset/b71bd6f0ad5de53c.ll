@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; minetest/optimized/server.cpp.ll
+; 3 occurrences:
 ; minetest/optimized/serverenvironment.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_copy.cpp.ll
@@ -9,18 +8,7 @@ define i1 @func0000000000000002(i16 %0) #0 {
 entry:
   %1 = sitofp i16 %0 to float
   %2 = fmul float %1, 1.000000e+01
-  %3 = fcmp olt float %2, -3.100750e+05
-  ret i1 %3
-}
-
-; 1 occurrences:
-; minetest/optimized/server.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0) #0 {
-entry:
-  %1 = sitofp i16 %0 to float
-  %2 = fmul float %1, 1.000000e+01
-  %3 = fcmp ogt float %2, 3.100750e+05
+  %3 = fcmp olt float %2, 0.000000e+00
   ret i1 %3
 }
 

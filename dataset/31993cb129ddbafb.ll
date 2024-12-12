@@ -1,5 +1,5 @@
 
-; 193 occurrences:
+; 208 occurrences:
 ; abseil-cpp/optimized/memory_test.cc.ll
 ; actix-rs/optimized/3arfg1ogrgyw4qv2.ll
 ; clamav/optimized/extract.cpp.ll
@@ -8,7 +8,6 @@
 ; flac/optimized/decode.c.ll
 ; flac/optimized/stream_decoder.c.ll
 ; git/optimized/fetch.ll
-; git/optimized/kwset.ll
 ; git/optimized/refs.ll
 ; gromacs/optimized/mdoutf.cpp.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -16,12 +15,7 @@
 ; icu/optimized/uresbund.ll
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/arp.ll
-; linux/optimized/filter.ll
-; linux/optimized/keyctl.ll
-; linux/optimized/libata-acpi.ll
 ; linux/optimized/mempolicy.ll
-; linux/optimized/nfs3xdr.ll
-; linux/optimized/virtio_scsi.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -35,6 +29,7 @@
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; llvm/optimized/DeadStoresChecker.cpp.ll
+; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
 ; llvm/optimized/IdenticalExprChecker.cpp.ll
@@ -92,6 +87,7 @@
 ; openssl/optimized/libssl-shlib-quic_record_rx.ll
 ; openssl/optimized/libssl-shlib-quic_record_tx.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
+; openusd/optimized/av1_dx_iface.c.ll
 ; php/optimized/array.ll
 ; php/optimized/basic_functions.ll
 ; php/optimized/file.ll
@@ -115,7 +111,6 @@
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
-; velox/optimized/Filter.cpp.ll
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; wireshark/optimized/epan.c.ll
@@ -187,16 +182,48 @@
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/packet-z3950.c.ll
 ; wireshark/optimized/packet.c.ll
+; wireshark/optimized/packet_list.cpp.ll
 ; wireshark/optimized/semcheck.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
 ; wireshark/optimized/tshark.c.ll
 ; wireshark/optimized/tvbuff_lz77.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; wireshark/optimized/tvbuff_lznt1.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2bmd7m579qu61sjfzthhk5yj1.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5c6qu0nt7rwrjz6em8cry1wl2.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5ixvfce98s1x7yb9webqub3ar.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
+; zed-rs/optimized/8h2d4a3i3ysegc1cht5hd5uc2.ll
+; zed-rs/optimized/8ncehfng1y5s06ypbycx8606d.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/dbwuhn7ob83o6nu68k5f1g4py.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(i32 %0, ptr %1) #0 {
+define ptr @func0000000000000061(i32 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 44
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 44
+  %3 = icmp eq i32 %0, 0
+  %4 = select i1 %3, ptr null, ptr %2
+  ret ptr %4
+}
+
+; 2 occurrences:
+; git/optimized/kwset.ll
+; velox/optimized/Filter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(i32 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -32
   %3 = icmp eq i32 %0, 0
   %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4
@@ -223,7 +250,7 @@ entry:
   ret ptr %4
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; casadi/optimized/options.cpp.ll
 ; cmake/optimized/cmCTestGenericHandler.cxx.ll
 ; cmake/optimized/cmCacheManager.cxx.ll
@@ -246,48 +273,12 @@ entry:
 ; openexr/optimized/ImfFrameBuffer.cpp.ll
 ; proxygen/optimized/HTTPMessage.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; sentencepiece/optimized/repeated_field.cc.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(i32 %0, ptr %1) #0 {
+define ptr @func0000000000000066(i32 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 64
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 64
   %3 = icmp slt i32 %0, 0
-  %4 = select i1 %3, ptr null, ptr %2
-  ret ptr %4
-}
-
-; 25 occurrences:
-; hyperscan/optimized/rose_build_add.cpp.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/rose_build_dedupe.cpp.ll
-; hyperscan/optimized/rose_build_matchers.cpp.ll
-; llvm/optimized/ASTMatchersInternal.cpp.ll
-; llvm/optimized/CGDecl.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
-; llvm/optimized/IndexBody.cpp.ll
-; llvm/optimized/RecordLayoutBuilder.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/Sema.cpp.ll
-; llvm/optimized/SemaAPINotes.cpp.ll
-; llvm/optimized/SemaCXXScopeSpec.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/SemaCodeComplete.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclObjC.cpp.ll
-; llvm/optimized/SemaLookup.cpp.ll
-; llvm/optimized/SemaObjCProperty.cpp.ll
-; llvm/optimized/SemaStmtAsm.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SimpleLoopUnswitch.cpp.ll
-; llvm/optimized/StandardInstrumentations.cpp.ll
-; llvm/optimized/UninitializedObjectChecker.cpp.ll
-; zxing/optimized/QRVersion.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000024(i32 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 -64
-  %3 = icmp ult i32 %0, -4
   %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4
 }
@@ -295,7 +286,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/VPlanAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002c(i32 %0, ptr %1) #0 {
+define ptr @func000000000000004c(i32 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -40
   %.not = icmp eq i32 %0, 0
@@ -303,15 +294,51 @@ entry:
   ret ptr %3
 }
 
+; 1 occurrences:
+; sentencepiece/optimized/repeated_field.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000046(i32 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -8
+  %3 = icmp slt i32 %0, 1
+  %4 = select i1 %3, ptr null, ptr %2
+  ret ptr %4
+}
+
 ; 3 occurrences:
 ; protobuf/optimized/parse_context.cc.ll
 ; sentencepiece/optimized/parse_context.cc.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i32 %0, ptr %1) #0 {
+define ptr @func0000000000000068(i32 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 5
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 5
   %3 = icmp ugt i32 %0, 2147483631
+  %4 = select i1 %3, ptr null, ptr %2
+  ret ptr %4
+}
+
+; 1 occurrences:
+; zxing/optimized/QRVersion.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000044(i32 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -120
+  %3 = icmp ult i32 %0, -40
+  %4 = select i1 %3, ptr null, ptr %2
+  ret ptr %4
+}
+
+; 4 occurrences:
+; hyperscan/optimized/rose_build_add.cpp.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; hyperscan/optimized/rose_build_dedupe.cpp.ll
+; hyperscan/optimized/rose_build_matchers.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000064(i32 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %3 = icmp ult i32 %0, 8
   %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4
 }

@@ -1,26 +1,18 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	orq	%rsi, %rax
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000007c:                   # @func000000000000007c
+func00000000000000ec:                   # @func00000000000000ec
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	orq	%rsi, %rax
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000074:                   # @func0000000000000074
-	movzbl	%dl, %eax
-	shll	$8, %eax
-	orq	%rsi, %rax
-	cmpq	$257, %rax                      # imm = 0x101
-	setb	%al
-	andb	%dil, %al
-	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	shll	$24, %edx
 	orq	%rsi, %rdx
 	sete	%al

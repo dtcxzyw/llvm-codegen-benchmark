@@ -51,7 +51,7 @@ entry:
   ret i64 %6
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/aspack.c.ll
@@ -60,6 +60,7 @@ entry:
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; lief/optimized/poly1305.c.ll
+; lvgl/optimized/lv_table.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; qemu/optimized/hw_intc_riscv_imsic.c.ll

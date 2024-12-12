@@ -1,4 +1,4 @@
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	addiw	a2, a2, -128
 	sub	a1, a1, a0
 	slt	a0, a1, a2
@@ -9,7 +9,7 @@ func0000000000000008:                   # @func0000000000000008
 	sub	a1, a1, a0
 	sltu	a0, a2, a1
 	ret
-func00000000000001c4:                   # @func00000000000001c4
+func0000000000000384:                   # @func0000000000000384
 	addiw	a2, a2, 1
 	sub	a1, a1, a0
 	sltu	a0, a1, a2
@@ -20,7 +20,7 @@ func0000000000000006:                   # @func0000000000000006
 	sub	a1, a1, a0
 	slt	a0, a1, a2
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	addiw	a2, a2, -4
 	sub	a1, a1, a0
 	sltu	a0, a1, a2
@@ -38,40 +38,40 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a1, a1, a2
 	seqz	a0, a1
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	addiw	a2, a2, -4
 	sub	a1, a1, a0
 	xor	a1, a1, a2
 	seqz	a0, a1
 	ret
-func00000000000001c8:                   # @func00000000000001c8
+func0000000000000388:                   # @func0000000000000388
 	addiw	a2, a2, 1
 	sub	a1, a1, a0
 	sltu	a0, a2, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addi	a2, a2, 1
 	zext.w	a2, a2
 	sub	a1, a1, a0
 	sltu	a0, a1, a2
 	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	addi	a2, a2, -1
 	zext.w	a2, a2
 	sub	a1, a1, a0
 	sltu	a0, a2, a1
 	ret
-func00000000000001c6:                   # @func00000000000001c6
+func0000000000000386:                   # @func0000000000000386
 	addiw	a2, a2, 1
 	sub	a1, a1, a0
 	slt	a0, a1, a2
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	addiw	a2, a2, -20
 	sub	a1, a1, a0
 	slt	a0, a2, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	addiw	a2, a2, -3
 	sub	a1, a1, a0
 	xor	a1, a1, a2

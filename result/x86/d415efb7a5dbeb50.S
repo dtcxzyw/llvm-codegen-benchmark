@@ -1,8 +1,9 @@
 func000000000000001f:                   # @func000000000000001f
+	movl	%edi, %eax
 	andl	$7, %esi
-	shll	$10, %esi
-	shll	$14, %edi
-	leal	(%rdi,%rsi), %eax
+	shll	$18, %esi
+	shll	$12, %eax
+	orl	%esi, %eax
 	retq
 func0000000000000017:                   # @func0000000000000017
 	movl	%edi, %eax

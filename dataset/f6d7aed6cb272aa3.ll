@@ -1,7 +1,7 @@
 
-%struct.FreePageBtreeLeafKey.3469829 = type { i64, i64 }
+%struct.FreePageBtreeLeafKey.3653935 = type { i64, i64 }
 
-; 13 occurrences:
+; 18 occurrences:
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; regex-rs/optimized/3ixfkxlmcuecmmus.ll
@@ -15,8 +15,13 @@
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/d2w35dg2d82avud97ap9t4v42.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(i64 %0, ptr %1) #0 {
+define ptr @func0000000000000041(i64 %0, ptr %1) #0 {
 entry:
   %2 = add i64 %0, -1
   %3 = getelementptr nusw [0 x { { i8, [15 x i8] }, { i32, i16, i16 }, i32, i8, [3 x i8] }], ptr %1, i64 0, i64 %2
@@ -31,7 +36,7 @@ entry:
 define ptr @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = add i64 %0, -1
-  %3 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3469829], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3653935], ptr %1, i64 0, i64 %2
   %4 = icmp eq i64 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5

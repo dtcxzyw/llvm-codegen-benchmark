@@ -1,90 +1,84 @@
 func0000000000000002:                   # @func0000000000000002
 	addl	$4, %edx
-	cmpq	%rsi, %rdx
-	sete	%al
-	orb	%dil, %al
-	retq
-func0000000000000072:                   # @func0000000000000072
-	decl	%edx
-	cmpq	%rsi, %rdx
-	setbe	%al
-	orb	%dil, %al
-	retq
-func0000000000000012:                   # @func0000000000000012
-	decl	%edx
-	cmpq	%rsi, %rdx
-	setbe	%al
-	orb	%dil, %al
-	retq
-func0000000000000022:                   # @func0000000000000022
-	decl	%edx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
 func0000000000000042:                   # @func0000000000000042
 	decl	%edx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000062:                   # @func0000000000000062
+func0000000000000082:                   # @func0000000000000082
 	decl	%edx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000000c2:                   # @func00000000000000c2
+	decl	%edx
+	cmpq	%rdx, %rsi
+	sete	%al
+	orb	%dil, %al
+	retq
+func00000000000001c8:                   # @func00000000000001c8
 	addl	$10, %edx
-	cmpq	%rsi, %rdx
-	seta	%al
+	cmpq	%rdx, %rsi
+	setb	%al
+	orb	%dil, %al
+	retq
+func00000000000000d2:                   # @func00000000000000d2
+	decl	%edx
+	cmpq	%rdx, %rsi
+	setae	%al
+	orb	%dil, %al
+	retq
+func0000000000000012:                   # @func0000000000000012
+	decl	%edx
+	cmpq	%rdx, %rsi
+	setae	%al
 	orb	%dil, %al
 	retq
 func0000000000000010:                   # @func0000000000000010
 	addl	$6, %edx
-	cmpq	%rsi, %rdx
-	setb	%al
+	cmpq	%rdx, %rsi
+	seta	%al
 	orb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	addl	$3, %edx
-	cmpq	%rsi, %rdx
-	seta	%al
+	cmpq	%rdx, %rsi
+	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000d8:                   # @func00000000000000d8
 	decl	%edx
-	cmpq	%rsi, %rdx
-	setne	%al
-	orb	%dil, %al
-	retq
-func0000000000000058:                   # @func0000000000000058
-	decl	%edx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	incl	%edx
-	cmpq	%rsi, %rdx
-	setae	%al
+	cmpq	%rdx, %rsi
+	setbe	%al
 	orb	%dil, %al
 	retq
-func0000000000000070:                   # @func0000000000000070
+func00000000000000d0:                   # @func00000000000000d0
 	decl	%edx
-	cmpq	%rsi, %rdx
-	setb	%al
+	cmpq	%rdx, %rsi
+	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	decl	%edx
-	cmpq	%rsi, %rdx
-	setb	%al
+	cmpq	%rdx, %rsi
+	seta	%al
 	orb	%dil, %al
 	retq
 func0000000000000018:                   # @func0000000000000018
 	incl	%edx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq

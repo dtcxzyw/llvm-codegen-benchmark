@@ -1,44 +1,45 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	movi	v5.8b, #92
-	cmeq	v4.8b, v4.8b, v5.8b
-	sshll	v4.8h, v4.8b, #0
-	saddw	v2.4s, v2.4s, v4.4h
-	saddw2	v3.4s, v3.4s, v4.8h
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	and	w8, w2, #0xff
+	cmp	w8, #92
+	cset	w8, eq
+	sub	w8, w1, w8
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	movi	v5.8b, #92
-	cmeq	v4.8b, v4.8b, v5.8b
-	sshll	v4.8h, v4.8b, #0
-	saddw	v2.4s, v2.4s, v4.4h
-	saddw2	v3.4s, v3.4s, v4.8h
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	and	w8, w2, #0xff
+	cmp	w8, #92
+	cset	w8, eq
+	sub	w8, w1, w8
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	movi	v5.8b, #90
-	cmeq	v4.8b, v4.8b, v5.8b
-	sshll	v4.8h, v4.8b, #0
-	saddw	v2.4s, v2.4s, v4.4h
-	saddw2	v3.4s, v3.4s, v4.8h
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	and	w8, w2, #0xff
+	cmp	w8, #90
+	cset	w8, eq
+	sub	w8, w1, w8
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000045:                   // @func0000000000000045
 // %bb.0:                               // %entry
-	movi	v5.8b, #3
-	cmhi	v4.8b, v5.8b, v4.8b
-	sshll	v4.8h, v4.8b, #0
-	saddw	v2.4s, v2.4s, v4.4h
-	saddw2	v3.4s, v3.4s, v4.8h
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	and	w8, w2, #0xff
+	cmp	w8, #3
+	cset	w8, lo
+	sub	w8, w1, w8
+	add	w0, w0, w8
+	ret
+                                        // -- End function
+func0000000000000145:                   // @func0000000000000145
+// %bb.0:                               // %entry
+	and	w8, w2, #0xff
+	cmp	w8, #3
+	cset	w8, lo
+	sub	w8, w1, w8
+	add	w0, w0, w8
 	ret
                                         // -- End function

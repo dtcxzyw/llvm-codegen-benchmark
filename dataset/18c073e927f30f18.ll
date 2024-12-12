@@ -1,7 +1,6 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; faiss/optimized/ScalarQuantizer.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll

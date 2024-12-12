@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 29 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/acecCo.c.ll
@@ -21,12 +21,14 @@
 ; cvc5/optimized/SimpSolver.cc.ll
 ; icu/optimized/bmpset.ll
 ; linux/optimized/percpu.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; nanosvg/optimized/nanosvg.ll
 ; php/optimized/zend_alloc.ll
 ; soc-simulator/optimized/verilated.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; yosys/optimized/SimpSolver.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -64,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/mapgen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, %1
   ret i1 %2
@@ -73,7 +75,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/callnode.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = ashr i32 %0, 16
@@ -84,14 +86,15 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/X11SurfaceData.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, %1
   ret i1 %2
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/rational.ll
 ; gromacs/optimized/cstringutil.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/OptEmitter.cpp.ll
@@ -99,7 +102,7 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, %1
   ret i1 %2
@@ -153,7 +156,7 @@ entry:
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %.unshifted = xor i32 %0, %1
   %2 = icmp ult i32 %.unshifted, 65536
@@ -163,7 +166,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = ashr i32 %0, 16

@@ -85,10 +85,34 @@ func0000000000000013:                   # @func0000000000000013
 	cmovael	%esi, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000053:                   # @func0000000000000053
+	cmpl	$10, %edx
+	movl	$1, %eax
+	cmovael	%esi, %eax
+	addl	%edi, %eax
+	retq
 func0000000000000028:                   # @func0000000000000028
-	cmpl	$1980, %edx                     # imm = 0x7BC
-	movl	$-3880, %eax                    # imm = 0xF0D8
+	cmpl	$100, %edx
+	movl	$5, %eax
 	cmovll	%esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000023:                   # @func0000000000000023
+	cmpl	$10001, %edx                    # imm = 0x2711
+	movl	$1023, %eax                     # imm = 0x3FF
+	cmovbl	%esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000051:                   # @func0000000000000051
+	cmpl	$2, %edx
+	movl	$3, %eax
+	cmovael	%esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000050:                   # @func0000000000000050
+	cmpl	$128, %edx
+	movl	$1, %eax
+	cmovael	%esi, %eax
 	addl	%edi, %eax
 	retq
 func0000000000000021:                   # @func0000000000000021

@@ -18,3 +18,16 @@ func0000000000000004:                   # @func0000000000000004
 	sltu	a0, a1, a0
 	neg	a0, a0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
+	mv	a1, a2
+.LBB2_2:                                # %entry
+	lui	a0, 45475
+	addiw	a0, a0, -1085
+	slli	a0, a0, 12
+	addi	a0, a0, -315
+	slli	a0, a0, 17
+	sltu	a0, a1, a0
+	neg	a0, a0
+	ret

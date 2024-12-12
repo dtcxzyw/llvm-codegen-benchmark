@@ -18,13 +18,13 @@ func0000000000000014:                   # @func0000000000000014
 	setge	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpl	$256, %esi                      # imm = 0x100
-	setb	%al
-	andb	%dil, %al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	testl	%esi, %esi
 	sets	%al
+	andb	%dil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpl	$-95, %esi
+	setb	%al
 	andb	%dil, %al
 	retq

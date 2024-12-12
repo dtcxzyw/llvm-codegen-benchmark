@@ -11,7 +11,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %.not = add i64 %1, -1
-  %2 = and i64 %.not, %0
+  %2 = and i64 %0, %.not
   ret i64 %2
 }
 

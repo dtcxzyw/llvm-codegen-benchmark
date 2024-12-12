@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sub	a1, a1, a2
 	li	a2, -1
 	srli	a2, a2, 4
@@ -18,15 +18,42 @@ func0000000000000008:                   # @func0000000000000008
 	sub	a2, a2, a0
 	sltu	a0, a1, a2
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	sub	a1, a1, a2
 	li	a2, 3
 	sub	a2, a2, a0
 	sltu	a0, a1, a2
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	sub	a1, a1, a2
 	li	a2, 4
+	sub	a2, a2, a0
+	sltu	a0, a2, a1
+	ret
+func0000000000000104:                   # @func0000000000000104
+	sub	a1, a1, a2
+	li	a2, -1
+	srli	a2, a2, 1
+	xor	a0, a0, a2
+	sltu	a0, a0, a1
+	ret
+func00000000000000a8:                   # @func00000000000000a8
+	sub	a1, a1, a2
+	li	a2, 65
+	sub	a2, a2, a0
+	sltu	a0, a1, a2
+	ret
+func00000000000000a4:                   # @func00000000000000a4
+	sub	a1, a1, a2
+	li	a2, -1
+	srli	a2, a2, 4
+	sub	a2, a2, a0
+	sltu	a0, a2, a1
+	ret
+func00000000000001a4:                   # @func00000000000001a4
+	sub	a1, a1, a2
+	li	a2, -1
+	srli	a2, a2, 4
 	sub	a2, a2, a0
 	sltu	a0, a2, a1
 	ret
@@ -36,37 +63,4 @@ func0000000000000084:                   # @func0000000000000084
 	srli	a2, a2, 1
 	xor	a0, a0, a2
 	sltu	a0, a0, a1
-	ret
-func0000000000000058:                   # @func0000000000000058
-	sub	a1, a1, a2
-	li	a2, 65
-	sub	a2, a2, a0
-	sltu	a0, a1, a2
-	ret
-func0000000000000054:                   # @func0000000000000054
-	sub	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 4
-	sub	a2, a2, a0
-	sltu	a0, a2, a1
-	ret
-func00000000000000d4:                   # @func00000000000000d4
-	sub	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 4
-	sub	a2, a2, a0
-	sltu	a0, a2, a1
-	ret
-func0000000000000044:                   # @func0000000000000044
-	sub	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a0, a0, a2
-	sltu	a0, a0, a1
-	ret
-func0000000000000018:                   # @func0000000000000018
-	sub	a1, a1, a2
-	li	a2, 11
-	sub	a2, a2, a0
-	sltu	a0, a1, a2
 	ret

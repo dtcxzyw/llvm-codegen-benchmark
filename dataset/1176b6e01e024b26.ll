@@ -1,7 +1,8 @@
 
-; 32 occurrences:
+; 34 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; eastl/optimized/TestBitset.cpp.ll
+; hermes/optimized/JSParserImpl-flow.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
@@ -31,6 +32,7 @@
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; nix/optimized/fetchers.ll
 ; openvdb/optimized/AttributeSet.cc.ll
 ; Function Attrs: nounwind
 define { i64, i8 } @func0000000000000000(i64 %0, i8 %1) #0 {

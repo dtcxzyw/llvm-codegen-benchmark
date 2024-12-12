@@ -1,5 +1,5 @@
 
-; 252 occurrences:
+; 251 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -85,7 +85,6 @@
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/strset.ll
 ; linux/optimized/util.ll
-; linux/optimized/utownerid.ll
 ; linux/optimized/xfrm_user.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/Archive.cpp.ll
@@ -96,6 +95,7 @@
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; minetest/optimized/inventorymanager.cpp.ll
@@ -156,7 +156,6 @@
 ; wireshark/optimized/packet-afp.c.ll
 ; wireshark/optimized/packet-ajp13.c.ll
 ; wireshark/optimized/packet-aol.c.ll
-; wireshark/optimized/packet-asap.c.ll
 ; wireshark/optimized/packet-batadv.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-bt-utp.c.ll
@@ -176,7 +175,6 @@
 ; wireshark/optimized/packet-eap.c.ll
 ; wireshark/optimized/packet-ecmp.c.ll
 ; wireshark/optimized/packet-enip.c.ll
-; wireshark/optimized/packet-enrp.c.ll
 ; wireshark/optimized/packet-enttec.c.ll
 ; wireshark/optimized/packet-extreme.c.ll
 ; wireshark/optimized/packet-fp_hint.c.ll
@@ -225,7 +223,6 @@
 ; wireshark/optimized/packet-rtcp.c.ll
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
-; wireshark/optimized/packet-scriptingservice.c.ll
 ; wireshark/optimized/packet-sctp.c.ll
 ; wireshark/optimized/packet-ses.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
@@ -250,6 +247,8 @@
 ; wireshark/optimized/tap-macltestat.c.ll
 ; wireshark/optimized/tap-rlcltestat.c.ll
 ; z3/optimized/theory_array_full.cpp.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -260,8 +259,10 @@ entry:
   ret i32 %2
 }
 
-; 117 occurrences:
+; 122 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/test_iostream.ll
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/archive_string.c.ll
@@ -288,7 +289,6 @@ entry:
 ; linux/optimized/amd.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/eht.ll
 ; linux/optimized/hygon.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/lib.ll
@@ -315,7 +315,6 @@ entry:
 ; minetest/optimized/treegen.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/mat.cpp.ll
-; nuttx/optimized/sched_getscheduler.c.ll
 ; openjdk/optimized/hb-ot-shaper-hangul.ll
 ; openjdk/optimized/hb-ucd.ll
 ; openspiel/optimized/Moves.cpp.ll
@@ -376,6 +375,11 @@ entry:
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/tvbuff_lznt1.c.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
@@ -386,7 +390,7 @@ entry:
   ret i32 %2
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; cvc5/optimized/cvc5.cpp.ll
 ; cvc5/optimized/extf_solver.cpp.ll
@@ -410,6 +414,7 @@ entry:
 ; wireshark/optimized/packet-l2tp.c.ll
 ; wireshark/optimized/packet-lbmr.c.ll
 ; wireshark/optimized/packet-pn-ptcp.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i16 %0) #0 {
 entry:
@@ -418,7 +423,7 @@ entry:
   ret i32 %2
 }
 
-; 44 occurrences:
+; 46 occurrences:
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -463,6 +468,8 @@ entry:
 ; wireshark/optimized/packet-nbt.c.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; wireshark/optimized/syntax_line_edit.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i16 %0) #0 {
 entry:
@@ -471,12 +478,13 @@ entry:
   ret i32 %2
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; clamav/optimized/mszipd.c.ll
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; cpython/optimized/_codecs_jp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; postgres/optimized/execIndexing.ll
 ; postgres/optimized/gistscan.ll

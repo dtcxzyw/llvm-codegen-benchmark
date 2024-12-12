@@ -1,5 +1,22 @@
 
-; 10 occurrences:
+; 6 occurrences:
+; darktable/optimized/introspection_basecurve.c.ll
+; darktable/optimized/introspection_flip.c.ll
+; linux/optimized/libahci.ll
+; openblas/optimized/dgemm_beta.c.ll
+; openblas/optimized/sgemm_beta.c.ll
+; qemu/optimized/target_riscv_pmp.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 4
+  %3 = and i64 %2, 4294967280
+  %4 = getelementptr i8, ptr %0, i64 7832
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 9 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -9,14 +26,13 @@
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
-; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = and i64 %2, 4294967292
-  %4 = getelementptr nusw i8, ptr %0, i64 4
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -33,28 +49,24 @@ entry:
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = and i64 %2, 4294967292
-  %4 = getelementptr nusw i8, ptr %0, i64 4
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 5 occurrences:
-; darktable/optimized/introspection_basecurve.c.ll
-; darktable/optimized/introspection_flip.c.ll
-; linux/optimized/libahci.ll
-; openblas/optimized/dgemm_beta.c.ll
-; openblas/optimized/sgemm_beta.c.ll
+; 1 occurrences:
+; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 2
-  %3 = and i64 %2, -16
-  %4 = getelementptr i8, ptr %0, i64 12
-  %5 = getelementptr i8, ptr %4, i64 %3
+  %2 = shl nuw nsw i64 %1, 1
+  %3 = and i64 %2, 510
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 38
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -108,11 +120,11 @@ entry:
 ; llvm/optimized/Verifier.cpp.ll
 ; spike/optimized/csrs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 4
   %3 = and i64 %2, -64
-  %4 = getelementptr nusw i8, ptr %0, i64 2160
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 2160
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -125,26 +137,37 @@ entry:
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = and i64 %2, 17179869168
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 3 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 2 occurrences:
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = and i64 %2, 4294967292
   %4 = getelementptr nusw i8, ptr %0, i64 -8
-  %5 = getelementptr nusw double, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw double, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw i64 %1, 1
+  %3 = and i64 %2, 4294967294
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 14
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 

@@ -6,7 +6,7 @@ func0000000000000020:                   # @func0000000000000020
 	vmseq.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vim	v14, v12, 1, v0
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	vmv1r.v	v0, v10
 	vmerge.vim	v10, v12, 1, v0
 	vsub.vv	v8, v8, v10
@@ -19,7 +19,7 @@ func0000000000000025:                   # @func0000000000000025
 	vmseq.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vim	v14, v12, 1, v0
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	vmv1r.v	v0, v10
 	vmerge.vim	v10, v12, 1, v0
 	vsub.vv	v8, v8, v10
@@ -32,7 +32,7 @@ func0000000000000024:                   # @func0000000000000024
 	vmseq.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vim	v14, v12, 1, v0
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	vmv1r.v	v0, v10
 	vmerge.vim	v10, v12, 1, v0
 	vsub.vv	v8, v8, v10

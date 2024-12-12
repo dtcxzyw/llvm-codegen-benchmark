@@ -1,5 +1,5 @@
 
-; 929 occurrences:
+; 926 occurrences:
 ; abseil-cpp/optimized/absl_check_test.cc.ll
 ; abseil-cpp/optimized/check_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -49,6 +49,11 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/fmu_function.cpp.ll
 ; casadi/optimized/function.cpp.ll
@@ -211,7 +216,6 @@
 ; gromacs/optimized/pme.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
-; gromacs/optimized/printhardware.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
 ; gromacs/optimized/pullutil.cpp.ll
 ; gromacs/optimized/qmmminputgenerator.cpp.ll
@@ -303,7 +307,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -328,7 +331,6 @@
 ; meshlab/optimized/io_json.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -355,7 +357,6 @@
 ; mitsuba3/optimized/filesystem.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/irregular.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -513,13 +514,10 @@
 ; nix/optimized/names.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -811,7 +809,6 @@
 ; pbrt-v4/optimized/scene.cpp.ll
 ; pbrt-v4/optimized/stats.cpp.ll
 ; proj/optimized/c_api.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; quantlib/optimized/analytichestonengine.ll
@@ -930,7 +927,7 @@
 ; yosys/optimized/qbfsat.ll
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -945,7 +942,7 @@ entry:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -985,9 +982,10 @@ entry:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; arrow/optimized/data.cc.ll
 ; assimp/optimized/StandardShapes.cpp.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/cmCoreTryCompile.cxx.ll
 ; cmake/optimized/cmStateSnapshot.cxx.ll
-; cvc5/optimized/core_solver.cpp.ll
 ; cvc5/optimized/theory_strings.cpp.ll
 ; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -1015,7 +1013,6 @@ entry:
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; mitsuba3/optimized/argparser.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; nix/optimized/machines.ll
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; nlohmann_json/optimized/unit-diagnostics.cpp.ll
@@ -1051,7 +1048,7 @@ entry:
 ; tev/optimized/Image.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -1061,10 +1058,12 @@ entry:
   ret i1 %7
 }
 
-; 60 occurrences:
+; 65 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/sort_by_side.ll
 ; cvc5/optimized/normal_form.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -1089,11 +1088,14 @@ entry:
 ; luau/optimized/ConstraintSolver.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
+; ncnn/optimized/slice_x86.cpp.ll
+; ncnn/optimized/slice_x86_avx.cpp.ll
+; ncnn/optimized/slice_x86_avx512.cpp.ll
+; ncnn/optimized/slice_x86_fma.cpp.ll
 ; opencv/optimized/contours_approx.cpp.ll
 ; opencv/optimized/flatten_layer.cpp.ll
 ; opencv/optimized/hough.cpp.ll
@@ -1123,17 +1125,17 @@ entry:
 ; velox/optimized/PlanNode.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 88
+  %5 = sdiv exact i64 %4, 24
   %6 = add nuw i64 %0, 1
   %7 = icmp eq i64 %6, %5
   ret i1 %7
 }
 
-; 138 occurrences:
+; 142 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_memory_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -1173,6 +1175,9 @@ entry:
 ; arrow/optimized/function.cc.ll
 ; arrow/optimized/function_internal.cc.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/sort_by_side.ll
 ; duckdb/optimized/ub_duckdb_bind_statement.cpp.ll
 ; duckdb/optimized/ub_duckdb_bind_tableref.cpp.ll
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
@@ -1251,6 +1256,7 @@ entry:
 ; ninja/optimized/manifest_parser.cc.ll
 ; nix/optimized/machines.ll
 ; opencv/optimized/color_moment_hash.cpp.ll
+; opencv/optimized/text_detector_swt.cpp.ll
 ; openusd/optimized/collectionPredicateLibrary.cpp.ll
 ; openusd/optimized/crateData.cpp.ll
 ; openusd/optimized/pathPattern.cpp.ll
@@ -1273,7 +1279,7 @@ entry:
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -1283,7 +1289,7 @@ entry:
   ret i1 %7
 }
 
-; 132 occurrences:
+; 133 occurrences:
 ; casadi/optimized/assertion.cpp.ll
 ; casadi/optimized/bilin.cpp.ll
 ; casadi/optimized/bspline.cpp.ll
@@ -1414,10 +1420,11 @@ entry:
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
+; opencv/optimized/text_detector_swt.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -1445,7 +1452,7 @@ entry:
 ; quantlib/optimized/genericlsregression.ll
 ; quantlib/optimized/parametricexercise.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -1475,29 +1482,13 @@ entry:
 ; quantlib/optimized/parametricexercise.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 24
   %6 = add nsw i64 %0, 1
   %7 = icmp ult i64 %6, %5
-  ret i1 %7
-}
-
-; 4 occurrences:
-; duckdb/optimized/ub_duckdb_func_list.cpp.ll
-; duckdb/optimized/ub_duckdb_nested_loop_join.cpp.ll
-; minetest/optimized/c_content.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000069(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 312
-  %6 = add nuw i64 %0, 1
-  %7 = icmp uge i64 %6, %5
   ret i1 %7
 }
 
@@ -1522,7 +1513,7 @@ entry:
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/qdplusamericanengine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -1543,11 +1534,11 @@ entry:
 ; lief/optimized/json.cpp.ll
 ; opencv/optimized/generalized_hough.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 24
+  %5 = sdiv exact i64 %4, 88
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
   ret i1 %7
@@ -1556,7 +1547,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/hash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000ec(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -1578,7 +1569,7 @@ entry:
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; lightgbm/optimized/c_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -1588,15 +1579,14 @@ entry:
   ret i1 %7
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; entt/optimized/dense_map.cpp.ll
 ; luau/optimized/ConstraintSolver.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
 ; openusd/optimized/evalUtils.cpp.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -1606,10 +1596,25 @@ entry:
   ret i1 %7
 }
 
+; 3 occurrences:
+; duckdb/optimized/ub_duckdb_func_list.cpp.ll
+; duckdb/optimized/ub_duckdb_nested_loop_join.cpp.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c9(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = sdiv exact i64 %4, 24
+  %6 = add nuw i64 %0, 1
+  %7 = icmp uge i64 %6, %5
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; openspiel/optimized/tensor_game.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -1622,7 +1627,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/tensor_game.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

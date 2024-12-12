@@ -23,7 +23,7 @@ func0000000000000002:                   # @func0000000000000002
 	.long	127                             # 0x7f
 .LCPI2_1:
 	.long	1048448                         # 0xfff80
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vorps	%ymm2, %ymm1, %ymm1
 	vptestnmd	%ymm0, %ymm0, %k1
 	vorps	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1 {%k1}
@@ -35,7 +35,7 @@ func0000000000000023:                   # @func0000000000000023
 	.long	201326592                       # 0xc000000
 .LCPI3_2:
 	.long	512                             # 0x200
-func0000000000000074:                   # @func0000000000000074
+func00000000000000d4:                   # @func00000000000000d4
 	vorps	%ymm2, %ymm1, %ymm1
 	vpcmpgtd	.LCPI3_0(%rip){1to8}, %ymm0, %k1
 	vorps	.LCPI3_1(%rip){1to8}, %ymm1, %ymm1 {%k1}

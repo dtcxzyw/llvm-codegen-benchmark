@@ -6,7 +6,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rdx, %rax
-	andl	$-117440513, %eax               # imm = 0xF8FFFFFF
+	andl	$63, %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq

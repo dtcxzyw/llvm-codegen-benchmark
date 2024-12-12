@@ -1,15 +1,17 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %0, %1
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ult i32 %5, 255
+  %6 = icmp samesign ult i32 %5, 255
   ret i1 %6
 }
 
@@ -28,16 +30,16 @@ entry:
 ; wireshark/optimized/packet-c1222.c.ll
 ; z3/optimized/bv_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000001f8(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %0, %1
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ugt i32 %5, 1
+  %6 = icmp samesign ugt i32 %5, 1
   ret i1 %6
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; draco/optimized/ply_decoder.cc.ll
 ; grpc/optimized/legacy_inproc_transport.cc.ll
@@ -49,11 +51,10 @@ entry:
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/block_vhdx-log.c.ll
 ; qemu/optimized/net_socket.c.ll
-; slurm/optimized/ebpf.ll
 ; wireshark/optimized/libpcap.c.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %0, %1
@@ -71,7 +72,7 @@ entry:
 ; qemu/optimized/block_io.c.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -90,19 +91,19 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; xgboost/optimized/learner.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000001f4(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %0, %1
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ult i32 %5, 268435456
+  %6 = icmp samesign ult i32 %5, 268435456
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -115,7 +116,7 @@ entry:
 ; chibicc/optimized/codegen.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -141,7 +142,7 @@ entry:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000001ec(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %0, %1
@@ -193,7 +194,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fa(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000001ea(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %0, %1
@@ -205,7 +206,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %.neg = sext i1 %2 to i32
   %3 = add nsw i32 %0, %1

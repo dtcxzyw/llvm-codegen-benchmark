@@ -17,7 +17,7 @@
 	.short	48                              # 0x30
 .LCPI0_1:
 	.zero	16,1
-func00000000000000b0:                   # @func00000000000000b0
+func0000000000000130:                   # @func0000000000000130
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpcmpneqw	.LCPI0_0(%rip), %ymm0, %k1

@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 55 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -7,6 +7,8 @@
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -18,6 +20,7 @@
 ; linux/optimized/rate.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll

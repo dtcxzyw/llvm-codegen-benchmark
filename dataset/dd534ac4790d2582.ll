@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; linux/optimized/xhci.ll
+; lvgl/optimized/lv_arc.ll
 ; opencv/optimized/qrcode_reader.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {

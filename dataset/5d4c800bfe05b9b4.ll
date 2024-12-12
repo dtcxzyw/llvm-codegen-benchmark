@@ -5,7 +5,7 @@
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 12
   %3 = icmp ne i32 %2, 0
@@ -14,10 +14,11 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; git/optimized/apply.ll
 ; linux/optimized/intel_display_power_well.ll
 ; llvm/optimized/AArch64MCInstLower.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

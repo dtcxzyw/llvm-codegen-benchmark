@@ -1,11 +1,11 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	orl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -14,13 +14,12 @@ func0000000000000016:                   # @func0000000000000016
 	setl	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	notb	%sil
-	movzbl	%sil, %eax
-	andl	$1, %eax
-	addl	%edi, %eax
+	andl	$1, %esi
+	decl	%esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -28,25 +27,16 @@ func000000000000003c:                   # @func000000000000003c
 	setne	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	notb	%sil
-	movzbl	%sil, %eax
-	andl	$1, %eax
-	addl	%edi, %eax
+	andl	$1, %esi
+	decl	%esi
+	cmpl	%esi, %edi
 	setne	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	addl	%edi, %eax
 	cmpl	$128, %eax
 	setb	%al
-	retq
-func0000000000000038:                   # @func0000000000000038
-	notb	%sil
-	movzbl	%sil, %eax
-	andl	$1, %eax
-	addl	%edi, %eax
-	cmpl	$4, %eax
-	setae	%al
 	retq

@@ -20,7 +20,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %0, 31
-  %3 = or i8 %2, %1
+  %3 = or i8 %1, %2
   %4 = xor i8 %3, -32
   ret i8 %4
 }

@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	vsrl.vi	v10, v12, 1
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	li	a0, 1
 	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma

@@ -14,7 +14,7 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; abc/optimized/lpkAbcMux.c.ll
 ; hyperscan/optimized/hs.cpp.ll
 ; linux/optimized/forcedeth.ll
@@ -24,6 +24,8 @@ entry:
 ; llvm/optimized/MallocChecker.cpp.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {

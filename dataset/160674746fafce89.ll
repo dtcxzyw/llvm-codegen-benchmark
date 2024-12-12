@@ -1,11 +1,10 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; clamav/optimized/cvd.c.ll
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; flac/optimized/decode.c.ll
 ; flac/optimized/encode.c.ll
-; freetype/optimized/psaux.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; icu/optimized/reslist.ll
 ; icu/optimized/ucnvsel.ll
@@ -32,7 +31,7 @@
 ; wireshark/optimized/pcapng.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 31
   %2 = icmp eq i32 %1, 0
@@ -45,7 +44,7 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 63
   %2 = icmp eq i32 %1, 63

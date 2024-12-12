@@ -7,7 +7,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI1_0:
 	.quad	3221225472                      # 0xc0000000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpternlogq	$246, .LCPI1_0(%rip){1to4}, %ymm2, %ymm1 # ymm1 = ymm1 | (ymm2 ^ mem)
 	vptestnmq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0

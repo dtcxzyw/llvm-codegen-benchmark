@@ -30,7 +30,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, 1
-  %3 = add nuw i64 %2, %1
+  %3 = add nuw i64 %1, %2
   %4 = udiv i64 %3, %0
   ret i64 %4
 }
@@ -41,7 +41,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %0, 1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = udiv i64 %3, %0
   ret i64 %4
 }

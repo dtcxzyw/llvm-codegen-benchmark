@@ -19,12 +19,9 @@ entry:
   ret ptr %5
 }
 
-; 8 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/kernel_gpu_ref.cpp.ll
 ; openblas/optimized/dgetrf_single.c.ll
-; openblas/optimized/dlauum_L_single.c.ll
-; openblas/optimized/dlauum_U_single.c.ll
-; openblas/optimized/dpotrf_U_single.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openusd/optimized/resize.c.ll
 ; openusd/optimized/restoration.c.ll

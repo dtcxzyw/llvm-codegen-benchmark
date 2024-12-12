@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
@@ -24,6 +24,7 @@
 ; libwebp/optimized/huffman_encode_utils.c.ll
 ; linux/optimized/random.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; node/optimized/idna.ll
 ; openusd/optimized/bignum.cc.ll
@@ -57,13 +58,15 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; llvm/optimized/Legalizer.cpp.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_scale.ll
 ; wireshark/optimized/packet-packetbb.c.ll
 ; wireshark/optimized/packet-tipc.c.ll
 ; Function Attrs: nounwind
@@ -74,7 +77,7 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/wlcWriteVer.c.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/qtmd.c.ll
@@ -84,7 +87,6 @@ entry:
 ; linux/optimized/cacheinfo.ll
 ; linux/optimized/isoch.ll
 ; linux/optimized/libahci.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/xhci-ring.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll

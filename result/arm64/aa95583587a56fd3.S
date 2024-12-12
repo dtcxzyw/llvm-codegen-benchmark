@@ -1,112 +1,32 @@
 func0000000000000060:                   // @func0000000000000060
 // %bb.0:                               // %entry
-	mov	x8, v4.d[1]
-	mov	x9, v2.d[1]
-	fmov	x11, d4
-	fmov	x12, d2
-	fmov	x14, d5
-	fmov	x15, d3
-	mov	x17, v5.d[1]
-	mov	x18, v3.d[1]
-	sdiv	x10, x9, x8
-	sdiv	x13, x12, x11
-	msub	x8, x10, x8, x9
-	sdiv	x16, x15, x14
-	msub	x9, x13, x11, x12
-	fmov	d2, x9
-	mov	v2.d[1], x8
-	cmtst	v2.2d, v2.2d, v2.2d
-	sdiv	x0, x18, x17
-	msub	x10, x16, x14, x15
-	sub	v0.2d, v0.2d, v2.2d
-	fmov	d3, x10
-	msub	x11, x0, x17, x18
-	mov	v3.d[1], x11
-	cmtst	v3.2d, v3.2d, v3.2d
-	sub	v1.2d, v1.2d, v3.2d
+	sdiv	x8, x1, x2
+	msub	x8, x8, x2, x1
+	cmp	x8, #0
+	cinc	x0, x0, ne
 	ret
                                         // -- End function
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	mov	x8, v4.d[1]
-	mov	x9, v2.d[1]
-	fmov	x11, d4
-	fmov	x12, d2
-	fmov	x14, d5
-	fmov	x15, d3
-	mov	x17, v5.d[1]
-	mov	x18, v3.d[1]
-	sdiv	x10, x9, x8
-	sdiv	x13, x12, x11
-	msub	x8, x10, x8, x9
-	sdiv	x16, x15, x14
-	msub	x9, x13, x11, x12
-	fmov	d2, x9
-	mov	v2.d[1], x8
-	cmtst	v2.2d, v2.2d, v2.2d
-	sdiv	x0, x18, x17
-	msub	x10, x16, x14, x15
-	sub	v0.2d, v0.2d, v2.2d
-	fmov	d3, x10
-	msub	x11, x0, x17, x18
-	mov	v3.d[1], x11
-	cmtst	v3.2d, v3.2d, v3.2d
-	sub	v1.2d, v1.2d, v3.2d
+	sdiv	x8, x1, x2
+	msub	x8, x8, x2, x1
+	cmp	x8, #0
+	cinc	x0, x0, ne
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	mov	x8, v4.d[1]
-	mov	x9, v2.d[1]
-	fmov	x11, d4
-	fmov	x12, d2
-	fmov	x14, d5
-	fmov	x15, d3
-	mov	x17, v5.d[1]
-	mov	x18, v3.d[1]
-	sdiv	x10, x9, x8
-	sdiv	x13, x12, x11
-	msub	x8, x10, x8, x9
-	sdiv	x16, x15, x14
-	msub	x9, x13, x11, x12
-	fmov	d2, x9
-	mov	v2.d[1], x8
-	cmeq	v2.2d, v2.2d, #0
-	sub	v0.2d, v0.2d, v2.2d
-	sdiv	x0, x18, x17
-	msub	x10, x16, x14, x15
-	fmov	d3, x10
-	msub	x11, x0, x17, x18
-	mov	v3.d[1], x11
-	cmeq	v3.2d, v3.2d, #0
-	sub	v1.2d, v1.2d, v3.2d
+	sdiv	x8, x1, x2
+	msub	x8, x8, x2, x1
+	cmp	x8, #0
+	cinc	x0, x0, eq
 	ret
                                         // -- End function
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	mov	x8, v4.d[1]
-	mov	x9, v2.d[1]
-	fmov	x11, d4
-	fmov	x12, d2
-	fmov	x14, d5
-	fmov	x15, d3
-	mov	x17, v5.d[1]
-	mov	x18, v3.d[1]
-	sdiv	x10, x9, x8
-	sdiv	x13, x12, x11
-	msub	x8, x10, x8, x9
-	sdiv	x16, x15, x14
-	msub	x9, x13, x11, x12
-	fmov	d2, x9
-	mov	v2.d[1], x8
-	cmgt	v2.2d, v2.2d, #0
-	sub	v0.2d, v0.2d, v2.2d
-	sdiv	x0, x18, x17
-	msub	x10, x16, x14, x15
-	fmov	d3, x10
-	msub	x11, x0, x17, x18
-	mov	v3.d[1], x11
-	cmgt	v3.2d, v3.2d, #0
-	sub	v1.2d, v1.2d, v3.2d
+	sdiv	x8, x1, x2
+	msub	x8, x8, x2, x1
+	cmp	x8, #0
+	cinc	x0, x0, gt
 	ret
                                         // -- End function

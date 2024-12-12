@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -12,7 +12,6 @@
 ; wireshark/optimized/packet-nr-rrc.c.ll
 ; wireshark/optimized/packet-s1ap.c.ll
 ; wireshark/optimized/packet-ulp.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {

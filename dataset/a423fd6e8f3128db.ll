@@ -8,7 +8,7 @@
 ; quantlib/optimized/hullwhite.ll
 ; quantlib/optimized/onefactormodel.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -21,7 +21,7 @@ entry:
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000a6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp slt i32 %3, -63
@@ -38,7 +38,7 @@ entry:
 ; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000e6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp slt i32 %3, -1
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000066(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp slt i32 %3, -1

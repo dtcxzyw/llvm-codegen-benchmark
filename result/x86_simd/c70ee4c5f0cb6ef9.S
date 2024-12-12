@@ -2,7 +2,7 @@
 	.zero	16,1
 .LCPI0_1:
 	.byte	1                               # 0x1
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpbroadcastb	.LCPI0_1(%rip), %xmm2   # xmm2 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vpand	%xmm2, %xmm1, %xmm1
 	vpand	%xmm2, %xmm0, %xmm0
@@ -10,7 +10,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI1_0:
 	.zero	16,1
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
 	vptestnmb	.LCPI1_0(%rip), %xmm0, %k0 {%k1}
@@ -20,7 +20,7 @@ func0000000000000004:                   # @func0000000000000004
 	.zero	16,1
 .LCPI2_1:
 	.byte	1                               # 0x1
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	vpbroadcastb	.LCPI2_1(%rip), %xmm2   # xmm2 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vpand	%xmm2, %xmm1, %xmm1
 	vpand	%xmm2, %xmm0, %xmm0

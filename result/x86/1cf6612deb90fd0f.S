@@ -9,47 +9,45 @@ func0000000000000008:                   # @func0000000000000008
 	orb	%dil, %al
 	retq
 .LCPI1_0:
-	.long	0x41200000                      # float 10
+	.long	0x437f0000                      # float 255
 .LCPI1_1:
-	.long	0xc8976760                      # float -310075
-func0000000000000004:                   # @func0000000000000004
+	.long	0x43800000                      # float 256
+func000000000000001a:                   # @func000000000000001a
 	vmulss	.LCPI1_0(%rip), %xmm0, %xmm0
-	vmovss	.LCPI1_1(%rip), %xmm1           # xmm1 = [-3.10075E+5,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI1_1(%rip), %xmm1           # xmm1 = [2.56E+2,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm0, %xmm1
-	seta	%al
+	setbe	%al
 	orb	%dil, %al
 	retq
 .LCPI2_0:
 	.long	0x437f0000                      # float 255
 .LCPI2_1:
-	.long	0x43800000                      # float 256
-func000000000000001a:                   # @func000000000000001a
+	.long	0xbf800000                      # float -1
+func0000000000000016:                   # @func0000000000000016
 	vmulss	.LCPI2_0(%rip), %xmm0, %xmm0
-	vmovss	.LCPI2_1(%rip), %xmm1           # xmm1 = [2.56E+2,0.0E+0,0.0E+0,0.0E+0]
-	vucomiss	%xmm0, %xmm1
+	vucomiss	.LCPI2_1(%rip), %xmm0
 	setbe	%al
 	orb	%dil, %al
 	retq
 .LCPI3_0:
-	.long	0x437f0000                      # float 255
-.LCPI3_1:
-	.long	0xbf800000                      # float -1
-func0000000000000016:                   # @func0000000000000016
-	vmulss	.LCPI3_0(%rip), %xmm0, %xmm0
-	vucomiss	.LCPI3_1(%rip), %xmm0
-	setbe	%al
-	orb	%dil, %al
-	retq
-.LCPI4_0:
 	.long	0x38800000                      # float 6.10351563E-5
-.LCPI4_1:
+.LCPI3_1:
 	.long	0x3f800000                      # float 1
 func000000000000000e:                   # @func000000000000000e
-	vmulss	.LCPI4_0(%rip), %xmm0, %xmm0
-	vucomiss	.LCPI4_1(%rip), %xmm0
+	vmulss	.LCPI3_0(%rip), %xmm0, %xmm0
+	vucomiss	.LCPI3_1(%rip), %xmm0
 	setp	%cl
 	setne	%al
 	orb	%cl, %al
+	orb	%dil, %al
+	retq
+.LCPI4_0:
+	.long	0xcf000000                      # float -2.14748365E+9
+func0000000000000004:                   # @func0000000000000004
+	vaddss	%xmm0, %xmm0, %xmm0
+	vmovss	.LCPI4_0(%rip), %xmm1           # xmm1 = [-2.14748365E+9,0.0E+0,0.0E+0,0.0E+0]
+	vucomiss	%xmm0, %xmm1
+	seta	%al
 	orb	%dil, %al
 	retq
 .LCPI5_0:

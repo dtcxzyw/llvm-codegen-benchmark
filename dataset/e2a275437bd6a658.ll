@@ -1,10 +1,11 @@
 
-%"struct.QHashPrivate::Span<QCache<unsigned int, QList<QString>>::Node>::Entry.3260865" = type { %"union.std::aligned_storage<40, 8>::type.3260866" }
-%"union.std::aligned_storage<40, 8>::type.3260866" = type { [40 x i8] }
-%struct.lua_TValue.3476466 = type { %union.Value.3476467, i32 }
-%union.Value.3476467 = type { ptr }
+%"struct.QHashPrivate::Span<QCache<unsigned int, QList<QString>>::Node>::Entry.3451586" = type { %"union.std::aligned_storage<40, 8>::type.3451587" }
+%"union.std::aligned_storage<40, 8>::type.3451587" = type { [40 x i8] }
+%struct.lua_TValue.3660449 = type { %union.Value.3660450, i32 }
+%union.Value.3660450 = type { ptr }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/static_string.ll
 ; grpc/optimized/bin_decoder.cc.ll
 ; hwloc/optimized/hwloc_dump_hwdata-hwloc-dump-hwdata-knl.ll
 ; hyperscan/optimized/hwlm.c.ll
@@ -14,15 +15,15 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; redis/optimized/ldo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
-; 355 occurrences:
+; 358 occurrences:
 ; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
@@ -32,6 +33,7 @@ entry:
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; boost/optimized/static_string.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; draco/optimized/attribute_quantization_transform.cc.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
@@ -378,12 +380,14 @@ entry:
 ; wasmtime-rs/optimized/1r2x5absurxbrq18.ll
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -630,33 +634,34 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000000e4(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/static_string.ll
 ; llvm/optimized/MCInstrDesc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000006c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i16, ptr %1, i64 %3
-  %5 = icmp ne ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -681,19 +686,19 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr %"struct.QHashPrivate::Span<QCache<unsigned int, QList<QString>>::Node>::Entry.3260865", ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr %"struct.QHashPrivate::Span<QCache<unsigned int, QList<QString>>::Node>::Entry.3451586", ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000000ec(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = icmp ne ptr %4, %0
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -705,7 +710,7 @@ define i1 @func0000000000000008(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
@@ -716,7 +721,7 @@ define i1 @func0000000000000004(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -724,22 +729,22 @@ entry:
 ; luajit/optimized/minilua.ll
 ; redis/optimized/ldo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000068(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw %struct.lua_TValue.3476466, ptr %1, i64 %3
-  %5 = icmp ult ptr %4, %0
+  %4 = getelementptr nusw nuw %struct.lua_TValue.3660449, ptr %1, i64 %3
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000069(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = icmp ule ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp uge ptr %0, %4
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/saigSynch.c.ll
 ; abc/optimized/wlcNdr.c.ll
 ; abc/optimized/wlcReadVer.c.ll
@@ -27,7 +27,6 @@
 ; soc-simulator/optimized/verilated.ll
 ; spike/optimized/plic.ll
 ; verilator/optimized/V3Number.cpp.ll
-; verilator/optimized/V3String.cpp.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; z3/optimized/occurs.cpp.ll

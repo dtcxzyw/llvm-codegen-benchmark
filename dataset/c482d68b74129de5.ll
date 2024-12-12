@@ -571,7 +571,7 @@ entry:
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4611686018427387903
   %3 = add nuw nsw i64 %2, 1
@@ -617,7 +617,7 @@ entry:
 ; openjdk/optimized/memnode.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = add nsw i64 %2, 8
@@ -629,7 +629,7 @@ entry:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
   %3 = add nsw i64 %2, -1
@@ -644,7 +644,7 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775807
   %3 = add nuw i64 %2, 1
@@ -652,35 +652,27 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 3 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cpython/optimized/socketmodule.ll
 ; git/optimized/sha256.ll
-; jemalloc/optimized/malloc_io.ll
-; jemalloc/optimized/malloc_io.pic.ll
-; jemalloc/optimized/malloc_io.sym.ll
-; linux/optimized/fair.ll
-; redis/optimized/malloc_io.ll
-; redis/optimized/malloc_io.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp samesign ult i64 %3, %0
   ret i1 %4
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; hermes/optimized/APInt.cpp.ll
-; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/CheckerContext.cpp.ll
 ; llvm/optimized/ExprEngineCallAndReturn.cpp.ll
 ; postgres/optimized/nbtsort.ll
 ; postgres/optimized/nbtutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nsw i64 %2, -1
@@ -688,34 +680,42 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
+; 10 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
-; libwebp/optimized/muxread.c.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; ocio/optimized/FileFormatICC.cpp.ll
 ; postgres/optimized/generation.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
-; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nuw nsw i64 %2, 4096
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp samesign ugt i64 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; hermes/optimized/APInt.cpp.ll
+; llvm/optimized/APInt.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 2047
+  %3 = add nsw i64 %2, -1075
+  %4 = icmp samesign ult i64 %3, %0
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nsw i64 %2, -1
@@ -727,7 +727,7 @@ entry:
 ; openmpi/optimized/osc_rdma_dynamic.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nsw i64 %2, -1
@@ -736,13 +736,29 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/mmconf-fam10h_64.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -1048576
-  %3 = add nsw i64 %2, -1048576
+  %2 = and i64 %1, -16
+  %3 = add nuw i64 %2, 16
   %4 = icmp ugt i64 %3, %0
+  ret i1 %4
+}
+
+; 6 occurrences:
+; jemalloc/optimized/malloc_io.ll
+; jemalloc/optimized/malloc_io.pic.ll
+; jemalloc/optimized/malloc_io.sym.ll
+; linux/optimized/fair.ll
+; redis/optimized/malloc_io.ll
+; redis/optimized/malloc_io.sym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = add nuw nsw i64 %2, 10
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -755,6 +771,21 @@ entry:
   %2 = and i64 %1, -4096
   %3 = add i64 %2, 4096
   %4 = icmp eq i64 %3, %0
+  ret i1 %4
+}
+
+; 5 occurrences:
+; libwebp/optimized/muxread.c.ll
+; typst-rs/optimized/1aflftgqyuracvze.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 262140
+  %3 = add nuw nsw i64 %2, 4
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 

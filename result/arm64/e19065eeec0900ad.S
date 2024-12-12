@@ -1,29 +1,11 @@
+.LCPI0_0:
+	.xword	0x3c91a62633145c07              // double 6.123233995736766E-17
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fsub	v2.4s, v2.4s, v6.4s
-	fsub	v0.4s, v0.4s, v4.4s
-	mov	x8, #23559                      // =0x5c07
-	fsub	v1.4s, v1.4s, v5.4s
-	fsub	v3.4s, v3.4s, v7.4s
-	movk	x8, #13076, lsl #16
-	movk	x8, #42534, lsl #32
-	movk	x8, #15505, lsl #48
-	fcvtl	v4.2d, v0.2s
-	fcvtl2	v0.2d, v0.4s
-	fcvtl	v5.2d, v2.2s
-	fcvtl	v7.2d, v1.2s
-	fcvtl2	v16.2d, v1.4s
-	fcvtl	v17.2d, v3.2s
-	fcvtl2	v18.2d, v3.4s
-	fcvtl2	v19.2d, v2.4s
-	dup	v6.2d, x8
-	fmul	v1.2d, v0.2d, v6.2d
-	fmul	v0.2d, v4.2d, v6.2d
-	fmul	v3.2d, v16.2d, v6.2d
-	fmul	v2.2d, v7.2d, v6.2d
-	fmul	v4.2d, v5.2d, v6.2d
-	fmul	v5.2d, v19.2d, v6.2d
-	fmul	v7.2d, v18.2d, v6.2d
-	fmul	v6.2d, v17.2d, v6.2d
+	fsub	s0, s0, s1
+	adrp	x8, .LCPI0_0
+	ldr	d1, [x8, :lo12:.LCPI0_0]
+	fcvt	d0, s0
+	fmul	d0, d0, d1
 	ret
                                         // -- End function

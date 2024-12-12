@@ -2,13 +2,13 @@ func00000000000000ff:                   # @func00000000000000ff
 	vpslld	$6, %ymm2, %ymm2
 	vpslld	$3, %ymm1, %ymm1
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000055:                   # @func0000000000000055
 	vpslld	$2, %ymm2, %ymm2
 	vpslld	$3, %ymm1, %ymm1
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$8, %ymm2, %ymm2

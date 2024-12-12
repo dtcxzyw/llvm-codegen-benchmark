@@ -23,7 +23,7 @@
 ; verilator/optimized/V3Tristate.cpp.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = icmp eq ptr %0, null
@@ -31,8 +31,9 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
+; boost/optimized/contract.ll
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/ConstraintSolver.cpp.ll
 ; luau/optimized/Fixture.cpp.ll
@@ -44,7 +45,7 @@ entry:
 ; postgres/optimized/array_selfuncs.ll
 ; verilator/optimized/V3LinkCells.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = icmp ne ptr %0, null

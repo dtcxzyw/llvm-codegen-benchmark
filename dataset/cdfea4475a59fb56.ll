@@ -1,5 +1,5 @@
 
-; 189 occurrences:
+; 185 occurrences:
 ; abc/optimized/cuddGenetic.c.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; arrow/optimized/caching.cc.ll
@@ -101,7 +101,6 @@
 ; oiio/optimized/imageio.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
-; openblas/optimized/dgemm_small_matrix_permit.c.ll
 ; openblas/optimized/dgemv_thread_n.c.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
 ; openblas/optimized/dsbmv_thread_L.c.ll
@@ -114,8 +113,6 @@
 ; openblas/optimized/dtbmv_thread_TLU.c.ll
 ; openblas/optimized/dtbmv_thread_TUN.c.ll
 ; openblas/optimized/dtbmv_thread_TUU.c.ll
-; openblas/optimized/parameter.c.ll
-; openblas/optimized/sgemm_small_matrix_permit.c.ll
 ; opencv/optimized/freetype.cpp.ll
 ; opencv/optimized/normal.cpp.ll
 ; opencv/optimized/rand.cpp.ll
@@ -176,7 +173,6 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet_list_model.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -193,7 +189,7 @@
 define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$2048, %edx                     # imm = 0x800
 	testb	$1, %dil
 	cmovneq	%rsi, %rdx
@@ -11,5 +11,11 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmovneq	%rsi, %rax
 	testq	%rax, %rax
+	sete	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	testb	$1, %dil
+	cmoveq	%rdx, %rsi
+	shrq	$60, %rsi
 	sete	%al
 	retq

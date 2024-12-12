@@ -5,9 +5,8 @@ func000000000000000f:                   # @func000000000000000f
 	orl	%esi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	movl	%edi, %eax
 	orl	%edi, %esi
-	shll	$28, %eax
+	leal	(%rdi,%rdi), %eax
 	orl	%esi, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008

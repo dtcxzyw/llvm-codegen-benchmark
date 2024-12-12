@@ -6,7 +6,7 @@
 define i64 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %.tr = trunc i32 %0 to i8
-  %.narrow = or i8 %.tr, %1
+  %.narrow = or i8 %1, %.tr
   %2 = zext i8 %.narrow to i64
   ret i64 %2
 }

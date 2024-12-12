@@ -1,6 +1,5 @@
 
-; 13 occurrences:
-; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
+; 12 occurrences:
 ; gromacs/optimized/autocorr.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; hyperscan/optimized/flood_compile.cpp.ll

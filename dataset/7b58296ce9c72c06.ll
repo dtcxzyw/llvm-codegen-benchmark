@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = and i64 %2, 69692555264

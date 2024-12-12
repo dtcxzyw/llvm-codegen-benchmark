@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-extensions_srvr.ll
 ; openssl/optimized/libssl-shlib-extensions_srvr.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000005e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 -30
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 1
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 848

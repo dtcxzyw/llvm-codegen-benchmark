@@ -30,10 +30,6 @@ func0000000000000005:                   # @func0000000000000005
 	shll	$2, %esi
 	shlxl	%esi, %edi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	shll	$3, %esi
-	shlxl	%esi, %edi, %eax
-	retq
 func000000000000000d:                   # @func000000000000000d
 	shll	$3, %esi
 	shlxl	%esi, %edi, %eax

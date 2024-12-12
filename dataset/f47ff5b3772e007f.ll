@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; cmake/optimized/http.c.ll
@@ -17,6 +17,7 @@
 ; openusd/optimized/vertexDescriptor.cpp.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0) #0 {
 entry:

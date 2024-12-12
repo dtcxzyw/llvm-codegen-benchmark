@@ -1,5 +1,5 @@
 
-; 293 occurrences:
+; 294 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -119,6 +119,7 @@
 ; llvm/optimized/InterpBuiltin.cpp.ll
 ; llvm/optimized/LLLexer.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -350,7 +351,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, %0
+  %2 = add i64 %0, %1
   %3 = and i64 %2, 2097151
   ret i64 %3
 }
@@ -368,7 +369,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, %0
+  %2 = add i64 %0, %1
   %3 = and i64 %2, 1
   ret i64 %3
 }

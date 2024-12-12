@@ -16,7 +16,8 @@ entry:
   ret i64 %7
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/attribute_name.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll

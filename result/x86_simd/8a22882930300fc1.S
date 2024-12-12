@@ -62,11 +62,3 @@ func000000000000000c:                   # @func000000000000000c
 	vpslld	$2, %xmm0, %xmm0
 	vzeroupper
 	retq
-func000000000000000d:                   # @func000000000000000d
-	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vpmovqd	%ymm2, %xmm0
-	vmovdqa32	%xmm1, %xmm0 {%k1}
-	vpaddd	%xmm0, %xmm0, %xmm0
-	vzeroupper
-	retq

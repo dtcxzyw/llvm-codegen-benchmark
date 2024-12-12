@@ -81,7 +81,7 @@ entry:
   ret i32 %4
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absGla.c.ll
@@ -91,7 +91,6 @@ entry:
 ; abc/optimized/acecUtil.c.ll
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaDup.c.ll

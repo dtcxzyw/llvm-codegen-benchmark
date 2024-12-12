@@ -1,16 +1,16 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	movzbl	%dl, %eax
 	orw	%si, %ax
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	movzbl	%dl, %eax
 	orw	%si, %ax
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movzbl	%dl, %eax
 	orl	%esi, %eax
 	movzwl	%ax, %eax
@@ -18,7 +18,7 @@ func0000000000000028:                   # @func0000000000000028
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	movzbl	%dl, %eax
 	orl	%esi, %eax
 	movzwl	%ax, %eax

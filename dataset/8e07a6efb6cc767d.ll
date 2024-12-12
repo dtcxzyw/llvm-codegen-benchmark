@@ -15,19 +15,17 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; clamav/optimized/infblock.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
-; freetype/optimized/sfnt.c.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
-; openblas/optimized/dpttrf.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483644
-  %3 = getelementptr nusw i8, ptr %0, i64 360448
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 360448
   %4 = zext nneg i32 %2 to i64
   %5 = getelementptr float, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 512
@@ -37,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000073(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483644
   %3 = getelementptr i8, ptr %0, i64 196608
@@ -50,10 +48,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
-  %3 = getelementptr nusw i8, ptr %0, i64 48
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 48
   %4 = zext nneg i32 %2 to i64
   %5 = getelementptr ptr, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -8
@@ -64,23 +62,23 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
   %3 = add nsw i32 %2, -2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 48
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 48
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/sha512_generic.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 127
-  %3 = getelementptr nusw i8, ptr %0, i64 88
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 88
   %4 = zext nneg i32 %2 to i64
   %5 = getelementptr i8, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 1
@@ -90,13 +88,26 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -32
   %3 = add i32 %2, 1216
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 64
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 64
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 65534
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 14
+  %4 = zext nneg i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 2
   ret ptr %6
 }
 

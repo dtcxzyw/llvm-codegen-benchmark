@@ -14,8 +14,9 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; flac/optimized/metadata_object.c.ll
+; lvgl/optimized/lv_scale.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:

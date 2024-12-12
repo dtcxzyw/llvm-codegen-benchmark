@@ -61,4 +61,15 @@ entry:
   ret i64 %3
 }
 
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i32 %0) #0 {
+entry:
+  %1 = mul i32 %0, 42949673
+  %2 = zext i32 %1 to i64
+  ret i64 %2
+}
+
 attributes #0 = { nounwind }

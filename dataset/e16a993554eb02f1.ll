@@ -14,6 +14,7 @@
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/rational.ll
 ; bullet3/optimized/b3ConvexUtility.ll
 ; bullet3/optimized/b3DNA.ll
 ; bullet3/optimized/btConvexPolyhedron.ll
@@ -102,6 +103,7 @@
 ; llvm/optimized/SummaryBasedOptimizations.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; llvm/optimized/VLIWMachineScheduler.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -132,7 +134,6 @@
 ; nix/optimized/parser-tab.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; nuttx/optimized/serial.c.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
@@ -252,12 +253,11 @@
 ; wireshark/optimized/ws_strptime.c.ll
 ; yosys/optimized/rtlil_parser.tab.ll
 ; yosys/optimized/verilog_parser.tab.ll
-; zxing/optimized/AZToken.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -279,7 +279,6 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; hyperscan/optimized/Parser.cpp.ll
 ; hyperscan/optimized/control_verbs.cpp.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/messagepattern.ll
 ; icu/optimized/number_rounding.ll
 ; libevent/optimized/event.c.ll
@@ -407,6 +406,7 @@ entry:
 ; llvm/optimized/X86FixupBWInsts.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
@@ -560,7 +560,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 

@@ -9,5 +9,5 @@ func0000000000000005:                   # @func0000000000000005
 	imulq	$86400, %rdx, %rax              # imm = 0x15180
 	subq	%rax, %rsi
 	sarq	$63, %rsi
-	leaq	-146096(%rsi,%rdi), %rax
+	leaq	-146096(%rdi,%rsi), %rax
 	retq

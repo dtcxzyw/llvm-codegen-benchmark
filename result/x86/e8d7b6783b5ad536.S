@@ -8,8 +8,3 @@ func0000000000000044:                   # @func0000000000000044
 	cltq
 	leaq	(%rdi,%rax,2), %rax
 	retq
-func0000000000000084:                   # @func0000000000000084
-	leal	1(%rdx,%rsi), %eax
-	cltq
-	leaq	(%rdi,%rax,8), %rax
-	retq

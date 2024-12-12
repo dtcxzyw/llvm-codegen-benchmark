@@ -75,7 +75,7 @@ define i1 @func0000000000000006(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -86,6 +86,7 @@ entry:
 ; darktable/optimized/metadata.c.ll
 ; darktable/optimized/tagging.c.ll
 ; icu/optimized/uhash.ll
+; lvgl/optimized/lv_scale.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
@@ -98,7 +99,6 @@ entry:
 ; wireshark/optimized/packet-nfs.c.ll
 ; wireshark/optimized/packet-nlm.c.ll
 ; wireshark/optimized/packet-pfcp.c.ll
-; wireshark/optimized/packet-smb-sidsnooping.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; z3/optimized/arith_solver.cpp.ll
@@ -112,7 +112,7 @@ define i1 @func0000000000000001(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 

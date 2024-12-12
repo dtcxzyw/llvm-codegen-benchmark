@@ -1,5 +1,5 @@
 
-; 272 occurrences:
+; 292 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -7,12 +7,20 @@
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; c3c/optimized/bigint.c.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
-; cmake/optimized/compress.c.ll
 ; cmake/optimized/deflate.c.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; eastl/optimized/Int128_t.cpp.ll
@@ -34,7 +42,6 @@
 ; folly/optimized/dynamic.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
 ; freetype/optimized/psaux.c.ll
-; gromacs/optimized/compress.c.ll
 ; gromacs/optimized/deflate.c.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; libquic/optimized/curve25519.c.ll
@@ -94,8 +101,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -270,7 +275,22 @@
 ; wolfssl/optimized/poly1305.c.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
-; zlib/optimized/compress.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -281,7 +301,7 @@ entry:
   ret i64 %5
 }
 
-; 178 occurrences:
+; 176 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -319,8 +339,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -500,7 +518,7 @@ entry:
   ret i64 %5
 }
 
-; 47 occurrences:
+; 49 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -548,6 +566,8 @@ entry:
 ; velox/optimized/SsdFile.cpp.ll
 ; wireshark/optimized/packet-xra.c.ll
 ; wolfssl/optimized/poly1305.c.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -569,28 +589,6 @@ entry:
   %3 = lshr i64 %2, 21
   %4 = add nsw i64 %0, %1
   %5 = add nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 12 occurrences:
-; libquic/optimized/curve25519.c.ll
-; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; libsodium/optimized/libsodium_la-poly1305_donna.ll
-; libsodium/optimized/libsse2_la-poly1305_sse2.ll
-; linux/optimized/intel_ggtt.ll
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; wolfssl/optimized/poly1305.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = lshr i64 %0, 48
-  %5 = add nuw nsw i64 %4, %3
   ret i64 %5
 }
 
@@ -620,7 +618,7 @@ entry:
   ret i64 %5
 }
 
-; 97 occurrences:
+; 95 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -649,8 +647,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -750,6 +746,24 @@ entry:
   %3 = lshr exact i64 %2, 2
   %4 = add nuw nsw i64 %0, %1
   %5 = add nuw i64 %4, %3
+  ret i64 %5
+}
+
+; 8 occurrences:
+; libquic/optimized/curve25519.c.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; libsodium/optimized/libsodium_la-poly1305_donna.ll
+; libsodium/optimized/libsse2_la-poly1305_sse2.ll
+; linux/optimized/intel_ggtt.ll
+; opencv/optimized/softfloat.cpp.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; wolfssl/optimized/poly1305.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = lshr i64 %0, 46
+  %5 = add nuw nsw i64 %4, %3
   ret i64 %5
 }
 

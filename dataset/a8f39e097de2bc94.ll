@@ -3,7 +3,7 @@
 ; abc/optimized/giaDup.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add i32 %3, 1
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nsw i32 %3, -57344

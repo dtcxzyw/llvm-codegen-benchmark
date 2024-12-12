@@ -31,7 +31,7 @@ entry:
 ; tree-sitter-rs/optimized/4sxnw2peombwi3hz.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000064(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 16
   %3 = icmp ult i32 %0, 3
@@ -39,17 +39,14 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/colvargrid.cpp.ll
-; ncnn/optimized/deformableconv2d_x86.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; protobuf/optimized/extension_set_heavy.cc.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(i32 %0, i64 %1) #0 {
+define i64 @func000000000000006a(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 32
   %3 = icmp sgt i32 %0, 0
@@ -57,7 +54,7 @@ entry:
   ret i64 %4
 }
 
-; 36 occurrences:
+; 41 occurrences:
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; ockam-rs/optimized/1j8f46ag92qmaepd.ll
@@ -94,8 +91,13 @@ entry:
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = icmp ult i32 %0, 5
@@ -103,7 +105,7 @@ entry:
   ret i64 %4
 }
 
-; 25 occurrences:
+; 62 occurrences:
 ; actix-rs/optimized/d7z2ueos8qkfuul.ll
 ; actix-rs/optimized/xcr5yeosl21p44j.ll
 ; ockam-rs/optimized/102n9ex6731b1fnk.ll
@@ -129,8 +131,45 @@ entry:
 ; ockam-rs/optimized/cts9nubscl1ph7i.ll
 ; ockam-rs/optimized/hkewlz9gxnrmgs0.ll
 ; ockam-rs/optimized/v91rpx6k3uxsm6j.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0cyv10l6w91jqdqmhl8pbusw2.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/1vv5j9nlfivum07q3z96mzhlk.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/2mkfqxrh29y79zrddup2rfba4.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4h84anocrn0e2zexjpu5utgbx.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5eo3r6xqgcl9c03ocnkjc70d3.ll
+; zed-rs/optimized/5ixvfce98s1x7yb9webqub3ar.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/7nyodpla10x7d0ixqrkhccie4.ll
+; zed-rs/optimized/98w34cm3i57zhkhn56epbm5eb.ll
+; zed-rs/optimized/9c745mpyev6016wrbif8w6jcd.ll
+; zed-rs/optimized/9fdv7qxvc9ek9liffc7407f9x.ll
+; zed-rs/optimized/9sysltstjhp0j3770z48leqk1.ll
+; zed-rs/optimized/9v5brbyi15mcpvvj8t9dauqn4.ll
+; zed-rs/optimized/9ydmyaey957xyuywtl3djlzml.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/b0jacrvunbgse6y69p1vx4gkq.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cgxtqkz3q1lf4y8mn1r3vggst.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/eaprtangkb3lmpqytawf4lguo.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -999999999
   %3 = icmp eq i32 %0, 1000000000
@@ -138,19 +177,14 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 2 occurrences:
 ; freetype/optimized/ftbase.c.ll
-; jemalloc/optimized/malloc_io.ll
-; jemalloc/optimized/malloc_io.pic.ll
-; jemalloc/optimized/malloc_io.sym.ll
 ; nanobind/optimized/nb_type.cpp.ll
-; redis/optimized/malloc_io.ll
-; redis/optimized/malloc_io.sym.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000038(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -8
-  %3 = icmp ugt i32 %0, 8
+  %3 = icmp samesign ugt i32 %0, 8
   %4 = select i1 %3, i64 %2, i64 0
   ret i64 %4
 }
@@ -158,12 +192,27 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/bitops.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i64 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %.not = icmp eq i32 %0, 64
   %3 = select i1 %.not, i64 9223372036854775807, i64 %2
   ret i64 %3
+}
+
+; 5 occurrences:
+; jemalloc/optimized/malloc_io.ll
+; jemalloc/optimized/malloc_io.pic.ll
+; jemalloc/optimized/malloc_io.sym.ll
+; redis/optimized/malloc_io.ll
+; redis/optimized/malloc_io.sym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i32 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -1
+  %3 = icmp ugt i32 %0, 1
+  %4 = select i1 %3, i64 %2, i64 0
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

@@ -1,7 +1,8 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/writer.cc.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cmake/optimized/archive_write.c.ll
 ; coreutils-rs/optimized/tq1d77uuiq535i2.ll
 ; cpython/optimized/bufferedio.ll
@@ -39,9 +40,8 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/ring_buffer.ll
-; openmpi/optimized/vprotocol_pessimist_sender_based.ll
 ; qemu/optimized/block_mirror.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

@@ -1,8 +1,8 @@
 func000000000000000c:                   # @func000000000000000c
-	shll	$26, %edx
+	shll	$16, %edx
 	orl	%esi, %edx
 	movl	%edx, %eax
-	orl	$262144, %eax                   # imm = 0x40000
+	orl	$1048576, %eax                  # imm = 0x100000
 	testb	$1, %dil
 	cmovnel	%edx, %eax
 	retq
@@ -24,9 +24,9 @@ func000000000000000f:                   # @func000000000000000f
 	retq
 func0000000000000003:                   # @func0000000000000003
 	shll	$24, %edx
-	leal	262144(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
+	leal	262144(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

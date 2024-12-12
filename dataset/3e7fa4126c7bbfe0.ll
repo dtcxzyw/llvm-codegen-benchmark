@@ -1,9 +1,10 @@
 
-; 226 occurrences:
+; 227 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/inflate.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
+; boost/optimized/area.ll
 ; clamav/optimized/filtering.c.ll
 ; cmake/optimized/inflate.c.ll
 ; coreutils-rs/optimized/2atmtah7pt1us1n0.ll
@@ -115,6 +116,7 @@
 ; lua/optimized/lgc.ll
 ; lua/optimized/lua.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; lvgl/optimized/lv_font.ll
 ; meilisearch-rs/optimized/2fpcolt33ttb4v7z.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/map.cpp.ll
@@ -150,9 +152,6 @@
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/datetime.ll
 ; postgres/optimized/formatting.ll
-; postgres/optimized/kwlookup.ll
-; postgres/optimized/kwlookup_shlib.ll
-; postgres/optimized/kwlookup_srv.ll
 ; postgres/optimized/syncrep.ll
 ; postgres/optimized/zic.ll
 ; proj/optimized/proj_strtod.cpp.ll
@@ -166,7 +165,6 @@
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; qemu/optimized/io_channel-socket.c.ll
 ; qemu/optimized/util_cutils.c.ll
-; rayon-rs/optimized/4h6yllo6psxznznq.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/parser_st.ll
@@ -177,6 +175,7 @@
 ; rust-analyzer-rs/optimized/150tm5mq81nfdpak.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
+; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/3jjg9gby3m7lsfsh.ll
 ; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
@@ -225,6 +224,8 @@
 ; yosys/optimized/share.ll
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/verilog_backend.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
@@ -251,7 +252,7 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/ucnv2022.ll
 ; libquic/optimized/a_print.c.ll
@@ -266,6 +267,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-a_print.ll
 ; php/optimized/crypt_freesec.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
+; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-knet.c.ll
@@ -277,7 +279,7 @@ entry:
   ret i32 %3
 }
 
-; 48 occurrences:
+; 53 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRpo.c.ll
@@ -295,6 +297,7 @@ entry:
 ; abc/optimized/wlcReadVer.c.ll
 ; arrow/optimized/datum.cc.ll
 ; arrow/optimized/message.cc.ll
+; boost/optimized/parser_utils.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; cpython/optimized/_codecs_kr.ll
@@ -314,18 +317,22 @@ entry:
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/vectornode.ll
 ; openusd/optimized/decodeframe.c.ll
+; php/optimized/decode.ll
 ; php/optimized/json_scanner.ll
 ; postgres/optimized/parse_manifest.ll
 ; postgres/optimized/parse_manifest_shlib.ll
 ; postgres/optimized/parse_manifest_srv.ll
+; qemu/optimized/gdbstub.c.ll
 ; qemu/optimized/libvduse.c.ll
+; quickjs/optimized/libbf.ll
+; quickjs/optimized/quickjs.ll
+; rust-analyzer-rs/optimized/rilullg9p294yp1.ll
 ; slurm/optimized/select.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wireshark/optimized/packet-ber.c.ll
-; wireshark/optimized/packet-dmp.c.ll
-; wireshark/optimized/pcapng.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/ssl.c.ll
+; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
@@ -334,13 +341,14 @@ entry:
   ret i32 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/collationkeys.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/BreakableToken.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
@@ -366,6 +374,17 @@ define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %3 = select i1 %2, i32 %0, i32 -1
+  ret i32 %3
+}
+
+; 2 occurrences:
+; wireshark/optimized/packet-dmp.c.ll
+; wireshark/optimized/pcapng.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ult i8 %1, 10
+  %3 = select i1 %2, i32 %0, i32 9
   ret i32 %3
 }
 

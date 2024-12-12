@@ -48,7 +48,8 @@ entry:
   ret i16 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openjdk/optimized/Ushort555Rgbx.ll
 ; openjdk/optimized/Ushort565Rgb.ll
 ; Function Attrs: nounwind

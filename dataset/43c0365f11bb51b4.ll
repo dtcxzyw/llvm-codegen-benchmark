@@ -17,11 +17,11 @@
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/intel_sseu.ll
-; linux/optimized/virtgpu_plane.ll
 ; linux/optimized/vlv_dsi.ll
 ; llvm/optimized/MicrosoftCXXABI.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_refr.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; oiio/optimized/imageio.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
@@ -38,8 +38,8 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -51,8 +51,8 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -71,15 +71,14 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/intel_fb.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/MicrosoftCXXABI.cpp.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; opencv/optimized/tracking_utils.cpp.ll
@@ -88,11 +87,13 @@ entry:
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-gquic.c.ll
 ; wireshark/optimized/packet-oran.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -146,7 +147,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -159,18 +160,26 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nuw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nuw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 24 occurrences:
+; 32 occurrences:
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
@@ -193,8 +202,8 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -204,17 +213,16 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; libwebp/optimized/extras.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_bw.ll
-; linux/optimized/rsmisc.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
 ; opencv/optimized/brisk.cpp.ll
@@ -231,19 +239,21 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; slurm/optimized/gres.ll
 ; wireshark/optimized/packet-sbc.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -255,7 +265,7 @@ entry:
 define i32 @func000000000000001d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -266,7 +276,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nuw i32 %3, %1
+  %4 = mul nuw i32 %1, %3
   %5 = add nuw i32 %4, %0
   ret i32 %5
 }
@@ -285,8 +295,8 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -297,7 +307,7 @@ entry:
 define i32 @func0000000000000017(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }

@@ -1,5 +1,6 @@
 
 ; 120 occurrences:
+; boost/optimized/src.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -100,7 +101,6 @@
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
-; qemu/optimized/fpu_softfloat.c.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/compile.ll
@@ -121,7 +121,7 @@
 ; ruby/optimized/vm.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0) #0 {
+define i1 @func00000000000001a4(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 60
   %2 = trunc nuw nsw i64 %1 to i32
@@ -231,7 +231,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0) #0 {
+define i1 @func00000000000001a1(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
   %2 = icmp eq i64 %1, 4494592428115755008
@@ -242,7 +242,7 @@ entry:
 ; git/optimized/pack-bitmap-write.ll
 ; regex-rs/optimized/1hv7a9vv5ulvjrv1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0) #0 {
+define i1 @func0000000000000124(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32

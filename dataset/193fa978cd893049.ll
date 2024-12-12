@@ -1,5 +1,6 @@
 
-; 60 occurrences:
+; 63 occurrences:
+; boost/optimized/static_string.ll
 ; cmake/optimized/cmMakefile.cxx.ll
 ; cmake/optimized/urlapi.c.ll
 ; cmake/optimized/vtls.c.ll
@@ -49,6 +50,7 @@
 ; mitsuba3/optimized/volume.cpp.ll
 ; mitsuba3/optimized/volumegrid.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
+; opencv/optimized/motion_estimators.cpp.ll
 ; openssl/optimized/quic_multistream_test-bin-quictestlib.ll
 ; openssl/optimized/quic_newcid_test-bin-quictestlib.ll
 ; openssl/optimized/quic_srt_gen_test-bin-quictestlib.ll
@@ -58,7 +60,8 @@
 ; php/optimized/memory.ll
 ; php/optimized/php_reflection.ll
 ; php/optimized/zend_API.ll
-; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -69,7 +72,7 @@ entry:
   ret i64 %4
 }
 
-; 319 occurrences:
+; 333 occurrences:
 ; abseil-cpp/optimized/log_entry_test.cc.ll
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -104,6 +107,20 @@ entry:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; clamav/optimized/pdf.c.ll
@@ -398,7 +415,7 @@ entry:
   ret i64 %4
 }
 
-; 325 occurrences:
+; 339 occurrences:
 ; abseil-cpp/optimized/log_entry_test.cc.ll
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -433,6 +450,20 @@ entry:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/cmCTest.cxx.ll

@@ -1,21 +1,21 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	movl	%edx, %eax
 	imulq	%rsi, %rax
 	shlq	$9, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	movl	%edx, %eax
 	imulq	%rsi, %rax
 	shlq	$2, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000381:                   # @func0000000000000381
 	movl	%edx, %eax
 	imulq	%rsi, %rax
 	shlq	$2, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

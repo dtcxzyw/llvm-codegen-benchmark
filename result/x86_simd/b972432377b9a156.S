@@ -1,0 +1,11 @@
+.LCPI0_0:
+	.quad	9223372036854775744             # 0x7fffffffffffffc0
+.LCPI0_1:
+	.quad	63                              # 0x3f
+func0000000000000023:                   # @func0000000000000023
+	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
+	vpminuq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
+	retq

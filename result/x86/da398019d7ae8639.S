@@ -6,8 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	cmovnel	%ecx, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	subl	%edx, %esi
-	leal	-14(%rsi), %ecx
+	notl	%edx
+	leal	(%rdx,%rsi), %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax

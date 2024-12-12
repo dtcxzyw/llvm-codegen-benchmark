@@ -1,4 +1,4 @@
-func0000000000000134:                   # @func0000000000000134
+func0000000000000264:                   # @func0000000000000264
 	shrq	$3, %rsi
 	imull	$-1963413621, %esi, %eax        # imm = 0x8AF8AF8B
 	cltq
@@ -8,7 +8,7 @@ func0000000000000134:                   # @func0000000000000134
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000138:                   # @func0000000000000138
+func0000000000000268:                   # @func0000000000000268
 	shrq	$3, %rsi
 	imull	$954437177, %esi, %eax          # imm = 0x38E38E39
 	cltq
@@ -18,7 +18,7 @@ func0000000000000138:                   # @func0000000000000138
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	movq	%rsi, %rax
 	movabsq	$3074457345618258603, %rcx      # imm = 0x2AAAAAAAAAAAAAAB
 	imulq	%rcx
@@ -33,7 +33,7 @@ func0000000000000038:                   # @func0000000000000038
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	movq	%rsi, %rax
 	movabsq	$3074457345618258603, %rcx      # imm = 0x2AAAAAAAAAAAAAAB
 	imulq	%rcx

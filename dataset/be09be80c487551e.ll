@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i16 %0, i16 %1) #0 {
 entry:
@@ -72,6 +73,16 @@ entry:
   %.not = icmp ugt i16 %0, %1
   %2 = zext i1 %.not to i64
   ret i64 %2
+}
+
+; 1 occurrences:
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i16 %0, i16 %1) #0 {
+entry:
+  %2 = icmp sge i16 %0, %1
+  %3 = zext i1 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

@@ -34,7 +34,7 @@
 ; php/optimized/logical_filters.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1048575
   %4 = icmp eq i32 %3, 0
@@ -48,7 +48,7 @@ entry:
 ; darktable/optimized/introspection_highlights.c.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp ne i32 %3, 0
@@ -62,7 +62,7 @@ entry:
 ; abc/optimized/covMinSop.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
   %4 = icmp ne i32 %3, 0
@@ -80,7 +80,7 @@ entry:
 ; slurm/optimized/gres.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 512
   %4 = icmp eq i32 %3, 0
@@ -93,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Host.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp ne i32 %3, 0
@@ -104,10 +104,24 @@ entry:
 }
 
 ; 2 occurrences:
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 254
+  %4 = icmp samesign ugt i32 %3, 5
+  %5 = icmp eq i32 %1, 0
+  %6 = select i1 %5, i1 %0, i1 false
+  %7 = select i1 %6, i1 %4, i1 false
+  ret i1 %7
+}
+
+; 2 occurrences:
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1048576
   %4 = icmp eq i32 %3, 0

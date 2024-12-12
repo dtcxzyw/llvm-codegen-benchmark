@@ -22,7 +22,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovw2m	%xmm1, %k0
 	vpslld	$31, %ymm0, %ymm0
 	vpmovd2m	%ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

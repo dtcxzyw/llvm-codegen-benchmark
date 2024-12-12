@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -14,6 +14,7 @@
 ; minetest/optimized/texturesource.cpp.ll
 ; msdfgen/optimized/render-sdf.cpp.ll
 ; msdfgen/optimized/save-png.cpp.ll
+; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; opencv/optimized/objects_associator.cpp.ll

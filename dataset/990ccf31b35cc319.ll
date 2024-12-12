@@ -1,6 +1,6 @@
 
-%"struct.asmjit::_abi_1_10::Operand_.2488708" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2488696", i32, [2 x i32] }
-%"struct.asmjit::_abi_1_10::OperandSignature.2488696" = type { i32 }
+%"struct.asmjit::_abi_1_10::Operand_.2604140" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2604128", i32, [2 x i32] }
+%"struct.asmjit::_abi_1_10::OperandSignature.2604128" = type { i32 }
 
 ; 77 occurrences:
 ; abc/optimized/dauDsd.c.ll
@@ -34,8 +34,8 @@
 ; llvm/optimized/RewriteRope.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; luau/optimized/lvmload.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meshlab/optimized/filter_measure.cpp.ll
-; mitsuba3/optimized/archtraits.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
@@ -81,18 +81,19 @@
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/PerspectiveTransform.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw [4 x %"struct.asmjit::_abi_1_10::Operand_.2488708"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x %"struct.asmjit::_abi_1_10::Operand_.2604140"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/cmdHist.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
+; boost/optimized/get_turns.ll
 ; clamav/optimized/readdb.c.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -121,15 +122,15 @@ entry:
 ; z3/optimized/smt_almost_cg_table.cpp.ll
 ; z3/optimized/smt_cg_table.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = and i64 %2, 127
-  %4 = getelementptr nusw [128 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [128 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 44 occurrences:
+; 47 occurrences:
 ; abc/optimized/giaMuxes.c.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; casadi/optimized/cvodes.c.ll
@@ -157,6 +158,8 @@ entry:
 ; luajit/optimized/lj_parse_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_refr.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -173,13 +176,14 @@ entry:
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/reduce_args_simplifier.cpp.ll
 ; z3/optimized/sat_lut_finder.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 255
   %3 = and i64 %2, 255
-  %4 = getelementptr nusw [24 x { [4 x i64] }], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [24 x { [4 x i64] }], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -212,7 +216,7 @@ entry:
   ret ptr %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cpython/optimized/hamt.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/filemap.ll
@@ -228,7 +232,6 @@ entry:
 ; qemu/optimized/hw_ipack_tpci200.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
-; qemu/optimized/hw_usb_imx-usb-phy.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
@@ -357,11 +360,11 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; verilator/optimized/V3String.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 14
   %3 = and i64 %2, 15
-  %4 = getelementptr nusw [16 x i32], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [16 x i32], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

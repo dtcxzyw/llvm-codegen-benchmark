@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	4294967294                      # 0xfffffffe
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpnleud	%ymm2, %ymm1, %k1

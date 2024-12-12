@@ -1,8 +1,5 @@
 
-%"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.2490375" = type { i32, i32, i32, i32, i32, i32, i8, i8, [6 x i8], [32 x i8] }
-%"class.llvm::FunctionCallee.3059686" = type { ptr, ptr }
-
-; 251 occurrences:
+; 279 occurrences:
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; brotli/optimized/static_dict.c.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -17,15 +14,16 @@
 ; libwebp/optimized/filter_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; lief/optimized/gcm.c.ll
+; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; lua/optimized/lapi.ll
 ; lua/optimized/ltm.ll
+; lvgl/optimized/lv_chart.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; meshlab/optimized/balltree.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-ppc64v1.cc.ll
@@ -211,6 +209,33 @@
 ; openssl/optimized/libssl-lib-quic_rx_depack.ll
 ; openssl/optimized/libssl-shlib-quic_ackm.ll
 ; openssl/optimized/libssl-shlib-quic_rx_depack.ll
+; openusd/optimized/authoring.cpp.ll
+; openusd/optimized/bakeSkinning.cpp.ll
+; openusd/optimized/blendShapeQuery.cpp.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/flatNormals.cpp.ll
+; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
+; openusd/optimized/materialBindingAPI.cpp.ll
+; openusd/optimized/pathTable.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/pointBased.cpp.ll
+; openusd/optimized/pointInstancer.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primGather.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/simplify.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/smoothNormals.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/stitchClips.cpp.ll
+; openusd/optimized/tbbKernel.cpp.ll
+; openusd/optimized/testWorkLoops.cpp.ll
+; openusd/optimized/testWorkReduce.cpp.ll
+; openusd/optimized/testWorkThreadLimits.cpp.ll
+; openusd/optimized/utils.cpp.ll
 ; openvdb/optimized/Activate.cc.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/AttributeArrayString.cc.ll
@@ -255,12 +280,12 @@
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 28
-  %5 = getelementptr nusw [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.2490375"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 280
+  %5 = getelementptr nusw nuw [4 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -295,51 +320,12 @@ entry:
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 28
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 28
   %5 = getelementptr [64 x i8], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 28 occurrences:
-; llvm/optimized/HWAddressSanitizer.cpp.ll
-; openusd/optimized/authoring.cpp.ll
-; openusd/optimized/bakeSkinning.cpp.ll
-; openusd/optimized/blendShapeQuery.cpp.ll
-; openusd/optimized/crateData.cpp.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/flatNormals.cpp.ll
-; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
-; openusd/optimized/materialBindingAPI.cpp.ll
-; openusd/optimized/pathTable.cpp.ll
-; openusd/optimized/piPrototypeSceneIndex.cpp.ll
-; openusd/optimized/pointBased.cpp.ll
-; openusd/optimized/pointInstancer.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/primGather.cpp.ll
-; openusd/optimized/primTypeIndex.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/simplify.cpp.ll
-; openusd/optimized/skeletonAdapter.cpp.ll
-; openusd/optimized/smoothNormals.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; openusd/optimized/stitchClips.cpp.ll
-; openusd/optimized/tbbKernel.cpp.ll
-; openusd/optimized/testWorkLoops.cpp.ll
-; openusd/optimized/testWorkReduce.cpp.ll
-; openusd/optimized/testWorkThreadLimits.cpp.ll
-; openusd/optimized/utils.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 1
-  %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 360
-  %5 = getelementptr nusw [2 x %"class.llvm::FunctionCallee.3059686"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

@@ -1,11 +1,10 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/bzlib.c.ll
-; icu/optimized/ucptrie.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i16 %1, i32 %2) #0 {
+define i1 @func00000000000001a4(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = and i32 %3, 983040
@@ -20,7 +19,7 @@ entry:
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/bzlib.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i16 %1, i32 %2) #0 {
+define i1 @func00000000000001a6(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = and i32 %3, 983040

@@ -8,5 +8,5 @@ func0000000000000000:                   # @func0000000000000000
 	fli.s	fa4, -1.0
 	vfadd.vf	v12, v12, fa4
 	vfmul.vf	v12, v12, fa5
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	ret

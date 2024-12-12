@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 14
   %4 = and i32 %3, 3
@@ -28,13 +28,13 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaPat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 30
   %4 = and i32 %3, 1
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = icmp eq i32 %5, 3
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -51,7 +51,7 @@ entry:
   %4 = and i32 %3, 255
   %5 = or i32 %4, %1
   %6 = icmp eq i32 %5, 0
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

@@ -3,24 +3,32 @@ func0000000000000100:                   # @func0000000000000100
 	addq	%rsi, %rax
 	leaq	-3(%rdi,%rax), %rax
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000fb:                   # @func00000000000000fb
 	movzwl	%dx, %eax
 	addq	%rsi, %rax
 	leaq	7(%rdi,%rax), %rax
 	retq
-func00000000000000ab:                   # @func00000000000000ab
+func00000000000000ff:                   # @func00000000000000ff
 	movzwl	%dx, %eax
-	leaq	(%rax,%rax,2), %rax
-	leaq	(%rsi,%rax,2), %rax
-	leaq	(%rdi,%rdi,2), %rcx
-	leaq	34(%rax,%rcx,2), %rax
+	addq	%rsi, %rax
+	leaq	32(%rdi,%rax), %rax
 	retq
-func0000000000000080:                   # @func0000000000000080
+func00000000000000c0:                   # @func00000000000000c0
 	movzwl	%dx, %eax
 	addq	%rsi, %rax
 	leaq	5(%rdi,%rax), %rax
 	retq
-func0000000000000082:                   # @func0000000000000082
+func00000000000000c2:                   # @func00000000000000c2
+	movzwl	%dx, %eax
+	addq	%rsi, %rax
+	leaq	-2(%rdi,%rax), %rax
+	retq
+func00000000000000c3:                   # @func00000000000000c3
+	movzwl	%dx, %eax
+	addq	%rsi, %rax
+	leaq	12(%rdi,%rax), %rax
+	retq
+func00000000000000fe:                   # @func00000000000000fe
 	movzwl	%dx, %eax
 	addq	%rsi, %rax
 	leaq	-2(%rdi,%rax), %rax

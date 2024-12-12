@@ -1,13 +1,9 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	sshll2	v3.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
-	ushll	v4.2d, v1.2s, #0
-	ushll2	v1.2d, v1.4s, #0
-	cmeq	v5.2d, v0.2d, v2.2d
-	cmeq	v2.2d, v3.2d, v2.2d
-	bif	v1.16b, v3.16b, v2.16b
-	bit	v0.16b, v4.16b, v5.16b
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	mov	w9, w1
+	cmn	w0, #1
+	csel	x0, x9, x8, eq
 	ret
                                         // -- End function

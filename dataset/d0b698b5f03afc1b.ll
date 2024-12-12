@@ -1,5 +1,7 @@
 
-; 14 occurrences:
+; 16 occurrences:
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/converter.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -30,7 +32,7 @@ entry:
 define i32 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = select i1 %0, i32 %4, i32 0
   ret i32 %5
 }
@@ -41,7 +43,7 @@ entry:
 define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = select i1 %0, i32 %4, i32 0
   ret i32 %5
 }
@@ -55,18 +57,7 @@ entry:
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
-  %4 = or disjoint i32 %3, %1
-  %5 = select i1 %0, i32 %4, i32 0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; linux/optimized/nfs3xdr.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 20
-  %4 = or i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = select i1 %0, i32 %4, i32 0
   ret i32 %5
 }

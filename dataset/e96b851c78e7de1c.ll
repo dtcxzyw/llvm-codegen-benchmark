@@ -1,11 +1,10 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcXsim.c.ll
 ; darktable/optimized/duplicate.c.ll
 ; linux/optimized/api.ll
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/drm_gem_shmem_helper.ll
-; linux/optimized/drm_prime.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/gen6_ppgtt.ll
 ; linux/optimized/intel_guc_log.ll
@@ -14,7 +13,6 @@
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/namei.ll
-; linux/optimized/nsproxy.ll
 ; linux/optimized/pci-sysfs.ll
 ; linux/optimized/proc_sysctl.ll
 ; linux/optimized/rsrc.ll

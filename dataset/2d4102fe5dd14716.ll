@@ -1,16 +1,7 @@
 
-; 1 occurrences:
-; ruby/optimized/time.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 1048575
-  %2 = mul nuw nsw i64 %1, 1000
-  ret i64 %2
-}
-
-; 38 occurrences:
+; 39 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/bigint.c.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
@@ -98,17 +89,6 @@ entry:
   %1 = and i64 %0, 4294967295
   %2 = mul i64 %1, 5871781006564002453
   %3 = lshr i64 %2, 57
-  ret i64 %3
-}
-
-; 1 occurrences:
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 1023
-  %2 = mul i64 %1, 3248559593059516416
-  %3 = lshr exact i64 %2, 31
   ret i64 %3
 }
 

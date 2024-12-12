@@ -1,20 +1,8 @@
 
 ; 1 occurrences:
-; qemu/optimized/block_vpc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %2, 1
-  %4 = select i1 %1, i1 true, i1 %3
-  %5 = icmp ult i32 %0, 512
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 281474976710656
   %4 = select i1 %1, i1 true, i1 %3
@@ -26,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/ishield.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -108,7 +96,7 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %1, i1 true, i1 %3

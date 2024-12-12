@@ -23,6 +23,18 @@ entry:
   ret i16 %3
 }
 
+; 2 occurrences:
+; linux/optimized/intel_sseu.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000003(i32 %0) #0 {
+entry:
+  %1 = lshr i32 %0, 16
+  %2 = trunc nuw nsw i32 %1 to i16
+  %3 = xor i16 %2, 255
+  ret i16 %3
+}
+
 ; 1 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind

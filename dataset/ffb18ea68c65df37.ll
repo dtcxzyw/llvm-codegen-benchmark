@@ -34,7 +34,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fmul double %4, 5.000000e-01
   ret double %5
 }

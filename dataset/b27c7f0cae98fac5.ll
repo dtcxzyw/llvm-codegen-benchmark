@@ -1,6 +1,6 @@
 
-; 14 occurrences:
-; darktable/optimized/jpeg.c.ll
+; 15 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; flac/optimized/replaygain_analysis.c.ll
@@ -9,7 +9,8 @@
 ; icu/optimized/ucnvbocu.ll
 ; libjpeg-turbo/optimized/jcicc.c.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_refr.ll
 ; oiio/optimized/jpegoutput.cpp.ll
 ; quantlib/optimized/date.ll
 ; velox/optimized/TimestampConversion.cpp.ll

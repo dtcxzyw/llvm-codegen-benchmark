@@ -4,16 +4,15 @@ func0000000000000004:                   # @func0000000000000004
 .LBB0_2:                                # %entry
 	addi	a0, a0, 1
 	ret
-func0000000000000086:                   # @func0000000000000086
+func0000000000000107:                   # @func0000000000000107
 	bnez	a0, .LBB1_2
 	add	a0, a1, a2
 .LBB1_2:                                # %entry
 	addi	a0, a0, 1
 	ret
-func0000000000000087:                   # @func0000000000000087
+func0000000000000187:                   # @func0000000000000187
 	bnez	a0, .LBB2_2
-	slli	a0, a2, 6
-	add	a0, a0, a1
+	add	a0, a1, a2
 .LBB2_2:                                # %entry
-	addi	a0, a0, 24
+	addi	a0, a0, 1
 	ret

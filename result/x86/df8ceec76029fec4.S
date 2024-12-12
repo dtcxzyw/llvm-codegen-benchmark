@@ -1,28 +1,28 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	shrl	$9, %esi
 	andl	$1, %edx
 	subl	%edx, %esi
-	cmpl	%edi, %esi
-	setl	%al
+	cmpl	%esi, %edi
+	setg	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000029:                   # @func0000000000000029
+	shrl	$18, %esi
+	andl	$1, %edx
+	subl	%edx, %esi
+	cmpl	%esi, %edi
+	setae	%al
+	retq
+func0000000000000024:                   # @func0000000000000024
+	shrl	$18, %esi
+	andl	$1, %edx
+	subl	%edx, %esi
+	cmpl	%esi, %edi
+	setb	%al
+	retq
+func0000000000000021:                   # @func0000000000000021
 	shrl	$3, %esi
 	andl	$1, %edx
 	subl	%edx, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
-	retq
-func0000000000000019:                   # @func0000000000000019
-	shrl	$18, %esi
-	andl	$1, %edx
-	subl	%edx, %esi
-	cmpl	%edi, %esi
-	setbe	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	shrl	$18, %esi
-	andl	$1, %edx
-	subl	%edx, %esi
-	cmpl	%edi, %esi
-	seta	%al
 	retq

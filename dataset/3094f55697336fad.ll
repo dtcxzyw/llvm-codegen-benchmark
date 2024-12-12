@@ -1,8 +1,10 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/plaRead.c.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_label.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openmpi/optimized/coll_base_allreduce.ll
 ; openmpi/optimized/coll_base_topo.ll

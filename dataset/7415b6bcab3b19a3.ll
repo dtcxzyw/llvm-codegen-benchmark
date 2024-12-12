@@ -15,6 +15,22 @@ entry:
   ret i64 %6
 }
 
+; 5 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = mul nsw i64 %3, 1000000
+  %5 = and i64 %0, 4294967295
+  %6 = add nsw i64 %4, %5
+  ret i64 %6
+}
+
 ; 2 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll

@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 61 occurrences:
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -38,7 +38,6 @@
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; opencv/optimized/qualitybrisque.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
-; openexr/optimized/base.c.ll
 ; openjdk/optimized/cmsopt.ll
 ; openusd/optimized/flatNormals.cpp.ll
 ; openusd/optimized/smoothNormals.cpp.ll
@@ -57,6 +56,11 @@
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(float %0) #0 {
 entry:
@@ -176,7 +180,8 @@ entry:
   ret i1 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
 ; minetest/optimized/CGUIImage.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; minetest/optimized/game.cpp.ll
@@ -263,7 +268,7 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_func_array.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -272,6 +277,7 @@ entry:
 ; oiio/optimized/deepdata.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/super_scale.cpp.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(float %0) #0 {
 entry:

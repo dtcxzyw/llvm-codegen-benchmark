@@ -17,7 +17,7 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vfncvt.f.xu.w	v9, v10
-	vmfne.vv	v0, v9, v8
+	vmfne.vv	v0, v8, v9
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -32,7 +32,7 @@ func0000000000000012:                   # @func0000000000000012
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vfncvt.f.xu.w	v9, v10
-	vmfeq.vv	v0, v9, v8
+	vmfeq.vv	v0, v8, v9
 	ret
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e32, m1, ta, ma

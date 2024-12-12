@@ -1,10 +1,10 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andb	$31, %sil
 	shlxq	%rsi, %rdi, %rax
 	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
 	setg	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andb	$31, %sil
 	shlxq	%rsi, %rdi, %rax
 	cmpq	$-2147483648, %rax              # imm = 0x80000000

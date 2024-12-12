@@ -6,7 +6,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 20
   %3 = add nuw nsw i32 %2, 3050
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = shl i32 %4, 20
   ret i32 %5
 }

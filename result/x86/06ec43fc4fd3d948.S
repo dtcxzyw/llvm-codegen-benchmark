@@ -1,18 +1,16 @@
-func0000000000000311:                   # @func0000000000000311
-	negl	%edi
-	setb	%al
+func0000000000000621:                   # @func0000000000000621
+	testl	%edi, %edi
+	setne	%al
 	andb	%sil, %al
 	movzbl	%al, %eax
-	negl	%eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000301:                   # @func0000000000000301
-	negl	%edi
-	setb	%al
+func0000000000000601:                   # @func0000000000000601
+	testl	%edi, %edi
+	setne	%al
 	andb	%sil, %al
 	movzbl	%al, %eax
-	negl	%eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

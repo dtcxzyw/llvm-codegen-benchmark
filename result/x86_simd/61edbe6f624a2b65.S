@@ -4,7 +4,7 @@
 	.quad	256                             # 0x100
 .LCPI0_2:
 	.long	32                              # 0x20
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpltuq	.LCPI0_1(%rip){1to4}, %ymm1, %k1
 	vptestnmd	.LCPI0_2(%rip){1to4}, %xmm0, %k0 {%k1}
@@ -17,7 +17,7 @@ func0000000000000041:                   # @func0000000000000041
 	.quad	4096                            # 0x1000
 .LCPI1_2:
 	.long	3968                            # 0xf80
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpltuq	.LCPI1_1(%rip){1to4}, %ymm0, %k1
 	vptestnmd	.LCPI1_2(%rip){1to4}, %xmm1, %k0 {%k1}
@@ -30,7 +30,7 @@ func0000000000000014:                   # @func0000000000000014
 	.quad	64                              # 0x40
 .LCPI2_2:
 	.long	31                              # 0x1f
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpltuq	.LCPI2_1(%rip){1to4}, %ymm1, %k1
 	vptestmd	.LCPI2_2(%rip){1to4}, %xmm0, %k0 {%k1}
@@ -43,7 +43,7 @@ func000000000000004c:                   # @func000000000000004c
 	.quad	-4294967295                     # 0xffffffff00000001
 .LCPI3_2:
 	.long	4                               # 0x4
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpltuq	.LCPI3_1(%rip){1to4}, %ymm1, %k1
 	vptestnmd	.LCPI3_2(%rip){1to4}, %xmm0, %k0 {%k1}
@@ -56,7 +56,7 @@ func0000000000000081:                   # @func0000000000000081
 	.quad	18014398509481983               # 0x3fffffffffffff
 .LCPI4_2:
 	.long	4                               # 0x4
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpltuq	.LCPI4_1(%rip){1to4}, %ymm0, %k1
 	vptestmd	.LCPI4_2(%rip){1to4}, %xmm1, %k0 {%k1}

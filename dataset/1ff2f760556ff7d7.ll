@@ -25,14 +25,13 @@ entry:
   ret i8 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; gromacs/optimized/pme.cpp.ll
 ; jsonnet/optimized/libjsonnet.cpp.ll
 ; llvm/optimized/MachineInstrBundle.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; Function Attrs: nounwind
@@ -44,8 +43,7 @@ entry:
   ret i8 %5
 }
 
-; 5 occurrences:
-; abseil-cpp/optimized/time_zone_format.cc.ll
+; 4 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; llvm/optimized/Mangler.cpp.ll
@@ -54,8 +52,19 @@ entry:
 define i8 @func0000000000000004(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i8 0, i8 %0
+  ret i8 %5
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/time_zone_format.cc.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(i8 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 3600
+  %4 = and i1 %3, %1
+  %5 = select i1 %4, i8 43, i8 %0
   ret i8 %5
 }
 

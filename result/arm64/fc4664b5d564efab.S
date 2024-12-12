@@ -1,24 +1,18 @@
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	shll	v3.8h, v3.8b, #8
-	orr	v2.16b, v3.16b, v2.16b
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	orr	w8, w1, w2, lsl #8
+	add	w0, w0, w8, uxth
 	ret
                                         // -- End function
 func000000000000002b:                   // @func000000000000002b
 // %bb.0:                               // %entry
-	shll	v3.8h, v3.8b, #8
-	orr	v2.16b, v3.16b, v2.16b
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	orr	w8, w1, w2, lsl #8
+	add	w0, w0, w8, uxth
 	ret
                                         // -- End function
 func0000000000000029:                   // @func0000000000000029
 // %bb.0:                               // %entry
-	shll	v3.8h, v3.8b, #8
-	orr	v2.16b, v3.16b, v2.16b
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	orr	w8, w1, w2, lsl #8
+	add	w0, w0, w8, uxth
 	ret
                                         // -- End function

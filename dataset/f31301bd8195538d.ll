@@ -43,7 +43,7 @@
 ; linux/optimized/ip6_fib.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp ne ptr %2, null

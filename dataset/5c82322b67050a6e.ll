@@ -44,7 +44,7 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or i32 %3, %0
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or i32 %3, %0
@@ -80,7 +80,7 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, %0
@@ -97,7 +97,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = and i32 %4, 32
   %6 = icmp ne i32 %5, 0
   ret i1 %6
@@ -106,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or i32 %3, %0
@@ -118,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or i32 %3, %0

@@ -12,12 +12,12 @@
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; php/optimized/fastcgi.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000005e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
@@ -37,7 +37,7 @@ entry:
   ret ptr %7
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -48,6 +48,7 @@ entry:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; lz4/optimized/lz4.c.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; openusd/optimized/lz4.cpp.ll
@@ -56,12 +57,12 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
@@ -84,12 +85,12 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stereobm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000005c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %4
   ret ptr %7
 }

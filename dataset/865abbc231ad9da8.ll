@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
   %3 = sub nsw i64 %2, %0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = sub nsw i64 %2, %0
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = sub nsw i64 %2, %0
@@ -38,7 +38,7 @@ entry:
 ; opencv/optimized/data.cpp.ll
 ; opencv/optimized/perf_optflowpyrlk.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %.neg = add i64 %0, 1
@@ -50,7 +50,7 @@ entry:
 ; opencv/optimized/data.cpp.ll
 ; opencv/optimized/perf_optflowpyrlk.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000321(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %.neg = add i64 %0, 1
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/CommandLineArguments.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 5
   %3 = sub i64 %2, %0

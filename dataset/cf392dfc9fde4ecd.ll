@@ -3,7 +3,7 @@
 ; arrow/optimized/UriNormalize.c.ll
 ; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -32
   %4 = icmp ult i8 %3, 95
@@ -17,7 +17,7 @@ entry:
 ; icu/optimized/ucnvbocu.ll
 ; icu/optimized/ucnvsel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000484(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = add nsw i8 %2, 62
   %4 = icmp ult i8 %3, 30
@@ -31,7 +31,7 @@ entry:
 ; grpc/optimized/frame_rst_stream.cc.ll
 ; grpc/optimized/frame_window_update.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 7
   %4 = icmp ne ptr %0, %1
@@ -43,7 +43,7 @@ entry:
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -83
   %4 = icmp ult i8 %3, -2

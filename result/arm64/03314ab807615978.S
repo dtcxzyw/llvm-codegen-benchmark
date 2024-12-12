@@ -1,60 +1,9 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	v16.2d, #1.00000000
-	fmov	v17.2d, #0.50000000
-	fsub	v18.2d, v16.2d, v7.2d
-	fsub	v19.2d, v16.2d, v6.2d
-	fsub	v20.2d, v16.2d, v5.2d
-	fsub	v21.2d, v16.2d, v4.2d
-	fsub	v22.2d, v16.2d, v3.2d
-	fsub	v23.2d, v16.2d, v2.2d
-	fsub	v24.2d, v16.2d, v1.2d
-	fsub	v16.2d, v16.2d, v0.2d
-	fcmgt	v25.2d, v1.2d, v17.2d
-	fcmgt	v26.2d, v0.2d, v17.2d
-	fcmgt	v27.2d, v4.2d, v17.2d
-	fcmgt	v28.2d, v3.2d, v17.2d
-	fcmgt	v29.2d, v2.2d, v17.2d
-	fcmgt	v30.2d, v7.2d, v17.2d
-	fcmgt	v31.2d, v6.2d, v17.2d
-	fcmgt	v17.2d, v5.2d, v17.2d
-	bit	v1.16b, v24.16b, v25.16b
-	bit	v0.16b, v16.16b, v26.16b
-	bit	v3.16b, v22.16b, v28.16b
-	bit	v4.16b, v21.16b, v27.16b
-	bit	v2.16b, v23.16b, v29.16b
-	bit	v6.16b, v19.16b, v31.16b
-	bit	v7.16b, v18.16b, v30.16b
-	bit	v5.16b, v20.16b, v17.16b
-	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
-	fmov	v16.2d, #1.00000000
-	fmov	v17.2d, #0.50000000
-	fsub	v18.2d, v16.2d, v7.2d
-	fsub	v19.2d, v16.2d, v6.2d
-	fsub	v20.2d, v16.2d, v5.2d
-	fsub	v21.2d, v16.2d, v4.2d
-	fsub	v22.2d, v16.2d, v3.2d
-	fsub	v23.2d, v16.2d, v2.2d
-	fsub	v24.2d, v16.2d, v1.2d
-	fsub	v16.2d, v16.2d, v0.2d
-	fcmgt	v25.2d, v17.2d, v1.2d
-	fcmgt	v26.2d, v17.2d, v0.2d
-	fcmgt	v27.2d, v17.2d, v4.2d
-	fcmgt	v28.2d, v17.2d, v3.2d
-	fcmgt	v29.2d, v17.2d, v2.2d
-	fcmgt	v30.2d, v17.2d, v7.2d
-	fcmgt	v31.2d, v17.2d, v6.2d
-	fcmgt	v17.2d, v17.2d, v5.2d
-	bit	v1.16b, v24.16b, v25.16b
-	bit	v0.16b, v16.16b, v26.16b
-	bit	v3.16b, v22.16b, v28.16b
-	bit	v4.16b, v21.16b, v27.16b
-	bit	v2.16b, v23.16b, v29.16b
-	bit	v6.16b, v19.16b, v31.16b
-	bit	v7.16b, v18.16b, v30.16b
-	bit	v5.16b, v20.16b, v17.16b
+	fmov	d1, #1.00000000
+	fmov	d2, #0.50000000
+	fsub	d1, d1, d0
+	fcmp	d0, d2
+	fcsel	d0, d1, d0, gt
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 250 occurrences:
+; 249 occurrences:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -179,7 +179,6 @@
 ; ruby/optimized/util.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; spike/optimized/i64_to_f32.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -259,7 +258,7 @@ entry:
   ret i32 %3
 }
 
-; 67 occurrences:
+; 66 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bdcCore.c.ll
@@ -291,7 +290,6 @@ entry:
 ; linux/optimized/array.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/fixup.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/lbr.ll

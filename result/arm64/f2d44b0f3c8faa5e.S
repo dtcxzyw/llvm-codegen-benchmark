@@ -3,7 +3,7 @@ func0000000000000018:                   // @func0000000000000018
 	cmp	x1, #0
 	mov	w8, #2                          // =0x2
 	cset	w9, ne
-	orr	w9, w9, w0
+	orr	w9, w0, w9
 	tst	w9, #0x1
 	cinc	x0, x8, ne
 	ret

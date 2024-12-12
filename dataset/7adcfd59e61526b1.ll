@@ -1,30 +1,11 @@
 
-; 15 occurrences:
+; 194 occurrences:
 ; hermes/optimized/SimplifyCFG.cpp.ll
 ; linux/optimized/chan.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/io-wq.ll
 ; linux/optimized/pci-driver.ll
 ; linux/optimized/workqueue.ll
-; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/MergedLoadStoreMotion.cpp.ll
-; llvm/optimized/PartialInlining.cpp.ll
-; llvm/optimized/VPlan.cpp.ll
-; llvm/optimized/VPlanSLP.cpp.ll
-; luau/optimized/Simplify.cpp.ll
-; luau/optimized/Unifier2.cpp.ll
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i1 %1, ptr %2) #0 {
-entry:
-  %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
-  %5 = icmp eq ptr %4, %0
-  ret i1 %5
-}
-
-; 179 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
@@ -124,6 +105,7 @@ entry:
 ; llvm/optimized/Lint.cpp.ll
 ; llvm/optimized/LoopUnroll.cpp.ll
 ; llvm/optimized/LoopUnrollAndJam.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/LowerAllowCheckPass.cpp.ll
 ; llvm/optimized/LowerAtomicPass.cpp.ll
 ; llvm/optimized/LowerExpectIntrinsic.cpp.ll
@@ -137,6 +119,7 @@ entry:
 ; llvm/optimized/MemProfiler.cpp.ll
 ; llvm/optimized/MemorySSA.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
+; llvm/optimized/MergedLoadStoreMotion.cpp.ll
 ; llvm/optimized/MetaRenamer.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/ModuleInliner.cpp.ll
@@ -155,6 +138,7 @@ entry:
 ; llvm/optimized/PGOForceFunctionAttrs.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/PGOMemOPSizeOpt.cpp.ll
+; llvm/optimized/PartialInlining.cpp.ll
 ; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
 ; llvm/optimized/PoisonChecking.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
@@ -195,6 +179,8 @@ entry:
 ; llvm/optimized/TypeFinder.cpp.ll
 ; llvm/optimized/TypePromotion.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
+; llvm/optimized/VPlan.cpp.ll
+; llvm/optimized/VPlanSLP.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; llvm/optimized/ValueMapper.cpp.ll
 ; llvm/optimized/ValueProfileCollector.cpp.ll
@@ -204,12 +190,16 @@ entry:
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; llvm/optimized/X86PartialReduction.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; luau/optimized/Simplify.cpp.ll
+; luau/optimized/Unifier2.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000061(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 48
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -217,22 +207,22 @@ entry:
 ; llvm/optimized/CoroElide.cpp.ll
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000006c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 48
-  %5 = icmp ne ptr %4, %0
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000068(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw i8, ptr %3, i64 88
-  %5 = icmp ult ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 88
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
@@ -243,18 +233,18 @@ define i1 @func0000000000000001(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
   %4 = getelementptr i8, ptr %3, i64 1
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; icu/optimized/ustrtrns.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000044(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
   %4 = getelementptr nusw i8, ptr %3, i64 -3
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 

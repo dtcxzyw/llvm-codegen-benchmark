@@ -17,7 +17,7 @@ entry:
   ret i1 %6
 }
 
-; 15 occurrences:
+; 18 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
@@ -26,6 +26,7 @@ entry:
 ; llvm/optimized/LoopRotationUtils.cpp.ll
 ; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; opencv/optimized/evaluation.cpp.ll
 ; postgres/optimized/describe.ll
 ; postgres/optimized/postmaster.ll
@@ -33,6 +34,8 @@ entry:
 ; wireshark/optimized/packet-snmp.c.ll
 ; wireshark/optimized/tshark.c.ll
 ; yosys/optimized/ast.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i1 %2) #0 {
 entry:
@@ -43,9 +46,8 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
-; llvm/optimized/VectorCombine.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i1 %2) #0 {
 entry:
@@ -56,9 +58,8 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
-; proj/optimized/io.cpp.ll
 ; z3/optimized/nlsat_solver.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i32 %1, i1 %2) #0 {

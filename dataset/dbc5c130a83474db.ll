@@ -17,6 +17,22 @@ entry:
   ret i64 %5
 }
 
+; 5 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = mul nsw i64 %2, 3600
+  %4 = mul nsw i64 %0, 60
+  %5 = add nuw nsw i64 %4, %3
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/ngsniffer.c.ll
 ; Function Attrs: nounwind

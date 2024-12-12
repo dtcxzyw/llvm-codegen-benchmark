@@ -6,7 +6,7 @@ func000000000000000c:                   # @func000000000000000c
 	vmul.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmseq.vi	v0, v10, -1
 	li	a0, 3

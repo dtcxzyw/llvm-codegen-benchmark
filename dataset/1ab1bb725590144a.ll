@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 24 occurrences:
 ; clamav/optimized/timefn.cpp.ll
 ; icu/optimized/ucnvmbcs.ll
 ; linux/optimized/avc.ll
@@ -10,9 +10,7 @@
 ; linux/optimized/hwmon.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/iommu-traces.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/qspinlock.ll
 ; linux/optimized/regmap.ll
@@ -85,7 +83,7 @@ entry:
   ret i32 %4
 }
 
-; 30 occurrences:
+; 39 occurrences:
 ; brotli/optimized/encode.c.ll
 ; icu/optimized/bmpset.ll
 ; icu/optimized/bytestrie.ll
@@ -116,6 +114,15 @@ entry:
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
@@ -206,7 +213,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/utf8_codecvt_facet.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; glslang/optimized/PpScanner.cpp.ll
 ; Function Attrs: nounwind
@@ -218,9 +226,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/deflate.ll
-; linux/optimized/huf_decompress.ll
 ; linux/optimized/intel_ddi.ll
 ; recastnavigation/optimized/DebugDraw.cpp.ll
 ; Function Attrs: nounwind

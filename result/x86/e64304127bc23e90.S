@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movq	%rsi, %rax
 	cmpq	%rsi, %rdi
 	cmovlq	%rdi, %rax

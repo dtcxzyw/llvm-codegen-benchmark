@@ -1,10 +1,12 @@
 func0000000000000000:                   # @func0000000000000000
+	lui	a0, 335544
+	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vsra.vi	v10, v8, 31
-	vsrl.vi	v10, v10, 20
-	vadd.vv	v10, v8, v10
-	lui	a0, 1048575
-	vand.vx	v10, v10, a0
-	vsub.vv	v12, v8, v10
+	vmulh.vx	v10, v8, a0
+	vsra.vi	v10, v10, 5
+	vsrl.vi	v12, v10, 31
+	vadd.vv	v12, v10, v12
+	li	a0, 100
+	vnmsub.vx	v12, a0, v8
 	vfwcvt.f.x.v	v8, v12
 	ret

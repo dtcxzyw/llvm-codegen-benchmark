@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 57 occurrences:
 ; hermes/optimized/CodeMotion.cpp.ll
 ; hermes/optimized/InstSimplify.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
@@ -27,14 +27,17 @@
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
+; llvm/optimized/IfConversion.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LiveRangeShrink.cpp.ll
 ; llvm/optimized/MachineBasicBlock.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TailDuplicator.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; node/optimized/libnode.crypto_cipher.ll
@@ -55,10 +58,10 @@
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
-  %3 = icmp eq ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %3 = icmp eq ptr %0, %2
   %4 = select i1 %3, ptr null, ptr %0
   ret ptr %4
 }
@@ -66,10 +69,10 @@ entry:
 ; 1 occurrences:
 ; git/optimized/mailmap.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000048(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -1
-  %3 = icmp ult ptr %2, %0
+  %3 = icmp ugt ptr %0, %2
   %4 = select i1 %3, ptr null, ptr %0
   ret ptr %4
 }
@@ -77,26 +80,12 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/cgroup_v2.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000029(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000049(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -1
-  %.not = icmp ugt ptr %2, %0
+  %.not = icmp ult ptr %0, %2
   %3 = select i1 %.not, ptr %0, ptr null
   ret ptr %3
-}
-
-; 4 occurrences:
-; llvm/optimized/Core.cpp.ll
-; llvm/optimized/IRTranslator.cpp.ll
-; llvm/optimized/IfConversion.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000031(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 320
-  %3 = icmp eq ptr %2, %0
-  %4 = select i1 %3, ptr null, ptr %0
-  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -105,7 +94,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 1
-  %3 = icmp eq ptr %2, %0
+  %3 = icmp eq ptr %0, %2
   %4 = select i1 %3, ptr null, ptr %0
   ret ptr %4
 }

@@ -38,7 +38,7 @@ define i64 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 61440
   %.masked = and i64 %1, 65535
-  %4 = or i64 %3, %.masked
+  %4 = or i64 %.masked, %3
   %5 = shl nsw i64 %0, 16
   %6 = or disjoint i64 %5, %4
   ret i64 %6
@@ -51,7 +51,7 @@ define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 9079256848778919936
   %.masked = and i64 %1, 9223372036854775807
-  %4 = or i64 %3, %.masked
+  %4 = or i64 %.masked, %3
   %5 = shl nuw i64 %0, 63
   %6 = or disjoint i64 %4, %5
   ret i64 %6

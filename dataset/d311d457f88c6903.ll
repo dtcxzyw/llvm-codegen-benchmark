@@ -8,7 +8,7 @@ entry:
   %3 = zext i1 %2 to i64
   %4 = add i64 %1, 1
   %5 = add i64 %4, %3
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -22,19 +22,19 @@ entry:
   %3 = zext i1 %2 to i64
   %4 = add i64 %1, -1
   %5 = add i64 %4, %3
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = add nsw i64 %1, 9223372036854775807
   %5 = add nsw i64 %4, %3
-  %6 = icmp slt i64 %5, %0
+  %6 = icmp sgt i64 %0, %5
   ret i1 %6
 }
 

@@ -32,7 +32,7 @@ func0000000000000007:                   # @func0000000000000007
 	beqz	a0, .LBB4_2
 	fmv.w.x	fa1, zero
 .LBB4_2:                                # %entry
-	feq.s	a0, fa1, fa0
+	feq.s	a0, fa0, fa1
 	xori	a0, a0, 1
 	ret
 func0000000000000003:                   # @func0000000000000003
@@ -49,7 +49,7 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a0, 260096
 	fmv.w.x	fa1, a0
 .LBB6_2:                                # %entry
-	feq.s	a0, fa1, fa0
+	feq.s	a0, fa0, fa1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 1

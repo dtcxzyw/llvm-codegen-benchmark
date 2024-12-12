@@ -1,14 +1,7 @@
-func0000000000000014:                   # @func0000000000000014
-	andl	$31, %esi
-	addl	$-13, %esi
-	cmpl	$4, %esi
-	setb	%al
-	andb	%dil, %al
-	retq
-func0000000000000018:                   # @func0000000000000018
-	movzwl	%si, %eax
-	addl	$-99, %eax
-	cmpl	$-7, %eax
+func0000000000000024:                   # @func0000000000000024
+	andl	$65534, %esi                    # imm = 0xFFFE
+	addl	$-48, %esi
+	cmpl	$10, %esi
 	setb	%al
 	andb	%dil, %al
 	retq

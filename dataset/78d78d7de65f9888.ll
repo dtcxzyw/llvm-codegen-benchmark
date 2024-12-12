@@ -18,7 +18,7 @@
 ; spike/optimized/s_subMagsF16.ll
 ; spike/optimized/s_subMagsF32.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a4(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000144(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = select i1 %0, i32 %2, i32 %1

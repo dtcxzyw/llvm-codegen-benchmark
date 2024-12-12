@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; darktable/optimized/darktable.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; graphviz/optimized/gvusershape.c.ll
@@ -11,7 +11,6 @@
 ; opencv/optimized/qualitybrisque.cpp.ll
 ; postgres/optimized/xlog.ll
 ; quickjs/optimized/quickjs.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/overlay_scroll_bar.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(double %0, i32 %1) #0 {

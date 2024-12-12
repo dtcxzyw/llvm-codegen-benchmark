@@ -1,9 +1,10 @@
 
-; 6 occurrences:
-; linux/optimized/wep.ll
+; 7 occurrences:
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; openjdk/optimized/bytecodes.ll
 ; postgres/optimized/datetime.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
 ; qemu/optimized/net_eth.c.ll
 ; redis/optimized/sort.ll
 ; Function Attrs: nounwind

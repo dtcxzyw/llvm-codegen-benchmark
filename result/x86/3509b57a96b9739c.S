@@ -1,7 +1,8 @@
 func0000000000000004:                   # @func0000000000000004
-	shlxq	%rcx, %rdx, %rdx
-	imulq	%rdx, %rsi
-	mulxq	%rdi, %rax, %rax
+	shlxq	%rcx, %rdx, %rax
+	imulq	%rax, %rsi
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
 	addq	%rsi, %rax
 	xorl	%edx, %edx
 	retq

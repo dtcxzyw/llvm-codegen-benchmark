@@ -1,12 +1,11 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcSat.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/ioUtil.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; faiss/optimized/IndexNSG.cpp.ll
 ; libwebp/optimized/buffer_dec.c.ll
 ; lightgbm/optimized/gbdt.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -33,7 +32,7 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -54,7 +53,6 @@ entry:
 ; ncnn/optimized/lstm_x86_avx.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; ncnn/optimized/lstm_x86_fma.cpp.ll
-; nori/optimized/texture_gl.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
@@ -94,6 +92,7 @@ entry:
 ; opencv/optimized/perf_wechat_qrcode_pipeline.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
 ; opencv/optimized/plane.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
@@ -113,7 +112,7 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -131,7 +130,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -143,19 +142,20 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw nuw double, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; nori/optimized/texture_gl.cpp.ll
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw nuw double, ptr %0, i64 %5
   ret ptr %6
 }
@@ -173,7 +173,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -185,15 +185,16 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = getelementptr float, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/cuddGenetic.c.ll
 ; abc/optimized/cuddLinear.c.ll
+; abc/optimized/ivyMan.c.ll
 ; abc/optimized/kitPla.c.ll
 ; darktable/optimized/introspection_equalizer.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -207,36 +208,49 @@ entry:
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; openspiel/optimized/havannah.cc.ll
 ; openusd/optimized/cdef.c.ll
+; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr float, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 4 occurrences:
+; 2 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; faiss/optimized/IndexNSG.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = sext i32 %3 to i64
+  %5 = mul nsw i64 %1, %4
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
-; opencv/optimized/pyramids.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr i32, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
+; opencv/optimized/seamless_cloning_impl.cpp.ll
 ; opencv/optimized/signal_resample.cpp.ll
 ; opencv/optimized/tvl1flow.cpp.ll
 ; Function Attrs: nounwind
@@ -244,7 +258,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -8
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -256,7 +270,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 16
   %4 = sext i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = getelementptr nusw i16, ptr %0, i64 %5
   ret ptr %6
 }
@@ -269,20 +283,8 @@ define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = getelementptr i16, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; opencv/optimized/seamless_cloning_impl.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, -1
-  %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
-  %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 

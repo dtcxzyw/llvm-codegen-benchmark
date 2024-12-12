@@ -8,7 +8,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp ule float %4, %0
+  %5 = fcmp uge float %0, %4
   ret i1 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp olt float %4, %0
+  %5 = fcmp ogt float %0, %4
   ret i1 %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp oeq float %4, %0
+  %5 = fcmp oeq float %0, %4
   ret i1 %5
 }
 

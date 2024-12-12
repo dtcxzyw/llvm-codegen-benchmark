@@ -53,7 +53,7 @@ func0000000000000004:                   # @func0000000000000004
 	.short	4422                            # 0x1146
 .LCPI1_4:
 	.short	4423                            # 0x1147
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpltud	.LCPI1_1(%rip){1to8}, %ymm0, %k1
 	vpbroadcastw	.LCPI1_4(%rip), %xmm0   # xmm0 = [4423,4423,4423,4423,4423,4423,4423,4423]

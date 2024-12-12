@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 38 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -8,7 +8,6 @@
 ; linux/optimized/ds.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gem_object.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/pci-acpi.ll
 ; linux/optimized/phy-c45.ll
@@ -38,7 +37,6 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/iseq.ll
-; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i64 %1) #0 {
@@ -90,7 +88,7 @@ define i16 @func0000000000000007(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
   %3 = and i16 %2, -241
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 62 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/simSeq.c.ll
@@ -17,17 +17,11 @@
 ; graphviz/optimized/stuff.c.ll
 ; gromacs/optimized/average.cpp.ll
 ; gromacs/optimized/comm.cpp.ll
-; gromacs/optimized/dgebd2.cpp.ll
-; gromacs/optimized/dgeqr2.cpp.ll
-; gromacs/optimized/dgetf2.cpp.ll
 ; gromacs/optimized/gmx_hydorder.cpp.ll
 ; gromacs/optimized/gmx_sham.cpp.ll
 ; gromacs/optimized/gmx_trjorder.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; gromacs/optimized/manage_threading.cpp.ll
-; gromacs/optimized/sgebd2.cpp.ll
-; gromacs/optimized/sgeqr2.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
 ; gromacs/optimized/sm_merge.cpp.ll
 ; ipopt/optimized/IpDenseGenMatrix.ll
 ; ipopt/optimized/IpMultiVectorMatrix.ll
@@ -38,7 +32,6 @@
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; oiio/optimized/sgiinput.cpp.ll
-; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
@@ -73,13 +66,13 @@
 define i64 @func0000000000000035(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 49 occurrences:
+; 42 occurrences:
 ; ceres/optimized/inner_product_computer.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
@@ -95,10 +88,7 @@ entry:
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
 ; openblas/optimized/dgels.c.ll
 ; openblas/optimized/dgelst.c.ll
@@ -109,12 +99,8 @@ entry:
 ; openblas/optimized/dlarfb.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgql.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dtbrfs.c.ll
 ; opencv/optimized/correlation_layer.cpp.ll
 ; opencv/optimized/fast_window_binarizer.cpp.ll
@@ -133,8 +119,8 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -178,8 +164,8 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -195,8 +181,8 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -208,7 +194,7 @@ entry:
 define i64 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -226,7 +212,7 @@ entry:
 define i64 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -254,8 +240,8 @@ entry:
 define i64 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -270,8 +256,8 @@ entry:
 define i64 @func0000000000000034(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -282,20 +268,21 @@ entry:
 define i64 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
+; opencv/optimized/bgfg_gsoc.cpp.ll
 ; openspiel/optimized/gin_rummy.cc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -308,8 +295,8 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -320,7 +307,7 @@ entry:
 define i64 @func000000000000003c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -332,7 +319,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nuw i32 %3, %1
+  %4 = mul nuw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -349,7 +336,7 @@ entry:
 define i64 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -362,7 +349,7 @@ entry:
 define i64 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -374,7 +361,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -387,8 +374,8 @@ entry:
 define i64 @func000000000000000c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }

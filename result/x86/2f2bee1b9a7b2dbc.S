@@ -48,3 +48,10 @@ func000000000000010f:                   # @func000000000000010f
 	cmpq	$131073, %rdx                   # imm = 0x20001
 	adcq	%rdi, %rax
 	retq
+func0000000000000280:                   # @func0000000000000280
+	notq	%rdx
+	shrq	$63, %rdx
+	andl	$1, %esi
+	leaq	(%rsi,%rdi), %rax
+	addq	%rdx, %rax
+	retq

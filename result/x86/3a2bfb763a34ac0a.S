@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	notl	%edx
 	addl	%esi, %edx
 	leaq	(%rdi,%rdx,4), %rax
@@ -8,12 +8,12 @@ func0000000000000000:                   # @func0000000000000000
 	leal	(%rdx,%rsi), %eax
 	addq	%rdi, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	notl	%edx
 	addl	%esi, %edx
 	leaq	(%rdi,%rdx,2), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	notl	%edx
 	addl	%esi, %edx
 	leaq	(%rdi,%rdx,8), %rax
@@ -23,7 +23,7 @@ func0000000000000008:                   # @func0000000000000008
 	leal	(%rdx,%rsi), %eax
 	addq	%rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	notl	%edx
 	leal	(%rdx,%rsi), %eax
 	addq	%rdi, %rax

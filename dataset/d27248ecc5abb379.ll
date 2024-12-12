@@ -12,7 +12,7 @@ entry:
   ret i32 %4
 }
 
-; 142 occurrences:
+; 143 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -133,6 +133,7 @@ entry:
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; draco/optimized/mesh_cleanup.cc.ll
+; hyperscan/optimized/fdr_compile.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -176,7 +177,7 @@ entry:
   ret i32 %4
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absGla.c.ll
@@ -188,7 +189,6 @@ entry:
 ; abc/optimized/acecUtil.c.ll
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/giaBalAig.c.ll

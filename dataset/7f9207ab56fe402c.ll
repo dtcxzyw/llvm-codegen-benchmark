@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 83 occurrences:
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
@@ -83,7 +83,6 @@
 ; postgres/optimized/pgbench.ll
 ; ruby/optimized/util.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
-; wireshark/optimized/packet-ieee80211-wlancap.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:

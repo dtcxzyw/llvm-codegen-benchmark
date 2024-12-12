@@ -1,28 +1,29 @@
 
-; 6 occurrences:
-; abseil-cpp/optimized/raw_hash_set_test.cc.ll
-; openspiel/optimized/is_mcts.cc.ll
-; qemu/optimized/accel_tcg_cputlb.c.ll
-; re2/optimized/regexp.cc.ll
-; velox/optimized/Filter.cpp.ll
-; velox/optimized/StringView.cpp.ll
+; 5 occurrences:
+; coreutils-rs/optimized/53yhdh06nqcwsoo6.ll
+; coreutils-rs/optimized/56596qkor8w4ma8l.ll
+; image-rs/optimized/34r8dryqmufipcqz.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000003(i16 %0) #0 {
+define i32 @func0000000000000001(i16 %0) #0 {
 entry:
-  %1 = tail call range(i16 0, 17) i16 @llvm.cttz.i16(i16 %0, i1 true)
+  %1 = call range(i16 6, 17) i16 @llvm.ctlz.i16(i16 %0, i1 false)
   %2 = zext nneg i16 %1 to i32
   ret i32 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i16 @llvm.cttz.i16(i16, i1 immarg) #1
+declare i16 @llvm.ctlz.i16(i16, i1 immarg) #1
 
-; 1 occurrences:
-; wasmtime-rs/optimized/2wcii8z2urex364d.ll
+; 3 occurrences:
+; abseil-cpp/optimized/bits_test.cc.ll
+; protobuf/optimized/lexer.cc.ll
+; protobuf/optimized/writer.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000001(i16 %0) #0 {
+define i32 @func0000000000000003(i16 %0) #0 {
 entry:
-  %1 = tail call range(i16 0, 17) i16 @llvm.cttz.i16(i16 %0, i1 false)
+  %1 = call range(i16 8, 17) i16 @llvm.ctlz.i16(i16 %0, i1 true)
   %2 = zext nneg i16 %1 to i32
   ret i32 %2
 }

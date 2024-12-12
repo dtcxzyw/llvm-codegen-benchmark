@@ -10,7 +10,8 @@ entry:
   ret i8 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/static_string.ll
 ; grpc/optimized/slice_buffer.cc.ll
 ; postgres/optimized/sha1.ll
 ; postgres/optimized/sha1_shlib.ll
@@ -36,7 +37,8 @@ entry:
   ret i8 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; freetype/optimized/sfnt.c.ll
 ; proxygen/optimized/HPACKDecodeBuffer.cpp.ll
 ; Function Attrs: nounwind
@@ -44,6 +46,16 @@ define i8 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i8
   %2 = sub i8 23, %1
+  ret i8 %2
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000002(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i8
+  %2 = sub i8 0, %1
   ret i8 %2
 }
 

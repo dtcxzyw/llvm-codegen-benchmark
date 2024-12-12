@@ -14,7 +14,7 @@
 define i8 @func0000000000000000(float %0, i8 %1) #0 {
 entry:
   %2 = uitofp i8 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fptoui float %3 to i8
   ret i8 %4
 }

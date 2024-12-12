@@ -1,28 +1,20 @@
-func0000000000000086:                   // @func0000000000000086
+func0000000000000187:                   // @func0000000000000187
 // %bb.0:                               // %entry
-	add	x8, x1, #32
+	add	x8, x1, #64
 	cmp	x0, #0
 	csel	x8, x8, x0, eq
-	add	x0, x8, #8
+	add	x0, x8, #11
 	ret
                                         // -- End function
-func00000000000000c7:                   // @func00000000000000c7
+func0000000000000107:                   // @func0000000000000107
 // %bb.0:                               // %entry
-	add	x8, x1, #8
+	sub	x8, x1, #320
 	cmp	x0, #0
 	csel	x8, x8, x0, eq
-	add	x0, x8, #88
+	add	x0, x8, #1416
 	ret
                                         // -- End function
-func00000000000000c6:                   // @func00000000000000c6
-// %bb.0:                               // %entry
-	add	x8, x1, #40
-	cmp	x0, #0
-	csel	x8, x8, x0, eq
-	add	x0, x8, #128
-	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
+func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	sub	x8, x1, #24
 	cmp	x0, #0

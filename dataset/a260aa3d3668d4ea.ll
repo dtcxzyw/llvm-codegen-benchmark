@@ -1,5 +1,5 @@
 
-; 117 occurrences:
+; 116 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; bullet3/optimized/b3GpuNarrowPhase.ll
 ; bullet3/optimized/btBox2dShape.ll
@@ -35,7 +35,6 @@
 ; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/gmx_spol.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
-; gromacs/optimized/slartg.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll

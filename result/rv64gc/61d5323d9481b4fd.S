@@ -6,3 +6,8 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, 5
 .LBB0_2:                                # %entry
 	ret
+func0000000000000014:                   # @func0000000000000014
+	beqz	a2, .LBB1_2
+	li	a0, -3
+.LBB1_2:                                # %entry
+	ret

@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-cmac.ll
 ; openssl/optimized/libcrypto-shlib-cmac.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub i64 %0, %2
@@ -20,7 +20,7 @@ entry:
 ; php/optimized/KeccakSponge.ll
 ; slurm/optimized/KeccakSponge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nuw i64 %0, %2
@@ -34,7 +34,7 @@ entry:
 ; php/optimized/KeccakSponge.ll
 ; slurm/optimized/KeccakSponge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nuw i64 %0, %2
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/blk-lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nuw i64 %0, %2
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ttm_pool.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub i64 %0, %2
@@ -78,12 +78,10 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; faiss/optimized/ScalarQuantizer.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 %0, %2

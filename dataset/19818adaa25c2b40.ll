@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_calendar.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; openjdk/optimized/downcallLinker_x86_64.ll
@@ -13,9 +14,10 @@ entry:
   ret i32 %4
 }
 
-; 108 occurrences:
+; 109 occurrences:
 ; abc/optimized/satInterA.c.ll
 ; abc/optimized/satInterB.c.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -131,9 +133,10 @@ entry:
   ret i32 %4
 }
 
-; 205 occurrences:
+; 210 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -337,6 +340,10 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/rational.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; glslang/optimized/Constant.cpp.ll
 ; hdf5/optimized/H5Tconv_integer.c.ll

@@ -15,10 +15,9 @@ entry:
   ret i8 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/intel_engine_cs.ll
 ; opencv/optimized/gfluidcore.cpp.ll
-; postgres/optimized/pathnode.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i8 %0, i8 %1, i8 %2) #0 {
 entry:

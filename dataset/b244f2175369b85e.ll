@@ -1,7 +1,8 @@
 
-%"struct.std::atomic.265.2524554" = type { %"struct.std::__atomic_base.266.2524555" }
-%"struct.std::__atomic_base.266.2524555" = type { ptr }
-%struct.p4d_t.3341223 = type { i64 }
+%"struct.std::atomic.265.2638962" = type { %"struct.std::__atomic_base.266.2638963" }
+%"struct.std::__atomic_base.266.2638963" = type { ptr }
+%class.ZForwardingEntry.2737251 = type { i64 }
+%struct.p4d_t.3530391 = type { i64 }
 
 ; 44 occurrences:
 ; mold/optimized/icf.cc.ALPHA.cc.ll
@@ -53,25 +54,35 @@ define ptr @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw %"struct.std::atomic.265.2524554", ptr %4, i64 %3
+  %5 = getelementptr nusw %"struct.std::atomic.265.2638962", ptr %4, i64 %3
   ret ptr %5
 }
 
-; 23 occurrences:
+; 3 occurrences:
+; openjdk/optimized/xRelocate.ll
+; openjdk/optimized/zRelocate.ll
+; openjdk/optimized/zVerify.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %1, %2
+  %4 = inttoptr i64 %0 to ptr
+  %5 = getelementptr nusw nuw %class.ZForwardingEntry.2737251, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 20 occurrences:
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/commit.ll
 ; linux/optimized/fault.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/gup.ll
-; linux/optimized/hibernate.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/init_64.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/pti.ll
 ; linux/optimized/remap_range.ll
@@ -86,7 +97,7 @@ define ptr @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr %struct.p4d_t.3341223, ptr %4, i64 %3
+  %5 = getelementptr %struct.p4d_t.3530391, ptr %4, i64 %3
   ret ptr %5
 }
 

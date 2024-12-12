@@ -1,5 +1,5 @@
 
-; 135 occurrences:
+; 129 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cordz_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -30,6 +30,7 @@
 ; git/optimized/wildmatch.ll
 ; git/optimized/xemit.ll
 ; graphviz/optimized/maze.c.ll
+; graphviz/optimized/spring_electrical.c.ll
 ; gromacs/optimized/dorm2r.cpp.ll
 ; gromacs/optimized/dormqr.cpp.ll
 ; gromacs/optimized/sorm2r.cpp.ll
@@ -70,18 +71,13 @@
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/TruncInstCombine.cpp.ll
 ; lua/optimized/lgc.ll
 ; luau/optimized/ConstantFolding.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_indev.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -110,7 +106,6 @@
 ; protobuf/optimized/php_generator.cc.ll
 ; protobuf/optimized/text_format.cc.ll
 ; protobuf/optimized/tracker.cc.ll
-; protobuf/optimized/writer.cc.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -128,7 +123,6 @@
 ; wireshark/optimized/packet-scsi-osd.c.ll
 ; wireshark/optimized/packet-scte35.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
-; wireshark/optimized/packet-skype.c.ll
 ; wireshark/optimized/packet-sua.c.ll
 ; wireshark/optimized/packet-websocket.c.ll
 ; z3/optimized/dep_intervals.cpp.ll
@@ -149,7 +143,7 @@ entry:
 ; qemu/optimized/util_uri.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0) #0 {
+define i1 @func0000000000000014(i8 %0) #0 {
 entry:
   %1 = freeze i8 %0
   %2 = and i8 %1, 24
@@ -183,7 +177,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/rx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0) #0 {
+define i1 @func0000000000000018(i8 %0) #0 {
 entry:
   %1 = freeze i8 %0
   %2 = and i8 %1, 8

@@ -6,7 +6,7 @@
 	.byte	8                               # 0x8
 .LCPI0_3:
 	.zero	4,1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpbroadcastb	.LCPI0_2(%rip), %xmm2   # xmm2 = [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
 	vpternlogd	$236, .LCPI0_3(%rip){1to4}, %xmm2, %xmm1 # xmm1 = (xmm1 & mem) | xmm2
 	vptestnmb	%xmm0, %xmm0, %k1
@@ -21,7 +21,7 @@ func0000000000000011:                   # @func0000000000000011
 	.byte	8                               # 0x8
 .LCPI1_3:
 	.zero	4,240
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpbroadcastb	.LCPI1_2(%rip), %xmm2   # xmm2 = [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
 	vpternlogd	$236, .LCPI1_3(%rip){1to4}, %xmm2, %xmm1 # xmm1 = (xmm1 & mem) | xmm2
 	vpcmpnleub	%xmm2, %xmm0, %k1

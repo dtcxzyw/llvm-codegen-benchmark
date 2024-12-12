@@ -1,5 +1,5 @@
 
-; 186 occurrences:
+; 187 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/aigRet.c.ll
@@ -19,6 +19,7 @@
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/filtering.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -171,6 +172,7 @@
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
 ; zfp/optimized/encode1f.c.ll
 ; zfp/optimized/encode1i.c.ll
 ; zfp/optimized/encode2f.c.ll
@@ -181,7 +183,6 @@
 ; zfp/optimized/encode4i.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
-; zxing/optimized/AZToken.cpp.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
@@ -231,7 +232,7 @@ entry:
   ret i32 %3
 }
 
-; 52 occurrences:
+; 51 occurrences:
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
 ; cmake/optimized/zdict.c.ll
@@ -264,7 +265,6 @@ entry:
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll

@@ -11,7 +11,7 @@ entry:
   %3 = lshr i32 %2, 1
   %4 = add i32 %1, -32768
   %5 = add i32 %4, %3
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 

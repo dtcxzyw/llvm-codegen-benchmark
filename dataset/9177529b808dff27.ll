@@ -3,7 +3,7 @@
 ; linux/optimized/extents_status.ll
 ; openssl/optimized/openssl-bin-x509.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000003181(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c4c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000308c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ult i32 %1, -2
@@ -30,7 +30,7 @@ entry:
 ; git/optimized/branch.ll
 ; git/optimized/worktree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000318c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -53,7 +53,7 @@ entry:
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -66,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000042c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -79,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Clang.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000581(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 8
   %4 = icmp ne i32 %1, 0
@@ -92,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Clang.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000058c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 8
   %4 = icmp ne i32 %1, 0

@@ -19,7 +19,7 @@
 ; opencv/optimized/edge_drawing.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i32 %0) #0 {
+define i64 @func00000000000000a6(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = sext i32 %1 to i64
@@ -37,7 +37,7 @@ entry:
 ; ipopt/optimized/IpTripletToCSRConverter.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0) #0 {
+define i64 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
   %2 = sext i32 %1 to i64
@@ -57,7 +57,7 @@ entry:
 ; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
 ; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i32 %0) #0 {
+define i64 @func00000000000000e6(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
   %2 = sext i32 %1 to i64

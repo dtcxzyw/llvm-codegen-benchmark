@@ -30,11 +30,3 @@ func0000000000000006:                   # @func0000000000000006
 	vpternlogq	$168, .LCPI3_0(%rip){1to4}, %ymm2, %ymm1 # ymm1 = mem & (ymm1 | ymm2)
 	vpternlogq	$254, .LCPI3_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
-.LCPI4_0:
-	.quad	-281474975662142                # 0xffff0000000fffc2
-.LCPI4_1:
-	.quad	33                              # 0x21
-func0000000000000000:                   # @func0000000000000000
-	vpternlogq	$168, .LCPI4_0(%rip){1to4}, %ymm2, %ymm1 # ymm1 = mem & (ymm1 | ymm2)
-	vpternlogq	$254, .LCPI4_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
-	retq

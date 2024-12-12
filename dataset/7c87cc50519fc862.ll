@@ -9,7 +9,7 @@ define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:
   %2 = freeze i1 %1
   %3 = xor i1 %2, true
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

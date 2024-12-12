@@ -30,7 +30,7 @@
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i16 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
   %4 = zext i16 %1 to i64
@@ -40,7 +40,7 @@ entry:
   ret i1 %7
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
 ; ockam-rs/optimized/1kl4v6vvko2mygns.ll
@@ -59,8 +59,9 @@ entry:
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i16 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
   %4 = zext i16 %1 to i64

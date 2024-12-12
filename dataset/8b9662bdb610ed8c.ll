@@ -1,12 +1,10 @@
 
-; 12 occurrences:
+; 10 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; hwloc/optimized/topology-x86.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/rx.ll
-; llvm/optimized/MemCpyOptimizer.cpp.ll
-; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; mitsuba3/optimized/integrator.cpp.ll
 ; ocio/optimized/FileFormatSpi3D.cpp.ll
 ; openjdk/optimized/cmspack.ll

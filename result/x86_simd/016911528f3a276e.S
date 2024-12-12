@@ -6,7 +6,7 @@
 	.long	5                               # 0x5
 .LCPI0_3:
 	.long	7                               # 0x7
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpnltud	.LCPI0_0(%rip){1to8}, %ymm2, %k2

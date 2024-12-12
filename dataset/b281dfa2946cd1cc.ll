@@ -1,5 +1,5 @@
 
-; 918 occurrences:
+; 929 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
@@ -28,6 +28,25 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/ext.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/graphml.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/shell.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/url_base.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
@@ -42,7 +61,6 @@
 ; ceres/optimized/problem_impl.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
-; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; cmake/optimized/cmCTestHandlerCommand.cxx.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
 ; cmake/optimized/cmCTestTestHandler.cxx.ll
@@ -67,6 +85,7 @@
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; cvc5/optimized/attribute.cpp.ll
+; cvc5/optimized/cadical.cpp.ll
 ; cvc5/optimized/cardinality_extension.cpp.ll
 ; cvc5/optimized/ce_guided_single_inv.cpp.ll
 ; cvc5/optimized/cut_log.cpp.ll
@@ -89,11 +108,7 @@
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; duckdb/optimized/ub_duckdb_table_func_system.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
-; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
@@ -149,7 +164,6 @@
 ; grpc/optimized/ring_hash.cc.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/Exceptions.cpp.ll
-; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/NativeFormatting.cpp.ll
 ; hermes/optimized/Statistic.cpp.ll
@@ -352,7 +366,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -675,7 +688,6 @@
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
-; ozz-animation/optimized/options.cc.ll
 ; ozz-animation/optimized/raw_animation_utils.cc.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
@@ -705,7 +717,6 @@
 ; quantlib/optimized/hestonslvmcmodel.ll
 ; quantlib/optimized/histogram.ll
 ; quantlib/optimized/piecewiseintegral.ll
-; quantlib/optimized/schedule.ll
 ; quantlib/optimized/squarerootclvmodel.ll
 ; quantlib/optimized/timebasket.ll
 ; quantlib/optimized/treecallablebondengine.ll
@@ -919,16 +930,87 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005e(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr nusw i32, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 24 occurrences:
+; 60 occurrences:
+; cmake/optimized/cmCTestBinPacker.cxx.ll
+; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
+; eastl/optimized/BenchmarkDeque.cpp.ll
+; eastl/optimized/BenchmarkSort.cpp.ll
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; hermes/optimized/Interpreter.cpp.ll
+; lightgbm/optimized/objective_function.cpp.ll
+; llvm/optimized/GlobalISelMatchTable.cpp.ll
+; minetest/optimized/guiFormSpecMenu.cpp.ll
+; mold/optimized/output-chunks.cc.ALPHA.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; mold/optimized/passes.cc.ALPHA.cc.ll
+; mold/optimized/passes.cc.ARM32.cc.ll
+; mold/optimized/passes.cc.ARM64.cc.ll
+; mold/optimized/passes.cc.I386.cc.ll
+; mold/optimized/passes.cc.LOONGARCH32.cc.ll
+; mold/optimized/passes.cc.LOONGARCH64.cc.ll
+; mold/optimized/passes.cc.M68K.cc.ll
+; mold/optimized/passes.cc.PPC32.cc.ll
+; mold/optimized/passes.cc.PPC64V1.cc.ll
+; mold/optimized/passes.cc.PPC64V2.cc.ll
+; mold/optimized/passes.cc.RV32BE.cc.ll
+; mold/optimized/passes.cc.RV32LE.cc.ll
+; mold/optimized/passes.cc.RV64BE.cc.ll
+; mold/optimized/passes.cc.RV64LE.cc.ll
+; mold/optimized/passes.cc.S390X.cc.ll
+; mold/optimized/passes.cc.SH4.cc.ll
+; mold/optimized/passes.cc.SPARC64.cc.ll
+; mold/optimized/passes.cc.X86_64.cc.ll
+; protobuf/optimized/text_format.cc.ll
+; protobuf/optimized/wire_format.cc.ll
+; verilator/optimized/V3DfgRegularize.cpp.ll
+; verilator/optimized/V3EmitCConstPool.cpp.ll
+; verilator/optimized/V3EmitCHeaders.cpp.ll
+; verilator/optimized/V3EmitCModel.cpp.ll
+; verilator/optimized/V3EmitCSyms.cpp.ll
+; verilator/optimized/V3VariableOrder.cpp.ll
+; xgboost/optimized/quantile_obj.cc.ll
+; xgboost/optimized/updater_approx.cc.ll
+; xgboost/optimized/updater_quantile_hist.cc.ll
+; z3/optimized/spacer_cluster_util.cpp.ll
+; z3/optimized/spacer_context.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 3
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 -8
+  %5 = getelementptr nusw ptr, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 57 occurrences:
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; annoy/optimized/annoymodule.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
@@ -953,6 +1035,39 @@ entry:
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wireshark/optimized/packet-ipsec.c.ll
+; zed-rs/optimized/0nwivtw0lug3nh002ufjq6dhh.ll
+; zed-rs/optimized/0wjif0du0ry5xj140bn8jrpv8.ll
+; zed-rs/optimized/10zh1v68f2nhlerzsork25it5.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/1kvfz4vxu123bq0qsauyrtl3j.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/247uvyk35qd8oseq9xzgyw4k7.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/5bn6wrz9qaifqeni05lf8cibk.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/5mqaql67fk8cb5w1h1xcbyeu9.ll
+; zed-rs/optimized/5owdgsmfxxef4srab3humtsy7.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/7dk7owzcyl7erod9ao7xbfp5l.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8kgq4ra7kc2kfx3e13zx5xumd.ll
+; zed-rs/optimized/8pzylepo63jgxs9pcfvvb1oj4.ll
+; zed-rs/optimized/9lyc7v6rglrrimjbrgra5wxbm.ll
+; zed-rs/optimized/asgo9pe6dwkxuaeqdvmvl8bpd.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/b1zstcip87cpnqp265tsc7n2q.ll
+; zed-rs/optimized/b3fsiuvawj3jj0fngz22afvrc.ll
+; zed-rs/optimized/b7n4ebe7bkw4hnagh8ndf0qla.ll
+; zed-rs/optimized/b8xkvrb4shexown6t10tlhuh9.ll
+; zed-rs/optimized/cq7p6jf0dw84580nbcct1r72y.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dyu8ahcv7l11k0z44ye6uqxem.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000050(ptr %0, i64 %1) #0 {
 entry:

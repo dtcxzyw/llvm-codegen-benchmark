@@ -12,7 +12,7 @@
 define float @func0000000000000001(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fadd float %3, -5.000000e-01
   ret float %4
 }
@@ -24,7 +24,7 @@ entry:
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fadd float %3, 5.000000e-01
   ret float %4
 }

@@ -1,7 +1,11 @@
 
-; 58 occurrences:
+; 62 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/cmList.cxx.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -59,18 +63,22 @@
 ; yalantinglibs/optimized/MessageGenerator.cpp.ll
 ; yosys/optimized/viz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = add nsw i64 %2, -1
   %4 = lshr i64 %3, 1
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
-; 58 occurrences:
+; 62 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/cmList.cxx.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -128,12 +136,12 @@ entry:
 ; yalantinglibs/optimized/MessageGenerator.cpp.ll
 ; yosys/optimized/viz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -185,12 +193,12 @@ entry:
 ; z3/optimized/solve_eqs.cpp.ll
 ; z3/optimized/spacer_quant_generalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000154(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = add nsw i64 %2, -1
   %4 = lshr i64 %3, 1
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
@@ -248,12 +256,12 @@ entry:
 ; z3/optimized/solve_eqs.cpp.ll
 ; z3/optimized/spacer_quant_generalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = add nsw i64 %2, -1
   %4 = lshr i64 %3, 1
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -305,12 +313,12 @@ entry:
 ; z3/optimized/solve_eqs.cpp.ll
 ; z3/optimized/spacer_quant_generalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
@@ -322,12 +330,12 @@ entry:
 ; velox/optimized/ArraySort.cpp.ll
 ; wireshark/optimized/decode_as_delegate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -335,24 +343,24 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 10
   %3 = add nuw nsw i64 %2, 63
   %4 = lshr i64 %3, 6
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 10
   %3 = add nuw nsw i64 %2, 63
   %4 = lshr i64 %3, 6
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 

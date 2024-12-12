@@ -9,7 +9,7 @@
 define ptr @func0000000000000086(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %1, 32
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = ashr i64 %4, 32
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6

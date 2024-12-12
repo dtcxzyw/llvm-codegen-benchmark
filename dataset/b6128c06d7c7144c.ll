@@ -1,11 +1,13 @@
 
-; 59 occurrences:
+; 62 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; brotli/optimized/literal_cost.c.ll
 ; cpython/optimized/mathmodule.ll
 ; darktable/optimized/filtering.c.ll
@@ -58,6 +60,7 @@
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, double %1, double %2) #0 {

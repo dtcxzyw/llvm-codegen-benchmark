@@ -1,7 +1,8 @@
 
-; 691 occurrences:
+; 692 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddEssent.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatP.c.ll
 ; abc/optimized/giaDecs.c.ll
@@ -11,6 +12,7 @@
 ; abc/optimized/ioReadPlaMo.c.ll
 ; abc/optimized/plaCom.c.ll
 ; abc/optimized/plaWrite.c.ll
+; abc/optimized/rsbDec6.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
@@ -26,6 +28,11 @@
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/process_id.ll
+; boost/optimized/src.ll
+; boost/optimized/thread_id.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compound_dictionary.c.ll
@@ -174,9 +181,6 @@
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/genalloc.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_syncmap.ll
 ; linux/optimized/init_64.ll
@@ -194,7 +198,6 @@
 ; linux/optimized/mremap.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/pgtable.ll
 ; linux/optimized/poll.ll
@@ -564,11 +567,9 @@
 ; openjdk/optimized/zVerify.ll
 ; openspiel/optimized/deep_sea.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
-; openssl/optimized/libcrypto-lib-bn_print.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
 ; openssl/optimized/libcrypto-lib-sparse_array.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
-; openssl/optimized/libcrypto-shlib-bn_print.ll
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; openssl/optimized/libcrypto-shlib-sparse_array.ll
 ; openusd/optimized/avif.c.ll

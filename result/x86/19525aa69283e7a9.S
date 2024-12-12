@@ -28,8 +28,3 @@ func000000000000001a:                   # @func000000000000001a
 	leaq	2(%rdi,%rdi), %rax
 	andq	$-4, %rax
 	retq
-func0000000000000013:                   # @func0000000000000013
-	leaq	1(%rdi), %rax
-	shrq	$3, %rax
-	andq	$-8, %rax
-	retq

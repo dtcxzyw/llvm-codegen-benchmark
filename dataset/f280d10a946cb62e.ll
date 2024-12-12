@@ -1,13 +1,16 @@
 
-%struct.MapNode.2581009 = type { i16, i8, i8 }
-%struct._StackType.2596895 = type { i32, i32, %union.anon.3.2596896 }
-%union.anon.3.2596896 = type { %struct.anon.6.2596897 }
-%struct.anon.6.2596897 = type { ptr, %union.StkPtrType.2596898, %union.StkPtrType.2596898 }
-%union.StkPtrType.2596898 = type { i64 }
+%struct.MapNode.2695129 = type { i16, i8, i8 }
+%struct._StackType.2710345 = type { i32, i32, %union.anon.3.2710346 }
+%union.anon.3.2710346 = type { %struct.anon.6.2710347 }
+%struct.anon.6.2710347 = type { ptr, %union.StkPtrType.2710348, %union.StkPtrType.2710348 }
+%union.StkPtrType.2710348 = type { i64 }
+%struct._zend_op.2789991 = type { ptr, %union._znode_op.2790000, %union._znode_op.2790000, %union._znode_op.2790000, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2790000 = type { i32 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; arrow/optimized/hdfs.cc.ll
 ; assimp/optimized/zip.c.ll
+; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; gromacs/optimized/minimize.cpp.ll
@@ -52,13 +55,13 @@ entry:
 define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 48
-  %4 = getelementptr %struct.MapNode.2581009, ptr %0, i64 %1
+  %4 = getelementptr %struct.MapNode.2695129, ptr %0, i64 %1
   %5 = ashr exact i64 %3, 42
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; gromacs/optimized/mtop_util.cpp.ll
 ; jq/optimized/regexec.ll
 ; meshlab/optimized/GLLogStream.cpp.ll
@@ -72,20 +75,21 @@ entry:
 ; opencv/optimized/emd_new.cpp.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openusd/optimized/level.cpp.ll
+; pocketpy/optimized/vm.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 27
   %4 = ashr i64 %3, 32
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw %struct._StackType.2596895, ptr %5, i64 %4
+  %6 = getelementptr nusw %struct._StackType.2710345, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 113 occurrences:
+; 90 occurrences:
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/verStream.c.ll
-; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/topology.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
@@ -99,25 +103,13 @@ entry:
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; git/optimized/apply.ll
 ; git/optimized/fmt-merge-msg.ll
-; git/optimized/ref-filter.ll
-; icu/optimized/gencnval.ll
 ; icu/optimized/package.ll
-; icu/optimized/pkgitems.ll
-; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/pickle.cc.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/SemaExprMember.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; luau/optimized/lnumprint.cpp.ll
-; memcached/optimized/memcached-memcached.ll
-; memcached/optimized/memcached-proto_bin.ll
-; memcached/optimized/memcached-proto_text.ll
-; memcached/optimized/memcached_debug-memcached.ll
-; memcached/optimized/memcached_debug-proto_bin.ll
-; memcached/optimized/memcached_debug-proto_text.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
@@ -127,7 +119,6 @@ entry:
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; oiio/optimized/tiffinput.cpp.ll
@@ -163,7 +154,6 @@ entry:
 ; opencv/optimized/plane.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/rapid.cpp.ll
-; opencv/optimized/reshape_layer.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -177,19 +167,10 @@ entry:
 ; openjdk/optimized/output.ll
 ; openjdk/optimized/xBarrierSetC2.ll
 ; openjdk/optimized/zBarrierSetC2.ll
-; openmpi/optimized/ess_base_bootstrap.ll
-; openmpi/optimized/preg_native.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
-; php/optimized/dfa_pass.ll
-; php/optimized/dtoa.ll
-; php/optimized/zend_cfg.ll
-; php/optimized/zend_jit.ll
-; protobuf/optimized/generated_message_reflection.cc.ll
-; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; redis/optimized/sort.ll
-; slurm/optimized/proc_args.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; velox/optimized/Ntile.cpp.ll
@@ -206,9 +187,62 @@ entry:
   ret ptr %6
 }
 
-; 14 occurrences:
-; abc/optimized/acbPush.c.ll
+; 30 occurrences:
+; assimp/optimized/Assimp.cpp.ll
+; git/optimized/apply.ll
+; git/optimized/ref-filter.ll
+; icu/optimized/gencnval.ll
+; icu/optimized/pkgitems.ll
+; imgui/optimized/imgui.cpp.ll
+; luau/optimized/lnumprint.cpp.ll
+; memcached/optimized/memcached-memcached.ll
+; memcached/optimized/memcached-proto_bin.ll
+; memcached/optimized/memcached-proto_text.ll
+; memcached/optimized/memcached_debug-memcached.ll
+; memcached/optimized/memcached_debug-proto_bin.ll
+; memcached/optimized/memcached_debug-proto_text.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; opencv/optimized/agast.cpp.ll
+; opencv/optimized/reshape_layer.cpp.ll
+; opencv/optimized/scansegment.cpp.ll
+; openmpi/optimized/ess_base_bootstrap.ll
+; openmpi/optimized/preg_native.ll
+; openusd/optimized/stbImage.cpp.ll
+; php/optimized/dfa_pass.ll
+; php/optimized/dtoa.ll
+; php/optimized/zend_cfg.ll
+; php/optimized/zend_jit.ll
+; protobuf/optimized/generated_message_reflection.cc.ll
+; raylib/optimized/rtextures.c.ll
+; slurm/optimized/proc_args.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 32
+  %5 = getelementptr nusw nuw %struct._zend_op.2789991, ptr %0, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 2 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
+; quantlib/optimized/svd.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = getelementptr nusw nuw double, ptr %0, i64 %1
+  %5 = ashr exact i64 %3, 29
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 13 occurrences:
+; abc/optimized/acbPush.c.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -231,26 +265,37 @@ entry:
   ret ptr %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = getelementptr nusw i32, ptr %0, i64 %1
+  %5 = ashr exact i64 %3, 30
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llama.cpp/optimized/ggml.c.ll
+; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = getelementptr i32, ptr %0, i64 %1
-  %5 = ashr exact i64 %3, 30
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %4 = ashr exact i64 %3, 32
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -286,18 +331,6 @@ entry:
   %4 = ashr exact i64 %3, 31
   %5 = getelementptr nusw i8, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 1 occurrences:
-; pocketpy/optimized/vm.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 31
-  %4 = ashr i64 %3, 32
-  %5 = getelementptr ptr, ptr %0, i64 %1
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
   ret ptr %6
 }
 

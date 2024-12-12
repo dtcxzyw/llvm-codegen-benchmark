@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; coreutils-rs/optimized/3t9yvjig6ylv2f7b.ll
 ; openjdk/optimized/memReporter.ll
-; openjdk/optimized/psParallelCompact.ll
 ; qemu/optimized/util_oslib-posix.c.ll
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; Function Attrs: nounwind

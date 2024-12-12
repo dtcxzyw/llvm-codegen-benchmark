@@ -1,7 +1,8 @@
 
-; 170 occurrences:
+; 169 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; hyperscan/optimized/noodle_build.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
@@ -10,8 +11,6 @@
 ; minetest/optimized/serverenvironment.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; oiio/optimized/printinfo.cpp.ll
-; opencv/optimized/motion_estimators.cpp.ll
-; opencv/optimized/nldiffusion_functions.cpp.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll
 ; php/optimized/string.ll
 ; xgboost/optimized/hist_util.cc.ll

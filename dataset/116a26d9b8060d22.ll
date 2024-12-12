@@ -1,5 +1,5 @@
 
-; 117 occurrences:
+; 119 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/fretMain.c.ll
@@ -26,7 +26,6 @@
 ; hyperscan/optimized/limex_simd512.c.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/icuexportdata.ll
-; icu/optimized/tzfmt.ll
 ; icu/optimized/ucnv_u8.ll
 ; icu/optimized/ucnvmbcs.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -62,6 +61,7 @@
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
@@ -116,6 +116,8 @@
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/pcapio.c.ll
 ; z3/optimized/spacer_util.cpp.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
@@ -126,7 +128,7 @@ entry:
   ret i1 %5
 }
 
-; 60 occurrences:
+; 59 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
@@ -140,7 +142,6 @@ entry:
 ; libpng/optimized/pngrtran.c.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/mpi-cmp.ll
 ; linux/optimized/scsi_lib.ll
 ; llvm/optimized/Host.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
@@ -196,7 +197,7 @@ entry:
   ret i1 %5
 }
 
-; 37 occurrences:
+; 42 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
@@ -208,6 +209,11 @@ entry:
 ; ipopt/optimized/IpTNLPReducer.ll
 ; llvm/optimized/Rewriter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_span.ll
 ; ncnn/optimized/deconvolution_x86.cpp.ll
 ; ncnn/optimized/deconvolution_x86_avx.cpp.ll
 ; ncnn/optimized/deconvolution_x86_avx512.cpp.ll
@@ -243,21 +249,17 @@ entry:
   ret i1 %5
 }
 
-; 52 occurrences:
-; abc/optimized/cbaNtk.c.ll
-; coreutils-rs/optimized/2tikf1yvlgbemzkv.ll
-; freetype/optimized/autofit.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
+; 35 occurrences:
+; boost/optimized/ipv6_address_rule.ll
+; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
+; coreutils-rs/optimized/2vroer4nd2f1b54m.ll
 ; hermes/optimized/JSLexer.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
 ; hermes/optimized/SynthTraceParser.cpp.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
-; libpng/optimized/png.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/intel_reset.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -265,14 +267,42 @@ entry:
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstCombineShifts.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
-; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
+; opencv/optimized/grfmt_sunras.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
+; openjdk/optimized/loopnode.ll
+; openjdk/optimized/subnode.ll
+; openjdk/optimized/vectornode.ll
+; openspiel/optimized/2048.cc.ll
+; qemu/optimized/ui_vnc-enc-zrle.c.ll
+; raylib/optimized/rcore.c.ll
+; slurm/optimized/slurm_protocol_socket.ll
+; wireshark/optimized/packet-ieee80211-radiotap.c.ll
+; wireshark/optimized/packet-resp.c.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
+; zxing/optimized/PDFDetector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 2
+  %4 = and i1 %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 27 occurrences:
+; coreutils-rs/optimized/2tikf1yvlgbemzkv.ll
+; freetype/optimized/autofit.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; libpng/optimized/png.c.ll
+; libwebp/optimized/sharpyuv.c.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/X86InstructionSelector.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-buffer.ll
 ; openjdk/optimized/hb-ot-layout.ll
@@ -286,20 +316,16 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-thai.ll
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; openjdk/optimized/png.ll
-; openjdk/optimized/subnode.ll
-; openjdk/optimized/vectornode.ll
 ; openusd/optimized/cdef.c.ll
 ; php/optimized/html.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/extension_set_heavy.cc.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
-; raylib/optimized/rcore.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
-; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 2
+  %3 = icmp ult i32 %2, 16385
   %4 = and i1 %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -323,11 +349,12 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; icu/optimized/hebrwcal.ll
+; icu/optimized/tzfmt.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/InstrEmitter.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
@@ -342,6 +369,19 @@ entry:
 define i1 @func0000000000000006(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 128
+  %4 = and i1 %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; clamav/optimized/pe_icons.c.ll
+; lief/optimized/psa_crypto_aead.c.ll
+; zfp/optimized/zfp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 16
   %4 = and i1 %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

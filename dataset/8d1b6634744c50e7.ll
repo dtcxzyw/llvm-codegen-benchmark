@@ -15,7 +15,7 @@ entry:
 ; graphviz/optimized/pack.c.ll
 ; opencv/optimized/brisk.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(double %0, double %1) #0 {
+define i1 @func000000000000002a(double %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = fptosi double %0 to i32
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(double %0, double %1) #0 {
+define i1 @func0000000000000026(double %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = fptosi double %0 to i32

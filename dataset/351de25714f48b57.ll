@@ -1,10 +1,9 @@
 
-; 3 occurrences:
-; linux/optimized/hdac_regmap.ll
+; 2 occurrences:
 ; linux/optimized/vfs_inode.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1073741824
   %4 = icmp eq i32 %3, 0
@@ -14,14 +13,13 @@ entry:
   ret i32 %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/af_inet6.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/udp.ll
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 18
   %4 = icmp eq i32 %3, 18

@@ -35,7 +35,8 @@ entry:
   ret i64 %5
 }
 
-; 25 occurrences:
+; 26 occurrences:
+; cvc5/optimized/word.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; icu/optimized/icuexportdata.ll
 ; icu/optimized/uconv.ll
@@ -70,7 +71,7 @@ entry:
   ret i64 %5
 }
 
-; 24 occurrences:
+; 28 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; brotli/optimized/huffman.c.ll
@@ -95,6 +96,10 @@ entry:
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; yosys/optimized/cxxrtl_backend.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -104,11 +109,13 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; linux/optimized/i915_gem_mman.ll
 ; openjdk/optimized/cardTable.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:

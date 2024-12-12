@@ -1,8 +1,6 @@
 
-; 38 occurrences:
+; 36 occurrences:
 ; abc/optimized/bmcMaj.c.ll
-; casadi/optimized/cs_cholsol.c.ll
-; casadi/optimized/cs_lusol.c.ll
 ; clamav/optimized/hostid.c.ll
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
@@ -12,7 +10,6 @@
 ; git/optimized/userdiff.ll
 ; graphviz/optimized/strmatch.c.ll
 ; hdf5/optimized/H5FDint.c.ll
-; icu/optimized/ubidiwrt.ll
 ; linux/optimized/cpufreq_ondemand.ll
 ; linux/optimized/hpet.ll
 ; linux/optimized/memmap.ll
@@ -36,8 +33,9 @@
 ; proj/optimized/geodesic.c.ll
 ; ruby/optimized/ossl_pkey_rsa.ll
 ; wasmedge/optimized/engine.cpp.ll
-; wireshark/optimized/expert_info_view.cpp.ll
 ; wireshark/optimized/packet-f5ethtrailer.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

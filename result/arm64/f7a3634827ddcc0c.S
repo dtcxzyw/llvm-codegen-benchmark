@@ -1,60 +1,63 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	shl	v2.2d, v2.2d, #3
-	shl	v3.2d, v3.2d, #3
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	lsl	x8, x1, #3
+	add	x8, x8, w2, uxtw
+	add	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	shl	v2.2d, v2.2d, #3
-	shl	v3.2d, v3.2d, #3
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	lsl	x8, x1, #3
+	add	x8, x8, w2, uxtw
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
-	shl	v2.2d, v2.2d, #4
-	shl	v3.2d, v3.2d, #4
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	lsl	x8, x1, #4
+	add	x8, x8, w2, uxtw
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	shl	v2.2d, v2.2d, #9
-	shl	v3.2d, v3.2d, #9
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	lsl	x8, x1, #9
+	add	x8, x8, w2, uxtw
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	shl	v2.2d, v2.2d, #4
-	shl	v3.2d, v3.2d, #4
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	lsl	x8, x1, #4
+	add	x8, x8, w2, uxtw
+	add	x0, x8, x0
+	ret
+                                        // -- End function
+func000000000000003e:                   // @func000000000000003e
+// %bb.0:                               // %entry
+	lsl	x8, x1, #28
+	add	x8, x8, w2, uxtw
+	add	x0, x0, x8
+	ret
+                                        // -- End function
+func0000000000000040:                   // @func0000000000000040
+// %bb.0:                               // %entry
+	lsl	x8, x1, #2
+	add	x8, x8, w2, uxtw
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	shl	v2.2d, v2.2d, #3
-	shl	v3.2d, v3.2d, #3
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	lsl	x8, x1, #3
+	add	x8, x8, w2, uxtw
+	add	x0, x0, x8
+	ret
+                                        // -- End function
+func0000000000000055:                   // @func0000000000000055
+// %bb.0:                               // %entry
+	lsl	x8, x1, #4
+	add	x8, x8, w2, uxtw
+	add	x0, x8, x0
 	ret
                                         // -- End function

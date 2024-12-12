@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -5
   %4 = icmp eq i8 %3, 0
@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/intel_hdcp.ll
 ; llvm/optimized/DiagnosticIDs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 16
   %4 = icmp ne i8 %3, 0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-uds.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -80
   %4 = icmp eq i8 %3, 0
@@ -54,7 +54,7 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0

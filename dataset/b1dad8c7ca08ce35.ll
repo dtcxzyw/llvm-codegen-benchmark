@@ -24,11 +24,12 @@ entry:
   ret i64 %2
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/bigint.c.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; luau/optimized/CostModel.cpp.ll

@@ -7,7 +7,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 63
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = trunc nuw i32 %5 to i8
   ret i8 %6
 }
@@ -20,7 +20,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 63
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = trunc nuw i32 %5 to i8
   ret i8 %6
 }
@@ -36,7 +36,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 7
   %4 = and i32 %3, 7
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = trunc nuw nsw i32 %5 to i8
   ret i8 %6
 }

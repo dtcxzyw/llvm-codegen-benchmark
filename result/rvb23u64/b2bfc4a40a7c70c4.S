@@ -15,6 +15,14 @@ func000000000000001d:                   # @func000000000000001d
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
+func000000000000000c:                   # @func000000000000000c
+	andi	a2, a2, 1
+	li	a3, 12
+	czero.eqz	a2, a3, a2
+	add	a0, a0, a2
+	sh2add	a0, a1, a0
+	sext.w	a0, a0
+	ret
 func0000000000000010:                   # @func0000000000000010
 	andi	a2, a2, 1
 	li	a3, 7

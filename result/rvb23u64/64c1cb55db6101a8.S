@@ -1,22 +1,22 @@
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	slli.uw	a2, a2, 2
 	sh1add	a2, a2, a2
 	add	a0, a0, a2
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	add.uw	a0, a2, a0
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
 	ret
-func0000000000000072:                   # @func0000000000000072
+func0000000000000073:                   # @func0000000000000073
 	sext.w	a2, a2
 	sh1add	a0, a2, a0
 	sh3add	a1, a1, a1
 	sh1add	a0, a1, a0
 	ret
-func0000000000000078:                   # @func0000000000000078
+func000000000000007c:                   # @func000000000000007c
 	sext.w	a2, a2
 	sh1add	a0, a2, a0
 	sh1add	a1, a1, a1
@@ -28,14 +28,19 @@ func0000000000000070:                   # @func0000000000000070
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
 	ret
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	sext.w	a2, a2
 	sh2add	a0, a2, a0
 	li	a2, 544
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000001c:                   # @func000000000000001c
+	add.uw	a0, a2, a0
+	slli	a1, a1, 2
+	sub	a0, a0, a1
+	ret
+func000000000000002f:                   # @func000000000000002f
 	sh2add.uw	a0, a2, a0
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
@@ -46,14 +51,14 @@ func0000000000000040:                   # @func0000000000000040
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	slli.uw	a2, a2, 3
 	sh2add	a2, a2, a2
 	add	a0, a0, a2
 	sh2add	a1, a1, a1
 	sh3add	a0, a1, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func000000000000003c:                   # @func000000000000003c
 	slli.uw	a2, a2, 3
 	sh2add	a1, a1, a1
 	sh2add	a2, a2, a2
@@ -84,7 +89,7 @@ func0000000000000050:                   # @func0000000000000050
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	add.uw	a0, a2, a0
 	sh1add	a1, a1, a1
 	add	a0, a0, a1

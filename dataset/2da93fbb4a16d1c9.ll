@@ -1,9 +1,7 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; git/optimized/diff.ll
 ; git/optimized/packfile.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
 ; openblas/optimized/dtgevc.c.ll
 ; php/optimized/fastcgi.ll
 ; postgres/optimized/regexp.ll

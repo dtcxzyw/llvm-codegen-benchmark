@@ -54,12 +54,11 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; openjdk/optimized/dwarf.ll
-; openjdk/optimized/elfFile.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
@@ -70,7 +69,7 @@ entry:
   ret i1 %4
 }
 
-; 47 occurrences:
+; 45 occurrences:
 ; abc/optimized/abc.c.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
@@ -85,7 +84,6 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/bssl_shim.cc.ll
 ; libwebp/optimized/anim_encode.c.ll
-; linux/optimized/i915_module.ll
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/PrintfFormatString.cpp.ll
@@ -100,7 +98,6 @@ entry:
 ; openblas/optimized/dlasdq.c.ll
 ; openjdk/optimized/loopnode.ll
 ; openspiel/optimized/goofspiel.cc.ll
-; openssl/optimized/quic_wire_test-bin-quic_wire_test.ll
 ; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/string-to-double.cc.ll
@@ -151,8 +148,7 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; llvm/optimized/InstructionCombining.cpp.ll
+; 2 occurrences:
 ; openjdk/optimized/referenceProcessor.ll
 ; php/optimized/html.ll
 ; Function Attrs: nounwind

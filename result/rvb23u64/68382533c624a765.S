@@ -24,3 +24,8 @@ func000000000000002b:                   # @func000000000000002b
 	addi	a0, a0, 2
 	slli.uw	a0, a0, 2
 	ret
+func000000000000007f:                   # @func000000000000007f
+	slli	a0, a0, 1
+	addiw	a0, a0, 2
+	slli	a0, a0, 3
+	ret

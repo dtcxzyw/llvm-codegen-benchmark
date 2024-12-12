@@ -17,3 +17,12 @@ func0000000000000011:                   # @func0000000000000011
 	addq	$-32, %rax
 	sarq	$2, %rax
 	retq
+func0000000000000019:                   # @func0000000000000019
+	notb	%dl
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	shll	$4, %eax
+	addq	%rsi, %rax
+	subq	%rdi, %rax
+	sarq	$4, %rax
+	retq

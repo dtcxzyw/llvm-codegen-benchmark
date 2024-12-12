@@ -1,8 +1,11 @@
 
-; 9 occurrences:
+%class.aiVector3t.2823159 = type { double, double, double }
+
+; 10 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/encode.c.ll
 ; cpython/optimized/sixstep.ll
+; faiss/optimized/IndexPQ.cpp.ll
 ; openjdk/optimized/g1RemSet.ll
 ; openjdk/optimized/typeArrayKlass.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -28,10 +31,10 @@ entry:
 ; ozz-animation/optimized/animation.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -76,8 +79,7 @@ entry:
   ret ptr %4
 }
 
-; 8 occurrences:
-; assimp/optimized/IFCGeometry.cpp.ll
+; 7 occurrences:
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
 ; libpng/optimized/pngread.c.ll
@@ -90,6 +92,16 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %1, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; assimp/optimized/IFCGeometry.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %1, %2
+  %4 = getelementptr nusw nuw %class.aiVector3t.2823159, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -112,6 +124,16 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; quest/optimized/QuEST_common.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %1, %2
+  %4 = getelementptr nusw nuw double, ptr %0, i64 %3
   ret ptr %4
 }
 

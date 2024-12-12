@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -24,6 +24,7 @@
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/warpers.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:

@@ -1,14 +1,14 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	leaq	-1(%rdx,%rsi), %rax
 	shrq	$6, %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	leaq	-1(%rdx,%rsi), %rax
 	shrq	$6, %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leaq	-1(%rdx,%rsi), %rax
 	shrq	$6, %rax
 	leaq	(%rdi,%rax,8), %rax

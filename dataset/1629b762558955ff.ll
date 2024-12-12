@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 70 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -46,7 +46,6 @@
 ; php/optimized/zend_strtod.ll
 ; proj/optimized/aea.cpp.ll
 ; proj/optimized/auth.cpp.ll
-; proj/optimized/crast.cpp.ll
 ; proj/optimized/deriv.cpp.ll
 ; proj/optimized/hatano.cpp.ll
 ; proj/optimized/labrd.cpp.ll

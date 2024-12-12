@@ -38,13 +38,3 @@ func0000000000000008:                   # @func0000000000000008
 	vmovdqu8	.LCPI3_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq
-.LCPI4_0:
-	.long	536870911                       # 0x1fffffff
-.LCPI4_1:
-	.zero	16,1
-func0000000000000010:                   # @func0000000000000010
-	vpandd	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
-	vpcmpnleud	%ymm0, %ymm1, %k1
-	vmovdqu8	.LCPI4_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-	vzeroupper
-	retq

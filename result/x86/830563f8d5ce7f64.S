@@ -1,7 +1,7 @@
 func0000000000000031:                   # @func0000000000000031
 	imull	$60, %edx, %eax
-	leal	(%rax,%rsi), %ecx
-	leal	-86400(%rax,%rsi), %eax
+	leal	(%rsi,%rax), %ecx
+	leal	-86400(%rsi,%rax), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
@@ -14,8 +14,8 @@ func000000000000003d:                   # @func000000000000003d
 	retq
 func0000000000000011:                   # @func0000000000000011
 	imull	$1000, %edx, %eax               # imm = 0x3E8
-	leal	(%rax,%rsi), %ecx
-	leal	-1000000(%rax,%rsi), %eax
+	leal	(%rsi,%rax), %ecx
+	leal	-1000000(%rsi,%rax), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

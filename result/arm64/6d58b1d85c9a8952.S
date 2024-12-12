@@ -1,52 +1,36 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mvni	v2.4s, #127
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
-	cmlt	v2.4s, v0.4s, #0
-	cmlt	v3.4s, v1.4s, #0
-	usra	v0.4s, v2.4s, #27
-	usra	v1.4s, v3.4s, #27
-	shrn	v0.4h, v0.4s, #5
-	shrn2	v0.8h, v1.4s, #5
+	subs	w8, w0, #128
+	sub	w9, w0, #97
+	csel	w8, w9, w8, lt
+	asr	w0, w8, #5
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	mov	w8, #12345                      // =0x3039
-	dup	v2.4s, w8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
-	cmlt	v3.4s, v0.4s, #0
-	ushr	v2.4s, v3.4s, #16
-	cmlt	v3.4s, v1.4s, #0
-	addhn	v0.4h, v0.4s, v2.4s
-	ushr	v2.4s, v3.4s, #16
-	addhn2	v0.8h, v1.4s, v2.4s
+	add	w9, w0, #19, lsl #12            // =77824
+	add	w8, w0, w8
+	add	w9, w9, #56
+	cmp	w8, #0
+	csel	w8, w9, w8, lt
+	asr	w0, w8, #16
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
-	usra	v0.4s, v0.4s, #31
-	usra	v1.4s, v1.4s, #31
-	shrn	v0.4h, v0.4s, #1
-	shrn2	v0.8h, v1.4s, #1
-	neg	v0.8h, v0.8h
+	sub	w8, w0, #1
+	add	w8, w8, w8, lsr #31
+	neg	w0, w8, asr #1
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mvni	v2.4s, #63, msl #8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
-	cmlt	v2.4s, v0.4s, #0
-	cmlt	v3.4s, v1.4s, #0
-	usra	v0.4s, v2.4s, #26
-	usra	v1.4s, v3.4s, #26
-	shrn	v0.4h, v0.4s, #6
-	shrn2	v0.8h, v1.4s, #6
+	mov	w8, #-16321                     // =0xffffc03f
+	sub	w9, w0, #4, lsl #12             // =16384
+	add	w8, w0, w8
+	cmp	w9, #0
+	csel	w8, w8, w9, lt
+	asr	w0, w8, #6
 	ret
                                         // -- End function

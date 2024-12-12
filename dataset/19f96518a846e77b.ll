@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/core.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; git/optimized/revision.ll
 ; linux/optimized/neighbour.ll
@@ -26,7 +27,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 9
   %4 = and i32 %3, 16384
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = xor i32 %5, %0
   ret i32 %6
 }
@@ -40,7 +41,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = and i32 %3, 254
   %5 = or disjoint i32 %4, %1
-  %6 = xor i32 %5, %0
+  %6 = xor i32 %0, %5
   ret i32 %6
 }
 

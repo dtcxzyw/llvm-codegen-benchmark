@@ -14,12 +14,15 @@ func000000000000002c:                   # @func000000000000002c
 	imull	%edx, %esi
 	leaq	(%rdi,%rsi,2), %rax
 	retq
-func000000000000007e:                   # @func000000000000007e
+func000000000000000d:                   # @func000000000000000d
 	imull	%edx, %esi
-	shlq	$4, %rsi
-	leaq	(%rsi,%rdi), %rax
+	leaq	(%rdi,%rsi,4), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000007f:                   # @func000000000000007f
+	imull	%edx, %esi
+	leaq	(%rdi,%rsi,4), %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
 	imull	%edx, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq

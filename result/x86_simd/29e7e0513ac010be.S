@@ -45,5 +45,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
 	vcvtdq2ps	%ymm1, %ymm1
-	vaddps	%ymm0, %ymm1, %ymm0
+	vaddps	%ymm1, %ymm0, %ymm0
 	retq

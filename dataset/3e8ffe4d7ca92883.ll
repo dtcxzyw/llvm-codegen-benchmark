@@ -1,5 +1,5 @@
 
-; 112 occurrences:
+; 111 occurrences:
 ; abc/optimized/dsdTree.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -37,8 +37,6 @@
 ; icu/optimized/unistr_case.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; linux/optimized/alternative.ll
-; linux/optimized/capability.ll
-; linux/optimized/decompress_unlz4.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/shrinker.ll
@@ -107,6 +105,7 @@
 ; velox/optimized/ArrayPosition.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; wireshark/optimized/display_filter_edit.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zstd/optimized/zstd_opt.c.ll

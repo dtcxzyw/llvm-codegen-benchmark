@@ -1,9 +1,9 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	cmpq	%rsi, %rdi
 	movl	$-400, %eax                     # imm = 0xFE70
 	cmovel	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpq	%rsi, %rdi
 	movl	$-400, %eax                     # imm = 0xFE70
 	cmovel	%edi, %eax
@@ -18,17 +18,22 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$-1, %eax
 	cmovbl	%edi, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	cmovbl	%edi, %eax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	cmovll	%edi, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000064:                   # @func0000000000000064
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	cmovbl	%edi, %eax
+	retq
+func0000000000000054:                   # @func0000000000000054
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	cmovbl	%edi, %eax

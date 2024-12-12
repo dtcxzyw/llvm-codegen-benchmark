@@ -1,11 +1,10 @@
 
-%"class.irr::video::SColor.2583823" = type { i32 }
-%"struct.sound::SoundDataOpenStream::SoundBufferUntil.2589787" = type { i32, %"struct.sound::RAIIALSoundBuffer.2589774" }
-%"struct.sound::RAIIALSoundBuffer.2589774" = type { i32 }
+%"class.irr::video::SColor.2697847" = type { i32 }
+%"struct.sound::SoundDataOpenStream::SoundBufferUntil.2703632" = type { i32, %"struct.sound::RAIIALSoundBuffer.2703619" }
+%"struct.sound::RAIIALSoundBuffer.2703619" = type { i32 }
 
-; 666 occurrences:
+; 662 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; arrow/optimized/builder_union.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/exec.cc.ll
@@ -202,7 +201,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -234,7 +232,6 @@
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -542,7 +539,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -681,7 +677,7 @@ entry:
   ret ptr %7
 }
 
-; 119 occurrences:
+; 115 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
@@ -721,7 +717,6 @@ entry:
 ; llvm/optimized/JSON.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
@@ -772,9 +767,6 @@ entry:
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; protobuf/optimized/generated_enum_util.cc.ll
-; quantlib/optimized/cmsmarketcalibration.ll
-; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
-; quantlib/optimized/isdacdsengine.ll
 ; quantlib/optimized/proxygreekengine.ll
 ; rocksdb/optimized/trace_analyzer_tool.cc.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
@@ -874,13 +866,171 @@ entry:
   ret ptr %7
 }
 
-; 161 occurrences:
+; 45 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
+; minetest/optimized/serverenvironment.cpp.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
+; quantlib/optimized/isdacdsengine.ll
+; xgboost/optimized/hist_util.cc.ll
+; yosys/optimized/abc.ll
+; yosys/optimized/blif.ll
+; yosys/optimized/clean_zerowidth.ll
+; yosys/optimized/connect.ll
+; yosys/optimized/dft_tag.ll
+; yosys/optimized/edif.ll
+; yosys/optimized/equiv_make.ll
+; yosys/optimized/equiv_miter.ll
+; yosys/optimized/equiv_simple.ll
+; yosys/optimized/expose.ll
+; yosys/optimized/formalff.ll
+; yosys/optimized/fsm_detect.ll
+; yosys/optimized/fsm_extract.ll
+; yosys/optimized/future.ll
+; yosys/optimized/intersynth.ll
+; yosys/optimized/ltp.ll
+; yosys/optimized/memory_dff.ll
+; yosys/optimized/memory_libmap.ll
+; yosys/optimized/memory_share.ll
+; yosys/optimized/opt_clean.ll
+; yosys/optimized/opt_dff.ll
+; yosys/optimized/opt_expr.ll
+; yosys/optimized/opt_mem_priority.ll
+; yosys/optimized/opt_merge.ll
+; yosys/optimized/sat.ll
+; yosys/optimized/scatter.ll
+; yosys/optimized/scc.ll
+; yosys/optimized/select.ll
+; yosys/optimized/setundef.ll
+; yosys/optimized/share.ll
+; yosys/optimized/show.ll
+; yosys/optimized/smt2.ll
+; yosys/optimized/smv.ll
+; yosys/optimized/splice.ll
+; yosys/optimized/splitnets.ll
+; yosys/optimized/submod.ll
+; yosys/optimized/xprop.ll
+; yosys/optimized/yosys.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %3, %2
+  %5 = ashr exact i64 %4, 3
+  %6 = sub nuw nsw i64 %1, %5
+  %7 = getelementptr nusw nuw ptr, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 3 occurrences:
+; linux/optimized/rmap.ll
+; minetest/optimized/enriched_string.cpp.ll
+; wireshark/optimized/supported_protocols_model.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %3, %2
+  %5 = ashr exact i64 %4, 2
+  %6 = sub nsw i64 %1, %5
+  %7 = getelementptr %"class.irr::video::SColor.2697847", ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 39 occurrences:
+; darktable/optimized/AbstractLJpegDecoder.cpp.ll
+; darktable/optimized/Camera.cpp.ll
+; darktable/optimized/CrwDecompressor.cpp.ll
+; darktable/optimized/NikonDecompressor.cpp.ll
+; darktable/optimized/PentaxDecompressor.cpp.ll
+; darktable/optimized/TableLookUp.cpp.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_common_arrow.cpp.ll
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; duckdb/optimized/ub_duckdb_operator_aggregate.cpp.ll
+; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
+; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; entt/optimized/benchmark.cpp.ll
+; entt/optimized/custom_identifier.cpp.ll
+; entt/optimized/entity_copy.cpp.ll
+; entt/optimized/group.cpp.ll
+; entt/optimized/handle.cpp.ll
+; entt/optimized/helper.cpp.ll
+; entt/optimized/meta_ctor.cpp.ll
+; entt/optimized/meta_func.cpp.ll
+; entt/optimized/observer.cpp.ll
+; entt/optimized/organizer.cpp.ll
+; entt/optimized/registry.cpp.ll
+; entt/optimized/runtime_view.cpp.ll
+; entt/optimized/sigh_mixin.cpp.ll
+; entt/optimized/signal_less.cpp.ll
+; entt/optimized/snapshot.cpp.ll
+; entt/optimized/sparse_set.cpp.ll
+; entt/optimized/storage.cpp.ll
+; entt/optimized/storage_entity.cpp.ll
+; entt/optimized/storage_no_instance.cpp.ll
+; entt/optimized/view.cpp.ll
+; hyperscan/optimized/ng_find_matches.cpp.ll
+; hyperscan/optimized/ng_violet.cpp.ll
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; hyperscan/optimized/ue2string.cpp.ll
+; llvm/optimized/InstCombineCasts.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %3, %2
+  %5 = ashr exact i64 %4, 3
+  %6 = sub i64 %1, %5
+  %7 = getelementptr nusw ptr, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 7 occurrences:
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/GlobalMerge.cpp.ll
+; minetest/optimized/sound_data.cpp.ll
+; opencv/optimized/motion_estimators.cpp.ll
+; opencv/optimized/nldiffusion_functions.cpp.ll
+; opencv/optimized/slic.cpp.ll
+; zxing/optimized/PDFHighLevelEncoder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %3, %2
+  %5 = ashr exact i64 %4, 3
+  %6 = sub nsw i64 %1, %5
+  %7 = getelementptr nusw %"struct.sound::SoundDataOpenStream::SoundBufferUntil.2703632", ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 7 occurrences:
+; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; boost/optimized/boundary.ll
+; boost/optimized/work_stealing.ll
+; quantlib/optimized/discretizedswaption.ll
+; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
+; quantlib/optimized/lossdistribution.ll
+; quantlib/optimized/squarerootclvmodel.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %3, %2
+  %5 = ashr exact i64 %4, 3
+  %6 = sub nuw i64 %1, %5
+  %7 = getelementptr nusw nuw double, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 158 occurrences:
 ; gromacs/optimized/orires.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; minetest/optimized/serverenvironment.cpp.ll
 ; oiio/optimized/printinfo.cpp.ll
-; xgboost/optimized/hist_util.cc.ll
 ; yosys/optimized/abc.ll
 ; yosys/optimized/abc9_ops.ll
 ; yosys/optimized/aiger.ll
@@ -1043,108 +1193,7 @@ entry:
   %4 = sub i64 %3, %2
   %5 = ashr exact i64 %4, 3
   %6 = sub nuw nsw i64 %1, %5
-  %7 = getelementptr nusw ptr, ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 3 occurrences:
-; linux/optimized/rmap.ll
-; minetest/optimized/enriched_string.cpp.ll
-; wireshark/optimized/supported_protocols_model.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = ashr exact i64 %4, 2
-  %6 = sub nsw i64 %1, %5
-  %7 = getelementptr %"class.irr::video::SColor.2583823", ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 39 occurrences:
-; darktable/optimized/AbstractLJpegDecoder.cpp.ll
-; darktable/optimized/Camera.cpp.ll
-; darktable/optimized/CrwDecompressor.cpp.ll
-; darktable/optimized/NikonDecompressor.cpp.ll
-; darktable/optimized/PentaxDecompressor.cpp.ll
-; darktable/optimized/TableLookUp.cpp.ll
-; duckdb/optimized/ub_duckdb_common.cpp.ll
-; duckdb/optimized/ub_duckdb_common_arrow.cpp.ll
-; duckdb/optimized/ub_duckdb_execution.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_aggregate.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
-; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; entt/optimized/benchmark.cpp.ll
-; entt/optimized/custom_identifier.cpp.ll
-; entt/optimized/entity_copy.cpp.ll
-; entt/optimized/group.cpp.ll
-; entt/optimized/handle.cpp.ll
-; entt/optimized/helper.cpp.ll
-; entt/optimized/meta_ctor.cpp.ll
-; entt/optimized/meta_func.cpp.ll
-; entt/optimized/observer.cpp.ll
-; entt/optimized/organizer.cpp.ll
-; entt/optimized/registry.cpp.ll
-; entt/optimized/runtime_view.cpp.ll
-; entt/optimized/sigh_mixin.cpp.ll
-; entt/optimized/signal_less.cpp.ll
-; entt/optimized/snapshot.cpp.ll
-; entt/optimized/sparse_set.cpp.ll
-; entt/optimized/storage.cpp.ll
-; entt/optimized/storage_entity.cpp.ll
-; entt/optimized/storage_no_instance.cpp.ll
-; entt/optimized/view.cpp.ll
-; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_violet.cpp.ll
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
-; hyperscan/optimized/ue2string.cpp.ll
-; llvm/optimized/InstCombineCasts.cpp.ll
-; minetest/optimized/mapblock_mesh.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = ashr exact i64 %4, 3
-  %6 = sub i64 %1, %5
-  %7 = getelementptr nusw ptr, ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 7 occurrences:
-; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
-; llvm/optimized/GlobalMerge.cpp.ll
-; minetest/optimized/sound_data.cpp.ll
-; opencv/optimized/motion_estimators.cpp.ll
-; opencv/optimized/nldiffusion_functions.cpp.ll
-; opencv/optimized/slic.cpp.ll
-; zxing/optimized/PDFHighLevelEncoder.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = ashr exact i64 %4, 3
-  %6 = sub nsw i64 %1, %5
-  %7 = getelementptr nusw %"struct.sound::SoundDataOpenStream::SoundBufferUntil.2589787", ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 4 occurrences:
-; quantlib/optimized/discretizedswaption.ll
-; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
-; quantlib/optimized/lossdistribution.ll
-; quantlib/optimized/squarerootclvmodel.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = ashr exact i64 %4, 3
-  %6 = sub nuw i64 %1, %5
-  %7 = getelementptr nusw nuw double, ptr %0, i64 %6
+  %7 = getelementptr nusw i64, ptr %0, i64 %6
   ret ptr %7
 }
 

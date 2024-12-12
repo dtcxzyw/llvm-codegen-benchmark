@@ -1,5 +1,5 @@
 func000000000000000c:                   # @func000000000000000c
-	addb	%sil, %dl
+	addb	%dl, %sil
 	setne	%al
 	andb	%dil, %al
 	retq
@@ -8,7 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	setns	%al
 	andb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addb	%dl, %sil
 	cmpb	$2, %sil
 	sete	%al

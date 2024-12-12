@@ -5,11 +5,11 @@
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000050a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ule i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = icmp sgt i32 %5, 0
   ret i1 %6
 }

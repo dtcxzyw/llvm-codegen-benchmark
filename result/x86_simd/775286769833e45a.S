@@ -34,12 +34,6 @@ func0000000000000002:                   # @func0000000000000002
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
-func0000000000000018:                   # @func0000000000000018
-	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm0, %xmm0
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	retq
 func0000000000000066:                   # @func0000000000000066
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$4, %xmm0, %xmm0
@@ -53,12 +47,6 @@ func000000000000004a:                   # @func000000000000004a
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 func000000000000000a:                   # @func000000000000000a
-	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm0, %xmm0
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	retq
-func000000000000001f:                   # @func000000000000001f
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm0, %xmm0, %xmm0
 	vpaddd	%xmm1, %xmm0, %xmm0

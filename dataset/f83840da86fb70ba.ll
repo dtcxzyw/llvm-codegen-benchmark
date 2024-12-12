@@ -18,7 +18,7 @@
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0) #0 {
+define i1 @func0000000000000044(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 2
   %2 = udiv i64 4294967295, %1

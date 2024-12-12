@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 53 occurrences:
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; cpython/optimized/_stat.ll
@@ -20,9 +20,14 @@
 ; linux/optimized/xfrm_policy.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
+; llvm/optimized/CallingConvLower.cpp.ll
 ; llvm/optimized/ConstantMerge.cpp.ll
 ; llvm/optimized/ExprEngineC.cpp.ll
+; llvm/optimized/HWAddressSanitizer.cpp.ll
+; llvm/optimized/Value.cpp.ll
 ; lua/optimized/lgc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; oiio/optimized/bmpinput.cpp.ll
 ; openjdk/optimized/png.ll
@@ -44,6 +49,9 @@
 ; wireshark/optimized/packet-s5066dts.c.ll
 ; wireshark/optimized/str_util.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i8 %1, i32 %2) #0 {
@@ -71,10 +79,10 @@ entry:
 ; wireshark/optimized/packet-camel.c.ll
 ; wireshark/optimized/packet-isup.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i8 %0, i8 %1, i32 %2) #0 {
+define i8 @func0000000000000014(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 14
-  %4 = icmp ult i32 %3, 10
+  %4 = icmp samesign ult i32 %3, 10
   %5 = select i1 %4, i8 %0, i8 %1
   ret i8 %5
 }
@@ -82,10 +90,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xhci-mem.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000008(i8 %0, i8 %1, i32 %2) #0 {
+define i8 @func0000000000000018(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
-  %4 = icmp ugt i32 %3, 4
+  %4 = icmp samesign ugt i32 %3, 4
   %5 = select i1 %4, i8 %0, i8 %1
   ret i8 %5
 }

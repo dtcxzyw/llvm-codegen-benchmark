@@ -21,6 +21,14 @@ func0000000000000054:                   # @func0000000000000054
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
+func000000000000007c:                   # @func000000000000007c
+	sext.w	a1, a1
+	lui	a2, 65536
+	addiw	a2, a2, -225
+	slli	a2, a2, 4
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	ret
 func0000000000000030:                   # @func0000000000000030
 	zext.w	a1, a1
 	lui	a2, 244

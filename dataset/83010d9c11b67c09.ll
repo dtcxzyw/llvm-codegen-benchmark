@@ -1,15 +1,16 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
+; openspiel/optimized/spiel.cc.ll
 ; rocksdb/optimized/skiplistrep.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000005b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -42,26 +43,26 @@ entry:
 ; postgres/optimized/ginvacuum.ll
 ; postgres/optimized/nbtsearch.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000053(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 13
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; graphviz/optimized/make_map.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 3
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 

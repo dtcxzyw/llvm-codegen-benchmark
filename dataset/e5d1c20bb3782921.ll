@@ -1,10 +1,11 @@
 
-; 70 occurrences:
+; 79 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/uri.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/port_rule.ll
 ; cmake/optimized/idna.c.ll
 ; cvc5/optimized/rewriter.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -20,6 +21,14 @@
 ; linux/optimized/eeepc-laptop.ll
 ; linux/optimized/i915_hwmon.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
@@ -77,7 +86,7 @@ entry:
   ret i16 %1
 }
 
-; 102 occurrences:
+; 107 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -87,6 +96,7 @@ entry:
 ; arrow/optimized/uri.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/init_from_settings.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/dlp.c.ll
@@ -107,10 +117,8 @@ entry:
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/eeepc-laptop.ll
-; linux/optimized/eht.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_dp.ll
-; linux/optimized/intel_guc_slpc.ll
 ; linux/optimized/intel_pps.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/mlme.ll
@@ -122,6 +130,10 @@ entry:
 ; linux/optimized/ucount.ll
 ; linux/optimized/uncore.ll
 ; linux/optimized/vt.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -177,8 +189,10 @@ entry:
 ; wireshark/optimized/packet-ieee17221.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-iso7816.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; wireshark/optimized/packet-usb-audio.c.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0) #0 {
@@ -187,9 +201,16 @@ entry:
   ret i16 %1
 }
 
-; 64 occurrences:
+; 72 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/port_rule.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/blocksort.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -202,7 +223,6 @@ entry:
 ; icu/optimized/normalizer2impl.ll
 ; jq/optimized/decNumber.ll
 ; libpng/optimized/pngrtran.c.ll
-; libquic/optimized/reduce.c.ll
 ; libzmq/optimized/zmtp_engine.cpp.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/e100.ll
@@ -215,6 +235,8 @@ entry:
 ; llvm/optimized/RustDemangle.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/rich_parameters.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/servermap.cpp.ll

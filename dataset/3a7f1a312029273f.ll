@@ -1,8 +1,7 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; linux/optimized/balloc.ll
 ; linux/optimized/intel_backlight.ll
-; linux/optimized/jiffies.ll
 ; linux/optimized/md.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/vmstat.ll

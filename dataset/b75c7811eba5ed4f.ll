@@ -6,7 +6,6 @@
 ; cmake/optimized/cmCTestVC.cxx.ll
 ; cpython/optimized/memoryobject.ll
 ; git/optimized/transport.ll
-; gromacs/optimized/colvaratoms.cpp.ll
 ; gromacs/optimized/colvars_memstream.cpp.ll
 ; gromacs/optimized/poscalc.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -18,6 +17,9 @@
 ; linux/optimized/mutex.ll
 ; linux/optimized/pcm_native.ll
 ; linux/optimized/tg3.ll
+; llvm/optimized/AsmPrinterInlineAsm.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/MachineModuleInfo.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/guiSkin.cpp.ll
 ; nix/optimized/binary-cache-store.ll
@@ -31,7 +33,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -83,62 +84,45 @@
 ; openjdk/optimized/sampleList.ll
 ; php/optimized/formatted_print.ll
 ; php/optimized/hash_xxhash.ll
-; rocksdb/optimized/keyrange.cc.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000086(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000187(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 32
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 64
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, ptr %2, ptr %0
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 11
   ret ptr %5
 }
 
-; 3 occurrences:
-; llvm/optimized/AsmPrinterInlineAsm.cpp.ll
-; llvm/optimized/Clang.cpp.ll
-; llvm/optimized/MachineModuleInfo.cpp.ll
+; 1 occurrences:
+; gromacs/optimized/colvaratoms.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c7(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000107(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %2 = getelementptr nusw i8, ptr %1, i64 -320
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, ptr %2, ptr %0
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 88
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1416
   ret ptr %5
 }
 
-; 2 occurrences:
-; llvm/optimized/Clang.cpp.ll
-; llvm/optimized/MachineModuleInfo.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000c6(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 40
-  %3 = icmp eq ptr %0, null
-  %4 = select i1 %3, ptr %2, ptr %0
-  %5 = getelementptr nusw i8, ptr %4, i64 128
-  ret ptr %5
-}
-
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/indirect.ll
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/sit.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000007(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -24
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, ptr %2, ptr %0
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 

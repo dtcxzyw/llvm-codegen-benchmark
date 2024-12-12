@@ -11,6 +11,7 @@
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/fmu_function.cpp.ll
@@ -150,7 +151,6 @@
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/hw_virtio_virtio-balloon.c.ll
 ; qemu/optimized/util_thread-context.c.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/mchimalayaengine.ll
@@ -187,7 +187,7 @@ entry:
   ret i64 %3
 }
 
-; 174 occurrences:
+; 173 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ivyFraig.c.ll
@@ -200,6 +200,7 @@ entry:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/RemoveRedundantMaterials.cpp.ll
 ; assimp/optimized/SplitByBoneCountProcess.cpp.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/bigint.c.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; cvc5/optimized/regexp_elim.cpp.ll
@@ -238,7 +239,6 @@ entry:
 ; ipopt/optimized/IpCompoundSymMatrix.ll
 ; libjpeg-turbo/optimized/jidctred.c.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/bitset.ll
 ; linux/optimized/buffered-io.ll
@@ -274,7 +274,6 @@ entry:
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; llvm/optimized/MachineStableHash.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScheduleDAG.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -371,7 +370,7 @@ entry:
   ret i64 %3
 }
 
-; 702 occurrences:
+; 699 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -384,6 +383,7 @@ entry:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/options_description.ll
 ; brotli/optimized/backward_references.c.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
@@ -582,7 +582,6 @@ entry:
 ; linux/optimized/swap_state.ll
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/tree.ll
-; linux/optimized/ttm_range_manager.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -605,7 +604,6 @@ entry:
 ; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
@@ -748,13 +746,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -995,7 +990,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -1070,6 +1064,8 @@ entry:
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/proc_rom.ll
 ; yosys/optimized/sim.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; zxing/optimized/ODCodabarWriter.cpp.ll
 ; zxing/optimized/ODCode93Writer.cpp.ll

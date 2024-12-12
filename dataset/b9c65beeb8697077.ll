@@ -7,21 +7,20 @@
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 506381209866536711
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul i64 %3, 72340172838076673
   ret i64 %4
 }
 
-; 3 occurrences:
-; delta-rs/optimized/11w0at10aiwuq3yr.ll
-; eastl/optimized/EADateTime.cpp.ll
-; php/optimized/dow.ll
+; 2 occurrences:
+; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/default_formatter_factory.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4
-  %3 = add nsw i64 %2, %0
-  %4 = mul nsw i64 %3, -2
+  %2 = and i64 %1, 4294967295
+  %3 = add nsw i64 %0, %2
+  %4 = mul i64 %3, 60000000
   ret i64 %4
 }
 
@@ -58,17 +57,6 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; abseil-cpp/optimized/numbers.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 545460846719
-  %3 = add nsw i64 %2, %0
-  %4 = mul i64 %3, 103
-  ret i64 %4
-}
-
 ; 2 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; linux/optimized/intel_cx0_phy.ll
@@ -89,6 +77,18 @@ entry:
   %2 = and i64 %1, 4294967295
   %3 = add nuw nsw i64 %2, %0
   %4 = mul nsw i64 %3, -4294967296
+  ret i64 %4
+}
+
+; 2 occurrences:
+; delta-rs/optimized/11w0at10aiwuq3yr.ll
+; eastl/optimized/EADateTime.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 65535
+  %3 = add nsw i64 %2, %0
+  %4 = mul nsw i64 %3, 36525
   ret i64 %4
 }
 

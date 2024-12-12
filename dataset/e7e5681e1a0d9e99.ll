@@ -1,6 +1,6 @@
 
-%struct.va_input.2649428 = type { i32, %union.anon.2649429 }
-%union.anon.2649429 = type { ptr }
+%struct.va_input.2762719 = type { i32, %union.anon.2762720 }
+%union.anon.2762720 = type { ptr }
 
 ; 9 occurrences:
 ; graphviz/optimized/multispline.c.ll
@@ -22,14 +22,12 @@ entry:
   ret ptr %6
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; icu/optimized/rematch.ll
-; ncnn/optimized/pooling.cpp.ll
-; ncnn/optimized/pooling3d.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/matcher.ll
@@ -44,6 +42,19 @@ entry:
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; ncnn/optimized/pooling.cpp.ll
+; ncnn/optimized/pooling3d.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, -233
+  %4 = select i1 %3, i32 %1, i32 %2
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -64,7 +75,7 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %struct.va_input.2649428, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.va_input.2762719, ptr %0, i64 %5
   ret ptr %6
 }
 

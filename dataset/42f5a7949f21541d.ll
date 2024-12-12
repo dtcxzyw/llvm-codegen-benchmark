@@ -29,10 +29,10 @@
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -41,10 +41,10 @@ entry:
 ; 1 occurrences:
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add i64 %0, 1
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -54,10 +54,10 @@ entry:
 ; cpython/optimized/longobject.ll
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000164(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add nuw nsw i64 %0, 1
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -68,24 +68,12 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nuw i64 %0, 1
   %6 = icmp ult i64 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; ring-rs/optimized/36n9a21mmta9vg69.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i1 %2) #0 {
-entry:
-  %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = add i64 %0, 1
-  %6 = icmp ugt i64 %5, %4
   ret i1 %6
 }
 
@@ -95,7 +83,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -113,10 +101,10 @@ entry:
 ; protobuf/optimized/padding_optimizer.cc.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nuw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -125,10 +113,10 @@ entry:
 ; 1 occurrences:
 ; git/optimized/parallel-checkout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add nuw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -138,10 +126,10 @@ entry:
 ; meshlab/optimized/matching.cpp.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func00000000000001c1(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -150,10 +138,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/dm-stats.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nuw nsw i64 %0, 1
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -165,7 +153,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %0, 1
   %6 = icmp ne i64 %5, %4
   ret i1 %6
@@ -177,7 +165,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %0, 1
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -187,10 +175,10 @@ entry:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; cpython/optimized/mpdecimal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nuw nsw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6

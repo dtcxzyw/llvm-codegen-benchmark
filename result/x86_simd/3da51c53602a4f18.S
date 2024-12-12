@@ -6,7 +6,7 @@ func000000000000000f:                   # @func000000000000000f
 	vpcmpnltw	%xmm3, %xmm2, %k1
 	vpord	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1 {%k1}
 	vpslld	$4, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	256                             # 0x100

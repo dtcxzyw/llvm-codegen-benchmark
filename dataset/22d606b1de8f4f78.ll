@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/parser_utils.ll
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/unicodeobject.ll
 ; quickjs/optimized/libregexp.ll

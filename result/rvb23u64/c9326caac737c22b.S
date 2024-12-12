@@ -4,7 +4,7 @@ func000000000000000a:                   # @func000000000000000a
 	sh3add	a1, a2, a1
 	sh3add	a0, a0, a1
 	ret
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	sext.w	a2, a2
 	mul	a2, a2, a0
 	sh2add	a1, a2, a1

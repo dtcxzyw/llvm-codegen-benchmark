@@ -37,6 +37,18 @@ func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 63
 	or	a0, a0, a1
 	ret
+func0000000000000031:                   # @func0000000000000031
+	sext.w	a1, a1
+	lui	a2, 32768
+	addiw	a2, a2, 15
+	bltu	a2, a1, .LBB5_2
+	li	a1, 8
+	or	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, 264
+	or	a0, a0, a1
+	ret
 func0000000000000009:                   # @func0000000000000009
 	sext.w	a1, a1
 	sltiu	a1, a1, 8
@@ -48,4 +60,10 @@ func0000000000000019:                   # @func0000000000000019
 	snez	a1, a1
 	slli	a1, a1, 32
 	or	a0, a0, a1
+	ret
+func0000000000000029:                   # @func0000000000000029
+	srliw	a1, a1, 6
+	sltiu	a1, a1, 361
+	sub	a0, a0, a1
+	addi	a0, a0, 2
 	ret

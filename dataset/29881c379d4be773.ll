@@ -38,7 +38,14 @@ entry:
   ret i16 %4
 }
 
-; 3 occurrences:
+; 10 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; lvgl/optimized/lv_math.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll

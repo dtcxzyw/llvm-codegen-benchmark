@@ -6,6 +6,12 @@ func0000000000000020:                   # @func0000000000000020
 	shll	$8, %eax
 	addl	%ecx, %eax
 	retq
+func000000000000003e:                   # @func000000000000003e
+	movzbl	%dl, %eax
+	imull	%esi, %eax
+	addl	%edi, %eax
+	imull	$32897, %eax, %eax              # imm = 0x8081
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movzbl	%dl, %eax
 	imull	%esi, %eax

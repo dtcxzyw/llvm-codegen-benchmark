@@ -40,11 +40,13 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; linux/optimized/pasid.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:

@@ -25,7 +25,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_nested.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = urem i64 %3, %0

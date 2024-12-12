@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; clamav/optimized/clamdtop.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; qemu/optimized/hw_net_pcnet.c.ll

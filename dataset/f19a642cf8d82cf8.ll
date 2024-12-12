@@ -10,6 +10,8 @@
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/numeric.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/Bcj2.c.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
@@ -40,7 +42,6 @@
 ; hermes/optimized/APFloat.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; icu/optimized/double-conversion-bignum.ll
-; icu/optimized/dtptngen.ll
 ; icu/optimized/gencnval.ll
 ; icu/optimized/gencnvex.ll
 ; icu/optimized/punycode.ll
@@ -85,13 +86,11 @@
 ; linux/optimized/ip_output.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/key.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; linux/optimized/nf_nat_helper.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/page_alloc.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/selftests.ll
 ; linux/optimized/skbuff.ll
@@ -116,6 +115,7 @@
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; llvm/optimized/SyntheticCountsUtils.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -173,7 +173,6 @@
 ; openusd/optimized/cdef_block.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
-; openusd/optimized/detokenize.c.ll
 ; openusd/optimized/loopfilter.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
@@ -208,7 +207,6 @@
 ; slurm/optimized/step_mgr.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
-; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image.c.ll
 ; stockfish/optimized/search.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
@@ -243,6 +241,8 @@
 ; wireshark/optimized/packet-wsmp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zlib/optimized/trees.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zxing/optimized/QRDetector.cpp.ll
@@ -250,17 +250,7 @@
 define i16 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = add i16 %2, %0
-  ret i16 %3
-}
-
-; 1 occurrences:
-; rocksdb/optimized/testutil.cc.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000d(i16 %0, i32 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i32 %1 to i16
-  %3 = add nsw i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
@@ -270,11 +260,11 @@ entry:
 define i16 @func0000000000000007(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 
-; 70 occurrences:
+; 69 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -317,7 +307,6 @@ entry:
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/imageio.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
@@ -349,11 +338,12 @@ entry:
 define i16 @func000000000000000c(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
-; 31 occurrences:
+; 29 occurrences:
+; boost/optimized/numeric.ll
 ; libzmq/optimized/trie.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
@@ -365,9 +355,6 @@ entry:
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/loopfilter.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
@@ -389,11 +376,11 @@ entry:
 define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
-; 32 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/unarj.c.ll
@@ -416,11 +403,14 @@ entry:
 ; openexr/optimized/ImfInputFile.cpp.ll
 ; openjdk/optimized/cmsintrp.ll
 ; openjdk/optimized/cmsopt.ll
+; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
+; openusd/optimized/detokenize.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/vwmaccu_vv.ll
 ; spike/optimized/vwmaccu_vx.ll
+; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/ipfix.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-mausb.c.ll
@@ -430,7 +420,7 @@ entry:
 define i16 @func0000000000000008(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
@@ -445,11 +435,12 @@ entry:
 define i16 @func000000000000000f(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/text_file_backend.ll
 ; icu/optimized/normalizer2impl.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -466,7 +457,7 @@ entry:
 define i16 @func0000000000000005(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 
@@ -477,7 +468,7 @@ entry:
 define i16 @func0000000000000003(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 
@@ -487,7 +478,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 
@@ -497,7 +488,7 @@ entry:
 define i16 @func000000000000000a(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 
@@ -508,7 +499,7 @@ entry:
 define i16 @func000000000000000e(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 
@@ -518,7 +509,7 @@ entry:
 define i16 @func000000000000000b(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 

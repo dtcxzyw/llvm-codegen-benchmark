@@ -1,49 +1,52 @@
 .LCPI0_0:
-	.long	6144                            # 0x1800
-.LCPI0_2:
-	.short	256                             # 0x100
-	.short	256                             # 0x100
+	.long	4294967293                      # 0xfffffffd
 .LCPI0_1:
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-func0000000000000003:                   # @func0000000000000003
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+.LCPI0_2:
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+.LCPI0_3:
+	.short	2                               # 0x2
+func0000000000000002:                   # @func0000000000000002
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
-	vpord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm1
-	vmovdqu16	%xmm1, %xmm0 {%k1}
+	vpbroadcastw	.LCPI0_3(%rip), %xmm1   # xmm1 = [2,2,2,2,2,2,2,2]
+	vmovdqu16	.LCPI0_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [6,6,6,6,6,6,6,6]
+	vpor	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	16777216                        # 0x1000000
+	.long	4294967294                      # 0xfffffffe
 .LCPI1_1:
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-.LCPI1_2:
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
+	.long	2                               # 0x2
 .LCPI1_3:
-	.short	2                               # 0x2
-func0000000000000002:                   # @func0000000000000002
-	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
-	vpbroadcastw	.LCPI1_3(%rip), %xmm1   # xmm1 = [2,2,2,2,2,2,2,2]
-	vmovdqu16	.LCPI1_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [1,1,1,1,1,1,1,1]
-	vpor	%xmm0, %xmm1, %xmm0
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+.LCPI1_2:
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+func0000000000000003:                   # @func0000000000000003
+	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
+	vpcmpeqd	.LCPI1_1(%rip){1to8}, %ymm1, %k1
+	vpord	.LCPI1_3(%rip){1to4}, %xmm0, %xmm1
+	vmovdqu16	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq

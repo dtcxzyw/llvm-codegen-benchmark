@@ -43,22 +43,22 @@ func0000000000000003:                   # @func0000000000000003
 	fle.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
+func0000000000000008:                   # @func0000000000000008
+	fli.s	fa5, 1.0
+	fadd.s	fa5, fa1, fa5
+	feq.s	a0, fa5, fa0
+	ret
 func000000000000000a:                   # @func000000000000000a
 	fli.s	fa5, 3.0
 	fsub.s	fa5, fa1, fa5
 	fle.s	a0, fa5, fa0
 	ret
-.LCPI7_0:
+.LCPI8_0:
 	.word	0x38d1b717                      # float 9.99999974E-5
 func000000000000000b:                   # @func000000000000000b
-	lui	a0, %hi(.LCPI7_0)
-	flw	fa5, %lo(.LCPI7_0)(a0)
+	lui	a0, %hi(.LCPI8_0)
+	flw	fa5, %lo(.LCPI8_0)(a0)
 	fadd.s	fa5, fa1, fa5
 	flt.s	a0, fa0, fa5
 	xori	a0, a0, 1
-	ret
-func0000000000000008:                   # @func0000000000000008
-	fli.s	fa5, 1.0
-	fadd.s	fa5, fa1, fa5
-	feq.s	a0, fa5, fa0
 	ret

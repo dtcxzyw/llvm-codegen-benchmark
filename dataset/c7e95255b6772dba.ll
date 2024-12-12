@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 25 occurrences:
 ; git/optimized/fast-import.ll
 ; hermes/optimized/zip.c.ll
 ; libpng/optimized/pngget.c.ll
@@ -10,8 +10,6 @@
 ; llvm/optimized/CGCall.cpp.ll
 ; openjdk/optimized/cdsProtectionDomain.ll
 ; openjdk/optimized/pngget.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; ruby/optimized/ripper.ll
@@ -28,7 +26,7 @@
 ; wireshark/optimized/packet-wps.c.ll
 ; wireshark/optimized/wtap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i16 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = icmp ne ptr %0, null
@@ -72,7 +70,7 @@ entry:
 ; wireshark/optimized/packet-edonkey.c.ll
 ; wireshark/optimized/packet-lbmpdm.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq i16 %0, 0
@@ -80,10 +78,11 @@ entry:
   ret i1 %4
 }
 
-; 58 occurrences:
+; 61 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcShow.c.ll
 ; graphviz/optimized/fdpinit.c.ll
+; libevent/optimized/event.c.ll
 ; linux/optimized/device_pm.ll
 ; linux/optimized/extents.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
@@ -139,8 +138,10 @@ entry:
 ; wireshark/optimized/packet-zbee-nwk.c.ll
 ; wireshark/optimized/reassemble.c.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i16 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp ne ptr %0, null
@@ -148,14 +149,18 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 9 occurrences:
+; linux/optimized/filter.ll
 ; llvm/optimized/SemaAccess.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaLambda.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; wireshark/optimized/packet-fcfcs.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i16 %1) #0 {
+define i1 @func000000000000008c(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 82
   %3 = icmp ne ptr %0, null
@@ -172,7 +177,7 @@ entry:
 ; tls-rs/optimized/526n7g8rwc65lc9b.ll
 ; wireshark/optimized/packet-http.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 11
   %3 = icmp eq ptr %0, null
@@ -185,7 +190,7 @@ entry:
 ; slurm/optimized/cron.ll
 ; wireshark/optimized/packet-wps.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, i16 %1) #0 {
+define i1 @func000000000000010c(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 9983
   %3 = icmp ne ptr %0, null
@@ -195,14 +200,14 @@ entry:
 
 ; 7 occurrences:
 ; linux/optimized/bio.ll
+; linux/optimized/filter.ll
 ; linux/optimized/kbuf.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000184(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ult i16 %0, 2
@@ -213,7 +218,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000024(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ult i16 %0, 173
@@ -225,10 +230,21 @@ entry:
 ; llvm/optimized/LegalizeFloatTypes.cpp.ll
 ; wireshark/optimized/packet-someip-sd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000188(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ugt i16 %0, 1
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp ult i16 %1, 3
+  %3 = icmp eq ptr %0, null
   %4 = and i1 %3, %2
   ret i1 %4
 }

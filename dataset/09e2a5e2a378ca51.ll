@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; libquic/optimized/p256-x86_64.c.ll
 ; linux/optimized/intel_dsi_vbt.ll
 ; linux/optimized/recovery.ll
@@ -12,6 +12,7 @@
 ; redis/optimized/rax.ll
 ; ruby/optimized/sha1.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; verilator/optimized/V3String.cpp.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
@@ -22,7 +23,7 @@ entry:
   ret i32 %3
 }
 
-; 111 occurrences:
+; 112 occurrences:
 ; cmake/optimized/inet.c.ll
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
@@ -60,6 +61,7 @@ entry:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; llvm/optimized/InstrEmitter.cpp.ll
+; lvgl/optimized/lv_canvas.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
 ; nanobind/optimized/nb_type.cpp.ll

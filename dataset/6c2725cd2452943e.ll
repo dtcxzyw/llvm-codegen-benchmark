@@ -63,7 +63,7 @@ entry:
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 10
   %3 = icmp eq i64 %1, 7
@@ -85,7 +85,7 @@ entry:
 ; velox/optimized/Timestamp.cpp.ll
 ; wireshark/optimized/packet-p_mul.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 7
   %3 = icmp slt i64 %1, 0
@@ -98,7 +98,7 @@ entry:
 ; abc/optimized/rsbDec6.c.ll
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 2
   %3 = icmp ult i64 %1, 4611686018427387904
@@ -133,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 4
   %3 = icmp slt i64 %1, 0
@@ -150,7 +150,7 @@ entry:
 ; openspiel/optimized/bridge_scoring.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -3
   %3 = icmp eq i64 %1, 3

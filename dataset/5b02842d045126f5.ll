@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000003181(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i64 %1, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000581(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i64 %1, 0
@@ -36,7 +36,7 @@ entry:
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000421(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -2
   %4 = icmp eq i64 %1, 0

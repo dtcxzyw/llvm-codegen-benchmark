@@ -58,3 +58,7 @@ func000000000000000d:                   # @func000000000000000d
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsllq	$5, %ymm0, %ymm0
 	retq
+func0000000000000009:                   # @func0000000000000009
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpsllq	$2, %ymm0, %ymm0
+	retq

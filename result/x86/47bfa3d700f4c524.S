@@ -1,4 +1,4 @@
 func00000000000000a0:                   # @func00000000000000a0
-	leal	(%rcx,%rsi), %eax
+	leal	(%rsi,%rcx), %eax
 	addl	%edi, %eax
 	retq

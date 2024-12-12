@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 18 occurrences:
+; cmake/optimized/nghttp2_hd.c.ll
 ; libquic/optimized/tls_cbc.c.ll
 ; linux/optimized/intel_display.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
@@ -21,7 +22,7 @@
 define i8 @func0000000000000000(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 1, i8 %2
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 

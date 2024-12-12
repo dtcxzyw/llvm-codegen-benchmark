@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 64 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -63,6 +63,7 @@
 ; xgboost/optimized/gradient_index.cc.ll
 ; yalantinglibs/optimized/MessageGenerator.cpp.ll
 ; yosys/optimized/viz.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:

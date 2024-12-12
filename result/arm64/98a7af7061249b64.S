@@ -1,41 +1,42 @@
-func00000000000000d6:                   // @func00000000000000d6
+func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	cmge	v1.2d, v1.2d, v3.2d
-	cmge	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	cmle	v1.4s, v4.4s, #0
-	orr	v0.16b, v0.16b, v1.16b
-	xtn	v0.4h, v0.4s
+	cmp	w2, #1
+	ccmp	x0, x1, #4, ne
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000182:                   // @func0000000000000182
+func0000000000000196:                   // @func0000000000000196
 // %bb.0:                               // %entry
-	cmeq	v1.2d, v1.2d, v3.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	cmeq	v1.4s, v4.4s, #0
-	orn	v0.16b, v0.16b, v1.16b
-	xtn	v0.4h, v0.4s
+	cmp	x0, x1
+	ccmp	w2, #1, #8, lt
+	cset	w0, lt
 	ret
                                         // -- End function
-func00000000000000cc:                   // @func00000000000000cc
+func0000000000000302:                   // @func0000000000000302
 // %bb.0:                               // %entry
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	cmle	v1.4s, v4.4s, #0
-	orr	v0.16b, v0.16b, v1.16b
-	xtn	v0.4h, v0.4s
+	cmp	x0, x1
+	ccmp	w2, #0, #0, ne
+	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000198:                   // @func0000000000000198
+func0000000000000058:                   // @func0000000000000058
 // %bb.0:                               // %entry
-	cmeq	v1.2d, v1.2d, v3.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	cmeq	v4.4s, v4.4s, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v0.16b, v0.16b
-	orn	v0.16b, v0.16b, v4.16b
-	xtn	v0.4h, v0.4s
+	cmp	w2, #0
+	ccmp	x0, x1, #4, eq
+	cset	w0, eq
+	ret
+                                        // -- End function
+func000000000000018c:                   // @func000000000000018c
+// %bb.0:                               // %entry
+	cmp	x0, x1
+	ccmp	w2, #1, #8, ge
+	cset	w0, lt
+	ret
+                                        // -- End function
+func0000000000000318:                   // @func0000000000000318
+// %bb.0:                               // %entry
+	cmp	x0, x1
+	ccmp	w2, #0, #0, eq
+	cset	w0, ne
 	ret
                                         // -- End function

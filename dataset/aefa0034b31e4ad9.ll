@@ -1,6 +1,7 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
+; libevent/optimized/evmap.c.ll
 ; libjpeg-turbo/optimized/jdphuff.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
 ; linux/optimized/trace_events_filter.ll
@@ -20,7 +21,7 @@
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 

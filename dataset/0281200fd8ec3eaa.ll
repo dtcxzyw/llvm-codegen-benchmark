@@ -1,7 +1,8 @@
 
-; 117 occurrences:
+; 129 occurrences:
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; arrow/optimized/coo_converter.cc.ll
+; boost/optimized/static_string.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -62,6 +63,10 @@
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
+; lvgl/optimized/lv_i18n.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_obj_class.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; minetest/optimized/database-sqlite3.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/networkpacket.cpp.ll
@@ -100,6 +105,9 @@
 ; slurm/optimized/select_linear.ll
 ; slurm/optimized/xcpuinfo.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
@@ -117,6 +125,10 @@
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i16 %0) #0 {
 entry:
@@ -125,7 +137,7 @@ entry:
   ret i64 %2
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; icu/optimized/unames.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; libzmq/optimized/mtrie.cpp.ll
@@ -137,6 +149,7 @@ entry:
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; ruby/optimized/generator.ll
 ; wireshark/optimized/packet-cp2179.c.ll
@@ -148,16 +161,16 @@ entry:
   ret i64 %2
 }
 
-; 61 occurrences:
+; 63 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; boost/optimized/static_string.ll
 ; brotli/optimized/block_splitter.c.ll
 ; clamav/optimized/unarj.c.ll
 ; clamav/optimized/vba_extract.c.ll
 ; coreutils-rs/optimized/53yhdh06nqcwsoo6.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
-; cpython/optimized/ceval.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
@@ -174,7 +187,6 @@ entry:
 ; llvm/optimized/CGCoroutine.cpp.ll
 ; llvm/optimized/CGException.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
-; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; logos-rs/optimized/1w5j7pvycf8p27lv.ll
 ; minetest/optimized/treegen.cpp.ll
@@ -210,6 +222,9 @@ entry:
 ; wireshark/optimized/packet-bthci_iso.c.ll
 ; wireshark/optimized/packet-enttec.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i16 %0) #0 {
 entry:
@@ -252,11 +267,13 @@ entry:
   ret i64 %2
 }
 
-; 111 occurrences:
+; 114 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/scheme.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
+; cpython/optimized/_json.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hwloc/optimized/pci-common.ll
@@ -267,6 +284,7 @@ entry:
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
+; jsonnet/optimized/rapidyaml.cpp.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; libquic/optimized/ssl_lib.c.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -290,7 +308,6 @@ entry:
 ; llvm/optimized/OffloadBinary.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
@@ -318,7 +335,6 @@ entry:
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; openjdk/optimized/bytecodeTracer.ll
-; openmpi/optimized/bfrop_base_stubs.ll
 ; openmpi/optimized/bfrop_pmix4.ll
 ; openmpi/optimized/bfrop_pmix41.ll
 ; openmpi/optimized/bfrop_pmix51.ll
@@ -334,9 +350,7 @@ entry:
 ; qemu/optimized/hw_scsi_virtio-scsi.c.ll
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
 ; rust-analyzer-rs/optimized/1z656ncqic0spld2.ll
-; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
 ; rust-analyzer-rs/optimized/ilnj6n0bhpk5oz9.ll
-; rust-analyzer-rs/optimized/jp4yq85z7wea9l3.ll
 ; slurm/optimized/fed_mgr.ll
 ; slurm/optimized/job_scheduler.ll
 ; slurm/optimized/slurm_opt.ll
@@ -364,6 +378,10 @@ entry:
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; wolfssl/optimized/ssl.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i16 %0) #0 {
 entry:
@@ -380,7 +398,6 @@ entry:
 ; cvc5/optimized/cvc5.cpp.ll
 ; cvc5/optimized/lfsc_node_converter.cpp.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; libevent/optimized/evdns.c.ll
 ; linux/optimized/ehci-hcd.ll
@@ -388,6 +405,7 @@ entry:
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/Float2Int.cpp.ll
 ; llvm/optimized/SelectionDAGDumper.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; nuttx/optimized/fs_dir.c.ll
 ; postgres/optimized/parse_utilcmd.ll
 ; postgres/optimized/relcache.ll

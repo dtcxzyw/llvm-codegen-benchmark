@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 23 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/giaMini.c.ll
 ; assimp/optimized/zip.c.ll
@@ -7,7 +7,6 @@
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
-; git/optimized/diff.ll
 ; hermes/optimized/zip.c.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; linux/optimized/idr.ll
@@ -21,10 +20,8 @@
 ; opencv/optimized/sqpnp.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; php/optimized/proc_open.ll
-; quickjs/optimized/quickjs.ll
 ; ruby/optimized/process.ll
 ; velox/optimized/JsonType.cpp.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i32 %0, i32 %1) #0 {
@@ -35,7 +32,7 @@ entry:
   ret i64 %4
 }
 
-; 257 occurrences:
+; 258 occurrences:
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
 ; folly/optimized/AsyncUDPSocket.cpp.ll
 ; freetype/optimized/ftgzip.c.ll
@@ -135,6 +132,7 @@ entry:
 ; llvm/optimized/GISelKnownBits.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
 ; llvm/optimized/GVNHoist.cpp.ll
+; llvm/optimized/GenericTaintChecker.cpp.ll
 ; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
 ; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/GlobalsModRef.cpp.ll
@@ -302,7 +300,7 @@ entry:
   ret i64 %4
 }
 
-; 55 occurrences:
+; 51 occurrences:
 ; clamav/optimized/untar.c.ll
 ; cmake/optimized/process.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -312,7 +310,6 @@ entry:
 ; libuv/optimized/process.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/build_policy.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/message.ll
 ; linux/optimized/page_alloc.ll
@@ -321,15 +318,12 @@ entry:
 ; llvm/optimized/FrontendActions.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; node/optimized/process.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
 ; opencv/optimized/graphsegmentation.cpp.ll
@@ -398,20 +392,15 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
-; graphviz/optimized/exparse.c.ll
-; gromacs/optimized/gmx_h2order.cpp.ll
+; 8 occurrences:
 ; icu/optimized/utrie2.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; just-rs/optimized/uwydcyn8qeoqoev.ll
-; lief/optimized/aria.c.ll
-; postgres/optimized/regcomp.ll
 ; qemu/optimized/block_io.c.ll
 ; rust-analyzer-rs/optimized/1thcgyhz863zx8uj.ll
 ; rust-analyzer-rs/optimized/3hcpc53socutnyz5.ll
 ; rust-analyzer-rs/optimized/3nofq7oo06gx5fjm.ll
-; wasmtime-rs/optimized/4vgjsomnctxfipp1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
@@ -421,14 +410,10 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
-; cmake/optimized/lzma_decoder.c.ll
-; cmake/optimized/lzma_encoder.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; 8 occurrences:
 ; glog/optimized/logging.cc.ll
 ; graphviz/optimized/exparse.c.ll
 ; linux/optimized/tcp_output.ll
-; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; openjdk/optimized/XlibWrapper.ll
@@ -443,22 +428,48 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 3 occurrences:
+; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
+; graphviz/optimized/exparse.c.ll
+; lief/optimized/aria.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000029(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 3
+  %3 = select i1 %2, i32 %0, i32 0
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
-; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
-; gromacs/optimized/md5.c.ll
-; gromacs/optimized/md5.cpp.ll
-; luajit/optimized/lj_tab.ll
-; luajit/optimized/lj_tab_dyn.ll
-; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 1
   %3 = select i1 %2, i32 %0, i32 1
   %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 11 occurrences:
+; abc/optimized/abcHieNew.c.ll
+; hermes/optimized/synth.cpp.ll
+; llvm/optimized/NamedStreamMap.cpp.ll
+; llvm/optimized/PDBFileBuilder.cpp.ll
+; opencv/optimized/fast_line_detector.cpp.ll
+; postgres/optimized/pg_walsummary.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/generated_message_reflection.cc.ll
+; sentencepiece/optimized/repeated_field.cc.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/file_wrappers.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, 4032
+  %3 = select i1 %2, i32 %0, i32 4160
+  %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
@@ -480,28 +491,6 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
-; hermes/optimized/synth.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; llvm/optimized/NamedStreamMap.cpp.ll
-; llvm/optimized/PDBFileBuilder.cpp.ll
-; opencv/optimized/fast_line_detector.cpp.ll
-; ozz-animation/optimized/skinning_job.cc.ll
-; postgres/optimized/pg_walsummary.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
-; protobuf/optimized/generated_message_reflection.cc.ll
-; sentencepiece/optimized/repeated_field.cc.ll
-; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/file_wrappers.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, 0
-  %3 = select i1 %2, i32 %0, i32 undef
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; Function Attrs: nounwind
@@ -511,6 +500,20 @@ entry:
   %2 = select i1 %.not, i32 undef, i32 %0
   %3 = zext i32 %2 to i64
   ret i64 %3
+}
+
+; 4 occurrences:
+; gromacs/optimized/md5.c.ll
+; gromacs/optimized/md5.cpp.ll
+; luajit/optimized/lj_tab.ll
+; luajit/optimized/lj_tab_dyn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000031(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 56
+  %3 = select i1 %2, i32 %0, i32 8
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
 }
 
 ; 7 occurrences:

@@ -14,10 +14,9 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifDsd.c.ll
-; abc/optimized/luckySimple.c.ll
 ; luajit/optimized/minilua.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003d(i64 %0, i32 %1) #0 {

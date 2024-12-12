@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 59 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/giaFront.c.ll
@@ -55,17 +55,18 @@
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
+; openusd/optimized/patchTree.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000009a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000009b(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 28
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 

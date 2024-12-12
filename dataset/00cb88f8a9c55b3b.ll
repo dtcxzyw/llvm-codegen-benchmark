@@ -11,7 +11,7 @@ entry:
   ret i64 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
@@ -20,7 +20,6 @@ entry:
 ; jq/optimized/utf16_le.ll
 ; libdeflate/optimized/adler32.c.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/gso.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/udp.ll

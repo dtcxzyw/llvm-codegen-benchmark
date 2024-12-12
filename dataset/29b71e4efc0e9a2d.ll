@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
-; linux/optimized/genetlink.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/io_uring.ll
 ; qemu/optimized/ui_input-barrier.c.ll

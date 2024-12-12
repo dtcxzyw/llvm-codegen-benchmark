@@ -11,10 +11,9 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/libxdrf.cpp.ll
 ; linux/optimized/xt_conntrack.ll
-; linux/optimized/xt_state.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0) #0 {

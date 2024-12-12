@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; cvc5/optimized/Solver.cc.ll
 ; diesel-rs/optimized/1dr0ikhoh8prk7sr.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
@@ -8,7 +8,6 @@
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/collationsets.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
-; libwebp/optimized/backward_references_enc.c.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/pasid.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -25,6 +24,8 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wireshark/optimized/packet-zbee-direct.c.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
@@ -35,12 +36,11 @@ entry:
   ret i64 %4
 }
 
-; 124 occurrences:
+; 121 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/giaSim.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
-; darktable/optimized/introspection_demosaic.c.ll
 ; diesel-rs/optimized/1dr0ikhoh8prk7sr.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -50,7 +50,6 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
@@ -116,7 +115,6 @@ entry:
 ; openssl/optimized/libssl-shlib-ssl_asn1.ll
 ; php/optimized/ir_emit.ll
 ; postgres/optimized/ginget.ll
-; protobuf/optimized/json.cc.ll
 ; qemu/optimized/hw_net_e1000e.c.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
@@ -164,7 +162,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 15
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = or disjoint i64 %3, 16384
   ret i64 %4
 }
@@ -206,7 +204,7 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; linux/optimized/amd.ll
@@ -216,7 +214,6 @@ entry:
 ; linux/optimized/knc.ll
 ; linux/optimized/p6.ll
 ; linux/optimized/step.ll
-; linux/optimized/tsx.ll
 ; linux/optimized/uncore_snbep.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; rocksdb/optimized/clock_cache.cc.ll
@@ -247,14 +244,13 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or disjoint i64 %3, 1
   ret i64 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; brotli/optimized/decode.c.ll
 ; linux/optimized/amd.ll
 ; linux/optimized/amd_bus.ll
 ; linux/optimized/dmar.ll
@@ -353,7 +349,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = or i64 %3, -9223372036854775808
   ret i64 %4
 }
@@ -393,7 +389,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or disjoint i64 %3, 1
   ret i64 %4
 }
@@ -404,7 +400,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 9
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or i64 %3, -9223372036854775808
   ret i64 %4
 }

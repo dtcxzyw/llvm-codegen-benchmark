@@ -10,7 +10,7 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func000000000000001f:                   # @func000000000000001f
 	add	a1, a1, a2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
@@ -40,7 +40,12 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000b:                   # @func000000000000000b
 	add	a1, a1, a2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	add	a1, a1, a2
+	mul	a0, a0, a1
+	zext.w	a0, a0
 	ret
 func0000000000000002:                   # @func0000000000000002
 	add	a1, a1, a2
@@ -49,12 +54,7 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000003:                   # @func0000000000000003
 	add	a1, a1, a2
-	mulw	a0, a1, a0
-	ret
-func0000000000000008:                   # @func0000000000000008
-	add	a1, a1, a2
-	mul	a0, a0, a1
-	zext.w	a0, a0
+	mulw	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	add	a1, a1, a2

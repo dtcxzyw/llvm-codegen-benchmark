@@ -1,6 +1,9 @@
 
-; 90 occurrences:
+; 92 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; brotli/optimized/bit_cost.c.ll
 ; cpython/optimized/mathmodule.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -45,7 +48,6 @@
 ; openspiel/optimized/tensor_game.cc.ll
 ; openvdb/optimized/Transform.cc.ll
 ; osqp/optimized/osqp_api.c.ll
-; osqp/optimized/timing_linux.c.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; php/optimized/astro.ll
 ; postgres/optimized/sampling.ll

@@ -33,8 +33,8 @@ func000000000000001c:                   # @func000000000000001c
 	srli	a0, a0, 32
 	ret
 func000000000000001b:                   # @func000000000000001b
-	slli	a0, a0, 2
-	addiw	a0, a0, -4
+	slli	a0, a0, 3
+	addiw	a0, a0, -64
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a0, a0, 3
@@ -97,4 +97,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000009:                   # @func0000000000000009
 	slli	a0, a0, 3
 	addiw	a0, a0, -8
+	ret
+func0000000000000017:                   # @func0000000000000017
+	slli	a0, a0, 1
+	addiw	a0, a0, 2
 	ret

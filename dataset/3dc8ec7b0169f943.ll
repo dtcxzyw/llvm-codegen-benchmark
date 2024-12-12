@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; cmake/optimized/cmCTestTestHandler.cxx.ll
 ; entt/optimized/adjacency_matrix.cpp.ll
 ; jemalloc/optimized/fxp.ll
@@ -12,7 +12,6 @@
 ; minetest/optimized/clientmedia.cpp.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; openjdk/optimized/pngerror.ll
-; openmpi/optimized/name_fns.ll
 ; openusd/optimized/mallocTag.cpp.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
@@ -38,17 +37,6 @@ define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %1, 40
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; git/optimized/date.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
-entry:
-  %2 = urem i64 %1, 10000
-  %3 = icmp ult i64 %2, 6000
   %4 = and i1 %3, %0
   ret i1 %4
 }

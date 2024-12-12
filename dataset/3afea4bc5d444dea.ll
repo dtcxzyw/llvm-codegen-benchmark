@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/BraIA64.c.ll
 ; clamav/optimized/rtf.c.ll
 ; cmake/optimized/ia64.c.ll
@@ -22,7 +23,7 @@ entry:
   ret i64 %4
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/sclLibScl.c.ll
 ; clamav/optimized/7zIn.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -40,7 +41,6 @@ entry:
 ; nix/optimized/derivations.ll
 ; nix/optimized/export-import.ll
 ; nix/optimized/legacy-ssh-store.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/remote-store.ll
 ; nix/optimized/serialise.ll
 ; nix/optimized/serve-protocol-impl.ll
@@ -80,25 +80,6 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
-; abseil-cpp/optimized/proto.cc.ll
-; cmake/optimized/alone_decoder.c.ll
-; cpython/optimized/_pickle.ll
-; libwebp/optimized/bit_reader_utils.c.ll
-; linux/optimized/drm_edid.ll
-; linux/optimized/nsconvert.ll
-; llvm/optimized/AddressSanitizer.cpp.ll
-; php/optimized/engine_user.ll
-; spike/optimized/csrs.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i8 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 3
-  %3 = zext i8 %0 to i64
-  %4 = shl i64 %3, %2
-  ret i64 %4
-}
-
 ; 6 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; clamav/optimized/7zIn.c.ll
@@ -110,6 +91,23 @@ entry:
 define i64 @func0000000000000018(i8 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
+  %3 = zext i8 %0 to i64
+  %4 = shl i64 %3, %2
+  ret i64 %4
+}
+
+; 7 occurrences:
+; abseil-cpp/optimized/proto.cc.ll
+; cmake/optimized/alone_decoder.c.ll
+; cpython/optimized/_pickle.ll
+; libwebp/optimized/bit_reader_utils.c.ll
+; linux/optimized/drm_edid.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; spike/optimized/csrs.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i8 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 3
   %3 = zext i8 %0 to i64
   %4 = shl i64 %3, %2
   ret i64 %4

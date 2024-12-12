@@ -1,11 +1,10 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 56
-	srli	a1, a1, 57
-	sh3add	a1, a1, a1
-	sh3add	a0, a1, a0
-	addi	a0, a0, 24
+	srli	a1, a1, 58
+	add	a0, a0, a1
+	addi	a0, a0, 1
 	ret
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	bexti	a1, a1, 4
 	li	a2, 816
 	mul	a1, a1, a2
@@ -18,7 +17,7 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	srli	a1, a1, 3
 	andi	a1, a1, 56
 	add	a0, a0, a1

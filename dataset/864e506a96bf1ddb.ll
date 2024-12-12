@@ -1,5 +1,5 @@
 
-; 629 occurrences:
+; 628 occurrences:
 ; abc/optimized/extraUtilPath.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
@@ -12,6 +12,11 @@
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
@@ -155,7 +160,6 @@
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/expfit.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -205,7 +209,6 @@
 ; meshlab/optimized/eqhandle.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -396,11 +399,9 @@
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/lagrng.cpp.ll
 ; proj/optimized/lcca.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/moll.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/nicol.cpp.ll
 ; proj/optimized/nsper.cpp.ll
 ; proj/optimized/omerc.cpp.ll
@@ -412,7 +413,6 @@
 ; proj/optimized/somerc.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
 ; proj/optimized/unitconvert.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; qemu/optimized/util_qdist.c.ll
 ; quantlib/optimized/abcdatmvolcurve.ll
 ; quantlib/optimized/alphafinder.ll
@@ -591,7 +591,6 @@
 ; redis/optimized/geohash.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/histogram.cc.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; ruby/optimized/numeric.ll
 ; stat-rs/optimized/1957ju1ns40544yq.ll
 ; stat-rs/optimized/1dt2wsqttaly1xii.ll

@@ -57,7 +57,7 @@ define i32 @func000000000000003d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -80,7 +80,7 @@ define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -92,7 +92,7 @@ define i32 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -105,7 +105,7 @@ define i32 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -153,7 +153,7 @@ define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -165,7 +165,7 @@ define i32 @func0000000000000015(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -187,7 +187,7 @@ define i32 @func000000000000003c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -199,7 +199,7 @@ define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 

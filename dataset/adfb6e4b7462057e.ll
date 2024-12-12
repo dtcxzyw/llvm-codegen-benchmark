@@ -1,5 +1,5 @@
 
-; 253 occurrences:
+; 251 occurrences:
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/archive_rb.c.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -17,7 +17,6 @@
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -27,7 +26,6 @@
 ; openssl/optimized/libcrypto-lib-i_cbc.ll
 ; openssl/optimized/libcrypto-shlib-i_cbc.ll
 ; openusd/optimized/avif_obu.c.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; spike/optimized/sraiw_u.ll
 ; spike/optimized/triggers.ll

@@ -5,7 +5,7 @@
 ; minetest/optimized/servermap.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = sub nsw i32 8, %0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = sub nsw i32 127, %0

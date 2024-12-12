@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	134217728                       # 0x8000000
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlvq	%ymm2, %ymm0, %ymm0
@@ -8,7 +8,7 @@ func0000000000000088:                   # @func0000000000000088
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlvq	%ymm2, %ymm0, %ymm0
@@ -26,7 +26,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlvq	%ymm2, %ymm0, %ymm0
@@ -36,7 +36,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	retq
 .LCPI4_0:
 	.quad	2199023255553                   # 0x20000000001
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlvq	%ymm2, %ymm0, %ymm0
@@ -56,7 +56,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI6_0:
 	.quad	2147483648                      # 0x80000000
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlvq	%ymm2, %ymm0, %ymm0

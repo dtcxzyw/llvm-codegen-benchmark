@@ -30,7 +30,7 @@ define i32 @func000000000000003c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 131056
   %3 = add nuw nsw i64 %2, 56
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

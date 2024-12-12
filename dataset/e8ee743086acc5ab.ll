@@ -1,8 +1,7 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; openblas/optimized/dgesvj.c.ll

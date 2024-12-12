@@ -10,13 +10,11 @@ entry:
   ret i16 %2
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; libquic/optimized/dtls_record.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
-; postgres/optimized/itemptr.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
-; wireshark/optimized/strtoi.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -48,9 +46,8 @@ entry:
   ret i16 %2
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; postgres/optimized/data.ll
-; postgres/optimized/itemptr.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000c(i32 %0) #0 {
 entry:

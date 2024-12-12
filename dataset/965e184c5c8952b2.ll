@@ -7,7 +7,7 @@
 define i64 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -27,7 +27,7 @@ entry:
 define i64 @func0000000000000019(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -49,7 +49,7 @@ entry:
 define i64 @func000000000000001f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -61,7 +61,7 @@ entry:
 define i64 @func0000000000000017(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -75,13 +75,13 @@ entry:
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, -64
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/wlnRead.c.ll
@@ -92,6 +92,7 @@ entry:
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; linux/optimized/netif.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
+; opencv/optimized/lsd.cpp.ll
 ; openspiel/optimized/Init.cpp.ll
 ; openspiel/optimized/SolverIF.cpp.ll
 ; openusd/optimized/path.cpp.ll
@@ -101,7 +102,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -117,7 +118,7 @@ entry:
 define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 31
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -129,7 +130,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, -4
   %5 = zext i32 %4 to i64
   ret i64 %5
@@ -141,7 +142,7 @@ entry:
 define i64 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
   ret i64 %5

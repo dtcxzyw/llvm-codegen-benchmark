@@ -5,7 +5,7 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$53, %rsi
 	setne	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	shrxq	%rdx, %rdi, %rax
 	andl	$1, %esi
 	negq	%rsi

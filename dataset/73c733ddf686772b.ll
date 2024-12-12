@@ -9,7 +9,7 @@ entry:
   %3 = fcmp olt float %2, 0x3810000000000000
   %4 = select i1 %3, float 0x3810000000000000, float %2
   %5 = fdiv float %1, %4
-  %6 = fadd float %5, %0
+  %6 = fadd float %0, %5
   ret float %6
 }
 

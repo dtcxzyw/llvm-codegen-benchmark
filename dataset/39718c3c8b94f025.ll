@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 94 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
 ; cmake/optimized/nghttp2_http.c.ll
 ; cpython/optimized/suggestions.ll
@@ -70,7 +70,6 @@
 ; ocio/optimized/FileFormatTruelight.cpp.ll
 ; ocio/optimized/FileFormatVF.cpp.ll
 ; ocio/optimized/FileRules.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/NamedTransform.cpp.ll
 ; ocio/optimized/OCIOZArchive.cpp.ll
 ; ocio/optimized/ParseUtils.cpp.ll
@@ -85,9 +84,6 @@
 ; postgres/optimized/encnames_shlib.ll
 ; postgres/optimized/encnames_srv.ll
 ; postgres/optimized/guc.ll
-; postgres/optimized/kwlookup.ll
-; postgres/optimized/kwlookup_shlib.ll
-; postgres/optimized/kwlookup_srv.ll
 ; postgres/optimized/pgstrcasecmp.ll
 ; postgres/optimized/pgstrcasecmp_shlib.ll
 ; postgres/optimized/pgstrcasecmp_srv.ll
@@ -99,7 +95,7 @@
 ; wireshark/optimized/packet-diameter.c.ll
 ; z3/optimized/opt_parse.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0) #0 {
+define i8 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = add i8 %0, -65
   %2 = icmp ult i8 %1, 26

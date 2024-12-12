@@ -19,12 +19,13 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/MCWinCOFFStreamer.cpp.ll
 ; velox/optimized/Zip.cpp.ll
+; wireshark/optimized/packet-cdma2k.c.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll

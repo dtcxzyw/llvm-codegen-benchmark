@@ -8,7 +8,7 @@ entry:
   %3 = add nsw i64 %2, 1
   %4 = uitofp i64 %3 to float
   %5 = fdiv float %1, %4
-  %6 = fadd float %5, %0
+  %6 = fadd float %0, %5
   ret float %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = add i64 %2, 2
   %4 = uitofp i64 %3 to float
   %5 = fdiv float %1, %4
-  %6 = fadd float %5, %0
+  %6 = fadd float %0, %5
   ret float %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = uitofp nneg i64 %3 to float
   %5 = fdiv float %1, %4
-  %6 = fadd float %5, %0
+  %6 = fadd float %0, %5
   ret float %6
 }
 

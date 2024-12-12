@@ -50,11 +50,3 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 254
 	or	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
-	slliw	a2, a2, 8
-	andi	a1, a1, 255
-	or	a1, a1, a2
-	lui	a2, 1048320
-	and	a0, a0, a2
-	or	a0, a0, a1
-	ret

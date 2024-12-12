@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
@@ -41,6 +41,7 @@
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_vorbis.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(float %0) #0 {
 entry:

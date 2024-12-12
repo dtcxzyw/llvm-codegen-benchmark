@@ -1,4 +1,6 @@
 
+%class.aiVector3t.2823159 = type { double, double, double }
+
 ; 21 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; bullet3/optimized/b3ConvexUtility.ll
@@ -22,26 +24,27 @@
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c6(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000187(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
   %5 = and i64 %3, 4294967295
   %6 = select i1 %4, i64 0, i64 %5
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; assimp/optimized/IFCGeometry.cpp.ll
 ; postgres/optimized/geqo_erx.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c4(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000184(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
   %5 = and i64 %3, 4294967295
   %6 = select i1 %4, i64 0, i64 %5
-  %7 = getelementptr i32, ptr %0, i64 %6
+  %7 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -11,7 +11,7 @@
 	.long	12288                           # 0x3000
 .LCPI0_2:
 	.long	48                              # 0x30
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vptestnmw	.LCPI0_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm0   # ymm0 = [12288,12288,12288,12288,12288,12288,12288,12288]
 	vpbroadcastd	.LCPI0_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [48,48,48,48,48,48,48,48]

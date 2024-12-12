@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addl	%esi, %edi
 	movslq	%edi, %rax
 	leaq	(,%rax,8), %rcx
@@ -6,7 +6,7 @@ func0000000000000016:                   # @func0000000000000016
 	movq	$-1, %rax
 	cmovnsq	%rcx, %rax
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	addl	%esi, %edi
 	movslq	%edi, %rax
 	leaq	(,%rax,4), %rcx
@@ -14,7 +14,7 @@ func0000000000000056:                   # @func0000000000000056
 	movq	$-1, %rax
 	cmovnsq	%rcx, %rax
 	retq
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	addl	%esi, %edi
 	movslq	%edi, %rax
 	leaq	(,%rax,8), %rcx
@@ -22,7 +22,7 @@ func0000000000000076:                   # @func0000000000000076
 	movq	$-1, %rax
 	cmovnsq	%rcx, %rax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	addl	%esi, %edi
 	movslq	%edi, %rax
 	leaq	(,%rax,8), %rcx

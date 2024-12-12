@@ -1,7 +1,10 @@
 
-; 73 occurrences:
+; 82 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/BaseImporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/iconv_codecvt.ll
+; boost/optimized/src.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -73,8 +76,14 @@
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/80403hw32s3ougvze8j2ycldj.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq i64 %1, 2
@@ -90,7 +99,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-digest.ll
 ; openusd/optimized/utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2147483648
   %4 = icmp ult i64 %1, 2147483648
@@ -115,7 +124,7 @@ entry:
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i64 %1, 0
@@ -124,12 +133,14 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; minetest/optimized/clientlauncher.cpp.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i64 %1, 0
@@ -145,7 +156,7 @@ entry:
 ; redis/optimized/t_hash.ll
 ; redis/optimized/t_string.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, -1
   %4 = icmp sgt i64 %1, -1
@@ -158,7 +169,7 @@ entry:
 ; libpng/optimized/png.c.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, -10
   %4 = icmp ne i64 %1, 32
@@ -169,24 +180,12 @@ entry:
 
 ; 2 occurrences:
 ; redis/optimized/replication.ll
-; spike/optimized/f128_classify.ll
+; zed-rs/optimized/9gug1rix20893syijvsd2r8c6.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ne i64 %2, 0
-  %4 = icmp eq i64 %1, 9223090561878065152
-  %5 = select i1 %4, i1 %3, i1 false
-  %6 = select i1 %5, i1 %0, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/X86ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ne i64 %2, 0
-  %4 = icmp ult i64 %1, 2
+  %3 = icmp ne i64 %2, -9223372036854775808
+  %4 = icmp eq i64 %1, 2
   %5 = select i1 %4, i1 %3, i1 false
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
@@ -195,7 +194,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/aio.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp ult i64 %1, 65536
@@ -207,7 +206,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/itimer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 1000000
   %4 = icmp sgt i64 %1, -1
@@ -220,7 +219,7 @@ entry:
 ; redis/optimized/t_hash.ll
 ; redis/optimized/t_string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c6(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = icmp slt i64 %1, 0

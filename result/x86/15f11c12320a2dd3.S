@@ -1,8 +1,8 @@
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	movl	%esi, %eax
 	negl	%eax
-	cmpl	%edx, %eax
-	setl	%cl
+	cmpl	%eax, %edx
+	setg	%cl
 	cmpl	%esi, %edi
 	setl	%al
 	orb	%cl, %al

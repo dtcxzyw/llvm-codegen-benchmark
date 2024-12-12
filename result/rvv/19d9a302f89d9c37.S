@@ -2,7 +2,7 @@ func00000000000000e0:                   # @func00000000000000e0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 8
 	lui	a0, 400520
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vadd.vv	v8, v8, v10
 	addi	a0, a0, 1607
 	vadd.vx	v8, v8, a0
@@ -31,7 +31,7 @@ func00000000000000ee:                   # @func00000000000000ee
 func00000000000000ea:                   # @func00000000000000ea
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 8
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vadd.vv	v8, v8, v10
 	lui	a0, 1046528
 	vadd.vx	v8, v8, a0

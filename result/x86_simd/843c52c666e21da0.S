@@ -19,14 +19,14 @@ func0000000000000010:                   # @func0000000000000010
 	vzeroupper
 	retq
 .LCPI2_0:
-	.quad	-9223372036854775807            # 0x8000000000000001
-.LCPI2_1:
 	.zero	16,1
 func0000000000000014:                   # @func0000000000000014
 	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vpcmpgtq	.LCPI2_0(%rip){1to4}, %ymm1, %k1 {%k1}
-	vmovdqu8	.LCPI2_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpcmpgtq	%ymm3, %ymm1, %k1
+	vpcmpgtd	%xmm0, %xmm2, %k1 {%k1}
+	vmovdqu8	.LCPI2_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq
 .LCPI3_0:

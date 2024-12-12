@@ -12,7 +12,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = add i64 %3, %1
   %5 = xor i64 %4, -1
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   %7 = zext i1 %6 to i64
   ret i64 %7
 }

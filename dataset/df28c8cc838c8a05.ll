@@ -24,12 +24,14 @@ entry:
   %3 = shl nsw i32 %2, 6
   %4 = shl nsw i32 %1, 12
   %5 = or i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = lshr i32 %6, 16
   ret i32 %7
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; spike/optimized/aes64dsm.ll
 ; spike/optimized/aes64esm.ll
 ; Function Attrs: nounwind
@@ -38,7 +40,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = shl nuw i32 %1, 24
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = lshr i32 %6, 8
   ret i32 %7
 }
@@ -91,7 +93,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 10
   %4 = shl i32 %1, 8
   %5 = or i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = lshr i32 %6, 12
   ret i32 %7
 }

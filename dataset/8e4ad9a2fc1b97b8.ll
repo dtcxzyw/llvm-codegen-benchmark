@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 100 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifMan.c.ll
@@ -26,14 +26,11 @@
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/g4x_hdmi.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/mii.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/xhci-ring.ll
@@ -75,7 +72,6 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; postgres/optimized/utf8_and_gb18030.ll
 ; protobuf/optimized/tokenizer.cc.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
 ; rust-analyzer-rs/optimized/1a2athgpe0u8z37j.ll
@@ -114,13 +110,12 @@ entry:
   ret i32 %6
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; linux/optimized/intel_guc.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/skl_scaler.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/Host.cpp.ll
@@ -170,20 +165,18 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 17825792
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   %6 = or i32 %5, 4194304
   ret i32 %6
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; linux/optimized/intel_ddi.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; openjdk/optimized/gtk3_interface.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; php/optimized/zend_inference.ll
@@ -191,13 +184,13 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 24
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, %0
   %6 = or disjoint i32 %5, 64
   ret i32 %6
 }
 
-; 52 occurrences:
+; 50 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; libpng/optimized/png.c.ll
@@ -205,7 +198,6 @@ entry:
 ; linux/optimized/gup.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_fbc.ll
-; linux/optimized/mii.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/open.ll
 ; linux/optimized/rx.ll
@@ -233,7 +225,6 @@ entry:
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; meshlab/optimized/transferfunction.cpp.ll
@@ -273,7 +264,7 @@ entry:
   ret i32 %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; git/optimized/blame.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -284,15 +275,14 @@ entry:
 ; linux/optimized/xhci-hub.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1048576
-  %4 = or disjoint i32 %3, %1
-  %5 = or i32 %4, %0
-  %6 = or i32 %5, 120
+  %3 = and i32 %2, 65280
+  %4 = or disjoint i32 %1, %3
+  %5 = or i32 %0, %4
+  %6 = or i32 %5, -16777216
   ret i32 %6
 }
 
@@ -302,8 +292,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8704
-  %4 = or i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = or i32 %1, %3
+  %5 = or i32 %0, %4
   %6 = or disjoint i32 %5, 2
   ret i32 %6
 }

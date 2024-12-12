@@ -1,7 +1,5 @@
 
-; 8 occurrences:
-; gromacs/optimized/dorg2r.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
+; 6 occurrences:
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll

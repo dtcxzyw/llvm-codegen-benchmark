@@ -1,5 +1,8 @@
 
-; 45 occurrences:
+; 48 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/graphml.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/1aqq6ooh2lp9lqic.ll
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
 ; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
@@ -17,8 +20,6 @@
 ; libquic/optimized/quic_framer.cc.ll
 ; linux/optimized/cleanup.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/eht.ll
-; linux/optimized/he.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/net-sysfs.ll
 ; linux/optimized/nl80211.ll
@@ -42,9 +43,11 @@
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; stb/optimized/stb_voxel_render.c.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wireshark/optimized/packet-ajp13.c.ll
 ; wireshark/optimized/packet-dof.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
@@ -53,7 +56,7 @@ entry:
   ret i64 %3
 }
 
-; 42 occurrences:
+; 45 occurrences:
 ; clamav/optimized/special.c.ll
 ; cmake/optimized/huf_compress.c.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
@@ -95,6 +98,9 @@ entry:
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/packet-ajp13.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i8 %1) #0 {

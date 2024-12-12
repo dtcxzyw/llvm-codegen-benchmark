@@ -1,5 +1,11 @@
 
-; 157 occurrences:
+; 161 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -39,7 +45,6 @@
 ; gromacs/optimized/colvarcomp.cpp.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/colvarvalue.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
 ; gromacs/optimized/dlasv2.cpp.ll
@@ -69,7 +74,6 @@
 ; nori/optimized/ttest.cpp.ll
 ; nuttx/optimized/lib_gamma.c.ll
 ; ocio/optimized/MatrixOpData.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dlaed4.c.ll
 ; openblas/optimized/dlaic1.c.ll
@@ -94,7 +98,6 @@
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/float.ll
 ; postgres/optimized/selfuncs.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/imw_p.cpp.ll
 ; proj/optimized/ortho.cpp.ll
@@ -156,6 +159,7 @@
 ; sundials/optimized/ida.c.ll
 ; sundials/optimized/idas.c.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, double %1, double %2) #0 {
@@ -165,11 +169,13 @@ entry:
   ret double %4
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/chi_square_test.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/fast_newton.cpp.ll
 ; casadi/optimized/linsol_qr.cpp.ll
@@ -196,10 +202,20 @@ entry:
   ret double %4
 }
 
-; 141 occurrences:
+; 148 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
+; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_bbdpre.c.ll
@@ -211,9 +227,7 @@ entry:
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; gromacs/optimized/cyclecounter.cpp.ll
 ; gromacs/optimized/dlagts.cpp.ll
-; gromacs/optimized/dlapy2.cpp.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
-; gromacs/optimized/dlarfg.cpp.ll
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -222,6 +236,7 @@ entry:
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; lightgbm/optimized/metric.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -271,10 +286,8 @@ entry:
 ; proj/optimized/conversion.cpp.ll
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/factors.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/imw_p.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/lcc.cpp.ll
 ; proj/optimized/nicol.cpp.ll
 ; proj/optimized/ocea.cpp.ll
@@ -475,11 +488,10 @@ entry:
   ret double %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; gromacs/optimized/energyterm.cpp.ll
 ; llama.cpp/optimized/train.cpp.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dlaqr2.c.ll
 ; openblas/optimized/dlaqr3.c.ll
 ; openblas/optimized/dlarrc.c.ll
@@ -511,9 +523,10 @@ entry:
   ret double %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/kinsol_direct.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; openblas/optimized/dlasv2.c.ll
 ; opencv/optimized/homography_decomp.cpp.ll

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/nwkTiming.c.ll
@@ -13,7 +13,6 @@
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; openmpi/optimized/gds_shmem.ll
-; openmpi/optimized/timer_linux_component.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(float %0) #0 {

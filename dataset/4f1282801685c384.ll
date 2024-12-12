@@ -1,5 +1,5 @@
 
-; 116 occurrences:
+; 117 occurrences:
 ; git/optimized/hashmap.ll
 ; git/optimized/pack-objects.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -17,6 +17,7 @@
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGCoroutine.cpp.ll
 ; llvm/optimized/CGException.cpp.ll
+; luau/optimized/OptimizeConstProp.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-aat-map.ll
@@ -37,6 +38,7 @@
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
+; postgres/optimized/dshash.ll
 ; postgres/optimized/walreceiver.ll
 ; postgres/optimized/walsender.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
@@ -50,7 +52,6 @@
 ; z3/optimized/bv_bounds_tactic.cpp.ll
 ; z3/optimized/bv_size_reduction_tactic.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datalog_parser.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll

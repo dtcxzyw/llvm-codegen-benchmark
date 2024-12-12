@@ -1,5 +1,8 @@
 
-; 16 occurrences:
+; 19 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/params_iter_impl.ll
 ; git/optimized/apply.ll
 ; hyperscan/optimized/flood_compile.cpp.ll
 ; hyperscan/optimized/rose_build_matchers.cpp.ll

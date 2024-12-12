@@ -1,10 +1,9 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

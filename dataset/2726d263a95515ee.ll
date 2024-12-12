@@ -19,14 +19,13 @@ define i64 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   %7 = sext i32 %6 to i64
   ret i64 %7
 }
 
-; 5 occurrences:
-; openspiel/optimized/2048.cc.ll
+; 4 occurrences:
 ; openspiel/optimized/checkers.cc.ll
 ; openspiel/optimized/coin_game.cc.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
@@ -36,8 +35,8 @@ define i64 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = add nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %5 = add nsw i32 %1, %4
+  %6 = add nsw i32 %0, %5
   %7 = sext i32 %6 to i64
   ret i64 %7
 }
@@ -49,8 +48,8 @@ define i64 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 63
   %4 = trunc nuw nsw i64 %3 to i32
-  %5 = add i32 %4, %1
-  %6 = add i32 %5, %0
+  %5 = add i32 %1, %4
+  %6 = add i32 %0, %5
   %7 = sext i32 %6 to i64
   ret i64 %7
 }
@@ -62,7 +61,7 @@ define i64 @func0000000000000035(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 16
   %4 = trunc nuw nsw i64 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   %7 = sext i32 %6 to i64
   ret i64 %7

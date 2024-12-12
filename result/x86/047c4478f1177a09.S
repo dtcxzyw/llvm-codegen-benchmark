@@ -1,16 +1,16 @@
-func0000000000000296:                   # @func0000000000000296
+func0000000000000526:                   # @func0000000000000526
 	shrq	$32, %rdx
 	subl	%edi, %esi
 	cmpl	%edx, %esi
 	setl	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	shrq	$32, %rdx
 	subl	%edi, %esi
 	cmpl	%edx, %esi
 	setb	%al
 	retq
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	shrq	$32, %rdx
 	subl	%edi, %esi
 	cmpl	%edx, %esi

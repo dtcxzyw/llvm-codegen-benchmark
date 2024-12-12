@@ -1,7 +1,7 @@
 func000000000000011a:                   # @func000000000000011a
 	movq	%rdi, %rax
 	retq
-func000000000000013a:                   # @func000000000000013a
+func000000000000013b:                   # @func000000000000013b
 	subq	%rdx, %rsi
 	addq	%rsi, %rdi
 	shrq	$2, %rsi

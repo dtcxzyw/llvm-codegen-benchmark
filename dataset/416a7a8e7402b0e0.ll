@@ -1,5 +1,8 @@
 
-; 19 occurrences:
+; 22 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/default_filter_factory.ll
 ; g2o/optimized/isometry3d_mappings.cpp.ll
 ; graphviz/optimized/shapes.c.ll
 ; gromacs/optimized/dlaebz.cpp.ll

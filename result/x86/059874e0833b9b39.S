@@ -1,16 +1,16 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	incl	%esi
 	cmpl	%edx, %esi
 	setl	%al
 	orb	%dil, %al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	incl	%esi
 	cmpl	%edx, %esi
 	setge	%al
 	orb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addl	$5, %esi
 	cmpl	%edx, %esi
 	sete	%al

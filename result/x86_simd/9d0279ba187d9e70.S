@@ -8,7 +8,7 @@ func0000000000000012:                   # @func0000000000000012
 func0000000000000010:                   # @func0000000000000010
 	vptestnmd	%xmm2, %xmm2, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1]
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
 	retq
 .LCPI2_0:

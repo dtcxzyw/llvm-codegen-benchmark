@@ -5,7 +5,7 @@ func0000000000000008:                   # @func0000000000000008
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	addl	$-1938, %edx                    # imm = 0xF86E
 	cmpl	$-3875, %edx                    # imm = 0xF0DD
 	setb	%al
@@ -19,7 +19,7 @@ func0000000000000010:                   # @func0000000000000010
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	addl	$-444, %edx                     # imm = 0xFE44
 	cmpl	$37, %edx
 	setb	%al

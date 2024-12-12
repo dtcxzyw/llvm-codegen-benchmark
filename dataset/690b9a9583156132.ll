@@ -88,28 +88,18 @@ entry:
   ret ptr %7
 }
 
-; 21 occurrences:
-; cmake/optimized/zstd_lazy.c.ll
+; 11 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; git/optimized/refs.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/SimpleBytecodeBuilder.cpp.ll
-; hyperscan/optimized/flood_compile.cpp.ll
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
-; llvm/optimized/DWARFContext.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; ninja/optimized/depfile_parser.cc.ll
-; php/optimized/zend_ini_scanner.ll
-; php/optimized/zend_language_scanner.ll
 ; spike/optimized/sim.ll
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
-; yosys/optimized/fstapi.ll
-; yosys/optimized/lz4.ll
-; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
 entry:
@@ -118,6 +108,29 @@ entry:
   %5 = add i64 %4, 7
   %6 = and i64 %5, -8
   %7 = getelementptr nusw i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 11 occurrences:
+; cmake/optimized/zstd_lazy.c.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
+; hyperscan/optimized/flood_compile.cpp.ll
+; llvm/optimized/DWARFContext.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; ninja/optimized/depfile_parser.cc.ll
+; php/optimized/zend_ini_scanner.ll
+; php/optimized/zend_language_scanner.ll
+; yosys/optimized/fstapi.ll
+; yosys/optimized/lz4.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = add i64 %4, 4294967295
+  %6 = and i64 %5, 4294967295
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

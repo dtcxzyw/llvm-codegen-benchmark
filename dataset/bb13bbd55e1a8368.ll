@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 44 occurrences:
 ; assimp/optimized/zip.c.ll
 ; c3c/optimized/unzipper.c.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
@@ -41,6 +41,8 @@
 ; redis/optimized/ziplist.ll
 ; slurm/optimized/node_scheduler.ll
 ; wireshark/optimized/packet-sctp.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0, i16 %1) #0 {

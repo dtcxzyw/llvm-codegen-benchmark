@@ -9,7 +9,7 @@
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65535
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   %5 = urem i32 %4, 65521
   %6 = zext nneg i32 %5 to i64

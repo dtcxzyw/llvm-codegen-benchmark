@@ -1,4 +1,4 @@
-func0000000000000369:                   # @func0000000000000369
+func0000000000000cd9:                   # @func0000000000000cd9
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setae	%cl
@@ -6,7 +6,7 @@ func0000000000000369:                   # @func0000000000000369
 	sets	%al
 	orb	%cl, %al
 	retq
-func00000000000003c9:                   # @func00000000000003c9
+func0000000000000d99:                   # @func0000000000000d99
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setae	%cl
@@ -14,7 +14,7 @@ func00000000000003c9:                   # @func00000000000003c9
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000388:                   # @func0000000000000388
+func0000000000000d18:                   # @func0000000000000d18
 	addq	$32, %rdx
 	cmpq	%rdi, %rdx
 	seta	%cl
@@ -22,7 +22,7 @@ func0000000000000388:                   # @func0000000000000388
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000311:                   # @func0000000000000311
+func0000000000000c21:                   # @func0000000000000c21
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%cl
@@ -30,7 +30,7 @@ func0000000000000311:                   # @func0000000000000311
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000003a9:                   # @func00000000000003a9
+func0000000000000d59:                   # @func0000000000000d59
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setae	%cl
@@ -38,7 +38,7 @@ func00000000000003a9:                   # @func00000000000003a9
 	setg	%al
 	orb	%cl, %al
 	retq
-func000000000000031b:                   # @func000000000000031b
+func0000000000000c2b:                   # @func0000000000000c2b
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setge	%cl
@@ -46,7 +46,7 @@ func000000000000031b:                   # @func000000000000031b
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000003c8:                   # @func00000000000003c8
+func0000000000000d98:                   # @func0000000000000d98
 	addq	$20, %rdx
 	cmpq	%rdi, %rdx
 	seta	%cl
@@ -54,7 +54,7 @@ func00000000000003c8:                   # @func00000000000003c8
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%cl

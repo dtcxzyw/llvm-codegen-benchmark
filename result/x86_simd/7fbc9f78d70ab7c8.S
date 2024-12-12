@@ -1,11 +1,11 @@
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	vpsllq	$3, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000146:                   # @func0000000000000146
+func0000000000000286:                   # @func0000000000000286
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -14,16 +14,16 @@ func0000000000000146:                   # @func0000000000000146
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpsllq	$3, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	vpsllq	$2, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
-	vpcmpnleud	%xmm0, %xmm1, %k0
+	vpcmpltud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -33,3 +33,13 @@ func0000000000000006:                   # @func0000000000000006
 	xorb	$1, %dil
 	orb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$8, %esi
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$2, %esi
+	setae	%al
+	andb	%dil, %al
+	retq

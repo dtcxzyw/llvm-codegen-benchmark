@@ -1,10 +1,11 @@
 
-; 39 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; csmith/optimized/Bookkeeper.cpp.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
+; gromacs/optimized/colvarcomp_gpath.cpp.ll
 ; gromacs/optimized/colvarcomp_protein.cpp.ll
 ; gromacs/optimized/colvarproxy_volmaps.cpp.ll
 ; gromacs/optimized/msd.cpp.ll
@@ -20,6 +21,7 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; opencv/optimized/ccalib.cpp.ll
+; opencv/optimized/contrast_preserve.cpp.ll
 ; opencv/optimized/digits_svm.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; opencv/optimized/fr_lfw_benchmark.cpp.ll
@@ -31,6 +33,7 @@
 ; opencv/optimized/speech_recognition.cpp.ll
 ; openspiel/optimized/cfr.cc.ll
 ; openspiel/optimized/crowd_modelling_2d.cc.ll
+; openspiel/optimized/outcome_sampling_mccfr.cc.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/concentrating1dmesher.ll

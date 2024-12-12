@@ -30,7 +30,7 @@ entry:
 ; proxygen/optimized/QPACKCodec.cpp.ll
 ; velox/optimized/StackTrace.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = icmp ugt i64 %2, 23
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/semihosting_uaccess.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
   %reass.sub = sub i64 %0, %1
   %2 = add i64 %reass.sub, -2147479552
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %reass.sub = sub i64 %0, %1
   %2 = icmp ugt i64 %reass.sub, -9
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %reass.sub = sub i64 %0, %1
   %2 = icmp ult i64 %reass.sub, -6
@@ -94,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1) #0 {
 entry:
   %reass.sub = sub i64 %0, %1
   %2 = add i64 %reass.sub, 999

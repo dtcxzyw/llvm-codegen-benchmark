@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; linux/optimized/af_packet.ll
@@ -20,7 +20,6 @@
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
@@ -35,14 +34,13 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; icu/optimized/reslist.ll
 ; libquic/optimized/poly.c.ll
 ; linux/optimized/iov_iter.ll
 ; qemu/optimized/gdbstub.c.ll
 ; qemu/optimized/virtio-9p-client.c.ll
-; redis/optimized/rax.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
@@ -54,11 +52,12 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; hermes/optimized/RegexParser.cpp.ll
 ; icu/optimized/ustr.ll
 ; libpng/optimized/pngset.c.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; openjdk/optimized/pngset.ll
@@ -145,7 +144,7 @@ entry:
   ret i32 %4
 }
 
-; 39 occurrences:
+; 37 occurrences:
 ; clamav/optimized/upx.c.ll
 ; graphviz/optimized/gvdevice.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -159,9 +158,7 @@ entry:
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/iommu-traces.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/rx.ll

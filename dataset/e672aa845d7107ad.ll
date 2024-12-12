@@ -23,11 +23,10 @@ entry:
   ret i8 %3
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; clamav/optimized/special.c.ll
 ; linux/optimized/sd.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/CoroElide.cpp.ll

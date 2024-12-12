@@ -3,12 +3,12 @@ func0000000000000001:                   # @func0000000000000001
 	vmseq.vi	v0, v8, -1
 	vsub.vv	v8, v10, v12, v0.t
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmseq.vi	v0, v8, 0
 	vsub.vv	v8, v10, v12, v0.t
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsle.vi	v0, v8, 0
 	vsub.vv	v8, v10, v12, v0.t

@@ -15,3 +15,11 @@ func0000000000000004:                   # @func0000000000000004
 	cltq
 	addq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	movl	%esi, %eax
+	shrl	$31, %eax
+	addl	%esi, %eax
+	andl	$-2, %eax
+	cltq
+	leaq	(%rdi,%rax,8), %rax
+	retq

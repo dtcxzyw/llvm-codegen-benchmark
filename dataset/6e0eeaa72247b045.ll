@@ -41,8 +41,7 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; pbrt-v4/optimized/lights.cpp.ll
+; 2 occurrences:
 ; pbrt-v4/optimized/primitive.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind

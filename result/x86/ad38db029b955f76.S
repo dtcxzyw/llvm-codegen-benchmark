@@ -1,4 +1,4 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	testb	$3, %dil
 	sete	%al
 	retq
@@ -7,18 +7,18 @@ func0000000000000001:                   # @func0000000000000001
 	testl	$8388608, %edi                  # imm = 0x800000
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addl	$3, %edi
 	testl	$8388608, %edi                  # imm = 0x800000
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
-	decl	%edi
-	testb	$7, %dil
+func0000000000000061:                   # @func0000000000000061
+	andl	$7, %edi
+	cmpl	$1, %edi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
-	incl	%edi
+func0000000000000081:                   # @func0000000000000081
+	notl	%edi
 	testb	$7, %dil
 	sete	%al
 	retq

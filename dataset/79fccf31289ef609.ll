@@ -6,7 +6,7 @@
 define i8 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
@@ -14,10 +14,10 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/ecp_curves.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
@@ -29,7 +29,7 @@ entry:
 define i8 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
@@ -38,10 +38,10 @@ entry:
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/ustrcase.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
@@ -50,10 +50,10 @@ entry:
 ; opencv/optimized/feature.cpp.ll
 ; opencv/optimized/lbpfeatures.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
@@ -61,10 +61,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/brief.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
+define i8 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   %5 = zext i1 %4 to i8
   ret i8 %5
 }

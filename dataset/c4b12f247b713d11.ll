@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/LowerMemIntrinsics.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll

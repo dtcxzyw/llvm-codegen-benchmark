@@ -7,12 +7,12 @@
 ; slurm/optimized/dist_tasks.ll
 ; wireshark/optimized/packet-mbtcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %2, 1
   %4 = zext i16 %3 to i32
   %5 = add nuw nsw i32 %0, %1
-  %6 = icmp ugt i32 %5, %4
+  %6 = icmp samesign ugt i32 %5, %4
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-xmcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %2, 4
   %4 = zext i16 %3 to i32

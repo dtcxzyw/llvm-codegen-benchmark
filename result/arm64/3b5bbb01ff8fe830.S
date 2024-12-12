@@ -1,14 +1,12 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ushr	v2.16b, v2.16b, #4
-	uaddw2	v1.8h, v1.8h, v2.16b
-	uaddw	v0.8h, v0.8h, v2.8b
+	and	w8, w1, #0xf0
+	add	w0, w0, w8, lsr #4
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	ushr	v2.16b, v2.16b, #1
-	uaddw2	v1.8h, v1.8h, v2.16b
-	uaddw	v0.8h, v0.8h, v2.8b
+	and	w8, w1, #0xfe
+	add	w0, w0, w8, lsr #1
 	ret
                                         // -- End function

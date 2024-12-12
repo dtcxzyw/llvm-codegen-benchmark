@@ -3,7 +3,7 @@
 ; opencv/optimized/samplers.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

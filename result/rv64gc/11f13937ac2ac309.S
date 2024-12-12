@@ -112,12 +112,15 @@ func000000000000000d:                   # @func000000000000000d
 	flt.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
+.LCPI11_0:
+	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
 func000000000000000a:                   # @func000000000000000a
 	andi	a0, a0, 1
 	bnez	a0, .LBB11_2
 	fmv.d	fa0, fa1
 .LBB11_2:                               # %entry
-	fmv.d.x	fa5, zero
+	lui	a0, %hi(.LCPI11_0)
+	fld	fa5, %lo(.LCPI11_0)(a0)
 	fle.d	a0, fa0, fa5
 	ret
 func0000000000000009:                   # @func0000000000000009

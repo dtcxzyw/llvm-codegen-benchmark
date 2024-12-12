@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/intel_fb.ll
 ; openjdk/optimized/ProcessPath.ll
 ; openssl/optimized/libcrypto-lib-by_file.ll
 ; openssl/optimized/libcrypto-shlib-by_file.ll
 ; openssl/optimized/openssl-bin-req.ll
-; openssl/optimized/x509aux-bin-x509aux.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i1 %2) #0 {
 entry:

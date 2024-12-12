@@ -2,6 +2,7 @@
 ; 28 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -10,7 +11,6 @@
 ; eastl/optimized/EATest.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; folly/optimized/OpenSSLCertUtils.cpp.ll
 ; icu/optimized/regexcmp.ll
 ; llama.cpp/optimized/common.cpp.ll

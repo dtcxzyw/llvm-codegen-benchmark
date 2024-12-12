@@ -1,11 +1,3 @@
-func0000000000000007:                   # @func0000000000000007
-	shrl	%esi
-	andl	$15, %esi
-	leal	1(%rsi), %ecx
-	xorl	%eax, %eax
-	testb	$1, %dil
-	cmoveq	%rcx, %rax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	shrl	$3, %esi
 	andl	$15, %esi
@@ -20,5 +12,13 @@ func0000000000000002:                   # @func0000000000000002
 	decl	%ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
+	cmoveq	%rcx, %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	shrl	$2, %esi
+	andl	$-16, %esi
+	leal	16(%rsi), %ecx
+	testb	$1, %dil
+	movl	$16, %eax
 	cmoveq	%rcx, %rax
 	retq

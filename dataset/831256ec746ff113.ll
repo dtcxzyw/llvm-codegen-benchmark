@@ -5,9 +5,8 @@
 ; git/optimized/merge-recursive.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; linux/optimized/airtime.ll
-; linux/optimized/hwesleep.ll
 ; llvm/optimized/Decl.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/X86CallingConv.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
@@ -16,6 +15,7 @@
 ; openjdk/optimized/assembler_x86.ll
 ; openspiel/optimized/euchre.cc.ll
 ; php/optimized/hash_haval.ll
+; postgres/optimized/nodeAgg.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; pybind11/optimized/test_class.cpp.ll

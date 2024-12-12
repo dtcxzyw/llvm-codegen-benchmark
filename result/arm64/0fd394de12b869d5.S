@@ -1,32 +1,11 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmeq	v3.4s, v3.4s, #0
-	cmeq	v2.4s, v2.4s, #0
-	movi	v4.4s, #2
-	uzp1	v2.8h, v2.8h, v3.8h
-	xtn	v2.8b, v2.8h
-	and	v0.8b, v2.8b, v0.8b
-	zip2	v2.8b, v1.8b, v0.8b
-	zip2	v3.8b, v0.8b, v0.8b
-	zip1	v1.8b, v1.8b, v0.8b
-	zip1	v0.8b, v0.8b, v0.8b
-	ushll	v2.4s, v2.4h, #0
-	ushll	v3.4s, v3.4h, #0
-	ushll	v1.4s, v1.4h, #0
-	ushll	v0.4s, v0.4h, #0
-	shl	v2.4s, v2.4s, #31
-	shl	v3.4s, v3.4s, #31
-	shl	v1.4s, v1.4s, #31
-	shl	v0.4s, v0.4s, #31
-	cmlt	v2.4s, v2.4s, #0
-	cmlt	v3.4s, v3.4s, #0
-	cmlt	v1.4s, v1.4s, #0
-	cmlt	v0.4s, v0.4s, #0
-	bic	v2.16b, v2.16b, v3.16b
-	bic	v1.16b, v1.16b, v0.16b
-	and	v2.16b, v2.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
-	sub	v0.4s, v1.4s, v0.4s
-	sub	v1.4s, v2.4s, v3.4s
+	cmp	w2, #0
+	mov	w9, #2                          // =0x2
+	cset	w8, eq
+	tst	w1, #0x1
+	csel	w9, w9, wzr, ne
+	tst	w0, w8
+	csinc	w0, w9, wzr, eq
 	ret
                                         // -- End function

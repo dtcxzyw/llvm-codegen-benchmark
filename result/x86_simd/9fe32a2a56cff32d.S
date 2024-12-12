@@ -123,7 +123,7 @@ func000000000000000d:                   # @func000000000000000d
 	vpsrld	$1, %ymm1, %ymm1
 	vpandd	.LCPI3_2(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI3_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	32766                           # 0x7ffe

@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/escape.cpp.ll
 ; hermes/optimized/zip.c.ll
@@ -14,6 +14,7 @@
 ; meshlab/optimized/miniz.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; wireshark/optimized/packet-packetbb.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i32 %0) #0 {
 entry:

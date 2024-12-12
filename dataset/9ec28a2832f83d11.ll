@@ -1,18 +1,20 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; c3c/optimized/parse_global.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16384
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %1, 49
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -25,27 +27,29 @@ entry:
   %3 = and i32 %2, 65536
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %1, 19
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
+; c3c/optimized/lexer.c.ll
 ; duckdb/optimized/ub_duckdb_main_capi.cpp.ll
 ; icu/optimized/collationdata.ll
 ; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/collationsets.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 131071
+  %3 = and i32 %2, 16711680
   %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw i64 %1, 62
-  %6 = or disjoint i64 %5, %0
+  %5 = shl nuw i64 %1, 32
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -58,7 +62,7 @@ entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 %1, 56
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -85,7 +89,7 @@ entry:
   %3 = and i32 %2, 4095
   %4 = zext nneg i32 %3 to i64
   %5 = shl i64 %1, 32
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }

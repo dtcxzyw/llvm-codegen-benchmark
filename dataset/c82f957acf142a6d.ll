@@ -1,5 +1,5 @@
 
-; 248 occurrences:
+; 253 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -247,6 +247,11 @@
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i8 %2) #0 {
@@ -254,7 +259,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
   %5 = shl nuw nsw i64 %1, 9
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -273,7 +278,7 @@ entry:
   ret i64 %7
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -286,18 +291,19 @@ entry:
 ; openssl/optimized/libcrypto-lib-siphash.ll
 ; openssl/optimized/libcrypto-shlib-siphash.ll
 ; redis/optimized/listpack.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003b(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw i64 %3, 56
   %5 = shl nuw nsw i64 %1, 48
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
 
-; 55 occurrences:
+; 57 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -353,13 +359,15 @@ entry:
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 40
   %5 = shl nuw i64 %1, 56
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -412,12 +420,12 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = shl nuw nsw i64 %1, 16
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
@@ -448,7 +456,6 @@ entry:
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hdf5/optimized/H5Tvlen.c.ll
-; hdf5/optimized/H5VLnative_blob.c.ll
 ; libquic/optimized/a_mbstr.c.ll
 ; libquic/optimized/a_strex.c.ll
 ; libquic/optimized/x25519-x86_64.c.ll
@@ -473,7 +480,7 @@ entry:
 define i64 @func000000000000006f(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 24
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i8 %1 to i64
   %6 = shl nuw nsw i64 %5, 8
   %7 = or disjoint i64 %6, %4
@@ -494,7 +501,7 @@ entry:
 define i64 @func000000000000004f(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 56
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i8 %1 to i64
   %6 = shl nuw nsw i64 %5, 40
   %7 = or disjoint i64 %6, %4
@@ -541,7 +548,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw i64 %3, 56
   %5 = shl nuw nsw i64 %1, 48
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -690,7 +697,7 @@ entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 40
   %5 = shl nuw nsw i64 %1, 32
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -714,7 +721,7 @@ entry:
 define i64 @func0000000000000064(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 48
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext i8 %1 to i64
   %6 = shl nuw i64 %5, 56
   %7 = or i64 %6, %4
@@ -727,7 +734,7 @@ entry:
 define i64 @func0000000000000066(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext i8 %1 to i64
   %6 = shl nuw nsw i64 %5, 16
   %7 = or i64 %6, %4
@@ -758,7 +765,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 24
   %5 = shl i64 %1, 40
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -784,7 +791,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = shl nuw nsw i64 %1, 16
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }

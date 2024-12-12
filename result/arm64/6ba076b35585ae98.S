@@ -1,4 +1,4 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	cset	w8, eq
@@ -7,7 +7,7 @@ func0000000000000011:                   // @func0000000000000011
 	csinc	w0, w8, wzr, ne
 	ret
                                         // -- End function
-func00000000000000ca:                   // @func00000000000000ca
+func000000000000018a:                   // @func000000000000018a
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	cset	w8, ne
@@ -16,7 +16,7 @@ func00000000000000ca:                   // @func00000000000000ca
 	csinc	w0, w8, wzr, le
 	ret
                                         // -- End function
-func00000000000000c1:                   // @func00000000000000c1
+func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	cset	w8, eq

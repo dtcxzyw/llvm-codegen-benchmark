@@ -142,7 +142,7 @@
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; wireshark/optimized/wmem_allocator_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -154,7 +154,7 @@ entry:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000008c(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -182,7 +182,7 @@ entry:
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/pid.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 -1424, %1
   %3 = getelementptr i8, ptr %0, i64 %2

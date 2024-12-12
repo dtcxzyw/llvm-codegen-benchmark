@@ -43,13 +43,14 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; cmake/optimized/noproxy.c.ll
 ; curl/optimized/libcurl_la-noproxy.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; lief/optimized/ssl_msg.c.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
+; wireshark/optimized/packet-bacapp.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-ms-do.c.ll
 ; wireshark/optimized/packet-reload-framing.c.ll
@@ -78,12 +79,11 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/islamcal.ll
 ; jq/optimized/jv_dtoa.ll
 ; php/optimized/zend_strtod.ll
-; wireshark/optimized/packet-bacapp.c.ll
 ; wireshark/optimized/packet-reload-framing.c.ll
 ; zxing/optimized/ODCodabarWriter.cpp.ll
 ; Function Attrs: nounwind
@@ -91,7 +91,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1, %1
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -107,9 +107,10 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; git/optimized/merge-ort.ll
 ; libzmq/optimized/tcp_address.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll
 ; wireshark/optimized/packet-amr.c.ll
@@ -119,6 +120,18 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 3, %1
   %3 = shl nuw nsw i32 1, %2
+  %4 = and i32 %3, %0
+  ret i32 %4
+}
+
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; openspiel/optimized/TransTableL.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 24, %1
+  %3 = shl nuw i32 1, %2
   %4 = and i32 %3, %0
   ret i32 %4
 }
@@ -137,17 +150,6 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 11, %1
   %3 = shl nuw nsw i32 1, %2
-  %4 = and i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; openspiel/optimized/TransTableL.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub i32 30, %1
-  %3 = shl nuw i32 3, %2
   %4 = and i32 %3, %0
   ret i32 %4
 }

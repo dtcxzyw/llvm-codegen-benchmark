@@ -1,10 +1,9 @@
 
-; 253 occurrences:
+; 260 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
@@ -45,6 +44,7 @@
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/src.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; grpc/optimized/ares_resolver.cc.ll
 ; grpc/optimized/call_trace.cc.ll
@@ -253,6 +253,13 @@
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i128 %0) #0 {
 entry:

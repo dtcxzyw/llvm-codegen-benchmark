@@ -14,22 +14,13 @@ func0000000000000001:                   # @func0000000000000001
 	orl	$2, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	notb	%dil
-	movzbl	%dil, %eax
-	andl	$1, %eax
-	xorl	%ecx, %ecx
+	xorl	%eax, %eax
 	cmpl	%edx, %esi
-	leal	-5(%rax,%rax,4), %eax
-	cmovel	%ecx, %eax
-	retq
-func0000000000000008:                   # @func0000000000000008
-	notb	%dil
-	movzbl	%dil, %eax
-	andl	$1, %eax
-	cmpl	%edx, %esi
-	leal	5(%rax,%rax,4), %ecx
-	movl	$10, %eax
-	cmoval	%ecx, %eax
+	sete	%al
+	leal	-5(%rax,%rax,4), %ecx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	cmpl	%edx, %esi

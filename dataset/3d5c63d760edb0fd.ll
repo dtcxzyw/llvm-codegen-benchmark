@@ -1,6 +1,7 @@
 
 ; 13 occurrences:
 ; abc/optimized/abcIfMux.c.ll
+; boost/optimized/to_chars.ll
 ; git/optimized/strbuf.ll
 ; libquic/optimized/modp_b64.cc.ll
 ; libwebp/optimized/upsampling.c.ll
@@ -8,7 +9,6 @@
 ; linux/optimized/drm_framebuffer.ll
 ; linux/optimized/i915_hwmon.ll
 ; linux/optimized/intel_crtc_state_dump.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_display_trace.ll
 ; nanosvg/optimized/nanosvg.ll
 ; recastnavigation/optimized/DebugDraw.cpp.ll

@@ -4,7 +4,7 @@ func000000000000000f:                   # @func000000000000000f
 	vnsrl.wx	v9, v10, a0
 	li	a0, 32
 	vand.vx	v9, v9, a0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	li	a0, 520
 	vor.vx	v8, v8, a0
 	ret

@@ -1,65 +1,65 @@
 func000000000000000a:                   # @func000000000000000a
 	decl	%esi
-	cmpw	%di, %si
-	setl	%al
+	cmpw	%si, %di
+	setg	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	incl	%esi
-	cmpw	%di, %si
-	seta	%al
+	cmpw	%si, %di
+	setb	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	incl	%esi
-	cmpw	%di, %si
-	setb	%al
+	cmpw	%si, %di
+	seta	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	incl	%esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	setne	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	addl	$2, %esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	incl	%esi
-	cmpw	%di, %si
-	setg	%al
+	cmpw	%si, %di
+	setl	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addl	$7, %esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	sete	%al
 	retq
 func0000000000000005:                   # @func0000000000000005
 	decl	%esi
-	cmpw	%di, %si
-	setae	%al
+	cmpw	%si, %di
+	setbe	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	incl	%esi
-	cmpw	%di, %si
+	cmpw	%si, %di
+	seta	%al
+	retq
+func0000000000000064:                   # @func0000000000000064
+	addl	$-1025, %esi                    # imm = 0xFBFF
+	cmpw	%si, %di
 	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
-	addl	$-1025, %esi                    # imm = 0xFBFF
-	cmpw	%di, %si
+func0000000000000041:                   # @func0000000000000041
+	incl	%esi
+	cmpw	%si, %di
+	sete	%al
+	retq
+func0000000000000068:                   # @func0000000000000068
+	incl	%esi
+	cmpw	%si, %di
 	seta	%al
 	retq
 func0000000000000021:                   # @func0000000000000021
 	incl	%esi
-	cmpw	%di, %si
-	sete	%al
-	retq
-func0000000000000038:                   # @func0000000000000038
-	incl	%esi
-	cmpw	%di, %si
-	setb	%al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	incl	%esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	sete	%al
 	retq

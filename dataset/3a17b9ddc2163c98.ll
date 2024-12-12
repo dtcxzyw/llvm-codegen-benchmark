@@ -1,12 +1,11 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openssl/optimized/openssl-bin-fipsinstall.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = xor i1 %1, true
@@ -16,12 +15,13 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; openjdk/optimized/whitebox.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = xor i1 %1, true
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000181(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = xor i1 %1, true

@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 39 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
@@ -34,7 +34,11 @@
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:

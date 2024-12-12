@@ -1,4 +1,4 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	fli.d	fa5, 0.5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfadd.vf	v10, v10, fa5

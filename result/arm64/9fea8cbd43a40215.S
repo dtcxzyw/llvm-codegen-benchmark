@@ -1,39 +1,27 @@
-func0000000000000058:                   // @func0000000000000058
+func00000000000000a8:                   // @func00000000000000a8
 // %bb.0:                               // %entry
-	mul	v2.4s, v2.4s, v3.4s
-	mov	x8, #2305843009213693951        // =0x1fffffffffffffff
-	saddw	v0.2d, v0.2d, v2.2s
-	saddw2	v1.2d, v1.2d, v2.4s
-	dup	v2.2d, x8
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	w8, w1, w2
+	add	x8, x0, w8, sxtw
+	lsr	x8, x8, #61
+	cmp	x8, #0
+	cset	w0, ne
 	ret
                                         // -- End function
-func000000000000005a:                   // @func000000000000005a
+func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
-	mul	v2.4s, v2.4s, v3.4s
-	mov	w8, #2147483647                 // =0x7fffffff
-	saddw	v0.2d, v0.2d, v2.2s
-	saddw2	v1.2d, v1.2d, v2.4s
-	dup	v2.2d, x8
-	cmgt	v1.2d, v1.2d, v2.2d
-	cmgt	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	w8, w1, w2
+	mov	w9, #2147483647                 // =0x7fffffff
+	add	x8, x0, w8, sxtw
+	cmp	x8, x9
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000056:                   // @func0000000000000056
+func00000000000000a6:                   // @func00000000000000a6
 // %bb.0:                               // %entry
-	mul	v2.4s, v2.4s, v3.4s
-	mov	x8, #-2147483648                // =0xffffffff80000000
-	saddw	v0.2d, v0.2d, v2.2s
-	saddw2	v1.2d, v1.2d, v2.4s
-	dup	v2.2d, x8
-	cmgt	v1.2d, v2.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	w8, w1, w2
+	mov	x9, #-2147483648                // =0xffffffff80000000
+	add	x8, x0, w8, sxtw
+	cmp	x8, x9
+	cset	w0, lt
 	ret
                                         // -- End function

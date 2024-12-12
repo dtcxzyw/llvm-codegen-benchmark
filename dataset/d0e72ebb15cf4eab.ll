@@ -1,6 +1,5 @@
 
-; 32 occurrences:
-; cpython/optimized/unicodeobject.ll
+; 31 occurrences:
 ; hermes/optimized/Passes.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -33,16 +32,16 @@
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 16
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
-; 111 occurrences:
+; 109 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_F.cpp.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_VF.cpp.ll
@@ -149,42 +148,40 @@ entry:
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16777471
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 0
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/blk-merge.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 524288
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 1792
-  %6 = icmp ne i32 %5, %0
+  %6 = icmp ne i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 64
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 127
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 

@@ -26,7 +26,7 @@ entry:
   ret i64 %6
 }
 
-; 167 occurrences:
+; 168 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -192,6 +192,7 @@ entry:
 ; llvm/optimized/TemplateBase.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_image.ll
 ; qemu/optimized/tcg.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind

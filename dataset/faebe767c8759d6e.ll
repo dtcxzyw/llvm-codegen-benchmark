@@ -13,7 +13,7 @@ entry:
   ret i64 %4
 }
 
-; 63 occurrences:
+; 67 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
@@ -53,7 +53,6 @@ entry:
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -77,6 +76,11 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/block_parallels.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i32 %0) #0 {
 entry:

@@ -1,6 +1,7 @@
 
-; 14 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
+; boost/optimized/message.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; llvm/optimized/CFIInstrInserter.cpp.ll
@@ -14,6 +15,10 @@
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
@@ -23,10 +28,12 @@ entry:
   ret i64 %5
 }
 
-; 112 occurrences:
+; 114 occurrences:
 ; gromacs/optimized/gmx_hbond.cpp.ll
+; hermes/optimized/NativeFormatting.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; llvm/optimized/DeadStoreElimination.cpp.ll
+; llvm/optimized/NativeFormatting.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; openjdk/optimized/archiveHeapLoader.ll

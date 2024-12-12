@@ -8,13 +8,12 @@ entry:
   %4 = add nsw i64 %3, -1
   %5 = zext nneg i32 %1 to i64
   %6 = mul nuw nsw i64 %4, %5
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
-; darktable/optimized/JpegDecompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; Function Attrs: nounwind
@@ -50,7 +49,7 @@ entry:
   %4 = add nsw i64 %3, -1
   %5 = zext i32 %1 to i64
   %6 = mul nsw i64 %4, %5
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 

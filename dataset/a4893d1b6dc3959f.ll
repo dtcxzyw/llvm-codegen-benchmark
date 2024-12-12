@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp slt i64 %0, %1
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
   %4 = icmp ult i32 %0, 2
@@ -111,7 +111,7 @@ entry:
 ; nlohmann_json/optimized/unit-unicode1.cpp.ll
 ; nuttx/optimized/msgrcv.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i64 %0, %1
@@ -131,7 +131,7 @@ entry:
 ; nlohmann_json/optimized/unit-unicode4.cpp.ll
 ; nlohmann_json/optimized/unit-unicode5.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i64 %0, %1
@@ -146,7 +146,7 @@ entry:
 ; luau/optimized/ToString.test.cpp.ll
 ; luau/optimized/TypeInfer.aliases.test.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ugt i64 %0, %1
@@ -157,7 +157,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/StringUtils.test.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp ne i32 %0, 0
@@ -169,7 +169,7 @@ entry:
 ; luau/optimized/AstVisitor.test.cpp.ll
 ; nlohmann_json/optimized/unit-regression1.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ult i64 %0, %1
@@ -181,7 +181,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000012a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp uge i64 %1, %2
   %4 = icmp sgt i32 %0, -1
@@ -192,7 +192,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SpillPlacement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a9(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000149(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp uge i64 %0, %1
@@ -203,7 +203,7 @@ entry:
 ; 1 occurrences:
 ; nlohmann_json/optimized/unit-concepts.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c5(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000185(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ule i64 %0, %1
@@ -214,7 +214,7 @@ entry:
 ; 1 occurrences:
 ; nlohmann_json/optimized/unit-capacity.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c9(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000189(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp uge i64 %0, %1
@@ -225,7 +225,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ec(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sle i64 %1, %2
   %4 = icmp ne i32 %0, 0

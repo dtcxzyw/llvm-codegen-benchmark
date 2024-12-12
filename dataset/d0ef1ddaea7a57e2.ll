@@ -25,14 +25,14 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000041(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -2
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -46,6 +46,7 @@ entry:
 ; crow/optimized/example_static_file.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
+; postgres/optimized/rangetypes_gist.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
@@ -55,14 +56,15 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; postgres/optimized/rangetypes_gist.ll
 ; postgres/optimized/tsgistidx.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -1
-  %3 = add i16 %0, 1
+  %3 = add i16 %0, -1
   %4 = icmp ugt i16 %3, %2
   ret i1 %4
 }

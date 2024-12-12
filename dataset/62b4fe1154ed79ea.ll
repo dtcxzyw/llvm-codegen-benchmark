@@ -13,7 +13,7 @@ entry:
   %3 = fcmp ogt float %0, %2
   %4 = select i1 %3, float %0, float %2
   %5 = fdiv float %1, %4
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   %7 = fptoui float %6 to i8
   ret i8 %7
 }

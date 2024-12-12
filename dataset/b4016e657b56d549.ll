@@ -1,5 +1,7 @@
 
-; 34 occurrences:
+; 36 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; hermes/optimized/Math.cpp.ll
 ; meshlab/optimized/Factor.cpp.ll

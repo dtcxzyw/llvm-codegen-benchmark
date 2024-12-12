@@ -54,3 +54,10 @@ func00000000000000dd:                   # @func00000000000000dd
 	addq	%rcx, %rax
 	shlq	$4, %rax
 	retq
+func000000000000003f:                   # @func000000000000003f
+	movl	%edx, %ecx
+	imulq	%rdi, %rcx
+	movl	%esi, %eax
+	addq	%rcx, %rax
+	shlq	$2, %rax
+	retq

@@ -20,7 +20,7 @@ entry:
 ; linux/optimized/mmap.ll
 ; linux/optimized/mtrr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967284
   %3 = and i64 %2, 4294967295
@@ -38,7 +38,7 @@ entry:
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; hyperscan/optimized/ng_squash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = and i64 %2, 63

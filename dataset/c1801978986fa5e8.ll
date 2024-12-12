@@ -1,5 +1,7 @@
 
 ; 50 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; bullet3/optimized/poly34.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
@@ -27,10 +29,8 @@
 ; openjdk/optimized/cmspcs.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
-; proj/optimized/adjlon.cpp.ll
 ; proj/optimized/conversion.cpp.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/unitconvert.cpp.ll
 ; quantlib/optimized/assetswap.ll
 ; quantlib/optimized/cevrndcalculator.ll

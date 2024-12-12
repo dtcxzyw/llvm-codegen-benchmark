@@ -13,6 +13,18 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v11
 	ret
+func0000000000000003:                   # @func0000000000000003
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 0
+	lui	a0, 559241
+	addi	a0, a0, -1911
+	vmulhu.vx	v8, v10, a0
+	vsrl.vi	v11, v8, 5
+	li	a0, 60
+	vnmsub.vx	v11, a0, v10
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v8, v11
+	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0

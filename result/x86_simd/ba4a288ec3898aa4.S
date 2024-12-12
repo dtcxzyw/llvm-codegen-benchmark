@@ -2,7 +2,7 @@
 	.long	4294705633                      # 0xfffc01e1
 .LCPI0_1:
 	.long	4294967004                      # 0xfffffedc
-func0000000000000251:                   # @func0000000000000251
+func00000000000004a1:                   # @func00000000000004a1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrad	$21, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2

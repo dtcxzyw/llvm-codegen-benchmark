@@ -1,4 +1,4 @@
-func000000000000016c:                   # @func000000000000016c
+func00000000000004cc:                   # @func00000000000004cc
 	addl	$2, %edx
 	cmpl	%edi, %edx
 	setl	%cl

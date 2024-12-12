@@ -4,7 +4,7 @@
 	.long	32770                           # 0x8002
 .LCPI0_2:
 	.long	65534                           # 0xfffe
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [6554,6554,6554,6554,6554,6554,6554,6554]
 	vpmulld	%ymm1, %ymm0, %ymm0

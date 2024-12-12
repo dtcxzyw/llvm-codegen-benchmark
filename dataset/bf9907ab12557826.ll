@@ -1,7 +1,5 @@
 
-; 21 occurrences:
-; assimp/optimized/Exporter.cpp.ll
-; assimp/optimized/Importer.cpp.ll
+; 19 occurrences:
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll

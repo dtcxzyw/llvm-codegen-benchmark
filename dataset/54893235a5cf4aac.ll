@@ -9,10 +9,10 @@
 ; velox/optimized/ToUtf8.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000284(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -4
-  %3 = icmp ult i32 %2, 13
+  %3 = icmp samesign ult i32 %2, 13
   %4 = trunc i64 %0 to i32
   %5 = icmp ult i32 %4, 13
   %6 = and i1 %5, %3
@@ -23,7 +23,7 @@ entry:
 ; abc/optimized/aigMan.c.ll
 ; abc/optimized/giaAig.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i64 %0, i32 %1) #0 {
+define i1 @func0000000000001084(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = icmp ult i32 %2, 2
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/darScript.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000448(i64 %0, i32 %1) #0 {
+define i1 @func0000000000001088(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = icmp ult i32 %2, 2
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Clang.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -35
   %3 = icmp ult i32 %2, 2
@@ -63,7 +63,7 @@ entry:
 ; llvm/optimized/IRMover.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 2
@@ -78,7 +78,7 @@ entry:
 ; linux/optimized/hwmon.ll
 ; llvm/optimized/IRMover.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -7
   %3 = icmp ult i32 %2, 2
@@ -86,6 +86,19 @@ entry:
   %5 = icmp eq i32 %4, 2
   %6 = and i1 %5, %3
   ret i1 %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp eq i32 %2, -1
+  %4 = icmp eq i32 %0, 2147483647
+  %5 = and i1 %4, %3
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

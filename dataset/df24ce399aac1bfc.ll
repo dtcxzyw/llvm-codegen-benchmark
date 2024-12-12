@@ -23,9 +23,11 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i8 %0, i8 %1) #0 {
 entry:
@@ -35,9 +37,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:

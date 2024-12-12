@@ -3,7 +3,7 @@ func0000000000000064:                   # @func0000000000000064
 	vmsle.vi	v0, v10, -1
 	li	a0, 360
 	vadd.vx	v10, v10, a0, v0.t
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000060:                   # @func0000000000000060
 	li	a0, 100
@@ -29,5 +29,5 @@ func00000000000000a0:                   # @func00000000000000a0
 	vmv.v.i	v12, 6
 	vmerge.vim	v12, v12, 10, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret

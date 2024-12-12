@@ -1,6 +1,6 @@
 func0000000000000004:                   # @func0000000000000004
 	movq	%rdi, %rax
 	leaq	-1(%rsi), %rcx
-	cmpq	%rdx, %rcx
-	cmovbeq	%rsi, %rax
+	cmpq	%rcx, %rdx
+	cmovaeq	%rsi, %rax
 	retq

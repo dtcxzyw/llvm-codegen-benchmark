@@ -11,9 +11,8 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/mpool.c.ll
-; lief/optimized/Builder.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; minetest/optimized/CFileSystem.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

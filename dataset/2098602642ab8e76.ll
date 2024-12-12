@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; git/optimized/shortlog.ll
-; linux/optimized/blk-sysfs.ll
 ; openssl/optimized/libcrypto-lib-cmp_hdr.ll
 ; openssl/optimized/libcrypto-shlib-cmp_hdr.ll
 ; qemu/optimized/util_cutils.c.ll

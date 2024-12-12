@@ -1,24 +1,34 @@
 func000000000000019d:                   // @func000000000000019d
 // %bb.0:                               // %entry
-	mov	w8, #1570                       // =0x622
-	dup	v2.4s, w8
 	mov	x8, #-15025                     // =0xffffffffffffc54f
+	cmp	w1, #1570
 	movk	x8, #65533, lsl #16
-	cmgt	v1.4s, v2.4s, v1.4s
-	sub	v0.4s, v0.4s, v1.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	fmov	x9, d1
-	fmov	x11, d0
-	mov	x10, v1.d[1]
-	mov	x12, v0.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d1, x9
-	mul	x8, x12, x8
-	fmov	d0, x11
-	mov	v1.d[1], x10
-	mov	v0.d[1], x8
+	cinc	w9, w0, lt
+	mul	x0, x9, x8
+	ret
+                                        // -- End function
+func0000000000000303:                   // @func0000000000000303
+// %bb.0:                               // %entry
+	add	w9, w1, #66, lsl #12            // =270336
+	mov	w8, #24                         // =0x18
+	cmn	w9, #3664
+	cinc	w9, w0, ne
+	umull	x0, w9, w8
+	ret
+                                        // -- End function
+func0000000000000307:                   // @func0000000000000307
+// %bb.0:                               // %entry
+	cmp	w1, #0
+	mov	w8, #24                         // =0x18
+	cinc	w9, w0, ne
+	umull	x0, w9, w8
+	ret
+                                        // -- End function
+func0000000000000203:                   // @func0000000000000203
+// %bb.0:                               // %entry
+	cmp	w1, #2
+	mov	w8, #88                         // =0x58
+	cinc	w9, w0, hi
+	umull	x0, w9, w8
 	ret
                                         // -- End function

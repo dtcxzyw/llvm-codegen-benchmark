@@ -1,6 +1,9 @@
 
-; 15 occurrences:
+; 18 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/raster.c.ll
@@ -56,7 +59,7 @@ define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = select i1 %1, i64 %3, i64 %2
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

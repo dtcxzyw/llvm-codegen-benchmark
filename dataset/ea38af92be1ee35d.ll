@@ -77,7 +77,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = and i64 %4, 4294967295
   ret i64 %5
 }
@@ -91,7 +91,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = and i64 %4, -4294967296
   ret i64 %5
 }
@@ -103,21 +103,22 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = and i64 %4, 4294967295
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/libata-core.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; spike/optimized/mulh.ll
 ; spike/optimized/mulhsu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = and i64 %4, 4294967295
   ret i64 %5
 }
@@ -139,7 +140,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = and i64 %4, -9223372036854775745
   ret i64 %5
 }

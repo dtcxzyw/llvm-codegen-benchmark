@@ -1,8 +1,10 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/ioWriteBook.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/cpu_timer.ll
+; boost/optimized/default_filter_factory.ll
 ; faiss/optimized/AutoTune.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; grpc/optimized/periodic_update.cc.ll
@@ -20,7 +22,6 @@
 ; proj/optimized/adams.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/robin.cpp.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; quantlib/optimized/binomialtree.ll
 ; quantlib/optimized/extendedbinomialtree.ll
 ; quantlib/optimized/fdvanillaengine.ll

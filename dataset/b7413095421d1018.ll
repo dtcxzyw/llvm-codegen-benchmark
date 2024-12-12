@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/packet-epl.c.ll
@@ -77,9 +78,8 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; linux/optimized/maple_tree.ll
-; linux/optimized/reciprocal_div.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
@@ -116,7 +116,7 @@ define i32 @func0000000000000015(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, -1
   %3 = sext i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -165,7 +165,7 @@ define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

@@ -31,11 +31,12 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:

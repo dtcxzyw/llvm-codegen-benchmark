@@ -9,18 +9,12 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
-	shrxl	%edx, %esi, %eax
-	addl	%edi, %eax
-	cmpl	$7, %eax
-	setae	%al
-	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shrxl	%edx, %esi, %eax
 	orl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrxl	%edx, %esi, %eax
 	addl	%edi, %eax
 	sete	%al

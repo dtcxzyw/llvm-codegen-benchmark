@@ -4,7 +4,7 @@ func0000000000000007:                   # @func0000000000000007
 	leal	(%rdx,%rdi), %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	movzbl	%dl, %eax
-	orl	%esi, %eax
-	addl	%edi, %eax
+	andl	$-2048, %edx                    # imm = 0xF800
+	orl	%esi, %edx
+	leal	(%rdx,%rdi), %eax
 	retq

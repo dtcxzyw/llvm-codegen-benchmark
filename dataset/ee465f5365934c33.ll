@@ -1,7 +1,7 @@
 
-%"class.std::complex.2726875" = type { { double, double } }
+%"class.std::complex.2839348" = type { { double, double } }
 
-; 19 occurrences:
+; 20 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -11,6 +11,7 @@
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll
+; linux/optimized/sem.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtinsert.ll
@@ -41,7 +42,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = getelementptr i64, ptr %0, i64 %4
   ret ptr %5
 }
@@ -56,7 +57,6 @@ entry:
 ; cmake/optimized/zstd_lazy.c.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; gromacs/optimized/dump.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
@@ -77,8 +77,9 @@ entry:
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; hyperscan/optimized/ng_stop.cpp.ll
 ; icu/optimized/unames.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; libjpeg-turbo/optimized/transupp.c.ll
+; libquic/optimized/curve25519.c.ll
 ; lief/optimized/ssl_tls.c.ll
 ; lief/optimized/ssl_tls12_client.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
@@ -87,8 +88,8 @@ entry:
 ; llvm/optimized/RISCVDisassembler.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-i386.cc.ll
@@ -204,29 +205,27 @@ entry:
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 8 occurrences:
-; gromacs/optimized/dispersioncorrection.cpp.ll
+; 6 occurrences:
 ; gromacs/optimized/pme_spread.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; opencv/optimized/decodermgr.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
-; openspiel/optimized/bridge_uncontested_bidding.cc.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 4
-  %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -249,7 +248,8 @@ entry:
   ret ptr %5
 }
 
-; 20 occurrences:
+; 22 occurrences:
+; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -269,13 +269,39 @@ entry:
 ; redis/optimized/ckh.sym.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; yosys/optimized/fstapi.ll
+; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw %"class.std::complex.2726875", ptr %0, i64 %4
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr nusw %"class.std::complex.2839348", ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; abc/optimized/giaNf.c.ll
+; gromacs/optimized/dispersioncorrection.cpp.ll
+; openspiel/optimized/bridge_uncontested_bidding.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 1
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; gromacs/optimized/domdec_specatomcomm.cpp.ll
+; z3/optimized/dd_bdd.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 5
+  %4 = or i64 %3, %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -285,7 +311,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }

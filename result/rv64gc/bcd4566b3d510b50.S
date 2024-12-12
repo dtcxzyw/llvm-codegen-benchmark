@@ -1,16 +1,10 @@
 func0000000000000003:                   # @func0000000000000003
-	sext.w	a1, a1
 	andi	a0, a0, 1
-	beqz	a1, .LBB0_2
-	li	a1, 65
+	sext.w	a1, a1
+	snez	a1, a1
 	addi	a0, a0, -1
-	andi	a0, a0, 16
-	or	a0, a0, a1
-	ret
-.LBB0_2:
-	li	a1, 1
-	addi	a0, a0, -1
-	andi	a0, a0, 16
+	slli	a1, a1, 13
+	andi	a0, a0, 2
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002

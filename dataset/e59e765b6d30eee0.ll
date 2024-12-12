@@ -1,6 +1,5 @@
 
-; 38 occurrences:
-; git/optimized/diffcore-rename.ll
+; 37 occurrences:
 ; icu/optimized/serv.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/mlme.ll
@@ -39,7 +38,7 @@
 ; wireshark/optimized/packet-prp.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 240
   %3 = icmp eq i16 %2, 32
@@ -60,7 +59,7 @@ entry:
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32
   %3 = icmp eq i16 %2, 0
@@ -72,11 +71,11 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000198(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 256
   %3 = icmp ne i16 %2, 0
-  %4 = icmp ugt i16 %0, 255
+  %4 = icmp samesign ugt i16 %0, 255
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -84,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -2
   %3 = icmp eq i16 %2, 6
@@ -99,7 +98,7 @@ entry:
 ; openusd/optimized/patchBuilder.cpp.ll
 ; wireshark/optimized/packet-nhrp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16
   %3 = icmp ne i16 %2, 0
@@ -113,7 +112,7 @@ entry:
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0

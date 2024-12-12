@@ -1,73 +1,13 @@
 
-%"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.2490375" = type { i32, i32, i32, i32, i32, i32, i8, i8, [6 x i8], [32 x i8] }
-%"struct.asmjit::_abi_1_10::RATiedReg.2492354" = type { i32, i32, i32, %union.anon.6.2492356, i32, i32, i32, i32 }
-%union.anon.6.2492356 = type { i32 }
-%struct.rx_pkt_history_st.2519810 = type { %struct.ossl_list_st_uint_set.2519811, i64 }
-%struct.ossl_list_st_uint_set.2519811 = type { ptr, ptr, i64 }
-%struct.transaction.2591619 = type { i32, i16, i16, [8 x i8] }
-%struct.SCC2698Block.2593367 = type { i8, i8 }
-%"class.llvm::InterferenceCache::Entry.2980168" = type { %"class.llvm::MCRegister.2980169", i32, i32, ptr, ptr, ptr, %"class.llvm::SlotIndex.2980141", %"class.llvm::SmallVector.2980170", %"class.llvm::SmallVector.0.2980171" }
-%"class.llvm::MCRegister.2980169" = type { i32 }
-%"class.llvm::SlotIndex.2980141" = type { %"class.llvm::PointerIntPair.2980142" }
-%"class.llvm::PointerIntPair.2980142" = type { %"struct.llvm::detail::PunnedPointer.2980143" }
-%"struct.llvm::detail::PunnedPointer.2980143" = type { [8 x i8] }
-%"class.llvm::SmallVector.2980170" = type { %"class.llvm::SmallVectorImpl.2980172", %"struct.llvm::SmallVectorStorage.2980173" }
-%"class.llvm::SmallVectorImpl.2980172" = type { %"class.llvm::SmallVectorTemplateBase.2980174" }
-%"class.llvm::SmallVectorTemplateBase.2980174" = type { %"class.llvm::SmallVectorTemplateCommon.2980175" }
-%"class.llvm::SmallVectorTemplateCommon.2980175" = type { %"class.llvm::SmallVectorBase.2980156" }
-%"class.llvm::SmallVectorBase.2980156" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.2980173" = type { [448 x i8] }
-%"class.llvm::SmallVector.0.2980171" = type { %"class.llvm::SmallVectorImpl.1.2980176", %"struct.llvm::SmallVectorStorage.4.2980177" }
-%"class.llvm::SmallVectorImpl.1.2980176" = type { %"class.llvm::SmallVectorTemplateBase.2.2980178" }
-%"class.llvm::SmallVectorTemplateBase.2.2980178" = type { %"class.llvm::SmallVectorTemplateCommon.3.2980179" }
-%"class.llvm::SmallVectorTemplateCommon.3.2980179" = type { %"class.llvm::SmallVectorBase.2980156" }
-%"struct.llvm::SmallVectorStorage.4.2980177" = type { [192 x i8] }
+%"struct.asmjit::_abi_1_10::RATiedReg.2607775" = type { i32, i32, i32, %union.anon.6.2607777, i32, i32, i32, i32 }
+%union.anon.6.2607777 = type { i32 }
+%struct.ge_cached.2634118 = type { [10 x i32], [10 x i32], [10 x i32], [10 x i32] }
+%struct.rx_pkt_history_st.2634601 = type { %struct.ossl_list_st_uint_set.2634602, i64 }
+%struct.ossl_list_st_uint_set.2634602 = type { ptr, ptr, i64 }
+%struct.transaction.2705455 = type { i32, i16, i16, [8 x i8] }
+%struct.SCC2698Block.2707066 = type { i8, i8 }
 
-; 35 occurrences:
-; casadi/optimized/function_internal.cpp.ll
-; clamav/optimized/aspack.c.ll
-; folly/optimized/ThreadedExecutor.cpp.ll
-; graphviz/optimized/input.c.ll
-; grpc/optimized/call.cc.ll
-; image-rs/optimized/244uszkx0e8t5ie1.ll
-; image-rs/optimized/2s4mh02dvph60euq.ll
-; image-rs/optimized/5ez7udly19o3uj1p.ll
-; image-rs/optimized/ptscn4jakoj4p9m.ll
-; libwebp/optimized/filter_enc.c.ll
-; libwebp/optimized/quant_enc.c.ll
-; llvm/optimized/HWAddressSanitizer.cpp.ll
-; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
-; llvm/optimized/X86RegisterInfo.cpp.ll
-; minetest/optimized/CGUIButton.cpp.ll
-; minetest/optimized/clientmap.cpp.ll
-; minetest/optimized/mapblock_mesh.cpp.ll
-; minetest/optimized/voxelalgorithms.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; openssl/optimized/libcrypto-lib-curve25519.ll
-; openssl/optimized/libcrypto-shlib-curve25519.ll
-; openssl/optimized/libssl-lib-quic_ackm.ll
-; openssl/optimized/libssl-shlib-quic_ackm.ll
-; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
-; proxygen/optimized/Service.cpp.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
-; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
-; tokio-rs/optimized/26wlg4yx86ilo6a1.ll
-; typst-rs/optimized/26ex1w19ixz6ifuk.ll
-; velox/optimized/ArrayDuplicates.cpp.ll
-; velox/optimized/HashStringAllocator.cpp.ll
-; velox/optimized/SubscriptUtil.cpp.ll
-; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
-; z3/optimized/dl_rule_transformer.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.2490375"], ptr %0, i64 0, i64 %2, i32 4
-  ret ptr %3
-}
-
-; 69 occurrences:
+; 80 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
@@ -97,6 +37,9 @@ entry:
 ; libquic/optimized/quic_write_blocked_list.cc.ll
 ; libwebp/optimized/vp8_dec.c.ll
 ; lief/optimized/ssl_ticket.c.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; llvm/optimized/InterferenceCache.cpp.ll
+; llvm/optimized/RewriteRope.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/OptimizeDeadStore.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -137,26 +80,88 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr [1 x %"struct.asmjit::_abi_1_10::RATiedReg.2492354"], ptr %0, i64 0, i64 %2, i32 2
+  %3 = getelementptr nuw [1 x %"struct.asmjit::_abi_1_10::RATiedReg.2607775"], ptr %0, i64 0, i64 %2, i32 2
   ret ptr %3
 }
 
-; 2 occurrences:
+; 43 occurrences:
+; casadi/optimized/function_internal.cpp.ll
+; clamav/optimized/aspack.c.ll
+; folly/optimized/ThreadedExecutor.cpp.ll
+; graphviz/optimized/input.c.ll
+; grpc/optimized/call.cc.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; image-rs/optimized/2s4mh02dvph60euq.ll
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; image-rs/optimized/ptscn4jakoj4p9m.ll
+; libwebp/optimized/filter_enc.c.ll
+; libwebp/optimized/quant_enc.c.ll
+; llvm/optimized/HWAddressSanitizer.cpp.ll
+; llvm/optimized/InterferenceCache.cpp.ll
+; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
+; llvm/optimized/X86RegisterInfo.cpp.ll
+; minetest/optimized/CGUIButton.cpp.ll
+; minetest/optimized/clientmap.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
+; minetest/optimized/voxelalgorithms.cpp.ll
+; openssl/optimized/libcrypto-lib-curve25519.ll
+; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openssl/optimized/libssl-lib-quic_ackm.ll
 ; openssl/optimized/libssl-shlib-quic_ackm.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodetxb.c.ll
+; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
+; proxygen/optimized/Service.cpp.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
+; tokio-rs/optimized/26wlg4yx86ilo6a1.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; z3/optimized/dl_rule_transformer.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr [3 x %struct.rx_pkt_history_st.2519810], ptr %0, i64 0, i64 %2, i32 0, i32 2
+  %3 = getelementptr nuw [8 x %struct.ge_cached.2634118], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
-; 12 occurrences:
+; 4 occurrences:
+; openssl/optimized/libssl-lib-quic_ackm.ll
+; openssl/optimized/libssl-shlib-quic_ackm.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = getelementptr [3 x %struct.rx_pkt_history_st.2634601], ptr %0, i64 0, i64 %2, i32 0, i32 2
+  ret ptr %3
+}
+
+; 19 occurrences:
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
 ; meilisearch-rs/optimized/58fku9bygcs6t7yq.ll
@@ -166,9 +171,16 @@ entry:
 ; ockam-rs/optimized/274k60s1efyiyv8u.ll
 ; ockam-rs/optimized/2zpb9qmdbtl1z92t.ll
 ; ockam-rs/optimized/xqqthbl2d203wsg.ll
+; turborepo-rs/optimized/93lva917qa673k3vktayo9ds8.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wireshark/optimized/packet-oscore.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/7jaiv08yt9hrplelvkk8jyr6y.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i8 %1) #0 {
 entry:
@@ -206,17 +218,16 @@ entry:
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr [4 x %struct.transaction.2591619], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [4 x %struct.transaction.2705455], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; linux/optimized/8139too.ll
-; linux/optimized/8250_pcilib.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/blk-flush.ll
 ; linux/optimized/cdrom.ll
@@ -236,34 +247,10 @@ entry:
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr [4 x %struct.SCC2698Block.2593367], ptr %0, i64 0, i64 %2, i32 1
-  ret ptr %3
-}
-
-; 3 occurrences:
-; llvm/optimized/AddressSanitizer.cpp.ll
-; llvm/optimized/InterferenceCache.cpp.ll
-; llvm/optimized/RewriteRope.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i64
-  %3 = getelementptr [32 x %"class.llvm::InterferenceCache::Entry.2980168"], ptr %0, i64 0, i64 %2, i32 2
-  ret ptr %3
-}
-
-; 3 occurrences:
-; llvm/optimized/InterferenceCache.cpp.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodetxb.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001b(ptr %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr [32 x %"class.llvm::InterferenceCache::Entry.2980168"], ptr %0, i64 0, i64 %2, i32 7
+  %3 = getelementptr [4 x %struct.SCC2698Block.2707066], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 

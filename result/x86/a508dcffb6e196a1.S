@@ -3,17 +3,12 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rdi, %rax
 	sete	%al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	movl	%edi, %eax
 	addq	%rsi, %rax
 	setne	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
-	movl	%edi, %eax
-	addq	%rsi, %rax
-	setns	%al
-	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000008a:                   # @func000000000000008a
 	movl	%edi, %eax
 	addq	%rsi, %rax
 	setns	%al

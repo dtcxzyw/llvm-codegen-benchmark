@@ -1,10 +1,11 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/InterleavedLoadCombinePass.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; qemu/optimized/hw_riscv_numa.c.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind

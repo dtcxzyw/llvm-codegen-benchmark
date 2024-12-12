@@ -6,13 +6,13 @@ func0000000000000001:                   # @func0000000000000001
 	binvi	a0, a0, 14
 	seqz	a0, a0
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	add	a1, a1, a2
 	add	a0, a0, a1
 	not	a0, a0
 	bexti	a0, a0, 11
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	seqz	a0, a0
@@ -22,13 +22,7 @@ func000000000000000c:                   # @func000000000000000c
 	addw	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000000f1:                   # @func00000000000000f1
-	add	a1, a1, a2
-	add	a0, a0, a1
-	not	a0, a0
-	bexti	a0, a0, 31
-	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	add	a1, a1, a2
 	li	a2, 63
 	add	a0, a0, a1
@@ -37,22 +31,11 @@ func0000000000000048:                   # @func0000000000000048
 	bseti	a1, zero, 63
 	sltu	a0, a1, a0
 	ret
-func00000000000000f4:                   # @func00000000000000f4
-	add	a1, a1, a2
-	lui	a2, 16
-	add	a0, a0, a1
-	lui	a1, 4
-	addiw	a2, a2, -8
-	and	a0, a0, a2
-	addiw	a1, a1, 1192
-	sltu	a0, a0, a1
-	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000001e1:                   # @func00000000000001e1
 	add	a1, a1, a2
 	add	a0, a0, a1
-	zext.h	a0, a0
-	sltiu	a0, a0, 2045
-	xori	a0, a0, 1
+	andi	a0, a0, 248
+	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
@@ -61,13 +44,13 @@ func0000000000000008:                   # @func0000000000000008
 	bseti	a1, zero, 34
 	sltu	a0, a1, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	add	a1, a1, a2
 	add	a0, a0, a1
 	andi	a0, a0, 63
 	seqz	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	add	a1, a1, a2
 	li	a2, 63
 	add	a0, a0, a1

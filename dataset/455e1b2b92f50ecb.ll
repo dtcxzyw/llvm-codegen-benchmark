@@ -1,6 +1,7 @@
 
-; 32 occurrences:
+; 38 occurrences:
 ; abc/optimized/fraigMan.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; clamav/optimized/crtmgr.c.ll
 ; darktable/optimized/camera.c.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
@@ -8,6 +9,11 @@
 ; gromacs/optimized/lincs.cpp.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; linux/optimized/cpuset.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUIStaticText.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll

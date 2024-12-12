@@ -1,5 +1,5 @@
 
-; 238 occurrences:
+; 239 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -89,6 +89,7 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -239,11 +240,11 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = icmp slt i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
@@ -259,8 +260,8 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -283,11 +284,11 @@ entry:
 ; redis/optimized/redis-cli.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -313,12 +314,13 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/src.ll
 ; cvc5/optimized/addition.cpp.ll
 ; cvc5/optimized/bv_inverter_utils.cpp.ll
 ; cvc5/optimized/eq_proof.cpp.ll
@@ -335,11 +337,11 @@ entry:
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -351,12 +353,27 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = icmp ult i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
-; 65 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
+; postgres/optimized/d2s.ll
+; postgres/optimized/d2s_shlib.ll
+; postgres/optimized/d2s_srv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000029(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %1, %3
+  %5 = icmp uge i32 %0, %4
+  ret i1 %5
+}
+
+; 64 occurrences:
 ; cvc5/optimized/addition.cpp.ll
 ; cvc5/optimized/arith_ite_utils.cpp.ll
 ; cvc5/optimized/bv_intro_pow2.cpp.ll
@@ -413,7 +430,6 @@ entry:
 ; gromacs/optimized/genhydro.cpp.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; icu/optimized/utrie2_builder.ll
-; linux/optimized/dns_key.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/slamch.c.ll
@@ -423,23 +439,24 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/ConversionChecker.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -449,43 +466,30 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = icmp uge i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp ule i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; cvc5/optimized/term_database_sygus.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = icmp ne i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; cvc5/optimized/node_algorithm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = icmp ult i32 %4, %0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; postgres/optimized/d2s.ll
-; postgres/optimized/d2s_shlib.ll
-; postgres/optimized/d2s_srv.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = icmp ule i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -495,8 +499,8 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = icmp ne i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 
@@ -506,8 +510,8 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = icmp slt i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 

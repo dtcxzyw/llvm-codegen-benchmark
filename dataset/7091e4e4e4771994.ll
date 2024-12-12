@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; arrow/optimized/grouper.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -15,7 +15,6 @@
 ; openjdk/optimized/hb-common.ll
 ; openusd/optimized/evalUtils.cpp.ll
 ; php/optimized/memory.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; proj/optimized/transformation.cpp.ll
 ; ruby/optimized/prism.ll
@@ -30,7 +29,9 @@ entry:
   ret i1 %6
 }
 
-; 18 occurrences:
+; 20 occurrences:
+; boost/optimized/query_rule.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/json_writer.cpp.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; cpython/optimized/traceback.ll
@@ -59,7 +60,7 @@ entry:
   ret i1 %6
 }
 
-; 187 occurrences:
+; 186 occurrences:
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
@@ -164,7 +165,6 @@ entry:
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -253,7 +253,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = icmp ult i64 %4, 8
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -274,14 +274,20 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = icmp sgt i64 %4, -3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 110 occurrences:
+; 114 occurrences:
 ; abseil-cpp/optimized/parse.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/shell.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/value_semantic.ll
 ; clamav/optimized/regcomp.c.ll
 ; cmake/optimized/cmQtAutoGenerator.cxx.ll
 ; cmake/optimized/cmStringReplaceHelper.cxx.ll
@@ -362,9 +368,7 @@ entry:
 ; nix/optimized/git-utils.ll
 ; nix/optimized/hilite.ll
 ; nix/optimized/local-derivation-goal.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/search.ll
 ; nix/optimized/util.ll
 ; node/optimized/libnode.node_blob.ll
@@ -395,13 +399,12 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = icmp eq i64 %4, 40
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 25 occurrences:
+; 23 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
-; clamav/optimized/uuencode.c.ll
 ; cmake/optimized/cmIncludeCommand.cxx.ll
 ; cmake/optimized/cmInstallProgramsCommand.cxx.ll
 ; cmake/optimized/cmUnsetCommand.cxx.ll
@@ -420,7 +423,6 @@ entry:
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/face_alignment.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
-; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/session.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; wireshark/optimized/packet-dbus.c.ll
@@ -432,6 +434,30 @@ entry:
   %4 = sub i64 %3, %1
   %5 = icmp ugt i64 %4, 64
   %6 = or i1 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; php/optimized/pcre2_dfa_match.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = icmp samesign ugt i64 %4, 4999999
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = icmp samesign ult i64 %4, 8
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

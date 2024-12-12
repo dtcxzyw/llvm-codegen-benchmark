@@ -3,10 +3,10 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 0, %0
   %6 = icmp eq i64 %4, %5
   ret i1 %6
@@ -16,10 +16,10 @@ entry:
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   %6 = icmp ugt i64 %5, 1152921504606846975
   ret i1 %6
@@ -30,10 +30,10 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add i64 %4, %0
   %6 = icmp ugt i64 %5, 4294967295
   ret i1 %6

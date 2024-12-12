@@ -47,6 +47,18 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; regex-rs/optimized/1x04d8372kemp7hd.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i16
+  %3 = trunc i64 %0 to i16
+  %4 = icmp eq i16 %3, %2
+  ret i1 %4
+}
+
 ; 4 occurrences:
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll

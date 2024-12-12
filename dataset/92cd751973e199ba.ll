@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-lib-a_time.ll
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = or disjoint i64 %0, 1
@@ -26,7 +26,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
 ; yosys/optimized/simplemap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = or disjoint i64 %0, 1
@@ -34,14 +34,13 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; icu/optimized/rbbitblb.ll
-; linux/optimized/intel_mocs.ll
 ; llvm/optimized/Minidump.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -51,11 +50,11 @@ entry:
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = or disjoint i64 %0, 1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -126,10 +125,33 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = or disjoint i64 %0, 15
+  %4 = icmp samesign ult i64 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; darktable/optimized/ArwDecoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000075(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = or disjoint i64 %0, 4
+  %4 = icmp samesign ule i64 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; darktable/optimized/ArwDecoder.cpp.ll
+; darktable/optimized/SamsungV0Decompressor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = or disjoint i64 %0, 1
   %4 = icmp ult i64 %3, %2
   ret i1 %4
 }
@@ -139,27 +161,16 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000035(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = or disjoint i64 %0, 4
-  %4 = icmp ule i64 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; darktable/optimized/ArwDecoder.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i32 %1) #0 {
-entry:
   %2 = zext i32 %1 to i64
   %3 = or disjoint i64 %0, 4
-  %4 = icmp ule i64 %3, %2
+  %4 = icmp samesign ule i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = or disjoint i64 %0, 1
@@ -170,22 +181,33 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = or disjoint i64 %0, 4
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/Minidump.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = or disjoint i64 %0, 15
+  %4 = icmp ult i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000079(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = or disjoint i64 %0, 1
-  %4 = icmp uge i64 %3, %2
+  %4 = icmp samesign uge i64 %3, %2
   ret i1 %4
 }
 

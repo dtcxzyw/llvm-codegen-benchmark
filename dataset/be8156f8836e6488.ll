@@ -16,9 +16,10 @@ entry:
   ret ptr %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; arrow/optimized/io_util.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libsodium/optimized/libsodium_la-utils.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll

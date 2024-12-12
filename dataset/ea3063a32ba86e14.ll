@@ -12,12 +12,11 @@ entry:
   ret i128 %7
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -93,7 +92,7 @@ entry:
 define i128 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -7070675565921424023
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = zext i64 %4 to i128
   %6 = zext i64 %0 to i128
   %7 = mul nuw i128 %6, %5

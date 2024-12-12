@@ -1,22 +1,15 @@
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	mov	w8, #3801                       // =0xed9
-	sshll2	v1.2d, v0.4s, #1
-	sshll	v0.2d, v0.2s, #1
-	dup	v2.2d, x8
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
+                                        // kill: def $w0 killed $w0 def $x0
+	sbfiz	x8, x0, #3, #32
+	sub	x0, x8, #4
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mvni	v1.4s, #52
-	mov	w8, #1                          // =0x1
-	dup	v3.2d, x8
-	add	v0.4s, v0.4s, v1.4s
-	sshll	v2.2d, v0.2s, #1
-	sshll2	v0.2d, v0.4s, #1
-	orr	v1.16b, v0.16b, v3.16b
-	orr	v0.16b, v2.16b, v3.16b
+	sub	w8, w0, #53
+	mov	w9, #1                          // =0x1
+	sxtw	x8, w8
+	orr	x0, x9, x8, lsl #1
 	ret
                                         // -- End function

@@ -1,7 +1,8 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -424,7 +425,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(float %0) #0 {
+define i1 @func0000000000000018(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = and i32 %1, 2130706432
@@ -437,7 +438,7 @@ entry:
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(float %0) #0 {
+define i1 @func0000000000000014(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = and i32 %1, 4194304

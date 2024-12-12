@@ -1,6 +1,12 @@
 
-; 51 occurrences:
+; 60 occurrences:
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
 ; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
@@ -38,19 +44,22 @@
 ; openjdk/optimized/psParallelCompact.ll
 ; php/optimized/http_fopen_wrapper.ll
 ; php/optimized/tar.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; rocksdb/optimized/block_based_table_iterator.cc.ll
 ; rust-analyzer-rs/optimized/4o4li8dzw61k3tqx.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rust-analyzer-rs/optimized/sdlo5r5xb34d3pv.ll
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
 ; sqlite/optimized/sqlite3.ll
-; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wasmtime-rs/optimized/27pp1heeu8t47xv3.ll
 ; wireshark/optimized/packet-mtp2.c.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i1 %1, i1 %2) #0 {
 entry:

@@ -1,6 +1,8 @@
 
-; 35 occurrences:
+; 37 occurrences:
 ; assimp/optimized/MS3DLoader.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
 ; bullet3/optimized/btSoftBodyConcaveCollisionAlgorithm.ll
 ; darktable/optimized/introspection_borders.c.ll
@@ -63,7 +65,8 @@ entry:
   ret i32 %2
 }
 
-; 23 occurrences:
+; 24 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -153,7 +156,7 @@ entry:
   ret i32 %2
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; gromacs/optimized/slaev2.cpp.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
@@ -167,6 +170,8 @@ entry:
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; pbrt-v4/optimized/transform.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(float %0) #0 {
 entry:

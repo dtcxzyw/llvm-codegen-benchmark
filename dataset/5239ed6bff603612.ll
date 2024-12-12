@@ -38,7 +38,7 @@ entry:
   %3 = lshr i64 %2, 29
   %4 = trunc i64 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }

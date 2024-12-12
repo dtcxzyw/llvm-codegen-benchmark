@@ -32,7 +32,7 @@ entry:
   ret i64 %4
 }
 
-; 53 occurrences:
+; 51 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/amaze.cc.ll
@@ -53,7 +53,6 @@ entry:
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -83,7 +82,6 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
-; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/ftype-ipv4.c.ll
 ; wireshark/optimized/packet-iso15765.c.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -32,16 +32,20 @@
 ; spike/optimized/vector_unit.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 6.000000e+02
   %3 = select i1 %2, float 6.000000e+02, float %1
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 
-; 45 occurrences:
+; 48 occurrences:
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_mouse_joint.cpp.ll
 ; bullet3/optimized/btContactConstraint.ll
@@ -92,7 +96,7 @@ define float @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0x3BC79CA100000000
   %3 = select i1 %2, float 0x3BC79CA100000000, float %1
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 
@@ -117,7 +121,7 @@ define float @func0000000000000008(float %0, float %1) #0 {
 entry:
   %2 = fcmp oeq float %1, 0.000000e+00
   %3 = select i1 %2, float 0.000000e+00, float %1
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 
@@ -139,7 +143,7 @@ define float @func000000000000000c(float %0, float %1) #0 {
 entry:
   %2 = fcmp oge float %1, 1.000000e+00
   %3 = select i1 %2, float 1.000000e+00, float %1
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 

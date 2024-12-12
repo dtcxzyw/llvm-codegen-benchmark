@@ -12,6 +12,30 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000015(i32 %0) #0 {
+entry:
+  %1 = trunc nsw i32 %0 to i16
+  %2 = add nsw i16 %1, 55
+  %3 = udiv i16 %2, 56
+  %4 = zext nneg i16 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_anim.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = trunc i32 %0 to i16
+  %2 = add i16 %1, 5
+  %3 = udiv i16 %2, 10
+  %4 = zext nneg i16 %3 to i32
+  ret i32 %4
+}
+
 ; 2 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; oiio/optimized/ddsinput.cpp.ll

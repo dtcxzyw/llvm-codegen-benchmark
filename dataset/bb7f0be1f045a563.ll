@@ -12,8 +12,7 @@ entry:
   ret i64 %7
 }
 
-; 10 occurrences:
-; abc/optimized/bdcSpfd.c.ll
+; 9 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; git/optimized/pack-bitmap.ll
 ; linux/optimized/libata-core.ll
@@ -42,7 +41,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 19
   %4 = and i64 %3, 1125899906842624
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = and i64 %1, 576460752303423488
   %7 = or i64 %5, %6
   ret i64 %7

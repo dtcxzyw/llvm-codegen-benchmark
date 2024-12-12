@@ -1,9 +1,8 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; hdf5/optimized/H5Tinit_float.c.ll
-; hyperscan/optimized/accel.c.ll
 ; hyperscan/optimized/flood_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; lief/optimized/asn1parse.c.ll
@@ -28,11 +27,21 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; linux/optimized/hwregs.ll
+; 3 occurrences:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %1, %2
+  %4 = icmp samesign ugt i8 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; linux/optimized/hwregs.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i8 %0, i8 %1, i8 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
@@ -7,6 +7,7 @@
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -43,7 +44,6 @@ entry:
 
 ; 9 occurrences:
 ; libquic/optimized/dtls_record.c.ll
-; linux/optimized/nvram.ll
 ; meshlab/optimized/miniz.c.ll
 ; php/optimized/zip.ll
 ; qdrant-rs/optimized/49gep1elv33vxlrq.ll
@@ -51,6 +51,7 @@ entry:
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/wtap.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
@@ -60,11 +61,12 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; qdrant-rs/optimized/49gep1elv33vxlrq.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
@@ -74,10 +76,22 @@ entry:
   ret i8 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; lvgl/optimized/lv_color.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000012(i16 %0, i16 %1) #0 {
+entry:
+  %2 = add nuw i16 %0, %1
+  %3 = lshr i16 %2, 8
+  %4 = trunc nuw i16 %3 to i8
+  ret i8 %4
+}
+
+; 4 occurrences:
 ; qdrant-rs/optimized/49gep1elv33vxlrq.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:

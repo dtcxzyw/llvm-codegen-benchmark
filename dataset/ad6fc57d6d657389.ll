@@ -12,10 +12,10 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; clamav/optimized/str.c.ll
 ; cmake/optimized/archive_read_support_filter_compress.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/random.cpp.ll
@@ -93,7 +93,7 @@ entry:
   ret i32 %3
 }
 
-; 97 occurrences:
+; 93 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -105,14 +105,12 @@ entry:
 ; csmith/optimized/DefaultRndNumGenerator.cpp.ll
 ; cvc5/optimized/bv_inverter.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; icu/optimized/cstring.ll
 ; libquic/optimized/e_ssl3.c.ll
 ; libquic/optimized/e_tls.c.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/dm-stripe.ll
 ; linux/optimized/dm.ll
 ; linux/optimized/ialloc.ll
@@ -165,7 +163,6 @@ entry:
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogarchive.ll
-; postgres/optimized/xlogbackup.ll
 ; postgres/optimized/xlogfuncs.ll
 ; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll
@@ -173,7 +170,6 @@ entry:
 ; proxygen/optimized/HeaderTable.cpp.ll
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/nbd_client.c.ll
 ; quickjs/optimized/libbf.ll
 ; raylib/optimized/rmodels.c.ll
@@ -199,10 +195,11 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; cpython/optimized/Hacl_Hash_SHA3.ll
 ; cpython/optimized/obmalloc.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/blk-settings.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; mimalloc/optimized/arena.c.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll

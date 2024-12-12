@@ -47,7 +47,7 @@ entry:
   ret i8 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -55,6 +55,7 @@ entry:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; postgres/optimized/clog.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind

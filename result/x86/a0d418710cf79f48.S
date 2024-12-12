@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rdx, %rax
 	sete	%al
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	subq	%rdi, %rdx
 	movl	%esi, %eax
 	addq	%rdx, %rax
@@ -18,7 +18,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$65536, %rax                    # imm = 0x10000
 	setae	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	subq	%rdi, %rdx
 	movl	%esi, %eax
 	addq	%rdx, %rax

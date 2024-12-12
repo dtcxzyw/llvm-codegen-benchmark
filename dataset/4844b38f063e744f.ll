@@ -12,8 +12,10 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:

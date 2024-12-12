@@ -6,7 +6,7 @@
 	.long	4293853184                      # 0xffef0000
 .LCPI0_3:
 	.long	4293855232                      # 0xffef0800
-func00000000000001d4:                   # @func00000000000001d4
+func00000000000003a4:                   # @func00000000000003a4
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpxord	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0

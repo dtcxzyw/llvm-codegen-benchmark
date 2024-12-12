@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
+; lvgl/optimized/lv_flex.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:

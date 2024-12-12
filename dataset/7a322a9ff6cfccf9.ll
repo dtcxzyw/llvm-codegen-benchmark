@@ -12,7 +12,7 @@ entry:
   %2 = xor i1 %1, %0
   %3 = zext i1 %2 to i8
   %4 = xor i1 %1, true
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   %6 = select i1 %5, i8 -1, i8 %3
   ret i8 %6
 }

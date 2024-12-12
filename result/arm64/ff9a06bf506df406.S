@@ -6,8 +6,8 @@ func0000000000000003:                   // @func0000000000000003
 	movk	x8, #11787, lsl #48
 	umulh	x9, x2, x8
 	mul	x8, x2, x8
-	eor	x1, x9, x1
-	eor	x0, x8, x0
+	eor	x1, x1, x9
+	eor	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
@@ -18,8 +18,8 @@ func0000000000000002:                   // @func0000000000000002
 	movk	x8, #40415, lsl #48
 	umulh	x9, x2, x8
 	mul	x8, x2, x8
-	eor	x1, x9, x1
-	eor	x0, x8, x0
+	eor	x1, x1, x9
+	eor	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
@@ -30,7 +30,7 @@ func0000000000000007:                   // @func0000000000000007
 	movk	x8, #22609, lsl #48
 	umulh	x9, x2, x8
 	mul	x8, x2, x8
-	eor	x1, x9, x1
-	eor	x0, x8, x0
+	eor	x1, x1, x9
+	eor	x0, x0, x8
 	ret
                                         // -- End function

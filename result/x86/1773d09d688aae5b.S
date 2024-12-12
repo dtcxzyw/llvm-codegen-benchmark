@@ -14,6 +14,11 @@ func0000000000000007:                   # @func0000000000000007
 	shlq	$32, %rdi
 	orq	%rdi, %rax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	imull	$1512728442, %esi, %eax         # imm = 0x5A2A677A
+	shlq	$32, %rdi
+	orq	%rdi, %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	leal	(%rsi,%rsi,8), %eax
 	leal	(%rsi,%rax,4), %eax

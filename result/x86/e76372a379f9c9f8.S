@@ -24,5 +24,5 @@ func000000000000000a:                   # @func000000000000000a
 	vmovsd	.LCPI2_0(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [1.0E+2,0.0E+0]
 	vmovsd	.LCPI2_1(%rip), %xmm2           # xmm2 = [1.0E+1,0.0E+0]
 	vmaxsd	%xmm1, %xmm2, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	retq

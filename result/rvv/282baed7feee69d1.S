@@ -27,7 +27,7 @@ func000000000000000a:                   # @func000000000000000a
 	vmv.v.i	v8, -1
 	vnot.v	v8, v10, v0.t
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgtu.vi	v0, v8, 2
 	vmv.v.i	v8, 0

@@ -1,5 +1,10 @@
 
-; 18 occurrences:
+; 20 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; opencv/optimized/motion_deblur_filter.cpp.ll
 ; openjdk/optimized/cmsvirt.ll
@@ -9,12 +14,9 @@
 ; proj/optimized/eck4.cpp.ll
 ; proj/optimized/factors.cpp.ll
 ; proj/optimized/isea.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/putp2.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/analyticeuropeanvasicekengine.ll
 ; quantlib/optimized/blackformula.ll
 ; quantlib/optimized/perturbativebarrieroptionengine.ll

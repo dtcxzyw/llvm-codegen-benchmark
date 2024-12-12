@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000045:                   # @func0000000000000045
 	imull	$1461, %esi, %eax               # imm = 0x5B5
 	sarl	$2, %eax
 	movslq	%esi, %rcx
@@ -10,7 +10,7 @@ func0000000000000041:                   # @func0000000000000041
 	addl	%edi, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000041:                   # @func0000000000000041
 	imull	$1461, %esi, %eax               # imm = 0x5B5
 	sarl	$2, %eax
 	movslq	%esi, %rcx

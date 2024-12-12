@@ -12,8 +12,12 @@ entry:
   ret i64 %5
 }
 
-; 59 occurrences:
+; 62 occurrences:
 ; assimp/optimized/unzip.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/context.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/iso9660.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -24,7 +28,6 @@ entry:
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
-; hyperscan/optimized/rose_build_program.cpp.ll
 ; linux/optimized/skcipher.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll

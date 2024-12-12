@@ -13,14 +13,14 @@ func0000000000000000:                   # @func0000000000000000
 	vzeroupper
 	retq
 .LCPI2_0:
-	.short	62                              # 0x3e
-	.short	62                              # 0x3e
-	.short	62                              # 0x3e
-	.short	62                              # 0x3e
-	.short	62                              # 0x3e
-	.short	62                              # 0x3e
-	.short	62                              # 0x3e
-	.short	62                              # 0x3e
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
 func0000000000000015:                   # @func0000000000000015
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

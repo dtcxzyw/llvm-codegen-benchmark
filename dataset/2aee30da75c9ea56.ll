@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
+; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll

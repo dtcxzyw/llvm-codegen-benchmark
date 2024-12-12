@@ -12,7 +12,8 @@ entry:
   ret i128 %6
 }
 
-; 100 occurrences:
+; 101 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -121,6 +122,19 @@ entry:
   %4 = zext i1 %0 to i64
   %5 = add nuw i64 %4, %3
   %6 = zext i64 %5 to i128
+  ret i128 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000037(i1 %0, i128 %1) #0 {
+entry:
+  %2 = lshr i128 %1, 64
+  %3 = trunc nuw nsw i128 %2 to i64
+  %4 = zext i1 %0 to i64
+  %5 = add nuw nsw i64 %4, %3
+  %6 = zext nneg i64 %5 to i128
   ret i128 %6
 }
 

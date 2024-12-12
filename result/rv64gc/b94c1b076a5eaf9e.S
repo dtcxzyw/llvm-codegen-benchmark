@@ -14,6 +14,15 @@ func0000000000000008:                   # @func0000000000000008
 .LBB1_2:                                # %entry
 	mv	a0, a2
 	ret
+func0000000000000004:                   # @func0000000000000004
+	srli	a0, a0, 32
+	beqz	a0, .LBB2_2
+	li	a0, 1
+	ret
+.LBB2_2:
+	slli	a0, a1, 32
+	srli	a0, a0, 32
+	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 32
 	slti	a0, a0, 1
@@ -21,11 +30,18 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
-	li	a2, 16
-	bltu	a0, a2, .LBB3_2
-	li	a0, 8
+func0000000000000014:                   # @func0000000000000014
+	li	a2, 96
+	bltu	a0, a2, .LBB4_2
+	li	a0, 48
 	ret
-.LBB3_2:
-	andi	a0, a1, 60
+.LBB4_2:
+	andi	a0, a1, 127
+	ret
+func0000000000000018:                   # @func0000000000000018
+	sltiu	a0, a0, 101
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	slli	a0, a0, 32
+	srli	a0, a0, 32
 	ret

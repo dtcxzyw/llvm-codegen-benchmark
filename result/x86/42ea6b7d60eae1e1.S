@@ -16,7 +16,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$2, %esi
 	cmovbl	%edi, %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movl	%edi, %eax
 	shrl	$16, %eax
 	testl	%esi, %esi

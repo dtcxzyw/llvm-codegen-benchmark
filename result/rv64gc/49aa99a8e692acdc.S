@@ -1,18 +1,14 @@
 func0000000000000006:                   # @func0000000000000006
-	andi	a0, a0, 1
-	bnez	a0, .LBB0_2
-	li	a0, 1
-	ret
-.LBB0_2:
-	addi	a1, a1, 13
-	srliw	a0, a1, 3
+	addi	a1, a1, 1
+	slli	a0, a0, 63
+	srliw	a1, a1, 1
+	srai	a0, a0, 63
+	and	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	andi	a0, a0, 1
-	bnez	a0, .LBB1_2
-	li	a0, 1
-	ret
-.LBB1_2:
-	addi	a0, a1, 48
-	srliw	a0, a0, 1
+	addi	a1, a1, 63
+	slli	a0, a0, 63
+	srliw	a1, a1, 6
+	srai	a0, a0, 63
+	and	a0, a0, a1
 	ret

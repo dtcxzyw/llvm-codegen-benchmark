@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/casadi_low.cpp.ll
 ; casadi/optimized/linear_interpolant.cpp.ll
@@ -15,7 +15,6 @@
 ; qemu/optimized/util_throttle.c.ll
 ; wireshark/optimized/atap_data_model.cpp.ll
 ; wireshark/optimized/capture_file_properties_dialog.cpp.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
 ; Function Attrs: nounwind

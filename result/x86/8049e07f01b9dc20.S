@@ -1,4 +1,4 @@
-func00000000000001d1:                   # @func00000000000001d1
+func00000000000003a1:                   # @func00000000000003a1
 	movq	%rdi, %rcx
 	shrq	$52, %rcx
 	addl	$-1023, %ecx                    # imm = 0xFC01

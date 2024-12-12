@@ -1,6 +1,5 @@
 
-; 11 occurrences:
-; cpython/optimized/_codecs_cn.ll
+; 10 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_rc4_hmac_md5.ll
 ; openssl/optimized/libcrypto-shlib-e_rc4_hmac_md5.ll
@@ -44,18 +43,12 @@ entry:
   ret i1 %3
 }
 
-; 32 occurrences:
-; cpython/optimized/_codecs_cn.ll
+; 26 occurrences:
 ; darktable/optimized/DngOpcodes.cpp.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; freetype/optimized/cff.c.ll
-; icu/optimized/normalizer2impl.ll
-; libwebp/optimized/predictor_enc.c.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
-; nghttp2/optimized/llhttp.c.ll
 ; oiio/optimized/SHA1.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/sha1.ll
@@ -81,7 +74,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -105,13 +98,28 @@ entry:
   ret i1 %3
 }
 
+; 6 occurrences:
+; cpython/optimized/_codecs_cn.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; freetype/optimized/cff.c.ll
+; icu/optimized/normalizer2impl.ll
+; libwebp/optimized/predictor_enc.c.ll
+; nghttp2/optimized/llhttp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = xor i32 %1, 65535
+  %3 = icmp samesign ult i32 %2, %0
+  ret i1 %3
+}
+
 ; 1 occurrences:
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 127
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp samesign ule i32 %2, %0
   ret i1 %3
 }
 
@@ -134,6 +142,16 @@ define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, %0
   %3 = icmp ne i32 %2, 1
+  ret i1 %3
+}
+
+; 1 occurrences:
+; cpython/optimized/_codecs_cn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = xor i32 %1, 128
+  %3 = icmp samesign ugt i32 %2, %0
   ret i1 %3
 }
 

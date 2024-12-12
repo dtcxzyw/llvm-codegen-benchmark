@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; folly/optimized/dynamic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 255
   %.highbits = lshr i64 %0, %2
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/dict.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = shl nuw i64 1, %2

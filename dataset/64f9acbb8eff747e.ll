@@ -34,22 +34,6 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
-; libwebp/optimized/demux.c.ll
-; libwebp/optimized/muxread.c.ll
-; libwebp/optimized/webp_dec.c.ll
-; postgres/optimized/itemptr.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000016(i16 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i32
-  %3 = shl nuw i32 %2, 16
-  %4 = zext i16 %0 to i32
-  %5 = or disjoint i32 %3, %4
-  %6 = add nuw i32 %5, 1
-  ret i32 %6
-}
-
 ; 1 occurrences:
 ; node/optimized/simdutf.ll
 ; Function Attrs: nounwind
@@ -86,6 +70,21 @@ entry:
   %4 = zext i16 %0 to i32
   %5 = or disjoint i32 %3, %4
   %6 = add nsw i32 %5, -1
+  ret i32 %6
+}
+
+; 3 occurrences:
+; libwebp/optimized/demux.c.ll
+; libwebp/optimized/muxread.c.ll
+; libwebp/optimized/webp_dec.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000016(i16 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = shl nuw i32 %2, 16
+  %4 = zext i16 %0 to i32
+  %5 = or disjoint i32 %3, %4
+  %6 = add nuw i32 %5, 1
   ret i32 %6
 }
 

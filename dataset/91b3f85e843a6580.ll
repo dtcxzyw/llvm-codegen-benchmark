@@ -10,7 +10,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 3
   %3 = shl i64 %2, 2
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -21,7 +21,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 1000000000
   %3 = shl i64 %2, 32
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

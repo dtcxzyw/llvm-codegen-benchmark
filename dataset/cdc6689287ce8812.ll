@@ -1,5 +1,5 @@
 
-; 694 occurrences:
+; 688 occurrences:
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
@@ -24,7 +24,6 @@
 ; cmake/optimized/inflate.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
 ; cmake/optimized/ntlm.c.ll
-; cmake/optimized/vli_decoder.c.ll
 ; cpython/optimized/convolute.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/difradix2.ll
@@ -38,7 +37,6 @@
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; eastl/optimized/Int128_t.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -160,7 +158,6 @@
 ; linux/optimized/show_mem.ll
 ; linux/optimized/timekeeping.ll
 ; linux/optimized/vmstat.ll
-; linux/optimized/vsyscall.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -211,8 +208,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -598,7 +593,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; php/optimized/dtoa.ll
-; php/optimized/engine_user.ll
 ; protobuf/optimized/coded_stream.cc.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/extension_set_heavy.cc.ll
@@ -702,7 +696,7 @@ entry:
   ret i64 %4
 }
 
-; 42 occurrences:
+; 45 occurrences:
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/inflate.c.ll
@@ -726,6 +720,7 @@ entry:
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
+; openjdk/optimized/metaspaceStatistics.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/primitive_field.cc.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
@@ -735,6 +730,8 @@ entry:
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode1f.c.ll
 ; zfp/optimized/encode1i.c.ll
@@ -749,7 +746,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -764,11 +761,11 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 52 occurrences:
+; 53 occurrences:
 ; abc/optimized/infback.c.ll
 ; libquic/optimized/infback.c.ll
 ; lief/optimized/DyldInfo.cpp.ll
@@ -816,6 +813,7 @@ entry:
 ; openjdk/optimized/stringTable.ll
 ; openjdk/optimized/threadService.ll
 ; openjdk/optimized/universe.ll
+; openusd/optimized/avif.c.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; qemu/optimized/source_s_addMagsF16.c.ll
 ; sentencepiece/optimized/extension_set.cc.ll
@@ -825,14 +823,16 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; brotli/optimized/metablock.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; opencv/optimized/net_impl.cpp.ll
+; openjdk/optimized/freeChunkList.ll
+; openjdk/optimized/metaspaceStatistics.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
@@ -885,11 +885,12 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
 ; chibicc/optimized/parse.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; freetype/optimized/smooth.c.ll
+; gromacs/optimized/tng_io.c.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; luajit/optimized/lj_opt_mem.ll
@@ -936,7 +937,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -951,7 +952,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %1, %2
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

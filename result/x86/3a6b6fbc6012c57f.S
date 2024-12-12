@@ -1,10 +1,10 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andl	$448, %edx                      # imm = 0x1C0
 	orl	%esi, %edx
 	leaq	(%rdx,%rdi), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	andl	$127, %edx
+func0000000000000007:                   # @func0000000000000007
+	andl	$15, %edx
 	orl	%esi, %edx
 	leaq	(%rdi,%rdx,8), %rax
 	retq

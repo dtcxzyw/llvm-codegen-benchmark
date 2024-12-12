@@ -13,7 +13,7 @@ entry:
   ret i32 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaAigerExt.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -21,7 +21,6 @@ entry:
 ; abc/optimized/ioReadAiger.c.ll
 ; abc/optimized/ioaReadAig.c.ll
 ; abc/optimized/utilBridge.c.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; protobuf/optimized/parse_context.cc.ll
 ; recastnavigation/optimized/Recast.cpp.ll

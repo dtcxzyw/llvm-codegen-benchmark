@@ -1,6 +1,7 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; cvc5/optimized/eq_proof.cpp.ll
+; cvc5/optimized/nl_model.cpp.ll
 ; cvc5/optimized/regexp_solver.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; icu/optimized/ustrcase.ll
@@ -101,37 +102,14 @@ entry:
   ret i1 %1
 }
 
-; 5 occurrences:
-; linux/optimized/virtio_ring.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i16 %0) #0 {
-entry:
-  %1 = icmp sgt i16 %0, -1
-  ret i1 %1
-}
-
-; 4 occurrences:
+; 3 occurrences:
 ; cvc5/optimized/addition.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i16 %0) #0 {
 entry:
   %1 = icmp ugt i16 %0, -121
-  ret i1 %1
-}
-
-; 1 occurrences:
-; linux/optimized/md-bitmap.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i16 %0) #0 {
-entry:
-  %1 = icmp slt i16 %0, 0
   ret i1 %1
 }
 

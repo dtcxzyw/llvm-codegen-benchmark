@@ -1,17 +1,24 @@
 .LCPI0_0:
 	.quad	999999999999999999              # 0xde0b6b3a763ffff
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	add	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	add	a0, a0, a2
 	sltiu	a0, a0, 100
 	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	add	a0, a0, a2
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	slli	a2, a2, 58
+	srli	a1, a1, 6
+	or	a1, a1, a2
+	add	a0, a0, a1
+	sltiu	a0, a0, 7
 	ret

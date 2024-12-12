@@ -10,7 +10,7 @@ define i64 @func0000000000000000(i64 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.200000e+00
   %3 = fptosi double %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -27,7 +27,7 @@ define i64 @func0000000000000001(i64 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e+01
   %3 = fptosi double %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

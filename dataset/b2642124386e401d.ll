@@ -26,7 +26,7 @@ entry:
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; qemu/optimized/dump_dump.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000021(i16 %0, i32 %1, i32 %2) #0 {
+define i16 @func0000000000000041(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw i32 %2 to i16
   %4 = icmp eq i32 %1, 1
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000014(i16 %0, i32 %1, i32 %2) #0 {
+define i16 @func0000000000000024(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = trunc nsw i32 %2 to i16
   %4 = icmp ult i32 %1, 65536

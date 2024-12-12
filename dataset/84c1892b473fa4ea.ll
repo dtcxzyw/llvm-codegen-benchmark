@@ -1,5 +1,10 @@
 
-; 24 occurrences:
+; 29 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; ceres/optimized/polynomial.cc.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; delta-rs/optimized/5d242f2by7re2olg.ll
@@ -28,7 +33,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e-01
-  %4 = fadd double %3, %1
+  %4 = fadd double %1, %3
   %5 = fdiv double %4, %0
   ret double %5
 }

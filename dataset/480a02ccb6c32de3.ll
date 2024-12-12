@@ -15,7 +15,7 @@
 ; openjdk/optimized/jfrEventClassTransformer.ll
 ; php/optimized/ir_ra.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = or disjoint i32 %0, 1
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/charsets.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = or disjoint i32 %0, 1
@@ -38,7 +38,7 @@ entry:
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = or disjoint i32 %0, 1

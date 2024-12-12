@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -9,7 +9,6 @@
 ; meshlab/optimized/io_x3d.cpp.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
-; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {

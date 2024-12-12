@@ -35,13 +35,13 @@
 	.long	256                             # 0x100
 .LCPI0_2:
 	.long	65280                           # 0xff00
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vmovdqa	.LCPI0_0(%rip), %ymm2           # ymm2 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
 	vpermt2b	%ymm1, %ymm2, %ymm0
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI0_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [65280,65280,65280,65280,65280,65280,65280,65280]
 	retq
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	vpslld	$7, %ymm0, %ymm0
 	vpor	%ymm1, %ymm0, %ymm0

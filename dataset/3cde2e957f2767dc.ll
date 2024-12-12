@@ -209,7 +209,7 @@
 ; yosys/optimized/test_cell.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 36
   %3 = and i64 %2, 4294967295
@@ -255,12 +255,24 @@ entry:
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 312
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv exact i64 %1, 36
+  %3 = and i64 %2, 4294967294
+  %4 = add nuw i64 %0, 2
+  %5 = icmp eq i64 %4, %3
   ret i1 %5
 }
 
@@ -270,7 +282,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/hfs_core.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
   %3 = and i64 %2, 2147483647
@@ -285,7 +297,7 @@ entry:
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ec(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 112
   %3 = and i64 %2, 2147483647
@@ -297,31 +309,31 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/biasstate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000079(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 48
   %3 = and i64 %2, 2147483647
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp uge i64 %4, %3
+  %5 = icmp samesign uge i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/gpp_atomtype.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 184
   %3 = and i64 %2, 2147483647
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = and i64 %2, 2147483647

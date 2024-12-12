@@ -6,12 +6,12 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = add nuw nsw i32 %3, 1
-  %5 = add nuw nsw i32 %4, %1
-  %6 = icmp ugt i32 %5, %0
+  %5 = add nuw nsw i32 %1, %4
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
@@ -28,24 +28,24 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = add nuw nsw i32 %3, 1
-  %5 = add nuw nsw i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %5 = add nuw nsw i32 %1, %4
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; php/optimized/avifinfo.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = add nuw nsw i32 %3, 1
-  %5 = add i32 %4, %1
-  %6 = icmp ugt i32 %5, %0
+  %5 = add i32 %1, %4
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
@@ -61,12 +61,12 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = add nuw nsw i32 %3, 257
-  %5 = add nuw nsw i32 %4, %1
-  %6 = icmp sgt i32 %5, %0
+  %5 = add nuw nsw i32 %1, %4
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
@@ -79,7 +79,7 @@ entry:
   %3 = and i32 %2, -2
   %4 = add i32 %3, -16
   %5 = add i32 %4, %1
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
@@ -87,24 +87,24 @@ entry:
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = add nuw nsw i32 %3, 257
-  %5 = add nuw nsw i32 %4, %1
-  %6 = icmp ult i32 %5, %0
+  %5 = add nuw nsw i32 %1, %4
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108863
   %4 = add nsw i32 %3, -1
   %5 = add i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -112,12 +112,12 @@ entry:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/NonNullParamChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1073741823
   %4 = add nsw i32 %3, -1
   %5 = add nsw i32 %4, %1
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 

@@ -11,8 +11,8 @@
 define i32 @func0000000000000000(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -35,8 +35,8 @@ entry:
 define i32 @func0000000000000070(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -50,8 +50,8 @@ entry:
 define i32 @func0000000000000050(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -61,8 +61,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add nsw i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -74,8 +74,8 @@ entry:
 define i32 @func0000000000000074(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -86,8 +86,8 @@ entry:
 define i32 @func0000000000000020(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -97,8 +97,8 @@ entry:
 define i32 @func0000000000000040(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

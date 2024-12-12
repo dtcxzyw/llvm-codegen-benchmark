@@ -19,7 +19,7 @@
 ; php/optimized/plain_wrapper.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0) #0 {
+define i32 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 61440
   %2 = icmp eq i32 %1, 4096

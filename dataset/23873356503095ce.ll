@@ -4,7 +4,7 @@
 ; freetype/optimized/pcf.c.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000221(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nsw i32 %3, 1
@@ -45,6 +45,19 @@ entry:
 }
 
 ; 2 occurrences:
+; icu/optimized/wrtjava.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = add i32 %3, 1
+  %5 = trunc i64 %0 to i32
+  %6 = icmp ult i32 %4, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
@@ -54,6 +67,18 @@ entry:
   %4 = add i32 %3, -14
   %5 = trunc i64 %0 to i32
   %6 = icmp sgt i32 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/geometry.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000226(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = add nsw i32 %3, -4
+  %5 = trunc i64 %0 to i32
+  %6 = icmp slt i32 %4, %5
   ret i1 %6
 }
 

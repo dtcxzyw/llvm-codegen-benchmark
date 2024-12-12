@@ -108,7 +108,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000141(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -118,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, 0
   %4 = select i1 %3, i1 true, i1 %2

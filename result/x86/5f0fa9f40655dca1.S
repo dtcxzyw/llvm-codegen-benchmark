@@ -16,7 +16,7 @@ func0000000000000005:                   # @func0000000000000005
 	cmovnel	%edx, %eax
 	leal	-16383(%rdi,%rax), %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000f:                   # @func000000000000000f
 	testb	$1, %sil
 	movl	$1, %eax
 	cmovnel	%edx, %eax

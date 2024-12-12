@@ -8,7 +8,7 @@ func0000000000000020:                   # @func0000000000000020
 	srli	a1, a1, 32
 	sub	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	slli	a3, a2, 32
 	srli	a3, a3, 32
 	bltu	a0, a3, .LBB1_2
@@ -28,7 +28,7 @@ func0000000000000031:                   # @func0000000000000031
 	srli	a1, a1, 32
 	sub	a0, a0, a1
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000124:                   # @func0000000000000124
 	sext.w	a3, a2
 	bltu	a0, a3, .LBB3_2
 	mv	a1, a2
@@ -36,7 +36,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	sext.w	a1, a1
 	sub	a0, a0, a1
 	ret
-func00000000000000a5:                   # @func00000000000000a5
+func00000000000001a5:                   # @func00000000000001a5
 	sext.w	a3, a2
 	bltu	a0, a3, .LBB4_2
 	mv	a1, a2
@@ -54,7 +54,7 @@ func0000000000000030:                   # @func0000000000000030
 	srli	a1, a1, 32
 	sub	a0, a0, a1
 	ret
-func00000000000000a0:                   # @func00000000000000a0
+func0000000000000120:                   # @func0000000000000120
 	sext.w	a3, a2
 	bltu	a0, a3, .LBB6_2
 	mv	a1, a2

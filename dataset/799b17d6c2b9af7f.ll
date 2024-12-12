@@ -14,7 +14,7 @@
 define i128 @func000000000000001e(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 56
-  %4 = add nuw nsw i128 %3, %1
+  %4 = add nuw nsw i128 %1, %3
   %5 = add nuw nsw i128 %4, %0
   %6 = lshr i128 %5, 56
   ret i128 %6
@@ -28,8 +28,8 @@ entry:
 define i128 @func0000000000000000(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 55
-  %4 = add i128 %3, %1
-  %5 = add i128 %4, %0
+  %4 = add i128 %1, %3
+  %5 = add i128 %0, %4
   %6 = lshr i128 %5, 56
   ret i128 %6
 }
@@ -42,7 +42,7 @@ entry:
 define i128 @func0000000000000014(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 16
-  %4 = add nuw i128 %3, %1
+  %4 = add nuw i128 %1, %3
   %5 = add nuw i128 %4, %0
   %6 = lshr i128 %5, 56
   ret i128 %6
@@ -54,7 +54,7 @@ entry:
 define i128 @func000000000000000a(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 16
-  %4 = add nsw i128 %3, %1
+  %4 = add nsw i128 %1, %3
   %5 = add nsw i128 %4, %0
   %6 = lshr i128 %5, 56
   ret i128 %6

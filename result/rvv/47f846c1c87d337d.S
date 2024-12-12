@@ -1,4 +1,4 @@
-func0000000000000654:                   # @func0000000000000654
+func0000000000001ab4:                   # @func0000000000001ab4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v8, v12
 	vzext.vf4	v14, v10
@@ -6,7 +6,7 @@ func0000000000000654:                   # @func0000000000000654
 	vmsleu.vv	v8, v12, v14
 	vmand.mm	v0, v10, v8
 	ret
-func0000000000000554:                   # @func0000000000000554
+func00000000000014a4:                   # @func00000000000014a4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v8, v12
 	vzext.vf4	v14, v10
@@ -14,7 +14,7 @@ func0000000000000554:                   # @func0000000000000554
 	vmsleu.vv	v8, v12, v14
 	vmand.mm	v0, v10, v8
 	ret
-func0000000000000454:                   # @func0000000000000454
+func00000000000010a4:                   # @func00000000000010a4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v8, v12
 	vzext.vf4	v14, v10

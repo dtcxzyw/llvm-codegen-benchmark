@@ -19,3 +19,14 @@ func0000000000000002:                   # @func0000000000000002
 	srai	a0, a0, 63
 	andi	a0, a0, -128
 	ret
+func0000000000000010:                   # @func0000000000000010
+	srli	a1, a1, 32
+	snez	a1, a1
+	or	a0, a0, a1
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
+	li	a0, 4
+	ret
+.LBB2_2:
+	li	a0, 8
+	ret

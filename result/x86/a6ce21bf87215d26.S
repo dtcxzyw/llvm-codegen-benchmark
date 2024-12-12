@@ -4,13 +4,13 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rcx, %rax
 	cmovleq	%rdi, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	leaq	(%rsi,%rdx), %rax
 	movabsq	$999999999999999999, %rcx       # imm = 0xDE0B6B3A763FFFF
 	cmpq	%rcx, %rax
 	cmovbeq	%rdi, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leaq	(%rsi,%rdx), %rax
 	testq	%rax, %rax
 	cmovleq	%rdi, %rax

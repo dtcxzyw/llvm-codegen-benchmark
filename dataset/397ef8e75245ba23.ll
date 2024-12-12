@@ -52,16 +52,4 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; linux/optimized/bitmap-str.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, 31
-  %3 = lshr i64 %2, 5
-  %4 = trunc i64 %3 to i32
-  %5 = sub i32 %4, %0
-  ret i32 %5
-}
-
 attributes #0 = { nounwind }

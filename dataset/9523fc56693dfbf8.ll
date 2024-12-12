@@ -53,7 +53,9 @@ entry:
   ret i1 %4
 }
 
-; 21 occurrences:
+; 24 occurrences:
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/wait_for.ll
 ; c3c/optimized/sema_expr.c.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; darktable/optimized/lighttable.c.ll
@@ -75,6 +77,7 @@ entry:
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/spacer_legacy_mev.cpp.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:

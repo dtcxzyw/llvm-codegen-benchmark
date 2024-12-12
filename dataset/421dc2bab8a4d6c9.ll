@@ -3,7 +3,7 @@
 ; linux/optimized/drm_property.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = icmp ne i32 %3, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tg3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp eq i32 %3, 0

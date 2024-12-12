@@ -1,4 +1,4 @@
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	sext.w	a0, a0
 	zext.w	a1, a1
 	lui	a2, 335544
@@ -12,7 +12,7 @@ func00000000000000d6:                   # @func00000000000000d6
 	sgtz	a0, a0
 	czero.nez	a0, a1, a0
 	ret
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	sext.w	a0, a0
 	zext.w	a1, a1
 	lui	a2, 335544

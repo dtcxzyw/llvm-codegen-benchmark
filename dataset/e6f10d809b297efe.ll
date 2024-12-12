@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; graphviz/optimized/make_map.c.ll
 ; gromacs/optimized/dgemm.cpp.ll
@@ -9,7 +9,6 @@
 ; ncnn/optimized/padding_x86_avx.cpp.ll
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
-; openblas/optimized/dtfsm.c.ll
 ; opencv/optimized/denoising.cpp.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
 ; openjdk/optimized/mlib_ImageConv_32nw.ll
@@ -83,6 +82,20 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 4
   %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
+; openusd/optimized/stbImage.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_image_resize2.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = shl nsw i64 %4, 2
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -27,7 +27,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -40,7 +40,7 @@ define i64 @func000000000000000e(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -52,20 +52,22 @@ define i64 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; cmake/optimized/zstd_decompress_block.c.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; llvm/optimized/ELF.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
+; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -76,7 +78,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

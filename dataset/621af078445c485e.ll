@@ -85,11 +85,11 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
@@ -97,11 +97,11 @@ entry:
 ; 1 occurrences:
 ; bdwgc/optimized/cordxtra.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 8
   %4 = or disjoint i64 %3, 255
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = icmp eq i64 %5, %0
   ret i1 %6
 }

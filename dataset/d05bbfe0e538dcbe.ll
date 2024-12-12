@@ -1,9 +1,10 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; icu/optimized/collationdatawriter.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/cstate.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
+; luau/optimized/isocline.c.ll
 ; postgres/optimized/interval.ll
 ; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
 ; wireshark/optimized/packet-ismacryp.c.ll

@@ -64,23 +64,26 @@ define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 6 occurrences:
+; 9 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/diff.cc.ll
+; boost/optimized/normalize.ll
 ; coreutils-rs/optimized/rhtgq2p2rl2mop7.ll
 ; grpc/optimized/config.cc.ll
 ; linux/optimized/memblock.ll
 ; ruby/optimized/bignum.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

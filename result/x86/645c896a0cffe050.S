@@ -4,16 +4,16 @@ func0000000000000004:                   # @func0000000000000004
 	leaq	1(%rdi), %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	testl	%edx, %edx
+	cmpl	$5, %edx
 	cmovneq	%rsi, %rdi
-	leaq	-1(%rdi), %rax
+	leaq	1(%rdi), %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
+func0000000000000060:                   # @func0000000000000060
 	cmpl	$1000, %edx                     # imm = 0x3E8
 	cmovbq	%rsi, %rdi
 	leaq	1(%rdi), %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	cmpl	$60, %edx
 	cmovaeq	%rsi, %rdi
 	leaq	3(%rdi), %rax

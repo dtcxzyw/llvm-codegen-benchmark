@@ -1,42 +1,21 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #4095                       // =0xfff
-	ushr	v1.2d, v1.2d, #12
-	ushr	v0.2d, v0.2d, #12
-	dup	v4.2d, x8
-	add	v3.2d, v3.2d, v4.2d
-	add	v2.2d, v2.2d, v4.2d
-	ushr	v3.2d, v3.2d, #12
-	ushr	v2.2d, v2.2d, #12
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
+	add	x8, x1, #4095
+	lsr	x8, x8, #12
+	sub	x0, x8, x0, lsr #12
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #63                         // =0x3f
-	ushr	v1.2d, v1.2d, #6
-	ushr	v0.2d, v0.2d, #6
-	dup	v4.2d, x8
-	add	v3.2d, v3.2d, v4.2d
-	add	v2.2d, v2.2d, v4.2d
-	ushr	v3.2d, v3.2d, #6
-	ushr	v2.2d, v2.2d, #6
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
+	add	x8, x1, #63
+	lsr	x8, x8, #6
+	sub	x0, x8, x0, lsr #6
 	ret
                                         // -- End function
 func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-	mov	w8, #63                         // =0x3f
-	ushr	v1.2d, v1.2d, #6
-	ushr	v0.2d, v0.2d, #6
-	dup	v4.2d, x8
-	add	v3.2d, v3.2d, v4.2d
-	add	v2.2d, v2.2d, v4.2d
-	ushr	v3.2d, v3.2d, #6
-	ushr	v2.2d, v2.2d, #6
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
+	add	x8, x1, #63
+	lsr	x8, x8, #6
+	sub	x0, x8, x0, lsr #6
 	ret
                                         // -- End function

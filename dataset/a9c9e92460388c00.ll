@@ -122,6 +122,20 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000050(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = shl nuw i64 %2, 63
+  %4 = zext i32 %0 to i64
+  %5 = shl i64 %4, 52
+  %6 = or i64 %5, %3
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind

@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	bseti	a0, zero, 11
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v8, v8, -2

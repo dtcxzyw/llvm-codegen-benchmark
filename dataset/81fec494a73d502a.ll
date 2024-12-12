@@ -59,8 +59,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; linux/optimized/evgpeinit.ll
+; 1 occurrences:
 ; velox/optimized/Utf8Utils.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000075(i32 %0, i8 %1) #0 {
@@ -160,7 +159,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 2
   %4 = add nsw i32 %3, -4
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

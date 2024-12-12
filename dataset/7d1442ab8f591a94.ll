@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; darktable/optimized/introspection_flip.c.ll
+; 3 occurrences:
 ; llvm/optimized/FunctionAttrs.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
@@ -15,11 +14,10 @@ entry:
   ret i32 %6
 }
 
-; 57 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcAig.c.ll
-; cmake/optimized/poll.c.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
-; libuv/optimized/poll.c.ll
+; darktable/optimized/introspection_flip.c.ll
 ; linux/optimized/8139too.ll
 ; linux/optimized/array.ll
 ; linux/optimized/dev-ioctl.ll
@@ -35,13 +33,10 @@ entry:
 ; linux/optimized/ldt.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/loop.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/md.ll
 ; linux/optimized/nfs2xdr.ll
 ; linux/optimized/reg.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/super.ll
-; linux/optimized/sys_ia32.ll
 ; linux/optimized/taskstats.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/tty_io.ll
@@ -59,7 +54,6 @@ entry:
 ; llvm/optimized/USRGeneration.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; node/optimized/poll.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; openjdk/optimized/Ushort555Rgbx.ll
 ; openjdk/optimized/Ushort565Rgb.ll

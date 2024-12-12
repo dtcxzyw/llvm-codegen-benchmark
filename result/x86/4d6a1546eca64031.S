@@ -30,7 +30,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	0x80000000                      # float -0
 func0000000000000008:                   # @func0000000000000008
 	vxorps	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 .LCPI5_0:

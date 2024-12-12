@@ -1,6 +1,7 @@
 
 ; 385 occurrences:
 ; abseil-cpp/optimized/demangle.cc.ll
+; boost/optimized/named_scope_format_parser.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -99,7 +100,6 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; luau/optimized/Transpiler.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.ARM64.cc.ll
@@ -386,12 +386,12 @@
 ; xgboost/optimized/tree_model.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0) #0 {
+define i1 @func0000000000000102(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, -5
-  %2 = add i8 %1, -1
-  %3 = icmp ult i8 %2, 3
-  %4 = icmp eq i8 %0, 8
+  %1 = and i8 %0, -33
+  %2 = add i8 %1, -65
+  %3 = icmp ult i8 %2, 26
+  %4 = icmp eq i8 %0, 95
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -399,7 +399,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0) #0 {
+define i1 @func000000000000010c(i8 %0) #0 {
 entry:
   %1 = and i8 %0, -33
   %2 = add i8 %1, -65

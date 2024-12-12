@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	15                              # 0xf
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.quad	31                              # 0x1f
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI2_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -24,7 +24,7 @@ func0000000000000021:                   # @func0000000000000021
 	retq
 .LCPI3_0:
 	.quad	-505                            # 0xfffffffffffffe07
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI3_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

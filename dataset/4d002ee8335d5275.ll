@@ -123,20 +123,21 @@ define i64 @func0000000000000010(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = sext i32 %1 to i64
   %7 = add i64 %5, %6
   ret i64 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
+; lvgl/optimized/lv_text.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = sext i32 %1 to i64
   %7 = add nsw i64 %5, %6
   ret i64 %7
@@ -153,7 +154,7 @@ define i64 @func000000000000001d(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = sext i32 %1 to i64
   %7 = add nsw i64 %5, %6
   ret i64 %7

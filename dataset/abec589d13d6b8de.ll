@@ -16,7 +16,7 @@ define double @func000000000000002f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = mul nsw i32 %3, %3
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = uitofp nneg i32 %5 to double
   ret double %6
 }

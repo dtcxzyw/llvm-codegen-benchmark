@@ -11,9 +11,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {

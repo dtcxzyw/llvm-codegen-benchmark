@@ -1,10 +1,9 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; graphviz/optimized/circpos.c.ll
 ; graphviz/optimized/tree_map.c.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
-; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/import-svg.cpp.ll
 ; quantlib/optimized/analyticeuropeanvasicekengine.ll
 ; quantlib/optimized/analytichestonengine.ll
@@ -22,7 +21,7 @@ define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fmul double %3, 5.000000e-01
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 

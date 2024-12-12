@@ -163,7 +163,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %reass.sub = sub i32 %1, %2
   %3 = add i32 %reass.sub, 348

@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 2 occurrences:
 ; minetest/optimized/CNullDriver.cpp.ll
 ; qemu/optimized/hw_intc_riscv_imsic.c.ll
 ; Function Attrs: nounwind
@@ -8,7 +7,7 @@ define i64 @func0000000000000040(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = mul i32 %4, %1
+  %5 = mul i32 %1, %4
   %6 = add i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
@@ -21,13 +20,13 @@ define i64 @func0000000000000042(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = mul i32 %4, %1
+  %5 = mul i32 %1, %4
   %6 = add nsw i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -38,7 +37,6 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -66,7 +64,7 @@ define i64 @func0000000000000080(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = mul i32 %4, %1
+  %5 = mul i32 %1, %4
   %6 = add i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
@@ -79,7 +77,7 @@ define i64 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = mul i32 %4, %1
+  %5 = mul i32 %1, %4
   %6 = add i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
@@ -92,7 +90,7 @@ define i64 @func000000000000004a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = mul nsw i32 %4, %1
+  %5 = mul nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7

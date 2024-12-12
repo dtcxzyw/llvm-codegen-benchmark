@@ -6,7 +6,15 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a0, a0, 5
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000018:                   # @func0000000000000018
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v10, -1
+	li	a0, -9
+	vsrl.vv	v8, v10, v8
+	srli	a0, a0, 3
+	vmsgtu.vx	v0, v8, a0
+	ret
+func0000000000000014:                   # @func0000000000000014
 	li	a0, -1
 	srli	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma

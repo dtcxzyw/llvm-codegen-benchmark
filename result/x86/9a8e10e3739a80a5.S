@@ -1,8 +1,8 @@
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	leal	1(%rsi,%rdx), %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	leal	1(%rsi,%rdx), %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq

@@ -3,14 +3,13 @@
 ; jsonnet/optimized/formatter.cpp.ll
 ; jsonnet/optimized/libjsonnet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 39
-  %4 = zext i1 %3 to i32
-  %5 = sub i32 0, %1
-  %6 = icmp ne i32 %4, %5
-  %7 = select i1 %6, i1 %0, i1 false
-  ret i1 %7
+  %.neg = sext i1 %3 to i32
+  %4 = icmp ne i32 %1, %.neg
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -18,11 +17,11 @@ entry:
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; openusd/optimized/read.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000bc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000016c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 8
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = icmp ne i32 %5, 0
   %7 = select i1 %6, i1 %0, i1 false
   ret i1 %7

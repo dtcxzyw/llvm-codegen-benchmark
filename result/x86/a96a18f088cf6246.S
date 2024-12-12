@@ -29,6 +29,21 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%edx, %eax
 	addl	%ecx, %eax
 	retq
+func0000000000000040:                   # @func0000000000000040
+	leal	-1(%rsi), %eax
+	movslq	%eax, %rcx
+	imulq	$-1374389535, %rcx, %rdx        # imm = 0xAE147AE1
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	sarq	$37, %rdx
+	addl	%eax, %edx
+	leal	2(%rsi), %eax
+	testl	%ecx, %ecx
+	cmovnsl	%ecx, %eax
+	sarl	$2, %eax
+	addl	%edi, %eax
+	addl	%edx, %eax
+	retq
 func0000000000000045:                   # @func0000000000000045
 	decl	%esi
 	movslq	%esi, %rax
@@ -59,19 +74,4 @@ func000000000000004d:                   # @func000000000000004d
 	sarq	$37, %rax
 	addl	%edx, %eax
 	addl	%ecx, %eax
-	retq
-func0000000000000040:                   # @func0000000000000040
-	leal	-1(%rsi), %eax
-	addl	$2, %esi
-	testl	%eax, %eax
-	cmovnsl	%eax, %esi
-	sarl	$2, %esi
-	subl	%esi, %edi
-	cltq
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
-	movq	%rax, %rcx
-	shrq	$63, %rcx
-	sarq	$37, %rax
-	addl	%ecx, %eax
-	addl	%edi, %eax
 	retq

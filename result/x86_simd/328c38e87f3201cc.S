@@ -4,7 +4,7 @@
 	.long	2                               # 0x2
 .LCPI0_2:
 	.long	4                               # 0x4
-func000000000000008f:                   # @func000000000000008f
+func000000000000018f:                   # @func000000000000018f
 	vpcmpnleuq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm1   # xmm1 = [2,2,2,2]
 	vpblendmd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm2 {%k1}
@@ -23,7 +23,22 @@ func00000000000000af:                   # @func00000000000000af
 	vpcmpgtq	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm1   # xmm1 = [9,9,9,9]
 	vpbroadcastd	.LCPI1_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [5,5,5,5]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.quad	31                              # 0x1f
+.LCPI2_1:
+	.long	1                               # 0x1
+.LCPI2_2:
+	.long	2                               # 0x2
+func000000000000008f:                   # @func000000000000008f
+	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
+	vpbroadcastd	.LCPI2_1(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpbroadcastd	.LCPI2_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [2,2,2,2]
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

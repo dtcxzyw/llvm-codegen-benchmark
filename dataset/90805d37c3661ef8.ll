@@ -36,4 +36,16 @@ entry:
   ret i64 %6
 }
 
+; 1 occurrences:
+; graphviz/optimized/quad_prog_vpsc.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw i32 %2, 1
+  %4 = sub nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
 attributes #0 = { nounwind }

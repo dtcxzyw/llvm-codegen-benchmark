@@ -1,14 +1,13 @@
 
-; 2 occurrences:
-; linux/optimized/cap_audit.ll
+; 1 occurrences:
 ; openjdk/optimized/objectSampleWriter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 9223372036854775804
   %4 = and i64 %0, 9223372036854775804
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 
@@ -75,12 +74,12 @@ entry:
 ; spike/optimized/vzext_vf4.ll
 ; spike/optimized/vzext_vf8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 9223372036854775804
   %4 = and i64 %0, 9223372036854775804
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -188,7 +187,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = and i64 %3, 15
   %5 = icmp eq i64 %4, 0
   ret i1 %5
@@ -203,7 +202,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 20
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = and i64 %3, 31
   %5 = icmp ne i64 %4, 0
   ret i1 %5

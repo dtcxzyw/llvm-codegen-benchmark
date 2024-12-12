@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -14,7 +14,6 @@
 ; ipopt/optimized/IpTNLPAdapter.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
 ; nix/optimized/lock.ll
@@ -44,7 +43,7 @@ entry:
   ret i64 %4
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -62,7 +61,6 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
 ; nix/optimized/lock.ll
@@ -100,12 +98,14 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; clamav/optimized/yara_exec.c.ll
 ; git/optimized/ewah_bitmap.ll
 ; graphviz/optimized/mincross.c.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; velox/optimized/MmapAllocator.cpp.ll
+; wireshark/optimized/packet_list.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
@@ -182,12 +182,13 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaRex.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; opencv/optimized/nldiffusion_functions.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:

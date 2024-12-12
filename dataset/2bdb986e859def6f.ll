@@ -18,7 +18,7 @@
 ; quantlib/optimized/twofactormodel.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -27,7 +27,7 @@ entry:
   ret i1 %5
 }
 
-; 376 occurrences:
+; 372 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -92,7 +92,6 @@ entry:
 ; gromacs/optimized/datastorage.cpp.ll
 ; gromacs/optimized/displacement.cpp.ll
 ; gromacs/optimized/forcefieldparameters.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; gromacs/optimized/inputrec.cpp.ll
 ; gromacs/optimized/lifetime.cpp.ll
@@ -135,7 +134,6 @@ entry:
 ; lightgbm/optimized/train_share_states.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -155,7 +153,6 @@ entry:
 ; ocio/optimized/ColorSpace.cpp.ll
 ; ocio/optimized/ColorSpaceSet.cpp.ll
 ; ocio/optimized/Config.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/OpOptimizers.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/LSDDetector.cpp.ll
@@ -234,8 +231,6 @@ entry:
 ; pocketpy/optimized/expr.cpp.ll
 ; pocketpy/optimized/gc.cpp.ll
 ; pocketpy/optimized/tuplelist.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; protobuf/optimized/text_format.cc.ll
@@ -346,6 +341,7 @@ entry:
 ; yosys/optimized/peepopt.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/portlist.ll
+; yosys/optimized/proc_arst.ll
 ; yosys/optimized/proc_dff.ll
 ; yosys/optimized/proc_dlatch.ll
 ; yosys/optimized/proc_mux.ll
@@ -405,7 +401,7 @@ entry:
 ; zxing/optimized/Content.cpp.ll
 ; zxing/optimized/GenericGFPoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
@@ -414,7 +410,7 @@ entry:
   ret i1 %5
 }
 
-; 408 occurrences:
+; 406 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/ivyCutTrav.c.ll
 ; arrow/optimized/builder_union.cc.ll
@@ -542,7 +538,6 @@ entry:
 ; opencv/optimized/weighted_median_filter.cpp.ll
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; openmpi/optimized/bml_r2.ll
-; openmpi/optimized/btl_tcp.ll
 ; openmpi/optimized/pml_ob1.ll
 ; openmpi/optimized/pml_ob1_accelerator.ll
 ; openmpi/optimized/topo_treematch_dist_graph_create.ll
@@ -696,7 +691,6 @@ entry:
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -824,7 +818,7 @@ entry:
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -847,7 +841,7 @@ entry:
 ; yosys/optimized/simplify.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
@@ -862,7 +856,7 @@ entry:
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; rocksdb/optimized/file_indexer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
@@ -874,7 +868,7 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
@@ -886,7 +880,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/serverenvironment.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ea(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -895,7 +889,7 @@ entry:
   ret i1 %5
 }
 
-; 89 occurrences:
+; 93 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
@@ -971,7 +965,6 @@ entry:
 ; opencv/optimized/samplers.cpp.ll
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
-; openmpi/optimized/proc_info.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; qemu/optimized/util_readline.c.ll
 ; quantlib/optimized/onefactormodel.ll
@@ -985,8 +978,13 @@ entry:
 ; velox/optimized/VectorSaver.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/memory_bram.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -995,8 +993,9 @@ entry:
   ret i1 %5
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/acbUtil.c.ll
+; abc/optimized/ltl_parser.c.ll
 ; arrow/optimized/UriNormalize.c.ll
 ; brotli/optimized/decode.c.ll
 ; ceres/optimized/block_structure.cc.ll
@@ -1028,7 +1027,7 @@ entry:
 ; yosys/optimized/mem.ll
 ; zxing/optimized/ODCode128Writer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -1040,7 +1039,7 @@ entry:
 ; 1 occurrences:
 ; c3c/optimized/parse_expr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -1059,7 +1058,7 @@ entry:
 ; redis/optimized/read.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -1093,7 +1092,7 @@ entry:
 ; tinympc/optimized/tiny_api.cpp.ll
 ; velox/optimized/Ntile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -1120,7 +1119,7 @@ entry:
 ; quantlib/optimized/sparseilupreconditioner.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -1132,7 +1131,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/sequencer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -1145,7 +1144,7 @@ entry:
 ; protobuf/optimized/descriptor.cc.ll
 ; slurm/optimized/spank.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -1157,7 +1156,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/read_params.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007b(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000eb(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -1169,7 +1168,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/ProductQuantizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -1182,7 +1181,7 @@ entry:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; ocio/optimized/ViewingRules.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
@@ -1194,7 +1193,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32

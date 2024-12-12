@@ -2,7 +2,7 @@
 	.quad	0x3fd0000000000000              # double 0.25
 func0000000000000000:                   # @func0000000000000000
 	vmulps	%zmm2, %zmm1, %zmm1
-	vaddps	%zmm0, %zmm1, %zmm0
+	vaddps	%zmm1, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm0, %ymm1
 	vcvtps2pd	%ymm1, %zmm1
 	vcvtps2pd	%ymm0, %zmm0

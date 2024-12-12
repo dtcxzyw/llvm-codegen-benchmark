@@ -9,9 +9,3 @@ func000000000000000c:                   # @func000000000000000c
 	setl	%al
 	orb	%dil, %al
 	retq
-func000000000000000a:                   # @func000000000000000a
-	addl	%esi, %edx
-	cmpl	%esi, %edx
-	setbe	%al
-	orb	%dil, %al
-	retq

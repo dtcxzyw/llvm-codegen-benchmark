@@ -10,7 +10,7 @@ define i64 @func000000000000003f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = mul nuw nsw i64 %3, 7
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nuw nsw i64 %5, %0
   %7 = and i64 %6, 63
   ret i64 %7

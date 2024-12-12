@@ -3,12 +3,12 @@
 ; postgres/optimized/tidbitmap.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = and i32 %2, 7
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
   %6 = getelementptr [8 x i64], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -29,35 +29,18 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = and i32 %2, 7
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw [8 x i64], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw [8 x i64], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
-; 6 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 6
-  %3 = and i32 %2, 7
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
-  %6 = getelementptr nusw [8 x i64], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 9 occurrences:
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/InjectedSourceStream.cpp.ll
 ; llvm/optimized/LiveVariables.cpp.ll
@@ -68,13 +51,13 @@ entry:
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/TpiStream.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 6
+  %2 = lshr i32 %1, 1
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %6 = getelementptr nusw [2 x i64], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw [2 x float], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

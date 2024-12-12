@@ -3,7 +3,7 @@ func0000000000000002:                   // @func0000000000000002
 	str	x30, [sp, #-16]!                // 8-byte Folded Spill
 	mov	x8, x1
 	mov	x9, x0
-	orr	x0, x4, x2
+	orr	x0, x2, x4
 	mov	x1, x3
 	mov	x2, x9
 	mov	x3, x8

@@ -8,7 +8,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -59,11 +59,11 @@ entry:
 ; libwebp/optimized/sharpyuv_sse2.c.ll
 ; linux/optimized/mcast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = icmp slt i32 %5, 24
   ret i1 %6
 }
@@ -72,24 +72,12 @@ entry:
 ; linux/optimized/igmp.ll
 ; linux/optimized/mcast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = icmp eq i32 %5, 24
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/mcast.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = add nsw i32 %4, %0
-  %6 = icmp ugt i32 %5, 27
   ret i1 %6
 }
 
@@ -97,7 +85,7 @@ entry:
 ; icu/optimized/normalizer2impl.ll
 ; linux/optimized/igmp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %1, %3

@@ -22,12 +22,6 @@ func000000000000001f:                   # @func000000000000001f
 	orq	%rsi, %rax
 	imulq	%rdi, %rax
 	retq
-func000000000000001c:                   # @func000000000000001c
-	movq	%rdx, %rax
-	shlq	$32, %rax
-	orq	%rsi, %rax
-	imulq	%rdi, %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rdx, %rax
 	shlq	$30, %rax

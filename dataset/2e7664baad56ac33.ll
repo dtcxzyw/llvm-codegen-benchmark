@@ -8,7 +8,7 @@
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul nuw nsw i32 %3, 6
   ret i32 %4
 }
@@ -22,19 +22,20 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul i32 %3, 3
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; linux/optimized/scatterlist.ll
+; lvgl/optimized/lv_arc.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul i32 %3, 1364
   ret i32 %4
 }
@@ -51,8 +52,19 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 27
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul nsw i32 %3, 100
+  ret i32 %4
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 18
+  %3 = add nsw i32 %2, %0
+  %4 = mul i32 %3, 1217359
   ret i32 %4
 }
 

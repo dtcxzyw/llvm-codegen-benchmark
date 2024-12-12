@@ -4,14 +4,14 @@
 ; oiio/optimized/RunLengthEncoding.cpp.ll
 ; openjdk/optimized/hb-ot-shape-normalize.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, -3
   %2 = icmp ne i32 %1, 1
   ret i1 %2
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -37,7 +37,6 @@ entry:
 ; abc/optimized/wlcBlast.c.ll
 ; clamav/optimized/png.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/introspection_flip.c.ll
 ; git/optimized/apply.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/irq.ll
@@ -46,7 +45,7 @@ entry:
 ; postgres/optimized/xlogrecovery.ll
 ; proj/optimized/geodesic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 4
   %2 = and i32 %0, -2
@@ -62,7 +61,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; opencv/optimized/undistort.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0) #0 {
+define i1 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = and i32 %0, -2147483633
   %2 = icmp eq i32 %1, 0
@@ -75,7 +74,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0) #0 {
+define i1 @func00000000000000cc(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.smax.i32(i32 %0, i32 0)
   %2 = and i32 %1, 1024
@@ -89,12 +88,12 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0) #0 {
+define i1 @func00000000000000d8(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, -1
   %2 = and i32 %0, 15
-  %3 = icmp ugt i32 %2, 10
-  %4 = and i1 %1, %3
+  %3 = icmp samesign ugt i32 %2, 10
+  %4 = select i1 %1, i1 %3, i1 false
   ret i1 %4
 }
 
@@ -104,7 +103,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0) #0 {
+define i1 @func00000000000000d4(i32 %0) #0 {
 entry:
   %1 = and i32 %0, -2147483636
   %2 = icmp eq i32 %1, 0
@@ -114,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; libphonenumber/optimized/rune.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0) #0 {
+define i1 @func0000000000000101(i32 %0) #0 {
 entry:
   %1 = icmp ult i32 %0, 1114112
   %2 = and i32 %0, 2095104
@@ -126,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ubidi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0) #0 {
+define i1 @func0000000000000141(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 23
   %2 = and i32 %0, 255

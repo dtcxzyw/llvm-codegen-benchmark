@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; qemu/optimized/block_parallels.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 9
   %5 = mul i64 %4, %1
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -16,12 +16,12 @@ entry:
 ; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll
 ; yalantinglibs/optimized/user_defined_serialization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
   %5 = mul i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -31,12 +31,12 @@ entry:
 ; openusd/optimized/skeletonAdapter.cpp.ll
 ; openusd/optimized/skinningQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000381(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
   %5 = mul i64 %4, %1
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

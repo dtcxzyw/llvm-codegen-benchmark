@@ -1,16 +1,15 @@
+func000000000000003e:                   // @func000000000000003e
+// %bb.0:                               // %entry
+	add	w0, w0, w1, lsl #1
+	ret
+                                        // -- End function
 func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	add	v1.8b, v1.8b, v1.8b
-	add	v0.8b, v1.8b, v0.8b
+	add	w0, w0, w1, lsl #1
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	shl	v1.8b, v1.8b, #4
-	add	v0.8b, v1.8b, v0.8b
+	add	w0, w0, w1, lsl #4
 	ret
                                         // -- End function

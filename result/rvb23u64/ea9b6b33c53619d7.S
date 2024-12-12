@@ -9,6 +9,18 @@ func0000000000000034:                   # @func0000000000000034
 	add	a0, a0, a2
 	addiw	a0, a0, -306
 	ret
+func000000000000003f:                   # @func000000000000003f
+	zext.w	a2, a2
+	lui	a3, 91867
+	add	a0, a0, a1
+	lui	a1, 15
+	addiw	a3, a3, 115
+	addi	a1, a1, -704
+	mul	a2, a2, a3
+	srli	a2, a2, 39
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
 func0000000000000000:                   # @func0000000000000000
 	zext.w	a1, a1
 	lui	a3, 233017

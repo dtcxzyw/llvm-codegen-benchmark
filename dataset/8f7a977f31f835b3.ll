@@ -3,7 +3,7 @@
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 63
   %4 = icmp ne i8 %3, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_vhdx-log.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
@@ -28,7 +28,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
 ; llvm/optimized/APValue.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
@@ -43,7 +43,7 @@ entry:
 ; llvm/optimized/InterfaceFile.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp ne i8 %3, 0
@@ -56,7 +56,7 @@ entry:
 ; openmpi/optimized/fbtl_posix_preadv.ll
 ; openmpi/optimized/fbtl_posix_pwritev.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0

@@ -1,11 +1,20 @@
 
-; 13 occurrences:
+; 22 occurrences:
 ; abc/optimized/dsdProc.c.ll
 ; abc/optimized/ivyCheck.c.ll
 ; abc/optimized/ivyDfs.c.ll
 ; abc/optimized/ivyObj.c.ll
 ; abc/optimized/ivyUtil.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; linux/optimized/trans_virtio.ll
+; llvm/optimized/ItaniumMangle.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaStmt.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; wireshark/optimized/coloring_rules_model.cpp.ll
 ; wireshark/optimized/dissector_tables_model.cpp.ll
@@ -14,11 +23,11 @@
 ; wireshark/optimized/pref_models.cpp.ll
 ; wireshark/optimized/supported_protocols_model.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i1 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = select i1 %0, ptr %3, ptr %1
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 
@@ -31,19 +40,6 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = select i1 %0, ptr %3, ptr %1
   %5 = getelementptr i8, ptr %4, i64 24
-  ret ptr %5
-}
-
-; 3 occurrences:
-; llvm/optimized/ItaniumMangle.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaStmt.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = inttoptr i64 %2 to ptr
-  %4 = select i1 %0, ptr %3, ptr %1
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; assimp/optimized/TextureTransform.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -28,6 +28,7 @@
 ; pbrt-v4/optimized/textures.cpp.ll
 ; raylib/optimized/rcore.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:

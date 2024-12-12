@@ -16,11 +16,11 @@ define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 99 occurrences:
+; 81 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/amaze.cc.ll
@@ -45,14 +45,6 @@ entry:
 ; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
-; ncnn/optimized/deconvolution_x86.cpp.ll
-; ncnn/optimized/deconvolution_x86_avx.cpp.ll
-; ncnn/optimized/deconvolution_x86_avx512.cpp.ll
-; ncnn/optimized/deconvolution_x86_fma.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86_avx.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86_avx512.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86_fma.cpp.ll
 ; ncnn/optimized/pooling.cpp.ll
 ; ncnn/optimized/pooling1d.cpp.ll
 ; ncnn/optimized/pooling3d.cpp.ll
@@ -64,25 +56,16 @@ entry:
 ; oiio/optimized/icooutput.cpp.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
-; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
-; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
-; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
-; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
-; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/lrn_layer.cpp.ll
 ; opencv/optimized/moments.cpp.ll
 ; opencv/optimized/resize.cpp.ll
-; opencv/optimized/rlof_localflow.cpp.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
@@ -113,7 +96,6 @@ entry:
 ; sundials/optimized/arkode_mri_tables.c.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/memory_bram.ll
-; yosys/optimized/qwp.ll
 ; yosys/optimized/sim.ll
 ; yosys/optimized/wreduce.ll
 ; zxing/optimized/AZEncoder.cpp.ll
@@ -125,11 +107,11 @@ define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; gromacs/optimized/tng_compress.c.ll
 ; hdf5/optimized/h5diff_array.c.ll
@@ -138,7 +120,6 @@ entry:
 ; oiio/optimized/Codec.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
-; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
@@ -168,7 +149,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -199,7 +180,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -213,7 +194,7 @@ define i64 @func0000000000000007(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -225,7 +206,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

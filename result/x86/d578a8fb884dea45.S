@@ -11,6 +11,8 @@ func0000000000000003:                   # @func0000000000000003
 	andl	$127, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	movl	$7, %eax
-	btrl	%edi, %eax
+	movl	$3, %eax
+	shlxl	%edi, %eax, %eax
+	notl	%eax
+	andl	$-4, %eax
 	retq

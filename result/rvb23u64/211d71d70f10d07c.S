@@ -51,16 +51,6 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -8
 	zext.w	a0, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
-	addi	a0, a0, 129
-	andi	a0, a0, 255
-	addi	a0, a0, -1
-	ret
-func000000000000001b:                   # @func000000000000001b
-	addi	a0, a0, 1
-	andi	a0, a0, 255
-	addi	a0, a0, -1
-	ret
 func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, 8
 	slli	a0, a0, 34
@@ -73,9 +63,4 @@ func000000000000001a:                   # @func000000000000001a
 	andi	a0, a0, 1020
 	addi	a0, a0, -2
 	zext.w	a0, a0
-	ret
-func0000000000000017:                   # @func0000000000000017
-	addi	a0, a0, -1
-	andi	a0, a0, 3
-	addi	a0, a0, 1
 	ret

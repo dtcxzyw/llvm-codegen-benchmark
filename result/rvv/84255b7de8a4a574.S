@@ -136,14 +136,16 @@ func00000000000000aa:                   # @func00000000000000aa
 	vmnot.m	v8, v12
 	vmorn.mm	v0, v8, v16
 	ret
-func0000000000000032:                   # @func0000000000000032
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfne.vv	v16, v12, v12
+func0000000000000132:                   # @func0000000000000132
 	fli.s	fa5, inf
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vf	v16, v12, fa5
+	vmfgt.vf	v17, v12, fa5
 	vmflt.vf	v12, v8, fa5
 	vmfgt.vf	v13, v8, fa5
-	vmor.mm	v8, v13, v12
-	vmorn.mm	v0, v16, v8
+	vmor.mm	v8, v17, v16
+	vmnor.mm	v9, v13, v12
+	vmorn.mm	v0, v9, v8
 	ret
 func0000000000000042:                   # @func0000000000000042
 	fli.s	fa5, min

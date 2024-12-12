@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/wlcMem.c.ll
 ; eastl/optimized/EATextUtil.cpp.ll
 ; icu/optimized/collationweights.ll
@@ -12,6 +12,7 @@
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
+; openusd/optimized/restoration.c.ll
 ; qemu/optimized/block_nvme.c.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/hw_audio_es1370.c.ll
@@ -48,7 +49,7 @@ entry:
   ret i32 %3
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/luckyFast6.c.ll
 ; abc/optimized/trees.c.ll
@@ -79,6 +80,7 @@ entry:
 ; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/restoration.c.ll
 ; postgres/optimized/nodeAgg.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -88,7 +90,7 @@ entry:
   ret i32 %3
 }
 
-; 76 occurrences:
+; 74 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -102,9 +104,7 @@ entry:
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; git/optimized/diffcore-delta.ll
-; gromacs/optimized/dlarnv.cpp.ll
 ; gromacs/optimized/huffman.c.ll
-; gromacs/optimized/slarnv.cpp.ll
 ; gromacs/optimized/trees.c.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/collationiterator.ll

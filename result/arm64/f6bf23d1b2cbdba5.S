@@ -1,30 +1,11 @@
-func0000000000000156:                   // @func0000000000000156
+func00000000000002a6:                   // @func00000000000002a6
 // %bb.0:                               // %entry
-	fmov	x10, d1
-	fmov	x11, d0
-	mov	x8, v1.d[1]
-	mov	x9, v0.d[1]
-	bic	v2.4h, #255, lsl #8
-	add	x10, x10, x10, lsl #2
-	add	x11, x11, x11, lsl #2
-	add	x8, x8, x8, lsl #2
-	ushll	v2.4s, v2.4h, #0
-	lsl	x10, x10, #1
-	lsl	x11, x11, #1
-	add	x9, x9, x9, lsl #2
-	lsl	x8, x8, #1
-	fmov	d3, x10
-	fmov	d4, x11
-	lsl	x9, x9, #1
-	mov	v3.d[1], x8
-	mov	v4.d[1], x9
-	mov	w8, #268435456                  // =0x10000000
-	dup	v5.2d, x8
-	uaddw2	v3.2d, v3.2d, v2.4s
-	uaddw	v2.2d, v4.2d, v2.2s
-	cmgt	v4.2d, v5.2d, v1.2d
-	cmgt	v5.2d, v5.2d, v0.2d
-	bit	v1.16b, v3.16b, v4.16b
-	bit	v0.16b, v2.16b, v5.16b
+	mov	w8, #10                         // =0xa
+                                        // kill: def $w1 killed $w1 def $x1
+	mov	w9, #268435456                  // =0x10000000
+	mul	x8, x0, x8
+	cmp	x0, x9
+	add	x8, x8, w1, uxtb
+	csel	x0, x8, x0, lt
 	ret
                                         // -- End function

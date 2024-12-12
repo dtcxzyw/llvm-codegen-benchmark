@@ -16,11 +16,11 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp samesign ult i64 %4, %0
   ret i1 %5
 }
 
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = lshr i64 %3, 32
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = lshr i64 %3, 32

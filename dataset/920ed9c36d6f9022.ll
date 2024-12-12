@@ -1,5 +1,5 @@
 
-; 99 occurrences:
+; 98 occurrences:
 ; darktable/optimized/geotagging.c.ll
 ; hdf5/optimized/H5timer.c.ll
 ; minetest/optimized/client.cpp.ll
@@ -23,7 +23,6 @@
 ; minetest/optimized/renderingengine.cpp.ll
 ; minetest/optimized/s_async.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/timetaker.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll

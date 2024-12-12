@@ -3,13 +3,13 @@ func0000000000000000:                   # @func0000000000000000
 	leal	(%rdi,%rdi,2), %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	imull	$60, %esi, %eax
+func00000000000000c0:                   # @func00000000000000c0
+	imull	$-862048943, %esi, %eax         # imm = 0xCC9E2D51
 	addl	%edx, %eax
 	addl	%edi, %eax
 	retq
-func00000000000000c0:                   # @func00000000000000c0
-	imull	$-862048943, %esi, %eax         # imm = 0xCC9E2D51
+func0000000000000010:                   # @func0000000000000010
+	imull	$38134234, %esi, %eax           # imm = 0x245E1DA
 	addl	%edx, %eax
 	addl	%edi, %eax
 	retq

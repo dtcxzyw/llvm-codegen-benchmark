@@ -13,7 +13,8 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll

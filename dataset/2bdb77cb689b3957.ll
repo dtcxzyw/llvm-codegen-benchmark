@@ -1,9 +1,13 @@
 
-; 113 occurrences:
+; 115 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
+; darktable/optimized/introspection_bilateral.cc.ll
+; darktable/optimized/introspection_tonemap.cc.ll
 ; draco/optimized/corner_table.cc.ll
 ; git/optimized/date.ll
 ; git/optimized/hashmap.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; linux/optimized/threshold.ll
 ; linux/optimized/timeconv.ll
 ; linux/optimized/tsc.ll
@@ -91,7 +95,6 @@
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
-; postgres/optimized/freespace.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtinsert.ll
 ; postgres/optimized/nbtsort.ll
@@ -110,7 +113,6 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wireshark/optimized/androiddump.c.ll
-; wireshark/optimized/file-btsnoop.c.ll
 ; wireshark/optimized/netscaler.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
 ; Function Attrs: nounwind
@@ -121,10 +123,14 @@ entry:
   ret i64 %2
 }
 
-; 79 occurrences:
+; 83 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll

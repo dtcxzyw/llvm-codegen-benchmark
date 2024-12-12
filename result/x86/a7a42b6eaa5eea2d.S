@@ -3,11 +3,6 @@ func0000000000000001:                   # @func0000000000000001
 	shrq	%rax
 	subq	%rdi, %rax
 	retq
-func0000000000000019:                   # @func0000000000000019
-	leaq	(%rsi,%rdx), %rax
-	shrq	$3, %rax
-	subq	%rdi, %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	leaq	(%rsi,%rdx), %rax
 	shrq	$13, %rax

@@ -40,8 +40,9 @@ entry:
   ret double %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_basicadj.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; Function Attrs: nounwind
 define double @func0000000000000008(i32 %0) #0 {
 entry:

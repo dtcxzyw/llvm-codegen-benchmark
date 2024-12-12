@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; linux/optimized/intel_color.ll
+; lvgl/optimized/lv_color.ll
 ; openjdk/optimized/UshortGray.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {

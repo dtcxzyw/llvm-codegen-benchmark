@@ -1,15 +1,15 @@
 
 ; 4 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; entt/optimized/meta_container.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/loop.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i8 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ne i64 %1, -1688849860263936
+  %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -19,11 +19,11 @@ entry:
 ; llvm/optimized/DiagnosticBuilderWrappers.cpp.ll
 ; yosys/optimized/opt_expr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -47,22 +47,22 @@ entry:
 ; llvm/optimized/X86PreTileConfig.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = icmp ne i8 %3, %0
+  %4 = icmp ne i8 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 15
   %3 = zext i1 %2 to i8
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 

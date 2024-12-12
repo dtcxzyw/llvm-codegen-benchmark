@@ -17,9 +17,15 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$32, %eax
 	setl	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorl	$960, %esi                      # imm = 0x3C0
 	andl	%edi, %esi
 	cmpl	$64, %esi
 	setae	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	$960, %esi                      # imm = 0x3C0
+	andl	%edi, %esi
+	cmpl	$64, %esi
+	setb	%al
 	retq

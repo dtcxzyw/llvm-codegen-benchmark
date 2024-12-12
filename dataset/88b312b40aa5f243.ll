@@ -16,8 +16,7 @@ entry:
   ret i64 %3
 }
 
-; 13 occurrences:
-; cmake/optimized/archive_read_disk_set_standard_lookup.c.ll
+; 12 occurrences:
 ; coreutils-rs/optimized/11hiuykak1azonq6.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/mpih-div.ll

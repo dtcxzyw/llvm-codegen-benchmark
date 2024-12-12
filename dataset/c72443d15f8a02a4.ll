@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 137 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
@@ -15,7 +15,6 @@
 ; c3c/optimized/parse_stmt.c.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; cmake/optimized/xmltok.c.ll
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; cpython/optimized/xmltok.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/export.c.ll
@@ -72,6 +71,7 @@
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; meshoptimizer/optimized/stripifier.cpp.ll
 ; minetest/optimized/objdef.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise_x86.cpp.ll
@@ -87,6 +87,7 @@
 ; openjdk/optimized/cmscgats.ll
 ; openjdk/optimized/jcmaster.ll
 ; openmpi/optimized/coll_base_topo.ll
+; openspiel/optimized/2048.cc.ll
 ; openssl/optimized/libcrypto-lib-v3_ncons.ll
 ; openssl/optimized/libcrypto-shlib-v3_ncons.ll
 ; openusd/optimized/dataSourceMaterialNetworkInterface.cpp.ll
@@ -133,6 +134,8 @@
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
@@ -190,7 +193,7 @@ entry:
   ret i1 %3
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -200,6 +203,7 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
+; graphviz/optimized/spring_electrical.c.ll
 ; gromacs/optimized/dasum.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/sasum.cpp.ll
@@ -244,15 +248,14 @@ entry:
   ret i1 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
-; nuttx/optimized/lib_libvsprintf.c.ll
+; lvgl/optimized/lv_table.ll
+; lvgl/optimized/lv_tick.ll
 ; opencv/optimized/hough.cpp.ll
-; opencv/optimized/scale_layer.cpp.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; postgres/optimized/brin.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
@@ -267,20 +270,16 @@ entry:
   ret i1 %3
 }
 
-; 18 occurrences:
+; 14 occurrences:
 ; clamav/optimized/dlp.c.ll
-; clamav/optimized/lzxd.c.ll
-; darktable/optimized/CrwDecompressor.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; icu/optimized/dtptngen.ll
 ; libjpeg-turbo/optimized/jccoefct.c.ll
-; libjpeg-turbo/optimized/jcmaster.c.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/tcp_input.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/jccoefct.ll
 ; postgres/optimized/brin.ll
@@ -302,6 +301,18 @@ define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, %0
+  ret i1 %3
+}
+
+; 3 occurrences:
+; clamav/optimized/lzxd.c.ll
+; darktable/optimized/CrwDecompressor.cpp.ll
+; libjpeg-turbo/optimized/jcmaster.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = freeze i32 %1
+  %3 = icmp samesign ugt i32 %2, %0
   ret i1 %3
 }
 
@@ -333,6 +344,17 @@ define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ule i32 %2, %0
+  ret i1 %3
+}
+
+; 2 occurrences:
+; nuttx/optimized/lib_libvsprintf.c.ll
+; opencv/optimized/scale_layer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = freeze i32 %1
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 

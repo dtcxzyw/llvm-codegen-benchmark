@@ -3,7 +3,7 @@
 ; gromacs/optimized/lmmin.cpp.ll
 ; quantlib/optimized/lmdif.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, double %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %2, 0.000000e+00
   %4 = icmp eq i32 %0, %1

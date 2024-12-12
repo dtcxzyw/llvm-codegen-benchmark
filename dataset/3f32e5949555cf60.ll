@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/ellipse.c.ll
@@ -13,7 +13,6 @@
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/polynom_solver.cpp.ll
 ; openjdk/optimized/cmspcs.ll
-; proj/optimized/fahey.cpp.ll
 ; proj/optimized/nicol.cpp.ll
 ; proj/optimized/putp3.cpp.ll
 ; quantlib/optimized/hestonprocess.ll

@@ -5,7 +5,7 @@
 define i64 @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = shl nuw nsw i64 %4, 15
   ret i64 %5
 }
@@ -19,7 +19,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl nsw i64 %4, 1
   ret i64 %5
 }
@@ -50,12 +50,12 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl nsw i64 %4, 1
   ret i64 %5
 }
 
-; 49 occurrences:
+; 58 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/avif.c.ll
 ; darktable/optimized/exr.cc.ll
@@ -84,7 +84,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/libnode.node_trace_buffer.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; opencv/optimized/attention_layer.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
@@ -105,16 +104,26 @@ entry:
 ; spike/optimized/vse16_v.ll
 ; spike/optimized/vse32_v.ll
 ; spike/optimized/vse64_v.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5q8zw1h1kdgz0fiksol53zkaa.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/c6zcqmm1tlbhiy5p6czlxqg9e.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %4, 1
   ret i64 %5
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -134,7 +143,6 @@ entry:
 ; minetest/optimized/mg_biome.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openblas/optimized/common.c.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
@@ -155,7 +163,7 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -166,6 +174,8 @@ entry:
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -175,7 +185,7 @@ entry:
   ret i64 %5
 }
 
-; 22 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
@@ -187,7 +197,6 @@ entry:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; ncnn/optimized/deformableconv2d.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
@@ -198,6 +207,12 @@ entry:
 ; openmpi/optimized/coll_han_scatter.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; yosys/optimized/coolrunner2_sop.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -219,11 +234,10 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_blurs.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/pq4_fast_scan.cpp.ll
-; gromacs/optimized/forcerec.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
@@ -234,7 +248,7 @@ entry:
 define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl nsw i64 %4, 5
   ret i64 %5
 }
@@ -276,7 +290,7 @@ entry:
 define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = shl i64 %4, 32
   ret i64 %5
 }
@@ -348,7 +362,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; eastl/optimized/Int128_t.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/mpih-div.ll
@@ -356,13 +370,12 @@ entry:
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
-; spike/optimized/s_mul64To128M.ll
 ; spike/optimized/umar64.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %4, 32
   ret i64 %5
 }

@@ -9,7 +9,20 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000038(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 16
+  %4 = select i1 %1, i32 %3, i32 %2
+  %5 = icmp samesign ugt i32 %4, 255
+  %6 = or disjoint i32 %0, 8
+  %7 = select i1 %5, i32 %6, i32 %0
+  ret i32 %7
+}
+
+; 1 occurrences:
+; sentencepiece/optimized/int128.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = select i1 %1, i32 %3, i32 %2

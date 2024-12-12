@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; lightgbm/optimized/sample_strategy.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/blackformula.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind

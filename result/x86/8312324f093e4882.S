@@ -1,4 +1,4 @@
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	leaq	1(%rdx), %rax
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
@@ -18,11 +18,6 @@ func0000000000000002:                   # @func0000000000000002
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
-	leaq	-1(%rdx), %rax
-	imulq	%rsi, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000012:                   # @func0000000000000012
 	addq	$-32, %rdx
 	imulq	%rsi, %rdx
@@ -38,13 +33,18 @@ func000000000000001c:                   # @func000000000000001c
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	leaq	-1(%rdx), %rax
+func0000000000000032:                   # @func0000000000000032
+	leaq	1(%rdx), %rax
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000032:                   # @func0000000000000032
-	leaq	1(%rdx), %rax
+func0000000000000016:                   # @func0000000000000016
+	incq	%rdx
+	imulq	%rsi, %rdx
+	leaq	(%rdi,%rdx,4), %rax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	leaq	4(%rdx), %rax
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
@@ -53,20 +53,32 @@ func0000000000000036:                   # @func0000000000000036
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	leaq	-1(%rdx), %rax
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	decq	%rdx
+	imulq	%rsi, %rdx
+	leaq	(%rdi,%rdx,4), %rax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	incq	%rdx
+	imulq	%rsi, %rdx
+	leaq	(%rdx,%rdx,2), %rax
+	leaq	(%rdi,%rax,8), %rax
 	retq
 func0000000000000038:                   # @func0000000000000038
 	incq	%rdx
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,2), %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	decq	%rdx
+func0000000000000013:                   # @func0000000000000013
+	incq	%rdx
 	imulq	%rsi, %rdx
-	leaq	(%rdi,%rdx,8), %rax
+	leaq	(%rdx,%rdx,2), %rax
+	leaq	(%rdi,%rax,8), %rax
 	retq
 func0000000000000023:                   # @func0000000000000023
 	incq	%rdx
@@ -83,11 +95,6 @@ func0000000000000014:                   # @func0000000000000014
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
 	retq
-func0000000000000013:                   # @func0000000000000013
-	decq	%rdx
-	imulq	%rsi, %rdx
-	leaq	(%rdi,%rdx,8), %rax
-	retq
 func000000000000000b:                   # @func000000000000000b
 	decq	%rdx
 	imulq	%rsi, %rdx
@@ -100,11 +107,6 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000006:                   # @func0000000000000006
 	decq	%rdx
-	imulq	%rsi, %rdx
-	leaq	(%rdi,%rdx,8), %rax
-	retq
-func0000000000000020:                   # @func0000000000000020
-	incq	%rdx
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
 	retq

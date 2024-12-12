@@ -28,15 +28,15 @@ entry:
 ; wireshark/optimized/packet-drbd.c.ll
 ; wireshark/optimized/packet-h248.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a6(i32 %0, ptr %1) #0 {
+define ptr @func00000000000001e6(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp slt i32 %0, 0
   %.v = select i1 %2, i64 32, i64 8
-  %3 = getelementptr nusw i8, ptr %1, i64 %.v
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %.v
   ret ptr %3
 }
 
-; 255 occurrences:
+; 265 occurrences:
 ; abc/optimized/dsc.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaMan.c.ll
@@ -67,6 +67,8 @@ entry:
 ; assimp/optimized/UnrealLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/b3File.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
@@ -110,7 +112,6 @@ entry:
 ; gromacs/optimized/mpiinfo.cpp.ll
 ; gromacs/optimized/readpull.cpp.ll
 ; gromacs/optimized/reduce.cpp.ll
-; gromacs/optimized/scan.cpp.ll
 ; gromacs/optimized/sm_keywords.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5Dchunk.c.ll
@@ -129,8 +130,12 @@ entry:
 ; linux/optimized/trace_events.ll
 ; linux/optimized/transport.ll
 ; llama.cpp/optimized/common.cpp.ll
+; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
+; llvm/optimized/InputFile.cpp.ll
+; llvm/optimized/MachineScheduler.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
 ; luajit/optimized/minilua.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -199,7 +204,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -228,12 +232,17 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cpuid.ll
 ; openssl/optimized/libcrypto-shlib-http_client.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_hw.ll
+; openusd/optimized/env.cpp.ll
+; openusd/optimized/info.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/reporter.cpp.ll
 ; php/optimized/ir_ra.ll
 ; php/optimized/tar.ll
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/be-fsstubs.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/encode.ll
 ; postgres/optimized/formatting.ll
@@ -284,41 +293,40 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/sls_engine.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a1(i32 %0, ptr %1) #0 {
+define ptr @func00000000000001e1(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 2
   %.v = select i1 %2, i64 40, i64 48
-  %3 = getelementptr nusw i8, ptr %1, i64 %.v
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %.v
   ret ptr %3
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/limex_simd256.c.ll
 ; hyperscan/optimized/limex_simd384.c.ll
 ; hyperscan/optimized/limex_simd512.c.ll
-; icu/optimized/normalizer2impl.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
-; luau/optimized/lstrlib.cpp.ll
 ; openjdk/optimized/hb-buffer.ll
 ; rocksdb/optimized/index_builder.cc.ll
 ; wireshark/optimized/voip_calls.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a4(i32 %0, ptr %1) #0 {
+define ptr @func00000000000001e4(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ult i32 %0, 3
   %.v = select i1 %2, i64 40, i64 216
-  %3 = getelementptr nusw i8, ptr %1, i64 %.v
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %.v
   ret ptr %3
 }
 
@@ -327,18 +335,23 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; wireshark/optimized/packet-adb.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ac(i32 %0, ptr %1) #0 {
+define ptr @func00000000000001ec(i32 %0, ptr %1) #0 {
 entry:
   %.not = icmp eq i32 %0, 0
   %.v = select i1 %.not, i64 24, i64 40
-  %2 = getelementptr nusw i8, ptr %1, i64 %.v
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 %.v
   ret ptr %2
 }
 
-; 1 occurrences:
+; 6 occurrences:
+; cvc5/optimized/linear_equality.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; quantlib/optimized/energyvanillaswap.ll
+; wireshark/optimized/dot11decrypt.c.ll
+; wireshark/optimized/packet-aeron.c.ll
+; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(i32 %0, ptr %1) #0 {
+define ptr @func00000000000001ea(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, 0
   %.v = select i1 %2, i64 224, i64 240
@@ -351,7 +364,7 @@ entry:
 ; openmpi/optimized/comm_ft_reliable_bcast.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000081(i32 %0, ptr %1) #0 {
+define ptr @func0000000000000181(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %.v = select i1 %2, i64 248, i64 252
@@ -359,71 +372,37 @@ entry:
   ret ptr %3
 }
 
-; 5 occurrences:
-; cvc5/optimized/linear_equality.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; wireshark/optimized/dot11decrypt.c.ll
-; wireshark/optimized/packet-aeron.c.ll
-; wireshark/optimized/packet-tcp.c.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000aa(i32 %0, ptr %1) #0 {
-entry:
-  %2 = icmp sgt i32 %0, 3
-  %.v = select i1 %2, i64 8, i64 12
-  %3 = getelementptr nusw i8, ptr %1, i64 %.v
-  ret ptr %3
-}
-
-; 1 occurrences:
-; llvm/optimized/ASTWriterStmt.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000b1(i32 %0, ptr %1) #0 {
-entry:
-  %2 = icmp eq i32 %0, 0
-  %.v = select i1 %2, i64 16, i64 32
-  %3 = getelementptr nusw i8, ptr %1, i64 %.v
-  ret ptr %3
-}
-
-; 10 occurrences:
-; llvm/optimized/InputFile.cpp.ll
-; llvm/optimized/MachineScheduler.cpp.ll
-; llvm/optimized/SemaAttr.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; openusd/optimized/env.cpp.ll
-; openusd/optimized/info.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/mallocTag.cpp.ll
-; openusd/optimized/pointInstancerAdapter.cpp.ll
-; openusd/optimized/reporter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000f1(i32 %0, ptr %1) #0 {
-entry:
-  %2 = icmp eq i32 %0, 1
-  %.v = select i1 %2, i64 176, i64 180
-  %3 = getelementptr nusw nuw i8, ptr %1, i64 %.v
-  ret ptr %3
-}
-
 ; 1 occurrences:
 ; wireshark/optimized/voip_calls.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a8(i32 %0, ptr %1) #0 {
+define ptr @func00000000000001e8(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ugt i32 %0, 255
   %.v = select i1 %2, i64 232, i64 208
-  %3 = getelementptr nusw i8, ptr %1, i64 %.v
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %.v
   ret ptr %3
 }
 
 ; 1 occurrences:
 ; openmpi/optimized/comm_ft_reliable_bcast.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(i32 %0, ptr %1) #0 {
+define ptr @func0000000000000061(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %.v = select i1 %2, i64 256, i64 248
   %3 = getelementptr i8, ptr %1, i64 %.v
+  ret ptr %3
+}
+
+; 2 occurrences:
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000141(i32 %0, ptr %1) #0 {
+entry:
+  %2 = icmp eq i32 %0, 0
+  %.v = select i1 %2, i64 -96, i64 -32
+  %3 = getelementptr nusw i8, ptr %1, i64 %.v
   ret ptr %3
 }
 
@@ -447,6 +426,28 @@ entry:
   %.v = select i1 %.not, i64 67, i64 68
   %2 = getelementptr i8, ptr %1, i64 %.v
   ret ptr %2
+}
+
+; 1 occurrences:
+; icu/optimized/normalizer2impl.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000144(i32 %0, ptr %1) #0 {
+entry:
+  %2 = icmp ult i32 %0, 65536
+  %.v = select i1 %2, i64 -2, i64 -4
+  %3 = getelementptr nusw i8, ptr %1, i64 %.v
+  ret ptr %3
+}
+
+; 1 occurrences:
+; graphviz/optimized/dotsplines.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000161(i32 %0, ptr %1) #0 {
+entry:
+  %2 = icmp eq i32 %0, 2
+  %.v = select i1 %2, i64 56, i64 -8
+  %3 = getelementptr nusw i8, ptr %1, i64 %.v
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

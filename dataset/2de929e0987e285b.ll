@@ -18,7 +18,7 @@ entry:
   ret i32 %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; clamav/optimized/XzDec.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
@@ -28,7 +28,6 @@ entry:
 ; linux/optimized/xhci-hub.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/ProcessHandleImpl_unix.ll
-; openjdk/optimized/ciMethod.ll
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/nlsat_evaluator.cpp.ll
 ; Function Attrs: nounwind
@@ -40,16 +39,15 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; c3c/optimized/target.c.ll
+; 2 occurrences:
 ; hyperscan/optimized/fdr_engine_description.cpp.ll
 ; luau/optimized/Simplify.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 3
-  %4 = and i1 %3, %1
-  %5 = select i1 %4, i32 32, i32 %0
+  %3 = icmp ugt i64 %2, 1
+  %4 = and i1 %1, %3
+  %5 = select i1 %4, i32 2, i32 %0
   ret i32 %5
 }
 

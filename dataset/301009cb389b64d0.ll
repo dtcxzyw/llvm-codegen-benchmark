@@ -19,12 +19,11 @@ entry:
   ret i64 %4
 }
 
-; 218 occurrences:
+; 217 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; git/optimized/hash-lookup.ll
-; gromacs/optimized/merge_sort.c.ll
 ; libquic/optimized/sample_vector.cc.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/arch-ppc64v1.cc.ll
@@ -247,7 +246,7 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -256,6 +255,7 @@ entry:
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; folly/optimized/Random.cpp.ll
 ; llvm/optimized/RandomNumberGenerator.cpp.ll

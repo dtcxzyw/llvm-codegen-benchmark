@@ -19,11 +19,10 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; bullet3/optimized/b3Solver.ll
-; gromacs/optimized/box.cpp.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; mitsuba3/optimized/rectangle.cpp.ll
 ; opencv/optimized/depth_to_3d.cpp.ll
@@ -40,25 +39,6 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; darktable/optimized/NefDecoder.cpp.ll
-; gromacs/optimized/dssp.cpp.ll
-; gromacs/optimized/vsite_parm.cpp.ll
-; minetest/optimized/server.cpp.ll
-; openexr/optimized/ImfHeader.cpp.ll
-; openvdb/optimized/FastSweeping.cc.ll
-; pbrt-v4/optimized/shapes.cpp.ll
-; tinyobjloader/optimized/tiny_obj_loader.cc.ll
-; yoga/optimized/Node.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(float %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = or i1 %1, %2
-  %4 = fcmp ogt float %0, 3.100750e+05
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; minetest/optimized/clientenvironment.cpp.ll
 ; Function Attrs: nounwind
@@ -70,12 +50,28 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; darktable/optimized/NefDecoder.cpp.ll
+; gromacs/optimized/dssp.cpp.ll
+; openexr/optimized/ImfHeader.cpp.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; tinyobjloader/optimized/tiny_obj_loader.cc.ll
+; yoga/optimized/Node.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, float %2) #0 {
+entry:
+  %3 = fcmp olt float %2, 0.000000e+00
+  %4 = or i1 %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 5 occurrences:
 ; darktable/optimized/introspection_crop.c.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; oiio/optimized/icooutput.cpp.ll
 ; oiio/optimized/pngoutput.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; openjdk/optimized/DirectAudioDevice.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, i1 %1, float %2) #0 {
@@ -111,8 +107,7 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; gromacs/optimized/box.cpp.ll
+; 4 occurrences:
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -141,10 +136,10 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/box.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000002(float %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i1 %1, float %2) #0 {
 entry:
-  %3 = or i1 %1, %2
-  %4 = fcmp uno float %0, 0.000000e+00
+  %3 = fcmp ueq float %2, 0x7FF0000000000000
+  %4 = or i1 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }

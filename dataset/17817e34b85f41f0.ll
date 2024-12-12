@@ -5,7 +5,7 @@
 ; bullet3/optimized/b3GeometryUtil.ll
 ; bullet3/optimized/btGeometryUtil.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cb(float %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006cb(float %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp ne i64 %3, %1
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/btLemkeAlgorithm.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cd(float %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006cd(float %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp ne i64 %3, %1
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c8(float %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004c8(float %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ne i64 %3, %1

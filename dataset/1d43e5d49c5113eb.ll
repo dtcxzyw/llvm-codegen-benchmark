@@ -1,5 +1,5 @@
 
-; 123 occurrences:
+; 133 occurrences:
 ; assimp/optimized/OgreStructs.cpp.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
@@ -34,8 +34,18 @@
 ; imgui/optimized/imgui.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/DWARFExpression.cpp.ll
+; llvm/optimized/DWARFUnit.cpp.ll
+; llvm/optimized/DWARFVerifier.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/InstrProfCorrelator.cpp.ll
+; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
+; llvm/optimized/Signals.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
+; llvm/optimized/UnixAPIChecker.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/Autocomplete.cpp.ll
 ; luau/optimized/ConstraintGenerator.cpp.ll
 ; luau/optimized/Frontend.cpp.ll
@@ -124,61 +134,50 @@
 ; z3/optimized/spacer_context.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func000000000000000c(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 384
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 384
   %4 = trunc i8 %1 to i1
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
 }
 
-; 9 occurrences:
+; 18 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; crow/optimized/example_ws.cpp.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; graphviz/optimized/postproc.c.ll
-; hyperscan/optimized/ng_calc_components.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
-; tls-rs/optimized/59h61akxu6z29dlt.ll
-; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
-  %4 = trunc nuw i8 %1 to i1
-  %5 = select i1 %4, ptr %0, ptr %3
-  ret ptr %5
-}
-
-; 2 occurrences:
 ; quantlib/optimized/americanpayoffathit.ll
 ; quantlib/optimized/crosscurrencyratehelpers.ll
+; tls-rs/optimized/59h61akxu6z29dlt.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; zed-rs/optimized/27vlvcehd5fwhym4kjj7notsh.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 328
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = trunc nuw i8 %1 to i1
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
 }
 
-; 11 occurrences:
-; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
-; llvm/optimized/DWARFExpression.cpp.ll
-; llvm/optimized/DWARFUnit.cpp.ll
-; llvm/optimized/DWARFVerifier.cpp.ll
-; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/InstrProfCorrelator.cpp.ll
-; llvm/optimized/ParentMapContext.cpp.ll
-; llvm/optimized/Signals.cpp.ll
-; llvm/optimized/SourceManager.cpp.ll
-; llvm/optimized/UnixAPIChecker.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
+; 3 occurrences:
+; hyperscan/optimized/ng_calc_components.cpp.ll
+; hyperscan/optimized/ng_repeat.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000c(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000008(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 104
+  %3 = getelementptr nusw i8, ptr %2, i64 -24
   %4 = trunc i8 %1 to i1
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
@@ -193,6 +192,17 @@ define ptr @func0000000000000000(ptr %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
   %4 = trunc i8 %1 to i1
+  %5 = select i1 %4, ptr %0, ptr %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; hyperscan/optimized/ng_calc_components.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = trunc nuw i8 %1 to i1
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
 }

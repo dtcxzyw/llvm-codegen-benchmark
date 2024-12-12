@@ -23,8 +23,18 @@ func0000000000000002:                   # @func0000000000000002
 	incb	%sil
 	shlxl	%esi, %edi, %eax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	andl	$7, %edi
+	addb	$7, %sil
+	shlxl	%esi, %edi, %eax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	andl	$1, %edi
 	decb	%sil
+	shlxl	%esi, %edi, %eax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	andl	$1, %edi
+	incb	%sil
 	shlxl	%esi, %edi, %eax
 	retq

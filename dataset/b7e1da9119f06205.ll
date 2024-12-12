@@ -48,13 +48,18 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 6 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul nsw i64 %2, 3897
-  %4 = mul nsw i64 %1, -6810
+  %3 = mul nsw i64 %2, -3600
+  %4 = mul nsw i64 %1, -60
   %5 = add nsw i64 %4, %3
   %6 = sub nsw i64 %5, %0
   ret i64 %6

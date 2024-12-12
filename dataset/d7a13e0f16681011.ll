@@ -1,5 +1,44 @@
 
-; 67 occurrences:
+; 102 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/throw_on_error.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; c3c/optimized/compiler.c.ll
 ; clamav/optimized/clamfi.c.ll
 ; clamav/optimized/freshclam.c.ll
@@ -35,9 +74,6 @@
 ; php/optimized/proc_open.ll
 ; postgres/optimized/pg_regress.ll
 ; postgres/optimized/postmaster.ll
-; postgres/optimized/wait_error.ll
-; postgres/optimized/wait_error_shlib.ll
-; postgres/optimized/wait_error_srv.ll
 ; protobuf/optimized/subprocess.cc.ll
 ; qemu/optimized/.._libqtest.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
@@ -55,7 +91,6 @@
 ; slurm/optimized/jobcomp_script.ll
 ; slurm/optimized/launch.ll
 ; slurm/optimized/mgr.ll
-; slurm/optimized/pdebug.ll
 ; slurm/optimized/prep_script_slurmd.ll
 ; slurm/optimized/prep_slurmctld.ll
 ; slurm/optimized/salloc.ll
@@ -76,7 +111,7 @@ entry:
   ret i32 %3
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/node_builder.cpp.ll
 ; freetype/optimized/sfnt.c.ll
@@ -86,7 +121,6 @@ entry:
 ; icu/optimized/uresdata.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; linux/optimized/alps.ll
-; linux/optimized/i915_irq.ll
 ; linux/optimized/stats.ll
 ; llvm/optimized/Globals.cpp.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
@@ -144,7 +178,7 @@ entry:
 ; icu/optimized/ucharstrieiterator.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/uncore_nhmex.ll
-; qemu/optimized/hw_pci_shpc.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; qemu/optimized/tcg.c.ll
 ; quickjs/optimized/libunicode.ll
 ; tev/optimized/Common.cpp.ll
@@ -153,9 +187,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 2
-  %2 = and i32 %1, 124
-  %3 = add nsw i32 %2, -4
+  %1 = shl i32 %0, 3
+  %2 = and i32 %1, 2040
+  %3 = add nsw i32 %2, -48
   ret i32 %3
 }
 

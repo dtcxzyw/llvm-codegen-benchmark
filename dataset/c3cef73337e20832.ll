@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; graphviz/optimized/position.c.ll
-; openblas/optimized/dggsvp3.c.ll
 ; opencv/optimized/thresh.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind

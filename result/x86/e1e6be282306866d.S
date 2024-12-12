@@ -4,7 +4,12 @@ func0000000000000041:                   # @func0000000000000041
 	movslq	%edi, %rax
 	addq	%rax, %rax
 	retq
-func0000000000000040:                   # @func0000000000000040
+func0000000000000061:                   # @func0000000000000061
+	subl	%esi, %edi
+	addl	$-68, %edi
+	movslq	%edi, %rax
+	retq
+func0000000000000060:                   # @func0000000000000060
 	subq	%rsi, %rdi
 	addq	$-8, %rdi
 	shrq	$4, %rdi

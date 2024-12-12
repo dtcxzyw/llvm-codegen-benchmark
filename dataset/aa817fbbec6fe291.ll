@@ -1,12 +1,12 @@
 
-; 110 occurrences:
-; abc/optimized/abcFx.c.ll
+; 111 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cecIso.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaLf.c.ll
+; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ivyDsd.c.ll
 ; abc/optimized/wlnBlast.c.ll
 ; assimp/optimized/PlyExporter.cpp.ll
@@ -22,7 +22,6 @@
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/masks.c.ll
-; flac/optimized/ogg_decoder_aspect.c.ll
 ; git/optimized/block.ll
 ; git/optimized/checkout.ll
 ; git/optimized/convert.ll
@@ -39,7 +38,6 @@
 ; icu/optimized/ubidi.ll
 ; jq/optimized/regparse.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
-; libquic/optimized/d1_lib.c.ll
 ; linux/optimized/arp.ll
 ; linux/optimized/auditfilter.ll
 ; linux/optimized/balloc.ll
@@ -86,6 +84,7 @@
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/blockdev.c.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rtextures.c.ll
 ; ruby/optimized/compile.ll
@@ -108,13 +107,15 @@
 ; z3/optimized/optsmt.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 3
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -156,7 +157,6 @@ entry:
 ; linux/optimized/percpu.ll
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; nuttx/optimized/lib_strtold.c.ll
@@ -185,6 +185,7 @@ entry:
 ; proj/optimized/unitconvert.cpp.ll
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quantlib/optimized/thirty360.ll
 ; quest/optimized/QuEST.c.ll
 ; quickjs/optimized/libbf.ll
@@ -205,20 +206,17 @@ entry:
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 11 occurrences:
+; 8 occurrences:
 ; abc/optimized/cnfPost.c.ll
-; bdwgc/optimized/gc.c.ll
-; draco/optimized/symbol_encoding.cc.ll
+; boost/optimized/text_file_backend.ll
 ; flac/optimized/format.c.ll
 ; linux/optimized/intel_guc_submission.ll
-; linux/optimized/page_alloc.ll
 ; openssl/optimized/rpktest-bin-rpktest.ll
-; php/optimized/pcre2_xclass.ll
 ; quickjs/optimized/quickjs.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; yosys/optimized/lz4.ll
@@ -231,7 +229,7 @@ entry:
   ret i32 %4
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/nwkTiming.c.ll
 ; abc/optimized/wlnRetime.c.ll
 ; darktable/optimized/styles.c.ll
@@ -247,7 +245,6 @@ entry:
 ; ncnn/optimized/gridsample_x86_avx.cpp.ll
 ; ncnn/optimized/gridsample_x86_avx512.cpp.ll
 ; ncnn/optimized/gridsample_x86_fma.cpp.ll
-; nuttx/optimized/lib_daysbeforemonth.c.ll
 ; openjdk/optimized/DirectAudioDevice.ll
 ; openssl/optimized/libcrypto-lib-bn_mpi.ll
 ; openssl/optimized/libcrypto-shlib-bn_mpi.ll
@@ -271,12 +268,24 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 3 occurrences:
+; bdwgc/optimized/gc.c.ll
+; draco/optimized/symbol_encoding.cc.ll
+; linux/optimized/page_alloc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 32
+  %3 = and i1 %0, %2
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 10 occurrences:
 ; git/optimized/block.ll
 ; gromacs/optimized/pme_solve.cpp.ll
 ; jq/optimized/regcomp.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/page_alloc.ll
 ; oniguruma/optimized/regcomp.ll
@@ -292,13 +301,23 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
-; linux/optimized/jitterentropy.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 1
+  %3 = and i1 %2, %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; linux/optimized/jitterentropy.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 99
   %3 = and i1 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4

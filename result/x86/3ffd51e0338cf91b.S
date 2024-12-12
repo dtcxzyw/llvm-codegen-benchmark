@@ -1,25 +1,25 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	cmpl	$-2147483647, %edi              # imm = 0x80000001
 	setae	%al
 	retq
-func0000000000000318:                   # @func0000000000000318
+func0000000000000c38:                   # @func0000000000000c38
 	decl	%edi
 	cmpl	$27, %edi
 	setb	%al
 	retq
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	movl	%edi, %eax
 	shrl	$31, %eax
 	retq
-func00000000000001a4:                   # @func00000000000001a4
+func0000000000000554:                   # @func0000000000000554
 	cmpl	$-128, %edi
 	setge	%al
 	retq
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	cmpl	$-128, %edi
 	setge	%al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000154:                   # @func0000000000000154
 	cmpl	$-3, %edi
 	setge	%al
 	retq

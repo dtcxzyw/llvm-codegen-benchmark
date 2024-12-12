@@ -6,7 +6,7 @@
 ; openusd/optimized/strtod.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000043(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9007199254740990
   %3 = or disjoint i64 %2, 9007199254740992

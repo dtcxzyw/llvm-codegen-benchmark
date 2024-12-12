@@ -21,7 +21,7 @@ func0000000000000035:                   # @func0000000000000035
 	.long	4294967294                      # 0xfffffffe
 func0000000000000011:                   # @func0000000000000011
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -30,7 +30,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000030:                   # @func0000000000000030
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 func0000000000000020:                   # @func0000000000000020
@@ -45,13 +45,13 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000014:                   # @func0000000000000014
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 func0000000000000034:                   # @func0000000000000034
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI11_0:

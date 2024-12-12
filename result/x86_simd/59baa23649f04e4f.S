@@ -32,27 +32,27 @@ func0000000000000004:                   # @func0000000000000004
 	vzeroupper
 	retq
 .LCPI2_0:
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
 func000000000000000c:                   # @func000000000000000c
-	vpand	%xmm2, %xmm1, %xmm1
-	vpsllw	$7, %xmm1, %xmm1
-	vpmovb2m	%xmm1, %k1
-	vpcmpneqw	.LCPI2_0(%rip), %ymm0, %k0 {%k1}
+	vpand	%xmm1, %xmm0, %xmm0
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	vpcmpneqw	.LCPI2_0(%rip), %ymm2, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

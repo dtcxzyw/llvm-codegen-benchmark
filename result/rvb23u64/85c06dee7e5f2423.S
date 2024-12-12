@@ -84,8 +84,3 @@ func0000000000000034:                   # @func0000000000000034
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000038:                   # @func0000000000000038
-	feq.s	a2, fa0, fa0
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ret

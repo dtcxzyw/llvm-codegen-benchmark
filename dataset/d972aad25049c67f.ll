@@ -1,36 +1,45 @@
 
-; 2 occurrences:
-; qemu/optimized/block_qed.c.ll
-; qemu/optimized/block_vhdx.c.ll
+; 5 occurrences:
+; cmake/optimized/zstd_opt.c.ll
+; fmt/optimized/format-impl-test.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; postgres/optimized/tableam.ll
+; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0) #0 {
+define i32 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 3
-  %2 = call range(i32 0, 33) i32 @llvm.cttz.i32(i32 %1, i1 false)
+  %1 = lshr i32 %0, 20
+  %2 = tail call range(i32 0, 33) i32 @llvm.ctlz.i32(i32 %1, i1 true)
   ret i32 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i32 @llvm.cttz.i32(i32, i1 immarg) #1
+declare i32 @llvm.ctlz.i32(i32, i1 immarg) #1
 
-; 1 occurrences:
-; llvm/optimized/ThreadSanitizer.cpp.ll
+; 4 occurrences:
+; cvc5/optimized/fp_word_blaster.cpp.ll
+; openmpi/optimized/tm_bucket.ll
+; openusd/optimized/write.c.ll
+; yosys/optimized/const2ast.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0) #0 {
+define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = lshr exact i32 %0, 3
-  %2 = call noundef range(i32 0, 33) i32 @llvm.cttz.i32(i32 %1, i1 false)
+  %1 = lshr i32 %0, 1
+  %2 = tail call range(i32 1, 33) i32 @llvm.ctlz.i32(i32 %1, i1 false)
   ret i32 %2
 }
 
-; 2 occurrences:
-; llvm/optimized/AddressSanitizer.cpp.ll
-; llvm/optimized/HWAddressSanitizer.cpp.ll
+; 5 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/CGObjCMac.cpp.ll
+; llvm/optimized/RewriteModernObjC.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 3
-  %2 = call noundef range(i32 0, 33) i32 @llvm.cttz.i32(i32 %1, i1 false)
+  %2 = call noundef range(i32 0, 33) i32 @llvm.ctlz.i32(i32 %1, i1 false)
   ret i32 %2
 }
 

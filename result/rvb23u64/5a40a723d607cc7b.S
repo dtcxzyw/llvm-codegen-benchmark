@@ -8,17 +8,19 @@ func0000000000000008:                   # @func0000000000000008
 	bseti	a1, zero, 35
 	add	a0, a0, a1
 	ret
-func0000000000000030:                   # @func0000000000000030
-	slli	a0, a0, 2
-	addi	a0, a0, 4
-	andi	a0, a0, -32
-	addi	a0, a0, -4
-	ret
 func000000000000001d:                   # @func000000000000001d
 	slli	a0, a0, 1
 	addi	a0, a0, 6
 	andi	a0, a0, -8
 	addi	a0, a0, -2
+	ret
+func0000000000000030:                   # @func0000000000000030
+	slli	a0, a0, 59
+	bseti	a1, zero, 60
+	add	a0, a0, a1
+	srli	a0, a0, 61
+	slli	a0, a0, 61
+	addi	a0, a0, -1
 	ret
 func000000000000003d:                   # @func000000000000003d
 	slli	a0, a0, 1

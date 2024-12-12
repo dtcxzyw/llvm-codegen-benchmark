@@ -1,20 +1,16 @@
 
-; 13 occurrences:
-; cvc5/optimized/proof_cnf_stream.cpp.ll
+; 9 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
-; darktable/optimized/DngDecoder.cpp.ll
-; darktable/optimized/introspection_liquify.c.ll
 ; llvm/optimized/MCStreamer.cpp.ll
+; lvgl/optimized/lv_style.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
-; mitsuba3/optimized/jitruntime.cpp.ll
-; mitsuba3/optimized/rastack.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/compile.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nuw nsw i64 %1, 63
@@ -28,16 +24,17 @@ entry:
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/rastack.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0) #0 {
+define i1 @func0000000000000074(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nuw nsw i64 %1, 2305843009213693951
   %3 = and i64 %2, 2305843009213693951
-  %4 = icmp ult i64 %3, 3
+  %4 = icmp samesign ult i64 %3, 3
   ret i1 %4
 }
 
-; 64 occurrences:
+; 63 occurrences:
+; boost/optimized/options_description.ll
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
 ; cvc5/optimized/regexp_elim.cpp.ll
@@ -97,13 +94,11 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nsw i64 %1, -1
@@ -122,18 +117,17 @@ entry:
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 6
-  %2 = and i32 %1, 7
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = and i32 %0, 7
+  %2 = icmp eq i32 %1, 2
+  ret i1 %2
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0) #0 {
+define i1 @func00000000000000ac(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = icmp eq i32 %1, 0
@@ -146,7 +140,7 @@ entry:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0) #0 {
+define i1 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = sub i32 0, %0
   %2 = and i32 %1, 255
@@ -157,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0) #0 {
+define i1 @func00000000000000e1(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 7
   %2 = and i32 %1, -8
@@ -169,12 +163,12 @@ entry:
 ; postgres/optimized/nodeHash.ll
 ; postgres/optimized/rewriteheap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0) #0 {
+define i1 @func0000000000000078(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nuw nsw i64 %1, 7
   %3 = and i64 %2, 8589934584
-  %4 = icmp ugt i64 %3, 8160
+  %4 = icmp samesign ugt i64 %3, 8160
   ret i1 %4
 }
 
@@ -182,7 +176,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0) #0 {
+define i1 @func000000000000006c(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 0
   ret i1 %1

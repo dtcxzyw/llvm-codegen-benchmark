@@ -63,12 +63,12 @@ func0000000000000019:                   # @func0000000000000019
 	notl	%edi
 	addl	%edi, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000035:                   # @func0000000000000035
 	leal	(%rsi,%rdx), %eax
 	subl	%edi, %eax
 	addl	$-719163, %eax                  # imm = 0xFFF506C5
 	retq
-func0000000000000035:                   # @func0000000000000035
+func0000000000000034:                   # @func0000000000000034
 	leal	(%rsi,%rdx), %eax
 	subl	%edi, %eax
 	addl	$-719163, %eax                  # imm = 0xFFF506C5

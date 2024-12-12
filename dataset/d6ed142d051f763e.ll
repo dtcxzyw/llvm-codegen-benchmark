@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; clamav/optimized/packlibs.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000883(i32 %0) #0 {
+define i32 @func0000000000001083(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 31999
   %2 = zext i1 %1 to i32

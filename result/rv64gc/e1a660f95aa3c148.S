@@ -14,10 +14,6 @@ func0000000000000031:                   # @func0000000000000031
 	slli	a0, a0, 1
 	addw	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
-	slli	a0, a0, 1
-	addw	a0, a0, a1
-	ret
 func0000000000000010:                   # @func0000000000000010
 	slli	a0, a0, 1
 	addw	a0, a0, a1

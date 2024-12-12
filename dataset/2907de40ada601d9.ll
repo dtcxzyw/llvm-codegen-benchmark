@@ -1,16 +1,17 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; openjdk/optimized/cmsgamma.ll
 ; postgres/optimized/rewriteHandler.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; rust-analyzer-rs/optimized/266k6bqg3m0kg73d.ll
-; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
 ; rust-analyzer-rs/optimized/2bwlvqntjk72kr6f.ll
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rust-analyzer-rs/optimized/4x4kq4gfl0tghxcw.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, ptr %1) #0 {
 entry:

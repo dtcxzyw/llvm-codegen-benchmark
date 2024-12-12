@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; openjdk/optimized/codeBuffer.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/jvmciCodeInstaller.ll
 ; openusd/optimized/stbImage.cpp.ll
+; pocketpy/optimized/vm.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
@@ -15,9 +16,8 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openspiel/optimized/tarok.cc.ll
-; pocketpy/optimized/vm.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
 entry:

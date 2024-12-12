@@ -1,4 +1,13 @@
-func00000000000000a8:                   // @func00000000000000a8
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+	and	x8, x2, #0xfffffffffffffff8
+	add	x8, x1, x8
+	add	x8, x8, #8
+	cmp	x8, x0
+	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000000168:                   // @func0000000000000168
 // %bb.0:                               // %entry
 	add	x8, x2, #7
 	and	x8, x8, #0xfffffffffffffff8
@@ -8,7 +17,7 @@ func00000000000000a8:                   // @func00000000000000a8
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000001a4:                   // @func00000000000001a4
+func00000000000003e4:                   // @func00000000000003e4
 // %bb.0:                               // %entry
 	add	w8, w2, #10
 	and	x8, x8, #0xfffffffe
@@ -18,17 +27,26 @@ func00000000000001a4:                   // @func00000000000001a4
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func0000000000000604:                   // @func0000000000000604
 // %bb.0:                               // %entry
-	sub	x8, x2, #4
-	and	x8, x8, #0xfffffffffffffff0
+	sub	w8, w2, #1
 	add	x8, x1, x8
-	add	x8, x8, #16
+	add	x8, x8, #1
+	cmp	x8, x0
+	cset	w0, lo
+	ret
+                                        // -- End function
+func00000000000001e8:                   // @func00000000000001e8
+// %bb.0:                               // %entry
+	add	w8, w2, #76
+	and	x8, x8, #0xfffffffe
+	add	x8, x1, x8
+	add	x8, x8, #1
 	cmp	x8, x0
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000001a1:                   // @func00000000000001a1
+func00000000000003e1:                   // @func00000000000003e1
 // %bb.0:                               // %entry
 	sub	w8, w2, #1
 	mov	w9, #56                         // =0x38
@@ -39,7 +57,7 @@ func00000000000001a1:                   // @func00000000000001a1
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000101:                   // @func0000000000000101
+func0000000000000201:                   // @func0000000000000201
 // %bb.0:                               // %entry
 	sub	x8, x2, #1
 	and	x8, x8, #0xfffffffffffffff8
@@ -49,7 +67,7 @@ func0000000000000101:                   // @func0000000000000101
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000a1:                   // @func00000000000000a1
+func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
 	sub	w8, w2, #2
 	mov	w9, #56                         // =0x38

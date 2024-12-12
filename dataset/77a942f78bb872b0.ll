@@ -4,7 +4,7 @@
 ; openjdk/optimized/hb-aat-layout.ll
 ; wireshark/optimized/packet-asterix.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
   %4 = icmp ne i8 %3, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/rewriter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -2
   %4 = icmp eq i8 %3, -74
@@ -29,7 +29,7 @@ entry:
 ; php/optimized/zend_jit_vm_helpers.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp ne i8 %3, 0
@@ -52,7 +52,7 @@ entry:
 ; openusd/optimized/legacyDisplayStyleOverrideSceneIndex.cpp.ll
 ; wireshark/optimized/packet-rtpproxy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 8
   %4 = icmp eq i8 %3, 0
@@ -67,7 +67,7 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -4
   %4 = icmp ne i8 %3, -36
@@ -77,9 +77,21 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_flex.ll
+; Function Attrs: nounwind
+define i1 @func000000000000014c(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 2
+  %4 = icmp ne i8 %3, 0
+  %5 = icmp sgt i32 %0, %1
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; hermes/optimized/RegexParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 8
   %4 = icmp eq i8 %3, 0
@@ -91,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 7
   %4 = icmp ne i8 %3, 3
@@ -104,7 +116,7 @@ entry:
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; wireshark/optimized/packet-ipv6.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
@@ -116,7 +128,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/pcm_lib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000ac(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp ne i8 %3, 0

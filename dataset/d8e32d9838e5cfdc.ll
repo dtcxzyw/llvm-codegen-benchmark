@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; velox/optimized/MmapAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 4
   %4 = icmp ult i64 %0, %1
@@ -33,18 +33,6 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; linux/optimized/dmar.ll
-; wireshark/optimized/packet-pkcs12.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 1
-  %4 = icmp ult i64 %0, %1
-  %5 = select i1 %4, i32 0, i32 %3
-  ret i32 %5
-}
-
 ; 5 occurrences:
 ; openmpi/optimized/ad_nfs_read.ll
 ; openmpi/optimized/ad_nfs_write.ll
@@ -52,7 +40,7 @@ entry:
 ; openmpi/optimized/ad_write_str.ll
 ; openmpi/optimized/onesided_aggregation.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp eq i64 %0, %1
@@ -67,7 +55,7 @@ entry:
 ; openmpi/optimized/ad_write_nolock.ll
 ; openmpi/optimized/ad_write_str_naive.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000017(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000027(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %.not = icmp sgt i64 %0, %1
@@ -76,9 +64,20 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/dmar.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
+  %4 = icmp ult i64 %0, %1
+  %5 = select i1 %4, i32 0, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i64 %0, %1

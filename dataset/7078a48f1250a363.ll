@@ -12,9 +12,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; flac/optimized/bitreader.c.ll
-; linux/optimized/gen6_ppgtt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
@@ -24,7 +23,7 @@ entry:
   ret i32 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/bmcCexTools.c.ll
 ; cmake/optimized/gzwrite.c.ll
@@ -42,6 +41,7 @@ entry:
 ; llvm/optimized/OMPContext.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
 ; slurm/optimized/accounting_storage_slurmdbd.ll
+; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind

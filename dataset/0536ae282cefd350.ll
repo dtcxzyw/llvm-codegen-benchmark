@@ -12,7 +12,7 @@ define i1 @func0000000000000004(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
   %4 = fcmp olt float %3, 1.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -94,7 +94,7 @@ define i1 @func0000000000000006(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
   %4 = fcmp ult float %3, 0.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -144,7 +144,7 @@ define i1 @func000000000000000a(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
   %4 = fcmp ugt float %3, 8.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -166,18 +166,7 @@ define i1 @func0000000000000014(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
   %4 = fcmp ole float %3, 0.000000e+00
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/ieeeck.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, float %1, float %2) #0 {
-entry:
-  %3 = fmul float %1, %2
-  %4 = fcmp ord float %3, 0.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

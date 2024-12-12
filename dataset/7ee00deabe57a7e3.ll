@@ -1,9 +1,10 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/attribute_name.ll
 ; jemalloc/optimized/prof_data.ll
 ; jemalloc/optimized/prof_data.pic.ll
 ; jemalloc/optimized/prof_data.sym.ll
@@ -36,7 +37,8 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/attribute_name.ll
 ; jemalloc/optimized/prof_data.ll
 ; jemalloc/optimized/prof_data.pic.ll
 ; jemalloc/optimized/prof_data.sym.ll

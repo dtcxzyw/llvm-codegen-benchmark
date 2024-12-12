@@ -24,9 +24,8 @@ func0000000000000001:                   // @func0000000000000001
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
-	mov	x9, #9223372036854775804        // =0x7ffffffffffffffc
-	cmp	x8, x9
-	csinv	x0, x0, xzr, ls
+	cmp	x8, #31
+	csel	x0, xzr, x0, hi
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004

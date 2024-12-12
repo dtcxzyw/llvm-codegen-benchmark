@@ -1,6 +1,20 @@
 
-; 163 occurrences:
+; 179 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/qrsqp.cpp.ll
@@ -30,6 +44,8 @@
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; darktable/optimized/darkroom.c.ll
+; darktable/optimized/introspection_bilateral.cc.ll
+; darktable/optimized/introspection_tonemap.cc.ll
 ; flac/optimized/encode.c.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; graphviz/optimized/arrows.c.ll

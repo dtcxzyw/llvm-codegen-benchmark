@@ -6,11 +6,11 @@
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -22,11 +22,11 @@ entry:
 ; postgres/optimized/partbounds.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -42,22 +42,22 @@ entry:
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, 16382
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; postgres/optimized/execute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 

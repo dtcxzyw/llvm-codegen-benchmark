@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.quad	0x3ff199999999999a              # double 1.1000000000000001
+	.quad	0x414f580000000000              # double 4108288
 func0000000000000002:                   # @func0000000000000002
 	vmulsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	vcvttsd2usi	%xmm0, %rax

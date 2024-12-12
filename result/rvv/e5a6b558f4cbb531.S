@@ -10,14 +10,14 @@ func0000000000000000:                   # @func0000000000000000
 	vrsub.vx	v10, v10, a0
 	vwaddu.wv	v8, v8, v10
 	ret
-func000000000000001f:                   # @func000000000000001f
-	li	a0, 48
+func000000000000001c:                   # @func000000000000001c
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vrsub.vx	v10, v10, a0
 	vwaddu.wv	v8, v8, v10
 	ret
-func000000000000001c:                   # @func000000000000001c
-	li	a0, 32
+func000000000000001f:                   # @func000000000000001f
+	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vrsub.vx	v10, v10, a0
 	vwaddu.wv	v8, v8, v10

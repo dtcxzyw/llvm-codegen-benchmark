@@ -1,5 +1,6 @@
 
-; 30 occurrences:
+; 31 occurrences:
+; bdwgc/optimized/gc.c.ll
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/ChecksumFile.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
@@ -34,7 +35,7 @@
 define i64 @func0000000000000002(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, -1
-  %4 = or i1 %3, %2
+  %4 = or i1 %2, %3
   %5 = select i1 %4, i64 %0, i64 %1
   ret i64 %5
 }
@@ -56,7 +57,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, -8446744073709551617
-  %4 = or i1 %3, %2
+  %4 = or i1 %2, %3
   %5 = select i1 %4, i64 %0, i64 %1
   ret i64 %5
 }

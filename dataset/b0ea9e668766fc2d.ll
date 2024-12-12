@@ -5,7 +5,7 @@
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 15
   %3 = or disjoint i32 %2, 2
@@ -17,11 +17,11 @@ entry:
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; openjdk/optimized/jquant2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000d4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = or i32 %2, 28
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 
@@ -34,7 +34,7 @@ entry:
 ; openjdk/optimized/samplePriorityQueue.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -82,7 +82,7 @@ entry:
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -96,7 +96,7 @@ entry:
 ; php/optimized/ir_ra.ll
 ; php/optimized/spl_heap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = or disjoint i32 %2, 1
@@ -107,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = or disjoint i32 %2, 6
@@ -120,7 +120,7 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -144,7 +144,7 @@ entry:
 ; postgres/optimized/binaryheap_shlib.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -152,25 +152,34 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; cpython/optimized/sre.ll
+; 2 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; icu/optimized/uset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 
-; 3 occurrences:
-; abc/optimized/solver_api.c.ll
+; 1 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b4(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 1
+  %3 = or disjoint i32 %2, 1
+  %4 = icmp samesign ult i32 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; abc/optimized/solver_api.c.ll
 ; icu/optimized/ucnv_ext.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -191,7 +200,7 @@ entry:
 ; z3/optimized/sat_probing.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -208,7 +217,7 @@ entry:
 ; wireshark/optimized/packet-ecpri.c.ll
 ; z3/optimized/nlsat_evaluator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -219,7 +228,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -227,14 +236,11 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; clamav/optimized/upack.c.ll
-; wireshark/optimized/packet-cip.c.ll
 ; wireshark/optimized/packet-vnc.c.ll
-; zxing/optimized/ODDataBarExpandedReader.cpp.ll
-; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 10
   %3 = or disjoint i32 %2, 180
@@ -277,11 +283,35 @@ entry:
 ; zfp/optimized/encode4i.c.ll
 ; zfp/optimized/encode4l.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = or disjoint i32 %2, 4
   %4 = icmp ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 3 occurrences:
+; wireshark/optimized/packet-cip.c.ll
+; zxing/optimized/ODDataBarExpandedReader.cpp.ll
+; zxing/optimized/ODDataBarReader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f8(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 2
+  %3 = or disjoint i32 %2, 2
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; cpython/optimized/sre.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e4(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 1
+  %3 = or disjoint i32 %2, 1
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 

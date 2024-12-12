@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 26 occurrences:
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/mpmPre.c.ll
@@ -15,15 +15,12 @@
 ; openjdk/optimized/hb-face-builder.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-set.ll
-; openmpi/optimized/tm_mt.ll
 ; php/optimized/hash_tiger.ll
 ; php/optimized/hash_xxhash.ll
 ; postgres/optimized/namespace.ll
 ; postgres/optimized/pgstat.ll
 ; postgres/optimized/pgstat_shmem.ll
 ; quantlib/optimized/mt19937uniformrng.ll
-; quest/optimized/mt19937ar.c.ll
-; redis/optimized/mt19937-64.ll
 ; redis/optimized/quicklist.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; ruby/optimized/parser_st.ll

@@ -1,5 +1,5 @@
 
-; 225 occurrences:
+; 221 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/abcDec.c.ll
@@ -27,14 +27,12 @@
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bdcDec.c.ll
-; abc/optimized/bdcTable.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cnfCut.c.ll
 ; abc/optimized/cswCut.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/darRefact.c.ll
@@ -94,12 +92,9 @@
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; abc/optimized/lpkCut.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/lpkMulti.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/luckyRead.c.ll
 ; abc/optimized/luckySwap.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/nwkBidec.c.ll
@@ -141,6 +136,7 @@
 ; linux/optimized/resize.ll
 ; linux/optimized/services.ll
 ; linux/optimized/tg3.ll
+; linux/optimized/xhci.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -233,7 +229,7 @@ entry:
   ret i32 %3
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcNpnSave.c.ll
@@ -249,7 +245,6 @@ entry:
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
@@ -318,7 +313,7 @@ entry:
   ret i32 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/amapParse.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -332,7 +327,6 @@ entry:
 ; abc/optimized/luckySwap.c.ll
 ; darktable/optimized/filtering.c.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
-; linux/optimized/i915_gem_busy.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/tg3.ll
@@ -346,12 +340,13 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; openusd/optimized/av1_loopfilter.c.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; verilator/optimized/V3Expand.cpp.ll

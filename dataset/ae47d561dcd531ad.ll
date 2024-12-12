@@ -136,9 +136,9 @@ entry:
 ; wireshark/optimized/packet-c15ch.c.ll
 ; wireshark/optimized/packet-ethertype.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %0, %1
+  %2 = icmp samesign ult i32 %0, %1
   %3 = select i1 %2, i32 0, i32 %1
   %4 = sub nsw i32 %0, %3
   ret i32 %4
@@ -147,9 +147,9 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CombinerHelperVectorOps.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000053(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %0, %1
+  %2 = icmp samesign ult i32 %0, %1
   %3 = select i1 %2, i32 0, i32 %1
   %4 = sub nuw nsw i32 %0, %3
   ret i32 %4

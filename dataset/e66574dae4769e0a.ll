@@ -3,7 +3,7 @@
 ; abc/optimized/abcLut.c.ll
 ; wireshark/optimized/byte_view_text.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = shl nuw i32 1, %0
@@ -27,7 +27,7 @@ entry:
 ; node/optimized/libnode.traced_value.ll
 ; openspiel/optimized/observer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = shl nuw nsw i32 1, %0

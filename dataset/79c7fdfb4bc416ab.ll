@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; lightgbm/optimized/network.cpp.ll
 ; linux/optimized/intel_overlay.ll
+; lvgl/optimized/lv_color.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; Function Attrs: nounwind

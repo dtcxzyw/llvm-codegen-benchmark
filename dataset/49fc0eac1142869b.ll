@@ -1,10 +1,9 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mincore.ll
 ; linux/optimized/mprotect.ll

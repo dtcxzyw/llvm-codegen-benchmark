@@ -10,7 +10,18 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_border.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sle i32 %1, %2
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
+}
+
+; 18 occurrences:
+; lvgl/optimized/lv_draw_sw_border.ll
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
@@ -38,6 +49,16 @@ entry:
 
 ; 2 occurrences:
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %.not = icmp samesign ugt i32 %1, %2
+  %3 = select i1 %.not, i1 true, i1 %0
+  ret i1 %3
+}
+
+; 1 occurrences:
 ; z3/optimized/seq_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {

@@ -15,12 +15,12 @@
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -36,48 +36,52 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_char_riscv_htif.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; velox/optimized/Ntile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000018a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp slt i64 %5, %0
+  %6 = icmp sgt i64 %0, %5
   ret i1 %6
 }
 
-; 4 occurrences:
+; 8 occurrences:
 ; freetype/optimized/smooth.c.ll
 ; graphviz/optimized/sfprint.c.ll
 ; slurm/optimized/parse.ll
 ; velox/optimized/Ntile.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp slt i64 %5, %0
+  %6 = icmp sgt i64 %0, %5
   ret i1 %6
 }
 
@@ -86,12 +90,12 @@ entry:
 ; openspiel/optimized/infostate_tree.cc.ll
 ; pbrt-v4/optimized/media.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -99,16 +103,17 @@ entry:
 ; git/optimized/column.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; libquic/optimized/url_parse.cc.ll
 ; openblas/optimized/dgghd3.c.ll
@@ -116,12 +121,12 @@ entry:
 ; opencv/optimized/pooling_layer.cpp.ll
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
@@ -129,12 +134,12 @@ entry:
 ; libquic/optimized/url_parse.cc.ll
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000126(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
@@ -148,12 +153,12 @@ entry:
 ; yosys/optimized/sim.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -161,12 +166,12 @@ entry:
 ; yosys/optimized/abc9_ops.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -189,12 +194,12 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -209,9 +214,9 @@ entry:
 define i1 @func0000000000000001(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -219,24 +224,24 @@ entry:
 ; openspiel/optimized/battleship.cc.ll
 ; zxing/optimized/DMBitLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/twixtboard.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -250,21 +255,21 @@ entry:
 define i1 @func0000000000000006(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/vmscan.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -275,45 +280,45 @@ entry:
 define i1 @func0000000000000004(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; ozz-animation/optimized/stream.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/stardetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp slt i64 %5, %0
+  %6 = icmp sgt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/stardetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000012a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp slt i64 %5, %0
+  %6 = icmp sgt i64 %0, %5
   ret i1 %6
 }
 

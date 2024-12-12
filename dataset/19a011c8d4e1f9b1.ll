@@ -1,5 +1,5 @@
 
-; 119 occurrences:
+; 118 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -82,7 +82,6 @@
 ; abc/optimized/plaRead.c.ll
 ; abc/optimized/plaSimple.c.ll
 ; abc/optimized/saigPhase.c.ll
-; abc/optimized/satUtil.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdPath.c.ll
 ; abc/optimized/sfmDec.c.ll
@@ -97,9 +96,9 @@
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; libquic/optimized/error_correction.c.ll
-; libquic/optimized/x_long.c.ll
 ; linux/optimized/intel_pstate.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
 ; openjdk/optimized/ByteGray.ll

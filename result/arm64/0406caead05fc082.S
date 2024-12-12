@@ -1,30 +1,43 @@
-func00000000000000c1:                   // @func00000000000000c1
+func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
-	movi	v4.8h, #6
-	cmeq	v1.8h, v1.8h, #0
-	cmeq	v0.8h, v0.8h, #0
-	uzp1	v0.16b, v0.16b, v1.16b
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	cmeq	v3.8h, v3.8h, #0
-	cmeq	v2.8h, v2.8h, #0
-	uzp1	v2.16b, v2.16b, v3.16b
-	bic	v0.16b, v0.16b, v2.16b
+	tst	w0, #0xffff
+	cset	w8, eq
+	tst	w1, #0x6
+	csel	w0, wzr, w8, eq
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v4.8h, #207, lsl #8
-	movi	v5.8h, #65, lsl #8
-	movi	v6.8h, #65
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	cmeq	v1.8h, v1.8h, v6.8h
-	cmeq	v0.8h, v0.8h, v6.8h
-	cmeq	v3.8h, v3.8h, v5.8h
-	cmeq	v2.8h, v2.8h, v5.8h
-	uzp1	v0.16b, v0.16b, v1.16b
-	uzp1	v2.16b, v2.16b, v3.16b
-	and	v0.16b, v0.16b, v2.16b
+	mov	w8, #52992                      // =0xcf00
+	and	w9, w0, #0xffff
+	and	w8, w1, w8
+	cmp	w9, #65
+	mov	w9, #16640                      // =0x4100
+	ccmp	w8, w9, #0, eq
+	cset	w0, eq
+	ret
+                                        // -- End function
+func000000000000018c:                   // @func000000000000018c
+// %bb.0:                               // %entry
+	tst	w0, #0xffff
+	cset	w8, ne
+	and	w0, w8, w1, lsr #7
+	ret
+                                        // -- End function
+func0000000000000024:                   // @func0000000000000024
+// %bb.0:                               // %entry
+	mov	w8, #8161                       // =0x1fe1
+	and	w9, w1, #0x1f
+	cmp	w8, w0, uxth
+	ccmp	w9, #28, #0, hi
+	cset	w0, eq
+	ret
+                                        // -- End function
+func000000000000002c:                   // @func000000000000002c
+// %bb.0:                               // %entry
+	and	w8, w0, #0xffff
+	tst	w1, #0x1000
+	ccmp	w8, #3, #4, eq
+	cset	w0, ne
 	ret
                                         // -- End function

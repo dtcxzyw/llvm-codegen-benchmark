@@ -28,12 +28,16 @@ func0000000000000004:                   # @func0000000000000004
 	flt.d	a0, fa5, fa4
 	ret
 .LCPI3_0:
-	.quad	0x408f400000000000              # double 1000
+	.quad	0x41dfffffff800000              # double 2147483646
+.LCPI3_1:
+	.quad	0x3ff0000000000000              # double 1
 func0000000000000003:                   # @func0000000000000003
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	fdiv.d	fa4, fa0, fa5
-	fle.d	a0, fa5, fa4
+	lui	a0, %hi(.LCPI3_1)
+	fld	fa4, %lo(.LCPI3_1)(a0)
+	fdiv.d	fa5, fa0, fa5
+	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 .LCPI4_0:
@@ -76,30 +80,30 @@ func000000000000000b:                   # @func000000000000000b
 	xori	a0, a0, 1
 	ret
 .LCPI7_0:
-	.quad	0x408f400000000000              # double 1000
-func000000000000000c:                   # @func000000000000000c
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
-	fdiv.d	fa4, fa0, fa5
-	fle.d	a0, fa5, fa4
-	ret
-.LCPI8_0:
-	.quad	0x3ff5a305532617c2              # double 1.3523000000000001
-func0000000000000001:                   # @func0000000000000001
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
-	fdiv.d	fa5, fa0, fa5
-	feq.d	a0, fa5, fa5
-	xori	a0, a0, 1
-	ret
-.LCPI9_0:
 	.quad	0x4018000000000000              # double 6
 func000000000000000a:                   # @func000000000000000a
-	lui	a0, %hi(.LCPI9_0)
-	fld	fa5, %lo(.LCPI9_0)(a0)
+	lui	a0, %hi(.LCPI7_0)
+	fld	fa5, %lo(.LCPI7_0)(a0)
 	fdiv.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa5, fa4
+	ret
+.LCPI8_0:
+	.quad	0x408f400000000000              # double 1000
+func000000000000000c:                   # @func000000000000000c
+	lui	a0, %hi(.LCPI8_0)
+	fld	fa5, %lo(.LCPI8_0)(a0)
+	fdiv.d	fa4, fa0, fa5
+	fle.d	a0, fa5, fa4
+	ret
+.LCPI9_0:
+	.quad	0x3ff5a305532617c2              # double 1.3523000000000001
+func0000000000000001:                   # @func0000000000000001
+	lui	a0, %hi(.LCPI9_0)
+	fld	fa5, %lo(.LCPI9_0)(a0)
+	fdiv.d	fa5, fa0, fa5
+	feq.d	a0, fa5, fa5
+	xori	a0, a0, 1
 	ret
 .LCPI10_0:
 	.quad	0x3ff3333333333333              # double 1.2

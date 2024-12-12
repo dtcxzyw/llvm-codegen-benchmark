@@ -34,6 +34,12 @@ func000000000000000a:                   # @func000000000000000a
 	setns	%al
 	andb	%sil, %al
 	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpb	$5, %dl
+	setb	%al
+	orl	%esi, %edi
+	andb	%dil, %al
+	retq
 func0000000000000010:                   # @func0000000000000010
 	cmpb	$2, %dl
 	setae	%al

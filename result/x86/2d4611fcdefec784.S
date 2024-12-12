@@ -1,4 +1,4 @@
-func0000000000000254:                   # @func0000000000000254
+func00000000000008a4:                   # @func00000000000008a4
 	addb	%dil, %dl
 	cmpb	%sil, %dl
 	setbe	%cl

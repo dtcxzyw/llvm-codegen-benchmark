@@ -1,13 +1,13 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpcmpltub	%xmm0, %xmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpcmpeqb	%xmm0, %xmm1, %xmm0
 	retq
-func0000000000000025:                   # @func0000000000000025
+func0000000000000045:                   # @func0000000000000045
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpcmpleub	%xmm0, %xmm1, %k0
 	vpmovm2b	%k0, %xmm0
@@ -26,11 +26,6 @@ func0000000000000001:                   # @func0000000000000001
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpcmpeqb	%xmm0, %xmm1, %xmm0
 	retq
-func0000000000000038:                   # @func0000000000000038
-	vpaddb	%xmm2, %xmm1, %xmm1
-	vpcmpnleub	%xmm0, %xmm1, %k0
-	vpmovm2b	%k0, %xmm0
-	retq
 func0000000000000008:                   # @func0000000000000008
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpcmpnleub	%xmm0, %xmm1, %k0
@@ -45,7 +40,12 @@ func0000000000000006:                   # @func0000000000000006
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpcmpgtb	%xmm1, %xmm0, %xmm0
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000068:                   # @func0000000000000068
+	vpaddb	%xmm2, %xmm1, %xmm1
+	vpcmpnleub	%xmm0, %xmm1, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+func0000000000000064:                   # @func0000000000000064
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpcmpltub	%xmm0, %xmm1, %k0
 	vpmovm2b	%k0, %xmm0

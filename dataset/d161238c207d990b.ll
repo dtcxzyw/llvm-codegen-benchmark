@@ -3,7 +3,7 @@
 ; gromacs/optimized/datastorage.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64
@@ -16,13 +16,27 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64
   %5 = add nsw i64 %4, %3
   %6 = add i64 %0, 1
   %7 = icmp ult i64 %6, %5
+  ret i1 %7
+}
+
+; 2 occurrences:
+; opencv/optimized/qrcode_encoder.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sext i32 %1 to i64
+  %5 = add nsw i64 %4, %3
+  %6 = add nuw i64 %0, 1
+  %7 = icmp eq i64 %6, %5
   ret i1 %7
 }
 
@@ -40,7 +54,7 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64

@@ -4,7 +4,7 @@
 ; libuv/optimized/tty.c.ll
 ; node/optimized/tty.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = icmp eq i32 %3, 0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/gen6_ppgtt.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4194304
   %4 = icmp eq i32 %3, 0
@@ -36,19 +36,6 @@ entry:
   %4 = icmp eq i32 %3, 15
   %5 = or i32 %1, 268435457
   %6 = or i32 %0, 1
-  %7 = select i1 %4, i32 %6, i32 %5
-  ret i32 %7
-}
-
-; 1 occurrences:
-; linux/optimized/openclose.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 64
-  %4 = icmp eq i32 %3, 0
-  %5 = or disjoint i32 %1, 4194304
-  %6 = or i32 %0, 256
   %7 = select i1 %4, i32 %6, i32 %5
   ret i32 %7
 }

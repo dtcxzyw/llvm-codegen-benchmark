@@ -59,21 +59,32 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
-; linux/optimized/hdac_device.ll
+; 10 occurrences:
 ; openjdk/optimized/g1ConcurrentMark.ll
 ; openjdk/optimized/g1FullGCMarker.ll
-; openjdk/optimized/g1OopClosures.ll
 ; openjdk/optimized/g1ParScanThreadState.ll
-; openjdk/optimized/g1RemSet.ll
-; openjdk/optimized/g1RootClosures.ll
-; openjdk/optimized/psCardTable.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/psScavenge.ll
 ; openjdk/optimized/shenandoahHeap.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
+; velox/optimized/Sequence.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 131071
+  %4 = icmp samesign ugt i32 %3, %1
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 5 occurrences:
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1OopClosures.ll
+; openjdk/optimized/g1RemSet.ll
+; openjdk/optimized/g1RootClosures.ll
+; openjdk/optimized/psCardTable.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -83,14 +94,14 @@ entry:
   ret i1 %5
 }
 
-; 31 occurrences:
+; 34 occurrences:
 ; abc/optimized/cecSolveG.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/sbdWin.c.ll
 ; freetype/optimized/truetype.c.ll
-; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
-; icu/optimized/rbbi_cache.ll
+; icu/optimized/uniset.ll
 ; linux/optimized/acpi_pm.ll
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/AArch64TargetParser.cpp.ll
@@ -99,10 +110,12 @@ entry:
 ; llvm/optimized/Availability.cpp.ll
 ; llvm/optimized/CGObjC.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
+; llvm/optimized/DXILEmitter.cpp.ll
 ; llvm/optimized/Darwin.cpp.ll
 ; llvm/optimized/DarwinSDKInfo.cpp.ll
 ; llvm/optimized/DeclBase.cpp.ll
 ; llvm/optimized/DylibVerifier.cpp.ll
+; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/InterfaceFile.cpp.ll
 ; llvm/optimized/MCStreamer.cpp.ll
 ; llvm/optimized/MSVCPaths.cpp.ll
@@ -114,12 +127,13 @@ entry:
 ; llvm/optimized/Targets.cpp.ll
 ; llvm/optimized/Triple.cpp.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ult i32 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -136,6 +150,21 @@ define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = icmp slt i32 %3, %1
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 5 occurrences:
+; abc/optimized/giaSatLE.c.ll
+; lief/optimized/psa_crypto.c.ll
+; openmpi/optimized/btl_sm_component.ll
+; openmpi/optimized/btl_sm_send.ll
+; openmpi/optimized/btl_sm_sendi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 15
+  %4 = icmp samesign ule i32 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -164,13 +193,14 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; lief/optimized/psa_crypto.c.ll
+; 2 occurrences:
+; hermes/optimized/HadesGC.cpp.ll
+; icu/optimized/rbbi_cache.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 63
-  %4 = icmp ule i32 %3, %1
+  %3 = and i32 %2, 268435455
+  %4 = icmp ult i32 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -187,14 +217,15 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; freetype/optimized/sfnt.c.ll
 ; hyperscan/optimized/mcsheng.c.ll
 ; linux/optimized/intel_dp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp samesign uge i32 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

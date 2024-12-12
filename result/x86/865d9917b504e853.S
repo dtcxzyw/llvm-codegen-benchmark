@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	subl	%edx, %esi
 	andl	$63, %esi
 	leaq	(%rdi,%rsi,4), %rax
@@ -25,12 +25,12 @@ func000000000000000c:                   # @func000000000000000c
 	movzwl	%si, %eax
 	addq	%rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	subl	%edx, %esi
 	andl	$536870911, %esi                # imm = 0x1FFFFFFF
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	subl	%edx, %esi
 	andl	$-32, %esi
 	leaq	(%rsi,%rdi), %rax

@@ -1,5 +1,5 @@
 
-; 942 occurrences:
+; 946 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/parser_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
@@ -19,6 +19,15 @@
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/cmd.ll
+; boost/optimized/cwd.ll
+; boost/optimized/exe.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process_name.ll
+; boost/optimized/src.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/cmArchiveWrite.cxx.ll
@@ -374,10 +383,7 @@
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
@@ -638,8 +644,6 @@
 ; postgres/optimized/prepare.ll
 ; postgres/optimized/utf8_and_gb18030.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/doc_comment.cc.ll
 ; protobuf/optimized/php_generator.cc.ll
@@ -950,16 +954,15 @@ entry:
   ret i32 %2
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; flac/optimized/metadata_object.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; php/optimized/hash_adler32.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = urem i32 %0, 65521
-  %2 = shl nuw i32 %1, 16
+  %1 = urem i32 %0, 255
+  %2 = shl nuw i32 %1, 24
   ret i32 %2
 }
 

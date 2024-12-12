@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
@@ -8,7 +8,6 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_perf.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/regmap-debugfs.ll

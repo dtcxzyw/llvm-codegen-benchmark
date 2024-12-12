@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 38 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; cpython/optimized/dtoa.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
@@ -36,6 +36,8 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(double %0) #0 {
 entry:

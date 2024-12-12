@@ -28,12 +28,25 @@ func0000000000000006:                   # @func0000000000000006
 	slti	a1, a1, 256
 	or	a0, a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	srli	a1, a1, 16
+	seqz	a1, a1
+	or	a0, a0, a1
+	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 1
-	beqz	a0, .LBB4_2
+	beqz	a0, .LBB5_2
 	andi	a1, a1, -456
-.LBB4_2:                                # %entry
+.LBB5_2:                                # %entry
 	sltiu	a0, a1, 8
+	xori	a0, a0, 1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a0, a0, 1
+	beqz	a0, .LBB6_2
+	andi	a1, a1, 255
+.LBB6_2:                                # %entry
+	sltiu	a0, a1, 9
 	xori	a0, a0, 1
 	ret
 func000000000000000a:                   # @func000000000000000a

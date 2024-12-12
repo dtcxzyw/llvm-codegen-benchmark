@@ -26,7 +26,7 @@ entry:
   ret i64 %4
 }
 
-; 19 occurrences:
+; 15 occurrences:
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
@@ -34,18 +34,14 @@ entry:
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
-; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -55,12 +51,11 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/idr.ll
 ; llvm/optimized/LegalizerInfo.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; postgres/optimized/acl.ll
 ; Function Attrs: nounwind

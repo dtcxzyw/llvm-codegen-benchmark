@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	orb	%dil, %dl
 	orb	%dl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	testl	%esi, %esi
 	sete	%al
 	orb	%dil, %dl

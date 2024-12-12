@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/pm_integer.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 217 occurrences:
+; 235 occurrences:
 ; abc/optimized/sclDnsize.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -106,6 +106,7 @@
 ; libjpeg-turbo/optimized/jfdctflt.c.ll
 ; libjpeg-turbo/optimized/jidctflt.c.ll
 ; libwebp/optimized/histogram_enc.c.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/decorate_background.cpp.ll
@@ -217,6 +218,23 @@
 ; xgboost/optimized/quantile.cc.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/5vh1wf9hqnwdftlb6xe6c9c43.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8mv6d566jv1jdve4gk2kn2bhk.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/a5zoltfqgma86dzb1rp0ilkm9.ll
+; zed-rs/optimized/ahd9e352ekh05680xrqpqafs1.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

@@ -6,7 +6,7 @@
 define i64 @func0000000000000002(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = freeze i128 %2
-  %4 = mul i128 %3, %1
+  %4 = mul i128 %1, %3
   %5 = sub i128 %0, %4
   %6 = trunc nuw i128 %5 to i64
   ret i64 %6
@@ -19,7 +19,7 @@ entry:
 define i64 @func0000000000000000(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = freeze i128 %2
-  %4 = mul i128 %3, %1
+  %4 = mul i128 %1, %3
   %5 = sub i128 %0, %4
   %6 = trunc i128 %5 to i64
   ret i64 %6
@@ -31,7 +31,7 @@ entry:
 define i64 @func0000000000000003(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = freeze i128 %2
-  %4 = mul i128 %3, %1
+  %4 = mul i128 %1, %3
   %5 = sub i128 %0, %4
   %6 = trunc nuw nsw i128 %5 to i64
   ret i64 %6
@@ -43,7 +43,7 @@ entry:
 define i64 @func0000000000000001(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = freeze i128 %2
-  %4 = mul i128 %3, %1
+  %4 = mul i128 %1, %3
   %5 = sub i128 %0, %4
   %6 = trunc nsw i128 %5 to i64
   ret i64 %6

@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/basic_iarchive.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; llvm/optimized/MSFBuilder.cpp.ll

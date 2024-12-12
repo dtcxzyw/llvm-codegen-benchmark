@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/genmbcs.ll
-; linux/optimized/inline.ll
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_CommonUtils.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; Function Attrs: nounwind

@@ -51,6 +51,16 @@ func000000000000000f:                   # @func000000000000000f
 	movslq	%edi, %rax
 	addq	$32, %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	leal	2(%rdi), %ecx
+	movabsq	$9223372036854775806, %rax      # imm = 0x7FFFFFFFFFFFFFFE
+	addq	%rcx, %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	leal	2(%rdi), %ecx
+	movabsq	$9223372036854775806, %rax      # imm = 0x7FFFFFFFFFFFFFFE
+	addq	%rcx, %rax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	leal	8(%rdi), %eax
 	retq

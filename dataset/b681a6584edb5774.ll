@@ -1,21 +1,19 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
 ; ncnn/optimized/convolutiondepthwise_x86.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_avx.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_avx512.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
-; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dlasq2.c.ll
 ; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
   %6 = getelementptr nusw i16, ptr %5, i64 %4
   ret ptr %6
 }
@@ -23,12 +21,25 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/IFCUtil.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000042(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = add i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr i8, ptr %0, i64 8
+  %6 = getelementptr nusw double, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; assimp/optimized/IFCUtil.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 2
+  %3 = add i32 %2, 4
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
   %6 = getelementptr nusw double, ptr %5, i64 %4
   ret ptr %6
 }
@@ -76,6 +87,20 @@ entry:
   %4 = sext i32 %2 to i64
   %5 = getelementptr double, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 16
+  ret ptr %6
+}
+
+; 2 occurrences:
+; openblas/optimized/dbdsvdx.c.ll
+; openblas/optimized/dlasq2.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 2
+  %3 = add i32 %2, -5
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %0, i64 -8
+  %6 = getelementptr nusw double, ptr %5, i64 %4
   ret ptr %6
 }
 

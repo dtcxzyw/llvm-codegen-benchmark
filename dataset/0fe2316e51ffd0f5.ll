@@ -3,7 +3,7 @@
 ; jq/optimized/decNumber.ll
 ; memcached/optimized/testapp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0) #0 {
+define i1 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = add nsw i64 %1, -37
@@ -11,11 +11,10 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
-; openexr/optimized/ImfHuf.cpp.ll
+; 1 occurrences:
 ; postgres/optimized/spgtextproc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -1
   %2 = sext i32 %1 to i64

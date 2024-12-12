@@ -6,8 +6,8 @@
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
-  %4 = mul i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -24,14 +24,16 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; linux/optimized/i9xx_wm.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
@@ -44,16 +46,18 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 16
-  %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; abc/optimized/extraUtilPerm.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_sprite.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; opencv/optimized/unicomblock.cpp.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
 ; openjdk/optimized/mlib_ImageConv_32nw.ll
@@ -72,7 +76,8 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_draw_sw.ll
 ; openjdk/optimized/cmsintrp.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Fp.ll
 ; openjdk/optimized/mlib_c_ImageConvClearEdge.ll
@@ -82,7 +87,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 2
   %4 = mul i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -93,7 +98,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 16
   %4 = mul i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -143,7 +148,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -155,7 +160,7 @@ define i32 @func0000000000000013(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 1
   %4 = mul i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -174,8 +179,19 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
-  %4 = mul nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = ashr i32 %2, 8
+  %4 = mul nuw nsw i32 %3, %1
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -185,7 +201,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }

@@ -18,7 +18,7 @@ entry:
   ret i32 %4
 }
 
-; 83 occurrences:
+; 84 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/decompress.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -68,6 +68,7 @@ entry:
 ; llvm/optimized/TargetTransformInfo.cpp.ll
 ; llvm/optimized/UpdateCompilerUsed.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll

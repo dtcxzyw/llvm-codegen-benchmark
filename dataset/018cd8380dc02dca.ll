@@ -11,16 +11,16 @@
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i32 %0, ptr %1) #0 {
+define ptr @func000000000000007f(i32 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 20
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 20
   %3 = zext nneg i32 %0 to i64
-  %4 = getelementptr nusw i8, ptr %2, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %2, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 207 occurrences:
+; 206 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libpng/optimized/pngrtran.c.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
@@ -113,7 +113,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/decl_collector.cpp.ll
@@ -229,12 +228,12 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i32 %0, ptr %1) #0 {
+define ptr @func000000000000006f(i32 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = zext i32 %0 to i64
-  %4 = getelementptr nusw i8, ptr %2, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %2, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 

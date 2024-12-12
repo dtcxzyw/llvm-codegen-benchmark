@@ -1,8 +1,7 @@
 
-; 14 occurrences:
+; 16 occurrences:
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -14,13 +13,16 @@
 ; verilator/optimized/V3Config.cpp.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 16, i64 20
   %4 = shl nuw nsw i64 %1, 1
   %5 = or disjoint i64 %4, %3
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -65,7 +67,7 @@ entry:
   %3 = select i1 %2, i64 -9223372036854775808, i64 0
   %4 = shl nuw nsw i64 %1, 52
   %5 = or disjoint i64 %4, %3
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -77,7 +79,7 @@ entry:
   %3 = select i1 %2, i64 3, i64 0
   %4 = shl nuw i64 %1, 2
   %5 = or disjoint i64 %4, %3
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

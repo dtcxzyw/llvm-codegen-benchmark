@@ -22,6 +22,12 @@ func000000000000002a:                   # @func000000000000002a
 	addl	%edi, %eax
 	shrl	$4, %eax
 	retq
+func000000000000003e:                   # @func000000000000003e
+	movzbl	%dl, %eax
+	imull	%esi, %eax
+	addl	%edi, %eax
+	shrl	$3, %eax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	movzbl	%dl, %eax
 	imull	%esi, %eax

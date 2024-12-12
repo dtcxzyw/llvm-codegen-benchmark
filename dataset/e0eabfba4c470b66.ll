@@ -1,4 +1,17 @@
 
+; 2 occurrences:
+; cpython/optimized/dtoa.ll
+; ruby/optimized/util.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or i32 %1, 1072693248
+  %3 = shl i32 %0, 20
+  %4 = add i32 %3, %2
+  %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
 ; 11 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll

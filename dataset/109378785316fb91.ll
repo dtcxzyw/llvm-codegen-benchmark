@@ -1,8 +1,10 @@
 
-; 29 occurrences:
+; 31 occurrences:
+; boost/optimized/within.ll
 ; graphviz/optimized/xlabels.c.ll
 ; gromacs/optimized/quadraticsplinetable.cpp.ll
 ; grpc/optimized/histogram_view.cc.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/render-sdf.cpp.ll

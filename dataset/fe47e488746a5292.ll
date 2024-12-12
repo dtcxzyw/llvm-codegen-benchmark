@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; slurm/optimized/ebpf.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000003f(i32 %0, i32 %1, i1 %2) #0 {
 entry:

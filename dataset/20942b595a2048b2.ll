@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i1 %0, i64 %1) #0 {

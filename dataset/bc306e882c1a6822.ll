@@ -1,12 +1,9 @@
 
-; 18 occurrences:
-; abc/optimized/giaPat2.c.ll
+; 15 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; ipopt/optimized/IpGenAugSystemSolver.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -22,11 +19,11 @@
 define i32 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
-; 54 occurrences:
+; 51 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
@@ -52,12 +49,9 @@ entry:
 ; oiio/optimized/tiffoutput.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dorm22.c.ll
@@ -85,11 +79,11 @@ entry:
 define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
-; 40 occurrences:
+; 36 occurrences:
 ; ncnn/optimized/diag.cpp.ll
 ; ncnn/optimized/gru.cpp.ll
 ; ncnn/optimized/lrn.cpp.ll
@@ -122,10 +116,6 @@ entry:
 ; openmpi/optimized/sharedfp_lockedfile_iwrite.ll
 ; openmpi/optimized/sharedfp_lockedfile_read.ll
 ; openmpi/optimized/sharedfp_lockedfile_write.ll
-; openmpi/optimized/sharedfp_sm_iread.ll
-; openmpi/optimized/sharedfp_sm_iwrite.ll
-; openmpi/optimized/sharedfp_sm_read.ll
-; openmpi/optimized/sharedfp_sm_write.ll
 ; postgres/optimized/reorderbuffer.ll
 ; quickjs/optimized/libbf.ll
 ; velox/optimized/MallocAllocator.cpp.ll
@@ -134,7 +124,7 @@ entry:
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -145,7 +135,7 @@ entry:
 define i32 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -157,7 +147,7 @@ entry:
 define i32 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 

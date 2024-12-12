@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.long	160                             # 0xa0
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpslld	$3, %ymm0, %ymm0
 	vpcmpgtd	.LCPI2_0(%rip){1to8}, %ymm0, %k0
@@ -36,7 +36,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI4_0:
 	.long	15                              # 0xf
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm0
 	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm0, %k0
@@ -62,7 +62,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI7_0:
 	.long	93                              # 0x5d
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm0
 	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm0, %k0

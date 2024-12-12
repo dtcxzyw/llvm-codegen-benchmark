@@ -1,9 +1,9 @@
 
-%"struct.drjit::half.2494059" = type { i16 }
-%"struct.OT::VarRegionAxis.2616094" = type { %"struct.OT::HBFixed.163.2616095", %"struct.OT::HBFixed.163.2616095", %"struct.OT::HBFixed.163.2616095" }
-%"struct.OT::HBFixed.163.2616095" = type { %"struct.OT::IntType.148.2616096" }
-%"struct.OT::IntType.148.2616096" = type { %struct.BEInt.149.2616097 }
-%struct.BEInt.149.2616097 = type { [2 x i8] }
+%"struct.drjit::half.2609360" = type { i16 }
+%"struct.OT::VarRegionAxis.2729548" = type { %"struct.OT::HBFixed.163.2729549", %"struct.OT::HBFixed.163.2729549", %"struct.OT::HBFixed.163.2729549" }
+%"struct.OT::HBFixed.163.2729549" = type { %"struct.OT::IntType.148.2729550" }
+%"struct.OT::IntType.148.2729550" = type { %struct.BEInt.149.2729551 }
+%struct.BEInt.149.2729551 = type { [2 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/regexec.ll
@@ -37,25 +37,35 @@ entry:
 ; openjdk/optimized/hb-ot-var.ll
 ; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 2
-  %6 = getelementptr nusw %"struct.drjit::half.2494059", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 2
+  %6 = getelementptr nusw nuw %"struct.drjit::half.2609360", ptr %5, i64 %4
   ret ptr %6
 }
 
-; 3 occurrences:
-; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dsfrk.c.ll
+; 1 occurrences:
+; mitsuba3/optimized/bitmap.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 4
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -75,12 +85,12 @@ entry:
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000004f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 4
-  %6 = getelementptr nusw %"struct.OT::VarRegionAxis.2616094", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %6 = getelementptr nusw nuw %"struct.OT::VarRegionAxis.2729548", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -95,12 +105,12 @@ entry:
 ; openjdk/optimized/pngrutil.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -121,25 +131,12 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 2 occurrences:
-; linux/optimized/memattr.ll
-; openblas/optimized/dlatrs3.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -151,6 +148,31 @@ entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 -8
+  %6 = getelementptr double, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 2 occurrences:
+; openblas/optimized/dlatrs3.c.ll
+; openblas/optimized/dsfrk.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000078(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nuw nsw i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %0, i64 -8
+  %6 = getelementptr double, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openblas/optimized/dlatrs3.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %0, i64 -8
   %6 = getelementptr double, ptr %5, i64 %4
   ret ptr %6
 }
@@ -170,12 +192,12 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/pfr.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 4
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 

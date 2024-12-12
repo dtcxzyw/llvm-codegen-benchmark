@@ -10,8 +10,8 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a0, a1, 32
 	add.uw	a0, a1, a0
 	vand.vx	v10, v10, a0
-	vor.vv	v10, v12, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v10, v10, v12
+	vor.vv	v8, v8, v10
 	ret
 func000000000000000b:                   # @func000000000000000b
 	li	a0, 32
@@ -22,7 +22,7 @@ func000000000000000b:                   # @func000000000000000b
 	li	a0, -1
 	bclri	a0, a0, 33
 	vand.vx	v10, v10, a0
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	ret
 func000000000000000f:                   # @func000000000000000f
@@ -37,5 +37,5 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v12, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

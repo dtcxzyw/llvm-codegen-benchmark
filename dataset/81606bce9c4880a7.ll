@@ -1,5 +1,5 @@
 
-; 97 occurrences:
+; 96 occurrences:
 ; assimp/optimized/TargetAnimation.cpp.ll
 ; box2d/optimized/b2_collision.cpp.ll
 ; box2d/optimized/b2_edge_shape.cpp.ll
@@ -33,7 +33,6 @@
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
-; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -101,8 +100,8 @@
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %2, %0
-  %4 = fmul float %3, %1
-  %5 = fadd float %4, %0
+  %4 = fmul float %1, %3
+  %5 = fadd float %0, %4
   ret float %5
 }
 

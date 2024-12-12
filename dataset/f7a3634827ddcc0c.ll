@@ -1,5 +1,5 @@
 
-; 314 occurrences:
+; 312 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
@@ -16,6 +16,7 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -180,9 +181,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -320,7 +318,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
   %5 = add nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -336,11 +334,20 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 13 occurrences:
 ; linux/optimized/swap.ll
 ; opencv/optimized/opencv-onnx.pb.cc.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; qemu/optimized/hw_net_e1000.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -351,10 +358,9 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
-; linux/optimized/csum-wrappers_64.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/uncore_snbep.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
@@ -389,6 +395,39 @@ entry:
   ret i64 %6
 }
 
+; 9 occurrences:
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003e(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %1, 28
+  %5 = add nuw nsw i64 %4, %3
+  %6 = add nuw i64 %0, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000040(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl i64 %1, 2
+  %5 = add i64 %4, %3
+  %6 = add i64 %5, %0
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; arrow/optimized/builder_primitive.cc.ll
 ; Function Attrs: nounwind
@@ -396,6 +435,18 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
+  %5 = add nsw i64 %4, %3
+  %6 = add nsw i64 %0, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; libwebp/optimized/vp8l_dec.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000055(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nsw i64 %1, 4
   %5 = add nsw i64 %4, %3
   %6 = add nsw i64 %5, %0
   ret i64 %6

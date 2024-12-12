@@ -6,15 +6,15 @@ func0000000000000001:                   # @func0000000000000001
 	shll	$8, %edi
 	addl	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+func0000000000000009:                   # @func0000000000000009
 	movl	%edx, %ecx
 	movl	%edi, %eax
-	shll	$4, %ecx
+	shll	$8, %ecx
 	cltd
 	idivl	%esi
 	addl	%ecx, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000000:                   # @func0000000000000000
 	movl	%edx, %ecx
 	movl	%edi, %eax
 	shll	$4, %ecx

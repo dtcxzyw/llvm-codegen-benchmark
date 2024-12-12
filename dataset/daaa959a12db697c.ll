@@ -1,10 +1,11 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; llvm/optimized/ASTMatchersInternal.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1, i8 %2) #0 {
@@ -13,7 +14,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 32
   %5 = and i64 %1, -4295236609
   %6 = or disjoint i64 %4, %5
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 
@@ -81,13 +82,13 @@ entry:
 ; 1 occurrences:
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000e(i64 %0, i64 %1, i8 %2) #0 {
+define i64 @func000000000000000c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 16
-  %5 = and i64 %1, 63
-  %6 = or disjoint i64 %5, %4
-  %7 = or i64 %6, %0
+  %5 = and i64 %1, -2147418113
+  %6 = or disjoint i64 %4, %5
+  %7 = or i64 %0, %6
   ret i64 %7
 }
 

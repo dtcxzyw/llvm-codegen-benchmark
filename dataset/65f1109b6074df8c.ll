@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; git/optimized/blame.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/gup.ll
@@ -11,7 +11,6 @@
 ; nuttx/optimized/serial.c.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
-; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {

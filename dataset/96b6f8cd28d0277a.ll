@@ -183,7 +183,7 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 28 occurrences:
 ; coreutils-rs/optimized/1rc3oz70a7y5cjew.ll
 ; coreutils-rs/optimized/3qc0yve8cevcl6aw.ll
 ; coreutils-rs/optimized/jfj1amq69fu0agb.ll
@@ -201,10 +201,46 @@ entry:
 ; tls-rs/optimized/59h61akxu6z29dlt.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/47nrdncov7567v7m.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/50rz8txij07gq3asz3v1w7m4v.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000032(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
+  %3 = trunc nuw i8 %0 to i1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 3 occurrences:
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000060(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i8 %1, 1
+  %3 = trunc i8 %0 to i1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 2 occurrences:
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000062(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i8 %1, 31
   %3 = trunc nuw i8 %0 to i1
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
@@ -227,7 +263,105 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 125 occurrences:
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/decode_view.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/test_tools.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; coreutils-rs/optimized/52gu558wq8ct3x5w.ll
 ; hyper-rs/optimized/14ohts5s89g5xaax.ll
 ; php/optimized/zend_API.ll
@@ -235,6 +369,26 @@ entry:
 ; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/70ymcp0y6yqkpw3c0y4yzyh2l.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i8 %0, i8 %1) #0 {
 entry:
@@ -255,12 +409,20 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 9 occurrences:
+; ockam-rs/optimized/1j8f46ag92qmaepd.ll
+; ockam-rs/optimized/2qz3huiqqut486jt.ll
+; ockam-rs/optimized/39elqh75xhewanjo.ll
+; ockam-rs/optimized/445trp5tofqtvmh3.ll
+; ockam-rs/optimized/59na08zlxqp9p17s.ll
+; ockam-rs/optimized/lcclztcuaxx9mqt.ll
+; ockam-rs/optimized/scbbgml6cvr1nwt.ll
+; ockam-rs/optimized/y59h8jnu9k73im6.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000012(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000052(i8 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 2
+  %2 = icmp samesign ult i8 %1, 2
   %3 = trunc nuw i8 %0 to i1
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4

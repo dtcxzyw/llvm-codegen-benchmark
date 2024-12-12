@@ -23,7 +23,7 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	btq	$62, %rsi
 	setae	%al
 	andb	%dil, %al

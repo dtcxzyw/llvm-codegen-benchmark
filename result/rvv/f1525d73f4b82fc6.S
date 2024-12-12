@@ -2,7 +2,7 @@
 	.quad	0x3fb54fdf3b645a1d              # double 0.083250000000000005
 .LCPI0_1:
 	.quad	0x3fd54fdf3b645a1d              # double 0.33300000000000002
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	li	a0, -18
 	fli.d	fa5, 0.25
 	vsetivli	zero, 8, e32, m2, ta, ma

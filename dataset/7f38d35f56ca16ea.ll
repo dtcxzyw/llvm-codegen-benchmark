@@ -1,18 +1,4 @@
 
-; 3 occurrences:
-; darktable/optimized/ArwDecoder.cpp.ll
-; opencv/optimized/matrix.cpp.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = udiv i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, -16384
-  ret i32 %5
-}
-
 ; 14 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll

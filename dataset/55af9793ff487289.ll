@@ -17,7 +17,7 @@ entry:
   ret i8 %6
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/decompress.c.ll
 ; brotli/optimized/transform.c.ll
 ; clamav/optimized/bzlib.c.ll
@@ -27,7 +27,6 @@ entry:
 ; linux/optimized/drm_atomic_uapi.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/tcp_minisocks.ll
 ; linux/optimized/tcp_output.ll

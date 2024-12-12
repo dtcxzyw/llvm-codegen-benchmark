@@ -52,6 +52,11 @@ func00000000000000d0:                   # @func00000000000000d0
 	imulq	%rsi, %rdx
 	leaq	-1(%rdx,%rdi), %rax
 	retq
+func0000000000000080:                   # @func0000000000000080
+	incq	%rdx
+	imulq	%rsi, %rdx
+	leaq	1(%rdx,%rdi), %rax
+	retq
 func00000000000000f8:                   # @func00000000000000f8
 	incq	%rdx
 	imulq	%rsi, %rdx

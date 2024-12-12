@@ -1,7 +1,8 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; clamav/optimized/hashtab.c.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; meshoptimizer/optimized/indexgenerator.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; ninja/optimized/build_log.cc.ll
@@ -23,7 +24,7 @@ define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = mul i32 %3, 2057
-  %5 = xor i32 %4, %0
+  %5 = xor i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }

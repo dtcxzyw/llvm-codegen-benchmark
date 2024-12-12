@@ -1,5 +1,5 @@
 
-; 752 occurrences:
+; 808 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/str_replace_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -28,6 +28,20 @@
 ; assimp/optimized/TargetAnimation.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/cmdline.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/src.ll
+; boost/optimized/topology.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -200,7 +214,6 @@
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/CGProfile.cpp.ll
-; llvm/optimized/CheckerHelpers.cpp.ll
 ; llvm/optimized/CheckerRegistry.cpp.ll
 ; llvm/optimized/ClangAttrEmitter.cpp.ll
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
@@ -314,7 +327,6 @@
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
@@ -354,7 +366,6 @@
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; mitsuba3/optimized/stokes.cpp.ll
@@ -459,9 +470,7 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/search.ll
@@ -580,7 +589,6 @@
 ; postgres/optimized/bufmgr.ll
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/tuplesort.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/extension.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; protobuf/optimized/helpers.cc.ll
@@ -678,6 +686,7 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tree-sitter-rs/optimized/r2wcjjxpw45z4gt.ll
+; turborepo-rs/optimized/3l7xg3ikfppult5o2lclnyys7.ll
 ; typst-rs/optimized/31vebs4z0lpwpjgn.ll
 ; typst-rs/optimized/3efk6odw6ecl29p.ll
 ; typst-rs/optimized/3gfld5k3k43fgjtj.ll
@@ -726,7 +735,6 @@
 ; yosys/optimized/flatten.ll
 ; yosys/optimized/fmt.ll
 ; yosys/optimized/glift.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/mutate.ll
 ; yosys/optimized/opt_expr.ll
 ; yosys/optimized/opt_merge.ll
@@ -751,6 +759,54 @@
 ; z3/optimized/pb_rewriter.cpp.ll
 ; z3/optimized/solve_context_eqs.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/06rtve3sizrg126ldkmgb72ea.ll
+; zed-rs/optimized/0jp4fusyq9xykq21rvyb30mp5.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/2gu8aea2dmgqxbormk5tspsrx.ll
+; zed-rs/optimized/2jcakdf65g6ofzlv4sxvfz01e.ll
+; zed-rs/optimized/39agu11sr34f1pihhhnx3cpe2.ll
+; zed-rs/optimized/3mlvu1hzbi0yx2i15kirdr9m0.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/3vybcocwv8yrsy0injuj4w5r9.ll
+; zed-rs/optimized/40uv8e2se7lrb6jj056xzrdug.ll
+; zed-rs/optimized/43g83plj67uz6i3ger74cqqgy.ll
+; zed-rs/optimized/4gafs7cnqueum1wf7b8eca1yl.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/56i9d5rrx6hrud8ee30t4acpd.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/5mqaql67fk8cb5w1h1xcbyeu9.ll
+; zed-rs/optimized/5owdgsmfxxef4srab3humtsy7.ll
+; zed-rs/optimized/625obb40odxdaxzkpvxlwwadb.ll
+; zed-rs/optimized/65od2e11tbtl7gt1ig9f3i8el.ll
+; zed-rs/optimized/6fu74pzhfyziwmvuesg9cijzl.ll
+; zed-rs/optimized/6g3lj5acpcf238l82f7t8nwvg.ll
+; zed-rs/optimized/70wtzbe6p4cdtwir64ar0nhnk.ll
+; zed-rs/optimized/7dlcu72xy2qwyr8vttt104wn3.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/8zogyz7vs6pnjn0mpvvdxdnfr.ll
+; zed-rs/optimized/9hlwt18nr4jd7z0ubrvgn7np1.ll
+; zed-rs/optimized/9py7mumimdtfbsy7tbvb0jpih.ll
+; zed-rs/optimized/9rc82w53bq52eg6b6q5l2akbg.ll
+; zed-rs/optimized/9s2tp30uc6oo3o3yduu35h8vb.ll
+; zed-rs/optimized/a8jdixv6mu99htoibqz10zfto.ll
+; zed-rs/optimized/abtvulclots5u0wyf3l8ipflx.ll
+; zed-rs/optimized/asgo9pe6dwkxuaeqdvmvl8bpd.ll
+; zed-rs/optimized/b483winaoz4x1qpsevy13hjmw.ll
+; zed-rs/optimized/b8xkvrb4shexown6t10tlhuh9.ll
+; zed-rs/optimized/b9t1gynydq0pa8qhy2csz043m.ll
+; zed-rs/optimized/but0lbc6tfwky26d8hpjq6ud8.ll
+; zed-rs/optimized/cbqkad0b2nxxysxzdk8rkpos2.ll
+; zed-rs/optimized/cd51tp3f9xzjf7uqmsq5af267.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/d7bcamiyu8h3qhpmjyao33apx.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dh6uzeflgeff76zwas93djdf6.ll
+; zed-rs/optimized/di66y7a5lci7qvst4agi7dhs8.ll
+; zed-rs/optimized/e8pmvisniubbhzhzwd0phlezk.ll
+; zed-rs/optimized/e9u0g76149goadwq8dnm2s4hy.ll
+; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
+; zed-rs/optimized/esas3ubizu9r0ao68kvh5d7vx.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {

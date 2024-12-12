@@ -1,5 +1,5 @@
 
-; 316 occurrences:
+; 314 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -18,6 +18,7 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -182,9 +183,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -317,7 +315,7 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000028a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = sub nsw i64 %0, %1
@@ -326,13 +324,49 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 40 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; quantlib/optimized/date.ll
 ; spike/optimized/socketif.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 9
   %4 = sub i64 %0, %1
@@ -344,7 +378,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = sub i64 %0, %1
@@ -356,7 +390,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/socketif.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 9
   %4 = sub i64 %0, %1
@@ -388,7 +422,7 @@ entry:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; yosys/optimized/eval.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -8
   %3 = sub nsw i64 %0, %1
@@ -399,7 +433,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000606(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = sub i64 %0, %1
@@ -424,7 +458,7 @@ entry:
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cmake/optimized/content_stream.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -512
   %3 = sub i64 %0, %1

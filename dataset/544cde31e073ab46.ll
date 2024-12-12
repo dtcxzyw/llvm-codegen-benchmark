@@ -1,7 +1,6 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; c3c/optimized/sema_stmts.c.ll
-; hermes/optimized/Executor.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll

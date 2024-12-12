@@ -1,6 +1,7 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; linux/optimized/clockevents.ll
+; llvm/optimized/AccelTable.cpp.ll
 ; openssl/optimized/libssl-lib-quic_record_shared.ll
 ; openssl/optimized/libssl-shlib-quic_record_shared.ll
 ; redis/optimized/bitops.ll

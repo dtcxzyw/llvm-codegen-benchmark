@@ -42,7 +42,7 @@
 	.byte	0                               # 0x0
 func0000000000000015:                   # @func0000000000000015
 	vpandd	.LCPI0_3(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -66,7 +66,7 @@ func0000000000000000:                   # @func0000000000000000
 	.long	33685504                        # 0x2020000
 func0000000000000030:                   # @func0000000000000030
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI2_2(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -78,7 +78,7 @@ func0000000000000030:                   # @func0000000000000030
 	.long	33685504                        # 0x2020000
 func000000000000003f:                   # @func000000000000003f
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI3_2(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -90,7 +90,7 @@ func000000000000003f:                   # @func000000000000003f
 	.long	33685504                        # 0x2020000
 func0000000000000035:                   # @func0000000000000035
 	vpandd	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI4_2(%rip){1to8}, %ymm0, %ymm0
 	retq

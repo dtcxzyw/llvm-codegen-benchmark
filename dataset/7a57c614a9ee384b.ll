@@ -1,23 +1,22 @@
 
-%"class.rocksdb::LRUList.2502137" = type { ptr, %"class.rocksdb::port::Mutex.2502138", ptr, ptr }
-%"class.rocksdb::port::Mutex.2502138" = type { %union.pthread_mutex_t.2502139 }
-%union.pthread_mutex_t.2502139 = type { %struct.__pthread_mutex_s.2502140 }
-%struct.__pthread_mutex_s.2502140 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2502141 }
-%struct.__pthread_internal_list.2502141 = type { ptr, ptr }
-%"class.draco::RAnsBitDecoder.2892544" = type <{ %"struct.draco::AnsDecoder.2892545", i8, [7 x i8] }>
-%"struct.draco::AnsDecoder.2892545" = type { ptr, i32, i32 }
+%"class.rocksdb::LRUList.2617340" = type { ptr, %"class.rocksdb::port::Mutex.2617341", ptr, ptr }
+%"class.rocksdb::port::Mutex.2617341" = type { %union.pthread_mutex_t.2617342 }
+%union.pthread_mutex_t.2617342 = type { %struct.__pthread_mutex_s.2617343 }
+%struct.__pthread_mutex_s.2617343 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2617344 }
+%struct.__pthread_internal_list.2617344 = type { ptr, ptr }
+%"class.draco::RAnsBitDecoder.3087045" = type <{ %"struct.draco::AnsDecoder.3087046", i8, [7 x i8] }>
+%"struct.draco::AnsDecoder.3087046" = type { ptr, i32, i32 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/MachineOutliner.cpp.ll
-; llvm/optimized/Pragma.cpp.ll
 ; rocksdb/optimized/block_cache_tier.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(ptr %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000007e1(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8
-  %5 = getelementptr nusw %"class.rocksdb::LRUList.2502137", ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw %"class.rocksdb::LRUList.2617340", ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -78,11 +77,24 @@ entry:
 ; icu/optimized/datamap.ll
 ; icu/optimized/ulistformatter.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006a1(ptr %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000fe1(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8
-  %5 = getelementptr nusw %"class.draco::RAnsBitDecoder.2892544", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw %"class.draco::RAnsBitDecoder.3087045", ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %7 = icmp eq ptr %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; llvm/optimized/Pragma.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007c1(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
   %7 = icmp eq ptr %6, %5
   ret i1 %7

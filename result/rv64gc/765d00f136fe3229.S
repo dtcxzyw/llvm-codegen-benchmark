@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	snez	a1, a1
 	snez	a0, a0
 	xor	a0, a0, a1
@@ -6,15 +6,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	lui	a1, 2
 	and	a0, a0, a1
 	ret
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	slti	a1, a1, 0
-	snez	a0, a0
-	xor	a0, a0, a1
-	slli	a0, a0, 31
-	ret
-func0000000000000068:                   # @func0000000000000068
-	slti	a1, a1, 0
-	srli	a0, a0, 31
 	snez	a0, a0
 	xor	a0, a0, a1
 	slli	a0, a0, 31

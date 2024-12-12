@@ -3,17 +3,30 @@
 ; cpython/optimized/optimizer.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000030(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 70704
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 70704
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7
 }
 
-; 17 occurrences:
+; 1 occurrences:
+; openjdk/optimized/jvmciCodeInstaller.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %1, i64 -100
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %0, %6
+  ret i64 %7
+}
+
+; 16 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; git/optimized/cache-tree.ll
 ; meshlab/optimized/GLLogStream.cpp.ll
@@ -28,14 +41,13 @@ entry:
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/ciMethodData.ll
-; openjdk/optimized/jvmciCodeInstaller.ll
 ; openjdk/optimized/klassVtable.ll
 ; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000038(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 -100
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 304
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6

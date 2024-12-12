@@ -1,16 +1,18 @@
 
-; 1 occurrences:
-; ruby/optimized/strftime.ll
+; 2 occurrences:
+; openjdk/optimized/disassembler.ll
+; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 -3, %1
-  %3 = select i1 %0, i32 -12, i32 %2
+  %2 = sub i32 4094, %1
+  %3 = select i1 %0, i32 4098, i32 %2
   ret i32 %3
 }
 
-; 27 occurrences:
+; 22 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -30,30 +32,13 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
-; ruby/optimized/strftime.ll
 ; yyjson/optimized/yyjson.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
-; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
-  %2 = xor i32 %1, -1
-  %3 = select i1 %0, i32 -7, i32 %2
-  ret i32 %3
-}
-
-; 2 occurrences:
-; openjdk/optimized/disassembler.ll
-; wireshark/optimized/pcapng.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
-entry:
-  %2 = sub i32 4094, %1
-  %3 = select i1 %0, i32 4098, i32 %2
-  ret i32 %3
+  %.neg = sub i32 1075, %1
+  %.neg1 = select i1 %0, i32 1074, i32 %.neg
+  ret i32 %.neg1
 }
 
 ; 3 occurrences:

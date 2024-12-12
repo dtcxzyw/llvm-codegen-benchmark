@@ -1,7 +1,10 @@
 
-; 10 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
+; darktable/optimized/introspection_colorequal.c.ll
+; darktable/optimized/introspection_exposure.c.ll
+; darktable/optimized/introspection_primaries.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
@@ -19,11 +22,12 @@ entry:
   ret float %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; minetest/optimized/guiHyperText.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:

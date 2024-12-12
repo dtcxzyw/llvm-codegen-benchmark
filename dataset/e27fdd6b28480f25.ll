@@ -232,7 +232,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000078(i64 %0, ptr %1, i8 %2) #0 {
+define i64 @func000000000000007c(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3

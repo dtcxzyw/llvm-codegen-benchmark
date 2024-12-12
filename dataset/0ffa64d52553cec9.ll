@@ -10,7 +10,21 @@ entry:
   %4 = and i32 %3, 7864320
   %5 = or i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
+  ret i64 %7
+}
+
+; 2 occurrences:
+; llvm/optimized/SemaAttr.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = and i32 %3, -65536
+  %5 = or i32 %4, %1
+  %6 = zext i32 %5 to i64
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 
@@ -26,9 +40,9 @@ define i64 @func0000000000000005(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, -1073741824
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 
@@ -41,20 +55,7 @@ entry:
   %4 = and i32 %3, 7
   %5 = or i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = or i64 %6, %0
-  ret i64 %7
-}
-
-; 1 occurrences:
-; llvm/optimized/SemaAttr.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, -57
-  %5 = or i32 %4, %1
-  %6 = zext i32 %5 to i64
-  %7 = or disjoint i64 %6, %0
+  %7 = or i64 %0, %6
   ret i64 %7
 }
 
@@ -65,9 +66,9 @@ define i64 @func0000000000000007(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 2147418112
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 

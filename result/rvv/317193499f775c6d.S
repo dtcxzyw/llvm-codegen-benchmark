@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vx	v16, v16, a0
 	vfwcvt.f.x.v	v20, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmul.vv	v12, v20, v12
+	vfmul.vv	v12, v12, v20
 	vfdiv.vv	v8, v12, v8
 	ret
 func0000000000000000:                   # @func0000000000000000
@@ -13,6 +13,6 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vi	v16, v16, 1
 	vfwcvt.f.x.v	v20, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmul.vv	v12, v20, v12
+	vfmul.vv	v12, v12, v20
 	vfdiv.vv	v8, v12, v8
 	ret

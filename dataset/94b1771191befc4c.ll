@@ -4,7 +4,7 @@
 ; llvm/optimized/InstCombineMulDivRem.cpp.ll
 ; postgres/optimized/ruleutils.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %not. = xor i1 %1, true

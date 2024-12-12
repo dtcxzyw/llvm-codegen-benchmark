@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; hyperscan/optimized/hs.cpp.ll
 ; libquic/optimized/curve25519.c.ll
@@ -8,6 +8,7 @@
 ; llvm/optimized/InterpShared.cpp.ll
 ; llvm/optimized/NonNullParamChecker.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; Function Attrs: nounwind
@@ -26,7 +27,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 63
   ret i32 %4
 }
@@ -40,7 +41,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = and i32 %3, -4
   ret i32 %4
 }

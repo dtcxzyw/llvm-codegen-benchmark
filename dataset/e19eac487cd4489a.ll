@@ -76,7 +76,7 @@ entry:
   ret i64 %6
 }
 
-; 34 occurrences:
+; 36 occurrences:
 ; abc/optimized/darLib.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
@@ -110,6 +110,8 @@ entry:
 ; wireshark/optimized/packet-flexray.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {

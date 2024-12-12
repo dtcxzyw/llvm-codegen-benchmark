@@ -22,7 +22,7 @@
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/lanalyzer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nsw i32 %0, -13
@@ -34,7 +34,7 @@ entry:
 ; qemu/optimized/fdt.c.ll
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw i32 %0, 4
@@ -49,11 +49,11 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000079(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
-  %5 = icmp uge i32 %4, %3
+  %5 = icmp samesign uge i32 %4, %3
   ret i1 %5
 }
 
@@ -66,11 +66,11 @@ entry:
 ; openjdk/optimized/zip_util.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %0, 4
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -78,7 +78,7 @@ entry:
 ; libjpeg-turbo/optimized/rdbmp.c.ll
 ; openjdk/optimized/zip_util.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nsw i32 %0, 8
@@ -90,7 +90,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-set.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = add nuw i32 %0, 1
@@ -105,11 +105,11 @@ entry:
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %0, 16
-  %5 = icmp ule i32 %4, %3
+  %5 = icmp samesign ule i32 %4, %3
   ret i1 %5
 }
 
@@ -140,7 +140,7 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -158,7 +158,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw i32 %0, 1
@@ -179,7 +179,7 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add i32 %0, 1
@@ -192,7 +192,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add i32 %0, 1
@@ -206,11 +206,24 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ec(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
   %5 = icmp ne i32 %4, %3
+  ret i1 %5
+}
+
+; 3 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = add i32 %0, -1
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -220,7 +233,7 @@ entry:
 ; openjdk/optimized/hb-aat-layout.ll
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw i32 %0, 1
@@ -233,7 +246,7 @@ entry:
 ; openjdk/optimized/hb-aat-layout.ll
 ; php/optimized/pcre2_substring.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nsw i32 %0, -1
@@ -244,7 +257,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ab(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nsw i32 %0, 1
@@ -256,7 +269,7 @@ entry:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nsw i32 %0, 1
@@ -270,7 +283,7 @@ entry:
 ; abc/optimized/utilBridge.c.ll
 ; luau/optimized/lvmload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -283,7 +296,7 @@ entry:
 ; spike/optimized/fdt.ll
 ; wireshark/optimized/observer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add i32 %0, 4
@@ -295,7 +308,7 @@ entry:
 ; luau/optimized/lvmload.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = add nuw i32 %0, 1
@@ -319,7 +332,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add i32 %0, 1
@@ -335,6 +348,17 @@ entry:
   %3 = or i32 %1, %2
   %4 = add i32 %0, 1
   %5 = icmp eq i32 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e4(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = add nuw nsw i32 %0, 1
+  %5 = icmp ult i32 %4, %3
   ret i1 %5
 }
 

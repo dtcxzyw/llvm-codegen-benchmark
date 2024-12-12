@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaSweeper.c.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
@@ -7,7 +7,6 @@
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/gmx_polystat.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/lsd.cpp.ll
 ; proj/optimized/hgridshift.cpp.ll

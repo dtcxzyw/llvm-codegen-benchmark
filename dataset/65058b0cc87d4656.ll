@@ -18,22 +18,11 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000098(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967296
   %3 = icmp ne i64 %2, 0
-  %4 = or i1 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; openjdk/optimized/sharedRuntimeTrans.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 9223372032559808512
-  %3 = icmp ugt i64 %2, 9218868437227405312
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -273,11 +262,11 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000082(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1095216660480
   %3 = icmp eq i64 %2, 8589934592
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -303,11 +292,11 @@ entry:
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i64 %1) #0 {
+define i1 @func00000000000000d8(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967296
   %3 = icmp ne i64 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -329,7 +318,7 @@ define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2199023254528
   %3 = icmp eq i64 %2, 8192
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -340,24 +329,11 @@ entry:
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000062(i1 %0, i64 %1) #0 {
+define i1 @func00000000000000c2(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 270215977642229760
   %3 = icmp eq i64 %2, 108086391056891904
-  %4 = or i1 %3, %0
-  ret i1 %4
-}
-
-; 3 occurrences:
-; postgres/optimized/d2s.ll
-; postgres/optimized/d2s_shlib.ll
-; postgres/optimized/d2s_srv.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000068(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 9214364837600034816
-  %3 = icmp eq i64 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

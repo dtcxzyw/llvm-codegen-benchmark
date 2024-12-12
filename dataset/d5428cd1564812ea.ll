@@ -22,7 +22,7 @@ entry:
   ret double %3
 }
 
-; 67 occurrences:
+; 68 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/absIter.c.ll
@@ -36,6 +36,7 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/wlnNtk.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; clamav/optimized/pe_icons.c.ll
 ; csmith/optimized/Bookkeeper.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -98,7 +99,7 @@ entry:
   ret double %3
 }
 
-; 63 occurrences:
+; 57 occurrences:
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/cuddZddReord.c.ll
@@ -144,16 +145,10 @@ entry:
 ; slurm/optimized/jobacct_gather.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; verilator/optimized/V3TSP.cpp.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-calcappprotocol.c.ll
 ; wireshark/optimized/packet-componentstatus.c.ll
-; wireshark/optimized/packet-enrp.c.ll
-; wireshark/optimized/packet-fractalgeneratorprotocol.c.ll
 ; wireshark/optimized/packet-mtp3.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
-; wireshark/optimized/packet-pingpongprotocol.c.ll
 ; wireshark/optimized/packet-rtp-ed137.c.ll
-; wireshark/optimized/packet-scriptingservice.c.ll
 ; wireshark/optimized/sctp_graph_dialog.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/sat_ddfw.cpp.ll

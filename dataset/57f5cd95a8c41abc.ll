@@ -55,8 +55,10 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(double %0, double %1, double %2) #0 {
 entry:
@@ -74,6 +76,19 @@ define i1 @func000000000000002c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 1.000000e-01
   %4 = fcmp oge double %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 3 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008a(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp oeq double %2, 0.000000e+00
+  %4 = fcmp ole double %0, %1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }

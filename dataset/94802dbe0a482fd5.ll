@@ -15,7 +15,7 @@ entry:
   ret i8 %2
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; icu/optimized/ushape.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
@@ -26,11 +26,25 @@ entry:
 ; slurm/optimized/slurm_opt.ll
 ; wireshark/optimized/packet-ospf.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i16 %0) #0 {
 entry:
   %1 = trunc i16 %0 to i8
   %2 = add i8 %1, -1
+  ret i8 %2
+}
+
+; 3 occurrences:
+; boost/optimized/test_iostream.ll
+; linux/optimized/cdrom.ll
+; linux/optimized/ehci-hcd.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000f(i16 %0) #0 {
+entry:
+  %1 = trunc i16 %0 to i8
+  %2 = add i8 %1, 32
   ret i8 %2
 }
 
@@ -66,17 +80,6 @@ define i8 @func0000000000000007(i16 %0) #0 {
 entry:
   %1 = trunc i16 %0 to i8
   %2 = add i8 %1, -6
-  ret i8 %2
-}
-
-; 2 occurrences:
-; linux/optimized/cdrom.ll
-; linux/optimized/ehci-hcd.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000f(i16 %0) #0 {
-entry:
-  %1 = trunc i16 %0 to i8
-  %2 = add i8 %1, 1
   ret i8 %2
 }
 

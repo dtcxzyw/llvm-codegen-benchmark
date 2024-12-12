@@ -12,12 +12,12 @@
 ; slurm/optimized/KeccakSponge.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = lshr i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 

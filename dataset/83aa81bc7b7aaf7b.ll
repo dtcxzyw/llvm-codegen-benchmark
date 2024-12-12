@@ -12,8 +12,7 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
-; grpc/optimized/ev_poll_posix.cc.ll
+; 3 occurrences:
 ; wireshark/optimized/packet-cdma2k.c.ll
 ; wireshark/optimized/packet-gcsna.c.ll
 ; wireshark/optimized/packet-tcp.c.ll

@@ -22,3 +22,16 @@ func0000000000000063:                   # @func0000000000000063
 	vpor	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
+.LCPI2_0:
+	.long	5                               # 0x5
+.LCPI2_2:
+	.zero	4,1
+.LCPI2_1:
+	.zero	16,1
+func0000000000000023:                   # @func0000000000000023
+	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm2, %k1
+	vpord	.LCPI2_2(%rip){1to4}, %xmm1, %xmm2
+	vmovdqu8	%xmm2, %xmm1 {%k1}
+	vpor	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq

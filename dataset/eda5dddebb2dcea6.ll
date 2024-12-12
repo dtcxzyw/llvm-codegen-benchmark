@@ -1,7 +1,13 @@
 
-; 18 occurrences:
+; 24 occurrences:
 ; freetype/optimized/sdf.c.ll
 ; libquic/optimized/cfb.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; openssl/optimized/libcrypto-lib-cfb128.ll
 ; openssl/optimized/libcrypto-lib-e_des.ll
@@ -42,7 +48,7 @@ entry:
   %2 = and i32 %1, 31
   %3 = xor i32 %2, 7
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

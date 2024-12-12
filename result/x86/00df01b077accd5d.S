@@ -4,9 +4,15 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$40, %eax
 	cmovbq	%rdi, %rax
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	leaq	65520(%rdx,%rsi), %rax
 	cmpq	$65521, %rax                    # imm = 0xFFF1
 	movl	$65520, %eax                    # imm = 0xFFF0
 	cmovaeq	%rdi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	leaq	2(%rdx,%rsi), %rax
+	cmpq	$508, %rax                      # imm = 0x1FC
+	movl	$1, %eax
+	cmovbq	%rdi, %rax
 	retq

@@ -28,26 +28,4 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
-; qemu/optimized/target_riscv_pmu.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(ptr %0) #0 {
-entry:
-  %1 = ptrtoint ptr %0 to i64
-  %2 = and i64 %1, 4294967295
-  %3 = shl i64 2, %2
-  ret i64 %3
-}
-
-; 1 occurrences:
-; qemu/optimized/target_riscv_pmu.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(ptr %0) #0 {
-entry:
-  %1 = ptrtoint ptr %0 to i64
-  %2 = and i64 %1, 4294967295
-  %3 = shl nuw nsw i64 2, %2
-  ret i64 %3
-}
-
 attributes #0 = { nounwind }

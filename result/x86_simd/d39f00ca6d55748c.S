@@ -98,7 +98,7 @@ func000000000000001f:                   # @func000000000000001f
 func000000000000000b:                   # @func000000000000000b
 	vpmovqd	%ymm1, %xmm1
 	vpshufb	.LCPI10_0(%rip), %xmm1, %xmm1   # xmm1 = zero,xmm1[0],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[8],zero,zero,zero,xmm1[12],zero,zero
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI11_0:

@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/giaFalse.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -14,6 +14,7 @@
 ; linux/optimized/thermal_sysfs.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; mitsuba3/optimized/integrator.cpp.ll
 ; openblas/optimized/dlalsa.c.ll
@@ -92,12 +93,11 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/tbxfroot.ll
 ; linux/optimized/tcp_cubic.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
@@ -195,11 +195,9 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; abc/optimized/sclLibScl.c.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
@@ -233,11 +231,12 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/retLvalue.c.ll
 ; casadi/optimized/integration_tools.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; libquic/optimized/pem_lib.c.ll
+; lvgl/optimized/lv_arc.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; openspiel/optimized/checkers.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
@@ -285,18 +284,6 @@ entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %0, 1
   %4 = add nuw nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 2 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nsw i64 %1 to i32
-  %3 = shl nuw i32 %0, 1
-  %4 = add i32 %3, %2
   ret i32 %4
 }
 

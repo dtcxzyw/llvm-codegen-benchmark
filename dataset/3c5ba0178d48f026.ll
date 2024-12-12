@@ -23,7 +23,7 @@
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -3
   %4 = icmp eq i32 %3, 0
@@ -37,7 +37,7 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; llvm/optimized/DiagnosticIDs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16384
   %4 = icmp eq i32 %3, 0
@@ -54,7 +54,7 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; wireshark/optimized/packet-socketcan.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = icmp ne i32 %3, 3
@@ -84,7 +84,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = icmp ne i32 %3, 0
@@ -95,14 +95,14 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/8250_exar.ll
+; icu/optimized/collationdatabuilder.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000298(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 96
-  %4 = icmp eq i32 %3, 0
+  %3 = and i32 %2, 31
+  %4 = icmp samesign ult i32 %3, 29
   %5 = select i1 %0, i1 %4, i1 false
-  %6 = icmp ult i32 %1, 1000
+  %6 = icmp samesign ugt i32 %1, 2
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
@@ -112,12 +112,12 @@ entry:
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000294(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65528
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %0, i1 %4, i1 false
-  %6 = icmp ult i32 %1, 16
+  %6 = icmp samesign ult i32 %1, 16
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }

@@ -38,9 +38,11 @@ entry:
   ret i1 %5
 }
 
-; 80 occurrences:
+; 82 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; boost/optimized/process.ll
+; boost/optimized/sort_by_side.ll
 ; clamav/optimized/macho.c.ll
 ; cmake/optimized/epoll.c.ll
 ; cpython/optimized/compile.ll

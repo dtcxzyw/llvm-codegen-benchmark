@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/io_uring.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65536
   %3 = icmp eq i32 %2, 0

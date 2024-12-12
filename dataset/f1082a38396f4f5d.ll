@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; lief/optimized/psa_crypto.c.ll
-; linux/optimized/attr.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/intel_cdclk.ll
 ; memcached/optimized/memcached-slabs.ll

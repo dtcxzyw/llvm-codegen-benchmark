@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 41 occurrences:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_colortransfer.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
@@ -39,6 +39,8 @@
 ; oiio/optimized/targaoutput.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(i32 %0) #0 {
 entry:

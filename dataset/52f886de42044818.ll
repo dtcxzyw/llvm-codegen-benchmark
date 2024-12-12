@@ -1,9 +1,8 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; linux/optimized/regmap-debugfs.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -16,7 +15,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = udiv i32 %3, %1
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 
@@ -29,7 +28,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = udiv i32 %3, %1
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 
@@ -55,7 +54,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = udiv i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -66,7 +65,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = udiv i32 %3, %1
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 

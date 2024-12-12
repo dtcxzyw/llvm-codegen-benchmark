@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
 	vcvtudq2pd	%ymm2, %zmm2
-	vmulpd	%zmm0, %zmm2, %zmm0
+	vmulpd	%zmm2, %zmm0, %zmm0
 	vcvtudq2pd	%ymm1, %zmm1
 	vcmpltpd	%zmm1, %zmm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -8,7 +8,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vcvtudq2pd	%ymm2, %zmm2
-	vmulpd	%zmm0, %zmm2, %zmm0
+	vmulpd	%zmm2, %zmm0, %zmm0
 	vcvtudq2pd	%ymm1, %zmm1
 	vcmpeqpd	%zmm1, %zmm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -16,7 +16,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000003:                   # @func0000000000000003
 	vcvtudq2pd	%ymm2, %zmm2
-	vmulpd	%zmm0, %zmm2, %zmm0
+	vmulpd	%zmm2, %zmm0, %zmm0
 	vcvtudq2pd	%ymm1, %zmm1
 	vcmpnlepd	%zmm0, %zmm1, %k0
 	vpmovm2w	%k0, %xmm0
@@ -24,7 +24,7 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func0000000000000012:                   # @func0000000000000012
 	vcvtudq2pd	%ymm2, %zmm2
-	vmulpd	%zmm0, %zmm2, %zmm0
+	vmulpd	%zmm2, %zmm0, %zmm0
 	vcvtdq2pd	%ymm1, %zmm1
 	vcmpltpd	%zmm1, %zmm0, %k0
 	vpmovm2w	%k0, %xmm0

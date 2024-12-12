@@ -1,5 +1,5 @@
 
-; 216 occurrences:
+; 211 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; casadi/optimized/integrator.cpp.ll
 ; freetype/optimized/psaux.c.ll
@@ -69,7 +69,6 @@
 ; llvm/optimized/CloneModule.cpp.ll
 ; llvm/optimized/CodeExtractor.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
-; llvm/optimized/ControlHeightReduction.cpp.ll
 ; llvm/optimized/ConvergenceVerifier.cpp.ll
 ; llvm/optimized/CoroEarly.cpp.ll
 ; llvm/optimized/CoroElide.cpp.ll
@@ -163,7 +162,6 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SSAContext.cpp.ll
 ; llvm/optimized/SSAUpdater.cpp.ll
-; llvm/optimized/SafeStack.cpp.ll
 ; llvm/optimized/SafepointIRVerifier.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
@@ -180,9 +178,7 @@
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/SplitModule.cpp.ll
-; llvm/optimized/StackLifetime.cpp.ll
 ; llvm/optimized/StackProtector.cpp.ll
-; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; llvm/optimized/StandardInstrumentations.cpp.ll
 ; llvm/optimized/State.cpp.ll
 ; llvm/optimized/StripGCRelocates.cpp.ll
@@ -190,7 +186,6 @@
 ; llvm/optimized/SwiftErrorValueTracking.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
-; llvm/optimized/TruncInstCombine.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; llvm/optimized/VPlanAnalysis.cpp.ll
 ; llvm/optimized/VPlanHCFGBuilder.cpp.ll

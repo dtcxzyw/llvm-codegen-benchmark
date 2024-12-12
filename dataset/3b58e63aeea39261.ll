@@ -7,12 +7,11 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul i64 %2, 2487297242801635328
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 4 occurrences:
-; darktable/optimized/introspection_demosaic.c.ll
+; 3 occurrences:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
@@ -21,7 +20,7 @@ define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 105553116266496
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

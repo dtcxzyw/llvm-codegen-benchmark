@@ -1,5 +1,5 @@
 
-; 130 occurrences:
+; 128 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -38,8 +38,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

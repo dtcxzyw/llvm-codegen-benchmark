@@ -43,12 +43,12 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/aom_image.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000005c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = zext nneg i32 %1 to i64
+  %4 = zext i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = zext i32 %0 to i64
+  %6 = zext nneg i32 %0 to i64
   %7 = mul i64 %5, %6
   ret i64 %7
 }

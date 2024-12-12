@@ -1,5 +1,5 @@
 
-; 598 occurrences:
+; 646 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -23,6 +23,54 @@
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -320,7 +368,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -415,6 +462,8 @@
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; quantlib/optimized/date.ll
+; quantlib/optimized/fdminnervaluecalculator.ll
 ; re2/optimized/compile.cc.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/mimics_pcre.cc.ll
@@ -587,7 +636,6 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
@@ -599,15 +647,15 @@
 ; z3/optimized/static_matrix.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 776 occurrences:
+; 823 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -638,6 +686,51 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -662,6 +755,7 @@ entry:
 ; cmake/optimized/io.cpp.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cmake/optimized/session.cpp.ll
+; cmake/optimized/zstd_lazy.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/arith_ite_utils.cpp.ll
 ; cvc5/optimized/array_core_solver.cpp.ll
@@ -1060,7 +1154,6 @@ entry:
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -1225,6 +1318,7 @@ entry:
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; quantlib/optimized/date.ll
 ; re2/optimized/compile.cc.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/mimics_pcre.cc.ll
@@ -1375,7 +1469,6 @@ entry:
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
@@ -1384,12 +1477,14 @@ entry:
 ; yosys/optimized/xilinx_dsp.ll
 ; yosys/optimized/xprop.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1400,9 +1495,9 @@ entry:
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/sort.ll
 ; linux/optimized/xhci-ring.ll
-; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; qemu/optimized/hw_virtio_virtio-balloon.c.ll
 ; qemu/optimized/migration_ram.c.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -1413,9 +1508,9 @@ entry:
 }
 
 ; 4 occurrences:
-; casadi/optimized/sparsity.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/rdfa_merge.cpp.ll
 ; openvdb/optimized/AttributeSet.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
@@ -1426,7 +1521,7 @@ entry:
   ret ptr %5
 }
 
-; 10 occurrences:
+; 13 occurrences:
 ; coreutils-rs/optimized/aci7fhqxjjsavmn.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; duckdb/optimized/ub_duckdb_operator_projection.cpp.ll
@@ -1437,49 +1532,28 @@ entry:
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
+; zed-rs/optimized/0alphtuk5g34mh3kiiec4rpgf.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; assimp/optimized/STEPFileEncoding.cpp.ll
 ; llvm/optimized/BitstreamReader.cpp.ll
 ; openusd/optimized/clipSet.cpp.ll
-; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 2 occurrences:
-; quantlib/optimized/date.ll
-; quantlib/optimized/fdminnervaluecalculator.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; quantlib/optimized/date.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1491,33 +1565,23 @@ entry:
 ; protobuf/optimized/generated_enum_util.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; clamav/optimized/filestr.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = lshr exact i64 %3, 1
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
-}
-
-; 1 occurrences:
-; casadi/optimized/bspline_interpolant.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
 }
 
 attributes #0 = { nounwind }

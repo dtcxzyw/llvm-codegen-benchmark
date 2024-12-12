@@ -4,7 +4,18 @@ func0000000000000016:                   # @func0000000000000016
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
+func0000000000000017:                   # @func0000000000000017
+	movl	%edx, %eax
+	shlq	$5, %rax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
 func0000000000000036:                   # @func0000000000000036
+	movl	%edx, %eax
+	addq	%rsi, %rdi
+	leaq	(%rdi,%rax,4), %rax
+	retq
+func0000000000000037:                   # @func0000000000000037
 	movl	%edx, %eax
 	addq	%rsi, %rdi
 	leaq	(%rdi,%rax,4), %rax

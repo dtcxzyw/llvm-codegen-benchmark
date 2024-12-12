@@ -1,9 +1,8 @@
 
-%"struct.mold::elf::DynamicPattern.2525528" = type <{ %"class.std::basic_string_view.2525455", %"class.std::basic_string_view.2525455", i8, [7 x i8] }>
-%"class.std::basic_string_view.2525455" = type { i64, ptr }
-%"struct.ncnn::BBoxRect.2636344" = type { float, float, float, float, i32 }
+%"struct.mold::elf::DynamicPattern.2639935" = type <{ %"class.std::basic_string_view.2639862", %"class.std::basic_string_view.2639862", i8, [7 x i8] }>
+%"class.std::basic_string_view.2639862" = type { i64, ptr }
 
-; 106 occurrences:
+; 126 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
@@ -16,6 +15,8 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ObjFileParser.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; eastl/optimized/BenchmarkTupleVector.cpp.ll
+; faiss/optimized/Clustering.cpp.ll
 ; gromacs/optimized/broadcaststructs.cpp.ll
 ; gromacs/optimized/colvarcomp_gpath.cpp.ll
 ; gromacs/optimized/constr.cpp.ll
@@ -29,11 +30,28 @@
 ; gromacs/optimized/statepropagatordata.cpp.ll
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
+; hyperscan/optimized/goughcompile.cpp.ll
 ; libquic/optimized/utf_offset_string_conversions.cc.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/AliasSetTracker.cpp.ll
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/CGExprCXX.cpp.ll
+; llvm/optimized/CGObjCGNU.cpp.ll
+; llvm/optimized/CGObjCMac.cpp.ll
+; llvm/optimized/ConstraintElimination.cpp.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/LiveInterval.cpp.ll
 ; llvm/optimized/MsgPackDocument.cpp.ll
+; llvm/optimized/PPCaching.cpp.ll
+; llvm/optimized/PPLexerChange.cpp.ll
+; llvm/optimized/PPMacroExpansion.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
+; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SubtargetEmitter.cpp.ll
+; llvm/optimized/SwiftCallingConv.cpp.ll
 ; llvm/optimized/SymbolCache.cpp.ll
 ; llvm/optimized/TextStub.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -48,7 +66,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -101,9 +118,11 @@
 ; mold/optimized/cmdline.cc.SH4.cc.ll
 ; mold/optimized/cmdline.cc.SPARC64.cc.ll
 ; mold/optimized/cmdline.cc.X86_64.cc.ll
+; ncnn/optimized/detectionoutput.cpp.ll
 ; nix/optimized/parser-tab.ll
 ; opencv/optimized/affine_feature.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
+; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
@@ -111,47 +130,13 @@
 ; openspiel/optimized/solitaire.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000046(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.mold::elf::DynamicPattern.2525528", ptr %0, i64 %2
+  %3 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639935", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = sdiv exact i64 %5, -40
-  %7 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2525528", ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 22 occurrences:
-; eastl/optimized/BenchmarkTupleVector.cpp.ll
-; faiss/optimized/Clustering.cpp.ll
-; hyperscan/optimized/goughcompile.cpp.ll
-; llvm/optimized/AliasSetTracker.cpp.ll
-; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
-; llvm/optimized/CGExprCXX.cpp.ll
-; llvm/optimized/CGObjCGNU.cpp.ll
-; llvm/optimized/CGObjCMac.cpp.ll
-; llvm/optimized/ConstraintElimination.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/LiveInterval.cpp.ll
-; llvm/optimized/PPCaching.cpp.ll
-; llvm/optimized/PPLexerChange.cpp.ll
-; llvm/optimized/PPMacroExpansion.cpp.ll
-; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SubtargetEmitter.cpp.ll
-; llvm/optimized/SwiftCallingConv.cpp.ll
-; llvm/optimized/TextStub.cpp.ll
-; ncnn/optimized/detectionoutput.cpp.ll
-; opencv/optimized/face_detection_mtcnn.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw %"struct.ncnn::BBoxRect.2636344", ptr %0, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %4, %1
-  %6 = sdiv exact i64 %5, -20
-  %7 = getelementptr nusw %"struct.ncnn::BBoxRect.2636344", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639935", ptr %0, i64 %6
   ret ptr %7
 }
 

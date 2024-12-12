@@ -12,7 +12,7 @@ entry:
   %3 = lshr i64 %2, 15
   %4 = trunc i64 %3 to i8
   %5 = and i8 %4, 16
-  %6 = or disjoint i8 %5, %1
+  %6 = or disjoint i8 %1, %5
   %7 = or disjoint i8 %6, %0
   ret i8 %7
 }

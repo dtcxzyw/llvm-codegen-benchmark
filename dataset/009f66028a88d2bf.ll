@@ -1,11 +1,13 @@
 
-; 680 occurrences:
+; 679 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/ifTune.c.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
 ; assimp/optimized/OptimizeMeshes.cpp.ll
+; boost/optimized/formatter.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; c3c/optimized/semantic_analyser.c.ll
 ; clamav/optimized/client.c.ll
@@ -180,7 +182,6 @@
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/82571.ll
 ; linux/optimized/array.ll
-; linux/optimized/attr.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/build_policy.ll
@@ -197,8 +198,6 @@
 ; linux/optimized/gc.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hdac_device.ll
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/i915_gem_evict.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_display_power.ll
@@ -215,10 +214,8 @@
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/locks.ll
-; linux/optimized/mii.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/neighbour.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/ntp.ll
 ; linux/optimized/page_alloc.ll
@@ -494,6 +491,7 @@
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_text.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; meshlab/optimized/edit_point.cpp.ll
@@ -512,8 +510,6 @@
 ; oniguruma/optimized/regexec.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; openblas/optimized/dgemmt.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/graphsegmentation.cpp.ll
@@ -527,6 +523,7 @@
 ; opencv/optimized/thresh.cpp.ll
 ; openexr/optimized/ImfImage.cpp.ll
 ; openexr/optimized/ImfTiledMisc.cpp.ll
+; openjdk/optimized/Inet6AddressImpl.ll
 ; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/cmspack.ll
@@ -680,6 +677,8 @@
 ; wolfssl/optimized/ssl.c.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; z3/optimized/goal2sat.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -710,8 +709,7 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
-; clamav/optimized/upack.c.ll
+; 8 occurrences:
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; gromacs/optimized/md5.c.ll
 ; gromacs/optimized/md5.cpp.ll
@@ -721,10 +719,10 @@ entry:
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 248
-  %3 = icmp ugt i32 %2, 8
+  %3 = icmp samesign ugt i32 %2, 8
   %4 = select i1 %3, i32 %0, i32 0
   ret i32 %4
 }
@@ -740,7 +738,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 28
   %.not = icmp eq i32 %2, 28
@@ -748,9 +746,8 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/devinet.ll
-; linux/optimized/fib_notifier.ll
 ; linux/optimized/nexthop.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {

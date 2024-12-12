@@ -100,21 +100,18 @@
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 24
   %4 = and i64 %3, 255
-  %5 = getelementptr nusw i8, ptr %1, i64 36
-  %6 = getelementptr nusw i32, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 36
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; abc/optimized/abcRec3.c.ll
-; abc/optimized/abcRenode.c.ll
-; hyperscan/optimized/teddy.c.ll
-; hyperscan/optimized/teddy_avx2.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -123,6 +120,21 @@ entry:
   %5 = getelementptr i8, ptr %1, i64 36
   %6 = getelementptr i32, ptr %5, i64 %4
   %7 = getelementptr nusw i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 3 occurrences:
+; abc/optimized/abcRenode.c.ll
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 24
+  %4 = and i64 %3, 255
+  %5 = getelementptr i8, ptr %1, i64 36
+  %6 = getelementptr i32, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 

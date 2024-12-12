@@ -8,7 +8,7 @@
 ; openjdk/optimized/memnode.ll
 ; wireshark/optimized/packet-do-irp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -5
   %3 = icmp eq i32 %2, 1
@@ -22,7 +22,7 @@ entry:
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; zxing/optimized/QRReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65536
   %3 = icmp ne i32 %2, 0

@@ -9,12 +9,12 @@
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 1, %2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }
 
-; 146 occurrences:
+; 144 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -27,7 +27,6 @@ entry:
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
@@ -117,7 +116,6 @@ entry:
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -165,7 +163,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }
@@ -196,7 +194,7 @@ entry:
   ret i64 %5
 }
 
-; 178 occurrences:
+; 177 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
@@ -330,7 +328,6 @@ entry:
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -379,7 +376,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }
@@ -392,7 +389,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 4096, %2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }

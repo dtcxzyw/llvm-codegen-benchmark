@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	%esi, %eax
 	testb	$1, %dl
 	movl	$4294967295, %ecx               # imm = 0xFFFFFFFF
@@ -7,7 +7,7 @@ func0000000000000031:                   # @func0000000000000031
 	cmpq	%rcx, %rdi
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movl	%esi, %eax
 	testb	$1, %dl
 	movl	$1, %ecx

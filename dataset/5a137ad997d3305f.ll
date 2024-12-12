@@ -1,14 +1,12 @@
 
-; 21 occurrences:
+; 19 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/ssl_msg.c.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/sock.ll
 ; llvm/optimized/SemaDecl.cpp.ll
-; nuttx/optimized/pthread_mutexattr_setprotocol.c.ll
-; nuttx/optimized/pthread_mutexattr_settype.c.ll
+; lvgl/optimized/lv_span.ll
 ; openssl/optimized/libcommon-lib-ciphercommon.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_ocb.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll

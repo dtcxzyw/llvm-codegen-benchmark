@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/tng_io.c.ll
 ; linux/optimized/initramfs.ll
@@ -11,13 +11,11 @@
 ; softposit-rs/optimized/4wrr62dd33canpwl.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f64.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -61,7 +59,7 @@ define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
   %4 = add i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -71,7 +69,7 @@ entry:
 define i64 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 24
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -104,7 +102,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1024
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -115,7 +113,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1024
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }

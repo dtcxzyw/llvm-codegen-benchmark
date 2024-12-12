@@ -27,14 +27,23 @@ func000000000000001f:                   # @func000000000000001f
 	sub	a0, a0, a2
 	addi	a0, a0, 2
 	ret
+func00000000000000a0:                   # @func00000000000000a0
+	slli	a2, a2, 56
+	srai	a2, a2, 56
+	slti	a2, a2, 0
+	xori	a2, a2, 1
+	add	a0, a0, a1
+	sub	a0, a0, a2
+	addi	a0, a0, 2
+	ret
 func0000000000000015:                   # @func0000000000000015
 	andi	a2, a2, 255
-	beqz	a2, .LBB4_2
+	beqz	a2, .LBB5_2
 	li	a2, 96
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-.LBB4_2:
+.LBB5_2:
 	li	a2, 128
 	add	a0, a0, a1
 	add	a0, a0, a2

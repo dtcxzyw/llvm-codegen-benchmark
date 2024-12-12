@@ -188,7 +188,7 @@
 define i64 @func0000000000000032(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = zext i32 %0 to i64
   %6 = sub nsw i64 %5, %4
   %7 = lshr i64 %6, 32

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	7                               # 0x7
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
 	movabsq	$5270498306774157605, %rsi      # imm = 0x4924924924924925

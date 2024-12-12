@@ -1,5 +1,5 @@
 
-; 157 occurrences:
+; 195 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -13,6 +13,13 @@
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/environment.ll
+; boost/optimized/ext.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/process.ll
+; boost/optimized/search_path.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; cmake/optimized/cmProcessTools.cxx.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
@@ -50,7 +57,6 @@
 ; linux/optimized/intel_uc_fw.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/pci-acpi.ll
 ; linux/optimized/string.ll
 ; linux/optimized/trace_events_filter.ll
@@ -71,6 +77,8 @@
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_draw.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nlohmann_json/optimized/unit.cpp.ll
@@ -156,20 +164,51 @@
 ; yosys/optimized/proc_rmdead.ll
 ; z3/optimized/theory_bv.cpp.ll
 ; z3/optimized/theory_char.cpp.ll
+; zed-rs/optimized/13vabw3h9sttos1r8ubgjg4y3.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1t00sx04wxddh9gaenzu20fkj.ll
+; zed-rs/optimized/21i2scvoi6euuzfowv56ni169.ll
+; zed-rs/optimized/23nswl1llway8978jvm857sny.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
+; zed-rs/optimized/29rnga216p81m4tvqorhkvbk6.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3scmoq1runhoh8tztox4ql1ei.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/6dn0ge6k6n2ik0ce7lwpgjvce.ll
+; zed-rs/optimized/71uytbn1jy6440q3d57n4okna.ll
+; zed-rs/optimized/75my8vcb3iwk2608ratkvf78s.ll
+; zed-rs/optimized/79iwpw5lq360ug3z4zdidy7ez.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9awmqr28bdho83r0fgrej0t00.ll
+; zed-rs/optimized/9fdv7qxvc9ek9liffc7407f9x.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/ailsz2jv8iqda6dwl0yyf0y7p.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/ayy5pqcx1yuz6kdx9ooq2ruee.ll
+; zed-rs/optimized/b0jacrvunbgse6y69p1vx4gkq.ll
+; zed-rs/optimized/cotfxqu3rdto9s39925nu3dus.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
+; zed-rs/optimized/e8miey85a4w6kj2eow2y7dsus.ll
+; zed-rs/optimized/eo18zatc0xw14x5dtbryzn4x9.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; zxing/optimized/DMECEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 72 occurrences:
+; 86 occurrences:
 ; actix-rs/optimized/1a89q5mj3jl9opyq.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; actix-rs/optimized/n3tsoobypc9yljt.ll
+; boost/optimized/approximately_equals.ll
 ; clamav/optimized/regcomp.c.ll
 ; clamav/optimized/str.c.ll
 ; clamav/optimized/uniq.c.ll
@@ -238,20 +277,33 @@ entry:
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; yosys/optimized/wreduce.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/4539sm9s3e94vv18ffp5lvtyk.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9ld5vmlj2ufuzyru6e6aorg0l.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 18 occurrences:
+; 16 occurrences:
+; arrow/optimized/int_util.cc.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; duckdb/optimized/ub_duckdb_main_capi.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; hwloc/optimized/pci-common.ll
-; linux/optimized/mlme.ll
 ; llvm/optimized/SemaLambda.cpp.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
@@ -260,9 +312,7 @@ entry:
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; regex-rs/optimized/43rm3k0zg7aeemwj.ll
-; tokenizers-rs/optimized/4vpw5vpiz5qnu5om.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
-; verilator/optimized/V3Param.cpp.ll
 ; verilator/optimized/V3Tristate.cpp.ll
 ; wireshark/optimized/packet-ip.c.ll
 ; Function Attrs: nounwind
@@ -274,6 +324,8 @@ entry:
 }
 
 ; 98 occurrences:
+; arrow/optimized/int_util.cc.ll
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -343,7 +395,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -370,17 +421,17 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
 ; 11 occurrences:
+; arrow/optimized/int_util.cc.ll
 ; icu/optimized/n2builder.ll
 ; icu/optimized/normalizer2impl.ll
 ; linux/optimized/maple_tree.ll
@@ -390,13 +441,12 @@ entry:
 ; qemu/optimized/migration_options.c.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
 ; regex-rs/optimized/43rm3k0zg7aeemwj.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -410,7 +460,19 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 2 occurrences:
+; linux/optimized/mlme.ll
+; verilator/optimized/V3Param.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i8 %1, %2
+  %4 = or i1 %0, %3
+  ret i1 %4
+}
+
+; 6 occurrences:
+; arrow/optimized/int_util.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; entt/optimized/version.cpp.ll
 ; quantlib/optimized/dataparsers.ll
@@ -420,7 +482,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -432,7 +494,7 @@ entry:
 define i1 @func000000000000000e(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp sle i8 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -445,7 +507,17 @@ entry:
 define i1 @func000000000000000a(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ule i8 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; typst-rs/optimized/40w6rezair915kkd.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %1, %2
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

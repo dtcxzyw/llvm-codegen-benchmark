@@ -61,3 +61,12 @@ func000000000000000e:                   # @func000000000000000e
 	subq	%rax, %rdi
 	leaq	1(%rdi), %rax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	andb	$1, %sil
+	notq	%rdx
+	xorl	%eax, %eax
+	negb	%sil
+	sbbq	%rax, %rax
+	orq	%rdx, %rax
+	addq	%rdi, %rax
+	retq

@@ -1,22 +1,17 @@
 
-; 15 occurrences:
+; 10 occurrences:
 ; coreutils-rs/optimized/31vrb73337u20kex.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
-; eastl/optimized/EAString.cpp.ll
 ; git/optimized/date.ll
 ; llvm/optimized/ASTImporter.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; openusd/optimized/stringUtils.cpp.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; vcpkg/optimized/commands.integrate.cpp.ll
-; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000544(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001484(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -71
   %3 = icmp ult i32 %2, -6
@@ -26,18 +21,16 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/FuchsiaHandleChecker.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-hangul.ll
-; openssl/optimized/rpktest-bin-rpktest.ll
 ; ruby/optimized/symbol.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001084(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -91
   %3 = icmp ult i32 %2, -26
@@ -47,7 +40,7 @@ entry:
   ret i1 %6
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; arrow/optimized/type.cc.ll
 ; c3c/optimized/llvm_codegen_builtins.c.ll
 ; c3c/optimized/sema_expr.c.ll
@@ -68,6 +61,7 @@ entry:
 ; llvm/optimized/VirtRegMap.cpp.ll
 ; llvm/optimized/X86FixupBWInsts.cpp.ll
 ; llvm/optimized/X86FixupLEAs.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; openjdk/optimized/X11SurfaceData.ll
@@ -81,7 +75,7 @@ entry:
 ; re2/optimized/parse.cc.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -71
   %3 = icmp ult i32 %2, -6
@@ -98,7 +92,7 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/t_string.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, -1
   %3 = icmp ne i32 %0, -1
@@ -109,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000005cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000158c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 42
   %3 = icmp ne i32 %0, 42
@@ -124,7 +118,7 @@ entry:
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; unicode-normalization-rs/optimized/ymmduj8w84wlz7n.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000484(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp ult i32 %2, 1073741823
@@ -137,7 +131,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000051c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000142c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 42
   %3 = icmp ne i32 %0, 54
@@ -149,7 +143,7 @@ entry:
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000511(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001421(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 55
   %3 = icmp eq i32 %0, 68
@@ -164,7 +158,7 @@ entry:
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000588(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001508(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -18
   %3 = icmp ult i32 %2, -5

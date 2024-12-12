@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; cmake/optimized/SystemTools.cxx.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
@@ -9,7 +9,6 @@
 ; icu/optimized/unames.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/radiotap.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
@@ -31,7 +30,7 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -53,6 +52,7 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:

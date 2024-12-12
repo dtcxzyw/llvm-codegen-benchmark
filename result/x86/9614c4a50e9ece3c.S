@@ -20,13 +20,13 @@ func0000000000000006:                   # @func0000000000000006
 	leaq	1(%rdi), %rax
 	shrq	$63, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	subq	%rsi, %rdi
 	incq	%rdi
 	cmpq	$1024, %rdi                     # imm = 0x400
 	setb	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	subq	%rsi, %rdi
 	leaq	1(%rdi), %rax
 	shrq	$63, %rax
@@ -36,7 +36,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$-2, %rsi
 	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subq	%rsi, %rdi
 	cmpq	$-1, %rdi
 	sete	%al
@@ -46,18 +46,18 @@ func000000000000000c:                   # @func000000000000000c
 	cmpq	$-22, %rdi
 	setne	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	subq	%rsi, %rdi
 	addq	$-32, %rdi
 	cmpq	$-33, %rdi
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	subq	%rsi, %rdi
 	cmpq	$-2, %rdi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	subq	%rsi, %rdi
 	cmpq	$-3, %rdi
 	setne	%al

@@ -1,30 +1,21 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	neg	v4.4s, v1.4s
-	neg	v5.4s, v0.4s
-	and	v3.16b, v4.16b, v3.16b
-	and	v2.16b, v5.16b, v2.16b
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	neg	w8, w0
+	and	w8, w1, w8
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	neg	v4.4s, v1.4s
-	neg	v5.4s, v0.4s
-	and	v3.16b, v4.16b, v3.16b
-	and	v2.16b, v5.16b, v2.16b
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	neg	w8, w0
+	and	w8, w1, w8
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	neg	v4.4s, v1.4s
-	neg	v5.4s, v0.4s
-	and	v3.16b, v4.16b, v3.16b
-	and	v2.16b, v5.16b, v2.16b
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	neg	w8, w0
+	and	w8, w1, w8
+	add	w0, w8, w0
 	ret
                                         // -- End function

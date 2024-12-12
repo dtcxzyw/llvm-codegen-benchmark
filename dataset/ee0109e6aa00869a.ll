@@ -20,7 +20,7 @@ entry:
   %2 = freeze ptr %1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = icmp ugt i64 %4, 31
+  %5 = icmp slt i64 %4, 0
   ret i1 %5
 }
 
@@ -73,7 +73,7 @@ entry:
 ; yalantinglibs/optimized/MessageGenerator.cpp.ll
 ; yosys/optimized/viz.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, ptr %1) #0 {
+define i1 @func000000000000002a(i64 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = ptrtoint ptr %2 to i64

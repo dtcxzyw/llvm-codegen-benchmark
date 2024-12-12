@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; eastl/optimized/TestSmartPtr.cpp.ll
 ; gromacs/optimized/filenameoption.cpp.ll
@@ -16,7 +16,6 @@
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; nix/optimized/build-result.ll
 ; ocio/optimized/Config.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/Processor.cpp.ll
 ; openjdk/optimized/escape.ll
 ; rocksdb/optimized/wal_manager.cc.ll
@@ -33,7 +32,7 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; coreutils-rs/optimized/45371cbry3cnr73y.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; ockam-rs/optimized/4df8gyzy0u3roc94.ll
@@ -41,6 +40,7 @@ entry:
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
 ; rust-analyzer-rs/optimized/4li1jw3llk76lkpw.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i8 %0, i8 %1) #0 {
 entry:

@@ -1,8 +1,10 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/pme_grid.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/raw_ostream.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; openjdk/optimized/chaitin.ll

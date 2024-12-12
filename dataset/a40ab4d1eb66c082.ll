@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; clamav/optimized/dlp.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -46,6 +46,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; ruby/optimized/unicode.ll
 ; stb/optimized/stb_image_resize2.c.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
@@ -57,18 +58,12 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 3 occurrences:
 ; graphviz/optimized/strmatch.c.ll
-; icu/optimized/ubidiwrt.ll
-; llvm/optimized/InstCombineCasts.cpp.ll
-; llvm/optimized/InstCombineCompares.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/VectorCombine.cpp.ll
 ; php/optimized/php_cli.ll
-; quickjs/optimized/libregexp.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -8
   %4 = icmp ult i32 %3, -2

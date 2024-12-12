@@ -19,7 +19,7 @@ func0000000000000305:                   # @func0000000000000305
 	andl	$1, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
-func000000000000020f:                   # @func000000000000020f
+func000000000000060f:                   # @func000000000000060f
 	cmpq	$2, %rdx
 	sbbl	$-1, %edi
 	andl	$1, %esi
@@ -41,4 +41,10 @@ func0000000000000205:                   # @func0000000000000205
 	andl	$1, %esi
 	addl	%esi, %eax
 	addl	%edi, %eax
+	retq
+func000000000000020f:                   # @func000000000000020f
+	cmpq	$65792, %rdx                    # imm = 0x10100
+	sbbl	$-1, %edi
+	andl	$1, %esi
+	leal	(%rsi,%rdi), %eax
 	retq

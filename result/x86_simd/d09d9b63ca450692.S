@@ -15,7 +15,7 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	-64                             # 0xffffffffffffffc0
 .LCPI1_1:
 	.quad	1152921504606846975             # 0xfffffffffffffff
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -28,7 +28,7 @@ func0000000000000111:                   # @func0000000000000111
 	.quad	-64                             # 0xffffffffffffffc0
 .LCPI2_1:
 	.quad	1152921504606846975             # 0xfffffffffffffff
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -39,7 +39,7 @@ func0000000000000101:                   # @func0000000000000101
 	retq
 .LCPI3_0:
 	.quad	-32                             # 0xffffffffffffffe0
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	vpsllq	$2, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -51,7 +51,7 @@ func000000000000010a:                   # @func000000000000010a
 	retq
 .LCPI4_0:
 	.quad	-32                             # 0xffffffffffffffe0
-func000000000000040a:                   # @func000000000000040a
+func000000000000080a:                   # @func000000000000080a
 	vpsllq	$2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -65,7 +65,7 @@ func000000000000040a:                   # @func000000000000040a
 	.quad	-64                             # 0xffffffffffffffc0
 .LCPI5_1:
 	.quad	32                              # 0x20
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -76,7 +76,7 @@ func0000000000000106:                   # @func0000000000000106
 	retq
 .LCPI6_0:
 	.quad	-64                             # 0xffffffffffffffc0
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0

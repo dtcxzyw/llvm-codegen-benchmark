@@ -51,8 +51,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; qemu/optimized/block_nvme.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:

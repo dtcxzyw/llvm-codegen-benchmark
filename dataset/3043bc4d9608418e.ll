@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.245.2886548" = type { %"class.hermes::vm::HermesValue.2886502" }
-%"class.hermes::vm::HermesValue.2886502" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.245.3081069" = type { %"class.hermes::vm::HermesValue.3081023" }
+%"class.hermes::vm::HermesValue.3081023" = type { i64 }
 
 ; 17 occurrences:
 ; abc/optimized/fraSim.c.ll
@@ -21,12 +21,12 @@
 ; php/optimized/optimize_temp_vars_5.ll
 ; spike/optimized/plic.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = lshr i64 %2, 6
   %4 = and i64 %3, 67108863
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -64,19 +64,20 @@ entry:
 ; jemalloc/optimized/emap.sym.ll
 ; openjdk/optimized/filemap.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2305843009213693944
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaShow.c.ll
 ; abc/optimized/sbdPath.c.ll
+; boost/optimized/approximately_equals.ll
 ; cvc5/optimized/match_trie.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
@@ -90,12 +91,12 @@ entry:
 ; yosys/optimized/test_cell.ll
 ; z3/optimized/reduce_args_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967295
   %3 = lshr i64 %2, 6
   %4 = and i64 %3, 67108863
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -103,12 +104,12 @@ entry:
 ; clamav/optimized/sis.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 160
   %3 = lshr exact i64 %2, 1
   %4 = and i64 %3, 2147483647
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -132,12 +133,12 @@ entry:
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 4294963200
   %3 = lshr i64 %2, 10
   %4 = and i64 %3, 4194303
-  %5 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.245.2886548", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.245.3081069", ptr %0, i64 %4
   ret ptr %5
 }
 

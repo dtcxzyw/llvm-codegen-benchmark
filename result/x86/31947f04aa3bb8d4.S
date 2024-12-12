@@ -1,11 +1,11 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	leal	-1(%rdx), %ecx
 	leal	1(%rsi), %eax
 	andl	%ecx, %eax
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	decl	%edx
 	incl	%esi
 	andl	%edx, %esi

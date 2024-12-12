@@ -1,5 +1,5 @@
 
-%struct.resource.3363127 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
+%struct.resource.3549589 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
 
 ; 4 occurrences:
 ; cpython/optimized/sre.ll
@@ -7,11 +7,11 @@
 ; linux/optimized/fib_trie.ll
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 8552
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8552
   %5 = getelementptr [49152 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -34,12 +34,12 @@ entry:
 ; openvdb/optimized/Maps.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr nusw [16 x double], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %5 = getelementptr nusw nuw [16 x double], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -58,12 +58,12 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 56
-  %5 = getelementptr nusw [200 x float], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 56
+  %5 = getelementptr nusw nuw [200 x float], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -71,11 +71,11 @@ entry:
 ; linux/optimized/drm_dp_mst_topology.ll
 ; wireshark/optimized/ems.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i64 %1) #0 {
+define ptr @func000000000000007c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 32
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 32
   %5 = getelementptr [64 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -88,7 +88,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
   %4 = getelementptr i8, ptr %0, i64 736
-  %5 = getelementptr [11 x %struct.resource.3363127], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [11 x %struct.resource.3549589], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -107,11 +107,11 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/sre.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 80
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 80
   %5 = getelementptr [1 x i64], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

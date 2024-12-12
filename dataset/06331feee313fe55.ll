@@ -10,9 +10,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ozz-animation/optimized/track_triggering_job.cc.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000004a(float %0, float %1, float %2) #0 {
 entry:

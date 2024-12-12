@@ -58,7 +58,7 @@ entry:
   ret i32 %6
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -101,6 +101,7 @@ entry:
 ; icu/optimized/ucnvsel.ll
 ; icu/optimized/usprep.ll
 ; icu/optimized/utrie2.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
@@ -121,7 +122,7 @@ entry:
   %3 = add nuw i32 %1, %2
   %4 = lshr exact i32 %3, 2
   %5 = and i32 %4, 50529027
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -134,7 +135,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr exact i32 %3, 4
   %5 = and i32 %4, 458759
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -149,7 +150,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 8
   %5 = and i32 %4, 255
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -165,7 +166,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 8
   %5 = and i32 %4, 255
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 

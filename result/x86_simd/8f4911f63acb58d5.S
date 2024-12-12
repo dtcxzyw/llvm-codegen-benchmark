@@ -4,7 +4,7 @@
 	.zero	16,1
 .LCPI0_2:
 	.byte	8                               # 0x8
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpbroadcastb	.LCPI0_2(%rip), %xmm2   # xmm2 = [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
 	vpcmpeqb	%xmm2, %xmm1, %k0
 	vpcmpeqb	%xmm2, %xmm0, %k1
@@ -17,7 +17,7 @@ func0000000000000044:                   # @func0000000000000044
 	.zero	16,1
 .LCPI1_2:
 	.byte	2                               # 0x2
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	vpbroadcastb	.LCPI1_2(%rip), %xmm2   # xmm2 = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 	vpcmpltub	%xmm2, %xmm1, %k0
 	vpcmpeqb	%xmm2, %xmm0, %k1

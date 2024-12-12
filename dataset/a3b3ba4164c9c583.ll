@@ -5,7 +5,7 @@
 ; openspiel/optimized/QuickTricks.cpp.ll
 ; redis/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp eq i32 %2, %0

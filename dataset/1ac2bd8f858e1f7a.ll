@@ -1,8 +1,7 @@
 
-; 51 occurrences:
+; 46 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
-; abc/optimized/ifDec16.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
@@ -29,12 +28,9 @@
 ; llvm/optimized/LegalizerInfo.cpp.ll
 ; llvm/optimized/LiveInterval.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
-; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -42,7 +38,6 @@
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
 ; openssl/optimized/libapps-lib-apps.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll

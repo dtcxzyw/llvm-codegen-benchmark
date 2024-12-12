@@ -2,7 +2,6 @@
 ; 17 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; arrow/optimized/slow.cc.ll
-; cmake/optimized/archive_write_disk_set_standard_lookup.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; darktable/optimized/introspection_grain.c.ll
@@ -17,6 +16,7 @@
 ; qemu/optimized/ui_vnc.c.ll
 ; ruby/optimized/sprintf.ll
 ; taskflow/optimized/parallel_sort.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:

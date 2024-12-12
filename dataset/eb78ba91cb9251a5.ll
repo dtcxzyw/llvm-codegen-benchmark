@@ -1,5 +1,7 @@
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; openblas/optimized/dlaed4.c.ll
 ; openblas/optimized/dlasd4.c.ll

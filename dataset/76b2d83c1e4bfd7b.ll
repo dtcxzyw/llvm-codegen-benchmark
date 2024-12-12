@@ -35,12 +35,12 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000005e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = mul nsw i32 %3, 12
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = getelementptr nusw i8, ptr %6, i64 %5
   ret ptr %7
 }
@@ -48,12 +48,12 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000004e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = mul i32 %3, 12
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 100
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 100
   %7 = getelementptr nusw i8, ptr %6, i64 %5
   ret ptr %7
 }

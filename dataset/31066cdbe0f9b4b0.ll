@@ -1,5 +1,5 @@
 
-; 226 occurrences:
+; 269 occurrences:
 ; abc/optimized/resSim.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/builder_base.cc.ll
@@ -25,7 +25,6 @@
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
-; libquic/optimized/util-64.c.ll
 ; libwebp/optimized/cost_enc.c.ll
 ; lief/optimized/ecp_curves.c.ll
 ; lightgbm/optimized/dataset.cpp.ll
@@ -119,7 +118,6 @@
 ; llvm/optimized/RISCVCallLowering.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll
@@ -156,6 +154,14 @@
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; minetest/optimized/interlaced.cpp.ll
 ; mitsuba3/optimized/multijitter.cpp.ll
@@ -206,7 +212,6 @@
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_subMagsF16.ll
 ; stb/optimized/stb_voxel_render.c.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
@@ -226,6 +231,44 @@
 ; wireshark/optimized/packet-ipv6.c.ll
 ; wireshark/optimized/packet-websocket.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2icxmtzclo7z45oyowu1m9m0s.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/3y76hj0efsluhdj732s0l4pjz.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7vgle1vcww8f84ro2xl2r2u8f.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/avkcaupfon6sc5v4swrdwryed.ll
+; zed-rs/optimized/bkp2u7tfyqnnhpthgztcor9ly.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/ch3ywh4ed1oz4ae4c1dkspuyz.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/dd8ztmg64g4x9ypkzwkofy6vi.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dqkbt3e3tzkgcyv67jgz1zdbd.ll
+; zed-rs/optimized/dyu8ahcv7l11k0z44ye6uqxem.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0) #0 {
 entry:
@@ -233,7 +276,7 @@ entry:
   ret i8 %1
 }
 
-; 199 occurrences:
+; 217 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/bmcExpand.c.ll
@@ -249,7 +292,9 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/src.ll
 ; clamav/optimized/unpack.cpp.ll
+; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; coreutils-rs/optimized/11hiuykak1azonq6.ll
 ; coreutils-rs/optimized/3t7rjcjao5l6ltsf.ll
@@ -299,7 +344,6 @@ entry:
 ; folly/optimized/Subprocess.cpp.ll
 ; folly/optimized/SymbolizePrinter.cpp.ll
 ; folly/optimized/UniqueInstance.cpp.ll
-; freetype/optimized/type1cid.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -319,15 +363,16 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/geo_interpolation.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; openjdk/optimized/png.ll
 ; openjdk/optimized/verifier.ll
@@ -432,6 +477,22 @@ entry:
 ; wireshark/optimized/tvbuff.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/sha3.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/7od02cvs02zg2t1jcuk4h4evv.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/ca5us8h013in59yvcsgdq94h9.ll
+; zed-rs/optimized/dmqit6fro6q2erc0ll2pdjc7x.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0) #0 {
@@ -440,7 +501,7 @@ entry:
   ret i8 %1
 }
 
-; 194 occurrences:
+; 208 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/mioSop.c.ll
@@ -450,6 +511,7 @@ entry:
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/11hiuykak1azonq6.ll
 ; coreutils-rs/optimized/3t7rjcjao5l6ltsf.ll
 ; coreutils-rs/optimized/49fwg0b0m19bdvio.ll
@@ -474,7 +536,6 @@ entry:
 ; eastl/optimized/Int128_t.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
@@ -485,7 +546,6 @@ entry:
 ; eastl/optimized/TestOptional.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
@@ -522,7 +582,6 @@ entry:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; libquic/optimized/a_int.c.ll
 ; libquic/optimized/curve25519.c.ll
-; libquic/optimized/util-64.c.ll
 ; libquic/optimized/wnaf.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; lief/optimized/ssl_ticket.c.ll
@@ -551,6 +610,8 @@ entry:
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_mem_core_builtin.ll
+; lvgl/optimized/lv_timer.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; nix/optimized/context.ll
@@ -634,6 +695,20 @@ entry:
 ; wireshark/optimized/packet-c1222.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; yosys/optimized/fstdata.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {

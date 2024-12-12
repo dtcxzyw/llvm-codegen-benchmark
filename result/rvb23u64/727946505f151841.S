@@ -12,13 +12,13 @@ func0000000000000060:                   # @func0000000000000060
 	snez	a1, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	slli	a1, a1, 33
 	srli	a1, a1, 56
 	sltiu	a1, a1, 127
 	addw	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	slli	a1, a1, 33
 	srli	a1, a1, 56
 	sltiu	a1, a1, 127

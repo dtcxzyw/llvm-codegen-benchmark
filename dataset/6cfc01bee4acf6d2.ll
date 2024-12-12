@@ -1,13 +1,23 @@
 
-; 50 occurrences:
+; 60 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/mutex.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
-; libquic/optimized/ecdsa_asn1.c.ll
 ; linux/optimized/ioremap.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; taskflow/optimized/async.cpp.ll
@@ -56,16 +66,19 @@ entry:
   %3 = add i64 %1, -1
   %4 = add i64 %3, %2
   %5 = icmp ult i64 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 12 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
+; boost/optimized/work_stealing.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
 ; taskflow/optimized/parallel_sort.cpp.ll
@@ -74,11 +87,47 @@ entry:
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000148(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, -1
   %4 = add nsw i64 %3, %2
   %5 = icmp ult i64 %4, %1
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; flac/optimized/metadata_object.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, 1
+  %4 = add i64 %3, %2
+  %5 = icmp ule i64 %4, %1
+  %6 = or i1 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; libquic/optimized/dsa.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000308(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, 2
+  %4 = add i64 %3, %2
+  %5 = icmp ult i64 %4, %1
+  %6 = or i1 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; Function Attrs: nounwind
+define i1 @func000000000000020a(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, 1
+  %4 = add i64 %3, %2
+  %5 = icmp ule i64 %4, %1
   %6 = or i1 %5, %0
   ret i1 %6
 }

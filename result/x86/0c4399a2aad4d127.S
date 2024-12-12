@@ -7,19 +7,10 @@ func0000000000000003:                   # @func0000000000000003
 	orl	%edi, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	movl	%esi, %ecx
-	shll	$12, %ecx
-	xorl	%eax, %eax
+	leal	(,%rsi,4), %ecx
 	testl	%esi, %esi
+	movl	$4, %eax
 	cmovnsl	%ecx, %eax
-	orl	%edi, %eax
-	retq
-func0000000000000023:                   # @func0000000000000023
-	movl	%esi, %ecx
-	shll	$8, %ecx
-	testl	%esi, %esi
-	movl	$65280, %eax                    # imm = 0xFF00
-	cmovnel	%ecx, %eax
 	orl	%edi, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002

@@ -13,6 +13,13 @@ func000000000000003a:                   # @func000000000000003a
 	addq	%rdi, %rcx
 	subq	%rcx, %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	movq	%rsi, %rax
+	addq	$7, %rdx
+	andq	$-8, %rdx
+	addq	%rdi, %rdx
+	subq	%rdx, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rsi, %rax
 	addq	$1048576, %rdx                  # imm = 0x100000

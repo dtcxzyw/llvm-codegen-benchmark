@@ -20,7 +20,7 @@ entry:
   ret i8 %3
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; cpython/optimized/specialize.ll
 ; git/optimized/graph.ll
 ; libquic/optimized/asn1_lib.c.ll
@@ -53,6 +53,7 @@ entry:
 ; yosys/optimized/opt_expr.ll
 ; yosys/optimized/peepopt.ll
 ; yosys/optimized/smt2.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -78,17 +79,18 @@ entry:
   ret i8 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; clamav/optimized/aspack.c.ll
-; cmake/optimized/archive_ppmd8.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; php/optimized/zend_jit.ll
-; spike/optimized/s_compare128M.ll
-; spike/optimized/s_compare96M.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
 ; typst-rs/optimized/3lt7g0yvt7qzv13u.ll
 ; wireshark/optimized/packet-woww.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
@@ -118,12 +120,17 @@ entry:
   ret i8 %2
 }
 
-; 6 occurrences:
+; 11 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/tdls.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_freetype.ll
+; lvgl/optimized/lv_freetype_glyph.ll
+; lvgl/optimized/lv_freetype_image.ll
+; lvgl/optimized/lv_image_cache.ll
+; lvgl/optimized/lv_image_header_cache.ll
 ; proxygen/optimized/QPACKEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i32 %0, i32 %1) #0 {

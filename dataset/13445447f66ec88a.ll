@@ -1,14 +1,6 @@
 
-%struct.lua_TValue.2811879 = type { %union.Value.2811880, [1 x i32], i32 }
-%union.Value.2811880 = type { ptr }
-%"class.llvm::PointerUnion.3029652" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.3029653" }
-%"class.llvm::pointer_union_detail::PointerUnionMembers.3029653" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.1383.3029654" }
-%"class.llvm::pointer_union_detail::PointerUnionMembers.1383.3029654" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.1384.3029655" }
-%"class.llvm::pointer_union_detail::PointerUnionMembers.1384.3029655" = type { %"class.llvm::PointerIntPair.1385.3029656" }
-%"class.llvm::PointerIntPair.1385.3029656" = type { %"struct.llvm::detail::PunnedPointer.1386.3029657" }
-%"struct.llvm::detail::PunnedPointer.1386.3029657" = type { [8 x i8] }
-%struct.zonelist.3346655 = type { [257 x %struct.zoneref.3346656] }
-%struct.zoneref.3346656 = type { ptr, i32 }
+%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
+%union.Value.2923858 = type { ptr }
 
 ; 4 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -30,13 +22,13 @@ entry:
 ; linux/optimized/r8169_main.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000043(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 60
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 14
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 12
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 12
   ret ptr %6
 }
 
@@ -54,23 +46,22 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/ps_core.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -4
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 12
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 32
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 32
   ret ptr %6
 }
 
-; 87 occurrences:
+; 86 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/mapperTime.c.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; clamav/optimized/crypt.cpp.ll
-; cvc5/optimized/sequences_rewriter.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_crypto.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/bytestrie.ll
@@ -153,13 +144,27 @@ entry:
 ; velox/optimized/md5.cpp.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 24
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 2 occurrences:
+; cvc5/optimized/sequences_rewriter.cpp.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 536870911
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw i8, ptr %5, i64 -8
   ret ptr %6
 }
 
@@ -182,12 +187,12 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000060(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000070(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr %struct.lua_TValue.2811879, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %5 = getelementptr %struct.lua_TValue.2923857, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -16
   ret ptr %6
 }
@@ -199,27 +204,13 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000068(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 131070
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 2
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 1
-  ret ptr %6
-}
-
-; 2 occurrences:
-; llvm/optimized/ParseDecl.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000006b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 65535
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 72
-  %5 = getelementptr nusw %"class.llvm::PointerUnion.3029652", ptr %4, i64 %3
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 88
   ret ptr %6
 }
 
@@ -231,13 +222,13 @@ entry:
 ; linux/optimized/regset.ll
 ; linux/optimized/slub.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000073(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 4864
-  %5 = getelementptr %struct.zonelist.3346655, ptr %4, i64 %3, i32 0, i64 0, i32 1
-  ret ptr %5
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 4864
+  %3 = trunc i32 %1 to i1
+  %.offs = select i1 %3, i64 4120, i64 8
+  %4 = getelementptr i8, ptr %2, i64 %.offs
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

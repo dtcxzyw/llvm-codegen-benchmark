@@ -1,7 +1,7 @@
 
-%struct.pte_t.3341224 = type { i64 }
+%struct.pte_t.3530392 = type { i64 }
 
-; 121 occurrences:
+; 119 occurrences:
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
 ; coreutils-rs/optimized/2zjxva3p2avqok6n.ll
 ; coreutils-rs/optimized/3xc4e7mmntf4esc6.ll
@@ -105,8 +105,6 @@
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
-; luajit/optimized/lj_obj.ll
-; luajit/optimized/lj_obj_dyn.ll
 ; luajit/optimized/lj_serialize.ll
 ; luajit/optimized/lj_serialize_dyn.ll
 ; openjdk/optimized/zMark.ll
@@ -124,20 +122,18 @@
 ; rust-analyzer-rs/optimized/56qlbpwvg5r6rv1.ll
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = and i64 %2, 1073741823
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw i64, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 21 occurrences:
+; 18 occurrences:
 ; linux/optimized/fault.ll
 ; linux/optimized/gup.ll
-; linux/optimized/hibernate.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/init_64.ll
@@ -146,7 +142,6 @@ entry:
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/pgtable-generic.ll
 ; linux/optimized/pti.ll
@@ -161,7 +156,7 @@ entry:
   %2 = lshr i64 %1, 12
   %3 = and i64 %2, 511
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr %struct.pte_t.3341224, ptr %4, i64 %3
+  %5 = getelementptr %struct.pte_t.3530392, ptr %4, i64 %3
   ret ptr %5
 }
 

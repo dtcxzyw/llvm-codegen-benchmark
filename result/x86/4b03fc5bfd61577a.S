@@ -33,9 +33,15 @@ func0000000000000037:                   # @func0000000000000037
 	subq	%rsi, %rdi
 	leaq	-12(,%rdi,4), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+func0000000000000002:                   # @func0000000000000002
 	subq	%rsi, %rdi
 	leaq	4(,%rdi,4), %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	subl	%esi, %edi
+	shlq	$32, %rdi
+	movabsq	$1434519076864, %rax            # imm = 0x14E00000000
+	addq	%rdi, %rax
 	retq
 func0000000000000016:                   # @func0000000000000016
 	subq	%rsi, %rdi
@@ -52,9 +58,4 @@ func0000000000000014:                   # @func0000000000000014
 	shlq	$32, %rdi
 	movabsq	$-8589934592, %rax              # imm = 0xFFFFFFFE00000000
 	addq	%rdi, %rax
-	retq
-func0000000000000002:                   # @func0000000000000002
-	subq	%rsi, %rdi
-	shlq	$4, %rdi
-	leaq	16(%rdi), %rax
 	retq

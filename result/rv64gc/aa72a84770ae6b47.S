@@ -41,12 +41,3 @@ func000000000000002c:                   # @func000000000000002c
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa0
 	ret
-func000000000000002a:                   # @func000000000000002a
-	fsub.s	fa5, fa1, fa2
-	flt.s	a0, fa0, fa5
-	bnez	a0, .LBB4_2
-	fmv.s	fa0, fa5
-.LBB4_2:                                # %entry
-	fmv.w.x	fa5, zero
-	fle.s	a0, fa0, fa5
-	ret

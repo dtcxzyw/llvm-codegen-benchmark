@@ -19,25 +19,31 @@ func0000000000000001:                   # @func0000000000000001
 	.long	1                               # 0x1
 .LCPI3_1:
 	.long	3                               # 0x3
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %ymm0   # ymm0 = [3,3,3,3,3,3,3,3]
 	vpsrld	$1, %ymm1, %ymm0 {%k1}
 	retq
-func000000000000001c:                   # @func000000000000001c
+.LCPI4_0:
+	.long	2                               # 0x2
+func0000000000000008:                   # @func0000000000000008
+	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm0, %k1
+	vpsrld	$1, %ymm1, %ymm0 {%k1} {z}
+	retq
+func000000000000002c:                   # @func000000000000002c
 	vptestmd	%ymm0, %ymm0, %k1
 	vpsrld	$1, %ymm1, %ymm0 {%k1} {z}
 	retq
-.LCPI5_0:
+.LCPI6_0:
 	.long	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	%ymm0, %ymm0, %k1
-	vpbroadcastd	.LCPI5_0(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]
+	vpbroadcastd	.LCPI6_0(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]
 	vpsrld	$3, %ymm1, %ymm0 {%k1}
 	retq
-.LCPI6_0:
+.LCPI7_0:
 	.long	9                               # 0x9
 func0000000000000004:                   # @func0000000000000004
-	vpcmpltud	.LCPI6_0(%rip){1to8}, %ymm0, %k1
+	vpcmpltud	.LCPI7_0(%rip){1to8}, %ymm0, %k1
 	vpsrld	$1, %ymm1, %ymm0 {%k1} {z}
 	retq

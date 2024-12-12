@@ -29,34 +29,29 @@ func0000000000000008:                   # @func0000000000000008
 	sltu	a1, a2, a1
 	czero.eqz	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
-	slt	a1, a2, a1
-	lui	a2, 2
-	czero.nez	a2, a2, a1
-	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
-	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sub	a1, a1, a2
-	lui	a2, 2441
-	slti	a1, a1, 10
-	addiw	a2, a2, 1664
+	lui	a2, 4112
+	slti	a1, a1, 8
+	addiw	a2, a2, 257
+	slli	a3, a2, 32
+	add	a2, a2, a3
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sub	a1, a1, a2
 	sltiu	a1, a1, 64
 	czero.eqz	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	sub	a1, a1, a2
 	sltiu	a1, a1, 64
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	sub	a1, a1, a2
 	sltiu	a1, a1, 65
 	addi	a1, a1, -1

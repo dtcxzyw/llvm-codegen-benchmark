@@ -1,9 +1,9 @@
 
-%"class.folly::hazptr_detail::shared_head_only_list.2568865" = type <{ %"struct.std::atomic.12.2568862", %"struct.std::atomic.27.2568869", i32, [4 x i8] }>
-%"struct.std::atomic.12.2568862" = type { %"struct.std::__atomic_base.13.2568871" }
-%"struct.std::__atomic_base.13.2568871" = type { i64 }
-%"struct.std::atomic.27.2568869" = type { %"class.std::thread::id.2568870" }
-%"class.std::thread::id.2568870" = type { i64 }
+%"class.folly::hazptr_detail::shared_head_only_list.2683239" = type <{ %"struct.std::atomic.12.2683236", %"struct.std::atomic.27.2683243", i32, [4 x i8] }>
+%"struct.std::atomic.12.2683236" = type { %"struct.std::__atomic_base.13.2683245" }
+%"struct.std::__atomic_base.13.2683245" = type { i64 }
+%"struct.std::atomic.27.2683243" = type { %"class.std::thread::id.2683244" }
+%"class.std::thread::id.2683244" = type { i64 }
 
 ; 31 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -38,12 +38,12 @@
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000003(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr i64 %2, 8
   %4 = and i64 %3, 7
-  %5 = getelementptr nusw [8 x %"class.folly::hazptr_detail::shared_head_only_list.2568865"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [8 x %"class.folly::hazptr_detail::shared_head_only_list.2683239"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

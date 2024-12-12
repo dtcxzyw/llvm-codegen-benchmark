@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; cpython/optimized/readline.ll
 ; cpython/optimized/selectmodule.ll
 ; gromacs/optimized/lincs.cpp.ll
@@ -25,7 +25,6 @@
 ; ruby/optimized/regparse.ll
 ; ruby/optimized/thread.ll
 ; wireshark/optimized/androiddump.c.ll
-; wireshark/optimized/ws_pipe.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
@@ -35,37 +34,15 @@ entry:
   ret ptr %4
 }
 
-; 76 occurrences:
-; arrow/optimized/decimal.cc.ll
-; clamav/optimized/communication.c.ll
-; clamav/optimized/fanotif.c.ll
-; clamav/optimized/inotif.c.ll
-; clamav/optimized/netcode.c.ll
-; clamav/optimized/output.c.ll
-; clamav/optimized/proto.c.ll
-; cmake/optimized/mprintf.c.ll
+; 23 occurrences:
 ; cmake/optimized/multi.c.ll
-; cmake/optimized/socket.cpp.ll
-; cpp-httplib/optimized/httplib.cc.ll
-; curl/optimized/libcurl_la-mprintf.ll
 ; curl/optimized/libcurl_la-multi.ll
-; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
-; graphviz/optimized/gvdevice_xlib.c.ll
-; gromacs/optimized/atomdata.cpp.ll
-; gromacs/optimized/imdsocket.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
-; libevent/optimized/evutil_rand.c.ll
 ; libevent/optimized/select.c.ll
-; libquic/optimized/transport_common.cc.ll
 ; libzmq/optimized/zmq.cpp.ll
-; lief/optimized/net_sockets.c.ll
 ; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; luau/optimized/isocline.c.ll
-; nix/optimized/daemon.ll
-; opencv/optimized/cap_v4l.cpp.ll
-; opencv/optimized/obsensor_stream_channel_v4l2.cpp.ll
 ; openjdk/optimized/frame.ll
 ; openjdk/optimized/instanceStackChunkKlass.ll
 ; openjdk/optimized/oopMap.ll
@@ -74,11 +51,47 @@ entry:
 ; openjdk/optimized/stackValue.ll
 ; openjdk/optimized/vectorSupport.ll
 ; openjdk/optimized/vframeArray.ll
-; openmpi/optimized/oob_tcp_listener.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/skat.cc.ll
 ; openspiel/optimized/spades.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
+; php/optimized/php_cli_server.ll
+; php/optimized/streamsfuncs.ll
+; re2/optimized/prog.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sdiv i32 %1, 64
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw [4 x i64], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 54 occurrences:
+; arrow/optimized/decimal.cc.ll
+; clamav/optimized/communication.c.ll
+; clamav/optimized/inotif.c.ll
+; clamav/optimized/netcode.c.ll
+; clamav/optimized/output.c.ll
+; clamav/optimized/proto.c.ll
+; cmake/optimized/mprintf.c.ll
+; cmake/optimized/socket.cpp.ll
+; cpp-httplib/optimized/httplib.cc.ll
+; curl/optimized/libcurl_la-mprintf.ll
+; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
+; graphviz/optimized/gvdevice_xlib.c.ll
+; gromacs/optimized/atomdata.cpp.ll
+; gromacs/optimized/imdsocket.cpp.ll
+; gromacs/optimized/threaded_force_buffer.cpp.ll
+; libevent/optimized/evutil_rand.c.ll
+; libquic/optimized/transport_common.cc.ll
+; lief/optimized/net_sockets.c.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; luau/optimized/isocline.c.ll
+; nix/optimized/daemon.ll
+; opencv/optimized/cap_v4l.cpp.ll
+; opencv/optimized/obsensor_stream_channel_v4l2.cpp.ll
+; openmpi/optimized/oob_tcp_listener.ll
 ; openssl/optimized/asynciotest-bin-ssltestlib.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
 ; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
@@ -103,21 +116,18 @@ entry:
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/php_cli_server.ll
-; php/optimized/streamsfuncs.ll
 ; protobuf/optimized/subprocess.cc.ll
-; re2/optimized/bitmap256.cc.ll
 ; re2/optimized/prog.cc.ll
 ; redis/optimized/redis-cli.ll
 ; slurm/optimized/common.ll
 ; wolfssl/optimized/client.c.ll
 ; wolfssl/optimized/server.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [4 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

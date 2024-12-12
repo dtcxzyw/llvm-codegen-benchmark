@@ -1,16 +1,16 @@
-func00000000000001a0:                   # @func00000000000001a0
+func00000000000003a0:                   # @func00000000000003a0
 	movl	%edi, %eax
 	addl	%edx, %esi
 	cmpl	$3, %esi
 	adcl	$0, %eax
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000121:                   # @func0000000000000121
 	movl	%edi, %eax
 	addl	%edx, %esi
 	cmpl	$3, %esi
 	adcl	$0, %eax
 	retq
-func00000000000000a3:                   # @func00000000000000a3
+func0000000000000123:                   # @func0000000000000123
 	movl	%edi, %eax
 	addl	%edx, %esi
 	cmpl	$2, %esi
@@ -29,7 +29,7 @@ func0000000000000033:                   # @func0000000000000033
 	setl	%al
 	addl	%edi, %eax
 	retq
-func00000000000000d3:                   # @func00000000000000d3
+func0000000000000153:                   # @func0000000000000153
 	addl	%edx, %esi
 	xorl	%eax, %eax
 	cmpl	$12289, %esi                    # imm = 0x3001
@@ -43,21 +43,21 @@ func0000000000000051:                   # @func0000000000000051
 	setge	%al
 	addl	%edi, %eax
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func0000000000000151:                   # @func0000000000000151
 	addl	%edx, %esi
 	xorl	%eax, %eax
 	cmpl	$49156, %esi                    # imm = 0xC004
 	setge	%al
 	addl	%edi, %eax
 	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000131:                   # @func0000000000000131
 	addl	%edx, %esi
 	xorl	%eax, %eax
 	cmpl	$3, %esi
 	setl	%al
 	addl	%edi, %eax
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000141:                   # @func0000000000000141
 	movl	%edi, %eax
 	addl	%edx, %esi
 	cmpl	$63, %esi
@@ -69,7 +69,7 @@ func0000000000000023:                   # @func0000000000000023
 	cmpl	$8161, %esi                     # imm = 0x1FE1
 	adcl	$0, %eax
 	retq
-func00000000000001a3:                   # @func00000000000001a3
+func00000000000003a3:                   # @func00000000000003a3
 	movl	%edi, %eax
 	addl	%edx, %esi
 	cmpl	$1020, %esi                     # imm = 0x3FC
@@ -93,7 +93,7 @@ func0000000000000061:                   # @func0000000000000061
 	setne	%al
 	addl	%edi, %eax
 	retq
-func00000000000000e3:                   # @func00000000000000e3
+func0000000000000163:                   # @func0000000000000163
 	xorl	%eax, %eax
 	addl	%edx, %esi
 	setne	%al

@@ -1,13 +1,20 @@
 
-%"struct.rocksdb::(anonymous namespace)::Fsize.2500336" = type { i64, ptr }
-%"class.llvm::MachineOperand.3156248" = type { i32, %union.anon.181.3156249, ptr, %"union.llvm::MachineOperand::ContentsUnion.3156250" }
-%union.anon.181.3156249 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3156250" = type { %"class.llvm::ArrayRef.3156251" }
-%"class.llvm::ArrayRef.3156251" = type { ptr, i64 }
-%"struct.cv::ximgproc::Ellipse.3567352" = type { ptr, %"class.cv::Point_.3567319", float, float, float, float }
-%"class.cv::Point_.3567319" = type { float, float }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
+%"struct.std::pair.44.3290133" = type { i64, %"class.llvm::SmallVector.0.3290069" }
+%"class.llvm::SmallVector.0.3290069" = type { %"class.llvm::SmallVectorImpl.1.3290071", %"struct.llvm::SmallVectorStorage.4.3290072" }
+%"class.llvm::SmallVectorImpl.1.3290071" = type { %"class.llvm::SmallVectorTemplateBase.2.3290073" }
+%"class.llvm::SmallVectorTemplateBase.2.3290073" = type { %"class.llvm::SmallVectorTemplateCommon.3.3290074" }
+%"class.llvm::SmallVectorTemplateCommon.3.3290074" = type { %"class.llvm::SmallVectorBase.3290067" }
+%"class.llvm::SmallVectorBase.3290067" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.4.3290072" = type { [48 x i8] }
+%"class.llvm::MachineOperand.3348886" = type { i32, %union.anon.181.3348887, ptr, %"union.llvm::MachineOperand::ContentsUnion.3348888" }
+%union.anon.181.3348887 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3348888" = type { %"class.llvm::ArrayRef.3348889" }
+%"class.llvm::ArrayRef.3348889" = type { ptr, i64 }
+%"struct.cv::ximgproc::Ellipse.3748037" = type { ptr, %"class.cv::Point_.3748004", float, float, float, float }
+%"class.cv::Point_.3748004" = type { float, float }
 
-; 79 occurrences:
+; 78 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
@@ -35,7 +42,6 @@
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/ClangAttrEmitter.cpp.ll
-; llvm/optimized/MemProf.cpp.ll
 ; luau/optimized/ToString.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -92,11 +98,11 @@ define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2500336", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
@@ -125,7 +131,6 @@ entry:
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
 ; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; protobuf/optimized/enum.cc.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; quantlib/optimized/differentialevolution.ll
@@ -141,7 +146,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2500336", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -151,11 +156,11 @@ entry:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw { { { i64, ptr, {} }, i64 }, { { i64, ptr, {} }, i64 }, { i64, [2 x i64] }, { i64, [2 x i64] }, { { i32, { i32, i8, i8, i8, i8 } }, { i8, i8, i8 }, [1 x i8] }, { { i32, { i32, i8, i8, i8, i8 } }, { i8, i8, i8 }, [1 x i8] }, { [11 x i8], i8, [4 x i8] }, { [16 x i8] } }, ptr %0, i64 %3, i32 4
+  %4 = getelementptr nusw nuw { { { i64, ptr, {} }, i64 }, { { i64, ptr, {} }, i64 }, { i64, [2 x i64] }, { i64, [2 x i64] }, { { i32, { i32, i8, i8, i8, i8 } }, { i8, i8, i8 }, [1 x i8] }, { { i32, { i32, i8, i8, i8, i8 } }, { i8, i8, i8 }, [1 x i8] }, { [11 x i8], i8, [4 x i8] }, { [16 x i8] } }, ptr %0, i64 %3, i32 4
   ret ptr %4
 }
 
@@ -175,13 +180,24 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/MemProf.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 1
+  %3 = or disjoint i64 %2, 1
+  %4 = getelementptr nusw nuw %"struct.std::pair.44.3290133", ptr %0, i64 %3, i32 1
+  ret ptr %4
+}
+
+; 1 occurrences:
 ; llvm/optimized/Localizer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw %"class.llvm::MachineOperand.3156248", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"class.llvm::MachineOperand.3348886", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -195,7 +211,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw %"struct.cv::ximgproc::Ellipse.3567352", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.cv::ximgproc::Ellipse.3748037", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

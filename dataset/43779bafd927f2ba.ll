@@ -1,5 +1,5 @@
 
-; 370 occurrences:
+; 382 occurrences:
 ; abseil-cpp/optimized/log_entry_test.cc.ll
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -34,13 +34,26 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/cmCTest.cxx.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cmake/optimized/cmCTestLaunch.cxx.ll
 ; cmake/optimized/cmExecuteProcessCommand.cxx.ll
-; cmake/optimized/cmFileAPI.cxx.ll
 ; cmake/optimized/cmProcess.cxx.ll
 ; cmake/optimized/cmProcessTools.cxx.ll
 ; cmake/optimized/cmSystemTools.cxx.ll
@@ -84,7 +97,6 @@
 ; libquic/optimized/aead_test.cc.ll
 ; libquic/optimized/bssl_shim.cc.ll
 ; libquic/optimized/cipher_test.cc.ll
-; libquic/optimized/client.cc.ll
 ; libquic/optimized/dh_test.cc.ll
 ; libquic/optimized/evp_extra_test.cc.ll
 ; libquic/optimized/evp_test.cc.ll

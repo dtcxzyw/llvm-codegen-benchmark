@@ -1,5 +1,5 @@
 
-; 243 occurrences:
+; 242 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
@@ -214,7 +214,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -249,7 +248,7 @@ entry:
   %2 = xor i64 %0, %1
   %3 = mul i64 %2, -7070675565921424023
   %4 = lshr i64 %3, 47
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = xor i64 %5, %3
   ret i64 %6
 }

@@ -1,5 +1,5 @@
 
-; 135 occurrences:
+; 133 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/giaClp.c.ll
@@ -7,10 +7,9 @@
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/wlcBlast.c.ll
-; cmake/optimized/archive_pack_dev.c.ll
+; boost/optimized/src.ll
 ; cvc5/optimized/Solver.cc.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
-; glslang/optimized/hlslParseHelper.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
 ; hermes/optimized/GlobalObject.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
@@ -82,7 +81,6 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; logos-rs/optimized/bt773r0511h3mpz.ll
-; luau/optimized/isocline.c.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; openjdk/optimized/shenandoahHeapRegionCounters.ll
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
@@ -145,11 +143,10 @@ entry:
   ret i64 %6
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; libquic/optimized/poly1305_vec.c.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/fork.ll
-; linux/optimized/set_memory.ll
 ; llvm/optimized/AArch64ExternalSymbolizer.cpp.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
@@ -172,12 +169,12 @@ entry:
 }
 
 ; 12 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; libquic/optimized/p224-64.c.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/intel_ggtt.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
@@ -187,9 +184,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 32768
-  %4 = and i64 %1, 64512
-  %5 = or i64 %4, %3
+  %3 = and i64 %2, 255
+  %4 = and i64 %1, 1095216660480
+  %5 = or disjoint i64 %4, %3
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -207,7 +204,7 @@ entry:
   %3 = and i64 %2, 7
   %4 = and i64 %1, -449
   %5 = or i64 %4, %3
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 

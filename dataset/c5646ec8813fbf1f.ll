@@ -1,5 +1,5 @@
 
-; 177 occurrences:
+; 178 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcHieCec.c.ll
@@ -28,7 +28,6 @@
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecProve.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -126,7 +125,6 @@
 ; hdf5/optimized/H5Ctag.c.ll
 ; hdf5/optimized/H5Iint.c.ll
 ; hermes/optimized/MD5.cpp.ll
-; icu/optimized/gregoimp.ll
 ; jsonnet/optimized/md5.cpp.ll
 ; libjpeg-turbo/optimized/md5.c.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
@@ -146,6 +144,8 @@
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_spinbox.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; minetest/optimized/sha256.c.ll
 ; node/optimized/simdutf.ll
@@ -177,6 +177,7 @@
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/md5.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -185,11 +186,12 @@ entry:
   ret i32 %3
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/cbaCom.c.ll
 ; abc/optimized/fraIndVer.c.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; git/optimized/string-list.ll
@@ -197,12 +199,12 @@ entry:
 ; gromacs/optimized/xtc2.c.ll
 ; jq/optimized/regparse.ll
 ; libwebp/optimized/lossless.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; nori/optimized/tabwidget.cpp.ll
 ; oniguruma/optimized/regparse.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; opencv/optimized/greyscale_rotated_luminance_source.cpp.ll
 ; opencv/optimized/motionSaliencyBinWangApr2014.cpp.ll
@@ -233,8 +235,7 @@ entry:
   ret i32 %3
 }
 
-; 15 occurrences:
-; abc/optimized/bmcMaj2.c.ll
+; 13 occurrences:
 ; abc/optimized/lpkSets.c.ll
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -244,7 +245,6 @@ entry:
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; quantlib/optimized/date.ll
 ; slurm/optimized/slurm_step_layout.ll
 ; zxing/optimized/AZDecoder.cpp.ll

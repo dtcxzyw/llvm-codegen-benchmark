@@ -16,7 +16,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$3, %ecx
 	cmovael	%ecx, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	leal	-3000000(%rdi), %ecx
 	leal	-3000003(%rdi), %eax
 	cmpl	$3, %ecx

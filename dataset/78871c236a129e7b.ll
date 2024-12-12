@@ -1,10 +1,8 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; flatbuffers/optimized/idl_gen_fbs.cpp.ll
 ; icu/optimized/icuexportdata.ll
 ; llvm/optimized/MCRegisterInfo.cpp.ll
-; minetest/optimized/mg_biome.cpp.ll
-; minetest/optimized/nodedef.cpp.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1) #0 {

@@ -26,7 +26,7 @@
 	.short	65317                           # 0xff25
 .LCPI0_2:
 	.long	37097                           # 0x90e9
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vmovdqa	.LCPI0_0(%rip), %xmm2           # xmm2 = [0,16,1,18,2,20,3,22,4,24,5,26,6,28,7,30]
 	vpermi2b	%xmm0, %xmm1, %xmm2
 	vpcmpeqw	.LCPI0_1(%rip), %xmm2, %k1

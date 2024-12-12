@@ -1,8 +1,6 @@
 func0000000000000010:                   # @func0000000000000010
-	xorl	%eax, %eax
-	cmpb	$45, %dl
-	sete	%al
-	subq	%rax, %rsi
+	cmpb	$1, %dl
+	sbbq	$0, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
 func0000000000000015:                   # @func0000000000000015

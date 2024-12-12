@@ -53,7 +53,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 8, i32 7
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 

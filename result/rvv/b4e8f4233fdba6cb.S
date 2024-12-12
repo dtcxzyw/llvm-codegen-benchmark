@@ -5,5 +5,5 @@ func0000000000000004:                   # @func0000000000000004
 	vsext.vf2	v12, v10
 	vsext.vf2	v14, v11
 	vmul.vv	v8, v8, v12
-	vmul.vv	v8, v14, v8
+	vmul.vv	v8, v8, v14
 	ret

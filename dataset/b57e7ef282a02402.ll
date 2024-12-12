@@ -4,7 +4,7 @@
 ; qemu/optimized/util_hbitmap.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 64, %2
@@ -20,26 +20,13 @@ entry:
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000308(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %0
-  %5 = icmp ugt i64 %4, 1
-  ret i1 %5
-}
-
-; 1 occurrences:
-; git/optimized/combine-diff.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %notmask = shl nsw i64 -1, %2
-  %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %0
-  %5 = icmp eq i64 %4, 0
+  %4 = and i64 %0, %3
+  %5 = icmp samesign ugt i64 %4, 1
   ret i1 %5
 }
 
@@ -48,12 +35,12 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/vnclipu_wv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }

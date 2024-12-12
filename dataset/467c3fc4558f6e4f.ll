@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; ceres/optimized/schur_eliminator_2_3_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_3_4.cc.ll
 ; ceres/optimized/schur_eliminator_2_3_6.cc.ll
@@ -8,6 +8,7 @@
 ; ceres/optimized/schur_eliminator_3_3_3.cc.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; proj/optimized/healpix.cpp.ll

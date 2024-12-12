@@ -9,12 +9,12 @@ func000000000000000c:                   # @func000000000000000c
 	vcmpleps	%zmm2, %zmm3, %k1
 	vmovaps	%zmm2, %zmm2 {%k1} {z}
 	vmulps	%zmm1, %zmm2, %zmm1
-	vmulps	%zmm0, %zmm1, %zmm0
+	vmulps	%zmm1, %zmm0, %zmm0
 	retq
 .LCPI2_0:
 	.long	0x40800000                      # float 4
 func0000000000000002:                   # @func0000000000000002
 	vminps	.LCPI2_0(%rip){1to16}, %zmm2, %zmm2
-	vmulps	%zmm1, %zmm2, %zmm1
+	vmulps	%zmm2, %zmm1, %zmm1
 	vmulps	%zmm0, %zmm1, %zmm0
 	retq

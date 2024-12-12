@@ -1,9 +1,14 @@
 
-; 5 occurrences:
+; 10 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; clamav/optimized/extract.cpp.ll
 ; openjdk/optimized/ad_x86.ll
-; openusd/optimized/stringUtils.cpp.ll
-; postgres/optimized/oracle_compat.ll
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
@@ -13,7 +18,14 @@ entry:
   ret i1 %4
 }
 
-; 34 occurrences:
+; 41 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; darktable/optimized/tagging.c.ll
 ; folly/optimized/IOBuf.cpp.ll
 ; git/optimized/log.ll
@@ -57,6 +69,7 @@ entry:
 }
 
 ; 60 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; cvc5/optimized/linear_equality.cpp.ll
 ; cvc5/optimized/nl_lemma_utils.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
@@ -98,7 +111,6 @@ entry:
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dlasyf.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
@@ -125,7 +137,7 @@ entry:
   ret i1 %4
 }
 
-; 54 occurrences:
+; 51 occurrences:
 ; cvc5/optimized/linear_equality.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; darktable/optimized/copy_history.c.ll
@@ -146,7 +158,6 @@ entry:
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/NaryReassociate.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -160,12 +171,10 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; minetest/optimized/connectionthreads.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openspiel/optimized/mancala.cc.ll
 ; openusd/optimized/reconintra.c.ll
 ; postgres/optimized/tsvector_op.ll
@@ -188,7 +197,7 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; draco/optimized/options.cc.ll
 ; jq/optimized/regparse.ll
@@ -197,6 +206,7 @@ entry:
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CallAndMessageChecker.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll

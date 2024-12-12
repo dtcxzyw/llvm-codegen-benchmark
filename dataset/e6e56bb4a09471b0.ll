@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; libquic/optimized/url_canon_path.cc.ll
+; 7 occurrences:
 ; linux/optimized/usblp.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; opencv/optimized/stringutils.cpp.ll

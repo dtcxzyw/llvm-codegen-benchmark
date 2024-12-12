@@ -1,15 +1,15 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sext.w	a1, a1
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	sext.w	a1, a1
 	addi	a1, a1, -31
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	sext.w	a1, a1
 	addi	a1, a1, -31
 	seqz	a1, a1
@@ -21,7 +21,7 @@ func000000000000000a:                   # @func000000000000000a
 	sgtz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	sext.w	a1, a1
 	seqz	a1, a1
 	or	a0, a0, a1

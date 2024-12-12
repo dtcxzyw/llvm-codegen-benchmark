@@ -4,7 +4,7 @@
 ; fmt/optimized/compile-test.cc.ll
 ; folly/optimized/Singleton.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sext i1 %0 to i32
@@ -245,7 +245,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sext i1 %0 to i32
@@ -312,7 +312,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sext i1 %0 to i32
@@ -324,7 +324,7 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sext i1 %0 to i32

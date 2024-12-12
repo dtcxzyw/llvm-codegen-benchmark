@@ -5,7 +5,7 @@
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000029a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000052a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 1239
   %4 = select i1 %3, i32 1131, i32 107
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000508(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 79
   %4 = select i1 %3, i32 -1980, i32 -1880

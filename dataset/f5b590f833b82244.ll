@@ -16,11 +16,12 @@ define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = icmp ugt i64 %3, 33554432
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
+; boost/optimized/alloc_lib.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; faiss/optimized/AutoTune.cpp.ll
@@ -59,7 +60,7 @@ define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = icmp ult i64 %3, 32
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -80,7 +81,7 @@ entry:
 ; openmpi/optimized/coll_inter_scatter.ll
 ; openmpi/optimized/nbc_ireduce_scatter_block.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -95,7 +96,7 @@ define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

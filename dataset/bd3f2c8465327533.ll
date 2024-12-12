@@ -11,18 +11,6 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; openssl/optimized/libcrypto-lib-dh_gen.ll
-; openssl/optimized/libcrypto-shlib-dh_gen.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %2, 24
-  %4 = sub nuw nsw i32 %3, %0
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; Function Attrs: nounwind
@@ -37,6 +25,7 @@ entry:
 ; 33 occurrences:
 ; abc/optimized/huffman.c.ll
 ; arrow/optimized/key_map.cc.ll
+; boost/optimized/ipv6_address_rule.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/huffman.c.ll
@@ -47,7 +36,6 @@ entry:
 ; gromacs/optimized/dlasq6.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll

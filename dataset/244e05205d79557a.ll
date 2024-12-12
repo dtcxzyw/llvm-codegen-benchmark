@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; openusd/optimized/blackbody.cpp.ll
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
-; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(i1 %0, float %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 116 occurrences:
+; 115 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; cpython/optimized/fileutils.ll
@@ -73,7 +73,6 @@
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/PointerArithChecker.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
 ; llvm/optimized/RunLoopAutoreleaseLeakChecker.cpp.ll
@@ -120,7 +119,7 @@
 define i1 @func0000000000000001(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr %2, ptr null
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
   ret i1 %4
 }
 
@@ -137,7 +136,7 @@ entry:
 define i1 @func000000000000000c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr %2, ptr null
-  %4 = icmp ne ptr %3, %0
+  %4 = icmp ne ptr %0, %3
   ret i1 %4
 }
 
@@ -161,7 +160,7 @@ entry:
 define i1 @func0000000000000008(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr %2, ptr null
-  %4 = icmp ult ptr %3, %0
+  %4 = icmp ugt ptr %0, %3
   ret i1 %4
 }
 

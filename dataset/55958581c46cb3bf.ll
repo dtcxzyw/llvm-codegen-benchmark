@@ -1,18 +1,18 @@
 
-%struct.code.2764381 = type { i8, i8, i16 }
-%"class.llvm::SDUse.3083714" = type { %"class.llvm::SDValue.3083700", ptr, ptr, ptr }
-%"class.llvm::SDValue.3083700" = type <{ ptr, i32, [4 x i8] }>
-%struct.code.3364141 = type { i8, i8, i16 }
+%struct.code.2876641 = type { i8, i8, i16 }
+%"class.llvm::SDUse.3276506" = type { %"class.llvm::SDValue.3276492", ptr, ptr, ptr }
+%"class.llvm::SDValue.3276492" = type <{ ptr, i32, [4 x i8] }>
+%struct.code.3550467 = type { i8, i8, i16 }
 
 ; 1 occurrences:
 ; minetest/optimized/treegen.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -31,7 +31,7 @@ entry:
 define ptr @func000000000000001c(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -76,12 +76,12 @@ entry:
 ; wolfssl/optimized/keys.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -94,13 +94,13 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; arrow/optimized/key_hash.cc.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -124,16 +124,17 @@ entry:
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; llvm/optimized/X86TileConfig.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; php/optimized/pcre2_compile.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -148,12 +149,12 @@ entry:
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %struct.code.2764381, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.code.2876641, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -162,12 +163,12 @@ entry:
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TargetSchedule.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -176,24 +177,24 @@ entry:
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.llvm::SDUse.3083714", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::SDUse.3276506", ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func0000000000000027(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -205,7 +206,7 @@ entry:
 define ptr @func0000000000000020(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -217,7 +218,7 @@ entry:
 define ptr @func000000000000003c(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -229,21 +230,21 @@ entry:
 define ptr @func0000000000000010(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.code.3364141, ptr %0, i64 %5
+  %6 = getelementptr %struct.code.3550467, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; node/optimized/simdutf.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -6,31 +6,30 @@
 ; pcg-cpp/optimized/use-partytrick.cpp.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %0, 3
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; git/optimized/notes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000075(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %0, 1
-  %4 = icmp ule i32 %3, %2
+  %4 = icmp samesign ule i32 %3, %2
   ret i1 %4
 }
 
-; 3 occurrences:
-; linux/optimized/tbfadt.ll
+; 2 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %0, 1
@@ -41,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-isis-lsp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw i32 %0, 1

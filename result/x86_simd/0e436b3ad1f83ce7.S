@@ -31,20 +31,9 @@ func000000000000003f:                   # @func000000000000003f
 	vzeroupper
 	retq
 .LCPI3_0:
-	.long	4294967294                      # 0xfffffffe
-.LCPI3_1:
-	.long	2                               # 0x2
-func000000000000003d:                   # @func000000000000003d
-	vpandd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	.LCPI3_1(%rip){1to4}, %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI4_0:
 	.long	511                             # 0x1ff
 func000000000000000c:                   # @func000000000000000c
-	vpandd	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
+	vpandd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

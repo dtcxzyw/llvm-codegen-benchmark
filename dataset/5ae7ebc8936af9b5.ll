@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ec(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
@@ -21,7 +21,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
@@ -34,10 +34,10 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ucd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 21
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, -16384
   %6 = icmp ult i32 %4, %5
   ret i1 %6
@@ -47,10 +47,10 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ucd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 21
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, -16384
   %6 = icmp eq i32 %4, %5
   ret i1 %6
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaHash.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = or disjoint i32 %3, %0
@@ -73,24 +73,24 @@ entry:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
   %5 = and i32 %1, 65535
-  %6 = icmp ugt i32 %4, %5
+  %6 = icmp samesign ugt i32 %4, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %0
   %5 = and i32 %1, 65535
-  %6 = icmp ule i32 %4, %5
+  %6 = icmp samesign ule i32 %4, %5
   ret i1 %6
 }
 

@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vptestmq	%ymm1, %ymm1, %k1
 	vptestnmq	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
@@ -6,7 +6,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	retq
 .LCPI1_0:
 	.quad	-9223372036854775808            # 0x8000000000000000
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2   # ymm2 = [9223372036854775808,9223372036854775808,9223372036854775808,9223372036854775808]
 	vpcmpneqq	%ymm2, %ymm0, %k1
 	vpcmpeqq	%ymm2, %ymm1, %k0 {%k1}
@@ -17,7 +17,7 @@ func000000000000001c:                   # @func000000000000001c
 	.quad	32767                           # 0x7fff
 .LCPI2_1:
 	.quad	-9223372036854775808            # 0x8000000000000000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
 	vpcmpeqq	.LCPI2_1(%rip){1to4}, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
@@ -25,7 +25,7 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 .LCPI3_0:
 	.quad	7                               # 0x7
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpminuq	%ymm0, %ymm1, %ymm0
 	vpcmpnleuq	.LCPI3_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -33,7 +33,7 @@ func0000000000000088:                   # @func0000000000000088
 	retq
 .LCPI4_0:
 	.quad	7                               # 0x7
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpcmpnleuq	.LCPI4_0(%rip){1to4}, %ymm1, %k1
 	vptestmq	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
@@ -41,7 +41,7 @@ func000000000000008c:                   # @func000000000000008c
 	retq
 .LCPI5_0:
 	.quad	16                              # 0x10
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpcmpltuq	.LCPI5_0(%rip){1to4}, %ymm1, %k1
 	vptestnmq	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0

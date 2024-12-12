@@ -66,19 +66,6 @@ entry:
 }
 
 ; 2 occurrences:
-; abc/optimized/giaSim.c.ll
-; abc/optimized/giaSwitch.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 536870911
-  %4 = mul nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr i32, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 2 occurrences:
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; Function Attrs: nounwind

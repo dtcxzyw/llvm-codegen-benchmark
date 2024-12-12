@@ -104,12 +104,12 @@
 ; velox/optimized/Ntile.cpp.ll
 ; z3/optimized/nlsat_evaluator.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -139,7 +139,7 @@ entry:
   ret ptr %6
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -155,6 +155,7 @@ entry:
 ; faiss/optimized/InvertedLists.cpp.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; gromacs/optimized/pbcmethods.cpp.ll
+; hdf5/optimized/H5B2int.c.ll
 ; hdf5/optimized/H5T.c.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/collationdatabuilder.ll
@@ -184,12 +185,12 @@ entry:
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000037(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 5
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -224,12 +225,12 @@ entry:
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = lshr i32 %3, 15
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

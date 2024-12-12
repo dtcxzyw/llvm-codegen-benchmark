@@ -21,7 +21,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
 	vpsllvq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	15                              # 0xf
@@ -46,7 +46,7 @@ func0000000000000013:                   # @func0000000000000013
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
 	vpsllvq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.byte	1                               # 0x1

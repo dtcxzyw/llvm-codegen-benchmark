@@ -26,7 +26,7 @@ define i16 @func000000000000003f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = mul nuw nsw i32 %2, 10
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }

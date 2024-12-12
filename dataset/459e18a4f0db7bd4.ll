@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 24 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; hdf5/optimized/H5PB.c.ll
@@ -22,6 +22,8 @@
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -37,7 +39,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, %0
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }

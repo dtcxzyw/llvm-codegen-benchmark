@@ -10,16 +10,16 @@ func000000000000001f:                   # @func000000000000001f
 	shrl	$3, %eax
 	imull	%edi, %eax
 	retq
+func000000000000001b:                   # @func000000000000001b
+	movl	%esi, %eax
+	imull	%edx, %eax
+	shrl	$16, %eax
+	imull	%edi, %eax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	movl	%esi, %eax
 	imull	%edx, %eax
 	shrl	$17, %eax
-	imull	%edi, %eax
-	retq
-func000000000000001b:                   # @func000000000000001b
-	movl	%esi, %eax
-	imull	%edx, %eax
-	shrl	$8, %eax
 	imull	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001

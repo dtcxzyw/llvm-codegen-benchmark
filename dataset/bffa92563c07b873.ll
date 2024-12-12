@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/utilCex.c.ll
 ; csmith/optimized/StatementFor.cpp.ll
 ; freetype/optimized/ftbitmap.c.ll
@@ -31,7 +31,6 @@
 ; openexr/optimized/ImfMisc.cpp.ll
 ; openjdk/optimized/stubGenerator_x86_64_arraycopy.ll
 ; openmpi/optimized/coll_base_topo.ll
-; openmpi/optimized/coll_sm_component.ll
 ; openmpi/optimized/nbc_ibcast.ll
 ; openspiel/optimized/oh_hell.cc.ll
 ; openspiel/optimized/oware.cc.ll
@@ -47,9 +46,8 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; gromacs/optimized/domdec_constraints.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll

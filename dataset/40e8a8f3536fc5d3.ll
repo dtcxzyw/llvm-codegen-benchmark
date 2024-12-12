@@ -13,7 +13,7 @@
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = icmp eq i32 %2, 0
@@ -27,7 +27,7 @@ entry:
 ; openjdk/optimized/jvm.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2147483645
   %3 = icmp eq i32 %2, 2
@@ -40,7 +40,7 @@ entry:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2147483645
   %3 = icmp eq i32 %2, 2
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/cmsnamed.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -1024
   %3 = icmp eq i32 %2, 56320
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/asn1_par.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -9
   %3 = icmp eq i32 %2, 258

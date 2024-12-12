@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	8                               # 0x8
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
@@ -52,7 +52,7 @@ func000000000000002a:                   # @func000000000000002a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
@@ -106,7 +106,7 @@ func0000000000000026:                   # @func0000000000000026
 	retq
 .LCPI2_0:
 	.long	4294967288                      # 0xfffffff8
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %ecx

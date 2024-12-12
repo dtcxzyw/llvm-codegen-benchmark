@@ -3,7 +3,7 @@
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c4(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = shl nuw i32 %0, 1
@@ -18,7 +18,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; openusd/optimized/scale_common.c.ll
 ; redis/optimized/lolwut.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = shl nsw i32 %0, 1

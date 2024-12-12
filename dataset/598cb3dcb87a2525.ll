@@ -1,10 +1,11 @@
 
-; 218 occurrences:
+; 215 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -98,13 +99,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -179,7 +177,6 @@
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -222,7 +219,7 @@
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add i64 %3, 63
   %5 = lshr i64 %4, 3
   ret i64 %5
@@ -237,7 +234,7 @@ entry:
 define i64 @func000000000000003e(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 1048576
   %5 = lshr i64 %4, 21
   ret i64 %5
@@ -251,7 +248,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 33554432
   %5 = lshr i64 %4, 26
   ret i64 %5
@@ -266,7 +263,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 7
   %5 = lshr i64 %4, 3
   ret i64 %5
@@ -278,7 +275,7 @@ entry:
 define i64 @func0000000000000020(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 2047
   %5 = lshr i64 %4, 11
   ret i64 %5

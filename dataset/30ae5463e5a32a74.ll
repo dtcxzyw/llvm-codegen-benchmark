@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = and i64 %3, 2147483647
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -16,12 +16,12 @@ entry:
 ; mitsuba3/optimized/thread.cpp.ll
 ; mitsuba3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2305843009213693944
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
@@ -124,38 +124,32 @@ entry:
   %2 = add i64 %1, 7
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2147483647
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; 1 occurrences:
 ; qemu/optimized/util_qemu-thread-posix.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2305843009213693944
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
-; 6 occurrences:
-; gromacs/optimized/gmx_dos.cpp.ll
-; hwloc/optimized/topology-linux.ll
-; llama.cpp/optimized/ggml.c.ll
-; llvm/optimized/CombinerHelper.cpp.ll
+; 2 occurrences:
 ; php/optimized/block_pass.ll
 ; php/optimized/optimize_temp_vars_5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 1073741816
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -166,12 +160,40 @@ entry:
 ; linux/optimized/i2c-i801.ll
 ; postgres/optimized/tsgistidx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 17179869180
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2147483647
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 63
+  %3 = lshr i64 %2, 3
+  %4 = and i64 %3, 2305843009213693944
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
+; 4 occurrences:
+; gromacs/optimized/gmx_dos.cpp.ll
+; hwloc/optimized/topology-linux.ll
+; llama.cpp/optimized/ggml.c.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 4294967295
+  %3 = lshr i64 %2, 1
+  %4 = and i64 %3, 2147483647
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 

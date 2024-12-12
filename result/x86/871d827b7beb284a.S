@@ -1,48 +1,48 @@
 func0000000000000002:                   # @func0000000000000002
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	sete	%al
 	retq
 func000000000000000e:                   # @func000000000000000e
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	setge	%al
+	cmpq	%rcx, %rdi
+	setle	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	setg	%al
+	cmpq	%rcx, %rdi
+	setl	%al
 	retq
 func0000000000000018:                   # @func0000000000000018
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	setne	%al
 	retq
 func0000000000000016:                   # @func0000000000000016
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	setle	%al
+	cmpq	%rcx, %rdi
+	setge	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	seta	%al
+	cmpq	%rcx, %rdi
+	setb	%al
 	retq
 func0000000000000012:                   # @func0000000000000012
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	setbe	%al
+	cmpq	%rcx, %rdi
+	setae	%al
 	retq
 func0000000000000014:                   # @func0000000000000014
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	setl	%al
+	cmpq	%rcx, %rdi
+	setg	%al
 	retq

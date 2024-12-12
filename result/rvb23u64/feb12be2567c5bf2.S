@@ -24,6 +24,12 @@ func0000000000000004:                   # @func0000000000000004
 	sltiu	a0, a0, 230
 	and	a0, a0, a1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	sext.b	a2, a2
+	slti	a2, a2, -64
+	and	a0, a0, a1
+	and	a0, a0, a2
+	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.b	a2, a2
 	slti	a2, a2, 0

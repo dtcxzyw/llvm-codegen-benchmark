@@ -12,7 +12,7 @@
 define i16 @func000000000000003c(i16 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = trunc nuw i32 %4 to i16
   %6 = udiv i16 %5, %0
   ret i16 %6

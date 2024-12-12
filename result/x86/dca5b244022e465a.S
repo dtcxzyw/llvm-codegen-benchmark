@@ -5,7 +5,7 @@ func0000000000000013:                   # @func0000000000000013
 	orl	$-2, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	xorl	%eax, %eax
 	cmpl	$2, %esi
 	setb	%al
@@ -37,4 +37,11 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$1, %esi
 	sete	%al
 	leal	-33(%rax,%rdi), %eax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	xorl	%eax, %eax
+	cmpl	$65536, %esi                    # imm = 0x10000
+	setb	%al
+	orl	$-2, %eax
+	addl	%edi, %eax
 	retq

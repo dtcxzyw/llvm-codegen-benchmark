@@ -6,10 +6,10 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp ne i32 %4, 256
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
@@ -39,10 +39,10 @@ entry:
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; wireshark/optimized/k12.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp eq i32 %4, 0
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
@@ -72,7 +72,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
@@ -84,10 +84,22 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; wireshark/optimized/packet-iso7816.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000034(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
+  %5 = icmp samesign ult i32 %4, 4
+  %6 = select i1 %5, i1 true, i1 %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/hb-aat-layout.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or disjoint i32 %1, %3
   %5 = icmp ult i32 %4, 4
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
@@ -96,11 +108,11 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
-  %5 = icmp ult i32 %4, 32
+  %4 = or disjoint i32 %1, %3
+  %5 = icmp samesign ult i32 %4, 32
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }
@@ -108,10 +120,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-mpls.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp ne i32 %4, 13
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
@@ -120,10 +132,10 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = icmp eq i32 %4, 0
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6

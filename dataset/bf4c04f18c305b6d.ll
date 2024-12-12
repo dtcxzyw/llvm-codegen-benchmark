@@ -1,5 +1,5 @@
 
-; 143 occurrences:
+; 141 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -74,8 +74,6 @@
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -150,7 +148,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
@@ -164,7 +162,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
@@ -202,7 +200,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

@@ -15,17 +15,3 @@ func0000000000000006:                   # @func0000000000000006
 	shrq	$35, %rax
 	andl	$1, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	subq	%rsi, %rdi
-	notq	%rdi
-	shrq	$3, %rdi
-	testl	%edi, %edi
-	sete	%al
-	retq
-func000000000000000a:                   # @func000000000000000a
-	subq	%rsi, %rdi
-	shlq	$30, %rdi
-	sarq	$30, %rdi
-	cmpq	$4, %rdi
-	setge	%al
-	retq

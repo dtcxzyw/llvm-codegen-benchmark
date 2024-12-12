@@ -48,6 +48,11 @@ func0000000000000021:                   # @func0000000000000021
 	srli	a1, a1, 4
 	addw	a0, a0, a1
 	ret
+func000000000000001a:                   # @func000000000000001a
+	srli	a1, a1, 49
+	add	a0, a0, a1
+	zext.w	a0, a0
+	ret
 func0000000000000038:                   # @func0000000000000038
 	srli	a1, a1, 39
 	add	a0, a0, a1
@@ -60,11 +65,6 @@ func0000000000000023:                   # @func0000000000000023
 func0000000000000003:                   # @func0000000000000003
 	srli	a1, a1, 13
 	addw	a0, a0, a1
-	ret
-func000000000000001a:                   # @func000000000000001a
-	srli	a1, a1, 32
-	add	a0, a0, a1
-	zext.w	a0, a0
 	ret
 func000000000000001b:                   # @func000000000000001b
 	srli	a1, a1, 6

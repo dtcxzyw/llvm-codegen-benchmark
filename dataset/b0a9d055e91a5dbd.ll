@@ -1,5 +1,7 @@
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_catalog.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_set.cpp.ll
 ; duckdb/optimized/ub_duckdb_table_func_system.cpp.ll

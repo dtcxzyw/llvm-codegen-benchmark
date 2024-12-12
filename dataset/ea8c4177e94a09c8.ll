@@ -11,7 +11,7 @@
 ; protobuf/optimized/descriptor.cc.ll
 ; ruby/optimized/stringio.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i8 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -27,7 +27,7 @@ entry:
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; redis/optimized/dict.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -48,7 +48,7 @@ entry:
 ; wireshark/optimized/packet-bssap.c.ll
 ; wireshark/optimized/packet-gtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
@@ -61,7 +61,7 @@ entry:
 ; clamav/optimized/clamsubmit.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0

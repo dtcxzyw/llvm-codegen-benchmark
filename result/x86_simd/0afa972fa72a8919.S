@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	4294967288                      # 0xfffffff8
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$2, %xmm0, %xmm0
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0

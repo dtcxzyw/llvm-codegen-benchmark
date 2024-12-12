@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRpo.c.ll
@@ -14,6 +14,7 @@
 ; abc/optimized/luckyRead.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
+; boost/optimized/parser_utils.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; graphviz/optimized/DotIO.c.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -25,7 +26,7 @@
 ; postgres/optimized/parse_manifest_srv.ll
 ; slurm/optimized/select.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -87

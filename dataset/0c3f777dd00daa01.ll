@@ -13,6 +13,9 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; bdwgc/optimized/cordprnt.c.ll
+; boost/optimized/topology.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; c3c/optimized/float.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/dlp.c.ll
@@ -138,13 +141,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -317,8 +317,10 @@ entry:
   ret i32 %4
 }
 
-; 30 occurrences:
+; 32 occurrences:
 ; abc/optimized/exor.c.ll
+; boost/optimized/dec_octet_rule.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/cf-h1-proxy.c.ll
 ; cmake/optimized/parsedate.c.ll
@@ -357,7 +359,7 @@ entry:
   ret i32 %4
 }
 
-; 52 occurrences:
+; 54 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cnfWrite.c.ll
@@ -385,10 +387,12 @@ entry:
 ; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/sharpyuv_dsp.c.ll
 ; libwebp/optimized/yuv.c.ll
+; llvm/optimized/ByteCodeEmitter.cpp.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; luajit/optimized/lj_lex.ll
 ; luajit/optimized/lj_lex_dyn.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; oiio/optimized/termoutput.cpp.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -468,7 +472,6 @@ entry:
 ; linux/optimized/cistpl.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dpll.ll
@@ -486,6 +489,8 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -556,7 +561,6 @@ entry:
 ; wireshark/optimized/packet-bencode.c.ll
 ; wireshark/optimized/packet-mq.c.ll
 ; wireshark/optimized/packet-rtsp.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; wireshark/optimized/packet-syslog.c.ll
 ; wireshark/optimized/packet-ucp.c.ll
 ; wireshark/optimized/strutil.c.ll
@@ -583,14 +587,12 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; libwebp/optimized/yuv.c.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
-; openblas/optimized/dsbevd.c.ll
-; openblas/optimized/dsbgvd.c.ll
 ; openjdk/optimized/hb-ot-shaper-hangul.ll
 ; openjdk/optimized/hb-ucd.ll
 ; php/optimized/crypt_blowfish.ll
@@ -602,7 +604,7 @@ define i32 @func000000000000003d(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 60
   %3 = add nuw nsw i32 %2, 120
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -632,12 +634,15 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 1619
   %3 = add i32 %2, 1619
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 46 occurrences:
+; 49 occurrences:
 ; abc/optimized/extraUtilPerm.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/text_file_backend.ll
 ; cpython/optimized/_codecs_cn.ll
 ; cpython/optimized/_codecs_jp.ll
 ; cpython/optimized/_codecs_kr.ll
@@ -659,6 +664,7 @@ entry:
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_sseu_debugfs.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
@@ -679,7 +685,6 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; stockfish/optimized/tbprobe.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; zxing/optimized/zueci.c.ll
@@ -702,7 +707,7 @@ define i32 @func000000000000003e(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 32639
   %3 = add nuw nsw i32 %2, 32768
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -729,9 +734,11 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; git/optimized/base85.ll
 ; libquic/optimized/spdy_alt_svc_wire_format.cc.ll
 ; opencc/optimized/Config.cpp.ll
@@ -807,8 +814,9 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaHash.c.ll
+; boost/optimized/dec_octet_rule.ll
 ; cpython/optimized/_codecs_cn.ll
 ; git/optimized/date.ll
 ; slurm/optimized/parse_time.ll
@@ -862,7 +870,7 @@ define i32 @func000000000000001d(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = add nuw nsw i32 %2, 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

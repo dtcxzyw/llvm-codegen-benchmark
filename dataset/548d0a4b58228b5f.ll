@@ -10,7 +10,6 @@
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/ff-memless.ll
 ; linux/optimized/hid-pidff.ll
-; linux/optimized/hid-pl.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_display.ll
@@ -21,6 +20,7 @@
 ; minetest/optimized/CGUIStaticText.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/static_text.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/prelu_x86.cpp.ll
 ; ncnn/optimized/prelu_x86_avx.cpp.ll
@@ -47,7 +47,7 @@ entry:
   ret i32 %3
 }
 
-; 197 occurrences:
+; 204 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcGen.c.ll
@@ -59,7 +59,6 @@ entry:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/bmcMulti.c.ll
 ; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
 ; abc/optimized/fraClass.c.ll
 ; abc/optimized/fxuCreate.c.ll
@@ -138,14 +137,12 @@ entry:
 ; graphviz/optimized/routespl.c.ll
 ; graphviz/optimized/stress.c.ll
 ; graphviz/optimized/tlayout.c.ll
-; gromacs/optimized/dlaruv.cpp.ll
 ; gromacs/optimized/energyoutput.cpp.ll
 ; gromacs/optimized/gmx_awh.cpp.ll
 ; gromacs/optimized/gmx_cluster.cpp.ll
 ; gromacs/optimized/gmx_rmsdist.cpp.ll
 ; gromacs/optimized/kernel_gpu_ref.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; gromacs/optimized/topio.cpp.ll
 ; hwloc/optimized/lstopo-lstopo-fig.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-fig.ll
@@ -161,6 +158,18 @@ entry:
 ; llvm/optimized/InlineCost.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_led.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_switch.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -177,7 +186,6 @@ entry:
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/scale_x86_avx.cpp.ll
@@ -187,7 +195,6 @@ entry:
 ; oiio/optimized/Codec.cpp.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
-; openblas/optimized/dspevd.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsptri.c.ll
 ; openblas/optimized/lapacke_ctp_trans.c.ll

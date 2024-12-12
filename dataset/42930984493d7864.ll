@@ -1,9 +1,8 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; linux/optimized/acpi_lpit.ll
 ; linux/optimized/bitmap.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/find_bit.ll
 ; linux/optimized/genalloc.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -25,7 +24,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = lshr i64 -1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 

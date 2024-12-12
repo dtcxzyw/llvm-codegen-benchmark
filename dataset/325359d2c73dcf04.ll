@@ -11,7 +11,7 @@
 ; openusd/optimized/strtod.cc.ll
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000047(i1 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000087(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 52

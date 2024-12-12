@@ -7,7 +7,7 @@
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   %4 = select i1 %3, i64 20, i64 0
   ret i64 %4
 }
@@ -19,7 +19,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   %4 = select i1 %3, i64 3, i64 -1
   ret i64 %4
 }

@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 384
 .LBB0_2:                                # %entry
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	li	a1, 6
@@ -46,4 +46,20 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a0, a0, 48
 	snez	a0, a0
 	addi	a0, a0, 1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	slli	a0, a0, 48
+	srli	a0, a0, 48
+	sltiu	a0, a0, 256
+	slli	a0, a0, 3
+	ret
+func0000000000000018:                   # @func0000000000000018
+	slli	a0, a0, 48
+	srli	a0, a0, 48
+	li	a1, 60
+	bltu	a1, a0, .LBB7_2
+	li	a0, 64
+	ret
+.LBB7_2:
+	li	a0, 128
 	ret

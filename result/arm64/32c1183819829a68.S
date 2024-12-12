@@ -1,42 +1,13 @@
 func00000000000000b0:                   // @func00000000000000b0
 // %bb.0:                               // %entry
-	usra	v3.2d, v5.2d, #3
-	sshr	v1.2d, v1.2d, #3
-	mov	x8, #36409                      // =0x8e39
-	sshr	v0.2d, v0.2d, #3
-	usra	v2.2d, v4.2d, #3
-	movk	x8, #14563, lsl #16
-	movk	x8, #58254, lsl #32
-	fmov	x15, d3
-	mov	x10, v1.d[1]
-	fmov	x9, d1
-	mov	x12, v0.d[1]
-	fmov	x11, d0
-	mov	x13, v3.d[1]
-	movk	x8, #36408, lsl #48
-	fmov	x18, d2
-	mov	x14, v2.d[1]
-	lsl	x16, x15, #3
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	lsl	x17, x13, #3
-	mul	x10, x10, x8
-	sub	x13, x17, x13
-	fmov	d2, x9
-	mul	x8, x12, x8
-	sub	x12, x16, x15
-	lsl	x16, x18, #3
-	fmov	d1, x12
-	lsl	x15, x14, #3
-	fmov	d3, x11
-	sub	x12, x15, x14
-	mov	v2.d[1], x10
-	mov	v1.d[1], x13
-	sub	x13, x16, x18
-	fmov	d0, x13
-	mov	v3.d[1], x8
-	mov	v0.d[1], x12
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v3.2d
+	mov	x10, #36409                     // =0x8e39
+	add	x8, x1, x2, lsr #3
+	asr	x9, x0, #3
+	movk	x10, #14563, lsl #16
+	movk	x10, #58254, lsl #32
+	neg	x11, x8
+	movk	x10, #36408, lsl #48
+	madd	x9, x9, x10, x11
+	add	x0, x9, x8, lsl #3
 	ret
                                         // -- End function

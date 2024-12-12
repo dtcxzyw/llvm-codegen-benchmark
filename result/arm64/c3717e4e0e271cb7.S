@@ -1,18 +1,12 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ushr	v2.4s, v2.4s, #1
-	ushr	v3.4s, v3.4s, #1
-	sub	v1.4s, v3.4s, v1.4s
-	sub	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
+	lsr	w8, w1, #1
+	sub	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushr	v2.4s, v2.4s, #2
-	ushr	v3.4s, v3.4s, #2
-	sub	v1.4s, v3.4s, v1.4s
-	sub	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
+	lsr	w8, w1, #2
+	sub	w0, w8, w0
 	ret
                                         // -- End function

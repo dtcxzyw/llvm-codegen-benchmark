@@ -43,7 +43,7 @@
 ; php/optimized/pdo_sql_parser.ll
 ; postgres/optimized/pathkeys.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp ne ptr %2, null
@@ -73,7 +73,7 @@ entry:
 ; yosys/optimized/share.ll
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
@@ -87,7 +87,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_regr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
@@ -131,7 +131,7 @@ entry:
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp ne ptr %2, null

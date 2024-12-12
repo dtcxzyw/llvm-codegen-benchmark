@@ -21,10 +21,3 @@ func0000000000000060:                   # @func0000000000000060
 	imulq	$376287347, %rdi, %rax          # imm = 0x166DB073
 	shrq	$39, %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
-	imull	$-146097, %edx, %eax            # imm = 0xFFFDC54F
-	addl	%esi, %edi
-	addl	%eax, %edi
-	imulq	$376287347, %rdi, %rax          # imm = 0x166DB073
-	shrq	$39, %rax
-	retq

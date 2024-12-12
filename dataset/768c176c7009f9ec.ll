@@ -15,7 +15,7 @@
 ; yosys/optimized/fsm_expand.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b6(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000166(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = sext i32 %2 to i64
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ba(i64 %0, i32 %1) #0 {
+define i1 @func000000000000016a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = sext i32 %2 to i64
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000012a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = sext i32 %2 to i64
@@ -52,7 +52,7 @@ entry:
 ; oiio/optimized/maketexture.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = sext i32 %2 to i64
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/neighbour.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000126(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = sext i32 %2 to i64
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hugetlb.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000bb(i64 %0, i32 %1) #0 {
+define i1 @func000000000000016b(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = sext i32 %2 to i64

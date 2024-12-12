@@ -1,10 +1,9 @@
 
-%"class.clang::Qualifiers.2948875" = type { i64 }
-%"class.clang::FunctionEffect.2948876" = type { i8 }
+%"class.clang::Qualifiers.3142438" = type { i64 }
+%"class.clang::FunctionEffect.3142439" = type { i8 }
 
-; 31 occurrences:
+; 29 occurrences:
 ; hyperscan/optimized/castlecompile.cpp.ll
-; libwebp/optimized/webp_enc.c.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -33,14 +32,27 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = inttoptr i64 %3 to ptr
+  %5 = getelementptr nusw nuw %"class.clang::Qualifiers.3142438", ptr %4, i64 %1
+  %6 = getelementptr nusw nuw %"class.clang::FunctionEffect.3142439", ptr %5, i64 %0
+  %7 = ptrtoint ptr %6 to i64
+  ret i64 %7
+}
+
+; 2 occurrences:
+; libwebp/optimized/webp_enc.c.ll
 ; opencv/optimized/lapack.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -8
+  %3 = and i64 %2, -16
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw %"class.clang::Qualifiers.2948875", ptr %4, i64 %1
-  %6 = getelementptr nusw %"class.clang::FunctionEffect.2948876", ptr %5, i64 %0
+  %5 = getelementptr nusw i8, ptr %4, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

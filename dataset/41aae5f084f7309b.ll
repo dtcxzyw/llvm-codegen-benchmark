@@ -6,7 +6,7 @@
 ; memcached/optimized/memcached_debug-memcached.ll
 ; openmpi/optimized/tm_solution.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i64 %1) #0 {
+define i1 @func000000000000014c(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000010c(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %2, -12

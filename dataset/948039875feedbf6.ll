@@ -33,7 +33,7 @@ entry:
   ret i1 %4
 }
 
-; 27 occurrences:
+; 31 occurrences:
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; gromacs/optimized/gen_vsite.cpp.ll
@@ -61,6 +61,10 @@ entry:
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/cguh9zihnfg4v76y73tdlg6o2.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i8 %0, i1 %1) #0 {
 entry:
@@ -74,10 +78,10 @@ entry:
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000030(i8 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
-  %3 = icmp ugt i8 %0, 1
+  %3 = icmp samesign ugt i8 %0, 1
   %4 = or i1 %3, %2
   ret i1 %4
 }
@@ -86,10 +90,21 @@ entry:
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; Function Attrs: nounwind
+define i1 @func0000000000000028(i8 %0, i1 %1) #0 {
+entry:
+  %2 = xor i1 %1, true
+  %3 = icmp samesign ult i8 %0, 2
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/InstructionCombining.cpp.ll
+; Function Attrs: nounwind
 define i1 @func0000000000000008(i8 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
-  %3 = icmp ult i8 %0, 2
+  %3 = icmp ult i8 %0, 11
   %4 = or i1 %3, %2
   ret i1 %4
 }

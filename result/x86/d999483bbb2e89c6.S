@@ -26,6 +26,11 @@ func0000000000000005:                   # @func0000000000000005
 	andl	$1, %eax
 	orq	%rdi, %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	decl	%esi
+	movzbl	%sil, %eax
+	orq	%rdi, %rax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	leaq	112(%rsi), %rcx
 	movabsq	$137438953344, %rax             # imm = 0x1FFFFFFF80

@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	vand.vx	v10, v10, a0
 	addi	a0, a1, 57
 	vmseq.vx	v12, v10, a0
-	vmor.mm	v0, v12, v0
+	vmor.mm	v0, v0, v12
 	vor.vx	v8, v8, a1, v0.t
 	ret
 func0000000000000005:                   # @func0000000000000005
@@ -16,7 +16,7 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a0, 2
 	vmseq.vx	v12, v10, a0
 	li	a0, 32
-	vmor.mm	v0, v12, v0
+	vmor.mm	v0, v0, v12
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; qemu/optimized/util_buffer.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000040(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw i64 %1, %2
-  %4 = lshr i64 %3, 7
-  %5 = add i64 %4, %0
-  %6 = add i64 %5, -1
-  ret i64 %6
-}
-
 ; 4 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
@@ -21,7 +9,7 @@ define i64 @func0000000000000060(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = add i64 %5, 1
   ret i64 %6
 }
@@ -34,7 +22,7 @@ define i64 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = add i64 %5, -1
   ret i64 %6
 }
@@ -84,7 +72,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = add nsw i64 %5, 16777216
   ret i64 %6
 }

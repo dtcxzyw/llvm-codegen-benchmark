@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; ipopt/optimized/IpTNLPAdapter.ll
@@ -9,6 +9,7 @@
 ; quantlib/optimized/generalizedhullwhite.ll
 ; quantlib/optimized/hullwhite.ll
 ; quantlib/optimized/onefactormodel.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -18,7 +19,8 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/text_file_backend.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/match.c.ll
@@ -49,7 +51,7 @@ entry:
 ; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp slt i32 %3, -63
@@ -60,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ugt i32 %3, 15

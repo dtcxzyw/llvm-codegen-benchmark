@@ -1,10 +1,9 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
 ; clamav/optimized/asn1.c.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; linux/optimized/seq_buf.ll
-; linux/optimized/trace_seq.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; minetest/optimized/CAttributes.cpp.ll
@@ -45,7 +44,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 34359738360
   %5 = icmp eq i64 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

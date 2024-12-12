@@ -70,14 +70,3 @@ func0000000000000025:                   # @func0000000000000025
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
-	addi	a1, a1, -12
-	lui	a2, 699051
-	addi	a2, a2, -1365
-	slli	a2, a2, 32
-	slli	a1, a1, 32
-	mulhu	a1, a1, a2
-	srli	a1, a1, 35
-	add	a0, a0, a1
-	addiw	a0, a0, 1
-	ret

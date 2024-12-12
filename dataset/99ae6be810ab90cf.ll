@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 88 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/solver.c.ll
@@ -57,12 +57,10 @@
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
-; icu/optimized/gregoimp.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -98,7 +96,7 @@ entry:
   ret i64 %3
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; cpython/optimized/_ctypes.ll
 ; cpython/optimized/sliceobject.ll
 ; cpython/optimized/textio.ll
@@ -117,6 +115,7 @@ entry:
 ; qemu/optimized/block_qcow2.c.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

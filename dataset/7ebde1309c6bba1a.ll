@@ -29,11 +29,22 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_auto_possess.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000084(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %0, %1
   %3 = add i8 %2, -33
   %4 = icmp ult i8 %3, 8
+  ret i1 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-gtp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000184(i8 %0, i8 %1) #0 {
+entry:
+  %2 = add nuw nsw i8 %0, %1
+  %3 = add i8 %2, -8
+  %4 = icmp ult i8 %3, 90
   ret i1 %4
 }
 
@@ -51,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %0, %1
   %3 = icmp ne i8 %2, -64
@@ -63,7 +74,7 @@ entry:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i8 %0, i8 %1) #0 {
+define i1 @func00000000000001a4(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %0, %1
   %3 = add nsw i8 %2, -13

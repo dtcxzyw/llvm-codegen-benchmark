@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovw2m	%xmm0, %k0
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
 	knotb	%k0, %k1
-	vpaddd	%ymm1, %ymm2, %ymm0 {%k1} {z}
+	vpaddd	%ymm2, %ymm1, %ymm0 {%k1} {z}
 	retq
 .LCPI1_0:
 	.long	16                              # 0x10
@@ -13,5 +13,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpcmpnltw	%xmm3, %xmm0, %k1
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
 	vpbroadcastd	.LCPI1_0(%rip), %ymm0   # ymm0 = [16,16,16,16,16,16,16,16]
-	vpaddd	%ymm1, %ymm2, %ymm0 {%k1}
+	vpaddd	%ymm2, %ymm1, %ymm0 {%k1}
 	retq

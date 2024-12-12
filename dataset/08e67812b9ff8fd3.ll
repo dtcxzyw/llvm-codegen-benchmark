@@ -16,13 +16,13 @@
 ; openjdk/optimized/hb-ot-var.ll
 ; wireshark/optimized/k12.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func00000000000001b8(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = and i32 %3, 32512
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp samesign ugt i32 %6, %0
   ret i1 %7
 }
 
@@ -35,7 +35,7 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func00000000000001a4(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = and i32 %3, 3840
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fa(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func00000000000001ea(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
   %4 = and i32 %3, 1984
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func00000000000001e6(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
   %4 = and i32 %3, 1984
@@ -77,7 +77,7 @@ entry:
 ; postgres/optimized/pg_lzcompress_shlib.ll
 ; postgres/optimized/pg_lzcompress_srv.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func00000000000001a6(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = and i32 %3, 16128
@@ -90,13 +90,13 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func00000000000001f8(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 7
   %4 = and i32 %3, 16256
   %5 = zext nneg i8 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp samesign ugt i32 %6, %0
   ret i1 %7
 }
 

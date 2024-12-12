@@ -9,12 +9,6 @@ func000000000000000b:                   # @func000000000000000b
 	add.uw	a0, a1, a0
 	bseti	a0, a0, 32
 	ret
-func0000000000000010:                   # @func0000000000000010
-	sext.w	a1, a1
-	slli	a0, a0, 8
-	or	a0, a0, a1
-	ori	a0, a0, 128
-	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 40
 	add.uw	a0, a1, a0

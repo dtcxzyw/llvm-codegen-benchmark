@@ -70,8 +70,10 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
+; 21 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; llvm/optimized/BlockCoverageInference.cpp.ll
 ; llvm/optimized/BreakFalseDeps.cpp.ll
 ; llvm/optimized/LiveVariables.cpp.ll
@@ -89,11 +91,12 @@ entry:
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; tev/optimized/Common.cpp.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -105,7 +108,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -122,6 +125,17 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, 333
+  %4 = add i64 %1, %0
+  %5 = sub i64 %3, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
@@ -129,6 +143,17 @@ entry:
   %3 = add i64 %2, -8
   %4 = add i64 %1, %0
   %5 = sub i64 %3, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %1, -1
+  %4 = add i64 %2, %3
+  %5 = sub nuw nsw i64 %4, %0
   ret i64 %5
 }
 

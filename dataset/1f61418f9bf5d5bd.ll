@@ -1,15 +1,15 @@
 
-%"class.WasmEdge::Variant.2651959" = type { %"union.WasmEdge::VariadicUnion.2651960" }
-%"union.WasmEdge::VariadicUnion.2651960" = type { %"union.WasmEdge::VariadicUnion.5.2651961" }
-%"union.WasmEdge::VariadicUnion.5.2651961" = type { %"union.WasmEdge::VariadicUnion.6.2651962" }
-%"union.WasmEdge::VariadicUnion.6.2651962" = type { %"union.WasmEdge::VariadicUnion.7.2651963" }
-%"union.WasmEdge::VariadicUnion.7.2651963" = type { %"union.WasmEdge::VariadicUnion.8.2651964" }
-%"union.WasmEdge::VariadicUnion.8.2651964" = type { %"union.WasmEdge::VariadicUnion.9.2651965" }
-%"union.WasmEdge::VariadicUnion.9.2651965" = type { %"union.WasmEdge::VariadicUnion.10.2651966" }
-%"union.WasmEdge::VariadicUnion.10.2651966" = type { i128 }
-%"class.std::__cxx11::basic_string.2789320" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2789321", i64, %union.anon.2789322 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2789321" = type { ptr }
-%union.anon.2789322 = type { i64, [8 x i8] }
+%"class.WasmEdge::Variant.2765249" = type { %"union.WasmEdge::VariadicUnion.2765250" }
+%"union.WasmEdge::VariadicUnion.2765250" = type { %"union.WasmEdge::VariadicUnion.5.2765251" }
+%"union.WasmEdge::VariadicUnion.5.2765251" = type { %"union.WasmEdge::VariadicUnion.6.2765252" }
+%"union.WasmEdge::VariadicUnion.6.2765252" = type { %"union.WasmEdge::VariadicUnion.7.2765253" }
+%"union.WasmEdge::VariadicUnion.7.2765253" = type { %"union.WasmEdge::VariadicUnion.8.2765254" }
+%"union.WasmEdge::VariadicUnion.8.2765254" = type { %"union.WasmEdge::VariadicUnion.9.2765255" }
+%"union.WasmEdge::VariadicUnion.9.2765255" = type { %"union.WasmEdge::VariadicUnion.10.2765256" }
+%"union.WasmEdge::VariadicUnion.10.2765256" = type { i128 }
+%"class.std::__cxx11::basic_string.2901378" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901379", i64, %union.anon.2901380 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901379" = type { ptr }
+%union.anon.2901380 = type { i64, [8 x i8] }
 
 ; 5 occurrences:
 ; assimp/optimized/BlenderModifier.cpp.ll
@@ -23,7 +23,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = ashr exact i64 %1, 4
   %5 = sub nsw i64 %4, %3
-  %6 = getelementptr nusw %"class.WasmEdge::Variant.2651959", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.WasmEdge::Variant.2765249", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -36,7 +36,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = ashr exact i64 %1, 5
   %5 = sub nsw i64 %4, %3
-  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.2789320", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.2901378", ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -7,7 +7,7 @@
 ; openusd/optimized/typeMultipleInheritance.cpp.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(i1 %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000041(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -40
   %4 = icmp eq ptr %2, null

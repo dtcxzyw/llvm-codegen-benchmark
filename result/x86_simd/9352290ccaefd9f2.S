@@ -15,7 +15,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpsubq	%ymm1, %ymm3, %ymm1
 	vpand	%ymm1, %ymm2, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000040:                   # @func0000000000000040
 	vpaddq	%ymm1, %ymm2, %ymm2

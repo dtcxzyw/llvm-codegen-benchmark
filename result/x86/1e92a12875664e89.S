@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%ecx, %eax
 	setb	%al
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	movq	%rdx, %rcx
 	movl	%edi, %eax
 	xorl	%edx, %edx
@@ -14,7 +14,7 @@ func0000000000000045:                   # @func0000000000000045
 	cmpl	%ecx, %eax
 	setbe	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movq	%rdx, %rcx
 	movl	%edi, %eax
 	xorl	%edx, %edx

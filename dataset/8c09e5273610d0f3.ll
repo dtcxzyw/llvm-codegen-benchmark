@@ -1,5 +1,5 @@
 
-; 161 occurrences:
+; 163 occurrences:
 ; assimp/optimized/Exporter.cpp.ll
 ; assimp/optimized/Importer.cpp.ll
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
@@ -46,6 +46,7 @@
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
@@ -154,6 +155,7 @@
 ; wasmtime-rs/optimized/fn3cxi5qpl58ixq.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; xgboost/optimized/multiclass_obj.cc.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll

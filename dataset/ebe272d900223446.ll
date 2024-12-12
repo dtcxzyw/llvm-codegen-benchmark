@@ -26,7 +26,7 @@
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, -4737503975807385600
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul i64 %3, -7286425919675154353
   ret i64 %4
 }
@@ -61,7 +61,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 17
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul nuw i64 %3, 4294967297
   ret i64 %4
 }
@@ -72,7 +72,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 5
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul nuw nsw i64 %3, 65537
   ret i64 %4
 }

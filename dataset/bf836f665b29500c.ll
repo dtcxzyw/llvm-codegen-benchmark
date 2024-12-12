@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/dtoa.c.ll
@@ -18,7 +19,7 @@ entry:
   ret i32 %5
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/float16.cc.ll
 ; clamav/optimized/BraIA64.c.ll
@@ -42,7 +43,6 @@ entry:
 ; gromacs/optimized/deflate.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; libevent/optimized/poll.c.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; libquic/optimized/deflate.c.ll
 ; libwebp/optimized/picture_rescale_enc.c.ll
@@ -89,19 +89,21 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 1048576
+  %3 = icmp samesign ult i32 %2, 1048576
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = lshr exact i32 %4, 1
   ret i32 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; libwebp/optimized/upsampling.c.ll
 ; libwebp/optimized/upsampling_sse2.c.ll
 ; libwebp/optimized/yuv.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -123,6 +125,17 @@ entry:
   %3 = select i1 %.not, i32 %1, i32 %0
   %4 = lshr i32 %3, 6
   ret i32 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/hashpage.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 2
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = lshr i32 %4, 1
+  ret i32 %5
 }
 
 ; 1 occurrences:

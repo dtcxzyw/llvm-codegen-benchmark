@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; jq/optimized/regparse.ll
 ; oniguruma/optimized/regparse.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr4.c.ll
-; opencv/optimized/cornersubpix.cpp.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {

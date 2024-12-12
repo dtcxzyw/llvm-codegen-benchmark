@@ -1,10 +1,10 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shlq	$12, %rsi
 	sete	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	shlq	$16, %rsi
 	setne	%al
 	xorb	$1, %dil

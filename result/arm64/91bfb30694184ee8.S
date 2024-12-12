@@ -1,64 +1,49 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmeq	v2.4s, v2.4s, v4.4s
-	cmeq	v1.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	bic	v0.8b, v1.8b, v0.8b
+	cmp	w1, w2
+	cset	w8, eq
+	bic	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	cmge	v2.4s, v2.4s, v4.4s
-	cmge	v1.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	bic	v0.8b, v1.8b, v0.8b
+	cmp	w1, w2
+	cset	w8, ge
+	bic	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmhi	v2.4s, v4.4s, v2.4s
-	cmhi	v1.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	bic	v0.8b, v1.8b, v0.8b
+	cmp	w1, w2
+	cset	w8, lo
+	bic	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmeq	v2.4s, v2.4s, v4.4s
-	cmeq	v1.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	mvn	v1.16b, v1.16b
-	xtn	v1.8b, v1.8h
-	bic	v0.8b, v1.8b, v0.8b
+	cmp	w1, w2
+	cset	w8, ne
+	bic	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	cmge	v2.4s, v4.4s, v2.4s
-	cmge	v1.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	bic	v0.8b, v1.8b, v0.8b
+	cmp	w1, w2
+	cset	w8, le
+	bic	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	cmgt	v2.4s, v2.4s, v4.4s
-	cmgt	v1.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	bic	v0.8b, v1.8b, v0.8b
+	cmp	w1, w2
+	cset	w8, gt
+	bic	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmgt	v2.4s, v4.4s, v2.4s
-	cmgt	v1.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	bic	v0.8b, v1.8b, v0.8b
+	cmp	w1, w2
+	cset	w8, lt
+	bic	w0, w8, w0
 	ret
                                         // -- End function

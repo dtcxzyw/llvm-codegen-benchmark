@@ -105,7 +105,7 @@ entry:
   %4 = icmp ult i32 %3, 196112
   %5 = or i1 %4, %1
   %6 = xor i1 %5, true
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 

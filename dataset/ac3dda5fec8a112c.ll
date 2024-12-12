@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; ruby/optimized/time.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -13,16 +14,14 @@ entry:
   ret i64 %5
 }
 
-; 33 occurrences:
+; 31 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; graphviz/optimized/memory.c.ll
 ; gromacs/optimized/fft.cpp.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; icu/optimized/format.ll
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/unisetspan.ll
-; icu/optimized/usprep.ll
 ; libquic/optimized/base64_test.cc.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll

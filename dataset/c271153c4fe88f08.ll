@@ -34,11 +34,12 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64
   %5 = mul nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 69 occurrences:
+; 70 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -114,7 +115,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64
   %5 = mul nsw i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

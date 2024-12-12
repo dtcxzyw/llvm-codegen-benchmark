@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
@@ -11,7 +11,6 @@
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
 ; ruby/optimized/file.ll
-; spike/optimized/f128_classify.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
@@ -46,12 +45,11 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/FunctionSpecialization.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll

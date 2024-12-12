@@ -4,11 +4,11 @@
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 100000
   %3 = or disjoint i32 %2, 10
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 

@@ -1,4 +1,4 @@
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	testl	%edx, %edx
 	setle	%cl
 	orb	%dil, %cl
@@ -6,7 +6,7 @@ func0000000000000198:                   # @func0000000000000198
 	setle	%al
 	orb	%cl, %al
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	shrq	$24, %rdx
 	testb	%dl, %dl
 	sete	%cl
@@ -15,7 +15,7 @@ func0000000000000108:                   # @func0000000000000108
 	orb	%sil, %al
 	orb	%cl, %al
 	retq
-func0000000000000998:                   # @func0000000000000998
+func0000000000002318:                   # @func0000000000002318
 	testl	%edx, %edx
 	setle	%cl
 	orb	%dil, %cl
@@ -23,7 +23,7 @@ func0000000000000998:                   # @func0000000000000998
 	setle	%al
 	orb	%cl, %al
 	retq
-func0000000000000318:                   # @func0000000000000318
+func0000000000000618:                   # @func0000000000000618
 	cmpl	$8, %edx
 	setne	%cl
 	orb	%sil, %cl
@@ -31,7 +31,7 @@ func0000000000000318:                   # @func0000000000000318
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	cmpl	$133, %edx
 	sete	%cl
 	orb	%sil, %cl
@@ -39,7 +39,7 @@ func0000000000000048:                   # @func0000000000000048
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000218:                   # @func0000000000000218
+func0000000000000418:                   # @func0000000000000418
 	cmpl	$262145, %edx                   # imm = 0x40001
 	setae	%cl
 	orb	%sil, %cl

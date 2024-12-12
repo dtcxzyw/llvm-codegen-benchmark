@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	3                               # 0x3
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpcmpneqd	.LCPI0_0(%rip){1to4}, %xmm0, %k1
@@ -29,7 +29,7 @@ func0000000000000010:                   # @func0000000000000010
 	.long	63                              # 0x3f
 .LCPI3_1:
 	.long	112                             # 0x70
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpcmpeqd	.LCPI3_0(%rip){1to4}, %xmm0, %k1

@@ -83,9 +83,9 @@ define i64 @func0000000000000031(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65536
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = sext i1 %5 to i64
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 

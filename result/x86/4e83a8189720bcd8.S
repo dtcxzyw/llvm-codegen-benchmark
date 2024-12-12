@@ -13,6 +13,11 @@ func0000000000000013:                   # @func0000000000000013
 	cmovbl	%edi, %esi
 	leal	1(%rsi), %eax
 	retq
+func0000000000000053:                   # @func0000000000000053
+	cmpl	$2, %edi
+	cmovbl	%edi, %esi
+	leal	1(%rsi), %eax
+	retq
 func0000000000000028:                   # @func0000000000000028
 	testl	%edi, %edi
 	cmovgl	%edi, %esi
@@ -32,4 +37,9 @@ func0000000000000019:                   # @func0000000000000019
 	testl	%edi, %edi
 	cmovsl	%edi, %esi
 	leal	-2(%rsi), %eax
+	retq
+func0000000000000051:                   # @func0000000000000051
+	cmpl	$3, %edi
+	cmovbl	%edi, %esi
+	leal	-1(%rsi), %eax
 	retq

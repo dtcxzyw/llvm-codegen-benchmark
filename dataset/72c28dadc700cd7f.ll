@@ -9,7 +9,6 @@
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/action_searcher.cpp.ll
 ; meshlab/optimized/balltree.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
@@ -24,12 +23,13 @@
 ; xgboost/optimized/stats.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, float %1, float %2) #0 {
+define ptr @func000000000000000b(ptr %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
-  %4 = select i1 %3, i64 16, i64 24
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %4 = select i1 %3, i64 24, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -45,11 +45,11 @@ entry:
 ; xgboost/optimized/rank_metric.cc.ll
 ; xgboost/optimized/ranking_utils.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, float %1, float %2) #0 {
+define ptr @func0000000000000013(ptr %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %1, %2
   %4 = select i1 %3, i64 16, i64 24
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

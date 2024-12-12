@@ -1,12 +1,11 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; git/optimized/kwset.ll
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/strmm.cpp.ll
-; yosys/optimized/maccmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000261(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add nuw i32 %2, 1
@@ -21,7 +20,7 @@ entry:
 ; postgres/optimized/varlena.ll
 ; slurm/optimized/burst_buffer_common.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add i32 %2, 1
@@ -41,7 +40,7 @@ entry:
 ; postgres/optimized/varlena.ll
 ; slurm/optimized/burst_buffer_common.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add i32 %2, 1
@@ -54,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/maccmap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add nuw nsw i32 %2, 1
@@ -67,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/meshUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add nsw i32 %2, -2
@@ -80,13 +79,13 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix_transform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add nsw i32 %2, -16
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 16
-  %6 = icmp ugt i64 %5, %4
+  %6 = icmp samesign ugt i64 %5, %4
   ret i1 %6
 }
 

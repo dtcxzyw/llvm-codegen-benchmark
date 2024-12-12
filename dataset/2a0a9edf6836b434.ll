@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/cuddRef.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = or disjoint i32 %3, 1
@@ -16,7 +16,7 @@ entry:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 1
   %4 = or disjoint i32 %3, 1
@@ -29,7 +29,7 @@ entry:
 ; llvm/optimized/GCOVProfiling.cpp.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = or disjoint i32 %3, 1
@@ -42,7 +42,7 @@ entry:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 13
   %4 = or i32 %3, 1879048192

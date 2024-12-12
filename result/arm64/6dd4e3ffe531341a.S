@@ -1,4 +1,4 @@
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	ccmp	w2, #0, #0, ne
@@ -6,7 +6,7 @@ func000000000000001c:                   // @func000000000000001c
 	and	w0, w8, w0
 	ret
                                         // -- End function
-func00000000000000cc:                   // @func00000000000000cc
+func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	ccmn	w2, #1, #4, ne
@@ -14,7 +14,7 @@ func00000000000000cc:                   // @func00000000000000cc
 	and	w0, w8, w0
 	ret
                                         // -- End function
-func00000000000000c1:                   // @func00000000000000c1
+func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	ccmp	w2, #0, #4, eq
@@ -22,7 +22,7 @@ func00000000000000c1:                   // @func00000000000000c1
 	and	w0, w8, w0
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	ccmp	w2, #0, #0, eq
@@ -30,7 +30,7 @@ func0000000000000011:                   // @func0000000000000011
 	and	w0, w8, w0
 	ret
                                         // -- End function
-func00000000000000ac:                   // @func00000000000000ac
+func000000000000014c:                   // @func000000000000014c
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	ccmp	w2, #0, #4, ne
@@ -38,7 +38,7 @@ func00000000000000ac:                   // @func00000000000000ac
 	and	w0, w8, w0
 	ret
                                         // -- End function
-func000000000000006c:                   // @func000000000000006c
+func00000000000000cc:                   // @func00000000000000cc
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	ccmp	w2, #3, #0, ne

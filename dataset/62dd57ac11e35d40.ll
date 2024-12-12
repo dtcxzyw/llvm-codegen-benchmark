@@ -34,7 +34,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -58,7 +58,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1023
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -94,7 +94,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 

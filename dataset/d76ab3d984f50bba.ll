@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/ftbbox.c.ll
 ; Function Attrs: nounwind

@@ -21,7 +21,7 @@ entry:
   ret i64 %2
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; assimp/optimized/FBXBinaryTokenizer.cpp.ll
 ; brotli/optimized/decode.c.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
@@ -31,12 +31,10 @@ entry:
 ; folly/optimized/SplitStringSimd.cpp.ll
 ; just-rs/optimized/uwydcyn8qeoqoev.ll
 ; lief/optimized/ssl_tls.c.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; openjdk/optimized/collectedHeap.ll
 ; openmpi/optimized/osc_rdma_peer.ll
-; qemu/optimized/meson-generated_.._dbus-display1.c.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
@@ -46,7 +44,9 @@ entry:
   ret i64 %2
 }
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/sub_launcher.ll
 ; clamav/optimized/filestr.cpp.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; lief/optimized/ssl_tls12_client.c.ll

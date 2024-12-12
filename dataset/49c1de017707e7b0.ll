@@ -60,15 +60,24 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
-; openblas/optimized/ieeeck.c.ll
 ; openblas/optimized/slamch.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(float %0, float %1) #0 {
 entry:
   %2 = fadd float %0, %1
   %3 = fcmp une float %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; pbrt-v4/optimized/mipmap.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000003(float %0, float %1) #0 {
+entry:
+  %2 = fadd float %1, %0
+  %3 = fcmp ult float %2, %0
   ret i1 %3
 }
 

@@ -6,7 +6,7 @@
 ; llvm/optimized/ValueTypes.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 1

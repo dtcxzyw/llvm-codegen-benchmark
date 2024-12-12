@@ -1,8 +1,9 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/Sanitizers.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
@@ -34,11 +35,12 @@ entry:
   ret i64 %7
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; git/optimized/http.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; Function Attrs: nounwind
@@ -52,10 +54,11 @@ entry:
   ret i64 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i1 %0, i1 %1, i64 %2) #0 {
@@ -68,8 +71,9 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i1 %1, i64 %2) #0 {

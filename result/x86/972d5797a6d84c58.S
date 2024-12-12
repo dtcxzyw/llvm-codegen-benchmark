@@ -14,11 +14,3 @@ func0000000000000003:                   # @func0000000000000003
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	andl	$1, %edx
-	leaq	32(,%rdx,4), %rcx
-	xorl	%eax, %eax
-	testb	$1, %sil
-	cmovneq	%rcx, %rax
-	addq	%rdi, %rax
-	retq

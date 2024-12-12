@@ -1,5 +1,5 @@
 
-; 87 occurrences:
+; 96 occurrences:
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
 ; abc/optimized/giaCSatP.c.ll
@@ -16,6 +16,14 @@
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
 ; actix-rs/optimized/52qe9gl98lnufrop.ll
 ; actix-rs/optimized/7zeo7o16a1wcxcn.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/options_description.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; cmake/optimized/url.c.ll
 ; cmake/optimized/urlapi.c.ll
@@ -44,7 +52,6 @@
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/function.pb.cc.ll
 ; opencv/optimized/graph.pb.cc.ll
-; opencv/optimized/motion_estimators.cpp.ll
 ; opencv/optimized/op_def.pb.cc.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/opencv-onnx.pb.cc.ll
@@ -86,7 +93,9 @@
 ; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/smt_strategic_solver.cpp.ll
-; zxing/optimized/DMDetector.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, ptr %2) #0 {
 entry:

@@ -16,6 +16,12 @@ func0000000000000004:                   # @func0000000000000004
 	andl	%esi, %edi
 	andb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$2, %rdx
+	setb	%al
+	andl	%esi, %edi
+	andb	%dil, %al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	testq	%rdx, %rdx
 	setns	%al
@@ -31,6 +37,12 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000006:                   # @func0000000000000006
 	cmpq	$2, %rdx
 	setl	%al
+	andl	%esi, %edi
+	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpq	$3, %rdx
+	setae	%al
 	andl	%esi, %edi
 	andb	%dil, %al
 	retq

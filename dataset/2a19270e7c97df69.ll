@@ -1,5 +1,5 @@
 
-; 115 occurrences:
+; 116 occurrences:
 ; abseil-cpp/optimized/globals.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
@@ -16,6 +16,7 @@
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/src.ll
 ; grpc/optimized/call_trace.cc.ll
 ; grpc/optimized/client_channel.cc.ll
 ; grpc/optimized/dns_resolver_ares.cc.ll
@@ -121,7 +122,7 @@ entry:
   %2 = lshr i128 %1, 64
   %3 = xor i128 %2, %1
   %4 = trunc i128 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

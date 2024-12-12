@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:

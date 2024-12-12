@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -27,6 +28,17 @@ entry:
   %2 = mul i32 %1, 10
   %3 = add i32 %2, -528
   %4 = add nsw i32 %3, %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; boost/optimized/init_from_settings.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000ff(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw i32 %1, 10
+  %3 = add nuw i32 %2, 720368
+  %4 = add nuw nsw i32 %3, %0
   ret i32 %4
 }
 

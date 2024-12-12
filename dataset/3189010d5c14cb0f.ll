@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
@@ -23,6 +23,7 @@
 ; nori/optimized/block.cpp.ll
 ; opencv/optimized/dqb.cpp.ll
 ; opencv/optimized/estimated_covariance.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

@@ -11,14 +11,13 @@ entry:
   ret i8 %2
 }
 
-; 12 occurrences:
-; clamav/optimized/Xz.c.ll
+; 11 occurrences:
 ; linux/optimized/agg-tx.ll
-; linux/optimized/dvo_ch7017.ll
 ; linux/optimized/intel_dram.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/vt.ll
+; lvgl/optimized/lv_spinbox.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; php/optimized/filter.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll

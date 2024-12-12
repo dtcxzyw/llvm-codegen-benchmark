@@ -1,5 +1,5 @@
 
-; 294 occurrences:
+; 292 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -136,8 +136,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; postgres/optimized/bitmapset.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -298,11 +296,11 @@
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 
-; 1668 occurrences:
+; 1659 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acbFunc.c.ll
@@ -393,6 +391,12 @@ entry:
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/options_description.ll
+; boost/optimized/pin_thread.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
+; boost/optimized/xml_grammar.ll
 ; c3c/optimized/asm_target.c.ll
 ; c3c/optimized/sema_asm.c.ll
 ; c3c/optimized/target.c.ll
@@ -419,7 +423,6 @@ entry:
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; ceres/optimized/manifold.cc.ll
 ; clamav/optimized/communication.c.ll
-; clamav/optimized/fanotif.c.ll
 ; clamav/optimized/inotif.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/netcode.c.ll
@@ -604,7 +607,6 @@ entry:
 ; gromacs/optimized/matio.cpp.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; gromacs/optimized/mpiinfo.cpp.ll
-; gromacs/optimized/pthreads.cpp.ll
 ; gromacs/optimized/qmmmtopologypreprocessor.cpp.ll
 ; gromacs/optimized/readpull.cpp.ll
 ; gromacs/optimized/sm_keywords.cpp.ll
@@ -718,13 +720,10 @@ entry:
 ; linux/optimized/idr.ll
 ; linux/optimized/intel_display_power_map.ll
 ; linux/optimized/intel_modeset_setup.ll
-; linux/optimized/intel_pconfig.ll
 ; linux/optimized/iommu.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/mpi-bit.ll
-; linux/optimized/msr.ll
 ; linux/optimized/netlabel_kapi.ll
-; linux/optimized/probe.ll
 ; linux/optimized/rdma.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/sbitmap.ll
@@ -892,7 +891,6 @@ entry:
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMoveMerger.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
@@ -1012,7 +1010,6 @@ entry:
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh_model_state.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -1163,13 +1160,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -1600,9 +1594,6 @@ entry:
 ; postgres/optimized/tidbitmap.ll
 ; postgres/optimized/tsquery_op.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/context.cc.ll
 ; protobuf/optimized/enum.cc.ll
@@ -1679,7 +1670,6 @@ entry:
 ; qemu/optimized/plugins_core.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; qemu/optimized/util_qemu-thread-posix.c.ll
@@ -1709,7 +1699,6 @@ entry:
 ; quantlib/optimized/fdm3dimsolver.ll
 ; quantlib/optimized/fdmarithmeticaveragecondition.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dcapfloorengine.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
@@ -1917,7 +1906,6 @@ entry:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/androiddump.c.ll
-; wireshark/optimized/ws_pipe.c.ll
 ; wolfssl/optimized/client.c.ll
 ; wolfssl/optimized/server.c.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -1938,7 +1926,6 @@ entry:
 ; yosys/optimized/flatten.ll
 ; yosys/optimized/fsm_opt.ll
 ; yosys/optimized/glift.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/memory_bmux2rom.ll
 ; yosys/optimized/memory_dff.ll
@@ -1963,6 +1950,8 @@ entry:
 ; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/sat_lut_finder.cpp.ll
 ; z3/optimized/smt_enode.cpp.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zxing/optimized/Content.cpp.ll
 ; zxing/optimized/ODCodabarWriter.cpp.ll
 ; zxing/optimized/ODCode128Writer.cpp.ll
@@ -1975,7 +1964,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 2, %1
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 
@@ -2076,11 +2065,11 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; libdeflate/optimized/deflate_compress.c.ll
@@ -2098,6 +2087,7 @@ entry:
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

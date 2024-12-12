@@ -1,4 +1,4 @@
-func0000000000000302:                   # @func0000000000000302
+func0000000000000e02:                   # @func0000000000000e02
 	cmpw	$16, %di
 	sete	%al
 	cmpl	$12, %esi
@@ -8,24 +8,25 @@ func0000000000000302:                   # @func0000000000000302
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000982:                   # @func0000000000000982
-	cmpl	$7, %esi
-	setb	%al
-	movzwl	%di, %ecx
-	cmpl	$396, %ecx                      # imm = 0x18C
-	setne	%dl
-	andb	%al, %dl
-	cmpl	$403, %ecx                      # imm = 0x193
+func0000000000000a02:                   # @func0000000000000a02
+	cmpw	$16, %di
 	sete	%al
-	orb	%dl, %al
-	retq
-func0000000000000890:                   # @func0000000000000890
-	cmpl	$10, %esi
-	setb	%al
-	cmpw	$64, %di
-	setb	%cl
+	cmpl	$12, %esi
+	setae	%cl
 	andb	%al, %cl
-	cmpw	$97, %di
-	setae	%al
+	cmpw	$17, %di
+	sete	%al
 	orb	%cl, %al
+	retq
+func000000000000610c:                   # @func000000000000610c
+	testl	%esi, %esi
+	setne	%al
+	movzwl	%di, %ecx
+	cmpl	$49152, %ecx                    # imm = 0xC000
+	setb	%dl
+	andb	%al, %dl
+	movswl	%cx, %eax
+	cmpl	$-16384, %eax                   # imm = 0xC000
+	setl	%al
+	orb	%dl, %al
 	retq

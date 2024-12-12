@@ -21,7 +21,7 @@ define i32 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = and i64 %3, 32
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or disjoint i64 %5, %0
   %7 = trunc nuw i64 %6 to i32
   ret i32 %7
@@ -34,7 +34,7 @@ define i32 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = and i64 %3, 32
-  %5 = or i64 %4, %1
+  %5 = or i64 %1, %4
   %6 = or i64 %5, %0
   %7 = trunc nuw i64 %6 to i32
   ret i32 %7
@@ -51,7 +51,7 @@ define i32 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
   %4 = and i64 %3, 200448
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or disjoint i64 %5, %0
   %7 = trunc nuw nsw i64 %6 to i32
   ret i32 %7

@@ -12,7 +12,7 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vi	v12, v10, 30
 	vxor.vv	v10, v12, v10
 	vmul.vx	v10, v10, a1
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret
 .LCPI1_0:
 	.quad	7109453100751455733             # 0x62a9d9ed799705f5
@@ -25,7 +25,7 @@ func0000000000000010:                   # @func0000000000000010
 	vsrl.vx	v12, v10, a1
 	vxor.vv	v10, v12, v10
 	vmul.vx	v10, v10, a0
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret
 .LCPI2_0:
 	.quad	-4650441984963589867            # 0xbf764fa75daec915
@@ -42,7 +42,7 @@ func0000000000000008:                   # @func0000000000000008
 	vsrl.vx	v12, v10, a0
 	vxor.vv	v10, v12, v10
 	vmul.vx	v10, v10, a1
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret
 .LCPI3_0:
 	.quad	-7046029254386353131            # 0x9e3779b97f4a7c15
@@ -58,5 +58,5 @@ func0000000000000018:                   # @func0000000000000018
 	vsrl.vi	v12, v10, 30
 	vxor.vv	v10, v12, v10
 	vmul.vx	v10, v10, a1
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret

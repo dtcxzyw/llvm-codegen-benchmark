@@ -1,38 +1,27 @@
 func00000000000000ca:                   // @func00000000000000ca
 // %bb.0:                               // %entry
 	mov	w8, #6554                       // =0x199a
-	mvni	v2.4s, #9
-	dup	v1.4s, w8
-	mul	v1.4s, v0.4s, v1.4s
-	ushr	v1.4s, v1.4s, #16
-	mla	v0.4s, v1.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	mov	w9, #-10                        // =0xfffffff6
+	mul	w8, w0, w8
+	lsr	w8, w8, #16
+	madd	w0, w8, w9, w0
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mov	w8, #5243                       // =0x147b
-	mvni	v2.4h, #99
-	dup	v1.4s, w8
-	mul	v1.4s, v0.4s, v1.4s
-	ushr	v1.4s, v1.4s, #19
-	xtn	v1.4h, v1.4s
-	smlal	v0.4s, v1.4h, v2.4h
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	mov	w9, #-100                       // =0xffffff9c
+	mul	w8, w0, w8
+	lsr	w8, w8, #19
+	madd	w0, w8, w9, w0
 	ret
                                         // -- End function
 func000000000000008a:                   // @func000000000000008a
 // %bb.0:                               // %entry
 	mov	w8, #5243                       // =0x147b
-	mvni	v2.4h, #99
-	dup	v1.4s, w8
-	mul	v1.4s, v0.4s, v1.4s
-	ushr	v1.4s, v1.4s, #19
-	xtn	v1.4h, v1.4s
-	smlal	v0.4s, v1.4h, v2.4h
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	mov	w9, #-100                       // =0xffffff9c
+	mul	w8, w0, w8
+	lsr	w8, w8, #19
+	madd	w0, w8, w9, w0
 	ret
                                         // -- End function

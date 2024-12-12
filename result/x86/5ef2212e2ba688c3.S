@@ -1,15 +1,15 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	decq	%rdx
-	cmpq	%rsi, %rdx
-	seta	%cl
+	cmpq	%rdx, %rsi
+	setb	%cl
 	cmpb	$92, %dil
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	decq	%rdx
-	cmpq	%rsi, %rdx
-	seta	%cl
+	cmpq	%rdx, %rsi
+	setb	%cl
 	testb	%dil, %dil
 	setne	%al
 	andb	%cl, %al

@@ -270,7 +270,7 @@ entry:
 ; openusd/optimized/usdzResolver.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0) #0 {
+define i64 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 1, %0
   %2 = icmp eq i64 %0, 0
@@ -292,7 +292,7 @@ entry:
 ; openjdk/optimized/shenandoahMarkBitMap.ll
 ; openjdk/optimized/shenandoahSimpleBitMap.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 -2, %0
   %2 = icmp eq i64 %0, 63

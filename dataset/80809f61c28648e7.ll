@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; hdf5/optimized/H5FSsection.c.ll
 ; hwloc/optimized/distances.ll
@@ -10,6 +10,8 @@
 ; qemu/optimized/block_mirror.c.ll
 ; qemu/optimized/crypto_afsplit.c.ll
 ; xgboost/optimized/elementwise_metric.cc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

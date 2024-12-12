@@ -1,5 +1,5 @@
 
-; 152 occurrences:
+; 151 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/amapUniq.c.ll
@@ -22,7 +22,6 @@
 ; folly/optimized/AsyncSocket.cpp.ll
 ; git/optimized/blame.ll
 ; git/optimized/index-pack.ll
-; git/optimized/multi-pack-index.ll
 ; git/optimized/push.ll
 ; git/optimized/read-cache.ll
 ; icu/optimized/collationfastlatin.ll
@@ -38,10 +37,8 @@
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hid-debug.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_tv.ll
@@ -63,6 +60,7 @@
 ; llvm/optimized/COFFAsmParser.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/Core.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
@@ -152,6 +150,7 @@
 ; wolfssl/optimized/asn.c.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
 ; z3/optimized/bound_propagator.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
@@ -162,7 +161,8 @@ entry:
   ret i32 %5
 }
 
-; 41 occurrences:
+; 42 occurrences:
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; linux/optimized/e1000_ethtool.ll
 ; linux/optimized/ethtool.ll
@@ -226,12 +226,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; linux/optimized/blk-flush.ll
 ; linux/optimized/e1000_hw.ll
-; llvm/optimized/X86FrameLowering.cpp.ll
 ; mold/optimized/rust-demangle.c.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
@@ -259,9 +257,8 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/core.c.ll
-; glslang/optimized/Initialize.cpp.ll
 ; graphviz/optimized/rec.c.ll
 ; libuv/optimized/core.c.ll
 ; node/optimized/core.ll
@@ -276,22 +273,46 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcTim.c.ll
 ; clamav/optimized/upack.c.ll
 ; icu/optimized/collationfastlatin.ll
+; raylib/optimized/rtextures.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 9
+  %3 = select i1 %2, i32 0, i32 16
+  %4 = and i32 %0, -25
+  %5 = or disjoint i32 %3, %4
+  ret i32 %5
+}
+
+; 4 occurrences:
 ; linux/optimized/ethtool.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; oiio/optimized/iffoutput.cpp.ll
 ; quickjs/optimized/quickjs.ll
-; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 9
-  %3 = select i1 %2, i32 0, i32 16
-  %4 = and i32 %0, -25
-  %5 = or disjoint i32 %3, %4
+  %2 = icmp ugt i32 %1, 1
+  %3 = select i1 %2, i32 128, i32 0
+  %4 = and i32 %0, 127
+  %5 = or disjoint i32 %4, %3
+  ret i32 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/X86FrameLowering.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 8
+  %3 = select i1 %2, i32 0, i32 67108864
+  %4 = and i32 %0, 50331648
+  %5 = or disjoint i32 %4, %3
   ret i32 %5
 }
 

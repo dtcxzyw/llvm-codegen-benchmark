@@ -4,7 +4,7 @@
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; git/optimized/utf8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
   %3 = shl nuw i64 %0, 1

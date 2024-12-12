@@ -19,5 +19,5 @@ func0000000000000011:                   # @func0000000000000011
 	vnsrl.wx	v9, v10, a0
 	li	a0, 255
 	vand.vx	v9, v9, a0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret

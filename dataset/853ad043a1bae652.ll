@@ -1,9 +1,8 @@
 
-; 15 occurrences:
+; 13 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; gromacs/optimized/compiler.cpp.ll
 ; linux/optimized/8139too.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -11,7 +10,6 @@
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; qemu/optimized/target_riscv_debug.c.ll
-; ruby/optimized/basicsocket.ll
 ; ruby/optimized/console.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/parse.ll

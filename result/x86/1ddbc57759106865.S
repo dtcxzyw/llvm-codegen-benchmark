@@ -4,7 +4,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$6, %eax
 	setae	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	xorl	$63, %esi
 	leal	1075(%rdi,%rsi), %eax
 	cmpl	$53, %eax

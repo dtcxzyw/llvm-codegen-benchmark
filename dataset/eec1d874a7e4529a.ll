@@ -1,12 +1,11 @@
 
-; 286 occurrences:
-; c3c/optimized/decltable.c.ll
+; 285 occurrences:
+; boost/optimized/core.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; cpython/optimized/hamt.ll
 ; cpython/optimized/obmalloc.ll
 ; folly/optimized/CacheLocality.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll

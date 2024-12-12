@@ -1,7 +1,10 @@
 
-; 40 occurrences:
+; 46 occurrences:
+; assimp/optimized/BlenderDNA.cpp.ll
+; assimp/optimized/BlenderScene.cpp.ll
+; assimp/optimized/PlyParser.cpp.ll
+; cmake/optimized/cmELF.cxx.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/he.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/ucount.ll
 ; linux/optimized/vht.ll
@@ -9,7 +12,9 @@
 ; llvm/optimized/CGObjC.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/DbiStreamBuilder.cpp.ll
+; llvm/optimized/LICM.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -36,6 +41,7 @@
 ; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; stockfish/optimized/position.ll
+; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-sstp.c.ll

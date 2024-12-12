@@ -2,13 +2,13 @@ func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vremu.vv	v9, v12, v9
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vremu.vv	v9, v12, v9
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -20,5 +20,5 @@ func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vremu.vv	v9, v12, v9
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret

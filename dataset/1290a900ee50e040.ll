@@ -26,7 +26,7 @@
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/file.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = icmp eq i32 %0, 0
@@ -64,22 +64,11 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/constMethod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 2
   %3 = icmp slt i32 %0, 0
   %4 = select i1 %3, i32 0, i32 %2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; php/optimized/pcre2_jit_compile.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
-entry:
-  %2 = or disjoint i32 %1, 66
-  %3 = icmp ult i32 %0, 2
-  %4 = select i1 %3, i32 578, i32 %2
   ret i32 %4
 }
 

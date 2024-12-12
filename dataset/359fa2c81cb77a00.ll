@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -7,14 +7,13 @@
 ; spike/optimized/f128_to_i32.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1024
   %4 = icmp ne i64 %3, 0
   %5 = select i1 %4, i1 true, i1 %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -35,7 +34,7 @@ entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i1 true, i1 %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 58 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; coreutils-rs/optimized/17ojgxcnujh4nt6.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
@@ -26,6 +26,7 @@
 ; llvm/optimized/ModuleMap.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -55,6 +56,8 @@
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i8 %0) #0 {
 entry:

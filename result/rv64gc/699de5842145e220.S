@@ -28,7 +28,7 @@ func0000000000000020:                   # @func0000000000000020
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	andi	a2, a2, 1
 	bnez	a2, .LBB2_2
 	li	a2, 5
@@ -42,7 +42,7 @@ func000000000000003a:                   # @func000000000000003a
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	andi	a2, a2, 1
 	bnez	a2, .LBB3_2
 	li	a2, 17

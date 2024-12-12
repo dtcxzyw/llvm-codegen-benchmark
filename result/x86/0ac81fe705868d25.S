@@ -9,7 +9,7 @@ func0000000000000031:                   # @func0000000000000031
 	movl	$2, %eax
 	sbbl	$-1, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	cmpl	$640, %edi                      # imm = 0x280
 	movl	$48, %eax
 	sbbl	$-1, %eax
@@ -26,7 +26,7 @@ func0000000000000019:                   # @func0000000000000019
 	setl	%al
 	orl	$354, %eax                      # imm = 0x162
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	xorl	%eax, %eax
 	cmpl	$2, %edi
 	adcl	$2, %eax

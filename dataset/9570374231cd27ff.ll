@@ -1,8 +1,9 @@
 
-; 81 occurrences:
+; 82 occurrences:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; crow/optimized/example_session.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
@@ -86,7 +87,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 37
   %3 = xor i64 %2, %1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

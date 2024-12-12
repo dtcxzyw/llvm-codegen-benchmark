@@ -5,7 +5,7 @@ func000000000000000a:                   // @func000000000000000a
 	csel	x0, x0, xzr, gt
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	cmp	x8, #171

@@ -1,13 +1,13 @@
 
 ; 13 occurrences:
 ; icu/optimized/numparse_decimal.ll
-; libevent/optimized/event.c.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/i386.ll
 ; linux/optimized/pci-sysfs.ll
 ; linux/optimized/regset.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
+; lvgl/optimized/lv_switch.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll

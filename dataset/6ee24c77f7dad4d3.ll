@@ -1,5 +1,5 @@
 
-%class.G1MMUTrackerElem.2618957 = type { double, double }
+%class.G1MMUTrackerElem.2732404 = type { double, double }
 
 ; 2 occurrences:
 ; opencv/optimized/pose_3d.cpp.ll
@@ -8,10 +8,10 @@
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 64
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = srem i32 %4, 64
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw [64 x %class.G1MMUTrackerElem.2618957], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw [64 x %class.G1MMUTrackerElem.2732404], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

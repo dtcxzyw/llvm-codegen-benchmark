@@ -8,11 +8,11 @@
 ; php/optimized/xpath.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add i64 %3, 1
-  %5 = getelementptr nusw i8, ptr %0, i64 176
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 176
   %6 = getelementptr nusw [256 x i8], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -21,11 +21,11 @@ entry:
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000004e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add i64 %3, 1
-  %5 = getelementptr nusw i8, ptr %0, i64 24
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = getelementptr nusw [1 x i8], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -33,12 +33,12 @@ entry:
 ; 1 occurrences:
 ; php/optimized/crypt_sha256.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = add nuw nsw i64 %3, 4
-  %5 = getelementptr nusw i8, ptr %0, i64 44
-  %6 = getelementptr nusw [128 x i8], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 44
+  %6 = getelementptr nusw nuw [128 x i8], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -69,11 +69,11 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/tupleobject.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, -1
-  %5 = getelementptr nusw i8, ptr %0, i64 303016
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 303016
   %6 = getelementptr [20 x ptr], ptr %5, i64 0, i64 %4
   ret ptr %6
 }

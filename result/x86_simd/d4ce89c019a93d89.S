@@ -18,7 +18,7 @@ func000000000000000b:                   # @func000000000000000b
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vsubps	%zmm2, %zmm1, %zmm1
-	vcmpordps	%zmm0, %zmm1, %k0
+	vcmpordps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -48,13 +48,13 @@ func000000000000000d:                   # @func000000000000000d
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vsubps	%zmm2, %zmm1, %zmm1
-	vcmpeqps	%zmm0, %zmm1, %k0
+	vcmpeqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vsubps	%zmm2, %zmm1, %zmm1
-	vcmpneqps	%zmm0, %zmm1, %k0
+	vcmpneqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

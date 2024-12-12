@@ -1,5 +1,5 @@
 
-%struct.code.2764381 = type { i8, i8, i16 }
+%struct.code.2876641 = type { i8, i8, i16 }
 
 ; 14 occurrences:
 ; abc/optimized/infback.c.ll
@@ -17,13 +17,13 @@
 ; zlib/optimized/inflate.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw %struct.code.2764381, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.code.2876641, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -31,13 +31,13 @@ entry:
 ; cmake/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
   %4 = trunc nuw i64 %1 to i32
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 

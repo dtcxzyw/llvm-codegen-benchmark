@@ -1,9 +1,9 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	subl	%esi, %edi
 	testl	$65534, %edi                    # imm = 0xFFFE
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	cmpw	%si, %di
 	sete	%al
 	retq

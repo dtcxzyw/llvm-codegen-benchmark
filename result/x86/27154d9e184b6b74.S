@@ -1,10 +1,10 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	xorl	%eax, %eax
 	cmpl	$1, %esi
 	sete	%al
 	addl	%edi, %eax
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	addl	$-731, %esi                     # imm = 0xFD25
 	leal	9(%rdi), %eax
 	cmpl	$2, %esi

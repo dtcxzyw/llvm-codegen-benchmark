@@ -1,12 +1,12 @@
-func0000000000000601:                   # @func0000000000000601
+func0000000000000c01:                   # @func0000000000000c01
 	cmpq	$1, %rdx
 	sbbq	$-1, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000604:                   # @func0000000000000604
+func0000000000000c04:                   # @func0000000000000c04
 	cmpq	$1, %rdx
 	sbbq	$-1, %rsi
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

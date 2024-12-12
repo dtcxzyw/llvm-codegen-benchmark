@@ -1,5 +1,5 @@
 
-; 930 occurrences:
+; 884 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBlifMv.c.ll
@@ -7,7 +7,6 @@
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcLib.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -52,7 +51,6 @@
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/cuddBridge.c.ll
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -113,7 +111,6 @@
 ; abc/optimized/mpmDsd.c.ll
 ; abc/optimized/mpmGates.c.ll
 ; abc/optimized/mvcLits.c.ll
-; abc/optimized/mvcPrint.c.ll
 ; abc/optimized/nwkSpeedup.c.ll
 ; abc/optimized/pdrTsim.c.ll
 ; abc/optimized/plaMan.c.ll
@@ -154,6 +151,8 @@
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/unique_path.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/decode.c.ll
 ; brotli/optimized/encode.c.ll
@@ -252,7 +251,6 @@
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/multibit_build.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -268,26 +266,9 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; jq/optimized/ascii.ll
 ; jq/optimized/builtin.ll
-; jq/optimized/cp1251.ll
 ; jq/optimized/euc_jp.ll
 ; jq/optimized/iso8859_1.ll
-; jq/optimized/iso8859_10.ll
-; jq/optimized/iso8859_11.ll
-; jq/optimized/iso8859_13.ll
-; jq/optimized/iso8859_14.ll
-; jq/optimized/iso8859_15.ll
-; jq/optimized/iso8859_16.ll
-; jq/optimized/iso8859_2.ll
-; jq/optimized/iso8859_3.ll
-; jq/optimized/iso8859_4.ll
-; jq/optimized/iso8859_5.ll
-; jq/optimized/iso8859_6.ll
-; jq/optimized/iso8859_7.ll
-; jq/optimized/iso8859_8.ll
-; jq/optimized/iso8859_9.ll
-; jq/optimized/koi8_r.ll
 ; jq/optimized/regcomp.ll
 ; jq/optimized/regenc.ll
 ; jq/optimized/regexec.ll
@@ -405,12 +386,9 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/entropy_common.ll
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/he.ll
 ; linux/optimized/hid-lg-g15.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/hwgpe.ll
-; linux/optimized/hwvalid.ll
 ; linux/optimized/i2c-algo-bit.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_bios.ll
@@ -422,6 +400,7 @@
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_sseu.ll
+; linux/optimized/jack.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/mlme.ll
@@ -478,7 +457,6 @@
 ; node/optimized/libnode.Protocol.ll
 ; nori/optimized/nanovg.c.ll
 ; nuttx/optimized/fs_select.c.ll
-; nuttx/optimized/sig_ismember.c.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -554,25 +532,8 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; oniguruma/optimized/ascii.ll
-; oniguruma/optimized/cp1251.ll
 ; oniguruma/optimized/euc_jp.ll
 ; oniguruma/optimized/iso8859_1.ll
-; oniguruma/optimized/iso8859_10.ll
-; oniguruma/optimized/iso8859_11.ll
-; oniguruma/optimized/iso8859_13.ll
-; oniguruma/optimized/iso8859_14.ll
-; oniguruma/optimized/iso8859_15.ll
-; oniguruma/optimized/iso8859_16.ll
-; oniguruma/optimized/iso8859_2.ll
-; oniguruma/optimized/iso8859_3.ll
-; oniguruma/optimized/iso8859_4.ll
-; oniguruma/optimized/iso8859_5.ll
-; oniguruma/optimized/iso8859_6.ll
-; oniguruma/optimized/iso8859_7.ll
-; oniguruma/optimized/iso8859_8.ll
-; oniguruma/optimized/iso8859_9.ll
-; oniguruma/optimized/koi8_r.ll
 ; oniguruma/optimized/regcomp.ll
 ; oniguruma/optimized/regenc.ll
 ; oniguruma/optimized/regexec.ll
@@ -636,7 +597,6 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -675,7 +635,6 @@
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/hw_net_e1000x_common.c.ll
@@ -700,7 +659,6 @@
 ; ruby/optimized/euc_jp.ll
 ; ruby/optimized/iso_8859_1.ll
 ; ruby/optimized/iso_8859_10.ll
-; ruby/optimized/iso_8859_11.ll
 ; ruby/optimized/iso_8859_13.ll
 ; ruby/optimized/iso_8859_14.ll
 ; ruby/optimized/iso_8859_15.ll
@@ -709,12 +667,8 @@
 ; ruby/optimized/iso_8859_3.ll
 ; ruby/optimized/iso_8859_4.ll
 ; ruby/optimized/iso_8859_5.ll
-; ruby/optimized/iso_8859_6.ll
 ; ruby/optimized/iso_8859_7.ll
-; ruby/optimized/iso_8859_8.ll
 ; ruby/optimized/iso_8859_9.ll
-; ruby/optimized/koi8_r.ll
-; ruby/optimized/koi8_u.ll
 ; ruby/optimized/regcomp.ll
 ; ruby/optimized/regenc.ll
 ; ruby/optimized/shift_jis.ll
@@ -886,7 +840,6 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/frame_data_sequence.c.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
@@ -910,6 +863,7 @@
 ; wireshark/optimized/packet-woww.c.ll
 ; wireshark/optimized/str_util.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
+; xgboost/optimized/charconv.cc.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; yosys/optimized/calc.ll
 ; yosys/optimized/fstapi.ll

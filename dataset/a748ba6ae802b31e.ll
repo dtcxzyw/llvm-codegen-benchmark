@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; grpc/optimized/channelz.cc.ll
 ; lua/optimized/ltm.ll
 ; postgres/optimized/gistproc.ll
@@ -16,6 +16,8 @@
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, double %1, i64 %2) #0 {
 entry:

@@ -27,9 +27,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
-; slurm/optimized/ebpf.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003d(i32 %0, i32 %1, i1 %2) #0 {
 entry:
@@ -47,7 +46,7 @@ define i32 @func000000000000002b(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 4, i32 3
   %4 = add nuw i32 %3, %1
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   %6 = add nuw nsw i32 %5, 1
   ret i32 %6
 }
@@ -61,8 +60,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 64, i32 32
-  %4 = add i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = add i32 %5, 2
   ret i32 %6
 }
@@ -73,7 +72,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 5, i32 0
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = add nsw i32 %5, 3
   ret i32 %6

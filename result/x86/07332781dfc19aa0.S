@@ -50,3 +50,7 @@ func000000000000000f:                   # @func000000000000000f
 	leal	2(%rsi,%rdi), %eax
 	cltq
 	retq
+func000000000000000b:                   # @func000000000000000b
+	leal	1(%rsi,%rdi), %eax
+	cltq
+	retq

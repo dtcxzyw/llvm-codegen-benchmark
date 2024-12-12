@@ -46,7 +46,19 @@ func0000000000000013:                   # @func0000000000000013
 	cmovael	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000060:                   # @func0000000000000060
+	cmpq	$4097, %rdx                     # imm = 0x1001
+	movl	$4096, %eax                     # imm = 0x1000
+	cmovbl	%esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000053:                   # @func0000000000000053
+	cmpq	$19, %rdx
+	movl	$4352, %eax                     # imm = 0x1100
+	cmovael	%esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000051:                   # @func0000000000000051
 	xorl	%eax, %eax
 	cmpq	$4, %rdx
 	cmovael	%esi, %eax

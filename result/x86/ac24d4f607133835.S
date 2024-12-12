@@ -14,6 +14,10 @@ func0000000000000008:                   # @func0000000000000008
 	movl	%edi, %eax
 	subb	%sil, %al
 	retq
+func000000000000000f:                   # @func000000000000000f
+	movl	%edi, %eax
+	subb	%sil, %al
+	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%edi, %eax
 	subb	%sil, %al

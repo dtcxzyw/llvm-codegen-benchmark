@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; linux/optimized/sky2.ll
 ; node/optimized/simdutf.ll
 ; openexr/optimized/unpack.c.ll
@@ -11,13 +11,14 @@
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/lanalyzer.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
   %5 = zext i16 %1 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -32,7 +33,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 16
   %5 = zext nneg i16 %1 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -47,7 +48,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw i64 %3, 48
   %5 = zext i16 %1 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }

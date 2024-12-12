@@ -10,13 +10,13 @@ func0000000000000040:                   # @func0000000000000040
 	subq	%rdi, %rax
 	addq	$-15, %rax
 	retq
-func0000000000000060:                   # @func0000000000000060
+func0000000000000070:                   # @func0000000000000070
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	subq	%rdi, %rax
 	addq	$-15, %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
+func0000000000000030:                   # @func0000000000000030
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	subq	%rdi, %rax

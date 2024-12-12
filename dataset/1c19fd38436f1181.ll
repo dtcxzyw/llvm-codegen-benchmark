@@ -1,8 +1,7 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; libsodium/optimized/libsodium_la-argon2.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/8250_early.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/intel_backlight.ll
@@ -30,11 +29,9 @@ entry:
   ret i32 %3
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; linux/optimized/intel_fb.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/tcp_input.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ValueTypes.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll

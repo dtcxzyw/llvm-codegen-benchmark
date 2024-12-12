@@ -1,10 +1,9 @@
 
-; 3 occurrences:
-; linux/optimized/he.ll
+; 2 occurrences:
 ; linux/optimized/vht.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = zext i16 %0 to i32
@@ -17,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vht.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i16 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = zext i16 %0 to i32
@@ -30,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/mlme.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i16 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = zext i16 %0 to i32
@@ -41,22 +40,9 @@ entry:
 }
 
 ; 1 occurrences:
-; node/optimized/libnode.Protocol.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i16 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 2
-  %3 = zext i16 %0 to i32
-  %4 = lshr i32 %3, %2
-  %5 = and i32 %4, 14
-  %6 = icmp ult i32 %5, 10
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i16 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = zext i16 %0 to i32

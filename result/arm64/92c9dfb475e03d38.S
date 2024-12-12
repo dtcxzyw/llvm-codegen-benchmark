@@ -1,28 +1,20 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	bic	v5.8h, #208
-	bic	v4.8h, #208
-	bic	v3.8h, #192
-	bic	v2.8h, #192
-	orr	v3.16b, v5.16b, v3.16b
-	orr	v2.16b, v4.16b, v2.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.8h, #64
-	orr	v0.8h, #64
+	mov	w8, #-209                       // =0xffffff2f
+	and	w9, w1, #0xffffff3f
+	and	w8, w2, w8
+	orr	w9, w9, w0
+	orr	w8, w9, w8
+	orr	w0, w8, #0x40
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	bic	v5.8h, #31
-	bic	v4.8h, #31
-	bic	v3.8h, #27
-	bic	v2.8h, #27
-	orr	v3.16b, v5.16b, v3.16b
-	orr	v2.16b, v4.16b, v2.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.8h, #11
-	orr	v0.8h, #11
+	and	w8, w2, #0xffffffe0
+	and	w9, w1, #0xffffffef
+	mov	w10, #11                        // =0xb
+	orr	w8, w8, w9
+	orr	w9, w0, w10
+	orr	w0, w8, w9
 	ret
                                         // -- End function

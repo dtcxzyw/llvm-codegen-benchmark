@@ -1,12 +1,10 @@
 
-; 259 occurrences:
+; 256 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaMan.c.ll
-; abc/optimized/mapperCore.c.ll
 ; abc/optimized/mfsMan.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/sclDnsize.c.ll
@@ -158,7 +156,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
@@ -180,7 +177,6 @@
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/CCameraSceneNode.cpp.ll
 ; minetest/optimized/guiEngine.cpp.ll
-; minetest/optimized/mt_opengl_loader.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll
@@ -258,6 +254,7 @@
 ; xgboost/optimized/constraints.cc.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; yoga/optimized/PixelGrid.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, float %1) #0 {

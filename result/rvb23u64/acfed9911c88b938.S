@@ -1,17 +1,17 @@
-func00000000000001c3:                   # @func00000000000001c3
+func00000000000003c3:                   # @func00000000000003c3
 	add	a1, a1, a2
 	srli	a1, a1, 25
 	snez	a1, a1
 	addw	a0, a0, a1
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+func0000000000000361:                   # @func0000000000000361
 	or	a1, a1, a2
 	snez	a1, a1
 	addw	a0, a0, a1
 	ret
 .LCPI2_0:
 	.quad	999999999999999999              # 0xde0b6b3a763ffff
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000141:                   # @func0000000000000141
 	lui	a3, %hi(.LCPI2_0)
 	ld	a3, %lo(.LCPI2_0)(a3)
 	add	a1, a1, a2

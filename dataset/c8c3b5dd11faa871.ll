@@ -10,10 +10,9 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {

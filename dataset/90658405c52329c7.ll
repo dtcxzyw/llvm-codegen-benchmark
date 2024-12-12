@@ -39,10 +39,9 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; openmpi/optimized/osc_rdma_dynamic.ll
-; rocksdb/optimized/clock_cache.cc.ll
 ; ruby/optimized/hash.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/smt2parser.cpp.ll
@@ -51,14 +50,15 @@ define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 983040
   %3 = add nuw nsw i64 %2, 65536
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 91 occurrences:
+; 107 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
 ; coreutils-rs/optimized/2zjxva3p2avqok6n.ll
 ; coreutils-rs/optimized/3xc4e7mmntf4esc6.ll
@@ -147,6 +147,21 @@ entry:
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/22ahis4uxapmr5sot3uwhf47g.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
+; zed-rs/optimized/bx60353v5ms1nsmjqyoxenjec.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/ept7l7id9yl52ab8m2qhombt7.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -221,7 +236,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -65536
   %3 = add i64 %2, 4294901760
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

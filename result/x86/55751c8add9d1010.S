@@ -17,15 +17,15 @@ func0000000000000008:                   # @func0000000000000008
 	testq	%rsi, %rsi
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$12, %edi
 	xorl	%eax, %eax
 	cmpq	$2, %rsi
 	cmovaeq	%rdi, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	andl	$-8, %edi
+func0000000000000018:                   # @func0000000000000018
+	andl	$4088, %edi                     # imm = 0xFF8
 	cmpq	$2048, %rsi                     # imm = 0x800
 	movl	$2048, %eax                     # imm = 0x800
-	cmovlq	%rdi, %rax
+	cmovbq	%rdi, %rax
 	retq

@@ -1,7 +1,6 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
 ; freetype/optimized/sfnt.c.ll
 ; grpc/optimized/json_writer.cc.ll

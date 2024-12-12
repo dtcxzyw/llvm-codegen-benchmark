@@ -2,7 +2,7 @@
 	.long	0x42480000                      # float 50
 func0000000000000002:                   # @func0000000000000002
 	vminss	%xmm2, %xmm1, %xmm1
-	vaddss	%xmm0, %xmm1, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	vmulss	.LCPI0_0(%rip), %xmm0, %xmm0
 	retq
 .LCPI1_0:

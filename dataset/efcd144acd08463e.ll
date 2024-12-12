@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 33 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; faiss/optimized/sorting.cpp.ll
 ; git/optimized/apply.ll
@@ -13,6 +13,11 @@
 ; linux/optimized/icl_dsi.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_scale.ll
 ; minetest/optimized/CGUIListBox.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; ncnn/optimized/pooling.cpp.ll
@@ -36,13 +41,15 @@ entry:
   ret i32 %4
 }
 
-; 23 occurrences:
+; 25 occurrences:
 ; libquic/optimized/rsa_impl.c.ll
 ; linux/optimized/ext4_jbd2.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/transaction.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll

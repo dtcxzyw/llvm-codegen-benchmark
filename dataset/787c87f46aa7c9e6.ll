@@ -167,17 +167,16 @@ entry:
   %3 = mul i64 %2, 1000
   %4 = add nsw i64 %1, -1000
   %5 = add i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/vm_version_x86.ll
-; php/optimized/dow.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -256,7 +255,7 @@ entry:
   %3 = mul nsw i64 %2, -19
   %4 = add i64 %1, 4503599627370458
   %5 = add i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -271,7 +270,7 @@ entry:
   %3 = mul nuw nsw i64 %2, 12
   %4 = add i64 %1, 4
   %5 = add i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -283,7 +282,7 @@ entry:
   %3 = mul nsw i64 %2, 365
   %4 = add i64 %1, 1721423
   %5 = add i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -295,7 +294,7 @@ entry:
   %3 = add nsw i64 %2, 131072
   %4 = mul nuw nsw i64 %1, 10438
   %5 = add nsw i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

@@ -5,7 +5,7 @@
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 1000
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
@@ -76,7 +76,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 2654435761
   %3 = lshr i64 %2, 32
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -189,16 +189,12 @@ define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 127
   %3 = lshr i64 %2, 7
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
-; 5 occurrences:
+; 1 occurrences:
 ; assimp/optimized/Base64.cpp.ll
-; slurm/optimized/node_features_knl_generic.ll
-; slurm/optimized/run_command.ll
-; slurm/optimized/slurm_persist_conn.ll
-; slurm/optimized/slurm_protocol_socket.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
@@ -215,18 +211,17 @@ define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 12
   %3 = lshr exact i64 %2, 2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 2 occurrences:
-; git/optimized/apply.ll
+; 1 occurrences:
 ; git/optimized/gc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 257698037760
-  %3 = lshr exact i64 %2, 32
+  %2 = mul i64 %1, 40
+  %3 = lshr exact i64 %2, 1
   %4 = add i64 %3, %0
   ret i64 %4
 }
@@ -258,7 +253,7 @@ define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 1220703125
   %3 = lshr i64 %2, 32
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -268,7 +263,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 5000
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   ret i64 %3
 }
 

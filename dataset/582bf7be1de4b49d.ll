@@ -7,12 +7,29 @@
 ; opencv/optimized/nms.cpp.ll
 ; verilator/optimized/V3EmitCSyms.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 16
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %1, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 16
   %6 = icmp eq ptr %4, %5
+  ret i1 %6
+}
+
+; 6 occurrences:
+; boost/optimized/decode.ll
+; cmake/optimized/zstd_lazy.c.ll
+; hyperscan/optimized/gough.c.ll
+; hyperscan/optimized/mcclellan.c.ll
+; hyperscan/optimized/mcsheng.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000164(ptr %0, ptr %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 3, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %1, i64 -2
+  %6 = icmp ult ptr %4, %5
   ret i1 %6
 }
 
@@ -23,11 +40,11 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; z3/optimized/dyn_ack.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func00000000000001ec(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 8
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %1, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 8
   %6 = icmp ne ptr %4, %5
   ret i1 %6
 }
@@ -41,22 +58,6 @@ entry:
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %1, i64 8
   %6 = icmp eq ptr %4, %5
-  ret i1 %6
-}
-
-; 5 occurrences:
-; cmake/optimized/zstd_lazy.c.ll
-; hyperscan/optimized/gough.c.ll
-; hyperscan/optimized/mcclellan.c.ll
-; hyperscan/optimized/mcsheng.c.ll
-; zstd/optimized/zstd_lazy.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i64 4, i64 0
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %1, i64 -1
-  %6 = icmp ult ptr %4, %5
   ret i1 %6
 }
 
@@ -75,10 +76,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/oracle_compat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000065(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4, i64 1
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %1, i64 -1
   %6 = icmp ule ptr %4, %5
   ret i1 %6
@@ -87,10 +88,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/oracle_compat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000068(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4, i64 1
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %1, i64 -1
   %6 = icmp ugt ptr %4, %5
   ret i1 %6

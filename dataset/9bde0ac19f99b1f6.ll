@@ -3,7 +3,7 @@
 ; linux/optimized/xfrm_user.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %0, 6
   %3 = icmp eq i32 %1, 0
@@ -11,20 +11,11 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
-; icu/optimized/loclikelysubtags.ll
+; 2 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
-; meshlab/optimized/VisibilityCheck.cpp.ll
-; meshlab/optimized/VisibleSet.cpp.ll
-; meshlab/optimized/alignset.cpp.ll
-; meshlab/optimized/decorate_raster_proj.cpp.ll
-; meshlab/optimized/filter_color_projection.cpp.ll
-; meshlab/optimized/filter_img_patch_param.cpp.ll
-; meshlab/optimized/ml_default_decorators.cpp.ll
-; meshlab/optimized/parameters.cpp.ll
 ; ruby/optimized/pack.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 9
   %3 = icmp ult i32 %1, -26
@@ -63,16 +54,15 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; jq/optimized/regcomp.ll
 ; linux/optimized/linkstate.ll
-; linux/optimized/pse-pd.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/rx.ll
 ; oniguruma/optimized/regcomp.ll
@@ -87,7 +77,7 @@ entry:
 ; wireshark/optimized/packet-ucp.c.ll
 ; wireshark/optimized/pcapio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 63
   %3 = icmp eq i32 %1, 0
@@ -125,7 +115,7 @@ entry:
 ; zxing/optimized/ODUPCEWriter.cpp.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 2
   %3 = icmp eq i32 %1, 0
@@ -133,7 +123,7 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -142,11 +132,14 @@ entry:
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 246
-  %3 = icmp ult i32 %1, 640
+  %3 = icmp samesign ult i32 %1, 640
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -154,7 +147,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-pvfs2.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000006c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 8
   %.not = icmp eq i32 %1, 0
@@ -162,10 +155,9 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/intel_vdsc.ll
-; linux/optimized/tsinfo.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
@@ -178,10 +170,29 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dp_aux.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 3584
-  %3 = icmp ugt i32 %1, 2
+  %3 = icmp samesign ugt i32 %1, 2
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
+; 9 occurrences:
+; icu/optimized/loclikelysubtags.ll
+; meshlab/optimized/VisibilityCheck.cpp.ll
+; meshlab/optimized/VisibleSet.cpp.ll
+; meshlab/optimized/alignset.cpp.ll
+; meshlab/optimized/decorate_raster_proj.cpp.ll
+; meshlab/optimized/filter_color_projection.cpp.ll
+; meshlab/optimized/filter_img_patch_param.cpp.ll
+; meshlab/optimized/ml_default_decorators.cpp.ll
+; meshlab/optimized/parameters.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %0, -729
+  %3 = icmp samesign ult i32 %1, 14348907
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -189,11 +200,11 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/sfvscanf.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

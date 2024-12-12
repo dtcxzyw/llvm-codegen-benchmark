@@ -16,7 +16,7 @@ entry:
   %3 = sub i32 0, %1
   %4 = icmp eq i32 %2, 0
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -29,7 +29,7 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = icmp eq i32 %2, 0
@@ -42,19 +42,20 @@ entry:
 ; cpython/optimized/codeobject.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = icmp eq i32 %2, 0
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000069(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = icmp sgt i32 %2, 0
@@ -66,25 +67,13 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/xtc2.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000b1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %.not = icmp eq i32 %2, 0
   %4 = select i1 %.not, i32 %3, i32 %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
-}
-
-; 1 occurrences:
-; openusd/optimized/mvref_common.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 0, %1
-  %4 = icmp ult i32 %2, 2
-  %5 = select i1 %4, i32 %1, i32 %3
-  %6 = add i32 %5, %0
-  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -95,7 +84,7 @@ entry:
   %3 = sub i32 0, %1
   %4 = icmp sgt i32 %2, 35
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

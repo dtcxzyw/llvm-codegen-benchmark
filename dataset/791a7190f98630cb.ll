@@ -14,12 +14,13 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; hwloc/optimized/hwloc-annotate.ll
 ; hwloc/optimized/hwloc-bind.ll
 ; hwloc/optimized/hwloc-calc.ll
 ; hwloc/optimized/hwloc-info.ll
+; icu/optimized/number_decimalquantity.ll
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {

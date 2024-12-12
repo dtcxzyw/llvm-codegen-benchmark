@@ -1,25 +1,26 @@
 
-; 25 occurrences:
+; 26 occurrences:
+; boost/optimized/sort_by_side.ll
 ; casadi/optimized/cvodes_band.c.ll
 ; casadi/optimized/cvodes_dense.c.ll
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
 ; clap-rs/optimized/ms9r2ilwmkwzn0d.ll
 ; csmith/optimized/Lhs.cpp.ll
 ; git/optimized/rev-parse.ll
+; graphviz/optimized/emit.c.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; icu/optimized/unames.ll
+; libwebp/optimized/demux.c.ll
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/DeclPrinter.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dtrevc.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; openjdk/optimized/matcher.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; postgres/optimized/interval.ll
@@ -30,7 +31,7 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 772
   %4 = select i1 %3, i1 true, i1 %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -43,7 +44,7 @@ define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -2
   %4 = select i1 %3, i1 true, i1 %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -75,7 +76,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i1 true, i1 %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

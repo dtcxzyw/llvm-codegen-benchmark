@@ -16,12 +16,3 @@ func000000000000000b:                   # @func000000000000000b
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
-.LCPI2_0:
-	.long	1792835                         # 0x1b5b43
-func0000000000000008:                   # @func0000000000000008
-	vpslld	$3, %ymm0, %ymm0
-	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [1792835,1792835,1792835,1792835,1792835,1792835,1792835,1792835]
-	vpsrlvd	%ymm0, %ymm1, %ymm0
-	vpmovdb	%ymm0, %xmm0
-	vzeroupper
-	retq

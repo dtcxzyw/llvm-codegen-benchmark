@@ -1,11 +1,11 @@
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	incq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
 	movl	%edi, %ecx
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	incq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx

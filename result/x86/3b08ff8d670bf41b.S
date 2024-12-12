@@ -1,12 +1,12 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	subl	%esi, %edx
 	incl	%edx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	subl	%esi, %edx
 	incl	%edx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq

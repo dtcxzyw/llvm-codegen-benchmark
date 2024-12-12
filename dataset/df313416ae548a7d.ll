@@ -5,7 +5,7 @@
 define ptr @func0000000000000014(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = sub nsw i64 0, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -19,7 +19,7 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = sub nsw i64 0, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6

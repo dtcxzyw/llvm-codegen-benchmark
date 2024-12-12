@@ -43,8 +43,8 @@
 define i1 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -62,8 +62,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -73,8 +73,8 @@ entry:
 define i1 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp sge i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp sle i64 %0, %4
   ret i1 %5
 }
 
@@ -112,8 +112,8 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -125,13 +125,12 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp slt i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
-; 45 occurrences:
-; arrow/optimized/concatenate.cc.ll
+; 44 occurrences:
 ; ceres/optimized/normal_prior.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -177,15 +176,15 @@ entry:
 ; postgres/optimized/print.ll
 ; tev/optimized/Image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -205,17 +204,16 @@ entry:
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; openexr/optimized/ImfHuf.cpp.ll
-; pbrt-v4/optimized/string.cpp.ll
 ; postgres/optimized/print.ll
 ; tev/optimized/Ipc.cpp.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -227,11 +225,11 @@ entry:
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -239,17 +237,16 @@ entry:
 ; abc/optimized/Glucose.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = icmp sle i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = icmp sge i64 %0, %4
   ret i1 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
-; abc/optimized/giaPat2.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/manifold.cc.ll
 ; ceres/optimized/normal_prior.cc.ll
@@ -266,24 +263,11 @@ entry:
 ; pybind11/optimized/test_numpy_array.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; abc/optimized/giaPat2.c.ll
-; gromacs/optimized/gmx_energy.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = icmp slt i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -292,11 +276,23 @@ entry:
 ; oiio/optimized/imageio.cpp.ll
 ; oiio/optimized/imageoutput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = icmp ne i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = icmp ne i64 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; gromacs/optimized/gmx_energy.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = mul nsw i64 %1, %3
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
@@ -306,8 +302,8 @@ entry:
 define i1 @func0000000000000009(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp ule i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp uge i64 %0, %4
   ret i1 %5
 }
 

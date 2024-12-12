@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 16 occurrences:
 ; abc/optimized/cnfUtil.c.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
@@ -9,9 +9,7 @@
 ; hdf5/optimized/H5Znbit.c.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; lief/optimized/ecp.c.ll
-; linux/optimized/rsmisc.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
 ; openusd/optimized/stream.c.ll
@@ -23,11 +21,11 @@ define i8 @func0000000000000000(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -43,6 +41,7 @@ entry:
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
 ; php/optimized/pack.ll
 ; postgres/optimized/visibilitymap.ll
@@ -52,7 +51,7 @@ define i8 @func0000000000000018(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -76,14 +75,13 @@ define i8 @func000000000000001c(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = trunc nuw i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cpython/optimized/instrumentation.ll
 ; libquic/optimized/deflate.c.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
 ; llvm/optimized/X86InstrMappingEmitter.cpp.ll
@@ -94,7 +92,7 @@ define i8 @func0000000000000010(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

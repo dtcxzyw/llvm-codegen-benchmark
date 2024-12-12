@@ -1,28 +1,20 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	x8, #25973                      // =0x6575
-	shll2	v3.2d, v2.4s, #32
-	shll	v2.2d, v2.2s, #32
-	movk	x8, #28787, lsl #16
-	movk	x8, #28005, lsl #32
-	movk	x8, #29551, lsl #48
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
-	dup	v2.2d, x8
-	eor	v1.16b, v1.16b, v2.16b
-	eor	v0.16b, v0.16b, v2.16b
+	mov	x9, #25973                      // =0x6575
+                                        // kill: def $w1 killed $w1 def $x1
+	orr	x8, x0, x1, lsl #32
+	movk	x9, #28787, lsl #16
+	movk	x9, #28005, lsl #32
+	movk	x9, #29551, lsl #48
+	eor	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #16
-	ushll	v2.2d, v2.2s, #16
-	mov	w8, #21248                      // =0x5300
-	movk	w8, #4096, lsl #16
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
-	dup	v2.2d, x8
-	eor	v1.16b, v1.16b, v2.16b
-	eor	v0.16b, v0.16b, v2.16b
+	mov	w8, w1
+	mov	w9, #21248                      // =0x5300
+	orr	x8, x0, x8, lsl #16
+	movk	w9, #4096, lsl #16
+	eor	x0, x8, x9
 	ret
                                         // -- End function

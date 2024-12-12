@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 24 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/spin.c.ll
 ; cpython/optimized/_randommodule.ll
@@ -17,13 +17,10 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; php/optimized/engine_mt19937.ll
 ; pocketpy/optimized/random.cpp.ll
 ; ruby/optimized/random.ll
@@ -45,7 +42,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7936
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = lshr exact i32 %3, 8
   ret i32 %4
 }

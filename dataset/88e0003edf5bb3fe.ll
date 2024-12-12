@@ -1,5 +1,5 @@
 
-; 87 occurrences:
+; 85 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -25,8 +25,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -88,17 +86,17 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000384(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000704(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
-  %6 = add i64 %5, %1
+  %6 = add i64 %1, %5
   %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 
-; 87 occurrences:
+; 85 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -124,8 +122,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -187,12 +183,12 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000389(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000709(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
-  %6 = add i64 %5, %1
+  %6 = add i64 %1, %5
   %7 = icmp uge i64 %6, %0
   ret i1 %7
 }
@@ -201,12 +197,12 @@ entry:
 ; php/optimized/dtoa.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 -54, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
-  %6 = add i64 %5, %1
+  %6 = add i64 %1, %5
   %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
@@ -215,12 +211,12 @@ entry:
 ; php/optimized/dtoa.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000109(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 -54, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
-  %6 = add i64 %5, %1
+  %6 = add i64 %1, %5
   %7 = icmp uge i64 %6, %0
   ret i1 %7
 }

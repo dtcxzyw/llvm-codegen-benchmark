@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; bullet3/optimized/btRigidBody.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_colorbalance.c.ll
@@ -10,6 +10,7 @@
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_monochrome.c.ll
 ; darktable/optimized/introspection_relight.c.ll
+; darktable/optimized/introspection_tonemap.cc.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; imgui/optimized/imgui_draw.cpp.ll

@@ -6,9 +6,10 @@
 ; linux/optimized/alternative.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/dump_pagetables.ll
+; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/init_64.ll
-; linux/optimized/machine_kexec_64.ll
+; linux/optimized/mprotect.ll
 ; linux/optimized/pti.ll
 ; linux/optimized/sparse-vmemmap.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -16,13 +17,12 @@
 ; openjdk/optimized/regmask.ll
 ; qemu/optimized/hw_intc_riscv_imsic.c.ll
 ; spike/optimized/csrs.ll
-; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = and i64 %3, %1
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

@@ -13,10 +13,21 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/migration_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 20
   %4 = icmp ult i64 %3, %1
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; php/optimized/shared_alloc_shm.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 1
+  %4 = icmp ule i64 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -87,7 +98,7 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = icmp slt i64 %3, %1
@@ -98,10 +109,21 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/extract.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 10
   %4 = icmp sgt i64 %3, %1
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/LoopVectorize.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 3
+  %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -117,15 +139,14 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; nix/optimized/build-remote.ll
 ; nix/optimized/build.ll
 ; nix/optimized/gc.ll
 ; nix/optimized/graphml.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/why-depends.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = icmp ne i64 %3, %1

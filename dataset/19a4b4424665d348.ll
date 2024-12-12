@@ -15,16 +15,12 @@ entry:
   ret i32 %7
 }
 
-; 15 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
+; 11 occurrences:
 ; icu/optimized/genrb.ll
 ; lief/optimized/TrieNode.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/GCOVProfiling.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
+; lvgl/optimized/lv_textarea.ll
 ; openjdk/optimized/transport.ll
 ; proxygen/optimized/HPACKCodec.cpp.ll
 ; wireshark/optimized/catapult_dct2000.c.ll

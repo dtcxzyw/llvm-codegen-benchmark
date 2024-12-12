@@ -1,11 +1,11 @@
 func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 1
 	beqz	a1, .LBB0_2
-	li	a1, 39
+	li	a1, 8
 	or	a0, a0, a1
 	ret
 .LBB0_2:
-	li	a1, 41
+	li	a1, 16
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002

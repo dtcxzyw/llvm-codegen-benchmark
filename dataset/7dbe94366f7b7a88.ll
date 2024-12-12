@@ -1,12 +1,11 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; bullet3/optimized/btMiniSDF.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; linux/optimized/cpufreq_governor.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/smpboot.ll
@@ -53,10 +52,11 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cmake/optimized/frm_driver.c.ll
 ; libjpeg-turbo/optimized/jdapistd.c.ll
 ; linux/optimized/i9xx_wm.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:

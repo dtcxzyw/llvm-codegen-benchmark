@@ -1,14 +1,22 @@
-func000000000000004c:                   # @func000000000000004c
-	xorl	%ecx, %ecx
-	cmpl	$60000, %esi                    # imm = 0xEA60
-	setb	%cl
-	shll	$5, %ecx
-	addq	$1264, %rcx                     # imm = 0x4F0
+func000000000000014c:                   # @func000000000000014c
+	testl	%esi, %esi
+	setns	%al
 	testb	%dil, %dil
-	movl	$1264, %eax                     # imm = 0x4F0
-	cmovneq	%rcx, %rax
+	setne	%cl
+	andb	%al, %cl
+	movzbl	%cl, %eax
+	shll	$3, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000158:                   # @func0000000000000158
+	xorl	%eax, %eax
+	cmpb	$49, %sil
+	setge	%al
+	cmpl	$10, %edi
+	leaq	1(%rax,%rax), %rcx
+	movl	$1, %eax
+	cmovaeq	%rcx, %rax
+	retq
+func0000000000000021:                   # @func0000000000000021
 	cmpb	$32, %sil
 	movl	$18, %eax
 	movl	$8, %ecx
@@ -16,7 +24,7 @@ func0000000000000011:                   # @func0000000000000011
 	cmpl	$2, %edi
 	cmovneq	%rcx, %rax
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	sete	%al

@@ -28,11 +28,6 @@ func0000000000000009:                   # @func0000000000000009
 	shrq	$32, %rax
 	addl	%edi, %eax
 	retq
-func000000000000000d:                   # @func000000000000000d
-	leaq	(%rsi,%rdx), %rax
-	shrq	$56, %rax
-	addl	%edi, %eax
-	retq
 func000000000000006f:                   # @func000000000000006f
 	leaq	(%rsi,%rdx), %rax
 	shrq	$32, %rax

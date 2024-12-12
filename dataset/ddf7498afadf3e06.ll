@@ -3,7 +3,7 @@
 ; cvc5/optimized/fc_simplex.cpp.ll
 ; cvc5/optimized/soi_simplex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 5, i32 6
   %4 = icmp eq i32 %1, 4

@@ -15,7 +15,7 @@ func0000000000000031:                   # @func0000000000000031
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a2, a2

@@ -64,8 +64,7 @@ entry:
   ret i8 %3
 }
 
-; 2 occurrences:
-; linux/optimized/dvo_ch7017.ll
+; 1 occurrences:
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i16 %0, i16 %1) #0 {

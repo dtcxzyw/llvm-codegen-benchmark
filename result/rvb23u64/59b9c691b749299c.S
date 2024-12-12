@@ -44,6 +44,11 @@ func000000000000003a:                   # @func000000000000003a
 	mul	a0, a0, a1
 	zext.w	a0, a0
 	ret
+func000000000000003b:                   # @func000000000000003b
+	addi	a1, a1, -2
+	addi	a0, a0, 1
+	mulw	a0, a0, a1
+	ret
 func0000000000000023:                   # @func0000000000000023
 	addi	a1, a1, 1
 	addi	a0, a0, 1

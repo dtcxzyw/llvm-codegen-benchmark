@@ -34,7 +34,23 @@ func000000000000000b:                   # @func000000000000000b
 	cmpl	%esi, %edi
 	setge	%al
 	retq
+func0000000000000019:                   # @func0000000000000019
+	cmpl	%esi, %edi
+	setae	%al
+	retq
 func0000000000000009:                   # @func0000000000000009
 	cmpl	%esi, %edi
 	setae	%al
+	retq
+func0000000000000015:                   # @func0000000000000015
+	cmpl	%esi, %edi
+	setbe	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	%esi, %edi
+	seta	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	%esi, %edi
+	setb	%al
 	retq

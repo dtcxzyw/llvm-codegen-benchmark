@@ -1,6 +1,7 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
+; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_defringe.c.ll
 ; gromacs/optimized/anadih.cpp.ll

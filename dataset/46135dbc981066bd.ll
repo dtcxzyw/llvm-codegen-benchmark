@@ -1,8 +1,13 @@
 
-; 321 occurrences:
+; 326 occurrences:
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; assimp/optimized/IRRShared.cpp.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/process.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
@@ -19,8 +24,11 @@
 ; entt/optimized/meta_type.cpp.ll
 ; entt/optimized/storage_no_instance.cpp.ll
 ; faiss/optimized/IndexScalarQuantizer.cpp.ll
+; freetype/optimized/cff.c.ll
 ; freetype/optimized/pshinter.c.ll
 ; freetype/optimized/raster.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; git/optimized/rm.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
@@ -46,12 +54,10 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_display_irq.ll
-; linux/optimized/mii.ll
 ; linux/optimized/nfs4xdr.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/public_key.ll
 ; linux/optimized/serial_core.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
@@ -205,7 +211,6 @@
 ; llvm/optimized/Path.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -287,14 +292,12 @@
 ; openjdk/optimized/matcher.ll
 ; openjdk/optimized/stackwalk.ll
 ; openjdk/optimized/whitebox.ll
-; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/nbtinsert.ll
 ; postgres/optimized/pl_exec.ll
-; postgres/optimized/trigger.ll
 ; postgres/optimized/vacuumlazy.ll
 ; proj/optimized/defmodel.cpp.ll
 ; protobuf/optimized/command_line_interface.cc.ll
@@ -314,13 +317,15 @@
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; tev/optimized/Common.cpp.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; turborepo-rs/optimized/667fw7b0fgqo2a1672jmft41u.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wasmtime-rs/optimized/jqxcpn1is9b9z0t.ll
 ; wireshark/optimized/packet-atalk.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i32 %0) #0 {
 entry:
@@ -330,7 +335,9 @@ entry:
   ret i8 %3
 }
 
-; 109 occurrences:
+; 112 occurrences:
+; boost/optimized/bind_stdin.ll
+; boost/optimized/pipe.ll
 ; clamav/optimized/arcread.cpp.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -356,6 +363,7 @@ entry:
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; gromacs/optimized/tpxio.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; hermes/optimized/Path.cpp.ll
 ; hyperscan/optimized/compiler.cpp.ll
 ; icu/optimized/rematch.ll
 ; icu/optimized/ucnvmbcs.ll
@@ -379,6 +387,7 @@ entry:
 ; llvm/optimized/DiagnosticIDs.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
+; llvm/optimized/Path.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
@@ -419,7 +428,6 @@ entry:
 ; rust-analyzer-rs/optimized/3lcvg5e4mhakwunj.ll
 ; rust-analyzer-rs/optimized/4howns4eudvt5lxk.ll
 ; rust-analyzer-rs/optimized/lkt0vc36jo6l130.ll
-; slurm/optimized/conmgr.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
@@ -466,10 +474,10 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000008(i32 %0) #0 {
+define i8 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 266338304
-  %2 = icmp ult i32 %1, 18874368
+  %2 = icmp samesign ult i32 %1, 18874368
   %3 = zext i1 %2 to i8
   ret i8 %3
 }
@@ -478,10 +486,10 @@ entry:
 ; linux/optimized/intel-gtt.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000010(i32 %0) #0 {
+define i8 @func0000000000000030(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 255
-  %2 = icmp ugt i32 %1, 2
+  %2 = icmp samesign ugt i32 %1, 2
   %3 = zext i1 %2 to i8
   ret i8 %3
 }

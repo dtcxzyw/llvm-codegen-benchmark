@@ -5,9 +5,3 @@ func0000000000000010:                   # @func0000000000000010
 	cmovaeq	%rsi, %rax
 	subq	%rdi, %rax
 	retq
-func0000000000000059:                   # @func0000000000000059
-	leaq	1000000(%rsi), %rax
-	cmpq	%rdi, %rsi
-	cmovgeq	%rsi, %rax
-	subq	%rdi, %rax
-	retq

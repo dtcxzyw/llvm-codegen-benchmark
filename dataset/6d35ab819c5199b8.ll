@@ -10,7 +10,7 @@
 ; wireshark/optimized/packet-cipsafety.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -22,7 +22,7 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -35,7 +35,7 @@ entry:
 ; flatbuffers/optimized/idl_gen_kotlin.cpp.ll
 ; flatbuffers/optimized/idl_gen_kotlin_kmp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp ult i32 %0, 12
@@ -48,7 +48,7 @@ entry:
 ; llvm/optimized/SourceManager.cpp.ll
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i64 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ne i32 %0, 0
@@ -62,7 +62,7 @@ entry:
 ; libwebp/optimized/webpdec.c.ll
 ; linux/optimized/shm.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i64 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ne i32 %0, 0

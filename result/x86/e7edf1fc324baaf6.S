@@ -22,7 +22,7 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	vmovsd	.LCPI2_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0]
 	vdivsd	%xmm1, %xmm2, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setb	%al
@@ -32,7 +32,7 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000005:                   # @func0000000000000005
 	vmovsd	.LCPI3_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0]
 	vdivsd	%xmm1, %xmm2, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm2
 	setb	%al
 	retq
@@ -41,7 +41,7 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000001:                   # @func0000000000000001
 	vmovsd	.LCPI4_0(%rip), %xmm2           # xmm2 = [2.0E+0,0.0E+0]
 	vdivsd	%xmm1, %xmm2, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm0
 	setp	%al
 	retq
@@ -81,7 +81,7 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000e:                   # @func000000000000000e
 	vmovsd	.LCPI8_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0]
 	vdivsd	%xmm1, %xmm2, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm0
 	setnp	%al
 	retq

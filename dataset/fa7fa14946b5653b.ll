@@ -230,6 +230,18 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; php/optimized/unixtime2tm.ll
+; Function Attrs: nounwind
+define i32 @func000000000000007c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = mul nuw nsw i64 %2, 4294963696
+  %4 = add nuw nsw i64 %3, %0
+  %5 = trunc i64 %4 to i32
+  ret i32 %5
+}
+
 ; 3 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
@@ -239,7 +251,7 @@ define i32 @func0000000000000030(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 1000000
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

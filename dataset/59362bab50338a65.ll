@@ -214,7 +214,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
@@ -230,7 +230,7 @@ entry:
 ; curl/optimized/libcurl_la-ftp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i8 %1) #0 {
+define i1 @func00000000000002aa(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -528
@@ -245,7 +245,7 @@ entry:
 ; curl/optimized/libcurl_la-ftp.ll
 ; wireshark/optimized/packet-ucp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i8 %1) #0 {
+define i1 @func00000000000002a6(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -528
@@ -258,7 +258,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/object-name.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000481(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
@@ -270,7 +270,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/object-name.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000246(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000486(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
@@ -284,7 +284,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000346(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000686(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
@@ -297,7 +297,7 @@ entry:
 ; 1 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000028a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
@@ -310,7 +310,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/PPCLinux.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i8 %1) #0 {
+define i1 @func00000000000002a4(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -560
@@ -324,7 +324,7 @@ entry:
 ; cpython/optimized/xmltok.ll
 ; postgres/optimized/localtime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
@@ -337,7 +337,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/localtime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48

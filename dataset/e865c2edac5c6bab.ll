@@ -1,6 +1,5 @@
 
-; 13 occurrences:
-; darktable/optimized/introspection_cacorrect.c.ll
+; 12 occurrences:
 ; gromacs/optimized/calculator.cpp.ll
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; gromacs/optimized/long_range_correction.cpp.ll
@@ -17,7 +16,7 @@
 define double @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, %0
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fpext float %3 to double
   ret double %4
 }

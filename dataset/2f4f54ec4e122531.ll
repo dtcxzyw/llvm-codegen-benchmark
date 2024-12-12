@@ -11,7 +11,8 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/src.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll

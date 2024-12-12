@@ -60,14 +60,13 @@
 define i1 @func000000000000000c(i1 %0, ptr %1) #0 {
 entry:
   %.not = icmp eq ptr %1, null
-  %2 = and i1 %.not, %0
+  %2 = and i1 %0, %.not
   ret i1 %2
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
 ; llvm/optimized/Clang.cpp.ll
-; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -76,7 +75,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

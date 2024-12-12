@@ -1,19 +1,20 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000021:                   # @func0000000000000021
+	andl	$65280, %esi                    # imm = 0xFF00
+	cmpl	$256, %esi                      # imm = 0x100
+	sete	%cl
+	andl	$-1024, %edi                    # imm = 0xFC00
+	cmpl	$1024, %edi                     # imm = 0x400
+	sete	%al
+	andb	%cl, %al
+	retq
+func0000000000000181:                   # @func0000000000000181
 	testb	$6, %sil
 	setne	%cl
 	testb	$10, %dil
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	andl	$52992, %esi                    # imm = 0xCF00
-	cmpl	$16640, %esi                    # imm = 0x4100
-	sete	%cl
-	cmpb	$65, %dil
-	sete	%al
-	andb	%cl, %al
-	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testb	$48, %sil
 	setne	%cl
 	andl	$15, %edi
@@ -21,7 +22,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testb	%sil, %sil
 	setns	%al
 	shrb	%dil

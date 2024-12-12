@@ -4,7 +4,7 @@
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000003e1(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64

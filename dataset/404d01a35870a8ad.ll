@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 54 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; entt/optimized/adjacency_matrix.cpp.ll
 ; entt/optimized/benchmark.cpp.ll
@@ -48,7 +48,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll

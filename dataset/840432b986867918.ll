@@ -1,5 +1,5 @@
 
-; 193 occurrences:
+; 190 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
@@ -117,13 +117,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -197,7 +194,7 @@
 define i32 @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6

@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; openmpi/optimized/coll_base_alltoall.ll
 ; openmpi/optimized/coll_base_alltoallv.ll
 ; openmpi/optimized/coll_basic_alltoallw.ll
@@ -33,7 +33,6 @@
 ; openmpi/optimized/osc_rdma_component.ll
 ; openmpi/optimized/osc_rdma_peer.ll
 ; openmpi/optimized/pml_cm.ll
-; openmpi/optimized/pml_monitoring_isend.ll
 ; openmpi/optimized/pml_monitoring_start.ll
 ; openmpi/optimized/pml_ob1_comm.ll
 ; openmpi/optimized/pml_ob1_isend.ll
@@ -91,7 +90,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 1
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

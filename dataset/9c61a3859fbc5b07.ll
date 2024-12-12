@@ -3,7 +3,7 @@
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 6
@@ -12,11 +12,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/X86Disassembler.cpp.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 8
   %3 = icmp eq i8 %2, 0

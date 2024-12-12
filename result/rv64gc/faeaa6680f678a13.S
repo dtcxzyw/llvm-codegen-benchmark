@@ -1,10 +1,10 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000000de:                   # @func00000000000000de
 	sext.w	a2, a2
 	add	a0, a0, a2
 	not	a1, a1
 	add	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	addi	a2, a2, -1
 	slli	a2, a2, 32
 	srli	a2, a2, 32

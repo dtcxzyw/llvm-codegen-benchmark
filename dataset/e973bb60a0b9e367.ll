@@ -1,5 +1,5 @@
 
-; 148 occurrences:
+; 152 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -100,6 +100,9 @@
 ; linux/optimized/bus.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/intel_cdclk.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/SHA1.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -142,6 +145,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
+; verilator/optimized/V3String.cpp.ll
 ; wireshark/optimized/packet-csn1.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; xgboost/optimized/updater_approx.cc.ll

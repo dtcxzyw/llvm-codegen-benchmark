@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; grpc/optimized/parsing.cc.ll
 ; linux/optimized/manager.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -10,7 +10,6 @@
 ; mold/optimized/output-chunks.cc.RV32BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
-; protobuf/optimized/json.cc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i8 %1) #0 {
 entry:
@@ -30,7 +29,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 44
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = or i64 %5, 35184372088832
   ret i64 %6
 }

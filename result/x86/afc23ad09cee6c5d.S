@@ -7,10 +7,6 @@ func000000000000001d:                   # @func000000000000001d
 	imull	$1000000, %esi, %eax            # imm = 0xF4240
 	addq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	leal	(%rsi,%rsi,2), %eax
-	addq	%rdi, %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	shll	$5, %esi
 	leal	(%rsi,%rsi,2), %eax
@@ -21,6 +17,11 @@ func0000000000000008:                   # @func0000000000000008
 	addq	%rdi, %rax
 	retq
 func000000000000000b:                   # @func000000000000000b
+	leal	(%rsi,%rsi,2), %eax
+	addq	%rdi, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	shll	$4, %esi
 	leal	(%rsi,%rsi,2), %eax
 	addq	%rdi, %rax
 	retq

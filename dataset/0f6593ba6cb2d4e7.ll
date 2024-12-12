@@ -63,7 +63,7 @@ entry:
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; rocksdb/optimized/db_impl_write.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000098(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne ptr %0, null
@@ -103,7 +103,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; clamav/optimized/htmlnorm.c.ll
@@ -117,8 +117,9 @@ entry:
 ; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000082(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq ptr %0, null

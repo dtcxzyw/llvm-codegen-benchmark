@@ -1,6 +1,7 @@
 
-; 142 occurrences:
+; 143 occurrences:
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
+; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cpython/optimized/_randommodule.ll
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll

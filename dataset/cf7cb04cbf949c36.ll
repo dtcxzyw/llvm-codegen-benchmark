@@ -21,7 +21,7 @@
 ; mold/optimized/linker-script.cc.X86_64.cc.ll
 ; wasmedge/optimized/argument_parser.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, -1
   %3 = icmp ugt i64 %2, %1

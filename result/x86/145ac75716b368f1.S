@@ -1,11 +1,15 @@
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	movzbl	%sil, %eax
 	leaq	9(%rdi,%rax), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	movzbl	%sil, %eax
 	shll	$5, %eax
 	leaq	168(%rdi,%rax), %rax
+	retq
+func000000000000001f:                   # @func000000000000001f
+	movzbl	%sil, %eax
+	leaq	31(%rdi,%rax), %rax
 	retq
 func0000000000000030:                   # @func0000000000000030
 	movzbl	%sil, %eax

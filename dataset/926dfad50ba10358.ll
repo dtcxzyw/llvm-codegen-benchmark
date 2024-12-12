@@ -1,12 +1,10 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; libquic/optimized/e_rc2.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-enrp.c.ll
 ; wireshark/optimized/packet-m3ua.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-sctp.c.ll

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	18                              # 0x12
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpand	%xmm1, %xmm0, %xmm0
@@ -11,7 +11,7 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpand	%xmm1, %xmm0, %xmm0
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0

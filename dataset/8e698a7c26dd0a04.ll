@@ -11,7 +11,6 @@
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -34,6 +33,7 @@
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; llvm/optimized/X86TileConfig.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i16 %2) #0 {
 entry:

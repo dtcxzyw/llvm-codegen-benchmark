@@ -11,25 +11,8 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
-; libquic/optimized/error_correction.c.ll
-; libwebp/optimized/upsampling.c.ll
-; libwebp/optimized/upsampling_sse2.c.ll
-; libwebp/optimized/upsampling_sse41.c.ll
-; libwebp/optimized/yuv.c.ll
-; libwebp/optimized/yuv_sse2.c.ll
-; libwebp/optimized/yuv_sse41.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000006d(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %1, 2730
-  %3 = lshr i32 %2, 25
-  %4 = add nuw nsw i32 %3, %0
-  %5 = add nsw i32 %4, -1
-  ret i32 %5
-}
-
-; 71 occurrences:
+; 72 occurrences:
+; boost/optimized/src.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -104,9 +87,27 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul i32 %1, 52429
-  %3 = lshr i32 %2, 18
+  %2 = mul i32 %1, -732923
+  %3 = lshr i32 %2, 20
   %4 = add nsw i32 %3, %0
+  %5 = add nsw i32 %4, 56
+  ret i32 %5
+}
+
+; 7 occurrences:
+; libquic/optimized/error_correction.c.ll
+; libwebp/optimized/upsampling.c.ll
+; libwebp/optimized/upsampling_sse2.c.ll
+; libwebp/optimized/upsampling_sse41.c.ll
+; libwebp/optimized/yuv.c.ll
+; libwebp/optimized/yuv_sse2.c.ll
+; libwebp/optimized/yuv_sse41.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000006d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 2730
+  %3 = lshr i32 %2, 25
+  %4 = add nuw nsw i32 %3, %0
   %5 = add nsw i32 %4, -1
   ret i32 %5
 }

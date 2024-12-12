@@ -12,7 +12,7 @@ entry:
   ret i64 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; cvc5/optimized/theory_bv.cpp.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
@@ -25,6 +25,7 @@ entry:
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64TargetStreamer.cpp.ll
 ; llvm/optimized/Mangle.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; wireshark/optimized/packet-iax2.c.ll
 ; zfp/optimized/zfp.c.ll

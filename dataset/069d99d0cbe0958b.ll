@@ -12,7 +12,7 @@
 define i8 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = trunc i64 %4 to i8
   ret i8 %5
 }
@@ -40,17 +40,6 @@ entry:
 define i8 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
-  %4 = or i64 %3, %0
-  %5 = trunc nuw i64 %4 to i8
-  ret i8 %5
-}
-
-; 1 occurrences:
-; nix/optimized/nix-store.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw i64 %1, %2
   %4 = or i64 %3, %0
   %5 = trunc nuw i64 %4 to i8
   ret i8 %5

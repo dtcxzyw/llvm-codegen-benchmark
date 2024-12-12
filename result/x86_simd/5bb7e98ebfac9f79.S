@@ -184,7 +184,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovsxbw	.LCPI2_3(%rip), %ymm2   # ymm2 = [1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0]
 	vpsllvw	%ymm1, %ymm2, %ymm1
 	vpmovwb	%ymm1, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:
@@ -247,6 +247,6 @@ func0000000000000009:                   # @func0000000000000009
 	vpmovzxbw	.LCPI3_3(%rip), %ymm2   # ymm2 = [255,255,255,255,0,0,0,0,0,0,0,0,0,0,0,0]
 	vpsllvw	%ymm1, %ymm2, %ymm1
 	vpmovwb	%ymm1, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

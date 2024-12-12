@@ -13,10 +13,10 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = and i32 %5, 16712191
   %7 = icmp eq i32 %6, 0
@@ -28,10 +28,10 @@ entry:
 ; icu/optimized/ucnv_u32.ll
 ; php/optimized/image.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = and i32 %5, 2147483631
   %7 = icmp eq i32 %6, 108
@@ -42,11 +42,11 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
-  %4 = or disjoint i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = or disjoint i32 %1, %3
+  %5 = or i32 %0, %4
   %6 = and i32 %5, 2147481600
   %7 = icmp eq i32 %6, 55296
   ret i1 %7
@@ -55,11 +55,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/addr_resolv.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 4
   %4 = or i32 %3, %1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = and i32 %5, 256
   %7 = icmp eq i32 %6, 0
   ret i1 %7
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001d8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1

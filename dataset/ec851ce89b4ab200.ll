@@ -35,7 +35,7 @@ entry:
   %3 = sitofp i32 %2 to double
   %4 = sitofp i32 %1 to double
   %5 = fdiv double %4, %3
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   %7 = fcmp une double %6, 0.000000e+00
   ret i1 %7
 }

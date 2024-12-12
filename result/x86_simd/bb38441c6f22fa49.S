@@ -4,7 +4,7 @@ func0000000000000025:                   # @func0000000000000025
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpsraq	$16, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.quad	4000                            # 0xfa0

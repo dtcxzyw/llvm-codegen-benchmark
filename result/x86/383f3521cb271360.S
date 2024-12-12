@@ -1,4 +1,4 @@
 func0000000000000000:                   # @func0000000000000000
-	movl	%edi, %eax
-	andl	$1, %eax
+	movswl	%di, %eax
+	andl	$-16777216, %eax                # imm = 0xFF000000
 	retq

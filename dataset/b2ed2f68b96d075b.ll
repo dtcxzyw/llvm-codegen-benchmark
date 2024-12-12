@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 71 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; assimp/optimized/MD2Loader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
@@ -19,7 +19,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -68,11 +67,15 @@
 ; stb/optimized/stb_image_write.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i8 %1) #0 {
 entry:
   %2 = uitofp i8 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 
@@ -84,7 +87,7 @@ entry:
 define float @func0000000000000001(float %0, i8 %1) #0 {
 entry:
   %2 = uitofp nneg i8 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

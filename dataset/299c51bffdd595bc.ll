@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
@@ -17,6 +17,7 @@
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll

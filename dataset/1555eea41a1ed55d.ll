@@ -14,11 +14,14 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 7 occurrences:
 ; icu/optimized/ucbuf.ll
 ; linux/optimized/filter.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:

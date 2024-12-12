@@ -155,13 +155,15 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; mitsuba3/optimized/volumegrid.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = icmp ugt i64 %3, 4611686018427387903
@@ -173,10 +175,10 @@ entry:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; openexr/optimized/ImfTiledRgbaFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 1152921504606846975
+  %4 = icmp samesign ugt i64 %3, 1152921504606846975
   %5 = select i1 %4, i64 -1, i64 %0
   ret i64 %5
 }
@@ -205,7 +207,7 @@ entry:
 ; quantlib/optimized/svd.ll
 ; quantlib/optimized/twofactormodel.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 2305843009213693951
@@ -228,7 +230,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = icmp eq i64 %3, -9223372036854775808

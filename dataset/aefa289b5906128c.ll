@@ -4,7 +4,7 @@
 ; php/optimized/streams.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000042c(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq i32 %1, 0

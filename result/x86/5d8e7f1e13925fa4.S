@@ -6,13 +6,13 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	1(%rdi), %rax
 	orq	$7, %rax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	leaq	1(%rdi), %rax
+	orq	$192, %rax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	orq	$1, %rdi
 	leaq	2(%rdi), %rax
-	retq
-func0000000000000006:                   # @func0000000000000006
-	leaq	1(%rdi), %rax
-	orq	$1, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	leaq	-1(%rdi), %rax

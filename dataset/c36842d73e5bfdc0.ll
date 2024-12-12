@@ -1,9 +1,16 @@
 
-; 136 occurrences:
+; 142 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/cvodes_spbcgs.c.ll
 ; casadi/optimized/cvodes_spgmr.c.ll
 ; casadi/optimized/cvodes_sptfqmr.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/special.c.ll
 ; cmake/optimized/SystemInformation.cxx.ll
 ; cmake/optimized/core.c.ll
@@ -21,7 +28,6 @@
 ; icu/optimized/smpdtfmt.ll
 ; libuv/optimized/core.c.ll
 ; linux/optimized/compress.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
@@ -141,7 +147,7 @@ define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -194,18 +200,17 @@ entry:
 ; graphviz/optimized/constrained_majorization.c.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 256
+  %3 = icmp samesign ugt i32 %2, 256
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; c3c/optimized/target.c.ll
 ; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
-; glslang/optimized/ParseHelper.cpp.ll
 ; gromacs/optimized/decidegpuusage.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
 ; gromacs/optimized/energyoutput.cpp.ll
@@ -231,19 +236,17 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/hugepages.ll
 ; proj/optimized/conversion.cpp.ll
-; wireshark/optimized/filter_dialog.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 6
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/cmCTestRunTest.cxx.ll
-; linux/optimized/input-mt.ll
 ; verilator/optimized/V3Case.cpp.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
@@ -256,13 +259,24 @@ entry:
 }
 
 ; 1 occurrences:
+; glslang/optimized/ParseHelper.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 28
+  %4 = select i1 %3, i1 %1, i1 false
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 64
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

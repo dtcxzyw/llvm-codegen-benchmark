@@ -1,29 +1,24 @@
-func000000000000003f:                   # @func000000000000003f
-	andi	a3, a0, 1
-	slliw	a0, a2, 24
-	slliw	a1, a1, 16
-	or	a0, a0, a1
-	bnez	a3, .LBB0_2
-	li	a1, 39
-	or	a0, a0, a1
-	ret
-.LBB0_2:
-	li	a1, 41
-	or	a0, a0, a1
-	ret
 func000000000000003e:                   # @func000000000000003e
 	andi	a3, a0, 1
 	slliw	a0, a2, 19
 	slliw	a1, a1, 5
 	or	a0, a0, a1
-	bnez	a3, .LBB1_2
+	bnez	a3, .LBB0_2
 	lui	a1, 319552
 	addiw	a1, a1, 1024
 	or	a0, a0, a1
 	ret
-.LBB1_2:
+.LBB0_2:
 	lui	a1, 385088
 	addiw	a1, a1, 1024
+	or	a0, a0, a1
+	ret
+func000000000000003f:                   # @func000000000000003f
+	slliw	a2, a2, 24
+	slliw	a1, a1, 16
+	andi	a0, a0, 1
+	or	a1, a1, a2
+	slli	a0, a0, 8
 	or	a0, a0, a1
 	ret
 func000000000000002d:                   # @func000000000000002d

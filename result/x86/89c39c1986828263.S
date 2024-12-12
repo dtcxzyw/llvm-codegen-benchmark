@@ -1,12 +1,12 @@
-func0000000000000082:                   # @func0000000000000082
-	cmpq	%rdi, %rsi
-	seta	%cl
+func0000000000000102:                   # @func0000000000000102
+	cmpq	%rsi, %rdi
+	setb	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
-	cmpq	%rdi, %rsi
+func0000000000000042:                   # @func0000000000000042
+	cmpq	%rsi, %rdi
 	sete	%cl
 	testq	%rdi, %rdi
 	sete	%al

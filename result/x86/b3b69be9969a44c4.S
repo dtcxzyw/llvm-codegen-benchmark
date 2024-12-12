@@ -1,55 +1,55 @@
-func0000000000000161:                   # @func0000000000000161
+func00000000000002c1:                   # @func00000000000002c1
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000171:                   # @func0000000000000171
+func00000000000002e1:                   # @func00000000000002e1
 	subq	%rdx, %rsi
 	shrq	$5, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000141:                   # @func0000000000000141
+func0000000000000281:                   # @func0000000000000281
 	subq	%rdx, %rsi
 	shrq	$5, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	subq	%rdx, %rsi
 	shrq	$19, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	subq	%rdx, %rsi
 	shrq	$19, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000284:                   # @func0000000000000284
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	decq	%rdi
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000c1:                   # @func00000000000000c1
 	subq	%rdx, %rsi
-	shrq	$3, %rsi
+	shrq	$4, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
@@ -61,31 +61,31 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000e1:                   # @func00000000000000e1
 	subq	%rdx, %rsi
-	shrq	$3, %rsi
-	incq	%rdi
-	cmpq	%rsi, %rdi
-	setb	%al
-	retq
-func0000000000000074:                   # @func0000000000000074
-	subq	%rdx, %rsi
-	shrq	$3, %rsi
-	incq	%rdi
-	cmpq	%rsi, %rdi
-	setb	%al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	subq	%rdx, %rsi
-	shrq	$3, %rsi
-	incq	%rdi
-	cmpq	%rsi, %rdi
-	setb	%al
-	retq
-func0000000000000061:                   # @func0000000000000061
-	subq	%rdx, %rsi
-	shrq	$3, %rsi
+	shrq	$2, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
+	retq
+func00000000000000c4:                   # @func00000000000000c4
+	subq	%rdx, %rsi
+	shrq	$3, %rsi
+	incq	%rdi
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func00000000000000f4:                   # @func00000000000000f4
+	subq	%rdx, %rsi
+	shrq	$3, %rsi
+	incq	%rdi
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func0000000000000044:                   # @func0000000000000044
+	subq	%rdx, %rsi
+	shrq	$3, %rsi
+	incq	%rdi
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

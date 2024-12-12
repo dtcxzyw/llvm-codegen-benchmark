@@ -6,7 +6,7 @@
 	.long	256                             # 0x100
 .LCPI0_3:
 	.long	128                             # 0x80
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm1   # xmm1 = [512,512,512,512]
 	vpbroadcastd	.LCPI0_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [256,256,256,256]

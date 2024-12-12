@@ -5,9 +5,9 @@
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openssl/optimized/libcrypto-lib-t_x509.ll
 ; openssl/optimized/libcrypto-shlib-t_x509.ll
+; php/optimized/interval.ll
 ; ruby/optimized/bignum.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; Function Attrs: nounwind
@@ -17,18 +17,6 @@ entry:
   %3 = icmp eq i32 %1, 1
   %4 = select i1 %3, i64 %2, i64 %0
   ret i64 %4
-}
-
-; 2 occurrences:
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sub i64 0, %0
-  %.not = icmp eq i32 %1, 0
-  %3 = select i1 %.not, i64 %0, i64 %2
-  ret i64 %3
 }
 
 ; 9 occurrences:
@@ -42,7 +30,7 @@ entry:
 ; openjdk/optimized/DrawLine.ll
 ; spike/optimized/kabs32.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp slt i32 %1, 0
@@ -50,23 +38,11 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; openjdk/optimized/DrawLine.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i64 0, %0
-  %3 = icmp sgt i32 %1, 0
-  %4 = select i1 %3, i64 %2, i64 %0
-  ret i64 %4
-}
-
-; 16 occurrences:
+; 15 occurrences:
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/truetype.c.ll
 ; freetype/optimized/type1.c.ll
-; libquic/optimized/a_enum.c.ll
 ; libquic/optimized/a_int.c.ll
 ; libquic/optimized/t_x509.c.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -79,7 +55,7 @@ entry:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; yosys/optimized/jsonparse.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp eq i32 %1, 0

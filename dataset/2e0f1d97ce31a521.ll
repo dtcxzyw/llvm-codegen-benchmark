@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_shadhi.c.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/environment.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; Function Attrs: nounwind
@@ -12,8 +13,9 @@ entry:
   ret float %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; gromacs/optimized/gmx_gyrate.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/test_utilities.cpp.ll
 ; nuttx/optimized/lib_expf.c.ll
 ; pbrt-v4/optimized/bssrdf.cpp.ll

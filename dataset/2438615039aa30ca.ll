@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-shlib-extensions.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000382(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000b02(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 41
@@ -17,7 +17,7 @@ entry:
 ; qemu/optimized/fdt_ro.c.ll
 ; spike/optimized/fdt_ro.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000302(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000a02(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ugt i32 %3, 15
@@ -33,7 +33,7 @@ entry:
 ; llvm/optimized/MachineLateInstrsCleanup.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 7
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000342(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000a82(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp sgt i32 %3, 1114111

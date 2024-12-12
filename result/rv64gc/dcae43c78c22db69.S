@@ -19,9 +19,3 @@ func0000000000000020:                   # @func0000000000000020
 	subw	a0, a1, a0
 	addiw	a0, a0, 1
 	ret
-func0000000000000085:                   # @func0000000000000085
-	sext.w	a1, a1
-	sltiu	a1, a1, 33
-	subw	a0, a1, a0
-	addiw	a0, a0, -2
-	ret

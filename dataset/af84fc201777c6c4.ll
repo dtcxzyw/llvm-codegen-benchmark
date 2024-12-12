@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 85 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
@@ -49,8 +49,17 @@
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/clipCache.cpp.ll
+; openusd/optimized/dependencies.cpp.ll
+; openusd/optimized/flatteningSceneIndex.cpp.ll
+; openusd/optimized/namespaceEditor.cpp.ll
+; openusd/optimized/primDataSourceOverlayCache.cpp.ll
+; openusd/optimized/primTypePruningSceneIndex.cpp.ll
+; openusd/optimized/retainedSceneIndex.cpp.ll
+; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
+; openusd/optimized/testSdfPathTable.cpp.ll
 ; php/optimized/ir_gdb.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; quantlib/optimized/binomialtree.ll

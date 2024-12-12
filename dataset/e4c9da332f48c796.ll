@@ -12,8 +12,9 @@ entry:
   ret i32 %3
 }
 
-; 179 occurrences:
+; 180 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll

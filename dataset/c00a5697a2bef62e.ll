@@ -1,6 +1,7 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/mpdecimal.ll
 ; llvm/optimized/xxhash.cpp.ll
@@ -15,12 +16,13 @@ entry:
   ret i64 %1
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/hash_generator_testing.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; gromacs/optimized/coolstuff.cpp.ll
 ; rocksdb/optimized/transaction_test_util.cc.ll
 ; Function Attrs: nounwind
@@ -30,7 +32,8 @@ entry:
   ret i64 %1
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

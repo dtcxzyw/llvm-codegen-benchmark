@@ -33,8 +33,7 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
-; linux/optimized/intel_dsi_dcs_backlight.ll
+; 18 occurrences:
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/xarray.ll
 ; luajit/optimized/lj_opt_fold.ll
@@ -51,6 +50,8 @@ entry:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wireshark/optimized/lte_rlc_graph_dialog.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i16 %0) #0 {
 entry:

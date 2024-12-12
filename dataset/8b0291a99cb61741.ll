@@ -3,7 +3,7 @@
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = select i1 %3, i1 %1, i1 false
@@ -13,7 +13,8 @@ entry:
   ret i1 %7
 }
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/sort_by_side.ll
 ; hdf5/optimized/H5PLpath.c.ll
 ; jq/optimized/builtin.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
@@ -36,7 +37,7 @@ entry:
 ; wireshark/optimized/packet-do-irp.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
   %4 = select i1 %3, i1 %1, i1 false

@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovw2m	%xmm1, %k0
 	vpslld	$31, %ymm0, %ymm0
 	vpmovd2m	%ymm0, %k1
-	kxorb	%k0, %k1, %k0
+	kxorb	%k1, %k0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq
@@ -12,7 +12,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovw2m	%xmm1, %k0
 	vpslld	$31, %ymm0, %ymm0
 	vpmovd2m	%ymm0, %k1
-	kxorb	%k0, %k1, %k0
+	kxorb	%k1, %k0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

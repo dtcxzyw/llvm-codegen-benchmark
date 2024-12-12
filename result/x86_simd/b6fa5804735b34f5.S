@@ -55,14 +55,3 @@ func000000000000010f:                   # @func000000000000010f
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI6_0:
-	.quad	1                               # 0x1
-.LCPI6_1:
-	.long	4294967294                      # 0xfffffffe
-func000000000000010d:                   # @func000000000000010d
-	vpcmpnleuq	.LCPI6_0(%rip){1to4}, %ymm1, %k0
-	vpmovm2d	%k0, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vpaddd	.LCPI6_1(%rip){1to4}, %xmm0, %xmm0
-	vzeroupper
-	retq

@@ -54,7 +54,7 @@ func0000000000000009:                   # @func0000000000000009
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1
 	vpcmpeqd	%ymm1, %ymm0, %k0 {%k1}
@@ -65,6 +65,13 @@ func000000000000000a:                   # @func000000000000000a
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1
 	vpcmpgtd	%ymm1, %ymm0, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000047:                   # @func0000000000000047
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k1
+	vpcmpled	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

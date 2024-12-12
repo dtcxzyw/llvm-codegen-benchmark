@@ -1,12 +1,12 @@
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	decl	%edx
 	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	setg	%al
+	cmpq	%rsi, %rdi
+	setl	%al
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	addl	$2, %edx
 	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

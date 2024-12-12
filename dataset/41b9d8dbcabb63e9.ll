@@ -11,9 +11,8 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
-; luau/optimized/Compiler.cpp.ll
 ; openjdk/optimized/c1_CodeStubs_x86.ll
 ; wasmtime-rs/optimized/456j0x8j3xyjpk7h.ll
 ; Function Attrs: nounwind

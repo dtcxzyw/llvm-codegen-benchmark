@@ -7,3 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	leal	(,%rdi,8), %eax
 	andl	$-64, %eax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	movl	%edi, %eax
+	sarl	$6, %eax
+	andl	$-4, %eax
+	retq

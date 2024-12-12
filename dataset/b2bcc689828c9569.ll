@@ -12,11 +12,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; linux/optimized/skl_universal_plane.ll
 ; php/optimized/decode.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -56320
   %3 = shl nuw nsw i32 %0, 8
@@ -28,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/lockfile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000346(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000686(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nsw i32 %0, 1
@@ -51,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/util-net.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = add nsw i32 %0, -8
@@ -65,7 +66,7 @@ entry:
 ; protobuf/optimized/parse_context.cc.ll
 ; sentencepiece/optimized/parse_context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000608(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 28
   %3 = add i32 %0, -268435456
@@ -91,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/propname.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %0, 1
   %3 = sub i32 -2, %1

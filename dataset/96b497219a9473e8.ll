@@ -1,9 +1,10 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/obmalloc.ll
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
@@ -20,7 +21,7 @@ entry:
   %3 = and i64 %2, -8
   %4 = and i64 %1, -8
   %5 = sub i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

@@ -1,21 +1,19 @@
 
-; 5 occurrences:
-; openjdk/optimized/constMethod.ll
+; 3 occurrences:
 ; php/optimized/readcdf.ll
-; php/optimized/zend_file_cache.ll
 ; re2/optimized/dfa.cc.ll
 ; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i64 4, i64 0
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
-; 62 occurrences:
+; 67 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_join_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
@@ -73,17 +71,22 @@ entry:
 ; openusd/optimized/primIndex_Graph.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/noarbsabrinterpolatedsmilesection.ll
+; quantlib/optimized/projection.ll
+; quantlib/optimized/sabrinterpolatedsmilesection.ll
+; quantlib/optimized/sviinterpolatedsmilesection.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/ezsat.ll
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 0, i64 24
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
@@ -91,12 +94,25 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/constMethod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000069(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c9(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 -2, i64 -4
   %5 = getelementptr nusw i8, ptr %1, i64 %4
   %6 = icmp uge ptr %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; openjdk/optimized/constMethod.ll
+; php/optimized/zend_file_cache.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i64 -2, i64 -4
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -107,11 +123,11 @@ entry:
 ; verilator/optimized/V3EmitCModel.cpp.ll
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000361(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i64 0, i64 8
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -125,16 +141,16 @@ entry:
 ; verilator/optimized/V3EmitCSyms.cpp.ll
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000036c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i64 0, i64 8
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 
-; 217 occurrences:
+; 215 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
@@ -344,8 +360,6 @@ entry:
 ; cvc5/optimized/vts_term_cache.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
-; graphviz/optimized/cluster.c.ll
-; graphviz/optimized/edge.c.ll
 ; hwloc/optimized/lstopo-lstopo.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo.ll
 ; linux/optimized/blk-mq-tag.ll
@@ -353,35 +367,19 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 63
-  %4 = select i1 %3, i64 8, i64 0
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
-}
-
-; 5 occurrences:
-; quantlib/optimized/cmsmarketcalibration.ll
-; quantlib/optimized/noarbsabrinterpolatedsmilesection.ll
-; quantlib/optimized/projection.ll
-; quantlib/optimized/sabrinterpolatedsmilesection.ll
-; quantlib/optimized/sviinterpolatedsmilesection.ll
-; Function Attrs: nounwind
-define i1 @func000000000000007c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 63
   %4 = select i1 %3, i64 8, i64 0
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = icmp ne ptr %5, %0
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 4, i64 0
@@ -393,12 +391,24 @@ entry:
 ; 1 occurrences:
 ; git/optimized/fmt-merge-msg.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000065(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e5(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 97
   %4 = select i1 %3, i64 8, i64 11
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ule ptr %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; draco/optimized/adaptive_rans_bit_encoder.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000cc(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i64 -8, i64 0
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 
@@ -406,7 +416,7 @@ entry:
 ; linux/optimized/cistpl.ll
 ; linux/optimized/early_printk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 1, i64 2
@@ -419,12 +429,25 @@ entry:
 ; luajit/optimized/lj_serialize.ll
 ; luajit/optimized/lj_serialize_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 18
   %4 = select i1 %3, i64 16, i64 8
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ugt ptr %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; graphviz/optimized/cluster.c.ll
+; graphviz/optimized/edge.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 2
+  %4 = select i1 %3, i64 0, i64 -64
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

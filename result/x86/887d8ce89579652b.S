@@ -7,5 +7,8 @@ func0000000000000000:                   # @func0000000000000000
 	orq	%rcx, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	movzwl	%si, %eax
+	movzwl	%si, %ecx
+	testb	$1, %dil
+	movl	$4, %eax
+	cmoveq	%rcx, %rax
 	retq

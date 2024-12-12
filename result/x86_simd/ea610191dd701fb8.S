@@ -1,10 +1,10 @@
 func0000000000000000:                   # @func0000000000000000
 	vpsllq	$3, %ymm2, %ymm2
-	vpternlogq	$30, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 ^ (ymm2 | ymm1)
+	vpternlogq	$30, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 ^ (ymm1 | ymm2)
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vpsllq	$24, %ymm2, %ymm2
-	vpternlogq	$30, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 ^ (ymm2 | ymm1)
+	vpternlogq	$30, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 ^ (ymm1 | ymm2)
 	retq
 func0000000000000005:                   # @func0000000000000005
 	vpsllq	$32, %ymm2, %ymm2
@@ -20,7 +20,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vpsllq	$48, %ymm2, %ymm2
-	vpternlogq	$30, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 ^ (ymm2 | ymm1)
+	vpternlogq	$30, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 ^ (ymm1 | ymm2)
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpsllq	$16, %ymm2, %ymm2

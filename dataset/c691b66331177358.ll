@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 16 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; coremark/optimized/core_matrix.c.ll
 ; libquic/optimized/quic_data_writer.cc.ll
@@ -14,11 +14,24 @@
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %1, i16 0, i16 %2
   %4 = add i16 %3, %0
+  ret i16 %4
+}
+
+; 2 occurrences:
+; openusd/optimized/mvref_common.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000001(i16 %0, i1 %1, i16 %2) #0 {
+entry:
+  %3 = select i1 %1, i16 0, i16 %2
+  %4 = add nsw i16 %3, %0
   ret i16 %4
 }
 
@@ -34,22 +47,12 @@ entry:
 }
 
 ; 1 occurrences:
-; openusd/optimized/mvref_common.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000001(i16 %0, i1 %1, i16 %2) #0 {
-entry:
-  %3 = select i1 %1, i16 0, i16 %2
-  %4 = add nsw i16 %3, %0
-  ret i16 %4
-}
-
-; 1 occurrences:
 ; wireshark/optimized/packet-packetbb.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %1, i16 4, i16 %2
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 

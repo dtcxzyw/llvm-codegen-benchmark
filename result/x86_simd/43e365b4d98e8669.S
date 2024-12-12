@@ -34,16 +34,6 @@ func0000000000000005:                   # @func0000000000000005
 	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
 func0000000000000011:                   # @func0000000000000011
-	vpslld	$12, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpsubd	%ymm2, %ymm0, %ymm0
-	retq
-func000000000000001c:                   # @func000000000000001c
-	vpslld	$3, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpsubd	%ymm2, %ymm0, %ymm0
-	retq
-func000000000000000c:                   # @func000000000000000c
 	vpslld	$3, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
@@ -53,8 +43,13 @@ func000000000000001d:                   # @func000000000000001d
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
-func0000000000000020:                   # @func0000000000000020
-	vpslld	$9, %ymm2, %ymm2
+func000000000000000c:                   # @func000000000000000c
+	vpslld	$3, %ymm2, %ymm2
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpsubd	%ymm2, %ymm0, %ymm0
+	retq
+func0000000000000025:                   # @func0000000000000025
+	vpaddd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
 	retq

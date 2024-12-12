@@ -1,10 +1,6 @@
 
-%struct.object_slot.2709045 = type { i32, i32, %struct.jv.2709043, %struct.jv.2709043 }
-%struct.jv.2709043 = type { i8, i8, i16, i32, %union.anon.2709044 }
-%union.anon.2709044 = type { ptr }
-%"class.base::ManualConstructor.2866479" = type { %"class.base::AlignedMemory.2866480" }
-%"class.base::AlignedMemory.2866480" = type { [16 x i8] }
-%"class.clang::detail::CXXOperatorIdName.2969095" = type { i32, ptr }
+%"class.base::ManualConstructor.3060113" = type { %"class.base::AlignedMemory.3060114" }
+%"class.base::AlignedMemory.3060114" = type { [16 x i8] }
 
 ; 38 occurrences:
 ; linux/optimized/cdrom.ll
@@ -46,16 +42,16 @@
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr [1 x i64], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 180 occurrences:
+; 197 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/lpkCut.c.ll
@@ -167,7 +163,6 @@ entry:
 ; cvc5/optimized/type_matcher.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; darktable/optimized/metadata.c.ll
-; draco/optimized/float_points_tree_encoder.cc.ll
 ; git/optimized/apply.ll
 ; git/optimized/fsmonitor.ll
 ; git/optimized/object-name.ll
@@ -179,16 +174,34 @@ entry:
 ; icu/optimized/ctest.ll
 ; icu/optimized/package.ll
 ; icu/optimized/ucnvisci.ll
+; jq/optimized/jv.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; libquic/optimized/trees.c.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; nuttx/optimized/fs_foreachinode.c.ll
 ; openjdk/optimized/cmsgamma.ll
+; openspiel/optimized/PlayAnalyser.cpp.ll
+; openspiel/optimized/Scheduler.cpp.ll
+; openspiel/optimized/SolveBoard.cpp.ll
+; openspiel/optimized/amazons.cc.ll
+; openspiel/optimized/bridge.cc.ll
+; openspiel/optimized/bridge_uncontested_bidding.cc.ll
+; openspiel/optimized/chess_board.cc.ll
+; openspiel/optimized/euchre.cc.ll
+; openspiel/optimized/hearts.cc.ll
+; openspiel/optimized/nine_mens_morris.cc.ll
+; openspiel/optimized/othello.cc.ll
+; openspiel/optimized/phantom_ttt.cc.ll
+; openspiel/optimized/spades.cc.ll
 ; openssl/optimized/libssl-lib-ssl_ciph.ll
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
+; openusd/optimized/decoder.c.ll
 ; openvdb/optimized/RayTracer.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
@@ -237,11 +250,11 @@ entry:
 ; wolfssl/optimized/wc_port.c.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %0, i64 1160
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1160
   %5 = getelementptr nusw [24 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -261,18 +274,6 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
-; jq/optimized/jv.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 32
-  %4 = getelementptr i8, ptr %0, i64 8
-  %5 = getelementptr nusw [0 x %struct.object_slot.2709045], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
 ; 5 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; libquic/optimized/quic_session.cc.ll
@@ -280,74 +281,60 @@ entry:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 28
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %0, i64 8
-  %5 = getelementptr nusw [10 x %"class.base::ManualConstructor.2866479"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = getelementptr nusw [10 x %"class.base::ManualConstructor.3060113"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 17 occurrences:
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
-; openspiel/optimized/PlayAnalyser.cpp.ll
-; openspiel/optimized/Scheduler.cpp.ll
-; openspiel/optimized/SolveBoard.cpp.ll
-; openspiel/optimized/amazons.cc.ll
-; openspiel/optimized/bridge.cc.ll
-; openspiel/optimized/bridge_uncontested_bidding.cc.ll
-; openspiel/optimized/chess_board.cc.ll
-; openspiel/optimized/euchre.cc.ll
-; openspiel/optimized/hearts.cc.ll
-; openspiel/optimized/nine_mens_morris.cc.ll
-; openspiel/optimized/othello.cc.ll
-; openspiel/optimized/phantom_ttt.cc.ll
-; openspiel/optimized/spades.cc.ll
-; openusd/optimized/decoder.c.ll
+; 1 occurrences:
+; draco/optimized/float_points_tree_encoder.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 17384
-  %5 = getelementptr nusw [46 x %"class.clang::detail::CXXOperatorIdName.2969095"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw i8, ptr %0, i64 -12
+  %5 = getelementptr nusw [3 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/devinet.ll
 ; linux/optimized/neighbour.ll
+; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 30
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %0, i64 88
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 88
   %5 = getelementptr [14 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 11 occurrences:
-; cmake/optimized/archive_read_disk_set_standard_lookup.c.ll
+; 12 occurrences:
 ; cvc5/optimized/base_solver.cpp.ll
 ; cvc5/optimized/bv_inverter.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
+; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/quantifiers_macros.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/real_to_int.cpp.ll
+; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/smt2_printer.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/sygus_process_conj.cpp.ll
 ; cvc5/optimized/theory_model_builder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %0, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
   %5 = getelementptr nusw [0 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

@@ -1,32 +1,24 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	decq	%rdx
-	cmpq	%rdi, %rdx
-	seta	%cl
+	cmpq	%rdx, %rdi
+	setb	%cl
 	testl	%esi, %esi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	decq	%rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000018c:                   # @func000000000000018c
 	incq	%rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	setne	%cl
-	cmpl	$1, %esi
-	sete	%al
-	andb	%cl, %al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	addq	$-4096, %rdx                    # imm = 0xF000
-	cmpq	%rdi, %rdx
-	seta	%cl
 	testl	%esi, %esi
-	sete	%al
+	setne	%al
 	andb	%cl, %al
 	retq

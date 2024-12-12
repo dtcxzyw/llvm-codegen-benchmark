@@ -4,10 +4,10 @@
 ; php/optimized/random.ll
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -71
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -17,10 +17,10 @@ entry:
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/lpkSets.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = icmp eq i32 %3, -1
   ret i1 %4
 }
@@ -31,7 +31,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -63,10 +63,10 @@ entry:
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -15
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = icmp eq i32 %3, 1
   ret i1 %4
 }
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/uniset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = xor i32 %2, %0

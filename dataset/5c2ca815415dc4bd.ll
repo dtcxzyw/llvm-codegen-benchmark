@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ult i32 %0, 15
@@ -29,18 +29,17 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; cmake/optimized/gzlib.c.ll
-; libquic/optimized/gzlib.c.ll
 ; linux/optimized/boot.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/stackdepot.ll
 ; linux/optimized/tg3.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; raylib/optimized/rtextures.c.ll
-; zlib/optimized/gzlib.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %0, 0
@@ -62,10 +61,10 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/lbitlib.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = icmp ugt i32 %0, 31
+  %4 = icmp samesign ugt i32 %0, 31
   %5 = select i1 %4, i32 -1, i32 %3
   ret i32 %5
 }
@@ -76,10 +75,22 @@ entry:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ugt i32 %0, 16777214
+  %4 = icmp samesign ugt i32 %0, 16777214
+  %5 = select i1 %4, i32 -1, i32 %3
+  ret i32 %5
+}
+
+; 2 occurrences:
+; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp ugt i32 %0, -257
   %5 = select i1 %4, i32 -1, i32 %3
   ret i32 %5
 }

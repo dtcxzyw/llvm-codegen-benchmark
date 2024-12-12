@@ -4,12 +4,12 @@
 ; oiio/optimized/psdinput.cpp.ll
 ; openjdk/optimized/jccolor.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = or disjoint i32 %2, 256
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -4,7 +4,7 @@
 ; redis/optimized/setcpuaffinity.ll
 ; slurm/optimized/acct_gather.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, -1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucmstate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000101(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967040
   %4 = icmp ne i64 %3, 0

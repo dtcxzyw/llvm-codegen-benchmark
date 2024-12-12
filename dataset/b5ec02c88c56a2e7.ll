@@ -28,7 +28,7 @@ entry:
   ret i64 %4
 }
 
-; 52 occurrences:
+; 51 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -70,7 +70,6 @@ entry:
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; llvm/optimized/ParseCXXInlineMethods.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll

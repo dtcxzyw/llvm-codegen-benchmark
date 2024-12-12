@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; libquic/optimized/ssl_lib.c.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/RISCVMCObjectFileInfo.cpp.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll

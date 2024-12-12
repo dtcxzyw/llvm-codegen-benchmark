@@ -1,10 +1,9 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_grain.c.ll
 ; gromacs/optimized/energyoutput.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll

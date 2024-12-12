@@ -1,9 +1,12 @@
 
-; 82 occurrences:
+; 85 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -215,7 +218,8 @@ entry:
   ret i128 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libsodium/optimized/libsodium_la-poly1305_donna.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
@@ -225,7 +229,7 @@ entry:
 define i128 @func0000000000000010(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
-  %4 = add i128 %3, %0
+  %4 = add i128 %0, %3
   %5 = lshr i128 %4, 55
   ret i128 %5
 }
@@ -253,7 +257,7 @@ entry:
 define i128 @func000000000000001a(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw nsw i128 %1, %2
-  %4 = add nsw i128 %3, %0
+  %4 = add nsw i128 %0, %3
   %5 = lshr i128 %4, 16
   ret i128 %5
 }

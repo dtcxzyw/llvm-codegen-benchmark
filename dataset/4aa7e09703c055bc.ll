@@ -1,7 +1,17 @@
 
-; 79 occurrences:
+%class.InteractionOfType.3378880 = type { %"class.std::vector.10.3378881", %"struct.std::array.3378868", %"class.std::__cxx11::basic_string.3378852" }
+%"class.std::vector.10.3378881" = type { %"struct.std::_Vector_base.11.3378882" }
+%"struct.std::_Vector_base.11.3378882" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3378883" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3378883" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3378884" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3378884" = type { ptr, ptr, ptr }
+%"struct.std::array.3378868" = type { [12 x float] }
+%"class.std::__cxx11::basic_string.3378852" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3378853", i64, %union.anon.3378854 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3378853" = type { ptr }
+%union.anon.3378854 = type { i64, [8 x i8] }
+
+; 73 occurrences:
 ; abc/optimized/sfmDec.c.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; bullet3/optimized/b3GpuSapBroadphase.ll
 ; clamav/optimized/rijndael.cpp.ll
 ; darktable/optimized/common.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -13,13 +23,12 @@
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; gromacs/optimized/dlarft.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/dstein.cpp.ll
+; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
@@ -40,9 +49,8 @@
 ; ncnn/optimized/padding_x86_avx.cpp.ll
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
+; ncnn/optimized/pooling3d.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgels.c.ll
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsy.c.ll
@@ -58,11 +66,7 @@
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgql.c.ll
-; openblas/optimized/dorgr2.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
@@ -89,7 +93,7 @@ entry:
   ret ptr %6
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaSif.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
@@ -106,7 +110,6 @@ entry:
 ; ceres/optimized/schur_eliminator_2_4_3.cc.ll
 ; ceres/optimized/schur_eliminator_3_3_3.cc.ll
 ; darktable/optimized/histogram.c.ll
-; gromacs/optimized/toppush.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -121,16 +124,11 @@ entry:
   ret ptr %6
 }
 
-; 29 occurrences:
+; 24 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; bullet3/optimized/btMLCPSolver.ll
 ; bullet3/optimized/btMultiBodyMLCPConstraintSolver.ll
-; ceres/optimized/cgnr_solver.cc.ll
-; ceres/optimized/iterative_schur_complement_solver.cc.ll
-; ceres/optimized/power_series_expansion_preconditioner.cc.ll
-; ceres/optimized/schur_complement_solver.cc.ll
-; ceres/optimized/trust_region_minimizer.cc.ll
 ; icu/optimized/uts46.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/io_dec.c.ll
@@ -161,14 +159,44 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
-; velox/optimized/PrestoSerializer.cpp.ll
+; 2 occurrences:
+; gromacs/optimized/toppush.cpp.ll
+; openspiel/optimized/Moves.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 2
-  %5 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %class.InteractionOfType.3378880, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 6 occurrences:
+; ceres/optimized/cgnr_solver.cc.ll
+; ceres/optimized/iterative_schur_complement_solver.cc.ll
+; ceres/optimized/power_series_expansion_preconditioner.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/trust_region_minimizer.cc.ll
+; opencv/optimized/emd.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw double, ptr %0, i64 %1
+  %.idx = shl nsw i64 %3, 5
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %.idx
+  ret ptr %5
+}
+
+; 1 occurrences:
+; opencv/optimized/emd.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = shl nsw i64 %3, 3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }

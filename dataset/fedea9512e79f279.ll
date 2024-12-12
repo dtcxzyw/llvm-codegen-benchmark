@@ -1,6 +1,5 @@
 
-; 19 occurrences:
-; linux/optimized/wep.ll
+; 18 occurrences:
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -23,7 +22,7 @@
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = add i32 %3, 4
   ret i32 %4
 }
@@ -36,7 +35,7 @@ entry:
 define i32 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = add i32 %3, -12
   ret i32 %4
 }

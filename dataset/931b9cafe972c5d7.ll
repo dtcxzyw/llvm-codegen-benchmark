@@ -22,12 +22,10 @@ entry:
   ret i64 %2
 }
 
-; 5 occurrences:
-; git/optimized/pq.ll
+; 3 occurrences:
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/png.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
-; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0) #0 {
 entry:
@@ -56,6 +54,16 @@ define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = or i64 %0, 1
   %2 = mul i64 %1, 3
+  ret i64 %2
+}
+
+; 1 occurrences:
+; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0) #0 {
+entry:
+  %1 = mul nuw i64 %0, 12
+  %2 = add nuw i64 %1, 12
   ret i64 %2
 }
 

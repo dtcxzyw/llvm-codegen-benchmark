@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	slli	a0, a0, 56
 	srli	a0, a0, 60
 	li	a1, 15
@@ -7,12 +7,4 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 .LBB0_2:
 	addi	a0, a0, -3
-	ret
-func0000000000000014:                   # @func0000000000000014
-	slli	a0, a0, 52
-	srli	a0, a0, 59
-	sltiu	a1, a0, 6
-	addi	a0, a0, -5
-	addi	a1, a1, -1
-	and	a0, a0, a1
 	ret

@@ -10,5 +10,5 @@ func000000000000000e:                   # @func000000000000000e
 	bnez	a0, .LBB1_2
 	fmv.d.x	fa5, zero
 .LBB1_2:                                # %entry
-	fadd.d	fa0, fa5, fa0
+	fadd.d	fa0, fa0, fa5
 	ret

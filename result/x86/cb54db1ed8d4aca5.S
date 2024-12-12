@@ -1,14 +1,14 @@
-func0000000000000186:                   # @func0000000000000186
+func0000000000000306:                   # @func0000000000000306
 	testl	%edx, %edx
 	setns	%cl
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
 	andb	%cl, %al
 	retq
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000346:                   # @func0000000000000346
 	testl	%edx, %edx
 	setg	%cl
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
 	andb	%cl, %al
 	retq

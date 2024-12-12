@@ -1,10 +1,10 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001e1:                   # @func00000000000001e1
 	li	a2, 48
 	czero.eqz	a0, a2, a0
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	li	a2, 8
 	czero.eqz	a0, a2, a0
 	add	a0, a0, a1

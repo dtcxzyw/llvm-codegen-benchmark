@@ -1,5 +1,65 @@
 
-; 159 occurrences:
+; 223 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/codecvt_error_category.ll
+; boost/optimized/contract.ll
+; boost/optimized/date_time.ll
+; boost/optimized/directory.ll
+; boost/optimized/dynamic_binding.ll
+; boost/optimized/env.ll
+; boost/optimized/error.ll
+; boost/optimized/except.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/extensions.ll
+; boost/optimized/future.ll
+; boost/optimized/generator.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/localization_backend.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/operations.ll
+; boost/optimized/pid.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/thread.ll
+; boost/optimized/throw_on_error.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -23,7 +83,6 @@
 ; hermes/optimized/Memory.cpp.ll
 ; hermes/optimized/Path.cpp.ll
 ; hermes/optimized/Process.cpp.ll
-; hermes/optimized/Program.cpp.ll
 ; hermes/optimized/RegAlloc.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
 ; hermes/optimized/StorageProvider.cpp.ll
@@ -64,8 +123,6 @@
 ; llvm/optimized/PrecompiledPreamble.cpp.ll
 ; llvm/optimized/PrintPasses.cpp.ll
 ; llvm/optimized/Process.cpp.ll
-; llvm/optimized/Program.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
@@ -122,7 +179,6 @@
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
 ; rust-analyzer-rs/optimized/dmp87bhacgqvbrv.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
-; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; rust-analyzer-rs/optimized/oyyql3r86m1ry5s.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; soc-simulator/optimized/verilated.ll
@@ -159,6 +215,14 @@
 ; yalantinglibs/optimized/server.cpp.ll
 ; z3/optimized/simplex.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7od02cvs02zg2t1jcuk4h4evv.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; Function Attrs: nounwind
 define { i32, ptr } @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:

@@ -5,7 +5,7 @@
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/net_net.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
@@ -19,7 +19,7 @@ entry:
 ; nanobind/optimized/nb_type.cpp.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32

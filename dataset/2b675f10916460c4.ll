@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 43 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; assimp/optimized/zip.c.ll
@@ -39,24 +39,29 @@
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
@@ -68,12 +73,12 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; linux/optimized/dmar.ll
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
@@ -82,11 +87,12 @@ entry:
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/27y5mf4j2qnj7fax.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
@@ -97,7 +103,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }

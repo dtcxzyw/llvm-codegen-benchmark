@@ -6,9 +6,10 @@ func000000000000000f:                   # @func000000000000000f
 	vmerge.vim	v8, v10, 0, v0
 	ret
 func0000000000000000:                   # @func0000000000000000
+	li	a0, 80
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.i	v10, -6
-	li	a0, 3
+	vmv.v.x	v10, a0
+	li	a0, -80
 	vmacc.vx	v10, a0, v8
 	vmerge.vim	v8, v10, 0, v0
 	ret

@@ -20,15 +20,15 @@ func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
-func0000000000000022:                   # @func0000000000000022
-	fmv.w.x	fa5, a1
-	fmv.w.x	fa4, a0
-	flt.s	a0, fa4, fa5
-	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.w.x	fa5, a1
 	fmv.w.x	fa4, a0
 	feq.s	a0, fa4, fa5
+	ret
+func0000000000000022:                   # @func0000000000000022
+	fmv.w.x	fa5, a1
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa4, fa5
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fmv.w.x	fa5, a1

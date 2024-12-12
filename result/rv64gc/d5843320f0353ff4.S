@@ -27,6 +27,12 @@ func0000000000000027:                   # @func0000000000000027
 	slli	a0, a0, 6
 	or	a0, a0, a1
 	ret
+func0000000000000017:                   # @func0000000000000017
+	slli	a1, a1, 8
+	andi	a0, a0, 255
+	slli	a0, a0, 3
+	or	a0, a0, a1
+	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 11
 	andi	a0, a0, 255

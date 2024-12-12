@@ -11,7 +11,7 @@ func00000000000000d0:                   # @func00000000000000d0
 	vsext.vf2	v14, v12
 	vsll.vi	v10, v10, 4
 	vsll.vi	v12, v14, 2
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret
 func0000000000000050:                   # @func0000000000000050
@@ -19,6 +19,6 @@ func0000000000000050:                   # @func0000000000000050
 	vsext.vf2	v14, v12
 	vsll.vi	v10, v10, 4
 	vsll.vi	v12, v14, 5
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret

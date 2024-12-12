@@ -20,7 +20,7 @@
 ; wolfssl/optimized/ecc.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000008c(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %1
@@ -57,10 +57,10 @@ entry:
 ; wolfssl/optimized/signature.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq i32 %1, 0
   %6 = or i1 %4, %5
   ret i1 %6
@@ -72,25 +72,20 @@ entry:
 ; openssl/optimized/libcrypto-lib-x_pubkey.ll
 ; openssl/optimized/libcrypto-shlib-x_pubkey.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000330(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000630(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp ne i32 %1, 0
   %6 = or i1 %4, %5
   ret i1 %6
 }
 
-; 32 occurrences:
+; 27 occurrences:
 ; box2d/optimized/b2_contact.cpp.ll
-; clamav/optimized/readdb.c.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; icu/optimized/ucol.ll
 ; icu/optimized/uregex.ll
 ; libquic/optimized/pair.c.ll
-; linux/optimized/af_packet.ll
-; linux/optimized/nsproxy.ll
-; linux/optimized/raw.ll
 ; luau/optimized/TypeFamily.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
@@ -115,7 +110,7 @@ entry:
 ; wolfssl/optimized/rsa.c.ll
 ; wolfssl/optimized/signature.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000082(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %1
@@ -124,7 +119,7 @@ entry:
   ret i1 %6
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/gzread.c.ll
 ; assimp/optimized/Q3BSPFileImporter.cpp.ll
 ; clamav/optimized/bytecode_api.c.ll
@@ -154,7 +149,6 @@ entry:
 ; libpng/optimized/pngset.c.ll
 ; libquic/optimized/gzread.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
-; linux/optimized/qos.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/TGParser.cpp.ll
 ; openjdk/optimized/mlib_ImageConvKernelConvert.ll
@@ -169,26 +163,25 @@ entry:
 ; zlib/optimized/gzread.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000098(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp slt i32 %1, 1
   %6 = or i1 %4, %5
   ret i1 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/infback.c.ll
 ; cmake/optimized/headers.c.ll
 ; curl/optimized/libcurl_la-headers.ll
 ; libquic/optimized/infback.c.ll
 ; libwebp/optimized/extras.c.ll
 ; libzmq/optimized/tcp_address.cpp.ll
-; redis/optimized/anet.ll
 ; zlib/optimized/infback.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %1
@@ -203,7 +196,7 @@ entry:
 ; cmake/optimized/bzlib.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000060(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func00000000000000a0(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %0
@@ -212,18 +205,17 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/bzlib.c.ll
-; linux/optimized/acpi_cmos_rtc.ll
 ; linux/optimized/wmi.ll
 ; llvm/optimized/ThinLTOBitcodeWriter.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/poly1305.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000090(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %1
@@ -232,13 +224,12 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; git/optimized/unpack-trees.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; redis/optimized/t_zset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000318(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000618(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = or i1 %3, %0
@@ -251,10 +242,10 @@ entry:
 ; clamav/optimized/chmd.c.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func00000000000000b0(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp ne i32 %1, 40
   %6 = or i1 %4, %5
   ret i1 %6
@@ -263,7 +254,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000302(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000602(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = or i1 %3, %1
@@ -273,12 +264,24 @@ entry:
 }
 
 ; 1 occurrences:
+; redis/optimized/t_zset.ll
+; Function Attrs: nounwind
+define i1 @func000000000000060c(i32 %0, i1 %1, ptr %2) #0 {
+entry:
+  %3 = icmp ne ptr %2, null
+  %4 = or i1 %3, %1
+  %5 = icmp slt i32 %0, 1
+  %6 = or i1 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func00000000000000a8(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp sgt i32 %1, 10
   %6 = or i1 %4, %5
   ret i1 %6

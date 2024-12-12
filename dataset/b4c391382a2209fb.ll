@@ -1,15 +1,9 @@
 
-; 19 occurrences:
-; eastl/optimized/BenchmarkString.cpp.ll
+; 14 occurrences:
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
-; hermes/optimized/CommandLine.cpp.ll
-; hermes/optimized/HadesGC.cpp.ll
-; hermes/optimized/Path.cpp.ll
-; hermes/optimized/RegExp.cpp.ll
-; hermes/optimized/escape.cpp.ll
 ; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
@@ -19,6 +13,7 @@
 ; oiio/optimized/exif.cpp.ll
 ; oiio/optimized/thread.cpp.ll
 ; vcpkg/optimized/strings.cpp.ll
+; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -31,12 +26,42 @@ entry:
 }
 
 ; 1 occurrences:
-; yosys/optimized/lz4.ll
+; boost/optimized/static_string.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  %5 = ptrtoint ptr %4 to i64
+  %6 = ptrtoint ptr %3 to i64
+  %7 = sub i64 %6, %5
+  ret i64 %7
+}
+
+; 5 occurrences:
+; hermes/optimized/CommandLine.cpp.ll
+; hermes/optimized/HadesGC.cpp.ll
+; hermes/optimized/Path.cpp.ll
+; hermes/optimized/RegExp.cpp.ll
+; hermes/optimized/escape.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %5 = ptrtoint ptr %4 to i64
+  %6 = ptrtoint ptr %3 to i64
+  %7 = sub i64 %6, %5
+  ret i64 %7
+}
+
+; 1 occurrences:
+; eastl/optimized/BenchmarkString.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %3 to i64
   %7 = sub i64 %6, %5

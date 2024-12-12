@@ -19,10 +19,24 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 6 occurrences:
+; git/optimized/archive-zip.ll
+; linux/optimized/md-bitmap.ll
+; llvm/optimized/MachObjectWriter.cpp.ll
+; yalantinglibs/optimized/data_def.pb.cc.ll
+; yalantinglibs/optimized/data_def.struct_pb.cc.ll
+; yalantinglibs/optimized/descriptor.struct_pb.cc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i1 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 5
+  %3 = select i1 %0, i64 %2, i64 %1
+  %4 = add nuw nsw i64 %3, 5
+  ret i64 %4
+}
+
+; 19 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
-; cmake/optimized/noproxy.c.ll
-; curl/optimized/libcurl_la-noproxy.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; linux/optimized/memory.ll
@@ -44,25 +58,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = sext i1 %0 to i64
-  %3 = add i64 %2, %1
-  %4 = add i64 %3, -1
-  ret i64 %4
-}
-
-; 6 occurrences:
-; git/optimized/archive-zip.ll
-; linux/optimized/md-bitmap.ll
-; llvm/optimized/MachObjectWriter.cpp.ll
-; yalantinglibs/optimized/data_def.pb.cc.ll
-; yalantinglibs/optimized/data_def.struct_pb.cc.ll
-; yalantinglibs/optimized/descriptor.struct_pb.cc.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i1 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 5
+  %2 = add i64 %1, 5
   %3 = select i1 %0, i64 %2, i64 %1
-  %4 = add nuw nsw i64 %3, 5
+  %4 = add i64 %3, 9
   ret i64 %4
 }
 
@@ -72,7 +70,7 @@ entry:
 define i64 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = zext i1 %0 to i64
-  %3 = add nuw i64 %2, %1
+  %3 = add nuw i64 %1, %2
   %4 = add i64 %3, 1
   ret i64 %4
 }

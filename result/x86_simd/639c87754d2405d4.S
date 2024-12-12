@@ -55,7 +55,7 @@ func0000000000000001:                   # @func0000000000000001
 	.short	24                              # 0x18
 	.short	24                              # 0x18
 	.short	24                              # 0x18
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpsubw	%ymm1, %ymm0, %ymm0
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpcmpltuw	.LCPI1_1(%rip), %ymm0, %k0
@@ -85,7 +85,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpsubw	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpcmpeqw	%ymm1, %ymm0, %k0

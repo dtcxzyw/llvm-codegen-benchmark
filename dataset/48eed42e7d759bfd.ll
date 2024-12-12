@@ -31,7 +31,26 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 9 occurrences:
+; linux/optimized/filter.ll
+; linux/optimized/intel_pstate.ll
+; linux/optimized/mempolicy.ll
+; llvm/optimized/ExprMutationAnalyzer.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; openjdk/optimized/objectSampleWriter.ll
+; qemu/optimized/hw_nvme_ctrl.c.ll
+; ruby/optimized/array.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 15
+  %3 = and i64 %2, 127
+  %4 = icmp samesign ugt i64 %3, %0
+  ret i1 %4
+}
+
+; 15 occurrences:
 ; flatbuffers/optimized/flatc.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hermes/optimized/FoldingSet.cpp.ll
@@ -39,20 +58,13 @@ entry:
 ; hermes/optimized/hbcdump.cpp.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/build_utility.ll
-; linux/optimized/filter.ll
-; linux/optimized/intel_pstate.ll
 ; linux/optimized/memory.ll
-; linux/optimized/mempolicy.ll
 ; linux/optimized/swiotlb.ll
-; llvm/optimized/ExprMutationAnalyzer.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
-; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; openjdk/optimized/objectSampleWriter.ll
-; qemu/optimized/hw_nvme_ctrl.c.ll
 ; ruby/optimized/array.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
@@ -63,45 +75,26 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
-; arrow/optimized/encode_internal.cc.ll
-; arrow/optimized/grouper.cc.ll
-; assimp/optimized/glTF2Importer.cpp.ll
-; assimp/optimized/glTFImporter.cpp.ll
-; cvc5/optimized/monomial_check.cpp.ll
-; draco/optimized/point_cloud_encoder.cc.ll
-; llvm/optimized/CFIFixup.cpp.ll
-; llvm/optimized/CFIInstrInserter.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/IfConversion.cpp.ll
-; llvm/optimized/LiveDebugVariables.cpp.ll
-; llvm/optimized/LiveVariables.cpp.ll
-; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
-; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
-; llvm/optimized/ResourcePriorityQueue.cpp.ll
-; llvm/optimized/ScheduleDAGRRList.cpp.ll
-; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
-; velox/optimized/CompactRow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = and i64 %2, 65535
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp samesign ugt i64 %3, %0
   ret i1 %4
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
 ; cvc5/optimized/monomial_check.cpp.ll
 ; draco/optimized/point_cloud_encoder.cc.ll
-; g2o/optimized/structure_only.cpp.ll
-; g2o/optimized/vertex_line2d.cpp.ll
-; g2o/optimized/vertex_point_xy.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
 ; llvm/optimized/CFIFixup.cpp.ll
 ; llvm/optimized/CFIInstrInserter.cpp.ll
@@ -120,7 +113,7 @@ entry:
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = and i64 %2, 4294967295
@@ -268,23 +261,10 @@ entry:
   ret i1 %4
 }
 
-; 77 occurrences:
-; actix-rs/optimized/4mbibhikoaniv1dm.ll
-; duckdb/optimized/ub_duckdb_common.cpp.ll
-; flatbuffers/optimized/flatc.cpp.ll
-; jemalloc/optimized/sc.ll
-; jemalloc/optimized/sc.pic.ll
-; jemalloc/optimized/sc.sym.ll
+; 63 occurrences:
 ; linux/optimized/badblocks.ll
-; linux/optimized/dmar.ll
-; llvm/optimized/RegisterBankEmitter.cpp.ll
-; llvm/optimized/SwitchLoweringUtils.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
 ; openjdk/optimized/objectSampleWriter.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; redis/optimized/sc.ll
-; redis/optimized/sc.sym.ll
-; spike/optimized/plic.ll
 ; spike/optimized/vfwadd_vf.ll
 ; spike/optimized/vfwadd_vv.ll
 ; spike/optimized/vfwadd_wv.ll
@@ -311,7 +291,6 @@ entry:
 ; spike/optimized/vfwsub_vf.ll
 ; spike/optimized/vfwsub_vv.ll
 ; spike/optimized/vfwsub_wv.ll
-; spike/optimized/vrgather_vi.ll
 ; spike/optimized/vsext_vf2.ll
 ; spike/optimized/vsext_vf4.ll
 ; spike/optimized/vsext_vf8.ll
@@ -347,15 +326,70 @@ entry:
 ; spike/optimized/vzext_vf4.ll
 ; spike/optimized/vzext_vf8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 52
   %3 = and i64 %2, 15
+  %4 = icmp samesign ult i64 %3, %0
+  ret i1 %4
+}
+
+; 17 occurrences:
+; actix-rs/optimized/4mbibhikoaniv1dm.ll
+; boost/optimized/approximately_equals.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; flatbuffers/optimized/flatc.cpp.ll
+; jemalloc/optimized/sc.ll
+; jemalloc/optimized/sc.pic.ll
+; jemalloc/optimized/sc.sym.ll
+; linux/optimized/badblocks.ll
+; linux/optimized/dmar.ll
+; llvm/optimized/RegisterBankEmitter.cpp.ll
+; llvm/optimized/SwitchLoweringUtils.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; openjdk/optimized/objectSampleWriter.ll
+; redis/optimized/sc.ll
+; redis/optimized/sc.sym.ll
+; spike/optimized/plic.ll
+; spike/optimized/vrgather_vi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = and i64 %2, 9223372036854775804
   %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
-; 8 occurrences:
+; 17 occurrences:
+; arrow/optimized/encode_internal.cc.ll
+; arrow/optimized/grouper.cc.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; assimp/optimized/glTFImporter.cpp.ll
+; cvc5/optimized/monomial_check.cpp.ll
+; draco/optimized/point_cloud_encoder.cc.ll
+; llvm/optimized/CFIFixup.cpp.ll
+; llvm/optimized/CFIInstrInserter.cpp.ll
+; llvm/optimized/IfConversion.cpp.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/LiveVariables.cpp.ll
+; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
+; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
+; llvm/optimized/ResourcePriorityQueue.cpp.ll
+; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; llvm/optimized/ThreadSafetyCommon.cpp.ll
+; velox/optimized/CompactRow.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 2
+  %3 = and i64 %2, 8589934588
+  %4 = icmp ugt i64 %3, %0
+  ret i1 %4
+}
+
+; 9 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; cvc5/optimized/sygus_grammar_norm.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
@@ -365,7 +399,7 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = and i64 %2, 2147483647
@@ -409,6 +443,19 @@ entry:
   %2 = lshr i64 %1, 6
   %3 = and i64 %2, 67108863
   %4 = icmp sge i64 %3, %0
+  ret i1 %4
+}
+
+; 3 occurrences:
+; g2o/optimized/structure_only.cpp.ll
+; g2o/optimized/vertex_line2d.cpp.ll
+; g2o/optimized/vertex_point_xy.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 3
+  %3 = and i64 %2, 1
+  %4 = icmp samesign ult i64 %3, %0
   ret i1 %4
 }
 

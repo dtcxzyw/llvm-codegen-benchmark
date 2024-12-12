@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; folly/optimized/String.cpp.ll
 ; gromacs/optimized/colvarbias_alb.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
@@ -28,7 +28,6 @@
 ; openvdb/optimized/VectorTransformer.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; proj/optimized/bertin1953.cpp.ll
-; proj/optimized/cs2cs.cpp.ll
 ; proj/optimized/proj.cpp.ll
 ; quantlib/optimized/bjerksundstenslandengine.ll
 ; quantlib/optimized/couponpricer.ll

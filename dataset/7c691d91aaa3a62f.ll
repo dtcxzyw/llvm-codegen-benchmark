@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -36,6 +36,7 @@
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/spectrum.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

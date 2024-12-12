@@ -11,7 +11,7 @@ define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 181704
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -31,7 +31,7 @@ define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 3
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 

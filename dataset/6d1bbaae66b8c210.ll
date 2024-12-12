@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/dungeongen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000421(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 1
   %3 = icmp eq i16 %0, 0
@@ -10,15 +10,13 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; icu/optimized/rbt_pars.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/check_classname.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000484(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -60
   %3 = icmp ult i16 %2, 31
@@ -32,7 +30,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openusd/optimized/decodemv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000084(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -8
   %3 = icmp ult i16 %2, -3
@@ -42,9 +40,21 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000494(i16 %0, i16 %1) #0 {
+entry:
+  %2 = add nsw i16 %1, -137
+  %3 = icmp ult i16 %2, 32
+  %4 = icmp samesign ult i16 %0, 71
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000481(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -19
   %3 = icmp ult i16 %2, 2

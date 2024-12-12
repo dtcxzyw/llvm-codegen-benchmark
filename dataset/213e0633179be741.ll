@@ -4,7 +4,7 @@
 ; wasmedge/optimized/proxy.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
@@ -19,7 +19,7 @@ entry:
 ; wasmedge/optimized/proxy.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
@@ -34,7 +34,7 @@ entry:
 ; opencv/optimized/count_non_zero.dispatch.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
@@ -49,7 +49,7 @@ entry:
 ; opencv/optimized/count_non_zero.dispatch.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2

@@ -5,7 +5,7 @@ func000000000000000c:                   # @func000000000000000c
 	vor.vi	v12, v12, 2
 	vzext.vf2	v14, v10
 	vsll.vv	v10, v14, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000001f:                   # @func000000000000001f
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -14,7 +14,7 @@ func000000000000001f:                   # @func000000000000001f
 	vxor.vi	v12, v12, 3
 	vzext.vf2	v14, v10
 	vsll.vv	v10, v14, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e64, m2, ta, ma

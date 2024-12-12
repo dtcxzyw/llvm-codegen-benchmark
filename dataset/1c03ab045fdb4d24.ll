@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; clamav/optimized/sigtool.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -9,7 +9,6 @@
 ; eastl/optimized/TestHash.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; git/optimized/submodule--helper.ll
-; linux/optimized/fils_aead.ll
 ; linux/optimized/trace_probe.ll
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
 ; postgres/optimized/varlena.ll

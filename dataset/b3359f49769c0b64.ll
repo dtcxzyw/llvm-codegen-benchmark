@@ -14,22 +14,8 @@ define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 3, i32 5
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = add nuw nsw i32 %4, 5
-  ret i32 %5
-}
-
-; 3 occurrences:
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
-; openjdk/optimized/sharedRuntimeTrans.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 1048576
-  %3 = select i1 %2, i32 -1076, i32 -1023
-  %4 = add nsw i32 %3, %0
-  %5 = add nsw i32 %4, 1
   ret i32 %5
 }
 
@@ -42,6 +28,18 @@ entry:
   %3 = select i1 %2, i32 4, i32 3
   %4 = add nuw i32 %3, %0
   %5 = add nuw nsw i32 %4, 1
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000065(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, 2
+  %3 = select i1 %2, i32 11, i32 -1
+  %4 = add nsw i32 %0, %3
+  %5 = add nsw i32 %4, -12
   ret i32 %5
 }
 
@@ -75,7 +73,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 25, i32 11
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add i32 %4, 1
   ret i32 %5
 }
@@ -101,6 +99,19 @@ entry:
   %3 = select i1 %2, i32 0, i32 16
   %4 = add i32 %3, %0
   %5 = add i32 %4, 3696
+  ret i32 %5
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000045(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 16777216
+  %3 = select i1 %2, i32 7, i32 0
+  %4 = add nsw i32 %0, %3
+  %5 = add nsw i32 %4, -1
   ret i32 %5
 }
 

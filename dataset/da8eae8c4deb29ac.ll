@@ -5,9 +5,9 @@
 ; php/optimized/glob_wrapper.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000086(i64 %0, ptr %1, ptr %2) #0 {
+define i64 @func0000000000000186(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp eq ptr %2, null
   %5 = select i1 %4, ptr %1, ptr %3
   %6 = getelementptr nusw i8, ptr %5, i64 %0

@@ -11,7 +11,7 @@ entry:
   ret ptr %6
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcHieGia.c.ll
@@ -22,7 +22,6 @@ entry:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/acecMult.c.ll
 ; abc/optimized/acecOrder.c.ll
-; abc/optimized/acecSt.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/bmcBmcS.c.ll
 ; abc/optimized/bmcClp.c.ll

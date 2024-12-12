@@ -5,7 +5,7 @@
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; qemu/optimized/execlog.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000198(ptr %0, ptr %1) #0 {
+define i8 @func0000000000000318(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne ptr %0, null

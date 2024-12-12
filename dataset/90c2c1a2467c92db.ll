@@ -5,7 +5,7 @@
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
@@ -21,7 +21,7 @@ entry:
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1

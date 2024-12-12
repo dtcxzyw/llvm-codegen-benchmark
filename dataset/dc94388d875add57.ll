@@ -3,6 +3,7 @@
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; cvc5/optimized/simplex.cpp.ll
@@ -47,7 +48,6 @@
 ; postgres/optimized/reorderbuffer.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_vvfat.c.ll
-; quickjs/optimized/quickjs.ll
 ; redis/optimized/hyperloglog.ll
 ; rocksdb/optimized/compaction_job.cc.ll
 ; sqlite/optimized/sqlite3.ll
@@ -82,13 +82,13 @@ entry:
 ; darktable/optimized/introspection_sharpen.c.ll
 ; darktable/optimized/introspection_spots.c.ll
 ; gromacs/optimized/redistribute.cpp.ll
-; icu/optimized/decNumber.ll
 ; icu/optimized/stringpiece.ll
 ; kcp/optimized/ikcp.ll
 ; linux/optimized/addr.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/ldt.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; openjdk/optimized/DrawLine.ll
 ; openjdk/optimized/X11Renderer.ll
 ; openjdk/optimized/archiveHeapWriter.ll

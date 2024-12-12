@@ -14,6 +14,18 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = add nsw i32 %0, -977
+  %4 = add nsw i32 %3, %2
+  %5 = lshr i32 %4, 6
+  ret i32 %5
+}
+
 ; 7 occurrences:
 ; icu/optimized/bytesinkutil.ll
 ; icu/optimized/ucnvsel.ll

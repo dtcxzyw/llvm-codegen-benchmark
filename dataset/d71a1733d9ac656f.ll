@@ -1,5 +1,6 @@
 
 ; 57 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/readdb.c.ll
 ; clamav/optimized/strfn.cpp.ll
 ; cmake/optimized/url.c.ll
@@ -31,7 +32,6 @@
 ; openssl/optimized/openssl-bin-rehash.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
-; php/optimized/hash_adler32.ll
 ; php/optimized/zend_accelerator_util_funcs.ll
 ; postgres/optimized/c_keywords.ll
 ; postgres/optimized/d2s.ll
@@ -65,7 +65,8 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/test_iostream.ll
 ; bullet3/optimized/btSoftBody.ll
 ; clamav/optimized/pdf.c.ll
 ; icu/optimized/bocsu.ll
@@ -82,10 +83,11 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; cpython/optimized/_codecs_cn.ll
+; lvgl/optimized/lv_calendar.ll
 ; postgres/optimized/numutils.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
@@ -95,7 +97,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
-  %3 = urem i32 %2, 10000
+  %3 = urem i32 %2, 7
   ret i32 %3
 }
 

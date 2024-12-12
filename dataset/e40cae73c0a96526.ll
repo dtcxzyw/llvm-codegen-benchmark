@@ -1,5 +1,7 @@
 
-; 18 occurrences:
+; 20 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; opencv/optimized/moments.cpp.ll
 ; opencv/optimized/p3p.cpp.ll

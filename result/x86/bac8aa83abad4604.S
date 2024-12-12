@@ -13,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 	movzbl	%dil, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpl	$-4, %edx
+	cmpl	$94, %edx
 	setb	%al
 	andl	%esi, %edi
 	andb	%al, %dil

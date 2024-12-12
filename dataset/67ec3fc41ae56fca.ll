@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/tls.ll
 ; linux/optimized/yenta_socket.ll
+; lvgl/optimized/lv_label.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; qemu/optimized/hw_char_serial.c.ll
 ; Function Attrs: nounwind

@@ -20,11 +20,25 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000004c(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true
   %4 = icmp ne ptr %0, null
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/value_semantic.ll
+; llvm/optimized/ParseDecl.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(ptr %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = xor i1 %2, true
+  %4 = icmp eq ptr %0, null
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
@@ -41,18 +55,6 @@ entry:
 define i1 @func0000000000000001(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = xor i1 %2, true
-  %4 = icmp eq ptr %0, null
-  %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/ParseDecl.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i8 %1) #0 {
-entry:
-  %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true
   %4 = icmp eq ptr %0, null
   %5 = select i1 %3, i1 %4, i1 false

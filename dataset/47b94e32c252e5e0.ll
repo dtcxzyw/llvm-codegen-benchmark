@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/intel_migrate.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -9,6 +9,8 @@
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
@@ -19,10 +21,11 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; base64-rs/optimized/25sh13l3jgkilua2.ll
+; linux/optimized/lbr.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; Function Attrs: nounwind

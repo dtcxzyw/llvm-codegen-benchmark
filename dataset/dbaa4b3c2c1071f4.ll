@@ -7,11 +7,11 @@
 ; git/optimized/packfile.ll
 ; hwloc/optimized/topology-x86.ll
 ; icu/optimized/messagepattern.ll
+; lief/optimized/psa_crypto_aead.c.ll
 ; linux/optimized/dm-io.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/mcast.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/xmp.cpp.ll
@@ -24,7 +24,7 @@
 ; qemu/optimized/block_qcow2-threads.c.ll
 ; wireshark/optimized/packet-arp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -5
   %3 = icmp eq i32 %1, 1
@@ -33,11 +33,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; hwloc/optimized/topology-x86.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-v5ua.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 9
   %3 = icmp ult i32 %1, 2
@@ -50,7 +49,7 @@ entry:
 ; openmpi/optimized/libmpi_c_profile_la-dist_graph_create.ll
 ; openmpi/optimized/libmpi_c_profile_la-dist_graph_create_adjacent.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000054(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -2
   %3 = icmp sgt i32 %1, -1

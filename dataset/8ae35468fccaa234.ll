@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; assimp/optimized/BlenderScene.cpp.ll
+; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll

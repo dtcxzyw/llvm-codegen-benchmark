@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 44 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/aigCuts.c.ll
@@ -15,19 +15,17 @@
 ; abc/optimized/mapperCut.c.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/validate.cc.ll
-; assimp/optimized/Base64.cpp.ll
+; boost/optimized/area.ll
 ; hyperscan/optimized/Parser.cpp.ll
 ; hyperscan/optimized/control_verbs.cpp.ll
 ; icu/optimized/ucm.ll
 ; icu/optimized/ucnv.ll
+; icu/optimized/uts46.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
 ; libjpeg-turbo/optimized/jclhuff.c.ll
 ; libjpeg-turbo/optimized/jcphuff.c.ll
-; linux/optimized/ptp_kvm_x86.ll
 ; linux/optimized/pvclock.ll
-; linux/optimized/vclock_gettime.ll
 ; luau/optimized/lmem.cpp.ll
-; nanosvg/optimized/nanosvg.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
 ; openjdk/optimized/PathCharsValidator.ll
@@ -41,7 +39,6 @@
 ; protobuf/optimized/tokenizer.cc.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; soc-simulator/optimized/verilated.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF16.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; velox/optimized/DenseHll.cpp.ll

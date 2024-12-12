@@ -1,5 +1,6 @@
 
-; 32 occurrences:
+; 33 occurrences:
+; boost/optimized/sort_by_side.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64MCTargetDesc.cpp.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
@@ -33,7 +34,7 @@
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_array_full.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 4
   %3 = icmp eq i32 %1, 11

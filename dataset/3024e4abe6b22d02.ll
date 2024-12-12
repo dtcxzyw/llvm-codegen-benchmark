@@ -5,7 +5,7 @@
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; opencv/optimized/semantic_segmentation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -19,7 +19,7 @@ entry:
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000068(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_display_power_map.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -60,7 +60,7 @@ entry:
 ; opencv/optimized/accum_layer.cpp.ll
 ; opencv/optimized/scale_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000061(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

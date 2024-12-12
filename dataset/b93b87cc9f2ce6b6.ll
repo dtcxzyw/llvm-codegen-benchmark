@@ -114,9 +114,9 @@ entry:
 ; 1 occurrences:
 ; sentencepiece/optimized/int128.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000063(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 15
+  %2 = icmp samesign ugt i32 %1, 15
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = shl nuw nsw i32 %3, 2
   ret i32 %4
@@ -127,9 +127,9 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000053(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 4
+  %2 = icmp samesign ult i32 %1, 4
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = shl nuw nsw i32 %3, 4
   ret i32 %4
@@ -143,6 +143,17 @@ entry:
   %2 = icmp eq i32 %1, -1
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = shl nuw i32 %3, 1
+  ret i32 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000052(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 65536
+  %3 = select i1 %2, i32 %0, i32 %1
+  %4 = shl nuw i32 %3, 8
   ret i32 %4
 }
 

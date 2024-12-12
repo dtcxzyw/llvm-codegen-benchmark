@@ -1,10 +1,11 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; git/optimized/object-name.ll
 ; libevent/optimized/event_tagging.c.ll
 ; llvm/optimized/CGPointerAuth.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; oiio/optimized/bmpinput.cpp.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll

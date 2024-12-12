@@ -7,7 +7,7 @@ entry:
   %3 = add i32 %2, 7
   %4 = sub nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -20,19 +20,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sub nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = add nsw i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; gromacs/optimized/colvaratoms.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw i32 %2, 1
-  %4 = sub i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -45,19 +33,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = sub i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = add nsw i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/demosaicing.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = sub i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -70,7 +46,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sub i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

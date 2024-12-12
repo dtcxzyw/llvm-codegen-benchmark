@@ -10,7 +10,7 @@ func0000000000000008:                   # @func0000000000000008
 	vzeroupper
 	retq
 .LCPI1_0:
-	.quad	5000                            # 0x1388
+	.quad	8                               # 0x8
 func0000000000000004:                   # @func0000000000000004
 	vpand	%xmm2, %xmm1, %xmm1
 	vpslld	$31, %xmm1, %xmm1

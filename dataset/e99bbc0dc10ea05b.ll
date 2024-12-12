@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; gromacs/optimized/dlarfg.cpp.ll
+; 1 occurrences:
 ; msdfgen/optimized/equation-solver.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0, double %1, double %2) #0 {

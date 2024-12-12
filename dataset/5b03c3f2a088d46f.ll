@@ -1,10 +1,12 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; llvm/optimized/JumpDiagnostics.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/X86ExpandPseudo.cpp.ll
 ; qemu/optimized/hw_net_net_tx_pkt.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i16 %0, i1 %1) #0 {
 entry:

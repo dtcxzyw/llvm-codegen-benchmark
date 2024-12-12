@@ -43,6 +43,16 @@ func0000000000000015:                   # @func0000000000000015
 	addl	$14, %esi
 	subq	%rsi, %rax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	movq	%rdi, %rax
+	addl	$-64, %esi
+	subq	%rsi, %rax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	movq	%rdi, %rax
+	addl	$-48, %esi
+	subq	%rsi, %rax
+	retq
 func0000000000000003:                   # @func0000000000000003
 	movq	%rdi, %rax
 	decl	%esi
@@ -58,11 +68,6 @@ func0000000000000009:                   # @func0000000000000009
 	addl	$-4, %esi
 	subq	%rsi, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	movq	%rdi, %rax
-	addl	$-8, %esi
-	subq	%rsi, %rax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	movq	%rdi, %rax
 	incl	%esi
@@ -71,11 +76,6 @@ func000000000000000a:                   # @func000000000000000a
 func000000000000000c:                   # @func000000000000000c
 	movq	%rdi, %rax
 	decl	%esi
-	subq	%rsi, %rax
-	retq
-func0000000000000005:                   # @func0000000000000005
-	movq	%rdi, %rax
-	addl	$-20, %esi
 	subq	%rsi, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006

@@ -1,9 +1,8 @@
 
-; 141 occurrences:
+; 140 occurrences:
 ; abc/optimized/aigDfs.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; freetype/optimized/cff.c.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/iommu.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/pci.ll
@@ -142,7 +141,7 @@
 ; spike/optimized/vzext_vf4.ll
 ; spike/optimized/vzext_vf8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = and i64 %0, 256
@@ -191,15 +190,13 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; abc/optimized/darBalance.c.ll
 ; coreutils-rs/optimized/tq1d77uuiq535i2.ll
-; linux/optimized/hugetlb.ll
-; linux/optimized/mprotect.ll
 ; linux/optimized/nfs4state.ll
 ; linux/optimized/set_memory.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967168
   %3 = and i64 %0, 7
@@ -225,30 +222,6 @@ entry:
   %3 = and i64 %0, 2047
   %4 = or i64 %3, %2
   %5 = icmp ne i64 %4, 0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/synaptics.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 255
-  %3 = and i64 %0, 3840
-  %4 = or disjoint i64 %3, %2
-  %5 = icmp ult i64 %4, 1797
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/synaptics.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 255
-  %3 = and i64 %0, 3840
-  %4 = or disjoint i64 %3, %2
-  %5 = icmp ugt i64 %4, 1796
   ret i1 %5
 }
 

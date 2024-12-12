@@ -3,13 +3,23 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001c1:                   # @func00000000000001c1
 	leaq	5(%rdi,%rsi), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func00000000000001e1:                   # @func00000000000001e1
+	leaq	2(%rdi,%rsi), %rax
+	cmpq	%rdi, %rax
+	sete	%al
+	retq
+func0000000000000061:                   # @func0000000000000061
 	leaq	2(%rdi,%rsi,2), %rax
+	cmpq	%rdi, %rax
+	sete	%al
+	retq
+func0000000000000181:                   # @func0000000000000181
+	leaq	1(%rdi,%rsi), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq

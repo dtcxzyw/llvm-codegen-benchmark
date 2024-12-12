@@ -1,19 +1,29 @@
 
-; 9 occurrences:
+; 4 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = icmp samesign ult i32 %3, 16
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 5 occurrences:
 ; cpython/optimized/assemble.ll
 ; freetype/optimized/sdf.c.ll
 ; linux/optimized/intel_guc_submission.ll
-; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; openjdk/optimized/parse1.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = icmp ult i32 %3, 16
+  %4 = icmp ult i32 %3, 9
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -65,7 +75,7 @@ entry:
   ret i1 %4
 }
 
-; 21 occurrences:
+; 25 occurrences:
 ; darktable/optimized/colorpicker.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; icu/optimized/number_decimalquantity.ll
@@ -76,6 +86,8 @@ entry:
 ; linux/optimized/sg.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; nuklear/optimized/unity.c.ll
 ; opencv/optimized/blenders.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -87,6 +99,8 @@ entry:
 ; redis/optimized/redis-benchmark.ll
 ; wireshark/optimized/packet-fcswils.c.ll
 ; wireshark/optimized/packet-lbmpdm.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -102,7 +116,7 @@ entry:
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/relocator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ult i32 %3, 32
@@ -110,7 +124,7 @@ entry:
   ret i1 %5
 }
 
-; 40 occurrences:
+; 44 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -122,6 +136,7 @@ entry:
 ; graphviz/optimized/sfprint.c.ll
 ; gromacs/optimized/gmx_disre.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
+; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/rbt_data.ll
 ; icu/optimized/reldtfmt.ll
@@ -129,6 +144,7 @@ entry:
 ; icu/optimized/utext.ll
 ; linux/optimized/intel_vrr.ll
 ; linux/optimized/seq_memory.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
@@ -137,6 +153,7 @@ entry:
 ; ncnn/optimized/padding_x86_avx.cpp.ll
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
+; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; oiio/optimized/pnginput.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
@@ -148,11 +165,12 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
+; tev/optimized/ImageViewer.cpp.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = select i1 %3, i1 %0, i1 false
@@ -168,7 +186,7 @@ entry:
 ; wireshark/optimized/packet-ldp.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp slt i32 %3, 6

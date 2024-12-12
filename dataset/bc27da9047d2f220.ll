@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; c3c/optimized/parse_expr.c.ll
 ; cmake/optimized/json_value.cpp.ll
 ; curl/optimized/libcurl_la-curl_sasl.ll
@@ -27,7 +27,6 @@
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; php/optimized/util.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-ipmi-se.c.ll
 ; z3/optimized/bv_decl_plugin.cpp.ll
@@ -35,9 +34,9 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0, i16 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i16 256, i16 0
-  %4 = or disjoint i16 %3, %0
-  %5 = and i16 %1, 3072
+  %3 = select i1 %2, i16 8, i16 0
+  %4 = or disjoint i16 %0, %3
+  %5 = and i16 %1, -25
   %6 = or disjoint i16 %4, %5
   ret i16 %6
 }
@@ -48,7 +47,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i16 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i16 0, i16 -32768
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = and i16 %1, 8503
   %6 = or i16 %4, %5
   ret i16 %6
@@ -61,7 +60,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i16 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i16 512, i16 0
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = and i16 %1, -2048
   %6 = or i16 %4, %5
   ret i16 %6

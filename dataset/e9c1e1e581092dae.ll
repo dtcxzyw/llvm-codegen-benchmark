@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; mitsuba3/optimized/mesh.cpp.ll
 ; openssl/optimized/openssl-bin-srp.ll
 ; postgres/optimized/pg_dump.ll
-; proj/optimized/crs.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {
 entry:
@@ -13,16 +12,17 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; clamav/optimized/hfsplus.c.ll
+; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; git/optimized/init-db.ll
 ; openssl/optimized/libdefault-lib-rsa_kmgmt.ll
 ; php/optimized/phar.ll
 ; postgres/optimized/analyzejoins.ll
 ; postgres/optimized/launcher.ll
 ; rocksdb/optimized/db_impl_write.cc.ll
+; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
-; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
 ; rust-analyzer-rs/optimized/2jezmucvqvfiuhvx.ll
 ; rust-analyzer-rs/optimized/84mgk0fwp2eksq1.ll
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll

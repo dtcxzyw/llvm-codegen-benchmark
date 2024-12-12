@@ -1,5 +1,5 @@
 
-; 568 occurrences:
+; 567 occurrences:
 ; abc/optimized/aigMffc.c.ll
 ; abc/optimized/aigObj.c.ll
 ; abc/optimized/aigUtil.c.ll
@@ -138,7 +138,6 @@
 ; cvc5/optimized/eq_proof.cpp.ll
 ; cvc5/optimized/eqc_info.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; cvc5/optimized/equality_engine_iterator.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
 ; cvc5/optimized/equality_solver.cpp.ll
 ; cvc5/optimized/equality_substitution.cpp.ll

@@ -46,7 +46,7 @@ entry:
   %2 = shl i32 %1, 14
   %3 = and i32 %2, 16384
   %.masked = and i32 %0, -4162048
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   ret i32 %4
 }
 
@@ -77,7 +77,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 12
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, 63488
   ret i32 %4
 }
@@ -105,7 +105,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 8
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, 509
   ret i32 %4
 }

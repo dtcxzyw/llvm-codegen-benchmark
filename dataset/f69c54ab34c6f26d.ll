@@ -1,5 +1,6 @@
 
-; 96 occurrences:
+; 95 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -67,7 +68,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -94,7 +94,6 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -105,7 +104,7 @@ entry:
   ret i64 %4
 }
 
-; 233 occurrences:
+; 232 occurrences:
 ; abseil-cpp/optimized/log_severity_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
@@ -118,6 +117,8 @@ entry:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/topology.ll
 ; ceres/optimized/gradient_problem_solver.cc.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
@@ -183,7 +184,6 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/nodedef.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/test.cpp.ll
@@ -244,13 +244,11 @@ entry:
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/search.ll
 ; nix/optimized/store-api.ll
-; nix/optimized/why-depends.ll
 ; nori/optimized/textbox.cpp.ll
 ; ocio/optimized/BuiltinConfigRegistry.cpp.ll
 ; ocio/optimized/Config.cpp.ll

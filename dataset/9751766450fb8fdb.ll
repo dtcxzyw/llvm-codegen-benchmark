@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/apic.ll
 ; linux/optimized/clockevents.ll
@@ -15,7 +15,6 @@
 ; linux/optimized/stop_machine.ll
 ; linux/optimized/svcauth_gss.ll
 ; linux/optimized/tick-broadcast.ll
-; linux/optimized/tick-common.ll
 ; linux/optimized/vector.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; qemu/optimized/hw_acpi_core.c.ll

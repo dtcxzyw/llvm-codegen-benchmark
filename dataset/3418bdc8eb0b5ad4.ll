@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/cache.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -23,7 +23,7 @@ entry:
 ; ncnn/optimized/pooling1d.cpp.ll
 ; ncnn/optimized/pooling3d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; taskflow/optimized/parallel_for.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = sext i32 %3 to i64

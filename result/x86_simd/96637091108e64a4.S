@@ -113,7 +113,7 @@ func0000000000000005:                   # @func0000000000000005
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI7_1(%rip), %ymm1   # ymm1 = [2,2,2,2,2,2,2,2]
 	vpbroadcastd	.LCPI7_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI8_0:
 	.long	4294967294                      # 0xfffffffe

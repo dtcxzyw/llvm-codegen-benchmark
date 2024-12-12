@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/envelope_multi.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
 ; openjdk/optimized/ProcessPath.ll

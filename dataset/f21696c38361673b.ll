@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c7(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000187(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %1, 0

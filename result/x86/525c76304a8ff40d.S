@@ -1,5 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
-	leal	(%rdi,%rsi,4), %eax
+	shll	$20, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
 	leal	(%rdi,%rsi,2), %eax
@@ -49,13 +50,13 @@ func0000000000000006:                   # @func0000000000000006
 	shll	$4, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
+func000000000000001a:                   # @func000000000000001a
+	shll	$21, %esi
+	leal	(%rsi,%rdi), %eax
+	retq
 func000000000000001b:                   # @func000000000000001b
 	leal	(%rdi,%rsi,2), %eax
 	retq
 func0000000000000011:                   # @func0000000000000011
 	leal	(%rdi,%rsi,2), %eax
-	retq
-func000000000000001a:                   # @func000000000000001a
-	shll	$15, %esi
-	leal	(%rsi,%rdi), %eax
 	retq

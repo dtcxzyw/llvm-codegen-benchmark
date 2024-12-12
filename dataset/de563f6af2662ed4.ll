@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; c3c/optimized/semantic_analyser.c.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -31,7 +31,6 @@
 ; mitsuba3/optimized/x86emithelper.cpp.ll
 ; nuttx/optimized/fs_poll.c.ll
 ; oniguruma/optimized/regcomp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; php/optimized/zend_API.ll
 ; php/optimized/zend_inheritance.ll

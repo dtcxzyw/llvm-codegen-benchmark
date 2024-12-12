@@ -4,7 +4,7 @@
 ; linux/optimized/page_alloc.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0) #0 {
+define i1 @func0000000000000101(i32 %0) #0 {
 entry:
   ret i1 false
 }

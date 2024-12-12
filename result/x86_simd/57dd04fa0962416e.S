@@ -3,7 +3,7 @@ func0000000000000070:                   # @func0000000000000070
 	vpsubd	%xmm3, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllvq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
@@ -18,12 +18,12 @@ func0000000000000030:                   # @func0000000000000030
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllvq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllvq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

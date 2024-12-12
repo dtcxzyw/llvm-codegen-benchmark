@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/numeric.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000030a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -53,7 +53,7 @@ entry:
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 1
   %4 = select i1 %3, i64 %0, i64 %1
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; openvdb/optimized/StreamCompression.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 80
   %4 = select i1 %3, i64 %0, i64 %1
@@ -74,12 +74,13 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; curl/optimized/libcurl_la-mqtt.ll
+; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -91,7 +92,7 @@ entry:
 ; linux/optimized/i915_vma.ll
 ; llvm/optimized/DWARFTypePrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 4294967040
   %4 = select i1 %3, i64 %0, i64 %1
@@ -103,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = select i1 %3, i64 %0, i64 %1
@@ -116,7 +117,7 @@ entry:
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000304(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 69
   %4 = select i1 %3, i64 %0, i64 %1

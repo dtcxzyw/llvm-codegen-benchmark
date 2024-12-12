@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 53 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; clamav/optimized/readdb.c.ll
@@ -49,6 +49,7 @@
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
 ; wireshark/optimized/blf.c.ll
 ; yalantinglibs/optimized/conformance.struct_pb.cc.ll
 ; zstd/optimized/zstd_compress.c.ll
@@ -61,7 +62,8 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; git/optimized/pack-mtimes.ll
 ; hermes/optimized/JSProxy.cpp.ll

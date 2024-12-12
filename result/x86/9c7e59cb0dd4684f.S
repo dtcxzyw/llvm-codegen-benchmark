@@ -14,11 +14,3 @@ func0000000000000003:                   # @func0000000000000003
 	cmoveq	%rdx, %rax
 	addq	$8, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	xorl	%eax, %eax
-	testb	$1, %sil
-	cmoveq	%rax, %rdx
-	testb	$1, %dil
-	cmoveq	%rdx, %rax
-	addq	$4, %rax
-	retq

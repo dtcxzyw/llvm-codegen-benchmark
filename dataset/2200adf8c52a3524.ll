@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; crow/optimized/example.cpp.ll
@@ -15,7 +15,6 @@
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; typst-rs/optimized/2llfsdqplv1n1omy.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/HugeInt.cpp.ll
 ; wireshark/optimized/packet-dbus.c.ll
 ; Function Attrs: nounwind

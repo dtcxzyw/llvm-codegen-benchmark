@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; glslang/optimized/Initialize.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pairlist_simd_kernel.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; slurm/optimized/eval_nodes_block.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind

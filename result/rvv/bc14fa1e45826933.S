@@ -4,7 +4,7 @@ func0000000000000005:                   # @func0000000000000005
 	vfmul.vf	v10, v10, fa5
 	vfcvt.rtz.x.f.v	v10, v10
 	vadd.vv	v10, v10, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 281194

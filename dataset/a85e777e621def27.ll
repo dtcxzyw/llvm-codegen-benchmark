@@ -9,12 +9,13 @@
 define i32 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 31
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -27,7 +28,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 5
   ret i32 %4
 }
@@ -38,7 +39,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 5
   ret i32 %4
 }

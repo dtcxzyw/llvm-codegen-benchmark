@@ -29,3 +29,13 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	xorb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	shrq	$32, %rsi
+	setne	%al
+	xorb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$676, %rsi                      # imm = 0x2A4
+	setb	%al
+	xorb	%dil, %al
+	retq

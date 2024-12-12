@@ -3,6 +3,6 @@ func0000000000000012:                   # @func0000000000000012
 	shlxq	%rdx, %rax, %rcx
 	addq	%rsi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	setbe	%al
+	cmpq	%rcx, %rdi
+	setae	%al
 	retq

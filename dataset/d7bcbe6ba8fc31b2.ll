@@ -1,12 +1,12 @@
 
 ; 9 occurrences:
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/decode.c.ll
 ; cpython/optimized/longobject.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/machine_kexec_64.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
@@ -15,16 +15,14 @@ entry:
   %2 = and i64 %1, 73184
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 1, i64 2
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 10 occurrences:
-; abc/optimized/nmApi.c.ll
+; 8 occurrences:
 ; abc/optimized/satStore.c.ll
 ; linux/optimized/truncate.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVOptWInstrs.cpp.ll
@@ -51,7 +49,7 @@ entry:
   %2 = and i64 %1, 72057594037927936
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 -16383, i64 -16382
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

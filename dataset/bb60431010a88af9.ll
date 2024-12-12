@@ -11,7 +11,7 @@
 ; velox/optimized/MmapAllocator.cpp.ll
 ; velox/optimized/StreamArena.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp eq ptr %0, null

@@ -7,6 +7,7 @@
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; ninja/optimized/build.cc.ll
 ; opencc/optimized/louds-trie.cc.ll
@@ -19,7 +20,6 @@
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
-; qemu/optimized/util_buffer.c.ll
 ; qemu/optimized/util_qht.c.ll
 ; redis/optimized/geo.ll
 ; ruby/optimized/bignum.ll

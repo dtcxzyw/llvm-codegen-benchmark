@@ -1,5 +1,5 @@
 
-; 241 occurrences:
+; 240 occurrences:
 ; lief/optimized/GnuHash.cpp.ll
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
@@ -118,7 +118,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll

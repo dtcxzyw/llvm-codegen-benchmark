@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 38 occurrences:
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/introspection_tonemap.cc.ll
@@ -30,8 +30,6 @@
 ; gromacs/optimized/position_restraints.cpp.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; gromacs/optimized/velocityscalingtemperaturecoupling.cpp.ll

@@ -22,13 +22,14 @@ define i64 @func000000000000000c(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = mul nuw nsw i128 %3, 6364136223846793005
-  %5 = xor i128 %4, %1
+  %5 = xor i128 %1, %4
   %6 = trunc i128 %5 to i64
-  %7 = xor i64 %6, %0
+  %7 = xor i64 %0, %6
   ret i64 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
 ; quantlib/optimized/gaussian1dmodel.ll
@@ -38,9 +39,9 @@ define i64 @func0000000000000008(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = mul nuw i128 %3, 16088033396387240377
-  %5 = xor i128 %4, %1
+  %5 = xor i128 %1, %4
   %6 = trunc i128 %5 to i64
-  %7 = xor i64 %6, %0
+  %7 = xor i64 %0, %6
   ret i64 %7
 }
 

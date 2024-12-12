@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	xorb	$1, %sil
 	cmpb	$2, %dl
 	setb	%al
@@ -19,7 +19,7 @@ func0000000000000018:                   # @func0000000000000018
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	xorb	$1, %sil
 	cmpb	$3, %dl
 	setae	%al

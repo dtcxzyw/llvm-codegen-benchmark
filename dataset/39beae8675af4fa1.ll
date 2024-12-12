@@ -19,7 +19,7 @@ entry:
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000208(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000201(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3

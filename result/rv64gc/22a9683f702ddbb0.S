@@ -3,6 +3,11 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 71
 	andi	a0, a0, 255
 	ret
+func0000000000000015:                   # @func0000000000000015
+	add	a0, a0, a1
+	addi	a0, a0, 1
+	andi	a0, a0, 3
+	ret
 func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	addi	a0, a0, 25

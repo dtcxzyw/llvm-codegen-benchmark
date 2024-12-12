@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; Function Attrs: nounwind
@@ -11,7 +10,7 @@ entry:
   %3 = and i32 %2, 24
   %4 = shl nuw i32 255, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 
@@ -25,7 +24,7 @@ entry:
   %3 = and i32 %2, 24
   %4 = shl i32 16777215, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 
@@ -38,7 +37,7 @@ entry:
   %3 = and i32 %2, 30
   %4 = shl nuw i32 3, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 
@@ -61,7 +60,7 @@ entry:
   %3 = and i32 %2, 30
   %4 = shl nuw i32 3, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 

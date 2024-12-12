@@ -27,4 +27,16 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; eastl/optimized/TestSort.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002e(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 3
+  %3 = lshr i64 %0, 1
+  %4 = sub nuw nsw i64 %3, %2
+  %5 = shl nuw i64 %4, 3
+  ret i64 %5
+}
+
 attributes #0 = { nounwind }

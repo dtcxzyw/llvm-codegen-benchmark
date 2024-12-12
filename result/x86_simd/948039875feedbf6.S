@@ -18,7 +18,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 .LCPI2_0:
 	.zero	16,1
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	knotw	%k0, %k0
@@ -28,11 +28,21 @@ func0000000000000010:                   # @func0000000000000010
 	retq
 .LCPI3_0:
 	.zero	16,2
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	knotw	%k0, %k0
 	vpcmpltub	.LCPI3_0(%rip), %xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI4_0:
+	.zero	16,11
+func0000000000000008:                   # @func0000000000000008
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k0
+	knotw	%k0, %k0
+	vpcmpltub	.LCPI4_0(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

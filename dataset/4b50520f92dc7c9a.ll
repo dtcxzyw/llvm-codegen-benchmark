@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; cvc5/optimized/cadical.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp eq i64 %1, 0

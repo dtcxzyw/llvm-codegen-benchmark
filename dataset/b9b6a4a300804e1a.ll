@@ -18,10 +18,10 @@
 ; openexr/optimized/internal_dwa.c.ll
 ; openexr/optimized/pack.c.ll
 ; openexr/optimized/unpack.c.ll
+; openusd/optimized/level.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -36,8 +36,8 @@
 define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -369
-  %3 = or i16 %2, %0
-  %4 = or i16 %3, 256
+  %3 = or disjoint i16 %2, 256
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 

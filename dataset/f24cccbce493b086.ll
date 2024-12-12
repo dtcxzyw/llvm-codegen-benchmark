@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -7,6 +7,7 @@
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; icu/optimized/olsontz.ll
+; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/json.cpp.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; ruby/optimized/compile.ll

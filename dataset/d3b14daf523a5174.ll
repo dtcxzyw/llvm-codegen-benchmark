@@ -1,5 +1,6 @@
 
-; 32 occurrences:
+; 33 occurrences:
+; boost/optimized/any_params_iter.ll
 ; coreutils-rs/optimized/2eb96ulhupdvrip8.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/quant_util.cpp.ll
@@ -36,7 +37,7 @@
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

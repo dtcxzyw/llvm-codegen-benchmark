@@ -11,6 +11,31 @@ entry:
   ret i1 %6
 }
 
+; 14 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; graphviz/optimized/intersection.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp olt double %1, %0
+  %4 = select i1 %3, double %0, double %1
+  %5 = fmul double %2, 1.000000e-02
+  %6 = fcmp ole double %4, %5
+  ret i1 %6
+}
+
 ; 3 occurrences:
 ; opencv/optimized/edge_drawing.cpp.ll
 ; zxing/optimized/AZDetector.cpp.ll
@@ -51,18 +76,6 @@ entry:
   %4 = select i1 %3, double %0, double %1
   %5 = fmul double %2, 0x3EB0C6F7A0B5ED8D
   %6 = fcmp olt double %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; graphviz/optimized/intersection.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp olt double %0, %1
-  %4 = select i1 %3, double %0, double %1
-  %5 = fmul double %2, 1.000000e-02
-  %6 = fcmp ole double %4, %5
   ret i1 %6
 }
 

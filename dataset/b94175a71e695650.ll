@@ -230,7 +230,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000005a(i64 %0, i1 %1, i32 %2) #0 {
+define i64 @func00000000000000aa(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = sub nsw i32 1, %2

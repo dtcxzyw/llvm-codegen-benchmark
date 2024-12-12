@@ -16,8 +16,10 @@ entry:
   ret i16 %4
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; abc/optimized/deflate.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/deflate.c.ll
 ; gromacs/optimized/deflate.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -44,17 +46,19 @@ entry:
   ret i16 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
+; boost/optimized/gregorian.ll
 ; libzmq/optimized/mtrie.cpp.ll
 ; libzmq/optimized/trie.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = trunc nsw i32 %2 to i16
-  %4 = add nsw i16 %3, 62
+  %4 = add nsw i16 %3, 700
   ret i16 %4
 }
 

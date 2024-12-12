@@ -18,8 +18,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$1, %edi
 	sbbl	%eax, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	xorl	%eax, %eax
 	cmpl	$2, %edi
 	sbbl	%eax, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpl	$601, %edi                      # imm = 0x259
+	adcb	$-1, %al
 	retq

@@ -21,16 +21,14 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 7 occurrences:
+; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/position_restraints.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/principledthin.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
-; opencv/optimized/optical_flow_evaluation.cpp.ll
-; opencv/optimized/pcaflow_demo.cpp.ll
-; opencv/optimized/tvl1_optical_flow.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, float %2) #0 {
 entry:
@@ -40,13 +38,12 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; bullet3/optimized/SphereTriangleDetector.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
-; lodepng/optimized/lodepng_util.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
@@ -104,8 +101,7 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; gromacs/optimized/nb_free_energy.cpp.ll
+; 2 occurrences:
 ; oiio/optimized/exroutput.cpp.ll
 ; postgres/optimized/float.ll
 ; Function Attrs: nounwind
@@ -117,8 +113,7 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; meshlab/optimized/edit_point.cpp.ll
+; 2 occurrences:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; Function Attrs: nounwind

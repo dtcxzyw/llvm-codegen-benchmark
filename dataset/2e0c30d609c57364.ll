@@ -13,18 +13,6 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; mitsuba3/optimized/x86instapi.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 256
-  %4 = select i1 %3, i1 %1, i1 false
-  %5 = or disjoint i32 %0, 16384
-  %6 = select i1 %4, i32 %5, i32 %0
-  ret i32 %6
-}
-
 ; 2 occurrences:
 ; openssl/optimized/libssl-lib-ssl_ciph.ll
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
@@ -51,8 +39,7 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
-; linux/optimized/feat_ctl.ll
+; 2 occurrences:
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/memfd.ll
 ; Function Attrs: nounwind

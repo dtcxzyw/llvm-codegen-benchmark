@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
@@ -7,7 +7,6 @@
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/restcbt.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -35,7 +34,7 @@ define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fneg float %1
   %4 = fdiv float %3, %2
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

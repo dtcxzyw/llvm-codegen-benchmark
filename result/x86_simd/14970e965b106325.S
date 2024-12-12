@@ -17,7 +17,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	1                               # 0x1
 .LCPI1_2:
 	.long	128                             # 0x80
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsllw	$15, %xmm2, %xmm2
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm2, %k1

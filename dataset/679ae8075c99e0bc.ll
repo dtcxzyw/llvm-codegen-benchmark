@@ -1,23 +1,22 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; coreutils-rs/optimized/h500puk7vtt6aeh.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; llvm/optimized/CGDeclCXX.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 1023
+  %2 = and i64 %1, 2047
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %0, i1 %3, i1 false
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 true, i1 %3
   ret i1 %4
 }
 
-; 9 occurrences:
-; eastl/optimized/TestString.cpp.ll
+; 8 occurrences:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
@@ -49,10 +48,22 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775776
   %3 = icmp eq i64 %2, 0
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 true, i1 %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; eastl/optimized/TestString.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 9223372036854775806
+  %3 = icmp ne i64 %2, 0
   %not. = xor i1 %0, true
   %4 = select i1 %not., i1 true, i1 %3
   ret i1 %4

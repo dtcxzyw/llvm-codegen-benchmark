@@ -1,5 +1,5 @@
 
-; 263 occurrences:
+; 265 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -24,6 +24,7 @@
 ; assimp/optimized/MaterialSystem.cpp.ll
 ; assimp/optimized/PostStepRegistry.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
@@ -213,6 +214,7 @@
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
+; spike/optimized/vsadd_vi.ll
 ; spike/optimized/vsm3c_vi.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image_write.c.ll
@@ -267,11 +269,11 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; bullet3/optimized/b3BulletFile.ll
 ; bullet3/optimized/b3DNA.ll
 ; bullet3/optimized/b3File.ll
@@ -282,6 +284,7 @@ entry:
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; oiio/optimized/imageio.cpp.ll
+; opencv/optimized/hough.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/vtableStubs.ll
 ; openmpi/optimized/coll_base_topo.ll

@@ -1,15 +1,10 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	cmlt	v4.4s, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	usra	v0.4s, v4.4s, #26
-	sshr	v3.2d, v1.2d, #3
-	sshr	v1.2d, v2.2d, #3
-	sshr	v0.4s, v0.4s, #6
-	sshll	v2.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	sub	v1.2d, v0.2d, v1.2d
-	sub	v0.2d, v2.2d, v3.2d
+	add	w8, w0, #63
+	cmp	w0, #0
+	sub	x9, x1, x2
+	csel	w8, w8, w0, lt
+	sbfx	x8, x8, #6, #26
+	sub	x0, x8, x9, asr #3
 	ret
                                         // -- End function

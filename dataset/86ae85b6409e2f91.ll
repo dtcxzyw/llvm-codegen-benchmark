@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; glslang/optimized/iomapper.cpp.ll
@@ -16,7 +16,6 @@
 ; openusd/optimized/restoration.c.ll
 ; php/optimized/output.ll
 ; ruby/optimized/io.ll
-; ruby/optimized/ractor.ll
 ; ruby/optimized/transcode.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
@@ -24,11 +23,12 @@ define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 4
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -55,7 +55,7 @@ define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 4
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -79,7 +79,7 @@ define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 14
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -91,7 +91,7 @@ define i32 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -113,11 +113,12 @@ define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 24
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 99 occurrences:
+; 100 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -222,18 +223,7 @@ define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 1844674407370955162
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; eastl/optimized/TestBitset.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 1
-  %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

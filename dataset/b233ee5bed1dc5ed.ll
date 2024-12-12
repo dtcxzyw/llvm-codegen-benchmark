@@ -1,7 +1,47 @@
 
-%"class.std::reference_wrapper.479.2852071" = type { ptr }
+%"class.std::reference_wrapper.479.2963746" = type { ptr }
+%"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t.3116250" = type <{ %"struct.std::pair.3116249", i32, [4 x i8] }>
+%"struct.std::pair.3116249" = type { %"struct.Yosys::RTLIL::IdString.3116149", %"struct.Yosys::RTLIL::Const.3116244" }
+%"struct.Yosys::RTLIL::IdString.3116149" = type { i32 }
+%"struct.Yosys::RTLIL::Const.3116244" = type { i32, %"class.std::vector.188.3116245" }
+%"class.std::vector.188.3116245" = type { %"struct.std::_Vector_base.189.3116246" }
+%"struct.std::_Vector_base.189.3116246" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3116247" }
+%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3116247" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3116248" }
+%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3116248" = type { ptr, ptr, ptr }
+%"struct.Yosys::MemRd.3126372" = type { %"struct.Yosys::RTLIL::AttrObject.3126327", i8, ptr, i32, i8, i8, i8, %"struct.Yosys::RTLIL::Const.3126318", %"struct.Yosys::RTLIL::Const.3126318", %"struct.Yosys::RTLIL::Const.3126318", %"class.std::vector.693.3126297", %"class.std::vector.693.3126297", %"struct.Yosys::RTLIL::SigSpec.3126152", %"struct.Yosys::RTLIL::SigSpec.3126152", %"struct.Yosys::RTLIL::SigSpec.3126152", %"struct.Yosys::RTLIL::SigSpec.3126152", %"struct.Yosys::RTLIL::SigSpec.3126152", %"struct.Yosys::RTLIL::SigSpec.3126152" }
+%"struct.Yosys::RTLIL::AttrObject.3126327" = type { %"class.Yosys::hashlib::dict.68.3126331" }
+%"class.Yosys::hashlib::dict.68.3126331" = type <{ %"class.std::vector.3.3126136", %"class.std::vector.69.3126332", %"struct.Yosys::hashlib::hash_ops.42.3126191", [7 x i8] }>
+%"class.std::vector.3.3126136" = type { %"struct.std::_Vector_base.4.3126137" }
+%"struct.std::_Vector_base.4.3126137" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3126138" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3126138" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3126139" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3126139" = type { ptr, ptr, ptr }
+%"class.std::vector.69.3126332" = type { %"struct.std::_Vector_base.70.3126333" }
+%"struct.std::_Vector_base.70.3126333" = type { %"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl.3126334" }
+%"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl.3126334" = type { %"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl_data.3126335" }
+%"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl_data.3126335" = type { ptr, ptr, ptr }
+%"struct.Yosys::hashlib::hash_ops.42.3126191" = type { i8 }
+%"struct.Yosys::RTLIL::Const.3126318" = type { i32, %"class.std::vector.606.3126319" }
+%"class.std::vector.606.3126319" = type { %"struct.std::_Vector_base.607.3126320" }
+%"struct.std::_Vector_base.607.3126320" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3126321" }
+%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3126321" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3126322" }
+%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3126322" = type { ptr, ptr, ptr }
+%"class.std::vector.693.3126297" = type { %"struct.std::_Bvector_base.3126298" }
+%"struct.std::_Bvector_base.3126298" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3126299" }
+%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3126299" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3126300" }
+%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3126300" = type { %"struct.std::_Bit_iterator.3126301", %"struct.std::_Bit_iterator.3126301", ptr }
+%"struct.std::_Bit_iterator.3126301" = type { %"struct.std::_Bit_iterator_base.base.3126302", [4 x i8] }
+%"struct.std::_Bit_iterator_base.base.3126302" = type <{ ptr, i32 }>
+%"struct.Yosys::RTLIL::SigSpec.3126152" = type { i32, i64, %"class.std::vector.276.3126153", %"class.std::vector.281.3126154" }
+%"class.std::vector.276.3126153" = type { %"struct.std::_Vector_base.277.3126155" }
+%"struct.std::_Vector_base.277.3126155" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3126156" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3126156" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3126157" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3126157" = type { ptr, ptr, ptr }
+%"class.std::vector.281.3126154" = type { %"struct.std::_Vector_base.282.3126158" }
+%"struct.std::_Vector_base.282.3126158" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3126159" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3126159" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3126160" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3126160" = type { ptr, ptr, ptr }
 
-; 10 occurrences:
+; 11 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -11,6 +51,7 @@
 ; darktable/optimized/print_settings.c.ll
 ; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/nf_conntrack_sip.ll
+; postgres/optimized/gindatapage.ll
 ; ruby/optimized/parse.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
@@ -22,35 +63,20 @@ entry:
   ret i1 %6
 }
 
-; 23 occurrences:
-; assimp/optimized/LWOMaterial.cpp.ll
-; cmake/optimized/archive_read_support_format_zip.c.ll
-; cmake/optimized/cmDebuggerAdapter.cxx.ll
-; cmake/optimized/cmDebuggerBreakpointManager.cxx.ll
-; cmake/optimized/cmDebuggerThread.cxx.ll
-; cmake/optimized/jsoncpp_json_serializer.cpp.ll
-; cmake/optimized/protocol_events.cpp.ll
-; cmake/optimized/protocol_requests.cpp.ll
-; cmake/optimized/protocol_response.cpp.ll
-; cmake/optimized/protocol_types.cpp.ll
-; cmake/optimized/typeof.cpp.ll
-; cmake/optimized/zstd_fast.c.ll
-; freetype/optimized/ftstroke.c.ll
-; icu/optimized/decNumber.ll
-; jq/optimized/decNumber.ll
-; lodepng/optimized/lodepng_util.cpp.ll
+; 8 occurrences:
 ; luajit/optimized/lj_err.ll
 ; luajit/optimized/lj_err_dyn.ll
+; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
-; redis/optimized/ziplist.ll
+; openusd/optimized/lz4.cpp.ll
 ; ruby/optimized/ripper.ll
-; zstd/optimized/zstd_fast.c.ll
+; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000564(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 4
   %5 = getelementptr nusw i8, ptr %0, i64 -2
   %6 = icmp ult ptr %4, %5
   ret i1 %6
@@ -60,41 +86,78 @@ entry:
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; linux/optimized/cgroup.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i64, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
-  %5 = getelementptr nusw i8, ptr %0, i64 16656
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16656
   %6 = icmp eq ptr %4, %5
   ret i1 %6
 }
 
-; 8 occurrences:
-; cmake/optimized/zstd_double_fast.c.ll
-; freetype/optimized/pfr.c.ll
-; freetype/optimized/sfnt.c.ll
-; git/optimized/dir.ll
-; openusd/optimized/lz4.cpp.ll
+; 2 occurrences:
 ; php/optimized/parse_iso_intervals.ll
 ; php/optimized/pdo_sql_parser.ll
-; zstd/optimized/zstd_double_fast.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a8(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000005e8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 20
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 20
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
 }
 
-; 1 occurrences:
-; assimp/optimized/XFileParser.cpp.ll
+; 3 occurrences:
+; icu/optimized/decNumber.ll
+; jq/optimized/decNumber.ll
+; lodepng/optimized/lodepng_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000224(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000007e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 3
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 10
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = icmp ult ptr %4, %5
+  ret i1 %6
+}
+
+; 14 occurrences:
+; assimp/optimized/LWOMaterial.cpp.ll
+; cmake/optimized/archive_read_support_format_zip.c.ll
+; cmake/optimized/zstd_fast.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; freetype/optimized/ftstroke.c.ll
+; lz4/optimized/lz4.c.ll
+; lz4/optimized/lz4hc.c.ll
+; openusd/optimized/lz4.cpp.ll
+; redis/optimized/ziplist.ll
+; zstd/optimized/zstd_fast.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000764(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  %5 = getelementptr nusw i8, ptr %0, i64 -12
+  %6 = icmp ult ptr %4, %5
+  ret i1 %6
+}
+
+; 5 occurrences:
+; assimp/optimized/XFileParser.cpp.ll
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
+; wasmtime-rs/optimized/1zz7jsxv168dc7km.ll
+; yosys/optimized/lz4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000664(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 3
   %5 = getelementptr i8, ptr %0, i64 -1
   %6 = icmp ult ptr %4, %5
   ret i1 %6
@@ -103,25 +166,37 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000604(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i16, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i16, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 4
   %5 = getelementptr i8, ptr %0, i64 2
   %6 = icmp ult ptr %4, %5
   ret i1 %6
 }
 
-; 7 occurrences:
+; 5 occurrences:
+; cmake/optimized/zstd_double_fast.c.ll
+; freetype/optimized/sfnt.c.ll
 ; git/optimized/dir.ll
-; lz4/optimized/lz4.c.ll
 ; openusd/optimized/lz4.cpp.ll
-; yosys/optimized/lz4.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_double_fast.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000768(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
+  %5 = getelementptr nusw i8, ptr %0, i64 -1
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; cmake/optimized/zstd_double_fast.c.ll
+; git/optimized/dir.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000104(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 1
@@ -130,56 +205,164 @@ entry:
   ret i1 %6
 }
 
-; 14 occurrences:
-; casadi/optimized/bspline.cpp.ll
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
-; hermes/optimized/BCP47Parser.cpp.ll
-; hyperscan/optimized/limex_compile.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
 ; opencv/optimized/lsc.cpp.ll
-; yosys/optimized/connwrappers.ll
-; yosys/optimized/ice40_wrapcarry.ll
-; yosys/optimized/mem.ll
-; yosys/optimized/memory_libmap.ll
-; yosys/optimized/recover_names.ll
-; yosys/optimized/sim.ll
 ; zxing/optimized/BinaryBitmap.cpp.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000561(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.std::reference_wrapper.479.2852071", ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
+  %3 = getelementptr nusw %"class.std::reference_wrapper.479.2963746", ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = getelementptr nusw i8, ptr %0, i64 -8
   %6 = icmp eq ptr %4, %5
   ret i1 %6
 }
 
-; 4 occurrences:
-; hdf5/optimized/H5Olink.c.ll
-; lz4/optimized/lz4.c.ll
-; openusd/optimized/lz4.cpp.ll
-; yosys/optimized/lz4.ll
+; 2 occurrences:
+; boost/optimized/static_string.ll
+; freetype/optimized/pfr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000228(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000007e8(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 2
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; hdf5/optimized/H5Olink.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000468(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 2
   %5 = getelementptr i8, ptr %0, i64 -1
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
 }
 
 ; 2 occurrences:
+; hermes/optimized/BCP47Parser.cpp.ll
+; llvm/optimized/LiteralSupport.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000761(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 32
+  %5 = getelementptr nusw i8, ptr %0, i64 -32
+  %6 = icmp eq ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; yosys/optimized/lz4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
+  %5 = getelementptr i8, ptr %0, i64 -12
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 6 occurrences:
+; llvm/optimized/CFIInstrInserter.cpp.ll
+; yosys/optimized/connwrappers.ll
+; yosys/optimized/ice40_wrapcarry.ll
+; yosys/optimized/mem.ll
+; yosys/optimized/recover_names.ll
+; yosys/optimized/sim.ll
+; Function Attrs: nounwind
+define i1 @func00000000000005e1(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t.3116250", ptr %1, i64 %2, i32 0, i32 1, i32 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = icmp eq ptr %3, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; hyperscan/optimized/limex_compile.cpp.ll
+; yosys/optimized/memory_libmap.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007e1(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nuw %"struct.Yosys::MemRd.3126372", ptr %1, i64 %2, i32 7, i32 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = icmp eq ptr %3, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -9
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp eq ptr %4, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000668(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 6
+  %5 = getelementptr i8, ptr %0, i64 -11
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 6 occurrences:
+; cmake/optimized/zstd_double_fast.c.ll
+; cmake/optimized/zstd_fast.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_fast.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000108(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
+  %5 = getelementptr nusw i8, ptr %0, i64 -8
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; cmake/optimized/zstd_lazy.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000105(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
+  %5 = getelementptr nusw i8, ptr %0, i64 -8
+  %6 = icmp ule ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; zed-rs/optimized/9fz5l76t5byggb8exxkeuxjql.ll
+; Function Attrs: nounwind
+define i1 @func000000000000056c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
+  %5 = getelementptr nusw i8, ptr %0, i64 -1
+  %6 = icmp ne ptr %4, %5
   ret i1 %6
 }
 
@@ -194,12 +377,44 @@ entry:
 ; cmake/optimized/protocol_types.cpp.ll
 ; cmake/optimized/typeof.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a9(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000005c9(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -1
-  %5 = getelementptr nusw i8, ptr %0, i64 24
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = icmp uge ptr %4, %5
+  ret i1 %6
+}
+
+; 9 occurrences:
+; cmake/optimized/cmDebuggerAdapter.cxx.ll
+; cmake/optimized/cmDebuggerBreakpointManager.cxx.ll
+; cmake/optimized/cmDebuggerThread.cxx.ll
+; cmake/optimized/jsoncpp_json_serializer.cpp.ll
+; cmake/optimized/protocol_events.cpp.ll
+; cmake/optimized/protocol_requests.cpp.ll
+; cmake/optimized/protocol_response.cpp.ll
+; cmake/optimized/protocol_types.cpp.ll
+; cmake/optimized/typeof.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000005c4(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 56
+  %6 = icmp ult ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; casadi/optimized/bspline.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000005c1(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw double, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -8
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = icmp eq ptr %4, %5
   ret i1 %6
 }
 

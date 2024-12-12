@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 45 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
@@ -40,14 +40,13 @@
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; quantlib/optimized/discretizedswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/nonstandardswap.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; yosys/optimized/freduce.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000a2(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = and i64 %2, -9223372036854775745

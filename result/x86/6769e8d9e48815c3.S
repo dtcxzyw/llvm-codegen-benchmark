@@ -19,7 +19,7 @@ func000000000000000f:                   # @func000000000000000f
 	cmovnel	%esi, %edi
 	leaq	(,%rdi,4), %rax
 	retq
-func0000000000000027:                   # @func0000000000000027
+func00000000000000a7:                   # @func00000000000000a7
 	movl	%edi, %eax
 	cmpl	$2, %edx
 	cmovael	%esi, %eax
@@ -37,16 +37,16 @@ func0000000000000052:                   # @func0000000000000052
 	cmovsl	%esi, %eax
 	shlq	$32, %rax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	cmpl	$2, %edx
 	cmovael	%esi, %edi
 	leaq	(,%rdi,8), %rax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000023:                   # @func0000000000000023
 	movl	%edi, %eax
-	cmpl	$26, %edx
+	cmpl	$131072, %edx                   # imm = 0x20000
 	cmovael	%esi, %eax
-	shlq	$56, %rax
+	shlq	$13, %rax
 	retq
 func0000000000000022:                   # @func0000000000000022
 	movl	%edi, %eax

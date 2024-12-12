@@ -1,5 +1,5 @@
 
-; 236 occurrences:
+; 237 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -8,6 +8,10 @@
 ; arrow/optimized/kernel.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/src.ll
 ; c3c/optimized/bigint.c.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -75,7 +79,6 @@
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
-; folly/optimized/Subprocess.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
@@ -90,7 +93,6 @@
 ; linux/optimized/buffered_write.ll
 ; linux/optimized/deftree.ll
 ; linux/optimized/efi.ll
-; linux/optimized/memattr.ll
 ; linux/optimized/setup.ll
 ; linux/optimized/write.ll
 ; llama.cpp/optimized/ggml.c.ll
@@ -204,7 +206,6 @@
 ; protobuf/optimized/pyi_generator.cc.ll
 ; protobuf/optimized/retention.cc.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
-; quantlib/optimized/tapcorrelations.ll
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/object.ll
 ; regex-rs/optimized/2o62ici9yci52qym.ll
@@ -256,7 +257,7 @@ entry:
   ret i64 %4
 }
 
-; 127 occurrences:
+; 125 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/smb.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -304,8 +305,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -479,7 +478,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -563,14 +562,16 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = add nsw i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -586,28 +587,18 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; jq/optimized/jv_parse.ll
 ; lightgbm/optimized/json11.cpp.ll
 ; regex-rs/optimized/32jw1oy2yofrhudk.ll
 ; yosys/optimized/json11.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000037(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 10
   %3 = add nsw i64 %2, -56613888
   %4 = add nuw nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; darktable/optimized/introspection_hotpixels.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nsw i64 %1, 2
-  %3 = add i64 %2, -4
-  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -623,14 +614,15 @@ define i64 @func000000000000003d(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = add nuw nsw i64 %2, 8
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
+; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
@@ -671,7 +663,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = add nsw i64 %2, -8
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -715,7 +707,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = add i64 %2, 4
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

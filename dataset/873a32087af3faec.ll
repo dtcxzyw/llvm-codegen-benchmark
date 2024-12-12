@@ -4,7 +4,7 @@
 ; flac/optimized/replaygain_synthesis.c.ll
 ; linux/optimized/intel_psr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = shl nuw i32 1, %2
@@ -27,7 +27,7 @@ entry:
 ; abc/optimized/kitDsd.c.ll
 ; linux/optimized/af_netlink.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -6
   %3 = shl nuw i32 1, %2
@@ -36,15 +36,14 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/cnfCut.c.ll
 ; abc/optimized/dauTree.c.ll
-; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; libquic/optimized/quic_crypto_client_stream.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000e4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -6
   %3 = shl nuw nsw i32 1, %2
@@ -56,11 +55,23 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -6
   %3 = shl nuw i32 1, %2
-  %4 = icmp ult i32 %0, 7
+  %4 = icmp samesign ult i32 %0, 7
+  %5 = select i1 %4, i32 1, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; abc/optimized/extraUtilMaj.c.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000f4(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -4
+  %3 = shl nuw nsw i32 1, %2
+  %4 = icmp samesign ult i32 %0, 5
   %5 = select i1 %4, i32 1, i32 %3
   ret i32 %5
 }
@@ -69,7 +80,7 @@ entry:
 ; abc/optimized/abc.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -7
   %3 = shl nuw i32 1, %2
@@ -84,7 +95,7 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifTune.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -6
   %3 = shl nuw i32 1, %2
@@ -97,7 +108,7 @@ entry:
 ; abc/optimized/amapParse.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = shl i32 3, %2
@@ -109,7 +120,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -103
   %3 = shl nuw nsw i32 1, %2
@@ -122,7 +133,7 @@ entry:
 ; libwebp/optimized/sharpyuv_gamma.c.ll
 ; openusd/optimized/decodetxb.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = shl nuw i32 1, %2
@@ -146,7 +157,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = shl nuw nsw i32 1, %2

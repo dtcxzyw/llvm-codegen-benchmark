@@ -74,6 +74,12 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000d:                   # @func000000000000000d
 	add	a0, a0, a1
-	slli	a1, a0, 1
+	lui	a1, 244
+	addiw	a1, a1, 576
+	mul	a0, a0, a1
+	ret
+func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
+	li	a1, 104
+	mul	a0, a0, a1
 	ret

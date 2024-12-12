@@ -6,18 +6,18 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
+func0000000000000001:                   # @func0000000000000001
+	andi	a2, a2, 255
+	addi	a2, a2, -35
+	seqz	a2, a2
+	or	a0, a0, a1
+	andn	a0, a2, a0
+	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.b	a2, a2
 	sgtz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
-	ret
-func0000000000000001:                   # @func0000000000000001
-	andi	a2, a2, 255
-	addi	a2, a2, -9
-	seqz	a2, a2
-	or	a0, a0, a1
-	andn	a0, a2, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 255

@@ -1,18 +1,18 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000121:                   # @func0000000000000121
+func0000000000000241:                   # @func0000000000000241
 	movl	$2, %eax
 	shlxq	%rsi, %rax, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000001b1:                   # @func00000000000001b1
+func0000000000000361:                   # @func0000000000000361
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	incq	%rdi

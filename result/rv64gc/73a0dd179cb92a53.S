@@ -33,16 +33,6 @@ func0000000000000031:                   # @func0000000000000031
 	sllw	a1, a2, a1
 	add	a0, a0, a1
 	ret
-func0000000000000019:                   # @func0000000000000019
-	li	a2, 1
-	sllw	a1, a2, a1
-	add	a0, a0, a1
-	ret
-func0000000000000013:                   # @func0000000000000013
-	li	a2, 2
-	sllw	a1, a2, a1
-	add	a0, a0, a1
-	ret
 func0000000000000011:                   # @func0000000000000011
 	li	a2, 3
 	sllw	a1, a2, a1

@@ -12,7 +12,7 @@ entry:
   ret i32 %7
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; bullet3/optimized/b3Solver.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -24,7 +24,6 @@ entry:
 ; openusd/optimized/pathParser.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
-; wireshark/optimized/mpeg-audio.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -45,7 +44,7 @@ entry:
   %4 = and i32 %1, 1024
   %5 = or disjoint i32 %4, %3
   %6 = shl nuw i32 %5, 4
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

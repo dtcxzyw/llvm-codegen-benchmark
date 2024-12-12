@@ -7,17 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a0, a0, 24
 	seqz	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
-	andi	a0, a0, 1
-	neg	a2, a2
-	czero.nez	a2, a2, a0
-	czero.eqz	a0, a1, a0
-	li	a1, 45
-	or	a0, a0, a2
-	slli	a1, a1, 26
-	sltu	a0, a1, a0
-	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 1
 	neg	a2, a2
 	czero.nez	a2, a2, a0
@@ -25,7 +15,7 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a2
 	seqz	a0, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andi	a0, a0, 1
 	neg	a2, a2
 	czero.nez	a2, a2, a0
@@ -34,7 +24,7 @@ func000000000000001a:                   # @func000000000000001a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andi	a0, a0, 1
 	li	a3, 23
 	sub	a3, a3, a2
@@ -43,7 +33,7 @@ func0000000000000016:                   # @func0000000000000016
 	or	a0, a0, a2
 	slti	a0, a0, 16
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andi	a0, a0, 1
 	li	a3, 23
 	sub	a3, a3, a2
@@ -52,7 +42,17 @@ func0000000000000014:                   # @func0000000000000014
 	or	a0, a0, a2
 	sltiu	a0, a0, 22
 	ret
-func000000000000001c:                   # @func000000000000001c
+func0000000000000028:                   # @func0000000000000028
+	andi	a0, a0, 1
+	li	a3, 23
+	sub	a3, a3, a2
+	czero.nez	a2, a3, a0
+	czero.eqz	a0, a1, a0
+	or	a0, a0, a2
+	sltiu	a0, a0, 16
+	xori	a0, a0, 1
+	ret
+func000000000000002c:                   # @func000000000000002c
 	andi	a0, a0, 1
 	li	a3, 23
 	sub	a3, a3, a2

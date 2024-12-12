@@ -91,8 +91,36 @@ func0000000000000008:                   # @func0000000000000008
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI4_0:
-	.long	2                               # 0x2
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI4_1:
+	.long	1                               # 0x1
+func0000000000000028:                   # @func0000000000000028
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k0
+	vpcmpltub	.LCPI4_0(%rip), %xmm1, %k1
+	korb	%k0, %k1, %k1
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpbroadcastd	.LCPI4_1(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]
+	vmovdqa32	%ymm1, %ymm0 {%k1}
+	retq
+.LCPI5_0:
+	.long	2                               # 0x2
+.LCPI5_1:
 	.long	1                               # 0x1
 func0000000000000014:                   # @func0000000000000014
 	vpsllw	$15, %xmm0, %xmm0
@@ -100,6 +128,6 @@ func0000000000000014:                   # @func0000000000000014
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
 	vpcmpgtb	%xmm0, %xmm1, %k1
 	korb	%k0, %k1, %k1
-	vpbroadcastd	.LCPI4_0(%rip), %ymm0   # ymm0 = [2,2,2,2,2,2,2,2]
-	vpbroadcastd	.LCPI4_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1]
+	vpbroadcastd	.LCPI5_0(%rip), %ymm0   # ymm0 = [2,2,2,2,2,2,2,2]
+	vpbroadcastd	.LCPI5_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1]
 	retq

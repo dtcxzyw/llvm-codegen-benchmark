@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000182(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000302(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 2
   %3 = icmp eq i64 %0, 14
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000190(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000310(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ugt i64 %0, 3

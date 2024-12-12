@@ -1,20 +1,20 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incl	%edx
 	movslq	%edx, %rax
 	testb	$1, %sil
 	movl	$1, %ecx
 	cmoveq	%rax, %rcx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	incl	%edx
 	movslq	%edx, %rax
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmoveq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	setb	%al
+	cmpq	%rcx, %rdi
+	seta	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	decl	%edx
@@ -22,6 +22,6 @@ func0000000000000008:                   # @func0000000000000008
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmoveq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	setb	%al
+	cmpq	%rcx, %rdi
+	seta	%al
 	retq

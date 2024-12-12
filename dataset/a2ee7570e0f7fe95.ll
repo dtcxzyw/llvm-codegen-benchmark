@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; linux/optimized/md.ll
 ; opencv/optimized/persistence.cpp.ll
 ; php/optimized/plain_wrapper.ll
-; rocksdb/optimized/malloc_stats.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -19,7 +18,7 @@ entry:
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = freeze i64 %3
@@ -31,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = freeze i64 %3
@@ -43,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/c_api.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = freeze i64 %3

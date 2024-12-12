@@ -1,5 +1,5 @@
 
-; 157 occurrences:
+; 156 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldRef.c.ll
@@ -77,6 +77,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; lua/optimized/ltable.ll
+; lvgl/optimized/lv_area.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
@@ -117,8 +118,6 @@
 ; openjdk/optimized/mlib_ImageAffine_NN_Bit.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/mvref_common.c.ll
@@ -185,7 +184,7 @@ entry:
   ret i32 %3
 }
 
-; 229 occurrences:
+; 231 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOut.c.ll
@@ -229,6 +228,7 @@ entry:
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; abc/optimized/wlcStdin.c.ll
+; arrow/optimized/light_array.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bullet3/optimized/b3BulletFile.ll
@@ -280,6 +280,8 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -308,7 +310,6 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
-; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/cmsintrp.ll
 ; openjdk/optimized/cmsopt.ll

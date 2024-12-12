@@ -36,17 +36,25 @@ func0000000000000006:                   # @func0000000000000006
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
-func0000000000000005:                   # @func0000000000000005
+func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 1
 	bnez	a0, .LBB5_2
 	mv	a1, a2
 .LBB5_2:                                # %entry
-	sext.w	a0, a1
+	slli	a0, a1, 32
+	srli	a0, a0, 32
 	ret
-func0000000000000003:                   # @func0000000000000003
+func0000000000000005:                   # @func0000000000000005
 	andi	a0, a0, 1
 	bnez	a0, .LBB6_2
 	mv	a1, a2
 .LBB6_2:                                # %entry
+	sext.w	a0, a1
+	ret
+func0000000000000003:                   # @func0000000000000003
+	andi	a0, a0, 1
+	bnez	a0, .LBB7_2
+	mv	a1, a2
+.LBB7_2:                                # %entry
 	sext.w	a0, a1
 	ret

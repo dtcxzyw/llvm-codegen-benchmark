@@ -8,7 +8,7 @@
 define i1 @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   ret i1 %3
 }
 
@@ -27,7 +27,7 @@ entry:
 define i1 @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   ret i1 %3
 }
 
@@ -39,7 +39,7 @@ entry:
 define i1 @func0000000000000005(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ugt float %2, %0
+  %3 = fcmp ult float %0, %2
   ret i1 %3
 }
 

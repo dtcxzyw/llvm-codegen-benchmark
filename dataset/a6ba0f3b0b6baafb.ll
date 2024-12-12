@@ -16,20 +16,8 @@ entry:
   ret i32 %7
 }
 
-; 1 occurrences:
-; hdf5/optimized/H5Zscaleoffset.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 -1, %2
-  %4 = xor i32 %3, -1
-  %5 = sub nuw i32 %1, %2
-  %6 = lshr i32 %0, %5
-  %7 = and i32 %6, %4
-  ret i32 %7
-}
-
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/basic_text_wiprimitive.ll
 ; clamav/optimized/pe_icons.c.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; linux/optimized/decompress_bunzip2.ll
@@ -39,6 +27,19 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
   %5 = sub i32 %1, %2
+  %6 = lshr i32 %0, %5
+  %7 = and i32 %6, %4
+  ret i32 %7
+}
+
+; 1 occurrences:
+; hdf5/optimized/H5Zscaleoffset.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 -1, %2
+  %4 = xor i32 %3, -1
+  %5 = sub nuw i32 %1, %2
   %6 = lshr i32 %0, %5
   %7 = and i32 %6, %4
   ret i32 %7

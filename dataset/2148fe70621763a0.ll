@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 2
   %4 = icmp eq i32 %1, 4
@@ -17,7 +17,7 @@ entry:
 ; llvm/optimized/APInt.cpp.ll
 ; wireshark/optimized/packet-aim.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 8
   %4 = icmp eq i32 %1, 0
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-bvlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000034(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 4
   %4 = icmp ult i32 %1, 4
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-tds.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000098(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 2
   %4 = select i1 %0, i1 true, i1 %3
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dgemmt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 82
   %not. = xor i1 %0, true

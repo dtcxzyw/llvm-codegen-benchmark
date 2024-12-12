@@ -1,36 +1,43 @@
 
-%"struct.rocksdb::CompactionInputFiles.2508792" = type { i32, %"class.std::vector.0.2508787", %"class.std::vector.8.2508793" }
-%"class.std::vector.0.2508787" = type { %"struct.std::_Vector_base.1.2508788" }
-%"struct.std::_Vector_base.1.2508788" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2508789" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2508789" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2508790" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2508790" = type { ptr, ptr, ptr }
-%"class.std::vector.8.2508793" = type { %"struct.std::_Vector_base.9.2508794" }
-%"struct.std::_Vector_base.9.2508794" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2508795" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2508795" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2508796" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2508796" = type { ptr, ptr, ptr }
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2523220" = type { %"class.tbb::detail::d1::spin_rw_mutex.2523221", %"struct.std::atomic.109.2523222" }
-%"class.tbb::detail::d1::spin_rw_mutex.2523221" = type { %"struct.std::atomic.107.2523223" }
-%"struct.std::atomic.107.2523223" = type { %"struct.std::__atomic_base.108.2523224" }
-%"struct.std::__atomic_base.108.2523224" = type { i64 }
-%"struct.std::atomic.109.2523222" = type { %"struct.std::__atomic_base.110.2523225" }
-%"struct.std::__atomic_base.110.2523225" = type { ptr }
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2599001" = type { %"class.tbb::detail::d1::spin_rw_mutex.2599002", %"struct.std::atomic.6.2599003" }
-%"class.tbb::detail::d1::spin_rw_mutex.2599002" = type { %"struct.std::atomic.4.2599004" }
-%"struct.std::atomic.4.2599004" = type { %"struct.std::__atomic_base.5.2599005" }
-%"struct.std::__atomic_base.5.2599005" = type { i64 }
-%"struct.std::atomic.6.2599003" = type { %"struct.std::__atomic_base.7.2599006" }
-%"struct.std::__atomic_base.7.2599006" = type { ptr }
-%struct.Str_Obj_t_.2764870 = type { i32, i32, i32, i32 }
-%struct.media_description_t.3255022 = type { i32, i32, i32, i16, i16, %struct._address.3255020, %struct.transport_media_pt_t.3255023, %union.anon.3255024 }
-%struct._address.3255020 = type { i32, i32, ptr, ptr }
-%struct.transport_media_pt_t.3255023 = type { [20 x i32], i8, ptr, i32 }
-%union.anon.3255024 = type { %struct.anon.0.3255025 }
-%struct.anon.0.3255025 = type { %struct._address.3255020, i16 }
-%"struct.(anonymous namespace)::ApproxItem.3568502" = type <{ %"class.cv::Point_.3568493", i64, i32, i8, [3 x i8] }>
-%"class.cv::Point_.3568493" = type { i32, i32 }
+%"struct.rocksdb::CompactionInputFiles.2623957" = type { i32, %"class.std::vector.0.2623944", %"class.std::vector.8.2623958" }
+%"class.std::vector.0.2623944" = type { %"struct.std::_Vector_base.1.2623945" }
+%"struct.std::_Vector_base.1.2623945" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" = type { ptr, ptr, ptr }
+%"class.std::vector.8.2623958" = type { %"struct.std::_Vector_base.9.2623959" }
+%"struct.std::_Vector_base.9.2623959" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" = type { ptr, ptr, ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637630", %"struct.std::atomic.109.2637631" }
+%"class.tbb::detail::d1::spin_rw_mutex.2637630" = type { %"struct.std::atomic.107.2637632" }
+%"struct.std::atomic.107.2637632" = type { %"struct.std::__atomic_base.108.2637633" }
+%"struct.std::__atomic_base.108.2637633" = type { i64 }
+%"struct.std::atomic.109.2637631" = type { %"struct.std::__atomic_base.110.2637634" }
+%"struct.std::__atomic_base.110.2637634" = type { ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2712507" = type { %"class.tbb::detail::d1::spin_rw_mutex.2712508", %"struct.std::atomic.6.2712509" }
+%"class.tbb::detail::d1::spin_rw_mutex.2712508" = type { %"struct.std::atomic.4.2712510" }
+%"struct.std::atomic.4.2712510" = type { %"struct.std::__atomic_base.5.2712511" }
+%"struct.std::__atomic_base.5.2712511" = type { i64 }
+%"struct.std::atomic.6.2712509" = type { %"struct.std::__atomic_base.7.2712512" }
+%"struct.std::__atomic_base.7.2712512" = type { ptr }
+%struct.Str_Obj_t_.2877125 = type { i32, i32, i32, i32 }
+%struct.bitmapped_commit.2883686 = type { ptr, ptr, ptr, i32, i32, i32 }
+%struct.media_description_t.3445997 = type { i32, i32, i32, i16, i16, %struct._address.3445995, %struct.transport_media_pt_t.3445998, %union.anon.3445999 }
+%struct._address.3445995 = type { i32, i32, ptr, ptr }
+%struct.transport_media_pt_t.3445998 = type { [20 x i32], i8, ptr, i32 }
+%union.anon.3445999 = type { %struct.anon.0.3446000 }
+%struct.anon.0.3446000 = type { %struct._address.3445995, i16 }
+%"struct.(anonymous namespace)::ApproxItem.3749183" = type <{ %"class.cv::Point_.3749174", i64, i32, i8, [3 x i8] }>
+%"class.cv::Point_.3749174" = type { i32, i32 }
+%"class.casadi::Matrix.3927125" = type { [8 x i8], %"class.casadi::Sparsity.3927126", %"class.std::vector.3927127" }
+%"class.casadi::Sparsity.3927126" = type { %"class.casadi::SharedObject.3927128" }
+%"class.casadi::SharedObject.3927128" = type { ptr }
+%"class.std::vector.3927127" = type { %"struct.std::_Vector_base.3927129" }
+%"struct.std::_Vector_base.3927129" = type { %"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl.3927130" }
+%"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl.3927130" = type { %"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl_data.3927131" }
+%"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl_data.3927131" = type { ptr, ptr, ptr }
 
-; 131 occurrences:
-; casadi/optimized/sx_instantiator.cpp.ll
+; 130 occurrences:
 ; mold/optimized/arch-alpha.cc.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-arm64.cc.ll
@@ -162,10 +169,10 @@
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = getelementptr nusw %"struct.rocksdb::CompactionInputFiles.2508792", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.rocksdb::CompactionInputFiles.2623957", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -262,7 +269,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2523220", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -278,7 +285,7 @@ entry:
   ret ptr %4
 }
 
-; 26 occurrences:
+; 32 occurrences:
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
 ; coreutils-rs/optimized/1pz43lsbr7l0inxv.ll
 ; delta-rs/optimized/3e84m8xk6w9g4bb2.ll
@@ -305,6 +312,12 @@ entry:
 ; rust-analyzer-rs/optimized/2z79z3pj3t0p2c2c.ll
 ; rust-analyzer-rs/optimized/4mw28hhoa59adomg.ll
 ; rust-analyzer-rs/optimized/yr8bg0giq9ukis7.ll
+; zed-rs/optimized/064fq8xy3p8h2lnsibc72udr1.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -313,18 +326,17 @@ entry:
   ret ptr %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaOf.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; git/optimized/diff.ll
-; git/optimized/pack-bitmap-write.ll
 ; graphviz/optimized/quad_prog_vpsc.c.ll
 ; openvdb/optimized/Queue.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2599001", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2712507", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -334,7 +346,17 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = getelementptr %struct.Str_Obj_t_.2764870, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.Str_Obj_t_.2877125, ptr %0, i64 %3, i32 1
+  ret ptr %4
+}
+
+; 1 occurrences:
+; git/optimized/pack-bitmap-write.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = getelementptr nusw nuw %struct.bitmapped_commit.2883686, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -344,7 +366,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = getelementptr %struct.media_description_t.3255022, ptr %0, i64 %3, i32 3
+  %4 = getelementptr %struct.media_description_t.3445997, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -354,7 +376,17 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = getelementptr %"struct.(anonymous namespace)::ApproxItem.3568502", ptr %0, i64 %3, i32 2
+  %4 = getelementptr %"struct.(anonymous namespace)::ApproxItem.3749183", ptr %0, i64 %3, i32 2
+  ret ptr %4
+}
+
+; 1 occurrences:
+; casadi/optimized/sx_instantiator.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw nsw i64 %1, %2
+  %4 = getelementptr nusw %"class.casadi::Matrix.3927125", ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 

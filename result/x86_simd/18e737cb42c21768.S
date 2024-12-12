@@ -13,11 +13,11 @@ func0000000000000015:                   # @func0000000000000015
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	4294967293                      # 0xfffffffd

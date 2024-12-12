@@ -1,33 +1,32 @@
 
-%"struct.rocksdb::StatisticsImpl::StatisticsData.2509692" = type { [216 x %"struct.std::atomic.51.2509693"], [61 x %"class.rocksdb::HistogramImpl.2509694"], [24 x i8] }
-%"struct.std::atomic.51.2509693" = type { %"struct.std::__atomic_base.2509695" }
-%"struct.std::__atomic_base.2509695" = type { i64 }
-%"class.rocksdb::HistogramImpl.2509694" = type { %"class.rocksdb::Histogram.2509696", %"struct.rocksdb::HistogramStat.2509697", %"class.std::mutex.2509698" }
-%"class.rocksdb::Histogram.2509696" = type { ptr }
-%"struct.rocksdb::HistogramStat.2509697" = type { %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", [109 x %"struct.std::atomic.51.2509693"], i64 }
-%"class.std::mutex.2509698" = type { %"class.std::__mutex_base.2509699" }
-%"class.std::__mutex_base.2509699" = type { %union.pthread_mutex_t.2509700 }
-%union.pthread_mutex_t.2509700 = type { %struct.__pthread_mutex_s.2509701 }
-%struct.__pthread_mutex_s.2509701 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2509702 }
-%struct.__pthread_internal_list.2509702 = type { ptr, ptr }
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2523220" = type { %"class.tbb::detail::d1::spin_rw_mutex.2523221", %"struct.std::atomic.109.2523222" }
-%"class.tbb::detail::d1::spin_rw_mutex.2523221" = type { %"struct.std::atomic.107.2523223" }
-%"struct.std::atomic.107.2523223" = type { %"struct.std::__atomic_base.108.2523224" }
-%"struct.std::__atomic_base.108.2523224" = type { i64 }
-%"struct.std::atomic.109.2523222" = type { %"struct.std::__atomic_base.110.2523225" }
-%"struct.std::__atomic_base.110.2523225" = type { ptr }
+%"struct.rocksdb::StatisticsImpl::StatisticsData.2624843" = type { [216 x %"struct.std::atomic.51.2624844"], [61 x %"class.rocksdb::HistogramImpl.2624845"], [24 x i8] }
+%"struct.std::atomic.51.2624844" = type { %"struct.std::__atomic_base.2624846" }
+%"struct.std::__atomic_base.2624846" = type { i64 }
+%"class.rocksdb::HistogramImpl.2624845" = type { %"class.rocksdb::Histogram.2624847", %"struct.rocksdb::HistogramStat.2624848", %"class.std::mutex.2624849" }
+%"class.rocksdb::Histogram.2624847" = type { ptr }
+%"struct.rocksdb::HistogramStat.2624848" = type { %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", [109 x %"struct.std::atomic.51.2624844"], i64 }
+%"class.std::mutex.2624849" = type { %"class.std::__mutex_base.2624850" }
+%"class.std::__mutex_base.2624850" = type { %union.pthread_mutex_t.2624851 }
+%union.pthread_mutex_t.2624851 = type { %struct.__pthread_mutex_s.2624852 }
+%struct.__pthread_mutex_s.2624852 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2624853 }
+%struct.__pthread_internal_list.2624853 = type { ptr, ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637630", %"struct.std::atomic.109.2637631" }
+%"class.tbb::detail::d1::spin_rw_mutex.2637630" = type { %"struct.std::atomic.107.2637632" }
+%"struct.std::atomic.107.2637632" = type { %"struct.std::__atomic_base.108.2637633" }
+%"struct.std::__atomic_base.108.2637633" = type { i64 }
+%"struct.std::atomic.109.2637631" = type { %"struct.std::__atomic_base.110.2637634" }
+%"struct.std::__atomic_base.110.2637634" = type { ptr }
 
-; 4 occurrences:
-; openmpi/optimized/allocator_bucket_alloc.ll
+; 3 occurrences:
 ; rocksdb/optimized/compression_context_cache.cc.ll
 ; rocksdb/optimized/statistics.cc.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = getelementptr nusw i8, ptr %0, i64 64
-  %4 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2509692", ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 64
+  %4 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2624843", ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -112,11 +111,11 @@ entry:
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = getelementptr nusw i8, ptr %0, i64 -32
-  %4 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2523220", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -133,14 +132,25 @@ entry:
   ret ptr %4
 }
 
+; 1 occurrences:
+; openmpi/optimized/allocator_bucket_alloc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw i64 1, %1
+  %3 = getelementptr nusw i8, ptr %0, i64 -16
+  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  ret ptr %4
+}
+
 ; 2 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/dictobject.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = getelementptr nusw i8, ptr %0, i64 32
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 32
   %4 = getelementptr i8, ptr %3, i64 %2
   ret ptr %4
 }

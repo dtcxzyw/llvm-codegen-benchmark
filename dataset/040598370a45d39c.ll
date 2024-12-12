@@ -1,11 +1,10 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/timekeeping.ll
-; linux/optimized/vclock_gettime.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %0, %1
@@ -21,7 +20,7 @@ entry:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %0, %1
@@ -47,7 +46,7 @@ entry:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %0, %1
@@ -56,11 +55,12 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %0, %1
@@ -84,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %0, %1

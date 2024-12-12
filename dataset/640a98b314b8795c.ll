@@ -20,21 +20,16 @@ entry:
   ret ptr %7
 }
 
-; 25 occurrences:
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/dlasd6.cpp.ll
+; 17 occurrences:
 ; gromacs/optimized/dlasd8.cpp.ll
 ; gromacs/optimized/dormbr.cpp.ll
 ; gromacs/optimized/dormtr.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/sormbr.cpp.ll
 ; gromacs/optimized/sormtr.cpp.ll
 ; openblas/optimized/dgedmdq.c.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dlag2.c.ll
@@ -42,10 +37,7 @@ entry:
 ; openblas/optimized/dlaln2.c.ll
 ; openblas/optimized/dlasd3.c.ll
 ; openblas/optimized/dlasd8.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
-; openblas/optimized/dsytrs_aa.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
 entry:

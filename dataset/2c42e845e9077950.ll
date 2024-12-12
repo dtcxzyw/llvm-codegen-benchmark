@@ -38,10 +38,11 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/sswCnf.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/gregorian.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; icu/optimized/smpdtfmt.ll
 ; wireshark/optimized/ws_strptime.c.ll

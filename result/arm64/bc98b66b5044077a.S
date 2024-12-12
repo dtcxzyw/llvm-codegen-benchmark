@@ -19,3 +19,10 @@ func0000000000000008:                   // @func0000000000000008
 	add	x0, x8, x0, lsl #3
 	ret
                                         // -- End function
+func000000000000000b:                   // @func000000000000000b
+// %bb.0:                               // %entry
+	mvn	w8, w2
+	add	x8, x1, w8, sxtw #1
+	add	x0, x8, x0, lsl #1
+	ret
+                                        // -- End function

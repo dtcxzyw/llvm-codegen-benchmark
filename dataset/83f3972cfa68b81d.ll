@@ -1,5 +1,10 @@
 
-; 27 occurrences:
+; 32 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; graphviz/optimized/tlayout.c.ll
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
 ; gromacs/optimized/dlaed6.cpp.ll

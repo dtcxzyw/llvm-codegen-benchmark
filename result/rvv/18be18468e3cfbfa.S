@@ -5,7 +5,7 @@ func0000000000000000:                   # @func0000000000000000
 	vmulhu.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 15
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, 422303
@@ -26,7 +26,7 @@ func0000000000000004:                   # @func0000000000000004
 	vmulhu.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 2
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a0, 699051
@@ -35,7 +35,7 @@ func000000000000000c:                   # @func000000000000000c
 	vmulhu.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 3
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func000000000000000f:                   # @func000000000000000f
 	lui	a0, 91867
@@ -44,7 +44,7 @@ func000000000000000f:                   # @func000000000000000f
 	vmulhu.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 7
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func000000000000000d:                   # @func000000000000000d
 	lui	a0, 559241

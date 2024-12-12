@@ -8,9 +8,21 @@
 define i32 @func000000000000003f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   %6 = add nuw nsw i32 %5, 7
+  ret i32 %6
+}
+
+; 1 occurrences:
+; qemu/optimized/block_qcow2.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000007d(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add nuw nsw i32 %4, %0
+  %6 = add nsw i32 %5, -1
   ret i32 %6
 }
 
@@ -76,9 +88,70 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = add nsw i32 %5, -1
+  ret i32 %6
+}
+
+; 1 occurrences:
+; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
+; Function Attrs: nounwind
+define i32 @func000000000000007f(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add nuw nsw i32 %4, %0
+  %6 = add nuw nsw i32 %5, 10
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func000000000000005d(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nsw i32 %1, %3
+  %5 = add nuw nsw i32 %4, %0
+  %6 = add nsw i32 %5, -57344
+  ret i32 %6
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i32 @func000000000000005f(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nsw i32 %1, %3
+  %5 = add nuw nsw i32 %4, %0
+  %6 = add nuw nsw i32 %5, -56613888
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nsw i32 %1, %3
+  %5 = add i32 %0, %4
+  %6 = add i32 %5, -57344
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000053(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nsw i32 %1, %3
+  %5 = add i32 %0, %4
+  %6 = add nuw nsw i32 %5, -56613888
   ret i32 %6
 }
 
@@ -91,7 +164,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = add i32 %5, 7
   ret i32 %6

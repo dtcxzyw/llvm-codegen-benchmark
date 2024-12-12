@@ -1,9 +1,8 @@
 
-; 47 occurrences:
+; 41 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/acecTree.c.ll
-; abc/optimized/cnfUtil.c.ll
 ; abc/optimized/fretFlow.c.ll
 ; abc/optimized/pdrMan.c.ll
 ; abc/optimized/timMan.c.ll
@@ -17,7 +16,6 @@
 ; hdf5/optimized/H5Dearray.c.ll
 ; hdf5/optimized/H5Dfarray.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; linux/optimized/ht.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/scsi_transport_spi.ll
@@ -33,15 +31,11 @@
 ; meshlab/optimized/filterqualitymapper.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
-; openblas/optimized/lapacke_dgbcon_work.c.ll
-; openblas/optimized/lapacke_dgbtrf_work.c.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; openexr/optimized/attributes.c.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; protobuf/optimized/zero_copy_stream.cc.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; re2/optimized/parse.cc.ll
 ; ruby/optimized/compile.ll
 ; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
@@ -56,7 +50,7 @@ entry:
   ret i64 %4
 }
 
-; 332 occurrences:
+; 330 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
@@ -74,6 +68,7 @@ entry:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; casadi/optimized/conic.cpp.ll
@@ -252,9 +247,6 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -398,7 +390,7 @@ entry:
   ret i64 %4
 }
 
-; 54 occurrences:
+; 52 occurrences:
 ; arrow/optimized/table.cc.ll
 ; assimp/optimized/SMDLoader.cpp.ll
 ; casadi/optimized/conic.cpp.ll
@@ -419,7 +411,6 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/h5tools_dump.c.ll
 ; hermes/optimized/JSLibInternal.cpp.ll
-; hermes/optimized/String.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/stream.c.ll
 ; linux/optimized/bio.ll
@@ -448,7 +439,6 @@ entry:
 ; wireshark/optimized/packet-gsm_bssmap_le.c.ll
 ; wireshark/optimized/packet-ntp.c.ll
 ; wireshark/optimized/range.c.ll
-; wolfssl/optimized/sp_int.c.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/qsat.cpp.ll
 ; zstd/optimized/zdict.c.ll
@@ -462,12 +452,11 @@ entry:
   ret i64 %4
 }
 
-; 39 occurrences:
+; 35 occurrences:
 ; abc/optimized/abcRpo.c.ll
-; abc/optimized/acbMfs.c.ll
 ; abc/optimized/giaTruth.c.ll
-; abc/optimized/lpkAbcUtil.c.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/infblock.c.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/obmalloc.ll
@@ -475,8 +464,6 @@ entry:
 ; gromacs/optimized/dorml2.cpp.ll
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; gromacs/optimized/sorml2.cpp.ll
-; icu/optimized/usprep.ll
-; icu/optimized/utext.ll
 ; icu/optimized/vtzone.ll
 ; linux/optimized/rx.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -497,7 +484,6 @@ entry:
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; mimalloc/optimized/arena.c.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; openjdk/optimized/c1_FrameMap.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
@@ -511,9 +497,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
-; graphviz/optimized/sfcvt.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
@@ -523,19 +508,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; abc/optimized/wlcSim.c.ll
-; clamav/optimized/timefn.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i1 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = select i1 %0, i64 8, i64 %3
-  ret i64 %4
-}
-
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; icu/optimized/dayperiodrules.ll
 ; linux/optimized/ah6.ll
@@ -553,7 +526,6 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; openmpi/optimized/alfg.ll
 ; openmpi/optimized/pmix_alfg.ll
-; postgres/optimized/bufpage.ll
 ; redis/optimized/sort.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
@@ -561,6 +533,17 @@ define i64 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -6
   %3 = zext i32 %2 to i64
+  %4 = select i1 %0, i64 0, i64 %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; clamav/optimized/timefn.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
   %4 = select i1 %0, i64 0, i64 %3
   ret i64 %4
 }

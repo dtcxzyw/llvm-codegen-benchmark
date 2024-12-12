@@ -1,19 +1,17 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; hdf5/optimized/H5HFhdr.c.ll
 ; hdf5/optimized/H5HFhuge.c.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/dec_sse2.c.ll
 ; libwebp/optimized/enc.c.ll
 ; libwebp/optimized/enc_sse2.c.ll
-; linux/optimized/isadma.ll
 ; openssl/optimized/openssl-bin-s_client.ll
 ; openusd/optimized/loopfilter.c.ll
 ; php/optimized/image.ll
 ; qemu/optimized/hw_core_loader.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; wireshark/optimized/androiddump.c.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-ecmp.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/vwr.c.ll

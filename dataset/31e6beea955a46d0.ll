@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 75 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/extraUtilMisc.c.ll
@@ -11,6 +11,7 @@
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/formatter.ll
 ; cvc5/optimized/Solver.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; git/optimized/diff.ll
@@ -20,7 +21,6 @@
 ; graphviz/optimized/shapes.c.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
 ; gromacs/optimized/dgesdd.cpp.ll
-; gromacs/optimized/dlasdt.cpp.ll
 ; gromacs/optimized/dstebz.cpp.ll
 ; gromacs/optimized/gmx_chi.cpp.ll
 ; gromacs/optimized/gmx_dipoles.cpp.ll
@@ -32,13 +32,11 @@
 ; grpc/optimized/bdp_estimator.cc.ll
 ; icu/optimized/number_decimalquantity.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlaed6.c.ll
 ; openblas/optimized/dlalsd.c.ll

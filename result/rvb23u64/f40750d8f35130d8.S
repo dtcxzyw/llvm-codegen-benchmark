@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	andi	a0, a0, 255
 	zext.h	a2, a2
 	snez	a2, a2
@@ -6,7 +6,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	sltiu	a0, a0, 97
 	andn	a0, a1, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	andi	a1, a1, 255
 	zext.h	a2, a2
 	snez	a2, a2
@@ -14,7 +14,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 255
 	zext.h	a2, a2
 	seqz	a2, a2
@@ -22,7 +22,7 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andi	a0, a0, 255
 	zext.h	a2, a2
 	seqz	a2, a2
@@ -31,7 +31,7 @@ func000000000000001c:                   # @func000000000000001c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	andi	a0, a0, 255
 	zext.h	a2, a2
 	sltiu	a2, a2, 512
@@ -41,7 +41,7 @@ func000000000000008c:                   # @func000000000000008c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	andi	a0, a0, 255
 	zext.h	a2, a2
 	sltiu	a2, a2, 1024

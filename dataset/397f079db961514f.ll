@@ -1,5 +1,5 @@
 
-; 304 occurrences:
+; 343 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/cecClass.c.ll
@@ -9,7 +9,31 @@
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/pdrUtil.c.ll
+; abc/optimized/rsbDec6.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; flac/optimized/decode.c.ll
@@ -45,14 +69,17 @@
 ; lief/optimized/BinaryParser.cpp.ll
 ; linux/optimized/chip.ll
 ; linux/optimized/commit.ll
+; linux/optimized/core.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/exit.ll
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/ich8lan.ll
+; linux/optimized/icl_dsi.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/intel_crt.ll
+; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_execlists_submission.ll
@@ -63,7 +90,6 @@
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_timeline.ll
 ; linux/optimized/md.ll
-; linux/optimized/mii.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/ntp.ll
 ; linux/optimized/phy-c45.ll
@@ -87,6 +113,7 @@
 ; llvm/optimized/DebugFrameDataSubsection.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -98,12 +125,20 @@
 ; llvm/optimized/SemaRISCV.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/edit_select.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -121,12 +156,14 @@
 ; openblas/optimized/dsymm_thread_LU.c.ll
 ; openblas/optimized/dsymm_thread_RL.c.ll
 ; openblas/optimized/dsymm_thread_RU.c.ll
+; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/gapi_compiler_perf_tests.cpp.ll
 ; opencv/optimized/gapi_core_perf_tests.cpp.ll
 ; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
 ; opencv/optimized/perf_bench.cpp.ll
 ; opencv/optimized/qualitygmsd.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
+; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; openjdk/optimized/OGLPaints.ll
 ; openjdk/optimized/ProcessPath.ll
 ; openjdk/optimized/archiveHeapLoader.ll
@@ -282,6 +319,7 @@
 ; spike/optimized/fsrw.ll
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/position.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
@@ -297,6 +335,7 @@
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
 ; wireshark/optimized/wimax_compact_ulmap_ie_decoder.c.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll

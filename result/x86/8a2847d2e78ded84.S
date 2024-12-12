@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	movzwl	%di, %ecx
 	leaq	-272(%rcx), %rdx
 	xorl	%eax, %eax

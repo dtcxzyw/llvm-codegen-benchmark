@@ -15,18 +15,7 @@
 define i1 @func000000000000000a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, %1
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openssl/optimized/libtestutil-lib-options.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000037(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = icmp sge i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -46,7 +35,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -69,7 +58,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp sle i32 %3, %1
+  %4 = icmp sge i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -81,15 +70,16 @@ entry:
 ; opencv/optimized/tr_icdar_benchmark.cpp.ll
 ; opencv/optimized/tr_svt_benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
 
-; 47 occurrences:
+; 49 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; cpython/optimized/assemble.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -100,6 +90,7 @@ entry:
 ; llvm/optimized/BranchRelaxation.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGExprAgg.cpp.ll
+; llvm/optimized/Commit.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/CoverageMappingGen.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
@@ -141,7 +132,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -170,7 +161,24 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 7 occurrences:
+; libquic/optimized/strike_register.cc.ll
+; linux/optimized/tg3.ll
+; llvm/optimized/CoverageMapping.cpp.ll
+; llvm/optimized/MachineScheduler.cpp.ll
+; nix/optimized/posix-fs-canonicalise.ll
+; qemu/optimized/block_parallels.c.ll
+; wireshark/optimized/packet-kerberos.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = icmp ult i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -183,7 +191,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ule i32 %3, %1
+  %4 = icmp uge i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -191,10 +199,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/TransformHelper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000045(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp ule i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -204,10 +212,10 @@ entry:
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -215,26 +223,10 @@ entry:
 ; 1 occurrences:
 ; git/optimized/shallow.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp ult i32 %3, %1
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
-; 6 occurrences:
-; libquic/optimized/strike_register.cc.ll
-; linux/optimized/tg3.ll
-; llvm/optimized/CoverageMapping.cpp.ll
-; llvm/optimized/MachineScheduler.cpp.ll
-; nix/optimized/posix-fs-canonicalise.ll
-; wireshark/optimized/packet-kerberos.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -246,10 +238,10 @@ entry:
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -261,10 +253,10 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -283,7 +275,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -298,7 +290,7 @@ entry:
 define i1 @func0000000000000005(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp ule i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -306,10 +298,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -325,7 +317,7 @@ entry:
 define i1 @func0000000000000007(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp sge i32 %3, %1
+  %4 = icmp sle i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -333,10 +325,10 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_confrms.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000027(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000047(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp sge i32 %3, %1
+  %4 = icmp sle i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -345,21 +337,10 @@ entry:
 ; graphviz/optimized/mq.c.ll
 ; linux/optimized/vsprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/i915_cmd_parser.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -367,10 +348,10 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/pb_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -379,10 +360,10 @@ entry:
 ; opencv/optimized/feature.cpp.ll
 ; opencv/optimized/tracking_feature.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002b(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000004b(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp sle i32 %3, %1
+  %4 = icmp sge i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -390,10 +371,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

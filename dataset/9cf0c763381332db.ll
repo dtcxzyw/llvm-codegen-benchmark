@@ -1,16 +1,11 @@
 
-; 17 occurrences:
+; 12 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/list_util.cc.ll
 ; arrow/optimized/writer.cc.ll
-; clamav/optimized/tar.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; jq/optimized/utf32_be.ll
-; jq/optimized/utf32_le.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
-; oniguruma/optimized/utf32_be.ll
-; oniguruma/optimized/utf32_le.ll
 ; postgres/optimized/basebackup_incremental.ll
 ; postgres/optimized/sqlda.ll
 ; quickjs/optimized/libbf.ll

@@ -28,7 +28,7 @@ func0000000000000006:                   # @func0000000000000006
 	vnsrl.wi	v10, v8, 0
 	vmsle.vi	v0, v10, 0
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 2
 	lui	a0, 699051

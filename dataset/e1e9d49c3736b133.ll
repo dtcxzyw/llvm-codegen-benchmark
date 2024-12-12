@@ -4,7 +4,7 @@
 ; hermes/optimized/CommandLine.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LICM.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %1, %3

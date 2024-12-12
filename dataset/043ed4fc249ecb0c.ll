@@ -10,9 +10,9 @@
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 40
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 40
   %3 = icmp ne ptr %2, %0
   ret i1 %3
 }
@@ -30,9 +30,9 @@ entry:
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000006c(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %.not = icmp eq ptr %2, %0
   ret i1 %.not
 }
@@ -40,9 +40,9 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = icmp uge ptr %2, %0
   ret i1 %3
 }

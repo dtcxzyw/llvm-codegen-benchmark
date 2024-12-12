@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/trees.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unarj.c.ll
@@ -16,7 +16,6 @@
 ; libquic/optimized/trees.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/deftree.ll
-; linux/optimized/he.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/vht.ll
 ; llvm/optimized/EvalEmitter.cpp.ll

@@ -18,12 +18,6 @@ func0000000000000078:                   # @func0000000000000078
 	addi	a0, a0, 78
 	srliw	a0, a0, 2
 	ret
-func000000000000003e:                   # @func000000000000003e
-	slli	a1, a1, 5
-	add	a0, a0, a1
-	addi	a0, a0, 32
-	srliw	a0, a0, 5
-	ret
 func0000000000000068:                   # @func0000000000000068
 	sh3add	a0, a1, a0
 	addi	a0, a0, -1

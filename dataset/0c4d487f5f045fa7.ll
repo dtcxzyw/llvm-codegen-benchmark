@@ -11,7 +11,7 @@ entry:
   ret i64 %5
 }
 
-; 183 occurrences:
+; 182 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -133,7 +133,6 @@ entry:
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll

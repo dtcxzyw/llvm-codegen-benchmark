@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; graphviz/optimized/exeval.c.ll
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/Flang.cpp.ll
@@ -9,6 +9,7 @@
 ; re2/optimized/prog.cc.ll
 ; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i32 %0) #0 {
 entry:

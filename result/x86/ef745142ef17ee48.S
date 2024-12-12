@@ -48,13 +48,13 @@ func0000000000000005:                   # @func0000000000000005
 	notl	%eax
 	addl	%edi, %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	addl	%edx, %esi
+	subl	%esi, %edi
+	leal	100000000(%rdi), %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	addl	%edx, %esi
 	subl	%esi, %edi
 	leal	-2(%rdi), %eax
-	retq
-func0000000000000001:                   # @func0000000000000001
-	leal	(%rsi,%rdx), %eax
-	notl	%eax
-	addl	%edi, %eax
 	retq

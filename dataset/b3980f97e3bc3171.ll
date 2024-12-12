@@ -1,7 +1,5 @@
 
-; 19 occurrences:
-; cmake/optimized/setopt.c.ll
-; curl/optimized/libcurl_la-setopt.ll
+; 16 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/fork.ll
@@ -15,7 +13,6 @@
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; redis/optimized/memtest.ll
-; redis/optimized/networking.ll
 ; ruby/optimized/array.ll
 ; slurm/optimized/node_scheduler.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll

@@ -42,3 +42,16 @@ func0000000000000008:                   # @func0000000000000008
 	knotw	%k0, %k1
 	vmovdqa64	%ymm1, %ymm0 {%k1} {z}
 	retq
+.LCPI4_0:
+	.quad	64                              # 0x40
+.LCPI4_1:
+	.quad	1                               # 0x1
+.LCPI4_2:
+	.quad	4194304                         # 0x400000
+func0000000000000014:                   # @func0000000000000014
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpcmpltuq	.LCPI4_0(%rip){1to4}, %ymm2, %k2
+	vpblendmq	.LCPI4_1(%rip){1to4}, %ymm1, %ymm0 {%k2}
+	vpbroadcastq	.LCPI4_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4194304,4194304,4194304,4194304]
+	retq

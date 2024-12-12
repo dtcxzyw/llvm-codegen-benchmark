@@ -1,4 +1,4 @@
-func000000000000034c:                   // @func000000000000034c
+func0000000000000e8c:                   // @func0000000000000e8c
 // %bb.0:                               // %entry
 	add	x8, x2, #1
 	cmp	x0, #0
@@ -6,7 +6,7 @@ func000000000000034c:                   // @func000000000000034c
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000241:                   // @func0000000000000241
+func0000000000000881:                   // @func0000000000000881
 // %bb.0:                               // %entry
 	add	x8, x2, #1
 	cmp	x0, #0
@@ -14,7 +14,7 @@ func0000000000000241:                   // @func0000000000000241
 	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000005c:                   // @func000000000000005c
+func00000000000000ac:                   // @func00000000000000ac
 // %bb.0:                               // %entry
 	add	x8, x2, #4
 	cmp	x0, #0
@@ -22,15 +22,7 @@ func000000000000005c:                   // @func000000000000005c
 	cset	w0, ls
 	ret
                                         // -- End function
-func00000000000003c4:                   // @func00000000000003c4
-// %bb.0:                               // %entry
-	add	x8, x2, #1
-	cmp	x8, x0
-	ccmp	x1, #0, #4, lo
-	cset	w0, ne
-	ret
-                                        // -- End function
-func0000000000000091:                   // @func0000000000000091
+func0000000000000121:                   // @func0000000000000121
 // %bb.0:                               // %entry
 	add	x8, x2, #1
 	cmp	x0, #0
@@ -38,7 +30,7 @@ func0000000000000091:                   // @func0000000000000091
 	cset	w0, hs
 	ret
                                         // -- End function
-func000000000000011c:                   // @func000000000000011c
+func000000000000042c:                   // @func000000000000042c
 // %bb.0:                               // %entry
 	add	x8, x2, #17
 	cmp	x8, x0

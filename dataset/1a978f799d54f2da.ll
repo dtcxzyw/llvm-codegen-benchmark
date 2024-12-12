@@ -27,7 +27,8 @@ entry:
   ret i64 %6
 }
 
-; 25 occurrences:
+; 26 occurrences:
+; cvc5/optimized/word.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; icu/optimized/icuexportdata.ll
 ; icu/optimized/uconv.ll

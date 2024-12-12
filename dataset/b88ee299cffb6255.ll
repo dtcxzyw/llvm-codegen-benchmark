@@ -16,4 +16,16 @@ entry:
   ret i8 %6
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_color.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000072(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = add nuw nsw i16 %1, %2
+  %4 = add nuw i16 %3, %0
+  %5 = lshr i16 %4, 8
+  %6 = trunc nuw i16 %5 to i8
+  ret i8 %6
+}
+
 attributes #0 = { nounwind }

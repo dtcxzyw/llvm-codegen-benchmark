@@ -1,4 +1,4 @@
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	incl	%esi
 	imull	%edi, %esi
 	testb	$31, %sil
@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$63, %sil
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	addl	$3, %esi
 	imull	%edi, %esi
 	andl	$-2, %esi

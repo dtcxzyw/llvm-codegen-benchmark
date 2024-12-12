@@ -1,7 +1,7 @@
 .LCPI0_0:
 	.quad	1048576                         # 0x100000
 .LCPI0_1:
-	.quad	-2097152                        # 0xffffffffffe00000
+	.quad	9223372036852678656             # 0x7fffffffffe00000
 func000000000000003f:                   # @func000000000000003f
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0

@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_crop.c.ll
@@ -25,8 +25,9 @@
 ; yosys/optimized/satgen.ll
 ; yosys/optimized/share.ll
 ; yosys/optimized/test_cell.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %not. = xor i1 %0, true
@@ -34,14 +35,16 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/calibrate_camera.cpp.ll
 ; opencv/optimized/calibrate_camera_charuco.cpp.ll
 ; openjdk/optimized/OGLBufImgOps.ll
 ; yosys/optimized/firrtl.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 4
   %not. = xor i1 %0, true
@@ -49,7 +52,7 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; libwebp/optimized/muxedit.c.ll
@@ -57,6 +60,7 @@ entry:
 ; openjdk/optimized/assembler_x86.ll
 ; postgres/optimized/rewriteHandler.ll
 ; slurm/optimized/job_mgr.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

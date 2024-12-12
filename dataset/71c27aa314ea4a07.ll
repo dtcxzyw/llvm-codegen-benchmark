@@ -9,12 +9,12 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = and i8 %2, 2
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

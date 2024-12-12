@@ -24,10 +24,8 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; icu/optimized/format.ll
+; 3 occurrences:
 ; icu/optimized/ucol_swp.ll
-; icu/optimized/usprep.ll
 ; redis/optimized/module.ll
 ; redis/optimized/server.ll
 ; Function Attrs: nounwind

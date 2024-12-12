@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/x86assembler.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 382
-  %4 = select i1 %3, i1 %1, i1 false
-  %5 = icmp ugt i32 %0, 1048576
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
 ; 7 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -20,7 +8,7 @@ entry:
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -38,7 +26,7 @@ entry:
 ; openjdk/optimized/ad_x86.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 32
   %4 = select i1 %3, i1 %1, i1 false
@@ -50,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/scanf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000030c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -59,20 +47,14 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; clamav/optimized/pe_icons.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i1 %1, i1 false
-  %5 = icmp ult i32 %0, 3
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 84 occurrences:
-; linux/optimized/feat_ctl.ll
+; 90 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -157,7 +139,7 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -176,7 +158,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; proj/optimized/conversion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000102(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %3, i1 %1, i1 false
@@ -195,7 +177,7 @@ entry:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000114(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %3, i1 %1, i1 false
@@ -204,11 +186,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/Darwin.cpp.ll
-; wireshark/optimized/filter_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %3, i1 %1, i1 false
@@ -220,7 +201,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000118(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -4
   %4 = select i1 %3, i1 %0, i1 false
@@ -233,7 +214,7 @@ entry:
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 40
   %4 = select i1 %3, i1 %1, i1 false

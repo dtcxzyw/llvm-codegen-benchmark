@@ -44,7 +44,7 @@ entry:
   ret i32 %5
 }
 
-; 31 occurrences:
+; 33 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; icu/optimized/collationcompare.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -69,13 +69,15 @@ entry:
 ; openspiel/optimized/quoridor.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/nonstandardswap.ll
 ; quickjs/optimized/libbf.ll
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; z3/optimized/intblast_solver.cpp.ll
 ; z3/optimized/nlqsat.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -113,12 +115,11 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/saigPhase.c.ll
-; linux/optimized/nfs4renewd.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1, i64 %2) #0 {
 entry:

@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%ecx, %edx
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movzbl	%dl, %eax
 	xorl	%edx, %edx
 	divq	%rdi

@@ -77,7 +77,7 @@
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 2
-  %3 = and i1 %2, %1
+  %3 = and i1 %1, %2
   %4 = select i1 %3, i32 0, i32 %0
   ret i32 %4
 }
@@ -101,19 +101,14 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
-; cmake/optimized/idna.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; libuv/optimized/idna.c.ll
-; node/optimized/idna.ll
-; openjdk/optimized/hb-ot-name.ll
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %0, 4
-  %3 = and i1 %2, %1
+  %2 = icmp samesign ugt i32 %0, 4
+  %3 = and i1 %1, %2
   %4 = select i1 %3, i32 5, i32 %0
   ret i32 %4
 }
@@ -128,6 +123,18 @@ entry:
   %2 = call i32 @llvm.umin.i32(i32 %0, i32 2147483647)
   %3 = select i1 %1, i32 %2, i32 %0
   ret i32 %3
+}
+
+; 2 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; openjdk/optimized/hb-ot-name.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i1 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %0, 55295
+  %3 = and i1 %2, %1
+  %4 = select i1 %3, i32 65533, i32 %0
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -145,9 +152,9 @@ entry:
 ; icu/optimized/csrucode.ll
 ; linux/optimized/insn-eval.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp ult i32 %0, 6
+  %2 = icmp samesign ult i32 %0, 6
   %3 = and i1 %2, %1
   %4 = select i1 %3, i32 0, i32 %0
   ret i32 %4

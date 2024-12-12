@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/swing_GTKEngine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %0, 2
@@ -44,7 +44,7 @@ entry:
 ; darktable/optimized/tethering.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %0, 2
@@ -71,12 +71,24 @@ entry:
 ; darktable/optimized/tethering.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %0, 2
   %4 = mul i64 %3, %2
   %5 = icmp ult i64 %4, 29
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openusd/optimized/stbImage.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = shl nsw i64 %0, 2
+  %4 = mul i64 %3, %2
+  %5 = icmp samesign ult i64 %4, 16
   ret i1 %5
 }
 
@@ -99,12 +111,12 @@ entry:
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl i64 %0, 3
   %4 = mul i64 %3, %2
-  %5 = icmp ult i64 %4, 32769
+  %5 = icmp samesign ult i64 %4, 32769
   ret i1 %5
 }
 

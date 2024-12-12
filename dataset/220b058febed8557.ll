@@ -1,9 +1,10 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; clamav/optimized/pe_icons.c.ll
 ; hermes/optimized/NativeFormatting.cpp.ll
 ; linux/optimized/nfnetlink_log.ll
+; opencv/optimized/contours.cpp.ll
 ; openjdk/optimized/constMethod.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; wireshark/optimized/packet-iso14443.c.ll

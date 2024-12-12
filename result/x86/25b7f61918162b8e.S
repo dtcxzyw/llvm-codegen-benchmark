@@ -17,8 +17,8 @@ func0000000000000003:                   # @func0000000000000003
 	cmovneq	%rsi, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	shlq	$4, %rsi
+	leaq	(,%rsi,8), %rcx
+	xorl	%eax, %eax
 	testb	$1, %dil
-	movl	$16, %eax
-	cmovneq	%rsi, %rax
+	cmovneq	%rcx, %rax
 	retq

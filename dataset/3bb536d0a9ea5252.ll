@@ -1,5 +1,5 @@
 
-; 156 occurrences:
+; 155 occurrences:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/appender.cpp.ll
 ; mitsuba3/optimized/area.cpp.ll
@@ -70,7 +70,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -157,7 +156,7 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
@@ -174,7 +173,7 @@ entry:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
@@ -191,7 +190,7 @@ entry:
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
@@ -205,7 +204,7 @@ entry:
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
@@ -235,7 +234,7 @@ entry:
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
@@ -255,20 +254,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/RDFGraph.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i64
-  %4 = select i1 %0, i64 %3, i64 %1
-  %5 = icmp ult i64 %4, 4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1

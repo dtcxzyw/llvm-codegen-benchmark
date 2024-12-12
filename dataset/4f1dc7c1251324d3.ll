@@ -5,6 +5,8 @@
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -22,7 +24,6 @@
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/colvarvalue.cpp.ll
 ; gromacs/optimized/gmx_helixorient.cpp.ll
-; gromacs/optimized/tabulatednormaldistribution.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; icu/optimized/astro.ll
 ; ipopt/optimized/IpLoqoMuOracle.ll
@@ -62,7 +63,6 @@
 ; postgres/optimized/selfuncs.ll
 ; proj/optimized/airy.cpp.ll
 ; proj/optimized/bipc.cpp.ll
-; proj/optimized/collg.cpp.ll
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/healpix.cpp.ll
 ; proj/optimized/s2.cpp.ll

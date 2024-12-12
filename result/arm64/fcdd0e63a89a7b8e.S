@@ -1,30 +1,21 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ushll	v0.8h, v0.8b, #0
-	mvni	v2.4s, #13
-	uaddl	v3.4s, v1.4h, v0.4h
-	uaddl2	v0.4s, v1.8h, v0.8h
-	add	v1.4s, v0.4s, v2.4s
-	add	v0.4s, v3.4s, v2.4s
+	and	w8, w1, #0xffff
+	add	w8, w8, w0, uxtb
+	sub	w0, w8, #14
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	ushll	v0.8h, v0.8b, #0
-	movi	v2.4s, #7
-	uaddl	v3.4s, v1.4h, v0.4h
-	uaddl2	v0.4s, v1.8h, v0.8h
-	add	v1.4s, v0.4s, v2.4s
-	add	v0.4s, v3.4s, v2.4s
+	and	w8, w1, #0xffff
+	add	w8, w8, w0, uxtb
+	add	w0, w8, #7
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ushll	v0.8h, v0.8b, #0
-	movi	v2.2d, #0xffffffffffffffff
-	uaddl	v3.4s, v1.4h, v0.4h
-	uaddl2	v0.4s, v1.8h, v0.8h
-	add	v1.4s, v0.4s, v2.4s
-	add	v0.4s, v3.4s, v2.4s
+	and	w8, w1, #0xffff
+	add	w8, w8, w0, uxtb
+	sub	w0, w8, #1
 	ret
                                         // -- End function

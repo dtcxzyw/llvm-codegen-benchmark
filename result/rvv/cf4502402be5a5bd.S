@@ -4,7 +4,7 @@ func000000000000003f:                   # @func000000000000003f
 	lui	a0, 244
 	vwsll.vi	v14, v13, 8
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vv	v10, v14, v10
+	vor.vv	v10, v10, v14
 	vor.vv	v8, v10, v8
 	addiw	a0, a0, 576
 	vmul.vx	v8, v8, a0
@@ -25,7 +25,7 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	lui	a0, 123738
 	addiw	a0, a0, 1981
 	slli	a0, a0, 24
@@ -36,7 +36,7 @@ func000000000000003d:                   # @func000000000000003d
 	vzext.vf4	v13, v12
 	vwsll.vi	v14, v13, 8
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vv	v10, v14, v10
+	vor.vv	v10, v10, v14
 	vor.vv	v8, v10, v8
 	li	a0, -7
 	vmul.vx	v8, v8, a0

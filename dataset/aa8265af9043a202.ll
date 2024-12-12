@@ -1,13 +1,12 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/dorml2.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; gromacs/optimized/sorml2.cpp.ll
 ; icu/optimized/ushape.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; openblas/optimized/dlatrs.c.ll
 ; opencv/optimized/chessboard.cpp.ll

@@ -2,6 +2,8 @@
 ; 44 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftBody.ll
 ; chibicc/optimized/hashmap.ll
@@ -12,7 +14,6 @@
 ; libzmq/optimized/pipe.cpp.ll
 ; lief/optimized/bignum.c.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/i915_gem_mman.ll
 ; linux/optimized/netdev.ll
@@ -20,7 +21,6 @@
 ; llvm/optimized/DWARFDebugArangeSet.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/MCAssembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -52,12 +52,13 @@ entry:
   ret i64 %3
 }
 
-; 147 occurrences:
+; 145 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
 ; box2d/optimized/b2_collision.cpp.ll
 ; c3c/optimized/c_abi_x64.c.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -72,7 +73,6 @@ entry:
 ; cvc5/optimized/bv_inverter.cpp.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; eastl/optimized/TestFixedHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; flac/optimized/encode.c.ll
@@ -99,7 +99,6 @@ entry:
 ; lief/optimized/Builder.cpp.ll
 ; lief/optimized/cipher.c.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/dm-stripe.ll
 ; linux/optimized/dm.ll
@@ -125,7 +124,6 @@ entry:
 ; llvm/optimized/MappedBlockStream.cpp.ll
 ; llvm/optimized/PDBFile.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
@@ -144,8 +142,6 @@ entry:
 ; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/xStat.ll
 ; openjdk/optimized/zStat.ll
-; openssl/optimized/libcrypto-lib-lh_stats.ll
-; openssl/optimized/libcrypto-shlib-lh_stats.ll
 ; openssl/optimized/libdefault-lib-argon2.ll
 ; openssl/optimized/libssl-lib-cc_newreno.ll
 ; openssl/optimized/libssl-shlib-cc_newreno.ll
@@ -199,6 +195,8 @@ entry:
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/mpn.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {

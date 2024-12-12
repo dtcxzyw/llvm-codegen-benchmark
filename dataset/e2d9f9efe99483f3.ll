@@ -10,6 +10,19 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
+define i32 @func0000000000000018(i1 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 16
+  %3 = select i1 %0, i32 %2, i32 %1
+  %4 = icmp samesign ugt i32 %3, 255
+  %5 = lshr i32 %3, 8
+  %6 = select i1 %4, i32 %5, i32 %3
+  ret i32 %6
+}
+
+; 1 occurrences:
+; sentencepiece/optimized/int128.cc.ll
+; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16

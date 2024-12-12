@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 24 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
@@ -19,13 +19,17 @@
 ; hermes/optimized/TypedArray.cpp.ll
 ; php/optimized/zend_file_cache.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i1 %1, ptr %2) #0 {
+define ptr @func000000000000000f(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw i8, ptr %3, i64 24
-  %5 = getelementptr nusw [1 x ptr], ptr %4, i64 0, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 24
+  %5 = getelementptr nusw nuw [1 x ptr], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
@@ -34,10 +38,10 @@ entry:
 ; linux/optimized/tx.ll
 ; postgres/optimized/freepage.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, i1 %1, ptr %2) #0 {
+define ptr @func000000000000000c(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw i8, ptr %3, i64 904
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 904
   %5 = getelementptr [16 x ptr], ptr %4, i64 0, i64 %0
   ret ptr %5
 }

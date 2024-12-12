@@ -8,6 +8,7 @@
 ; abc/optimized/solver_api.c.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; abseil-cpp/optimized/string_view_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/mpdecimal.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; cvc5/optimized/Solver.cc.ll
@@ -35,6 +36,7 @@
 ; icu/optimized/decimfmt.ll
 ; icu/optimized/ubidiln.ll
 ; jq/optimized/decNumber.ll
+; libquic/optimized/reliable_quic_stream.cc.ll
 ; libquic/optimized/s3_clnt.c.ll
 ; libzmq/optimized/ws_decoder.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
@@ -44,7 +46,6 @@
 ; linux/optimized/filter.ll
 ; linux/optimized/hid-core.ll
 ; linux/optimized/inet_fragment.ll
-; linux/optimized/intel-agp.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/io_apic.ll
@@ -66,7 +67,6 @@
 ; llvm/optimized/TypeDumpVisitor.cpp.ll
 ; llvm/optimized/UnwrappedLineFormatter.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; nix/optimized/build-result.ll
 ; openssl/optimized/libcrypto-lib-a_int.ll
 ; openssl/optimized/libcrypto-lib-bss_dgram_pair.ll
@@ -111,11 +111,11 @@
 define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
   ret i1 %3
 }
 
-; 115 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/layout_test.cc.ll
 ; cmake/optimized/cmCustomCommandGenerator.cxx.ll
 ; cmake/optimized/cmGlobVerificationManager.cxx.ll
@@ -143,16 +143,13 @@ entry:
 ; hyperscan/optimized/mpvcompile.cpp.ll
 ; hyperscan/optimized/ng_anchored_dots.cpp.ll
 ; hyperscan/optimized/ng_small_literal_set.cpp.ll
-; hyperscan/optimized/rose_build_groups.cpp.ll
 ; icu/optimized/ubidi.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
 ; lightgbm/optimized/json11.cpp.ll
 ; linux/optimized/drm_dp_helper.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/ArgumentPromotion.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/CompressInstEmitter.cpp.ll
 ; llvm/optimized/DXILResource.cpp.ll
@@ -162,21 +159,14 @@ entry:
 ; llvm/optimized/IntrinsicEmitter.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll
-; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/MsgPackDocument.cpp.ll
 ; llvm/optimized/RangedConstraintManager.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SimpleSValBuilder.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/SortJavaScriptImports.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; luajit/optimized/lj_opt_fold.ll
-; luajit/optimized/lj_opt_fold_dyn.ll
-; luajit/optimized/lj_opt_narrow.ll
-; luajit/optimized/lj_opt_narrow_dyn.ll
 ; msgpack/optimized/msgpack_variant_capitalize.cpp.ll
 ; msgpack/optimized/msgpack_variant_mapbased.cpp.ll
 ; nlohmann_json/optimized/unit-algorithms.cpp.ll
@@ -207,8 +197,6 @@ entry:
 ; redis/optimized/sds.ll
 ; rocksdb/optimized/error_handler.cc.ll
 ; sentencepiece/optimized/trainer_interface.cc.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
-; velox/optimized/GreatestLeast.cpp.ll
 ; velox/optimized/Variant.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
@@ -232,14 +220,14 @@ entry:
 ; yosys/optimized/share.ll
 ; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp samesign ult i8 %0, %2
   ret i1 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; git/optimized/packfile.ll
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
@@ -247,12 +235,11 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openusd/optimized/variableExpressionImpl.cpp.ll
-; wireshark/optimized/packet-evrc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000015(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
-  %3 = icmp uge i8 %2, %0
+  %3 = icmp samesign ule i8 %0, %2
   ret i1 %3
 }
 
@@ -267,14 +254,14 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; sentencepiece/optimized/trainer_interface.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000019(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
-  %3 = icmp ule i8 %2, %0
+  %3 = icmp samesign uge i8 %0, %2
   ret i1 %3
 }
 
-; 38 occurrences:
+; 33 occurrences:
 ; cmake/optimized/cmGlobVerificationManager.cxx.ll
 ; git/optimized/midx.ll
 ; glslang/optimized/iomapper.cpp.ll
@@ -282,15 +269,12 @@ entry:
 ; hdf5/optimized/H5Pfapl.c.ll
 ; hdf5/optimized/H5Pint.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/rose_build_groups.cpp.ll
 ; icu/optimized/ubidi.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/mlme.ll
 ; llvm/optimized/AlignmentFromAssumptions.cpp.ll
 ; llvm/optimized/DeclBase.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
-; llvm/optimized/InferAlignment.cpp.ll
-; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; openjdk/optimized/hb-aat-map.ll
 ; openusd/optimized/variableExpressionImpl.cpp.ll
@@ -310,14 +294,35 @@ entry:
 ; postgres/optimized/pathnode.ll
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/system_memory.c.ll
-; velox/optimized/GreatestLeast.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
-; wireshark/optimized/packet-evrc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp samesign ugt i8 %0, %2
+  ret i1 %3
+}
+
+; 14 occurrences:
+; hyperscan/optimized/rose_build_groups.cpp.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
+; linux/optimized/drm_dp_helper.ll
+; llvm/optimized/ArgumentPromotion.cpp.ll
+; llvm/optimized/MemCpyOptimizer.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; luajit/optimized/lj_opt_fold.ll
+; luajit/optimized/lj_opt_fold_dyn.ll
+; luajit/optimized/lj_opt_narrow.ll
+; luajit/optimized/lj_opt_narrow_dyn.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 15
+  %3 = icmp ult i8 %0, %2
   ret i1 %3
 }
 
@@ -339,7 +344,30 @@ entry:
 define i1 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
-  %3 = icmp ne i8 %2, %0
+  %3 = icmp ne i8 %0, %2
+  ret i1 %3
+}
+
+; 4 occurrences:
+; hyperscan/optimized/rose_build_groups.cpp.ll
+; llvm/optimized/InferAlignment.cpp.ll
+; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
+; wireshark/optimized/packet-evrc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 63
+  %3 = icmp ugt i8 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-evrc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(i8 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 31
+  %3 = icmp ule i8 %0, %2
   ret i1 %3
 }
 

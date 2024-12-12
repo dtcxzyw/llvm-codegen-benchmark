@@ -1,10 +1,10 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andb	$-2, %sil
 	leal	128(%rdi), %eax
 	cmpb	$6, %sil
 	cmovnel	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	16(%rdi), %eax
 	testb	$8, %sil
 	cmovnel	%edi, %eax

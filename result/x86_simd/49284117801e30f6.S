@@ -16,12 +16,6 @@ func000000000000002f:                   # @func000000000000002f
 	vpsllq	$32, %ymm1, %ymm1
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
-func000000000000007f:                   # @func000000000000007f
-	vpmovzxwq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero
-	vpsllq	$31, %ymm2, %ymm2
-	vpsllq	$23, %ymm1, %ymm1
-	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
-	retq
 func0000000000000032:                   # @func0000000000000032
 	vpmovzxwq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero
 	vpsllq	$32, %ymm2, %ymm2
@@ -62,6 +56,12 @@ func0000000000000033:                   # @func0000000000000033
 	vpmovzxwq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero
 	vpsllq	$16, %ymm2, %ymm2
 	vpsllq	$32, %ymm1, %ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
+	retq
+func000000000000007f:                   # @func000000000000007f
+	vpmovzxwq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero
+	vpsllq	$42, %ymm2, %ymm2
+	vpsllq	$52, %ymm1, %ymm1
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 func000000000000001f:                   # @func000000000000001f

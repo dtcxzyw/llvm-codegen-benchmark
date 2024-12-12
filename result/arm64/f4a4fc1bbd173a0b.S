@@ -1,42 +1,25 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	mov	w8, #2                          // =0x2
-	dup	v4.2d, x8
-	add	v3.2d, v3.2d, v3.2d
-	add	v2.2d, v2.2d, v2.2d
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v0.2d, v4.2d
-	add	v1.2d, v1.2d, v4.2d
+	sub	x8, x1, x2
+	lsl	x8, x8, #1
+	sub	x8, x8, x0
+	add	x0, x8, #2
 	ret
                                         // -- End function
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	mov	x8, #4611686018427387903        // =0x3fffffffffffffff
-	dup	v4.2d, x8
-	shl	v3.2d, v3.2d, #7
-	shl	v2.2d, v2.2d, #7
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v0.2d, v4.2d
-	add	v1.2d, v1.2d, v4.2d
+	sub	x8, x1, x2
+	mov	x9, #4611686018427387903        // =0x3fffffffffffffff
+	lsl	x8, x8, #7
+	sub	x8, x8, x0
+	add	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	mov	x8, #-4                         // =0xfffffffffffffffc
-	dup	v4.2d, x8
-	shl	v3.2d, v3.2d, #2
-	shl	v2.2d, v2.2d, #2
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v0.2d, v4.2d
-	add	v1.2d, v1.2d, v4.2d
+	sub	x8, x1, x2
+	lsl	x8, x8, #2
+	sub	x8, x8, x0
+	sub	x0, x8, #4
 	ret
                                         // -- End function

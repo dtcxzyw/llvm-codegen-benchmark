@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/acecRe.c.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; openspiel/optimized/oh_hell_test.cc.ll

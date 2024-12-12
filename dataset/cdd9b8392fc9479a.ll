@@ -39,7 +39,13 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 15 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; graphviz/optimized/general.c.ll
 ; graphviz/optimized/mincross.c.ll
 ; graphviz/optimized/ortho.c.ll
@@ -57,11 +63,10 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; php/optimized/spl_heap.ll
 ; php/optimized/zend_operators.ll
 ; postgres/optimized/geo_spgist.ll
-; postgres/optimized/geqo_pool.ll
 ; postgres/optimized/spgkdtreeproc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, double %1, double %2) #0 {

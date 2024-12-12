@@ -1,19 +1,9 @@
 .LCPI0_0:
-	.long	15                              # 0xf
-.LCPI0_1:
-	.long	14                              # 0xe
-func0000000000000043:                   # @func0000000000000043
-	vpcmpnleud	.LCPI0_0(%rip){1to4}, %xmm2, %k1
-	vpbroadcastd	.LCPI0_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [14,14,14,14]
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	retq
-.LCPI1_0:
 	.long	1                               # 0x1
 func000000000000000b:                   # @func000000000000000b
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%xmm3, %xmm2, %k1
-	vpbroadcastd	.LCPI1_0(%rip), %xmm1 {%k1} # xmm1 {%k1} = [1,1,1,1]
+	vpbroadcastd	.LCPI0_0(%rip), %xmm1 {%k1} # xmm1 {%k1} = [1,1,1,1]
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

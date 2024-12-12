@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/decompress.c.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/decompress.c.ll
@@ -8,6 +8,7 @@
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
 ; darktable/optimized/introspection_spots.c.ll
+; lvgl/optimized/lv_text.ll
 ; qemu/optimized/hw_nvme_ns.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {

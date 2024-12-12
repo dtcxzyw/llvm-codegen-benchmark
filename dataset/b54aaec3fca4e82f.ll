@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 21 occurrences:
 ; glslang/optimized/hlslGrammar.cpp.ll
 ; hwloc/optimized/traversal.ll
 ; linux/optimized/build_utility.ll
@@ -11,6 +11,15 @@
 ; llvm/optimized/StmtPrinter.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1FullGCMarker.ll
+; openjdk/optimized/g1ParScanThreadState.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/psScavenge.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahMark.ll
+; openjdk/optimized/xHeapIterator.ll
+; openjdk/optimized/zHeapIterator.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
@@ -36,7 +45,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0) #0 {
+define i64 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 1
   %2 = icmp eq i64 %1, 0
@@ -48,7 +57,7 @@ entry:
 ; llvm/optimized/ASTContext.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003c(i64 %0) #0 {
+define i64 @func000000000000006c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 65535
   %.not = icmp eq i64 %1, 0
@@ -59,11 +68,22 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/pentago.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 1
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 2, i64 6
+  ret i64 %3
+}
+
+; 1 occurrences:
+; linux/optimized/nf_nat_sip.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0) #0 {
+entry:
+  %1 = and i64 %0, 7
+  %2 = icmp samesign ult i64 %1, 3
+  %3 = select i1 %2, i64 16, i64 72
   ret i64 %3
 }
 

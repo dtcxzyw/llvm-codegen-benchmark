@@ -3,7 +3,7 @@ func0000000000000140:                   # @func0000000000000140
 	leaq	16(%rsi,%rdi), %rax
 	retq
 func000000000000016a:                   # @func000000000000016a
-	sarq	$29, %rdx
+	sarq	$32, %rdx
 	subq	%rdx, %rsi
-	leaq	16(%rsi,%rdi), %rax
+	leaq	-1(%rsi,%rdi), %rax
 	retq

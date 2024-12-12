@@ -9,7 +9,7 @@
 ; openjdk/optimized/X11Renderer.ll
 ; ruby/optimized/coverage.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp slt i64 %3, 4611686018427387904
@@ -25,7 +25,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
 }
@@ -43,9 +43,9 @@ entry:
 }
 
 ; 4 occurrences:
-; libquic/optimized/t1_lib.c.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
 ; vcpkg/optimized/commands.find.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
@@ -63,10 +63,10 @@ entry:
 ; libquic/optimized/adler32.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 65520
+  %4 = icmp samesign ugt i64 %3, 65520
   %5 = select i1 %4, i64 %0, i64 65520
   ret i64 %5
 }
@@ -76,11 +76,22 @@ entry:
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = icmp ult i64 %3, 65536
+  %4 = icmp samesign ult i64 %3, 65536
   %5 = select i1 %4, i64 %0, i64 -1
+  ret i64 %5
+}
+
+; 1 occurrences:
+; libquic/optimized/t1_lib.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = icmp samesign ult i64 %3, 508
+  %5 = select i1 %4, i64 %0, i64 1
   ret i64 %5
 }
 
@@ -99,7 +110,7 @@ entry:
 ; luajit/optimized/minilua.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp sgt i64 %3, 0

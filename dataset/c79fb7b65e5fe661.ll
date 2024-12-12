@@ -28,7 +28,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 1000000
   %5 = mul i64 %1, 86400000000
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -39,7 +39,7 @@ entry:
 define i64 @func0000000000000044(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 1000000
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = mul nsw i64 %5, -1000000
   %7 = add i64 %6, %4
@@ -52,7 +52,7 @@ entry:
 define i64 @func00000000000000c4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 8304
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = mul nsw i64 %5, -8304
   %7 = add i64 %6, %4
@@ -67,7 +67,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, -8304
   %5 = mul nuw nsw i64 %1, 8304
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -81,7 +81,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 86400
   %5 = mul nsw i64 %1, 60
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = add i64 %6, %4
   ret i64 %7
 }

@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	not	a2, a2
 	bexti	a2, a2, 31
 	slt	a0, a1, a0

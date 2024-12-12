@@ -3,15 +3,9 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	orl	%edx, %esi
 	setne	%al
-	orb	%dil, %al
-	retq
-func0000000000000028:                   # @func0000000000000028
-	orl	%edx, %esi
-	cmpl	$12, %esi
-	setb	%al
 	orb	%dil, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
@@ -19,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	orl	%edx, %esi
 	cmpl	$16, %esi
 	setae	%al
@@ -30,12 +24,18 @@ func0000000000000014:                   # @func0000000000000014
 	setns	%al
 	orb	%dil, %al
 	retq
+func0000000000000068:                   # @func0000000000000068
+	orl	%edx, %esi
+	cmpl	$5, %esi
+	setb	%al
+	orb	%dil, %al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	orl	%edx, %esi
 	sets	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	orl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
@@ -46,15 +46,27 @@ func0000000000000010:                   # @func0000000000000010
 	setae	%al
 	orb	%dil, %al
 	retq
+func0000000000000048:                   # @func0000000000000048
+	orl	%edx, %esi
+	cmpl	$2048, %esi                     # imm = 0x800
+	setb	%al
+	orb	%dil, %al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	orl	%edx, %esi
 	cmpl	$2048, %esi                     # imm = 0x800
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000054:                   # @func0000000000000054
 	orl	%edx, %esi
 	cmpl	$1114112, %esi                  # imm = 0x110000
 	setge	%al
+	orb	%dil, %al
+	retq
+func0000000000000070:                   # @func0000000000000070
+	orl	%edx, %esi
+	cmpl	$-483222986, %esi               # imm = 0xE3329A36
+	setae	%al
 	orb	%dil, %al
 	retq

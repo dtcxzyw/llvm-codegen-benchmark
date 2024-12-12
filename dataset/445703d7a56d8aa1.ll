@@ -7,7 +7,7 @@
 ; openusd/optimized/level.cpp.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
+define i1 @func000000000000014a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 2

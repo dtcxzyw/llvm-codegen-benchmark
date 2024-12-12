@@ -22,13 +22,13 @@ func0000000000000032:                   # @func0000000000000032
 	andi	a1, a1, -8
 	add	a0, a0, a1
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	slli	a1, a1, 3
 	add	a1, a1, a2
 	andi	a1, a1, -8
 	add	a0, a0, a1
 	ret
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	slli	a1, a1, 3
 	add	a1, a1, a2
 	andi	a1, a1, -8

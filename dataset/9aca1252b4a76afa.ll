@@ -1,19 +1,17 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; libwebp/optimized/upsampling.c.ll
 ; miniaudio/optimized/unity.c.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; openusd/optimized/restoration.c.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/RecastRasterization.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000005b(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = add i32 %2, 3
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw float, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -28,6 +26,19 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr float, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -12
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 3
+  %3 = add i32 %2, 48
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -2
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 46 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/theory_datatypes.cpp.ll
@@ -16,11 +16,13 @@
 ; llvm/optimized/BreakableToken.cpp.ll
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
+; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/ml_shared_data_context.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
@@ -43,16 +45,12 @@
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/zic.ll
 ; sentencepiece/optimized/trainer_interface.cc.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

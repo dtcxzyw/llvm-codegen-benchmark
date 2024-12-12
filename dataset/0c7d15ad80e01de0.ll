@@ -1,6 +1,5 @@
 
-; 23 occurrences:
-; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; 22 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cvc5/optimized/sygus_unif.cpp.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
@@ -28,7 +27,7 @@ define double @func0000000000000002(double %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = uitofp i64 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

@@ -2,6 +2,7 @@
 ; 70 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/utilNam.c.ll
+; boost/optimized/numeric.ll
 ; bullet3/optimized/btConvexHull.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/fastcover.c.ll
@@ -23,7 +24,6 @@
 ; jemalloc/optimized/malloc_io.sym.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libquic/optimized/deflate.c.ll
-; linux/optimized/intel_guc_hwconfig.ll
 ; linux/optimized/services.ll
 ; linux/optimized/zstd_decompress.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -49,9 +49,7 @@
 ; opencv/optimized/ts_func.cpp.ll
 ; openmpi/optimized/ad_darray.ll
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
-; openssl/optimized/libcrypto-lib-p5_pbe.ll
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
-; openssl/optimized/libcrypto-shlib-p5_pbe.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
@@ -66,6 +64,8 @@
 ; sqlite/optimized/sqlite3.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; xgboost/optimized/allreduce.cc.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; zstd/optimized/fse_compress.c.ll
@@ -79,7 +79,7 @@ entry:
   ret i64 %3
 }
 
-; 89 occurrences:
+; 85 occurrences:
 ; assimp/optimized/SMDLoader.cpp.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; cmake/optimized/connect.c.ll
@@ -107,10 +107,7 @@ entry:
 ; hermes/optimized/StringMap.cpp.ll
 ; icu/optimized/dayperiodrules.ll
 ; libpng/optimized/png.c.ll
-; linux/optimized/8250_lpss.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/auth_gss.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/dm-log.ll
 ; linux/optimized/drm_ioctl.ll
 ; linux/optimized/fib_semantics.ll
@@ -150,7 +147,6 @@ entry:
 ; openmpi/optimized/pmix_alfg.ll
 ; openssl/optimized/libcrypto-lib-siphash.ll
 ; openssl/optimized/libcrypto-shlib-siphash.ll
-; openssl/optimized/libtestutil-lib-random.ll
 ; postgres/optimized/functioncmds.ll
 ; postgres/optimized/timestamp.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
@@ -178,12 +174,9 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
+; 6 occurrences:
 ; freetype/optimized/psnames.c.ll
-; libquic/optimized/exponentiation.c.ll
 ; linux/optimized/auth.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/rtnetlink.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; re2/optimized/regexp.cc.ll
@@ -201,28 +194,25 @@ entry:
 ; openssl/optimized/libssl-lib-tls1_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i32 %0) #0 {
+define i64 @func0000000000000029(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 2
+  %1 = icmp samesign ult i32 %0, 2
   %2 = select i1 %1, i32 0, i32 %0
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
-; 16 occurrences:
+; 13 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; git/optimized/diff.ll
 ; git/optimized/xmerge.ll
 ; graphviz/optimized/poly.c.ll
-; libquic/optimized/p5_pbe.c.ll
 ; libquic/optimized/p5_pbev2.c.ll
 ; openmpi/optimized/allocator_bucket_alloc.ll
 ; openssl/optimized/libcrypto-lib-bio_lib.ll
 ; openssl/optimized/libcrypto-lib-ocsp_ext.ll
-; openssl/optimized/libcrypto-lib-p5_pbe.ll
 ; openssl/optimized/libcrypto-shlib-bio_lib.ll
 ; openssl/optimized/libcrypto-shlib-ocsp_ext.ll
-; openssl/optimized/libcrypto-shlib-p5_pbe.ll
 ; postgres/optimized/autovacuum.ll
 ; wireshark/optimized/address_types.c.ll
 ; wireshark/optimized/str_util.c.ll
@@ -252,13 +242,11 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; clamav/optimized/strfn.cpp.ll
 ; cmake/optimized/zdict.c.ll
 ; git/optimized/unpack-trees.ll
 ; libphonenumber/optimized/rune.c.ll
-; linux/optimized/nfs3xdr.ll
-; linux/optimized/utownerid.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-gsm_a_bssmap.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
@@ -272,6 +260,18 @@ entry:
   %2 = select i1 %1, i32 65533, i32 %0
   %3 = zext i32 %2 to i64
   ret i64 %3
+}
+
+; 3 occurrences:
+; libquic/optimized/exponentiation.c.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/rtnetlink.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000031(i32 %0) #0 {
+entry:
+  %1 = call i32 @llvm.umin.i32(i32 %0, i32 5)
+  %2 = zext nneg i32 %1 to i64
+  ret i64 %2
 }
 
 ; 3 occurrences:
@@ -298,4 +298,8 @@ entry:
   ret i64 %3
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.umin.i32(i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

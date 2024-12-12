@@ -4,9 +4,9 @@
 ; openssl/optimized/libcrypto-lib-obj_dat.ll
 ; openssl/optimized/libcrypto-shlib-obj_dat.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000021(i64 %0) #0 {
+define i8 @func0000000000000061(i64 %0) #0 {
 entry:
-  %1 = icmp ugt i64 %0, 39
+  %1 = icmp samesign ugt i64 %0, 39
   %2 = zext i1 %1 to i8
   %3 = or disjoint i8 %2, 48
   ret i8 %3

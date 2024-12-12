@@ -1,72 +1,72 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
 	cmovnsl	%eax, %esi
 	sarl	$3, %esi
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	63(%rsi), %eax
 	addl	$126, %esi
 	testl	%eax, %eax
 	cmovnsl	%eax, %esi
 	sarl	$6, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	leal	31(%rsi), %eax
 	addl	$62, %esi
 	testl	%eax, %eax
 	cmovnsl	%eax, %esi
 	sarl	$5, %esi
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	leal	63(%rsi), %eax
 	addl	$126, %esi
 	testl	%eax, %eax
 	cmovnsl	%eax, %esi
 	sarl	$6, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movl	%esi, %eax
 	addl	$6, %eax
 	shrl	$31, %eax
 	leal	6(%rsi,%rax), %eax
 	sarl	%eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
 	cmovnsl	%eax, %esi
 	sarl	$3, %esi
-	cmpq	%rdi, %rsi
-	seta	%al
-	retq
-func0000000000000048:                   # @func0000000000000048
-	leal	7(%rsi), %eax
-	addl	$14, %esi
-	testl	%eax, %eax
-	cmovnsl	%eax, %esi
-	sarl	$3, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000088:                   # @func0000000000000088
+	leal	7(%rsi), %eax
+	addl	$14, %esi
+	testl	%eax, %eax
+	cmovnsl	%eax, %esi
+	sarl	$3, %esi
+	cmpq	%rsi, %rdi
+	seta	%al
+	retq
+func0000000000000081:                   # @func0000000000000081
 	movl	%esi, %eax
 	decl	%eax
 	shrl	$31, %eax
 	leal	-1(%rsi,%rax), %eax
 	sarl	%eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

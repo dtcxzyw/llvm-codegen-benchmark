@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.long	0x358637bd                      # float 9.99999997E-7
+	.long	0x3c257fd0                      # float 0.0101012737
 func0000000000000000:                   # @func0000000000000000
 	vmulps	.LCPI0_0(%rip){1to16}, %zmm0, %zmm1
 	vcvtps2pd	%ymm1, %zmm0

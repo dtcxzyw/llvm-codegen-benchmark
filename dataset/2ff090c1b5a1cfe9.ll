@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; libquic/optimized/hkdf.c.ll
-; openssl/optimized/libcrypto-lib-cmac.ll
-; openssl/optimized/libcrypto-shlib-cmac.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, -1
-  %4 = udiv i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
-}
-
 ; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll

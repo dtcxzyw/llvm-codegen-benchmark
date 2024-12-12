@@ -9,6 +9,16 @@ func0000000000000065:                   # @func0000000000000065
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
+func000000000000000f:                   # @func000000000000000f
+	addi	a2, a2, 2
+	lui	a3, 175448
+	zext.w	a2, a2
+	addiw	a3, a3, 43
+	mul	a2, a2, a3
+	srli	a2, a2, 40
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
 func0000000000000060:                   # @func0000000000000060
 	addi	a2, a2, 500
 	lui	a3, 67109
@@ -28,16 +38,6 @@ func0000000000000020:                   # @func0000000000000020
 	zext.w	a2, a2
 	mul	a2, a2, a3
 	srli	a2, a2, 37
-	add	a0, a0, a1
-	addw	a0, a0, a2
-	ret
-func0000000000000021:                   # @func0000000000000021
-	addi	a2, a2, -1
-	lui	a3, 335544
-	zext.w	a2, a2
-	addiw	a3, a3, 1311
-	mul	a2, a2, a3
-	srli	a2, a2, 39
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

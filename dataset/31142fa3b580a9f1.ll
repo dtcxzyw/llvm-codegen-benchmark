@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; bullet3/optimized/b3OptimizedBvh.ll
 ; bullet3/optimized/btOptimizedBvh.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/test_utilities.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/simple_color_balance.cpp.ll

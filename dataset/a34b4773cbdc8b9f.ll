@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/nvm.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 14
   %3 = urem i32 %2, %0

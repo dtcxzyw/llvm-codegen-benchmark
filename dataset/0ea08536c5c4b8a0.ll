@@ -14,7 +14,7 @@
 ; openjdk/optimized/hb-ot-name.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1) #0 {
 entry:
   %.neg = mul i32 %1, -10
   %2 = add i32 %.neg, %0
@@ -31,7 +31,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1) #0 {
 entry:
   %.neg = mul i32 %1, -12
   %2 = add i32 %.neg, %0
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %.neg = mul i32 %1, -94
   %2 = add i32 %.neg, %0
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a6(i32 %0, i32 %1) #0 {
 entry:
   %.neg = mul i32 %1, -112
   %2 = add i32 %.neg, %0

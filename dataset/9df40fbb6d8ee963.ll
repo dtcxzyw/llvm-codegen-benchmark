@@ -1,10 +1,8 @@
 
-; 8 occurrences:
-; gromacs/optimized/grompp.cpp.ll
+; 6 occurrences:
 ; opencv/optimized/facemarkAAM.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
-; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll

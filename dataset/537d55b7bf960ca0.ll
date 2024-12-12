@@ -1,5 +1,5 @@
 
-; 157 occurrences:
+; 154 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -24,7 +24,6 @@
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
@@ -71,6 +70,7 @@
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -78,10 +78,7 @@
 ; miniaudio/optimized/unity.c.ll
 ; nix/optimized/stack.ll
 ; node/optimized/libnode.env.ll
-; nuttx/optimized/lib_imaxabs.c.ll
-; nuttx/optimized/lib_labs.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
-; nuttx/optimized/lib_llabs.c.ll
 ; nuttx/optimized/lib_strtold.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -108,7 +105,6 @@
 ; postgres/optimized/int8.ll
 ; postgres/optimized/numeric.ll
 ; protobuf/optimized/time_util.cc.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
@@ -157,17 +153,18 @@
 ; wireshark/optimized/packet-dcom.c.ll
 ; z3/optimized/mpff.cpp.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.abs.i64(i64 %0, i1 true)
+  %1 = tail call i64 @llvm.abs.i64(i64 range(i64 -4611686018427387904, 4611686018427387904) %0, i1 true)
   ret i64 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 
-; 522 occurrences:
+; 547 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; assimp/optimized/Value.cpp.ll
@@ -585,7 +582,6 @@ declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; spike/optimized/f64_rem.ll
-; spike/optimized/i64_to_f32.ll
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -690,6 +686,32 @@ declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 ; xgboost/optimized/loop.cc.ll
 ; xgboost/optimized/socket.cc.ll
 ; xgboost/optimized/tracker.cc.ll
+; zed-rs/optimized/0l5q95ei94dcvnozucoiwn5qf.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/12xam7q4l70h0vr8y5wvb4s4a.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3ly3b3fonqg7nd45488b8bsgs.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/539jqkovt0x6g7ilfg6ddwnop.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; zed-rs/optimized/7rpe3bril898mttdoib5hjrj5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8ncehfng1y5s06ypbycx8606d.ll
+; zed-rs/optimized/8ssoz06l7e5x2c5xnrblffvll.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/aktvc84j83s8sqq1xgqfsdyza.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
@@ -697,11 +719,19 @@ entry:
   ret i64 %1
 }
 
-; 77 occurrences:
+; 83 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/rational.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/wait.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
@@ -727,12 +757,10 @@ entry:
 ; llvm/optimized/LoopDataPrefetch.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MicrosoftDemangleNodes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/Stack.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; nanobind/optimized/common.cpp.ll
 ; nix/optimized/diff-closures.ll
 ; ocio/optimized/ImageDesc.cpp.ll
@@ -778,14 +806,15 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
-  %1 = call noundef i64 @llvm.abs.i64(i64 %0, i1 true)
+  %1 = tail call noundef i64 @llvm.abs.i64(i64 %0, i1 true)
   ret i64 %1
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/approximately_equals.ll
 ; openjdk/optimized/mulnode.ll
 ; openjdk/optimized/subnode.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll

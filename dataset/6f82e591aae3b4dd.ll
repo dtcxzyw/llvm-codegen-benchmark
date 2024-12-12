@@ -10,7 +10,7 @@ define i32 @func0000000000000001(i32 %0, double %1) #0 {
 entry:
   %2 = fdiv double %1, 0x3FE62E42FEFA39EF
   %3 = fptosi double %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -21,7 +21,7 @@ define i32 @func0000000000000000(i32 %0, double %1) #0 {
 entry:
   %2 = fdiv double %1, 0x40E1D58800000000
   %3 = fptosi double %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

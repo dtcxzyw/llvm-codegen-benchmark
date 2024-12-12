@@ -1,5 +1,5 @@
 
-; 117 occurrences:
+; 121 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; bdwgc/optimized/gc.c.ll
@@ -21,7 +21,6 @@
 ; llvm/optimized/LegalizeTypesGeneric.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
 ; llvm/optimized/StatepointLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -90,7 +89,6 @@
 ; nori/optimized/independent.cpp.ll
 ; nori/optimized/ttest.cpp.ll
 ; nori/optimized/warptest.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
@@ -111,12 +109,18 @@
 ; php/optimized/zend_jit.ll
 ; protobuf/optimized/lexer.cc.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
-; rand-rs/optimized/3wentbx1vl0iwznb.ll
 ; raylib/optimized/rcore.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
+; zed-rs/optimized/20wexgg4z3ww9j4h4iowli6fi.ll
+; zed-rs/optimized/5eo3r6xqgcl9c03ocnkjc70d3.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/etkkpijil810uxaq6a1xhpkj9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:

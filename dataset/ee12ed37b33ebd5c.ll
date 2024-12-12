@@ -1,8 +1,8 @@
 
-%"struct.OT::IntType.139.2623439" = type { %struct.BEInt.140.2623440 }
-%struct.BEInt.140.2623440 = type { [2 x i8] }
+%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
+%struct.BEInt.140.2736870 = type { [2 x i8] }
 
-; 22 occurrences:
+; 21 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; lief/optimized/ssl_tls12_client.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
@@ -24,12 +24,11 @@
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 13
@@ -40,13 +39,13 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = add nsw i32 %4, -1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw %"struct.OT::IntType.139.2623439", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.139.2736869", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -57,10 +56,10 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i32, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -1032
@@ -71,13 +70,13 @@ entry:
 ; flac/optimized/picture.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = add i32 %4, 12
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

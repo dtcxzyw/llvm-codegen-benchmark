@@ -1,5 +1,5 @@
 
-; 420 occurrences:
+; 424 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcPrint.c.ll
@@ -20,6 +20,10 @@
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; assimp/optimized/IFCProfile.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btDeformableBackwardEulerObjective.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btGjkPairDetector.ll
@@ -392,7 +396,6 @@
 ; postgres/optimized/selfuncs.ll
 ; postgres/optimized/tsrank.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
-; ruby/optimized/scheduler.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; tev/optimized/ImageCanvas.cpp.ll
@@ -420,11 +423,12 @@
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; yoga/optimized/PixelGrid.cpp.ll
 ; yosys/optimized/Solver.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

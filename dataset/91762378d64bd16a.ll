@@ -18,9 +18,9 @@ entry:
 ; opencc/optimized/Config.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000004(i1 %0, i64 %1) #0 {
+define i16 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 4294967296
+  %2 = icmp samesign ult i64 %1, 4294967296
   %3 = select i1 %2, i16 470, i16 406
   %4 = select i1 %0, i16 502, i16 %3
   ret i16 %4

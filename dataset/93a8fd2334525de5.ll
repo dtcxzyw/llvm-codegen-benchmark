@@ -1,7 +1,8 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ivyCut.c.ll
+; boost/optimized/basic_text_iprimitive.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; postgres/optimized/appendinfo.ll

@@ -22,7 +22,15 @@ func0000000000000000:                   // @func0000000000000000
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000003e:                   // @func000000000000003e
+func0000000000000003:                   // @func0000000000000003
+// %bb.0:                               // %entry
+	mov	x8, #511                        // =0x1ff
+	madd	x8, x1, x2, x8
+	and	x8, x8, #0xffffffffffffff00
+	add	x0, x0, x8
+	ret
+                                        // -- End function
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	mov	x8, #387                        // =0x183
 	madd	x8, x1, x2, x8

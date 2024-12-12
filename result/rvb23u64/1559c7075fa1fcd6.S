@@ -1,4 +1,4 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000000de:                   # @func00000000000000de
 	ret
 func00000000000000d0:                   # @func00000000000000d0
 	slli.uw	a2, a1, 4
@@ -12,7 +12,7 @@ func00000000000001f0:                   # @func00000000000001f0
 	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
 	ret
-func00000000000001fa:                   # @func00000000000001fa
+func00000000000001ff:                   # @func00000000000001ff
 	sext.w	a1, a1
 	slli	a2, a1, 7
 	sh2add	a1, a1, a1

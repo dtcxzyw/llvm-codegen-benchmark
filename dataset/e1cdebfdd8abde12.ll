@@ -3,7 +3,7 @@
 ; php/optimized/KeccakSponge.ll
 ; slurm/optimized/KeccakSponge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = add nsw i32 %3, -1
@@ -129,7 +129,7 @@ entry:
 ; z3/optimized/warning.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw i32 %3, 8

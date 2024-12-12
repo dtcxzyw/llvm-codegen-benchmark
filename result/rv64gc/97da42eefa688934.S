@@ -1,11 +1,3 @@
-func0000000000000011:                   # @func0000000000000011
-	sext.w	a1, a1
-	sext.w	a2, a2
-	sltu	a1, a2, a1
-	slli	a1, a1, 1
-	andi	a0, a0, -3
-	or	a0, a0, a1
-	ret
 func000000000000000d:                   # @func000000000000000d
 	sext.w	a2, a2
 	sext.w	a1, a1

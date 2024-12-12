@@ -15,14 +15,14 @@ func000000000000002a:                   # @func000000000000002a
 	leaq	(%rax,%rsi,4), %rax
 	leaq	(%rax,%rdi,4), %rax
 	retq
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000000ff:                   # @func00000000000000ff
 	movq	%rsi, %rax
 	shlq	$5, %rax
 	addq	%rdx, %rax
 	leaq	(%rax,%rsi,8), %rax
 	leaq	(%rax,%rdi,8), %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000007e:                   # @func000000000000007e
 	movq	%rsi, %rax
 	shlq	$5, %rax
 	addq	%rdx, %rax

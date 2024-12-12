@@ -1,9 +1,9 @@
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	xorl	%esi, %edi
 	cmpl	%edx, %edi
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	xorl	%esi, %edi
 	cmpl	%edx, %edi
 	sete	%al

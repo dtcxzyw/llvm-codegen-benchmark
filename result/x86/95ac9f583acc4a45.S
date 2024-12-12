@@ -23,9 +23,3 @@ func0000000000000014:                   # @func0000000000000014
 	andq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
-	decq	%rdx
-	decq	%rsi
-	andq	%rdx, %rsi
-	leaq	(%rdi,%rsi,8), %rax
-	retq

@@ -1,6 +1,8 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/ODCode93Writer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
@@ -24,7 +26,8 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/to_chars.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/BenchmarkMap.cpp.ll
 ; eastl/optimized/BenchmarkSet.cpp.ll
@@ -39,10 +42,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i64 %0) #0 {
 entry:
-  %1 = mul nuw nsw i64 %0, 13
-  %2 = add nuw nsw i64 %1, 88
-  %3 = lshr i64 %2, 3
-  %4 = and i64 %3, 504
+  %1 = mul nuw nsw i64 %0, 429497
+  %2 = add nuw nsw i64 %1, 1
+  %3 = lshr i64 %2, 31
+  %4 = and i64 %3, 4294967294
   ret i64 %4
 }
 

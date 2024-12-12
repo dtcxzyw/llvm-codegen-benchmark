@@ -1,10 +1,12 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; cpython/optimized/_ctypes_test.ll
 ; cpython/optimized/fileio.ll
 ; linux/optimized/pcm_lib.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; php/optimized/escape_analysis.ll
 ; php/optimized/softmagic.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
@@ -16,11 +18,12 @@ entry:
   ret i8 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; freetype/optimized/pfr.c.ll
 ; git/optimized/transport-helper.ll
 ; git/optimized/transport.ll
 ; llama.cpp/optimized/llama.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; spike/optimized/vector_unit.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0) #0 {

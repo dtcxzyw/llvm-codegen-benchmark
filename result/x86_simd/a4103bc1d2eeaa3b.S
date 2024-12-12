@@ -21,5 +21,5 @@ func000000000000001d:                   # @func000000000000001d
 func0000000000000014:                   # @func0000000000000014
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpternlogd	$30, %ymm2, %ymm1, %ymm3 # ymm3 = ymm3 ^ (ymm1 | ymm2)
-	vpaddd	%ymm0, %ymm3, %ymm0
+	vpaddd	%ymm3, %ymm0, %ymm0
 	retq

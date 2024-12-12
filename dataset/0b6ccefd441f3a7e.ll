@@ -1,33 +1,12 @@
 
-; 10 occurrences:
-; llvm/optimized/Lint.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
-; ruby/optimized/symbol.ll
-; vcpkg/optimized/commands.install.cpp.ll
-; vcpkg/optimized/export.ifw.cpp.ll
-; vcpkg/optimized/spdx.cpp.ll
-; vcpkg/optimized/versions.cpp.ll
-; zxing/optimized/zueci.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000102(i8 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 26
-  %4 = or i1 %3, %1
-  %5 = icmp eq i8 %0, 95
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000298(i8 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000518(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 128
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp ne i8 %0, 36
   %6 = or i1 %5, %4
   ret i1 %6
@@ -37,7 +16,7 @@ entry:
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i8 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000098(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = or i1 %3, %1
@@ -53,10 +32,10 @@ entry:
 ; softposit-rs/optimized/279qzdp4rwsfn4n0.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i8 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000082(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq i8 %0, 16
   %6 = or i1 %5, %4
   ret i1 %6
@@ -66,10 +45,10 @@ entry:
 ; php/optimized/KeccakSponge.ll
 ; slurm/optimized/KeccakSponge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000604(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq i8 %1, 0
   %6 = or i1 %4, %5
   ret i1 %6
@@ -79,7 +58,7 @@ entry:
 ; php/optimized/KeccakSponge.ll
 ; slurm/optimized/KeccakSponge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000204(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -1600
   %4 = or i1 %3, %0
@@ -88,11 +67,28 @@ entry:
   ret i1 %6
 }
 
+; 6 occurrences:
+; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
+; vcpkg/optimized/commands.install.cpp.ll
+; vcpkg/optimized/export.ifw.cpp.ll
+; vcpkg/optimized/spdx.cpp.ll
+; vcpkg/optimized/versions.cpp.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000202(i8 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 26
+  %4 = or i1 %1, %3
+  %5 = icmp eq i8 %0, 95
+  %6 = or i1 %5, %4
+  ret i1 %6
+}
+
 ; 2 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = or i1 %3, %0
@@ -104,10 +100,10 @@ entry:
 ; 1 occurrences:
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000318(i8 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000618(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp ne i8 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6
@@ -118,10 +114,10 @@ entry:
 ; linux/optimized/i9xx_wm.ll
 ; postgres/optimized/execute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000302(i8 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000602(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq i8 %0, 95
   %6 = or i1 %5, %4
   ret i1 %6
@@ -130,7 +126,7 @@ entry:
 ; 1 occurrences:
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i8 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 95
   %4 = or i1 %3, %1
@@ -139,7 +135,7 @@ entry:
   ret i1 %6
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
@@ -168,7 +164,6 @@ entry:
 ; llvm/optimized/LowerConstantIntrinsics.cpp.ll
 ; llvm/optimized/OverflowInstAnalysis.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -183,10 +178,10 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i8 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000210(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -2
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp ugt i8 %0, 21
   %6 = or i1 %5, %4
   ret i1 %6
@@ -195,7 +190,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000090(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 18
   %4 = or i1 %3, %0
@@ -208,7 +203,7 @@ entry:
 ; wireshark/optimized/packet-usb-audio.c.ll
 ; wireshark/optimized/packet-wtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = or i1 %3, %1
@@ -220,22 +215,10 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i8 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 201252086
-  %4 = or i1 %3, %1
-  %5 = icmp ult i8 %0, -126
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; zxing/optimized/zueci.c.ll
-; Function Attrs: nounwind
 define i1 @func0000000000000208(i8 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, -483222987
-  %4 = or i1 %3, %1
+  %3 = icmp ult i32 %2, 201252086
+  %4 = or i1 %1, %3
   %5 = icmp ult i8 %0, -126
   %6 = or i1 %5, %4
   ret i1 %6
@@ -245,11 +228,23 @@ entry:
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i8 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000094(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 128
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp sgt i8 %0, -1
+  %6 = or i1 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; pocketpy/optimized/lexer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000608(i8 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ne i32 %2, 0
+  %4 = or i1 %1, %3
+  %5 = icmp ult i8 %0, 10
   %6 = or i1 %5, %4
   ret i1 %6
 }

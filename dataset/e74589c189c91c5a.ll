@@ -20,7 +20,7 @@ entry:
   ret i32 %2
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -34,7 +34,6 @@ entry:
 ; linux/optimized/qspinlock.ll
 ; openusd/optimized/convolve.c.ll
 ; simdjson/optimized/simdjson.cpp.ll
-; wireshark/optimized/packet-dhcp-failover.c.ll
 ; wireshark/optimized/packet-wassp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i16 %0) #0 {

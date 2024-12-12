@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
 ; velox/optimized/Bridge.cpp.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -25,9 +27,8 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/Attributes.cpp.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {

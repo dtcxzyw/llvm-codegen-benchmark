@@ -1,4 +1,4 @@
-func00000000000000db:                   # @func00000000000000db
+func000000000000019b:                   # @func000000000000019b
 	leal	1(%rdi), %eax
 	testb	$1, %dl
 	movl	$32, %ecx

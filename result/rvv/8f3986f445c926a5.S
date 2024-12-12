@@ -6,14 +6,6 @@ func000000000000000c:                   # @func000000000000000c
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, -1, v0
 	ret
-func0000000000000004:                   # @func0000000000000004
-	lui	a0, 262144
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v0, v8, a0
-	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, -1, v0
-	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, -1
 	srli	a0, a0, 32
@@ -25,7 +17,7 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v0, v8, 3
+	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, -1, v0

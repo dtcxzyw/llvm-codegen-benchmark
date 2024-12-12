@@ -19,6 +19,11 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	andb	%dil, %al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpq	$2, %rsi
+	setb	%al
+	andb	%dil, %al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	testq	%rsi, %rsi
 	setle	%al

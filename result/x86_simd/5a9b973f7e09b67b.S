@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovdb	%ymm1, %xmm1
 	vptestnmb	%xmm1, %xmm1, %k0
 	vpmovdb	%ymm0, %xmm0
@@ -58,7 +58,7 @@ func0000000000000011:                   # @func0000000000000011
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpmovdb	%ymm1, %xmm1
 	vpcmpeqb	.LCPI1_0(%rip), %xmm1, %k0
 	vpmovdb	%ymm0, %xmm0

@@ -82,4 +82,15 @@ entry:
   ret i32 %3
 }
 
+; 1 occurrences:
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0) #0 {
+entry:
+  %1 = add nuw nsw i32 %0, 1
+  %2 = urem i32 %1, 3
+  %3 = add nuw nsw i32 %2, 3
+  ret i32 %3
+}
+
 attributes #0 = { nounwind }

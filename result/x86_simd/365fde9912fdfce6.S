@@ -45,19 +45,27 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI6_0:
-	.long	120                             # 0x78
-func0000000000000060:                   # @func0000000000000060
-	vpslld	$6, %xmm1, %xmm1
+	.long	4292870144                      # 0xffe00000
+func000000000000006a:                   # @func000000000000006a
+	vpslld	$21, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI7_0:
+	.long	120                             # 0x78
+func0000000000000060:                   # @func0000000000000060
+	vpslld	$6, %xmm1, %xmm1
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+.LCPI8_0:
 	.long	144                             # 0x90
 func0000000000000018:                   # @func0000000000000018
 	vpslld	$2, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI8_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 func0000000000000001:                   # @func0000000000000001

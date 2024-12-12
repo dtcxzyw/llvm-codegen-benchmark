@@ -1,5 +1,5 @@
 
-; 148 occurrences:
+; 147 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/ifDec16.c.ll
@@ -53,7 +53,6 @@
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LiveIntervals.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll

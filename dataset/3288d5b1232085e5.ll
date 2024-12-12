@@ -1,5 +1,7 @@
 
-; 13 occurrences:
+; 15 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_profile_gamma.c.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; proj/optimized/gauss.cpp.ll

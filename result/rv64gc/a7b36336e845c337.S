@@ -11,12 +11,12 @@ func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1
 	bnez	a2, .LBB1_2
 	mv	a2, a0
-	li	a3, 128
+	li	a3, -2
 	bgeu	a1, a3, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	li	a2, 15
-	li	a3, 128
+	li	a2, 1
+	li	a3, -2
 	bltu	a1, a3, .LBB1_4
 .LBB1_3:                                # %entry
 	mv	a0, a2

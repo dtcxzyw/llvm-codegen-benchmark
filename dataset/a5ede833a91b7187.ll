@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; hdf5/optimized/H5Omessage.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
@@ -17,7 +17,7 @@ entry:
 ; linux/optimized/tx.ll
 ; linux/optimized/xhci-hub.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0

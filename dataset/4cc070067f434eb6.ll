@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; bullet3/optimized/btConeShape.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/histogram.c.ll
@@ -35,11 +35,12 @@
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 2.000000e+00
-  %4 = fmul float %3, %1
+  %4 = fmul float %1, %3
   %5 = fdiv float %4, %0
   ret float %5
 }

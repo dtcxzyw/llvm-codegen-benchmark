@@ -20,23 +20,23 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000005:                   # @func0000000000000005
 	addi	a1, a1, -3
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	addi	a1, a1, 1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	addi	a1, a1, 2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
 	addi	a1, a1, 1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
 	addi	a1, a1, 1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
 	addi	a1, a1, 1
@@ -44,7 +44,7 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000006:                   # @func0000000000000006
 	addi	a1, a1, -1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
 	addi	a1, a1, 3
@@ -57,4 +57,8 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000000a:                   # @func000000000000000a
 	addi	a1, a1, 1
 	mulw	a0, a1, a0
+	ret
+func0000000000000003:                   # @func0000000000000003
+	addi	a1, a1, 1
+	mulw	a0, a0, a1
 	ret

@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 31 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -27,6 +27,8 @@
 ; spike/optimized/mmu.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind

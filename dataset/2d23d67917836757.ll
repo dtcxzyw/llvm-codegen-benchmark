@@ -19,7 +19,7 @@ entry:
   ret i64 %6
 }
 
-; 103 occurrences:
+; 101 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -52,8 +52,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -141,7 +139,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   %6 = lshr i64 %5, 37
   ret i64 %6

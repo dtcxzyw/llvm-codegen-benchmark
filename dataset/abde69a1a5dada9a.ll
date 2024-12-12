@@ -1,8 +1,9 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; cpython/optimized/ceval.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/intel_sdvo.ll
+; opencv/optimized/cornersubpix.cpp.ll
 ; postgres/optimized/crosstabview.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/hw_riscv_virt.c.ll
@@ -35,13 +36,12 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; openblas/optimized/dlaeda.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; openjdk/optimized/c1_LIR.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {

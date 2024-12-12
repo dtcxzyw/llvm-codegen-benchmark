@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2764146 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2876409 = type <{ i64, i32 }>
 
 ; 5 occurrences:
 ; abc/optimized/abcHieNew.c.ll
@@ -8,11 +8,11 @@
 ; hermes/optimized/HadesGC.cpp.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 268435455
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2764146, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.Gia_Obj_t_.2876409, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = and i64 %5, -2
   ret i64 %6

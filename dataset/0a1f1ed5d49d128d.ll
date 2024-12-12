@@ -11,8 +11,7 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
-; opencv/optimized/distransform.cpp.ll
+; 3 occurrences:
 ; opencv/optimized/stardetector.cpp.ll
 ; openspiel/optimized/combinatorics.cc.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
@@ -21,8 +20,8 @@ define ptr @func0000000000000056(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = xor i64 %3, -1
-  %5 = getelementptr i32, ptr %0, i64 %4
-  %6 = getelementptr i32, ptr %5, i64 %1
+  %5 = getelementptr i32, ptr %0, i64 %1
+  %6 = getelementptr i32, ptr %5, i64 %4
   ret ptr %6
 }
 

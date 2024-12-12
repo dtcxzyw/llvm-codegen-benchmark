@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/ifDec10.c.ll
 ; cmake/optimized/cover.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/core.ll
 ; linux/optimized/exfldio.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/intel-gtt.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll

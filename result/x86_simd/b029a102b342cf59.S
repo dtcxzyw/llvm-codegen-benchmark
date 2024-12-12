@@ -44,3 +44,27 @@ func000000000000000c:                   # @func000000000000000c
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
+.LCPI4_0:
+	.zero	16,1
+func0000000000000018:                   # @func0000000000000018
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k0
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	kandnw	%k0, %k1, %k0
+	vpcmpnleub	.LCPI4_0(%rip), %xmm2, %k1 {%k1}
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI5_0:
+	.zero	16,3
+func0000000000000014:                   # @func0000000000000014
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k0
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	kandnw	%k0, %k1, %k0
+	vpcmpltub	.LCPI5_0(%rip), %xmm2, %k1 {%k1}
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	retq

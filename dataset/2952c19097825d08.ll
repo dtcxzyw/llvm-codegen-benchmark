@@ -1,10 +1,9 @@
 
-; 61 occurrences:
+; 59 occurrences:
 ; icu/optimized/coleitr.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/early-lookup.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/initramfs.ll
@@ -12,7 +11,6 @@
 ; linux/optimized/md.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -67,7 +65,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr i32 %3, 4
   %5 = and i32 %4, 64
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -101,7 +99,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr i32 %3, 21
   %5 = and i32 %4, 4
-  %6 = or i32 %5, %1
+  %6 = or i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -115,7 +113,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr i32 %3, 21
   %5 = and i32 %4, 224
-  %6 = or i32 %5, %1
+  %6 = or i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -132,7 +130,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr i32 %3, 13
   %5 = and i32 %4, 4096
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -145,7 +143,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = lshr i32 %3, 8
   %5 = and i32 %4, 2
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -158,7 +156,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr exact i32 %3, 8
   %5 = and i32 %4, 255
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }

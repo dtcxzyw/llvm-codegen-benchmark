@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openssl/optimized/quic_stream_test-bin-quic_stream_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000408(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -50
   %3 = icmp ugt i64 %1, 50
@@ -19,10 +19,10 @@ entry:
 ; libquic/optimized/adler32.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000638(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001c68(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -65521
-  %3 = icmp ugt i64 %1, 65520
+  %3 = icmp samesign ugt i64 %1, 65520
   %4 = select i1 %3, i64 %2, i64 %1
   %5 = add nuw nsw i64 %4, %0
   %6 = icmp ugt i64 %5, 65520
@@ -39,7 +39,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; libevent/optimized/evutil_time.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000059a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000132a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1000000
   %3 = icmp slt i64 %1, 0
@@ -58,13 +58,13 @@ entry:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000598(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001338(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 146097
   %3 = icmp slt i64 %1, 0
   %4 = select i1 %3, i64 %2, i64 %1
   %5 = add nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 146097
+  %6 = icmp samesign ugt i64 %5, 146097
   ret i1 %6
 }
 

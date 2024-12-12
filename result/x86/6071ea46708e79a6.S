@@ -6,6 +6,13 @@ func0000000000000065:                   # @func0000000000000065
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	addl	$2, %edx
+	imulq	$718635051, %rdx, %rax          # imm = 0x2AD5802B
+	shrq	$40, %rax
+	addl	%edi, %eax
+	addl	%esi, %eax
+	retq
 func0000000000000060:                   # @func0000000000000060
 	addl	$500, %edx                      # imm = 0x1F4
 	imulq	$274877907, %rdx, %rax          # imm = 0x10624DD3
@@ -17,13 +24,6 @@ func0000000000000020:                   # @func0000000000000020
 	addl	$172251900, %edx                # imm = 0xA445AFC
 	imulq	$1374389535, %rdx, %rax         # imm = 0x51EB851F
 	shrq	$37, %rax
-	addl	%edi, %eax
-	addl	%esi, %eax
-	retq
-func0000000000000021:                   # @func0000000000000021
-	decl	%edx
-	imulq	$1374389535, %rdx, %rax         # imm = 0x51EB851F
-	shrq	$39, %rax
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq

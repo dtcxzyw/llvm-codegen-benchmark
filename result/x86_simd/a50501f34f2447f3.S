@@ -1,6 +1,6 @@
 func000000000000001a:                   # @func000000000000001a
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
@@ -40,18 +40,16 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000018:                   # @func0000000000000018
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$1, %ymm0, %ymm0
 	retq
-.LCPI7_0:
-	.quad	2                               # 0x2
 func0000000000000000:                   # @func0000000000000000
-	vpsubq	%ymm1, %ymm0, %ymm0
-	vpsubq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
-	vpsrlq	$2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpsrlq	$3, %ymm0, %ymm0
 	retq
 func000000000000001e:                   # @func000000000000001e
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$1, %ymm0, %ymm0
 	retq

@@ -27,8 +27,7 @@ entry:
   ret ptr %7
 }
 
-; 4 occurrences:
-; gromacs/optimized/slasq5.cpp.ll
+; 3 occurrences:
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr4.c.ll
 ; openjdk/optimized/relocator.ll
@@ -102,19 +101,6 @@ entry:
   %5 = add nsw i32 %4, %3
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i8, ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 1 occurrences:
-; openblas/optimized/dlasq6.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 1
-  %4 = add i32 %1, -8
-  %5 = add nsw i32 %4, %3
-  %6 = sext i32 %5 to i64
-  %7 = getelementptr double, ptr %0, i64 %6
   ret ptr %7
 }
 

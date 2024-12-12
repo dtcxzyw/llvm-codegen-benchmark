@@ -38,7 +38,7 @@
 	.zero	1
 .LCPI0_4:
 	.byte	49                              # 0x31
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlvq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI0_1(%rip){1to4}, %ymm0, %k1

@@ -1,7 +1,7 @@
 func0000000000000052:                   # @func0000000000000052
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	mul	a2, a2, a0
+	mul	a2, a0, a2
 	srli	a2, a2, 32
 	mul	a0, a0, a1
 	add	a0, a0, a2
@@ -25,7 +25,7 @@ func000000000000005b:                   # @func000000000000005b
 func0000000000000049:                   # @func0000000000000049
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	mul	a2, a2, a0
+	mul	a2, a0, a2
 	srli	a2, a2, 32
 	mul	a0, a0, a1
 	add	a0, a0, a2
@@ -33,7 +33,7 @@ func0000000000000049:                   # @func0000000000000049
 func000000000000004a:                   # @func000000000000004a
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	mul	a2, a2, a0
+	mul	a2, a0, a2
 	srli	a2, a2, 32
 	mul	a0, a0, a1
 	add	a0, a0, a2

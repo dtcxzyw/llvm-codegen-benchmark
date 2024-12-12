@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmovneq	%rdi, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	cmpl	$2048, %esi                     # imm = 0x800
-	movl	$2, %eax
+	xorl	%eax, %eax
+	cmpl	$17, %esi
 	cmovaeq	%rdi, %rax
 	retq

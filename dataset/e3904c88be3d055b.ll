@@ -69,11 +69,10 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/abcLib.c.ll
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/giaBound.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; libquic/optimized/error_correction.c.ll
 ; linux/optimized/slub.ll

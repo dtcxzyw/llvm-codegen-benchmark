@@ -1,5 +1,5 @@
 
-; 2339 occurrences:
+; 2338 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cord_analysis.cc.ll
@@ -51,6 +51,9 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/environment.ll
+; boost/optimized/message.ll
+; boost/optimized/work_stealing.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/serializing_stream.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
@@ -539,7 +542,6 @@
 ; folly/optimized/LogCategory.cpp.ll
 ; folly/optimized/LogConfig.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/OpenSSLUtils.cpp.ll
 ; folly/optimized/ProgramOptions.cpp.ll
 ; folly/optimized/QueueObserver.cpp.ll
@@ -783,7 +785,6 @@
 ; minetest/optimized/ExtensionHandler.cpp.ll
 ; minetest/optimized/al_extensions.cpp.ll
 ; minetest/optimized/ban.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/c_packer.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/client.cpp.ll
@@ -830,7 +831,6 @@
 ; minetest/optimized/mod_configuration.cpp.ll
 ; minetest/optimized/modchannels.cpp.ll
 ; minetest/optimized/mods.cpp.ll
-; minetest/optimized/mt_opengl_loader.cpp.ll
 ; minetest/optimized/nameidmapping.cpp.ll
 ; minetest/optimized/nodedef.cpp.ll
 ; minetest/optimized/nodemetadata.cpp.ll
@@ -858,7 +858,6 @@
 ; minetest/optimized/test_map.cpp.ll
 ; minetest/optimized/test_modstoragedatabase.cpp.ll
 ; minetest/optimized/test_schematic.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/tool.cpp.ll
@@ -2343,11 +2342,12 @@
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; nuttx/optimized/circbuf.c.ll
 ; qemu/optimized/block_mirror.c.ll
@@ -2355,17 +2355,15 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
-; 15 occurrences:
+; 21 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; cvc5/optimized/timeout_core_manager.cpp.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; faiss/optimized/AutoTune.cpp.ll
-; git/optimized/parallel-checkout.ll
-; llvm/optimized/DbiStreamBuilder.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; mimalloc/optimized/arena.c.ll
 ; nuttx/optimized/circbuf.c.ll
@@ -2375,11 +2373,31 @@ entry:
 ; smol-rs/optimized/2nf71p5qpqz0dmgo.ll
 ; taskflow/optimized/exclusive_scan.cpp.ll
 ; taskflow/optimized/inclusive_scan.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1x0js6flb76ylaa82e6lu27uy.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/6pzok54tcf7jgyfxt7910tckc.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; darktable/optimized/introspection_colorbalancergb.c.ll
+; git/optimized/parallel-checkout.ll
+; llvm/optimized/DbiStreamBuilder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = urem i64 %1, %2
+  %4 = icmp samesign ult i64 %0, %3
   ret i1 %4
 }
 
@@ -2390,7 +2408,7 @@ entry:
 define i1 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   ret i1 %4
 }
 

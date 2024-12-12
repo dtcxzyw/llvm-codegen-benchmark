@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000030(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 9
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 56
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 56
   %6 = getelementptr i8, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 %0
   ret ptr %7
@@ -28,13 +28,13 @@ entry:
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 4
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -44,33 +44,32 @@ entry:
 ; flatbuffers/optimized/reflection.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001ea(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000001ff(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 4
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; libquic/optimized/ec_asn1.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001e8(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000001fc(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 10
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 10
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 %0
   ret ptr %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/sbdsqr.cpp.ll
-; postgres/optimized/jsonb_util.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000001e0(i64 %0, ptr %1, i32 %2) #0 {
 entry:
@@ -91,6 +90,19 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 256
   %6 = getelementptr i8, ptr %5, i64 %4
+  %7 = getelementptr i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 1 occurrences:
+; postgres/optimized/jsonb_util.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001f0(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %6 = getelementptr i32, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 %0
   ret ptr %7
 }

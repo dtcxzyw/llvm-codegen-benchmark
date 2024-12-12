@@ -13,6 +13,6 @@ func0000000000000007:                   # @func0000000000000007
 func000000000000000d:                   # @func000000000000000d
 	movq	%rdi, %rax
 	subq	%rsi, %rax
-	sarq	%rax
+	sarq	$3, %rax
 	negq	%rax
 	retq

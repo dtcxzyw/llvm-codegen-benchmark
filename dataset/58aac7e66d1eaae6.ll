@@ -7,7 +7,7 @@
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -16
   %3 = ashr i32 %0, %2
@@ -21,7 +21,7 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -16
   %3 = ashr i32 %0, %2
@@ -33,7 +33,7 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_8ext.ll
 ; openjdk/optimized/mlib_ImageConv_8nw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -8
   %3 = ashr i32 %0, %2
@@ -55,17 +55,6 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_equalizer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -1
-  %3 = ashr i32 %0, %2
-  %4 = icmp ult i32 %3, 32
-  ret i1 %4
-}
-
-; 1 occurrences:
-; darktable/optimized/introspection_equalizer.c.ll
-; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, 0
@@ -75,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/freduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = ashr i32 %0, %2

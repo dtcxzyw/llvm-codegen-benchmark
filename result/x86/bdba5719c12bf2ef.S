@@ -30,7 +30,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000004:                   # @func0000000000000004
 	addl	%esi, %edi
-	movl	$32, %eax
+	movl	$2, %eax
 	subl	%edi, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006

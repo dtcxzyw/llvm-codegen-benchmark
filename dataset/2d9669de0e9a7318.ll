@@ -30,15 +30,15 @@
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
@@ -59,16 +59,17 @@ entry:
 ; php/optimized/phar.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; freetype/optimized/truetype.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -92,31 +93,26 @@ entry:
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 9 occurrences:
-; cmake/optimized/smb.c.ll
-; curl/optimized/libcurl_la-smb.ll
+; 3 occurrences:
 ; freetype/optimized/sfnt.c.ll
-; graphviz/optimized/htmltable.c.ll
-; oiio/optimized/softimageinput.cpp.ll
 ; postgres/optimized/spgdoinsert.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
-; quickjs/optimized/quickjs.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -126,8 +122,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -143,8 +139,24 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
+; 6 occurrences:
+; cmake/optimized/smb.c.ll
+; curl/optimized/libcurl_la-smb.ll
+; graphviz/optimized/htmltable.c.ll
+; oiio/optimized/softimageinput.cpp.ll
+; quickjs/optimized/quickjs.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
@@ -153,33 +165,33 @@ entry:
 ; slurm/optimized/proctrack_cgroup.ll
 ; slurm/optimized/proctrack_pgid.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = icmp slt i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; slurm/optimized/node_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; slurm/optimized/power_save.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -187,11 +199,11 @@ entry:
 ; llvm/optimized/CGBlocks.cpp.ll
 ; postgres/optimized/nbtsort.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -203,8 +215,8 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -212,22 +224,22 @@ entry:
 ; postgres/optimized/hashovfl.ll
 ; postgres/optimized/hashpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; graphviz/optimized/htmltable.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 

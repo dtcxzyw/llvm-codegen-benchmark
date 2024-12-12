@@ -10,7 +10,7 @@ define i1 @func0000000000000001(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fptosi double %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -24,7 +24,7 @@ define i1 @func0000000000000006(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fptosi double %3 to i32
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -37,7 +37,7 @@ define i1 @func000000000000000a(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fptosi double %3 to i32
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
@@ -48,7 +48,7 @@ define i1 @func0000000000000007(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fptosi double %3 to i32
-  %5 = icmp sge i32 %4, %0
+  %5 = icmp sle i32 %0, %4
   ret i1 %5
 }
 
@@ -59,7 +59,7 @@ define i1 @func000000000000000b(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fptosi double %3 to i32
-  %5 = icmp sle i32 %4, %0
+  %5 = icmp sge i32 %0, %4
   ret i1 %5
 }
 
@@ -71,7 +71,7 @@ define i1 @func000000000000000c(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fptosi double %3 to i32
-  %5 = icmp ne i32 %4, %0
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 

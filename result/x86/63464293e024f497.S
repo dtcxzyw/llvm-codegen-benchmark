@@ -11,3 +11,10 @@ func0000000000000018:                   # @func0000000000000018
 	orl	%esi, %eax
 	andl	$1, %eax
 	retq
+func0000000000000028:                   # @func0000000000000028
+	testl	$2046, %esi                     # imm = 0x7FE
+	sete	%al
+	orb	%dil, %al
+	movzbl	%al, %eax
+	andl	$1, %eax
+	retq

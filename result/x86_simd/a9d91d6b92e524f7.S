@@ -109,3 +109,51 @@ func0000000000000006:                   # @func0000000000000006
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI6_0:
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+func0000000000000014:                   # @func0000000000000014
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	vpcmpltuw	.LCPI6_0(%rip), %ymm1, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+	.short	255                             # 0xff
+func0000000000000018:                   # @func0000000000000018
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	vpcmpnleuw	.LCPI7_0(%rip), %ymm1, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

@@ -6,7 +6,7 @@
 ; linux/optimized/tx.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 112
   %4 = icmp eq i8 %3, 0
@@ -21,7 +21,7 @@ entry:
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 2
   %4 = icmp ne i8 %3, 0

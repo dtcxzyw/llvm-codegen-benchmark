@@ -1,12 +1,11 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; gromacs/optimized/listed_forces.cpp.ll
 ; icu/optimized/collationbuilder.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_ddi.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/mempolicy.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll

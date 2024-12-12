@@ -1,14 +1,12 @@
 
-%class.b3Vector3.2704959 = type { %union.anon.34.2704960 }
-%union.anon.34.2704960 = type { [4 x float] }
-%struct.sidtab_entry.3348836 = type { i32, i32, %struct.context.3348837, ptr, %struct.hlist_node.3348838 }
-%struct.context.3348837 = type { i32, i32, i32, i32, %struct.mls_range.3348839, ptr }
-%struct.mls_range.3348839 = type { [2 x %struct.mls_level.3348840] }
-%struct.mls_level.3348840 = type { i32, %struct.ebitmap.3348841 }
-%struct.ebitmap.3348841 = type { ptr, i32 }
-%struct.hlist_node.3348838 = type { ptr, ptr }
+%struct.sidtab_entry.3537164 = type { i32, i32, %struct.context.3537165, ptr, %struct.hlist_node.3537166 }
+%struct.context.3537165 = type { i32, i32, i32, i32, %struct.mls_range.3537167, ptr }
+%struct.mls_range.3537167 = type { [2 x %struct.mls_level.3537168] }
+%struct.mls_level.3537168 = type { i32, %struct.ebitmap.3537169 }
+%struct.ebitmap.3537169 = type { ptr, i32 }
+%struct.hlist_node.3537166 = type { ptr, ptr }
 
-; 27 occurrences:
+; 29 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -32,29 +30,31 @@
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; mitsuba3/optimized/rgb2spec.c.ll
 ; openusd/optimized/matrix3d.cpp.ll
 ; openusd/optimized/matrix3f.cpp.ll
 ; openusd/optimized/matrix4d.cpp.ll
 ; openusd/optimized/matrix4f.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 2
+  %2 = add nuw nsw i32 %1, 1
   %3 = urem i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [3 x %class.b3Vector3.2704959], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [3 x float], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; clamav/optimized/ole2_extract.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -109
   %3 = urem i32 %2, 127
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [128 x i32], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [128 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -66,7 +66,7 @@ entry:
   %2 = add i32 %1, -28
   %3 = urem i32 %2, 39
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [39 x %struct.sidtab_entry.3348836], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [39 x %struct.sidtab_entry.3537164], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -81,12 +81,12 @@ entry:
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2
   %3 = urem i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [3 x ptr], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [3 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

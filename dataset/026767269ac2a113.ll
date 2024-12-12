@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; cmake/optimized/json_reader.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -7,6 +7,7 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/exfldio.ll
+; llvm/optimized/Reassociate.cpp.ll
 ; luau/optimized/lgcdebug.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -22,14 +23,12 @@ entry:
   ret i32 %2
 }
 
-; 103 occurrences:
+; 87 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; clamav/optimized/phishcheck.c.ll
 ; cmake/optimized/doh.c.ll
 ; cmake/optimized/huf_decompress.c.ll
-; cpython/optimized/_json.ll
 ; curl/optimized/libcurl_la-doh.ll
-; freetype/optimized/type1.c.ll
 ; git/optimized/wildmatch.ll
 ; grpc/optimized/aws_external_account_credentials.cc.ll
 ; grpc/optimized/external_account_credentials.cc.ll
@@ -50,35 +49,21 @@ entry:
 ; linux/optimized/mlme.ll
 ; linux/optimized/namei_msdos.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
-; llvm/optimized/ExprEngineC.cpp.ll
-; llvm/optimized/GVN.cpp.ll
+; llvm/optimized/DJB.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
-; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/IntrinsicInst.cpp.ll
-; llvm/optimized/NewGVN.cpp.ll
-; llvm/optimized/ObjCMT.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
-; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
-; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaSYCL.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
-; llvm/optimized/VPlanRecipes.cpp.ll
-; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luau/optimized/StringUtils.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; miniaudio/optimized/unity.c.ll
+; node/optimized/libnode.string_decoder.ll
 ; oiio/optimized/iffinput.cpp.ll
 ; oiio/optimized/paramlist.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll

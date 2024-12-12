@@ -6,7 +6,7 @@
 define i1 @func000000000000000a(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -17,7 +17,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
@@ -27,12 +27,13 @@ entry:
 define i1 @func000000000000000c(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/acbUtil.c.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; linux/optimized/srcutree.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
@@ -42,7 +43,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -52,7 +53,7 @@ entry:
 define i1 @func000000000000000b(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 

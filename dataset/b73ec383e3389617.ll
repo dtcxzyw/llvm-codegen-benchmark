@@ -4,7 +4,7 @@
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000182c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000604c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = icmp eq i32 %1, 0

@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -15,6 +15,7 @@
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestAtomicAsm.cpp.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -32,7 +33,7 @@
 define i128 @func0000000000000001(i128 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 18446744073709551615
-  %3 = or disjoint i128 %2, %0
+  %3 = or disjoint i128 %0, %2
   ret i128 %3
 }
 

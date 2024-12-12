@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	8                               # 0x8
-func00000000000003a8:                   # @func00000000000003a8
+func0000000000000748:                   # @func0000000000000748
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpaddq	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1

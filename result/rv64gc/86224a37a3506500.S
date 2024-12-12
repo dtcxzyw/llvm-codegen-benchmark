@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001e1:                   # @func00000000000001e1
 	andi	a1, a1, 16
 	beqz	a1, .LBB0_2
 	li	a1, 48
@@ -14,19 +14,14 @@ func0000000000000001:                   # @func0000000000000001
 	xori	a1, a1, 1123
 	add	a0, a0, a1
 	ret
-func00000000000000b1:                   # @func00000000000000b1
-	srli	a1, a1, 16
-	andi	a1, a1, 16
-	add	a0, a0, a1
-	addi	a0, a0, 16
-	ret
-func00000000000000f1:                   # @func00000000000000f1
-	slli	a1, a1, 33
-	beqz	a1, .LBB3_2
-	li	a1, 80
+func0000000000000161:                   # @func0000000000000161
+	andi	a1, a1, 3
+	li	a2, 2
+	beq	a1, a2, .LBB2_2
+	li	a1, -8
 	add	a0, a0, a1
 	ret
-.LBB3_2:
-	li	a1, 16
+.LBB2_2:
+	li	a1, 56
 	add	a0, a0, a1
 	ret

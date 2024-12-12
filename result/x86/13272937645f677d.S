@@ -1,46 +1,32 @@
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	movl	%edi, %ecx
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func00000000000000e4:                   # @func00000000000000e4
-	movl	$1, %eax
-	shlxq	%rsi, %rax, %rax
-	movl	%edi, %ecx
-	cmpq	%rcx, %rax
-	setb	%al
-	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	movl	%edi, %ecx
 	cmpq	%rcx, %rax
 	sete	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+func0000000000000141:                   # @func0000000000000141
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	movl	%edi, %ecx
 	cmpq	%rcx, %rax
 	sete	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
-	movl	$1, %eax
-	shlxq	%rsi, %rax, %rax
-	movl	%edi, %ecx
-	cmpq	%rcx, %rax
-	sete	%al
-	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	movl	$8, %eax
 	shlxq	%rsi, %rax, %rax
 	movl	%edi, %ecx
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	movl	%edi, %eax
 	shrxq	%rsi, %rax, %rax
 	testq	%rax, %rax

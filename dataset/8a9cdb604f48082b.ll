@@ -16,12 +16,12 @@
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = mul i32 %3, 506952113
   ret i32 %4
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; clamav/optimized/upx.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; freetype/optimized/sfnt.c.ll
@@ -45,12 +45,11 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; wireshark/optimized/packet-obd-ii.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = mul nuw nsw i32 %3, 6
   ret i32 %4
 }
@@ -62,7 +61,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = mul nuw i32 %3, 12
   ret i32 %4
 }
@@ -73,7 +72,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = mul nsw i32 %3, 11
   ret i32 %4
 }

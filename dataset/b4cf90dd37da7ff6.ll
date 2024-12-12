@@ -1,8 +1,6 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; protobuf/optimized/unparser.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {

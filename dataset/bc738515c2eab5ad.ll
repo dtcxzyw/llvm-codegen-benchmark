@@ -5,7 +5,7 @@
 define i8 @func0000000000000004(i8 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 256
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i8 1, i8 %0
   ret i8 %5
 }

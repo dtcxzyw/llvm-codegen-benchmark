@@ -1,8 +1,10 @@
 
-; 174 occurrences:
+; 186 occurrences:
 ; abseil-cpp/optimized/match.cc.ll
 ; arrow/optimized/kernel.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; cpython/optimized/setobject.ll
 ; crow/optimized/example.cpp.ll
@@ -34,7 +36,6 @@
 ; libquic/optimized/poly1305_vec.c.ll
 ; libquic/optimized/quic_compressed_certs_cache.cc.ll
 ; lief/optimized/File.cpp.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/strnlen_user.ll
@@ -83,8 +84,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -162,6 +161,7 @@
 ; protobuf/optimized/api.pb.cc.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; protobuf/optimized/type.pb.cc.ll
+; qemu/optimized/util_buffer.c.ll
 ; rand-rs/optimized/2lnmku48it2ei9m4.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; ruby/optimized/parser_st.ll
@@ -174,6 +174,18 @@
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; z3/optimized/lar_solver.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -183,7 +195,7 @@ entry:
   ret i64 %4
 }
 
-; 116 occurrences:
+; 121 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -224,8 +236,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -300,6 +310,13 @@ entry:
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/lar_solver.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
@@ -384,7 +401,7 @@ entry:
   ret i64 %4
 }
 
-; 82 occurrences:
+; 80 occurrences:
 ; lief/optimized/File.cpp.ll
 ; linux/optimized/compress.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -406,8 +423,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

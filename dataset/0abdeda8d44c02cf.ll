@@ -18,10 +18,10 @@
 ; xgboost/optimized/io.cc.ll
 ; yosys/optimized/extract_reduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sub nsw i64 0, %1
   %6 = icmp eq i64 %4, %5
   ret i1 %6
@@ -32,10 +32,10 @@ entry:
 ; opencv/optimized/cap_mjpeg_decoder.cpp.ll
 ; opencv/optimized/container_avi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002ac(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sub nsw i64 0, %1
   %6 = icmp ne i64 %4, %5
   ret i1 %6
@@ -44,10 +44,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000003a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sub nuw nsw i64 1500, %1
   %6 = icmp eq i64 %4, %5
   ret i1 %6

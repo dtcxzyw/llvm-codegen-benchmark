@@ -32,7 +32,7 @@
 	.byte	22                              # 0x16
 	.byte	7                               # 0x7
 	.byte	23                              # 0x17
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpmovsxbw	.LCPI0_1(%rip), %ymm3   # ymm3 = [0,16,1,17,2,18,3,19,4,20,5,21,6,22,7,23]
 	vpermi2w	%ymm2, %ymm1, %ymm3
 	vpcmpeqd	%ymm0, %ymm3, %k0
@@ -73,7 +73,7 @@ func0000000000000051:                   # @func0000000000000051
 	.byte	22                              # 0x16
 	.byte	7                               # 0x7
 	.byte	23                              # 0x17
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	vpmovsxbw	.LCPI1_1(%rip), %ymm3   # ymm3 = [0,16,1,17,2,18,3,19,4,20,5,21,6,22,7,23]
 	vpermi2w	%ymm2, %ymm1, %ymm3
 	vpcmpnleud	%ymm0, %ymm3, %k0
@@ -114,7 +114,7 @@ func0000000000000058:                   # @func0000000000000058
 	.byte	22                              # 0x16
 	.byte	7                               # 0x7
 	.byte	23                              # 0x17
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	vpmovsxbw	.LCPI2_1(%rip), %ymm3   # ymm3 = [0,16,1,17,2,18,3,19,4,20,5,21,6,22,7,23]
 	vpermi2w	%ymm2, %ymm1, %ymm3
 	vpcmpneqd	%ymm0, %ymm3, %k0
@@ -155,7 +155,7 @@ func000000000000005c:                   # @func000000000000005c
 	.byte	22                              # 0x16
 	.byte	7                               # 0x7
 	.byte	23                              # 0x17
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpmovsxbw	.LCPI3_1(%rip), %ymm3   # ymm3 = [0,16,1,17,2,18,3,19,4,20,5,21,6,22,7,23]
 	vpermi2w	%ymm2, %ymm1, %ymm3
 	vpcmpltud	%ymm0, %ymm3, %k0
@@ -196,7 +196,7 @@ func0000000000000054:                   # @func0000000000000054
 	.byte	22                              # 0x16
 	.byte	7                               # 0x7
 	.byte	23                              # 0x17
-func0000000000000055:                   # @func0000000000000055
+func00000000000000a5:                   # @func00000000000000a5
 	vpmovsxbw	.LCPI4_1(%rip), %ymm3   # ymm3 = [0,16,1,17,2,18,3,19,4,20,5,21,6,22,7,23]
 	vpermi2w	%ymm2, %ymm1, %ymm3
 	vpcmpleud	%ymm0, %ymm3, %k0

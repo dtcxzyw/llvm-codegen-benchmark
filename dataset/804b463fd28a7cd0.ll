@@ -4,7 +4,7 @@
 ; abc/optimized/giaMini.c.ll
 ; opencv/optimized/corner.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006a(i32 %0) #0 {
+define i32 @func00000000000000ca(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -3
   %2 = shl nuw i32 1, %1
@@ -18,7 +18,7 @@ entry:
 ; cmake/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0) #0 {
+define i32 @func0000000000000048(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -6
   %2 = shl nuw i32 1, %1
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004a(i32 %0) #0 {
+define i32 @func000000000000008a(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = shl i32 2, %1

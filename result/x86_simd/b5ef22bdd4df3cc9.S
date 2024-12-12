@@ -16,7 +16,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm2, %ymm2
 	vpsllvd	%ymm2, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	25                              # 0x19

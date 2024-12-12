@@ -5,19 +5,19 @@ func0000000000000001:                   # @func0000000000000001
 	sbbl	%eax, %eax
 	orl	%esi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orl	%edx, %esi
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovel	%esi, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	%edi, %eax
 	orl	%edx, %esi
 	sarl	$31, %eax
 	andl	%esi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	orl	%edx, %esi
 	cmpl	$16369, %edi                    # imm = 0x3FF1
 	movl	$1000, %eax                     # imm = 0x3E8

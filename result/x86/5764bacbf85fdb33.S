@@ -7,9 +7,18 @@ func0000000000000012:                   # @func0000000000000012
 	retq
 .LCPI1_0:
 	.quad	0x4066800000000000              # double 180
+func000000000000001a:                   # @func000000000000001a
+	movl	%edi, %eax
+	negl	%eax
+	vmovsd	.LCPI1_0(%rip), %xmm1           # xmm1 = [1.8E+2,0.0E+0]
+	vucomisd	%xmm0, %xmm1
+	cmovbl	%edi, %eax
+	retq
+.LCPI2_0:
+	.quad	0x4066800000000000              # double 180
 func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	negl	%eax
-	vucomisd	.LCPI1_0(%rip), %xmm0
+	vucomisd	.LCPI2_0(%rip), %xmm0
 	cmovbel	%edi, %eax
 	retq

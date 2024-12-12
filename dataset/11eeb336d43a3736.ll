@@ -1,5 +1,6 @@
 
-; 54 occurrences:
+; 56 occurrences:
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -25,6 +26,7 @@
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/xhci-mem.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; opencv/optimized/FilterTIG.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
@@ -58,7 +60,7 @@
 define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -69,6 +71,7 @@ entry:
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btSimulationIslandManagerMt.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -79,7 +82,6 @@ entry:
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/collationdatawriter.ll
 ; icu/optimized/gencnvex.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/ucnvsel.ll
 ; libquic/optimized/mul.c.ll
 ; libwebp/optimized/sharpyuv_sse2.c.ll
@@ -159,12 +161,12 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
-; 150 occurrences:
+; 152 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/giaAiger.c.ll
@@ -218,7 +220,6 @@ entry:
 ; linux/optimized/intel_dmc.ll
 ; linux/optimized/intel_dsb.ll
 ; linux/optimized/intel_ggtt_fencing.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/mpicoder.ll
 ; linux/optimized/netlabel_kapi.ll
@@ -243,6 +244,9 @@ entry:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/lgcdebug.cpp.ll
 ; luau/optimized/lstring.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_label.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -465,7 +469,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -478,7 +482,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -521,7 +525,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -586,7 +590,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -600,7 +604,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -627,7 +631,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 11
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -641,7 +645,7 @@ define i32 @func000000000000002f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 3
   %4 = add nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -655,8 +659,19 @@ entry:
 define i32 @func000000000000003d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 12
+  %4 = add nsw i32 %1, %3
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -674,8 +689,8 @@ entry:
 define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = add i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -686,8 +701,8 @@ entry:
 define i32 @func000000000000003e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
-  %4 = add nuw nsw i32 %3, %1
-  %5 = add nuw i32 %4, %0
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -708,8 +723,8 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
-  %4 = add nuw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add nuw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -723,8 +738,8 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 12
-  %4 = add i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -746,7 +761,7 @@ entry:
 define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 7
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -780,7 +795,7 @@ entry:
 define i32 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -791,7 +806,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }

@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; folly/optimized/String.cpp.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -7,6 +7,8 @@
 ; qoi/optimized/qoi.ll
 ; raylib/optimized/rtextures.c.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
@@ -16,10 +18,9 @@ entry:
   ret i8 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cpython/optimized/_ctypes_test.ll
 ; git/optimized/add-patch.ll
-; linux/optimized/he.ll
 ; linux/optimized/intel_dp_link_training.ll
 ; linux/optimized/mlme.ll
 ; openusd/optimized/refinement.cpp.ll
@@ -40,7 +41,7 @@ define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = and i8 %2, 120
-  %4 = add nsw i8 %3, %0
+  %4 = add nsw i8 %0, %3
   ret i8 %4
 }
 

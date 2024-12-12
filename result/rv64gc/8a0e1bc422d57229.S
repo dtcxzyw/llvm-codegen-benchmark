@@ -23,6 +23,14 @@ func000000000000003d:                   # @func000000000000003d
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
+func000000000000002d:                   # @func000000000000002d
+	slli	a2, a2, 16
+	or	a1, a1, a2
+	slli	a1, a1, 40
+	srli	a1, a1, 40
+	slliw	a0, a0, 24
+	or	a0, a0, a1
+	ret
 func0000000000000009:                   # @func0000000000000009
 	slli	a2, a2, 3
 	or	a1, a1, a2

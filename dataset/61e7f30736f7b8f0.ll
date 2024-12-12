@@ -1,5 +1,6 @@
 
-; 94 occurrences:
+; 93 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -66,7 +67,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -92,10 +92,9 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %0, %2
   %4 = icmp ne i8 %0, %1
@@ -106,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/wildmatch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000a9(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ule i8 %0, %2
   %4 = icmp uge i8 %0, %1
@@ -117,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %0, %2
   %4 = icmp eq i8 %0, %1
@@ -128,7 +127,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000ea(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp sle i8 %0, %2
   %4 = icmp sgt i8 %0, %1
@@ -139,7 +138,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000a8(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ule i8 %0, %2
   %4 = icmp ugt i8 %0, %1
@@ -151,7 +150,7 @@ entry:
 ; entt/optimized/version.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007b(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000eb(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp sle i8 %0, %2
   %4 = icmp sge i8 %0, %1
@@ -162,7 +161,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-xip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000104(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %0, %2
   %4 = icmp ult i8 %0, %1
@@ -173,7 +172,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fib_trie.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000108(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %0, %2
   %4 = icmp ugt i8 %0, %1

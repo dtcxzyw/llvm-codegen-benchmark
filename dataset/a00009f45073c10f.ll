@@ -4,7 +4,7 @@
 ; graphviz/optimized/htmltable.c.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i1 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000043(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 8
   %4 = icmp eq i16 %2, -15
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-tibia.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i1 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000051(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 33
   %4 = icmp ugt i16 %2, 829
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-tibia.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i1 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000050(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 128
   %4 = icmp ugt i16 %2, 1060
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_psr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000029(i1 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000049(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 268435456
   %4 = icmp ult i16 %2, 20

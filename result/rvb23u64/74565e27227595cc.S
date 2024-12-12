@@ -22,19 +22,18 @@ func0000000000000000:                   # @func0000000000000000
 	or	a1, a1, a3
 	addw	a0, a0, a1
 	ret
+func000000000000000f:                   # @func000000000000000f
+	andi	a2, a2, 1
+	li	a3, 255
+	czero.nez	a2, a3, a2
+	mul	a1, a1, a2
+	addw	a0, a0, a1
+	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 1
 	li	a3, -4
 	czero.nez	a2, a3, a2
 	addi	a2, a2, 16
-	mul	a1, a1, a2
-	addw	a0, a0, a1
-	ret
-func000000000000000f:                   # @func000000000000000f
-	andi	a2, a2, 1
-	li	a3, -900
-	czero.nez	a2, a3, a2
-	addi	a2, a2, 1000
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

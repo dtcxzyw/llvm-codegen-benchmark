@@ -5,7 +5,7 @@
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 1
   %3 = and i64 %0, 4294967295

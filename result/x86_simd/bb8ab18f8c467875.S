@@ -13,35 +13,35 @@ func0000000000000007:                   # @func0000000000000007
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-	.byte	2                               # 0x2
+	.byte	1                               # 0x1
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-	.byte	6                               # 0x6
+	.byte	5                               # 0x5
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-	.byte	10                              # 0xa
+	.byte	9                               # 0x9
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-	.byte	14                              # 0xe
+	.byte	13                              # 0xd
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-	.byte	18                              # 0x12
+	.byte	17                              # 0x11
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-	.byte	22                              # 0x16
+	.byte	21                              # 0x15
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-	.byte	26                              # 0x1a
+	.byte	25                              # 0x19
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-	.byte	30                              # 0x1e
+	.byte	29                              # 0x1d
 func0000000000000002:                   # @func0000000000000002
-	vpshufb	.LCPI2_0(%rip), %ymm0, %ymm0    # ymm0 = zero,zero,zero,ymm0[2],zero,zero,zero,ymm0[6],zero,zero,zero,ymm0[10],zero,zero,zero,ymm0[14],zero,zero,zero,ymm0[18],zero,zero,zero,ymm0[22],zero,zero,zero,ymm0[26],zero,zero,zero,ymm0[30]
+	vpshufb	.LCPI2_0(%rip), %ymm0, %ymm0    # ymm0 = zero,zero,zero,ymm0[1],zero,zero,zero,ymm0[5],zero,zero,zero,ymm0[9],zero,zero,zero,ymm0[13],zero,zero,zero,ymm0[17],zero,zero,zero,ymm0[21],zero,zero,zero,ymm0[25],zero,zero,zero,ymm0[29]
 	retq

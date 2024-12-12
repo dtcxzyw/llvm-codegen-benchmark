@@ -1,5 +1,6 @@
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/format_args.ll
 ; mitsuba3/optimized/zone.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll

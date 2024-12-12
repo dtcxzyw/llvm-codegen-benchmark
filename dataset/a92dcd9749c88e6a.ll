@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cpython/optimized/longobject.ll
 ; llvm/optimized/BitstreamReader.cpp.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; qemu/optimized/hw_vfio_container.c.ll
 ; spike/optimized/vlse8_v.ll
 ; spike/optimized/vsse8_v.ll

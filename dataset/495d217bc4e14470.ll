@@ -65,7 +65,7 @@ entry:
 ; openusd/optimized/patchBuilder.cpp.ll
 ; wireshark/optimized/packet-mpls.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 256
@@ -98,7 +98,7 @@ entry:
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; wireshark/optimized/k12.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -126,14 +126,26 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/drm_edid.ll
+; llvm/optimized/YAMLParser.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; wireshark/optimized/packet-iso7816.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ult i32 %3, 4
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openjdk/optimized/hb-aat-layout.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ult i32 %3, 4
@@ -174,28 +186,39 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; icu/optimized/ucnv_u32.ll
+; 2 occurrences:
+; icu/optimized/umutablecptrie.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp ugt i32 %3, -50331649
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 4 occurrences:
 ; libwebp/optimized/webpinfo.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ugt i32 %3, 131072
+  %4 = icmp samesign ugt i32 %3, 131072
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
 
 ; 1 occurrences:
-; icu/optimized/umutablecptrie.ll
+; icu/optimized/ucnv_u32.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = or i32 %1, %2
-  %4 = icmp ugt i32 %3, 65535
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp ugt i32 %3, 1114111
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

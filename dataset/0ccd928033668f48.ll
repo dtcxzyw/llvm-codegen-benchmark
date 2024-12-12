@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 97 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
@@ -97,7 +97,6 @@
 ; spike/optimized/sim.ll
 ; xgboost/optimized/adapter.cc.ll
 ; yosys/optimized/lz4.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:

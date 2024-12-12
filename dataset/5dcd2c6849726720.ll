@@ -148,7 +148,7 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000028a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = add nsw i64 %2, -2

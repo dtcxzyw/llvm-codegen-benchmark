@@ -1,5 +1,5 @@
 
-; 343 occurrences:
+; 337 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcDress3.c.ll
@@ -99,6 +99,7 @@
 ; abseil-cpp/optimized/demangle.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; arrow/optimized/bit_block_counter.cc.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/BraIA64.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -155,7 +156,6 @@
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/early-lookup.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/gen8_engine_cs.ll
 ; linux/optimized/hwregs.ll
@@ -167,9 +167,7 @@
 ; linux/optimized/md.ll
 ; linux/optimized/mqueue.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/sch_mq.ll
 ; linux/optimized/slub.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/syscalls.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/timer.ll
@@ -266,7 +264,6 @@
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/l_mapgen.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
@@ -280,7 +277,6 @@
 ; mold/optimized/output-chunks.cc.M68K.cc.ll
 ; mold/optimized/output-chunks.cc.PPC32.cc.ll
 ; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; nuttx/optimized/mq_setattr.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
@@ -309,8 +305,6 @@
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
-; redis/optimized/bin.ll
-; redis/optimized/bin.sym.ll
 ; redis/optimized/buf_writer.ll
 ; redis/optimized/buf_writer.sym.ll
 ; redis/optimized/eset.ll
@@ -348,11 +342,14 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 12
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 121 occurrences:
+; 123 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/asm_target.c.ll
 ; cpython/optimized/assemble.ll
 ; cpython/optimized/dtoa.ll
@@ -445,8 +442,6 @@ entry:
 ; linux/optimized/inotify_user.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/platform.ll
-; linux/optimized/sch_mq.ll
-; linux/optimized/statfs.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -455,6 +450,7 @@ entry:
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; mold/optimized/arch-ppc64v2.cc.ll
 ; oiio/optimized/ddsinput.cpp.ll
@@ -479,11 +475,12 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, -9
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; linux/optimized/io-wq.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
@@ -498,7 +495,7 @@ entry:
   ret i32 %4
 }
 
-; 257 occurrences:
+; 256 occurrences:
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
@@ -595,7 +592,6 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/insn-eval.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
@@ -765,14 +761,13 @@ entry:
   ret i32 %4
 }
 
-; 92 occurrences:
+; 91 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -885,7 +880,7 @@ define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = and i32 %2, 67107840
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

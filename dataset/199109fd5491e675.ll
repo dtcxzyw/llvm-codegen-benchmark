@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 46 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; graphviz/optimized/arrows.c.ll
@@ -45,6 +45,7 @@
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-synphasor.c.ll
 ; xgboost/optimized/data.cc.ll
+; zed-rs/optimized/9llazb78bmu9grt6fsh6yj218.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:

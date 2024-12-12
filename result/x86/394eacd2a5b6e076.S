@@ -16,9 +16,3 @@ func0000000000000038:                   # @func0000000000000038
 	shrl	%eax
 	addl	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movzwl	%dx, %eax
-	imull	%esi, %eax
-	shrl	$15, %eax
-	addl	%edi, %eax
-	retq

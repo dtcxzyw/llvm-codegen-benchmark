@@ -11,21 +11,23 @@
 define i64 @func000000000000001f(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 16
   ret i64 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; slurm/optimized/gres_filter.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = add nsw i64 %3, -1
   ret i64 %4
 }
@@ -48,7 +50,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }
@@ -59,7 +61,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = add i64 %3, 1
   ret i64 %4
 }
@@ -70,8 +72,20 @@ entry:
 define i64 @func0000000000000008(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   %4 = add i64 %3, -4294967296
+  ret i64 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = mul nuw nsw i64 %0, %2
+  %4 = add i64 %3, 1
   ret i64 %4
 }
 
@@ -86,7 +100,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = add nsw i64 %3, 1024
   ret i64 %4
 }

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaFrames.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; gromacs/optimized/pme.cpp.ll
@@ -8,7 +8,6 @@
 ; libwebp/optimized/cwebp.c.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; nori/optimized/chi2test.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dlamch.c.ll
 ; opencv/optimized/deblurring.cpp.ll
 ; opencv/optimized/decoder.cpp.ll

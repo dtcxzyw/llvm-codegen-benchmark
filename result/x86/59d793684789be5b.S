@@ -5,7 +5,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 func000000000000001f:                   # @func000000000000001f
 	movzbl	%sil, %eax
-	incl	%eax
+	addl	$8, %eax
 	imull	%edi, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a

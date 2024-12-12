@@ -20,7 +20,7 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr exact i16 %1, 5
   %3 = and i16 %0, 1
@@ -37,18 +37,6 @@ entry:
   %2 = lshr i16 %1, 15
   %3 = and i16 %0, 1
   %4 = icmp eq i16 %3, %2
-  ret i1 %4
-}
-
-; 2 occurrences:
-; icu/optimized/utf16collationiterator.ll
-; icu/optimized/utf8collationiterator.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
-entry:
-  %2 = lshr i16 %1, 8
-  %3 = and i16 %0, 255
-  %4 = icmp ugt i16 %3, %2
   ret i1 %4
 }
 

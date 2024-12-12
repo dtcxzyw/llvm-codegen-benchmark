@@ -6,7 +6,7 @@
 define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -32,7 +32,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -45,7 +45,18 @@ entry:
 define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp sge i64 %2, %0
+  %3 = icmp sle i64 %0, %2
+  %4 = zext i1 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = icmp ult i64 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -56,7 +67,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }

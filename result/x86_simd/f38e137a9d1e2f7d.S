@@ -35,7 +35,7 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI3_0:
 	.long	20                              # 0x14
-func0000000000000a06:                   # @func0000000000000a06
+func0000000000001406:                   # @func0000000000001406
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpsubd	%xmm0, %xmm1, %xmm0

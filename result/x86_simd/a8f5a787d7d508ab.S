@@ -92,3 +92,49 @@ func0000000000000006:                   # @func0000000000000006
 	vpor	%xmm0, %xmm2, %xmm0
 	vzeroupper
 	retq
+.LCPI2_0:
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI2_1:
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI2_2:
+	.zero	4,2
+.LCPI2_3:
+	.zero	4,48
+func0000000000000004:                   # @func0000000000000004
+	vptestnmd	%ymm2, %ymm2, %k1
+	vpandd	.LCPI2_2(%rip){1to4}, %xmm1, %xmm1
+	vpord	.LCPI2_3(%rip){1to4}, %xmm1, %xmm2
+	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpor	%xmm2, %xmm0, %xmm0
+	vzeroupper
+	retq

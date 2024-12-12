@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
-; php/optimized/dow.ll
 ; postgres/optimized/slru.ll
 ; re2/optimized/compile.cc.ll
 ; Function Attrs: nounwind
@@ -13,13 +12,11 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -64,14 +61,12 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; freetype/optimized/sdf.c.ll
 ; freetype/optimized/smooth.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
-; php/optimized/dow.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -100,7 +95,7 @@ define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 4
   %4 = sub nsw i64 %1, %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

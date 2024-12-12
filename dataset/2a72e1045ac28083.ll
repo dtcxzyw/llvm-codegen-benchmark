@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; eastl/optimized/TestFixedList.cpp.ll
 ; eastl/optimized/TestList.cpp.ll
@@ -24,7 +24,6 @@
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -46,7 +45,7 @@
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000d8c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 8
   %4 = icmp ne ptr %0, %1
@@ -55,21 +54,9 @@ entry:
 }
 
 ; 1 occurrences:
-; c3c/optimized/sema_casts.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %2, -3
-  %4 = icmp ult i64 %3, 10
-  %5 = icmp eq ptr %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; llvm/optimized/CommandLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000101(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -3
   %4 = icmp ult i64 %3, -2
@@ -86,7 +73,7 @@ entry:
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2147483648
   %4 = icmp ult i64 %3, 4294967296
@@ -99,7 +86,7 @@ entry:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000c21(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 8
   %4 = icmp eq ptr %0, %1
@@ -110,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000d81(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 8
   %4 = icmp eq ptr %0, %1
@@ -121,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestList.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 1
   %4 = icmp ne ptr %0, %1
@@ -132,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestList.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000058c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 1
   %4 = icmp ne ptr %0, %1
@@ -143,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000c2c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 8
   %4 = icmp ne ptr %0, %1

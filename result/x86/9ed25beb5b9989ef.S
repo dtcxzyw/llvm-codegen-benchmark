@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	cmpl	$24, %esi
 	setb	%al
 	andb	%dil, %al
@@ -21,6 +21,11 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000008:                   # @func0000000000000008
 	cmpl	$4, %esi
 	setae	%al
+	andb	%dil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpl	$256, %esi                      # imm = 0x100
+	setb	%al
 	andb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006

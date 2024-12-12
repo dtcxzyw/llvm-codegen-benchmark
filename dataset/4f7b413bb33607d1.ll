@@ -21,18 +21,16 @@ entry:
   ret ptr %7
 }
 
-; 48 occurrences:
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; 40 occurrences:
 ; clamav/optimized/rijndael.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; gromacs/optimized/dlarft.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/dstein.cpp.ll
+; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
@@ -42,8 +40,6 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgels.c.ll
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsy.c.ll
@@ -58,11 +54,7 @@ entry:
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgql.c.ll
-; openblas/optimized/dorgr2.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
@@ -129,13 +121,13 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/emd.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = shl nsw i64 %3, 4
-  %5 = shl nuw nsw i64 %1, 4
+  %4 = shl nsw i64 %3, 3
+  %5 = shl nsw i64 %1, 5
   %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

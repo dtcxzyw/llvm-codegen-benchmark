@@ -36,6 +36,12 @@ func0000000000000011:                   # @func0000000000000011
 	li	a0, 365
 	vmul.vx	v8, v8, a0
 	ret
+func0000000000000022:                   # @func0000000000000022
+	li	a0, 10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v8, a0, v10
+	vmul.vx	v8, v8, a0
+	ret
 func000000000000003c:                   # @func000000000000003c
 	li	a0, 3
 	vsetivli	zero, 4, e64, m2, ta, ma

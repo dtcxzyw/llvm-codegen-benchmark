@@ -15,7 +15,7 @@
 	.short	128                             # 0x80
 	.short	128                             # 0x80
 	.short	128                             # 0x80
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vptestmw	.LCPI0_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -85,7 +85,7 @@ func000000000000000a:                   # @func000000000000000a
 	.short	16384                           # 0x4000
 	.short	16384                           # 0x4000
 	.short	16384                           # 0x4000
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vptestnmw	.LCPI3_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

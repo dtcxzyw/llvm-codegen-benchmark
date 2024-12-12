@@ -1,11 +1,11 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addl	$-127, %edx
 	cmpl	$-95, %edx
 	setb	%al
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	cmpl	$1, %edx
 	setne	%al
 	orl	%esi, %edi
@@ -18,9 +18,9 @@ func0000000000000004:                   # @func0000000000000004
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
-	addl	$-5, %edx
-	cmpl	$-2, %edx
+func0000000000000028:                   # @func0000000000000028
+	addl	$-13, %edx
+	cmpl	$-12, %edx
 	setb	%al
 	orl	%esi, %edi
 	orb	%dil, %al
@@ -32,7 +32,7 @@ func0000000000000008:                   # @func0000000000000008
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	cmpl	$2, %edx
 	sete	%al
 	orl	%esi, %edi

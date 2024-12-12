@@ -23,7 +23,7 @@
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -5
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = xor i16 %3, 4
   ret i16 %4
 }

@@ -47,3 +47,21 @@ func0000000000000010:                   # @func0000000000000010
 	vmovdqu8	.LCPI5_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq
+.LCPI6_0:
+	.long	3                               # 0x3
+.LCPI6_1:
+	.zero	16,1
+func0000000000000030:                   # @func0000000000000030
+	vpcmpnleud	.LCPI6_0(%rip){1to8}, %ymm0, %k1
+	vmovdqu8	.LCPI6_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI7_0:
+	.long	2                               # 0x2
+.LCPI7_1:
+	.zero	16,1
+func0000000000000028:                   # @func0000000000000028
+	vpcmpltud	.LCPI7_0(%rip){1to8}, %ymm0, %k1
+	vmovdqu8	.LCPI7_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq

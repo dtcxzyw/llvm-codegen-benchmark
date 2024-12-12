@@ -1,4 +1,4 @@
-func000000000000007a:                   // @func000000000000007a
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	add	x8, x1, w2, uxth
@@ -6,7 +6,7 @@ func000000000000007a:                   // @func000000000000007a
 	add	x0, x8, #4
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	add	x8, x1, w2, uxth
@@ -14,7 +14,7 @@ func000000000000000a:                   // @func000000000000000a
 	add	x0, x8, #24
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	add	x8, x1, w2, uxth
@@ -22,7 +22,7 @@ func0000000000000038:                   // @func0000000000000038
 	add	x0, x8, #1178
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	add	x8, x1, w2, uxth
@@ -30,7 +30,7 @@ func0000000000000018:                   // @func0000000000000018
 	add	x0, x8, #48
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	add	x8, x1, w2, uxth

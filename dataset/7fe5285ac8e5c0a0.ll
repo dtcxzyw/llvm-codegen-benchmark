@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; libquic/optimized/x509_vfy.c.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/c1_IR.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll

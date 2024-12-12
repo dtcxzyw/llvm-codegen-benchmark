@@ -11,3 +11,10 @@ func00000000000000a6:                   # @func00000000000000a6
 	shrq	$7, %rax
 	xorl	%edx, %edx
 	retq
+func00000000000000fe:                   # @func00000000000000fe
+	leaq	(%rdi,%rsi), %rdx
+	movabsq	$3022314549036573, %rax         # imm = 0xABCC77118461D
+	mulxq	%rax, %rax, %rax
+	shrq	$14, %rax
+	xorl	%edx, %edx
+	retq

@@ -1,5 +1,5 @@
 
-; 138 occurrences:
+; 137 occurrences:
 ; cvc5/optimized/arith_rewriter.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; hermes/optimized/raw_ostream.cpp.ll
@@ -10,7 +10,6 @@
 ; llvm/optimized/CompilerInstance.cpp.ll
 ; llvm/optimized/IntrinsicEmitter.cpp.ll
 ; llvm/optimized/LoopConstrainer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86CallLowering.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

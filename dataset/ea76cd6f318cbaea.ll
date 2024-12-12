@@ -20,7 +20,7 @@
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000046(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 5
   %4 = icmp slt i32 %1, 0
@@ -32,7 +32,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-font.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -65536
   %4 = icmp slt i32 %1, 0
@@ -93,7 +93,7 @@ entry:
 ; abc/optimized/utilIsop.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000064(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 5
   %4 = icmp ult i32 %1, 2
@@ -125,7 +125,7 @@ entry:
 ; abc/optimized/sfmSat.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 17
   %4 = icmp eq i32 %1, 2
@@ -159,7 +159,7 @@ entry:
 ; abc/optimized/utilIsop.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000041(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 4294967297
   %4 = icmp eq i32 %1, 4
@@ -170,7 +170,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/sentinel.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 3
   %4 = icmp eq i32 %1, 0

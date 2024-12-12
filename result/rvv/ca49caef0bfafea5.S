@@ -18,3 +18,13 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 99
 	vmsgtu.vx	v0, v8, a0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	lui	a0, 322639
+	addi	a0, a0, -945
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmulh.vx	v8, v8, a0
+	vsra.vi	v8, v8, 2
+	vsrl.vi	v10, v8, 31
+	vadd.vv	v8, v8, v10
+	vmsleu.vi	v0, v8, 3
+	ret

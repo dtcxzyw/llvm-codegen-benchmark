@@ -1,9 +1,9 @@
 func0000000000000003:                   # @func0000000000000003
-	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	leal	(%rsi,%rax,2), %ecx
-	leal	4(%rsi,%rax,2), %eax
+	andl	$1, %edx
+	shll	$11, %edx
+	leal	512(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

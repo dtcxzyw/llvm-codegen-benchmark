@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000a1:                   # @func00000000000000a1
 	leaq	-34(%rdi), %rax
 	cmpq	$34, %rdi
 	cmovbq	%rdi, %rax
@@ -10,13 +10,13 @@ func0000000000000020:                   # @func0000000000000020
 	cmovbq	%rdi, %rax
 	addq	$-40, %rax
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000a8:                   # @func00000000000000a8
 	leaq	-1000000000(%rdi), %rax
 	cmpq	$1000000000, %rdi               # imm = 0x3B9ACA00
 	cmovlq	%rdi, %rax
 	addq	$-1000000, %rax                 # imm = 0xFFF0BDC0
 	retq
-func0000000000000069:                   # @func0000000000000069
+func00000000000000a9:                   # @func00000000000000a9
 	leaq	-1000000000(%rdi), %rax
 	cmpq	$1000000000, %rdi               # imm = 0x3B9ACA00
 	cmovlq	%rdi, %rax

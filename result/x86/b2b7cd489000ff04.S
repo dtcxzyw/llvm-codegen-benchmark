@@ -1,14 +1,16 @@
-func0000000000000051:                   # @func0000000000000051
-	leal	1(%rdi,%rsi), %eax
-	testb	$63, %al
+func00000000000000a1:                   # @func00000000000000a1
+	addl	%esi, %edi
+	notl	%edi
+	testb	$63, %dil
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	leal	1(%rdi,%rsi), %eax
-	testb	$7, %al
+	addl	%esi, %edi
+	notl	%edi
+	testb	$7, %dil
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	addl	%esi, %edi
 	movl	$1, %eax
 	subl	%edi, %eax

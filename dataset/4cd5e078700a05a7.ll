@@ -1,12 +1,13 @@
 
-; 58 occurrences:
-; freetype/optimized/truetype.c.ll
+; 60 occurrences:
+; boost/optimized/src.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; grpc/optimized/tcp_server_posix.cc.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/callchain.ll
 ; linux/optimized/cpufreq_governor.ll
+; linux/optimized/mincore.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
@@ -33,7 +34,8 @@
 ; luau/optimized/TypeInfer.generics.test.cpp.ll
 ; luau/optimized/TypeInfer.oop.test.cpp.ll
 ; luau/optimized/TypeInfer.test.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
+; lvgl/optimized/lv_msgbox.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; minetest/optimized/CFileSystem.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/jvmtiEventController.ll
@@ -71,10 +73,10 @@ entry:
 ; ruby/optimized/array.ll
 ; velox/optimized/Re2Functions.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000010(i64 %0) #0 {
+define i8 @func0000000000000030(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4161536
-  %2 = icmp ugt i64 %1, 524288
+  %2 = icmp samesign ugt i64 %1, 524288
   %3 = zext i1 %2 to i8
   ret i8 %3
 }
@@ -86,15 +88,11 @@ entry:
 ; cpython/optimized/_decimal.ll
 ; entt/optimized/any.cpp.ll
 ; entt/optimized/poly.cpp.ll
-; freetype/optimized/cff.c.ll
-; freetype/optimized/type1.c.ll
-; freetype/optimized/type1cid.c.ll
 ; git/optimized/merge-ort.ll
 ; glslang/optimized/reflection.cpp.ll
 ; grpc/optimized/socket_utils_posix.cc.ll
 ; grpc/optimized/tcp_socket_utils.cc.ll
 ; hdf5/optimized/H5Fint.c.ll
-; hermes/optimized/Valgrind.cpp.ll
 ; icu/optimized/collationfastlatinbuilder.ll
 ; jemalloc/optimized/sc.ll
 ; jemalloc/optimized/sc.pic.ll
@@ -171,6 +169,10 @@ entry:
 ; z3/optimized/dl_mk_synchronize.cpp.ll
 ; z3/optimized/dl_mk_unbound_compressor.cpp.ll
 ; z3/optimized/dl_rule.cpp.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i64 %0) #0 {
 entry:

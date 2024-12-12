@@ -1,5 +1,5 @@
 
-; 119 occurrences:
+; 118 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -99,7 +99,6 @@
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/PGOCtxProfReader.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/SerializedDiagnosticReader.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll

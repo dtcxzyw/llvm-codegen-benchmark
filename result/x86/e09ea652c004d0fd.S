@@ -1,17 +1,10 @@
-func0000000000000014:                   # @func0000000000000014
-	movl	$8, %eax
-	subl	%esi, %eax
-	movzwl	%ax, %eax
-	cmpl	%edi, %eax
-	setb	%al
-	retq
 func000000000000000a:                   # @func000000000000000a
 	negl	%esi
 	andl	$15, %esi
 	cmpl	%edi, %esi
 	setg	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	negl	%esi
 	andl	$3, %esi
 	cmpl	%edi, %esi

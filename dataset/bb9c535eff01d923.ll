@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; git/optimized/files-backend.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/logips2pp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; oiio/optimized/targainput.cpp.ll

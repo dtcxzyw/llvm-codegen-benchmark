@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
-; linux/optimized/tg3.ll
 ; wireshark/optimized/packet-mbtcp.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i1 %0, i16 %1, i16 %2) #0 {

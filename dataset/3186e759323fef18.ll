@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 19 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; cpython/optimized/obmalloc.ll
@@ -17,6 +17,8 @@
 ; spike/optimized/f128_to_ui64.ll
 ; tokio-rs/optimized/27wc5j4mui8auwxp.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -26,23 +28,13 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
+; 6 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; jemalloc/optimized/bitmap.ll
-; jemalloc/optimized/bitmap.pic.ll
-; jemalloc/optimized/bitmap.sym.ll
 ; quickjs/optimized/libbf.ll
-; redis/optimized/bitmap.ll
-; redis/optimized/bitmap.sym.ll
 ; spike/optimized/f128_rem.ll
 ; spike/optimized/rol.ll
 ; spike/optimized/rolw.ll
-; tree-sitter-rs/optimized/18kt1xijwoc4jebp.ll
-; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
-; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
-; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
-; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
-; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

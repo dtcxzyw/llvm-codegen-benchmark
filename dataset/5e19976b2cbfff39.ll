@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; graphviz/optimized/neatoinit.c.ll
 ; graphviz/optimized/partition.c.ll
 ; graphviz/optimized/spring_electrical.c.ll
@@ -9,6 +9,8 @@
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
 ; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i32 %0) #0 {
 entry:

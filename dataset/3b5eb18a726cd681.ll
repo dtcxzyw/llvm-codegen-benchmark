@@ -6,13 +6,15 @@ define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 6
   %3 = add i64 %2, 6
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -37,7 +39,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, -365
   %3 = add i64 %2, 365
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -63,7 +65,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 400
   %3 = add i64 %2, 400
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -74,7 +76,7 @@ define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 1000000
   %3 = add nuw i64 %2, 1000000
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -85,7 +87,7 @@ define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 72
   %3 = add nuw i64 %2, 72
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -108,7 +110,7 @@ define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 3
   %3 = add i64 %2, -3
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 

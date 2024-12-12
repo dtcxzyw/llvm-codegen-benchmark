@@ -40,4 +40,16 @@ entry:
   ret i64 %3
 }
 
+; 2 occurrences:
+; llama.cpp/optimized/ggml.c.ll
+; postgres/optimized/parse_utilcmd.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i32 %0) #0 {
+entry:
+  %1 = ashr exact i32 %0, 16
+  %2 = mul nsw i32 %1, 104
+  %3 = sext i32 %2 to i64
+  ret i64 %3
+}
+
 attributes #0 = { nounwind }

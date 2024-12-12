@@ -1,14 +1,13 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; folly/optimized/LogLevel.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; pyo3-rs/optimized/5cngl7ehxnf7u52x.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/3qxuuvy9ipi9muus.ll
 ; wasmtime-rs/optimized/504voril3a5lulnh.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

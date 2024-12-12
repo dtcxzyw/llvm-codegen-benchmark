@@ -8,11 +8,11 @@
 ; php/optimized/crypt_blowfish.ll
 ; velox/optimized/Base64.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw [16 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [16 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

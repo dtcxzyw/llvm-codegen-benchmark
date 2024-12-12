@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; git/optimized/object-name.ll
 ; linux/optimized/rx.ll
-; llvm/optimized/X86CallingConv.cpp.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; redis/optimized/bio.ll
 ; Function Attrs: nounwind
@@ -11,7 +10,7 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = shl i8 %2, 1
   %4 = and i8 %3, -128
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   %6 = or disjoint i8 %5, 1
   ret i8 %6
 }
@@ -25,7 +24,7 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = shl i8 %2, 2
   %4 = and i8 %3, 4
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   %6 = or i8 %5, 16
   ret i8 %6
 }

@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; casadi/optimized/integrator.cpp.ll
 ; cvc5/optimized/term_tuple_enumerator.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; postgres/optimized/procsignal.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll

@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 93 occurrences:
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/builder_adaptive.cc.ll
 ; brotli/optimized/backward_references.c.ll
@@ -39,8 +39,6 @@
 ; linux/optimized/drm_fourcc.ll
 ; linux/optimized/fan_core.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/rpl.ll
-; linux/optimized/tbfadt.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
@@ -49,6 +47,7 @@
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/dpxoutput.cpp.ll
 ; oiio/optimized/exrinput.cpp.ll
@@ -92,15 +91,17 @@
 ; vcpkg/optimized/strings.cpp.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   ret i64 %3
 }
 
-; 82 occurrences:
+; 85 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -179,15 +180,18 @@ entry:
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
-; wasmtime-rs/optimized/mi9s90tgi0pj5ik.ll
 ; xgboost/optimized/gradient_index.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
@@ -240,11 +244,12 @@ entry:
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
-; 47 occurrences:
+; 52 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; brotli/optimized/static_dict.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
@@ -266,7 +271,6 @@ entry:
 ; libpng/optimized/pngwutil.c.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; libwebp/optimized/pngdec.c.ll
-; linux/optimized/tbfadt.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
@@ -292,15 +296,20 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   ret i64 %3
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/builder_adaptive.cc.ll
 ; arrow/optimized/coo_converter.cc.ll
@@ -321,7 +330,6 @@ entry:
 ; libwebp/optimized/buffer_dec.c.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/syncookies.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_minisocks.ll
@@ -351,7 +359,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   ret i64 %3
 }
 
@@ -363,7 +371,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   ret i64 %3
 }
 

@@ -1,156 +1,42 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	fmov	x8, d5
-	fmov	x9, d3
-	fmov	x12, d2
-	mov	x10, v5.d[1]
-	mov	x11, v3.d[1]
-	mov	x13, v4.d[1]
-	mov	x14, v2.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d4
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	ushr	v2.2d, v2.2d, #8
-	cmhi	v1.2d, v2.2d, v1.2d
-	ushr	v3.2d, v3.2d, #8
-	cmhi	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x1, x2
+	cmp	x0, x8, lsr #8
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func0000000000000054:                   // @func0000000000000054
 // %bb.0:                               // %entry
-	fmov	x8, d5
-	fmov	x9, d3
-	fmov	x12, d2
-	mov	x10, v5.d[1]
-	mov	x11, v3.d[1]
-	mov	x13, v4.d[1]
-	mov	x14, v2.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d4
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	ushr	v2.2d, v2.2d, #1
-	cmhi	v1.2d, v1.2d, v2.2d
-	ushr	v3.2d, v3.2d, #1
-	cmhi	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x1, x2
+	cmp	x0, x8, lsr #1
+	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	x8, d5
-	fmov	x9, d3
-	fmov	x12, d2
-	mov	x10, v5.d[1]
-	mov	x11, v3.d[1]
-	mov	x13, v4.d[1]
-	mov	x14, v2.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d4
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	ushr	v2.2d, v2.2d, #16
-	cmhi	v1.2d, v1.2d, v2.2d
-	ushr	v3.2d, v3.2d, #16
-	cmhi	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x1, x2
+	cmp	x0, x8, lsr #16
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	fmov	x8, d5
-	fmov	x9, d3
-	fmov	x12, d2
-	mov	x10, v5.d[1]
-	mov	x11, v3.d[1]
-	mov	x13, v4.d[1]
-	mov	x14, v2.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d4
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	ushr	v2.2d, v2.2d, #32
-	cmhi	v1.2d, v1.2d, v2.2d
-	ushr	v3.2d, v3.2d, #32
-	cmhi	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x1, x2
+	cmp	x0, x8, lsr #32
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000066:                   // @func0000000000000066
+func00000000000000c6:                   // @func00000000000000c6
 // %bb.0:                               // %entry
-	fmov	x8, d5
-	fmov	x9, d3
-	fmov	x12, d2
-	mov	x10, v5.d[1]
-	mov	x11, v3.d[1]
-	mov	x13, v4.d[1]
-	mov	x14, v2.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d4
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	ushr	v2.2d, v2.2d, #32
-	cmgt	v1.2d, v1.2d, v2.2d
-	ushr	v3.2d, v3.2d, #32
-	cmgt	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x1, x2
+	cmp	x0, x8, lsr #32
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000046:                   // @func0000000000000046
+func0000000000000086:                   // @func0000000000000086
 // %bb.0:                               // %entry
-	fmov	x8, d5
-	fmov	x9, d3
-	fmov	x12, d2
-	mov	x10, v5.d[1]
-	mov	x11, v3.d[1]
-	mov	x13, v4.d[1]
-	mov	x14, v2.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d4
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	ushr	v2.2d, v2.2d, #32
-	cmgt	v1.2d, v1.2d, v2.2d
-	ushr	v3.2d, v3.2d, #32
-	cmgt	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x1, x2
+	cmp	x0, x8, lsr #32
+	cset	w0, gt
 	ret
                                         // -- End function

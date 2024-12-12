@@ -1,8 +1,18 @@
 
-; 306 occurrences:
+; 321 occurrences:
 ; actix-rs/optimized/4ijdjw7p9m6gnufo.ll
 ; arrow/optimized/light_array.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; c3c/optimized/sema_asm.c.ll
@@ -78,7 +88,6 @@
 ; libquic/optimized/t1_lib.c.ll
 ; lief/optimized/iostream.cpp.ll
 ; lief/optimized/ssl_msg.c.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/af_netlink.ll
@@ -88,10 +97,8 @@
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/drm_scdc_helper.ll
 ; linux/optimized/dvo_ivch.ll
 ; linux/optimized/eeepc-laptop.ll
-; linux/optimized/evregion.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/hda_jack.ll
@@ -108,7 +115,6 @@
 ; linux/optimized/keyboard.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/nfs4proc.ll
@@ -116,7 +122,6 @@
 ; linux/optimized/pci.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pmsr.ll
-; linux/optimized/pty.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/sock.ll
 ; linux/optimized/synaptics.ll
@@ -194,6 +199,14 @@
 ; luajit/optimized/lj_bcwrite_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_textarea.ll
+; lvgl/optimized/lv_timer.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mimalloc/optimized/page.c.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -264,6 +277,8 @@
 ; ruby/optimized/prism.ll
 ; ruby/optimized/thread.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; verilator/optimized/V3EmitCImp.cpp.ll
 ; verilator/optimized/V3EmitCSyms.cpp.ll
 ; verilator/optimized/V3ParseGrammar.cpp.ll
@@ -315,7 +330,8 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; linux/optimized/keyboard.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll

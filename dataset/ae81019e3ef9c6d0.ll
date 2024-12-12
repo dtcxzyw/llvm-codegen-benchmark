@@ -1,12 +1,13 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; rust-analyzer-rs/optimized/k1iwjb50a8mvwg2.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
+; zed-rs/optimized/70ymcp0y6yqkpw3c0y4yzyh2l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i1 %0, i1 false

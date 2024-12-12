@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
-; qemu/optimized/target_riscv_m128_helper.c.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/DecimalUtil.cpp.ll

@@ -1,3 +1,10 @@
+func000000000000000f:                   # @func000000000000000f
+	movzbl	%dl, %eax
+	leal	(%rax,%rsi,8), %ecx
+	testb	$1, %dil
+	movl	$1073741824, %eax               # imm = 0x40000000
+	cmovnel	%ecx, %eax
+	retq
 func0000000000000007:                   # @func0000000000000007
 	movzbl	%dl, %ecx
 	shll	$8, %esi

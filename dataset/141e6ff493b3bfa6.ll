@@ -67,7 +67,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %.neg = sub i64 %3, %4
   %.neg1 = trunc i64 %.neg to i32
-  %5 = add i32 %.neg1, %0
+  %5 = add i32 %0, %.neg1
   ret i32 %5
 }
 
@@ -90,7 +90,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %.neg = sub i64 %3, %4
   %.neg1 = trunc i64 %.neg to i32
-  %5 = add i32 %.neg1, %0
+  %5 = add i32 %0, %.neg1
   ret i32 %5
 }
 
@@ -137,7 +137,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %.neg = sub i64 %3, %4
   %.neg1 = trunc i64 %.neg to i32
-  %5 = add i32 %.neg1, %0
+  %5 = add i32 %0, %.neg1
   ret i32 %5
 }
 
@@ -156,7 +156,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %.neg = sub i64 %3, %4
   %.neg1 = trunc i64 %.neg to i32
-  %5 = add i32 %.neg1, %0
+  %5 = add i32 %0, %.neg1
   ret i32 %5
 }
 
@@ -174,7 +174,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %.neg = sub i64 %3, %4
   %.neg1 = trunc i64 %.neg to i32
-  %5 = add i32 %.neg1, %0
+  %5 = add i32 %0, %.neg1
   ret i32 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; linux/optimized/intel_pstate.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -7,7 +7,6 @@
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
@@ -31,8 +30,36 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 2 occurrences:
+; llvm/optimized/AArch64FastISel.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i16 %1) #0 {
+entry:
+  %2 = add i16 %1, -17
+  %3 = icmp samesign ult i16 %2, 120
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i16 %1) #0 {
+entry:
+  %2 = add nsw i16 %1, -21
+  %3 = icmp samesign ult i16 %2, 2
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 12 occurrences:
+; cvc5/optimized/int_to_bv.cpp.ll
+; icu/optimized/ucnv2022.ll
 ; icu/optimized/uidna.ll
+; llvm/optimized/CodeCompleteConsumer.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openmpi/optimized/rmaps_ppr.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
@@ -40,9 +67,9 @@ entry:
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i16 %1) #0 {
 entry:
-  %2 = add nsw i16 %1, -21
+  %2 = add nsw i16 %1, -23
   %3 = icmp ult i16 %2, 2
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
@@ -79,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vsprintf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 1
   %3 = select i1 %0, i1 %2, i1 false

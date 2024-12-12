@@ -1,15 +1,9 @@
 
-; 52 occurrences:
-; abc/optimized/acecFadds.c.ll
-; abc/optimized/acecPo.c.ll
-; abc/optimized/bmcMaj.c.ll
-; abc/optimized/giaMini.c.ll
-; abc/optimized/ifDec16.c.ll
+; 46 occurrences:
 ; openssl/optimized/libcrypto-lib-cfb_enc.ll
 ; openssl/optimized/libcrypto-lib-param_build.ll
 ; openssl/optimized/libcrypto-shlib-cfb_enc.ll
 ; openssl/optimized/libcrypto-shlib-param_build.ll
-; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Assert.cpp.ll
 ; verilator/optimized/V3AssertPre.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
@@ -53,11 +47,11 @@
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -106,7 +100,6 @@ entry:
 ; faiss/optimized/hamming.cpp.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; flac/optimized/fixed_intrin_sse2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/fixed_intrin_ssse3.c.ll
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; gromacs/optimized/coder.c.ll
@@ -182,6 +175,7 @@ entry:
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/tm_solution.ll
+; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/parse_manifest.ll
 ; postgres/optimized/parse_manifest_shlib.ll
@@ -204,11 +198,11 @@ entry:
 ; wireshark/optimized/text_import.c.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 3
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -230,7 +224,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -278,11 +272,27 @@ entry:
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 32
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 6 occurrences:
+; abc/optimized/acecFadds.c.ll
+; abc/optimized/acecPo.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/giaMini.c.ll
+; abc/optimized/ifDec16.c.ll
+; soc-simulator/optimized/verilated.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sdiv i32 %1, 2
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp samesign ult i64 %0, %3
   ret i1 %4
 }
 
@@ -293,7 +303,7 @@ define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = zext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -304,7 +314,7 @@ define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = zext i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -315,7 +325,7 @@ define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
   %3 = zext i32 %2 to i64
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 

@@ -5,5 +5,5 @@ func0000000000000004:                   # @func0000000000000004
 	vfmv.v.f	v12, fa5
 	fneg.s	fa5, fa5
 	vfmerge.vfm	v12, v12, fa5, v0
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	ret

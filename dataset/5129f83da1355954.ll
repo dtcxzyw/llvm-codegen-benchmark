@@ -1,5 +1,5 @@
 
-; 97 occurrences:
+; 99 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -14,6 +14,7 @@
 ; box2d/optimized/b2_prismatic_joint.cpp.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
 ; box2d/optimized/b2_wheel_joint.cpp.ll
+; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; bullet3/optimized/b3OptimizedBvh.ll
@@ -41,6 +42,7 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
@@ -106,8 +108,10 @@ entry:
   ret float %5
 }
 
-; 38 occurrences:
+; 44 occurrences:
 ; abc/optimized/sclUpsize.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -119,6 +123,7 @@ entry:
 ; gromacs/optimized/slas2.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -145,6 +150,9 @@ entry:
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; recastnavigation/optimized/RecastRasterization.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:

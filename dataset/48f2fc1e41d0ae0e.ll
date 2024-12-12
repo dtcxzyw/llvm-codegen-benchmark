@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; folly/optimized/IOBuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000481(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 1
   %3 = icmp ult i64 %1, 1025
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/log.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000541(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 2
   %3 = icmp sgt i64 %1, 1
@@ -27,7 +27,7 @@ entry:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 1
   %3 = icmp eq i64 %1, 1152921504606846976
@@ -59,7 +59,7 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000aa1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000002941(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, 0
   %3 = icmp sgt i64 %1, 1
@@ -85,7 +85,7 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000661(i32 %0, i64 %1) #0 {
+define i1 @func00000000000018c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, 1
   %3 = icmp slt i64 %1, 1
@@ -100,7 +100,7 @@ entry:
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ca1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000003141(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, 0
   %3 = icmp sgt i64 %1, 1
@@ -112,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ac1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000002981(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, 0
   %3 = icmp ne i64 %1, 1

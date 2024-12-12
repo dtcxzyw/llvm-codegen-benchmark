@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; linux/optimized/d_path.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
 ; openjdk/optimized/mlib_ImageConv_32nw.ll
@@ -17,6 +17,7 @@
 ; wireshark/optimized/packet-l2tp.c.ll
 ; wireshark/optimized/packet-ppp.c.ll
 ; wireshark/optimized/packet-ssh.c.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -39,12 +40,11 @@ entry:
   ret i64 %4
 }
 
-; 216 occurrences:
+; 217 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/giaUtil.c.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
-; arrow/optimized/decimal.cc.ll
 ; cmake/optimized/archive_write_set_format_ar.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -64,6 +64,7 @@ entry:
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/ucharstriebuilder.ll
 ; icu/optimized/uresbund.ll
+; icu/optimized/usprep.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -139,6 +140,7 @@ entry:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/d_path.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -283,7 +285,7 @@ entry:
 define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = sext i32 %2 to i64
   ret i64 %3
 }
@@ -311,7 +313,7 @@ entry:
 define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = sext i32 %2 to i64
   ret i64 %3
 }
@@ -322,7 +324,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = sext i32 %2 to i64
   ret i64 %3
 }

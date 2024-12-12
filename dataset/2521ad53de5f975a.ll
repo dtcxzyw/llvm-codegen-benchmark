@@ -12,12 +12,12 @@
 ; openmpi/optimized/rmaps_rank_file_lex.ll
 ; velox/optimized/Scanner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000361(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -4294967296
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 1
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }

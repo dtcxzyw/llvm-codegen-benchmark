@@ -1,66 +1,5 @@
 
-; 51 occurrences:
-; abc/optimized/abcHieNew.c.ll
-; abc/optimized/absOldCex.c.ll
-; abc/optimized/absOldRef.c.ll
-; abc/optimized/absOldSat.c.ll
-; abc/optimized/absOut.c.ll
-; abc/optimized/absRef.c.ll
-; abc/optimized/absVta.c.ll
-; abc/optimized/bbrCex.c.ll
-; abc/optimized/bbrReach.c.ll
-; abc/optimized/bmcBmc2.c.ll
-; abc/optimized/bmcBmc3.c.ll
-; abc/optimized/bmcBmcAnd.c.ll
-; abc/optimized/bmcBmcG.c.ll
-; abc/optimized/bmcBmcS.c.ll
-; abc/optimized/bmcCexCare.c.ll
-; abc/optimized/bmcCexCut.c.ll
-; abc/optimized/bmcCexDepth.c.ll
-; abc/optimized/bmcCexMin1.c.ll
-; abc/optimized/bmcCexTools.c.ll
-; abc/optimized/bmcMaj.c.ll
-; abc/optimized/cuddInteract.c.ll
-; abc/optimized/fraSim.c.ll
-; abc/optimized/giaDup.c.ll
-; abc/optimized/giaEra2.c.ll
-; abc/optimized/io.c.ll
-; abc/optimized/llb4Cex.c.ll
-; abc/optimized/pdrMan.c.ll
-; abc/optimized/sscSim.c.ll
-; abc/optimized/sswBmc.c.ll
-; abc/optimized/sswSim.c.ll
-; abc/optimized/utilCex.c.ll
-; abc/optimized/wlcAbs.c.ll
-; abc/optimized/wlcAbs2.c.ll
-; cpython/optimized/unicodedata.ll
-; darktable/optimized/introspection_cacorrect.c.ll
-; gromacs/optimized/gmx_nmr.cpp.ll
-; gromacs/optimized/indexutil.cpp.ll
-; icu/optimized/collationiterator.ll
-; libquic/optimized/time_support.c.ll
-; linux/optimized/entropy_common.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; minetest/optimized/CImage.cpp.ll
-; opencv/optimized/color_lab.cpp.ll
-; openjdk/optimized/ProcessPath.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; php/optimized/zend_alloc.ll
-; postgres/optimized/brin_tuple.ll
-; postgres/optimized/localtime.ll
-; postgres/optimized/spgtextproc.ll
-; postgres/optimized/tzparser.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %0, %1
-  %3 = ashr i32 %2, 31
-  %4 = sext i32 %3 to i64
-  ret i64 %4
-}
-
-; 112 occurrences:
+; 113 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOut.c.ll
@@ -101,6 +40,7 @@ entry:
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; abc/optimized/wlcStdin.c.ll
+; arrow/optimized/light_array.cc.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; cmake/optimized/bzlib.c.ll
@@ -177,6 +117,65 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
+  %3 = ashr i32 %2, 18
+  %4 = sext i32 %3 to i64
+  ret i64 %4
+}
+
+; 49 occurrences:
+; abc/optimized/abcHieNew.c.ll
+; abc/optimized/absOldCex.c.ll
+; abc/optimized/absOldRef.c.ll
+; abc/optimized/absOldSat.c.ll
+; abc/optimized/absOut.c.ll
+; abc/optimized/absRef.c.ll
+; abc/optimized/absVta.c.ll
+; abc/optimized/bbrCex.c.ll
+; abc/optimized/bbrReach.c.ll
+; abc/optimized/bmcBmc2.c.ll
+; abc/optimized/bmcBmc3.c.ll
+; abc/optimized/bmcBmcAnd.c.ll
+; abc/optimized/bmcBmcG.c.ll
+; abc/optimized/bmcBmcS.c.ll
+; abc/optimized/bmcCexCare.c.ll
+; abc/optimized/bmcCexCut.c.ll
+; abc/optimized/bmcCexDepth.c.ll
+; abc/optimized/bmcCexMin1.c.ll
+; abc/optimized/bmcCexTools.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/cuddInteract.c.ll
+; abc/optimized/fraSim.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaEra2.c.ll
+; abc/optimized/io.c.ll
+; abc/optimized/llb4Cex.c.ll
+; abc/optimized/pdrMan.c.ll
+; abc/optimized/sscSim.c.ll
+; abc/optimized/sswBmc.c.ll
+; abc/optimized/sswSim.c.ll
+; abc/optimized/utilCex.c.ll
+; abc/optimized/wlcAbs.c.ll
+; abc/optimized/wlcAbs2.c.ll
+; cpython/optimized/unicodedata.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; gromacs/optimized/gmx_nmr.cpp.ll
+; gromacs/optimized/indexutil.cpp.ll
+; icu/optimized/collationiterator.ll
+; libquic/optimized/time_support.c.ll
+; linux/optimized/entropy_common.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; minetest/optimized/CImage.cpp.ll
+; opencv/optimized/color_lab.cpp.ll
+; openjdk/optimized/ProcessPath.ll
+; php/optimized/zend_alloc.ll
+; postgres/optimized/brin_tuple.ll
+; postgres/optimized/localtime.ll
+; postgres/optimized/spgtextproc.ll
+; postgres/optimized/tzparser.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %0, %1
   %3 = ashr i32 %2, 18
   %4 = sext i32 %3 to i64
   ret i64 %4

@@ -13,8 +13,9 @@ entry:
   ret { i64, i64 } %3
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; llvm/optimized/MachOObjectFile.cpp.ll
+; llvm/optimized/WasmObjectFile.cpp.ll
 ; opencv/optimized/trackerSamplerAlgorithm.cpp.ll
 ; postgres/optimized/collationcmds.ll
 ; postgres/optimized/dbcommands.ll

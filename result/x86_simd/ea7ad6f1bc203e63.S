@@ -11,9 +11,9 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 .LCPI2_0:
-	.long	4294967294                      # 0xfffffffe
+	.long	4294967293                      # 0xfffffffd
 func0000000000000002:                   # @func0000000000000002
-	vpbroadcastd	.LCPI2_0(%rip), %xmm1   # xmm1 = [4294967294,4294967294,4294967294,4294967294]
+	vpbroadcastd	.LCPI2_0(%rip), %xmm1   # xmm1 = [4294967293,4294967293,4294967293,4294967293]
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq

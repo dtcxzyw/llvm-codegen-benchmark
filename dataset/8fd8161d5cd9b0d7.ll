@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/f128_to_ui32.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = or disjoint i64 %3, 281474976710656
@@ -30,7 +30,7 @@ entry:
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/intel_pstate.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = or disjoint i64 %3, 4278190080

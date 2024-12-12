@@ -9,11 +9,11 @@
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65534
   %3 = lshr i32 %0, 1
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -21,11 +21,11 @@ entry:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; proxygen/optimized/ResourceStats.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = lshr exact i32 %0, 6
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -55,20 +55,19 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/cutNode.c.ll
 ; hermes/optimized/APInt.cpp.ll
-; linux/optimized/slab_common.ll
 ; llvm/optimized/APInt.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; redis/optimized/ldebug.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = lshr i32 %0, 28
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -79,11 +78,22 @@ entry:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = lshr exact i32 %0, 26
   %4 = icmp eq i32 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/slab_common.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -8
+  %3 = lshr i32 %0, 1
+  %4 = icmp ult i32 %3, %2
   ret i1 %4
 }
 

@@ -15,7 +15,7 @@ entry:
   ret i64 %7
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; draco/optimized/mesh_cleanup.cc.ll
 ; flac/optimized/replaygain.c.ll
 ; grpc/optimized/parsing.cc.ll
@@ -28,7 +28,6 @@ entry:
 ; libwebp/optimized/vp8l_enc.c.ll
 ; libzmq/optimized/radix_tree.cpp.ll
 ; linux/optimized/dm-ioctl.ll
-; linux/optimized/wep.ll
 ; lz4/optimized/lz4hc.c.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll

@@ -1,13 +1,13 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	testl	%edx, %edx
 	cmovel	%edx, %esi
-	cmpb	%dil, %sil
-	setb	%al
+	cmpb	%sil, %dil
+	seta	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	cmovnsl	%esi, %eax
-	cmpb	%dil, %al
-	setb	%al
+	cmpb	%al, %dil
+	seta	%al
 	retq

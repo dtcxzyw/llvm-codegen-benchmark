@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -31,16 +31,46 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_study.ll
-; redis/optimized/listpack.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
+  ret ptr %7
+}
+
+; 4 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/hb-ot-layout.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007c(ptr %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = shl nuw nsw i64 %3, 9
+  %5 = or disjoint i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 6
+  ret ptr %7
+}
+
+; 3 occurrences:
+; php/optimized/pcre2_auto_possess.ll
+; php/optimized/pcre2_jit_compile.ll
+; redis/optimized/listpack.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(ptr %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = shl nuw nsw i64 %3, 8
+  %5 = or disjoint i64 %4, %1
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 -1
   ret ptr %7
 }
 
@@ -54,19 +84,6 @@ entry:
   %5 = or disjoint i64 %4, %1
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 2
-  ret ptr %7
-}
-
-; 1 occurrences:
-; nuklear/optimized/unity.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i64
-  %4 = shl nuw nsw i64 %3, 8
-  %5 = or disjoint i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
 }
 

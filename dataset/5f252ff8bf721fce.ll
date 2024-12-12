@@ -1,8 +1,10 @@
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/src.ll
 ; c3c/optimized/parse_expr.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; icu/optimized/ustrtrns.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; opencv/optimized/FilterTIG.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
@@ -14,7 +16,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 6
   %4 = shl nuw nsw i32 %1, 3
   %5 = add nuw nsw i32 %4, %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -40,7 +42,7 @@ entry:
   %3 = shl nsw i32 %2, 2
   %4 = shl nsw i32 %1, 3
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

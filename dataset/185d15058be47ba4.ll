@@ -28,8 +28,13 @@ entry:
   ret i16 %5
 }
 
-; 1 occurrences:
+; 6 occurrences:
 ; llvm/optimized/AttributorAttributes.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000015(i16 %0, i32 %1) #0 {
 entry:

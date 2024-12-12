@@ -1,32 +1,17 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; cvc5/optimized/core_solver.cpp.ll
 ; gromacs/optimized/block.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; gromacs/optimized/wholemoleculetransform.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
-; pbrt-v4/optimized/aggregates.cpp.ll
-; postgres/optimized/tsvector_op.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
-  ret i1 %3
-}
-
-; 2 occurrences:
-; wireshark/optimized/io_graph_dialog.cpp.ll
-; wireshark/optimized/qcustomplot.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %.unshifted = xor i64 %2, %0
-  %.mask = and i64 %.unshifted, 1152921504606846975
-  %3 = icmp eq i64 %.mask, 0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -39,7 +24,7 @@ entry:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 1
@@ -51,10 +36,10 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/make_map.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 

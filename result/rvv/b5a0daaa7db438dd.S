@@ -13,5 +13,5 @@ func000000000000000e:                   # @func000000000000000e
 	vmfeq.vv	v0, v16, v16
 	vmv.v.i	v24, 0
 	vmerge.vvm	v16, v24, v16, v0
-	vfadd.vv	v8, v16, v8
+	vfadd.vv	v8, v8, v16
 	ret

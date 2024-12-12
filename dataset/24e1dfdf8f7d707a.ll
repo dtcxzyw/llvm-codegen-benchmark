@@ -3,7 +3,7 @@
 ; cmake/optimized/archive_cmdline.c.ll
 ; git/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000cc(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp slt i64 %3, 3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/HeaderAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 2

@@ -14,7 +14,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/memoryobject.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
@@ -23,7 +23,6 @@ entry:
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i8 %0, i1 %1, i1 %2) #0 {
 entry:

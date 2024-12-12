@@ -18,12 +18,6 @@ func0000000000000002:                   # @func0000000000000002
 	leal	(%rdx,%rsi,4), %eax
 	orl	%edi, %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	movl	%esi, %eax
-	shldl	$24, %edx, %eax
-	andl	$-65536, %eax                   # imm = 0xFFFF0000
-	orl	%edi, %eax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	shrl	$8, %edx
 	andl	$65280, %edx                    # imm = 0xFF00

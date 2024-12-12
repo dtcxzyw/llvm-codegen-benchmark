@@ -1,5 +1,7 @@
 
-; 18 occurrences:
+; 20 occurrences:
+; delta-rs/optimized/2yom0llikg21u9sa.ll
+; delta-rs/optimized/4say4x9grcidoih4.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll

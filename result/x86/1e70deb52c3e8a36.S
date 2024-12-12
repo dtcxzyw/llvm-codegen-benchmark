@@ -1,14 +1,14 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	addl	%esi, %edi
 	testb	$7, %dil
 	sete	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	leal	1(%rsi,%rdi), %eax
 	testb	$31, %al
 	sete	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	leal	16960(%rsi,%rdi), %eax
 	andl	$65528, %eax                    # imm = 0xFFF8
 	cmpl	$1000, %eax                     # imm = 0x3E8
@@ -24,12 +24,12 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$3, %dil
 	sete	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	leal	1(%rsi,%rdi), %eax
 	testb	$3, %al
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movl	%esi, %eax
 	subl	%edi, %eax
 	andb	$1, %al
@@ -40,24 +40,24 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$2713, %eax                     # imm = 0xA99
 	setae	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	leal	5(%rsi,%rdi), %eax
 	andl	$7, %eax
 	cmpl	$5, %eax
 	setae	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	leal	1(%rsi,%rdi), %eax
 	andl	$-2147483647, %eax              # imm = 0x80000001
 	cmpl	$1, %eax
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addl	%esi, %edi
 	testb	$3, %dil
 	sete	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	leal	223(%rsi,%rdi), %eax
 	andl	$254, %eax
 	cmpl	$78, %eax

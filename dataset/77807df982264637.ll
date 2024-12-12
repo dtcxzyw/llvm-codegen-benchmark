@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; cpython/optimized/mathmodule.ll
@@ -8,7 +8,6 @@
 ; lightgbm/optimized/objective_function.cpp.ll
 ; minetest/optimized/CCameraSceneNode.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dlag2.c.ll
@@ -16,7 +15,6 @@
 ; openblas/optimized/dlaqtr.c.ll
 ; openblas/optimized/dlasyf.c.ll
 ; openblas/optimized/dlatrs.c.ll
-; openblas/optimized/dspcon.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrsyl3.c.ll

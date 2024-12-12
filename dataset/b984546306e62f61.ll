@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
 ; ruby/optimized/numeric.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 63
   %3 = lshr i64 %0, %2
@@ -34,22 +34,11 @@ entry:
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = lshr i64 %0, %2
   %4 = icmp eq i64 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = lshr i64 %0, %2
-  %4 = icmp ugt i64 %3, 1
   ret i1 %4
 }
 
@@ -59,7 +48,7 @@ entry:
 ; meshlab/optimized/save_project.cpp.ll
 ; yosys/optimized/ice40_braminit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = lshr i64 %0, %2

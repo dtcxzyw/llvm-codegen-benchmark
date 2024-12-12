@@ -6,7 +6,7 @@ define i32 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 7
   %.masked = and i16 %0, 31
-  %3 = or i16 %2, %.masked
+  %3 = or i16 %.masked, %2
   %4 = zext nneg i16 %3 to i32
   ret i32 %4
 }

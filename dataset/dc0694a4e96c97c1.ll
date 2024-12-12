@@ -1,10 +1,12 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; llvm/optimized/Decl.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i8
   %2 = and i8 %1, 7

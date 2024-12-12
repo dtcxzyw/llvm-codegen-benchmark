@@ -10,22 +10,18 @@
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
-; 6 occurrences:
-; graphviz/optimized/graph_generator.c.ll
+; 2 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
-; openblas/optimized/dgetsqrhrt.c.ll
-; openblas/optimized/dgsvj0.c.ll
-; openblas/optimized/dgsvj1.c.ll
-; quest/optimized/QuEST_validation.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp samesign ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -40,47 +36,60 @@ entry:
 ; openspiel/optimized/chess_common.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
-; 1 occurrences:
-; recastnavigation/optimized/RecastContour.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %1, %1
-  %3 = icmp ult i32 %2, %0
-  ret i1 %3
-}
-
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/partition.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ult i32 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_area.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000035(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, %1
+  %3 = icmp samesign ule i32 %0, %2
+  ret i1 %3
+}
+
+; 3 occurrences:
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_indev.ll
+; recastnavigation/optimized/RecastContour.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, %1
+  %3 = icmp samesign ugt i32 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/domdec_setup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, %1
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
-; 20 occurrences:
+; 24 occurrences:
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
 ; coreutils-rs/optimized/2bbkfa91qbgc61wj.ll
 ; coreutils-rs/optimized/2qo70e4zd6mgrgtt.ll
@@ -101,11 +110,15 @@ entry:
 ; wasmtime-rs/optimized/2mkio291uuli263d.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/3yirtpiqdnll1kue.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, %1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -113,10 +126,10 @@ entry:
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, %1
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 
@@ -124,10 +137,10 @@ entry:
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, %1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -137,31 +150,43 @@ entry:
 ; openspiel/optimized/cursor_go.cc.ll
 ; openspiel/optimized/go.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, %1
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ult i32 %0, %2
   ret i1 %3
 }
 
-; 2 occurrences:
-; opencv/optimized/AKAZEFeatures.cpp.ll
+; 1 occurrences:
 ; opencv/optimized/qrcode_reader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
+  ret i1 %3
+}
+
+; 4 occurrences:
+; graphviz/optimized/graph_generator.c.ll
+; openblas/optimized/dgsvj0.c.ll
+; openblas/optimized/dgsvj1.c.ll
+; quest/optimized/QuEST_validation.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, %1
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -172,7 +197,17 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; tomlplusplus/optimized/toml.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, %1
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 

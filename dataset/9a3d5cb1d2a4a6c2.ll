@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 28 occurrences:
 ; clamav/optimized/kwajd.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; freetype/optimized/autofit.c.ll
@@ -10,6 +10,7 @@
 ; linux/optimized/protocol.ll
 ; llvm/optimized/SummaryBasedOptimizations.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; ockam-rs/optimized/27nutj9k22uohtyi.ll
@@ -26,6 +27,7 @@
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wireshark/optimized/editcap.c.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i16 %0) #0 {
 entry:

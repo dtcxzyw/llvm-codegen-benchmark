@@ -1,4 +1,12 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000f4:                   # @func00000000000000f4
+	movzbl	%dl, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	cmpl	$12, %eax
+	setb	%al
+	orb	%dil, %al
+	retq
+func00000000000000e1:                   # @func00000000000000e1
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	orl	%esi, %eax
@@ -6,21 +14,21 @@ func0000000000000071:                   # @func0000000000000071
 	sete	%al
 	orb	%dil, %al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	movzbl	%dl, %eax
 	shll	$6, %eax
 	orl	%esi, %eax
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000007c:                   # @func000000000000007c
+func00000000000000ec:                   # @func00000000000000ec
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	orl	%esi, %eax
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000d8:                   # @func00000000000000d8
 	movzbl	%dl, %eax
 	shll	$4, %eax
 	orl	%esi, %eax
@@ -28,18 +36,18 @@ func0000000000000068:                   # @func0000000000000068
 	setae	%al
 	orb	%dil, %al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	shll	$27, %edx
 	orl	%esi, %edx
 	negl	%edx
 	seto	%al
 	orb	%dil, %al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000f8:                   # @func00000000000000f8
 	movzbl	%dl, %eax
-	shll	$16, %eax
+	shll	$8, %eax
 	orl	%esi, %eax
-	cmpl	$8388609, %eax                  # imm = 0x800001
+	cmpl	$65537, %eax                    # imm = 0x10001
 	setae	%al
 	orb	%dil, %al
 	retq

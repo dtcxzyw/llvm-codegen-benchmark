@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; folly/optimized/json.cpp.ll
+; llvm/optimized/SanitizerArgs.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
@@ -13,7 +14,7 @@ entry:
   %3 = and i64 %2, 128
   %4 = xor i64 %3, 128
   %5 = and i64 %4, %1
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -28,7 +29,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }

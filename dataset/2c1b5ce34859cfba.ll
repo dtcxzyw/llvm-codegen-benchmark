@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 71 occurrences:
 ; abc/optimized/giaSim.c.ll
 ; abseil-cpp/optimized/crc.cc.ll
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
@@ -29,7 +29,6 @@
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; llvm/optimized/MustExecute.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
@@ -71,13 +70,12 @@
 ; pcg-cpp/optimized/use-partytrick.cpp.ll
 ; postgres/optimized/network.ll
 ; protobuf/optimized/lexer.cc.ll
-; rand-rs/optimized/3wentbx1vl0iwznb.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 27
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -91,7 +89,7 @@ entry:
 define i32 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 61
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -102,7 +100,7 @@ entry:
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }

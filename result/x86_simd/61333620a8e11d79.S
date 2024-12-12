@@ -65,7 +65,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpaddb	.LCPI2_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	vpslld	$16, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.byte	248                             # 0xf8
@@ -90,7 +90,14 @@ func0000000000000005:                   # @func0000000000000005
 	vpslld	$24, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	retq
-.LCPI4_0:
+func000000000000000f:                   # @func000000000000000f
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpsubb	%xmm2, %xmm1, %xmm1
+	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI5_0:
 	.byte	16                              # 0x10
 	.byte	16                              # 0x10
 	.byte	16                              # 0x10
@@ -108,12 +115,12 @@ func0000000000000005:                   # @func0000000000000005
 	.zero	1
 	.zero	1
 func0000000000000026:                   # @func0000000000000026
-	vpaddb	.LCPI4_0(%rip), %xmm1, %xmm1
+	vpaddb	.LCPI5_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	vpslld	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	retq
-.LCPI5_0:
+.LCPI6_0:
 	.byte	48                              # 0x30
 	.byte	48                              # 0x30
 	.byte	48                              # 0x30
@@ -131,7 +138,7 @@ func0000000000000026:                   # @func0000000000000026
 	.zero	1
 	.zero	1
 func000000000000003f:                   # @func000000000000003f
-	vpaddb	.LCPI5_0(%rip), %xmm1, %xmm1
+	vpaddb	.LCPI6_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	vpslld	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0

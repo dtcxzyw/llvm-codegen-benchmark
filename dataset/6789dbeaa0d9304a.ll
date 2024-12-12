@@ -50,7 +50,6 @@
 ; gromacs/optimized/pme_error.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -188,6 +187,7 @@
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

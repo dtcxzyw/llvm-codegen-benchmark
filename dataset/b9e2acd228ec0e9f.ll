@@ -13,7 +13,7 @@
 define i32 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -34,7 +34,7 @@ entry:
 define i32 @func000000000000003c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -51,7 +51,7 @@ entry:
 define i32 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -65,13 +65,13 @@ entry:
 define i32 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
 
-; 37 occurrences:
+; 26 occurrences:
 ; cmake/optimized/ntlm.c.ll
 ; curl/optimized/libcurl_la-ntlm.ll
 ; libwebp/optimized/syntax_enc.c.ll
@@ -89,17 +89,6 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
-; openblas/optimized/dgemv_thread_n.c.ll
-; openblas/optimized/dsbmv_thread_L.c.ll
-; openblas/optimized/dsbmv_thread_U.c.ll
-; openblas/optimized/dtbmv_thread_NLN.c.ll
-; openblas/optimized/dtbmv_thread_NLU.c.ll
-; openblas/optimized/dtbmv_thread_NUN.c.ll
-; openblas/optimized/dtbmv_thread_NUU.c.ll
-; openblas/optimized/dtbmv_thread_TLN.c.ll
-; openblas/optimized/dtbmv_thread_TLU.c.ll
-; openblas/optimized/dtbmv_thread_TUN.c.ll
-; openblas/optimized/dtbmv_thread_TUU.c.ll
 ; openjdk/optimized/multnode.ll
 ; openjdk/optimized/output.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
@@ -113,35 +102,45 @@ entry:
 define i32 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
 
-; 2 occurrences:
+; 13 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; openblas/optimized/dgemv_thread_n.c.ll
+; openblas/optimized/dsbmv_thread_L.c.ll
+; openblas/optimized/dsbmv_thread_U.c.ll
+; openblas/optimized/dtbmv_thread_NLN.c.ll
+; openblas/optimized/dtbmv_thread_NLU.c.ll
+; openblas/optimized/dtbmv_thread_NUN.c.ll
+; openblas/optimized/dtbmv_thread_NUU.c.ll
+; openblas/optimized/dtbmv_thread_TLN.c.ll
+; openblas/optimized/dtbmv_thread_TLU.c.ll
+; openblas/optimized/dtbmv_thread_TUN.c.ll
+; openblas/optimized/dtbmv_thread_TUU.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; arrow/optimized/align_util.cc.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; brotli/optimized/backward_references_hq.c.ll
-; openblas/optimized/dgbmv_thread_t.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -154,7 +153,7 @@ entry:
 define i32 @func000000000000002c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -166,7 +165,7 @@ entry:
 define i32 @func000000000000003f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
@@ -181,7 +180,7 @@ entry:
 define i32 @func000000000000007c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -197,7 +196,7 @@ entry:
 define i32 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -209,7 +208,7 @@ entry:
 define i32 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
@@ -221,7 +220,7 @@ entry:
 define i32 @func0000000000000075(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = trunc nsw i64 %5 to i32
   ret i32 %6
@@ -233,7 +232,7 @@ entry:
 define i32 @func000000000000007f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
@@ -245,7 +244,7 @@ entry:
 define i32 @func0000000000000036(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = trunc nuw i64 %5 to i32
   ret i32 %6
@@ -261,7 +260,7 @@ entry:
 define i32 @func0000000000000040(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -275,8 +274,8 @@ entry:
 define i32 @func0000000000000030(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = add i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -287,7 +286,7 @@ entry:
 define i32 @func000000000000007d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   %6 = trunc nsw i64 %5 to i32
   ret i32 %6

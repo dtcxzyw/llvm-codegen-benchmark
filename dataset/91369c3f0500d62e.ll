@@ -1,6 +1,6 @@
 
-%"class.openvdb::v11_0::tree::NodeUnion.837.2603921" = type { %union.anon.838.2603922 }
-%union.anon.838.2603922 = type { ptr }
+%"class.openvdb::v11_0::tree::NodeUnion.837.2717377" = type { %union.anon.838.2717378 }
+%union.anon.838.2717378 = type { ptr }
 
 ; 12 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -16,11 +16,11 @@
 ; openvdb/optimized/Prune.cc.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, double %1, double %2) #0 {
+define ptr @func000000000000006b(ptr %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp uge double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw double, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -30,11 +30,11 @@ entry:
 ; openvdb/optimized/Prune.cc.ll
 ; z3/optimized/smt_lookahead.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, double %1, double %2) #0 {
+define ptr @func000000000000005b(ptr %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ule double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw %"class.openvdb::v11_0::tree::NodeUnion.837.2603921", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.openvdb::v11_0::tree::NodeUnion.837.2717377", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -44,22 +44,22 @@ entry:
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, double %1, double %2) #0 {
+define ptr @func0000000000000013(ptr %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw { double, { { { i64, ptr }, i64 } } }, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw { double, { { { i64, ptr }, i64 } } }, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, double %1, double %2) #0 {
+define ptr @func0000000000000023(ptr %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw double, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
   ret ptr %5
 }
 

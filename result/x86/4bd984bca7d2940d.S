@@ -1,8 +1,7 @@
 func0000000000000064:                   # @func0000000000000064
-	movl	%esi, %eax
-	sarl	$31, %eax
-	andl	$360, %eax                      # imm = 0x168
-	addl	%edi, %eax
+	leal	(%rdi,%rsi), %eax
+	sarl	$31, %esi
+	andl	$360, %esi                      # imm = 0x168
 	addl	%esi, %eax
 	retq
 func0000000000000060:                   # @func0000000000000060

@@ -1,7 +1,9 @@
 
-; 95 occurrences:
+; 98 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/giaSimBase.c.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cpython/optimized/dtoa.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -13,7 +15,6 @@
 ; git/optimized/read-cache.ll
 ; graphviz/optimized/hedges.c.ll
 ; gromacs/optimized/bonded.cpp.ll
-; gromacs/optimized/eigensolver.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/matio.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
@@ -25,6 +26,9 @@
 ; libwebp/optimized/backward_references_enc.c.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_pstate.ll
+; lvgl/optimized/lv_animimage.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -49,7 +53,6 @@
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; openblas/optimized/dbbcsd.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
@@ -103,7 +106,7 @@ entry:
   ret i32 %4
 }
 
-; 87 occurrences:
+; 89 occurrences:
 ; abc/optimized/abcAuto.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcCas.c.ll
@@ -121,6 +124,8 @@ entry:
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/ioWriteBlifMv.c.ll
 ; abc/optimized/ioWritePla.c.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cpython/optimized/dtoa.ll
 ; git/optimized/archive-tar.ll
 ; git/optimized/archive.ll
@@ -199,14 +204,13 @@ entry:
   ret i32 %4
 }
 
-; 35 occurrences:
+; 32 occurrences:
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; clamav/optimized/cvd.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cvc5/optimized/iand_solver.cpp.ll
 ; cvc5/optimized/int_blaster.cpp.ll
-; darktable/optimized/Cr2Decoder.cpp.ll
 ; flac/optimized/metadata_iterators.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -215,24 +219,22 @@ entry:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hwloc/optimized/bitmap.ll
-; icu/optimized/ucptrie.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_tabview.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-var.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
 ; slurm/optimized/job_mgr.ll
-; wireshark/optimized/packet-sigcomp.c.ll
-; wireshark/optimized/tvbuff.c.ll
 ; z3/optimized/dl_mk_synchronize.cpp.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
@@ -243,8 +245,7 @@ entry:
   ret i32 %4
 }
 
-; 14 occurrences:
-; abc/optimized/fretTime.c.ll
+; 13 occurrences:
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; git/optimized/xhistogram.ll
 ; hdf5/optimized/H5Odtype.c.ll
@@ -262,6 +263,20 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %0, %2
+  %4 = select i1 %3, i32 %0, i32 %1
+  ret i32 %4
+}
+
+; 5 occurrences:
+; darktable/optimized/Cr2Decoder.cpp.ll
+; icu/optimized/ucptrie.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; wireshark/optimized/packet-sigcomp.c.ll
+; wireshark/optimized/tvbuff.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %0, %2
   %4 = select i1 %3, i32 %0, i32 %1
   ret i32 %4
 }
@@ -286,6 +301,16 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; abc/optimized/fretTime.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %0, %2
+  %4 = select i1 %3, i32 %0, i32 %1
+  ret i32 %4
+}
+
 ; 6 occurrences:
 ; abc/optimized/trees.c.ll
 ; cmake/optimized/trees.c.ll
@@ -301,14 +326,13 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; regex-rs/optimized/4c1ya9idnqcg8t0f.ll
 ; ripgrep-rs/optimized/nfnpl33n8tyk5ff.ll
-; wireshark/optimized/pcap-common.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %.not = icmp ult i32 %0, %2
+  %.not = icmp samesign ult i32 %0, %2
   %3 = select i1 %.not, i32 %1, i32 %0
   ret i32 %3
 }
@@ -319,6 +343,16 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp ugt i32 %0, %2
+  %3 = select i1 %.not, i32 %1, i32 %0
+  ret i32 %3
+}
+
+; 1 occurrences:
+; wireshark/optimized/pcap-common.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %.not = icmp ult i32 %0, %2
   %3 = select i1 %.not, i32 %1, i32 %0
   ret i32 %3
 }

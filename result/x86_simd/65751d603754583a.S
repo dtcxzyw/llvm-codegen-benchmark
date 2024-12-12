@@ -32,7 +32,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpaddb	.LCPI0_0(%rip), %xmm2, %xmm3
 	vpcmpltub	.LCPI0_1(%rip), %xmm3, %k1
 	vpmovsxbd	%xmm2, %ymm2

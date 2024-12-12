@@ -17,25 +17,20 @@ entry:
   %2 = and i64 %1, 4294967294
   %3 = icmp eq i64 %2, 14
   %4 = zext i1 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 16 occurrences:
+; 11 occurrences:
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openusd/optimized/testSdfPathTable.cpp.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; Function Attrs: nounwind
@@ -44,7 +39,7 @@ entry:
   %2 = and i64 %1, 65535
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -57,7 +52,7 @@ entry:
   %2 = and i64 %1, 120
   %3 = icmp eq i64 %2, 24
   %4 = zext i1 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -75,7 +70,7 @@ entry:
   %2 = and i64 %1, 4261412864
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

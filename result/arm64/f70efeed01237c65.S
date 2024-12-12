@@ -1,4 +1,4 @@
-func000000000000000a:                   // @func000000000000000a
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	cmp	x1, #0
                                         // kill: def $w2 killed $w2 def $x2

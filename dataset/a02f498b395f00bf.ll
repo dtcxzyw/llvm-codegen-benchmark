@@ -1,11 +1,10 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/difradix2.ll
 ; cpython/optimized/xmlparse.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/pt.ll
 ; qemu/optimized/audio_audio.c.ll
 ; spdlog/optimized/async.cpp.ll

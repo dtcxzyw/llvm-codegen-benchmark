@@ -120,6 +120,13 @@ func0000000000000043:                   # @func0000000000000043
 	vmfle.vv	v16, v8, v12
 	vmnot.m	v0, v16
 	ret
+func000000000000004d:                   # @func000000000000004d
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vv	v0, v16, v12
+	vmerge.vvm	v12, v16, v12, v0
+	vmflt.vv	v16, v12, v8
+	vmnot.m	v0, v16
+	ret
 func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v16, v12
@@ -172,13 +179,6 @@ func0000000000000048:                   # @func0000000000000048
 func000000000000002d:                   # @func000000000000002d
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v12, v16
-	vmerge.vvm	v12, v16, v12, v0
-	vmflt.vv	v16, v12, v8
-	vmnot.m	v0, v16
-	ret
-func000000000000004d:                   # @func000000000000004d
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vv	v0, v16, v12
 	vmerge.vvm	v12, v16, v12, v0
 	vmflt.vv	v16, v12, v8
 	vmnot.m	v0, v16

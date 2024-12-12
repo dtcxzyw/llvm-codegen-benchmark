@@ -1,13 +1,13 @@
 func0000000000000005:                   # @func0000000000000005
 	notl	%edx
-	cmpl	%esi, %edx
-	setae	%al
+	cmpl	%edx, %esi
+	setbe	%al
 	andb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	notl	%edx
-	cmpl	%esi, %edx
-	setg	%al
+	cmpl	%edx, %esi
+	setl	%al
 	andb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -29,7 +29,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	$255, %edx
-	cmpl	%esi, %edx
-	setl	%al
+	cmpl	%edx, %esi
+	setg	%al
 	andb	%dil, %al
 	retq

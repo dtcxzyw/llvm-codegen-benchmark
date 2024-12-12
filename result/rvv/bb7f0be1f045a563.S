@@ -28,7 +28,7 @@ func000000000000000c:                   # @func000000000000000c
 	bseti	a0, zero, 50
 	vand.vx	v12, v12, a0
 	bseti	a0, zero, 59
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret

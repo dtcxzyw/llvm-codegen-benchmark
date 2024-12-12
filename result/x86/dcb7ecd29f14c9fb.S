@@ -1,7 +1,7 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subq	%rdx, %rsi
 	sarq	$4, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	cmovneq	%rdi, %rax
 	retq

@@ -14,5 +14,5 @@ func0000000000000006:                   # @func0000000000000006
 	slli	a0, a0, 24
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v10, v12, a0, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

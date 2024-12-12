@@ -32,3 +32,14 @@ func000000000000000f:                   # @func000000000000000f
 	movabsq	$4294967296, %rax               # imm = 0x100000000
 	subq	%rcx, %rax
 	retq
+func0000000000000009:                   # @func0000000000000009
+	leaq	15(%rdi), %rax
+	andq	$-16, %rax
+	negq	%rax
+	retq
+func000000000000000b:                   # @func000000000000000b
+	addl	$1024, %edi                     # imm = 0x400
+	andl	$8191, %edi                     # imm = 0x1FFF
+	movl	$8192, %eax                     # imm = 0x2000
+	subq	%rdi, %rax
+	retq

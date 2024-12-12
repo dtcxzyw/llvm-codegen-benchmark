@@ -1,12 +1,14 @@
 
-; 133 occurrences:
+; 137 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/utilSort.c.ll
 ; arrow/optimized/key_map.cc.ll
+; boost/optimized/message.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/unsp.c.ll
+; cpython/optimized/dtoa.ll
 ; darktable/optimized/CiffEntry.cpp.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
@@ -17,6 +19,7 @@
 ; freetype/optimized/sdf.c.ll
 ; git/optimized/pack-bitmap.ll
 ; hermes/optimized/APInt.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
 ; hermes/optimized/Sorting.cpp.ll
 ; hwloc/optimized/cpukinds.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -32,7 +35,6 @@
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/nsutils.ll
 ; linux/optimized/pt.ll
-; linux/optimized/rss.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/uncore_snb.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -111,6 +113,7 @@
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; ruby/optimized/util.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; velox/optimized/MmapAllocator.cpp.ll
@@ -133,10 +136,11 @@
 ; z3/optimized/smt_justification.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 2
+  %2 = shl i32 %1, 20
   %3 = add i32 %2, %0
   %4 = zext i32 %3 to i64
   ret i64 %4
@@ -155,14 +159,13 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; clamav/optimized/ishield.c.ll
 ; clamav/optimized/pe.c.ll
 ; freetype/optimized/truetype.c.ll
 ; icu/optimized/ucnvmbcs.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/exnames.ll
-; linux/optimized/tbxfroot.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; qemu/optimized/hw_audio_ac97.c.ll
 ; qemu/optimized/hw_pci_msix.c.ll
@@ -171,7 +174,7 @@ entry:
 define i64 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -187,7 +190,7 @@ entry:
   ret i64 %4
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; bullet3/optimized/b3Solver.ll
 ; cpython/optimized/mathmodule.ll
 ; freetype/optimized/sfnt.c.ll
@@ -227,7 +230,6 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; openjdk/optimized/hb-ucd.ll
 ; openjdk/optimized/hb-unicode.ll
-; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/othello.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; openusd/optimized/grain_synthesis.c.ll
@@ -243,7 +245,7 @@ entry:
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -280,7 +282,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -292,7 +294,7 @@ entry:
 define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 8
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -309,7 +311,8 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/src.ll
 ; freetype/optimized/sfnt.c.ll
 ; nori/optimized/layout.cpp.ll
 ; nori/optimized/tabwidget.cpp.ll
@@ -325,7 +328,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 8
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -359,7 +362,7 @@ entry:
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -400,6 +403,27 @@ entry:
   ret i64 %4
 }
 
+; 11 occurrences:
+; opencv/optimized/find_ellipses.cpp.ll
+; xgboost/optimized/charconv.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 21
+  %3 = add nsw i32 %0, %2
+  %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
 ; 2 occurrences:
 ; graphviz/optimized/constrained_majorization_ipsep.c.ll
 ; icu/optimized/package.ll
@@ -420,18 +444,6 @@ entry:
   %2 = shl nuw i32 %1, 1
   %3 = add i32 %2, %0
   %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 2 occurrences:
-; opencv/optimized/find_ellipses.cpp.ll
-; xgboost/optimized/charconv.cc.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 15
-  %3 = add nsw i32 %2, %0
-  %4 = zext i32 %3 to i64
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; bullet3/optimized/poly34.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_splittoning.c.ll
@@ -20,6 +20,7 @@
 ; spike/optimized/vzext_vf2.ll
 ; spike/optimized/vzext_vf4.ll
 ; spike/optimized/vzext_vf8.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0) #0 {
 entry:
@@ -28,7 +29,7 @@ entry:
   ret i1 %2
 }
 
-; 140 occurrences:
+; 141 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
@@ -68,6 +69,7 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/filter_camera.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -85,7 +87,6 @@ entry:
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/guiChatConsole.cpp.ll
 ; minetest/optimized/player_sao.cpp.ll
-; minetest/optimized/server.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
@@ -168,6 +169,7 @@ entry:
 ; spike/optimized/vzext_vf8.ll
 ; stb/optimized/stb_truetype.c.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0) #0 {
@@ -177,7 +179,9 @@ entry:
   ret i1 %2
 }
 
-; 104 occurrences:
+; 105 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btHingeConstraint.ll
 ; bullet3/optimized/btMultiBodySphericalJointLimit.ll
@@ -233,7 +237,6 @@ entry:
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/mapgen_v7.cpp.ll
 ; minetest/optimized/player_sao.cpp.ll
-; minetest/optimized/server.cpp.ll
 ; minetest/optimized/sky.cpp.ll
 ; mitsuba3/optimized/blender.cpp.ll
 ; mitsuba3/optimized/constant.cpp.ll
@@ -330,7 +333,6 @@ entry:
 ; oiio/optimized/maketexture.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/color_hsv.dispatch.cpp.ll
-; opencv/optimized/weighted_median_filter.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openusd/optimized/dualQuath.cpp.ll
@@ -344,6 +346,7 @@ entry:
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(float %0) #0 {
 entry:

@@ -11,6 +11,6 @@ func0000000000000003:                   # @func0000000000000003
 	leaq	(%rsi,%rdi), %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	xorl	$16777215, %esi                 # imm = 0xFFFFFF
+	notl	%esi
 	leaq	(%rsi,%rdi), %rax
 	retq

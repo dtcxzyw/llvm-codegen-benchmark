@@ -26,8 +26,7 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; darktable/optimized/jpeg.c.ll
+; 3 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll

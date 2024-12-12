@@ -1,4 +1,4 @@
-func00000000000000a1:                   // @func00000000000000a1
+func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
 	tst	w2, #0x1
 	mov	w8, #16                         // =0x10
@@ -9,7 +9,17 @@ func00000000000000a1:                   // @func00000000000000a1
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000ac:                   // @func00000000000000ac
+func0000000000000164:                   // @func0000000000000164
+// %bb.0:                               // %entry
+	tst	w2, #0x1
+	add	x8, x0, #3
+	sub	x9, x1, #2
+	csinc	x8, x8, x0, ne
+	cmp	x8, x9
+	cset	w0, lo
+	ret
+                                        // -- End function
+func00000000000001ec:                   // @func00000000000001ec
 // %bb.0:                               // %entry
 	tst	w2, #0x1
 	mov	w8, #8                          // =0x8
@@ -31,17 +41,6 @@ func0000000000000001:                   // @func0000000000000001
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000a4:                   // @func00000000000000a4
-// %bb.0:                               // %entry
-	tst	w2, #0x1
-	mov	w8, #4                          // =0x4
-	sub	x9, x1, #1
-	csel	x8, x8, xzr, ne
-	add	x8, x0, x8
-	cmp	x8, x9
-	cset	w0, lo
-	ret
-                                        // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	tst	w2, #0x1
@@ -53,7 +52,7 @@ func0000000000000008:                   // @func0000000000000008
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000025:                   // @func0000000000000025
+func0000000000000065:                   // @func0000000000000065
 // %bb.0:                               // %entry
 	tst	w2, #0x1
 	add	x8, x0, #4
@@ -63,7 +62,7 @@ func0000000000000025:                   // @func0000000000000025
 	cset	w0, ls
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
 	tst	w2, #0x1
 	add	x8, x0, #4

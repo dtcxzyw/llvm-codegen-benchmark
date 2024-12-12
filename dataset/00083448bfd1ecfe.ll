@@ -1,9 +1,11 @@
 
-; 26 occurrences:
+; 28 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; graphviz/optimized/htmltable.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
+; lvgl/optimized/lv_draw_label.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
@@ -31,7 +33,7 @@ define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = sdiv i8 %1, 4
   %3 = sext i8 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

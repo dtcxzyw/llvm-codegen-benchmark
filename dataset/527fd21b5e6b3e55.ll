@@ -1,5 +1,6 @@
 
-; 20 occurrences:
+; 21 occurrences:
+; boost/optimized/operations.ll
 ; c3c/optimized/parse_expr.c.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; icu/optimized/collation.ll
@@ -24,8 +25,8 @@
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = or i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = or i32 %1, %3
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -45,7 +46,7 @@ entry:
   ret i32 %5
 }
 
-; 50 occurrences:
+; 52 occurrences:
 ; c3c/optimized/build_options.c.ll
 ; c3c/optimized/c_abi.c.ll
 ; c3c/optimized/symtab.c.ll
@@ -55,6 +56,7 @@ entry:
 ; cmake/optimized/alone_encoder.c.ll
 ; cmake/optimized/core.c.ll
 ; cmake/optimized/lz_encoder.c.ll
+; cmake/optimized/lzma2_encoder.c.ll
 ; flac/optimized/metadata_iterators.c.ll
 ; git/optimized/delta-islands.ll
 ; git/optimized/object-file.ll
@@ -65,6 +67,7 @@ entry:
 ; icu/optimized/ucnvscsu.ll
 ; libuv/optimized/core.c.ll
 ; linux/optimized/hdac_stream.ll
+; linux/optimized/huf_decompress.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
@@ -100,8 +103,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = or i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = or i32 %1, %3
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -117,7 +120,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 16384
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -157,16 +160,15 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 63
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
-; linux/optimized/huf_decompress.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
@@ -174,7 +176,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 16
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -186,7 +188,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -2097152
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -198,8 +200,8 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -33554432
-  %4 = or disjoint i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = or disjoint i32 %1, %3
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

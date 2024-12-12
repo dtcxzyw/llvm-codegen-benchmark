@@ -86,7 +86,7 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; git/optimized/transport.ll
 ; icu/optimized/utf8collationiterator.ll
 ; libjpeg-turbo/optimized/jcprepct.c.ll
@@ -94,6 +94,7 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; openjdk/optimized/LCMS.ll
 ; openjdk/optimized/jcprepct.ll
+; openspiel/optimized/2048.cc.ll
 ; openusd/optimized/matrix4d.cpp.ll
 ; openusd/optimized/matrix4f.cpp.ll
 ; wireshark/optimized/packet-ieee1722.c.ll

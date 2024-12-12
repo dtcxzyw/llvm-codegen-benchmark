@@ -1,5 +1,8 @@
 
-%"class.llvm::Use.2974764" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::MCInstrDesc.3158503" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::Use.3168253" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3321779" = type { ptr, ptr, ptr, ptr }
+%"class.sat::literal.3631586" = type { i32 }
 
 ; 2 occurrences:
 ; ruby/optimized/vm.ll
@@ -15,15 +18,9 @@ entry:
   ret ptr %7
 }
 
-; 15 occurrences:
+; 9 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
-; clamav/optimized/petite.c.ll
 ; cmake/optimized/lzma_encoder.c.ll
-; icu/optimized/normalizer2impl.ll
-; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
-; llvm/optimized/User.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
@@ -32,20 +29,17 @@ entry:
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000016a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000016b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -20
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
-; 17 occurrences:
-; cmake/optimized/lz_encoder_mf.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
-; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
+; 13 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/AArch64MCTargetDesc.cpp.ll
@@ -59,15 +53,14 @@ entry:
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; opencc/optimized/tail.cc.ll
-; z3/optimized/goal2sat.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000006f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 1
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -84,17 +77,59 @@ entry:
   ret ptr %7
 }
 
+; 1 occurrences:
+; clamav/optimized/petite.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000016e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 84
+  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 3 occurrences:
+; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000016f(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3158503", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 32
+  %7 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3158503", ptr %6, i64 %0
+  ret ptr %7
+}
+
 ; 2 occurrences:
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000168(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000016c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.2974764", ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 32
+  %5 = getelementptr nusw %"class.llvm::Use.3168253", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 32
   %7 = getelementptr i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 2 occurrences:
+; icu/optimized/normalizer2impl.ll
+; llvm/optimized/User.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000016a(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw %"class.llvm::Use.3321779", ptr %1, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -8
+  %7 = getelementptr nusw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -108,6 +143,21 @@ entry:
   %5 = getelementptr i16, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -2
   %7 = getelementptr i16, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 3 occurrences:
+; cmake/optimized/lz_encoder_mf.c.ll
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; z3/optimized/goal2sat.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw %"class.sat::literal.3631586", ptr %1, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -4
+  %7 = getelementptr nusw nuw %"class.sat::literal.3631586", ptr %6, i64 %0
   ret ptr %7
 }
 

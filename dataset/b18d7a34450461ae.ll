@@ -38,17 +38,6 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/erfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(double %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ult i64 %1, %2
-  %4 = fcmp uno double %0, 0.000000e+00
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/erfilter.cpp.ll
-; Function Attrs: nounwind
 define i1 @func0000000000000061(double %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2

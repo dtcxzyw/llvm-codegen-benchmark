@@ -29,22 +29,17 @@ func00000000000000d0:                   # @func00000000000000d0
 	add	a0, a0, a2
 	sh2add	a0, a1, a0
 	ret
-func00000000000001fa:                   # @func00000000000001fa
+func00000000000001ff:                   # @func00000000000001ff
 	sext.w	a2, a2
 	sh3add	a0, a2, a0
 	sh2add	a0, a1, a0
 	ret
-func00000000000001f2:                   # @func00000000000001f2
-	sext.w	a2, a2
-	sh3add	a0, a2, a0
-	sh3add	a0, a1, a0
-	ret
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000ff:                   # @func00000000000000ff
 	slli.uw	a2, a2, 5
 	add	a0, a0, a2
 	sh2add	a0, a1, a0
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ce:                   # @func00000000000000ce
 	sh3add.uw	a0, a2, a0
 	sh3add	a0, a1, a0
 	ret

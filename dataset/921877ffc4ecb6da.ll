@@ -3,7 +3,7 @@
 ; opencv/optimized/boost.cpp.ll
 ; yosys/optimized/calc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002b1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000561(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = select i1 %2, i32 %1, i32 1024

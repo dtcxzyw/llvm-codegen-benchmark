@@ -24,9 +24,8 @@ entry:
   ret double %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/abcExact.c.ll
-; abc/optimized/satUtil.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i64 %0) #0 {
 entry:

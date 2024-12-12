@@ -1,6 +1,7 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; folly/optimized/dynamic.cpp.ll
 ; icu/optimized/double-conversion-strtod.ll
@@ -25,7 +26,7 @@ entry:
   ret i64 %2
 }
 
-; 81 occurrences:
+; 79 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -46,8 +47,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; llvm/optimized/Mangler.cpp.ll
 ; llvm/optimized/PDBFile.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; wireshark/optimized/packet-rpcrdma.c.ll
 ; Function Attrs: nounwind

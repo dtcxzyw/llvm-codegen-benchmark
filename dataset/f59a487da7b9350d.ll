@@ -83,9 +83,10 @@ entry:
   ret i64 %2
 }
 
-; 25 occurrences:
+; 33 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; cmake/optimized/nghttp2_http.c.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
@@ -105,10 +106,17 @@ entry:
 ; redis/optimized/read.ll
 ; redis/optimized/util.ll
 ; sentencepiece/optimized/strutil.cc.ll
+; turborepo-rs/optimized/93lva917qa673k3vktayo9ds8.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wireshark/optimized/packet-cbor.c.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/7jaiv08yt9hrplelvkk8jyr6y.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0) #0 {
 entry:

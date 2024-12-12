@@ -1,6 +1,7 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; assimp/optimized/TerragenLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/sha1.c.ll
 ; duckdb/optimized/ub_duckdb_common_crypto.cpp.ll
 ; flac/optimized/md5.c.ll
@@ -23,12 +24,12 @@
 ; ruby/optimized/sha2.ll
 ; velox/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = sub nuw nsw i32 64, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

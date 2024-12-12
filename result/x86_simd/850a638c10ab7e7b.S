@@ -49,7 +49,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovqb	%ymm0, %xmm1
 	vptestnmq	%ymm0, %ymm0, %k1
 	vmovdqu8	.LCPI2_0(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [8,8,8,8,u,u,u,u,u,u,u,u,u,u,u,u]

@@ -1,5 +1,6 @@
 
-; 19 occurrences:
+; 21 occurrences:
+; boost/optimized/gregorian.ll
 ; clamav/optimized/clamdtop.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -11,6 +12,7 @@
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libdeflate/optimized/deflate_decompress.c.ll
 ; lightgbm/optimized/bin.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; opencv/optimized/brisk.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; ruby/optimized/time.ll
@@ -24,15 +26,16 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = mul i32 %3, 3600
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/gregorian.ll
 ; cpython/optimized/_datetimemodule.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -56,7 +59,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = mul nsw i32 %3, 60
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -80,7 +83,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = mul nsw i32 %3, 6270
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -92,7 +95,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = mul i32 %3, 146097
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -109,13 +112,24 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_math.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = mul i32 %3, 3
+  %5 = add nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/tcp_timer.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
   %4 = mul nuw nsw i32 %3, 120000
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -126,7 +140,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = mul nsw i32 %3, 3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

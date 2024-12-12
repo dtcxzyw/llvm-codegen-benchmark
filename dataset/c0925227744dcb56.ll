@@ -13,13 +13,14 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; ipopt/optimized/IpTNLP.ll
 ; linux/optimized/mac.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; openspiel/optimized/goofspiel.cc.ll
+; php/optimized/pcre2_match.ll
 ; redis/optimized/geo.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1, i1 %2) #0 {
@@ -63,8 +64,7 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; llvm/optimized/IfConversion.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; Function Attrs: nounwind

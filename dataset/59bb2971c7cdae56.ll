@@ -26,7 +26,7 @@
 ; z3/optimized/theory_str_mc.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 24
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 102
@@ -412,7 +412,7 @@ entry:
 ; spike/optimized/vzext_vf4.ll
 ; spike/optimized/vzext_vf8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -430,7 +430,7 @@ entry:
 ; php/optimized/zend_compile.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -444,7 +444,7 @@ entry:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -459,7 +459,7 @@ entry:
 ; linux/optimized/ip_tables.ll
 ; openmpi/optimized/group_bitmap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000198(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -468,30 +468,14 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; linux/optimized/buffer.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000308(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 0
   %5 = icmp ult i32 %0, -3585
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 2 occurrences:
-; lua/optimized/ltable.ll
-; openexr/optimized/IexMathFpu.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %1, %2
-  %4 = icmp eq i32 %3, 0
-  %5 = icmp ugt i32 %0, 1
   %6 = or i1 %5, %4
   ret i1 %6
 }

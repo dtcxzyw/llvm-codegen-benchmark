@@ -1,6 +1,7 @@
 
-; 18 occurrences:
+; 21 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; diesel-rs/optimized/ivb4nc5xs1gnmkx.ll
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
@@ -18,6 +19,8 @@
 ; redis/optimized/pages.sym.ll
 ; syn/optimized/4llvvcm7ykus6q9g.ll
 ; wasmtime-rs/optimized/1y39e8j6qsvzx17r.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -42,7 +45,7 @@ entry:
   ret i1 %6
 }
 
-; 98 occurrences:
+; 163 occurrences:
 ; actix-rs/optimized/2ltm6szalsytk9dh.ll
 ; actix-rs/optimized/3sxbtmgc7txd1oqx.ll
 ; actix-rs/optimized/4fx1675rviyztxx0.ll
@@ -141,8 +144,73 @@ entry:
 ; wasmtime-rs/optimized/fn3cxi5qpl58ixq.ll
 ; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
 ; wasmtime-rs/optimized/r9f6jef0e11b5fk.ll
+; zed-rs/optimized/01k8ewullo09lcfopyq8rjsdt.ll
+; zed-rs/optimized/0b2hqzlwilt32lfvaqs2arfgd.ll
+; zed-rs/optimized/0f9s7n006qx5q3zzvlk0itadj.ll
+; zed-rs/optimized/0fzu5iswc3qhp95jt69713e0a.ll
+; zed-rs/optimized/0iiiyswaig4ii0l3mvzlvi4mz.ll
+; zed-rs/optimized/1774ern7vmjezjfzajsdneavj.ll
+; zed-rs/optimized/17z6n2wor03lzp7xkvyb2v4b8.ll
+; zed-rs/optimized/186ffj9uswcj8t36dkme83b2g.ll
+; zed-rs/optimized/1wjst2j1bd1xnipyz033svz8u.ll
+; zed-rs/optimized/21l0e6jqf9fsvdhf0m08fpd04.ll
+; zed-rs/optimized/26xf9pzubm30qmivlxh5xlprr.ll
+; zed-rs/optimized/2hj9t7h454jk4f0tp9t7ag5me.ll
+; zed-rs/optimized/2pjmz9fmy54g6vkualen6rbg5.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/3ivgs023o40fzbajfmc5q2k7d.ll
+; zed-rs/optimized/3xhm55883r3scomm1we7og3d9.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/4m25zm6spqfgpymm9gqw6hgqq.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/5gmag9o6m5uu0f6cquc455dby.ll
+; zed-rs/optimized/5qba05g0dyedoh8rydwnrszty.ll
+; zed-rs/optimized/5rpya7la6h7ws9z99n4ku3sd5.ll
+; zed-rs/optimized/5s44oz7ztp6o1gjtp6jhzkvc2.ll
+; zed-rs/optimized/6d42odbhkycz47kgdm3jjyh7z.ll
+; zed-rs/optimized/6k04c116ogp35htlpsavpzpvg.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
+; zed-rs/optimized/6y62t1l0cl6f298o8375vczo5.ll
+; zed-rs/optimized/7435o5as5af1nwuofltvv4x7w.ll
+; zed-rs/optimized/7hinjzlj1za97krhks3epxjof.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/7v45b7y7t6bpxkoxn6aktlghb.ll
+; zed-rs/optimized/7yv1dhoybslqchrv8y6qcv567.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8f6s0vmbsrj8amaa2lwvbiw5d.ll
+; zed-rs/optimized/8gg8u2ott7gsi4x0g8ewxmxbb.ll
+; zed-rs/optimized/8l6j9aar0oaoyhr62czfg3g36.ll
+; zed-rs/optimized/8srt4gkb2hpqjmj9hoisciupc.ll
+; zed-rs/optimized/9halndrg3dxenpyuljfpbk2q0.ll
+; zed-rs/optimized/9u70uffa5gnr0a44dt677r86w.ll
+; zed-rs/optimized/asge4ovzpoi4j0hgzjom7idmo.ll
+; zed-rs/optimized/ba1fbg7c0slithvjnvqvkyuvg.ll
+; zed-rs/optimized/bek49q22pl1lleiy0blatoy5a.ll
+; zed-rs/optimized/bg38611xfnz0abj8o6yh866zw.ll
+; zed-rs/optimized/bmmi5kkbn5ov6774do5bqdg37.ll
+; zed-rs/optimized/brfpsqsl3kxc3ngzjjsbjx55x.ll
+; zed-rs/optimized/bulzqzpztuyt0ftkoermh5378.ll
+; zed-rs/optimized/bvs73film05xborh0f0ab3jqk.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cfnzushvu4gqnws49tq7oo9ft.ll
+; zed-rs/optimized/cgxtqkz3q1lf4y8mn1r3vggst.ll
+; zed-rs/optimized/cwm1jtpn2hj5f4ljdx4klnhqs.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
+; zed-rs/optimized/dr3ks0ib80ortjwkcqg0973x1.ll
+; zed-rs/optimized/e1zfulrbe37q5wr8nqo3o1ns6.ll
+; zed-rs/optimized/e2t208u96614zaapml39g6l5s.ll
+; zed-rs/optimized/e5w6l0l6fz7h8sv3vngljw86j.ll
+; zed-rs/optimized/e748565vpp6ojsam8tpc9smdg.ll
+; zed-rs/optimized/ees19hacjiz3y03peze9imi7o.ll
+; zed-rs/optimized/eh70uus3omn48t7itznx7bc3r.ll
+; zed-rs/optimized/ei1t73ixdtixfwk96jtdsqya1.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/enfie1bj6h9p5lyhzskn3992o.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
+; zed-rs/optimized/eyl50e18l6kj3inbixv9y0nwt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 15
   %4 = add i64 %3, %1
@@ -154,7 +222,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %1
@@ -179,7 +247,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -4294967296
   %4 = add nuw nsw i64 %3, %1
@@ -189,10 +257,23 @@ entry:
 }
 
 ; 2 occurrences:
+; cpython/optimized/obmalloc.ll
+; lvgl/optimized/lv_tlsf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 31
+  %4 = add i64 %3, %1
+  %5 = and i64 %4, %0
+  %6 = icmp ult i64 %5, 65536
+  ret i1 %6
+}
+
+; 2 occurrences:
 ; llvm/optimized/DataLayout.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1
@@ -204,7 +285,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SROA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1
@@ -214,9 +295,21 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/SROA.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, -1
+  %4 = add i64 %3, %1
+  %5 = and i64 %4, %0
+  %6 = icmp samesign ult i64 %5, 57
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1
@@ -246,33 +339,40 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nuw nsw i64 %3, %1
   %5 = and i64 %4, %0
-  %6 = icmp ult i64 %5, 513
+  %6 = icmp samesign ult i64 %5, 513
   ret i1 %6
 }
 
-; 15 occurrences:
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
+; 1 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 12
+  %4 = add nuw nsw i64 %3, %1
+  %5 = and i64 %4, %0
+  %6 = icmp samesign ult i64 %5, 513
+  ret i1 %6
+}
+
+; 10 occurrences:
 ; jemalloc/optimized/large.ll
 ; jemalloc/optimized/large.pic.ll
 ; jemalloc/optimized/large.sym.ll
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/large.ll
 ; redis/optimized/large.sym.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %1
@@ -294,7 +394,7 @@ entry:
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %1
@@ -310,7 +410,7 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = add nsw i64 %3, %1
@@ -326,7 +426,7 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = add nsw i64 %3, %1
@@ -342,36 +442,40 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = add nuw nsw i64 %3, %1
   %5 = and i64 %4, %0
-  %6 = icmp ult i64 %5, 4097
+  %6 = icmp samesign ult i64 %5, 4097
+  ret i1 %6
+}
+
+; 5 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, -1
+  %4 = add nsw i64 %3, %1
+  %5 = and i64 %4, %0
+  %6 = icmp samesign ult i64 %5, 4097
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; delta-rs/optimized/4yzqn3zldbxccs8p.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = add nuw i64 %3, %1
   %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; cpython/optimized/obmalloc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, -1
-  %4 = add i64 %3, %1
-  %5 = and i64 %4, %0
-  %6 = icmp ult i64 %5, 1025
   ret i1 %6
 }
 

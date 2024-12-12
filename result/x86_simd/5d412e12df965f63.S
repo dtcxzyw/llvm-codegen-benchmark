@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovb2m	%xmm1, %k0
 	knotw	%k0, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1 {%k1} {z} # ymm1 {%k1} {z} = [18446744073709551608,18446744073709551608,18446744073709551608,18446744073709551608]
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.quad	6                               # 0x6
@@ -27,5 +27,5 @@ func0000000000000003:                   # @func0000000000000003
 	vpmovb2m	%xmm1, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm1   # ymm1 = [6,6,6,6]
 	vpbroadcastq	.LCPI2_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [12,12,12,12]
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq

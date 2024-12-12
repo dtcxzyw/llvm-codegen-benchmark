@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; rocksdb/optimized/flush_job.cc.ll
-; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -11,7 +10,7 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 22 occurrences:
 ; coreutils-rs/optimized/4akyoq84dmd3ywue.ll
 ; cpython/optimized/unicodeobject.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
@@ -31,6 +30,9 @@ entry:
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -40,7 +42,7 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; clap-rs/optimized/thb07xvb2pkztra.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
@@ -56,6 +58,7 @@ entry:
 ; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; velox/optimized/AllocationPool.cpp.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -77,11 +80,14 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 7 occurrences:
 ; clap-rs/optimized/thb07xvb2pkztra.ll
 ; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i64 %1, i64 %2) #0 {
 entry:

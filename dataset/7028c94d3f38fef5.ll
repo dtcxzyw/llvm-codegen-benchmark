@@ -26,12 +26,10 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; linux/optimized/acpi-cpufreq.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/intel_display.ll

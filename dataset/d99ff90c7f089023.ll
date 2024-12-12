@@ -61,7 +61,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -95,7 +95,7 @@ entry:
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; slurm/optimized/reservation.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -108,7 +108,7 @@ entry:
 ; opencv/optimized/grfmt_pam.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -119,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -130,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %0, %1
   %3 = freeze i32 %2

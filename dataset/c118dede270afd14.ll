@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 95 occurrences:
 ; actix-rs/optimized/3afp9uuicyvwgbsz.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; cpython/optimized/obmalloc.ll
@@ -84,6 +84,17 @@
 ; wasmtime-rs/optimized/4y19gy3l28n56lab.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
@@ -92,9 +103,10 @@ entry:
   ret i64 %3
 }
 
-; 111 occurrences:
+; 115 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/histogram.c.ll
 ; bullet3/optimized/b3GpuParallelLinearBvh.ll
@@ -163,6 +175,7 @@ entry:
 ; llvm/optimized/XCore.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; meilisearch-rs/optimized/1cgo24wrkn2cjv53.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; nix/optimized/json-to-value.ll
 ; nlohmann_json/optimized/unit-bjdata.cpp.ll
@@ -203,6 +216,8 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; wireshark/optimized/packet-zebra.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {

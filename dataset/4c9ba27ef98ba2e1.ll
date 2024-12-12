@@ -18,10 +18,10 @@
 ; openexr/optimized/internal_dwa.c.ll
 ; openexr/optimized/pack.c.ll
 ; openexr/optimized/unpack.c.ll
+; openusd/optimized/level.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -36,8 +36,8 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
-  %2 = or i16 %1, %0
-  %3 = or i16 %2, 256
+  %2 = or disjoint i16 %1, 256
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 
@@ -46,8 +46,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
-  %2 = or i16 %1, %0
-  %3 = or i16 %2, 1024
+  %2 = or i16 %1, 1024
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 

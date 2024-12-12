@@ -1,9 +1,10 @@
 
-; 179 occurrences:
+; 180 occurrences:
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatP.c.ll
 ; abc/optimized/giaCTas.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/options_description.ll
 ; cpython/optimized/obmalloc.ll
 ; cvc5/optimized/sequence.cpp.ll
 ; cvc5/optimized/string.cpp.ll

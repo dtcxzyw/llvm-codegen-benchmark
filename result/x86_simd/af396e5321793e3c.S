@@ -6,9 +6,9 @@ func00000000000000b0:                   # @func00000000000000b0
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 func00000000000000db:                   # @func00000000000000db
-	vpsllq	$16, %ymm2, %ymm2
-	vpsrlq	$25, %ymm1, %ymm1
+	vpsllq	$20, %ymm2, %ymm2
+	vpsrlq	$21, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpsrlq	$48, %ymm0, %ymm0
+	vpsrlq	$46, %ymm0, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

@@ -6,7 +6,7 @@
 ; libquic/optimized/deflate.c.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i16 %0, i16 %1) #0 {
+define i64 @func00000000000000c8(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 256
   %3 = icmp ult i16 %0, 256

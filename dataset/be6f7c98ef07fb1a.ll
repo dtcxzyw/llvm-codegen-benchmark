@@ -1,5 +1,5 @@
 
-; 107 occurrences:
+; 108 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; bullet3/optimized/poly34.ll
 ; darktable/optimized/colorpicker.c.ll
@@ -107,6 +107,7 @@
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

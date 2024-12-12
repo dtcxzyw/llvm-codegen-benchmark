@@ -1,14 +1,12 @@
 
-; 73 occurrences:
+; 70 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/dstein.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
 ; gromacs/optimized/sstein.cpp.ll
@@ -30,6 +28,8 @@
 ; linux/optimized/percpu.ll
 ; linux/optimized/uhci-hcd.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_refr.ll
 ; minetest/optimized/profiler.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
@@ -40,7 +40,6 @@
 ; ncnn/optimized/pooling.cpp.ll
 ; ncnn/optimized/pooling1d.cpp.ll
 ; ncnn/optimized/pooling3d.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlagge.c.ll
@@ -48,8 +47,6 @@
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dtbrfs.c.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/emd.cpp.ll
@@ -115,7 +112,7 @@ entry:
   ret i32 %5
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -140,7 +137,6 @@ entry:
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/Codec.cpp.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; opencv/optimized/boostdesc.cpp.ll
 ; opencv/optimized/imagelogpolprojection.cpp.ll
@@ -180,7 +176,7 @@ entry:
   ret i32 %5
 }
 
-; 126 occurrences:
+; 113 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/fraInd.c.ll
 ; bullet3/optimized/MultiBodyTreeImpl.ll
@@ -188,26 +184,14 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
-; gromacs/optimized/dgetf2.cpp.ll
-; gromacs/optimized/dgetrf.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/dlaswp.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
 ; gromacs/optimized/dorgbr.cpp.ll
-; gromacs/optimized/dsytd2.cpp.ll
 ; gromacs/optimized/gmx_sham.cpp.ll
 ; gromacs/optimized/listed_forces.cpp.ll
 ; gromacs/optimized/manage_threading.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
-; gromacs/optimized/sgetrf.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
-; gromacs/optimized/slaswp.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
 ; gromacs/optimized/sorgbr.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; icu/optimized/collation.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libwebp/optimized/anim_encode.c.ll
@@ -264,7 +248,6 @@ entry:
 ; openblas/optimized/dlasyf_rook.c.ll
 ; openblas/optimized/dlatrd.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -316,7 +299,7 @@ entry:
   ret i32 %5
 }
 
-; 65 occurrences:
+; 64 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/timeline.c.ll
@@ -355,7 +338,6 @@ entry:
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlarrv.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
@@ -391,12 +373,11 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/i915_query.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
 ; openjdk/optimized/pngrtran.ll
 ; openusd/optimized/grain_synthesis.c.ll
@@ -529,10 +510,7 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
+; 5 occurrences:
 ; openblas/optimized/dlasd3.c.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
@@ -610,29 +588,6 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul nsw i32 %0, %1
   %5 = add nuw nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 2 occurrences:
-; openblas/optimized/dsbevd.c.ll
-; openblas/optimized/dsbgvd.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul i32 %1, %2
-  %4 = add nuw nsw i32 %0, 1
-  %5 = add nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dtgsna.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = mul i32 %0, %1
-  %5 = add nsw i32 %4, %3
   ret i32 %5
 }
 

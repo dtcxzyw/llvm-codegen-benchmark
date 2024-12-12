@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpgtd	%xmm1, %xmm0, %k1
@@ -21,7 +21,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	.long	2                               # 0x2
 .LCPI2_1:
 	.long	1                               # 0x1
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpltud	%xmm1, %xmm0, %k1
@@ -62,15 +62,5 @@ func0000000000000006:                   # @func0000000000000006
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpbroadcastd	.LCPI5_0(%rip), %xmm0   # xmm0 = [1,1,1,1]
 	vmovdqa32	%xmm1, %xmm0 {%k1}
-	vzeroupper
-	retq
-.LCPI6_0:
-	.long	4068                            # 0xfe4
-func000000000000008a:                   # @func000000000000008a
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpgtd	%xmm1, %xmm0, %k1
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpbroadcastd	.LCPI6_0(%rip), %xmm0 {%k1} # xmm0 {%k1} = [4068,4068,4068,4068]
 	vzeroupper
 	retq

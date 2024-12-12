@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; git/optimized/credential-store.ll
 ; graphviz/optimized/strmatch.c.ll
 ; libwebp/optimized/demux.c.ll
@@ -8,7 +8,6 @@
 ; openssl/optimized/openssl-bin-cms.ll
 ; openssl/optimized/openssl-bin-srp.ll
 ; postgres/optimized/pg_dump.ll
-; proj/optimized/crs.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {
 entry:
@@ -18,10 +17,12 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; cmake/optimized/cover.c.ll
 ; hyperscan/optimized/ng_uncalc_components.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
+; lvgl/optimized/lv_group.ll
+; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openssl/optimized/libdefault-lib-rsa_kmgmt.ll
 ; postgres/optimized/analyzejoins.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll

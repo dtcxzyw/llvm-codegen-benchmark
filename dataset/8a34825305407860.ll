@@ -1,7 +1,6 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; darktable/optimized/introspection_basicadj.c.ll
-; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -37,7 +36,7 @@ entry:
   ret float %6
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btContinuousConvexCollision.ll
@@ -51,6 +50,7 @@ entry:
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; opencv/optimized/tflite_importer.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(i1 %0, float %1, float %2) #0 {
 entry:

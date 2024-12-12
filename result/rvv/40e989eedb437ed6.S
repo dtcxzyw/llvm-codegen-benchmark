@@ -7,14 +7,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsle.vi	v0, v10, -1
+	vmsle.vi	v0, v10, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v8, v9, v8
-	ret
-func0000000000000028:                   # @func0000000000000028
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsgt.vi	v0, v10, 0
-	vmerge.vim	v9, v9, -1, v0
 	vadd.vv	v8, v9, v8
 	ret
 func0000000000000020:                   # @func0000000000000020

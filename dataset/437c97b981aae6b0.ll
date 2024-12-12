@@ -1,5 +1,5 @@
 
-%"class.irr::core::vector3d.2577639" = type { float, float, float }
+%"class.irr::core::vector3d.2691815" = type { float, float, float }
 
 ; 24 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
@@ -27,11 +27,11 @@
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/select3dobj.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -12
   %2 = getelementptr nusw i8, ptr %0, i64 %1
-  %3 = getelementptr %"class.irr::core::vector3d.2577639", ptr %2, i64 %.neg
+  %3 = getelementptr %"class.irr::core::vector3d.2691815", ptr %2, i64 %.neg
   %4 = getelementptr i8, ptr %3, i64 96
   ret ptr %4
 }

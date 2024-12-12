@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 45 occurrences:
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
@@ -15,7 +15,6 @@
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -47,24 +46,12 @@
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0) #0 {
+define i64 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 1
   %2 = icmp eq i64 %1, 3
   %3 = and i64 %1, 4294967295
   %4 = select i1 %2, i64 0, i64 %3
-  ret i64 %4
-}
-
-; 1 occurrences:
-; postgres/optimized/spgutils.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0) #0 {
-entry:
-  %1 = add i64 %0, 23
-  %2 = and i64 %1, -8
-  %3 = icmp ult i64 %1, 16
-  %4 = select i1 %3, i64 16, i64 %2
   ret i64 %4
 }
 

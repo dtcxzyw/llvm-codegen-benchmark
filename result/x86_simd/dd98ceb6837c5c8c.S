@@ -5,16 +5,16 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.quad	1073741824                      # 0x40000000
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vptestnmq	%ymm0, %ymm0, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm0   # ymm0 = [1073741824,1073741824,1073741824,1073741824]
 	vpsllq	$7, %ymm1, %ymm0 {%k1}
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vptestmq	%ymm0, %ymm0, %k1
 	vpsllq	$2, %ymm1, %ymm0 {%k1} {z}
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	vptestmq	%ymm0, %ymm0, %k1
 	vpsllq	$2, %ymm1, %ymm0 {%k1} {z}
 	retq
@@ -39,18 +39,12 @@ func0000000000000008:                   # @func0000000000000008
 	vpcmpnleuq	.LCPI7_0(%rip){1to4}, %ymm0, %k1
 	vpsllq	$52, %ymm1, %ymm0 {%k1} {z}
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vptestnmq	%ymm0, %ymm0, %k1
 	vpsllq	$48, %ymm1, %ymm0 {%k1} {z}
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtq	%ymm2, %ymm0, %k1
-	vpsllq	$32, %ymm1, %ymm0 {%k1} {z}
-	retq
-.LCPI10_0:
-	.quad	4294967296                      # 0x100000000
-func0000000000000024:                   # @func0000000000000024
-	vpcmpltuq	.LCPI10_0(%rip){1to4}, %ymm0, %k1
 	vpsllq	$32, %ymm1, %ymm0 {%k1} {z}
 	retq

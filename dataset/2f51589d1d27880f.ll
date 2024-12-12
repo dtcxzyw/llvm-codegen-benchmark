@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; ring-rs/optimized/36n9a21mmta9vg69.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = add nuw nsw i64 %3, %0
@@ -40,7 +40,7 @@ entry:
 ; cmake/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = add i64 %3, %0
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/pci-sysfs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 12
   %4 = add i64 %3, %0

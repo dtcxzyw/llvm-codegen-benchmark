@@ -1,5 +1,6 @@
 
-; 79 occurrences:
+; 80 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -86,11 +87,12 @@ entry:
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
   %6 = and i32 %5, 1
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 
-; 78 occurrences:
+; 79 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -176,14 +178,15 @@ entry:
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
   %6 = and i32 %5, 1
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/giaGen.c.ll
+; boost/optimized/alloc_lib.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll

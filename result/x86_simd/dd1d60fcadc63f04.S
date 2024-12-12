@@ -2,7 +2,7 @@
 	.long	1174137155                      # 0x45fbe943
 func0000000000000000:                   # @func0000000000000000
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm0, %xmm3
@@ -104,7 +104,7 @@ func000000000000000c:                   # @func000000000000000c
 	.long	2011                            # 0x7db
 func0000000000000004:                   # @func0000000000000004
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm0, %xmm3
@@ -155,7 +155,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	2971                            # 0xb9b
 func000000000000000e:                   # @func000000000000000e
 	vpmulld	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm0, %xmm3
@@ -206,7 +206,7 @@ func000000000000000e:                   # @func000000000000000e
 	.long	4256249                         # 0x40f1f9
 func0000000000000005:                   # @func0000000000000005
 	vpmulld	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm0, %xmm3

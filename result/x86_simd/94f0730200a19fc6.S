@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	2863311531                      # 0xaaaaaaab
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpshufd	$245, %xmm1, %xmm2              # xmm2 = xmm1[1,1,3,3]
@@ -11,7 +11,7 @@ func0000000000000051:                   # @func0000000000000051
 	vpblendd	$10, %xmm2, %xmm1, %xmm1        # xmm1 = xmm1[0],xmm2[1],xmm1[2],xmm2[3]
 	vpsrld	$2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpcmpeqq	%ymm0, %ymm1, %k0
+	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -19,7 +19,7 @@ func0000000000000051:                   # @func0000000000000051
 	.long	18                              # 0x12
 .LCPI1_1:
 	.long	2938661835                      # 0xaf286bcb
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpshufd	$245, %xmm1, %xmm2              # xmm2 = xmm1[1,1,3,3]
 	vpbroadcastd	.LCPI1_1(%rip), %xmm3   # xmm3 = [2938661835,2938661835,2938661835,2938661835]
@@ -32,7 +32,7 @@ func0000000000000011:                   # @func0000000000000011
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrld	$4, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpcmpeqq	%ymm0, %ymm1, %k0
+	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -40,7 +40,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	4294967280                      # 0xfffffff0
 .LCPI2_1:
 	.long	2863311531                      # 0xaaaaaaab
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vpshufd	$245, %xmm1, %xmm2              # xmm2 = xmm1[1,1,3,3]
 	vpbroadcastd	.LCPI2_1(%rip), %xmm3   # xmm3 = [2863311531,2863311531,2863311531,2863311531]
@@ -50,7 +50,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpblendd	$10, %xmm2, %xmm1, %xmm1        # xmm1 = xmm1[0],xmm2[1],xmm1[2],xmm2[3]
 	vpsrld	$3, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpcmpltuq	%ymm0, %ymm1, %k0
+	vpcmpnleuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

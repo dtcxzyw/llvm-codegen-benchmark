@@ -12,18 +12,16 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; gromacs/optimized/dorm2l.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
+; 3 occurrences:
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; openusd/optimized/pred_common.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
-  %2 = icmp eq i8 %1, 78
+  %2 = icmp eq i8 %1, 5
   %3 = xor i1 %2, %0
-  %4 = select i1 %3, i32 -1, i32 1
+  %4 = select i1 %3, i32 4, i32 3
   ret i32 %4
 }
 
@@ -32,9 +30,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 5
-  %3 = xor i1 %2, %0
-  %4 = select i1 %3, i32 4, i32 0
+  %2 = icmp ult i8 %1, -3
+  %3 = xor i1 %0, %2
+  %4 = select i1 %3, i32 4, i32 3
   ret i32 %4
 }
 

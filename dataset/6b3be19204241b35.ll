@@ -11,12 +11,11 @@ entry:
   ret i32 %3
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; darktable/optimized/Rw2Decoder.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngwrite.c.ll
-; libquic/optimized/reduce.c.ll
 ; libwebp/optimized/quant_dec.c.ll
 ; linux/optimized/virtio_ring.ll
 ; openjdk/optimized/pngread.ll

@@ -1,5 +1,5 @@
 
-; 169 occurrences:
+; 170 occurrences:
 ; linux/optimized/efi.ll
 ; linux/optimized/mtrr.ll
 ; linux/optimized/setup.ll
@@ -153,6 +153,7 @@
 ; llvm/optimized/VforkChecker.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; node/optimized/libnode.crypto_sig.ll
 ; node/optimized/libnode.crypto_timing.ll
 ; node/optimized/libnode.crypto_x509.ll
@@ -226,6 +227,19 @@ entry:
   ret ptr %4
 }
 
+; 3 occurrences:
+; linux/optimized/net.ll
+; lvgl/optimized/lv_tlsf.ll
+; node/optimized/libnode.node_snapshotable.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -8
+  %3 = add i64 %2, %0
+  %4 = inttoptr i64 %3 to ptr
+  ret ptr %4
+}
+
 ; 14 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AttrImpl.cpp.ll
@@ -245,19 +259,7 @@ entry:
 define ptr @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 16
-  %3 = add i64 %2, %0
-  %4 = inttoptr i64 %3 to ptr
-  ret ptr %4
-}
-
-; 2 occurrences:
-; linux/optimized/net.ll
-; node/optimized/libnode.node_snapshotable.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, 16
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

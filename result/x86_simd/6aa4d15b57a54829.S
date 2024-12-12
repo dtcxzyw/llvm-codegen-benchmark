@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
@@ -98,7 +98,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
@@ -148,7 +148,7 @@ func000000000000003a:                   # @func000000000000003a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
@@ -198,7 +198,7 @@ func0000000000000038:                   # @func0000000000000038
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF

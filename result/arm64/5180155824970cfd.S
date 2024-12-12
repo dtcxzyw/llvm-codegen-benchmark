@@ -14,8 +14,8 @@ func000000000000001b:                   // @func000000000000001b
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #56
 	lsr	x9, x9, #56
-	adds	x0, x8, x0
-	adc	x1, x9, x1
+	adds	x0, x0, x8
+	adc	x1, x1, x9
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
@@ -24,8 +24,8 @@ func0000000000000000:                   // @func0000000000000000
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #55
 	lsr	x9, x9, #55
-	adds	x0, x8, x0
-	adc	x1, x9, x1
+	adds	x0, x0, x8
+	adc	x1, x1, x9
 	ret
                                         // -- End function
 func0000000000000013:                   // @func0000000000000013
@@ -42,8 +42,16 @@ func000000000000001a:                   // @func000000000000001a
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #32
 	lsr	x9, x9, #32
+	adds	x0, x0, x8
+	adc	x1, x1, x9
+	ret
+                                        // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	cmn	x2, x4
+	adc	x8, x3, x5
 	adds	x0, x8, x0
-	adc	x1, x9, x1
+	cinc	x1, x1, hs
 	ret
                                         // -- End function
 func0000000000000019:                   // @func0000000000000019
@@ -52,8 +60,8 @@ func0000000000000019:                   // @func0000000000000019
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #16
 	lsr	x9, x9, #16
-	adds	x0, x8, x0
-	adc	x1, x9, x1
+	adds	x0, x0, x8
+	adc	x1, x1, x9
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
@@ -62,8 +70,8 @@ func0000000000000011:                   // @func0000000000000011
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #56
 	lsr	x9, x9, #56
-	adds	x0, x8, x0
-	adc	x1, x9, x1
+	adds	x0, x0, x8
+	adc	x1, x1, x9
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
@@ -80,8 +88,8 @@ func000000000000000a:                   // @func000000000000000a
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #16
 	lsr	x9, x9, #16
-	adds	x0, x8, x0
-	adc	x1, x9, x1
+	adds	x0, x0, x8
+	adc	x1, x1, x9
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
@@ -90,7 +98,7 @@ func0000000000000009:                   // @func0000000000000009
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #16
 	lsr	x9, x9, #16
-	adds	x0, x8, x0
-	adc	x1, x9, x1
+	adds	x0, x0, x8
+	adc	x1, x1, x9
 	ret
                                         // -- End function

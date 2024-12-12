@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/object.ll
-; flac/optimized/stream_encoder.c.ll
 ; jq/optimized/regexec.ll
 ; linux/optimized/ematch.ll
 ; linux/optimized/fib_rules.ll

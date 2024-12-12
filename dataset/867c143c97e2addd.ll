@@ -15,53 +15,8 @@
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 8
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = and i64 %3, 1008
-  ret i64 %4
-}
-
-; 35 occurrences:
-; arrow/optimized/value_parsing.cc.ll
-; linux/optimized/acpi-cpufreq.ll
-; linux/optimized/amd.ll
-; linux/optimized/amd_bus.ll
-; linux/optimized/amd_nb.ll
-; linux/optimized/apic.ll
-; linux/optimized/bugs.ll
-; linux/optimized/centaur.ll
-; linux/optimized/core.ll
-; linux/optimized/ds.ll
-; linux/optimized/generic.ll
-; linux/optimized/intel.ll
-; linux/optimized/intel_epb.ll
-; linux/optimized/intel_pstate.ll
-; linux/optimized/knc.ll
-; linux/optimized/lbr.ll
-; linux/optimized/mmconf-fam10h_64.ll
-; linux/optimized/mmconfig-shared.ll
-; linux/optimized/p4.ll
-; linux/optimized/p6.ll
-; linux/optimized/process.ll
-; linux/optimized/pt.ll
-; linux/optimized/step.ll
-; linux/optimized/therm_throt.ll
-; linux/optimized/tsx.ll
-; linux/optimized/uncore_snbep.ll
-; linux/optimized/via-rng.ll
-; linux/optimized/x86_pkg_temp_thermal.ll
-; linux/optimized/zhaoxin.ll
-; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/SampleProfileProbe.cpp.ll
-; mitsuba3/optimized/string.cpp.ll
-; qemu/optimized/hw_char_riscv_htif.c.ll
-; wireshark/optimized/packet-usb.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 52
-  %3 = or i64 %2, %0
-  %4 = and i64 %3, 9218868437227405312
   ret i64 %4
 }
 
@@ -154,7 +109,7 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; hyperscan/optimized/repeat.c.ll
 ; jemalloc/optimized/eset.ll
@@ -168,6 +123,8 @@ entry:
 ; redis/optimized/eset.sym.ll
 ; wireshark/optimized/packet-noe.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -177,12 +134,51 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 28 occurrences:
+; linux/optimized/acpi-cpufreq.ll
+; linux/optimized/amd.ll
+; linux/optimized/amd_bus.ll
+; linux/optimized/amd_nb.ll
+; linux/optimized/apic.ll
+; linux/optimized/bugs.ll
+; linux/optimized/core.ll
+; linux/optimized/ds.ll
+; linux/optimized/generic.ll
+; linux/optimized/intel.ll
+; linux/optimized/intel_pstate.ll
+; linux/optimized/knc.ll
+; linux/optimized/lbr.ll
+; linux/optimized/mmconfig-shared.ll
+; linux/optimized/p4.ll
+; linux/optimized/p6.ll
+; linux/optimized/process.ll
+; linux/optimized/pt.ll
+; linux/optimized/step.ll
+; linux/optimized/therm_throt.ll
+; linux/optimized/uncore_snbep.ll
+; linux/optimized/via-rng.ll
+; linux/optimized/x86_pkg_temp_thermal.ll
+; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/SampleProfileProbe.cpp.ll
+; qemu/optimized/hw_char_riscv_htif.c.ll
+; wireshark/optimized/packet-usb.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 32
+  %3 = or i64 %0, %2
+  %4 = and i64 %3, 281474976710655
+  ret i64 %4
+}
+
+; 11 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
+; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/coin_game.cc.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
@@ -192,7 +188,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 16
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = and i64 %3, -4294967295
   ret i64 %4
 }

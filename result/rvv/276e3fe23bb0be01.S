@@ -14,6 +14,5 @@ func0000000000000015:                   # @func0000000000000015
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v8
 	vsll.vi	v8, v10, 2
-	li	a0, 24
-	vadd.vx	v8, v8, a0
+	vadd.vi	v8, v8, 8
 	ret

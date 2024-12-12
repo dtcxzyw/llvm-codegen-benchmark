@@ -246,5 +246,5 @@ func000000000000003d:                   # @func000000000000003d
 	vpshufb	.LCPI7_0(%rip), %ymm2, %ymm2    # ymm2 = ymm2[2],zero,zero,ymm2[u,6],zero,zero,ymm2[u,10],zero,zero,ymm2[u,14],zero,zero,ymm2[u,18],zero,zero,ymm2[u,22],zero,zero,ymm2[u,26],zero,zero,ymm2[u,30],zero,zero,ymm2[u]
 	vpmulld	.LCPI7_1(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	8                               # 0x8
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpsllq	$3, %ymm1, %ymm1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [8,8,8,8]
 	vpsubq	%ymm1, %ymm0, %ymm0
@@ -13,7 +13,7 @@ func0000000000000024:                   # @func0000000000000024
 	.quad	4                               # 0x4
 .LCPI1_1:
 	.quad	4294967296                      # 0x100000000
-func00000000000003c4:                   # @func00000000000003c4
+func0000000000000784:                   # @func0000000000000784
 	vpaddq	%ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsubq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
@@ -23,10 +23,10 @@ func00000000000003c4:                   # @func00000000000003c4
 	retq
 .LCPI2_0:
 	.quad	4                               # 0x4
-func00000000000003e1:                   # @func00000000000003e1
+func00000000000007c1:                   # @func00000000000007c1
 	vpaddq	%ymm1, %ymm1, %ymm1
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
-	vpcmpeqq	%ymm0, %ymm1, %k0
+	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -6,7 +6,7 @@
 ; lightgbm/optimized/parser.cpp.ll
 ; taskflow/optimized/parallel_sort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 64
   %3 = select i1 %0, i1 %2, i1 false
@@ -17,7 +17,7 @@ entry:
 ; luau/optimized/ConstraintGenerator.cpp.ll
 ; postgres/optimized/copyfromparse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 9
   %3 = select i1 %0, i1 %2, i1 false
@@ -29,7 +29,7 @@ entry:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 0
   %3 = select i1 %0, i1 %2, i1 false
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
   %3 = select i1 %0, i1 %2, i1 false

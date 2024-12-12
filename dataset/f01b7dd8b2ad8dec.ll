@@ -23,7 +23,7 @@ entry:
   %2 = add nsw i32 %1, -52
   %3 = shl nsw i32 -2, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -37,7 +37,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = shl nuw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -54,7 +54,7 @@ entry:
   %2 = add nsw i32 %1, -8
   %3 = shl i32 255, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -74,22 +74,7 @@ entry:
   %2 = add i32 %1, -8
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
-  ret i32 %5
-}
-
-; 4 occurrences:
-; cpython/optimized/frameobject.ll
-; linux/optimized/intel_audio.ll
-; linux/optimized/tg3.ll
-; postgres/optimized/varbit.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 3
-  %3 = shl i32 7, %2
-  %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -101,7 +86,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = shl nuw nsw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -113,7 +98,21 @@ entry:
   %2 = add i32 %1, 26
   %3 = shl nuw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
+  ret i32 %5
+}
+
+; 3 occurrences:
+; cpython/optimized/frameobject.ll
+; linux/optimized/tg3.ll
+; postgres/optimized/varbit.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 4
+  %3 = shl i32 3, %2
+  %4 = xor i32 %3, -1
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

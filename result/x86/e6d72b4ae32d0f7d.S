@@ -13,6 +13,14 @@ func000000000000000c:                   # @func000000000000000c
 	shll	$20, %eax
 	orq	%rdx, %rax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	movl	%edi, %eax
+	shlq	$43, %rdx
+	orq	%rsi, %rdx
+	andl	$1, %eax
+	shlq	$42, %rax
+	orq	%rdx, %rax
+	retq
 func000000000000000b:                   # @func000000000000000b
 	movl	%esi, %eax
 	shlq	$48, %rdx
@@ -48,15 +56,6 @@ func0000000000000008:                   # @func0000000000000008
 	andl	$1, %esi
 	movl	$12, %eax
 	subq	%rsi, %rax
-	orq	%rdx, %rax
-	retq
-func0000000000000000:                   # @func0000000000000000
-	shlq	$9, %rdx
-	orq	%rdi, %rdx
-	xorl	%eax, %eax
-	testb	$1, %sil
-	sete	%al
-	shlq	$63, %rax
 	orq	%rdx, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001

@@ -9,7 +9,7 @@
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = call i32 @llvm.smax.i32(i32 %3, i32 0)
   ret i32 %4
 }
@@ -17,10 +17,10 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = call i32 @llvm.smax.i32(i32 %3, i32 0)
   ret i32 %4
 }

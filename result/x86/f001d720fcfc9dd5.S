@@ -19,10 +19,3 @@ func0000000000000028:                   # @func0000000000000028
 	testl	%edx, %edx
 	cmovsl	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	leal	-48(%rdx), %eax
-	testb	$1, %sil
-	cmovel	%edi, %eax
-	cmpl	$49, %edx
-	cmovbl	%edi, %eax
-	retq

@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 80 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -20,8 +20,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -83,12 +81,12 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002b4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = add nsw i32 %2, -1
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ult i32 %4, 10
+  %5 = icmp samesign ult i32 %4, 10
   ret i1 %5
 }
 
@@ -98,12 +96,12 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; 1 occurrences:
 ; luau/optimized/lnumprint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002b8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = add nsw i32 %2, -1
-  %4 = call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ugt i32 %4, 99
+  %4 = call i32 @llvm.abs.i32(i32 range(i32 -2147483648, 2147483647) %3, i1 true)
+  %5 = icmp samesign ugt i32 %4, 99
   ret i1 %5
 }
 
@@ -112,12 +110,12 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000b8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = add nsw i32 %2, -1
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ugt i32 %4, 99
+  %5 = icmp samesign ugt i32 %4, 99
   ret i1 %5
 }
 

@@ -4,6 +4,12 @@ func0000000000000007:                   # @func0000000000000007
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	andl	$3840, %edx                     # imm = 0xF00
+	andl	$240, %esi
+	leal	(%rsi,%rdx), %eax
+	orl	%edi, %eax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	movzbl	%dl, %eax
 	andl	$65280, %esi                    # imm = 0xFF00

@@ -1,15 +1,8 @@
-func0000000000000003:                   # @func0000000000000003
-	leal	(%rsi,%rsi), %ecx
-	shlq	$3, %rcx
-	testb	$1, %dil
-	movl	$32, %eax
-	cmoveq	%rcx, %rax
-	retq
 func000000000000001f:                   # @func000000000000001f
 	leal	(,%rsi,4), %ecx
-	shlq	$2, %rcx
+	shlq	$4, %rcx
 	testb	$1, %dil
-	movl	$64, %eax
+	movl	$256, %eax                      # imm = 0x100
 	cmoveq	%rcx, %rax
 	retq
 func000000000000000f:                   # @func000000000000000f
@@ -24,5 +17,12 @@ func0000000000000007:                   # @func0000000000000007
 	shlq	$2, %rcx
 	testb	$1, %dil
 	movl	$64, %eax
+	cmoveq	%rcx, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	leal	(%rsi,%rsi), %ecx
+	shlq	$3, %rcx
+	testb	$1, %dil
+	movl	$128, %eax
 	cmoveq	%rcx, %rax
 	retq

@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -7, i32 -9
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = icmp slt i32 %5, %4
   ret i1 %6
@@ -15,10 +15,10 @@ entry:
 ; abc/optimized/abcExact.c.ll
 ; icu/optimized/tzfmt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 5, i32 4
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -27,10 +27,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 64, i32 32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %0, 32
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -42,7 +42,7 @@ entry:
 ; cvc5/optimized/theory_datatypes_type_rules.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -2, i32 -1
   %4 = add nsw i32 %3, %1
@@ -54,10 +54,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/genmbcs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000064(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 64, i32 16
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw nsw i32 %0, 16
   %6 = icmp ult i32 %5, %4
   ret i1 %6

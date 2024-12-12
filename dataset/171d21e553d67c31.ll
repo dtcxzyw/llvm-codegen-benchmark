@@ -16,7 +16,7 @@ define i64 @func000000000000000c(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = shl nuw nsw i64 %2, 6
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -34,7 +34,7 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 18 occurrences:
 ; freetype/optimized/ftcache.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
@@ -49,14 +49,9 @@ entry:
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; qemu/optimized/gen-vdso.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; raylib/optimized/raudio.c.ll
 ; slurm/optimized/job_mgr.ll
 ; spike/optimized/debug_module.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i16 %1) #0 {
@@ -64,17 +59,6 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; minetest/optimized/voxelalgorithms.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001d(i64 %0, i16 %1) #0 {
-entry:
-  %2 = zext nneg i16 %1 to i64
-  %3 = shl nuw nsw i64 %2, 4
-  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -87,7 +71,7 @@ define i64 @func000000000000001c(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl nuw nsw i64 %2, 52
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -98,7 +82,18 @@ define i64 @func000000000000001f(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl nuw nsw i64 %2, 24
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; openusd/optimized/decodemv.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001d(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -110,7 +105,7 @@ define i64 @func000000000000000b(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = shl nuw i64 %2, 48
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 

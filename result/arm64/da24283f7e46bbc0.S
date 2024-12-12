@@ -1,62 +1,37 @@
-func000000000000004a:                   // @func000000000000004a
+func000000000000008a:                   // @func000000000000008a
 // %bb.0:                               // %entry
-	ushr	v2.2d, v2.2d, #6
-	ushr	v3.2d, v3.2d, #6
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	movi	v1.4s, #4, lsl #8
-	cmgt	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	lsr	x8, x1, #6
+	sub	w8, w8, w0
+	cmp	w8, #1024
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000141:                   // @func0000000000000141
+func0000000000000281:                   // @func0000000000000281
 // %bb.0:                               // %entry
-	ushr	v2.2d, v2.2d, #3
-	ushr	v3.2d, v3.2d, #3
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	cmeq	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	lsr	x8, x1, #3
+	cmp	w8, w0
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000041:                   // @func0000000000000041
+func0000000000000081:                   // @func0000000000000081
 // %bb.0:                               // %entry
-	ushr	v2.2d, v2.2d, #1
-	ushr	v3.2d, v3.2d, #1
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	cmeq	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	lsr	x8, x1, #1
+	cmp	w8, w0
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000101:                   // @func0000000000000101
+func0000000000000201:                   // @func0000000000000201
 // %bb.0:                               // %entry
-	ushr	v2.2d, v2.2d, #3
-	ushr	v3.2d, v3.2d, #3
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	cmeq	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	lsr	x8, x1, #3
+	cmp	w8, w0
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000148:                   // @func0000000000000148
+func0000000000000288:                   // @func0000000000000288
 // %bb.0:                               // %entry
-	ushr	v2.2d, v2.2d, #5
-	ushr	v3.2d, v3.2d, #5
-	mov	w8, #-32                        // =0xffffffe0
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v0.2d, v2.2d, v0.2d
-	dup	v2.2d, x8
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	lsr	x8, x1, #5
+	sub	w8, w8, w0
+	tst	x8, #0xffffffe0
+	cset	w0, ne
 	ret
                                         // -- End function

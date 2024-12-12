@@ -3,7 +3,7 @@
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, -2
@@ -28,7 +28,7 @@ entry:
 ; graphviz/optimized/constraint.c.ll
 ; graphviz/optimized/rank.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = add i64 %2, 16

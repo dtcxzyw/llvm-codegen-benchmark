@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_spinbox.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; openvdb/optimized/points.cc.ll
 ; stockfish/optimized/position.ll

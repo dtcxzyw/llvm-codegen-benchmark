@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmovnsl	%esi, %eax
 	andl	$-16, %eax
 	subl	%eax, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -17,8 +17,8 @@ func000000000000000a:                   # @func000000000000000a
 	shll	$2, %ecx
 	leal	(%rcx,%rcx,4), %ecx
 	subl	%ecx, %eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	retq
 func000000000000000b:                   # @func000000000000000b
 	movslq	%esi, %rax
@@ -29,8 +29,8 @@ func000000000000000b:                   # @func000000000000000b
 	addl	%edx, %ecx
 	imull	$100, %ecx, %ecx
 	subl	%ecx, %eax
-	cmpl	%edi, %eax
-	setle	%al
+	cmpl	%eax, %edi
+	setge	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movslq	%esi, %rax
@@ -41,8 +41,8 @@ func0000000000000006:                   # @func0000000000000006
 	addl	%edx, %ecx
 	imull	$100, %ecx, %ecx
 	subl	%ecx, %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%esi, %eax
@@ -50,6 +50,6 @@ func000000000000000c:                   # @func000000000000000c
 	addl	%esi, %eax
 	andl	$-2, %eax
 	subl	%eax, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	setne	%al
 	retq

@@ -13,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.w.x	fa5, a0
-	feq.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
 	ret
 func000000000000000d:                   # @func000000000000000d
 	fmv.w.x	fa5, a0
@@ -27,7 +27,7 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fmv.w.x	fa5, a0
-	feq.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
 func000000000000000a:                   # @func000000000000000a

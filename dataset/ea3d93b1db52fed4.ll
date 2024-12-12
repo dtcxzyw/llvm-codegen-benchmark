@@ -7,7 +7,7 @@ entry:
   %2 = fmul double %1, 0x3CB0000000000000
   %3 = fcmp oeq double %2, 0.000000e+00
   %4 = select i1 %3, double 0x10000000000000, double %2
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = fmul double %1, 0x3970000000000000
   %3 = fcmp olt double %2, 0x10000000000000
   %4 = select i1 %3, double 0x10000000000000, double %2
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = fmul double %1, 0x3CE4000000000000
   %3 = fcmp olt double %2, 0x3CE4000000000000
   %4 = select i1 %3, double 0x3CE4000000000000, double %2
-  %5 = fcmp ole double %4, %0
+  %5 = fcmp oge double %0, %4
   ret i1 %5
 }
 

@@ -312,7 +312,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 4448
   %4 = select i1 %1, i1 %3, i1 false
@@ -329,7 +329,7 @@ entry:
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %not. = xor i1 %1, true

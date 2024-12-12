@@ -40,7 +40,7 @@ func0000000000000010:                   # @func0000000000000010
 	.byte	0                               # 0x0
 func000000000000003c:                   # @func000000000000003c
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
@@ -67,7 +67,7 @@ func0000000000000035:                   # @func0000000000000035
 	.long	7                               # 0x7
 func0000000000000014:                   # @func0000000000000014
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper

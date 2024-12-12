@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edi, %edi
 	cmovel	%esi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%esi, %eax
 	andl	$-34, %eax
 	orl	$32, %esi

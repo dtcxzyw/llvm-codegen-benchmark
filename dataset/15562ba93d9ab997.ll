@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 4095
   %4 = zext nneg i16 %3 to i32
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-mka.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 4095
   %4 = zext nneg i16 %3 to i32
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 255
   %4 = zext nneg i16 %3 to i32

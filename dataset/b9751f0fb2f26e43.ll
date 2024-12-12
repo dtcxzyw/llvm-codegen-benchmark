@@ -1,7 +1,8 @@
 
-; 18 occurrences:
+; 21 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; actix-rs/optimized/1h6chd9qxbb3rt70.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
@@ -17,7 +18,9 @@
 ; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
 ; rust-analyzer-rs/optimized/lkt0vc36jo6l130.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/Node.cpp.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i1 %1, i8 %2) #0 {
 entry:

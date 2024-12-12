@@ -11,7 +11,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = sitofp i32 %3 to double
-  %5 = fcmp une double %4, %2
+  %5 = fcmp une double %2, %4
   %6 = select i1 %5, i32 %0, i32 %1
   ret i32 %6
 }

@@ -5,7 +5,7 @@
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 32
   %3 = icmp eq i8 %0, 14

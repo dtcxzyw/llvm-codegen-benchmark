@@ -1,4 +1,4 @@
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000001c4:                   # @func00000000000001c4
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
@@ -10,7 +10,7 @@ func00000000000000e4:                   # @func00000000000000e4
 	retq
 .LCPI1_0:
 	.long	4294967242                      # 0xffffffca
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [4294967242,4294967242,4294967242,4294967242]
 	vpsubd	%xmm1, %xmm2, %xmm1
@@ -22,7 +22,7 @@ func0000000000000024:                   # @func0000000000000024
 	retq
 .LCPI2_0:
 	.long	4294967243                      # 0xffffffcb
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2   # xmm2 = [4294967243,4294967243,4294967243,4294967243]
 	vpsubd	%xmm1, %xmm2, %xmm1

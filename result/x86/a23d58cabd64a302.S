@@ -3,14 +3,14 @@ func0000000000000009:                   # @func0000000000000009
 	imulq	%rdx, %rsi
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
-	cmpq	%rdi, %rax
-	setbe	%al
+	cmpq	%rax, %rdi
+	setae	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	incq	%rsi
 	imulq	%rdx, %rsi
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

@@ -1,6 +1,8 @@
 
-; 57 occurrences:
+; 59 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll

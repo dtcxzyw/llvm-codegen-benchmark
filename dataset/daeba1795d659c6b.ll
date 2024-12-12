@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; git/optimized/rebase.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -11,7 +11,6 @@
 ; libwebp/optimized/vp8_dec.c.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/idma32.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/tg3.ll
@@ -239,7 +238,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -254464
   %.masked = and i32 %0, -512
-  %3 = or i32 %2, %.masked
+  %3 = or i32 %.masked, %2
   ret i32 %3
 }
 

@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	movslq	%edx, %rax
 	movslq	%esi, %rcx
 	imulq	%rax, %rcx
@@ -6,7 +6,7 @@ func000000000000005a:                   # @func000000000000005a
 	cmpq	$65537, %rcx                    # imm = 0x10001
 	setge	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movslq	%edx, %rax
 	movslq	%esi, %rcx
 	imulq	%rax, %rcx
@@ -14,7 +14,7 @@ func0000000000000041:                   # @func0000000000000041
 	testq	%rcx, %rcx
 	sete	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movslq	%edx, %rax
 	movslq	%esi, %rcx
 	imulq	%rax, %rcx
@@ -22,7 +22,7 @@ func0000000000000044:                   # @func0000000000000044
 	cmpq	$8, %rcx
 	setb	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movslq	%edx, %rax
 	movslq	%esi, %rcx
 	imulq	%rax, %rcx
@@ -30,7 +30,7 @@ func0000000000000048:                   # @func0000000000000048
 	cmpq	$3, %rcx
 	setae	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	testl	%edx, %edx
 	sete	%al
 	testl	%esi, %esi
@@ -40,7 +40,7 @@ func0000000000000051:                   # @func0000000000000051
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	movslq	%edx, %rax
 	movslq	%esi, %rcx
 	imulq	%rax, %rcx
@@ -48,7 +48,7 @@ func000000000000004a:                   # @func000000000000004a
 	cmpq	$2147483647, %rcx               # imm = 0x7FFFFFFF
 	setge	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	movslq	%edx, %rcx
 	movslq	%esi, %rax
 	imulq	%rcx, %rax

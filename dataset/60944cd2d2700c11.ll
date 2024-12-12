@@ -13,7 +13,7 @@ entry:
   %4 = trunc nuw i32 %3 to i16
   %5 = sub i16 0, %4
   %6 = select i1 %1, i16 %4, i16 %5
-  %7 = add i16 %6, %0
+  %7 = add i16 %0, %6
   ret i16 %7
 }
 

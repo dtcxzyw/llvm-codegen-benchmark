@@ -12,7 +12,9 @@ entry:
   ret i64 %6
 }
 
-; 101 occurrences:
+; 103 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/mpool.c.ll
 ; llvm/optimized/ABIInfoImpl.cpp.ll

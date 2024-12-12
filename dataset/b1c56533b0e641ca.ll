@@ -1,19 +1,18 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; libquic/optimized/bio.c.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/recovery.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/GOFFObjectFile.cpp.ll
-; php/optimized/pcre2_compile.ll
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; wireshark/optimized/packet-v120.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, -64
-  %3 = icmp eq i8 %2, -128
-  %4 = and i32 %0, 524288
+  %2 = and i8 %1, 127
+  %3 = icmp eq i8 %2, 0
+  %4 = and i32 %0, 32
   %5 = icmp ne i32 %4, 0
   %6 = select i1 %5, i1 %3, i1 false
   ret i1 %6
@@ -33,7 +32,7 @@ entry:
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; wireshark/optimized/packet-rdpudp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -43,14 +42,13 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; linux/optimized/hub.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -4
   %3 = icmp eq i8 %2, 8

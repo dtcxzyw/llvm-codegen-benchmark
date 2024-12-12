@@ -9,7 +9,7 @@ define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 1000
   %3 = or disjoint i64 %2, 5
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -20,7 +20,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 72340172838076673
   %3 = or i64 %2, -9187201950435737472
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -35,9 +35,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/tng_io.c.ll
-; opencv/optimized/distransform.cpp.ll
 ; quantlib/optimized/fdmvppstartlimitstepcondition.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
@@ -55,7 +54,7 @@ define i64 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 160
   %3 = or disjoint i64 %2, 1
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -66,7 +65,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 160
   %3 = or disjoint i64 %2, 1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

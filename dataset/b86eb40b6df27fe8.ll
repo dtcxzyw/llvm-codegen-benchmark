@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 92 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
 ; abseil-cpp/optimized/seed_material_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; crow/optimized/example_session.cpp.ll
 ; cvc5/optimized/partition_generator.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -28,14 +29,12 @@
 ; llvm/optimized/BalancedPartitioning.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; nix/optimized/filetransfer.ll
 ; ocio/optimized/Platform.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
@@ -80,7 +79,6 @@
 ; quantlib/optimized/catrisk.ll
 ; quantlib/optimized/fireflyalgorithm.ll
 ; quantlib/optimized/particleswarmoptimization.ll
-; quest/optimized/mt19937ar.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/transaction_test_util.cc.ll

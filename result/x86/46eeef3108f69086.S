@@ -11,6 +11,19 @@ func0000000000000007:                   # @func0000000000000007
 	orb	$12, %al
 	shlxl	%eax, %edi, %eax
 	retq
+func0000000000000020:                   # @func0000000000000020
+	cmpb	$2, %sil
+	movb	$1, %al
+	sbbb	$-1, %al
+	shlxl	%eax, %edi, %eax
+	retq
+func0000000000000053:                   # @func0000000000000053
+	xorl	%eax, %eax
+	cmpb	$67, %sil
+	setae	%al
+	leal	3(%rax,%rax,2), %eax
+	shlxl	%eax, %edi, %eax
+	retq
 func0000000000000023:                   # @func0000000000000023
 	xorl	%eax, %eax
 	cmpb	$11, %sil

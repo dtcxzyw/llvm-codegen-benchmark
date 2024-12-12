@@ -3,37 +3,37 @@ func0000000000000004:                   # @func0000000000000004
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	addiw	a2, a2, 1
 	mul	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	addiw	a2, a2, 1
 	mul	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addiw	a2, a2, -1
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addiw	a2, a2, 1
 	mul	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addiw	a2, a2, 1
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	addiw	a2, a2, 2
 	mul	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	addiw	a2, a2, 2
 	mul	a1, a1, a2
 	sltu	a0, a1, a0

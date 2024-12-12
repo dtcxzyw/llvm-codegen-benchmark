@@ -27,10 +27,11 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/luckyFast6.c.ll
 ; clamav/optimized/pathfn.cpp.ll
 ; darktable/optimized/introspection_lens.cc.ll
+; icu/optimized/number_decimalquantity.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll

@@ -7,7 +7,7 @@
 ; openspiel/optimized/spades.cc.ll
 ; openspiel/optimized/y.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -21,7 +21,7 @@ entry:
 ; ninja/optimized/manifest_parser_test.cc.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -35,7 +35,7 @@ entry:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; pocketpy/optimized/expr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3

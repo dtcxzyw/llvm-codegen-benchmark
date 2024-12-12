@@ -3,7 +3,7 @@
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 63
   %3 = icmp ult i32 %2, 1024
@@ -29,7 +29,7 @@ entry:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -191
   %3 = icmp ult i32 %2, 12224
@@ -38,15 +38,14 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/device_cgroup.ll
-; llvm/optimized/AArch64ConditionalCompares.cpp.ll
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; openjdk/optimized/fieldInfo.ll
 ; openjdk/optimized/oopMap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000424(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -191
   %3 = icmp ult i32 %2, 12224

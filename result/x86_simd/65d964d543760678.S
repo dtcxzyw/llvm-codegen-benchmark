@@ -2,7 +2,7 @@
 	.long	32                              # 0x20
 func000000000000002e:                   # @func000000000000002e
 	vpslld	$24, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [32,32,32,32,32,32,32,32]
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpsrlvd	%ymm1, %ymm0, %ymm0

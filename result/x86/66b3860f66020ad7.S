@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	leaq	8(%rsi), %rcx
 	xorl	%eax, %eax
 	cmpl	$1, %edi
@@ -10,22 +10,22 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edi, %edi
 	cmovgq	%rcx, %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000006a:                   # @func000000000000006a
 	leaq	6(%rsi), %rcx
 	xorl	%eax, %eax
 	cmpl	$3, %edi
 	cmovgeq	%rcx, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
-	leaq	24(%rsi), %rcx
+func0000000000000041:                   # @func0000000000000041
+	leaq	-104(%rsi), %rcx
 	xorl	%eax, %eax
-	testl	%edi, %edi
+	cmpl	$46, %edi
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000024:                   # @func0000000000000024
-	leaq	-24(%rsi), %rcx
+func0000000000000044:                   # @func0000000000000044
+	leaq	-368(%rsi), %rcx
 	xorl	%eax, %eax
-	cmpl	$11, %edi
+	cmpl	$20, %edi
 	cmovbq	%rcx, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -34,7 +34,19 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edi, %edi
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000064:                   # @func0000000000000064
+	leaq	84(%rsi), %rcx
+	xorl	%eax, %eax
+	cmpl	$3, %edi
+	cmovbq	%rcx, %rax
+	retq
+func0000000000000074:                   # @func0000000000000074
+	leaq	128(%rsi), %rcx
+	xorl	%eax, %eax
+	cmpl	$3, %edi
+	cmovbq	%rcx, %rax
+	retq
+func0000000000000066:                   # @func0000000000000066
 	leaq	16(%rsi), %rcx
 	xorl	%eax, %eax
 	testl	%edi, %edi

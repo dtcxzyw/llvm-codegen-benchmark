@@ -4,8 +4,8 @@
 ; libquic/optimized/quic_framer.cc.ll
 ; libquic/optimized/spdy_framer.cc.ll
 ; llvm/optimized/APFloat.cpp.ll
-; llvm/optimized/Descriptor.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; sqlite/optimized/sqlite3.ll
@@ -19,10 +19,9 @@ entry:
   ret i8 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; git/optimized/diff.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
-; llvm/optimized/SemaCodeComplete.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; wireshark/optimized/packet-vj-comp.c.ll
 ; Function Attrs: nounwind

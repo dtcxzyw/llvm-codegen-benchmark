@@ -8,16 +8,16 @@
 ; rust-analyzer-rs/optimized/1n2nbybgay5hs9t3.ll
 ; z3/optimized/params.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c21(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 856
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 856
   %4 = icmp eq ptr %3, %1
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6
 }
 
-; 111 occurrences:
+; 109 occurrences:
 ; crow/optimized/example_json_map.cpp.ll
 ; cvc5/optimized/portfolio_driver.cpp.ll
 ; darktable/optimized/Camera.cpp.ll
@@ -76,7 +76,6 @@ entry:
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/activeobjectmgr.cpp.ll
 ; minetest/optimized/areastore.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/clientmedia.cpp.ll
@@ -121,7 +120,6 @@ entry:
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; msgpack/optimized/speed_test.cpp.ll
-; proj/optimized/filemanager.cpp.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; xgboost/optimized/config.cc.ll
 ; xgboost/optimized/data.cc.ll
@@ -130,9 +128,9 @@ entry:
 ; z3/optimized/smtfd_solver.cpp.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c2c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp eq ptr %3, %1
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 true, i1 %4
@@ -142,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/deadlock.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -872
   %4 = icmp eq ptr %3, %1

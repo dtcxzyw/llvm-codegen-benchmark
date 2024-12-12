@@ -11,8 +11,7 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
+; 3 occurrences:
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; ruby/optimized/bignum.ll
 ; wireshark/optimized/file-elf.c.ll
@@ -25,7 +24,7 @@ entry:
   ret i64 %5
 }
 
-; 51 occurrences:
+; 56 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -77,6 +76,11 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; ruby/optimized/array.ll
 ; sentencepiece/optimized/message_lite.cc.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -86,8 +90,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
@@ -284,6 +290,19 @@ entry:
   ret i64 %5
 }
 
+; 3 occurrences:
+; arrow/optimized/writer.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; openmpi/optimized/ad_read_str.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = sub nsw i64 %3, %0
+  %5 = shl i64 %4, 32
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
 ; Function Attrs: nounwind
@@ -316,18 +335,6 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = sub nuw nsw i64 %3, %0
   %5 = shl nuw i64 %4, 3
-  ret i64 %5
-}
-
-; 2 occurrences:
-; arrow/optimized/writer.cc.ll
-; openmpi/optimized/ad_read_str.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = sub nsw i64 %3, %0
-  %5 = shl i64 %4, 32
   ret i64 %5
 }
 

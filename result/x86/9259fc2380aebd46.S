@@ -1,4 +1,4 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addq	%rdi, %rdx
 	decq	%rsi
 	subq	%rsi, %rdx
@@ -6,7 +6,7 @@ func0000000000000084:                   # @func0000000000000084
 	cmpq	%rdx, %rsi
 	setb	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	addq	%rdi, %rdx
 	incq	%rsi
 	subq	%rsi, %rdx

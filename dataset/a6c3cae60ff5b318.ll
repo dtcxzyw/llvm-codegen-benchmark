@@ -1,6 +1,5 @@
 
-; 21 occurrences:
-; libwebp/optimized/muxread.c.ll
+; 20 occurrences:
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.ARM64.cc.ll
@@ -22,7 +21,7 @@
 ; php/optimized/ZendAccelerator.ll
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 3

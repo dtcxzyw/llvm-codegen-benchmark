@@ -15,17 +15,16 @@ define i1 @func0000000000000002(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x7FEFFFFFFFFFFFFF
   %4 = fcmp olt double %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/specbond.cpp.ll
 ; opencv/optimized/Remap_Demo.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/perf_warp.cpp.ll
 ; quantlib/optimized/gausslobattointegral.ll
-; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/qdplusamericanengine.ll
 ; Function Attrs: nounwind
@@ -33,7 +32,7 @@ define i1 @func0000000000000004(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 1.500000e+00
   %4 = fcmp ogt double %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -44,7 +43,7 @@ define i1 @func0000000000000003(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 1.001000e+00
   %4 = fcmp ult double %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -66,7 +65,7 @@ define i1 @func0000000000000005(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e-01
   %4 = fcmp ugt double %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

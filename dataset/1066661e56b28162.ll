@@ -1,5 +1,8 @@
 
-; 102 occurrences:
+; 103 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -71,7 +74,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -100,10 +102,9 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000184(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0
@@ -112,7 +113,8 @@ entry:
   ret i1 %5
 }
 
-; 97 occurrences:
+; 96 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -182,7 +184,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -208,10 +209,9 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2048
   %3 = icmp ne i16 %2, 0
@@ -220,7 +220,7 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -229,6 +229,7 @@ entry:
 ; arrow/optimized/value_parsing.cc.ll
 ; cmake/optimized/http.c.ll
 ; curl/optimized/libcurl_la-http.ll
+; icu/optimized/unistr.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/rx.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
@@ -239,7 +240,7 @@ entry:
 ; wireshark/optimized/packet-eap.c.ll
 ; wireshark/optimized/packet-zebra.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 3
   %3 = icmp eq i16 %2, 3
@@ -248,12 +249,14 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i16 %1) #0 {
+define i1 @func000000000000008c(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8192
   %3 = icmp ne i16 %2, 0
@@ -262,7 +265,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; linux/optimized/hda_intel.ll
 ; llvm/optimized/ASTStructuralEquivalence.cpp.ll
 ; llvm/optimized/LoopUtils.cpp.ll
@@ -270,15 +273,13 @@ entry:
 ; memcached/optimized/memcached_debug-util.ll
 ; memcached/optimized/util.ll
 ; openmpi/optimized/tm_topology.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/Common.cpp.ll
 ; wireshark/optimized/packet-at.c.ll
 ; wireshark/optimized/packet-sip.c.ll
 ; wireshark/optimized/packet-ubertooth.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8192
   %3 = icmp eq i16 %2, 0
@@ -287,8 +288,7 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
-; linux/optimized/nsobject.ll
+; 6 occurrences:
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/X86CodeGenPassBuilder.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
@@ -296,7 +296,7 @@ entry:
 ; tev/optimized/Common.cpp.ll
 ; wireshark/optimized/ws_strptime.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4096
   %3 = icmp ne i16 %2, 0
@@ -308,7 +308,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-epl.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -2
   %3 = icmp eq i16 %2, 4112
@@ -317,23 +317,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; abseil-cpp/optimized/generators_test.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 248
-  %3 = icmp ult i16 %2, 56
-  %4 = icmp ult i8 %0, 100
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; linux/optimized/namei_msdos.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = icmp eq i16 %2, 0
@@ -346,7 +334,7 @@ entry:
 ; postgres/optimized/cash.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i8 %0, i16 %1) #0 {
+define i1 @func000000000000018a(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2048
   %3 = icmp ne i16 %2, 0

@@ -1,5 +1,5 @@
 
-; 198 occurrences:
+; 192 occurrences:
 ; abc/optimized/abcBarBuf.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcObj.c.ll
@@ -20,8 +20,9 @@
 ; abc/optimized/sswIslands.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; assimp/optimized/LWSLoader.cpp.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/record_ostream.ll
 ; clamav/optimized/asn1.c.ll
-; clamav/optimized/filcreat.cpp.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/session.c.ll
 ; clamav/optimized/system.c.ll
@@ -64,8 +65,6 @@
 ; jemalloc/optimized/pages.pic.ll
 ; jemalloc/optimized/pages.sym.ll
 ; jq/optimized/compile.ll
-; libquic/optimized/p_dsa_asn1.c.ll
-; libquic/optimized/p_ec_asn1.c.ll
 ; libwebp/optimized/picture_rescale_enc.c.ll
 ; linux/optimized/base.ll
 ; linux/optimized/dm-table.ll
@@ -79,7 +78,6 @@
 ; linux/optimized/socket.ll
 ; linux/optimized/static_call.ll
 ; linux/optimized/tcp.ll
-; linux/optimized/vfs_dentry.ll
 ; linux/optimized/vfs_super.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xarray.ll
@@ -110,7 +108,6 @@
 ; openjdk/optimized/replacednodes.ll
 ; openjdk/optimized/superword.ll
 ; openjdk/optimized/systemDictionaryShared.ll
-; openmpi/optimized/heap_sort.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
 ; openssl/optimized/cmp_ctx_test-bin-cmp_ctx_test.ll
 ; openssl/optimized/evp_extra_test-bin-evp_extra_test.ll
@@ -126,7 +123,6 @@
 ; openssl/optimized/libcrypto-lib-packet.ll
 ; openssl/optimized/libcrypto-lib-pmeth_lib.ll
 ; openssl/optimized/libcrypto-lib-rsa_sp800_56b_check.ll
-; openssl/optimized/libcrypto-lib-thread_posix.ll
 ; openssl/optimized/libcrypto-lib-v3_ncons.ll
 ; openssl/optimized/libcrypto-shlib-cmp_hdr.ll
 ; openssl/optimized/libcrypto-shlib-cms_lib.ll
@@ -137,11 +133,9 @@
 ; openssl/optimized/libcrypto-shlib-packet.ll
 ; openssl/optimized/libcrypto-shlib-pmeth_lib.ll
 ; openssl/optimized/libcrypto-shlib-rsa_sp800_56b_check.ll
-; openssl/optimized/libcrypto-shlib-thread_posix.ll
 ; openssl/optimized/libcrypto-shlib-v3_ncons.ll
 ; openssl/optimized/libdefault-lib-drbg.ll
 ; openssl/optimized/libssl-shlib-packet.ll
-; openssl/optimized/libssl-shlib-thread_posix.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openssl/optimized/sslbuffertest-bin-sslbuffertest.ll
 ; openssl/optimized/tls13secretstest-bin-packet.ll
@@ -206,7 +200,7 @@ entry:
   ret i32 %2
 }
 
-; 822 occurrences:
+; 764 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -226,7 +220,6 @@ entry:
 ; abc/optimized/cutSeq.c.ll
 ; abc/optimized/dchChoice.c.ll
 ; abc/optimized/extraUtilUtil.c.ll
-; abc/optimized/fxuPair.c.ll
 ; abc/optimized/giaIso.c.ll
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/ivyOper.c.ll
@@ -247,6 +240,7 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/cordxtra.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/state.c.ll
 ; bullet3/optimized/btRaycastVehicle.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -259,9 +253,6 @@ entry:
 ; casadi/optimized/idas_spbcgs.c.ll
 ; casadi/optimized/idas_spgmr.c.ll
 ; casadi/optimized/idas_sptfqmr.c.ll
-; casadi/optimized/kinsol_spbcgs.c.ll
-; casadi/optimized/kinsol_spgmr.c.ll
-; casadi/optimized/kinsol_sptfqmr.c.ll
 ; chibicc/optimized/preprocess.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/chmd.c.ll
@@ -370,8 +361,6 @@ entry:
 ; graphviz/optimized/ingraphs.c.ll
 ; graphviz/optimized/intset.c.ll
 ; graphviz/optimized/pointset.c.ll
-; graphviz/optimized/subg.c.ll
-; graphviz/optimized/utils.c.ll
 ; gromacs/optimized/eigensolver.cpp.ll
 ; gromacs/optimized/mpiinfo.cpp.ll
 ; gromacs/optimized/parallel_3dfft.cpp.ll
@@ -381,7 +370,6 @@ entry:
 ; grpc/optimized/writing.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5FL.c.ll
-; hdf5/optimized/H5HGdbg.c.ll
 ; hdf5/optimized/H5I.c.ll
 ; hdf5/optimized/H5Iint.c.ll
 ; hdf5/optimized/H5Pfapl.c.ll
@@ -400,17 +388,13 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; jq/optimized/execute.ll
 ; jq/optimized/jv.ll
-; libquic/optimized/a_time.c.ll
-; libquic/optimized/bn_asn1.c.ll
 ; libquic/optimized/cbs.c.ll
 ; libquic/optimized/connect.c.ll
 ; libquic/optimized/ec.c.ll
 ; libquic/optimized/ec_key.c.ll
-; libquic/optimized/evp.c.ll
 ; libquic/optimized/exponentiation.c.ll
 ; libquic/optimized/gcd.c.ll
 ; libquic/optimized/p_rsa.c.ll
-; libquic/optimized/random.c.ll
 ; libquic/optimized/s3_enc.c.ll
 ; libquic/optimized/simple.c.ll
 ; libquic/optimized/sqrt.c.ll
@@ -419,14 +403,10 @@ entry:
 ; libquic/optimized/tasn_new.c.ll
 ; libquic/optimized/v3_purp.c.ll
 ; libquic/optimized/x509_att.c.ll
-; libquic/optimized/x509_ext.c.ll
 ; libquic/optimized/x509_req.c.ll
-; libquic/optimized/x509_set.c.ll
 ; libquic/optimized/x509_v3.c.ll
 ; libquic/optimized/x509_vpm.c.ll
-; libquic/optimized/x509cset.c.ll
 ; libquic/optimized/x509name.c.ll
-; libquic/optimized/x_bignum.c.ll
 ; libquic/optimized/x_name.c.ll
 ; libuv/optimized/core.c.ll
 ; libwebp/optimized/idec_dec.c.ll
@@ -436,7 +416,6 @@ entry:
 ; linux/optimized/addrconf.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/audit_tree.ll
-; linux/optimized/auxiliary.ll
 ; linux/optimized/bitset.ll
 ; linux/optimized/blktrace.ll
 ; linux/optimized/cgroup.ll
@@ -457,10 +436,7 @@ entry:
 ; linux/optimized/eventpoll.ll
 ; linux/optimized/fdinfo.ll
 ; linux/optimized/fib_semantics.ll
-; linux/optimized/hda_bus_type.ll
-; linux/optimized/hid-generic.ll
 ; linux/optimized/i2c-core-base.ll
-; linux/optimized/i915_getparam.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/ialloc.ll
 ; linux/optimized/intel_bios.ll
@@ -479,7 +455,6 @@ entry:
 ; linux/optimized/pci-driver.ll
 ; linux/optimized/posix-timers.ll
 ; linux/optimized/proc_sysctl.ll
-; linux/optimized/pse-pd.ll
 ; linux/optimized/ptp_chardev.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/rmap.ll
@@ -488,6 +463,8 @@ entry:
 ; linux/optimized/seq_device.ll
 ; linux/optimized/sg.ll
 ; linux/optimized/snapshot.ll
+; linux/optimized/tcp_ipv4.ll
+; linux/optimized/tcp_ipv6.ll
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll
@@ -547,6 +524,10 @@ entry:
 ; luajit/optimized/lib_debug_dyn.ll
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/lapi.cpp.ll
+; lvgl/optimized/lv_image_cache.ll
+; lvgl/optimized/lv_image_decoder.ll
+; lvgl/optimized/lv_image_header_cache.ll
+; lvgl/optimized/lv_tabview.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; minetest/optimized/CBillboardSceneNode.cpp.ll
@@ -612,7 +593,6 @@ entry:
 ; openmpi/optimized/opal_object.ll
 ; openmpi/optimized/pmix_mca_base_var.ll
 ; openmpi/optimized/pmix_object.ll
-; openmpi/optimized/tm_verbose.ll
 ; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; openssl/optimized/asn1_time_test-bin-a_time.ll
 ; openssl/optimized/bntest-bin-bntest.ll
@@ -631,12 +611,10 @@ entry:
 ; openssl/optimized/libcrypto-lib-a_time.ll
 ; openssl/optimized/libcrypto-lib-asn1_dsa.ll
 ; openssl/optimized/libcrypto-lib-asn_mime.ll
-; openssl/optimized/libcrypto-lib-async_posix.ll
 ; openssl/optimized/libcrypto-lib-bn_gcd.ll
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-lib-bn_rand.ll
-; openssl/optimized/libcrypto-lib-bn_recp.ll
 ; openssl/optimized/libcrypto-lib-bss_conn.ll
 ; openssl/optimized/libcrypto-lib-bss_sock.ll
 ; openssl/optimized/libcrypto-lib-cmp_ctx.ll
@@ -655,14 +633,10 @@ entry:
 ; openssl/optimized/libcrypto-lib-ec_key.ll
 ; openssl/optimized/libcrypto-lib-ec_lib.ll
 ; openssl/optimized/libcrypto-lib-ec_mult.ll
-; openssl/optimized/libcrypto-lib-ecp_mont.ll
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-lib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-lib-eng_ctrl.ll
-; openssl/optimized/libcrypto-lib-eng_dyn.ll
-; openssl/optimized/libcrypto-lib-eng_lib.ll
 ; openssl/optimized/libcrypto-lib-evp_asn1.ll
-; openssl/optimized/libcrypto-lib-evp_pkey.ll
 ; openssl/optimized/libcrypto-lib-evp_rand.ll
 ; openssl/optimized/libcrypto-lib-ex_data.ll
 ; openssl/optimized/libcrypto-lib-hpke.ll
@@ -671,12 +645,8 @@ entry:
 ; openssl/optimized/libcrypto-lib-obj_dat.ll
 ; openssl/optimized/libcrypto-lib-obj_xref.ll
 ; openssl/optimized/libcrypto-lib-ocsp_ext.ll
-; openssl/optimized/libcrypto-lib-ocsp_srv.ll
 ; openssl/optimized/libcrypto-lib-ocsp_vfy.ll
-; openssl/optimized/libcrypto-lib-p12_add.ll
-; openssl/optimized/libcrypto-lib-p12_attr.ll
 ; openssl/optimized/libcrypto-lib-p12_mutl.ll
-; openssl/optimized/libcrypto-lib-p8_pkey.ll
 ; openssl/optimized/libcrypto-lib-p_lib.ll
 ; openssl/optimized/libcrypto-lib-packet.ll
 ; openssl/optimized/libcrypto-lib-params_from_text.ll
@@ -688,32 +658,23 @@ entry:
 ; openssl/optimized/libcrypto-lib-store_register.ll
 ; openssl/optimized/libcrypto-lib-store_result.ll
 ; openssl/optimized/libcrypto-lib-tasn_new.ll
-; openssl/optimized/libcrypto-lib-ts_req_utils.ll
 ; openssl/optimized/libcrypto-lib-ts_rsp_sign.ll
-; openssl/optimized/libcrypto-lib-ts_rsp_utils.ll
 ; openssl/optimized/libcrypto-lib-v3_purp.ll
 ; openssl/optimized/libcrypto-lib-x509_att.ll
 ; openssl/optimized/libcrypto-lib-x509_cmp.ll
-; openssl/optimized/libcrypto-lib-x509_ext.ll
 ; openssl/optimized/libcrypto-lib-x509_v3.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-lib-x509_vpm.ll
 ; openssl/optimized/libcrypto-lib-x509name.ll
-; openssl/optimized/libcrypto-lib-x_algor.ll
-; openssl/optimized/libcrypto-lib-x_bignum.ll
 ; openssl/optimized/libcrypto-lib-x_crl.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
 ; openssl/optimized/libcrypto-lib-x_name.ll
-; openssl/optimized/libcrypto-lib-x_x509a.ll
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; openssl/optimized/libcrypto-shlib-asn1_dsa.ll
 ; openssl/optimized/libcrypto-shlib-asn_mime.ll
-; openssl/optimized/libcrypto-shlib-async_posix.ll
 ; openssl/optimized/libcrypto-shlib-bn_gcd.ll
 ; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; openssl/optimized/libcrypto-shlib-bn_rand.ll
-; openssl/optimized/libcrypto-shlib-bn_recp.ll
 ; openssl/optimized/libcrypto-shlib-bss_conn.ll
 ; openssl/optimized/libcrypto-shlib-bss_sock.ll
 ; openssl/optimized/libcrypto-shlib-cmp_ctx.ll
@@ -732,14 +693,10 @@ entry:
 ; openssl/optimized/libcrypto-shlib-ec_key.ll
 ; openssl/optimized/libcrypto-shlib-ec_lib.ll
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
-; openssl/optimized/libcrypto-shlib-ecp_mont.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-eng_ctrl.ll
-; openssl/optimized/libcrypto-shlib-eng_dyn.ll
-; openssl/optimized/libcrypto-shlib-eng_lib.ll
 ; openssl/optimized/libcrypto-shlib-evp_asn1.ll
-; openssl/optimized/libcrypto-shlib-evp_pkey.ll
 ; openssl/optimized/libcrypto-shlib-evp_rand.ll
 ; openssl/optimized/libcrypto-shlib-ex_data.ll
 ; openssl/optimized/libcrypto-shlib-hpke.ll
@@ -748,12 +705,8 @@ entry:
 ; openssl/optimized/libcrypto-shlib-obj_dat.ll
 ; openssl/optimized/libcrypto-shlib-obj_xref.ll
 ; openssl/optimized/libcrypto-shlib-ocsp_ext.ll
-; openssl/optimized/libcrypto-shlib-ocsp_srv.ll
 ; openssl/optimized/libcrypto-shlib-ocsp_vfy.ll
-; openssl/optimized/libcrypto-shlib-p12_add.ll
-; openssl/optimized/libcrypto-shlib-p12_attr.ll
 ; openssl/optimized/libcrypto-shlib-p12_mutl.ll
-; openssl/optimized/libcrypto-shlib-p8_pkey.ll
 ; openssl/optimized/libcrypto-shlib-p_lib.ll
 ; openssl/optimized/libcrypto-shlib-packet.ll
 ; openssl/optimized/libcrypto-shlib-params_from_text.ll
@@ -765,23 +718,16 @@ entry:
 ; openssl/optimized/libcrypto-shlib-store_register.ll
 ; openssl/optimized/libcrypto-shlib-store_result.ll
 ; openssl/optimized/libcrypto-shlib-tasn_new.ll
-; openssl/optimized/libcrypto-shlib-ts_req_utils.ll
 ; openssl/optimized/libcrypto-shlib-ts_rsp_sign.ll
-; openssl/optimized/libcrypto-shlib-ts_rsp_utils.ll
 ; openssl/optimized/libcrypto-shlib-v3_purp.ll
 ; openssl/optimized/libcrypto-shlib-x509_att.ll
 ; openssl/optimized/libcrypto-shlib-x509_cmp.ll
-; openssl/optimized/libcrypto-shlib-x509_ext.ll
 ; openssl/optimized/libcrypto-shlib-x509_v3.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vpm.ll
 ; openssl/optimized/libcrypto-shlib-x509name.ll
-; openssl/optimized/libcrypto-shlib-x_algor.ll
-; openssl/optimized/libcrypto-shlib-x_bignum.ll
 ; openssl/optimized/libcrypto-shlib-x_crl.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
 ; openssl/optimized/libcrypto-shlib-x_name.ll
-; openssl/optimized/libcrypto-shlib-x_x509a.ll
 ; openssl/optimized/libdefault-lib-ecx_kmgmt.ll
 ; openssl/optimized/libdefault-lib-encode_key2any.ll
 ; openssl/optimized/libdefault-lib-hkdf.ll
@@ -799,7 +745,6 @@ entry:
 ; openssl/optimized/libssl-lib-ssl_asn1.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-lib-ssl_sess.ll
-; openssl/optimized/libssl-lib-tls_depr.ll
 ; openssl/optimized/libssl-lib-tls_srp.ll
 ; openssl/optimized/libssl-shlib-extensions_srvr.ll
 ; openssl/optimized/libssl-shlib-packet.ll
@@ -811,10 +756,8 @@ entry:
 ; openssl/optimized/libssl-shlib-ssl_asn1.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_sess.ll
-; openssl/optimized/libssl-shlib-tls_depr.ll
 ; openssl/optimized/libssl-shlib-tls_srp.ll
 ; openssl/optimized/libtestutil-lib-driver.ll
-; openssl/optimized/moduleloadtest-bin-simpledynamic.ll
 ; openssl/optimized/ocspapitest-bin-ocspapitest.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; openssl/optimized/openssl-bin-cmp_mock_srv.ll
@@ -823,14 +766,12 @@ entry:
 ; openssl/optimized/packettest-bin-packettest.ll
 ; openssl/optimized/quicapitest-bin-quicapitest.ll
 ; openssl/optimized/servername_test-bin-servername_test.ll
-; openssl/optimized/shlibloadtest-bin-simpledynamic.ll
 ; openssl/optimized/ssl_test-bin-handshake.ll
 ; openssl/optimized/ssl_test-bin-ssl_test_ctx.ll
 ; openssl/optimized/ssl_test_ctx_test-bin-ssl_test_ctx.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openssl/optimized/sslapitest-bin-tls-provider.ll
 ; openssl/optimized/sslbuffertest-bin-sslbuffertest.ll
-; openssl/optimized/threadstest_fips-bin-threadstest_fips.ll
 ; openssl/optimized/tls13secretstest-bin-packet.ll
 ; openssl/optimized/x509_check_cert_pkey_test-bin-x509_check_cert_pkey_test.ll
 ; openusd/optimized/bboxCache.cpp.ll
@@ -895,8 +836,6 @@ entry:
 ; postgres/optimized/tlist.ll
 ; postgres/optimized/tsquery_rewrite.ll
 ; proj/optimized/c_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/filemanager.cpp.ll
 ; proj/optimized/horner.cpp.ll
 ; proj/optimized/param.cpp.ll
 ; protobuf/optimized/extension_set.cc.ll
@@ -916,7 +855,6 @@ entry:
 ; qemu/optimized/hw_ide_qdev.c.ll
 ; qemu/optimized/hw_pci_pcie_port.c.ll
 ; qemu/optimized/hw_scsi_mptconfig.c.ll
-; qemu/optimized/meson-generated_.._dbus-display1.c.ll
 ; qemu/optimized/migration_block.c.ll
 ; qemu/optimized/migration_multifd.c.ll
 ; qemu/optimized/net_socket.c.ll
@@ -976,8 +914,6 @@ entry:
 ; sundials/optimized/idas.c.ll
 ; sundials/optimized/idas_ls.c.ll
 ; sundials/optimized/kinsol_ls.c.ll
-; sundials/optimized/sundials_context.c.ll
-; sundials/optimized/sundials_memory.c.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
@@ -987,7 +923,6 @@ entry:
 ; wireshark/optimized/epan.c.ll
 ; wireshark/optimized/extcap.c.ll
 ; wireshark/optimized/file_access.c.ll
-; wireshark/optimized/iface_toolbar.c.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-amqp.c.ll
@@ -1028,6 +963,7 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; z3/optimized/used_vars.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(ptr %0) #0 {

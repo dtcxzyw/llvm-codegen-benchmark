@@ -16,7 +16,7 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; darktable/optimized/avif.c.ll
 ; darktable/optimized/introspection_blurs.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -31,9 +31,8 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; minetest/optimized/mg_schematic.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = and i64 %2, 9223372036854775792
@@ -51,7 +50,7 @@ entry:
 ; minetest/optimized/mg_schematic.cpp.ll
 ; oiio/optimized/Writer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = zext nneg i32 %2 to i64

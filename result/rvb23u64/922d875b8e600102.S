@@ -19,3 +19,7 @@ func0000000000000014:                   # @func0000000000000014
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
+func0000000000000028:                   # @func0000000000000028
+	sext.w	a0, a0
+	sltiu	a0, a0, 256
+	ret

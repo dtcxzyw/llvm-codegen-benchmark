@@ -3,7 +3,7 @@ func0000000000000000:                   # @func0000000000000000
 	vand.vi	v8, v8, 1
 	li	a0, 16
 	vmsne.vi	v8, v8, 0
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0
 	li	a0, 24

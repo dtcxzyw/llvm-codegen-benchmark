@@ -3,7 +3,7 @@
 ; jq/optimized/regparse.ll
 ; oniguruma/optimized/regparse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000228(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 4
   %4 = shl i32 %1, 3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 15
   %4 = or disjoint i32 %1, 1073741824
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 15
   %4 = or disjoint i32 %1, -1073741824

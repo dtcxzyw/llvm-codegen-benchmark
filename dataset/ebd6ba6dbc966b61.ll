@@ -17,24 +17,6 @@ entry:
   ret i64 %7
 }
 
-; 6 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
-; spike/optimized/f32_to_f16.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 38
-  %4 = and i64 %3, 16383
-  %5 = or i64 %4, %0
-  %6 = and i64 %1, 2047
-  %7 = or i64 %5, %6
-  ret i64 %7
-}
-
 ; 2 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
@@ -43,8 +25,21 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 13
   %4 = and i64 %3, 8388608
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = and i64 %1, 268435456
+  %7 = or i64 %5, %6
+  ret i64 %7
+}
+
+; 1 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 22
+  %4 = and i64 %3, 1073741823
+  %5 = or i64 %4, %0
+  %6 = and i64 %1, 2047
   %7 = or i64 %5, %6
   ret i64 %7
 }

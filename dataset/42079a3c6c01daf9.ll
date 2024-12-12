@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; assimp/optimized/COBLoader.cpp.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; icu/optimized/simpletz.ll
@@ -7,6 +7,7 @@
 ; libquic/optimized/t_x509.c.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openssl/optimized/asn1_time_test-bin-a_time.ll
 ; openssl/optimized/ca_internals_test-bin-a_time.ll

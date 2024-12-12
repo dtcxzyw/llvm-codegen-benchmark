@@ -25,3 +25,17 @@ func000000000000000c:                   # @func000000000000000c
 	vpsubq	%ymm1, %ymm2, %ymm3 {%k1}
 	vpaddq	%ymm0, %ymm3, %ymm0
 	retq
+func000000000000000f:                   # @func000000000000000f
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vpaddq	%ymm0, %ymm2, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
+	retq
+func000000000000000d:                   # @func000000000000000d
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vpaddq	%ymm0, %ymm2, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
+	retq

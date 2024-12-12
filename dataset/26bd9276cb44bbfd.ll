@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; opencv/optimized/polynom_solver.cpp.ll
 ; openjdk/optimized/cmspcs.ll

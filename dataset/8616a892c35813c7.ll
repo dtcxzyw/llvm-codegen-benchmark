@@ -1,7 +1,9 @@
 
-; 15 occurrences:
+; 18 occurrences:
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
+; grpc/optimized/socket_utils_common_posix.cc.ll
+; grpc/optimized/tcp_socket_utils.cc.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/drm_property.ll
 ; linux/optimized/ndisc.ll
@@ -15,6 +17,7 @@
 ; postgres/optimized/tsvector_op.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -31,12 +34,10 @@ entry:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; minetest/optimized/connectionthreads.cpp.ll
 ; ocio/optimized/MathUtils.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; proxygen/optimized/HTTPServerAcceptor.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
@@ -45,6 +46,8 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_dense_diff_logic.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -53,8 +56,15 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; clamav/optimized/extract.cpp.ll
 ; darktable/optimized/tagging.c.ll
 ; linux/optimized/intel_sdvo.ll
@@ -63,7 +73,6 @@ entry:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; openjdk/optimized/ad_x86.ll
 ; openspiel/optimized/mancala.cc.ll
-; openusd/optimized/stringUtils.cpp.ll
 ; quantlib/optimized/saudiarabia.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
@@ -73,7 +82,7 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/kernel_timeout.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; cpython/optimized/fileutils.ll
@@ -87,7 +96,6 @@ entry:
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; openjdk/optimized/png.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
-; php/optimized/is_simh.ll
 ; postgres/optimized/xlog.ll
 ; wireshark/optimized/packet-rf4ce-profile.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -101,6 +109,7 @@ entry:
 
 ; 24 occurrences:
 ; abc/optimized/giaPat2.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; cvc5/optimized/linear_equality.cpp.ll
 ; cvc5/optimized/nl_lemma_utils.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
@@ -113,7 +122,6 @@ entry:
 ; linux/optimized/ttm_bo_util.ll
 ; linux/optimized/virtgpu_fence.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dlasyf.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll

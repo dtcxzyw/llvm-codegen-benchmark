@@ -4,10 +4,10 @@ func0000000000000004:                   # @func0000000000000004
 	sltiu	a1, a1, 769
 	and	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	zext.h	a1, a1
-	addi	a1, a1, -21
-	sltiu	a1, a1, 5
+	addi	a1, a1, -63
+	sltiu	a1, a1, 64
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c

@@ -22,9 +22,9 @@ func000000000000000d:                   # @func000000000000000d
 	cmoveq	%rcx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leaq	-32(%rsi), %rcx
+	leaq	11(%rsi), %rcx
 	testb	$1, %dil
-	movq	$-16, %rax
+	movabsq	$-9223372036854775807, %rax     # imm = 0x8000000000000001
 	cmoveq	%rcx, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002

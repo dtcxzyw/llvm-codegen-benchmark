@@ -1,62 +1,26 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	zip1	v3.8b, v0.8b, v0.8b
-	zip2	v0.8b, v0.8b, v0.8b
-	cmeq	v4.4s, v2.4s, #0
-	cmeq	v5.4s, v1.4s, #0
-	orr	v2.16b, v2.16b, v4.16b
-	ushll	v3.4s, v3.4h, #0
-	ushll	v0.4s, v0.4h, #0
-	orr	v1.16b, v1.16b, v5.16b
-	shl	v3.4s, v3.4s, #31
-	shl	v0.4s, v0.4s, #31
-	cmge	v3.4s, v3.4s, #0
-	cmge	v4.4s, v0.4s, #0
-	and	v0.16b, v1.16b, v3.16b
-	and	v1.16b, v2.16b, v4.16b
+	cmp	w1, #0
+	csinv	w8, w1, wzr, ne
+	tst	w0, #0x1
+	csel	w0, wzr, w8, ne
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	zip1	v3.8b, v0.8b, v0.8b
-	zip2	v0.8b, v0.8b, v0.8b
-	mvni	v4.4s, #2
-	cmhi	v5.4s, v2.4s, v4.4s
-	cmhi	v4.4s, v1.4s, v4.4s
-	ushll	v3.4s, v3.4h, #0
-	ushll	v0.4s, v0.4h, #0
-	bic	v2.16b, v2.16b, v5.16b
-	movi	v5.4s, #16
-	bic	v1.16b, v1.16b, v4.16b
-	shl	v3.4s, v3.4s, #31
-	shl	v0.4s, v0.4s, #31
-	cmlt	v3.4s, v3.4s, #0
-	cmlt	v4.4s, v0.4s, #0
-	mov	v0.16b, v3.16b
-	bsl	v0.16b, v5.16b, v1.16b
-	mov	v1.16b, v4.16b
-	bsl	v1.16b, v5.16b, v2.16b
+	cmn	w1, #3
+	mov	w8, #16                         // =0x10
+	csel	w9, wzr, w1, hi
+	tst	w0, #0x1
+	csel	w0, w8, w9, ne
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	zip1	v3.8b, v0.8b, v0.8b
-	zip2	v0.8b, v0.8b, v0.8b
+	cmp	w1, #359
 	mov	w8, #359                        // =0x167
-	dup	v4.4s, w8
-	ushll	v3.4s, v3.4h, #0
-	ushll	v0.4s, v0.4h, #0
-	cmgt	v5.4s, v2.4s, v4.4s
-	cmgt	v6.4s, v1.4s, v4.4s
-	shl	v3.4s, v3.4s, #31
-	shl	v0.4s, v0.4s, #31
-	bic	v2.16b, v2.16b, v5.16b
-	bic	v1.16b, v1.16b, v6.16b
-	cmlt	v3.4s, v3.4s, #0
-	cmlt	v5.4s, v0.4s, #0
-	mov	v0.16b, v3.16b
-	bsl	v0.16b, v4.16b, v1.16b
-	mov	v1.16b, v5.16b
-	bsl	v1.16b, v4.16b, v2.16b
+	csel	w9, wzr, w1, gt
+	tst	w0, #0x1
+	csel	w0, w8, w9, ne
 	ret
                                         // -- End function

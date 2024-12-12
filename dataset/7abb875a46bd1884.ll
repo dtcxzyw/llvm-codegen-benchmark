@@ -1,5 +1,6 @@
 
-; 99 occurrences:
+; 100 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -103,9 +104,9 @@
 define i32 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -116,15 +117,16 @@ entry:
 define i32 @func0000000000000029(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/contours_new.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; php/optimized/pcre2_dfa_match.ll
@@ -135,7 +137,20 @@ entry:
   %3 = icmp eq i32 %2, 455
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
+  ret i32 %6
+}
+
+; 2 occurrences:
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = and i1 %1, %3
+  %5 = sext i1 %4 to i32
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -147,7 +162,7 @@ entry:
   %3 = icmp ne i32 %2, 0
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -160,7 +175,7 @@ entry:
   %3 = icmp slt i32 %2, 3
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -173,19 +188,7 @@ entry:
   %3 = icmp sgt i32 %2, 1
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i32
-  %6 = add i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 0
-  %4 = and i1 %3, %1
-  %5 = sext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -198,7 +201,7 @@ entry:
   %3 = icmp ugt i32 %2, 63
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

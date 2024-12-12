@@ -5,7 +5,7 @@ func0000000000000285:                   # @func0000000000000285
 	add	a0, a0, a1
 	addiw	a0, a0, 256
 	ret
-func0000000000000215:                   # @func0000000000000215
+func0000000000000615:                   # @func0000000000000615
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
 	czero.nez	a1, a1, a2

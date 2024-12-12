@@ -25,8 +25,9 @@ func0000000000000038:                   # @func0000000000000038
 	retq
 func000000000000003f:                   # @func000000000000003f
 	andl	$1, %esi
-	addl	%edi, %esi
-	leal	8(,%rsi,8), %eax
+	leal	(%rsi,%rdi), %eax
+	shll	$4, %eax
+	addl	$400, %eax                      # imm = 0x190
 	retq
 func0000000000000000:                   # @func0000000000000000
 	andl	$1, %esi

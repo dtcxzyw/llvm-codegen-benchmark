@@ -1,6 +1,8 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifDec16.c.ll
+; abc/optimized/kitGraph.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind

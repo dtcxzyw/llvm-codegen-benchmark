@@ -1,48 +1,9 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	zip1	v3.8b, v2.8b, v0.8b
-	movi	v4.4s, #64
-	movi	v5.4s, #32
-	zip2	v2.8b, v2.8b, v0.8b
-	fmov	w8, s0
-	mov	w12, v0.s[3]
-	mov	w13, v1.s[1]
-	fmov	w14, s1
-	mov	w15, v1.s[2]
-	mov	w16, v1.s[3]
-	ushll	v3.4s, v3.4h, #0
-	ushll	v2.4s, v2.4h, #0
-	shl	v3.4s, v3.4s, #31
-	shl	v2.4s, v2.4s, #31
-	cmlt	v3.4s, v3.4s, #0
-	bsl	v3.16b, v5.16b, v4.16b
-	fmov	w9, s3
-	mov	w10, v3.s[1]
-	mov	w11, v3.s[2]
-	udiv	w8, w9, w8
-	mov	w9, v0.s[1]
-	udiv	w9, w10, w9
-	mov	w10, v0.s[2]
-	cmlt	v0.4s, v2.4s, #0
-	bsl	v0.16b, v5.16b, v4.16b
-	udiv	w10, w11, w10
-	mov	w11, v3.s[3]
-	udiv	w11, w11, w12
-	mov	w12, v0.s[1]
-	udiv	w12, w12, w13
-	fmov	w13, s0
-	udiv	w13, w13, w14
-	mov	w14, v0.s[2]
-	udiv	w14, w14, w15
-	mov	w15, v0.s[3]
-	fmov	s0, w8
-	fmov	s1, w13
-	mov	v0.s[1], w9
-	mov	v1.s[1], w12
-	mov	v0.s[2], w10
-	udiv	w8, w15, w16
-	mov	v1.s[2], w14
-	mov	v0.s[3], w11
-	mov	v1.s[3], w8
+	mov	w8, #64                         // =0x40
+	tst	w1, #0x1
+	mov	w9, #32                         // =0x20
+	csel	w8, w9, w8, ne
+	udiv	w0, w8, w0
 	ret
                                         // -- End function

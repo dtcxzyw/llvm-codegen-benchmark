@@ -5,14 +5,14 @@ func0000000000000001:                   # @func0000000000000001
 	movzbl	%al, %eax
 	cmovel	%edi, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	%edi, %eax
 	orb	$4, %al
 	testw	%si, %si
 	movzbl	%al, %eax
 	cmovsl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%edi, %eax
 	orb	$32, %al
 	testw	%si, %si

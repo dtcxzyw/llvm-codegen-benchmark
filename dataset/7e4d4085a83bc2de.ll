@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -99,16 +100,17 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000484(i32 %0, i32 %1, i128 %2) #0 {
+define i1 @func0000000000000904(i32 %0, i32 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 32
   %4 = trunc i128 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -208,11 +210,11 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000488(i32 %0, i32 %1, i128 %2) #0 {
+define i1 @func0000000000000908(i32 %0, i32 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 32
   %4 = trunc i128 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }

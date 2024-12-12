@@ -1,15 +1,21 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000000de:                   # @func00000000000000de
 	shlq	$4, %rdx
 	leaq	(%rdx,%rdi), %rax
 	subq	%rsi, %rax
 	retq
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	shlq	$5, %rdx
 	movl	$2, %eax
 	subl	%esi, %eax
 	shll	$3, %eax
 	addq	%rdx, %rax
 	addq	%rdi, %rax
+	retq
+func00000000000000be:                   # @func00000000000000be
+	shlq	$5, %rdx
+	leaq	(%rdx,%rdi), %rax
+	subq	%rsi, %rax
+	addq	$-32, %rax
 	retq
 func000000000000009a:                   # @func000000000000009a
 	shlq	$4, %rdx
@@ -45,13 +51,7 @@ func0000000000000070:                   # @func0000000000000070
 	subq	%rsi, %rax
 	subq	$-128, %rax
 	retq
-func00000000000000fa:                   # @func00000000000000fa
-	shlq	$4, %rdx
-	leaq	(%rdx,%rdi), %rax
-	subq	%rsi, %rax
-	addq	$7, %rax
-	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003b:                   # @func000000000000003b
 	leaq	(%rdi,%rdx,8), %rax
 	subq	%rsi, %rax
 	addq	$14, %rax
@@ -62,6 +62,14 @@ func0000000000000002:                   # @func0000000000000002
 	movl	$1, %eax
 	subq	%rsi, %rax
 	leaq	(%rdx,%rax,2), %rax
+	retq
+func00000000000000ff:                   # @func00000000000000ff
+	shlq	$10, %rdx
+	movl	$256, %eax                      # imm = 0x100
+	subl	%esi, %eax
+	shll	$2, %eax
+	addq	%rdx, %rax
+	addq	%rdi, %rax
 	retq
 func000000000000004a:                   # @func000000000000004a
 	leaq	(%rdi,%rdx,8), %rax

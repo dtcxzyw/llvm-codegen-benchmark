@@ -1,15 +1,11 @@
 
-; 14 occurrences:
+; 10 occurrences:
 ; cmake/optimized/entropy_common.c.ll
-; cmake/optimized/zbuff_common.c.ll
 ; cmake/optimized/zdict.c.ll
-; cmake/optimized/zstd_common.c.ll
 ; linux/optimized/entropy_common.ll
-; linux/optimized/zstd_common.ll
 ; lz4/optimized/lz4frame.c.ll
 ; zstd/optimized/entropy_common.c.ll
 ; zstd/optimized/zdict.c.ll
-; zstd/optimized/zstd_common.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll

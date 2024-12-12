@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -16,6 +16,8 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:

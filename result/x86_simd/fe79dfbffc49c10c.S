@@ -36,7 +36,7 @@
 	.zero	1
 .LCPI0_3:
 	.byte	49                              # 0x31
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsrlvq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
 	vpbroadcastb	.LCPI0_3(%rip), %xmm0   # xmm0 = [49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49]
@@ -81,7 +81,7 @@ func0000000000000031:                   # @func0000000000000031
 	.zero	1
 .LCPI1_3:
 	.byte	49                              # 0x31
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsrlvq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
 	vpbroadcastb	.LCPI1_3(%rip), %xmm0   # xmm0 = [49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49]
@@ -126,7 +126,7 @@ func0000000000000021:                   # @func0000000000000021
 	.zero	1
 .LCPI2_3:
 	.byte	49                              # 0x31
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpsrlvq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
 	vpbroadcastb	.LCPI2_3(%rip), %xmm0   # xmm0 = [49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49]

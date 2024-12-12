@@ -1,10 +1,11 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; luajit/optimized/lj_bcwrite.ll
 ; luajit/optimized/lj_bcwrite_dyn.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; nanosvg/optimized/nanosvg.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0) #0 {

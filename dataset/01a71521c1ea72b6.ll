@@ -21,7 +21,7 @@ entry:
   ret double %4
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/giaMuxes.c.ll
@@ -33,8 +33,6 @@ entry:
 ; icu/optimized/uchar.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; meshlab/optimized/texture_object.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/ccalib.cpp.ll

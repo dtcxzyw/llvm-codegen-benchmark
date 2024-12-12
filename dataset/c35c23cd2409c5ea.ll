@@ -1,5 +1,6 @@
 
-; 56 occurrences:
+; 57 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
@@ -67,10 +68,9 @@ entry:
   ret i32 %6
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/saigIsoFast.c.ll
 ; cvc5/optimized/linear_equality.cpp.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; llvm/optimized/Commit.cpp.ll
 ; llvm/optimized/MacroInfo.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll

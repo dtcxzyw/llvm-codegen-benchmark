@@ -7,6 +7,6 @@ func0000000000000002:                   # @func0000000000000002
 	andb	$15, %al
 	retq
 func0000000000000003:                   # @func0000000000000003
-	shrxl	%esi, %edi, %eax
-	andb	$3, %al
+	btl	%esi, %edi
+	setb	%al
 	retq

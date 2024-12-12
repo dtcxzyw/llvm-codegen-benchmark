@@ -18,11 +18,6 @@ func0000000000000009:                   # @func0000000000000009
 	srli	a0, a0, 61
 	addi	a0, a0, -1
 	ret
-func000000000000000b:                   # @func000000000000000b
-	slli	a0, a0, 37
-	srli	a0, a0, 61
-	addi	a0, a0, 4
-	ret
 func0000000000000008:                   # @func0000000000000008
 	srli	a0, a0, 24
 	andi	a0, a0, 223
@@ -39,4 +34,9 @@ func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 35
 	srli	a0, a0, 62
 	addi	a0, a0, 1
+	ret
+func000000000000000b:                   # @func000000000000000b
+	slli	a0, a0, 44
+	srli	a0, a0, 60
+	addi	a0, a0, 87
 	ret

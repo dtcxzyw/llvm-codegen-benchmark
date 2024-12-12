@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 74 occurrences:
 ; cmake/optimized/archive_entry.c.ll
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; cmake/optimized/doh.c.ll
@@ -52,6 +52,7 @@
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; ncnn/optimized/deconvolution_x86.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise_x86.cpp.ll
 ; ncnn/optimized/reshape_x86.cpp.ll
@@ -97,7 +98,8 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/to_chars.ll
 ; gromacs/optimized/dorml2.cpp.ll
 ; gromacs/optimized/sorml2.cpp.ll
 ; hermes/optimized/TypeInference.cpp.ll
@@ -117,6 +119,20 @@ entry:
 }
 
 ; 4 occurrences:
+; icu/optimized/csrmbcs.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/detokenize.c.ll
+; qemu/optimized/tcg-op-ldst.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 3
+  %3 = select i1 %0, i1 %2, i1 false
+  %4 = select i1 %3, i32 -25, i32 -17
+  ret i32 %4
+}
+
+; 4 occurrences:
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
@@ -130,13 +146,10 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 4 occurrences:
 ; clamav/optimized/unpack.cpp.ll
-; icu/optimized/csrmbcs.ll
 ; linux/optimized/random.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/detokenize.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
@@ -151,9 +164,9 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; wireshark/optimized/packet-cp2179.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 63
+  %2 = icmp samesign ugt i32 %1, 63
   %3 = select i1 %0, i1 %2, i1 false
   %4 = select i1 %3, i32 1023, i32 767
   ret i32 %4

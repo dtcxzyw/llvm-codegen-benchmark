@@ -1,5 +1,5 @@
 
-; 183 occurrences:
+; 185 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
@@ -9,6 +9,7 @@
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; abseil-cpp/optimized/time_zone_posix.cc.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/static_string.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/str.c.ll
@@ -27,6 +28,7 @@
 ; git/optimized/pathspec.ll
 ; git/optimized/urlmatch.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
+; graphviz/optimized/grammar.c.ll
 ; grpc/optimized/uri_parser.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-number.cc.ll
@@ -184,7 +186,7 @@
 ; wireshark/optimized/text_import_scanner.c.ll
 ; zxing/optimized/AZHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 1, %0
   %2 = and i64 %1, 4294983169
@@ -192,7 +194,7 @@ entry:
   ret i1 %3
 }
 
-; 85 occurrences:
+; 86 occurrences:
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
 ; cmake/optimized/cmCommandArgumentLexer.cxx.ll
 ; cmake/optimized/cmExprLexer.cxx.ll
@@ -207,6 +209,7 @@ entry:
 ; linux/optimized/xstate.ll
 ; llvm/optimized/ARMTargetParser.cpp.ll
 ; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; nanosvg/optimized/nanosvg.ll
 ; openjdk/optimized/compilerOracle.ll
 ; openjdk/optimized/jvmtiEventController.ll
@@ -279,7 +282,7 @@ entry:
 ; wireshark/optimized/candump_scanner.c.ll
 ; zxing/optimized/ODCodabarWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0) #0 {
+define i1 @func000000000000004c(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 1, %0
   %2 = and i64 %1, 4294983169
@@ -395,7 +398,7 @@ entry:
 ; wireshark/optimized/snoop.c.ll
 ; wireshark/optimized/wtap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 1, %0
   %2 = and i64 %1, 106102737862656
@@ -414,7 +417,7 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0) #0 {
+define i1 @func000000000000006c(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 1, %0
   %2 = and i64 %1, 102631199
@@ -422,15 +425,10 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 1 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0) #0 {
+define i1 @func0000000000000058(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 1, %0
   %2 = and i64 %1, 254
@@ -442,7 +440,7 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; linux/optimized/uncore_snbep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = icmp ugt i64 %0, 16
   ret i1 %1
@@ -455,11 +453,41 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0) #0 {
+define i1 @func0000000000000044(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 1, %0
   %2 = and i64 %1, -2
   %3 = icmp ult i64 %2, 4097
+  ret i1 %3
+}
+
+; 5 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i64 %0) #0 {
+entry:
+  %1 = shl nuw i64 1, %0
+  %2 = and i64 %1, -2
+  %3 = icmp ugt i64 %2, 8070450532247928832
+  ret i1 %3
+}
+
+; 5 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000054(i64 %0) #0 {
+entry:
+  %1 = shl nuw i64 1, %0
+  %2 = and i64 %1, -2
+  %3 = icmp samesign ult i64 %2, 4097
   ret i1 %3
 }
 

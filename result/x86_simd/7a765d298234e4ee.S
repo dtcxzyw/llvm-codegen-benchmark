@@ -38,7 +38,7 @@
 	.zero	1
 .LCPI0_4:
 	.byte	189                             # 0xbd
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpltuq	.LCPI0_1(%rip){1to4}, %ymm0, %k1
 	vpbroadcastb	.LCPI0_4(%rip), %xmm0   # xmm0 = [189,189,189,189,189,189,189,189,189,189,189,189,189,189,189,189]

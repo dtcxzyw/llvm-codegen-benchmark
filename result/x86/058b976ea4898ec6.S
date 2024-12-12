@@ -9,17 +9,17 @@ func0000000000000030:                   # @func0000000000000030
 	movl	%esi, %eax
 	addq	%rcx, %rax
 	retq
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	leaq	(%rdi,%rdx,2), %rcx
 	movl	%esi, %eax
 	addq	%rcx, %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000006f:                   # @func000000000000006f
 	leaq	(%rdi,%rdx,2), %rcx
 	movl	%esi, %eax
 	addq	%rcx, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	shlq	$19, %rdx
 	addq	%rdi, %rdx
 	movl	%esi, %eax
@@ -41,13 +41,13 @@ func0000000000000050:                   # @func0000000000000050
 	movl	%esi, %eax
 	addq	%rcx, %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	shlq	$4, %rdx
 	addq	%rdi, %rdx
 	movl	%esi, %eax
 	leaq	(%rdx,%rax,4), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	shlq	$4, %rdx
 	addq	%rdi, %rdx
 	movl	%esi, %eax
@@ -59,25 +59,30 @@ func0000000000000010:                   # @func0000000000000010
 	movl	%esi, %eax
 	leaq	(%rdx,%rax,8), %rax
 	retq
-func0000000000000072:                   # @func0000000000000072
+func0000000000000073:                   # @func0000000000000073
 	leaq	(%rdi,%rdx,8), %rax
 	movl	%esi, %ecx
 	leaq	(%rax,%rcx,8), %rax
 	retq
-func0000000000000062:                   # @func0000000000000062
+func0000000000000063:                   # @func0000000000000063
 	leaq	(%rdi,%rdx,8), %rax
 	movl	%esi, %ecx
 	leaq	(%rax,%rcx,8), %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000004b:                   # @func000000000000004b
 	shlq	$20, %rdx
 	movl	%esi, %eax
 	addq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	shlq	$4, %rdx
 	addq	%rdi, %rdx
 	movl	%esi, %eax
 	leaq	(%rdx,%rax,8), %rax
+	retq
+func000000000000003b:                   # @func000000000000003b
+	leaq	(%rdi,%rdx,4), %rax
+	movl	%esi, %ecx
+	leaq	(%rax,%rcx,4), %rax
 	retq

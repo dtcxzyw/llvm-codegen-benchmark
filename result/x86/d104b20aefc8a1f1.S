@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.quad	0x3fb999999999999a              # double 0.10000000000000001
+	.quad	0x4010000000000000              # double 4
 func0000000000000002:                   # @func0000000000000002
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpltsd	%xmm3, %xmm2, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vmovsd	.LCPI0_0(%rip), %xmm0           # xmm0 = [1.0000000000000001E-1,0.0E+0]
+	vmovsd	.LCPI0_0(%rip), %xmm0           # xmm0 = [4.0E+0,0.0E+0]
 	vsubsd	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI1_0:

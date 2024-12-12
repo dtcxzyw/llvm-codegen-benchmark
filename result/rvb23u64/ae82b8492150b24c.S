@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	zext.w	a2, a1
 	addi	a1, a1, -3
 	czero.eqz	a1, a2, a1

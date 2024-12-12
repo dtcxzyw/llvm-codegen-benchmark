@@ -11,21 +11,15 @@ func0000000000000023:                   # @func0000000000000023
 	movl	$384, %eax                      # imm = 0x180
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
-	leaq	(%rdi,%rdi), %rcx
-	cmpq	$34, %rsi
-	movl	$32, %eax
-	cmovaeq	%rcx, %rax
-	retq
-func0000000000000020:                   # @func0000000000000020
-	shlq	$5, %rdi
-	cmpq	$34, %rsi
-	movl	$512, %eax                      # imm = 0x200
-	cmovaeq	%rdi, %rax
-	retq
 func000000000000002b:                   # @func000000000000002b
 	shlq	$32, %rdi
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	cmovgq	%rdi, %rax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	leaq	(,%rdi,8), %rcx
+	cmpq	$9, %rsi
+	movl	$32, %eax
+	cmovaeq	%rcx, %rax
 	retq

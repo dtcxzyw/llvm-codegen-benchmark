@@ -23,7 +23,7 @@
 ; ruby/optimized/vm.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 128
   %4 = icmp eq i64 %3, 0
@@ -40,7 +40,7 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c5(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000185(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967292
   %4 = icmp ne i64 %3, 0
@@ -61,7 +61,7 @@ entry:
 ; openjdk/optimized/zNMethodTable.ll
 ; openspiel/optimized/tarok.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp ne i64 %3, 0
@@ -77,7 +77,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp ne i64 %3, 0
@@ -89,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_file_cache.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
@@ -102,7 +102,7 @@ entry:
 ; abc/optimized/utilSort.c.ll
 ; wireshark/optimized/uat_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
   %4 = icmp ne i64 %3, 0
@@ -114,7 +114,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000025(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 6
   %4 = icmp eq i64 %3, 2
@@ -128,7 +128,7 @@ entry:
 ; linux/optimized/rtmutex_api.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 32768
   %4 = icmp ne i64 %3, 0
@@ -140,23 +140,11 @@ entry:
 ; 1 occurrences:
 ; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp ne i64 %3, 0
   %5 = icmp ult ptr %0, %1
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/mutex.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 6
-  %4 = icmp eq i64 %3, 0
-  %5 = icmp eq ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
 }

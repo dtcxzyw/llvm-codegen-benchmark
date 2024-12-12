@@ -1,10 +1,6 @@
 
-; 33 occurrences:
-; clamav/optimized/readdb.c.ll
+; 29 occurrences:
 ; cmake/optimized/huf_compress.c.ll
-; linux/optimized/af_packet.ll
-; linux/optimized/nsproxy.ll
-; linux/optimized/raw.ll
 ; openvdb/optimized/Activate.cc.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/ChangeBackground.cc.ll
@@ -34,13 +30,13 @@
 ; openvdb/optimized/points.cc.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 5
   %4 = icmp eq i32 %3, 0
   %5 = icmp eq ptr %1, null
   %6 = or i1 %5, %4
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -50,13 +46,13 @@ entry:
 ; llvm/optimized/ThinLTOBitcodeWriter.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000604(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp ne i32 %3, 12
   %5 = icmp eq ptr %1, null
   %6 = or i1 %5, %4
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

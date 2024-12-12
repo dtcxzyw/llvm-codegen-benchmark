@@ -4,13 +4,13 @@ func0000000000000006:                   # @func0000000000000006
 	setge	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
-	decl	%esi
+func000000000000002c:                   # @func000000000000002c
+	incl	%edx
 	cmpl	%edx, %esi
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subl	%esi, %edx
 	cmpl	$-2, %edx
 	setl	%al

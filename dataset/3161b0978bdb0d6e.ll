@@ -1,10 +1,10 @@
 
 ; 5 occurrences:
+; boost/optimized/gregorian.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i32 %0, i64 %1, i32 %2) #0 {
 entry:

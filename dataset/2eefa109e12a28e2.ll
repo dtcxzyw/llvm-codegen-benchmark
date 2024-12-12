@@ -14,10 +14,10 @@
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000546(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = icmp sgt i16 %4, 0
   %6 = icmp slt i16 %0, 0
   %7 = and i1 %6, %5
@@ -28,10 +28,10 @@ entry:
 ; curl/optimized/libcurl_la-tftp.ll
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000421(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = icmp eq i16 %4, -1
   %6 = icmp eq i16 %0, 0
   %7 = and i1 %6, %5
@@ -41,10 +41,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000428(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = icmp eq i16 %4, 3
   %6 = icmp ugt i16 %0, 3
   %7 = and i1 %6, %5

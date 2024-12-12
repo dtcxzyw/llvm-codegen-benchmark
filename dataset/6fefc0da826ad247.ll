@@ -1,5 +1,6 @@
 
-; 37 occurrences:
+; 38 occurrences:
+; boost/optimized/message.ll
 ; git/optimized/rev-parse.ll
 ; git/optimized/urlmatch.ll
 ; linux/optimized/intel_guc_submission.ll
@@ -38,7 +39,7 @@
 ; tev/optimized/Common.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr %1, ptr %2
@@ -73,7 +74,7 @@ entry:
 ; z3/optimized/theory_char.cpp.ll
 ; z3/optimized/theory_datatype.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr %1, ptr %2
@@ -87,7 +88,7 @@ entry:
 ; qemu/optimized/block_vmdk.c.ll
 ; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr %1, ptr %2
@@ -98,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/mutableNUMASpace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000025(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr %1, ptr %2
@@ -112,7 +113,7 @@ entry:
 ; redis/optimized/redis-benchmark.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000028(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr %1, ptr %2

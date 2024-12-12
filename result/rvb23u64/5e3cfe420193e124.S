@@ -23,3 +23,9 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 48
 	czero.nez	a0, a1, a0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a0, a0
+	zext.w	a1, a1
+	sltiu	a0, a0, 264
+	czero.eqz	a0, a1, a0
+	ret

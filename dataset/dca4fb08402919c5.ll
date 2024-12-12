@@ -1,9 +1,8 @@
 
-; 88 occurrences:
+; 87 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
-; eastl/optimized/TestMemory.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/Operations.cpp.ll

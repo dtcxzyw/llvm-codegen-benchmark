@@ -53,16 +53,14 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_zip.c.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 %0, %1
-  %3 = icmp eq i64 %2, 48
-  %4 = zext i1 %3 to i32
-  ret i32 %4
+  %2 = icmp eq i64 %0, %1
+  %3 = zext i1 %2 to i32
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

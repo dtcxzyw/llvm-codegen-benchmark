@@ -31,19 +31,8 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
-; grpc/optimized/parser.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = icmp eq i8 %2, 13
-  %4 = sext i1 %3 to i64
-  %5 = sub nuw i64 %0, %1
-  %6 = add i64 %5, %4
-  ret i64 %6
-}
-
-; 146 occurrences:
+; 144 occurrences:
+; boost/optimized/topology.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
 ; nix/optimized/archive.ll
@@ -130,13 +119,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -197,6 +183,19 @@ entry:
   %4 = sext i1 %3 to i64
   %5 = sub nuw nsw i64 %0, %1
   %6 = add nsw i64 %5, %4
+  ret i64 %6
+}
+
+; 2 occurrences:
+; grpc/optimized/parser.cc.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, 33
+  %4 = sext i1 %3 to i64
+  %5 = sub nuw i64 %0, %1
+  %6 = add i64 %5, %4
   ret i64 %6
 }
 

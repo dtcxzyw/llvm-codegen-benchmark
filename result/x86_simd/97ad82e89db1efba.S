@@ -12,5 +12,5 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000008:                   # @func0000000000000008
 	vpcmpnltud	.LCPI1_0(%rip){1to8}, %ymm2, %k1
 	vandps	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1 {%k1}
-	vorps	%ymm0, %ymm1, %ymm0
+	vorps	%ymm1, %ymm0, %ymm0
 	retq

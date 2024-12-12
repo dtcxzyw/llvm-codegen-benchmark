@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.quad	0xbff0000000000000              # double -1
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vaddsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	cmpl	$8, %edi
 	setb	%al

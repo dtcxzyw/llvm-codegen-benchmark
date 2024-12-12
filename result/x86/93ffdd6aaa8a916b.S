@@ -2,7 +2,7 @@
 	.quad	0x412c448400000000              # double 926274
 func0000000000000007:                   # @func0000000000000007
 	vaddsd	.LCPI0_0(%rip), %xmm1, %xmm1
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpneqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
@@ -11,7 +11,7 @@ func0000000000000007:                   # @func0000000000000007
 	.quad	0x3fe0000000000000              # double 0.5
 func000000000000000c:                   # @func000000000000000c
 	vaddsd	.LCPI1_0(%rip), %xmm1, %xmm1
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setae	%al
@@ -39,7 +39,7 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000000e:                   # @func000000000000000e
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vaddsd	%xmm2, %xmm1, %xmm1
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm0
 	setnp	%al
 	retq

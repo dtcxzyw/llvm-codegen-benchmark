@@ -14,7 +14,7 @@
 ; redis/optimized/llex.ll
 ; ruby/optimized/file.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0) #0 {
+define i1 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 255
   %2 = zext nneg i32 %1 to i64
@@ -39,7 +39,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/charsets.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0) #0 {
+define i1 @func00000000000000e1(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 3
   %2 = zext nneg i32 %1 to i64
@@ -56,7 +56,7 @@ entry:
 ; qemu/optimized/tcg-op-ldst.c.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0) #0 {
+define i1 @func00000000000000ec(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 31
   %2 = zext nneg i32 %1 to i64
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/ir.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0) #0 {
+define i1 @func00000000000000cc(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 255
   %2 = zext nneg i32 %1 to i64
@@ -86,7 +86,7 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0) #0 {
+define i1 @func00000000000000c4(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 63
   %2 = zext nneg i32 %1 to i64
@@ -103,13 +103,30 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0) #0 {
+define i1 @func00000000000000c8(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 63
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = and i64 %3, -2
   %5 = icmp ugt i64 %4, 8070450532247928832
+  ret i1 %5
+}
+
+; 5 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d4(i32 %0) #0 {
+entry:
+  %1 = and i32 %0, 63
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw i64 1, %2
+  %4 = and i64 %3, -2
+  %5 = icmp samesign ult i64 %4, 4097
   ret i1 %5
 }
 

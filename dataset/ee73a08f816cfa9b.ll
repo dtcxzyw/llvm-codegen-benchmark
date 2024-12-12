@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; linux/optimized/dvo_ch7017.ll
+; 3 occurrences:
 ; linux/optimized/intel_dram.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll

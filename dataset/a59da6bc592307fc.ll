@@ -1,6 +1,6 @@
 
-%struct.rb_econv_elem_t.2485295 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%struct.cert_pkey_st.2518882 = type { ptr, ptr, ptr, ptr, i64 }
+%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%struct.cert_pkey_st.2633834 = type { ptr, ptr, ptr, ptr, i64 }
 
 ; 29 occurrences:
 ; abc/optimized/acecPool.c.ll
@@ -36,11 +36,11 @@
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
-  %3 = getelementptr %struct.rb_econv_elem_t.2485295, ptr %0, i64 %2, i32 5
+  %3 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %2, i32 5
   ret ptr %3
 }
 
-; 205 occurrences:
+; 198 occurrences:
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; c3c/optimized/parse_stmt.c.ll
@@ -49,7 +49,6 @@ entry:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/regexec.c.ll
 ; cmake/optimized/archive_read_disk_posix.c.ll
-; cmake/optimized/huf_compress.c.ll
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
 ; cvc5/optimized/ceg_arith_instantiator.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -133,7 +132,6 @@ entry:
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -167,9 +165,6 @@ entry:
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/inventorymanager.cpp.ll
-; mini-lsm-rs/optimized/211qm7emy1a6xqse.ll
-; mini-lsm-rs/optimized/4lbrpk7rlft27pjz.ll
-; mini-lsm-rs/optimized/4pxsm0diss0gwzgi.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/input-sections.cc.ALPHA.cc.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
@@ -210,7 +205,6 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; openjdk/optimized/hb-ot-shaper-khmer.ll
-; openjdk/optimized/hb-ot-shaper-myanmar.ll
 ; openjdk/optimized/hb-paint.ll
 ; openjdk/optimized/hb-set.ll
 ; openjdk/optimized/hb-shape-plan.ll
@@ -245,12 +239,11 @@ entry:
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
-; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
-  %3 = getelementptr nusw %struct.cert_pkey_st.2518882, ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw nuw %struct.cert_pkey_st.2633834, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

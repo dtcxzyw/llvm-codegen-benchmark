@@ -119,15 +119,4 @@ entry:
   ret i128 %4
 }
 
-; 2 occurrences:
-; qemu/optimized/accel_tcg_cputlb.c.ll
-; qemu/optimized/accel_tcg_user-exec.c.ll
-; Function Attrs: nounwind
-define i128 @func0000000000000004(i128 %0, i128 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ult i64 %2, 9
-  %4 = select i1 %3, i128 %0, i128 %1
-  ret i128 %4
-}
-
 attributes #0 = { nounwind }

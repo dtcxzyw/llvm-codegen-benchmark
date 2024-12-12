@@ -11,14 +11,15 @@ entry:
   ret i8 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/alternative.ll
 ; wireshark/optimized/packet-gtp.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 6
-  %3 = select i1 %0, i8 %2, i8 1
+  %3 = select i1 %0, i8 %2, i8 3
   ret i8 %3
 }
 

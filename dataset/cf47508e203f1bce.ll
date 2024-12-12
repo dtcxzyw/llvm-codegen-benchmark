@@ -41,12 +41,12 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = and i32 %3, 3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [4 x [3 x i8]], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [4 x [3 x i8]], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

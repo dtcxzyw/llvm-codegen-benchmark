@@ -8,11 +8,6 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	leal	-4(%rdx), %eax
-	testb	$1, %dil
-	cmovneq	%rsi, %rax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	leal	2085978496(%rdx), %eax
 	testb	$1, %dil

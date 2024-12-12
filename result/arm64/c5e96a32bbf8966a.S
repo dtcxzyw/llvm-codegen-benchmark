@@ -1,45 +1,26 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	mov	w8, #42240                      // =0xa500
-	neg	v2.4s, v2.4s
-	neg	v3.4s, v3.4s
 	movk	w8, #64095, lsl #16
-	movi	v5.4s, #3
-	dup	v4.4s, w8
-	ushl	v2.4s, v4.4s, v2.4s
-	ushl	v3.4s, v4.4s, v3.4s
-	and	v3.16b, v3.16b, v5.16b
-	and	v2.16b, v2.16b, v5.16b
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	lsr	w8, w8, w1
+	and	w8, w8, #0x3
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	mov	w8, #3392                       // =0xd40
-	neg	v2.4s, v2.4s
-	neg	v3.4s, v3.4s
 	movk	w8, #82, lsl #16
-	movi	v5.4s, #192
-	dup	v4.4s, w8
-	ushl	v2.4s, v4.4s, v2.4s
-	ushl	v3.4s, v4.4s, v3.4s
-	and	v3.16b, v3.16b, v5.16b
-	and	v2.16b, v2.16b, v5.16b
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	lsr	w8, w8, w1
+	and	w8, w8, #0xc0
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v4.4s, #203
-	neg	v2.4s, v2.4s
-	neg	v3.4s, v3.4s
-	ushl	v2.4s, v4.4s, v2.4s
-	ushl	v3.4s, v4.4s, v3.4s
-	bic	v3.4s, #254
-	bic	v2.4s, #254
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	mov	w8, #203                        // =0xcb
+	lsr	w8, w8, w1
+	and	w8, w8, #0x1
+	add	w0, w8, w0
 	ret
                                         // -- End function

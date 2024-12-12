@@ -20,25 +20,25 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrlw	$15, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
-	.short	254                             # 0xfe
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
+	.short	130                             # 0x82
 func0000000000000006:                   # @func0000000000000006
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm0
-	vpsrlw	$1, %ymm0, %ymm0
+	vpsrlw	$8, %ymm0, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

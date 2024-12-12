@@ -9,3 +9,10 @@ func000000000000001b:                   # @func000000000000001b
 	li	a1, 10
 	mulhu	a0, a0, a1
 	ret
+func000000000000003b:                   # @func000000000000003b
+	lui	a1, 109951
+	addiw	a1, a1, 667
+	slli	a1, a1, 12
+	addi	a1, a1, -1077
+	mulhu	a0, a0, a1
+	ret

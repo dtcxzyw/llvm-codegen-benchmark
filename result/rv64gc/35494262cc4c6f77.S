@@ -5,3 +5,9 @@ func0000000000000001:                   # @func0000000000000001
 	subw	a0, a1, a2
 .LBB0_2:                                # %entry
 	ret
+func0000000000000021:                   # @func0000000000000021
+	sext.w	a3, a1
+	beqz	a3, .LBB1_2
+	subw	a0, a1, a2
+.LBB1_2:                                # %entry
+	ret

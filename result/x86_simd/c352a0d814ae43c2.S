@@ -16,7 +16,7 @@
 	.short	2114                            # 0x842
 	.short	2114                            # 0x842
 	.short	2114                            # 0x842
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpmullw	.LCPI0_0(%rip), %xmm0, %xmm0    # [31711,31711,31711,31711,31711,31711,31711,31711]

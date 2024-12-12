@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 68 occurrences:
 ; brotli/optimized/block_splitter.c.ll
 ; clamav/optimized/others.c.ll
 ; curl/optimized/libcurl_la-rtsp.ll
@@ -40,7 +40,6 @@
 ; openssl/optimized/libcrypto-shlib-provider_core.ll
 ; openssl/optimized/libssl-lib-statem_dtls.ll
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
-; php/optimized/pcre2_maketables.ll
 ; postgres/optimized/varlena.ll
 ; qemu/optimized/dump_dump.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -75,7 +74,7 @@ entry:
   %2 = trunc i64 %1 to i8
   %3 = and i8 %2, 7
   %4 = shl nuw i8 1, %3
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -87,7 +86,7 @@ entry:
   %2 = trunc nuw i64 %1 to i8
   %3 = and i8 %2, 7
   %4 = shl nuw i8 1, %3
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

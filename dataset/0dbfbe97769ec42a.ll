@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 44 occurrences:
 ; coreutils-rs/optimized/1e5pt7vtfxa4ahz7.ll
 ; linux/optimized/filter.ll
 ; openjdk/optimized/interpreterRT_x86_64.ll
@@ -43,6 +43,7 @@
 ; taskflow/optimized/text_pipeline.cpp.ll
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:

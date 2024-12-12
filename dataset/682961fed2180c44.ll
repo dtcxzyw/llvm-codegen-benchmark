@@ -1,15 +1,17 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000492(i128 %0, i64 %1, i128 %2) #0 {
+define i64 @func0000000000000892(i128 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = zext i1 %4 to i64
   %6 = trunc nuw i128 %0 to i64
   %7 = add nuw i64 %5, %6
@@ -23,14 +25,16 @@ entry:
 define i64 @func0000000000000090(i128 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = zext i1 %4 to i64
   %6 = trunc nuw i128 %0 to i64
   %7 = add i64 %5, %6
   ret i64 %7
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; quickjs/optimized/libbf.ll
@@ -39,7 +43,7 @@ entry:
 define i64 @func0000000000000092(i128 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = zext i1 %4 to i64
   %6 = trunc nuw i128 %0 to i64
   %7 = add nuw i64 %5, %6

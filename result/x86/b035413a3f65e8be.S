@@ -3,8 +3,8 @@ func0000000000000008:                   # @func0000000000000008
 	leaq	1(%rax), %rcx
 	testb	$1, %dl
 	cmoveq	%rax, %rcx
-	cmpq	%rsi, %rcx
-	setb	%al
+	cmpq	%rcx, %rsi
+	seta	%al
 	orb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$3, %eax
 	movl	$64, %ecx
 	cmovneq	%rax, %rcx
-	cmpq	%rsi, %rcx
+	cmpq	%rcx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq

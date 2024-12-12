@@ -11,7 +11,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 17
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 
@@ -37,11 +37,11 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 380141568
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   ret i32 %3
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; folly/optimized/farmhash.cpp.ll
@@ -50,6 +50,8 @@ entry:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; jq/optimized/decNumber.ll
 ; libpng/optimized/pngrtran.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
@@ -83,7 +85,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 16842752
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   ret i32 %3
 }
 
@@ -94,7 +96,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 257
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 
@@ -109,7 +111,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 56
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   ret i32 %3
 }
 
@@ -126,7 +128,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, -2
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 

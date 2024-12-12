@@ -28,7 +28,7 @@ entry:
   ret i16 %2
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -46,7 +46,6 @@ entry:
 ; libjpeg-turbo/optimized/jdarith.c.ll
 ; libjpeg-turbo/optimized/jdphuff.c.ll
 ; libjpeg-turbo/optimized/wrgif.c.ll
-; libquic/optimized/custom_extensions.c.ll
 ; linux/optimized/ahci.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/e100.ll
@@ -55,12 +54,10 @@ entry:
 ; linux/optimized/nl80211.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pcmcia_resource.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/rsutils.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/Function.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openjdk/optimized/jdphuff.ll
@@ -75,6 +72,8 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i32 %0) #0 {
@@ -116,10 +115,10 @@ entry:
 ; linux/optimized/cgroup-v1.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/he.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/vht.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
+; postgres/optimized/heapam.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
@@ -153,7 +152,7 @@ entry:
   ret i16 %2
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/trees.c.ll
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/trees.c.ll
@@ -165,7 +164,6 @@ entry:
 ; linux/optimized/ata_piix.ll
 ; linux/optimized/deftree.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; miniaudio/optimized/unity.c.ll

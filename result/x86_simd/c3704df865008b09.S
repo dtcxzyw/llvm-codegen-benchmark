@@ -32,7 +32,7 @@
 	.short	13                              # 0xd
 	.short	13                              # 0xd
 	.short	13                              # 0xd
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpsllw	$7, %xmm1, %xmm0

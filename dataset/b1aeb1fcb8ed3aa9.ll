@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 56 occurrences:
 ; abc/optimized/sclUpsize.c.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_prismatic_joint.cpp.ll
@@ -20,7 +20,12 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; minetest/optimized/player_sao.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; mitsuba3/optimized/medium.cpp.ll
@@ -46,6 +51,11 @@
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

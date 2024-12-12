@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; assimp/optimized/IRRMeshLoader.cpp.ll
 ; assimp/optimized/IRRShared.cpp.ll
@@ -48,6 +48,7 @@
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; stb/optimized/stb_easy_font.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(i32 %0) #0 {
 entry:

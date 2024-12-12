@@ -26,10 +26,12 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/alloc_lib.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; hdf5/optimized/H5PB.c.ll
 ; libquic/optimized/mul.c.ll
+; llvm/optimized/CodeGenSchedule.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_mul.ll
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
@@ -99,9 +101,9 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 96
+  %3 = icmp samesign ult i64 %2, 96
   %4 = select i1 %3, i64 %1, i64 48
   %5 = sub nsw i64 %0, %4
   ret i64 %5
@@ -115,19 +117,6 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 0
   %5 = sub nuw i64 %0, %4
-  ret i64 %5
-}
-
-; 3 occurrences:
-; cpython/optimized/obmalloc.ll
-; mimalloc/optimized/alloc-aligned.c.ll
-; mimalloc/optimized/alloc.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %2, 7
-  %4 = select i1 %3, i64 %1, i64 0
-  %5 = sub i64 %0, %4
   ret i64 %5
 }
 

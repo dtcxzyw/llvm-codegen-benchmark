@@ -1,7 +1,8 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDsd.c.ll
+; abc/optimized/sfmCnf.c.ll
 ; cpython/optimized/_ctypes_test.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; libquic/optimized/curve25519.c.ll

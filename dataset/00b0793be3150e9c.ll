@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/setup-bus.ll
 ; logos-rs/optimized/3ih0g5a6fbccjl2z.ll
+; lvgl/optimized/lv_tlsf.ll
 ; pyo3-rs/optimized/36bd5489ry9qsmb9.ll
 ; wasmtime-rs/optimized/1y39e8j6qsvzx17r.ll
 ; Function Attrs: nounwind
@@ -36,7 +37,7 @@ define i64 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = add nsw i64 %0, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, %2
   %6 = add i64 %5, %3
   ret i64 %6

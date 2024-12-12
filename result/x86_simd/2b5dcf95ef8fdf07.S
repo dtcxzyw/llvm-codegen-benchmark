@@ -6,7 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 	retq
 func0000000000000018:                   # @func0000000000000018
 	vorpd	%ymm2, %ymm1, %ymm1
-	vcmpeqpd	%ymm0, %ymm1, %k0
+	vcmpeqpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

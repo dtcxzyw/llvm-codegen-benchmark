@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/nwkTiming.c.ll
@@ -50,6 +50,7 @@
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

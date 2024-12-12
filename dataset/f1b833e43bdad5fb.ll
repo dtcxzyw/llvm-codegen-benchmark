@@ -1,15 +1,17 @@
 
-; 220 occurrences:
+; 255 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaTim.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/ObjExporter.cpp.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/syslog_backend.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/nulsft.c.ll
-; cmake/optimized/archive_write_add_filter_gzip.c.ll
 ; cmake/optimized/mprintf.c.ll
+; cmake/optimized/nghttp2_hd.c.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
 ; coreutils-rs/optimized/4l9vhhaykgv9gwpd.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
@@ -66,12 +68,12 @@
 ; linux/optimized/rsparser.ll
 ; linux/optimized/socket.ll
 ; linux/optimized/trace_events_filter.ll
-; linux/optimized/uthex.ll
 ; linux/optimized/virtio_blk.ll
 ; linux/optimized/xfrm_output.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/NativeFormatting.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
@@ -81,6 +83,7 @@
 ; llvm/optimized/TemplateBase.cpp.ll
 ; llvm/optimized/TextStubV5.cpp.ll
 ; llvm/optimized/YAMLTraits.cpp.ll
+; lvgl/optimized/lv_freetype.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; meilisearch-rs/optimized/3m3x2x3yg1gvj93u.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
@@ -130,8 +133,6 @@
 ; postgres/optimized/euc_jp_and_sjis.ll
 ; postgres/optimized/spgdoinsert.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
-; qdrant-rs/optimized/3ikx3rq9ywmfirmj.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; quest/optimized/QuEST_common.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -151,7 +152,6 @@
 ; rust-analyzer-rs/optimized/4vsvhf9zazn013de.ll
 ; rust-analyzer-rs/optimized/5djmpgt9ghwflvfq.ll
 ; rust-analyzer-rs/optimized/7zmg1hi276ncg5y.ll
-; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; rust-analyzer-rs/optimized/szzdhauy9a7fxwe.ll
@@ -196,7 +196,6 @@
 ; wireshark/optimized/cosine.c.ll
 ; wireshark/optimized/ftype-bytes.c.ll
 ; wireshark/optimized/iax2_analysis_dialog.cpp.ll
-; wireshark/optimized/packet-fcct.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/proto.c.ll
@@ -219,6 +218,42 @@
 ; yosys/optimized/calc.ll
 ; yosys/optimized/fmt.ll
 ; yosys/optimized/freduce.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/12xam7q4l70h0vr8y5wvb4s4a.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/1zouf8lsjy712uoerw5fyy4vf.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8epszlr2612bvdrsn7g83nprl.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/c4c7jl64zv8zhv2ne6xdvhty4.ll
+; zed-rs/optimized/ca5us8h013in59yvcsgdq94h9.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {

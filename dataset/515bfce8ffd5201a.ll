@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/charconv_test.cc.ll
 ; cpython/optimized/mathmodule.ll
 ; glslang/optimized/Pp.cpp.ll
@@ -21,7 +21,6 @@
 ; hermes/optimized/SynthTrace.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
-; qemu/optimized/meson-generated_.._dbus-display1.c.ll
 ; quickjs/optimized/quickjs-libc.ll
 ; quickjs/optimized/quickjs.ll
 ; stat-rs/optimized/rkxxfn3f5mhspne.ll
@@ -30,7 +29,7 @@
 define i1 @func0000000000000001(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -43,7 +42,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -53,7 +52,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   ret i1 %3
 }
 

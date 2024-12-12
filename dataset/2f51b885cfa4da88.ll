@@ -5,7 +5,7 @@
 ; luau/optimized/ltable.cpp.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, double %1, double %2) #0 {
+define i1 @func000000000000010a(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %1, %2
   %4 = icmp sgt i32 %0, 0
@@ -18,7 +18,7 @@ entry:
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/Passes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, double %1, double %2) #0 {
+define i1 @func000000000000010c(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %1, %2
   %4 = icmp ne i32 %0, -1
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/nodeHash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000086(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = icmp slt i32 %0, 1073741824
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/pathnode.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, double %1, double %2) #0 {
+define i1 @func000000000000008c(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = icmp ne i32 %0, 2
@@ -86,7 +86,7 @@ entry:
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000104(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %1, %2
   %4 = icmp ult i32 %0, 65536
@@ -119,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dgesvj.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, double %1, double %2) #0 {
+define i1 @func000000000000004c(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = icmp ne i32 %0, 0
@@ -134,7 +134,7 @@ entry:
 ; sundials/optimized/cvodea.c.ll
 ; sundials/optimized/idaa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000101(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %1, %2
   %4 = icmp eq i32 %0, 2
@@ -145,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/taper.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, double %1, double %2) #0 {
+define i1 @func000000000000006a(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %1, %2
   %4 = icmp sgt i32 %0, 0

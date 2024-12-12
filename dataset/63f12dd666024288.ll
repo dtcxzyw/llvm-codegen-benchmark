@@ -1,5 +1,5 @@
 
-; 142 occurrences:
+; 140 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -73,8 +73,6 @@
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -163,40 +161,8 @@ entry:
   ret i64 %5
 }
 
-; 21 occurrences:
-; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestIterator.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
-; freetype/optimized/autofit.c.ll
-; hdf5/optimized/H5Tconv_bitfield.c.ll
-; hdf5/optimized/H5Tconv_float.c.ll
-; hdf5/optimized/H5Tconv_integer.c.ll
-; hdf5/optimized/h5ls.c.ll
-; jemalloc/optimized/stats.ll
-; jemalloc/optimized/stats.pic.ll
-; jemalloc/optimized/stats.sym.ll
-; linux/optimized/trace_probe.ll
-; llvm/optimized/BitcodeAnalyzer.cpp.ll
-; llvm/optimized/BitcodeReader.cpp.ll
-; qemu/optimized/hw_rtc_goldfish_rtc.c.ll
-; redis/optimized/stats.ll
-; redis/optimized/stats.sym.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = shl i64 %0, 32
-  %5 = sub i64 %4, %3
-  ret i64 %5
-}
-
-; 4 occurrences:
+; 3 occurrences:
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libjpeg-turbo/optimized/jidctred.c.ll
 ; Function Attrs: nounwind
@@ -216,6 +182,36 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
+  %4 = shl i64 %0, 3
+  %5 = sub i64 %4, %3
+  ret i64 %5
+}
+
+; 20 occurrences:
+; eastl/optimized/TestBitVector.cpp.ll
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestIterator.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; freetype/optimized/autofit.c.ll
+; hdf5/optimized/H5Tconv_bitfield.c.ll
+; hdf5/optimized/H5Tconv_float.c.ll
+; hdf5/optimized/H5Tconv_integer.c.ll
+; hdf5/optimized/h5ls.c.ll
+; jemalloc/optimized/stats.ll
+; jemalloc/optimized/stats.pic.ll
+; jemalloc/optimized/stats.sym.ll
+; linux/optimized/trace_probe.ll
+; llvm/optimized/BitcodeAnalyzer.cpp.ll
+; llvm/optimized/BitcodeReader.cpp.ll
+; redis/optimized/stats.ll
+; redis/optimized/stats.sym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
   %4 = shl i64 %0, 3
   %5 = sub i64 %4, %3
   ret i64 %5

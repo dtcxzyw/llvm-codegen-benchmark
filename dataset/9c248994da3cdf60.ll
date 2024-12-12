@@ -1,13 +1,11 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; icu/optimized/calendar.ll
 ; icu/optimized/chnsecal.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/collationsets.ll
 ; icu/optimized/islamcal.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
-; libquic/optimized/random.c.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; opencv/optimized/distrans.cpp.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll

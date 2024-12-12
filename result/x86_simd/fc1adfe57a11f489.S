@@ -11,7 +11,7 @@ func0000000000000002:                   # @func0000000000000002
 	.long	255                             # 0xff
 .LCPI1_1:
 	.zero	16,1
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm0, %k1 {%k1}
@@ -22,7 +22,7 @@ func0000000000000058:                   # @func0000000000000058
 	.long	73                              # 0x49
 .LCPI2_1:
 	.zero	16,1
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
 	vpcmpeqd	.LCPI2_0(%rip){1to8}, %ymm0, %k1 {%k1}

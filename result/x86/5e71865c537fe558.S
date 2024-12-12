@@ -1,4 +1,4 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000000db:                   # @func00000000000000db
 	negl	%esi
 	subq	%rsi, %rdi
 	leaq	8(%rdi), %rax

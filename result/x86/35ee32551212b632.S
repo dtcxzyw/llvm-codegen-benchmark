@@ -5,8 +5,8 @@ func000000000000000a:                   # @func000000000000000a
 	shrq	$63, %rcx
 	sarq	$35, %rax
 	addl	%ecx, %eax
-	cmpl	%esi, %eax
-	setae	%al
+	cmpl	%eax, %esi
+	setbe	%al
 	orb	%dil, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
@@ -14,7 +14,7 @@ func0000000000000002:                   # @func0000000000000002
 	testl	%edx, %edx
 	cmovnsl	%edx, %eax
 	sarl	$3, %eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	sete	%al
 	orb	%dil, %al
 	retq

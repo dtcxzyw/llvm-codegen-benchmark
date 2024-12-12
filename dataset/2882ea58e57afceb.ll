@@ -1,5 +1,8 @@
 
-; 15 occurrences:
+; 18 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -34,29 +37,6 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = and i64 %0, -4096
-  %4 = add i64 %.neg, %3
-  ret i64 %4
-}
-
-; 2 occurrences:
-; hermes/optimized/BytecodeGenerator.cpp.ll
-; llvm/optimized/LowerTypeTests.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %.neg = sub i64 %2, %1
-  %3 = and i64 %0, 4294967292
-  %4 = add i64 %.neg, %3
-  ret i64 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/qrcode_encoder.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %.neg = sub i64 %2, %1
-  %3 = and i64 %0, -2
   %4 = add i64 %.neg, %3
   ret i64 %4
 }

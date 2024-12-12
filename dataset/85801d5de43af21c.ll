@@ -57,12 +57,12 @@
 ; verilator/optimized/V3DfgAstToDfg.cpp.ll
 ; z3/optimized/dyn_ack.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000007e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = mul nuw nsw i64 %3, 24
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 24
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 24
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -73,12 +73,12 @@ entry:
 ; llvm/optimized/GlobalMerge.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000005e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = mul nuw i64 %3, 80
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 80
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 80
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }

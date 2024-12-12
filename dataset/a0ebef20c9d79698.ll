@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/rtf.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hermes/optimized/HBCParser.cpp.ll
@@ -18,7 +19,7 @@ entry:
   ret i64 %6
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/sclLibScl.c.ll
 ; clamav/optimized/7zIn.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -34,7 +35,6 @@ entry:
 ; nix/optimized/derivations.ll
 ; nix/optimized/export-import.ll
 ; nix/optimized/legacy-ssh-store.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/remote-store.ll
 ; nix/optimized/serialise.ll
 ; nix/optimized/serve-protocol-impl.ll
@@ -90,13 +90,12 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/proto.cc.ll
 ; cmake/optimized/alone_decoder.c.ll
 ; cpython/optimized/_pickle.ll
 ; libwebp/optimized/bit_reader_utils.c.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/nsconvert.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; spike/optimized/csrs.ll
 ; Function Attrs: nounwind

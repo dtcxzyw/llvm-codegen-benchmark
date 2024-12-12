@@ -13,7 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	16,8
 .LCPI1_2:
 	.zero	4,24
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqb	.LCPI1_1(%rip), %xmm0, %xmm0
 	retq
@@ -23,7 +23,7 @@ func0000000000000011:                   # @func0000000000000011
 	.zero	16,8
 .LCPI2_2:
 	.zero	4,15
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm0, %xmm0
 	vpcmpgtb	.LCPI2_1(%rip), %xmm0, %xmm0
 	retq
@@ -43,7 +43,7 @@ func000000000000000c:                   # @func000000000000000c
 	.zero	16,48
 .LCPI4_2:
 	.zero	4,56
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpandd	.LCPI4_2(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqb	.LCPI4_1(%rip), %xmm0, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0

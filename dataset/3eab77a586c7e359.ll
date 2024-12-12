@@ -9,9 +9,9 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000087(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000187(i32 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, 3
+  %2 = icmp samesign ugt i8 %1, 3
   %3 = zext i1 %2 to i32
   %4 = and i32 %0, 2
   %5 = or disjoint i32 %4, 1

@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -10,12 +10,10 @@
 ; grpc/optimized/bin_encoder.cc.ll
 ; hermes/optimized/Conversions.cpp.ll
 ; libjpeg-turbo/optimized/wrgif.c.ll
-; linux/optimized/8250_lpss.ll
 ; linux/optimized/amd_nb.ll
 ; linux/optimized/mpage.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/util.ll
-; linux/optimized/vclock_gettime.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/ELF.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
@@ -27,7 +25,6 @@
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; quest/optimized/QuEST.c.ll
-; spike/optimized/i64_to_f32.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:

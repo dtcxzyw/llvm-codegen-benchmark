@@ -8,9 +8,14 @@ func0000000000000006:                   # @func0000000000000006
 	testq	%rdx, %rdx
 	cmovnsl	%esi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	cmpq	$65536, %rdx                    # imm = 0x10000
+	cmovael	%esi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	%edi, %eax
+	cmpq	$27, %rdx
 	cmovael	%esi, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -22,6 +27,11 @@ func0000000000000008:                   # @func0000000000000008
 	movl	%edi, %eax
 	cmpq	$8, %rdx
 	cmovbl	%esi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%edi, %eax
+	cmpq	$127, %rdx
+	cmovbel	%esi, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax

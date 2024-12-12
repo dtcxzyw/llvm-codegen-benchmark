@@ -33,7 +33,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.quad	5                               # 0x5
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vmovq	%xmm0, %rdx
 	movabsq	$-3689348814741910323, %rdi     # imm = 0xCCCCCCCCCCCCCCCD
 	mulxq	%rdi, %rax, %rax

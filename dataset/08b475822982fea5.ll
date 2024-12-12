@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 96 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
@@ -22,7 +22,6 @@
 ; coreutils-rs/optimized/3l1fz4picv1xqozx.ll
 ; coreutils-rs/optimized/4ez78vmdxhxkcda.ll
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
-; coreutils-rs/optimized/4j5cjya214zps8p4.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
@@ -49,6 +48,7 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TailDuplicator.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lvgl/optimized/lv_obj_event.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
@@ -90,9 +90,12 @@
 ; wasmtime-rs/optimized/2x1mxlm9f496za8a.ll
 ; wasmtime-rs/optimized/4y19gy3l28n56lab.ll
 ; wasmtime-rs/optimized/5poarlxbfmu9lbg.ll
-; wasmtime-rs/optimized/awtl26sjra3upo4.ll
-; wasmtime-rs/optimized/oont1606ku4b766.ll
+; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
@@ -101,7 +104,7 @@ entry:
   ret i32 %2
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/kitBdd.c.ll
 ; abc/optimized/mapperUtils.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -110,7 +113,6 @@ entry:
 ; gromacs/optimized/xtc2.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libjpeg-turbo/optimized/wrgif.c.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/mballoc.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
@@ -124,8 +126,8 @@ entry:
 ; openusd/optimized/tile_common.c.ll
 ; wireshark/optimized/packet-mtp2.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; zxing/optimized/AZEncoder.cpp.ll
-; zxing/optimized/AZToken.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -20,7 +20,6 @@
 ; oiio/optimized/farmhash.cpp.ll
 ; oiio/optimized/ustring.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
-; postgres/optimized/shm_toc.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -137,18 +136,6 @@ entry:
   %4 = and i64 %3, -8
   %5 = add nsw i64 %0, %1
   %6 = add i64 %5, %4
-  ret i64 %6
-}
-
-; 1 occurrences:
-; glog/optimized/signalhandler.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 4294967295
-  %5 = add nsw i64 %0, %1
-  %6 = add nsw i64 %4, %5
   ret i64 %6
 }
 

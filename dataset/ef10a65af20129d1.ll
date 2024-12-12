@@ -1,7 +1,8 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; faiss/optimized/IndexBinaryHNSW.cpp.ll
 ; faiss/optimized/IndexHNSW.cpp.ll
+; luau/optimized/IrAnalysis.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/large_kinfu.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
@@ -14,7 +15,7 @@
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 2
@@ -27,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000012a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000024a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 2
@@ -44,7 +45,7 @@ entry:
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 5
@@ -63,7 +64,7 @@ entry:
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 2

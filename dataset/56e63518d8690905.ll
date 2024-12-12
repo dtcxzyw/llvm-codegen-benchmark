@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 44 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/bacReadVer.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -41,6 +41,7 @@
 ; postgres/optimized/formatting.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; qemu/optimized/util_uri.c.ll
+; quickjs/optimized/libregexp.ll
 ; redis/optimized/sds.ll
 ; wireshark/optimized/packet-memcache.c.ll
 ; Function Attrs: nounwind
@@ -49,7 +50,7 @@ entry:
   %2 = and i8 %1, -33
   %3 = add i8 %2, -91
   %4 = icmp ult i8 %3, -26
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -58,12 +59,12 @@ entry:
 ; llvm/optimized/Visitor.cpp.ll
 ; wireshark/optimized/packet-wtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = add nsw i8 %2, -4
   %4 = icmp ult i8 %3, 3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

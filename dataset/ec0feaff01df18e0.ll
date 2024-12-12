@@ -1,5 +1,5 @@
 
-; 199 occurrences:
+; 210 occurrences:
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
@@ -199,6 +199,17 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; vcpkg/optimized/hash.cpp.ll
 ; wolfssl/optimized/sha512.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -208,10 +219,8 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; quantlib/optimized/mt19937uniformrng.ll
-; quest/optimized/mt19937ar.c.ll
-; redis/optimized/mt19937-64.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:

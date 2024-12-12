@@ -10,7 +10,7 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; faiss/optimized/IndexBinaryIVF.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/IndexIVFPQFastScan.cpp.ll
@@ -23,6 +23,8 @@ entry:
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; oiio/optimized/imageoutput.cpp.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

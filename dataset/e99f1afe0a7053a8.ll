@@ -29,7 +29,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl nuw i64 1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 
@@ -41,7 +41,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = shl nuw nsw i64 1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 
@@ -52,7 +52,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl nsw i64 -1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 

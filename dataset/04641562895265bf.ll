@@ -1,14 +1,13 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; libpng/optimized/pngread.c.ll
-; linux/optimized/eht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll
 ; openjdk/optimized/pngread.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000061(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 64
   %3 = icmp eq i8 %2, 0
@@ -17,8 +16,7 @@ entry:
   ret i8 %5
 }
 
-; 7 occurrences:
-; linux/optimized/acpi_pnp.ll
+; 6 occurrences:
 ; linux/optimized/kallsyms.ll
 ; linux/optimized/nsrepair2.ll
 ; linux/optimized/nsutils.ll

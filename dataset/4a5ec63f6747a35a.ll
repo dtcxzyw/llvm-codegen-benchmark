@@ -50,7 +50,8 @@ entry:
   ret i64 %1
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/area.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; llvm/optimized/FlattenCFG.cpp.ll

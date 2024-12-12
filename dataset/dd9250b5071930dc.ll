@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/clock_test.cc.ll
@@ -28,6 +28,9 @@
 ; protobuf/optimized/time_util.cc.ll
 ; ruby/optimized/time.ll
 ; velox/optimized/Timestamp.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:

@@ -1,11 +1,10 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; git/optimized/column.ll
 ; gromacs/optimized/energyoutput.cpp.ll
 ; ipopt/optimized/IpGenAugSystemSolver.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/descriptor.cpp.ll
@@ -26,7 +25,7 @@ entry:
   ret i64 %6
 }
 
-; 36 occurrences:
+; 33 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; cpython/optimized/codeobject.ll
 ; darktable/optimized/amaze.cc.ll
@@ -36,15 +35,12 @@ entry:
 ; icu/optimized/genrb.ll
 ; linux/optimized/sched.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsptrf.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll

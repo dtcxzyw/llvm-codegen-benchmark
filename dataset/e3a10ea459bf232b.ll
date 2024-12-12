@@ -14,10 +14,9 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; hyperscan/optimized/mcsheng.c.ll
 ; linux/optimized/cacheinfo.ll
-; linux/optimized/hdac_controller.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
@@ -34,11 +33,9 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/instanceStackChunkKlass.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-enrp.c.ll
 ; wireshark/optimized/packet-mpls-echo.c.ll
 ; wireshark/optimized/packet-ppcap.c.ll
 ; wireshark/optimized/packet-sctp.c.ll

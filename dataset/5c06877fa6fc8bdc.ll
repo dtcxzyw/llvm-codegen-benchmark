@@ -16,7 +16,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 2, %1
   %3 = add i64 %2, -1
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -40,7 +40,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %notmask = shl nsw i64 -1, %1
   %2 = xor i64 %notmask, -1
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 

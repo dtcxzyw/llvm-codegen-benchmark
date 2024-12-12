@@ -6,8 +6,7 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movl	%esi, %eax
-	shll	$8, %eax
-	andl	$-16777216, %eax                # imm = 0xFF000000
+	andl	$-268435456, %eax               # imm = 0xF0000000
 	orl	%edi, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006

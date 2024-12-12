@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/OGLPaints.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000035(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000055(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 4
   %4 = icmp sgt i32 %2, 4
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ModuleMap.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 2
   %4 = icmp eq i32 %2, 23
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000043(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 512
   %4 = icmp eq i32 %2, 0
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/g4x_hdmi.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 201326592
   %4 = icmp sgt i32 %2, 24

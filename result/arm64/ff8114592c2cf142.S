@@ -19,12 +19,28 @@ func0000000000000006:                   // @func0000000000000006
 	sub	x0, x0, w1, uxth
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	mov	w8, #6                          // =0x6
                                         // kill: def $w1 killed $w1 def $x1
 	sub	x8, x8, w1, uxth
 	add	x0, x0, x8, lsl #2
+	ret
+                                        // -- End function
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+	mov	w8, #5                          // =0x5
+                                        // kill: def $w1 killed $w1 def $x1
+	sub	x8, x8, w1, uxth
+	add	x0, x0, x8, lsl #2
+	ret
+                                        // -- End function
+func000000000000000e:                   // @func000000000000000e
+// %bb.0:                               // %entry
+	mov	x8, #-4870                      // =0xffffffffffffecfa
+                                        // kill: def $w1 killed $w1 def $x1
+	sub	x8, x8, w1, uxth
+	add	x0, x0, x8, lsl #5
 	ret
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e

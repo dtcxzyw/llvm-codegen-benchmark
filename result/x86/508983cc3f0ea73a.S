@@ -33,8 +33,3 @@ func000000000000001a:                   # @func000000000000001a
 	setbe	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
-	vucomiss	%xmm0, %xmm0
-	setnp	%al
-	andb	%dil, %al
-	retq

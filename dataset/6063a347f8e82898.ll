@@ -5,22 +5,22 @@
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -68,7 +68,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -80,7 +80,7 @@ define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = icmp ne i64 %4, %0
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
@@ -90,15 +90,91 @@ entry:
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = and i64 %3, 3
-  %5 = icmp eq i64 %4, %0
+  %4 = and i64 %3, 4294967292
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 14 occurrences:
+; 3 occurrences:
+; minetest/optimized/CB3DMeshFileLoader.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; qemu/optimized/fdt_sw.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = and i64 %3, 4294967295
+  %5 = icmp ugt i64 %0, %4
+  ret i1 %5
+}
+
+; 13 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; minetest/optimized/CB3DMeshFileLoader.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = and i64 %3, 4294967295
+  %5 = icmp samesign ult i64 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; minetest/optimized/CB3DMeshFileLoader.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = and i64 %3, 4294967295
+  %5 = icmp ugt i64 %0, %4
+  ret i1 %5
+}
+
+; 4 occurrences:
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; hdf5/optimized/H5HL.c.ll
+; minetest/optimized/CB3DMeshFileLoader.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = and i64 %3, 4294967295
+  %5 = icmp samesign ult i64 %0, %4
+  ret i1 %5
+}
+
+; 4 occurrences:
+; hdf5/optimized/H5HL.c.ll
+; linux/optimized/move_extent.ll
+; linux/optimized/truncate.ll
+; minetest/optimized/CB3DMeshFileLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = and i64 %3, 4294967295
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
+; 12 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; freetype/optimized/autofit.c.ll
@@ -110,83 +186,23 @@ entry:
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; minetest/optimized/CB3DMeshFileLoader.cpp.ll
-; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; qemu/optimized/fdt_sw.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = and i64 %3, 4294967295
-  %5 = icmp ult i64 %4, %0
-  ret i1 %5
-}
-
-; 17 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_qr.cc.ll
-; cmake/optimized/signal.c.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
-; libuv/optimized/signal.c.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/matching.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
-; minetest/optimized/CB3DMeshFileLoader.cpp.ll
-; minetest/optimized/CXMeshFileLoader.cpp.ll
-; node/optimized/signal.ll
-; php/optimized/softmagic.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = and i64 %3, 4294967295
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; minetest/optimized/CB3DMeshFileLoader.cpp.ll
-; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %1, %2
+  %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp samesign ugt i64 %0, %4
   ret i1 %5
 }
 
-; 6 occurrences:
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; hdf5/optimized/H5HL.c.ll
-; linux/optimized/move_extent.ll
-; linux/optimized/truncate.ll
-; minetest/optimized/CB3DMeshFileLoader.cpp.ll
-; minetest/optimized/CXMeshFileLoader.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = and i64 %3, 4294967295
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
-}
-
-; 23 occurrences:
-; assimp/optimized/BlenderLoader.cpp.ll
+; 18 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/readahead.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -195,8 +211,6 @@ entry:
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/OffloadBinary.cpp.ll
-; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; llvm/optimized/SveEmitter.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; qemu/optimized/system_physmem.c.ll
@@ -206,25 +220,53 @@ define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -262144
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
+; 4 occurrences:
+; cmake/optimized/signal.c.ll
+; libuv/optimized/signal.c.ll
+; node/optimized/signal.ll
+; php/optimized/softmagic.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = and i64 %3, 4294967295
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
+; 5 occurrences:
+; assimp/optimized/BlenderLoader.cpp.ll
+; linux/optimized/readahead.ll
+; llvm/optimized/AArch64CallingConvention.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/SveEmitter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = and i64 %3, 4294967295
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; luau/optimized/lnumprint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = and i64 %3, -4
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; libquic/optimized/ex_data.c.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
-; linux/optimized/readahead.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
@@ -235,7 +277,18 @@ define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 2147483647
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/readahead.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = and i64 %3, 4294967295
+  %5 = icmp samesign ugt i64 %0, %4
   ret i1 %5
 }
 

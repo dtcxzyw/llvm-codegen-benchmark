@@ -4,11 +4,11 @@
 ; llvm/optimized/SanitizerCoverage.cpp.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i1 %1, i1 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 1, i64 4294967295
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw [2 x ptr], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [2 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

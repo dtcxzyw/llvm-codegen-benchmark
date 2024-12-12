@@ -8,12 +8,13 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -1
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
-; 16 occurrences:
+; 19 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
+; boost/optimized/area.ll
 ; freetype/optimized/psaux.c.ll
 ; git/optimized/diff.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
@@ -29,12 +30,14 @@ entry:
 ; mitsuba3/optimized/func.cpp.ll
 ; openusd/optimized/av1_loopfilter.c.ll
 ; wolfssl/optimized/rsa.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -1
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -56,7 +59,7 @@ define i32 @func0000000000000023(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 13
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -79,7 +82,7 @@ define i32 @func0000000000000028(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -1
   %4 = select i1 %3, i32 %1, i32 4
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -102,7 +105,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

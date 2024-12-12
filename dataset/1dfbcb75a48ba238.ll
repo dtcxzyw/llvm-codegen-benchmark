@@ -71,7 +71,7 @@ entry:
   ret i1 %5
 }
 
-; 65 occurrences:
+; 62 occurrences:
 ; abc/optimized/abcXsim.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/introspection_lens.cc.ll
@@ -114,10 +114,7 @@ entry:
 ; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dstebz.c.ll
 ; openblas/optimized/dstemr.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/fast_norm.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
@@ -146,19 +143,17 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 16 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; bullet3/optimized/btConvexPointCloudShape.ll
 ; eastl/optimized/EAString.cpp.ll
 ; graphviz/optimized/quad_prog_solve.c.ll
-; gromacs/optimized/lmmin.cpp.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/smpdtfmt.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
-; nori/optimized/warptest.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; openmpi/optimized/oob_tcp_connection.ll
@@ -166,7 +161,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; quantlib/optimized/lmdif.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000006a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -174,10 +169,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; git/optimized/read-cache.ll
 ; qemu/optimized/hw_display_bochs-display.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -189,7 +185,7 @@ entry:
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; qemu/optimized/hw_display_bochs-display.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -211,9 +207,9 @@ entry:
 ; gromacs/optimized/lmmin.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
 ; icu/optimized/smpdtfmt.ll
-; linux/optimized/nfs4renewd.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
+; opencv/optimized/model.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; openjdk/optimized/gtk_interface.ll
 ; php/optimized/dfa_pass.ll
@@ -223,7 +219,7 @@ entry:
 ; sundials/optimized/arkode_mristep.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -235,7 +231,7 @@ entry:
 ; php/optimized/dfa_pass.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -257,20 +253,6 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; libdeflate/optimized/deflate_compress.c.ll
-; openspiel/optimized/dou_dizhu_utils.cc.ll
-; openusd/optimized/openexr-c.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = select i1 %0, i32 %3, i32 %1
-  %5 = icmp ult i32 %4, 9
-  ret i1 %5
-}
-
 ; 11 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
@@ -284,7 +266,7 @@ entry:
 ; openjdk/optimized/jdmarker.ll
 ; redis/optimized/dict.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -296,7 +278,7 @@ entry:
 ; hyperscan/optimized/program_runtime.c.ll
 ; openjdk/optimized/jdmarker.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -304,7 +286,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
@@ -312,15 +294,13 @@ entry:
 ; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/swapcoords.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
-; opencv/optimized/fundamental_solver.cpp.ll
-; opencv/optimized/model.cpp.ll
 ; openjdk/optimized/imageioJPEG.ll
 ; openjdk/optimized/jpegdecoder.ll
 ; postgres/optimized/lock.ll
 ; quantlib/optimized/lmdif.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -328,11 +308,24 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; libdeflate/optimized/deflate_compress.c.ll
+; openspiel/optimized/dou_dizhu_utils.cc.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = icmp ult i32 %4, 5
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -340,10 +333,22 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
+; opencv/optimized/fundamental_solver.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = icmp samesign ult i32 %4, 3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -355,7 +360,7 @@ entry:
 ; gromacs/optimized/dsyevr.cpp.ll
 ; gromacs/optimized/ssyevr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -366,7 +371,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/updategroups.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
@@ -384,6 +389,17 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
   %5 = icmp ugt i32 %4, 134217728
+  ret i1 %5
+}
+
+; 1 occurrences:
+; nori/optimized/warptest.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = icmp samesign ugt i32 %4, 7
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 434 occurrences:
+; 445 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -12,7 +12,6 @@
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -54,6 +53,10 @@
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; cpython/optimized/basearith.ll
@@ -434,15 +437,23 @@
 ; wolfssl/optimized/poly1305.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000002(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nuw i128 %2, %0
+  %3 = mul nuw i128 %0, %2
   ret i128 %3
 }
 
-; 189 occurrences:
+; 188 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -606,7 +617,6 @@ entry:
 ; postgres/optimized/d2s_srv.ll
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/hw_intc_riscv_aclint.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_net_e1000x_common.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; qemu/optimized/util_cutils.c.ll
@@ -636,11 +646,11 @@ entry:
 define i128 @func0000000000000003(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nuw nsw i128 %2, %0
+  %3 = mul nuw nsw i128 %0, %2
   ret i128 %3
 }
 
-; 184 occurrences:
+; 183 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -800,7 +810,6 @@ entry:
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; qemu/optimized/util_cutils.c.ll
 ; quickjs/optimized/libbf.ll
@@ -829,12 +838,13 @@ entry:
 define i128 @func0000000000000007(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = mul nuw nsw i128 %2, %0
+  %3 = mul nuw nsw i128 %0, %2
   ret i128 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/approximately_equals.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-keypair.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
@@ -845,7 +855,7 @@ entry:
 define i128 @func0000000000000000(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul i128 %2, %0
+  %3 = mul i128 %0, %2
   ret i128 %3
 }
 
@@ -856,7 +866,7 @@ entry:
 define i128 @func0000000000000001(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nsw i128 %2, %0
+  %3 = mul nsw i128 %0, %2
   ret i128 %3
 }
 
@@ -867,7 +877,7 @@ entry:
 define i128 @func0000000000000005(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = mul nsw i128 %2, %0
+  %3 = mul nsw i128 %0, %2
   ret i128 %3
 }
 
@@ -877,7 +887,7 @@ entry:
 define i128 @func0000000000000004(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = mul i128 %2, %0
+  %3 = mul i128 %0, %2
   ret i128 %3
 }
 

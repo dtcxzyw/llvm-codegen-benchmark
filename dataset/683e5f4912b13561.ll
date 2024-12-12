@@ -30,6 +30,18 @@ entry:
   ret i1 %3
 }
 
+; 2 occurrences:
+; lvgl/optimized/lv_arc.ll
+; raylib/optimized/rcore.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, float %1) #0 {
+entry:
+  %2 = fsub float 3.600000e+02, %1
+  %3 = fcmp ogt float %2, 2.800000e+02
+  %4 = and i1 %3, %0
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; Function Attrs: nounwind
@@ -48,7 +60,7 @@ define i1 @func000000000000000a(i1 %0, float %1) #0 {
 entry:
   %2 = fsub float 3.600000e+02, %1
   %3 = fcmp ole float %2, 1.500000e+02
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -59,18 +71,7 @@ define i1 @func0000000000000002(i1 %0, float %1) #0 {
 entry:
   %2 = fsub float 3.600000e+02, %1
   %3 = fcmp olt float %2, 2.100000e+02
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; raylib/optimized/rcore.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, float %1) #0 {
-entry:
-  %2 = fsub float 3.600000e+02, %1
-  %3 = fcmp ogt float %2, 1.500000e+02
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

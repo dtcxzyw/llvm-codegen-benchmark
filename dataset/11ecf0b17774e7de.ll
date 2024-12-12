@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 35 occurrences:
 ; abc/optimized/giaIso.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -17,7 +17,6 @@
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
@@ -28,13 +27,11 @@
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openusd/optimized/decodemv.c.ll
 ; openvdb/optimized/Merge.cc.ll
-; postgres/optimized/rangetypes_gist.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; spike/optimized/debug_module.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_bcd.cpp.ll
 ; z3/optimized/smtfd_solver.cpp.ll

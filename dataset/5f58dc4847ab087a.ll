@@ -234,11 +234,11 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007c7(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000001d87(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = icmp sge i32 %4, %0
+  %5 = icmp sle i32 %0, %4
   %6 = icmp ne i32 %1, 0
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7

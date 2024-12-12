@@ -27,9 +27,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/ConstantRange.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 97 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -45,7 +45,7 @@
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hdf5/optimized/H5Tvlen.c.ll
-; hdf5/optimized/H5VLnative_blob.c.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libquic/optimized/x25519-x86_64.c.ll
@@ -86,6 +86,14 @@
 ; wireshark/optimized/packet-zbee-direct.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -143,7 +151,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 5
   %5 = zext nneg i8 %1 to i64
   %6 = or disjoint i64 %4, %5
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 

@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; assimp/optimized/BVHLoader.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = ashr exact i64 %1, 2
-  %5 = mul i64 %4, %3
-  %6 = getelementptr nusw float, ptr %0, i64 %5
-  ret ptr %6
-}
-
 ; 2 occurrences:
 ; darktable/optimized/RawImage.cpp.ll
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
@@ -24,8 +12,7 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
-; darktable/optimized/RawImage.cpp.ll
+; 3 occurrences:
 ; icu/optimized/uarrsort.ll
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
 ; opencv/optimized/matrix.cpp.ll

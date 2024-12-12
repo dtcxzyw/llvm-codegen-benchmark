@@ -10,7 +10,8 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/approximately_equals.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; clamav/optimized/unpack.cpp.ll
 ; icu/optimized/decNumber.ll

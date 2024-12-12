@@ -74,25 +74,25 @@ func0000000000000000:                   # @func0000000000000000
 	vzeroupper
 	retq
 .LCPI3_0:
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
 .LCPI3_1:
-	.short	7                               # 0x7
-	.short	7                               # 0x7
+	.short	16                              # 0x10
+	.short	16                              # 0x10
 func0000000000000007:                   # @func0000000000000007
 	vpternlogd	$248, .LCPI3_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	vpmovwb	%ymm0, %xmm0

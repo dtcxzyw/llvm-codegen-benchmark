@@ -23,21 +23,19 @@ define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 2
   %3 = and i8 %2, 1
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; llvm/optimized/AlignmentFromAssumptions.cpp.ll
-; llvm/optimized/InferAlignment.cpp.ll
-; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
 ; php/optimized/escape_analysis.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 4
   %3 = and i8 %2, 3
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp samesign ugt i8 %0, %3
   ret i1 %4
 }
 
@@ -45,11 +43,11 @@ entry:
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000015(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 3
   %3 = and i8 %2, 3
-  %4 = icmp uge i8 %3, %0
+  %4 = icmp samesign ule i8 %0, %3
   ret i1 %4
 }
 
@@ -63,20 +61,42 @@ define i1 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 3
   %3 = and i8 %2, 3
-  %4 = icmp ne i8 %3, %0
+  %4 = icmp ne i8 %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
-; llvm/optimized/ArgumentPromotion.cpp.ll
+; 2 occurrences:
+; llvm/optimized/InferAlignment.cpp.ll
+; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
+entry:
+  %2 = lshr i8 %1, 1
+  %3 = and i8 %2, 63
+  %4 = icmp ugt i8 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; wireshark/optimized/packet-h265.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
+entry:
+  %2 = lshr i8 %1, 1
+  %3 = and i8 %2, 63
+  %4 = icmp samesign ult i8 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/ArgumentPromotion.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = and i8 %2, 63
-  %4 = icmp ugt i8 %3, %0
+  %4 = icmp ult i8 %0, %3
   ret i1 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 1099 occurrences:
+; 1096 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
@@ -748,7 +748,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1064,8 +1063,6 @@
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/installables.ll
 ; nix/optimized/lexer-tab.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parser-tab.ll
 ; nix/optimized/print-ambiguous.ll
@@ -1122,7 +1119,7 @@ entry:
   ret i64 %3
 }
 
-; 293 occurrences:
+; 292 occurrences:
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -1330,7 +1327,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll

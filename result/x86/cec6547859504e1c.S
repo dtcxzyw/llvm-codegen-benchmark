@@ -4,15 +4,15 @@ func0000000000000000:                   # @func0000000000000000
 	cmoveq	%rsi, %rax
 	addq	$17, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	leaq	-28(%rdx), %rax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	addq	$4, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	leaq	8(%rdx), %rax
+func000000000000000f:                   # @func000000000000000f
+	leaq	24(%rdx), %rax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
-	addq	$32, %rax
+	incq	%rax
 	retq

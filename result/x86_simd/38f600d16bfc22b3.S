@@ -53,6 +53,17 @@ func00000000000000ca:                   # @func00000000000000ca
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+func00000000000000db:                   # @func00000000000000db
+	vcmpnltpd	%zmm4, %zmm0, %k0
+	vcmpnltpd	%zmm5, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vcmpnltpd	%zmm0, %zmm2, %k1
+	vcmpnltpd	%zmm1, %zmm3, %k2
+	kunpckbw	%k1, %k2, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func000000000000002c:                   # @func000000000000002c
 	vcmpltpd	%zmm4, %zmm0, %k0
 	vcmpltpd	%zmm5, %zmm1, %k1

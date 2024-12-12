@@ -1,7 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
 	fli.d	fa5, 1.0
 	fmax.d	fa5, fa1, fa5
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret
 .LCPI1_0:
 	.quad	0x3ff6666666666666              # double 1.3999999999999999
@@ -43,13 +43,5 @@ func000000000000000e:                   # @func000000000000000e
 func000000000000000a:                   # @func000000000000000a
 	fli.d	fa5, 1.0
 	fmin.d	fa5, fa1, fa5
-	fmul.d	fa0, fa5, fa0
-	ret
-func000000000000000c:                   # @func000000000000000c
-	fmv.d.x	fa5, zero
-	fle.d	a0, fa5, fa1
-	bnez	a0, .LBB6_2
-	fmv.d	fa1, fa5
-.LBB6_2:                                # %entry
-	fmul.d	fa0, fa1, fa0
+	fmul.d	fa0, fa0, fa5
 	ret

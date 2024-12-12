@@ -28,23 +28,30 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovdb	%ymm1, %xmm0
 	vzeroupper
 	retq
-.LCPI3_0:
+func0000000000000006:                   # @func0000000000000006
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k1
+	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vpmovdb	%ymm2, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
 	.long	87                              # 0x57
 func0000000000000008:                   # @func0000000000000008
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm0, %k1
-	vpaddd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm1 {%k1}
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm1 {%k1}
 	vpmovdb	%ymm1, %xmm0
 	vzeroupper
 	retq
-.LCPI4_0:
+.LCPI5_0:
 	.long	254                             # 0xfe
 func0000000000000003:                   # @func0000000000000003
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm0, %k1
-	vpaddd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm1 {%k1}
+	vpaddd	.LCPI5_0(%rip){1to8}, %ymm2, %ymm1 {%k1}
 	vpmovdb	%ymm1, %xmm0
 	vzeroupper
 	retq

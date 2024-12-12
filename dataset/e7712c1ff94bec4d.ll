@@ -8,23 +8,23 @@
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 7
   %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 8
+  %6 = icmp samesign ugt i64 %5, 8
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/DFAPacketizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp sgt i64 %5, -1
   ret i1 %6
 }
@@ -32,12 +32,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DFAPacketizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000b4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = add nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 64
+  %5 = add nsw i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 64
   ret i1 %6
 }
 
@@ -62,19 +62,19 @@ define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -8
-  %5 = sub i64 0, %0
-  %6 = icmp ne i64 %4, %5
+  %5 = sub i64 0, %4
+  %6 = icmp ne i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/badblocks.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 511
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp ugt i64 %5, 511
   ret i1 %6
 }
@@ -82,11 +82,11 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/index_hash.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -4
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = icmp slt i64 %5, 0
   ret i1 %6
 }

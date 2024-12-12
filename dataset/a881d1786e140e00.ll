@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 95 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/funcobject.ll
@@ -18,7 +18,6 @@
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/hdac_bus.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/hiddev.ll
 ; linux/optimized/i8042.ll
 ; linux/optimized/ialloc.ll
@@ -40,7 +39,6 @@
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/rate.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/sit.ll
 ; linux/optimized/srcutree.ll
@@ -67,7 +65,6 @@
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
 ; qemu/optimized/hw_input_hid.c.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
-; qemu/optimized/hw_misc_sifive_u_otp.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
@@ -107,7 +104,7 @@ entry:
   ret ptr %4
 }
 
-; 392 occurrences:
+; 398 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -155,6 +152,10 @@ entry:
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; assimp/optimized/X3DImporter_Rendering.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/attribute_set.ll
+; boost/optimized/attribute_value_set.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/matches_relation_factory.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/decode.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -333,7 +334,6 @@ entry:
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; mitsuba3/optimized/compiler.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
@@ -366,6 +366,7 @@ entry:
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll
+; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/subdivision2d.cpp.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
@@ -402,7 +403,6 @@ entry:
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/patchTableFactory.cpp.ll
 ; openusd/optimized/path.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/thread_common.c.ll
@@ -470,6 +470,7 @@ entry:
 ; soc-simulator/optimized/sim_mycpu.ll
 ; spike/optimized/dummy_rocc.ll
 ; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; stb/optimized/stb_vorbis.c.ll
@@ -499,13 +500,15 @@ entry:
 ; z3/optimized/theory_bv.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [64 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [64 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -513,11 +516,11 @@ entry:
 ; stockfish/optimized/evaluate_nnue.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -8
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw [16 x i32], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [16 x i32], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

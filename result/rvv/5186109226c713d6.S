@@ -26,14 +26,14 @@ func0000000000000004:                   # @func0000000000000004
 	vnsrl.wi	v9, v10, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vv	v0, v12, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vv	v0, v10, v12
 	vsetvli	zero, zero, e16, m1, ta, ma

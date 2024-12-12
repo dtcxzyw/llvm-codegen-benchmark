@@ -1,21 +1,21 @@
-.LCPI0_0:
-	.long	254                             # 0xfe
-func0000000000000020:                   # @func0000000000000020
-	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
-	vpmovdb	%ymm1, %xmm0
-	vzeroupper
-	retq
 func0000000000000018:                   # @func0000000000000018
 	vpmovd2m	%ymm1, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpmovdb	%ymm1, %xmm0
 	vzeroupper
 	retq
-.LCPI2_0:
+.LCPI1_0:
 	.long	16777216                        # 0x1000000
 func0000000000000010:                   # @func0000000000000010
-	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm1, %k1
+	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm1, %k1
+	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vpmovdb	%ymm1, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.long	11                              # 0xb
+func0000000000000028:                   # @func0000000000000028
+	vpcmpgtd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpmovdb	%ymm1, %xmm0
 	vzeroupper
@@ -36,7 +36,7 @@ func000000000000001b:                   # @func000000000000001b
 	retq
 .LCPI5_0:
 	.long	255                             # 0xff
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	vpcmpnleud	.LCPI5_0(%rip){1to8}, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpmovdb	%ymm1, %xmm0
@@ -45,6 +45,22 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000004:                   # @func0000000000000004
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %k1
+	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vpmovdb	%ymm1, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.long	16                              # 0x10
+func0000000000000050:                   # @func0000000000000050
+	vpcmpltud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
+	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vpmovdb	%ymm1, %xmm0
+	vzeroupper
+	retq
+.LCPI8_0:
+	.long	1280                            # 0x500
+func0000000000000060:                   # @func0000000000000060
+	vpcmpnleud	.LCPI8_0(%rip){1to8}, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpmovdb	%ymm1, %xmm0
 	vzeroupper

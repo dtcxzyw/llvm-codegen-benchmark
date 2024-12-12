@@ -1,9 +1,9 @@
-func0000000000000071:                   # @func0000000000000071
-	testb	$1, %dl
-	movl	$1, %eax
-	cmovel	%esi, %eax
+func00000000000000e1:                   # @func00000000000000e1
 	testl	%esi, %esi
+	movl	$1, %eax
 	cmovnel	%esi, %eax
+	testb	$1, %dl
+	cmovel	%esi, %eax
 	incl	%edi
 	cmpl	%eax, %edi
 	sete	%al

@@ -62,23 +62,65 @@ func0000000000000008:                   # @func0000000000000008
 	vpblendmw	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
 .LCPI3_0:
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
 func0000000000000004:                   # @func0000000000000004
 	vpcmpltuw	.LCPI3_0(%rip), %ymm1, %k1
+	vpblendmw	%ymm0, %ymm1, %ymm0 {%k1}
+	retq
+.LCPI4_0:
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+	.short	180                             # 0xb4
+func000000000000000a:                   # @func000000000000000a
+	vpcmpgtw	.LCPI4_0(%rip), %ymm1, %k1
+	vpblendmw	%ymm0, %ymm1, %ymm0 {%k1}
+	retq
+.LCPI5_0:
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+	.short	131                             # 0x83
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleuw	.LCPI5_0(%rip), %ymm1, %k1
 	vpblendmw	%ymm0, %ymm1, %ymm0 {%k1}
 	retq

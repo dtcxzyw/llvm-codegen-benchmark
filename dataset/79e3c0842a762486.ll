@@ -14,7 +14,7 @@ entry:
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = sub i16 %0, %2
@@ -28,7 +28,7 @@ entry:
 define i1 @func000000000000000c(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = icmp ne i16 %2, %0
+  %3 = icmp ne i16 %0, %2
   ret i1 %3
 }
 
@@ -36,7 +36,7 @@ entry:
 ; hdf5/optimized/H5B2int.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = sub i16 %0, %2
@@ -54,14 +54,14 @@ entry:
 define i1 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; openusd/optimized/entdec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
   %3 = sub i16 %0, %2
@@ -96,7 +96,7 @@ entry:
 ; wireshark/optimized/packet-juniper.c.ll
 ; wireshark/optimized/packet-ospf.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000188(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = sub i16 %0, %2

@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; ruby/optimized/eval.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = icmp ugt i64 %1, 1000000000
+  %3 = icmp samesign ugt i64 %1, 1000000000
   %4 = select i1 %3, i64 %0, i64 %2
   ret i64 %4
 }
@@ -27,7 +27,7 @@ entry:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; opencv/optimized/spatialgradient.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = icmp eq i64 %1, -1
@@ -35,7 +35,8 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/alloc_lib.ll
 ; casadi/optimized/options.cpp.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
@@ -71,7 +72,7 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; wireshark/optimized/observer.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = icmp slt i64 %1, -1
@@ -83,10 +84,10 @@ entry:
 ; grpc/optimized/hpack_parser.cc.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1023
-  %3 = icmp ult i64 %1, 1023
+  %3 = icmp samesign ult i64 %1, 1023
   %4 = select i1 %3, i64 %0, i64 %2
   ret i64 %4
 }
@@ -95,7 +96,7 @@ entry:
 ; clamav/optimized/lzwdec.c.ll
 ; cpython/optimized/marshal.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = icmp sgt i64 %1, 11
@@ -106,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/io_utils.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1024
   %3 = icmp eq i64 %1, 0
@@ -117,10 +118,10 @@ entry:
 ; 1 occurrences:
 ; glog/optimized/signalhandler.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 87
-  %3 = icmp ult i64 %1, 10
+  %3 = icmp samesign ult i64 %1, 10
   %4 = select i1 %3, i64 %0, i64 %2
   ret i64 %4
 }
@@ -128,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967295
   %3 = icmp eq i64 %1, 0
@@ -139,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/fileio.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 256
   %3 = icmp ugt i64 %1, 65536

@@ -1,7 +1,6 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; freetype/optimized/pfr.c.ll
-; linux/optimized/nfs3xdr.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
 ; openjdk/optimized/javaClasses.ll
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
@@ -148,15 +147,14 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; cpython/optimized/_codecs_kr.ll
-; icu/optimized/mlbe.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004f(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000014f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 96
+  %3 = icmp samesign ult i32 %2, 96
   %4 = select i1 %3, i32 2000, i32 1900
   %5 = add nuw nsw i32 %0, %1
   %6 = add nuw nsw i32 %4, %5
@@ -172,6 +170,18 @@ entry:
   %4 = select i1 %3, i32 1, i32 5
   %5 = add i32 %0, %1
   %6 = add i32 %5, %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; icu/optimized/mlbe.ll
+; Function Attrs: nounwind
+define i32 @func000000000000004f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 65536
+  %4 = select i1 %3, i32 1, i32 2
+  %5 = add nuw nsw i32 %0, %1
+  %6 = add nuw nsw i32 %4, %5
   ret i32 %6
 }
 

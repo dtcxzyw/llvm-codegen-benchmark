@@ -1,5 +1,6 @@
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; opencv/optimized/cv2.cpp.ll

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/s_async.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = ashr exact i64 %1, 3
@@ -19,7 +19,7 @@ entry:
 ; meshlab/optimized/io_expe.cpp.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = ashr exact i64 %1, 2
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = ashr exact i64 %1, 2

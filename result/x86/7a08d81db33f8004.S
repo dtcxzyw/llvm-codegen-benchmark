@@ -6,17 +6,17 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%esi, %esi
 	cmovneq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	leaq	104(,%rax,8), %rax
-	cmpl	$2, %esi
-	cmovaeq	%rdi, %rax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	andl	$1, %edx
 	leaq	12(,%rdx,4), %rax
 	cmpl	$4, %esi
 	cmovbq	%rdi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	notb	%dl
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	leaq	(%rax,%rax,2), %rax
+	cmpl	$-3, %esi
+	cmovaeq	%rdi, %rax
 	retq

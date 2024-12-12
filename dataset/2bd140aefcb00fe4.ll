@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; libjpeg-turbo/optimized/jclossls.c.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; libwebp/optimized/dec.c.ll
@@ -10,6 +10,7 @@
 ; openjdk/optimized/jdmerge.ll
 ; openjdk/optimized/jquant1.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BL.ll
+; openusd/optimized/detokenize.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:

@@ -29,10 +29,11 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI1_1:
 	.short	1                               # 0x1
 	.short	1                               # 0x1
-func0000000000000006:                   # @func0000000000000006
+func000000000000000a:                   # @func000000000000000a
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
-	vpmovd2m	%ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpgtd	%ymm3, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm2 {%k1}
 	vmovdqa	%ymm2, %ymm0
 	retq

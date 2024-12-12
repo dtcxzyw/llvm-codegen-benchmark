@@ -24,7 +24,6 @@
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; linux/optimized/setup-res.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
@@ -35,12 +34,13 @@
 ; spike/optimized/kstas32.ll
 ; spike/optimized/ksub32.ll
 ; spike/optimized/vssub_vx.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = xor i32 %3, %1
-  %5 = and i32 %4, %0
+  %4 = xor i32 %1, %3
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -53,8 +53,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = xor i32 %3, %1
-  %5 = and i32 %4, %0
+  %4 = xor i32 %1, %3
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -69,8 +69,8 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = xor i32 %3, %1
-  %5 = and i32 %4, %0
+  %4 = xor i32 %1, %3
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -83,7 +83,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = xor i32 %3, %1
+  %4 = xor i32 %1, %3
   %5 = and i32 %4, %0
   ret i32 %5
 }

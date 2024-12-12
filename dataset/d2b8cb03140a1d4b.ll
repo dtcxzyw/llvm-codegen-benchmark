@@ -34,12 +34,11 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; opencv/optimized/beblid.cpp.ll
 ; opencv/optimized/detector.cpp.ll
 ; openjdk/optimized/ShapeSpanIterator.ll
-; pbrt-v4/optimized/mipmap.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind
@@ -51,8 +50,9 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; libwebp/optimized/frame_enc.c.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
 ; meshlab/optimized/edit_select.cpp.ll

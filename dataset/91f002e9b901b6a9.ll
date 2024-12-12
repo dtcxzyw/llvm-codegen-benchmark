@@ -6,7 +6,7 @@
 ; openjdk/optimized/cmsmd5.ll
 ; velox/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 448
   %2 = icmp eq i32 %1, 448

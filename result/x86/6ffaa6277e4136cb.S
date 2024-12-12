@@ -13,6 +13,13 @@ func000000000000000f:                   # @func000000000000000f
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	shll	$6, %esi
+	leal	120(%rsi), %ecx
+	testb	$1, %dil
+	movl	$56, %eax
+	cmoveq	%rcx, %rax
+	retq
 func000000000000000b:                   # @func000000000000000b
 	leal	3(%rsi,%rsi), %ecx
 	testb	$1, %dil

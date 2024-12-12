@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; cmake/optimized/cmExportBuildFileGenerator.cxx.ll
 ; cmake/optimized/cmExportInstallFileGenerator.cxx.ll
 ; cvc5/optimized/cegis.cpp.ll
@@ -7,7 +7,6 @@
 ; libquic/optimized/ip_endpoint.cc.ll
 ; luau/optimized/Autocomplete.cpp.ll
 ; proj/optimized/c_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; velox/optimized/Scanner.cpp.ll
 ; wireshark/optimized/ascend_scanner.c.ll
 ; Function Attrs: nounwind

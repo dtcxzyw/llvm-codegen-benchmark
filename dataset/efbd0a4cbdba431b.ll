@@ -20,9 +20,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
-; graphviz/optimized/shortest.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0) #0 {
 entry:

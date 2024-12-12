@@ -1,9 +1,5 @@
-func0000000000000016:                   # @func0000000000000016
-	sext.w	a1, a0
-	lui	a2, 524288
-	slti	a1, a1, 1
-	negw	a1, a1
-	addi	a2, a2, -86
-	and	a1, a1, a2
+func0000000000000026:                   # @func0000000000000026
+	sraiw	a1, a0, 31
+	andi	a1, a1, 48
 	addw	a0, a0, a1
 	ret

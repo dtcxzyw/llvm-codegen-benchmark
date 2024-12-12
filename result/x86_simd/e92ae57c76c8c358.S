@@ -8,7 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func000000000000040a:                   # @func000000000000040a
+func000000000000080a:                   # @func000000000000080a
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
@@ -20,7 +20,7 @@ func000000000000040a:                   # @func000000000000040a
 	retq
 .LCPI2_0:
 	.long	20                              # 0x14
-func0000000000000206:                   # @func0000000000000206
+func0000000000000406:                   # @func0000000000000406
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0

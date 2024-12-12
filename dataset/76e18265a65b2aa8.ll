@@ -330,12 +330,11 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; jemalloc/optimized/sc.ll
 ; jemalloc/optimized/sc.pic.ll
 ; jemalloc/optimized/sc.sym.ll
-; llvm/optimized/WasmObjectFile.cpp.ll
 ; redis/optimized/sc.ll
 ; redis/optimized/sc.sym.ll
 ; ruby/optimized/addr2line.ll
@@ -347,6 +346,19 @@ entry:
   %3 = shl i64 %1, %2
   %4 = add i64 %3, %0
   %5 = icmp ult i64 %4, 256
+  ret i1 %5
+}
+
+; 3 occurrences:
+; openusd/optimized/avif.c.ll
+; qemu/optimized/source_s_addMagsF16.c.ll
+; spike/optimized/s_addMagsF16.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %1, %2
+  %4 = add nuw nsw i64 %0, %3
+  %5 = icmp samesign ult i64 %4, 1073741824
   ret i1 %5
 }
 
@@ -373,7 +385,7 @@ entry:
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %1, %2
   %4 = add i64 %3, %0
@@ -381,11 +393,22 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; llvm/optimized/WasmObjectFile.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %1, %2
+  %4 = add i64 %3, %0
+  %5 = icmp samesign ult i64 %4, 8
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %1, %2
   %4 = sub i64 0, %0
@@ -396,10 +419,10 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp ugt i64 %4, 31457280
   ret i1 %5
 }

@@ -31,13 +31,25 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000183(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 4
+  %3 = zext i1 %2 to i64
+  %4 = udiv i64 %0, 10
+  %5 = add nuw nsw i64 %4, %3
+  ret i64 %5
+}
+
 ; 2 occurrences:
 ; linux/optimized/timeconv.ll
 ; wireshark/optimized/netmon.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000043(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000143(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, -1000000000
+  %2 = icmp samesign ult i64 %1, -1000000000
   %3 = zext i1 %2 to i64
   %4 = udiv i64 %0, 1000000000
   %5 = add nuw nsw i64 %4, %3

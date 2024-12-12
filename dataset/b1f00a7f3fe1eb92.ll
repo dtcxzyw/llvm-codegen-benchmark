@@ -11,7 +11,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/format_args.ll
 ; hermes/optimized/raw_ostream.cpp.ll
 ; openjdk/optimized/xStat.ll
 ; openjdk/optimized/zStat.ll

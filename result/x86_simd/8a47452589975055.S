@@ -4,7 +4,7 @@
 	.quad	4294967247                      # 0xffffffcf
 .LCPI0_2:
 	.quad	9                               # 0x9
-func000000000000001a:                   # @func000000000000001a
+func000000000000003a:                   # @func000000000000003a
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [4,4,4,4]

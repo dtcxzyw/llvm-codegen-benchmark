@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; clamav/optimized/unpack.cpp.ll
 ; clamav/optimized/wwunpack.c.ll
@@ -20,6 +20,7 @@
 ; luajit/optimized/lj_cparse_dyn.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openusd/optimized/resize.c.ll
+; openusd/optimized/restoration.c.ll
 ; openusd/optimized/warped_motion.c.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/dsm.ll
@@ -124,7 +125,7 @@ entry:
   ret i32 %3
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; clamav/optimized/lzxd.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
@@ -144,6 +145,7 @@ entry:
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
 ; openusd/optimized/assetPath.cpp.ll
 ; openusd/optimized/fileIO_Common.cpp.ll
+; openusd/optimized/restoration.c.ll
 ; php/optimized/hash_whirlpool.ll
 ; php/optimized/image.ll
 ; postgres/optimized/inet_cidr_ntop.ll
@@ -185,7 +187,7 @@ entry:
   ret i32 %3
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/compress.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/kwajd.c.ll
@@ -204,7 +206,6 @@ entry:
 ; libquic/optimized/hpack_output_stream.cc.ll
 ; linux/optimized/base64.ll
 ; linux/optimized/blk-rq-qos.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/pata_amd.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; meshlab/optimized/gltf_loader.cpp.ll

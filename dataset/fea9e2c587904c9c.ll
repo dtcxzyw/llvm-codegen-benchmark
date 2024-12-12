@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; hyperscan/optimized/gtest-all.cc.ll
@@ -11,6 +11,8 @@
 ; openusd/optimized/faceSurface.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; postgres/optimized/heapam.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; verilator/optimized/V3Options.cpp.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll

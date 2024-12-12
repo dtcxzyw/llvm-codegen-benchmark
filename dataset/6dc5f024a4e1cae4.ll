@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000401(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -30,7 +30,7 @@ entry:
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
 ; z3/optimized/bit_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000601(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -39,14 +39,15 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; lvgl/optimized/lv_table.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; wasmtime-rs/optimized/23pphsjwudwti3b1.ll
 ; z3/optimized/act_cache.cpp.ll
 ; z3/optimized/prime_generator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000321(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000641(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -78,7 +79,7 @@ entry:
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -92,7 +93,7 @@ entry:
 ; jq/optimized/jv_dtoa.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003da(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000007aa(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -107,7 +108,7 @@ entry:
 ; recastnavigation/optimized/RecastLayers.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -130,7 +131,7 @@ entry:
 ; opencv/optimized/geometry.cpp.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000039a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000072a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 2
@@ -142,7 +143,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5B2int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000331(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000661(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -166,7 +167,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/fft.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -178,7 +179,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-sip.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000038a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000070a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -192,7 +193,7 @@ entry:
 ; linux/optimized/huf_decompress.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000134(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000264(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
@@ -204,7 +205,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xarray.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
@@ -214,21 +215,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/virtio_blk.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000298(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, 1
-  %5 = sub nsw i32 %0, %1
-  %6 = icmp ugt i32 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; z3/optimized/seq_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000032c(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000064c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -240,7 +229,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/utrie2_builder.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000396(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000726(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 4
@@ -252,7 +241,7 @@ entry:
 ; 1 occurrences:
 ; g2o/optimized/command_args.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000621(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -265,7 +254,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000281(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1

@@ -1,14 +1,9 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #8199                       // =0x2007
-	orr	v5.4s, #24
-	orr	v4.4s, #24
-	dup	v6.4s, w8
-	and	v3.16b, v5.16b, v3.16b
-	and	v2.16b, v4.16b, v2.16b
-	and	v1.16b, v1.16b, v6.16b
-	and	v0.16b, v0.16b, v6.16b
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
+	orr	w8, w2, #0x18
+	mov	w9, #8199                       // =0x2007
+	and	w8, w1, w8
+	and	w9, w0, w9
+	orr	w0, w9, w8
 	ret
                                         // -- End function

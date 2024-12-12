@@ -13,7 +13,7 @@ entry:
   ret i32 %3
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; clap-rs/optimized/421wxj3t0b5xgmkw.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/hdac_stream.ll
@@ -25,7 +25,6 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; mitsuba3/optimized/func.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/ir_ra.ll
@@ -41,7 +40,7 @@ entry:
   ret i32 %3
 }
 
-; 37 occurrences:
+; 39 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; assimp/optimized/zip.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
@@ -79,6 +78,8 @@ entry:
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i8 %0) #0 {
 entry:
@@ -88,7 +89,7 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/inffast.c.ll
 ; cmake/optimized/inffast.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
@@ -101,6 +102,7 @@ entry:
 ; linux/optimized/hygon.ll
 ; linux/optimized/inffast.ll
 ; linux/optimized/processor_throttling.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; miniaudio/optimized/unity.c.ll
 ; proxygen/optimized/Huffman.cpp.ll
 ; raylib/optimized/raudio.c.ll

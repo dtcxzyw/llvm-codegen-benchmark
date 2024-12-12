@@ -1,13 +1,11 @@
 
-; 3 occurrences:
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
+; 1 occurrences:
 ; openjdk/optimized/awt_ImagingLib.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 1
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -38,7 +36,7 @@ entry:
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

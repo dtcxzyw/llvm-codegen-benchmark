@@ -11,6 +11,13 @@ func0000000000000027:                   # @func0000000000000027
 	shll	$12, %edi
 	leal	(%rdi,%rsi), %eax
 	retq
+func0000000000000017:                   # @func0000000000000017
+	andb	$-8, %sil
+	movzbl	%sil, %ecx
+	shll	$8, %ecx
+	leal	(,%rdi,8), %eax
+	orl	%ecx, %eax
+	retq
 func000000000000003d:                   # @func000000000000003d
 	andb	$8, %sil
 	movzbl	%sil, %eax

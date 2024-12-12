@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 89 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3GpuGridBroadphase.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
@@ -39,7 +39,6 @@
 ; linux/optimized/d_path.ll
 ; linux/optimized/inetpeer.ll
 ; linux/optimized/keyctl.ll
-; linux/optimized/keyctl_pkey.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/seccomp.ll
 ; linux/optimized/seq_file.ll

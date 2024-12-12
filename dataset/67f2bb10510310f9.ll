@@ -1,6 +1,8 @@
 
-; 88 occurrences:
+; 89 occurrences:
 ; assimp/optimized/3DSExporter.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; cpython/optimized/longobject.ll
@@ -20,7 +22,6 @@
 ; linux/optimized/ethtool.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/i915_hwmon.ll
-; linux/optimized/mii.ll
 ; linux/optimized/ptp_sysfs.ll
 ; linux/optimized/public_key.ll
 ; linux/optimized/sch_frag.ll
@@ -96,13 +97,9 @@ entry:
   ret i16 %3
 }
 
-; 14 occurrences:
-; linux/optimized/hid-input.ll
-; linux/optimized/mlme.ll
+; 10 occurrences:
 ; linux/optimized/sit.ll
-; llvm/optimized/DwarfUnit.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; openjdk/optimized/type.ll
 ; openssl/optimized/libcrypto-lib-rsa_lib.ll
 ; openssl/optimized/libcrypto-shlib-rsa_lib.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -112,9 +109,9 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
+define i16 @func0000000000000014(i16 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 7681
+  %2 = icmp samesign ult i32 %1, 7681
   %3 = select i1 %2, i16 192, i16 %0
   ret i16 %3
 }
@@ -203,6 +200,19 @@ entry:
 define i16 @func0000000000000008(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 65535
+  %3 = select i1 %2, i16 0, i16 %0
+  ret i16 %3
+}
+
+; 4 occurrences:
+; linux/optimized/hid-input.ll
+; linux/optimized/mlme.ll
+; llvm/optimized/DwarfUnit.cpp.ll
+; openjdk/optimized/type.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 4
   %3 = select i1 %2, i16 0, i16 %0
   ret i16 %3
 }

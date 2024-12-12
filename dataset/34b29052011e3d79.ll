@@ -10,11 +10,11 @@
 ; quantlib/optimized/sweden.ll
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i1 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i1 %1) #0 {
 entry:
   %2 = and i32 %0, -2
   %3 = icmp ne i32 %2, 24
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp ne i32 %0, 31
   %6 = and i1 %5, %4
   ret i1 %6

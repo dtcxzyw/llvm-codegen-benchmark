@@ -13,12 +13,13 @@
 define i32 @func0000000000000004(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; icu/optimized/ubidiln.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
@@ -40,7 +41,7 @@ entry:
 define i32 @func0000000000000030(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

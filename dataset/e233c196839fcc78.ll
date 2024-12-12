@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; gromacs/optimized/matio.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -10,6 +10,7 @@
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; ncnn/optimized/mat.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; openspiel/optimized/chess_board.cc.ll
@@ -26,7 +27,7 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
+; 25 occurrences:
 ; abc/optimized/amapRule.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/SpirvIntrinsics.cpp.ll
@@ -41,6 +42,10 @@ entry:
 ; linux/optimized/tx.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; openjdk/optimized/gtk2_interface.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; wireshark/optimized/packet-ansi_637.c.ll

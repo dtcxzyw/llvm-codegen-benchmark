@@ -1,5 +1,6 @@
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -170,7 +171,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %.fr1 = freeze i64 %2
   %3 = trunc i64 %.fr1 to i32

@@ -1,5 +1,5 @@
 
-; 136 occurrences:
+; 132 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -8,11 +8,9 @@
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
-; arrow/optimized/cached-powers.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_equalizer.c.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; graphviz/optimized/make_map.c.ll
@@ -22,7 +20,6 @@
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/cubicsplinetable.cpp.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
-; gromacs/optimized/dlasdt.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
 ; gromacs/optimized/dstebz.cpp.ll
 ; gromacs/optimized/gausstransform.cpp.ll
@@ -37,7 +34,6 @@
 ; hermes/optimized/Number.cpp.ll
 ; icu/optimized/chnsecal.ll
 ; icu/optimized/double-conversion-bignum-dtoa.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; icu/optimized/indiancal.ll
 ; jq/optimized/compile.ll
 ; jq/optimized/execute.ll
@@ -52,6 +48,7 @@
 ; luau/optimized/lbuiltins.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -120,7 +117,6 @@
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; php/optimized/php_date.ll
 ; proj/optimized/grids.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/hestonprocess.ll
@@ -144,7 +140,7 @@ entry:
   ret i32 %2
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/giaCSat3.c.ll
 ; cpython/optimized/mathmodule.ll
@@ -177,6 +173,7 @@ entry:
 ; openjdk/optimized/png.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; postgres/optimized/brin_bloom.ll
+; postgres/optimized/float.ll
 ; postgres/optimized/print.ll
 ; protobuf/optimized/time_util.cc.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll

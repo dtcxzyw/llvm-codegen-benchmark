@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; assimp/optimized/FindInstancesProcess.cpp.ll
 ; assimp/optimized/MakeVerboseFormat.cpp.ll
 ; assimp/optimized/ProcessHelper.cpp.ll
@@ -18,7 +18,6 @@
 ; libquic/optimized/err_test.cc.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/DWARFDie.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -54,7 +53,7 @@ entry:
   ret i1 %5
 }
 
-; 82 occurrences:
+; 84 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
@@ -80,6 +79,7 @@ entry:
 ; opencv/optimized/compat_ptsetreg.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/grfmt_pxm.cpp.ll
+; opencv/optimized/morph.dispatch.cpp.ll
 ; opencv/optimized/odometry.cpp.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/gtk3_interface.ll
@@ -91,6 +91,7 @@ entry:
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; ruby/optimized/util.ll
+; sqlite/optimized/sqlite3.ll
 ; velox/optimized/TypeCalculation.yy.cc.ll
 ; velox/optimized/TypeParser.yy.cc.ll
 ; verilator/optimized/V3Assert.cpp.ll
@@ -146,37 +147,15 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
-; abc/optimized/ac_wrapper.cpp.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
-; folly/optimized/SymbolizePrinter.cpp.ll
-; llvm/optimized/SemaExprObjC.cpp.ll
-; llvm/optimized/X86ISelLoweringCall.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; lodepng/optimized/lodepng.cpp.ll
-; opencv/optimized/ts_func.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; php/optimized/output.ll
-; postgres/optimized/oracle_compat.ll
-; qemu/optimized/tcg.c.ll
-; raylib/optimized/rtextures.c.ll
-; spike/optimized/csrs.ll
-; wireshark/optimized/wireshark_main_window.cpp.ll
-; yosys/optimized/ql_dsp_macc.ll
-; z3/optimized/pb_rewriter.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = icmp ult i32 %0, 8
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 113 occurrences:
+; 136 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stdin.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
 ; clamav/optimized/lzwdec.c.ll
@@ -194,6 +173,7 @@ entry:
 ; gromacs/optimized/fft5d.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; icu/optimized/numparse_decimal.ll
+; icu/optimized/ucptrie.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/devinet.ll
@@ -211,7 +191,6 @@ entry:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
@@ -223,6 +202,7 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -238,6 +218,23 @@ entry:
 ; openjdk/optimized/cmstypes.ll
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
+; openssl/optimized/asynciotest-bin-ssltestlib.ll
+; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
+; openssl/optimized/dtlstest-bin-ssltestlib.ll
+; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
+; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
+; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
+; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
+; openssl/optimized/quicapitest-bin-ssltestlib.ll
+; openssl/optimized/quicfaultstest-bin-ssltestlib.ll
+; openssl/optimized/recordlentest-bin-ssltestlib.ll
+; openssl/optimized/rpktest-bin-ssltestlib.ll
+; openssl/optimized/servername_test-bin-ssltestlib.ll
+; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
+; openssl/optimized/sslapitest-bin-ssltestlib.ll
+; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
+; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
+; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; openusd/optimized/reconinter.c.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/zend_compile.ll
@@ -288,10 +285,34 @@ entry:
 ; z3/optimized/theory_str_mc.cpp.ll
 ; zxing/optimized/DMBitLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %0, i1 %1, i1 false
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 14 occurrences:
+; abc/optimized/ac_wrapper.cpp.ll
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; folly/optimized/SymbolizePrinter.cpp.ll
+; llvm/optimized/SemaExprObjC.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; postgres/optimized/oracle_compat.ll
+; raylib/optimized/rtextures.c.ll
+; spike/optimized/csrs.ll
+; wireshark/optimized/wireshark_main_window.cpp.ll
+; yosys/optimized/ql_dsp_macc.ll
+; z3/optimized/pb_rewriter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
-  %4 = icmp eq i32 %0, 1
+  %4 = icmp ult i32 %0, 8
   %5 = and i1 %4, %3
   ret i1 %5
 }
@@ -314,12 +335,9 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 4 occurrences:
 ; flac/optimized/main.c.ll
-; icu/optimized/normalizer2impl.ll
 ; llvm/optimized/Host.cpp.ll
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; wireshark/optimized/packet-udp.c.ll
 ; Function Attrs: nounwind

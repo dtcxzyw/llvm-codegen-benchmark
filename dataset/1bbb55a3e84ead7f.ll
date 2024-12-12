@@ -12,10 +12,22 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
+; boost/optimized/gregorian.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000080(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = sdiv i32 %3, 400
+  %5 = add i32 %1, -719163
+  %6 = add i32 %5, %4
+  %7 = add i32 %6, %0
+  ret i32 %7
+}
+
+; 1 occurrences:
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -37,19 +49,6 @@ entry:
   %5 = add nsw i32 %1, -719162
   %6 = add nsw i32 %5, %4
   %7 = add nsw i32 %6, %0
-  ret i32 %7
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000080(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 7
-  %4 = sdiv i32 %3, 8
-  %5 = add i32 %1, 112
-  %6 = add i32 %5, %4
-  %7 = add i32 %6, %0
   ret i32 %7
 }
 

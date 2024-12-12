@@ -48,7 +48,7 @@ func0000000000000002:                   # @func0000000000000002
 	.long	4                               # 0x4
 .LCPI1_2:
 	.long	8                               # 0x8
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpeqb	.LCPI1_0(%rip), %xmm2, %k2
@@ -75,7 +75,7 @@ func0000000000000023:                   # @func0000000000000023
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vbroadcastss	.LCPI2_0(%rip), %ymm0   # ymm0 = [128,128,128,128,128,128,128,128]

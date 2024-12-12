@@ -6,9 +6,9 @@ func0000000000000007:                   # @func0000000000000007
 	vmovss	%xmm0, %xmm0, %xmm0 {%k1} {z}
 	retq
 func0000000000000004:                   # @func0000000000000004
+	kmovd	%edi, %k1
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpltss	%xmm1, %xmm2, %k1
-	kmovd	%edi, %k2
+	vcmpltss	%xmm1, %xmm2, %k2
 	vmovss	%xmm0, %xmm0, %xmm0 {%k2} {z}
 	vmovss	%xmm0, %xmm0, %xmm0 {%k1} {z}
 	retq
@@ -26,17 +26,17 @@ func000000000000000a:                   # @func000000000000000a
 	vmovaps	%xmm2, %xmm0
 	retq
 .LCPI3_0:
-	.long	0x3f800000                      # float 1
-.LCPI3_1:
 	.long	0x3f7ffffe                      # float 0.99999988
+.LCPI3_1:
+	.long	0x3f800000                      # float 1
 func0000000000000002:                   # @func0000000000000002
+	vcmpltss	.LCPI3_0(%rip), %xmm1, %k1
+	vmovss	.LCPI3_1(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovaps	%xmm1, %xmm2
+	vmovss	%xmm0, %xmm2, %xmm2 {%k1}
 	kmovd	%edi, %k1
-	vmovss	.LCPI3_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
-	vmovaps	%xmm2, %xmm3
-	vmovss	%xmm0, %xmm3, %xmm3 {%k1}
-	vcmpltss	.LCPI3_1(%rip), %xmm1, %k1
-	vmovss	%xmm3, %xmm2, %xmm2 {%k1}
-	vmovaps	%xmm2, %xmm0
+	vmovss	%xmm2, %xmm1, %xmm1 {%k1}
+	vmovaps	%xmm1, %xmm0
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vxorps	%xmm2, %xmm2, %xmm2

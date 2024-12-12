@@ -1,7 +1,6 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; clamav/optimized/cabd.c.ll
-; lief/optimized/Builder.cpp.ll
 ; linux/optimized/ring_buffer.ll
 ; linux/optimized/socket.ll
 ; linux/optimized/virtio_net.ll

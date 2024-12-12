@@ -163,12 +163,12 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000344(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
   %5 = sub nuw i64 %4, %1
-  %6 = icmp ugt i64 %5, %1
+  %6 = icmp ult i64 %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }

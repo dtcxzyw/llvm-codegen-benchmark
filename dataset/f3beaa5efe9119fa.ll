@@ -20,9 +20,11 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; openusd/optimized/openexr-c.c.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -85,9 +87,21 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/rsbDec6.c.ll
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; spike/optimized/spike.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000013(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 1152921504606846976
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = add nuw nsw i32 %4, 2
+  ret i32 %5
+}
+
+; 8 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; cpython/optimized/sixstep.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
@@ -96,13 +110,12 @@ entry:
 ; hwloc/optimized/cpukinds.ll
 ; lief/optimized/sha256.c.ll
 ; lief/optimized/sha512.c.ll
-; spike/optimized/spike.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000053(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 1152921504606846976
+  %3 = icmp samesign ult i64 %2, 3
   %4 = select i1 %3, i32 %0, i32 %1
-  %5 = add nuw nsw i32 %4, 2
+  %5 = add nuw nsw i32 %4, 1
   ret i32 %5
 }
 
@@ -120,15 +133,12 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
-; cpython/optimized/mpdecimal.ll
-; cpython/optimized/sixstep.ll
+; 7 occurrences:
 ; jemalloc/optimized/fxp.ll
 ; jemalloc/optimized/fxp.pic.ll
 ; jemalloc/optimized/fxp.sym.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
-; opencv/optimized/AKAZEFeatures.cpp.ll
 ; redis/optimized/fxp.ll
 ; redis/optimized/fxp.sym.ll
 ; Function Attrs: nounwind
@@ -137,6 +147,19 @@ entry:
   %3 = icmp ult i64 %2, 58982
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = add nsw i32 %4, -1
+  ret i32 %5
+}
+
+; 3 occurrences:
+; cpython/optimized/mpdecimal.ll
+; cpython/optimized/sixstep.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000051(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 6
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = add nsw i32 %4, 1
   ret i32 %5
 }
 

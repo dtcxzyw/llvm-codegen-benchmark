@@ -16,12 +16,6 @@ func0000000000000100:                   # @func0000000000000100
 	setae	%al
 	addl	%edi, %eax
 	retq
-func000000000000010c:                   # @func000000000000010c
-	xorl	%eax, %eax
-	cmpl	$63, %esi
-	setae	%al
-	addl	%edi, %eax
-	retq
 func0000000000000104:                   # @func0000000000000104
 	xorl	%eax, %eax
 	cmpl	$63, %esi

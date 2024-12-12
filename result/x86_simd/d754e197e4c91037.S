@@ -36,23 +36,18 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
 	retq
 .LCPI2_0:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
+	.short	65472                           # 0xffc0
+	.short	65472                           # 0xffc0
+	.short	65472                           # 0xffc0
+	.short	65472                           # 0xffc0
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+.LCPI2_1:
+	.short	65472                           # 0xffc0
+	.short	65472                           # 0xffc0
 func0000000000000002:                   # @func0000000000000002
-	vpternlogq	$248, .LCPI2_0(%rip), %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
+	vpternlogd	$248, .LCPI2_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
 	retq

@@ -28,7 +28,7 @@ entry:
   ret i64 %5
 }
 
-; 82 occurrences:
+; 83 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; brotli/optimized/encode.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
@@ -62,7 +62,6 @@ entry:
 ; jemalloc/optimized/pa_extra.sym.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsodium_la-argon2-fill-block-ref.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/skbuff.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -111,6 +110,8 @@ entry:
 ; ruby/optimized/bignum.ll
 ; spike/optimized/c_j.ll
 ; spike/optimized/c_jal.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -480,7 +481,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %4, 32
   ret i64 %5
 }
@@ -514,7 +515,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl nsw i64 %4, 1
   ret i64 %5
 }

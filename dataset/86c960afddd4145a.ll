@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; velox/optimized/Utf8Utils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i32 %0, i32 %1) #0 {
+define i1 @func00000000000006a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 18
   %3 = add nsw i32 %2, -65536
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 12
   %3 = add i32 %2, -4096
@@ -26,11 +26,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-rtcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000068a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = add nsw i32 %2, -8
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp sgt i32 %4, 0
   ret i1 %5
 }
@@ -53,7 +53,7 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000035a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000006aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = add nsw i32 %2, -2
@@ -62,15 +62,14 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; cpython/optimized/unicodeobject.ll
+; 5 occurrences:
 ; jemalloc/optimized/pac.ll
 ; jemalloc/optimized/pac.pic.ll
 ; jemalloc/optimized/pac.sym.ll
 ; redis/optimized/pac.ll
 ; redis/optimized/pac.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000358(i32 %0, i32 %1) #0 {
+define i1 @func00000000000006a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = add nsw i32 %2, -1
@@ -84,12 +83,12 @@ entry:
 ; icu/optimized/uconv.ll
 ; icu/optimized/usprep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000374(i32 %0, i32 %1) #0 {
+define i1 @func00000000000006f4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 10
   %3 = add nsw i32 %2, -56613888
   %4 = add nuw nsw i32 %3, %0
-  %5 = icmp ult i32 %4, 1114112
+  %5 = icmp samesign ult i32 %4, 1114112
   ret i1 %5
 }
 
@@ -97,12 +96,24 @@ entry:
 ; cpython/optimized/unicodeobject.ll
 ; icu/optimized/uconv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000378(i32 %0, i32 %1) #0 {
+define i1 @func00000000000006f8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 10
   %3 = add nsw i32 %2, -56613888
   %4 = add nuw nsw i32 %3, %0
-  %5 = icmp ugt i32 %4, 1048575
+  %5 = icmp samesign ugt i32 %4, 1048575
+  ret i1 %5
+}
+
+; 1 occurrences:
+; cpython/optimized/unicodeobject.ll
+; Function Attrs: nounwind
+define i1 @func00000000000006b8(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 3
+  %3 = add nsw i32 %2, -48
+  %4 = add nsw i32 %3, %0
+  %5 = icmp samesign ugt i32 %4, 255
   ret i1 %5
 }
 

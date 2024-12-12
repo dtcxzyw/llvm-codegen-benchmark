@@ -1,19 +1,17 @@
 
-%"struct.rocksdb::TableReader::Anchor.2504818" = type { %"class.std::__cxx11::basic_string.2504531", i64 }
-%"class.std::__cxx11::basic_string.2504531" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2504532", i64, %union.anon.2504533 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2504532" = type { ptr }
-%union.anon.2504533 = type { i64, [8 x i8] }
-%"struct.boost::sub_match.2569131" = type <{ %"struct.std::pair.2569136", i8, [7 x i8] }>
-%"struct.std::pair.2569136" = type { ptr, ptr }
-%"class.std::vector.0.2721086" = type { %"struct.std::_Vector_base.1.2721087" }
-%"struct.std::_Vector_base.1.2721087" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2721088" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2721088" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2721089" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2721089" = type { ptr, ptr, ptr }
-%"struct.std::pair.58.2767358" = type { ptr, %"class.folly::Range.2767315" }
-%"class.folly::Range.2767315" = type { ptr, ptr }
-%"class.llvm::Use.3020536" = type { ptr, ptr, ptr, ptr }
+%"struct.rocksdb::TableReader::Anchor.2619995" = type { %"class.std::__cxx11::basic_string.2619708", i64 }
+%"class.std::__cxx11::basic_string.2619708" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709", i64, %union.anon.2619710 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709" = type { ptr }
+%union.anon.2619710 = type { i64, [8 x i8] }
+%"struct.boost::sub_match.2683504" = type <{ %"struct.std::pair.2683509", i8, [7 x i8] }>
+%"struct.std::pair.2683509" = type { ptr, ptr }
+%"class.llvm::Use.3213948" = type { ptr, ptr, ptr, ptr }
+%"class.std::vector.133.3852102" = type { %"struct.std::_Vector_base.134.3852103" }
+%"struct.std::_Vector_base.134.3852103" = type { %"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl.3852104" }
+%"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl.3852104" = type { %"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl_data.3852105" }
+%"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl_data.3852105" = type { ptr, ptr, ptr }
 
-; 100 occurrences:
+; 113 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -22,6 +20,7 @@
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; cmake/optimized/ccmake.cxx.ll
+; cmake/optimized/cmCustomCommand.cxx.ll
 ; cmake/optimized/cmDocumentation.cxx.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmFileSet.cxx.ll
@@ -33,7 +32,10 @@
 ; cmake/optimized/cpack.cxx.ll
 ; cmake/optimized/ctest.cxx.ll
 ; cmake/optimized/divsufsort.c.ll
+; cvc5/optimized/eq_proof.cpp.ll
 ; cvc5/optimized/lfsc_printer.cpp.ll
+; cvc5/optimized/sygus_invariance.cpp.ll
+; cvc5/optimized/theory_datatypes.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_aggregate.cpp.ll
@@ -47,8 +49,10 @@
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; flatbuffers/optimized/binary_annotator.cpp.ll
+; gromacs/optimized/colvar.cpp.ll
 ; gromacs/optimized/make_ndx.cpp.ll
 ; gromacs/optimized/muParserBytecode.cpp.ll
+; hyperscan/optimized/ng_literal_decorated.cpp.ll
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
@@ -79,8 +83,10 @@
 ; oiio/optimized/dpxoutput.cpp.ll
 ; opencv/optimized/dynamic_graph_snippets.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
+; opencv/optimized/face_beautification.cpp.ll
 ; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; opencv/optimized/matchers.cpp.ll
+; opencv/optimized/net_impl.cpp.ll
 ; opencv/optimized/onevpl_infer_with_advanced_device_selection.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/operations.cpp.ll
@@ -89,6 +95,8 @@
 ; opencv/optimized/solvepnp.cpp.ll
 ; opencv/optimized/tbmr.cpp.ll
 ; opencv/optimized/trackerCSRT.cpp.ll
+; openspiel/optimized/combinatorics.cc.ll
+; openspiel/optimized/gin_rummy_utils.cc.ll
 ; openusd/optimized/dependencies.cpp.ll
 ; openusd/optimized/discoveryPlugin.cpp.ll
 ; openusd/optimized/eventTree.cpp.ll
@@ -104,6 +112,7 @@
 ; openusd/optimized/sceneIndexPluginRegistry.cpp.ll
 ; openusd/optimized/selection.cpp.ll
 ; openusd/optimized/selectionSceneIndex.cpp.ll
+; proxygen/optimized/HTTPMessage.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rocksdb/optimized/compaction_job.cc.ll
@@ -113,22 +122,32 @@
 ; vcpkg/optimized/commands.portsdiff.cpp.ll
 ; vcpkg/optimized/dependencies.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
+; yosys/optimized/ezsat.ll
+; yosys/optimized/memory_bram.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000030a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2504818", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2619995", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp sgt i64 %6, 0
   ret i1 %7
 }
 
-; 172 occurrences:
+; 203 occurrences:
 ; assimp/optimized/ASEParser.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; cvc5/optimized/normal_form.cpp.ll
+; draco/optimized/mesh_cleanup.cc.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; draco/optimized/obj_decoder.cc.ll
+; draco/optimized/ply_decoder.cc.ll
+; draco/optimized/triangle_soup_mesh_builder.cc.ll
 ; duckdb/optimized/ub_duckdb_bind_tableref.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -138,8 +157,13 @@ entry:
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
+; gromacs/optimized/colvarbias_abf.cpp.ll
+; gromacs/optimized/colvarcomp_apath.cpp.ll
 ; gromacs/optimized/colvarcomp_gpath.cpp.ll
+; gromacs/optimized/correlationgrid.cpp.ll
 ; hyperscan/optimized/smallwrite_build.cpp.ll
+; lightgbm/optimized/application.cpp.ll
+; lightgbm/optimized/c_api.cpp.ll
 ; llvm/optimized/Format.cpp.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
@@ -228,13 +252,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -289,91 +310,41 @@ entry:
 ; nix/optimized/verify.ll
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
-; opencv/optimized/circlesgrid.cpp.ll
-; opencv/optimized/gmodel.cpp.ll
-; opencv/optimized/perf_layer.cpp.ll
-; opencv/optimized/tf_importer.cpp.ll
-; opencv/optimized/tflite_importer.cpp.ll
-; openspiel/optimized/efg_game.cc.ll
-; spike/optimized/socketif.ll
-; velox/optimized/URLFunctions.cpp.ll
-; xgboost/optimized/updater_colmaker.cc.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 0, %2
-  %4 = getelementptr nusw %"struct.boost::sub_match.2569131", ptr %1, i64 %3
-  %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %5, %0
-  %7 = icmp sgt i64 %6, 0
-  ret i1 %7
-}
-
-; 32 occurrences:
-; draco/optimized/mesh_cleanup.cc.ll
-; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
-; draco/optimized/obj_decoder.cc.ll
-; draco/optimized/ply_decoder.cc.ll
-; draco/optimized/triangle_soup_mesh_builder.cc.ll
-; gromacs/optimized/colvarbias_abf.cpp.ll
-; gromacs/optimized/colvarcomp_apath.cpp.ll
-; gromacs/optimized/correlationgrid.cpp.ll
-; lightgbm/optimized/application.cpp.ll
-; lightgbm/optimized/c_api.cpp.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/camera_calibration.cpp.ll
 ; opencv/optimized/checker_model.cpp.ll
+; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/concat_layer.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/crop_and_resize_layer.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/flatten_layer.cpp.ll
 ; opencv/optimized/fully_connected_layer.cpp.ll
+; opencv/optimized/gmodel.cpp.ll
 ; opencv/optimized/normalize_bbox_layer.cpp.ll
 ; opencv/optimized/padding_layer.cpp.ll
+; opencv/optimized/perf_layer.cpp.ll
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; opencv/optimized/resize_layer.cpp.ll
 ; opencv/optimized/slice_layer.cpp.ll
+; opencv/optimized/tf_importer.cpp.ll
+; opencv/optimized/tflite_importer.cpp.ll
+; openspiel/optimized/efg_game.cc.ll
 ; openspiel/optimized/tarok.cc.ll
 ; openspiel/optimized/trajectories.cc.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/squarerootclvmodel.ll
+; spike/optimized/socketif.ll
+; velox/optimized/URLFunctions.cpp.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_refresh.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 0, %2
-  %4 = getelementptr %"class.std::vector.0.2721086", ptr %1, i64 %3
-  %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %5, %0
-  %7 = icmp sgt i64 %6, 0
-  ret i1 %7
-}
-
-; 15 occurrences:
-; cmake/optimized/cmCustomCommand.cxx.ll
-; cvc5/optimized/eq_proof.cpp.ll
-; cvc5/optimized/sygus_invariance.cpp.ll
-; cvc5/optimized/theory_datatypes.cpp.ll
-; gromacs/optimized/colvar.cpp.ll
-; hyperscan/optimized/ng_literal_decorated.cpp.ll
-; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; opencv/optimized/face_beautification.cpp.ll
-; opencv/optimized/net_impl.cpp.ll
-; openspiel/optimized/combinatorics.cc.ll
-; openspiel/optimized/gin_rummy_utils.cc.ll
-; proxygen/optimized/HTTPMessage.cpp.ll
-; pybind11/optimized/test_stl_binders.cpp.ll
-; yosys/optimized/ezsat.ll
-; yosys/optimized/memory_bram.ll
-; Function Attrs: nounwind
 define i1 @func000000000000010a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"struct.std::pair.58.2767358", ptr %1, i64 %3
+  %3 = sub i64 0, %2
+  %4 = getelementptr nusw %"struct.boost::sub_match.2683504", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp sgt i64 %6, 0
@@ -384,7 +355,7 @@ entry:
 ; casadi/optimized/interpolant.cpp.ll
 ; oiio/optimized/imageioplugin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -397,33 +368,34 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Instructions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000186(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000306(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3020536", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3213948", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp slt i64 %6, 0
   ret i1 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; cvc5/optimized/generic_op.cpp.ll
 ; zxing/optimized/ReedSolomonEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000308(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
+  %4 = getelementptr nusw ptr, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
-  %7 = icmp ugt i64 %6, 9223372036854775804
+  %7 = icmp ugt i64 %6, 9223372036854775800
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000304(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -436,13 +408,26 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp ult i64 %6, 4294967296
+  ret i1 %7
+}
+
+; 1 occurrences:
+; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000020a(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr %"class.std::vector.133.3852102", ptr %1, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %5, %0
+  %7 = icmp sgt i64 %6, 0
   ret i1 %7
 }
 

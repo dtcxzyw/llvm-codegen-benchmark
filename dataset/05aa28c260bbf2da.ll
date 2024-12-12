@@ -1,6 +1,8 @@
 
-; 60 occurrences:
+; 62 occurrences:
 ; abc/optimized/retArea.c.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; git/optimized/add.ll
 ; git/optimized/checkout.ll
 ; git/optimized/commit.ll
@@ -61,7 +63,7 @@
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; z3/optimized/probe_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0) #0 {
+define i1 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = icmp eq i32 %1, 0
@@ -80,11 +82,11 @@ entry:
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0) #0 {
+define i1 @func0000000000000068(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 65535
   %2 = icmp eq i32 %1, 65534
-  %3 = icmp ult i32 %1, 37
+  %3 = icmp samesign ult i32 %1, 37
   %4 = or i1 %3, %2
   ret i1 %4
 }

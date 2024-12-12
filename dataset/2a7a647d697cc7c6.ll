@@ -1,5 +1,5 @@
 
-; 173 occurrences:
+; 184 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -48,11 +48,11 @@
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hdf5/optimized/H5Tvlen.c.ll
-; hdf5/optimized/H5VLnative_blob.c.ll
 ; hyperscan/optimized/fdr.c.ll
 ; hyperscan/optimized/teddy.c.ll
 ; hyperscan/optimized/teddy_avx2.c.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libquic/optimized/x25519-x86_64.c.ll
@@ -170,6 +170,17 @@
 ; wolfssl/optimized/sp_int.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; yosys/optimized/xprop.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -177,12 +188,13 @@
 define i64 @func0000000000000003(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
-; 38 occurrences:
+; 40 occurrences:
+; boost/optimized/src.ll
 ; folly/optimized/Compression.cpp.ll
 ; libquic/optimized/a_utf8.c.ll
 ; libquic/optimized/x25519-x86_64.c.ll
@@ -221,11 +233,12 @@ entry:
 ; yalantinglibs/optimized/timestamp.struct_pb.cc.ll
 ; yalantinglibs/optimized/type.struct_pb.cc.ll
 ; yalantinglibs/optimized/wrappers.struct_pb.cc.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
@@ -240,7 +253,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
@@ -260,7 +273,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
@@ -273,7 +286,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
@@ -285,7 +298,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }

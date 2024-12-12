@@ -29,11 +29,10 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
-; wireshark/optimized/packet-ymsg.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

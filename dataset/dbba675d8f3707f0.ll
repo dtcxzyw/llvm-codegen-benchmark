@@ -3,6 +3,7 @@
 ; abc/optimized/amapLiberty.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -12,7 +13,6 @@
 ; eastl/optimized/EATest.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; folly/optimized/OpenSSLCertUtils.cpp.ll
 ; icu/optimized/regexcmp.ll
 ; libjpeg-turbo/optimized/rdswitch.c.ll
@@ -53,7 +53,7 @@ entry:
   ret i64 %4
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; abc/optimized/reoTransfer.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -67,7 +67,6 @@ entry:
 ; flac/optimized/fixed.c.ll
 ; linux/optimized/extents_status.ll
 ; linux/optimized/pps.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; opencv/optimized/model.cpp.ll
 ; openjdk/optimized/jfrStackTrace.ll
 ; openssl/optimized/libcrypto-lib-a_object.ll

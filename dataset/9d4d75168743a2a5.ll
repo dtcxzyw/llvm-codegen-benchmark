@@ -1,7 +1,6 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; hermes/optimized/Runtime.cpp.ll
-; linux/optimized/mii.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/uhci-hcd.ll
@@ -33,7 +32,7 @@ define i8 @func0000000000000000(i8 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i8 64, i8 0
   %.masked = and i8 %0, -25
-  %3 = or i8 %2, %.masked
+  %3 = or i8 %.masked, %2
   ret i8 %3
 }
 

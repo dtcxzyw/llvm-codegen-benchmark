@@ -1,5 +1,5 @@
 
-; 227 occurrences:
+; 224 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
@@ -9,7 +9,6 @@
 ; libdeflate/optimized/deflate_decompress.c.ll
 ; linux/optimized/clocksource.ll
 ; linux/optimized/i915_syncmap.ll
-; linux/optimized/vclock_gettime.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; openjdk/optimized/archiveHeapLoader.ll
@@ -221,9 +220,7 @@
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; raylib/optimized/rcore.c.ll
-; rocksdb/optimized/version_set.cc.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/s_shortShiftLeft64To96M.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
@@ -232,7 +229,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, %2
-  %4 = lshr i64 %3, 4
+  %4 = lshr i64 %3, 32
   ret i64 %4
 }
 

@@ -1,33 +1,23 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmeq	v1.16b, v1.16b, v2.16b
-	bic	v0.16b, v0.16b, v1.16b
-	sub	v0.16b, v0.16b, v1.16b
+	and	w8, w1, #0xff
+	cmp	w8, w2, uxtb
+	csinc	w0, w0, wzr, ne
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	and	w8, w1, #0xff
+	cmp	w8, w2, uxtb
+	mov	w8, #2                          // =0x2
+	csel	w0, w8, w0, lo
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmhi	v1.16b, v2.16b, v1.16b
-	bic	v0.16b, v0.16b, v1.16b
-	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	cmhi	v1.16b, v1.16b, v2.16b
-	bic	v0.16b, v0.16b, v1.16b
-	sub	v0.16b, v0.16b, v1.16b
-	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
-	cmgt	v1.16b, v1.16b, v2.16b
-	bic	v0.16b, v0.16b, v1.16b
-	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
-	movi	v3.16b, #2
-	cmgt	v1.16b, v2.16b, v1.16b
-	bit	v0.16b, v3.16b, v1.16b
+	and	w8, w1, #0xff
+	cmp	w8, w2, uxtb
+	mov	w8, #2                          // =0x2
+	csel	w0, w8, w0, lo
 	ret
                                         // -- End function

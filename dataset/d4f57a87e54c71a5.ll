@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; arrow/optimized/align_util.cc.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
@@ -7,14 +7,12 @@
 ; nix/optimized/build-remote.ll
 ; nix/optimized/dotgraph.ll
 ; nix/optimized/graphml.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/registry.ll
 ; nix/optimized/why-depends.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; zxing/optimized/ODCode128Writer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i32 %0) #0 {
+define i64 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
   %2 = sext i32 %1 to i64

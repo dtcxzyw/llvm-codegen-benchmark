@@ -13,5 +13,5 @@ func0000000000000024:                   # @func0000000000000024
 	vminss	.LCPI1_0(%rip), %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
 	vmaxss	%xmm2, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	retq

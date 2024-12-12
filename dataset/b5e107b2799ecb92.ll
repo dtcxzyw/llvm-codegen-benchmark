@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; ceres/optimized/manifold.cc.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
@@ -8,7 +8,6 @@
 ; darktable/optimized/xcf.c.ll
 ; gromacs/optimized/colvargrid.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
-; lightgbm/optimized/c_api.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; lightgbm/optimized/gbdt.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
@@ -30,7 +29,7 @@ entry:
   ret ptr %6
 }
 
-; 74 occurrences:
+; 72 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -69,7 +68,6 @@ entry:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libwebp/optimized/buffer_dec.c.ll
 ; libwebp/optimized/io_dec.c.ll
-; libwebp/optimized/picture_enc.c.ll
 ; libwebp/optimized/picture_psnr_enc.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
@@ -87,7 +85,6 @@ entry:
 ; oiio/optimized/maketexture.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/array.cpp.ll
-; opencv/optimized/aruco_board.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll

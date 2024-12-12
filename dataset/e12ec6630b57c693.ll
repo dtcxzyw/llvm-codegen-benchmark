@@ -45,9 +45,8 @@ entry:
   ret i64 %3
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; abc/optimized/mioUtils.c.ll
-; freetype/optimized/ftbitmap.c.ll
 ; hermes/optimized/CompactArray.cpp.ll
 ; icu/optimized/ucnvisci.ll
 ; ipopt/optimized/IpTripletHelper.ll
@@ -56,7 +55,6 @@ entry:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
-; opencv/optimized/msd.cpp.ll
 ; openjdk/optimized/LCMS.ll
 ; openusd/optimized/meshUtil.cpp.ll
 ; postgres/optimized/fe-protocol3.ll
@@ -72,13 +70,12 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; git/optimized/kwset.ll
 ; gromacs/optimized/computemultibodycutoffs.cpp.ll
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/strmm.cpp.ll
-; yosys/optimized/maccmap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0) #0 {
 entry:
@@ -105,10 +102,9 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; hdf5/optimized/h5tools_dump.c.ll
-; opencv/optimized/msd.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:

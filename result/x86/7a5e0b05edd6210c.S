@@ -6,7 +6,11 @@ func000000000000000c:                   # @func000000000000000c
 	cmpb	$22, %dil
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000014:                   # @func0000000000000014
+	cmpb	$2, %dil
+	setae	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
 	cmpb	$2, %dil
 	setb	%al
 	retq

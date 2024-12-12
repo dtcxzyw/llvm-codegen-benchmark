@@ -1,6 +1,7 @@
 
-; 119 occurrences:
+; 120 occurrences:
 ; abc/optimized/exorBits.c.ll
+; boost/optimized/operations.ll
 ; c3c/optimized/build_options.c.ll
 ; c3c/optimized/c_abi.c.ll
 ; c3c/optimized/parse_expr.c.ll

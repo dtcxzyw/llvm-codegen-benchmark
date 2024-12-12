@@ -1,5 +1,5 @@
 
-; 99 occurrences:
+; 96 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/aigShow.c.ll
@@ -25,13 +25,12 @@
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/rbbi.ll
 ; icu/optimized/rbbi_cache.ll
-; libwebp/optimized/alpha_processing_sse2.c.ll
-; libwebp/optimized/alpha_processing_sse41.c.ll
 ; libwebp/optimized/filters_sse2.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/rate.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
+; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
@@ -56,7 +55,6 @@
 ; opencv/optimized/subdivision2d.cpp.ll
 ; openjdk/optimized/locknode.ll
 ; openjdk/optimized/matcher.ll
-; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openjdk/optimized/postaloc.ll
 ; openspiel/optimized/ABsearch.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
@@ -76,7 +74,6 @@
 ; php/optimized/zend_dfg.ll
 ; postgres/optimized/tidbitmap.ll
 ; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/map.cc.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; raylib/optimized/rmodels.c.ll
@@ -162,6 +159,7 @@ entry:
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
@@ -178,7 +176,6 @@ entry:
 ; qemu/optimized/hw_core_loader.c.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; qemu/optimized/linux-user_fd-trans.c.ll
-; qemu/optimized/ui_vnc-enc-zlib.c.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/packet-btatt.c.ll
 ; Function Attrs: nounwind
@@ -190,7 +187,7 @@ entry:
   ret i64 %3
 }
 
-; 366 occurrences:
+; 359 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/decompress.c.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -243,14 +240,10 @@ entry:
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/ioremap.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/nlattr.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/r8169_main.ll
-; linux/optimized/readdir.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/sched.ll
 ; linux/optimized/tg3.ll
@@ -379,7 +372,6 @@ entry:
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
@@ -473,9 +465,7 @@ entry:
 ; openjdk/optimized/hb-set.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openjdk/optimized/psCompactionManager.ll
-; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/psPromotionManager.ll
-; openjdk/optimized/psScavenge.ll
 ; openjdk/optimized/shenandoahHeap.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/symbolHandle.ll
@@ -566,13 +556,14 @@ entry:
   ret i64 %3
 }
 
-; 194 occurrences:
+; 193 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
+; boost/optimized/codecvt_converter.ll
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
 ; cjson/optimized/cJSON.c.ll
@@ -581,7 +572,6 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/pshinter.c.ll
-; freetype/optimized/truetype.c.ll
 ; git/optimized/hex.ll
 ; git/optimized/pkt-line.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -610,7 +600,6 @@ entry:
 ; linux/optimized/fib_frontend.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/inline.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/maple_tree.ll
@@ -678,7 +667,6 @@ entry:
 ; llvm/optimized/LowerSwitch.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/MemoryBuiltins.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
@@ -721,6 +709,7 @@ entry:
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/klass.ll
 ; openjdk/optimized/matcher.ll
+; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openjdk/optimized/psPromotionManager.ll
 ; openjdk/optimized/psScavenge.ll
 ; openjdk/optimized/shenandoahMark.ll
@@ -804,12 +793,11 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/uarrsort.ll
 ; libwebp/optimized/muxread.c.ll
 ; libwebp/optimized/webp_dec.c.ll
 ; linux/optimized/cipso_ipv4.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0) #0 {
 entry:

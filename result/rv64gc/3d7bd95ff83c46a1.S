@@ -8,5 +8,5 @@ func00000000000000d4:                   # @func00000000000000d4
 	slli	a2, a2, 4
 	slli	a1, a1, 2
 	add	a1, a1, a2
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret

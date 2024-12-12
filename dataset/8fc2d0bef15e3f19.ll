@@ -110,7 +110,7 @@
 define i32 @func000000000000007e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = and i32 %4, 31
   %6 = sub nuw nsw i32 32, %5
   %7 = lshr i32 %0, %6

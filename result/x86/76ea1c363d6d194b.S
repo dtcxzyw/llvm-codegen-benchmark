@@ -31,7 +31,7 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000005:                   # @func0000000000000005
 	movslq	%esi, %rax
 	imulq	%rdi, %rax
-	shlq	$4, %rax
+	addq	%rax, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movslq	%esi, %rax

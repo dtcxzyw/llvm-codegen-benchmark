@@ -1,7 +1,8 @@
 
-%"struct.std::pair.15.2768670" = type { double, i64 }
+%"struct.std::pair.15.2880894" = type { double, i64 }
+%"struct.std::pair.278.3078512" = type { double, ptr }
 
-; 393 occurrences:
+; 390 occurrences:
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; glslang/optimized/ParseContextBase.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -277,13 +278,10 @@
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
@@ -396,7 +394,7 @@
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000884(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = icmp ult ptr %3, %0
@@ -413,7 +411,7 @@ entry:
 ; proxygen/optimized/QPACKCodec.cpp.ll
 ; velox/optimized/StackTrace.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000258(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000008a8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw ptr, ptr %0, i64 %2
   %4 = icmp ule ptr %3, %1
@@ -434,7 +432,7 @@ entry:
 ; msgpack/optimized/speed_test.cpp.ll
 ; msgpack/optimized/speed_test_nested_array.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000248(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000888(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
   %4 = icmp ult ptr %3, %1
@@ -443,28 +441,54 @@ entry:
   ret i1 %6
 }
 
-; 17 occurrences:
-; hermes/optimized/TraceInterpreter.cpp.ll
-; llvm/optimized/BalancedPartitioning.cpp.ll
+; 9 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
+; opencv/optimized/model.cpp.ll
+; opencv/optimized/sparse_matching_gpc.cpp.ll
+; proxygen/optimized/RendezvousHash.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000821(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw %"struct.std::pair.15.2880894", ptr %0, i64 %2
+  %4 = icmp eq ptr %3, %1
+  %5 = icmp eq ptr %0, %1
+  %6 = select i1 %5, i1 true, i1 %4
+  ret i1 %6
+}
+
+; 2 occurrences:
+; boost/optimized/code_conversion.ll
+; boost/optimized/main.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000c84(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = icmp ult ptr %3, %0
+  %5 = icmp ult ptr %0, %1
+  %6 = select i1 %5, i1 true, i1 %4
+  ret i1 %6
+}
+
+; 10 occurrences:
+; hermes/optimized/TraceInterpreter.cpp.ll
+; llvm/optimized/BalancedPartitioning.cpp.ll
 ; opencv/optimized/facemarkAAM.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
-; opencv/optimized/model.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; opencv/optimized/tldDetector.cpp.ll
 ; opencv/optimized/trackerMedianFlow.cpp.ll
-; proxygen/optimized/RendezvousHash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000c21(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.std::pair.15.2768670", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.std::pair.278.3078512", ptr %0, i64 %2
   %4 = icmp eq ptr %3, %1
   %5 = icmp eq ptr %0, %1
   %6 = select i1 %5, i1 true, i1 %4
@@ -474,7 +498,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr double, ptr %0, i64 %2
   %4 = icmp eq ptr %3, %1

@@ -7,16 +7,14 @@
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sdiv i32 %4, 2
   ret i32 %5
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; abc/optimized/exor.c.ll
 ; freetype/optimized/sdf.c.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; icu/optimized/rbbi_cache.ll
 ; libquic/optimized/prtime.cc.ll
 ; libwebp/optimized/frame_enc.c.ll
@@ -39,7 +37,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sdiv i32 %4, 2
   ret i32 %5
 }
@@ -51,18 +49,16 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sdiv i32 %4, 2
   ret i32 %5
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; abc/optimized/ioReadBlifAig.c.ll
 ; abc/optimized/sscCore.c.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; linux/optimized/regmap.ll
 ; ncnn/optimized/padding_x86_avx.cpp.ll
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
@@ -81,7 +77,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sdiv i32 %4, 60
   ret i32 %5
 }
@@ -104,7 +100,7 @@ entry:
 define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sdiv i32 %4, 64
   ret i32 %5
 }

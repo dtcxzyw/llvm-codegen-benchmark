@@ -1,6 +1,8 @@
 
-; 24 occurrences:
+; 26 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; msgpack/optimized/asio_send_recv.cpp.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll

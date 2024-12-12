@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; icu/optimized/normalizer2impl.ll
@@ -7,6 +7,7 @@
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; linux/optimized/rx.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind

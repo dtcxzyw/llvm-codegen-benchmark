@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000016(i8 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000026(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i8 %0, 2
   %4 = icmp slt i32 %1, %2
@@ -25,7 +25,7 @@ entry:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000019(i8 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000029(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i8 %0, 4
   %.not = icmp ult i32 %1, %2
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/date.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000001a(i8 %0, i32 %1, i32 %2) #0 {
+define i8 @func000000000000002a(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i8 %0, 2
   %4 = icmp sgt i32 %1, %2
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000021(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i8 %0, 16
   %4 = icmp eq i32 %1, %2

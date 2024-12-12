@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; hermes/optimized/DateUtil.cpp.ll
 ; php/optimized/zend_operators.ll
 ; postgres/optimized/float.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll

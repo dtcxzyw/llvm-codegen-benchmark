@@ -1,11 +1,10 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; clamav/optimized/disasm.c.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; linux/optimized/boot.ll
 ; linux/optimized/hub.ll
-; linux/optimized/i915_gem_object.ll
 ; llvm/optimized/Mangler.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
@@ -19,7 +18,7 @@
 define i8 @func0000000000000001(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 16
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i8 1, i8 %0
   ret i8 %5
 }
@@ -56,7 +55,7 @@ entry:
 define i8 @func0000000000000006(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 32
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i8 1, i8 %0
   ret i8 %5
 }

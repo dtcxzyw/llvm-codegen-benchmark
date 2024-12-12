@@ -4,13 +4,13 @@ func0000000000000000:                   # @func0000000000000000
 	movzbl	%dil, %ecx
 	leaq	-4(%rax,%rcx,4), %rax
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ef:                   # @func00000000000000ef
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	movzbl	%dil, %ecx
 	leaq	15(%rcx,%rax), %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000006f:                   # @func000000000000006f
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	movzbl	%dil, %ecx
@@ -22,7 +22,7 @@ func0000000000000080:                   # @func0000000000000080
 	movzbl	%dil, %ecx
 	leaq	4(%rax,%rcx,4), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	movzbl	%dil, %ecx

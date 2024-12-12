@@ -1,6 +1,8 @@
 
-; 21 occurrences:
+; 23 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
+; lvgl/optimized/lv_draw_label.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll

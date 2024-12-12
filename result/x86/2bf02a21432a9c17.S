@@ -1,4 +1,4 @@
-func0000000000000188:                   # @func0000000000000188
+func0000000000000508:                   # @func0000000000000508
 	subq	%rdx, %rsi
 	cmpq	$2048, %rsi                     # imm = 0x800
 	setae	%cl
@@ -6,7 +6,7 @@ func0000000000000188:                   # @func0000000000000188
 	seta	%al
 	andb	%cl, %al
 	retq
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	subq	%rdx, %rsi
 	testq	%rsi, %rsi
 	setg	%cl
@@ -14,7 +14,7 @@ func000000000000016a:                   # @func000000000000016a
 	setl	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	subq	%rdx, %rsi
 	setne	%cl
 	cmpq	%rdi, %rsi

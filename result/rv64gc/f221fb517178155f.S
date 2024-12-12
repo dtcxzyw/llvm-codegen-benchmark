@@ -29,7 +29,7 @@ func0000000000000007:                   # @func0000000000000007
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	sext.w	a1, a1
 	li	a3, 10
 	bgeu	a1, a3, .LBB2_2
@@ -60,7 +60,7 @@ func0000000000000029:                   # @func0000000000000029
 .LBB3_4:                                # %entry
 	addw	a0, a0, a2
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	sext.w	a1, a1
 	andi	a2, a2, 1
 	li	a3, 2
@@ -134,15 +134,27 @@ func000000000000001b:                   # @func000000000000001b
 	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
+func0000000000000050:                   # @func0000000000000050
+	srliw	a1, a1, 11
+	bnez	a1, .LBB9_2
+	li	a1, 2
+	addw	a0, a0, a1
+	ret
+.LBB9_2:
+	andi	a2, a2, 1
+	li	a1, 4
+	sub	a1, a1, a2
+	addw	a0, a0, a1
+	ret
 func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
 	lui	a3, 878478
 	addiw	a3, a3, 1991
-	bgeu	a3, a1, .LBB9_2
+	bgeu	a3, a1, .LBB10_2
 	li	a1, -306
 	addw	a0, a0, a1
 	ret
-.LBB9_2:
+.LBB10_2:
 	andi	a2, a2, 1
 	addi	a1, a2, 59
 	addw	a0, a0, a1
@@ -150,11 +162,11 @@ func0000000000000021:                   # @func0000000000000021
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a1, a1
 	li	a3, 256
-	bge	a1, a3, .LBB10_2
+	bge	a1, a3, .LBB11_2
 	li	a1, 1
 	addw	a0, a0, a1
 	ret
-.LBB10_2:
+.LBB11_2:
 	andi	a2, a2, 1
 	xori	a1, a2, 3
 	addw	a0, a0, a1

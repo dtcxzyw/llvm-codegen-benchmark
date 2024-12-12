@@ -14,6 +14,7 @@
 ; gromacs/optimized/slasd5.cpp.ll
 ; hermes/optimized/Timer.cpp.ll
 ; llvm/optimized/Timer.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -31,7 +32,6 @@
 ; postgres/optimized/vacuumlazy.ll
 ; proj/optimized/boggs.cpp.ll
 ; proj/optimized/vandg.cpp.ll
-; proj/optimized/wink1.cpp.ll
 ; quantlib/optimized/blackformula.ll
 ; quantlib/optimized/kronrodintegral.ll
 ; raylib/optimized/raudio.c.ll

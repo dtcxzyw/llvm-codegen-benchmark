@@ -14,11 +14,16 @@ func0000000000000016:                   # @func0000000000000016
 	sh2add	a0, a1, a0
 	ret
 func0000000000000013:                   # @func0000000000000013
-	srli	a2, a2, 3
+	srli	a2, a2, 2
 	mul	a1, a1, a2
-	sh3add	a0, a1, a0
+	sh2add	a0, a1, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
+	srai	a2, a2, 32
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	ret
+func0000000000000017:                   # @func0000000000000017
 	srai	a2, a2, 32
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -48,7 +53,7 @@ func0000000000000002:                   # @func0000000000000002
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	srai	a2, a2, 32
 	mul	a1, a1, a2
 	add	a0, a0, a1

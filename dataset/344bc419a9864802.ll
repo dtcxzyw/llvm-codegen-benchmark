@@ -30,10 +30,9 @@ entry:
   ret i64 %4
 }
 
-; 142 occurrences:
+; 147 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcDec.c.ll
-; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -156,6 +155,8 @@ entry:
 ; linux/optimized/mballoc.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; luau/optimized/ltablib.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_math.ll
 ; nix/optimized/lexer-tab.ll
 ; openjdk/optimized/c1_Canonicalizer.ll
 ; openjdk/optimized/jdcolor.ll
@@ -167,12 +168,16 @@ entry:
 ; openmpi/optimized/show_help_lex.ll
 ; raylib/optimized/rtextures.c.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; velox/optimized/Scanner.cpp.ll
 ; verilator/optimized/V3ParseLex.cpp.ll
 ; verilator/optimized/V3PreProc.cpp.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; yosys/optimized/verilog_lexer.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

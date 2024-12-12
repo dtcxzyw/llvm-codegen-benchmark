@@ -18,6 +18,18 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/value_semantic.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i8 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = trunc nuw i8 %0 to i1
+  %4 = select i1 %3, i32 -1, i32 %2
+  ret i32 %4
+}
+
+; 2 occurrences:
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; openspiel/optimized/cursor_go.cc.ll
 ; Function Attrs: nounwind

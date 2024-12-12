@@ -37,3 +37,10 @@ func0000000000000008:                   # @func0000000000000008
 	neg	a1, a1
 	or	a0, a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a1, a1, 255
+	li	a2, 10
+	bltu	a1, a2, .LBB6_2
+	li	a0, 9
+.LBB6_2:                                # %entry
+	ret

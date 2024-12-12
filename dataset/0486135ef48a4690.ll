@@ -1,16 +1,4 @@
 
-; 2 occurrences:
-; openssl/optimized/libcrypto-lib-curve448.ll
-; openssl/optimized/libcrypto-shlib-curve448.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000004(i8 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = and i8 %2, -4
-  %4 = icmp ult i32 %1, 8
-  %5 = select i1 %4, i8 %3, i8 %0
-  ret i8 %5
-}
-
 ; 7 occurrences:
 ; linux/optimized/irq.ll
 ; linux/optimized/libata-sata.ll

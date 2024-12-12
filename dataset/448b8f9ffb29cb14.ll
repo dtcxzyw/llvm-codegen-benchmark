@@ -19,12 +19,13 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; eastl/optimized/EADateTime.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; postgres/optimized/localtime.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {

@@ -1,10 +1,8 @@
 
-; 31 occurrences:
-; cmake/optimized/content_encoding.c.ll
+; 29 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
-; curl/optimized/libcurl_la-content_encoding.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
 ; html5ever-rs/optimized/427f68nqtcfpg289.ll
@@ -32,7 +30,7 @@
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i16 %1) #0 {
+define i1 @func00000000000001a4(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 2
@@ -41,7 +39,7 @@ entry:
   ret i1 %5
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -85,16 +83,17 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i16 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -142,17 +141,18 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i64 %0, i16 %1) #0 {
+define i1 @func00000000000003f4(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add nuw nsw i64 %2, 2
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -196,34 +196,49 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i16 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/hid-input.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i16 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 2
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; cmake/optimized/content_encoding.c.ll
+; curl/optimized/libcurl_la-content_encoding.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001b4(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = add nuw nsw i64 %2, 2
+  %4 = add nsw i64 %0, -10
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; clamav/optimized/pe.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nsw i64 %2, -1
@@ -243,11 +258,11 @@ entry:
 ; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i16 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -262,11 +277,11 @@ entry:
 ; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(i64 %0, i16 %1) #0 {
+define i1 @func00000000000003c1(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -287,7 +302,7 @@ entry:
 ; ockam-rs/optimized/luz5e0okyn0ri51.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 2

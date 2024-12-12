@@ -5,7 +5,7 @@
 ; minetest/optimized/localplayer.cpp.ll
 ; rocksdb/optimized/compaction_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 7
   %4 = select i1 %3, i1 true, i1 %0
@@ -20,7 +20,7 @@ entry:
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = select i1 %3, i1 true, i1 %0
@@ -35,7 +35,7 @@ entry:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-tr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 1
   %4 = select i1 %3, i1 true, i1 %0

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -8,7 +8,6 @@
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; llvm/optimized/TruncInstCombine.cpp.ll
 ; llvm/optimized/VarLenCodeEmitterGen.cpp.ll
-; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; openjdk/optimized/callnode.ll
 ; openjdk/optimized/compile.ll
 ; openssl/optimized/libssl-lib-quic_record_shared.ll

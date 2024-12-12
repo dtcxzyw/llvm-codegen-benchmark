@@ -1,5 +1,5 @@
 
-; 202 occurrences:
+; 201 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; bullet3/optimized/b3OpenCLUtils.ll
 ; casadi/optimized/idas_interface.cpp.ll
@@ -42,6 +42,7 @@
 ; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
+; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/IndirectCallPromotion.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
@@ -175,7 +176,6 @@
 ; postgres/optimized/plancache.ll
 ; postgres/optimized/ps_status.ll
 ; proj/optimized/c_api.cpp.ll
-; proj/optimized/io.cpp.ll
 ; qemu/optimized/hw_scsi_virtio-scsi.c.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
@@ -194,7 +194,6 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
-; yosys/optimized/sim.ll
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/subpaving_hwf.cpp.ll
 ; z3/optimized/subpaving_mpf.cpp.ll
@@ -211,7 +210,7 @@ entry:
   ret i1 %4
 }
 
-; 35 occurrences:
+; 32 occurrences:
 ; gromacs/optimized/gmx_clustsize.cpp.ll
 ; gromacs/optimized/runner.cpp.ll
 ; jemalloc/optimized/extent.ll
@@ -229,9 +228,6 @@ entry:
 ; opencv/optimized/persistence.cpp.ll
 ; openjdk/optimized/jvmtiImpl.ll
 ; openmpi/optimized/libmpi_c_profile_la-info_create_env.ll
-; openmpi/optimized/libmpi_mpit_profile_la-category_get_num.ll
-; openmpi/optimized/libmpi_mpit_profile_la-cvar_get_num.ll
-; openmpi/optimized/libmpi_mpit_profile_la-cvar_read.ll
 ; openmpi/optimized/libmpi_mpit_profile_la-cvar_write.ll
 ; postgres/optimized/allpaths.ll
 ; postgres/optimized/indxpath.ll
@@ -256,7 +252,7 @@ entry:
   ret i1 %4
 }
 
-; 34 occurrences:
+; 54 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; coreutils-rs/optimized/1vrxha14kpfjcqak.ll
 ; coreutils-rs/optimized/jdhpc8bthd0ylxt.ll
@@ -291,8 +287,28 @@ entry:
 ; tls-rs/optimized/59h61akxu6z29dlt.ll
 ; tokio-rs/optimized/2i86qkpybymk1snv.ll
 ; wasmtime-rs/optimized/47nrdncov7567v7m.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/7znph2z4y55emrpyaq53m67p1.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/a8gnqmwrn3029hplkci6d0ejl.ll
+; zed-rs/optimized/cgxtqkz3q1lf4y8mn1r3vggst.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
+; zed-rs/optimized/cwm1jtpn2hj5f4ljdx4klnhqs.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000004c(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne ptr %0, null
@@ -300,14 +316,17 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 8 occurrences:
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; openjdk/optimized/macro.ll
 ; quantlib/optimized/tcopulapolicy.ll
 ; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
+; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000041(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq ptr %0, null

@@ -51,18 +51,6 @@ entry:
 }
 
 ; 1 occurrences:
-; qemu/optimized/pci-pc.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = shl i32 %0, 8
-  %4 = or disjoint i32 %3, %2
-  %5 = or i32 %4, -2147483648
-  ret i32 %5
-}
-
-; 1 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
@@ -74,15 +62,16 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; hermes/optimized/HBC.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = shl nuw nsw i32 %0, 1
+  %3 = shl nuw nsw i32 %0, 6
   %4 = or disjoint i32 %3, %2
-  %5 = or i32 %4, 8
+  %5 = or i32 %4, 56320
   ret i32 %5
 }
 

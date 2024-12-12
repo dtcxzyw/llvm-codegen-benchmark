@@ -1,6 +1,5 @@
 
-; 189 occurrences:
-; abseil-cpp/optimized/arg.cc.ll
+; 175 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -9,11 +8,9 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
-; abseil-cpp/optimized/str_format_test.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/partition.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
-; cmake/optimized/cmCPackComponentGroup.cxx.ll
-; cmake/optimized/cmCPackNSISGenerator.cxx.ll
 ; cmake/optimized/cmMakefileLibraryTargetGenerator.cxx.ll
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -26,7 +23,6 @@
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; folly/optimized/Random.cpp.ll
 ; freetype/optimized/autofit.c.ll
-; git/optimized/progress.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
@@ -34,14 +30,11 @@
 ; jemalloc/optimized/stats.pic.ll
 ; jemalloc/optimized/stats.sym.ll
 ; lief/optimized/ctr_drbg.c.ll
-; linux/optimized/blk-sysfs.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/swiotlb.ll
-; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -51,11 +44,8 @@
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/Parallel.cpp.ll
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
-; llvm/optimized/SampleProfileInference.cpp.ll
-; mimalloc/optimized/segment-map.c.ll
 ; mimalloc/optimized/segment.c.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
@@ -65,17 +55,11 @@
 ; openspiel/optimized/deep_sea.cc.ll
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/math.ll
-; postgres/optimized/fe-exec.ll
 ; postgres/optimized/nodeSubplan.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
-; qemu/optimized/ui_vnc.c.ll
-; qemu/optimized/util_oslib-posix.c.ll
-; qemu/optimized/util_qht.c.ll
 ; redis/optimized/stats.ll
 ; redis/optimized/stats.sym.ll
-; rocksdb/optimized/block_based_table_reader.cc.ll
-; rocksdb/optimized/version_set.cc.ll
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
 ; rust-analyzer-rs/optimized/4xr6qa4j33qfqd4q.ll
 ; rust-analyzer-rs/optimized/55szrkbrq7kolv5z.ll
@@ -189,15 +173,17 @@
 ; z3/optimized/ufbv_rewriter_tactic.cpp.ll
 ; z3/optimized/ufbv_tactic.cpp.ll
 ; z3/optimized/unit_subsumption_tactic.cpp.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 7
-  %3 = select i1 %0, i64 1, i64 %2
+  %2 = lshr i64 %1, 1
+  %3 = select i1 %0, i64 3, i64 %2
   ret i64 %3
 }
 
-; 59 occurrences:
+; 90 occurrences:
 ; clap-rs/optimized/3n9sdy3q5n8p0ad5.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/2n0ez5zuwgs53clg.ll
@@ -246,17 +232,48 @@ entry:
 ; syn/optimized/2khi0xu1ufmhwoo.ll
 ; tokenizers-rs/optimized/1ve5rid4048y19bt.ll
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
-; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; tokenizers-rs/optimized/40hmx6rev8evi2bx.ll
 ; tree-sitter-rs/optimized/2840d04zhlx99x1w.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; tree-sitter-rs/optimized/4pzbn5o6oxp3emp4.ll
 ; tree-sitter-rs/optimized/r2wcjjxpw45z4gt.ll
+; turborepo-rs/optimized/allq2hqzkn1ywqvzl6k501g1q.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/481g0nj22rl2z9g.ll
 ; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; zed-rs/optimized/0l389uso3hcz3jykn1uvcmawm.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/2eibeqdtr4lthaxkczk0igl6x.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5owdgsmfxxef4srab3humtsy7.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/6a4dcc96vf0fkvge4rfwus3hw.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/83mjpyo5lbj96jldbmy8hsyj7.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/cerruq7gww65l7esxsyv0yj53.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dg0be21is1ey4zasziw0z6yy9.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/dwdz33j6zk3evwqybph0x5e70.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

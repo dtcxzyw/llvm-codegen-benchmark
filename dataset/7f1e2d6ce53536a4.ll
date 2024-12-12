@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/tree.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -17,7 +17,6 @@
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll

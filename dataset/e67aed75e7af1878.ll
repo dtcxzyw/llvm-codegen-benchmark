@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 51 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -8,13 +8,11 @@
 ; abc/optimized/giaBound.c.ll
 ; abc/optimized/giaFrames.c.ll
 ; abc/optimized/ivyMulti.c.ll
-; abc/optimized/msatSolverIo.c.ll
 ; git/optimized/string-list.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/seq_clientmgr.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/ClangAttrEmitter.cpp.ll
 ; llvm/optimized/MIRFSDiscriminator.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
@@ -36,7 +34,6 @@
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; php/optimized/plain_wrapper.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; raylib/optimized/rcore.c.ll
 ; re2/optimized/compile.cc.ll
 ; redis/optimized/networking.ll
@@ -92,11 +89,12 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_anim.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:

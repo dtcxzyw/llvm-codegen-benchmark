@@ -49,15 +49,17 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
-; casadi/optimized/bspline_interpolant.cpp.ll
+; 10 occurrences:
 ; coreutils-rs/optimized/389ib4lq03w39x6a.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; gromacs/optimized/wholemoleculetransform.cpp.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:

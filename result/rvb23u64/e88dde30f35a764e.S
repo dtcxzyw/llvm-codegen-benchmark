@@ -29,7 +29,7 @@ func000000000000000f:                   # @func000000000000000f
 	sub	a0, a0, a1
 	addi	a0, a0, 2
 	ret
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	sext.w	a1, a1
 	li	a2, 320
 	sltiu	a1, a1, 880
@@ -37,7 +37,16 @@ func0000000000000023:                   # @func0000000000000023
 	srliw	a0, a0, 5
 	add	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
+	sext.w	a1, a1
+	li	a2, 2
+	sltiu	a1, a1, 254
+	czero.nez	a1, a2, a1
+	srliw	a0, a0, 3
+	add	a0, a0, a1
+	addi	a0, a0, 2
+	ret
+func00000000000000a2:                   # @func00000000000000a2
 	sext.w	a1, a1
 	li	a2, 64
 	sltiu	a1, a1, 62

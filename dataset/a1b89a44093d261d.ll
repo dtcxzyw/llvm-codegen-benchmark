@@ -17,13 +17,14 @@ entry:
   ret i8 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; cmake/optimized/setopt.c.ll
 ; curl/optimized/libcurl_la-setopt.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/sys.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000031(i8 %0, i64 %1) #0 {
 entry:
@@ -98,6 +99,18 @@ entry:
 define i8 @func0000000000000004(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
+  %3 = zext i1 %2 to i8
+  %4 = and i8 %0, 1
+  %5 = or i8 %4, %3
+  ret i8 %5
+}
+
+; 1 occurrences:
+; z3/optimized/pb_solver.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000060(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 4294967295
   %3 = zext i1 %2 to i8
   %4 = and i8 %0, 1
   %5 = or i8 %4, %3

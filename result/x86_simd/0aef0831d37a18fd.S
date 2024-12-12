@@ -22,7 +22,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm2, %xmm2
 	vpcmpeqd	%xmm1, %xmm2, %k1
 	vpcmpeqq	.LCPI0_1(%rip){1to4}, %ymm0, %k0 {%k1}

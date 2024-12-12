@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000036(i8 %0, i16 %1, i16 %2) #0 {
+define i8 @func0000000000000066(i8 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = trunc nuw nsw i16 %2 to i8
   %4 = icmp slt i16 %1, 0

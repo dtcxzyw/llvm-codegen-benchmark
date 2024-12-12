@@ -6,7 +6,7 @@ func0000000000000080:                   # @func0000000000000080
 	add	a0, a0, a1
 	slli	a0, a0, 7
 	ret
-func000000000000008d:                   # @func000000000000008d
+func000000000000018d:                   # @func000000000000018d
 	lui	a3, 16
 	addiw	a3, a3, -16
 	sltu	a3, a3, a2

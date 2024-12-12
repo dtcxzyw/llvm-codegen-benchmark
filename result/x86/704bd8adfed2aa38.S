@@ -9,6 +9,17 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	xorl	%ecx, %ecx
+	xorl	%eax, %eax
+	cmpl	$2, %esi
+	sete	%al
+	movl	$578, %edx                      # imm = 0x242
+	cmovnel	%ecx, %edx
+	addl	%eax, %eax
+	testb	$1, %dil
+	cmovel	%edx, %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax
 	cmpl	$65, %esi
@@ -18,18 +29,7 @@ func000000000000000a:                   # @func000000000000000a
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	sete	%al
-	movl	$1, %ecx
-	movl	$14, %edx
-	cmovel	%ecx, %edx
-	leal	6(%rax,%rax,2), %eax
-	testb	$1, %dil
-	cmovnel	%edx, %eax
-	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorl	%ecx, %ecx
 	cmpl	$161, %esi
 	movl	$-34, %edx

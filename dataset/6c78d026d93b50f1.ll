@@ -1,8 +1,18 @@
 
-; 272 occurrences:
+; 282 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
@@ -37,6 +47,7 @@
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
+; darktable/optimized/introspection_cacorrect.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_regr.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
@@ -97,7 +108,6 @@
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dlaed2.c.ll
 ; openblas/optimized/dlaed4.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlarre.c.ll

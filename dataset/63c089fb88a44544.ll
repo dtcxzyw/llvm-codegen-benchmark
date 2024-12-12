@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, -1
@@ -39,7 +39,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000022a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, 3
@@ -52,7 +52,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, 3

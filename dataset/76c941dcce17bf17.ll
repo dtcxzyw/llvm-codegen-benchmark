@@ -19,9 +19,9 @@ entry:
 ; openjdk/optimized/zMark.ll
 ; php/optimized/ir_gdb.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000030(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %3, 3
   %5 = and i64 %4, -4
@@ -37,9 +37,9 @@ entry:
 ; luajit/optimized/lj_opt_narrow.ll
 ; luajit/optimized/lj_opt_narrow_dyn.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000034(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 280
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 280
   %3 = ptrtoint ptr %2 to i64
   %4 = add nsw i64 %3, 15
   %5 = and i64 %4, -16

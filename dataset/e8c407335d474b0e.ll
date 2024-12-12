@@ -12,7 +12,7 @@ define i32 @func000000000000006f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = lshr i32 %3, 2
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -30,7 +30,7 @@ define i32 @func000000000000002f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = lshr i32 %3, 3
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -46,7 +46,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr i32 %3, 4
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -61,7 +61,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr i32 %3, 29
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -85,7 +85,7 @@ define i32 @func000000000000006d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = lshr i32 %3, 1
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -98,7 +98,7 @@ define i32 @func0000000000000040(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = lshr i32 %3, 3
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }

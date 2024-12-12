@@ -1,25 +1,25 @@
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	addl	%edx, %esi
 	testl	%edi, %edi
 	cmovnsl	%edi, %esi
 	testl	%esi, %esi
 	setle	%al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	cmpl	$127, %edi
 	setg	%cl
 	addl	%edx, %esi
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	cmpl	$128, %edi
 	setl	%cl
 	addl	%edx, %esi
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	addl	%edx, %esi
 	cmpl	$128, %edi
 	cmovgel	%edi, %esi

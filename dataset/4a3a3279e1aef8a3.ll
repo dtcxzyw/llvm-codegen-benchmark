@@ -1,11 +1,9 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; libquic/optimized/a_int.c.ll
-; openssl/optimized/libssl-lib-s3_msg.ll
-; openssl/optimized/libssl-shlib-s3_msg.ll
 ; openssl/optimized/openssl-bin-pkey.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -20,7 +18,7 @@ entry:
 ; openjdk/optimized/javaClasses.ll
 ; openssl/optimized/openssl-bin-pkey.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -33,7 +31,7 @@ entry:
 ; libpng/optimized/pngrtran.c.ll
 ; openjdk/optimized/pngrtran.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -47,7 +45,7 @@ entry:
 ; linux/optimized/intel_dp.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -62,7 +60,7 @@ entry:
 ; linux/optimized/tsc.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 9
   %4 = select i1 %3, i1 %1, i1 false
@@ -75,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/binhex.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -87,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Instructions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000014c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
   %4 = select i1 %3, i1 %1, i1 false
@@ -99,19 +97,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/sit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 31
-  %4 = select i1 %3, i1 %1, i1 false
-  %5 = icmp ult i32 %0, 2
-  %6 = select i1 %4, i1 true, i1 %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/sit.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000010c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 31
   %4 = select i1 %3, i1 %1, i1 false

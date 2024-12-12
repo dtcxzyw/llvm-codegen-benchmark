@@ -1,5 +1,12 @@
 
-; 21 occurrences:
+; 28 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; gromacs/optimized/identifyavx512fmaunits.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
 ; ipopt/optimized/IpCGPerturbationHandler.ll
@@ -47,7 +54,14 @@ entry:
   ret i32 %3
 }
 
-; 24 occurrences:
+; 30 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; graphviz/optimized/ortho.c.ll
@@ -64,7 +78,6 @@ entry:
 ; php/optimized/ir.ll
 ; php/optimized/zend_operators.ll
 ; postgres/optimized/geo_spgist.ll
-; postgres/optimized/geqo_pool.ll
 ; postgres/optimized/spgkdtreeproc.ll
 ; proj/optimized/geodesic.c.ll
 ; quantlib/optimized/andreasenhugevolatilityadapter.ll
@@ -96,7 +109,9 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; php/optimized/ir.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(double %0, double %1) #0 {
@@ -130,7 +145,14 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 12 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
 ; php/optimized/ir.ll

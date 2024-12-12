@@ -6,6 +6,10 @@ func000000000000001d:                   # @func000000000000001d
 	movzwl	%si, %eax
 	leaq	23(%rax,%rdi,8), %rax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	movzwl	%si, %eax
+	leaq	-1(%rax,%rdi,8), %rax
+	retq
 func0000000000000015:                   # @func0000000000000015
 	movzwl	%si, %eax
 	shlq	$4, %rdi

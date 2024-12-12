@@ -8,6 +8,11 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	leal	-3(%rdx), %eax
+	testb	$1, %dil
+	cmovnel	%esi, %eax
+	retq
 func000000000000001e:                   # @func000000000000001e
 	leal	4096(%rdx), %eax
 	testb	$1, %dil

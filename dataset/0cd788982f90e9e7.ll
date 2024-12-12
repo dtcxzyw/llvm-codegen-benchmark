@@ -27,7 +27,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; clamav/optimized/str.c.ll
 ; icu/optimized/ucptrie.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; Function Attrs: nounwind
@@ -66,6 +67,17 @@ entry:
   %5 = or i32 %4, %3
   %6 = lshr i32 %5, 16
   ret i32 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %0, %1
+  %4 = lshr i32 %3, 24
+  %5 = or i32 %4, %2
+  ret i32 %5
 }
 
 ; 1 occurrences:

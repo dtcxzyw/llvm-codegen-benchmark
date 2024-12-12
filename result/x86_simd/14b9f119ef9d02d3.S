@@ -5,7 +5,7 @@ func0000000000000003:                   # @func0000000000000003
 	vpmovw2m	%xmm0, %k0
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm0
 	knotb	%k0, %k1
-	vpaddd	%ymm1, %ymm0, %ymm0 {%k1} {z}
+	vpaddd	%ymm0, %ymm1, %ymm0 {%k1} {z}
 	retq
 .LCPI1_0:
 	.long	2147483647                      # 0x7fffffff

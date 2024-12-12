@@ -36,7 +36,7 @@ entry:
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000338(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000668(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw nsw i32 %2, 4
@@ -51,7 +51,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000318(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000628(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nsw i32 %2, -2
@@ -64,7 +64,7 @@ entry:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000106(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -2
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-btmesh.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000331(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000661(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw nsw i32 %2, 2
@@ -88,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001da(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, -1
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000022a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, -1
@@ -112,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, -1
@@ -129,7 +129,7 @@ entry:
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; openmpi/optimized/io_ompio.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000226(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, 2
@@ -153,7 +153,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dlasq2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000316(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000626(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nsw i32 %2, -2
@@ -165,7 +165,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000228(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, 12
@@ -177,7 +177,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/alpha_processing_sse2.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d6(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = add nsw i32 %2, -3
@@ -189,7 +189,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/hamt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000334(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000664(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw nsw i32 %2, 2

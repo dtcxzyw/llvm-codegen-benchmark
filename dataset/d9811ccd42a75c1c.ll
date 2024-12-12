@@ -68,6 +68,19 @@ entry:
   ret i32 %6
 }
 
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; opencv/optimized/color_yuv.dispatch.cpp.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000d5(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nuw nsw i32 %2, 22
+  %4 = add nsw i32 %3, -272
+  %5 = add nsw i32 %0, %1
+  %6 = add nsw i32 %5, %4
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; openspiel/optimized/crazy_eights.cc.ll
 ; Function Attrs: nounwind
@@ -88,18 +101,6 @@ entry:
   %3 = mul nsw i32 %2, 6
   %4 = add nsw i32 %3, 35
   %5 = add i32 %0, %1
-  %6 = add nsw i32 %4, %5
-  ret i32 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/color_yuv.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000d5(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nuw nsw i32 %2, 1220542
-  %4 = add nsw i32 %3, -19528672
-  %5 = add nsw i32 %0, %1
   %6 = add nsw i32 %4, %5
   ret i32 %6
 }

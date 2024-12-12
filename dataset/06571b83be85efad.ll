@@ -5,7 +5,7 @@
 define i16 @func000000000000002f(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 12
-  %4 = add nuw nsw i16 %3, %1
+  %4 = add nuw nsw i16 %1, %3
   %5 = add nuw nsw i16 %4, %0
   ret i16 %5
 }
@@ -52,7 +52,7 @@ entry:
 define i16 @func0000000000000034(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw nsw i16 %2, 2
-  %4 = add nsw i16 %3, %1
+  %4 = add nsw i16 %1, %3
   %5 = add i16 %4, %0
   ret i16 %5
 }

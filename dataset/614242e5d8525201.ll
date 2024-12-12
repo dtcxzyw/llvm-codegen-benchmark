@@ -4,7 +4,7 @@
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0) #0 {
+define i1 @func00000000000000cc(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp ne i32 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/logging.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0) #0 {
+define i1 @func000000000000018a(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp sgt i32 %1, -1
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0) #0 {
+define i1 @func000000000000018c(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp ne i32 %1, 0
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0) #0 {
+define i1 @func000000000000010c(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp ne i32 %1, 64
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-at.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0) #0 {
+define i1 @func0000000000000188(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp ugt i32 %1, 31
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hooks.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0) #0 {
+define i1 @func0000000000000186(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp slt i32 %1, 0

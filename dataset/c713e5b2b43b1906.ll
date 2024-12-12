@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/clocksource.ll
-; llvm/optimized/ExpandMemCmp.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
@@ -18,7 +17,7 @@ entry:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; qemu/optimized/block_bochs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = udiv i64 %0, %3
@@ -27,8 +26,7 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; linux/optimized/ialloc.ll
+; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {

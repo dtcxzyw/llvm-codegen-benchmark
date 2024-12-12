@@ -1,11 +1,11 @@
-func000000000000006c:                   # @func000000000000006c
+func00000000000000ec:                   # @func00000000000000ec
 	leaq	48(%rsi), %rax
 	testq	%rdx, %rdx
 	cmovneq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setne	%al
 	retq
-func0000000000000221:                   # @func0000000000000221
+func0000000000000441:                   # @func0000000000000441
 	movabsq	$-9223372036854775807, %rax     # imm = 0x8000000000000001
 	xorl	%ecx, %ecx
 	cmpq	%rax, %rdx
@@ -14,7 +14,7 @@ func0000000000000221:                   # @func0000000000000221
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func000000000000022c:                   # @func000000000000022c
+func000000000000044c:                   # @func000000000000044c
 	movabsq	$-9223372036854775807, %rax     # imm = 0x8000000000000001
 	xorl	%ecx, %ecx
 	cmpq	%rax, %rdx
@@ -23,7 +23,7 @@ func000000000000022c:                   # @func000000000000022c
 	cmpq	%rdi, %rax
 	setne	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000e1:                   # @func00000000000000e1
 	xorl	%eax, %eax
 	cmpq	$64, %rdx
 	sete	%al
@@ -31,7 +31,15 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func00000000000000cc:                   # @func00000000000000cc
+	xorl	%eax, %eax
+	testq	%rdx, %rdx
+	setne	%al
+	leaq	-8(%rsi,%rax,8), %rax
+	cmpq	%rdi, %rax
+	setne	%al
+	retq
+func0000000000000084:                   # @func0000000000000084
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
 	sete	%al

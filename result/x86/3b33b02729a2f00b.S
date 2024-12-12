@@ -1,4 +1,4 @@
-func0000000000000288:                   # @func0000000000000288
+func0000000000000908:                   # @func0000000000000908
 	movsbl	%sil, %eax
 	addl	$-48, %eax
 	cmpl	$10, %eax
@@ -7,7 +7,7 @@ func0000000000000288:                   # @func0000000000000288
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000294:                   # @func0000000000000294
+func0000000000000914:                   # @func0000000000000914
 	movsbl	%sil, %eax
 	addl	$-48, %eax
 	cmpl	$10, %eax
@@ -16,7 +16,7 @@ func0000000000000294:                   # @func0000000000000294
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000290:                   # @func0000000000000290
+func0000000000000910:                   # @func0000000000000910
 	movsbl	%sil, %eax
 	addl	$-58, %eax
 	cmpl	$-10, %eax

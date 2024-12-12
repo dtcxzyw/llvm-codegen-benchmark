@@ -51,7 +51,6 @@ entry:
 ; openjdk/optimized/cmspcs.ll
 ; openjdk/optimized/cmssamp.ll
 ; openjdk/optimized/freetypeScaler.ll
-; osqp/optimized/scaling.c.ll
 ; postgres/optimized/nodeAgg.ll
 ; quantlib/optimized/gaussianlhplossmodel.ll
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
@@ -60,6 +59,7 @@ entry:
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wireshark/optimized/percent_bar_delegate.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000024(double %0) #0 {
 entry:
@@ -85,6 +85,29 @@ entry:
   %2 = select i1 %1, double 0x41DFFFFFFFC00000, double %0
   %3 = fcmp ole double %2, 0xC1E0000000000000
   %4 = select i1 %3, double 0xC1E0000000000000, double %2
+  ret double %4
+}
+
+; 12 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; Function Attrs: nounwind
+define double @func0000000000000022(double %0) #0 {
+entry:
+  %1 = fcmp olt double %0, 1.800000e+02
+  %2 = select i1 %1, double 1.800000e+02, double %0
+  %3 = fcmp olt double %2, 1.000000e+00
+  %4 = select i1 %3, double 1.000000e+00, double %2
   ret double %4
 }
 

@@ -1,5 +1,5 @@
 
-; 270 occurrences:
+; 272 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -127,6 +127,8 @@
 ; llvm/optimized/X86TargetObjectFile.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_tlsf.ll
 ; mimalloc/optimized/segment.c.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; mold/optimized/thunks.cc.ARM32.cc.ll
@@ -322,8 +324,9 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
+; boost/optimized/get_turns.ll
 ; clamav/optimized/arcread.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; libwebp/optimized/idec_dec.c.ll
@@ -355,12 +358,12 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }
 
-; 28 occurrences:
+; 30 occurrences:
 ; cmake/optimized/archive_read_support_filter_rpm.c.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
@@ -380,11 +383,13 @@ entry:
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; luau/optimized/Generalization.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; mimalloc/optimized/page.c.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
+; php/optimized/decode.ll
 ; postgres/optimized/multirangetypes.ll
 ; qemu/optimized/block_vhdx.c.ll
 ; qemu/optimized/block_vmdk.c.ll
@@ -393,7 +398,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }
@@ -427,10 +432,9 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; c3c/optimized/sema_expr.c.ll
-; freetype/optimized/truetype.c.ll
 ; graphviz/optimized/position.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {

@@ -14,7 +14,7 @@
 define i32 @func000000000000001b(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
@@ -27,13 +27,13 @@ entry:
 define i32 @func0000000000000012(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
-; 235 occurrences:
+; 234 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -124,7 +124,6 @@ entry:
 ; linux/optimized/intel_uc_fw.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/resize.ll
-; linux/optimized/utaddress.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -273,7 +272,7 @@ entry:
 define i32 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
@@ -285,7 +284,7 @@ entry:
 define i32 @func000000000000001a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 1
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
@@ -300,7 +299,7 @@ entry:
 define i32 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 28
   %5 = trunc i64 %4 to i32
   ret i32 %5
@@ -316,7 +315,7 @@ entry:
 define i32 @func0000000000000022(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
@@ -328,7 +327,7 @@ entry:
 define i32 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
@@ -341,7 +340,7 @@ entry:
 define i32 @func0000000000000020(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 12
   %5 = trunc i64 %4 to i32
   ret i32 %5
@@ -353,21 +352,20 @@ entry:
 define i32 @func000000000000003a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 12
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
-; 3 occurrences:
-; linux/optimized/map.ll
+; 2 occurrences:
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/trans_virtio.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 12
   %5 = trunc i64 %4 to i32
   ret i32 %5
@@ -379,7 +377,7 @@ entry:
 define i32 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5

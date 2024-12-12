@@ -35,4 +35,39 @@ entry:
   ret i8 %5
 }
 
+; 1 occurrences:
+; llvm/optimized/MCDwarf.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = add nsw i64 %3, %0
+  %5 = trunc nuw i64 %4 to i8
+  ret i8 %5
+}
+
+; 2 occurrences:
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; Function Attrs: nounwind
+define i8 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = add nuw nsw i64 %3, %0
+  %5 = trunc nuw nsw i64 %4 to i8
+  ret i8 %5
+}
+
+; 2 occurrences:
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; Function Attrs: nounwind
+define i8 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = add nuw nsw i64 %3, %0
+  %5 = trunc nuw i64 %4 to i8
+  ret i8 %5
+}
+
 attributes #0 = { nounwind }

@@ -49,15 +49,14 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; rust-analyzer-rs/optimized/55szrkbrq7kolv5z.ll
-; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp ult i32 %2, 2048
-  %4 = select i1 %3, i64 2, i64 %0
+  %3 = icmp ult i32 %2, 17
+  %4 = select i1 %3, i64 0, i64 %0
   ret i64 %4
 }
 

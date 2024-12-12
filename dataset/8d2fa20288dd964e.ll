@@ -1,8 +1,22 @@
 
-; 37 occurrences:
+; 51 occurrences:
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cmake/optimized/tty.c.ll
 ; cpython/optimized/dtoa.ll
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; freetype/optimized/autofit.c.ll
@@ -47,7 +61,7 @@ entry:
   ret i32 %6
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; git/optimized/unpack-trees.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
@@ -81,15 +95,14 @@ entry:
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
-; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1
+  %3 = and i32 %2, 33554432
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %0, i32 %1
-  %6 = or i32 %5, 2
+  %6 = or i32 %5, 49152
   ret i32 %6
 }
 

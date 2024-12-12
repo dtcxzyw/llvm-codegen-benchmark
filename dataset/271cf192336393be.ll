@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/util_bitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ca(i64 %0, i32 %1) #0 {
+define i1 @func000000000000038a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64

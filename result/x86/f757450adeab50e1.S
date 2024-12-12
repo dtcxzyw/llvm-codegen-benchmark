@@ -28,7 +28,7 @@ func0000000000000019:                   # @func0000000000000019
 	shlb	$2, %al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	cmpl	$32768, %esi                    # imm = 0x8000
 	setae	%al
 	shlb	$5, %al
@@ -52,4 +52,11 @@ func0000000000000014:                   # @func0000000000000014
 	shlb	$5, %al
 	orb	%dil, %al
 	orb	$4, %al
+	retq
+func0000000000000029:                   # @func0000000000000029
+	cmpl	$16385, %esi                    # imm = 0x4001
+	movl	$34, %ecx
+	movl	$10, %eax
+	cmovbl	%ecx, %eax
+	orl	%edi, %eax
 	retq

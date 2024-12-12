@@ -1,9 +1,9 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000003b:                   # @func000000000000003b
 	subl	%edx, %esi
 	movslq	%esi, %rax
 	leaq	3(%rdi,%rax), %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000007b:                   # @func000000000000007b
 	subl	%edx, %esi
 	movslq	%esi, %rax
 	leaq	(%rax,%rax,4), %rax
@@ -29,11 +29,11 @@ func0000000000000028:                   # @func0000000000000028
 	movslq	%esi, %rax
 	leaq	4(%rdi,%rax,4), %rax
 	retq
-func000000000000006b:                   # @func000000000000006b
+func0000000000000070:                   # @func0000000000000070
 	subl	%edx, %esi
 	movslq	%esi, %rax
-	leaq	(%rax,%rax,4), %rax
-	leaq	48(%rdi,%rax,8), %rax
+	shlq	$4, %rax
+	leaq	24(%rdi,%rax), %rax
 	retq
 func0000000000000040:                   # @func0000000000000040
 	subl	%edx, %esi

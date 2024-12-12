@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; cpython/optimized/_zoneinfo.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libquic/optimized/prtime.cc.ll
 ; linux/optimized/scsi_logging.ll

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; folly/optimized/JsonTestUtil.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
 ; freetype/optimized/ftbitmap.c.ll
@@ -14,7 +14,6 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; opencv/optimized/solvepnp.cpp.ll
 ; openjdk/optimized/DrawLine.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; postgres/optimized/spell.ll
 ; quickjs/optimized/quickjs.ll
 ; vcpkg/optimized/versions.cpp.ll
@@ -27,12 +26,11 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; icu/optimized/collation.ll
-; imgui/optimized/imgui_demo.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll

@@ -8,7 +8,7 @@
 ; ruby/optimized/thread.ll
 ; wireshark/optimized/packet-asam-cmp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 780
   %3 = icmp eq i16 %2, 0
@@ -17,10 +17,12 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; cmake/optimized/select.c.ll
 ; curl/optimized/libcurl_la-select.ll
+; grpc/optimized/ev_poll_posix.cc.ll
 ; icu/optimized/normalizer2impl.ll
+; libevent/optimized/poll.c.ll
 ; linux/optimized/memfd.ll
 ; redis/optimized/ae.ll
 ; wasmedge/optimized/inode-linux.cpp.ll

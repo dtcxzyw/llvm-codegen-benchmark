@@ -9,23 +9,51 @@ entry:
   ret i64 %2
 }
 
-; 16 occurrences:
-; cvc5/optimized/conjecture_generator.cpp.ll
-; freetype/optimized/pcf.c.ll
-; hdf5/optimized/H5LD.c.ll
-; hdf5/optimized/H5Tconv_compound.c.ll
+; 6 occurrences:
 ; libquic/optimized/ctr.c.ll
-; linux/optimized/iov_iter.ll
-; linux/optimized/readahead.ll
-; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; openssl/optimized/libcrypto-lib-ctr128.ll
 ; openssl/optimized/libcrypto-lib-e_chacha20_poly1305.ll
 ; openssl/optimized/libcrypto-shlib-ctr128.ll
 ; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
 ; openssl/optimized/libdefault-lib-cipher_chacha20_hw.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, %0
+  %3 = select i1 %2, i64 %0, i64 0
+  ret i64 %3
+}
+
+; 7 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; linux/optimized/inetpeer.ll
+; linux/optimized/mpih-div.ll
+; openjdk/optimized/divnode.ll
+; openssl/optimized/libcrypto-lib-bio_print.ll
+; openssl/optimized/libcrypto-shlib-bio_print.ll
+; portaudio/optimized/pa_linux_alsa.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
+entry:
+  %.not = icmp ult i64 %1, %0
+  %2 = select i1 %.not, i64 0, i64 %0
+  ret i64 %2
+}
+
+; 13 occurrences:
+; cvc5/optimized/conjecture_generator.cpp.ll
+; freetype/optimized/pcf.c.ll
+; hdf5/optimized/H5LD.c.ll
+; hdf5/optimized/H5Tconv_compound.c.ll
+; linux/optimized/iov_iter.ll
+; linux/optimized/readahead.ll
+; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; openvdb/optimized/StreamCompression.cc.ll
 ; redis/optimized/db.ll
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -34,19 +62,12 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; linux/optimized/inetpeer.ll
-; linux/optimized/mpih-div.ll
-; openjdk/optimized/divnode.ll
-; openssl/optimized/libcrypto-lib-bio_print.ll
-; openssl/optimized/libcrypto-shlib-bio_print.ll
-; portaudio/optimized/pa_linux_alsa.c.ll
+; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
-  %.not = icmp ult i64 %1, %0
+  %.not = icmp samesign ult i64 %1, %0
   %2 = select i1 %.not, i64 0, i64 %0
   ret i64 %2
 }

@@ -11,7 +11,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%esi, %eax
 	seta	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	addl	%esi, %esi
 	leal	(%rdi,%rdi,2), %eax
 	cmpl	%esi, %eax

@@ -3,44 +3,44 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a0, a0, -238
 	sltiu	a0, a0, -9
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	srli	a0, a0, 60
 	addi	a0, a0, -3
 	sltiu	a0, a0, 2
 	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	srli	a0, a0, 32
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	srli	a0, a0, 2
 	addiw	a0, a0, -3
 	sltiu	a0, a0, -2
 	ret
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	srli	a0, a0, 3
 	sext.w	a0, a0
 	addi	a0, a0, 1
 	seqz	a0, a0
 	ret
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	srli	a0, a0, 4
 	addiw	a0, a0, 7
 	sltiu	a0, a0, 8
 	ret
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	srli	a0, a0, 3
 	addiw	a0, a0, -1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	srli	a0, a0, 3
 	addiw	a0, a0, -1
 	slti	a0, a0, 0
 	ret
-func0000000000000114:                   # @func0000000000000114
+func0000000000000234:                   # @func0000000000000234
 	srli	a0, a0, 1
 	addiw	a0, a0, -3
 	sltiu	a0, a0, 3
@@ -57,62 +57,73 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func000000000000012a:                   # @func000000000000012a
+func000000000000024a:                   # @func000000000000024a
 	srli	a0, a0, 2
 	addiw	a0, a0, 63
 	slti	a0, a0, 64
 	xori	a0, a0, 1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	srli	a0, a0, 3
 	addiw	a0, a0, 1
 	sltiu	a0, a0, 2
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	srli	a0, a0, 32
 	addiw	a0, a0, -100
 	sltiu	a0, a0, 900
 	ret
-func0000000000000118:                   # @func0000000000000118
+func0000000000000228:                   # @func0000000000000228
 	srli	a0, a0, 3
 	addiw	a0, a0, -129
 	sltiu	a0, a0, -128
 	ret
-func000000000000010c:                   # @func000000000000010c
+func0000000000000241:                   # @func0000000000000241
+	srli	a0, a0, 2
+	sext.w	a0, a0
+	addi	a0, a0, 2
+	seqz	a0, a0
+	ret
+func000000000000020c:                   # @func000000000000020c
 	srli	a0, a0, 1
 	sext.w	a0, a0
 	addi	a0, a0, -14
 	snez	a0, a0
 	ret
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	srli	a0, a0, 2
 	sext.w	a0, a0
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000214:                   # @func0000000000000214
+	srli	a0, a0, 2
+	addiw	a0, a0, 1
+	sltiu	a0, a0, 256
+	ret
+func0000000000000021:                   # @func0000000000000021
 	srli	a0, a0, 4
 	sext.w	a0, a0
 	addi	a0, a0, 1
 	seqz	a0, a0
 	ret
-func000000000000011c:                   # @func000000000000011c
+func000000000000022c:                   # @func000000000000022c
 	srli	a0, a0, 2
 	sext.w	a0, a0
 	addi	a0, a0, -1
 	snez	a0, a0
 	ret
-func0000000000000094:                   # @func0000000000000094
+func0000000000000124:                   # @func0000000000000124
 	srli	a0, a0, 32
 	addiw	a0, a0, 128
 	sltiu	a0, a0, 256
 	ret
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	srli	a0, a0, 32
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	srli	a0, a0, 32
 	addiw	a0, a0, -63
 	sltiu	a0, a0, -64

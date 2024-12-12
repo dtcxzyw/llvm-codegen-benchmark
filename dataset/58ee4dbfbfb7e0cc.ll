@@ -14,10 +14,11 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; clamav/optimized/mew.c.ll
 ; linux/optimized/intel_sprite.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:

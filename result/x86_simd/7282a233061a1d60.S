@@ -1,6 +1,6 @@
 func000000000000000c:                   # @func000000000000000c
 	vcvtdq2pd	%ymm2, %zmm2
-	vaddpd	%zmm0, %zmm2, %zmm0
+	vaddpd	%zmm2, %zmm0, %zmm0
 	vcvtdq2pd	%ymm1, %zmm1
 	vcmplepd	%zmm0, %zmm1, %k0
 	vpmovm2w	%k0, %xmm0
@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vcvtdq2pd	%ymm2, %zmm2
-	vaddpd	%zmm0, %zmm2, %zmm0
+	vaddpd	%zmm2, %zmm0, %zmm0
 	vcvtdq2pd	%ymm1, %zmm1
 	vcmpltpd	%zmm1, %zmm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -16,7 +16,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vcvtdq2pd	%ymm2, %zmm2
-	vaddpd	%zmm0, %zmm2, %zmm0
+	vaddpd	%zmm2, %zmm0, %zmm0
 	vcvtdq2pd	%ymm1, %zmm1
 	vcmpltpd	%zmm0, %zmm1, %k0
 	vpmovm2w	%k0, %xmm0

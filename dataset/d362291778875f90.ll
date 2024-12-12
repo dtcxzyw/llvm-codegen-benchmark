@@ -1,5 +1,7 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/intersection_box.ll
 ; graphviz/optimized/lu.c.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -20,12 +22,13 @@
 define double @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   %5 = select i1 %4, double %3, double %0
   ret double %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/intersection_box.ll
 ; opencv/optimized/svm.cpp.ll
 ; openusd/optimized/ray.cpp.ll
 ; openvdb/optimized/RayTracer.cc.ll
@@ -34,7 +37,7 @@ entry:
 define double @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   %5 = select i1 %4, double %3, double %0
   ret double %5
 }
@@ -46,7 +49,7 @@ entry:
 define double @func000000000000000b(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %.inv = fcmp olt double %3, %0
+  %.inv = fcmp ogt double %0, %3
   %4 = select i1 %.inv, double %0, double %3
   ret double %4
 }

@@ -22,17 +22,3 @@ func0000000000000002:                   # @func0000000000000002
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000010:                   # @func0000000000000010
-	srliw	a2, a1, 5
-	lui	a3, 8216
-	addiw	a3, a3, 289
-	mul	a2, a2, a3
-	lui	a3, 8
-	srli	a2, a2, 35
-	addi	a3, a3, -96
-	mul	a2, a2, a3
-	subw	a1, a1, a2
-	sltiu	a1, a1, 4
-	xori	a1, a1, 1
-	or	a0, a0, a1
-	ret

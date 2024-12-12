@@ -25,14 +25,14 @@
 define i64 @func0000000000000037(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }
 
-; 61 occurrences:
+; 62 occurrences:
 ; clamav/optimized/binhex.c.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/oabd.c.ll
@@ -55,7 +55,6 @@ entry:
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libquic/optimized/packeted_bio.cc.ll
-; linux/optimized/huf_decompress.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
@@ -94,11 +93,13 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/k12.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000036(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
   %7 = zext i32 %6 to i64
@@ -115,10 +116,24 @@ entry:
 define i64 @func0000000000000026(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
   %7 = zext i32 %6 to i64
+  ret i64 %7
+}
+
+; 2 occurrences:
+; hermes/optimized/JSLexer.cpp.ll
+; wireshark/optimized/packet-mpls.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i32 %0, i8 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 6
+  %4 = or disjoint i32 %3, %0
+  %5 = zext nneg i8 %1 to i32
+  %6 = or disjoint i32 %4, %5
+  %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }
 

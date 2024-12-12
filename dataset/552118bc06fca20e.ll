@@ -1,7 +1,12 @@
 
-; 154 occurrences:
+; 159 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -41,6 +46,7 @@
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/MacroExpansionContext.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
 ; meshlab/optimized/action_searcher.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -50,7 +56,6 @@
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -155,15 +160,15 @@
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yosys/optimized/opt_clean.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 221 occurrences:
+; 226 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
@@ -171,6 +176,11 @@ entry:
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
@@ -389,7 +399,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -401,7 +411,32 @@ entry:
 define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 15 occurrences:
+; linux/optimized/ucs2_string.ll
+; llvm/optimized/Commit.cpp.ll
+; llvm/optimized/CoverageMapping.cpp.ll
+; llvm/optimized/CoverageMappingWriter.cpp.ll
+; llvm/optimized/EditedSource.cpp.ll
+; llvm/optimized/RegAllocGreedy.cpp.ll
+; llvm/optimized/ValueEnumerator.cpp.ll
+; opencv/optimized/ar_hmdb_benchmark.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
+; opencv/optimized/flann_search_dataset.cpp.ll
+; opencv/optimized/miniflann.cpp.ll
+; opencv/optimized/ppf_helpers.cpp.ll
+; opencv/optimized/warpfield.cpp.ll
+; qemu/optimized/system_physmem.c.ll
+; z3/optimized/seq_rewriter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 12
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -413,21 +448,18 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; linux/optimized/ucs2_string.ll
-; llvm/optimized/ValueEnumerator.cpp.ll
-; z3/optimized/seq_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -435,10 +467,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Evaluator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000015(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp samesign ule i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -449,7 +481,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 4
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

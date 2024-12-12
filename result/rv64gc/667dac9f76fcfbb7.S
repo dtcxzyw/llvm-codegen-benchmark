@@ -1,11 +1,11 @@
-func0000000000000249:                   # @func0000000000000249
+func0000000000000c89:                   # @func0000000000000c89
 	addi	a2, a2, 1
 	sltu	a1, a0, a1
 	sltu	a0, a0, a2
 	not	a1, a1
 	and	a0, a0, a1
 	ret
-func00000000000002c5:                   # @func00000000000002c5
+func0000000000000d85:                   # @func0000000000000d85
 	addi	a2, a2, 6
 	sltu	a1, a1, a0
 	xor	a0, a0, a2
@@ -13,7 +13,7 @@ func00000000000002c5:                   # @func00000000000002c5
 	not	a1, a1
 	and	a0, a0, a1
 	ret
-func00000000000002cc:                   # @func00000000000002cc
+func0000000000000d8c:                   # @func0000000000000d8c
 	addi	a2, a2, 3
 	xor	a1, a1, a0
 	xor	a0, a0, a2
@@ -21,8 +21,8 @@ func00000000000002cc:                   # @func00000000000002cc
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func00000000000002c1:                   # @func00000000000002c1
-	addi	a2, a2, 144
+func0000000000000d81:                   # @func0000000000000d81
+	addi	a2, a2, 320
 	xor	a1, a1, a0
 	xor	a0, a0, a2
 	snez	a0, a0

@@ -1,5 +1,7 @@
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/colvargrid.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

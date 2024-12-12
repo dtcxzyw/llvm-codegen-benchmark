@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; clamav/optimized/explode.c.ll
 ; libevent/optimized/event_tagging.c.ll
 ; linux/optimized/cistpl.ll
@@ -8,6 +8,7 @@
 ; linux/optimized/i8042.ll
 ; linux/optimized/vht.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; php/optimized/image.ll
 ; wireshark/optimized/packet-alp.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
@@ -30,13 +31,14 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; linux/optimized/drm_dp_mst_topology.ll
+; lvgl/optimized/lv_math.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i8 %0) #0 {
 entry:
   %1 = lshr i8 %0, 1
-  %2 = add nuw i8 %1, 3
+  %2 = add nuw i8 %1, 1
   %3 = zext i8 %2 to i32
   ret i32 %3
 }

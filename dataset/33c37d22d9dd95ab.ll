@@ -1,10 +1,12 @@
 
-; 27 occurrences:
+; 32 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; libsodium/optimized/libsodium_la-softaes.ll
 ; llvm/optimized/PPCaching.cpp.ll
+; ocio/optimized/HashUtils.cpp.ll
 ; oiio/optimized/farmhash.cpp.ll
+; php/optimized/hash_xxhash.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; typst-rs/optimized/15cosas43yh9dmeo.ll
@@ -27,6 +29,9 @@
 ; typst-rs/optimized/xrijsyrxk2ciyk9.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

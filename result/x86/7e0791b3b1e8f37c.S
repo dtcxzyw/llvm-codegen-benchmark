@@ -8,9 +8,9 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax
-	andl	$8192, %edx                     # imm = 0x2000
+	andl	$-195, %edx
 	orl	%edi, %edx
-	andl	$1, %eax
+	andl	$64, %eax
 	orl	%edx, %eax
 	orl	$2, %eax
 	retq

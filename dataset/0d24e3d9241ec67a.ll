@@ -1,14 +1,25 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; flac/optimized/stream_encoder.c.ll
-; linux/optimized/xfrm_user.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -4
   %3 = lshr i32 %2, 3
   %4 = add nuw nsw i32 %3, 22
   %5 = icmp ugt i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/xfrm_user.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 7
+  %3 = lshr i32 %2, 3
+  %4 = add nuw nsw i32 %3, 72
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -129,7 +140,7 @@ entry:
 ; z3/optimized/warning.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = lshr i32 %2, 1

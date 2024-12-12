@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; darktable/optimized/SamsungV1Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000b9(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = sub nsw i32 %1, %3
-  %5 = icmp uge i32 %4, %0
+  %5 = icmp samesign uge i32 %4, %0
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
 ; linux/optimized/maple_tree.ll
 ; stockfish/optimized/tt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nuw i32 %1, %3
@@ -75,7 +75,7 @@ entry:
 ; wireshark/optimized/packet-icmpv6.c.ll
 ; wireshark/optimized/packet-someip-sd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -93,7 +93,7 @@ entry:
 ; libzmq/optimized/trie.cpp.ll
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -104,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Compiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = sub i32 %1, %3
@@ -116,7 +116,7 @@ entry:
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pairlist_simd_kernel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000057(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000a7(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -135,16 +135,14 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; linux/optimized/virtio_net.ll
-; opencv/optimized/floodfill.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-dof.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub i32 %1, %3
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -174,7 +172,7 @@ entry:
 ; linux/optimized/af_inet.ll
 ; linux/optimized/xfrm_output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = sub i32 %1, %3
@@ -182,11 +180,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/af_packet.ll
+; 1 occurrences:
 ; linux/optimized/hub.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -195,9 +192,32 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/af_packet.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = sub nsw i32 %1, %3
+  %5 = icmp samesign ult i32 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/virtio_net.ll
+; opencv/optimized/floodfill.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = sub i32 %1, %3
+  %5 = icmp ugt i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -219,7 +239,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/floodfill.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -230,7 +250,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/floodfill.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000025(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -241,7 +261,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/codeobject.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = sub nsw i32 %1, %3

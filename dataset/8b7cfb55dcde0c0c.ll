@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; openspiel/optimized/2048.cc.ll
 ; spike/optimized/vsext_vf2.ll
 ; spike/optimized/vsext_vf4.ll
 ; spike/optimized/vsext_vf8.ll
@@ -53,16 +54,15 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/pyhash.ll
-; openspiel/optimized/2048.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 2
-  %2 = and i64 %1, 4294967292
-  %3 = lshr i64 %0, 32
+  %1 = shl i64 %0, 30
+  %2 = and i64 %1, 2305843008139952128
+  %3 = lshr i64 %0, 31
   %4 = or i64 %2, %3
   ret i64 %4
 }

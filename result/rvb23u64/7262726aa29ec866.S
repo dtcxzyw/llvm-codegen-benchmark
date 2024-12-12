@@ -45,6 +45,11 @@ func000000000000005c:                   # @func000000000000005c
 	addi	a1, a2, -1360
 	addw	a0, a0, a1
 	ret
+func0000000000000040:                   # @func0000000000000040
+	add	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, -2
+	ret
 func000000000000000c:                   # @func000000000000000c
 	add	a1, a1, a2
 	add	a0, a0, a1
@@ -74,4 +79,8 @@ func00000000000000ba:                   # @func00000000000000ba
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 31
+	ret
+func000000000000009d:                   # @func000000000000009d
+	add	a0, a0, a2
+	addw	a0, a0, a1
 	ret

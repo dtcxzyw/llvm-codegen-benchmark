@@ -1,15 +1,16 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; linux/optimized/hdac_sysfs.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; openjdk/optimized/classFileParser.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %1, %2
-  %4 = icmp ugt i16 %3, %0
+  %4 = icmp ult i16 %0, %3
   ret i1 %4
 }
 
@@ -23,7 +24,7 @@ entry:
 define i1 @func0000000000000006(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %1, %2
-  %4 = icmp sgt i16 %3, %0
+  %4 = icmp slt i16 %0, %3
   ret i1 %4
 }
 
@@ -37,7 +38,7 @@ entry:
 define i1 @func000000000000000a(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %1, %2
-  %4 = icmp slt i16 %3, %0
+  %4 = icmp sgt i16 %0, %3
   ret i1 %4
 }
 
@@ -47,11 +48,11 @@ entry:
 define i1 @func000000000000000c(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %1, %2
-  %4 = icmp ne i16 %3, %0
+  %4 = icmp ne i16 %0, %3
   ret i1 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; faiss/optimized/partitioning.cpp.ll
 ; icu/optimized/olsontz.ll
@@ -62,6 +63,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; wireshark/optimized/eax.c.ll
 ; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-mausb.c.ll
@@ -71,19 +73,33 @@ entry:
 define i1 @func0000000000000001(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %1, %2
-  %4 = icmp eq i16 %3, %0
+  %4 = icmp eq i16 %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %1, %2
-  %4 = icmp ult i16 %3, %0
+  %4 = icmp ugt i16 %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = add i16 %1, %2
+  %4 = icmp uge i16 %0, %3
   ret i1 %4
 }
 
@@ -93,7 +109,7 @@ entry:
 define i1 @func0000000000000005(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %1, %2
-  %4 = icmp uge i16 %3, %0
+  %4 = icmp ule i16 %0, %3
   ret i1 %4
 }
 

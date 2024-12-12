@@ -5,7 +5,7 @@
 ; re2/optimized/parse.cc.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 2
   %3 = icmp eq i8 %0, 48
@@ -22,7 +22,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000042c(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 1
   %3 = icmp eq i8 %0, 0
@@ -34,7 +34,7 @@ entry:
 ; php/optimized/ir_emit.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -28
   %3 = icmp ult i64 %2, 1472
@@ -50,7 +50,7 @@ entry:
 ; php/optimized/ZendAccelerator.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 1
   %3 = icmp ne i8 %0, 47
@@ -63,7 +63,7 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; php/optimized/url.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -6
   %3 = icmp ult i64 %2, -4
@@ -76,7 +76,7 @@ entry:
 ; php/optimized/ir_emit.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2147483648
   %3 = icmp ult i64 %2, 4294967296
@@ -89,7 +89,7 @@ entry:
 ; llvm/optimized/Demangle.cpp.ll
 ; php/optimized/quot_print.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -67
   %3 = icmp ult i64 %2, -76
@@ -101,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/quot_print.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -64
   %3 = icmp ult i64 %2, -76
@@ -111,21 +111,32 @@ entry:
 }
 
 ; 1 occurrences:
-; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/static_string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i8 %0, i64 %1) #0 {
+define i1 @func000000000000058c(i8 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -144
-  %3 = icmp ult i64 %2, 48
-  %4 = icmp eq i8 %0, -128
-  %5 = and i1 %3, %4
+  %2 = icmp ne i64 %1, 2
+  %3 = icmp ne i8 %0, 53
+  %4 = and i1 %2, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i8 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -4
+  %3 = icmp ult i64 %2, -3
+  %4 = icmp eq i8 %0, 57
+  %5 = and i1 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; icu/optimized/unames.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000050c(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4
   %3 = icmp ult i64 %2, -3

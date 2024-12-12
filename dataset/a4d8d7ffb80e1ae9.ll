@@ -17,12 +17,12 @@
 ; fmt/optimized/xchar-test.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000d8a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000370a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 0
   %5 = sub nuw nsw i32 2147483647, %3
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp samesign ugt i32 %0, %5
   %7 = select i1 %4, i1 %6, i1 false
   ret i1 %7
 }
@@ -191,12 +191,12 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000daa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000354a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 0
   %5 = sub nuw nsw i32 2147483647, %3
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   %7 = select i1 %4, i1 %6, i1 false
   ret i1 %7
 }

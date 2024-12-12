@@ -10,13 +10,6 @@ func0000000000000017:                   # @func0000000000000017
 	orl	%edx, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
-	movzwl	%dx, %eax
-	shll	$8, %eax
-	shll	$24, %esi
-	orl	%esi, %eax
-	addl	%edi, %eax
-	retq
 func000000000000007c:                   # @func000000000000007c
 	movzwl	%dx, %eax
 	shll	$7, %eax

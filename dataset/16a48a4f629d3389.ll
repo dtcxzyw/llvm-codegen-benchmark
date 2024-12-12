@@ -31,7 +31,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 8589934584
@@ -55,15 +55,16 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; entt/optimized/flow.cpp.ll
 ; entt/optimized/organizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = and i64 %2, -4
+  %3 = and i64 %2, 4294967292
   %4 = add nuw i64 %0, 4
   %5 = icmp eq i64 %4, %3
   ret i1 %5
@@ -72,19 +73,19 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/gres_select_filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 2147483647
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 2147483647

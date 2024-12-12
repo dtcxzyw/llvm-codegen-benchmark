@@ -1,5 +1,5 @@
 
-; 301 occurrences:
+; 300 occurrences:
 ; clamav/optimized/scanners.c.ll
 ; libquic/optimized/tasn_prn.c.ll
 ; linux/optimized/af_netlink.ll
@@ -266,7 +266,6 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; openjdk/optimized/ciMethod.ll
-; openmpi/optimized/group_set_rank.ll
 ; openssl/optimized/libcrypto-lib-tasn_prn.ll
 ; openssl/optimized/libcrypto-shlib-tasn_prn.ll
 ; openusd/optimized/bboxCache.cpp.ll
@@ -342,13 +341,14 @@ entry:
   ret ptr %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; linux/optimized/p4.ll
+; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000014(ptr %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 62
-  %3 = icmp ult i64 %2, 46
+  %2 = and i64 %1, 7
+  %3 = icmp samesign ult i64 %2, 3
   %4 = select i1 %3, ptr %0, ptr null
   ret ptr %4
 }

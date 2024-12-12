@@ -1,5 +1,5 @@
 
-; 587 occurrences:
+; 590 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -26,6 +26,7 @@
 ; libjpeg-turbo/optimized/jdmerge.c.ll
 ; libquic/optimized/poly.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/alps.ll
@@ -38,7 +39,6 @@
 ; linux/optimized/hosts.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_sdvo.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
@@ -363,7 +363,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -531,6 +530,12 @@
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_spinbox.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -563,7 +568,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/phar_object.ll
 ; php/optimized/util.ll
 ; postgres/optimized/heapam.ll
@@ -571,7 +575,6 @@
 ; postgres/optimized/tablecmds.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/time.ll
 ; sqlite/optimized/sqlite3.ll
@@ -591,11 +594,11 @@
 define i16 @func0000000000000003(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; cpython/optimized/_codecs_kr.ll
 ; cpython/optimized/unicodeobject.ll
@@ -610,7 +613,6 @@ entry:
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/ip6_offload.ll
-; linux/optimized/match.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/pci.ll
@@ -662,7 +664,7 @@ entry:
   ret i16 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; git/optimized/merge-ort.ll
 ; git/optimized/send-pack.ll
 ; git/optimized/transport.ll
@@ -682,7 +684,6 @@ entry:
 ; openusd/optimized/refinement.cpp.ll
 ; postgres/optimized/heapam.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; wasmedge/optimized/engine.cpp.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
@@ -690,11 +691,11 @@ entry:
 define i16 @func0000000000000002(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; git/optimized/send-pack.ll
 ; git/optimized/transport.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
@@ -723,7 +724,6 @@ entry:
 ; openusd/optimized/refinement.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll

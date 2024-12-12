@@ -44,8 +44,11 @@ func0000000000000010:                   # @func0000000000000010
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI6_0:
-	.long	4294967286                      # 0xfffffff6
+	.long	1024                            # 0x400
 func0000000000000000:                   # @func0000000000000000
-	vpmulld	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm1, %ymm2
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
+	vpbroadcastd	.LCPI6_0(%rip), %ymm1   # ymm1 = [1024,1024,1024,1024,1024,1024,1024,1024]
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq

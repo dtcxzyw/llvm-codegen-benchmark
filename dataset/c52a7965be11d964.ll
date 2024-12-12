@@ -14,7 +14,7 @@
 ; ruby/optimized/ripper.ll
 ; yosys/optimized/verilog_parser.tab.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sext i16 %0 to i32
@@ -30,7 +30,7 @@ entry:
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; postgres/optimized/gram.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sext i16 %0 to i32
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/unicode_norm_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sext i16 %0 to i32
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/gfluidcore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sext i16 %0 to i32

@@ -1,9 +1,11 @@
 
-; 28 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/bay6adxmosnf2qi.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -45,7 +47,7 @@ entry:
 define i128 @func000000000000000a(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %1, 10779635027931437427
-  %3 = add nuw i128 %2, %0
+  %3 = add nuw i128 %0, %2
   ret i128 %3
 }
 
@@ -107,7 +109,7 @@ entry:
 define i128 @func000000000000000e(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw nsw i128 %1, 18446744073709551615
-  %3 = add nuw i128 %2, %0
+  %3 = add nuw i128 %0, %2
   ret i128 %3
 }
 

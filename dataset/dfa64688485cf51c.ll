@@ -46,12 +46,12 @@
 ; stb/optimized/stb_truetype.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001f4(i32 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 15
   %3 = add nuw nsw i64 %2, 16
   %4 = zext nneg i32 %0 to i64
-  %5 = icmp ult i64 %3, %4
+  %5 = icmp samesign ult i64 %3, %4
   ret i1 %5
 }
 
@@ -62,12 +62,12 @@ entry:
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001b4(i32 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 3
   %3 = add nuw nsw i64 %2, 4
   %4 = zext i32 %0 to i64
-  %5 = icmp ult i64 %3, %4
+  %5 = icmp samesign ult i64 %3, %4
   ret i1 %5
 }
 

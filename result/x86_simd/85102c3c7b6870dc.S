@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	64                              # 0x40
-func0000000000000075:                   # @func0000000000000075
+func00000000000000d5:                   # @func00000000000000d5
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [64,64,64,64]

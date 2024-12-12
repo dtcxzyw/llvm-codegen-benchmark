@@ -143,7 +143,7 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; bullet3/optimized/btKinematicCharacterController.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/convparm.cpp.ll
@@ -159,6 +159,7 @@ entry:
 ; opencv/optimized/evaluation.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
+; opencv/optimized/simpleflow_demo.cpp.ll
 ; opencv/optimized/subdivision2d.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
 ; openusd/optimized/nanocolor.c.ll
@@ -175,7 +176,7 @@ entry:
   ret i1 %4
 }
 
-; 86 occurrences:
+; 89 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -198,6 +199,8 @@ entry:
 ; harfbuzz/optimized/hb-subset-instancer-solver.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -262,6 +265,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(float %0, float %1) #0 {
 entry:
@@ -287,7 +291,7 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; opencv/optimized/fast_icp.cpp.ll
 ; opencv/optimized/kinfu_frame.cpp.ll
@@ -295,6 +299,8 @@ entry:
 ; opencv/optimized/optical_flow_evaluation.cpp.ll
 ; openjdk/optimized/c1_Canonicalizer.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000ee(float %0, float %1) #0 {
 entry:
@@ -414,6 +420,17 @@ define i1 @func00000000000000c4(float %0, float %1) #0 {
 entry:
   %2 = fcmp oge float %1, 3.600000e+02
   %3 = fcmp ogt float %0, 1.800000e+02
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_svg_render.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(float %0, float %1) #0 {
+entry:
+  %2 = fcmp oeq float %1, 0.000000e+00
+  %3 = fcmp ogt float %0, 0.000000e+00
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

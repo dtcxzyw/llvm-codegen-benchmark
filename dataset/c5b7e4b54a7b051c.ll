@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1, i32 %2) #0 {
 entry:

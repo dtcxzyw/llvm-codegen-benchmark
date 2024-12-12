@@ -1,20 +1,20 @@
 
-%"class.easylog::record_t.2663349" = type { %"class.std::chrono::time_point.2663350", i32, i32, %"class.std::__cxx11::basic_string.2663237", %"class.std::__cxx11::basic_string.2663237" }
-%"class.std::chrono::time_point.2663350" = type { %"class.std::chrono::duration.2663323" }
-%"class.std::chrono::duration.2663323" = type { i64 }
-%"class.std::__cxx11::basic_string.2663237" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2663245", i64, %union.anon.76.2663246 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2663245" = type { ptr }
-%union.anon.76.2663246 = type { i64, [8 x i8] }
-%struct.page.3350556 = type { i64, %union.anon.36.3350557, %union.anon.44.3350558, %struct.atomic_t.3350510, [8 x i8] }
-%union.anon.36.3350557 = type { %struct.anon.37.3350559 }
-%struct.anon.37.3350559 = type { %union.anon.38.3350560, ptr, %union.anon.40.3350561, i64 }
-%union.anon.38.3350560 = type { %struct.list_head.3350525 }
-%struct.list_head.3350525 = type { ptr, ptr }
-%union.anon.40.3350561 = type { i64 }
-%union.anon.44.3350558 = type { %struct.atomic_t.3350510 }
-%struct.atomic_t.3350510 = type { i32 }
+%"class.easylog::record_t.2776466" = type { %"class.std::chrono::time_point.2776467", i32, i32, %"class.std::__cxx11::basic_string.2776354", %"class.std::__cxx11::basic_string.2776354" }
+%"class.std::chrono::time_point.2776467" = type { %"class.std::chrono::duration.2776440" }
+%"class.std::chrono::duration.2776440" = type { i64 }
+%"class.std::__cxx11::basic_string.2776354" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776362", i64, %union.anon.76.2776363 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776362" = type { ptr }
+%union.anon.76.2776363 = type { i64, [8 x i8] }
+%struct.page.3538520 = type { i64, %union.anon.36.3538521, %union.anon.44.3538522, %struct.atomic_t.3538474, [8 x i8] }
+%union.anon.36.3538521 = type { %struct.anon.37.3538523 }
+%struct.anon.37.3538523 = type { %union.anon.38.3538524, ptr, %union.anon.40.3538525, i64 }
+%union.anon.38.3538524 = type { %struct.list_head.3538489 }
+%struct.list_head.3538489 = type { ptr, ptr }
+%union.anon.40.3538525 = type { i64 }
+%union.anon.44.3538522 = type { %struct.atomic_t.3538474 }
+%struct.atomic_t.3538474 = type { i32 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -26,7 +26,6 @@
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; influxdb-rs/optimized/3jexax7r6nng0tve.ll
-; nuttx/optimized/mm_memalign.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/inspect.ll
@@ -51,11 +50,11 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %"class.easylog::record_t.2663349", ptr %3, i64 %2, i32 4
+  %4 = getelementptr nuw %"class.easylog::record_t.2776466", ptr %3, i64 %2, i32 4
   ret ptr %4
 }
 
@@ -65,11 +64,11 @@ entry:
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/task_mmu.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1099511627775
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.page.3350556, ptr %3, i64 %2, i32 1
+  %4 = getelementptr %struct.page.3538520, ptr %3, i64 %2, i32 1
   ret ptr %4
 }
 
@@ -85,8 +84,20 @@ define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1099511627775
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.page.3350556, ptr %3, i64 %2
+  %4 = getelementptr %struct.page.3538520, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 72
+  ret ptr %5
+}
+
+; 1 occurrences:
+; nuttx/optimized/mm_memalign.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -4
+  %3 = inttoptr i64 %0 to ptr
+  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 

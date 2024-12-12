@@ -1,9 +1,14 @@
 
-; 186 occurrences:
+; 195 occurrences:
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; brotli/optimized/block_splitter.c.ll
 ; clamav/optimized/qsort.c.ll
 ; clamav/optimized/regcomp.c.ll
@@ -38,7 +43,6 @@
 ; linux/optimized/buffer.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/build_utility.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/intel_context.ll
 ; linux/optimized/md-bitmap.ll
@@ -76,6 +80,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lua/optimized/lgc.ll
+; lvgl/optimized/lv_utils.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
@@ -184,17 +189,21 @@
 ; spike/optimized/vmv8r_v.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zfp/optimized/zfp.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
-; 226 occurrences:
+; 219 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -246,8 +255,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -391,8 +398,6 @@ entry:
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; rocksdb/optimized/blob_file_cache.cc.ll
 ; rocksdb/optimized/block_cache_tracer.cc.ll
@@ -412,9 +417,6 @@ entry:
 ; spike/optimized/f64_rem.ll
 ; spike/optimized/mulhsu.ll
 ; spike/optimized/mulhu.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; spike/optimized/s_mul64To128M.ll
 ; spike/optimized/vl1re64_v.ll
 ; spike/optimized/vl2re64_v.ll
 ; spike/optimized/vl4re64_v.ll
@@ -429,10 +431,11 @@ entry:
   ret i64 %3
 }
 
-; 36 occurrences:
+; 39 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; gromacs/optimized/correlationhistory.cpp.ll
+; gromacs/optimized/quadraticsplinetable.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -445,6 +448,7 @@ entry:
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/lstm_x86_avx.cpp.ll
@@ -466,6 +470,7 @@ entry:
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
 ; rust-analyzer-rs/optimized/wnma56lgiayogov.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -523,22 +528,16 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
+; 4 occurrences:
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; libquic/optimized/e_aes.c.ll
 ; opencv/optimized/resize.cpp.ll
-; openusd/optimized/avif.c.ll
-; rust-analyzer-rs/optimized/1bjrygtvfxna7kin.ll
-; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
-; rust-analyzer-rs/optimized/4il2q1fg8uiz7yqm.ll
-; rust-analyzer-rs/optimized/52ys2m0iie88bqaj.ll
-; rust-analyzer-rs/optimized/c249cixj978zg74.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   ret i64 %3
 }
 

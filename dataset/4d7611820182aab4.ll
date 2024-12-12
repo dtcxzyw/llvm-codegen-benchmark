@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/gifdecoder.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add nuw nsw i32 %3, 1
@@ -20,7 +20,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = add nuw nsw i32 %3, 1

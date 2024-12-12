@@ -19,16 +19,6 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
-	sext.w	a0, a0
-	li	a2, 6
-	bgeu	a0, a2, .LBB2_2
-	li	a0, 3
-	ret
-.LBB2_2:
-	slli	a0, a1, 32
-	srli	a0, a0, 32
-	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a0, a0
 	sltiu	a0, a0, 16

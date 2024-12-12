@@ -124,7 +124,7 @@
 ; xgboost/optimized/multi_target_tree_model.cc.ll
 ; yosys/optimized/xaiger.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
@@ -138,7 +138,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000126(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -148,7 +148,7 @@ entry:
   ret i1 %7
 }
 
-; 131 occurrences:
+; 130 occurrences:
 ; casadi/optimized/nlp_builder.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -194,7 +194,6 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
 ; luau/optimized/BytecodeSummary.cpp.ll
 ; luau/optimized/CodeGenAssembly.cpp.ll
 ; luau/optimized/CodeGenContext.cpp.ll
@@ -281,7 +280,7 @@ entry:
 ; yosys/optimized/xilinx_dsp.ll
 ; yosys/optimized/xilinx_srl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 5
   %4 = sext i32 %3 to i64
@@ -305,7 +304,7 @@ entry:
 ; openspiel/optimized/spades.cc.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -318,7 +317,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000099(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000129(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
@@ -329,34 +328,17 @@ entry:
 }
 
 ; 4 occurrences:
-; draco/optimized/symbol_encoding.cc.ll
-; gromacs/optimized/forcetable.cpp.ll
-; gromacs/optimized/redistribute.cpp.ll
-; opencv/optimized/ts_func.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = sub i64 %0, %1
-  %6 = ashr exact i64 %5, 3
-  %7 = icmp ult i64 %6, %4
-  ret i1 %7
-}
-
-; 5 occurrences:
-; draco/optimized/symbol_encoding.cc.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, 1
+  %3 = add i32 %2, -1
   %4 = sext i32 %3 to i64
   %5 = sub i64 %0, %1
-  %6 = ashr exact i64 %5, 3
+  %6 = ashr exact i64 %5, 4
   %7 = icmp ugt i64 %6, %4
   ret i1 %7
 }
@@ -365,7 +347,7 @@ entry:
 ; gromacs/optimized/redistribute.cpp.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
   %4 = sext i32 %3 to i64
@@ -375,10 +357,25 @@ entry:
   ret i1 %7
 }
 
+; 3 occurrences:
+; gromacs/optimized/forcetable.cpp.ll
+; gromacs/optimized/redistribute.cpp.ll
+; opencv/optimized/ts_func.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 2
+  %4 = sext i32 %3 to i64
+  %5 = sub i64 %0, %1
+  %6 = ashr exact i64 %5, 2
+  %7 = icmp ult i64 %6, %4
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/pme_load_balancing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000012a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -391,7 +388,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/gin_rummy_utils.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000012c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64

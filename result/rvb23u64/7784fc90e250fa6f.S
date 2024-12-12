@@ -1,25 +1,25 @@
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	xori	a1, a1, 2
 	or	a1, a1, a2
 	xori	a0, a0, 33
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	seqz	a2, a2
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func00000000000004c4:                   # @func00000000000004c4
+func0000000000001184:                   # @func0000000000001184
 	sltiu	a2, a2, -10
 	addi	a1, a1, -32
 	sltiu	a0, a0, -26
@@ -27,7 +27,7 @@ func00000000000004c4:                   # @func00000000000004c4
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func0000000000000cc8:                   # @func0000000000000cc8
+func0000000000003188:                   # @func0000000000003188
 	snez	a2, a2
 	snez	a1, a1
 	sltiu	a0, a0, 2
@@ -35,7 +35,7 @@ func0000000000000cc8:                   # @func0000000000000cc8
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	or	a1, a1, a2
 	li	a2, -2
 	seqz	a1, a1
@@ -44,19 +44,25 @@ func000000000000011c:                   # @func000000000000011c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000444:                   # @func0000000000000444
+func0000000000001084:                   # @func0000000000001084
 	maxu	a1, a1, a2
 	or	a0, a0, a1
 	srli	a0, a0, 32
 	seqz	a0, a0
 	ret
-func0000000000000141:                   # @func0000000000000141
+func0000000000000424:                   # @func0000000000000424
+	or	a1, a1, a2
+	seqz	a1, a1
+	sltiu	a0, a0, 2
+	and	a0, a0, a1
+	ret
+func0000000000000481:                   # @func0000000000000481
 	or	a0, a0, a2
 	srli	a1, a1, 16
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000004aa:                   # @func00000000000004aa
+func000000000000114a:                   # @func000000000000114a
 	lui	a3, 244
 	or	a0, a0, a1
 	addiw	a1, a3, 576

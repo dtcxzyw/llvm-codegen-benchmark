@@ -1,10 +1,9 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; clamav/optimized/readdb.c.ll
 ; folly/optimized/HugePages.cpp.ll
 ; opencv/optimized/approx.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; rocksdb/optimized/blob_compaction_filter.cc.ll
 ; rocksdb/optimized/blob_db_impl.cc.ll
 ; rocksdb/optimized/blob_garbage_meter.cc.ll
@@ -17,7 +16,7 @@
 ; ruby/optimized/dir.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp eq i64 %3, 2
@@ -26,9 +25,8 @@ entry:
   ret i1 %6
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; folly/optimized/LogConfigParser.cpp.ll
-; folly/optimized/StackTrace.cpp.ll
 ; grpc/optimized/external_account_credentials.cc.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
@@ -52,12 +50,13 @@ entry:
 ; protobuf/optimized/import_writer.cc.ll
 ; protobuf/optimized/text_format_decode_data.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ne i64 %1, %2
-  %4 = icmp ne ptr %0, null
-  %5 = and i1 %4, %3
-  ret i1 %5
+  %3 = sub i64 %1, %2
+  %4 = icmp ne i64 %3, -1
+  %5 = icmp ne ptr %0, null
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 ; 4 occurrences:
@@ -66,7 +65,7 @@ entry:
 ; php/optimized/php_cli_server.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp sgt i64 %3, 1
@@ -78,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/check_classname.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000cc(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp slt i64 %3, -1
@@ -92,7 +91,7 @@ entry:
 ; casadi/optimized/idas_interface.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000054c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %1, %2
   %4 = icmp ne ptr %0, null
@@ -103,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Clang.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ugt i64 %3, 32

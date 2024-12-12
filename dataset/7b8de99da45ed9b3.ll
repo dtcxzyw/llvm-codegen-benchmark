@@ -9,7 +9,7 @@ define i16 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = and i32 %3, 56
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   %7 = trunc nuw nsw i32 %6 to i16
   ret i16 %7
@@ -25,7 +25,7 @@ define i16 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = and i32 %3, 24
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = trunc nuw nsw i32 %6 to i16
   ret i16 %7
@@ -53,7 +53,7 @@ define i16 @func0000000000000032(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = and i32 %3, 63488
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   %7 = trunc nuw i32 %6 to i16
   ret i16 %7
@@ -82,14 +82,13 @@ entry:
   %3 = shl nuw nsw i32 %2, 6
   %4 = and i32 %3, 4032
   %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = trunc i32 %6 to i16
   ret i16 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; libevent/optimized/poll.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:

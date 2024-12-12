@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i16 %0, i64 %1) #0 {
+define i1 @func00000000000000f8(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = zext nneg i16 %0 to i32
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/compilationPolicy.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = zext nneg i16 %0 to i32
@@ -88,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = zext i16 %0 to i32
@@ -110,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = zext nneg i16 %0 to i32
@@ -121,7 +121,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = zext nneg i16 %0 to i32
@@ -145,7 +145,7 @@ entry:
 ; icu/optimized/rbbitblb.ll
 ; postgres/optimized/generic_xlog.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i16 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = zext i16 %0 to i32
@@ -156,7 +156,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/rbbitblb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = zext i16 %0 to i32
@@ -167,7 +167,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = zext nneg i16 %0 to i32

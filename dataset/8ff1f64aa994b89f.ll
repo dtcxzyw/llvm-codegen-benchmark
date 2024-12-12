@@ -6,7 +6,7 @@
 ; openjdk/optimized/pngread.ll
 ; redis/optimized/server.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 %0, i32 2
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1622000163
   %3 = select i1 %2, i32 %0, i32 1073741824

@@ -13,14 +13,15 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; opencv/optimized/denoising.cpp.ll
+; postgres/optimized/parse_relation.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, 3
+  %5 = mul nsw i64 %4, 104
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }

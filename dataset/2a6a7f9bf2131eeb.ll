@@ -4,7 +4,7 @@
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -4294967296
   %3 = ashr exact i64 %2, 32
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucbuf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 85899345920
   %3 = ashr exact i64 %2, 32

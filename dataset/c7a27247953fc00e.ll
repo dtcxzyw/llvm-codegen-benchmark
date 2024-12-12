@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_buf.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/vm.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
@@ -21,14 +22,15 @@ entry:
 define i64 @func0000000000000037(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 40
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = or disjoint i64 %4, %5
   %7 = or disjoint i64 %6, 94489280512
   ret i64 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_buf.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
@@ -48,7 +50,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 24
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = or i64 %4, %5
   %7 = or i64 %6, -4611686018427387904
@@ -74,7 +76,7 @@ entry:
 define i64 @func0000000000000034(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 24
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = or i64 %4, %5
   %7 = or i64 %6, 4611686018427387904

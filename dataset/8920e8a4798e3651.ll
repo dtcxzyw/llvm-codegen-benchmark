@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; gromacs/optimized/filenameoption.cpp.ll
 ; icu/optimized/smpdtfmt.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; wolfssl/optimized/test.c.ll

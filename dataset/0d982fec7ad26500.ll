@@ -33,7 +33,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 3
   %4 = add nsw i32 %3, -384
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -45,7 +45,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 2
   %4 = add nsw i32 %3, -4
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

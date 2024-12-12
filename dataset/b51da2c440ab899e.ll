@@ -1,5 +1,6 @@
 
-; 16 occurrences:
+; 19 occurrences:
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/1aqq6ooh2lp9lqic.ll
 ; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
 ; coreutils-rs/optimized/1rq2clzuccjujjg1.ll
@@ -16,6 +17,8 @@
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; wireshark/optimized/packet-dof.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:

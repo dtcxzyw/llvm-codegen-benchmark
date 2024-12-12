@@ -12,13 +12,13 @@
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 2147483646
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %1, i64 %5
-  %7 = getelementptr nusw i32, ptr %6, i64 %0
+  %6 = getelementptr nusw nuw i32, ptr %1, i64 %5
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %0
   ret ptr %7
 }
 

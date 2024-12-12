@@ -20,14 +20,10 @@ entry:
   ret ptr %5
 }
 
-; 14 occurrences:
-; lightgbm/optimized/dataset_loader.cpp.ll
+; 10 occurrences:
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
-; ncnn/optimized/modelbin.cpp.ll
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
-; opencv/optimized/grfmt_pam.cpp.ll
-; opencv/optimized/grfmt_pxm.cpp.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/ciEnv.ll
 ; openjdk/optimized/ciMethod.ll
@@ -42,6 +38,20 @@ entry:
   %3 = add nsw i64 %2, 7
   %4 = and i64 %3, -8
   %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; ncnn/optimized/modelbin.cpp.ll
+; opencv/optimized/grfmt_pam.cpp.ll
+; opencv/optimized/grfmt_pxm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = add nsw i64 %2, 3
+  %4 = and i64 %3, -4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

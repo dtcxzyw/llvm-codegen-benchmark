@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; linux/optimized/i915_gem_execbuffer.ll
+; llvm/optimized/APFloat.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind

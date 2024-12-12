@@ -1,8 +1,9 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/IRObjectFile.cpp.ll
+; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; vcpkg/optimized/commands.depend-info.cpp.ll

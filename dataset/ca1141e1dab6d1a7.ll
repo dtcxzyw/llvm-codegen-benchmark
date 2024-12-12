@@ -1,5 +1,5 @@
 
-; 298 occurrences:
+; 300 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cgtDecide.c.ll
 ; abc/optimized/giaGen.c.ll
@@ -87,6 +87,8 @@
 ; lightgbm/optimized/train_share_states.cpp.ll
 ; llama.cpp/optimized/train.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/alignset.cpp.ll

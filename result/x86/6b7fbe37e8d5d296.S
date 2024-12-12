@@ -1,4 +1,4 @@
-func0000000000000511:                   # @func0000000000000511
+func0000000000000a21:                   # @func0000000000000a21
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd
@@ -6,10 +6,11 @@ func0000000000000511:                   # @func0000000000000511
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setg	%al
-	addl	%edi, %eax
+	negl	%eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000501:                   # @func0000000000000501
+func0000000000000a01:                   # @func0000000000000a01
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd
@@ -17,10 +18,11 @@ func0000000000000501:                   # @func0000000000000501
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setg	%al
-	addl	%edi, %eax
+	negl	%eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000050a:                   # @func000000000000050a
+func0000000000000a0a:                   # @func0000000000000a0a
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd
@@ -32,7 +34,7 @@ func000000000000050a:                   # @func000000000000050a
 	testl	%eax, %eax
 	setg	%al
 	retq
-func000000000000051a:                   # @func000000000000051a
+func0000000000000a2a:                   # @func0000000000000a2a
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd
@@ -43,7 +45,7 @@ func000000000000051a:                   # @func000000000000051a
 	addl	%edi, %eax
 	setg	%al
 	retq
-func000000000000060a:                   # @func000000000000060a
+func0000000000000c0a:                   # @func0000000000000c0a
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd
@@ -54,7 +56,7 @@ func000000000000060a:                   # @func000000000000060a
 	addl	%edi, %eax
 	setns	%al
 	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd
@@ -65,18 +67,18 @@ func00000000000000b1:                   # @func00000000000000b1
 	orl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000611:                   # @func0000000000000611
+func0000000000000c21:                   # @func0000000000000c21
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd
 	idivl	%ecx
 	xorl	%eax, %eax
-	testl	%edx, %edx
-	setne	%al
-	addl	%edi, %eax
+	negl	%edx
+	sbbl	%eax, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000061a:                   # @func000000000000061a
+func0000000000000c2a:                   # @func0000000000000c2a
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd

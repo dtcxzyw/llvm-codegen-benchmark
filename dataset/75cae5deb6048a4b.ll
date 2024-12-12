@@ -5,7 +5,7 @@
 ; folly/optimized/TimeUtil.cpp.ll
 ; hdf5/optimized/H5Dcontig.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = icmp eq i64 %2, -1
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/fopen_wrappers.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000114(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, %0
   %3 = icmp ult i64 %2, -4096
@@ -36,7 +36,7 @@ entry:
 ; spike/optimized/vsse64_v.ll
 ; spike/optimized/vsse8_v.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000210(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = icmp ugt i64 %2, 32
@@ -45,11 +45,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; clamav/optimized/htmlnorm.c.ll
-; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000102(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = icmp ult i64 %2, 8192
@@ -61,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000202(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = icmp ugt i64 %2, 2048
@@ -74,7 +73,7 @@ entry:
 ; linux/optimized/generic.ll
 ; linux/optimized/if.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000110(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, %0
   %3 = icmp ult i64 %2, -1048576
@@ -86,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vmalloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000302(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = icmp ne i64 %2, 1024

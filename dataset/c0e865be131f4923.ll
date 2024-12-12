@@ -12,15 +12,15 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/slab_common.ll
-; linux/optimized/uprobes.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; qemu/optimized/block_block-backend.c.ll
 ; ruby/optimized/process.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i64 20, i64 0
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i64 8584, i64 8592

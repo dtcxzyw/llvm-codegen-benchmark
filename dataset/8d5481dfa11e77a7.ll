@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; clamav/optimized/XzDec.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -8,7 +8,6 @@
 ; libpng/optimized/pngrtran.c.ll
 ; libquic/optimized/dtls_record.c.ll
 ; lief/optimized/ssl_msg.c.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/tkip.ll
 ; openjdk/optimized/hb-ot-layout.ll
@@ -40,7 +39,7 @@
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = or disjoint i32 %0, %1
@@ -48,21 +47,22 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5FScache.c.ll
 ; libquic/optimized/d1_both.c.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-name.ll
 ; php/optimized/pcre2_substring.ll
 ; sqlite/optimized/sqlite3.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = or disjoint i32 %0, %1
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
@@ -76,11 +76,11 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = or disjoint i32 %0, %1
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 12 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -9,6 +9,9 @@
 ; openjdk/optimized/hb-ot-shaper-hangul.ll
 ; php/optimized/encode.ll
 ; stockfish/optimized/evaluate_nnue.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0) #0 {
 entry:

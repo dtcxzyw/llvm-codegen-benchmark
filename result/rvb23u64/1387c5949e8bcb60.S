@@ -50,21 +50,3 @@ func0000000000000008:                   # @func0000000000000008
 	mul	a1, a1, a2
 	subw	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
-	sext.w	a2, a1
-	lui	a3, 24
-	addiw	a3, a3, 1696
-	sltu	a2, a2, a3
-	lui	a3, 274878
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	lui	a2, 244
-	addiw	a3, a3, -381
-	or	a0, a0, a1
-	zext.w	a1, a0
-	mul	a1, a1, a3
-	srli	a1, a1, 50
-	addi	a2, a2, 576
-	mul	a1, a1, a2
-	subw	a0, a0, a1
-	ret

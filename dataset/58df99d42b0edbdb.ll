@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000178(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, -184
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, -95
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000378(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000006e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, -95
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, -94
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, -95
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, -94
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/pdfdecode.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000588(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, 2
@@ -79,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; libevent/optimized/event_tagging.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003fa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007ea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = add nuw i32 %3, 2
@@ -90,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-cemi.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, 5
@@ -101,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, 1
@@ -124,7 +124,7 @@ entry:
 ; openspiel/optimized/QuickTricks.cpp.ll
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, -1
@@ -135,7 +135,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_edid.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000035a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000006aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, 10

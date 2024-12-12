@@ -1,6 +1,6 @@
 
-%"struct.mold::elf::NameType.2522672" = type <{ %"class.std::basic_string_view.2522673", i32, i8, [3 x i8] }>
-%"class.std::basic_string_view.2522673" = type { i64, ptr }
+%"struct.mold::elf::NameType.2637081" = type <{ %"class.std::basic_string_view.2637082", i32, i8, [3 x i8] }>
+%"class.std::basic_string_view.2637082" = type { i64, ptr }
 
 ; 90 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -94,11 +94,11 @@
 ; z3/optimized/pb2bv_tactic.cpp.ll
 ; z3/optimized/solve_context_eqs.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000002c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv exact i64 %2, 24
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw %"struct.mold::elf::NameType.2522672", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.mold::elf::NameType.2637081", ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7

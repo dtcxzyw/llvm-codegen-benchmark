@@ -11,7 +11,7 @@ func0000000000000002:                   # @func0000000000000002
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	fsub.d	fa4, fa1, fa2
 	fmin.d	fa5, fa4, fa5
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret
 func000000000000000e:                   # @func000000000000000e
 	fsub.d	fa5, fa1, fa2

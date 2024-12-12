@@ -1,17 +1,17 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a1, a1
 	addi	a1, a1, 8
 	srai	a0, a0, 32
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	sext.w	a1, a1
 	addi	a1, a1, 1
 	srai	a0, a0, 3
 	sltu	a0, a0, a1
 	ret
-func0000000000000035:                   # @func0000000000000035
+func0000000000000065:                   # @func0000000000000065
 	sext.w	a1, a1
 	addi	a1, a1, 1
 	srai	a0, a0, 2

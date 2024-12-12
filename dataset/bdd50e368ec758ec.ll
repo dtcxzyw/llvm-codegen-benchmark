@@ -3,11 +3,11 @@
 ; php/optimized/cdf.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -19,11 +19,11 @@ entry:
 ; raylib/optimized/rcore.c.ll
 ; yosys/optimized/abc9_ops.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000126(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
@@ -48,11 +48,11 @@ entry:
 ; abc/optimized/nwkSpeedup.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 2, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
@@ -60,11 +60,11 @@ entry:
 ; 1 occurrences:
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
@@ -72,11 +72,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hugetlb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }

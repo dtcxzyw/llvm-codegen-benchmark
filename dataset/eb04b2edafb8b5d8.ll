@@ -12,7 +12,7 @@
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %.unshifted = xor i32 %2, %0
+  %.unshifted = xor i32 %0, %2
   %3 = icmp ult i32 %.unshifted, 64
   ret i1 %3
 }
@@ -20,10 +20,10 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -31,12 +31,12 @@ entry:
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ifMap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 24
   %4 = lshr i32 %0, 24
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
@@ -49,12 +49,12 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 6
   %4 = lshr i32 %0, 6
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -64,7 +64,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %.unshifted = xor i32 %2, %0
+  %.unshifted = xor i32 %0, %2
   %3 = icmp slt i32 %.unshifted, 0
   ret i1 %3
 }
@@ -73,10 +73,10 @@ entry:
 ; llvm/optimized/NewGVN.cpp.ll
 ; z3/optimized/sat_binspr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %.unshifted = xor i32 %2, %0
+  %.unshifted = xor i32 %0, %2
   %3 = icmp ult i32 %.unshifted, 64
   ret i1 %3
 }

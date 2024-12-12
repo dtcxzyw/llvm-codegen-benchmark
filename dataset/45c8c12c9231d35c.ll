@@ -26,11 +26,11 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/predictor_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = and i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 

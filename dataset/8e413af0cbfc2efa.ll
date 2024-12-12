@@ -12,8 +12,8 @@ define i1 @func0000000000000018(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 63
   %4 = icmp ne i16 %3, 3
-  %5 = or i1 %4, %1
-  %6 = and i1 %5, %0
+  %5 = or i1 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -28,10 +28,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i16 %2) #0 {
 entry:
-  %3 = and i16 %2, 15
-  %4 = icmp eq i16 %3, 1
-  %5 = or i1 %4, %1
-  %6 = and i1 %5, %0
+  %3 = and i16 %2, 14
+  %4 = icmp eq i16 %3, 2
+  %5 = or i1 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

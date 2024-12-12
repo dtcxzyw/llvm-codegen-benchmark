@@ -24,7 +24,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 98304
   %4 = select i1 %1, i32 %3, i32 %2
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

@@ -8,25 +8,25 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	%rax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leaq	-16(%rsi), %rax
 	andq	$-16, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	incq	%rsi
 	shrq	$6, %rsi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	decq	%rsi
 	shrq	$6, %rsi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	leaq	4(%rdi,%rsi,2), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	incq	%rsi
 	shrq	$8, %rsi
 	leaq	(%rdi,%rsi,8), %rax

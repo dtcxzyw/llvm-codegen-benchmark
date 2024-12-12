@@ -23,7 +23,7 @@ define ptr @func0000000000000076(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = or disjoint i32 %3, 1
-  %5 = mul nsw i32 %4, %1
+  %5 = mul nsw i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i64, ptr %0, i64 %6
   ret ptr %7
@@ -36,7 +36,7 @@ define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = or disjoint i32 %3, 1
-  %5 = mul nsw i32 %4, %1
+  %5 = mul nsw i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw float, ptr %0, i64 %6
   ret ptr %7
@@ -51,7 +51,7 @@ define ptr @func0000000000000034(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = or disjoint i32 %3, 1
-  %5 = mul nsw i32 %4, %1
+  %5 = mul nsw i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr double, ptr %0, i64 %6
   ret ptr %7

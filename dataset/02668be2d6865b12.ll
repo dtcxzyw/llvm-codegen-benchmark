@@ -10,12 +10,12 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000194(i16 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 16, %1
   %3 = zext i16 %0 to i32
   %4 = lshr i32 %3, %2
-  %5 = icmp ult i32 %4, 512
+  %5 = icmp samesign ult i32 %4, 512
   ret i1 %5
 }
 

@@ -1,4 +1,4 @@
-func00000000000006a8:                   # @func00000000000006a8
+func0000000000000d48:                   # @func0000000000000d48
 	bset	a2, zero, a2
 	add	a1, a1, a2
 	addi	a1, a1, 8

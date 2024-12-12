@@ -16,9 +16,15 @@ func0000000000000031:                   # @func0000000000000031
 	setne	%al
 	orq	%rdi, %rax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	xorl	%eax, %eax
+	cmpb	$5, %sil
+	setb	%al
+	orq	%rdi, %rax
+	retq
 func0000000000000030:                   # @func0000000000000030
 	xorl	%eax, %eax
-	testb	%sil, %sil
+	cmpb	$3, %sil
 	setne	%al
 	orq	%rdi, %rax
 	retq

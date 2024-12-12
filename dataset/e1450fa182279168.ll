@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 32 occurrences:
 ; actix-rs/optimized/1a89q5mj3jl9opyq.ll
 ; actix-rs/optimized/1flt9r9cbevpwous.ll
 ; actix-rs/optimized/1h6chd9qxbb3rt70.ll
@@ -29,6 +29,9 @@
 ; ockam-rs/optimized/4df8gyzy0u3roc94.ll
 ; ockam-rs/optimized/8vw3dw8isly7xg2.ll
 ; ockam-rs/optimized/cts9nubscl1ph7i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:

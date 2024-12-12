@@ -20,17 +20,17 @@ func0000000000000001:                   # @func0000000000000001
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpabsd	%ymm0, %ymm0
 	retq
+func0000000000000007:                   # @func0000000000000007
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vpabsd	%ymm0, %ymm0
+	retq
 func0000000000000002:                   # @func0000000000000002
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpabsd	%ymm0, %ymm0
 	retq
 func0000000000000003:                   # @func0000000000000003
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpabsd	%ymm0, %ymm0
-	retq
-func0000000000000007:                   # @func0000000000000007
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpabsd	%ymm0, %ymm0

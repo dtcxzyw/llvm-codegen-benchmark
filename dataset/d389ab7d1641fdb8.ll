@@ -1,5 +1,5 @@
 
-; 270 occurrences:
+; 269 occurrences:
 ; arrow/optimized/function.cc.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
@@ -183,7 +183,6 @@
 ; llvm/optimized/PrintPasses.cpp.ll
 ; llvm/optimized/ProfileSummaryBuilder.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVSubtarget.cpp.ll
@@ -383,19 +382,42 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; openspiel/optimized/catch.cc.ll
 ; postgres/optimized/allpaths.ll
 ; postgres/optimized/nodeAgg.ll
-; proj/optimized/io.cpp.ll
 ; spike/optimized/triggers.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = trunc i8 %0 to i1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; lvgl/optimized/lv_indev_scroll.ll
+; meshlab/optimized/packing.cpp.ll
+; z3/optimized/theory_diff_logic.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002e(i8 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sge i32 %1, %2
+  %4 = trunc nuw i8 %0 to i1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_indev_scroll.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001e(i8 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sle i32 %1, %2
+  %4 = trunc nuw i8 %0 to i1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -527,18 +549,6 @@ entry:
 define i1 @func0000000000000016(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ule i32 %1, %2
-  %4 = trunc nuw i8 %0 to i1
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 2 occurrences:
-; meshlab/optimized/packing.cpp.ll
-; z3/optimized/theory_diff_logic.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002e(i8 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp sge i32 %1, %2
   %4 = trunc nuw i8 %0 to i1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

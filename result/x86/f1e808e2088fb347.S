@@ -4,7 +4,7 @@ func0000000000000010:                   # @func0000000000000010
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000222:                   # @func0000000000000222
+func0000000000000442:                   # @func0000000000000442
 	shrq	$3, %rdx
 	cmpl	%edx, %esi
 	sete	%al

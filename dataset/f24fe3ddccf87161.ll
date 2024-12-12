@@ -1,11 +1,12 @@
 
-; 103 occurrences:
+; 104 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/cuddAddWalsh.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; boost/optimized/gregorian.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; graphviz/optimized/inpoly.c.ll
 ; graphviz/optimized/poly.c.ll
@@ -111,7 +112,7 @@ entry:
   ret i32 %4
 }
 
-; 120 occurrences:
+; 118 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcDebug.c.ll
@@ -190,7 +191,6 @@ entry:
 ; openjdk/optimized/numberSeq.ll
 ; openjdk/optimized/vectorization.ll
 ; openmpi/optimized/ad_io_coll.ll
-; openmpi/optimized/bcast.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
 ; openmpi/optimized/coll_base_allreduce.ll
@@ -211,7 +211,6 @@ entry:
 ; openmpi/optimized/nbc_ialltoallw.ll
 ; openmpi/optimized/nbc_ibarrier.ll
 ; openmpi/optimized/netpatterns_knomial_tree.ll
-; openmpi/optimized/ompi_mpi_preconnect.ll
 ; openspiel/optimized/crazy_eights.cc.ll
 ; openspiel/optimized/leduc_poker.cc.ll
 ; openssl/optimized/libtestutil-lib-driver.ll
@@ -240,13 +239,14 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/llb2Flow.c.ll
 ; gromacs/optimized/bwt.c.ll
 ; icu/optimized/uhash.ll
 ; openspiel/optimized/crazy_eights.cc.ll
 ; openspiel/optimized/maedn.cc.ll
 ; openusd/optimized/level.cpp.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; slurm/optimized/xcpuinfo.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

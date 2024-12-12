@@ -16,7 +16,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = and i64 %0, 31
   %4 = icmp eq i64 %3, 27
-  %5 = or i1 %4, %2
+  %5 = or i1 %2, %4
   %6 = select i1 %5, i64 %0, i64 %1
   ret i64 %6
 }

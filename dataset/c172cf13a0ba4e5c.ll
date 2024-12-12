@@ -14,15 +14,25 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; hermes/optimized/BytecodeDisassembler.cpp.ll
-; llvm/optimized/StandardInstrumentations.cpp.ll
+; 2 occurrences:
 ; mimalloc/optimized/os.c.ll
 ; velox/optimized/AllocationPool.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = urem i64 %4, %0
+  ret i64 %5
+}
+
+; 2 occurrences:
+; hermes/optimized/BytecodeDisassembler.cpp.ll
+; llvm/optimized/StandardInstrumentations.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = urem i64 %4, %0
   ret i64 %5

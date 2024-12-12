@@ -2,9 +2,9 @@
 	.long	4177                            # 0x1051
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$5, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	24                              # 0x18

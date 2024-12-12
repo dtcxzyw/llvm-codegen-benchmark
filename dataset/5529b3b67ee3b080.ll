@@ -5,13 +5,13 @@
 ; openusd/optimized/openexr-c.c.ll
 ; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -23,13 +23,13 @@ entry:
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 

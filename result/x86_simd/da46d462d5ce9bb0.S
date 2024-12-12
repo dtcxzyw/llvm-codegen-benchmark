@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	31507                           # 0x7b13
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpabsd	%ymm1, %ymm1
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
@@ -18,7 +18,7 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI2_0:
 	.long	31                              # 0x1f
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vpabsd	%ymm1, %ymm1
 	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}

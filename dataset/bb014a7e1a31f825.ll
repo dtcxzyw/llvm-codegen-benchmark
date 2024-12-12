@@ -55,18 +55,19 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add nsw i32 %4, 64
   ret i32 %5
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; hyperscan/optimized/teddy_engine_description.cpp.ll
 ; linux/optimized/drm_dp_helper.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/VPlan.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; openjdk/optimized/constMethod.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
@@ -120,7 +121,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add i32 %4, 2
   ret i32 %5
 }
@@ -132,7 +133,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = add nuw nsw i32 %4, 2
   ret i32 %5
 }
@@ -149,9 +150,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; wireshark/optimized/packet-ipmi.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
+; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i1 %1, i32 %2) #0 {
 entry:

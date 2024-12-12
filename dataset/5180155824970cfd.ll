@@ -28,11 +28,12 @@ define i128 @func000000000000001b(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw nsw i128 %1, %2
   %4 = lshr i128 %3, 56
-  %5 = add nuw nsw i128 %4, %0
+  %5 = add nuw nsw i128 %0, %4
   ret i128 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/p256-64.c.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
@@ -42,7 +43,7 @@ define i128 @func0000000000000000(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add i128 %1, %2
   %4 = lshr i128 %3, 55
-  %5 = add i128 %4, %0
+  %5 = add i128 %0, %4
   ret i128 %5
 }
 
@@ -177,6 +178,17 @@ define i128 @func000000000000001a(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw nsw i128 %1, %2
   %4 = lshr i128 %3, 32
+  %5 = add nuw i128 %0, %4
+  ret i128 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000002(i128 %0, i128 %1, i128 %2) #0 {
+entry:
+  %3 = add i128 %1, %2
+  %4 = lshr i128 %3, 64
   %5 = add nuw i128 %4, %0
   ret i128 %5
 }
@@ -190,7 +202,7 @@ define i128 @func0000000000000019(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw nsw i128 %1, %2
   %4 = lshr i128 %3, 16
-  %5 = add nsw i128 %4, %0
+  %5 = add nsw i128 %0, %4
   ret i128 %5
 }
 
@@ -201,7 +213,7 @@ define i128 @func0000000000000011(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw i128 %1, %2
   %4 = lshr i128 %3, 56
-  %5 = add nsw i128 %4, %0
+  %5 = add nsw i128 %0, %4
   ret i128 %5
 }
 
@@ -223,7 +235,7 @@ define i128 @func000000000000000a(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nsw i128 %1, %2
   %4 = lshr i128 %3, 16
-  %5 = add nuw i128 %4, %0
+  %5 = add nuw i128 %0, %4
   ret i128 %5
 }
 
@@ -235,7 +247,7 @@ define i128 @func0000000000000009(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nsw i128 %1, %2
   %4 = lshr i128 %3, 16
-  %5 = add nsw i128 %4, %0
+  %5 = add nsw i128 %0, %4
   ret i128 %5
 }
 

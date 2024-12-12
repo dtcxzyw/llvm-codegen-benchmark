@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; graphviz/optimized/edge_distinct_coloring.c.ll
-; linux/optimized/inotify_user.ll
-; qemu/optimized/util_qht.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 9223372036854775804
-  %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 1, i64 %0
-  ret i64 %4
-}
-
 ; 6 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
@@ -70,7 +57,7 @@ entry:
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2017612633061982208
   %.not = icmp eq i64 %2, 0
@@ -88,6 +75,18 @@ entry:
   %2 = icmp eq i64 %.mask, 32
   %3 = select i1 %2, i64 30, i64 %0
   ret i64 %3
+}
+
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
+; graphviz/optimized/edge_distinct_coloring.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 3
+  %3 = icmp ult i64 %2, 23
+  %4 = select i1 %3, i64 32, i64 %0
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

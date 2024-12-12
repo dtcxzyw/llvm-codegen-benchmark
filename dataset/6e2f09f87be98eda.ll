@@ -103,7 +103,8 @@ entry:
   ret i64 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; casadi/optimized/sparsity_internal.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000012d(i64 %0, i64 %1, i64 %2) #0 {

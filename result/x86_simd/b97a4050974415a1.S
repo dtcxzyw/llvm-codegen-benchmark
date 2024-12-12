@@ -13,6 +13,6 @@ func000000000000000d:                   # @func000000000000000d
 	vpsllvd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

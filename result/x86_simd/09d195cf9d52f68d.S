@@ -65,7 +65,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000007:                   # @func0000000000000007
 	vptestnmb	.LCPI2_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2,2,2,2,2]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.byte	1                               # 0x1
@@ -84,7 +84,7 @@ func0000000000000007:                   # @func0000000000000007
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	vptestmb	.LCPI3_0(%rip), %xmm2, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
@@ -105,7 +105,7 @@ func0000000000000045:                   # @func0000000000000045
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vptestmb	.LCPI4_0(%rip), %xmm2, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq

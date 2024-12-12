@@ -9,12 +9,12 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$1, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	testb	$-64, %sil
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$60, %esi
 	cmpl	$20, %esi
 	setb	%al

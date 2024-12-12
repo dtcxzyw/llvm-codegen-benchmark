@@ -34,7 +34,7 @@ func00000000000000c7:                   # @func00000000000000c7
 	retq
 .LCPI4_0:
 	.quad	281474976710655                 # 0xffffffffffff
-func0000000000000083:                   # @func0000000000000083
+func0000000000000183:                   # @func0000000000000183
 	vpcmpnleuq	.LCPI4_0(%rip){1to4}, %ymm1, %k0
 	vpsrlq	$48, %ymm0, %ymm0
 	vpmovm2q	%k0, %ymm1

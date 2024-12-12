@@ -20,12 +20,26 @@
 define i64 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
-; 17 occurrences:
+; 4 occurrences:
+; openusd/optimized/stbImage.cpp.ll
+; qemu/optimized/block_qcow2-cluster.c.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %1, %2
+  %4 = add i32 %3, %0
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 16 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/unsp.c.ll
@@ -41,7 +55,6 @@ entry:
 ; openjdk/optimized/g1RemSet.ll
 ; openusd/optimized/aom_image.c.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
@@ -49,20 +62,6 @@ entry:
   %3 = and i32 %1, %2
   %4 = add i32 %3, %0
   %5 = zext i32 %4 to i64
-  ret i64 %5
-}
-
-; 4 occurrences:
-; openusd/optimized/stbImage.cpp.ll
-; qemu/optimized/block_qcow2-cluster.c.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %1, %2
-  %4 = add i32 %3, %0
-  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 

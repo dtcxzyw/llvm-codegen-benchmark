@@ -73,12 +73,20 @@ func00000000000000a4:                   # @func00000000000000a4
 	seta	%al
 	andb	%cl, %al
 	retq
-.LCPI8_0:
+func00000000000000c4:                   # @func00000000000000c4
+	testl	%edi, %edi
+	setne	%cl
+	vxorps	%xmm1, %xmm1, %xmm1
+	vucomiss	%xmm1, %xmm0
+	seta	%al
+	andb	%cl, %al
+	retq
+.LCPI9_0:
 	.long	0x3727c5ac                      # float 9.99999974E-6
-func0000000000000044:                   # @func0000000000000044
+func0000000000000144:                   # @func0000000000000144
 	cmpl	$100000, %edi                   # imm = 0x186A0
 	setb	%cl
-	vucomiss	.LCPI8_0(%rip), %xmm0
+	vucomiss	.LCPI9_0(%rip), %xmm0
 	seta	%al
 	andb	%cl, %al
 	retq
@@ -118,40 +126,40 @@ func0000000000000018:                   # @func0000000000000018
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
-.LCPI13_0:
-	.long	0x3f800000                      # float 1
-func00000000000000a2:                   # @func00000000000000a2
-	cmpl	$2, %edi
-	setge	%cl
-	vmovss	.LCPI13_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
-	vucomiss	%xmm0, %xmm1
-	seta	%al
-	andb	%cl, %al
-	retq
 .LCPI14_0:
 	.long	0x7f800000                      # float +Inf
-func00000000000000a6:                   # @func00000000000000a6
-	testl	%edi, %edi
-	setg	%cl
+func0000000000000016:                   # @func0000000000000016
+	cmpl	$5, %edi
+	sete	%cl
 	vucomiss	.LCPI14_0(%rip), %xmm0
 	setne	%al
 	andb	%cl, %al
 	retq
 .LCPI15_0:
-	.long	0x3e4ccccd                      # float 0.200000003
-func00000000000000c4:                   # @func00000000000000c4
-	cmpl	$8, %edi
-	setne	%cl
-	vucomiss	.LCPI15_0(%rip), %xmm0
+	.long	0x3f800000                      # float 1
+func00000000000000a2:                   # @func00000000000000a2
+	cmpl	$2, %edi
+	setge	%cl
+	vmovss	.LCPI15_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vucomiss	%xmm0, %xmm1
 	seta	%al
 	andb	%cl, %al
 	retq
 .LCPI16_0:
+	.long	0x7f800000                      # float +Inf
+func00000000000000a6:                   # @func00000000000000a6
+	testl	%edi, %edi
+	setg	%cl
+	vucomiss	.LCPI16_0(%rip), %xmm0
+	setne	%al
+	andb	%cl, %al
+	retq
+.LCPI17_0:
 	.long	0x42960000                      # float 75
 func000000000000001c:                   # @func000000000000001c
 	cmpl	$5, %edi
 	sete	%cl
-	vucomiss	.LCPI16_0(%rip), %xmm0
+	vucomiss	.LCPI17_0(%rip), %xmm0
 	setae	%al
 	andb	%cl, %al
 	retq

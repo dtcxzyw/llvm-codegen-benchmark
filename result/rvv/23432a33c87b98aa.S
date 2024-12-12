@@ -1,4 +1,4 @@
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	li	a0, 3
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwmaccu.vx	v10, a0, v12

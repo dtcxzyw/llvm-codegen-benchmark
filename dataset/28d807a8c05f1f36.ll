@@ -22,7 +22,7 @@
 define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, 0
-  %3 = and i1 %2, %1
+  %3 = and i1 %1, %2
   %4 = select i1 %3, i64 1, i64 %0
   ret i64 %4
 }

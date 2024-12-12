@@ -1,15 +1,27 @@
 
-; 2 occurrences:
-; assimp/optimized/IFCUtil.cpp.ll
+; 1 occurrences:
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000004e(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = add i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
   %6 = getelementptr nusw float, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; assimp/optimized/IFCUtil.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000042(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 3
+  %3 = add i32 %2, 3
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 8
+  %6 = getelementptr nusw double, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -17,12 +29,12 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; openspiel/optimized/bridge.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 122
   %3 = add i32 %2, -122
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 1250256
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1250256
   %6 = getelementptr nusw float, ptr %5, i64 %4
   ret ptr %6
 }

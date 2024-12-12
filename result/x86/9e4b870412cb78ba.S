@@ -5,5 +5,5 @@ func0000000000000010:                   # @func0000000000000010
 func0000000000000015:                   # @func0000000000000015
 	movslq	%esi, %rax
 	shlq	$14, %rax
-	leaq	262144(%rax,%rdi), %rax
+	leaq	262144(%rdi,%rax), %rax
 	retq

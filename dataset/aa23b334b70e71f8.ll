@@ -1,7 +1,6 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; libevent/optimized/buffer.c.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/ata_piix.ll
 ; linux/optimized/intel_cdclk.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
@@ -13,7 +12,7 @@ define i8 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i8 -3, i8 -33
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 

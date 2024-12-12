@@ -1,5 +1,5 @@
 
-%struct.Answer.2591651 = type { i8, i8 }
+%struct.Answer.2705487 = type { i8, i8 }
 
 ; 56 occurrences:
 ; abc/optimized/cecSim.c.ll
@@ -22,7 +22,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -48,6 +47,7 @@
 ; meshlab/optimized/shell.cpp.ll
 ; nori/optimized/layout.cpp.ll
 ; openjdk/optimized/g1MMUTracker.ll
+; openspiel/optimized/dou_dizhu.cc.ll
 ; openspiel/optimized/spades.cc.ll
 ; openssl/optimized/libcrypto-lib-err.ll
 ; openssl/optimized/libcrypto-lib-err_blocks.ll
@@ -59,11 +59,11 @@
 ; recastnavigation/optimized/CrowdTool.cpp.ll
 ; redis/optimized/latency.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 16
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 512
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 512
   %5 = getelementptr nusw [16 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -74,25 +74,12 @@ entry:
 ; postgres/optimized/walsender.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 128
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 74720
-  %5 = getelementptr [128 x %struct.Answer.2591651], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 2 occurrences:
-; openspiel/optimized/dou_dizhu.cc.ll
-; openspiel/optimized/spades.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = srem i32 %1, 4
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 120
-  %5 = getelementptr nusw [4 x i32], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 74720
+  %5 = getelementptr [128 x %struct.Answer.2705487], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

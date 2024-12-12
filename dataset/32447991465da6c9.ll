@@ -6,7 +6,7 @@
 ; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1024
   %4 = icmp ne i16 %3, 0
@@ -19,7 +19,7 @@ entry:
 ; postgres/optimized/orderedsetaggs.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 255
   %4 = icmp eq i16 %3, 0
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/output.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 8192
   %4 = icmp ne i16 %3, 0
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/rematch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, -1024
   %4 = icmp eq i16 %3, -10240
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 8
   %4 = icmp eq i16 %3, 0
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000000cc(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 3
   %4 = icmp ne i16 %3, 0
@@ -129,7 +129,7 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 64
   %4 = icmp eq i16 %3, 0

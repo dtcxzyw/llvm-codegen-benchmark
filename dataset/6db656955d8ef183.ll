@@ -13,32 +13,6 @@ entry:
   ret i1 %2
 }
 
-; 17 occurrences:
-; eastl/optimized/TestIntrusiveHash.cpp.ll
-; gromacs/optimized/atomdata.cpp.ll
-; gromacs/optimized/vcm.cpp.ll
-; image-rs/optimized/244uszkx0e8t5ie1.ll
-; image-rs/optimized/2ndzmzcdt55acj4k.ll
-; lodepng/optimized/lodepng_util.cpp.ll
-; meshlab/optimized/VisibleSet.cpp.ll
-; meshlab/optimized/glarea.cpp.ll
-; meshlab/optimized/trackmode.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
-; oiio/optimized/targainput.cpp.ll
-; openusd/optimized/OpenEXRImage.cpp.ll
-; pbrt-v4/optimized/cameras.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(float %0) #0 {
-entry:
-  %1 = fdiv float %0, 1.000000e+03
-  %2 = fcmp oeq float %1, 0x404AC45A20000000
-  ret i1 %2
-}
-
 ; 32 occurrences:
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -108,6 +82,31 @@ define i1 @func0000000000000004(float %0) #0 {
 entry:
   %1 = fdiv float %0, 2.550000e+02
   %2 = fcmp ogt float %1, 0x3FA4B5DCC0000000
+  ret i1 %2
+}
+
+; 16 occurrences:
+; eastl/optimized/TestIntrusiveHash.cpp.ll
+; gromacs/optimized/atomdata.cpp.ll
+; gromacs/optimized/vcm.cpp.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; lodepng/optimized/lodepng_util.cpp.ll
+; meshlab/optimized/VisibleSet.cpp.ll
+; meshlab/optimized/glarea.cpp.ll
+; meshlab/optimized/trackmode.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; openusd/optimized/OpenEXRImage.cpp.ll
+; pbrt-v4/optimized/cameras.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(float %0) #0 {
+entry:
+  %1 = fdiv float %0, 3.000000e+00
+  %2 = fcmp oeq float %1, 0.000000e+00
   ret i1 %2
 }
 

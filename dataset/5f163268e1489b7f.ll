@@ -19,7 +19,7 @@ entry:
   %.fr = freeze i64 %2
   %3 = srem i64 %.fr, %1
   %4 = sub nsw i64 %.fr, %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

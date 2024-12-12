@@ -9,7 +9,7 @@ define i64 @func0000000000000010(i64 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -21,7 +21,7 @@ define i64 @func0000000000000020(i64 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -33,7 +33,7 @@ define i64 @func0000000000000043(i64 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -48,7 +48,7 @@ define i64 @func0000000000000023(i64 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -60,7 +60,7 @@ define i64 @func0000000000000013(i64 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -71,7 +71,7 @@ define i64 @func0000000000000012(i64 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -82,7 +82,7 @@ define i64 @func0000000000000021(i64 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

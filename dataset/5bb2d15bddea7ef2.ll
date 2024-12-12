@@ -77,18 +77,6 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; lief/optimized/psa_crypto_aead.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 63
-  %4 = icmp ugt i32 %3, 16
-  %5 = or i1 %0, %1
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
 ; 3 occurrences:
 ; llvm/optimized/LinkModules.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
@@ -100,31 +88,6 @@ entry:
   %4 = icmp ne i32 %3, 11
   %5 = or i1 %0, %1
   %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 15
-  %4 = icmp ult i32 %3, 11
-  %5 = or i1 %0, %1
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 2 occurrences:
-; brotli/optimized/brotli_bit_stream.c.ll
-; brotli/optimized/histogram.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 7
-  %4 = icmp ult i32 %3, 3
-  %5 = or i1 %0, %1
-  %6 = and i1 %4, %5
   ret i1 %6
 }
 

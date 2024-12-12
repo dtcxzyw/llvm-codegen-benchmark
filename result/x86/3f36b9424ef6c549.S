@@ -1,10 +1,10 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	decl	%esi
 	testl	%esi, %esi
 	setg	%al
 	andb	%dil, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	cmpl	$1, %esi
 	setne	%al
 	andb	%dil, %al

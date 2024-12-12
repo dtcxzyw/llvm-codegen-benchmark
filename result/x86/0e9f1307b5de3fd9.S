@@ -11,25 +11,25 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	leal	(%rsi,%rsi,2), %eax
 	shrl	$4, %eax
 	cmpl	%edi, %eax
 	setne	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	leal	(%rsi,%rsi,2), %eax
 	shrl	$2, %eax
 	cmpl	%edi, %eax
 	setb	%al
 	retq
-func0000000000000069:                   # @func0000000000000069
+func00000000000000d9:                   # @func00000000000000d9
 	leal	(%rsi,%rsi,2), %eax
 	shrl	$2, %eax
 	cmpl	%edi, %eax
 	setae	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	imull	$100, %esi, %eax
 	shrl	$12, %eax
 	cmpl	%edi, %eax

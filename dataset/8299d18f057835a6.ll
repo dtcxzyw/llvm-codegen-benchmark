@@ -9,7 +9,7 @@
 define double @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = uitofp nneg i32 %3 to double
   %5 = fmul double %4, 3.906250e-03
   ret double %5
@@ -21,7 +21,7 @@ entry:
 define double @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = uitofp i32 %3 to double
   %5 = fmul double %4, 0x3EF0000000000000
   ret double %5

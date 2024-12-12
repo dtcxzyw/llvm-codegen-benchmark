@@ -38,7 +38,7 @@
 ; spike/optimized/vsuxei64_v.ll
 ; spike/optimized/vsuxei8_v.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = icmp ugt i64 %3, 8
@@ -50,11 +50,11 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000708(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 2147483647
-  %5 = icmp ugt i64 %0, 2147483647
+  %5 = icmp samesign ugt i64 %0, 2147483647
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
@@ -63,11 +63,11 @@ entry:
 ; freetype/optimized/bdf.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000388(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000f18(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 2147483647
-  %5 = icmp ugt i64 %0, 2147483647
+  %4 = icmp samesign ugt i64 %3, 2147483647
+  %5 = icmp samesign ugt i64 %0, 2147483647
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }

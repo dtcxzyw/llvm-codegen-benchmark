@@ -1,4 +1,4 @@
-func00000000000000d8:                   # @func00000000000000d8
+func0000000000000198:                   # @func0000000000000198
 	addl	%edx, %esi
 	testb	$7, %sil
 	setne	%cl
@@ -6,7 +6,7 @@ func00000000000000d8:                   # @func00000000000000d8
 	setle	%al
 	orb	%cl, %al
 	retq
-func0000000000000238:                   # @func0000000000000238
+func0000000000000858:                   # @func0000000000000858
 	addl	%edx, %esi
 	imull	$-1030792151, %esi, %eax        # imm = 0xC28F5C29
 	addl	$85899344, %eax                 # imm = 0x51EB850

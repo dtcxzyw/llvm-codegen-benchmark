@@ -1,5 +1,7 @@
 
-; 19 occurrences:
+; 21 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cmake/optimized/ftp.c.ll
 ; cmake/optimized/http1.c.ll
 ; cmake/optimized/mprintf.c.ll
@@ -71,9 +73,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; redis/optimized/lzf_c.ll
-; redis/optimized/resp_parser.ll
 ; wireshark/optimized/editcap.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1) #0 {
@@ -81,7 +84,21 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
-  %5 = icmp ugt i64 %4, -10
+  %5 = icmp ugt i64 %4, -8
+  ret i1 %5
+}
+
+; 3 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(ptr %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = ptrtoint ptr %0 to i64
+  %4 = add i64 %3, -1
+  %5 = icmp eq i64 %4, %2
   ret i1 %5
 }
 

@@ -19,7 +19,7 @@ entry:
   ret i16 %2
 }
 
-; 52 occurrences:
+; 51 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -32,7 +32,6 @@ entry:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/public_key.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
@@ -92,7 +91,6 @@ entry:
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/pci.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/sit.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/xfrm_input.ll
@@ -102,7 +100,6 @@ entry:
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luajit/optimized/lj_opt_narrow.ll
 ; luajit/optimized/lj_opt_narrow_dyn.ll
-; openmpi/optimized/libmpi_c_profile_la-type_match_size.ll
 ; openmpi/optimized/ptype_match_size_f.ll
 ; postgres/optimized/nbtpage.ll
 ; postgres/optimized/nbtree.ll
@@ -111,6 +108,8 @@ entry:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-sprt.c.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i16 %0) #0 {
 entry:

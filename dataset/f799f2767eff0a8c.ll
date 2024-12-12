@@ -10,14 +10,15 @@ entry:
   ret i128 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; openspiel/optimized/is_mcts.cc.ll
 ; openspiel/optimized/mcts.cc.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 1
+  %2 = shl i64 %1, 2
   %3 = add i64 %2, %0
   %4 = zext i64 %3 to i128
   ret i128 %4
@@ -31,7 +32,7 @@ entry:
 define i128 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = zext i64 %3 to i128
   ret i128 %4
 }

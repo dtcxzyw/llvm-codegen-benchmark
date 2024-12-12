@@ -35,8 +35,3 @@ func0000000000000008:                   # @func0000000000000008
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
-	notq	%rdx
-	leaq	(%rdi,%rsi), %rax
-	addq	%rdx, %rax
-	retq

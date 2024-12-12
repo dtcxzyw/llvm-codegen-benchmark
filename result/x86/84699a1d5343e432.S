@@ -30,6 +30,15 @@ func0000000000000005:                   # @func0000000000000005
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	notb	%dil
+	cmpq	%rdx, %rsi
+	setae	%al
+	orb	%dil, %al
+	movzbl	%al, %eax
+	andl	$1, %eax
+	leaq	16(,%rax,8), %rax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	notb	%dil
 	cmpq	%rdx, %rsi

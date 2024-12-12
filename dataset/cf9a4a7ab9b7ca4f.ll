@@ -1,5 +1,5 @@
 
-; 318 occurrences:
+; 326 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -60,8 +60,6 @@
 ; linux/optimized/airtime.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/drm_scdc_helper.ll
-; linux/optimized/dvo_sil164.ll
 ; linux/optimized/dvo_tfp410.ll
 ; linux/optimized/genetlink.ll
 ; linux/optimized/i2c-algo-bit.ll
@@ -70,7 +68,6 @@
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/intel_tc.ll
 ; linux/optimized/ip_options.ll
-; linux/optimized/mii.ll
 ; linux/optimized/net_failover.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pcm_native.ll
@@ -86,7 +83,6 @@
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vt.ll
-; linux/optimized/wol.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -145,6 +141,17 @@
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
 ; llvm/optimized/driver.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_freetype_glyph.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_keyboard.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_observer.ll
+; lvgl/optimized/lv_textarea.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; mimalloc/optimized/page.c.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
@@ -251,6 +258,7 @@
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; spike/optimized/clz8.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; verilator/optimized/V3Assert.cpp.ll
 ; verilator/optimized/V3AssertPre.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
@@ -322,15 +330,114 @@
 define i8 @func0000000000000001(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   ret i8 %3
 }
 
-; 263 occurrences:
+; 360 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/framework.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; crow/optimized/example_session.cpp.ll
@@ -536,7 +643,6 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/ginlogic.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/partprune.ll
 ; postgres/optimized/pgc.ll
@@ -575,7 +681,6 @@ entry:
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/rename.ll
 ; z3/optimized/asserted_formulas.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/context_params.cpp.ll
 ; z3/optimized/euf_completion.cpp.ll
 ; z3/optimized/mbp_arith.cpp.ll
@@ -594,7 +699,7 @@ entry:
 define i8 @func0000000000000000(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   ret i8 %3
 }
 

@@ -4,6 +4,9 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000004:                   # @func0000000000000004
 	leal	-1(%rdi,%rsi), %eax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	leal	1(%rdi,%rsi), %eax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	leal	1(%rdi,%rsi), %eax
 	retq
@@ -15,9 +18,6 @@ func0000000000000035:                   # @func0000000000000035
 	retq
 func0000000000000001:                   # @func0000000000000001
 	leal	-4(%rdi,%rsi), %eax
-	retq
-func0000000000000030:                   # @func0000000000000030
-	leal	1(%rdi,%rsi), %eax
 	retq
 func0000000000000020:                   # @func0000000000000020
 	leal	374761393(%rdi,%rsi), %eax
@@ -64,11 +64,11 @@ func0000000000000015:                   # @func0000000000000015
 func0000000000000012:                   # @func0000000000000012
 	leal	-4(%rdi,%rsi), %eax
 	retq
-func000000000000003d:                   # @func000000000000003d
-	leal	2(%rdi,%rsi), %eax
-	retq
 func000000000000003c:                   # @func000000000000003c
 	leal	1(%rdi,%rsi), %eax
+	retq
+func000000000000003d:                   # @func000000000000003d
+	leal	-64(%rdi,%rsi), %eax
 	retq
 func000000000000001c:                   # @func000000000000001c
 	leal	4(%rdi,%rsi), %eax

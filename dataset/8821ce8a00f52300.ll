@@ -30,8 +30,7 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; abc/optimized/mvcCompare.c.ll
+; 3 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/xfrm_policy.ll
 ; qemu/optimized/hw_display_vga.c.ll
@@ -41,19 +40,6 @@ entry:
   %3 = and i32 %2, %1
   %4 = and i32 %0, %1
   %5 = icmp ult i32 %4, %3
-  ret i1 %5
-}
-
-; 3 occurrences:
-; abc/optimized/mvcCompare.c.ll
-; linux/optimized/pipe.ll
-; linux/optimized/xfrm_policy.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, %0
-  %4 = and i32 %0, %1
-  %5 = icmp ugt i32 %4, %3
   ret i1 %5
 }
 
@@ -90,6 +76,18 @@ entry:
   %3 = xor i32 %0, %2
   %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/pipe.ll
+; linux/optimized/xfrm_policy.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, %1
+  %4 = and i32 %0, %1
+  %5 = icmp ugt i32 %4, %3
   ret i1 %5
 }
 

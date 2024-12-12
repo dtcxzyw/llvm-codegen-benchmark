@@ -34,8 +34,8 @@ define float @func0000000000000000(float %0, float %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3F70101010101010
   %4 = fptrunc double %3 to float
-  %5 = fmul float %4, %1
-  %6 = fadd float %5, %0
+  %5 = fmul float %1, %4
+  %6 = fadd float %0, %5
   ret float %6
 }
 

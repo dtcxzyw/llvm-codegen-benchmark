@@ -1,10 +1,9 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; draco/optimized/shannon_entropy.cc.ll
 ; faiss/optimized/Clustering.cpp.ll
 ; graphviz/optimized/make_map.c.ll
 ; graphviz/optimized/routespl.c.ll
-; gromacs/optimized/dlasdt.cpp.ll
 ; gromacs/optimized/pme.cpp.ll
 ; icu/optimized/ucurr.ll
 ; lightgbm/optimized/boosting.cpp.ll

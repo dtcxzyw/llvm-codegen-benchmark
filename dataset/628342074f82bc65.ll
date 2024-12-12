@@ -14,15 +14,14 @@ entry:
   ret i16 %3
 }
 
-; 2 occurrences:
-; linux/optimized/intel_guc_slpc.ll
-; recastnavigation/optimized/RecastDebugDraw.cpp.ll
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000003(i32 %0) #0 {
+define i16 @func0000000000000012(i32 %0) #0 {
 entry:
-  %1 = trunc i32 %0 to i16
+  %1 = trunc nuw i32 %0 to i16
   %2 = lshr i16 %1, 8
-  %3 = mul nuw nsw i16 %2, 127
+  %3 = mul nuw i16 %2, 255
   ret i16 %3
 }
 

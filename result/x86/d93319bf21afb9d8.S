@@ -19,14 +19,14 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	movq	%rdi, %rax
 	subq	%rdx, %rax
 	addq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movq	%rdi, %rax
 	subq	%rdx, %rax
 	addq	%rsi, %rax

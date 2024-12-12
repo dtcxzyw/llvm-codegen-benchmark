@@ -1,7 +1,6 @@
 
-; 89 occurrences:
+; 88 occurrences:
 ; assimp/optimized/OpenDDLParser.cpp.ll
-; clamav/optimized/filcreat.cpp.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
 ; crow/optimized/example.cpp.ll
@@ -31,7 +30,6 @@
 ; imgui/optimized/imgui.cpp.ll
 ; jq/optimized/jv.ll
 ; libwebp/optimized/cwebp.c.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -89,6 +87,7 @@
 ; z3/optimized/ast_smt2_pp.cpp.ll
 ; z3/optimized/model_smt2_pp.cpp.ll
 ; z3/optimized/pdecl.cpp.ll
+; zed-rs/optimized/bkp2u7tfyqnnhpthgztcor9ly.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:

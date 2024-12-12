@@ -1,10 +1,11 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
+; lief/optimized/Builder.cpp.ll
 ; linux/optimized/8139too.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/i915_vma.ll

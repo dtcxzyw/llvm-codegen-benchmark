@@ -9,7 +9,7 @@ func0000000000000063:                   # @func0000000000000063
 	addl	%ecx, %eax
 	notl	%eax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func0000000000000143:                   # @func0000000000000143
 	movl	%edi, %eax
 	imulq	$1125899907, %rax, %rax         # imm = 0x431BDE83
 	shrq	$50, %rax

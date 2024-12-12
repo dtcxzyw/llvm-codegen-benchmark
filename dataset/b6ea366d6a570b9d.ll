@@ -2,9 +2,9 @@
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000010(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000030(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ugt i8 %2, 96
+  %3 = icmp samesign ugt i8 %2, 96
   %4 = select i1 %3, i8 %0, i8 %1
   %5 = lshr i8 %4, 4
   ret i8 %5
@@ -26,9 +26,9 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/coding.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000008(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000028(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i8 %2, 107
+  %3 = icmp samesign ult i8 %2, 107
   %4 = select i1 %3, i8 %0, i8 %1
   %5 = lshr i8 %4, 4
   ret i8 %5

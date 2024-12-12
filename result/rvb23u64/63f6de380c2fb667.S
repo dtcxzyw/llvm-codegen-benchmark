@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addi	a2, a2, -5
 	addi	a1, a1, -72
 	sltiu	a2, a2, -2
@@ -21,7 +21,7 @@ func0000000000000044:                   # @func0000000000000044
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000066:                   # @func0000000000000066
 	addi	a2, a2, 1
 	addi	a1, a1, 8
 	slti	a2, a2, 0
@@ -29,14 +29,14 @@ func0000000000000026:                   # @func0000000000000026
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	addi	a2, a2, -1
 	addi	a1, a1, 16
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000064:                   # @func0000000000000064
 	addi	a2, a2, 151
 	addi	a1, a1, 150
 	sltiu	a2, a2, 150

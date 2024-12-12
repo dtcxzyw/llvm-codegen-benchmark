@@ -1,8 +1,7 @@
 
-; 46 occurrences:
+; 45 occurrences:
 ; clamav/optimized/rawread.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
-; cmake/optimized/vli_decoder.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
@@ -65,7 +64,7 @@ define i64 @func0000000000000013(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -92,7 +91,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -106,33 +105,6 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw i64 %3, %1
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
-; 17 occurrences:
-; abc/optimized/infback.c.ll
-; abc/optimized/inflate.c.ll
-; clamav/optimized/disasm.c.ll
-; clamav/optimized/inflate64.c.ll
-; cmake/optimized/inflate.c.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; eastl/optimized/Int128_t.cpp.ll
-; gromacs/optimized/inflate.c.ll
-; libquic/optimized/infback.c.ll
-; libquic/optimized/inflate.c.ll
-; linux/optimized/inflate.ll
-; linux/optimized/xarray.ll
-; openmpi/optimized/psquash_flex128.ll
-; php/optimized/engine_user.ll
-; simdjson/optimized/simdjson.cpp.ll
-; zlib/optimized/infback.c.ll
-; zlib/optimized/inflate.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i64
-  %4 = shl i64 %3, %1
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -160,6 +132,32 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, %1
+  %5 = add i64 %4, %0
+  ret i64 %5
+}
+
+; 16 occurrences:
+; abc/optimized/infback.c.ll
+; abc/optimized/inflate.c.ll
+; clamav/optimized/disasm.c.ll
+; clamav/optimized/inflate64.c.ll
+; cmake/optimized/inflate.c.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; eastl/optimized/Int128_t.cpp.ll
+; gromacs/optimized/inflate.c.ll
+; libquic/optimized/infback.c.ll
+; libquic/optimized/inflate.c.ll
+; linux/optimized/inflate.ll
+; linux/optimized/xarray.ll
+; openmpi/optimized/psquash_flex128.ll
+; simdjson/optimized/simdjson.cpp.ll
+; zlib/optimized/infback.c.ll
+; zlib/optimized/inflate.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = shl i64 %3, %1
   %5 = add i64 %4, %0
   ret i64 %5
 }

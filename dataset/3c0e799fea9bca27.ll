@@ -1,18 +1,21 @@
 
-; 5 occurrences:
+; 8 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/static_string.ll
 ; cpython/optimized/zlibmodule.ll
 ; folly/optimized/json.cpp.ll
 ; hermes/optimized/regcomp.c.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; ruby/optimized/random.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -25,7 +28,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 
@@ -38,12 +41,17 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
   ret i1 %7
 }
 
-; 7 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/static_string.ll
+; boost/optimized/token_ids.ll
 ; folly/optimized/TimeUtil.cpp.ll
 ; freetype/optimized/ftlzw.c.ll
 ; lief/optimized/ssl_tls.c.ll
@@ -51,24 +59,22 @@ entry:
 ; php/optimized/cdf.ll
 ; php/optimized/uuencode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000188(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 130
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 130
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
   ret i1 %7
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
 ; hermes/optimized/ItaniumDemangle.cpp.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
-; hyperscan/optimized/teddy.c.ll
-; hyperscan/optimized/teddy_avx2.c.ll
 ; llvm/optimized/DependencyDirectivesScanner.cpp.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
@@ -77,26 +83,26 @@ entry:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000184(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; lief/optimized/ssl_tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000085(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000185(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 2
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
-  %7 = icmp uge i64 %6, %0
+  %7 = icmp ule i64 %0, %6
   ret i1 %7
 }
 
@@ -104,13 +110,13 @@ entry:
 ; freetype/optimized/type1.c.ll
 ; llvm/optimized/OMP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000186(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 
@@ -123,7 +129,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -131,13 +137,27 @@ entry:
 ; cmake/optimized/divsufsort.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018a(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
-  %7 = icmp slt i64 %6, %0
+  %7 = icmp sgt i64 %0, %6
+  ret i1 %7
+}
+
+; 2 occurrences:
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000104(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %1 to i64
+  %6 = sub i64 %5, %4
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 

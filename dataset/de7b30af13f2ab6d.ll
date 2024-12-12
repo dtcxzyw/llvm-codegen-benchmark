@@ -25,7 +25,6 @@ entry:
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
@@ -43,6 +42,7 @@ entry:
 ; xgboost/optimized/stats.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(float %0, float %1) #0 {
 entry:

@@ -60,7 +60,7 @@
 	.byte	8                               # 0x8
 	.byte	4                               # 0x4
 	.byte	2                               # 0x2
-func0000000000000077:                   # @func0000000000000077
+func00000000000000e7:                   # @func00000000000000e7
 	vpxord	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero,xmm1[8],zero,xmm1[9],zero,xmm1[10],zero,xmm1[11],zero,xmm1[12],zero,xmm1[13],zero,xmm1[14],zero,xmm1[15],zero
 	vpmullw	.LCPI0_1(%rip), %ymm1, %ymm1    # [171,171,171,171,171,171,171,171,171,171,171,171,171,171,171,171]
@@ -70,7 +70,7 @@ func0000000000000077:                   # @func0000000000000077
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubb	%xmm2, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
-	vpcmpnltd	%ymm0, %ymm1, %k0
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -136,7 +136,7 @@ func0000000000000077:                   # @func0000000000000077
 	.byte	8                               # 0x8
 	.byte	4                               # 0x4
 	.byte	2                               # 0x2
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	vpxord	.LCPI1_3(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero,xmm1[8],zero,xmm1[9],zero,xmm1[10],zero,xmm1[11],zero,xmm1[12],zero,xmm1[13],zero,xmm1[14],zero,xmm1[15],zero
 	vpmullw	.LCPI1_1(%rip), %ymm1, %ymm1    # [171,171,171,171,171,171,171,171,171,171,171,171,171,171,171,171]

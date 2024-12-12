@@ -27,7 +27,6 @@
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/scale_x86_avx.cpp.ll
 ; ncnn/optimized/scale_x86_avx512.cpp.ll
@@ -59,19 +58,21 @@
 ; raylib/optimized/rtext.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; sqlite/optimized/sqlite3.ll
+; yosys/optimized/formalff.ll
 ; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; libwebp/optimized/quant_levels_utils.c.ll
 ; minetest/optimized/mg_schematic.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/prelu_x86.cpp.ll
 ; ncnn/optimized/scale_x86.cpp.ll
@@ -91,12 +92,11 @@ define i1 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 68 occurrences:
-; abc/optimized/bmcBmcAnd.c.ll
+; 66 occurrences:
 ; abc/optimized/giaSim.c.ll
 ; bullet3/optimized/MultiBodyTreeImpl.ll
 ; bullet3/optimized/btLemkeAlgorithm.ll
@@ -163,13 +163,12 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; yosys/optimized/formalff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -188,12 +187,13 @@ define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; gromacs/optimized/grid.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/prelu_x86_avx.cpp.ll
 ; ncnn/optimized/prelu_x86_avx512.cpp.ll
@@ -218,7 +218,7 @@ define i1 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -236,11 +236,11 @@ define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
-; 56 occurrences:
+; 55 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3GpuGridBroadphase.ll
 ; darktable/optimized/introspection_primaries.c.ll
@@ -256,7 +256,6 @@ entry:
 ; gromacs/optimized/redistribute.cpp.ll
 ; gromacs/optimized/state.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -298,22 +297,22 @@ entry:
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; xgboost/optimized/iterative_dmatrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp ne i64 %4, %0
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
@@ -323,15 +322,15 @@ entry:
 ; openspiel/optimized/crazy_eights.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/VectorTransform.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -341,7 +340,6 @@ entry:
 ; gromacs/optimized/state.cpp.ll
 ; libwebp/optimized/alpha_enc.c.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -372,24 +370,23 @@ entry:
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; xgboost/optimized/iterative_dmatrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; openspiel/optimized/battleship.cc.ll
 ; openspiel/optimized/dots_and_boxes.cc.ll
-; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp sle i64 %4, %0
+  %5 = icmp sge i64 %0, %4
   ret i1 %5
 }
 
@@ -397,22 +394,11 @@ entry:
 ; libwebp/optimized/alpha_dec.c.ll
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = icmp ule i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; zxing/optimized/PDFDetectionResultColumn.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = icmp sge i64 %4, %0
+  %5 = icmp uge i64 %0, %4
   ret i1 %5
 }
 

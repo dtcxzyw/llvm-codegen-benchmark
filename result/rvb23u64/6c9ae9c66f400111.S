@@ -11,11 +11,11 @@ func0000000000000002:                   # @func0000000000000002
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000010:                   # @func0000000000000010
-	zext.h	a0, a0
+func000000000000000c:                   # @func000000000000000c
+	sext.h	a0, a0
 	and	a1, a1, a2
-	sltiu	a0, a0, 97
-	xori	a0, a0, 1
+	lui	a2, 1048572
+	slt	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008

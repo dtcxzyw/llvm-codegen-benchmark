@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 61 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; folly/optimized/json.cpp.ll
 ; git/optimized/xhistogram.ll
@@ -59,12 +59,14 @@
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2
   %3 = xor i64 %2, -4366375858499063011
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 

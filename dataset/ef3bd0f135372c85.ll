@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/print_settings.c.ll
 ; eastl/optimized/TestDeque.cpp.ll
+; stb/optimized/stb_connected_components.c.ll
 ; wireshark/optimized/packet-smtp.c.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000c0(ptr %0, i64 %1, i64 %2) #0 {
@@ -55,13 +56,13 @@ entry:
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c2(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000c3(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 28
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = ashr exact i64 %1, 28
   %6 = getelementptr i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 12
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 12
   ret ptr %7
 }
 

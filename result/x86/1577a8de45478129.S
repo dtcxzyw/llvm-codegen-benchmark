@@ -1,13 +1,18 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vmovq	%xmm0, %rax
 	movq	%rax, %rcx
-	shrq	$52, %rcx
-	cmpl	$4095, %ecx                     # imm = 0xFFF
-	setae	%cl
-	movb	$52, %dl
-	bzhiq	%rdx, %rax, %rax
-	movabsq	$2251799813685248, %rdx         # imm = 0x8000000000000
-	cmpq	%rdx, %rax
+	shlq	$12, %rcx
+	sete	%cl
+	shrq	$53, %rax
+	setne	%al
+	andb	%cl, %al
+	retq
+func0000000000000184:                   # @func0000000000000184
+	vmovq	%xmm0, %rax
+	movq	%rax, %rcx
+	shlq	$12, %rcx
+	setne	%cl
+	shrq	$52, %rax
 	sete	%al
 	andb	%cl, %al
 	retq

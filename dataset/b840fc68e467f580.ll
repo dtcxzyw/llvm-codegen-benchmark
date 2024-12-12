@@ -1,12 +1,11 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll

@@ -18,14 +18,19 @@ func0000000000000006:                   // @func0000000000000006
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	lsr	x8, x2, #32
-	cmp	x8, #0
-	csel	x0, x0, x1, eq
+	cmp	x2, #5
+	csel	x0, x0, x1, lo
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	cmp	x2, #64
 	csel	x0, x0, x1, hi
+	ret
+                                        // -- End function
+func000000000000000c:                   // @func000000000000000c
+// %bb.0:                               // %entry
+	cmp	x2, #21
+	csel	x0, x1, x0, eq
 	ret
                                         // -- End function

@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax

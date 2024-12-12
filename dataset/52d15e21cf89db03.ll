@@ -11,12 +11,12 @@
 define i8 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, -1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i8 7, i8 0
   ret i8 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; linux/optimized/hdmi.ll
 ; llvm/optimized/Architecture.cpp.ll
@@ -24,11 +24,13 @@ entry:
 ; openusd/optimized/reconintra.c.ll
 ; postgres/optimized/nbtinsert.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i8 12, i8 8
   ret i8 %4
 }

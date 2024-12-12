@@ -35,7 +35,7 @@
 define { i64, i32 } @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = insertvalue { i64, i32 } poison, i64 %4, 0
   %6 = insertvalue { i64, i32 } %5, i32 %0, 1
   ret { i64, i32 } %6

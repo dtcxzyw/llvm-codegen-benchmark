@@ -1,58 +1,58 @@
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	cmpw	%dx, %si
 	setge	%cl
 	cmpw	$8, %di
 	setl	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorl	%edx, %esi
 	orw	%si, %di
 	sete	%al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	cmpw	%dx, %si
 	setb	%cl
 	testw	%di, %di
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	cmpw	$8, %dx
 	setb	%cl
 	cmpw	%si, %di
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	cmpw	%dx, %si
 	seta	%cl
 	cmpw	$1, %di
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	cmpw	%dx, %si
 	sete	%cl
 	testw	%di, %di
 	setns	%al
 	andb	%cl, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	cmpw	%dx, %si
 	sete	%cl
 	cmpw	$16, %di
 	setae	%al
 	andb	%cl, %al
 	retq
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	testw	%dx, %dx
 	setns	%cl
 	cmpw	%si, %di
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000009c:                   # @func000000000000009c
+func000000000000012c:                   # @func000000000000012c
 	cmpw	%dx, %si
 	setae	%cl
 	movzwl	%di, %eax
@@ -60,7 +60,7 @@ func000000000000009c:                   # @func000000000000009c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	cmpw	%dx, %si
 	sete	%cl
 	testw	%di, %di

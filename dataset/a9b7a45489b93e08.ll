@@ -3,7 +3,7 @@
 ; luau/optimized/lbaselib.cpp.ll
 ; redis/optimized/lbaselib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %1, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %1
   %4 = icmp slt i32 %1, 0

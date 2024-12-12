@@ -13,9 +13,10 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRefactor.c.ll
+; abc/optimized/amapPerm.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; darktable/optimized/introspection_colorin.c.ll
 ; Function Attrs: nounwind

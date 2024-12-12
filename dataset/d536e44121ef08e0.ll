@@ -9,7 +9,7 @@
 ; wireshark/optimized/packet-cigi.c.ll
 ; wireshark/optimized/packet-epl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 291
   %3 = icmp eq i16 %1, 221

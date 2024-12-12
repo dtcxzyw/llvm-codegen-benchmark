@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; hyperscan/optimized/rose_build_program.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; lz4/optimized/lz4.c.ll
 ; meshlab/optimized/seams.cpp.ll
 ; nghttp2/optimized/llhttp.c.ll

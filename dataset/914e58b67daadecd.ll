@@ -1,14 +1,10 @@
 
-; 12 occurrences:
+; 8 occurrences:
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
 ; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
-; mold/optimized/output-chunks.cc.RV64BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV64LE.cc.ll
-; mold/optimized/output-chunks.cc.S390X.cc.ll
-; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll

@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
-; openusd/optimized/detokenize.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {

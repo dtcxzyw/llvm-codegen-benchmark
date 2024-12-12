@@ -121,10 +121,9 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	30                              # 0x1e
 func0000000000000005:                   # @func0000000000000005
 	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnltw	%xmm3, %xmm0, %k1
-	vmovdqa	.LCPI2_0(%rip), %ymm3           # ymm3 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vmovdqa32	%ymm3, %ymm0 {%k1}
+	vpmovw2m	%xmm0, %k0
+	vmovdqa	.LCPI2_0(%rip), %ymm0           # ymm0 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
+	vpermi2b	%ymm2, %ymm1, %ymm0
+	knotb	%k0, %k1
+	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq

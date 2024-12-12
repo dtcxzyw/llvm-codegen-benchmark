@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	andi	a1, a1, 1
 	bset	a2, zero, a2
 	bseti	a3, zero, 63

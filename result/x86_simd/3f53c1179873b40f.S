@@ -50,7 +50,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	17                              # 0x11
 .LCPI2_1:
 	.long	7                               # 0x7
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vandps	.LCPI2_1(%rip){1to8}, %ymm1, %ymm0 {%k1} {z}
 	retq
@@ -71,10 +71,21 @@ func000000000000000c:                   # @func000000000000000c
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI5_0:
-	.long	1                               # 0x1
+	.long	95                              # 0x5f
 .LCPI5_1:
+	.long	32                              # 0x20
+.LCPI5_2:
+	.long	268435455                       # 0xfffffff
+func0000000000000004:                   # @func0000000000000004
+	vpcmpltud	.LCPI5_0(%rip){1to8}, %ymm0, %k1
+	vbroadcastss	.LCPI5_1(%rip), %ymm0   # ymm0 = [32,32,32,32,32,32,32,32]
+	vandps	.LCPI5_2(%rip){1to8}, %ymm1, %ymm0 {%k1}
+	retq
+.LCPI6_0:
+	.long	1                               # 0x1
+.LCPI6_1:
 	.long	7                               # 0x7
-func0000000000000008:                   # @func0000000000000008
-	vpcmpnleud	.LCPI5_0(%rip){1to8}, %ymm0, %k1
-	vandps	.LCPI5_1(%rip){1to8}, %ymm1, %ymm0 {%k1} {z}
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleud	.LCPI6_0(%rip){1to8}, %ymm0, %k1
+	vandps	.LCPI6_1(%rip){1to8}, %ymm1, %ymm0 {%k1} {z}
 	retq

@@ -9,24 +9,24 @@
 ; yosys/optimized/dfflibmap.ll
 ; z3/optimized/array_internalize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000001f8(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
-  %4 = add nuw nsw i8 %3, %1
+  %4 = add nuw nsw i8 %1, %3
   %5 = add nuw nsw i8 %4, %0
-  %6 = icmp ugt i8 %5, 1
+  %6 = icmp samesign ugt i8 %5, 1
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/ParseTentative.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000001f4(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
-  %4 = add nuw nsw i8 %3, %1
+  %4 = add nuw nsw i8 %1, %3
   %5 = add nuw nsw i8 %4, %0
-  %6 = icmp ult i8 %5, 2
+  %6 = icmp samesign ult i8 %5, 2
   ret i1 %6
 }
 

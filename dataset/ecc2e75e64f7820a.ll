@@ -1,9 +1,8 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; libquic/optimized/error_correction.c.ll
 ; linux/optimized/skl_watermark.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_display_virtio-gpu.c.ll
 ; qemu/optimized/ui_dbus-listener.c.ll

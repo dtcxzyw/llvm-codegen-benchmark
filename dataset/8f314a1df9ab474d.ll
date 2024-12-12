@@ -15,7 +15,7 @@
 ; llvm/optimized/WindowsResource.cpp.ll
 ; mold/optimized/multi-glob.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000451(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000008a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add i64 %1, -64
@@ -34,7 +34,7 @@ entry:
 ; llvm/optimized/DFAEmitter.cpp.ll
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000541(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a81(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nsw i64 %1, -32
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/cmQtAutoMocUic.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000558(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aa8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = add nsw i64 %1, 16
@@ -61,7 +61,7 @@ entry:
 ; cmake/optimized/cmQtAutoMocUic.cxx.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000551(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aa1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = add nsw i64 %1, 16
@@ -82,7 +82,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000054a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a8a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %1, -32
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000411(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000821(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add i64 %1, -32
@@ -111,7 +111,7 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000055a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aaa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 1
   %4 = add nsw i64 %1, -4
@@ -128,7 +128,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000068a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -32
   %4 = ashr exact i64 %1, 3
@@ -143,7 +143,7 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000035a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -4
   %4 = ashr exact i64 %1, 1
@@ -157,7 +157,7 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000045a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000008aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = add i64 %1, -64
@@ -170,12 +170,12 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000554(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aa4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = add nsw i64 %1, -64
   %5 = add nsw i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = icmp ult i64 %6, 64
   ret i1 %7
 }
@@ -183,7 +183,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000454(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000008a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = add i64 %1, -64
@@ -196,7 +196,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000456(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000008a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = add i64 %1, -64

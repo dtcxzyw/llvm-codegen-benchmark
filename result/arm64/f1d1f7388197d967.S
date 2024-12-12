@@ -1,112 +1,45 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	fmov	w11, s1
-	fmov	w12, s0
-	mov	w8, v1.s[1]
-	mov	w9, v0.s[1]
-	mov	w14, v1.s[2]
-	mov	w15, v0.s[2]
-	mov	w17, v1.s[3]
-	mov	w18, v0.s[3]
-	uzp1	v2.4s, v2.4s, v3.4s
-	udiv	w13, w12, w11
-	mul	v1.4s, v2.4s, v1.4s
-	udiv	w10, w9, w8
-	msub	w11, w13, w11, w12
-	fmov	s0, w11
-	udiv	w16, w15, w14
-	msub	w8, w10, w8, w9
-	mov	v0.s[1], w8
-	udiv	w9, w18, w17
-	msub	w8, w16, w14, w15
-	mov	v0.s[2], w8
-	msub	w8, w9, w17, w18
-	mov	v0.s[3], w8
-	cmhi	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	udiv	w8, w0, w1
+	mul	w9, w1, w2
+	msub	w8, w8, w1, w0
+	cmp	w8, w9
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000088:                   // @func0000000000000088
+func0000000000000108:                   // @func0000000000000108
 // %bb.0:                               // %entry
-	fmov	w11, s1
-	fmov	w12, s0
-	mov	w8, v1.s[1]
-	mov	w9, v0.s[1]
-	mov	w14, v1.s[2]
-	mov	w15, v0.s[2]
-	mov	w17, v1.s[3]
-	mov	w18, v0.s[3]
-	uzp1	v2.4s, v2.4s, v3.4s
-	udiv	w13, w12, w11
-	mul	v1.4s, v2.4s, v1.4s
-	udiv	w10, w9, w8
-	msub	w11, w13, w11, w12
-	fmov	s0, w11
-	udiv	w16, w15, w14
-	msub	w8, w10, w8, w9
-	mov	v0.s[1], w8
-	udiv	w9, w18, w17
-	msub	w8, w16, w14, w15
-	mov	v0.s[2], w8
-	msub	w8, w9, w17, w18
-	mov	v0.s[3], w8
-	cmhi	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	udiv	w8, w0, w1
+	mul	w9, w1, w2
+	msub	w8, w8, w1, w0
+	cmp	w8, w9
+	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000001c8:                   // @func00000000000001c8
+func0000000000000398:                   // @func0000000000000398
 // %bb.0:                               // %entry
-	fmov	w11, s1
-	fmov	w12, s0
-	mov	w8, v1.s[1]
-	mov	w9, v0.s[1]
-	mov	w14, v1.s[2]
-	mov	w15, v0.s[2]
-	mov	w17, v1.s[3]
-	mov	w18, v0.s[3]
-	uzp1	v2.4s, v2.4s, v3.4s
-	udiv	w13, w12, w11
-	mul	v1.4s, v2.4s, v1.4s
-	udiv	w10, w9, w8
-	msub	w11, w13, w11, w12
-	fmov	s0, w11
-	udiv	w16, w15, w14
-	msub	w8, w10, w8, w9
-	mov	v0.s[1], w8
-	udiv	w9, w18, w17
-	msub	w8, w16, w14, w15
-	mov	v0.s[2], w8
-	msub	w8, w9, w17, w18
-	mov	v0.s[3], w8
-	cmhi	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	udiv	w8, w0, w1
+	mul	w9, w1, w2
+	msub	w8, w8, w1, w0
+	cmp	w8, w9
+	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000c8:                   // @func00000000000000c8
+func0000000000000388:                   // @func0000000000000388
 // %bb.0:                               // %entry
-	fmov	w11, s1
-	fmov	w12, s0
-	mov	w8, v1.s[1]
-	mov	w9, v0.s[1]
-	mov	w14, v1.s[2]
-	mov	w15, v0.s[2]
-	mov	w17, v1.s[3]
-	mov	w18, v0.s[3]
-	uzp1	v2.4s, v2.4s, v3.4s
-	udiv	w13, w12, w11
-	mul	v1.4s, v2.4s, v1.4s
-	udiv	w10, w9, w8
-	msub	w11, w13, w11, w12
-	fmov	s0, w11
-	udiv	w16, w15, w14
-	msub	w8, w10, w8, w9
-	mov	v0.s[1], w8
-	udiv	w9, w18, w17
-	msub	w8, w16, w14, w15
-	mov	v0.s[2], w8
-	msub	w8, w9, w17, w18
-	mov	v0.s[3], w8
-	cmhi	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	udiv	w8, w0, w1
+	mul	w9, w1, w2
+	msub	w8, w8, w1, w0
+	cmp	w8, w9
+	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000000198:                   // @func0000000000000198
+// %bb.0:                               // %entry
+	udiv	w8, w0, w1
+	mul	w9, w1, w2
+	msub	w8, w8, w1, w0
+	cmp	w8, w9
+	cset	w0, hi
 	ret
                                         // -- End function

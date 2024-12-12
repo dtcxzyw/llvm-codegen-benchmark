@@ -2,7 +2,7 @@
 	.long	8192                            # 0x2000
 .LCPI0_1:
 	.long	131072                          # 0x20000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	knotb	%k0, %k1
@@ -45,7 +45,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	knotb	%k0, %k1

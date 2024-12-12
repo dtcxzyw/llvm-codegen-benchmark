@@ -18,7 +18,7 @@ func0000000000000018:                   # @func0000000000000018
 	orb	$8, %al
 	shrxl	%eax, %edi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	cmpl	$5, %esi
 	movb	$1, %al
 	sbbb	$-1, %al

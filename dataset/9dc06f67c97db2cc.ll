@@ -18,7 +18,7 @@
 ; postgres/optimized/ginxlog.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %0, %1
@@ -54,7 +54,7 @@ entry:
 ; verilator/optimized/V3Table.cpp.ll
 ; verilator/optimized/V3Unroll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %0, %1
@@ -82,7 +82,7 @@ entry:
 ; openusd/optimized/authoring.cpp.ll
 ; php/optimized/node.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq ptr %0, %1
@@ -95,7 +95,7 @@ entry:
 ; openjdk/optimized/shenandoahSupport.ll
 ; php/optimized/var.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ult ptr %0, %1
@@ -111,7 +111,7 @@ entry:
 ; z3/optimized/dominator_simplifier.cpp.ll
 ; z3/optimized/lia2card_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne ptr %0, %1
@@ -123,7 +123,7 @@ entry:
 ; luajit/optimized/lj_err.ll
 ; luajit/optimized/lj_err_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000188(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ugt ptr %0, %1

@@ -1,7 +1,7 @@
 
-%"struct.std::pair.63.3671316" = type <{ double, i32, [4 x i8] }>
+%"struct.std::pair.63.3850924" = type <{ double, i32, [4 x i8] }>
 
-; 26 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -18,6 +18,7 @@
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/npr.cpp.ll
 ; opencv/optimized/resize.cpp.ll
+; opencv/optimized/samplers.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openusd/optimized/grain_synthesis.c.ll
@@ -29,12 +30,12 @@
 ; php/optimized/zend_ini.ll
 ; php/optimized/zend_list.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -44,18 +45,18 @@ entry:
 ; abc/optimized/kitPla.c.ll
 ; ipopt/optimized/IpLimMemQuasiNewtonUpdater.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; opencv/optimized/mathfuncs.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw double, ptr %0, i64 %5
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = getelementptr nusw nuw double, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -66,7 +67,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = mul nuw i64 %4, %1
+  %5 = mul nuw i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -79,7 +80,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -93,7 +94,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -113,25 +114,26 @@ entry:
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
+; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000074(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -148,22 +150,33 @@ define ptr @func0000000000000044(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 4
   %4 = zext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; xgboost/optimized/indexed_recordio_split.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = mul i64 %4, %1
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %5 = mul i64 %1, %4
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; quantlib/optimized/pathwiseaccountingengine.ll
+; quantlib/optimized/svd.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -2
+  %4 = zext nneg i32 %3 to i64
+  %5 = mul i64 %1, %4
+  %6 = getelementptr nusw nuw double, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -174,7 +187,7 @@ define ptr @func0000000000000014(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -188,7 +201,7 @@ define ptr @func0000000000000034(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -200,7 +213,7 @@ define ptr @func000000000000007a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw i64 %4, %1
+  %5 = mul nuw i64 %1, %4
   %6 = getelementptr nusw double, ptr %0, i64 %5
   ret ptr %6
 }
@@ -214,7 +227,7 @@ define ptr @func0000000000000070(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -226,7 +239,7 @@ define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw i64 %4, %1
+  %5 = mul nuw i64 %1, %4
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -239,7 +252,7 @@ define ptr @func000000000000003c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -251,7 +264,7 @@ define ptr @func0000000000000026(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -264,13 +277,27 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = mul nuw i64 %4, %1
+  %5 = mul nuw i64 %1, %4
   %6 = getelementptr nusw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 4 occurrences:
+; 2 occurrences:
+; llvm/optimized/SLPVectorizer.cpp.ll
+; xgboost/optimized/indexed_recordio_split.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
+  %4 = zext i32 %3 to i64
+  %5 = mul i64 %1, %4
+  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 5 occurrences:
 ; faiss/optimized/IndexNSG.cpp.ll
+; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/npr.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
@@ -279,7 +306,7 @@ define ptr @func000000000000007c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = getelementptr i64, ptr %0, i64 %5
   ret ptr %6
 }
@@ -299,7 +326,7 @@ define ptr @func0000000000000032(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -312,7 +339,7 @@ define ptr @func0000000000000076(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -326,7 +353,7 @@ define ptr @func0000000000000072(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -338,7 +365,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = getelementptr float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -350,7 +377,19 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
+  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/mathfuncs.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = mul nuw nsw i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -358,12 +397,12 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/contours.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -374,8 +413,8 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
-  %6 = getelementptr nusw %"struct.std::pair.63.3671316", ptr %0, i64 %5
+  %5 = mul nsw i64 %1, %4
+  %6 = getelementptr nusw %"struct.std::pair.63.3850924", ptr %0, i64 %5
   ret ptr %6
 }
 

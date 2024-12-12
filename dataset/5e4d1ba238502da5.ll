@@ -21,21 +21,7 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
-; wasmtime-rs/optimized/4op38pthexwwd97b.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
-; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %0, %1
-  %3 = icmp ugt i32 %2, 7
-  ret i1 %3
-}
-
-; 43 occurrences:
+; 40 occurrences:
 ; darktable/optimized/avif.c.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
@@ -57,7 +43,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -68,7 +53,6 @@ entry:
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
-; qemu/optimized/source_s_shiftRightJam32.c.ll
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/s_addMagsF32.ll
@@ -76,7 +60,6 @@ entry:
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_shiftRightJam32.ll
 ; spike/optimized/s_subMagsF32.ll
 ; wireshark/optimized/packet-reload-framing.c.ll
 ; Function Attrs: nounwind
@@ -87,7 +70,7 @@ entry:
   ret i1 %3
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; c3c/optimized/sema_builtins.c.ll
@@ -97,7 +80,6 @@ entry:
 ; linux/optimized/fib_trie.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openexr/optimized/ImfInputFile.cpp.ll
@@ -161,8 +143,7 @@ entry:
   ret i1 %3
 }
 
-; 34 occurrences:
-; cmake/optimized/zstd_decompress_block.c.ll
+; 31 occurrences:
 ; curl/optimized/libcurl_la-asyn-thread.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
@@ -187,7 +168,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -195,7 +175,6 @@ entry:
 ; openvdb/optimized/TopologyToLevelSet.cc.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/points.cc.ll
-; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
@@ -229,10 +208,10 @@ entry:
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %0, %1
-  %3 = icmp ult i32 %2, 257
+  %3 = icmp samesign ult i32 %2, 257
   ret i1 %3
 }
 
@@ -245,10 +224,33 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %0, %1
   %3 = icmp eq i32 %2, 128
+  ret i1 %3
+}
+
+; 4 occurrences:
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
+; wasmtime-rs/optimized/4op38pthexwwd97b.ll
+; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %0, %1
+  %3 = icmp samesign ugt i32 %2, 63
+  ret i1 %3
+}
+
+; 1 occurrences:
+; linux/optimized/rc80211_minstrel_ht.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %0, %1
+  %3 = icmp samesign ugt i32 %2, 369250
   ret i1 %3
 }
 

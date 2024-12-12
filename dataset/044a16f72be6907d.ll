@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-bn_sqr.ll
 ; openssl/optimized/libcrypto-shlib-bn_sqr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %0
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/seam_finders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000095a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000012aa(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nsw i32 %3, %0
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/seam_finders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %0

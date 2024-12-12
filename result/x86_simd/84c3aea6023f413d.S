@@ -50,7 +50,7 @@ func0000000000000035:                   # @func0000000000000035
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 .LCPI7_0:
-	.long	2                               # 0x2
+	.long	108                             # 0x6c
 func0000000000000005:                   # @func0000000000000005
 	vpmulld	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm0, %xmm2, %xmm0
@@ -83,13 +83,6 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000011:                   # @func0000000000000011
 	vpmulld	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovsxdq	%xmm0, %ymm0
-	retq
-func0000000000000031:                   # @func0000000000000031
-	vpmulld	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0

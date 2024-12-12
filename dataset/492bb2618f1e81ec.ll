@@ -7,7 +7,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = sub i64 %5, %0
   ret i64 %6
 }
@@ -28,11 +28,11 @@ entry:
 ; php/optimized/url_scanner_ex.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func0000000000000030(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
   %4 = ptrtoint ptr %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = sub i64 %5, %0
   ret i64 %6
 }
@@ -48,11 +48,11 @@ entry:
 ; cmake/optimized/protocol_types.cpp.ll
 ; cmake/optimized/typeof.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func0000000000000032(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
   %4 = ptrtoint ptr %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = sub nuw i64 %5, %0
   ret i64 %6
 }

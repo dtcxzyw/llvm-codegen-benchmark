@@ -8,7 +8,7 @@
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
 ; openjdk/optimized/UnixNativeDispatcher.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -25,7 +25,7 @@ entry:
 ; quantlib/optimized/sparseilupreconditioner.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 29

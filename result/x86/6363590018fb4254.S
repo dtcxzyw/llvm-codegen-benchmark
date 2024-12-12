@@ -1,35 +1,35 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	orl	%edx, %esi
 	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
 	incl	%eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	orl	%edx, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	movl	$-998211456, %ecx               # imm = 0xC4808080
 	movl	$1619034240, %eax               # imm = 0x60808080
 	cmovel	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orl	%edx, %esi
 	xorl	%eax, %eax
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	setne	%al
 	addl	%eax, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	orl	%edx, %esi
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
 	sbbl	%eax, %eax
 	orl	$1, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	orl	%edx, %esi
 	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	setge	%al
+	cmpl	%esi, %edi
+	setle	%al
 	shll	$5, %eax
 	retq

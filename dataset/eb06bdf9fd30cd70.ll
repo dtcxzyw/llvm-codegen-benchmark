@@ -31,12 +31,12 @@
 ; openvdb/optimized/Prune.cc.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000161(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 12
   %4 = add nsw i64 %3, -2
   %5 = ashr exact i64 %4, 1
-  %6 = icmp eq i64 %5, %1
+  %6 = icmp eq i64 %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
@@ -47,12 +47,12 @@ entry:
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
 ; openusd/optimized/blendShapeQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 12
   %4 = add nsw i64 %3, -2
   %5 = ashr exact i64 %4, 1
-  %6 = icmp eq i64 %5, %1
+  %6 = icmp eq i64 %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }

@@ -10,7 +10,7 @@
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2064
   %3 = icmp ne i32 %0, 0
@@ -24,7 +24,7 @@ entry:
 ; php/optimized/zend_inference.ll
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000182(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000302(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq i32 %0, 1026
@@ -33,12 +33,19 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
+; 29 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/giaPat.c.ll
 ; abc/optimized/giaTsim.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; darktable/optimized/metadata_view.c.ll
 ; git/optimized/pretty.ll
 ; linux/optimized/dcache.ll
@@ -57,7 +64,7 @@ entry:
 ; wireshark/optimized/packet-usbll.c.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 134217785
   %3 = icmp eq i32 %0, 134217785
@@ -70,7 +77,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d8(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000198(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 2
   %3 = icmp ne i32 %0, 0
@@ -79,37 +86,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; libphonenumber/optimized/rune.c.ll
-; linux/optimized/tg3.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 55296
-  %3 = icmp ult i32 %0, 65536
-  %4 = or i1 %3, %2
-  %5 = select i1 %4, i32 3, i32 4
-  ret i32 %5
-}
-
-; 3 occurrences:
-; clamav/optimized/pdf.c.ll
-; z3/optimized/subpaving_mpff.cpp.ll
-; z3/optimized/subpaving_mpfx.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000188(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = icmp ult i32 %0, 4
-  %4 = or i1 %3, %2
-  %5 = select i1 %4, i32 68, i32 72
-  ret i32 %5
-}
-
 ; 1 occurrences:
 ; llvm/optimized/X86InstComments.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 16
   %3 = icmp ult i32 %0, 16
@@ -118,7 +98,8 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; linux/optimized/8139too.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/blk-core.ll
 ; linux/optimized/filemap.ll
@@ -129,7 +110,7 @@ entry:
 ; linux/optimized/seq_file.ll
 ; wireshark/optimized/packet-pw-atm.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000082(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000102(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
   %3 = icmp eq i32 %0, 6
@@ -139,14 +120,39 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/tg3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000048(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 28672
+  %3 = icmp ult i32 %0, 4096
+  %4 = or i1 %3, %2
+  %5 = select i1 %4, i32 2048, i32 0
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; cvc5/optimized/arith_msum.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000142(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000282(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = icmp eq i32 %0, 5
   %4 = or i1 %3, %2
   %5 = select i1 %4, i32 1, i32 -1
+  ret i32 %5
+}
+
+; 2 occurrences:
+; z3/optimized/subpaving_mpff.cpp.ll
+; z3/optimized/subpaving_mpfx.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000308(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ne i32 %1, 0
+  %3 = icmp ult i32 %0, 2
+  %4 = or i1 %3, %2
+  %5 = select i1 %4, i32 0, i32 2
   ret i32 %5
 }
 

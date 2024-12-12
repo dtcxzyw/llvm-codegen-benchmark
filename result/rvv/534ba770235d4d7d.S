@@ -22,6 +22,6 @@ func000000000000000a:                   # @func000000000000000a
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v16, v8, fa5
-	vmand.mm	v0, v16, v0
+	vmand.mm	v0, v0, v16
 	vmerge.vvm	v8, v12, v8, v0
 	ret

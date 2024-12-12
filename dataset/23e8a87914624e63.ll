@@ -1,5 +1,5 @@
 
-; 1466 occurrences:
+; 1476 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -45,12 +45,29 @@
 ; assimp/optimized/ObjExporter.cpp.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/Q3BSPFileParser.cpp.ll
-; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/collate.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/search_path.ll
+; boost/optimized/test_stackstring.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/callback_internal.cpp.ll
 ; casadi/optimized/conic.cpp.ll
@@ -416,7 +433,6 @@
 ; gromacs/optimized/freeenergydispatch.cpp.ll
 ; gromacs/optimized/ga2la.cpp.ll
 ; gromacs/optimized/gausstransform.cpp.ll
-; gromacs/optimized/genion.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/gmx_density.cpp.ll
@@ -517,7 +533,6 @@
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_misc_opt.cpp.ll
-; hyperscan/optimized/ng_netflow.cpp.ll
 ; hyperscan/optimized/rdfa_merge.cpp.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
@@ -646,7 +661,6 @@
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -678,7 +692,6 @@
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -929,7 +942,6 @@
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
-; opencv/optimized/count_non_zero.dispatch.cpp.ll
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/darknet_io.cpp.ll
 ; opencv/optimized/data.cpp.ll
@@ -1156,7 +1168,6 @@
 ; pbrt-v4/optimized/samplers.cpp.ll
 ; pbrt-v4/optimized/stats.cpp.ll
 ; proj/optimized/grids.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
@@ -1456,7 +1467,6 @@
 ; yosys/optimized/viz.ll
 ; yosys/optimized/xaiger.ll
 ; yosys/optimized/yosys.ll
-; z3/optimized/cmd_context.cpp.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll
@@ -1467,13 +1477,32 @@
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
   %6 = xor i64 %5, 1152921504606846975
   %7 = icmp ult i64 %6, %0
+  ret i1 %7
+}
+
+; 7 occurrences:
+; assimp/optimized/SIBImporter.cpp.ll
+; faiss/optimized/IndexPQ.cpp.ll
+; gromacs/optimized/colvargrid.cpp.ll
+; gromacs/optimized/genion.cpp.ll
+; hyperscan/optimized/ng_netflow.cpp.ll
+; meshlab/optimized/io_ctm.cpp.ll
+; opencv/optimized/count_non_zero.dispatch.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = ashr exact i64 %4, 2
+  %6 = xor i64 %5, 2305843009213693951
+  %7 = icmp samesign ult i64 %6, %0
   ret i1 %7
 }
 

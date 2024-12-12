@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	setne	%al
 	shll	$8, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	xorl	%eax, %eax
 	addl	%esi, %edi
 	setns	%al

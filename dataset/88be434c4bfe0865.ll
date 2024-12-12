@@ -8,7 +8,7 @@ entry:
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add nsw i32 %6, -1
   ret i32 %7
 }
@@ -24,7 +24,7 @@ entry:
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, -1
   ret i32 %7
 }

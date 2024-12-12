@@ -9,29 +9,20 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 12 occurrences:
+; 3 occurrences:
 ; hwloc/optimized/topology-linux.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; qemu/optimized/block_vhdx.c.ll
-; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
-; wasmtime-rs/optimized/2i7eys0ecsgyjusd.ll
-; wasmtime-rs/optimized/2y3wfjzj02o80wks.ll
-; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
-; wasmtime-rs/optimized/3nx5xa8lpfh19nj.ll
-; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
-; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
-; wasmtime-rs/optimized/4gcs6zbu61nja9jh.ll
-; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp samesign ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -57,11 +48,30 @@ entry:
 ; entt/optimized/storage_no_instance.cpp.ll
 ; entt/optimized/view.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 9 occurrences:
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
+; wasmtime-rs/optimized/2i7eys0ecsgyjusd.ll
+; wasmtime-rs/optimized/2y3wfjzj02o80wks.ll
+; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; wasmtime-rs/optimized/3nx5xa8lpfh19nj.ll
+; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
+; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
+; wasmtime-rs/optimized/4gcs6zbu61nja9jh.ll
+; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 6
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -70,11 +80,11 @@ entry:
 ; hyperscan/optimized/ComponentClass.cpp.ll
 ; hyperscan/optimized/Utf8ComponentClass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

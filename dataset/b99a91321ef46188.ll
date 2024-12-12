@@ -10,7 +10,7 @@
 ; opencv/optimized/perf_matchers.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, double %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, double %2) #0 {
 entry:
   %3 = bitcast double %2 to i64
   %4 = sub i64 0, %3

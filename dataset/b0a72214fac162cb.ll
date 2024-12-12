@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; hdf5/optimized/H5Dchunk.c.ll
 ; linux/optimized/vmscan.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openssl/optimized/evp_test-bin-evp_test.ll
 ; php/optimized/file.ll
 ; Function Attrs: nounwind

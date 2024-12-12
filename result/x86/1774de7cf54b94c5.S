@@ -16,7 +16,7 @@ func0000000000000002:                   # @func0000000000000002
 	vcmpltsd	%xmm2, %xmm1, %k1
 	vmovsd	.LCPI1_0(%rip), %xmm1           # xmm1 = [2.0E+0,0.0E+0]
 	vmovsd	.LCPI1_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [-2.0E+0,0.0E+0]
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI2_0:
 	.quad	0x8000000000000000              # double -0

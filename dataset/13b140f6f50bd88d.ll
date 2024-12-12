@@ -26,7 +26,7 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
 ; g2o/optimized/edge_se2_twopointsxy.cpp.ll
@@ -34,6 +34,8 @@ entry:
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; g2o/optimized/edge_se3_plane_calib.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/CGUIListBox.cpp.ll
 ; nori/optimized/screen.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -53,9 +55,10 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; linux/optimized/drm_modes.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll

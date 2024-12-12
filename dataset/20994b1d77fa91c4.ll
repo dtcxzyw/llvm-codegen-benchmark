@@ -1,5 +1,5 @@
 
-; 86 occurrences:
+; 89 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
 ; casadi/optimized/cs_multiply.c.ll
 ; casadi/optimized/cs_qrsol.c.ll
@@ -37,6 +37,10 @@
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; luau/optimized/lvmutils.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; minetest/optimized/CGUIImageList.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/client.cpp.ll
@@ -84,7 +88,6 @@
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-tcap.c.ll
 ; wireshark/optimized/summary.c.ll
-; yosys/optimized/sim.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {
@@ -95,9 +98,10 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 23 occurrences:
 ; cpython/optimized/posixmodule.ll
 ; cpython/optimized/weakrefobject.ll
+; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; hdf5/optimized/H5system.c.ll
 ; lightgbm/optimized/gbdt.cpp.ll
 ; linux/optimized/ndisc.ll
@@ -108,6 +112,9 @@ entry:
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; openjdk/optimized/jfrCheckpointManager.ll
 ; openjdk/optimized/os_linux.ll
 ; openssl/optimized/openssl-bin-cms.ll

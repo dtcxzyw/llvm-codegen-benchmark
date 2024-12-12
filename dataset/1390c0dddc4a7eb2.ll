@@ -3,7 +3,7 @@
 ; git/optimized/xmerge.ll
 ; openjdk/optimized/subnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -16,7 +16,7 @@ entry:
 ; gromacs/optimized/gmx_disre.cpp.ll
 ; opencc/optimized/CommandLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc nsw i64 %3 to i32
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; jq/optimized/jv.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000746(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
@@ -49,7 +49,7 @@ entry:
 ; opencv/optimized/reshape_layer.cpp.ll
 ; yosys/optimized/blifparse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000326(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000646(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
@@ -80,7 +80,7 @@ entry:
 ; spike/optimized/vluxei64_v.ll
 ; spike/optimized/vluxei8_v.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000186(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -108,7 +108,7 @@ entry:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/IntervalPartition.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -121,7 +121,7 @@ entry:
 ; llvm/optimized/Instructions.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc nsw i64 %3 to i32
@@ -145,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
@@ -170,7 +170,7 @@ entry:
 ; luajit/optimized/lj_meta.ll
 ; luajit/optimized/lj_meta_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = trunc nuw nsw i64 %3 to i32
@@ -182,7 +182,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32

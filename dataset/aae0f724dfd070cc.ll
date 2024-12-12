@@ -23,6 +23,18 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; Function Attrs: nounwind
+define double @func0000000000000004(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fmul double %1, %2
+  %4 = fcmp ogt double %0, 9.000000e+01
+  %5 = select i1 %4, double 9.000000e+01, double %3
+  ret double %5
+}
+
+; 2 occurrences:
 ; ocio/optimized/GammaOpData.cpp.ll
 ; openusd/optimized/simplify.cpp.ll
 ; Function Attrs: nounwind

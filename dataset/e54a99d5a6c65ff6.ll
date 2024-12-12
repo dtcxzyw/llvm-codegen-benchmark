@@ -3,11 +3,11 @@
 ; abc/optimized/FxchSCHashTable.c.ll
 ; qemu/optimized/hw_audio_es1370.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 16
   %2 = and i32 %0, 65535
-  %3 = icmp ult i32 %2, %1
+  %3 = icmp samesign ult i32 %2, %1
   ret i1 %3
 }
 
@@ -32,11 +32,11 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 4
   %2 = and i32 %0, 15
-  %3 = icmp ugt i32 %2, %1
+  %3 = icmp samesign ugt i32 %2, %1
   ret i1 %3
 }
 

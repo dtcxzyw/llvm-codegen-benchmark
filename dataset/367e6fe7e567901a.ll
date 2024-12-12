@@ -1,8 +1,7 @@
 
-; 67 occurrences:
+; 66 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; folly/optimized/CacheLocality.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll
 ; llvm/optimized/AArch64PBQPRegAlloc.cpp.ll
 ; llvm/optimized/AArch64StackTaggingPreRA.cpp.ll
@@ -71,9 +70,9 @@
 define i32 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 21
-  %4 = xor i64 %3, %1
+  %4 = xor i64 %1, %3
   %5 = mul i64 %4, 65
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }

@@ -1,4 +1,4 @@
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	testb	%dil, %dil
 	setne	%al
 	cmpb	$46, %dil

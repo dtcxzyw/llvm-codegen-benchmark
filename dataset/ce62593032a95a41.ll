@@ -114,7 +114,7 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -126,6 +126,7 @@ entry:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
 ; spike/optimized/debug_module.ll
+; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i8 %0, i64 %1) #0 {
 entry:
@@ -135,11 +136,12 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cmake/optimized/nghttp2_hd.c.ll
 ; libquic/optimized/hpack_input_stream.cc.ll
 ; nghttp2/optimized/nghttp2_hd.c.ll
 ; snappy/optimized/snappy.cc.ll
+; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i8 %0, i64 %1) #0 {
 entry:
@@ -149,32 +151,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; llama.cpp/optimized/ggml-quants.c.ll
-; stockfish/optimized/evaluate_nnue.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i8 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = zext nneg i8 %0 to i32
-  %4 = shl nuw nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 2 occurrences:
-; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
-; stockfish/optimized/evaluate_nnue.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i8 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = zext nneg i8 %0 to i32
-  %4 = shl i32 %3, %2
-  ret i32 %4
-}
-
-; 11 occurrences:
-; abseil-cpp/optimized/hash.cc.ll
+; 10 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -221,6 +198,17 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i8 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = zext nneg i8 %0 to i32
+  %4 = shl i32 %3, %2
+  ret i32 %4
+}
+
 ; 3 occurrences:
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
@@ -231,6 +219,17 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = zext nneg i8 %0 to i32
   %4 = shl nuw i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; llama.cpp/optimized/ggml-quants.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i8 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = zext nneg i8 %0 to i32
+  %4 = shl nuw nsw i32 %3, %2
   ret i32 %4
 }
 

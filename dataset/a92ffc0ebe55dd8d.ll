@@ -1,11 +1,13 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; freetype/optimized/truetype.c.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; hyperscan/optimized/smallwrite_build.cpp.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
+; lvgl/optimized/lv_obj_class.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; postgres/optimized/nbtsort.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsquery_gist.ll

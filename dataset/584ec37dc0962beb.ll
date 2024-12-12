@@ -1,7 +1,6 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; flac/optimized/options.c.ll
-; linux/optimized/uthex.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
 ; mold/optimized/cmdline.cc.ARM32.cc.ll
 ; mold/optimized/cmdline.cc.ARM64.cc.ll

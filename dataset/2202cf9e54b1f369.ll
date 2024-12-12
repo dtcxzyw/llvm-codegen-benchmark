@@ -1,7 +1,57 @@
 
-%struct.pgd_t.3341222 = type { i64 }
+%struct.pgd_t.3530390 = type { i64 }
 
-; 147 occurrences:
+; 39 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; folly/optimized/String.cpp.ll
+; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/database.c.ll
+; hyperscan/optimized/runtime.c.ll
+; libpng/optimized/pngrutil.c.ll
+; libwebp/optimized/vp8l_dec.c.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openexr/optimized/internal_dwa.c.ll
+; openjdk/optimized/jfrEventClassTransformer.ll
+; openjdk/optimized/pngrutil.ll
+; openusd/optimized/openexr-c.c.ll
+; ring-rs/optimized/4prppzcttbsz5zvc.ll
+; rocksdb/optimized/xxhash.cc.ll
+; z3/optimized/region.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = and i64 %3, 63
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
+; 137 occurrences:
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/cgnr_solver.cc.ll
@@ -69,7 +119,6 @@
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
-; folly/optimized/String.cpp.ll
 ; folly/optimized/UniqueInstance.cpp.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
@@ -95,13 +144,11 @@
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/database.c.ll
 ; hyperscan/optimized/gtest-all.cc.ll
 ; hyperscan/optimized/hwlm.c.ll
 ; hyperscan/optimized/lbr.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/runtime.c.ll
-; libpng/optimized/pngrutil.c.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -120,14 +167,10 @@
 ; nori/optimized/warptest.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
-; openexr/optimized/ImfDwaCompressor.cpp.ll
-; openexr/optimized/internal_dwa.c.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
-; openjdk/optimized/jfrEventClassTransformer.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openjdk/optimized/mlib_ImageAffine_NN.ll
 ; openjdk/optimized/nmethod.ll
-; openjdk/optimized/pngrutil.ll
 ; openjdk/optimized/relocator.ll
 ; openjdk/optimized/rewriter.ll
 ; openjdk/optimized/vmError.ll
@@ -137,11 +180,8 @@
 ; openmpi/optimized/mpl_trmem.ll
 ; openmpi/optimized/opal_datatype_pack.ll
 ; openmpi/optimized/opal_datatype_unpack.ll
-; openusd/optimized/openexr-c.c.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_shared_alloc.ll
-; ring-rs/optimized/4prppzcttbsz5zvc.ll
-; rocksdb/optimized/xxhash.cc.ll
 ; rust-analyzer-rs/optimized/4xr6qa4j33qfqd4q.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
@@ -150,19 +190,17 @@
 ; xgboost/optimized/sparse_page_raw_format.cc.ll
 ; z3/optimized/region.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000041(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
-  %4 = and i64 %3, 63
+  %4 = and i64 %3, 7
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
 
-; 44 occurrences:
-; g2o/optimized/solver_pcg.cpp.ll
+; 42 occurrences:
 ; hyperscan/optimized/mpv.c.ll
-; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/filemap.ll
@@ -207,7 +245,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.pgd_t.3341222, ptr %0, i64 %1
+  %2 = getelementptr %struct.pgd_t.3530390, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 2048
   %5 = icmp eq i64 %4, 0

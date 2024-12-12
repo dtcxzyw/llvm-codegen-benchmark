@@ -1,19 +1,19 @@
 
-%"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2663469" = type { %"struct.std::atomic.2663202", %"struct.std::atomic.111.2663272" }
-%"struct.std::atomic.2663202" = type { %"struct.std::__atomic_base.2663215" }
-%"struct.std::__atomic_base.2663215" = type { i64 }
-%"struct.std::atomic.111.2663272" = type { %"struct.std::__atomic_base.112.2663273" }
-%"struct.std::__atomic_base.112.2663273" = type { ptr }
+%"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2776586" = type { %"struct.std::atomic.2776319", %"struct.std::atomic.111.2776389" }
+%"struct.std::atomic.2776319" = type { %"struct.std::__atomic_base.2776332" }
+%"struct.std::__atomic_base.2776332" = type { i64 }
+%"struct.std::atomic.111.2776389" = type { %"struct.std::__atomic_base.112.2776390" }
+%"struct.std::__atomic_base.112.2776390" = type { ptr }
 
 ; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; openjdk/optimized/ciStreams.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a0(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000f0(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = getelementptr i32, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
@@ -32,31 +32,30 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000fb(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
-  %4 = getelementptr i8, ptr %1, i64 40
-  %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2663469", ptr %5, i64 %0, i32 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 40
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2776586", ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; nuttx/optimized/mm_realloc.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967292
-  %4 = getelementptr nusw i8, ptr %1, i64 4
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 4
   ret ptr %7
 }
 
@@ -93,13 +92,39 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a8(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000f8(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
-  %4 = getelementptr nusw i8, ptr %1, i64 40
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 40
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 1
+  ret ptr %7
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000bf(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+; 1 occurrences:
+; nuttx/optimized/mm_realloc.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ab(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -4
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 

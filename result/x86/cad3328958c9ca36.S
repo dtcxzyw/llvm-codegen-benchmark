@@ -16,6 +16,18 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
+func0000000000000086:                   # @func0000000000000086
+	subq	%rdx, %rdi
+	movzwl	%si, %eax
+	cmpq	%rax, %rdi
+	setl	%al
+	retq
+func0000000000000084:                   # @func0000000000000084
+	subq	%rdx, %rdi
+	movzwl	%si, %eax
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	subq	%rdx, %rdi
 	movzwl	%si, %eax

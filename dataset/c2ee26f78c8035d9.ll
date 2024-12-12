@@ -20,7 +20,7 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nsw i64 %3, %1
@@ -33,7 +33,7 @@ entry:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; openspiel/optimized/combinatorics.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nsw i64 %3, %1
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/biasstate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000261(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = sub i64 %3, %1

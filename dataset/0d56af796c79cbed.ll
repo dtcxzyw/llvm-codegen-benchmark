@@ -10,7 +10,7 @@
 define i32 @func0000000000000045(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i32 %0, 4
-  %4 = or i1 %3, %2
+  %4 = or i1 %2, %3
   %5 = zext i1 %4 to i32
   %6 = add nsw i32 %0, %1
   %7 = add nsw i32 %6, %5

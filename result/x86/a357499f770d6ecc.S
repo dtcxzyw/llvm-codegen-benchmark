@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addl	$-11904, %edx                   # imm = 0xD180
 	cmpl	$30288, %edx                    # imm = 0x7650
 	setb	%al
@@ -19,7 +19,7 @@ func0000000000000010:                   # @func0000000000000010
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	cmpl	$42, %edx
 	setne	%al
 	andb	%sil, %al

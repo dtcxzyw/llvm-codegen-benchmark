@@ -29,16 +29,17 @@ entry:
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i64 @func000000000000003a(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 4, %1
+  %2 = sub nuw nsw i32 4, %1
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %0, %3
   %5 = add nuw i64 %4, 9
   ret i64 %5
 }
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

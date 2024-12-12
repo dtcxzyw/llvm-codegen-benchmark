@@ -1,4 +1,4 @@
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	sext.w	a2, a2
 	li	a3, 56
 	bltu	a3, a2, .LBB0_2
@@ -98,6 +98,13 @@ func0000000000000018:                   # @func0000000000000018
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
+func0000000000000050:                   # @func0000000000000050
+	sext.w	a2, a2
+	sltiu	a2, a2, 11
+	neg	a2, a2
+	and	a1, a1, a2
+	add	a0, a0, a1
+	ret
 func0000000000000013:                   # @func0000000000000013
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
@@ -109,6 +116,13 @@ func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a2
 	sltiu	a2, a2, 3
 	neg	a2, a2
+	and	a1, a1, a2
+	add	a0, a0, a1
+	ret
+func0000000000000060:                   # @func0000000000000060
+	sext.w	a2, a2
+	sltiu	a2, a2, 3
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret

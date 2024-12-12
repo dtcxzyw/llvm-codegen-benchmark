@@ -1,7 +1,7 @@
 func0000000000000014:                   # @func0000000000000014
 	movslq	%edx, %rax
 	imulq	%rsi, %rax
-	addq	$5, %rax
+	incq	%rax
 	imulq	%rdi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000

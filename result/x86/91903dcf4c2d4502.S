@@ -4,10 +4,16 @@ func0000000000000008:                   # @func0000000000000008
 	shlxq	%rsi, %rax, %rax
 	andq	%rdi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	bzhiq	%rdx, %rdi, %rcx
+func0000000000000007:                   # @func0000000000000007
+	bzhiq	%rdx, %rsi, %rcx
 	movl	$1, %eax
-	shlxq	%rsi, %rax, %rax
+	shlxq	%rdi, %rax, %rax
+	andq	%rcx, %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	bzhiq	%rdx, %rsi, %rcx
+	movl	$1, %eax
+	shlxq	%rdi, %rax, %rax
 	andq	%rcx, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005

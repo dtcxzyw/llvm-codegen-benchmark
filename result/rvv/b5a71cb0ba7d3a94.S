@@ -1,4 +1,4 @@
-func0000000000000161:                   # @func0000000000000161
+func00000000000002c1:                   # @func00000000000002c1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
@@ -10,7 +10,7 @@ func0000000000000161:                   # @func0000000000000161
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 838861
@@ -22,7 +22,7 @@ func0000000000000021:                   # @func0000000000000021
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000141:                   # @func0000000000000141
+func0000000000000281:                   # @func0000000000000281
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 838861
@@ -34,7 +34,7 @@ func0000000000000141:                   # @func0000000000000141
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000171:                   # @func0000000000000171
+func00000000000002e1:                   # @func00000000000002e1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
@@ -46,7 +46,7 @@ func0000000000000171:                   # @func0000000000000171
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000144:                   # @func0000000000000144
+func0000000000000284:                   # @func0000000000000284
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
@@ -69,16 +69,4 @@ func0000000000000001:                   # @func0000000000000001
 	vmulhu.vx	v10, v10, a0
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
-	ret
-.LCPI6_0:
-	.quad	-8737931403336103397            # 0x86bca1af286bca1b
-func0000000000000154:                   # @func0000000000000154
-	lui	a0, %hi(.LCPI6_0)
-	ld	a0, %lo(.LCPI6_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 4
-	vmul.vx	v10, v10, a0
-	vadd.vi	v8, v8, -1
-	vmsltu.vv	v0, v8, v10
 	ret

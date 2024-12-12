@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; git/optimized/merge-ort.ll
 ; gromacs/optimized/atoms.cpp.ll
@@ -8,7 +8,6 @@
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; linux/optimized/e100.ll
-; linux/optimized/evhandler.ll
 ; linux/optimized/fib_frontend.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
@@ -16,7 +15,6 @@
 ; linux/optimized/sta_info.ll
 ; linux/optimized/virtio_scsi.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; minetest/optimized/connectionthreads.cpp.ll
 ; openusd/optimized/decodemv.c.ll
@@ -26,6 +24,7 @@
 ; wireshark/optimized/packet-isobus-vt.c.ll
 ; wireshark/optimized/packet-oampdu.c.ll
 ; wireshark/optimized/packet-zbee-zcl-general.c.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i8 %0) #0 {
 entry:
@@ -35,13 +34,12 @@ entry:
   ret i32 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/cls_api.ll
 ; linux/optimized/libahci.ll
 ; llvm/optimized/ODRHash.cpp.ll
-; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -62,9 +60,9 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dof.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0) #0 {
+define i32 @func0000000000000031(i8 %0) #0 {
 entry:
-  %1 = icmp ugt i8 %0, 2
+  %1 = icmp samesign ugt i8 %0, 2
   %2 = select i1 %1, i8 4, i8 %0
   %3 = zext nneg i8 %2 to i32
   ret i32 %3

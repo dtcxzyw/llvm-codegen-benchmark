@@ -2,13 +2,13 @@
 ; 4 occurrences:
 ; llvm/optimized/Format.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
-; llvm/optimized/TokenLexer.cpp.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000089(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   %5 = icmp uge i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -194,10 +194,10 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000017a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   %5 = icmp sgt i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -209,10 +209,10 @@ entry:
 ; rust-analyzer-rs/optimized/ri7xfiosbc1bsgh.ll
 ; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %0
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp ule i32 %1, %3
   %5 = icmp ule i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -227,10 +227,10 @@ entry:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; z3/optimized/theory_dense_diff_logic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000085(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %0
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = icmp ule i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -242,10 +242,10 @@ entry:
 ; slurm/optimized/reverse_tree.ll
 ; wireshark/optimized/reassemble.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   %5 = icmp sgt i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -254,10 +254,10 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000eb(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %1
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   %5 = icmp sge i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -266,10 +266,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000cb(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   %5 = icmp sge i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -278,11 +278,23 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004cb(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   %5 = icmp sge i32 %0, %1
+  %6 = and i1 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/TokenLexer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000099(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = icmp ult i32 %0, %3
+  %5 = icmp samesign uge i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
 }
@@ -290,10 +302,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/extents_status.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %1
-  %4 = icmp uge i32 %3, %0
+  %4 = icmp ule i32 %0, %3
   %5 = icmp uge i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -302,10 +314,10 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/sat_parallel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %0, %2
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = icmp ult i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6

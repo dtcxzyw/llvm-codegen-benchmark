@@ -22,9 +22,3 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$52, %eax
 	cmoval	%ecx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	xorl	%eax, %eax
-	cmpq	%rsi, %rdi
-	setae	%al
-	addl	%eax, %eax
-	retq

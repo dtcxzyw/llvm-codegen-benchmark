@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 52 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -39,8 +39,6 @@
 ; openjdk/optimized/cpCache.ll
 ; openjdk/optimized/jchuff.ll
 ; openjdk/optimized/zip_util.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
 ; openusd/optimized/subset.cpp.ll
 ; php/optimized/phpdbg_io.ll
 ; postgres/optimized/pg_locale.ll
@@ -63,7 +61,7 @@ entry:
   ret i1 %5
 }
 
-; 42 occurrences:
+; 48 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
@@ -90,6 +88,7 @@ entry:
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
+; lvgl/optimized/lv_obj.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; nix/optimized/progress-bar.ll
 ; openjdk/optimized/p11_keymgmt.ll
@@ -101,11 +100,16 @@ entry:
 ; php/optimized/ascmagic.ll
 ; php/optimized/fastcgi.ll
 ; php/optimized/ir_perf.ll
+; qemu/optimized/tcg.c.ll
 ; redis/optimized/defrag.ll
 ; rocksdb/optimized/version_builder.cc.ll
 ; ruby/optimized/range.ll
+; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; spike/optimized/s_mulAddF128.ll
 ; velox/optimized/MemoryPool.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -128,9 +132,8 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cmake/optimized/urlapi.c.ll
-; curl/optimized/libcurl_la-cleartext.ll
 ; curl/optimized/libcurl_la-urlapi.ll
 ; git/optimized/archive-zip.ll
 ; git/optimized/pretty.ll
@@ -165,13 +168,12 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cpython/optimized/fileio.ll
 ; cpython/optimized/mmapmodule.ll
 ; freetype/optimized/ftbase.c.ll
 ; hwloc/optimized/topology-linux.ll
 ; libevent/optimized/buffer.c.ll
-; linux/optimized/build_policy.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll

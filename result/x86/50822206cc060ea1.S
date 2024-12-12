@@ -12,7 +12,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	notb	%dl
 	andb	%dil, %dl
 	testq	%rsi, %rsi

@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpw	%di, %ax
 	sete	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	leal	11(%rdx,%rsi), %eax
 	cmpw	%di, %ax
 	sete	%al

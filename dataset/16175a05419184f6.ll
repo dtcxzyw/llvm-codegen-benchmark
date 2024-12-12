@@ -149,7 +149,6 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/collationweights.ll
 ; icu/optimized/edits.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/propsvec.ll
 ; libjpeg-turbo/optimized/jdmainct.c.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -163,6 +162,7 @@ entry:
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -278,16 +278,6 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %0, %1
   %3 = add nuw i32 %2, 7
-  ret i32 %3
-}
-
-; 1 occurrences:
-; postgres/optimized/refint.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sdiv i32 %0, %1
-  %3 = add nuw nsw i32 %2, 1
   ret i32 %3
 }
 

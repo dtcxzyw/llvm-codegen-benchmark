@@ -1,14 +1,16 @@
 
-%"class.std::unique_ptr.56.2897937" = type { %"struct.std::__uniq_ptr_data.57.2897938" }
-%"struct.std::__uniq_ptr_data.57.2897938" = type { %"class.std::__uniq_ptr_impl.58.2897939" }
-%"class.std::__uniq_ptr_impl.58.2897939" = type { %"class.std::tuple.59.2897940" }
-%"class.std::tuple.59.2897940" = type { %"struct.std::_Tuple_impl.60.2897941" }
-%"struct.std::_Tuple_impl.60.2897941" = type { %"struct.std::_Head_base.63.2897942" }
-%"struct.std::_Head_base.63.2897942" = type { ptr }
-%"struct.pxrInternal_v0_24__pxrReserved__::TsValueSample.3236880" = type { i8, double, double, %"class.pxrInternal_v0_24__pxrReserved__::VtValue.3236866", %"class.pxrInternal_v0_24__pxrReserved__::VtValue.3236866" }
-%"class.pxrInternal_v0_24__pxrReserved__::VtValue.3236866" = type { %"union.std::aligned_storage<8, 8>::type.3236867", %"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3236868" }
-%"union.std::aligned_storage<8, 8>::type.3236867" = type { [8 x i8] }
-%"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3236868" = type { ptr }
+%"class.std::unique_ptr.56.3092400" = type { %"struct.std::__uniq_ptr_data.57.3092401" }
+%"struct.std::__uniq_ptr_data.57.3092401" = type { %"class.std::__uniq_ptr_impl.58.3092402" }
+%"class.std::__uniq_ptr_impl.58.3092402" = type { %"class.std::tuple.59.3092403" }
+%"class.std::tuple.59.3092403" = type { %"struct.std::_Tuple_impl.60.3092404" }
+%"struct.std::_Tuple_impl.60.3092404" = type { %"struct.std::_Head_base.63.3092405" }
+%"struct.std::_Head_base.63.3092405" = type { ptr }
+%"struct.Yosys::RTLIL::SigBit.3115142" = type <{ ptr, %union.anon.538.3115143, [4 x i8] }>
+%union.anon.538.3115143 = type { i32 }
+%"struct.pxrInternal_v0_24__pxrReserved__::TsValueSample.3428361" = type { i8, double, double, %"class.pxrInternal_v0_24__pxrReserved__::VtValue.3428347", %"class.pxrInternal_v0_24__pxrReserved__::VtValue.3428347" }
+%"class.pxrInternal_v0_24__pxrReserved__::VtValue.3428347" = type { %"union.std::aligned_storage<8, 8>::type.3428348", %"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3428349" }
+%"union.std::aligned_storage<8, 8>::type.3428348" = type { [8 x i8] }
+%"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3428349" = type { ptr }
 
 ; 25 occurrences:
 ; quantlib/optimized/fdm2dblackscholesop.ll
@@ -37,7 +39,7 @@
 ; quantlib/optimized/sparseilupreconditioner.ll
 ; quantlib/optimized/triplebandlinearop.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i64, ptr %1, i64 %2
   %4 = icmp eq ptr %3, %0
@@ -47,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/kahalesmilesection.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000561(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr double, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
@@ -55,31 +57,27 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 8 occurrences:
 ; oiio/optimized/thread.cpp.ll
 ; openblas/optimized/dlaswp_minus.c.ll
 ; openblas/optimized/dlaswp_ncopy.c.ll
 ; openblas/optimized/dlaswp_plus.c.ll
-; opencv/optimized/bagofwords_classification.cpp.ll
-; tev/optimized/ImageViewer.cpp.ll
 ; yosys/optimized/connwrappers.ll
 ; yosys/optimized/ice40_wrapcarry.ll
 ; yosys/optimized/recover_names.ll
-; yosys/optimized/rtlil.ll
 ; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000361(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::unique_ptr.56.2897937", ptr %1, i64 %2
+  %3 = getelementptr %"class.std::unique_ptr.56.3092400", ptr %1, i64 %2
   %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
-; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000168(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 259
@@ -87,24 +85,24 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; lz4/optimized/lz4.c.ll
-; openusd/optimized/lz4.cpp.ll
+; 3 occurrences:
+; opencv/optimized/bagofwords_classification.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a8(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 6
-  %5 = icmp ugt ptr %4, %0
-  ret i1 %5
+  %3 = getelementptr %"struct.Yosys::RTLIL::SigBit.3115142", ptr %1, i64 %2
+  %4 = icmp eq ptr %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
 ; openusd/optimized/evalUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000201(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.pxrInternal_v0_24__pxrReserved__::TsValueSample.3236880", ptr %1, i64 %2, i32 3
+  %3 = getelementptr %"struct.pxrInternal_v0_24__pxrReserved__::TsValueSample.3428361", ptr %1, i64 %2, i32 3
   %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
@@ -112,11 +110,23 @@ entry:
 ; 1 occurrences:
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000328(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000668(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
   %5 = icmp ugt ptr %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; Function Attrs: nounwind
+define i1 @func000000000000016c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -126,7 +136,7 @@ entry:
 ; opencv/optimized/harris_lapace_detector.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i64, ptr %1, i64 %2
   %4 = icmp eq ptr %3, %0

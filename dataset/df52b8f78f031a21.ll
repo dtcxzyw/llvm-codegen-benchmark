@@ -5,7 +5,7 @@
 ; ruby/optimized/signal.ll
 ; z3/optimized/polynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 0
@@ -19,24 +19,12 @@ entry:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; slurm/optimized/burst_buffer_common.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 0
   %4 = icmp ult i32 %0, 258
   %5 = and i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openjdk/optimized/vm_version_x86.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = icmp ult i32 %2, 24
-  %4 = icmp eq i32 %0, 1752462657
-  %5 = and i1 %4, %3
   ret i1 %5
 }
 
@@ -51,7 +39,7 @@ entry:
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 15
@@ -63,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; c3c/optimized/sema_stmts.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ugt i32 %2, 3
@@ -86,7 +74,7 @@ entry:
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; openmpi/optimized/pml_ob1_rdma.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp sgt i32 %2, 0
@@ -98,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_study.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ugt i32 %2, 127
@@ -107,11 +95,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 1 occurrences:
 ; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, 256
@@ -124,7 +111,7 @@ entry:
 ; icu/optimized/gregocal.ll
 ; quantlib/optimized/thirty360.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp sgt i32 %2, 29
@@ -133,12 +120,24 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; abc/optimized/amapPerm.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000148(i32 %0, i32 %1) #0 {
+entry:
+  %2 = freeze i32 %1
+  %3 = icmp sgt i32 %2, 0
+  %4 = icmp ugt i32 %0, 16777215
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; libwebp/optimized/pnmdec.c.ll
 ; llvm/optimized/AMDGPU.cpp.ll
 ; llvm/optimized/StackFrameLayoutAnalysisPass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 2
@@ -150,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Scalarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ugt i32 %2, 1
@@ -162,7 +161,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/mvref_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, 32
@@ -172,21 +171,9 @@ entry:
 }
 
 ; 1 occurrences:
-; openusd/optimized/stbImage.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = icmp sgt i32 %2, 0
-  %4 = icmp ugt i32 %0, 3
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; wireshark/optimized/observer.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 0
@@ -198,7 +185,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hda_auto_parser.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, 1073741824
@@ -210,7 +197,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/brin.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 0
@@ -222,7 +209,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp sgt i32 %2, 0
@@ -234,7 +221,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ugt i32 %2, 1
@@ -246,7 +233,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/pnmdec.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp sgt i32 %2, 2

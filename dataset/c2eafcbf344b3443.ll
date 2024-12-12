@@ -24,7 +24,7 @@
 define i8 @func0000000000000000(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
@@ -36,7 +36,7 @@ entry:
 define i8 @func0000000000000004(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nsw i16 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
@@ -60,11 +60,12 @@ entry:
 define i8 @func0000000000000008(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw i16 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/test_fstream.ll
 ; softposit-rs/optimized/3yl6353p3hwrtv6y.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
@@ -73,7 +74,7 @@ entry:
 define i8 @func000000000000000f(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw nsw i16 %1 to i8
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -84,7 +85,7 @@ entry:
 define i8 @func000000000000000c(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw nsw i16 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
@@ -95,7 +96,7 @@ entry:
 define i8 @func000000000000000e(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw nsw i16 %1 to i8
-  %3 = add nuw i8 %2, %0
+  %3 = add nuw i8 %0, %2
   ret i8 %3
 }
 
@@ -105,7 +106,7 @@ entry:
 define i8 @func0000000000000005(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nsw i16 %1 to i8
-  %3 = add nsw i8 %2, %0
+  %3 = add nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -115,7 +116,7 @@ entry:
 define i8 @func0000000000000009(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw i16 %1 to i8
-  %3 = add nsw i8 %2, %0
+  %3 = add nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -125,7 +126,7 @@ entry:
 define i8 @func000000000000000a(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw i16 %1 to i8
-  %3 = add nuw i8 %2, %0
+  %3 = add nuw i8 %0, %2
   ret i8 %3
 }
 

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; vcpkg/optimized/commands.integrate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000044c(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000108c(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -26
   %4 = icmp ult i32 %1, -10
@@ -16,7 +16,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc4(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000003184(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 12
   %4 = icmp ne i32 %1, 240

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -16,13 +16,13 @@ entry:
 ; gromacs/optimized/runner.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000012a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
   %5 = mul nsw i32 %4, %3
   %6 = icmp sgt i32 %5, 1
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 

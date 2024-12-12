@@ -1,11 +1,10 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/io-wq.ll
 ; linux/optimized/message.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/pt.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/sta_info.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/tx.ll
@@ -39,7 +38,7 @@ entry:
   ret ptr %5
 }
 
-; 115 occurrences:
+; 114 occurrences:
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/amapMatch.c.ll
@@ -113,7 +112,6 @@ entry:
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; mitsuba3/optimized/compiler.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
@@ -156,12 +154,12 @@ entry:
 ; z3/optimized/array_solver.cpp.ll
 ; z3/optimized/nnf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [64 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [64 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

@@ -1,13 +1,12 @@
-func0000000000000004:                   # @func0000000000000004
-	cmpq	%rsi, %rdi
-	movl	$32, %ecx
-	movl	$94, %eax
-	cmovbl	%ecx, %eax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	cmpq	%rsi, %rdi
 	sete	%al
 	addb	%al, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	adcb	$1, %al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	cmpq	%rsi, %rdi

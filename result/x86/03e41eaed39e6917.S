@@ -5,6 +5,6 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	movl	$2, %ecx
 	cmovneq	%rax, %rcx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	sete	%al
 	retq

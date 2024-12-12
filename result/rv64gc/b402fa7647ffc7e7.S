@@ -1,9 +1,8 @@
 func0000000000000005:                   # @func0000000000000005
-	slli	a0, a0, 63
-	srai	a0, a0, 63
-	andi	a0, a0, 13
-	add	a0, a0, a1
-	addiw	a0, a0, -13
+	andi	a0, a0, 1
+	addi	a0, a0, -1
+	andi	a0, a0, -13
+	addw	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a0, a0, 63
@@ -20,24 +19,23 @@ func000000000000000f:                   # @func000000000000000f
 	addiw	a0, a0, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
+	andi	a0, a0, 1
+	addi	a0, a0, -1
+	andi	a0, a0, -7
+	addw	a0, a0, a1
+	ret
+func000000000000000d:                   # @func000000000000000d
 	slli	a0, a0, 63
 	srai	a0, a0, 63
-	andi	a0, a0, 7
+	andi	a0, a0, 305
 	add	a0, a0, a1
-	addiw	a0, a0, -7
+	addiw	a0, a0, 308
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
 	slli	a0, a0, 1
 	add	a0, a0, a1
 	addiw	a0, a0, 1
-	ret
-func000000000000000d:                   # @func000000000000000d
-	slli	a0, a0, 63
-	srai	a0, a0, 63
-	andi	a0, a0, -360
-	add	a0, a0, a1
-	addiw	a0, a0, 180
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a0, a0, 63

@@ -39,7 +39,7 @@ entry:
 define i16 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   %6 = trunc nuw nsw i32 %5 to i16
   ret i16 %6
@@ -51,8 +51,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, %1
-  %4 = add i32 %3, %0
+  %3 = add i32 %1, %2
+  %4 = add i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }
@@ -63,7 +63,7 @@ entry:
 define i16 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }

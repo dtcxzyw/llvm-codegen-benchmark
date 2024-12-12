@@ -1,9 +1,11 @@
 
-; 54 occurrences:
+; 56 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
 ; abseil-cpp/optimized/reflection.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/cmArgumentParser.cxx.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cmake/optimized/cmList.cxx.ll
@@ -55,7 +57,7 @@
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = icmp slt i32 %1, 0
@@ -69,7 +71,7 @@ entry:
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = icmp sgt i32 %1, 0
@@ -78,10 +80,11 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; libquic/optimized/modp_b64.cc.ll
+; openusd/optimized/evalUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = icmp eq i32 %1, 0
@@ -94,7 +97,7 @@ entry:
 ; oiio/optimized/exif.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = icmp slt i32 %1, 0
@@ -108,7 +111,7 @@ entry:
 ; llvm/optimized/DeclCXX.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = icmp eq i32 %1, 0

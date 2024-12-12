@@ -1,20 +1,16 @@
 func000000000000002b:                   // @func000000000000002b
 // %bb.0:                               // %entry
-	sli	v1.4h, v0.4h, #8
-	mov	w8, #32                         // =0x20
-	dup	v2.2d, x8
-	ushll	v0.4s, v1.4h, #0
-	uaddw2	v1.2d, v2.2d, v0.4s
-	uaddw	v0.2d, v2.2d, v0.2s
+                                        // kill: def $w1 killed $w1 def $x1
+	bfi	w1, w0, #8, #24
+	and	x8, x1, #0xffff
+	add	x0, x8, #32
 	ret
                                         // -- End function
 func0000000000000029:                   // @func0000000000000029
 // %bb.0:                               // %entry
-	sli	v1.4h, v0.4h, #8
-	mov	x8, #-5                         // =0xfffffffffffffffb
-	dup	v2.2d, x8
-	ushll	v0.4s, v1.4h, #0
-	uaddw2	v1.2d, v2.2d, v0.4s
-	uaddw	v0.2d, v2.2d, v0.2s
+                                        // kill: def $w1 killed $w1 def $x1
+	bfi	w1, w0, #8, #24
+	and	x8, x1, #0xffff
+	sub	x0, x8, #5
 	ret
                                         // -- End function

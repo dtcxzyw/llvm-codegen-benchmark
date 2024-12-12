@@ -11,7 +11,8 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; qoi/optimized/qoi.ll

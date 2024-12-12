@@ -56,6 +56,20 @@ entry:
   ret i64 %5
 }
 
+; 3 occurrences:
+; boost/optimized/src.ll
+; freetype/optimized/cff.c.ll
+; icu/optimized/collationfastlatin.ll
+; Function Attrs: nounwind
+define i64 @func000000000000006f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 10
+  %3 = add nsw i32 %2, -56613888
+  %4 = add nuw nsw i32 %3, %0
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; linux/optimized/ah6.ll
 ; Function Attrs: nounwind
@@ -65,19 +79,6 @@ entry:
   %3 = add nuw nsw i32 %2, 8
   %4 = add nsw i32 %3, %0
   %5 = zext i32 %4 to i64
-  ret i64 %5
-}
-
-; 2 occurrences:
-; freetype/optimized/cff.c.ll
-; icu/optimized/collationfastlatin.ll
-; Function Attrs: nounwind
-define i64 @func000000000000006f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 6
-  %3 = add nsw i32 %2, -12416
-  %4 = add nuw nsw i32 %3, %0
-  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
@@ -124,7 +125,7 @@ define i64 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, 12
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

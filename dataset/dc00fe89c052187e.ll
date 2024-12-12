@@ -1,9 +1,9 @@
 
-%"struct.std::array.25.2587845" = type { [3 x %"struct.irr::video::S3DVertex.2587841"] }
-%"struct.irr::video::S3DVertex.2587841" = type { %"class.irr::core::vector3d.2587842", %"class.irr::core::vector3d.2587842", %"class.irr::video::SColor.2587843", %"class.irr::core::vector2d.2587844" }
-%"class.irr::core::vector3d.2587842" = type { float, float, float }
-%"class.irr::video::SColor.2587843" = type { i32 }
-%"class.irr::core::vector2d.2587844" = type { float, float }
+%"struct.std::array.25.2701729" = type { [3 x %"struct.irr::video::S3DVertex.2701725"] }
+%"struct.irr::video::S3DVertex.2701725" = type { %"class.irr::core::vector3d.2701726", %"class.irr::core::vector3d.2701726", %"class.irr::video::SColor.2701727", %"class.irr::core::vector2d.2701728" }
+%"class.irr::core::vector3d.2701726" = type { float, float, float }
+%"class.irr::video::SColor.2701727" = type { i32 }
+%"class.irr::core::vector2d.2701728" = type { float, float }
 
 ; 10 occurrences:
 ; gromacs/optimized/convertGmxToNblib.cpp.ll
@@ -66,7 +66,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = sdiv i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.std::array.25.2587845", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.std::array.25.2701729", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -82,9 +82,10 @@ entry:
   ret ptr %5
 }
 
-; 168 occurrences:
+; 166 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; arrow/optimized/align_util.cc.ll
+; boost/optimized/topology.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
@@ -181,13 +182,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll

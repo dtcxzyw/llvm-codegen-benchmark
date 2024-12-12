@@ -1,10 +1,8 @@
 
-; 21 occurrences:
+; 19 occurrences:
 ; icu/optimized/collationbuilder.ll
 ; libquic/optimized/ssl_cipher.c.ll
 ; linux/optimized/i915_gem_context.ll
-; linux/optimized/i915_gem_gtt.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/processor_idle.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/traps.ll

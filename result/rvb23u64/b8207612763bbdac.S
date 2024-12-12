@@ -15,7 +15,7 @@ func000000000000000c:                   # @func000000000000000c
 	not	a0, a0
 	ret
 func000000000000000d:                   # @func000000000000000d
-	andi	a0, a0, 63
+	andi	a0, a0, 56
 	negw	a0, a0
 	bset	a0, zero, a0
 	addi	a0, a0, -1

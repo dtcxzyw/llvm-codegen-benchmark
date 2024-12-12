@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 15 occurrences:
 ; libjpeg-turbo/optimized/jcmaster.c.ll
 ; linux/optimized/pnode.ll
 ; llvm/optimized/OMPContext.cpp.ll
@@ -9,9 +9,12 @@
 ; ncnn/optimized/deconvolutiondepthwise_x86_avx512.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise_x86_fma.cpp.ll
 ; openjdk/optimized/jcmaster.ll
+; openspiel/optimized/2048.cc.ll
 ; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
 ; wasmtime-rs/optimized/377rrvl9zeztt32x.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -33,7 +36,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = icmp slt i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -66,7 +69,7 @@ define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = icmp sgt i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -77,7 +80,7 @@ define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = icmp uge i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

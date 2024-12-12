@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 34 occurrences:
 ; bullet3/optimized/btKinematicCharacterController.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -21,14 +21,8 @@
 ; meshlab/optimized/meshselect.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; mitsuba3/optimized/spot.cpp.ll
-; ncnn/optimized/yolov3detectionoutput.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imagebufalgo_yee.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll

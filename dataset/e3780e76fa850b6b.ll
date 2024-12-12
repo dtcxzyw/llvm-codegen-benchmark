@@ -11,9 +11,10 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; brotli/optimized/encode.c.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
+; icu/optimized/ucharstriebuilder.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; openjdk/optimized/awt_ImagingLib.ll
@@ -29,7 +30,7 @@ entry:
   ret i32 %3
 }
 
-; 217 occurrences:
+; 216 occurrences:
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
@@ -44,7 +45,6 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libquic/optimized/dtoa.cc.ll
 ; linux/optimized/hexdump.ll
-; linux/optimized/utbuffer.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll

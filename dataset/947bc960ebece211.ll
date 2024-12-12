@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/covMinSop.c.ll
+; abc/optimized/dauDsd.c.ll
 ; openssl/optimized/libcrypto-lib-bn_gcd.ll
 ; openssl/optimized/libcrypto-shlib-bn_gcd.ll
 ; re2/optimized/dfa.cc.ll

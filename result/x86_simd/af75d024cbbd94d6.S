@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpsllw	$15, %xmm0, %xmm0
 	vptestmd	%ymm2, %ymm2, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -9,7 +9,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
@@ -18,7 +18,7 @@ func0000000000000011:                   # @func0000000000000011
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%xmm4, %xmm4, %xmm4
@@ -39,7 +39,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	.short	62                              # 0x3e
 	.short	62                              # 0x3e
 	.short	62                              # 0x3e
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpneqd	.LCPI3_0(%rip){1to8}, %ymm1, %k1
@@ -59,7 +59,7 @@ func000000000000001c:                   # @func000000000000001c
 	.short	18                              # 0x12
 	.short	18                              # 0x12
 	.short	18                              # 0x12
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
@@ -79,7 +79,7 @@ func0000000000000018:                   # @func0000000000000018
 	.short	120                             # 0x78
 .LCPI5_1:
 	.long	2                               # 0x2
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltuw	.LCPI5_0(%rip), %xmm1, %k1
@@ -89,52 +89,32 @@ func0000000000000014:                   # @func0000000000000014
 	vzeroupper
 	retq
 .LCPI6_0:
-	.long	1                               # 0x1
-.LCPI6_1:
-	.short	65363                           # 0xff53
-	.short	65363                           # 0xff53
-	.short	65363                           # 0xff53
-	.short	65363                           # 0xff53
-	.short	65363                           # 0xff53
-	.short	65363                           # 0xff53
-	.short	65363                           # 0xff53
-	.short	65363                           # 0xff53
-func0000000000000048:                   # @func0000000000000048
+	.long	2                               # 0x2
+func0000000000000188:                   # @func0000000000000188
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnleud	.LCPI6_0(%rip){1to8}, %ymm1, %k1
-	vpcmpltuw	.LCPI6_1(%rip), %xmm2, %k1 {%k1}
-	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI7_0:
-	.long	2                               # 0x2
-func00000000000000c8:                   # @func00000000000000c8
-	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
 	vptestmw	%xmm2, %xmm2, %k1 {%k1}
 	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI8_0:
-	.long	8                               # 0x8
-.LCPI8_1:
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-func0000000000000044:                   # @func0000000000000044
+.LCPI7_0:
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+.LCPI7_1:
+	.long	4096                            # 0x1000
+func0000000000000084:                   # @func0000000000000084
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpltud	.LCPI8_0(%rip){1to8}, %ymm1, %k1
-	vpcmpltuw	.LCPI8_1(%rip), %xmm2, %k1 {%k1}
+	vpcmpltuw	.LCPI7_0(%rip), %xmm1, %k1
+	vpcmpltud	.LCPI7_1(%rip){1to8}, %ymm2, %k1 {%k1}
 	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

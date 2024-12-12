@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
-; linux/optimized/probe_roms.ll
 ; openssl/optimized/asynciotest-bin-asynciotest.ll
 ; qemu/optimized/net_eth.c.ll
 ; quickjs/optimized/quickjs.ll

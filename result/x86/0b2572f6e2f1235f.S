@@ -1,6 +1,6 @@
 func0000000000000003:                   # @func0000000000000003
-	shll	$24, %edx
-	andl	$16711680, %esi                 # imm = 0xFF0000
+	shll	$16, %edx
+	andl	$65280, %esi                    # imm = 0xFF00
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	retq

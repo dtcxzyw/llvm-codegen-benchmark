@@ -13,7 +13,7 @@ func000000000000001c:                   # @func000000000000001c
 	vpmovqd	%ymm2, %xmm2
 	vpbroadcastd	.LCPI1_0(%rip), %xmm3   # xmm3 = [1,1,1,1]
 	vpsllvd	%xmm2, %xmm3, %xmm2
-	vpternlogd	$224, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 & (xmm2 | xmm1)
+	vpternlogd	$224, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 & (xmm1 | xmm2)
 	vzeroupper
 	retq
 .LCPI2_0:

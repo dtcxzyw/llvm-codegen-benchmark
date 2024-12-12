@@ -4,6 +4,12 @@ func0000000000000012:                   # @func0000000000000012
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	subl	%edi, %esi
+	shrl	$3, %esi
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	subl	%edi, %esi
 	shrl	$2, %esi

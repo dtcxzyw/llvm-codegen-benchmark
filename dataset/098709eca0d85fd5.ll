@@ -1,7 +1,9 @@
 
-; 74 occurrences:
+; 76 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/infback.c.ll
+; boost/optimized/options_description.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; flac/optimized/stream_decoder.c.ll
@@ -12,7 +14,6 @@
 ; graphviz/optimized/pack.c.ll
 ; gromacs/optimized/energyoutput.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/tamarama.c.ll
 ; icu/optimized/decNumber.ll
@@ -31,7 +32,6 @@
 ; llvm/optimized/HotColdSplitting.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/State.cpp.ll
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
@@ -39,12 +39,12 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_vmmath.ll
 ; luajit/optimized/lj_vmmath_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; openblas/optimized/dlarrv.c.ll
 ; opencv/optimized/geometry.cpp.ll
 ; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll
@@ -54,7 +54,6 @@
 ; openusd/optimized/restoration.c.ll
 ; php/optimized/pcre2_compile.ll
 ; postgres/optimized/namespace.ll
-; postgres/optimized/parse_func.ll
 ; postgres/optimized/rangetypes_typanalyze.ll
 ; proxygen/optimized/HeaderTable.cpp.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
@@ -71,6 +70,9 @@
 ; wireshark/optimized/packet-someip.c.ll
 ; wireshark/optimized/sctp_graph_dialog.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/0eh1fm3h72yjwo2ipis72ui0f.ll
+; zed-rs/optimized/adlc6qfcwjhvmcaovuwfkwg5s.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; zlib/optimized/infback.c.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
@@ -82,9 +84,10 @@ entry:
   ret i32 %4
 }
 
-; 75 occurrences:
+; 78 occurrences:
 ; abc/optimized/cuddSubsetSP.c.ll
 ; arrow/optimized/decimal.cc.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
@@ -94,8 +97,9 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/compile-test.cc.ll
 ; graphviz/optimized/memory.c.ll
-; graphviz/optimized/quad_prog_vpsc.c.ll
 ; gromacs/optimized/cstringutil.cpp.ll
 ; gromacs/optimized/gmx_lmcurve.cpp.ll
 ; gromacs/optimized/mshift.cpp.ll
@@ -118,11 +122,12 @@ entry:
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; lua/optimized/ldebug.ll
 ; luajit/optimized/buildvm.ll
-; minetest/optimized/cavegen.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_text.ll
 ; node/optimized/libnode.node_errors.ll
 ; oiio/optimized/imagecache.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencc/optimized/CommandLine.cpp.ll
 ; opencv/optimized/colormap.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll

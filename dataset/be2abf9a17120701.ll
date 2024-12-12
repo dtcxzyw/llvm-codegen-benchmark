@@ -15,7 +15,7 @@
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 376
@@ -29,7 +29,7 @@ entry:
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 104
@@ -53,7 +53,7 @@ entry:
 ; opencv/optimized/matrix_wrap.cpp.ll
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 96

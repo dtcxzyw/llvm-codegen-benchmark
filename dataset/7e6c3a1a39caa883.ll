@@ -11,8 +11,9 @@ entry:
   ret i16 %2
 }
 
-; 23 occurrences:
+; 27 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
+; boost/optimized/rational.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; flac/optimized/decode.c.ll
 ; icu/optimized/number_rounding.ll
@@ -25,6 +26,7 @@ entry:
 ; linux/optimized/seq_clientmgr.ll
 ; linux/optimized/synaptics.ll
 ; llvm/optimized/GOFFObjectFile.cpp.ll
+; lvgl/optimized/lv_sdl_mousewheel.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/environment.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
@@ -35,6 +37,8 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0) #0 {
 entry:

@@ -24,7 +24,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI1_0:
 	.long	4294967292                      # 0xfffffffc
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	vpslld	$2, %ymm1, %ymm1
 	vptestmb	%xmm0, %xmm0, %k1
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm0 {%k1} {z}

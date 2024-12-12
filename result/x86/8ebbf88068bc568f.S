@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testb	%sil, %sil
 	setne	%cl
 	andb	%dl, %cl
@@ -6,7 +6,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	cmpb	$29, %dl
 	setae	%cl
 	andb	%dil, %cl

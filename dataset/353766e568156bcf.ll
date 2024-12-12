@@ -8,7 +8,7 @@
 ; llvm/optimized/DFAEmitter.cpp.ll
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000441(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000881(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -32
   %4 = add nsw i64 %3, %0
@@ -29,7 +29,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000044a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000088a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -32
   %4 = add nsw i64 %3, %0
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/bspline.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000508(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a08(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2
   %4 = add i64 %3, %0
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/bspline.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000501(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a01(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2
   %4 = add i64 %3, %0

@@ -26,19 +26,14 @@ func000000000000000c:                   # @func000000000000000c
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI3_0:
-	.long	20                              # 0x14
-.LCPI3_1:
-	.long	6                               # 0x6
-.LCPI3_2:
-	.long	3                               # 0x3
+	.long	2                               # 0x2
 func0000000000000004:                   # @func0000000000000004
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [20,20,20,20,20,20,20,20]
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vmovdqa32	%ymm2, %ymm1 {%k1}
-	vpcmpltud	.LCPI3_1(%rip){1to8}, %ymm0, %k1
-	vpbroadcastd	.LCPI3_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [3,3,3,3,3,3,3,3]
-	vmovdqa	%ymm1, %ymm0
+	vpcmpnltud	.LCPI3_0(%rip){1to8}, %ymm0, %k1
+	vmovdqa32	%ymm1, %ymm0 {%k1} {z}
 	retq
 .LCPI4_0:
 	.long	26                              # 0x1a

@@ -1,8 +1,8 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leal	1(%rsi,%rsi,2), %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	leal	(%rsi,%rsi,2), %eax
 	leaq	4(%rdi,%rax,4), %rax
 	retq
@@ -11,29 +11,32 @@ func000000000000002c:                   # @func000000000000002c
 	cltq
 	leaq	3808(%rdi,%rax), %rax
 	retq
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	addl	%esi, %esi
 	leal	(%rsi,%rsi,2), %eax
-	cltq
 	leaq	12(%rdi,%rax,4), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	leal	-3(%rsi,%rsi,2), %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000052:                   # @func0000000000000052
+func0000000000000053:                   # @func0000000000000053
 	leal	(%rsi,%rsi,2), %eax
 	leaq	16(%rdi,%rax,8), %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000006b:                   # @func000000000000006b
 	leal	-3(%rsi,%rsi,2), %eax
+	addq	%rdi, %rax
+	retq
+func0000000000000068:                   # @func0000000000000068
+	leal	(%rsi,%rsi,2), %eax
+	leal	-6144(,%rax,4), %eax
 	addq	%rdi, %rax
 	retq
 func000000000000007c:                   # @func000000000000007c
 	shll	$3, %esi
 	leal	(%rsi,%rsi,2), %eax
-	cltq
-	leaq	24(%rdi,%rax), %rax
+	leaq	16(%rdi,%rax), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	1(%rsi,%rsi,2), %eax

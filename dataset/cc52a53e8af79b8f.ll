@@ -1,5 +1,5 @@
 
-; 227 occurrences:
+; 240 occurrences:
 ; abc/optimized/extraBddSymm.c.ll
 ; abseil-cpp/optimized/algorithm_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -11,6 +11,16 @@
 ; abseil-cpp/optimized/span_test.cc.ll
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; abseil-cpp/optimized/thread_identity_test.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/environment.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/pid.ll
+; boost/optimized/range.ll
+; boost/optimized/topology.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
@@ -55,18 +65,17 @@
 ; gromacs/optimized/readpull.cpp.ll
 ; hdf5/optimized/H5E.c.ll
 ; hdf5/optimized/H5Edeprec.c.ll
-; hdf5/optimized/H5VLnative_file.c.ll
 ; hyperscan/optimized/ng_literal_decorated.cpp.ll
 ; hyperscan/optimized/ng_small_literal_set.cpp.ll
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
 ; icu/optimized/normalizer2.ll
-; icu/optimized/uregion.ll
 ; libphonenumber/optimized/phonenumberutil_test.cc.ll
 ; libphonenumber/optimized/regexp_cache_test.cc.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/tree.ll
+; linux/optimized/xhci-ring.ll
 ; llama.cpp/optimized/common.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/ASTMatchersInternal.cpp.ll
@@ -75,6 +84,8 @@
 ; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/LoopSimplifyCFG.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
+; llvm/optimized/PassBuilder.cpp.ll
+; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -138,7 +149,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -227,6 +237,9 @@
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; z3/optimized/nlsat_solver.cpp.ll
 ; z3/optimized/opt_context.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(ptr %0, ptr %1) #0 {
 entry:
@@ -251,7 +264,7 @@ entry:
   ret i8 %3
 }
 
-; 407 occurrences:
+; 418 occurrences:
 ; abc/optimized/dsdProc.c.ll
 ; abseil-cpp/optimized/algorithm_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -259,6 +272,15 @@ entry:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/span_test.cc.ll
 ; abseil-cpp/optimized/string_view_test.cc.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/ext.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/pid.ll
+; boost/optimized/port_rule.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmCTestSubmitHandler.cxx.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cmake/optimized/cmNinjaTargetGenerator.cxx.ll
@@ -514,7 +536,6 @@ entry:
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -557,7 +578,6 @@ entry:
 ; openusd/optimized/reporter.cpp.ll
 ; openusd/optimized/variableExpressionImpl.cpp.ll
 ; ozz-animation/optimized/log.cc.ll
-; proj/optimized/factory.cpp.ll
 ; protobuf/optimized/field.cc.ll
 ; protobuf/optimized/parser.cc.ll
 ; protobuf/optimized/unparser.cc.ll
@@ -659,6 +679,10 @@ entry:
 ; z3/optimized/proof_utils.cpp.ll
 ; z3/optimized/spacer_proof_utils.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(ptr %0, ptr %1) #0 {
 entry:

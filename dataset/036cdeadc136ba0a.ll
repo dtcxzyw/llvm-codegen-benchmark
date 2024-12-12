@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll

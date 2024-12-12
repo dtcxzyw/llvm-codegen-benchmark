@@ -16,7 +16,7 @@
 	.short	3048                            # 0xbe8
 	.short	3048                            # 0xbe8
 	.short	3048                            # 0xbe8
-func0000000000003210:                   # @func0000000000003210
+func000000000000c410:                   # @func000000000000c410
 	vptestmd	%ymm2, %ymm2, %k0
 	vpcmpnleuw	.LCPI0_0(%rip), %xmm1, %k1
 	vpcmpnleuw	.LCPI0_1(%rip), %xmm0, %k2
@@ -36,7 +36,7 @@ func0000000000003210:                   # @func0000000000003210
 	.short	2112                            # 0x840
 	.short	2112                            # 0x840
 	.short	2112                            # 0x840
-func0000000000003310:                   # @func0000000000003310
+func000000000000c610:                   # @func000000000000c610
 	vptestmw	%xmm2, %xmm2, %k0
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	korb	%k0, %k1, %k0

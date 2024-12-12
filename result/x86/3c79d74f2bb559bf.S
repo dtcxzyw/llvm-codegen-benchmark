@@ -18,7 +18,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000007:                   # @func0000000000000007
 	leal	1(%rsi), %ecx
-	xorl	%eax, %eax
 	testb	$1, %dil
+	movl	$1, %eax
 	cmovneq	%rcx, %rax
 	retq

@@ -7,13 +7,13 @@
 ; opencv/optimized/perf_estimators.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1, float %2) #0 {
+define i1 @func00000000000000c4(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = bitcast float %2 to i32
   %4 = sub i32 0, %1
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, i32 %4, i32 %3
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp ult i32 %0, %6
   ret i1 %7
 }
 

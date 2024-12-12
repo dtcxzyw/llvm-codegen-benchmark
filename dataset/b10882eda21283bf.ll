@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; icu/optimized/regexcmp.ll
-; linux/optimized/i915_cmd_parser.ll
 ; llvm/optimized/ExprClassification.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFile.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll

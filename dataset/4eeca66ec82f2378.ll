@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; qemu/optimized/target_riscv_cpu_helper.c.ll
+; 1 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {

@@ -1,5 +1,5 @@
 
-; 151 occurrences:
+; 161 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/satSolver2.c.ll
@@ -75,7 +75,6 @@
 ; linux/optimized/tcp.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/vt.ll
-; linux/optimized/wep.ll
 ; linux/optimized/xhci-hub.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
@@ -87,7 +86,6 @@
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/PreprocessingRecord.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SHA1.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaLambda.cpp.ll
@@ -95,6 +93,13 @@
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_menu.ll
+; lvgl/optimized/lv_span.ll
 ; lz4/optimized/lz4frame.c.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/l_mapgen.cpp.ll
@@ -132,6 +137,8 @@
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; snappy/optimized/snappy.cc.ll
 ; spike/optimized/debug_module.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
@@ -150,6 +157,9 @@
 ; wolfssl/optimized/ssl.c.ll
 ; yoga/optimized/YGNode.cpp.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
@@ -159,7 +169,7 @@ entry:
   ret i8 %2
 }
 
-; 49 occurrences:
+; 50 occurrences:
 ; cpython/optimized/textio.ll
 ; git/optimized/refspec.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -168,7 +178,6 @@ entry:
 ; libwebp/optimized/image_enc.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/ssl_msg.c.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_sseu.ll
@@ -181,9 +190,9 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_ccallback.ll
 ; luajit/optimized/lj_ccallback_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_span.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; nuttx/optimized/pthread_mutexattr_setprotocol.c.ll
-; nuttx/optimized/pthread_mutexattr_settype.c.ll
 ; openssl/optimized/libcommon-lib-ciphercommon.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_ocb.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
@@ -208,7 +217,9 @@ entry:
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-ipmi.c.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i32 %0) #0 {
 entry:
@@ -326,10 +337,9 @@ entry:
   ret i8 %2
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/amd_bus.ll
 ; linux/optimized/amdtopology.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i32 %0) #0 {
 entry:

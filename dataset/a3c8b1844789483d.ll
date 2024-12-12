@@ -20,12 +20,13 @@ entry:
   ret i64 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; qemu/optimized/hw_acpi_core.c.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/md5.cpp.ll
 ; wasmedge/optimized/int128.cpp.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i128 %0) #0 {
 entry:

@@ -5,7 +5,7 @@
 ; hdf5/optimized/H5Spoint.c.ll
 ; libjpeg-turbo/optimized/rdbmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000584(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
   %4 = or disjoint i32 %0, %1

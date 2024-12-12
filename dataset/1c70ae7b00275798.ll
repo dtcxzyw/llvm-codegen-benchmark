@@ -1,12 +1,11 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/giaStr.c.ll
 ; cmake/optimized/cmList.cxx.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
-; icu/optimized/gregoimp.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll

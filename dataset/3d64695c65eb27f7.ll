@@ -1,5 +1,5 @@
 
-; 323 occurrences:
+; 319 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
@@ -196,7 +196,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -219,8 +218,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -278,7 +275,6 @@
 ; nlohmann_json/optimized/unit-user_defined_input.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; openjdk/optimized/splashscreen_sys.ll
-; openmpi/optimized/bml_base_btl.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
@@ -347,7 +343,7 @@ entry:
   ret i64 %3
 }
 
-; 60 occurrences:
+; 59 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -394,7 +390,6 @@ entry:
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; llvm/optimized/ParseCXXInlineMethods.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
@@ -416,10 +411,16 @@ entry:
   ret i64 %3
 }
 
-; 65 occurrences:
+; 79 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/async.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cpython/optimized/_zoneinfo.ll
 ; cpython/optimized/compile.ll
@@ -482,6 +483,14 @@ entry:
 ; yosys/optimized/fastlz.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/6ekeyfm197maw5n7s1cbq34ws.ll
+; zed-rs/optimized/9jlworagd4ne92tsld97hkqun.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
@@ -511,7 +520,7 @@ entry:
   ret i64 %3
 }
 
-; 89 occurrences:
+; 87 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
@@ -538,8 +547,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

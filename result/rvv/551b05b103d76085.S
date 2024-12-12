@@ -38,6 +38,13 @@ func0000000000000030:                   # @func0000000000000030
 	vmor.mm	v8, v0, v8
 	vmor.mm	v0, v8, v9
 	ret
+func0000000000000028:                   # @func0000000000000028
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmor.mm	v10, v0, v10
+	bseti	a0, zero, 53
+	vmsltu.vx	v11, v8, a0
+	vmor.mm	v0, v11, v10
+	ret
 func0000000000000010:                   # @func0000000000000010
 	li	a0, 128
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -54,16 +61,9 @@ func0000000000000014:                   # @func0000000000000014
 	vmor.mm	v0, v11, v10
 	ret
 func0000000000000020:                   # @func0000000000000020
-	lui	a0, 1221
-	addiw	a0, a0, -1217
+	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v9, v10, a0
-	vmor.mm	v8, v0, v8
-	vmor.mm	v0, v8, v9
-	ret
-func0000000000000028:                   # @func0000000000000028
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgt.vi	v9, v10, -1
 	vmor.mm	v8, v0, v8
 	vmor.mm	v0, v8, v9
 	ret

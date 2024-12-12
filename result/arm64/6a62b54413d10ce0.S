@@ -1,9 +1,16 @@
-func00000000000001da:                   // @func00000000000001da
+func00000000000001de:                   // @func00000000000001de
 // %bb.0:                               // %entry
 	mov	w8, #64                         // =0x40
 	sub	w8, w8, w1
 	sub	x8, x0, x8
 	add	x0, x8, #512
+	ret
+                                        // -- End function
+func00000000000000de:                   // @func00000000000000de
+// %bb.0:                               // %entry
+	neg	w8, w1
+	sub	x8, x0, w8, uxtw #2
+	add	x0, x8, #40
 	ret
                                         // -- End function
 func00000000000000da:                   // @func00000000000000da

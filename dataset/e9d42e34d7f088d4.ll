@@ -1,6 +1,7 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
+; cmake/optimized/cmCTest.cxx.ll
 ; gromacs/optimized/gmx_nmr.cpp.ll
 ; ipopt/optimized/IpIpoptAlg.ll
 ; opencv/optimized/core_detect.cpp.ll
@@ -14,7 +15,7 @@
 define i1 @func0000000000000002(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 0.000000e+00
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -63,7 +64,7 @@ entry:
 define i1 @func0000000000000004(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 0x3EB0C6F7A0B5ED8D
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 
@@ -80,12 +81,11 @@ entry:
 define i1 @func0000000000000003(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 6.000000e+01
-  %4 = fcmp ugt double %3, %0
+  %4 = fcmp ult double %0, %3
   ret i1 %4
 }
 
-; 13 occurrences:
-; gromacs/optimized/dlagtf.cpp.ll
+; 12 occurrences:
 ; gromacs/optimized/topio.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
@@ -102,7 +102,7 @@ entry:
 define i1 @func0000000000000005(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 1.000000e-30
-  %4 = fcmp ult double %3, %0
+  %4 = fcmp ugt double %0, %3
   ret i1 %4
 }
 
@@ -114,7 +114,7 @@ entry:
 define i1 @func000000000000000a(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 1.000000e-10
-  %4 = fcmp oge double %3, %0
+  %4 = fcmp ole double %0, %3
   ret i1 %4
 }
 
@@ -125,7 +125,7 @@ entry:
 define i1 @func0000000000000008(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double -1.000000e+00
-  %4 = fcmp oeq double %3, %0
+  %4 = fcmp oeq double %0, %3
   ret i1 %4
 }
 
@@ -135,7 +135,7 @@ entry:
 define i1 @func0000000000000007(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 0.000000e+00
-  %4 = fcmp une double %3, %0
+  %4 = fcmp une double %0, %3
   ret i1 %4
 }
 
@@ -146,7 +146,7 @@ entry:
 define i1 @func000000000000000d(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 0.000000e+00
-  %4 = fcmp ule double %3, %0
+  %4 = fcmp uge double %0, %3
   ret i1 %4
 }
 
@@ -157,7 +157,7 @@ entry:
 define i1 @func000000000000000c(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 0.000000e+00
-  %4 = fcmp ole double %3, %0
+  %4 = fcmp oge double %0, %3
   ret i1 %4
 }
 

@@ -2,7 +2,7 @@
 	.long	8                               # 0x8
 .LCPI0_1:
 	.long	16                              # 0x10
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpcmpgtd	%ymm1, %ymm2, %k1
 	vorps	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vorps	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0

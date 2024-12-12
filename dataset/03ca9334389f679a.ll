@@ -8,7 +8,7 @@
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000010a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %3, %1

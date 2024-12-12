@@ -8,16 +8,30 @@
 ; postgres/optimized/inv_api.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, i32 %1) #0 {
+define i64 @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 70704
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 70704
   %4 = getelementptr i8, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
 
-; 38 occurrences:
+; 3 occurrences:
+; openjdk/optimized/jvmciCodeInstaller.ll
+; php/optimized/dfa_pass.ll
+; php/optimized/zend_cfg.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw i8, ptr %0, i64 -100
+  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 35 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; git/optimized/apply.ll
 ; git/optimized/cache-tree.ll
@@ -47,20 +61,17 @@ entry:
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/instanceKlass.ll
-; openjdk/optimized/jvmciCodeInstaller.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openjdk/optimized/klassVtable.ll
 ; openjdk/optimized/methodData.ll
 ; openjdk/optimized/nativeInst_x86.ll
 ; openjdk/optimized/vtableStubs.ll
-; php/optimized/dfa_pass.ll
-; php/optimized/zend_cfg.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 -100
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 4
   %4 = getelementptr nusw i8, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5

@@ -1,12 +1,10 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; clamav/optimized/clamdtop.c.ll
 ; libpng/optimized/png.c.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_dsi_vbt.ll
-; linux/optimized/tsc_msr.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
@@ -50,7 +48,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = udiv i32 %4, %0
   ret i32 %5
 }

@@ -16,19 +16,19 @@ func000000000000000f:                   # @func000000000000000f
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000003:                   # @func0000000000000003
+func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v9, v8
-	li	a0, 32
+	li	a0, 23
 	vmv.v.x	v8, a0
 	vwsubu.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func000000000000000a:                   # @func000000000000000a
+func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v9, v8
-	li	a0, 23
+	li	a0, 128
 	vmv.v.x	v8, a0
 	vwsubu.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma

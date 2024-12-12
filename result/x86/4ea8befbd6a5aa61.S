@@ -11,12 +11,6 @@ func000000000000000b:                   # @func000000000000000b
 	xorq	$4, %rsi
 	addq	%rsi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movslq	%edx, %rax
-	leaq	(%rdi,%rax,4), %rax
-	notq	%rsi
-	leaq	(%rax,%rsi,4), %rax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	movslq	%edx, %rax
 	leaq	(%rdi,%rax,4), %rax

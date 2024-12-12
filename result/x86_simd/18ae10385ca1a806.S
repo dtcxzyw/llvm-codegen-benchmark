@@ -19,7 +19,7 @@
 	.zero	1
 .LCPI0_2:
 	.zero	4,2
-func0000000000000305:                   # @func0000000000000305
+func0000000000000605:                   # @func0000000000000605
 	vptestmd	%ymm1, %ymm1, %k1
 	vmovdqu8	.LCPI0_0(%rip), %xmm1 {%k1} {z} # xmm1 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vptestnmd	%ymm0, %ymm0, %k1

@@ -23,6 +23,11 @@ func0000000000000002:                   # @func0000000000000002
 	subw	a0, a0, a1
 	addiw	a0, a0, -3
 	ret
+func0000000000000035:                   # @func0000000000000035
+	add	a1, a1, a2
+	not	a1, a1
+	addw	a0, a0, a1
+	ret
 func0000000000000031:                   # @func0000000000000031
 	add	a1, a1, a2
 	lui	a2, 1048528
@@ -46,11 +51,6 @@ func0000000000000036:                   # @func0000000000000036
 	addiw	a0, a0, 64
 	ret
 func0000000000000034:                   # @func0000000000000034
-	add	a1, a1, a2
-	not	a1, a1
-	addw	a0, a0, a1
-	ret
-func0000000000000014:                   # @func0000000000000014
 	add	a1, a1, a2
 	not	a1, a1
 	addw	a0, a0, a1
@@ -85,7 +85,7 @@ func0000000000000038:                   # @func0000000000000038
 	not	a1, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000035:                   # @func0000000000000035
+func0000000000000014:                   # @func0000000000000014
 	add	a1, a1, a2
 	not	a1, a1
 	addw	a0, a0, a1

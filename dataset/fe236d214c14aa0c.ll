@@ -1,14 +1,13 @@
 
-%"struct.OT::IntType.0.2622262" = type { %struct.BEInt.1.2622266 }
-%struct.BEInt.1.2622266 = type { [2 x i8] }
-%class.symbol.3428956 = type { ptr }
+%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
+%struct.BEInt.1.2735703 = type { [2 x i8] }
+%class.symbol.3613505 = type { ptr }
 
-; 14 occurrences:
+; 13 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; opencv/optimized/connectedcomponents.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/shapedescr.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
@@ -19,16 +18,16 @@
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func000000000000007f(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i64, ptr %2, i64 %0
-  %4 = getelementptr nusw i64, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i64, ptr %2, i64 %0
+  %4 = getelementptr nusw nuw i64, ptr %3, i64 %0
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i64, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 116 occurrences:
+; 114 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/index-pack.ll
@@ -39,7 +38,6 @@ entry:
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
-; php/optimized/compact_literals.ll
 ; z3/optimized/add_bounds_tactic.cpp.ll
 ; z3/optimized/api_quant.cpp.ll
 ; z3/optimized/asserted_formulas.cpp.ll
@@ -52,7 +50,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/degree_shift_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
@@ -146,36 +143,48 @@ entry:
 ; z3/optimized/uses_theory.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func000000000000006f(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %2, i64 %0
-  %4 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %3, i64 %0
+  %3 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %2, i64 %0
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %3, i64 %0
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; php/optimized/compact_literals.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004b(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i32, ptr %2, i64 %0
+  %4 = getelementptr nusw i32, ptr %3, i64 %0
+  %5 = zext i32 %1 to i64
+  %6 = getelementptr nusw nuw i32, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func0000000000000013(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 %0
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw double, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw double, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func0000000000000003(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 %0
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw double, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw double, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -250,12 +259,25 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func000000000000007c(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw ptr, ptr %2, i64 %0
-  %4 = getelementptr nusw %class.symbol.3428956, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %0
+  %4 = getelementptr nusw nuw %class.symbol.3613505, ptr %3, i64 %0
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr ptr, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; opencv/optimized/connectedcomponents.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005b(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 %0
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

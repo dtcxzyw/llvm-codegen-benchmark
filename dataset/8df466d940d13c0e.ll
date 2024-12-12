@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 46 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/absGla.c.ll
@@ -26,6 +26,7 @@
 ; abc/optimized/mapperTime.c.ll
 ; abc/optimized/mapperTruth.c.ll
 ; arrow/optimized/validate.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/dictobject.ll
 ; cpython/optimized/xmltok.ll
@@ -49,11 +50,11 @@
 define i1 @func0000000000000006(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 
-; 71 occurrences:
+; 72 occurrences:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/cswCut.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -61,6 +62,7 @@ entry:
 ; abc/optimized/ifDec16.c.ll
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; cpython/optimized/dictobject.ll
 ; cvc5/optimized/cvc5.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -129,11 +131,13 @@ entry:
 define i1 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
-; 14 occurrences:
+; 16 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -152,13 +156,14 @@ entry:
 define i1 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; arrow/optimized/builder_union.cc.ll
+; boost/optimized/src.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/DiagnosticIDs.cpp.ll
@@ -170,13 +175,14 @@ entry:
 define i1 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; arrow/optimized/validate.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -193,29 +199,41 @@ entry:
 define i1 @func000000000000000a(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 
-; 2 occurrences:
-; arrow/optimized/scalar.cc.ll
-; linux/optimized/vmstat.ll
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000007(i64 %0, i8 %1) #0 {
+define i1 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = icmp sge i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   ret i1 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; arrow/optimized/scalar.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; postgres/optimized/cash.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = icmp sle i64 %2, %0
+  %3 = icmp sge i64 %0, %2
+  ret i1 %3
+}
+
+; 3 occurrences:
+; arrow/optimized/scalar.cc.ll
+; boost/optimized/default_filter_factory.ll
+; linux/optimized/vmstat.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(i64 %0, i8 %1) #0 {
+entry:
+  %2 = sext i8 %1 to i64
+  %3 = icmp sle i64 %0, %2
   ret i1 %3
 }
 

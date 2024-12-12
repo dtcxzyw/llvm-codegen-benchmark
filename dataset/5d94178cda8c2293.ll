@@ -1,11 +1,10 @@
 
-; 51 occurrences:
+; 45 occurrences:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -28,13 +27,8 @@
 ; mold/optimized/gdb-index.cc.SH4.cc.ll
 ; mold/optimized/gdb-index.cc.SPARC64.cc.ll
 ; mold/optimized/gdb-index.cc.X86_64.cc.ll
-; openjdk/optimized/chunklevel.ll
-; openjdk/optimized/g1CardSet.ll
-; openjdk/optimized/g1CodeRootSet.ll
 ; openjdk/optimized/g1HeapRegion.ll
 ; openjdk/optimized/shenandoahHeap.ll
-; openjdk/optimized/xGlobals_x86.ll
-; openjdk/optimized/zAddress_x86.ll
 ; postgres/optimized/basebackup_incremental.ll
 ; postgres/optimized/blkreftable.ll
 ; postgres/optimized/blkreftable_shlib.ll

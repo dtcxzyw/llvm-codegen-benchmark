@@ -30,7 +30,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 5
   %3 = add i32 %2, 1444728091
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = mul i32 %4, 5
   ret i32 %5
 }
@@ -59,7 +59,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind

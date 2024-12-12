@@ -7,7 +7,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul nsw i64 %1, 86400
   %5 = add nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -28,10 +28,11 @@ entry:
   ret i64 %6
 }
 
-; 105 occurrences:
+; 106 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -159,13 +160,15 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; ockam-rs/optimized/1jnbxr9i8m0nukdf.ll
 ; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; wasmtime-rs/optimized/47nrdncov7567v7m.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -189,16 +192,15 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; linux/optimized/intel_cx0_phy.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; 1 occurrences:
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003f(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %1, 18
-  %5 = add nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
+  %4 = mul nsw i64 %1, 86400
+  %5 = add nsw i64 %4, %3
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -211,6 +213,18 @@ entry:
   %4 = mul nuw nsw i64 %1, 1000000000
   %5 = add nuw nsw i64 %4, %3
   %6 = add i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; linux/optimized/intel_cx0_phy.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = mul nuw nsw i64 %1, 38400
+  %5 = add nuw nsw i64 %4, %3
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

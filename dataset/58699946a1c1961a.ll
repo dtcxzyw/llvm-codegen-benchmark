@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:

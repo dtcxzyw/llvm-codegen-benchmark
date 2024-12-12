@@ -1,5 +1,5 @@
 
-; 190 occurrences:
+; 184 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -26,12 +26,11 @@
 ; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/plaMan.c.ll
 ; abc/optimized/wlcAbs.c.ll
+; boost/optimized/alloc_lib.ll
 ; clap-rs/optimized/421wxj3t0b5xgmkw.ll
 ; cmake/optimized/blocksort.c.ll
-; cmake/optimized/share.c.ll
 ; cpython/optimized/hamt.ll
 ; cpython/optimized/optimizer.ll
-; curl/optimized/libcurl_la-share.ll
 ; cvc5/optimized/theory_id.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -66,9 +65,7 @@
 ; linux/optimized/hcd.ll
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/hrtimer.ll
-; linux/optimized/i8259.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_display_power_well.ll
@@ -90,7 +87,6 @@
 ; llvm/optimized/CallingConvLower.cpp.ll
 ; llvm/optimized/InterfaceFile.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegUsageInfoCollector.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
@@ -102,14 +98,13 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/func.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
 ; nori/optimized/screen.cpp.ll
-; nuttx/optimized/sig_delset.c.ll
 ; oiio/optimized/DPXHeader.cpp.ll
 ; oiio/optimized/Writer.cpp.ll
 ; oniguruma/optimized/regexec.ll
@@ -145,7 +140,6 @@
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
-; qemu/optimized/hw_misc_sifive_u_otp.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -195,11 +189,11 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
-; 259 occurrences:
+; 267 occurrences:
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/absUtil.c.ll
@@ -218,6 +212,11 @@ entry:
 ; arrow/optimized/string-to-double.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_wiprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/encode.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -351,6 +350,7 @@ entry:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -453,6 +453,8 @@ entry:
 ; yosys/optimized/xilinx_dffopt.ll
 ; z3/optimized/bit_util.cpp.ll
 ; z3/optimized/sat_lookahead.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; zlib/optimized/deflate.c.ll
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
@@ -464,11 +466,11 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
-; 76 occurrences:
+; 74 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; clamav/optimized/pdf.c.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
@@ -481,7 +483,6 @@ entry:
 ; linux/optimized/dquot.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/hcd.ll
-; linux/optimized/i915_irq.ll
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_ddi.ll
@@ -505,7 +506,6 @@ entry:
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
@@ -550,17 +550,16 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/utilIsop.c.ll
 ; cpython/optimized/frameobject.ll
 ; gromacs/optimized/coder.c.ll
 ; gromacs/optimized/huffman.c.ll
 ; gromacs/optimized/redistribute.cpp.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_tc.ll
@@ -594,7 +593,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 65537, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

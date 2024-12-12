@@ -1,4 +1,4 @@
-func0000000000000098:                   # @func0000000000000098
+func0000000000000118:                   # @func0000000000000118
 	cmpb	$8, %sil
 	setb	%cl
 	cmpb	$4, %sil
@@ -6,7 +6,7 @@ func0000000000000098:                   # @func0000000000000098
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	cmpb	$8, %sil
 	setne	%cl
 	cmpb	$5, %sil
@@ -14,7 +14,7 @@ func0000000000000198:                   # @func0000000000000198
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	cmpb	$9, %sil
 	setne	%cl
 	cmpb	$32, %sil
@@ -22,7 +22,7 @@ func0000000000000188:                   # @func0000000000000188
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000190:                   # @func0000000000000190
+func0000000000000310:                   # @func0000000000000310
 	cmpb	$127, %sil
 	setne	%cl
 	cmpb	$32, %sil

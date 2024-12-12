@@ -26,11 +26,11 @@ entry:
 ; hyperscan/optimized/program_runtime.c.ll
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = lshr i32 %2, %0
-  %4 = icmp ult i32 %3, 4
+  %4 = icmp samesign ult i32 %3, 4
   ret i1 %4
 }
 

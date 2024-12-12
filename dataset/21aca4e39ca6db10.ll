@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; diesel-rs/optimized/27d1dwdaey9nml16.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/column-utils.c.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:

@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i8 %1) #0 {
 entry:

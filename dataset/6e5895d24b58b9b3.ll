@@ -17,11 +17,11 @@
 define i64 @func00000000000000c8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, -7046029288634856825
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -31,17 +31,19 @@ entry:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
 ; grpc/optimized/round_robin.cc.ll
 ; grpc/optimized/weighted_target.cc.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
@@ -147,7 +149,7 @@ entry:
 define i64 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
@@ -159,7 +161,7 @@ entry:
 define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 

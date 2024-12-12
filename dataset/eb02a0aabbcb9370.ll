@@ -15,9 +15,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; icu/optimized/calendar.ll
-; icu/optimized/gregoimp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:

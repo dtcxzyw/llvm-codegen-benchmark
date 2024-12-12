@@ -1,4 +1,4 @@
-func0000000000000508:                   # @func0000000000000508
+func0000000000000a08:                   # @func0000000000000a08
 	leaq	(%rsi,%rsi,4), %rax
 	movzbl	%dil, %ecx
 	leaq	-48(%rcx,%rax,2), %rax
@@ -6,7 +6,7 @@ func0000000000000508:                   # @func0000000000000508
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func0000000000000506:                   # @func0000000000000506
+func0000000000000a06:                   # @func0000000000000a06
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	(%rax,%rax,4), %rax
 	addq	%rsi, %rax
@@ -15,14 +15,14 @@ func0000000000000506:                   # @func0000000000000506
 	testq	%rax, %rax
 	setle	%al
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	leaq	(%rsi,%rsi,4), %rax
 	movzbl	%dil, %ecx
 	leaq	-48(%rcx,%rax,2), %rax
 	shrq	$32, %rax
 	setne	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	leaq	(%rsi,%rsi,4), %rax
 	movzbl	%dil, %ecx
 	leaq	-48(%rcx,%rax,2), %rax

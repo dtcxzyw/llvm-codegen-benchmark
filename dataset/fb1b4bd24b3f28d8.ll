@@ -1,5 +1,5 @@
 
-; 219 occurrences:
+; 212 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; assimp/optimized/BlenderCustomData.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -76,7 +76,6 @@
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; llvm/optimized/PartialInlining.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -166,13 +165,6 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/ZendAccelerator.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; quantlib/optimized/basketgeneratingengine.ll
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; quickjs/optimized/quickjs.ll
@@ -219,6 +211,7 @@
 ; wireshark/optimized/simple_statistics_dialog.cpp.ll
 ; wireshark/optimized/tap_parameter_dialog.cpp.ll
 ; wireshark/optimized/voip_calls_dialog.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

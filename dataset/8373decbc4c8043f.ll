@@ -8,7 +8,7 @@ entry:
   %2 = add nsw i32 %1, 8388480
   %3 = lshr i32 %2, 24
   %4 = trunc nuw i32 %3 to i8
-  %5 = add i8 %4, %0
+  %5 = add i8 %0, %4
   ret i8 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = add nsw i32 %1, 64
   %3 = lshr i32 %2, 7
   %4 = trunc i32 %3 to i8
-  %5 = add i8 %4, %0
+  %5 = add i8 %0, %4
   ret i8 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = add i32 %1, 16
   %3 = lshr i32 %2, 3
   %4 = trunc i32 %3 to i8
-  %5 = add i8 %4, %0
+  %5 = add i8 %0, %4
   ret i8 %5
 }
 

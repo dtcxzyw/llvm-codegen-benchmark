@@ -25,7 +25,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a0, 255
-	sltiu	a1, a1, 2
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	li	a2, 2
+	bgeu	a1, a2, .LBB4_2
+	li	a0, 3
+.LBB4_2:                                # %entry
 	ret

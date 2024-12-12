@@ -1,7 +1,9 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; git/optimized/fast-import.ll
@@ -20,7 +22,6 @@
 ; qemu/optimized/source_s_shiftRightJam256M.c.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f64_to_i32_r_minMag.ll
 ; spike/optimized/f64_to_i64_r_minMag.ll
 ; spike/optimized/f64_to_ui32_r_minMag.ll

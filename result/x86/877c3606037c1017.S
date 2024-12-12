@@ -1,14 +1,24 @@
-func0000000000000052:                   # @func0000000000000052
+func00000000000000d2:                   # @func00000000000000d2
 	addq	$24, %rsi
 	cmpq	%rdi, %rsi
 	setae	%al
 	retq
-func0000000000000042:                   # @func0000000000000042
+func00000000000000c2:                   # @func00000000000000c2
 	addq	$960, %rsi                      # imm = 0x3C0
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000002:                   # @func0000000000000002
+	addq	$-4, %rsi
+	cmpq	%rdi, %rsi
+	sete	%al
+	retq
+func00000000000000d8:                   # @func00000000000000d8
+	addq	$48, %rsi
+	cmpq	%rdi, %rsi
+	setne	%al
+	retq
+func0000000000000098:                   # @func0000000000000098
 	addq	$-24, %rsi
 	cmpq	%rdi, %rsi
 	setne	%al

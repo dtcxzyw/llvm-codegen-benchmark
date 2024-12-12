@@ -2,10 +2,11 @@ func000000000000006f:                   # @func000000000000006f
 	lui	a2, 256
 	add	a1, a1, a2
 	add	a0, a0, a2
+	lui	a2, 1047552
 	srli	a1, a1, 21
 	add	a0, a0, a1
-	lui	a1, 1048064
-	and	a0, a0, a1
+	srli	a2, a2, 1
+	and	a0, a0, a2
 	ret
 func0000000000000065:                   # @func0000000000000065
 	lui	a2, 256

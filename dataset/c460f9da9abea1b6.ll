@@ -256,7 +256,6 @@ entry:
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/ParseHLSL.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
@@ -353,6 +352,7 @@ entry:
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; opencv/optimized/contours.cpp.ll
+; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; wireshark/optimized/packet-gryphon.c.ll
 ; wireshark/optimized/packet-shim6.c.ll

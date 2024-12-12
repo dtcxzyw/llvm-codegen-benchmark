@@ -25,23 +25,6 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; jemalloc/optimized/pages.ll
-; jemalloc/optimized/pages.pic.ll
-; jemalloc/optimized/pages.sym.ll
-; redis/optimized/pages.ll
-; redis/optimized/pages.sym.ll
-; yosys/optimized/fstapi.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = and i1 %1, %2
-  %4 = icmp ult i64 %0, 128
-  %not. = xor i1 %3, true
-  %5 = select i1 %not., i1 true, i1 %4
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; openmpi/optimized/opal_copy_functions_heterogeneous.ll
 ; Function Attrs: nounwind
@@ -60,6 +43,21 @@ define i1 @func0000000000000001(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = icmp eq i64 %0, 0
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 5 occurrences:
+; jemalloc/optimized/pages.ll
+; jemalloc/optimized/pages.pic.ll
+; jemalloc/optimized/pages.sym.ll
+; redis/optimized/pages.ll
+; redis/optimized/pages.sym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = and i1 %1, %2
+  %4 = icmp ult i64 %0, 16385
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }

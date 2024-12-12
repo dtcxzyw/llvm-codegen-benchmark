@@ -1,11 +1,18 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testb	$1, %dil
 	sete	%cl
 	testb	$12, %dil
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func0000000000000181:                   # @func0000000000000181
+	testb	$31, %dil
+	setne	%cl
+	testb	$32, %dil
+	sete	%al
+	andb	%cl, %al
+	retq
+func000000000000018c:                   # @func000000000000018c
 	movl	%edi, %eax
 	andb	$7, %al
 	cmpb	$3, %al
@@ -14,16 +21,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
-	movl	%edi, %eax
-	notb	%al
-	testb	$3, %al
-	setne	%cl
-	testb	$8, %dil
-	sete	%al
-	andb	%cl, %al
-	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000301:                   # @func0000000000000301
 	movl	%edi, %eax
 	andb	$31, %al
 	cmpb	$3, %al
@@ -33,7 +31,7 @@ func0000000000000081:                   # @func0000000000000081
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	movl	%edi, %eax
 	andb	$-16, %al
 	cmpb	$64, %al

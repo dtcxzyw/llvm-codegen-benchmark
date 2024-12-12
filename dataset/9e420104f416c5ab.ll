@@ -1,12 +1,13 @@
 
-; 57 occurrences:
+; 58 occurrences:
 ; gromacs/optimized/gausstransform.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
 ; meshlab/optimized/editpickpoints.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -62,7 +63,7 @@ define i64 @func0000000000000001(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

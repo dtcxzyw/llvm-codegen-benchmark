@@ -9,12 +9,6 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%edx, %edi
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	%edi, %edx
-	andl	%edi, %esi
-	cmpl	%edx, %esi
-	seta	%al
-	retq
 func000000000000000a:                   # @func000000000000000a
 	andl	%esi, %edx
 	andl	%esi, %edi
@@ -31,4 +25,10 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%edx, %edi
 	testl	%esi, %edi
 	setne	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	andl	%esi, %edx
+	andl	%esi, %edi
+	cmpl	%edx, %edi
+	seta	%al
 	retq

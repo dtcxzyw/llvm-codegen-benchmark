@@ -1,9 +1,12 @@
 
-; 172 occurrences:
+; 176 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddZddMisc.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; assimp/optimized/SMDLoader.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/within.ll
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/floatobject.ll
 ; darktable/optimized/darkroom.c.ll
@@ -64,6 +67,7 @@
 ; libevent/optimized/evdns.c.ll
 ; libquic/optimized/dtoa.cc.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll

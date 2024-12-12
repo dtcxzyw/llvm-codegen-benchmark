@@ -1,9 +1,4 @@
-func000000000000007a:                   # @func000000000000007a
-	andi	a1, a1, 63
-	add	a0, a0, a1
-	addi	a0, a0, 25
-	ret
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	andi	a1, a1, 63
 	add	a0, a0, a1
 	addi	a0, a0, 25
@@ -14,7 +9,7 @@ func000000000000005e:                   # @func000000000000005e
 	sh1add	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret
-func0000000000000058:                   # @func0000000000000058
+func000000000000005c:                   # @func000000000000005c
 	zext.h	a1, a1
 	sh2add	a0, a1, a0
 	addi	a0, a0, 20

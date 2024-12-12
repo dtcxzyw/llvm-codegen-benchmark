@@ -83,7 +83,7 @@ func0000000000000002:                   # @func0000000000000002
 	vptestnmw	%ymm1, %ymm1, %k1
 	vpbroadcastw	.LCPI1_2(%rip), %ymm1   # ymm1 = [1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024]
 	vmovdqu16	.LCPI1_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.short	26                              # 0x1a
@@ -126,4 +126,30 @@ func0000000000000008:                   # @func0000000000000008
 	vpcmpltuw	.LCPI2_0(%rip), %ymm1, %k1
 	vpord	.LCPI2_2(%rip){1to8}, %ymm0, %ymm1
 	vmovdqu16	%ymm1, %ymm0 {%k1}
+	retq
+.LCPI3_0:
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+.LCPI3_1:
+	.short	256                             # 0x100
+func0000000000000029:                   # @func0000000000000029
+	vpbroadcastw	.LCPI3_1(%rip), %ymm2   # ymm2 = [256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256]
+	vpcmpltuw	%ymm2, %ymm1, %k1
+	vpor	%ymm2, %ymm0, %ymm1
+	vmovdqu16	%ymm0, %ymm1 {%k1}
+	vmovdqa	%ymm1, %ymm0
 	retq

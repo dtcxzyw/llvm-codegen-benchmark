@@ -15,7 +15,7 @@
 	.short	2                               # 0x2
 	.short	2                               # 0x2
 	.short	2                               # 0x2
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpsllw	$8, %ymm2, %ymm0

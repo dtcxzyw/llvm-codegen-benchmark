@@ -1,8 +1,11 @@
 
-; 29 occurrences:
+; 40 occurrences:
 ; abc/optimized/bacNtk.c.ll
 ; abc/optimized/cmdAuto.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/ftplistparser.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-ftplistparser.ll
@@ -10,11 +13,19 @@
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; freetype/optimized/cff.c.ll
+; graphviz/optimized/fmtesc.c.ll
 ; icu/optimized/ucnv_u7.ll
+; llvm/optimized/FormatString.cpp.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/StringExtras.cpp.ll
+; llvm/optimized/X86WinEHState.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
@@ -30,7 +41,7 @@
 ; yosys/optimized/abc.ll
 ; yosys/optimized/abc9_exe.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0) #0 {
+define i1 @func000000000000008c(i8 %0) #0 {
 entry:
   %1 = add i8 %0, -58
   %2 = icmp ult i8 %1, -10
@@ -45,7 +56,7 @@ entry:
 ; php/optimized/url.ll
 ; qemu/optimized/chardev_char-hmp-cmds.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0) #0 {
+define i1 @func0000000000000084(i8 %0) #0 {
 entry:
   %1 = add i8 %0, -11
   %2 = icmp ult i8 %1, -2
@@ -60,7 +71,7 @@ entry:
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i8 %0) #0 {
+define i1 @func000000000000008a(i8 %0) #0 {
 entry:
   %1 = add i8 %0, -16
   %2 = icmp ult i8 %1, -2
@@ -73,7 +84,7 @@ entry:
 ; php/optimized/json_scanner.ll
 ; php/optimized/zend_ini_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i8 %0) #0 {
+define i1 @func0000000000000088(i8 %0) #0 {
 entry:
   %1 = add i8 %0, -127
   %2 = icmp ult i8 %1, -4

@@ -1,8 +1,7 @@
 
-%"struct.std::pair.72.2748417" = type { i32, ptr }
-
-; 32 occurrences:
+; 46 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; boost/optimized/work_stealing.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
 ; cmake/optimized/cmCTestSubmitHandler.cxx.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
@@ -21,19 +20,32 @@
 ; cvc5/optimized/unsat_core_manager.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
-; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; hyperscan/optimized/Utf8ComponentClass.cpp.ll
+; hyperscan/optimized/ng_repeat.cpp.ll
+; hyperscan/optimized/ng_som.cpp.ll
+; hyperscan/optimized/ng_split.cpp.ll
+; hyperscan/optimized/ng_squash.cpp.ll
+; libphonenumber/optimized/phonenumberutil.cc.ll
+; llvm/optimized/CodeGenModule.cpp.ll
+; llvm/optimized/DWARFContext.cpp.ll
+; llvm/optimized/GlobalISelEmitter.cpp.ll
 ; llvm/optimized/LoopInfo.cpp.ll
 ; luau/optimized/Frontend.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; nix/optimized/installables.ll
+; openusd/optimized/authoring.cpp.ll
 ; openusd/optimized/changeManager.cpp.ll
 ; openusd/optimized/clipSet.cpp.ll
+; openusd/optimized/dataSourceMaterialNetworkInterface.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/flattenedPrimvarsDataSourceProvider.cpp.ll
 ; openusd/optimized/listOp.cpp.ll
+; openusd/optimized/primIndex.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
 ; php/optimized/dirstream.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; vcpkg/optimized/dependencies.cpp.ll
-; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/Filter.cpp.ll
+; yosys/optimized/freduce.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
@@ -43,32 +55,15 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
-; hyperscan/optimized/Utf8ComponentClass.cpp.ll
-; hyperscan/optimized/ng_repeat.cpp.ll
-; hyperscan/optimized/ng_som.cpp.ll
-; hyperscan/optimized/ng_split.cpp.ll
-; hyperscan/optimized/ng_squash.cpp.ll
+; 3 occurrences:
 ; hyperscan/optimized/rose_build_convert.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; libphonenumber/optimized/phonenumberutil.cc.ll
-; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/DWARFContext.cpp.ll
-; llvm/optimized/GlobalISelEmitter.cpp.ll
-; openusd/optimized/authoring.cpp.ll
-; openusd/optimized/dataSourceMaterialNetworkInterface.cpp.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/flattenedPrimvarsDataSourceProvider.cpp.ll
-; openusd/optimized/listOp.cpp.ll
-; openusd/optimized/primIndex.cpp.ll
-; openusd/optimized/skeletonAdapter.cpp.ll
 ; wireshark/optimized/to_str.c.ll
-; yosys/optimized/freduce.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = getelementptr %"struct.std::pair.72.2748417", ptr %0, i64 %2
+  %3 = getelementptr i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

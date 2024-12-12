@@ -1,5 +1,5 @@
 
-; 222 occurrences:
+; 235 occurrences:
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/exor.c.ll
 ; abc/optimized/extraUtilBitMatrix.c.ll
@@ -108,7 +108,6 @@
 ; openspiel/optimized/stones_and_gems.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_div.ll
 ; openssl/optimized/libcrypto-shlib-bn_div.ll
-; openssl/optimized/siphash_internal_test-bin-siphash_internal_test.ll
 ; openusd/optimized/openexr-c.c.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -156,7 +155,6 @@
 ; velox/optimized/BooleanMix.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
-; velox/optimized/CheckNestedNulls.cpp.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/DecodedVector.cpp.ll
@@ -222,6 +220,21 @@
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/1zouf8lsjy712uoerw5fyy4vf.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/64m9n7h70y7p22vy4aomn270y.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/b7azyji7w0gj79cpvibdmzbyg.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:

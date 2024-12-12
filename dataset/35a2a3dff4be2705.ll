@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libjpeg-turbo/optimized/jidctred.c.ll
@@ -8,7 +8,6 @@
 ; minetest/optimized/mg_biome.cpp.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; php/optimized/ir.ll

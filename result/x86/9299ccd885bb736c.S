@@ -1,10 +1,10 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	movzbl	%dl, %eax
 	orl	%esi, %eax
 	movzwl	%ax, %eax
 	addq	%rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	movzbl	%dl, %eax
 	orl	%esi, %eax
 	movzwl	%ax, %eax

@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/floatobject.ll
 ; darktable/optimized/camera.c.ll
@@ -26,7 +26,6 @@
 ; meshlab/optimized/edit_paint.cpp.ll
 ; opencv/optimized/travelsalesman.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/interval.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll

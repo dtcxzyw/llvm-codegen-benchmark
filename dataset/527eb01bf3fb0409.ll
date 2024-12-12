@@ -9,7 +9,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
   %.not = xor i64 %3, -1
-  %4 = and i64 %.not, %0
+  %4 = and i64 %0, %.not
   ret i64 %4
 }
 
@@ -28,7 +28,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
   %.not = xor i64 %3, -1
-  %4 = and i64 %.not, %0
+  %4 = and i64 %0, %.not
   ret i64 %4
 }
 
@@ -41,7 +41,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
   %.not = xor i64 %3, -1
-  %4 = and i64 %.not, %0
+  %4 = and i64 %0, %.not
   ret i64 %4
 }
 

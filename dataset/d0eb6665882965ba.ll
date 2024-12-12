@@ -1,8 +1,7 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_blurs.c.ll
-; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; faiss/optimized/quantize_lut.cpp.ll
@@ -23,7 +22,7 @@
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fdiv float 1.000000e+00, %1
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fadd float %3, 0.000000e+00
   ret float %4
 }

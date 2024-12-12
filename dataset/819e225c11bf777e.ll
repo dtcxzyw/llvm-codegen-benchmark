@@ -45,10 +45,12 @@ entry:
   ret i64 %5
 }
 
-; 56 occurrences:
+; 60 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; curl/optimized/libcurl_la-mqtt.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
+; eastl/optimized/TestFixedTupleVector.cpp.ll
+; eastl/optimized/TestTupleVector.cpp.ll
 ; flac/optimized/foreign_metadata.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DynamicParser.cpp.ll
@@ -73,6 +75,7 @@ entry:
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
+; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArrayIntersectExcept.cpp.ll
@@ -102,6 +105,7 @@ entry:
 ; wolfssl/optimized/benchmark.c.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -123,9 +127,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -146,9 +151,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; freetype/optimized/pshinter.c.ll
-; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; 1 occurrences:
 ; spike/optimized/vaeskf1_vi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
@@ -159,10 +162,21 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 2 occurrences:
+; freetype/optimized/pshinter.c.ll
+; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 1023
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = add nsw i64 %4, -8
+  ret i64 %5
+}
+
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_distr.cpp.ll
 ; freetype/optimized/ftbase.c.ll
-; lightgbm/optimized/metadata.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; redis/optimized/geo.ll
 ; Function Attrs: nounwind
@@ -170,7 +184,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
-  %5 = add nsw i64 %4, 24
+  %5 = add nsw i64 %4, 1
   ret i64 %5
 }
 
@@ -199,9 +213,9 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000053(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 40
+  %3 = icmp samesign ult i64 %2, 40
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = add nuw nsw i64 %4, 32
   ret i64 %5

@@ -1,7 +1,8 @@
 
-; 44 occurrences:
+; 42 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/amapMerge.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/arcread.cpp.ll
 ; cmake/optimized/archive_acl.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -13,7 +14,6 @@
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/drm_ioctl.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/ht.ll
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/pcmcia_cis.ll
@@ -27,7 +27,6 @@
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/IRSymtab.cpp.ll
 ; llvm/optimized/MachineStableHash.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; luajit/optimized/lj_asm.ll
@@ -39,7 +38,6 @@
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; php/optimized/pcre2_match.ll
 ; proxygen/optimized/HeaderTable.cpp.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/rax.ll
@@ -54,10 +52,11 @@ entry:
   ret i64 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
@@ -80,7 +79,7 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -88,12 +87,11 @@ entry:
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; abc/optimized/lpkCut.c.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 14
-  %3 = icmp ult i32 %2, 6
+  %3 = icmp samesign ult i32 %2, 6
   %4 = select i1 %3, i32 1, i32 %0
   %5 = zext nneg i32 %4 to i64
   ret i64 %5

@@ -10,3 +10,11 @@ func0000000000000008:                   # @func0000000000000008
 	setne	%al
 	orb	$2, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	vmovq	%xmm0, %rax
+	movabsq	$9218868437227405312, %rcx      # imm = 0x7FF0000000000000
+	xorl	%edx, %edx
+	cmpq	%rcx, %rax
+	seta	%dl
+	leal	73(%rdx,%rdx,4), %eax
+	retq

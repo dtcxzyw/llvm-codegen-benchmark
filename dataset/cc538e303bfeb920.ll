@@ -1,11 +1,13 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; nlohmann_json/optimized/unit-binary_formats.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-regression1.cpp.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
+; openusd/optimized/parserHelpers.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i16 %1) #0 {

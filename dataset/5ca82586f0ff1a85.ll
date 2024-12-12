@@ -1,5 +1,7 @@
 
-; 71 occurrences:
+; 74 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btMiniSDF.ll
 ; cpython/optimized/compile.ll
@@ -9,7 +11,6 @@
 ; glslang/optimized/Constant.cpp.ll
 ; gromacs/optimized/gausstransform.cpp.ll
 ; gromacs/optimized/reversetopology.cpp.ll
-; hermes/optimized/SourceMap.cpp.ll
 ; icu/optimized/number_affixutils.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; lief/optimized/BinaryStream.cpp.ll
@@ -17,6 +18,7 @@
 ; lief/optimized/CorePrStatus.cpp.ll
 ; lief/optimized/Note.cpp.ll
 ; llvm/optimized/Commit.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/HeaderMap.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
@@ -24,6 +26,7 @@
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; meshoptimizer/optimized/vcacheanalyzer.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -75,7 +78,7 @@
 define { i64, float } @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = insertvalue { i64, float } poison, i64 %3, 0
   ret { i64, float } %4
 }
@@ -86,7 +89,7 @@ entry:
 define { i64, i64 } @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = insertvalue { i64, i64 } poison, i64 %3, 0
   ret { i64, i64 } %4
 }
@@ -99,7 +102,7 @@ entry:
 define { i64, i8 } @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = insertvalue { i64, i8 } poison, i64 %3, 0
   ret { i64, i8 } %4
 }

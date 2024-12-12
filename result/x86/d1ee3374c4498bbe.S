@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	movl	%esi, %eax
 	andl	$-2, %eax
 	cmpl	$236, %eax
@@ -8,7 +8,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testb	$7, %sil
 	sete	%cl
 	testl	%esi, %esi
@@ -16,7 +16,7 @@ func000000000000001c:                   # @func000000000000001c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	testb	$1, %sil
 	sete	%cl
 	cmpl	$6, %esi

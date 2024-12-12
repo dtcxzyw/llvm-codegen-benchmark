@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 48 occurrences:
 ; coremark/optimized/core_list_join.c.ll
 ; cvc5/optimized/metakind.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -10,9 +10,7 @@
 ; linux/optimized/aspm.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/he.ll
 ; linux/optimized/skl_watermark.ll
-; linux/optimized/sky2.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -43,6 +41,7 @@
 ; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/zipFile.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/time.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; sqlite/optimized/sqlite3.ll

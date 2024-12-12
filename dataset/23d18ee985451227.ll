@@ -1,5 +1,5 @@
 
-; 395 occurrences:
+; 394 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; brotli/optimized/backward_references.c.ll
@@ -21,7 +21,6 @@
 ; faiss/optimized/ProductQuantizer.cpp.ll
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; flac/optimized/stream_encoder.c.ll
-; flatbuffers/optimized/idl_parser.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; folly/optimized/Request.cpp.ll
@@ -68,7 +67,6 @@
 ; linux/optimized/tx.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/GCOVProfiling.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -320,7 +318,6 @@
 ; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
 ; qemu/optimized/block_qed.c.ll
 ; qemu/optimized/migration_dirtyrate.c.ll
-; qemu/optimized/util_oslib-posix.c.ll
 ; quantlib/optimized/pseudosqrt.ll
 ; quantlib/optimized/tapcorrelations.ll
 ; raylib/optimized/raudio.c.ll
@@ -349,7 +346,6 @@
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f16_sqrt.ll
 ; spike/optimized/f32_mul.ll
-; spike/optimized/s_mul64To128M.ll
 ; stockfish/optimized/bitboard.ll
 ; unicode-normalization-rs/optimized/2dhzw0mhmvlvodqn.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
@@ -394,6 +390,9 @@
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; wasmtime-rs/optimized/x7ydxa15kh51k9x.ll
 ; xgboost/optimized/allreduce.cc.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
@@ -403,7 +402,7 @@ entry:
   ret i64 %3
 }
 
-; 181 occurrences:
+; 175 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -418,7 +417,6 @@ entry:
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
@@ -473,8 +471,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -549,8 +545,6 @@ entry:
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/optimize.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/fpconv_dtoa.ll
@@ -575,8 +569,6 @@ entry:
 ; spike/optimized/mulh.ll
 ; spike/optimized/mulhsu.ll
 ; spike/optimized/mulhu.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/s_mul128MTo256M.ll
 ; spike/optimized/vmulhu_vv.ll
 ; spike/optimized/vmulhu_vx.ll
@@ -585,6 +577,7 @@ entry:
 ; tokio-rs/optimized/r9h5225tdo2hxm6.ll
 ; tokio-rs/optimized/rq81hdouiclvz49.ll
 ; xgboost/optimized/charconv.cc.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -593,7 +586,7 @@ entry:
   ret i64 %3
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcUtil.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -602,7 +595,6 @@ entry:
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_highpass.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; eastl/optimized/EATest.cpp.ll
 ; libwebp/optimized/webpdec.c.ll
 ; linux/optimized/fair.ll
@@ -646,11 +638,12 @@ entry:
   ret i64 %3
 }
 
-; 70 occurrences:
+; 65 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
 ; arrow/optimized/diff.cc.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; casadi/optimized/sparsity.cpp.ll
@@ -676,9 +669,7 @@ entry:
 ; oiio/optimized/Reader.cpp.ll
 ; openblas/optimized/dtpmv_NLN.c.ll
 ; openblas/optimized/dtpmv_NLU.c.ll
-; openblas/optimized/dtpmv_TUN.c.ll
 ; openblas/optimized/dtpmv_TUU.c.ll
-; openblas/optimized/dtpsv_NUN.c.ll
 ; openblas/optimized/dtpsv_NUU.c.ll
 ; openblas/optimized/dtpsv_TLN.c.ll
 ; openblas/optimized/dtpsv_TLU.c.ll
@@ -706,16 +697,12 @@ entry:
 ; postgres/optimized/f2s.ll
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/f16_div.ll
 ; spike/optimized/f16_rem.ll
 ; spike/optimized/f16_sqrt.ll
 ; spike/optimized/rfb.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {

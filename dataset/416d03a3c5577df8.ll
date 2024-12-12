@@ -59,7 +59,7 @@ entry:
   ret i64 %2
 }
 
-; 78 occurrences:
+; 79 occurrences:
 ; abc/optimized/timMan.c.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -74,11 +74,12 @@ entry:
 ; gromacs/optimized/gausstransform.cpp.ll
 ; gromacs/optimized/gmx_hydorder.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
 ; meshlab/optimized/editpickpoints.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

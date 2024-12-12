@@ -1,12 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
-	imulq	%rdx, %rsi
-	cmpq	$32, %rsi
-	setb	%cl
-	cmpq	$128, %rdi
-	setb	%al
-	orb	%cl, %al
-	retq
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	imulq	%rdx, %rsi
 	cmpq	$9, %rsi
 	setae	%cl
@@ -14,7 +6,7 @@ func0000000000000110:                   # @func0000000000000110
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000222:                   # @func0000000000000222
+func0000000000000842:                   # @func0000000000000842
 	testq	%rdx, %rdx
 	sete	%al
 	testq	%rsi, %rsi
@@ -24,7 +16,7 @@ func0000000000000222:                   # @func0000000000000222
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	sete	%cl
@@ -32,7 +24,7 @@ func0000000000000022:                   # @func0000000000000022
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000238:                   # @func0000000000000238
+func0000000000000858:                   # @func0000000000000858
 	testq	%rdx, %rdx
 	sete	%al
 	testq	%rsi, %rsi
@@ -42,7 +34,7 @@ func0000000000000238:                   # @func0000000000000238
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	setne	%cl

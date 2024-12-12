@@ -1,4 +1,4 @@
-func0000000000000711:                   # @func0000000000000711
+func0000000000001c21:                   # @func0000000000001c21
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vptestnmb	%xmm0, %xmm0, %k1
@@ -23,7 +23,7 @@ func0000000000000711:                   # @func0000000000000711
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000007c1:                   # @func00000000000007c1
+func0000000000001d81:                   # @func0000000000001d81
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpcmpeqb	.LCPI1_0(%rip), %xmm0, %k1

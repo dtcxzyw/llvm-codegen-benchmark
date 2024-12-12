@@ -12,18 +12,19 @@ define i1 @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp uge ptr %4, %1
+  %5 = icmp ule ptr %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/cuddBddAbs.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/darBalance.c.ll
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/dsdProc.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
+; boost/optimized/attribute_name.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
@@ -44,8 +45,8 @@ define i1 @func0000000000000002(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp eq ptr %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp eq ptr %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -67,8 +68,8 @@ define i1 @func0000000000000018(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ne ptr %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp ne ptr %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -79,8 +80,8 @@ define i1 @func0000000000000012(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -524288
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ule ptr %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp uge ptr %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -91,7 +92,7 @@ define i1 @func0000000000000008(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ugt ptr %4, %1
+  %5 = icmp ult ptr %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }

@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 91 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -52,8 +52,6 @@
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/lib_isblank.c.ll
-; nuttx/optimized/lib_iscntrl.c.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/matrix_c.cpp.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
@@ -64,8 +62,6 @@
 ; openmpi/optimized/comm.ll
 ; openmpi/optimized/pml_ob1_accelerator.ll
 ; openssl/optimized/clienthellotest-bin-clienthellotest.ll
-; openssl/optimized/ffc_internal_test-bin-ffc_internal_test.ll
-; openssl/optimized/libdefault-lib-decode_msblob2key.ll
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-extensions.ll
@@ -99,12 +95,12 @@
 define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 7
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 50 occurrences:
+; 47 occurrences:
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; cpython/optimized/sre.ll
@@ -127,8 +123,6 @@ entry:
 ; git/optimized/repack.ll
 ; git/optimized/setup.ll
 ; graphviz/optimized/shapes.c.ll
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; hwloc/optimized/hwloc-bind.ll
 ; hyperscan/optimized/rose_build_convert.cpp.ll
 ; jq/optimized/linker.ll
@@ -137,10 +131,8 @@ entry:
 ; memcached/optimized/memcached-logger.ll
 ; memcached/optimized/memcached_debug-logger.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
-; nuttx/optimized/lib_isalnum.c.ll
 ; openblas/optimized/dlasd0.c.ll
 ; openjdk/optimized/DrawPolygons.ll
-; openssl/optimized/libdefault-lib-decode_msblob2key.ll
 ; openssl/optimized/libssl-lib-ssl_cert.ll
 ; openssl/optimized/libssl-shlib-ssl_cert.ll
 ; openssl/optimized/openssl-bin-x509.ll
@@ -155,11 +147,12 @@ entry:
 ; wireshark/optimized/file.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; xgboost/optimized/charconv.cc.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -187,30 +180,26 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 8 occurrences:
 ; cmake/optimized/xxhash.c.ll
 ; icu/optimized/csrucode.ll
-; libwebp/optimized/alpha_enc.c.ll
 ; linux/optimized/xxhash.ll
-; llvm/optimized/SemaARM.cpp.ll
 ; lz4/optimized/xxhash.c.ll
 ; php/optimized/hash_xxhash.ll
 ; php/optimized/pcre2_dfa_match.ll
-; quickjs/optimized/quickjs.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; zstd/optimized/xxhash.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 15
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 19 occurrences:
+; 11 occurrences:
 ; darktable/optimized/filtering.c.ll
-; flac/optimized/format.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; graphviz/optimized/strmatch.c.ll
 ; hwloc/optimized/traversal.ll
@@ -219,15 +208,8 @@ entry:
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/lib_isalnum.c.ll
-; nuttx/optimized/lib_iswctype.c.ll
-; nuttx/optimized/lib_isxdigit.c.ll
 ; php/optimized/pcre2_dfa_match.ll
-; postgres/optimized/d2s.ll
-; postgres/optimized/d2s_shlib.ll
-; postgres/optimized/d2s_srv.ll
 ; redis/optimized/server.ll
-; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
@@ -238,13 +220,35 @@ entry:
 }
 
 ; 2 occurrences:
+; flac/optimized/format.c.ll
+; xgboost/optimized/charconv.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 65536
+  %3 = or i1 %2, %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; icu/optimized/chnsecal.ll
-; nuttx/optimized/lib_iscntrl.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 11
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; libwebp/optimized/alpha_enc.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000060(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 192
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

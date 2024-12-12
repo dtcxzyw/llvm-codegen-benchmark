@@ -11,3 +11,9 @@ func0000000000000011:                   # @func0000000000000011
 	movsbl	%sil, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	leal	(%rdx,%rdx,4), %eax
+	leal	(%rdi,%rax,2), %ecx
+	movsbl	%sil, %eax
+	addl	%ecx, %eax
+	retq

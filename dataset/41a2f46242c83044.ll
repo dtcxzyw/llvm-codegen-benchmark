@@ -9,23 +9,23 @@
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i1 %1, i1 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = zext i1 %1 to i64
   %6 = add nuw nsw i64 %4, %5
-  %7 = icmp ult i64 %6, 11
+  %7 = icmp samesign ult i64 %6, 11
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i1 %1, i1 %2) #0 {
+define i1 @func000000000000010a(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = zext i1 %1 to i64
   %6 = add i64 %4, %5
   %7 = icmp sgt i64 %6, -1
@@ -36,10 +36,10 @@ entry:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i1 %1, i1 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = zext i1 %1 to i64
   %6 = add i64 %4, %5
   %7 = icmp sgt i64 %6, -1
@@ -53,7 +53,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = zext i1 %1 to i64
   %6 = add i64 %4, %5
   %7 = icmp ugt i64 %6, 2047
@@ -69,7 +69,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = zext i1 %1 to i64
   %6 = add i64 %4, %5
   %7 = icmp ult i64 %6, 2
@@ -82,7 +82,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = zext i1 %1 to i64
   %6 = add i64 %4, %5
   %7 = icmp sgt i64 %6, -1

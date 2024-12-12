@@ -1,5 +1,5 @@
 
-; 112 occurrences:
+; 107 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -7,6 +7,7 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; assimp/optimized/B3DImporter.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
 ; clamav/optimized/js-norm.c.ll
 ; clamav/optimized/phishcheck.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -38,15 +39,12 @@
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; jq/optimized/unicode.ll
-; jq/optimized/unicode_fold1_key.ll
-; jq/optimized/unicode_fold3_key.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; linux/optimized/dmaengine.ll
 ; linux/optimized/iommu.ll
-; linux/optimized/nfs3xdr.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
@@ -68,9 +66,6 @@
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; node/optimized/simdutf.ll
 ; oniguruma/optimized/unicode.ll
-; oniguruma/optimized/unicode_fold1_key.ll
-; oniguruma/optimized/unicode_fold3_key.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; opencv/optimized/anisodiff.cpp.ll
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; opencv/optimized/color_hsv.dispatch.cpp.ll
@@ -300,6 +295,8 @@ entry:
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_bcread.ll
 ; luajit/optimized/lj_bcread_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_table.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -317,8 +314,6 @@ entry:
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; nori/optimized/imagepanel.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/basicretinafilter.cpp.ll
@@ -415,11 +410,13 @@ entry:
   ret i64 %5
 }
 
-; 279 occurrences:
+; 281 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/text_file_backend.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/evaluator.cc.ll
@@ -699,7 +696,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -725,7 +722,7 @@ entry:
 define i64 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -744,7 +741,8 @@ entry:
   ret i64 %5
 }
 
-; 48 occurrences:
+; 49 occurrences:
+; boost/optimized/src.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/evaluator.cc.ll
@@ -849,7 +847,8 @@ entry:
   ret i64 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; boost/optimized/src.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; opencv/optimized/scansegment.cpp.ll
@@ -882,7 +881,7 @@ entry:
 define i64 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -962,20 +961,20 @@ entry:
 define i64 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
 ; 3 occurrences:
-; icu/optimized/ubidiln.ll
+; boost/optimized/to_chars.ll
 ; libquic/optimized/padding.c.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -1010,8 +1009,19 @@ entry:
 define i64 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; icu/optimized/ubidiln.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = add i32 %3, %0
+  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 

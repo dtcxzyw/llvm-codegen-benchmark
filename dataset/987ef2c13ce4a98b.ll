@@ -9,7 +9,7 @@
 ; qemu/optimized/hw_riscv_virt.c.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 1, %0
@@ -17,14 +17,13 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AtomicExpandPass.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; qemu/optimized/hw_riscv_virt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %0
@@ -35,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %0
@@ -49,7 +48,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 1, %0
@@ -57,11 +56,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/ifDec07.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %0
@@ -76,7 +74,7 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openusd/optimized/reformat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %.highbits = lshr i64 %2, %0
@@ -87,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000069(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c9(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %0
@@ -99,7 +97,7 @@ entry:
 ; llvm/optimized/MCELFStreamer.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 1, %0
@@ -110,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000049(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 1, %0
@@ -158,7 +156,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/bio.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 4096, %0

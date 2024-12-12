@@ -5,7 +5,7 @@
 ; folly/optimized/JSONSchema.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 511
   %3 = lshr i64 %2, 9

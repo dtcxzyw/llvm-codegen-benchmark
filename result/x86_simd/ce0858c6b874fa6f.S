@@ -101,22 +101,6 @@ func0000000000000048:                   # @func0000000000000048
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI14_0:
-	.long	0x59000000                      # float 2.25179981E+15
-func0000000000000043:                   # @func0000000000000043
-	vmaxps	%zmm1, %zmm0, %zmm0
-	vcmpngeps	.LCPI14_0(%rip){1to16}, %zmm0, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI15_0:
-	.long	0x26000000                      # float 4.4408921E-16
-func0000000000000045:                   # @func0000000000000045
-	vmaxps	%zmm1, %zmm0, %zmm0
-	vcmpnleps	.LCPI15_0(%rip){1to16}, %zmm0, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
 func000000000000002b:                   # @func000000000000002b
 	vmaxps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -131,11 +115,11 @@ func0000000000000047:                   # @func0000000000000047
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI18_0:
+.LCPI16_0:
 	.long	0x3ba3d70a                      # float 0.00499999989
 func000000000000004a:                   # @func000000000000004a
 	vmaxps	%zmm1, %zmm0, %zmm0
-	vcmpleps	.LCPI18_0(%rip){1to16}, %zmm0, %k0
+	vcmpleps	.LCPI16_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

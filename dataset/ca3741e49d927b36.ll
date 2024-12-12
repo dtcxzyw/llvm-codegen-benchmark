@@ -214,7 +214,7 @@
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %0, %1
@@ -222,7 +222,7 @@ entry:
   ret i1 %5
 }
 
-; 260 occurrences:
+; 261 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
@@ -238,6 +238,7 @@ entry:
 ; assimp/optimized/StepExporter.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/sort_by_side.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/sensitivity_analysis.cpp.ll
 ; casadi/optimized/test_linsol.cpp.ll
@@ -484,7 +485,7 @@ entry:
 ; yosys/optimized/test_autotb.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000058(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ne ptr %0, null
@@ -492,7 +493,7 @@ entry:
   ret i1 %5
 }
 
-; 72 occurrences:
+; 71 occurrences:
 ; assimp/optimized/zip.c.ll
 ; c3c/optimized/types.c.ll
 ; cpython/optimized/_bz2module.ll
@@ -506,7 +507,6 @@ entry:
 ; cpython/optimized/classobject.ll
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/cursor.ll
-; cpython/optimized/enumobject.ll
 ; cpython/optimized/floatobject.ll
 ; cpython/optimized/itertoolsmodule.ll
 ; cpython/optimized/listobject.ll
@@ -566,7 +566,7 @@ entry:
 ; z3/optimized/euf_bv_plugin.cpp.ll
 ; z3/optimized/q_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000302(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq ptr %0, %1
@@ -666,7 +666,7 @@ entry:
 ; openusd/optimized/testUsdResolveTarget.cpp.ll
 ; rocksdb/optimized/merging_iterator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000318(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne ptr %0, null
@@ -677,7 +677,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000032(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000052(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp uge ptr %0, %1
@@ -688,7 +688,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a2(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000142(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %1, %2
   %4 = icmp eq ptr %0, null
@@ -702,7 +702,7 @@ entry:
 ; libuv/optimized/signal.c.ll
 ; node/optimized/signal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000308(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ult ptr %0, %1
@@ -713,7 +713,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/utresrc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000138(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000258(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
   %4 = icmp ne ptr %0, null
@@ -724,7 +724,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/setcpuaffinity.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000102(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp eq ptr %0, null
@@ -735,7 +735,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000122(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000242(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
   %4 = icmp eq ptr %0, null
@@ -746,7 +746,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000118(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ne ptr %0, null

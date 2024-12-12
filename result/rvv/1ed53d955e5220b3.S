@@ -1,4 +1,4 @@
-func0000000000000f18:                   # @func0000000000000f18
+func0000000000003c38:                   # @func0000000000003c38
 	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12

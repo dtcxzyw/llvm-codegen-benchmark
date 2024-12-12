@@ -39,7 +39,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpneqb	.LCPI1_0(%rip), %xmm0, %k1
@@ -63,7 +63,7 @@ func0000000000000051:                   # @func0000000000000051
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltub	.LCPI2_0(%rip), %xmm0, %k1

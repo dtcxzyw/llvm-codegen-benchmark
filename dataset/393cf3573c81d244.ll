@@ -1,10 +1,11 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/cecCorr.c.ll
+; abc/optimized/cuddSat.c.ll
 ; abc/optimized/fraBmc.c.ll
 ; abc/optimized/fraigUtil.c.ll
 ; abc/optimized/giaDup.c.ll
@@ -15,7 +16,7 @@
 ; abc/optimized/ivyUtil.c.ll
 ; abc/optimized/lpkMap.c.ll
 ; abc/optimized/mapperRefs.c.ll
-; c3c/optimized/decltable.c.ll
+; abc/optimized/sswSat.c.ll
 ; c3c/optimized/symtab.c.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/psaux.c.ll
@@ -51,7 +52,7 @@
 define i32 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

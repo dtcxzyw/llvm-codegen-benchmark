@@ -31,7 +31,16 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 13 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; ozz-animation/optimized/track.cc.ll

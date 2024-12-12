@@ -1,8 +1,9 @@
 
-; 146 occurrences:
+; 150 occurrences:
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; abseil-cpp/optimized/time_zone_posix.cc.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/static_string.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/str.c.ll
@@ -49,6 +50,7 @@
 ; luau/optimized/Linter.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
 ; mold/optimized/cmdline.cc.ARM32.cc.ll
@@ -146,6 +148,8 @@
 ; slurm/optimized/hostlist.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-websocket.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i8 %0) #0 {
 entry:
@@ -207,8 +211,10 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; llvm/optimized/SelectionDAGISel.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i8 %0) #0 {
 entry:

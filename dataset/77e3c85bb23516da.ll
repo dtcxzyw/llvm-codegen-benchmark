@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/cppc_acpi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/tcp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind

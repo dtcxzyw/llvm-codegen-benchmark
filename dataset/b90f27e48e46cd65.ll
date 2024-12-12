@@ -9,7 +9,7 @@ entry:
   %4 = and i32 %3, 255
   %5 = and i32 %1, 65535
   %6 = mul nuw nsw i32 %5, %4
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = and i32 %3, 7
   %5 = and i32 %1, 7
   %6 = mul nuw nsw i32 %5, %4
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 

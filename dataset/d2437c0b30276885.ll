@@ -15,11 +15,11 @@ entry:
 ; openblas/optimized/drot_k.c.ll
 ; openblas/optimized/srot_k.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
+define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 6
   %2 = and i64 %0, 24
-  %3 = icmp ult i64 %2, %1
+  %3 = icmp samesign ult i64 %2, %1
   ret i1 %3
 }
 
@@ -50,23 +50,12 @@ entry:
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
+define i1 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9223372036854775804
   %2 = and i64 %0, 9223372036854775806
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp samesign ugt i64 %2, %1
   ret i1 %3
-}
-
-; 2 occurrences:
-; openblas/optimized/dgemv_n.c.ll
-; openblas/optimized/dgemv_t.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 2044
-  %2 = icmp ne i64 %1, 0
-  ret i1 %2
 }
 
 attributes #0 = { nounwind }

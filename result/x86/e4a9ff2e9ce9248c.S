@@ -28,3 +28,13 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	movl	%edx, %ecx
+	orl	$8192, %ecx                     # imm = 0x2000
+	testb	$1, %sil
+	cmovnel	%edx, %ecx
+	movl	%ecx, %eax
+	orl	$256, %eax                      # imm = 0x100
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
+	retq

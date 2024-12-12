@@ -1,10 +1,16 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001e1:                   # @func00000000000001e1
 	leaq	192(%rsi), %rax
 	leaq	128(%rsi), %rcx
 	cmpq	%rdi, %rcx
 	cmoveq	%rcx, %rax
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000141:                   # @func0000000000000141
+	leaq	-144(%rsi), %rax
+	leaq	-72(%rsi), %rcx
+	cmpq	%rdi, %rcx
+	cmoveq	%rcx, %rax
+	retq
+func0000000000000144:                   # @func0000000000000144
 	leaq	-2(%rsi), %rax
 	leaq	-1(%rsi), %rcx
 	cmpq	%rdi, %rcx

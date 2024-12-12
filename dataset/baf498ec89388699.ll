@@ -8,10 +8,10 @@
 ; rustfmt-rs/optimized/3n0n7c4xrusd0kzl.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 24
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -25,7 +25,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 10
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -34,10 +34,10 @@ entry:
 ; cmake/optimized/openssl.c.ll
 ; curl/optimized/libcurl_la-openssl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 1000
-  %4 = icmp sle i64 %3, %1
+  %4 = icmp sge i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -57,21 +57,10 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 1000000
-  %4 = icmp ugt i64 %3, %1
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/4i2whcl4s27dqb04.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul i64 %2, 24
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -83,7 +72,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 1000000
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -91,10 +80,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/build_policy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000075(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 1000
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp samesign ule i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -105,7 +94,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 20
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -113,10 +102,10 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/expire.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 100
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

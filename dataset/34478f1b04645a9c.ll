@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 100 occurrences:
 ; assimp/optimized/zip.c.ll
 ; c3c/optimized/target.c.ll
 ; clamav/optimized/htmlnorm.c.ll
@@ -98,6 +98,8 @@
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/pcap-common.c.ll
 ; wireshark/optimized/snoop.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i16 %0) #0 {
 entry:
@@ -128,30 +130,38 @@ entry:
   ret i8 %2
 }
 
-; 13 occurrences:
-; abseil-cpp/optimized/raw_hash_set.cc.ll
+; 7 occurrences:
 ; cpython/optimized/_codecs_jp.ll
-; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
-; linux/optimized/intel_lvds.ll
-; linux/optimized/skl_universal_plane.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
 ; wireshark/optimized/packet-fcoe.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i16 %0) #0 {
+define i8 @func0000000000000014(i16 %0) #0 {
 entry:
-  %1 = icmp ult i16 %0, 512
+  %1 = icmp samesign ult i16 %0, 512
   %2 = select i1 %1, i8 5, i8 4
   ret i8 %2
 }
 
-; 5 occurrences:
-; icu/optimized/ufmt_cmn.ll
+; 6 occurrences:
+; abseil-cpp/optimized/raw_hash_set.cc.ll
+; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
+; linux/optimized/intel_lvds.ll
+; linux/optimized/skl_universal_plane.ll
+; llvm/optimized/TargetLoweringBase.cpp.ll
+; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000004(i16 %0) #0 {
+entry:
+  %1 = icmp ult i16 %0, 128
+  %2 = select i1 %1, i8 0, i8 -128
+  ret i8 %2
+}
+
+; 4 occurrences:
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/xhci-hub.ll
 ; openusd/optimized/fvarLevel.cpp.ll
@@ -172,6 +182,16 @@ entry:
   %.not = icmp eq i16 %0, 0
   %1 = select i1 %.not, i8 4, i8 2
   ret i8 %1
+}
+
+; 1 occurrences:
+; icu/optimized/ufmt_cmn.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000018(i16 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i16 %0, 96
+  %2 = select i1 %1, i8 -39, i8 -7
+  ret i8 %2
 }
 
 attributes #0 = { nounwind }

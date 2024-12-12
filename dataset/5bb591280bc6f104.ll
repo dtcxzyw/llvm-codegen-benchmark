@@ -10,7 +10,7 @@
 ; spike/optimized/clrs32.ll
 ; spike/optimized/clz32.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000064(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 8
   %4 = select i1 %1, i32 %3, i32 %2
@@ -20,7 +20,8 @@ entry:
   ret i32 %7
 }
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/dtoa.c.ll
@@ -37,7 +38,7 @@ entry:
 ; ruby/optimized/util.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 8
   %4 = select i1 %1, i32 %3, i32 %2
@@ -76,12 +77,12 @@ entry:
 ; openssl/optimized/libcrypto-lib-x_crl.ll
 ; openssl/optimized/libcrypto-shlib-x_crl.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %2, 16
   %4 = select i1 %1, i32 %3, i32 %2
   %5 = or i32 %4, 2
-  %6 = icmp ugt i32 %0, 1
+  %6 = icmp samesign ugt i32 %0, 1
   %7 = select i1 %6, i32 %5, i32 %4
   ret i32 %7
 }
@@ -91,7 +92,7 @@ entry:
 ; linux/optimized/vfs_inode.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1048576
   %4 = select i1 %1, i32 %3, i32 %2
@@ -125,12 +126,12 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000078(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 8
   %4 = select i1 %1, i32 %3, i32 %2
   %5 = or disjoint i32 %4, 4
-  %6 = icmp ugt i32 %0, 15
+  %6 = icmp samesign ugt i32 %0, 15
   %7 = select i1 %6, i32 %5, i32 %4
   ret i32 %7
 }
@@ -139,7 +140,7 @@ entry:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; wireshark/optimized/ipaddr.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func000000000000006a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1048576
   %4 = select i1 %1, i32 %3, i32 %2
@@ -150,9 +151,22 @@ entry:
 }
 
 ; 1 occurrences:
+; sentencepiece/optimized/int128.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000068(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %2, 16
+  %4 = select i1 %1, i32 %3, i32 %2
+  %5 = or disjoint i32 %4, 8
+  %6 = icmp ugt i32 %0, 255
+  %7 = select i1 %6, i32 %5, i32 %4
+  ret i32 %7
+}
+
+; 1 occurrences:
 ; wireshark/optimized/ipaddr.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func000000000000004a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 8
   %4 = select i1 %1, i32 %3, i32 %2

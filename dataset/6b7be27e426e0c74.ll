@@ -1,5 +1,5 @@
 
-; 163 occurrences:
+; 166 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; arrow/optimized/uri.cc.ll
 ; c3c/optimized/sema_expr.c.ll
@@ -59,7 +59,6 @@
 ; libzmq/optimized/req.cpp.ll
 ; linux/optimized/hugetlb_cgroup.ll
 ; linux/optimized/neighbour.ll
-; linux/optimized/nsparse.ll
 ; linux/optimized/tty_jobctrl.ll
 ; llvm/optimized/LexicalScopes.cpp.ll
 ; llvm/optimized/MCObjectStreamer.cpp.ll
@@ -67,6 +66,7 @@
 ; llvm/optimized/SemaPseudoObject.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
+; lvgl/optimized/lv_svg_token.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cmesh.cpp.ll
@@ -78,7 +78,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_layer.cpp.ll
@@ -102,7 +101,6 @@
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -112,7 +110,6 @@
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/seams.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
@@ -163,8 +160,14 @@
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
 ; wireshark/optimized/logcat.c.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, %0
   %3 = icmp eq ptr %0, null
@@ -190,7 +193,7 @@ entry:
 ; postgres/optimized/snprintf_shlib.ll
 ; postgres/optimized/snprintf_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ult ptr %1, %0
   %3 = icmp eq ptr %0, null
@@ -203,7 +206,7 @@ entry:
 ; php/optimized/pcre2_match.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000101(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ugt ptr %1, %0
   %3 = icmp eq ptr %0, null
@@ -215,7 +218,7 @@ entry:
 ; linux/optimized/tick-broadcast.ll
 ; redis/optimized/setproctitle.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, %0
   %3 = icmp eq ptr %0, null

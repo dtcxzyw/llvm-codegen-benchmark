@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 49 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; cmake/optimized/process.c.ll
 ; cmake/optimized/url.c.ll
@@ -8,7 +8,6 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libuv/optimized/process.c.ll
-; linux/optimized/attr.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/i915_gem_evict.ll
 ; linux/optimized/skl_universal_plane.ll

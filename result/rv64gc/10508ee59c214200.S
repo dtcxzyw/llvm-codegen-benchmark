@@ -10,6 +10,13 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 1
 	addw	a0, a0, a1
 	ret
+func000000000000000b:                   # @func000000000000000b
+	lui	a3, 4080
+	and	a2, a2, a3
+	or	a1, a1, a2
+	slli	a0, a0, 24
+	addw	a0, a0, a1
+	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a2, a2, 1
 	or	a1, a1, a2

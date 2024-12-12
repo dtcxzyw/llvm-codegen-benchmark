@@ -19,11 +19,19 @@ func0000000000000004:                   // @func0000000000000004
 	add	x0, x0, x2
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	and	x8, x2, #0x38
 	lsl	x8, x8, #1
 	orr	x8, x8, x1, lsl #7
+	add	x0, x0, x8
+	ret
+                                        // -- End function
+func000000000000000e:                   // @func000000000000000e
+// %bb.0:                               // %entry
+	and	x8, x2, #0x1
+	lsl	x8, x8, #2
+	orr	x8, x8, x1, lsl #3
 	add	x0, x0, x8
 	ret
                                         // -- End function

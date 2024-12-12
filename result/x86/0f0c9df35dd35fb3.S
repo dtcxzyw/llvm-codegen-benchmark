@@ -1,4 +1,4 @@
-func0000000000000079:                   # @func0000000000000079
+func00000000000000f9:                   # @func00000000000000f9
 	shrq	$3, %rdx
 	movl	%edx, %eax
 	incq	%rsi
@@ -6,7 +6,7 @@ func0000000000000079:                   # @func0000000000000079
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000f8:                   # @func00000000000000f8
 	shrq	$3, %rdx
 	movl	%edx, %eax
 	addq	$32, %rsi
@@ -14,7 +14,7 @@ func0000000000000078:                   # @func0000000000000078
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	shrq	$3, %rdx
 	movl	%edx, %eax
 	incq	%rsi

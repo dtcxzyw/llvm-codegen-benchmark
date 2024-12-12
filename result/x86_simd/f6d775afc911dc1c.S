@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000382:                   # @func0000000000000382
+func0000000000000b02:                   # @func0000000000000b02
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k1
 	vptestmd	%ymm1, %ymm1, %k0 {%k1}
 	vptestnmb	%xmm0, %xmm0, %k1
@@ -59,7 +59,7 @@ func0000000000000382:                   # @func0000000000000382
 	.zero	1
 .LCPI1_1:
 	.long	10                              # 0xa
-func0000000000000894:                   # @func0000000000000894
+func0000000000002114:                   # @func0000000000002114
 	vpcmpltub	.LCPI1_0(%rip), %xmm0, %k1
 	vpcmpltud	.LCPI1_1(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpcmpgtb	.LCPI1_2(%rip), %xmm0, %k1
@@ -101,7 +101,7 @@ func0000000000000894:                   # @func0000000000000894
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000222:                   # @func0000000000000222
+func0000000000000842:                   # @func0000000000000842
 	vpcmpeqb	.LCPI2_0(%rip), %xmm0, %k1
 	vptestnmd	%ymm1, %ymm1, %k0 {%k1}
 	vpcmpeqb	.LCPI2_1(%rip), %xmm0, %k1
@@ -145,7 +145,7 @@ func0000000000000222:                   # @func0000000000000222
 	.zero	1
 .LCPI3_1:
 	.long	1                               # 0x1
-func0000000000000302:                   # @func0000000000000302
+func0000000000000a02:                   # @func0000000000000a02
 	vpcmpeqb	.LCPI3_0(%rip), %xmm0, %k1
 	vpcmpnleud	.LCPI3_1(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpcmpeqb	.LCPI3_2(%rip), %xmm0, %k1

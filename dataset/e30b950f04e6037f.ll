@@ -108,7 +108,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = icmp ne i8 %2, 2

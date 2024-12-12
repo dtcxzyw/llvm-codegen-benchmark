@@ -78,7 +78,7 @@ entry:
 ; hermes/optimized/Conversions.cpp.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -107,7 +107,7 @@ entry:
 ; luajit/optimized/lj_meta.ll
 ; luajit/optimized/lj_meta_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

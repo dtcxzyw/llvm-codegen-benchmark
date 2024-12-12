@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 1 occurrences:
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {

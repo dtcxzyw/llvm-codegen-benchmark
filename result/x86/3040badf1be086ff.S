@@ -5,6 +5,6 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movl	%esi, %eax
-	shrl	$24, %eax
+	shrl	$8, %eax
 	xorl	%edi, %eax
 	retq

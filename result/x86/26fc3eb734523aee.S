@@ -20,6 +20,11 @@ func0000000000000009:                   # @func0000000000000009
 	sarl	%eax
 	subl	%ecx, %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	leal	(%rsi,%rsi,2), %eax
+	sarl	$10, %edi
+	addl	%edi, %eax
+	retq
 func0000000000000014:                   # @func0000000000000014
 	sarl	$24, %esi
 	leal	(%rdi,%rdi,2), %eax

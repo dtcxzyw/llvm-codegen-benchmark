@@ -1,8 +1,9 @@
 
-; 107 occurrences:
+; 111 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -107,6 +108,9 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000003(i128 %0) #0 {
 entry:
@@ -115,13 +119,14 @@ entry:
   ret i128 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/to_chars.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000002(i128 %0) #0 {
 entry:
-  %1 = mul nuw i128 %0, 18446744073709551615
-  %2 = and i128 %1, 18446744073709551615
+  %1 = mul nuw i128 %0, 10000000000000000000
+  %2 = and i128 %1, 18446744073709027328
   ret i128 %2
 }
 

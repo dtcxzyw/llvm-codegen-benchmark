@@ -18,28 +18,27 @@ entry:
 ; slurm/optimized/step_mgr.ll
 ; velox/optimized/MemoryAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/cuddSubsetSP.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; eastl/optimized/EATextUtil.cpp.ll
-; graphviz/optimized/quad_prog_vpsc.c.ll
 ; icu/optimized/bocsu.ll
 ; opencv/optimized/colormap.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; xgboost/optimized/charconv.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -69,11 +68,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/bocsu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 30292
   %4 = sub nsw i32 %0, %3
-  %5 = icmp ugt i32 %4, -10669
+  %5 = icmp samesign ugt i32 %4, -10669
   ret i1 %5
 }
 
@@ -81,11 +80,11 @@ entry:
 ; arrow/optimized/decimal.cc.ll
 ; icu/optimized/bocsu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 30292
   %4 = sub nsw i32 %0, %3
-  %5 = icmp ult i32 %4, 10668
+  %5 = icmp samesign ult i32 %4, 10668
   ret i1 %5
 }
 

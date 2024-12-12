@@ -1,6 +1,19 @@
 
-; 54 occurrences:
+; 67 occurrences:
 ; abc/optimized/cuddPriority.c.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/partition.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/cvodes.c.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/levenberg_marquardt_strategy.cc.ll
@@ -59,18 +72,30 @@ define double @func0000000000000022(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }
 
-; 21 occurrences:
+; 33 occurrences:
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/partition.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/kinsol.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/blockpath.c.ll
-; gromacs/optimized/dlanst.cpp.ll
 ; gromacs/optimized/dlasd2.cpp.ll
 ; gromacs/optimized/dlasd7.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -91,7 +116,7 @@ define double @func0000000000000044(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp olt double %4, %0
+  %5 = fcmp ogt double %0, %4
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }
@@ -103,7 +128,7 @@ define double @func00000000000000ac(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ole double %4, %0
+  %5 = fcmp oge double %0, %4
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }
@@ -115,7 +140,7 @@ define double @func00000000000000ca(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp oge double %4, %0
+  %5 = fcmp ole double %0, %4
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }
@@ -131,7 +156,7 @@ define double @func00000000000000cc(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ole double %4, %0
+  %5 = fcmp oge double %0, %4
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }
@@ -144,7 +169,7 @@ define double @func0000000000000024(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp olt double %4, %0
+  %5 = fcmp ogt double %0, %4
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }

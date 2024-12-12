@@ -1,9 +1,10 @@
 
-; 100 occurrences:
+; 94 occurrences:
 ; abc/optimized/trees.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; assimp/optimized/3DSExporter.cpp.ll
+; boost/optimized/numeric.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/encode.c.ll
@@ -19,7 +20,6 @@
 ; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/collationsets.ll
 ; icu/optimized/dtfmtsym.ll
-; icu/optimized/dtptngen.ll
 ; icu/optimized/esctrn.ll
 ; icu/optimized/extradata.ll
 ; icu/optimized/messagepattern.ll
@@ -29,7 +29,6 @@
 ; icu/optimized/ucharstrieiterator.ll
 ; icu/optimized/unistr.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; libevent/optimized/evmap.c.ll
 ; libjpeg-turbo/optimized/jdarith.c.ll
 ; libjpeg-turbo/optimized/jdphuff.c.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
@@ -37,12 +36,10 @@
 ; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/acct.ll
-; linux/optimized/compat.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/deftree.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/ff-memless.ll
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/hdac_sysfs.ll
 ; linux/optimized/hub.ll
@@ -51,16 +48,16 @@
 ; linux/optimized/netdev.ll
 ; linux/optimized/selftests.ll
 ; linux/optimized/trace_probe.ll
-; linux/optimized/uid16.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
 ; llvm/optimized/JSON.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/SemaLambda.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_roller.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; minetest/optimized/inventorymanager.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -69,7 +66,6 @@
 ; oiio/optimized/texture3d.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/bitmatrix.cpp.ll
-; opencv/optimized/ts_func.cpp.ll
 ; openexr/optimized/ImfCRgbaFile.cpp.ll
 ; openjdk/optimized/jdphuff.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
@@ -80,13 +76,11 @@
 ; openusd/optimized/mvref_common.c.ll
 ; pocketpy/optimized/compiler.cpp.ll
 ; postgres/optimized/bufpage.ll
-; postgres/optimized/heapam.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
-; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastRasterization.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
@@ -108,7 +102,7 @@ entry:
   ret i16 %4
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/flow_dissector.ll
 ; openjdk/optimized/classFileParser.ll
@@ -118,10 +112,8 @@ entry:
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; wireshark/optimized/in_cksum.c.ll
-; wireshark/optimized/packet-usb-i1d3.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -130,13 +122,12 @@ entry:
   ret i16 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; git/optimized/merge-ort.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/commit.ll
 ; linux/optimized/tcp_ipv6.ll
 ; llvm/optimized/RISCVTargetParser.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
 entry:

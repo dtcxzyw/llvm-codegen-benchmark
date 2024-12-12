@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 93 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/cuddPriority.c.ll
@@ -37,7 +37,6 @@
 ; gromacs/optimized/hxprops.cpp.ll
 ; icu/optimized/chnsecal.ll
 ; icu/optimized/csrmbcs.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/indiancal.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll

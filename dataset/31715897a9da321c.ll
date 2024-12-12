@@ -4,7 +4,7 @@
 ; openmpi/optimized/ompi_datatype_create_darray.ll
 ; xgboost/optimized/broadcast.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -1
   %3 = select i1 %2, i32 1, i32 %1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 256, i32 %1

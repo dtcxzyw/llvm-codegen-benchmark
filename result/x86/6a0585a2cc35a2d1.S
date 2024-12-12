@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	xorl	%eax, %eax
 	cmpl	$4, %edx
 	sete	%al
@@ -7,7 +7,7 @@ func0000000000000088:                   # @func0000000000000088
 	setae	%al
 	andb	%dil, %al
 	retq
-func00000000000000bc:                   # @func00000000000000bc
+func000000000000016c:                   # @func000000000000016c
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	sete	%al

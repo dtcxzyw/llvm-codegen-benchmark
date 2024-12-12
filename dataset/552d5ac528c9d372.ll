@@ -324,4 +324,16 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; quest/optimized/QuEST_common.c.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000cc(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 2
+  %3 = add nuw nsw i64 %2, 4
+  %4 = shl i64 %0, 2
+  %5 = sub i64 %3, %4
+  ret i64 %5
+}
+
 attributes #0 = { nounwind }

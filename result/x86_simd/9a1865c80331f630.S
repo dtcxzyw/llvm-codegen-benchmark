@@ -48,11 +48,3 @@ func0000000000000033:                   # @func0000000000000033
 	vmovdqu8	.LCPI1_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [253,253,253,253,253,253,253,253,u,u,u,u,u,u,u,u]
 	vzeroupper
 	retq
-.LCPI2_0:
-	.long	16                              # 0x10
-func0000000000000010:                   # @func0000000000000010
-	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm1, %k1
-	vpmovdb	%ymm0, %xmm0
-	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
-	vzeroupper
-	retq

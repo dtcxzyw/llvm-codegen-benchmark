@@ -45,14 +45,15 @@
 define i128 @func0000000000000004(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = zext i64 %3 to i128
   %5 = mul nuw i128 %4, 11376068507788127593
   %6 = lshr i128 %5, 64
   ret i128 %6
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -155,10 +156,23 @@ entry:
 define i128 @func00000000000000a6(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = zext i64 %3 to i128
   %5 = mul nuw nsw i128 %4, 2361183241434822607
   %6 = lshr i128 %5, 71
+  ret i128 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i128 @func00000000000000fe(i64 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i128 %1 to i64
+  %3 = add nuw nsw i64 %0, %2
+  %4 = zext nneg i64 %3 to i128
+  %5 = mul nuw nsw i128 %4, 3022314549036573
+  %6 = lshr i128 %5, 78
   ret i128 %6
 }
 

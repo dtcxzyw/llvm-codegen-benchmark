@@ -17,7 +17,14 @@ entry:
   ret i64 %6
 }
 
-; 11 occurrences:
+; 18 occurrences:
+; clamav/optimized/upx.c.ll
+; duckdb/optimized/ub_duckdb_parallel.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/UDTLayout.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
@@ -30,25 +37,21 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
-  %4 = getelementptr i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
 
-; 109 occurrences:
-; clamav/optimized/upx.c.ll
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
+; 103 occurrences:
 ; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -97,7 +100,6 @@ entry:
 ; llvm/optimized/ParseCXXInlineMethods.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
@@ -140,7 +142,6 @@ entry:
 ; llvm/optimized/TransZeroOutPropsInDealloc.cpp.ll
 ; llvm/optimized/Transforms.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
-; llvm/optimized/UDTLayout.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/UncountedCallArgsChecker.cpp.ll
 ; llvm/optimized/UncountedLambdaCapturesChecker.cpp.ll
@@ -150,11 +151,11 @@ entry:
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967292
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

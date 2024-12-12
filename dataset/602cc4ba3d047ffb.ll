@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, i32 %1) #0 {
 entry:
@@ -10,8 +11,9 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(float %0, i32 %1) #0 {
 entry:

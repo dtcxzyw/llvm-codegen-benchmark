@@ -1,35 +1,35 @@
-func0000000000000021:                   # @func0000000000000021
-	cmpw	%si, %dx
+func0000000000000041:                   # @func0000000000000041
+	cmpw	%dx, %si
 	sete	%al
 	andb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	cmpw	%si, %dx
+	cmpw	%dx, %si
 	sete	%al
 	andb	%dil, %al
 	retq
 func000000000000000b:                   # @func000000000000000b
-	cmpw	%si, %dx
-	setle	%al
+	cmpw	%dx, %si
+	setge	%al
 	andb	%dil, %al
 	retq
 func0000000000000009:                   # @func0000000000000009
-	cmpw	%si, %dx
-	setbe	%al
+	cmpw	%dx, %si
+	setae	%al
 	andb	%dil, %al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	cmpw	%si, %dx
+	cmpw	%dx, %si
 	setne	%al
 	andb	%dil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	cmpw	%si, %dx
-	seta	%al
+	cmpw	%dx, %si
+	setb	%al
 	andb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpw	%si, %dx
-	setb	%al
+	cmpw	%dx, %si
+	seta	%al
 	andb	%dil, %al
 	retq

@@ -34,3 +34,15 @@ func000000000000000a:                   # @func000000000000000a
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$33, %rdx
+	setb	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpq	$16, %rdx
+	setae	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq

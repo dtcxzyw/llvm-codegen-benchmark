@@ -2,28 +2,16 @@
 ; 1 occurrences:
 ; minetest/optimized/clientmap.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = lshr i64 %3, 1
-  %5 = and i64 %4, 4294967295
-  %6 = add i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; minetest/optimized/clientmap.cpp.ll
-; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = lshr i64 %3, 1
   %5 = and i64 %4, 4294967295
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acecXor.c.ll
@@ -57,7 +45,6 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
-; yosys/optimized/calc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -68,11 +55,10 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; meshlab/optimized/matching.cpp.ll
 ; wasmedge/optimized/elem.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
-; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -94,7 +80,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 4294967295
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

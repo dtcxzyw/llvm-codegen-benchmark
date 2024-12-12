@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addq	%rsi, %rdx
 	shrq	%rsi
 	testb	$1, %dil

@@ -26,15 +26,11 @@ func0000000000000025:                   # @func0000000000000025
 	leal	(%rdx,%rsi), %eax
 	orq	%rdi, %rax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000037:                   # @func0000000000000037
 	leal	(%rdx,%rsi), %eax
 	orq	%rdi, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	leal	(%rdx,%rsi), %eax
-	orq	%rdi, %rax
-	retq
-func0000000000000037:                   # @func0000000000000037
 	leal	(%rdx,%rsi), %eax
 	orq	%rdi, %rax
 	retq

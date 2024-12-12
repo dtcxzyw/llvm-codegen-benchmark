@@ -14,10 +14,9 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/block_vhdx-log.c.ll
-; slurm/optimized/ebpf.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000063d(i32 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,11 +1,11 @@
 
-; 241 occurrences:
+; 237 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/cbaReadBlif.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; arrow/optimized/cached-powers.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
+; boost/optimized/gregorian.ll
 ; bullet3/optimized/b3PrefixScanCL.ll
 ; bullet3/optimized/b3PrefixScanFloat4CL.ll
 ; bullet3/optimized/b3RadixSort32CL.ll
@@ -19,14 +19,12 @@
 ; cmake/optimized/cmGccDepfileLexer.cxx.ll
 ; cmake/optimized/cmListFileLexer.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; gromacs/optimized/scanner.cpp.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/collationsets.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; jq/optimized/lexer.ll
 ; libquic/optimized/convert.c.ll
 ; libquic/optimized/prtime.cc.ll
@@ -194,12 +192,10 @@
 ; openssl/optimized/libcrypto-lib-bn_rand.ll
 ; openssl/optimized/libcrypto-lib-ec_lib.ll
 ; openssl/optimized/libcrypto-lib-param_build.ll
-; openssl/optimized/libcrypto-lib-t_pkey.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-bn_rand.ll
 ; openssl/optimized/libcrypto-shlib-ec_lib.ll
 ; openssl/optimized/libcrypto-shlib-param_build.ll
-; openssl/optimized/libcrypto-shlib-t_pkey.ll
 ; openusd/optimized/cached-powers.cc.ll
 ; openusd/optimized/cdef.c.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -250,12 +246,11 @@ entry:
   ret i32 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; cpython/optimized/_datetimemodule.ll
 ; graphviz/optimized/gmlscan.c.ll
 ; graphviz/optimized/scan.c.ll
-; icu/optimized/ustring.ll
 ; libquic/optimized/a_object.c.ll
 ; openmpi/optimized/keyval_lex.ll
 ; openmpi/optimized/rmaps_rank_file_lex.ll

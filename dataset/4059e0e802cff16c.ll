@@ -124,7 +124,7 @@
 ; z3/optimized/spacer_context.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000126(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = sdiv i64 %2, 2
@@ -136,7 +136,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = sdiv i64 %2, 2

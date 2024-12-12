@@ -13,6 +13,19 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
+; Function Attrs: nounwind
+define float @func0000000000000042(float %0) #0 {
+entry:
+  %1 = fcmp ogt float %0, 3.600000e+02
+  %2 = select i1 %1, float %0, float 3.600000e+02
+  %3 = fcmp olt float %2, 1.000000e+00
+  %4 = select i1 %3, float 1.000000e+00, float %2
+  %5 = fmul float %4, 0x3E80000000000000
+  ret float %5
+}
+
+; 1 occurrences:
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; Function Attrs: nounwind
 define float @func00000000000000c4(float %0) #0 {

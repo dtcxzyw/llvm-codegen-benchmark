@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/gregocal.ll
 ; openjdk/optimized/intrinsicnode.ll
-; php/optimized/engine_combinedlcg.ll
 ; php/optimized/parse_posix.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
@@ -34,7 +33,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i1 %1 to i32
-  %4 = add nuw i32 %3, %2
+  %4 = add nuw i32 %2, %3
   %5 = sub i32 %0, %4
   ret i32 %5
 }

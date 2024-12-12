@@ -26,11 +26,6 @@ func0000000000000004:                   # @func0000000000000004
 	orl	$-7, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
-	cmpw	$12, %si
-	sbbw	$-1, %di
-	leal	2(%rdi), %eax
-	retq
 func0000000000000007:                   # @func0000000000000007
 	leal	10(%rdi), %eax
 	cmpw	$10, %si
@@ -41,11 +36,4 @@ func0000000000000023:                   # @func0000000000000023
 	leal	4(%rdi), %eax
 	cmpw	$11, %si
 	cmovbl	%ecx, %eax
-	retq
-func0000000000000013:                   # @func0000000000000013
-	movzwl	%si, %ecx
-	leal	374(%rdi), %edx
-	leal	401(%rdi), %eax
-	cmpl	$18944, %ecx                    # imm = 0x4A00
-	cmovael	%edx, %eax
 	retq

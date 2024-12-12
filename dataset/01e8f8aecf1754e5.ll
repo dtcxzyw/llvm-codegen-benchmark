@@ -28,6 +28,34 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003a(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 8
+  %4 = shl nuw i64 %0, 40
+  %5 = or disjoint i64 %4, %3
+  %6 = lshr i64 %5, 32
+  ret i64 %6
+}
+
+; 2 occurrences:
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
+; Function Attrs: nounwind
+define i64 @func000000000000007a(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw i64 %2, 40
+  %4 = shl nuw nsw i64 %0, 8
+  %5 = or disjoint i64 %3, %4
+  %6 = lshr i64 %5, 32
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; linux/optimized/intel_gt.ll
 ; Function Attrs: nounwind

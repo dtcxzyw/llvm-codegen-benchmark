@@ -1,6 +1,8 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -8,7 +10,7 @@
 define i32 @func0000000000000035(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sub nsw i32 1, %3
   ret i32 %4
 }
@@ -38,7 +40,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sub i32 1, %3
   ret i32 %4
 }
@@ -107,30 +109,31 @@ entry:
 define i32 @func0000000000000025(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sub nsw i32 1, %3
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; luau/optimized/lnumprint.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_dropdown.ll
 ; opencv/optimized/tracker_vit.cpp.ll
 ; php/optimized/dtoa.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sub nsw i32 2, %3
   ret i32 %4
 }
 
 ; 19 occurrences:
+; boost/optimized/to_chars.ll
 ; clamav/optimized/Bra86.c.ll
 ; clamav/optimized/BraIA64.c.ll
 ; cmake/optimized/ia64.c.ll
-; cmake/optimized/index.c.ll
 ; cmake/optimized/x86.c.ll
 ; gromacs/optimized/binaryinformation.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -150,7 +153,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sub i32 0, %3
   ret i32 %4
 }
@@ -162,7 +165,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sub i32 0, %3
   ret i32 %4
 }
@@ -173,7 +176,7 @@ entry:
 define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = sub i32 64, %3
   ret i32 %4
 }
@@ -345,7 +348,7 @@ entry:
 define i32 @func0000000000000027(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sub nuw nsw i32 2147483647, %3
   ret i32 %4
 }
@@ -356,18 +359,19 @@ entry:
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sub i32 0, %3
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sub i32 0, %3
   ret i32 %4
 }
@@ -378,7 +382,7 @@ entry:
 define i32 @func000000000000003d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = sub nsw i32 64, %3
   ret i32 %4
 }
@@ -391,7 +395,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sub nsw i32 2147483647, %3
   ret i32 %4
 }
@@ -402,7 +406,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sub nuw nsw i32 8, %3
   ret i32 %4
 }
@@ -413,7 +417,7 @@ entry:
 define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sub nsw i32 0, %3
   ret i32 %4
 }
@@ -424,7 +428,7 @@ entry:
 define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sub i32 0, %3
   ret i32 %4
 }

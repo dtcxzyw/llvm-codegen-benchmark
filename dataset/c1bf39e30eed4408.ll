@@ -1,11 +1,12 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
+; quantlib/optimized/tapcorrelations.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %2, i64 %1
-  %4 = getelementptr i8, ptr %3, i64 24
+  %3 = getelementptr i8, ptr %2, i64 %0
+  %4 = getelementptr i8, ptr %3, i64 8
   %5 = mul i64 %0, %1
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
@@ -42,10 +43,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/floodfill.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008a(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000008e(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 %0
-  %4 = getelementptr nusw i8, ptr %3, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   %5 = mul i64 %0, %1
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6

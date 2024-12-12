@@ -69,3 +69,19 @@ func0000000000000009:                   # @func0000000000000009
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
+.LCPI5_0:
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+func0000000000000023:                   # @func0000000000000023
+	vpsllw	$15, %xmm1, %xmm1
+	vpmovw2m	%xmm1, %k1
+	vpcmpltuw	.LCPI5_0(%rip), %xmm2, %k0 {%k1}
+	vpmovm2d	%k0, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	retq

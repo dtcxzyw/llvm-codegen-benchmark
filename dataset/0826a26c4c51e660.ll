@@ -1,7 +1,13 @@
 
-; 83 occurrences:
+; 88 occurrences:
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; arrow/optimized/caching.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
 ; ceres/optimized/corrector.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -47,7 +53,6 @@
 ; proj/optimized/lagrng.cpp.ll
 ; proj/optimized/mod_ster.cpp.ll
 ; proj/optimized/molodensky.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/omerc.cpp.ll
 ; proj/optimized/ortho.cpp.ll
 ; proj/optimized/qsc.cpp.ll

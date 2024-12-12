@@ -1,9 +1,8 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; darktable/optimized/introspection_ashift.c.ll
-; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_shadhi.c.ll
@@ -28,7 +27,7 @@
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fdiv float 2.000000e+00, %1
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fsub float 1.000000e+00, %3
   ret float %4
 }

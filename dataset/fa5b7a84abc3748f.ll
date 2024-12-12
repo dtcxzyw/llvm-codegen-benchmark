@@ -1,8 +1,10 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; openjdk/optimized/IntRgb.ll
 ; openjdk/optimized/IntRgbx.ll
 ; Function Attrs: nounwind

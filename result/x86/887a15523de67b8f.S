@@ -20,7 +20,7 @@ func0000000000000053:                   # @func0000000000000053
 	retq
 func0000000000000078:                   # @func0000000000000078
 	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000072:                   # @func0000000000000072
@@ -35,7 +35,7 @@ func0000000000000073:                   # @func0000000000000073
 	retq
 func0000000000000077:                   # @func0000000000000077
 	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000014:                   # @func0000000000000014

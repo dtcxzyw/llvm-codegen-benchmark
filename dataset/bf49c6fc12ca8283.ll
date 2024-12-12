@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-lib-x_pubkey.ll
 ; openssl/optimized/libcrypto-shlib-x_pubkey.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000003330(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000c630(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -43,7 +43,7 @@ entry:
 ; zlib/optimized/gzread.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000458(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001098(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -58,7 +58,7 @@ entry:
 ; libquic/optimized/infback.c.ll
 ; zlib/optimized/infback.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000448(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001088(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -75,7 +75,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; slurm/optimized/env.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001084(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -92,7 +92,7 @@ entry:
 ; wireshark/optimized/packet-someip.c.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001082(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -105,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000718(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001618(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -123,7 +123,7 @@ entry:
 ; wolfssl/optimized/ecc.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000044c(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000108c(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -136,7 +136,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000468(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000010a8(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null

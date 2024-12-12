@@ -22,7 +22,7 @@
 ; sentencepiece/optimized/sentencepiece.pb.cc.ll
 ; sentencepiece/optimized/sentencepiece_model.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(ptr %0, i64 %1) #0 {
+define i1 @func000000000000002a(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp sgt i32 %2, 0

@@ -1,16 +1,35 @@
 
-; 108 occurrences:
+; 139 occurrences:
+; boost/optimized/message.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hermes/optimized/DebugInfo.cpp.ll
 ; hermes/optimized/JSWeakMapImpl.cpp.ll
 ; hermes/optimized/RuntimeModule.cpp.ll
+; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/AArch64RegisterInfo.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/BranchProbabilityInfo.cpp.ll
+; llvm/optimized/BypassSlowDivision.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
+; llvm/optimized/CodeGenModule.cpp.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/CodeMoverUtils.cpp.ll
+; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/ContinuationRecordBuilder.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DeadStoreElimination.cpp.ll
 ; llvm/optimized/DominanceFrontier.cpp.ll
+; llvm/optimized/Evaluator.cpp.ll
+; llvm/optimized/GlobalsModRef.cpp.ll
+; llvm/optimized/IRMover.cpp.ll
+; llvm/optimized/InstCombinePHI.cpp.ll
+; llvm/optimized/JumpThreading.cpp.ll
+; llvm/optimized/LiveRangeEdit.cpp.ll
+; llvm/optimized/LoopFlatten.cpp.ll
+; llvm/optimized/LoopIdiomRecognize.cpp.ll
+; llvm/optimized/MCAssembler.cpp.ll
 ; llvm/optimized/MCInstPrinter.cpp.ll
 ; llvm/optimized/MachineDominanceFrontier.cpp.ll
 ; llvm/optimized/MachineTraceMetrics.cpp.ll
@@ -19,10 +38,22 @@
 ; llvm/optimized/Patterns.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
+; llvm/optimized/RegisterCoalescer.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; llvm/optimized/TargetRegisterInfo.cpp.ll
+; llvm/optimized/TokenAnnotator.cpp.ll
+; llvm/optimized/TypePromotion.cpp.ll
+; llvm/optimized/VPlanVerifier.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
+; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; luau/optimized/IrAnalysis.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-i386.cc.ll
@@ -109,10 +140,10 @@
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; z3/optimized/pb_sls.cpp.ll
 ; Function Attrs: nounwind
-define { ptr, i64 } @func0000000000000002(ptr %0, i32 %1) #0 {
+define { ptr, i64 } @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = insertvalue { ptr, i64 } poison, ptr %3, 0
   ret { ptr, i64 } %4
 }
@@ -124,10 +155,10 @@ entry:
 ; llvm/optimized/SemaLookup.cpp.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
-define { ptr, i32 } @func0000000000000006(ptr %0, i32 %1) #0 {
+define { ptr, i32 } @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw i16, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i16, ptr %0, i64 %2
   %4 = insertvalue { ptr, i32 } poison, ptr %3, 0
   ret { ptr, i32 } %4
 }

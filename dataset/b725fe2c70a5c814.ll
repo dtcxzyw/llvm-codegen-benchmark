@@ -1,13 +1,10 @@
 
-; 13 occurrences:
+; 10 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; hdf5/optimized/H5timer.c.ll
-; hdf5/optimized/io_timer.c.ll
 ; icu/optimized/uperf.ll
-; ipopt/optimized/IpUtils.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; wireshark/optimized/time_util.c.ll
 ; wolfssl/optimized/api.c.ll
 ; wolfssl/optimized/benchmark.c.ll
 ; wolfssl/optimized/client.c.ll

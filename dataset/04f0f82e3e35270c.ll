@@ -108,10 +108,10 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i128 %0, i128 %1, i128 %2) #0 {
+define i1 @func0000000000000141(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 32
-  %4 = add nuw i128 %3, %1
+  %4 = add nuw i128 %1, %3
   %5 = or i128 %4, %0
   %6 = icmp eq i128 %5, 0
   ret i1 %6

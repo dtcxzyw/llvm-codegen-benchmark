@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 64 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -39,6 +39,7 @@
 ; llvm/optimized/TargetLowering.cpp.ll
 ; lua/optimized/lgc.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; lvgl/optimized/lv_font.ll
 ; minetest/optimized/map.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; openjdk/optimized/generateOopMap.ll

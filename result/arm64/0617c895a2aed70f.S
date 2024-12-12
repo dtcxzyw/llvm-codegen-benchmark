@@ -28,7 +28,7 @@ func0000000000000010:                   // @func0000000000000010
 	sub	x0, x8, #2
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
 	and	x8, x2, #0xf
 	sub	x9, x0, x1

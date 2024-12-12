@@ -6,7 +6,7 @@ func000000000000000c:                   # @func000000000000000c
 .LBB0_2:                                # %entry
 	or	a0, a0, a1
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	sext.w	a2, a2
 	sltiu	a2, a2, 9
 	addi	a2, a2, -1
@@ -55,6 +55,14 @@ func0000000000000018:                   # @func0000000000000018
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func0000000000000028:                   # @func0000000000000028
+	sext.w	a2, a2
+	li	a3, 32
+	bltu	a2, a3, .LBB8_2
+	li	a1, 1
+.LBB8_2:                                # %entry
 	or	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014

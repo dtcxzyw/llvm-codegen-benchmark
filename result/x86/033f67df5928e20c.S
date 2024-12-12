@@ -1,9 +1,9 @@
 func0000000000000012:                   # @func0000000000000012
 	movslq	%edx, %rax
-	cmpw	$7, %si
+	cmpw	$6, %si
 	movl	$1, %ecx
 	cmovaeq	%rax, %rcx
-	leaq	(%rdi,%rcx,8), %rax
+	leaq	(%rdi,%rcx,4), %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movslq	%edx, %rax

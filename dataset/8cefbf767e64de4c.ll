@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; wireshark/optimized/filter_list_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000002d98(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000b318(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = icmp slt i32 %1, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/rw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000598(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001318(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = icmp slt i32 %1, 1
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jcmaster.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000002998(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000a318(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, 63
   %4 = icmp slt i32 %1, %2

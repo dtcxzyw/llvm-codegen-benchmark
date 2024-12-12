@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 56 occurrences:
 ; cmake/optimized/core.c.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; graphviz/optimized/stress.c.ll
@@ -22,7 +22,6 @@
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; node/optimized/core.ll
 ; oniguruma/optimized/regparse.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlagsy.c.ll
@@ -36,7 +35,6 @@
 ; opencv/optimized/augmented_unscented_kalman.cpp.ll
 ; opencv/optimized/unscented_kalman.cpp.ll
 ; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
-; openjdk/optimized/OGLPaints.ll
 ; openjdk/optimized/stringDedupTable.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/ir_sccp.ll
@@ -80,19 +78,7 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; openjdk/optimized/ciTypeFlow.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub i32 %0, %1
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 3
-  %5 = add nuw nsw i64 %4, 8
-  ret i64 %5
-}
-
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/decimal.cc.ll
@@ -101,6 +87,7 @@ entry:
 ; jq/optimized/jv.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
+; openjdk/optimized/OGLPaints.ll
 ; openusd/optimized/bignum.cc.ll
 ; php/optimized/zend_alloc.ll
 ; postgres/optimized/bitmapset.ll
@@ -111,6 +98,18 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
   %5 = add nuw nsw i64 %4, 4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; openjdk/optimized/ciTypeFlow.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 %0, %1
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = add nuw nsw i64 %4, 8
   ret i64 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 18 occurrences:
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
 ; rust-analyzer-rs/optimized/24c6enrnc2qfqvzp.ll
@@ -11,6 +11,13 @@
 ; syn/optimized/2khi0xu1ufmhwoo.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/481g0nj22rl2z9g.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/dwdz33j6zk3evwqybph0x5e70.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0, i64 %1) #0 {
 entry:
@@ -51,6 +58,19 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; arrow/optimized/bitmap_ops.cc.ll
+; arrow/optimized/hashing.cc.ll
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 52
+  %3 = add nsw i64 %2, -1023
+  %4 = select i1 %0, i64 -1022, i64 %3
+  ret i64 %4
+}
+
 ; 11 occurrences:
 ; cpython/optimized/_randommodule.ll
 ; entt/optimized/meta_context.cpp.ll
@@ -68,18 +88,6 @@ define i64 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = add nuw nsw i64 %2, 1
-  %4 = select i1 %0, i64 0, i64 %3
-  ret i64 %4
-}
-
-; 2 occurrences:
-; arrow/optimized/bitmap_ops.cc.ll
-; arrow/optimized/hashing.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 6
-  %3 = add nsw i64 %2, -1
   %4 = select i1 %0, i64 0, i64 %3
   ret i64 %4
 }

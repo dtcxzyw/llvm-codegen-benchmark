@@ -1,5 +1,5 @@
 
-; 174 occurrences:
+; 172 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; box2d/optimized/b2_rope.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -59,7 +59,6 @@
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
-; gromacs/optimized/slassq.cpp.ll
 ; gromacs/optimized/snrm2.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
@@ -127,7 +126,6 @@
 ; oiio/optimized/filter.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; opencv/optimized/corner.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
@@ -178,7 +176,7 @@
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, %1
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

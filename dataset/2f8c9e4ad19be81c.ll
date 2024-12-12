@@ -19,7 +19,7 @@ entry:
   ret i64 %1
 }
 
-; 94 occurrences:
+; 100 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/STLLoader.cpp.ll
@@ -56,6 +56,7 @@ entry:
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/MIRFSDiscriminator.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
@@ -114,6 +115,11 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/cerruq7gww65l7esxsyv0yj53.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
@@ -122,9 +128,11 @@ entry:
   ret i64 %2
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; icu/optimized/ucnv.ll
 ; linux/optimized/vsprintf.ll
+; llvm/optimized/APINotesWriter.cpp.ll
+; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; mitsuba3/optimized/blender.cpp.ll
@@ -140,7 +148,7 @@ entry:
   ret i64 %2
 }
 
-; 73 occurrences:
+; 77 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
@@ -148,10 +156,12 @@ entry:
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/bigint.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; freetype/optimized/sdf.c.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libpng/optimized/pngrutil.c.ll
@@ -214,6 +224,8 @@ entry:
 ; wireshark/optimized/packet-steam-ihs-discovery.c.ll
 ; wireshark/optimized/pcap-common.c.ll
 ; yosys/optimized/rtlil.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:

@@ -1,6 +1,6 @@
 func0000000000000004:                   # @func0000000000000004
-	addb	$-123, %sil
-	cmpb	$-26, %sil
+	addb	$-65, %sil
+	cmpb	$26, %sil
 	setb	%al
 	orb	%dil, %al
 	retq
@@ -20,7 +20,7 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addb	$-5, %sil
 	cmpb	$-4, %sil
 	setb	%al

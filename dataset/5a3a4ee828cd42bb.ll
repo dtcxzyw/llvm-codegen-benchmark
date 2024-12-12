@@ -12,7 +12,8 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/alloc_lib.ll
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
 ; jemalloc/optimized/base.sym.ll

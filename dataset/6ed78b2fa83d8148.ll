@@ -1,6 +1,5 @@
 
 ; 32 occurrences:
-; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_lowlight.c.ll
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
@@ -15,6 +14,7 @@
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
@@ -35,9 +35,9 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1) #0 {
 entry:
-  %2 = fmul float %1, 0x3FB99999A0000000
-  %3 = fadd float %2, -5.000000e-01
-  %4 = select i1 %0, float 2.560000e+02, float %3
+  %2 = fmul float %1, 4.096000e+03
+  %3 = fadd float %2, 4.096000e+03
+  %4 = select i1 %0, float 6.144000e+03, float %3
   ret float %4
 }
 

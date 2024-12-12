@@ -1,5 +1,8 @@
 
-; 16 occurrences:
+; 19 occurrences:
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; eastl/optimized/Int128_t.cpp.ll

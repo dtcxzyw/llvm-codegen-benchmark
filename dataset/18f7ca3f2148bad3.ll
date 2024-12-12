@@ -1,16 +1,18 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; gromacs/optimized/hbond.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
+; opencv/optimized/flann_search_dataset.cpp.ll
+; opencv/optimized/miniflann.cpp.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
 ; openjdk/optimized/stubGenerator_x86_64_poly_mont.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -29,7 +31,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -41,15 +43,18 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/ARM.cpp.ll
 ; llvm/optimized/CGObjC.cpp.ll
+; llvm/optimized/CoverageMapping.cpp.ll
+; llvm/optimized/CoverageMappingWriter.cpp.ll
+; llvm/optimized/DXILEmitter.cpp.ll
 ; llvm/optimized/Darwin.cpp.ll
 ; llvm/optimized/MCStreamer.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
@@ -59,12 +64,13 @@ entry:
 define i1 @func0000000000000009(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp ule i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; llvm/optimized/Commit.cpp.ll
 ; llvm/optimized/EditedSource.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; zxing/optimized/Barcode.cpp.ll
@@ -72,7 +78,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp sge i32 %3, %1
+  %4 = icmp sle i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -83,7 +89,7 @@ entry:
 define i1 @func0000000000000005(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ule i32 %3, %1
+  %4 = icmp uge i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -95,7 +101,7 @@ entry:
 define i1 @func0000000000000007(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp sle i32 %3, %1
+  %4 = icmp sge i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

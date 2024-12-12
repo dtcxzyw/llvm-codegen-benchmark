@@ -19,7 +19,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/nfs4proc.ll
 ; spike/optimized/f128_to_i32.ll
 ; Function Attrs: nounwind

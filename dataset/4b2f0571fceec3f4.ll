@@ -5,6 +5,7 @@
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/sparring_partner.ll
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -12,7 +13,6 @@
 ; eastl/optimized/EACallback.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; llvm/optimized/ExponentialBackoff.cpp.ll
@@ -48,7 +48,9 @@ entry:
   ret i64 %1
 }
 
-; 41 occurrences:
+; 43 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/crc32.c.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/mpdecimal.ll

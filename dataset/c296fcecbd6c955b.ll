@@ -1,6 +1,8 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
@@ -8,7 +10,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1095216660735
   %4 = mul i64 %3, 4294967296000100
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = lshr i64 %5, 32
   %7 = add i64 %6, %0
   ret i64 %7
@@ -75,7 +77,7 @@ entry:
   %4 = mul nuw i64 %3, 4164903690
   %5 = add nuw i64 %4, %1
   %6 = lshr i64 %5, 32
-  %7 = add nuw i64 %6, %0
+  %7 = add nuw i64 %0, %6
   ret i64 %7
 }
 
@@ -96,7 +98,7 @@ entry:
   %4 = mul nuw i64 %3, 4164903690
   %5 = add nuw i64 %4, %1
   %6 = lshr i64 %5, 32
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

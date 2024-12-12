@@ -12,7 +12,8 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; boost/optimized/algorithm.ll
 ; graphviz/optimized/poly.c.ll
 ; gromacs/optimized/pdbio.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll
@@ -60,7 +61,8 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/algorithm.ll
 ; cpython/optimized/cmathmodule.ll
 ; hermes/optimized/Math.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -68,7 +70,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, double %2) #0 {
 entry:
-  %3 = fcmp oeq double %2, 0x7FF0000000000000
+  %3 = fcmp oeq double %2, 2.000000e+00
   %4 = select i1 %3, i1 true, i1 %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5

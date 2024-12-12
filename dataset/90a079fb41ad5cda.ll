@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; git/optimized/transport.ll
-; linux/optimized/uring_cmd.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {

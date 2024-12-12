@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; ncnn/optimized/deconvolution_x86.cpp.ll
 ; Function Attrs: nounwind

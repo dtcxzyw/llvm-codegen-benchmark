@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 107 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/ioWriteBook.c.ll
@@ -101,7 +101,6 @@
 ; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; ruby/optimized/util.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; wireshark/optimized/overlay_scroll_bar.cpp.ll
 ; wireshark/optimized/packet-hdfsdata.c.ll

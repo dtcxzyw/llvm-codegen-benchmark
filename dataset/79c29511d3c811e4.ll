@@ -4,7 +4,7 @@
 ; hermes/optimized/APFloat.cpp.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, double %1) #0 {
+define i1 @func0000000000000021(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = and i64 %2, 4294967295
@@ -25,7 +25,7 @@ entry:
 ; openusd/optimized/bignum-dtoa.cc.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, double %1) #0 {
+define i1 @func0000000000000181(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = and i64 %2, 9214364837600034816
@@ -144,7 +144,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, double %1) #0 {
+define i1 @func0000000000000301(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = and i64 %2, 9214364837600034816

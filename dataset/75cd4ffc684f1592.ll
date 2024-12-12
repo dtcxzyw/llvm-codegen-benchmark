@@ -1,5 +1,5 @@
 
-; 131 occurrences:
+; 129 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/sclLoad.c.ll
 ; abc/optimized/sclSize.c.ll
@@ -37,8 +37,6 @@
 ; gromacs/optimized/densityfit.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
-; gromacs/optimized/slarfg.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; gromacs/optimized/snrm2.cpp.ll
@@ -50,12 +48,12 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

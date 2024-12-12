@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	or	a1, a1, a2
 	srliw	a2, a1, 16
 	li	a3, 16
@@ -7,5 +7,16 @@ func0000000000000038:                   # @func0000000000000038
 	addiw	a0, a0, -1
 	ret
 .LBB0_2:
+	or	a0, a0, a1
+	ret
+func0000000000000078:                   # @func0000000000000078
+	or	a1, a1, a2
+	srliw	a2, a1, 16
+	li	a3, 16
+	bgeu	a3, a2, .LBB1_2
+	lui	a0, 16
+	addiw	a0, a0, -3
+	ret
+.LBB1_2:
 	or	a0, a0, a1
 	ret

@@ -18,17 +18,6 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; gromacs/optimized/settle.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 1
-  %3 = sdiv i32 %0, %2
-  %4 = add nuw i32 %3, 7
-  ret i32 %4
-}
-
 ; 2 occurrences:
 ; linux/optimized/hid-input.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -50,17 +39,6 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = sdiv i32 %0, %2
   %4 = add nsw i32 %3, -1
-  ret i32 %4
-}
-
-; 1 occurrences:
-; postgres/optimized/refint.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %1, 1
-  %3 = sdiv i32 %0, %2
-  %4 = add nuw nsw i32 %3, 1
   ret i32 %4
 }
 

@@ -1,14 +1,15 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
+; boost/optimized/area.ll
 ; icu/optimized/collation.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; linux/optimized/intel_rps.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
@@ -57,7 +58,7 @@ entry:
 define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sdiv i32 %4, 4
   ret i32 %5
 }
@@ -70,7 +71,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sdiv i32 %4, 2
   ret i32 %5
 }

@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
+; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:

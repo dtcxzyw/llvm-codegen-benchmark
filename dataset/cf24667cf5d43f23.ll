@@ -27,6 +27,21 @@ entry:
   ret i64 %7
 }
 
+; 3 occurrences:
+; linux/optimized/io_apic.ll
+; lvgl/optimized/lv_draw_buf.ll
+; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; Function Attrs: nounwind
+define i64 @func000000000000005f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw i64 %2, 48
+  %4 = shl nuw nsw i64 %1, 32
+  %5 = or disjoint i64 %4, %3
+  %6 = or disjoint i64 %5, %0
+  %7 = or disjoint i64 %6, 25
+  ret i64 %7
+}
+
 ; 1 occurrences:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
@@ -66,20 +81,6 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; linux/optimized/io_apic.ll
-; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
-; Function Attrs: nounwind
-define i64 @func000000000000005f(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw i64 %2, 32
-  %4 = shl nuw nsw i64 %1, 16
-  %5 = or disjoint i64 %4, %3
-  %6 = or disjoint i64 %5, %0
-  %7 = or disjoint i64 %6, 2
-  ret i64 %7
-}
-
 ; 1 occurrences:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; Function Attrs: nounwind
@@ -101,7 +102,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = shl nuw i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or disjoint i64 %6, 7
   ret i64 %7
 }

@@ -7,9 +7,9 @@ func0000000000000063:                   # @func0000000000000063
 	retq
 func0000000000000030:                   # @func0000000000000030
 	vpslld	$31, %xmm1, %xmm1
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpmovq2m	%ymm2, %k1
-	vpcmpgtd	%xmm1, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm1, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtq	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
@@ -33,10 +33,9 @@ func0000000000000043:                   # @func0000000000000043
 	retq
 func0000000000000051:                   # @func0000000000000051
 	vpslld	$31, %xmm1, %xmm1
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpcmpgtq	%ymm4, %ymm2, %k1
-	vpcmpgtd	%xmm1, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm1, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtq	%ymm1, %ymm2, %k0 {%k1}
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq

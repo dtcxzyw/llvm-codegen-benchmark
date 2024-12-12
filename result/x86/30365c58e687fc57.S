@@ -16,5 +16,5 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000002:                   # @func0000000000000002
 	vcmpltss	.LCPI2_0(%rip), %xmm1, %k1
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}
-	vmulss	%xmm0, %xmm2, %xmm0
+	vmulss	%xmm2, %xmm0, %xmm0
 	retq

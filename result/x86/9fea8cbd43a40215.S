@@ -1,18 +1,18 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	imull	%edx, %esi
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	shrq	$61, %rax
 	setne	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	imull	%edx, %esi
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
 	setg	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	imull	%edx, %esi
 	movslq	%esi, %rax
 	addq	%rdi, %rax

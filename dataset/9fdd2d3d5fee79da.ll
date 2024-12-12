@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 92 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/pdrIncr.c.ll
 ; abc/optimized/sbdSat.c.ll
 ; abc/optimized/wlnRead.c.ll
+; boost/optimized/cmdline.ll
 ; casadi/optimized/cs_maxtrans.c.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -27,9 +28,11 @@
 ; darktable/optimized/introspection_invert.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; faiss/optimized/pq4_fast_scan.cpp.ll
+; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
+; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
+; git/optimized/read-cache.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
@@ -93,12 +96,12 @@
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nsw i64 %3, 1
   ret i64 %4
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -124,12 +127,11 @@ entry:
 ; ruby/optimized/array.ll
 ; slurm/optimized/fair_tree.ll
 ; wireshark/optimized/btsnoop.c.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 15
   ret i64 %4
 }
@@ -171,7 +173,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl i64 %3, 1
   ret i64 %4
 }
@@ -183,7 +185,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl nuw i64 %3, 3
   ret i64 %4
 }
@@ -201,7 +203,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nuw nsw i64 %3, 3
   ret i64 %4
 }
@@ -212,7 +214,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl nsw i64 %3, 1
   ret i64 %4
 }
@@ -224,7 +226,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl nuw nsw i64 %3, 2
   ret i64 %4
 }
@@ -235,8 +237,19 @@ entry:
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl nsw i64 %3, 3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; openspiel/optimized/chess_board.cc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = add nuw nsw i64 %0, %2
+  %4 = shl nuw nsw i64 %3, 1
   ret i64 %4
 }
 
@@ -246,7 +259,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 32
   ret i64 %4
 }
@@ -257,7 +270,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl nuw i64 %3, 9
   ret i64 %4
 }
@@ -268,7 +281,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nuw i64 %3, 9
   ret i64 %4
 }

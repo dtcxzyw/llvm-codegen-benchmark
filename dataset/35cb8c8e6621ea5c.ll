@@ -12,7 +12,7 @@
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000142(i64 %0) #0 {
+define i1 @func0000000000000282(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp eq i32 %1, 0
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0) #0 {
+define i1 @func0000000000000054(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp sgt i32 %1, 100
@@ -39,7 +39,7 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0) #0 {
+define i1 @func0000000000000042(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp eq i32 %1, 8
@@ -52,7 +52,7 @@ entry:
 ; linux/optimized/mlock.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i64 %0) #0 {
+define i1 @func0000000000000050(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp ugt i32 %1, 32
@@ -65,7 +65,7 @@ entry:
 ; opencv/optimized/object_tracker.cpp.ll
 ; quickjs/optimized/quickjs-libc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(i64 %0) #0 {
+define i1 @func0000000000000182(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp eq i32 %1, 1

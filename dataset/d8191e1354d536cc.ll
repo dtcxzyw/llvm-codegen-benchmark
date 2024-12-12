@@ -19,12 +19,13 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; wireshark/optimized/packet-bacapp.c.ll
 ; wireshark/optimized/packet-erldp.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; Function Attrs: nounwind
@@ -36,8 +37,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; wireshark/optimized/packet-bacapp.c.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-ipmi-se.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {

@@ -1,5 +1,5 @@
 
-; 198 occurrences:
+; 194 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/acbTest.c.ll
@@ -11,6 +11,8 @@
 ; abc/optimized/satSolver3.c.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; assimp/optimized/IFCCurve.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; brotli/optimized/block_splitter.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/encode.c.ll
@@ -81,7 +83,6 @@
 ; libwebp/optimized/extras.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
@@ -109,7 +110,6 @@
 ; ocio/optimized/GradingPrimary.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
 ; oiio/optimized/imagebufalgo_yee.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; opencv/optimized/classification.cpp.ll
 ; opencv/optimized/contours2.cpp.ll
@@ -181,14 +181,10 @@
 ; quickjs/optimized/qjs.ll
 ; raylib/optimized/rmodels.c.ll
 ; sundials/optimized/arkode_interp.c.ll
-; wireshark/optimized/packet-asap.c.ll
 ; wireshark/optimized/packet-btavrcp.c.ll
 ; wireshark/optimized/packet-dis.c.ll
-; wireshark/optimized/packet-enrp.c.ll
 ; wireshark/optimized/packet-geonw.c.ll
-; wireshark/optimized/packet-ieee1609dot2.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
-; wireshark/optimized/packet-its.c.ll
 ; wireshark/optimized/packet-lpp.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll

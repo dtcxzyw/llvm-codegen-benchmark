@@ -19,4 +19,14 @@ entry:
   ret float %3
 }
 
+; 1 occurrences:
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define float @func0000000000000002(float %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = select i1 %2, float undef, float %0
+  ret float %3
+}
+
 attributes #0 = { nounwind }

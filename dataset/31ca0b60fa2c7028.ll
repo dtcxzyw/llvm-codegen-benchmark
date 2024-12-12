@@ -1,16 +1,17 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; php/optimized/zend_inference.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
 ; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp eq i32 %2, 8192
+  %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = or i32 %4, %0
-  %6 = and i32 %5, -536870913
+  %5 = or i32 %0, %4
+  %6 = and i32 %5, -234881025
   ret i32 %6
 }
 
@@ -27,7 +28,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = and i32 %5, -267386881
   ret i32 %6
 }

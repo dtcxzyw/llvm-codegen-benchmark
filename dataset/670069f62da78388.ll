@@ -10,21 +10,23 @@ entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 2097151
   %5 = zext nneg i32 %4 to i64
-  %6 = mul nuw nsw i64 %5, %1
-  %7 = add nuw nsw i64 %6, %0
+  %6 = mul nuw nsw i64 %1, %5
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 17
   %4 = and i32 %3, 15
   %5 = zext nneg i32 %4 to i64
-  %6 = mul nuw nsw i64 %5, %1
+  %6 = mul nuw nsw i64 %1, %5
   %7 = add i64 %6, %0
   ret i64 %7
 }
@@ -37,7 +39,7 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 536870908
   %5 = zext nneg i32 %4 to i64
-  %6 = mul nsw i64 %5, %1
+  %6 = mul nsw i64 %1, %5
   %7 = add nsw i64 %6, %0
   ret i64 %7
 }
@@ -50,7 +52,7 @@ entry:
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 7
   %5 = zext nneg i32 %4 to i64
-  %6 = mul i64 %5, %1
+  %6 = mul i64 %1, %5
   %7 = add i64 %6, %0
   ret i64 %7
 }

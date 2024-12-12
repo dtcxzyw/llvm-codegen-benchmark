@@ -1,3 +1,10 @@
+func000000000000000f:                   # @func000000000000000f
+	testl	%esi, %esi
+	movl	$-16447, %ecx                   # imm = 0xBFC1
+	cmovnel	%edi, %ecx
+	movabsq	$169464822037455, %rax          # imm = 0x9A209A84FBCF
+	imulq	%rcx, %rax
+	retq
 func0000000000000037:                   # @func0000000000000037
 	cmpl	$64, %esi
 	movl	$64, %eax
@@ -18,12 +25,6 @@ func0000000000000027:                   # @func0000000000000027
 	cmovael	%edi, %eax
 	shlq	$2, %rax
 	leaq	(%rax,%rax,4), %rax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	testl	%esi, %esi
-	movl	$8, %eax
-	cmovnel	%edi, %eax
-	imulq	$88, %rax, %rax
 	retq
 func000000000000000b:                   # @func000000000000000b
 	testl	%esi, %esi

@@ -1,10 +1,9 @@
 
-%union.iseq_inline_storage_entry.2485876 = type { %struct.anon.32.2485877 }
-%struct.anon.32.2485877 = type { ptr, i64 }
-%"struct.irr::scene::ISkinnedMesh::SRotationKey.2589146" = type { float, %"class.irr::core::quaternion.2589143" }
-%"class.irr::core::quaternion.2589143" = type { float, float, float, float }
-%struct.track.3363059 = type { i64, i32, i32, i32, i64 }
-%"class.cv::Point_.3566796" = type { float, float }
+%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
+%struct.anon.32.2601336 = type { ptr, i64 }
+%"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991" = type { float, %"class.irr::core::quaternion.2702988" }
+%"class.irr::core::quaternion.2702988" = type { float, float, float, float }
+%struct.track.3549521 = type { i64, i32, i32, i32, i64 }
 
 ; 3 occurrences:
 ; linux/optimized/nf_nat_helper.ll
@@ -14,9 +13,9 @@
 define i64 @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.iseq_inline_storage_entry.2485876, ptr %0, i64 %3
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr %union.iseq_inline_storage_entry.2485876, ptr %4, i64 %5
+  %6 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -42,12 +41,12 @@ entry:
 ; rocksdb/optimized/plain_table_index.cc.ll
 ; spike/optimized/fdt_rw.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -60,20 +59,21 @@ entry:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2589146", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991", ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2589146", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991", ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
+; opencv/optimized/geometry.cpp.ll
 ; php/optimized/cdf.ll
 ; wolfssl/optimized/rsa.c.ll
 ; z3/optimized/smt_clause.cpp.ll
@@ -82,12 +82,12 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -95,10 +95,10 @@ entry:
 ; 1 occurrences:
 ; php/optimized/cdf.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000002c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
@@ -111,12 +111,12 @@ entry:
 ; darktable/optimized/MosDecoder.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -142,20 +142,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %struct.track.3363059, ptr %4, i64 %5
-  %7 = ptrtoint ptr %6 to i64
-  ret i64 %7
-}
-
-; 1 occurrences:
-; opencv/optimized/geometry.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000030(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %"class.cv::Point_.3566796", ptr %0, i64 %3
-  %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %"class.cv::Point_.3566796", ptr %4, i64 %5
+  %6 = getelementptr %struct.track.3549521, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

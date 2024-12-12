@@ -2,6 +2,7 @@
 ; 26 occurrences:
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/communication.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
@@ -10,7 +11,6 @@
 ; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/base.ll
 ; linux/optimized/eventpoll.ll
-; linux/optimized/libata-transport.ll
 ; linux/optimized/vsprintf.ll
 ; luau/optimized/isocline.c.ll
 ; openjdk/optimized/os_posix.ll

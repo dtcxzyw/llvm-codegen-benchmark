@@ -1,9 +1,8 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/cuddInteract.c.ll
 ; arrow/optimized/compare_internal.cc.ll
 ; linux/optimized/intel_sprite.ll
-; openblas/optimized/dlasq6.c.ll
 ; openmpi/optimized/coll_base_reduce_scatter_block.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; openspiel/optimized/TransTableL.cpp.ll

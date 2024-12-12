@@ -1,5 +1,6 @@
 
-; 195 occurrences:
+; 201 occurrences:
+; boost/optimized/context.ll
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
 ; jemalloc/optimized/extent_dss.ll
 ; jemalloc/optimized/extent_dss.pic.ll
@@ -195,6 +196,11 @@
 ; wireshark/optimized/decode_as_delegate.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/uat_model.cpp.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/7od02cvs02zg2t1jcuk4h4evv.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:

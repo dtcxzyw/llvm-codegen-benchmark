@@ -10,8 +10,9 @@ entry:
   ret i64 %5
 }
 
-; 45 occurrences:
-; arrow/optimized/utf8.cc.ll
+; 49 occurrences:
+; boost/optimized/code_conversion.ll
+; boost/optimized/test_codecvt.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
@@ -33,7 +34,6 @@ entry:
 ; icu/optimized/ucbuf.ll
 ; icu/optimized/wrtxml.ll
 ; jsonnet/optimized/desugarer.cpp.ll
-; jsonnet/optimized/parser.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; libphonenumber/optimized/phonenumbermatcher.cc.ll
@@ -49,13 +49,17 @@ entry:
 ; mold/optimized/arch-arm64.cc.ll
 ; openjdk/optimized/g1EvacStats.ll
 ; openmpi/optimized/onesided_aggregation.ll
-; pbrt-v4/optimized/string.cpp.ll
 ; protobuf/optimized/message_lite.cc.ll
 ; ruby/optimized/bignum.ll
 ; sentencepiece/optimized/message_lite.cc.ll
 ; tev/optimized/Ipc.cpp.ll
 ; velox/optimized/MallocAllocator.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -65,7 +69,8 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/approximately_equals.ll
 ; ruby/optimized/array.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
@@ -299,13 +304,32 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 25 occurrences:
 ; cpython/optimized/_elementtree.ll
 ; cpython/optimized/listobject.ll
 ; git/optimized/add-patch.ll
 ; php/optimized/array_obj.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
 ; wireshark/optimized/file-elf.c.ll
+; zed-rs/optimized/0nwivtw0lug3nh002ufjq6dhh.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/32kqcem53id37kgf9pak7q7x7.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; zed-rs/optimized/8qol7q25vqqdxkncrkeuuvo2e.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/cbi8r35sx6a597065rtde79my.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/d236qqx54dpqso3cyloa7ybaj.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/dqkbt3e3tzkgcyv67jgz1zdbd.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
+; zed-rs/optimized/dtvy13he5qwv8e5jkwyblypio.ll
+; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
+; zed-rs/optimized/f3ax6fwg663b1ze6yfrcfasp4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -338,7 +362,9 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
@@ -347,6 +373,25 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = sub nsw i64 %0, %3
   %5 = shl nuw nsw i64 %4, 52
+  ret i64 %5
+}
+
+; 9 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; zfp/optimized/decode1d.c.ll
+; zfp/optimized/decode1l.c.ll
+; zfp/optimized/decode2d.c.ll
+; zfp/optimized/decode2l.c.ll
+; zfp/optimized/decode3d.c.ll
+; zfp/optimized/decode3l.c.ll
+; zfp/optimized/decode4d.c.ll
+; zfp/optimized/decode4l.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = sub nsw i64 %0, %3
+  %5 = shl i64 %4, 32
   ret i64 %5
 }
 
@@ -370,24 +415,6 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = sub nsw i64 %0, %3
   %5 = shl i64 %4, 32
-  ret i64 %5
-}
-
-; 8 occurrences:
-; zfp/optimized/decode1d.c.ll
-; zfp/optimized/decode1l.c.ll
-; zfp/optimized/decode2d.c.ll
-; zfp/optimized/decode2l.c.ll
-; zfp/optimized/decode3d.c.ll
-; zfp/optimized/decode3l.c.ll
-; zfp/optimized/decode4d.c.ll
-; zfp/optimized/decode4l.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = sub nsw i64 %0, %3
-  %5 = shl i64 %4, 1
   ret i64 %5
 }
 

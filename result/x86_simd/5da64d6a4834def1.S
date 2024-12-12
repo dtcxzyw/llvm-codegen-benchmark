@@ -28,5 +28,5 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovb2m	%xmm1, %k0
 	knotb	%k0, %k0
 	vpmovm2d	%k0, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

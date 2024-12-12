@@ -1,31 +1,22 @@
 
-%"struct.blender::MLoopTri.2493809" = type { [3 x i32], i32 }
-%struct.page.3361290 = type { i64, %union.anon.3361291, %union.anon.6.3361292, %struct.atomic_t.3361278, [8 x i8] }
-%union.anon.3361291 = type { %struct.anon.3361293 }
-%struct.anon.3361293 = type { %union.anon.0.3361294, ptr, %union.anon.2.3361295, i64 }
-%union.anon.0.3361294 = type { %struct.list_head.3361289 }
-%struct.list_head.3361289 = type { ptr, ptr }
-%union.anon.2.3361295 = type { i64 }
-%union.anon.6.3361292 = type { %struct.atomic_t.3361278 }
-%struct.atomic_t.3361278 = type { i32 }
+%"struct.blender::MLoopTri.2609110" = type { [3 x i32], i32 }
+%"struct.blender::MPoly.2609111" = type { i32, i32, i16, i8, i8 }
+%struct.page.3547972 = type { i64, %union.anon.3547973, %union.anon.6.3547974, %struct.atomic_t.3547960, [8 x i8] }
+%union.anon.3547973 = type { %struct.anon.3547975 }
+%struct.anon.3547975 = type { %union.anon.0.3547976, ptr, %union.anon.2.3547977, i64 }
+%union.anon.0.3547976 = type { %struct.list_head.3547971 }
+%struct.list_head.3547971 = type { ptr, ptr }
+%union.anon.2.3547977 = type { i64 }
+%union.anon.6.3547974 = type { %struct.atomic_t.3547960 }
+%struct.atomic_t.3547960 = type { i32 }
 
-; 124 occurrences:
-; assimp/optimized/glTF2Exporter.cpp.ll
-; assimp/optimized/glTF2Importer.cpp.ll
-; assimp/optimized/glTFExporter.cpp.ll
-; assimp/optimized/glTFImporter.cpp.ll
-; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
-; coreutils-rs/optimized/2zjxva3p2avqok6n.ll
-; coreutils-rs/optimized/3xc4e7mmntf4esc6.ll
-; coreutils-rs/optimized/942h4e64iw767xo.ll
+; 110 occurrences:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
-; gromacs/optimized/gen_ad.cpp.ll
 ; gromacs/optimized/gpp_atomtype.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
-; influxdb-rs/optimized/3jexax7r6nng0tve.ll
 ; mitsuba3/optimized/blender.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
@@ -130,15 +121,37 @@
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw %"struct.blender::MLoopTri.2609110", ptr %2, i64 %0, i32 1
+  ret ptr %3
+}
+
+; 17 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; assimp/optimized/glTFImporter.cpp.ll
+; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
+; coreutils-rs/optimized/2zjxva3p2avqok6n.ll
+; coreutils-rs/optimized/3xc4e7mmntf4esc6.ll
+; coreutils-rs/optimized/942h4e64iw767xo.ll
+; gromacs/optimized/gen_ad.cpp.ll
+; gromacs/optimized/gpp_atomtype.cpp.ll
+; gromacs/optimized/pairlist.cpp.ll
+; influxdb-rs/optimized/3jexax7r6nng0tve.ll
+; mitsuba3/optimized/blender.cpp.ll
 ; rust-analyzer-rs/optimized/36q0ig1b28y6a47m.ll
 ; rust-analyzer-rs/optimized/4pmj1eas1ms4uvqn.ll
 ; rust-analyzer-rs/optimized/56qlbpwvg5r6rv1.ll
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw %"struct.blender::MLoopTri.2493809", ptr %2, i64 %0, i32 1
+  %3 = getelementptr nusw nuw %"struct.blender::MPoly.2609111", ptr %2, i64 %0, i32 3
   ret ptr %3
 }
 
@@ -153,7 +166,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr %struct.page.3361290, ptr %2, i64 %0, i32 1
+  %3 = getelementptr %struct.page.3547972, ptr %2, i64 %0, i32 1
   ret ptr %3
 }
 

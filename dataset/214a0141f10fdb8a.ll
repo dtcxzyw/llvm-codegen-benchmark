@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/3sl862deah2458pu.ll
 ; linux/optimized/nfs4proc.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
@@ -26,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_mirror.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = icmp eq i64 %1, 0
@@ -40,19 +41,19 @@ entry:
 ; openexr/optimized/attributes.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c7(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000187(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 33
   %3 = icmp eq i64 %1, 0
   %4 = select i1 %3, i64 32, i64 %2
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp eq i64 %1, 2
@@ -65,7 +66,7 @@ entry:
 ; openblas/optimized/dsyrk_thread_LN.c.ll
 ; openblas/optimized/dsyrk_thread_LT.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -192
   %3 = icmp eq i64 %1, 0

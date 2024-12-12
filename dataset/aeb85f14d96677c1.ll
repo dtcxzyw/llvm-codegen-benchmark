@@ -1,12 +1,14 @@
 
-; 57 occurrences:
+; 64 occurrences:
 ; arrow/optimized/file.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/cmdline.ll
 ; cpython/optimized/_ctypes.ll
 ; cpython/optimized/abstract.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
+; delta-rs/optimized/4say4x9grcidoih4.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; diesel-rs/optimized/6cb7zukciz78xvw.ll
@@ -57,6 +59,11 @@
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/jqxcpn1is9b9z0t.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/21l651k8emcdlqbvfstrxfddk.ll
+; zed-rs/optimized/3w62movadz26xj1uazrxcr5i1.ll
+; zed-rs/optimized/64m9n7h70y7p22vy4aomn270y.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
@@ -65,7 +72,7 @@ entry:
   ret i64 %3
 }
 
-; 81 occurrences:
+; 126 occurrences:
 ; coreutils-rs/optimized/3r3g3dlfc6s7nx81.ll
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
@@ -110,11 +117,14 @@ entry:
 ; ockam-rs/optimized/57x5i9ppjq89r6ok.ll
 ; ockam-rs/optimized/594kg43rtueps2cx.ll
 ; ockam-rs/optimized/59na08zlxqp9p17s.ll
+; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; opencv/optimized/arithm.cpp.ll
 ; php/optimized/plain_wrapper.ll
 ; rust-analyzer-rs/optimized/1egtj7ksojphluke.ll
+; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
+; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; serde-rs-json/optimized/1z3u82elh7pk3w5r.ll
 ; serde-rs-json/optimized/3o41byb1p1zh3720.ll
@@ -124,6 +134,7 @@ entry:
 ; tokenizers-rs/optimized/58hth72z9dib25am.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
@@ -147,11 +158,52 @@ entry:
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0vyyug5k32h9xse2mwakvk78w.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1ftc77y2sv97gmniy36ag141f.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/1z9x99vx9jfns7mxpwa762fd3.ll
+; zed-rs/optimized/21l651k8emcdlqbvfstrxfddk.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; zed-rs/optimized/58eqxolkuiavjghtj45u3c5th.ll
+; zed-rs/optimized/5gzhlrfve63v3ndyg8t40tttn.ll
+; zed-rs/optimized/6wndapbw172jkqxtgmm5s37me.ll
+; zed-rs/optimized/70ymcp0y6yqkpw3c0y4yzyh2l.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/7aq90jycr3x842qyrhjbel971.ll
+; zed-rs/optimized/7rpe3bril898mttdoib5hjrj5.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/9c745mpyev6016wrbif8w6jcd.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/aktvc84j83s8sqq1xgqfsdyza.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
+; zed-rs/optimized/by8gv54o76v0inyrwjxd65d9p.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/coobscod1tjvofpoi7fi6r7gk.ll
+; zed-rs/optimized/d334eo7xhndhquqddprlqx6j8.ll
+; zed-rs/optimized/dbhzlm53ys8w4y2p8y2woz44v.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; zed-rs/optimized/dtqpsl4w47n2m18dddhdjmklr.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
   %.not = icmp eq ptr %1, null
-  %2 = select i1 %.not, i64 0, i64 %0
+  %2 = select i1 %.not, i64 undef, i64 %0
   ret i64 %2
 }
 

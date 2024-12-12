@@ -1,11 +1,10 @@
 
-; 59 occurrences:
+; 53 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/extraBddAuto.c.ll
 ; abc/optimized/giaSif.c.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/spin.c.ll
 ; cmake/optimized/crc32.c.ll
 ; cmake/optimized/idna.c.ll
@@ -33,16 +32,11 @@
 ; memcached/optimized/memcached_debug-crc32c.ll
 ; node/optimized/idna.ll
 ; oiio/optimized/bmpinput.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openjdk/optimized/pngrutil.ll
 ; openjdk/optimized/stubRoutines_x86.ll
 ; openusd/optimized/cfl.c.ll
 ; php/optimized/zend_inheritance.ll
 ; php/optimized/zend_strtod.ll
-; postgres/optimized/fsmpage.ll
 ; qemu/optimized/net_net.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/target_riscv_monitor.c.ll
@@ -91,6 +85,18 @@ entry:
   ret i32 %5
 }
 
+; 2 occurrences:
+; linux/optimized/pci.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 24
+  %4 = icmp ult i32 %1, 50331648
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
 ; 4 occurrences:
 ; gromacs/optimized/coder.c.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll
@@ -109,23 +115,10 @@ entry:
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dpll.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
   %4 = icmp sgt i32 %1, 0
-  %5 = select i1 %4, i32 %3, i32 %0
-  ret i32 %5
-}
-
-; 3 occurrences:
-; faiss/optimized/IndexRowwiseMinMax.cpp.ll
-; faiss/optimized/ScalarQuantizer.cpp.ll
-; linux/optimized/pci.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 16
-  %4 = icmp ult i32 %1, 245
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }
@@ -147,10 +140,23 @@ entry:
 ; opencv/optimized/disparity_filtering.cpp.ll
 ; z3/optimized/value_generator.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
   %4 = icmp eq i32 %1, 0
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 3 occurrences:
+; faiss/optimized/IndexRowwiseMinMax.cpp.ll
+; faiss/optimized/ScalarQuantizer.cpp.ll
+; postgres/optimized/tableam.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 11
+  %4 = icmp samesign ult i32 %1, 2
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }

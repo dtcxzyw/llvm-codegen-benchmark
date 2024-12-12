@@ -33,6 +33,13 @@ func00000000000000a0:                   # @func00000000000000a0
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret
+func000000000000001f:                   # @func000000000000001f
+	sext.w	a2, a2
+	li	a3, 255
+	czero.eqz	a2, a3, a2
+	mul	a1, a1, a2
+	addw	a0, a0, a1
+	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a2
 	lui	a3, 524288
@@ -49,16 +56,6 @@ func000000000000001c:                   # @func000000000000001c
 	li	a3, -3
 	czero.eqz	a2, a3, a2
 	addi	a2, a2, 6
-	mul	a1, a1, a2
-	addw	a0, a0, a1
-	ret
-func000000000000001f:                   # @func000000000000001f
-	sext.w	a2, a2
-	lui	a3, 524304
-	addiw	a3, a3, -256
-	xor	a2, a2, a3
-	li	a3, 255
-	czero.eqz	a2, a3, a2
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	addq	$-3, %rsi
 	cmpq	$-2, %rsi
 	setb	%al

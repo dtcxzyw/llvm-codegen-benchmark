@@ -6,7 +6,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpslld	$6, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogd	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovdb	%ymm2, %xmm0
 	vzeroupper
 	retq
@@ -24,7 +24,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000010:                   # @func0000000000000010
 	vpslld	$6, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogd	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovdb	%ymm2, %xmm0
 	vzeroupper
 	retq

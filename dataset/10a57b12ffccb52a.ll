@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 53 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcRestruct.c.ll
@@ -21,6 +21,7 @@
 ; llvm/optimized/PseudoSourceValue.cpp.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
@@ -56,7 +57,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 31
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 
@@ -67,7 +68,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 

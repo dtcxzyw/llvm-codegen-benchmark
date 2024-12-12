@@ -9,6 +9,6 @@ func0000000000000001:                   # @func0000000000000001
 	leal	(%rax,%rax,4), %eax
 	subl	%eax, %esi
 	movswl	%si, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

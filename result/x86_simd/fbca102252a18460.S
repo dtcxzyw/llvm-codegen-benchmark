@@ -2,10 +2,10 @@
 	.quad	-16                             # 0xfffffffffffffff0
 .LCPI0_1:
 	.quad	1152921504606846975             # 0xfffffffffffffff
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3   # ymm3 = [18446744073709551600,18446744073709551600,18446744073709551600,18446744073709551600]
 	vpsubq	%ymm2, %ymm3, %ymm2
-	vpcmpnleuq	%ymm1, %ymm2, %k1
+	vpcmpltuq	%ymm2, %ymm1, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm1   # ymm1 = [1152921504606846975,1152921504606846975,1152921504606846975,1152921504606846975]
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
@@ -13,12 +13,12 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000004:                   # @func0000000000000004
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpsubq	%ymm2, %ymm3, %ymm2
-	vpcmpnleuq	%ymm1, %ymm2, %k1
+	vpcmpltuq	%ymm2, %ymm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpsubq	%ymm2, %ymm3, %ymm2
 	vpcmpgtq	%ymm1, %ymm2, %k1

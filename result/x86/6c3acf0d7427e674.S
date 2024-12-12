@@ -23,8 +23,8 @@ func0000000000000041:                   # @func0000000000000041
 	leal	2(%rsi,%rdi), %eax
 	retq
 func0000000000000040:                   # @func0000000000000040
-	shrq	$2, %rsi
-	leal	-1(%rsi,%rdi), %eax
+	shrq	$3, %rsi
+	leal	1(%rsi,%rdi), %eax
 	retq
 func000000000000003c:                   # @func000000000000003c
 	shrq	$63, %rsi
@@ -37,6 +37,10 @@ func000000000000003f:                   # @func000000000000003f
 func0000000000000075:                   # @func0000000000000075
 	shrq	$32, %rsi
 	leal	-1640531527(%rsi,%rdi), %eax
+	retq
+func0000000000000034:                   # @func0000000000000034
+	shrq	$48, %rsi
+	leal	-1(%rsi,%rdi), %eax
 	retq
 func000000000000007f:                   # @func000000000000007f
 	shrq	$39, %rsi

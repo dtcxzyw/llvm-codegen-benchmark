@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
@@ -10,6 +10,7 @@
 ; linux/optimized/serial_core.ll
 ; linux/optimized/vc_screen.ll
 ; linux/optimized/virtio_console.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; openjdk/optimized/partialArrayTaskStepper.ll
 ; postgres/optimized/md.ll
 ; ruby/optimized/time.ll
@@ -24,7 +25,7 @@ entry:
   ret i32 %4
 }
 
-; 36 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; c3c/optimized/diagnostics.c.ll
@@ -36,6 +37,7 @@ entry:
 ; linux/optimized/serial_core.ll
 ; linux/optimized/xfrm_policy.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; meshlab/optimized/packing.cpp.ll
 ; opencv/optimized/perf_estimators.cpp.ll
 ; opencv/optimized/simpleflow.cpp.ll
@@ -60,6 +62,14 @@ entry:
 ; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/packet-idn.c.ll
 ; wireshark/optimized/packet-mrcpv2.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zstd/optimized/entropy_common.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
@@ -69,11 +79,12 @@ entry:
   ret i32 %4
 }
 
-; 288 occurrences:
+; 292 occurrences:
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/saigSwitch.c.ll
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cvc5/optimized/constraint.cpp.ll
@@ -178,6 +189,9 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
+; lvgl/optimized/lv_draw_sw_border.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_spinbox.ll
 ; meshlab/optimized/packing.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll

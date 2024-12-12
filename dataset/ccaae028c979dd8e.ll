@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000078(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 16
   %4 = select i1 %1, i32 %3, i32 %2
   %5 = or disjoint i32 %4, 8
-  %6 = icmp ugt i64 %0, 255
+  %6 = icmp samesign ugt i64 %0, 255
   %7 = select i1 %6, i32 %5, i32 %4
   ret i32 %7
 }
@@ -37,7 +37,7 @@ entry:
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 16
   %4 = select i1 %1, i32 %3, i32 %2
@@ -53,7 +53,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i64 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000064(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 16
   %4 = select i1 %1, i32 %3, i32 %2

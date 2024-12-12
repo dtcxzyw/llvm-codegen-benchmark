@@ -1,4 +1,4 @@
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vx	v12, v10, a0

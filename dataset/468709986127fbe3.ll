@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/ifTime.c.ll
@@ -9,6 +9,7 @@
 ; graphviz/optimized/poly.c.ll
 ; gromacs/optimized/gmx_chi.cpp.ll
 ; grpc/optimized/flow_control.cc.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; opencv/optimized/ppf_match_3d.cpp.ll
 ; quantlib/optimized/sviinterpolatedsmilesection.ll
 ; rocksdb/optimized/compaction_picker_universal.cc.ll

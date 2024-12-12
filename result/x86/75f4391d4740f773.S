@@ -10,7 +10,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000006:                   # @func0000000000000006
 	subq	%rdx, %rsi
 	andl	$1, %edi
-	incq	%rdi
+	addq	$9, %rdi
 	cmpq	%rdi, %rsi
 	setl	%al
 	retq

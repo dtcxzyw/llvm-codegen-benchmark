@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
@@ -12,12 +12,10 @@
 ; jemalloc/optimized/arena.sym.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/gso.ll
 ; linux/optimized/hdac_sysfs.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_dp_mst.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/ip6_checksum.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/oid_registry.ll
 ; linux/optimized/r8169_main.ll
@@ -52,6 +50,7 @@
 ; slurm/optimized/data_parser_v0_0_39_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_40_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
@@ -61,7 +60,7 @@ entry:
   ret i64 %4
 }
 
-; 48 occurrences:
+; 49 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -110,6 +109,7 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i16 %0, i16 %1) #0 {
 entry:
@@ -132,7 +132,7 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
@@ -144,6 +144,7 @@ entry:
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i16 %0, i16 %1) #0 {
 entry:
@@ -153,8 +154,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i16 %0, i16 %1) #0 {

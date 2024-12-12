@@ -1,9 +1,8 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; linux/optimized/dmar.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/pt.ll
 ; llvm/optimized/RISCVTargetParser.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll

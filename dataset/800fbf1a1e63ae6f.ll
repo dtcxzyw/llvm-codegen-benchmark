@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000424(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000844(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 56
   %3 = trunc i64 %2 to i32
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000404(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000804(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = trunc i64 %2 to i32

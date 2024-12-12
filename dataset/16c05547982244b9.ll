@@ -1,13 +1,11 @@
 
-; 26 occurrences:
-; abc/optimized/aigOper.c.ll
+; 22 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/indiancal.ll
 ; icu/optimized/olsontz.ll
 ; icu/optimized/rbtz.ll
@@ -15,7 +13,6 @@
 ; icu/optimized/timezone.ll
 ; icu/optimized/tzrule.ll
 ; icu/optimized/vtzone.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; openssl/optimized/quic_tserver_test-bin-quic_tserver_test.ll
 ; php/optimized/cdf_time.ll
 ; ruby/optimized/date_core.ll
@@ -25,13 +22,12 @@
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; velox/optimized/tz.cpp.ll
-; wireshark/optimized/time_util.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 100
   %3 = icmp eq i32 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -47,7 +43,7 @@ entry:
   ret i1 %4
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
 ; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
@@ -57,7 +53,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/indiancal.ll
 ; icu/optimized/olsontz.ll
 ; icu/optimized/rbtz.ll
@@ -70,7 +65,6 @@ entry:
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
 ; opencv/optimized/graycodepattern.cpp.ll
@@ -79,7 +73,10 @@ entry:
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; velox/optimized/tz.cpp.ll
-; wireshark/optimized/time_util.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
@@ -96,7 +93,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 100
   %3 = icmp sgt i32 %2, 96
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 55 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; graphviz/optimized/constrained_majorization.c.ll
@@ -11,6 +11,8 @@
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll

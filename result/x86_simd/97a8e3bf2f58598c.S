@@ -20,12 +20,12 @@ func000000000000000a:                   # @func000000000000000a
 	vzeroupper
 	retq
 .LCPI2_0:
-	.long	1                               # 0x1
+	.long	3                               # 0x3
 .LCPI2_1:
-	.long	2                               # 0x2
+	.long	4                               # 0x4
 func0000000000000006:                   # @func0000000000000006
 	vpmovq2m	%ymm0, %k1
-	vpbroadcastd	.LCPI2_0(%rip), %xmm0   # xmm0 = [1,1,1,1]
-	vpbroadcastd	.LCPI2_1(%rip), %xmm0 {%k1} # xmm0 {%k1} = [2,2,2,2]
+	vpbroadcastd	.LCPI2_0(%rip), %xmm0   # xmm0 = [3,3,3,3]
+	vpbroadcastd	.LCPI2_1(%rip), %xmm0 {%k1} # xmm0 {%k1} = [4,4,4,4]
 	vzeroupper
 	retq

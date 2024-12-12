@@ -16,10 +16,9 @@ entry:
   ret i64 %2
 }
 
-; 72 occurrences:
+; 70 occurrences:
 ; abc/optimized/extraBddSymm.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
-; abc/optimized/fxuPair.c.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btMultiBody.ll
@@ -49,6 +48,7 @@ entry:
 ; gromacs/optimized/tpxio.cpp.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; lightgbm/optimized/config.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -58,9 +58,7 @@ entry:
 ; openblas/optimized/dlalsd.c.ll
 ; openblas/optimized/dsfrk.c.ll
 ; openblas/optimized/dstedc.c.ll
-; openblas/optimized/dtfsm.c.ll
 ; openblas/optimized/dtgex2.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll
 ; opencv/optimized/dct_image_denoising.cpp.ll
 ; opencv/optimized/fgs_filter.cpp.ll
@@ -109,7 +107,7 @@ entry:
 ; hwloc/optimized/topology-nvml.ll
 ; hwloc/optimized/topology-xml.ll
 ; libwebp/optimized/palette.c.ll
-; linux/optimized/input-mt.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/mutual.cpp.ll
 ; xgboost/optimized/gblinear.cc.ll
 ; Function Attrs: nounwind
@@ -120,12 +118,11 @@ entry:
   ret i64 %2
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; graphviz/optimized/pca.c.ll
 ; linux/optimized/numa.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; openblas/optimized/dtfsm.c.ll
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/bytematrix.cpp.ll

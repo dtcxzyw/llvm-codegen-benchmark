@@ -12,7 +12,7 @@
 define i16 @func0000000000000000(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   ret i16 %3
 }
 

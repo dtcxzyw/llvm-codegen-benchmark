@@ -28,12 +28,11 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 1
 	andi	a1, a1, 255
-	lui	a2, 4096
-	sltiu	a1, a1, 91
+	li	a2, 32
+	sltiu	a1, a1, 6
 	czero.nez	a1, a2, a1
-	lui	a2, 53248
-	add	a1, a1, a2
-	lui	a2, 49152
+	li	a2, -48
+	addi	a1, a1, -87
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
@@ -46,6 +45,30 @@ func000000000000000a:                   # @func000000000000000a
 	czero.eqz	a1, a2, a1
 	li	a2, -87
 	addi	a1, a1, -55
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a0, a0, 1
+	andi	a1, a1, 255
+	li	a2, -19
+	sltiu	a1, a1, 65
+	czero.eqz	a1, a2, a1
+	li	a2, -87
+	addi	a1, a1, -29
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
+	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 1
+	andi	a1, a1, 255
+	li	a2, -8
+	sltiu	a1, a1, 240
+	czero.nez	a1, a2, a1
+	li	a2, 31
+	addi	a1, a1, 15
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

@@ -98,7 +98,7 @@
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %0, %1
   %3 = icmp ne ptr %0, null
@@ -106,7 +106,32 @@ entry:
   ret i1 %4
 }
 
-; 61 occurrences:
+; 98 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/this_thread.ll
+; boost/optimized/wait.ll
 ; cpython/optimized/pylifecycle.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -168,8 +193,20 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; z3/optimized/q_eval.cpp.ll
+; zed-rs/optimized/0fv2ekz5cqmfp10c07ot56iad.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/3r1m4prp00pk2zcmrznfgmdke.ll
+; zed-rs/optimized/41d8ddll8wwmef8q97jpo9b7d.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/a8gnqmwrn3029hplkci6d0ejl.ll
+; zed-rs/optimized/b8gnsytpkbqq6x8vbm79wrrb2.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %0, %1
   %3 = icmp ne ptr %0, null
@@ -185,7 +222,7 @@ entry:
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000012c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp uge ptr %0, %1
   %3 = icmp ne ptr %0, null
@@ -209,7 +246,7 @@ entry:
 ; redis/optimized/redis-cli.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ult ptr %0, %1
   %3 = icmp ne ptr %0, null
@@ -225,7 +262,7 @@ entry:
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; wireshark/optimized/editcap.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000010c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ugt ptr %0, %1
   %3 = icmp ne ptr %0, null
@@ -236,7 +273,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(ptr %0, ptr %1) #0 {
+define i1 @func00000000000000ac(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ule ptr %0, %1
   %3 = icmp ne ptr %0, null

@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
 ; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
@@ -7,6 +7,7 @@
 ; wasmtime-rs/optimized/3wyoi8cfrz3gwvs7.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define { i32, i32 } @func0000000000000002(i32 %0) #0 {
 entry:
@@ -16,7 +17,7 @@ entry:
   ret { i32, i32 } %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
 ; hermes/optimized/Function.cpp.ll
@@ -34,6 +35,7 @@ entry:
 ; wasmtime-rs/optimized/4al7oca9w649qan1.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
 define { i32, i32 } @func0000000000000018(i32 %0) #0 {
 entry:

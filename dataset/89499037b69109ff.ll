@@ -1,5 +1,5 @@
 
-; 404 occurrences:
+; 414 occurrences:
 ; abc/optimized/abcNames.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/bacWriteVer.c.ll
@@ -19,6 +19,13 @@
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
+; boost/optimized/pipe.ll
+; boost/optimized/src.ll
+; boost/optimized/test_iostream.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/clamdtop.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -144,6 +151,7 @@
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/ldblib.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nix/optimized/attrs.ll
@@ -164,8 +172,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -396,6 +402,10 @@
 ; xgboost/optimized/charconv.cc.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/sat_drat.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; zxing/optimized/ECI.cpp.ll

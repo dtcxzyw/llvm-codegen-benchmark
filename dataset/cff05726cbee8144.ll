@@ -13,7 +13,7 @@
 ; wireshark/optimized/packet-btatt.c.ll
 ; wireshark/optimized/packet-bthci_evt.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i8 %0) #0 {
+define i32 @func0000000000000041(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 1
   %2 = zext i1 %1 to i32

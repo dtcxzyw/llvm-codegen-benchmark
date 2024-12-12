@@ -1,5 +1,7 @@
 
-; 31 occurrences:
+; 32 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; casadi/optimized/nlp_builder.cpp.ll
@@ -17,7 +19,6 @@
 ; openspiel/optimized/tabular_q_learning.cc.ll
 ; openspiel/optimized/tabular_sarsa.cc.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/ortho.cpp.ll
 ; quantlib/optimized/analyticeuropeanvasicekengine.ll
 ; quantlib/optimized/blackcdsoptionengine.ll

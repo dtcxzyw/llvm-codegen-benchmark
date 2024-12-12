@@ -1,5 +1,5 @@
 
-; 749 occurrences:
+; 752 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -32,6 +32,11 @@
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -396,7 +401,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -739,7 +743,6 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/ql_dsp_simd.ll
 ; yosys/optimized/recover_names.ll
@@ -750,16 +753,16 @@
 ; z3/optimized/theory_str.cpp.ll
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp eq i64 %5, 288230376151711743
   ret i1 %6
 }
 
-; 121 occurrences:
+; 120 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
@@ -798,7 +801,6 @@ entry:
 ; minetest/optimized/mapsector.cpp.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/rfilter.cpp.ll
 ; mitsuba3/optimized/volumegrid.cpp.ll
 ; mold/optimized/gdb-index.cc.ALPHA.cc.ll
@@ -882,7 +884,7 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
@@ -997,7 +999,7 @@ entry:
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -1006,7 +1008,7 @@ entry:
   ret i1 %6
 }
 
-; 218 occurrences:
+; 219 occurrences:
 ; arrow/optimized/caching.cc.ll
 ; arrow/optimized/type.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
@@ -1018,6 +1020,7 @@ entry:
 ; assimp/optimized/PretransformVertices.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/attribute_name.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/polynomial.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
@@ -1226,16 +1229,16 @@ entry:
 ; yosys/optimized/xilinx_dsp.ll
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp ugt i64 %5, 1152921504606846975
   ret i1 %6
 }
 
-; 131 occurrences:
+; 133 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
@@ -1246,6 +1249,8 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cvc5/optimized/cadical.cpp.ll
@@ -1368,16 +1373,16 @@ entry:
 ; verilator/optimized/V3Timing.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp sgt i64 %5, -1
   ret i1 %6
 }
 
-; 132 occurrences:
+; 122 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
@@ -1387,21 +1392,14 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cvc5/optimized/cadical.cpp.ll
 ; cvc5/optimized/dio_solver.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
-; eastl/optimized/TestAlgorithm.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestExtra.cpp.ll
-; eastl/optimized/TestIterator.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
 ; folly/optimized/IOBufIovecBuilder.cpp.ll
 ; gromacs/optimized/lifetime.cpp.ll
@@ -1412,7 +1410,6 @@ entry:
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
 ; hyperscan/optimized/ng.cpp.ll
 ; hyperscan/optimized/ng_calc_components.cpp.ll
-; hyperscan/optimized/ng_prefilter.cpp.ll
 ; hyperscan/optimized/ng_som.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
@@ -1449,11 +1446,9 @@ entry:
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
-; minetest/optimized/connection.cpp.ll
 ; ninja/optimized/build_test.cc.ll
 ; ninja/optimized/graph.cc.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
 ; opencv/optimized/canny.cpp.ll
 ; opencv/optimized/cap_mjpeg_decoder.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
@@ -1511,12 +1506,12 @@ entry:
 ; verilator/optimized/V3Timing.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000b4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = add nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 64
+  %5 = add nsw i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 64
   ret i1 %6
 }
 
@@ -1530,11 +1525,11 @@ entry:
 ; rocksdb/optimized/version_set.cc.ll
 ; rocksdb/optimized/write_batch.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp ult i64 %5, 8
   ret i1 %6
 }
@@ -1543,12 +1538,12 @@ entry:
 ; folly/optimized/QueuedImmediateExecutor.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ac(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = sub i64 0, %0
-  %6 = icmp ne i64 %4, %5
+  %5 = sub nsw i64 0, %4
+  %6 = icmp ne i64 %0, %5
   ret i1 %6
 }
 
@@ -1567,7 +1562,7 @@ entry:
 ; rocksdb/optimized/write_prepared_txn.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
@@ -1576,7 +1571,8 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
@@ -1586,11 +1582,11 @@ entry:
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp slt i64 %5, 2
   ret i1 %6
 }
@@ -1605,12 +1601,41 @@ entry:
 ; pybind11/optimized/test_local_bindings.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp slt i64 %5, 0
+  ret i1 %6
+}
+
+; 18 occurrences:
+; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
+; eastl/optimized/BenchmarkDeque.cpp.ll
+; eastl/optimized/TestAlgorithm.cpp.ll
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestExtra.cpp.ll
+; eastl/optimized/TestIterator.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; hyperscan/optimized/ng_prefilter.cpp.ll
+; hyperscan/optimized/rose_build_misc.cpp.ll
+; minetest/optimized/connection.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 4
+  %5 = add nsw i64 %0, %4
+  %6 = icmp ult i64 %5, 65535
   ret i1 %6
 }
 
@@ -1641,11 +1666,11 @@ entry:
 ; 1 occurrences:
 ; php/optimized/network.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp slt i64 %5, 0
   ret i1 %6
 }
@@ -1654,19 +1679,19 @@ entry:
 ; velox/optimized/DenseHll.cpp.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
-  %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 768
+  %5 = add nuw nsw i64 %0, %4
+  %6 = icmp samesign ugt i64 %5, 768
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr i64 %3, 1
@@ -1675,27 +1700,51 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; eastl/optimized/EATest.cpp.ll
-; libquic/optimized/d1_lib.c.ll
+; 1 occurrences:
+; quantlib/optimized/bumpinstrumentjacobian.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000b1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp slt i64 %1, %2
-  %4 = sext i1 %3 to i64
-  %5 = sub i64 0, %0
-  %6 = icmp eq i64 %4, %5
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 4
+  %5 = sub nsw i64 0, %4
+  %6 = icmp eq i64 %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; arrow/optimized/type.cc.ll
+; openusd/optimized/renderSettingsFlatteningSceneIndex.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 3
+  %5 = add nsw i64 %0, %4
+  %6 = icmp samesign ugt i64 %5, 576460752303423487
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; eastl/optimized/EATest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
+  %6 = icmp eq i64 %5, 10
+  ret i1 %6
+}
+
+; 1 occurrences:
+; eastl/optimized/EATest.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000012a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp slt i64 %1, %2
+  %4 = sext i1 %3 to i64
+  %5 = add nsw i64 %0, %4
   %6 = icmp sgt i64 %5, 10
   ret i1 %6
 }

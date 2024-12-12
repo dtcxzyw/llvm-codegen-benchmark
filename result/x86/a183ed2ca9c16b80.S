@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movl	%edx, %ecx
 	addq	%rsi, %rcx
 	shrq	$61, %rcx
@@ -14,7 +14,7 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$100, %eax
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movl	%edx, %ecx
 	addq	%rsi, %rcx
 	xorl	%eax, %eax

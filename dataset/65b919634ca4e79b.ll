@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 31 occurrences:
 ; brotli/optimized/transform.c.ll
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -28,6 +28,9 @@
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:

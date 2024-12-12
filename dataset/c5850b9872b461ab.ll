@@ -1,5 +1,6 @@
 
-; 31 occurrences:
+; 32 occurrences:
+; boost/optimized/operations.ll
 ; freetype/optimized/smooth.c.ll
 ; icu/optimized/collationcompare.ll
 ; icu/optimized/collationfastlatin.ll

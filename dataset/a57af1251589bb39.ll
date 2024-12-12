@@ -12,62 +12,45 @@ entry:
   ret ptr %5
 }
 
-; 44 occurrences:
-; assimp/optimized/IFCUtil.cpp.ll
+; 15 occurrences:
 ; assimp/optimized/TriangulateProcess.cpp.ll
-; ceres/optimized/block_random_access_sparse_matrix.cc.ll
-; ceres/optimized/block_sparse_matrix.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; gromacs/optimized/dlarrex.cpp.ll
-; gromacs/optimized/slarrex.cpp.ll
 ; icu/optimized/number_longnames.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libwebp/optimized/dec_sse2.c.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
-; opencv/optimized/synthetic_seq.cpp.ll
 ; openspiel/optimized/euchre.cc.ll
 ; openspiel/optimized/hearts_test.cc.ll
+; openspiel/optimized/spades.cc.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/ConvexVolumeTool.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 4
   %5 = getelementptr nusw float, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 104 occurrences:
+; 1 occurrences:
+; assimp/optimized/IFCUtil.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 3
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 8
+  %5 = getelementptr nusw double, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 106 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/saigConstr2.c.ll
@@ -172,6 +155,8 @@ entry:
 ; gromacs/optimized/updategroups.cpp.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openusd/optimized/restoration.c.ll
+; postgres/optimized/execExpr.ll
+; postgres/optimized/parse_utilcmd.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
@@ -182,18 +167,44 @@ entry:
   ret ptr %5
 }
 
+; 1 occurrences:
+; git/optimized/merge-ort.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 40
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 64
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
 ; 4 occurrences:
 ; opencv/optimized/posit.cpp.ll
 ; openspiel/optimized/oh_hell_test.cc.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 12
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 100
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 100
   %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 3 occurrences:
+; gromacs/optimized/dlarrex.cpp.ll
+; gromacs/optimized/slarrex.cpp.ll
+; libwebp/optimized/dec_sse2.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 3
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 -8
+  %5 = getelementptr nusw double, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -217,18 +228,6 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 -8
   %5 = getelementptr double, ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 1 occurrences:
-; linux/optimized/drm_debugfs_crc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul i32 %1, 11
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 10
-  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 

@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	vmfgt.vf	v0, v16, fa5
 	fli.s	fa5, inf
 	vfmerge.vfm	v12, v12, fa5, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fli.s	fa5, inf
@@ -32,7 +32,7 @@ func0000000000000009:                   # @func0000000000000009
 	vmfgt.vf	v21, v16, fa5
 	vmnor.mm	v0, v21, v20
 	vmerge.vim	v12, v12, 0, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 func0000000000000003:                   # @func0000000000000003
 	fmv.w.x	fa5, zero
@@ -41,14 +41,14 @@ func0000000000000003:                   # @func0000000000000003
 	vmnot.m	v0, v20
 	li	a0, -1
 	vmerge.vxm	v12, v12, a0, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v0, v16, fa5
 	vmerge.vim	v12, v12, 0, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 .LCPI6_0:
 	.word	0x322bcc77                      # float 9.99999993E-9
@@ -59,13 +59,20 @@ func000000000000000b:                   # @func000000000000000b
 	vmfgt.vf	v20, v16, fa5
 	vmnot.m	v0, v20
 	vmerge.vim	v12, v12, 0, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
-.LCPI7_0:
+func0000000000000001:                   # @func0000000000000001
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmfne.vv	v0, v16, v16
+	fli.s	fa5, nan
+	vfmerge.vfm	v12, v12, fa5, v0
+	vfmul.vv	v8, v8, v12
+	ret
+.LCPI8_0:
 	.word	0x4095ec57                      # float 4.68510008
 func0000000000000005:                   # @func0000000000000005
-	lui	a0, %hi(.LCPI7_0)
-	flw	fa5, %lo(.LCPI7_0)(a0)
+	lui	a0, %hi(.LCPI8_0)
+	flw	fa5, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v20, v16, fa5
 	vmnot.m	v0, v20

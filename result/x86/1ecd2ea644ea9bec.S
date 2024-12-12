@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	incq	%rdx
 	cmpq	%rsi, %rdx
 	sete	%al

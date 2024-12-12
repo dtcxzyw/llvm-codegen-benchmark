@@ -1,6 +1,5 @@
 
-; 19 occurrences:
-; abc/optimized/giaFanout.c.ll
+; 18 occurrences:
 ; luau/optimized/lnumprint.cpp.ll
 ; ocio/optimized/FileFormatCSP.cpp.ll
 ; ocio/optimized/FileFormatCTF.cpp.ll
@@ -27,7 +26,8 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/upx.c.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; icu/optimized/indiancal.ll
@@ -49,9 +49,7 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
-; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcResub.c.ll
+; 15 occurrences:
 ; clamav/optimized/clamd_others.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_opregion.ll

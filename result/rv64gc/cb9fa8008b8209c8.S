@@ -1,4 +1,4 @@
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	subw	a2, a2, a1
 	xori	a1, a2, 1
 	xori	a0, a0, 5
@@ -6,7 +6,7 @@ func0000000000000111:                   # @func0000000000000111
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func0000000000000141:                   # @func0000000000000141
+func0000000000000481:                   # @func0000000000000481
 	sext.w	a0, a0
 	subw	a2, a2, a1
 	addi	a2, a2, -12
@@ -14,7 +14,7 @@ func0000000000000141:                   # @func0000000000000141
 	sltiu	a0, a0, 16
 	and	a0, a0, a1
 	ret
-func000000000000014c:                   # @func000000000000014c
+func000000000000048c:                   # @func000000000000048c
 	sext.w	a0, a0
 	subw	a2, a2, a1
 	addi	a2, a2, -8
@@ -22,7 +22,7 @@ func000000000000014c:                   # @func000000000000014c
 	sltiu	a0, a0, -2
 	and	a0, a0, a1
 	ret
-func000000000000011a:                   # @func000000000000011a
+func000000000000042a:                   # @func000000000000042a
 	sext.w	a0, a0
 	subw	a2, a2, a1
 	addi	a2, a2, -31
@@ -31,7 +31,7 @@ func000000000000011a:                   # @func000000000000011a
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000541:                   # @func0000000000000541
 	sext.w	a0, a0
 	subw	a2, a2, a1
 	addi	a2, a2, -15
@@ -40,7 +40,7 @@ func00000000000001a1:                   # @func00000000000001a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
-func0000000000000161:                   # @func0000000000000161
+func00000000000004c1:                   # @func00000000000004c1
 	sext.w	a0, a0
 	subw	a2, a2, a1
 	slti	a1, a2, 3
@@ -48,7 +48,7 @@ func0000000000000161:                   # @func0000000000000161
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000116:                   # @func0000000000000116
+func0000000000000426:                   # @func0000000000000426
 	sext.w	a0, a0
 	subw	a2, a2, a1
 	slti	a1, a2, 8
@@ -56,7 +56,7 @@ func0000000000000116:                   # @func0000000000000116
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	sext.w	a0, a0
 	subw	a2, a2, a1
 	addi	a2, a2, -26
@@ -65,7 +65,7 @@ func00000000000001cc:                   # @func00000000000001cc
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	sext.w	a0, a0
 	subw	a2, a2, a1
 	slti	a1, a2, 8
@@ -73,7 +73,7 @@ func00000000000001a6:                   # @func00000000000001a6
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
-func0000000000000114:                   # @func0000000000000114
+func0000000000000424:                   # @func0000000000000424
 	sext.w	a0, a0
 	subw	a2, a2, a1
 	addi	a2, a2, -31
@@ -81,40 +81,32 @@ func0000000000000114:                   # @func0000000000000114
 	sltiu	a0, a0, -2
 	and	a0, a0, a1
 	ret
-func0000000000000166:                   # @func0000000000000166
+func00000000000004c6:                   # @func00000000000004c6
 	sext.w	a0, a0
 	subw	a2, a2, a1
 	slti	a1, a2, 3
 	slti	a0, a0, 2006
 	and	a0, a0, a1
 	ret
-func0000000000000911:                   # @func0000000000000911
+func0000000000002421:                   # @func0000000000002421
 	subw	a2, a2, a1
 	xori	a1, a2, 2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subw	a2, a2, a1
 	xori	a1, a2, -3
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	sext.w	a0, a0
 	subw	a2, a2, a1
 	slti	a1, a2, 2
 	slti	a0, a0, 2
 	or	a0, a0, a1
 	xori	a0, a0, 1
-	ret
-func00000000000009aa:                   # @func00000000000009aa
-	sext.w	a0, a0
-	sext.w	a1, a1
-	sext.w	a2, a2
-	slt	a1, a1, a2
-	sgtz	a0, a0
-	and	a0, a0, a1
 	ret

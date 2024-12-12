@@ -14,7 +14,7 @@ entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 31
   %4 = icmp eq i64 %3, 20
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -34,19 +34,7 @@ entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 31
   %4 = icmp ne i64 %3, 27
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/OSTargets.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
-entry:
-  %2 = freeze i64 %1
-  %3 = and i64 %2, 9223372028264841216
-  %4 = icmp ult i64 %3, 42949672960
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 173 occurrences:
+; 174 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; brotli/optimized/cluster.c.ll
 ; casadi/optimized/scpgen.cpp.ll
@@ -143,6 +143,7 @@
 ; quantlib/optimized/exponentialintegrals.ll
 ; quantlib/optimized/fftvanillaengine.ll
 ; quantlib/optimized/fftvariancegammaengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gbsmrndcalculator.ll
 ; quantlib/optimized/hestonblackvolsurface.ll
 ; quantlib/optimized/hestonprocess.ll

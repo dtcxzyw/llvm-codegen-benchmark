@@ -10,36 +10,12 @@
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = add i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = icmp ugt i64 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001bb(i64 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = add nuw nsw i64 %3, %0
-  %5 = zext i32 %1 to i64
-  %6 = icmp sge i64 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001b7(i64 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = add nuw nsw i64 %3, %0
-  %5 = zext i32 %1 to i64
-  %6 = icmp sle i64 %4, %5
   ret i1 %6
 }
 
@@ -49,19 +25,19 @@ entry:
 ; postgres/optimized/ginfast.ll
 ; qemu/optimized/gen-vdso.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b8(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000378(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 5
   %4 = add nuw nsw i64 %3, %0
   %5 = zext i32 %1 to i64
-  %6 = icmp ugt i64 %4, %5
+  %6 = icmp samesign ugt i64 %4, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %0
@@ -92,7 +68,7 @@ entry:
 ; openspiel/optimized/System.cpp.ll
 ; openspiel/optimized/ThreadMgr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %0
@@ -105,12 +81,24 @@ entry:
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000003f4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, %0
   %5 = zext nneg i32 %1 to i64
-  %6 = icmp ult i64 %4, %5
+  %6 = icmp samesign ult i64 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; abc/optimized/giaTransduction.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000138(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 3
+  %4 = add nsw i64 %3, %0
+  %5 = zext i32 %1 to i64
+  %6 = icmp samesign ugt i64 %4, %5
   ret i1 %6
 }
 
@@ -120,9 +108,22 @@ entry:
 define i1 @func0000000000000004(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = icmp ult i64 %4, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; clamav/optimized/htmlnorm.c.ll
+; linux/optimized/datagram.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 24
+  %4 = add i64 %0, %3
+  %5 = zext i32 %1 to i64
+  %6 = icmp eq i64 %4, %5
   ret i1 %6
 }
 
@@ -146,7 +147,7 @@ entry:
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %0
@@ -156,12 +157,24 @@ entry:
 }
 
 ; 1 occurrences:
+; draco/optimized/sequential_attribute_encoders_controller.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001b8(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 3
+  %4 = add nsw i64 %3, %0
+  %5 = zext nneg i32 %1 to i64
+  %6 = icmp samesign ugt i64 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/MachineLICM.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000261(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 5
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = icmp eq i64 %4, %5
   ret i1 %6
@@ -170,7 +183,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/basicoptions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %0
@@ -182,7 +195,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-acn.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001bc(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000036c(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, %0
@@ -194,7 +207,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/idr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 10
   %4 = add i64 %3, %0
@@ -203,40 +216,16 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; linux/optimized/datagram.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i64 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 6
-  %4 = add i64 %3, %0
-  %5 = zext i32 %1 to i64
-  %6 = icmp eq i64 %4, %5
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; protobuf/optimized/generated_enum_util.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e4(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000003c4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = icmp ult i64 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; g2o/optimized/types_seven_dof_expmap.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 1
-  %4 = add nsw i64 %3, %0
-  %5 = zext nneg i32 %1 to i64
-  %6 = icmp slt i64 %4, %5
   ret i1 %6
 }
 

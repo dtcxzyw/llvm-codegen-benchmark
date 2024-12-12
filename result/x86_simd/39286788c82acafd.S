@@ -9,7 +9,7 @@ func0000000000000004:                   # @func0000000000000004
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	0x40c90fdb                      # float 6.28318548
+	.long	0x43b40000                      # float 360
 func0000000000000002:                   # @func0000000000000002
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1

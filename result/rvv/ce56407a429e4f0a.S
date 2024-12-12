@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vv	v0, v8, v12
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	lui	a0, 1108
 	addiw	a0, a0, -1291
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -24,7 +24,7 @@ func000000000000005a:                   # @func000000000000005a
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	li	a0, 60
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0

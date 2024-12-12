@@ -35,22 +35,6 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a1, a2, -423
 	addw	a0, a0, a1
 	ret
-func0000000000000054:                   # @func0000000000000054
-	li	a2, 365
-	mul	a1, a1, a2
-	lui	a2, 420
-	add	a0, a0, a1
-	addi	a1, a2, 737
-	addw	a0, a0, a1
-	ret
-func000000000000005c:                   # @func000000000000005c
-	li	a2, 365
-	mul	a1, a1, a2
-	lui	a2, 420
-	add	a0, a0, a1
-	addi	a1, a2, 738
-	addw	a0, a0, a1
-	ret
 func000000000000001f:                   # @func000000000000001f
 	li	a2, 21
 	mul	a1, a1, a2

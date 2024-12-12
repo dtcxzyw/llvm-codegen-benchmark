@@ -32,17 +32,16 @@
 ; yosys/optimized/extract_reduce.ll
 ; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
   %5 = sub nsw i64 0, %4
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
-; 9 occurrences:
-; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; 8 occurrences:
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -52,12 +51,12 @@ entry:
 ; opencv/optimized/darknet_io.cpp.ll
 ; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
   %5 = sub nuw nsw i64 8, %4
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -73,12 +72,12 @@ entry:
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ac(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
   %5 = sub nsw i64 0, %4
-  %6 = icmp ne i64 %5, %0
+  %6 = icmp ne i64 %0, %5
   ret i1 %6
 }
 
@@ -86,24 +85,24 @@ entry:
 ; hyperscan/optimized/ng_calc_components.cpp.ll
 ; hyperscan/optimized/ng_redundancy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
   %5 = sub nsw i64 0, %4
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; hyperscan/optimized/ng_redundancy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
   %5 = sub nsw i64 0, %4
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 

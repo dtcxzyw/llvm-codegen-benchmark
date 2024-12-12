@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/numeric.ll
 ; cmake/optimized/stream_encoder_mt.c.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; llvm/optimized/RegBankSelect.cpp.ll

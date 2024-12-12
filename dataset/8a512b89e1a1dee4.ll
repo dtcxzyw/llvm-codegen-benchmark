@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -13,6 +13,8 @@
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifTest.c.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/idas_ic.c.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
@@ -20,7 +22,6 @@
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; openblas/optimized/dlasd2.c.ll

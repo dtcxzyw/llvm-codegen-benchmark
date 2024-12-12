@@ -1,33 +1,25 @@
-func0000000000000022:                   // @func0000000000000022
+func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	cmeq	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v2.2d, #0
-	mov	v4.16b, v1.16b
-	uzp1	v2.4s, v2.4s, v3.4s
-	orr	v4.4s, #64, lsl #8
-	bif	v1.16b, v4.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	orr	w8, w1, #0x4000
+	cmp	x2, #0
+	csel	w8, w1, w8, eq
+	orr	w0, w8, w0
 	ret
                                         // -- End function
-func0000000000000023:                   // @func0000000000000023
+func0000000000000043:                   // @func0000000000000043
 // %bb.0:                               // %entry
-	cmeq	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v2.2d, #0
-	mov	v4.16b, v1.16b
-	uzp1	v2.4s, v2.4s, v3.4s
-	orr	v4.4s, #96, lsl #16
-	bif	v1.16b, v4.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	orr	w8, w1, #0x4
+	cmp	x2, #0
+	csel	w8, w1, w8, eq
+	orr	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	cmeq	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v2.2d, #0
-	mov	v4.16b, v1.16b
-	uzp1	v2.4s, v2.4s, v3.4s
-	orr	v4.4s, #168
-	bif	v1.16b, v4.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	mov	w8, #168                        // =0xa8
+	cmp	x2, #0
+	orr	w8, w1, w8
+	csel	w8, w1, w8, eq
+	orr	w0, w0, w8
 	ret
                                         // -- End function

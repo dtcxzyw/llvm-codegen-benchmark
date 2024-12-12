@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/epd.c.ll
 ; cpython/optimized/dtoa.ll
 ; hermes/optimized/Interpreter-slowpaths.cpp.ll
@@ -12,6 +12,7 @@
 ; qemu/optimized/fpu_softfloat.c.ll
 ; ruby/optimized/range.ll
 ; ruby/optimized/util.ll
+; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll

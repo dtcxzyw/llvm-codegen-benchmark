@@ -1,8 +1,6 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, ptr %1) #0 {
@@ -26,7 +24,7 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/cuddBddAbs.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddBddIte.c.ll
@@ -42,6 +40,7 @@ entry:
 ; jemalloc/optimized/emap.pic.ll
 ; jemalloc/optimized/emap.sym.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; redis/optimized/emap.ll
 ; redis/optimized/emap.sym.ll
 ; Function Attrs: nounwind

@@ -12,7 +12,7 @@ func000000000000000a:                   # @func000000000000000a
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	subw	a1, a1, a2
 	sgtz	a1, a1
 	not	a0, a0

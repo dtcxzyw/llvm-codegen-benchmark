@@ -13,12 +13,12 @@ func0000000000000005:                   # @func0000000000000005
 	sub	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000001:                   # @func0000000000000001
+func000000000000000d:                   # @func000000000000000d
 	sext.w	a2, a2
 	sub	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000d:                   # @func000000000000000d
+func0000000000000001:                   # @func0000000000000001
 	sext.w	a2, a2
 	sub	a0, a0, a1
 	add	a0, a0, a2

@@ -15,17 +15,15 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000006f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = lshr i64 %1, 25
   %5 = add nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   %7 = and i64 %6, 2147483648
   ret i64 %7
 }

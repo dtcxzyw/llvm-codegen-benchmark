@@ -7,11 +7,11 @@
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; sundials/optimized/ida.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 12
   %6 = getelementptr nusw [0 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
 }

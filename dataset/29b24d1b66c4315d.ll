@@ -44,7 +44,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 64, i32 32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nsw i32 %3, -32
   %5 = zext i32 %4 to i64
   ret i64 %5

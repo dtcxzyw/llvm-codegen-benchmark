@@ -36,7 +36,7 @@ func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vv	v0, v12, v10
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmv.v.i	v9, 0
+	vmv.v.i	v9, 3
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 func0000000000000005:                   # @func0000000000000005

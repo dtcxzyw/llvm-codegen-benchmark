@@ -2,13 +2,13 @@
 ; 1 occurrences:
 ; abc/optimized/abcRenode.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 24
   %4 = and i64 %3, 255
   %5 = getelementptr i32, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -16,13 +16,13 @@ entry:
 ; cmake/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 4
   %4 = and i64 %3, 268435440
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i32, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -42,13 +42,13 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 536870896
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 

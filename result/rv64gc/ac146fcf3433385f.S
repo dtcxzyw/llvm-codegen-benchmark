@@ -15,7 +15,7 @@ func0000000000000004:                   # @func0000000000000004
 	slliw	a0, a1, 8
 	sltiu	a0, a0, 1008
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	mv	a1, a2

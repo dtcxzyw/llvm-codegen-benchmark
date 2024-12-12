@@ -8,3 +8,8 @@ func000000000000001b:                   # @func000000000000001b
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
 	retq
+func000000000000003b:                   # @func000000000000003b
+	movabsq	$1844674407371, %rax            # imm = 0x1AD7F29ABCB
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
+	retq

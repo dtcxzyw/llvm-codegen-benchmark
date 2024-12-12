@@ -36,7 +36,7 @@ entry:
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -5
   %4 = icmp ult i64 %3, -2
@@ -49,11 +49,11 @@ entry:
 ; folly/optimized/AsyncSocket.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000066(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = icmp slt i64 %3, 0
-  %5 = getelementptr nusw i8, ptr %1, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 8
   %6 = select i1 %4, ptr %0, ptr %5
   ret ptr %6
 }
@@ -61,10 +61,10 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %1, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
   %5 = select i1 %3, ptr %0, ptr %4
   ret ptr %5
 }
@@ -73,11 +73,11 @@ entry:
 ; brotli/optimized/decode.c.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 151
   %4 = icmp ult i64 %3, 150
-  %5 = getelementptr nusw i8, ptr %1, i64 150
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 150
   %6 = select i1 %4, ptr %0, ptr %5
   ret ptr %6
 }

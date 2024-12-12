@@ -1,6 +1,8 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
@@ -19,7 +21,7 @@ entry:
 define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg2 = xor i32 %2, -1
-  %.neg = add i32 %.neg2, %1
+  %.neg = add i32 %1, %.neg2
   %.neg1 = sub i32 %.neg, %0
   ret i32 %.neg1
 }
@@ -30,7 +32,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg2 = xor i32 %2, -1
-  %.neg = add i32 %.neg2, %1
+  %.neg = add i32 %1, %.neg2
   %.neg1 = sub i32 %.neg, %0
   ret i32 %.neg1
 }

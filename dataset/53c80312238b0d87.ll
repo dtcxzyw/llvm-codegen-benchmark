@@ -26,23 +26,18 @@ entry:
   ret i32 %2
 }
 
-; 20 occurrences:
+; 15 occurrences:
 ; abc/optimized/darCut.c.ll
-; linux/optimized/advise.ll
 ; linux/optimized/cancel.ll
-; linux/optimized/epoll.ll
 ; linux/optimized/futex.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/kbuf.ll
 ; linux/optimized/msg_ring.ll
 ; linux/optimized/net.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/rw.ll
-; linux/optimized/splice.ll
 ; linux/optimized/timeout.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/waitid.ll
 ; llvm/optimized/ParseObjc.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll

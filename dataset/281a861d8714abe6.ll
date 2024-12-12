@@ -1,34 +1,21 @@
 
-%struct.dt_iop_basecurve_node_t.2759882 = type { float, float }
+%struct.dt_iop_basecurve_node_t.2872160 = type { float, float }
 
-; 4 occurrences:
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/fieldInfo.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 4
-  %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %5 = getelementptr i8, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %3
   ret ptr %6
 }
 
-; 19 occurrences:
-; gromacs/optimized/dstebz.cpp.ll
-; gromacs/optimized/dtrmv.cpp.ll
-; gromacs/optimized/sstebz.cpp.ll
-; gromacs/optimized/strmv.cpp.ll
+; 9 occurrences:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
-; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dlarrd.c.ll
-; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dsbtrd.c.ll
-; openblas/optimized/dstebz.c.ll
-; openblas/optimized/dtgsja.c.ll
 ; openjdk/optimized/oopMap.ll
 ; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
@@ -37,12 +24,12 @@ entry:
 ; openspiel/optimized/spiel.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 12
-  %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 12
+  %5 = getelementptr i8, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -65,8 +52,8 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 4
-  %5 = getelementptr float, ptr %4, i64 %3
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %4, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -80,8 +67,8 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 8
-  %5 = getelementptr %struct.dt_iop_basecurve_node_t.2759882, ptr %4, i64 %3
-  %6 = getelementptr %struct.dt_iop_basecurve_node_t.2759882, ptr %5, i64 %1
+  %5 = getelementptr %struct.dt_iop_basecurve_node_t.2872160, ptr %4, i64 %1
+  %6 = getelementptr %struct.dt_iop_basecurve_node_t.2872160, ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -92,8 +79,8 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 1281920
-  %5 = getelementptr float, ptr %4, i64 %3
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %4, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -104,8 +91,8 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 1281920
-  %5 = getelementptr float, ptr %4, i64 %3
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %4, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -113,24 +100,24 @@ entry:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 410112
-  %5 = getelementptr float, ptr %4, i64 %3
-  %6 = getelementptr float, ptr %5, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 410112
+  %5 = getelementptr float, ptr %4, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %3
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 717696
-  %5 = getelementptr float, ptr %4, i64 %3
-  %6 = getelementptr float, ptr %5, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 717696
+  %5 = getelementptr float, ptr %4, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -146,8 +133,29 @@ define ptr @func0000000000000018(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 -4
-  %5 = getelementptr float, ptr %4, i64 %3
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %4, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %3
+  ret ptr %6
+}
+
+; 10 occurrences:
+; gromacs/optimized/dstebz.cpp.ll
+; gromacs/optimized/dtrmv.cpp.ll
+; gromacs/optimized/sstebz.cpp.ll
+; gromacs/optimized/strmv.cpp.ll
+; openblas/optimized/dgbbrd.c.ll
+; openblas/optimized/dlarrd.c.ll
+; openblas/optimized/dsbgst.c.ll
+; openblas/optimized/dsbtrd.c.ll
+; openblas/optimized/dstebz.c.ll
+; openblas/optimized/dtgsja.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 -4
+  %5 = getelementptr i32, ptr %4, i64 %1
+  %6 = getelementptr i32, ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -156,12 +164,26 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000033(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 -8
-  %5 = getelementptr double, ptr %4, i64 %3
-  %6 = getelementptr double, ptr %5, i64 %1
+  %5 = getelementptr double, ptr %4, i64 %1
+  %6 = getelementptr double, ptr %5, i64 %3
+  ret ptr %6
+}
+
+; 3 occurrences:
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 -8
+  %5 = getelementptr double, ptr %4, i64 %1
+  %6 = getelementptr double, ptr %5, i64 %3
   ret ptr %6
 }
 

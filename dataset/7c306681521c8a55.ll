@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 53 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/matcher.c.ll
 ; cpython/optimized/ceval.ll
@@ -16,16 +16,12 @@
 ; linux/optimized/driver-ops.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/forcedeth.ll
-; linux/optimized/hwsleep.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/icmp.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/ip6_checksum.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/link.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/mdio_bus.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/netdev.ll
@@ -56,6 +52,7 @@
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
 ; wireshark/optimized/packet-x11.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i16 %0) #0 {
 entry:
@@ -64,11 +61,12 @@ entry:
   ret i32 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; brotli/optimized/decode.c.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; icu/optimized/ucnvbocu.ll
 ; linux/optimized/driver-ops.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i16 %0) #0 {
 entry:

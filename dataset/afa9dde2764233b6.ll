@@ -31,15 +31,13 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; coreutils-rs/optimized/1rq2clzuccjujjg1.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; openssl/optimized/libcommon-lib-ciphercommon.ll
 ; openssl/optimized/libssl-lib-quic_rstream.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
 ; openssl/optimized/libssl-shlib-quic_rstream.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; rocksdb/optimized/env_encryption.cc.ll
 ; soc-simulator/optimized/sim_mycpu.ll

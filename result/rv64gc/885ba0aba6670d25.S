@@ -42,14 +42,6 @@ func0000000000000004:                   # @func0000000000000004
 	li	a1, -3
 	add	a0, a0, a1
 	ret
-func0000000000000020:                   # @func0000000000000020
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	sltiu	a1, a1, 12
-	xori	a1, a1, 1
-	add	a0, a0, a1
-	addi	a0, a0, 2
-	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 48
 	srli	a1, a1, 48
@@ -63,23 +55,11 @@ func0000000000000023:                   # @func0000000000000023
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	li	a2, 10
-	bltu	a2, a1, .LBB6_2
+	bltu	a2, a1, .LBB5_2
 	li	a1, 14
 	add	a0, a0, a1
 	ret
-.LBB6_2:
+.LBB5_2:
 	li	a1, 4
-	add	a0, a0, a1
-	ret
-func0000000000000013:                   # @func0000000000000013
-	slli	a1, a1, 48
-	srli	a1, a1, 57
-	li	a2, 37
-	bltu	a1, a2, .LBB7_2
-	li	a1, 374
-	add	a0, a0, a1
-	ret
-.LBB7_2:
-	li	a1, 401
 	add	a0, a0, a1
 	ret

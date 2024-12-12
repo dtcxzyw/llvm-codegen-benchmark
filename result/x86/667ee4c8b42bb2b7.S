@@ -18,3 +18,8 @@ func0000000000000010:                   # @func0000000000000010
 	leaq	(%rdi,%rsi), %rax
 	subq	%rcx, %rax
 	retq
+func0000000000000012:                   # @func0000000000000012
+	movzbl	%dl, %ecx
+	leaq	(%rdi,%rsi), %rax
+	subq	%rcx, %rax
+	retq

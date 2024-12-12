@@ -1,5 +1,5 @@
 
-%class.QCPGraphData.3260420 = type { double, double }
+%class.QCPGraphData.3451166 = type { double, double }
 
 ; 1 occurrences:
 ; openjdk/optimized/methodData.ll
@@ -49,7 +49,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %class.QCPGraphData.3260420, ptr %1, i64 %3
+  %4 = getelementptr %class.QCPGraphData.3451166, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = lshr exact i64 %6, 4

@@ -1,12 +1,13 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; llvm/optimized/MIRFSDiscriminator.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; re2/optimized/compile.cc.ll
+; soc-simulator/optimized/verilated.ll
 ; spike/optimized/debug_module.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -2, %1
   %3 = xor i32 %2, -1
@@ -23,7 +24,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
@@ -36,7 +37,7 @@ entry:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
@@ -60,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/sharpyuv.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1

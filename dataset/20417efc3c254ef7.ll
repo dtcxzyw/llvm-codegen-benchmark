@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
 ; gromacs/optimized/coolstuff.cpp.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; rocksdb/optimized/transaction_test_util.cc.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000003(i64 %0) #0 {
 entry:
@@ -14,7 +15,8 @@ entry:
   ret i128 %3
 }
 
-; 102 occurrences:
+; 105 occurrences:
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -117,6 +119,8 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000007(i64 %0) #0 {
 entry:

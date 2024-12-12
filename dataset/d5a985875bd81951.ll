@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
@@ -20,6 +20,7 @@
 ; raylib/optimized/raudio.c.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

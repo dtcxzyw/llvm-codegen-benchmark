@@ -22,12 +22,12 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI3_0:
-	.long	32768                           # 0x8000
+	.long	1047552                         # 0xffc00
 func000000000000000f:                   # @func000000000000000f
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpslld	$14, %ymm2, %ymm1
-	vpbroadcastd	.LCPI3_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [32768,32768,32768,32768,32768,32768,32768,32768]
+	vpslld	$10, %ymm2, %ymm1
+	vpbroadcastd	.LCPI3_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1047552,1047552,1047552,1047552,1047552,1047552,1047552,1047552]
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004

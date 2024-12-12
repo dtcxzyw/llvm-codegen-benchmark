@@ -54,11 +54,3 @@ func0000000000000011:                   # @func0000000000000011
 	andl	$1, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000041:                   # @func0000000000000041
-	cmpb	$-64, %dl
-	setb	%al
-	orb	%sil, %al
-	movzbl	%al, %eax
-	andl	$1, %eax
-	addl	%edi, %eax
-	retq

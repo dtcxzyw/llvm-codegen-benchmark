@@ -37,7 +37,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1    # ymm1 = ymm1[2],zero,zero,zero,ymm1[6],zero,zero,zero,ymm1[10],zero,zero,zero,ymm1[14],zero,zero,zero,ymm1[18],zero,zero,zero,ymm1[22],zero,zero,zero,ymm1[26],zero,zero,zero,ymm1[30],zero,zero,zero
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm1, %ymm2, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	15                              # 0xf
@@ -57,5 +57,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsllvd	%ymm1, %ymm2, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq

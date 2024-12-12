@@ -1,12 +1,14 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	x8, #4294967296                 // =0x100000000
-	ushr	v3.2d, v1.2d, #32
-	ushr	v4.2d, v0.2d, #32
-	dup	v2.2d, x8
-	cmhi	v5.2d, v2.2d, v1.2d
-	cmhi	v2.2d, v2.2d, v0.2d
-	bif	v0.16b, v4.16b, v2.16b
-	bif	v1.16b, v3.16b, v5.16b
+	lsr	x8, x0, #32
+	cmp	x8, #0
+	csel	x0, x0, x8, eq
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	lsr	x8, x0, #16
+	cmp	x0, #16, lsl #12                // =65536
+	csel	x0, x0, x8, lo
 	ret
                                         // -- End function

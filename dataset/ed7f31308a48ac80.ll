@@ -1,5 +1,5 @@
 
-; 2240 occurrences:
+; 2239 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cord_analysis.cc.ll
@@ -49,6 +49,8 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/environment.ll
+; boost/optimized/message.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/serializing_stream.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
@@ -520,7 +522,6 @@
 ; folly/optimized/LogCategory.cpp.ll
 ; folly/optimized/LogConfig.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/OpenSSLUtils.cpp.ll
 ; folly/optimized/ProgramOptions.cpp.ll
 ; folly/optimized/QueueObserver.cpp.ll
@@ -743,7 +744,6 @@
 ; minetest/optimized/ExtensionHandler.cpp.ll
 ; minetest/optimized/al_extensions.cpp.ll
 ; minetest/optimized/ban.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/c_packer.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/client.cpp.ll
@@ -790,7 +790,6 @@
 ; minetest/optimized/mod_configuration.cpp.ll
 ; minetest/optimized/modchannels.cpp.ll
 ; minetest/optimized/mods.cpp.ll
-; minetest/optimized/mt_opengl_loader.cpp.ll
 ; minetest/optimized/nameidmapping.cpp.ll
 ; minetest/optimized/nodedef.cpp.ll
 ; minetest/optimized/nodemetadata.cpp.ll

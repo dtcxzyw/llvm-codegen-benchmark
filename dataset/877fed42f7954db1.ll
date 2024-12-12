@@ -8,17 +8,16 @@
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; git/optimized/diffcore-delta.ll
 ; libwebp/optimized/iterator_enc.c.ll
-; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:

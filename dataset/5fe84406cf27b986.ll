@@ -20,23 +20,23 @@ entry:
 ; hdf5/optimized/H5Pocpl.c.ll
 ; lief/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i8 %0, ptr %1) #0 {
+define ptr @func000000000000006f(i8 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = zext i8 %0 to i64
-  %4 = getelementptr nusw i8, ptr %2, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %2, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; libquic/optimized/ec_asn1.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000048(i8 %0, ptr %1) #0 {
+define ptr @func000000000000006c(i8 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 10
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 10
   %3 = zext i8 %0 to i64
-  %4 = getelementptr nusw i8, ptr %2, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %2, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }

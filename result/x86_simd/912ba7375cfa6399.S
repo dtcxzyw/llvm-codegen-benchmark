@@ -20,7 +20,7 @@
 .LCPI0_2:
 	.short	48                              # 0x30
 	.short	48                              # 0x30
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpord	.LCPI0_2(%rip){1to8}, %ymm2, %ymm2
 	vpcmpltub	.LCPI0_1(%rip), %xmm1, %k1
 	vmovdqu16	%ymm2, %ymm0 {%k1}
@@ -45,7 +45,7 @@ func0000000000000014:                   # @func0000000000000014
 .LCPI1_1:
 	.short	1024                            # 0x400
 	.short	1024                            # 0x400
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpord	.LCPI1_1(%rip){1to8}, %ymm2, %ymm2
 	vptestnmb	%xmm1, %xmm1, %k1
 	vmovdqu16	%ymm2, %ymm0 {%k1}

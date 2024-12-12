@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%edx, %esi
-	testb	%dil, %sil
+	testb	%sil, %dil
 	setns	%al
 	retq
 func0000000000000006:                   # @func0000000000000006

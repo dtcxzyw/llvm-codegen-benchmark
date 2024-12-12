@@ -7,13 +7,13 @@
 define i32 @func00000000000000f0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 3600
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = mul nuw nsw i32 %1, 60
   %6 = add i32 %4, %5
   ret i32 %6
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -29,6 +29,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
@@ -68,7 +69,7 @@ entry:
   ret i32 %6
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
@@ -76,7 +77,6 @@ entry:
 ; cmake/optimized/cmCTestGIT.cxx.ll
 ; folly/optimized/farmhash.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
-; icu/optimized/gregoimp.ll
 ; libpng/optimized/pngread.c.ll
 ; libwebp/optimized/yuv.c.ll
 ; linux/optimized/fib_trie.ll
@@ -104,13 +104,13 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3600
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = mul i32 %1, 60
   %6 = add i32 %4, %5
   ret i32 %6
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
 ; assimp/optimized/XFileParser.cpp.ll
@@ -128,6 +128,7 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; minetest/optimized/noise.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
@@ -149,13 +150,13 @@ entry:
 define i32 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 60
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = mul nsw i32 %1, 3600
   %6 = add nsw i32 %4, %5
   ret i32 %6
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/giaHash.c.ll
@@ -163,22 +164,21 @@ entry:
 ; git/optimized/xdiffi.ll
 ; libquic/optimized/time_support.c.ll
 ; llvm/optimized/VLIWMachineScheduler.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; openjdk/optimized/jidctred.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; quantlib/optimized/thirty360.ll
 ; quantlib/optimized/thirty365.ll
 ; velox/optimized/tz.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = mul nsw i32 %2, 3600
+  %3 = mul nsw i32 %2, 42123
   %4 = add i32 %3, %0
-  %5 = mul nsw i32 %1, 60
+  %5 = mul nsw i32 %1, 38134234
   %6 = add i32 %4, %5
   ret i32 %6
 }
@@ -192,7 +192,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 1013
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = mul nsw i32 %1, 1619
   %6 = add i32 %4, %5
   ret i32 %6
@@ -208,7 +208,7 @@ entry:
 define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 1619
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = mul i32 %1, 1013
   %6 = add i32 %4, %5
   ret i32 %6
@@ -225,7 +225,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 1013
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = mul nsw i32 %0, 1619
   %6 = add i32 %5, %4
   ret i32 %6
@@ -240,7 +240,7 @@ entry:
 define i32 @func00000000000000f5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 1260
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = mul nuw nsw i32 %1, 10
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -253,24 +253,23 @@ entry:
 define i32 @func00000000000000d0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 402653189
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = mul nsw i32 %1, 100663319
   %6 = add i32 %4, %5
   ret i32 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; hwloc/optimized/lstopo-lstopo-fig.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-fig.ll
-; icu/optimized/gregoimp.ll
 ; libquic/optimized/prtime.cc.ll
 ; opencv/optimized/brisk.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 60
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = mul i32 %1, 1440
   %6 = add i32 %4, %5
   ret i32 %6
@@ -310,7 +309,7 @@ entry:
 define i32 @func00000000000000f7(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 12600
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = mul nuw nsw i32 %1, 1260
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -322,7 +321,7 @@ entry:
 define i32 @func00000000000000fd(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 12600
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = mul nuw nsw i32 %1, 1260
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -360,7 +359,7 @@ entry:
 define i32 @func00000000000000c0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 460324
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = mul i32 %1, 268280268
   %6 = add i32 %4, %5
   ret i32 %6
@@ -372,7 +371,7 @@ entry:
 define i32 @func00000000000000fa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 4191920
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = mul nuw nsw i32 %1, 3596
   %6 = add nuw i32 %4, %5
   ret i32 %6
@@ -384,7 +383,7 @@ entry:
 define i32 @func00000000000000fe(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 4191289
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = mul nuw nsw i32 %1, 4193722
   %6 = add nuw i32 %4, %5
   ret i32 %6
@@ -396,7 +395,7 @@ entry:
 define i32 @func0000000000000077(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, -19081
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = mul nuw nsw i32 %1, 28800
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -409,7 +408,7 @@ entry:
 define i32 @func0000000000000075(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, -19081
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = mul nuw nsw i32 %1, 28800
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -421,7 +420,7 @@ entry:
 define i32 @func00000000000000dd(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 115200
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = mul nsw i32 %1, -96464
   %6 = add nsw i32 %4, %5
   ret i32 %6

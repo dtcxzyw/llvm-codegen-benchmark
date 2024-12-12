@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; hermes/optimized/Conversions.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; openjdk/optimized/classLoaderStats.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/to_str.c.ll
@@ -10,7 +11,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

@@ -46,7 +46,6 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; mimalloc/optimized/page.c.ll
 ; node/optimized/thread.ll
 ; opencv/optimized/block_mean_hash.cpp.ll
@@ -101,6 +100,7 @@
 ; rand-rs/optimized/qpqwmytuo9t2y51.ll
 ; slurm/optimized/bitstring.ll
 ; spike/optimized/csrs.ll
+; spike/optimized/triggers.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArrayIntersectExcept.cpp.ll

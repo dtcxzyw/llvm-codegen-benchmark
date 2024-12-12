@@ -12,13 +12,14 @@ entry:
   ret float %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/materials.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; pbrt-v4/optimized/textures.cpp.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(i1 %0, float %1, float %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/amapUniq.c.ll
 ; abc/optimized/cuddEssent.c.ll
@@ -26,7 +26,6 @@
 ; linux/optimized/build_utility.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/poll.ll
@@ -53,7 +52,7 @@ entry:
   ret i32 %2
 }
 
-; 76 occurrences:
+; 71 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/fraigFeed.c.ll
@@ -65,11 +64,9 @@ entry:
 ; libuv/optimized/fs-poll.c.ll
 ; lief/optimized/ccm.c.ll
 ; linux/optimized/addrconf.ll
-; linux/optimized/advise.ll
 ; linux/optimized/cancel.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/epoll.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/futex.ll
 ; linux/optimized/g4x_hdmi.ll
@@ -86,20 +83,17 @@ entry:
 ; linux/optimized/mempool.ll
 ; linux/optimized/msg_ring.ll
 ; linux/optimized/net.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/rw.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/shrinker.ll
-; linux/optimized/splice.ll
 ; linux/optimized/sys.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/timeout.ll
 ; linux/optimized/tls.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/waitid.ll
 ; linux/optimized/xhci.ll

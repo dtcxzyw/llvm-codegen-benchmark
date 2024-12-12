@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %1
   %4 = lshr i64 %3, %2
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = shl nuw i64 1, %0
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 131072, %2
   %4 = add nuw nsw i64 %0, %1
@@ -108,7 +108,7 @@ entry:
 ; oiio/optimized/zfile.cpp.ll
 ; redis/optimized/bitops.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = add i64 %0, %1
@@ -190,7 +190,7 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = add i64 %0, %1
@@ -203,7 +203,7 @@ entry:
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; redis/optimized/bitops.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl nuw i64 1, %0
@@ -215,7 +215,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vmalloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %1
   %4 = lshr i64 %3, %2

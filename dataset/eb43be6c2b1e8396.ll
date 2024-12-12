@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 18 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
@@ -14,16 +14,20 @@
 ; redis/optimized/jemalloc.sym.ll
 ; ruby/optimized/bignum.ll
 ; spike/optimized/f32_rem.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; cmake/optimized/outqueue.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; freetype/optimized/sdf.c.ll
@@ -34,12 +38,13 @@ entry:
 ; openusd/optimized/grain_synthesis.c.ll
 ; postgres/optimized/pg_test_fsync.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -50,7 +55,7 @@ define i64 @func0000000000000013(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -66,7 +71,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -82,7 +87,7 @@ define i64 @func000000000000000b(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -260,7 +265,7 @@ define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -276,7 +281,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 10
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -287,7 +292,7 @@ define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -301,7 +306,7 @@ define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -312,7 +317,7 @@ define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -326,7 +331,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -337,7 +342,7 @@ define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -348,7 +353,7 @@ define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 

@@ -1,26 +1,17 @@
 
-; 21 occurrences:
+; 12 occurrences:
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cpython/optimized/dtoa.ll
 ; gromacs/optimized/ter_db.cpp.ll
 ; hermes/optimized/dtoa.c.ll
-; icu/optimized/umutablecptrie.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
-; libwebp/optimized/upsampling.c.ll
-; libwebp/optimized/upsampling_sse2.c.ll
-; libwebp/optimized/upsampling_sse41.c.ll
-; libwebp/optimized/yuv.c.ll
-; libwebp/optimized/yuv_sse2.c.ll
-; libwebp/optimized/yuv_sse41.c.ll
-; linux/optimized/gen8_engine_cs.ll
 ; openjdk/optimized/countbitsnode.ll
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; spike/optimized/clrs32.ll
 ; spike/optimized/clz32.ll
 ; wolfssl/optimized/sp_int.c.ll
-; zxing/optimized/DMECEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -30,8 +21,8 @@ entry:
   ret i32 %5
 }
 
-; 78 occurrences:
-; abc/optimized/covMinUtil.c.ll
+; 77 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cpython/optimized/compile.ll
@@ -75,7 +66,6 @@ entry:
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; luajit/optimized/lj_crecord.ll
@@ -87,6 +77,7 @@ entry:
 ; mitsuba3/optimized/x86emithelper.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nori/optimized/screen.cpp.ll
+; nuttx/optimized/lib_strtold.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; openjdk/optimized/freetypeScaler.ll
 ; openjdk/optimized/hb-common.ll
@@ -101,7 +92,6 @@ entry:
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/util_memfd.c.ll
 ; ruby/optimized/util.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-macsec.c.ll
@@ -138,8 +128,9 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/bacBlast.c.ll
+; boost/optimized/mapped_file.ll
 ; git/optimized/pack-bitmap.ll
 ; linux/optimized/inet_fragment.ll
 ; linux/optimized/intel_cdclk.ll
@@ -156,33 +147,8 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
-; faiss/optimized/IndexRowwiseMinMax.cpp.ll
-; faiss/optimized/ScalarQuantizer.cpp.ll
-; linux/optimized/sg.ll
-; llvm/optimized/DiagnosticIDs.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; nori/optimized/nanovg.c.ll
-; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
-; postgres/optimized/array_selfuncs.ll
-; postgres/optimized/big5.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; wireshark/optimized/packet-ppi-antenna.c.ll
-; wireshark/optimized/packet-ppi-gps.c.ll
-; wireshark/optimized/packet-ppi-sensor.c.ll
-; wireshark/optimized/packet-ppi-vector.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 65535
-  %4 = select i1 %3, i32 16, i32 0
-  %5 = select i1 %0, i32 %1, i32 %4
-  ret i32 %5
-}
-
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; libwebp/optimized/upsampling.c.ll
 ; libwebp/optimized/upsampling_sse2.c.ll
 ; libwebp/optimized/upsampling_sse41.c.ll
@@ -194,8 +160,63 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp slt i32 %2, 536870913
-  %4 = select i1 %3, i32 0, i32 -22
+  %3 = icmp slt i32 %2, 1
+  %4 = select i1 %3, i32 -1, i32 1
+  %5 = select i1 %0, i32 %1, i32 %4
+  ret i32 %5
+}
+
+; 8 occurrences:
+; linux/optimized/sg.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; postgres/optimized/array_selfuncs.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 65535
+  %4 = select i1 %3, i32 16, i32 0
+  %5 = select i1 %0, i32 %1, i32 %4
+  ret i32 %5
+}
+
+; 8 occurrences:
+; faiss/optimized/IndexRowwiseMinMax.cpp.ll
+; faiss/optimized/ScalarQuantizer.cpp.ll
+; llvm/optimized/DiagnosticIDs.cpp.ll
+; postgres/optimized/big5.ll
+; wireshark/optimized/packet-ppi-antenna.c.ll
+; wireshark/optimized/packet-ppi-gps.c.ll
+; wireshark/optimized/packet-ppi-sensor.c.ll
+; wireshark/optimized/packet-ppi-vector.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 300
+  %4 = select i1 %3, i32 165, i32 0
+  %5 = select i1 %0, i32 %1, i32 %4
+  ret i32 %5
+}
+
+; 9 occurrences:
+; icu/optimized/umutablecptrie.ll
+; libwebp/optimized/upsampling.c.ll
+; libwebp/optimized/upsampling_sse2.c.ll
+; libwebp/optimized/upsampling_sse41.c.ll
+; libwebp/optimized/yuv.c.ll
+; libwebp/optimized/yuv_sse2.c.ll
+; libwebp/optimized/yuv_sse41.c.ll
+; linux/optimized/gen8_engine_cs.ll
+; zxing/optimized/DMECEncoder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 3142
+  %4 = select i1 %3, i32 403968161, i32 269750433
   %5 = select i1 %0, i32 %1, i32 %4
   ret i32 %5
 }

@@ -11,12 +11,12 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 3
   %3 = lshr i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -35,12 +35,12 @@ entry:
 ; 1 occurrences:
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000006f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 7
   %3 = lshr i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 

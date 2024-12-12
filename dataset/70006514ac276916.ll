@@ -1,5 +1,5 @@
 
-; 473 occurrences:
+; 491 occurrences:
 ; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/exception_safety_testing_test.cc.ll
 ; abseil-cpp/optimized/fixed_array_exception_safety_test.cc.ll
@@ -36,6 +36,25 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; casadi/optimized/serializing_stream.cpp.ll
 ; ceres/optimized/coordinate_descent_minimizer.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -95,7 +114,6 @@
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/SanitizeLeak.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; folly/optimized/json.cpp.ll

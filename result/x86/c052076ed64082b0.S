@@ -1,4 +1,4 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	negq	%rsi
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	(%rdi,%rax,8), %rax

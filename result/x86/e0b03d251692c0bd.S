@@ -1,30 +1,30 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movl	%edx, %ecx
 	addl	%edx, %esi
 	movl	%esi, %eax
 	cltd
 	idivl	%ecx
 	subl	%edx, %esi
-	cmpl	%edi, %esi
-	setl	%al
-	retq
-func0000000000000016:                   # @func0000000000000016
-	movl	%edx, %ecx
-	addl	%edx, %esi
-	movl	%esi, %eax
-	cltd
-	idivl	%ecx
-	subl	%edx, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	setg	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000026:                   # @func0000000000000026
 	movl	%edx, %ecx
 	addl	%edx, %esi
 	movl	%esi, %eax
 	cltd
 	idivl	%ecx
 	subl	%edx, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
+	setl	%al
+	retq
+func0000000000000021:                   # @func0000000000000021
+	movl	%edx, %ecx
+	addl	%edx, %esi
+	movl	%esi, %eax
+	cltd
+	idivl	%ecx
+	subl	%edx, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq

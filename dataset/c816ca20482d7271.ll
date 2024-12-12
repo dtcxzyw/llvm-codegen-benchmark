@@ -7,7 +7,7 @@
 ; nuttx/optimized/lib_log2ceil.c.ll
 ; php/optimized/math.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 64, %1
   %3 = icmp eq i64 %0, 0
@@ -19,7 +19,7 @@ entry:
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; spike/optimized/kslraw.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = icmp eq i64 %0, -9223372036854775808
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 64, %1
   %.inv = icmp ugt i64 %0, 1
@@ -54,7 +54,7 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 688, %1
   %3 = icmp ult i64 %0, -13

@@ -177,7 +177,6 @@
 ; abc/optimized/plaMan.c.ll
 ; abc/optimized/plaSimple.c.ll
 ; abc/optimized/satSolver2i.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/sclDnsize.c.ll
@@ -224,6 +223,7 @@
 ; linux/optimized/maple_tree.ll
 ; llvm/optimized/CloneFunction.cpp.ll
 ; llvm/optimized/LazyValueInfo.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/exrinput.cpp.ll
@@ -302,7 +302,7 @@ entry:
   ret i64 %4
 }
 
-; 68 occurrences:
+; 66 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -314,9 +314,7 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; darktable/optimized/amaze.cc.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/makebondedlinks.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; hermes/optimized/DebugInfo.cpp.ll
 ; icu/optimized/formatted_string_builder.ll
 ; ipopt/optimized/IpTNLPAdapter.ll

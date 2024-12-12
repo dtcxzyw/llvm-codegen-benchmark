@@ -17,7 +17,7 @@ entry:
 ; php/optimized/uuencode.ll
 ; wireshark/optimized/packet-isis-hello.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i8 %0) #0 {
+define i8 @func0000000000000061(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 63
   %2 = icmp eq i8 %1, 0

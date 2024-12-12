@@ -62,3 +62,15 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a1, a1, 255
 	sltu	a0, a1, a0
 	ret
+.LCPI6_0:
+	.quad	-6067343680855748867            # 0xabcc77118461cefd
+func0000000000000018:                   # @func0000000000000018
+	lui	a1, %hi(.LCPI6_0)
+	ld	a1, %lo(.LCPI6_0)(a1)
+	mulhu	a0, a0, a1
+	lui	a1, 244
+	srli	a0, a0, 26
+	sext.w	a0, a0
+	addiw	a1, a1, 575
+	sltu	a0, a1, a0
+	ret

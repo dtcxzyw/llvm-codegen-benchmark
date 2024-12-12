@@ -4,3 +4,9 @@ func0000000000000000:                   # @func0000000000000000
 	shrl	%eax
 	orl	%ecx, %eax
 	retq
+func0000000000000034:                   # @func0000000000000034
+	leal	-1(%rdi), %ecx
+	movl	%ecx, %eax
+	shrl	%eax
+	orl	%ecx, %eax
+	retq

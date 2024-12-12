@@ -77,7 +77,7 @@ func0000000000000004:                   # @func0000000000000004
 	.short	65534                           # 0xfffe
 	.short	65534                           # 0xfffe
 	.short	65534                           # 0xfffe
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsllw	$7, %xmm0, %xmm0
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1

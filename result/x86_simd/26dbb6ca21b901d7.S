@@ -19,7 +19,7 @@
 .LCPI0_2:
 	.short	64512                           # 0xfc00
 	.short	64512                           # 0xfc00
-func0000000000000341:                   # @func0000000000000341
+func0000000000000e81:                   # @func0000000000000e81
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpcmpltud	%ymm0, %ymm2, %k1
@@ -37,7 +37,7 @@ func0000000000000341:                   # @func0000000000000341
 	.short	8192                            # 0x2000
 	.short	8192                            # 0x2000
 	.short	8192                            # 0x2000
-func000000000000034c:                   # @func000000000000034c
+func0000000000000e8c:                   # @func0000000000000e8c
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpcmpltud	%ymm0, %ymm2, %k1

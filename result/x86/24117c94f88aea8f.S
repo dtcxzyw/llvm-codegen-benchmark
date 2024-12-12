@@ -1,11 +1,11 @@
-func0000000000000002:                   # @func0000000000000002
+func000000000000000e:                   # @func000000000000000e
 	sarl	$5, %edx
 	movslq	%edx, %rax
 	movl	%esi, %ecx
 	leaq	(%rdi,%rcx,4), %rcx
 	leaq	(%rcx,%rax,4), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	sarl	$5, %edx
 	movslq	%edx, %rax
 	movl	%esi, %ecx
@@ -18,11 +18,4 @@ func0000000000000010:                   # @func0000000000000010
 	movl	%esi, %ecx
 	leaq	(%rdi,%rcx,4), %rcx
 	leaq	(%rcx,%rax,8), %rax
-	retq
-func000000000000000a:                   # @func000000000000000a
-	sarl	$5, %edx
-	movslq	%edx, %rax
-	movl	%esi, %ecx
-	leaq	(%rdi,%rcx,4), %rcx
-	leaq	(%rcx,%rax,4), %rax
 	retq

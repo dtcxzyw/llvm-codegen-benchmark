@@ -1,5 +1,5 @@
 
-%struct.NVMeRequest.2594196 = type { ptr, ptr, i32, ptr, i64, i32 }
+%struct.NVMeRequest.2707815 = type { ptr, ptr, i32, ptr, i64, i32 }
 
 ; 7 occurrences:
 ; postgres/optimized/appendinfo.ll
@@ -15,7 +15,7 @@ entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr [127 x %struct.NVMeRequest.2594196], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [127 x %struct.NVMeRequest.2707815], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

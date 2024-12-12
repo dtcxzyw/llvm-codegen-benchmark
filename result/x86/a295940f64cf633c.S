@@ -12,6 +12,11 @@ func0000000000000033:                   # @func0000000000000033
 	movzbl	%dil, %eax
 	leal	-32768(%rsi,%rax), %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	shll	$16, %esi
+	movzbl	%dil, %eax
+	leal	33554432(%rsi,%rax), %eax
+	retq
 func000000000000003b:                   # @func000000000000003b
 	shll	$6, %esi
 	movzbl	%dil, %eax

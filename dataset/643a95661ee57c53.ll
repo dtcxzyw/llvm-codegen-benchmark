@@ -25,13 +25,34 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 4
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 118 occurrences:
+; 143 occurrences:
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -122,6 +143,7 @@ entry:
 ; ruby/optimized/node.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rust-analyzer-rs/optimized/lyex85fppj8jw50.ll
+; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
 ; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
@@ -147,6 +169,9 @@ entry:
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
@@ -180,16 +205,17 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/asn1_encode_test-bin-asn1_encode_test.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 255
+  %3 = icmp samesign ugt i64 %2, 255
   %4 = select i1 %3, i64 7, i64 %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; qemu/optimized/block_mirror.c.ll
+; qemu/optimized/util_buffer.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
@@ -200,53 +226,79 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
-; abseil-cpp/optimized/arg.cc.ll
-; clamav/optimized/htmlnorm.c.ll
+; 6 occurrences:
 ; cpython/optimized/_testbuffer.ll
 ; cpython/optimized/bufferedio.ll
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/iov_iter.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, -2048
   %4 = select i1 %3, i64 -4000000, i64 %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/encode.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; llvm/optimized/Parallel.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/timestamp.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 65536
   %4 = select i1 %3, i64 4, i64 %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 1 occurrences:
-; draco/optimized/ply_decoder.cc.ll
+; 5 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/wait.ll
+; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp slt i64 %2, 3
+  %3 = icmp ult i64 %2, 2
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 13 occurrences:
-; abseil-cpp/optimized/float_conversion.cc.ll
-; linux/optimized/hrtimer.ll
+; 14 occurrences:
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; delta-rs/optimized/3qvofkyb7k5flefa.ll
+; opencv/optimized/softfloat.cpp.ll
+; openexr/optimized/attributes.c.ll
+; openusd/optimized/openexr-c.c.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; turborepo-rs/optimized/allq2hqzkn1ywqvzl6k501g1q.ll
+; wireshark/optimized/pcapng.c.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 2
+  %4 = select i1 %3, i64 0, i64 %1
+  %5 = add nuw nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 11 occurrences:
 ; linux/optimized/io_pgtable_v2.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -267,52 +319,52 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
-; ceres/optimized/block_jacobi_preconditioner.cc.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
-; ceres/optimized/dense_cholesky.cc.ll
-; ceres/optimized/implicit_schur_complement.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; delta-rs/optimized/3qvofkyb7k5flefa.ll
-; opencv/optimized/softfloat.cpp.ll
-; openexr/optimized/attributes.c.ll
-; openusd/optimized/openexr-c.c.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
-; wireshark/optimized/pcapng.c.ll
+; 2 occurrences:
+; abseil-cpp/optimized/float_conversion.cc.ll
+; linux/optimized/hrtimer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000060(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 32, i64 %1
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 5 occurrences:
-; abseil-cpp/optimized/cord.cc.ll
-; abseil-cpp/optimized/cord_test.cc.ll
-; freetype/optimized/truetype.c.ll
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ult i64 %2, 513
-  %4 = select i1 %3, i64 2, i64 %1
-  %5 = add nuw nsw i64 %4, %0
+  %3 = icmp samesign ugt i64 %2, 31
+  %4 = select i1 %3, i64 0, i64 %1
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
 ; 2 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
-; eastl/optimized/TestSort.cpp.ll
+; freetype/optimized/truetype.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 513
+  %4 = select i1 %3, i64 2, i64 %1
+  %5 = add nuw nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/cord_test.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 513
   %4 = select i1 %3, i64 8, i64 %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 4 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; abseil-cpp/optimized/cord_test.cc.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000053(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 513
+  %4 = select i1 %3, i64 8, i64 %1
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -336,7 +388,7 @@ define i64 @func0000000000000023(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 54399
   %4 = select i1 %3, i64 100, i64 %1
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

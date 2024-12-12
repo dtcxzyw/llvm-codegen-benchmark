@@ -4,7 +4,7 @@ func000000000000002a:                   # @func000000000000002a
 	add	a0, a0, a1
 	addi	a0, a0, -4
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000ff:                   # @func00000000000000ff
 	sh1add	a1, a0, a1
 	sh1add	a1, a0, a1
 	sh1add	a0, a0, a1

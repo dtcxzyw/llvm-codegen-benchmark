@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leaq	2(%rsi), %rdx
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	mulxq	%rax, %rax, %rax
@@ -7,7 +7,7 @@ func0000000000000031:                   # @func0000000000000031
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leaq	2(%rsi), %rdx
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	mulxq	%rax, %rax, %rax
@@ -16,7 +16,7 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000003c1:                   # @func00000000000003c1
 	addq	$80, %rsi
 	shrq	$4, %rsi
 	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
@@ -25,7 +25,7 @@ func00000000000001e1:                   # @func00000000000001e1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	addq	$-144, %rsi
 	shrq	$4, %rsi
 	movabsq	$-8198552921648689607, %rax     # imm = 0x8E38E38E38E38E39
@@ -47,7 +47,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	leaq	-1(%rsi), %rdx
 	movabsq	$-2049638230412172401, %rax     # imm = 0xE38E38E38E38E38F
 	mulxq	%rax, %rax, %rax
@@ -56,7 +56,7 @@ func00000000000000b1:                   # @func00000000000000b1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000001b1:                   # @func00000000000001b1
+func0000000000000361:                   # @func0000000000000361
 	leaq	12(%rsi), %rdx
 	movabsq	$5675921253449092805, %rax      # imm = 0x4EC4EC4EC4EC4EC5
 	mulxq	%rax, %rax, %rax

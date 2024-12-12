@@ -11,7 +11,7 @@
 ; openusd/optimized/fast-dtoa.cc.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, float %1) #0 {
+define i32 @func0000000000000021(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
   %3 = and i32 %2, 8388607

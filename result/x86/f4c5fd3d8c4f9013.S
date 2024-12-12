@@ -1,6 +1,6 @@
-func0000000000000091:                   # @func0000000000000091
-	subl	%esi, %edx
-	addl	%edi, %edx
+func0000000000000121:                   # @func0000000000000121
+	subl	%edx, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -9,9 +9,9 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edx, %edx
 	setg	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	subl	%esi, %edx
-	addl	%edi, %edx
+func0000000000000021:                   # @func0000000000000021
+	subl	%edx, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
@@ -20,7 +20,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$2, %edx
 	setae	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subl	%esi, %edx
 	addl	%edi, %edx
 	testl	%edx, %edx
@@ -32,7 +32,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$3, %edx
 	setb	%al
 	retq
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	subl	%esi, %edx
 	addl	%edi, %edx
 	testl	%edx, %edx
@@ -43,20 +43,14 @@ func0000000000000006:                   # @func0000000000000006
 	leal	(%rdx,%rdi), %eax
 	shrl	$31, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	subl	%esi, %edx
 	addl	%edi, %edx
 	cmpl	$2, %edx
 	setl	%al
 	retq
-func0000000000000111:                   # @func0000000000000111
-	subl	%esi, %edx
-	addl	%edi, %edx
+func0000000000000221:                   # @func0000000000000221
+	subl	%edx, %esi
+	cmpl	%esi, %edi
 	sete	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	subl	%esi, %edx
-	addl	%edi, %edx
-	cmpl	$5, %edx
-	setb	%al
 	retq

@@ -1,7 +1,9 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; linux/optimized/xt_policy.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_obj_style.ll
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/packet-mausb.c.ll
 ; wireshark/optimized/text_import.c.ll

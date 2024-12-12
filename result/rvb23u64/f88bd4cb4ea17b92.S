@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	addi	a0, a0, -48
@@ -12,19 +12,19 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a0, a0, 24
 	srli	a0, a0, 63
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	addi	a0, a0, -48
 	sltiu	a0, a0, 10
 	ret
-func0000000000000354:                   # @func0000000000000354
+func00000000000006a4:                   # @func00000000000006a4
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	addi	a0, a0, -48
 	sltiu	a0, a0, 4
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	lui	a1, 524288
@@ -39,14 +39,14 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a0, 1033
 	xori	a0, a0, 1
 	ret
-func0000000000000158:                   # @func0000000000000158
+func00000000000002a8:                   # @func00000000000002a8
 	sh1add	a1, a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, 15
 	sltiu	a0, a0, 265
 	xori	a0, a0, 1
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	li	a2, -10
 	mul	a1, a1, a2
 	addi	a0, a0, -48

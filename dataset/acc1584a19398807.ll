@@ -1,15 +1,4 @@
 
-; 1 occurrences:
-; openjdk/optimized/DrawLine.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, %0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = add i32 %4, %0
-  ret i32 %5
-}
-
 ; 3 occurrences:
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll

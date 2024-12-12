@@ -1,4 +1,4 @@
-func00000000000008cc:                   # @func00000000000008cc
+func000000000000218c:                   # @func000000000000218c
 	li	a0, 104
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0

@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/NthValue.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/print_settings.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 68
@@ -77,11 +77,24 @@ entry:
   ret i1 %7
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = add nsw i64 %1, -1
+  %5 = add nsw i64 %4, %3
+  %6 = sext i32 %0 to i64
+  %7 = icmp slt i64 %5, %6
+  ret i1 %7
+}
+
 ; 2 occurrences:
 ; yosys/optimized/proc_mux.ll
 ; yosys/optimized/setundef.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001a6(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -120,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000057(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a7(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 16
@@ -133,7 +146,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/descriptor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -146,7 +159,7 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/chunk.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1

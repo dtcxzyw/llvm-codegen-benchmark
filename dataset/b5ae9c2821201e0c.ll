@@ -1,6 +1,8 @@
 
-; 133 occurrences:
+; 136 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; clamav/optimized/gpt.c.ll
 ; coreutils-rs/optimized/1aqq6ooh2lp9lqic.ll
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
@@ -133,6 +135,7 @@
 ; wireshark/optimized/tap-srt.c.ll
 ; xgboost/optimized/recordio.cc.ll
 ; z3/optimized/prime_generator.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -141,7 +144,7 @@ entry:
   ret i64 %3
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; coreutils-rs/optimized/2oqtsf9adaj2wzr6.ll
@@ -163,7 +166,6 @@ entry:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; linux/optimized/dm-log.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/relay.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -186,7 +188,9 @@ entry:
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
-; velox/optimized/MmapAllocator.cpp.ll
+; zed-rs/optimized/92iizbpp16n9wzmmxw0rpztpt.ll
+; zed-rs/optimized/ahuveaqkmks5i6nnvip2o62e5.ll
+; zed-rs/optimized/dthtcetij943j6s50gke0fkdr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -195,12 +199,11 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; openssl/optimized/libdefault-lib-ssl3_cbc.ll
 ; openssl/optimized/libssl-shlib-ssl3_cbc.ll
@@ -213,7 +216,7 @@ entry:
   ret i64 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
 ; casadi/optimized/function.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
@@ -221,7 +224,6 @@ entry:
 ; hdf5/optimized/H5HG.c.ll
 ; hdf5/optimized/H5HGcache.c.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/resize.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

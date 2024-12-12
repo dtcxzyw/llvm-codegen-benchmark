@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 50 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/encode.c.ll
 ; folly/optimized/dynamic.cpp.ll
@@ -10,7 +10,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -33,13 +32,8 @@
 ; mold/optimized/gdb-index.cc.SH4.cc.ll
 ; mold/optimized/gdb-index.cc.SPARC64.cc.ll
 ; mold/optimized/gdb-index.cc.X86_64.cc.ll
-; openjdk/optimized/chunklevel.ll
-; openjdk/optimized/g1CardSet.ll
-; openjdk/optimized/g1CodeRootSet.ll
 ; openjdk/optimized/g1HeapRegion.ll
 ; openjdk/optimized/shenandoahHeap.ll
-; openjdk/optimized/xGlobals_x86.ll
-; openjdk/optimized/zAddress_x86.ll
 ; postgres/optimized/basebackup_incremental.ll
 ; postgres/optimized/blkreftable.ll
 ; postgres/optimized/blkreftable_shlib.ll
@@ -64,14 +58,13 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; openjdk/optimized/g1ConcurrentMark.ll
 ; openjdk/optimized/jfrTraceIdLoadBarrier.ll
 ; postgres/optimized/generation.ll
 ; postgres/optimized/shm_mq.ll
 ; velox/optimized/MallocAllocator.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -80,16 +73,13 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 6 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/readahead.ll
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
 ; velox/optimized/AllocationPool.cpp.ll
-; velox/optimized/LazyVector.cpp.ll
 ; velox/optimized/MmapArena.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
-; velox/optimized/RawVector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:

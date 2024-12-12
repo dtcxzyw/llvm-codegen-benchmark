@@ -5,7 +5,7 @@ func00000000000000e2:                   # @func00000000000000e2
 	vwsll.vv	v14, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsub.vv	v8, v10, v8
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	ret
 func0000000000000022:                   # @func0000000000000022
 	li	a0, -54
@@ -15,5 +15,5 @@ func0000000000000022:                   # @func0000000000000022
 	vwsll.vv	v14, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsub.vv	v8, v10, v8
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	ret

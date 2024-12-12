@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/blk-map.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/trans_virtio.ll
 ; llvm/optimized/APInt.cpp.ll
 ; openjdk/optimized/freetypeScaler.ll

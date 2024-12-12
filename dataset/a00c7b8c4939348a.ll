@@ -3,12 +3,12 @@
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000ce(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 192
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 192
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }

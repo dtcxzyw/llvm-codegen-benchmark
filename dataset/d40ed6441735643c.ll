@@ -1,5 +1,5 @@
 
-; 364 occurrences:
+; 363 occurrences:
 ; cvc5/optimized/abduction_solver.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -155,7 +155,6 @@
 ; cvc5/optimized/node_converter.cpp.ll
 ; cvc5/optimized/node_manager.cpp.ll
 ; cvc5/optimized/node_traversal.cpp.ll
-; cvc5/optimized/node_utils.cpp.ll
 ; cvc5/optimized/node_value.cpp.ll
 ; cvc5/optimized/non_clausal_simp.cpp.ll
 ; cvc5/optimized/normal_form.cpp.ll

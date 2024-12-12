@@ -1,12 +1,12 @@
 func0000000000000008:                   # @func0000000000000008
 	leal	1(%rsi), %ecx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	cmovbl	%ecx, %eax
+	cmpq	%rcx, %rdi
+	cmoval	%ecx, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	leal	1(%rsi), %ecx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	movl	$-1, %eax
-	cmovbl	%ecx, %eax
+	cmoval	%ecx, %eax
 	retq

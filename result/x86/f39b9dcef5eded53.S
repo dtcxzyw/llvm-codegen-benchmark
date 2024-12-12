@@ -22,3 +22,11 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$11, %edi
 	setb	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$127, %edi
+	seta	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$5, %edi
+	setb	%al
+	retq

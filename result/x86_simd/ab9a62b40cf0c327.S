@@ -152,5 +152,5 @@ func000000000000001d:                   # @func000000000000001d
 	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
 	vmovdqa	.LCPI3_0(%rip), %ymm3           # ymm3 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
 	vpermi2b	%ymm1, %ymm2, %ymm3
-	vpmulld	%ymm0, %ymm3, %ymm0
+	vpmulld	%ymm3, %ymm0, %ymm0
 	retq

@@ -1,11 +1,11 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; darktable/optimized/DngOpcodes.cpp.ll
+; hermes/optimized/dtoa.c.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
-; linux/optimized/intel-agp.ll
-; linux/optimized/p2sb.ll
-; linux/optimized/rom.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
@@ -14,6 +14,7 @@
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; php/optimized/pdo_stmt.ll
+; php/optimized/zend_strtod.ll
 ; postgres/optimized/trigger.ll
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
@@ -31,27 +32,11 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
-; abc/optimized/giaSimBase.c.ll
-; linux/optimized/apic_common.ll
-; linux/optimized/ehci-dbgp.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/timer.ll
-; mitsuba3/optimized/x86func.cpp.ll
-; qemu/optimized/hw_usb_hcd-xhci.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %0, 255
-  %4 = or disjoint i32 %3, %2
-  ret i32 %4
-}
-
-; 106 occurrences:
+; 107 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/mpmAbc.c.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/decode.c.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -176,6 +161,24 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %0, -7340481
   %4 = or i32 %3, %2
+  ret i32 %4
+}
+
+; 8 occurrences:
+; abc/optimized/giaSimBase.c.ll
+; linux/optimized/apic_common.ll
+; linux/optimized/ehci-dbgp.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/timer.ll
+; qemu/optimized/hw_usb_hcd-xhci.c.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = and i32 %0, 8
+  %4 = or disjoint i32 %3, %2
   ret i32 %4
 }
 

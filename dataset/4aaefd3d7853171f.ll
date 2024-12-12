@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/ioReadPlaMo.c.ll
 ; abc/optimized/ivyHaig.c.ll
@@ -11,8 +11,6 @@
 ; grpc/optimized/memory_quota.cc.ll
 ; linux/optimized/mprotect.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
-; luajit/optimized/lj_prng.ll
-; luajit/optimized/lj_prng_dyn.ll
 ; mimalloc/optimized/random.c.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/chess_test.cc.ll

@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; libpng/optimized/pngerror.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -16,7 +16,6 @@
 ; llvm/optimized/ParseHLSL.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
@@ -34,7 +33,7 @@
 ; openjdk/optimized/pngerror.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000484(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = add nsw i32 %2, -6
@@ -48,7 +47,7 @@ entry:
 ; linux/optimized/dev-ioctl.ll
 ; llvm/optimized/GlobalOpt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000048c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = add nsw i32 %2, -7
@@ -66,7 +65,7 @@ entry:
 ; llvm/optimized/ASTDumper.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000481(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = add nsw i32 %2, -1

@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/time.cc.ll
 ; llvm/optimized/Linux.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {

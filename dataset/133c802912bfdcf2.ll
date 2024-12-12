@@ -11,6 +11,18 @@ entry:
   ret float %5
 }
 
+; 2 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define float @func0000000000000008(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fsub float %1, %2
+  %4 = fcmp oeq float %3, 0.000000e+00
+  %5 = select i1 %4, float 0.000000e+00, float %0
+  ret float %5
+}
+
 ; 5 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -23,6 +35,17 @@ entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float 0.000000e+00, float %0
   ret float %4
+}
+
+; 1 occurrences:
+; imgui/optimized/imgui_widgets.cpp.ll
+; Function Attrs: nounwind
+define float @func000000000000000a(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fsub float %1, %2
+  %4 = fcmp ole float %3, 0.000000e+00
+  %5 = select i1 %4, float -0.000000e+00, float %0
+  ret float %5
 }
 
 attributes #0 = { nounwind }

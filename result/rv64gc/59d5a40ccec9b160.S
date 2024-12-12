@@ -13,17 +13,17 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000003:                   # @func0000000000000003
 	ori	a1, a1, 1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	ori	a1, a1, 1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	ori	a1, a1, 1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	ori	a1, a1, 2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret

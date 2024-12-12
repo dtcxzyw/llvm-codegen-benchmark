@@ -1,14 +1,26 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
   %3 = fdiv float %0, %2
   %4 = fcmp olt float %3, 5.000000e-01
+  ret i1 %4
+}
+
+; 1 occurrences:
+; minetest/optimized/COpenGLDriver.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(float %0, i32 %1) #0 {
+entry:
+  %2 = uitofp i32 %1 to float
+  %3 = fdiv float %0, %2
+  %4 = fcmp oge float %3, 1.000000e+00
   ret i1 %4
 }
 
@@ -39,6 +51,17 @@ entry:
 }
 
 ; 1 occurrences:
+; assimp/optimized/ImproveCacheLocality.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(float %0, i32 %1) #0 {
+entry:
+  %2 = uitofp i32 %1 to float
+  %3 = fdiv float %0, %2
+  %4 = fcmp oeq float %3, 3.000000e+00
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; darktable/optimized/introspection_crop.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000013(float %0, i32 %1) #0 {
@@ -58,6 +81,17 @@ entry:
   %2 = uitofp nneg i32 %1 to float
   %3 = fdiv float %0, %2
   %4 = fcmp ugt float %3, 0x3FECCCCCC0000000
+  ret i1 %4
+}
+
+; 1 occurrences:
+; gromacs/optimized/expanded.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001c(float %0, i32 %1) #0 {
+entry:
+  %2 = uitofp nneg i32 %1 to float
+  %3 = fdiv float %0, %2
+  %4 = fcmp oge float %3, 0.000000e+00
   ret i1 %4
 }
 

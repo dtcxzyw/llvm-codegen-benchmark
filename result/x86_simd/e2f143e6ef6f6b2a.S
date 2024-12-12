@@ -8,7 +8,7 @@ func0000000000000010:                   # @func0000000000000010
 	.quad	-8                              # 0xfffffffffffffff8
 func000000000000000e:                   # @func000000000000000e
 	vpsllq	$3, %ymm0, %ymm0
-	vpaddq	%ymm2, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq

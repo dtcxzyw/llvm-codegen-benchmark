@@ -19,7 +19,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000cc4:                   # @func0000000000000cc4
+func0000000000003184:                   # @func0000000000003184
 	vpcmpneqd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpcmpneqd	.LCPI0_1(%rip){1to8}, %ymm2, %k0 {%k1}
 	vpcmpltub	.LCPI0_2(%rip), %xmm0, %k1

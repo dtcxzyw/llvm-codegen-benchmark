@@ -118,6 +118,18 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp olt float %2, 0.000000e+00
+  %4 = select i1 %3, float %0, float %1
+  %5 = fcmp oge float %4, 0.000000e+00
+  ret i1 %5
+}
+
 ; 5 occurrences:
 ; nori/optimized/nanovg.c.ll
 ; recastnavigation/optimized/DetourCommon.cpp.ll
@@ -141,6 +153,17 @@ entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = select i1 %3, float %0, float %1
   %5 = fcmp ult float %4, 0.000000e+00
+  ret i1 %5
+}
+
+; 1 occurrences:
+; gromacs/optimized/slaed6.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000003b(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp ult float %2, 0.000000e+00
+  %4 = select i1 %3, float %0, float %1
+  %5 = fcmp ule float %4, 0.000000e+00
   ret i1 %5
 }
 

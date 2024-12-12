@@ -53,7 +53,7 @@
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
 ; wasmtime-rs/optimized/wtp2wi3bcje8i2h.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1) #0 {
 entry:
   %.not = icmp eq ptr %1, null
   %2 = icmp ne ptr %0, null

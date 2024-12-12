@@ -1,16 +1,16 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	addl	%edi, %edx
 	addl	$500000000, %esi                # imm = 0x1DCD6500
 	cmpl	%esi, %edx
 	setg	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	addl	%edi, %edx
 	decl	%esi
 	cmpl	%esi, %edx
 	sete	%al
 	retq
-func0000000000000241:                   # @func0000000000000241
+func0000000000000481:                   # @func0000000000000481
 	addl	%edi, %edx
 	decl	%esi
 	cmpl	%esi, %edx
@@ -22,17 +22,23 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%esi, %edx
 	sete	%al
 	retq
-func000000000000034b:                   # @func000000000000034b
+func000000000000068b:                   # @func000000000000068b
 	addl	%edi, %edx
 	addl	$-8, %esi
 	cmpl	%esi, %edx
 	setge	%al
 	retq
-func0000000000000356:                   # @func0000000000000356
+func00000000000006a6:                   # @func00000000000006a6
 	addl	%edi, %edx
 	decl	%esi
 	cmpl	%esi, %edx
 	setl	%al
+	retq
+func000000000000000a:                   # @func000000000000000a
+	addl	%edi, %edx
+	decl	%esi
+	cmpl	%esi, %edx
+	setg	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	addl	%edi, %edx
@@ -52,19 +58,19 @@ func0000000000000009:                   # @func0000000000000009
 	cmpl	%esi, %edx
 	setae	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000686:                   # @func0000000000000686
 	addl	%edi, %edx
 	decl	%esi
 	cmpl	%esi, %edx
 	setl	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	addl	%edi, %edx
 	decl	%esi
 	cmpl	%esi, %edx
 	setl	%al
 	retq
-func0000000000000256:                   # @func0000000000000256
+func00000000000004a6:                   # @func00000000000004a6
 	addl	%edi, %edx
 	decl	%esi
 	cmpl	%esi, %edx

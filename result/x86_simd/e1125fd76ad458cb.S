@@ -17,7 +17,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	0x3ff0000000000000              # double 1
 .LCPI1_3:
 	.quad	0x3ee4f8b588e368f1              # double 1.0000000000000001E-5
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpgtd	.LCPI1_1(%rip){1to8}, %ymm0, %k1
 	vbroadcastsd	.LCPI1_2(%rip), %zmm0   # zmm0 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]

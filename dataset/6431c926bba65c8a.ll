@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; hdf5/optimized/h5tools_str.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -20,7 +20,6 @@
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll

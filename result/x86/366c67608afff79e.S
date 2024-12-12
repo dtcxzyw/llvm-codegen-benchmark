@@ -13,11 +13,6 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$8, %eax
 	shlxq	%rdi, %rax, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	incb	%dil
-	movl	$1, %eax
-	shlxq	%rdi, %rax, %rax
-	retq
 func000000000000000e:                   # @func000000000000000e
 	decb	%dil
 	movl	$1, %eax
@@ -71,6 +66,11 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000001:                   # @func0000000000000001
 	incb	%dil
 	movq	$-1, %rax
+	shlxq	%rdi, %rax, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	decb	%dil
+	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax
 	retq
 func0000000000000011:                   # @func0000000000000011

@@ -1,5 +1,9 @@
 
-; 52 occurrences:
+; 57 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/token_ids.ll
 ; cjson/optimized/cJSON.c.ll
 ; clamav/optimized/pdf.c.ll
 ; coreutils-rs/optimized/1si88ckqec3ipkyo.ll
@@ -44,6 +48,7 @@
 ; php/optimized/exec.ll
 ; php/optimized/php_ini_builder.ll
 ; php/optimized/zend_smart_str.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/regparse.ll
@@ -58,7 +63,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = add i64 %6, 16
   ret i64 %7
 }
@@ -94,8 +99,7 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
-; clamav/optimized/pdf.c.ll
+; 2 occurrences:
 ; libevent/optimized/evdns.c.ll
 ; libquic/optimized/aead_test.cc.ll
 ; Function Attrs: nounwind

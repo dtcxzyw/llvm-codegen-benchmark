@@ -1,7 +1,8 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll

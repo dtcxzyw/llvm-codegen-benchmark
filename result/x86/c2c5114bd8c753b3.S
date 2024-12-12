@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 	sarxq	%rsi, %rdi, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	movb	$4, %al
+	movb	$2, %al
 	subb	%sil, %al
 	sarxq	%rax, %rdi, %rax
 	retq

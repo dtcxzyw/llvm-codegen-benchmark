@@ -5,13 +5,6 @@ func0000000000000021:                   # @func0000000000000021
 	imull	%edi, %eax
 	cltq
 	retq
-func0000000000000029:                   # @func0000000000000029
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	cmovlel	%esi, %eax
-	imull	%edi, %eax
-	cltq
-	retq
 func0000000000000018:                   # @func0000000000000018
 	cmpl	$8, %edx
 	movl	$1, %eax

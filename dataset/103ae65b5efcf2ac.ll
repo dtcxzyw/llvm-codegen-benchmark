@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/archive_read_support_filter_rpm.c.ll
 ; flac/optimized/foreign_metadata.c.ll
@@ -27,7 +27,6 @@
 ; openssl/optimized/libssl-shlib-d1_lib.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; redis/optimized/listpack.ll
-; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -56,8 +55,10 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; git/optimized/pack-bitmap.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -123,7 +124,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = add i64 %4, 1
   ret i64 %5
 }
@@ -134,7 +135,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = add nuw i64 %4, 1
   ret i64 %5
 }
@@ -165,7 +166,7 @@ entry:
   ret i64 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; hermes/optimized/ISel.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
@@ -185,11 +186,12 @@ entry:
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; llvm/optimized/StringMap.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
+; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = add nuw nsw i64 %4, 1
   ret i64 %5
 }

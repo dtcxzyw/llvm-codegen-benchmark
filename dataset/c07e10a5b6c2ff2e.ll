@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 91 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -90,6 +90,7 @@
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -179,7 +180,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 49
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = shl i64 %1, 54
   %7 = or i64 %5, %6
   ret i64 %7
@@ -193,7 +194,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 49
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = shl i64 %1, 54
   %7 = or i64 %5, %6
   ret i64 %7
@@ -207,7 +208,7 @@ define i64 @func000000000000007c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 5
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = shl nuw nsw i64 %1, 19
   %7 = or i64 %5, %6
   ret i64 %7
@@ -231,25 +232,27 @@ define i64 @func000000000000002f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = shl nuw nsw i64 %1, 16
   %7 = or disjoint i64 %5, %6
   ret i64 %7
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; coreutils-rs/optimized/53yhdh06nqcwsoo6.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/ASTContext.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; quickjs/optimized/quickjs.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 47
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = shl nuw i64 %1, 62
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -275,7 +278,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 40
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = shl nuw nsw i64 %1, 20
   %7 = or i64 %5, %6
   ret i64 %7
@@ -303,7 +306,7 @@ define i64 @func000000000000007e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 61
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = shl nuw nsw i64 %0, 62
   %7 = or i64 %6, %5
   ret i64 %7
@@ -322,6 +325,19 @@ entry:
   ret i64 %7
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_image.ll
+; Function Attrs: nounwind
+define i64 @func000000000000007d(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 32
+  %5 = or disjoint i64 %4, %1
+  %6 = shl nuw i64 %0, 48
+  %7 = or disjoint i64 %6, %5
+  ret i64 %7
+}
+
 ; 2 occurrences:
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; redis/optimized/siphash.ll
@@ -329,10 +345,11 @@ entry:
 define i64 @func0000000000000078(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = shl i64 %4, 56
-  %6 = or i64 %5, %0
-  ret i64 %6
+  %4 = shl nuw nsw i64 %3, 56
+  %5 = or i64 %0, %4
+  %6 = shl nuw i64 %1, 56
+  %7 = or i64 %5, %6
+  ret i64 %7
 }
 
 ; 4 occurrences:
@@ -345,9 +362,23 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 36
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = shl nsw i64 %1, 12
   %7 = or i64 %5, %6
+  ret i64 %7
+}
+
+; 2 occurrences:
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 8
+  %5 = or disjoint i64 %4, %1
+  %6 = shl nuw i64 %0, 40
+  %7 = or disjoint i64 %6, %5
   ret i64 %7
 }
 

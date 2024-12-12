@@ -33,15 +33,3 @@ func0000000000000061:                   # @func0000000000000061
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI3_0:
-	.long	7                               # 0x7
-.LCPI3_1:
-	.long	3                               # 0x3
-func000000000000006a:                   # @func000000000000006a
-	vpbroadcastd	.LCPI3_0(%rip), %xmm1   # xmm1 = [7,7,7,7]
-	vpor	%xmm1, %xmm0, %xmm2
-	vpxor	%xmm1, %xmm0, %xmm0
-	vpsrld	$1, %xmm0, %xmm0
-	vpsubd	%xmm0, %xmm2, %xmm0
-	vpaddd	.LCPI3_1(%rip){1to4}, %xmm0, %xmm0
-	retq

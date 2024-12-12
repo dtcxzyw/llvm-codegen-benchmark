@@ -1,12 +1,11 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/mg_biome.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openblas/optimized/common.c.ll
 ; spike/optimized/smalbb.ll
@@ -31,7 +30,7 @@ entry:
 define i64 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
   ret i64 %6
@@ -66,7 +65,7 @@ entry:
 define i64 @func0000000000000079(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
   ret i64 %6

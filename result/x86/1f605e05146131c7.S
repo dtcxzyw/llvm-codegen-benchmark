@@ -10,13 +10,8 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$1, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	testb	$48, %sil
-	sete	%al
-	andb	%dil, %al
-	retq
-func0000000000000008:                   # @func0000000000000008
-	movzbl	%sil, %eax
-	cmpw	$33, %ax
-	setae	%al
+	andl	$65280, %esi                    # imm = 0xFF00
+	cmpl	$1025, %esi                     # imm = 0x401
+	setb	%al
 	andb	%dil, %al
 	retq

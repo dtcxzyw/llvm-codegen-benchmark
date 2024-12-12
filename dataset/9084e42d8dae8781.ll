@@ -91,7 +91,7 @@
 ; z3/optimized/pb2bv_tactic.cpp.ll
 ; z3/optimized/solve_context_eqs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -104,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

@@ -1,11 +1,12 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; influxdb-rs/optimized/380gcqze52ow6205.ll
 ; influxdb-rs/optimized/tvx8frl9fecnofk.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/DynamicExtent.cpp.ll
+; llvm/optimized/RegionStore.cpp.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll

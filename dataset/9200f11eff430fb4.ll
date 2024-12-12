@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; gromacs/optimized/grid.cpp.ll
+; 6 occurrences:
 ; opencv/optimized/aruco_dictionary.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll

@@ -5,6 +5,8 @@
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/numeric.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -65,8 +67,6 @@
 ; openmpi/optimized/mpool_hugepage_module.ll
 ; openspiel/optimized/action_view.cc.ll
 ; openspiel/optimized/nim.cc.ll
-; openssl/optimized/libcrypto-lib-conf_api.ll
-; openssl/optimized/libcrypto-shlib-conf_api.ll
 ; openusd/optimized/patchTable.cpp.ll
 ; openusd/optimized/reference.cpp.ll
 ; php/optimized/array.ll

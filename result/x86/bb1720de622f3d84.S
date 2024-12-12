@@ -14,11 +14,3 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	$4096, %edx                     # imm = 0x1000
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	leal	1(%rsi), %ecx
-	xorl	%eax, %eax
-	testb	$1, %dil
-	cmovel	%ecx, %eax
-	cmpl	$4, %edx
-	cmovael	%ecx, %eax
-	retq

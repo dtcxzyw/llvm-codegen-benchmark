@@ -4,12 +4,6 @@ func000000000000001b:                   # @func000000000000001b
 	shrq	$32, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	movl	%edx, %eax
-	addq	%rsi, %rax
-	shrq	$63, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000029:                   # @func0000000000000029
 	movl	%edx, %eax
 	addq	%rsi, %rax
@@ -26,6 +20,12 @@ func0000000000000039:                   # @func0000000000000039
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	shrq	$3, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	shrq	$32, %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002

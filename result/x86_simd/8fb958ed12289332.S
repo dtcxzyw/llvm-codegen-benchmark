@@ -7,7 +7,7 @@ func000000000000000d:                   # @func000000000000000d
 	vpcmpnltd	%ymm3, %ymm1, %k1
 	vbroadcastss	.LCPI0_0(%rip), %ymm1   # ymm1 = [512,512,512,512,512,512,512,512]
 	vandps	.LCPI0_1(%rip){1to8}, %ymm2, %ymm1 {%k1}
-	vorps	%ymm0, %ymm1, %ymm0
+	vorps	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
@@ -30,11 +30,11 @@ func0000000000000003:                   # @func0000000000000003
 	.long	9                               # 0x9
 .LCPI3_2:
 	.long	15                              # 0xf
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	vpcmpleud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
 	vbroadcastss	.LCPI3_1(%rip), %ymm1   # ymm1 = [9,9,9,9,9,9,9,9]
 	vandps	.LCPI3_2(%rip){1to8}, %ymm2, %ymm1 {%k1}
-	vorps	%ymm0, %ymm1, %ymm0
+	vorps	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	32128                           # 0x7d80

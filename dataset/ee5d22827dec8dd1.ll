@@ -1,5 +1,5 @@
 
-; 167 occurrences:
+; 169 occurrences:
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcMerge.c.ll
@@ -19,6 +19,7 @@
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
@@ -44,6 +45,7 @@
 ; graphviz/optimized/layout.c.ll
 ; graphviz/optimized/scan.c.ll
 ; gromacs/optimized/dlasq2.cpp.ll
+; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5LTanalyze.c.ll
@@ -83,6 +85,7 @@
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/game.cpp.ll
@@ -92,7 +95,6 @@
 ; mixbox/optimized/mixbox.ll
 ; nix/optimized/lexer-tab.ll
 ; nori/optimized/nanovg.c.ll
-; openblas/optimized/dgetrf2.c.ll
 ; openblas/optimized/dlaorhr_col_getrfnp2.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; opencv/optimized/aruco_detector.cpp.ll
@@ -175,7 +177,7 @@ entry:
   ret i32 %3
 }
 
-; 385 occurrences:
+; 390 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -300,6 +302,9 @@ entry:
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/mew.c.ll
@@ -405,7 +410,6 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/i915_vma.ll
-; linux/optimized/map.ll
 ; linux/optimized/mpi-bit.ll
 ; linux/optimized/svcauth_gss.ll
 ; linux/optimized/syncookies.ll
@@ -429,6 +433,9 @@ entry:
 ; luajit/optimized/lj_ir_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_draw.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_scale.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -569,23 +576,18 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; icu/optimized/gregoimp.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/netdev.ll
 ; llvm/optimized/CGExprCXX.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
 ; qemu/optimized/hw_audio_es1370.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {

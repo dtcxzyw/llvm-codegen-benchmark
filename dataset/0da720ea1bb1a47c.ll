@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/acecMult.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/extraUtilMacc.c.ll
@@ -20,7 +20,6 @@
 ; icu/optimized/decNumber.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libquic/optimized/trees.c.ll
-; llvm/optimized/RISCVTargetParser.cpp.ll
 ; opencv/optimized/bitsource.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/pngrtran.ll
@@ -70,7 +69,7 @@ entry:
   ret i32 %2
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/trees.c.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -83,7 +82,6 @@ entry:
 ; hyperscan/optimized/truffle.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; linux/optimized/deftree.ll
-; linux/optimized/privflags.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll

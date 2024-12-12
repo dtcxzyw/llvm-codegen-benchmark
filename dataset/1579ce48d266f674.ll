@@ -1,11 +1,12 @@
 
-; 371 occurrences:
+; 366 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ioReadBlif.c.ll
 ; abc/optimized/wlcStdin.c.ll
 ; abc/optimized/wlnWlc.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/writer.cc.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; clamav/optimized/mbox.c.ll
@@ -104,7 +105,6 @@
 ; linux/optimized/base.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/ds.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/kallsyms.ll
 ; linux/optimized/kobject.ll
@@ -128,7 +128,6 @@
 ; memcached/optimized/memcached_debug-memcached.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -144,8 +143,6 @@
 ; openblas/optimized/dorgbr.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dsyr2k_kernel_L.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/attention_layer.cpp.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/demosaicing.cpp.ll
@@ -210,7 +207,6 @@
 ; postgres/optimized/syncrep_scanner.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; qemu/optimized/block_vvfat.c.ll
-; qemu/optimized/hw_virtio_virtio-rng.c.ll
 ; qemu/optimized/optimize.c.ll
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
@@ -255,7 +251,6 @@
 ; spike/optimized/stsa16.ll
 ; spike/optimized/umar64.ll
 ; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_connected_components.c.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
@@ -380,7 +375,7 @@ entry:
   ret i64 %4
 }
 
-; 62 occurrences:
+; 61 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/dauTree.c.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
@@ -412,7 +407,6 @@ entry:
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/mg_biome.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openblas/optimized/common.c.ll
 ; openblas/optimized/dsbtrd.c.ll
@@ -452,7 +446,7 @@ entry:
   ret i64 %4
 }
 
-; 94 occurrences:
+; 93 occurrences:
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/iterative_schur_complement_solver.cc.ll
 ; ceres/optimized/power_series_expansion_preconditioner.cc.ll
@@ -535,7 +529,6 @@ entry:
 ; cvc5/optimized/type_info.cpp.ll
 ; cvc5/optimized/type_matcher.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/trackerStateEstimator.cpp.ll
@@ -609,13 +602,15 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; cvc5/optimized/base_solver.cpp.ll
 ; cvc5/optimized/bv_inverter.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
+; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/quantifiers_macros.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/real_to_int.cpp.ll
+; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/smt2_printer.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/sygus_process_conj.cpp.ll

@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/pdrUtil.c.ll
@@ -17,6 +17,7 @@
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll

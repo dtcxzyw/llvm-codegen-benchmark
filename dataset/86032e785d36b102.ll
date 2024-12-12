@@ -1,9 +1,10 @@
 
-; 99 occurrences:
+; 101 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
-; arrow/optimized/type_traits.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/h16_rule.ll
+; boost/optimized/src.ll
 ; c3c/optimized/context.c.ll
 ; cpython/optimized/_json.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
@@ -47,9 +48,10 @@
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/ParsedAttr.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaPPC.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/ToolChain.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll

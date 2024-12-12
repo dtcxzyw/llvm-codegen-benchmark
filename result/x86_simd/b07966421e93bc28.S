@@ -24,7 +24,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	4294967169                      # 0xffffff81
 .LCPI2_1:
 	.long	4294967201                      # 0xffffffa1
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm0
@@ -35,7 +35,7 @@ func0000000000000014:                   # @func0000000000000014
 	retq
 .LCPI3_0:
 	.long	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	knotb	%k0, %k1
@@ -45,7 +45,7 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 .LCPI4_0:
 	.long	2                               # 0x2
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	knotb	%k0, %k1

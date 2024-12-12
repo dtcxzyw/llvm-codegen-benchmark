@@ -2,9 +2,9 @@ func0000000000000003:                   # @func0000000000000003
 	movl	%esi, %eax
 	andl	$-196612, %eax                  # imm = 0xFFFCFFFC
 	orl	$65536, %eax                    # imm = 0x10000
+	andl	$-131075, %esi                  # imm = 0xFFFDFFFD
 	testb	$1, %dil
 	cmovnel	%esi, %eax
-	andl	$-131075, %eax                  # imm = 0xFFFDFFFD
 	orl	$131072, %eax                   # imm = 0x20000
 	retq
 func0000000000000002:                   # @func0000000000000002

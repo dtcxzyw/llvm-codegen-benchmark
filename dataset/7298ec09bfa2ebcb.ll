@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; flac/optimized/bitwriter.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/rx.ll
@@ -9,7 +9,6 @@
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-sflow.c.ll
 ; wireshark/optimized/packet-tcpcl.c.ll
-; wireshark/optimized/packet-wtls.c.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
@@ -29,13 +28,25 @@ entry:
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = add nsw i32 %1, -2
   %6 = select i1 %4, i32 %0, i32 %5
   ret i32 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 128
+  %.not.not = icmp eq i32 %3, 0
+  %4 = add nsw i32 %1, -256
+  %5 = select i1 %.not.not, i32 %0, i32 %4
+  ret i32 %5
 }
 
 ; 14 occurrences:
@@ -54,7 +65,7 @@ entry:
 ; wireshark/optimized/packet-ospf.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2048
   %4 = icmp eq i32 %3, 0
@@ -68,7 +79,7 @@ entry:
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %.not = icmp eq i32 %3, 0
@@ -82,7 +93,7 @@ entry:
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %.not = icmp eq i32 %3, 0
@@ -94,10 +105,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationfastlatin.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 896
-  %4 = icmp ult i32 %3, 384
+  %4 = icmp samesign ult i32 %3, 384
   %5 = add nuw nsw i32 %1, 2097344
   %6 = select i1 %4, i32 %0, i32 %5
   ret i32 %6

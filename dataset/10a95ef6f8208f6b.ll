@@ -1,5 +1,5 @@
 
-%"struct.asmjit::_abi_1_10::OperandSignature.2488184" = type { i32 }
+%"struct.asmjit::_abi_1_10::OperandSignature.2603616" = type { i32 }
 
 ; 49 occurrences:
 ; cpython/optimized/ceval.ll
@@ -10,10 +10,10 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/ebitmap.ll
 ; linux/optimized/groups.ll
+; linux/optimized/hda_controller.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/hugetlb_cgroup.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/io-wq.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/maple_tree.ll
@@ -52,21 +52,20 @@
 ; ruby/optimized/regcomp.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr [8 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 194 occurrences:
+; 210 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/cutNode.c.ll
 ; abc/optimized/decFactor.c.ll
 ; abc/optimized/decompress.c.ll
@@ -82,7 +81,6 @@ entry:
 ; abc/optimized/mpmMap.c.ll
 ; abc/optimized/mvcApi.c.ll
 ; abc/optimized/mvcLits.c.ll
-; abc/optimized/mvcPrint.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
@@ -122,7 +120,26 @@ entry:
 ; libwebp/optimized/backward_references_enc.c.ll
 ; libwebp/optimized/filters_utils.c.ll
 ; libwebp/optimized/histogram_enc.c.ll
+; llvm/optimized/AArch64.cpp.ll
+; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/AArch64TargetParser.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; llvm/optimized/CodeGenRegisters.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/InjectedSourceStream.cpp.ll
+; llvm/optimized/LiveVariables.cpp.ll
+; llvm/optimized/MCInstPrinter.cpp.ll
+; llvm/optimized/MCInstrInfo.cpp.ll
+; llvm/optimized/MCSubtargetInfo.cpp.ll
+; llvm/optimized/NamedStreamMap.cpp.ll
+; llvm/optimized/NewGVN.cpp.ll
+; llvm/optimized/PDBFileBuilder.cpp.ll
+; llvm/optimized/PHIElimination.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/RISCVAsmPrinter.cpp.ll
+; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; llvm/optimized/TpiStream.cpp.ll
+; llvm/optimized/X86TargetMachine.cpp.ll
 ; luajit/optimized/buildvm.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
@@ -132,7 +149,6 @@ entry:
 ; luau/optimized/IrValueLocationTracking.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/OptimizeDeadStore.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; oniguruma/optimized/regcomp.ll
@@ -142,7 +158,6 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-var.ll
-; openjdk/optimized/hb-set.ll
 ; openjdk/optimized/ifg.ll
 ; openjdk/optimized/lcm.ll
 ; openjdk/optimized/locknode.ll
@@ -150,6 +165,7 @@ entry:
 ; openjdk/optimized/synchronizer.ll
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
+; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Activate.cc.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/ChangeBackground.cc.ll
@@ -257,12 +273,12 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 20
-  %5 = getelementptr nusw [32 x %"struct.asmjit::_abi_1_10::OperandSignature.2488184"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 20
+  %5 = getelementptr nusw nuw [32 x %"struct.asmjit::_abi_1_10::OperandSignature.2603616"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -287,56 +303,24 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr nusw [8 x i64], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %5 = getelementptr nusw nuw [8 x i64], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 615168
-  %5 = getelementptr nusw [12800 x float], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 21 occurrences:
-; llvm/optimized/AArch64.cpp.ll
-; llvm/optimized/AArch64InstPrinter.cpp.ll
-; llvm/optimized/AArch64TargetParser.cpp.ll
-; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/CodeGenRegisters.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/InjectedSourceStream.cpp.ll
-; llvm/optimized/LiveVariables.cpp.ll
-; llvm/optimized/MCInstPrinter.cpp.ll
-; llvm/optimized/MCInstrInfo.cpp.ll
-; llvm/optimized/MCSubtargetInfo.cpp.ll
-; llvm/optimized/NamedStreamMap.cpp.ll
-; llvm/optimized/NewGVN.cpp.ll
-; llvm/optimized/PDBFileBuilder.cpp.ll
-; llvm/optimized/PHIElimination.cpp.ll
-; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RegisterInfoEmitter.cpp.ll
-; llvm/optimized/TpiStream.cpp.ll
-; llvm/optimized/X86TargetMachine.cpp.ll
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 6
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 216
-  %5 = getelementptr nusw [5 x i64], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [12800 x float], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

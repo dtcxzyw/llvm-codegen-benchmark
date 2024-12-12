@@ -16,8 +16,7 @@ entry:
   ret i64 %3
 }
 
-; 13 occurrences:
-; cmake/optimized/archive_pack_dev.c.ll
+; 12 occurrences:
 ; spike/optimized/kmmawb2.ll
 ; spike/optimized/kmmawb2_u.ll
 ; spike/optimized/kmmawt2.ll

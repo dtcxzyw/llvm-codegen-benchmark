@@ -31,7 +31,7 @@ entry:
   ret i32 %2
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -40,7 +40,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; flac/optimized/decode.c.ll
 ; flac/optimized/encode.c.ll
-; freetype/optimized/psaux.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; icu/optimized/reslist.ll
 ; icu/optimized/ucnvbocu.ll
@@ -74,7 +73,7 @@ entry:
 ; wireshark/optimized/pcapng.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 32, %0
   %2 = icmp eq i32 %0, 0
@@ -83,7 +82,7 @@ entry:
 }
 
 ; 21 occurrences:
-; cmake/optimized/cmArchiveWrite.cxx.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/mprintf.c.ll
 ; cmake/optimized/pipe.c.ll
 ; cmake/optimized/udp.c.ll
@@ -105,7 +104,7 @@ entry:
 ; wolfssl/optimized/sp_int.c.ll
 ; yosys/optimized/edif.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 0, %0
   %2 = icmp eq i32 %0, -2147483648
@@ -129,7 +128,7 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0) #0 {
+define i32 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 0, %0
   %.inv = icmp slt i32 %0, 0
@@ -137,10 +136,23 @@ entry:
   ret i32 %2
 }
 
+; 3 occurrences:
+; libwebp/optimized/sharpyuv.c.ll
+; openusd/optimized/reconinter.c.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000026(i32 %0) #0 {
+entry:
+  %1 = sub nsw i32 21, %0
+  %2 = icmp slt i32 %0, 11
+  %3 = select i1 %2, i32 11, i32 %1
+  ret i32 %3
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0) #0 {
+define i32 @func0000000000000068(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 384, %0
   %2 = icmp ugt i32 %0, 383
@@ -151,10 +163,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0) #0 {
+define i32 @func0000000000000074(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 64, %0
-  %2 = icmp ult i32 %0, 9
+  %2 = icmp samesign ult i32 %0, 9
   %3 = select i1 %2, i32 56, i32 %1
   ret i32 %3
 }
@@ -170,18 +182,6 @@ entry:
   %1 = sub i32 0, %0
   %2 = icmp slt i32 %0, 0
   %3 = select i1 %2, i32 1, i32 %1
-  ret i32 %3
-}
-
-; 2 occurrences:
-; libwebp/optimized/sharpyuv.c.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0) #0 {
-entry:
-  %1 = sub nsw i32 -1074, %0
-  %2 = icmp slt i32 %0, -1137
-  %3 = select i1 %2, i32 64, i32 %1
   ret i32 %3
 }
 

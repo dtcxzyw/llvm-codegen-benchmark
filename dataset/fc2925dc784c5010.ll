@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/intel_color.ll
 ; llvm/optimized/DeclSpec.cpp.ll
 ; ruby/optimized/coverage.ll
+; ruby/optimized/ractor.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1, i1 %2) #0 {
 entry:

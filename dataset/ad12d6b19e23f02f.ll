@@ -32,7 +32,7 @@
 ; yosys/optimized/proc_dlatch.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 72
   %.mask = and i64 %1, 4294967295
@@ -48,7 +48,7 @@ entry:
 ; opencv/optimized/matchers.cpp.ll
 ; opencv/optimized/points_classifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0) #0 {
+define i1 @func0000000000000086(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 96
   %.mask = and i64 %1, 2147483648
@@ -64,7 +64,7 @@ entry:
 ; opencv/optimized/bound_min.cpp.ll
 ; opencv/optimized/face_beautification.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
+define i1 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 720
   %2 = icmp ugt i64 %1, 1152921504606846975
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/edgeboxes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0) #0 {
+define i1 @func000000000000008c(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 20
   %.mask = and i64 %1, 4294967295

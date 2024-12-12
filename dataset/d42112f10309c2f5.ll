@@ -10,11 +10,11 @@
 ; slurm/optimized/numa.ll
 ; spike/optimized/isa_parser.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = lshr i64 %2, 4
-  %4 = getelementptr nusw [27 x i32], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [27 x i32], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

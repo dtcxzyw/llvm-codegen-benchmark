@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 37 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; cmake/optimized/cmSetCommand.cxx.ll
 ; coreutils-rs/optimized/3t9yvjig6ylv2f7b.ll
@@ -14,7 +14,6 @@
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
 ; nanobind/optimized/nb_ndarray.cpp.ll
@@ -30,7 +29,6 @@
 ; php/optimized/SAPI.ll
 ; postgres/optimized/partbounds.ll
 ; postgres/optimized/xlogrecovery.ll
-; proj/optimized/factory.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; redis/optimized/thread_event.ll

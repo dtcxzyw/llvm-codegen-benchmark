@@ -15,7 +15,7 @@ entry:
 ; cvc5/optimized/metakind.cpp.ll
 ; linux/optimized/skl_watermark.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000031(i16 %0) #0 {
+define i16 @func0000000000000061(i16 %0) #0 {
 entry:
   %1 = add nuw nsw i16 %0, 1
   %2 = icmp eq i16 %0, 0

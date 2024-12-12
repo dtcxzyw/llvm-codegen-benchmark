@@ -1,12 +1,12 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	shrl	$3, %edx
-	cmpq	%rsi, %rdx
-	seta	%al
+	cmpq	%rdx, %rsi
+	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrl	$28, %edx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq

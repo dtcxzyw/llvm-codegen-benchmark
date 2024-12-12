@@ -1,9 +1,11 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/giaSweeper.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll

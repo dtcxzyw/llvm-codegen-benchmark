@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/kallsyms.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll

@@ -51,7 +51,7 @@ entry:
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; nlohmann_json/optimized/unit-user_defined_input.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, double %1) #0 {
+define i1 @func0000000000000024(i8 %0, double %1) #0 {
 entry:
   %2 = fcmp uno double %1, 0.000000e+00
   %3 = icmp ult i8 %0, 3
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; nlohmann_json/optimized/unit-regression1.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, double %1) #0 {
+define i1 @func0000000000000021(i8 %0, double %1) #0 {
 entry:
   %2 = fcmp uno double %1, 0.000000e+00
   %3 = icmp eq i8 %0, 7

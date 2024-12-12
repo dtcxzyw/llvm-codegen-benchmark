@@ -56,12 +56,13 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
+; boost/optimized/monotonic_buffer_resource.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; folly/optimized/Request.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
@@ -74,7 +75,7 @@ entry:
 ; qemu/optimized/linux-user_syscall.c.ll
 ; z3/optimized/sat_lut_finder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp eq i64 %0, 0
@@ -92,7 +93,7 @@ entry:
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = icmp eq i64 %0, 0
@@ -105,7 +106,7 @@ entry:
 ; llvm/optimized/CGExprCXX.cpp.ll
 ; openjdk/optimized/os.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = icmp eq i64 %0, 0

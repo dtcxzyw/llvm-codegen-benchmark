@@ -22,5 +22,5 @@ func0000000000000000:                   # @func0000000000000000
 	vor.vv	v10, v10, v12
 	vand.vi	v10, v10, 7
 	vand.vi	v8, v8, -9
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

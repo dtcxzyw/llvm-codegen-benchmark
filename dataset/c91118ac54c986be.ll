@@ -1,13 +1,14 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; freetype/optimized/autofit.c.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
 ; linux/optimized/e1000_hw.ll
+; lvgl/optimized/lv_obj.ll
 ; php/optimized/zend_jit.ll
 ; ruby/optimized/ruby.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 128
   %3 = and i32 %2, %0
@@ -19,10 +20,10 @@ entry:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 2
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -34,12 +35,38 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 4
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 
-; 30 occurrences:
+; 56 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/dump.ll
+; boost/optimized/dump_avx2.ll
+; boost/optimized/dump_ssse3.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; cpython/optimized/_decimal.ll
 ; git/optimized/commit-reach.ll
 ; libwebp/optimized/alpha_processing_sse41.c.ll

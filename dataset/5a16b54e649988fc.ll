@@ -13,6 +13,18 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000031(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %2, -4294967297
+  %4 = select i1 %3, i32 0, i32 32
+  %5 = select i1 %0, i32 %4, i32 %1
+  %6 = or disjoint i32 %5, 8
+  ret i32 %6
+}
+
 ; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; hwloc/optimized/bitmap.ll
@@ -39,6 +51,18 @@ entry:
   %4 = select i1 %3, i32 0, i32 32
   %5 = select i1 %0, i32 %4, i32 %1
   %6 = or disjoint i32 %5, 8
+  ret i32 %6
+}
+
+; 1 occurrences:
+; eastl/optimized/TestBitset.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000029(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 65536
+  %4 = select i1 %3, i32 0, i32 16
+  %5 = select i1 %0, i32 %4, i32 %1
+  %6 = or disjoint i32 %5, 4
   ret i32 %6
 }
 

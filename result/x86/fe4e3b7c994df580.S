@@ -1,4 +1,4 @@
-func00000000000002cc:                   # @func00000000000002cc
+func000000000000098c:                   # @func000000000000098c
 	movq	%rdi, %rax
 	shlq	$4, %rax
 	addq	%rdx, %rax
@@ -8,7 +8,7 @@ func00000000000002cc:                   # @func00000000000002cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000284:                   # @func0000000000000284
+func0000000000000904:                   # @func0000000000000904
 	addq	%rdi, %rdx
 	cmpq	%rsi, %rdx
 	seta	%cl
@@ -16,11 +16,19 @@ func0000000000000284:                   # @func0000000000000284
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000024c:                   # @func000000000000024c
+func0000000000000c8c:                   # @func0000000000000c8c
 	leaq	(%rdx,%rdi,4), %rax
 	cmpq	%rsi, %rax
 	setb	%cl
 	testq	%rdi, %rdi
 	setne	%al
+	andb	%cl, %al
+	retq
+func0000000000000c2c:                   # @func0000000000000c2c
+	addq	%rsi, %rdx
+	cmpq	%rdi, %rdx
+	setne	%cl
+	cmpq	$1, %rsi
+	sete	%al
 	andb	%cl, %al
 	retq

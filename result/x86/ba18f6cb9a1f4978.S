@@ -1,11 +1,11 @@
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001d1:                   # @func00000000000001d1
 	addq	%rdx, %rsi
 	cmpq	$16777216, %rsi                 # imm = 0x1000000
 	movl	$127, %eax
 	sbbl	$0, %eax
 	addl	%edi, %eax
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000121:                   # @func0000000000000121
 	addq	%rdx, %rsi
 	movabsq	$999999999999999999, %rax       # imm = 0xDE0B6B3A763FFFF
 	xorl	%ecx, %ecx

@@ -1,43 +1,43 @@
 .LCPI0_0:
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
 .LCPI0_1:
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
 .LCPI0_2:
-	.short	256                             # 0x100
-	.short	256                             # 0x100
+	.short	8                               # 0x8
+	.short	8                               # 0x8
 .LCPI0_3:
-	.short	3072                            # 0xc00
-	.short	3072                            # 0xc00
+	.short	65511                           # 0xffe7
+	.short	65511                           # 0xffe7
 func0000000000000003:                   # @func0000000000000003
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1

@@ -1,5 +1,5 @@
 
-; 379 occurrences:
+; 380 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cnf_reader.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -24,11 +24,12 @@
 ; assimp/optimized/MaterialSystem.cpp.ll
 ; assimp/optimized/PostStepRegistry.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
-; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/topology.ll
+; boost/optimized/xml_grammar.ll
 ; c3c/optimized/parse_expr.c.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/dlp.c.ll
@@ -37,7 +38,6 @@
 ; clamav/optimized/regcomp.c.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
-; cmake/optimized/archive_write_disk_set_standard_lookup.c.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cmake/optimized/url.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -98,6 +98,9 @@
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/Lexer.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; nghttp2/optimized/client.c.ll
@@ -189,13 +192,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -350,7 +350,6 @@
 ; postgres/optimized/snprintf_shlib.ll
 ; postgres/optimized/snprintf_srv.ll
 ; protobuf/optimized/tokenizer.cc.ll
-; proxy/optimized/proxy_freestanding_tests.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/lua_struct.ll
@@ -375,6 +374,8 @@
 ; wireshark/optimized/strutil.c.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yosys/optimized/fmt.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/ODDataBarExpandedBitDecoder.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; zxing/optimized/ODITFReader.cpp.ll
@@ -383,11 +384,11 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
-; 456 occurrences:
+; 464 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcMinBase.c.ll
@@ -416,6 +417,7 @@ entry:
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/str.c.ll
 ; clamav/optimized/yc.c.ll
@@ -591,6 +593,9 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/Conformance.test.cpp.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
+; lvgl/optimized/lv_draw_label.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -841,6 +846,10 @@ entry:
 ; yaml-cpp/optimized/exp.cpp.ll
 ; yosys/optimized/verilog_backend.ll
 ; z3/optimized/zstring.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; zxing/optimized/zueci.c.ll
@@ -848,7 +857,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -864,7 +873,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 

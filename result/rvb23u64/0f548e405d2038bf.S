@@ -22,15 +22,15 @@ func000000000000001d:                   # @func000000000000001d
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
-	slli	a2, a2, 58
-	srli	a2, a2, 50
+func000000000000001b:                   # @func000000000000001b
+	slli	a2, a2, 56
+	srli	a2, a2, 40
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func000000000000001b:                   # @func000000000000001b
-	slli	a2, a2, 52
-	srli	a2, a2, 48
+func000000000000001c:                   # @func000000000000001c
+	slli	a2, a2, 58
+	srli	a2, a2, 50
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret

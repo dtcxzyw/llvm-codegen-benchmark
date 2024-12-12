@@ -52,12 +52,29 @@ func0000000000000019:                   # @func0000000000000019
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v0, v10, 9
 	li	a0, -25
 	vand.vx	v8, v8, a0
 	li	a0, 16
+	vor.vx	v10, v8, a0
+	vmerge.vvm	v8, v10, v8, v0
+	ret
+func0000000000000011:                   # @func0000000000000011
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsgtu.vi	v0, v10, 1
+	li	a0, 127
+	vand.vx	v8, v8, a0
+	li	a0, 128
+	vor.vx	v8, v8, a0, v0.t
+	ret
+func0000000000000029:                   # @func0000000000000029
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsleu.vi	v0, v10, 7
+	lui	a0, 12288
+	vand.vx	v8, v8, a0
+	lui	a0, 16384
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

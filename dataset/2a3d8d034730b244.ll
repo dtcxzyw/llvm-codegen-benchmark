@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 114 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
@@ -7,6 +7,9 @@
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
@@ -110,17 +113,21 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw i128 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 190 occurrences:
+; 193 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -315,7 +322,7 @@ define i64 @func000000000000000a(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -503,11 +510,12 @@ define i64 @func000000000000000c(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 56
   %3 = trunc nuw nsw i128 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 75 occurrences:
+; 76 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p256-64.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -588,7 +596,7 @@ define i64 @func000000000000000f(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 56
   %3 = trunc nuw nsw i128 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -602,7 +610,19 @@ define i64 @func000000000000000d(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw nsw i128 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 2 occurrences:
+; boost/optimized/approximately_equals.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i128 %1) #0 {
+entry:
+  %2 = lshr i128 %1, 6
+  %3 = trunc i128 %2 to i64
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -613,18 +633,7 @@ define i64 @func000000000000000e(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw nsw i128 %2 to i64
-  %4 = add nuw i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i128 %1) #0 {
-entry:
-  %2 = lshr i128 %1, 61
-  %3 = trunc i128 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_initializers.c.ll
 ; c3c/optimized/sema_stmts.c.ll
@@ -11,7 +11,6 @@
 ; hyperscan/optimized/ng_revacc.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; icu/optimized/decNumber.ll
-; linux/optimized/ht.ll
 ; linux/optimized/rtc-cmos.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AliasAnalysis.cpp.ll

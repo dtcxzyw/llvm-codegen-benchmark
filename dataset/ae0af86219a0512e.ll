@@ -47,12 +47,12 @@
 ; z3/optimized/solve_eqs.cpp.ll
 ; z3/optimized/spacer_quant_generalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000154(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp samesign ult i64 %4, %0
   ret i1 %5
 }
 
@@ -68,7 +68,7 @@ entry:
 ; folly/optimized/json.cpp.ll
 ; minetest/optimized/CSceneManager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = add nsw i64 %2, -1
@@ -80,7 +80,19 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/system_physmem.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000d8(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 12
+  %3 = add nuw nsw i64 %2, 2097151
+  %4 = lshr i64 %3, 21
+  %5 = icmp samesign ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; qemu/optimized/system_physmem.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 12
   %3 = add nuw nsw i64 %2, 2097151

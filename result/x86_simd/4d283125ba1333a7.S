@@ -19,7 +19,7 @@
 	.zero	1
 .LCPI0_2:
 	.byte	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsrlvq	%ymm2, %ymm1, %ymm1
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vpbroadcastb	.LCPI0_2(%rip), %xmm1   # xmm1 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]

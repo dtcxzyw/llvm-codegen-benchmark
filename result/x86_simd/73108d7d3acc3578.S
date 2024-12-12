@@ -21,7 +21,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI2_0:
 	.quad	99                              # 0x63
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
 	movq	%rcx, %rdx
@@ -65,7 +65,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI3_0:
 	.quad	350                             # 0x15e
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$3373118916335460867, %rax      # imm = 0x2ECFB9C869536203
@@ -98,4 +98,12 @@ func0000000000000004:                   # @func0000000000000004
 	vpcmpltq	.LCPI3_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vxorps	%xmm0, %xmm0, %xmm0
+	retq
+.LCPI5_0:
+	.long	1                               # 0x1
+func0000000000000004:                   # @func0000000000000004
+	vbroadcastss	.LCPI5_0(%rip), %xmm0   # xmm0 = [1,1,1,1]
 	retq

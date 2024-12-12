@@ -17,7 +17,7 @@ entry:
   ret i64 %3
 }
 
-; 236 occurrences:
+; 241 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -32,6 +32,10 @@ entry:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; cpython/optimized/basearith.ll
@@ -254,6 +258,7 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i128 %0, i128 %1) #0 {
 entry:

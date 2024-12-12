@@ -3,7 +3,7 @@ func000000000000003d:                   # @func000000000000003d
 	vpslld	$3, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
@@ -23,7 +23,7 @@ func000000000000000e:                   # @func000000000000000e
 	vpaddd	%xmm1, %xmm1, %xmm1
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:

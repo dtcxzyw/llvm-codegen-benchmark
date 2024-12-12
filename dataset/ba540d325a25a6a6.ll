@@ -39,7 +39,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; cpython/optimized/pystrtod.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; wireshark/optimized/column-utils.c.ll
 ; Function Attrs: nounwind

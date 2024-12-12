@@ -31,14 +31,25 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 63
+  %4 = icmp sgt i32 %0, %1
+  %5 = select i1 %4, i32 %3, i32 0
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; linux/optimized/rscalc.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = icmp ugt i32 %0, %1
+  %4 = icmp samesign ugt i32 %0, %1
   %5 = select i1 %4, i32 %3, i32 16
   ret i32 %5
 }
@@ -50,6 +61,17 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = icmp ult i32 %0, %1
+  %5 = select i1 %4, i32 %3, i32 0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; linux/optimized/rscalc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, -8
+  %4 = icmp ugt i32 %0, %1
   %5 = select i1 %4, i32 %3, i32 0
   ret i32 %5
 }

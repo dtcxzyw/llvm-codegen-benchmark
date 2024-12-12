@@ -10,3 +10,9 @@ func0000000000000002:                   # @func0000000000000002
 	cmovneq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	testb	$1, %sil
+	movabsq	$1152921504606846975, %rax      # imm = 0xFFFFFFFFFFFFFFF
+	cmovneq	%rdx, %rax
+	leaq	(%rdi,%rax,8), %rax
+	retq

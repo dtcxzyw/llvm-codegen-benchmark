@@ -7,8 +7,8 @@ func000000000000003f:                   // @func000000000000003f
 	umulh	x9, x4, x8
 	mul	x10, x4, x8
 	madd	x8, x5, x8, x9
-	adds	x9, x10, x2
-	adc	x8, x8, x3
+	adds	x9, x2, x10
+	adc	x8, x3, x8
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
@@ -35,10 +35,10 @@ func0000000000000017:                   // @func0000000000000017
 	add	x10, x5, x5, lsl #32
 	umulh	x8, x4, x8
 	neg	x9, x9
-	adds	x9, x9, x2
+	adds	x9, x2, x9
 	sub	x8, x8, x4
 	sub	x8, x8, x10
-	adc	x8, x8, x3
+	adc	x8, x3, x8
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
@@ -50,10 +50,10 @@ func0000000000000000:                   // @func0000000000000000
 	add	x10, x5, x5, lsl #32
 	umulh	x8, x4, x8
 	neg	x9, x9
-	adds	x9, x9, x2
+	adds	x9, x2, x9
 	sub	x8, x8, x4
 	sub	x8, x8, x10
-	adc	x8, x8, x3
+	adc	x8, x3, x8
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
@@ -65,10 +65,10 @@ func0000000000000015:                   // @func0000000000000015
 	add	x10, x5, x5, lsl #32
 	umulh	x8, x4, x8
 	neg	x9, x9
-	adds	x9, x9, x2
+	adds	x9, x2, x9
 	sub	x8, x8, x4
 	sub	x8, x8, x10
-	adc	x8, x8, x3
+	adc	x8, x3, x8
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
@@ -78,9 +78,9 @@ func000000000000003a:                   // @func000000000000003a
 	mov	x8, #-1                         // =0xffffffffffffffff
 	neg	x9, x4
 	umulh	x8, x4, x8
-	adds	x9, x9, x2
+	adds	x9, x2, x9
 	sub	x8, x8, x5
-	adc	x8, x8, x3
+	adc	x8, x3, x8
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
@@ -90,9 +90,9 @@ func000000000000003e:                   // @func000000000000003e
 	mov	x8, #-1                         // =0xffffffffffffffff
 	neg	x9, x4
 	umulh	x8, x4, x8
-	adds	x9, x9, x2
+	adds	x9, x2, x9
 	sub	x8, x8, x5
-	adc	x8, x8, x3
+	adc	x8, x3, x8
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret

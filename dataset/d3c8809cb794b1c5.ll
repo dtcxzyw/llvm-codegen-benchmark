@@ -8,7 +8,7 @@
 ; openusd/optimized/cpuVertexBuffer.cpp.ll
 ; pocketpy/optimized/array2d.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000176(i32 %0, i32 %1) #0 {
+define i64 @func00000000000002e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = zext nneg i32 %2 to i64
@@ -22,7 +22,7 @@ entry:
 ; msdfgen/optimized/main.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000136(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000266(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %0, %1
   %3 = zext nneg i32 %2 to i64
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/index_read.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = zext i32 %2 to i64

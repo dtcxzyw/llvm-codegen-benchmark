@@ -1,8 +1,9 @@
 
-; 4 occurrences:
-; linux/optimized/wep.ll
+; 5 occurrences:
 ; openjdk/optimized/bytecodes.ll
 ; postgres/optimized/datetime.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
 ; redis/optimized/sort.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {

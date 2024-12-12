@@ -50,7 +50,7 @@ entry:
   ret i32 %3
 }
 
-; 35 occurrences:
+; 37 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwutil.c.ll
@@ -62,6 +62,7 @@ entry:
 ; linux/optimized/route.ll
 ; linux/optimized/tcp_cubic.ll
 ; llvm/optimized/DXContainer.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/Writer.cpp.ll
 ; oiio/optimized/bmpinput.cpp.ll
@@ -70,6 +71,7 @@ entry:
 ; postgres/optimized/euc_jp_and_sjis.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
+; wireshark/optimized/packet-babel.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-cattp.c.ll
 ; wireshark/optimized/packet-dhcp.c.ll

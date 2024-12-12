@@ -30,19 +30,3 @@ func0000000000000030:                   # @func0000000000000030
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI2_0:
-	.long	64512                           # 0xfc00
-.LCPI2_1:
-	.long	49920                           # 0xc300
-func0000000000000020:                   # @func0000000000000020
-	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k0
-	vpsllw	$15, %xmm1, %xmm0
-	vpmovw2m	%xmm0, %k1
-	korb	%k0, %k1, %k0
-	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm0
-	vpcmpgtd	.LCPI2_1(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq

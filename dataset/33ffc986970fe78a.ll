@@ -13,7 +13,6 @@
 ; postgres/optimized/gistbuild.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/heapam_handler.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtinsert.ll
 ; postgres/optimized/nbtpage.ll
@@ -25,8 +24,9 @@
 ; postgres/optimized/tuplesortvariants.ll
 ; postgres/optimized/vacuumlazy.ll
 ; qemu/optimized/block_vvfat.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
@@ -36,16 +36,15 @@ entry:
   ret i1 %7
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; postgres/optimized/brin.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/nodeTidscan.ll
 ; postgres/optimized/vacuum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
@@ -58,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/nodeTidscan.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000ac(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
@@ -68,18 +67,17 @@ entry:
   ret i1 %7
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/heapam_handler.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/nodeTidscan.ll
 ; postgres/optimized/tuplesortvariants.ll
 ; postgres/optimized/vacuum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
@@ -92,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000055(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a5(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16

@@ -1,30 +1,18 @@
 func0000000000000155:                   // @func0000000000000155
 // %bb.0:                               // %entry
-	ucvtf	v4.4s, v4.4s
-	ucvtf	v5.4s, v5.4s
-	fcmge	v1.4s, v5.4s, v1.4s
-	fcmge	v0.4s, v4.4s, v0.4s
-	fcmge	v3.4s, v5.4s, v3.4s
-	fcmge	v2.4s, v4.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	mvn	v0.16b, v0.16b
-	orn	v0.16b, v0.16b, v1.16b
-	xtn	v0.8b, v0.8h
+	ucvtf	s2, w0
+	fcmp	s0, s2
+	cset	w8, hi
+	fcmp	s1, s2
+	csinc	w0, w8, wzr, ls
 	ret
                                         // -- End function
 func0000000000000133:                   // @func0000000000000133
 // %bb.0:                               // %entry
-	ucvtf	v4.4s, v4.4s
-	ucvtf	v5.4s, v5.4s
-	fcmge	v1.4s, v1.4s, v5.4s
-	fcmge	v0.4s, v0.4s, v4.4s
-	fcmge	v3.4s, v3.4s, v5.4s
-	fcmge	v2.4s, v2.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	mvn	v0.16b, v0.16b
-	orn	v0.16b, v0.16b, v1.16b
-	xtn	v0.8b, v0.8h
+	ucvtf	s2, w0
+	fcmp	s0, s2
+	cset	w8, lt
+	fcmp	s1, s2
+	csinc	w0, w8, wzr, ge
 	ret
                                         // -- End function

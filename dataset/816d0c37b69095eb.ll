@@ -1,5 +1,6 @@
 
-; 291 occurrences:
+; 289 occurrences:
+; boost/optimized/static_string.ll
 ; cpython/optimized/_decimal.ll
 ; cpython/optimized/arraymodule.ll
 ; cpython/optimized/bytearrayobject.ll
@@ -41,18 +42,15 @@
 ; linux/optimized/memblock.ll
 ; linux/optimized/mm_init.ll
 ; linux/optimized/namei.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/numa.ll
 ; linux/optimized/posix_acl.ll
 ; linux/optimized/property.ll
-; linux/optimized/rsxface.ll
 ; linux/optimized/sem.ll
 ; linux/optimized/srcutree.ll
 ; linux/optimized/static_call_inline.ll
 ; linux/optimized/trace_events.ll
 ; linux/optimized/trace_printk.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
-; minetest/optimized/mapnode.cpp.ll
 ; php/optimized/php_pcre.ll
 ; postgres/optimized/backend_status.ll
 ; postgres/optimized/base64.ll
@@ -295,7 +293,7 @@
 define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
-  %3 = icmp ugt ptr %2, %0
+  %3 = icmp ult ptr %0, %2
   ret i1 %3
 }
 
@@ -305,7 +303,7 @@ entry:
 define i1 @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i32, ptr %0, i64 %1
-  %3 = icmp ule ptr %2, %0
+  %3 = icmp uge ptr %0, %2
   ret i1 %3
 }
 
@@ -317,7 +315,7 @@ entry:
 define i1 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
-  %3 = icmp ult ptr %2, %0
+  %3 = icmp ugt ptr %0, %2
   ret i1 %3
 }
 
@@ -325,11 +323,10 @@ entry:
 ; openusd/optimized/aom_scale.c.ll
 ; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000044(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %0, i64 %1
-  %3 = icmp ugt ptr %2, %0
-  ret i1 %3
+  %2 = icmp sgt i64 %1, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

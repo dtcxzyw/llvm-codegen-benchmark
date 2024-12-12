@@ -7,13 +7,7 @@ func0000000000000010:                   # @func0000000000000010
 func0000000000000018:                   # @func0000000000000018
 	testb	%dl, %dl
 	movl	$1, %eax
-	cmovnsl	%esi, %eax
-	addb	%dil, %al
-	retq
-func0000000000000028:                   # @func0000000000000028
-	testb	%dl, %dl
-	movl	$255, %eax
-	cmovlel	%esi, %eax
+	cmovgl	%esi, %eax
 	addb	%dil, %al
 	retq
 func0000000000000020:                   # @func0000000000000020

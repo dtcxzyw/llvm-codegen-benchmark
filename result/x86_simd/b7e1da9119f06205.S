@@ -39,9 +39,9 @@ func0000000000000010:                   # @func0000000000000010
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI4_0:
-	.quad	3897                            # 0xf39
+	.quad	-3600                           # 0xfffffffffffff1f0
 .LCPI4_1:
-	.quad	-6810                           # 0xffffffffffffe566
+	.quad	-60                             # 0xffffffffffffffc4
 func0000000000000055:                   # @func0000000000000055
 	vpmullq	.LCPI4_0(%rip){1to4}, %ymm2, %ymm2
 	vpmullq	.LCPI4_1(%rip){1to4}, %ymm1, %ymm1

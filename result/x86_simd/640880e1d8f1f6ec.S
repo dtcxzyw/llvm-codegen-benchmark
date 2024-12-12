@@ -58,7 +58,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vxorps	%xmm0, %xmm0, %xmm0
 	retq
 func0000000000000004:                   # @func0000000000000004

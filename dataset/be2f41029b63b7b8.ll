@@ -1,11 +1,12 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; libquic/optimized/exponentiation.c.ll
 ; linux/optimized/intel_color.ll
 ; nori/optimized/layout.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
+; wireshark/optimized/packet-usbip.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {

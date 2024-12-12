@@ -4,6 +4,12 @@ func000000000000000a:                   # @func000000000000000a
 	shrdq	$56, %rdx, %rax
 	shrq	$56, %rdx
 	retq
+func000000000000000b:                   # @func000000000000000b
+	movq	%rdi, %rax
+	orq	%rsi, %rdx
+	shrdq	$3, %rdx, %rax
+	shrq	$3, %rdx
+	retq
 func0000000000000002:                   # @func0000000000000002
 	leaq	(%rdx,%rdx), %rax
 	orq	%rsi, %rax

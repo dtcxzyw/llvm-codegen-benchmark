@@ -1,5 +1,5 @@
 
-; 246 occurrences:
+; 250 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; abc/optimized/mpmMan.c.ll
@@ -9,7 +9,8 @@
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
 ; assimp/optimized/B3DImporter.cpp.ll
-; darktable/optimized/introspection_highlights.c.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; freetype/optimized/psaux.c.ll
@@ -96,6 +97,8 @@
 ; linux/optimized/vmcore.ll
 ; llvm/optimized/StackSlotColoring.cpp.ll
 ; luajit/optimized/buildvm.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/fs_epoll.c.ll
 ; nuttx/optimized/lib_b16sin.c.ll
@@ -203,7 +206,6 @@
 ; postgres/optimized/pg_lzcompress_shlib.ll
 ; postgres/optimized/pg_lzcompress_srv.ll
 ; postgres/optimized/regexp.ll
-; postgres/optimized/sharedtuplestore.ll
 ; postgres/optimized/spell.ll
 ; postgres/optimized/sqlda.ll
 ; postgres/optimized/tupdesc.ll
@@ -242,6 +244,8 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
+; velox/optimized/MallocAllocator.cpp.ll
+; velox/optimized/MmapAllocator.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll

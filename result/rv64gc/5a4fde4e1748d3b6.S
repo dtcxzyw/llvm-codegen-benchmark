@@ -35,7 +35,20 @@ func0000000000000010:                   # @func0000000000000010
 	or	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
-	slti	a2, a2, 0
+	li	a3, -1
+	slli	a3, a3, 62
+	addi	a3, a3, -1
+	slt	a2, a3, a2
+	and	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func0000000000000028:                   # @func0000000000000028
+	sltiu	a2, a2, 101
+	and	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func0000000000000030:                   # @func0000000000000030
+	sltiu	a2, a2, 2
 	xori	a2, a2, 1
 	and	a1, a1, a2
 	or	a0, a0, a1

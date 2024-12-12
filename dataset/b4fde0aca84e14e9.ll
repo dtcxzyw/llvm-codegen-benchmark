@@ -1,13 +1,12 @@
 
-; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/TypeIndexDiscovery.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i16 %1) #0 {
 entry:
-  %2 = icmp eq i16 %1, 13
-  %3 = select i1 %2, i32 1023, i32 127
-  %4 = add i32 %0, -1
+  %2 = icmp eq i16 %1, 16
+  %3 = select i1 %2, i32 12, i32 8
+  %4 = add i32 %0, 1
   %5 = add i32 %4, %3
   ret i32 %5
 }

@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; slurm/optimized/dist_tasks.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i16 %0, i64 %1) #0 {
 entry:
@@ -47,6 +49,16 @@ entry:
   ret i16 %3
 }
 
+; 1 occurrences:
+; openjdk/optimized/deoptimization.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000002(i16 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i16
+  %3 = sub nuw i16 %2, %0
+  ret i16 %3
+}
+
 ; 2 occurrences:
 ; icu/optimized/olsontz.ll
 ; spike/optimized/vrsub_vi.ll
@@ -55,6 +67,17 @@ define i16 @func0000000000000004(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i16
   %3 = sub i16 %2, %0
+  ret i16 %3
+}
+
+; 2 occurrences:
+; slurm/optimized/dist_tasks.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000a(i16 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i16
+  %3 = sub nuw i16 %2, %0
   ret i16 %3
 }
 

@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 6146
   %3 = icmp eq i32 %2, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; c3c/optimized/sema_asm.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
@@ -31,7 +31,7 @@ entry:
 ; opencv/optimized/chessboard.cpp.ll
 ; php/optimized/zend_func_info.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 64
   %3 = icmp eq i32 %2, 0
@@ -46,7 +46,7 @@ entry:
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i32 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = icmp ne i32 %2, 0

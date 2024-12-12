@@ -1,6 +1,7 @@
 
-; 124 occurrences:
+; 123 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
+; boost/optimized/alloc_lib.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -33,7 +34,6 @@
 ; hwloc/optimized/hwloc-info.ll
 ; hwloc/optimized/lstopo-lstopo.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo.ll
-; hyperscan/optimized/huge.cpp.ll
 ; hyperscan/optimized/ng_puff.cpp.ll
 ; linux/optimized/setup-bus.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
@@ -104,7 +104,6 @@
 ; openssl/optimized/libcrypto-shlib-bn_add.ll
 ; openssl/optimized/libcrypto-shlib-err.ll
 ; openssl/optimized/quic_multistream_test-bin-quic_multistream_test.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
 ; ruby/optimized/yjit.ll
 ; spike/optimized/fsgnj_d.ll
 ; spike/optimized/fsgnjn_d.ll
@@ -133,10 +132,9 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
-; linux/optimized/mlme.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
 ; mini-lsm-rs/optimized/4vkix0mjdn2idd4b.ll
@@ -148,6 +146,19 @@ entry:
   %2 = and i64 %1, -4096
   %3 = icmp ugt i64 %0, 4096
   %4 = select i1 %3, i64 %2, i64 4096
+  ret i64 %4
+}
+
+; 3 occurrences:
+; linux/optimized/tree.ll
+; llvm/optimized/Metadata.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = icmp ult i64 %0, 4294967296
+  %4 = select i1 %3, i64 %2, i64 1
   ret i64 %4
 }
 
@@ -166,7 +177,7 @@ entry:
   ret i64 %4
 }
 
-; 35 occurrences:
+; 33 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -194,8 +205,6 @@ entry:
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
-; linux/optimized/tree.ll
-; llvm/optimized/Metadata.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -203,11 +212,22 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 60
-  %3 = icmp ult i64 %0, 16
-  %4 = select i1 %3, i64 %2, i64 8
+  %2 = and i64 %1, 127
+  %3 = icmp samesign ult i64 %0, 96
+  %4 = select i1 %3, i64 %2, i64 48
+  ret i64 %4
+}
+
+; 1 occurrences:
+; linux/optimized/mlme.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = icmp samesign ugt i64 %0, 100
+  %4 = select i1 %3, i64 %2, i64 0
   ret i64 %4
 }
 

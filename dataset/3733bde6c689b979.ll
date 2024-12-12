@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 45 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; folly/optimized/Conv.cpp.ll
@@ -44,6 +44,7 @@
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define { i64, double } @func0000000000000000(double %0, i64 %1) #0 {
 entry:

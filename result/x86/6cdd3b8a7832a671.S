@@ -20,7 +20,7 @@ func0000000000000005:                   # @func0000000000000005
 	orl	$1, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	leal	1900(%rdi), %ecx
 	leal	2000(%rdi), %eax
 	movl	%edi, %edx

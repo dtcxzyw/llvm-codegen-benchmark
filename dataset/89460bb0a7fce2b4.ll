@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 536870912
@@ -46,7 +46,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -85,10 +85,10 @@ entry:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000078(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 2147483647
+  %4 = icmp samesign ugt i64 %3, 2147483647
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -108,7 +108,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -119,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -130,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dgemv_thread_n.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp sgt i64 %3, 1024

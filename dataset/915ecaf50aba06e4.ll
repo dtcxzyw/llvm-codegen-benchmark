@@ -17,7 +17,7 @@ entry:
   ret i32 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; clamav/optimized/upx.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; freetype/optimized/sfnt.c.ll
@@ -40,7 +40,6 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; wireshark/optimized/packet-obd-ii.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:

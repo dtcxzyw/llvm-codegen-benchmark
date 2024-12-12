@@ -9,10 +9,9 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; wireshark/optimized/packet-cfm.c.ll
-; wireshark/optimized/packet-knxip.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
@@ -34,22 +33,6 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
-; linux/optimized/avc.ll
-; linux/optimized/power-traces.ll
-; linux/optimized/regmap.ll
-; linux/optimized/sched.ll
-; wireshark/optimized/packet-adwin-config.c.ll
-; wireshark/optimized/packet-do-irp.c.ll
-; wireshark/optimized/packet-slsk.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %0, %1
-  %3 = add i32 %2, 10
-  ret i32 %3
-}
-
 ; 1 occurrences:
 ; wireshark/optimized/packet-isup.c.ll
 ; Function Attrs: nounwind
@@ -57,6 +40,21 @@ define i32 @func0000000000000040(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   ret i32 %2
+}
+
+; 6 occurrences:
+; linux/optimized/avc.ll
+; linux/optimized/power-traces.ll
+; linux/optimized/regmap.ll
+; linux/optimized/sched.ll
+; wireshark/optimized/packet-do-irp.c.ll
+; wireshark/optimized/packet-slsk.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 12
+  ret i32 %3
 }
 
 ; 2 occurrences:

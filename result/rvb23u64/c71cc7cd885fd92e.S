@@ -24,14 +24,14 @@ func0000000000000004:                   # @func0000000000000004
 	beqz	a1, .LBB1_3
 	bnez	a0, .LBB1_4
 .LBB1_2:                                # %entry
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret
 .LBB1_3:                                # %entry
 	fmv.d	fa5, fa1
 	beqz	a0, .LBB1_2
 .LBB1_4:
 	fmv.d.x	fa5, zero
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret
 .LCPI2_0:
 	.quad	0x4059000000000000              # double 100
@@ -45,7 +45,7 @@ func000000000000000c:                   # @func000000000000000c
 	beqz	a1, .LBB2_3
 	bnez	a0, .LBB2_4
 .LBB2_2:                                # %entry
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret
 .LBB2_3:                                # %entry
 	fmv.d	fa5, fa1
@@ -53,5 +53,5 @@ func000000000000000c:                   # @func000000000000000c
 .LBB2_4:
 	lui	a0, %hi(.LCPI2_1)
 	fld	fa5, %lo(.LCPI2_1)(a0)
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret

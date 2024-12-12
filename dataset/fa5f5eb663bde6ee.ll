@@ -9,7 +9,7 @@
 define i8 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 2
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   %4 = or i8 %3, 64
   ret i8 %4
 }

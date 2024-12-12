@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leal	2(%rdx), %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
@@ -10,14 +10,14 @@ func0000000000000000:                   # @func0000000000000000
 	cmovnel	%edx, %eax
 	addq	%rdi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	addl	%edx, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	leal	-3(%rdx), %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax

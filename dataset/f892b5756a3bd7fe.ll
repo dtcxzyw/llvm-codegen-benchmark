@@ -6,7 +6,7 @@
 define i1 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }

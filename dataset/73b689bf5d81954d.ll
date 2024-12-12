@@ -1,10 +1,14 @@
 
-; 194 occurrences:
+; 198 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -202,7 +206,8 @@ entry:
   ret i128 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-keypair.ll
@@ -345,9 +350,10 @@ entry:
   ret i128 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
+; boost/optimized/from_chars.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-keypair.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
@@ -369,7 +375,7 @@ entry:
 define i128 @func0000000000000005(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nsw i128 %1, %2
-  %4 = add nsw i128 %3, %0
+  %4 = add nsw i128 %0, %3
   ret i128 %4
 }
 
@@ -390,7 +396,7 @@ entry:
 define i128 @func000000000000000e(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw nsw i128 %1, %2
-  %4 = add nuw i128 %3, %0
+  %4 = add nuw i128 %0, %3
   ret i128 %4
 }
 
@@ -400,7 +406,7 @@ entry:
 define i128 @func000000000000000d(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw nsw i128 %1, %2
-  %4 = add nsw i128 %3, %0
+  %4 = add nsw i128 %0, %3
   ret i128 %4
 }
 

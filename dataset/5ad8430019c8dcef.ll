@@ -1,7 +1,7 @@
 
-%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2493385" = type { i8, i8, [6 x i8] }
+%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686" = type { i8, i8, [6 x i8] }
 
-; 303 occurrences:
+; 304 occurrences:
 ; cvc5/optimized/abduction_solver.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -302,39 +302,52 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
+; opencv/optimized/chessboard.cpp.ll
 ; php/optimized/zend_accelerator_util_funcs.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2493385", ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
 
-; 11 occurrences:
-; abc/optimized/dauTree.c.ll
+; 8 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; icu/optimized/utrie.ll
 ; icu/optimized/utrie2_builder.ll
-; luajit/optimized/minilua.ll
 ; openjdk/optimized/heapShared.ll
 ; openjdk/optimized/stringTable.ll
 ; openjdk/optimized/symbolTable.ll
 ; openjdk/optimized/systemDictionaryShared.ll
 ; php/optimized/zend_file_cache.ll
-; redis/optimized/lvm.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1073741823
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %7 = icmp ult ptr %6, %5
+  ret i1 %7
+}
+
+; 3 occurrences:
+; abc/optimized/dauTree.c.ll
+; luajit/optimized/minilua.ll
+; redis/optimized/lvm.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003c4(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 63
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i64, ptr %1, i64 %4
+  %6 = getelementptr nusw i8, ptr %0, i64 -8
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }
@@ -345,12 +358,12 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }
@@ -371,12 +384,12 @@ entry:
 ; llvm/optimized/InstCombineNegator.cpp.ll
 ; llvm/optimized/InstCombinePHI.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw ptr, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp ne ptr %6, %5
   ret i1 %7
 }
@@ -384,7 +397,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-p_mul.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000201(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = zext nneg i32 %3 to i64
@@ -408,7 +421,7 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000241(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64

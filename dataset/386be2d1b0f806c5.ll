@@ -36,19 +36,8 @@ entry:
 define i32 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = select i1 %4, i32 -5, i32 0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; z3/optimized/sat_binspr.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %1, %2
-  %4 = and i1 %3, %0
-  %5 = select i1 %4, i32 5, i32 10
   ret i32 %5
 }
 
@@ -60,7 +49,7 @@ entry:
 define i32 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = select i1 %4, i32 16, i32 0
   ret i32 %5
 }

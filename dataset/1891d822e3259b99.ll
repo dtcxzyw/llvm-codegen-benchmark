@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; git/optimized/merge-tree.ll
 ; gromacs/optimized/mshift.cpp.ll
@@ -7,8 +7,6 @@
 ; linux/optimized/af_inet6.ll
 ; linux/optimized/cbc.ll
 ; linux/optimized/gen8_ppgtt.ll
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/udp.ll
 ; linux/optimized/vfs_inode.ll
@@ -27,10 +25,9 @@ entry:
   ret i32 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; linux/optimized/af_inet6.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/udp.ll
 ; opencv/optimized/phasecorr.cpp.ll
@@ -41,7 +38,7 @@ define i32 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8192
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = select i1 %5, i32 %0, i32 214
   ret i32 %6
 }

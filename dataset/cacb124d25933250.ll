@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/hb-ot-math.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp slt i32 %0, %1
@@ -48,7 +48,7 @@ entry:
 ; verilator/optimized/V3Reloop.cpp.ll
 ; wireshark/optimized/packet-bpdu.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp eq i32 %0, %1
@@ -56,22 +56,11 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; php/optimized/pcre2_dfa_match.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 1
-  %.not = icmp ugt i32 %0, %1
-  %4 = select i1 %.not, i32 0, i32 %3
-  ret i32 %4
-}
-
 ; 2 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp slt i32 %0, %1
@@ -82,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dnp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i32 %0, %1
@@ -93,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jdphuff.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %0, %1

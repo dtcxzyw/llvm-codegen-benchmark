@@ -30,7 +30,7 @@ entry:
   ret ptr %6
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; abc/optimized/wlcSim.c.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
@@ -44,8 +44,6 @@ entry:
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; openusd/optimized/AVIFImage.cpp.ll
-; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -68,27 +66,42 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
-; tev/optimized/ImageCanvas.cpp.ll
+; 2 occurrences:
+; openusd/optimized/AVIFImage.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000d(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = shl nuw nsw i64 %4, 2
+  %6 = getelementptr nuw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
+; tev/optimized/ImageCanvas.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw nsw i64 %4, 4
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %5 = shl nuw nsw i64 %4, 2
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

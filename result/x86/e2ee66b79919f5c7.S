@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	decl	%esi
 	leaq	24(%rdi,%rsi), %rax
 	retq

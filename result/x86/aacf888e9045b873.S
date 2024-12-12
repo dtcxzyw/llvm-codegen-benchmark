@@ -22,12 +22,6 @@ func0000000000000072:                   # @func0000000000000072
 	movslq	%edx, %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000074:                   # @func0000000000000074
-	decl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	leaq	(%rdi,%rax,8), %rax
-	retq
 func0000000000000052:                   # @func0000000000000052
 	decl	%edx
 	imull	%esi, %edx
@@ -40,29 +34,11 @@ func0000000000000044:                   # @func0000000000000044
 	movslq	%edx, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func00000000000000d2:                   # @func00000000000000d2
-	incl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	leaq	(%rdi,%rax,4), %rax
-	retq
-func0000000000000002:                   # @func0000000000000002
-	incl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	leaq	(%rdi,%rax,4), %rax
-	retq
-func00000000000000c2:                   # @func00000000000000c2
-	incl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	leaq	(%rdi,%rax,2), %rax
-	retq
 func00000000000000f2:                   # @func00000000000000f2
 	incl	%edx
 	imull	%esi, %edx
 	movslq	%edx, %rax
-	leaq	(%rdi,%rax,4), %rax
+	leaq	(%rdi,%rax,2), %rax
 	retq
 func0000000000000050:                   # @func0000000000000050
 	incl	%edx
@@ -83,6 +59,12 @@ func0000000000000070:                   # @func0000000000000070
 	addq	%rdi, %rax
 	retq
 func00000000000000c4:                   # @func00000000000000c4
+	incl	%edx
+	imull	%esi, %edx
+	movslq	%edx, %rax
+	leaq	(%rdi,%rax,8), %rax
+	retq
+func00000000000000c2:                   # @func00000000000000c2
 	incl	%edx
 	imull	%esi, %edx
 	movslq	%edx, %rax

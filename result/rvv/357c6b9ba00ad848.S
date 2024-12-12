@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vx	v10, v10, a0
 	li	a0, 32
 	vsra.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret
 func0000000000000008:                   # @func0000000000000008
 	bseti	a0, zero, 31
@@ -20,7 +20,7 @@ func0000000000000005:                   # @func0000000000000005
 	vadd.vx	v10, v10, a0
 	li	a0, 32
 	vsra.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a0, -1
@@ -29,7 +29,7 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vx	v10, v10, a0
 	li	a0, 32
 	vsra.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, -5

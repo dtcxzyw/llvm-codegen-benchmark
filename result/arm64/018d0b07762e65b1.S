@@ -1,40 +1,18 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	sshll2	v5.2d, v4.4s, #0
-	sshll	v4.2d, v4.2s, #0
-	cmgt	v2.2d, v4.2d, v2.2d
-	cmgt	v3.2d, v5.2d, v3.2d
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v2.16b
+	cmp	x1, w2, sxtw
+	csel	x0, x0, xzr, lt
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sshll2	v5.2d, v4.4s, #0
-	sshll	v4.2d, v4.2s, #0
-	cmgt	v2.2d, v2.2d, v4.2d
-	cmgt	v3.2d, v3.2d, v5.2d
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v2.16b
+	cmp	x1, w2, sxtw
+	csel	x0, x0, xzr, gt
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sshll2	v5.2d, v4.4s, #0
-	sshll	v4.2d, v4.2s, #0
-	cmhi	v2.2d, v2.2d, v4.2d
-	cmhi	v3.2d, v3.2d, v5.2d
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v2.16b
-	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-	sshll2	v5.2d, v4.4s, #0
-	sshll	v4.2d, v4.2s, #0
-	cmhi	v2.2d, v4.2d, v2.2d
-	cmhi	v3.2d, v5.2d, v3.2d
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v2.16b
+	cmp	x1, w2, sxtw
+	csel	x0, x0, xzr, hi
 	ret
                                         // -- End function

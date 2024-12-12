@@ -9,26 +9,21 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	$2146435072, %esi               # imm = 0x7FF00000
-	cmpl	$112197633, %esi                # imm = 0x6B00001
-	setb	%al
-	orb	%dil, %al
-	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	andl	$1835008, %esi                  # imm = 0x1C0000
 	cmpl	$1048577, %esi                  # imm = 0x100001
 	setae	%al
 	orb	%dil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
-	testl	$-4, %esi
-	setle	%al
+func0000000000000010:                   # @func0000000000000010
+	andl	$-65536, %esi                   # imm = 0xFFFF0000
+	cmpl	$-2143354879, %esi              # imm = 0x803F0001
+	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	andl	$-98305, %esi                   # imm = 0xFFFE7FFF
-	cmpl	$1024, %esi                     # imm = 0x400
-	setge	%al
+func0000000000000028:                   # @func0000000000000028
+	notl	%esi
+	testl	$49152, %esi                    # imm = 0xC000
+	setne	%al
 	orb	%dil, %al
 	retq

@@ -1,9 +1,3 @@
-func0000000000000001:                   # @func0000000000000001
-	movl	%esi, %eax
-	andb	$1, %al
-	shlb	$5, %al
-	orb	%dil, %al
-	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%esi, %eax
 	andb	$1, %al
@@ -22,4 +16,9 @@ func0000000000000000:                   # @func0000000000000000
 	setne	%al
 	leal	5(%rax,%rax,4), %eax
 	orl	%edi, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	andb	$1, %sil
+	leal	(%rsi,%rsi), %eax
+	orb	%dil, %al
 	retq

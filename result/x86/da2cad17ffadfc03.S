@@ -8,3 +8,12 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	%edx, %eax
+	shrb	$7, %al
+	addb	%dl, %al
+	sarb	%al
+	movsbl	%al, %eax
+	addl	%edi, %eax
+	addl	%esi, %eax
+	retq

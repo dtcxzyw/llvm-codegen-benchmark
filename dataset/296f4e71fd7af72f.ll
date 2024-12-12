@@ -27,7 +27,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = and i64 %5, 4294967295
-  %7 = or i64 %6, %0
+  %7 = or i64 %0, %6
   ret i64 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 2
   %6 = and i64 %5, 4294967295
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 

@@ -15,12 +15,12 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000588(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001718(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
   %4 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %5 = icmp ugt i32 %4, %0
-  %6 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %0
+  %6 = icmp samesign ugt i32 %4, %3
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }

@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000029a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000052a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = icmp slt i32 %2, 0
@@ -16,7 +16,7 @@ entry:
 ; opencv/optimized/grfmt_bmp.cpp.ll
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000062a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
   %3 = select i1 %.not, i32 1, i32 3

@@ -6,7 +6,7 @@
 ; qemu/optimized/hw_scsi_mptconfig.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 65535
   %3 = add nsw i32 %0, -9
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000314(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000624(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = add nsw i32 %0, -9001
@@ -27,11 +27,12 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/giaExist.c.ll
 ; wireshark/optimized/pcapng.c.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = add i32 %0, -1
@@ -43,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000204(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
   %3 = add i32 %0, -55
@@ -56,7 +57,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000194(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000324(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
   %3 = add nsw i32 %0, -6
@@ -68,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cppc_acpi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000404(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 4
   %3 = add i32 %0, -2
@@ -81,7 +82,7 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000224(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 4
   %3 = add nsw i32 %0, -1
@@ -94,7 +95,7 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000304(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 3
   %3 = add i32 %0, 127
@@ -106,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvscsu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000321(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
   %3 = icmp eq i32 %0, 7

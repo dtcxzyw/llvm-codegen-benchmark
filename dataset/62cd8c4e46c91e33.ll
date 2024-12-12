@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -11,7 +11,6 @@
 ; cpython/optimized/compile.ll
 ; cpython/optimized/formatter_unicode.ll
 ; icu/optimized/icuexportdata.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; openjdk/optimized/javaClasses.ll
 ; slurm/optimized/cgroup_v2.ll

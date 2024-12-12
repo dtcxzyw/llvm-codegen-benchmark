@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$1093, %eax                     # imm = 0x445
 	setb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movzwl	%di, %eax
 	shrl	$2, %eax
 	imull	$5243, %eax, %eax               # imm = 0x147B
@@ -15,7 +15,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpw	$10, %di
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movzwl	%di, %eax
 	shrl	$2, %eax
 	imull	$5243, %eax, %eax               # imm = 0x147B

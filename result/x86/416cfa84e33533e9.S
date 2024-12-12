@@ -1,16 +1,16 @@
-func0000000000000121:                   # @func0000000000000121
+func0000000000000241:                   # @func0000000000000241
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	cmovaeq	%rdx, %rax
 	subq	%rax, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	cmovaeq	%rdx, %rax
 	subq	%rax, %rsi
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

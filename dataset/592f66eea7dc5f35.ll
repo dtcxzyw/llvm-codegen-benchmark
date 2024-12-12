@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
-; linux/optimized/eht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll

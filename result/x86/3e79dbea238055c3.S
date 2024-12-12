@@ -1,4 +1,4 @@
-func00000000000002b4:                   # @func00000000000002b4
+func0000000000000574:                   # @func0000000000000574
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -6,7 +6,7 @@ func00000000000002b4:                   # @func00000000000002b4
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000216:                   # @func0000000000000216
+func0000000000000426:                   # @func0000000000000426
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -14,7 +14,7 @@ func0000000000000216:                   # @func0000000000000216
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000286:                   # @func0000000000000286
+func0000000000000506:                   # @func0000000000000506
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -22,7 +22,7 @@ func0000000000000286:                   # @func0000000000000286
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000294:                   # @func0000000000000294
+func0000000000000534:                   # @func0000000000000534
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -30,7 +30,7 @@ func0000000000000294:                   # @func0000000000000294
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000284:                   # @func0000000000000284
+func0000000000000504:                   # @func0000000000000504
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -38,7 +38,7 @@ func0000000000000284:                   # @func0000000000000284
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000296:                   # @func0000000000000296
+func0000000000000526:                   # @func0000000000000526
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -46,7 +46,7 @@ func0000000000000296:                   # @func0000000000000296
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func00000000000002b1:                   # @func00000000000002b1
+func0000000000000561:                   # @func0000000000000561
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -54,7 +54,7 @@ func00000000000002b1:                   # @func00000000000002b1
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000002bc:                   # @func00000000000002bc
+func000000000000056c:                   # @func000000000000056c
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -62,7 +62,7 @@ func00000000000002bc:                   # @func00000000000002bc
 	cmpl	%eax, %edi
 	setne	%al
 	retq
-func00000000000002b8:                   # @func00000000000002b8
+func0000000000000578:                   # @func0000000000000578
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax

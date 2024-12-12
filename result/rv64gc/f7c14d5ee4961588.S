@@ -5,12 +5,19 @@ func0000000000000003:                   # @func0000000000000003
 	slliw	a1, a1, 31
 	or	a0, a0, a1
 	ret
-func0000000000000043:                   # @func0000000000000043
+func0000000000000083:                   # @func0000000000000083
 	srlw	a1, a1, a2
 	andi	a1, a1, 1
 	seqz	a1, a1
 	subw	a0, a0, a1
 	addiw	a0, a0, 2
+	ret
+func00000000000000c3:                   # @func00000000000000c3
+	srlw	a1, a1, a2
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 255
+	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	srlw	a1, a1, a2
@@ -18,13 +25,7 @@ func0000000000000002:                   # @func0000000000000002
 	slli	a1, a1, 2
 	or	a0, a0, a1
 	ret
-func0000000000000063:                   # @func0000000000000063
-	srlw	a1, a1, a2
-	andi	a1, a1, 1
-	slli	a1, a1, 1
-	or	a0, a0, a1
-	ret
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	srlw	a1, a1, a2
 	andi	a1, a1, 1
 	slli	a1, a1, 6

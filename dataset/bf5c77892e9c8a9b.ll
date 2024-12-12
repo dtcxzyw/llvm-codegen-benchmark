@@ -34,7 +34,7 @@ define i8 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw i8 1, %1
   %3 = xor i8 %2, -1
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 
@@ -52,7 +52,7 @@ define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nsw i8 -1, %1
   %3 = xor i8 %2, -1
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 
@@ -63,7 +63,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 63, %1
   %3 = xor i8 %2, -1
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 

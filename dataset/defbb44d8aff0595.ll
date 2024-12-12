@@ -30,7 +30,7 @@
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/euf_egraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne ptr %0, %1
@@ -38,7 +38,7 @@ entry:
   ret i1 %5
 }
 
-; 74 occurrences:
+; 73 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
@@ -100,7 +100,6 @@ entry:
 ; openusd/optimized/material.cpp.ll
 ; php/optimized/zend_jit_vm_helpers.ll
 ; postgres/optimized/nodeModifyTable.ll
-; vcpkg/optimized/binarycaching.cpp.ll
 ; vcpkg/optimized/commands.ci.cpp.ll
 ; yosys/optimized/expose.ll
 ; yosys/optimized/freduce.ll
@@ -114,7 +113,7 @@ entry:
 ; z3/optimized/spacer_sym_mux.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %0, %1
@@ -137,7 +136,7 @@ entry:
 ; openjdk/optimized/loopopts.ll
 ; proj/optimized/conversion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %0, %1
@@ -150,7 +149,7 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; luau/optimized/Frontend.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq ptr %0, %1

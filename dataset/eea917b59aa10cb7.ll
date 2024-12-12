@@ -37,7 +37,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = add i64 %4, -8
   %6 = icmp ult i64 %5, 56
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

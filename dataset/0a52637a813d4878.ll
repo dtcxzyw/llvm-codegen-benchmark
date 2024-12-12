@@ -1,5 +1,5 @@
 
-; 429 occurrences:
+; 439 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/decimal.cc.ll
@@ -25,6 +25,8 @@
 ; assimp/optimized/XFileImporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; box2d/optimized/b2_polygon_shape.cpp.ll
 ; box2d/optimized/b2_prismatic_joint.cpp.ll
@@ -148,6 +150,8 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/jfdctflt.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -258,11 +262,6 @@
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ncnn/optimized/priorbox.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
-; ncnn/optimized/yolov3detectionoutput.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; nori/optimized/button.cpp.ll
 ; nori/optimized/imageview.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -427,13 +426,24 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0.000000e+00
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   ret float %3
 }
 

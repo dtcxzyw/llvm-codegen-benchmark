@@ -1,8 +1,10 @@
 
-; 134 occurrences:
+; 142 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/giaUtil.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; c3c/optimized/sema_decls.c.ll
 ; c3c/optimized/sema_initializers.c.ll
 ; clamav/optimized/extract.cpp.ll
@@ -26,14 +28,17 @@
 ; graphviz/optimized/graph_generator.c.ll
 ; graphviz/optimized/shapes.c.ll
 ; gromacs/optimized/domdec.cpp.ll
+; gromacs/optimized/gmx_confrms.cpp.ll
 ; gromacs/optimized/runner.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
 ; hdf5/optimized/H5Dint.c.ll
 ; hdf5/optimized/h5tools.c.ll
 ; hwloc/optimized/topology-linux.ll
+; hwloc/optimized/topology-xml.ll
 ; icu/optimized/filteredbrk.ll
 ; icu/optimized/loclikely.ll
 ; icu/optimized/uloc.ll
+; icu/optimized/uresbund.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libevent/optimized/evutil.c.ll
 ; libquic/optimized/json_parser.cc.ll
@@ -42,7 +47,6 @@
 ; linux/optimized/insn.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_dp_link_training.ll
-; linux/optimized/itmt.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/sg.ll
@@ -51,6 +55,7 @@
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/InferAddressSpaces.cpp.ll
+; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/Linux.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
@@ -58,6 +63,8 @@
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
@@ -78,11 +85,9 @@
 ; openmpi/optimized/nbc_ireduce.ll
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-lib-quic_record_tx.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
 ; openssl/optimized/libssl-shlib-extensions.ll
 ; openssl/optimized/libssl-shlib-quic_record_tx.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; openssl/optimized/quic_multistream_test-bin-quictestlib.ll
 ; openssl/optimized/quic_newcid_test-bin-quictestlib.ll
@@ -98,6 +103,7 @@
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/scanf.ll
 ; postgres/optimized/copyfromparse.ll
+; postgres/optimized/procarray.ll
 ; proj/optimized/generic_inverse.cpp.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; qemu/optimized/block_vhdx.c.ll
@@ -133,12 +139,14 @@
 ; z3/optimized/dl_mk_scale.cpp.ll
 ; z3/optimized/doc.cpp.ll
 ; z3/optimized/theory_array_full.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2064
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -147,6 +155,7 @@ entry:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; cmake/optimized/deflate.c.ll
 ; curl/optimized/libcurl_la-rtsp.ll
@@ -177,8 +186,7 @@ entry:
 ; libquic/optimized/deflate.c.ll
 ; linux/optimized/dm-table.ll
 ; linux/optimized/intel_vdsc.ll
-; linux/optimized/itmt.ll
-; linux/optimized/mpi-cmp.ll
+; linux/optimized/p4.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/page_alloc.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
@@ -194,6 +202,7 @@ entry:
 ; llvm/optimized/SemaCast.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; ncnn/optimized/pooling_x86_avx.cpp.ll
@@ -208,30 +217,29 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cms_smime.ll
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-shlib-extensions.ll
+; openssl/optimized/padlock-dso-e_padlock.ll
 ; openusd/optimized/inbetweenShape.cpp.ll
 ; openusd/optimized/schemaBase.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/cgi_main.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/tar.ll
-; php/optimized/zend_strtod.ll
-; pocketpy/optimized/lexer.cpp.ll
 ; postgres/optimized/copyfromparse.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/initdb.ll
-; postgres/optimized/procarray.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; qemu/optimized/block_vmdk.c.ll
+; redis/optimized/anet.ll
 ; ruby/optimized/prism.ll
 ; slurm/optimized/job_mgr.ll
-; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_voxel_render.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-cip.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zlib/optimized/deflate.c.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
@@ -243,7 +251,7 @@ entry:
   ret i1 %5
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
@@ -254,9 +262,10 @@ entry:
 ; cvc5/optimized/Solver.cc.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/object-file.ll
-; gromacs/optimized/mrcdensitymapheader.cpp.ll
 ; gromacs/optimized/runner.cpp.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
+; grpc/optimized/socket_utils_posix.cc.ll
+; grpc/optimized/tcp_socket_utils.cc.ll
 ; hdf5/optimized/h5tools.c.ll
 ; icu/optimized/filteredbrk.ll
 ; icu/optimized/unistr.ll
@@ -295,39 +304,67 @@ entry:
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
 
-; 27 occurrences:
+; 32 occurrences:
+; abc/optimized/deflate.c.ll
+; arrow/optimized/string-to-double.cc.ll
+; clamav/optimized/chmd.c.ll
+; cmake/optimized/deflate.c.ll
+; cmake/optimized/fastcover.c.ll
+; cvc5/optimized/sequences_rewriter.cpp.ll
+; double_conversion/optimized/string-to-double.cc.ll
+; flatbuffers/optimized/idl_gen_cpp.cpp.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
+; gromacs/optimized/deflate.c.ll
+; icu/optimized/double-conversion-string-to-double.ll
+; libquic/optimized/deflate.c.ll
+; linux/optimized/page_alloc.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/Linux.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/Sema.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; llvm/optimized/X86VZeroUpper.cpp.ll
+; openssl/optimized/padlock-dso-e_padlock.ll
+; openusd/optimized/string-to-double.cc.ll
+; postgres/optimized/indexcmds.ll
+; redis/optimized/hdr_histogram.ll
+; wireshark/optimized/packet-do-irp.c.ll
+; wireshark/optimized/packet-h265.c.ll
+; z3/optimized/theory_array_full.cpp.ll
+; zlib/optimized/deflate.c.ll
+; zstd/optimized/fastcover.c.ll
+; zxing/optimized/DMHighLevelEncoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, -2
+  %4 = or i1 %1, %3
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 13 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
 ; clamav/optimized/chmd.c.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
-; darktable/optimized/HasselbladDecompressor.cpp.ll
-; darktable/optimized/HasselbladLJpegDecoder.cpp.ll
-; darktable/optimized/KodakDecompressor.cpp.ll
-; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
-; darktable/optimized/PhaseOneDecompressor.cpp.ll
 ; darktable/optimized/SamsungV1Decompressor.cpp.ll
 ; darktable/optimized/SonyArw1Decompressor.cpp.ll
-; darktable/optimized/SonyArw2Decompressor.cpp.ll
-; darktable/optimized/ThreefrDecoder.cpp.ll
-; gromacs/optimized/mrcdensitymapheader.cpp.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/page_alloc.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/LoopUtils.cpp.ll
-; llvm/optimized/RISCVAsmParser.cpp.ll
-; opencv/optimized/affine_feature2d.cpp.ll
 ; openjdk/optimized/cfgnode.ll
 ; openjdk/optimized/jcmaster.ll
 ; php/optimized/pcre2_compile.ll
-; php/optimized/pcre2_match.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
-; stb/optimized/stb_image.c.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -337,10 +374,11 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; clamav/optimized/recvol.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; git/optimized/show-branch.ll
+; gromacs/optimized/cellsizes.cpp.ll
 ; icu/optimized/loclikely.ll
 ; icu/optimized/smpdtfmt.ll
 ; icu/optimized/uloc.ll
@@ -360,63 +398,49 @@ entry:
 define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 16
+  %4 = or i1 %1, %3
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 13 occurrences:
+; flac/optimized/picture.c.ll
+; linux/optimized/page_alloc.ll
+; llvm/optimized/ASTImporter.cpp.ll
+; llvm/optimized/Builtins.cpp.ll
+; llvm/optimized/PPMacroExpansion.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; openblas/optimized/cblas_daxpy.c.ll
+; openblas/optimized/daxpy.c.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wireshark/optimized/packet-hartip.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 2
   %4 = or i1 %3, %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
 
-; 47 occurrences:
-; abc/optimized/deflate.c.ll
-; arrow/optimized/string-to-double.cc.ll
-; clamav/optimized/chmd.c.ll
-; cmake/optimized/deflate.c.ll
-; cmake/optimized/fastcover.c.ll
-; cvc5/optimized/sequences_rewriter.cpp.ll
-; double_conversion/optimized/string-to-double.cc.ll
-; flac/optimized/picture.c.ll
-; flatbuffers/optimized/idl_gen_cpp.cpp.ll
-; flatbuffers/optimized/idl_parser.cpp.ll
-; glslang/optimized/hlslParseHelper.cpp.ll
-; gromacs/optimized/deflate.c.ll
-; icu/optimized/double-conversion-string-to-double.ll
-; libquic/optimized/deflate.c.ll
-; linux/optimized/page_alloc.ll
-; llvm/optimized/ASTImporter.cpp.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
-; llvm/optimized/Builtins.cpp.ll
-; llvm/optimized/Clang.cpp.ll
-; llvm/optimized/CoroFrame.cpp.ll
-; llvm/optimized/EarlyCSE.cpp.ll
-; llvm/optimized/LICM.cpp.ll
-; llvm/optimized/Linux.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/PPMacroExpansion.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/Sema.cpp.ll
-; llvm/optimized/SemaCodeComplete.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaLookup.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; llvm/optimized/X86VZeroUpper.cpp.ll
-; openblas/optimized/cblas_daxpy.c.ll
-; openblas/optimized/daxpy.c.ll
-; openusd/optimized/string-to-double.cc.ll
-; php/optimized/zend_highlight.ll
-; postgres/optimized/indexcmds.ll
-; redis/optimized/hdr_histogram.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wireshark/optimized/packet-do-irp.c.ll
-; wireshark/optimized/packet-h265.c.ll
-; wireshark/optimized/packet-hartip.c.ll
-; z3/optimized/theory_array_full.cpp.ll
-; zlib/optimized/deflate.c.ll
-; zstd/optimized/fastcover.c.ll
-; zxing/optimized/DMHighLevelEncoder.cpp.ll
+; 10 occurrences:
+; darktable/optimized/HasselbladDecompressor.cpp.ll
+; darktable/optimized/HasselbladLJpegDecoder.cpp.ll
+; darktable/optimized/KodakDecompressor.cpp.ll
+; darktable/optimized/NikonDecompressor.cpp.ll
+; darktable/optimized/PhaseOneDecompressor.cpp.ll
+; darktable/optimized/SonyArw2Decompressor.cpp.ll
+; darktable/optimized/ThreefrDecoder.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; opencv/optimized/affine_feature2d.cpp.ll
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, -10
+  %3 = icmp samesign ugt i32 %2, 4516
   %4 = or i1 %3, %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5

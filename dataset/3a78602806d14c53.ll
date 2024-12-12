@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/relocator.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -11,12 +11,13 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lstrlib.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

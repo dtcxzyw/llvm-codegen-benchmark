@@ -1,6 +1,8 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/saigSimFast.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; protobuf/optimized/arena.cc.ll
@@ -16,7 +18,7 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acecFadds.c.ll
@@ -24,7 +26,6 @@ entry:
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaNf.c.ll
-; abc/optimized/kitHop.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; icu/optimized/uset.ll
 ; sqlite/optimized/sqlite3.ll

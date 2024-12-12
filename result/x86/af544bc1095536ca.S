@@ -13,3 +13,8 @@ func0000000000000016:                   # @func0000000000000016
 	addq	$1023, %rax                     # imm = 0x3FF
 	shrq	$10, %rax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	leal	1(%rdi), %eax
+	addq	$-2, %rax
+	shrq	%rax
+	retq

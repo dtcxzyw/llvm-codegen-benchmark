@@ -1,5 +1,5 @@
 
-; 121 occurrences:
+; 118 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
@@ -31,7 +31,6 @@
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -44,7 +43,6 @@
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/fraClass.c.ll
 ; abc/optimized/fraigTable.c.ll
-; abc/optimized/fxuMatrix.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -84,7 +82,6 @@
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/mpmTruth.c.ll
-; abc/optimized/nmApi.c.ll
 ; abc/optimized/nmTable.c.ll
 ; abc/optimized/nwkMerge.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
@@ -130,23 +127,12 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; minetest/optimized/guiFormSpecMenu.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = urem i32 %2, %0
-  %4 = icmp ult i32 %3, 32768
-  ret i1 %4
-}
-
 ; 3 occurrences:
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; openjdk/optimized/macroAssembler_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 14
   %3 = urem i32 %2, %0
@@ -159,7 +145,7 @@ entry:
 ; oiio/optimized/psdinput.cpp.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = urem i32 %2, %0
@@ -184,7 +170,7 @@ entry:
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; opencv/optimized/fed.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = urem i32 %2, %0

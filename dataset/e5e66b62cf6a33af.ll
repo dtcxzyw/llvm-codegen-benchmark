@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
@@ -30,6 +30,7 @@
 ; php/optimized/fastcgi.ll
 ; php/optimized/pcre2_compile.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
+; qemu/optimized/migration_qemu-file.c.ll
 ; redis/optimized/listpack.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/vwr.c.ll
@@ -100,6 +101,19 @@ entry:
   %2 = sub nsw i64 %0, %1
   %3 = lshr i64 %2, 1
   %4 = trunc i64 %3 to i8
+  ret i8 %4
+}
+
+; 3 occurrences:
+; linux/optimized/byd.ll
+; linux/optimized/intel_dp_link_training.ll
+; linux/optimized/timer.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = lshr i64 %2, 63
+  %4 = trunc nuw nsw i64 %3 to i8
   ret i8 %4
 }
 

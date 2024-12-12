@@ -66,7 +66,7 @@ entry:
   ret i32 %3
 }
 
-; 83 occurrences:
+; 82 occurrences:
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -131,9 +131,7 @@ entry:
 ; rust-analyzer-rs/optimized/3enygpsog46rh747.ll
 ; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
 ; rust-analyzer-rs/optimized/3ipaq4e4ganfbkbl.ll
-; rust-analyzer-rs/optimized/3nihs2yq970i3wpb.ll
 ; rust-analyzer-rs/optimized/3smo919kcf8ucrac.ll
-; rust-analyzer-rs/optimized/4bvw1e690behm5u2.ll
 ; rust-analyzer-rs/optimized/4bwxw2k86ri9mh4p.ll
 ; rust-analyzer-rs/optimized/4jc1phjh70qbnowc.ll
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
@@ -150,6 +148,7 @@ entry:
 ; rust-analyzer-rs/optimized/sa24v3l2255jmvb.ll
 ; stockfish/optimized/search.ll
 ; yosys/optimized/maccmap.ll
+; zed-rs/optimized/1cwzjnrfv3j054rlb5kbvkj4j.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
@@ -158,7 +157,7 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cbaWriteVer.c.ll
 ; brotli/optimized/backward_references.c.ll
@@ -174,7 +173,6 @@ entry:
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; zxing/optimized/AZEncoder.cpp.ll
-; zxing/optimized/AZToken.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {

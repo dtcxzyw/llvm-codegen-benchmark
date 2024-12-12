@@ -1,23 +1,10 @@
 
-; 16 occurrences:
-; libwebp/optimized/upsampling.c.ll
-; libwebp/optimized/upsampling_sse2.c.ll
-; libwebp/optimized/yuv.c.ll
+; 3 occurrences:
 ; linux/optimized/pci.ll
-; llvm/optimized/BitcodeReader.cpp.ll
-; llvm/optimized/CGCUDANV.cpp.ll
-; llvm/optimized/CoroSplit.cpp.ll
-; llvm/optimized/ExpandVariadics.cpp.ll
-; llvm/optimized/FunctionImport.cpp.ll
-; llvm/optimized/FunctionImportUtils.cpp.ll
-; llvm/optimized/GlobalOpt.cpp.ll
-; llvm/optimized/IRMover.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
-; llvm/optimized/LowerEmuTLS.cpp.ll
-; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; ruby/optimized/pack.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -91
   %4 = icmp ult i32 %3, -26

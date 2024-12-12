@@ -1,40 +1,32 @@
-func000000000000016a:                   # @func000000000000016a
-	cmpl	%edx, %esi
-	setl	%cl
-	testq	%rdi, %rdi
-	setg	%al
-	andb	%cl, %al
-	retq
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	cmpl	%edx, %esi
 	sete	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
-	subl	%edx, %esi
-	testl	%esi, %esi
-	setg	%cl
-	cmpq	$2, %rdi
-	setae	%al
+func00000000000004ca:                   # @func00000000000004ca
+	cmpl	%edx, %esi
+	setl	%cl
+	testq	%rdi, %rdi
+	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	cmpl	%edx, %esi
 	setne	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000001a4:                   # @func00000000000001a4
+func0000000000000544:                   # @func0000000000000544
 	cmpl	%edx, %esi
 	setge	%cl
 	cmpq	$2, %rdi
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000581:                   # @func0000000000000581
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	setne	%cl
@@ -42,7 +34,7 @@ func00000000000001c1:                   # @func00000000000001c1
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	subl	%edx, %esi
 	testl	%esi, %esi
 	setg	%cl
@@ -50,7 +42,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	sets	%al
 	andb	%cl, %al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	subl	%edx, %esi
 	cmpl	$-1, %esi
 	setl	%cl
@@ -58,7 +50,7 @@ func000000000000006a:                   # @func000000000000006a
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000001ac:                   # @func00000000000001ac
+func000000000000054c:                   # @func000000000000054c
 	subl	%edx, %esi
 	cmpl	$9, %esi
 	setge	%cl

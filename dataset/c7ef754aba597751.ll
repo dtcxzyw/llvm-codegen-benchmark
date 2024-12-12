@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 44 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
 ; actix-rs/optimized/3tnlvci61w0nl5yv.ll
@@ -37,24 +37,30 @@
 ; rustfmt-rs/optimized/5genfix4t5066ss.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; wireshark/optimized/packet-tcp.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or i8 %1, %2
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; flatbuffers/optimized/flatc.cpp.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/yenta_socket.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %1, %2
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 

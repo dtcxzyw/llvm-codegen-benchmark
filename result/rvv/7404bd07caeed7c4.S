@@ -4,5 +4,5 @@ func0000000000000002:                   # @func0000000000000002
 	vmerge.vim	v12, v12, 1, v0
 	vmseq.vi	v0, v10, 0
 	vmerge.vim	v10, v12, 3, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

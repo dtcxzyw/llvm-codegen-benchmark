@@ -1,20 +1,32 @@
 
-; 7 occurrences:
-; lightgbm/optimized/dataset_loader.cpp.ll
+; 5 occurrences:
+; boost/optimized/alloc_lib.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = and i64 %1, 15
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+; 2 occurrences:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -8
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = and i64 %1, -8
+  %3 = and i64 %2, 7
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = and i64 %1, -4
   %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 8
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 

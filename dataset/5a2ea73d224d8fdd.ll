@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 51 occurrences:
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcHaig.c.ll
 ; abc/optimized/abcStrash.c.ll
@@ -9,7 +9,6 @@
 ; abseil-cpp/optimized/crc.cc.ll
 ; abseil-cpp/optimized/randen_slow.cc.ll
 ; arrow/optimized/crc32.cc.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/rijndael.c.ll
 ; clamav/optimized/rijndael.cpp.ll
@@ -31,16 +30,13 @@
 ; opencv/optimized/format_information.cpp.ll
 ; openssl/optimized/libcrypto-lib-aria.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-seed.ll
 ; openssl/optimized/libcrypto-lib-sm4.ll
 ; openssl/optimized/libcrypto-shlib-aria.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-seed.ll
 ; openssl/optimized/libcrypto-shlib-sm4.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; php/optimized/crypt_blowfish.ll
 ; php/optimized/crypt_freesec.ll

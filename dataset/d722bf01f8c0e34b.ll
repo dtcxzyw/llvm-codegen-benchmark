@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/block_splitter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 7
   %3 = lshr i64 %2, 3

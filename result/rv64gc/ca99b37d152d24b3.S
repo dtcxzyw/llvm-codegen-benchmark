@@ -20,24 +20,35 @@ func0000000000000044:                   # @func0000000000000044
 	li	a1, 3
 	addw	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func000000000000014c:                   # @func000000000000014c
 	sext.w	a1, a1
-	beqz	a1, .LBB2_2
-	li	a1, 97
+	li	a2, 182
+	bltu	a1, a2, .LBB2_2
+	li	a1, 197
 	addw	a0, a0, a1
 	ret
 .LBB2_2:
-	li	a1, 65
+	li	a1, 123
 	addw	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000014:                   # @func0000000000000014
 	sext.w	a1, a1
-	li	a2, 62
-	bltu	a1, a2, .LBB3_2
-	li	a1, 193
+	beqz	a1, .LBB3_2
+	li	a1, 97
 	addw	a0, a0, a1
 	ret
 .LBB3_2:
+	li	a1, 65
+	addw	a0, a0, a1
+	ret
+func0000000000000148:                   # @func0000000000000148
+	sext.w	a1, a1
+	li	a2, 62
+	bltu	a1, a2, .LBB4_2
+	li	a1, 193
+	addw	a0, a0, a1
+	ret
+.LBB4_2:
 	li	a1, 129
 	addw	a0, a0, a1
 	ret

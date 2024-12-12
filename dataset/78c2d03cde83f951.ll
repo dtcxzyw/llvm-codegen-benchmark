@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_colorcorrection.c.ll
@@ -14,7 +14,6 @@
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; recastnavigation/optimized/ValueHistory.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind

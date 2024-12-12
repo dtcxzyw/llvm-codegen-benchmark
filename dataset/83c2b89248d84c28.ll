@@ -1,10 +1,9 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; git/optimized/object-name.ll
 ; linux/optimized/rx.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
-; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; redis/optimized/bio.ll
 ; ruby/optimized/utf_16_32.ll

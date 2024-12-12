@@ -11,7 +11,7 @@
 ; openusd/optimized/restoration.c.ll
 ; openusd/optimized/warped_motion.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i16 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = icmp slt i32 %0, 0
@@ -49,7 +49,7 @@ entry:
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i16 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = icmp slt i32 %0, 0
@@ -73,7 +73,7 @@ entry:
 ; postgres/optimized/file.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i16 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = icmp eq i32 %0, 14
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i16 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = icmp eq i32 %0, 0
@@ -142,7 +142,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/netpoll.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i16 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = icmp ugt i32 %0, -65537
@@ -153,7 +153,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/cecal.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i16 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
   %3 = icmp eq i32 %0, 1460

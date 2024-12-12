@@ -19,7 +19,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	vpshufd	$245, %xmm1, %xmm2              # xmm2 = xmm1[1,1,3,3]
 	vpbroadcastd	.LCPI0_0(%rip), %xmm3   # xmm3 = [2290649225,2290649225,2290649225,2290649225]
 	vpmuldq	%xmm3, %xmm2, %xmm2

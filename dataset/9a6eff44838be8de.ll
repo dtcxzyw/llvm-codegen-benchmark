@@ -1,5 +1,5 @@
 
-; 99 occurrences:
+; 102 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -73,12 +73,13 @@
 ; linux/optimized/dmar.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/io_apic.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/StackMaps.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
@@ -99,13 +100,15 @@
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 49
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
@@ -123,7 +126,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 53
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }
@@ -143,11 +146,12 @@ entry:
   ret i64 %7
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; lief/optimized/Builder.cpp.ll
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/ASTContext.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -187,7 +191,7 @@ entry:
   %3 = and i32 %2, 128
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 %4, 56
-  %6 = or i64 %5, %1
+  %6 = or i64 %1, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }

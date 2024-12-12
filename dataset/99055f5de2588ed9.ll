@@ -45,15 +45,14 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add i32 %3, 1
   ret i32 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; brotli/optimized/encode.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
-; cpython/optimized/ceval.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; linux/optimized/cipso_ipv4.ll
 ; luajit/optimized/lj_strscan.ll
@@ -71,13 +70,15 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = add nuw nsw i32 %3, 6
   ret i32 %4
 }
 
-; 183 occurrences:
+; 185 occurrences:
 ; abc/optimized/abcRr.c.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -264,7 +265,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nsw i32 %3, -1
   ret i32 %4
 }
@@ -315,7 +316,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 14
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add i32 %3, -1
   ret i32 %4
 }
@@ -327,7 +328,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = add nuw i32 %3, 1
   ret i32 %4
 }
@@ -340,7 +341,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = add nuw nsw i32 %3, 1
   ret i32 %4
 }
@@ -353,7 +354,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 10
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = add nuw nsw i32 %3, 1
   ret i32 %4
 }

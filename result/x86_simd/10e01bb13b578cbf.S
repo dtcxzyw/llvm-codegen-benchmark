@@ -2,7 +2,7 @@
 	.quad	48                              # 0x30
 .LCPI0_1:
 	.quad	1                               # 0x1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsllq	$4, %ymm1, %ymm1
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlvq	%ymm1, %ymm0, %ymm0
@@ -14,7 +14,7 @@ func0000000000000031:                   # @func0000000000000031
 	.quad	62                              # 0x3e
 .LCPI1_1:
 	.quad	1                               # 0x1
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	vpaddq	%ymm1, %ymm1, %ymm1
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlvq	%ymm1, %ymm0, %ymm0
@@ -26,7 +26,7 @@ func000000000000003c:                   # @func000000000000003c
 	.quad	62                              # 0x3e
 .LCPI2_1:
 	.quad	1                               # 0x1
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	vpaddq	%ymm1, %ymm1, %ymm1
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlvq	%ymm1, %ymm0, %ymm0
@@ -38,7 +38,7 @@ func00000000000000b1:                   # @func00000000000000b1
 	.quad	62                              # 0x3e
 .LCPI3_1:
 	.quad	3                               # 0x3
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vpaddq	%ymm1, %ymm1, %ymm1
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlvq	%ymm1, %ymm0, %ymm0
@@ -90,7 +90,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsllq	$3, %ymm1, %ymm1
 	vpandq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlvq	%ymm1, %ymm0, %ymm0

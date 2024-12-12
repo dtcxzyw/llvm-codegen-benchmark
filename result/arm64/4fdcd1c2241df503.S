@@ -1,12 +1,8 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sub	v6.2d, v1.2d, v5.2d
-	sub	v7.2d, v0.2d, v4.2d
-	cmhi	v6.2d, v3.2d, v6.2d
-	cmhi	v7.2d, v2.2d, v7.2d
-	add	v3.2d, v5.2d, v3.2d
-	add	v2.2d, v4.2d, v2.2d
-	bif	v1.16b, v3.16b, v6.16b
-	bif	v0.16b, v2.16b, v7.16b
+	sub	x8, x0, x2
+	add	x9, x2, x1
+	cmp	x8, x1
+	csel	x0, x0, x9, lo
 	ret
                                         // -- End function

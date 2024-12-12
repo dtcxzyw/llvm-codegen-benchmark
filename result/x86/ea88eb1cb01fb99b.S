@@ -6,7 +6,7 @@ func000000000000000b:                   # @func000000000000000b
 	addl	%edi, %eax
 	andl	$1048575, %eax                  # imm = 0xFFFFF
 	retq
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	movzbl	%sil, %ecx
 	xorl	%eax, %eax
 	cmpl	$127, %ecx
@@ -14,7 +14,7 @@ func0000000000000023:                   # @func0000000000000023
 	addl	%edi, %eax
 	andl	$31, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	movzbl	%sil, %ecx
 	xorl	%eax, %eax
 	cmpl	$127, %ecx

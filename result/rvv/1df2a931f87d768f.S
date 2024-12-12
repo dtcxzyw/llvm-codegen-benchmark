@@ -17,7 +17,7 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vi	v10, v10, 1
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -27,7 +27,7 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vi	v10, v10, 7
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000002:                   # @func0000000000000002
 	bseti	a0, zero, 38
@@ -38,5 +38,5 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vi	v10, v10, 1
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

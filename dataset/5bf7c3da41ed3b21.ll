@@ -12,7 +12,7 @@ entry:
   ret i64 %6
 }
 
-; 25 occurrences:
+; 31 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
@@ -28,7 +28,6 @@ entry:
 ; nuttx/optimized/fs_anonmap.c.ll
 ; opencv/optimized/bitstrm.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
-; opencv/optimized/erfilter.cpp.ll
 ; openjdk/optimized/splashscreen_impl.ll
 ; openmpi/optimized/opal_datatype_fake_stack.ll
 ; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
@@ -38,6 +37,13 @@ entry:
 ; sentencepiece/optimized/strutil.cc.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -48,10 +54,11 @@ entry:
   ret i64 %6
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; git/optimized/xmerge.ll
 ; libquic/optimized/asn1_par.c.ll
 ; libquic/optimized/tasn_dec.c.ll
+; lvgl/optimized/lv_spinbox.ll
 ; lz4/optimized/lz4hc.c.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
@@ -93,7 +100,7 @@ entry:
   ret i64 %6
 }
 
-; 63 occurrences:
+; 62 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -156,14 +163,13 @@ entry:
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; yosys/optimized/ql_dsp_simd.ll
-; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 29
   %5 = ashr i64 %4, 32
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

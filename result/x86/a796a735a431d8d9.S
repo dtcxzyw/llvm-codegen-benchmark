@@ -16,6 +16,12 @@ func0000000000000010:                   # @func0000000000000010
 	cmovaeq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	xorl	%eax, %eax
+	testb	%dl, %dl
+	cmovneq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	cmpb	$10, %dl
 	movq	$-48, %rax

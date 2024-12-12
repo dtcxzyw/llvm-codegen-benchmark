@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; slurm/optimized/print_fields.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = tail call i32 @llvm.abs.i32(i32 %0, i1 true)

@@ -20,10 +20,11 @@ func0000000000000018:                   # @func0000000000000018
 	imulq	$-224, %rsi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
-	andl	$1, %edx
-	leaq	(%rdx,%rdx,2), %rax
-	addq	%rdi, %rax
-	leaq	(%rsi,%rsi,2), %rcx
-	leaq	1(%rax,%rcx), %rax
+func000000000000003c:                   # @func000000000000003c
+	notb	%dl
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	leaq	(%rdi,%rax,4), %rax
+	imulq	$152, %rsi, %rcx
+	leaq	348(%rcx,%rax), %rax
 	retq

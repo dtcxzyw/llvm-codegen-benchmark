@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	xorl	%eax, %eax
 	testq	%rdi, %rdi
 	setne	%al
@@ -7,7 +7,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	movl	$281, %eax                      # imm = 0x119
 	cmovel	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorl	%eax, %eax
 	cmpq	$3, %rdi
 	sete	%al

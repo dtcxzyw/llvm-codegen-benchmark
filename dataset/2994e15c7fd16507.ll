@@ -83,8 +83,8 @@
 ; linux/optimized/ahci.ll
 ; linux/optimized/intel_dp_hdcp.ll
 ; linux/optimized/io_apic.ll
-; linux/optimized/sd.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; mitsuba3/optimized/compiler.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_net_rocker_rocker_of_dpa.c.ll
@@ -128,7 +128,7 @@ entry:
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/net_net.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = lshr i32 %0, 31
@@ -140,11 +140,11 @@ entry:
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; openjdk/optimized/jquant2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = lshr exact i32 %0, 1
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -254,11 +254,11 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = lshr i32 %0, 16
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -267,7 +267,7 @@ entry:
 ; nanobind/optimized/nb_type.cpp.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = lshr exact i32 %0, 5
@@ -286,22 +286,33 @@ entry:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = lshr i32 %0, 24
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-ldp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000058(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = lshr i32 %0, 3
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/sd.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = lshr exact i32 %0, 5
+  %4 = icmp eq i32 %3, %2
   ret i1 %4
 }
 

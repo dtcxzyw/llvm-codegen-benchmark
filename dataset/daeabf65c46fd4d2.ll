@@ -40,6 +40,21 @@ entry:
   ret i64 %4
 }
 
+; 5 occurrences:
+; boost/optimized/alloc_lib.ll
+; cmake/optimized/huf_decompress.c.ll
+; libjpeg-turbo/optimized/jcsample.c.ll
+; opencv/optimized/gfluidbuffer.cpp.ll
+; zstd/optimized/huf_decompress.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 3
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 %3, %0
+  ret i64 %4
+}
+
 ; 3 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
 ; llvm/optimized/X86PartialReduction.cpp.ll
@@ -73,20 +88,6 @@ entry:
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 4 occurrences:
-; cmake/optimized/huf_decompress.c.ll
-; libjpeg-turbo/optimized/jcsample.c.ll
-; opencv/optimized/gfluidbuffer.cpp.ll
-; zstd/optimized/huf_decompress.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 2
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %3, %0
   ret i64 %4

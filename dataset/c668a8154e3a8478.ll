@@ -1,43 +1,34 @@
 
-; 13 occurrences:
-; linux/optimized/fonts.ll
+; 10 occurrences:
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/FunctionComparator.cpp.ll
 ; llvm/optimized/IRMover.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; mitsuba3/optimized/shapegroup.cpp.ll
-; php/optimized/pcre2_dfa_match.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 127
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
-; 37 occurrences:
-; abseil-cpp/optimized/ascii_test.cc.ll
+; 27 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
-; eastl/optimized/EAString.cpp.ll
-; eastl/optimized/TestHash.cpp.ll
 ; entt/optimized/group.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; gromacs/optimized/parallel_3dfft.cpp.ll
-; linux/optimized/xt_conntrack.ll
-; llvm/optimized/AArch64ConditionalCompares.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
-; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
@@ -47,18 +38,14 @@ entry:
 ; llvm/optimized/Type.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
-; luau/optimized/isocline.c.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; nori/optimized/parser.cpp.ll
 ; openjdk/optimized/method.ll
-; openjdk/optimized/methodHandles.ll
 ; qemu/optimized/block_nbd.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; ruby/optimized/regparse.ll
-; yosys/optimized/extract_fa.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
@@ -67,13 +54,14 @@ entry:
   ret i1 %3
 }
 
-; 501 occurrences:
+; 509 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/cecSolve.c.ll
+; abc/optimized/cuddSat.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/mvcUtils.c.ll
@@ -86,10 +74,18 @@ entry:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/diff.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/numeric.ll
+; boost/optimized/rational.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; c3c/optimized/codegen_general.c.ll
-; c3c/optimized/number.c.ll
 ; clamav/optimized/strfn.cpp.ll
 ; cmake/optimized/core.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
@@ -198,10 +194,7 @@ entry:
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/intel_vblank.ll
 ; linux/optimized/mcast.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mmap.ll
-; linux/optimized/mpi-cmp.ll
-; linux/optimized/mpi-div.ll
 ; linux/optimized/pipe.ll
 ; linux/optimized/selinuxfs.ll
 ; linux/optimized/sit.ll
@@ -348,6 +341,8 @@ entry:
 ; luau/optimized/Variant.test.cpp.ll
 ; luau/optimized/VecDeque.test.cpp.ll
 ; luau/optimized/VisitType.test.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_tabview.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -480,8 +475,6 @@ entry:
 ; openusd/optimized/testSdfPathExpression.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; openusd/optimized/write.c.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
 ; php/optimized/dfa_pass.ll
 ; php/optimized/pcre2_auto_possess.ll
 ; php/optimized/pcre2_dfa_match.ll
@@ -495,6 +488,7 @@ entry:
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
+; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/hw_usb_dev-storage.c.ll
 ; qemu/optimized/hw_virtio_virtio-iommu.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
@@ -568,16 +562,17 @@ entry:
 ; z3/optimized/spacer_legacy_mev.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
-; 479 occurrences:
+; 494 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -587,6 +582,17 @@ entry:
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/saigInd.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/graphml.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/numeric.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; c3c/optimized/codegen_general.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/cmJSONState.cxx.ll
@@ -713,11 +719,9 @@ entry:
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/drm_mode_config.ll
 ; linux/optimized/drm_property.ll
-; linux/optimized/eee.ll
 ; linux/optimized/eeepc-laptop.ll
 ; linux/optimized/exit.ll
 ; linux/optimized/filemap.ll
-; linux/optimized/gss_krb5_unseal.ll
 ; linux/optimized/gss_krb5_wrap.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/hrtimer.ll
@@ -733,9 +737,7 @@ entry:
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/mdio_bus.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mmap.ll
-; linux/optimized/pause.ll
 ; linux/optimized/pci-acpi.ll
 ; linux/optimized/pipe.ll
 ; linux/optimized/tg3.ll
@@ -853,6 +855,9 @@ entry:
 ; luau/optimized/Unifier2.test.cpp.ll
 ; luau/optimized/Variant.test.cpp.ll
 ; luau/optimized/VisitType.test.cpp.ll
+; lvgl/optimized/lv_event.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_tabview.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/content.cpp.ll
@@ -977,6 +982,7 @@ entry:
 ; postgres/optimized/syslogger.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
+; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; qemu/optimized/hw_usb_dev-storage.c.ll
 ; qemu/optimized/net_can_can_core.c.ll
@@ -1057,15 +1063,19 @@ entry:
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
-; 47 occurrences:
+; 50 occurrences:
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -1082,12 +1092,12 @@ entry:
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/mdio_bus.ll
-; linux/optimized/mpi-cmp.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
 ; llvm/optimized/SpillPlacement.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll
 ; opencv/optimized/face_detect.cpp.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll
@@ -1113,15 +1123,20 @@ entry:
 ; z3/optimized/theory_dense_diff_logic.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
-; 50 occurrences:
+; 51 occurrences:
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/eager_solver.cpp.ll
 ; cvc5/optimized/linear_equality.cpp.ll
@@ -1132,7 +1147,6 @@ entry:
 ; linux/optimized/build_utility.ll
 ; linux/optimized/exit.ll
 ; linux/optimized/fair.ll
-; linux/optimized/fonts.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dpll.ll
@@ -1176,6 +1190,32 @@ entry:
 define i1 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
+  %3 = xor i1 %2, %0
+  ret i1 %3
+}
+
+; 6 occurrences:
+; eastl/optimized/TestHash.cpp.ll
+; linux/optimized/xt_conntrack.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; luau/optimized/isocline.c.ll
+; openjdk/optimized/methodHandles.ll
+; yosys/optimized/extract_fa.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 398
+  %3 = xor i1 %0, %2
+  ret i1 %3
+}
+
+; 2 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; php/optimized/pcre2_dfa_match.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 58
   %3 = xor i1 %2, %0
   ret i1 %3
 }

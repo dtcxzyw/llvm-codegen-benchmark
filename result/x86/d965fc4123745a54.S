@@ -4,7 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	leal	-1(%rdx), %eax
 	shrq	$63, %rsi
 	addq	%rsi, %rax
@@ -16,7 +16,7 @@ func00000000000000d0:                   # @func00000000000000d0
 	movslq	%edx, %rax
 	leaq	2(%rsi,%rax,2), %rax
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000000df:                   # @func00000000000000df
 	andq	$-2, %rsi
 	addq	%rdi, %rsi
 	movslq	%edx, %rax

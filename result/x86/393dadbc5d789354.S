@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$26, %esi
 	cmovbl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movzwl	%dx, %eax
 	testl	%esi, %esi
 	cmovel	%edi, %eax
@@ -22,9 +22,4 @@ func000000000000000c:                   # @func000000000000000c
 	movzwl	%dx, %eax
 	testl	%esi, %esi
 	cmovnel	%edi, %eax
-	retq
-func0000000000000018:                   # @func0000000000000018
-	movzwl	%dx, %eax
-	cmpl	$189, %esi
-	cmovael	%edi, %eax
 	retq

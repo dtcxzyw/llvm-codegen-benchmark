@@ -13,20 +13,30 @@ define i1 @func0000000000000002(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
-; linux/optimized/mlme.ll
+; 1 occurrences:
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
-; verilator/optimized/V3Param.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 7
   %4 = icmp ugt i8 %3, %1
   %5 = or i1 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/mlme.ll
+; verilator/optimized/V3Param.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 1
+  %4 = icmp samesign ugt i8 %3, %1
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

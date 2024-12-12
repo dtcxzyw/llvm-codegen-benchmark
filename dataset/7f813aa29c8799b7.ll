@@ -13,9 +13,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; postgres/optimized/array_userfuncs.ll
-; postgres/optimized/fsmpage.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:

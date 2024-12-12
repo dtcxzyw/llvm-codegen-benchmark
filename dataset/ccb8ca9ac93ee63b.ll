@@ -35,10 +35,10 @@ entry:
 ; linux/optimized/xfrm_input.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = icmp ult i32 %3, 256
+  %4 = icmp samesign ult i32 %3, 256
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 0
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/lossless.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp ult i32 %3, 256

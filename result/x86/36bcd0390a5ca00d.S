@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edi, %ecx
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movl	%edi, %eax
 	andb	$1, %al
 	andl	$1, %edi

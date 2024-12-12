@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 1
@@ -16,7 +16,7 @@ entry:
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 1
@@ -36,12 +36,12 @@ entry:
 ; spike/optimized/vmaxu_vx.ll
 ; spike/optimized/vmsgtu_vx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 255
   %4 = zext i16 %0 to i32
-  %5 = icmp ult i32 %3, %4
+  %5 = icmp samesign ult i32 %3, %4
   ret i1 %5
 }
 
@@ -54,12 +54,12 @@ entry:
 ; spike/optimized/vminu_vx.ll
 ; spike/optimized/vmsltu_vx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 65535
   %4 = zext i16 %0 to i32
-  %5 = icmp ugt i32 %3, %4
+  %5 = icmp samesign ugt i32 %3, %4
   ret i1 %5
 }
 
@@ -69,36 +69,24 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmsleu_vx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000019(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 65535
   %4 = zext i16 %0 to i32
-  %5 = icmp uge i32 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/nf_conntrack_proto.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i16 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 255
-  %4 = zext i16 %0 to i32
-  %5 = icmp eq i32 %3, %4
+  %5 = icmp samesign uge i32 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/trace_events_filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000015(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 65535
   %4 = zext i16 %0 to i32
-  %5 = icmp ule i32 %3, %4
+  %5 = icmp samesign ule i32 %3, %4
   ret i1 %5
 }
 

@@ -8,7 +8,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003e1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 1, %3

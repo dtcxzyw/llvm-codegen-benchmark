@@ -10,7 +10,7 @@
 define i1 @func0000000000000004(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fcmp ogt float %3, 5.000000e-01
   ret i1 %4
 }
@@ -22,7 +22,7 @@ entry:
 define i1 @func0000000000000002(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fcmp olt float %3, 3.600000e+02
   ret i1 %4
 }
@@ -36,7 +36,7 @@ entry:
 define i1 @func000000000000000c(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fcmp oge float %3, 3.600000e+02
   ret i1 %4
 }
@@ -51,7 +51,7 @@ entry:
 define i1 @func0000000000000003(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fcmp ult float %3, 1.000000e+00
   ret i1 %4
 }
@@ -62,7 +62,7 @@ entry:
 define i1 @func0000000000000007(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fcmp une float %3, 0.000000e+00
   ret i1 %4
 }
@@ -74,7 +74,7 @@ entry:
 define i1 @func0000000000000005(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fcmp ugt float %3, 0.000000e+00
   ret i1 %4
 }

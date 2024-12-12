@@ -23,8 +23,3 @@ func0000000000000007:                   # @func0000000000000007
 	andl	$1, %edi
 	leal	(%rdi,%rsi), %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	movzwl	%si, %eax
-	andl	$-268435456, %edi               # imm = 0xF0000000
-	orl	%edi, %eax
-	retq

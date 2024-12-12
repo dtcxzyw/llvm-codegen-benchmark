@@ -9,7 +9,7 @@ entry:
   %4 = uitofp i32 %3 to float
   %5 = uitofp i32 %1 to float
   %6 = fdiv float %5, %4
-  %7 = fmul float %6, %0
+  %7 = fmul float %0, %6
   ret float %7
 }
 

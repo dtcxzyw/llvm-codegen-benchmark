@@ -1,10 +1,11 @@
 
-; 51 occurrences:
+; 53 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/uri.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/port_rule.ll
 ; coreutils-rs/optimized/1vrxha14kpfjcqak.ll
 ; coreutils-rs/optimized/jdhpc8bthd0ylxt.ll
 ; cpython/optimized/_codecs_iso2022.ll
@@ -43,12 +44,13 @@
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; vcpkg/optimized/files.cpp.ll
 ; verilator/optimized/V3EmitCFunc.cpp.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; wireshark/optimized/packet-epl.c.ll
+; wireshark/optimized/packet-ethercat-datagram.c.ll
 ; wireshark/optimized/packet-h265.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
-; wireshark/optimized/packet-netlink-netfilter.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind
@@ -59,8 +61,7 @@ entry:
   ret i16 %2
 }
 
-; 21 occurrences:
-; clamav/optimized/adc.c.ll
+; 20 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; icu/optimized/unames.ll
 ; linux/optimized/i2c-core-smbus.ll
@@ -89,13 +90,12 @@ entry:
   ret i16 %2
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/intel_dsi_vbt.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; php/optimized/php_http_parser.ll
 ; postgres/optimized/numutils.ll
 ; quantlib/optimized/dataparsers.ll
-; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i8 %0) #0 {
@@ -105,8 +105,7 @@ entry:
   ret i16 %2
 }
 
-; 3 occurrences:
-; clamav/optimized/adc.c.ll
+; 2 occurrences:
 ; regex-rs/optimized/43rm3k0zg7aeemwj.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; Function Attrs: nounwind
@@ -117,7 +116,7 @@ entry:
   ret i16 %2
 }
 
-; 21 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -133,12 +132,17 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
 ; regex-rs/optimized/43rm3k0zg7aeemwj.ll
+; turborepo-rs/optimized/7r1ggvy9mvit53mkmhrbr5w1w.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wireshark/optimized/packet-babel.c.ll
 ; wireshark/optimized/packet-cp2179.c.ll
 ; wireshark/optimized/packet-ecmp.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/wireshark_main_window.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i8 %0) #0 {
 entry:

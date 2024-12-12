@@ -14,22 +14,13 @@ entry:
   ret i1 %6
 }
 
-; 18 occurrences:
+; 9 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cpython/optimized/compile.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; icu/optimized/ucnvisci.ll
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; wireshark/optimized/packet-ftdi-mpsse.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
@@ -38,7 +29,7 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
   %4 = icmp ne i8 %3, 15
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }

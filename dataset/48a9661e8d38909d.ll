@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 7
   %3 = icmp ugt i64 %0, 96
@@ -10,12 +10,10 @@ entry:
   ret i1 %4
 }
 
-; 34 occurrences:
-; abseil-cpp/optimized/symbolize.cc.ll
+; 32 occurrences:
 ; cmake/optimized/http.c.ll
 ; curl/optimized/libcurl_la-http.ll
 ; icu/optimized/csrucode.ll
-; linux/optimized/probe_roms.ll
 ; linux/optimized/signal_64.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/AArch64MacroFusion.cpp.ll
@@ -46,7 +44,7 @@ entry:
 ; wireshark/optimized/packet-cipsafety.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, -29921
   %3 = icmp eq i64 %0, 10
@@ -59,7 +57,7 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i16 %1) #0 {
+define i1 @func000000000000018a(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = icmp sgt i64 %0, -1
@@ -67,7 +65,7 @@ entry:
   ret i1 %4
 }
 
-; 75 occurrences:
+; 74 occurrences:
 ; lief/optimized/ResourcesParser.cpp.ll
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/vmscan.ll
@@ -83,7 +81,6 @@ entry:
 ; llvm/optimized/ParseStmt.cpp.ll
 ; llvm/optimized/ParseTemplate.cpp.ll
 ; llvm/optimized/ParseTentative.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
@@ -144,7 +141,7 @@ entry:
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp ne i64 %0, 0
@@ -159,7 +156,7 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 5
   %3 = icmp ne i64 %0, -9223372036854775807
@@ -172,7 +169,7 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/slurm_opt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i16 %1) #0 {
+define i1 @func000000000000014c(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp sgt i16 %1, 0
   %3 = icmp ne i64 %0, 0
@@ -183,7 +180,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, -1
   %3 = icmp ult i64 %0, -19
@@ -194,10 +191,34 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, -1
   %3 = icmp ugt i64 %0, 9
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 3 occurrences:
+; libquic/optimized/ssl_lib.c.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; postgres/optimized/xlogreader.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i64 %0, i16 %1) #0 {
+entry:
+  %2 = icmp ult i16 %1, -258
+  %3 = icmp eq i64 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; libquic/optimized/ssl_lib.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, i16 %1) #0 {
+entry:
+  %2 = icmp ugt i16 %1, 770
+  %3 = icmp eq i64 %0, 0
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
@@ -213,7 +234,7 @@ entry:
 ; llvm/optimized/ParsePragma.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = icmp eq i64 %0, 0
@@ -239,7 +260,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp ult i64 %0, 16
@@ -250,7 +271,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i16 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 120
   %3 = icmp ne i64 %0, 1
@@ -258,22 +279,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; postgres/optimized/xlogreader.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i16 %1) #0 {
-entry:
-  %2 = icmp ult i16 %1, 173
-  %3 = icmp eq i64 %0, 2
-  %4 = select i1 %3, i1 %2, i1 false
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 27
   %3 = icmp ugt i64 %0, 1
@@ -284,10 +293,10 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000158(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp sgt i16 %1, 0
-  %3 = icmp ugt i64 %0, 1
+  %3 = icmp samesign ugt i64 %0, 1
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
@@ -295,21 +304,10 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp sgt i16 %1, 0
   %3 = icmp eq i64 %0, 1
-  %4 = select i1 %3, i1 %2, i1 false
-  ret i1 %4
-}
-
-; 1 occurrences:
-; linux/optimized/probe_roms.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i16 %1) #0 {
-entry:
-  %2 = icmp ugt i16 %1, 2
-  %3 = icmp eq i64 %0, 0
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

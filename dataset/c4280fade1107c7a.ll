@@ -1,6 +1,8 @@
 
-; 88 occurrences:
+; 91 occurrences:
+; boost/optimized/sort_by_side.ll
 ; brotli/optimized/encode.c.ll
+; clamav/optimized/cabd.c.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
 ; icu/optimized/collationkeys.ll
 ; linux/optimized/blk-mq.ll
@@ -60,6 +62,7 @@
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86WinFixupBufferSecurityCheck.cpp.ll
 ; llvm/optimized/XCore.cpp.ll
+; lvgl/optimized/lv_anim.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; nori/optimized/colorwheel.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
@@ -92,7 +95,7 @@
 define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -129,7 +132,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -145,7 +148,7 @@ entry:
 define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -165,21 +168,34 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/Clang.cpp.ll
+; 3 occurrences:
+; clamav/optimized/cabd.c.ll
+; slurm/optimized/scancel.ll
 ; yosys/optimized/register.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 1
+  %3 = icmp samesign ugt i32 %2, 11
   %4 = or i1 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 44 occurrences:
-; brotli/optimized/encode.c.ll
+; 3 occurrences:
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 128
+  %4 = or i1 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 43 occurrences:
+; brotli/optimized/encode.c.ll
 ; icu/optimized/measunit_extra.ll
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/AMDGPU.cpp.ll
@@ -226,6 +242,17 @@ entry:
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
+  %4 = or i1 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/Clang.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 18
   %4 = or i1 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5

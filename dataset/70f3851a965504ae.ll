@@ -4,7 +4,7 @@
 ; linux/optimized/mempolicy.ll
 ; mold/optimized/output-chunks.cc.M68K.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -72057594037927936
   %3 = icmp ne i64 %2, 1585267068834414592
@@ -19,7 +19,7 @@ entry:
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; spike/optimized/s_mulAddF16.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 32768
   %3 = icmp ne i64 %2, 0
@@ -35,7 +35,7 @@ entry:
 ; openjdk/optimized/jfrStringPool.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/s_mulAddF32.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483648
   %3 = icmp ne i64 %2, 0

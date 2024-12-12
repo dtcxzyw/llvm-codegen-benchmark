@@ -22,15 +22,21 @@ func0000000000000001:                   # @func0000000000000001
 	andl	%esi, %edi
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	cmpl	$64, %edx
+func0000000000000014:                   # @func0000000000000014
+	andl	%edx, %esi
+	cmpl	$20, %edi
 	setb	%al
-	andl	%esi, %edi
-	andb	%dil, %al
+	andb	%sil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	%edx, %esi
+	cmpl	$2, %edi
+	setb	%al
+	andb	%sil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	andl	%edx, %esi
-	cmpl	$17, %edi
+	cmpl	$65536, %edx                    # imm = 0x10000
 	setae	%al
-	andb	%sil, %al
+	andl	%esi, %edi
+	andb	%dil, %al
 	retq

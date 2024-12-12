@@ -1,6 +1,4 @@
 
-%"class.llvm::Use.3108917" = type { ptr, ptr, ptr, ptr }
-
 ; 6 occurrences:
 ; hermes/optimized/NativeFormatting.cpp.ll
 ; llvm/optimized/NativeFormatting.cpp.ll
@@ -9,7 +7,7 @@
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
@@ -18,15 +16,17 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; abc/optimized/kitIsop.c.ll
+; llvm/optimized/MachineFunction.cpp.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
+; opencv/optimized/distransform.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr i32, ptr %0, i64 %3
+  %4 = getelementptr nusw i32, ptr %0, i64 %3
   %5 = getelementptr i32, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -4
   ret ptr %6
@@ -46,9 +46,10 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; node/optimized/libnode.node_buffer.ll
+; node/optimized/simdutf.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -56,23 +57,6 @@ entry:
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -1
-  ret ptr %6
-}
-
-; 6 occurrences:
-; llvm/optimized/MachineFunction.cpp.ll
-; openblas/optimized/dtrsm_kernel_LN.c.ll
-; openblas/optimized/strsm_kernel_LN.c.ll
-; openblas/optimized/strsm_kernel_RT.c.ll
-; opencv/optimized/distransform.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3108917", ptr %0, i64 %3
-  %5 = getelementptr %"class.llvm::Use.3108917", ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 -32
   ret ptr %6
 }
 
@@ -100,13 +84,28 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
-; node/optimized/simdutf.ll
+; 4 occurrences:
+; openblas/optimized/dtrsm_kernel_LN.c.ll
+; openblas/optimized/strsm_kernel_LN.c.ll
+; openblas/optimized/strsm_kernel_RT.c.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %5 = getelementptr i16, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -2
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/connectedcomponents.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
@@ -115,12 +114,12 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 1
+  %6 = getelementptr i8, ptr %5, i64 -1
   ret ptr %6
 }
 
@@ -132,8 +131,8 @@ define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 -1
+  %5 = getelementptr i16, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -4
   ret ptr %6
 }
 

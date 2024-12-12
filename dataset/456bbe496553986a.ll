@@ -1,5 +1,8 @@
 
-; 110 occurrences:
+; 112 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -78,7 +81,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -120,7 +122,8 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/static_string.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/TimeUtil.cpp.ll
 ; libquic/optimized/hmac.cc.ll
@@ -140,7 +143,7 @@ entry:
   ret i1 %6
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
@@ -158,7 +161,6 @@ entry:
 ; llvm/optimized/FormatVariadic.cpp.ll
 ; proxygen/optimized/HTTPMessage.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
-; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; yaml-cpp/optimized/binary.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {

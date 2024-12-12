@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define float @func0000000000000008(i8 %0) #0 {
+define float @func0000000000000018(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 32
   %.not = icmp eq i8 %1, 0

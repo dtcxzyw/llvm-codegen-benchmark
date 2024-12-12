@@ -8,6 +8,11 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$1, %eax
 	cmovbel	%edi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	cmovael	%edi, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
@@ -27,4 +32,9 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rdx, %rsi
 	movl	$1, %eax
 	cmovlel	%edi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	cmovbel	%edi, %eax
 	retq

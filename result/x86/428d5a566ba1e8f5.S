@@ -5,7 +5,10 @@ func000000000000000f:                   # @func000000000000000f
 	cmoveq	%rcx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leaq	-6(%rsi,%rsi,2), %rcx
+	shlq	$4, %rsi
+	leaq	(%rsi,%rsi,4), %rax
+	movl	$80, %ecx
+	subq	%rax, %rcx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax

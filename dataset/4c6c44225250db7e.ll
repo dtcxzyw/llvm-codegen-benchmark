@@ -42,13 +42,13 @@
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = lshr i32 %2, 2
   %4 = add nuw nsw i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -77,13 +77,13 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = lshr i32 %2, 3
   %4 = add nuw nsw i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -92,13 +92,13 @@ entry:
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; z3/optimized/sat_parallel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = lshr i32 %2, 1
   %4 = add nuw i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -106,13 +106,13 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000331(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000661(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 63
   %3 = lshr i32 %2, 6
   %4 = add nsw i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -120,13 +120,13 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 64
   %3 = lshr i32 %2, 6
   %4 = add nsw i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -134,39 +134,39 @@ entry:
 ; cmake/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000374(i64 %0, i32 %1) #0 {
+define i1 @func00000000000006e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %2, 1
   %4 = add nuw nsw i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/mpicoder.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 7
   %3 = lshr i32 %2, 3
   %4 = add nuw nsw i32 %3, 2
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; redis/optimized/sentinel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = lshr i32 %2, 1
   %4 = add nuw i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

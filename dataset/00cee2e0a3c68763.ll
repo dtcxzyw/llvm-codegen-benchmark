@@ -1,6 +1,8 @@
 
-; 53 occurrences:
+; 55 occurrences:
 ; abc/optimized/ioReadBlif.c.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; clamav/optimized/iso9660.c.ll
 ; clamav/optimized/yara_lexer.c.ll
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
@@ -58,7 +60,7 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %4, 32
   ret i64 %5
 }

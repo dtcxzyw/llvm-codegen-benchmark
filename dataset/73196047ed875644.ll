@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; linux/optimized/mii.ll
+; 5 occurrences:
 ; linux/optimized/tg3.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; openjdk/optimized/hb-ot-shape.ll

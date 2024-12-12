@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
@@ -11,6 +11,7 @@
 ; hyperscan/optimized/gtest-all.cc.ll
 ; opencv/optimized/perf_matchers.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, double %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 279 occurrences:
+; 284 occurrences:
 ; abc/optimized/giaCSatOld.c.ll
 ; abc/optimized/giaClp.c.ll
 ; abc/optimized/sswRarity.c.ll
@@ -30,6 +30,7 @@
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/canonical_views_clustering.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -59,7 +60,6 @@
 ; folly/optimized/farmhash.cpp.ll
 ; g2o/optimized/sampler.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; gromacs/optimized/coolstuff.cpp.ll
 ; gromacs/optimized/seed.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
@@ -104,7 +104,6 @@
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; mini-lsm-rs/optimized/2y1m09w3fogtr6jd.ll
 ; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
 ; mitsuba3/optimized/merge.cpp.ll
@@ -142,7 +141,6 @@
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; openjdk/optimized/c1_Instruction.ll
 ; openjdk/optimized/c1_RangeCheckElimination.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
@@ -217,12 +215,10 @@
 ; quantlib/optimized/seedgenerator.ll
 ; quantlib/optimized/sobolrsg.ll
 ; quantlib/optimized/zigguratrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; quickjs/optimized/quickjs.ll
 ; rayon-rs/optimized/5ev50in5ju1pej99.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/memtest.ll
-; redis/optimized/mt19937-64.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
@@ -279,6 +275,15 @@
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; z3/optimized/lar_solver.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

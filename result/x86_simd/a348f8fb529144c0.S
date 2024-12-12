@@ -32,9 +32,19 @@ func0000000000000006:                   # @func0000000000000006
 	.long	960                             # 0x3c0
 .LCPI4_1:
 	.long	63                              # 0x3f
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpternlogd	$96, .LCPI4_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 & (ymm1 ^ mem)
 	vpcmpnleud	.LCPI4_1(%rip){1to8}, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
+	.long	960                             # 0x3c0
+.LCPI5_1:
+	.long	64                              # 0x40
+func0000000000000014:                   # @func0000000000000014
+	vpternlogd	$96, .LCPI5_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 & (ymm1 ^ mem)
+	vpcmpltud	.LCPI5_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

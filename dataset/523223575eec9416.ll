@@ -15,7 +15,7 @@ entry:
   ret i64 %4
 }
 
-; 163 occurrences:
+; 160 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -160,7 +160,6 @@ entry:
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftRigidDynamicsWorld.ll
-; bullet3/optimized/btSoftSoftCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereSphereCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
@@ -175,8 +174,6 @@ entry:
 ; icu/optimized/genmbcs.ll
 ; icu/optimized/ucharstriebuilder.ll
 ; nori/optimized/nanovg.c.ll
-; opencv/optimized/apriltag_quad_thresh.cpp.ll
-; redis/optimized/module.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; xgboost/optimized/comm.cc.ll
 ; Function Attrs: nounwind

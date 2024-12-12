@@ -1,8 +1,3 @@
-func0000000000000007:                   # @func0000000000000007
-	shll	$16, %esi
-	movzbl	%dil, %eax
-	leal	369099008(%rax,%rsi), %eax
-	retq
 func000000000000001d:                   # @func000000000000001d
 	andl	$1835008, %esi                  # imm = 0x1C0000
 	shll	$12, %edi

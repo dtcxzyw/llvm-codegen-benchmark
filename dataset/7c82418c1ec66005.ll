@@ -1,6 +1,8 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; grpc/optimized/message_size_filter.cc.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
@@ -27,7 +29,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4294967296
   %4 = icmp eq i64 %3, 8589934592
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }

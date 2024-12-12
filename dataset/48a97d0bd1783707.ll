@@ -5,7 +5,7 @@
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -21,7 +21,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

@@ -1,5 +1,10 @@
 
-; 75 occurrences:
+; 79 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; ceres/optimized/corrector.cc.ll
 ; cpython/optimized/complexobject.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -35,7 +40,6 @@
 ; proj/optimized/col_urban.cpp.ll
 ; proj/optimized/conversion.cpp.ll
 ; proj/optimized/gauss.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/lagrng.cpp.ll
 ; proj/optimized/mod_ster.cpp.ll
 ; proj/optimized/omerc.cpp.ll

@@ -20,7 +20,7 @@ entry:
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %0, %2
   %3 = add i64 %.neg, %1
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/program_runtime.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %0, %2
   %3 = add i64 %.neg, %1

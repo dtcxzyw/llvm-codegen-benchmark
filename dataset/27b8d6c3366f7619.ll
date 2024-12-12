@@ -5,7 +5,7 @@
 ; opencv/optimized/stereobm.cpp.ll
 ; php/optimized/html.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -57344
   %4 = icmp ult i32 %3, 1056768
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -3
   %4 = icmp ult i32 %3, 10
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; unicode-normalization-rs/optimized/ymmduj8w84wlz7n.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -4520
   %4 = icmp ult i32 %3, 27
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; unicode-normalization-rs/optimized/ymmduj8w84wlz7n.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000484(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -44032
   %4 = icmp ult i32 %3, 11172

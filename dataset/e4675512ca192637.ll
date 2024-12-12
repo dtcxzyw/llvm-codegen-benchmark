@@ -16,7 +16,7 @@
 ; abc/optimized/wlnRead.c.ll
 ; openjdk/optimized/cmsalpha.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000302(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = and i32 %0, 7
@@ -37,7 +37,7 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65280
   %3 = and i32 %0, 65280
@@ -50,11 +50,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vht.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000502(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = and i32 %0, 3
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   %5 = icmp eq i32 %3, 3
   %6 = or i1 %5, %4
   ret i1 %6

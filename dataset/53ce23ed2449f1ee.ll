@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; faiss/optimized/Clustering.cpp.ll
@@ -12,7 +12,6 @@
 ; faiss/optimized/distances.cpp.ll
 ; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
 ; opencv/optimized/attention_layer.cpp.ll
 ; opencv/optimized/tree.cpp.ll
@@ -25,7 +24,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 2
+  %3 = ashr exact i64 %2, 3
   %4 = mul i64 %0, %1
   %5 = sub nuw i64 %4, %3
   ret i64 %5

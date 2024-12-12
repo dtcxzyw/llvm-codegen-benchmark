@@ -19,7 +19,7 @@ entry:
   ret i64 %5
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/ResidualQuantizer.cpp.ll
@@ -40,6 +40,7 @@ entry:
 ; opencv/optimized/cascadedetect.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; opencv/optimized/eltwise_layer.cpp.ll
+; opencv/optimized/matrix_transform.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/prior_box_layer.cpp.ll

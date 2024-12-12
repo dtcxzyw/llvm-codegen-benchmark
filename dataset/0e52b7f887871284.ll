@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-obj_xref.ll
 ; openssl/optimized/libcrypto-shlib-obj_xref.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000842(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, %0
   %3 = icmp eq i32 %0, 0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/file-jpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %1, %0
   %3 = icmp eq i32 %2, 1

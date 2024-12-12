@@ -1,21 +1,21 @@
 
-%"class.std::unique_ptr.41.2497319" = type { %"struct.std::__uniq_ptr_data.42.2497320" }
-%"struct.std::__uniq_ptr_data.42.2497320" = type { %"class.std::__uniq_ptr_impl.43.2497321" }
-%"class.std::__uniq_ptr_impl.43.2497321" = type { %"class.std::tuple.44.2497322" }
-%"class.std::tuple.44.2497322" = type { %"struct.std::_Tuple_impl.45.2497323" }
-%"struct.std::_Tuple_impl.45.2497323" = type { %"struct.std::_Head_base.48.2497324" }
-%"struct.std::_Head_base.48.2497324" = type { ptr }
-%struct.USBHubPort.2592065 = type { %struct.USBPort.2592066, i16, i16 }
-%struct.USBPort.2592066 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.1.2592067 }
-%union.anon.1.2592067 = type { %struct.QTailQLink.2592068 }
-%struct.QTailQLink.2592068 = type { ptr, ptr }
-%struct.XHCISlot.2593258 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
-%"struct.OT::OffsetTo.253.2623135" = type { %"struct.OT::Offset.144.2623131" }
-%"struct.OT::Offset.144.2623131" = type { %"struct.OT::IntType.139.2623121" }
-%"struct.OT::IntType.139.2623121" = type { %struct.BEInt.140.2623122 }
-%struct.BEInt.140.2623122 = type { [4 x i8] }
+%"class.std::unique_ptr.41.2612578" = type { %"struct.std::__uniq_ptr_data.42.2612579" }
+%"struct.std::__uniq_ptr_data.42.2612579" = type { %"class.std::__uniq_ptr_impl.43.2612580" }
+%"class.std::__uniq_ptr_impl.43.2612580" = type { %"class.std::tuple.44.2612581" }
+%"class.std::tuple.44.2612581" = type { %"struct.std::_Tuple_impl.45.2612582" }
+%"struct.std::_Tuple_impl.45.2612582" = type { %"struct.std::_Head_base.48.2612583" }
+%"struct.std::_Head_base.48.2612583" = type { ptr }
+%struct.USBHubPort.2705857 = type { %struct.USBPort.2705858, i16, i16 }
+%struct.USBPort.2705858 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.1.2705859 }
+%union.anon.1.2705859 = type { %struct.QTailQLink.2705860 }
+%struct.QTailQLink.2705860 = type { ptr, ptr }
+%struct.XHCISlot.2706960 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
+%"struct.OT::OffsetTo.253.2736566" = type { %"struct.OT::Offset.144.2736562" }
+%"struct.OT::Offset.144.2736562" = type { %"struct.OT::IntType.139.2736552" }
+%"struct.OT::IntType.139.2736552" = type { %struct.BEInt.140.2736553 }
+%struct.BEInt.140.2736553 = type { [4 x i8] }
 
-; 170 occurrences:
+; 168 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/bacReadVer.c.ll
 ; abc/optimized/cbaReadVer.c.ll
@@ -34,7 +34,6 @@
 ; clamav/optimized/recvol.cpp.ll
 ; clamav/optimized/regcomp.c.ll
 ; clamav/optimized/unpack.cpp.ll
-; clamav/optimized/yara_compiler.c.ll
 ; clamav/optimized/yara_lexer.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
@@ -116,12 +115,12 @@
 ; luau/optimized/lapi.cpp.ll
 ; luau/optimized/ldblib.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/test_random.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nori/optimized/nanovg.c.ll
@@ -149,7 +148,6 @@
 ; openspiel/optimized/Moves.cpp.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; openspiel/optimized/skat.cc.ll
-; openssl/optimized/bio_readbuffer_test-bin-bio_readbuffer_test.ll
 ; openssl/optimized/libcrypto-lib-bio_b64.ll
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
 ; openssl/optimized/libcrypto-lib-obj_dat.ll
@@ -187,15 +185,15 @@
 ; wolfssl/optimized/sp_int.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [10 x float], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [10 x float], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 98 occurrences:
+; 99 occurrences:
 ; abc/optimized/abcNames.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -258,6 +256,7 @@ entry:
 ; luau/optimized/BytecodeAnalysis.cpp.ll
 ; memcached/optimized/testapp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
 ; meshoptimizer/optimized/stripifier.cpp.ll
 ; msdfgen/optimized/shape-description.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -295,11 +294,11 @@ entry:
 ; z3/optimized/sat_drat.cpp.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [64 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [64 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -425,7 +424,6 @@ entry:
 ; libquic/optimized/cipher.c.ll
 ; libquic/optimized/dsa.c.ll
 ; libquic/optimized/e_ssl3.c.ll
-; libquic/optimized/hexdump.c.ll
 ; libquic/optimized/infback.c.ll
 ; libquic/optimized/inflate.c.ll
 ; lief/optimized/ssl_msg.c.ll
@@ -652,6 +650,7 @@ entry:
 ; luajit/optimized/lj_parse_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; meshoptimizer/optimized/stripifier.cpp.ll
@@ -751,15 +750,15 @@ entry:
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw [2 x %"class.std::unique_ptr.41.2497319"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x %"class.std::unique_ptr.41.2612578"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 34 occurrences:
+; 36 occurrences:
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; box2d/optimized/b2_collision.cpp.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -767,6 +766,8 @@ entry:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
+; cmake/optimized/lzma_decoder.c.ll
+; cmake/optimized/lzma_encoder.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; flac/optimized/operations_shorthand_vorbiscomment.c.ll
 ; grpc/optimized/hpack_parser.cc.ll
@@ -795,11 +796,11 @@ entry:
 ; wolfssl/optimized/sp_int.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw [4 x ptr], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -838,7 +839,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [8 x %struct.USBHubPort.2592065], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [8 x %struct.USBHubPort.2705857], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -937,11 +938,11 @@ define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [64 x %struct.XHCISlot.2593258], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [64 x %struct.XHCISlot.2706960], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; linux/optimized/evdev.ll
 ; linux/optimized/indirect.ll
 ; linux/optimized/intel_opregion.ll
@@ -949,13 +950,15 @@ entry:
 ; linux/optimized/ttm_resource.ll
 ; postgres/optimized/fsmpage.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; qemu/optimized/hw_usb_hcd-xhci.c.ll
+; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/packet-nvme-rdma.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1
+  %2 = add i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [257 x ptr], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [31 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -981,11 +984,11 @@ entry:
 ; openjdk/optimized/pngrutil.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [4 x ptr], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -1003,11 +1006,11 @@ entry:
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw [1 x %"struct.OT::OffsetTo.253.2623135"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.253.2736566"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -1022,10 +1025,11 @@ entry:
   ret ptr %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/ata_piix.ll
 ; linux/optimized/dsutils.ll
 ; linux/optimized/xhci.ll
+; linux/optimized/xz_dec_lzma2.ll
 ; postgres/optimized/hashutil.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; Function Attrs: nounwind

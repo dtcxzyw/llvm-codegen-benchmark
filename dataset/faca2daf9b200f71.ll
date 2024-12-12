@@ -1,5 +1,5 @@
 
-; 272 occurrences:
+; 273 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -272,6 +272,7 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:

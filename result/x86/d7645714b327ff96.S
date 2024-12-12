@@ -1,9 +1,11 @@
 func0000000000000002:                   # @func0000000000000002
-	andl	$1, %edi
+	xorl	%eax, %eax
 	testb	%sil, %sil
-	leaq	(%rdi,%rdi,4), %rcx
+	sete	%al
+	leaq	(%rax,%rax,4), %rcx
+	testb	$1, %dil
 	movl	$5, %eax
-	cmovneq	%rcx, %rax
+	cmoveq	%rcx, %rax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	testb	$1, %dil

@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/parser_test.cc.ll
 ; freetype/optimized/truetype.c.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/tls.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
 ; llvm/optimized/MCPseudoProbe.cpp.ll

@@ -49,7 +49,7 @@ func000000000000001b:                   # @func000000000000001b
 func000000000000000a:                   # @func000000000000000a
 	vmovdqa	.LCPI3_0(%rip), %ymm3           # ymm3 = [0,32,1,34,2,36,3,38,4,40,5,42,6,44,7,46,8,48,9,50,10,52,11,54,12,56,13,58,14,60,15,62]
 	vpermi2b	%ymm1, %ymm2, %ymm3
-	vpor	%ymm0, %ymm3, %ymm0
+	vpor	%ymm3, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.byte	0                               # 0x0

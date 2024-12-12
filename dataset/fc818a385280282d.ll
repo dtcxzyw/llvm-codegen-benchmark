@@ -85,7 +85,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -105,11 +105,11 @@ entry:
   %3 = sub nuw i64 %1, %2
   %4 = lshr i64 %3, 29
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
-; 257 occurrences:
+; 258 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; annoy/optimized/annoymodule.ll
@@ -260,7 +260,6 @@ entry:
 ; llvm/optimized/PoisonChecking.cpp.ll
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RealtimeSanitizer.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/RelLookupTableConverter.cpp.ll
@@ -306,6 +305,7 @@ entry:
 ; luau/optimized/lapi.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshlab/optimized/action_searcher.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -336,6 +336,7 @@ entry:
 ; ninja/optimized/dyndep.cc.ll
 ; nix/optimized/parser-tab.ll
 ; opencv/optimized/data.cpp.ll
+; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/pcaflow.cpp.ll
@@ -373,7 +374,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -385,7 +386,7 @@ entry:
   %3 = sub nsw i64 %1, %2
   %4 = lshr i64 %3, 1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -409,7 +410,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 3
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -428,7 +429,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 3
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -440,7 +441,7 @@ entry:
   %3 = sub nuw i64 %1, %2
   %4 = lshr exact i64 %3, 4
   %5 = trunc nuw i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -452,7 +453,7 @@ entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = lshr exact i64 %3, 12
   %5 = trunc nuw nsw i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -464,7 +465,7 @@ entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = lshr exact i64 %3, 12
   %5 = trunc nuw nsw i64 %4 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -476,7 +477,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 1
   %5 = trunc i64 %4 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -488,7 +489,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 63
   %5 = trunc nuw nsw i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -500,7 +501,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 1
   %5 = trunc i64 %4 to i32
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 

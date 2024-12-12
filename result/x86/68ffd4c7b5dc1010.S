@@ -8,13 +8,12 @@ func0000000000000003:                   # @func0000000000000003
 	orl	%edi, %eax
 	retq
 func0000000000000011:                   # @func0000000000000011
-	movabsq	$4294968320, %rcx               # imm = 0x100000400
 	xorl	%eax, %eax
-	cmpq	%rcx, %rsi
-	seta	%al
-	shll	$8, %eax
-	andl	$1, %edi
-	shll	$7, %edi
-	orl	%edi, %eax
-	orq	$8, %rax
+	cmpq	$4, %rsi
+	setae	%al
+	notb	%dil
+	movzbl	%dil, %ecx
+	andl	$1, %ecx
+	shll	$4, %ecx
+	leal	(%rcx,%rax,8), %eax
 	retq

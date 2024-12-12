@@ -18,7 +18,7 @@ func0000000000000028:                   # @func0000000000000028
 	.long	128                             # 0x80
 func0000000000000020:                   # @func0000000000000020
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrad	$4, %ymm0, %ymm0
 	retq

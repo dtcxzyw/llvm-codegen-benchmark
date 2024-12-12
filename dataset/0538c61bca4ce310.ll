@@ -4,12 +4,12 @@
 ; opencv/optimized/bound_min.cpp.ll
 ; opencv/optimized/face_beautification.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
   %5 = shl nsw i64 %4, 2
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -77,12 +77,12 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000126(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = sdiv i64 %3, 4
   %5 = shl nsw i64 %4, 2
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
@@ -111,12 +111,12 @@ entry:
 ; meshlab/optimized/normalize_unitbox.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000012a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = sdiv i64 %3, 4
   %5 = shl nsw i64 %4, 2
-  %6 = icmp slt i64 %5, %0
+  %6 = icmp sgt i64 %0, %5
   ret i1 %6
 }
 
@@ -125,12 +125,12 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
   %5 = shl nsw i64 %4, 2
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

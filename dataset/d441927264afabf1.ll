@@ -6,11 +6,11 @@
 ; ruby/optimized/io.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, -2
   %3 = or disjoint i32 %2, %1
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -22,7 +22,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 123
   %3 = or i32 %2, %1
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 

@@ -1,9 +1,9 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	leal	4(%rsi,%rdx), %eax
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	leal	7(%rsi,%rdx), %eax
 	cmpl	%edi, %eax
 	setl	%al
@@ -14,25 +14,15 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edi, %edx
 	setl	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	leal	2(%rsi,%rdx), %eax
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	leal	2(%rsi,%rdx), %eax
 	cmpl	%edi, %eax
 	setb	%al
-	retq
-func0000000000000074:                   # @func0000000000000074
-	leal	2(%rsi,%rdx), %eax
-	cmpl	%edi, %eax
-	setb	%al
-	retq
-func0000000000000078:                   # @func0000000000000078
-	leal	4(%rsi,%rdx), %eax
-	cmpl	%edi, %eax
-	seta	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	orl	$-4, %edx
@@ -40,18 +30,23 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%edi, %edx
 	setg	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	leal	-2147483648(%rsi,%rdx), %eax
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	leal	1073741824(%rsi,%rdx), %eax
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	leal	4(%rsi,%rdx), %eax
 	cmpl	%edi, %eax
 	setg	%al
+	retq
+func00000000000000e8:                   # @func00000000000000e8
+	leal	65536(%rsi,%rdx), %eax
+	cmpl	%edi, %eax
+	seta	%al
 	retq

@@ -1,8 +1,8 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	sete	%al
 	leaq	1(%rax,%rax), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

@@ -62,12 +62,6 @@ func0000000000000030:                   # @func0000000000000030
 	li	a0, 400
 	vmacc.vx	v8, a0, v10
 	ret
-func0000000000000037:                   # @func0000000000000037
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v10, v12
-	li	a0, 85
-	vmacc.vx	v8, a0, v10
-	ret
 func000000000000003e:                   # @func000000000000003e
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12

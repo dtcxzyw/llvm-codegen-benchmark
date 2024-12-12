@@ -5,7 +5,6 @@
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; hermes/optimized/AST2JS.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; hermes/optimized/HBC.cpp.ll
 ; hermes/optimized/JSLexer.cpp.ll
@@ -19,6 +18,7 @@
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i8 %1) #0 {

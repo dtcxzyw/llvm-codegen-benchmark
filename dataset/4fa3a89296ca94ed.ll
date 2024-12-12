@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; grpc/optimized/compression_filter.cc.ll
 ; grpc/optimized/legacy_compression_filter.cc.ll
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
@@ -15,7 +15,6 @@
 ; llvm/optimized/SemaAPINotes.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
-; llvm/optimized/TypePrinter.cpp.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; sqlite/optimized/sqlite3.ll

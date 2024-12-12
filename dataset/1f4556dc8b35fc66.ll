@@ -1,26 +1,21 @@
 
-%class.b3Vector3.2704959 = type { %union.anon.34.2704960 }
-%union.anon.34.2704960 = type { [4 x float] }
-%class.btVector3.2706810 = type { [4 x float] }
-%struct.dt_iop_tonecurve_node_t.2760901 = type { float, float }
-%struct.Abc_IffObj_t_.2764708 = type { [7 x float] }
+%class.b3Vector3.2817674 = type { %union.anon.34.2817675 }
+%union.anon.34.2817675 = type { [4 x float] }
+%class.btVector3.2818863 = type { [4 x float] }
+%class.btVector3.2819523 = type { [4 x float] }
+%struct.dt_iop_tonecurve_node_t.2873179 = type { float, float }
+%struct.Abc_IffObj_t_.2876965 = type { [7 x float] }
 
-; 40 occurrences:
-; abc/optimized/extraUtilPerm.c.ll
-; abc/optimized/nwkTiming.c.ll
-; abc/optimized/sbdCore.c.ll
+; 20 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
-; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btContinuousConvexCollision.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
-; bullet3/optimized/btGeneric6DofConstraint.ll
-; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; bullet3/optimized/btGhostObject.ll
 ; bullet3/optimized/btHingeConstraint.ll
 ; bullet3/optimized/btKinematicCharacterController.ll
@@ -32,31 +27,67 @@
 ; bullet3/optimized/btReducedDeformableBody.ll
 ; bullet3/optimized/btRigidBody.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
-; bullet3/optimized/btSoftBody.ll
-; clamav/optimized/bzlib.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw [3 x %class.b3Vector3.2817674], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 11 occurrences:
+; abc/optimized/nwkTiming.c.ll
+; bullet3/optimized/b3Generic6DofConstraint.ll
+; bullet3/optimized/btGeneric6DofConstraint.ll
+; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
-; gromacs/optimized/partition.cpp.ll
-; imgui/optimized/imgui.cpp.ll
-; opencv/optimized/hough.cpp.ll
 ; openspiel/optimized/DealerPar.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; sqlite/optimized/sqlite3.ll
-; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [3 x %class.b3Vector3.2704959], ptr %0, i64 0, i64 %1
+  %4 = getelementptr nusw [3 x %class.btVector3.2818863], ptr %0, i64 0, i64 %1
   %5 = getelementptr nusw float, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 4 occurrences:
+; 9 occurrences:
+; abc/optimized/extraUtilPerm.c.ll
+; abc/optimized/sbdCore.c.ll
 ; bullet3/optimized/btSoftBody.ll
+; clamav/optimized/bzlib.c.ll
+; gromacs/optimized/partition.cpp.ll
+; imgui/optimized/imgui.cpp.ll
+; opencv/optimized/hough.cpp.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; zxing/optimized/ODDataBarReader.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw [3 x %class.btVector3.2819523], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw float, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; bullet3/optimized/btSoftBody.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw [3 x %class.btVector3.2819523], ptr %0, i64 0, i64 %1
+  %5 = getelementptr float, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 3 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
@@ -64,8 +95,8 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [3 x %class.btVector3.2706810], ptr %0, i64 0, i64 %1
-  %5 = getelementptr float, ptr %4, i64 %3
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -76,8 +107,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2760901]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nusw %struct.dt_iop_tonecurve_node_t.2760901, ptr %4, i64 %3
+  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -98,7 +129,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr [7 x float], ptr %0, i64 0, i64 %1
-  %5 = getelementptr %struct.Abc_IffObj_t_.2764708, ptr %4, i64 %3
+  %5 = getelementptr %struct.Abc_IffObj_t_.2876965, ptr %4, i64 %3
   ret ptr %5
 }
 

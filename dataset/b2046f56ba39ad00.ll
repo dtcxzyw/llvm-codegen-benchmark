@@ -11,17 +11,6 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/SimplifyCFG.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nsw i64 %0, %1
-  %3 = mul i64 %2, 40
-  %4 = add i64 %3, 40
-  ret i64 %4
-}
-
-; 1 occurrences:
 ; cpython/optimized/structseq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {

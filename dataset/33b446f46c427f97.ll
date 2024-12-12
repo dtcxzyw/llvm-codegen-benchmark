@@ -1,8 +1,12 @@
 
-; 135 occurrences:
+; 142 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/src.ll
+; boost/optimized/text_file_backend.ll
 ; c3c/optimized/sema_asm.c.ll
 ; clamav/optimized/LzmaDec.c.ll
-; clamav/optimized/lzma_iface.c.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/cf-h2-proxy.c.ll
@@ -29,6 +33,7 @@
 ; icu/optimized/numparse_impl.ll
 ; icu/optimized/parse.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; libphonenumber/optimized/rune.c.ll
 ; libquic/optimized/ssl_lib.c.ll
 ; lief/optimized/asn1parse.c.ll
 ; lief/optimized/net_sockets.c.ll
@@ -47,7 +52,6 @@
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/md.ll
 ; linux/optimized/ohci-hcd.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/trackpoint.ll
 ; linux/optimized/tree.ll
@@ -68,7 +72,9 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; luau/optimized/isocline.c.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
@@ -134,6 +140,7 @@
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/dbg_cmds.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/9llazb78bmu9grt6fsh6yj218.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1) #0 {

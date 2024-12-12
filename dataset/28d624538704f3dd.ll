@@ -10,7 +10,7 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = sub nsw i32 %2, %0
@@ -30,7 +30,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 20
   %3 = sub nsw i32 %2, %0
@@ -51,7 +51,7 @@ entry:
 ; linux/optimized/auth_gss.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
   %3 = icmp slt i32 %2, %0
@@ -66,18 +66,6 @@ entry:
   %2 = lshr i32 %1, 4
   %3 = sub i32 %2, %0
   %4 = icmp ult i32 %3, 2
-  ret i1 %4
-}
-
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 3
-  %3 = sub nsw i32 %2, %0
-  %4 = icmp ugt i32 %3, 511
   ret i1 %4
 }
 

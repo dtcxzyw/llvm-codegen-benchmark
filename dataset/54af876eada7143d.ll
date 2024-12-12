@@ -1,5 +1,5 @@
 
-; 139 occurrences:
+; 137 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -69,8 +69,6 @@
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -140,13 +138,13 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000141(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 64
   %4 = getelementptr nusw i64, ptr %0, i64 %3
   %5 = select i1 %1, i64 -8, i64 0
   %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 

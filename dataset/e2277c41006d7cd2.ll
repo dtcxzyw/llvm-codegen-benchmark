@@ -13,6 +13,18 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 128
+  %.not.not = icmp eq i32 %2, 0
+  %3 = sub nsw i32 0, %0
+  %4 = select i1 %.not.not, i32 %3, i32 %0
+  ret i32 %4
+}
+
 ; 3 occurrences:
 ; linux/optimized/intel_hdmi.ll
 ; wireshark/optimized/packet-bthci_cmd.c.ll
@@ -38,7 +50,7 @@ entry:
   %2 = and i32 %1, 1024
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 8, i32 6
-  %5 = mul nuw nsw i32 %4, %0
+  %5 = mul nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -63,7 +75,7 @@ entry:
   %2 = and i32 %1, 4088
   %.not = icmp eq i32 %2, 0
   %3 = select i1 %.not, i32 1, i32 3
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 

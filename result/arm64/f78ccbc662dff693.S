@@ -1,40 +1,28 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	orr	v1.16b, v1.16b, v2.16b
-	mov	w8, #3                          // =0x3
-	dup	v2.2d, x8
-	orr	v0.16b, v1.16b, v0.16b
-	uaddw2	v1.2d, v2.2d, v0.4s
-	uaddw	v0.2d, v2.2d, v0.2s
+	orr	w8, w1, w2
+	orr	w8, w8, w0
+	add	x0, x8, #3
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	orr	v1.16b, v1.16b, v2.16b
-	mov	w8, #4                          // =0x4
-	dup	v2.2d, x8
-	orr	v0.16b, v1.16b, v0.16b
-	uaddw2	v1.2d, v2.2d, v0.4s
-	uaddw	v0.2d, v2.2d, v0.2s
+	orr	w8, w1, w2
+	orr	w8, w8, w0
+	add	x0, x8, #4
 	ret
                                         // -- End function
 func0000000000000019:                   // @func0000000000000019
 // %bb.0:                               // %entry
-	orr	v1.16b, v1.16b, v2.16b
-	mov	x8, #-132                       // =0xffffffffffffff7c
-	dup	v2.2d, x8
-	orr	v0.16b, v1.16b, v0.16b
-	uaddw2	v1.2d, v2.2d, v0.4s
-	uaddw	v0.2d, v2.2d, v0.2s
+	orr	w8, w1, w2
+	orr	w8, w8, w0
+	sub	x0, x8, #132
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	orr	v1.16b, v1.16b, v2.16b
-	mov	w8, #1                          // =0x1
-	dup	v2.2d, x8
-	orr	v0.16b, v1.16b, v0.16b
-	uaddw2	v1.2d, v2.2d, v0.4s
-	uaddw	v0.2d, v2.2d, v0.2s
+	orr	w8, w1, w2
+	orr	w8, w0, w8
+	add	x0, x8, #1
 	ret
                                         // -- End function

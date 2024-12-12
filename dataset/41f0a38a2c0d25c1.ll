@@ -5,19 +5,20 @@
 define i64 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; velox/optimized/FindFirst.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
@@ -41,7 +42,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nuw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
@@ -115,7 +116,7 @@ entry:
 define i64 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 40
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6

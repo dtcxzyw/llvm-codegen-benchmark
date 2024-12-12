@@ -5,7 +5,7 @@
 ; rocksdb/optimized/transaction_base.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 80
   %3 = add i64 %0, -1
@@ -18,7 +18,7 @@ entry:
 ; assimp/optimized/IFCCurve.cpp.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = add i64 %0, 1
@@ -32,7 +32,7 @@ entry:
 ; libquic/optimized/hpack_header_table.cc.ll
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = sdiv exact i64 %0, 120
@@ -46,12 +46,12 @@ entry:
 ; libquic/optimized/hpack_header_table.cc.ll
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = sdiv exact i64 %0, 120
   %4 = add nsw i64 %3, %2
-  %5 = icmp ult i64 %4, 4
+  %5 = icmp samesign ult i64 %4, 4
   ret i1 %5
 }
 
@@ -60,7 +60,7 @@ entry:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %0, 7
   %3 = sub i64 -2, %1
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000224(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = add i64 %0, -1
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -24
   %2 = add nsw i64 %0, -1

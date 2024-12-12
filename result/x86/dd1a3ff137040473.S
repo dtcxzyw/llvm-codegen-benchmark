@@ -23,15 +23,28 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$3, %eax
 	sbbq	$0, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	movabsq	$9223372036854775807, %rcx      # imm = 0x7FFFFFFFFFFFFFFF
-	leaq	1(%rcx), %rax
-	testw	%di, %di
-	cmovnsq	%rcx, %rax
-	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	testw	%di, %di
 	sete	%al
 	leaq	5(,%rax,4), %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpw	$5, %di
+	setae	%al
+	leaq	4(,%rax,4), %rax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	xorl	%eax, %eax
+	testw	%di, %di
+	setns	%al
+	orq	$4, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movzwl	%di, %ecx
+	movl	$3155673600, %edx               # imm = 0xBC17C200
+	leaq	86400(%rdx), %rax
+	cmpl	$301, %ecx                      # imm = 0x12D
+	cmovbq	%rdx, %rax
 	retq

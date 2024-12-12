@@ -1,17 +1,30 @@
 
-%struct._ir_insn.2676503 = type { %struct.anon.2676504, %union.anon.5.2676505 }
-%struct.anon.2676504 = type { %union.anon.2676506, %union.anon.4.2676507 }
-%union.anon.2676506 = type { i32 }
-%union.anon.4.2676507 = type { i32 }
-%union.anon.5.2676505 = type { %union._ir_val.2676508 }
-%union._ir_val.2676508 = type { double }
-%struct.AttrMissing.3471106 = type { i8, i64 }
+%struct.AttrMissing.3655151 = type { i8, i64 }
 
-; 2 occurrences:
-; cpython/optimized/ceval.ll
+; 1 occurrences:
 ; minetest/optimized/treegen.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i16 %1) #0 {
+entry:
+  %2 = sext i16 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 5
+  ret ptr %4
+}
+
+; 10 occurrences:
+; darktable/optimized/NikonDecompressor.cpp.ll
+; minetest/optimized/treegen.cpp.ll
+; php/optimized/ir_emit.ll
+; php/optimized/ir_gcm.ll
+; php/optimized/ir_ra.ll
+; typst-rs/optimized/1aflftgqyuracvze.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; wolfssl/optimized/internal.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -28,11 +41,11 @@ entry:
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
 entry:
   %2 = add nuw i16 %1, 1
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -63,7 +76,7 @@ entry:
   ret ptr %4
 }
 
-; 28 occurrences:
+; 33 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; crow/optimized/example.cpp.ll
@@ -88,36 +101,21 @@ entry:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
+; lvgl/optimized/lv_i18n.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; openjdk/optimized/dither.ll
 ; openjdk/optimized/verifier.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -280
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 10 occurrences:
-; darktable/optimized/NikonDecompressor.cpp.ll
-; llvm/optimized/Lexer.cpp.ll
-; php/optimized/ir_emit.ll
-; php/optimized/ir_gcm.ll
-; php/optimized/ir_ra.ll
-; typst-rs/optimized/1aflftgqyuracvze.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; wolfssl/optimized/internal.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i16 %1) #0 {
-entry:
-  %2 = sext i16 %1 to i64
-  %3 = getelementptr %struct._ir_insn.2676503, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -149,7 +147,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr %struct.AttrMissing.3471106, ptr %0, i64 %2
+  %3 = getelementptr %struct.AttrMissing.3655151, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -12
   ret ptr %4
 }
@@ -157,22 +155,22 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/unames.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -1
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -1
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
   ret ptr %4
 }
 

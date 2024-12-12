@@ -1,5 +1,5 @@
 
-; 153 occurrences:
+; 158 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; abseil-cpp/optimized/marshalling.cc.ll
@@ -46,8 +46,6 @@
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
 ; oiio/optimized/printinfo.cpp.ll
 ; oiio/optimized/rlaoutput.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
@@ -153,6 +151,13 @@
 ; wasmedge/optimized/compiler.cpp.ll
 ; xgboost/optimized/aft_obj.cc.ll
 ; yoga/optimized/Node.cpp.ll
+; zed-rs/optimized/4km3eupdnqqnodg5d7nrlf2sf.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/exru7xor9i4a4ixpzw7x9xk8s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(float %0) #0 {
 entry:
@@ -161,10 +166,14 @@ entry:
   ret i64 %2
 }
 
-; 3 occurrences:
+; 7 occurrences:
 ; eastl/optimized/TestVectorMap.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
 ; postgres/optimized/float.ll
 ; wasmedge/optimized/compiler.cpp.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(float %0) #0 {
 entry:

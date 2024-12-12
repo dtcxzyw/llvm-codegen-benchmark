@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; cpython/optimized/_codecs_jp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
@@ -17,6 +17,9 @@
 ; php/optimized/zend_compile.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wireshark/optimized/packet-zbee-nwk-gp.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7nycmhgf1nsxro2z9yfrppi5n.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
@@ -26,10 +29,8 @@ entry:
   ret i8 %4
 }
 
-; 3 occurrences:
-; cpython/optimized/_codecs_jp.ll
+; 1 occurrences:
 ; qemu/optimized/block_vpc.c.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i1 %0, i8 %1) #0 {
 entry:
@@ -51,7 +52,7 @@ entry:
 define i8 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = select i1 %3, i8 2, i8 0
   ret i8 %4
 }
@@ -65,6 +66,18 @@ entry:
   %2 = icmp ult i8 %1, 2
   %3 = or i1 %2, %0
   %4 = select i1 %3, i8 8, i8 0
+  ret i8 %4
+}
+
+; 2 occurrences:
+; cpython/optimized/_codecs_jp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000030(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i8 %1, 66
+  %3 = or i1 %0, %2
+  %4 = select i1 %3, i8 67, i8 65
   ret i8 %4
 }
 

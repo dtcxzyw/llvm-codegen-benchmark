@@ -10,11 +10,11 @@
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000018(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
   %3 = and i8 %0, 1
-  %4 = icmp ugt i8 %3, %2
+  %4 = icmp samesign ugt i8 %3, %2
   ret i1 %4
 }
 
@@ -29,7 +29,7 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000014(i8 %0, i1 %1) #0 {
 entry:
   %2 = and i8 %0, 1
   %3 = icmp eq i8 %2, 0
@@ -41,11 +41,11 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000015(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
   %3 = and i8 %0, 1
-  %4 = icmp ule i8 %3, %2
+  %4 = icmp samesign ule i8 %3, %2
   ret i1 %4
 }
 

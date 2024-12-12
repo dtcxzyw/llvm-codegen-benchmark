@@ -11,6 +11,6 @@ func0000000000000040:                   # @func0000000000000040
 	vsll.vi	v12, v10, 4
 	vxor.vv	v10, v12, v10
 	vsrl.vi	v12, v10, 17
-	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	ret

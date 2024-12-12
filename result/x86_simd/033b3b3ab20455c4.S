@@ -1,0 +1,8 @@
+.LCPI0_0:
+	.quad	68                              # 0x44
+func0000000000000002:                   # @func0000000000000002
+	vpmovsxdq	%xmm0, %ymm0
+	vpbroadcastq	.LCPI0_0(%rip), %ymm1   # ymm1 = [68,68,68,68]
+	vpsubq	%ymm0, %ymm1, %ymm0
+	vpsrlq	$2, %ymm0, %ymm0
+	retq

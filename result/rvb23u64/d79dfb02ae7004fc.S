@@ -7,7 +7,7 @@ func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func0000000000000204:                   # @func0000000000000204
+func0000000000000404:                   # @func0000000000000404
 	bset	a2, zero, a2
 	addw	a0, a0, a2
 	sext.w	a1, a1

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	1                               # 0x1
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4

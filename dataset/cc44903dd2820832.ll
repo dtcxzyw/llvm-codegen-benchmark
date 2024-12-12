@@ -1,11 +1,10 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; gromacs/optimized/constraint_gpu_helpers.cpp.ll
 ; gromacs/optimized/simd_energy_accumulator.cpp.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; lightgbm/optimized/metadata.cpp.ll
 ; linux/optimized/drm_vblank.ll
-; linux/optimized/intel_pstate.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; luajit/optimized/lj_carith.ll
 ; luajit/optimized/lj_carith_dyn.ll

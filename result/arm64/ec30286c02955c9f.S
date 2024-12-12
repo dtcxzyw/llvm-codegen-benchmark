@@ -1,4 +1,4 @@
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	sub	x8, x1, x0
 	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc
@@ -11,7 +11,7 @@ func0000000000000018:                   // @func0000000000000018
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
 	mov	x9, #28087                      // =0x6db7
 	sub	x8, x1, x0
@@ -25,6 +25,28 @@ func0000000000000014:                   // @func0000000000000014
 	movk	x9, #9362, lsl #32
 	movk	x9, #585, lsl #48
 	cmp	x8, x9
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000038:                   // @func0000000000000038
+// %bb.0:                               // %entry
+	sub	x8, x1, x0
+	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	asr	x8, x8, #3
+	movk	x9, #43691
+	mul	x8, x8, x9
+	cmp	x8, #1
+	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000000034:                   // @func0000000000000034
+// %bb.0:                               // %entry
+	sub	x8, x1, x0
+	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	asr	x8, x8, #3
+	movk	x9, #43691
+	mul	x8, x8, x9
+	cmp	x8, #4
 	cset	w0, lo
 	ret
                                         // -- End function

@@ -19,9 +19,9 @@ func0000000000000015:                   # @func0000000000000015
 	leal	4(%rdi), %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
-	shll	$2, %esi
+	addl	%esi, %esi
 	subl	%esi, %edi
-	leal	4(%rdi), %eax
+	leal	2(%rdi), %eax
 	retq
 func0000000000000020:                   # @func0000000000000020
 	shll	$2, %esi

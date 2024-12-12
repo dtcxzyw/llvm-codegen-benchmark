@@ -1,8 +1,10 @@
 
-; 23 occurrences:
+; 25 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cuddAddWalsh.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; flac/optimized/utils.c.ll
 ; git/optimized/pretty.ll
 ; ncnn/optimized/pooling.cpp.ll

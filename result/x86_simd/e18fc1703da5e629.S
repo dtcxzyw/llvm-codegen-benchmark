@@ -19,7 +19,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovd2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpcmpeqq	%ymm0, %ymm2, %k1 {%k1}
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

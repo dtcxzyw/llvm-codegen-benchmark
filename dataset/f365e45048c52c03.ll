@@ -19,7 +19,7 @@ entry:
   %2 = add i32 %1, 3
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 1023
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -37,13 +37,14 @@ entry:
   %2 = add nsw i32 %1, 3
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 1023
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/r8169_main.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; node/optimized/simdutf.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
@@ -52,7 +53,7 @@ entry:
   %2 = add nuw nsw i32 %1, 247
   %3 = lshr i32 %2, 9
   %4 = and i32 %3, 8
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -65,7 +66,7 @@ entry:
   %2 = add nuw i32 %1, 4096
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 32768
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -76,8 +77,8 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 256
   %3 = lshr i32 %2, 8
-  %4 = and i32 %3, 16776960
-  %5 = or i32 %4, %0
+  %4 = and i32 %3, 8388352
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

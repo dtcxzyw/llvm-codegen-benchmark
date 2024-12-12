@@ -1,11 +1,13 @@
 
-%"class.std::__cxx11::basic_string.2699105" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2699106", i64, %union.anon.2699107 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2699106" = type { ptr }
-%union.anon.2699107 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2811822" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2811823", i64, %union.anon.2811824 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2811823" = type { ptr }
+%union.anon.2811824 = type { i64, [8 x i8] }
+%"class.pxrInternal_v0_24__pxrReserved__::VtValue.3422597" = type { %"union.std::aligned_storage<8, 8>::type.3422598", %"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3422599" }
+%"union.std::aligned_storage<8, 8>::type.3422598" = type { [8 x i8] }
+%"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3422599" = type { ptr }
 
-; 10 occurrences:
+; 9 occurrences:
 ; llvm/optimized/MachineFunction.cpp.ll
-; openusd/optimized/resolver.cpp.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; rocksdb/optimized/compaction_merging_iterator.cc.ll
 ; rocksdb/optimized/full_filter_block.cc.ll
@@ -15,7 +17,7 @@
 ; rocksdb/optimized/thread_local.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr ptr, ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 -8
@@ -44,7 +46,7 @@ entry:
 ; rocksdb/optimized/thread_local.cc.ll
 ; rocksdb/optimized/write_batch.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %1
   %4 = getelementptr i32, ptr %3, i64 %2
@@ -64,25 +66,23 @@ entry:
   ret ptr %5
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; casadi/optimized/polynomial.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
-; opencv/optimized/chessboard.cpp.ll
-; opencv/optimized/core_detect.cpp.ll
 ; openusd/optimized/pathExpression.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll
 ; openusd/optimized/renderSettingsFlatteningSceneIndex.cpp.ll
+; quantlib/optimized/convolvedstudentt.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; velox/optimized/PlanNode.cpp.ll
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000056(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000057(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = getelementptr %"class.std::__cxx11::basic_string.2699105", ptr %0, i64 %1
+  %4 = getelementptr %"class.std::__cxx11::basic_string.2811822", ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 32
-  %6 = getelementptr %"class.std::__cxx11::basic_string.2699105", ptr %5, i64 %3
+  %6 = getelementptr %"class.std::__cxx11::basic_string.2811822", ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -99,6 +99,17 @@ entry:
 }
 
 ; 1 occurrences:
+; openusd/optimized/resolver.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %"class.pxrInternal_v0_24__pxrReserved__::VtValue.3422597", ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 32
+  %5 = getelementptr i8, ptr %4, i64 %2
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; protobuf/optimized/generated_enum_util.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000054(ptr %0, i64 %1, i64 %2) #0 {
@@ -107,6 +118,19 @@ entry:
   %4 = getelementptr i8, ptr %3, i64 8
   %5 = getelementptr i8, ptr %4, i64 %2
   ret ptr %5
+}
+
+; 2 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; opencv/optimized/chessboard.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000056(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr ptr, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -8
+  %5 = ashr exact i64 %2, 29
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

@@ -1,5 +1,6 @@
 func0000000000000003:                   # @func0000000000000003
 	divuw	a0, a0, a1
-	slli.uw	a0, a0, 3
-	sh1add	a0, a0, a0
+	zext.w	a0, a0
+	li	a1, 104
+	mul	a0, a0, a1
 	ret

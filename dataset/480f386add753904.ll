@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; velox/optimized/MmapAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -4
   %4 = icmp ult i64 %3, %1
@@ -28,7 +28,7 @@ entry:
 ; openusd/optimized/vertexAdjacency.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -48,17 +48,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; openusd/optimized/patchBuilder.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = icmp ult i64 %3, %1
-  %5 = select i1 %4, i32 0, i32 %0
-  ret i32 %5
-}
-
 ; 5 occurrences:
 ; openmpi/optimized/ad_read_coll.ll
 ; openmpi/optimized/ad_read_str_naive.ll
@@ -66,7 +55,7 @@ entry:
 ; openmpi/optimized/ad_write_nolock.ll
 ; openmpi/optimized/ad_write_str_naive.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000017(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000027(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %.not = icmp sgt i64 %3, %1
@@ -77,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = icmp ugt i64 %3, %1
@@ -89,7 +78,7 @@ entry:
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp eq i64 %3, %1

@@ -1,5 +1,5 @@
 
-; 113 occurrences:
+; 109 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
@@ -18,6 +18,7 @@
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; bullet3/optimized/btSliderConstraint.ll
 ; bullet3/optimized/btSoftBody.ll
+; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -26,7 +27,6 @@
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
-; darktable/optimized/introspection_denoiseprofile.c.ll
 ; darktable/optimized/introspection_equalizer.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -82,6 +82,7 @@
 ; mitsuba3/optimized/tabphase.cpp.ll
 ; mitsuba3/optimized/thinlens.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
+; ncnn/optimized/layernorm.cpp.ll
 ; ncnn/optimized/lrn.cpp.ll
 ; ncnn/optimized/lrn_x86.cpp.ll
 ; ncnn/optimized/lrn_x86_avx.cpp.ll
@@ -94,11 +95,6 @@
 ; ncnn/optimized/roialign_x86_avx512.cpp.ll
 ; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; ncnn/optimized/yolodetectionoutput.cpp.ll
-; ncnn/optimized/yolov3detectionoutput.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; nori/optimized/perspective.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/fast_norm.cpp.ll

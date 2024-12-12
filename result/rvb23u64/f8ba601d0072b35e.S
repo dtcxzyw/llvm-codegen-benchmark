@@ -39,14 +39,14 @@ func0000000000000aaa:                   # @func0000000000000aaa
 	fle.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
-func0000000000000247:                   # @func0000000000000247
-	fli.s	fa5, 1.0
-	flt.s	a0, fa2, fa5
+func0000000000000742:                   # @func0000000000000742
 	fmv.w.x	fa5, zero
+	feq.s	a0, fa2, fa5
+	fli.s	fa4, 1.0
 	flt.s	a1, fa5, fa1
+	andn	a0, a1, a0
+	flt.s	a1, fa0, fa4
 	and	a0, a0, a1
-	feq.s	a1, fa0, fa5
-	andn	a0, a0, a1
 	ret
 func000000000000044a:                   # @func000000000000044a
 	fli.s	fa5, 0.5
@@ -81,17 +81,6 @@ func000000000000024a:                   # @func000000000000024a
 	flt.s	a1, fa5, fa1
 	and	a0, a0, a1
 	fle.s	a1, fa0, fa5
-	and	a0, a0, a1
-	ret
-.LCPI10_0:
-	.word	0x4e6e6b28                      # float 1.0E+9
-func00000000000002e2:                   # @func00000000000002e2
-	lui	a0, %hi(.LCPI10_0)
-	flw	fa5, %lo(.LCPI10_0)(a0)
-	feq.s	a0, fa1, fa1
-	flt.s	a1, fa2, fa5
-	flt.s	a2, fa0, fa5
-	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
 func0000000000000cca:                   # @func0000000000000cca

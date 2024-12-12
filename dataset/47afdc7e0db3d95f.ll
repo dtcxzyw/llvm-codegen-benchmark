@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -32,13 +32,14 @@
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i1 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000075(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i1 %0 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = zext i16 %2 to i64
-  %6 = icmp ule i64 %4, %5
+  %6 = icmp samesign ule i64 %4, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
@@ -62,10 +63,10 @@ entry:
 ; ockam-rs/optimized/luz5e0okyn0ri51.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i1 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000045(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i1 %0 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = zext i16 %2 to i64
   %6 = icmp ule i64 %4, %5
   %7 = select i1 %0, i1 %6, i1 false

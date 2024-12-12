@@ -21,6 +21,23 @@ entry:
   ret i64 %6
 }
 
+; 6 occurrences:
+; boost/optimized/to_chars.ll
+; cvc5/optimized/alethe_let_binding.cpp.ll
+; cvc5/optimized/cnf_stream.cpp.ll
+; cvc5/optimized/function_const.cpp.ll
+; cvc5/optimized/sygus_sampler.cpp.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i32
+  %4 = add i32 %0, %1
+  %5 = add nsw i32 %4, %3
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
 ; 11 occurrences:
 ; cvc5/optimized/cvc5.cpp.ll
 ; cvc5/optimized/dtype.cpp.ll
@@ -38,22 +55,6 @@ define i64 @func0000000000000005(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %0, %1
-  %5 = add nsw i32 %4, %3
-  %6 = sext i32 %5 to i64
-  ret i64 %6
-}
-
-; 5 occurrences:
-; cvc5/optimized/alethe_let_binding.cpp.ll
-; cvc5/optimized/cnf_stream.cpp.ll
-; cvc5/optimized/function_const.cpp.ll
-; cvc5/optimized/sygus_sampler.cpp.ll
-; tev/optimized/StbiLdrImageSaver.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = zext i1 %2 to i32
-  %4 = add i32 %0, %1
   %5 = add nsw i32 %4, %3
   %6 = sext i32 %5 to i64
   ret i64 %6

@@ -8,7 +8,7 @@
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000047(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000087(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 16777216
   %3 = icmp eq i32 %1, 0

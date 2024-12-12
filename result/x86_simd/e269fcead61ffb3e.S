@@ -38,28 +38,36 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI5_0:
+	.long	4238353408                      # 0xfca02400
+func000000000000000c:                   # @func000000000000000c
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpslld	$10, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
+	retq
+.LCPI6_0:
 	.long	4294967288                      # 0xfffffff8
 func0000000000000004:                   # @func0000000000000004
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpslld	$3, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	retq
-.LCPI6_0:
+.LCPI7_0:
 	.long	512                             # 0x200
 func0000000000000055:                   # @func0000000000000055
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpslld	$12, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
 	retq
-.LCPI7_0:
+.LCPI8_0:
 	.long	16842752                        # 0x1010000
 func0000000000000050:                   # @func0000000000000050
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpslld	$12, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 func0000000000000044:                   # @func0000000000000044
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -68,19 +76,11 @@ func0000000000000044:                   # @func0000000000000044
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI9_0:
+.LCPI10_0:
 	.long	4294950912                      # 0xffffc000
 func0000000000000075:                   # @func0000000000000075
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpslld	$14, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI9_0(%rip){1to8}, %ymm0, %ymm0
-	retq
-.LCPI10_0:
-	.long	36                              # 0x24
-func000000000000000c:                   # @func000000000000000c
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpslld	$3, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI10_0(%rip){1to8}, %ymm0, %ymm0
 	retq

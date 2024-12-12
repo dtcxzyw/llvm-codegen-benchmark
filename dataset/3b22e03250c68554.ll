@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 58 occurrences:
 ; abc/optimized/exorBits.c.ll
 ; abc/optimized/exorLink.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -10,7 +10,6 @@
 ; hdf5/optimized/H5B2hdr.c.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
-; jq/optimized/unicode_fold3_key.ll
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; libwebp/optimized/enc.c.ll
 ; libwebp/optimized/extras.c.ll
@@ -29,7 +28,6 @@
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; oniguruma/optimized/unicode_fold3_key.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/brightedges.cpp.ll

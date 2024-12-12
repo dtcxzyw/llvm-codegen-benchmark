@@ -1,30 +1,24 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mvni	v1.4h, #115
-	add	v0.4h, v0.4h, v1.4h
-	fmov	d2, d0
-	cmlt	v1.4h, v0.4h, #0
-	usra	v2.4h, v1.4h, #14
-	bic	v2.4h, #3
-	sub	v0.4h, v0.4h, v2.4h
-	sshll	v0.4s, v0.4h, #0
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	sub	w8, w0, #116
+	sxth	w9, w8
+	ubfx	w9, w9, #29, #2
+	add	w9, w8, w9
+	and	w9, w9, #0xfffc
+	sub	w8, w8, w9
+	sxth	x0, w8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v1.4h, #1
-	mov	w8, #21846                      // =0x5556
-	dup	v2.4h, w8
-	add	v0.4h, v0.4h, v1.4h
-	smull	v1.4s, v0.4h, v2.4h
-	movi	v2.4h, #3
-	shrn	v1.4h, v1.4s, #16
-	usra	v1.4h, v1.4h, #15
-	mls	v0.4h, v1.4h, v2.4h
-	sshll	v0.4s, v0.4h, #0
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	add	w8, w0, #1
+	mov	w10, #21846                     // =0x5556
+	sxth	w9, w8
+	mul	w9, w9, w10
+	lsr	w10, w9, #16
+	add	w9, w10, w9, lsr #31
+	add	w9, w9, w9, lsl #1
+	sub	w8, w8, w9
+	sxth	x0, w8
 	ret
                                         // -- End function

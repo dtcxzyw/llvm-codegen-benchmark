@@ -7,11 +7,11 @@ define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 2
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/KodakDecompressor.cpp.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
@@ -22,6 +22,8 @@ entry:
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:

@@ -14,8 +14,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {

@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 83 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; assimp/optimized/ASEParser.cpp.ll
@@ -49,7 +49,6 @@
 ; llvm/optimized/TpiStream.cpp.ll
 ; luau/optimized/BytecodeAnalysis.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CBillboardSceneNode.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
@@ -123,6 +122,17 @@ define i64 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -36
   %2 = zext nneg i32 %0 to i64
+  %3 = add nsw i64 %.neg, %2
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i32 %0, i64 %1) #0 {
+entry:
+  %.neg = sdiv exact i64 %1, -24
+  %2 = zext i32 %0 to i64
   %3 = add nsw i64 %.neg, %2
   ret i64 %3
 }

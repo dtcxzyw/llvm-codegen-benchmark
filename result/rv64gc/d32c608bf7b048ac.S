@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	sext.w	a1, a1
 	sext.w	a2, a0
 	snez	a2, a2
@@ -9,16 +9,16 @@ func00000000000000cc:                   # @func00000000000000cc
 	li	a0, 1
 .LBB0_2:                                # %entry
 	ret
-func0000000000000011:                   # @func0000000000000011
-	xori	a2, a0, 70
-	xori	a1, a1, 768
+func0000000000000021:                   # @func0000000000000021
+	not	a2, a0
+	xori	a1, a1, 273
 	or	a1, a1, a2
 	sext.w	a1, a1
 	bnez	a1, .LBB1_2
-	li	a0, 40
+	li	a0, 10
 .LBB1_2:                                # %entry
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
 	sext.w	a2, a0
 	seqz	a2, a2
@@ -28,7 +28,7 @@ func000000000000001c:                   # @func000000000000001c
 	li	a0, 1
 .LBB2_2:                                # %entry
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	sext.w	a1, a1
 	sext.w	a2, a0
 	addi	a2, a2, -12

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	31                              # 0x1f
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrad	$31, %ymm1, %ymm2
 	vpsrld	$27, %ymm2, %ymm2

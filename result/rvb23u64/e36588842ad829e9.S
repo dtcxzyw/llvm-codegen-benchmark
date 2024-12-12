@@ -13,3 +13,9 @@ func0000000000000000:                   # @func0000000000000000
 	sh1add	a0, a1, a0
 	andi	a0, a0, 63
 	ret
+func0000000000000007:                   # @func0000000000000007
+	lui	a1, 10486
+	addi	a1, a1, -983
+	mul	a0, a0, a1
+	zext.w	a0, a0
+	ret

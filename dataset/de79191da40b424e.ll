@@ -1,35 +1,26 @@
 
-; 7 occurrences:
-; cvc5/optimized/theory_arith_private.cpp.ll
-; linux/optimized/ip_sockglue.ll
+; 4 occurrences:
 ; linux/optimized/pcm_lib.ll
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; re2/optimized/prog.cc.ll
-; z3/optimized/sat_binspr.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
-  %4 = icmp ult i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ugt i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 8 occurrences:
-; abc/optimized/sclBuffer.c.ll
-; ozz-animation/optimized/jsoncpp.cpp.ll
+; 2 occurrences:
 ; postgres/optimized/vacuumlazy.ll
 ; qemu/optimized/hw_net_e1000.c.ll
-; slurm/optimized/sbatch.ll
-; z3/optimized/dd_pdd.cpp.ll
-; z3/optimized/realclosure.cpp.ll
-; z3/optimized/sls_engine.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -53,12 +44,12 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 9
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 15 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/sclSize.c.ll
 ; abc/optimized/sfmDec.c.ll
@@ -74,12 +65,17 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
 ; soc-simulator/optimized/sim_mycpu.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
-  %4 = icmp eq i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -89,7 +85,20 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; abc/optimized/sclBuffer.c.ll
+; slurm/optimized/sbatch.ll
+; z3/optimized/dd_pdd.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 12
+  %4 = icmp samesign ult i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -97,27 +106,37 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
-  %4 = icmp sgt i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp slt i32 %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_observer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 4
+  %4 = icmp slt i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp ule i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 4 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 3 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll
@@ -125,20 +144,31 @@ entry:
 define i1 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = icmp uge i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ule i32 %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/intel_crt.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 16
+  %4 = icmp samesign uge i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 2 occurrences:
-; freetype/optimized/sfnt.c.ll
-; linux/optimized/intel_crt.ll
+; linux/optimized/ip_sockglue.ll
+; z3/optimized/sat_binspr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
-  %4 = icmp ule i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp samesign ugt i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -148,19 +178,19 @@ entry:
 define i1 @func0000000000000007(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = icmp sge i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp sle i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 4
-  %4 = icmp sle i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp sge i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

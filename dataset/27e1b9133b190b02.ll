@@ -25,7 +25,7 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -44,6 +44,8 @@ entry:
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -59,7 +61,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = mul i64 %4, 8503243848024064
   ret i64 %5
 }

@@ -13,7 +13,7 @@
 define ptr @func0000000000000002(ptr %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = freeze i1 %2
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = xor i1 %4, true
   %6 = sext i1 %5 to i64
   %7 = getelementptr nusw { i64, i64 }, ptr %0, i64 %6

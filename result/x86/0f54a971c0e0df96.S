@@ -4,5 +4,5 @@ func0000000000000004:                   # @func0000000000000004
 	testb	$1, %sil
 	cmovnel	%edx, %ecx
 	subl	%ecx, %eax
-	shll	$16, %eax
+	shll	$8, %eax
 	retq

@@ -3,14 +3,14 @@ func0000000000000004:                   # @func0000000000000004
 	testb	$1, %sil
 	movl	$1, %eax
 	cmovel	%edx, %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	shrl	$6, %edx
 	testb	$1, %sil
 	movl	$1, %eax
 	cmovel	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

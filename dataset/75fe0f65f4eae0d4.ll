@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/parse_utilcmd.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:

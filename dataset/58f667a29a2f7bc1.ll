@@ -1,6 +1,8 @@
 
-; 28 occurrences:
+; 30 occurrences:
+; bdwgc/optimized/gc.c.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
+; darktable/optimized/amaze.cc.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll

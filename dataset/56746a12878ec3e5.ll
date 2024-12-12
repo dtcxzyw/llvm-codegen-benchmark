@@ -1,5 +1,5 @@
 
-; 351 occurrences:
+; 354 occurrences:
 ; abc/optimized/sclLibScl.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; abc/optimized/timDump.c.ll
@@ -9,6 +9,7 @@
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/gim_contact.ll
 ; bullet3/optimized/gim_tri_collision.ll
 ; darktable/optimized/introspection_filmic.c.ll
@@ -235,7 +236,6 @@
 ; openusd/optimized/vec3h.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -351,6 +351,9 @@
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; xgboost/optimized/charconv.cc.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(float %0) #0 {
 entry:

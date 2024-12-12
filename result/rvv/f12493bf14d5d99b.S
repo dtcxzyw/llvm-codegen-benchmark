@@ -1,11 +1,11 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v8, v8, 1
 	vmsne.vi	v12, v8, 0
 	vmsne.vi	v8, v10, 0
 	vmxor.mm	v0, v8, v12
 	ret
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v0, v10, 0
 	vmv.v.i	v10, 0

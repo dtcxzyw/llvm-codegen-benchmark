@@ -1,4 +1,4 @@
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	vptestnmq	%ymm1, %ymm1, %k1
 	vpsrlq	$32, %ymm0, %ymm0 {%k1}
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -11,7 +11,7 @@ func0000000000000111:                   # @func0000000000000111
 	.quad	4294967295                      # 0xffffffff
 .LCPI1_1:
 	.quad	65535                           # 0xffff
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
 	vpsrlq	$32, %ymm0, %ymm0 {%k1}
 	vpxor	%xmm1, %xmm1, %xmm1

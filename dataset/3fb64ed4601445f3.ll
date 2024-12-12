@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; libwebp/optimized/enc_sse2.c.ll
 ; libwebp/optimized/enc_sse41.c.ll
 ; linux/optimized/route.ll
 ; openusd/optimized/patchBuilder.cpp.ll
+; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000031(i1 %0, i16 %1) #0 {
 entry:

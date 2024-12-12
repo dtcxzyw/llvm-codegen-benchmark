@@ -9,7 +9,7 @@ func0000000000000020:                   # @func0000000000000020
 	leaq	-1(%rax,%rsi), %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	leaq	-1(%rsi,%rdx), %rax
+	leaq	-1(%rdx,%rsi), %rax
 	andq	%rdi, %rax
 	leaq	-1(%rax,%rsi), %rax
 	retq

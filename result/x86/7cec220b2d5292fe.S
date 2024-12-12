@@ -4,12 +4,12 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func000000000000009a:                   # @func000000000000009a
-	cmpl	%esi, %edx
-	setl	%al
+func000000000000012a:                   # @func000000000000012a
+	cmpl	%edx, %esi
+	setg	%al
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	sete	%al
@@ -27,7 +27,7 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	subl	%edx, %esi
 	cmpl	$64, %esi
 	setb	%al
@@ -40,17 +40,17 @@ func0000000000000001:                   # @func0000000000000001
 	andb	%dil, %al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	setl	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	setge	%al

@@ -1,7 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
 	shll	$20, %esi
 	andl	$2145386496, %esi               # imm = 0x7FE00000
-	leal	111(%rsi,%rdi), %eax
+	leal	111(%rdi,%rsi), %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	(,%rsi,8), %eax

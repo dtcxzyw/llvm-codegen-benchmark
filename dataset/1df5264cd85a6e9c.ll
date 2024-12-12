@@ -22,13 +22,14 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; cmake/optimized/parsedate.c.ll
 ; coreutils-rs/optimized/11fdr7kbbvsdssj2.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
 ; curl/optimized/libcurl_la-parsedate.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {

@@ -1,58 +1,74 @@
-func000000000000004c:                   // @func000000000000004c
+func000000000000008c:                   // @func000000000000008c
 // %bb.0:                               // %entry
-	movi	v2.16b, #95
-	cmlt	v3.16b, v0.16b, #0
-	orr	v1.16b, v3.16b, v1.16b
-	cmeq	v0.16b, v0.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	sxtb	w8, w0
+	and	w9, w0, #0xff
+	cmp	w9, #95
+	cset	w9, eq
+	cmp	w8, #0
+	orr	w8, w9, w1
+	cset	w9, lt
+	orr	w8, w9, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000042:                   // @func0000000000000042
+func0000000000000082:                   // @func0000000000000082
 // %bb.0:                               // %entry
-	movi	v2.16b, #35
-	movi	v3.16b, #58
-	cmeq	v2.16b, v0.16b, v2.16b
-	cmeq	v0.16b, v0.16b, v3.16b
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v0.16b, v1.16b
+	and	w8, w0, #0xff
+	cmp	w8, #35
+	cset	w9, eq
+	cmp	w8, #58
+	orr	w8, w1, w9
+	cset	w9, eq
+	orr	w8, w9, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000102:                   // @func0000000000000102
+func0000000000000202:                   // @func0000000000000202
 // %bb.0:                               // %entry
-	movi	v2.16b, #17
-	movi	v3.16b, #193
-	cmhi	v2.16b, v2.16b, v0.16b
-	cmeq	v0.16b, v0.16b, v3.16b
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v0.16b, v1.16b
+	and	w8, w0, #0xff
+	cmp	w8, #17
+	cset	w9, lo
+	cmp	w8, #193
+	orr	w8, w9, w1
+	cset	w9, eq
+	orr	w8, w9, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000050:                   // @func0000000000000050
+func0000000000000302:                   // @func0000000000000302
 // %bb.0:                               // %entry
-	movi	v2.16b, #200
-	movi	v3.16b, #249
-	cmeq	v2.16b, v0.16b, v2.16b
-	cmhi	v0.16b, v0.16b, v3.16b
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v0.16b, v1.16b
+	sxtb	w8, w0
+	and	w9, w0, #0xff
+	cmp	w8, #0
+	cset	w8, lt
+	cmp	w9, #95
+	cset	w9, eq
+	orr	w9, w9, w1
+	orr	w8, w9, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000182:                   // @func0000000000000182
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	movi	v2.16b, #95
-	cmlt	v3.16b, v0.16b, #0
-	orr	v1.16b, v3.16b, v1.16b
-	cmeq	v0.16b, v0.16b, v2.16b
-	orr	v0.16b, v0.16b, v1.16b
+	and	w8, w1, #0xff
+	cmp	w8, #22
+	cset	w9, eq
+	cmp	w8, #16
+	orr	w8, w9, w0
+	cset	w9, eq
+	orr	w8, w8, w9
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000090:                   // @func0000000000000090
 // %bb.0:                               // %entry
-	movi	v2.16b, #22
-	movi	v3.16b, #16
-	cmeq	v2.16b, v1.16b, v2.16b
-	cmeq	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v0.16b, v0.16b, v1.16b
+	and	w8, w0, #0xff
+	cmp	w8, #14
+	cset	w9, eq
+	cmp	w8, #31
+	orr	w8, w1, w9
+	cset	w9, hi
+	orr	w8, w9, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

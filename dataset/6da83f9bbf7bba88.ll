@@ -3,7 +3,7 @@
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; opencv/optimized/homography_decomp.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000008b(i32 %0, i32 %1) #0 {
+define i32 @func000000000000010b(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 256
   %3 = zext i1 %2 to i32
@@ -18,7 +18,7 @@ entry:
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000060b(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000c0b(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32

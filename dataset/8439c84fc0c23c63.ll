@@ -1,6 +1,7 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcCascade.c.ll
+; abc/optimized/rsbDec6.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; git/optimized/date.ll
 ; gromacs/optimized/perf_est.cpp.ll
@@ -76,14 +77,13 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
-; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = mul nuw i32 %3, 16843009
+  %4 = mul nuw i32 %3, 12
   ret i32 %4
 }
 

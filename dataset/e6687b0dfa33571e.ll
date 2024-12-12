@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; c3c/optimized/bigint.c.ll
@@ -12,6 +12,9 @@
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

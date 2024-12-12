@@ -10,7 +10,7 @@ func0000000000000003:                   # @func0000000000000003
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2 {%k1} # ymm2 {%k1} = [44,44,44,44]
-	vpmullq	%ymm0, %ymm2, %ymm0
+	vpmullq	%ymm2, %ymm0, %ymm0
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$31, %xmm1, %xmm1

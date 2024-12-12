@@ -6,6 +6,13 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 33
 	mulhu	a0, a0, a1
 	ret
+func0000000000000043:                   # @func0000000000000043
+	add	a0, a0, a1
+	li	a1, 9
+	slli	a0, a0, 32
+	slli	a1, a1, 35
+	mulhu	a0, a0, a1
+	ret
 func0000000000000063:                   # @func0000000000000063
 	add	a0, a0, a1
 	slli	a0, a0, 32
@@ -13,12 +20,15 @@ func0000000000000063:                   # @func0000000000000063
 	srli	a0, a0, 28
 	sub	a0, a0, a1
 	ret
-func0000000000000043:                   # @func0000000000000043
+.LCPI3_0:
+	.quad	5871781006564002453             # 0x517cc1b727220a95
+func0000000000000000:                   # @func0000000000000000
+	lui	a2, %hi(.LCPI3_0)
+	ld	a2, %lo(.LCPI3_0)(a2)
 	add	a0, a0, a1
-	li	a1, 5
 	slli	a0, a0, 32
-	slli	a1, a1, 34
-	mulhu	a0, a0, a1
+	srli	a0, a0, 32
+	mul	a0, a0, a2
 	ret
 func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1

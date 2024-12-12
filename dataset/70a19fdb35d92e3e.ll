@@ -38,7 +38,7 @@
 ; ruby/optimized/bignum.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %.mask = and i64 %0, -2
   %1 = icmp eq i64 %.mask, 4
@@ -93,22 +93,21 @@ entry:
 ; z3/optimized/solve_eqs.cpp.ll
 ; z3/optimized/spacer_quant_generalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0) #0 {
+define i1 @func00000000000000a4(i64 %0) #0 {
 entry:
   %1 = and i64 %0, -16
   %2 = icmp eq i64 %1, 16
   ret i1 %2
 }
 
-; 6 occurrences:
-; cpython/optimized/longobject.ll
+; 5 occurrences:
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; folly/optimized/dynamic.cpp.ll
 ; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; pybind11/optimized/test_builtin_casters.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 8
   %2 = add nsw i64 %1, -54043195528445953
@@ -116,15 +115,13 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
-; brotli/optimized/entropy_encode.c.ll
+; 14 occurrences:
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_distr.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
-; git/optimized/record.ll
 ; libpng/optimized/png.c.ll
 ; minetest/optimized/CImage.cpp.ll
 ; node/optimized/libnode.node_zlib.ll
@@ -134,7 +131,7 @@ entry:
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; wireshark/optimized/packet-riemann.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 5
   %2 = add nsw i64 %1, -1
@@ -142,10 +139,22 @@ entry:
   ret i1 %3
 }
 
+; 2 occurrences:
+; brotli/optimized/entropy_encode.c.ll
+; git/optimized/record.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 7
+  %2 = add nsw i64 %1, -1
+  %3 = icmp samesign ult i64 %2, 128
+  ret i1 %3
+}
+
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0) #0 {
+define i1 @func00000000000000a1(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 32
   ret i1 %1
@@ -154,7 +163,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/charreach.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0) #0 {
+define i1 @func00000000000000e1(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 128
   ret i1 %1
@@ -163,11 +172,22 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
+define i1 @func00000000000000b8(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = add nsw i64 %1, -4
   %3 = icmp ult i64 %2, -3
+  ret i1 %3
+}
+
+; 1 occurrences:
+; cpython/optimized/longobject.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 3
+  %2 = add nsw i64 %1, -614891469123651722
+  %3 = icmp ult i64 %2, -614891469123651721
   ret i1 %3
 }
 

@@ -12,7 +12,7 @@ define i16 @func0000000000000004(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 60
   %3 = zext nneg i8 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -26,7 +26,7 @@ define i16 @func0000000000000007(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 60
   %3 = zext nneg i8 %2 to i16
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -37,7 +37,7 @@ define i16 @func0000000000000003(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -64
   %3 = zext i8 %2 to i16
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 

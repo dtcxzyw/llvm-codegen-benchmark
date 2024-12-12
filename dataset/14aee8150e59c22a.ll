@@ -35,7 +35,7 @@
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -51,7 +51,7 @@ entry:
 define i32 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -62,7 +62,7 @@ entry:
 define i32 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 

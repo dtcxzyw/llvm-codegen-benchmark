@@ -1,22 +1,24 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; lief/optimized/poly1305.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 7
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
-; 250 occurrences:
+; 257 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -267,17 +269,25 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
 
-; 99 occurrences:
+; 100 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -382,7 +392,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -395,20 +405,8 @@ define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
-  %6 = add i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 3
-  %4 = zext nneg i32 %3 to i64
-  %5 = add nuw i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = add nuw nsw i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

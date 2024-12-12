@@ -14,8 +14,7 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
-; git/optimized/combine-diff.ll
+; 4 occurrences:
 ; linux/optimized/printk_ringbuffer.ll
 ; php/optimized/dtoa.ll
 ; qemu/optimized/system_physmem.c.ll
@@ -26,11 +25,11 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 
-; 251 occurrences:
+; 249 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -126,8 +125,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -288,7 +285,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 

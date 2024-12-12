@@ -11,12 +11,12 @@
 ; opencv/optimized/ts_gtest.cpp.ll
 ; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = icmp slt i64 %2, 0
   %5 = select i1 %4, i64 %3, i64 %1
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

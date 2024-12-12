@@ -6,7 +6,7 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; ruby/optimized/option.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %3, 2
@@ -20,7 +20,7 @@ entry:
 ; libpng/optimized/png.c.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
   %4 = icmp ne i64 %3, 32
@@ -34,7 +34,7 @@ entry:
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -7
   %4 = icmp ne i64 %3, 0
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/script.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 17592186044416
   %4 = icmp eq i64 %3, 0

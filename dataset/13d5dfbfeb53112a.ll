@@ -11,9 +11,8 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
-; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000008a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -36,9 +35,8 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
-; hdf5/optimized/H5Tconv.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -46,6 +44,30 @@ entry:
   %4 = select i1 %3, i64 %1, i64 %2
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -2
+  ret ptr %6
+}
+
+; 1 occurrences:
+; hdf5/optimized/H5Tconv.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i64 %1, i64 %2
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 15
+  ret ptr %6
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; Function Attrs: nounwind
+define ptr @func000000000000008b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 1024
+  %4 = select i1 %3, i64 %1, i64 %2
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   ret ptr %6
 }
 

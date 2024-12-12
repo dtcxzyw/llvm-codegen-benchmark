@@ -1,5 +1,6 @@
 
-; 188 occurrences:
+; 189 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -244,7 +245,8 @@ entry:
   ret i32 %2
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -282,6 +284,18 @@ define i32 @func0000000000000017(i32 %0) #0 {
 entry:
   %1 = mul i32 %0, 6
   ret i32 %1
+}
+
+; 3 occurrences:
+; boost/optimized/init_from_settings.ll
+; opencv/optimized/fisheye.cpp.ll
+; opencv/optimized/omnidir.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003f(i32 %0) #0 {
+entry:
+  %1 = mul nuw i32 %0, 10
+  %2 = add nuw i32 %1, 720368
+  ret i32 %2
 }
 
 ; 4 occurrences:
@@ -325,17 +339,6 @@ define i32 @func0000000000000035(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 3
   %2 = sub i32 112, %1
-  ret i32 %2
-}
-
-; 2 occurrences:
-; opencv/optimized/fisheye.cpp.ll
-; opencv/optimized/omnidir.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003f(i32 %0) #0 {
-entry:
-  %1 = mul nuw i32 %0, 6
-  %2 = add nuw i32 %1, 9
   ret i32 %2
 }
 

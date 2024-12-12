@@ -11,7 +11,7 @@ entry:
   %3 = sext i8 %2 to i32
   %4 = shl nsw i32 %1, 6
   %5 = or i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = sext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 4
   %5 = or i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

@@ -5,13 +5,6 @@ func00000000000001ef:                   # @func00000000000001ef
 	movzbl	%dil, %eax
 	addl	%ecx, %eax
 	retq
-func00000000000001e7:                   # @func00000000000001e7
-	imull	$85, %edx, %eax
-	addl	%esi, %eax
-	imull	$85, %eax, %ecx
-	movzbl	%dil, %eax
-	addl	%ecx, %eax
-	retq
 func00000000000000b5:                   # @func00000000000000b5
 	leal	(%rdx,%rdx,4), %eax
 	leal	(%rsi,%rax,2), %eax

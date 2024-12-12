@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000981(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, %0
   %3 = icmp slt i32 %1, 1
@@ -19,7 +19,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000841(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, %0
   %3 = icmp eq i32 %1, 0
@@ -34,7 +34,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000986(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, %1
   %3 = icmp slt i32 %1, 0
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/backward_references_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000821(i32 %0, i32 %1) #0 {
+define i1 @func0000000000002041(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, %0
   %3 = icmp eq i32 %1, 0

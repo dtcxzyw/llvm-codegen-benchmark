@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; qemu/optimized/block_mirror.c.ll
 ; zxing/optimized/PDFWriter.cpp.ll

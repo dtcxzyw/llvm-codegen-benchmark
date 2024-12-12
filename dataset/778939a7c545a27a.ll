@@ -18,13 +18,12 @@ entry:
   ret i32 %2
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; draco/optimized/dynamic_integer_points_kd_tree_decoder.cc.ll
 ; draco/optimized/float_points_tree_decoder.cc.ll
 ; draco/optimized/kd_tree_attributes_decoder.cc.ll
 ; jq/optimized/decNumber.ll
 ; linux/optimized/acpi_video.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {

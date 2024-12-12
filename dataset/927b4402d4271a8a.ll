@@ -1,11 +1,12 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/mapgen_carpathian.cpp.ll
 ; ncnn/optimized/deformableconv2d.cpp.ll
@@ -34,7 +35,7 @@
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %1
+  %4 = fadd float %1, %3
   %5 = fsub float %4, %0
   ret float %5
 }

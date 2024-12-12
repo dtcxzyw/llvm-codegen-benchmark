@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 79 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -20,8 +20,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -82,11 +80,11 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 1
-  %5 = icmp sgt i32 %3, %0
+  %5 = icmp slt i32 %0, %3
   %6 = and i1 %5, %4
   ret i1 %6
 }
@@ -94,11 +92,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp slt i32 %3, 1
-  %5 = icmp sge i32 %3, %0
+  %5 = icmp sle i32 %0, %3
   %6 = and i1 %4, %5
   ret i1 %6
 }
@@ -107,10 +105,10 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ab(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000054b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   %5 = icmp sgt i32 %3, -5
   %6 = and i1 %4, %5
   ret i1 %6
@@ -120,11 +118,11 @@ entry:
 ; icu/optimized/coleitr.ll
 ; icu/optimized/dictbe.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000054a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, -1
-  %5 = icmp slt i32 %3, %0
+  %5 = icmp sgt i32 %0, %3
   %6 = and i1 %4, %5
   ret i1 %6
 }
@@ -132,11 +130,11 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dsytf2_rk.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %1, %2
+  %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 0
-  %5 = icmp sgt i32 %3, %0
+  %5 = icmp slt i32 %0, %3
   %6 = and i1 %4, %5
   ret i1 %6
 }

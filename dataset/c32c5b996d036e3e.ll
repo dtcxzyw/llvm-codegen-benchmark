@@ -1,10 +1,9 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/edit_paint.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; opencv/optimized/ippe.cpp.ll
 ; openusd/optimized/utils.cpp.ll

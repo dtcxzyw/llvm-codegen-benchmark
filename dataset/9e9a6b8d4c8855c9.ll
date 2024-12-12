@@ -36,10 +36,10 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i32 %1, i1 %2) #0 {
+define i32 @func0000000000000029(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 16
-  %4 = icmp ult i32 %1, 256
+  %4 = icmp samesign ult i32 %1, 256
   %5 = select i1 %4, i32 %3, i32 %0
   %6 = or disjoint i32 %5, 4
   ret i32 %6

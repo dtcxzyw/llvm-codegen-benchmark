@@ -29,9 +29,9 @@ define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 34359738368
   %.masked = and i64 %1, 51539607551
-  %4 = or i64 %3, %.masked
+  %4 = or i64 %.masked, %3
   %.masked1 = and i64 %0, 68719476735
-  %5 = or i64 %4, %.masked1
+  %5 = or i64 %.masked1, %4
   ret i64 %5
 }
 
@@ -45,7 +45,7 @@ entry:
   %.masked = and i64 %1, -69256347649
   %4 = or i64 %3, %.masked
   %.masked1 = and i64 %0, -536870913
-  %5 = or i64 %4, %.masked1
+  %5 = or i64 %.masked1, %4
   ret i64 %5
 }
 
@@ -60,7 +60,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = or i64 %2, %1
+  %3 = or i64 %1, %2
   %4 = and i64 %3, 7
   %.masked = and i64 %0, 463
   %5 = or i64 %4, %.masked

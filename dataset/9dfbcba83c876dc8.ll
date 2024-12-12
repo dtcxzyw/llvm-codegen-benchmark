@@ -13,7 +13,7 @@
 ; rustfmt-rs/optimized/llbxf4pclolbp5s.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0) #0 {
+define i1 @func000000000000018c(ptr %0) #0 {
 entry:
   %1 = getelementptr i8, ptr %0, i64 -24
   %2 = icmp ne ptr %1, null

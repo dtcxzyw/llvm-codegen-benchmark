@@ -22,13 +22,14 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/fretTime.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/map.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll

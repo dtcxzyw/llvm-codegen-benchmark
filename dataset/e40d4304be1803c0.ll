@@ -54,7 +54,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -3
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -105,7 +105,7 @@ entry:
   %2 = shl i32 %1, 4
   %3 = add i32 %2, 32
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -120,7 +120,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 4
   %3 = add nuw nsw i32 %2, 4095
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -132,23 +132,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 1024
   %4 = zext i32 %3 to i64
-  %5 = add nuw i64 %4, %0
-  ret i64 %5
-}
-
-; 5 occurrences:
-; brotli/optimized/brotli_bit_stream.c.ll
-; luajit/optimized/minilua.ll
-; opencv/optimized/arithm.cpp.ll
-; slurm/optimized/ebpf.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i64 @func000000000000007c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 3
-  %3 = add nuw nsw i32 %2, 8
-  %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -160,7 +144,7 @@ entry:
   %2 = shl i32 %1, 3
   %3 = add i32 %2, 40
   %4 = zext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -172,7 +156,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, 16
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -184,7 +168,22 @@ entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw i32 %2, 422
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 4 occurrences:
+; brotli/optimized/brotli_bit_stream.c.ll
+; luajit/optimized/minilua.ll
+; opencv/optimized/arithm.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func000000000000007c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 2
+  %3 = add nuw nsw i32 %2, 4
+  %4 = zext nneg i32 %3 to i64
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -196,7 +195,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = add nsw i32 %2, -4
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

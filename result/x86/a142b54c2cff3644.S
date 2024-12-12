@@ -28,14 +28,14 @@ func0000000000000006:                   # @func0000000000000006
 	movl	$5, %eax
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	leal	1(%rsi), %ecx
-	testb	$1, %dil
-	movl	$8, %eax
-	cmoveq	%rcx, %rax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	leal	-6(%rsi), %ecx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rcx, %rax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	leal	1(%rsi), %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax

@@ -6,17 +6,14 @@
 define i64 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 11 occurrences:
+; 8 occurrences:
 ; abc/optimized/monotone.c.ll
-; gromacs/optimized/slasq5.cpp.ll
-; ncnn/optimized/padding.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr4.c.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -34,11 +31,10 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlasq5.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openspiel/optimized/twixtboard.cc.ll

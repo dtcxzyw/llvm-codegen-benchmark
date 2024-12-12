@@ -24,7 +24,7 @@ entry:
   %2 = lshr i8 %1, 4
   %narrow = mul nuw i8 %2, 10
   %3 = zext i8 %narrow to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

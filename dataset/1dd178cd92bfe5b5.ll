@@ -65,11 +65,11 @@
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %0, 4
   %3 = shl nsw i64 %2, 2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }

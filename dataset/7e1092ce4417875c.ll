@@ -1,10 +1,8 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; hermes/optimized/DateUtil.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
-; wireshark/optimized/packet-ieee1609dot2.c.ll
-; wireshark/optimized/packet-its.c.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind

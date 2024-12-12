@@ -1,15 +1,4 @@
 
-; 1 occurrences:
-; llvm/optimized/CGOpenMPRuntime.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 7
-  %3 = select i1 %2, i64 %0, i64 0
-  %4 = sub nsw i64 0, %3
-  ret i64 %4
-}
-
 ; 2 occurrences:
 ; linux/optimized/page-writeback.ll
 ; zstd/optimized/zstd_v01.c.ll
@@ -58,17 +47,6 @@ entry:
   %2 = icmp slt i64 %1, 0
   %3 = select i1 %2, i64 %0, i64 0
   %4 = sub i64 0, %3
-  ret i64 %4
-}
-
-; 1 occurrences:
-; cpython/optimized/multibytecodec.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp sgt i64 %1, -1
-  %3 = sub i64 9223372036854775807, %0
-  %4 = select i1 %2, i64 %3, i64 -9223372036854775808
   ret i64 %4
 }
 

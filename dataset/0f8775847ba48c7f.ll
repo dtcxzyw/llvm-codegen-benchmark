@@ -51,7 +51,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %0, %4
   ret i32 %5
 }
@@ -62,7 +62,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 %0, %4
   ret i32 %5
 }
@@ -81,10 +81,11 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/to_chars.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libquic/optimized/error_correction.c.ll
 ; nuklear/optimized/unity.c.ll
@@ -97,7 +98,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %0, %4
   ret i32 %5
 }
@@ -117,6 +118,18 @@ entry:
   ret i32 %5
 }
 
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; icu/optimized/bytestriebuilder.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 1
+  %4 = add nsw i32 %1, %3
+  %5 = sub nsw i32 %0, %4
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; libquic/optimized/error_correction.c.ll
 ; Function Attrs: nounwind
@@ -128,8 +141,10 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; libquic/optimized/url_canon_relative.cc.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; openusd/optimized/warped_motion.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -162,34 +177,14 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/dgesdd.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
 ; linux/optimized/ah6.ll
-; openblas/optimized/dgesdd.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = add nsw i32 %3, %1
-  %5 = sub i32 %0, %4
-  ret i32 %5
-}
-
-; 9 occurrences:
-; gromacs/optimized/dtrtri.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
-; openblas/optimized/dgesdd.c.ll
-; openblas/optimized/dgesvd.c.ll
-; openblas/optimized/dlaqp3rk.c.ll
-; openblas/optimized/dlaqps.c.ll
-; openblas/optimized/dsbevd.c.ll
-; openblas/optimized/dsbgvd.c.ll
-; openblas/optimized/dspevd.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 1
   %4 = add nsw i32 %3, %1
   %5 = sub i32 %0, %4
   ret i32 %5
@@ -208,7 +203,7 @@ entry:
 define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub i32 %0, %4
   ret i32 %5
 }
@@ -235,7 +230,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub nsw i32 %0, %4
   ret i32 %5
 }
@@ -259,7 +254,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -24
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %0, %4
   ret i32 %5
 }
@@ -275,14 +270,16 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; icu/optimized/bytestriebuilder.ll
+; 3 occurrences:
+; openblas/optimized/dgesvd.c.ll
+; openblas/optimized/dlaqp3rk.c.ll
+; openblas/optimized/dlaqps.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = add nsw i32 %3, %1
-  %5 = sub nsw i32 %0, %4
+  %3 = add nsw i32 %2, 1
+  %4 = add nsw i32 %1, %3
+  %5 = sub i32 %0, %4
   ret i32 %5
 }
 

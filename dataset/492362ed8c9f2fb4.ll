@@ -11,22 +11,22 @@ define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = xor i64 %3, -1
-  %5 = icmp ult i64 %4, %1
+  %5 = icmp ugt i64 %1, %4
   %6 = zext i1 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
 ; 1 occurrences:
 ; php/optimized/hash_sha.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000620(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000c20(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = xor i64 %3, -1
-  %5 = icmp ult i64 %4, %1
+  %5 = icmp ugt i64 %1, %4
   %6 = zext i1 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -38,9 +38,9 @@ define i64 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = xor i64 %3, -1
-  %5 = icmp ult i64 %4, %1
+  %5 = icmp ugt i64 %1, %4
   %6 = zext i1 %5 to i64
-  %7 = add nuw i64 %6, %0
+  %7 = add nuw i64 %0, %6
   ret i64 %7
 }
 
@@ -55,9 +55,9 @@ define i64 @func0000000000000023(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = xor i64 %3, -1
-  %5 = icmp ult i64 %4, %1
+  %5 = icmp ugt i64 %1, %4
   %6 = zext i1 %5 to i64
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -73,9 +73,9 @@ define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 34
   %4 = xor i64 %3, -1
-  %5 = icmp ult i64 %4, %1
+  %5 = icmp ugt i64 %1, %4
   %6 = zext i1 %5 to i64
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 

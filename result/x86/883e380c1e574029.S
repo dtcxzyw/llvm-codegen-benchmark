@@ -13,6 +13,11 @@ func0000000000000030:                   # @func0000000000000030
 	leaq	(%rdi,%rsi,4), %rax
 	leaq	(%rax,%rdx,4), %rax
 	retq
+func000000000000003c:                   # @func000000000000003c
+	andl	$2147483616, %edx               # imm = 0x7FFFFFE0
+	leaq	(%rdi,%rsi,4), %rax
+	leaq	(%rax,%rdx,4), %rax
+	retq
 func0000000000000038:                   # @func0000000000000038
 	andl	$2147483616, %edx               # imm = 0x7FFFFFE0
 	leaq	(%rdi,%rsi,4), %rax

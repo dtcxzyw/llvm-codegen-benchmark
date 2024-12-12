@@ -1,14 +1,14 @@
 
-%struct.rcLayerRegion.2914484 = type { [63 x i8], [16 x i8], i16, i16, i8, i8, i8, i8 }
+%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
+%struct.rcLayerRegion.3108530 = type { [63 x i8], [16 x i8], i16, i16, i8, i8, i8, i8 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/config.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/ip_options.ll
-; linux/optimized/uprobes.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
@@ -25,13 +25,13 @@
 define ptr @func0000000000000000(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr i64, ptr %0, i64 %3
+  %4 = getelementptr %struct.TCGArgConstraint.2707243, ptr %0, i64 %3
   %5 = zext i8 %1 to i64
-  %6 = getelementptr i64, ptr %4, i64 %5
+  %6 = getelementptr %struct.TCGArgConstraint.2707243, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 57 occurrences:
+; 63 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -77,10 +77,16 @@ entry:
 ; php/optimized/pcre2_pattern_info.ll
 ; php/optimized/pcre2_study.ll
 ; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/enum.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/feature_resolver.cc.ll
 ; protobuf/optimized/field_mask_util.cc.ll
 ; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -90,16 +96,16 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1, i8 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
 ; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
@@ -119,7 +125,6 @@ entry:
 ; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
@@ -135,12 +140,12 @@ entry:
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i8 %1, i8 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i8 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -148,12 +153,12 @@ entry:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i8 %1, i8 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw %struct.rcLayerRegion.2914484, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.rcLayerRegion.3108530, ptr %0, i64 %3
   %5 = zext nneg i8 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -169,37 +174,15 @@ entry:
   ret ptr %6
 }
 
-; 11 occurrences:
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
-; protobuf/optimized/command_line_interface.cc.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/feature_resolver.cc.ll
-; protobuf/optimized/file.cc.ll
-; protobuf/optimized/map.cc.ll
-; protobuf/optimized/message_builder.cc.ll
-; protobuf/optimized/message_builder_lite.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i64
-  %4 = getelementptr i32, ptr %0, i64 %3
-  %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw i32, ptr %4, i64 %5
-  ret ptr %6
-}
-
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i8 %1, i8 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = zext nneg i8 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

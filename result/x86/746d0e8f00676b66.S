@@ -16,3 +16,9 @@ func0000000000000011:                   # @func0000000000000011
 	leaq	(%rsi,%rdi,2), %rax
 	orq	$1, %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	shrq	%rsi
+	leaq	(%rsi,%rdi), %rax
+	shlq	$5, %rax
+	orq	$24, %rax
+	retq

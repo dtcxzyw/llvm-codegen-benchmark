@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -27,6 +27,7 @@
 ; spike/optimized/rstsa16.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
@@ -34,7 +35,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 49
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -61,7 +62,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 %4, 63
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

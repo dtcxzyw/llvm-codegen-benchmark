@@ -19,10 +19,19 @@ func000000000000000c:                   # @func000000000000000c
 	sext.w	a0, a0
 	snez	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	sext.w	a0, a0
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	sext.w	a0, a0
+	sltiu	a0, a0, 256
+	xori	a0, a0, 1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a0, a0
+	sltiu	a0, a0, 32
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a0, a0
@@ -33,7 +42,7 @@ func000000000000000b:                   # @func000000000000000b
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	sext.w	a0, a0
 	sltiu	a0, a0, 2
 	ret

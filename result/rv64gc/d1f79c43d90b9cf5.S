@@ -1,4 +1,4 @@
-func000000000000006a:                   # @func000000000000006a
+func000000000000006b:                   # @func000000000000006b
 	fmv.w.x	fa5, a2
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa5

@@ -1,4 +1,17 @@
 
+; 2 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; ncnn/optimized/pooling3d.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000040(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %0, 4
+  %4 = mul i64 %3, %2
+  %5 = getelementptr i8, ptr %1, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
 ; 18 occurrences:
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/basecorrelationstructure.ll
@@ -22,7 +35,7 @@
 define ptr @func000000000000008f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %0, 1
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = getelementptr nusw nuw double, ptr %1, i64 %4
   %6 = getelementptr nusw nuw double, ptr %5, i64 %0
   ret ptr %6
@@ -34,32 +47,21 @@ entry:
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, -1
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = getelementptr nusw nuw double, ptr %1, i64 %4
   %6 = getelementptr nusw nuw double, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
+; luau/optimized/StringUtils.cpp.ll
 ; stat-rs/optimized/1dt2wsqttaly1xii.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, 16
-  %4 = mul i64 %3, %2
-  %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; darktable/optimized/introspection_highlights.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000040(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %0, 4
   %4 = mul i64 %3, %2
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0

@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; clamav/optimized/adc.c.ll
+; 8 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; icu/optimized/unames.ll
 ; linux/optimized/rx.ll
@@ -25,17 +24,6 @@ define i16 @func0000000000000000(i8 %0) #0 {
 entry:
   %1 = and i8 %0, -16
   %2 = add i8 %1, -14
-  %3 = zext i8 %2 to i16
-  ret i16 %3
-}
-
-; 1 occurrences:
-; clamav/optimized/adc.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000004(i8 %0) #0 {
-entry:
-  %1 = and i8 %0, 127
-  %2 = add nuw i8 %1, 1
   %3 = zext i8 %2 to i16
   ret i16 %3
 }

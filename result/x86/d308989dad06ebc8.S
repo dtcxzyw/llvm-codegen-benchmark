@@ -42,8 +42,3 @@ func000000000000000b:                   # @func000000000000000b
 	addl	%edi, %eax
 	cltq
 	retq
-func0000000000000060:                   # @func0000000000000060
-	cmpl	$1, %esi
-	sbbl	$-1, %edi
-	movslq	%edi, %rax
-	retq

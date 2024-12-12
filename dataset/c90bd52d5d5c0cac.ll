@@ -1,11 +1,7 @@
 
-; 234 occurrences:
-; bdwgc/optimized/gc.c.ll
-; eastl/optimized/TestMemory.cpp.ll
+; 229 occurrences:
 ; hermes/optimized/FoldingSet.cpp.ll
 ; hermes/optimized/StringSaver.cpp.ll
-; linux/optimized/ccm.ll
-; linux/optimized/gcm.ll
 ; llvm/optimized/API.cpp.ll
 ; llvm/optimized/ASTConcept.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -223,7 +219,6 @@
 ; mimalloc/optimized/os.c.ll
 ; mitsuba3/optimized/zone.cpp.ll
 ; nuttx/optimized/mempool_multiple.c.ll
-; openjdk/optimized/cardTable.ll
 ; openjdk/optimized/interpreter.ll
 ; openjdk/optimized/os.ll
 ; openjdk/optimized/os_linux.ll
@@ -240,6 +235,22 @@ entry:
   %3 = and i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr nusw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 6 occurrences:
+; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
+; eastl/optimized/TestMemory.cpp.ll
+; linux/optimized/ccm.ll
+; linux/optimized/gcm.ll
+; openjdk/optimized/cardTable.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %1, %2
+  %4 = inttoptr i64 %3 to ptr
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }
 

@@ -31,6 +31,6 @@ func000000000000000c:                   # @func000000000000000c
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpsllq	$8, %ymm2, %ymm0
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	vporq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq

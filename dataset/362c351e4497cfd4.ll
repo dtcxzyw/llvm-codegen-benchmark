@@ -1,8 +1,7 @@
 
-; 117 occurrences:
+; 116 occurrences:
 ; brotli/optimized/literal_cost.c.ll
 ; cmake/optimized/divsufsort.c.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -118,12 +117,12 @@
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
   %5 = or disjoint i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -79,7 +79,7 @@ entry:
   ret i32 %3
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; crow/optimized/example.cpp.ll
@@ -120,7 +120,6 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet-iso14443.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0) #0 {
 entry:

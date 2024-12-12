@@ -1,16 +1,16 @@
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	sarq	$2, %rdx
 	addq	$-2, %rdx
 	sarq	%rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sarq	$3, %rdx
 	addq	$-2, %rdx
 	sarq	%rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq

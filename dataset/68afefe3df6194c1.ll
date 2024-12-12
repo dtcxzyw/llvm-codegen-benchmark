@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 81 occurrences:
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/casDec.c.ll
 ; abc/optimized/cuddAnneal.c.ll
@@ -9,6 +9,7 @@
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; ceres/optimized/polynomial.cc.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/introspection_clahe.c.ll
@@ -88,7 +89,7 @@ entry:
   ret double %3
 }
 
-; 235 occurrences:
+; 233 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -110,11 +111,8 @@ entry:
 ; abc/optimized/casDec.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/cswMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/fraLcr.c.ll
 ; abc/optimized/fraMan.c.ll
@@ -132,7 +130,6 @@ entry:
 ; abc/optimized/reoSwap.c.ll
 ; abc/optimized/resCore.c.ll
 ; abc/optimized/retDelay.c.ll
-; abc/optimized/rwrMan.c.ll
 ; abc/optimized/satInter.c.ll
 ; abc/optimized/satInterA.c.ll
 ; abc/optimized/satInterB.c.ll
@@ -148,6 +145,10 @@ entry:
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; assimp/optimized/CSMLoader.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; cvc5/optimized/Solver.cc.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -189,7 +190,6 @@ entry:
 ; gromacs/optimized/centerofmass.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dlaruv.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
 ; gromacs/optimized/dstebz.cpp.ll
 ; gromacs/optimized/enxio.cpp.ll
@@ -231,7 +231,6 @@ entry:
 ; minetest/optimized/touchscreengui.cpp.ll
 ; ninja/optimized/hash_collision_bench.cc.ll
 ; openblas/optimized/dgesvdq.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dlarre.c.ll

@@ -1,5 +1,5 @@
 
-; 411 occurrences:
+; 410 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -135,13 +135,10 @@
 ; gromacs/optimized/slae2.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
-; gromacs/optimized/slarrfx.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; gromacs/optimized/ssterf.cpp.ll
@@ -183,7 +180,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
@@ -278,7 +274,6 @@
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/termoutput.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/affine_feature.cpp.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
@@ -410,12 +405,16 @@
 ; xgboost/optimized/cpu_treeshap.cc.ll
 ; xgboost/optimized/regression_obj.cc.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 

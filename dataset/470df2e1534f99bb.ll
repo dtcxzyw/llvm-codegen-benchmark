@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; abc/optimized/dauCount.c.ll
+; 5 occurrences:
 ; abc/optimized/ioReadPla.c.ll
 ; openssl/optimized/libssl-lib-quic_demux.ll
 ; openssl/optimized/libssl-lib-quic_lcidm.ll

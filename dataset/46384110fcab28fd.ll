@@ -1,5 +1,5 @@
 
-; 97 occurrences:
+; 98 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/darPrec.c.ll
@@ -14,6 +14,7 @@
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/mapperCanon.c.ll
 ; abc/optimized/mapperTree.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/inflate64.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -35,10 +36,10 @@
 ; linux/optimized/bus.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/extents_status.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/inflate.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_tc.ll
+; linux/optimized/jack.ll
 ; linux/optimized/processor_throttling.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/regmap.ll

@@ -1,33 +1,36 @@
 .LCPI0_0:
-	.long	6144                            # 0x1800
-.LCPI0_3:
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-.LCPI0_4:
-	.short	256                             # 0x100
-	.short	256                             # 0x100
+	.long	4294967294                      # 0xfffffffe
 .LCPI0_1:
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
+	.long	2                               # 0x2
+.LCPI0_4:
+	.short	57343                           # 0xdfff
+	.short	57343                           # 0xdfff
+.LCPI0_5:
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
 .LCPI0_2:
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
+	.short	57343                           # 0xdfff
+	.short	57343                           # 0xdfff
+	.short	57343                           # 0xdfff
+	.short	57343                           # 0xdfff
+	.short	57343                           # 0xdfff
+	.short	57343                           # 0xdfff
+	.short	57343                           # 0xdfff
+	.short	57343                           # 0xdfff
+.LCPI0_3:
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
 func0000000000000003:                   # @func0000000000000003
-	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
-	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
-	vpord	.LCPI0_4(%rip){1to4}, %xmm0, %xmm1
+	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
+	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm1, %k1
+	vpandd	.LCPI0_4(%rip){1to4}, %xmm0, %xmm0
+	vpord	.LCPI0_5(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu16	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq

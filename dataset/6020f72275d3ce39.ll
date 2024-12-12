@@ -1,5 +1,5 @@
 
-; 269 occurrences:
+; 267 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -108,8 +108,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -278,18 +276,6 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; linux/optimized/hpet.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %0, 1000000000
-  %4 = lshr i64 %3, %2
-  ret i64 %4
-}
-
 ; 8 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
@@ -304,6 +290,17 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul i64 %0, 5
+  %4 = lshr i64 %3, %2
+  ret i64 %4
+}
+
+; 1 occurrences:
+; linux/optimized/hpet.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = mul nuw nsw i64 %0, 1000000000
   %4 = lshr i64 %3, %2
   ret i64 %4
 }

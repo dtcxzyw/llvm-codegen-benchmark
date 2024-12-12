@@ -5,7 +5,7 @@
 ; openssl/optimized/libssl-lib-quic_ackm.ll
 ; openssl/optimized/libssl-shlib-quic_ackm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, -1
   %3 = icmp ult i64 %2, %1
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/to_str.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %.not = icmp ult i64 %2, %0

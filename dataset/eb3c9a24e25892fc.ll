@@ -1,11 +1,12 @@
 
-%struct.TCGTemp.2594696 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%"struct.zmq::command_t.3263998" = type { ptr, i32, %"union.zmq::command_t::args_t.3263999", [24 x i8] }
-%"union.zmq::command_t::args_t.3263999" = type { %struct.anon.19.3264000 }
-%struct.anon.19.3264000 = type { i64, ptr, ptr }
-%struct.WordEntry.3470009 = type { i32 }
-%struct.mi_page_s.3771054 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3771055, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3771055 = type { i8 }
+%struct.tls_rl_record_st.2633441 = type { i32, i32, i64, i64, i64, ptr, ptr, ptr, i16, [8 x i8] }
+%struct.TCGTemp.2708295 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%"struct.zmq::command_t.3454530" = type { ptr, i32, %"union.zmq::command_t::args_t.3454531", [24 x i8] }
+%"union.zmq::command_t::args_t.3454531" = type { %struct.anon.19.3454532 }
+%struct.anon.19.3454532 = type { i64, ptr, ptr }
+%struct.WordEntry.3654110 = type { i32 }
+%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949291 = type { i8 }
 
 ; 3 occurrences:
 ; linux/optimized/intel_gt_buffer_pool.ll
@@ -15,21 +16,17 @@
 define i1 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr [0 x i8], ptr %1, i64 0, i64 %2
-  %4 = icmp ne ptr %3, %0
+  %4 = icmp ne ptr %0, %3
   ret i1 %4
 }
 
-; 130 occurrences:
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; 117 occurrences:
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/hash.cpp.ll
-; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; glslang/optimized/ShaderLang.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/H5Cint.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
-; libzmq/optimized/mailbox.cpp.ll
-; libzmq/optimized/mailbox_safe.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/DebugCheckers.cpp.ll
 ; llvm/optimized/Dominators.cpp.ll
@@ -41,7 +38,6 @@ entry:
 ; luajit/optimized/buildvm.ll
 ; luajit/optimized/lj_ccall.ll
 ; luajit/optimized/lj_ccall_dyn.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/inputhandler.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; mitsuba3/optimized/linearcurve.cpp.ll
@@ -52,7 +48,6 @@ entry:
 ; nix/optimized/fetchTree.ll
 ; nix/optimized/flake.ll
 ; nix/optimized/get-drvs.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/primops.ll
 ; nix/optimized/trivial.ll
@@ -61,8 +56,6 @@ entry:
 ; nix/optimized/value-to-xml.ll
 ; ocio/optimized/FileFormatSpi1D.cpp.ll
 ; opencv/optimized/color_lab.cpp.ll
-; openssl/optimized/libssl-lib-tls_common.ll
-; openssl/optimized/libssl-shlib-tls_common.ll
 ; openusd/optimized/basisCurvesTopologySchema.cpp.ll
 ; openusd/optimized/cameraSchema.cpp.ll
 ; openusd/optimized/capsuleSchema.cpp.ll
@@ -94,7 +87,6 @@ entry:
 ; openusd/optimized/renderProductSchema.cpp.ll
 ; openusd/optimized/renderSettingsSchema.cpp.ll
 ; openusd/optimized/renderVarSchema.cpp.ll
-; openusd/optimized/retainedDataSource.cpp.ll
 ; openusd/optimized/sceneGlobalsSchema.cpp.ll
 ; openusd/optimized/splitDiopterSchema.cpp.ll
 ; openusd/optimized/subdivisionTagsSchema.cpp.ll
@@ -105,11 +97,7 @@ entry:
 ; openusd/optimized/usdRenderVarSchema.cpp.ll
 ; openusd/optimized/volumeFieldSchema.cpp.ll
 ; php/optimized/zend_language_scanner.ll
-; proj/optimized/crs.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
-; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
-; serde-rs-json/optimized/3o41byb1p1zh3720.ll
 ; sqlite/optimized/sqlite3.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
@@ -151,14 +139,35 @@ entry:
 ; taskflow/optimized/while_loop.cpp.ll
 ; z3/optimized/int_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [1025 x i8], ptr %1, i64 0, i64 %2
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr nusw nuw [1025 x i8], ptr %1, i64 0, i64 %2
+  %4 = icmp eq ptr %0, %3
   ret i1 %4
 }
 
-; 41 occurrences:
+; 12 occurrences:
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; delta-rs/optimized/1rw3q64nilk4jthd.ll
+; folly/optimized/HHWheelTimer.cpp.ll
+; hdf5/optimized/H5Cint.c.ll
+; libzmq/optimized/mailbox.cpp.ll
+; libzmq/optimized/mailbox_safe.cpp.ll
+; openssl/optimized/libssl-lib-tls_common.ll
+; openssl/optimized/libssl-shlib-tls_common.ll
+; openusd/optimized/retainedDataSource.cpp.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
+; serde-rs-json/optimized/3o41byb1p1zh3720.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw [32 x %struct.tls_rl_record_st.2633441], ptr %1, i64 0, i64 %2
+  %4 = icmp eq ptr %0, %3
+  ret i1 %4
+}
+
+; 40 occurrences:
 ; linux/optimized/blk-flush.ll
 ; linux/optimized/blk-mq-sched.ll
 ; linux/optimized/blk-mq.ll
@@ -186,7 +195,6 @@ entry:
 ; linux/optimized/tcp.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/ttm_device.ll
-; linux/optimized/ttm_range_manager.ll
 ; linux/optimized/ttm_resource.ll
 ; linux/optimized/ttm_sys_manager.ll
 ; linux/optimized/tx.ll
@@ -203,21 +211,31 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [512 x %struct.TCGTemp.2594696], ptr %1, i64 0, i64 %2
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr [512 x %struct.TCGTemp.2708295], ptr %1, i64 0, i64 %2
+  %4 = icmp eq ptr %0, %3
   ret i1 %4
 }
 
-; 4 occurrences:
-; cmake/optimized/archive_read_support_format_rar.c.ll
+; 2 occurrences:
 ; mimalloc/optimized/segment.c.ll
 ; openjdk/optimized/jniHandles.ll
-; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw [32 x i64], ptr %1, i64 0, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; cmake/optimized/archive_read_support_format_rar.c.ll
+; php/optimized/url.ll
+; php/optimized/zend_language_scanner.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw [1 x i8], ptr %1, i64 0, i64 %2
+  %4 = icmp ult ptr %0, %3
   ret i1 %4
 }
 
@@ -225,25 +243,22 @@ entry:
 ; mimalloc/optimized/segment.c.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw [0 x i8], ptr %1, i64 0, i64 %2
-  %4 = icmp ult ptr %3, %0
+  %4 = icmp ugt ptr %0, %3
   ret i1 %4
 }
 
-; 6 occurrences:
+; 3 occurrences:
 ; libzmq/optimized/mailbox.cpp.ll
 ; libzmq/optimized/mailbox_safe.cpp.ll
 ; libzmq/optimized/pipe.cpp.ll
-; nix/optimized/installable-flake.ll
-; nix/optimized/installables.ll
-; redis/optimized/read.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000004c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [16 x %"struct.zmq::command_t.3263998"], ptr %1, i64 0, i64 %2
-  %4 = icmp ne ptr %3, %0
+  %3 = getelementptr nusw [16 x %"struct.zmq::command_t.3454530"], ptr %1, i64 0, i64 %2
+  %4 = icmp ne ptr %0, %3
   ret i1 %4
 }
 
@@ -253,8 +268,20 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [0 x %struct.WordEntry.3470009], ptr %1, i64 0, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %3 = getelementptr [0 x %struct.WordEntry.3654110], ptr %1, i64 0, i64 %2
+  %4 = icmp ult ptr %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; nix/optimized/installable-flake.ll
+; nix/optimized/installables.ll
+; redis/optimized/read.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw [326 x i8], ptr %1, i64 0, i64 %2
+  %4 = icmp ne ptr %0, %3
   ret i1 %4
 }
 
@@ -263,8 +290,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [513 x %struct.mi_page_s.3771054], ptr %1, i64 0, i64 %2
-  %4 = icmp ult ptr %3, %0
+  %3 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %1, i64 0, i64 %2
+  %4 = icmp ugt ptr %0, %3
   ret i1 %4
 }
 

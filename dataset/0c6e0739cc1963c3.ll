@@ -1,5 +1,5 @@
 
-; 427 occurrences:
+; 447 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/mutex.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_allocator_test.cc.ll
@@ -22,8 +22,18 @@
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/any_segments_iter.ll
+; boost/optimized/environment.ll
+; boost/optimized/ext.ll
+; boost/optimized/format_args.ll
+; boost/optimized/pct_format.ll
+; boost/optimized/process.ll
+; boost/optimized/search_path.ll
+; boost/optimized/url_base.ll
+; boost/optimized/url_impl.ll
 ; brotli/optimized/backward_references.c.ll
-; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/decode.c.ll
 ; c3c/optimized/types.c.ll
 ; cjson/optimized/cJSON.c.ll
@@ -139,7 +149,6 @@
 ; linux/optimized/lbr.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/mmap.ll
@@ -152,7 +161,6 @@
 ; linux/optimized/thermal.ll
 ; linux/optimized/trace_uprobe.ll
 ; linux/optimized/uncore_nhmex.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/zstd_decompress.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
@@ -311,9 +319,7 @@
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; openmpi/optimized/libprrte_la-pmix_server.ll
-; openmpi/optimized/os_path.ll
 ; openmpi/optimized/osc_rdma_peer.ll
-; openmpi/optimized/pmix_os_path.ll
 ; openmpi/optimized/pml_ob1_sendreq.ll
 ; openmpi/optimized/ptl_base_connection_hdlr.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
@@ -354,14 +360,12 @@
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
-; qemu/optimized/meson-generated_.._dbus-display1.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/virtio-pci.c.ll
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
-; re2/optimized/re2.cc.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
@@ -381,7 +385,6 @@
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
 ; slurm/optimized/job_test.ll
-; spike/optimized/s_mul64To128M.ll
 ; spike/optimized/s_roundPackToF128.ll
 ; spike/optimized/s_roundPackToF32.ll
 ; spike/optimized/s_subMagsF64.ll
@@ -424,6 +427,23 @@
 ; yosys/optimized/fmt.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/region.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/8epszlr2612bvdrsn7g83nprl.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zxing/optimized/BitMatrixIO.cpp.ll
@@ -431,12 +451,11 @@
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 0, i64 24
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
-; 371 occurrences:
-; abc/optimized/nmApi.c.ll
+; 382 occurrences:
 ; abc/optimized/satStore.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
@@ -446,6 +465,9 @@ entry:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/core.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/interpolant.cpp.ll
 ; casadi/optimized/linear_interpolant.cpp.ll
@@ -583,7 +605,6 @@ entry:
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVOptWInstrs.cpp.ll
@@ -607,7 +628,6 @@ entry:
 ; mimalloc/optimized/segment.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; ockam-rs/optimized/29qu7xzozkf0g7sn.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; ockam-rs/optimized/59na08zlxqp9p17s.ll
@@ -724,6 +744,7 @@ entry:
 ; rust-analyzer-rs/optimized/c249cixj978zg74.ll
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
+; sentencepiece/optimized/time.cc.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; spike/optimized/processor.ll
@@ -803,6 +824,16 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/androiddump.c.ll
 ; z3/optimized/sat_clause.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; zfp/optimized/zfp.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
@@ -815,7 +846,7 @@ entry:
   ret i64 %3
 }
 
-; 157 occurrences:
+; 156 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
@@ -828,7 +859,6 @@ entry:
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cpython/optimized/_datetimemodule.ll
-; cpython/optimized/pystrtod.ll
 ; curl/optimized/libcurl_la-tftp.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
@@ -938,7 +968,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-obj_dat.ll
 ; openssl/optimized/libcrypto-shlib-obj_dat.ll
 ; openusd/optimized/json.cpp.ll
-; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; openusd/optimized/restoration.c.ll
 ; php/optimized/dow.ll
 ; php/optimized/parse_date.ll
@@ -957,7 +986,6 @@ entry:
 ; redis/optimized/rax.ll
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
-; sentencepiece/optimized/time.cc.ll
 ; spike/optimized/f32_div.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f64_div.ll
@@ -973,19 +1001,20 @@ entry:
 ; wireshark/optimized/proto.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/arith_sls.cpp.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 4, i64 5
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; cpython/optimized/bytesio.ll
 ; cpython/optimized/stringio.ll
-; git/optimized/pack-redundant.ll
 ; icu/optimized/ucnv2022.ll
 ; llvm/optimized/BranchProbability.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
@@ -996,7 +1025,6 @@ entry:
 ; spike/optimized/cm_popret.ll
 ; spike/optimized/cm_popretz.ll
 ; spike/optimized/cm_push.ll
-; vcpkg/optimized/export.prefab.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i1 %1) #0 {

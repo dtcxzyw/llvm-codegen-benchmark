@@ -1,10 +1,20 @@
 
-; 257 occurrences:
+; 264 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/src.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -57,7 +67,6 @@
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -102,7 +111,6 @@
 ; openblas/optimized/dlasd5.c.ll
 ; openblas/optimized/dlasd7.c.ll
 ; openblas/optimized/dstebz.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsteqr.c.ll
 ; openblas/optimized/dsterf.c.ll
 ; openblas/optimized/dtgevc.c.ll
@@ -178,7 +186,6 @@
 ; proj/optimized/som.cpp.ll
 ; proj/optimized/somerc.cpp.ll
 ; proj/optimized/stere.cpp.ll
-; proj/optimized/tcc.cpp.ll
 ; proj/optimized/tcea.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
 ; proj/optimized/tpeqd.cpp.ll
@@ -260,8 +267,8 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
-  %2 = fneg double %0
-  %3 = fmul double %2, %1
+  %2 = fneg double %1
+  %3 = fmul double %0, %2
   ret double %3
 }
 

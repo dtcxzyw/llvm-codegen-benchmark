@@ -6,7 +6,7 @@
 ; flatbuffers/optimized/idl_gen_kotlin_kmp.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -20,7 +20,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

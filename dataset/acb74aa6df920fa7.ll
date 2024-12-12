@@ -6,7 +6,7 @@
 ; meshlab/optimized/Scanner.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(ptr %0, i64 %1) #0 {
+define i32 @func0000000000000081(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 8
   %3 = trunc i64 %2 to i32

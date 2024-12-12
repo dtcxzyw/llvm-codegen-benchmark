@@ -13,6 +13,11 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	xorb	%dil, %al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpw	%dx, %si
+	setb	%al
+	xorb	%dil, %al
+	retq
 func0000000000000001:                   # @func0000000000000001
 	cmpw	%dx, %si
 	sete	%al

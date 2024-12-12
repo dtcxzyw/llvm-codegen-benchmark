@@ -1,6 +1,26 @@
 
-; 265 occurrences:
+; 294 occurrences:
 ; actix-rs/optimized/4lhybxso3b5wvh7r.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/directory.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/origin_form_rule.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; c3c/optimized/llvm_codegen.c.ll
 ; clamav/optimized/archive.cpp.ll
 ; cmake/optimized/epoll.c.ll
@@ -21,6 +41,7 @@
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
+; freetype/optimized/ftbase.c.ll
 ; git/optimized/diff-lib.ll
 ; git/optimized/index-pack.ll
 ; git/optimized/merge-tree.ll
@@ -210,8 +231,6 @@
 ; openjdk/optimized/jvmtiManageCapabilities.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; openmpi/optimized/ad_nfs_write.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
 ; openusd/optimized/decodetxb.c.ll
 ; openvdb/optimized/ValueTransformer.cc.ll
 ; php/optimized/KeccakHash.ll
@@ -229,6 +248,7 @@
 ; redis/optimized/redis-check-aof.ll
 ; redis/optimized/replication.ll
 ; redis/optimized/tracking.ll
+; ripgrep-rs/optimized/15yuur60snxgm6cb.ll
 ; rocksdb/optimized/secondary_cache_adapter.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; ruby/optimized/error.ll
@@ -265,8 +285,17 @@
 ; wireshark/optimized/tshark.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/79ezltff95wc1bo5cr63zbonr.ll
+; zed-rs/optimized/7hsbxpr1hqy17ngn0bqyx5x8s.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ne i64 %0, 4
@@ -274,19 +303,17 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; libquic/optimized/x509_vfy.c.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; openjdk/optimized/codeBuffer.ll
-; openjdk/optimized/dfa_x86.ll
 ; openmpi/optimized/pml_ob1_isend.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; ruby/optimized/init.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 2048
   %3 = icmp ne i64 %0, -1
@@ -294,7 +321,7 @@ entry:
   ret i1 %4
 }
 
-; 163 occurrences:
+; 183 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/format.cc.ll
@@ -306,6 +333,26 @@ entry:
 ; abseil-cpp/optimized/time_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/absolute_uri_rule.ll
+; boost/optimized/authority_rule.ll
+; boost/optimized/cmd.ll
+; boost/optimized/cwd.ll
+; boost/optimized/environment.ll
+; boost/optimized/exe.ll
+; boost/optimized/ext.ll
+; boost/optimized/format_args.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/ip_literal_rule.ll
+; boost/optimized/ipv4_address_rule.ll
+; boost/optimized/pattern.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/replacement_field_rule.ll
+; boost/optimized/shell.ll
+; boost/optimized/src.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/uri_rule.ll
+; boost/optimized/utf8.ll
 ; clamav/optimized/pathfn.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/cmLocalUnixMakefileGenerator3.cxx.ll
@@ -337,7 +384,6 @@ entry:
 ; gromacs/optimized/xvgr.cpp.ll
 ; hdf5/optimized/H5Dchunk.c.ll
 ; hdf5/optimized/h5diff_array.c.ll
-; hdf5/optimized/h5tools_type.c.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/zip.c.ll
@@ -352,7 +398,6 @@ entry:
 ; lief/optimized/ssl_msg.c.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/buffered_write.ll
-; linux/optimized/capability.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/coredump.ll
 ; linux/optimized/hda_codec.ll
@@ -435,6 +480,7 @@ entry:
 ; postgres/optimized/pgstat.ll
 ; postgres/optimized/timeout.ll
 ; qemu/optimized/hw_vfio_common.c.ll
+; qemu/optimized/hw_vfio_container.c.ll
 ; qemu/optimized/rtas.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; redis/optimized/networking.ll
@@ -457,9 +503,10 @@ entry:
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/profile_dialog.cpp.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq i64 %0, 1
@@ -467,7 +514,7 @@ entry:
   ret i1 %4
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/casDec.c.ll
 ; abc/optimized/giaBidec.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -491,7 +538,6 @@ entry:
 ; nix/optimized/pathlocks.ll
 ; node/optimized/udp.ll
 ; openjdk/optimized/awt_ImagingLib.ll
-; openjdk/optimized/awt_Robot.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; openssl/optimized/libdefault-lib-rand_unix.ll
 ; postgres/optimized/xlog.ll
@@ -502,7 +548,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i32 %1) #0 {
+define i1 @func000000000000014c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = icmp ne i64 %0, 0
@@ -510,9 +556,10 @@ entry:
   ret i1 %4
 }
 
-; 57 occurrences:
+; 60 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifDsd.c.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/unzipper.c.ll
 ; cmake/optimized/epoll.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -521,11 +568,8 @@ entry:
 ; hdf5/optimized/h5repack_copy.c.ll
 ; libevent/optimized/event.c.ll
 ; libquic/optimized/x509_vfy.c.ll
-; linux/optimized/checkpoint.ll
 ; linux/optimized/dir.ll
 ; linux/optimized/forcedeth.ll
-; linux/optimized/fs-writeback.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/tables.ll
@@ -541,6 +585,7 @@ entry:
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaModule.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; openssl/optimized/libapps-lib-s_cb.ll
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
@@ -567,9 +612,13 @@ entry:
 ; wireshark/optimized/prefs.c.ll
 ; wolfssl/optimized/chacha.c.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/7nycmhgf1nsxro2z9yfrppi5n.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 3
   %3 = icmp ne i64 %0, 0
@@ -577,15 +626,11 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
-; abc/optimized/Fxch.c.ll
-; brotli/optimized/backward_references_hq.c.ll
-; gromacs/optimized/gen_ad.cpp.ll
+; 2 occurrences:
 ; linux/optimized/ehci-dbgp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ult i64 %0, -4294967296
@@ -603,7 +648,7 @@ entry:
 ; postgres/optimized/pgbench.ll
 ; rocksdb/optimized/column_family.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = icmp eq i64 %0, 0
@@ -611,27 +656,21 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
-; coreutils-rs/optimized/1jbxberfc5l4jlu4.ll
-; coreutils-rs/optimized/20v11r4bpq9cscu.ll
-; coreutils-rs/optimized/54i42m66wtythwaw.ll
-; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
-; libwebp/optimized/predictor_enc.c.ll
+; 12 occurrences:
+; boost/optimized/codepage.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
-; openjdk/optimized/sharedRuntimeTrig.ll
 ; openssl/optimized/danetest-bin-danetest.ll
 ; openssl/optimized/openssl-bin-s_client.ll
 ; qemu/optimized/block_mirror.c.ll
 ; redis/optimized/object.ll
 ; slurm/optimized/gres_ctld.ll
-; wireshark/optimized/packet-x11.c.ll
 ; z3/optimized/dl_table.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 34
   %3 = icmp ult i64 %0, 2
@@ -643,6 +682,7 @@ entry:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/wlcSim.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/llvm_codegen.c.ll
 ; c3c/optimized/sema_liveness.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -656,6 +696,7 @@ entry:
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/intel.ll
 ; linux/optimized/ipconfig.ll
+; linux/optimized/xarray.ll
 ; llvm/optimized/BackendUtil.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
@@ -671,8 +712,6 @@ entry:
 ; openjdk/optimized/p11_keymgmt.ll
 ; openjdk/optimized/synchronizer.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
@@ -694,7 +733,7 @@ entry:
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq i64 %0, 0
@@ -702,16 +741,14 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; hdf5/optimized/h5tools.c.ll
 ; libquic/optimized/time_support.c.ll
 ; openssl/optimized/libcrypto-lib-bio_lib.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-bio_lib.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; postgres/optimized/timestamp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000ca(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1024
   %3 = icmp sgt i64 %0, 0
@@ -727,7 +764,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-gcm128.ll
 ; openssl/optimized/libcrypto-shlib-gcm128.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ugt i64 %0, 15
@@ -735,55 +772,44 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 6 occurrences:
 ; clamav/optimized/pe.c.ll
 ; linux/optimized/exoparg1.ll
-; llvm/optimized/AsmMatcherEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; openssl/optimized/libdefault-lib-kmac_prov.ll
-; php/optimized/phpdbg_prompt.ll
 ; slurm/optimized/KangarooTwelve.ll
 ; wireshark/optimized/packet-opa-mad.c.ll
-; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000288(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 7
+  %2 = icmp samesign ult i32 %1, 7
   %3 = icmp ugt i64 %0, 255
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
 
-; 6 occurrences:
-; libpng/optimized/pngwutil.c.ll
-; openjdk/optimized/compilerOracle.ll
+; 2 occurrences:
 ; openssl/optimized/libdefault-lib-kmac_prov.ll
-; postgres/optimized/network.ll
-; yosys/optimized/ql_dsp_macc.ll
-; zxing/optimized/PDFHighLevelEncoder.cpp.ll
+; php/optimized/phpdbg_prompt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000298(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 256
-  %3 = icmp ult i64 %0, 673
+  %2 = icmp samesign ult i32 %1, 7
+  %3 = icmp samesign ugt i64 %0, 255
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
 
-; 7 occurrences:
-; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
-; llvm/optimized/DXILEmitter.cpp.ll
-; llvm/optimized/PeepholeOptimizer.cpp.ll
-; openjdk/optimized/attachListener_posix.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
-; php/optimized/parse_date.ll
+; 4 occurrences:
+; libpng/optimized/pngwutil.c.ll
+; openjdk/optimized/compilerOracle.ll
+; openssl/optimized/libdefault-lib-kmac_prov.ll
+; yosys/optimized/ql_dsp_macc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp slt i32 %1, 0
-  %3 = icmp ne i64 %0, 0
+  %2 = icmp ult i32 %1, 256
+  %3 = icmp ult i64 %0, 673
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
@@ -800,7 +826,7 @@ entry:
 ; openssl/optimized/libdefault-lib-rand_unix.ll
 ; postgres/optimized/bufmgr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018a(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp sgt i64 %0, -1
@@ -808,51 +834,22 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
-; coreutils-rs/optimized/12183t08bisz8vo8.ll
-; libzmq/optimized/options.cpp.ll
-; libzmq/optimized/router.cpp.ll
-; linux/optimized/bugs.ll
-; linux/optimized/xarray.ll
-; llvm/optimized/ImplicitNullChecks.cpp.ll
-; llvm/optimized/MachineSink.cpp.ll
-; llvm/optimized/RISCVDeadRegisterDefinitions.cpp.ll
-; luajit/optimized/lj_opt_fold.ll
-; luajit/optimized/lj_opt_fold_dyn.ll
+; 5 occurrences:
+; cpython/optimized/multibytecodec.ll
+; freetype/optimized/sfnt.c.ll
 ; openssl/optimized/afalg-dso-e_afalg.ll
-; postgres/optimized/nodeAgg.ll
-; postgres/optimized/nodeWindowAgg.ll
-; postgres/optimized/proc.ll
-; proxygen/optimized/HeaderDecodeInfo.cpp.ll
+; postgres/optimized/clog.ll
 ; redis/optimized/networking.ll
-; wireshark/optimized/packet-erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000281(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 3
+  %2 = icmp samesign ult i32 %1, 3
   %3 = icmp eq i64 %0, -16
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
 
-; 7 occurrences:
-; delta-rs/optimized/1rw3q64nilk4jthd.ll
-; delta-rs/optimized/2braxl0lj34anf5z.ll
-; diesel-rs/optimized/2nqojkvzec127ieh.ll
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; postgres/optimized/timestamp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, 0
-  %3 = icmp slt i64 %0, 0
-  %4 = select i1 %3, i1 %2, i1 false
-  ret i1 %4
-}
-
-; 8 occurrences:
+; 10 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -861,8 +858,10 @@ entry:
 ; html5ever-rs/optimized/2k27uywn6e9ruua6.ll
 ; linux/optimized/i915_gem_ttm.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ugt i64 %0, 1
@@ -870,9 +869,8 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 10 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
-; cmake/optimized/archive_read_support_format_ar.c.ll
 ; glslang/optimized/PpScanner.cpp.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/gen8_ppgtt.ll
@@ -881,13 +879,9 @@ entry:
 ; llvm/optimized/PostRASchedulerList.cpp.ll
 ; llvm/optimized/ScheduleDAG.cpp.ll
 ; llvm/optimized/WindowScheduler.cpp.ll
-; postgres/optimized/multixact.ll
 ; qemu/optimized/hw_vfio_pci-quirks.c.ll
-; quantlib/optimized/cevrndcalculator.ll
-; quantlib/optimized/squarerootclvmodel.ll
-; quantlib/optimized/squarerootprocessrndcalculator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 131327
   %3 = icmp eq i64 %0, 0
@@ -895,17 +889,12 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
-; cpython/optimized/test_lock.ll
+; 13 occurrences:
 ; git/optimized/pack-bitmap-write.ll
-; linux/optimized/exoparg1.ll
 ; linux/optimized/hid-lg.ll
 ; linux/optimized/tsc.ll
-; llvm/optimized/CodeGenTBAA.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/FormatString.cpp.ll
-; llvm/optimized/InstCombineCalls.cpp.ll
-; llvm/optimized/MacroFusion.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
@@ -913,10 +902,9 @@ entry:
 ; php/optimized/html.ll
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
 ; redis/optimized/t_zset.ll
-; sqlite/optimized/sqlite3.ll
 ; wasmedge/optimized/serial_instruction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2048
   %3 = icmp ne i64 %0, 0
@@ -932,7 +920,7 @@ entry:
 ; qemu/optimized/block_io.c.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp sgt i64 %0, 0
@@ -940,8 +928,25 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 6 occurrences:
+; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
+; llvm/optimized/DXILEmitter.cpp.ll
+; llvm/optimized/PeepholeOptimizer.cpp.ll
+; openjdk/optimized/attachListener_posix.ll
+; php/optimized/parse_date.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, 5
+  %3 = icmp ne i64 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 17 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
+; gromacs/optimized/atomdata.cpp.ll
 ; icu/optimized/reslist.ll
 ; icu/optimized/ucnvmbcs.ll
 ; libzmq/optimized/ctx.cpp.ll
@@ -958,7 +963,7 @@ entry:
 ; postgres/optimized/spgtextproc.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = icmp eq i64 %0, 255
@@ -966,10 +971,19 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
-; casadi/optimized/integrator.cpp.ll
-; cpython/optimized/unicode.ll
-; faiss/optimized/IndexIVFFastScan.cpp.ll
+; 2 occurrences:
+; openjdk/optimized/codeBuffer.ll
+; openjdk/optimized/dfa_x86.ll
+; Function Attrs: nounwind
+define i1 @func000000000000030c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 1
+  %3 = icmp ne i64 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 6 occurrences:
 ; openjdk/optimized/arguments.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/jvmtiEnvBase.ll
@@ -977,10 +991,25 @@ entry:
 ; openjdk/optimized/type.ll
 ; openjdk/optimized/vmatree.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000028a(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 2
+  %2 = icmp samesign ult i32 %1, 2
   %3 = icmp sgt i64 %0, -1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 5 occurrences:
+; coreutils-rs/optimized/1jbxberfc5l4jlu4.ll
+; coreutils-rs/optimized/20v11r4bpq9cscu.ll
+; coreutils-rs/optimized/54i42m66wtythwaw.ll
+; openjdk/optimized/sharedRuntimeTrig.ll
+; wireshark/optimized/packet-x11.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 0
+  %3 = icmp samesign ult i64 %0, 4485585228861014016
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
@@ -994,7 +1023,7 @@ entry:
 ; llvm/optimized/CGNonTrivialStruct.cpp.ll
 ; node/optimized/idna.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 81
   %3 = icmp slt i64 %0, 0
@@ -1013,7 +1042,7 @@ entry:
 ; slurm/optimized/power_save.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
+define i1 @func000000000000014a(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = icmp sgt i64 %0, 0
@@ -1025,47 +1054,129 @@ entry:
 ; jq/optimized/decNumber.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000314(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 3
-  %3 = icmp ult i64 %0, 6
+  %2 = icmp samesign ugt i32 %1, 3
+  %3 = icmp samesign ult i64 %0, 6
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
 
-; 8 occurrences:
-; cmake/optimized/cover.c.ll
-; cmake/optimized/fastcover.c.ll
-; grpc/optimized/ev_poll_posix.cc.ll
+; 2 occurrences:
 ; jq/optimized/decNumber.ll
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
-; z3/optimized/theory_lra.cpp.ll
-; zstd/optimized/cover.c.ll
-; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000154(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 3
-  %3 = icmp ult i64 %0, 6
+  %3 = icmp samesign ult i64 %0, 6
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
 
-; 4 occurrences:
+; 79 occurrences:
+; cmake/optimized/archive_read_support_format_ar.c.ll
+; glslang/optimized/PpScanner.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/argparse.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
+; oiio/optimized/bmpinput.cpp.ll
+; oiio/optimized/bmpoutput.cpp.ll
+; oiio/optimized/cineoninput.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
+; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/errorhandler.cpp.ll
+; oiio/optimized/exrinput.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/filesystem.cpp.ll
+; oiio/optimized/fitsinput.cpp.ll
+; oiio/optimized/fitsoutput.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/hdroutput.cpp.ll
+; oiio/optimized/icc.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/iffinput.cpp.ll
+; oiio/optimized/iffoutput.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_opencv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/imageioplugin.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/pnmoutput.cpp.ll
+; oiio/optimized/printinfo.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/rlaoutput.cpp.ll
+; oiio/optimized/sgiinput.cpp.ll
+; oiio/optimized/sgioutput.cpp.ll
+; oiio/optimized/softimageinput.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/termoutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; oiio/optimized/typedesc.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; oiio/optimized/zfile.cpp.ll
+; postgres/optimized/multixact.ll
+; postgres/optimized/visibilitymap.ll
+; quantlib/optimized/cevrndcalculator.ll
+; quantlib/optimized/squarerootclvmodel.ll
+; quantlib/optimized/squarerootprocessrndcalculator.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000301(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 1
+  %3 = icmp eq i64 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 3 occurrences:
 ; darktable/optimized/introspection_hotpixels.c.ll
-; git/optimized/date.ll
 ; gromacs/optimized/gen_vsite.cpp.ll
 ; wireshark/optimized/packet-drbd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000d4(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 4
-  %3 = icmp ult i64 %0, 19
+  %3 = icmp samesign ult i64 %0, 19
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
 
-; 17 occurrences:
+; 14 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/giaCut.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -1079,14 +1190,102 @@ entry:
 ; abc/optimized/mpmTruth.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; linux/optimized/filter.ll
-; linux/optimized/zstd_decompress_block.ll
-; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/matrix_iterator.cpp.ll
-; opencv/optimized/matrix_transform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000158(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
+  %3 = icmp samesign ugt i64 %0, 1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 4 occurrences:
+; abc/optimized/Fxch.c.ll
+; brotli/optimized/backward_references_hq.c.ll
+; gromacs/optimized/gen_ad.cpp.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000194(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ne i32 %1, 0
+  %3 = icmp samesign ult i64 %0, 31
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 12 occurrences:
+; coreutils-rs/optimized/12183t08bisz8vo8.ll
+; libzmq/optimized/options.cpp.ll
+; libzmq/optimized/router.cpp.ll
+; linux/optimized/bugs.ll
+; llvm/optimized/ImplicitNullChecks.cpp.ll
+; llvm/optimized/MachineSink.cpp.ll
+; luajit/optimized/lj_opt_fold.ll
+; luajit/optimized/lj_opt_fold_dyn.ll
+; postgres/optimized/proc.ll
+; proxygen/optimized/HeaderDecodeInfo.cpp.ll
+; wireshark/optimized/packet-erf.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 900
+  %3 = icmp eq i64 %0, 1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; git/optimized/date.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c4(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, 0
+  %3 = icmp ult i64 %0, 31
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 6 occurrences:
+; delta-rs/optimized/1rw3q64nilk4jthd.ll
+; delta-rs/optimized/2braxl0lj34anf5z.ll
+; diesel-rs/optimized/2nqojkvzec127ieh.ll
+; libquic/optimized/time_support.c.ll
+; postgres/optimized/timestamp.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000146(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, 0
+  %3 = icmp slt i64 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 7 occurrences:
+; cpython/optimized/test_lock.ll
+; linux/optimized/exoparg1.ll
+; linux/optimized/hid-lg.ll
+; llvm/optimized/InstCombineCalls.cpp.ll
+; llvm/optimized/MacroFusion.cpp.ll
+; opencv/optimized/resize.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func000000000000028c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 2
+  %3 = icmp ne i64 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/AsmMatcherEmitter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 10
   %3 = icmp ugt i64 %0, 1
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
@@ -1095,7 +1294,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/androiddump.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000186(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp slt i64 %0, 1
@@ -1103,17 +1302,79 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 2 occurrences:
+; postgres/optimized/network.ll
+; wireshark/optimized/packet-rtps.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000284(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 31
+  %3 = icmp ult i64 %0, 239
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 6 occurrences:
+; cmake/optimized/cover.c.ll
+; cmake/optimized/fastcover.c.ll
+; grpc/optimized/ev_poll_posix.cc.ll
+; z3/optimized/theory_lra.cpp.ll
+; zstd/optimized/cover.c.ll
+; zstd/optimized/fastcover.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000144(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, 1
+  %3 = icmp ult i64 %0, -119
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 3 occurrences:
+; linux/optimized/zstd_decompress_block.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
+; opencv/optimized/matrix_transform.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000148(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, 8
+  %3 = icmp ugt i64 %0, 16777216
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 6 occurrences:
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; zxing/optimized/ECI.cpp.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
-; zxing/optimized/ODDataBarExpandedBitDecoder.cpp.ll
 ; zxing/optimized/PDFDecoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000118(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 9
+  %3 = icmp samesign ugt i64 %0, 1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zxing/optimized/PDFHighLevelEncoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 10
+  %3 = icmp samesign ult i64 %0, 13
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 2 occurrences:
+; zxing/optimized/ODDataBarExpandedBitDecoder.cpp.ll
 ; zxing/optimized/QRDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 9
   %3 = icmp ugt i64 %0, 1
@@ -1124,7 +1385,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/bloomfilter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c8(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 31
   %3 = icmp ugt i64 %0, 1
@@ -1132,10 +1393,22 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; casadi/optimized/integrator.cpp.ll
+; faiss/optimized/IndexIVFFastScan.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 4
+  %3 = icmp sgt i64 %0, 1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; opencv/optimized/common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c6(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = icmp slt i64 %0, 0
@@ -1146,7 +1419,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 4
   %3 = icmp slt i64 %0, 2

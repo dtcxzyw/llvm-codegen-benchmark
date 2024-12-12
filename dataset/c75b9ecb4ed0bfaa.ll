@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; icu/optimized/utext.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i64 %2) #0 {

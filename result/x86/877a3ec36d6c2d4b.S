@@ -18,13 +18,23 @@ func000000000000000a:                   # @func000000000000000a
 	setns	%al
 	andb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpb	$58, %sil
+	setb	%al
+	andb	%dil, %al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	cmpb	$-98, %sil
 	setae	%al
 	andb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006
-	cmpb	$58, %sil
+	cmpb	$-64, %sil
 	setl	%al
+	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpb	$2, %sil
+	setae	%al
 	andb	%dil, %al
 	retq

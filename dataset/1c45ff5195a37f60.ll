@@ -1,8 +1,7 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; git/optimized/merge-ort.ll
-; linux/optimized/madvise.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/DeclSpec.cpp.ll
@@ -45,8 +44,8 @@ entry:
   %3 = trunc i64 %2 to i16
   %4 = shl i16 %3, 12
   %5 = and i16 %4, 4096
-  %6 = or i16 %5, %1
-  %7 = or disjoint i16 %6, %0
+  %6 = or i16 %1, %5
+  %7 = or disjoint i16 %0, %6
   ret i16 %7
 }
 

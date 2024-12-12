@@ -5,18 +5,18 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$127, %eax
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	subl	%edx, %esi
-	movslq	%esi, %rcx
-	testb	$1, %dil
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	cmovneq	%rcx, %rax
-	retq
 func0000000000000009:                   # @func0000000000000009
 	subl	%edx, %esi
 	movslq	%esi, %rcx
 	xorl	%eax, %eax
 	testb	$1, %dil
+	cmovneq	%rcx, %rax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	subl	%edx, %esi
+	movslq	%esi, %rcx
+	testb	$1, %dil
+	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	cmovneq	%rcx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000

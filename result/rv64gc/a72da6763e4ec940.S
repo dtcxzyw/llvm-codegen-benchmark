@@ -20,18 +20,10 @@ func000000000000000a:                   # @func000000000000000a
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	mv	a2, a0
-	lui	a0, 524288
-	addiw	a0, a0, -1
-	slli	a3, a0, 30
-	andi	a2, a2, 1
-	bgeu	a3, a1, .LBB2_3
-	beqz	a2, .LBB2_4
-.LBB2_2:                                # %entry
-	ret
-.LBB2_3:                                # %entry
-	lui	a0, 262144
-	bnez	a2, .LBB2_2
-.LBB2_4:                                # %entry
-	lui	a0, 256
+	lui	a2, 256
+	slli	a0, a0, 63
+	sltu	a1, a2, a1
+	addi	a1, a1, 1
+	srai	a0, a0, 63
+	and	a0, a0, a1
 	ret

@@ -1,13 +1,15 @@
 
-; 98 occurrences:
+; 111 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/formatter.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; folly/optimized/EpollBackend.cpp.ll
 ; git/optimized/merge-ort.ll
 ; icu/optimized/alphaindex.ll
+; icu/optimized/anytrans.ll
 ; icu/optimized/choicfmt.ll
 ; icu/optimized/coleitr.ll
 ; icu/optimized/collationbuilder.ll
@@ -16,14 +18,18 @@
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/collationsets.ll
 ; icu/optimized/cpdtrans.ll
+; icu/optimized/datamap.ll
 ; icu/optimized/dayperiodrules.ll
 ; icu/optimized/dbgutil.ll
 ; icu/optimized/decimfmt.ll
+; icu/optimized/derb.ll
 ; icu/optimized/dtitvfmt.ll
 ; icu/optimized/dtitvinf.ll
 ; icu/optimized/dtptngen.ll
+; icu/optimized/emojiprops.ll
 ; icu/optimized/extradata.ll
 ; icu/optimized/filteredbrk.ll
+; icu/optimized/filterednormalizer2.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/gendict.ll
 ; icu/optimized/listformatter.ll
@@ -36,6 +42,8 @@
 ; icu/optimized/nfrs.ll
 ; icu/optimized/nfrule.ll
 ; icu/optimized/nfsubs.ll
+; icu/optimized/normalizer2.ll
+; icu/optimized/normalizer2impl.ll
 ; icu/optimized/number_affixutils.ll
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/number_longnames.ll
@@ -72,6 +80,7 @@
 ; icu/optimized/uconv.ll
 ; icu/optimized/uitercollationiterator.ll
 ; icu/optimized/uniset.ll
+; icu/optimized/uniset_closure.ll
 ; icu/optimized/uniset_props.ll
 ; icu/optimized/unistr.ll
 ; icu/optimized/unistr_case.ll
@@ -87,23 +96,27 @@
 ; icu/optimized/util_props.ll
 ; icu/optimized/uts46.ll
 ; icu/optimized/vtzone.ll
+; icu/optimized/wrtxml.ll
 ; icu/optimized/xmlparser.ll
 ; libevent/optimized/event.c.ll
 ; libphonenumber/optimized/phonenumbermatcher_test.cc.ll
 ; linux/optimized/cpufreq.ll
 ; linux/optimized/vt.ll
+; llvm/optimized/FastISel.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; openssl/optimized/libcrypto-lib-conf_def.ll
 ; openssl/optimized/libcrypto-shlib-conf_def.ll
+; openusd/optimized/reconinter.c.ll
 ; php/optimized/php_variables.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i16 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 8
   %4 = icmp eq i16 %3, 0
-  %5 = getelementptr nusw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
   %6 = select i1 %4, ptr %0, ptr %5
   ret ptr %6
 }
@@ -116,6 +129,18 @@ entry:
   %3 = and i16 %2, -1024
   %4 = icmp eq i16 %3, -10240
   %5 = getelementptr i8, ptr %1, i64 -2
+  %6 = select i1 %4, ptr %0, ptr %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/arg.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(ptr %0, ptr %1, i16 %2) #0 {
+entry:
+  %3 = and i16 %2, 255
+  %4 = icmp eq i16 %3, 48
+  %5 = getelementptr nusw i8, ptr %1, i64 -2
   %6 = select i1 %4, ptr %0, ptr %5
   ret ptr %6
 }

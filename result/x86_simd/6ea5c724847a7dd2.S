@@ -15,8 +15,8 @@ func0000000000000002:                   # @func0000000000000002
 	vbroadcastsd	.LCPI1_0(%rip), %zmm4   # zmm4 = [1.7976931348623157E+308,1.7976931348623157E+308,1.7976931348623157E+308,1.7976931348623157E+308,1.7976931348623157E+308,1.7976931348623157E+308,1.7976931348623157E+308,1.7976931348623157E+308]
 	vminpd	%zmm4, %zmm3, %zmm3
 	vminpd	%zmm4, %zmm2, %zmm2
-	vmulpd	%zmm0, %zmm2, %zmm0
-	vmulpd	%zmm1, %zmm3, %zmm1
+	vmulpd	%zmm2, %zmm0, %zmm0
+	vmulpd	%zmm3, %zmm1, %zmm1
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vsubpd	%zmm5, %zmm3, %zmm3

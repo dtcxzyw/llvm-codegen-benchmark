@@ -30,7 +30,7 @@
 ; yosys/optimized/test_cell.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -53,7 +53,7 @@ entry:
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000124(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000244(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 5
@@ -87,7 +87,7 @@ entry:
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; php/optimized/zend_hash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 6
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011b(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022b(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -133,7 +133,7 @@ entry:
 ; opencv/optimized/brisk.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -143,7 +143,7 @@ entry:
   ret i1 %7
 }
 
-; 29 occurrences:
+; 31 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/array_nested.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
@@ -173,8 +173,10 @@ entry:
 ; yosys/optimized/proc_clean.ll
 ; yosys/optimized/sim.ll
 ; yosys/optimized/subcircuit.ll
+; yosys/optimized/test_abcloop.ll
+; yosys/optimized/test_autotb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000136(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000266(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
@@ -187,12 +189,12 @@ entry:
 ; 18 occurrences:
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/range.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; linux/optimized/input-mt.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/FrontendAction.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
@@ -204,7 +206,7 @@ entry:
 ; opencv/optimized/subdivision2d.cpp.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000261(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -225,7 +227,7 @@ entry:
 ; llvm/optimized/Verifier.cpp.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 5
@@ -248,7 +250,7 @@ entry:
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/cuda_gpu_mat_nd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
@@ -293,7 +295,7 @@ entry:
 ; yosys/optimized/proc_mux.ll
 ; yosys/optimized/shregmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000241(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -307,7 +309,7 @@ entry:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -327,7 +329,7 @@ entry:
 ; opencv/optimized/rtrees.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 2
@@ -354,7 +356,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/tpi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 2
@@ -395,7 +397,7 @@ entry:
 ; cvc5/optimized/regexp_elim.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 3
@@ -411,7 +413,7 @@ entry:
 ; opencv/optimized/tracker_model.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -424,7 +426,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 2
@@ -437,7 +439,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/perf_qrcode_pipeline.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 5

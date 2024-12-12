@@ -1,20 +1,4 @@
 
-; 5 occurrences:
-; clamav/optimized/pe_icons.c.ll
-; linux/optimized/intel_gmbus.ll
-; linux/optimized/intel_tv.ll
-; llvm/optimized/CodeViewDebug.cpp.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 26
-  %4 = or i32 %0, %1
-  %5 = or i32 %4, %3
-  %6 = or i32 %5, 262144
-  ret i32 %6
-}
-
 ; 7 occurrences:
 ; icu/optimized/ucnvbocu.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -33,11 +17,10 @@ entry:
   ret i32 %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/direct.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/feat_ctl.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; openjdk/optimized/ThreeByteBgr.ll
 ; openjdk/optimized/Ushort555Rgbx.ll
@@ -54,8 +37,7 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; linux/optimized/hda_codec.ll
+; 1 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
@@ -78,6 +60,21 @@ entry:
   %4 = or disjoint i32 %0, %1
   %5 = or disjoint i32 %4, %3
   %6 = or i32 %5, 16777216
+  ret i32 %6
+}
+
+; 4 occurrences:
+; clamav/optimized/pe_icons.c.ll
+; linux/optimized/intel_gmbus.ll
+; linux/optimized/intel_tv.ll
+; llvm/optimized/CodeViewDebug.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 16
+  %4 = or i32 %0, %1
+  %5 = or i32 %4, %3
+  %6 = or i32 %5, -16777216
   ret i32 %6
 }
 

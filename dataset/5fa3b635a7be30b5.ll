@@ -10,9 +10,8 @@ entry:
   ret i32 %3
 }
 
-; 157 occurrences:
+; 152 occurrences:
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
 ; assimp/optimized/STLLoader.cpp.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -36,7 +35,6 @@ entry:
 ; icu/optimized/ucptrie.ll
 ; icu/optimized/usprep.ll
 ; icu/optimized/utrie_swap.ll
-; libevent/optimized/event.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/psa_crypto_cipher.c.ll
 ; linux/optimized/82571.ll
@@ -64,6 +62,8 @@ entry:
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-memcached.ll
@@ -100,18 +100,15 @@ entry:
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; openusd/optimized/grain_synthesis.c.ll
-; openusd/optimized/patchTableFactory.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/html.ll
 ; php/optimized/print.ll
 ; postgres/optimized/tidbitmap.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_net_e1000x_common.c.ll
-; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_pci_msi.c.ll
@@ -150,9 +147,7 @@ entry:
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-knxip.c.ll
 ; wireshark/optimized/packet-knxip_decrypt.c.ll
-; wireshark/optimized/packet-link16.c.ll
 ; wireshark/optimized/packet-lwm.c.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; wireshark/optimized/packet-pppoe.c.ll
 ; wireshark/optimized/packet-rmt-lct.c.ll

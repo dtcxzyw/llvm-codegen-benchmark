@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rsi
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000058:                   # @func0000000000000058
 	decq	%rsi
 	shrq	%rsi
 	decq	%rdi

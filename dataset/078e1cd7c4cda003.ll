@@ -67,12 +67,12 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000006f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = add i64 %2, 8
   %4 = and i64 %3, -16
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -113,12 +113,12 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/bitMap.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2305843009213693944
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -136,12 +136,12 @@ entry:
 ; protobuf/optimized/padding_optimizer.cc.ll
 ; verilator/optimized/V3SchedAcyclic.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000063(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = add i64 %2, 8
   %4 = and i64 %3, -16
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -194,12 +194,12 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000006b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 2
   %4 = and i64 %3, -4
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

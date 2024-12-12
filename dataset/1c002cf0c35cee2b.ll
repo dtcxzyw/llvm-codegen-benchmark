@@ -1,6 +1,9 @@
 
-; 48 occurrences:
+; 50 occurrences:
 ; assimp/optimized/unzip.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/authority_view.ll
+; boost/optimized/url_view_base.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; cmake/optimized/select.c.ll
@@ -14,7 +17,6 @@
 ; hyperscan/optimized/ng_region.cpp.ll
 ; libevent/optimized/event.c.ll
 ; lief/optimized/ssl_msg.c.ll
-; linux/optimized/mpi-cmp.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/serport.ll
@@ -56,7 +58,8 @@ entry:
   ret i32 %2
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/authority_view.ll
 ; cpython/optimized/io.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/nfsroot.ll
@@ -73,12 +76,13 @@ entry:
   ret i32 %2
 }
 
-; 43 occurrences:
+; 46 occurrences:
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/giaKf.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/http.c.ll
 ; cpython/optimized/sliceobject.ll
@@ -92,18 +96,16 @@ entry:
 ; linux/optimized/commoncap.ll
 ; linux/optimized/hid-core.ll
 ; linux/optimized/mpi-add.ll
-; linux/optimized/mpi-div.ll
-; linux/optimized/mpi-mul.ll
 ; linux/optimized/mpi-sub-ui.ll
 ; linux/optimized/platform.ll
 ; linux/optimized/srcutree.ll
 ; llvm/optimized/BitwiseShiftChecker.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_chart.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_shift.ll
 ; openssl/optimized/libcrypto-shlib-bn_shift.ll
-; php/optimized/buffer.ll
 ; php/optimized/microtime.ll
 ; php/optimized/zend_interfaces.ll
 ; qemu/optimized/audio_mixeng.c.ll
@@ -113,6 +115,10 @@ entry:
 ; wireshark/optimized/packet-bpv7.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; wolfssl/optimized/api.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zxing/optimized/ODEAN13Writer.cpp.ll
 ; zxing/optimized/ODEAN8Writer.cpp.ll
@@ -125,11 +131,10 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; casadi/optimized/kinsol_band.c.ll
-; casadi/optimized/kinsol_dense.c.ll
 ; cpython/optimized/mpdecimal.ll
 ; llvm/optimized/AArch64RegisterInfo.cpp.ll
 ; openssl/optimized/constant_time_test-bin-constant_time_test.ll
@@ -144,8 +149,8 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
-; abseil-cpp/optimized/duration_test.cc.ll
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; hermes/optimized/APInt.cpp.ll
 ; libquic/optimized/mul.c.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -154,11 +159,21 @@ entry:
 ; llvm/optimized/SARIFDiagnostic.cpp.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
 ; postgres/optimized/timestamp.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = icmp ult i64 %0, 4294967296
+  %1 = icmp ult i64 %0, 1000000000000000000
+  %2 = sext i1 %1 to i32
+  ret i32 %2
+}
+
+; 2 occurrences:
+; abseil-cpp/optimized/duration_test.cc.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0) #0 {
+entry:
+  %1 = icmp samesign ult i64 %0, -153722867280912930
   %2 = sext i1 %1 to i32
   ret i32 %2
 }

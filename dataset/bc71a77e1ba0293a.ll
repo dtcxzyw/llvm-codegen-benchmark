@@ -15,11 +15,11 @@ entry:
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw { { ptr, i64 }, i64 }, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 24
+  %4 = getelementptr nusw nuw { { ptr, i64 }, i64 }, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
@@ -27,11 +27,11 @@ entry:
 ; 1 occurrences:
 ; git/optimized/path.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }

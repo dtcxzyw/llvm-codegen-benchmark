@@ -23,27 +23,12 @@ func000000000000001c:                   # @func000000000000001c
 	imull	%edi, %esi
 	movslq	%esi, %rax
 	retq
-func000000000000001d:                   # @func000000000000001d
-	decl	%esi
-	imull	%edi, %esi
-	movslq	%esi, %rax
-	retq
 func0000000000000014:                   # @func0000000000000014
 	decl	%esi
 	imull	%edi, %esi
 	movslq	%esi, %rax
 	retq
 func0000000000000011:                   # @func0000000000000011
-	incl	%esi
-	imull	%edi, %esi
-	movslq	%esi, %rax
-	retq
-func0000000000000034:                   # @func0000000000000034
-	incl	%esi
-	imull	%edi, %esi
-	movslq	%esi, %rax
-	retq
-func0000000000000000:                   # @func0000000000000000
 	incl	%esi
 	imull	%edi, %esi
 	movslq	%esi, %rax

@@ -1,10 +1,8 @@
 
-; 11 occurrences:
+; 9 occurrences:
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; openssl/optimized/libcrypto-lib-bn_blind.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-lib-bn_mod.ll
-; openssl/optimized/libcrypto-shlib-bn_blind.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_mod.ll
 ; openusd/optimized/instanceAdapter.cpp.ll
@@ -48,14 +46,15 @@ entry:
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/pshinter.c.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -86,10 +85,10 @@ entry:
 ; wireshark/optimized/dot11decrypt_gcmp.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp sge i64 %2, %0
+  %3 = icmp sle i64 %0, %2
   ret i1 %3
 }
 
@@ -98,10 +97,10 @@ entry:
 ; re2/optimized/parse.cc.ll
 ; yalantinglibs/optimized/conformance_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -185,21 +184,20 @@ entry:
 ; yosys/optimized/ezsat.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; ninja/optimized/manifest_parser_test.cc.ll
-; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/check_code.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
@@ -211,7 +209,7 @@ entry:
 ; redis/optimized/lparser.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 %0, %2
@@ -228,11 +226,11 @@ entry:
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   ret i1 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; git/optimized/apply.ll
 ; git/optimized/string-list.ll
@@ -240,7 +238,6 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; openjdk/optimized/dgif_lib.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
-; wireshark/optimized/androiddump.c.ll
 ; wireshark/optimized/k12text.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
@@ -251,7 +248,7 @@ entry:
   ret i1 %4
 }
 
-; 45 occurrences:
+; 48 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
@@ -261,6 +258,9 @@ entry:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; darktable/optimized/amaze.cc.ll
@@ -298,7 +298,7 @@ entry:
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 %0, %2
@@ -306,7 +306,18 @@ entry:
   ret i1 %4
 }
 
-; 42 occurrences:
+; 1 occurrences:
+; openjdk/optimized/TransformHelper.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sub nsw i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 1024
+  ret i1 %4
+}
+
+; 45 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
@@ -316,6 +327,9 @@ entry:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
@@ -350,7 +364,7 @@ entry:
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 %0, %2
@@ -361,7 +375,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/string-list.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nuw i64 %0, %2
@@ -402,7 +416,7 @@ entry:
 ; 1 occurrences:
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nuw nsw i64 %0, %2
@@ -413,11 +427,33 @@ entry:
 ; 1 occurrences:
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sub nuw nsw i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 1
+  ret i1 %4
+}
+
+; 1 occurrences:
+; influxdb-rs/optimized/54bldmpi534adbqh.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nuw nsw i64 %0, %2
   %4 = icmp eq i64 %3, 1
+  ret i1 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/androiddump.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 23
   ret i1 %4
 }
 

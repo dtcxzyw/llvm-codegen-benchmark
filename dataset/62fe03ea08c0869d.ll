@@ -1,6 +1,6 @@
 
-; 90 occurrences:
-; abc/optimized/covMinUtil.c.ll
+; 89 occurrences:
+; boost/optimized/mapped_file.ll
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -46,7 +46,6 @@
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll

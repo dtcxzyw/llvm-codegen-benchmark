@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; llvm/optimized/ExprCXX.cpp.ll

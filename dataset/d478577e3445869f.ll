@@ -9,7 +9,7 @@ entry:
   %4 = lshr i32 %1, %3
   %5 = and i32 %4, 1
   %6 = zext nneg i32 %5 to i64
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -94,7 +94,7 @@ entry:
   %4 = lshr i32 %1, %3
   %5 = and i32 %4, 1
   %6 = zext nneg i32 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

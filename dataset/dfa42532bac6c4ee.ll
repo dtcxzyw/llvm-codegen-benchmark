@@ -21,11 +21,10 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/COFFAsmParser.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; Function Attrs: nounwind

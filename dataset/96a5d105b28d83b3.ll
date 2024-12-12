@@ -3,6 +3,7 @@
 ; abc/optimized/extraUtilBitMatrix.c.ll
 ; assimp/optimized/BVHLoader.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/message.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/interpolant.cpp.ll
@@ -41,7 +42,6 @@
 ; gromacs/optimized/minimize.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
-; gromacs/optimized/quadraticsplinetable.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; hyperscan/optimized/ComponentSequence.cpp.ll
 ; hyperscan/optimized/ng_uncalc_components.cpp.ll
@@ -247,7 +247,7 @@
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
@@ -527,7 +527,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
@@ -613,7 +613,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   ret i64 %3
 }
 

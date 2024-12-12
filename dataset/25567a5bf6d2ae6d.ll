@@ -4,7 +4,7 @@
 ; php/optimized/dce.ll
 ; php/optimized/scdf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = and i64 %2, 2147483648
@@ -16,7 +16,7 @@ entry:
 ; hyperscan/optimized/repeat.c.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/disasm.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ca(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = and i64 %2, 2147483648
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/GlobalObject.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = and i64 %2, 2147483648

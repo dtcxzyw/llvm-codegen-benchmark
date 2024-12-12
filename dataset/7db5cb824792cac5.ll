@@ -1,8 +1,8 @@
 
-%"struct.irr::gui::CGUIButton::ButtonSprite.2578343" = type <{ i32, %"class.irr::video::SColor.2578344", i8, i8, [2 x i8] }>
-%"class.irr::video::SColor.2578344" = type { i32 }
+%"struct.irr::gui::CGUIButton::ButtonSprite.2692517" = type <{ i32, %"class.irr::video::SColor.2692518", i8, i8, [2 x i8] }>
+%"class.irr::video::SColor.2692518" = type { i32 }
 
-; 243 occurrences:
+; 249 occurrences:
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
@@ -236,51 +236,28 @@
 ; imgui/optimized/imgui.cpp.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; lief/optimized/ssl_msg.c.ll
-; luajit/optimized/lj_meta.ll
-; luajit/optimized/lj_meta_dyn.ll
-; minetest/optimized/CGUIButton.cpp.ll
-; php/optimized/basic_functions.ll
-; php/optimized/crypt_sha512.ll
-; php/optimized/logical_filters.ll
-; php/optimized/util.ll
-; recastnavigation/optimized/DetourCrowd.cpp.ll
-; yoga/optimized/AbsoluteLayout.cpp.ll
-; yoga/optimized/Node.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i1 %1) #0 {
-entry:
-  %2 = select i1 %1, i64 4, i64 5
-  %3 = getelementptr nusw i8, ptr %0, i64 308
-  %4 = getelementptr nusw [7 x %"struct.irr::gui::CGUIButton::ButtonSprite.2578343"], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
-; 2 occurrences:
-; libdeflate/optimized/deflate_compress.c.ll
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1) #0 {
-entry:
-  %2 = select i1 %1, i64 9, i64 8
-  %3 = getelementptr i8, ptr %0, i64 1320
-  %4 = getelementptr nusw [10 x i32], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
-; 7 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CGExprCXX.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; luajit/optimized/lj_meta.ll
+; luajit/optimized/lj_meta_dyn.ll
+; minetest/optimized/CGUIButton.cpp.ll
 ; openspiel/optimized/mancala.cc.ll
 ; openusd/optimized/openexr-c.c.ll
+; php/optimized/basic_functions.ll
+; php/optimized/crypt_sha512.ll
+; php/optimized/logical_filters.ll
+; php/optimized/util.ll
+; recastnavigation/optimized/DetourCrowd.cpp.ll
+; yoga/optimized/Node.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i1 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i64 323, i64 322
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 396872
-  %4 = getelementptr nusw [701 x ptr], ptr %3, i64 0, i64 %2
+  %2 = select i1 %1, i64 4, i64 5
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 308
+  %4 = getelementptr nusw nuw [7 x %"struct.irr::gui::CGUIButton::ButtonSprite.2692517"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -290,10 +267,10 @@ entry:
 ; linux/optimized/page_alloc.ll
 ; postgres/optimized/tsrank.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i1 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 4, i64 5
-  %3 = getelementptr nusw i8, ptr %0, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 16
   %4 = getelementptr [6 x i64], ptr %3, i64 0, i64 %2
   ret ptr %4
 }

@@ -31,8 +31,7 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
-; openblas/optimized/dgesdd.c.ll
+; 3 occurrences:
 ; openblas/optimized/dtgex2.c.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
@@ -44,8 +43,7 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
-; openblas/optimized/dgesdd.c.ll
+; 3 occurrences:
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll

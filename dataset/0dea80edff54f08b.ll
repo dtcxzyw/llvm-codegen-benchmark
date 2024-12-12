@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp2.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = trunc nsw i64 %0 to i32
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/bitwriter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -32
   %3 = trunc nuw i64 %0 to i32
@@ -32,7 +32,7 @@ entry:
 ; abc/optimized/extraBddCas.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -6
   %3 = trunc nuw i64 %0 to i32

@@ -29,8 +29,7 @@ entry:
   ret i64 %4
 }
 
-; 112 occurrences:
-; gromacs/optimized/parser.cpp.ll
+; 111 occurrences:
 ; llvm/optimized/FunctionSpecialization.cpp.ll
 ; llvm/optimized/InlineCost.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll

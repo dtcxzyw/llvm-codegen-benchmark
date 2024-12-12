@@ -3,9 +3,9 @@ func0000000000000001:                   # @func0000000000000001
 	beqz	a0, .LBB0_2
 	lui	a0, 798720
 	fmv.w.x	fa5, a0
-	fadd.s	fa0, fa5, fa0
+	fadd.s	fa0, fa0, fa5
 	ret
 .LBB0_2:
 	fmv.w.x	fa5, zero
-	fadd.s	fa0, fa5, fa0
+	fadd.s	fa0, fa0, fa5
 	ret

@@ -27,7 +27,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 511
   %.neg = xor i32 %3, -1
-  %4 = add i32 %.neg, %0
+  %4 = add i32 %0, %.neg
   ret i32 %4
 }
 

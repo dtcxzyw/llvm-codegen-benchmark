@@ -17,3 +17,13 @@ func00000000000000a6:                   # @func00000000000000a6
 	srli	a0, a0, 7
 	li	a1, 0
 	ret
+.LCPI2_0:
+	.quad	3022314549036573                # 0xabcc77118461d
+func00000000000000fe:                   # @func00000000000000fe
+	lui	a2, %hi(.LCPI2_0)
+	ld	a2, %lo(.LCPI2_0)(a2)
+	add	a0, a0, a1
+	mulhu	a0, a0, a2
+	srli	a0, a0, 14
+	li	a1, 0
+	ret

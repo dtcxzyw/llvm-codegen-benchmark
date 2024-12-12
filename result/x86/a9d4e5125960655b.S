@@ -4,24 +4,18 @@ func000000000000000e:                   # @func000000000000000e
 	shrq	$26, %rax
 	andl	$-64, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movl	%esi, %eax
-	imulq	%rdi, %rax
-	shrq	$23, %rax
-	movl	%eax, %eax
-	retq
-func0000000000000006:                   # @func0000000000000006
-	movl	%esi, %eax
-	imulq	%rdi, %rax
-	shrq	$7, %rax
-	movl	%eax, %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	movl	$52, %ecx
 	bzhiq	%rcx, %rax, %rax
 	shrq	$8, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	%esi, %eax
+	imulq	%rdi, %rax
+	shrq	$29, %rax
+	andq	$-8, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%esi, %eax

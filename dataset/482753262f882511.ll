@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -9,6 +9,7 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; darktable/optimized/amaze.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -56,8 +57,10 @@ entry:
   ret i32 %3
 }
 
-; 30 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -95,7 +98,8 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/to_chars.ll
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; linux/optimized/intel_vdsc.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
@@ -116,9 +120,12 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 8 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; jq/optimized/decNumber.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_label.ll
 ; opencv/optimized/brisk.cpp.ll
 ; quantlib/optimized/thirty360.ll
 ; stb/optimized/stb_image.c.ll
@@ -127,6 +134,16 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = sub i32 %2, %0
+  ret i32 %3
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 10
+  %3 = sub nsw i32 %2, %0
   ret i32 %3
 }
 

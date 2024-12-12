@@ -5,10 +5,18 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	(%rsi,%rax,2), %rax
 	leaq	(%rax,%rdi,4), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	movabsq	$-9187201950435737471, %rax     # imm = 0x8080808080808081
 	mulxq	%rax, %rax, %rax
 	shrq	$7, %rax
 	addq	%rdi, %rax
 	addq	%rsi, %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
+	mulxq	%rax, %rax, %rax
+	shrq	$6, %rax
+	leaq	(%rax,%rax,4), %rax
+	leaq	(%rsi,%rax,8), %rax
+	addq	%rdi, %rax
 	retq

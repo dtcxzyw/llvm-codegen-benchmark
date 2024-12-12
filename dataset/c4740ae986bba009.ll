@@ -1,6 +1,7 @@
 
-; 21 occurrences:
+; 26 occurrences:
 ; assimp/optimized/FBXUtil.cpp.ll
+; boost/optimized/url_base.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CGObjCRuntime.cpp.ll
 ; llvm/optimized/EHStreamer.cpp.ll
@@ -21,6 +22,10 @@
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/s_mulAddF128.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
 entry:
@@ -30,10 +35,11 @@ entry:
   ret i64 %5
 }
 
-; 109 occurrences:
+; 110 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; assimp/optimized/Base64.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -149,7 +155,9 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libquic/optimized/quic_protocol.cc.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll

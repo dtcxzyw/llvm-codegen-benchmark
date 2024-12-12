@@ -14,7 +14,7 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rax, %rax
 	setg	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	movq	%rdi, %rax
 	movl	%esi, %ecx
 	cqto
@@ -30,7 +30,7 @@ func0000000000000006:                   # @func0000000000000006
 	testq	%rax, %rax
 	setle	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movq	%rdi, %rax
 	movl	%esi, %ecx
 	cqto
@@ -38,7 +38,7 @@ func0000000000000021:                   # @func0000000000000021
 	testq	%rax, %rax
 	sete	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	movq	%rdi, %rax
 	movl	%esi, %ecx
 	cqto

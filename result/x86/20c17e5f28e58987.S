@@ -1,11 +1,11 @@
-func0000000000000211:                   # @func0000000000000211
+func0000000000000821:                   # @func0000000000000821
 	btq	%rdx, %rsi
 	setae	%cl
 	testl	%edi, %edi
 	sete	%al
 	xorb	%cl, %al
 	retq
-func00000000000002c1:                   # @func00000000000002c1
+func0000000000000981:                   # @func0000000000000981
 	btq	%rdx, %rsi
 	setae	%cl
 	testl	%edi, %edi

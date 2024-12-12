@@ -22,15 +22,13 @@ entry:
   ret i16 %2
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; clamav/optimized/qtmd.c.ll
-; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; libquic/optimized/ssl_buffer.c.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; minetest/optimized/environment.cpp.ll
 ; spike/optimized/f16_rem.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; yosys/optimized/BigInteger.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i64 %0) #0 {
@@ -64,7 +62,7 @@ entry:
   ret i16 %2
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ABIInfoImpl.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
@@ -107,7 +105,6 @@ entry:
 ; llvm/optimized/LowerMemIntrinsics.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/OffloadWrapper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll

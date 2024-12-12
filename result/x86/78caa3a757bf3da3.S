@@ -1,18 +1,18 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	addb	%dil, %sil
 	cmpb	$64, %sil
 	setae	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	addb	%dil, %sil
 	cmpb	$2, %sil
 	setae	%al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	addb	%dil, %sil
 	setns	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	addb	%dil, %sil
 	setns	%al
 	retq

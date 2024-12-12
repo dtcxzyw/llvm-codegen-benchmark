@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/crypt_freesec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = trunc i64 %0 to i32

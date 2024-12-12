@@ -1,7 +1,5 @@
 
-; 4 occurrences:
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/ht.ll
+; 2 occurrences:
 ; linux/optimized/ldt.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
@@ -9,7 +7,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, -7340033
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or disjoint i32 %5, 1048576
   ret i32 %6
 }
@@ -27,7 +25,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = and i32 %3, -4162048
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or disjoint i32 %5, 32773
   ret i32 %6
 }

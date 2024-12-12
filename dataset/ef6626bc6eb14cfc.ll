@@ -1,11 +1,12 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; abseil-cpp/optimized/demangle.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; libquic/optimized/prtime.cc.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; oiio/optimized/strutil.cpp.ll

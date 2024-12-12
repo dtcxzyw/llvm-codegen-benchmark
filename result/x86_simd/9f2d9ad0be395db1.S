@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	2                               # 0x2
-func00000000000002aa:                   # @func00000000000002aa
+func000000000000054a:                   # @func000000000000054a
 	vpaddd	%ymm1, %ymm2, %ymm2
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpsubd	%ymm1, %ymm0, %ymm0

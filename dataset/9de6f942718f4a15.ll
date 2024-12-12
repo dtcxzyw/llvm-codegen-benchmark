@@ -15,7 +15,7 @@
 ; openusd/optimized/vertexAdjacency.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i32 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp eq i64 %2, %0
@@ -28,7 +28,7 @@ entry:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; llvm/optimized/LoopUnroll.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000e1(i64 %0, i64 %1) #0 {
+define i32 @func00000000000001c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp eq i64 %2, %0
@@ -41,7 +41,7 @@ entry:
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = icmp eq i64 %2, %0

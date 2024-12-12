@@ -29,15 +29,17 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003d(i64 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 31
+  %2 = lshr i32 %1, 8
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw i64 %3, 63
-  %5 = shl nuw nsw i64 %0, 29
+  %4 = shl nuw i64 %3, 40
+  %5 = shl nuw nsw i64 %0, 8
   %6 = or disjoint i64 %4, %5
   ret i64 %6
 }

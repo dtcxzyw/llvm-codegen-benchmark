@@ -1,5 +1,7 @@
 
-; 20 occurrences:
+; 22 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/route.c.ll
 ; graphviz/optimized/tlayout.c.ll
 ; gromacs/optimized/calculate_spline_moduli.cpp.ll
@@ -24,7 +26,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fdiv double %4, 0x400C5BF891B4EF6A
   ret double %5
 }

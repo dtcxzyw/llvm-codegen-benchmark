@@ -31,12 +31,12 @@ func0000000000000013:                   # @func0000000000000013
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v11, v11, 24
-	vadd.vv	v10, v11, v10
+	vadd.vv	v10, v10, v11
 	vwsubu.wv	v8, v8, v10
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v11, v11, 8
-	vadd.vv	v10, v11, v10
+	vadd.vv	v10, v10, v11
 	vwsubu.wv	v8, v8, v10
 	ret

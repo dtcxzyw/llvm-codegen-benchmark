@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; freetype/optimized/truetype.c.ll
-; libquic/optimized/random.c.ll
 ; lief/optimized/ssl_msg.c.ll
 ; openssl/optimized/libcrypto-lib-bn_rand.ll
 ; openssl/optimized/libcrypto-shlib-bn_rand.ll

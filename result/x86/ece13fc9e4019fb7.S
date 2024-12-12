@@ -5,27 +5,27 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000018c:                   # @func000000000000018c
 	incq	%rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000188:                   # @func0000000000000188
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	$21, %rdx
 	setae	%al
 	andb	%dil, %al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000018a:                   # @func000000000000018a
 	subq	%rdx, %rsi
 	addq	$-24, %rsi
 	testq	%rsi, %rsi
 	setg	%al
 	andb	%dil, %al
 	retq
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	subq	%rdx, %rsi
 	incq	%rsi
 	cmpq	$10, %rsi

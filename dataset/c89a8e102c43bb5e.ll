@@ -34,10 +34,11 @@ entry:
   ret i32 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
 ; linux/optimized/quota.ll
 ; linux/optimized/yenta_socket.ll
+; llvm/optimized/Expr.cpp.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
 ; php/optimized/pcre2_jit_compile.ll

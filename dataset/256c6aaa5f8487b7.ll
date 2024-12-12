@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -19,7 +19,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -32,7 +31,7 @@ define i16 @func0000000000000015(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i16
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   %6 = or disjoint i16 %1, 31744
   %7 = or disjoint i16 %5, %6
   ret i16 %7

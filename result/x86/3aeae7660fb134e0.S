@@ -1,18 +1,18 @@
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	addq	%rdx, %rdi
 	setb	%cl
 	cmpq	%rsi, %rdi
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000000090:                   # @func0000000000000090
+func0000000000000110:                   # @func0000000000000110
 	addq	%rdx, %rsi
 	setb	%cl
 	cmpq	%rdi, %rsi
 	seta	%al
 	orb	%cl, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+func000000000000028c:                   # @func000000000000028c
 	addq	%rdi, %rdx
 	cmpq	%rsi, %rdx
 	setg	%cl
@@ -20,7 +20,7 @@ func000000000000014c:                   # @func000000000000014c
 	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000128:                   # @func0000000000000128
+func0000000000000248:                   # @func0000000000000248
 	addq	%rdx, %rdi
 	setb	%cl
 	cmpq	%rsi, %rdi

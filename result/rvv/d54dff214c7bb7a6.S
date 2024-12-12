@@ -14,6 +14,6 @@ func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmerge.vim	v10, v10, 5, v0
-	vand.vv	v8, v10, v8
+	vand.vv	v8, v8, v10
 	vmsne.vi	v0, v8, 0
 	ret

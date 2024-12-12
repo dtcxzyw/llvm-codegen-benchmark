@@ -4,7 +4,7 @@
 ; wireshark/optimized/packet-snort.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000303(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000603(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32

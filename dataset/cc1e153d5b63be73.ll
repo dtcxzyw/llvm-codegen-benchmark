@@ -13,18 +13,16 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; darktable/optimized/NefDecoder.cpp.ll
-; gromacs/optimized/vsite_parm.cpp.ll
-; minetest/optimized/server.cpp.ll
 ; openexr/optimized/ImfHeader.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(float %0, i1 %1) #0 {
 entry:
-  %2 = fcmp olt float %0, -3.100750e+05
+  %2 = fcmp olt float %0, 0x3F9FFFE080000000
   %3 = or i1 %2, %1
-  %4 = fcmp ogt float %0, 3.100750e+05
+  %4 = fcmp ogt float %0, 1.000000e+01
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -50,11 +48,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000104(float %0, i1 %1) #0 {
 entry:
-  %2 = fcmp ogt float %0, 0x401921FB60000000
-  %3 = or i1 %2, %1
-  %4 = fcmp olt float %0, 0xC01921FB60000000
-  %5 = or i1 %4, %3
-  ret i1 %5
+  %2 = call float @llvm.fabs.f32(float %0)
+  %3 = fcmp ogt float %2, 0x401921FB60000000
+  %4 = or i1 %3, %1
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -81,4 +78,8 @@ entry:
   ret i1 %5
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare float @llvm.fabs.f32(float) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

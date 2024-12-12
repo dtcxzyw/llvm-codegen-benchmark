@@ -42,9 +42,8 @@ entry:
   ret float %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcTiming.c.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

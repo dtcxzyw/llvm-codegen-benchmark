@@ -1,26 +1,10 @@
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v1.2d, v1.2d, v3.2d
+	sub	x8, x1, x2
 	mov	w9, #43691                      // =0xaaab
+	lsr	x8, x8, #2
 	movk	w9, #43690, lsl #16
-	mvni	v3.4s, #1
-	ushr	v2.2d, v2.2d, #2
-	ushr	v1.2d, v1.2d, #2
-	add	v0.4s, v0.4s, v3.4s
-	fmov	x10, d2
-	fmov	x12, d1
-	mov	x8, v2.d[1]
-	mov	x11, v1.d[1]
-	mul	w10, w10, w9
-	mul	w12, w12, w9
-	mul	w8, w8, w9
-	mul	w9, w11, w9
-	fmov	d1, x10
-	fmov	d2, x12
-	mov	v1.d[1], x8
-	mov	v2.d[1], x9
-	uzp1	v1.4s, v2.4s, v1.4s
-	add	v0.4s, v0.4s, v1.4s
+	madd	w8, w8, w9, w0
+	sub	w0, w8, #2
 	ret
                                         // -- End function

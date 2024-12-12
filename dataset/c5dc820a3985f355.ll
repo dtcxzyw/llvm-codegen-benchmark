@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; duckdb/optimized/ub_duckdb_catalog.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_set.cpp.ll
 ; duckdb/optimized/ub_duckdb_table_func_system.cpp.ll
@@ -16,6 +16,7 @@
 ; folly/optimized/OpenSSLHash.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
+; lvgl/optimized/lv_grid.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; minetest/optimized/enriched_string.cpp.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll

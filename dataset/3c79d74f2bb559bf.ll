@@ -48,7 +48,8 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; icu/optimized/ubidiln.ll
 ; openblas/optimized/dstedc.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
@@ -60,7 +61,7 @@ define i64 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = select i1 %0, i64 %3, i64 0
+  %4 = select i1 %0, i64 %3, i64 1
   ret i64 %4
 }
 

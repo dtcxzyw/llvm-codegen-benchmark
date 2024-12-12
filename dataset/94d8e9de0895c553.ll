@@ -1,9 +1,9 @@
 
-%"class.base::ManualConstructor.2866256" = type { %"class.base::AlignedMemory.2866257" }
-%"class.base::AlignedMemory.2866257" = type { [16 x i8] }
-%struct._SPI_connection.3471158 = type { i64, ptr, i32, %struct.slist_head.3471159, ptr, ptr, ptr, i32, ptr, i8, i8, i64, ptr, i32 }
-%struct.slist_head.3471159 = type { %struct.slist_node.3471160 }
-%struct.slist_node.3471160 = type { ptr }
+%"class.base::ManualConstructor.3059902" = type { %"class.base::AlignedMemory.3059903" }
+%"class.base::AlignedMemory.3059903" = type { [16 x i8] }
+%struct._SPI_connection.3655203 = type { i64, ptr, i32, %struct.slist_head.3655204, ptr, ptr, ptr, i32, ptr, i8, i8, i64, ptr, i32 }
+%struct.slist_head.3655204 = type { %struct.slist_node.3655205 }
+%struct.slist_node.3655205 = type { ptr }
 
 ; 24 occurrences:
 ; abc/optimized/solver.c.ll
@@ -31,10 +31,10 @@
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/jimage.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(i32 %0, ptr %1) #0 {
+define ptr @func0000000000000061(i32 %0, ptr %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = icmp eq i32 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5
@@ -44,10 +44,10 @@ entry:
 ; libquic/optimized/quic_session.cc.ll
 ; libquic/optimized/quic_spdy_session.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000066(i32 %0, ptr %1) #0 {
+define ptr @func00000000000000e6(i32 %0, ptr %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = getelementptr nusw %"class.base::ManualConstructor.2866256", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.base::ManualConstructor.3059902", ptr %1, i64 %2
   %4 = icmp slt i32 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5
@@ -68,10 +68,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/spi.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000046(i32 %0, ptr %1) #0 {
+define ptr @func0000000000000086(i32 %0, ptr %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = getelementptr %struct._SPI_connection.3471158, ptr %1, i64 %2
+  %3 = getelementptr %struct._SPI_connection.3655203, ptr %1, i64 %2
   %4 = icmp slt i32 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5
@@ -80,10 +80,10 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000061(i32 %0, ptr %1) #0 {
+define ptr @func00000000000000e1(i32 %0, ptr %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = icmp eq i32 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5

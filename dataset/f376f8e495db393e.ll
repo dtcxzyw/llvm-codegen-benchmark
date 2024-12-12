@@ -14,7 +14,7 @@ entry:
   ret i64 %5
 }
 
-; 47 occurrences:
+; 50 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -54,6 +54,7 @@ entry:
 ; spike/optimized/sunpkd831.ll
 ; spike/optimized/sunpkd832.ll
 ; tls-rs/optimized/7y9936vu35zt2sp.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
@@ -62,6 +63,8 @@ entry:
 ; wireshark/optimized/packet-flexray.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i16 %2) #0 {
 entry:

@@ -13,7 +13,7 @@ func0000000000000005:                   # @func0000000000000005
 	vmnot.m	v0, v12
 	vfmv.v.f	v12, fa5
 	vfmerge.vfm	v12, v12, fa4, v0
-	vfadd.vv	v12, v12, v8
+	vfadd.vv	v12, v8, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v12
 	ret
@@ -25,7 +25,7 @@ func0000000000000002:                   # @func0000000000000002
 	vfmv.v.f	v12, fa5
 	fneg.d	fa5, fa5
 	vfmerge.vfm	v12, v12, fa5, v0
-	vfadd.vv	v12, v12, v8
+	vfadd.vv	v12, v8, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v12
 	ret
@@ -37,7 +37,7 @@ func000000000000000c:                   # @func000000000000000c
 	fneg.d	fa5, fa4
 	vfmv.v.f	v12, fa5
 	vfmerge.vfm	v12, v12, fa4, v0
-	vfadd.vv	v12, v12, v8
+	vfadd.vv	v12, v8, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v12
 	ret
@@ -50,7 +50,7 @@ func0000000000000003:                   # @func0000000000000003
 	vmnot.m	v0, v12
 	fneg.d	fa5, fa5
 	vfmerge.vfm	v12, v16, fa5, v0
-	vfadd.vv	v12, v12, v8
+	vfadd.vv	v12, v8, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v12
 	ret

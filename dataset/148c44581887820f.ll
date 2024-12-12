@@ -1,6 +1,5 @@
 
-; 82 occurrences:
-; arrow/optimized/expression.cc.ll
+; 81 occurrences:
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
 ; draco/optimized/symbol_encoding.cc.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
@@ -83,18 +82,20 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000044(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp ult i32 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
 }
 
-; 38 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
@@ -133,17 +134,17 @@ entry:
 ; velox/optimized/URLFunctions.cpp.ll
 ; verilator/optimized/V3GraphAcyc.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000004a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp sgt i32 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -156,7 +157,6 @@ entry:
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SafeStackLayout.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
 ; minetest/optimized/sound_data.cpp.ll
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; z3/optimized/dyn_ack.cpp.ll
@@ -166,18 +166,20 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000048(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp ugt i32 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
 }
 
-; 20 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
@@ -198,12 +200,38 @@ entry:
 ; xgboost/optimized/adaptive.cc.ll
 ; yosys/optimized/recover_names.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000046(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp slt i32 %0, %1
+  %7 = select i1 %6, i64 %3, i64 %5
+  ret i64 %7
+}
+
+; 1 occurrences:
+; llvm/optimized/TargetLowering.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000058(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = xor i64 %3, -1
+  %5 = add nsw i64 %2, %4
+  %6 = icmp samesign ugt i32 %0, %1
+  %7 = select i1 %6, i64 %3, i64 %5
+  ret i64 %7
+}
+
+; 1 occurrences:
+; arrow/optimized/expression.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000054(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = xor i64 %3, -1
+  %5 = add nsw i64 %2, %4
+  %6 = icmp samesign ult i32 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
 }

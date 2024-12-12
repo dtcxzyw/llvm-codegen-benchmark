@@ -1,8 +1,15 @@
 
-; 294 occurrences:
+; 303 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/sort_by_side.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -63,6 +70,7 @@
 ; graphviz/optimized/splines.c.ll
 ; graphviz/optimized/tree_map.c.ll
 ; gromacs/optimized/biasstate.cpp.ll
+; gromacs/optimized/colvarcomp_gpath.cpp.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; gromacs/optimized/eneconv.cpp.ll
@@ -290,6 +298,7 @@
 ; wireshark/optimized/packet-rpc.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/PerspectiveTransform.cpp.ll

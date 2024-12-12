@@ -5,7 +5,7 @@
 ; postgres/optimized/indextuple.ll
 ; qemu/optimized/io_channel-socket.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -16
   %3 = ashr i32 %2, 2
@@ -30,7 +30,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = ashr i32 %2, 3
@@ -45,7 +45,7 @@ entry:
 ; postgres/optimized/orderedsetaggs.ll
 ; redis/optimized/config.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = ashr exact i32 %2, 1

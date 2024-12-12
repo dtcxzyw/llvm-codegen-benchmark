@@ -5,7 +5,7 @@
 ; openssl/optimized/libssl-shlib-packet.ll
 ; openssl/optimized/tls13secretstest-bin-packet.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000344(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000c84(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %2
   %4 = icmp ult i64 %3, %1
@@ -14,10 +14,14 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stdin.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = icmp ult i64 %3, %1
@@ -32,7 +36,7 @@ entry:
 ; openvdb/optimized/Stream.cc.ll
 ; slurm/optimized/node_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004cc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %0, %2
   %4 = icmp slt i64 %3, %1
@@ -46,7 +50,7 @@ entry:
 ; libquic/optimized/file_util_posix.cc.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000036a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000cca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %2
   %4 = icmp slt i64 %3, %1
@@ -58,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = icmp slt i64 %3, %1
@@ -71,7 +75,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, %1

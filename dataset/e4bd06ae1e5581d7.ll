@@ -1,11 +1,9 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; git/optimized/packfile.ll
-; git/optimized/patch-delta.ll
 ; linux/optimized/resize.ll
 ; openssl/optimized/openssl-bin-rand.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
-; wireshark/optimized/packet-http3.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
@@ -29,15 +27,34 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; wireshark/optimized/packet-http3.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 4611686018427387903, %1
+  %3 = icmp samesign ult i64 %2, %0
+  ret i1 %3
+}
+
+; 2 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
-; freetype/optimized/ftbase.c.ll
 ; linux/optimized/page_io.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 -1, %1
   %3 = icmp ugt i64 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; freetype/optimized/ftbase.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 2863311530, %1
+  %3 = icmp samesign ugt i64 %2, %0
   ret i1 %3
 }
 

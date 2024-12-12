@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	-2                              # 0xfffffffffffffffe
+	.quad	20                              # 0x14
 func0000000000000000:                   # @func0000000000000000
 	vpand	%xmm1, %xmm0, %xmm0
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
-	vpbroadcastq	.LCPI0_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [18446744073709551614,18446744073709551614,18446744073709551614,18446744073709551614]
+	vpbroadcastq	.LCPI0_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [20,20,20,20]
 	retq

@@ -1,5 +1,7 @@
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/ustrcase.ll

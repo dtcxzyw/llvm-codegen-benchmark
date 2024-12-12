@@ -26,7 +26,8 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; git/optimized/kwset.ll
 ; jq/optimized/execute.ll

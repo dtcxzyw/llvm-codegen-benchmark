@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; linux/optimized/skl_universal_plane.ll
@@ -12,6 +12,7 @@
 ; postgres/optimized/heapam.ll
 ; spike/optimized/clz8.ll
 ; wireshark/optimized/blf.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i1 %1, i8 %2) #0 {
 entry:

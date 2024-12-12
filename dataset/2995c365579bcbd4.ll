@@ -8,7 +8,7 @@ define i64 @func000000000000015f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ule i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   %7 = shl nuw nsw i64 %6, 32
   ret i64 %7
@@ -21,7 +21,7 @@ define i64 @func000000000000005f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   %7 = shl nuw nsw i64 %6, 2
   ret i64 %7

@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 59 occurrences:
 ; clamav/optimized/phishcheck.c.ll
 ; hermes/optimized/escape.cpp.ll
 ; linux/optimized/intel_ggtt.ll
@@ -29,7 +29,6 @@
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll

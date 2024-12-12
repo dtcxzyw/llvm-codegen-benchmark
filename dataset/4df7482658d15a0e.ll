@@ -237,7 +237,7 @@ define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = add i32 %4, 16777216
   ret i32 %5
 }
@@ -249,7 +249,7 @@ define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = add i32 %4, 16777216
   ret i32 %5
 }
@@ -261,7 +261,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 5
   %3 = trunc i64 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = add i32 %4, 1
   ret i32 %5
 }

@@ -5,7 +5,7 @@
 define i1 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %5 = select i1 %1, i1 %4, i1 false
   ret i1 %5
 }
@@ -21,7 +21,7 @@ entry:
   ret i1 %5
 }
 
-; 102 occurrences:
+; 101 occurrences:
 ; actix-rs/optimized/2d9c72efneckaqzp.ll
 ; actix-rs/optimized/2o6s6qtmif526itx.ll
 ; actix-rs/optimized/3afp9uuicyvwgbsz.ll
@@ -47,7 +47,6 @@ entry:
 ; influxdb-rs/optimized/45ep097lxkbdotle.ll
 ; influxdb-rs/optimized/55ksfxb2g8gj9lwh.ll
 ; influxdb-rs/optimized/xf9idvr5og46ibq.ll
-; linux/optimized/blk-iolatency.ll
 ; ockam-rs/optimized/10k16szy9z0gnoyc.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/14d16ac3wwpt101w.ll
@@ -125,18 +124,18 @@ entry:
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 5, %2
   %4 = select i1 %1, i64 %3, i64 5
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ugt i64 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 15, %2
   %4 = select i1 %1, i64 %3, i64 0
@@ -147,11 +146,22 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/blk-iolatency.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw nsw i64 1000000, %2
+  %4 = icmp ugt i64 %3, %0
+  %5 = select i1 %1, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/blk-iolatency.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 1000000, %2
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp samesign ult i64 %4, %0
   ret i1 %5
 }
 

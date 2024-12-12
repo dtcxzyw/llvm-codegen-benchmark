@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 22 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; libjpeg-turbo/optimized/jccoefct.c.ll
 ; libjpeg-turbo/optimized/jdapistd.c.ll
@@ -19,6 +19,9 @@
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/intblast_solver.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

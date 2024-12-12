@@ -10,13 +10,16 @@ func0000000000000009:                   # @func0000000000000009
 	addw	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	li	a2, 367
+	lui	a2, 2
+	addi	a2, a2, 1408
 	mulw	a1, a1, a2
-	lui	a2, 174763
-	addiw	a2, a2, -1365
-	mul	a1, a1, a2
-	srli	a2, a1, 63
-	srai	a1, a1, 33
+	lui	a2, 528416
+	addiw	a2, a2, 1033
+	mul	a2, a1, a2
+	srli	a2, a2, 32
+	add	a1, a1, a2
+	srliw	a2, a1, 31
+	sraiw	a1, a1, 12
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret

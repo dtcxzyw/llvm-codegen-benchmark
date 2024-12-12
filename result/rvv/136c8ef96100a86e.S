@@ -35,15 +35,6 @@ func0000000000000004:                   # @func0000000000000004
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11
 	ret
-func0000000000000008:                   # @func0000000000000008
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vand.vi	v10, v10, 1
-	vmsne.vi	v10, v10, 0
-	vmand.mm	v10, v10, v0
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsgtu.vi	v11, v8, 1
-	vmand.mm	v0, v10, v11
-	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v10, v10, 1

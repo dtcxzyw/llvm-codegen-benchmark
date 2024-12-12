@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/to_chars.ll
 ; grpc/optimized/call.cc.ll
 ; grpc/optimized/writing.cc.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
@@ -17,7 +18,7 @@ define i32 @func0000000000000002(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub nsw i32 %2, %0
-  %4 = lshr i32 %3, 16
+  %4 = lshr i32 %3, 6
   ret i32 %4
 }
 

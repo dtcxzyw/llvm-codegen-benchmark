@@ -5,21 +5,22 @@
 define i16 @func000000000000003f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   %6 = trunc nuw nsw i32 %5 to i16
   ret i16 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; folly/optimized/Conv.cpp.ll
+; opencv/optimized/demosaicing.cpp.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000003c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   %6 = trunc i32 %5 to i16
   ret i16 %6
@@ -31,7 +32,7 @@ entry:
 define i16 @func0000000000000010(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = trunc i32 %5 to i16
   ret i16 %6
@@ -44,7 +45,7 @@ entry:
 define i16 @func0000000000000000(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = trunc i32 %5 to i16
   ret i16 %6
@@ -64,8 +65,8 @@ entry:
 define i16 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = trunc i32 %5 to i16
   ret i16 %6
 }
@@ -76,7 +77,7 @@ entry:
 define i16 @func0000000000000017(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = trunc nuw nsw i32 %5 to i16
   ret i16 %6
@@ -88,7 +89,7 @@ entry:
 define i16 @func0000000000000038(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw i32 %4, %0
   %6 = trunc i32 %5 to i16
   ret i16 %6
@@ -100,7 +101,7 @@ entry:
 define i16 @func0000000000000034(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = trunc i32 %5 to i16
   ret i16 %6

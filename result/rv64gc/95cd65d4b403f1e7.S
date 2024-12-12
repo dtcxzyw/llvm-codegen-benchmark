@@ -1,9 +1,16 @@
 func00000000000001d0:                   # @func00000000000001d0
-	slli	a2, a2, 1
+	slli	a2, a2, 6
 	add	a0, a0, a2
-	slli	a1, a1, 2
+	slli	a1, a1, 5
 	add	a0, a0, a1
-	addi	a0, a0, 6
+	addi	a0, a0, 16
+	ret
+func00000000000000f0:                   # @func00000000000000f0
+	slli	a2, a2, 5
+	add	a0, a0, a2
+	slli	a1, a1, 6
+	add	a0, a0, a1
+	addi	a0, a0, 16
 	ret
 func00000000000001c0:                   # @func00000000000001c0
 	slli	a2, a2, 12

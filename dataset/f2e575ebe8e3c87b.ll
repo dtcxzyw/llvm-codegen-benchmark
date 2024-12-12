@@ -1,5 +1,5 @@
 
-; 141 occurrences:
+; 142 occurrences:
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; cmake/optimized/select.c.ll
 ; curl/optimized/libcurl_la-select.ll
@@ -115,6 +115,7 @@
 ; redis/optimized/sentinel.ll
 ; redis/optimized/t_stream.ll
 ; ruby/optimized/coverage.ll
+; ruby/optimized/ractor.ll
 ; ruby/optimized/thread.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll

@@ -23,3 +23,9 @@ func0000000000000013:                   # @func0000000000000013
 	movl	$7, %eax
 	cmovael	%ecx, %eax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	leal	1(%rdi), %ecx
+	testb	%sil, %sil
+	movl	$1, %eax
+	cmovnel	%ecx, %eax
+	retq

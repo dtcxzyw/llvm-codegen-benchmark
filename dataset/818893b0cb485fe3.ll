@@ -7,14 +7,13 @@ entry:
   %3 = shl i8 %2, 3
   %4 = and i8 %3, 8
   %5 = select i1 %1, i8 4, i8 0
-  %6 = or i8 %5, %0
+  %6 = or i8 %0, %5
   %7 = or i8 %6, %4
   ret i8 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -34,7 +33,7 @@ entry:
   %3 = shl i8 %2, 1
   %4 = and i8 %3, -128
   %5 = select i1 %1, i8 0, i8 64
-  %6 = or disjoint i8 %5, %0
+  %6 = or disjoint i8 %0, %5
   %7 = or i8 %6, %4
   ret i8 %7
 }
@@ -66,7 +65,7 @@ entry:
   %3 = shl i8 %2, 1
   %4 = and i8 %3, 16
   %5 = select i1 %1, i8 6, i8 0
-  %6 = or i8 %5, %0
+  %6 = or i8 %0, %5
   %7 = or disjoint i8 %6, %4
   ret i8 %7
 }

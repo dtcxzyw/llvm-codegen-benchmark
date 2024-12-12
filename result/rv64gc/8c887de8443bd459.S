@@ -28,3 +28,12 @@ func0000000000000010:                   # @func0000000000000010
 	srliw	a0, a2, 29
 	snez	a0, a0
 	ret
+func0000000000000030:                   # @func0000000000000030
+	andi	a3, a0, 1
+	bnez	a3, .LBB3_2
+	mv	a0, a1
+	ret
+.LBB3_2:
+	srliw	a0, a2, 21
+	snez	a0, a0
+	ret

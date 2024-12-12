@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; clamav/optimized/unsp.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
 ; wireshark/optimized/packet-mrp-msrp.c.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
 entry:
@@ -12,8 +13,9 @@ entry:
   ret i8 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; meshoptimizer/optimized/indexcodec.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0) #0 {
 entry:

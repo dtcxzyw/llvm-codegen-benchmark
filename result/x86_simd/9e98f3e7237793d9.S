@@ -31,7 +31,7 @@
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpshufb	.LCPI0_0(%rip), %ymm2, %ymm0    # ymm0 = ymm2[3],zero,zero,zero,zero,zero,zero,zero,ymm2[11],zero,zero,zero,zero,zero,zero,zero,ymm2[19],zero,zero,zero,zero,zero,zero,zero,ymm2[27],zero,zero,zero,zero,zero,zero,zero
@@ -44,7 +44,7 @@ func0000000000000031:                   # @func0000000000000031
 	retq
 .LCPI1_0:
 	.quad	2147483647                      # 0x7fffffff
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpsrlq	$2, %ymm2, %ymm0

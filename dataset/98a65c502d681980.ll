@@ -1,9 +1,8 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; flac/optimized/bitwriter.c.ll
 ; hdf5/optimized/H5Dbtree2.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/skl_scaler.ll
 ; linux/optimized/skl_universal_plane.ll
@@ -16,7 +15,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 4
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, 8
   %6 = add i32 %5, %0
   ret i32 %6
@@ -42,9 +41,9 @@ entry:
 define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, 8
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -57,7 +56,7 @@ entry:
 define i32 @func00000000000000c0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 4
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, 8
   %6 = add i32 %5, %0
   ret i32 %6
@@ -70,7 +69,7 @@ entry:
 define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, -12
   %6 = add nsw i32 %5, %0
   ret i32 %6
@@ -82,7 +81,7 @@ entry:
 define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, -1
   %6 = add i32 %5, %0
   ret i32 %6
@@ -95,7 +94,7 @@ entry:
 define i32 @func00000000000000d5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 7
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, -16384
   %6 = add nsw i32 %5, %0
   ret i32 %6
@@ -108,7 +107,7 @@ entry:
 define i32 @func00000000000000d4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 21
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, -268435456
   %6 = add i32 %5, %0
   ret i32 %6
@@ -120,7 +119,7 @@ entry:
 define i32 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, -1
   %6 = add nsw i32 %5, %0
   ret i32 %6
@@ -132,7 +131,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, 3
   %6 = add nsw i32 %5, %0
   ret i32 %6

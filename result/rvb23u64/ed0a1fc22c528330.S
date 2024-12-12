@@ -3,5 +3,5 @@ func0000000000000001:                   # @func0000000000000001
 	bnez	a0, .LBB0_2
 	fneg.d	fa1, fa1
 .LBB0_2:                                # %entry
-	fadd.d	fa0, fa1, fa0
+	fadd.d	fa0, fa0, fa1
 	ret

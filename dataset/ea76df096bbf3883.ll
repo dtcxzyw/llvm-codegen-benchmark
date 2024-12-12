@@ -7,27 +7,12 @@ define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = mul nuw nsw i32 %3, 3600
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
 
-; 4 occurrences:
-; postgres/optimized/utf8_and_gb18030.ll
-; quantlib/optimized/dataparsers.ll
-; quantlib/optimized/date.ll
-; ruby/optimized/japanese.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = trunc i32 %2 to i1
-  %4 = select i1 %3, i32 -94, i32 0
-  %5 = add nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -37,6 +22,7 @@ entry:
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
 ; linux/optimized/drm_format_helper.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
@@ -53,8 +39,28 @@ define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = mul nuw nsw i32 %3, 60
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
+  ret i32 %6
+}
+
+; 9 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; postgres/optimized/utf8_and_gb18030.ll
+; quantlib/optimized/dataparsers.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 65535
+  %4 = mul nuw nsw i32 %3, 365
+  %5 = add nsw i32 %1, %4
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -91,7 +97,7 @@ define i32 @func0000000000000037(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 55
   %4 = mul nuw nsw i32 %3, 1260
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -103,7 +109,7 @@ define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1020
   %4 = mul nsw i32 %3, -19081
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -116,7 +122,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1020
   %4 = mul nsw i32 %3, -24116
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -128,7 +134,7 @@ define i32 @func000000000000003d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = mul nuw nsw i32 %3, 115200
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }

@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpcmpnleud	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1]
 	retq
@@ -30,6 +30,10 @@ func0000000000000004:                   # @func0000000000000004
 	vpcmpltud	%ymm1, %ymm0, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vmovdqa32	%ymm1, %ymm0 {%k1}
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vpcmpleud	%ymm1, %ymm0, %k1
+	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpcmpeqd	%ymm1, %ymm0, %k1

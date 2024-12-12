@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; linux/optimized/vmstat.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
@@ -8,6 +8,8 @@
 ; php/optimized/string.ll
 ; postgres/optimized/slab.ll
 ; rocksdb/optimized/filter_policy.cc.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

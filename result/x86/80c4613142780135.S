@@ -19,14 +19,14 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edx, %edx
 	setg	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrl	$8, %edx
 	testb	$1, %dil
 	cmovnel	%esi, %edx
 	cmpl	$128, %edx
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	shrl	$3, %edx
 	testb	$1, %dil
 	cmovnel	%esi, %edx

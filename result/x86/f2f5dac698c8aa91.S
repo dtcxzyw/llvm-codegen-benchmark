@@ -1,8 +1,3 @@
-func0000000000000002:                   # @func0000000000000002
-	movl	%edx, %eax
-	imulq	%rsi, %rax
-	subq	%rdi, %rax
-	retq
 func000000000000001d:                   # @func000000000000001d
 	movl	%edx, %eax
 	imulq	%rsi, %rax
@@ -49,6 +44,11 @@ func0000000000000016:                   # @func0000000000000016
 	subq	%rdi, %rax
 	retq
 func0000000000000011:                   # @func0000000000000011
+	movl	%edx, %eax
+	imulq	%rsi, %rax
+	subq	%rdi, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
 	movl	%edx, %eax
 	imulq	%rsi, %rax
 	subq	%rdi, %rax

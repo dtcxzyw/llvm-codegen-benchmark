@@ -1,10 +1,10 @@
 func0000000000000001:                   # @func0000000000000001
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	setne	%al
-	leal	22(,%rax,4), %ecx
+	xorl	%ecx, %ecx
+	cmpl	$1, %edx
+	sete	%cl
+	incl	%ecx
 	andl	%esi, %edi
-	xorl	%eax, %eax
 	testb	$1, %dil
+	movl	$3, %eax
 	cmovel	%ecx, %eax
 	retq

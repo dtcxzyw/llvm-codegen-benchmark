@@ -1,5 +1,5 @@
 
-; 119 occurrences:
+; 116 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -37,8 +37,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -116,7 +114,6 @@
 ; spike/optimized/f128_rem.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/mulhu.ll
-; spike/optimized/s_mul64To128M.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind

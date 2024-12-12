@@ -11,7 +11,7 @@ func000000000000000e:                   # @func000000000000000e
 	vpblendd	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7]
 	vpslld	$3, %ymm1, %ymm1
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	2863311531                      # 0xaaaaaaab
@@ -26,7 +26,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpblendd	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7]
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	2290649225                      # 0x88888889
@@ -41,5 +41,5 @@ func000000000000000f:                   # @func000000000000000f
 	vpblendd	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7]
 	vpsrld	$2, %ymm1, %ymm1
 	vpandd	.LCPI2_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

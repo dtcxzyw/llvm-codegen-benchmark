@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -22,7 +22,6 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; openusd/optimized/openexr-c.c.ll
-; postgres/optimized/rangetypes_gist.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; quickjs/optimized/quickjs.ll
 ; velox/optimized/LzoDecompressor.cpp.ll
@@ -34,7 +33,7 @@ entry:
   %2 = lshr i8 %1, 4
   %3 = and i8 %2, 2
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

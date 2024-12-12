@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_rgblevels.c.ll
-; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -25,6 +24,18 @@ entry:
   %4 = select i1 %3, i32 %1, i32 0
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw [573 x i8], ptr %0, i64 0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; luau/optimized/lstrlib.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 %1, i32 0
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw [16 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

@@ -14,7 +14,7 @@ entry:
   %2 = and i16 %1, 3
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i8 0, i8 2
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 

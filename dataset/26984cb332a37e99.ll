@@ -5,7 +5,7 @@
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/packet-http.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000318(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -14,12 +14,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; cmake/optimized/fld_move.c.ll
+; 2 occurrences:
 ; openjdk/optimized/OGLRenderer.ll
 ; wolfssl/optimized/pwdbased.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000182(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -31,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-scsi-osd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -44,7 +43,7 @@ entry:
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/xarray.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -57,7 +56,7 @@ entry:
 ; linux/optimized/drm_client_modeset.ll
 ; z3/optimized/qffp_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0

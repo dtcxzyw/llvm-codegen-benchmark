@@ -12,10 +12,8 @@ func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 252
 	ret
 func000000000000000f:                   # @func000000000000000f
-	addi	a0, a0, 4
-	lui	a1, 1
-	addiw	a1, a1, -8
-	and	a0, a0, a1
+	addi	a0, a0, 45
+	andi	a0, a0, 127
 	ret
 func000000000000000b:                   # @func000000000000000b
 	addi	a0, a0, 4

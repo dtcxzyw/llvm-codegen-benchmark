@@ -3,7 +3,7 @@
 ; lz4/optimized/lz4hc.c.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -13,8 +13,9 @@ entry:
   ret ptr %7
 }
 
-; 100 occurrences:
+; 104 occurrences:
 ; abseil-cpp/optimized/parse_test.cc.ll
+; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -98,7 +99,9 @@ entry:
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
 ; llvm/optimized/BlockCoverageInference.cpp.ll
+; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
+; llvm/optimized/StandardInstrumentations.cpp.ll
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
@@ -112,6 +115,7 @@ entry:
 ; minetest/optimized/sidebyside.cpp.ll
 ; opencv/optimized/facemark_demo_aam.cpp.ll
 ; opencv/optimized/gapi_render_perf_tests_ocv.cpp.ll
+; openspiel/optimized/kuhn_poker.cc.ll
 ; tev/optimized/Common.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
@@ -128,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

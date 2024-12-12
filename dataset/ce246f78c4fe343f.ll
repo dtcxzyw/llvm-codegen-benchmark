@@ -39,7 +39,7 @@ entry:
   ret i32 %2
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/kitIsop.c.ll
@@ -47,12 +47,10 @@ entry:
 ; gromacs/optimized/redistribute.cpp.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/indirect.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/libata-acpi.ll
 ; linux/optimized/uncore_snbep.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
@@ -65,7 +63,7 @@ entry:
   ret i32 %2
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/giaMf.c.ll
 ; brotli/optimized/encode.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -73,7 +71,6 @@ entry:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/82571.ll
 ; linux/optimized/ccm.ll
-; linux/optimized/he.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/uncore_nhmex.ll
 ; linux/optimized/vht.ll
@@ -199,11 +196,10 @@ entry:
   ret i32 %2
 }
 
-; 19 occurrences:
+; 17 occurrences:
 ; gromacs/optimized/redistribute.cpp.ll
 ; linux/optimized/ata_piix.ll
 ; linux/optimized/hw_breakpoint.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_gt_mcr.ll
 ; linux/optimized/intel_workarounds.ll
@@ -215,7 +211,6 @@ entry:
 ; llvm/optimized/GlobalsModRef.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; wireshark/optimized/file-rbm.c.ll

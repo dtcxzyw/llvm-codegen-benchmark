@@ -9,7 +9,7 @@ func0000000000000007:                   # @func0000000000000007
 	movzwl	%si, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	andl	$1, %esi
-	addl	%edi, %esi
-	movzwl	%si, %eax
+	movzbl	%sil, %eax
+	addl	%edi, %eax
+	movzwl	%ax, %eax
 	retq

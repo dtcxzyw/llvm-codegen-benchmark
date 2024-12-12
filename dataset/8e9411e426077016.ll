@@ -1,8 +1,6 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; cvc5/optimized/fc_simplex.cpp.ll
-; linux/optimized/act_api.ll
-; postgres/optimized/big5.ll
 ; ruby/optimized/string.ll
 ; wireshark/optimized/libpcap.c.ll
 ; Function Attrs: nounwind
@@ -14,8 +12,7 @@ entry:
   ret i32 %5
 }
 
-; 109 occurrences:
-; abc/optimized/covMinUtil.c.ll
+; 105 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -59,7 +56,6 @@ entry:
 ; linux/optimized/linkstate.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/percpu.ll
-; linux/optimized/pse-pd.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/ttm_pool.ll
@@ -72,7 +68,6 @@ entry:
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -87,7 +82,6 @@ entry:
 ; opencv/optimized/brightedges.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/cmstypes.ll
 ; openjdk/optimized/countbitsnode.ll
 ; openmpi/optimized/attribute_predefined.ll
@@ -155,7 +149,8 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/mapped_file.ll
 ; cpython/optimized/posixmodule.ll
 ; graphviz/optimized/sfvscanf.c.ll
 ; gromacs/optimized/xtc2.c.ll
@@ -175,24 +170,16 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
-; eastl/optimized/TestBitset.cpp.ll
-; hwloc/optimized/bitmap.ll
-; hwloc/optimized/cpukinds.ll
-; hwloc/optimized/topology-x86.ll
+; 5 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; icu/optimized/ustrtrns.ll
-; linux/optimized/fib_trie.ll
-; linux/optimized/tcp_timer.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_prime.ll
 ; openssl/optimized/libcrypto-shlib-bn_prime.ll
-; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 513
+  %3 = icmp samesign ult i32 %2, 513
   %4 = select i1 %3, i32 64, i32 128
   %5 = select i1 %0, i32 %4, i32 %1
   ret i32 %5
@@ -214,6 +201,35 @@ define i32 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 3, i32 1
+  %5 = select i1 %0, i32 %4, i32 %1
+  ret i32 %5
+}
+
+; 2 occurrences:
+; linux/optimized/act_api.ll
+; postgres/optimized/big5.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 8
+  %4 = select i1 %3, i32 -22, i32 0
+  %5 = select i1 %0, i32 %4, i32 %1
+  ret i32 %5
+}
+
+; 7 occurrences:
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; eastl/optimized/TestBitset.cpp.ll
+; hwloc/optimized/bitmap.ll
+; hwloc/optimized/cpukinds.ll
+; hwloc/optimized/topology-x86.ll
+; linux/optimized/tcp_timer.ll
+; z3/optimized/util.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 120000
+  %4 = select i1 %3, i32 8, i32 0
   %5 = select i1 %0, i32 %4, i32 %1
   ret i32 %5
 }

@@ -1,5 +1,12 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	addq	$24, %rdx
+	cmpq	%rdx, %rsi
+	sete	%al
+	notb	%dil
+	andb	%dil, %al
+	retq
+func0000000000000041:                   # @func0000000000000041
+	addq	$-32, %rdx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax

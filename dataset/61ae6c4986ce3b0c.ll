@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; cpython/optimized/_codecs_iso2022.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/af_packet.ll
@@ -17,7 +17,9 @@
 ; postgres/optimized/nbtinsert.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; raylib/optimized/raudio.c.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wireshark/optimized/packet-ftdi-mpsse.c.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
@@ -26,7 +28,7 @@ entry:
   ret i16 %3
 }
 
-; 15 occurrences:
+; 19 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -42,6 +44,10 @@ entry:
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i1 %0, i16 %1) #0 {
 entry:
@@ -50,7 +56,7 @@ entry:
   ret i16 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; delta-rs/optimized/4qhgshe9lp8eak0r.ll
 ; delta-rs/optimized/5d242f2by7re2olg.ll
 ; delta-rs/optimized/9gmae4ut7cf65r3.ll
@@ -64,11 +70,12 @@ entry:
 ; ockam-rs/optimized/y9mp3cipt8wluu6.ll
 ; typst-rs/optimized/18uucpkka5ar9ni.ll
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
-  %2 = add nsw i16 %1, -5
-  %3 = select i1 %0, i16 %2, i16 3
+  %2 = add nsw i16 %1, -4
+  %3 = select i1 %0, i16 %2, i16 1
   ret i16 %3
 }
 

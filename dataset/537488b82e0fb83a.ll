@@ -61,7 +61,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = lshr i32 %1, 8
   %5 = xor i32 %3, %4
-  %6 = xor i32 %5, %0
+  %6 = xor i32 %0, %5
   ret i32 %6
 }
 

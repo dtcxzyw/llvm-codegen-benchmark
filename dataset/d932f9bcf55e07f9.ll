@@ -56,11 +56,11 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 127
-  %4 = icmp ult i64 %0, 96
+  %4 = icmp samesign ult i64 %0, 96
   %5 = select i1 %4, i64 %3, i64 48
   ret i64 %5
 }
@@ -94,7 +94,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 1

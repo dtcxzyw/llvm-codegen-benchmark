@@ -24,7 +24,7 @@
 ; openssl/optimized/libcrypto-lib-tasn_prn.ll
 ; openssl/optimized/libcrypto-shlib-tasn_prn.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 256
   %3 = icmp eq i64 %2, 0
@@ -161,7 +161,7 @@ entry:
 ; rust-analyzer-rs/optimized/4jgoi87ys7cbhj0l.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
   %3 = icmp ne i64 %2, 1
@@ -177,7 +177,7 @@ entry:
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2
   %.not = icmp ne i64 %2, 0
@@ -189,7 +189,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineFunction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4
   %.not = icmp eq i64 %2, 0

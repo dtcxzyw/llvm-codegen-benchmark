@@ -24,6 +24,12 @@ func00000000000000ca:                   # @func00000000000000ca
 	fle.d	a1, fa0, fa1
 	or	a0, a0, a1
 	ret
+func00000000000000db:                   # @func00000000000000db
+	flt.d	a0, fa0, fa2
+	flt.d	a1, fa1, fa0
+	and	a0, a0, a1
+	xori	a0, a0, 1
+	ret
 func000000000000002c:                   # @func000000000000002c
 	flt.d	a0, fa0, fa2
 	fle.d	a1, fa1, fa0

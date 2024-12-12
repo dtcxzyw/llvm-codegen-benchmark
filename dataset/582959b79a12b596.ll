@@ -1,5 +1,5 @@
 
-; 111 occurrences:
+; 117 occurrences:
 ; assimp/optimized/OgreStructs.cpp.ll
 ; box2d/optimized/b2_joint.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
@@ -17,6 +17,7 @@
 ; bullet3/optimized/btRigidBody.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; bullet3/optimized/btSoftBody.ll
+; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -75,6 +76,11 @@
 ; mitsuba3/optimized/sggx.cpp.ll
 ; mixbox/optimized/mixbox.ll
 ; ncnn/optimized/yolodetectionoutput.cpp.ll
+; ncnn/optimized/yolov3detectionoutput.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; oiio/optimized/imagebufalgo_yee.cpp.ll

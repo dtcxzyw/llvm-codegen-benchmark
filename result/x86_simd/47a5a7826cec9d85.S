@@ -33,17 +33,3 @@ func000000000000000e:                   # @func000000000000000e
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
 	retq
-.LCPI5_0:
-	.quad	2082041510483722240             # 0x1ce4e5b900000000
-func0000000000000009:                   # @func0000000000000009
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpmullq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
-	vpsrlq	$31, %ymm0, %ymm0
-	retq
-.LCPI6_0:
-	.quad	2082041510483722240             # 0x1ce4e5b900000000
-func0000000000000001:                   # @func0000000000000001
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpmullq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
-	vpsrlq	$31, %ymm0, %ymm0
-	retq

@@ -1,20 +1,4 @@
 
-; 6 occurrences:
-; cpython/optimized/unicodeobject.ll
-; mitsuba3/optimized/x86rapass.cpp.ll
-; openssl/optimized/libssl-lib-quic_wire_pkt.ll
-; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = add nuw nsw i32 %0, 65536
-  %5 = or disjoint i32 %4, %3
-  ret i32 %5
-}
-
 ; 3 occurrences:
 ; icu/optimized/collationiterator.ll
 ; recastnavigation/optimized/DebugDraw.cpp.ll
@@ -25,6 +9,20 @@ entry:
   %3 = add nuw nsw i32 %2, 248
   %4 = or disjoint i32 %0, %1
   %5 = or i32 %4, %3
+  ret i32 %5
+}
+
+; 4 occurrences:
+; cpython/optimized/unicodeobject.ll
+; mitsuba3/optimized/x86rapass.cpp.ll
+; openssl/optimized/libssl-lib-quic_wire_pkt.ll
+; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 134217728
+  %4 = or disjoint i32 %0, %1
+  %5 = or disjoint i32 %4, %3
   ret i32 %5
 }
 

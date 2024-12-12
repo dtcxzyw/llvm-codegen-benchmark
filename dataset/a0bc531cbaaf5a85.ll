@@ -3,7 +3,7 @@
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; openmpi/optimized/libprrte_la-hwloc_base_util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000110(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ult i32 %3, %1

@@ -12,5 +12,5 @@ func0000000000000007:                   # @func0000000000000007
 	vcmpneqps	%zmm3, %zmm1, %k1
 	vbroadcastss	.LCPI1_0(%rip), %zmm3   # zmm3 = [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
 	vdivps	%zmm1, %zmm2, %zmm3 {%k1}
-	vmulps	%zmm0, %zmm3, %zmm0
+	vmulps	%zmm3, %zmm0, %zmm0
 	retq

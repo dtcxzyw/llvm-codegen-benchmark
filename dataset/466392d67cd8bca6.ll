@@ -1,5 +1,5 @@
 
-; 127 occurrences:
+; 129 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/acecMult.c.ll
@@ -113,6 +113,8 @@
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zfp/optimized/decode4f.c.ll
 ; zfp/optimized/decode4i.c.ll
 ; zstd/optimized/fse_compress.c.ll
@@ -131,7 +133,7 @@
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -159,7 +161,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -192,11 +194,11 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -211,7 +213,6 @@ entry:
 ; abc/optimized/ifSat.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/kitBdd.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/pdrCore.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; brotli/optimized/decode.c.ll
@@ -263,7 +264,7 @@ entry:
   ret i32 %3
 }
 
-; 32 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -295,12 +296,14 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; openjdk/optimized/hb-ot-map.ll
 ; wolfssl/optimized/test.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -334,7 +337,7 @@ entry:
   ret i32 %3
 }
 
-; 38 occurrences:
+; 40 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -372,16 +375,18 @@ entry:
 ; openjdk/optimized/hb-ot-map.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/warped_motion.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; clamav/optimized/chmd.c.ll
 ; libjpeg-turbo/optimized/jdphuff.c.ll
 ; linux/optimized/uhci-hcd.ll
@@ -391,15 +396,17 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; z3/optimized/sat_binspr.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   ret i32 %3
 }
 
-; 50 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/acecMult.c.ll
@@ -448,13 +455,15 @@ entry:
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; xgboost/optimized/broadcast.cc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zlib/optimized/inftrees.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -475,7 +484,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 2, %1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -486,7 +495,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 2, %1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -499,7 +508,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 

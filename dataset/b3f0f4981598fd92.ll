@@ -1,5 +1,5 @@
 
-; 137 occurrences:
+; 138 occurrences:
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -137,12 +137,13 @@
 ; stb/optimized/stb_truetype.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
   %4 = fmul float %3, 0.000000e+00
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 

@@ -11,6 +11,13 @@ func000000000000000f:                   # @func000000000000000f
 	shll	$8, %eax
 	leal	257(%rdi,%rax), %eax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	shrl	$16, %edi
+	andl	$31, %edi
+	leal	(%rdi,%rdi,8), %eax
+	shll	$4, %eax
+	addl	$-144, %eax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	shrl	$5, %edi
 	andl	$2040, %edi                     # imm = 0x7F8

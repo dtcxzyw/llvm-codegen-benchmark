@@ -9,7 +9,7 @@
 ; openusd/optimized/meshUtil.cpp.ll
 ; openusd/optimized/vertexAdjacency.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c5(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000185(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %1 to i32
   %4 = icmp eq i64 %1, %2
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000084(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000104(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %1 to i32
   %4 = icmp eq i64 %1, %2

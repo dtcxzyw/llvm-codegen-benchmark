@@ -1,21 +1,21 @@
-func0000000000000086:                   # @func0000000000000086
-	addi	a1, a1, 48
-	binvi	a0, a0, 63
+func0000000000000187:                   # @func0000000000000187
+	addi	a1, a1, 16
+	addi	a0, a0, -4
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 16
 	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	addi	a1, a1, -32
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 28
 	ret
-func00000000000000c7:                   # @func00000000000000c7
-	addi	a1, a1, 32
+func0000000000000107:                   # @func0000000000000107
+	addi	a1, a1, -48
 	czero.eqz	a0, a1, a0
-	addi	a0, a0, 8
+	addi	a0, a0, 56
 	ret
 func0000000000000004:                   # @func0000000000000004
 	addi	a1, a1, -1
 	czero.eqz	a0, a1, a0
-	addi	a0, a0, 40
+	addi	a0, a0, 32
 	ret

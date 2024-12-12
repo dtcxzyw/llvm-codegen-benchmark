@@ -33,13 +33,14 @@ entry:
   ret i128 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/to_chars.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000007(i128 %0, i128 %1) #0 {
 entry:
-  %2 = and i128 %1, 18446744073709549568
+  %2 = and i128 %1, 18446744073709551612
   %3 = shl nuw nsw i128 %0, 64
   %4 = or disjoint i128 %3, %2
   ret i128 %4

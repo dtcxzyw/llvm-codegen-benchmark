@@ -5,7 +5,7 @@
 func0000000000000044:                   # @func0000000000000044
 	vcmpgtss	.LCPI0_0(%rip), %xmm2, %k1
 	vmovss	%xmm1, %xmm1, %xmm1 {%k1} {z}
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI0_1(%rip), %xmm0
 	seta	%al
 	retq
@@ -13,7 +13,7 @@ func0000000000000024:                   # @func0000000000000024
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
 	vmovss	%xmm1, %xmm1, %xmm1 {%k1} {z}
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vucomiss	%xmm3, %xmm0
 	seta	%al
 	retq
@@ -48,7 +48,7 @@ func0000000000000042:                   # @func0000000000000042
 func0000000000000062:                   # @func0000000000000062
 	vcmpneq_oqss	.LCPI4_0(%rip), %xmm2, %k1
 	vmovss	%xmm1, %xmm1, %xmm1 {%k1} {z}
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vmovss	.LCPI4_1(%rip), %xmm1           # xmm1 = [-1.0E+8,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm0, %xmm1
 	seta	%al
@@ -60,7 +60,7 @@ func0000000000000062:                   # @func0000000000000062
 func0000000000000064:                   # @func0000000000000064
 	vcmpneq_oqss	.LCPI5_0(%rip), %xmm2, %k1
 	vmovss	%xmm1, %xmm1, %xmm1 {%k1} {z}
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI5_1(%rip), %xmm0
 	seta	%al
 	retq

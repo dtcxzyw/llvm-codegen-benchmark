@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/histogram.c.ll
@@ -7,7 +7,6 @@
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_colorcorrection.c.ll
-; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_enlargecanvas.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_lens.cc.ll

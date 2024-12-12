@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 43 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -34,18 +34,21 @@
 ; spike/optimized/sunpkd831.ll
 ; spike/optimized/sunpkd832.ll
 ; tls-rs/optimized/7y9936vu35zt2sp.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 16
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext i16 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -64,7 +67,7 @@ define i64 @func0000000000000013(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw i64 %3, 48
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext i16 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -90,7 +93,7 @@ define i64 @func0000000000000018(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 5
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = zext i16 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7
@@ -103,7 +106,7 @@ define i64 @func000000000000001f(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 16
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext nneg i16 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -116,7 +119,7 @@ define i64 @func000000000000001a(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 27
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext i16 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7

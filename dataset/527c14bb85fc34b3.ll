@@ -10,7 +10,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = add i32 %3, 1
   %5 = sitofp i32 %4 to double
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	vmseq.vi	v8, v10, 0
 	vmand.mm	v0, v0, v8
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma

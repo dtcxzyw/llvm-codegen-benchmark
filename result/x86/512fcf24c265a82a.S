@@ -4,6 +4,6 @@ func0000000000000005:                   # @func0000000000000005
 	shlq	$3, %rsi
 	leaq	(%rsi,%rsi,4), %rcx
 	subq	%rcx, %rax
-	cmpq	%rdi, %rax
-	setae	%al
+	cmpq	%rax, %rdi
+	setbe	%al
 	retq

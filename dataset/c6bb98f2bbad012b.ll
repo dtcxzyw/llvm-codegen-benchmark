@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; ocio/optimized/CanonCameras.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -12,7 +12,6 @@
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/packet-nasdaq-itch.c.ll
-; wireshark/optimized/packet-usb-i1d3.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, i1 %1) #0 {

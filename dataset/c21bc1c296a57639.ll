@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; lightgbm/optimized/metadata.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = ashr exact i64 %0, 32
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/metadata.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = ashr exact i64 %0, 32
@@ -28,7 +28,7 @@ entry:
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = ashr exact i64 %0, 3
@@ -41,7 +41,7 @@ entry:
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = ashr exact i64 %0, 3

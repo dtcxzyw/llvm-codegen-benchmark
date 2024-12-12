@@ -33,7 +33,8 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; coreutils-rs/optimized/59rj03aw6jgy8z12.ll
 ; hdf5/optimized/H5EAdblock.c.ll
 ; hdf5/optimized/H5Shyper.c.ll

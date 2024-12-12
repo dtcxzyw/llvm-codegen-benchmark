@@ -1,4 +1,4 @@
-func0000000000000094:                   # @func0000000000000094
+func0000000000000124:                   # @func0000000000000124
 	leal	(%rdx,%rdx,2), %eax
 	cltq
 	subq	%rsi, %rdi
@@ -6,7 +6,7 @@ func0000000000000094:                   # @func0000000000000094
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000098:                   # @func0000000000000098
+func0000000000000128:                   # @func0000000000000128
 	leal	(%rdx,%rdx,2), %eax
 	cltq
 	subq	%rsi, %rdi
@@ -14,7 +14,7 @@ func0000000000000098:                   # @func0000000000000098
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	leal	(%rdx,%rdx,2), %eax
 	cltq
 	subq	%rsi, %rdi
@@ -22,7 +22,7 @@ func0000000000000014:                   # @func0000000000000014
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	leal	(%rdx,%rdx,2), %eax
 	cltq
 	subq	%rsi, %rdi
@@ -30,7 +30,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	leal	(%rdx,%rdx,2), %eax
 	cltq
 	subq	%rsi, %rdi

@@ -8,7 +8,7 @@
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 40
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = and i32 %1, 7
   %6 = add i32 %4, %5
   ret i32 %6
@@ -22,6 +22,18 @@ entry:
   %3 = mul nsw i32 %2, 160
   %4 = add nsw i32 %3, %0
   %5 = and i32 %1, 1
+  %6 = add nsw i32 %4, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_scale.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %2, 10
+  %4 = add i32 %3, %0
+  %5 = and i32 %1, 524287
   %6 = add nsw i32 %4, %5
   ret i32 %6
 }
@@ -49,7 +61,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 94
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = and i32 %1, 255
   %6 = add nsw i32 %4, %5
   ret i32 %6

@@ -13,3 +13,35 @@ func0000000000000008:                   # @func0000000000000008
 	feq.d	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
+func000000000000000b:                   # @func000000000000000b
+	fmul.d	fa5, fa0, fa1
+	fmv.d.x	fa4, zero
+	flt.d	a1, fa4, fa5
+	xori	a1, a1, 1
+	or	a0, a0, a1
+	ret
+func000000000000000d:                   # @func000000000000000d
+	fmul.d	fa5, fa0, fa1
+	fmv.d.x	fa4, zero
+	flt.d	a1, fa5, fa4
+	xori	a1, a1, 1
+	or	a0, a0, a1
+	ret
+.LCPI4_0:
+	.quad	0x4040000000000000              # double 32
+func0000000000000002:                   # @func0000000000000002
+	lui	a1, %hi(.LCPI4_0)
+	fld	fa5, %lo(.LCPI4_0)(a1)
+	fmul.d	fa4, fa0, fa1
+	flt.d	a1, fa4, fa5
+	or	a0, a0, a1
+	ret
+.LCPI5_0:
+	.quad	0x40c2000000000000              # double 9216
+func000000000000000a:                   # @func000000000000000a
+	lui	a1, %hi(.LCPI5_0)
+	fld	fa5, %lo(.LCPI5_0)(a1)
+	fmul.d	fa4, fa0, fa1
+	fle.d	a1, fa4, fa5
+	or	a0, a0, a1
+	ret

@@ -1,27 +1,12 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; minetest/optimized/camera.cpp.ll
-; minetest/optimized/server.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 5.000000e-01
   %3 = fcmp ogt float %2, 1.000000e+00
-  %4 = or i1 %3, %0
-  ret i1 %4
-}
-
-; 4 occurrences:
-; darktable/optimized/DngDecoder.cpp.ll
-; gromacs/optimized/expanded.cpp.ll
-; imgui/optimized/imgui_draw.cpp.ll
-; minetest/optimized/server.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, float %1) #0 {
-entry:
-  %2 = fmul float %1, 1.000000e+01
-  %3 = fcmp olt float %2, -3.100750e+05
   %4 = or i1 %3, %0
   ret i1 %4
 }
@@ -33,7 +18,7 @@ define i1 @func000000000000001a(i1 %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 2.550000e+02
   %3 = fcmp uge float %2, 2.560000e+02
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -56,6 +41,19 @@ define i1 @func000000000000000e(i1 %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3F10000000000000
   %3 = fcmp une float %2, 1.000000e+00
+  %4 = or i1 %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; darktable/optimized/DngDecoder.cpp.ll
+; gromacs/optimized/expanded.cpp.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, float %1) #0 {
+entry:
+  %2 = fmul float %1, 2.000000e+00
+  %3 = fcmp olt float %2, 0xC1E0000000000000
   %4 = or i1 %3, %0
   ret i1 %4
 }
@@ -74,7 +72,7 @@ define i1 @func000000000000000a(i1 %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 1.250000e-01
   %3 = fcmp ugt float %2, 8.000000e+00
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -99,14 +97,14 @@ entry:
 ; 4 occurrences:
 ; gromacs/optimized/expanded.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; opencv/optimized/weighted_median_filter.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3F70101020000000
   %3 = fcmp oeq float %2, 1.000000e+00
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

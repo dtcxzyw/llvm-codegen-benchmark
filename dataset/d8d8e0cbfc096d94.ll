@@ -1,8 +1,10 @@
 
-; 20 occurrences:
+; 23 occurrences:
+; boost/optimized/alloc_lib.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; hdf5/optimized/H5Faccum.c.ll
+; icu/optimized/ucnvmbcs.ll
 ; linux/optimized/drm_file.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/tree.ll
@@ -20,6 +22,7 @@
 ; slurm/optimized/opt.ll
 ; stockfish/optimized/search.ll
 ; z3/optimized/bool_rewriter.cpp.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -29,7 +32,7 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 11 occurrences:
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
@@ -40,35 +43,35 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; slurm/optimized/gres.ll
-; spike/optimized/fmax_s.ll
-; spike/optimized/fmaxm_h.ll
-; spike/optimized/fmaxm_s.ll
-; spike/optimized/fmin_s.ll
-; spike/optimized/fminm_h.ll
-; spike/optimized/fminm_s.ll
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
+  %4 = and i1 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; spike/optimized/s_roundPackToF128.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 562949953421310
   %4 = and i1 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 8 occurrences:
-; llvm/optimized/X86ISelLowering.cpp.ll
-; spike/optimized/fmax_s.ll
-; spike/optimized/fmaxm_h.ll
-; spike/optimized/fmaxm_s.ll
-; spike/optimized/fmin_s.ll
-; spike/optimized/fminm_h.ll
-; spike/optimized/fminm_s.ll
-; spike/optimized/s_roundPackToF128.ll
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
+; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000000a(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, -4294967297
+  %3 = icmp sgt i64 %2, 7
   %4 = and i1 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
@@ -79,12 +82,12 @@ entry:
 ; linux/optimized/tree.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; postgres/optimized/pg_waldump.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 4294967296
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -98,18 +101,6 @@ entry:
 define i1 @func0000000000000006(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
-  %4 = and i1 %3, %1
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 2 occurrences:
-; icu/optimized/ucnvmbcs.ll
-; opencv/optimized/softfloat.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i1 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %2, 0
   %4 = and i1 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5

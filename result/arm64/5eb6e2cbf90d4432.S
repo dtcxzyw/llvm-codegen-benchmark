@@ -1,65 +1,38 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	x8, #262144                     // =0x40000
-	cmeq	v4.4s, v4.4s, #0
-	orr	v0.16b, v0.16b, v2.16b
+	mov	x9, #262144                     // =0x40000
+	cmp	w2, #0
 	movk	x8, #16, lsl #32
-	orr	v1.16b, v1.16b, v3.16b
+	movk	x9, #16, lsl #32
 	movk	x8, #32, lsl #48
-	dup	v5.2d, x8
-	mov	x8, #262144                     // =0x40000
-	sshll2	v6.2d, v4.4s, #0
-	movk	x8, #16, lsl #32
-	sshll	v4.2d, v4.2s, #0
-	dup	v7.2d, x8
-	bsl	v4.16b, v7.16b, v5.16b
-	bit	v5.16b, v7.16b, v6.16b
-	orr	v1.16b, v1.16b, v5.16b
-	orr	v0.16b, v0.16b, v4.16b
+	csel	x8, x9, x8, eq
+	orr	x9, x0, x1
+	orr	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v5.4s, #1
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	cmeq	v4.4s, v4.4s, v5.4s
-	fmov	v5.2d, #2.00000000
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	and	v6.16b, v6.16b, v5.16b
-	and	v4.16b, v4.16b, v5.16b
-	orr	v1.16b, v1.16b, v4.16b
-	orr	v0.16b, v0.16b, v6.16b
+	cmp	w2, #1
+	orr	x9, x0, x1
+	cset	w8, eq
+	orr	x0, x9, x8, lsl #62
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	movi	v5.4s, #7
-	mov	w8, #64                         // =0x40
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	cmeq	v4.4s, v4.4s, v5.4s
-	dup	v5.2d, x8
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	and	v6.16b, v6.16b, v5.16b
-	and	v4.16b, v4.16b, v5.16b
-	orr	v1.16b, v1.16b, v4.16b
-	orr	v0.16b, v0.16b, v6.16b
+	cmp	w2, #7
+	orr	x9, x0, x1
+	cset	w8, eq
+	orr	x0, x9, x8, lsl #6
 	ret
                                         // -- End function
 func000000000000002b:                   // @func000000000000002b
 // %bb.0:                               // %entry
-	cmge	v4.4s, v4.4s, #0
-	movi	v5.2d, #0xffffff0000000000
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	bic	v6.16b, v5.16b, v6.16b
-	bic	v4.16b, v5.16b, v4.16b
-	orr	v1.16b, v1.16b, v4.16b
-	orr	v0.16b, v0.16b, v6.16b
+	cmp	w2, #0
+	mov	x8, #-1099511627776             // =0xffffff0000000000
+	orr	x9, x0, x1
+	csel	x8, xzr, x8, ge
+	orr	x0, x9, x8
 	ret
                                         // -- End function

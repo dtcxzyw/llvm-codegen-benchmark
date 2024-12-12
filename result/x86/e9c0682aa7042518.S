@@ -1,7 +1,14 @@
-func000000000000006a:                   # @func000000000000006a
+func000000000000007f:                   # @func000000000000007f
 	shlq	$5, %rsi
-	leaq	80(%rdi,%rsi), %rax
+	orq	$48, %rsi
+	leaq	32(%rdi,%rsi), %rax
 	retq
-func0000000000000062:                   # @func0000000000000062
-	leaq	1184(%rdi,%rsi,4), %rax
+func000000000000007b:                   # @func000000000000007b
+	leaq	(%rsi,%rsi,2), %rax
+	leaq	69(%rdi,%rax), %rax
+	retq
+func0000000000000073:                   # @func0000000000000073
+	shlq	$2, %rsi
+	orq	$6, %rsi
+	leaq	1178(%rdi,%rsi), %rax
 	retq

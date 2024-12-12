@@ -29,7 +29,7 @@
 func0000000000000015:                   # @func0000000000000015
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm2, %xmm2
 	vpaddb	.LCPI0_1(%rip), %xmm2, %xmm2
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	retq
 .LCPI1_0:
 	.byte	32                              # 0x20
@@ -62,5 +62,5 @@ func0000000000000015:                   # @func0000000000000015
 func0000000000000001:                   # @func0000000000000001
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm2, %xmm2
 	vpaddb	.LCPI1_1(%rip), %xmm2, %xmm2
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	retq

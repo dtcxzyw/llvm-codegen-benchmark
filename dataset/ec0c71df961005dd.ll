@@ -4,7 +4,6 @@
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIf.c.ll
-; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -48,12 +47,10 @@
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
-; clamav/optimized/XzCrc64.c.ll
 ; cmake/optimized/sha3.c.ll
 ; cpython/optimized/blake2b_impl.ll
 ; cpython/optimized/setobject.ll
 ; cpython/optimized/tracemalloc.ll
-; faiss/optimized/lattice_Zn.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/SocketAddress.cpp.ll
@@ -174,7 +171,6 @@
 ; spike/optimized/kmsxda32.ll
 ; spike/optimized/kmxda32.ll
 ; spike/optimized/vmxnor_mm.ll
-; spike/optimized/vsadd_vi.ll
 ; spike/optimized/vsadd_vv.ll
 ; spike/optimized/vsadd_vx.ll
 ; spike/optimized/xnor.ll
@@ -205,7 +201,6 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; typst-rs/optimized/w6iknwszr5npyaz.ll
 ; typst-rs/optimized/xrijsyrxk2ciyk9.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
@@ -213,6 +208,11 @@
 ; wolfssl/optimized/sha3.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_bcd.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

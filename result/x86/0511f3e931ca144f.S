@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	sarxl	%edx, %esi, %eax
 	andl	$3, %eax
 	leaq	(%rdi,%rax,4), %rax

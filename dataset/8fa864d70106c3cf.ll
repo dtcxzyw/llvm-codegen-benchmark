@@ -1,5 +1,6 @@
 
 ; 123 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/fastcover.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -93,7 +94,6 @@
 ; linux/optimized/tcp_cubic.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openusd/optimized/aom_image.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spike/optimized/f16_sqrt.ll

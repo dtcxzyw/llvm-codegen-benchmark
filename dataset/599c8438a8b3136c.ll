@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
@@ -17,7 +17,7 @@ entry:
 ; libjpeg-turbo/optimized/rdppm.c.ll
 ; linux/optimized/intel_fb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64

@@ -28,7 +28,7 @@ func0000000000000006:                   # @func0000000000000006
 	vmslt.vv	v8, v8, v9
 	vmor.mm	v0, v0, v8
 	ret
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsleu.vv	v8, v8, v9
 	vmor.mm	v0, v0, v8
@@ -36,5 +36,20 @@ func0000000000000005:                   # @func0000000000000005
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmslt.vv	v8, v9, v8
+	vmor.mm	v0, v0, v8
+	ret
+func0000000000000005:                   # @func0000000000000005
+	vsetivli	zero, 16, e8, m1, ta, ma
+	vmsleu.vv	v8, v8, v9
+	vmor.mm	v0, v0, v8
+	ret
+func0000000000000018:                   # @func0000000000000018
+	vsetivli	zero, 16, e8, m1, ta, ma
+	vmsltu.vv	v8, v9, v8
+	vmor.mm	v0, v0, v8
+	ret
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 16, e8, m1, ta, ma
+	vmsltu.vv	v8, v8, v9
 	vmor.mm	v0, v0, v8
 	ret

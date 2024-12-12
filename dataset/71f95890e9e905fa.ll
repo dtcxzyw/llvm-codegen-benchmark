@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/cdrom.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
 ; minetest/optimized/pipeline.cpp.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind

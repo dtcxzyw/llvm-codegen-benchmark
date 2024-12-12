@@ -16,12 +16,13 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
+; lvgl/optimized/lv_obj.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:

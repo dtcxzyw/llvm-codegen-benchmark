@@ -7,7 +7,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i1 %1, i16 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = add nsw i16 %2, -65
   %4 = icmp ult i16 %3, 6
@@ -16,11 +16,10 @@ entry:
   ret i1 %6
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll

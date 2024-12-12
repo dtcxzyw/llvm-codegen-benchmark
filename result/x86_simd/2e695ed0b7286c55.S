@@ -2,7 +2,7 @@
 	.long	15                              # 0xf
 .LCPI0_1:
 	.quad	7                               # 0x7
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm2
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpcmpneqq	.LCPI0_1(%rip){1to4}, %ymm0, %k1
@@ -24,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	1792                            # 0x700
 .LCPI2_1:
 	.long	256                             # 0x100
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vptestmq	%ymm0, %ymm0, %k1
 	vpaddd	.LCPI2_1(%rip){1to4}, %xmm1, %xmm0 {%k1} {z}

@@ -1,32 +1,28 @@
 func0000000000000035:                   // @func0000000000000035
 // %bb.0:                               // %entry
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v1.16b, v2.16b
-	add	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v0.4s
+	mvn	w8, w1
+	add	w8, w0, w8
+	lsl	w0, w8, #1
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	mvn	v0.16b, v0.16b
-	add	v0.4s, v0.4s, v1.4s
-	shl	v0.4s, v0.4s, #2
+	mvn	w8, w0
+	add	w8, w8, w1
+	lsl	w0, w8, #2
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	mvn	v0.16b, v0.16b
-	add	v0.4s, v0.4s, v1.4s
-	shl	v0.4s, v0.4s, #4
+	mvn	w8, w0
+	add	w8, w8, w1
+	lsl	w0, w8, #4
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v1.16b, v2.16b
-	add	v0.4s, v0.4s, v1.4s
-	shl	v0.4s, v0.4s, #24
+	mvn	w8, w1
+	add	w8, w0, w8
+	lsl	w0, w8, #24
 	ret
                                         // -- End function

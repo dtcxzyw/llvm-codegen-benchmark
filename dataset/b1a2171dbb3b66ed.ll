@@ -7,7 +7,7 @@
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = and i32 %4, 65280
   %6 = and i32 %0, 16711935
   %7 = or disjoint i32 %5, %6

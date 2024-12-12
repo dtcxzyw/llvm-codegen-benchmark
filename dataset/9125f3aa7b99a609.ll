@@ -7,7 +7,7 @@
 define i64 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 1000
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = select i1 %0, i64 0, i64 %4
   ret i64 %5
 }
@@ -43,12 +43,12 @@ entry:
 define i64 @func000000000000000d(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 1000000
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = select i1 %0, i64 9223372036854775807, i64 %4
   ret i64 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cmake/optimized/index.c.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/alarmtimer.ll
@@ -61,7 +61,6 @@ entry:
 ; linux/optimized/posix-cpu-timers.ll
 ; linux/optimized/posix-timers.ll
 ; linux/optimized/ptp_clock.ll
-; linux/optimized/ptp_kvm_common.ll
 ; linux/optimized/select.ll
 ; linux/optimized/sem.ll
 ; linux/optimized/syscalls.ll

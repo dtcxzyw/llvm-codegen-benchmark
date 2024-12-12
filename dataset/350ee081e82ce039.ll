@@ -7,7 +7,7 @@ define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -19,7 +19,7 @@ define i64 @func0000000000000009(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 2
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -32,7 +32,7 @@ define i64 @func000000000000000b(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 4
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -45,7 +45,7 @@ define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 2
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -61,7 +61,7 @@ define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 8
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -79,7 +79,7 @@ define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 49
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -90,31 +90,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 3
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
-entry:
-  %2 = or i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
-entry:
-  %2 = or i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 62 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
@@ -31,7 +31,6 @@
 ; mitsuba3/optimized/tabphase.cpp.ll
 ; node/optimized/libnode.node_report.ll
 ; opencv/optimized/LATCH_match.cpp.ll
-; opencv/optimized/ar_hmdb_benchmark.cpp.ll
 ; opencv/optimized/core_various.cpp.ll
 ; opencv/optimized/dnn_superres_benchmark_time.cpp.ll
 ; opencv/optimized/obj_detect.cpp.ll
@@ -71,7 +70,7 @@ entry:
   ret double %3
 }
 
-; 496 occurrences:
+; 588 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -86,6 +85,101 @@ entry:
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/progress_monitor.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/clamscan.c.ll
@@ -180,7 +274,6 @@ entry:
 ; libwebp/optimized/ssim.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; libzmq/optimized/inproc_thr.cpp.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; libzmq/optimized/proxy_thr.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
@@ -212,7 +305,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
-; meshlab/optimized/filter_texture_defragmentation.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
@@ -331,6 +423,7 @@ entry:
 ; openmpi/optimized/common_ompio_file_write.ll
 ; openspiel/optimized/cfr.cc.ll
 ; openspiel/optimized/crowd_modelling_2d.cc.ll
+; openspiel/optimized/outcome_sampling_mccfr.cc.ll
 ; openusd/optimized/authoring.cpp.ll
 ; openusd/optimized/capsuleMeshGenerator.cpp.ll
 ; openusd/optimized/coneMeshGenerator.cpp.ll
@@ -539,14 +632,8 @@ entry:
 ; verilator/optimized/V3Stats.cpp.ll
 ; wireshark/optimized/capture_file_properties_dialog.cpp.ll
 ; wireshark/optimized/io_graph_item.c.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-calcappprotocol.c.ll
 ; wireshark/optimized/packet-componentstatus.c.ll
-; wireshark/optimized/packet-enrp.c.ll
-; wireshark/optimized/packet-fractalgeneratorprotocol.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
-; wireshark/optimized/packet-pingpongprotocol.c.ll
-; wireshark/optimized/packet-scriptingservice.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; wolfssl/optimized/benchmark.c.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
@@ -566,6 +653,10 @@ entry:
 ; yalantinglibs/optimized/client.cpp.ll
 ; yosys/optimized/Solver.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; zstd/optimized/cover.c.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind

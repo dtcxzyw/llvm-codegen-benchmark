@@ -11,7 +11,7 @@
 define i16 @func0000000000000007(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = and i16 %1, 4
   %6 = or disjoint i16 %4, %5
   ret i16 %6
@@ -23,7 +23,7 @@ entry:
 define i16 @func0000000000000003(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = and i16 %1, 768
   %6 = or disjoint i16 %4, %5
   ret i16 %6
@@ -35,7 +35,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = and i16 %1, 64
   %6 = or i16 %4, %5
   ret i16 %6
@@ -47,7 +47,7 @@ entry:
 define i16 @func0000000000000006(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = and i16 %1, 9007
   %6 = or i16 %4, %5
   ret i16 %6

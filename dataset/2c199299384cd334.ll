@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
@@ -22,7 +22,6 @@
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
-; opencv/optimized/find_ellipses.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openusd/optimized/adapterManager.cpp.ll
 ; openusd/optimized/dataSourceLocator.cpp.ll
@@ -39,7 +38,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 1
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -66,7 +65,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 2
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 

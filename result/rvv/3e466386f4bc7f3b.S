@@ -5,7 +5,7 @@ func0000000000000015:                   # @func0000000000000015
 	vmseq.vi	v0, v12, 0
 	li	a0, -126
 	vmerge.vxm	v10, v10, a0, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vrsub.vi	v8, v8, 0
 	ret
 func0000000000000011:                   # @func0000000000000011

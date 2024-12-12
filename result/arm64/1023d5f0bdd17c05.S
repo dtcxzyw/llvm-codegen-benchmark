@@ -12,7 +12,7 @@ func0000000000000030:                   // @func0000000000000030
 	add	x0, x8, #2
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	ubfiz	x8, x1, #3, #16
 	add	x8, x0, x8

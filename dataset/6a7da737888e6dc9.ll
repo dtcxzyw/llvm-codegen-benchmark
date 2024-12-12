@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/lz_encoder_mf.c.ll
 ; cmake/optimized/outqueue.c.ll
@@ -34,7 +34,6 @@
 ; openjdk/optimized/xPageCache.ll
 ; openjdk/optimized/zPageCache.ll
 ; postgres/optimized/execute.ll
-; postgres/optimized/xlogprefetcher.ll
 ; qemu/optimized/block_qcow2-cache.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
@@ -88,7 +87,7 @@ entry:
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/opt_muxtree.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp eq i32 %2, %0
@@ -96,12 +95,14 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; typst-rs/optimized/3lt7g0yvt7qzv13u.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000049(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %.not = icmp ult i32 %2, %0
@@ -112,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp ugt i32 %2, %0
@@ -123,7 +124,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/slurm_step_layout.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %.not = icmp ult i32 %2, %0
@@ -150,7 +151,7 @@ entry:
 ; opencv/optimized/daisy.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp eq i32 %2, %0
@@ -161,7 +162,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003b(i32 %0, i32 %1) #0 {
+define i32 @func000000000000006b(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %.not = icmp slt i32 %2, %0

@@ -18,12 +18,12 @@
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -2
   ret i64 %4
 }
 
-; 664 occurrences:
+; 704 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -46,6 +46,48 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -418,7 +460,6 @@ entry:
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -680,7 +721,6 @@ entry:
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
 ; yosys/optimized/sta.ll
@@ -855,7 +895,7 @@ entry:
 define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 3
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -8
   ret i64 %4
 }
@@ -968,12 +1008,12 @@ entry:
 define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 4
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -16
   ret i64 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; clamav/optimized/mbox.c.ll
 ; darktable/optimized/export.c.ll
@@ -996,7 +1036,6 @@ entry:
 ; pbrt-v4/optimized/paramdict.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
@@ -1006,11 +1045,12 @@ entry:
   ret i64 %4
 }
 
-; 154 occurrences:
+; 157 occurrences:
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
 ; arrow/optimized/trie.cc.ll
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; draco/optimized/kd_tree_attributes_decoder.cc.ll
@@ -1064,9 +1104,11 @@ entry:
 ; opencv/optimized/charuco_detector.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/fast_hough_transform.cpp.ll
+; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/outlier_rejection.cpp.ll
 ; opencv/optimized/perf_matching.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
+; opencv/optimized/sparse_match_interpolators.cpp.ll
 ; openspiel/optimized/skat.cc.ll
 ; ozz-animation/optimized/raw_animation_archive.cc.ll
 ; protobuf/optimized/generated_enum_util.cc.ll
@@ -1165,7 +1207,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 2
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -4
   ret i64 %4
 }
@@ -1239,7 +1281,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 3
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -8
   ret i64 %4
 }
@@ -1264,7 +1306,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 52
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 32
   ret i64 %4
 }
@@ -1275,7 +1317,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl nuw i64 %3, 4
   ret i64 %4
 }
@@ -1298,7 +1340,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 63
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl i64 %3, 16
   ret i64 %4
 }
@@ -1309,7 +1351,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 2
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -4
   ret i64 %4
 }

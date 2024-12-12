@@ -14,9 +14,8 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; icu/optimized/collationbuilder.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll

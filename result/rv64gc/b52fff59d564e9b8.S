@@ -13,12 +13,6 @@ func000000000000000b:                   # @func000000000000000b
 	slli	a1, a1, 32
 	or	a0, a0, a1
 	ret
-func0000000000000010:                   # @func0000000000000010
-	sext.w	a1, a1
-	slli	a0, a0, 8
-	or	a0, a0, a1
-	ori	a0, a0, 128
-	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 32
 	slli	a0, a0, 40

@@ -30,7 +30,7 @@ entry:
   ret i64 %5
 }
 
-; 72 occurrences:
+; 71 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -94,7 +94,6 @@ entry:
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/PGOCtxProfReader.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SerializedDiagnosticReader.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll

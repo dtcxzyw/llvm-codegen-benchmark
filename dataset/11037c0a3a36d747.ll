@@ -15,6 +15,19 @@ entry:
   ret i64 %7
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = shl nuw i64 %4, 32
+  %6 = zext nneg i32 %0 to i64
+  %7 = or disjoint i64 %5, %6
+  ret i64 %7
+}
+
 ; 67 occurrences:
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/StackPromotion.cpp.ll
@@ -94,7 +107,7 @@ entry:
   ret i64 %7
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/Attributor.cpp.ll
@@ -116,6 +129,7 @@ entry:
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll

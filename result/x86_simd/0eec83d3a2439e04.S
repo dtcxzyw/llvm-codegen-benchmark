@@ -8,7 +8,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001a8:                   # @func00000000000001a8
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm2, %ymm0, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

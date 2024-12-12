@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; crow/optimized/example_session.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; xgboost/optimized/io.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {

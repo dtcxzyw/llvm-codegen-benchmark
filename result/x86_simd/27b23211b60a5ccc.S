@@ -38,7 +38,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	.LCPI0_2(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
@@ -53,7 +53,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	6                               # 0x6
 .LCPI2_1:
 	.long	64                              # 0x40
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vptestmd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
@@ -61,7 +61,7 @@ func0000000000000008:                   # @func0000000000000008
 	.long	6                               # 0x6
 .LCPI3_1:
 	.long	16                              # 0x10
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vptestmd	.LCPI3_0(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

@@ -1,15 +1,10 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	decl	%esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	decl	%esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
-	retq
-func0000000000000034:                   # @func0000000000000034
-	decl	%esi
-	cmpq	%rdi, %rsi
-	seta	%al
 	retq

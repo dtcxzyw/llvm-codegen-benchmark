@@ -34,6 +34,18 @@ func0000000000000019:                   # @func0000000000000019
 	shll	$23, %edi
 	orl	%edi, %eax
 	retq
+func000000000000005d:                   # @func000000000000005d
+	movl	%edi, %eax
+	shll	$16, %esi
+	shll	$24, %eax
+	orl	%esi, %eax
+	retq
+func000000000000003d:                   # @func000000000000003d
+	movzbl	%sil, %eax
+	shll	$16, %eax
+	shll	$24, %edi
+	orl	%edi, %eax
+	retq
 func0000000000000077:                   # @func0000000000000077
 	movl	%edi, %eax
 	shll	$28, %esi

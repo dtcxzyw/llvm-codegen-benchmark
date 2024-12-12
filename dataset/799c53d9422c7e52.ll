@@ -1,18 +1,4 @@
 
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func000000000000006d(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %1, 100
-  %3 = add nuw nsw i64 %2, 4294962396
-  %4 = sdiv i64 %0, 1461001
-  %5 = add nsw i64 %3, %4
-  ret i64 %5
-}
-
 ; 2 occurrences:
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
 ; php/optimized/parse_posix.ll
@@ -36,6 +22,18 @@ entry:
   %3 = add i64 %2, 1000000
   %4 = sdiv i64 %0, 1000
   %5 = add i64 %3, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; libquic/optimized/time_support.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000006d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %1, 100
+  %3 = add nuw nsw i64 %2, 4294962396
+  %4 = sdiv i64 %0, 1461001
+  %5 = add nsw i64 %3, %4
   ret i64 %5
 }
 

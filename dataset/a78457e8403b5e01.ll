@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/area.ll
 ; flac/optimized/metadata.cpp.ll
 ; git/optimized/dir.ll
 ; linux/optimized/netconsole.ll

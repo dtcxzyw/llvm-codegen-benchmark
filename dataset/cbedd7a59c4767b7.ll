@@ -6,18 +6,17 @@ define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = lshr i64 %5, 37
   ret i64 %6
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-keypair.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
 ; lief/optimized/poly1305.c.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/page-writeback.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -54,7 +53,7 @@ define i64 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = lshr i64 %5, 32
   ret i64 %6
 }
@@ -67,7 +66,7 @@ define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = lshr i64 %5, 4
   ret i64 %6
 }
@@ -116,7 +115,7 @@ define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = lshr i64 %5, 32
   ret i64 %6
 }
@@ -145,7 +144,7 @@ define i64 @func0000000000000032(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 44
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = lshr i64 %5, 63
   ret i64 %6
 }
@@ -169,7 +168,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = lshr i64 %5, 6
   ret i64 %6
 }

@@ -5,7 +5,7 @@
 ; llama.cpp/optimized/llama.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 64
   %4 = select i1 %0, i64 %3, i64 %1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vsprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, 281474976710656
   %not. = xor i1 %0, true
@@ -28,7 +28,7 @@ entry:
 ; eastl/optimized/BenchmarkHeap.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
   %4 = select i1 %0, i64 %3, i64 %1

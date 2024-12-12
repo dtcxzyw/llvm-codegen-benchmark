@@ -62,7 +62,7 @@ func0000000000000000:                   # @func0000000000000000
 	vand.vx	v12, v12, a0
 	li	a0, -2048
 	zext.w	a0, a0
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -84,7 +84,7 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a0, a0, -256
 	vand.vx	v12, v12, a0
 	li	a0, 255
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -94,7 +94,7 @@ func000000000000000e:                   # @func000000000000000e
 	bseti	a0, zero, 11
 	vand.vx	v12, v12, a0
 	li	a0, 1920
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -104,7 +104,7 @@ func000000000000000c:                   # @func000000000000000c
 	lui	a0, 256
 	vand.vx	v12, v12, a0
 	lui	a0, 15
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -114,7 +114,7 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, 32768
 	vand.vx	v12, v12, a0
 	lui	a0, 196608
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -125,7 +125,7 @@ func0000000000000001:                   # @func0000000000000001
 	bseti	a0, zero, 34
 	vand.vx	v12, v12, a0
 	bseti	a0, zero, 35
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret

@@ -5,9 +5,8 @@ func0000000000000000:                   # @func0000000000000000
 	shrq	$3, %rax
 	retq
 func000000000000001e:                   # @func000000000000001e
-	imulq	$146097, %rdi, %rax             # imm = 0x23AB1
-	addq	$3, %rax
-	shrq	$2, %rax
+	leaq	1(%rdi,%rdi,2), %rax
+	shrq	%rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	imulq	$1292913986, %rdi, %rcx         # imm = 0x4D104D42

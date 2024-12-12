@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; git/optimized/editor.ll
 ; libevent/optimized/event.c.ll
 ; linux/optimized/compaction.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; openjdk/optimized/awt_InputMethod.ll
 ; php/optimized/cgi_main.ll
 ; postgres/optimized/dbcommands.ll

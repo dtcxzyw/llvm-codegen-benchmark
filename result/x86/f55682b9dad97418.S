@@ -1,62 +1,62 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	(%rsi,%rsi,2), %eax
 	cltq
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	imull	$1080, %esi, %eax               # imm = 0x438
 	cltq
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	(%rsi,%rsi,2), %eax
 	cltq
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	shll	$2, %esi
 	leal	(%rsi,%rsi,2), %eax
 	cltq
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	imull	$86400, %esi, %eax              # imm = 0x15180
 	cltq
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	shll	$3, %esi
 	leal	(%rsi,%rsi,4), %eax
 	cltq
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	leal	(%rsi,%rsi,2), %eax
 	cltq
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	leal	(%rsi,%rsi,2), %eax
 	cltq
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leal	(%rsi,%rsi,2), %eax
 	cltq
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	leal	(%rsi,%rsi,4), %eax
 	cltq
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

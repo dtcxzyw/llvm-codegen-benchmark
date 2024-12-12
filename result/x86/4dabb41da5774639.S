@@ -5,13 +5,14 @@ func0000000000000041:                   # @func0000000000000041
 	cmpb	$65, %cl
 	cmovbl	%edx, %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
+func00000000000000c1:                   # @func00000000000000c1
 	movzbl	%dil, %ecx
-	leal	15(%rcx), %eax
-	testb	%cl, %cl
-	cmovnel	%ecx, %eax
+	leal	-170(%rcx), %edx
+	leal	-242(%rcx), %eax
+	cmpb	$-8, %cl
+	cmovbl	%edx, %eax
 	retq
-func0000000000000045:                   # @func0000000000000045
+func00000000000000c5:                   # @func00000000000000c5
 	movzbl	%dil, %ecx
 	leal	9(%rcx), %edx
 	leal	-3(%rcx), %eax

@@ -4,6 +4,12 @@ func0000000000000028:                   # @func0000000000000028
 	shrl	$6, %eax
 	andb	$63, %al
 	retq
+func0000000000000000:                   # @func0000000000000000
+	shll	$10, %esi
+	leal	(%rsi,%rdi), %eax
+	shrl	$12, %eax
+	andb	$63, %al
+	retq
 func0000000000000060:                   # @func0000000000000060
 	leal	(%rdi,%rsi,2), %eax
 	shrl	$20, %eax

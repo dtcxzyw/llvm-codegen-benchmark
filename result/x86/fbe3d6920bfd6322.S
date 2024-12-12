@@ -11,9 +11,16 @@ func000000000000000c:                   # @func000000000000000c
 	andl	%esi, %eax
 	andl	%edx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	testl	$65528, %edx                    # imm = 0xFFF8
-	sete	%al
+func0000000000000014:                   # @func0000000000000014
+	andl	$31, %edx
+	cmpl	$29, %edx
+	setb	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	testb	$-2, %dl
+	setne	%al
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq

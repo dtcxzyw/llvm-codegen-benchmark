@@ -2,7 +2,7 @@
 	.long	1                               # 0x1
 .LCPI0_1:
 	.long	4                               # 0x4
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsrld	$1, %ymm1, %ymm1
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
@@ -16,7 +16,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	15                              # 0xf
 .LCPI1_2:
 	.long	70                              # 0x46
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vpsrld	$4, %ymm1, %ymm1
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI1_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
@@ -30,7 +30,7 @@ func0000000000000018:                   # @func0000000000000018
 	.long	240                             # 0xf0
 .LCPI2_2:
 	.long	59                              # 0x3b
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpsrld	$12, %ymm1, %ymm1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI2_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
@@ -42,7 +42,7 @@ func0000000000000014:                   # @func0000000000000014
 	.long	1                               # 0x1
 func0000000000000001:                   # @func0000000000000001
 	vpsrld	$1, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vptestnmd	.LCPI3_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -53,7 +53,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	1                               # 0x1
 .LCPI4_2:
 	.long	3                               # 0x3
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsrld	$30, %ymm1, %ymm1
 	vpandd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI4_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
@@ -65,7 +65,7 @@ func000000000000001c:                   # @func000000000000001c
 	.long	256                             # 0x100
 .LCPI5_1:
 	.long	1                               # 0x1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsrld	$1, %ymm1, %ymm1
 	vpandd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI5_1(%rip){1to8}, %ymm0, %ymm1 # ymm1 = ymm1 | (ymm0 & mem)

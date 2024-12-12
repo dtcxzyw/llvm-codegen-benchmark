@@ -107,10 +107,8 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
+; 2 occurrences:
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0) #0 {

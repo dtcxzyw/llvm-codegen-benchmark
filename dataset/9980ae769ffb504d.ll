@@ -1,5 +1,5 @@
 
-; 363 occurrences:
+; 368 occurrences:
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclLibUtil.c.ll
 ; abc/optimized/sclLoad.c.ll
@@ -125,6 +125,7 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -147,7 +148,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -362,6 +362,11 @@
 ; xgboost/optimized/regression_obj.cc.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {

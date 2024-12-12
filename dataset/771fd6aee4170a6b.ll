@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/saigSimFast.c.ll
@@ -21,6 +21,7 @@
 ; libwebp/optimized/get_disto.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/train.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

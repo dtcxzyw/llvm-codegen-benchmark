@@ -4,7 +4,7 @@
 ; openjdk/optimized/png.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = icmp ult i32 %0, 95

@@ -1,8 +1,11 @@
 
-; 24 occurrences:
+; 27 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
 ; folly/optimized/TimeoutQueue.cpp.ll
+; llvm/optimized/Value.cpp.ll
 ; meshlab/optimized/GLLogStream.cpp.ll
 ; meshlab/optimized/alignDialog.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
@@ -25,9 +28,9 @@
 ; opencc/optimized/Config.cpp.ll
 ; quantlib/optimized/ecb.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000006(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 80
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 80
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %0, 1
   %5 = or i64 %4, %3
@@ -35,35 +38,24 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/attribute_name.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -64
+  %3 = ptrtoint ptr %2 to i64
+  %4 = and i64 %0, 1
+  %5 = or disjoint i64 %4, %3
+  ret i64 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/Value.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %3 = ptrtoint ptr %2 to i64
-  %4 = and i64 %0, 7
-  %5 = or disjoint i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/Value.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %3 = ptrtoint ptr %2 to i64
-  %4 = and i64 %0, 7
-  %5 = or i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/MachineFunction.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 48
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %0, 7
   %5 = or disjoint i64 %4, %3

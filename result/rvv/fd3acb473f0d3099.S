@@ -4,7 +4,7 @@ func000000000000000d:                   # @func000000000000000d
 	vrsub.vx	v10, v10, a0
 	vmv.v.i	v12, -1
 	vsll.vv	v10, v12, v10
-	vand.vv	v8, v10, v8
+	vand.vv	v8, v8, v10
 	ret
 func000000000000000f:                   # @func000000000000000f
 	li	a0, 31
@@ -12,7 +12,7 @@ func000000000000000f:                   # @func000000000000000f
 	vrsub.vx	v10, v10, a0
 	vmv.v.i	v12, 1
 	vsll.vv	v10, v12, v10
-	vand.vv	v8, v10, v8
+	vand.vv	v8, v8, v10
 	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -27,5 +27,5 @@ func0000000000000005:                   # @func0000000000000005
 	vrsub.vx	v10, v10, a0
 	vmv.v.i	v12, -1
 	vsll.vv	v10, v12, v10
-	vand.vv	v8, v10, v8
+	vand.vv	v8, v8, v10
 	ret

@@ -14,7 +14,8 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/message.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {

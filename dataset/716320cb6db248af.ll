@@ -1,26 +1,14 @@
 
-%class.aiVector3t.2718191 = type { float, float, float }
-
-; 1 occurrences:
-; ruby/optimized/sprintf.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000040(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 -4
-  ret ptr %6
-}
+%class.aiVector3t.2830712 = type { float, float, float }
 
 ; 1 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %class.aiVector3t.2718191, ptr %0, i64 %3
-  %5 = getelementptr %class.aiVector3t.2718191, ptr %4, i64 %1
+  %4 = getelementptr %class.aiVector3t.2830712, ptr %0, i64 %1
+  %5 = getelementptr %class.aiVector3t.2830712, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 12
   ret ptr %6
 }
@@ -32,46 +20,9 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 6
-  ret ptr %6
-}
-
-; 1 occurrences:
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000014(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 1
-  ret ptr %6
-}
-
-; 1 occurrences:
-; linux/optimized/bitmap.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007c(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i64, ptr %0, i64 %3
-  %5 = getelementptr i64, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 8
-  ret ptr %6
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }
 

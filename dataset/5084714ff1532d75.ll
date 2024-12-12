@@ -55,7 +55,7 @@ entry:
   %3 = shl i32 %0, 16
   %4 = sub i32 %1, %2
   %5 = xor i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -68,7 +68,7 @@ entry:
   %3 = shl i32 %0, 16
   %4 = sub nuw i32 %1, %2
   %5 = xor i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -81,7 +81,7 @@ entry:
   %3 = shl i32 %0, 16
   %4 = sub nuw nsw i32 %1, %2
   %5 = xor i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

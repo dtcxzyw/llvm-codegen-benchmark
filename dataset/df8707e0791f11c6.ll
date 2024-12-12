@@ -1,7 +1,6 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; curl/optimized/libcurl_la-curl_sasl.ll
-; linux/optimized/madvise.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/DeclSpec.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll

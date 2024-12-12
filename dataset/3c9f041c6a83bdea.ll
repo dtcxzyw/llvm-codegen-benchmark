@@ -1,5 +1,7 @@
 
-; 18 occurrences:
+; 20 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; flac/optimized/utils.c.ll
 ; g2o/optimized/vertex_intrinsics.cpp.ll
 ; g2o/optimized/vertex_line2d.cpp.ll

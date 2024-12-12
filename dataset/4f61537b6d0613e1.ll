@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 47 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/block_header_encoder.c.ll
@@ -12,7 +12,6 @@
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; hwloc/optimized/topology.ll
-; linux/optimized/inline.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/printk_ringbuffer.ll
@@ -68,13 +67,14 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; clamav/optimized/udf.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; freetype/optimized/pfr.c.ll
 ; linux/optimized/xfrm_input.ll
 ; php/optimized/php_libmagic.ll
 ; qemu/optimized/block_vhdx-log.c.ll
+; soc-simulator/optimized/verilated.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-gryphon.c.ll
 ; wireshark/optimized/packet-ieee1905.c.ll
@@ -87,9 +87,10 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/blocksort.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/blocksort.c.ll
 ; icu/optimized/collationsettings.ll
 ; icu/optimized/package.ll

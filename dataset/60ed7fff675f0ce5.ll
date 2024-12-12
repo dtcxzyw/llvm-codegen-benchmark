@@ -138,7 +138,6 @@
 ; linux/optimized/balloc.ll
 ; linux/optimized/dm-stripe.ll
 ; linux/optimized/intel-gtt.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/pcm_lib.ll
@@ -158,7 +157,6 @@
 ; lodepng/optimized/pngdetail.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
@@ -315,6 +313,8 @@
 ; z3/optimized/mpff.cpp.ll
 ; z3/optimized/mpfx.cpp.ll
 ; z3/optimized/mpz_matrix.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -323,7 +323,7 @@ entry:
   ret i32 %3
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/bmcInse.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/sswFilter.c.ll
@@ -341,7 +341,6 @@ entry:
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlalsd.c.ll
 ; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtgsyl.c.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
@@ -394,7 +393,7 @@ entry:
   ret i32 %3
 }
 
-; 113 occurrences:
+; 115 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -508,6 +507,8 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-opa-mad.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
@@ -516,7 +517,7 @@ entry:
   ret i32 %3
 }
 
-; 44 occurrences:
+; 46 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -561,6 +562,8 @@ entry:
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-x11.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
@@ -569,7 +572,7 @@ entry:
   ret i32 %3
 }
 
-; 95 occurrences:
+; 97 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/bmcInse.c.ll
 ; abc/optimized/bmcMaxi.c.ll
@@ -607,6 +610,8 @@ entry:
 ; libwebp/optimized/get_disto.c.ll
 ; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/picture_rescale_enc.c.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/decorate_raster_proj.cpp.ll
@@ -669,7 +674,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -683,7 +688,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -718,7 +723,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 

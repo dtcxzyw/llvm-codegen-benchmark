@@ -47,11 +47,9 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; openblas/optimized/dgegv.c.ll
-; openblas/optimized/dgemm_small_matrix_permit.c.ll
-; openblas/optimized/sgemm_small_matrix_permit.c.ll
 ; opencv/optimized/degeneracy.cpp.ll
 ; opencv/optimized/undistort.dispatch.cpp.ll
 ; postgres/optimized/costsize.ll
@@ -64,7 +62,7 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ogt double %4, 2.000000e+00
   ret i1 %5
 }
@@ -94,7 +92,7 @@ entry:
 define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp oeq double %4, 0.000000e+00
   ret i1 %5
 }
@@ -109,7 +107,7 @@ entry:
 define i1 @func0000000000000005(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ugt double %4, 0.000000e+00
   ret i1 %5
 }
@@ -120,7 +118,7 @@ entry:
 define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp uge double %4, 0.000000e+00
   ret i1 %5
 }
@@ -150,7 +148,7 @@ entry:
 define i1 @func0000000000000007(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp une double %4, 0.000000e+00
   ret i1 %5
 }

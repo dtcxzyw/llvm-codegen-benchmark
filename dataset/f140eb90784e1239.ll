@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; clamav/optimized/manager.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; jq/optimized/regcomp.ll
@@ -15,7 +15,6 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; slurm/optimized/cgroup_v1.ll
-; slurm/optimized/task_cgroup.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; z3/optimized/nlqsat.cpp.ll
 ; Function Attrs: nounwind
@@ -27,18 +26,6 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; abc/optimized/giaResub6.c.ll
-; llvm/optimized/SymbolizableObjectFile.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 28
-  %4 = select i1 %3, i32 %1, i32 100
-  %5 = select i1 %0, i32 %4, i32 120
-  ret i32 %5
-}
-
 ; 1 occurrences:
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
@@ -47,6 +34,17 @@ entry:
   %3 = icmp ugt i32 %2, 2
   %4 = select i1 %3, i32 %1, i32 524292
   %5 = select i1 %0, i32 %4, i32 524288
+  ret i32 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/SymbolizableObjectFile.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 4
+  %4 = select i1 %0, i1 %3, i1 false
+  %5 = select i1 %4, i32 %1, i32 0
   ret i32 %5
 }
 

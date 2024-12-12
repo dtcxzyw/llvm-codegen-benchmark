@@ -19,7 +19,7 @@
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 7
   %4 = and i64 %3, 8589934584
@@ -32,7 +32,7 @@ entry:
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -2
   %4 = and i64 %3, -4
@@ -50,7 +50,7 @@ entry:
 ; php/optimized/zend_inheritance.ll
 ; sentencepiece/optimized/arena.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 23
   %4 = and i64 %3, 68719476720
@@ -92,7 +92,7 @@ entry:
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 7
   %4 = and i64 %3, -8

@@ -1,5 +1,7 @@
 
-; 13 occurrences:
+; 15 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/restcbt.cpp.ll

@@ -9,7 +9,7 @@
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
-; opencv/optimized/hough.cpp.ll
+; openjdk/optimized/methodData.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
@@ -20,9 +20,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
+; opencv/optimized/hough.cpp.ll
 ; php/optimized/php_pcre.ll
 ; xgboost/optimized/charconv.cc.ll
 ; zstd/optimized/divsufsort.c.ll

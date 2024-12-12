@@ -65,7 +65,7 @@ func0000000000000008:                   # @func0000000000000008
 	fli.d	fa5, 0.5
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v16, v16, fa5
-	vmfeq.vv	v0, v16, v8
+	vmfeq.vv	v0, v8, v16
 	ret
 .LCPI8_0:
 	.quad	0x4024000000000000              # double 10
@@ -81,5 +81,5 @@ func0000000000000007:                   # @func0000000000000007
 	fli.d	fa5, 0.5
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v16, v16, fa5
-	vmfne.vv	v0, v16, v8
+	vmfne.vv	v0, v8, v16
 	ret

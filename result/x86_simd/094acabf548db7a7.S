@@ -4,7 +4,7 @@
 	.long	16843009                        # 0x1010101
 func000000000000003c:                   # @func000000000000003c
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpmulld	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	retq

@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; openssl/optimized/libcrypto-lib-wrap128.ll
@@ -19,8 +18,10 @@ entry:
   ret i64 %3
 }
 
-; 694 occurrences:
+; 636 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/context.ll
+; boost/optimized/from_exception.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -29,20 +30,6 @@ entry:
 ; cpython/optimized/mathmodule.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/socketmodule.ll
-; crow/optimized/example.cpp.ll
-; crow/optimized/example_blueprint.cpp.ll
-; crow/optimized/example_catchall.cpp.ll
-; crow/optimized/example_chat.cpp.ll
-; crow/optimized/example_cookies.cpp.ll
-; crow/optimized/example_cors.cpp.ll
-; crow/optimized/example_file_upload.cpp.ll
-; crow/optimized/example_json_map.cpp.ll
-; crow/optimized/example_middleware.cpp.ll
-; crow/optimized/example_session.cpp.ll
-; crow/optimized/example_static_file.cpp.ll
-; crow/optimized/example_ws.cpp.ll
-; crow/optimized/helloworld.cpp.ll
-; darktable/optimized/TiffIFD.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_colorcorrection.c.ll
 ; darktable/optimized/introspection_colorin.c.ll
@@ -51,62 +38,18 @@ entry:
 ; darktable/optimized/introspection_primaries.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
-; duckdb/optimized/ub_duckdb_arrow_conversion.cpp.ll
 ; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
-; duckdb/optimized/ub_duckdb_bind_query_node.cpp.ll
-; duckdb/optimized/ub_duckdb_bind_statement.cpp.ll
-; duckdb/optimized/ub_duckdb_bind_tableref.cpp.ll
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
-; duckdb/optimized/ub_duckdb_common_arrow.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; duckdb/optimized/ub_duckdb_common_types_column.cpp.ll
-; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
-; duckdb/optimized/ub_duckdb_expression.cpp.ll
-; duckdb/optimized/ub_duckdb_expression_binders.cpp.ll
-; duckdb/optimized/ub_duckdb_func_aggr.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
-; duckdb/optimized/ub_duckdb_function.cpp.ll
-; duckdb/optimized/ub_duckdb_main.cpp.ll
-; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
-; duckdb/optimized/ub_duckdb_main_relation.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_aggregate.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_filter.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_projection.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_scan.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_set.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_pullup.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_pushdown.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_rules.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_statistics_expr.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_statistics_op.cpp.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_physical_plan.cpp.ll
-; duckdb/optimized/ub_duckdb_planner.cpp.ll
-; duckdb/optimized/ub_duckdb_planner_expression.cpp.ll
-; duckdb/optimized/ub_duckdb_planner_operator.cpp.ll
-; duckdb/optimized/ub_duckdb_planner_subquery.cpp.ll
-; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; duckdb/optimized/ub_duckdb_storage.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; duckdb/optimized/ub_duckdb_transaction.cpp.ll
-; duckdb/optimized/ub_duckdb_transformer_expression.cpp.ll
-; duckdb/optimized/ub_duckdb_transformer_helpers.cpp.ll
-; duckdb/optimized/ub_duckdb_transformer_statement.cpp.ll
 ; flac/optimized/encode.c.ll
-; folly/optimized/CompressionContextPoolSingletons.cpp.ll
-; folly/optimized/FunctionScheduler.cpp.ll
 ; folly/optimized/IOThreadPoolExecutor.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/NetOps.cpp.ll
-; folly/optimized/ObserverManager.cpp.ll
-; folly/optimized/Zstd.cpp.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; git/optimized/mem-pool.ll
@@ -137,7 +80,6 @@ entry:
 ; linux/optimized/set_memory.ll
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/truncate.ll
-; linux/optimized/utobject.ll
 ; linux/optimized/vma.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AArch64MCExpr.cpp.ll
@@ -685,7 +627,6 @@ entry:
 ; redis/optimized/eset.sym.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
-; regex-rs/optimized/6f4i3c8223u3bmw.ll
 ; ruby/optimized/ancdata.ll
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
@@ -723,7 +664,7 @@ entry:
   ret i64 %3
 }
 
-; 130 occurrences:
+; 114 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/index.c.ll
@@ -766,14 +707,12 @@ entry:
 ; html5ever-rs/optimized/1yuzfqpt8ffhwz7d.ll
 ; html5ever-rs/optimized/2p0p1zz6gwjy9c4w.ll
 ; hyperscan/optimized/fdr_confirm_compile.cpp.ll
-; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; icu/optimized/unistr.ll
-; libjpeg-turbo/optimized/jdsample.c.ll
 ; libwebp/optimized/muxread.c.ll
 ; linux/optimized/auth_gss.ll
 ; linux/optimized/drm_plane.ll
@@ -792,10 +731,6 @@ entry:
 ; nanobind/optimized/nb_type.cpp.ll
 ; openblas/optimized/dsbmv_thread_L.c.ll
 ; openblas/optimized/dsbmv_thread_U.c.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dsymv_thread_L.c.ll
-; openblas/optimized/dsymv_thread_U.c.ll
 ; openblas/optimized/dtbmv_thread_NLN.c.ll
 ; openblas/optimized/dtbmv_thread_NLU.c.ll
 ; openblas/optimized/dtbmv_thread_NUN.c.ll
@@ -804,24 +739,7 @@ entry:
 ; openblas/optimized/dtbmv_thread_TLU.c.ll
 ; openblas/optimized/dtbmv_thread_TUN.c.ll
 ; openblas/optimized/dtbmv_thread_TUU.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
-; openblas/optimized/dtrmv_thread_NLN.c.ll
-; openblas/optimized/dtrmv_thread_NLU.c.ll
-; openblas/optimized/dtrmv_thread_NUN.c.ll
-; openblas/optimized/dtrmv_thread_NUU.c.ll
-; openblas/optimized/dtrmv_thread_TLN.c.ll
-; openblas/optimized/dtrmv_thread_TLU.c.ll
-; openblas/optimized/dtrmv_thread_TUN.c.ll
-; openblas/optimized/dtrmv_thread_TUU.c.ll
 ; openjdk/optimized/compactHashtable.ll
-; openjdk/optimized/jdsample.ll
 ; openssl/optimized/property_test-bin-property_test.ll
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/optimize_temp_vars_5.ll
@@ -830,8 +748,6 @@ entry:
 ; php/optimized/zend_inheritance.ll
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/gindesc.ll
-; postgres/optimized/gininsert.ll
-; postgres/optimized/ginpostinglist.ll
 ; postgres/optimized/ginvacuum.ll
 ; postgres/optimized/ginxlog.ll
 ; postgres/optimized/nodeHash.ll
@@ -854,6 +770,15 @@ entry:
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/tap-rlc-graph.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0) #0 {
 entry:
@@ -863,15 +788,16 @@ entry:
   ret i64 %3
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; folly/optimized/AsyncFdSocket.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; libquic/optimized/pickle.cc.ll
-; linux/optimized/auth_unix.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/scm.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_tlsf.ll
 ; ncnn/optimized/modelbin.cpp.ll
 ; openblas/optimized/strsm_kernel_RT.c.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
@@ -919,7 +845,7 @@ entry:
   ret i64 %3
 }
 
-; 69 occurrences:
+; 70 occurrences:
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -989,6 +915,7 @@ entry:
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
@@ -1015,7 +942,7 @@ entry:
   ret i64 %3
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/gradient_checker.cc.ll
@@ -1052,7 +979,6 @@ entry:
 ; openblas/optimized/ddot_k.c.ll
 ; openblas/optimized/dgemv_n.c.ll
 ; openblas/optimized/dsdot_k.c.ll
-; openblas/optimized/dsum_k.c.ll
 ; openblas/optimized/saxpy_k.c.ll
 ; openblas/optimized/sdsdot_k.c.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
@@ -1074,7 +1000,7 @@ entry:
   ret i64 %3
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
@@ -1089,7 +1015,6 @@ entry:
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; openmpi/optimized/opal_graph.ll
 ; php/optimized/pcre2_match.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll

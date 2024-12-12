@@ -24,7 +24,6 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -47,6 +46,7 @@ entry:
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; llvm/optimized/X86TileConfig.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; proj/optimized/grids.cpp.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; Function Attrs: nounwind
@@ -58,9 +58,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i16 %2) #0 {
 entry:

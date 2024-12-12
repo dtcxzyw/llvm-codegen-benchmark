@@ -7,7 +7,7 @@ define i1 @func0000000000000024(double %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 0.000000e+00
   %3 = select i1 %2, double 0.000000e+00, double %1
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ogt double %4, 0.000000e+00
   ret i1 %5
 }
@@ -45,7 +45,7 @@ define i1 @func0000000000000025(double %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 0.000000e+00
   %3 = select i1 %2, double 0.000000e+00, double %1
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ugt double %4, 0x3E50000000000000
   ret i1 %5
 }
@@ -66,12 +66,12 @@ entry:
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001e(double %0, double %1) #0 {
+define i1 @func0000000000000015(double %0, double %1) #0 {
 entry:
   %.inv = fcmp ord double %1, 0.000000e+00
   %2 = select i1 %.inv, double %1, double 0.000000e+00
-  %3 = fmul double %2, %0
-  %4 = fcmp ord double %3, 0.000000e+00
+  %3 = fmul double %0, %2
+  %4 = fcmp ugt double %3, 0.000000e+00
   ret i1 %4
 }
 
@@ -82,7 +82,7 @@ define i1 @func00000000000000ae(double %0, double %1) #0 {
 entry:
   %2 = fcmp ole double %1, 0.000000e+00
   %3 = select i1 %2, double 0.000000e+00, double %1
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ord double %4, 0.000000e+00
   ret i1 %5
 }
@@ -94,7 +94,7 @@ define i1 @func00000000000000ac(double %0, double %1) #0 {
 entry:
   %2 = fcmp ole double %1, 1.000000e+01
   %3 = select i1 %2, double 1.000000e+01, double %1
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp oge double %4, 0.000000e+00
   ret i1 %5
 }
@@ -106,7 +106,7 @@ define i1 @func00000000000000ad(double %0, double %1) #0 {
 entry:
   %2 = fcmp ole double %1, 1.000000e+01
   %3 = select i1 %2, double 1.000000e+01, double %1
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp uge double %4, 0.000000e+00
   ret i1 %5
 }

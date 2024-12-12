@@ -7,7 +7,7 @@
 func00000000000000a6:                   # @func00000000000000a6
 	vbroadcastss	.LCPI0_0(%rip), %zmm2   # zmm2 = [1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1,1.6E+1]
 	vdivps	%zmm1, %zmm2, %zmm1
-	vmulps	%zmm0, %zmm1, %zmm0
+	vmulps	%zmm1, %zmm0, %zmm0
 	vcmpngeps	.LCPI0_1(%rip){1to16}, %zmm0, %k0
 	vcmpnleps	.LCPI0_2(%rip){1to16}, %zmm0, %k1
 	korw	%k1, %k0, %k0

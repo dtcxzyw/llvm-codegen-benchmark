@@ -81,14 +81,14 @@ func0000000000000020:                   # @func0000000000000020
 	vzeroupper
 	retq
 .LCPI6_0:
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
+	.short	65488                           # 0xffd0
 func000000000000003c:                   # @func000000000000003c
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0

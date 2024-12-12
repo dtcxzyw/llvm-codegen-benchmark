@@ -1,11 +1,11 @@
 
 ; 4 occurrences:
 ; linux/optimized/irq.ll
-; nuttx/optimized/lib_tolower.c.ll
+; lvgl/optimized/lv_scale.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; ruby/optimized/euc_jp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0) #0 {
+define i32 @func0000000000000064(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -42913
   %2 = icmp ult i32 %1, 33
@@ -23,7 +23,7 @@ entry:
 ; meshlab/optimized/Scanner.cpp.ll
 ; ruby/optimized/euc_jp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
+define i32 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -42961
   %2 = icmp ult i32 %1, 33
@@ -65,7 +65,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; quickjs/optimized/libunicode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i32 %0) #0 {
+define i32 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -65
   %2 = icmp ult i32 %1, 26
@@ -78,7 +78,7 @@ entry:
 ; llvm/optimized/UnicodeCaseFold.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i32 %0) #0 {
+define i32 @func00000000000000e4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -65
   %2 = icmp ult i32 %1, 26

@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 66 occurrences:
 ; abc/optimized/extraUtilMacc.c.ll
 ; abc/optimized/ifMap.c.ll
 ; arrow/optimized/compare_internal.cc.ll
@@ -21,10 +21,8 @@
 ; linux/optimized/balloc.ll
 ; linux/optimized/blk-lib.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/drm_gem_framebuffer_helper.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/exprep.ll
 ; linux/optimized/hexdump.ll
 ; linux/optimized/ialloc.ll
 ; linux/optimized/intel_fb.ll
@@ -35,6 +33,7 @@
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_canvas.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; mitsuba3/optimized/rastack.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
@@ -65,15 +64,17 @@
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 
-; 101 occurrences:
+; 99 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -91,7 +92,6 @@ entry:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
-; lief/optimized/constant_time.c.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/cbc.ll
 ; linux/optimized/cistpl.ll
@@ -161,7 +161,6 @@ entry:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/hw_block_m25p80.c.ll
 ; qemu/optimized/linux-user_thunk.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
@@ -179,7 +178,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 

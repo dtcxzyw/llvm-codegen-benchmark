@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/rx.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
@@ -8,7 +8,6 @@
 ; php/optimized/plain_wrapper.ll
 ; postgres/optimized/wparser_def.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; redis/optimized/networking.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind

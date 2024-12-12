@@ -11,7 +11,7 @@ entry:
   %4 = shl i64 %3, 1
   %5 = trunc nuw i128 %1 to i64
   %6 = add i64 %4, %5
-  %7 = xor i64 %6, %0
+  %7 = xor i64 %0, %6
   ret i64 %7
 }
 

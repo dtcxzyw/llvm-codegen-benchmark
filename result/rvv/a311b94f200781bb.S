@@ -52,7 +52,7 @@ func000000000000001e:                   # @func000000000000001e
 	lui	a0, 32
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v12, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e16, m1, ta, ma

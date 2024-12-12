@@ -11,7 +11,7 @@ func0000000000000018:                   # @func0000000000000018
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	andl	$65532, %edx                    # imm = 0xFFFC
 	cmpl	$36, %edx
 	setb	%al

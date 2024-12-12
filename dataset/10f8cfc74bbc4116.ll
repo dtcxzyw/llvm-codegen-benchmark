@@ -14,7 +14,7 @@ entry:
   %3 = and i32 %1, 4
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 %2
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

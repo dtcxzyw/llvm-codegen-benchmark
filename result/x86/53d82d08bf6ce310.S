@@ -1,8 +1,9 @@
 func000000000000000c:                   # @func000000000000000c
-	testb	$127, %dl
-	setne	%al
-	andl	%esi, %edi
-	andb	%dil, %al
+	movl	%edi, %eax
+	shrl	$21, %edx
+	andl	%esi, %eax
+	andl	%edx, %eax
+	andl	$1, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	testb	$4, %dl

@@ -28,18 +28,26 @@ func0000000000000006:                   # @func0000000000000006
 .LCPI3_0:
 	.quad	0x3fd3333333333333              # double 0.29999999999999999
 	.quad	0x3ff0000000000000              # double 1
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	xorl	%eax, %eax
 	cmpl	$40, %edi
 	setb	%al
 	vmovsd	.LCPI3_0(,%rax,8), %xmm0        # xmm0 = mem[0],zero
 	retq
 .LCPI4_0:
+	.quad	0x3fe0000000000000              # double 0.5
+func0000000000000004:                   # @func0000000000000004
+	cmpl	$3, %edi
+	setb	%al
+	kmovd	%eax, %k1
+	vmovsd	.LCPI4_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [5.0E-1,0.0E+0]
+	retq
+.LCPI5_0:
 	.quad	0x3ff0000000000000              # double 1
 	.quad	0x3ee4f8b588e368f1              # double 1.0000000000000001E-5
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorl	%eax, %eax
 	cmpl	$5, %edi
 	setae	%al
-	vmovsd	.LCPI4_0(,%rax,8), %xmm0        # xmm0 = mem[0],zero
+	vmovsd	.LCPI5_0(,%rax,8), %xmm0        # xmm0 = mem[0],zero
 	retq

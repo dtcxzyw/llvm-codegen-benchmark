@@ -29,7 +29,7 @@
 ; quantlib/optimized/triplebandlinearop.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007ba(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000f6a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %0, %1
   ret i1 %2
@@ -58,10 +58,20 @@ entry:
 ; quantlib/optimized/fdmzabrop.ll
 ; quantlib/optimized/laplaceinterpolation.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007b6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000f66(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sle i64 %0, %1
   ret i1 %2
+}
+
+; 1 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000568(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 %0, %1
+  %3 = icmp ugt i64 %2, 15
+  ret i1 %3
 }
 
 ; 6 occurrences:
@@ -72,7 +82,7 @@ entry:
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000054a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = icmp sgt i64 %2, 3
@@ -84,7 +94,7 @@ entry:
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006aa(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000d4a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = icmp sgt i64 %2, 3
@@ -94,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006ba(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000d6a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %0, %1
   ret i1 %2
@@ -103,20 +113,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007aa(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000f4a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = icmp sgt i64 %2, 3
-  ret i1 %3
-}
-
-; 1 occurrences:
-; cvc5/optimized/core_solver.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000002b8(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nsw i64 %0, %1
-  %3 = icmp ugt i64 %2, 1152921504606846975
   ret i1 %3
 }
 

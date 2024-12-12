@@ -19,19 +19,20 @@ func000000000000000b:                   # @func000000000000000b
 	vucomiss	%xmm0, %xmm1
 	setbe	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
-	kmovd	%edi, %k1
-	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
-	vxorps	%xmm0, %xmm0, %xmm0
-	vucomiss	%xmm0, %xmm1
-	setae	%al
-	retq
 func0000000000000007:                   # @func0000000000000007
 	kmovd	%edi, %k1
 	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
 	vxorps	%xmm0, %xmm0, %xmm0
 	vcmpneqss	%xmm0, %xmm1, %k0
 	kmovd	%k0, %eax
+	retq
+.LCPI4_0:
+	.long	0x40c90fdb                      # float 6.28318548
+func000000000000000c:                   # @func000000000000000c
+	kmovd	%edi, %k1
+	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
+	vucomiss	.LCPI4_0(%rip), %xmm1
+	setae	%al
 	retq
 func0000000000000003:                   # @func0000000000000003
 	kmovd	%edi, %k1

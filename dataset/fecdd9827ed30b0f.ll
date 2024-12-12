@@ -1,9 +1,7 @@
 
-; 28 occurrences:
-; abc/optimized/kitIsop.c.ll
+; 26 occurrences:
 ; cpython/optimized/flowgraph.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/calipso.ll
 ; linux/optimized/compat_binfmt_elf.ll
@@ -38,7 +36,55 @@ entry:
   ret ptr %6
 }
 
-; 166 occurrences:
+; 37 occurrences:
+; abc/optimized/giaEmbed.c.ll
+; abc/optimized/giaGlitch.c.ll
+; abc/optimized/giaStr.c.ll
+; abc/optimized/luckyFast16.c.ll
+; arrow/optimized/feather.cc.ll
+; arrow/optimized/metadata_internal.cc.ll
+; arrow/optimized/reader.cc.ll
+; cmake/optimized/zstd_decompress_block.c.ll
+; draco/optimized/sequential_integer_attribute_encoder.cc.ll
+; draco/optimized/sequential_normal_attribute_encoder.cc.ll
+; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
+; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
+; flatbuffers/optimized/binary_annotator.cpp.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
+; flatbuffers/optimized/reflection.cpp.ll
+; icu/optimized/rematch.ll
+; icu/optimized/uresdata.ll
+; icu/optimized/ustring.ll
+; libwebp/optimized/backward_references_enc.c.ll
+; lightgbm/optimized/train_share_states.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lz4/optimized/lz4.c.ll
+; oiio/optimized/exroutput.cpp.ll
+; opencv/optimized/oilpainting.cpp.ll
+; opencv/optimized/tflite_importer.cpp.ll
+; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
+; openssl/optimized/libcrypto-lib-rsa_oaep.ll
+; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
+; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
+; openusd/optimized/lz4.cpp.ll
+; php/optimized/fastcgi.ll
+; spike/optimized/fdt_sw.ll
+; wolfssl/optimized/rsa.c.ll
+; zstd/optimized/zstd_decompress_block.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 136 occurrences:
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bblif.c.ll
@@ -47,7 +93,6 @@ entry:
 ; abc/optimized/cbaWriteVer.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaBidec.c.ll
-; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaForce.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/giaMinLut2.c.ll
@@ -56,12 +101,8 @@ entry:
 ; abc/optimized/hopTruth.c.ll
 ; abc/optimized/kitIsop.c.ll
 ; abc/optimized/kitSop.c.ll
-; abc/optimized/luckyFast16.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/timMan.c.ll
-; arrow/optimized/feather.cc.ll
-; arrow/optimized/metadata_internal.cc.ll
-; arrow/optimized/reader.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
@@ -87,18 +128,10 @@ entry:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; clamav/optimized/qsort.c.ll
 ; cmake/optimized/divsufsort.c.ll
-; cmake/optimized/zstd_decompress_block.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
-; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
-; draco/optimized/sequential_normal_attribute_encoder.cc.ll
-; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
-; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
-; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
-; flatbuffers/optimized/reflection.cpp.ll
 ; freetype/optimized/raster.c.ll
 ; git/optimized/diff.ll
 ; git/optimized/dir.ll
@@ -108,16 +141,13 @@ entry:
 ; icu/optimized/rematch.ll
 ; icu/optimized/udata.ll
 ; icu/optimized/unisetspan.ll
-; icu/optimized/uresdata.ll
-; icu/optimized/ustring.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/e_aes.c.ll
 ; libquic/optimized/v3_ncons.c.ll
-; libwebp/optimized/backward_references_enc.c.ll
 ; libwebp/optimized/io_dec.c.ll
+; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/lossless.c.ll
-; lightgbm/optimized/train_share_states.cpp.ll
 ; llama.cpp/optimized/sampling.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/CloneFunction.cpp.ll
@@ -125,7 +155,9 @@ entry:
 ; llvm/optimized/CycleInfo.cpp.ll
 ; llvm/optimized/MustExecute.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
-; lz4/optimized/lz4.c.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -138,13 +170,11 @@ entry:
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/grfmt_sunras.cpp.ll
-; opencv/optimized/oilpainting.cpp.ll
 ; opencv/optimized/paillou_filter.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
-; opencv/optimized/tflite_importer.cpp.ll
 ; openexr/optimized/ImfDeepImageChannel.cpp.ll
 ; openexr/optimized/ImfFlatImageChannel.cpp.ll
 ; openexr/optimized/ImfSampleCountChannel.cpp.ll
@@ -155,23 +185,15 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
-; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-lib-rsa_none.ll
-; openssl/optimized/libcrypto-lib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-shlib-cms_pwri.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
-; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-shlib-rsa_none.ll
-; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/lz4.cpp.ll
 ; openusd/optimized/reconinter.c.ll
 ; openusd/optimized/restoration.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/yv12extend.c.ll
-; php/optimized/fastcgi.ll
 ; php/optimized/ir_gcm.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; protobuf/optimized/coded_stream.cc.ll
@@ -180,24 +202,18 @@ entry:
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; spike/optimized/fdt_rw.ll
-; spike/optimized/fdt_sw.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; velox/optimized/LzoDecompressor.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
-; verilator/optimized/V3PreProc.cpp.ll
-; wolfssl/optimized/rsa.c.ll
 ; yosys/optimized/verilog_lexer.ll
 ; zstd/optimized/divsufsort.c.ll
-; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
-; zstd/optimized/zstd_v06.c.ll
-; zstd/optimized/zstd_v07.c.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
@@ -246,6 +262,18 @@ entry:
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i16, ptr %0, i64 %1
   %6 = getelementptr nusw i16, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/stereobm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 

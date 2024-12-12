@@ -71,13 +71,6 @@ func000000000000006f:                   # @func000000000000006f
 	addq	%rsi, %rax
 	leaq	1(%rdi,%rax), %rax
 	retq
-func0000000000000015:                   # @func0000000000000015
-	cmpl	$1, %edx
-	movq	$-365, %rax                     # imm = 0xFE93
-	sbbq	$0, %rax
-	addq	%rdi, %rax
-	addq	%rsi, %rax
-	retq
 func0000000000000080:                   # @func0000000000000080
 	leaq	128(%rsi), %rax
 	leaq	149312(%rsi), %rcx
@@ -98,11 +91,9 @@ func0000000000000087:                   # @func0000000000000087
 	sbbq	$-1, %rsi
 	leaq	1(%rsi,%rdi), %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	xorl	%eax, %eax
+func0000000000000015:                   # @func0000000000000015
+	leaq	2079(%rsi), %rax
 	testl	%edx, %edx
-	setne	%al
-	leaq	(%rax,%rax,4), %rax
-	addq	%rsi, %rax
-	leaq	3(%rdi,%rax), %rax
+	cmoveq	%rsi, %rax
+	addq	%rdi, %rax
 	retq

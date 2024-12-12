@@ -3,10 +3,10 @@
 ; openssl/optimized/libcrypto-lib-rsa_pss.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pss.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000001a6(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = add nuw nsw i32 %1, 2
   %6 = icmp slt i32 %4, %5
   ret i1 %6
@@ -15,10 +15,10 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = add nsw i32 %1, -2
   %6 = icmp ult i32 %4, %5
   ret i1 %6
@@ -27,10 +27,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = add nsw i32 %1, -1
   %6 = icmp slt i32 %4, %5
   ret i1 %6
@@ -62,10 +62,10 @@ entry:
 ; cvc5/optimized/theory_sep_rewriter.cpp.ll
 ; cvc5/optimized/type_set.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000128(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = add nuw i32 %1, 1
   %6 = icmp ugt i32 %4, %5
   ret i1 %6
@@ -74,10 +74,10 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/regexp_operation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = add i32 %1, 1
   %6 = icmp ugt i32 %4, %5
   ret i1 %6
@@ -86,10 +86,10 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dtgsyl.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add nuw nsw i32 %1, 2
   %6 = icmp slt i32 %4, %5
   ret i1 %6

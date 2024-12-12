@@ -1,13 +1,12 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; ceres/optimized/canonical_views_clustering.cc.ll
 ; gromacs/optimized/calculator.cpp.ll
 ; gromacs/optimized/particlesequencer.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = urem i64 %3, %0

@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000003e(i32 %0, i32 %1, i32 %2) #0 {
@@ -12,7 +13,8 @@ entry:
   ret i16 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; clamav/optimized/str.c.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; openusd/optimized/zipFile.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
@@ -31,7 +33,7 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = or i32 %1, %0
+  %3 = or i32 %0, %1
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -48,8 +50,8 @@ entry:
 define i16 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
-  %4 = or disjoint i32 %3, %1
-  %5 = or disjoint i32 %4, %0
+  %4 = or disjoint i32 %1, %3
+  %5 = or disjoint i32 %0, %4
   %6 = trunc i32 %5 to i16
   ret i16 %6
 }
@@ -77,7 +79,7 @@ entry:
 define i16 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = trunc i32 %5 to i16
   ret i16 %6
@@ -103,7 +105,7 @@ entry:
 define i16 @func0000000000000032(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 10
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   %6 = trunc nuw i32 %5 to i16
   ret i16 %6
@@ -115,7 +117,7 @@ entry:
 define i16 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   %6 = trunc i32 %5 to i16
   ret i16 %6

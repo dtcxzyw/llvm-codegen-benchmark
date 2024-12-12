@@ -1,17 +1,17 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orq	%rcx, %rsi
 	orq	%rdx, %rdi
 	orq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	orq	%rcx, %rsi
 	orq	%rdx, %rdi
 	cmpq	$10, %rdi
 	sbbq	$0, %rsi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	orq	%rcx, %rsi
 	orq	%rdx, %rdi
 	xorl	%eax, %eax
@@ -20,13 +20,30 @@ func0000000000000018:                   # @func0000000000000018
 	sbbq	%rsi, %rax
 	setb	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	orq	%rcx, %rsi
 	orq	%rdx, %rdi
 	orq	%rsi, %rdi
 	setne	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func0000000000000038:                   # @func0000000000000038
+	orq	%rcx, %rsi
+	orq	%rdx, %rdi
+	movabsq	$68739955140067327, %rax        # imm = 0xF4369FFFFFFFFF
+	cmpq	%rdi, %rax
+	movabsq	$542101086242752217, %rax       # imm = 0x785EE10D5DA46D9
+	sbbq	%rsi, %rax
+	setb	%al
+	retq
+func0000000000000034:                   # @func0000000000000034
+	orq	%rcx, %rsi
+	orq	%rdx, %rdi
+	movabsq	$-8446744073709551616, %rax     # imm = 0x8AC7230489E80000
+	cmpq	%rax, %rdi
+	sbbq	$0, %rsi
+	setb	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
 	orq	%rcx, %rsi
 	orq	%rdx, %rdi
 	xorl	%eax, %eax
@@ -40,7 +57,7 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	orq	%rcx, %rsi
 	setle	%al
 	retq

@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; cvc5/optimized/attempt_solution_simplex.cpp.ll
 ; cvc5/optimized/constraint.cpp.ll
 ; cvc5/optimized/error_set.cpp.ll
@@ -11,6 +11,7 @@
 ; cvc5/optimized/soi_simplex.cpp.ll
 ; cvc5/optimized/tableau.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; hermes/optimized/CFG.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/ExecuteCompilerInvocation.cpp.ll
@@ -91,10 +92,11 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cvc5/optimized/regexp_elim.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; openjdk/optimized/replacednodes.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
@@ -107,7 +109,8 @@ entry:
   ret i64 %6
 }
 
-; 21 occurrences:
+; 22 occurrences:
+; assimp/optimized/clipper.cpp.ll
 ; freetype/optimized/raster.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/ShaderLang.cpp.ll

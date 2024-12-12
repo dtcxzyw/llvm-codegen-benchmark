@@ -1,6 +1,8 @@
 
-; 72 occurrences:
+; 75 occurrences:
 ; arrow/optimized/data.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btMiniSDF.ll
 ; cmake/optimized/SystemTools.cxx.ll
@@ -15,12 +17,14 @@
 ; lief/optimized/BinaryStream.cpp.ll
 ; lief/optimized/CorePrStatus.cpp.ll
 ; llvm/optimized/Commit.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/HeaderMap.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; meshoptimizer/optimized/vcacheanalyzer.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
@@ -68,7 +72,6 @@
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; spike/optimized/triggers.ll
-; velox/optimized/ValueSet.cpp.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; wireshark/optimized/packet-spice.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -97,16 +100,17 @@ entry:
   ret { i64, i64 } %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; grpc/optimized/compression_filter.cc.ll
 ; grpc/optimized/legacy_compression_filter.cc.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = insertvalue { i64, i64 } poison, i64 %3, 0
   ret { i64, i64 } %4
 }

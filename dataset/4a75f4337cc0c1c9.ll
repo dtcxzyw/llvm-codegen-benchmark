@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 10 occurrences:
 ; libquic/optimized/tls_cbc.c.ll
 ; lief/optimized/md5.c.ll
 ; lief/optimized/ripemd160.c.ll
@@ -7,8 +7,6 @@
 ; lief/optimized/sha256.c.ll
 ; llvm/optimized/SHA256.cpp.ll
 ; minetest/optimized/sha1.cpp.ll
-; openssl/optimized/libcrypto-lib-cms_asn1.ll
-; openssl/optimized/libcrypto-shlib-cms_asn1.ll
 ; php/optimized/md5.ll
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/tls.c.ll
@@ -20,7 +18,7 @@ entry:
   ret i8 %2
 }
 
-; 25 occurrences:
+; 23 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; cmake/optimized/base64.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -35,8 +33,6 @@ entry:
 ; minetest/optimized/sha1.cpp.ll
 ; opencv/optimized/function.pb.cc.ll
 ; opencv/optimized/graph.pb.cc.ll
-; openssl/optimized/libcrypto-lib-cms_asn1.ll
-; openssl/optimized/libcrypto-shlib-cms_asn1.ll
 ; php/optimized/md5.ll
 ; postgres/optimized/encode.ll
 ; sentencepiece/optimized/strutil.cc.ll

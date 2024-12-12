@@ -1,14 +1,3 @@
-func000000000000000e:                   # @func000000000000000e
-	movzbl	%dl, %ecx
-	shll	$16, %ecx
-	notb	%sil
-	movzbl	%sil, %eax
-	andl	$1, %eax
-	shll	$24, %eax
-	orl	%ecx, %eax
-	orl	%edi, %eax
-	orl	$100663296, %eax                # imm = 0x6000000
-	retq
 func000000000000001f:                   # @func000000000000001f
 	movzbl	%dl, %eax
 	shll	$16, %eax
@@ -33,6 +22,13 @@ func000000000000001e:                   # @func000000000000001e
 	movzbl	%sil, %ecx
 	shll	$31, %ecx
 	leal	-2145370112(%rcx,%rax), %eax
+	orl	%edi, %eax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	movzbl	%dl, %eax
+	shll	$23, %eax
+	shll	$31, %esi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f

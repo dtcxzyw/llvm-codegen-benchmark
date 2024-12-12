@@ -27,11 +27,11 @@
 ; luau/optimized/isocline.c.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = and i32 %4, 2146435072
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -89,13 +89,13 @@ entry:
 ; llvm/optimized/Triple.cpp.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000054(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 7
   %5 = and i32 %0, 7
-  %6 = icmp ult i32 %5, %4
+  %6 = icmp samesign ult i32 %5, %4
   ret i1 %6
 }
 
@@ -111,11 +111,11 @@ entry:
 ; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaPf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 61
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = and i32 %4, 1
   %6 = icmp ne i32 %5, 0
   ret i1 %6
@@ -150,13 +150,13 @@ entry:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/Triple.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000059(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 536870911
   %5 = and i32 %0, 536870911
-  %6 = icmp uge i32 %5, %4
+  %6 = icmp samesign uge i32 %5, %4
   ret i1 %6
 }
 
@@ -176,11 +176,11 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = and i32 %4, 536870911
   %6 = icmp ne i32 %5, 0
   ret i1 %6
@@ -197,13 +197,13 @@ entry:
 ; abc/optimized/llb4Sweep.c.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000058(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 16777215
   %5 = and i32 %0, 16777215
-  %6 = icmp ugt i32 %5, %4
+  %6 = icmp samesign ugt i32 %5, %4
   ret i1 %6
 }
 
@@ -223,11 +223,11 @@ entry:
 ; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 61
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = and i32 %4, 1
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -236,39 +236,39 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/ddsinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 255
   %5 = and i32 %0, 255
-  %6 = icmp ugt i32 %5, %4
+  %6 = icmp samesign ugt i32 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SemaCast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 38
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 65535
   %5 = and i32 %0, 65535
-  %6 = icmp ugt i32 %5, %4
+  %6 = icmp samesign ugt i32 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SemaCast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000079(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 38
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 65535
   %5 = and i32 %0, 65535
-  %6 = icmp uge i32 %5, %4
+  %6 = icmp samesign uge i32 %5, %4
   ret i1 %6
 }
 

@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui64.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
@@ -28,20 +30,6 @@ entry:
   %2 = and i64 %1, 63
   %3 = or disjoint i64 %0, 281474976710656
   %4 = shl i64 %3, %2
-  ret i64 %4
-}
-
-; 4 occurrences:
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 4294967295
-  %3 = or disjoint i64 %0, 1024
-  %4 = shl nuw nsw i64 %3, %2
   ret i64 %4
 }
 

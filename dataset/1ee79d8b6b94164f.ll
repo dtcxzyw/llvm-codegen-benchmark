@@ -1,10 +1,11 @@
 
-; 175 occurrences:
+; 178 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/cuddAddAbs.c.ll
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaSimBase.c.ll
+; abc/optimized/ifMap.c.ll
 ; abc/optimized/plaMan.c.ll
 ; assimp/optimized/ConvertToLHProcess.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
@@ -116,6 +117,8 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86TileConfig.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask_rect.ll
+; lvgl/optimized/lv_table.ll
 ; lz4/optimized/lz4.c.ll
 ; minetest/optimized/chat.cpp.ll
 ; opencv/optimized/descriptor.cpp.ll
@@ -183,7 +186,7 @@ entry:
   ret i64 %2
 }
 
-; 291 occurrences:
+; 294 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -192,6 +195,7 @@ entry:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/acbFunc.c.ll
+; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bbrImage.c.ll
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -209,6 +213,7 @@ entry:
 ; abc/optimized/fraigTable.c.ll
 ; abc/optimized/fxuReduce.c.ll
 ; abc/optimized/giaEra2.c.ll
+; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/giaMfs.c.ll
 ; abc/optimized/giaMuxes.c.ll
@@ -216,6 +221,7 @@ entry:
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTruth.c.ll
+; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifLibBox.c.ll
 ; abc/optimized/ioReadBlif.c.ll
 ; abc/optimized/ioReadPla.c.ll
@@ -252,7 +258,6 @@ entry:
 ; ceres/optimized/compressed_row_jacobian_writer.cc.ll
 ; ceres/optimized/residual_block_utils.cc.ll
 ; cmake/optimized/zstd_compress.c.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -263,13 +268,13 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
+; freetype/optimized/ftbitmap.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
 ; g2o/optimized/solver_csparse.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; git/optimized/for-each-repo.ll
 ; git/optimized/ref-filter.ll
 ; git/optimized/ws.ll
 ; graphviz/optimized/QuadTree.c.ll
@@ -334,6 +339,7 @@ entry:
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -377,6 +383,7 @@ entry:
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
@@ -447,7 +454,6 @@ entry:
 ; postgres/optimized/print.ll
 ; postgres/optimized/toast_internals.ll
 ; postgres/optimized/varlena.ll
-; proj/optimized/factory.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/migration_block.c.ll
 ; qemu/optimized/util_thread-context.c.ll

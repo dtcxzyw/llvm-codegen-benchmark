@@ -12,7 +12,7 @@ func0000000000000013:                   # @func0000000000000013
 	andl	$1, %edi
 	addq	%rdi, %rax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func0000000000000143:                   # @func0000000000000143
 	movl	%edi, %eax
 	andl	$1, %eax
 	cmpb	$27, %sil

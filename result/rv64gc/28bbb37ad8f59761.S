@@ -22,7 +22,11 @@ func0000000000000034:                   # @func0000000000000034
 	subw	a0, a0, a1
 	slliw	a0, a0, 3
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000025:                   # @func0000000000000025
+	subw	a0, a0, a1
+	slliw	a0, a0, 16
+	ret
+func0000000000000007:                   # @func0000000000000007
 	subw	a0, a0, a1
 	slliw	a0, a0, 9
 	ret
@@ -33,4 +37,12 @@ func0000000000000010:                   # @func0000000000000010
 func0000000000000030:                   # @func0000000000000030
 	subw	a0, a0, a1
 	slliw	a0, a0, 16
+	ret
+func0000000000000033:                   # @func0000000000000033
+	subw	a0, a0, a1
+	slliw	a0, a0, 2
+	ret
+func0000000000000017:                   # @func0000000000000017
+	subw	a0, a0, a1
+	slliw	a0, a0, 3
 	ret

@@ -5,14 +5,14 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	andb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movsbl	%dl, %eax
 	addl	%esi, %eax
 	cmpl	$560, %eax                      # imm = 0x230
 	setl	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movsbl	%dl, %eax
 	addl	%esi, %eax
 	testl	%eax, %eax

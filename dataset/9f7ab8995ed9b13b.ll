@@ -4,7 +4,7 @@
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = lshr i64 %3, 2
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_highpass.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = lshr i64 %3, 2
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_highpass.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = lshr i64 %3, 4

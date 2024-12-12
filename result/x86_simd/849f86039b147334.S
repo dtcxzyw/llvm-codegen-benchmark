@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	-2                              # 0xfffffffffffffffe
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3   # ymm3 = [18446744073709551614,18446744073709551614,18446744073709551614,18446744073709551614]
 	vpand	%ymm3, %ymm2, %ymm2
-	vpcmpeqq	%ymm0, %ymm2, %k0
+	vpcmpeqq	%ymm2, %ymm0, %k0
 	vpand	%ymm3, %ymm1, %ymm1
-	vpcmpeqq	%ymm0, %ymm1, %k1
+	vpcmpeqq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

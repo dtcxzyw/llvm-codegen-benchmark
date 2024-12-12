@@ -1,36 +1,36 @@
-func0000000000000014:                   # @func0000000000000014
-	andi	a1, a1, 255
-	addi	a1, a1, -14
-	sltiu	a1, a1, -5
-	and	a0, a0, a1
-	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	andi	a1, a1, 255
 	addi	a1, a1, -15
 	sltiu	a1, a1, -2
 	and	a0, a0, a1
 	ret
-func0000000000000051:                   # @func0000000000000051
+func0000000000000024:                   # @func0000000000000024
+	andi	a1, a1, 255
+	addi	a1, a1, -255
+	sltiu	a1, a1, -94
+	and	a0, a0, a1
+	ret
+func00000000000000a1:                   # @func00000000000000a1
 	andi	a1, a1, 255
 	addi	a1, a1, -7
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a1, a1, 255
 	addi	a1, a1, -42
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andi	a1, a1, 255
 	addi	a1, a1, -42
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+func00000000000000ac:                   # @func00000000000000ac
 	andi	a1, a1, 255
-	addi	a1, a1, -22
-	sltiu	a1, a1, -18
+	addi	a1, a1, -42
+	snez	a1, a1
 	and	a0, a0, a1
 	ret

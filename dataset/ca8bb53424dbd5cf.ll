@@ -15,10 +15,10 @@
 ; crow/optimized/helloworld.cpp.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   %5 = icmp eq i16 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
@@ -27,10 +27,10 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/acct_policy.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i16 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = icmp ne i16 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6

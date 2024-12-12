@@ -12,7 +12,9 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; cpython/optimized/mathmodule.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
 ; Function Attrs: nounwind
@@ -43,7 +45,7 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 

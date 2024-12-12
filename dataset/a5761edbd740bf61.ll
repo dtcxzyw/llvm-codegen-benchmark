@@ -1,11 +1,10 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; icu/optimized/ustrtrns.ll
 ; icu/optimized/utf8collationiterator.ll
 ; libphonenumber/optimized/rune.c.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/sd.ll
-; linux/optimized/umwait.ll
 ; llvm/optimized/CommandFlags.cpp.ll
 ; re2/optimized/rune.cc.ll
 ; Function Attrs: nounwind

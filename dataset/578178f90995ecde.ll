@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; c3c/optimized/expr.c.ll
 ; c3c/optimized/sema_casts.c.ll
 ; c3c/optimized/sema_expr.c.ll
@@ -7,6 +7,7 @@
 ; glslang/optimized/glslang_tab.cpp.ll
 ; linux/optimized/sky2.ll
 ; minetest/optimized/content_cao.cpp.ll
+; openusd/optimized/level.cpp.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0) #0 {

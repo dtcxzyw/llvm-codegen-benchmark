@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -20,7 +20,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -29,7 +28,7 @@
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -94
   %3 = shl i32 %0, %2
@@ -37,7 +36,7 @@ entry:
   ret i1 %4
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -57,7 +56,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -66,7 +64,7 @@ entry:
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -94
   %3 = shl i32 %0, %2
@@ -74,7 +72,20 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 2 occurrences:
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/giaSimBase.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -6
+  %3 = shl i32 %0, %2
+  %4 = icmp sgt i32 %3, 0
+  ret i1 %4
+}
+
+; 11 occurrences:
+; abc/optimized/giaSimBase.c.ll
 ; openexr/optimized/ImfInputFile.cpp.ll
 ; wireshark/optimized/packet-scsi-osd.c.ll
 ; zfp/optimized/encode1f.c.ll
@@ -86,11 +97,11 @@ entry:
 ; zfp/optimized/encode4f.c.ll
 ; zfp/optimized/encode4i.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 8
+  %2 = add nsw i32 %1, -6
   %3 = shl i32 %0, %2
-  %4 = icmp eq i32 %3, -1
+  %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 

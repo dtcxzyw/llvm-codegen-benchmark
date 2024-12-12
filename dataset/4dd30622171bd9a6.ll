@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
-; linux/optimized/he.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll

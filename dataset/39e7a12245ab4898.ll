@@ -1,5 +1,5 @@
 
-; 140 occurrences:
+; 141 occurrences:
 ; cmake/optimized/vtls.c.ll
 ; curl/optimized/libcurl_la-vtls.ll
 ; git/optimized/archive.ll
@@ -34,6 +34,7 @@
 ; llvm/optimized/Targets.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; openjdk/optimized/hb-ot-map.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
@@ -150,10 +151,11 @@ entry:
   ret i8 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; php/optimized/util.ll
+; postgres/optimized/regcomp.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll

@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
@@ -24,7 +24,6 @@
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/hb-buffer-verify.ll
-; openspiel/optimized/quoridor.cc.ll
 ; openusd/optimized/decodemv.c.ll
 ; php/optimized/avifinfo.ll
 ; postgres/optimized/nodeSetOp.ll

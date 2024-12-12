@@ -30,7 +30,7 @@ entry:
   ret ptr %3
 }
 
-; 49 occurrences:
+; 53 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; clamav/optimized/getopt.c.ll
@@ -47,9 +47,12 @@ entry:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/LegalizeDAG.cpp.ll
+; llvm/optimized/MDBuilder.cpp.ll
 ; llvm/optimized/MachineLoopUtils.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; llvm/optimized/TypeIndexDiscovery.cpp.ll
 ; luau/optimized/lvmload.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
@@ -75,16 +78,17 @@ entry:
 ; openusd/optimized/parserHelpers.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/avifinfo.ll
+; php/optimized/sqlite_driver.ll
 ; redis/optimized/redis-cli.ll
 ; redis/optimized/ziplist.ll
 ; redis/optimized/zipmap.ll
 ; sqlite/optimized/sqlite3.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i1 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 3, i64 2
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   ret ptr %3
 }
 

@@ -17,6 +17,17 @@ func0000000000000007:                   # @func0000000000000007
 	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
+func0000000000000001:                   # @func0000000000000001
+	lui	a3, 1048560
+	and	a2, a2, a3
+	lui	a3, 983041
+	slli	a3, a3, 4
+	or	a1, a1, a2
+	addi	a3, a3, -1
+	zext.w	a1, a1
+	and	a0, a0, a3
+	or	a0, a0, a1
+	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 7
 	or	a1, a1, a2

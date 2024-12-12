@@ -1,4 +1,4 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000f1:                   # @func00000000000000f1
 	sext.w	a3, a1
 	sext.w	a4, a2
 	bgeu	a4, a3, .LBB0_2
@@ -6,7 +6,7 @@ func0000000000000071:                   # @func0000000000000071
 .LBB0_2:                                # %entry
 	sext.w	a0, a0
 	ret
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	sext.w	a3, a1
 	sext.w	a4, a2
 	bgeu	a4, a3, .LBB1_2

@@ -4,7 +4,7 @@
 ; opencv/optimized/stereosgbm.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = zext i8 %1 to i32
@@ -22,13 +22,13 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; lodepng/optimized/lodepng.cpp.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000b4(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = zext i8 %1 to i32
   %5 = sub nsw i32 %4, %3
   %6 = tail call i32 @llvm.abs.i32(i32 %5, i1 true)
-  %7 = icmp ult i32 %6, %0
+  %7 = icmp samesign ult i32 %6, %0
   ret i1 %7
 }
 
@@ -36,7 +36,7 @@ entry:
 ; opencv/optimized/bgfg_subcnt.cpp.ll
 ; openjdk/optimized/awt_ImagingLib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = zext i8 %1 to i32
@@ -52,20 +52,20 @@ entry:
 ; opencv/optimized/demosaicing.cpp.ll
 ; openusd/optimized/intrapred.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000b8(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = zext i8 %1 to i32
   %5 = sub nsw i32 %4, %3
   %6 = tail call i32 @llvm.abs.i32(i32 %5, i1 true)
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp samesign ugt i32 %6, %0
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000ea(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = zext i8 %1 to i32
@@ -78,13 +78,13 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/loopfilter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000055(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000b5(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = zext i8 %1 to i32
   %5 = sub nsw i32 %4, %3
   %6 = tail call i32 @llvm.abs.i32(i32 %5, i1 true)
-  %7 = icmp ule i32 %6, %0
+  %7 = icmp samesign ule i32 %6, %0
   ret i1 %7
 }
 

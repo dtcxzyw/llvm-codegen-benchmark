@@ -1,13 +1,9 @@
 
-; 33 occurrences:
+; 26 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cpython/optimized/mpdecimal.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
-; eastl/optimized/BenchmarkDeque.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
 ; freetype/optimized/pcf.c.ll
 ; linux/optimized/i915_gem_shrinker.ll
 ; linux/optimized/lbr.ll
@@ -19,9 +15,6 @@
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; mold/optimized/compress.cc.ll
-; openblas/optimized/dlauum_L_single.c.ll
-; openblas/optimized/dlauum_U_single.c.ll
-; openblas/optimized/dpotrf_U_single.c.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
@@ -41,7 +34,7 @@ entry:
   ret i64 %3
 }
 
-; 25 occurrences:
+; 27 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; diesel-rs/optimized/6cb7zukciz78xvw.ll
 ; influxdb-rs/optimized/2rfehyqstyicagph.ll
@@ -58,7 +51,6 @@ entry:
 ; mold/optimized/output-chunks.cc.S390X.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; postgres/optimized/nbtdedup.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; rust-analyzer-rs/optimized/53ntv1pfq7fnns7g.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
@@ -67,6 +59,9 @@ entry:
 ; wasmtime-rs/optimized/3csojcpnl2jjo8sc.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

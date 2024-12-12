@@ -1,11 +1,11 @@
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	leal	87(%rdi), %ecx
 	movl	%edi, %eax
 	orl	$48, %eax
 	cmpl	$10, %edi
 	cmovael	%ecx, %eax
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	leal	87(%rdi), %ecx
 	movl	%edi, %eax
 	orl	$48, %eax

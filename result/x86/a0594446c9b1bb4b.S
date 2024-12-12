@@ -1,9 +1,3 @@
-func0000000000000040:                   # @func0000000000000040
-	leaq	1(%rdx), %rcx
-	imulq	%rdi, %rcx
-	movl	%esi, %eax
-	addq	%rcx, %rax
-	retq
 func000000000000003f:                   # @func000000000000003f
 	leaq	-1(%rdx), %rcx
 	imulq	%rdi, %rcx

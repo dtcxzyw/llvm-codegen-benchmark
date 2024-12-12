@@ -9,11 +9,11 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0) #0 {
+define i1 @func000000000000008a(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %sext = add nsw i32 %1, -1
-  %2 = add i32 %sext, %0
+  %2 = add i32 %0, %sext
   %3 = icmp sgt i32 %2, 0
   ret i1 %3
 }

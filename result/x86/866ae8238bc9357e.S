@@ -1,7 +1,6 @@
-func000000000000000a:                   # @func000000000000000a
-	imulq	$200, %rdx, %rax
-	addq	%rsi, %rax
-	leaq	(%rax,%rdi,8), %rax
+func000000000000000e:                   # @func000000000000000e
+	leaq	(%rsi,%rdx), %rax
+	addq	%rdi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	leaq	(%rsi,%rdx,4), %rax

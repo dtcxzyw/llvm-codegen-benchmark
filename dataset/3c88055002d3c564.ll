@@ -1,5 +1,5 @@
 
-; 236 occurrences:
+; 242 occurrences:
 ; actix-rs/optimized/1a89q5mj3jl9opyq.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
@@ -28,6 +28,8 @@
 ; arrow/optimized/vector_selection.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; clamav/optimized/filtering.c.ll
@@ -93,19 +95,16 @@
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
 ; libquic/optimized/d1_both.c.ll
-; libquic/optimized/random.c.ll
 ; libquic/optimized/s3_srvr.c.ll
 ; libzmq/optimized/msg.cpp.ll
 ; lief/optimized/constant_time.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/ata_piix.ll
 ; linux/optimized/evgpe.ll
-; linux/optimized/evxfgpe.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fs_context.ll
 ; linux/optimized/fsopen.ll
 ; linux/optimized/hid-lg4ff.ll
-; linux/optimized/ht.ll
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/i8042.ll
 ; linux/optimized/intel_atomic_plane.ll
@@ -149,10 +148,9 @@
 ; luajit/optimized/lj_gc_dyn.ll
 ; luajit/optimized/lj_str.ll
 ; luajit/optimized/lj_str_dyn.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/ml_shared_data_context.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
@@ -217,6 +215,7 @@
 ; spike/optimized/vandn_vx.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_connected_components.c.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; velox/optimized/BitUtil.cpp.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; velox/optimized/URLFunctions.cpp.ll
@@ -236,11 +235,18 @@
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/rsa.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/4539sm9s3e94vv18ffp5lvtyk.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
+; zed-rs/optimized/8mdllj80pcyls7aec0okf6fww.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/9ld5vmlj2ufuzyru6e6aorg0l.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 1
-  %3 = and i8 %2, %0
+  %3 = and i8 %0, %2
   ret i8 %3
 }
 

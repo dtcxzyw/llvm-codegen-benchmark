@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; clamav/optimized/unicode.cpp.ll
 ; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/parser.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; openjdk/optimized/Inet4AddressImpl.ll
 ; openjdk/optimized/Inet6AddressImpl.ll
 ; raylib/optimized/rtext.c.ll

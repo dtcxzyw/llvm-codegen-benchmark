@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -30,7 +30,6 @@
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/bzlib.c.ll
@@ -47,11 +46,8 @@
 ; openexr/optimized/ImfWav.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openusd/optimized/openexr-c.c.ll
 ; spike/optimized/aes64im.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll

@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -8,7 +8,6 @@
 ; freetype/optimized/ftbase.c.ll
 ; glslang/optimized/Constant.cpp.ll
 ; linux/optimized/cistpl.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/tcp_cubic.ll

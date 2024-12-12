@@ -1,17 +1,5 @@
 
-; 2 occurrences:
-; mitsuba3/optimized/x86func.cpp.ll
-; stb/optimized/stb_connected_components.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 16
-  %3 = or disjoint i32 %2, %0
-  %4 = add nuw nsw i32 %3, 369099008
-  ret i32 %4
-}
-
-; 77 occurrences:
+; 86 occurrences:
 ; cmake/optimized/trees.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
@@ -86,6 +74,15 @@ entry:
 ; wireshark/optimized/stanag4607.c.ll
 ; wireshark/optimized/visual.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; zlib/optimized/trees.c.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; zxing/optimized/zueci.c.ll
@@ -98,7 +95,7 @@ entry:
   ret i32 %4
 }
 
-; 68 occurrences:
+; 71 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -154,12 +151,12 @@ entry:
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; php/optimized/image.ll
-; php/optimized/pcre2_compile.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/listpack.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
+; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; wireshark/optimized/packet-woww.c.ll
@@ -167,6 +164,9 @@ entry:
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
@@ -215,7 +215,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add i32 %3, 1518500249
   ret i32 %4
 }
@@ -367,7 +367,7 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; libwebp/optimized/demux.c.ll
 ; libwebp/optimized/muxread.c.ll
 ; libwebp/optimized/webp_dec.c.ll
@@ -375,13 +375,23 @@ entry:
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/itemptr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add nuw i32 %3, 12
+  ret i32 %4
+}
+
+; 1 occurrences:
+; stb/optimized/stb_connected_components.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 5
+  %3 = or disjoint i32 %0, %2
+  %4 = add nuw nsw i32 %3, 1
   ret i32 %4
 }
 
@@ -391,7 +401,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = add nuw i32 %3, 1
   ret i32 %4
 }
@@ -403,7 +413,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add i32 %3, -65537
   ret i32 %4
 }

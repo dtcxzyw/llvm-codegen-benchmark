@@ -24,14 +24,13 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libwebp/optimized/upsampling.c.ll
 ; linux/optimized/intel_color.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; recastnavigation/optimized/DebugDraw.cpp.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,10 @@
 
-; 33 occurrences:
+; 38 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/process.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/cmListCommand.cxx.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -34,7 +39,7 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

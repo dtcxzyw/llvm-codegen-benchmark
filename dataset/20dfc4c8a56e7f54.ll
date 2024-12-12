@@ -14,7 +14,6 @@
 ; linux/optimized/dvo_ch7xxx.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/host.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/synaptics.ll
@@ -49,6 +48,7 @@
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -89,9 +89,8 @@ entry:
   ret i8 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i8 %1, i8 %2) #0 {
 entry:

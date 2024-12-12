@@ -1,5 +1,5 @@
 
-; 107 occurrences:
+; 105 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -35,8 +35,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -117,26 +115,22 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; rocksdb/optimized/clock_cache.cc.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = lshr i64 %4, 32
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
-; 88 occurrences:
+; 86 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -162,8 +156,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -229,9 +221,9 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -243,9 +235,9 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -270,7 +262,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 35
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = lshr i64 %4, 46
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
@@ -284,7 +276,7 @@ entry:
   %3 = lshr exact i64 %2, 32
   %4 = mul nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

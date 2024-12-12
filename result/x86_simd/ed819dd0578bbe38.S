@@ -1,27 +1,27 @@
 .LCPI0_0:
-	.short	81                              # 0x51
-	.short	81                              # 0x51
-	.short	81                              # 0x51
-	.short	81                              # 0x51
-	.short	81                              # 0x51
-	.short	81                              # 0x51
-	.short	81                              # 0x51
-	.short	81                              # 0x51
+	.short	8194                            # 0x2002
+	.short	8194                            # 0x2002
+	.short	8194                            # 0x2002
+	.short	8194                            # 0x2002
+	.short	8194                            # 0x2002
+	.short	8194                            # 0x2002
+	.short	8194                            # 0x2002
+	.short	8194                            # 0x2002
 .LCPI0_1:
-	.short	17                              # 0x11
-	.short	17                              # 0x11
-	.short	17                              # 0x11
-	.short	17                              # 0x11
-	.short	17                              # 0x11
-	.short	17                              # 0x11
-	.short	17                              # 0x11
-	.short	17                              # 0x11
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
 .LCPI0_2:
-	.short	81                              # 0x51
+	.short	8194                            # 0x2002
 func0000000000000003:                   # @func0000000000000003
 	vptestnmd	%ymm0, %ymm0, %k1
-	vpbroadcastw	.LCPI0_2(%rip), %xmm0   # xmm0 = [81,81,81,81,81,81,81,81]
-	vmovdqu16	.LCPI0_1(%rip), %xmm0 {%k1} # xmm0 {%k1} = [17,17,17,17,17,17,17,17]
+	vpbroadcastw	.LCPI0_2(%rip), %xmm0   # xmm0 = [8194,8194,8194,8194,8194,8194,8194,8194]
+	vmovdqu16	.LCPI0_1(%rip), %xmm0 {%k1} # xmm0 {%k1} = [2,2,2,2,2,2,2,2]
 	vzeroupper
 	retq
 .LCPI1_0:

@@ -5,10 +5,10 @@
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; openblas/optimized/dtgsyl.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -18,10 +18,10 @@ entry:
 ; gromacs/optimized/slasd7.cpp.ll
 ; openblas/optimized/dlasd2.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000027(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -33,7 +33,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -44,7 +44,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -52,10 +52,10 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dlasd7.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000037(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000067(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }

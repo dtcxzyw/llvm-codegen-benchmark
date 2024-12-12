@@ -32,7 +32,7 @@
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, double %1) #0 {
+define i64 @func0000000000000021(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = and i64 %2, 9218868437227405312

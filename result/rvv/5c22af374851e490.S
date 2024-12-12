@@ -3,7 +3,7 @@ func0000000000000008:                   # @func0000000000000008
 	vfdiv.vv	v8, v8, v16
 	fli.d	fa5, 2.0
 	vmfgt.vf	v16, v8, fa5
-	vmor.mm	v0, v16, v0
+	vmor.mm	v0, v0, v16
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -17,7 +17,7 @@ func0000000000000014:                   # @func0000000000000014
 	vfdiv.vv	v8, v8, v16
 	fli.d	fa5, 1.0
 	vmfle.vf	v16, v8, fa5
-	vmor.mm	v0, v16, v0
+	vmor.mm	v0, v0, v16
 	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -31,7 +31,7 @@ func000000000000000e:                   # @func000000000000000e
 	vfdiv.vv	v8, v8, v16
 	fli.d	fa5, 1.0
 	vmfne.vf	v16, v8, fa5
-	vmor.mm	v0, v16, v0
+	vmor.mm	v0, v0, v16
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -58,5 +58,5 @@ func0000000000000018:                   # @func0000000000000018
 	vfdiv.vv	v8, v8, v16
 	fli.d	fa5, 0.75
 	vmfge.vf	v16, v8, fa5
-	vmor.mm	v0, v16, v0
+	vmor.mm	v0, v0, v16
 	ret

@@ -5,14 +5,14 @@ func000000000000000f:                   # @func000000000000000f
 	orl	$4, %eax
 	retq
 func000000000000000e:                   # @func000000000000000e
-	notb	%dl
-	movzbl	%dl, %eax
+	shll	$10, %edx
+	notb	%sil
+	movzbl	%sil, %eax
 	andl	$1, %eax
-	shll	$24, %eax
-	shll	$16, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
-	orl	$100663296, %eax                # imm = 0x6000000
+	shll	$22, %eax
+	orl	%edi, %edx
+	orl	%edx, %eax
+	orl	$2097152, %eax                  # imm = 0x200000
 	retq
 func0000000000000002:                   # @func0000000000000002
 	shll	$16, %edx
@@ -37,6 +37,14 @@ func0000000000000000:                   # @func0000000000000000
 	movl	$-2143289344, %eax              # imm = 0x80400000
 	cmovel	%ecx, %eax
 	orl	%edi, %edx
+	orl	%edx, %eax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	movl	%esi, %eax
+	andl	$1, %edx
+	shll	$12, %edx
+	shll	$9, %eax
+	orl	%edi, %eax
 	orl	%edx, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003

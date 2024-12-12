@@ -10,7 +10,7 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp ult i64 %4, 8
   ret i1 %5
 }
@@ -21,11 +21,11 @@ entry:
 ; ninja/optimized/build_test.cc.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = icmp sgt i64 %4, -1
   ret i1 %5
 }
@@ -36,12 +36,12 @@ entry:
 ; ninja/optimized/build_test.cc.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 2
-  %4 = add nsw i64 %3, %0
-  %5 = icmp ult i64 %4, 32
+  %4 = add nsw i64 %0, %3
+  %5 = icmp samesign ult i64 %4, 32
   ret i1 %5
 }
 
@@ -83,7 +83,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = add i64 %2, -64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp eq i64 %4, 1152921504606846975
   ret i1 %5
 }
@@ -116,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 12
   %3 = add i64 %2, -32768

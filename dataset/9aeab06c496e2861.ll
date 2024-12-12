@@ -24,4 +24,15 @@ entry:
   ret float %5
 }
 
+; 1 occurrences:
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; Function Attrs: nounwind
+define float @func000000000000000a(float %0, i1 %1, float %2) #0 {
+entry:
+  %3 = select i1 %1, float %2, float 0.000000e+00
+  %4 = fcmp ole float %3, %0
+  %5 = select i1 %4, float %3, float %0
+  ret float %5
+}
+
 attributes #0 = { nounwind }

@@ -1,5 +1,5 @@
 
-; 111 occurrences:
+; 114 occurrences:
 ; abc/optimized/cutPre22.c.ll
 ; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
@@ -41,6 +41,7 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/ieee_float.cpp.ll
@@ -110,6 +111,8 @@
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; yosys/optimized/extract_fa.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
@@ -215,11 +218,11 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 165 occurrences:
+; 163 occurrences:
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -268,7 +271,6 @@ entry:
 ; linux/optimized/errseq.ll
 ; linux/optimized/inet6_hashtables.ll
 ; linux/optimized/inet_hashtables.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/intel_dpio_phy.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/udp.ll
@@ -368,7 +370,6 @@ entry:
 ; wireshark/optimized/packet-bvlc.c.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-icq.c.ll
-; wireshark/optimized/packet-ieee80211-wlancap.c.ll
 ; wireshark/optimized/packet-knet.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-ssh.c.ll
@@ -439,14 +440,15 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; cpython/optimized/codeobject.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
 ; quickjs/optimized/libregexp.ll
@@ -455,7 +457,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -504,7 +506,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

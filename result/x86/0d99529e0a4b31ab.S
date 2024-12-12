@@ -10,3 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	addl	%esi, %esi
 	shrxq	%rsi, %rdi, %rax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	addl	%esi, %esi
+	shrxq	%rsi, %rdi, %rax
+	retq

@@ -4,10 +4,8 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm2, %k1
 	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
-.LCPI1_0:
-	.long	82                              # 0x52
 func0000000000000006:                   # @func0000000000000006
-	vpcmpltd	.LCPI1_0(%rip){1to4}, %xmm2, %k1
+	vpmovd2m	%xmm2, %k1
 	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
 .LCPI2_0:

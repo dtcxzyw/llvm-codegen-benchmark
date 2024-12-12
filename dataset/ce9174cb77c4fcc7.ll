@@ -1,5 +1,5 @@
 
-; 692 occurrences:
+; 690 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
@@ -31,16 +31,18 @@
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/cmd.ll
+; boost/optimized/numeric.ll
+; boost/optimized/test_stackstring.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; brotli/optimized/encode.c.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; ceres/optimized/residual_block.cc.ll
-; clamav/optimized/htmlnorm.c.ll
 ; cmake/optimized/CommandLineArguments.cxx.ll
 ; cmake/optimized/archive_match.c.ll
 ; cmake/optimized/archive_write_set_format_cpio_binary.c.ll
 ; cmake/optimized/archive_write_set_format_cpio_odc.c.ll
 ; cpython/optimized/_csv.ll
-; cpython/optimized/obmalloc.ll
 ; cpython/optimized/transpose.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_tonemap.cc.ll
@@ -53,13 +55,10 @@
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
-; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/EACallback.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestFixedVector.cpp.ll
-; eastl/optimized/TestTupleVector.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/AuxIndexStructures.cpp.ll
@@ -362,7 +361,6 @@
 ; meshoptimizer/optimized/vcacheanalyzer.cpp.ll
 ; meshoptimizer/optimized/vcacheoptimizer.cpp.ll
 ; meshoptimizer/optimized/vfetchoptimizer.cpp.ll
-; mimalloc/optimized/options.c.ll
 ; minetest/optimized/noise.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/aov.cpp.ll
@@ -443,7 +441,6 @@
 ; postgres/optimized/acl.ll
 ; proj/optimized/c_api.cpp.ll
 ; pybind11/optimized/test_buffers.cpp.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; pybind11/optimized/test_sequences_and_iterators.cpp.ll
 ; qemu/optimized/block_blkdebug.c.ll
 ; qemu/optimized/block_vmdk.c.ll
@@ -689,6 +686,7 @@
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; tokio-rs/optimized/26wlg4yx86ilo6a1.ll
+; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
@@ -700,7 +698,7 @@ entry:
   ret i64 %3
 }
 
-; 224 occurrences:
+; 222 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/kitDsd.c.ll
@@ -711,6 +709,7 @@ entry:
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/tinyxml2.cpp.ll
@@ -792,11 +791,9 @@ entry:
 ; ipopt/optimized/SensIndexPCalculator.ll
 ; ipopt/optimized/SensIndexSchurData.ll
 ; jq/optimized/parser.ll
-; libevent/optimized/http.c.ll
 ; libwebp/optimized/io_dec.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/nl80211.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
@@ -847,7 +844,6 @@ entry:
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
-; openblas/optimized/parameter.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
@@ -933,7 +929,51 @@ entry:
   ret i64 %3
 }
 
-; 244 occurrences:
+; 290 occurrences:
+; abc/optimized/abcDfs.c.ll
+; abc/optimized/abcExact.c.ll
+; abc/optimized/abcFraig.c.ll
+; abc/optimized/abcGen.c.ll
+; abc/optimized/abcIf.c.ll
+; abc/optimized/abcStrash.c.ll
+; abc/optimized/abcSweep.c.ll
+; abc/optimized/abcUtil.c.ll
+; abc/optimized/absRpm.c.ll
+; abc/optimized/acecFadds.c.ll
+; abc/optimized/amapParse.c.ll
+; abc/optimized/cbaCom.c.ll
+; abc/optimized/cbaReadBlif.c.ll
+; abc/optimized/cbaReadVer.c.ll
+; abc/optimized/cnfWrite.c.ll
+; abc/optimized/extraUtilEnum.c.ll
+; abc/optimized/giaAiger.c.ll
+; abc/optimized/giaCof.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaFrames.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaMini.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaRex.c.ll
+; abc/optimized/giaSatLE.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaSplit.c.ll
+; abc/optimized/giaStg.c.ll
+; abc/optimized/giaStoch.c.ll
+; abc/optimized/ioReadAiger.c.ll
+; abc/optimized/ioReadBaf.c.ll
+; abc/optimized/ioReadBlif.c.ll
+; abc/optimized/ioaReadAig.c.ll
+; abc/optimized/ivyDsd.c.ll
+; abc/optimized/mioParse.c.ll
+; abc/optimized/pdrInv.c.ll
+; abc/optimized/satProof.c.ll
+; abc/optimized/sclSize.c.ll
+; abc/optimized/sfmDec.c.ll
+; abc/optimized/sswRarity.c.ll
+; abc/optimized/utilBridge.c.ll
+; abc/optimized/utilNam.c.ll
+; abc/optimized/verFormula.c.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
@@ -998,7 +1038,6 @@ entry:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; graphviz/optimized/csolve_VPSC.cpp.ll
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
-; gromacs/optimized/parser.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/goughcompile_accel.cpp.ll
 ; icu/optimized/double-conversion-string-to-double.ll
@@ -1152,6 +1191,9 @@ entry:
 ; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; turborepo-rs/optimized/25oh6shdavuruchclucpqksw7.ll
+; turborepo-rs/optimized/397adzofsg1m4vpnoty9f4olk.ll
+; turborepo-rs/optimized/9by3g1opovplsencotx7u8qhp.ll
 ; wireshark/optimized/packet-frame.c.ll
 ; z3/optimized/aig_tactic.cpp.ll
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
@@ -1186,7 +1228,7 @@ entry:
   ret i64 %3
 }
 
-; 365 occurrences:
+; 373 occurrences:
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_material_test.cc.ll
 ; arrow/optimized/bridge.cc.ll
@@ -1197,6 +1239,13 @@ entry:
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -1546,12 +1595,13 @@ entry:
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
-; wasmtime-rs/optimized/1zz7jsxv168dc7km.ll
+; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
-; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
-; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:

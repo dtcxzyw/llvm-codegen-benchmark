@@ -8,12 +8,11 @@ func0000000000000004:                   # @func0000000000000004
 	sltiu	a0, a0, 2
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a1, a1, 1
-	negw	a0, a0
-	addi	a1, a1, -1
+	andi	a0, a0, 255
+	slli	a1, a1, 63
+	srai	a1, a1, 63
 	ori	a1, a1, 1
 	andi	a1, a1, 255
-	andi	a0, a0, 255
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

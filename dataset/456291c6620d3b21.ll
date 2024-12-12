@@ -1,5 +1,6 @@
 
-; 25 occurrences:
+; 26 occurrences:
+; boost/optimized/alloc_lib.ll
 ; coreutils-rs/optimized/1aqq6ooh2lp9lqic.ll
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll

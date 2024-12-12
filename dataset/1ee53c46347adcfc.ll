@@ -11,7 +11,6 @@
 ; linux/optimized/aspm.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/vlv_dsi_pll.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/CGCUDANV.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
@@ -21,13 +20,14 @@
 ; llvm/optimized/Globals.cpp.ll
 ; llvm/optimized/IRSymtab.cpp.ll
 ; llvm/optimized/LTOModule.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/grfmt_png.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
@@ -60,10 +60,10 @@ entry:
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 248
-  %3 = icmp ult i32 %2, 24
+  %3 = icmp samesign ult i32 %2, 24
   %4 = select i1 %3, i32 3, i32 %0
   ret i32 %4
 }

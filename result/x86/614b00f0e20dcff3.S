@@ -1,37 +1,37 @@
-func00000000000003b1:                   # @func00000000000003b1
+func0000000000000761:                   # @func0000000000000761
 	shll	$8, %edx
 	leal	-1(%rdx,%rsi), %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000003a1:                   # @func00000000000003a1
+func0000000000000741:                   # @func0000000000000741
 	shll	$8, %edx
 	leal	-1(%rdx,%rsi), %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000003f4:                   # @func00000000000003f4
+func00000000000007e4:                   # @func00000000000007e4
 	shll	$8, %edx
 	leal	4(%rdx,%rsi), %eax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func00000000000003f1:                   # @func00000000000003f1
+func00000000000007e1:                   # @func00000000000007e1
 	shll	$8, %edx
 	leal	1(%rdx,%rsi), %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000002c4:                   # @func00000000000002c4
+func0000000000000584:                   # @func0000000000000584
 	shll	$24, %edx
-	leal	12(%rdx,%rsi), %eax
-	cmpq	%rdi, %rax
-	seta	%al
+	leal	12(%rsi,%rdx), %eax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	shll	$16, %edx
 	orl	%esi, %edx
 	incl	%edx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq

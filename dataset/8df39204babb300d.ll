@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; gromacs/optimized/gmx_h2order.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/intel_display_irq.ll
 ; llvm/optimized/APInt.cpp.ll

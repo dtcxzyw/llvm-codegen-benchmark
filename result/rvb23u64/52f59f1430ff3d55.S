@@ -1,9 +1,6 @@
-func0000000000000241:                   # @func0000000000000241
+func0000000000000c81:                   # @func0000000000000c81
 	sext.w	a1, a1
-	addi	a2, a2, 28
 	sltiu	a1, a1, 12
-	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
 	seqz	a0, a0
+	andn	a0, a0, a1
 	ret

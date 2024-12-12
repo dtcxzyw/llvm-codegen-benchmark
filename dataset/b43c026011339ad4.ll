@@ -1,10 +1,11 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; flac/optimized/decode.c.ll
 ; hwloc/optimized/hwloc-bind.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; lief/optimized/rsa.c.ll
+; lvgl/optimized/lv_draw_sw_border.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; openblas/optimized/dgesvd.c.ll

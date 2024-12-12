@@ -2,9 +2,9 @@
 ; 1 occurrences:
 ; openjdk/optimized/filemap.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i1 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = icmp sgt i64 %5, 1
@@ -17,9 +17,9 @@ entry:
 ; meshlab/optimized/ofbx.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000186(i1 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = icmp slt i64 %5, 8190
@@ -43,9 +43,9 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/persistence_yml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000188(i1 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = icmp ugt i64 %5, 19

@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; llvm/optimized/RegisterCoalescer.cpp.ll
+; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
@@ -8,11 +7,11 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = or i32 %3, %1
-  %5 = icmp uge i32 %4, %0
+  %5 = icmp samesign uge i32 %4, %0
   ret i1 %5
 }
 
@@ -28,22 +27,33 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
-; 23 occurrences:
+; 7 occurrences:
 ; freetype/optimized/pfr.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-static.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/zip.c.ll
 ; linux/optimized/timer.ll
 ; linux/optimized/vt.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
+; qemu/optimized/hw_usb_hcd-ohci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 4095
+  %4 = or disjoint i32 %1, %3
+  %5 = icmp ugt i32 %4, %0
+  ret i1 %5
+}
+
+; 16 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-font.ll
@@ -54,19 +64,18 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
-; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/k12.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 4095
+  %3 = and i32 %2, 32512
   %4 = or disjoint i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 
-; 21 occurrences:
+; 18 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/bzlib.c.ll
@@ -77,9 +86,6 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; icu/optimized/normalizer2impl.ll
-; icu/optimized/ucptrie.ll
-; linux/optimized/insn-eval.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -89,7 +95,7 @@ entry:
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/EvalCtx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3840
   %4 = or disjoint i32 %3, %1
@@ -107,7 +113,7 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; openjdk/optimized/jdhuff.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = or disjoint i32 %3, %1
@@ -134,7 +140,7 @@ entry:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2080768
   %4 = or disjoint i32 %3, %1
@@ -157,7 +163,7 @@ entry:
 ; velox/optimized/TryExpr.cpp.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -64
   %4 = or disjoint i32 %3, %1
@@ -169,7 +175,7 @@ entry:
 ; abc/optimized/cecSolveG.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = or disjoint i32 %3, %1
@@ -180,10 +186,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaPat.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
@@ -219,7 +225,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32640
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
@@ -256,7 +262,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32640
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -279,11 +285,35 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; llvm/optimized/RegisterCoalescer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 3
+  %4 = or i32 %3, %1
+  %5 = icmp uge i32 %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; icu/optimized/normalizer2impl.ll
+; icu/optimized/ucptrie.ll
+; linux/optimized/insn-eval.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 7
+  %4 = or disjoint i32 %1, %3
+  %5 = icmp samesign ult i32 %4, %0
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; cpython/optimized/_codecs_iso2022.ll
 ; cpython/optimized/_codecs_jp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = or disjoint i32 %3, %1

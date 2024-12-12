@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	16,3
 .LCPI1_2:
 	.byte	3                               # 0x3
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpbroadcastq	.LCPI1_0(%rip), %xmm2   # xmm2 = [0,0,0,0,128,64,32,16,0,0,0,0,128,64,32,16]
 	vgf2p8affineqb	$0, %xmm2, %xmm1, %xmm1
 	vpbroadcastb	.LCPI1_2(%rip), %xmm3   # xmm3 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
@@ -42,7 +42,7 @@ func0000000000000008:                   # @func0000000000000008
 	.zero	16,3
 .LCPI2_2:
 	.byte	3                               # 0x3
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	vpbroadcastq	.LCPI2_0(%rip), %xmm2   # xmm2 = [0,0,0,128,64,32,16,8,0,0,0,128,64,32,16,8]
 	vgf2p8affineqb	$0, %xmm2, %xmm1, %xmm1
 	vpbroadcastb	.LCPI2_2(%rip), %xmm3   # xmm3 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]

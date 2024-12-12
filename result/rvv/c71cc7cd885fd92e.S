@@ -20,7 +20,7 @@ func0000000000000004:                   # @func0000000000000004
 	vfmerge.vfm	v16, v16, fa5, v0
 	vmv1r.v	v0, v24
 	vmerge.vim	v16, v16, 0, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	ret
 .LCPI2_0:
 	.quad	0x4059000000000000              # double 100
@@ -37,5 +37,5 @@ func000000000000000c:                   # @func000000000000000c
 	vfmerge.vfm	v16, v16, fa5, v0
 	vmv1r.v	v0, v24
 	vfmerge.vfm	v16, v16, fa4, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	ret

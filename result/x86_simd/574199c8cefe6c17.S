@@ -24,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	vpmovqd	%ymm1, %xmm1
 	vpmovzxbd	%xmm0, %xmm0            # xmm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
 	vpcmpnleud	%xmm1, %xmm0, %k0

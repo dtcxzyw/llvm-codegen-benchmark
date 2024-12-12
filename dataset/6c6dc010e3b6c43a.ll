@@ -5,7 +5,7 @@
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, -9223372036854775808
   %3 = icmp eq i64 %1, 0
@@ -21,7 +21,7 @@ entry:
 ; openusd/optimized/strtod.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000043(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, 9007199254740992
   %3 = icmp eq i64 %1, 0

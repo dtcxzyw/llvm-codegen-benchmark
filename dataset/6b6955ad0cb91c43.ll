@@ -9,7 +9,7 @@
 ; postgres/optimized/createplan.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq i32 %0, 0

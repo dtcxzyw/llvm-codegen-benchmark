@@ -18,7 +18,7 @@
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add i32 %3, 1
@@ -36,7 +36,7 @@ entry:
 ; ncnn/optimized/pooling_x86_avx512.cpp.ll
 ; ncnn/optimized/pooling_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add nsw i32 %3, 1
@@ -57,7 +57,7 @@ entry:
 ; ncnn/optimized/pooling_x86_fma.cpp.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add nsw i32 %3, 1
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add i32 %3, 6

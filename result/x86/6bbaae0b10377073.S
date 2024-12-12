@@ -18,6 +18,11 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	cmovlel	%edi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpl	%edi, %esi
+	cmovael	%edi, %eax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	cmpl	%edi, %esi

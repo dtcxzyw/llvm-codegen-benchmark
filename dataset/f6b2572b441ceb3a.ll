@@ -24,17 +24,17 @@
 ; ruby/optimized/hash.ll
 ; ruby/optimized/unicode.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 15
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = getelementptr [3 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
-; 59 occurrences:
+; 82 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/covCore.c.ll
@@ -57,12 +57,35 @@ entry:
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; libwebp/optimized/histogram_enc.c.ll
+; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/BlockFrequencyInfo.cpp.ll
+; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; llvm/optimized/CodeGenRegisters.cpp.ll
+; llvm/optimized/HashTable.cpp.ll
+; llvm/optimized/InjectedSourceStream.cpp.ll
+; llvm/optimized/LiveVariables.cpp.ll
+; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
+; llvm/optimized/MachineUniformityAnalysis.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/NamedStreamMap.cpp.ll
+; llvm/optimized/NativeEnumInjectedSources.cpp.ll
+; llvm/optimized/NewGVN.cpp.ll
+; llvm/optimized/PDBFileBuilder.cpp.ll
+; llvm/optimized/PHIElimination.cpp.ll
+; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
+; llvm/optimized/UniformityAnalysis.cpp.ll
+; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; lua/optimized/lvm.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/OptimizeDeadStore.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
@@ -95,49 +118,13 @@ entry:
 ; spike/optimized/dummy_rocc.ll
 ; z3/optimized/nnf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 40
-  %6 = getelementptr nusw [64 x i8], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 24 occurrences:
-; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
-; llvm/optimized/BlockFrequencyInfo.cpp.ll
-; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
-; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/CodeGenRegisters.cpp.ll
-; llvm/optimized/HashTable.cpp.ll
-; llvm/optimized/InjectedSourceStream.cpp.ll
-; llvm/optimized/LiveVariables.cpp.ll
-; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
-; llvm/optimized/MachineUniformityAnalysis.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
-; llvm/optimized/NamedStreamMap.cpp.ll
-; llvm/optimized/NativeEnumInjectedSources.cpp.ll
-; llvm/optimized/NewGVN.cpp.ll
-; llvm/optimized/PDBFileBuilder.cpp.ll
-; llvm/optimized/PHIElimination.cpp.ll
-; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
-; llvm/optimized/UniformityAnalysis.cpp.ll
-; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 6
-  %3 = and i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %6 = getelementptr nusw [2 x i64], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 40
+  %6 = getelementptr nusw nuw [64 x i8], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

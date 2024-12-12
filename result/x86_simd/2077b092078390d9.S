@@ -99,27 +99,3 @@ func000000000000002f:                   # @func000000000000002f
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI7_0:
-	.byte	239                             # 0xef
-	.byte	239                             # 0xef
-	.byte	239                             # 0xef
-	.byte	239                             # 0xef
-	.byte	239                             # 0xef
-	.byte	239                             # 0xef
-	.byte	239                             # 0xef
-	.byte	239                             # 0xef
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-func0000000000000100:                   # @func0000000000000100
-	vpcmpnleub	.LCPI7_0(%rip), %xmm1, %k0
-	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	retq

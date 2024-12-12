@@ -1,10 +1,12 @@
 
-; 20 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/flag_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/uncore.ll
@@ -25,29 +27,29 @@ define i1 @func0000000000000001(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc i64 %2 to i8
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; ropey-rs/optimized/2p9nf7n6i9ycxebu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = trunc nuw i64 %2 to i8
-  %4 = icmp ugt i8 %3, %0
+  %4 = icmp ult i8 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; ropey-rs/optimized/2p9nf7n6i9ycxebu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = trunc nuw i64 %2 to i8
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp ugt i8 %0, %3
   ret i1 %4
 }
 
@@ -60,7 +62,7 @@ define i1 @func000000000000000c(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 16
   %3 = trunc i64 %2 to i8
-  %4 = icmp ne i8 %3, %0
+  %4 = icmp ne i8 %0, %3
   ret i1 %4
 }
 
@@ -73,7 +75,7 @@ define i1 @func0000000000000008(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc i64 %2 to i8
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp ugt i8 %0, %3
   ret i1 %4
 }
 
@@ -85,18 +87,18 @@ define i1 @func0000000000000004(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
   %3 = trunc i64 %2 to i8
-  %4 = icmp ugt i8 %3, %0
+  %4 = icmp ult i8 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 56
   %3 = trunc nuw i64 %2 to i8
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 

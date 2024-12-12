@@ -14,6 +14,12 @@ func0000000000000002:                   # @func0000000000000002
 	shlq	$8, %rax
 	leaq	16(%rdi,%rax), %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	shlq	$16, %rsi
+	sarq	$16, %rsi
+	shlq	$4, %rsi
+	leaq	14(%rdi,%rsi), %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	shrq	%rsi
 	movslq	%esi, %rax

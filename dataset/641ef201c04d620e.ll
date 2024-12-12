@@ -10,7 +10,8 @@ entry:
   ret i32 %4
 }
 
-; 174 occurrences:
+; 175 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll

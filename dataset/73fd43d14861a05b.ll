@@ -8,12 +8,12 @@
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = or disjoint i64 %3, 2
   %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -56,7 +56,7 @@ define ptr @func0000000000000072(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -89,7 +89,7 @@ define ptr @func0000000000000032(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = or disjoint i64 %3, 1
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -101,7 +101,7 @@ define ptr @func0000000000000070(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -113,12 +113,12 @@ entry:
 ; ncnn/optimized/flatten_x86_fma.cpp.ll
 ; ncnn/optimized/reshape_x86.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = or disjoint i64 %3, 1
   %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 

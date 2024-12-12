@@ -14,7 +14,7 @@ func0000000000000004:                   # @func0000000000000004
 	setae	%cl
 	leal	3(%rcx,%rcx,2), %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movslq	%esi, %rax
 	imulq	%rdi, %rax
 	sarq	$63, %rax

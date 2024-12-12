@@ -1,7 +1,8 @@
 func000000000000000c:                   # @func000000000000000c
-	andl	$1, %edi
-	leaq	1(%rdi,%rdi), %rcx
-	testl	$8192, %esi                     # imm = 0x2000
+	shrl	$12, %esi
+	andl	$2, %esi
+	leaq	1(%rsi), %rcx
+	testb	$1, %dil
 	movl	$1, %eax
 	cmovneq	%rcx, %rax
 	retq

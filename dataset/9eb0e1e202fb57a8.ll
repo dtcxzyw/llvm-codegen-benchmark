@@ -1,12 +1,14 @@
 
-; 22 occurrences:
+; 26 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; arrow/optimized/UriFile.c.ll
+; boost/optimized/approximately_equals.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
+; graphviz/optimized/input.c.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
@@ -22,6 +24,8 @@
 ; spike/optimized/triggers.ll
 ; tokio-rs/optimized/2z7s1dgkckhh5yft.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0) #0 {
 entry:

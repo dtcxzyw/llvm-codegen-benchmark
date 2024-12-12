@@ -4,7 +4,7 @@
 ; php/optimized/ir_emit.ll
 ; redis/optimized/expire.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0) #0 {
+define i1 @func00000000000000ac(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, -3
   ret i1 %1
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/jsonfuncs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0) #0 {
+define i1 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = mul nsw i64 %1, 104
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/spell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0) #0 {
+define i1 @func00000000000000a8(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = mul nsw i64 %1, 24

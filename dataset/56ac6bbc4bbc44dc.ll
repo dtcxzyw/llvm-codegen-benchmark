@@ -13,14 +13,13 @@ entry:
   ret i64 %.neg
 }
 
-; 3 occurrences:
-; abseil-cpp/optimized/str_cat_test.cc.ll
+; 2 occurrences:
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; php/optimized/parse_date.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, ptr %1) #0 {
+define i64 @func0000000000000031(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %0 to i64
   %.neg = sub i64 %4, %3
@@ -28,9 +27,10 @@ entry:
   ret i64 %5
 }
 
-; 64 occurrences:
+; 65 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
-; arrow/optimized/decimal.cc.ll
+; boost/optimized/console_buffer.ll
+; boost/optimized/static_string.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/IR.cpp.ll
@@ -97,6 +97,30 @@ entry:
 define i64 @func0000000000000020(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %0 to i64
+  %.neg = sub i64 %4, %3
+  ret i64 %.neg
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/str_cat_test.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000021(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %0 to i64
+  %.neg = sub i64 %4, %3
+  ret i64 %.neg
+}
+
+; 1 occurrences:
+; arrow/optimized/decimal.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 11
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %0 to i64
   %.neg = sub i64 %4, %3

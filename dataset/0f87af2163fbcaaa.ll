@@ -1,9 +1,10 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; hermes/optimized/g_fmt.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libwebp/optimized/analysis_enc.c.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind

@@ -20,7 +20,7 @@
 func0000000000000011:                   # @func0000000000000011
 	vpcmpltub	.LCPI0_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [4294967280,4294967280,4294967280,4294967280]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004

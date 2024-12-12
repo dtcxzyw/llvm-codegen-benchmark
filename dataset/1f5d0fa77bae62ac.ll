@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
 ; cmake/optimized/nghttp2_stream.c.ll
 ; cmake/optimized/sha3.c.ll
 ; linux/optimized/ialloc.ll
 ; nghttp2/optimized/nghttp2_stream.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -13,7 +13,7 @@ func0000000000000001:                   // @func0000000000000001
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
 	mov	w8, #12                         // =0xc
 	smaddl	x8, w2, w8, x1
@@ -21,7 +21,7 @@ func0000000000000021:                   // @func0000000000000021
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000002c:                   // @func000000000000002c
+func000000000000004c:                   // @func000000000000004c
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	sxtw	x8, w2
@@ -30,7 +30,7 @@ func000000000000002c:                   // @func000000000000002c
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	sxtw	x8, w2

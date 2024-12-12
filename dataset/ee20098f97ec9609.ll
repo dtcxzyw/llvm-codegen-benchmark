@@ -1,5 +1,5 @@
 
-; 391 occurrences:
+; 396 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -26,6 +26,9 @@
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
@@ -256,7 +259,6 @@
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/system_memory.c.ll
 ; qemu/optimized/system_physmem.c.ll
-; qemu/optimized/target_riscv_m128_helper.c.ll
 ; qemu/optimized/target_riscv_op_helper.c.ll
 ; qemu/optimized/util_host-utils.c.ll
 ; quickjs/optimized/libbf.ll
@@ -391,6 +393,9 @@
 ; wasmtime-rs/optimized/4nuxwfk1fz1jsu89.ll
 ; wasmtime-rs/optimized/55kotg5r2nkrpa1d.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/5c6qu0nt7rwrjz6em8cry1wl2.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000005(i128 %0, i64 %1) #0 {
 entry:
@@ -400,10 +405,11 @@ entry:
   ret i128 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -481,7 +487,7 @@ define i128 @func0000000000000001(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = shl i128 %2, 65
-  %4 = or disjoint i128 %3, %0
+  %4 = or disjoint i128 %0, %3
   ret i128 %4
 }
 
@@ -492,7 +498,7 @@ define i128 @func0000000000000004(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = shl nuw i128 %2, 64
-  %4 = or i128 %3, %0
+  %4 = or i128 %0, %3
   ret i128 %4
 }
 
@@ -503,7 +509,7 @@ define i128 @func000000000000000d(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
   %3 = shl nuw i128 %2, 65
-  %4 = or disjoint i128 %3, %0
+  %4 = or disjoint i128 %0, %3
   ret i128 %4
 }
 

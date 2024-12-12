@@ -29,9 +29,7 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
+; 1 occurrences:
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
@@ -42,11 +40,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; postgres/optimized/fsmpage.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {

@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 68 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -66,6 +66,8 @@
 ; wireshark/optimized/frame_data_sequence.c.ll
 ; z3/optimized/array_solver.cpp.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:

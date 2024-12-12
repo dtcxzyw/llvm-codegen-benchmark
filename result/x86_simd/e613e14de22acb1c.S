@@ -6,3 +6,28 @@ func0000000000000015:                   # @func0000000000000015
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
 	retq
+.LCPI1_0:
+	.short	100                             # 0x64
+	.short	0                               # 0x0
+	.short	100                             # 0x64
+	.short	0                               # 0x0
+	.short	100                             # 0x64
+	.short	0                               # 0x0
+	.short	100                             # 0x64
+	.short	0                               # 0x0
+	.short	100                             # 0x64
+	.short	0                               # 0x0
+	.short	100                             # 0x64
+	.short	0                               # 0x0
+	.short	100                             # 0x64
+	.short	0                               # 0x0
+	.short	100                             # 0x64
+	.short	0                               # 0x0
+.LCPI1_1:
+	.short	100                             # 0x64
+	.short	0                               # 0x0
+func0000000000000010:                   # @func0000000000000010
+	vpmovsxbd	%xmm2, %ymm2
+	vpdpwssd	.LCPI1_1(%rip){1to8}, %ymm2, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq

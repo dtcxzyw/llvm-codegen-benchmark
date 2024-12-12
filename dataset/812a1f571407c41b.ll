@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/static_string.ll
 ; cmake/optimized/escape.c.ll
 ; cmake/optimized/ftplistparser.c.ll
 ; cmake/optimized/urlapi.c.ll

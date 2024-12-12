@@ -1,4 +1,7 @@
 
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948" = type { i8, [7 x i8] }
+
 ; 8 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/amaze.cc.ll
@@ -19,12 +22,44 @@ entry:
   ret ptr %7
 }
 
-; 112 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; libwebp/optimized/webp_enc.c.ll
+; node/optimized/libnode.node_http2.ll
+; opencv/optimized/convolution.cpp.ll
+; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 63
+  %4 = and i64 %3, -64
+  %5 = inttoptr i64 %4 to ptr
+  %6 = getelementptr nusw i8, ptr %5, i64 %1
+  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 2 occurrences:
 ; hermes/optimized/Interpreter.cpp.ll
+; llvm/optimized/TypePrinter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 3
+  %4 = and i64 %3, -4
+  %5 = inttoptr i64 %4 to ptr
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %1
+  %7 = getelementptr nusw i32, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 99 occurrences:
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/scratch.c.ll
-; libwebp/optimized/webp_enc.c.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -118,28 +153,18 @@ entry:
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; node/optimized/libnode.node_http2.ll
 ; opencv/optimized/arithm.cpp.ll
-; opencv/optimized/bilateral_filter.dispatch.cpp.ll
-; opencv/optimized/convolution.cpp.ll
-; opencv/optimized/lapack.cpp.ll
-; opencv/optimized/lkpyramid.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
-; opencv/optimized/pyramids.cpp.ll
-; opencv/optimized/rlof_localflow.cpp.ll
-; opencv/optimized/stackblur.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 63
-  %4 = and i64 %3, -64
+  %3 = add i64 %2, 7
+  %4 = and i64 %3, -8
   %5 = inttoptr i64 %4 to ptr
-  %6 = getelementptr nusw i8, ptr %5, i64 %1
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949", ptr %5, i64 %1
+  %7 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948", ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -155,6 +180,27 @@ entry:
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr nusw i8, ptr %5, i64 %1
   %7 = getelementptr i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 9 occurrences:
+; opencv/optimized/bilateral_filter.dispatch.cpp.ll
+; opencv/optimized/convolution.cpp.ll
+; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; opencv/optimized/stackblur.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 3
+  %4 = and i64 %3, -4
+  %5 = inttoptr i64 %4 to ptr
+  %6 = getelementptr nusw i32, ptr %5, i64 %1
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %0
   ret ptr %7
 }
 

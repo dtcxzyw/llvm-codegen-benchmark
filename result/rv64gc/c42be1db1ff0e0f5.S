@@ -1,4 +1,4 @@
-func000000000000021c:                   # @func000000000000021c
+func0000000000000c2c:                   # @func0000000000000c2c
 	addi	a2, a0, 24
 	xor	a1, a1, a2
 	seqz	a1, a1

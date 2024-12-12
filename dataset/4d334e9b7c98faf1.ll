@@ -1,5 +1,5 @@
 
-; 97 occurrences:
+; 96 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
@@ -63,7 +63,6 @@
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/dyn_ack.cpp.ll
@@ -106,14 +105,15 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; hermes/optimized/StorageProvider.cpp.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; libquic/optimized/poly1305_vec.c.ll
-; linux/optimized/capability.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/p4.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:

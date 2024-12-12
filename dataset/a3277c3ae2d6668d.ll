@@ -19,7 +19,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 234881024, i32 352321536
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -40,7 +40,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2, i32 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -50,7 +50,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 4, i32 0
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   ret i32 %3
 }
 

@@ -1,19 +1,15 @@
 
-; 52 occurrences:
+; 47 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/unicodeobject.ll
 ; hermes/optimized/zip.c.ll
 ; linux/optimized/consolemap.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/ioam6.ll
 ; linux/optimized/kbuf.ll
 ; linux/optimized/nfnetlink.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/nls_ascii.ll
 ; linux/optimized/nls_base.ll
-; linux/optimized/nls_cp437.ll
-; linux/optimized/nls_iso8859-1.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_offload.ll
@@ -45,7 +41,6 @@
 ; postgres/optimized/uuid.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; wireshark/optimized/packet-scsi.c.ll
@@ -245,11 +240,11 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; yosys/optimized/fastlz.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -259,11 +254,11 @@ entry:
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -4097
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   ret ptr %4
 }
 

@@ -16,7 +16,7 @@ entry:
   ret i64 %5
 }
 
-; 579 occurrences:
+; 581 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
@@ -43,6 +43,9 @@ entry:
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/localization_backend.ll
+; boost/optimized/partition.ll
+; boost/optimized/range.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -62,6 +65,7 @@ entry:
 ; ceres/optimized/inner_product_computer.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
+; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmUVProcessChain.cxx.ll
 ; cmake/optimized/protocol_events.cpp.ll
 ; cmake/optimized/protocol_requests.cpp.ll
@@ -222,6 +226,7 @@ entry:
 ; llvm/optimized/DFAJumpThreading.cpp.ll
 ; llvm/optimized/DependenceGraphBuilder.cpp.ll
 ; llvm/optimized/GlobalMerge.cpp.ll
+; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
@@ -230,6 +235,7 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; llvm/optimized/StandardInstrumentations.cpp.ll
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
@@ -249,7 +255,6 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -345,6 +350,7 @@ entry:
 ; openspiel/optimized/efg_game.cc.ll
 ; openspiel/optimized/external_sampling_mccfr.cc.ll
 ; openspiel/optimized/fsicfr.cc.ll
+; openspiel/optimized/kuhn_poker.cc.ll
 ; openspiel/optimized/markov_soccer.cc.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; openspiel/optimized/oh_hell.cc.ll
@@ -382,7 +388,6 @@ entry:
 ; php/optimized/zend_operators.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/aset.ll
-; postgres/optimized/backend_progress.ll
 ; postgres/optimized/hashpage.ll
 ; postgres/optimized/lock.ll
 ; postgres/optimized/procsignal.ll
@@ -406,7 +411,6 @@ entry:
 ; quantlib/optimized/exerciseadapter.ll
 ; quantlib/optimized/fdmsimpleprocess1dmesher.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dcapfloorengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/himalayaoption.ll
@@ -580,7 +584,6 @@ entry:
 ; yosys/optimized/xilinx_dsp.ll
 ; yosys/optimized/xilinx_srl.ll
 ; yosys/optimized/xprop.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll
@@ -593,7 +596,6 @@ entry:
 ; z3/optimized/substitution_tree.cpp.ll
 ; z3/optimized/symmetry_reduce_tactic.cpp.ll
 ; z3/optimized/theory_recfun.cpp.ll
-; z3/optimized/watch_list.cpp.ll
 ; zxing/optimized/GenericGFPoly.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -606,7 +608,8 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
+; casadi/optimized/integration_tools.cpp.ll
 ; clamav/optimized/upack.c.ll
 ; flac/optimized/metadata.cpp.ll
 ; git/optimized/fast-import.ll

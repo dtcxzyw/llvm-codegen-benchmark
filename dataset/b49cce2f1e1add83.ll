@@ -9,7 +9,7 @@
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 9223372036854775807, %1
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 
@@ -19,7 +19,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 9223372036854775807, %1
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   ret i1 %3
 }
 
@@ -103,7 +103,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 9223372036854775807, %1
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 

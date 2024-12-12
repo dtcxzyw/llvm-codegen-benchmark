@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; libquic/optimized/random.c.ll
+; 4 occurrences:
 ; lief/optimized/ssl_msg.c.ll
 ; openssl/optimized/libcrypto-lib-bn_rand.ll
 ; openssl/optimized/libcrypto-shlib-bn_rand.ll
@@ -11,7 +10,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = shl nuw nsw i32 3, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -23,7 +22,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = shl nuw i32 1, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -35,7 +34,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = shl nuw i32 1, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -47,7 +46,7 @@ entry:
   %2 = add i32 %1, 8
   %3 = shl nsw i32 -1, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

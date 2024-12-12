@@ -34,3 +34,9 @@ func000000000000000a:                   // @func000000000000000a
 	csel	x0, x0, xzr, gt
 	ret
                                         // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	cmp	w1, #2048
+	csel	x0, x0, xzr, lo
+	ret
+                                        // -- End function

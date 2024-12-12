@@ -7,7 +7,7 @@
 ; openusd/optimized/openexr-c.c.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0) #0 {
+define i1 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 4
   %2 = shl nsw i32 %1, 2

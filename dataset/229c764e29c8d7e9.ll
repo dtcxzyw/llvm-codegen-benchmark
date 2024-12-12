@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -12,7 +12,6 @@
 ; oniguruma/optimized/regparse.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr4.c.ll
-; opencv/optimized/cornersubpix.cpp.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; ruby/optimized/regparse.ll

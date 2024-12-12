@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-fp_mux.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i16 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
   %4 = sub i32 %0, %3
@@ -43,7 +43,7 @@ entry:
 ; wireshark/optimized/packet-dvb-ait.c.ll
 ; wireshark/optimized/packet-dvbci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i16 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 3
   %4 = sub i32 %0, %3
@@ -58,7 +58,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   %4 = zext i16 %1 to i32
   %5 = icmp sgt i32 %3, %4
   ret i1 %5
@@ -94,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i16 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 3
   %4 = sub i32 %0, %3

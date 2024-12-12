@@ -1,4 +1,4 @@
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	addl	$2, %edx
 	imull	%esi, %edx
 	movslq	%edx, %rax
@@ -6,7 +6,7 @@ func0000000000000151:                   # @func0000000000000151
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000256:                   # @func0000000000000256
+func00000000000004a6:                   # @func00000000000004a6
 	incl	%edx
 	imull	%esi, %edx
 	movslq	%edx, %rax
@@ -14,7 +14,31 @@ func0000000000000256:                   # @func0000000000000256
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000251:                   # @func0000000000000251
+func00000000000006e6:                   # @func00000000000006e6
+	incl	%edx
+	imull	%esi, %edx
+	movslq	%edx, %rax
+	incq	%rdi
+	cmpq	%rax, %rdi
+	setl	%al
+	retq
+func00000000000002e6:                   # @func00000000000002e6
+	incl	%edx
+	imull	%esi, %edx
+	movslq	%edx, %rax
+	incq	%rdi
+	cmpq	%rax, %rdi
+	setl	%al
+	retq
+func00000000000002a6:                   # @func00000000000002a6
+	incl	%edx
+	imull	%esi, %edx
+	movslq	%edx, %rax
+	incq	%rdi
+	cmpq	%rax, %rdi
+	setl	%al
+	retq
+func00000000000006c1:                   # @func00000000000006c1
 	incl	%edx
 	imull	%esi, %edx
 	movslq	%edx, %rax
@@ -22,63 +46,7 @@ func0000000000000251:                   # @func0000000000000251
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000356:                   # @func0000000000000356
-	incl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	incq	%rdi
-	cmpq	%rax, %rdi
-	setl	%al
-	retq
-func0000000000000351:                   # @func0000000000000351
-	incl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	incq	%rdi
-	cmpq	%rax, %rdi
-	sete	%al
-	retq
-func0000000000000171:                   # @func0000000000000171
-	incl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	incq	%rdi
-	cmpq	%rax, %rdi
-	sete	%al
-	retq
-func0000000000000156:                   # @func0000000000000156
-	incl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	incq	%rdi
-	cmpq	%rax, %rdi
-	setl	%al
-	retq
-func0000000000000361:                   # @func0000000000000361
-	incl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	incq	%rdi
-	cmpq	%rax, %rdi
-	sete	%al
-	retq
-func0000000000000376:                   # @func0000000000000376
-	incl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	incq	%rdi
-	cmpq	%rax, %rdi
-	setl	%al
-	retq
-func0000000000000176:                   # @func0000000000000176
-	decl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	incq	%rdi
-	cmpq	%rax, %rdi
-	setl	%al
-	retq
-func0000000000000311:                   # @func0000000000000311
+func0000000000000621:                   # @func0000000000000621
 	incl	%edx
 	imull	%esi, %edx
 	movslq	%edx, %rax

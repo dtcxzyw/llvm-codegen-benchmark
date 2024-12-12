@@ -1,8 +1,9 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/udp.ll
 ; linux/optimized/usblp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll

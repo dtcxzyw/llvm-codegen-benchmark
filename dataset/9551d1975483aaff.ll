@@ -3,10 +3,10 @@
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a9(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   %5 = icmp ule i64 %0, %1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -16,10 +16,10 @@ entry:
 ; gromacs/optimized/pbcmethods.cpp.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = icmp slt i64 %0, %1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -61,11 +61,11 @@ entry:
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000d4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
-  %5 = icmp ult i64 %0, %1
+  %4 = icmp slt i64 %0, %3
+  %5 = icmp samesign ult i64 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
 }
@@ -73,10 +73,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ImplicitNullChecks.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = icmp sgt i64 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -88,10 +88,10 @@ entry:
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006b(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000cb(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = icmp sge i64 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6

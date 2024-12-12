@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	vfdiv.vv	v16, v16, v24
 	fli.d	fa5, 1.0
 	vfmin.vf	v16, v16, fa5
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	ret
 .LCPI1_0:
 	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
@@ -24,5 +24,5 @@ func000000000000000e:                   # @func000000000000000e
 	vmfeq.vv	v0, v16, v16
 	vmv.v.i	v24, 0
 	vmerge.vvm	v16, v24, v16, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	ret

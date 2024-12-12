@@ -4,7 +4,7 @@
 ; opencv/optimized/circlesgrid.cpp.ll
 ; xgboost/optimized/auc.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 2, i64 3
   %3 = ashr exact i64 %0, 5
@@ -16,7 +16,7 @@ entry:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 1, i64 4
   %3 = ashr exact i64 %0, 3
@@ -29,7 +29,7 @@ entry:
 ; faiss/optimized/NSG.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 1, i64 4
   %3 = ashr exact i64 %0, 3
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/extract_counter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000025(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 3, i64 2
   %3 = ashr exact i64 %0, 4

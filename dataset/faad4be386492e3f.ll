@@ -12,12 +12,12 @@
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 15
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; cpython/optimized/memoryobject.ll
 ; icu/optimized/dtptngen.ll
 ; luau/optimized/isocline.c.ll
@@ -27,8 +27,6 @@ entry:
 ; postgres/optimized/tablecmds.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
-; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
-; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; wireshark/optimized/packet-dcom.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll
 ; wireshark/optimized/packet-p_mul.c.ll
@@ -37,21 +35,19 @@ entry:
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; linux/optimized/xfrm_policy.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; verilator/optimized/V3Number.cpp.ll
-; wireshark/optimized/packet-p_mul.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 2
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

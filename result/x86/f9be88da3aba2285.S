@@ -20,13 +20,20 @@ func0000000000000015:                   # @func0000000000000015
 	addq	%rax, %rax
 	leaq	(%rax,%rax,2), %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000004:                   # @func0000000000000004
 	movl	%esi, %eax
 	subq	%rdi, %rax
-	imulq	$60, %rax, %rax
+	shlq	$3, %rax
+	leaq	(%rax,%rax,2), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%esi, %eax
 	subq	%rdi, %rax
-	imulq	$1181, %rax, %rax               # imm = 0x49D
+	shlq	$3, %rax
+	leaq	(%rax,%rax,2), %rax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	movl	%esi, %eax
+	subq	%rdi, %rax
+	imulq	$60, %rax, %rax
 	retq

@@ -4,7 +4,7 @@
 ; openjdk/optimized/zRelocationSet.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
   %4 = icmp ult i64 %3, %1
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/numa.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 2
   %4 = icmp sgt i64 %3, %1
@@ -49,7 +49,7 @@ entry:
 ; llvm/optimized/CoreEngine.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/networking.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
   %4 = icmp slt i64 %3, %1

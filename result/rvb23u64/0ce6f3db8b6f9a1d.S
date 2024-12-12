@@ -18,6 +18,12 @@ func000000000000003c:                   # @func000000000000003c
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func000000000000000d:                   # @func000000000000000d
+	zext.h	a2, a2
+	or	a0, a0, a2
+	slliw	a1, a1, 24
+	or	a0, a0, a1
+	ret
 func000000000000003b:                   # @func000000000000003b
 	slliw	a2, a2, 26
 	zext.h	a1, a1

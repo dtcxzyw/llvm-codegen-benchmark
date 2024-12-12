@@ -1,15 +1,14 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
-  %4 = icmp ult i32 %0, %1
+  %4 = icmp samesign ult i32 %0, %1
   %5 = select i1 %4, i32 0, i32 %3
   ret i32 %5
 }
@@ -31,6 +30,17 @@ define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %2, %1
   %4 = icmp slt i32 %0, %1
+  %5 = select i1 %4, i32 0, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/X86InterleavedAccess.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %2, %1
+  %4 = icmp ult i32 %0, %1
   %5 = select i1 %4, i32 0, i32 %3
   ret i32 %5
 }

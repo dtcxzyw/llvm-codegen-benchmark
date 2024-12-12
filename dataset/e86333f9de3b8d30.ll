@@ -12,7 +12,7 @@ entry:
   %4 = and i64 %3, 4294901760
   %5 = shl nuw i64 %1, 32
   %6 = or disjoint i64 %4, %5
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 
@@ -44,7 +44,7 @@ entry:
   %4 = and i64 %3, 1073741824
   %5 = shl nuw nsw i64 %1, 24
   %6 = or disjoint i64 %5, %4
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 

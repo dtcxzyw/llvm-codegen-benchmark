@@ -75,13 +75,13 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000247(float %0, float %1, float %2) #0 {
+define i1 @func0000000000000742(float %0, float %1, float %2) #0 {
 entry:
-  %3 = fcmp olt float %2, 1.000000e+00
+  %3 = fcmp une float %2, 0.000000e+00
   %4 = fcmp ogt float %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = fcmp une float %0, 0.000000e+00
-  %7 = and i1 %6, %5
+  %6 = fcmp olt float %0, 1.000000e+00
+  %7 = and i1 %5, %6
   ret i1 %7
 }
 
@@ -136,21 +136,6 @@ entry:
   %5 = and i1 %4, %3
   %6 = fcmp ole float %0, 0.000000e+00
   %7 = and i1 %5, %6
-  ret i1 %7
-}
-
-; 3 occurrences:
-; opencv/optimized/optical_flow_evaluation.cpp.ll
-; opencv/optimized/pcaflow_demo.cpp.ll
-; opencv/optimized/tvl1_optical_flow.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000002e2(float %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp olt float %2, 1.000000e+09
-  %4 = fcmp ord float %1, 0.000000e+00
-  %5 = and i1 %4, %3
-  %6 = fcmp olt float %0, 1.000000e+09
-  %7 = and i1 %6, %5
   ret i1 %7
 }
 

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = trunc i64 %0 to i32
@@ -241,7 +241,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000022a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = trunc i64 %0 to i32
@@ -252,7 +252,7 @@ entry:
 ; 1 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = trunc i64 %0 to i32
@@ -320,7 +320,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/varlena.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = trunc nsw i64 %0 to i32
@@ -332,7 +332,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = trunc nuw nsw i64 %0 to i32
@@ -344,7 +344,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = trunc nuw nsw i64 %0 to i32

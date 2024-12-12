@@ -1,5 +1,9 @@
 
-; 9 occurrences:
+; 13 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
 ; folly/optimized/SSLSessionManager.cpp.ll

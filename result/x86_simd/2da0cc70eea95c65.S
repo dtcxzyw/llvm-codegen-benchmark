@@ -9,45 +9,40 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpleq	%ymm2, %ymm1, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpcmpleq	%ymm2, %ymm1, %k0 {%k1}
 	knotw	%k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000005:                   # @func0000000000000005
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpleuq	%ymm2, %ymm1, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpcmpleuq	%ymm2, %ymm1, %k0 {%k1}
 	knotw	%k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpgtq	%ymm2, %ymm1, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpcmpgtq	%ymm2, %ymm1, %k0 {%k1}
 	knotw	%k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnleuq	%ymm2, %ymm1, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpcmpnleuq	%ymm2, %ymm1, %k0 {%k1}
 	knotw	%k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpneqq	%ymm2, %ymm1, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpcmpneqq	%ymm2, %ymm1, %k0 {%k1}
 	knotw	%k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

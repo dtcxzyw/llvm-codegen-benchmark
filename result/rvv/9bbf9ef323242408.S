@@ -5,5 +5,5 @@ func000000000000007c:                   # @func000000000000007c
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v12, a0, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmul.vv	v8, v12, v8
+	vmul.vv	v8, v8, v12
 	ret

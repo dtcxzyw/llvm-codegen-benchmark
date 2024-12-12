@@ -14,12 +14,7 @@ entry:
   ret i32 %3
 }
 
-; 18 occurrences:
-; abc/optimized/bacBlast.c.ll
-; abc/optimized/bacCom.c.ll
-; abc/optimized/bacNtk.c.ll
-; abc/optimized/bacWriteBlif.c.ll
-; abc/optimized/bacWriteVer.c.ll
+; 13 occurrences:
 ; icu/optimized/bytestrie.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/focaltech.ll

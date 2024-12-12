@@ -6,7 +6,7 @@ func0000000000000038:                   # @func0000000000000038
 	vmerge.vxm	v12, v12, a0, v0
 	vadd.vv	v10, v12, v10
 	vsll.vi	v10, v10, 4
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -20,7 +20,7 @@ func0000000000000028:                   # @func0000000000000028
 	vmerge.vxm	v12, v12, a0, v0
 	vadd.vv	v10, v12, v10
 	vsll.vi	v10, v10, 4
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma

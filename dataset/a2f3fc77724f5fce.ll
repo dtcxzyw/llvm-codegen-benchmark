@@ -17,7 +17,6 @@ entry:
 ; git/optimized/commit-graph.ll
 ; git/optimized/transport.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; icu/optimized/normalizer2impl.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
 ; linux/optimized/direct.ll
@@ -59,6 +58,7 @@ entry:
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-rpc.c.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -98,20 +98,6 @@ entry:
   ret i32 %7
 }
 
-; 2 occurrences:
-; hdf5/optimized/H5Zfletcher32.c.ll
-; llvm/optimized/CGBlocks.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 16711680
-  %4 = shl nuw i32 %1, 24
-  %5 = or disjoint i32 %4, %3
-  %6 = shl nuw nsw i32 %0, 8
-  %7 = or disjoint i32 %5, %6
-  ret i32 %7
-}
-
 ; 1 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; Function Attrs: nounwind
@@ -122,6 +108,19 @@ entry:
   %5 = or disjoint i32 %4, %3
   %6 = shl nuw nsw i32 %0, 17
   %7 = or i32 %6, %5
+  ret i32 %7
+}
+
+; 1 occurrences:
+; llvm/optimized/CGBlocks.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000002f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1073741824
+  %4 = shl nuw i32 %1, 26
+  %5 = or disjoint i32 %4, %3
+  %6 = shl nuw nsw i32 %0, 24
+  %7 = or disjoint i32 %5, %6
   ret i32 %7
 }
 

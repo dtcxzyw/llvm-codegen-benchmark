@@ -1,13 +1,20 @@
-func0000000000000014:                   # @func0000000000000014
-	addl	$-48, %edx
-	cmpl	$10, %edx
+func0000000000000024:                   # @func0000000000000024
+	addl	$-6, %edx
+	cmpl	$5, %edx
 	setb	%al
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	cmpl	$1, %edx
 	setne	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq
+func000000000000004a:                   # @func000000000000004a
+	addl	$16777216, %edx                 # imm = 0x1000000
+	cmpl	$33554432, %edx                 # imm = 0x2000000
+	setge	%al
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq

@@ -1,14 +1,14 @@
-func0000000000000582:                   # @func0000000000000582
+func0000000000001302:                   # @func0000000000001302
 	shrq	$32, %rdx
-	cmpl	%edi, %edx
+	cmpl	%edx, %edi
 	sete	%cl
 	testl	%esi, %esi
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000422:                   # @func0000000000000422
+func0000000000001042:                   # @func0000000000001042
 	shrq	$32, %rdx
-	cmpl	%edi, %edx
+	cmpl	%edx, %edi
 	sete	%cl
 	testl	%esi, %esi
 	sete	%al

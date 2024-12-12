@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-s3_lib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ca(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -19,7 +19,7 @@ entry:
 ; libquic/optimized/gzwrite.c.ll
 ; opencv/optimized/slice_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/batch_norm_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -47,7 +47,7 @@ entry:
 ; opencv/optimized/matrix.cpp.ll
 ; opencv/optimized/umatrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000086a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000020ca(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = trunc i64 %0 to i32

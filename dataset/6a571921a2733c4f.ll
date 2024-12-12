@@ -1,4 +1,25 @@
 
+; 10 occurrences:
+; lvgl/optimized/lv_sprintf_builtin.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; opencv/optimized/lapack.cpp.ll
+; proj/optimized/lcc.cpp.ll
+; proj/optimized/vandg.cpp.ll
+; zxing/optimized/ConcentricFinder.cpp.ll
+; zxing/optimized/DMDetector.cpp.ll
+; zxing/optimized/QRDetector.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000002(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fdiv double %1, %2
+  %4 = fneg double %3
+  %5 = fcmp olt double %0, 0.000000e+00
+  %6 = select i1 %5, double %4, double %3
+  ret double %6
+}
+
 ; 29 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -35,26 +56,6 @@ entry:
   %3 = fdiv double %1, %2
   %4 = fneg double %3
   %5 = fcmp ogt double %0, 0.000000e+00
-  %6 = select i1 %5, double %4, double %3
-  ret double %6
-}
-
-; 9 occurrences:
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
-; opencv/optimized/lapack.cpp.ll
-; proj/optimized/lcc.cpp.ll
-; proj/optimized/vandg.cpp.ll
-; zxing/optimized/ConcentricFinder.cpp.ll
-; zxing/optimized/DMDetector.cpp.ll
-; zxing/optimized/QRDetector.cpp.ll
-; Function Attrs: nounwind
-define double @func0000000000000002(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fdiv double %1, %2
-  %4 = fneg double %3
-  %5 = fcmp olt double %0, 0.000000e+00
   %6 = select i1 %5, double %4, double %3
   ret double %6
 }

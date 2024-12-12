@@ -1,5 +1,5 @@
 
-; 638 occurrences:
+; 640 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -22,6 +22,10 @@
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -380,7 +384,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -630,7 +633,6 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
 ; yosys/optimized/sta.ll
@@ -711,13 +713,14 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; clamav/optimized/htmlnorm.c.ll
 ; freetype/optimized/sdf.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 10
-  %3 = ashr i64 %0, 16
+  %2 = shl i64 %1, 2
+  %3 = ashr i64 %0, 4
   %4 = add i64 %3, %2
   ret i64 %4
 }

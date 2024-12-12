@@ -22,18 +22,6 @@ func0000000000000007:                   # @func0000000000000007
 	movl	$2, %eax
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
-	leal	-1(%rdi), %ecx
-	cmpq	$4097, %rsi                     # imm = 0x1001
-	movl	$4095, %eax                     # imm = 0xFFF
-	cmovbl	%ecx, %eax
-	retq
-func0000000000000023:                   # @func0000000000000023
-	leal	1(%rdi), %ecx
-	cmpq	$4097, %rsi                     # imm = 0x1001
-	movl	$4097, %eax                     # imm = 0x1001
-	cmovbl	%ecx, %eax
-	retq
 func0000000000000018:                   # @func0000000000000018
 	leal	-3(%rdi), %ecx
 	testq	%rsi, %rsi

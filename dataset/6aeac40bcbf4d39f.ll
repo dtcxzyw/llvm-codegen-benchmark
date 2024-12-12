@@ -1,5 +1,5 @@
 
-; 86 occurrences:
+; 85 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; bdwgc/optimized/gc.c.ll
@@ -9,7 +9,6 @@
 ; git/optimized/utf8.ll
 ; git/optimized/wildmatch.ll
 ; graphviz/optimized/splines.c.ll
-; gromacs/optimized/tng_io.c.ll
 ; hdf5/optimized/H5Ocache.c.ll
 ; hermes/optimized/Executor.cpp.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
@@ -29,12 +28,12 @@
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_text.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/simdutf.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/persistence.cpp.ll
-; openjdk/optimized/jvmtiEnterTrace.ll
 ; openssl/optimized/libcrypto-lib-ec2_oct.ll
 ; openssl/optimized/libcrypto-lib-ecp_oct.ll
 ; openssl/optimized/libcrypto-shlib-ec2_oct.ll
@@ -91,11 +90,11 @@ define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 4
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 27 occurrences:
+; 23 occurrences:
 ; git/optimized/pretty.ll
 ; git/optimized/utf8.ll
 ; graphviz/optimized/sfvscanf.c.ll
@@ -106,16 +105,12 @@ entry:
 ; linux/optimized/libata-eh.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lua/optimized/llex.ll
-; luajit/optimized/lj_opt_loop.ll
-; luajit/optimized/lj_opt_loop_dyn.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; node/optimized/libnode.inspector_socket.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; php/optimized/pcre2_study.ll
 ; php/optimized/zend_jit.ll
-; postgres/optimized/procarray.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
-; raylib/optimized/rtext.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-cemi.c.ll
@@ -128,33 +123,7 @@ define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
-  %4 = or i1 %3, %0
-  ret i1 %4
-}
-
-; 4 occurrences:
-; meshlab/optimized/gltf_loader.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 14
-  %3 = icmp eq i8 %2, 14
-  %4 = or i1 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_opt_loop.ll
-; luajit/optimized/lj_opt_loop_dyn.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 31
-  %3 = icmp ult i8 %2, 3
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

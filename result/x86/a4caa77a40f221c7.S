@@ -6,36 +6,30 @@ func000000000000000b:                   # @func000000000000000b
 	retq
 func000000000000000f:                   # @func000000000000000f
 	movzbl	%sil, %eax
-	shll	$16, %eax
-	leal	117440768(%rax,%rdi), %eax
-	retq
-func000000000000000c:                   # @func000000000000000c
-	movzbl	%sil, %eax
-	shll	$16, %eax
-	orl	%edi, %eax
-	orl	$117440768, %eax                # imm = 0x7000100
+	shll	$8, %eax
+	leal	50331648(%rax,%rdi), %eax
 	retq
 func000000000000001f:                   # @func000000000000001f
 	movzbl	%sil, %eax
-	shll	$16, %eax
-	leal	16777728(%rax,%rdi), %eax
+	shll	$5, %eax
+	leal	1024(%rdi,%rax), %eax
+	retq
+func000000000000001e:                   # @func000000000000001e
+	movzbl	%sil, %eax
+	shll	$6, %eax
+	orl	%edi, %eax
+	orl	$56320, %eax                    # imm = 0xDC00
 	retq
 func000000000000000e:                   # @func000000000000000e
 	movzbl	%sil, %eax
 	leal	(%rdi,%rax,2), %eax
 	orl	$8, %eax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000000c:                   # @func000000000000000c
 	movzbl	%sil, %eax
-	shll	$21, %eax
+	shll	$16, %eax
 	orl	%edi, %eax
-	orl	$-2128609281, %eax              # imm = 0x811FFFFF
-	retq
-func000000000000001c:                   # @func000000000000001c
-	movzbl	%sil, %eax
-	shll	$21, %eax
-	orl	%edi, %eax
-	orl	$83886080, %eax                 # imm = 0x5000000
+	orl	$1048576, %eax                  # imm = 0x100000
 	retq
 func000000000000001b:                   # @func000000000000001b
 	movl	%esi, %eax
@@ -48,6 +42,12 @@ func0000000000000018:                   # @func0000000000000018
 	shll	$25, %eax
 	orl	%edi, %eax
 	orl	$16777216, %eax                 # imm = 0x1000000
+	retq
+func000000000000001c:                   # @func000000000000001c
+	movzbl	%sil, %eax
+	shll	$16, %eax
+	orl	%edi, %eax
+	orl	$3072, %eax                     # imm = 0xC00
 	retq
 func000000000000000d:                   # @func000000000000000d
 	movzbl	%sil, %eax

@@ -56,9 +56,9 @@ entry:
 ; bullet3/optimized/btSoftBody.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(float %0, float %1, i32 %2) #0 {
+define i1 @func0000000000000144(float %0, float %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 99
+  %3 = icmp samesign ult i32 %2, 99
   %4 = fcmp ogt float %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -92,9 +92,9 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_are_equivalent.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004d(float %0, float %1, i32 %2) #0 {
+define i1 @func000000000000014d(float %0, float %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 2
+  %3 = icmp samesign ult i32 %2, 2
   %4 = fcmp uge float %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -167,8 +167,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; imgui/optimized/imgui.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000012(float %0, float %1, i32 %2) #0 {
 entry:

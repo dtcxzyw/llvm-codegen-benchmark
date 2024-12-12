@@ -7,7 +7,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rcx, %rdx
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addl	%esi, %edi
 	movslq	%edi, %rax
 	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000

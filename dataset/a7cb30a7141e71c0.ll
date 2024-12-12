@@ -13,8 +13,10 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:

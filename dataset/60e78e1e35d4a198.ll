@@ -1,11 +1,10 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; icu/optimized/ubidiwrt.ll
 ; libevent/optimized/bufferevent.c.ll
 ; linux/optimized/mlme.ll
-; llvm/optimized/CompilerInvocation.cpp.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; Function Attrs: nounwind

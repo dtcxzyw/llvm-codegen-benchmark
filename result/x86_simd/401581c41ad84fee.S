@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpmovdw	%ymm1, %xmm2
 	vpextrw	$1, %xmm0, %ecx
 	vpextrw	$1, %xmm2, %eax

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; clamav/optimized/strfn.cpp.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/extents.ll
@@ -13,9 +13,11 @@
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; php/optimized/dfa_pass.ll
 ; php/optimized/zend_inference.ll
+; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; quickjs/optimized/quickjs.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; verilator/optimized/V3Task.cpp.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; Function Attrs: nounwind
@@ -27,12 +29,11 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/e1000_hw.ll
 ; llvm/optimized/CallGraphUpdater.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

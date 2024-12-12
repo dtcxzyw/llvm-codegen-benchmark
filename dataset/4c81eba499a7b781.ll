@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/bio.ll
@@ -10,7 +10,6 @@
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; qemu/optimized/migration_qemu-file.c.ll
 ; qemu/optimized/migration_savevm.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
@@ -21,10 +20,12 @@ entry:
   ret ptr %4
 }
 
-; 120 occurrences:
+; 119 occurrences:
 ; abc/optimized/extraUtilEnum.c.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clamav/optimized/hashtab.c.ll
 ; cvc5/optimized/cadical.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
@@ -100,8 +101,6 @@ entry:
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/installables.ll
 ; nix/optimized/lexer-tab.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parser-tab.ll
 ; nix/optimized/print-ambiguous.ll
@@ -111,7 +110,6 @@ entry:
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
-; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
@@ -143,16 +141,19 @@ entry:
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 51 occurrences:
+; 53 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/pin_thread.ll
+; boost/optimized/src.ll
 ; eastl/optimized/eathread.cpp.ll
 ; eastl/optimized/eathread_thread.cpp.ll
 ; entt/optimized/benchmark.cpp.ll
@@ -177,7 +178,6 @@ entry:
 ; entt/optimized/view.cpp.ll
 ; graphviz/optimized/partition.c.ll
 ; gromacs/optimized/hardwaretopology.cpp.ll
-; gromacs/optimized/pthreads.cpp.ll
 ; libzmq/optimized/thread.cpp.ll
 ; llvm/optimized/Threading.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
@@ -204,11 +204,11 @@ entry:
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   ret ptr %4
 }
 

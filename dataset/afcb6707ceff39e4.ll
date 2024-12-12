@@ -1,23 +1,6 @@
 
-; 6 occurrences:
+; 183 occurrences:
 ; hermes/optimized/SimplifyCFG.cpp.ll
-; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/MergedLoadStoreMotion.cpp.ll
-; llvm/optimized/VPlan.cpp.ll
-; llvm/optimized/VPlanSLP.cpp.ll
-; openusd/optimized/bboxCache.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000861(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 -16
-  %3 = icmp eq ptr %1, null
-  %4 = select i1 %3, ptr null, ptr %2
-  %5 = getelementptr nusw i8, ptr %4, i64 56
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
-}
-
-; 178 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
@@ -117,6 +100,7 @@ entry:
 ; llvm/optimized/Lint.cpp.ll
 ; llvm/optimized/LoopUnroll.cpp.ll
 ; llvm/optimized/LoopUnrollAndJam.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/LowerAllowCheckPass.cpp.ll
 ; llvm/optimized/LowerAtomicPass.cpp.ll
 ; llvm/optimized/LowerExpectIntrinsic.cpp.ll
@@ -130,6 +114,7 @@ entry:
 ; llvm/optimized/MemProfiler.cpp.ll
 ; llvm/optimized/MemorySSA.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
+; llvm/optimized/MergedLoadStoreMotion.cpp.ll
 ; llvm/optimized/MetaRenamer.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/ModuleInliner.cpp.ll
@@ -187,6 +172,8 @@ entry:
 ; llvm/optimized/TypeFinder.cpp.ll
 ; llvm/optimized/TypePromotion.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
+; llvm/optimized/VPlan.cpp.ll
+; llvm/optimized/VPlanSLP.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; llvm/optimized/ValueMapper.cpp.ll
 ; llvm/optimized/ValueProfileCollector.cpp.ll
@@ -197,13 +184,27 @@ entry:
 ; llvm/optimized/X86PartialReduction.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000871(ptr %0, ptr %1) #0 {
+define i1 @func00000000000020e1(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 -24
+  %2 = getelementptr nusw i8, ptr %1, i64 -16
   %3 = icmp eq ptr %1, null
   %4 = select i1 %3, ptr null, ptr %2
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 48
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 56
+  %6 = icmp eq ptr %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; llvm/optimized/GlobalsModRef.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000030e1(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %3 = icmp eq ptr %1, null
+  %4 = select i1 %3, ptr null, ptr %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 312
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -212,13 +213,13 @@ entry:
 ; linux/optimized/io-wq.ll
 ; linux/optimized/pci-driver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -104
   %3 = icmp eq ptr %1, null
   %4 = select i1 %3, ptr null, ptr %2
-  %5 = getelementptr nusw i8, ptr %4, i64 256
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 256
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 

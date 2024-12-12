@@ -10,10 +10,10 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; velox/optimized/ArrayPosition.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ne i64 %4, 0
   %6 = trunc i8 %0 to i1
   %7 = xor i1 %5, %6
@@ -30,10 +30,10 @@ entry:
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp eq i64 %4, 0
   %6 = trunc i8 %0 to i1
   %7 = xor i1 %5, %6

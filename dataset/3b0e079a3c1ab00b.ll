@@ -1,6 +1,12 @@
 
-; 137 occurrences:
+; 142 occurrences:
 ; arrow/optimized/UriParse.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; clamav/optimized/infblock.c.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
@@ -32,7 +38,6 @@
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
@@ -138,12 +143,23 @@
 ; z3/optimized/theory_utvpi.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 632
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 632
   %4 = icmp eq ptr %3, %1
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
+}
+
+; 1 occurrences:
+; turborepo-rs/optimized/avd1ga9yb4qq5g7sdqftppd4q.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006c(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 64
+  %.not = icmp eq ptr %3, %1
+  %4 = select i1 %.not, ptr %3, ptr %0
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -157,12 +173,24 @@ entry:
   ret ptr %5
 }
 
+; 2 occurrences:
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -8
+  %4 = icmp eq ptr %3, %1
+  %5 = select i1 %4, ptr %0, ptr %3
+  ret ptr %5
+}
+
 ; 1 occurrences:
 ; lua/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000064(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ult ptr %3, %1
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
@@ -171,9 +199,9 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000068(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = icmp ugt ptr %3, %1
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5

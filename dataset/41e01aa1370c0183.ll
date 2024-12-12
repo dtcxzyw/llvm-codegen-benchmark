@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; qemu/optimized/block_parallels.c.ll
 ; ruby/optimized/bignum.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:

@@ -1,3 +1,8 @@
+func0000000000000077:                   # @func0000000000000077
+	movq	%rdi, %rax
+	shrq	$52, %rax
+	orl	%esi, %eax
+	retq
 func000000000000007a:                   # @func000000000000007a
 	movl	%esi, %eax
 	shlq	$19, %rax
@@ -31,6 +36,12 @@ func000000000000002a:                   # @func000000000000002a
 	movq	%rdi, %rax
 	shrq	$32, %rax
 	orl	%esi, %eax
+	retq
+func000000000000006a:                   # @func000000000000006a
+	movl	%esi, %eax
+	shlq	$40, %rax
+	orq	%rdi, %rax
+	shrq	$32, %rax
 	retq
 func000000000000003b:                   # @func000000000000003b
 	movl	%esi, %eax

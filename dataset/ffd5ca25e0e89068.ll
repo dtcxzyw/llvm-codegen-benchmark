@@ -8,6 +8,7 @@
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/lpkSets.c.ll
 ; abc/optimized/mioSop.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/unarj.c.ll
@@ -50,7 +51,6 @@
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/RISCVExpandAtomicPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -257,15 +257,14 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; openexr/optimized/IexMathFpu.cpp.ll
+; 1 occurrences:
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 10
-  %3 = and i32 %2, %0
-  %4 = icmp ugt i32 %3, 30
+  %3 = and i32 %0, %2
+  %4 = icmp samesign ugt i32 %3, 30
   ret i1 %4
 }
 
@@ -280,7 +279,6 @@ entry:
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/ExpandPostRAPseudos.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
@@ -288,6 +286,7 @@ entry:
 ; llvm/optimized/X86FixupLEAs.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; z3/optimized/nlqsat.cpp.ll
@@ -306,7 +305,7 @@ entry:
 ; openusd/optimized/thread_common.c.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 24
   %3 = and i32 %2, %0
@@ -314,15 +313,14 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/PseudoProbe.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = and i32 %2, %0
-  %4 = icmp ult i32 %3, 8192
+  %3 = and i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 8192
   ret i1 %4
 }
 

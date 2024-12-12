@@ -1,5 +1,5 @@
 
-; 157 occurrences:
+; 156 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -152,7 +152,6 @@
 ; zstd/optimized/zstd_lazy.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
-; zxing/optimized/AZToken.cpp.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
@@ -165,7 +164,7 @@ entry:
   ret i8 %3
 }
 
-; 62 occurrences:
+; 63 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
@@ -191,7 +190,6 @@ entry:
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/libps2.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll
@@ -199,6 +197,8 @@ entry:
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
@@ -236,7 +236,7 @@ entry:
   ret i8 %3
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; freetype/optimized/sfnt.c.ll
@@ -245,6 +245,7 @@ entry:
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
 ; postgres/optimized/varbit.ll

@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 76 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -16,8 +16,6 @@
 ; libjpeg-turbo/optimized/jdsample.c.ll
 ; libquic/optimized/ctr.c.ll
 ; libquic/optimized/pkcs8.c.ll
-; libsodium/optimized/libsodium_la-stream_salsa2012_ref.ll
-; libsodium/optimized/libsodium_la-stream_salsa208_ref.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/dec_sse2.c.ll
 ; libwebp/optimized/enc.c.ll
@@ -33,6 +31,7 @@
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mixbox/optimized/mixbox.ll
 ; nori/optimized/nanovg.c.ll
@@ -64,25 +63,32 @@
 ; postgres/optimized/euc2004_sjis2004.ll
 ; postgres/optimized/network.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
-; ruby/optimized/japanese.ll
 ; stb/optimized/stb_dxt.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zxing/optimized/HybridBinarizer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
-  %4 = lshr i32 %3, 1
+  %3 = add nuw nsw i32 %0, %2
+  %4 = lshr i32 %3, 8
   ret i32 %4
 }
 
-; 27 occurrences:
+; 30 occurrences:
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/message.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -114,7 +120,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 4
   ret i32 %4
 }
@@ -128,7 +134,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 16
   ret i32 %4
 }
@@ -143,7 +149,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 5
   ret i32 %4
 }
@@ -156,7 +162,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 13
   ret i32 %4
 }

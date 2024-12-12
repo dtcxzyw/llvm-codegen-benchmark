@@ -7,7 +7,7 @@ func0000000000000028:                   # @func0000000000000028
 	addi	a0, a0, 847
 	vmacc.vx	v12, a0, v10
 	vsra.vi	v10, v12, 19
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000029:                   # @func0000000000000029
 	lui	a0, 924416
@@ -18,5 +18,5 @@ func0000000000000029:                   # @func0000000000000029
 	addi	a0, a0, 847
 	vmacc.vx	v12, a0, v10
 	vsra.vi	v10, v12, 19
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

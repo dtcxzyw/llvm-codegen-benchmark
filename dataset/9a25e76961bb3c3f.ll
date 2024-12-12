@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 55 occurrences:
 ; freetype/optimized/sdf.c.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; icu/optimized/dtptngen.ll
@@ -18,7 +18,6 @@
 ; ncnn/optimized/packing_x86_avx512.cpp.ll
 ; ncnn/optimized/packing_x86_fma.cpp.ll
 ; ncnn/optimized/reshape.cpp.ll
-; nix/optimized/nix-env.ll
 ; openblas/optimized/cblas_dimatcopy.c.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
@@ -57,7 +56,7 @@
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/ezsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 32
   %4 = and i1 %3, %1
@@ -71,12 +70,12 @@ entry:
 ; quantlib/optimized/taiwan.ll
 ; quantlib/optimized/turkey.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000182(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 3
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp eq i32 %2, 30
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -84,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/indonesia.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000054(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = and i1 %3, %1
@@ -98,7 +97,7 @@ entry:
 ; quantlib/optimized/china.ll
 ; quantlib/optimized/indonesia.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000142(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000282(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 28
   %4 = and i1 %3, %1
@@ -112,7 +111,7 @@ entry:
 ; opencv/optimized/contours.cpp.ll
 ; quantlib/optimized/indonesia.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 26
   %4 = and i1 %3, %1
@@ -127,7 +126,7 @@ entry:
 ; quantlib/optimized/china.ll
 ; quantlib/optimized/taiwan.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000194(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 6
   %4 = and i1 %3, %1
@@ -137,16 +136,15 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
-; opencv/optimized/norm.cpp.ll
+; 1 occurrences:
 ; quantlib/optimized/china.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 7
   %4 = and i1 %3, %1
   %5 = icmp ult i32 %2, 8
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -157,12 +155,12 @@ entry:
 ; glslang/optimized/hlslParseables.cpp.ll
 ; quantlib/optimized/chile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000294(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 2016
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp sgt i32 %2, 2006
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -175,7 +173,7 @@ entry:
 ; redis/optimized/cluster_legacy.ll
 ; z3/optimized/polynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 5
   %4 = and i1 %3, %1
@@ -186,28 +184,27 @@ entry:
 }
 
 ; 2 occurrences:
+; clamav/optimized/scantree.cpp.ll
 ; glslang/optimized/Initialize.cpp.ll
-; nix/optimized/nix-env.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp slt i32 %2, 310
-  %4 = and i1 %3, %1
-  %5 = icmp slt i32 %2, 450
-  %6 = and i1 %5, %0
+  %3 = icmp ne i32 %2, 8
+  %4 = and i1 %1, %3
+  %5 = icmp eq i32 %2, 8
+  %6 = and i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
 
-; 2 occurrences:
-; clamav/optimized/scantree.cpp.ll
+; 1 occurrences:
 ; glslang/optimized/Initialize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 8
+  %3 = icmp slt i32 %2, 450
   %4 = and i1 %3, %1
-  %5 = icmp eq i32 %2, 8
+  %5 = icmp slt i32 %2, 310
   %6 = and i1 %5, %0
   %7 = or i1 %6, %4
   ret i1 %7
@@ -216,12 +213,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000110(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 32
   %4 = and i1 %3, %1
   %5 = icmp ugt i32 %2, 64
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -230,12 +227,12 @@ entry:
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000310(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp ugt i32 %2, 1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -243,12 +240,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 16
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp ne i32 %2, 8
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -257,12 +254,12 @@ entry:
 ; opencv/optimized/nary_eltwise_layers.cpp.ll
 ; opencv/optimized/thresh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000028c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 32766
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp slt i32 %2, -32768
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }

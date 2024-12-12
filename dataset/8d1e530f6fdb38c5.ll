@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 54 occurrences:
 ; clamav/optimized/cert_util.c.ll
 ; cpython/optimized/_ssl.ll
 ; icu/optimized/collationcompare.ll
@@ -15,7 +15,6 @@
 ; node/optimized/libnode.node.ll
 ; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; openssl/optimized/cipherlist_test-bin-cipherlist_test.ll
-; openssl/optimized/d2i_test-bin-d2i_test.ll
 ; openssl/optimized/dtlstest-bin-dtlstest.ll
 ; openssl/optimized/ec_internal_test-bin-ec_internal_test.ll
 ; openssl/optimized/errtest-bin-errtest.ll
@@ -50,11 +49,8 @@
 ; openssl/optimized/openssl-bin-req.ll
 ; openssl/optimized/ossl_store_test-bin-ossl_store_test.ll
 ; openssl/optimized/provider_test-bin-provider_test.ll
-; openssl/optimized/quicfaultstest-bin-quicfaultstest.ll
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
-; openssl/optimized/sslcorrupttest-bin-sslcorrupttest.ll
-; openssl/optimized/x509aux-bin-x509aux.ll
 ; qemu/optimized/migration_ram.c.ll
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/ossl_x509cert.ll

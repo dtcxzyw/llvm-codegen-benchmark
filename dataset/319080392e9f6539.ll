@@ -61,7 +61,7 @@ entry:
   ret i32 %2
 }
 
-; 93 occurrences:
+; 91 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/acecPa.c.ll
 ; abc/optimized/bmcCexMin2.c.ll
@@ -105,13 +105,11 @@ entry:
 ; icu/optimized/number_patternstring.ll
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/alternative.ll
-; linux/optimized/intel_pstate.ll
 ; linux/optimized/jump_label.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/vmstat.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -194,19 +192,6 @@ entry:
 }
 
 ; 4 occurrences:
-; postgres/optimized/gistutil.ll
-; postgres/optimized/slru.ll
-; slurm/optimized/bitstring.ll
-; yosys/optimized/ezminisat.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i64 %0) #0 {
-entry:
-  %1 = trunc nuw nsw i64 %0 to i32
-  %2 = ashr i32 %1, 6
-  ret i32 %2
-}
-
-; 4 occurrences:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; openblas/optimized/dlasq2.c.ll
@@ -216,6 +201,17 @@ define i32 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = ashr exact i32 %1, 2
+  ret i32 %2
+}
+
+; 2 occurrences:
+; postgres/optimized/gistutil.ll
+; postgres/optimized/slru.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i64 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i64 %0 to i32
+  %2 = ashr i32 %1, 3
   ret i32 %2
 }
 

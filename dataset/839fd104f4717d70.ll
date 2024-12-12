@@ -5,7 +5,7 @@
 ; qemu/optimized/fpu_softfloat.c.ll
 ; spike/optimized/fcvtmod_w_d.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 %0, %2
@@ -19,7 +19,7 @@ entry:
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 %0, %2
@@ -32,7 +32,7 @@ entry:
 ; openusd/optimized/avif_obu.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 %0, %2
@@ -60,7 +60,7 @@ entry:
 ; zfp/optimized/encode4d.c.ll
 ; zfp/optimized/encode4l.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 %0, %2
@@ -75,7 +75,7 @@ entry:
 ; llvm/optimized/MachOUniversalWriter.cpp.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 %0, %2
@@ -87,7 +87,7 @@ entry:
 ; linux/optimized/intel_cx0_phy.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 %0, %2

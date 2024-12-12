@@ -10,22 +10,16 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$15, %esi
 	cmpl	$11, %esi
 	setae	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	testb	$12, %sil
 	sete	%al
-	notb	%dil
-	andb	%dil, %al
-	retq
-func000000000000000a:                   # @func000000000000000a
-	testl	$-2, %esi
-	setg	%al
 	notb	%dil
 	andb	%dil, %al
 	retq

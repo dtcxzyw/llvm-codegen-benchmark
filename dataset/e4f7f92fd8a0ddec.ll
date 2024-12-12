@@ -52,7 +52,7 @@ entry:
   ret i64 %5
 }
 
-; 82 occurrences:
+; 80 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -77,7 +77,6 @@ entry:
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
-; libzmq/optimized/ipc_address.cpp.ll
 ; libzmq/optimized/radix_tree.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; linux/optimized/bitmap.ll
@@ -86,11 +85,9 @@ entry:
 ; linux/optimized/exregion.ll
 ; linux/optimized/extents_status.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/readahead.ll
 ; linux/optimized/scsi_lib.ll
 ; linux/optimized/vgacon.ll
-; linux/optimized/wep.ll
 ; llvm/optimized/BitcodeAnalyzer.cpp.ll
 ; llvm/optimized/BitstreamReader.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
@@ -119,6 +116,7 @@ entry:
 ; rocksdb/optimized/manager.cc.ll
 ; ruby/optimized/strftime.ll
 ; slurm/optimized/job_mgr.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; zfp/optimized/decode1d.c.ll
 ; zfp/optimized/decode1f.c.ll
 ; zfp/optimized/decode1i.c.ll

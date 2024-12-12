@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/exorBits.c.ll
@@ -19,7 +19,6 @@
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; php/optimized/crypt_freesec.ll
-; php/optimized/pcre2_jit_compile.ll
 ; pocketpy/optimized/random.cpp.ll
 ; postgres/optimized/base64.ll
 ; postgres/optimized/base64_shlib.ll

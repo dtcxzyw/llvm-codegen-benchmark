@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -104,6 +105,28 @@ entry:
   %sum.shift = lshr i128 %0, 96
   %1 = trunc nuw nsw i128 %sum.shift to i64
   %2 = mul nuw nsw i64 %1, 1374389535
+  ret i64 %2
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i128 %0) #0 {
+entry:
+  %sum.shift = lshr i128 %0, 96
+  %1 = trunc nuw nsw i128 %sum.shift to i64
+  %2 = mul i64 %1, -10000000000
+  ret i64 %2
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i128 %0) #0 {
+entry:
+  %sum.shift = lshr i128 %0, 96
+  %1 = trunc nuw nsw i128 %sum.shift to i64
+  %2 = mul nuw nsw i64 %1, 42949673
   ret i64 %2
 }
 

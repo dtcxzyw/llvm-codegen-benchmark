@@ -1,5 +1,5 @@
 
-; 330 occurrences:
+; 328 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -276,7 +276,6 @@
 ; llvm/optimized/PseudoProbeInserter.cpp.ll
 ; llvm/optimized/PseudoProbePrinter.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RemoveRedundantDebugValues.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SampleContextTracker.cpp.ll
@@ -316,7 +315,6 @@
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; spike/optimized/f128_to_i64.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f128_to_ui64.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64.ll
@@ -339,7 +337,8 @@ entry:
   ret i64 %3
 }
 
-; 29 occurrences:
+; 30 occurrences:
+; boost/optimized/alloc_lib.ll
 ; hermes/optimized/APInt.cpp.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll

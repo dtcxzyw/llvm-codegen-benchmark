@@ -1,5 +1,20 @@
 
-; 21 occurrences:
+; 4 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; mitsuba3/optimized/string.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = add i64 %0, %3
+  %5 = zext i16 %1 to i64
+  %6 = sub nuw nsw i64 %4, %5
+  ret i64 %6
+}
+
+; 22 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -21,11 +36,12 @@
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = zext i16 %1 to i64
   %6 = sub nsw i64 %4, %5
   ret i64 %6
@@ -37,7 +53,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = zext i16 %1 to i64
   %6 = sub i64 %4, %5
   ret i64 %6
@@ -49,7 +65,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = zext i16 %1 to i64
   %6 = sub i64 %4, %5
   ret i64 %6

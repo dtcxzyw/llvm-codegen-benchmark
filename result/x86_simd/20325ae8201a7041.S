@@ -38,7 +38,7 @@
 	.quad	134                             # 0x86
 .LCPI0_4:
 	.quad	135                             # 0x87
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k1
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k2
 	vpbroadcastq	.LCPI0_2(%rip), %ymm0   # ymm0 = [133,133,133,133]

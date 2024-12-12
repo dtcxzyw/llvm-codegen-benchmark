@@ -1,8 +1,7 @@
 
-; 42 occurrences:
+; 38 occurrences:
 ; abc/optimized/trees.c.ll
 ; bullet3/optimized/b3RadixSort32CL.ll
-; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; cmake/optimized/trees.c.ll
 ; gromacs/optimized/daxpy.cpp.ll
 ; gromacs/optimized/dcopy.cpp.ll
@@ -27,11 +26,9 @@
 ; libquic/optimized/trees.c.ll
 ; linux/optimized/deftree.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; openblas/optimized/cblas_drotm.c.ll
-; openblas/optimized/drotm.c.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
 ; openssl/optimized/libcrypto-lib-v3_ncons.ll
@@ -39,7 +36,6 @@
 ; openusd/optimized/aom_scale.c.ll
 ; redis/optimized/multi.ll
 ; ruby/optimized/iseq.ll
-; slurm/optimized/sbatch.ll
 ; verilator/optimized/V3ParseGrammar.cpp.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
@@ -51,7 +47,7 @@ entry:
   ret i64 %4
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaScl.c.ll
@@ -69,8 +65,6 @@ entry:
 ; openblas/optimized/dgemmt.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlatrs.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/cumsum_layer.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
@@ -93,24 +87,20 @@ entry:
   ret i64 %4
 }
 
-; 48 occurrences:
+; 38 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/giaMini.c.ll
 ; clamav/optimized/unarj.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/raster.c.ll
 ; gromacs/optimized/atomdistribution.cpp.ll
-; icu/optimized/utext.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
-; nori/optimized/textbox.cpp.ll
-; openblas/optimized/blas_server.c.ll
 ; openblas/optimized/dlaqr5.c.ll
-; openblas/optimized/dlarrv.c.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/matrix_wrap.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
@@ -132,16 +122,10 @@ entry:
 ; openjdk/optimized/IntRgbx.ll
 ; openjdk/optimized/ThreeByteBgr.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
-; openjdk/optimized/symbolTable.ll
 ; openmpi/optimized/ompi_datatype_create_darray.ll
-; openssl/optimized/ca_internals_test-bin-ca.ll
-; openssl/optimized/libcrypto-lib-property_parse.ll
-; openssl/optimized/libcrypto-shlib-property_parse.ll
-; openssl/optimized/openssl-bin-ca.ll
 ; openusd/optimized/blendShapeQuery.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
 ; sqlite/optimized/sqlite3.ll
-; velox/optimized/JsonType.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
@@ -151,9 +135,41 @@ entry:
   ret i64 %4
 }
 
-; 40 occurrences:
+; 1 occurrences:
+; openjdk/optimized/upcallLinker_x86_64.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 31
+  %3 = select i1 %2, i32 %0, i32 -1
+  %4 = sext i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/xid.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 2
+  %3 = select i1 %2, i32 %0, i32 2147483647
+  %4 = sext i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; diesel-rs/optimized/4dmkc4an6cvf22v6.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
+entry:
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, i32 0, i32 %0
+  %3 = sext i32 %2 to i64
+  ret i64 %3
+}
+
+; 38 occurrences:
 ; graphviz/optimized/exparse.c.ll
-; gromacs/optimized/gmx_h2order.cpp.ll
 ; opencv/optimized/AKAZE_match.cpp.ll
 ; opencv/optimized/LATCH_match.cpp.ll
 ; opencv/optimized/PnPProblem.cpp.ll
@@ -191,24 +207,11 @@ entry:
 ; opencv/optimized/tracker_goturn.cpp.ll
 ; opencv/optimized/train_svmsgd.cpp.ll
 ; opencv/optimized/twist.cpp.ll
-; openjdk/optimized/upcallLinker_x86_64.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 31
-  %3 = select i1 %2, i32 %0, i32 -1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
-}
-
-; 2 occurrences:
-; abseil-cpp/optimized/cordz_info.cc.ll
-; postgres/optimized/xid.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 1
-  %3 = select i1 %2, i32 %0, i32 1
+  %2 = icmp ult i32 %1, 3
+  %3 = select i1 %2, i32 %0, i32 0
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

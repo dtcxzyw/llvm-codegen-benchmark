@@ -1,10 +1,9 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gem_object.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/pci-acpi.ll
 ; linux/optimized/phy-c45.ll

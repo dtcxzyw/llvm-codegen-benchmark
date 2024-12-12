@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/sprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sge i64 %1, %2
   %4 = icmp eq i64 %0, 0
@@ -10,7 +10,7 @@ entry:
   ret i1 %5
 }
 
-; 144 occurrences:
+; 143 occurrences:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/appender.cpp.ll
 ; mitsuba3/optimized/area.cpp.ll
@@ -88,7 +88,6 @@ entry:
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -156,7 +155,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %1, %2
   %4 = icmp sgt i64 %0, 0
@@ -164,39 +163,7 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; brotli/optimized/decode.c.ll
-; coreutils-rs/optimized/h500puk7vtt6aeh.ll
-; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
-; linux/optimized/printk.ll
-; mitsuba3/optimized/ply.cpp.ll
-; slurm/optimized/conmgr.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %1, %2
-  %4 = icmp eq i64 %0, 0
-  %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 6 occurrences:
-; bdwgc/optimized/gc.c.ll
-; cpython/optimized/obmalloc.ll
-; mimalloc/optimized/bitmap.c.ll
-; openssl/optimized/libdefault-lib-ssl3_cbc.ll
-; openssl/optimized/libssl-shlib-ssl3_cbc.ll
-; postgres/optimized/pg_backup_tar.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ule i64 %1, %2
-  %4 = icmp eq i64 %0, 0
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 14 occurrences:
+; 17 occurrences:
 ; actix-rs/optimized/2m9lq42maoywd5kd.ll
 ; coreutils-rs/optimized/4ooodgzovc6dgngk.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -211,8 +178,11 @@ entry:
 ; rust-analyzer-rs/optimized/xh6m92l5tmfbxs4.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp sgt i64 %0, -1
@@ -223,7 +193,7 @@ entry:
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp uge i64 %1, %2
   %4 = icmp ugt i64 %0, 2047
@@ -235,7 +205,7 @@ entry:
 ; bdwgc/optimized/gc.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = icmp eq i64 %0, 0
@@ -243,10 +213,24 @@ entry:
   ret i1 %5
 }
 
+; 4 occurrences:
+; bdwgc/optimized/gc.c.ll
+; cpython/optimized/obmalloc.ll
+; mimalloc/optimized/bitmap.c.ll
+; postgres/optimized/pg_backup_tar.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ule i64 %1, %2
+  %4 = icmp eq i64 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; proxygen/optimized/AsyncTimeoutSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
   %4 = icmp sgt i64 %0, 0
@@ -254,10 +238,25 @@ entry:
   ret i1 %5
 }
 
+; 5 occurrences:
+; brotli/optimized/decode.c.ll
+; coreutils-rs/optimized/h500puk7vtt6aeh.ll
+; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
+; linux/optimized/printk.ll
+; slurm/optimized/conmgr.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ne i64 %1, %2
+  %4 = icmp eq i64 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; hdf5/optimized/H5FDonion.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp ne i64 %0, 0
@@ -268,7 +267,7 @@ entry:
 ; 1 occurrences:
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sle i64 %1, %2
   %4 = icmp ult i64 %0, 2
@@ -279,7 +278,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp uge i64 %1, %2
   %4 = icmp slt i64 %0, 0
@@ -291,7 +290,7 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/bitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ule i64 %1, %2
   %4 = icmp ugt i64 %0, 63

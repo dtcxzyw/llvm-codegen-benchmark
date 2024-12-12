@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; lief/optimized/x509.c.ll
 ; openusd/optimized/testTraceReportPerf.cpp.ll
 ; php/optimized/plain_wrapper.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; sentencepiece/optimized/normalizer.cc.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

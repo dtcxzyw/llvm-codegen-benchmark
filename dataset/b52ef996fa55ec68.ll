@@ -1,8 +1,9 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; coreutils-rs/optimized/bay6adxmosnf2qi.ll
 ; cpython/optimized/basearith.ll
@@ -13,10 +14,8 @@
 ; protobuf/optimized/time_util.cc.ll
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/hw_intc_riscv_aclint.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_net_e1000x_common.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
-; qemu/optimized/target_riscv_m128_helper.c.ll
 ; qemu/optimized/util_host-utils.c.ll
 ; quickjs/optimized/libbf.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll

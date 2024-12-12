@@ -138,9 +138,7 @@
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/genetlink.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/gso.ll
 ; linux/optimized/hda_auto_parser.ll
-; linux/optimized/ht.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_bios.ll
@@ -198,10 +196,8 @@
 ; linux/optimized/xt_policy.ll
 ; linux/optimized/xt_tcpudp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
-; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
-; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
@@ -213,7 +209,6 @@
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/AsmWriter.cpp.ll
 ; llvm/optimized/AtomicExpandPass.cpp.ll
-; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
@@ -247,12 +242,10 @@
 ; llvm/optimized/MIRVRegNamerUtils.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -273,11 +266,10 @@
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/SemaTemplateVariadic.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
-; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/TargetRegisterInfo.cpp.ll
+; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86CallLowering.cpp.ll
 ; llvm/optimized/X86ExpandPseudo.cpp.ll
@@ -291,6 +283,16 @@
 ; lua/optimized/ldo.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_spinbox.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -381,7 +383,6 @@
 ; openjdk/optimized/relocInfo_x86.ll
 ; openjdk/optimized/zNMethod.ll
 ; openmpi/optimized/comm.ll
-; openssl/optimized/ctype_internal_test-bin-ctype_internal_test.ll
 ; openssl/optimized/evp_test-bin-evp_test.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
@@ -535,7 +536,6 @@
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; wireshark/optimized/packet-lapd.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
-; wireshark/optimized/packet-link16.c.ll
 ; wireshark/optimized/packet-mausb.c.ll
 ; wireshark/optimized/packet-mpeg-pes.c.ll
 ; wireshark/optimized/packet-nbt.c.ll

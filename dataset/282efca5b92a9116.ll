@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; abseil-cpp/optimized/charconv_parse.cc.ll
+; 3 occurrences:
 ; linux/optimized/hda_codec.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; openjdk/optimized/mlib_ImageClipping.ll
@@ -37,19 +36,6 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; slurm/optimized/priority_basic.ll
-; wireshark/optimized/packet-gprs-llc.c.ll
-; z3/optimized/sat_cutset.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 1
-  %4 = select i1 %3, i32 %1, i32 1
-  %5 = sub i32 %4, %0
-  ret i32 %5
-}
-
 ; 4 occurrences:
 ; llvm/optimized/LoopUnrollAndJamPass.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
@@ -72,6 +58,17 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
   %5 = sub nsw i32 %4, %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; z3/optimized/sat_cutset.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 2
+  %4 = select i1 %3, i32 %1, i32 10
+  %5 = sub i32 %4, %0
   ret i32 %5
 }
 

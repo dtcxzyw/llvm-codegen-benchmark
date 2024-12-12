@@ -21,7 +21,7 @@ entry:
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000184(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -35,7 +35,7 @@ entry:
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/jfrStringPool.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -51,7 +51,7 @@ entry:
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000104(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/minimize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64

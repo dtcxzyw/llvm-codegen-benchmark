@@ -1,6 +1,6 @@
 
-%struct.PendingWriteback.3467765 = type { %struct.buftag.3467766 }
-%struct.buftag.3467766 = type { i32, i32, i32, i32, i32 }
+%struct.PendingWriteback.3651956 = type { %struct.buftag.3651957 }
+%struct.buftag.3651957 = type { i32, i32, i32, i32, i32 }
 
 ; 4 occurrences:
 ; cmake/optimized/zstd_ldm.c.ll
@@ -8,27 +8,28 @@
 ; openjdk/optimized/g1CollectedHeap.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   %5 = sub i64 0, %1
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; lightgbm/optimized/train_share_states.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
   %6 = getelementptr nusw i32, ptr %4, i64 %5
   ret ptr %6
@@ -41,9 +42,9 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %struct.PendingWriteback.3467765, ptr %0, i64 %3
+  %4 = getelementptr %struct.PendingWriteback.3651956, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr %struct.PendingWriteback.3467765, ptr %4, i64 %5
+  %6 = getelementptr %struct.PendingWriteback.3651956, ptr %4, i64 %5
   ret ptr %6
 }
 

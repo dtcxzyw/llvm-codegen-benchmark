@@ -37,6 +37,6 @@ func0000000000000007:                   # @func0000000000000007
 	vpcmpeqq	.LCPI2_1(%rip){1to4}, %ymm1, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %xmm1   # xmm1 = [1,1,1,1]
 	vpbroadcastd	.LCPI2_3(%rip), %xmm1 {%k1} # xmm1 {%k1} = [2,2,2,2]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

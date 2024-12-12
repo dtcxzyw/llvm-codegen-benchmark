@@ -41,7 +41,7 @@ func0000000000000024:                   # @func0000000000000024
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpnltps	%zmm3, %zmm2, %k1
 	vmovaps	%zmm1, %zmm1 {%k1} {z}
-	vaddps	%zmm0, %zmm1, %zmm0
+	vaddps	%zmm1, %zmm0, %zmm0
 	vcmpgtps	.LCPI3_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

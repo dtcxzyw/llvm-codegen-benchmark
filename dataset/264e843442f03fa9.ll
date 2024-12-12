@@ -4,7 +4,7 @@
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000098(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2048
   %3 = icmp ne i32 %2, 0
@@ -13,7 +13,7 @@ entry:
   ret i1 %5
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; gromacs/optimized/gmx_cluster.cpp.ll
 ; gromacs/optimized/reversetopology.cpp.ll
@@ -40,10 +40,9 @@ entry:
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/jvmtiTrace.ll
 ; openmpi/optimized/pmix_iof.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
 ; postgres/optimized/subscriptioncmds.ll
 ; protobuf/optimized/descriptor.cc.ll
+; qemu/optimized/target_riscv_translate.c.ll
 ; re2/optimized/nfa.cc.ll
 ; spike/optimized/debug_module.ll
 ; Function Attrs: nounwind
@@ -95,19 +94,18 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/c1_LinearScan.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
 ; postgres/optimized/jsonfuncs.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000082(i8 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1024
-  %3 = icmp eq i32 %2, 0
+  %2 = and i32 %1, -2
+  %3 = icmp eq i32 %2, 2
   %4 = trunc nuw i8 %0 to i1
   %5 = or i1 %3, %4
   ret i1 %5

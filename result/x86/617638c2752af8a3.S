@@ -1,10 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
-	vcvttsd2si	%xmm0, %eax
-	incl	%edi
-	cmpl	%eax, %edi
-	sete	%al
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000061:                   # @func0000000000000061
 	vcvttsd2si	%xmm0, %eax
 	incl	%edi
 	cmpl	%eax, %edi
@@ -16,13 +10,19 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func0000000000000041:                   # @func0000000000000041
+	vcvttsd2si	%xmm0, %eax
+	incl	%edi
+	cmpl	%eax, %edi
+	sete	%al
+	retq
+func000000000000002c:                   # @func000000000000002c
 	vcvttsd2si	%xmm0, %eax
 	decl	%edi
 	cmpl	%eax, %edi
 	setne	%al
 	retq
-func0000000000000017:                   # @func0000000000000017
+func0000000000000027:                   # @func0000000000000027
 	vcvttsd2si	%xmm0, %eax
 	decl	%edi
 	cmpl	%eax, %edi
@@ -34,43 +34,43 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	%eax, %edi
 	setne	%al
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	vcvttsd2si	%xmm0, %eax
 	addl	$10, %edi
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func0000000000000037:                   # @func0000000000000037
+func0000000000000067:                   # @func0000000000000067
 	vcvttsd2si	%xmm0, %eax
 	addl	$2, %edi
 	cmpl	%eax, %edi
 	setle	%al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	vcvttsd2si	%xmm0, %eax
 	incl	%edi
 	cmpl	%eax, %edi
 	setge	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vcvttsd2si	%xmm0, %eax
 	addl	$-2, %edi
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vcvttsd2si	%xmm0, %eax
 	incl	%edi
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vcvttsd2si	%xmm0, %eax
 	decl	%edi
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vcvttsd2si	%xmm0, %eax
 	incl	%edi
 	cmpl	%eax, %edi

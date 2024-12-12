@@ -1,11 +1,12 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; cpython/optimized/dictobject.ll
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/SymbolGraphSerializer.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFile.cpp.ll
+; openmpi/optimized/dash_host.ll
 ; openspiel/optimized/spiel.cc.ll
 ; php/optimized/phpdbg_utils.ll
 ; redis/optimized/redis-cli.ll

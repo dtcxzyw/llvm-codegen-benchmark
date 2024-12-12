@@ -6,15 +6,14 @@
 define i32 @func00000000000001fe(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 7152
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = mul nuw nsw i32 %1, 722
   %6 = add nuw nsw i32 %4, %5
   %7 = udiv i32 %6, 10000
   ret i32 %7
 }
 
-; 4 occurrences:
-; icu/optimized/gregoimp.ll
+; 3 occurrences:
 ; memcached/optimized/memcached-itoa_ljust.ll
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
 ; sentencepiece/optimized/strutil.cc.ll
@@ -26,19 +25,6 @@ entry:
   %5 = mul i32 %0, -1000000
   %6 = add i32 %5, %4
   %7 = udiv i32 %6, 10000
-  ret i32 %7
-}
-
-; 1 occurrences:
-; icu/optimized/gregoimp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000080(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nsw i32 %2, -146097
-  %4 = add i32 %3, %1
-  %5 = mul i32 %0, -36524
-  %6 = add i32 %5, %4
-  %7 = udiv i32 %6, 1461
   ret i32 %7
 }
 

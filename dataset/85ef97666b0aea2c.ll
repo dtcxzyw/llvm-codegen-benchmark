@@ -1,5 +1,5 @@
 
-; 355 occurrences:
+; 358 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -9,7 +9,6 @@
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/ifDec07.c.ll
@@ -24,6 +23,12 @@
 ; arrow/optimized/io_util.cc.ll
 ; assimp/optimized/ObjFileParser.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/ipc_reliable_message_queue.ll
+; boost/optimized/mapped_file.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -111,7 +116,6 @@
 ; linux/optimized/af_unix.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/drm_probe_helper.ll
-; linux/optimized/drm_scdc_helper.ll
 ; linux/optimized/e1000_ethtool.ll
 ; linux/optimized/ethtool.ll
 ; linux/optimized/gen8_engine_cs.ll
@@ -133,7 +137,6 @@
 ; linux/optimized/keyring.ll
 ; linux/optimized/kprobes.ll
 ; linux/optimized/libata-eh.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mmu_gather.ll
 ; linux/optimized/mprotect.ll
@@ -188,7 +191,6 @@
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -245,6 +247,7 @@
 ; nori/optimized/nanovg.c.ll
 ; nori/optimized/screen.cpp.ll
 ; nuklear/optimized/unity.c.ll
+; nuttx/optimized/lib_strtold.c.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; oniguruma/optimized/regcomp.ll

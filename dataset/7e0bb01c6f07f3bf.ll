@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; clamav/optimized/special.c.ll
 ; darktable/optimized/NakedDecoder.cpp.ll
 ; darktable/optimized/RafDecoder.cpp.ll
@@ -11,6 +11,7 @@
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; llvm/optimized/RISCVTargetParser.cpp.ll
+; lvgl/optimized/lv_freetype_outline.ll
 ; miniaudio/optimized/unity.c.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; raylib/optimized/raudio.c.ll
@@ -40,7 +41,7 @@ entry:
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll

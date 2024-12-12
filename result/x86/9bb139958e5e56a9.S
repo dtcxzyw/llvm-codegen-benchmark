@@ -22,6 +22,11 @@ func000000000000000e:                   # @func000000000000000e
 	incl	%esi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
+func000000000000002f:                   # @func000000000000002f
+	leal	-268435456(%rsi), %eax
+	shlq	$28, %rax
+	addq	%rdi, %rax
+	retq
 func000000000000002b:                   # @func000000000000002b
 	leal	1(%rsi), %eax
 	shlq	$32, %rax

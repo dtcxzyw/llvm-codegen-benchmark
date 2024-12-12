@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; git/optimized/config.ll
 ; git/optimized/object-name.ll
 ; icu/optimized/decNumber.ll
@@ -9,6 +9,7 @@
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; oiio/optimized/bmpinput.cpp.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
 ; wireshark/optimized/msg_dlmap.c.ll

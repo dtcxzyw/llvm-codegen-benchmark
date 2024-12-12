@@ -14,7 +14,7 @@
 ; openjdk/optimized/IntRgbx.ll
 ; openjdk/optimized/ThreeByteBgr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = icmp slt i64 %0, 0
@@ -34,11 +34,22 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; boost/optimized/formatter.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 3, %1
+  %3 = icmp ult i64 %0, 4
+  %4 = select i1 %3, i32 %2, i32 2
+  ret i32 %4
+}
+
 ; 2 occurrences:
 ; hermes/optimized/CommandLine.cpp.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 8, %1
   %3 = icmp ult i64 %0, 8
@@ -49,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/grain_synthesis.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 2, %1
   %.not = icmp eq i64 %0, 0
@@ -60,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/zstd_decompress_block.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 8, %1
   %3 = icmp ugt i64 %0, 72057594037927935
@@ -71,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/aset.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 29, %1
   %3 = icmp ugt i64 %0, 8

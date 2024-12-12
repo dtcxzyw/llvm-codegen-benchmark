@@ -11,7 +11,7 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
@@ -21,7 +21,6 @@ entry:
 ; libquic/optimized/persistent_histogram_allocator.cc.ll
 ; libzmq/optimized/dist.cpp.ll
 ; libzmq/optimized/fq.cpp.ll
-; linux/optimized/auth_unix.ll
 ; llvm/optimized/BlockInCriticalSectionChecker.cpp.ll
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; xgboost/optimized/multi_target_tree_model.cc.ll
@@ -34,10 +33,9 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

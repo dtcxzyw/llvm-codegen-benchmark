@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; meshlab/optimized/packing.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/pyramids.cpp.ll
@@ -10,17 +11,18 @@
 define i32 @func0000000000000035(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
 
-; 128 occurrences:
+; 133 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; boost/optimized/area.ll
 ; cmake/optimized/x86.c.ll
 ; cpython/optimized/flowgraph.ll
 ; cvc5/optimized/core_solver.cpp.ll
@@ -65,6 +67,9 @@ entry:
 ; llvm/optimized/MachineTraceMetrics.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_refr.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/additionalgui.cpp.ll
@@ -84,10 +89,8 @@ entry:
 ; node/optimized/libnode.Protocol.ll
 ; nori/optimized/tabwidget.cpp.ll
 ; oiio/optimized/printinfo.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgtts2.c.ll
 ; openblas/optimized/dlarfb.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dormql.c.ll
 ; openblas/optimized/dormrq.c.ll
@@ -110,7 +113,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; openusd/optimized/json.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; php/optimized/array.ll
 ; php/optimized/decode.ll
@@ -144,17 +146,23 @@ entry:
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; z3/optimized/dl_table.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; abc/optimized/bmcMaj.c.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/CGUIImage.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
@@ -167,7 +175,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -181,29 +189,26 @@ entry:
 define i32 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
 
-; 12 occurrences:
+; 9 occurrences:
 ; abc/optimized/acbMfs.c.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/dormql.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; gromacs/optimized/sormql.cpp.ll
 ; icu/optimized/ubidiln.ll
 ; ncnn/optimized/psroipooling.cpp.ll
 ; ncnn/optimized/roipooling.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; wireshark/optimized/reedsolomon.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -224,20 +229,18 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaTim.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/mfsResub.c.ll
 ; abc/optimized/sbdCore.c.ll
-; gromacs/optimized/dlarfb.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/vc_screen.ll
 ; llvm/optimized/Instructions.cpp.ll
@@ -249,7 +252,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -281,7 +284,7 @@ entry:
 define i32 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -293,7 +296,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -312,7 +315,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nuw i32 %4, %0
   ret i32 %5
 }
@@ -329,7 +332,7 @@ entry:
 define i32 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -340,7 +343,7 @@ entry:
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
+; lvgl/optimized/lv_chart.ll
 ; opencv/optimized/persistence_yml.cpp.ll
 ; protobuf/optimized/parse_context.cc.ll
 ; redis/optimized/hdr_histogram.ll
@@ -350,7 +353,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -361,7 +364,7 @@ entry:
 define i32 @func000000000000003d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -374,7 +377,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -386,7 +389,7 @@ entry:
 define i32 @func0000000000000034(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -397,7 +400,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -408,7 +411,7 @@ entry:
 define i32 @func000000000000002d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -420,7 +423,7 @@ entry:
 define i32 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -431,7 +434,7 @@ entry:
 define i32 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -442,7 +445,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -453,7 +456,7 @@ entry:
 define i32 @func0000000000000022(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nuw i32 %4, %0
   ret i32 %5
 }

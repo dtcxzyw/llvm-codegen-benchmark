@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000054(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000056(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -8

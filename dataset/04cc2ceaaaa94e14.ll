@@ -5,7 +5,7 @@
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -19,7 +19,7 @@ entry:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; rocksdb/optimized/db_filesnapshot.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

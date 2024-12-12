@@ -1,18 +1,18 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	li	a0, 6
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vmul.vv	v8, v8, v10
 	vmslt.vv	v0, v12, v8
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	li	a0, 6
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vmul.vv	v8, v8, v10
 	vmsltu.vv	v0, v8, v12
 	ret
-func0000000000000079:                   # @func0000000000000079
+func00000000000000e9:                   # @func00000000000000e9
 	li	a0, 12
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v12, v12, a0
@@ -34,36 +34,43 @@ func0000000000000006:                   # @func0000000000000006
 	vmul.vv	v8, v8, v10
 	vmslt.vv	v0, v8, v12
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	li	a0, 3
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vmul.vv	v8, v8, v10
 	vmslt.vv	v0, v8, v12
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	li	a0, 100
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vmul.vv	v8, v8, v10
 	vmslt.vv	v0, v8, v12
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	li	a0, 6
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vmul.vv	v8, v8, v10
 	vmseq.vv	v0, v8, v12
 	ret
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	li	a0, 20
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vmul.vv	v8, v8, v10
 	vmslt.vv	v0, v12, v8
 	ret
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	li	a0, 9
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmul.vx	v12, v12, a0
+	vmul.vv	v8, v8, v10
+	vmsltu.vv	v0, v12, v8
+	ret
+func00000000000000f8:                   # @func00000000000000f8
+	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vmul.vv	v8, v8, v10

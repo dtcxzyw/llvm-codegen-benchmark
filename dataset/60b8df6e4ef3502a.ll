@@ -3,7 +3,7 @@
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c7(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000187(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = icmp eq i32 %1, 2
@@ -32,7 +32,7 @@ entry:
 ; verilator/optimized/V3PreProc.cpp.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d9(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000199(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = icmp slt i32 %1, 1

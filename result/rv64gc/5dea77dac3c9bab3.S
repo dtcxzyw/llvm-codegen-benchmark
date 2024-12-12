@@ -9,19 +9,18 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
-	bnez	a0, .LBB1_2
-	li	a0, -10
-	subw	a0, a0, a1
-	ret
-.LBB1_2:
-	li	a0, -12
+	beqz	a0, .LBB1_2
+	lui	a0, 5
+	addi	a1, a0, -481
+.LBB1_2:                                # %entry
+	negw	a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
-	li	a0, 17
+	li	a0, 4
 	subw	a0, a0, a1
 	ret
 .LBB2_2:
-	li	a0, 1091
+	li	a0, -49
 	ret

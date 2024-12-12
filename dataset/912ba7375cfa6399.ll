@@ -3,7 +3,7 @@
 ; hermes/optimized/escape.cpp.ll
 ; icu/optimized/ufmt_cmn.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000014(i16 %0, i8 %1, i16 %2) #0 {
+define i16 @func0000000000000024(i16 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %2, 48
   %4 = icmp ult i8 %1, -96
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/level.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i8 %1, i16 %2) #0 {
+define i16 @func0000000000000021(i16 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %2, 1024
   %4 = icmp eq i8 %1, 0

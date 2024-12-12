@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; linux/optimized/inotify_user.ll
 ; llvm/optimized/APINotesReader.cpp.ll
@@ -11,11 +11,13 @@
 ; minetest/optimized/guiButton.cpp.ll
 ; openjdk/optimized/X11Renderer.ll
 ; openusd/optimized/jsonSerialization.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
 ; qemu/optimized/accel_tcg_cpu-exec.c.ll
 ; qemu/optimized/ui_input-legacy.c.ll
 ; ruby/optimized/bignum.ll
 ; rust-analyzer-rs/optimized/2hhegu64ori9jrrl.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
@@ -47,7 +49,8 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; abseil-cpp/optimized/convert_test.cc.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i64 %1) #0 {

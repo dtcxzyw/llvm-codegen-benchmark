@@ -21,7 +21,7 @@ entry:
 }
 
 ; 17 occurrences:
-; hyperscan/optimized/accel.c.ll
+; boost/optimized/dump_avx2.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/hwlm.c.ll
 ; hyperscan/optimized/lbr.c.ll
@@ -39,12 +39,12 @@ entry:
 ; php/optimized/zend_alloc.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0) #0 {
+define ptr @func000000000000000f(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = and i64 %1, 63
   %3 = sub nuw nsw i64 64, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

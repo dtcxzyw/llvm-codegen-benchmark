@@ -24,12 +24,12 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i16, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 500
-  %6 = getelementptr i16, ptr %5, i64 %1
+  %4 = getelementptr i16, ptr %0, i64 %1
+  %5 = getelementptr i16, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 500
   ret ptr %6
 }
 
@@ -37,19 +37,19 @@ entry:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i16, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 500
-  %6 = getelementptr i16, ptr %5, i64 %1
+  %4 = getelementptr i16, ptr %0, i64 %1
+  %5 = getelementptr i16, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 500
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; clamav/optimized/udf.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3

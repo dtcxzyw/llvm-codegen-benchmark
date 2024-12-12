@@ -10,5 +10,5 @@ func0000000000000001:                   # @func0000000000000001
 	vremu.vv	v14, v12, v10
 	vadd.vv	v10, v12, v10
 	vsub.vv	v10, v10, v14
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret

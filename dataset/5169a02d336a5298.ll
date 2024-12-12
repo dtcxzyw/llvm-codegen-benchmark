@@ -1,5 +1,5 @@
 
-; 273 occurrences:
+; 278 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/kitDsd.c.ll
@@ -105,7 +105,6 @@
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CodeGenTypes.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
@@ -118,7 +117,6 @@
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/ODRHash.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
@@ -143,6 +141,12 @@
 ; luajit/optimized/lj_meta_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/mesh_generator_thread.cpp.ll
@@ -166,13 +170,13 @@
 ; openspiel/optimized/dark_chess.cc.ll
 ; openspiel/optimized/kriegspiel.cc.ll
 ; openspiel/optimized/rbc.cc.ll
-; openssl/optimized/ctype_internal_test-bin-ctype_internal_test.ll
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/convolve.c.ll
 ; openusd/optimized/entdec.c.ll
 ; openusd/optimized/level.cpp.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; php/optimized/pcre2_match.ll
+; postgres/optimized/refint.ll
 ; postgres/optimized/regcomp.ll
 ; postgres/optimized/spgutils.ll
 ; postgres/optimized/tsrank.ll
@@ -183,7 +187,6 @@
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/replay_replay-internal.c.ll
 ; qemu/optimized/target_riscv_gdbstub.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
@@ -195,8 +198,10 @@
 ; redis/optimized/tcache.sym.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/date_parse.ll
+; slurm/optimized/heartbeat.ll
 ; slurm/optimized/job_scheduler.ll
 ; slurm/optimized/slurm_protocol_api.ll
+; slurm/optimized/slurmd.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
@@ -281,13 +286,16 @@ entry:
   ret i32 %2
 }
 
-; 13 occurrences:
+; 16 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
 ; libevent/optimized/evmap.c.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/xt_policy.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
+; openjdk/optimized/hb-face-builder.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
@@ -298,7 +306,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i16 %0) #0 {
 entry:
-  %1 = lshr exact i16 %0, 1
+  %1 = lshr exact i16 %0, 8
   %2 = zext nneg i16 %1 to i32
   ret i32 %2
 }

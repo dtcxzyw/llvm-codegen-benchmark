@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; mitsuba3/optimized/envmap.cpp.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:

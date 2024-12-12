@@ -1,7 +1,5 @@
 
-; 5 occurrences:
-; casadi/optimized/mx_function.cpp.ll
-; casadi/optimized/sx_function.cpp.ll
+; 3 occurrences:
 ; clap-rs/optimized/thb07xvb2pkztra.ll
 ; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll

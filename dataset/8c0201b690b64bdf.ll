@@ -1,8 +1,5 @@
 
-; 12 occurrences:
-; jemalloc/optimized/bin.ll
-; jemalloc/optimized/bin.pic.ll
-; jemalloc/optimized/bin.sym.ll
+; 9 occurrences:
 ; jemalloc/optimized/sec.ll
 ; jemalloc/optimized/sec.pic.ll
 ; jemalloc/optimized/sec.sym.ll

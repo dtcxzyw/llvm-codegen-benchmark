@@ -1,4 +1,4 @@
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	leal	-7(%rsi,%rdx), %eax
 	addl	$8, %edi
 	cmpl	%eax, %edi
@@ -10,18 +10,18 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leal	4(%rsi,%rdx), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	leal	-3(%rsi,%rdx), %eax
 	addl	$4, %edi
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000176:                   # @func0000000000000176
+func00000000000002e6:                   # @func00000000000002e6
 	leal	-2(%rsi,%rdx), %eax
 	addl	$2, %edi
 	cmpl	%eax, %edi
@@ -33,35 +33,35 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000171:                   # @func0000000000000171
+func00000000000002e1:                   # @func00000000000002e1
 	leal	-2(%rsi,%rdx), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	leal	-5(%rsi,%rdx), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	addl	%edx, %esi
 	addl	$5, %edi
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	leal	-6(%rsi,%rdx), %eax
 	addl	$6, %edi
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	leal	-2(%rsi,%rdx), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	leal	-2(%rsi,%rdx), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

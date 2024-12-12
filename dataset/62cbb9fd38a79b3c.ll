@@ -7,7 +7,7 @@
 define i32 @func0000000000000030(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = or i32 %0, 16
   %6 = select i1 %4, i32 %0, i32 %5
   ret i32 %6
@@ -25,7 +25,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = or disjoint i32 %0, 2048
   %6 = select i1 %4, i32 %0, i32 %5
   ret i32 %6
@@ -56,7 +56,7 @@ entry:
 define i32 @func0000000000000012(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = or disjoint i32 %0, 1073741824
   %6 = select i1 %4, i32 %0, i32 %5
   ret i32 %6
@@ -68,7 +68,7 @@ entry:
 define i32 @func0000000000000032(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 6
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = or disjoint i32 %0, 4
   %6 = select i1 %4, i32 %0, i32 %5
   ret i32 %6

@@ -1,12 +1,12 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000006c:                   # @func000000000000006c
 	addq	$16, %rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	setne	%al
 	xorb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	addq	$8, %rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	xorb	%dil, %al
 	retq

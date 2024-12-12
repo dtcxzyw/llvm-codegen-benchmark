@@ -1,10 +1,11 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/intel_lvds.ll
 ; postgres/optimized/brin_tuple.ll
 ; postgres/optimized/expandedrecord.ll
 ; postgres/optimized/heapam_handler.ll
 ; postgres/optimized/heaptoast.ll
+; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {

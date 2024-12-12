@@ -18,18 +18,6 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000100(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 1
-  %3 = zext i1 %2 to i64
-  %4 = add i64 %0, 19
-  %5 = add i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
 ; openusd/optimized/read.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000180(i64 %0, i64 %1) #0 {
@@ -41,10 +29,9 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
-; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/writer.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000185(i64 %0, i64 %1) #0 {

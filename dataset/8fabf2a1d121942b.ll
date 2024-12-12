@@ -11,19 +11,18 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
-; opencv/optimized/bound_min.cpp.ll
 ; opencv/optimized/face_beautification.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 720
   %.idx = shl nsw i64 %4, 4
-  %5 = getelementptr nusw i8, ptr %0, i64 %.idx
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
   ret ptr %5
 }
 
@@ -47,6 +46,20 @@ entry:
   %4 = sdiv exact i64 %3, 88
   %5 = shl nuw nsw i64 %4, 3
   %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; opencv/optimized/checker_detector.cpp.ll
+; quantlib/optimized/longstaffschwartzmultipathpricer.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 56
+  %5 = shl nuw nsw i64 %4, 3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -219,38 +232,36 @@ entry:
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; g2o/optimized/solver_dense.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000027(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = sdiv i64 %3, 4
   %.idx = shl nsw i64 %4, 5
-  %5 = getelementptr nusw i8, ptr %0, i64 %.idx
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
   ret ptr %5
 }
 
-; 2 occurrences:
-; hyperscan/optimized/mcclellancompile.cpp.ll
-; opencv/optimized/checker_detector.cpp.ll
+; 1 occurrences:
+; opencv/optimized/bound_min.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
-  %.idx = shl nsw i64 %4, 5
-  %5 = getelementptr nusw i8, ptr %0, i64 %.idx
-  ret ptr %5
+  %5 = shl nsw i64 %4, 4
+  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hyperscan/optimized/rose_build_engine_blob.cpp.ll
-; mimalloc/optimized/segment.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
   %5 = shl i64 %4, 8
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -264,6 +275,18 @@ entry:
   %4 = sdiv exact i64 %3, 80
   %5 = shl i64 %4, 16
   %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; mimalloc/optimized/segment.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 80
+  %5 = shl i64 %4, 16
+  %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

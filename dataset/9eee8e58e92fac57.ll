@@ -1,5 +1,5 @@
 
-; 684 occurrences:
+; 686 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; annoy/optimized/annoymodule.ll
@@ -325,6 +325,7 @@
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; luau/optimized/Conformance.test.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -339,7 +340,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
@@ -684,6 +684,8 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

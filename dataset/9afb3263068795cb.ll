@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -8,7 +8,6 @@
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; icu/optimized/ucnvmbcs.ll
 ; libquic/optimized/tls_cbc.c.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
@@ -26,7 +25,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
   %4 = select i1 %1, i32 -1, i32 %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

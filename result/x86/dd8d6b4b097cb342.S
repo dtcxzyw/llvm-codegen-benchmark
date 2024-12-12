@@ -11,3 +11,11 @@ func0000000000000000:                   # @func0000000000000000
 	orq	%rcx, %rax
 	xorl	%edx, %edx
 	retq
+func0000000000000003:                   # @func0000000000000003
+	movq	%rdi, %rax
+	orq	%rdx, %rax
+	orq	%rcx, %rsi
+	shrdq	$3, %rsi, %rax
+	shrq	$3, %rsi
+	movq	%rsi, %rdx
+	retq

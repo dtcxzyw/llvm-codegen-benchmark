@@ -9,6 +9,13 @@ func0000000000000009:                   # @func0000000000000009
 	shrl	$8, %eax
 	addl	%ecx, %eax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	shrl	$3, %esi
+	imulq	$381774871, %rsi, %rcx          # imm = 0x16C16C17
+	shrq	$34, %rcx
+	imull	$213, %edi, %eax
+	addl	%ecx, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	imull	$1000, %esi, %ecx               # imm = 0x3E8
 	movl	%edi, %eax
@@ -23,14 +30,6 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edi, %edi
 	leal	(%rdi,%rdi,4), %ecx
 	subl	%ecx, %eax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	movl	%esi, %eax
-	movl	$3518437209, %ecx               # imm = 0xD1B71759
-	imulq	%rax, %rcx
-	shrq	$45, %rcx
-	imull	$246, %edi, %eax
-	addl	%ecx, %eax
 	retq
 func000000000000001b:                   # @func000000000000001b
 	imull	$400, %esi, %ecx                # imm = 0x190

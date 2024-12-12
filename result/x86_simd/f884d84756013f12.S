@@ -42,7 +42,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm1, %ymm1
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB

@@ -3,7 +3,7 @@
 ; minetest/optimized/CGUIComboBox.cpp.ll
 ; minetest/optimized/CGUIListBox.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -16,7 +16,7 @@ entry:
 ; minetest/optimized/CGUIComboBox.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000296(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000526(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
@@ -31,7 +31,7 @@ entry:
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -44,7 +44,7 @@ entry:
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000408(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/postaloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
@@ -95,7 +95,7 @@ entry:
 ; llvm/optimized/SemaType.cpp.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000404(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -119,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nuw nsw i64 %1 to i32
@@ -131,7 +131,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/hxprops.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = trunc nsw i64 %1 to i32
@@ -155,7 +155,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000316(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000626(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -167,7 +167,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a6(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nuw nsw i64 %1 to i32
@@ -179,7 +179,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -191,7 +191,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nsw i64 %1 to i32
@@ -205,7 +205,7 @@ entry:
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000504(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
@@ -243,7 +243,7 @@ entry:
 ; opencv/optimized/descriptor.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -256,7 +256,7 @@ entry:
 ; opencv/optimized/cornersubpix.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000029a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000052a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32

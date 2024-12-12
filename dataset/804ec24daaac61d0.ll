@@ -24,19 +24,6 @@ entry:
   ret double %3
 }
 
-; 3 occurrences:
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; osqp/optimized/scaling.c.ll
-; proj/optimized/vandg.cpp.ll
-; Function Attrs: nounwind
-define double @func0000000000000004(double %0) #0 {
-entry:
-  %1 = fcmp ogt double %0, 1.000000e+00
-  %2 = select i1 %1, double 1.000000e+00, double %0
-  %3 = fdiv double 2.000000e+00, %2
-  ret double %3
-}
-
 ; 1 occurrences:
 ; openblas/optimized/dtgevc.c.ll
 ; Function Attrs: nounwind

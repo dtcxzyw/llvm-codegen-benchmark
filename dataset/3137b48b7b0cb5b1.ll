@@ -6,11 +6,34 @@ define i1 @func0000000000000001(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i32, ptr %2, i64 %1
   %4 = getelementptr i32, ptr %3, i64 %1
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 67 occurrences:
+; 2 occurrences:
+; openvdb/optimized/LevelSetMeasure.cc.ll
+; php/optimized/zend_observer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000141(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw double, ptr %2, i64 %1
+  %4 = getelementptr nusw double, ptr %3, i64 %1
+  %5 = icmp eq ptr %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; abc/optimized/utilIsop.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000144(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i64, ptr %2, i64 %1
+  %4 = getelementptr nusw i64, ptr %3, i64 %1
+  %5 = icmp ult ptr %0, %4
+  ret i1 %5
+}
+
+; 65 occurrences:
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -76,28 +99,12 @@ entry:
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; openvdb/optimized/LevelSetMeasure.cc.ll
-; php/optimized/zend_observer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000001e1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw double, ptr %2, i64 %1
-  %4 = getelementptr nusw double, ptr %3, i64 %1
-  %5 = icmp eq ptr %4, %0
-  ret i1 %5
-}
-
-; 4 occurrences:
-; abc/optimized/utilIsop.c.ll
-; cmake/optimized/huf_decompress.c.ll
-; freetype/optimized/sfnt.c.ll
-; zstd/optimized/huf_decompress.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i64, ptr %2, i64 %1
-  %4 = getelementptr nusw i64, ptr %3, i64 %1
-  %5 = icmp ugt ptr %4, %0
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -161,11 +168,11 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000001ec(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw ptr, ptr %2, i64 %1
-  %4 = getelementptr nusw ptr, ptr %3, i64 %1
-  %5 = icmp ne ptr %4, %0
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -179,11 +186,24 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000001e8(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 %1
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = icmp ult ptr %4, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = icmp ugt ptr %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; cmake/optimized/huf_decompress.c.ll
+; freetype/optimized/sfnt.c.ll
+; zstd/optimized/huf_decompress.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e4(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -194,7 +214,7 @@ define i1 @func0000000000000008(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
@@ -205,7 +225,7 @@ define i1 @func0000000000000004(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 

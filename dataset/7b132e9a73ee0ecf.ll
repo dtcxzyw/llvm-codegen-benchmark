@@ -1,6 +1,7 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
+; icu/optimized/uconv.ll
 ; icu/optimized/unistr.ll
 ; icu/optimized/unistr_cnv.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll

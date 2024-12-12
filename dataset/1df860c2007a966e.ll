@@ -1,5 +1,5 @@
 
-; 149 occurrences:
+; 143 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -49,8 +49,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -122,8 +120,6 @@
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/optimize.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; rocksdb/optimized/blob_file_cache.cc.ll
@@ -143,8 +139,6 @@
 ; spike/optimized/mulh.ll
 ; spike/optimized/mulhsu.ll
 ; spike/optimized/mulhu.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/vmulhu_vx.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
@@ -153,15 +147,16 @@
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -219,7 +214,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = lshr i64 %3, 6
   ret i64 %4
 }
@@ -242,7 +237,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967288
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = lshr exact i64 %3, 3
   ret i64 %4
 }

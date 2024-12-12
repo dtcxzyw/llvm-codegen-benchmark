@@ -25,7 +25,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 1, i64 -8190
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = shl nuw i64 %4, 51
   %6 = and i64 %0, 2251799813685247
   %7 = or disjoint i64 %6, %5

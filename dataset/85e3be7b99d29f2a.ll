@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000002a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %3, -1
@@ -24,7 +24,7 @@ entry:
 ; luau/optimized/Lexer.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000608(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %3, 4

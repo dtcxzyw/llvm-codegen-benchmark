@@ -10,6 +10,6 @@ func0000000000000004:                   # @func0000000000000004
 func000000000000000a:                   # @func000000000000000a
 	leaq	(%rdi,%rsi), %rcx
 	testq	%rcx, %rcx
-	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
+	movl	$30, %eax
 	cmovgq	%rcx, %rax
 	retq

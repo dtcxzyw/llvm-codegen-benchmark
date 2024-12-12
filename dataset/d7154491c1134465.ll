@@ -1,26 +1,23 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_switch.ll
 ; openjdk/optimized/DrawLine.ll
 ; openspiel/optimized/oh_hell.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 12 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; openblas/optimized/dsptri.c.ll
-; openblas/optimized/lapacke_c_nancheck.c.ll
-; openblas/optimized/lapacke_d_nancheck.c.ll
-; openblas/optimized/lapacke_s_nancheck.c.ll
-; openblas/optimized/lapacke_z_nancheck.c.ll
 ; opencv/optimized/estimated_covariance.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
@@ -30,7 +27,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -42,7 +39,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
@@ -58,7 +55,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 

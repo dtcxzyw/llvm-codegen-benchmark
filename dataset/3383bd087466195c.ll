@@ -6,8 +6,8 @@ define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %notmask = shl nsw i32 -1, %2
   %3 = xor i32 %notmask, -1
-  %4 = and i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = and i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -19,8 +19,8 @@ define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %notmask = shl nsw i32 -1, %2
   %3 = xor i32 %notmask, -1
-  %4 = and i32 %3, %1
-  %5 = add nuw i32 %4, %0
+  %4 = and i32 %1, %3
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 

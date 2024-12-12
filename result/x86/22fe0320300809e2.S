@@ -75,8 +75,8 @@ func0000000000000005:                   # @func0000000000000005
 	orl	%esi, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	movzwl	%si, %eax
-	shll	$8, %eax
-	shll	$24, %edi
-	orl	%edi, %eax
+	movl	%edi, %eax
+	shll	$24, %esi
+	shll	$16, %eax
+	orl	%esi, %eax
 	retq

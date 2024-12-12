@@ -31,8 +31,11 @@ func0000000000000013:                   // @func0000000000000013
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	mov	w8, #38                         // =0x26
+	mov	x8, #17949                      // =0x461d
 	add	x9, x0, x1
+	movk	x8, #28952, lsl #16
+	movk	x8, #48327, lsl #32
+	movk	x8, #10, lsl #48
 	mul	x0, x9, x8
 	umulh	x1, x9, x8
 	ret

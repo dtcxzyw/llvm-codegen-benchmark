@@ -9,7 +9,7 @@ func0000000000000010:                   // @func0000000000000010
 	add	x0, x9, x8
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	mov	w8, #55537                      // =0xd8f1
 	mov	w9, #24                         // =0x18
@@ -20,7 +20,7 @@ func000000000000001a:                   // @func000000000000001a
 	add	x0, x9, x8
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
 	and	w8, w2, #0xffff
 	cmp	w8, #13
@@ -39,7 +39,7 @@ func0000000000000080:                   // @func0000000000000080
 	add	x0, x9, x8
 	ret
                                         // -- End function
-func0000000000000088:                   // @func0000000000000088
+func000000000000008c:                   // @func000000000000008c
 // %bb.0:                               // %entry
 	and	w8, w2, #0xffff
 	mov	w9, #6918                       // =0x1b06

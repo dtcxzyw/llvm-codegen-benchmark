@@ -2,7 +2,7 @@
 	.long	42                              # 0x2a
 .LCPI0_1:
 	.long	32                              # 0x20
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpxord	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpsrlvd	%ymm1, %ymm2, %ymm1
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm0, %k1
@@ -14,7 +14,7 @@ func0000000000000014:                   # @func0000000000000014
 	.long	42                              # 0x2a
 .LCPI1_1:
 	.long	4351                            # 0x10ff
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpxord	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpsrlvd	%ymm1, %ymm2, %ymm1
 	vptestmd	%ymm1, %ymm1, %k0
@@ -27,7 +27,7 @@ func0000000000000018:                   # @func0000000000000018
 	.long	42                              # 0x2a
 .LCPI2_1:
 	.long	12351                           # 0x303f
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpxord	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpsrlvd	%ymm1, %ymm2, %ymm1
 	vptestmd	%ymm1, %ymm1, %k0

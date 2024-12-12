@@ -6,6 +6,15 @@ func0000000000000003:                   # @func0000000000000003
 	srli	a0, a0, 48
 	addw	a0, a0, a1
 	ret
+func0000000000000001:                   # @func0000000000000001
+	andi	a3, a0, 1
+	andi	a0, a2, 511
+	bnez	a3, .LBB1_2
+	lui	a1, 16
+	addi	a1, a1, -6
+.LBB1_2:                                # %entry
+	addw	a0, a0, a1
+	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 63
 	slli	a0, a0, 52
@@ -13,12 +22,4 @@ func0000000000000000:                   # @func0000000000000000
 	and	a1, a1, a2
 	srli	a0, a0, 52
 	addw	a0, a0, a1
-	ret
-func0000000000000001:                   # @func0000000000000001
-	andi	a1, a1, 1
-	bnez	a1, .LBB2_2
-	li	a2, -126
-.LBB2_2:                                # %entry
-	andi	a0, a0, 255
-	addw	a0, a0, a2
 	ret

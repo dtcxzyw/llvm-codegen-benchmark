@@ -15,8 +15,7 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; linux/optimized/sync.ll
+; 2 occurrences:
 ; linux/optimized/xfrm_policy.ll
 ; redis/optimized/networking.ll
 ; Function Attrs: nounwind
@@ -24,7 +23,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = icmp sgt i64 %2, 0
-  %4 = select i1 %3, i64 %2, i64 9223372036854775807
+  %4 = select i1 %3, i64 %2, i64 30
   ret i64 %4
 }
 

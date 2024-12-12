@@ -41,7 +41,7 @@ entry:
   ret i32 %4
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/abcNpn.c.ll
 ; abc/optimized/absOldCex.c.ll
@@ -59,7 +59,6 @@ entry:
 ; abc/optimized/saigDup.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; lief/optimized/des.c.ll
 ; llama.cpp/optimized/ggml-quants.c.ll

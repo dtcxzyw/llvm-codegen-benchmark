@@ -1,8 +1,10 @@
 
-; 57 occurrences:
+; 58 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; arrow/optimized/UriNormalize.c.ll
+; boost/optimized/console_buffer.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/frm_driver.c.ll
 ; git/optimized/apply.ll
 ; git/optimized/cache-tree.ll
@@ -31,7 +33,6 @@
 ; openjdk/optimized/nmethod.ll
 ; openjdk/optimized/stubs.ll
 ; php/optimized/rfc1867.ll
-; proj/optimized/wkt_parser.cpp.ll
 ; protobuf/optimized/parse_context.cc.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/sprintf.ll
@@ -62,14 +63,15 @@ define i1 @func0000000000000006(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
-; 106 occurrences:
+; 107 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
+; boost/optimized/collator.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; git/optimized/cache-tree.ll
 ; git/optimized/show-ref.ll
@@ -178,13 +180,14 @@ define i1 @func000000000000000a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
 ; 110 occurrences:
 ; abc/optimized/inffast.c.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/options_description.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/infblock.c.ll
@@ -202,7 +205,6 @@ entry:
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hermes/optimized/ASTBuilder.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; hyperscan/optimized/fdr.c.ll
 ; hyperscan/optimized/teddy.c.ll
@@ -298,7 +300,7 @@ define i1 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -308,15 +310,15 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cmp_client.ll
 ; postgres/optimized/xlog.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
-; 365 occurrences:
+; 368 occurrences:
 ; abc/optimized/gzwrite.c.ll
 ; abc/optimized/verFormula.c.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -454,6 +456,7 @@ entry:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cmesh.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -674,6 +677,8 @@ entry:
 ; yosys/optimized/simplify.ll
 ; yosys/optimized/verilog_backend.ll
 ; z3/optimized/datalog_parser.cpp.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; zxing/optimized/BitArray.cpp.ll
@@ -687,11 +692,11 @@ define i1 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
-; 58 occurrences:
+; 61 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -746,6 +751,9 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
@@ -755,7 +763,7 @@ define i1 @func0000000000000004(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -797,22 +805,22 @@ entry:
 ; quantlib/optimized/unitedstates.ll
 ; yosys/optimized/cxxrtl_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -831,7 +839,7 @@ define i1 @func0000000000000005(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp uge i32 %4, %0
+  %5 = icmp ule i32 %0, %4
   ret i1 %5
 }
 
@@ -846,18 +854,18 @@ define i1 @func000000000000000b(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp sle i32 %4, %0
+  %5 = icmp sge i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/postaloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc nsw i64 %3 to i32
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -872,18 +880,18 @@ define i1 @func0000000000000007(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp sge i32 %4, %0
+  %5 = icmp sle i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -892,22 +900,22 @@ entry:
 ; lief/optimized/ssl_cache.c.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; quantlib/optimized/brazil.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ne i32 %4, %0
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 
@@ -917,33 +925,33 @@ entry:
 ; opencv/optimized/floodfill.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; slurm/optimized/common_topo.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fa(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001ea(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = trunc nuw nsw i64 %3 to i32
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -955,7 +963,7 @@ define i1 @func0000000000000009(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ule i32 %4, %0
+  %5 = icmp uge i32 %0, %4
   ret i1 %5
 }
 
@@ -963,22 +971,22 @@ entry:
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/sbdsqr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc nsw i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/gmx_vanhove.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e6(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c6(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -986,44 +994,44 @@ entry:
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/output_core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/gre_offload.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc nsw i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/balloc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; cvc5/optimized/strings_entail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -1036,29 +1044,29 @@ define i1 @func000000000000000c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ne i32 %4, %0
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; postgres/optimized/xlog.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000047(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000087(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp sge i32 %4, %0
+  %5 = icmp sle i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; node/optimized/libnode.string_bytes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -1066,33 +1074,33 @@ entry:
 ; luajit/optimized/lj_ccallback.ll
 ; luajit/optimized/lj_ccallback_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc nuw nsw i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000089(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp ule i32 %4, %0
+  %5 = icmp uge i32 %0, %4
   ret i1 %5
 }
 

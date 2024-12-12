@@ -79,6 +79,17 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_tlsf.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = and i32 %1, -8
+  %3 = add i32 %2, -15
+  ret i32 %3
+}
+
+; 1 occurrences:
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i64 %0) #0 {

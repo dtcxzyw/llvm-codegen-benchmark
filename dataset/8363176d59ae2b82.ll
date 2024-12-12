@@ -1,11 +1,10 @@
 
-%"struct.drjit::divisor.2487265" = type <{ i32, i32, i8 }>
+%"struct.drjit::divisor.2602697" = type <{ i32, i32, i8 }>
 
-; 11 occurrences:
+; 10 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; libsodium/optimized/libaesni_la-aead_aes256gcm_aesni.ll
 ; libsodium/optimized/libsodium_la-core_ed25519.ll
-; libsodium/optimized/libsodium_la-core_ristretto255.ll
 ; linux/optimized/hid-sony.ll
 ; qemu/optimized/hw_pci_pci.c.ll
 ; ruby/optimized/compile.ll
@@ -21,7 +20,7 @@ entry:
   ret ptr %3
 }
 
-; 60 occurrences:
+; 58 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; arrow/optimized/basic_decimal.cc.ll
@@ -41,10 +40,8 @@ entry:
 ; jemalloc/optimized/decay.pic.ll
 ; jemalloc/optimized/decay.sym.ll
 ; libquic/optimized/spdy_framer.cc.ll
-; lief/optimized/aesni.c.ll
 ; lief/optimized/des.c.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
-; meshlab/optimized/load_project.cpp.ll
 ; mimalloc/optimized/arena.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/grid.cpp.ll
@@ -83,19 +80,18 @@ entry:
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 2, %1
-  %3 = getelementptr nusw [3 x %"struct.drjit::divisor.2487265"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [3 x %"struct.drjit::divisor.2602697"], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_hw.ll
 ; proxygen/optimized/HPACKDecodeBuffer.cpp.ll
-; ropey-rs/optimized/21bl6c983bdkzf7g.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
@@ -104,48 +100,56 @@ entry:
   ret ptr %3
 }
 
-; 36 occurrences:
+; 17 occurrences:
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/sbdCore.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
-; lief/optimized/ccm.c.ll
 ; lua/optimized/ldump.ll
 ; lua/optimized/llex.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openblas/optimized/dsbmv_thread_U.c.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dspr2_thread_U.c.ll
-; openblas/optimized/dspr_thread_U.c.ll
-; openblas/optimized/dsymv_thread_U.c.ll
-; openblas/optimized/dsyr2_thread_U.c.ll
-; openblas/optimized/dsyr_thread_U.c.ll
 ; openblas/optimized/dsyrk_thread_UN.c.ll
 ; openblas/optimized/dsyrk_thread_UT.c.ll
 ; openblas/optimized/dtbmv_thread_NUN.c.ll
 ; openblas/optimized/dtbmv_thread_NUU.c.ll
 ; openblas/optimized/dtbmv_thread_TUN.c.ll
 ; openblas/optimized/dtbmv_thread_TUU.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
-; openblas/optimized/dtrmv_thread_NUN.c.ll
-; openblas/optimized/dtrmv_thread_NUU.c.ll
-; openblas/optimized/dtrmv_thread_TUN.c.ll
-; openblas/optimized/dtrmv_thread_TUU.c.ll
 ; opencv/optimized/ppf_match_3d.cpp.ll
+; openjdk/optimized/sharedRuntimeTrig.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 24, %1
+  %3 = getelementptr nusw nuw [24 x i8], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; ropey-rs/optimized/21bl6c983bdkzf7g.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 15, %1
+  %3 = getelementptr nusw nuw [16 x i8], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 7 occurrences:
+; abc/optimized/sbdCore.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; lief/optimized/ccm.c.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
-; openjdk/optimized/sharedRuntimeTrig.ll
 ; openmpi/optimized/comm_init.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
-  %2 = sub nsw i64 24, %1
-  %3 = getelementptr nusw [24 x i8], ptr %0, i64 0, i64 %2
+  %2 = sub nsw i64 2, %1
+  %3 = getelementptr nusw [3 x float], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

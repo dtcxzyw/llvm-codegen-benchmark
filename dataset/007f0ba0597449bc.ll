@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 16 occurrences:
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; c3c/optimized/diagnostics.c.ll
 ; clamav/optimized/libfreshclam_internal.c.ll
@@ -11,12 +11,10 @@
 ; grpc/optimized/flow_control.cc.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/ISel.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
 ; quantlib/optimized/sobolrsg.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/plain_table_index.cc.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; z3/optimized/value_generator.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(double %0) #0 {

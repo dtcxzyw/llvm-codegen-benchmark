@@ -5,6 +5,13 @@ func0000000000000002:                   # @func0000000000000002
 	addl	%edi, %eax
 	leal	(%rax,%rax,4), %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	testb	$1, %sil
+	movl	$-1076, %eax                    # imm = 0xFBCC
+	cmovel	%edx, %eax
+	addl	%edi, %eax
+	imull	$-1217359, %eax, %eax           # imm = 0xFFED6CB1
+	retq
 func0000000000000005:                   # @func0000000000000005
 	testb	$1, %sil
 	movl	$-151, %eax

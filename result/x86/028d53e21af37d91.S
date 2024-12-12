@@ -5,7 +5,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movslq	%edx, %rax
 	imulq	%rsi, %rax
 	cmpq	$32769, %rax                    # imm = 0x8001

@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%edi, %eax
 	shrl	$7, %eax
 	andl	$31, %eax
@@ -22,7 +22,7 @@ func000000000000000c:                   # @func000000000000000c
 	orq	%rdi, %rax
 	setne	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movzbl	%dil, %eax
 	shrq	$12, %rdi
 	andl	$-256, %edi

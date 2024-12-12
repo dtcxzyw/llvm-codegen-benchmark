@@ -1,23 +1,23 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setg	%cl
+	cmpq	%rax, %rsi
+	setl	%cl
 	testb	%dil, %dil
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	seta	%cl
+	cmpq	%rax, %rsi
+	setb	%cl
 	testb	%dil, %dil
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setg	%cl
+	cmpq	%rax, %rsi
+	setl	%cl
 	testb	%dil, %dil
 	setne	%al
 	andb	%cl, %al

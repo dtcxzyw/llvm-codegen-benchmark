@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	7                               # 0x7
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpternlogq	$248, .LCPI0_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	vptestnmq	%ymm0, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.quad	-4                              # 0xfffffffffffffffc
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpternlogq	$248, .LCPI2_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	vptestmq	%ymm0, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -34,7 +34,7 @@ func000000000000000c:                   # @func000000000000000c
 	.quad	4294966784                      # 0xfffffe00
 .LCPI4_1:
 	.quad	7                               # 0x7
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vpternlogq	$248, .LCPI4_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	vpcmpnleuq	.LCPI4_1(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -94,9 +94,19 @@ func0000000000000004:                   # @func0000000000000004
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpternlogq	$248, .LCPI6_2(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	vpcmpltuq	.LCPI6_1(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.quad	4294966784                      # 0xfffffe00
+.LCPI7_1:
+	.quad	1000000000                      # 0x3b9aca00
+func0000000000000014:                   # @func0000000000000014
+	vpternlogq	$248, .LCPI7_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	vpcmpltuq	.LCPI7_1(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

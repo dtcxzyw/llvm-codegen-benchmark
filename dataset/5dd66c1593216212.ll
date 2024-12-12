@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/approximately_equals.ll
 ; c3c/optimized/bigint.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; qemu/optimized/util_bitmap.c.ll
@@ -37,7 +38,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 128, %2
   %4 = shl i64 %1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

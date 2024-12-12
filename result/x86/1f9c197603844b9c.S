@@ -1,63 +1,56 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000063:                   # @func0000000000000063
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx
-	cmpl	%esi, %eax
-	setb	%cl
+	cmpl	%eax, %esi
+	seta	%cl
 	leaq	(%rdi,%rcx,8), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	sete	%cl
 	shll	$5, %ecx
 	leaq	48(%rcx,%rdi), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	movzwl	%dx, %ecx
 	leaq	80(%rdi), %rax
-	cmpl	%esi, %ecx
-	cmovgq	%rdi, %rax
+	cmpl	%ecx, %esi
+	cmovlq	%rdi, %rax
 	retq
-func0000000000000053:                   # @func0000000000000053
+func0000000000000093:                   # @func0000000000000093
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx
-	cmpl	%esi, %eax
-	seta	%cl
+	cmpl	%eax, %esi
+	setb	%cl
 	leaq	16(%rdi,%rcx,8), %rax
 	retq
 func0000000000000023:                   # @func0000000000000023
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx
-	cmpl	%esi, %eax
-	setae	%cl
+	cmpl	%eax, %esi
+	setbe	%cl
 	leaq	16(%rdi,%rcx,8), %rax
 	retq
 func0000000000000013:                   # @func0000000000000013
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx
-	cmpl	%esi, %eax
-	seta	%cl
+	cmpl	%eax, %esi
+	setb	%cl
 	leaq	16(%rdi,%rcx,8), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func000000000000009b:                   # @func000000000000009b
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx
-	cmpl	%esi, %eax
-	seta	%cl
+	cmpl	%eax, %esi
+	setl	%cl
 	leaq	16(%rdi,%rcx,8), %rax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000ab:                   # @func00000000000000ab
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx
-	cmpl	%esi, %eax
-	setg	%cl
-	leaq	16(%rdi,%rcx,8), %rax
-	retq
-func000000000000006a:                   # @func000000000000006a
-	movzwl	%dx, %eax
-	xorl	%ecx, %ecx
-	cmpl	%esi, %eax
-	setge	%cl
+	cmpl	%eax, %esi
+	setle	%cl
 	leaq	16(%rdi,%rcx,8), %rax
 	retq

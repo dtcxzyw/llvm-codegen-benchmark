@@ -25,7 +25,7 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000002:                   # @func0000000000000002
 	movl	%esi, %eax
 	shrl	$8, %edx
-	andl	$16776960, %edx                 # imm = 0xFFFF00
+	andl	$8388352, %edx                  # imm = 0x7FFF00
 	shrl	$16, %eax
 	orl	%edi, %eax
 	orl	%edx, %eax

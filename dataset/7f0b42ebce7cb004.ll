@@ -1,6 +1,8 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; cvc5/optimized/transition_inference.cpp.ll
 ; git/optimized/fetch.ll
 ; gromacs/optimized/sim_util.cpp.ll
@@ -17,7 +19,6 @@
 ; openssl/optimized/openssl-bin-rsa.ll
 ; php/optimized/html.ll
 ; postgres/optimized/pgoutput.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll

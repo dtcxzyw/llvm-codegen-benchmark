@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 66 occurrences:
 ; clap-rs/optimized/4r6y4qxwk52m92uh.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
 ; diesel-rs/optimized/2nqojkvzec127ieh.ll
@@ -31,7 +31,6 @@
 ; ockam-rs/optimized/aq9jti6tz0dykb7.ll
 ; ockam-rs/optimized/luz5e0okyn0ri51.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
-; qdrant-rs/optimized/1qcrz5nljonxi1bh.ll
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; regex-rs/optimized/3bb5ih3626n2er1d.ll
 ; ripgrep-rs/optimized/17szqs4crgj36yow.ll
@@ -50,7 +49,23 @@
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/8mv6d566jv1jdve4gk2kn2bhk.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, ptr %1, i64 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 105 occurrences:
+; 109 occurrences:
 ; abc/optimized/fretFlow.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
@@ -24,7 +24,6 @@
 ; linux/optimized/pci.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/rate.ll
-; linux/optimized/scan.ll
 ; linux/optimized/strset.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_minisocks.ll
@@ -32,8 +31,8 @@
 ; linux/optimized/vht.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xhci-hub.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
-; llvm/optimized/CallDescription.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -51,12 +50,15 @@
 ; llvm/optimized/ModuleSummaryIndex.cpp.ll
 ; llvm/optimized/ParseExpr.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/TargetOptionsImpl.cpp.ll
+; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/ValueLattice.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
@@ -105,6 +107,8 @@
 ; wireshark/optimized/packet-rpcrdma.c.ll
 ; wireshark/optimized/packet-zabbix.c.ll
 ; wireshark/optimized/prefs.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
@@ -116,6 +120,7 @@ entry:
 
 ; 362 occurrences:
 ; abc/optimized/wlcNdr.c.ll
+; boost/optimized/read_graphviz_new.ll
 ; box2d/optimized/b2_world.cpp.ll
 ; clamav/optimized/lzwdec.c.ll
 ; clamav/optimized/regexec.c.ll
@@ -226,10 +231,8 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/i915_gem_mman.ll
 ; linux/optimized/ialloc.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_dmc.ll
@@ -237,7 +240,6 @@ entry:
 ; linux/optimized/intel_gsc_proxy.ll
 ; linux/optimized/intel_guc.ll
 ; linux/optimized/intel_hotplug.ll
-; linux/optimized/intel_runtime_pm.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/intel_wakeref.ll
 ; linux/optimized/neighbour.ll
@@ -259,7 +261,6 @@ entry:
 ; llvm/optimized/ModuleSummaryIndex.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; llvm/optimized/ParseExprCXX.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -269,6 +270,7 @@ entry:
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/regexec.c.ll
+; lvgl/optimized/lv_image.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached_debug-crawler.ll
 ; mold/optimized/input-sections.cc.ALPHA.cc.ll
@@ -379,6 +381,7 @@ entry:
 ; openjdk/optimized/chaitin.ll
 ; openjdk/optimized/coalesce.ll
 ; openjdk/optimized/threadControl.ll
+; openmpi/optimized/keyval_lex.ll
 ; openusd/optimized/delegate.cpp.ll
 ; openusd/optimized/refinement.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
@@ -477,22 +480,12 @@ entry:
 ; wireshark/optimized/packet-t38.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-tds.c.ll
+; yosys/optimized/verilog_lexer.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 40
   %3 = icmp ne i16 %2, 32
-  %4 = select i1 %3, i1 true, i1 %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/DAGCombiner.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 2
-  %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i1 true, i1 %0
   ret i1 %4
 }

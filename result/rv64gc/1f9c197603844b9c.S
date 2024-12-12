@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000063:                   # @func0000000000000063
 	sext.w	a1, a1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
@@ -6,11 +6,11 @@ func0000000000000022:                   # @func0000000000000022
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	sext.w	a1, a1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	beq	a2, a1, .LBB1_2
+	beq	a1, a2, .LBB1_2
 	li	a1, 48
 	add	a0, a0, a1
 	ret
@@ -18,7 +18,7 @@ func0000000000000006:                   # @func0000000000000006
 	li	a1, 80
 	add	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	sext.w	a1, a1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
@@ -27,7 +27,7 @@ func000000000000001a:                   # @func000000000000001a
 	andi	a1, a1, 80
 	add	a0, a0, a1
 	ret
-func0000000000000053:                   # @func0000000000000053
+func0000000000000093:                   # @func0000000000000093
 	sext.w	a1, a1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
@@ -63,11 +63,11 @@ func0000000000000013:                   # @func0000000000000013
 	li	a1, 24
 	add	a0, a0, a1
 	ret
-func0000000000000012:                   # @func0000000000000012
+func000000000000009b:                   # @func000000000000009b
 	sext.w	a1, a1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	bltu	a1, a2, .LBB6_2
+	blt	a1, a2, .LBB6_2
 	li	a1, 16
 	add	a0, a0, a1
 	ret
@@ -75,27 +75,15 @@ func0000000000000012:                   # @func0000000000000012
 	li	a1, 24
 	add	a0, a0, a1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000ab:                   # @func00000000000000ab
 	sext.w	a1, a1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	blt	a1, a2, .LBB7_2
-	li	a1, 16
+	blt	a2, a1, .LBB7_2
+	li	a1, 24
 	add	a0, a0, a1
 	ret
 .LBB7_2:
-	li	a1, 24
-	add	a0, a0, a1
-	ret
-func000000000000006a:                   # @func000000000000006a
-	sext.w	a1, a1
-	slli	a2, a2, 48
-	srli	a2, a2, 48
-	blt	a2, a1, .LBB8_2
-	li	a1, 24
-	add	a0, a0, a1
-	ret
-.LBB8_2:
 	li	a1, 16
 	add	a0, a0, a1
 	ret

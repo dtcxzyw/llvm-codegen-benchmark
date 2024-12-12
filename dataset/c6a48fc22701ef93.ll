@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
 ; abc/optimized/absOut.c.ll
@@ -34,7 +34,6 @@
 ; linux/optimized/alternative.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/set_memory.ll

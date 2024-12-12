@@ -1,13 +1,15 @@
 
-; 19 occurrences:
+; 21 occurrences:
 ; eastl/optimized/EATextUtil.cpp.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; libjpeg-turbo/optimized/jdmerge.c.ll
 ; linux/optimized/agg-tx.ll
 ; linux/optimized/alps.ll
+; linux/optimized/tg3.ll
 ; linux/optimized/xfrm_input.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; openjdk/optimized/Ushort565Rgb.ll
@@ -28,7 +30,7 @@ entry:
   ret i16 %3
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; coreutils-rs/optimized/17ojgxcnujh4nt6.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
@@ -36,6 +38,7 @@ entry:
 ; libquic/optimized/poly.c.ll
 ; libwebp/optimized/vp8_dec.c.ll
 ; linux/optimized/drm_edid.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; ripgrep-rs/optimized/17szqs4crgj36yow.ll
 ; wireshark/optimized/charsets.c.ll
 ; wireshark/optimized/mp2t.c.ll

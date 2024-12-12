@@ -25,7 +25,7 @@ define i8 @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   %6 = zext i1 %5 to i8
   ret i8 %6
 }

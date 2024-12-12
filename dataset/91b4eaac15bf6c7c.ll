@@ -1,11 +1,13 @@
 
-; 62 occurrences:
+; 64 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; cvc5/optimized/Solver.cc.ll
@@ -71,7 +73,8 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/to_chars.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
@@ -109,12 +112,19 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = and i32 %3, -4
   ret i32 %4
 }
 
-; 109 occurrences:
+; 116 occurrences:
+; abc/optimized/mvcUtils.c.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -271,7 +281,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = and i32 %3, 1023
   ret i32 %4
 }

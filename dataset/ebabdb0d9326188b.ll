@@ -14,7 +14,17 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 12 occurrences:
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; sentencepiece/optimized/util.cc.ll
 ; velox/optimized/Utf8Utils.cpp.ll
 ; Function Attrs: nounwind

@@ -11,8 +11,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = bitcast i64 %4 to double
-  %6 = fmul double %5, %1
-  %7 = fadd double %6, %0
+  %6 = fmul double %1, %5
+  %7 = fadd double %0, %6
   ret double %7
 }
 

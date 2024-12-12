@@ -171,7 +171,7 @@
 define i64 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp eq ptr %2, %0
+  %3 = icmp eq ptr %0, %2
   %4 = select i1 %3, i64 3, i64 64
   ret i64 %4
 }
@@ -184,7 +184,7 @@ entry:
 define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ugt ptr %2, %0
+  %3 = icmp ult ptr %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -196,7 +196,7 @@ entry:
 define i64 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ult ptr %2, %0
+  %3 = icmp ugt ptr %0, %2
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }

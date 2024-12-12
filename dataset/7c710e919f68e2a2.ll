@@ -4,11 +4,11 @@
 ; openssl/optimized/libcrypto-lib-bn_rand.ll
 ; openssl/optimized/libcrypto-shlib-bn_rand.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = add nsw i32 %2, 8
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -26,11 +26,11 @@ entry:
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nsw i32 %2, 3
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -50,59 +50,60 @@ entry:
 ; verilator/optimized/V3Expand.cpp.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = add nsw i32 %2, 1
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; git/optimized/fetch.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; openmpi/optimized/tm_solution.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 16
   %3 = add nsw i32 %2, -3
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nsw i32 %2, 1
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; abc/optimized/cuddRef.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
   %3 = add nsw i32 %2, -1
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nsw i32 %2, -3
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 

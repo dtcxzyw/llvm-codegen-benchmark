@@ -13,7 +13,7 @@ entry:
   ret i32 %3
 }
 
-; 121 occurrences:
+; 130 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/giaAigerExt.c.ll
 ; abc/optimized/plaMan.c.ll
@@ -131,6 +131,15 @@ entry:
 ; wireshark/optimized/stanag4607.c.ll
 ; wireshark/optimized/visual.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; zlib/optimized/trees.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
@@ -455,6 +464,27 @@ entry:
   ret i32 %3
 }
 
+; 12 occurrences:
+; abc/optimized/extraBddKmap.c.ll
+; boost/optimized/operations.ll
+; clamav/optimized/xlm_extract.c.ll
+; cmake/optimized/divsufsort.c.ll
+; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
+; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
+; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
+; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
+; postgres/optimized/ginbulk.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or i32 %0, %1
+  %3 = add nuw nsw i32 %2, 21
+  ret i32 %3
+}
+
 ; 125 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/kwajd.c.ll
@@ -486,9 +516,7 @@ entry:
 ; linux/optimized/drm_hdcp_helper.ll
 ; linux/optimized/mpicoder.ll
 ; linux/optimized/namei.ll
-; linux/optimized/scsicam.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; nlohmann_json/optimized/unit-deserialization.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; node/optimized/simdutf.ll
@@ -541,7 +569,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -563,7 +590,6 @@ entry:
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/image.ll
 ; php/optimized/json_scanner.ll
-; php/optimized/pcre2_compile.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/hyperloglog.ll
@@ -571,6 +597,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_truetype.c.ll
+; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-ssh.c.ll
@@ -581,31 +608,14 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
-  %3 = add nuw nsw i32 %2, 369099008
-  ret i32 %3
-}
-
-; 11 occurrences:
-; abc/optimized/extraBddKmap.c.ll
-; clamav/optimized/xlm_extract.c.ll
-; cmake/optimized/divsufsort.c.ll
-; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
-; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
-; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
-; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
-; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
-; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; postgres/optimized/ginbulk.ll
-; zstd/optimized/divsufsort.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
-entry:
-  %2 = or i32 %0, %1
-  %3 = add nuw nsw i32 %2, 21
+  %3 = add nuw nsw i32 %2, 13
   ret i32 %3
 }
 
@@ -744,7 +754,7 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; libwebp/optimized/demux.c.ll
 ; libwebp/optimized/muxread.c.ll
 ; libwebp/optimized/webp_dec.c.ll
@@ -752,7 +762,6 @@ entry:
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/itemptr.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {

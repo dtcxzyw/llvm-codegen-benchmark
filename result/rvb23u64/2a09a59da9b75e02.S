@@ -5,7 +5,7 @@ func0000000000000090:                   # @func0000000000000090
 	sub	a0, a1, a0
 	addi	a0, a0, -2
 	ret
-func00000000000000ba:                   # @func00000000000000ba
+func00000000000000bf:                   # @func00000000000000bf
 	sext.w	a2, a2
 	add	a1, a1, a2
 	sh1add	a0, a0, a0

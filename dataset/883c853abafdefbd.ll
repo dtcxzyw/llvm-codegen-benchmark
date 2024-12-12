@@ -1,12 +1,11 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; hermes/optimized/HiddenClass.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SymbolCache.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; Function Attrs: nounwind

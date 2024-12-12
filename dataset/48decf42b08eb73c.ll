@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 88 occurrences:
 ; abseil-cpp/optimized/reflection_test.cc.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; coreutils-rs/optimized/53yhdh06nqcwsoo6.ll
@@ -15,7 +15,6 @@
 ; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; minetest/optimized/environment.cpp.ll
 ; minetest/optimized/server.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; msgpack/optimized/asio_send_recv.cpp.ll

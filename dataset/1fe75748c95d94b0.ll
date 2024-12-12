@@ -41,9 +41,8 @@ entry:
   ret i16 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/io_uring.ll
-; linux/optimized/nsxfname.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i1 %1, i16 %2) #0 {
 entry:

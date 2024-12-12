@@ -1,5 +1,6 @@
 
-; 78 occurrences:
+; 79 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -84,7 +85,7 @@ entry:
   %3 = lshr i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 1
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }
@@ -97,7 +98,7 @@ entry:
 ; redis/optimized/sz.sym.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = trunc i64 %3 to i32

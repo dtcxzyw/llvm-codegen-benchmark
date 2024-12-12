@@ -91,7 +91,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [4,4,4,4,4,4,4,4]
 	vpblendmd	.LCPI3_1(%rip){1to8}, %ymm1, %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpandd	.LCPI3_2(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

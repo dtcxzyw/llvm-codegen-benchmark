@@ -9,7 +9,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = mul nuw i64 %5, %0
+  %6 = mul nuw i64 %0, %5
   ret i64 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = mul i64 %5, %0
+  %6 = mul i64 %0, %5
   ret i64 %6
 }
 

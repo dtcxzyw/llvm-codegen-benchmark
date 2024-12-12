@@ -6,7 +6,7 @@ func0000000000000006:                   // @func0000000000000006
 	add	x0, x0, x8, lsl #2
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	add	x8, x2, #1
 	udiv	x9, x1, x8
@@ -14,7 +14,7 @@ func000000000000000e:                   // @func000000000000000e
 	add	x0, x0, x8, lsl #2
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	sub	x8, x2, #69
 	udiv	x9, x1, x8

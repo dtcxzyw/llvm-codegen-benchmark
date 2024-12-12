@@ -24,7 +24,7 @@ entry:
   %2 = sub i16 0, %1
   %3 = icmp sgt i16 %0, 0
   %4 = select i1 %3, i16 %1, i16 %2
-  %5 = add i16 %4, %0
+  %5 = add i16 %0, %4
   ret i16 %5
 }
 

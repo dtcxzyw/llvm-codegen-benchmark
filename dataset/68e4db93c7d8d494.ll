@@ -4,7 +4,7 @@
 ; verilator/optimized/V3Number.cpp.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 1
   %3 = icmp eq i8 %0, 1

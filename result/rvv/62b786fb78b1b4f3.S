@@ -13,7 +13,7 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vi	v12, v12, 30
 	addiw	a0, a0, -1
 	vnmsub.vx	v12, a0, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, 4
@@ -30,5 +30,5 @@ func0000000000000001:                   # @func0000000000000001
 	vsrl.vi	v12, v12, 30
 	addiw	a0, a0, -1
 	vnmsub.vx	v12, a0, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret

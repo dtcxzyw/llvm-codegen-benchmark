@@ -44,7 +44,7 @@ entry:
   ret i64 %6
 }
 
-; 105 occurrences:
+; 108 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -134,6 +134,7 @@ entry:
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openspiel/optimized/chess.cc.ll
 ; openspiel/optimized/chess_common.cc.ll
@@ -150,6 +151,8 @@ entry:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -180,7 +183,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 562949953421310
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = shl i64 %0, 54
   %6 = or i64 %5, %4
   ret i64 %6
@@ -207,14 +210,15 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; linux/optimized/workingset.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65535
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nsw i64 %1, 20
   %6 = or i64 %4, %5
   ret i64 %6
@@ -234,7 +238,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 32768
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = shl nuw nsw i64 %1, 3
   %6 = or i64 %4, %5
   ret i64 %6
@@ -246,9 +250,23 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 32768
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = shl nsw i64 %1, 10
   %6 = or i64 %4, %5
+  ret i64 %6
+}
+
+; 3 occurrences:
+; llvm/optimized/BranchProbability.cpp.ll
+; llvm/optimized/NativeFunctionSymbol.cpp.ll
+; lvgl/optimized/lv_image.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = or disjoint i64 %1, %3
+  %5 = shl nuw i64 %0, 48
+  %6 = or disjoint i64 %5, %4
   ret i64 %6
 }
 
@@ -259,7 +277,7 @@ entry:
 define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1073741823
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = shl i64 %0, 32
   %6 = or disjoint i64 %5, %4
   ret i64 %6
@@ -271,22 +289,9 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 992
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nsw i64 %1, 13
   %6 = or disjoint i64 %4, %5
-  ret i64 %6
-}
-
-; 2 occurrences:
-; llvm/optimized/BranchProbability.cpp.ll
-; llvm/optimized/NativeFunctionSymbol.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294901760
-  %4 = or disjoint i64 %3, %1
-  %5 = shl nuw i64 %0, 32
-  %6 = or disjoint i64 %5, %4
   ret i64 %6
 }
 
@@ -296,7 +301,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 131072
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = shl i64 %1, 32
   %6 = or disjoint i64 %4, %5
   ret i64 %6
@@ -309,7 +314,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -9223372036854775808
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nuw nsw i64 %1, 9
   %6 = or i64 %4, %5
   ret i64 %6
@@ -322,7 +327,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 72057594037927936
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nuw i64 %1, 4
   %6 = or i64 %4, %5
   ret i64 %6

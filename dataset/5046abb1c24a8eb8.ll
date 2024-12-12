@@ -117,7 +117,6 @@ entry:
 ; 27 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/luckyFast6.c.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -141,6 +140,7 @@ entry:
 ; spike/optimized/debug_module.ll
 ; spike/optimized/vclmul_vv.ll
 ; spike/optimized/vclmul_vx.ll
+; stockfish/optimized/evaluate_nnue.ll
 ; velox/optimized/Comparisons.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
@@ -179,7 +179,8 @@ entry:
   ret i32 %3
 }
 
-; 36 occurrences:
+; 38 occurrences:
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/metablock.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -215,6 +216,7 @@ entry:
 ; spike/optimized/vclmul_vx.ll
 ; spike/optimized/vrol_vv.ll
 ; stb/optimized/stb_image.c.ll
+; stockfish/optimized/evaluate_nnue.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
@@ -254,7 +256,7 @@ entry:
   ret i32 %3
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; brotli/optimized/decode.c.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
@@ -281,7 +283,6 @@ entry:
 ; spike/optimized/vror_vi.ll
 ; spike/optimized/vror_vv.ll
 ; spike/optimized/vror_vx.ll
-; stockfish/optimized/evaluate_nnue.ll
 ; wasmedge/optimized/filemgr.cpp.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
@@ -302,18 +303,6 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; linux/optimized/intel_bw.ll
-; llama.cpp/optimized/ggml-quants.c.ll
-; stockfish/optimized/evaluate_nnue.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = shl nuw nsw i32 %0, %2
-  ret i32 %3
-}
-
 ; 1 occurrences:
 ; spike/optimized/vrol_vv.ll
 ; Function Attrs: nounwind
@@ -321,6 +310,17 @@ define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %0, %2
+  ret i32 %3
+}
+
+; 2 occurrences:
+; linux/optimized/intel_bw.ll
+; llama.cpp/optimized/ggml-quants.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = shl nuw nsw i32 %0, %2
   ret i32 %3
 }
 

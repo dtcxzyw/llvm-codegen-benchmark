@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	testq	%rdx, %rdx
 	sete	%cl
 	orb	%dil, %cl
@@ -6,7 +6,7 @@ func0000000000000044:                   # @func0000000000000044
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000318:                   # @func0000000000000318
+func0000000000000618:                   # @func0000000000000618
 	testq	%rdx, %rdx
 	setne	%cl
 	orb	%sil, %cl
@@ -14,7 +14,7 @@ func0000000000000318:                   # @func0000000000000318
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000330:                   # @func0000000000000330
+func0000000000000630:                   # @func0000000000000630
 	testq	%rdx, %rdx
 	setne	%cl
 	orb	%dil, %cl
@@ -22,7 +22,7 @@ func0000000000000330:                   # @func0000000000000330
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	testq	%rdx, %rdx
 	sete	%cl
 	orb	%sil, %cl
@@ -30,7 +30,7 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	testq	%rdx, %rdx
 	sete	%cl
 	orb	%sil, %cl
@@ -38,7 +38,7 @@ func0000000000000058:                   # @func0000000000000058
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000302:                   # @func0000000000000302
+func0000000000000602:                   # @func0000000000000602
 	testq	%rdx, %rdx
 	setne	%cl
 	orb	%sil, %cl
@@ -46,7 +46,15 @@ func0000000000000302:                   # @func0000000000000302
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000070:                   # @func0000000000000070
+func0000000000000604:                   # @func0000000000000604
+	testq	%rdx, %rdx
+	setne	%cl
+	orb	%dil, %cl
+	testq	%rsi, %rsi
+	sete	%al
+	orb	%cl, %al
+	retq
+func00000000000000b0:                   # @func00000000000000b0
 	testq	%rdx, %rdx
 	sete	%cl
 	orb	%dil, %cl

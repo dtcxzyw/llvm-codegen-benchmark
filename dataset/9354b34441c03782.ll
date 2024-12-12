@@ -1,5 +1,5 @@
 
-; 188 occurrences:
+; 186 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddLCache.c.ll
@@ -67,7 +67,6 @@
 ; linux/optimized/neighbour.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/pt.ll
-; linux/optimized/regcache-flat.ll
 ; linux/optimized/route.ll
 ; linux/optimized/sbitmap.ll
 ; linux/optimized/scsi_lib.ll
@@ -77,7 +76,6 @@
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -165,7 +163,6 @@
 ; postgres/optimized/dynahash.ll
 ; postgres/optimized/hyperloglog.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/optimize.c.ll
@@ -183,6 +180,7 @@
 ; spike/optimized/srli32_u.ll
 ; wireshark/optimized/wmem_map.c.ll
 ; xgboost/optimized/quantile_obj.cc.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
@@ -196,7 +194,7 @@ entry:
   ret i64 %3
 }
 
-; 129 occurrences:
+; 131 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -227,6 +225,7 @@ entry:
 ; abc/optimized/sfmLib.c.ll
 ; abc/optimized/wlcGraft.c.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/unarj.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
@@ -286,6 +285,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luau/optimized/ldebug.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mixbox/optimized/mixbox.ll
@@ -309,7 +309,6 @@ entry:
 ; protobuf/optimized/csharp_field_base.cc.ll
 ; proxygen/optimized/Huffman.cpp.ll
 ; qemu/optimized/hw_acpi_core.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg.c.ll
@@ -325,6 +324,7 @@ entry:
 ; wireshark/optimized/packet-ipmi.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; yosys/optimized/memory_map.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {

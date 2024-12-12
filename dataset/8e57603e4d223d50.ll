@@ -110,66 +110,44 @@
 ; yosys/optimized/sta.ll
 ; yosys/optimized/xprop.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 4
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, -2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
-; wireshark/optimized/qcustomplot.cpp.ll
+; llvm/optimized/blake3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 3
-  %3 = add i64 %2, -8
-  %4 = icmp eq i64 %3, %0
+  %2 = shl i64 %1, 1
+  %3 = add i64 %2, 2
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/fib_trie.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, -2
-  %4 = icmp ult i64 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 3
-  %3 = add i64 %2, 8
-  %4 = icmp eq i64 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; ocio/optimized/Lut1DOpGPU.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 2
-  %3 = add i64 %2, -12
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 

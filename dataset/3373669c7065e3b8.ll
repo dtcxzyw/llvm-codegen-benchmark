@@ -1,7 +1,4 @@
 
-%"class.hermes::vm::GCHermesValueBase.2882331" = type { %"class.hermes::vm::HermesValue.2882332" }
-%"class.hermes::vm::HermesValue.2882332" = type { i64 }
-
 ; 3 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; hyperscan/optimized/teddy.c.ll
@@ -16,15 +13,14 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; hermes/optimized/ArrayStorage.cpp.ll
+; 1 occurrences:
 ; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 8
-  %5 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.2882331", ptr %4, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
+  %5 = getelementptr nusw i8, ptr %4, i64 %1
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }

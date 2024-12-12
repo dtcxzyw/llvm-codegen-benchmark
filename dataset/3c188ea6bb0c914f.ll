@@ -230,7 +230,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 2147483647
   ret i1 %2
@@ -240,7 +240,7 @@ entry:
 ; php/optimized/rfc1867.ll
 ; redis/optimized/ziplist.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = select i1 %2, i1 %1, i1 false
@@ -250,7 +250,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, 0
   %3 = select i1 %2, i1 true, i1 %1

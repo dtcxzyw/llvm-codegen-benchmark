@@ -13,12 +13,12 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%edi, %edx
 	setb	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	subl	%esi, %edx
 	cmpl	%edi, %edx
 	setb	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	subl	%esi, %edx
 	cmpl	%edi, %edx
 	seta	%al

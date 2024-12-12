@@ -6,7 +6,7 @@
 ; qemu/optimized/hw_display_vga.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
@@ -15,12 +15,13 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; libquic/optimized/spdy_framer.cc.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; php/optimized/ir_patch.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
+; wireshark/optimized/packet-wtls.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
@@ -34,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_tv.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0

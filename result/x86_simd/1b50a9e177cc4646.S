@@ -20,7 +20,7 @@ func000000000000000e:                   # @func000000000000000e
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpsllvq	%ymm2, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000000d:                   # @func000000000000000d
 	vpsllvq	%ymm2, %ymm1, %ymm1

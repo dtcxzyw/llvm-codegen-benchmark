@@ -1,14 +1,12 @@
 
-; 23 occurrences:
+; 21 occurrences:
 ; darktable/optimized/import.c.ll
 ; darktable/optimized/masks.c.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; jq/optimized/builtin.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; opencv/optimized/hough.cpp.ll
@@ -27,7 +25,7 @@
 define i32 @func0000000000000000(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
@@ -72,7 +70,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 

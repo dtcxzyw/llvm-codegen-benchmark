@@ -13,15 +13,15 @@
 ; oiio/optimized/xmp.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i1 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 128
+  %3 = icmp samesign ult i32 %2, 128
   %4 = select i1 %3, i64 1, i64 %1
   %5 = select i1 %0, i64 %4, i64 4
   ret i64 %5
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; cmake/optimized/zstd_decompress.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; hermes/optimized/IdentifierTable.cpp.ll
@@ -56,7 +56,6 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
-; z3/optimized/rlimit.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i32 %2) #0 {
 entry:

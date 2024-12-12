@@ -1,13 +1,14 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; freetype/optimized/sfnt.c.ll
-; icu/optimized/ucnvscsu.ll
 ; icu/optimized/util.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; regex-rs/optimized/v8mcpnwv4glojx2.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000484(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -6
   %4 = icmp ult i32 %3, 5
@@ -20,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000054c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = icmp sgt i32 %1, 0
@@ -34,7 +35,7 @@ entry:
 ; llvm/optimized/MachineCombiner.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %3, 1073741823
@@ -44,13 +45,12 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/ubidi.ll
-; icu/optimized/ubidiln.ll
 ; icu/optimized/ubidiwrt.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000424(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -97
   %4 = icmp ult i32 %3, 6
@@ -64,7 +64,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -31
   %4 = icmp ult i32 %3, -25
@@ -77,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hub.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -65535001
   %4 = icmp ult i32 %3, -65536000
@@ -90,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c4(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -3
   %4 = icmp ult i32 %3, -4

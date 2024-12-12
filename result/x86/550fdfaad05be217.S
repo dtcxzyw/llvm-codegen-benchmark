@@ -8,11 +8,6 @@ func000000000000018d:                   # @func000000000000018d
 	sbbl	$-1, %edi
 	leal	-1(%rdi), %eax
 	retq
-func0000000000000080:                   # @func0000000000000080
-	movl	%edi, %eax
-	cmpl	$3, %esi
-	adcl	$1, %eax
-	retq
 func0000000000000085:                   # @func0000000000000085
 	movl	%edi, %eax
 	cmpl	$3, %esi
@@ -32,31 +27,31 @@ func0000000000000145:                   # @func0000000000000145
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setg	%al
-	leal	1(%rax,%rdi), %eax
+	leal	1(%rdi,%rax), %eax
 	retq
 func0000000000000144:                   # @func0000000000000144
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setg	%al
-	leal	-1(%rax,%rdi), %eax
+	leal	-1(%rdi,%rax), %eax
 	retq
 func000000000000014f:                   # @func000000000000014f
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setg	%al
-	leal	1(%rax,%rdi), %eax
+	leal	1(%rdi,%rax), %eax
 	retq
 func0000000000000184:                   # @func0000000000000184
 	xorl	%eax, %eax
 	cmpl	$1, %esi
 	setne	%al
-	leal	1(%rax,%rdi), %eax
+	leal	1(%rdi,%rax), %eax
 	retq
 func000000000000002f:                   # @func000000000000002f
 	xorl	%eax, %eax
 	cmpl	$2147483647, %esi               # imm = 0x7FFFFFFF
 	sete	%al
-	leal	1(%rax,%rdi), %eax
+	leal	1(%rdi,%rax), %eax
 	retq
 func0000000000000025:                   # @func0000000000000025
 	movl	%edi, %eax
@@ -67,19 +62,24 @@ func0000000000000020:                   # @func0000000000000020
 	xorl	%eax, %eax
 	cmpl	$1, %esi
 	sete	%al
-	leal	-1(%rax,%rdi), %eax
+	leal	-1(%rdi,%rax), %eax
 	retq
 func000000000000014d:                   # @func000000000000014d
 	xorl	%eax, %eax
 	cmpl	$12289, %esi                    # imm = 0x3001
 	setge	%al
-	leal	-1(%rax,%rdi), %eax
+	leal	-1(%rdi,%rax), %eax
+	retq
+func0000000000000080:                   # @func0000000000000080
+	movl	%edi, %eax
+	cmpl	$-3328, %esi                    # imm = 0xF300
+	adcl	$1, %eax
 	retq
 func0000000000000180:                   # @func0000000000000180
 	xorl	%eax, %eax
 	cmpl	$2, %esi
 	setne	%al
-	leal	-1(%rax,%rdi), %eax
+	leal	-1(%rdi,%rax), %eax
 	retq
 func000000000000010f:                   # @func000000000000010f
 	cmpl	$2, %esi

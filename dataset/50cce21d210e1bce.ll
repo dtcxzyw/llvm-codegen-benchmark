@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 100 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; git/optimized/mem-pool.ll
 ; grpc/optimized/alts_handshaker_client.cc.ll
@@ -26,13 +26,10 @@
 ; grpc/optimized/xds_lb_policy_registry.cc.ll
 ; grpc/optimized/xds_listener.cc.ll
 ; grpc/optimized/xds_route_config.cc.ll
-; harfbuzz/optimized/gsubgpos-context.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5HG.c.ll
 ; hdf5/optimized/H5HL.c.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; libquic/optimized/pickle.cc.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/sys_x86_64.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -45,7 +42,6 @@
 ; opencv/optimized/grfmt_pam.cpp.ll
 ; opencv/optimized/grfmt_pfm.cpp.ll
 ; opencv/optimized/grfmt_pxm.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/allocation.ll
 ; openjdk/optimized/arena.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
@@ -119,7 +115,7 @@ entry:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
   %4 = sub nuw i64 %0, %1
@@ -127,10 +123,8 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
-; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; 6 occurrences:
 ; git/optimized/record.ll
-; lief/optimized/Builder.cpp.ll
 ; linux/optimized/compress.ll
 ; linux/optimized/i915_gem_mman.ll
 ; llvm/optimized/LoopInterchange.cpp.ll
@@ -149,7 +143,7 @@ entry:
 ; linux/optimized/extents.ll
 ; wasmedge/optimized/tableInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = sub nsw i64 %0, %1
@@ -196,7 +190,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/record.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
   %4 = sub nuw i64 %0, %1
@@ -220,7 +214,7 @@ entry:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1016
   %4 = sub nuw i64 %0, %1
@@ -231,7 +225,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/server-th.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = sub nsw i64 %0, %1
@@ -242,7 +236,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = sub nsw i64 %0, %1
@@ -255,7 +249,7 @@ entry:
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4
   %4 = sub nsw i64 %0, %1
@@ -279,7 +273,7 @@ entry:
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; linux/optimized/vma.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4096
   %4 = sub nsw i64 %0, %1

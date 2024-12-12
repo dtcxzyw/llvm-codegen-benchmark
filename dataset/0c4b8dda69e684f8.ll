@@ -1,4 +1,10 @@
 
+%"struct.std::pair.3739795" = type <{ %"struct.cv::Ptr.25.3739785", float, [4 x i8] }>
+%"struct.cv::Ptr.25.3739785" = type { %"class.std::shared_ptr.26.3739786" }
+%"class.std::shared_ptr.26.3739786" = type { %"class.std::__shared_ptr.27.3739787" }
+%"class.std::__shared_ptr.27.3739787" = type { ptr, %"class.std::__shared_count.3739773" }
+%"class.std::__shared_count.3739773" = type { ptr }
+
 ; 7 occurrences:
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; hdf5/optimized/H5LTanalyze.c.ll
@@ -8,13 +14,13 @@
 ; yosys/optimized/booth.ll
 ; yosys/optimized/verilog_lexer.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 1
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
   ret ptr %7
 }
 
@@ -22,13 +28,26 @@ entry:
 ; velox/optimized/ArrayContains.cpp.ll
 ; velox/optimized/ArrayPosition.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000009a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000009b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 28
   %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 8
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+; 1 occurrences:
+; abc/optimized/mvcUtils.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000190(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }
 
@@ -62,6 +81,18 @@ entry:
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
+}
+
+; 1 occurrences:
+; opencv/optimized/trackerStateEstimator.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000011b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = getelementptr %"struct.std::pair.3739795", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

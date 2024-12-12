@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/bitmap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4294967294
   %4 = and i64 %3, 4294967295
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = and i64 %3, 4294967295

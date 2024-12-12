@@ -46,12 +46,13 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; clamav/optimized/htmlnorm.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll
 ; linux/optimized/mballoc.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; wireshark/optimized/packet-cipsafety.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {

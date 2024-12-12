@@ -1,14 +1,11 @@
 
-%"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2569020" = type { %"class.folly::SaturatingSemaphore.2568964", [12 x i8], %"union.std::aligned_storage<64, 16>::type.2568965" }
-%"class.folly::SaturatingSemaphore.2568964" = type { %"struct.std::atomic.20.2568897" }
-%"struct.std::atomic.20.2568897" = type { %"struct.std::__atomic_base.21.2568898" }
-%"struct.std::__atomic_base.21.2568898" = type { i32 }
-%"union.std::aligned_storage<64, 16>::type.2568965" = type { [64 x i8] }
-%"class.llvm::SlotIndex.2949619" = type { %"class.llvm::PointerIntPair.2949620" }
-%"class.llvm::PointerIntPair.2949620" = type { %"struct.llvm::detail::PunnedPointer.2949621" }
-%"struct.llvm::detail::PunnedPointer.2949621" = type { [8 x i8] }
+%"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2683394" = type { %"class.folly::SaturatingSemaphore.2683338", [12 x i8], %"union.std::aligned_storage<64, 16>::type.2683339" }
+%"class.folly::SaturatingSemaphore.2683338" = type { %"struct.std::atomic.20.2683271" }
+%"struct.std::atomic.20.2683271" = type { %"struct.std::__atomic_base.21.2683272" }
+%"struct.std::__atomic_base.21.2683272" = type { i32 }
+%"union.std::aligned_storage<64, 16>::type.2683339" = type { [64 x i8] }
 
-; 67 occurrences:
+; 65 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; linux/optimized/assoc_array.ll
 ; linux/optimized/blk-cgroup.ll
@@ -39,7 +36,6 @@
 ; linux/optimized/swap.ll
 ; linux/optimized/tls.ll
 ; linux/optimized/tree.ll
-; linux/optimized/tsc_msr.ll
 ; linux/optimized/vmstat.ll
 ; linux/optimized/xarray.ll
 ; postgres/optimized/amutils.ll
@@ -66,7 +62,6 @@
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsquery_gist.ll
-; postgres/optimized/xlogprefetcher.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_tb-maint.c.ll
 ; qemu/optimized/system_physmem.c.ll
@@ -77,15 +72,15 @@
 ; ruby/optimized/io.ll
 ; ruby/optimized/load.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = getelementptr [0 x i64], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
 
-; 128 occurrences:
+; 130 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/mapperMatch.c.ll
 ; abc/optimized/mapperRefs.c.ll
@@ -106,6 +101,18 @@ entry:
 ; hermes/optimized/JSWeakMapImpl.cpp.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; hermes/optimized/hermes.cpp.ll
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DWARFVerifier.cpp.ll
+; llvm/optimized/InstrProf.cpp.ll
+; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/InterferenceCache.cpp.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/LiveIntervalUnion.cpp.ll
+; llvm/optimized/NativeSession.cpp.ll
+; llvm/optimized/RegAllocGreedy.cpp.ll
+; llvm/optimized/SplitKit.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; luajit/optimized/lib_ffi.ll
 ; luajit/optimized/lib_ffi_dyn.ll
 ; luajit/optimized/lib_jit.ll
@@ -132,36 +139,26 @@ entry:
 ; mimalloc/optimized/alloc.c.ll
 ; mimalloc/optimized/heap.c.ll
 ; mimalloc/optimized/page.c.ll
-; mimalloc/optimized/segment.c.ll
-; node/optimized/libnode.node_http_parser.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
-; openjdk/optimized/xMarkStackAllocator.ll
-; openjdk/optimized/zMarkStackAllocator.ll
+; openusd/optimized/coalescingDiagnosticDelegate.cpp.ll
+; openusd/optimized/namespaceEditor.cpp.ll
+; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/pathNode.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; php/optimized/zend_alloc.ll
-; php/optimized/zend_execute.ll
-; protobuf/optimized/api.pb.cc.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
 ; protobuf/optimized/field_mask.pb.cc.ll
 ; protobuf/optimized/field_mask_util.cc.ll
-; protobuf/optimized/generated_message_reflection.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/map_field.cc.ll
 ; protobuf/optimized/message.cc.ll
 ; protobuf/optimized/plugin.cc.ll
 ; protobuf/optimized/plugin.pb.cc.ll
-; protobuf/optimized/repeated_ptr_field.cc.ll
 ; protobuf/optimized/retention.cc.ll
-; protobuf/optimized/struct.pb.cc.ll
 ; protobuf/optimized/text_format.cc.ll
 ; protobuf/optimized/type.pb.cc.ll
-; protobuf/optimized/untyped_message.cc.ll
-; pybind11/optimized/test_kwargs_and_defaults.cpp.ll
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
 ; taskflow/optimized/async.cpp.ll
@@ -215,11 +212,58 @@ entry:
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 128
-  %4 = getelementptr nusw [256 x %"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2569020"], ptr %3, i64 0, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 128
+  %4 = getelementptr nusw nuw [256 x %"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2683394"], ptr %3, i64 0, i64 %0
+  ret ptr %4
+}
+
+; 26 occurrences:
+; darktable/optimized/amaze.cc.ll
+; llvm/optimized/Attributes.cpp.ll
+; luajit/optimized/lj_api.ll
+; luajit/optimized/lj_api_dyn.ll
+; mimalloc/optimized/segment.c.ll
+; node/optimized/libnode.node_http_parser.ll
+; openjdk/optimized/xMarkStackAllocator.ll
+; openjdk/optimized/zMarkStackAllocator.ll
+; php/optimized/zend_alloc.ll
+; php/optimized/zend_execute.ll
+; protobuf/optimized/api.pb.cc.ll
+; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/descriptor.pb.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/generated_message_reflection.cc.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; protobuf/optimized/map_field.cc.ll
+; protobuf/optimized/message.cc.ll
+; protobuf/optimized/plugin.pb.cc.ll
+; protobuf/optimized/repeated_ptr_field.cc.ll
+; protobuf/optimized/retention.cc.ll
+; protobuf/optimized/struct.pb.cc.ll
+; protobuf/optimized/type.pb.cc.ll
+; protobuf/optimized/untyped_message.cc.ll
+; pybind11/optimized/test_kwargs_and_defaults.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = getelementptr nusw [15 x ptr], ptr %3, i64 0, i64 %0
+  ret ptr %4
+}
+
+; 1 occurrences:
+; darktable/optimized/amaze.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr i8, ptr %2, i64 615168
+  %4 = getelementptr nusw nuw [12800 x float], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
 
@@ -242,33 +286,6 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr i8, ptr %2, i64 615168
   %4 = getelementptr [12800 x float], ptr %3, i64 0, i64 %0
-  ret ptr %4
-}
-
-; 17 occurrences:
-; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
-; llvm/optimized/Attributes.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/DWARFVerifier.cpp.ll
-; llvm/optimized/InstrProf.cpp.ll
-; llvm/optimized/InstrProfReader.cpp.ll
-; llvm/optimized/InterferenceCache.cpp.ll
-; llvm/optimized/LiveDebugVariables.cpp.ll
-; llvm/optimized/LiveIntervalUnion.cpp.ll
-; llvm/optimized/NativeSession.cpp.ll
-; llvm/optimized/RegAllocGreedy.cpp.ll
-; llvm/optimized/SplitKit.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
-; openusd/optimized/coalescingDiagnosticDelegate.cpp.ll
-; openusd/optimized/namespaceEditor.cpp.ll
-; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/pathNode.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, i64 %1) #0 {
-entry:
-  %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 96
-  %4 = getelementptr nusw [12 x %"class.llvm::SlotIndex.2949619"], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
 

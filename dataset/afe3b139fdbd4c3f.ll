@@ -10,10 +10,10 @@
 ; vcpkg/optimized/ci-baseline.cpp.ll
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a6(ptr %0, i32 %1, i64 %2) #0 {
+define i64 @func00000000000001e6(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i64, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
+  %3 = getelementptr nusw nuw i64, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
   %7 = ptrtoint ptr %6 to i64

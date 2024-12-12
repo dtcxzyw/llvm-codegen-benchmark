@@ -3,8 +3,8 @@
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; git/optimized/object-name.ll
 ; libevent/optimized/event_tagging.c.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; oiio/optimized/bmpinput.cpp.ll
-; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll
 ; wireshark/optimized/packet-s5066dts.c.ll

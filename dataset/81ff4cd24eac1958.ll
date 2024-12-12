@@ -1,7 +1,6 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; icu/optimized/ucnv_io.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; memcached/optimized/memcached-slab_automove.ll
 ; memcached/optimized/memcached-slab_automove_extstore.ll

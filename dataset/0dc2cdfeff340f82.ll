@@ -22,7 +22,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 100, i32 0
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = mul nsw i32 %4, %0
   ret i32 %5
 }

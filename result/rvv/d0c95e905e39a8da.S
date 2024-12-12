@@ -21,7 +21,7 @@ func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v8, v8, fa4
 	vmflt.vf	v16, v8, fa5
-	vmand.mm	v0, v16, v0
+	vmand.mm	v0, v0, v16
 	ret
 .LCPI2_0:
 	.quad	0x3f91df46a2529d39              # double 0.017453292519943295
@@ -32,7 +32,7 @@ func0000000000000008:                   # @func0000000000000008
 	vfmul.vf	v8, v8, fa5
 	fmv.d.x	fa5, zero
 	vmfeq.vf	v16, v8, fa5
-	vmand.mm	v0, v16, v0
+	vmand.mm	v0, v0, v16
 	ret
 .LCPI3_0:
 	.quad	0x41e0000000000000              # double 2147483648
@@ -60,5 +60,5 @@ func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v8, v8, fa5
 	vmfle.vf	v16, v8, fa4
-	vmand.mm	v0, v16, v0
+	vmand.mm	v0, v0, v16
 	ret

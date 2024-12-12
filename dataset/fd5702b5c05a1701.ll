@@ -20,10 +20,18 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 11 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; grpc/optimized/ev_epoll1_linux.cc.ll
 ; opencv/optimized/lapack.cpp.ll
 ; verilator/optimized/V3EmitCSyms.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:

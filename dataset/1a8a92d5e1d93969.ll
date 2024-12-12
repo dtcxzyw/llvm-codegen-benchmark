@@ -20,10 +20,10 @@ entry:
 ; openjdk/optimized/hb-ot-name.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(ptr %0, i32 %1) #0 {
+define i32 @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = trunc i64 %4 to i32
   ret i32 %5
@@ -34,10 +34,10 @@ entry:
 ; llvm/optimized/SafepointIRVerifier.cpp.ll
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(ptr %0, i32 %1) #0 {
+define i32 @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = trunc i64 %4 to i32
   ret i32 %5

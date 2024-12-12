@@ -1,11 +1,9 @@
 
-; 35 occurrences:
+; 33 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CacheLocality.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/F14Table.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/HeapTimekeeper.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
@@ -39,8 +37,8 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = add i64 %3, %1
-  %5 = xor i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -56,7 +54,7 @@ define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 21
   %4 = add nsw i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -67,7 +65,19 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 21
   %4 = add nsw i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
+  ret i64 %5
+}
+
+; 2 occurrences:
+; linux/optimized/swiotlb.ll
+; php/optimized/hash_tiger.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = add i64 %3, %1
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -233,18 +243,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = add nuw nsw i64 %3, %1
-  %5 = xor i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; linux/optimized/swiotlb.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 11
-  %4 = add i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 

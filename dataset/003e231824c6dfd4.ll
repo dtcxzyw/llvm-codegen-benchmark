@@ -1,5 +1,5 @@
 
-; 113 occurrences:
+; 112 occurrences:
 ; abc/optimized/wlcSim.c.ll
 ; cmake/optimized/cover.c.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
@@ -7,7 +7,6 @@
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
-; darktable/optimized/jpeg.c.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
 ; flac/optimized/encode.c.ll
 ; graphviz/optimized/solve.c.ll
@@ -117,12 +116,12 @@
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 61 occurrences:
+; 62 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
@@ -154,6 +153,7 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; minetest/optimized/gameui.cpp.ll
@@ -188,18 +188,17 @@ entry:
 define i64 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; gromacs/optimized/toppush.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -246,13 +245,12 @@ entry:
 define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 4 occurrences:
-; gromacs/optimized/kernel_common.cpp.ll
+; 3 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; ipopt/optimized/IpDenseSymMatrix.ll
 ; sundials/optimized/sunnonlinsol_fixedpoint.c.ll
@@ -260,12 +258,12 @@ entry:
 define i64 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 41 occurrences:
+; 43 occurrences:
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/wlcSim.c.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
@@ -286,6 +284,8 @@ entry:
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_freetype_image.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
 ; ncnn/optimized/matmul.cpp.ll
@@ -311,7 +311,7 @@ entry:
 define i64 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -333,7 +333,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -346,7 +346,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -365,7 +365,7 @@ entry:
 define i64 @func000000000000001b(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -385,7 +385,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -403,7 +403,7 @@ entry:
 define i64 @func0000000000000013(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -414,7 +414,19 @@ entry:
 define i64 @func0000000000000016(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
+  %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001c(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = mul nuw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -432,7 +444,7 @@ entry:
 define i64 @func0000000000000019(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -447,7 +459,7 @@ entry:
 define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -458,7 +470,7 @@ entry:
 define i64 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -470,7 +482,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -482,7 +494,7 @@ entry:
 define i64 @func000000000000001e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -497,7 +509,7 @@ entry:
 define i64 @func000000000000001f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -514,7 +526,7 @@ entry:
 define i64 @func0000000000000012(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -525,7 +537,7 @@ entry:
 define i64 @func0000000000000017(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -536,7 +548,7 @@ entry:
 define i64 @func000000000000001a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

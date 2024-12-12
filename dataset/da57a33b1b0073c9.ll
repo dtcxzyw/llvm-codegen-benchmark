@@ -11,7 +11,7 @@
 ; postgres/optimized/bufpage.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = zext nneg i32 %2 to i64
@@ -28,12 +28,12 @@ entry:
 ; php/optimized/zend_alloc.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = zext nneg i32 %2 to i64
   %4 = and i64 %0, 15
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

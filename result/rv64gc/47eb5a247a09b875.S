@@ -54,3 +54,12 @@ func0000000000000004:                   # @func0000000000000004
 	mulhu	a0, a0, a1
 	srli	a0, a0, 2
 	ret
+.LCPI6_0:
+	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
+func0000000000000001:                   # @func0000000000000001
+	lui	a1, %hi(.LCPI6_0)
+	ld	a1, %lo(.LCPI6_0)(a1)
+	addi	a0, a0, -144
+	srli	a0, a0, 4
+	mul	a0, a0, a1
+	ret

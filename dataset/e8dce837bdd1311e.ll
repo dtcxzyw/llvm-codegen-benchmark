@@ -11,8 +11,10 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
@@ -25,7 +27,7 @@ entry:
   ret i32 %6
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; icu/optimized/dictbe.ll
@@ -35,7 +37,6 @@ entry:
 ; lz4/optimized/lz4hc.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; postgres/optimized/nbtsplitloc.ll
@@ -118,6 +119,18 @@ entry:
   %4 = sub i32 %0, %3
   %5 = trunc i64 %1 to i32
   %6 = add i32 %4, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000025(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = sub nsw i32 %0, %3
+  %5 = trunc nuw i64 %1 to i32
+  %6 = add nsw i32 %4, %5
   ret i32 %6
 }
 

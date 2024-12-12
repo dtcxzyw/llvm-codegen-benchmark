@@ -1,5 +1,5 @@
 
-; 816 occurrences:
+; 821 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; abc/optimized/wlcNtk.c.ll
@@ -51,16 +51,16 @@
 ; libjpeg-turbo/optimized/jdmerge.c.ll
 ; libpng/optimized/png.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/ds.ll
-; linux/optimized/dvo_ch7017.ll
 ; linux/optimized/e1000_hw.ll
+; linux/optimized/eth.ll
 ; linux/optimized/ethtool.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/gre_offload.ll
 ; linux/optimized/hcd.ll
@@ -74,7 +74,7 @@
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/ip6_fib.ll
-; linux/optimized/madvise.ll
+; linux/optimized/ip6_offload.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/netdev.ll
@@ -105,6 +105,8 @@
 ; linux/optimized/vfs_inode_dotl.ll
 ; linux/optimized/vgacon.ll
 ; linux/optimized/vt.ll
+; linux/optimized/xfrm4_input.ll
+; linux/optimized/xfrm6_input.ll
 ; linux/optimized/xhci-pci.ll
 ; linux/optimized/xt_TCPMSS.ll
 ; linux/optimized/yenta_socket.ll
@@ -450,7 +452,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -624,6 +625,14 @@
 ; llvm/optimized/cc1as_main.cpp.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_spinbox.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CBillboardSceneNode.cpp.ll
@@ -757,7 +766,6 @@
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; php/optimized/dirstream.ll
 ; php/optimized/memory.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/phar.ll
 ; php/optimized/phar_object.ll
 ; php/optimized/plain_wrapper.ll
@@ -774,9 +782,7 @@
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/hw_usb_hcd-uhci.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -801,7 +807,6 @@
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/frame_data.c.ll
-; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-cisco-fp-mim.c.ll
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll

@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	andi	a0, a0, 256
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
 	srli	a1, a1, 4
 	sltiu	a0, a0, 17
@@ -39,4 +39,13 @@ func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 48
+	ret
+func0000000000000004:                   # @func0000000000000004
+	srliw	a0, a0, 11
+	beqz	a0, .LBB5_2
+	li	a0, 64
+	ret
+.LBB5_2:
+	slli	a0, a1, 53
+	srli	a0, a0, 58
 	ret

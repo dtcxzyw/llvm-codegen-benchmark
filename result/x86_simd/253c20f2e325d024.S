@@ -34,7 +34,7 @@ func0000000000000007:                   # @func0000000000000007
 	vptestnmw	.LCPI1_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1   # ymm1 = [2,2,2,2,2,2,2,2]
 	vpbroadcastd	.LCPI1_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.short	16384                           # 0x4000

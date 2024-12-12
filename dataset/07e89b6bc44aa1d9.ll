@@ -1,5 +1,5 @@
 
-; 111 occurrences:
+; 110 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -54,7 +54,6 @@
 ; openjdk/optimized/pngrutil.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
-; php/optimized/hash_adler32.ll
 ; php/optimized/ir_patch.ll
 ; php/optimized/zend_accelerator_util_funcs.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
@@ -115,12 +114,12 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 123 occurrences:
+; 121 occurrences:
 ; abc/optimized/exorBits.c.ll
 ; abc/optimized/exorLink.c.ll
 ; clamav/optimized/aspack.c.ll
@@ -143,7 +142,6 @@ entry:
 ; hdf5/optimized/H5Fsuper_cache.c.ll
 ; hdf5/optimized/H5HFhuge.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
-; jq/optimized/unicode_fold3_key.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; libjpeg-turbo/optimized/jdsample.c.ll
@@ -174,7 +172,6 @@ entry:
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; oniguruma/optimized/unicode_fold3_key.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/brightedges.cpp.ll
@@ -248,12 +245,155 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
-; 245 occurrences:
+; 32 occurrences:
+; abc/optimized/Glucose.cpp.ll
+; abc/optimized/Glucose2.cpp.ll
+; abc/optimized/SimpSolver.cpp.ll
+; abc/optimized/SimpSolver2.cpp.ll
+; assimp/optimized/NFFLoader.cpp.ll
+; assimp/optimized/XFileImporter.cpp.ll
+; cvc5/optimized/SimpSolver.cc.ll
+; cvc5/optimized/Solver.cc.ll
+; eastl/optimized/EADateTime.cpp.ll
+; grpc/optimized/hpack_parser.cc.ll
+; icu/optimized/genrb.ll
+; linux/optimized/ah6.ll
+; linux/optimized/hooks.ll
+; linux/optimized/hub.ll
+; linux/optimized/nf_log_syslog.ll
+; llvm/optimized/Interp.cpp.ll
+; minetest/optimized/chat.cpp.ll
+; openjdk/optimized/type.ll
+; quickjs/optimized/quickjs.ll
+; ruby/optimized/compile.ll
+; spike/optimized/s_addM.ll
+; sqlite/optimized/sqlite3.ll
+; verilator/optimized/V3Const__gen.cpp.ll
+; wireshark/optimized/packet-acn.c.ll
+; wireshark/optimized/packet-dvb-s2-table.c.ll
+; wireshark/optimized/packet-gquic.c.ll
+; wireshark/optimized/packet-ipmi.c.ll
+; yosys/optimized/SimpSolver.ll
+; yosys/optimized/Solver.ll
+; z3/optimized/dl_finite_product_relation.cpp.ll
+; z3/optimized/dl_sieve_relation.cpp.ll
+; z3/optimized/sat_ddfw.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add i32 %1, %3
+  %5 = add i32 %4, %0
+  ret i32 %5
+}
+
+; 28 occurrences:
+; actix-rs/optimized/22x16e3cd4musvfe.ll
+; actix-rs/optimized/559mdouync0xx14h.ll
+; actix-rs/optimized/u8tt4f5khiooymn.ll
+; assimp/optimized/LWOLoader.cpp.ll
+; clamav/optimized/unpack.cpp.ll
+; cmake/optimized/lzma_encoder.c.ll
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; cpython/optimized/assemble.ll
+; grpc/optimized/bin_encoder.cc.ll
+; hdf5/optimized/H5B2hdr.c.ll
+; hdf5/optimized/H5B2int.c.ll
+; hdf5/optimized/H5HFcache.c.ll
+; hdf5/optimized/H5HFiblock.c.ll
+; libdeflate/optimized/deflate_compress.c.ll
+; linux/optimized/skl_watermark.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; memcached/optimized/memcached-items.ll
+; memcached/optimized/memcached-storage.ll
+; memcached/optimized/memcached_debug-items.ll
+; memcached/optimized/memcached_debug-storage.ll
+; opencv/optimized/fast_window_binarizer.cpp.ll
+; openusd/optimized/openexr-c.c.ll
+; qemu/optimized/hw_net_can_can_sja1000.c.ll
+; qemu/optimized/hw_usb_desc.c.ll
+; wireshark/optimized/packet-isis-lsp.c.ll
+; wireshark/optimized/packet-quic.c.ll
+; wireshark/optimized/packet-roon_discovery.c.ll
+; wireshark/optimized/packet-rtmpt.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add i32 %4, %0
+  ret i32 %5
+}
+
+; 27 occurrences:
+; brotli/optimized/transform.c.ll
+; clamav/optimized/asn1.c.ll
+; cmake/optimized/http.c.ll
+; curl/optimized/libcurl_la-http.ll
+; gromacs/optimized/readir.cpp.ll
+; hyperscan/optimized/rose_build_misc.cpp.ll
+; libpng/optimized/pngwutil.c.ll
+; linux/optimized/airtime.ll
+; linux/optimized/drm_client_modeset.ll
+; linux/optimized/intel_display.ll
+; openspiel/optimized/TransTableL.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; php/optimized/image.ll
+; proj/optimized/projinfo.cpp.ll
+; qemu/optimized/block_qcow2.c.ll
+; qemu/optimized/hw_char_serial.c.ll
+; qemu/optimized/hw_usb_desc.c.ll
+; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
+; wireshark/optimized/packet-arp.c.ll
+; wireshark/optimized/packet-btatt.c.ll
+; wireshark/optimized/packet-e212.c.ll
+; wireshark/optimized/packet-iwarp-mpa.c.ll
+; wireshark/optimized/packet-rtp-midi.c.ll
+; wireshark/optimized/packet-sccp.c.ll
+; wireshark/optimized/packet-wsp.c.ll
+; yalantinglibs/optimized/channel.cpp.ll
+; yalantinglibs/optimized/example.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add nuw nsw i32 %4, %0
+  ret i32 %5
+}
+
+; 16 occurrences:
+; cmake/optimized/zstd_compress_sequences.c.ll
+; cpython/optimized/_codecs_jp.ll
+; cpython/optimized/_datetimemodule.ll
+; cpython/optimized/_zoneinfo.ll
+; luajit/optimized/minilua.ll
+; opencv/optimized/stereo_binary_bm.cpp.ll
+; opencv/optimized/stereobm.cpp.ll
+; opencv/optimized/sumpixels.dispatch.cpp.ll
+; openjdk/optimized/ByteIndexed.ll
+; openjdk/optimized/UshortIndexed.ll
+; openjdk/optimized/jcsample.ll
+; quickjs/optimized/libunicode.ll
+; redis/optimized/ldo.ll
+; sqlite/optimized/sqlite3.ll
+; zstd/optimized/zstd_compress_sequences.c.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add nsw i32 %4, %0
+  ret i32 %5
+}
+
+; 244 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; cmake/optimized/lzma_decoder.c.ll
@@ -425,7 +565,6 @@ entry:
 ; openjdk/optimized/jcsample.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BL.ll
 ; php/optimized/decode.ll
-; ruby/optimized/japanese.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -503,151 +642,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 33 occurrences:
-; abc/optimized/Glucose.cpp.ll
-; abc/optimized/Glucose2.cpp.ll
-; abc/optimized/SimpSolver.cpp.ll
-; abc/optimized/SimpSolver2.cpp.ll
-; assimp/optimized/NFFLoader.cpp.ll
-; assimp/optimized/XFileImporter.cpp.ll
-; cvc5/optimized/SimpSolver.cc.ll
-; cvc5/optimized/Solver.cc.ll
-; eastl/optimized/EADateTime.cpp.ll
-; grpc/optimized/hpack_parser.cc.ll
-; hermes/optimized/JSLexer.cpp.ll
-; icu/optimized/genrb.ll
-; linux/optimized/ah6.ll
-; linux/optimized/hooks.ll
-; linux/optimized/hub.ll
-; linux/optimized/nf_log_syslog.ll
-; llvm/optimized/Interp.cpp.ll
-; minetest/optimized/chat.cpp.ll
-; openjdk/optimized/type.ll
-; quickjs/optimized/quickjs.ll
-; ruby/optimized/compile.ll
-; spike/optimized/s_addM.ll
-; sqlite/optimized/sqlite3.ll
-; verilator/optimized/V3Const__gen.cpp.ll
-; wireshark/optimized/packet-acn.c.ll
-; wireshark/optimized/packet-dvb-s2-table.c.ll
-; wireshark/optimized/packet-gquic.c.ll
-; wireshark/optimized/packet-ipmi.c.ll
-; yosys/optimized/SimpSolver.ll
-; yosys/optimized/Solver.ll
-; z3/optimized/dl_finite_product_relation.cpp.ll
-; z3/optimized/dl_sieve_relation.cpp.ll
-; z3/optimized/sat_ddfw.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = add i32 %4, %0
-  ret i32 %5
-}
-
-; 28 occurrences:
-; actix-rs/optimized/22x16e3cd4musvfe.ll
-; actix-rs/optimized/559mdouync0xx14h.ll
-; actix-rs/optimized/u8tt4f5khiooymn.ll
-; assimp/optimized/LWOLoader.cpp.ll
-; clamav/optimized/unpack.cpp.ll
-; cmake/optimized/lzma_encoder.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
-; cpython/optimized/assemble.ll
-; grpc/optimized/bin_encoder.cc.ll
-; hdf5/optimized/H5B2hdr.c.ll
-; hdf5/optimized/H5B2int.c.ll
-; hdf5/optimized/H5HFcache.c.ll
-; hdf5/optimized/H5HFiblock.c.ll
-; libdeflate/optimized/deflate_compress.c.ll
-; linux/optimized/skl_watermark.ll
-; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; memcached/optimized/memcached-items.ll
-; memcached/optimized/memcached-storage.ll
-; memcached/optimized/memcached_debug-items.ll
-; memcached/optimized/memcached_debug-storage.ll
-; opencv/optimized/fast_window_binarizer.cpp.ll
-; openusd/optimized/openexr-c.c.ll
-; qemu/optimized/hw_net_can_can_sja1000.c.ll
-; qemu/optimized/hw_usb_desc.c.ll
-; wireshark/optimized/packet-isis-lsp.c.ll
-; wireshark/optimized/packet-quic.c.ll
-; wireshark/optimized/packet-roon_discovery.c.ll
-; wireshark/optimized/packet-rtmpt.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
-  %5 = add i32 %4, %0
-  ret i32 %5
-}
-
-; 27 occurrences:
-; brotli/optimized/transform.c.ll
-; clamav/optimized/asn1.c.ll
-; cmake/optimized/http.c.ll
-; curl/optimized/libcurl_la-http.ll
-; gromacs/optimized/readir.cpp.ll
-; hyperscan/optimized/rose_build_misc.cpp.ll
-; libpng/optimized/pngwutil.c.ll
-; linux/optimized/airtime.ll
-; linux/optimized/drm_client_modeset.ll
-; linux/optimized/intel_display.ll
-; openspiel/optimized/TransTableL.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
-; php/optimized/image.ll
-; proj/optimized/projinfo.cpp.ll
-; qemu/optimized/block_qcow2.c.ll
-; qemu/optimized/hw_char_serial.c.ll
-; qemu/optimized/hw_usb_desc.c.ll
-; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
-; wireshark/optimized/packet-arp.c.ll
-; wireshark/optimized/packet-btatt.c.ll
-; wireshark/optimized/packet-e212.c.ll
-; wireshark/optimized/packet-iwarp-mpa.c.ll
-; wireshark/optimized/packet-rtp-midi.c.ll
-; wireshark/optimized/packet-sccp.c.ll
-; wireshark/optimized/packet-wsp.c.ll
-; yalantinglibs/optimized/channel.cpp.ll
-; yalantinglibs/optimized/example.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 16 occurrences:
-; cmake/optimized/zstd_compress_sequences.c.ll
-; cpython/optimized/_codecs_jp.ll
-; cpython/optimized/_datetimemodule.ll
-; cpython/optimized/_zoneinfo.ll
-; luajit/optimized/minilua.ll
-; opencv/optimized/stereo_binary_bm.cpp.ll
-; opencv/optimized/stereobm.cpp.ll
-; opencv/optimized/sumpixels.dispatch.cpp.ll
-; openjdk/optimized/ByteIndexed.ll
-; openjdk/optimized/UshortIndexed.ll
-; openjdk/optimized/jcsample.ll
-; quickjs/optimized/libunicode.ll
-; redis/optimized/ldo.ll
-; sqlite/optimized/sqlite3.ll
-; zstd/optimized/zstd_compress_sequences.c.ll
-; zxing/optimized/zueci.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -662,7 +657,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -674,8 +669,32 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
+  ret i32 %5
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000017(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nsw i32 %1, %3
+  %5 = add nuw nsw i32 %4, %0
+  ret i32 %5
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; opencv/optimized/qrcode_reader.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nsw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -689,7 +708,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -705,7 +724,7 @@ entry:
 define i32 @func000000000000001d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -716,7 +735,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -729,7 +748,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -742,19 +761,8 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/qrcode_reader.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext nneg i8 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -764,7 +772,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }

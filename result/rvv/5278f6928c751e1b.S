@@ -21,7 +21,7 @@ func0000000000000001:                   # @func0000000000000001
 	vzext.vf2	v12, v11
 	vwsll.vi	v14, v12, 31
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v14, v8
+	vor.vv	v8, v8, v14
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret

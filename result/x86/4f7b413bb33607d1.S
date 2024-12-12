@@ -29,10 +29,9 @@ func0000000000000010:                   # @func0000000000000010
 	leaq	(%rdi,%rsi,4), %rcx
 	leaq	(%rcx,%rax,4), %rax
 	retq
-func00000000000000da:                   # @func00000000000000da
+func000000000000005b:                   # @func000000000000005b
 	movslq	%edx, %rax
-	shlq	$4, %rax
-	shlq	$4, %rsi
-	addq	%rsi, %rax
-	addq	%rdi, %rax
+	shlq	$5, %rsi
+	addq	%rdi, %rsi
+	leaq	(%rsi,%rax,8), %rax
 	retq

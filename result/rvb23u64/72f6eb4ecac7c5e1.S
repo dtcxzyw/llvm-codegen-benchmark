@@ -16,7 +16,7 @@ func0000000000000004:                   # @func0000000000000004
 	czero.eqz	a0, a1, a0
 	add	a0, a0, a2
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	sub	a2, a0, a1
 	sltu	a0, a0, a1
 	lui	a1, 16

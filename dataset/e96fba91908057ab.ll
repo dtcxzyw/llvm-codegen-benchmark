@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 31 occurrences:
 ; abc/optimized/sclUpsize.c.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
@@ -26,9 +26,11 @@
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
-; opencv/optimized/short_term_imageless_tracker.cpp.ll
-; opencv/optimized/zero_term_imageless_tracker.cpp.ll
+; opencv/optimized/tracker.cpp.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:

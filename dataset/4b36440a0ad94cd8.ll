@@ -1,8 +1,23 @@
 
-%"class.llvm::Use.2987993" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3073180" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3138418" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3266061" = type { ptr, ptr, ptr, ptr }
 
-; 147 occurrences:
+; 2 occurrences:
+; recastnavigation/optimized/fastlz.c.ll
+; yosys/optimized/fastlz.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005a(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 7936
+  %4 = zext nneg i32 %3 to i64
+  %5 = sub nsw i64 0, %4
+  %6 = getelementptr nusw i8, ptr %1, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 144 occurrences:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
@@ -115,7 +130,6 @@
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReplaceWithVeclib.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
@@ -146,32 +160,16 @@
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; recastnavigation/optimized/fastlz.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
-; yosys/optimized/fastlz.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000005b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 7936
+  %3 = and i32 %2, 134217727
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
-  ret ptr %7
-}
-
-; 2 occurrences:
-; gromacs/optimized/pme_gather.cpp.ll
-; recastnavigation/optimized/fastlz.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000050(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 7936
-  %4 = zext nneg i32 %3 to i64
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 %0
+  %6 = getelementptr nusw %"class.llvm::Use.3138418", ptr %1, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -185,7 +183,7 @@ entry:
   %3 = and i32 %2, 134217727
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw %"class.llvm::Use.2987993", ptr %1, i64 %5
+  %6 = getelementptr nusw %"class.llvm::Use.3181463", ptr %1, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %0
   ret ptr %7
 }
@@ -193,13 +191,26 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000053(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr %"class.llvm::Use.3073180", ptr %1, i64 %5
-  %7 = getelementptr nusw %"class.llvm::Use.3073180", ptr %6, i64 %0
+  %6 = getelementptr %"class.llvm::Use.3266061", ptr %1, i64 %5
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3266061", ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 1 occurrences:
+; gromacs/optimized/pme_gather.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000050(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 3
+  %4 = zext nneg i32 %3 to i64
+  %5 = sub nsw i64 0, %4
+  %6 = getelementptr float, ptr %1, i64 %5
+  %7 = getelementptr float, ptr %6, i64 %0
   ret ptr %7
 }
 

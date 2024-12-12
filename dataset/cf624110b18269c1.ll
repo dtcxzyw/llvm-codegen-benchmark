@@ -14,6 +14,7 @@ entry:
 
 ; 297 occurrences:
 ; abc/optimized/acecRe.c.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
@@ -225,7 +226,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll

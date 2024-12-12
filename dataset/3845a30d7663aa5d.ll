@@ -3,7 +3,7 @@
 ; clamav/optimized/qsort.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000046(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, 0
   %narrow = select i1 %3, i32 %2, i32 0

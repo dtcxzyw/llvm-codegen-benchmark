@@ -11,7 +11,7 @@
 ; ruby/optimized/class.ll
 ; spike/optimized/cbo_inval.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i64 %1, 27
@@ -23,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000118(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, -9223372036854775806
   %4 = icmp ne i64 %1, -9223372036854775805
@@ -32,7 +32,7 @@ entry:
   ret i1 %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/epd.c.ll
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
@@ -40,16 +40,15 @@ entry:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/target_riscv_csr.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = icmp eq i64 %1, 3072
+  %4 = icmp eq i64 %1, 0
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -110,12 +109,12 @@ entry:
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i64 %1, 0
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -123,19 +122,19 @@ entry:
 ; linux/optimized/mcast.ll
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq i64 %1, -9223372036854775808
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; hermes/optimized/Object.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000310(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ugt i64 %1, -844424930131969
@@ -145,33 +144,21 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/Clang.cpp.ll
+; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000314(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 425201762304
-  %4 = icmp slt i64 %1, 0
+  %3 = icmp ne i64 %2, -4611686018427387904
+  %4 = icmp sgt i64 %1, -4611686018427387905
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/Clang.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000118(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %2, 99
-  %4 = icmp ne i64 %1, 0
-  %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000114(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 17
   %4 = icmp sgt i64 %1, -1
@@ -183,12 +170,12 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fast_gemm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000294(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 11
   %4 = icmp sgt i64 %1, 7
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -198,12 +185,12 @@ entry:
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000528(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 100
-  %4 = icmp ult i64 %1, 30000
+  %3 = icmp samesign ult i64 %2, 100
+  %4 = icmp samesign ult i64 %1, 30000
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

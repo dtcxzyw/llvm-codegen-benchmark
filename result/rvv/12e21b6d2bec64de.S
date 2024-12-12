@@ -8,19 +8,6 @@ func0000000000002210:                   # @func0000000000002210
 	vmfeq.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
-.LCPI1_0:
-	.word	0x3cffff04                      # float 0.0312495306
-func0000000000000888:                   # @func0000000000000888
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmin.vv	v12, v8, v12
-	lui	a0, 266752
-	vmflt.vf	v16, v12, fa5
-	fmv.w.x	fa5, a0
-	vmfgt.vf	v12, v8, fa5
-	vmor.mm	v0, v12, v16
-	ret
 func0000000000002698:                   # @func0000000000002698
 	fli.s	fa5, inf
 	lui	a0, 798736

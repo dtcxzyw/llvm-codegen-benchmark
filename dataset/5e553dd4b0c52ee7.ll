@@ -315,13 +315,13 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
   %4 = and i64 %3, 4294967295
   %5 = lshr i64 %1, %4
   %6 = sub nsw i64 %1, %5
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 

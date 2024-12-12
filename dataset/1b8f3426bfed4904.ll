@@ -27,6 +27,19 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/dec_octet_rule.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000177(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -48
+  %4 = add nsw i32 %3, %1
+  %5 = mul nuw nsw i32 %4, 10
+  %6 = add nsw i32 %5, -48
+  %7 = add nuw nsw i32 %6, %0
+  ret i32 %7
+}
+
+; 1 occurrences:
 ; slurm/optimized/parse_time.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000001f5(i32 %0, i32 %1, i32 %2) #0 {

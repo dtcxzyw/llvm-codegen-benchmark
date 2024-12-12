@@ -5,7 +5,7 @@
 func000000000000000e:                   # @func000000000000000e
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$17, %ymm1, %ymm2, %ymm1        # ymm1 = ymm1[0],ymm2[1,2,3],ymm1[4],ymm2[5,6,7],ymm1[8],ymm2[9,10,11],ymm1[12],ymm2[13,14,15]
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2   # xmm2 = [2147975281,2147975281,2147975281,2147975281]

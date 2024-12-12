@@ -21,16 +21,17 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; rust-analyzer-rs/optimized/3aojx6tzw7bx942t.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = select i1 %4, i64 2147483647, i64 %0
+  %5 = select i1 %4, i64 undef, i64 %0
   ret i64 %5
 }
 

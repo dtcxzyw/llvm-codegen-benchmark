@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; cmake/optimized/zstd_lazy.c.ll
 ; freetype/optimized/pfr.c.ll
 ; qemu/optimized/hw_char_serial.c.ll
 ; wireshark/optimized/packet-dvb-s2-table.c.ll
+; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i8 %0, i8 %1) #0 {
 entry:

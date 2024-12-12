@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
@@ -14,6 +14,7 @@
 ; gromacs/optimized/genion.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i128 %1) #0 {
 entry:
@@ -49,7 +50,7 @@ entry:
 ; openspiel/optimized/is_mcts.cc.ll
 ; openspiel/optimized/mcts.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = add nsw i64 %0, 1
@@ -75,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = add nsw i64 %0, -1

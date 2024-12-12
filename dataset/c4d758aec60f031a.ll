@@ -1,5 +1,5 @@
 
-; 288 occurrences:
+; 291 occurrences:
 ; abc/optimized/epd.c.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -7,6 +7,8 @@
 ; arrow/optimized/float16.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
@@ -106,6 +108,7 @@
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
@@ -125,8 +128,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -288,6 +289,8 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; verilator/optimized/V3Number.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(double %0) #0 {
 entry:

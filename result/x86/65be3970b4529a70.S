@@ -1,9 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
-	shll	$3, %esi
-	cmpl	%edi, %esi
-	setg	%al
-	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	shll	$6, %esi
 	cmpl	%edi, %esi
 	setg	%al
@@ -20,23 +15,23 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%esi, %esi
 	setg	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addl	%esi, %esi
 	subl	%edi, %esi
 	cmpl	$128, %esi
 	setb	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addl	%esi, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	%esi, %esi
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	shll	$16, %esi
 	subl	%edi, %esi
 	cmpl	$536870912, %esi                # imm = 0x20000000
@@ -53,18 +48,18 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%esi, %esi
 	setle	%al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	shll	$3, %esi
 	subl	%edi, %esi
 	testl	%esi, %esi
 	setg	%al
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	shll	$2, %esi
 	cmpl	%edi, %esi
 	setg	%al
 	retq
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	shll	$3, %esi
 	cmpl	%edi, %esi
 	setl	%al
@@ -75,18 +70,12 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$2, %esi
 	setae	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	shll	$3, %esi
 	cmpl	%edi, %esi
 	setle	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
-	shll	$3, %esi
-	subl	%edi, %esi
-	cmpl	$5, %esi
-	setb	%al
-	retq
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	addl	%esi, %esi
 	cmpl	%edi, %esi
 	setl	%al

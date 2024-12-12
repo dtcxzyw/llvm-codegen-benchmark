@@ -18,7 +18,7 @@ entry:
   ret i1 %6
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; icu/optimized/decNumber.ll
@@ -28,7 +28,6 @@ entry:
 ; linux/optimized/transport.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/X86InstrMappingEmitter.cpp.ll
-; opencv/optimized/stringutils.cpp.ll
 ; php/optimized/ir_emit.ll
 ; postgres/optimized/xlogrecovery.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll

@@ -1,5 +1,5 @@
 
-; 449 occurrences:
+; 448 occurrences:
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/Dumper.cpp.ll
 ; hermes/optimized/Mem2Reg.cpp.ll
@@ -108,7 +108,6 @@
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll

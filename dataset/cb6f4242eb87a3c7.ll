@@ -1,5 +1,5 @@
 
-; 207 occurrences:
+; 226 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -38,6 +38,7 @@
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
+; boost/optimized/default_filter_factory.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; cmake/optimized/json_value.cpp.ll
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
@@ -98,7 +99,6 @@
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -144,7 +144,6 @@
 ; openjdk/optimized/reflection.ll
 ; openjdk/optimized/sharedRuntime.ll
 ; openjdk/optimized/tableStatistics.ll
-; openmpi/optimized/name_fns.ll
 ; openmpi/optimized/scheduler.ll
 ; openusd/optimized/parserHelpers.cpp.ll
 ; openusd/optimized/testTraceReportPerf.cpp.ll
@@ -177,7 +176,6 @@
 ; redis/optimized/redis-benchmark.ll
 ; redis/optimized/redis-cli.ll
 ; redis/optimized/server.ll
-; ruby/optimized/scheduler.ll
 ; sentencepiece/optimized/char_model_trainer.cc.ll
 ; sentencepiece/optimized/trainer_interface.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
@@ -207,6 +205,27 @@
 ; xgboost/optimized/quantile.cc.ll
 ; yosys/optimized/qbfsat.ll
 ; z3/optimized/cost_evaluator.cpp.ll
+; zed-rs/optimized/00laj72jeyttgatxd0myrfigl.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/10zh1v68f2nhlerzsork25it5.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/9awmqr28bdho83r0fgrej0t00.ll
+; zed-rs/optimized/9m8v6uy2305b0acd84bvd598m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/b3fsiuvawj3jj0fngz22afvrc.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i64 %0) #0 {
 entry:

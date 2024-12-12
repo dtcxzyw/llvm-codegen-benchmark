@@ -77,13 +77,12 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
 ; cpython/optimized/obmalloc.ll
 ; git/optimized/commit-graph.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/fair.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/vmscan.ll
 ; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/GCOV.cpp.ll
@@ -108,9 +107,10 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/7rpe3bril898mttdoib5hjrj5.ll
 ; zxing/optimized/BitMatrixIO.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {

@@ -14,9 +14,10 @@ entry:
   ret i8 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cmake/optimized/lzma_encoder.c.ll
 ; folly/optimized/Conv.cpp.ll
+; mixbox/optimized/mixbox.ll
 ; opencv/optimized/persistence.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; zxing/optimized/zueci.c.ll
@@ -24,7 +25,7 @@ entry:
 define i8 @func000000000000003c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 100
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }
@@ -57,19 +58,8 @@ entry:
 define i8 @func0000000000000032(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = trunc nuw i32 %3 to i8
-  ret i8 %4
-}
-
-; 1 occurrences:
-; mixbox/optimized/mixbox.ll
-; Function Attrs: nounwind
-define i8 @func000000000000001c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 85
-  %3 = add nuw nsw i32 %2, %0
-  %4 = trunc i32 %3 to i8
   ret i8 %4
 }
 
@@ -86,17 +76,6 @@ entry:
   ret i8 %4
 }
 
-; 1 occurrences:
-; linux/optimized/bcd.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000020(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw i32 %1, 6
-  %3 = add i32 %2, %0
-  %4 = trunc i32 %3 to i8
-  ret i8 %4
-}
-
 ; 6 occurrences:
 ; icu/optimized/decNumber.ll
 ; linux/optimized/cdrom.ll
@@ -108,7 +87,7 @@ entry:
 define i8 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 75
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }
@@ -119,7 +98,7 @@ entry:
 define i8 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 10
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc nuw i32 %3 to i8
   ret i8 %4
 }

@@ -6,7 +6,7 @@
 	.zero	4,248
 .LCPI0_3:
 	.byte	8                               # 0x8
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm2
 	vpbroadcastb	.LCPI0_3(%rip), %xmm1   # xmm1 = [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
 	vpcmpnleub	%xmm1, %xmm2, %k1

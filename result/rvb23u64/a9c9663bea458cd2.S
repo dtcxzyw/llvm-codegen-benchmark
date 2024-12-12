@@ -10,6 +10,12 @@ func000000000000004e:                   # @func000000000000004e
 	czero.nez	a1, a1, a2
 	sub	a0, a0, a1
 	ret
+func0000000000000046:                   # @func0000000000000046
+	addi	a0, a0, -1
+	sltu	a2, a0, a1
+	czero.nez	a1, a1, a2
+	sub	a0, a0, a1
+	ret
 func000000000000004a:                   # @func000000000000004a
 	addi	a0, a0, 1
 	sltu	a2, a0, a1

@@ -1,5 +1,5 @@
 
-; 344 occurrences:
+; 357 occurrences:
 ; abseil-cpp/optimized/log_entry_test.cc.ll
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -34,6 +34,19 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/cmCTest.cxx.ll
@@ -355,13 +368,30 @@ entry:
   ret ptr %6
 }
 
-; 69 occurrences:
-; assimp/optimized/glTF2Importer.cpp.ll
-; cmake/optimized/cmComputeLinkDepends.cxx.ll
-; cmake/optimized/cmProcess.cxx.ll
+; 8 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_aggregate.cpp.ll
+; hyperscan/optimized/engine_hyperscan.cpp.ll
+; minetest/optimized/COpenGLDriver.cpp.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
+; minetest/optimized/connection.cpp.ll
+; minetest/optimized/networkpacket.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %0 to i64
+  %.neg = sub i64 %3, %4
+  %5 = getelementptr i8, ptr %0, i64 %.neg
+  %6 = getelementptr i8, ptr %5, i64 %1
+  ret ptr %6
+}
+
+; 61 occurrences:
+; assimp/optimized/glTF2Importer.cpp.ll
+; cmake/optimized/cmComputeLinkDepends.cxx.ll
+; cmake/optimized/cmProcess.cxx.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; faiss/optimized/IDSelector.cpp.ll
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -376,7 +406,6 @@ entry:
 ; hermes/optimized/JSRegExp.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
 ; hermes/optimized/RegexSerialization.cpp.ll
-; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; lief/optimized/Builder.cpp.ll
 ; lief/optimized/Handler.cpp.ll
 ; lief/optimized/SegmentCommand.cpp.ll
@@ -391,10 +420,6 @@ entry:
 ; luau/optimized/IrAnalysis.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
-; minetest/optimized/COpenGLDriver.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
-; minetest/optimized/connection.cpp.ll
-; minetest/optimized/networkpacket.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; oiio/optimized/bmpoutput.cpp.ll
@@ -497,8 +522,20 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; eastl/optimized/BenchmarkAlgorithm.cpp.ll
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %0 to i64
+  %.neg = sub i64 %3, %4
+  %5 = getelementptr i8, ptr %0, i64 %.neg
+  %6 = getelementptr i8, ptr %5, i64 %1
+  ret ptr %6
+}
+
+; 1 occurrences:
 ; opencv/optimized/einsum_layer.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {

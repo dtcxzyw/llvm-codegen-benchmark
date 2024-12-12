@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	sarq	$32, %rdx
 	shlq	$5, %rsi
 	leaq	(%rsi,%rdi), %rax

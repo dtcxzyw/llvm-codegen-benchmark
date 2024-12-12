@@ -11,11 +11,10 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
 ; postgres/optimized/execTuples.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {

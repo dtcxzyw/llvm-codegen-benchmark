@@ -10,7 +10,7 @@ define double @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double 1.000000e+00, %2
   %4 = fmul double %3, %1
-  %5 = fcmp olt double %4, %0
+  %5 = fcmp ogt double %0, %4
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }
@@ -22,7 +22,7 @@ define double @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double 1.000000e+00, %2
   %4 = fmul double %3, %1
-  %5 = fcmp ole double %4, %0
+  %5 = fcmp oge double %0, %4
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }

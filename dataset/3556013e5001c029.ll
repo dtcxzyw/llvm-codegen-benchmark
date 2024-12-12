@@ -22,9 +22,10 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
+; nuttx/optimized/lib_gmtimer.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; wireshark/optimized/packet-dis.c.ll
 ; wireshark/optimized/packet-esl.c.ll

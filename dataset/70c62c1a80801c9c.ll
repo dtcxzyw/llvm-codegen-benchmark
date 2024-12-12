@@ -12,7 +12,7 @@ entry:
   ret i16 %5
 }
 
-; 487 occurrences:
+; 489 occurrences:
 ; abc/optimized/wlcMem.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; c3c/optimized/expr.c.ll
@@ -337,7 +337,6 @@ entry:
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -488,6 +487,9 @@ entry:
 ; llvm/optimized/X86Subtarget.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; minetest/optimized/anaglyph.cpp.ll
 ; openjdk/optimized/net_util_md.ll
 ; openusd/optimized/decodemv.c.ll
@@ -510,13 +512,12 @@ entry:
   ret i16 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/rx.ll
 ; llvm/optimized/SemaDecl.cpp.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; ruby/optimized/time.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

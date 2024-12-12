@@ -15,7 +15,19 @@ entry:
   ret double %5
 }
 
-; 3 occurrences:
+; 15 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; llvm/optimized/HeatUtils.cpp.ll
 ; openjdk/optimized/cmspcs.ll
 ; proj/optimized/adams.cpp.ll

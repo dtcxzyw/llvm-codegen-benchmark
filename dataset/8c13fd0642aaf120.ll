@@ -13,7 +13,6 @@
 ; imgui/optimized/imgui.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/filter_camera.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
@@ -27,6 +26,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

@@ -1,12 +1,19 @@
-func00000000000000b9:                   # @func00000000000000b9
+func0000000000000139:                   # @func0000000000000139
 	decq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
 	setle	%al
 	addq	%rdi, %rax
 	retq
-func0000000000000089:                   # @func0000000000000089
+func0000000000000109:                   # @func0000000000000109
 	decq	%rdx
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdx
+	sete	%al
+	addq	%rdi, %rax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	incq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
 	sete	%al

@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = lshr i64 %2, 1
@@ -49,7 +49,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000361(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
@@ -58,7 +58,7 @@ entry:
   ret i1 %5
 }
 
-; 126 occurrences:
+; 127 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; duckdb/optimized/boolean_operators.cpp.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
@@ -185,8 +185,9 @@ entry:
 ; wireshark/optimized/simple_statistics_dialog.cpp.ll
 ; wireshark/optimized/tap_parameter_dialog.cpp.ll
 ; wireshark/optimized/voip_calls_dialog.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = lshr i64 %2, 10
@@ -198,7 +199,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/util_hbitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
   %3 = lshr i64 %2, 6
@@ -207,12 +208,15 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; mini-lsm-rs/optimized/1zm93ee80v61t4c3.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = lshr exact i64 %2, 1
@@ -254,12 +258,12 @@ entry:
 ; openjdk/optimized/zRemembered.ll
 ; openjdk/optimized/zRememberedSet.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -360,12 +364,12 @@ entry:
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000174(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -394,12 +398,12 @@ entry:
 ; openjdk/optimized/zRememberedSet.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000374(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -408,12 +412,12 @@ entry:
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000134(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000274(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -422,7 +426,7 @@ entry:
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 1
@@ -434,7 +438,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 1
@@ -446,7 +450,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4
   %3 = lshr exact i64 %2, 2
@@ -459,19 +463,19 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000134(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 1
   %4 = add nsw i64 %0, -1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
   %3 = lshr exact i64 %2, 1
@@ -483,7 +487,7 @@ entry:
 ; 1 occurrences:
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 7
   %3 = lshr i64 %2, 3
@@ -495,12 +499,12 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001b4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 8
   %3 = lshr exact i64 %2, 3
   %4 = add nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

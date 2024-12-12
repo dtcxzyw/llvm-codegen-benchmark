@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; linux/optimized/af_netlink.ll
@@ -8,6 +8,8 @@
 ; linux/optimized/tcp.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; wireshark/optimized/packet-websocket.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i8 %0) #0 {
 entry:

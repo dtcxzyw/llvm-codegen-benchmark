@@ -8,7 +8,7 @@ define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = mul i32 %2, 6
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -24,11 +24,11 @@ entry:
 ; linux/optimized/util.ll
 ; linux/optimized/xfrm_policy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = mul nuw i32 %2, 3
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 

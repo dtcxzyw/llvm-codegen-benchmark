@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/md5.cpp.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; ruby/optimized/md5.ll
 ; ruby/optimized/sha1.ll
+; verilator/optimized/V3String.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i64 %0) #0 {
 entry:
@@ -13,7 +14,7 @@ entry:
   ret i32 %3
 }
 
-; 311 occurrences:
+; 330 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/abcSweep.c.ll
@@ -33,6 +34,31 @@ entry:
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/satStore.c.ll
 ; assimp/optimized/unzip.c.ll
+; boost/optimized/area.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; brotli/optimized/decode.c.ll
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/crypt.cpp.ll
@@ -92,8 +118,6 @@ entry:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/early-lookup.ll
 ; linux/optimized/exit.ll
-; linux/optimized/feat_ctl.ll
-; linux/optimized/hid-belkin.ll
 ; linux/optimized/hid-microsoft.ll
 ; linux/optimized/i915_hwmon.ll
 ; linux/optimized/i915_perf.ll
@@ -104,7 +128,6 @@ entry:
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/io_uring.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/libata-sata.ll
@@ -118,7 +141,6 @@ entry:
 ; linux/optimized/pid_list.ll
 ; linux/optimized/scsi_ioctl.ll
 ; linux/optimized/stackdepot.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; linux/optimized/xhci.ll
@@ -171,7 +193,6 @@ entry:
 ; llvm/optimized/NoOwnershipChangeVisitor.cpp.ll
 ; llvm/optimized/PathDiagnostic.cpp.ll
 ; llvm/optimized/ProgramPoint.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
@@ -194,7 +215,6 @@ entry:
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
@@ -269,6 +289,7 @@ entry:
 ; postgres/optimized/inet_net_ntop.ll
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
+; postgres/optimized/spgutils.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
@@ -278,7 +299,6 @@ entry:
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; quest/optimized/QuEST_cpu.c.ll
 ; re2/optimized/prog.cc.ll
 ; redis/optimized/buf_writer.ll
@@ -348,8 +368,7 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; linux/optimized/memweight.ll
+; 2 occurrences:
 ; linux/optimized/pid_list.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; Function Attrs: nounwind

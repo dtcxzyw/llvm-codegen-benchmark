@@ -19,7 +19,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 1044480
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 65535
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

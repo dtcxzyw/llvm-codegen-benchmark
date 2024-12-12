@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,9 +16,9 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.zero	4,3
+	.zero	4,63
 func0000000000000000:                   # @func0000000000000000
-	vpsrld	$8, %ymm0, %ymm0
+	vpsrld	$12, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper

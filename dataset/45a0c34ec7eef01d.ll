@@ -1,8 +1,10 @@
 
-; 68 occurrences:
+; 65 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; faiss/optimized/partitioning.cpp.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; hermes/optimized/zip.c.ll
@@ -12,13 +14,10 @@
 ; linux/optimized/ah6.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/filter.ll
-; linux/optimized/int_log.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/libata-pata-timings.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/ohci-hcd.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/virtio_net.ll
@@ -41,12 +40,10 @@
 ; slurm/optimized/dist_tasks.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
-; wireshark/optimized/packet-asap.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
 ; wireshark/optimized/packet-dcom-cba-acco.c.ll
 ; wireshark/optimized/packet-dns.c.ll
-; wireshark/optimized/packet-enrp.c.ll
 ; wireshark/optimized/packet-homeplug-av.c.ll
 ; wireshark/optimized/packet-infiniband.c.ll
 ; wireshark/optimized/packet-m3ua.c.ll

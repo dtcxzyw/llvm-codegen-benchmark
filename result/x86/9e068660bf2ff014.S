@@ -5,6 +5,20 @@ func00000000000001fd:                   # @func00000000000001fd
 	imulq	$1000000, %rcx, %rax            # imm = 0xF4240
 	addq	%rdi, %rax
 	retq
+func0000000000000100:                   # @func0000000000000100
+	movl	%edx, %eax
+	leaq	(%rsi,%rsi,4), %rcx
+	leaq	(%rax,%rcx,2), %rax
+	leaq	(%rax,%rax,4), %rax
+	leaq	(%rdi,%rax,2), %rax
+	retq
+func0000000000000188:                   # @func0000000000000188
+	movl	%edx, %eax
+	leaq	(%rsi,%rsi,4), %rcx
+	leaq	(%rax,%rcx,2), %rax
+	leaq	(%rax,%rax,4), %rax
+	leaq	(%rdi,%rax,2), %rax
+	retq
 func0000000000000055:                   # @func0000000000000055
 	movl	%edx, %eax
 	leaq	(%rsi,%rsi,8), %rcx
@@ -29,13 +43,6 @@ func0000000000000155:                   # @func0000000000000155
 	leaq	(%rdi,%rax,2), %rax
 	retq
 func0000000000000150:                   # @func0000000000000150
-	movl	%edx, %eax
-	leaq	(%rsi,%rsi,4), %rcx
-	leaq	(%rax,%rcx,2), %rax
-	leaq	(%rax,%rax,4), %rax
-	leaq	(%rdi,%rax,2), %rax
-	retq
-func0000000000000100:                   # @func0000000000000100
 	movl	%edx, %eax
 	leaq	(%rsi,%rsi,4), %rcx
 	leaq	(%rax,%rcx,2), %rax

@@ -10,7 +10,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	feq.d	a1, fa0, fa1
 	xor	a0, a0, a1
 	ret
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	sext.w	a0, a0
 	flt.d	a1, fa1, fa0
 	addi	a0, a0, -2

@@ -6,7 +6,7 @@
 define i32 @func0000000000000008(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 1
-  %3 = icmp ugt ptr %2, %0
+  %3 = icmp ult ptr %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -17,10 +17,10 @@ entry:
 ; vcpkg/optimized/commands.set-installed.cpp.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000042(ptr %0, ptr %1) #0 {
+define i32 @func00000000000000c2(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
-  %3 = icmp eq ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %3 = icmp eq ptr %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -42,10 +42,10 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; vcpkg/optimized/commands.set-installed.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(ptr %0, ptr %1) #0 {
+define i32 @func00000000000000d8(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
-  %3 = icmp ne ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %3 = icmp ne ptr %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

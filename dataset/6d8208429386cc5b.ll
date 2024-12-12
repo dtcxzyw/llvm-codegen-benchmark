@@ -16,9 +16,9 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp samesign ult i32 %0, %2
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = add nuw i32 %4, 1
   %6 = zext i32 %5 to i64

@@ -4,7 +4,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0) #0 {
+define i8 @func0000000000000021(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 3
   %2 = icmp eq i8 %1, 3
@@ -12,16 +12,15 @@ entry:
   ret i8 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; linux/optimized/drm_edid.ll
-; linux/optimized/eht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll
 ; linux/optimized/usblp.ll
+; lvgl/optimized/lv_text.ll
 ; php/optimized/avifinfo.ll
 ; php/optimized/decode.ll
-; postgres/optimized/rangetypes.ll
 ; proxygen/optimized/HPACKDecoder.cpp.ll
 ; qemu/optimized/hw_char_ipoctal232.c.ll
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll

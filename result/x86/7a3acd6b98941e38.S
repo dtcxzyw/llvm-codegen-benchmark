@@ -22,11 +22,19 @@ func000000000000000a:                   # @func000000000000000a
 	cmpb	$123, %dil
 	setge	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func0000000000000014:                   # @func0000000000000014
+	testb	$-2, %dil
+	sete	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpb	$33, %dil
+	setae	%al
+	retq
+func000000000000004a:                   # @func000000000000004a
 	testb	%dil, %dil
 	setns	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	testb	%dil, %dil
 	setle	%al
 	retq

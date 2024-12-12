@@ -1,5 +1,5 @@
 
-; 571 occurrences:
+; 572 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/System.cpp.ll
@@ -90,6 +90,12 @@
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/cs_updown.c.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
@@ -232,7 +238,6 @@
 ; gromacs/optimized/vcm.cpp.ll
 ; gromacs/optimized/velocityscalingtemperaturecoupling.cpp.ll
 ; gromacs/optimized/wallcycle.cpp.ll
-; gromacs/optimized/walltime_accounting.cpp.ll
 ; gromacs/optimized/xtc3.c.ll
 ; hdf5/optimized/H5Dchunk.c.ll
 ; hdf5/optimized/H5Ztrans.c.ll
@@ -268,7 +273,6 @@
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; meshlab/optimized/filter_mutualinfo.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -306,7 +310,6 @@
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/dlarrf.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsyequb.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/accum_layer.cpp.ll
@@ -494,7 +497,6 @@
 ; postgres/optimized/vacuum.ll
 ; proj/optimized/axisswap.cpp.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/ortho.cpp.ll
 ; quantlib/optimized/analyticamericanmargrabeengine.ll
 ; quantlib/optimized/analyticeuropeanmargrabeengine.ll
@@ -547,7 +549,6 @@
 ; wireshark/optimized/color_utils.cpp.ll
 ; wireshark/optimized/drag_drop_toolbar.cpp.ll
 ; wireshark/optimized/follow_stream_dialog.cpp.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; wireshark/optimized/lte_rlc_graph_dialog.cpp.ll
 ; wireshark/optimized/main_application.cpp.ll
@@ -575,7 +576,7 @@
 define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

@@ -58,7 +58,7 @@ func000000000000000e:                   # @func000000000000000e
 	addi	a2, a2, 256
 	lui	a3, 4080
 	and	a2, a2, a3
-	lui	a3, 4096
+	lui	a3, 2048
 	addiw	a3, a3, -256
 	or	a0, a0, a2
 	and	a1, a1, a3

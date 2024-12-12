@@ -177,4 +177,15 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = ashr i32 %1, 20
+  %3 = add i32 %2, %0
+  %4 = sub i32 2, %3
+  ret i32 %4
+}
+
 attributes #0 = { nounwind }

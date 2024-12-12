@@ -4,7 +4,7 @@
 ; hermes/optimized/zip.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, 4294967295
   %2 = icmp ne i64 %.mask, 0
@@ -20,7 +20,7 @@ entry:
 ; node/optimized/libnode.crypto_aes.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, 576460752303423487
   %2 = icmp ne i64 %.mask, 0

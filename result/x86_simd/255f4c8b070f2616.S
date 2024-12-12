@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI3_0:
 	.long	1                               # 0x1
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm2, %k1
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
 	retq

@@ -11,10 +11,10 @@ func0000000000000008:                   # @func0000000000000008
 	shlq	$32, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	leaq	1(%rdx), %rax
+	leaq	-10(%rdx), %rax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
-	shlq	$4, %rax
+	shlq	$2, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	leal	-1(%rdx), %eax

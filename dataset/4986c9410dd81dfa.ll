@@ -21,7 +21,7 @@
 ; ruby/optimized/parse.ll
 ; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
@@ -31,11 +31,12 @@ entry:
   ret i1 %6
 }
 
-; 49 occurrences:
+; 51 occurrences:
 ; abc/optimized/pdrTsim2.c.ll
 ; clamav/optimized/pe.c.ll
 ; cpython/optimized/_testbuffer.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
+; freetype/optimized/psaux.c.ll
 ; git/optimized/diff-no-index.ll
 ; hermes/optimized/TypeInference.cpp.ll
 ; icu/optimized/ucasemap.ll
@@ -81,8 +82,9 @@ entry:
 ; ruby/optimized/unicode.ll
 ; slurm/optimized/gres.ll
 ; wireshark/optimized/packet-usb-hid.c.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8388608
   %3 = icmp eq i32 %2, 0
@@ -132,7 +134,7 @@ entry:
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4096
   %3 = icmp ne i32 %2, 0
@@ -169,7 +171,7 @@ entry:
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 128
   %3 = icmp eq i32 %2, 0
@@ -179,16 +181,65 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 10 occurrences:
+; abc/optimized/infback.c.ll
+; abc/optimized/inflate.c.ll
+; cmake/optimized/inflate.c.ll
+; gromacs/optimized/inflate.c.ll
+; libquic/optimized/infback.c.ll
+; libquic/optimized/inflate.c.ll
 ; openjdk/optimized/freetypeScaler.ll
 ; wireshark/optimized/packet-smb.c.ll
+; zlib/optimized/infback.c.ll
+; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000318(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
-  %3 = icmp ugt i32 %2, 1024
+  %3 = icmp samesign ugt i32 %2, 1024
   %4 = and i32 %0, 65535
-  %5 = icmp ugt i32 %4, 1024
+  %5 = icmp samesign ugt i32 %4, 1024
+  %6 = select i1 %5, i1 true, i1 %3
+  ret i1 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_ime_pinyin.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 65535
+  %3 = icmp eq i32 %2, 0
+  %4 = and i32 %0, 65520
+  %5 = icmp eq i32 %4, 0
+  %6 = select i1 %5, i1 true, i1 %3
+  ret i1 %6
+}
+
+; 3 occurrences:
+; postgres/optimized/f2s.ll
+; postgres/optimized/f2s_shlib.ll
+; postgres/optimized/f2s_srv.ll
+; Function Attrs: nounwind
+define i1 @func000000000000028c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 254
+  %3 = icmp eq i32 %2, 0
+  %4 = and i32 %0, 8388607
+  %5 = icmp ne i32 %4, 0
+  %6 = select i1 %5, i1 true, i1 %3
+  ret i1 %6
+}
+
+; 1 occurrences:
+; icu/optimized/collationfastlatin.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000294(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 896
+  %3 = icmp samesign ult i32 %2, 384
+  %4 = and i32 %0, 61440
+  %5 = icmp eq i32 %4, 0
   %6 = select i1 %5, i1 true, i1 %3
   ret i1 %6
 }

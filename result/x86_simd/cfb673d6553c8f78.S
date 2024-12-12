@@ -70,7 +70,7 @@ func0000000000000006:                   # @func0000000000000006
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpsrld	$24, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpcmpgtb	.LCPI3_0(%rip), %xmm0, %k0
@@ -94,7 +94,7 @@ func000000000000002a:                   # @func000000000000002a
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpsrld	$24, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpcmpltb	.LCPI4_0(%rip), %xmm0, %k0
@@ -116,14 +116,14 @@ func000000000000000c:                   # @func000000000000000c
 	vzeroupper
 	retq
 .LCPI7_0:
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
+	.byte	99                              # 0x63
+	.byte	99                              # 0x63
+	.byte	99                              # 0x63
+	.byte	99                              # 0x63
+	.byte	99                              # 0x63
+	.byte	99                              # 0x63
+	.byte	99                              # 0x63
+	.byte	99                              # 0x63
 	.zero	1
 	.zero	1
 	.zero	1

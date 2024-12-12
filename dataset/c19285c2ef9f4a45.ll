@@ -52,4 +52,17 @@ entry:
   ret ptr %6
 }
 
+; 2 occurrences:
+; opencv/optimized/onnx_importer.cpp.ll
+; opencv/optimized/tf_importer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000076(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 2
+  %5 = sub nsw i64 %1, %4
+  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
 attributes #0 = { nounwind }

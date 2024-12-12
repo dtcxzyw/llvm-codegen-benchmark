@@ -8,16 +8,15 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = and i32 %1, -4
   %6 = or i32 %4, %5
   %7 = or i32 %6, 2
   ret i32 %7
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/intel_ddi.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/xhci.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
@@ -26,14 +25,14 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 191
   %6 = or i32 %4, %5
   %7 = or disjoint i32 %6, 64
   ret i32 %7
 }
 
-; 79 occurrences:
+; 78 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifMan.c.ll
@@ -56,10 +55,8 @@ entry:
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/g4x_hdmi.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/tg3.ll
@@ -82,6 +79,7 @@ entry:
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
+; openjdk/optimized/gtk3_interface.ll
 ; openjdk/optimized/mlib_ImageCreate.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
@@ -117,14 +115,14 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2147483648
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 2145386496
   %6 = or disjoint i32 %4, %5
   %7 = or disjoint i32 %6, 111
   ret i32 %7
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; glslang/optimized/Initialize.cpp.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/intel_ddi.ll
@@ -136,7 +134,6 @@ entry:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; meshlab/optimized/transferfunction.cpp.ll

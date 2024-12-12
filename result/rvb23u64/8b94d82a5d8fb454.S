@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	andi	a1, a1, 8
 	li	a2, -15
 	czero.eqz	a1, a2, a1

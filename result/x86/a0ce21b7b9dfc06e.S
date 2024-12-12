@@ -6,7 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 	movq	%rdi, %rax
 	subq	%rsi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	subq	%rsi, %rdi
 	leaq	96(%rdi), %rax
 	retq

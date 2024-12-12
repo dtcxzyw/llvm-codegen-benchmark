@@ -1,5 +1,11 @@
 
-; 20 occurrences:
+; 26 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; libpng/optimized/pngrtran.c.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; openjdk/optimized/pngrtran.ll

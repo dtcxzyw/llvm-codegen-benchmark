@@ -1,7 +1,9 @@
 
-; 26 occurrences:
+; 28 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
@@ -27,14 +29,15 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i128 %0) #0 {
+define i1 @func0000000000000041(i128 %0) #0 {
 entry:
   %1 = and i128 %0, 5070602400894470861913103269888
   %2 = icmp eq i128 %1, 5070602400894470861913103269888
   ret i1 %2
 }
 
-; 80 occurrences:
+; 81 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -116,7 +119,7 @@ entry:
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i128 %0) #0 {
+define i1 @func000000000000004c(i128 %0) #0 {
 entry:
   %1 = and i128 %0, 79228162495817593519834398720
   %2 = icmp ne i128 %1, 0
@@ -126,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i128 %0) #0 {
+define i1 @func000000000000006c(i128 %0) #0 {
 entry:
   %1 = and i128 %0, 73786976294838206464
   %2 = icmp ne i128 %1, 0

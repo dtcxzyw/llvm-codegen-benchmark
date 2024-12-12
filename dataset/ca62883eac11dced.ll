@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000581(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -13,21 +13,9 @@ entry:
 }
 
 ; 1 occurrences:
-; minetest/optimized/test_serialization.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or disjoint i64 %1, %2
-  %4 = icmp eq i64 %3, 8142226647931183360
-  %5 = icmp eq i32 %0, 1601196305
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; qemu/optimized/util_iov.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -39,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/xPhysicalMemory.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -128,7 +116,7 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -140,7 +128,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000042c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -152,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000058c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -164,7 +152,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/syscalls.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp ult i64 %3, 4294967296
@@ -176,7 +164,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/marshal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp eq i64 %3, 0

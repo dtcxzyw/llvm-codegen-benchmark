@@ -5,7 +5,7 @@
 ; memcached/optimized/memcached_debug-logger.ll
 ; redis/optimized/t_string.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000330(ptr %0, i32 %1) #0 {
+define i32 @func0000000000000630(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ne ptr %0, null

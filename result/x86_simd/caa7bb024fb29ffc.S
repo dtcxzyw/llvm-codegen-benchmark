@@ -22,9 +22,3 @@ func0000000000000001:                   # @func0000000000000001
 	vpbroadcastq	.LCPI2_0(%rip), %ymm0   # ymm0 = [1,1,1,1]
 	vpternlogq	$248, .LCPI2_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
-.LCPI3_0:
-	.quad	8                               # 0x8
-func0000000000000003:                   # @func0000000000000003
-	vpsllq	$4, %ymm0, %ymm0
-	vporq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
-	retq

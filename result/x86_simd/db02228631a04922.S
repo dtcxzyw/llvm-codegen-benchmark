@@ -26,21 +26,21 @@ func000000000000000f:                   # @func000000000000000f
 	vpaddq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI3_0:
-	.quad	12884901888                     # 0x300000000
+	.quad	24                              # 0x18
 .LCPI3_1:
-	.quad	20937965568                     # 0x4e0000000
-func0000000000000010:                   # @func0000000000000010
+	.quad	32                              # 0x20
+func000000000000001f:                   # @func000000000000001f
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpmullq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	vpmuludq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI4_0:
-	.quad	24                              # 0x18
+	.quad	12884901888                     # 0x300000000
 .LCPI4_1:
-	.quad	39                              # 0x27
-func000000000000001f:                   # @func000000000000001f
+	.quad	20937965568                     # 0x4e0000000
+func0000000000000010:                   # @func0000000000000010
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpmuludq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
+	vpmullq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI5_0:

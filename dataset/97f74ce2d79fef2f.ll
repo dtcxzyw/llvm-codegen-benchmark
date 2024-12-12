@@ -10,7 +10,7 @@ entry:
   %3 = shl i8 %2, 1
   %4 = and i8 %3, 2
   %5 = zext nneg i8 %4 to i64
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
@@ -25,7 +25,7 @@ entry:
   %3 = shl i8 %2, 6
   %4 = and i8 %3, 64
   %5 = zext nneg i8 %4 to i64
-  %6 = or i64 %5, %1
+  %6 = or i64 %1, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }
@@ -39,7 +39,7 @@ entry:
   %3 = shl i8 %2, 4
   %4 = and i8 %3, -128
   %5 = zext i8 %4 to i64
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
@@ -52,7 +52,7 @@ entry:
   %3 = shl i8 %2, 2
   %4 = and i8 %3, 32
   %5 = zext nneg i8 %4 to i64
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }

@@ -5,7 +5,7 @@ func0000000000000054:                   # @func0000000000000054
 	retq
 func0000000000000056:                   # @func0000000000000056
 	notq	%rdx
+	leaq	(%rdi,%rsi,4), %rax
 	andq	$-4, %rdx
-	addq	%rdi, %rdx
-	leaq	(%rdx,%rsi,4), %rax
+	addq	%rdx, %rax
 	retq

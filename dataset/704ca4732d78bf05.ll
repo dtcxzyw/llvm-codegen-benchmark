@@ -1,7 +1,9 @@
 
-; 28 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/within.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll

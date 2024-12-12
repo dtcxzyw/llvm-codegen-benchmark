@@ -1,7 +1,9 @@
 
-; 156 occurrences:
+; 160 occurrences:
 ; assimp/optimized/PretransformVertices.cpp.ll
 ; assimp/optimized/SkeletonMeshBuilder.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3GpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -62,6 +64,7 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/alignset.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -156,6 +159,7 @@
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; velox/optimized/Variant.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

@@ -7,11 +7,11 @@
 define i1 @func000000000000000a(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -1
-  %3 = icmp slt i16 %2, %0
+  %3 = icmp sgt i16 %0, %2
   ret i1 %3
 }
 
-; 19 occurrences:
+; 21 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -29,17 +29,19 @@ entry:
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/test_clientactiveobjectmgr.cpp.ll
 ; minetest/optimized/test_serveractiveobjectmgr.cpp.ll
+; postgres/optimized/rangetypes_gist.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wireshark/optimized/packet-btl2cap.c.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, 1
-  %3 = icmp ugt i16 %2, %0
+  %3 = icmp ult i16 %0, %2
   ret i1 %3
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/nl80211.ll
@@ -51,25 +53,28 @@ entry:
 ; minetest/optimized/test_serveractiveobjectmgr.cpp.ll
 ; postgres/optimized/rangetypes_gist.ll
 ; postgres/optimized/tsgistidx.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, 1
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp ugt i16 %0, %2
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; minetest/optimized/game.cpp.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, 1
-  %3 = icmp ne i16 %2, %0
+  %3 = icmp ne i16 %0, %2
   ret i1 %3
 }
 
-; 31 occurrences:
+; 37 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -98,14 +103,20 @@ entry:
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; postgres/optimized/nbtinsert.ll
 ; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
 ; wireshark/optimized/packet-tibia.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, 2
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 
@@ -121,21 +132,23 @@ entry:
 define i1 @func0000000000000006(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, 1
-  %3 = icmp sgt i16 %2, %0
+  %3 = icmp slt i16 %0, %2
   ret i1 %3
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; minetest/optimized/treegen.cpp.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/ginentrypage.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 7
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 
@@ -145,17 +158,17 @@ entry:
 define i1 @func0000000000000005(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -1
-  %3 = icmp uge i16 %2, %0
+  %3 = icmp ule i16 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; clamav/optimized/matcher-bm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000048(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw i16 %1, 1
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp ugt i16 %0, %2
   ret i1 %3
 }
 
@@ -166,20 +179,20 @@ entry:
 ; linux/optimized/tx.ll
 ; linux/optimized/xfrm_input.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000064(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, -1025
-  %3 = icmp ugt i16 %2, %0
+  %3 = icmp ult i16 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; postgres/optimized/pg_checksums.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000041(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw i16 %1, 1
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 
@@ -187,20 +200,20 @@ entry:
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/ginentrypage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000068(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp ugt i16 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; postgres/optimized/bipartite_match.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, 1
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 

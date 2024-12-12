@@ -3,7 +3,7 @@
 ; openusd/optimized/openexr-c.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = urem i16 %1, 31
   %3 = icmp eq i16 %2, 0
@@ -17,7 +17,7 @@ entry:
 ; postgres/optimized/unicode_norm_shlib.ll
 ; postgres/optimized/unicode_norm_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i16 %1) #0 {
 entry:
   %2 = urem i16 %1, 28
   %3 = icmp eq i16 %2, 0

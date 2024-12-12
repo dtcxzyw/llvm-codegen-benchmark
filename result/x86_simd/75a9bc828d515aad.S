@@ -21,7 +21,7 @@ func000000000000000d:                   # @func000000000000000d
 .LCPI2_0:
 	.long	4294967294                      # 0xfffffffe
 .LCPI2_1:
-	.quad	16                              # 0x10
+	.quad	8                               # 0x8
 func000000000000001f:                   # @func000000000000001f
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0

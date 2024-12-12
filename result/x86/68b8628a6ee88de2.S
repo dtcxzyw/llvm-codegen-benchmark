@@ -11,14 +11,14 @@ func000000000000000c:                   # @func000000000000000c
 	sets	%al
 	orb	%dil, %al
 	retq
-func00000000000000b0:                   # @func00000000000000b0
+func0000000000000150:                   # @func0000000000000150
 	leal	(%rdx,%rdx,2), %eax
 	addl	%esi, %eax
 	cmpl	$7, %eax
 	setae	%al
 	orb	%dil, %al
 	retq
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	leal	(%rdx,%rdx,2), %eax
 	addl	%esi, %eax
 	sets	%al

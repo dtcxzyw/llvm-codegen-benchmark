@@ -7,6 +7,6 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000008:                   # @func0000000000000008
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpxor	%xmm0, %xmm1, %xmm0
+	vpxor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

@@ -28,12 +28,6 @@ func0000000000000002:                   # @func0000000000000002
 	vucomiss	%xmm0, %xmm1
 	seta	%al
 	retq
-func0000000000000003:                   # @func0000000000000003
-	incl	%edi
-	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vucomiss	%xmm1, %xmm0
-	setb	%al
-	retq
 func000000000000001c:                   # @func000000000000001c
 	decl	%edi
 	vcvtsi2ss	%edi, %xmm1, %xmm1

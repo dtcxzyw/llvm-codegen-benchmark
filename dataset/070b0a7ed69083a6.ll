@@ -36,34 +36,18 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 6 occurrences:
+; boost/optimized/any_params_iter.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/SortJavaScriptImports.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = icmp eq i64 %0, 0
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 3 occurrences:
-; redis/optimized/util.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f64_classify.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i64 %0, i1 %1) #0 {
-entry:
-  %2 = xor i1 %1, true
-  %3 = icmp slt i64 %0, 0
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -98,6 +82,17 @@ define i1 @func000000000000000a(i64 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = icmp sgt i64 %0, -1
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; redis/optimized/util.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i64 %0, i1 %1) #0 {
+entry:
+  %2 = xor i1 %1, true
+  %3 = icmp slt i64 %0, 0
   %4 = and i1 %3, %2
   ret i1 %4
 }

@@ -9,11 +9,11 @@
 ; llvm/optimized/DeclPrinter.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1) #0 {
 entry:
   %2 = freeze i1 %1
   %3 = select i1 %2, i64 24, i64 0
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

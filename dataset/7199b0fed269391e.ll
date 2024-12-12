@@ -91,6 +91,18 @@ entry:
   ret i16 %5
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000017(i16 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i16
+  %3 = shl nuw i16 %2, 8
+  %4 = shl nuw nsw i16 %0, 3
+  %5 = or disjoint i16 %4, %3
+  ret i16 %5
+}
+
 ; 3 occurrences:
 ; linux/optimized/drm_dsc_helper.ll
 ; raylib/optimized/rtextures.c.ll

@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/9fdv7qxvc9ek9liffc7407f9x.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

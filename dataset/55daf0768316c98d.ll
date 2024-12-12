@@ -38,9 +38,8 @@ entry:
   ret float %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000003(i32 %0) #0 {
 entry:

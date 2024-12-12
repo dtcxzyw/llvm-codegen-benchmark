@@ -1,17 +1,11 @@
 
-%"class.mitsuba::filesystem::path.2488018" = type <{ %"class.std::__1::vector.2487981", i8, [7 x i8] }>
-%"class.std::__1::vector.2487981" = type { ptr, ptr, %"class.std::__1::__compressed_pair.55.2487982" }
-%"class.std::__1::__compressed_pair.55.2487982" = type { %"struct.std::__1::__compressed_pair_elem.56.2487983" }
-%"struct.std::__1::__compressed_pair_elem.56.2487983" = type { ptr }
-%"class.std::__1::basic_string.2488406" = type { %"class.std::__1::__compressed_pair.1.2488407" }
-%"class.std::__1::__compressed_pair.1.2488407" = type { %"struct.std::__1::__compressed_pair_elem.2.2488408" }
-%"struct.std::__1::__compressed_pair_elem.2.2488408" = type { %"struct.std::__1::basic_string<char>::__rep.2488409" }
-%"struct.std::__1::basic_string<char>::__rep.2488409" = type { %union.anon.2488410 }
-%union.anon.2488410 = type { %"struct.std::__1::basic_string<char>::__long.2488411" }
-%"struct.std::__1::basic_string<char>::__long.2488411" = type { %struct.anon.3.2488412, i64, ptr }
-%struct.anon.3.2488412 = type { i64 }
+%"class.mitsuba::filesystem::path.2603450" = type <{ %"class.std::__1::vector.2603413", i8, [7 x i8] }>
+%"class.std::__1::vector.2603413" = type { ptr, ptr, %"class.std::__1::__compressed_pair.55.2603414" }
+%"class.std::__1::__compressed_pair.55.2603414" = type { %"struct.std::__1::__compressed_pair_elem.56.2603415" }
+%"struct.std::__1::__compressed_pair_elem.56.2603415" = type { ptr }
+%"struct.QHashPrivate::Span.3440140" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
 
-; 312 occurrences:
+; 319 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
@@ -28,6 +22,7 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -122,6 +117,9 @@
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/mesh_model_state.cpp.ll
+; mitsuba3/optimized/argparser.cpp.ll
+; mitsuba3/optimized/specfilm.cpp.ll
+; mitsuba3/optimized/stokes.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; nix/optimized/binary-cache-store.ll
 ; nix/optimized/cache.ll
@@ -193,9 +191,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -248,10 +243,16 @@
 ; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
+; quantlib/optimized/abcdatmvolcurve.ll
+; quantlib/optimized/discretizedswap.ll
+; quantlib/optimized/laplaceinterpolation.ll
+; quantlib/optimized/schedule.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; tev/optimized/Common.cpp.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/main.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; velox/optimized/ArrayAndMapMatch.cpp.ll
 ; velox/optimized/ArrayConstructor.cpp.ll
@@ -325,21 +326,15 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw %"class.mitsuba::filesystem::path.2488018", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.mitsuba::filesystem::path.2603450", ptr %0, i64 %4
   ret ptr %5
 }
 
-; 32 occurrences:
-; mitsuba3/optimized/argparser.cpp.ll
-; mitsuba3/optimized/specfilm.cpp.ll
-; mitsuba3/optimized/stokes.cpp.ll
-; tev/optimized/Common.cpp.ll
-; tev/optimized/Image.cpp.ll
-; tev/optimized/main.cpp.ll
+; 26 occurrences:
 ; wireshark/optimized/capture_file_dialog.cpp.ll
 ; wireshark/optimized/coloring_rules_dialog.cpp.ll
 ; wireshark/optimized/compiled_filter_output.cpp.ll
@@ -369,23 +364,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 2
+  %3 = lshr i64 %2, 7
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr %"class.std::__1::basic_string.2488406", ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 4 occurrences:
-; quantlib/optimized/abcdatmvolcurve.ll
-; quantlib/optimized/discretizedswap.ll
-; quantlib/optimized/laplaceinterpolation.ll
-; quantlib/optimized/schedule.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 6
-  %4 = select i1 %1, i64 144115188075855871, i64 %3
-  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
+  %5 = getelementptr %"struct.QHashPrivate::Span.3440140", ptr %0, i64 %4
   ret ptr %5
 }
 

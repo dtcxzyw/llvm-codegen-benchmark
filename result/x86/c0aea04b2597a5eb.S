@@ -1,16 +1,16 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	addq	%rdx, %rsi
 	orq	%rdi, %rsi
 	shrq	$32, %rsi
 	setne	%al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	negq	%rdx
 	xorq	%rsi, %rdx
 	orq	%rdi, %rdx
 	setne	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addq	%rdx, %rsi
 	cmpq	$2, %rsi
 	setb	%cl

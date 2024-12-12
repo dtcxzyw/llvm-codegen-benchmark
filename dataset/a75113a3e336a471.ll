@@ -4,14 +4,14 @@
 ; ruby/optimized/time.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0) #0 {
+define i1 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 3
   %2 = icmp eq i16 %1, 0
   ret i1 %2
 }
 
-; 44 occurrences:
+; 39 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -44,17 +44,12 @@ entry:
 ; slurm/optimized/read_config.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/bf16_to_f32.ll
 ; spike/optimized/execute.ll
-; spike/optimized/f16_classify.ll
 ; spike/optimized/f16_div.ll
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f16_rem.ll
 ; spike/optimized/f16_roundToInt.ll
 ; spike/optimized/f16_sqrt.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f32.ll
-; spike/optimized/f16_to_f64.ll
 ; spike/optimized/fall_reciprocal.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i16 %0) #0 {
@@ -64,7 +59,7 @@ entry:
   ret i1 %2
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/lzo1x_decompress_safe.ll
 ; linux/optimized/nl80211.ll
 ; miniaudio/optimized/unity.c.ll
@@ -72,7 +67,6 @@ entry:
 ; slurm/optimized/acct_policy.ll
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/partition_mgr.ll
-; spike/optimized/f16_classify.ll
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f16_rem.ll
 ; spike/optimized/f16_roundToInt.ll
@@ -80,7 +74,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, 127
+  %1 = and i16 %0, 1023
   %2 = icmp ne i16 %1, 0
   ret i1 %2
 }

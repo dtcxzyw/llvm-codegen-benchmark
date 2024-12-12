@@ -25,7 +25,7 @@
 ; minetest/optimized/guiInventoryList.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 312
   %4 = trunc i64 %3 to i32
@@ -40,7 +40,7 @@ entry:
 ; llvm/optimized/MIRYamlMapping.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 56
   %4 = trunc i64 %3 to i32
@@ -50,21 +50,9 @@ entry:
 }
 
 ; 1 occurrences:
-; assimp/optimized/B3DImporter.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = sdiv exact i64 %2, 56
-  %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %0, %1
-  %6 = icmp ult i32 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; lightgbm/optimized/dataset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = trunc i64 %3 to i32
@@ -77,7 +65,7 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 12
   %4 = trunc i64 %3 to i32

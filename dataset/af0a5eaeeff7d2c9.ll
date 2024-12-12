@@ -20,11 +20,14 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 7 occurrences:
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; openjdk/optimized/sharedRuntime.ll
+; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {
 entry:

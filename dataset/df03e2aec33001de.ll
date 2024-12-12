@@ -21,8 +21,7 @@ entry:
   ret float %5
 }
 
-; 11 occurrences:
-; box2d/optimized/b2_collision.cpp.ll
+; 10 occurrences:
 ; box2d/optimized/b2_distance.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll

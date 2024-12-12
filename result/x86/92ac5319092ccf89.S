@@ -24,10 +24,3 @@ func0000000000000003:                   # @func0000000000000003
 	shlxl	%eax, %ecx, %eax
 	andnl	%edi, %eax, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	addl	%esi, %esi
-	leal	(%rsi,%rsi,2), %eax
-	movl	$3, %ecx
-	shlxl	%eax, %ecx, %eax
-	andnl	%edi, %eax, %eax
-	retq

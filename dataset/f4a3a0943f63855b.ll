@@ -4,7 +4,7 @@
 ; nanosvg/optimized/nanosvg.ll
 ; slurm/optimized/ring.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000059(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000099(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp slt i32 %1, %2
@@ -31,7 +31,7 @@ entry:
 ; abc/optimized/ioWriteBlifMv.c.ll
 ; abc/optimized/ioWritePla.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000069(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 10
   %4 = icmp sgt i32 %1, %2
@@ -46,7 +46,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000098(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp slt i32 %1, %2

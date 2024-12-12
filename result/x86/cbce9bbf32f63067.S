@@ -4,7 +4,21 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000018:                   # @func0000000000000018
+	movzbl	%dl, %eax
+	movzbl	%sil, %ecx
+	cmpl	%eax, %ecx
+	seta	%al
+	andb	%dil, %al
+	retq
+func0000000000000015:                   # @func0000000000000015
+	andl	$15, %edx
+	andl	$15, %esi
+	cmpl	%edx, %esi
+	setbe	%al
+	andb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
 	andl	$15, %edx
 	andl	$15, %esi
 	cmpl	%edx, %esi

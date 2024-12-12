@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 32 occurrences:
 ; folly/optimized/json.cpp.ll
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
 ; html5ever-rs/optimized/2k27uywn6e9ruua6.ll
@@ -24,13 +24,21 @@
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; mitsuba3/optimized/tabphase.cpp.ll
 ; xgboost/optimized/gbtree.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = icmp eq i64 %1, 1
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -38,19 +46,19 @@ entry:
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/spectrum.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000087(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = icmp eq i64 %1, 1
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/shenandoahNumberSeq.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000044(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000084(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = icmp eq i64 %1, 0

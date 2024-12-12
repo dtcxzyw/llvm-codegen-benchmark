@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; msdfgen/optimized/save-tiff.cpp.ll
 ; Function Attrs: nounwind
@@ -35,7 +34,7 @@ define i64 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = add i32 %2, 128
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

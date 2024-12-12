@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; graphviz/optimized/quad_prog_vpsc.c.ll
+; nori/optimized/nanovg.c.ll
 ; openjdk/optimized/relocator.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

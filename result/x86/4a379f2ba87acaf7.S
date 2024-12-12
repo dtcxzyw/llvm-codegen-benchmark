@@ -3,7 +3,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%esi, %eax
 	cmovll	%edi, %eax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	leal	(%rdx,%rdi), %eax
 	cmpl	%esi, %eax
 	cmovgl	%edi, %eax
@@ -18,7 +18,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%esi, %eax
 	cmovgl	%edi, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leal	(%rdx,%rdi), %eax
 	cmpl	%esi, %eax
 	cmovgl	%edi, %eax

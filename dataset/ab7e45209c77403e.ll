@@ -24,15 +24,4 @@ entry:
   ret i8 %5
 }
 
-; 1 occurrences:
-; hermes/optimized/RegExp.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %1, %2
-  %4 = select i1 %3, i1 true, i1 %0
-  %5 = zext i1 %4 to i8
-  ret i8 %5
-}
-
 attributes #0 = { nounwind }

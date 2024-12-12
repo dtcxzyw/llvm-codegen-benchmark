@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; postgres/optimized/geo_ops.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/date_parse.ll
 ; ruby/optimized/thread.ll
@@ -14,10 +15,11 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_colorequal.c.ll
 ; linux/optimized/maple_tree.ll
 ; openmpi/optimized/ad_aggregate.ll
+; openspiel/optimized/chess_board.cc.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; ruby/optimized/marshal.ll
 ; Function Attrs: nounwind

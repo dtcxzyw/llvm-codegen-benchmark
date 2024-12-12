@@ -1,14 +1,4 @@
 
-; 1 occurrences:
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i128 %1) #0 {
-entry:
-  %2 = trunc i128 %1 to i32
-  %3 = add i32 %2, %0
-  ret i32 %3
-}
-
 ; 72 occurrences:
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -86,18 +76,22 @@ entry:
 define i32 @func0000000000000008(i32 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
-; 2 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 

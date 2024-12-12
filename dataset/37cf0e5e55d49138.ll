@@ -11,7 +11,7 @@
 define double @func0000000000000004(double %0, i1 %1) #0 {
 entry:
   %2 = fcmp olt double %0, 0x38AA95A5C0000000
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   %4 = select i1 %3, double 0x38AA95A5C0000000, double %0
   ret double %4
 }
@@ -37,7 +37,7 @@ entry:
 define double @func0000000000000008(double %0, i1 %1) #0 {
 entry:
   %2 = fcmp ogt double %0, 1.000000e+00
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   %4 = select i1 %3, double 5.000000e-01, double %0
   ret double %4
 }
@@ -50,7 +50,7 @@ entry:
 define double @func0000000000000018(double %0, i1 %1) #0 {
 entry:
   %2 = fcmp oge double %0, 1.000000e+00
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   %4 = select i1 %3, double 0.000000e+00, double %0
   ret double %4
 }
@@ -62,7 +62,7 @@ entry:
 define double @func0000000000000014(double %0, i1 %1) #0 {
 entry:
   %2 = fcmp ole double %0, 0.000000e+00
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   %4 = select i1 %3, double 1.000000e-01, double %0
   ret double %4
 }

@@ -1,15 +1,12 @@
 
-%struct.StructEntry.2594438 = type { ptr, i32, [2 x ptr], [2 x ptr], ptr, [2 x i32], [2 x i32], ptr }
-%struct.Lf_Bst_t_.2765484 = type { [3 x i32], [3 x float], [2 x %struct.Lf_Plc_t_.2765485] }
-%struct.Lf_Plc_t_.2765485 = type { i32 }
-%"struct.llvm::coverage::mcdc::TVIdxBuilder::MCDCNode.3000048" = type { i32, i32, %"struct.std::array.3000047" }
-%"struct.std::array.3000047" = type { [2 x i16] }
-%struct.t_dih.3180887 = type { [4 x i32], i32, float, float }
-%struct.JSBinaryOperatorDefEntry.3243684 = type { i32, [14 x ptr] }
+%struct.StructEntry.2708053 = type { ptr, i32, [2 x ptr], [2 x ptr], ptr, [2 x i32], [2 x i32], ptr }
+%struct.Lf_Bst_t_.2877719 = type { [3 x i32], [3 x float], [2 x %struct.Lf_Plc_t_.2877720] }
+%struct.Lf_Plc_t_.2877720 = type { i32 }
+%struct.t_dih.3373191 = type { [4 x i32], i32, float, float }
+%struct.JSBinaryOperatorDefEntry.3435113 = type { i32, [14 x ptr] }
 
-; 68 occurrences:
+; 61 occurrences:
 ; abc/optimized/absGlaOld.c.ll
-; abc/optimized/bblif.c.ll
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/giaCTas.c.ll
 ; abc/optimized/giaEra2.c.ll
@@ -25,15 +22,12 @@
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/mpmAbc.c.ll
-; abc/optimized/mpmGates.c.ll
 ; abc/optimized/mpmMap.c.ll
 ; abc/optimized/satProof.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/sfmLib.c.ll
-; abc/optimized/wlnObj.c.ll
-; abc/optimized/xsatSolver.c.ll
 ; assimp/optimized/MMDImporter.cpp.ll
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3Solver.ll
@@ -50,26 +44,23 @@
 ; gromacs/optimized/qmmmtopologypreprocessor.cpp.ll
 ; gromacs/optimized/read_params.cpp.ll
 ; gromacs/optimized/readir.cpp.ll
-; gromacs/optimized/shellfc.cpp.ll
 ; gromacs/optimized/tngio.cpp.ll
 ; gromacs/optimized/topio.cpp.ll
 ; gromacs/optimized/toppush.cpp.ll
 ; gromacs/optimized/vcm.cpp.ll
-; icu/optimized/dayperiodrules.ll
 ; jq/optimized/execute.ll
 ; libjpeg-turbo/optimized/jcmaster.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
+; llvm/optimized/CoverageMapping.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/rimls.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
-; meshlab/optimized/seams.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/dynafu_tsdf.cpp.ll
-; opencv/optimized/feature.cpp.ll
 ; openjdk/optimized/jcmaster.ll
-; openjdk/optimized/methodData.ll
+; openusd/optimized/decodeframe.c.ll
 ; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -77,18 +68,17 @@
 ; redis/optimized/server.ll
 ; slurm/optimized/cpu_frequency.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000002f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
-  %6 = getelementptr nusw [0 x i32], ptr %5, i64 0, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
+  %6 = getelementptr nusw nuw [0 x i32], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; linux/optimized/cfg.ll
-; linux/optimized/drm_debugfs_crc.ll
 ; postgres/optimized/lock.ll
 ; postgres/optimized/proc.ll
 ; postgres/optimized/tidbitmap.ll
@@ -98,45 +88,63 @@ entry:
 ; qemu/optimized/linux-user_thunk.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.StructEntry.2594438, ptr %1, i64 %3, i32 2, i64 %0
+  %4 = getelementptr %struct.StructEntry.2708053, ptr %1, i64 %3, i32 2, i64 %0
   ret ptr %4
+}
+
+; 19 occurrences:
+; abc/optimized/bblif.c.ll
+; abc/optimized/bmcUnroll.c.ll
+; abc/optimized/giaCTas.c.ll
+; abc/optimized/giaGlitch.c.ll
+; abc/optimized/giaKf.c.ll
+; abc/optimized/lpkCut.c.ll
+; abc/optimized/mpmGates.c.ll
+; abc/optimized/wlnObj.c.ll
+; abc/optimized/xsatSolver.c.ll
+; graphviz/optimized/partition.c.ll
+; gromacs/optimized/shellfc.cpp.ll
+; icu/optimized/dayperiodrules.ll
+; jq/optimized/execute.ll
+; meshlab/optimized/seams.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
+; opencv/optimized/dynafu_tsdf.cpp.ll
+; opencv/optimized/feature.cpp.ll
+; openjdk/optimized/methodData.ll
+; slurm/optimized/cpu_frequency.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  %6 = getelementptr nusw [1 x i64], ptr %5, i64 0, i64 %0
+  ret ptr %6
 }
 
 ; 1 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000023(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.Lf_Bst_t_.2765484, ptr %1, i64 %3, i32 2, i64 %0
+  %4 = getelementptr %struct.Lf_Bst_t_.2877719, ptr %1, i64 %3, i32 2, i64 %0
   ret ptr %4
-}
-
-; 2 occurrences:
-; llvm/optimized/CoverageMapping.cpp.ll
-; openusd/optimized/decodeframe.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002e(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.llvm::coverage::mcdc::TVIdxBuilder::MCDCNode.3000048", ptr %1, i64 %3, i32 2
-  %5 = getelementptr nusw [2 x i16], ptr %4, i64 0, i64 %0
-  ret ptr %5
 }
 
 ; 2 occurrences:
 ; gromacs/optimized/nrama.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.t_dih.3180887, ptr %1, i64 %3
+  %4 = getelementptr %struct.t_dih.3373191, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 28
-  %6 = getelementptr nusw [4 x i32], ptr %5, i64 0, i64 %0
+  %6 = getelementptr nusw nuw [4 x i32], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 
@@ -146,7 +154,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.JSBinaryOperatorDefEntry.3243684, ptr %1, i64 %3
+  %4 = getelementptr %struct.JSBinaryOperatorDefEntry.3435113, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -112
   %6 = getelementptr [14 x ptr], ptr %5, i64 0, i64 %0
   ret ptr %6

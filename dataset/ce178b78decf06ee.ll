@@ -22,11 +22,12 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; folly/optimized/LogCategory.cpp.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/intel_dpll.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1, i32 %2) #0 {
 entry:

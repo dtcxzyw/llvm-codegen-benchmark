@@ -1,7 +1,8 @@
 
-; 66 occurrences:
+; 65 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/light_array.cc.ll
+; boost/optimized/options_description.ll
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
 ; cvc5/optimized/regexp_elim.cpp.ll
@@ -61,8 +62,6 @@
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll

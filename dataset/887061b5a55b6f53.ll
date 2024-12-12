@@ -5,10 +5,10 @@
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -21,10 +21,10 @@ entry:
 ; llvm/optimized/DWARFDebugMacro.cpp.ll
 ; opencv/optimized/affine_feature.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -36,7 +36,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %0, 2
   %6 = icmp ugt i32 %5, %4
   ret i1 %6
@@ -46,10 +46,10 @@ entry:
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -61,7 +61,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -72,10 +72,10 @@ entry:
 ; cvc5/optimized/extended_rewrite.cpp.ll
 ; cvc5/optimized/sygus_unif_strat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %0, 1
   %6 = icmp ult i32 %5, %4
   ret i1 %6
@@ -126,10 +126,10 @@ entry:
 ; cvc5/optimized/transition_inference.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -140,10 +140,10 @@ entry:
 ; cvc5/optimized/subs_minimize.cpp.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000c4(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw i32 %0, 1
   %6 = icmp ult i32 %5, %4
   ret i1 %6
@@ -157,10 +157,10 @@ entry:
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/theory_quantifiers_type_rules.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = icmp slt i32 %5, %4
   ret i1 %6
@@ -169,10 +169,10 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/term_database_sygus.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw i32 %0, 1
   %6 = icmp ne i32 %5, %4
   ret i1 %6
@@ -181,10 +181,10 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/node_algorithm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %0, 1
   %6 = icmp ugt i32 %5, %4
   ret i1 %6
@@ -193,10 +193,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ubidiln.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %0, 2
   %6 = icmp slt i32 %5, %4
   ret i1 %6
@@ -208,7 +208,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %0, 2
   %6 = icmp sgt i32 %5, %4
   ret i1 %6

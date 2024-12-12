@@ -7,7 +7,7 @@
 ; pocketpy/optimized/compiler.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000030(i64 %0, ptr %1) #0 {
+define i8 @func0000000000000050(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2

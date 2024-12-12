@@ -1,14 +1,11 @@
 
-; 25 occurrences:
-; cmake/optimized/lzma_decoder.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; 20 occurrences:
 ; git/optimized/object.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/bts.ll
 ; linux/optimized/namei.ll
-; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
@@ -17,8 +14,6 @@
 ; mitsuba3/optimized/rapass.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmedge/optimized/compiler.cpp.ll
 ; wasmedge/optimized/controlInstr.cpp.ll
@@ -34,7 +29,11 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 15 occurrences:
+; box2d/optimized/b2_collide_circle.cpp.ll
+; box2d/optimized/b2_collide_edge.cpp.ll
+; box2d/optimized/b2_collide_polygon.cpp.ll
+; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; lief/optimized/aria.c.ll
@@ -43,7 +42,6 @@ entry:
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; openjdk/optimized/vectornode.ll
 ; openusd/optimized/fvarLevel.cpp.ll
-; postgres/optimized/regcomp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; wireshark/optimized/addr_resolv.c.ll
@@ -56,10 +54,8 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
-; cmake/optimized/lzma_encoder.c.ll
+; 17 occurrences:
 ; graphviz/optimized/exparse.c.ll
-; imgui/optimized/imgui_widgets.cpp.ll
 ; lief/optimized/rsa.c.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -72,7 +68,6 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; openjdk/optimized/cmspack.ll
 ; openusd/optimized/stbImage.cpp.ll
-; ozz-animation/optimized/skinning_job.cc.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
@@ -86,7 +81,7 @@ entry:
   ret i64 %4
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; graphviz/optimized/exparse.c.ll
 ; linux/optimized/idr.ll
@@ -96,7 +91,6 @@ entry:
 ; openmpi/optimized/ompi_datatype_create_darray.ll
 ; openmpi/optimized/ompi_datatype_create_subarray.ll
 ; openusd/optimized/stbImage.cpp.ll
-; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rtextures.c.ll
 ; rust-analyzer-rs/optimized/13whla2w760i0ne3.ll
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
@@ -122,7 +116,7 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
-; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
@@ -132,14 +126,20 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
-; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
+; 1 occurrences:
+; abc/optimized/abcHieNew.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 64
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %0, i64 %3, i64 4160
+  ret i64 %4
+}
+
+; 2 occurrences:
 ; hermes/optimized/JSParserImpl-flow.cpp.ll
-; icu/optimized/hebrwcal.ll
 ; llvm/optimized/TargetMachineC.cpp.ll
-; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

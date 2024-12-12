@@ -3,7 +3,7 @@
 ; hwloc/optimized/common-ps.ll
 ; openjdk/optimized/os_linux.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp eq i64 %1, 0

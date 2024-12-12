@@ -16,7 +16,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 8
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -37,12 +37,12 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 31
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -60,6 +60,7 @@ entry:
 ; abc/optimized/wlcNdr.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -87,7 +88,7 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -103,6 +104,7 @@ entry:
 ; llvm/optimized/SemaSwift.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; opencv/optimized/phase_corr.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; yyjson/optimized/yyjson.c.ll
@@ -127,6 +129,17 @@ entry:
   %2 = ashr exact i32 %1, 24
   %3 = add nsw i32 %2, %0
   %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = ashr i32 %1, 18
+  %3 = add i32 %2, %0
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

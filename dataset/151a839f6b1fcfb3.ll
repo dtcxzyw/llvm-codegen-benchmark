@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; linux/optimized/check.ll
 ; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/i915_vma.ll
@@ -14,7 +14,6 @@
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; rocksdb/optimized/concurrent_arena.cc.ll
 ; rocksdb/optimized/memtable.cc.ll

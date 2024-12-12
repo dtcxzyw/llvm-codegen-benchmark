@@ -9,15 +9,13 @@ func0000000000000003:                   # @func0000000000000003
 	vadd.vv	v8, v10, v10
 	ret
 func0000000000000002:                   # @func0000000000000002
-	lui	a0, 524408
-	addi	a0, a0, 113
+	lui	a0, 526344
+	addi	a0, a0, 129
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v10, v8, a0
-	lui	a0, 16
-	vsrl.vi	v10, v10, 15
-	addi	a0, a0, -15
-	vnmsub.vx	v10, a0, v8
-	vsll.vi	v8, v10, 16
+	vsrl.vi	v10, v10, 7
+	vadd.vv	v8, v8, v10
+	vsll.vi	v8, v8, 24
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 838861

@@ -1,6 +1,7 @@
 
-; 27 occurrences:
+; 29 occurrences:
 ; abc/optimized/decompress.c.ll
+; boost/optimized/dec_octet_rule.ll
 ; cmake/optimized/decompress.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -15,6 +16,7 @@
 ; linux/optimized/hid-lg4ff.ll
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/uncore_nhmex.ll
+; linux/optimized/xhci-ring.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
@@ -35,9 +37,11 @@ entry:
   ret i32 %2
 }
 
-; 272 occurrences:
+; 274 occurrences:
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/cuddGenetic.c.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/cs_amd.c.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -75,7 +79,6 @@ entry:
 ; gromacs/optimized/sbdsqr.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/hebrwcal.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; jq/optimized/decNumber.ll
@@ -271,6 +274,7 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
+; postgres/optimized/execExpr.ll
 ; postgres/optimized/partbounds.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtext.c.ll
@@ -470,10 +474,11 @@ entry:
   ret i32 %2
 }
 
-; 53 occurrences:
+; 59 occurrences:
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/saigSwitch.c.ll
 ; abc/optimized/sclLibScl.c.ll
+; boost/optimized/init_from_settings.ll
 ; casadi/optimized/implicit_runge-kutta.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -521,9 +526,14 @@ entry:
 ; postgres/optimized/dt_common.ll
 ; proj/optimized/4D_api.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
 ; yosys/optimized/qwp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0) #0 {
 entry:
@@ -571,13 +581,17 @@ entry:
   ret i32 %2
 }
 
-; 6 occurrences:
+; 10 occurrences:
+; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; cmake/optimized/archive_string.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; glslang/optimized/hlslGrammar.cpp.ll
 ; libwebp/optimized/syntax_enc.c.ll
+; linux/optimized/intel_dmc.ll
+; linux/optimized/pcm_lib.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; wireshark/optimized/packet-mq.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -605,7 +619,7 @@ entry:
   ret i32 %2
 }
 
-; 18 occurrences:
+; 22 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -624,6 +638,10 @@ entry:
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:

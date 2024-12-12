@@ -67,11 +67,12 @@ func0000000000000003:                   # @func0000000000000003
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
 	retq
 .LCPI3_0:
-	.quad	2                               # 0x2
+	.quad	4294967264                      # 0xffffffe0
+.LCPI3_1:
+	.quad	8589934590                      # 0x1fffffffe
 func0000000000000000:                   # @func0000000000000000
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpblendd	$170, %ymm1, %ymm0, %ymm0       # ymm0 = ymm0[0],ymm1[1],ymm0[2],ymm1[3],ymm0[4],ymm1[5],ymm0[6],ymm1[7]
-	vpbroadcastq	.LCPI3_0(%rip), %ymm1   # ymm1 = [2,2,2,2]
+	vpandq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	vpbroadcastq	.LCPI3_1(%rip), %ymm1   # ymm1 = [8589934590,8589934590,8589934590,8589934590]
 	vpsllvq	%ymm0, %ymm1, %ymm0
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
 	retq

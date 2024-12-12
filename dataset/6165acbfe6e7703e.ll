@@ -14,18 +14,17 @@
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; assimp/optimized/ColladaParser.cpp.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; opencv/optimized/lapack.cpp.ll
 ; php/optimized/softmagic.ll
 ; qemu/optimized/block_vmdk.c.ll
@@ -36,11 +35,13 @@ entry:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wireshark/optimized/ngsniffer.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -77,7 +78,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 

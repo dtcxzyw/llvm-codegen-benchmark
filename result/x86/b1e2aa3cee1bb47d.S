@@ -1,10 +1,10 @@
-func000000000000003a:                   # @func000000000000003a
-	subq	%rdx, %rsi
-	imulq	$56, %rsi, %rax
-	leaq	16(%rdi,%rax), %rax
-	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	subq	%rdx, %rsi
 	shlq	$8, %rsi
 	leaq	16(%rdi,%rsi), %rax
+	retq
+func000000000000003b:                   # @func000000000000003b
+	subq	%rdx, %rsi
+	leaq	(%rsi,%rsi,4), %rax
+	leaq	24(%rdi,%rax,8), %rax
 	retq

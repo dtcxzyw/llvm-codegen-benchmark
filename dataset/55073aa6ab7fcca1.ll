@@ -1,6 +1,8 @@
 
-; 32 occurrences:
+; 34 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btConvexConvexAlgorithm.ll
 ; bullet3/optimized/btConvexPlaneCollisionAlgorithm.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
@@ -41,10 +43,16 @@ entry:
   ret float %3
 }
 
-; 20 occurrences:
+; 26 occurrences:
 ; abc/optimized/giaOf.c.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/GenVertexNormalsProcess.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll

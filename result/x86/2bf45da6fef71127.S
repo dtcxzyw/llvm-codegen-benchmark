@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	%esi, %eax
 	sarl	$16, %eax
 	imull	%edi, %eax
@@ -10,25 +10,19 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%esi, %esi
 	setns	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	sarl	%esi
 	imull	%edi, %esi
 	testl	%esi, %esi
 	setns	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
-	sarl	%esi
-	imull	%edi, %esi
-	cmpl	$4, %esi
-	setb	%al
-	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sarl	%esi
 	imull	%edi, %esi
 	testl	%esi, %esi
 	setg	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	movl	%esi, %eax
 	sarl	$16, %eax
 	imull	%edi, %eax

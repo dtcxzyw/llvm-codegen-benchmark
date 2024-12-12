@@ -5,8 +5,9 @@ func0000000000000002:                   # @func0000000000000002
 	addq	%rdi, %rax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	andl	$8, %esi
-	leaq	(%rsi,%rdi), %rax
+	movabsq	$8589934584, %rax               # imm = 0x1FFFFFFF8
+	andq	%rsi, %rax
+	addq	%rdi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	andl	$511, %esi                      # imm = 0x1FF

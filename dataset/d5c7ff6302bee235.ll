@@ -1,9 +1,11 @@
 
-; 372 occurrences:
+; 374 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/expression.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/static_string.ll
 ; casadi/optimized/options.cpp.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
@@ -373,7 +375,7 @@
 ; z3/optimized/theory_arith.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = srem i64 %0, %2

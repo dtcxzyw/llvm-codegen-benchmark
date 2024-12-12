@@ -1,13 +1,9 @@
 
-; 10 occurrences:
-; assimp/optimized/BlenderDNA.cpp.ll
+; 6 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
-; assimp/optimized/PlyParser.cpp.ll
-; cmake/optimized/cmELF.cxx.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
-; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/packet-dcerpc-mapi.c.ll
 ; wireshark/optimized/packet-e164.c.ll
 ; Function Attrs: nounwind

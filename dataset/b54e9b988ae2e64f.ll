@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/approximately_equals.ll
 ; git/optimized/fast-import.ll
 ; hermes/optimized/APInt.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -50,7 +51,8 @@ entry:
   ret i32 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/iconv_codecvt.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
 ; Function Attrs: nounwind
@@ -61,7 +63,7 @@ entry:
   ret i32 %2
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; hdf5/optimized/H5Znbit.c.ll
@@ -71,6 +73,7 @@ entry:
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/Disasm.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; opencv/optimized/trace.cpp.ll
 ; postgres/optimized/buffile.ll
 ; qemu/optimized/hw_pci_pcie_sriov.c.ll

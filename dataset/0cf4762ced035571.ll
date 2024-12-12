@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 28 occurrences:
 ; clamav/optimized/upx.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; git/optimized/dir.ll
@@ -7,7 +7,6 @@
 ; icu/optimized/uloc.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/slub.ll
@@ -16,7 +15,6 @@
 ; llvm/optimized/BreakableToken.cpp.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
-; nuttx/optimized/lib_rdflush_unlocked.c.ll
 ; openjdk/optimized/ciMethod.ll
 ; php/optimized/pcre2_compile.ll
 ; redis/optimized/ziplist.ll

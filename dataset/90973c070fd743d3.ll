@@ -9,14 +9,16 @@ entry:
   %2 = shl i8 %1, 6
   %3 = and i8 %2, 64
   %4 = zext nneg i8 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
+; hermes/optimized/APFloat.cpp.ll
 ; libquic/optimized/x25519-x86_64.c.ll
+; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i8 %1) #0 {
 entry:

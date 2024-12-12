@@ -32,10 +32,10 @@ func0000000000000008:                   # @func0000000000000008
 	cmovpl	%esi, %eax
 	retq
 .LCPI5_0:
-	.quad	0x3ff0000000000000              # double 1
+	.quad	0x4066800000000000              # double 180
 func000000000000000a:                   # @func000000000000000a
 	movl	%edi, %eax
-	vmovsd	.LCPI5_0(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0]
+	vmovsd	.LCPI5_0(%rip), %xmm1           # xmm1 = [1.8E+2,0.0E+0]
 	vucomisd	%xmm0, %xmm1
 	cmovbl	%esi, %eax
 	retq

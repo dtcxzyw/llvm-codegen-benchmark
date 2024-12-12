@@ -1,7 +1,5 @@
 
-; 18 occurrences:
-; assimp/optimized/Exporter.cpp.ll
-; assimp/optimized/Importer.cpp.ll
+; 16 occurrences:
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
 ; darktable/optimized/introspection_basecurve.c.ll

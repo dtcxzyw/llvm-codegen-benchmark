@@ -9,7 +9,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 6
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = and i64 %6, 4294967295
   ret i64 %7
 }

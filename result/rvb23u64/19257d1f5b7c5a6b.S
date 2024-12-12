@@ -1,41 +1,41 @@
-func0000000000000304:                   # @func0000000000000304
+func0000000000000604:                   # @func0000000000000604
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 1
 	sltu	a0, a1, a0
 	ret
-func00000000000003c1:                   # @func00000000000003c1
+func0000000000000781:                   # @func0000000000000781
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 1
 	slt	a0, a1, a0
 	ret
-func00000000000003da:                   # @func00000000000003da
+func0000000000000006:                   # @func0000000000000006
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 1
-	slt	a0, a0, a1
+	slt	a0, a1, a0
 	ret
-func0000000000000388:                   # @func0000000000000388
+func0000000000000708:                   # @func0000000000000708
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 4
 	sltu	a0, a0, a1
 	ret
-func0000000000000306:                   # @func0000000000000306
+func0000000000000606:                   # @func0000000000000606
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 1
 	slt	a0, a1, a0
 	ret
-func0000000000000384:                   # @func0000000000000384
+func0000000000000704:                   # @func0000000000000704
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 1
@@ -47,20 +47,26 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a1, a1, -32
 	sltu	a0, a1, a0
 	ret
-func000000000000010a:                   # @func000000000000010a
+func0000000000000204:                   # @func0000000000000204
+	sext.w	a0, a0
+	add	a1, a1, a2
+	addiw	a1, a1, -1
+	sltu	a0, a1, a0
+	ret
+func000000000000020a:                   # @func000000000000020a
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 16
 	slt	a0, a0, a1
 	ret
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 1

@@ -6,7 +6,7 @@
 ; openusd/optimized/json.cpp.ll
 ; php/optimized/pcre2_substitute.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000060a(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
   %4 = add i32 %3, -48
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 10
   %4 = add i32 %3, -48

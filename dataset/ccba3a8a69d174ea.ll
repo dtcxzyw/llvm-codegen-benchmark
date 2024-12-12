@@ -17,7 +17,8 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/src.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; linux/optimized/printk.ll
 ; meshlab/optimized/edit_align.cpp.ll

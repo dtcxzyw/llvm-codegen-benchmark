@@ -1,6 +1,8 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; nori/optimized/button.cpp.ll
 ; nori/optimized/slider.cpp.ll
@@ -20,7 +22,7 @@
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fadd float %3, 5.000000e-01
   ret float %4
 }

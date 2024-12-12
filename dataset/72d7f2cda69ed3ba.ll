@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/ethtool.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -18,7 +17,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 4
   %5 = and i32 %4, 458752
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -34,7 +33,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 3
   %5 = and i32 %4, 248
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -49,7 +48,7 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
   %5 = and i32 %4, 16711680
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -105,7 +104,7 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 7
   %5 = and i32 %4, 896
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -118,7 +117,7 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 18
   %5 = and i32 %4, 1835008
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -131,7 +130,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 1
   %5 = and i32 %4, 32
-  %6 = or i32 %5, %1
+  %6 = or i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -153,7 +152,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, 18
   %5 = and i32 %4, 134217728
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -181,7 +180,7 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 12
   %5 = and i32 %4, 4096
-  %6 = or i32 %5, %1
+  %6 = or i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }

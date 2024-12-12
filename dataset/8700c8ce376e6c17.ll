@@ -20,7 +20,7 @@
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -72,11 +72,11 @@ entry:
 define i32 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
-; 360 occurrences:
+; 355 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
@@ -92,6 +92,7 @@ entry:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/options_description.ll
 ; brotli/optimized/metablock.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; casadi/optimized/casadi_misc.cpp.ll
@@ -232,13 +233,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -313,8 +311,6 @@ entry:
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -384,7 +380,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -441,11 +436,11 @@ entry:
 define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
-; 19 occurrences:
+; 13 occurrences:
 ; clamav/optimized/pe.c.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; lief/optimized/pkwrite.c.ll
@@ -457,19 +452,13 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; openblas/optimized/cblas_drotm.c.ll
-; openblas/optimized/dgbtrf.c.ll
-; openblas/optimized/drotm.c.ll
-; openblas/optimized/lapacke_c_nancheck.c.ll
-; openblas/optimized/lapacke_d_nancheck.c.ll
-; openblas/optimized/lapacke_s_nancheck.c.ll
-; openblas/optimized/lapacke_z_nancheck.c.ll
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -493,11 +482,11 @@ entry:
 define i32 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
-; 72 occurrences:
+; 69 occurrences:
 ; cmake/optimized/ntlm.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
@@ -509,7 +498,6 @@ entry:
 ; linux/optimized/buffered_read.ll
 ; linux/optimized/drm_vblank.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/inline.ll
 ; linux/optimized/intel_renderstate.ll
 ; linux/optimized/intel_uc_fw.ll
@@ -522,8 +510,6 @@ entry:
 ; linux/optimized/tg3.ll
 ; linux/optimized/thermal_core.ll
 ; linux/optimized/uhci-hcd.ll
-; linux/optimized/utaddress.ll
-; linux/optimized/wep.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/BitstreamReader.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
@@ -574,7 +560,7 @@ entry:
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -586,11 +572,11 @@ entry:
 define i32 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -615,6 +601,7 @@ entry:
 ; libquic/optimized/convert.c.ll
 ; libwebp/optimized/rescaler.c.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_tlsf.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
@@ -642,7 +629,7 @@ entry:
 define i32 @func000000000000001e(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -671,11 +658,11 @@ entry:
 define i32 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/ivyMulti.c.ll
 ; clamav/optimized/pe.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
@@ -689,6 +676,7 @@ entry:
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/localtopologychecker.cpp.ll
 ; icu/optimized/ucmstate.ll
+; lvgl/optimized/lv_table.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/multiheadattention.cpp.ll
 ; opencv/optimized/merge.dispatch.cpp.ll
@@ -701,7 +689,7 @@ entry:
 define i32 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -724,7 +712,7 @@ entry:
 define i32 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -738,7 +726,7 @@ entry:
 define i32 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -763,7 +751,7 @@ entry:
 define i32 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -779,7 +767,7 @@ entry:
 define i32 @func0000000000000013(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -802,7 +790,7 @@ entry:
 define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -817,7 +805,7 @@ entry:
 define i32 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -830,7 +818,7 @@ entry:
 define i32 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -840,7 +828,7 @@ entry:
 define i32 @func0000000000000012(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -850,7 +838,7 @@ entry:
 define i32 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 

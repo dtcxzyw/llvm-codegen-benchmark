@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/from_chars.ll
 ; clap-rs/optimized/4bajo035z6e1d4qz.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; llvm/optimized/Local.cpp.ll
@@ -15,6 +16,7 @@
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i8 %0, i1 %1) #0 {
 entry:
@@ -43,6 +45,17 @@ define i1 @func0000000000000001(i8 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = icmp eq i8 %0, 0
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/VectorCombine.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i8 %0, i1 %1) #0 {
+entry:
+  %2 = xor i1 %1, true
+  %3 = icmp ult i8 %0, 18
   %4 = and i1 %3, %2
   ret i1 %4
 }

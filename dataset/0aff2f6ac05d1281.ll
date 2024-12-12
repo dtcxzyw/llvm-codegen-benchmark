@@ -1,6 +1,4 @@
 
-%struct.codel_vars.3362248 = type { i32, i32, i8, i16, i32, i32, i32 }
-
 ; 87 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
@@ -94,31 +92,6 @@ define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
   %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %5, %0
-  ret i64 %6
-}
-
-; 3 occurrences:
-; llvm/optimized/NeonEmitter.cpp.ll
-; nlohmann_json/optimized/unit-element_access2.cpp.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; linux/optimized/tx.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = sdiv exact i64 %2, 56
-  %4 = getelementptr %struct.codel_vars.3362248, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6

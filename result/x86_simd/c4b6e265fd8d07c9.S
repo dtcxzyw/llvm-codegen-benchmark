@@ -10,7 +10,7 @@ func0000000000000015:                   # @func0000000000000015
 	vzeroupper
 	retq
 func0000000000000010:                   # @func0000000000000010
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq

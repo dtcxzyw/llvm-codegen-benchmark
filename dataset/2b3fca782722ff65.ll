@@ -1,4 +1,18 @@
 
+; 4 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; mitsuba3/optimized/string.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 52
+  %3 = and i64 %2, 2047
+  %4 = or i64 %3, %0
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; abc/optimized/luckySwap.c.ll
 ; Function Attrs: nounwind

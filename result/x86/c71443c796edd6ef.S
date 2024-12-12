@@ -28,6 +28,13 @@ func0000000000000055:                   # @func0000000000000055
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
+func000000000000005f:                   # @func000000000000005f
+	movl	%edx, %ecx
+	movl	$4294963696, %eax               # imm = 0xFFFFF1F0
+	imulq	%rcx, %rax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
 func0000000000000050:                   # @func0000000000000050
 	movl	%edx, %ecx
 	leaq	(%rdi,%rsi), %rax

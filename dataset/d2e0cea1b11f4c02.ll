@@ -1,39 +1,23 @@
 
-%"struct.vcpkg::PackageSpec.2755617" = type { %"class.std::__cxx11::basic_string.2755614", %"struct.vcpkg::Triplet.2755618" }
-%"class.std::__cxx11::basic_string.2755614" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2755615", i64, %union.anon.2755616 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2755615" = type { ptr }
-%union.anon.2755616 = type { i64, [8 x i8] }
-%"struct.vcpkg::Triplet.2755618" = type { ptr }
-%"class.std::vector.675.3669921" = type { %"struct.std::_Vector_base.676.3669922" }
-%"struct.std::_Vector_base.676.3669922" = type { %"struct.std::_Vector_base<ue2::CharReach, std::allocator<ue2::CharReach>>::_Vector_impl.3669923" }
-%"struct.std::_Vector_base<ue2::CharReach, std::allocator<ue2::CharReach>>::_Vector_impl.3669923" = type { %"struct.std::_Vector_base<ue2::CharReach, std::allocator<ue2::CharReach>>::_Vector_impl_data.3669924" }
-%"struct.std::_Vector_base<ue2::CharReach, std::allocator<ue2::CharReach>>::_Vector_impl_data.3669924" = type { ptr, ptr, ptr }
+%"struct.vcpkg::PackageSpec.2867903" = type { %"class.std::__cxx11::basic_string.2867900", %"struct.vcpkg::Triplet.2867904" }
+%"class.std::__cxx11::basic_string.2867900" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2867901", i64, %union.anon.2867902 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2867901" = type { ptr }
+%union.anon.2867902 = type { i64, [8 x i8] }
+%"struct.vcpkg::Triplet.2867904" = type { ptr }
 
-; 3 occurrences:
+; 4 occurrences:
 ; eastl/optimized/TestVector.cpp.ll
+; hyperscan/optimized/ng_repeat.cpp.ll
 ; openusd/optimized/listOp.cpp.ll
 ; vcpkg/optimized/dependencies.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = getelementptr nusw %"struct.vcpkg::PackageSpec.2755617", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.vcpkg::PackageSpec.2867903", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = udiv exact i64 %6, 40
-  ret i64 %7
-}
-
-; 1 occurrences:
-; hyperscan/optimized/ng_repeat.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = xor i64 %2, -1
-  %4 = getelementptr %"class.std::vector.675.3669921", ptr %1, i64 %3
-  %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %5, %0
-  %7 = udiv exact i64 %6, 24
   ret i64 %7
 }
 

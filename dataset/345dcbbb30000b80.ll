@@ -27,7 +27,7 @@ entry:
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0) #0 {
+define i64 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = icmp ult i64 %0, 68719476736
   %2 = select i1 %1, i64 5, i64 9
@@ -49,7 +49,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0) #0 {
+define i64 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = icmp ugt i64 %0, 1016
   %2 = select i1 %1, i64 3, i64 2

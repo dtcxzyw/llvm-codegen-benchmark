@@ -64,6 +64,18 @@ func0000000000000034:                   # @func0000000000000034
 	movslq	%edx, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
+func0000000000000017:                   # @func0000000000000017
+	decl	%edx
+	imull	%esi, %edx
+	movslq	%edx, %rax
+	leaq	(%rdi,%rax,2), %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	incl	%edx
+	imull	%esi, %edx
+	movslq	%edx, %rax
+	leaq	(%rdi,%rax,4), %rax
+	retq
 func0000000000000026:                   # @func0000000000000026
 	incl	%edx
 	imull	%esi, %edx

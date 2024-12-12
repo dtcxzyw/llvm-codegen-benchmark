@@ -1,9 +1,3 @@
-func000000000000002a:                   # @func000000000000002a
-	negl	%edx
-	movslq	%edx, %rax
-	addq	%rsi, %rdi
-	leaq	1(%rax,%rdi), %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	negl	%edx
 	movslq	%edx, %rax

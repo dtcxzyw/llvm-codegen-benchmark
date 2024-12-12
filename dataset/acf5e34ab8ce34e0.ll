@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/sr_ioctl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000121(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nsw i32 %3, 1
@@ -38,10 +38,10 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000124(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i8 %0 to i32
   %6 = icmp ult i32 %4, %5
   ret i1 %6

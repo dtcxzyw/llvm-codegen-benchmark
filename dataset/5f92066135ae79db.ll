@@ -10,7 +10,7 @@
 define i128 @func0000000000000003(i128 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i128 %0 to i64
-  %.narrow = add i64 %.tr, %1
+  %.narrow = add i64 %1, %.tr
   %2 = zext i64 %.narrow to i128
   ret i128 %2
 }
@@ -24,7 +24,7 @@ entry:
 define i128 @func0000000000000000(i128 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i128 %0 to i64
-  %.narrow = add i64 %.tr, %1
+  %.narrow = add i64 %1, %.tr
   %2 = zext i64 %.narrow to i128
   ret i128 %2
 }
@@ -36,7 +36,7 @@ entry:
 define i128 @func0000000000000007(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = add nuw nsw i128 %2, %0
+  %3 = add nuw nsw i128 %0, %2
   %4 = and i128 %3, 3
   ret i128 %4
 }
@@ -47,7 +47,7 @@ entry:
 define i128 @func0000000000000002(i128 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i128 %0 to i64
-  %.narrow = add i64 %.tr, %1
+  %.narrow = add i64 %1, %.tr
   %2 = zext i64 %.narrow to i128
   ret i128 %2
 }
@@ -58,7 +58,7 @@ entry:
 define i128 @func0000000000000001(i128 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i128 %0 to i64
-  %.narrow = add i64 %.tr, %1
+  %.narrow = add i64 %1, %.tr
   %2 = zext i64 %.narrow to i128
   ret i128 %2
 }

@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 95 occurrences:
 ; abc/optimized/cecSweep.c.ll
 ; cpython/optimized/pyhash.ll
 ; folly/optimized/json.cpp.ll
@@ -8,10 +8,8 @@
 ; jemalloc/optimized/prof_data.sym.ll
 ; linux/optimized/generic.ll
 ; linux/optimized/iface.ll
-; linux/optimized/intel_epb.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; llvm/optimized/ABIInfoImpl.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -48,7 +46,6 @@
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/ExprMutationAnalyzer.cpp.ll
-; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/ObjCMT.cpp.ll
@@ -308,11 +305,11 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = and i64 %3, -16385
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 50 occurrences:
+; 48 occurrences:
 ; abc/optimized/bmcCexDepth.c.ll
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/giaDup.c.ll
@@ -321,7 +318,6 @@ entry:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/apic.ll
-; linux/optimized/centaur.ll
 ; linux/optimized/dump_pagetables.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/mpih-div.ll
@@ -332,7 +328,6 @@ entry:
 ; linux/optimized/therm_throt.ll
 ; linux/optimized/via-rng.ll
 ; linux/optimized/x86_pkg_temp_thermal.ll
-; linux/optimized/zhaoxin.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll

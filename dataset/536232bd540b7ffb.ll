@@ -1,7 +1,6 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/zHeap.ll

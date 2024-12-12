@@ -6,7 +6,7 @@
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; wireshark/optimized/protobuf_lang_tree.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0) #0 {
+define i32 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 13
   %2 = icmp eq i32 %1, 4
@@ -16,12 +16,19 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 10 occurrences:
+; boost/optimized/console_buffer.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_fs.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_stackstring.ll
 ; cmake/optimized/archive_string.c.ll
 ; jq/optimized/builtin.ll
 ; jq/optimized/jv.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i32 %0) #0 {
+define i32 @func0000000000000050(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2095104
   %2 = icmp eq i32 %1, 55296

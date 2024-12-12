@@ -5,7 +5,7 @@ func0000000000000031:                   // @func0000000000000031
 	asr	x0, x8, #4
 	ret
                                         // -- End function
-func0000000000000071:                   // @func0000000000000071
+func0000000000000079:                   // @func0000000000000079
 // %bb.0:                               // %entry
 	add	x8, x1, x2, lsl #2
 	sub	x8, x8, x0
@@ -28,7 +28,7 @@ func0000000000000061:                   // @func0000000000000061
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	x8, x1, x2, lsl #3
+	add	x8, x1, x2, lsl #4
 	sub	x8, x8, x0
 	asr	x0, x8, #3
 	ret

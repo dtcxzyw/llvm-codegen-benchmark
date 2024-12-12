@@ -3,7 +3,7 @@
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
   %4 = icmp eq i32 %3, 0

@@ -12,7 +12,7 @@ entry:
   %3 = sub nsw i32 9, %2
   %4 = and i32 %1, 511
   %5 = lshr i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, 128
   ret i32 %7
 }

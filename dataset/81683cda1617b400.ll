@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; arrow/optimized/row_internal.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -33,6 +33,7 @@
 ; opencv/optimized/rtrees.cpp.ll
 ; opencv/optimized/tile_layer.cpp.ll
 ; sentencepiece/optimized/normalizer.cc.ll
+; velox/optimized/SparseHll.cpp.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {

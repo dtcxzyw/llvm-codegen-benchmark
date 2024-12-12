@@ -24,13 +24,11 @@ func0000000000000005:                   # @func0000000000000005
 	leal	-42(%rdi,%rax), %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	movslq	%esi, %rax
-	imulq	$715827883, %rax, %rax          # imm = 0x2AAAAAAB
-	movq	%rax, %rcx
-	shrq	$63, %rcx
-	sarq	$33, %rax
-	addl	%ecx, %eax
-	leal	1900(%rdi,%rax), %eax
+	movl	%esi, %eax
+	shrl	$31, %eax
+	addl	%esi, %eax
+	sarl	%eax
+	leal	2(%rdi,%rax), %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	leal	8191(%rdi), %eax

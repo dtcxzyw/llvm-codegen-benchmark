@@ -1,12 +1,11 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; arrow/optimized/concatenate.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; darktable/optimized/export.c.ll
 ; gromacs/optimized/mtop_util.cpp.ll
-; llvm/optimized/Expr.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -34,10 +33,11 @@ entry:
   ret i32 %4
 }
 
-; 42 occurrences:
+; 43 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/cmdline.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
@@ -81,12 +81,12 @@ entry:
 define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
 
-; 9 occurrences:
+; 12 occurrences:
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
 ; cpython/optimized/cfield.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
@@ -96,11 +96,14 @@ entry:
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -116,7 +119,7 @@ entry:
 define i32 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 31
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -130,7 +133,7 @@ entry:
 define i32 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 32
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -141,7 +144,7 @@ entry:
 define i32 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 32
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -152,7 +155,7 @@ entry:
 define i32 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 31
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -163,7 +166,19 @@ entry:
 define i32 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 32
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
+  %4 = trunc i64 %3 to i32
+  ret i32 %4
+}
+
+; 2 occurrences:
+; boost/optimized/attribute_name.ll
+; hyperscan/optimized/rose_build_misc.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000016(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 6
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -174,17 +189,6 @@ entry:
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = add i64 %2, %0
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
-; 1 occurrences:
-; hyperscan/optimized/rose_build_misc.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000016(i64 %0, i64 %1) #0 {
-entry:
-  %2 = lshr exact i64 %1, 7
   %3 = add i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4

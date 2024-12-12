@@ -1,5 +1,5 @@
 
-; 198 occurrences:
+; 199 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/GenFaceNormalsProcess.cpp.ll
@@ -7,6 +7,8 @@
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/SkeletonMeshBuilder.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
@@ -105,7 +107,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -203,7 +204,7 @@ define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
   %4 = fneg float %3
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

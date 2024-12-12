@@ -12,10 +12,10 @@ func000000000000000c:                   # @func000000000000000c
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	notl	%edx
-	testb	$60, %dl
-	sete	%al
+func0000000000000018:                   # @func0000000000000018
+	andl	$64512, %edx                    # imm = 0xFC00
+	cmpl	$49921, %edx                    # imm = 0xC301
+	setae	%al
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq

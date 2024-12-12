@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vptestmb	%xmm0, %xmm0, %k0
 	vptestnmb	%xmm1, %xmm1, %k1
 	kxorw	%k1, %k0, %k0

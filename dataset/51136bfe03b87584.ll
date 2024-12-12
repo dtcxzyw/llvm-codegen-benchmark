@@ -40,12 +40,12 @@
 ; ruby/optimized/class.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp ne i64 %3, 27
   %5 = icmp ne i64 %1, 27
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -62,12 +62,12 @@ entry:
 ; ruby/optimized/class.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp eq i64 %3, 28
   %5 = icmp ne i64 %1, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -113,10 +113,10 @@ entry:
 ; openjdk/optimized/g1BarrierSetC2.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = and i64 %1, 393216
   %6 = icmp ne i64 %5, 393216
   %7 = or i1 %6, %4
@@ -139,7 +139,7 @@ entry:
 ; spike/optimized/mmu.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = and i1 %3, %0
@@ -152,7 +152,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/Object.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000202(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -140737488355328
   %4 = icmp eq i64 %3, -1548112371908608

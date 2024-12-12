@@ -7,7 +7,7 @@
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, %0
   %3 = icmp eq i64 %0, 0
@@ -21,7 +21,7 @@ entry:
 ; linux/optimized/ip6_flowlabel.ll
 ; linux/optimized/svclock.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000182(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = icmp slt i64 %2, 0

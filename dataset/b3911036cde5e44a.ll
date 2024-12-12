@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; libpng/optimized/pngwutil.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, %0
   %3 = icmp eq i32 %2, 0
@@ -15,7 +15,7 @@ entry:
 ; libwebp/optimized/muxedit.c.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000194(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, %0
   %3 = icmp slt i32 %2, 0
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/unitTestDelegate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000182(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
   %3 = icmp eq i32 %2, 0
@@ -43,7 +43,7 @@ entry:
 ; postgres/optimized/f2s_srv.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
   %3 = icmp eq i32 %2, 0
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/subdivision2d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
   %3 = icmp eq i32 %2, 0

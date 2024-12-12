@@ -24,7 +24,7 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; gromacs/optimized/fft_fftw3.cpp.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJEwCombGeom_VF.cpp.ll
@@ -41,7 +41,6 @@ entry:
 ; icu/optimized/propsvec.ll
 ; libwebp/optimized/dwebp.c.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -56,7 +55,7 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -65,6 +64,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-hcrt.c.ll
 ; wireshark/optimized/packet-x11.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
@@ -105,6 +105,17 @@ entry:
   %2 = add i32 %1, 5
   %3 = shl nsw i32 %0, 1
   %4 = mul nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 1
+  %3 = shl nuw nsw i32 %0, 2
+  %4 = mul nuw nsw i32 %3, %2
   ret i32 %4
 }
 

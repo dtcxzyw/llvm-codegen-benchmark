@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/cnfCut.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/trie.cc.ll
@@ -16,7 +16,6 @@
 ; icu/optimized/double-conversion-bignum.ll
 ; icu/optimized/olsontz.ll
 ; icu/optimized/unistr.ll
-; nuttx/optimized/msgctl.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/faceSurface.cpp.ll

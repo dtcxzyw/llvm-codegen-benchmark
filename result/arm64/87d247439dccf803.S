@@ -1,50 +1,25 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffff0000
-	mov	x8, #-8                         // =0xfffffffffffffff8
-	dup	v5.2d, x8
-	mov	x8, #-16                        // =0xfffffffffffffff0
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	and	v1.16b, v1.16b, v5.16b
-	and	v0.16b, v0.16b, v5.16b
-	dup	v4.2d, x8
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v1.2d, v4.2d
-	add	v0.2d, v0.2d, v4.2d
+	and	x8, x1, #0xffffffffffff0000
+	and	x9, x0, #0xfffffffffffffff8
+	sub	x8, x8, x9
+	sub	x0, x8, #16
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	w8, #120                        // =0x78
-	movi	v5.2d, #0x000000000000ff
-	dup	v4.2d, x8
-	mov	x8, #-8                         // =0xfffffffffffffff8
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	and	v1.16b, v1.16b, v5.16b
-	and	v0.16b, v0.16b, v5.16b
-	dup	v4.2d, x8
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v1.2d, v4.2d
-	add	v0.2d, v0.2d, v4.2d
+	and	x8, x1, #0x78
+	sub	x8, x8, w0, uxtb
+	sub	x0, x8, #8
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffff
 	mov	x8, #4                          // =0x4
+	and	x9, x1, #0xffffffffffffff
+	and	x10, x0, #0xffffffffffffff
 	movk	x8, #1024, lsl #48
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
-	and	v0.16b, v0.16b, v4.16b
-	dup	v4.2d, x8
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v1.2d, v4.2d
-	add	v0.2d, v0.2d, v4.2d
+	sub	x9, x9, x10
+	add	x0, x9, x8
 	ret
                                         // -- End function

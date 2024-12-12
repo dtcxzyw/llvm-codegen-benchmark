@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	imull	$-1030792151, %esi, %eax        # imm = 0xC28F5C29
 	addl	$85899344, %eax                 # imm = 0x51EB850
 	rorxl	$2, %eax, %eax
@@ -8,12 +8,12 @@ func00000000000000c1:                   # @func00000000000000c1
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testl	%edi, %edi
 	setne	%al
 	andb	%sil, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movslq	%esi, %rax
 	imulq	$1431655766, %rax, %rcx         # imm = 0x55555556
 	movq	%rcx, %rdx
@@ -28,7 +28,7 @@ func0000000000000041:                   # @func0000000000000041
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movslq	%esi, %rax
 	imulq	$1431655766, %rax, %rcx         # imm = 0x55555556
 	movq	%rcx, %rdx
@@ -43,7 +43,27 @@ func0000000000000014:                   # @func0000000000000014
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func000000000000014a:                   # @func000000000000014a
+	movslq	%esi, %rax
+	imulq	$-2004318071, %rax, %rcx        # imm = 0x88888889
+	shrq	$32, %rcx
+	addl	%eax, %ecx
+	movl	%ecx, %edx
+	shrl	$31, %edx
+	sarl	$4, %ecx
+	addl	%edx, %ecx
+	movl	%ecx, %edx
+	shll	$5, %edx
+	addl	%ecx, %ecx
+	subl	%edx, %ecx
+	addl	%eax, %ecx
+	testl	%ecx, %ecx
+	setg	%cl
+	testl	%edi, %edi
+	setg	%al
+	andb	%cl, %al
+	retq
+func0000000000000021:                   # @func0000000000000021
 	movslq	%esi, %rax
 	imulq	$1431655766, %rax, %rcx         # imm = 0x55555556
 	movq	%rcx, %rdx

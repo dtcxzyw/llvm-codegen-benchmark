@@ -1,9 +1,9 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	subq	%rdi, %rsi
 	cmpq	$5, %rsi
 	setl	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subq	%rdi, %rsi
 	cmpq	$257, %rsi                      # imm = 0x101
 	setge	%al

@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -34,6 +34,7 @@
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; ruby/optimized/enum.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; wireshark/optimized/packet-acn.c.ll
 ; wireshark/optimized/packet-alp.c.ll
 ; wireshark/optimized/packet-cip.c.ll

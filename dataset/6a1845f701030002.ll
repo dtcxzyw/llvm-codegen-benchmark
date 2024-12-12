@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ioReadBlif.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add nsw i32 %2, -3
@@ -47,7 +47,7 @@ entry:
 ; opencv/optimized/descriptor.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add nuw i32 %2, 1
@@ -59,7 +59,7 @@ entry:
 ; opencv/optimized/matrix_transform.cpp.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add nsw i32 %2, 1
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/persistence_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add nsw i32 %2, -1

@@ -7,6 +7,8 @@
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
@@ -103,6 +105,7 @@
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
@@ -122,8 +125,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -180,7 +181,6 @@
 ; nlohmann_json/optimized/unit-unicode5.cpp.ll
 ; nlohmann_json/optimized/unit-user_defined_input.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -371,7 +371,7 @@ entry:
   ret i32 %3
 }
 
-; 27 occurrences:
+; 29 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; cpython/optimized/dtoa.ll
@@ -399,6 +399,8 @@ entry:
 ; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(double %0) #0 {
 entry:

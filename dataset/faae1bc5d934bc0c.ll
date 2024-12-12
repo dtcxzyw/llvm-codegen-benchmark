@@ -1,16 +1,6 @@
 
-; 1 occurrences:
-; ruby/optimized/symbol.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 10
-  %4 = select i1 %3, i64 %0, i64 %1
-  %5 = trunc i64 %4 to i32
-  ret i32 %5
-}
-
 ; 75 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; ceres/optimized/inner_product_computer.cc.ll
 ; clamav/optimized/unicode.cpp.ll
 ; cpython/optimized/compile.ll
@@ -22,7 +12,6 @@ entry:
 ; icu/optimized/collationbuilder.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libquic/optimized/spdy_framer.cc.ll
-; linux/optimized/blk-map.ll
 ; llvm/optimized/CGAtomic.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/DemandedBits.cpp.ll
@@ -135,10 +124,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; linux/optimized/af_netlink.ll
+; 3 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; nuklear/optimized/unity.c.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
@@ -214,17 +202,6 @@ entry:
   %3 = select i1 %.not, i64 %1, i64 %0
   %4 = trunc i64 %3 to i32
   ret i32 %4
-}
-
-; 1 occurrences:
-; linux/optimized/raw.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 0
-  %4 = select i1 %3, i64 %0, i64 %1
-  %5 = trunc nuw i64 %4 to i32
-  ret i32 %5
 }
 
 ; 2 occurrences:

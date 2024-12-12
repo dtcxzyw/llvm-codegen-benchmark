@@ -9,10 +9,10 @@
 ; minetest/optimized/guiTable.cpp.ll
 ; openjdk/optimized/jdmarker.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 
@@ -51,35 +51,45 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; php/optimized/scanf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 256, i32 %2
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 32, i32 %2
   %4 = sub nuw nsw i32 %0, %3
-  %5 = icmp ult i32 %4, 32
+  %5 = icmp samesign ult i32 %4, 32
   ret i1 %5
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; clamav/optimized/pathfn.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 6, i32 %2
+  %4 = sub i32 %0, %3
+  %5 = icmp samesign ult i32 %4, -3
+  ret i1 %5
+}
+
+; 3 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; hyperscan/optimized/repeat.c.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 6, i32 %2
+  %3 = select i1 %1, i32 undef, i32 %2
   %4 = sub i32 %0, %3
-  %5 = icmp ult i32 %4, -3
+  %5 = icmp ult i32 %4, 24
   ret i1 %5
 }
 
@@ -101,7 +111,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
@@ -113,14 +123,14 @@ entry:
 define i1 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 1, i32 %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; icu/optimized/utext.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
   %4 = sub nsw i32 %0, %3
@@ -131,7 +141,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
   %4 = sub nuw i32 %0, %3

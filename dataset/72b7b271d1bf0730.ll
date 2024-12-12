@@ -8,11 +8,11 @@ define i16 @func0000000000000003(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
   %3 = and i16 %2, 3
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
-; 503 occurrences:
+; 504 occurrences:
 ; abc/optimized/wlcMem.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
@@ -345,7 +345,6 @@ entry:
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -497,6 +496,9 @@ entry:
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; minetest/optimized/anaglyph.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
@@ -508,7 +510,6 @@ entry:
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/replay_replay-internal.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/gc.ll
@@ -521,11 +522,11 @@ define i16 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = and i16 %2, 512
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/e1000_hw.ll
@@ -535,7 +536,6 @@ entry:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/DbiStreamBuilder.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/time.ll
 ; sqlite/optimized/sqlite3.ll
@@ -544,23 +544,6 @@ define i16 @func0000000000000007(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = and i16 %2, 63
-  %4 = or disjoint i16 %3, %0
-  ret i16 %4
-}
-
-; 7 occurrences:
-; glslang/optimized/SpvBuilder.cpp.ll
-; image-rs/optimized/254ue5dpb10tdnze.ll
-; linux/optimized/hda_codec.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
-; openexr/optimized/ImfInputFile.cpp.ll
-; php/optimized/phar.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000005(i16 %0, i32 %1) #0 {
-entry:
-  %2 = trunc nuw i32 %1 to i16
-  %3 = and i16 %2, 4096
   %4 = or disjoint i16 %3, %0
   ret i16 %4
 }
@@ -581,12 +564,11 @@ entry:
   ret i16 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; libevent/optimized/evdns.c.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/nfs4xdr.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
@@ -595,7 +577,29 @@ define i16 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = and i16 %2, 72
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
+  ret i16 %4
+}
+
+; 12 occurrences:
+; glslang/optimized/SpvBuilder.cpp.ll
+; image-rs/optimized/254ue5dpb10tdnze.ll
+; linux/optimized/hda_codec.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; openexr/optimized/ImfInputFile.cpp.ll
+; php/optimized/phar.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000005(i16 %0, i32 %1) #0 {
+entry:
+  %2 = trunc nuw i32 %1 to i16
+  %3 = and i16 %2, -256
+  %4 = or disjoint i16 %3, %0
   ret i16 %4
 }
 
@@ -610,7 +614,7 @@ define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = and i16 %2, -32768
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 

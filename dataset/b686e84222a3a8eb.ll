@@ -1,5 +1,5 @@
 
-; 344 occurrences:
+; 349 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
@@ -12,6 +12,7 @@
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/bigint.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; cpython/optimized/longobject.ll
@@ -54,7 +55,6 @@
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/keyring.ll
-; linux/optimized/lbr.ll
 ; linux/optimized/ntp.ll
 ; llvm/optimized/AArch64PBQPRegAlloc.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -220,7 +220,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -344,16 +343,22 @@
 ; wireshark/optimized/tap-iostat.c.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/register.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 6
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 35 occurrences:
+; 37 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
@@ -386,6 +391,8 @@ entry:
 ; velox/optimized/Sequence.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3ThreadPool.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; xgboost/optimized/coll_c_api.cc.ll
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll
@@ -394,11 +401,12 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 86400
   %4 = add nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 40 occurrences:
+; 39 occurrences:
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/special.c.ll
 ; cmake/optimized/archive_getdate.c.ll
@@ -435,9 +443,7 @@ entry:
 ; rocksdb/optimized/hash.cc.ll
 ; ruby/optimized/bubblebabble.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/packet-alp.c.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; wireshark/optimized/packet-pn-ptcp.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
@@ -448,7 +454,7 @@ entry:
   ret i64 %5
 }
 
-; 357 occurrences:
+; 359 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -459,6 +465,11 @@ entry:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
@@ -485,7 +496,6 @@ entry:
 ; faiss/optimized/index_factory.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -691,7 +701,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -731,7 +740,6 @@ entry:
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; openusd/optimized/reporter.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; php/optimized/dow.ll
 ; php/optimized/timelib.ll
 ; php/optimized/unixtime2tm.ll
 ; protobuf/optimized/parser.cc.ll
@@ -803,14 +811,14 @@ entry:
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 3600
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -822,7 +830,7 @@ entry:
 define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 2246822535
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }
@@ -852,12 +860,12 @@ entry:
 define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 1000
-  %4 = add nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 73 occurrences:
+; 72 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -902,7 +910,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; ozz-animation/optimized/skeleton.cc.ll
 ; php/optimized/ZendAccelerator.ll
-; php/optimized/dow.ll
 ; php/optimized/html.ll
 ; php/optimized/tm2unixtime.ll
 ; php/optimized/zend_hash.ll
@@ -935,7 +942,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 6
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -975,7 +982,7 @@ entry:
 define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 136657
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -991,7 +998,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -997805
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -1029,7 +1036,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 470296
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -1046,7 +1053,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 666643
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -1060,6 +1067,21 @@ entry:
   %3 = mul nuw nsw i64 %2, 544
   %4 = add nuw nsw i64 %3, %1
   %5 = add nuw i64 %4, %0
+  ret i64 %5
+}
+
+; 5 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, 3600
+  %4 = add nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 

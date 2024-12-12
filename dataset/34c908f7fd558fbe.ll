@@ -4,7 +4,7 @@
 ; ruby/optimized/cont.ll
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0) #0 {
+define i64 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = shl nsw i64 %1, 1
@@ -19,7 +19,7 @@ entry:
 ; opencv/optimized/caffe_importer.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i32 %0) #0 {
+define i64 @func00000000000000e6(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = shl nuw nsw i64 %1, 5
@@ -38,7 +38,7 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0) #0 {
+define i64 @func0000000000000066(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = shl nsw i64 %1, 6

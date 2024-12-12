@@ -1,5 +1,5 @@
 
-%struct.prefix_code_node.3245476 = type { i16, i8, [2 x i16] }
+%struct.prefix_code_node.3436900 = type { i16, i8, [2 x i16] }
 
 ; 40 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -55,10 +55,10 @@ entry:
 ; linux/optimized/pid.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000184(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
-  %3 = getelementptr %struct.prefix_code_node.3245476, ptr %2, i64 %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %3 = getelementptr %struct.prefix_code_node.3436900, ptr %2, i64 %0
   %4 = icmp ult ptr %3, %2
   ret i1 %4
 }
@@ -66,9 +66,9 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000188(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 24
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 24
   %3 = getelementptr i32, ptr %2, i64 %0
   %4 = icmp ugt ptr %3, %2
   ret i1 %4

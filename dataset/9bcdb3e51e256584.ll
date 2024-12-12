@@ -34,7 +34,7 @@ entry:
 define double @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = uitofp i64 %3 to double
   ret double %4
 }
@@ -45,7 +45,7 @@ entry:
 define double @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = uitofp i64 %3 to double
   ret double %4
 }

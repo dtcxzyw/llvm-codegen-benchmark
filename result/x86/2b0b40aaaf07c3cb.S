@@ -7,10 +7,9 @@ func000000000000003f:                   # @func000000000000003f
 	retq
 func0000000000000038:                   # @func0000000000000038
 	imull	%edx, %esi
-	movl	%esi, %eax
-	shll	$8, %eax
+	leal	(%rdi,%rsi), %eax
+	shll	$8, %esi
 	addl	%esi, %eax
-	addl	%edi, %eax
 	retq
 func0000000000000037:                   # @func0000000000000037
 	imull	%edx, %esi

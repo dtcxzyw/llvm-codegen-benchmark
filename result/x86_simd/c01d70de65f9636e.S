@@ -15,5 +15,5 @@ func0000000000000002:                   # @func0000000000000002
 	vxorps	%xmm4, %xmm4, %xmm4
 	vcmpltps	%zmm4, %zmm2, %k1
 	vsubps	%zmm1, %zmm3, %zmm1 {%k1}
-	vmulps	%zmm0, %zmm1, %zmm0
+	vmulps	%zmm1, %zmm0, %zmm0
 	retq

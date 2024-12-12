@@ -1,4 +1,4 @@
-func000000000000004e:                   # @func000000000000004e
+func000000000000008e:                   # @func000000000000008e
 	sext.w	a1, a1
 	bset	a2, zero, a2
 	sext.w	a2, a2

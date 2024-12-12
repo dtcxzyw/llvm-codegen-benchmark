@@ -21,7 +21,8 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/approximately_equals.ll
 ; luajit/optimized/lib_base.ll
 ; luajit/optimized/lib_base_dyn.ll
 ; ruby/optimized/bignum.ll

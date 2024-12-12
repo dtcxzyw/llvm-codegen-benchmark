@@ -12,7 +12,7 @@ define i8 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 64
   %3 = icmp eq i64 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = select i1 %4, i8 -128, i8 0
   ret i8 %5
 }

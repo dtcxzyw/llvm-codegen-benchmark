@@ -4,7 +4,7 @@
 	.long	359                             # 0x167
 .LCPI0_2:
 	.long	4294966936                      # 0xfffffe98
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -52,7 +52,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	4294962581                      # 0xffffed95
 .LCPI3_3:
 	.long	4294962580                      # 0xffffed94
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -62,24 +62,4 @@ func000000000000001a:                   # @func000000000000001a
 	vpcmpgtd	.LCPI3_1(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI3_2(%rip), %ymm0   # ymm0 = [4294962581,4294962581,4294962581,4294962581,4294962581,4294962581,4294962581,4294962581]
 	vpbroadcastd	.LCPI3_3(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4294962580,4294962580,4294962580,4294962580,4294962580,4294962580,4294962580,4294962580]
-	retq
-.LCPI4_0:
-	.long	4294967290                      # 0xfffffffa
-.LCPI4_1:
-	.long	4294967293                      # 0xfffffffd
-.LCPI4_2:
-	.long	7                               # 0x7
-.LCPI4_3:
-	.long	11                              # 0xb
-.LCPI4_4:
-	.long	8                               # 0x8
-func0000000000000014:                   # @func0000000000000014
-	vpsllw	$15, %xmm1, %xmm1
-	vpmovw2m	%xmm1, %k1
-	vpbroadcastd	.LCPI4_0(%rip), %ymm1   # ymm1 = [4294967290,4294967290,4294967290,4294967290,4294967290,4294967290,4294967290,4294967290]
-	vpbroadcastd	.LCPI4_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4294967293,4294967293,4294967293,4294967293,4294967293,4294967293,4294967293,4294967293]
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpltud	.LCPI4_2(%rip){1to8}, %ymm0, %k1
-	vpbroadcastd	.LCPI4_3(%rip), %ymm0   # ymm0 = [11,11,11,11,11,11,11,11]
-	vpbroadcastd	.LCPI4_4(%rip), %ymm0 {%k1} # ymm0 {%k1} = [8,8,8,8,8,8,8,8]
 	retq

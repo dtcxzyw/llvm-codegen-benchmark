@@ -1,8 +1,10 @@
 
-; 125 occurrences:
+; 127 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; delta-rs/optimized/3s3f23ex69abms10.ll
@@ -133,7 +135,7 @@ entry:
   ret i1 %2
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; openssl/optimized/libcrypto-lib-scalar.ll
@@ -145,6 +147,9 @@ entry:
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i128 %0) #0 {
 entry:

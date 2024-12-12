@@ -1,4 +1,7 @@
 
+%class.itableOffsetEntry.2747751 = type <{ ptr, i32, [4 x i8] }>
+%struct.ConvexVolume.3108435 = type { [36 x float], float, float, i32, i32 }
+
 ; 3 occurrences:
 ; linux/optimized/intel_bios.ll
 ; openblas/optimized/dtgevc.c.ll
@@ -19,29 +22,25 @@ entry:
 ; openjdk/optimized/mlib_ImageAffine_BC_F32.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func000000000000003b(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -8
-  %4 = getelementptr nusw float, ptr %3, i64 %0
+  %4 = getelementptr nusw nuw float, ptr %3, i64 %0
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 8
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 
-; 7 occurrences:
+; 3 occurrences:
 ; icu/optimized/unames.ll
-; meshlab/optimized/filter_ssynth.cpp.ll
-; meshlab/optimized/io_collada.cpp.ll
-; meshlab/optimized/io_x3d.cpp.ll
 ; openjdk/optimized/ciStreams.ll
-; openjdk/optimized/klassVtable.ll
 ; openjdk/optimized/zip_util.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a0(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000000f0(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   %5 = sext i32 %1 to i64
   %6 = getelementptr i32, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 16
@@ -51,17 +50,17 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000082(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000000c3(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 304
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 304
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = sext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 2
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 2
   ret ptr %7
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/decorate_raster_proj.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
@@ -79,22 +78,52 @@ entry:
 ; meshlab/optimized/render_raster.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; openjdk/optimized/instanceRefKlass.ll
-; recastnavigation/optimized/ConvexVolumeTool.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000000eb(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 464
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 464
   %4 = getelementptr nusw i64, ptr %3, i64 %0
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i64, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 4
   ret ptr %7
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; meshlab/optimized/filter_ssynth.cpp.ll
+; meshlab/optimized/io_collada.cpp.ll
+; meshlab/optimized/io_x3d.cpp.ll
+; openjdk/optimized/klassVtable.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000e0(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 464
+  %4 = getelementptr nusw i64, ptr %3, i64 %0
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr %class.itableOffsetEntry.2747751, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 16
+  ret ptr %7
+}
+
+; 1 occurrences:
+; recastnavigation/optimized/ConvexVolumeTool.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fb(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 9348
+  %4 = getelementptr nusw nuw %struct.ConvexVolume.3108435, ptr %3, i64 %0
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr nusw float, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+; 4 occurrences:
 ; gromacs/optimized/gmx_arpack.cpp.ll
-; lua/optimized/lobject.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000a8(i64 %0, i32 %1, ptr %2) #0 {
 entry:
@@ -109,9 +138,9 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000080(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000000c0(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 20
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 20
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = sext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
@@ -122,28 +151,39 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cfg.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func0000000000000003(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 72
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = sext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 8
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 
-; 3 occurrences:
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
+; 1 occurrences:
+; lua/optimized/lobject.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000000e8(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %2, i64 -8
-  %4 = getelementptr nusw double, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
   %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw double, ptr %4, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 8
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 1
+  ret ptr %7
+}
+
+; 1 occurrences:
+; opencv/optimized/brisk.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ea(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 -1
   ret ptr %7
 }
 

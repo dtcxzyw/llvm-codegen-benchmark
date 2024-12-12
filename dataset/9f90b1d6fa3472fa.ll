@@ -16,7 +16,7 @@
 ; velox/optimized/TypeParser.yy.cc.ll
 ; verilator/optimized/V3ParseGrammar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = select i1 %1, i32 %3, i32 0
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 8, %2
   %4 = select i1 %1, i32 %3, i32 8
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000037(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000067(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 6, %2
   %4 = select i1 %1, i32 %3, i32 5
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = select i1 %1, i32 %3, i32 1

@@ -21,6 +21,12 @@ func0000000000000006:                   # @func0000000000000006
 	notb	%sil
 	andb	%sil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	%edi, %edx
+	setb	%al
+	notb	%sil
+	andb	%sil, %al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	cmpl	%edi, %edx
 	setg	%al
@@ -28,6 +34,12 @@ func000000000000000a:                   # @func000000000000000a
 	andb	%sil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
+	cmpl	%edi, %edx
+	seta	%al
+	notb	%sil
+	andb	%sil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
 	cmpl	%edi, %edx
 	seta	%al
 	notb	%sil

@@ -1,5 +1,6 @@
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/unicodeobject.ll
@@ -11,7 +12,7 @@
 ; openjdk/optimized/salibelf.ll
 ; syn/optimized/ofvfd67uyaewjlc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = icmp eq i64 %1, 8

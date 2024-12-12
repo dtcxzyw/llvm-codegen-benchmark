@@ -1,5 +1,5 @@
 
-; 296 occurrences:
+; 297 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
@@ -207,6 +207,7 @@
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-f_impl64.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
+; php/optimized/fastcgi.ll
 ; php/optimized/spl_iterators.ll
 ; postgres/optimized/mcv.ll
 ; quickjs/optimized/quickjs.ll
@@ -300,12 +301,12 @@
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 72340172838076673
-  %4 = add nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 102 occurrences:
+; 100 occurrences:
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/rawread.cpp.ll
@@ -341,7 +342,6 @@ entry:
 ; lightgbm/optimized/dataset.cpp.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/head64.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/memalloc.ll
@@ -386,7 +386,6 @@ entry:
 ; openusd/optimized/testHdSceneIndex.cpp.ll
 ; openusd/optimized/xformCache.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
-; php/optimized/fastcgi.ll
 ; php/optimized/php_date.ll
 ; php/optimized/zend_persist_calc.ll
 ; postgres/optimized/brin.ll
@@ -412,16 +411,16 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
 ; 25 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmDependsC.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
-; darktable/optimized/DeflateDecompressor.cpp.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_distr.cpp.ll
 ; folly/optimized/ManualExecutor.cpp.ll
@@ -447,7 +446,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -473,8 +472,8 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2031616
-  %4 = add nuw nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -491,10 +490,12 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -517,7 +518,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -528,8 +529,8 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65535
-  %4 = add nuw i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %4 = add nuw i64 %1, %3
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -539,7 +540,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -550,8 +551,8 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
-  %4 = add i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -561,8 +562,8 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 63
-  %4 = add nuw nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

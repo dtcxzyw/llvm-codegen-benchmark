@@ -6,7 +6,7 @@
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -23,7 +23,7 @@ entry:
 ; qemu/optimized/linux-user_syscall.c.ll
 ; z3/optimized/sat_lut_finder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0

@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/mttk.cpp.ll
 ; openjdk/optimized/compilationPolicy.ll

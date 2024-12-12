@@ -1,9 +1,8 @@
 
-; 24 occurrences:
-; clamav/optimized/crc.cpp.ll
+; 23 occurrences:
 ; eastl/optimized/EAMemory.cpp.ll
 ; libdeflate/optimized/crc32.c.ll
-; linux/optimized/memweight.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -25,7 +24,7 @@
 ; postgres/optimized/pg_crc32c_sb8_srv.ll
 ; redis/optimized/bitops.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, ptr %1) #0 {
+define i1 @func000000000000018c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 7
@@ -44,7 +43,7 @@ entry:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000028(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 3
@@ -67,7 +66,7 @@ entry:
 ; openusd/optimized/statistics.cpp.ll
 ; openusd/optimized/testSdfPathTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, ptr %1) #0 {
+define i1 @func000000000000002c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 1
@@ -80,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/persistent_memory_allocator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000081(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 7
@@ -93,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hugetlb.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 1
@@ -107,7 +106,7 @@ entry:
 ; postgres/optimized/dynahash.ll
 ; postgres/optimized/jsonfuncs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000024(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 7

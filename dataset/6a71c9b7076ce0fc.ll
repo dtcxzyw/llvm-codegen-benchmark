@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
@@ -22,7 +22,6 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-blip.c.ll
 ; wireshark/optimized/packet-infiniband.c.ll
-; wireshark/optimized/packet-stun.c.ll
 ; zxing/optimized/AZHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {

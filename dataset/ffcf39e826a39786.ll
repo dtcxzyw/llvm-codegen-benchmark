@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/area.ll
 ; linux/optimized/uncore_nhmex.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; node/optimized/libnode.node_sockaddr.ll

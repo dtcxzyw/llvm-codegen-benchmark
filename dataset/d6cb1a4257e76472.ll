@@ -48,18 +48,4 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, i32 %1, ptr %2) #0 {
-entry:
-  %3 = sext i32 %1 to i64
-  %4 = getelementptr double, ptr %2, i64 %3
-  %5 = getelementptr nusw double, ptr %4, i64 %0
-  %6 = getelementptr double, ptr %5, i64 %3
-  ret ptr %6
-}
-
 attributes #0 = { nounwind }

@@ -56,16 +56,15 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/ConstantRange.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %0, -1
   ret i1 %2
@@ -76,7 +75,7 @@ entry:
 ; llvm/optimized/DwarfUnit.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, %1
   %3 = icmp eq i64 %2, 1
@@ -86,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, %1
   %3 = icmp ne i64 %2, 1
@@ -97,7 +96,7 @@ entry:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, %1
   %3 = icmp slt i64 %2, 65

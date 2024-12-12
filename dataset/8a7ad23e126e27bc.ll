@@ -1,9 +1,8 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; minetest/optimized/mapgen.cpp.ll
-; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = sub nsw i32 %0, %2
@@ -14,17 +13,17 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/multiVis.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 4
   %3 = sub nsw i32 %0, %2
@@ -35,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaFalse.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = sub nsw i32 %0, %2
@@ -60,17 +59,16 @@ entry:
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 19
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
 ; 11 occurrences:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/filter.ll
-; linux/optimized/gso.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/ip_tunnel_core.ll
 ; linux/optimized/netdev.ll
@@ -79,10 +77,11 @@ entry:
 ; linux/optimized/skbuff.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/tx.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
-  %2 = ashr i32 %1, 16
+  %2 = ashr i32 %1, 9
   %3 = sub nsw i32 %0, %2
   %4 = icmp eq i32 %3, 1
   ret i1 %4
@@ -97,7 +96,7 @@ entry:
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/xfrm_input.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 16
   %3 = sub nsw i32 %0, %2
@@ -108,10 +107,10 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 

@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 6 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/rjit_c.ll

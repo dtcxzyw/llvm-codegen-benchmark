@@ -17,7 +17,6 @@
 ; gromacs/optimized/wall.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/jidctflt.c.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/principledthin.cpp.ll
@@ -25,6 +24,7 @@
 ; mitsuba3/optimized/sphere.cpp.ll
 ; ncnn/optimized/gru.cpp.ll
 ; nuklear/optimized/unity.c.ll
+; oiio/optimized/environment.cpp.ll
 ; opencv/optimized/fast_icp.cpp.ll
 ; opencv/optimized/tsdf_functions.cpp.ll
 ; openjdk/optimized/jidctflt.ll
@@ -41,7 +41,7 @@
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fneg float %4
   ret float %5
 }

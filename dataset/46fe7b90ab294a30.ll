@@ -11,7 +11,7 @@ entry:
   %2 = lshr i16 %1, 6
   %3 = and i16 %2, 4
   %4 = zext nneg i16 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -28,11 +28,11 @@ entry:
   %2 = lshr i16 %1, 4
   %3 = and i16 %2, 15
   %4 = zext nneg i16 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; grpc/optimized/call.cc.ll
 ; grpc/optimized/writing.cc.ll
 ; icu/optimized/ucnv2022.ll
@@ -40,7 +40,6 @@ entry:
 ; icu/optimized/usprep.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; postgres/optimized/trigger.ll
 ; wireshark/optimized/packet-afp.c.ll
 ; wireshark/optimized/packet-rmt-lct.c.ll
 ; Function Attrs: nounwind
@@ -49,7 +48,7 @@ entry:
   %2 = lshr i16 %1, 9
   %3 = and i16 %2, 4
   %4 = zext nneg i16 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -26,6 +26,12 @@ func0000000000000011:                   # @func0000000000000011
 	addq	%rdi, %rax
 	imulq	$365, %rax, %rax                # imm = 0x16D
 	retq
+func0000000000000022:                   # @func0000000000000022
+	leaq	(%rsi,%rsi,4), %rax
+	leaq	(%rdi,%rax,2), %rax
+	addq	%rax, %rax
+	leaq	(%rax,%rax,4), %rax
+	retq
 func000000000000003c:                   # @func000000000000003c
 	leaq	(%rsi,%rsi,2), %rax
 	addq	%rdi, %rax

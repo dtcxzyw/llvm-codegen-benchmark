@@ -72,11 +72,6 @@ func0000000000000061:                   # @func0000000000000061
 	shrq	$4, %rax
 	incl	%eax
 	retq
-func000000000000006a:                   # @func000000000000006a
-	leaq	8(%rdi), %rax
-	shrq	%rax
-	addl	$3, %eax
-	retq
 func0000000000000030:                   # @func0000000000000030
 	movabsq	$17179869176, %rax              # imm = 0x3FFFFFFF8
 	addq	%rdi, %rax

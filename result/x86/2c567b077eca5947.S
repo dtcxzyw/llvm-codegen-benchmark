@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
-	andb	$112, %sil
-	cmpb	$32, %sil
-	setne	%al
+	movl	%esi, %eax
+	andb	$2, %al
+	shrb	%al
 	orb	%dil, %al
 	retq

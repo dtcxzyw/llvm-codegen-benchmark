@@ -5,7 +5,7 @@ func0000000000000018:                   # @func0000000000000018
 	andb	%dil, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
-	xorb	$1, %dil
+	notb	%dil
 	cmpq	%rdx, %rsi
 	setne	%al
 	andb	%dil, %al

@@ -1,8 +1,9 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/listobject.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
@@ -21,12 +22,11 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/intel_guc_submission.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -21,7 +21,7 @@ define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %.not = icmp eq i64 %1, -6
   %2 = select i1 %.not, i64 0, i64 4
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
@@ -42,12 +42,12 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/stringio.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000012(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000052(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = icmp ult i64 %2, 9
+  %3 = icmp samesign ult i64 %2, 9
   %4 = select i1 %3, i64 3, i64 6
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 

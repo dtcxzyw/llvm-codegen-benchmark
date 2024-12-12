@@ -30,7 +30,8 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; postgres/optimized/xact.ll
 ; wireshark/optimized/expert_info_dialog.cpp.ll

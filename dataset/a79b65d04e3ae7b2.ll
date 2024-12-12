@@ -24,7 +24,7 @@
 ; wireshark/optimized/packet-sna.c.ll
 ; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, ptr %1) #0 {
+define i1 @func000000000000018c(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne i8 %0, 46
@@ -32,7 +32,7 @@ entry:
   ret i1 %4
 }
 
-; 64 occurrences:
+; 73 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; arrow/optimized/type.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
@@ -45,13 +45,13 @@ entry:
 ; graphviz/optimized/gvplugin.c.ll
 ; influxdb-rs/optimized/55ksfxb2g8gj9lwh.ll
 ; lief/optimized/ssl_msg.c.ll
-; linux/optimized/evregion.ll
 ; linux/optimized/svcsock.ll
 ; linux/optimized/tick-broadcast.ll
 ; linux/optimized/xprtsock.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AlignmentFromAssumptions.cpp.ll
+; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
@@ -64,6 +64,7 @@ entry:
 ; llvm/optimized/SimpleSValBuilder.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
+; lvgl/optimized/lv_group.ll
 ; meilisearch-rs/optimized/134vr9xz294dqnvo.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
@@ -97,8 +98,16 @@ entry:
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/packet-geneve.c.ll
 ; wireshark/optimized/packet-scsi.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
+; zed-rs/optimized/eb0f70f7qg0lwhfftqxruwlu9.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, ptr %1) #0 {
+define i1 @func000000000000002c(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ne i8 %0, 13
@@ -106,7 +115,7 @@ entry:
   ret i1 %4
 }
 
-; 83 occurrences:
+; 81 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/cordz_test.cc.ll
@@ -132,15 +141,12 @@ entry:
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
-; folly/optimized/Futex.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; grpc/optimized/error.cc.ll
 ; grpc/optimized/status_helper.cc.ll
 ; grpc/optimized/subchannel.cc.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/pkgdata.ll
-; linux/optimized/virtio_net.ll
 ; llvm/optimized/Mangler.cpp.ll
 ; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
@@ -188,10 +194,11 @@ entry:
 ; wasmtime-rs/optimized/50oljwux3amwt8rq.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-f5ethtrailer.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-socketcan.c.ll
+; zed-rs/optimized/4dkbhv0nvjue8pd3p4zxvl2rc.ll
+; zed-rs/optimized/8bdv6qixt9qul7ot3pqkuv6y0.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq i8 %0, 0
@@ -212,7 +219,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-gvcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq i8 %0, 0
@@ -220,11 +227,13 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; hermes/optimized/TypeInference.cpp.ll
+; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
 ; llvm/optimized/TGParser.cpp.ll
-; llvm/optimized/TokenAnnotator.cpp.ll
+; llvm/optimized/UniformityAnalysis.cpp.ll
 ; php/optimized/zend_jit.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
@@ -239,7 +248,7 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000024(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ult i8 %0, -2
@@ -247,19 +256,31 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 4 occurrences:
+; llvm/optimized/TokenAnnotator.cpp.ll
+; yalantinglibs/optimized/data_gen.cpp.ll
+; yalantinglibs/optimized/file_server.cpp.ll
+; yalantinglibs/optimized/server.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i8 %0, ptr %1) #0 {
+entry:
+  %2 = icmp eq ptr %1, null
+  %3 = icmp samesign ult i8 %0, 2
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 8 occurrences:
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; eastl/optimized/TestIntrusiveSDList.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, ptr %1) #0 {
+define i1 @func000000000000002a(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp sgt i8 %0, -1
@@ -270,7 +291,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000028(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ugt i8 %0, 21
@@ -281,7 +302,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ppp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000026(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp slt i8 %0, 0
@@ -292,7 +313,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i8 %0, ptr %1) #0 {
+define i1 @func000000000000002b(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp sgt i8 %0, -1

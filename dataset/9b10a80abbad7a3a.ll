@@ -1,10 +1,11 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/within_sph_geo.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cb(double %0, i64 %1) #0 {
+define i1 @func00000000000006cb(double %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 15
   %3 = fcmp ule double %0, 1.000000e-08
@@ -16,7 +17,7 @@ entry:
 ; openusd/optimized/sparseValueWriter.cpp.ll
 ; pocketpy/optimized/linalg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c2(double %0, i64 %1) #0 {
+define i1 @func00000000000006c2(double %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 2
   %3 = fcmp olt double %0, 0x3D719799812DEA11

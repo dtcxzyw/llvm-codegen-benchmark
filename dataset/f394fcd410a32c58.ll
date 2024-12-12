@@ -81,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LLParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = icmp eq i32 %2, 18
@@ -94,7 +94,7 @@ entry:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
   %3 = icmp ne i32 %2, 0

@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/partition.cpp.ll
-; openmpi/optimized/vprotocol_pessimist_sender_based.ll
 ; postgres/optimized/syslogger.ll
 ; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind

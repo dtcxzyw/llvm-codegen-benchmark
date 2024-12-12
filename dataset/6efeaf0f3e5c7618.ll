@@ -7,7 +7,7 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; redis/optimized/dict.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = shl nuw i64 1, %0
@@ -21,7 +21,7 @@ entry:
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
 ; llvm/optimized/FunctionComparator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = shl nuw i64 1, %0
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 2, %1
   %3 = shl nuw i64 1, %0

@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 81 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -40,7 +40,6 @@
 ; llvm/optimized/MveEmitter.cpp.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
 ; llvm/optimized/ODRHash.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll

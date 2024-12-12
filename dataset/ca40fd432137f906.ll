@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 59 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
@@ -28,10 +28,9 @@
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTUnit.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
-; luajit/optimized/lj_prng.ll
-; luajit/optimized/lj_prng_dyn.ll
 ; node/optimized/libnode.node_serdes.ll
 ; oiio/optimized/ddsinput.cpp.ll
+; openspiel/optimized/2048.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; protobuf/optimized/writer.cc.ll
@@ -69,12 +68,11 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/pyhash.ll
 ; git/optimized/ewah_bitmap.ll
 ; linux/optimized/setup-bus.ll
-; openspiel/optimized/2048.cc.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

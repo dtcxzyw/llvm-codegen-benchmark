@@ -1,92 +1,4 @@
 
-; 77 occurrences:
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; gromacs/optimized/kernel_ref_prune.cpp.ll
-; gromacs/optimized/pme.cpp.ll
-; gromacs/optimized/pme_redistribute.cpp.ll
-; gromacs/optimized/pme_spread.cpp.ll
-; gromacs/optimized/simd_prune_kernel.cpp.ll
-; llama.cpp/optimized/llama.cpp.ll
-; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/cmesh.cpp.ll
-; meshlab/optimized/decorate_base.cpp.ll
-; meshlab/optimized/dirt_utils.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_point.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/eigen_mesh_conversions.cpp.ll
-; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
-; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_dirt.cpp.ll
-; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
-; meshlab/optimized/filter_geodesic.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_img_patch_param.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_layer.cpp.ll
-; meshlab/optimized/filter_measure.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/filter_qhull.cpp.ll
-; meshlab/optimized/filter_sampling.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; meshlab/optimized/filter_sdfgpu.cpp.ll
-; meshlab/optimized/filter_ssynth.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/filter_texture_defragmentation.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
-; meshlab/optimized/filter_unsharp.cpp.ll
-; meshlab/optimized/filter_voronoi.cpp.ll
-; meshlab/optimized/function_set.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/io_bre.cpp.ll
-; meshlab/optimized/io_collada.cpp.ll
-; meshlab/optimized/io_ctm.cpp.ll
-; meshlab/optimized/io_e57.cpp.ll
-; meshlab/optimized/io_expe.cpp.ll
-; meshlab/optimized/io_json.cpp.ll
-; meshlab/optimized/io_pdb.cpp.ll
-; meshlab/optimized/io_tri.cpp.ll
-; meshlab/optimized/io_txt.cpp.ll
-; meshlab/optimized/io_u3d.cpp.ll
-; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
-; meshlab/optimized/load_save.cpp.ll
-; meshlab/optimized/mainwindow_RunTime.cpp.ll
-; meshlab/optimized/mesh_model.cpp.ll
-; meshlab/optimized/mesh_model_state.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/meshio.cpp.ll
-; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
-; meshlab/optimized/mlsplugin.cpp.ll
-; meshlab/optimized/qhull_tools.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
-; openspiel/optimized/havannah.cc.ll
-; openspiel/optimized/y.cc.ll
-; openusd/optimized/level.cpp.ll
-; openusd/optimized/refinement.cpp.ll
-; openusd/optimized/refinerFactory.cpp.ll
-; openusd/optimized/topologyDescriptor.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000060(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = lshr exact i64 %2, 2
-  %4 = sub i64 %1, %3
-  %5 = shl i64 %4, 2
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
 ; 177 occurrences:
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/table_builder.cc.ll
@@ -100,6 +12,7 @@ entry:
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/range.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_jacobian_writer.cc.ll
@@ -155,7 +68,6 @@ entry:
 ; luau/optimized/IrValueLocationTracking.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.ARM64.cc.ll
@@ -268,9 +180,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 2
+  %3 = ashr exact i64 %2, 4
   %4 = sub nuw i64 %1, %3
-  %5 = shl nuw i64 %4, 2
+  %5 = shl nuw i64 %4, 4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -356,6 +268,91 @@ entry:
   %3 = ashr exact i64 %2, 1
   %4 = sub nuw nsw i64 %1, %3
   %5 = shl nuw i64 %4, 1
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 74 occurrences:
+; g2o/optimized/slam2d_linear.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; gromacs/optimized/kernel_ref_prune.cpp.ll
+; gromacs/optimized/pme.cpp.ll
+; gromacs/optimized/pme_redistribute.cpp.ll
+; gromacs/optimized/pme_spread.cpp.ll
+; gromacs/optimized/simd_prune_kernel.cpp.ll
+; llama.cpp/optimized/llama.cpp.ll
+; meshlab/optimized/baseio.cpp.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/cmesh.cpp.ll
+; meshlab/optimized/decorate_base.cpp.ll
+; meshlab/optimized/dirt_utils.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_point.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/eigen_mesh_conversions.cpp.ll
+; meshlab/optimized/filter_ao.cpp.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_createiso.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_dirt.cpp.ll
+; meshlab/optimized/filter_fractal.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_img_patch_param.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_layer.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_qhull.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; meshlab/optimized/filter_sdfgpu.cpp.ll
+; meshlab/optimized/filter_ssynth.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_texture_defragmentation.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/function_set.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshlab/optimized/io_bre.cpp.ll
+; meshlab/optimized/io_collada.cpp.ll
+; meshlab/optimized/io_ctm.cpp.ll
+; meshlab/optimized/io_e57.cpp.ll
+; meshlab/optimized/io_expe.cpp.ll
+; meshlab/optimized/io_json.cpp.ll
+; meshlab/optimized/io_pdb.cpp.ll
+; meshlab/optimized/io_tri.cpp.ll
+; meshlab/optimized/io_txt.cpp.ll
+; meshlab/optimized/io_u3d.cpp.ll
+; meshlab/optimized/io_x3d.cpp.ll
+; meshlab/optimized/load_save.cpp.ll
+; meshlab/optimized/mainwindow_RunTime.cpp.ll
+; meshlab/optimized/mesh_model.cpp.ll
+; meshlab/optimized/mesh_model_state.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshio.cpp.ll
+; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; meshlab/optimized/qhull_tools.cpp.ll
+; openspiel/optimized/havannah.cc.ll
+; openspiel/optimized/y.cc.ll
+; openusd/optimized/level.cpp.ll
+; openusd/optimized/refinement.cpp.ll
+; openusd/optimized/refinerFactory.cpp.ll
+; openusd/optimized/topologyDescriptor.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000060(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr exact i64 %2, 2
+  %4 = sub i64 %1, %3
+  %5 = shl i64 %4, 2
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }

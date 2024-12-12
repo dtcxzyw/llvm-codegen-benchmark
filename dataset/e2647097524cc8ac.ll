@@ -12,6 +12,30 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = ashr i32 %2, 1
+  %4 = add nsw i32 %1, 1
+  %5 = add nsw i32 %4, %3
+  %6 = add i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_slider.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = ashr i32 %2, 1
+  %4 = add i32 %1, 2
+  %5 = add i32 %4, %3
+  %6 = add nsw i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
@@ -55,7 +79,7 @@ entry:
   %3 = add nsw i32 %2, 4
   %4 = ashr i32 %1, 16
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

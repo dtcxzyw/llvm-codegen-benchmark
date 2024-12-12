@@ -11,10 +11,12 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; openusd/optimized/json.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -47,7 +49,7 @@ define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %1
   %4 = shl i64 %3, 44
-  %5 = add i64 %4, %2
+  %5 = add i64 %2, %4
   %6 = and i64 %5, -17592186044416
   ret i64 %6
 }

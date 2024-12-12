@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; freetype/optimized/sfnt.c.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
@@ -25,7 +26,9 @@ entry:
   ret i64 %3
 }
 
-; 465 occurrences:
+; 470 occurrences:
+; abc/optimized/abcOrchestration.c.ll
+; abc/optimized/abcResub.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -33,8 +36,10 @@ entry:
 ; flac/optimized/fixed_intrin_ssse3.c.ll
 ; icu/optimized/unames.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; linux/optimized/ds.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; luau/optimized/OptimizeConstProp.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/Ushort4444Argb.ll
@@ -488,14 +493,15 @@ entry:
 ; openusd/optimized/xformCommonAPI.cpp.ll
 ; openusd/optimized/xformOp.cpp.ll
 ; openusd/optimized/xformable.cpp.ll
+; qemu/optimized/hw_audio_ac97.c.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 12
-  %2 = mul nuw nsw i32 %1, 17
+  %1 = lshr i32 %0, 4
+  %2 = mul nuw nsw i32 %1, 24
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }

@@ -1,4 +1,4 @@
-func0000000000000141:                   # @func0000000000000141
+func000000000000048c:                   # @func000000000000048c
 	srai	a2, a2, 3
 	lui	a3, 699051
 	addiw	a3, a3, -1365
@@ -6,10 +6,10 @@ func0000000000000141:                   # @func0000000000000141
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	sltu	a1, a1, a2
-	seqz	a0, a0
-	andn	a0, a0, a1
+	snez	a0, a0
+	or	a0, a0, a1
 	ret
-func000000000000014c:                   # @func000000000000014c
+func0000000000000481:                   # @func0000000000000481
 	srai	a2, a2, 3
 	lui	a3, 838861
 	addiw	a3, a3, -819
@@ -17,6 +17,6 @@ func000000000000014c:                   # @func000000000000014c
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	sltu	a1, a1, a2
-	snez	a0, a0
-	or	a0, a0, a1
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret

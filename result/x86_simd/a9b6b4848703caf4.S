@@ -14,7 +14,7 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	32                              # 0x20
 	.byte	16                              # 0x10
 	.byte	8                               # 0x8
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpbroadcastq	.LCPI1_0(%rip), %xmm2   # xmm2 = [0,0,0,128,64,32,16,8,0,0,0,128,64,32,16,8]
 	vgf2p8affineqb	$0, %xmm2, %xmm1, %xmm1
 	vgf2p8affineqb	$0, %xmm2, %xmm0, %xmm0

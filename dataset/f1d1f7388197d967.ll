@@ -1,11 +1,12 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; crow/optimized/example_session.cpp.ll
@@ -52,7 +53,7 @@
 define i1 @func0000000000000008(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = urem i32 %0, %1
   %6 = icmp ugt i32 %5, %4
   ret i1 %6
@@ -100,12 +101,24 @@ entry:
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
 ; vcpkg/optimized/uuid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = urem i32 %0, %1
   %6 = icmp ugt i32 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; vcpkg/optimized/commands.ci.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000398(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = mul i32 %1, %3
+  %5 = urem i32 %0, %1
+  %6 = icmp samesign ugt i32 %5, %4
   ret i1 %6
 }
 
@@ -114,10 +127,10 @@ entry:
 ; openspiel/optimized/garnet.cc.ll
 ; vcpkg/optimized/commands.ci.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c8(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000388(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = urem i32 %0, %1
   %6 = icmp ugt i32 %5, %4
   ret i1 %6
@@ -132,12 +145,12 @@ entry:
 ; openspiel/optimized/tabular_sarsa.cc.ll
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000198(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = urem i32 %0, %1
-  %6 = icmp ugt i32 %5, %4
+  %6 = icmp samesign ugt i32 %5, %4
   ret i1 %6
 }
 

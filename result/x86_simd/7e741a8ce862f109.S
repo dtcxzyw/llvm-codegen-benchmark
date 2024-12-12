@@ -7,6 +7,6 @@ func0000000000000000:                   # @func0000000000000000
 	vbroadcastsd	.LCPI0_0(%rip), %zmm4   # zmm4 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
 	vxorpd	%zmm4, %zmm2, %zmm2
 	vxorpd	%zmm4, %zmm3, %zmm3
-	vmulpd	%zmm0, %zmm3, %zmm0
-	vmulpd	%zmm1, %zmm2, %zmm1
+	vmulpd	%zmm3, %zmm0, %zmm0
+	vmulpd	%zmm2, %zmm1, %zmm1
 	retq

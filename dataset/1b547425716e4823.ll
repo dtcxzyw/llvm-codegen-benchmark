@@ -255,10 +255,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; hyperscan/optimized/fdr_engine_description.cpp.ll
-; nuttx/optimized/lib_ffsl.c.ll
-; nuttx/optimized/lib_ffsll.c.ll
 ; slurm/optimized/common.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i1 %0, i64 %1) #0 {

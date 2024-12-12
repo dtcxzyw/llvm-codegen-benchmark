@@ -1,7 +1,5 @@
 
-; 17 occurrences:
-; brotli/optimized/brotli_bit_stream.c.ll
-; brotli/optimized/histogram.c.ll
+; 15 occurrences:
 ; lief/optimized/psa_crypto.c.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
@@ -18,10 +16,10 @@
 ; quantlib/optimized/thailand.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000082(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, 17
-  %4 = or i1 %3, %2
+  %4 = or i1 %2, %3
   %5 = icmp eq i32 %1, 13
   %6 = or i1 %5, %4
   %7 = and i1 %6, %0

@@ -1,16 +1,17 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
+; graphviz/optimized/graph_generator.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000042c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = icmp ne i32 %0, 3
   %5 = and i1 %4, %3
   ret i1 %5
@@ -19,10 +20,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = icmp ne i32 %0, -1
   %5 = and i1 %4, %3
   ret i1 %5
@@ -31,10 +32,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/State.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = icmp ne i32 %0, 0
   %5 = and i1 %4, %3
   ret i1 %5
@@ -43,10 +44,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-vcdu.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -22
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = icmp sgt i32 %0, 3
   %5 = and i1 %3, %4
   ret i1 %5
@@ -55,16 +56,16 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/power_supply_core.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000058c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   %4 = icmp ne i32 %0, 0
   %5 = and i1 %4, %3
   ret i1 %5
 }
 
-; 125 occurrences:
+; 124 occurrences:
 ; z3/optimized/ackr_bound_probe.cpp.ll
 ; z3/optimized/api_ast_map.cpp.ll
 ; z3/optimized/api_context.cpp.ll
@@ -85,7 +86,6 @@ entry:
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
@@ -191,10 +191,10 @@ entry:
 ; z3/optimized/theory_utvpi.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = icmp ugt i32 %0, 64
   %5 = and i1 %4, %3
   ret i1 %5
@@ -205,10 +205,10 @@ entry:
 ; opencv/optimized/global_histogram_binarizer.cpp.ll
 ; opencv/optimized/synthetic_seq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = icmp sgt i32 %0, -2
   %5 = and i1 %4, %3
   ret i1 %5

@@ -1,9 +1,8 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; cmake/optimized/byte_order.c.ll
 ; eastl/optimized/EAMemory.cpp.ll
 ; linux/optimized/drm_cache.ll
-; linux/optimized/i915_memcpy.ll
 ; linux/optimized/if.ll
 ; linux/optimized/lskcipher.ll
 ; oiio/optimized/texturesys.cpp.ll

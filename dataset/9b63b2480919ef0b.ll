@@ -30,7 +30,8 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; grpc/optimized/timer_generic.cc.ll
 ; libevent/optimized/evmap.c.ll
 ; linux/optimized/dm-table.ll

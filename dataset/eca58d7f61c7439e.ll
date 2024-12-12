@@ -10,7 +10,7 @@
 ; spike/optimized/vssrl_vv.ll
 ; spike/optimized/vssrl_vx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, %1
   %4 = icmp eq i64 %3, 0
@@ -25,7 +25,7 @@ entry:
 ; qemu/optimized/block_file-posix.c.ll
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0

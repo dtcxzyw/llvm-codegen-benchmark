@@ -1,8 +1,9 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; freetype/optimized/psaux.c.ll
 ; hyperscan/optimized/state_compress.c.ll
+; lvgl/optimized/lv_math.ll
 ; openjdk/optimized/synchronizer.ll
 ; openmpi/optimized/mpl_str.ll
 ; openssl/optimized/libcrypto-lib-property.ll

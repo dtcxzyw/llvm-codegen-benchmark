@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 78 occurrences:
 ; clamav/optimized/js-norm.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
@@ -8,7 +8,6 @@
 ; darktable/optimized/amaze.cc.ll
 ; hdf5/optimized/H5B2hdr.c.ll
 ; hdf5/optimized/H5B2int.c.ll
-; jq/optimized/unicode_fold3_key.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; libquic/optimized/pkcs8.c.ll
@@ -31,7 +30,6 @@
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; oniguruma/optimized/unicode_fold3_key.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/brightedges.cpp.ll
@@ -84,7 +82,7 @@
 define i32 @func000000000000000f(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -97,7 +95,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext nneg i8 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
@@ -113,7 +111,7 @@ entry:
 define i32 @func000000000000002f(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -164,7 +162,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
@@ -185,7 +183,7 @@ entry:
 define i32 @func000000000000003f(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext nneg i8 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -201,7 +199,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext nneg i8 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -216,7 +214,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -228,7 +226,7 @@ entry:
 define i32 @func0000000000000038(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = zext nneg i8 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
@@ -240,7 +238,7 @@ entry:
 define i32 @func0000000000000031(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext nneg i8 %1 to i32
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -253,7 +251,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext nneg i8 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
@@ -266,7 +264,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext nneg i8 %1 to i32
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -278,7 +276,7 @@ entry:
 define i32 @func0000000000000025(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -290,7 +288,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext nneg i8 %1 to i32
   %6 = add nsw i32 %4, %5
   ret i32 %6

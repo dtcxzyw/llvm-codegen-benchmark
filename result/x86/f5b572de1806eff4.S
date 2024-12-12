@@ -8,21 +8,21 @@ func0000000000000006:                   # @func0000000000000006
 	orb	%dil, %al
 	retq
 .LCPI1_0:
-	.quad	0xbfee666666666666              # double -0.94999999999999996
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x3f747ae147ae147b              # double 0.0050000000000000001
+.LCPI1_1:
+	.quad	0x3ff0000000000000              # double 1
+func0000000000000008:                   # @func0000000000000008
 	vaddsd	.LCPI1_0(%rip), %xmm0, %xmm0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	.LCPI1_1(%rip), %xmm0
 	seta	%al
 	orb	%dil, %al
 	retq
 .LCPI2_0:
-	.quad	0x401c000000000000              # double 7
-.LCPI2_1:
-	.quad	0x4070980000000000              # double 265.5
-func0000000000000008:                   # @func0000000000000008
+	.quad	0xbfee666666666666              # double -0.94999999999999996
+func0000000000000004:                   # @func0000000000000004
 	vaddsd	.LCPI2_0(%rip), %xmm0, %xmm0
-	vucomisd	.LCPI2_1(%rip), %xmm0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
 	seta	%al
 	orb	%dil, %al
 	retq

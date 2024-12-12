@@ -1,5 +1,5 @@
 
-; 189 occurrences:
+; 188 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -50,7 +50,6 @@
 ; linux/optimized/alps.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/hda_auto_parser.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/sem.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
@@ -59,6 +58,7 @@
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; llvm/optimized/SyntheticCountsUtils.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -86,7 +86,6 @@
 ; minetest/optimized/particles.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
@@ -197,7 +196,7 @@ entry:
   ret i32 %3
 }
 
-; 55 occurrences:
+; 52 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/frm_driver.c.ll
@@ -208,11 +207,9 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/number_grouping.ll
 ; icu/optimized/number_rounding.ll
 ; icu/optimized/persncal.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/sem.ll
 ; linux/optimized/uhci-hcd.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -235,7 +232,6 @@ entry:
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll

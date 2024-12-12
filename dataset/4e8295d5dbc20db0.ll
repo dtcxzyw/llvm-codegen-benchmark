@@ -1,8 +1,9 @@
 
-; 86 occurrences:
+; 87 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
+; boost/optimized/attribute_name.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/cmDependsC.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
@@ -113,7 +114,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = and i64 %5, 4294967295
   ret i64 %6
 }

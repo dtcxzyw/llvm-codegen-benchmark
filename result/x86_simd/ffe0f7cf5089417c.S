@@ -3,6 +3,6 @@ func000000000000001f:                   # @func000000000000001f
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vcvtdq2ps	%xmm1, %xmm1
-	vaddps	%xmm0, %xmm1, %xmm0
+	vaddps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

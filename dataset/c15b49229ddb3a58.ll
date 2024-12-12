@@ -19,7 +19,7 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -27,15 +27,14 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000158(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i64 %1, i64 %0
-  %5 = icmp ugt i64 %4, 16384
+  %5 = icmp samesign ugt i64 %4, 16384
   ret i1 %5
 }
 
@@ -43,18 +42,18 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000154(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i64 %1, i64 %0
-  %5 = icmp ult i64 %4, 12288
+  %5 = icmp samesign ult i64 %4, 12288
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -65,29 +64,29 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000000d8(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
-  %5 = icmp ugt i64 %4, 31743
+  %5 = icmp samesign ugt i64 %4, 31743
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000000d4(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
-  %5 = icmp ult i64 %4, 16384
+  %5 = icmp samesign ult i64 %4, 16384
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 7
   %4 = select i1 %3, i64 %0, i64 %1
@@ -98,11 +97,33 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 256
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000144(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = icmp sgt i16 %2, 29
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = icmp ult i64 %4, 8
+  ret i1 %5
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000148(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = icmp sgt i16 %2, 29
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = icmp ugt i64 %4, 255
   ret i1 %5
 }
 
@@ -114,7 +135,7 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1

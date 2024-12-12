@@ -18,9 +18,11 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000006f(i32 %0) #0 {
 entry:
@@ -40,6 +42,18 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = trunc nuw nsw i32 %2 to i8
   %4 = add nsw i8 %3, -1
+  ret i8 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000063(i32 %0) #0 {
+entry:
+  %1 = add nuw nsw i32 %0, 33
+  %2 = lshr i32 %1, 6
+  %3 = trunc i32 %2 to i8
+  %4 = add nuw nsw i8 %3, -64
   ret i8 %4
 }
 

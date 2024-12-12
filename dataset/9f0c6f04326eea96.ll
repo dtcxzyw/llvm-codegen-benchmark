@@ -19,7 +19,7 @@ entry:
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp eq i16 %2, 0

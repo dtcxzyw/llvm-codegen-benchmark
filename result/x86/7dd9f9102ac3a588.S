@@ -12,7 +12,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movsbq	%sil, %rax
 	addq	%rdi, %rax
 	cmpq	$65536, %rax                    # imm = 0x10000
@@ -28,17 +28,17 @@ func0000000000000006:                   # @func0000000000000006
 	addq	%rdi, %rax
 	shrq	$63, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movsbq	%sil, %rax
 	addq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movsbq	%sil, %rax
 	addq	%rdi, %rax
 	shrq	$63, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movsbq	%sil, %rax
 	addq	%rdi, %rax
 	setns	%al

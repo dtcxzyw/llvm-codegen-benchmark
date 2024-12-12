@@ -24,19 +24,16 @@ entry:
   ret ptr %6
 }
 
-; 13 occurrences:
+; 10 occurrences:
 ; cmake/optimized/cmCTestCurl.cxx.ll
 ; cmake/optimized/cmCTestSubmitHandler.cxx.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
-; gromacs/optimized/biasstate.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; msdfgen/optimized/main.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/attention_layer.cpp.ll
 ; opencv/optimized/calibration.cpp.ll
-; opencv/optimized/perf_cicrlesGrid.cpp.ll
-; opencv/optimized/proposal_layer.cpp.ll
 ; opencv/optimized/tldEnsembleClassifier.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
@@ -45,6 +42,20 @@ entry:
   %4 = mul i64 %3, %1
   %5 = ashr exact i64 %4, 29
   %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
+; gromacs/optimized/biasstate.cpp.ll
+; opencv/optimized/perf_cicrlesGrid.cpp.ll
+; opencv/optimized/proposal_layer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 29
+  %4 = mul i64 %3, %1
+  %5 = ashr exact i64 %4, 29
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

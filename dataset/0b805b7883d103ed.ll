@@ -14,12 +14,11 @@ entry:
   ret i32 %3
 }
 
-; 104 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -128,7 +127,8 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/area.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; graphviz/optimized/graph.c.ll
 ; mold/optimized/arch-arm64.cc.ll
@@ -148,7 +148,7 @@ entry:
   ret i32 %3
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; arrow/optimized/message.cc.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -163,6 +163,7 @@ entry:
 ; openjdk/optimized/chaitin.ll
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
 ; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
+; openusd/optimized/tessellation.cpp.ll
 ; php/optimized/zend_dfg.ll
 ; postgres/optimized/int.ll
 ; postgres/optimized/like_support.ll
@@ -385,15 +386,14 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; linux/optimized/scsicam.ll
+; 1 occurrences:
 ; postgres/optimized/detoast.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = shl i32 %1, 10
-  %3 = add i32 %2, 1024
+  %2 = shl i32 %1, 2
+  %3 = add i32 %2, 12
   ret i32 %3
 }
 

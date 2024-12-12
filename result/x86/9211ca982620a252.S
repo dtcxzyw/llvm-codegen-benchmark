@@ -7,8 +7,8 @@ func000000000000000f:                   # @func000000000000000f
 	retq
 func000000000000001f:                   # @func000000000000001f
 	movzbl	%dl, %eax
-	shll	$14, %eax
-	andl	$896, %esi                      # imm = 0x380
+	shll	$20, %eax
+	andl	$-12517377, %esi                # imm = 0xFF40FFFF
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq

@@ -88,11 +88,6 @@ func0000000000000017:                   # @func0000000000000017
 	vzext.vf2	v14, v12
 	vmacc.vv	v8, v10, v14
 	ret
-func0000000000000018:                   # @func0000000000000018
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v14, v12
-	vmacc.vv	v8, v10, v14
-	ret
 func000000000000001e:                   # @func000000000000001e
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12

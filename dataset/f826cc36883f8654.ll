@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
@@ -15,7 +15,6 @@
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
-; php/optimized/unixtime2tm.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i64 %0, i64 %1) #0 {

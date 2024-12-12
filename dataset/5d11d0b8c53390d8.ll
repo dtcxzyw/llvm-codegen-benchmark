@@ -10,6 +10,19 @@ entry:
   ret i32 %3
 }
 
+; 3 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; icu/optimized/collationiterator.ll
+; linux/optimized/filter.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000013(i16 %0) #0 {
+entry:
+  %1 = shl nuw i16 %0, 3
+  %2 = zext i16 %1 to i32
+  %3 = add nuw nsw i32 %2, 72
+  ret i32 %3
+}
+
 ; 1 occurrences:
 ; postgres/optimized/utf8_and_gb18030.ll
 ; Function Attrs: nounwind
@@ -29,18 +42,6 @@ entry:
   %1 = shl nuw nsw i16 %0, 2
   %2 = zext nneg i16 %1 to i32
   %3 = add nsw i32 %2, -12
-  ret i32 %3
-}
-
-; 2 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
-; icu/optimized/collationiterator.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000013(i16 %0) #0 {
-entry:
-  %1 = shl nuw i16 %0, 8
-  %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %2, 512
   ret i32 %3
 }
 

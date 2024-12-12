@@ -12,14 +12,24 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/i64_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
 entry:
-  %2 = sub nsw i8 33, %1
+  %2 = sub nsw i8 63, %1
+  %3 = zext nneg i8 %2 to i64
+  %4 = lshr i64 %0, %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i8 %1) #0 {
+entry:
+  %2 = sub i8 68, %1
   %3 = zext nneg i8 %2 to i64
   %4 = lshr i64 %0, %3
   ret i64 %4

@@ -3,7 +3,7 @@
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 4294967295
@@ -16,7 +16,7 @@ entry:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 4294967295
@@ -29,7 +29,7 @@ entry:
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 4294967295
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/compaction.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, -512

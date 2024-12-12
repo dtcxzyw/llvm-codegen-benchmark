@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/cuddPriority.c.ll
 ; flac/optimized/lpc.c.ll
@@ -9,6 +9,7 @@
 ; libwebp/optimized/vp8l_dec.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/mballoc.ll
+; lvgl/optimized/lv_span.ll
 ; minetest/optimized/CImage.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
@@ -55,7 +56,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

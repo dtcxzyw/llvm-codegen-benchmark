@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = add i64 %2, 8
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 60
   %3 = add nsw i64 %2, -4

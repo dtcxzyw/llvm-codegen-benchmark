@@ -5,7 +5,7 @@
 define i1 @func0000000000000024(float %0, float %1) #0 {
 entry:
   %2 = fneg float %1
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   %4 = fcmp olt float %0, %1
   %5 = and i1 %3, %4
   ret i1 %5
@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000042(float %0, float %1) #0 {
 entry:
   %2 = fneg float %1
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   %4 = fcmp olt float %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
@@ -30,7 +30,7 @@ entry:
 define i1 @func000000000000002c(float %0, float %1) #0 {
 entry:
   %2 = fneg float %1
-  %3 = fcmp ole float %2, %0
+  %3 = fcmp oge float %0, %2
   %4 = fcmp olt float %0, %1
   %5 = and i1 %3, %4
   ret i1 %5

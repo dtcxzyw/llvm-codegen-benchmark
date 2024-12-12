@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/extraUtilCanon.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; oiio/optimized/Codec.cpp.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind

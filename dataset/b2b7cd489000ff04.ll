@@ -6,13 +6,12 @@
 ; opencv/optimized/adaptive_threshold_mean_binarizer.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
-  %3 = add i32 %2, 1
-  %4 = and i32 %3, 63
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %3 = and i32 %2, 63
+  %4 = icmp eq i32 %3, 63
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -24,17 +23,16 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
-  %3 = add i32 %2, 1
-  %4 = and i32 %3, 7
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %3 = and i32 %2, 7
+  %4 = icmp eq i32 %3, 7
+  ret i1 %4
 }
 
 ; 2 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000b8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = sub i32 1, %2

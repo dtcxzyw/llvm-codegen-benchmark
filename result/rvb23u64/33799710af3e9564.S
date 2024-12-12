@@ -25,6 +25,11 @@ func000000000000007f:                   # @func000000000000007f
 	addw	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret
+func000000000000002f:                   # @func000000000000002f
+	add	a1, a1, a2
+	slli.uw	a1, a1, 28
+	add	a0, a0, a1
+	ret
 func000000000000002b:                   # @func000000000000002b
 	add	a1, a1, a2
 	slli	a1, a1, 32

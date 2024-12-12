@@ -26,17 +26,3 @@ func000000000000000b:                   # @func000000000000000b
 	vpsubd	%ymm1, %ymm3, %ymm2 {%k1}
 	vpor	%ymm0, %ymm2, %ymm0
 	retq
-.LCPI2_0:
-	.long	1                               # 0x1
-.LCPI2_1:
-	.long	256                             # 0x100
-func0000000000000042:                   # @func0000000000000042
-	vpsllw	$15, %xmm1, %xmm1
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnltw	%xmm3, %xmm1, %k1
-	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm2, %k0
-	vpmovm2d	%k0, %ymm1
-	vpsrld	$31, %ymm1, %ymm1
-	vpord	.LCPI2_1(%rip){1to8}, %ymm1, %ymm1 {%k1}
-	vpor	%ymm0, %ymm1, %ymm0
-	retq

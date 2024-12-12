@@ -3,6 +3,6 @@
 func0000000000000004:                   # @func0000000000000004
 	vmulsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	vcvttsd2usi	%xmm0, %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq

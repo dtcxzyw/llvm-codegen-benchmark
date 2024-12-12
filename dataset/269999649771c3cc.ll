@@ -154,14 +154,118 @@ entry:
   ret ptr %6
 }
 
-; 109 occurrences:
+; 56 occurrences:
 ; abc/optimized/dauDsd.c.ll
-; abc/optimized/verFormula.c.ll
 ; arrow/optimized/value_parsing.cc.ll
-; casadi/optimized/mx_node.cpp.ll
-; cmake/optimized/cmGlobalGenerator.cxx.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; darktable/optimized/tagging.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; git/optimized/line-range.ll
+; hdf5/optimized/H5LT.c.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; jsonnet/optimized/rapidyaml.cpp.ll
+; lief/optimized/pem.c.ll
+; lightgbm/optimized/gbdt_model_text.cpp.ll
+; lightgbm/optimized/tree.cpp.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/TimeZone_md.ll
+; php/optimized/apprentice.ll
+; php/optimized/pcre2_jit_compile.ll
+; turborepo-rs/optimized/5x6vf5oc1gv1cmh03slcaf29a.ll
+; yosys/optimized/test_autotb.ll
+; yosys/optimized/verilog_backend.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/0x2swxz4m93xo6c0jggy1zzvx.ll
+; zed-rs/optimized/13pr1pzdsvcd15h9bn5oaps4z.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/2ki47jl401le7d880vult9vcg.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4wl6luh08kf5panbyu7di2k6e.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/6ekeyfm197maw5n7s1cbq34ws.ll
+; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
+; zed-rs/optimized/71cpo5c8gfob1nb30s7nlggwn.ll
+; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
+; zed-rs/optimized/8yy2zhy2bdzv8bn57pipvxcw7.ll
+; zed-rs/optimized/9veql5nv8njiwoukz29yvwhob.ll
+; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/avkcaupfon6sc5v4swrdwryed.ll
+; zed-rs/optimized/b8qgowmgtglca3x1tojob83nm.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/d3p7qidwwfiy8pzimmi7epq9h.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
+; zed-rs/optimized/dtvy13he5qwv8e5jkwyblypio.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(i64 %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, 45
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; mitsuba3/optimized/x86assembler.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000018f(i64 %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = icmp ne i8 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 6 occurrences:
+; cmake/optimized/hsts.c.ll
+; curl/optimized/libcurl_la-hsts.ll
+; git/optimized/dir.ll
+; node/optimized/libnode.Protocol.ll
+; nuklear/optimized/unity.c.ll
+; xgboost/optimized/context.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002c(i64 %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, 46
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; php/optimized/pcre2_jit_compile.ll
+; Function Attrs: nounwind
+define ptr @func000000000000008f(i64 %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = icmp ult i8 %2, 2
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 90 occurrences:
+; abc/optimized/verFormula.c.ll
+; casadi/optimized/mx_node.cpp.ll
+; cmake/optimized/cmGlobalGenerator.cxx.ll
 ; faiss/optimized/index_write.cpp.ll
 ; g2o/optimized/edge_project_psi2uv.cpp.ll
 ; g2o/optimized/edge_project_xyz2uv.cpp.ll
@@ -187,25 +291,12 @@ entry:
 ; g2o/optimized/types_slam3d_addons.cpp.ll
 ; git/optimized/add-interactive.ll
 ; git/optimized/dir.ll
-; git/optimized/line-range.ll
 ; git/optimized/urlmatch.ll
-; hdf5/optimized/H5LT.c.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; jsonnet/optimized/rapidyaml.cpp.ll
 ; lief/optimized/bignum.c.ll
-; lief/optimized/pem.c.ll
-; lightgbm/optimized/gbdt_model_text.cpp.ll
-; lightgbm/optimized/tree.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
-; mitsuba3/optimized/string.cpp.ll
-; nuklear/optimized/unity.c.ll
-; openjdk/optimized/TimeZone_md.ll
 ; openusd/optimized/enum.cpp.ll
 ; openusd/optimized/testDemangle.cpp.ll
 ; openusd/optimized/type.cpp.ll
 ; openusd/optimized/typeInfoMap.cpp.ll
-; php/optimized/apprentice.ll
-; php/optimized/pcre2_jit_compile.ll
 ; proj/optimized/param.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -259,58 +350,27 @@ entry:
 ; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
-; yosys/optimized/test_autotb.ll
-; yosys/optimized/verilog_backend.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/gparams.cpp.ll
 ; z3/optimized/params.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i8 %2) #0 {
+define ptr @func000000000000002e(i64 %0, ptr %1, i8 %2) #0 {
 entry:
-  %3 = icmp eq i8 %2, 45
+  %3 = icmp eq i8 %2, 92
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 2 occurrences:
-; graphviz/optimized/sfprint.c.ll
-; mitsuba3/optimized/x86assembler.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000018a(i64 %0, ptr %1, i8 %2) #0 {
-entry:
-  %3 = icmp ne i8 %2, 0
-  %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 5 occurrences:
-; cmake/optimized/hsts.c.ll
-; curl/optimized/libcurl_la-hsts.ll
-; node/optimized/libnode.Protocol.ll
-; nuklear/optimized/unity.c.ll
-; xgboost/optimized/context.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, ptr %1, i8 %2) #0 {
-entry:
-  %3 = icmp eq i8 %2, 46
-  %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
 
 ; 1 occurrences:
-; php/optimized/pcre2_jit_compile.ll
+; graphviz/optimized/sfprint.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008a(i64 %0, ptr %1, i8 %2) #0 {
+define ptr @func000000000000018e(i64 %0, ptr %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i8 %2, 2
+  %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }

@@ -12,7 +12,7 @@ entry:
   ret i64 %5
 }
 
-; 42 occurrences:
+; 40 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -30,7 +30,6 @@ entry:
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -54,7 +53,6 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
-; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

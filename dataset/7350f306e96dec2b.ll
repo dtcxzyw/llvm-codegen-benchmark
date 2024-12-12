@@ -11,7 +11,7 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; cpython/optimized/floatobject.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -23,13 +23,12 @@ entry:
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
-; postgres/optimized/itemptr.ll
 ; qemu/optimized/fdt_sw.c.ll
 ; spike/optimized/fdt_sw.ll
 ; wireshark/optimized/packet-atn-ulcs.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 536936448
@@ -52,21 +51,31 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 4 occurrences:
 ; clamav/optimized/chmd.c.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; linux/optimized/intel_migrate.ll
+; openjdk/optimized/jdmarker.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, 15
+  %5 = select i1 %4, i32 14, i32 %0
+  ret i32 %5
+}
+
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
-; linux/optimized/intel_migrate.ll
 ; openjdk/optimized/hb-face.ll
-; openjdk/optimized/jdmarker.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ugt i32 %3, 15
-  %5 = select i1 %4, i32 14, i32 %0
+  %4 = icmp ugt i32 %3, 1114111
+  %5 = select i1 %4, i32 1114111, i32 %0
   ret i32 %5
 }
 
@@ -98,7 +107,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp sgt i32 %3, 33899

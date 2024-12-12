@@ -77,7 +77,7 @@
 ; oiio/optimized/zfile.cpp.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0) #0 {
+define i1 @func000000000000014a(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 0
   ret i1 %1

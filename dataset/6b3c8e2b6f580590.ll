@@ -17,11 +17,11 @@
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000085(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp uge i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp ule i64 %0, %4
   ret i1 %5
 }
 
@@ -55,11 +55,11 @@ entry:
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -70,11 +70,11 @@ entry:
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/typedesc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -88,8 +88,8 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -100,30 +100,30 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; oiio/optimized/softimageinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; oiio/optimized/softimageinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -131,22 +131,22 @@ entry:
 ; coreutils-rs/optimized/450bow9j8399x84k.ll
 ; linux/optimized/drm_format_helper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/dm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -156,8 +156,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -167,8 +167,8 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = icmp slt i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 

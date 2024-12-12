@@ -9,7 +9,7 @@ define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 1, %2
   %4 = select i1 %1, i32 65530, i32 %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -40,7 +40,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 1, %2
   %4 = select i1 %1, i32 -6, i32 %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -53,20 +53,6 @@ entry:
   %3 = select i1 %1, i32 0, i32 %2
   %4 = sub i32 %0, %3
   ret i32 %4
-}
-
-; 4 occurrences:
-; icu/optimized/ucnvsel.ll
-; miniaudio/optimized/unity.c.ll
-; openssl/optimized/libcrypto-lib-bio_b64.ll
-; openssl/optimized/libcrypto-shlib-bio_b64.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = sub nuw nsw i32 3, %2
-  %4 = select i1 %1, i32 1, i32 %3
-  %5 = add nsw i32 %4, %0
-  ret i32 %5
 }
 
 ; 8 occurrences:
@@ -135,7 +121,7 @@ define i32 @func000000000000000e(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 2048, %2
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -150,7 +136,19 @@ define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 8, %2
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
+  ret i32 %5
+}
+
+; 2 occurrences:
+; icu/optimized/ucnvsel.ll
+; miniaudio/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = sub nuw nsw i32 4, %2
+  %4 = select i1 %1, i32 0, i32 %3
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

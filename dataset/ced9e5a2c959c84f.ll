@@ -79,7 +79,7 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000081(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 4294967295, %3
@@ -95,7 +95,7 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func00000000000000c1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
@@ -108,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/gen8_ppgtt.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func00000000000000a1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3

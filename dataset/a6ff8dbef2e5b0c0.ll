@@ -283,7 +283,7 @@
 ; postgres/optimized/syslogger.ll
 ; tree-sitter-rs/optimized/1cv8rmziqotlzxv3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq ptr %1, null
   %4 = icmp eq i32 %2, 18
@@ -297,7 +297,7 @@ entry:
 ; llvm/optimized/FixupStatepointCallerSaved.cpp.ll
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001c(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000002c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq ptr %1, null
   %4 = icmp ne i32 %2, 0

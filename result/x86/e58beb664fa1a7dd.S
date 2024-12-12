@@ -2,7 +2,7 @@ func000000000000000c:                   # @func000000000000000c
 	andb	$1, %sil
 	negb	%sil
 	orb	$-33, %sil
-	testb	%dil, %sil
+	testb	%sil, %dil
 	setne	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -10,6 +10,6 @@ func0000000000000001:                   # @func0000000000000001
 	andb	$1, %sil
 	shlb	$2, %sil
 	orb	$3, %sil
-	testb	%dil, %sil
+	testb	%sil, %dil
 	sete	%al
 	retq

@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/ipv6_address.ll
 ; freetype/optimized/truetype.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; openjdk/optimized/pngrtran.ll

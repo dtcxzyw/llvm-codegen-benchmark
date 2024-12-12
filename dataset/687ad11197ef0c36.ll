@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 35 occurrences:
 ; assimp/optimized/MD3Loader.cpp.ll
 ; assimp/optimized/MDCLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
@@ -17,7 +17,6 @@
 ; linux/optimized/intel_guc_ct.ll
 ; linux/optimized/ip_fragment.ll
 ; linux/optimized/skbuff.ll
-; linux/optimized/tbxfroot.ll
 ; linux/optimized/xdp.ll
 ; llvm/optimized/CommentLexer.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
@@ -42,7 +41,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = zext i32 %6 to i64
   ret i64 %7
 }
@@ -62,7 +61,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }
@@ -77,7 +76,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = zext i32 %6 to i64
   ret i64 %7
 }
@@ -90,7 +89,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }

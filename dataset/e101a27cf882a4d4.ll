@@ -227,7 +227,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000188(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000308(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = icmp eq i32 %0, 0

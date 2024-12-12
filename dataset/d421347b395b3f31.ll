@@ -19,11 +19,10 @@ entry:
   ret i32 %5
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; cvc5/optimized/term_context.cpp.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; git/optimized/pathspec.ll
-; icu/optimized/collationfastlatin.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/i2c-i801.ll
 ; luajit/optimized/lj_opt_narrow.ll

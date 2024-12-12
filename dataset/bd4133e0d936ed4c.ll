@@ -1,6 +1,5 @@
 
-; 180 occurrences:
-; abc/optimized/verStream.c.ll
+; 178 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
@@ -29,7 +28,6 @@
 ; graphviz/optimized/gvdevice.c.ll
 ; graphviz/optimized/scan.c.ll
 ; hdf5/optimized/H5LTanalyze.c.ll
-; hermes/optimized/circular_raw_ostream.cpp.ll
 ; icu/optimized/locid.ll
 ; icu/optimized/ucnvisci.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -184,7 +182,7 @@
 define i32 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

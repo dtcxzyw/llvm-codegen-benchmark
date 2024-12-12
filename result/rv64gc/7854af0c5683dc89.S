@@ -25,8 +25,10 @@ func0000000000000010:                   # @func0000000000000010
 	srli	a0, a0, 32
 	ret
 func00000000000000c7:                   # @func00000000000000c7
-	slli	a1, a1, 48
-	srli	a1, a1, 48
+	lui	a2, 16
+	addiw	a2, a2, -1
+	and	a1, a1, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	addw	a0, a0, a1
 	ret

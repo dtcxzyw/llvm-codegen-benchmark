@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 67 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/funcobject.ll
 ; cpython/optimized/hamt.ll
@@ -13,7 +13,6 @@
 ; linux/optimized/dswstate.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/gro.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/intel_guc_capture.ll
 ; linux/optimized/io-wq.ll
 ; linux/optimized/maple_tree.ll
@@ -46,7 +45,6 @@
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
-; qemu/optimized/hw_misc_sifive_u_otp.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
@@ -70,16 +68,16 @@
 ; wireshark/optimized/packet-wbxml.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 244
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 244
   %5 = getelementptr [256 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 210 occurrences:
+; 249 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcNtk.c.ll
@@ -106,11 +104,16 @@ entry:
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/attribute_set.ll
+; boost/optimized/attribute_value_set.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/matches_relation_factory.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/decode.c.ll
 ; bullet3/optimized/b3DynamicBvh.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; bullet3/optimized/btDbvt.ll
+; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/filtering.c.ll
 ; clamav/optimized/kwajd.c.ll
@@ -180,6 +183,33 @@ entry:
 ; lief/optimized/md5.c.ll
 ; lief/optimized/sha1.c.ll
 ; lief/optimized/sha256.c.ll
+; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/BlockFrequencyInfo.cpp.ll
+; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; llvm/optimized/CodeGenRegisters.cpp.ll
+; llvm/optimized/GlobalsStream.cpp.ll
+; llvm/optimized/HashTable.cpp.ll
+; llvm/optimized/InjectedSourceStream.cpp.ll
+; llvm/optimized/InterferenceCache.cpp.ll
+; llvm/optimized/LiveVariables.cpp.ll
+; llvm/optimized/MD5.cpp.ll
+; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
+; llvm/optimized/MachineUniformityAnalysis.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/NamedStreamMap.cpp.ll
+; llvm/optimized/NativeEnumInjectedSources.cpp.ll
+; llvm/optimized/NewGVN.cpp.ll
+; llvm/optimized/PDBFileBuilder.cpp.ll
+; llvm/optimized/PHIElimination.cpp.ll
+; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
+; llvm/optimized/UniformityAnalysis.cpp.ll
+; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; lua/optimized/lvm.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
@@ -205,7 +235,6 @@ entry:
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
@@ -235,8 +264,13 @@ entry:
 ; openjdk/optimized/waitBarrier_generic.ll
 ; openjdk/optimized/zStat.ll
 ; openmpi/optimized/opal_interval_tree.ll
+; openspiel/optimized/ABsearch.cpp.ll
+; openspiel/optimized/bridge.cc.ll
 ; openssl/optimized/libssl-lib-ssl_ciph.ll
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
@@ -275,6 +309,7 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; spike/optimized/dummy_rocc.ll
+; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; stockfish/optimized/movepick.ll
@@ -290,18 +325,19 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 40
-  %5 = getelementptr nusw [64 x i8], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 40
+  %5 = getelementptr nusw nuw [64 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 8 occurrences:
-; cpython/optimized/hamt.ll
+; 7 occurrences:
 ; linux/optimized/hdac_bus.ll
 ; linux/optimized/hiddev.ll
 ; linux/optimized/r8169_main.ll
@@ -323,67 +359,12 @@ entry:
 ; stockfish/optimized/evaluate_nnue.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -8
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 336
-  %5 = getelementptr nusw [16 x i32], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 1 occurrences:
-; clamav/optimized/bzlib.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 255
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 1096
-  %5 = getelementptr nusw [257 x i32], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 32 occurrences:
-; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
-; llvm/optimized/BlockFrequencyInfo.cpp.ll
-; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
-; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/CodeGenRegisters.cpp.ll
-; llvm/optimized/GlobalsStream.cpp.ll
-; llvm/optimized/HashTable.cpp.ll
-; llvm/optimized/InjectedSourceStream.cpp.ll
-; llvm/optimized/InterferenceCache.cpp.ll
-; llvm/optimized/LiveVariables.cpp.ll
-; llvm/optimized/MD5.cpp.ll
-; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
-; llvm/optimized/MachineUniformityAnalysis.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
-; llvm/optimized/NamedStreamMap.cpp.ll
-; llvm/optimized/NativeEnumInjectedSources.cpp.ll
-; llvm/optimized/NewGVN.cpp.ll
-; llvm/optimized/PDBFileBuilder.cpp.ll
-; llvm/optimized/PHIElimination.cpp.ll
-; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
-; llvm/optimized/UniformityAnalysis.cpp.ll
-; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
-; openspiel/optimized/ABsearch.cpp.ll
-; openspiel/optimized/bridge.cc.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %5 = getelementptr nusw [2 x i64], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 336
+  %5 = getelementptr nusw nuw [16 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

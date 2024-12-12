@@ -9,6 +9,6 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000006:                   # @func0000000000000006
 	sub	a2, a2, a0
 	andi	a1, a1, 1
-	addi	a1, a1, 1
+	addi	a1, a1, 9
 	slt	a0, a2, a1
 	ret

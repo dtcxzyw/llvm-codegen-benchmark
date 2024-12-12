@@ -1,6 +1,6 @@
 func000000000000000d:                   # @func000000000000000d
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	cltd
@@ -26,7 +26,7 @@ func000000000000000d:                   # @func000000000000000d
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	cltd
@@ -52,7 +52,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	cltd
@@ -78,7 +78,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000005:                   # @func0000000000000005
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	cltd
@@ -104,7 +104,7 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	cltd
@@ -130,7 +130,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	cltd

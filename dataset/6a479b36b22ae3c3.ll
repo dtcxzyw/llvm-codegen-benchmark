@@ -1,8 +1,7 @@
 
-; 29 occurrences:
+; 27 occurrences:
 ; abc/optimized/crc32.c.ll
 ; clamav/optimized/7zCrc.c.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/oabd.c.ll
 ; folly/optimized/Checksum.cpp.ll
 ; gromacs/optimized/crc32.c.ll
@@ -19,7 +18,6 @@
 ; openjdk/optimized/elfFile.ll
 ; openjdk/optimized/symtab.ll
 ; php/optimized/crc32.ll
-; php/optimized/hash_crc32.ll
 ; php/optimized/zip.ll
 ; postgres/optimized/pg_crc32c_sb8.ll
 ; postgres/optimized/pg_crc32c_sb8_shlib.ll
@@ -33,7 +31,7 @@
 define i64 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   %4 = zext i8 %3 to i64
   ret i64 %4
 }

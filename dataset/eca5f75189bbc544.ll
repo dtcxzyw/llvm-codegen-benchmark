@@ -40,10 +40,11 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; hdf5/optimized/H5Tbit.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngwutil.c.ll
+; lvgl/optimized/lv_canvas.ll
 ; openjdk/optimized/pngread.ll
 ; openusd/optimized/assetPath.cpp.ll
 ; openusd/optimized/fileIO_Common.cpp.ll

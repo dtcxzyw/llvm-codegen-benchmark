@@ -22,7 +22,7 @@ entry:
   ret i64 %3
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
@@ -39,6 +39,8 @@ entry:
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
@@ -47,10 +49,11 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; postgres/optimized/date.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
@@ -91,6 +94,19 @@ entry:
 }
 
 ; 4 occurrences:
+; boost/optimized/src.ll
+; postgres/optimized/d2s.ll
+; postgres/optimized/d2s_shlib.ll
+; postgres/optimized/d2s_srv.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp uge i32 %0, %1
+  %3 = sext i1 %2 to i64
+  ret i64 %3
+}
+
+; 4 occurrences:
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/EHStreamer.cpp.ll
 ; postgres/optimized/twophase.ll
@@ -99,18 +115,6 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %0, %1
-  %3 = sext i1 %2 to i64
-  ret i64 %3
-}
-
-; 3 occurrences:
-; postgres/optimized/d2s.ll
-; postgres/optimized/d2s_shlib.ll
-; postgres/optimized/d2s_srv.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp uge i32 %0, %1
   %3 = sext i1 %2 to i64
   ret i64 %3
 }

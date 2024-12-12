@@ -8,8 +8,3 @@ func0000000000000600:                   # @func0000000000000600
 	sbbl	$-1, %esi
 	leal	5(%rsi,%rdi), %eax
 	retq
-func0000000000000400:                   # @func0000000000000400
-	cmpb	$-16, %dl
-	sbbl	$-1, %esi
-	leal	1(%rsi,%rdi), %eax
-	retq

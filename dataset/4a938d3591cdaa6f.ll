@@ -3,7 +3,7 @@
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 %2
@@ -35,7 +35,7 @@ entry:
 ; php/optimized/der.ll
 ; xgboost/optimized/indexed_recordio_split.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = select i1 %3, i64 %1, i64 %2
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = select i1 %3, i64 %1, i64 %2
@@ -56,7 +56,8 @@ entry:
   ret i1 %6
 }
 
-; 38 occurrences:
+; 42 occurrences:
+; egg-rs/optimized/oegfwufxyvm4x2w.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/13whla2w760i0ne3.ll
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
@@ -95,10 +96,13 @@ entry:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/5b6rejgre7fzh1ir.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/58eqxolkuiavjghtj45u3c5th.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000441(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 2
+  %3 = icmp ugt i64 %2, 3
   %4 = select i1 %3, i64 %1, i64 %2
   %5 = add nuw i64 %0, 1
   %6 = icmp eq i64 %5, %4
@@ -108,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000401(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 1
   %4 = select i1 %3, i64 %1, i64 %2
@@ -117,11 +121,19 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 10 occurrences:
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/5xevyi85tx7z64jdpnqwqtx9p.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/epsv5gdpg9wii0jlawu81wh31.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000224(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000444(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 2
   %4 = select i1 %3, i64 %1, i64 %2
@@ -130,10 +142,12 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000404(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 5
   %4 = select i1 %3, i64 %1, i64 %2

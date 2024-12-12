@@ -28,11 +28,11 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000004:                   # @func0000000000000004
 	li	a1, 8
 	bltu	a0, a1, .LBB3_2
-	lui	a0, 260096
+	lui	a0, 258048
 	fmv.w.x	fa0, a0
 	ret
 .LBB3_2:
-	lui	a0, 784384
+	lui	a0, 260096
 	fmv.w.x	fa0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a

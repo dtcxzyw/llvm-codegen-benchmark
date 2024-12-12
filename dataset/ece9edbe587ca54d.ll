@@ -1,5 +1,5 @@
 
-; 184 occurrences:
+; 181 occurrences:
 ; clamav/optimized/hash.cpp.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
@@ -39,12 +39,10 @@
 ; linux/optimized/blk-mq-sysfs.ll
 ; linux/optimized/blk-mq-tag.ll
 ; linux/optimized/blk-mq.ll
-; linux/optimized/cpuidle-haltpoll.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/dmaengine.ll
 ; linux/optimized/dst.ll
-; linux/optimized/dst_cache.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/fork.ll
@@ -53,7 +51,6 @@
 ; linux/optimized/gro_cells.ll
 ; linux/optimized/iova.ll
 ; linux/optimized/kyber-iosched.ll
-; linux/optimized/loopback.ll
 ; linux/optimized/matrix.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/md.ll
@@ -75,6 +72,7 @@
 ; linux/optimized/update.ll
 ; linux/optimized/vmstat.ll
 ; linux/optimized/workqueue.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openjdk/optimized/accessBarrierSupport.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/bootstrapInfo.ll
@@ -172,7 +170,6 @@
 ; openmpi/optimized/osc_rdma_peer.ll
 ; openmpi/optimized/vprotocol_pessimist_eventlog.ll
 ; openmpi/optimized/vprotocol_pessimist_recv.ll
-; openmpi/optimized/vprotocol_pessimist_request.ll
 ; openmpi/optimized/vprotocol_pessimist_send.ll
 ; openmpi/optimized/vprotocol_pessimist_wait.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
@@ -185,12 +182,12 @@
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1) #0 {
+define ptr @func0000000000000003(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 
@@ -203,19 +200,20 @@ entry:
 ; openjdk/optimized/whitebox.ll
 ; openmpi/optimized/mca_btl_smcuda_la-btl_smcuda_component.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0, ptr %1) #0 {
+define ptr @func0000000000000007(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   ret ptr %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; linux/optimized/blk-cgroup.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/build_utility.ll
+; linux/optimized/dma-iommu.ll
 ; linux/optimized/dst.ll
 ; linux/optimized/genhd.ll
 ; linux/optimized/md.ll
@@ -227,7 +225,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5

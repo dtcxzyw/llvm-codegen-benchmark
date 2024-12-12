@@ -1,10 +1,11 @@
 
-; 57 occurrences:
+; 58 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
+; boost/optimized/self_intersection_points.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll

@@ -1,8 +1,8 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	testb	$1, %sil
-	movabsq	$1152921504606846975, %rax      # imm = 0xFFFFFFFFFFFFFFF
+	movl	$65535, %eax                    # imm = 0xFFFF
 	cmovneq	%rdx, %rax
-	leaq	600(%rdi,%rax,8), %rax
+	leaq	5(%rdi,%rax), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	xorl	%eax, %eax

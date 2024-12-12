@@ -11,17 +11,9 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 8 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
 ; postgres/optimized/gistproc.ll
 ; postgres/optimized/gistsplit.ll
 ; postgres/optimized/rangetypes_gist.ll

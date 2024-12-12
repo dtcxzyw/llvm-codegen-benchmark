@@ -53,6 +53,32 @@ entry:
   ret i1 %7
 }
 
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000086(i16 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = zext nneg i16 %0 to i64
+  %7 = icmp slt i64 %5, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i16 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = zext nneg i16 %0 to i64
+  %7 = icmp ult i64 %5, %6
+  ret i1 %7
+}
+
 ; 2 occurrences:
 ; hermes/optimized/ConvertUTF.cpp.ll
 ; llvm/optimized/ConvertUTF.cpp.ll

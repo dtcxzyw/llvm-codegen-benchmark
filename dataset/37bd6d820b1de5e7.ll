@@ -1,38 +1,10 @@
 
-; 17 occurrences:
-; abseil-cpp/optimized/hash_test.cc.ll
-; eastl/optimized/TestBitset.cpp.ll
-; hyperscan/optimized/AsciiComponentClass.cpp.ll
-; hyperscan/optimized/ComponentClass.cpp.ll
-; hyperscan/optimized/Utf8ComponentClass.cpp.ll
-; jemalloc/optimized/eset.ll
-; jemalloc/optimized/eset.pic.ll
-; jemalloc/optimized/eset.sym.ll
-; linux/optimized/build_utility.ll
-; linux/optimized/generic-radix-tree.ll
-; linux/optimized/genhd.ll
-; linux/optimized/mtrr.ll
-; linux/optimized/pt.ll
-; mitsuba3/optimized/x86func.cpp.ll
-; redis/optimized/eset.ll
-; redis/optimized/eset.sym.ll
-; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i64 %0) #0 {
-entry:
-  %1 = add nuw nsw i64 %0, 4294967282
-  %2 = and i64 %1, 4294967295
-  %3 = shl nsw i64 -1, %2
-  ret i64 %3
-}
-
-; 54 occurrences:
+; 50 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; cvc5/optimized/regexp_elim.cpp.ll
 ; hyperscan/optimized/charreach.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/coalesce.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/nvm.ll
@@ -45,7 +17,6 @@ entry:
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -65,9 +36,7 @@ entry:
 ; nix/optimized/filetransfer.ll
 ; nix/optimized/gc.ll
 ; nix/optimized/graphml.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/registry.ll
 ; nix/optimized/why-depends.ll
 ; openjdk/optimized/PathCharsValidator.ll
@@ -90,9 +59,12 @@ entry:
   ret i64 %3
 }
 
-; 95 occurrences:
+; 94 occurrences:
+; abseil-cpp/optimized/hash_test.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/options_description.ll
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/match_trie.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
@@ -125,8 +97,6 @@ entry:
 ; nix/optimized/lockfile.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/profile.ll
@@ -174,8 +144,6 @@ entry:
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; php/optimized/dce.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; qemu/optimized/target_riscv_cpu.c.ll
@@ -195,8 +163,7 @@ entry:
   ret i64 %3
 }
 
-; 32 occurrences:
-; abseil-cpp/optimized/hash_test.cc.ll
+; 30 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; cvc5/optimized/term_tuple_enumerator.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -217,7 +184,6 @@ entry:
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/OMPContext.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; openjdk/optimized/g1PageBasedVirtualSpace.ll
 ; openjdk/optimized/shenandoahFreeSet.ll
@@ -346,6 +312,32 @@ define i64 @func0000000000000005(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1
   %2 = and i64 %1, 4294967295
+  %3 = shl nsw i64 -1, %2
+  ret i64 %3
+}
+
+; 16 occurrences:
+; abseil-cpp/optimized/hash_test.cc.ll
+; eastl/optimized/TestBitset.cpp.ll
+; hyperscan/optimized/AsciiComponentClass.cpp.ll
+; hyperscan/optimized/ComponentClass.cpp.ll
+; hyperscan/optimized/Utf8ComponentClass.cpp.ll
+; jemalloc/optimized/eset.ll
+; jemalloc/optimized/eset.pic.ll
+; jemalloc/optimized/eset.sym.ll
+; linux/optimized/build_utility.ll
+; linux/optimized/generic-radix-tree.ll
+; linux/optimized/genhd.ll
+; linux/optimized/mtrr.ll
+; linux/optimized/pt.ll
+; redis/optimized/eset.ll
+; redis/optimized/eset.sym.ll
+; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0) #0 {
+entry:
+  %1 = add nuw nsw i64 %0, 1
+  %2 = and i64 %1, 63
   %3 = shl nsw i64 -1, %2
   ret i64 %3
 }

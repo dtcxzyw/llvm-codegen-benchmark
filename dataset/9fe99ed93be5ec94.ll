@@ -5,8 +5,8 @@
 define i32 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -30,12 +30,12 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
-; 225 occurrences:
+; 222 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -66,14 +66,12 @@ entry:
 ; duckdb/optimized/generators.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/dstein.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/pme.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
 ; gromacs/optimized/sstein.cpp.ll
 ; gromacs/optimized/tng_compress.c.ll
@@ -116,7 +114,6 @@ entry:
 ; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -144,6 +141,8 @@ entry:
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; llvm/optimized/X86TileConfig.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_grid.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
@@ -177,7 +176,6 @@ entry:
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; oiio/optimized/pnmoutput.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgels.c.ll
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsy.c.ll
@@ -187,13 +185,8 @@ entry:
 ; openblas/optimized/dlarfb.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgql.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dstein.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dtbrfs.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/basicretinafilter.cpp.ll
@@ -257,6 +250,10 @@ entry:
 ; yosys/optimized/booth.ll
 ; yosys/optimized/sta.ll
 ; z3/optimized/mpz_matrix.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
@@ -265,7 +262,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -344,7 +341,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -374,7 +371,6 @@ entry:
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -382,6 +378,8 @@ entry:
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/mutual.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -400,7 +398,6 @@ entry:
 ; wasmedge/optimized/refInstr.cpp.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
-; wireshark/optimized/reedsolomon.c.ll
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; z3/optimized/mpz_matrix.cpp.ll
@@ -411,12 +408,12 @@ entry:
 define i32 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 93 occurrences:
+; 87 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
@@ -442,9 +439,6 @@ entry:
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/average.cpp.ll
 ; gromacs/optimized/comm.cpp.ll
-; gromacs/optimized/dgebd2.cpp.ll
-; gromacs/optimized/dgeqr2.cpp.ll
-; gromacs/optimized/dgetf2.cpp.ll
 ; gromacs/optimized/energyoutput.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/gmx_hydorder.cpp.ll
@@ -452,9 +446,6 @@ entry:
 ; gromacs/optimized/gmx_trjorder.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; gromacs/optimized/manage_threading.cpp.ll
-; gromacs/optimized/sgebd2.cpp.ll
-; gromacs/optimized/sgeqr2.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
 ; gromacs/optimized/sm_merge.cpp.ll
 ; ipopt/optimized/IpDenseGenMatrix.ll
 ; ipopt/optimized/IpMultiVectorMatrix.ll
@@ -514,7 +505,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -527,12 +518,12 @@ entry:
 define i32 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
-; 59 occurrences:
+; 60 occurrences:
 ; cmake/optimized/cmELF.cxx.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -558,6 +549,7 @@ entry:
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; memcached/optimized/memcached-slab_automove.ll
 ; memcached/optimized/memcached-slab_automove_extstore.ll
 ; memcached/optimized/memcached_debug-slab_automove.ll
@@ -596,7 +588,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -630,8 +622,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -645,7 +637,7 @@ entry:
 define i32 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -663,7 +655,7 @@ entry:
 define i32 @func000000000000003f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -686,7 +678,7 @@ entry:
 define i32 @func0000000000000034(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -721,7 +713,7 @@ entry:
 define i32 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -736,7 +728,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -753,21 +745,22 @@ entry:
 define i32 @func0000000000000037(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
+; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/moments.cpp.ll
 ; openspiel/optimized/gin_rummy.cc.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -784,7 +777,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -800,17 +793,18 @@ entry:
 define i32 @func0000000000000027(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; msdfgen/optimized/msdf-error-correction.cpp.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
@@ -826,7 +820,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -837,7 +831,7 @@ entry:
 define i32 @func0000000000000023(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -850,8 +844,8 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -863,7 +857,7 @@ entry:
 define i32 @func000000000000003c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -874,8 +868,8 @@ entry:
 define i32 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -889,7 +883,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add nuw i32 %4, %0
   ret i32 %5
 }
@@ -900,8 +894,8 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -911,7 +905,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nuw i32 %3, %1
+  %4 = mul nuw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -923,8 +917,8 @@ entry:
 define i32 @func000000000000002d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -935,7 +929,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -946,7 +940,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -958,8 +952,8 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -969,7 +963,7 @@ entry:
 define i32 @func000000000000002c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }

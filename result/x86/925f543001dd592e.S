@@ -32,12 +32,6 @@ func000000000000003d:                   # @func000000000000003d
 	andl	$-8388608, %eax                 # imm = 0xFF800000
 	addq	%rdi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	shll	$23, %edx
-	leal	(%rsi,%rdx), %eax
-	andl	$-8388608, %eax                 # imm = 0xFF800000
-	addq	%rdi, %rax
-	retq
 func000000000000003f:                   # @func000000000000003f
 	leaq	(%rsi,%rdx,4), %rcx
 	movabsq	$137438953464, %rax             # imm = 0x1FFFFFFFF8

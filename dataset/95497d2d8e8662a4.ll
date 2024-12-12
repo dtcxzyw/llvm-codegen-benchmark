@@ -17,8 +17,10 @@ entry:
   ret double %5
 }
 
-; 19 occurrences:
+; 21 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
+; darktable/optimized/introspection_bilateral.cc.ll
+; darktable/optimized/introspection_tonemap.cc.ll
 ; gromacs/optimized/autocorr.cpp.ll
 ; grpc/optimized/periodic_update.cc.ll
 ; opencv/optimized/distance.cpp.ll
@@ -42,7 +44,7 @@ define double @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 1.600000e+01
   %4 = select i1 %3, double 5.110000e-01, double %1
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 
@@ -67,7 +69,7 @@ define double @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %2, 0.000000e+00
   %4 = select i1 %3, double 1.000000e+00, double %1
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

@@ -8,8 +8,9 @@ func000000000000000d:                   # @func000000000000000d
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	srliw	a0, a0, 1
-	ori	a0, a0, 64
+	srliw	a0, a0, 16
+	lui	a1, 524288
+	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	srliw	a0, a0, 16

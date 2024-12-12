@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; gromacs/optimized/gmx_hbond.cpp.ll
+; 8 occurrences:
 ; linux/optimized/select.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; opencv/optimized/subdivision2d.cpp.ll

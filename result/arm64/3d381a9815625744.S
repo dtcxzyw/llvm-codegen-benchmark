@@ -1,4 +1,4 @@
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	mov	x9, #52989                      // =0xcefd
 	lsr	x8, x3, #7
@@ -8,6 +8,6 @@ func0000000000000031:                   // @func0000000000000031
 	umulh	x8, x8, x9
 	tst	x8, #0x3ffffff
 	cset	w8, eq
-	and	w0, w8, w0
+	and	w0, w0, w8
 	ret
                                         // -- End function

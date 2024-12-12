@@ -10,13 +10,13 @@
 define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/cecIso.c.ll
 ; linux/optimized/hwmon.ll
 ; qemu/optimized/blockdev.c.ll
@@ -24,13 +24,14 @@ entry:
 ; wireshark/optimized/packet-dcerpc-ndr.c.ll
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000060(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = and i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -44,9 +45,9 @@ entry:
 define i32 @func0000000000000009(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -61,7 +62,7 @@ entry:
   %3 = icmp sgt i32 %2, 0
   %4 = and i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -73,9 +74,9 @@ entry:
 define i32 @func0000000000000063(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -89,7 +90,7 @@ entry:
   %3 = icmp slt i32 %2, 30
   %4 = and i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -103,37 +104,37 @@ entry:
 define i32 @func000000000000000b(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 9
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/cnfPost.c.ll
+; boost/optimized/text_file_backend.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/nwkTiming.c.ll
 ; abc/optimized/wlnRetime.c.ll
 ; llvm/optimized/MicrosoftCXXABI.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; nuttx/optimized/lib_daysbeforemonth.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000053(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = and i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -150,7 +151,7 @@ entry:
   %3 = icmp ne i32 %2, 0
   %4 = and i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -163,7 +164,7 @@ entry:
   %3 = icmp sgt i32 %2, -1
   %4 = and i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -174,9 +175,9 @@ entry:
 define i32 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 
@@ -186,9 +187,9 @@ entry:
 define i32 @func0000000000000062(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 
@@ -198,21 +199,9 @@ entry:
 define i32 @func0000000000000020(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 536870912
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = add i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/jitterentropy.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000040(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 99
-  %4 = and i1 %3, %1
-  %5 = zext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

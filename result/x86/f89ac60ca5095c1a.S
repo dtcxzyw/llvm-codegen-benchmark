@@ -1,24 +1,24 @@
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	leal	8(%rsi,%rdx,8), %eax
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func000000000000010b:                   # @func000000000000010b
+func000000000000020b:                   # @func000000000000020b
 	leal	8(%rsi,%rdx,8), %eax
 	cmpl	%edi, %eax
 	setge	%al
 	retq
-func00000000000003e8:                   # @func00000000000003e8
+func00000000000007c8:                   # @func00000000000007c8
 	leal	4(%rdx,%rsi,4), %eax
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func00000000000003f5:                   # @func00000000000003f5
+func00000000000007f5:                   # @func00000000000007f5
 	leal	4(%rdx,%rsi,4), %eax
 	cmpl	%edi, %eax
 	setbe	%al
 	retq
-func00000000000003b5:                   # @func00000000000003b5
+func0000000000000775:                   # @func0000000000000775
 	shll	$4, %esi
 	leal	8(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
@@ -34,50 +34,50 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func0000000000000356:                   # @func0000000000000356
+func00000000000006a6:                   # @func00000000000006a6
 	leal	49(%rsi,%rdx,2), %eax
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func0000000000000371:                   # @func0000000000000371
+func00000000000006e1:                   # @func00000000000006e1
 	shll	$8, %edx
 	leal	16384(%rsi,%rdx), %eax
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	leal	2(%rdx,%rsi,2), %eax
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	shll	$4, %esi
 	leal	4(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func00000000000003fa:                   # @func00000000000003fa
+func00000000000007ea:                   # @func00000000000007ea
 	leal	2(%rdx,%rsi,4), %eax
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000308:                   # @func0000000000000308
+func0000000000000608:                   # @func0000000000000608
 	leal	4(%rsi,%rdx,4), %eax
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	shll	$4, %esi
 	leal	8(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	leal	2(%rdx,%rsi,2), %eax
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000306:                   # @func0000000000000306
+func0000000000000606:                   # @func0000000000000606
 	leal	2(%rsi,%rdx,4), %eax
 	cmpl	%edi, %eax
 	setl	%al
@@ -92,7 +92,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func000000000000030a:                   # @func000000000000030a
+func000000000000060a:                   # @func000000000000060a
 	leal	8(%rsi,%rdx,8), %eax
 	cmpl	%edi, %eax
 	setg	%al
@@ -102,19 +102,19 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func00000000000003d6:                   # @func00000000000003d6
+func00000000000007a6:                   # @func00000000000007a6
 	shll	$10, %edx
 	leal	-56613888(%rsi,%rdx), %eax
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func00000000000003db:                   # @func00000000000003db
+func00000000000007ab:                   # @func00000000000007ab
 	shll	$10, %edx
 	leal	-56613888(%rsi,%rdx), %eax
 	cmpl	%edi, %eax
 	setge	%al
 	retq
-func00000000000003f8:                   # @func00000000000003f8
+func00000000000007e8:                   # @func00000000000007e8
 	leal	1(%rsi,%rdx,2), %eax
 	cmpl	%edi, %eax
 	seta	%al

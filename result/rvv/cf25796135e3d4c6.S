@@ -14,7 +14,7 @@ func0000000000000008:                   # @func0000000000000008
 	vadd.vi	v10, v10, 3
 	vmsltu.vv	v0, v8, v10
 	ret
-func00000000000001d6:                   # @func00000000000001d6
+func00000000000003a6:                   # @func00000000000003a6
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
@@ -23,7 +23,7 @@ func00000000000001d6:                   # @func00000000000001d6
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
 	ret
-func00000000000001da:                   # @func00000000000001da
+func00000000000003aa:                   # @func00000000000003aa
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
@@ -48,7 +48,7 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vi	v10, v10, 1
 	vmsltu.vv	v0, v10, v8
 	ret
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001b8:                   # @func00000000000001b8
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13

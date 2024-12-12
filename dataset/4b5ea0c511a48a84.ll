@@ -14,7 +14,7 @@ entry:
   ret i64 %6
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -30,7 +30,6 @@ entry:
 ; libwebp/optimized/vp8l_enc.c.ll
 ; libzmq/optimized/radix_tree.cpp.ll
 ; linux/optimized/dm-ioctl.ll
-; linux/optimized/wep.ll
 ; lz4/optimized/lz4hc.c.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll

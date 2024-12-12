@@ -96,9 +96,13 @@ func0000000000000080:                   # @func0000000000000080
 	ret
 func0000000000000085:                   # @func0000000000000085
 	andi	a2, a2, 255
-	li	a3, -3
-	sltiu	a2, a2, 173
-	czero.nez	a2, a3, a2
+	lui	a3, 8
+	add	a0, a0, a1
+	lui	a1, 1048564
+	sltiu	a2, a2, 144
+	addi	a3, a3, -1792
+	addi	a1, a1, -1328
+	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

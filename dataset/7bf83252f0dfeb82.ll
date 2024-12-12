@@ -1,6 +1,7 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; assimp/optimized/SpatialSort.cpp.ll
+; boost/optimized/src.ll
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
@@ -25,8 +26,9 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; icu/optimized/gregocal.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i32 %0, i32 %1) #0 {
@@ -37,14 +39,12 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; postgres/optimized/varsup.ll
+; 1 occurrences:
 ; ruby/optimized/date_core.ll
-; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000053(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 3
+  %2 = icmp samesign ult i32 %1, 3
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = add nuw nsw i32 %3, 1
   ret i32 %4
@@ -64,7 +64,7 @@ entry:
   ret i32 %4
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/inftrees.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; c3c/optimized/diagnostics.c.ll
@@ -98,7 +98,6 @@ entry:
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/output.ll
 ; postgres/optimized/varlena.ll
-; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; redis/optimized/db.ll
 ; wireshark/optimized/file.c.ll
 ; wireshark/optimized/packet-http.c.ll
@@ -117,8 +116,7 @@ entry:
   ret i32 %4
 }
 
-; 23 occurrences:
-; abc/optimized/abcLog.c.ll
+; 22 occurrences:
 ; abc/optimized/cecSatG3.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/sfvscanf.c.ll
@@ -150,10 +148,11 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/x2top.cpp.ll
 ; libjpeg-turbo/optimized/wrgif.c.ll
 ; libquic/optimized/prtime.cc.ll
+; lvgl/optimized/lv_area.ll
 ; lz4/optimized/lz4hc.c.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; Function Attrs: nounwind
@@ -165,8 +164,7 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; icu/optimized/hebrwcal.ll
+; 2 occurrences:
 ; lz4/optimized/lz4hc.c.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
@@ -198,6 +196,18 @@ entry:
   %2 = icmp eq i32 %1, -1
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = add nuw i32 %3, 1
+  ret i32 %4
+}
+
+; 2 occurrences:
+; postgres/optimized/varsup.ll
+; wireshark/optimized/packet-nvme.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 8
+  %3 = select i1 %2, i32 %0, i32 %1
+  %4 = add nuw nsw i32 %3, 8
   ret i32 %4
 }
 

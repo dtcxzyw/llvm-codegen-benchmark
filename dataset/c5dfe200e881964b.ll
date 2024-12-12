@@ -17,22 +17,24 @@
 define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; rust-analyzer-rs/optimized/2hvuxgck7heujc9c.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

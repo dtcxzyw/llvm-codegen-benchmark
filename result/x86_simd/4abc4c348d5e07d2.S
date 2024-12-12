@@ -73,6 +73,6 @@ func0000000000000000:                   # @func0000000000000000
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %edx, %xmm2, %xmm1
-	vpmulld	%xmm0, %xmm1, %xmm0
+	vpmulld	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

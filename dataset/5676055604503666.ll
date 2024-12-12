@@ -21,8 +21,10 @@ entry:
   ret i8 %5
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
 ; libquic/optimized/s3_srvr.c.ll
 ; llvm/optimized/Instructions.cpp.ll
@@ -38,6 +40,17 @@ entry:
 define i8 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
+  %4 = select i1 %3, i1 %0, i1 false
+  %5 = zext i1 %4 to i8
+  ret i8 %5
+}
+
+; 1 occurrences:
+; boost/optimized/within.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %1, %2
   %4 = select i1 %3, i1 %0, i1 false
   %5 = zext i1 %4 to i8
   ret i8 %5
@@ -72,17 +85,6 @@ entry:
 define i8 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ule i32 %1, %2
-  %4 = select i1 %3, i1 %0, i1 false
-  %5 = zext i1 %4 to i8
-  ret i8 %5
-}
-
-; 1 occurrences:
-; linux/optimized/thermal_trip.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i1 %0, i1 false
   %5 = zext i1 %4 to i8
   ret i8 %5

@@ -85,3 +85,10 @@ func0000000000000009:                   # @func0000000000000009
 	vucomiss	%xmm1, %xmm0
 	sete	%al
 	retq
+.LCPI13_0:
+	.long	0x7f800000                      # float +Inf
+func0000000000000006:                   # @func0000000000000006
+	vaddss	%xmm1, %xmm0, %xmm0
+	vucomiss	.LCPI13_0(%rip), %xmm0
+	setne	%al
+	retq

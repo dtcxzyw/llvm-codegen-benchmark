@@ -10,6 +10,12 @@ func0000000000000008:                   # @func0000000000000008
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpq	$86400, %rdx                    # imm = 0x15180
+	setb	%al
+	orl	%esi, %edi
+	orb	%dil, %al
+	retq
 func0000000000000018:                   # @func0000000000000018
 	testq	%rdx, %rdx
 	setne	%al
@@ -19,6 +25,12 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000014:                   # @func0000000000000014
 	cmpq	$1073741823, %rdx               # imm = 0x3FFFFFFF
 	setge	%al
+	orl	%esi, %edi
+	orb	%dil, %al
+	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpq	$524288, %rdx                   # imm = 0x80000
+	setae	%al
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq

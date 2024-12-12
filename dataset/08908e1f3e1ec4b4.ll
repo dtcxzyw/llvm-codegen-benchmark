@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/plaMan.c.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -27,7 +27,6 @@
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openusd/optimized/avif_obu.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
@@ -75,6 +74,7 @@ entry:
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; c3c/optimized/bigint.c.ll
 ; chibicc/optimized/parse.ll
@@ -244,7 +244,6 @@ entry:
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/PGOCtxProfReader.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterBankInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -705,11 +704,11 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 %1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 214 occurrences:
+; 215 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/acecCore.c.ll
@@ -746,6 +745,7 @@ entry:
 ; abc/optimized/sfmArea.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sfmLib.c.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/longobject.ll
 ; fmt/optimized/format-test.cc.ll
 ; fmt/optimized/format.cc.ll

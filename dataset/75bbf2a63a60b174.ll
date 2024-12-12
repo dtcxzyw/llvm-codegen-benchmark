@@ -21,7 +21,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 8600, i32 %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = udiv i32 %4, 1000
   ret i32 %5
 }

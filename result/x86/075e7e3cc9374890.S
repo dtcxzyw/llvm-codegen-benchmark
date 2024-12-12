@@ -34,6 +34,14 @@ func000000000000010f:                   # @func000000000000010f
 	cmpb	$16, %dl
 	adcq	%rdi, %rax
 	retq
+func0000000000000300:                   # @func0000000000000300
+	xorl	%eax, %eax
+	cmpb	$-1, %dl
+	setne	%al
+	andl	$1, %esi
+	addq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000280:                   # @func0000000000000280
 	xorl	%eax, %eax
 	cmpb	$-64, %dl

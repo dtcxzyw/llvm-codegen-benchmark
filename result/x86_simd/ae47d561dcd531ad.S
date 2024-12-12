@@ -18,11 +18,11 @@ func0000000000000018:                   # @func0000000000000018
 	vpcmpnltd	%ymm1, %ymm0, %k1
 	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	vpcmpnltud	%ymm1, %ymm0, %k1
 	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	vpcmpnltud	%ymm1, %ymm0, %k1
 	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq

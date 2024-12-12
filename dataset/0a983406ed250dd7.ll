@@ -1,11 +1,10 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; curl/optimized/libcurl_la-tftp.ll
 ; folly/optimized/Compression.cpp.ll
 ; linux/optimized/evdev.ll
 ; node/optimized/libnode.string_bytes.ll
 ; openjdk/optimized/collectedHeap.ll
-; openjdk/optimized/jni.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind

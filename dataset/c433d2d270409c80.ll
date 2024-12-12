@@ -73,15 +73,14 @@ entry:
   ret double %2
 }
 
-; 3 occurrences:
-; libquic/optimized/quic_bandwidth.cc.ll
+; 2 occurrences:
 ; openusd/optimized/gprimAdapter.cpp.ll
 ; openusd/optimized/implicitSurfaceSceneIndex.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = icmp ult i64 %0, 8000000000
-  %2 = select i1 %1, double 1.000000e+06, double 1.000000e+09
+  %1 = icmp ult i64 %0, 8
+  %2 = select i1 %1, double 1.000000e+00, double 0.000000e+00
   ret double %2
 }
 

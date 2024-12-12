@@ -2,7 +2,6 @@
 ; 130 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_stmts.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; cvc5/optimized/cvc5.cpp.ll
@@ -76,6 +75,7 @@
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
 ; llvm/optimized/SimplifyIndVar.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -140,10 +140,11 @@ entry:
   ret i16 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/alps.ll
 ; linux/optimized/drm_edid.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; wireshark/optimized/packet-e164.c.ll
@@ -157,8 +158,9 @@ entry:
   ret i16 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000005(i16 %0, i8 %1) #0 {
@@ -170,9 +172,10 @@ entry:
   ret i16 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/DeclObjC.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; Function Attrs: nounwind
@@ -194,7 +197,7 @@ entry:
   %2 = and i8 %1, 64
   %3 = zext nneg i8 %2 to i16
   %4 = shl nuw nsw i16 %3, 3
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   ret i16 %5
 }
 

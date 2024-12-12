@@ -54,14 +54,13 @@ entry:
   ret i64 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; lief/optimized/Builder.cpp.ll
 ; linux/optimized/params.ll
 ; llvm/optimized/TGParser.cpp.ll
 ; minetest/optimized/connection.cpp.ll
@@ -85,12 +84,13 @@ entry:
   ret i64 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -150,8 +150,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; proj/optimized/wkt_parser.cpp.ll
+; 2 occurrences:
 ; wireshark/optimized/eri_enb_log.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind

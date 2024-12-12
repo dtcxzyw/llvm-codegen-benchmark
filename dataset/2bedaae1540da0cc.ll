@@ -1,9 +1,10 @@
 
-; 94 occurrences:
+; 101 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
+; boost/optimized/static_string.ll
 ; c3c/optimized/llvm_codegen_debug_info.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -94,11 +95,17 @@
 ; wireshark/optimized/packet-cimd.c.ll
 ; wireshark/optimized/packet-dcom-cba-acco.c.ll
 ; wireshark/optimized/packet-usbms-uasp.c.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 
@@ -111,24 +118,28 @@ entry:
 define i1 @func000000000000000c(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = icmp ne i16 %2, %0
+  %3 = icmp ne i16 %0, %2
   ret i1 %3
 }
 
-; 2 occurrences:
+; 5 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; minetest/optimized/craftdef.cpp.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i16
-  %3 = icmp ugt i16 %2, %0
+  %3 = icmp ult i16 %0, %2
   ret i1 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
+; boost/optimized/basic_iarchive.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; openjdk/optimized/deoptimization.ll
@@ -140,7 +151,7 @@ entry:
 define i1 @func0000000000000006(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = icmp sgt i16 %2, %0
+  %3 = icmp slt i16 %0, %2
   ret i1 %3
 }
 
@@ -148,10 +159,10 @@ entry:
 ; brotli/optimized/entropy_encode.c.ll
 ; minetest/optimized/minimap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i16
-  %3 = icmp sgt i16 %2, %0
+  %3 = icmp slt i16 %0, %2
   ret i1 %3
 }
 
@@ -166,17 +177,17 @@ entry:
 define i1 @func000000000000000a(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = icmp slt i16 %2, %0
+  %3 = icmp sgt i16 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; minetest/optimized/minimap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i16 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i16
-  %3 = icmp slt i16 %2, %0
+  %3 = icmp sgt i16 %0, %2
   ret i1 %3
 }
 
@@ -222,7 +233,7 @@ entry:
 define i1 @func0000000000000004(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = icmp ugt i16 %2, %0
+  %3 = icmp ult i16 %0, %2
   ret i1 %3
 }
 
@@ -253,11 +264,11 @@ entry:
 define i1 @func0000000000000008(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp ugt i16 %0, %2
   ret i1 %3
 }
 
-; 7 occurrences:
+; 14 occurrences:
 ; flatbuffers/optimized/idl_gen_fbs.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -265,11 +276,18 @@ entry:
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; rust-analyzer-rs/optimized/2b934puhcj043qyo.ll
 ; rust-analyzer-rs/optimized/34aixgz8bp7wb24p.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i16
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 
@@ -277,24 +295,34 @@ entry:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i16
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp ugt i16 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
-; llvm/optimized/ScaledNumber.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp ugt i16 %0, %2
   ret i1 %3
 }
 
-; 7 occurrences:
+; 1 occurrences:
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i16 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i16
+  %3 = icmp ne i16 %0, %2
+  ret i1 %3
+}
+
+; 9 occurrences:
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
@@ -302,11 +330,13 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
-  %3 = icmp ugt i16 %2, %0
+  %3 = icmp ult i16 %0, %2
   ret i1 %3
 }
 
@@ -316,7 +346,7 @@ entry:
 define i1 @func0000000000000007(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = icmp sge i16 %2, %0
+  %3 = icmp sle i16 %0, %2
   ret i1 %3
 }
 
@@ -326,7 +356,7 @@ entry:
 define i1 @func000000000000000b(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = icmp sle i16 %2, %0
+  %3 = icmp sge i16 %0, %2
   ret i1 %3
 }
 

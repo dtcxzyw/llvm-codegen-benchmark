@@ -12,7 +12,7 @@ entry:
   ret i32 %5
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; linux/optimized/avc.ll
 ; linux/optimized/blk-iocost.ll
@@ -23,9 +23,7 @@ entry:
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/iommu-traces.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/sched.ll
@@ -37,15 +35,14 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 4
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, -4
   %5 = add i32 %4, 4
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/virtio_net.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind

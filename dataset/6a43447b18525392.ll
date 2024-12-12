@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; folly/optimized/AsyncUDPSocket.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; openjdk/optimized/barrierSetAssembler_x86.ll
 ; openjdk/optimized/xBarrierSetAssembler_x86.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 372 occurrences:
+; 389 occurrences:
 ; clamav/optimized/chmd.c.ll
 ; clap-rs/optimized/4r6y4qxwk52m92uh.ll
 ; cmake/optimized/json_writer.cpp.ll
@@ -30,6 +30,15 @@
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; git/optimized/utf8.ll
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; html5ever-rs/optimized/2k27uywn6e9ruua6.ll
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
 ; hyperscan/optimized/Parser.cpp.ll
@@ -372,13 +381,21 @@
 ; wireshark/optimized/packet-knet.c.ll
 ; wireshark/optimized/packet-q931.c.ll
 ; wireshark/optimized/packet-q933.c.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 63
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw nsw i32 %1, 12
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -391,7 +408,7 @@ entry:
   %3 = and i8 %2, 127
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw nsw i32 %1, 6
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -405,7 +422,7 @@ entry:
   %3 = and i8 %2, 8
   %4 = zext nneg i8 %3 to i32
   %5 = shl i32 %1, 4
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -419,7 +436,7 @@ entry:
   %3 = and i8 %2, -16
   %4 = zext i8 %3 to i32
   %5 = shl nuw nsw i32 %1, 8
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -432,7 +449,7 @@ entry:
   %3 = and i8 %2, -128
   %4 = zext i8 %3 to i32
   %5 = shl i32 %1, 30
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

@@ -33,7 +33,7 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/giaMuxes.c.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
@@ -41,7 +41,6 @@ entry:
 ; git/optimized/date.ll
 ; icu/optimized/gregocal.ll
 ; icu/optimized/persncal.ll
-; openblas/optimized/dgesdd.c.ll
 ; postgres/optimized/localtime.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; wireshark/optimized/packet-smb.c.ll

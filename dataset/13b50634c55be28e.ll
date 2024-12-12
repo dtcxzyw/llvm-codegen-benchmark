@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; freetype/optimized/ftbase.c.ll
@@ -8,7 +8,6 @@
 ; linux/optimized/hda_controller.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/BranchProbability.cpp.ll
-; openmpi/optimized/timer_linux_component.ll
 ; php/optimized/softmagic.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; quickjs/optimized/libbf.ll

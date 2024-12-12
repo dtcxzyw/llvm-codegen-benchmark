@@ -233,7 +233,7 @@
 define i32 @func0000000000000007(i16 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = zext nneg i16 %3 to i32
   %5 = shl nuw nsw i32 %4, 20
   ret i32 %5

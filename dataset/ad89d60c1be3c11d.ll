@@ -4,7 +4,7 @@
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; flac/optimized/foreign_metadata.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000266(i64 %0, i64 %1) #0 {
+define i1 @func00000000000008c6(i64 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, 128
   %2 = icmp ne i64 %.mask, 0

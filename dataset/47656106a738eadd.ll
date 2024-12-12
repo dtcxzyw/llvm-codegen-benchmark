@@ -2,9 +2,9 @@
 ; 1 occurrences:
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000053(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 32768
+  %3 = icmp samesign ult i32 %2, 32768
   %4 = select i1 %3, i32 1, i32 2
   %5 = select i1 %1, i32 0, i32 %4
   %6 = shl nuw nsw i32 %0, %5
@@ -16,9 +16,9 @@ entry:
 ; luajit/optimized/lj_parse_dyn.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000050(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 65535
+  %3 = icmp samesign ult i32 %2, 65535
   %4 = select i1 %3, i32 1, i32 2
   %5 = select i1 %1, i32 0, i32 %4
   %6 = shl i32 %0, %5

@@ -4,19 +4,19 @@ func0000000000000006:                   # @func0000000000000006
 	addl	%esi, %eax
 	cmovsl	%edi, %eax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	movl	%edx, %eax
 	andl	$2147418112, %eax               # imm = 0x7FFF0000
 	addl	%esi, %eax
 	cmovsl	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	%edx, %eax
 	andl	$1, %eax
 	addl	%esi, %eax
 	cmovel	%edi, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	andl	$31, %edx
 	leal	(%rdx,%rsi), %eax
 	cmpl	$33, %eax

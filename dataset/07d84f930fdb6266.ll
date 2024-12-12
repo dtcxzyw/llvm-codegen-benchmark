@@ -31,6 +31,23 @@ entry:
   ret i32 %5
 }
 
+; 6 occurrences:
+; nuttx/optimized/fs_select.c.ll
+; slurm/optimized/node_features_knl_generic.ll
+; slurm/optimized/run_command.ll
+; slurm/optimized/slurm_persist_conn.ll
+; slurm/optimized/slurm_protocol_socket.ll
+; spdlog/optimized/spdlog.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %1, 4294966296
+  %3 = sdiv i64 %0, -1000
+  %4 = add i64 %3, %2
+  %5 = trunc i64 %4 to i32
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; linux/optimized/mon_text.ll
 ; Function Attrs: nounwind
@@ -39,19 +56,6 @@ entry:
   %2 = sdiv i64 %1, 1000
   %3 = mul nuw nsw i64 %0, 1000000
   %4 = add nsw i64 %3, %2
-  %5 = trunc i64 %4 to i32
-  ret i32 %5
-}
-
-; 2 occurrences:
-; nuttx/optimized/fs_select.c.ll
-; spdlog/optimized/spdlog.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %1, 1000
-  %3 = sdiv i64 %0, 1000
-  %4 = add i64 %3, %2
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

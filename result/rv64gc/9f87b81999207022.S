@@ -4,7 +4,7 @@ func0000000000000050:                   # @func0000000000000050
 	add	a0, a0, a1
 	addi	a0, a0, 38
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	slli	a1, a1, 1
 	addiw	a1, a1, -2
 	slli	a1, a1, 4
@@ -38,4 +38,10 @@ func0000000000000040:                   # @func0000000000000040
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, -4
+	ret
+func000000000000005b:                   # @func000000000000005b
+	slli	a1, a1, 2
+	addiw	a1, a1, -4
+	add	a0, a0, a1
+	addi	a0, a0, 1
 	ret

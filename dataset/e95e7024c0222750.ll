@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 70 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -24,7 +24,6 @@
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/neighbour.ll
-; linux/optimized/ratelimit.ll
 ; linux/optimized/sch_generic.ll
 ; linux/optimized/static_call_inline.ll
 ; linux/optimized/vt.ll
@@ -75,22 +74,22 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
+; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/message.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/truetype.c.ll
 ; graphviz/optimized/exerror.c.ll
@@ -115,12 +114,11 @@ entry:
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
 ; openexr/optimized/ImfMisc.cpp.ll
 ; openjdk/optimized/loopnode.ll
 ; openmpi/optimized/ad_write_coll.ll
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; ruby/optimized/time.ll
@@ -129,12 +127,12 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
 
-; 9 occurrences:
+; 20 occurrences:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
@@ -144,11 +142,22 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cms_pwri.ll
 ; qemu/optimized/block_nvme.c.ll
 ; velox/optimized/MmapAllocator.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -168,7 +177,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -182,12 +191,13 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/positional_options.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
@@ -196,7 +206,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nuw nsw i64 %4, %0
   ret i64 %5
 }

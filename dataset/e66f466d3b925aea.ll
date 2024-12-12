@@ -15,18 +15,16 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; hermes/optimized/InstSimplify.cpp.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; linux/optimized/ehci-pci.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
-; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/ParseExpr.cpp.ll
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

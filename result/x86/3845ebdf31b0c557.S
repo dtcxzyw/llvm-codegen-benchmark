@@ -5,26 +5,26 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	andl	$1, %edx
 	addq	%rsi, %rdi
 	addq	%rdx, %rdi
 	cmpq	$11, %rdi
 	setb	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	andl	$1, %edx
 	addq	%rsi, %rdi
 	addq	%rdx, %rdi
 	setns	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	andl	$1, %edx
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	shrq	$63, %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	andl	$1, %edx
 	addq	%rsi, %rdi
 	addq	%rdx, %rdi
@@ -56,20 +56,20 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$49, %rdi
 	setne	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000f8:                   # @func00000000000000f8
 	andl	$1, %edx
 	addq	%rsi, %rdi
 	addq	%rdx, %rdi
 	cmpq	$2047, %rdi                     # imm = 0x7FF
 	setae	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	andl	$1, %edx
 	addq	%rsi, %rdi
 	orq	%rdx, %rdi
 	sete	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	andl	$1, %edx
 	addq	%rsi, %rdi
 	orq	%rdx, %rdi

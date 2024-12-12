@@ -1,11 +1,10 @@
 
-; 202 occurrences:
+; 201 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; hermes/optimized/Lowering.cpp.ll
 ; hermes/optimized/Mem2Reg.cpp.ll
-; linux/optimized/glue.ll
 ; llvm/optimized/AArch64PostSelectOptimize.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -50,6 +49,7 @@
 ; llvm/optimized/FunctionLoweringInfo.cpp.ll
 ; llvm/optimized/FunctionSpecialization.cpp.ll
 ; llvm/optimized/GCDAntipatternChecker.cpp.ll
+; llvm/optimized/GCOVProfiling.cpp.ll
 ; llvm/optimized/GTestChecker.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
 ; llvm/optimized/GVNSink.cpp.ll
@@ -181,7 +181,6 @@
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/library_call.ll
 ; openjdk/optimized/subnode.ll
-; openmpi/optimized/group_set_rank.ll
 ; openusd/optimized/bboxCache.cpp.ll
 ; openusd/optimized/discoveryPlugin.cpp.ll
 ; openusd/optimized/imageable.cpp.ll

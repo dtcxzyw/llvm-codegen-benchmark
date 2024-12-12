@@ -1,6 +1,9 @@
 
-; 6 occurrences:
+; 9 occurrences:
 ; flac/optimized/bitreader.c.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; libdeflate/optimized/deflate_decompress.c.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; openusd/optimized/openexr-c.c.ll

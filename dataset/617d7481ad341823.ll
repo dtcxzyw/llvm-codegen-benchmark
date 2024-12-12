@@ -43,18 +43,17 @@ entry:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 1
   %5 = sub nuw nsw i64 2, %4
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/gre_offload.ll
-; linux/optimized/gso.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/udp.ll
@@ -89,7 +88,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %.not = add i64 %3, %2
+  %.not = add i64 %2, %3
   %4 = and i64 %.not, -8
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5

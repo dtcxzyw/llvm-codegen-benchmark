@@ -1,5 +1,5 @@
 
-%"struct.Node_Stack::INode.2627681" = type { ptr, i32 }
+%"struct.Node_Stack::INode.2741095" = type { ptr, i32 }
 
 ; 47 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -50,12 +50,12 @@
 ; redis/optimized/ldebug.ll
 ; wasmedge/optimized/global.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -76,12 +76,12 @@ entry:
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = add nsw i64 %2, -2
   %4 = and i64 %3, -4
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -119,12 +119,12 @@ entry:
 ; openjdk/optimized/replacednodes.ll
 ; openjdk/optimized/shenandoahSupport.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = add nuw nsw i64 %2, 4294967294
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw %"struct.Node_Stack::INode.2627681", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.Node_Stack::INode.2741095", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -145,12 +145,12 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -158,12 +158,12 @@ entry:
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ucnv2022.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = add nuw i64 %2, 4294967294
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   ret ptr %5
 }
 

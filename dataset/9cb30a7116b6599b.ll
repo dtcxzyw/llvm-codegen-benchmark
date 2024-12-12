@@ -7,16 +7,17 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4094
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/utilCex.c.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
+; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {

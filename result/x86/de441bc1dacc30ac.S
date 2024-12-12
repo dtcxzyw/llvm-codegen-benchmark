@@ -3,15 +3,15 @@ func0000000000000002:                   # @func0000000000000002
 	shrl	%eax
 	incl	%eax
 	retq
-func000000000000001b:                   # @func000000000000001b
-	leal	(%rdi,%rsi), %eax
-	shrl	%eax
-	incl	%eax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	leal	(%rdi,%rsi), %eax
 	shrl	%eax
 	decl	%eax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	leal	(%rdi,%rsi), %eax
+	shrl	%eax
+	incl	%eax
 	retq
 func0000000000000003:                   # @func0000000000000003
 	leal	(%rdi,%rsi), %eax

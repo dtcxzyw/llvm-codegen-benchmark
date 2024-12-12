@@ -13,8 +13,7 @@ entry:
   ret i32 %7
 }
 
-; 6 occurrences:
-; abc/optimized/fxuPair.c.ll
+; 5 occurrences:
 ; linux/optimized/tree.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprObjC.cpp.ll
@@ -24,9 +23,9 @@ entry:
 define i32 @func0000000000000007(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = select i1 %3, i32 0, i32 8
-  %5 = or disjoint i32 %4, %0
-  %6 = select i1 %1, i32 0, i32 2
+  %4 = select i1 %3, i32 0, i32 262144
+  %5 = or disjoint i32 %0, %4
+  %6 = select i1 %1, i32 0, i32 1048576
   %7 = or disjoint i32 %5, %6
   ret i32 %7
 }
@@ -39,7 +38,7 @@ define i32 @func0000000000000033(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %.not = icmp eq ptr %2, null
   %3 = select i1 %.not, i32 0, i32 4194304
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = select i1 %1, i32 524288, i32 0
   %6 = or disjoint i32 %4, %5
   ret i32 %6
@@ -52,7 +51,7 @@ define i32 @func0000000000000006(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i32 0, i32 512
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = select i1 %1, i32 0, i32 1025
   %7 = or i32 %5, %6
   ret i32 %7

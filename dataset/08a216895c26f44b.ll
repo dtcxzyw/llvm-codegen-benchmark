@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 83 occurrences:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; coreutils-rs/optimized/1hfndwarkzjc08wu.ll
@@ -16,9 +16,6 @@
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; delta-rs/optimized/v2ww4w96jtc8bk1.ll
 ; delta-rs/optimized/wrhqeq9ewpf5gr8.ll
-; entt/optimized/meta_data.cpp.ll
-; entt/optimized/meta_func.cpp.ll
-; entt/optimized/meta_type.cpp.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
@@ -85,10 +82,7 @@
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/3xoiqyy2a9jbg7ae.ll
-; wasmtime-rs/optimized/3yr40www2jy0a6jn.ll
-; wasmtime-rs/optimized/49putx1a0760eu8s.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
-; wasmtime-rs/optimized/o2h6j06mg3v3bs7.ll
 ; Function Attrs: nounwind
 define { ptr, ptr } @func0000000000000002(i1 %0, ptr %1, ptr %2) #0 {
 entry:
@@ -96,6 +90,21 @@ entry:
   %4 = select i1 %0, ptr null, ptr %3
   %5 = insertvalue { ptr, ptr } poison, ptr %4, 0
   %6 = select i1 %0, ptr undef, ptr %1
+  %7 = insertvalue { ptr, ptr } %5, ptr %6, 1
+  ret { ptr, ptr } %7
+}
+
+; 3 occurrences:
+; entt/optimized/meta_data.cpp.ll
+; entt/optimized/meta_func.cpp.ll
+; entt/optimized/meta_type.cpp.ll
+; Function Attrs: nounwind
+define { ptr, ptr } @func0000000000000003(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = select i1 %0, ptr null, ptr %3
+  %5 = insertvalue { ptr, ptr } poison, ptr %4, 0
+  %6 = select i1 %0, ptr null, ptr %1
   %7 = insertvalue { ptr, ptr } %5, ptr %6, 1
   ret { ptr, ptr } %7
 }

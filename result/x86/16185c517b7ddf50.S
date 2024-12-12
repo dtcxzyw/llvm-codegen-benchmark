@@ -30,6 +30,14 @@ func000000000000000a:                   # @func000000000000000a
 	adcq	%rsi, %rcx
 	movq	%rcx, %rdx
 	retq
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdx, %rax
+	addq	%r8, %rax
+	adcq	%r9, %rcx
+	addq	%rdi, %rax
+	adcq	%rsi, %rcx
+	movq	%rcx, %rdx
+	retq
 func0000000000000005:                   # @func0000000000000005
 	movq	%rdx, %rax
 	addq	%r8, %rax

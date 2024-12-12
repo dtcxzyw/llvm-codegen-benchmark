@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_enlargecanvas.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
@@ -8,7 +8,6 @@
 ; gromacs/optimized/freevolume.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; opencv/optimized/nldiffusion_functions.cpp.ll
 ; openjdk/optimized/DirectAudioDevice.ll

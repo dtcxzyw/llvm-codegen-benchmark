@@ -12,13 +12,12 @@ entry:
   ret ptr %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/maple_tree.ll
 ; openjdk/optimized/verifier.ll
 ; protobuf/optimized/writer.cc.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wireshark/optimized/packet-dcm.c.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i32 %0) #0 {
 entry:

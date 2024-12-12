@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 104 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
@@ -38,6 +38,7 @@
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; just-rs/optimized/4mdvpwvrpdu4jonv.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
+; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
 ; log-rs/optimized/2fembjqwp89ywpt5.ll
 ; meilisearch-rs/optimized/2fpcolt33ttb4v7z.ll
@@ -87,11 +88,22 @@
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; tokenizers-rs/optimized/40hmx6rev8evi2bx.ll
 ; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/dfflibmap.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/b9ty0axfl2ld0co5krahg7gfq.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0) #0 {
 entry:
@@ -101,15 +113,14 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; php/optimized/formatted_print.ll
-; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0) #0 {
+define i8 @func0000000000000034(i8 %0) #0 {
 entry:
   %1 = add nsw i8 %0, -1
-  %2 = icmp ult i8 %1, 2
+  %2 = icmp samesign ult i8 %1, 2
   %3 = select i1 %2, i8 -1, i8 2
   ret i8 %3
 }
@@ -117,7 +128,7 @@ entry:
 ; 1 occurrences:
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000002a(i8 %0) #0 {
+define i8 @func000000000000004a(i8 %0) #0 {
 entry:
   %1 = add nuw i8 %0, 1
   %2 = icmp sgt i8 %1, 1
@@ -138,11 +149,24 @@ entry:
 }
 
 ; 3 occurrences:
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000024(i8 %0) #0 {
+entry:
+  %1 = add nsw i8 %0, 15
+  %2 = icmp ult i8 %1, 3
+  %3 = select i1 %2, i8 7, i8 0
+  ret i8 %3
+}
+
+; 3 occurrences:
 ; wasmtime-rs/optimized/2niyyz8nbah1jl4k.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wasmtime-rs/optimized/jqxcpn1is9b9z0t.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0) #0 {
+define i8 @func0000000000000021(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 6
   %2 = select i1 %1, i8 4, i8 0

@@ -1,6 +1,7 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
+; hwloc/optimized/memattrs.ll
 ; lief/optimized/Note.cpp.ll
 ; linux/optimized/md.ll
 ; linux/optimized/xprt.ll
@@ -32,7 +33,7 @@ entry:
 ; php/optimized/softmagic.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -1
   %3 = icmp ult i64 %2, %1

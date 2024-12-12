@@ -1,66 +1,66 @@
 func0000000000000001:                   # @func0000000000000001
 	shrq	%rdx
 	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	shrq	$12, %rdx
 	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setb	%al
+	cmpq	%rdx, %rdi
+	seta	%al
 	retq
 func0000000000000005:                   # @func0000000000000005
 	shrq	$12, %rdx
 	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setae	%al
+	cmpq	%rdx, %rdi
+	setbe	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	shrq	$6, %rdx
 	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
+	setb	%al
+	retq
+func0000000000000021:                   # @func0000000000000021
+	shrq	%rdx
+	subq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	sete	%al
+	retq
+func00000000000000a1:                   # @func00000000000000a1
+	shrq	%rdx
+	subq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	sete	%al
+	retq
+func0000000000000024:                   # @func0000000000000024
+	shrq	%rdx
+	subq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	setb	%al
+	retq
+func0000000000000078:                   # @func0000000000000078
+	shrq	$12, %rdx
+	subq	%rsi, %rdx
+	cmpq	%rdx, %rdi
 	seta	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	shrq	%rdx
-	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	sete	%al
-	retq
-func0000000000000051:                   # @func0000000000000051
-	shrq	%rdx
-	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	sete	%al
-	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000061:                   # @func0000000000000061
 	shrq	$12, %rdx
 	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setb	%al
-	retq
-func0000000000000031:                   # @func0000000000000031
-	shrq	$12, %rdx
-	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
-	retq
-func0000000000000018:                   # @func0000000000000018
-	shrq	$12, %rdx
-	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setb	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	shrq	$3, %rdx
 	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setg	%al
+	cmpq	%rdx, %rdi
+	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	shrq	$3, %rdx
 	subq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setg	%al
+	cmpq	%rdx, %rdi
+	setl	%al
 	retq

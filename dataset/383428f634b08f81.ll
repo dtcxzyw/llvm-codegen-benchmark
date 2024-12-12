@@ -1,17 +1,13 @@
 
-; 14 occurrences:
+; 10 occurrences:
+; boost/optimized/to_chars.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; Function Attrs: nounwind

@@ -1,7 +1,6 @@
-func00000000000002a4:                   # @func00000000000002a4
+func00000000000007c4:                   # @func00000000000007c4
 	andl	$1, %edi
-	leaq	2(%rsi,%rdi,2), %rax
-	addq	%rsi, %rdx
+	leaq	2(%rdi,%rdi), %rax
 	cmpq	%rdx, %rax
-	setb	%al
+	setl	%al
 	retq

@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/MDLLoader.cpp.ll
@@ -30,7 +30,6 @@
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll

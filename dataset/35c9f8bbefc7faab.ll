@@ -265,7 +265,7 @@ entry:
   ret i64 %4
 }
 
-; 272 occurrences:
+; 271 occurrences:
 ; gromacs/optimized/bench_setup.cpp.ll
 ; gromacs/optimized/nbnxmsetuphelpers.cpp.ll
 ; grpc/optimized/message_size_filter.cc.ll
@@ -363,7 +363,6 @@ entry:
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; llvm/optimized/DataLayout.cpp.ll
 ; llvm/optimized/DeadStoreElimination.cpp.ll
-; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; llvm/optimized/ExpandMemCmp.cpp.ll
 ; llvm/optimized/ExpandReductions.cpp.ll
@@ -460,7 +459,6 @@ entry:
 ; llvm/optimized/Program.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
@@ -538,6 +536,7 @@ entry:
 ; spike/optimized/socketif.ll
 ; xgboost/optimized/aft_obj.cc.ll
 ; z3/optimized/theory_lra.cpp.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

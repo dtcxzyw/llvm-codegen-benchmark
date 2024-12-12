@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/mapperTree.c.ll
 ; abc/optimized/utilNam.c.ll
@@ -19,7 +19,6 @@
 ; linux/optimized/auditsc.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/gro.ll
-; linux/optimized/mcast_snoop.ll
 ; luajit/optimized/buildvm.ll
 ; luajit/optimized/lj_bcwrite.ll
 ; luajit/optimized/lj_bcwrite_dyn.ll
@@ -45,7 +44,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
   %6 = add i32 %5, 1
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -59,7 +58,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
   %6 = add i32 %5, 5
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -78,6 +77,19 @@ entry:
   %5 = trunc i64 %4 to i32
   %6 = add nsw i32 %5, 1
   %7 = add nsw i32 %6, %0
+  ret i32 %7
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = trunc i64 %4 to i32
+  %6 = add nuw nsw i32 %5, 1
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 

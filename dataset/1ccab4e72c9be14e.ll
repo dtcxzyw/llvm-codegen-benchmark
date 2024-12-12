@@ -50,10 +50,8 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; abc/optimized/abcCascade.c.ll
-; openblas/optimized/dgesdd.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; opencv/optimized/denoising.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
@@ -64,16 +62,13 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; gromacs/optimized/dlasd1.cpp.ll
+; 1 occurrences:
 ; gromacs/optimized/gmx_arpack.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = mul nsw i32 %2, %2
-  %4 = add nsw i32 %0, %1
+  %3 = add nsw i32 %1, %2
+  %4 = mul nsw i32 %0, %0
   %5 = add nsw i32 %4, %3
   ret i32 %5
 }
@@ -89,8 +84,7 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; openblas/optimized/dsytrd_sy2sb.c.ll
+; 2 occurrences:
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; Function Attrs: nounwind

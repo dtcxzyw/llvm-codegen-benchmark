@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-buffer.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -1056768
   %4 = icmp ugt i32 %1, 55295
@@ -17,7 +17,7 @@ entry:
 ; openjdk/optimized/png.ll
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i32 %1, 16
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, 1
   %4 = icmp ne i32 %2, 0
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, -1
   %4 = icmp eq i32 %2, 0
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, 0
   %4 = icmp ne i32 %2, 16777223
@@ -63,21 +63,9 @@ entry:
 }
 
 ; 1 occurrences:
-; gromacs/optimized/xtc2.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %1, -2
-  %4 = icmp ult i32 %2, 3
-  %5 = and i1 %4, %3
-  %6 = select i1 %5, i32 %0, i32 %1
-  ret i32 %6
-}
-
-; 1 occurrences:
 ; wireshark/optimized/packet-infiniband.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, 1
   %4 = icmp sgt i32 %2, -1
@@ -89,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/hook_comm_method_fns.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -98,27 +86,10 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
-; linux/optimized/ethtool.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 10
-  %4 = icmp ugt i32 %1, 6
-  %5 = and i1 %4, %3
-  %6 = select i1 %5, i32 %0, i32 %1
-  ret i32 %6
-}
-
 ; 1 occurrences:
 ; postgres/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000146(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, 0
   %4 = icmp slt i32 %2, -1999
@@ -154,7 +125,7 @@ entry:
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, 1
   %4 = icmp eq i32 %2, 4
@@ -163,10 +134,26 @@ entry:
   ret i32 %6
 }
 
+; 5 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 1
+  %4 = icmp ugt i32 %1, 1
+  %5 = and i1 %4, %3
+  %6 = select i1 %5, i32 %0, i32 %1
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; libwebp/optimized/vp8l_enc.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp sgt i32 %1, 17

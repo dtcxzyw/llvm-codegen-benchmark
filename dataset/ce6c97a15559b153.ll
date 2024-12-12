@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/macroAssembler_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 14

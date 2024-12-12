@@ -58,6 +58,21 @@ entry:
   ret i32 %4
 }
 
+; 5 occurrences:
+; linux/optimized/intel_display_power_well.ll
+; linux/optimized/resize.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; openusd/optimized/warped_motion.c.ll
+; zxing/optimized/ConcentricFinder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -14
+  %3 = add i32 %2, %0
+  %4 = shl nuw i32 1, %3
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; openusd/optimized/convolve.c.ll
 ; Function Attrs: nounwind
@@ -66,20 +81,6 @@ entry:
   %2 = add i32 %1, -1
   %3 = add i32 %2, %0
   %4 = shl nsw i32 -1, %3
-  ret i32 %4
-}
-
-; 4 occurrences:
-; linux/optimized/intel_display_power_well.ll
-; linux/optimized/resize.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; zxing/optimized/ConcentricFinder.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -9
-  %3 = add i32 %2, %0
-  %4 = shl nuw i32 1, %3
   ret i32 %4
 }
 

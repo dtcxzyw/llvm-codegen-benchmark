@@ -1,13 +1,11 @@
 
-; 3 occurrences:
-; icu/optimized/unames.ll
-; jq/optimized/jv.ll
+; 1 occurrences:
 ; re2/optimized/compile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 96
-  %4 = or i1 %3, %1
+  %3 = icmp samesign ugt i32 %2, 96
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -29,7 +27,11 @@ entry:
   ret i1 %5
 }
 
-; 46 occurrences:
+; 50 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stdin.ll
 ; cpython/optimized/optimizer_analysis.ll
 ; crow/optimized/example_ws.cpp.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
@@ -80,14 +82,16 @@ entry:
 define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 88 occurrences:
+; 90 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/inflate.c.ll
+; brotli/optimized/brotli_bit_stream.c.ll
+; brotli/optimized/histogram.c.ll
 ; clamav/optimized/inflate64.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/unzip.c.ll
@@ -111,6 +115,7 @@ entry:
 ; icu/optimized/wrtxml.ll
 ; jq/optimized/unicode.ll
 ; libquic/optimized/inflate.c.ll
+; lief/optimized/psa_crypto_aead.c.ll
 ; linux/optimized/dm-io.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/inflate.ll
@@ -126,7 +131,6 @@ entry:
 ; llvm/optimized/IndexingContext.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaStmtAttr.cpp.ll
@@ -178,14 +182,15 @@ entry:
 define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; icu/optimized/writesrc.ll
+; libwebp/optimized/predictor_enc.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openmpi/optimized/libmpi_c_profile_la-dist_graph_create.ll
 ; openmpi/optimized/libmpi_c_profile_la-dist_graph_create_adjacent.ll
@@ -203,9 +208,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; hwloc/optimized/topology-x86.ll
-; icu/optimized/wrtxml.ll
+; 7 occurrences:
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/IVDescriptors.cpp.ll
@@ -217,6 +220,31 @@ entry:
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
+  %4 = or i1 %1, %3
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; clamav/optimized/filtering.c.ll
+; icu/optimized/unames.ll
+; jq/optimized/jv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 65535
+  %4 = or i1 %1, %3
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
+; hwloc/optimized/topology-x86.ll
+; icu/optimized/wrtxml.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 55296
   %4 = or i1 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5

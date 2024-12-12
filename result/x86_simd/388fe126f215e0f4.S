@@ -9,10 +9,10 @@ func0000000000000018:                   # @func0000000000000018
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
+	.short	65534                           # 0xfffe
+	.short	65534                           # 0xfffe
+	.short	65534                           # 0xfffe
+	.short	65534                           # 0xfffe
 	.zero	2
 	.zero	2
 	.zero	2

@@ -3,10 +3,10 @@
 ; openssl/optimized/libcrypto-lib-bio_dump.ll
 ; openssl/optimized/libcrypto-shlib-bio_dump.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -23,10 +23,10 @@ entry:
 ; openjdk/optimized/hb-ot-var.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000e8(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
@@ -37,7 +37,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -50,22 +50,21 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000ea(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
-; 2 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
@@ -79,7 +78,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
@@ -91,10 +90,10 @@ entry:
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000ec(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = icmp ne i32 %4, %0
   ret i1 %5
 }

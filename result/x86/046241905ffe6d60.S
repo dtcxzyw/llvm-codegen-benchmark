@@ -1,43 +1,43 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	leaq	1(%rsi,%rsi), %rax
-	cmpq	%rdi, %rax
-	setb	%al
-	retq
-func0000000000000018:                   # @func0000000000000018
-	leaq	1(,%rsi,8), %rax
-	cmpq	%rdi, %rax
-	setb	%al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	leaq	1(%rsi,%rsi), %rax
-	cmpq	%rdi, %rax
-	sete	%al
-	retq
-func000000000000007c:                   # @func000000000000007c
-	orq	$8388608, %rsi                  # imm = 0x800000
-	shlq	$8, %rsi
-	cmpq	%rdi, %rsi
-	setne	%al
-	retq
-func0000000000000078:                   # @func0000000000000078
-	leaq	1(%rsi,%rsi), %rax
-	cmpq	%rdi, %rax
-	setb	%al
-	retq
-func0000000000000074:                   # @func0000000000000074
-	shlq	$8, %rsi
-	orq	$64, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
-	shlq	$4, %rsi
-	orq	$2, %rsi
-	cmpq	%rdi, %rsi
+func0000000000000028:                   # @func0000000000000028
+	leaq	1(,%rsi,8), %rax
+	cmpq	%rax, %rdi
+	seta	%al
+	retq
+func0000000000000021:                   # @func0000000000000021
+	leaq	1(%rsi,%rsi), %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000003a:                   # @func000000000000003a
+func00000000000000ec:                   # @func00000000000000ec
+	orq	$8388608, %rsi                  # imm = 0x800000
+	shlq	$8, %rsi
+	cmpq	%rsi, %rdi
+	setne	%al
+	retq
+func00000000000000e4:                   # @func00000000000000e4
+	shlq	$8, %rsi
+	orq	$64, %rsi
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func00000000000000e1:                   # @func00000000000000e1
+	shlq	$4, %rsi
+	orq	$2, %rsi
+	cmpq	%rsi, %rdi
+	sete	%al
+	retq
+func000000000000006a:                   # @func000000000000006a
 	leaq	3(,%rsi,4), %rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
+	retq
+func00000000000000e8:                   # @func00000000000000e8
+	leaq	1(%rsi,%rsi), %rax
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

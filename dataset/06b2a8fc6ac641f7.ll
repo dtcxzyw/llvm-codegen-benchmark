@@ -1,13 +1,14 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/xhci-hub.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i8 %0) #0 {
 entry:

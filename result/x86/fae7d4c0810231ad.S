@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	addl	%edi, %edi
 	leal	(%rdi,%rdi,2), %eax
 	cmpl	%esi, %eax
@@ -10,28 +10,28 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%esi, %eax
 	seta	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	leal	(%rdi,%rdi,2), %eax
 	cmpl	%esi, %eax
 	setg	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leal	(%rdi,%rdi,2), %eax
 	cmpl	%esi, %eax
 	setg	%al
 	retq
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	leal	(%rdi,%rdi,2), %eax
 	cmpl	%esi, %eax
 	setg	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	shll	$2, %edi
 	leal	(%rdi,%rdi,2), %eax
 	cmpl	%esi, %eax
 	setb	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	(%rdi,%rdi,2), %eax
 	cmpl	%esi, %eax
 	setl	%al
@@ -41,12 +41,12 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%esi, %eax
 	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	(%rdi,%rdi,4), %eax
 	cmpl	%esi, %eax
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movl	%edi, %eax
 	shll	$16, %eax
 	addl	%edi, %eax
@@ -59,13 +59,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%esi, %eax
 	sete	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	addl	%edi, %edi
 	leal	(%rdi,%rdi,2), %eax
 	cmpl	%esi, %eax
 	setl	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	leal	(%rdi,%rdi,2), %eax
 	cmpl	%esi, %eax
 	setg	%al

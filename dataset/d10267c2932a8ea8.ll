@@ -1,6 +1,9 @@
 
-; 50 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcXsim.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stdin.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/mszipd.c.ll
@@ -46,7 +49,6 @@
 ; spike/optimized/s_roundToI32.ll
 ; spike/optimized/uradd64.ll
 ; spike/optimized/ursub64.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/proto.c.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/ezsat.ll
@@ -55,18 +57,6 @@ define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
   %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  ret i64 %5
-}
-
-; 2 occurrences:
-; linux/optimized/inline.ll
-; velox/optimized/PrestoSerializer.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %0, i64 %1, i64 %2
-  %4 = shl nuw i64 %3, 32
   %5 = ashr exact i64 %4, 32
   ret i64 %5
 }

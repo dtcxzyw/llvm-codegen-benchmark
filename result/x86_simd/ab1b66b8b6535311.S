@@ -54,3 +54,12 @@ func0000000000000020:                   # @func0000000000000020
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
+.LCPI4_0:
+	.long	524287                          # 0x7ffff
+func0000000000000001:                   # @func0000000000000001
+	vpmovqd	%ymm2, %xmm2
+	vpandd	.LCPI4_0(%rip){1to4}, %xmm2, %xmm2
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
+	vzeroupper
+	retq

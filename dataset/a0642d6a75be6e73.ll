@@ -12,7 +12,7 @@ entry:
   ret i32 %7
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
@@ -20,6 +20,7 @@ entry:
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
 ; linux/optimized/drm_format_helper.ll
+; lvgl/optimized/lv_color.ll
 ; openjdk/optimized/ByteGray.ll
 ; openjdk/optimized/Index12Gray.ll
 ; openjdk/optimized/Index8Gray.ll

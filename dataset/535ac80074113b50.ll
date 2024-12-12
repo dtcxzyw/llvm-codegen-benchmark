@@ -1,6 +1,7 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; jemalloc/optimized/ckh.ll
 ; jemalloc/optimized/ckh.pic.ll
 ; jemalloc/optimized/ckh.sym.ll

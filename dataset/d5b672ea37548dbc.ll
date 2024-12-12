@@ -23,11 +23,10 @@ entry:
   ret i16 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; libquic/optimized/ssl_lib.c.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/io_uring.ll
-; linux/optimized/nsxfname.ll
 ; llvm/optimized/ExprConcepts.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll

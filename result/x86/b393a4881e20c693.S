@@ -21,7 +21,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$2, %rdi
 	setae	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	subq	%rsi, %rdi
 	addq	%rdx, %rdi
 	setns	%al

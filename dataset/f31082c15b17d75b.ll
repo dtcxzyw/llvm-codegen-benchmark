@@ -5,7 +5,7 @@
 define i64 @func0000000000000029(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   ret i64 %5
@@ -18,14 +18,13 @@ entry:
 define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   ret i64 %5
 }
 
-; 5 occurrences:
-; linux/optimized/i915_cmd_parser.ll
+; 4 occurrences:
 ; linux/optimized/i915_gem_execbuffer.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; node/optimized/libnode.crypto_aes.ll
@@ -34,7 +33,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   ret i64 %5
@@ -49,7 +48,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   ret i64 %5
@@ -64,7 +63,7 @@ entry:
 define i64 @func0000000000000019(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   ret i64 %5
@@ -76,7 +75,7 @@ entry:
 define i64 @func0000000000000039(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   ret i64 %5

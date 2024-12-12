@@ -6,6 +6,7 @@
 ; cmake/optimized/stream_encoder_mt.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; folly/optimized/DeterministicSchedule.cpp.ll
+; graphviz/optimized/shortest.c.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; libuv/optimized/core.c.ll
 ; lief/optimized/net_sockets.c.ll
@@ -27,7 +28,6 @@
 ; slurm/optimized/node_features_knl_generic.ll
 ; wireshark/optimized/aethra.c.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
-; wireshark/optimized/dpa400.c.ll
 ; wireshark/optimized/log3gpp.c.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; wireshark/optimized/packet-canopen.c.ll

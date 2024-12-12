@@ -1,5 +1,6 @@
 
 ; 31 occurrences:
+; boost/optimized/static_string.ll
 ; brotli/optimized/decode.c.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/af_packet.ll
@@ -15,7 +16,6 @@
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/mcast.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/nf_nat_proto.ll
 ; linux/optimized/selftests.ll
@@ -36,7 +36,7 @@ define i16 @func0000000000000000(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i16
-  %5 = add i16 %4, %0
+  %5 = add i16 %0, %4
   ret i16 %5
 }
 

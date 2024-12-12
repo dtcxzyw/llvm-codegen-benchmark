@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000121(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
   %4 = icmp eq i8 %3, 0
@@ -16,7 +16,7 @@ entry:
 ; openjdk/optimized/rewriter.ll
 ; openjdk/optimized/verifier.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
   %4 = icmp eq i8 %3, 0
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/CrowdTool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp ne i8 %3, 0
@@ -45,7 +45,7 @@ entry:
 ; llvm/optimized/APValue.cpp.ll
 ; postgres/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 7
   %4 = icmp eq i8 %3, 2
@@ -62,7 +62,7 @@ entry:
 ; z3/optimized/nra_solver.cpp.ll
 ; z3/optimized/pdd_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp ne i8 %3, 0
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-uds.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009c(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000012c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 64
   %4 = icmp ne i8 %3, 0
@@ -83,29 +83,28 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; linux/optimized/pcm_lib.ll
-; linux/optimized/syncookies.ll
-; linux/optimized/tcp_minisocks.ll
-; wireshark/optimized/packet-sccp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = and i8 %2, 60
-  %4 = icmp eq i8 %3, 0
-  %5 = icmp ult i32 %0, %1
-  %6 = select i1 %4, i1 true, i1 %5
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; linux/optimized/drm_edid.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 8
   %4 = icmp eq i8 %3, 0
   %5 = icmp ne i32 %0, %1
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; linux/optimized/pcm_lib.ll
+; linux/optimized/syncookies.ll
+; linux/optimized/tcp_minisocks.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 2
+  %4 = icmp eq i8 %3, 0
+  %5 = icmp ult i32 %0, %1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }

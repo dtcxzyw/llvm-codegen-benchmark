@@ -11,7 +11,7 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	andi	a2, a2, 63
 	add	a0, a0, a1
 	sub	a0, a0, a2

@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000070(ptr %0, i64 %1, i32 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; linux/optimized/dmar.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -7,6 +7,7 @@
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i32 %0, i16 %1) #0 {
 entry:
@@ -21,12 +22,12 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001f(i32 %0, i16 %1) #0 {
+define i64 @func000000000000001f(i16 %0, i32 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i64
-  %3 = shl nuw nsw i64 %2, 8
-  %4 = zext i32 %0 to i64
-  %5 = shl nuw nsw i64 %4, 24
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 24
+  %4 = zext i16 %0 to i64
+  %5 = shl nuw nsw i64 %4, 8
   %6 = or disjoint i64 %5, %3
   ret i64 %6
 }
@@ -71,10 +72,11 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/libata-core.ll
 ; linux/optimized/pasid.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i16 %0, i32 %1) #0 {
 entry:

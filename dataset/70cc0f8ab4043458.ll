@@ -3,9 +3,9 @@
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; openjdk/optimized/matcher.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c81(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp ult ptr %3, %1
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
@@ -18,9 +18,9 @@ entry:
 ; llvm/optimized/ExprEngineCXX.cpp.ll
 ; z3/optimized/mbp_term_graph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d8c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp ne ptr %3, %1
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
@@ -31,9 +31,9 @@ entry:
 ; linux/optimized/radix-tree.ll
 ; z3/optimized/automaton.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c1(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d81(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp ne ptr %3, %1
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false

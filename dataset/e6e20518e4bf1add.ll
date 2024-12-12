@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 79 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -56,7 +56,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -84,13 +83,41 @@
 define i64 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
 
-; 25 occurrences:
+; 17 occurrences:
+; llvm/optimized/ASTWriterDecl.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; soc-simulator/optimized/sim_mycpu.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 3840
+  %4 = or i32 %1, %3
+  %5 = or i32 %0, %4
+  %6 = zext nneg i32 %5 to i64
+  ret i64 %6
+}
+
+; 24 occurrences:
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; glslang/optimized/Constant.cpp.ll
@@ -105,7 +132,6 @@ entry:
 ; linux/optimized/process_64.ll
 ; linux/optimized/step.ll
 ; linux/optimized/super.ll
-; linux/optimized/sys_ia32.ll
 ; linux/optimized/taskstats.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -120,22 +146,9 @@ entry:
 define i64 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65280
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = zext i32 %5 to i64
-  ret i64 %6
-}
-
-; 2 occurrences:
-; llvm/optimized/ASTWriterDecl.cpp.ll
-; soc-simulator/optimized/sim_mycpu.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 16
-  %4 = or i32 %3, %1
-  %5 = or i32 %4, %0
-  %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
 
@@ -166,7 +179,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16711680
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6

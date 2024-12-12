@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
@@ -9,7 +9,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10

@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/stubGenerator_x86_64_arraycopy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -5
@@ -32,7 +32,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000404(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, 1
@@ -76,7 +76,7 @@ entry:
 ; wireshark/optimized/lte_rlc_graph_dialog.cpp.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000406(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, 1

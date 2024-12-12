@@ -24,11 +24,12 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
 ; openjdk/optimized/management.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; Function Attrs: nounwind
@@ -50,7 +51,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 1000000, i64 %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

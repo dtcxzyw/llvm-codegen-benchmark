@@ -3,11 +3,11 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$28, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	andl	$131070, %esi                   # imm = 0x1FFFE
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	shrl	$6, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq

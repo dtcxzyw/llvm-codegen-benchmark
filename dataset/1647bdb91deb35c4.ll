@@ -8,7 +8,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 8
   %4 = and i64 %3, 255
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -28,15 +28,16 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; gromacs/optimized/biasstate.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 65535
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -46,12 +47,12 @@ entry:
 ; opencv/optimized/tree.cpp.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = and i64 %3, 2147483647
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -62,7 +63,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 4
   %4 = and i64 %3, 15
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -74,7 +75,7 @@ define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 4294967295
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }

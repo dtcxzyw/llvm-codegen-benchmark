@@ -6,9 +6,8 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 func0000000000000010:                   # @func0000000000000010
 	orl	%edx, %esi
-	movabsq	$8589934592, %rax               # imm = 0x200000000
-	cmpq	%rax, %rdi
-	seta	%al
+	cmpq	$512, %rdi                      # imm = 0x200
+	setae	%al
 	orb	%sil, %al
 	retq
 func0000000000000014:                   # @func0000000000000014
@@ -30,8 +29,8 @@ func000000000000000c:                   # @func000000000000000c
 	orb	%sil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	orl	%edx, %esi
-	cmpq	$959, %rdi                      # imm = 0x3BF
+	cmpq	$256, %rdx                      # imm = 0x100
 	setb	%al
-	orb	%sil, %al
+	orl	%esi, %edi
+	orb	%dil, %al
 	retq

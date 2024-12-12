@@ -1,11 +1,8 @@
-func0000000000000034:                   # @func0000000000000034
-	andi	a1, a0, 255
+func0000000000000074:                   # @func0000000000000074
+	andi	a0, a0, 255
+	li	a1, 3
+	minu	a0, a0, a1
 	addi	a0, a0, 4
-	li	a2, 7
-	sltiu	a1, a1, 3
-	czero.nez	a2, a2, a1
-	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a0, 255
@@ -16,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	andi	a1, a0, 255
 	addi	a0, a0, -87
 	sltiu	a1, a1, 97

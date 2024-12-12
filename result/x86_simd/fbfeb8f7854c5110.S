@@ -27,9 +27,20 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI4_0:
 	.zero	16,1
+.LCPI4_1:
+	.byte	1                               # 0x1
 func0000000000000006:                   # @func0000000000000006
-	vpmovb2m	%xmm1, %k1
-	vmovdqu8	.LCPI4_0(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vpbroadcastb	.LCPI4_1(%rip), %xmm2   # xmm2 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vpcmpgtb	%xmm1, %xmm2, %k1
+	vmovdqu8	%xmm2, %xmm0 {%k1}
+	retq
+.LCPI5_0:
+	.zero	16,55
+.LCPI5_1:
+	.zero	16,64
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleub	.LCPI5_0(%rip), %xmm1, %k1
+	vmovdqu8	.LCPI5_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [64,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64]
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vptestnmb	%xmm1, %xmm1, %k1

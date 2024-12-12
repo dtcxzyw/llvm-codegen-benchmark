@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; assimp/optimized/D3MFExporter.cpp.ll
 ; grpc/optimized/weighted_round_robin.cc.ll
 ; linux/optimized/nexthop.ll
@@ -13,7 +13,6 @@
 ; php/optimized/pcre2_match.ll
 ; php/optimized/zend_compile.ll
 ; postgres/optimized/clauses.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; slurm/optimized/node_scheduler.ll
 ; vcpkg/optimized/paragraphs.cpp.ll
@@ -27,7 +26,9 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 19 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/value_semantic.ll
 ; cvc5/optimized/constraint.cpp.ll
 ; jemalloc/optimized/emap.ll
 ; jemalloc/optimized/emap.pic.ll
@@ -40,6 +41,7 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/TailDuplicator.cpp.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; proj/optimized/projinfo.cpp.ll
 ; redis/optimized/emap.ll
 ; redis/optimized/emap.sym.ll

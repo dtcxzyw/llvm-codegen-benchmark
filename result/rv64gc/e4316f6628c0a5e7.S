@@ -16,7 +16,7 @@ func0000000000000002:                   # @func0000000000000002
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	sext.w	a1, a0
 	li	a2, 2
 	bne	a1, a2, .LBB2_2
@@ -25,48 +25,39 @@ func0000000000000063:                   # @func0000000000000063
 .LBB2_2:
 	addiw	a0, a0, 1
 	ret
-func0000000000000049:                   # @func0000000000000049
-	sext.w	a1, a0
-	li	a2, 7
-	bgeu	a1, a2, .LBB3_2
-	li	a0, 8
-	ret
-.LBB3_2:
-	addiw	a0, a0, 1
-	ret
-func0000000000000028:                   # @func0000000000000028
-	sext.w	a1, a0
-	addi	a0, a0, -6
-	sltiu	a1, a1, 7
-	addi	a1, a1, -1
+func0000000000000068:                   # @func0000000000000068
+	addiw	a1, a0, -6
+	sext.w	a0, a0
+	sltu	a0, a0, a1
+	addi	a0, a0, -1
 	and	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
-func0000000000000029:                   # @func0000000000000029
-	sext.w	a1, a0
-	addiw	a0, a0, -6
-	sltiu	a1, a1, 7
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	ret
-func000000000000002d:                   # @func000000000000002d
-	sext.w	a1, a0
-	addiw	a0, a0, -64
-	slti	a1, a1, 64
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	ret
 func0000000000000069:                   # @func0000000000000069
-	sext.w	a1, a0
-	li	a2, 7
-	bgeu	a1, a2, .LBB7_2
-	li	a0, 8
+	addiw	a1, a0, -6
+	sext.w	a0, a0
+	sltu	a0, a0, a1
+	addi	a0, a0, -1
+	and	a0, a0, a1
 	ret
-.LBB7_2:
+func00000000000000e9:                   # @func00000000000000e9
+	sext.w	a0, a0
+	li	a1, 7
+	bltu	a1, a0, .LBB5_2
+	li	a0, 7
+.LBB5_2:                                # %entry
 	addiw	a0, a0, 1
 	ret
-func0000000000000075:                   # @func0000000000000075
+func00000000000000c9:                   # @func00000000000000c9
+	sext.w	a0, a0
+	li	a1, 15
+	bltu	a1, a0, .LBB6_2
+	li	a0, 15
+.LBB6_2:                                # %entry
+	addiw	a0, a0, 1
+	ret
+func00000000000000d5:                   # @func00000000000000d5
 	sext.w	a1, a0
 	addiw	a0, a0, 1
 	lui	a2, 7
@@ -75,70 +66,33 @@ func0000000000000075:                   # @func0000000000000075
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	sext.w	a1, a0
-	addi	a0, a0, -1
-	sltiu	a1, a1, 2
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	ret
-func0000000000000022:                   # @func0000000000000022
-	addi	a0, a0, -1
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	ret
-func0000000000000023:                   # @func0000000000000023
-	mv	a1, a0
+func0000000000000043:                   # @func0000000000000043
 	sext.w	a2, a0
-	li	a0, 1
-	beq	a2, a0, .LBB11_2
-	addiw	a0, a1, -1
-.LBB11_2:                               # %entry
+	lui	a1, 1048572
+	bnez	a2, .LBB8_2
+	addiw	a0, a1, -63
 	ret
-func0000000000000071:                   # @func0000000000000071
+.LBB8_2:
+	addi	a1, a1, -64
+	addw	a0, a0, a1
+	ret
+func0000000000000042:                   # @func0000000000000042
+	addi	a0, a0, -1
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+func00000000000000d1:                   # @func00000000000000d1
 	sext.w	a1, a0
 	addiw	a0, a0, 1
 	sltiu	a1, a1, 6
 	neg	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004d:                   # @func000000000000004d
 	sext.w	a1, a0
-	addi	a0, a0, -4
-	slti	a1, a1, 4
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 32
+	bgtz	a1, .LBB11_2
+	li	a0, 11
 	ret
-func000000000000000d:                   # @func000000000000000d
-	mv	a1, a0
-	sext.w	a2, a0
-	lui	a0, 524288
-	addiw	a3, a0, 2
-	blt	a2, a3, .LBB14_2
-	addiw	a0, a1, -2
-.LBB14_2:                               # %entry
-	ret
-func000000000000006d:                   # @func000000000000006d
-	sext.w	a1, a0
-	bgtz	a1, .LBB15_2
-	li	a0, 1
-	ret
-.LBB15_2:
-	addiw	a0, a0, 1
-	ret
-func000000000000006c:                   # @func000000000000006c
-	sext.w	a1, a0
-	bgtz	a1, .LBB16_2
-	li	a0, 1
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	ret
-.LBB16_2:
-	addi	a0, a0, 1
-	slli	a0, a0, 32
-	srli	a0, a0, 32
+.LBB11_2:
+	addiw	a0, a0, -1
 	ret

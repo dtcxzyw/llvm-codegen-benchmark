@@ -10,18 +10,7 @@ func0000000000000144:                   # @func0000000000000144
 	setg	%al
 	addl	%edi, %eax
 	retq
-func000000000000018f:                   # @func000000000000018f
-	xorl	%eax, %eax
-	cmpl	$-2, %esi
-	setne	%al
-	addl	%edi, %eax
-	retq
 func0000000000000180:                   # @func0000000000000180
-	movl	%edi, %eax
-	cmpl	$1, %esi
-	sbbl	$-1, %eax
-	retq
-func000000000000018e:                   # @func000000000000018e
 	movl	%edi, %eax
 	cmpl	$1, %esi
 	sbbl	$-1, %eax

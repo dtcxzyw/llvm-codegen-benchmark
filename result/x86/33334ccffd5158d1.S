@@ -6,7 +6,7 @@ func000000000000000c:                   # @func000000000000000c
 	movzbl	%sil, %eax
 	leaq	8(%rdi,%rax), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	movzbl	%sil, %eax
 	leaq	4(%rdi,%rax), %rax
 	retq

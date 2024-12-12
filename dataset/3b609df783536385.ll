@@ -1,7 +1,9 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; linux/optimized/idr.ll
 ; linux/optimized/pata_amd.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_span.ll
 ; qemu/optimized/util_oslib-posix.c.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; Function Attrs: nounwind

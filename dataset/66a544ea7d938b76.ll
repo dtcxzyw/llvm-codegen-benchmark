@@ -14,7 +14,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/numeric.ll
 ; git/optimized/xmerge.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; quickjs/optimized/quickjs.ll

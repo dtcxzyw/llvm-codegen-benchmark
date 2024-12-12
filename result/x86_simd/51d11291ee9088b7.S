@@ -8,7 +8,7 @@
 	.zero	16,48
 .LCPI0_4:
 	.zero	4,32
-func0000000000000141:                   # @func0000000000000141
+func0000000000000481:                   # @func0000000000000481
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm1
 	vpcmpltub	.LCPI0_1(%rip), %xmm1, %k1
 	vpord	.LCPI0_4(%rip){1to4}, %xmm0, %xmm1

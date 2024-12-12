@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; git/optimized/commit-graph.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -9,6 +9,8 @@
 ; lief/optimized/des.c.ll
 ; linux/optimized/aes.ll
 ; llvm/optimized/UnicodeNameToCodepoint.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
@@ -25,7 +27,8 @@ entry:
   ret i32 %6
 }
 
-; 43 occurrences:
+; 44 occurrences:
+; clamav/optimized/str.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
@@ -73,16 +76,18 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   %6 = lshr i32 %5, 28
   ret i32 %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; spike/optimized/aes64dsm.ll
 ; spike/optimized/aes64esm.ll
@@ -90,7 +95,7 @@ entry:
 define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = lshr i32 %5, 9
   ret i32 %6
@@ -104,7 +109,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 12
   %4 = or i32 %3, %1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = lshr i32 %5, 16
   ret i32 %6
 }
@@ -116,7 +121,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = or disjoint i32 %3, %1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = lshr i32 %5, 16
   ret i32 %6
 }
@@ -129,7 +134,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 20
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   %6 = lshr i32 %5, 8
   ret i32 %6
@@ -143,7 +148,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, %0
   %6 = lshr i32 %5, 8
   ret i32 %6

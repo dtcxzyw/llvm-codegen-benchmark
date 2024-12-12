@@ -1,10 +1,11 @@
 
-%"struct.rocksdb::FdWithKeyRange.2500152" = type { %"struct.rocksdb::FileDescriptor.2500153", ptr, %"class.rocksdb::Slice.2500121", %"class.rocksdb::Slice.2500121" }
-%"struct.rocksdb::FileDescriptor.2500153" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2500121" = type { ptr, i64 }
-%"class.llvm::APInt.3020859" = type <{ %union.anon.3020860, i32, [4 x i8] }>
-%union.anon.3020860 = type { i64 }
-%struct.CommandTagBehavior.3467999 = type { ptr, i8, i8, i8, i8 }
+%"struct.rocksdb::FdWithKeyRange.2615378" = type { %"struct.rocksdb::FileDescriptor.2615379", ptr, %"class.rocksdb::Slice.2615347", %"class.rocksdb::Slice.2615347" }
+%"struct.rocksdb::FileDescriptor.2615379" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2615347" = type { ptr, i64 }
+%"class.llvm::APInt.3214275" = type <{ %union.anon.3214276, i32, [4 x i8] }>
+%union.anon.3214276 = type { i64 }
+%struct.CommandTagBehavior.3652180 = type { ptr, i8, i8, i8, i8 }
+%"class.cv::Complex.3752634" = type { double, double }
 
 ; 4 occurrences:
 ; cpython/optimized/longobject.ll
@@ -21,13 +22,11 @@ entry:
   ret ptr %6
 }
 
-; 21 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
 ; flatbuffers/optimized/idl_gen_cpp.cpp.ll
 ; hermes/optimized/Statistic.cpp.ll
-; icu/optimized/uresbund.ll
-; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/IntrinsicInst.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
@@ -37,17 +36,16 @@ entry:
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; rocksdb/optimized/vectorrep.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
-; sentencepiece/optimized/structurally_valid.cc.ll
 ; vcpkg/optimized/ci-baseline.cpp.ll
 ; verilator/optimized/V3EmitCHeaders.cpp.ll
 ; verilator/optimized/V3EmitCModel.cpp.ll
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a6(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000001e6(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2500152", ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 80
+  %3 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2615378", ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 80
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
   ret ptr %6
@@ -57,7 +55,7 @@ entry:
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a4(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000144(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -3
@@ -66,15 +64,12 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
-; abseil-cpp/optimized/container_test.cc.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000014a(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::APInt.3020859", ptr %0, i64 %2
+  %3 = getelementptr nusw %"class.llvm::APInt.3214275", ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
   %5 = icmp sgt i32 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
@@ -82,13 +77,39 @@ entry:
 }
 
 ; 2 occurrences:
-; abseil-cpp/optimized/container_test.cc.ll
-; opencv/optimized/mathfuncs.cpp.ll
+; llvm/optimized/DependenceAnalysis.cpp.ll
+; sentencepiece/optimized/structurally_valid.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a1(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000146(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i32, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 4
+  %3 = getelementptr nusw %"class.llvm::APInt.3214275", ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -16
+  %5 = icmp slt i32 %1, 0
+  %6 = select i1 %5, ptr %0, ptr %4
+  ret ptr %6
+}
+
+; 3 occurrences:
+; abseil-cpp/optimized/container_test.cc.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001ea(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i32, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 4
+  %5 = icmp sgt i32 %1, 2
+  %6 = select i1 %5, ptr %0, ptr %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/container_test.cc.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001e1(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i32, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 4
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
   ret ptr %6
@@ -103,9 +124,33 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.CommandTagBehavior.3467999, ptr %0, i64 %2
+  %3 = getelementptr %struct.CommandTagBehavior.3652180, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
   %5 = icmp slt i32 %1, 0
+  %6 = select i1 %5, ptr %0, ptr %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; icu/optimized/uresbund.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000166(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  %5 = icmp slt i32 %1, 0
+  %6 = select i1 %5, ptr %0, ptr %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/mathfuncs.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000161(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw %"class.cv::Complex.3752634", ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
+  %5 = icmp eq i32 %1, 2
   %6 = select i1 %5, ptr %0, ptr %4
   ret ptr %6
 }

@@ -28,7 +28,7 @@
 ; yosys/optimized/opt_lut.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -47,7 +47,7 @@ entry:
 ; yosys/optimized/viz.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
@@ -63,7 +63,7 @@ entry:
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
@@ -82,7 +82,7 @@ entry:
 ; yosys/optimized/memory_share.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000126(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000246(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/equiv_make.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 80
@@ -108,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/ast.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 48
@@ -121,7 +121,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 48
@@ -138,7 +138,7 @@ entry:
 ; opencv/optimized/net_impl.cpp.ll
 ; protobuf/optimized/text_format.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 104
@@ -151,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/indirect.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000107(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000207(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -164,7 +164,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/grouper.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000136(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000266(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -177,7 +177,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 48

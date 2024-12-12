@@ -1,5 +1,6 @@
 
-; 46 occurrences:
+; 48 occurrences:
+; boost/optimized/path.ll
 ; clamav/optimized/clamdtop.c.ll
 ; delta-rs/optimized/1x96nto90vd3u3mo.ll
 ; delta-rs/optimized/2tf2q4cmcrkztukf.ll
@@ -46,8 +47,9 @@
 ; rustfmt-rs/optimized/4gk399kploc9gcsb.ll
 ; tls-rs/optimized/2xhpv4vf07do7r8g.ll
 ; tls-rs/optimized/5b2dkiwfbrdnen43.ll
+; wasmedge/optimized/vinode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i64 %0, i64 %1
@@ -55,14 +57,15 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/path.ll
 ; grpc/optimized/hpack_encoder.cc.ll
 ; grpc/optimized/service_config_impl.cc.ll
 ; grpc/optimized/validate_metadata.cc.ll
 ; hermes/optimized/eval.cpp.ll
 ; qemu/optimized/util_cutils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i64 %0, i64 %1
@@ -79,7 +82,7 @@ entry:
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i64 %0, i64 %1
@@ -92,7 +95,7 @@ entry:
 ; ockam-rs/optimized/3spcfx0kj7tua4em.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %.not = icmp eq ptr %2, null
   %3 = select i1 %.not, i64 %1, i64 %0
@@ -109,7 +112,7 @@ entry:
 ; grpc/optimized/slice.cc.ll
 ; grpc/optimized/validate_metadata.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i64 %0, i64 %1
@@ -123,7 +126,7 @@ entry:
 ; grpc/optimized/frame_window_update.cc.ll
 ; grpc/optimized/load_system_roots_supported.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i64 %0, i64 %1

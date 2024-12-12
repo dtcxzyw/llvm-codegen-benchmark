@@ -9,6 +9,12 @@ func0000000000000006:                   # @func0000000000000006
 	movzwl	%si, %eax
 	orl	%edi, %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	movl	%esi, %eax
+	orl	%edx, %eax
+	andl	$-257, %eax                     # imm = 0xFEFF
+	orl	%edi, %eax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%esi, %eax
 	orl	%edx, %eax

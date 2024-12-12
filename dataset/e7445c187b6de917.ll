@@ -1,9 +1,17 @@
 
-; 55 occurrences:
+; 63 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
 ; abseil-cpp/optimized/reflection.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
 ; cmake/optimized/cmArgumentParser.cxx.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cmake/optimized/cmList.cxx.ll
@@ -56,10 +64,10 @@
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %0, -1
-  %4 = add nsw i64 %3, %2
+  %4 = add nsw i64 %2, %3
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %0
   ret i64 %6
@@ -70,10 +78,10 @@ entry:
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %0, -1
-  %4 = add nsw i64 %3, %2
+  %4 = add nsw i64 %2, %3
   %5 = icmp sgt i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %0
   ret i64 %6
@@ -85,7 +93,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %0, -1
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = icmp eq i32 %1, 1
   %6 = select i1 %5, i64 %4, i64 %0
   ret i64 %6
@@ -98,7 +106,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %0, -1
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %0
   ret i64 %6
@@ -109,10 +117,10 @@ entry:
 ; llvm/optimized/DeclCXX.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %0, -1
-  %4 = add nsw i64 %3, %2
+  %4 = add nsw i64 %2, %3
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %0
   ret i64 %6

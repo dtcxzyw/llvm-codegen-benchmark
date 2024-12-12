@@ -2,7 +2,7 @@
 	.long	2                               # 0x2
 .LCPI0_1:
 	.long	4294967004                      # 0xfffffedc
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpsrad	$20, %ymm1, %ymm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [2,2,2,2,2,2,2,2]
 	vpsubd	%ymm1, %ymm2, %ymm1

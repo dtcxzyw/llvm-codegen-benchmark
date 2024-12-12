@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	lui	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v12, v8, 0
@@ -8,7 +8,7 @@ func0000000000000011:                   # @func0000000000000011
 	vmand.mm	v8, v12, v0
 	vmand.mm	v0, v8, v10
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 2
 	vmseq.vi	v12, v8, 4
@@ -16,7 +16,7 @@ func000000000000001c:                   # @func000000000000001c
 	vmand.mm	v9, v12, v0
 	vmand.mm	v0, v9, v8
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	li	a0, 1024
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v8, 9
@@ -25,7 +25,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	vmand.mm	v8, v12, v0
 	vmand.mm	v0, v8, v10
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	li	a0, 512
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v8, 0
@@ -34,7 +34,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	vmand.mm	v8, v12, v0
 	vmand.mm	v0, v8, v10
 	ret
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 1
 	vmsgtu.vi	v12, v8, 6
@@ -42,7 +42,16 @@ func000000000000008c:                   # @func000000000000008c
 	vmand.mm	v9, v12, v0
 	vmand.mm	v0, v9, v8
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000038:                   # @func0000000000000038
+	li	a0, 254
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmseq.vi	v12, v8, 0
+	vand.vx	v8, v10, a0
+	vmsgtu.vi	v10, v8, 5
+	vmand.mm	v8, v12, v0
+	vmand.mm	v0, v8, v10
+	ret
+func0000000000000081:                   # @func0000000000000081
 	lui	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0

@@ -32,13 +32,13 @@ entry:
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %.fr1 = freeze i64 %1
   %2 = add i64 %.fr1, -1
   %3 = urem i64 %2, 576
   %4 = sub nuw i64 %2, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

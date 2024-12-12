@@ -1,7 +1,7 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	movzwl	%di, %eax
-	cmpq	%rsi, %rax
-	seta	%cl
+	cmpq	%rax, %rsi
+	setb	%cl
 	cmpw	$4, %ax
 	setb	%al
 	orb	%cl, %al

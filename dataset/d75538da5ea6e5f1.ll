@@ -4,7 +4,7 @@
 ; gromacs/optimized/resourcedivision.cpp.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = urem i32 %0, %3
@@ -16,7 +16,7 @@ entry:
 ; libjpeg-turbo/optimized/jdmainct.c.ll
 ; openjdk/optimized/jdmainct.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = urem i32 %0, %3

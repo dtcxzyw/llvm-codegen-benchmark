@@ -1,5 +1,5 @@
 
-; 421 occurrences:
+; 429 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -160,7 +160,6 @@
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hdf5/optimized/H5Tvlen.c.ll
-; hdf5/optimized/H5VLnative_blob.c.ll
 ; hyperscan/optimized/limex_64.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/noodle_engine.c.ll
@@ -170,6 +169,7 @@
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; hyperscan/optimized/state_compress.c.ll
 ; hyperscan/optimized/stream.c.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
@@ -370,7 +370,6 @@
 ; spike/optimized/aes64ds.ll
 ; spike/optimized/aes64es.ll
 ; spike/optimized/aes64ks1i.ll
-; spike/optimized/bf16_to_f32.ll
 ; spike/optimized/fdt.ll
 ; spike/optimized/fdt_ro.ll
 ; spike/optimized/fdt_rw.ll
@@ -382,6 +381,7 @@
 ; spike/optimized/sunpkd832.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
@@ -417,6 +417,14 @@
 ; wolfssl/optimized/sp_int.c.ll
 ; yosys/optimized/xprop.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -425,7 +433,7 @@
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 9
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nuw nsw i64 %1, 1
   %6 = or disjoint i64 %4, %5
   ret i64 %6
@@ -444,7 +452,7 @@ entry:
   ret i64 %6
 }
 
-; 61 occurrences:
+; 74 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -466,11 +474,13 @@ entry:
 ; git/optimized/reader.ll
 ; git/optimized/record.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; lief/optimized/gcm.c.ll
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/ASTContext.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; miniaudio/optimized/unity.c.ll
@@ -506,17 +516,28 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/packet-zbee-direct.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 48
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nuw i64 %1, 56
   %6 = or disjoint i64 %4, %5
   ret i64 %6
 }
 
-; 95 occurrences:
+; 101 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abseil-cpp/optimized/bind.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -539,6 +560,7 @@ entry:
 ; git/optimized/record.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libquic/optimized/packeted_bio.cc.ll
@@ -594,6 +616,7 @@ entry:
 ; spike/optimized/sunpkd831.ll
 ; spike/optimized/sunpkd832.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
@@ -612,11 +635,15 @@ entry:
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 56
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nuw nsw i64 %1, 40
   %6 = or disjoint i64 %4, %5
   ret i64 %6
@@ -683,7 +710,7 @@ entry:
 define i64 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nuw nsw i64 %1, 8
   %6 = or i64 %4, %5
   ret i64 %6
@@ -712,15 +739,17 @@ entry:
 define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 48
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = shl nuw i64 %1, 56
   %6 = or i64 %4, %5
   ret i64 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; folly/optimized/Compression.cpp.ll
 ; hdf5/optimized/H5Osdspace.c.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -743,16 +772,23 @@ entry:
   ret i64 %6
 }
 
-; 9 occurrences:
+; 16 occurrences:
 ; cpython/optimized/pyhash.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; openjdk/optimized/jvmtiTagMap.ll
 ; openjdk/optimized/zip_util.ll
 ; rust-analyzer-rs/optimized/3yqkws4dawqbgt35.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -819,7 +855,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 49
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = shl i64 %1, 54
   %6 = or i64 %4, %5
   ret i64 %6
@@ -832,7 +868,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 49
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl i64 %1, 54
   %6 = or i64 %4, %5
   ret i64 %6
@@ -851,7 +887,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 32
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = shl nsw i64 %1, 16
   %6 = or i64 %4, %5
   ret i64 %6
@@ -891,7 +927,7 @@ entry:
 define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 48
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = shl nuw i64 %0, 56
   %6 = or i64 %5, %4
   ret i64 %6
@@ -969,7 +1005,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 36
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = shl nsw i64 %1, 12
   %6 = or i64 %4, %5
   ret i64 %6
@@ -1008,7 +1044,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 40
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nuw nsw i64 %1, 24
   %6 = or disjoint i64 %4, %5
   ret i64 %6

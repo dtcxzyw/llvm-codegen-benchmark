@@ -16,7 +16,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpsrld	$31, %ymm2, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpsrad	$1, %ymm0, %ymm0
-	vpcmpnltd	%ymm1, %ymm0, %k1
+	vpcmpled	%ymm0, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -38,7 +38,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpsrld	$31, %ymm2, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpsrad	$1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm0, %k1
+	vpcmpeqd	%ymm0, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -50,7 +50,7 @@ func000000000000000b:                   # @func000000000000000b
 	vpsrld	$30, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpsrad	$2, %ymm0, %ymm0
-	vpcmpled	%ymm1, %ymm0, %k1
+	vpcmpnltd	%ymm0, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

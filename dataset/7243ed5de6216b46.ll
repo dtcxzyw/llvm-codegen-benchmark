@@ -74,7 +74,12 @@ entry:
   ret double %4
 }
 
-; 20 occurrences:
+; 25 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; cjson/optimized/cJSON.c.ll
 ; cjson/optimized/cJSON_Utils.c.ll
@@ -100,7 +105,7 @@ define double @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %0, %1
   %3 = select i1 %2, double %0, double %1
-  %4 = fmul double %3, 1.000000e-10
+  %4 = fmul double %3, 0x3CB0000000000000
   ret double %4
 }
 

@@ -7,7 +7,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = lshr i16 %2, 1
   %4 = and i16 %3, 32766

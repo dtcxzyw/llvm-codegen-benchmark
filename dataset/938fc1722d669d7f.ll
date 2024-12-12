@@ -14,10 +14,9 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; libquic/optimized/poly1305_vec.c.ll
-; linux/optimized/capability.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
@@ -28,8 +27,9 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; llvm/optimized/SemaChecking.cpp.ll
+; openspiel/optimized/2048.cc.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/FromUtf8.cpp.ll
 ; velox/optimized/JsonFunctions.cpp.ll

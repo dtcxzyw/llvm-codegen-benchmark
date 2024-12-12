@@ -22,3 +22,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	%sil, %dil
 	seta	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpb	%sil, %dil
+	setb	%al
+	retq

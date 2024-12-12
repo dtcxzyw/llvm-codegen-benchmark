@@ -23,7 +23,13 @@ func0000000000000006:                   # @func0000000000000006
 	orb	%dil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	cmpl	$27, %edx
+	cmpl	$63487, %edx                    # imm = 0xF7FF
+	setb	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$3122, %edx                     # imm = 0xC32
 	setb	%al
 	andb	%sil, %al
 	orb	%dil, %al

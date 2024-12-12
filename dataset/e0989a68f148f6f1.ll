@@ -7,7 +7,7 @@
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i16 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 128
   %3 = icmp eq i16 %2, 0

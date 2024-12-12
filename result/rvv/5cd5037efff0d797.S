@@ -5,7 +5,7 @@ func0000000000000080:                   # @func0000000000000080
 	vsll.vi	v8, v8, 4
 	vadd.vi	v8, v8, -16
 	ret
-func0000000000000085:                   # @func0000000000000085
+func0000000000000185:                   # @func0000000000000185
 	lui	a0, 32
 	addiw	a0, a0, -31
 	vsetivli	zero, 4, e64, m2, ta, ma

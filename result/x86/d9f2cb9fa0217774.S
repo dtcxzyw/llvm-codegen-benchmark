@@ -4,7 +4,7 @@ func0000000000000020:                   # @func0000000000000020
 	cmovbl	%edx, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
-func00000000000000e3:                   # @func00000000000000e3
+func00000000000001e3:                   # @func00000000000001e3
 	leal	(%rdi,%rdx), %eax
 	cmpl	$65, %eax
 	cmovbl	%edx, %esi
@@ -16,7 +16,7 @@ func0000000000000028:                   # @func0000000000000028
 	cmovll	%edx, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	movl	%edx, %eax
 	addl	%edi, %eax
 	cmovnsl	%edx, %esi

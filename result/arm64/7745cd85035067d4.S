@@ -1,16 +1,16 @@
-func0000000000000026:                   // @func0000000000000026
+func0000000000000046:                   // @func0000000000000046
 // %bb.0:                               // %entry
 	lsr	x0, x0, #63
                                         // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
 	cmp	x0, #0
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	cmp	x0, #0
 	cset	w0, eq
@@ -28,7 +28,7 @@ func0000000000000001:                   // @func0000000000000001
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	cmp	x0, #0
 	cset	w0, eq
@@ -41,7 +41,7 @@ func0000000000000008:                   // @func0000000000000008
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000034:                   // @func0000000000000034
+func0000000000000074:                   // @func0000000000000074
 // %bb.0:                               // %entry
 	mov	x8, #37181                      // =0x913d
 	movk	x8, #58464, lsl #16
@@ -68,45 +68,45 @@ func000000000000000c:                   // @func000000000000000c
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
 	tst	x0, #0xffffffff00000000
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000002c:                   // @func000000000000002c
+func000000000000004c:                   // @func000000000000004c
 // %bb.0:                               // %entry
 	cmp	x0, #0
 	cset	w0, ne
 	ret
                                         // -- End function
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
 	cmp	x0, #1
 	cset	w0, ne
 	ret
                                         // -- End function
-func000000000000003c:                   // @func000000000000003c
+func000000000000006c:                   // @func000000000000006c
 // %bb.0:                               // %entry
 	cmp	x0, #1
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000078:                   // @func0000000000000078
 // %bb.0:                               // %entry
-	mov	w8, #37887                      // =0x93ff
-	movk	w8, #30517, lsl #16
+	mov	x8, #-34084860461057            // =0xffffe0ffffffffff
+	movk	x8, #1525, lsl #48
 	cmp	x0, x8
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
 	cmp	x0, #39
 	cset	w0, hi
 	ret
                                         // -- End function
-func000000000000002a:                   // @func000000000000002a
+func000000000000004a:                   // @func000000000000004a
 // %bb.0:                               // %entry
 	tst	x0, #0x8000000000000000
 	cset	w0, eq

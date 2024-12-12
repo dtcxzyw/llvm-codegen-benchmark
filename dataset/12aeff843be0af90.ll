@@ -1,5 +1,6 @@
 
-; 173 occurrences:
+; 241 occurrences:
+; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
@@ -142,6 +143,7 @@
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
+; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/nms.cpp.ll
 ; openjdk/optimized/bitMap.ll
@@ -161,35 +163,101 @@
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; turborepo-rs/optimized/23ss0grgxg9blsvwmau315piq.ll
 ; verilator/optimized/V3EmitCSyms.cpp.ll
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; yosys/optimized/recover_names.ll
+; yosys/optimized/satgen.ll
 ; z3/optimized/dyn_ack.cpp.ll
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/19l54bkp73b8vpqg6elueqjm7.ll
+; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/25la7m7vywfxvwku7cmlhn88p.ll
+; zed-rs/optimized/2b5epevbd7jhjlkz6ehj52cc4.ll
+; zed-rs/optimized/2h1nnr25ysxgaelpjnym4eorn.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/2stbxmle5qyblpbm85idqsgvv.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/32ztje2vviv0ao8s7rdc7yqwm.ll
+; zed-rs/optimized/336xmb53s74x7fvnwv8sppb05.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/3m5xyr1xu4yees5ut16dqcvjd.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/3y76hj0efsluhdj732s0l4pjz.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/4pyl8821jbmubnjyx7hxe0q2i.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/50dwecd0b28psmgc3ec6s08qq.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/5syv1375c7i7870jctt3co1ip.ll
+; zed-rs/optimized/5wsk7wl322xg0y1u2gbq1r3rk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6fmtxmq32k2tm6vxa1i5afd46.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/79pkk0uh2o8d7azal4ksf2mob.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/80403hw32s3ougvze8j2ycldj.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/8h2d4a3i3ysegc1cht5hd5uc2.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/b8xkvrb4shexown6t10tlhuh9.ll
+; zed-rs/optimized/bjeparp10jwpmju7lihptx53f.ll
+; zed-rs/optimized/c8rrq6pnwhh8lrfnv140dr3y1.ll
+; zed-rs/optimized/cbi8r35sx6a597065rtde79my.ll
+; zed-rs/optimized/ch3ywh4ed1oz4ae4c1dkspuyz.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/d1yjg6a7d7s9gdz92nlud1xw8.ll
+; zed-rs/optimized/dd8ztmg64g4x9ypkzwkofy6vi.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/dtqpsl4w47n2m18dddhdjmklr.ll
+; zed-rs/optimized/dtvy13he5qwv8e5jkwyblypio.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = and i64 %2, 9223372036854775792
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
-; eastl/optimized/BenchmarkSort.cpp.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
+; linux/optimized/i915_pmu.ll
 ; llvm/optimized/ArgList.cpp.ll
 ; llvm/optimized/CommonArgs.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
@@ -214,6 +282,7 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; oiio/optimized/imagecache.cpp.ll
 ; openjdk/optimized/bitMap.ll
 ; openjdk/optimized/shenandoahMarkBitMap.ll
 ; postgres/optimized/bufmgr.ll
@@ -231,8 +300,7 @@ entry:
   ret ptr %4
 }
 
-; 13 occurrences:
-; darktable/optimized/introspection_denoiseprofile.c.ll
+; 12 occurrences:
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
@@ -246,15 +314,16 @@ entry:
 ; protobuf/optimized/padding_optimizer.cc.ll
 ; verilator/optimized/V3SchedAcyclic.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = and i64 %2, -16
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 26 occurrences:
+; 27 occurrences:
+; boost/optimized/approximately_equals.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_borders.c.ll
@@ -290,17 +359,14 @@ entry:
   ret ptr %4
 }
 
-; 4 occurrences:
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
-; opencv/optimized/dxt.cpp.ll
-; opencv/optimized/matmul.dispatch.cpp.ll
-; yosys/optimized/satgen.ll
+; 1 occurrences:
+; darktable/optimized/introspection_denoiseprofile.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 %1, 1
-  %3 = and i64 %2, 9223372036854775804
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %2 = shl i64 %1, 1
+  %3 = and i64 %2, -4
+  %4 = getelementptr nusw float, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -319,11 +385,11 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = and i64 %2, -4
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	cmovneq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	cmpq	$513, %rdx                      # imm = 0x201
 	movl	$8, %eax
 	cmovbq	%rax, %rdi

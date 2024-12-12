@@ -15,10 +15,9 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; git/optimized/commit-reach.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -29,7 +28,7 @@ entry:
   ret i32 %6
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; clamav/optimized/pe_icons.c.ll
 ; folly/optimized/Unicode.cpp.ll
@@ -44,7 +43,6 @@ entry:
 ; openusd/optimized/pathExpression.cpp.ll
 ; openusd/optimized/pathParser.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll
-; wireshark/optimized/mpeg-audio.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -72,9 +70,10 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; libquic/optimized/des.c.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; Function Attrs: nounwind

@@ -28,7 +28,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, %1
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -60,18 +60,8 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_rps.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %1, %1
-  %3 = mul i32 %2, %0
-  ret i32 %3
-}
-
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/relative_order.ll
 ; opencv/optimized/beblid.cpp.ll
 ; opencv/optimized/global_histogram_binarizer.cpp.ll
 ; opencv/optimized/mace.cpp.ll
@@ -84,6 +74,17 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
   %3 = mul nsw i32 %2, %0
+  ret i32 %3
+}
+
+; 2 occurrences:
+; linux/optimized/intel_dpll_mgr.ll
+; linux/optimized/intel_rps.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, %1
+  %3 = mul i32 %2, %0
   ret i32 %3
 }
 

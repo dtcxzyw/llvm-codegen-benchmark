@@ -41,10 +41,10 @@
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
 }
@@ -59,22 +59,54 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
-; hermes/optimized/BigIntSupport.cpp.ll
 ; hyperscan/optimized/stream.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
-; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
+  %5 = select i1 %4, i64 %0, i64 0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp ugt i64 %1, %3
+  %5 = select i1 %4, i64 %0, i64 31
+  ret i64 %5
+}
+
+; 2 occurrences:
+; hermes/optimized/BigIntSupport.cpp.ll
+; wolfssl/optimized/sp_int.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = icmp samesign ult i64 %1, %3
+  %5 = select i1 %4, i64 %0, i64 0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = icmp samesign ugt i64 %1, %3
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
 }
@@ -83,10 +115,10 @@ entry:
 ; linux/optimized/nf_conntrack_core.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ugt i64 %1, %3
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
 }
@@ -97,7 +129,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %.not = icmp eq i64 %3, %1
+  %.not = icmp eq i64 %1, %3
   %4 = select i1 %.not, i64 1, i64 %0
   ret i64 %4
 }
@@ -107,10 +139,10 @@ entry:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp slt i64 %3, %1
+  %4 = icmp sgt i64 %1, %3
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
 }
@@ -122,10 +154,10 @@ entry:
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
 }
@@ -133,10 +165,10 @@ entry:
 ; 1 occurrences:
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000019(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000029(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %.not = icmp ugt i64 %3, %1
+  %.not = icmp ult i64 %1, %3
   %4 = select i1 %.not, i64 undef, i64 %0
   ret i64 %4
 }

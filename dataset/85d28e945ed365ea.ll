@@ -1,5 +1,5 @@
 
-; 265 occurrences:
+; 255 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -77,7 +77,6 @@
 ; linux/optimized/gss_rpc_xdr.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_gem_object.ll
@@ -99,11 +98,8 @@
 ; linux/optimized/kbuf.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/kexec_core.ll
-; linux/optimized/kvmclock.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/machine_kexec_64.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/mapping.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/md-bitmap.ll
@@ -119,12 +115,10 @@
 ; linux/optimized/nfs4namespace.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/nfs4xdr.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/osl.ll
 ; linux/optimized/page-io.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/pasid.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/profile.ll
@@ -139,9 +133,7 @@
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/scatterwalk.ll
 ; linux/optimized/scsi_lib.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/sd.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/selinuxfs.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/sg.ll
@@ -154,7 +146,6 @@
 ; linux/optimized/socklib.ll
 ; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/stackdepot.ll
-; linux/optimized/status.ll
 ; linux/optimized/svc_xprt.ll
 ; linux/optimized/svcauth_gss.ll
 ; linux/optimized/svcsock.ll
@@ -165,7 +156,6 @@
 ; linux/optimized/truncate.ll
 ; linux/optimized/tso.ll
 ; linux/optimized/ttm_bo_util.ll
-; linux/optimized/ttm_bo_vm.ll
 ; linux/optimized/ttm_pool.ll
 ; linux/optimized/ttm_tt.ll
 ; linux/optimized/virtgpu_object.ll
@@ -270,11 +260,11 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 550 occurrences:
+; 544 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
@@ -294,6 +284,7 @@ entry:
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
@@ -501,13 +492,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -634,9 +622,6 @@ entry:
 ; pbrt-v4/optimized/plytool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -706,7 +691,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -834,7 +818,7 @@ entry:
   ret i64 %5
 }
 
-; 329 occurrences:
+; 327 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -854,6 +838,7 @@ entry:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -1027,9 +1012,6 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -1169,7 +1151,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -1191,7 +1173,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl nsw i64 %3, 2
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -1248,7 +1230,43 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 43 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; hyperscan/optimized/ng_prefilter.cpp.ll
 ; openjdk/optimized/zip_util.ll
@@ -1261,7 +1279,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl i64 %3, 9
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -1272,7 +1290,7 @@ define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = shl nuw nsw i64 %3, 10
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

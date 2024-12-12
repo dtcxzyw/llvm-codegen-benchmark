@@ -1,4 +1,6 @@
 
+%"class.llvm::Use.3335894" = type { ptr, ptr, ptr, ptr }
+
 ; 8 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -18,12 +20,23 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 1 occurrences:
+; folly/optimized/Subprocess.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 3
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = and i64 %1, -8
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 4 occurrences:
 ; openjdk/optimized/cdsEnumKlass.ll
 ; openjdk/optimized/runTimeClassInfo.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/extended_stats.ll
-; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -49,24 +62,22 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = and i64 %1, 7
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 3 occurrences:
-; hyperscan/optimized/mpv.c.ll
-; llvm/optimized/IntrinsicInst.cpp.ll
+; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = and i64 %1, -8
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
@@ -76,12 +87,12 @@ entry:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 11
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = and i64 %1, 67108863
-  %6 = getelementptr nusw i64, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -107,12 +118,25 @@ entry:
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 4
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = and i64 %1, -64
   %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; hyperscan/optimized/mpv.c.ll
+; llvm/optimized/IntrinsicInst.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 5
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = and i64 %1, 4294967295
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3335894", ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	$26, %al
 	setb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	shrb	%al
 	movzbl	%al, %eax
@@ -23,7 +23,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpb	$13, %al
 	setae	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movzbl	%dil, %eax
 	imull	$205, %eax, %ecx
 	shrl	$10, %ecx

@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000048(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %1, %2
   %4 = icmp ult i8 %0, 32
@@ -11,7 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 22 occurrences:
 ; actix-rs/optimized/1a89q5mj3jl9opyq.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -30,8 +30,12 @@ entry:
 ; wasmtime-rs/optimized/4cnvf14b3xea7eab.ll
 ; wasmtime-rs/optimized/4hvnupd8slkxulls.ll
 ; wasmtime-rs/optimized/lin3yywv836im8d.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/4539sm9s3e94vv18ffp5lvtyk.ll
+; zed-rs/optimized/9ld5vmlj2ufuzyru6e6aorg0l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000302(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %1, %2
   %4 = icmp eq i8 %0, 0
@@ -44,7 +48,7 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; rust-analyzer-rs/optimized/m5y7tkywgbwlx2e.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000058(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 2
   %4 = icmp ne i8 %0, %1
@@ -61,7 +65,7 @@ entry:
 ; yosys/optimized/opt_clean.ll
 ; zxing/optimized/DMECEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000042(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %1, %2
   %4 = icmp eq i8 %0, 14
@@ -78,7 +82,7 @@ entry:
 ; delta-rs/optimized/56nvjt5b8qxnt1we.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000102(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 10
   %4 = icmp eq i8 %0, %1
@@ -90,7 +94,7 @@ entry:
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000318(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %1, %2
   %4 = icmp ne i8 %0, 0
@@ -101,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000108(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -65
   %4 = icmp ult i8 %0, %1
@@ -113,7 +117,7 @@ entry:
 ; openmpi/optimized/mpl_argstr.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000308(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %1, %2
   %4 = icmp ult i8 %0, -14

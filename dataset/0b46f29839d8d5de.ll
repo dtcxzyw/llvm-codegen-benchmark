@@ -49,19 +49,9 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; clamav/optimized/arcread.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i64 %1, i1 %2) #0 {
-entry:
-  %3 = zext i1 %2 to i64
-  %4 = sub i64 %0, %1
-  %5 = add nuw nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/area.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
 entry:
@@ -71,7 +61,8 @@ entry:
   ret i64 %5
 }
 
-; 149 occurrences:
+; 147 occurrences:
+; boost/optimized/topology.ll
 ; cpython/optimized/longobject.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
@@ -160,13 +151,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -226,6 +214,43 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = sub i64 %0, %1
+  %5 = add nuw i64 %4, %3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; clamav/optimized/arcread.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = sub i64 %0, %1
+  %5 = add nuw nsw i64 %4, %3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = sub nuw nsw i64 %0, %1
+  %5 = add nuw nsw i64 %4, %3
+  ret i64 %5
+}
+
+; 5 occurrences:
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/9ld5vmlj2ufuzyru6e6aorg0l.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = sub nuw i64 %0, %1
   %5 = add nuw i64 %4, %3
   ret i64 %5
 }

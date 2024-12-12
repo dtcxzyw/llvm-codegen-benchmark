@@ -9,12 +9,15 @@ entry:
   ret i8 %3
 }
 
-; 5 occurrences:
+; 8 occurrences:
 ; clamav/optimized/wwunpack.c.ll
 ; linux/optimized/cistpl.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i32 %1) #0 {
 entry:
@@ -23,7 +26,7 @@ entry:
   ret i8 %3
 }
 
-; 43 occurrences:
+; 45 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; clamav/optimized/qtmd.c.ll
@@ -67,6 +70,8 @@ entry:
 ; wireshark/optimized/packet-ipv6.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/usbdump.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
@@ -85,6 +90,16 @@ define i8 @func0000000000000008(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = sub i8 %0, %2
+  ret i8 %3
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000f(i8 %0, i32 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i32 %1 to i8
+  %3 = sub nuw nsw i8 %0, %2
   ret i8 %3
 }
 

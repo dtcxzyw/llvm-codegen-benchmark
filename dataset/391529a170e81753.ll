@@ -7,12 +7,12 @@
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }

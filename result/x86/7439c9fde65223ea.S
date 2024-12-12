@@ -1,22 +1,29 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movslq	%esi, %rax
 	imulq	%rdi, %rax
 	shlq	$2, %rax
 	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
 	seta	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movslq	%esi, %rax
 	imulq	%rdi, %rax
 	shlq	$2, %rax
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movslq	%esi, %rax
 	imulq	%rdi, %rax
 	shlq	$2, %rax
 	cmpq	$29, %rax
+	setb	%al
+	retq
+func0000000000000094:                   # @func0000000000000094
+	movslq	%esi, %rax
+	imulq	%rdi, %rax
+	shlq	$2, %rax
+	cmpq	$16, %rax
 	setb	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -26,7 +33,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	$1025, %rax                     # imm = 0x401
 	setl	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movslq	%esi, %rax
 	imulq	%rdi, %rax
 	shlq	$3, %rax

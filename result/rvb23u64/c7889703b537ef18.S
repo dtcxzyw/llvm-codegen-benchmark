@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	zext.h	a1, a1
 	li	a2, 8
 	czero.eqz	a1, a2, a1
@@ -14,7 +14,7 @@ func0000000000000006:                   # @func0000000000000006
 	li	a1, 1044
 	sh2add	a0, a1, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	sext.h	a1, a1
 	slti	a1, a1, -1
 	li	a2, -8
@@ -22,20 +22,23 @@ func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000006:                   # @func0000000000000006
+	zext.h	a1, a1
+	li	a2, -32
+	addi	a1, a1, -12
+	czero.eqz	a1, a2, a1
+	lui	a2, 1048540
+	addiw	a2, a2, -448
+	add	a0, a0, a2
+	add	a0, a0, a1
+	ret
+func0000000000000013:                   # @func0000000000000013
 	zext.h	a1, a1
 	sltiu	a1, a1, 5
 	li	a2, 8
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 144
-	ret
-func0000000000000007:                   # @func0000000000000007
-	zext.h	a1, a1
-	li	a2, 16
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 24
 	ret
 func0000000000000023:                   # @func0000000000000023
 	zext.h	a1, a1
@@ -45,20 +48,20 @@ func0000000000000023:                   # @func0000000000000023
 	add	a0, a0, a1
 	addi	a0, a0, 320
 	ret
-func000000000000002a:                   # @func000000000000002a
+func0000000000000012:                   # @func0000000000000012
+	zext.h	a1, a1
+	sltiu	a1, a1, 6
+	li	a2, 24
+	czero.nez	a1, a2, a1
+	add	a0, a0, a1
+	addi	a0, a0, -72
+	ret
+func000000000000002b:                   # @func000000000000002b
 	sext.h	a1, a1
 	slti	a1, a1, 0
 	xori	a1, a1, 1
 	add	a0, a0, a1
 	addi	a0, a0, 4
-	ret
-func0000000000000013:                   # @func0000000000000013
-	zext.h	a1, a1
-	sltiu	a1, a1, 173
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 60
 	ret
 func0000000000000020:                   # @func0000000000000020
 	zext.h	a1, a1
@@ -67,15 +70,15 @@ func0000000000000020:                   # @func0000000000000020
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000010:                   # @func0000000000000010
 	zext.h	a1, a1
-	sltiu	a1, a1, 5
-	li	a2, -8
-	czero.eqz	a1, a2, a1
+	sltiu	a1, a1, 2
+	li	a2, -12
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 272
+	addi	a0, a0, 4
 	ret
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	zext.h	a1, a1
 	addi	a1, a1, -18
 	li	a2, -8
@@ -90,4 +93,11 @@ func0000000000000028:                   # @func0000000000000028
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 8
+	ret
+func0000000000000022:                   # @func0000000000000022
+	zext.h	a1, a1
+	sltiu	a1, a1, 2
+	li	a2, -2
+	czero.nez	a1, a2, a1
+	add	a0, a0, a1
 	ret

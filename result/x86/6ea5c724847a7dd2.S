@@ -9,7 +9,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000002:                   # @func0000000000000002
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vminsd	.LCPI1_0(%rip), %xmm1, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vsubsd	%xmm2, %xmm1, %xmm1

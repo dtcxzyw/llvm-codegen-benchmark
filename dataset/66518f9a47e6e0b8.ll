@@ -11,7 +11,7 @@ define i1 @func0000000000000012(double %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = select i1 %2, double 5.000000e-01, double 2.500000e-01
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -22,7 +22,7 @@ define i1 @func0000000000000014(double %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 4
   %3 = select i1 %2, double 0x3CB0000000000000, double 0x3E80000000000000
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 

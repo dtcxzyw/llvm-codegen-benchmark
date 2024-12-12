@@ -6,7 +6,7 @@
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 86400
   %3 = trunc i64 %2 to i32
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = trunc i64 %2 to i32
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000022a(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 56
   %3 = trunc i64 %2 to i32
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000221(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 56
   %3 = trunc i64 %2 to i32

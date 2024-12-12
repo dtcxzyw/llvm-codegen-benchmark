@@ -8,7 +8,7 @@
 ; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
 ; wasmtime-rs/optimized/1d7m6di32gj3j7pj.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000050(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = icmp ugt i64 %1, 3

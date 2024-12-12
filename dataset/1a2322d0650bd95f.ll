@@ -3,7 +3,7 @@
 ; hyperscan/optimized/program_runtime.c.ll
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000281(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000901(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %1 to i32
   %4 = icmp ugt i64 %1, %2
@@ -17,7 +17,7 @@ entry:
 ; openblas/optimized/dasum_k.c.ll
 ; openblas/optimized/sasum_k.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
   %4 = icmp sgt i64 %1, %2
@@ -30,7 +30,7 @@ entry:
 ; openblas/optimized/dasum_k.c.ll
 ; openblas/optimized/sasum_k.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
   %4 = icmp sgt i64 %1, %2
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/program_runtime.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000904(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %1 to i32
   %4 = icmp ugt i64 %1, %2

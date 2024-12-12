@@ -45,12 +45,3 @@ func0000000000000005:                   # @func0000000000000005
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret
-func000000000000001d:                   # @func000000000000001d
-	lui	a3, 266240
-	addi	a3, a3, -1
-	and	a2, a2, a3
-	or	a1, a1, a2
-	sext.w	a1, a1
-	slli	a0, a0, 32
-	or	a0, a0, a1
-	ret

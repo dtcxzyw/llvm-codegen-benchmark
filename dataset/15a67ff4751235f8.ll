@@ -86,7 +86,7 @@ entry:
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i32, ptr %1, i64 %3

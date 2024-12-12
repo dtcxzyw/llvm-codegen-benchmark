@@ -14,12 +14,14 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; linux/optimized/generic.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; wireshark/optimized/packet-noe.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:

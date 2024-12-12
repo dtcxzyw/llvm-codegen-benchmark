@@ -7,18 +7,17 @@
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = and i64 %3, 1
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; cpython/optimized/typeobject.ll
-; libquic/optimized/persistent_memory_allocator.cc.ll
 ; libquic/optimized/x509_vfy.c.ll
 ; linux/optimized/if.ll
 ; linux/optimized/libata-core.ll
@@ -46,21 +45,22 @@ entry:
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %.tr = trunc i64 %0 to i32
-  %.narrow = or i32 %.tr, %1
+  %.narrow = or i32 %1, %.tr
   %2 = icmp eq i32 %.narrow, 0
   ret i1 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; opencv/optimized/circlesgrid.cpp.ll
+; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/coin_game.cc.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = and i64 %3, -32212254720
   %5 = icmp eq i64 %4, 0
   ret i1 %5

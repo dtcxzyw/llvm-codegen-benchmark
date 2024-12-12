@@ -5,7 +5,7 @@
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000050(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000090(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -48
   %3 = icmp ult i32 %2, 10
@@ -35,10 +35,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; darktable/optimized/timeline.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; slurm/optimized/ebpf.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
 entry:
@@ -64,19 +62,19 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/IVDescriptors.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000053(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000093(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -53
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %3, i32 2, i32 1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c5(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000185(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 7
   %3 = select i1 %2, i32 17, i32 1
@@ -89,7 +87,7 @@ entry:
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000091(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -69
   %3 = icmp ult i32 %2, 2
@@ -101,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/cost_enc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000052(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000092(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = icmp ult i32 %2, -3

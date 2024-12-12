@@ -14,7 +14,7 @@ func000000000000002b:                   # @func000000000000002b
 func0000000000000028:                   # @func0000000000000028
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
-	vcmpeqps	%xmm0, %xmm1, %xmm0
+	vcmpeqps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func000000000000002a:                   # @func000000000000002a
@@ -46,7 +46,7 @@ func0000000000000023:                   # @func0000000000000023
 func0000000000000027:                   # @func0000000000000027
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
-	vcmpneqps	%xmm0, %xmm1, %xmm0
+	vcmpneqps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000025:                   # @func0000000000000025

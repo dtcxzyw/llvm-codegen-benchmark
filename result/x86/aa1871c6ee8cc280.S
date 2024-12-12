@@ -1,4 +1,4 @@
-func00000000000004aa:                   # @func00000000000004aa
+func000000000000114a:                   # @func000000000000114a
 	shrq	$3, %rsi
 	testl	%esi, %esi
 	setg	%cl
@@ -6,7 +6,7 @@ func00000000000004aa:                   # @func00000000000004aa
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	shrq	$3, %rsi
 	cmpl	$3, %esi
 	setge	%cl
@@ -14,7 +14,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000002aa:                   # @func00000000000002aa
+func000000000000094a:                   # @func000000000000094a
 	shrq	$32, %rsi
 	testl	%esi, %esi
 	setg	%cl

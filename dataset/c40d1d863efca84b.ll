@@ -10,10 +10,11 @@ entry:
   ret i1 %1
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
 ; arrow/optimized/scalar_cast_boolean.cc.ll
+; boost/optimized/static_string.ll
 ; hdf5/optimized/H5Tinit_float.c.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
@@ -27,17 +28,16 @@ entry:
   ret i1 %1
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; libpng/optimized/pngrtran.c.ll
 ; openjdk/optimized/pngrtran.ll
-; ruby/optimized/iseq.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-cip.c.ll
 ; wireshark/optimized/packet-kdp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 12
+  %1 = and i8 %0, 62
   %2 = icmp ne i8 %1, 0
   ret i1 %2
 }
@@ -67,7 +67,7 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i8 %0) #0 {
+define i1 @func000000000000004a(i8 %0) #0 {
 entry:
   %.mask = and i8 %0, 64
   %1 = icmp eq i8 %.mask, 0
@@ -93,9 +93,8 @@ entry:
   ret i1 %1
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cpython/optimized/_codecs_jp.ll
-; linux/optimized/igmp.ll
 ; wireshark/optimized/packet-cip.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i8 %0) #0 {

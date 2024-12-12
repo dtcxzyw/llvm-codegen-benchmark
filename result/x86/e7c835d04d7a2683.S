@@ -22,3 +22,9 @@ func000000000000001b:                   # @func000000000000001b
 	shrl	$5, %edi
 	imull	%edi, %eax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	movl	$255, %eax
+	subl	%esi, %eax
+	shrl	$10, %edi
+	imull	%edi, %eax
+	retq

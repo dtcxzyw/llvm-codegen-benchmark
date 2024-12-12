@@ -1,3 +1,10 @@
+func0000000000000010:                   # @func0000000000000010
+	cmpq	$4097, %rsi                     # imm = 0x1001
+	setae	%al
+	notb	%dil
+	andb	%al, %dil
+	movzbl	%dil, %eax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	cmpq	$-1, %rsi
 	setne	%al

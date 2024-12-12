@@ -1,4 +1,14 @@
 
+; 1 occurrences:
+; qemu/optimized/tcg.c.ll
+; Function Attrs: nounwind
+define i32 @func00000000000001a1(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 6
+  %3 = select i1 %2, i32 0, i32 %0
+  ret i32 %3
+}
+
 ; 16 occurrences:
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -30,7 +40,7 @@ entry:
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, 999
@@ -52,10 +62,24 @@ entry:
   ret i32 %5
 }
 
+; 3 occurrences:
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; Function Attrs: nounwind
+define i32 @func00000000000001ca(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 24
+  %3 = add nuw i32 %2, 16777216
+  %4 = icmp sgt i32 %3, 33554431
+  %5 = select i1 %4, i32 0, i32 %0
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; wolfssl/optimized/ecc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = add i32 %2, 63

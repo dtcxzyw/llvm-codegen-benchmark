@@ -3,12 +3,12 @@ func0000000000000021:                   # @func0000000000000021
 	imull	%esi, %edi
 	imull	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+func0000000000000008:                   # @func0000000000000008
 	movzbl	%dl, %eax
 	imull	%esi, %edi
 	imull	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000000:                   # @func0000000000000000
 	movzbl	%dl, %eax
 	imull	%esi, %edi
 	imull	%edi, %eax

@@ -11,14 +11,13 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/utilIsop.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; opencv/optimized/cascadedetect.cpp.ll
 ; php/optimized/pcre2_compile.ll
-; wireshark/optimized/packet-mac-lte.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:

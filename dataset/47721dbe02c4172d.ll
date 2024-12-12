@@ -14,7 +14,7 @@
 ; wireshark/optimized/netmon.c.ll
 ; wireshark/optimized/packet-eth.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000284(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw i16 %2, 8
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-eth.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i16 %0, i8 %1) #0 {
+define i1 @func00000000000002a4(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw i16 %2, 8

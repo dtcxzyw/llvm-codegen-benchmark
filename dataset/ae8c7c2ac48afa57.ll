@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
-; osqp/optimized/scaling.c.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/selfuncs.ll
 ; ruby/optimized/gc.ll
@@ -15,9 +14,10 @@ entry:
   ret double %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; ipopt/optimized/IpAdaptiveMuUpdate.ll
 ; opencv/optimized/fast_hough_transform.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000024(double %0, double %1) #0 {
 entry:
@@ -40,7 +40,46 @@ entry:
   ret double %5
 }
 
-; 4 occurrences:
+; 43 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/partition.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/rand.cpp.ll
@@ -48,7 +87,7 @@ entry:
 ; Function Attrs: nounwind
 define double @func0000000000000022(double %0, double %1) #0 {
 entry:
-  %2 = fcmp olt double %0, %1
+  %2 = fcmp olt double %1, %0
   %3 = select i1 %2, double %0, double %1
   %4 = fcmp olt double %3, 1.000000e+00
   %5 = select i1 %4, double 1.000000e+00, double %3

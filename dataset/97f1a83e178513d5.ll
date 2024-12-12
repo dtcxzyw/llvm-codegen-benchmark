@@ -84,16 +84,6 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
-; gromacs/optimized/parser.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i1 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 2
-  %3 = select i1 %0, i64 20000, i64 %2
-  ret i64 %3
-}
-
 ; 15 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
@@ -115,26 +105,6 @@ define i64 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = select i1 %0, i64 64, i64 %2
-  ret i64 %3
-}
-
-; 1 occurrences:
-; linux/optimized/igmp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i1 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 34
-  %3 = select i1 %0, i64 -4294967296, i64 %2
-  ret i64 %3
-}
-
-; 1 occurrences:
-; freetype/optimized/autofit.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000e(i1 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 48
-  %3 = select i1 %0, i64 1125899906842624, i64 %2
   ret i64 %3
 }
 
@@ -172,16 +142,6 @@ entry:
 ; graphviz/optimized/taper.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 4
-  %3 = select i1 %0, i64 8, i64 %2
-  ret i64 %3
-}
-
-; 1 occurrences:
-; graphviz/optimized/closest.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
   %3 = select i1 %0, i64 8, i64 %2

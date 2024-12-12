@@ -3,7 +3,7 @@
 ; ruby/optimized/prism.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000042(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000082(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc nuw i64 %0 to i32
@@ -12,7 +12,7 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; qemu/optimized/target_riscv_pmu.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -21,7 +21,6 @@ entry:
 ; wireshark/optimized/packet-nfs.c.ll
 ; wireshark/optimized/packet-nlm.c.ll
 ; wireshark/optimized/packet-pfcp.c.ll
-; wireshark/optimized/packet-smb-sidsnooping.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; Function Attrs: nounwind

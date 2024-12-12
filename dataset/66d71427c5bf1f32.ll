@@ -15,7 +15,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 14 occurrences:
 ; abc/optimized/bmcBmc2.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; icu/optimized/umutablecptrie.ll
@@ -23,27 +23,33 @@ entry:
 ; libjpeg-turbo/optimized/jclossls.c.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/enc.c.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/minimap.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = ashr i32 %3, 1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_span.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = ashr i32 %3, 2
-  %5 = add i32 %4, %0
+  %4 = ashr i32 %3, 1
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -59,7 +65,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = ashr i32 %3, 16
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

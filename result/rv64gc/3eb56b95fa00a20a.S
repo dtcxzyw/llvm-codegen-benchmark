@@ -10,9 +10,16 @@ func0000000000000001:                   # @func0000000000000001
 	xori	a0, a2, 256
 .LBB1_2:                                # %entry
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	srliw	a1, a1, 12
 	bnez	a1, .LBB2_2
 	xori	a0, a2, 1
 .LBB2_2:                                # %entry
+	ret
+func0000000000000004:                   # @func0000000000000004
+	sext.w	a1, a1
+	li	a3, 26
+	bgeu	a1, a3, .LBB3_2
+	xori	a0, a2, 32
+.LBB3_2:                                # %entry
 	ret

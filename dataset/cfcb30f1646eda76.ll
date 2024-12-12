@@ -15,7 +15,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 11 occurrences:
+; 12 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; gromacs/optimized/dssp.cpp.ll
 ; llvm/optimized/AArch64ConditionOptimizer.cpp.ll
@@ -24,6 +24,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
@@ -33,6 +34,21 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = sub nsw i32 %2, %0
   %4 = call i32 @llvm.abs.i32(i32 %3, i1 true)
+  ret i32 %4
+}
+
+; 5 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
+; opencv/optimized/erfilter.cpp.ll
+; zxing/optimized/Barcode.cpp.ll
+; zxing/optimized/ConcentricFinder.cpp.ll
+; zxing/optimized/ODReader.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000025(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = sub nsw i32 %2, %0
+  %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   ret i32 %4
 }
 
@@ -48,20 +64,6 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
   %4 = call i32 @llvm.abs.i32(i32 %3, i1 true)
-  ret i32 %4
-}
-
-; 4 occurrences:
-; opencv/optimized/erfilter.cpp.ll
-; zxing/optimized/Barcode.cpp.ll
-; zxing/optimized/ConcentricFinder.cpp.ll
-; zxing/optimized/ODReader.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000025(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw i64 %1 to i32
-  %3 = sub nsw i32 %2, %0
-  %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   ret i32 %4
 }
 

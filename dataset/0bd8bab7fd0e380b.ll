@@ -11,15 +11,16 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
 ; delta-rs/optimized/2gd5h5hcnilezwzy.ll
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -16711936
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }

@@ -3,17 +3,17 @@ func0000000000000004:                   # @func0000000000000004
 	subq	%rdx, %rax
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movq	%rdx, %rax
 	subq	%rsi, %rax
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	cmoveq	%rdi, %rax
@@ -23,7 +23,7 @@ func0000000000000008:                   # @func0000000000000008
 	subq	%rsi, %rax
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movq	%rdx, %rax
 	subq	%rsi, %rax
 	cmovbq	%rdi, %rax
@@ -33,12 +33,12 @@ func0000000000000001:                   # @func0000000000000001
 	subq	%rdx, %rax
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	movq	%rdx, %rax
 	subq	%rsi, %rax
 	cmovbq	%rdi, %rax

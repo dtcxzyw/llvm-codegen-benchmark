@@ -1,7 +1,6 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; hermes/optimized/Runtime.cpp.ll
-; linux/optimized/mii.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/APValue.cpp.ll

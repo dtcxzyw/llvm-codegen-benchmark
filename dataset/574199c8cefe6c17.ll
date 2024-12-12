@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/gvplugin_vt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = zext i8 %0 to i32

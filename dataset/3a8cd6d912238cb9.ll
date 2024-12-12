@@ -9,7 +9,7 @@
 define i32 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -23,7 +23,7 @@ entry:
 define i32 @func000000000000001a(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ule float %3, %0
+  %4 = fcmp uge float %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -34,7 +34,7 @@ entry:
 define i32 @func0000000000000018(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ole float %3, %0
+  %4 = fcmp oge float %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -45,7 +45,7 @@ entry:
 define i32 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

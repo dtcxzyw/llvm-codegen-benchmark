@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; folly/optimized/FileUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i64 %0, i32 %1) #0 {
+define i1 @func000000000000058c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = icmp ne i64 %0, 0
@@ -10,11 +10,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/compilerOracle.ll
-; zxing/optimized/PDFHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -3
   %3 = icmp ult i32 %2, 2
@@ -27,7 +26,7 @@ entry:
 ; libzmq/optimized/options.cpp.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -100
   %3 = icmp ult i32 %2, 900
@@ -36,17 +35,16 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; git/optimized/pack-bitmap-write.ll
 ; linux/optimized/hid-lg.ll
-; llvm/optimized/CodeGenTBAA.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000048c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ult i32 %2, 4
@@ -58,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/PpScanner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000501(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -54
   %3 = icmp ult i32 %2, -6
@@ -70,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/add.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000581(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = icmp eq i64 %0, 0
@@ -82,7 +80,7 @@ entry:
 ; clamav/optimized/pathfn.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 3
   %3 = icmp eq i64 %0, 4
@@ -90,25 +88,22 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; llvm/optimized/RISCVDeadRegisterDefinitions.cpp.ll
-; luajit/optimized/lj_opt_fold.ll
-; luajit/optimized/lj_opt_fold_dyn.ll
-; wireshark/optimized/packet-erf.c.ll
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw.ll
+; wolfssl/optimized/chacha.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -8701
-  %3 = icmp ult i32 %2, -2
-  %4 = icmp eq i64 %0, 0
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
+  %2 = icmp ne i32 %1, 1
+  %3 = icmp ne i64 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:
 ; llvm/optimized/FormatString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -13
   %3 = icmp ult i32 %2, 8
@@ -117,16 +112,28 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000488(i64 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = icmp ult i32 %2, 65536
-  %4 = icmp ugt i64 %0, 16
+  %2 = add nsw i32 %1, -48
+  %3 = icmp ult i32 %2, 10
+  %4 = icmp ugt i64 %0, 1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; luajit/optimized/lj_opt_fold.ll
+; luajit/optimized/lj_opt_fold_dyn.ll
+; wireshark/optimized/packet-erf.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000481(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, 999999
+  %3 = icmp ult i32 %2, 1999999
+  %4 = icmp eq i64 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -134,21 +141,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/netlabel_kapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -1
   %3 = icmp eq i64 %0, 0
-  %4 = select i1 %3, i1 %2, i1 false
-  ret i1 %4
-}
-
-; 1 occurrences:
-; wolfssl/optimized/chacha.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ne i32 %1, 1
-  %3 = icmp ne i64 %0, 0
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

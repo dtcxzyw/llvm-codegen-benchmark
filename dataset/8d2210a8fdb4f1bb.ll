@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 71 occurrences:
 ; assimp/optimized/STLLoader.cpp.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
@@ -12,8 +12,6 @@
 ; hermes/optimized/Executor.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
-; icu/optimized/collationdatabuilder.ll
-; icu/optimized/dtptngen.ll
 ; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/utext.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
@@ -32,7 +30,6 @@
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/InstrEmitter.cpp.ll
 ; llvm/optimized/NativeTypeFunctionSig.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScheduleDAGFast.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
@@ -51,7 +48,6 @@
 ; postgres/optimized/bufpage.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; slurm/optimized/job_test.ll

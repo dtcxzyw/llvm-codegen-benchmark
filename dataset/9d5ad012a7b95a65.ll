@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 72 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
@@ -15,17 +15,12 @@
 ; abc/optimized/mpmDsd.c.ll
 ; abc/optimized/mpmGates.c.ll
 ; abc/optimized/simSymStr.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/aspack.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; diesel-rs/optimized/27d1dwdaey9nml16.ll
 ; diesel-rs/optimized/2nqojkvzec127ieh.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; icu/optimized/uresdata.ll
 ; icu/optimized/utf8collationiterator.ll
@@ -47,7 +42,6 @@
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; llvm/optimized/PHIElimination.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/SMEPeepholeOpt.cpp.ll
@@ -58,11 +52,11 @@
 ; llvm/optimized/X86FastPreTileConfig.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/norm.cpp.ll
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_MidiOut.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; php/optimized/pcre2_match.ll
@@ -73,6 +67,7 @@
 ; postgres/optimized/tidbitmap.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; ruby/optimized/iseq.ll
+; snappy/optimized/snappy.cc.ll
 ; soc-simulator/optimized/verilated.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmedge/optimized/errinfo.cpp.ll

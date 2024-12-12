@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	movl	$400000000, %eax                # imm = 0x17D78400
@@ -48,7 +48,7 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF

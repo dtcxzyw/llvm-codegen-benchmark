@@ -1,5 +1,7 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; wireshark/optimized/related_packet_delegate.cpp.ll
@@ -14,7 +16,8 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll

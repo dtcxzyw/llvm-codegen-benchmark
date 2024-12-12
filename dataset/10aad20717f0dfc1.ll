@@ -1,5 +1,6 @@
 
-; 85 occurrences:
+; 93 occurrences:
+; boost/optimized/numeric.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
@@ -29,6 +30,7 @@
 ; llvm/optimized/InstCombineAddSub.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/areastore.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -85,6 +87,12 @@
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/packet-e164.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
@@ -92,7 +100,7 @@ entry:
   ret i16 %2
 }
 
-; 24 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -103,6 +111,22 @@ entry:
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/drm_fourcc.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
+; lvgl/optimized/lv_draw_sw_mask_rect.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_span.ll
 ; oiio/optimized/pnginput.cpp.ll
 ; oiio/optimized/targainput.cpp.ll
 ; openjdk/optimized/pngrtran.ll
@@ -147,11 +171,13 @@ entry:
   ret i16 %2
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/urb.ll
 ; linux/optimized/xhci-mem.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openjdk/optimized/cmstypes.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; Function Attrs: nounwind

@@ -4,13 +4,13 @@ func0000000000000020:                   # @func0000000000000020
 	movslq	%esi, %rax
 	leaq	-1(%rdi,%rax), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002e:                   # @func000000000000002e
 	addl	$-320, %esi                     # imm = 0xFEC0
 	sarl	%esi
 	movslq	%esi, %rax
 	leaq	1384448(%rdi,%rax), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	addl	$159, %esi
 	sarl	%esi
 	movslq	%esi, %rax
@@ -40,7 +40,7 @@ func0000000000000000:                   # @func0000000000000000
 	movslq	%esi, %rax
 	leaq	8(%rdi,%rax), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	decl	%esi
 	sarl	$3, %esi
 	movslq	%esi, %rax

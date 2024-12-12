@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, -13
 	slli	a0, a0, 54
 	vadd.vx	v10, v10, a0
-	vfmul.vv	v8, v10, v8
+	vfmul.vv	v8, v8, v10
 	fli.d	fa5, 0.5
 	vfrsub.vf	v8, v8, fa5
 	ret

@@ -85,7 +85,6 @@
 ; gromacs/optimized/kernel_ref.cpp.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
-; gromacs/optimized/slassq.cpp.ll
 ; gromacs/optimized/snrm2.cpp.ll
 ; gromacs/optimized/vcm.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
@@ -232,6 +231,7 @@
 ; velox/optimized/Counters.cpp.ll
 ; velox/optimized/MemoryArbitrator.cpp.ll
 ; velox/optimized/SpillStats.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

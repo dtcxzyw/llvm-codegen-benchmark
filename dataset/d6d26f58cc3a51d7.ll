@@ -1,7 +1,8 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/parse_expr.c.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; linux/optimized/e1000_main.ll
@@ -32,43 +33,13 @@ entry:
   ret i16 %2
 }
 
-; 24 occurrences:
-; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; cmake/optimized/http.c.ll
-; curl/optimized/libcurl_la-http.ll
-; hermes/optimized/ConvertUTF.cpp.ll
-; icu/optimized/store.ll
-; linux/optimized/ich8lan.ll
-; llvm/optimized/CodeViewDebug.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/ConvertUTF.cpp.ll
-; llvm/optimized/DwarfUnit.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
-; openssl/optimized/libcrypto-lib-rsa_lib.ll
-; openssl/optimized/libcrypto-shlib-rsa_lib.ll
-; openusd/optimized/openexr-c.c.ll
-; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/hw_net_eepro100.c.ll
-; qemu/optimized/hw_nvme_ctrl.c.ll
-; rocksdb/optimized/testutil.cc.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; vcpkg/optimized/json.cpp.ll
-; wireshark/optimized/packet-ieee80211.c.ll
-; zxing/optimized/zueci.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000004(i32 %0) #0 {
-entry:
-  %1 = icmp ult i32 %0, 5
-  %2 = select i1 %1, i16 1, i16 -5
-  ret i16 %2
-}
-
-; 221 occurrences:
+; 227 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/fretInit.c.ll
 ; assimp/optimized/3DSExporter.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/numeric.ll
+; boost/optimized/syslog_backend.ll
 ; c3c/optimized/compiler.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; c3c/optimized/project.c.ll
@@ -97,7 +68,6 @@ entry:
 ; icu/optimized/ustrcase.ll
 ; jq/optimized/compile.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
-; libevent/optimized/bufferevent_pair.c.ll
 ; libevent/optimized/evmap.c.ll
 ; libquic/optimized/ssl_cipher.c.ll
 ; libwebp/optimized/token_enc.c.ll
@@ -125,7 +95,6 @@ entry:
 ; linux/optimized/intel_gt_sysfs_pm.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/mac.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mpparse.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/pagelist.ll
@@ -173,7 +142,6 @@ entry:
 ; llvm/optimized/MCExpr.cpp.ll
 ; llvm/optimized/OffloadBinary.cpp.ll
 ; llvm/optimized/QualifierAlignmentFixer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -208,6 +176,9 @@ entry:
 ; luajit/optimized/lj_serialize.ll
 ; luajit/optimized/lj_serialize_dyn.ll
 ; luau/optimized/Conformance.test.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_obj.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; memcached/optimized/testapp.ll
@@ -258,7 +229,6 @@ entry:
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtext.c.ll
@@ -286,12 +256,57 @@ entry:
 ; wireshark/optimized/prefs.c.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
   %2 = select i1 %1, i16 512, i16 0
+  ret i16 %2
+}
+
+; 7 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; openssl/optimized/libcrypto-lib-rsa_lib.ll
+; openssl/optimized/libcrypto-shlib-rsa_lib.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = icmp samesign ult i32 %0, 15361
+  %2 = select i1 %1, i16 256, i16 1200
+  ret i16 %2
+}
+
+; 16 occurrences:
+; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; cmake/optimized/http.c.ll
+; curl/optimized/libcurl_la-http.ll
+; hermes/optimized/ConvertUTF.cpp.ll
+; icu/optimized/store.ll
+; linux/optimized/ich8lan.ll
+; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/ConvertUTF.cpp.ll
+; llvm/optimized/DwarfUnit.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; openusd/optimized/openexr-c.c.ll
+; qemu/optimized/hw_net_eepro100.c.ll
+; qemu/optimized/hw_nvme_ctrl.c.ll
+; vcpkg/optimized/json.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i32 %0) #0 {
+entry:
+  %1 = icmp ult i32 %0, 257
+  %2 = select i1 %1, i16 16655, i16 16395
   ret i16 %2
 }
 
@@ -330,27 +345,37 @@ entry:
   ret i16 %2
 }
 
-; 20 occurrences:
-; diesel-rs/optimized/2zzzvc1em6im74h3.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
+; 9 occurrences:
 ; linux/optimized/e100.ll
-; linux/optimized/e1000_main.ll
 ; linux/optimized/filter.ll
-; linux/optimized/sky2.ll
-; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/DwarfUnit.cpp.ll
-; llvm/optimized/LegalizeIntegerTypes.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/StatepointLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; msdfgen/optimized/save-tiff.cpp.ll
 ; opencv/optimized/convert.dispatch.cpp.ll
 ; opencv/optimized/convert_scale.dispatch.cpp.ll
 ; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000018(i32 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i32 %0, 32
+  %2 = select i1 %1, i16 8, i16 7
+  ret i16 %2
+}
+
+; 12 occurrences:
+; diesel-rs/optimized/2zzzvc1em6im74h3.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
+; linux/optimized/e100.ll
+; linux/optimized/e1000_main.ll
+; linux/optimized/sky2.ll
+; llvm/optimized/ContinuationIndenter.cpp.ll
+; llvm/optimized/LegalizeIntegerTypes.cpp.ll
+; llvm/optimized/LiteralSupport.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/StatepointLowering.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i32 %0) #0 {
 entry:

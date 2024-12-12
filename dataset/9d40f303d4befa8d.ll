@@ -5,7 +5,7 @@
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b6(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000366(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2

@@ -1,5 +1,5 @@
 
-; 315 occurrences:
+; 312 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcNtk.c.ll
@@ -88,7 +88,6 @@
 ; gromacs/optimized/updategroupscog.cpp.ll
 ; icu/optimized/umutablecptrie.ll
 ; icu/optimized/usearch.ll
-; imgui/optimized/imgui_widgets.cpp.ll
 ; lightgbm/optimized/gradient_discretizer.cpp.ll
 ; lightgbm/optimized/network.cpp.ll
 ; linux/optimized/blk-map.ll
@@ -98,7 +97,6 @@
 ; linux/optimized/vt.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
@@ -131,7 +129,6 @@
 ; opencv/optimized/aruco_board.cpp.ll
 ; opencv/optimized/aruco_calib.cpp.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll
-; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/batch_distance.cpp.ll
 ; opencv/optimized/batch_norm_layer.cpp.ll
@@ -173,6 +170,7 @@
 ; opencv/optimized/facerec_fisherfaces.cpp.ll
 ; opencv/optimized/facerec_save_load.cpp.ll
 ; opencv/optimized/fast_line_detector.cpp.ll
+; opencv/optimized/fed.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/fisher_faces.cpp.ll
@@ -242,7 +240,6 @@
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/solvepnp.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
-; opencv/optimized/speech_recognition.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/svm.cpp.ll

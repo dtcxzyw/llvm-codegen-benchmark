@@ -8,7 +8,7 @@
 ; redis/optimized/lparser.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub i64 %2, %0
@@ -26,20 +26,6 @@ entry:
   %3 = sub i64 %2, %0
   %4 = and i64 %3, 1
   %5 = icmp eq i64 %4, 0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; ceres/optimized/block_sparse_matrix.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
-; g2o/optimized/solver_dense.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = sub nsw i64 %2, %0
-  %4 = and i64 %3, -2
-  %5 = icmp sgt i64 %4, 0
   ret i1 %5
 }
 

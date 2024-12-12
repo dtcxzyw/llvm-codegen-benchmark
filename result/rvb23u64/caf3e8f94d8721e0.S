@@ -5,7 +5,7 @@ func000000000000001f:                   # @func000000000000001f
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	slliw	a3, a0, 28
+	slliw	a3, a0, 2
 	or	a1, a1, a2
 	or	a1, a1, a3
 	or	a0, a0, a1

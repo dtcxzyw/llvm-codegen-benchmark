@@ -10,7 +10,7 @@ entry:
   %2 = icmp ult i64 %1, 536870912
   %3 = zext i1 %2 to i64
   %4 = shl nuw nsw i64 %1, %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = lshr i64 %5, 16
   ret i64 %6
 }
@@ -23,7 +23,7 @@ entry:
   %2 = icmp sgt i64 %1, -1
   %3 = zext i1 %2 to i64
   %4 = shl i64 %1, %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = lshr i64 %5, 11
   ret i64 %6
 }

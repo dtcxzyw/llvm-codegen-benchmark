@@ -4,7 +4,7 @@
 ; php/optimized/zend_smart_str.ll
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 117
   %4 = select i1 %3, i64 4, i64 6
@@ -17,7 +17,7 @@ entry:
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 117
   %4 = select i1 %3, i64 4, i64 6
@@ -34,11 +34,11 @@ entry:
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 -2, i64 -1
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -46,11 +46,11 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_parser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000085(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 4, i64 7
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ule i64 %5, %0
   ret i1 %6
 }

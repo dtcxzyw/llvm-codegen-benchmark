@@ -16,3 +16,9 @@ func0000000000000009:                   # @func0000000000000009
 	andl	$-7217, %edi                    # imm = 0xE3CF
 	leal	1024(%rdi), %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	cmpl	$640, %edx                      # imm = 0x280
+	cmovael	%esi, %edi
+	orl	$48, %edi
+	movzbl	%dil, %eax
+	retq

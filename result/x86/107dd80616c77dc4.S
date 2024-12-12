@@ -28,7 +28,18 @@ func00000000000000a0:                   # @func00000000000000a0
 	cmovgel	%edi, %eax
 	addl	%esi, %eax
 	retq
+func000000000000006d:                   # @func000000000000006d
+	sarl	$31, %edx
+	andl	%edi, %edx
+	leal	(%rsi,%rdx), %eax
+	retq
 func0000000000000010:                   # @func0000000000000010
+	testl	%edx, %edx
+	movl	$-28, %eax
+	cmovel	%edi, %eax
+	addl	%esi, %eax
+	retq
+func000000000000001c:                   # @func000000000000001c
 	testl	%edx, %edx
 	movl	$-28, %eax
 	cmovel	%edi, %eax

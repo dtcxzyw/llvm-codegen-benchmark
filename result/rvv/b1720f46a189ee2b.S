@@ -23,5 +23,5 @@ func0000000000000027:                   # @func0000000000000027
 	vmerge.vvm	v16, v24, v16, v0
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfncvt.f.f.w	v12, v16
-	vmfne.vv	v0, v12, v8
+	vmfne.vv	v0, v8, v12
 	ret

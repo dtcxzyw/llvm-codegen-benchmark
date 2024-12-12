@@ -12,7 +12,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = sub i64 %5, %0
   ret i64 %6
 }
@@ -26,12 +26,13 @@ define i64 @func0000000000000012(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 46
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = sub nuw i64 %5, %0
   ret i64 %6
 }
 
-; 146 occurrences:
+; 144 occurrences:
+; boost/optimized/topology.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
 ; nix/optimized/archive.ll
@@ -118,13 +119,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -183,7 +181,7 @@ define i64 @func00000000000000c5(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = sub nsw i64 %5, %0
   ret i64 %6
 }

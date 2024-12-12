@@ -1,7 +1,8 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; libwebp/optimized/quant_enc.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/lightsamplers.cpp.ll

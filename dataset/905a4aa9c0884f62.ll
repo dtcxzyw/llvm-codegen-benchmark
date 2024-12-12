@@ -1,5 +1,6 @@
 
-; 39 occurrences:
+; 42 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
@@ -11,7 +12,6 @@
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -35,10 +35,13 @@
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
@@ -47,8 +50,7 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
-; eastl/optimized/BenchmarkSort.cpp.ll
+; 1 occurrences:
 ; rustfmt-rs/optimized/5genfix4t5066ss.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
@@ -108,6 +110,7 @@ entry:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
+; eastl/optimized/TestAlgorithm.cpp.ll
 ; hermes/optimized/SmallPtrSet.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
@@ -117,7 +120,6 @@ entry:
 ; protobuf/optimized/map.cc.ll
 ; protobuf/optimized/map_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; quantlib/optimized/fdm2dblackscholesop.ll
 ; quantlib/optimized/fdmbatesop.ll
 ; quantlib/optimized/fdmblackscholesfwdop.ll
@@ -156,7 +158,7 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; hermes/optimized/DependencyExtractor.cpp.ll
 ; hermes/optimized/JSLibInternal.cpp.ll
 ; hermes/optimized/JSRegExp.cpp.ll
@@ -164,8 +166,6 @@ entry:
 ; hermes/optimized/RegexSerialization.cpp.ll
 ; llvm/optimized/CodeExtractor.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; wireshark/optimized/packet_list.cpp.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -175,7 +175,8 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; eastl/optimized/BenchmarkSort.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -200,19 +201,7 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
-; wireshark/optimized/packet_list_model.cpp.ll
-; wireshark/optimized/qcustomplot.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub i64 %0, %1
-  %3 = shl i64 %2, 2
-  ret i64 %3
-}
-
-; 2 occurrences:
-; eastl/optimized/TestAlgorithm.cpp.ll
+; 1 occurrences:
 ; luajit/optimized/minilua.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
@@ -278,6 +267,16 @@ define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = shl i64 %2, 32
+  ret i64 %3
+}
+
+; 1 occurrences:
+; eastl/optimized/BenchmarkSort.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = shl i64 %2, 2
   ret i64 %3
 }
 

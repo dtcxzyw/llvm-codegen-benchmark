@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andl	$1, %edx
 	movq	%rsi, %rax
 	subq	%rdx, %rax

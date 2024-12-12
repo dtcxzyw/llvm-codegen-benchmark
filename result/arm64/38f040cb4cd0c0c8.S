@@ -1,27 +1,32 @@
-func000000000000010a:                   // @func000000000000010a
+func000000000000020a:                   // @func000000000000020a
 // %bb.0:                               // %entry
-	usra	v2.2d, v4.2d, #32
-	usra	v1.2d, v3.2d, #32
-	uzp1	v1.4s, v1.4s, v2.4s
-	cmgt	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	lsr	x8, x2, #32
+	add	w8, w1, w8
+	cmp	w0, w8
+	cset	w0, gt
 	ret
                                         // -- End function
-func00000000000001e8:                   // @func00000000000001e8
+func00000000000003c8:                   // @func00000000000003c8
 // %bb.0:                               // %entry
-	usra	v2.2d, v4.2d, #32
-	usra	v1.2d, v3.2d, #32
-	uzp1	v1.4s, v1.4s, v2.4s
-	cmhi	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	lsr	x8, x2, #32
+	add	w8, w1, w8
+	cmp	w0, w8
+	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000001c8:                   // @func00000000000001c8
+func0000000000000388:                   // @func0000000000000388
 // %bb.0:                               // %entry
-	usra	v2.2d, v4.2d, #31
-	usra	v1.2d, v3.2d, #31
-	uzp1	v1.4s, v1.4s, v2.4s
-	cmhi	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	lsr	x8, x2, #31
+	add	w8, w1, w8
+	cmp	w0, w8
+	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000000288:                   // @func0000000000000288
+// %bb.0:                               // %entry
+	lsr	x8, x2, #5
+	add	w8, w1, w8
+	cmp	w0, w8
+	cset	w0, hi
 	ret
                                         // -- End function

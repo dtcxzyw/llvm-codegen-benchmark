@@ -16,10 +16,9 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/char_dev.ll
 ; linux/optimized/genhd.ll
-; linux/optimized/map.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; Function Attrs: nounwind

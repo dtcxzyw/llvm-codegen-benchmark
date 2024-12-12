@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -160
   %4 = icmp sgt i64 %1, 32
@@ -21,7 +21,7 @@ entry:
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 16
   %4 = icmp eq i64 %1, 1
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/InPredicate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000316(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000c26(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 16
   %4 = icmp eq i64 %1, 1
@@ -49,7 +49,7 @@ entry:
 ; coreutils-rs/optimized/h500puk7vtt6aeh.ll
 ; rust-analyzer-rs/optimized/5060g4cioi8zvzr6.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %.not = icmp eq i64 %1, 0
@@ -58,23 +58,37 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
-; ripgrep-rs/optimized/5ckxrdy9v0i8g3uf.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/7fmm0tfd68kkbfwadepm13y36.ll
+; zed-rs/optimized/8pzylepo63jgxs9pcfvvb1oj4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000364(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000cd4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp slt i64 %1, 0
   %5 = select i1 %4, i64 %3, i64 %0
-  %6 = icmp ult i64 %5, 8
+  %6 = icmp samesign ult i64 %5, 8
+  ret i1 %6
+}
+
+; 1 occurrences:
+; ripgrep-rs/optimized/5ckxrdy9v0i8g3uf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000cc4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 1
+  %4 = icmp slt i64 %1, 0
+  %5 = select i1 %4, i64 %3, i64 %0
+  %6 = icmp ult i64 %5, 11
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; cpp-httplib/optimized/httplib.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000421(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp eq i64 %1, -1
@@ -86,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000884(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ult i64 %1, 24

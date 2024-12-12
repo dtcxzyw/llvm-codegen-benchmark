@@ -1,83 +1,56 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v2.2d, v2.2d
-	fcvtn	v1.2s, v1.2d
-	fcvtn2	v1.4s, v2.2d
-	fcmgt	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	ucvtf	s1, x0
+	fcmp	s0, s1
+	cset	w0, mi
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v2.2d, v2.2d
-	fcvtn	v1.2s, v1.2d
-	fcvtn2	v1.4s, v2.2d
-	fcmgt	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	ucvtf	s1, x0
+	fcmp	s0, s1
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v2.2d, v2.2d
-	fcvtn	v1.2s, v1.2d
-	fcvtn2	v1.4s, v2.2d
-	fcmge	v0.4s, v1.4s, v0.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	ucvtf	s1, x0
+	fcmp	s0, s1
+	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v2.2d, v2.2d
-	fcvtn	v1.2s, v1.2d
-	fcvtn2	v1.4s, v2.2d
-	fcmeq	v0.4s, v1.4s, v0.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	ucvtf	s1, x0
+	fcmp	s0, s1
+	cset	w0, ne
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v2.2d, v2.2d
-	fcvtn	v1.2s, v1.2d
-	fcvtn2	v1.4s, v2.2d
-	fcmge	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	ucvtf	s1, x0
+	fcmp	s0, s1
+	cset	w0, ge
 	ret
                                         // -- End function
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v2.2d, v2.2d
-	fcvtn	v1.2s, v1.2d
-	fcvtn2	v1.4s, v2.2d
-	fcmgt	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	ucvtf	s1, x0
+	fcmp	s0, s1
+	cset	w0, mi
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v2.2d, v2.2d
-	fcvtn	v1.2s, v1.2d
-	fcvtn2	v1.4s, v2.2d
-	fcmeq	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	ucvtf	s1, x0
+	fcmp	s0, s1
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v2.2d, v2.2d
-	fcvtn	v1.2s, v1.2d
-	fcvtn2	v1.4s, v2.2d
-	fcmge	v0.4s, v0.4s, v1.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	ucvtf	s1, x0
+	fcmp	s0, s1
+	cset	w0, lt
 	ret
                                         // -- End function

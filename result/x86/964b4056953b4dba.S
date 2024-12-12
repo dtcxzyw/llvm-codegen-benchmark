@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$1, %edx
 	subl	%edx, %esi
 	xorl	%eax, %eax
@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	leal	4(%rsi,%rax,8), %eax
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	andl	$1, %edx
 	leal	(%rsi,%rdx,4), %eax
 	xorl	%ecx, %ecx
@@ -31,7 +31,7 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%cl
 	leal	3(%rax,%rcx,4), %eax
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	andl	$1, %edx
 	shll	$10, %edx
 	addl	%esi, %edx

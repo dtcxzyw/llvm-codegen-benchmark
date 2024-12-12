@@ -12,12 +12,12 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i64 %0, ptr %1) #0 {
+define ptr @func000000000000006f(i64 %0, ptr %1) #0 {
 entry:
   %2 = lshr i64 %0, 2
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %4, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %2
   ret ptr %5
 }
 

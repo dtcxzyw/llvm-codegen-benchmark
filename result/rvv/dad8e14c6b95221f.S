@@ -6,7 +6,7 @@ func0000000000000002:                   # @func0000000000000002
 	vror.vi	v8, v8, 4
 	li	a0, 163
 	vmsleu.vx	v10, v8, a0
-	vmor.mm	v0, v10, v0
+	vmor.mm	v0, v0, v10
 	ret
 func0000000000000018:                   # @func0000000000000018
 	lui	a0, 6

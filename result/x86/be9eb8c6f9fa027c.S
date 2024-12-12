@@ -1,3 +1,10 @@
+func0000000000000010:                   # @func0000000000000010
+	andq	$-16, %rdx
+	cmpq	$23, %rsi
+	movl	$32, %eax
+	cmovaeq	%rdx, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	movb	$56, %al
 	bzhiq	%rax, %rdx, %rax

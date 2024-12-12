@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/mapperTime.c.ll
 ; flatbuffers/optimized/idl_gen_swift.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
@@ -9,6 +9,7 @@
 ; postgres/optimized/execExprInterp.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; spike/optimized/vmsbf_m.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1) #0 {

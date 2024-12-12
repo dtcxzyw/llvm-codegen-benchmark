@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	andb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpq	$9, %rdx
+	cmpq	$65536, %rdx                    # imm = 0x10000
 	setae	%al
 	notb	%sil
 	andb	%dil, %sil

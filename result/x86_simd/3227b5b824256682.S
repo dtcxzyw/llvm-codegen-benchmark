@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -44,7 +44,7 @@ func000000000000001a:                   # @func000000000000001a
 	idivl	%ecx
 	vpinsrd	$3, %edx, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -52,7 +52,7 @@ func000000000000001a:                   # @func000000000000001a
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -98,7 +98,7 @@ func0000000000000016:                   # @func0000000000000016
 	idivl	%ecx
 	vpinsrd	$3, %edx, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpltd	.LCPI1_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -1,5 +1,5 @@
 
-; 136 occurrences:
+; 135 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -20,7 +20,6 @@
 ; linux/optimized/dcache.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/fib_semantics.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/kvm.ll
@@ -184,7 +183,7 @@ entry:
 define i64 @func0000000000000009(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 1
-  %2 = add nuw i32 %1, %0
+  %2 = add nuw i32 %0, %1
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }

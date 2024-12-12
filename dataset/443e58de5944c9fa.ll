@@ -1,12 +1,11 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; cvc5/optimized/synth_rew_rules.cpp.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_cgroup.ll
 ; linux/optimized/pci-driver.ll
 ; linux/optimized/pci-sysfs.ll
-; linux/optimized/pci_hotplug_core.ll
 ; linux/optimized/seccomp.ll
 ; linux/optimized/thermal_sysfs.ll
 ; linux/optimized/vc_screen.ll
@@ -28,7 +27,13 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 12 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
 ; linux/optimized/base.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/pci-sysfs.ll
@@ -39,7 +44,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = icmp slt i32 %3, 82
+  %4 = icmp slt i32 %3, 0
   %5 = select i1 %4, i64 %0, i64 %1
   ret i64 %5
 }

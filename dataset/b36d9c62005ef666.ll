@@ -1,26 +1,17 @@
 
-%"struct.rocksdb::CacheAlignedWrapper.2500759" = type { %"class.rocksdb::port::Mutex.2500760", [24 x i8] }
-%"class.rocksdb::port::Mutex.2500760" = type { %union.pthread_mutex_t.2500761 }
-%union.pthread_mutex_t.2500761 = type { %struct.__pthread_mutex_s.2500762 }
-%struct.__pthread_mutex_s.2500762 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2500763 }
-%struct.__pthread_internal_list.2500763 = type { ptr, ptr }
-%"struct.rocksdb::Unsigned128.2505725" = type { i64, i64 }
-%union.OSSL_PARAM_ALIGNED_BLOCK.2518553 = type { double }
-%struct.page.3343581 = type { i64, %union.anon.35.3343582, %union.anon.43.3343583, %struct.atomic_t.3343565, [8 x i8] }
-%union.anon.35.3343582 = type { %struct.anon.36.3343584 }
-%struct.anon.36.3343584 = type { %union.anon.37.3343585, ptr, %union.anon.39.3343586, i64 }
-%union.anon.37.3343585 = type { %struct.list_head.3343577 }
-%struct.list_head.3343577 = type { ptr, ptr }
-%union.anon.39.3343586 = type { i64 }
-%union.anon.43.3343583 = type { %struct.atomic_t.3343565 }
-%struct.atomic_t.3343565 = type { i32 }
+%"struct.rocksdb::CacheAlignedWrapper.2615971" = type { %"class.rocksdb::port::Mutex.2615972", [24 x i8] }
+%"class.rocksdb::port::Mutex.2615972" = type { %union.pthread_mutex_t.2615973 }
+%union.pthread_mutex_t.2615973 = type { %struct.__pthread_mutex_s.2615974 }
+%struct.__pthread_mutex_s.2615974 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615975 }
+%struct.__pthread_internal_list.2615975 = type { ptr, ptr }
+%"struct.rocksdb::Unsigned128.2620889" = type { i64, i64 }
+%union.OSSL_PARAM_ALIGNED_BLOCK.2633568 = type { double }
 
-; 67 occurrences:
+; 64 occurrences:
 ; cpython/optimized/_zoneinfo.ll
 ; cpython/optimized/posixmodule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; faiss/optimized/index_write.cpp.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/blk-map.ll
@@ -46,13 +37,11 @@
 ; linux/optimized/journal.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/kfifo.ll
-; linux/optimized/list_lru.ll
 ; linux/optimized/memalloc.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pcm_native.ll
 ; linux/optimized/percpu.ll
@@ -103,7 +92,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2500759", ptr %0, i64 %4
+  %5 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615971", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -124,22 +113,22 @@ entry:
 ; stb/optimized/stb_sprintf.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = getelementptr nusw %"struct.rocksdb::Unsigned128.2505725", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rocksdb::Unsigned128.2620889", ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = getelementptr nusw %"struct.rocksdb::Unsigned128.2505725", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rocksdb::Unsigned128.2620889", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -207,11 +196,11 @@ entry:
 ; yaml-cpp/optimized/scantag.cpp.ll
 ; yaml-cpp/optimized/scantoken.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, 5
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -319,11 +308,23 @@ entry:
 ; zfp/optimized/decode4i.c.ll
 ; zfp/optimized/decode4l.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 3
-  %5 = getelementptr nusw %union.OSSL_PARAM_ALIGNED_BLOCK.2518553, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %union.OSSL_PARAM_ALIGNED_BLOCK.2633568, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; linux/optimized/pagelist.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = lshr i64 %3, 3
+  %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -335,17 +336,6 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 3
   %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; linux/optimized/pagelist.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = lshr i64 %3, 12
-  %5 = getelementptr %struct.page.3343581, ptr %0, i64 %4
   ret ptr %5
 }
 

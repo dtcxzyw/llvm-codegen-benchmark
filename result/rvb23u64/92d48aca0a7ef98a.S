@@ -11,9 +11,14 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.x.d	a1, fa0
-	li	a2, -1
-	bclri	a2, a2, 52
-	sltu	a1, a2, a1
+	srli	a1, a1, 53
+	snez	a1, a1
+	and	a0, a0, a1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	fmv.x.d	a1, fa0
+	srli	a1, a1, 52
+	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c

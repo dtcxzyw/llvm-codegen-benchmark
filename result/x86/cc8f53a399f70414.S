@@ -21,14 +21,6 @@ func0000000000000003:                   # @func0000000000000003
 	andl	%edi, %eax
 	movzbl	%al, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	movb	$7, %al
-	subb	%sil, %al
-	movl	$1, %ecx
-	shlxl	%eax, %ecx, %eax
-	andl	%edi, %eax
-	movzbl	%al, %eax
-	retq
 func0000000000000019:                   # @func0000000000000019
 	movb	$8, %al
 	subb	%sil, %al

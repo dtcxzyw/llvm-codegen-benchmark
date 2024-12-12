@@ -3,7 +3,7 @@
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000bc(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000016c(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
   %4 = icmp sge i32 %3, %0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/cecCec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
   %4 = icmp slt i32 %3, %0
@@ -30,7 +30,7 @@ entry:
 ; git/optimized/ewah_bitmap.ll
 ; proxygen/optimized/ResourceStats.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, %0
@@ -44,7 +44,7 @@ entry:
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp ne i64 %3, 0
@@ -58,7 +58,7 @@ entry:
 ; icu/optimized/collationbuilder.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1073741823
   %4 = icmp eq i32 %3, %0

@@ -1,13 +1,12 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; git/optimized/pretty.ll
 ; linux/optimized/drm_dp_helper.ll
-; linux/optimized/utosi.ll
 ; qemu/optimized/hw_nvme_dif.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; wireshark/optimized/packet-scte35.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000302(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = icmp ne i8 %2, 1
@@ -17,12 +16,11 @@ entry:
   ret i1 %6
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; git/optimized/wildmatch.ll
 ; hermes/optimized/IREval.cpp.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
-; linux/optimized/utosi.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/ConstantFold.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
@@ -41,7 +39,7 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000042(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -6
   %3 = icmp eq i8 %2, 0
@@ -55,7 +53,7 @@ entry:
 ; git/optimized/refs.ll
 ; llvm/optimized/DiagnosticIDs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000058(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 4
   %3 = icmp eq i8 %2, 0
@@ -68,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000318(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = icmp ne i8 %2, 3
@@ -76,18 +74,6 @@ entry:
   %5 = icmp ne i8 %4, 3
   %6 = or i1 %5, %3
   ret i1 %6
-}
-
-; 1 occurrences:
-; icu/optimized/utf_impl.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000190(i8 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 15
-  %3 = and i8 %0, 32
-  %4 = or disjoint i8 %3, %2
-  %5 = icmp ne i8 %4, 0
-  ret i1 %5
 }
 
 attributes #0 = { nounwind }

@@ -1,9 +1,10 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; libpng/optimized/pngwutil.c.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -15,10 +16,10 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ugt i32 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -40,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/convhull.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.abs.i32(i32 %2, i1 true)
   %4 = icmp eq i32 %3, %1

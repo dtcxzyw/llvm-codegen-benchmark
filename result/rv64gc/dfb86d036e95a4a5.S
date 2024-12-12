@@ -10,7 +10,7 @@ func0000000000000063:                   # @func0000000000000063
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	add	a2, a2, a3
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	srli	a1, a1, 21
 	add	a0, a0, a1
 	ret

@@ -3,10 +3,10 @@
 ; linux/optimized/early_ioremap.ll
 ; qemu/optimized/system_watchpoint.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000202(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %0
-  %3 = icmp ult i64 %2, %1
+  %3 = icmp ugt i64 %1, %2
   %4 = icmp eq i64 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5

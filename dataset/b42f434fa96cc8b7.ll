@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 27 occurrences:
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; just-rs/optimized/3fhxcueg488gjpka.ll
@@ -19,18 +19,16 @@
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
-; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
-; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/1jbxepb6u2xll6bg.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/3gcibbz2byn4bjmr.ll
-; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/4190jy0hpyvhha7p.ll
 ; wasmtime-rs/optimized/htjc1uvg1e5mxes.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = add nsw i64 %3, %1
@@ -38,7 +36,7 @@ entry:
   ret ptr %5
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -56,14 +54,33 @@ entry:
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/8ncehfng1y5s06ypbycx8606d.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 4
   %4 = add i64 %3, %1
   %5 = getelementptr nusw [0 x { i64, { i16, i8, [1 x i8] }, [2 x i16] }], ptr %0, i64 0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
   ret ptr %6
+}
+
+; 7 occurrences:
+; typst-rs/optimized/1mrwywpkq81cby93.ll
+; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = add nsw i64 %3, %1
+  %5 = getelementptr nuw [0 x { ptr, ptr }], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

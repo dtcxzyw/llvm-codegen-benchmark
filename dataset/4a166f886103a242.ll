@@ -18,11 +18,12 @@ entry:
 define i1 @func0000000000000004(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/envelope_multi.ll
 ; darktable/optimized/introspection_colorcorrection.c.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll

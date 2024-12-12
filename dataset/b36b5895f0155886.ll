@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; cpython/optimized/mathmodule.ll
 ; graphviz/optimized/arrows.c.ll
@@ -13,7 +13,6 @@
 ; proj/optimized/eck5.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/vandg2.cpp.ll
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/convolvedstudentt.ll

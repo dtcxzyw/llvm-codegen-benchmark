@@ -1,7 +1,9 @@
 
-; 63 occurrences:
+; 68 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/BaseImporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
@@ -63,8 +65,11 @@
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 2
   %4 = select i1 %3, i1 %0, i1 false
@@ -79,7 +84,7 @@ entry:
 ; rocksdb/optimized/write_batch.cc.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -96,7 +101,7 @@ entry:
 ; minetest/optimized/subgames.cpp.ll
 ; openssl/optimized/openssl-bin-pkcs8.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -110,7 +115,7 @@ entry:
 ; llama.cpp/optimized/ggml.c.ll
 ; qemu/optimized/block_replication.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, -1
   %4 = select i1 %3, i1 %0, i1 false
@@ -123,7 +128,7 @@ entry:
 ; libpng/optimized/png.c.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 32
   %4 = select i1 %3, i1 %0, i1 false
@@ -135,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -148,7 +153,7 @@ entry:
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; redis/optimized/script.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -163,7 +168,7 @@ entry:
 ; linux/optimized/loop.ll
 ; openusd/optimized/utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 4294967296
   %4 = select i1 %3, i1 %0, i1 false
@@ -173,9 +178,21 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/80403hw32s3ougvze8j2ycldj.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i1 %0, i1 false
+  %5 = icmp ult i64 %1, 2
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; linux/optimized/aio.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 65536
   %4 = select i1 %3, i1 %0, i1 false

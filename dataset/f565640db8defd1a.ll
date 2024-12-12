@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 74 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -74,7 +74,6 @@
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; openjdk/optimized/hb-ucd.ll
-; redis/optimized/rax.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:

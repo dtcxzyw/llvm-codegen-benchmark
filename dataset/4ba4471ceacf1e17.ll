@@ -15,6 +15,7 @@
 ; arrow/optimized/counting_semaphore.cc.ll
 ; arrow/optimized/future.cc.ll
 ; arrow/optimized/slow.cc.ll
+; boost/optimized/from_chars.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/ProcessUNIX.c.ll
 ; cmake/optimized/cmExecuteProcessCommand.cxx.ll
@@ -45,7 +46,6 @@
 ; mitsuba3/optimized/xml.cpp.ll
 ; msdfgen/optimized/import-font.cpp.ll
 ; node/optimized/fs.ll
-; openblas/optimized/parameter.c.ll
 ; opencv/optimized/adaptive_manifold_filter_n.cpp.ll
 ; opencv/optimized/pipeline_modeling_tool.cpp.ll
 ; openjdk/optimized/DrawParallelogram.ll

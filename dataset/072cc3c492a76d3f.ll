@@ -1,7 +1,8 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; libquic/optimized/p256-64.c.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -14,7 +15,7 @@
 define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
   %2 = xor i128 %1, -18446744073709551616
-  %3 = and i128 %2, %0
+  %3 = and i128 %0, %2
   ret i128 %3
 }
 

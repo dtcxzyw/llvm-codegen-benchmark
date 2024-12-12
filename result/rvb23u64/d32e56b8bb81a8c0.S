@@ -45,6 +45,13 @@ func00000000000000a2:                   # @func00000000000000a2
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
+func00000000000000cd:                   # @func00000000000000cd
+	sext.w	a0, a0
+	fli.d	fa5, 0.5
+	snez	a0, a0
+	flt.d	a1, fa0, fa5
+	andn	a0, a0, a1
+	ret
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
@@ -61,22 +68,22 @@ func0000000000000018:                   # @func0000000000000018
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
-.LCPI8_0:
+.LCPI9_0:
 	.quad	0x3ee4f8b588e368f1              # double 1.0000000000000001E-5
-func000000000000004d:                   # @func000000000000004d
-	lui	a1, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a1)
+func000000000000014d:                   # @func000000000000014d
+	lui	a1, %hi(.LCPI9_0)
+	fld	fa5, %lo(.LCPI9_0)(a1)
 	sext.w	a0, a0
 	sltiu	a0, a0, 19
 	flt.d	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
-.LCPI9_0:
+.LCPI10_0:
 	.quad	0x3f50624dd2f1a9fc              # double 0.001
-func0000000000000044:                   # @func0000000000000044
+func0000000000000144:                   # @func0000000000000144
 	sext.w	a0, a0
-	lui	a1, %hi(.LCPI9_0)
-	fld	fa5, %lo(.LCPI9_0)(a1)
+	lui	a1, %hi(.LCPI10_0)
+	fld	fa5, %lo(.LCPI10_0)(a1)
 	lui	a1, 2
 	addiw	a1, a1, 1807
 	sltu	a0, a0, a1
@@ -97,11 +104,11 @@ func00000000000000ac:                   # @func00000000000000ac
 	fle.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
-.LCPI12_0:
+.LCPI13_0:
 	.quad	0x3fefffeb074a771d              # double 0.99999000000000004
-func0000000000000042:                   # @func0000000000000042
-	lui	a1, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a1)
+func0000000000000142:                   # @func0000000000000142
+	lui	a1, %hi(.LCPI13_0)
+	fld	fa5, %lo(.LCPI13_0)(a1)
 	sext.w	a0, a0
 	sltiu	a0, a0, 100
 	flt.d	a1, fa0, fa5

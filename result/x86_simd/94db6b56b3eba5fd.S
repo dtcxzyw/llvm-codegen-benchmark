@@ -18,14 +18,14 @@ func0000000000000028:                   # @func0000000000000028
 	.quad	-3                              # 0xfffffffffffffffd
 .LCPI1_3:
 	.quad	-2                              # 0xfffffffffffffffe
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm2, %k2
 	vpbroadcastq	.LCPI1_1(%rip), %ymm1   # ymm1 = [18446744073709551612,18446744073709551612,18446744073709551612,18446744073709551612]
 	vpbroadcastq	.LCPI1_2(%rip), %ymm1 {%k2} # ymm1 {%k2} = [18446744073709551613,18446744073709551613,18446744073709551613,18446744073709551613]
 	vpbroadcastq	.LCPI1_3(%rip), %ymm1 {%k1} # ymm1 {%k1} = [18446744073709551614,18446744073709551614,18446744073709551614,18446744073709551614]
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	65536                           # 0x10000
@@ -35,7 +35,7 @@ func0000000000000010:                   # @func0000000000000010
 	.quad	3                               # 0x3
 .LCPI2_3:
 	.quad	2                               # 0x2
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpcmpltud	.LCPI2_0(%rip){1to4}, %xmm2, %k2
@@ -45,19 +45,21 @@ func0000000000000013:                   # @func0000000000000013
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI3_0:
-	.long	2                               # 0x2
+	.long	65536                           # 0x10000
 .LCPI3_1:
-	.quad	32                              # 0x20
+	.quad	4                               # 0x4
 .LCPI3_2:
-	.quad	36                              # 0x24
-func000000000000001a:                   # @func000000000000001a
+	.quad	3                               # 0x3
+.LCPI3_3:
+	.quad	2                               # 0x2
+func0000000000000010:                   # @func0000000000000010
 	vpslld	$31, %xmm1, %xmm1
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnltd	%xmm3, %xmm1, %k1
-	vpcmpltd	.LCPI3_0(%rip){1to4}, %xmm2, %k2
-	vpbroadcastq	.LCPI3_1(%rip), %ymm1   # ymm1 = [32,32,32,32]
-	vpbroadcastq	.LCPI3_2(%rip), %ymm1 {%k2} # ymm1 {%k2} = [36,36,36,36]
-	vpaddq	%ymm1, %ymm0, %ymm0 {%k1}
+	vpmovd2m	%xmm1, %k1
+	vpcmpltud	.LCPI3_0(%rip){1to4}, %xmm2, %k2
+	vpbroadcastq	.LCPI3_1(%rip), %ymm1   # ymm1 = [4,4,4,4]
+	vpbroadcastq	.LCPI3_2(%rip), %ymm1 {%k2} # ymm1 {%k2} = [3,3,3,3]
+	vpbroadcastq	.LCPI3_3(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2]
+	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI4_0:
 	.quad	60                              # 0x3c

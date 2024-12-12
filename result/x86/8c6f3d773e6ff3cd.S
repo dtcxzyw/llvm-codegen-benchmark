@@ -7,6 +7,6 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000000:                   # @func0000000000000000
 	sarl	%edx
 	leal	(%rdx,%rdi), %eax
-	sarl	$6, %esi
+	sarl	%esi
 	addl	%esi, %eax
 	retq

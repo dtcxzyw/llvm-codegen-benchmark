@@ -43,13 +43,13 @@ entry:
 ; openmpi/optimized/show_help_lex.ll
 ; php/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -57,13 +57,13 @@ entry:
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 

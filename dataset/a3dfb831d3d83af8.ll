@@ -7,7 +7,7 @@
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; Function Attrs: nounwind

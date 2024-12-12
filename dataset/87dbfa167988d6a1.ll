@@ -116,10 +116,10 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000401(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = trunc i64 %4 to i32
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -129,7 +129,7 @@ entry:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000286(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, %0
@@ -156,7 +156,7 @@ entry:
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, %0
@@ -177,26 +177,14 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; abc/optimized/extraUtilMisc.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000003c4(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
-  %5 = and i64 %4, 4294967264
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000781(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = trunc i64 %4 to i32
   %6 = icmp eq i32 %5, 32
   ret i1 %6
@@ -212,9 +200,21 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = trunc i64 %4 to i32
   %6 = icmp ugt i32 %5, 99
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func000000000000040c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = add i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = icmp ne i32 %5, 0
   ret i1 %6
 }
 
@@ -246,7 +246,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000028c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, %0
@@ -258,7 +258,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/IntervalPartition.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000288(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, %0
@@ -270,7 +270,7 @@ entry:
 ; 1 occurrences:
 ; pocketpy/optimized/collections.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000028a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, %0

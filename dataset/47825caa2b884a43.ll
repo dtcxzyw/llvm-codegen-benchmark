@@ -1,7 +1,8 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/ifTime.c.ll
 ; abc/optimized/sclLibUtil.c.ll
+; boost/optimized/envelope_multi.ll
 ; box2d/optimized/b2_time_of_impact.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
@@ -26,7 +27,8 @@ entry:
   ret float %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/envelope_multi.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btReducedDeformableBodySolver.ll

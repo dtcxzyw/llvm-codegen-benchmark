@@ -42,7 +42,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
 	vpbroadcastq	.LCPI0_0(%rip), %ymm1   # ymm1 = [1,1,1,1]
 	vpsllvq	%ymm0, %ymm1, %ymm0
@@ -54,7 +54,7 @@ func0000000000000061:                   # @func0000000000000061
 	.quad	1                               # 0x1
 .LCPI1_1:
 	.quad	68169855139842                  # 0x3e0008000002
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1   # ymm1 = [1,1,1,1]
 	vpsllvq	%ymm0, %ymm1, %ymm0

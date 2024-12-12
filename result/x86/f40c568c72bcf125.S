@@ -1,11 +1,11 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	leal	-2(%rdx), %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
 	addl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	leal	-1000(%rdx), %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax

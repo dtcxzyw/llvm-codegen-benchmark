@@ -1,20 +1,6 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ldr	q16, [sp]
-	fneg	v16.4s, v16.4s
-	fmul	v4.4s, v16.4s, v4.4s
-	ldr	q16, [sp, #16]
-	fdiv	v0.4s, v4.4s, v0.4s
-	fneg	v4.4s, v16.4s
-	fmul	v4.4s, v4.4s, v5.4s
-	ldr	q5, [sp, #32]
-	fdiv	v1.4s, v4.4s, v1.4s
-	fneg	v4.4s, v5.4s
-	ldr	q5, [sp, #48]
-	fmul	v4.4s, v4.4s, v6.4s
-	fdiv	v2.4s, v4.4s, v2.4s
-	fneg	v4.4s, v5.4s
-	fmul	v4.4s, v4.4s, v7.4s
-	fdiv	v3.4s, v4.4s, v3.4s
+	fnmul	s1, s2, s1
+	fdiv	s0, s1, s0
 	ret
                                         // -- End function

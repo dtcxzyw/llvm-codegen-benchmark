@@ -18,21 +18,10 @@ func0000000000000032:                   # @func0000000000000032
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
-	li	a2, 85
-	mul	a1, a1, a2
-	addw	a0, a0, a1
-	ret
 func0000000000000030:                   # @func0000000000000030
 	slli	a2, a1, 3
 	add	a0, a0, a1
 	addw	a0, a0, a2
-	ret
-func0000000000000020:                   # @func0000000000000020
-	slli	a2, a1, 1
-	slli	a1, a1, 3
-	subw	a1, a1, a2
-	addw	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
 	li	a2, 75

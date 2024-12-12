@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; hermes/optimized/ASTBuilder.cpp.ll
 ; hermes/optimized/BlockScopingTransformations.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -20,15 +20,16 @@
 ; hermes/optimized/SemanticValidator.cpp.ll
 ; hyperscan/optimized/noodle_engine.c.ll
 ; linux/optimized/gup.ll
+; lvgl/optimized/lv_grid.ll
 ; openblas/optimized/dsymv_U.c.ll
 ; openmpi/optimized/gds_shmem.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %0, 7
+  %3 = add i64 %0, 4294967295
   %4 = add i64 %3, %2
-  %5 = and i64 %4, 7
+  %5 = and i64 %4, 4294967295
   ret i64 %5
 }
 

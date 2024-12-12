@@ -3,7 +3,7 @@
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = add i32 %3, %1
@@ -38,10 +38,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/freetype.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000206(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   %6 = icmp slt i32 %5, 0
   ret i1 %6

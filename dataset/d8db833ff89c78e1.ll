@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-t1_trce.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c9(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000189(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -22,7 +22,7 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -71,7 +71,7 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -86,7 +86,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -99,7 +99,7 @@ entry:
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -124,7 +124,7 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001ec(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -156,7 +156,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -174,7 +174,7 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000bc(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000016c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -189,7 +189,7 @@ entry:
 ; libquic/optimized/cbs.c.ll
 ; libwebp/optimized/webp_dec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -202,7 +202,7 @@ entry:
 ; luau/optimized/BytecodeAnalysis.cpp.ll
 ; luau/optimized/lvmload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -218,36 +218,50 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; lodepng/optimized/pngdetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000174(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = add nuw nsw i64 %0, 4
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
+  ret i1 %6
+}
+
+; 3 occurrences:
+; gromacs/optimized/dlasq2.cpp.ll
+; gromacs/optimized/slasq2.cpp.ll
+; openblas/optimized/dlasq2.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f8(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = add nuw nsw i64 %0, 4
+  %6 = icmp samesign ugt i64 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000134(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = add nsw i64 %0, -32
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 

@@ -1,13 +1,11 @@
 
-; 6 occurrences:
-; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
+; 4 occurrences:
 ; linux/optimized/locks.ll
-; linux/optimized/sta_info.ll
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = and i8 %0, 1
@@ -22,7 +20,7 @@ entry:
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; rust-analyzer-rs/optimized/3fmes56s5ij0nccc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000101(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 63
   %3 = and i8 %0, 63

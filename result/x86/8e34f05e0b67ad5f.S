@@ -12,10 +12,10 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
-	testq	%rsi, %rsi
-	sete	%cl
+func0000000000000042:                   # @func0000000000000042
 	testl	%edx, %edx
+	sete	%cl
+	testq	%rsi, %rsi
 	sete	%al
 	orb	%cl, %al
 	orb	%dil, %al

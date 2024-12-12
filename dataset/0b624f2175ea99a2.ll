@@ -1,8 +1,6 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; abc/optimized/ivyCutTrav.c.ll
-; hermes/optimized/NativeFormatting.cpp.ll
-; llvm/optimized/NativeFormatting.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; opencv/optimized/distransform.cpp.ll
 ; openjdk/optimized/c1_CodeStubs_x86.ll
@@ -16,6 +14,21 @@ entry:
   %5 = sub nsw i64 0, %4
   %6 = getelementptr nusw i8, ptr %1, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 3 occurrences:
+; hermes/optimized/NativeFormatting.cpp.ll
+; llvm/optimized/NativeFormatting.cpp.ll
+; opencv/optimized/distransform.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 32
+  %5 = sub nsw i64 0, %4
+  %6 = getelementptr nusw i8, ptr %1, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 

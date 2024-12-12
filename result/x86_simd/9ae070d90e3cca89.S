@@ -1,4 +1,4 @@
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	vptestmw	%ymm0, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -23,7 +23,7 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	.short	32767                           # 0x7fff
 .LCPI1_1:
 	.short	32767                           # 0x7fff
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	vpbroadcastw	.LCPI1_1(%rip), %ymm3   # ymm3 = [32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,32767]
 	vpcmpeqw	%ymm3, %ymm2, %k0
 	vpcmpeqw	%ymm3, %ymm1, %k1
@@ -84,7 +84,7 @@ func0000000000000111:                   # @func0000000000000111
 	.short	3                               # 0x3
 	.short	3                               # 0x3
 	.short	3                               # 0x3
-func0000000000000444:                   # @func0000000000000444
+func0000000000001084:                   # @func0000000000001084
 	vpcmpltuw	.LCPI2_0(%rip), %ymm2, %k0
 	vpcmpltuw	.LCPI2_1(%rip), %ymm1, %k1
 	korw	%k0, %k1, %k0
@@ -110,14 +110,14 @@ func0000000000000444:                   # @func0000000000000444
 	.short	32                              # 0x20
 	.short	32                              # 0x20
 	.short	32                              # 0x20
-func0000000000000888:                   # @func0000000000000888
+func0000000000002108:                   # @func0000000000002108
 	vpmaxuw	%ymm2, %ymm1, %ymm1
 	vpmaxuw	%ymm0, %ymm1, %ymm0
 	vpcmpnleuw	.LCPI3_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000581:                   # @func0000000000000581
 	vptestnmw	%ymm2, %ymm2, %k0
 	vptestmw	%ymm1, %ymm1, %k1
 	vptestnmw	%ymm0, %ymm0, %k2

@@ -1,5 +1,5 @@
 
-; 397 occurrences:
+; 396 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
@@ -267,7 +267,6 @@
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll

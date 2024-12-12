@@ -1,9 +1,7 @@
 
-; 41 occurrences:
-; abc/optimized/bmcLoad.c.ll
+; 37 occurrences:
 ; abc/optimized/giaDup.c.ll
-; cmake/optimized/setopt.c.ll
-; curl/optimized/libcurl_la-setopt.ll
+; boost/optimized/to_chars.ll
 ; icu/optimized/ucptrie.ll
 ; libquic/optimized/stack_trace.cc.ll
 ; libquic/optimized/v3_purp.c.ll
@@ -12,7 +10,6 @@
 ; linux/optimized/filemap.ll
 ; linux/optimized/idr.ll
 ; linux/optimized/init_64.ll
-; linux/optimized/p4.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/tctx.ll
@@ -38,7 +35,6 @@
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/thread.ll
-; slurm/optimized/job_test.ll
 ; spike/optimized/triggers.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
@@ -47,18 +43,15 @@ entry:
   %3 = and i64 %2, 14
   %4 = icmp ne i64 %3, 0
   %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 157 occurrences:
+; 150 occurrences:
 ; abc/optimized/aigRetF.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/giaDup.c.ll
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMuxes.c.ll
-; cmake/optimized/setopt.c.ll
-; curl/optimized/libcurl_la-setopt.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; freetype/optimized/autofit.c.ll
 ; git/optimized/rev-list.ll
@@ -69,7 +62,6 @@ entry:
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/manage.ll
 ; linux/optimized/mremap.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/r8169_main.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -111,9 +103,6 @@ entry:
 ; ruby/optimized/string.ll
 ; ruby/optimized/weakmap.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/triggers.ll
 ; wireshark/optimized/about_dialog.cpp.ll
 ; wireshark/optimized/additional_toolbar.cpp.ll
@@ -215,7 +204,7 @@ entry:
   %3 = and i64 %2, 31
   %4 = icmp eq i64 %3, 20
   %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

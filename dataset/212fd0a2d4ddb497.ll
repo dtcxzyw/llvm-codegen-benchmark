@@ -1,10 +1,9 @@
 
-; 104 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -109,7 +108,7 @@ define i64 @func000000000000003d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = shl nuw nsw i32 %1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }

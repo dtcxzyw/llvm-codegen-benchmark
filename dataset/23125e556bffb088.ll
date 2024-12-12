@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; libphonenumber/optimized/phonenumberutil.cc.ll
 ; libphonenumber/optimized/shortnumberinfo.cc.ll
@@ -41,11 +41,12 @@
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/prefilter_tree.cc.ll
 ; re2/optimized/regexp.cc.ll
+; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, %0
   %6 = add i64 %5, -16
   ret i64 %6

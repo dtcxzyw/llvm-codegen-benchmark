@@ -1,5 +1,5 @@
 
-; 173 occurrences:
+; 176 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/acbFunc.c.ll
+; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bbrImage.c.ll
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -25,6 +26,7 @@
 ; abc/optimized/fraigTable.c.ll
 ; abc/optimized/fxuReduce.c.ll
 ; abc/optimized/giaEra2.c.ll
+; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/giaMfs.c.ll
 ; abc/optimized/giaMuxes.c.ll
@@ -32,6 +34,7 @@
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTruth.c.ll
+; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifLibBox.c.ll
 ; abc/optimized/ioReadBlif.c.ll
 ; abc/optimized/ioReadPla.c.ll
@@ -47,7 +50,6 @@
 ; ceres/optimized/residual_block_utils.cc.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; faiss/optimized/NSG.cpp.ll
-; git/optimized/for-each-repo.ll
 ; git/optimized/ref-filter.ll
 ; graphviz/optimized/QuadTree.c.ll
 ; graphviz/optimized/stuff.c.ll
@@ -87,6 +89,7 @@
 ; linux/optimized/rsrc.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
 ; ncnn/optimized/deconvolution_x86.cpp.ll
 ; ncnn/optimized/deconvolution_x86_avx.cpp.ll
 ; ncnn/optimized/deconvolution_x86_avx512.cpp.ll
@@ -118,6 +121,7 @@
 ; opencv/optimized/grfmt_pam.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
@@ -160,7 +164,6 @@
 ; postgres/optimized/print.ll
 ; postgres/optimized/toast_internals.ll
 ; postgres/optimized/varlena.ll
-; proj/optimized/factory.cpp.ll
 ; qemu/optimized/util_thread-context.c.ll
 ; quest/optimized/QuEST_common.c.ll
 ; raylib/optimized/raudio.c.ll
@@ -174,7 +177,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
@@ -183,10 +186,11 @@ entry:
   ret i1 %5
 }
 
-; 47 occurrences:
+; 49 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/giaSimBase.c.ll
+; abc/optimized/ifMap.c.ll
 ; abc/optimized/plaMan.c.ll
 ; assimp/optimized/ConvertToLHProcess.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -205,6 +209,7 @@ entry:
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask_rect.ll
 ; opencv/optimized/descriptor.cpp.ll
 ; openjdk/optimized/ad_x86_pipeline.ll
 ; openjdk/optimized/cfgnode.ll
@@ -232,7 +237,7 @@ entry:
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext i32 %2 to i64
@@ -252,12 +257,12 @@ entry:
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -277,31 +282,31 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000079(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f9(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp uge i64 %4, %3
+  %5 = icmp samesign uge i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f8(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 4
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
@@ -313,12 +318,12 @@ entry:
 ; 1 occurrences:
 ; hwloc/optimized/topology-linux.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

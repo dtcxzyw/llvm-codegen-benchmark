@@ -10,7 +10,7 @@
 define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 16
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = shl nuw nsw i64 %1, 24
   %5 = or disjoint i64 %3, %4
   ret i64 %5
@@ -27,7 +27,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 8
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = shl i64 %1, 24
   %5 = or i64 %3, %4
   ret i64 %5
@@ -39,19 +39,20 @@ entry:
 define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 31
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = shl nuw nsw i64 %1, 32
   %5 = or i64 %3, %4
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; openusd/optimized/testSdfMetaDataPlugInfo.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 48
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = shl nuw nsw i64 %1, 16
   %5 = or disjoint i64 %3, %4
   ret i64 %5
@@ -63,7 +64,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 32
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = shl nsw i64 %1, 48
   %5 = or i64 %3, %4
   ret i64 %5

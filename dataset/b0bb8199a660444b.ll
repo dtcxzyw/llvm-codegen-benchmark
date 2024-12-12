@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -7,7 +7,6 @@
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
-; gromacs/optimized/freeenergy.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; gromacs/optimized/tngio.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
@@ -75,7 +74,7 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -87,6 +86,7 @@ entry:
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/decodetxb.c.ll
+; openusd/optimized/detokenize.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:

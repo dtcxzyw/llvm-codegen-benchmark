@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; icu/optimized/gencnvex.ll
+; linux/optimized/swiotlb.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; php/optimized/fastcgi.ll
@@ -15,10 +16,11 @@ entry:
   ret i32 %3
 }
 
-; 163 occurrences:
+; 148 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/bblif.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; entt/optimized/benchmark.cpp.ll
@@ -60,17 +62,12 @@ entry:
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/hwmon.ll
 ; linux/optimized/intel_display_trace.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/mapping.ll
 ; linux/optimized/mei-trace.ll
-; linux/optimized/mmap_lock.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
@@ -81,7 +78,6 @@ entry:
 ; linux/optimized/softirq.ll
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/thermal_core.ll
-; linux/optimized/virtgpu_trace_points.ll
 ; linux/optimized/workqueue.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -107,7 +103,6 @@ entry:
 ; llvm/optimized/MCDXContainerWriter.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/RegisterPressure.cpp.ll
@@ -134,16 +129,7 @@ entry:
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; openjdk/optimized/escape.ll
-; openjdk/optimized/g1ConcurrentMark.ll
-; openjdk/optimized/g1FullGCMarker.ll
-; openjdk/optimized/g1ParScanThreadState.ll
 ; openjdk/optimized/nmethod.ll
-; openjdk/optimized/psParallelCompact.ll
-; openjdk/optimized/psScavenge.ll
-; openjdk/optimized/shenandoahHeap.ll
-; openjdk/optimized/shenandoahMark.ll
-; openjdk/optimized/xHeapIterator.ll
-; openjdk/optimized/zHeapIterator.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
@@ -188,10 +174,9 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; rocksdb/optimized/filter_policy.cc.ll
 ; wireshark/optimized/pcapng.c.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i64 %0) #0 {
 entry:
@@ -243,9 +228,8 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/X86AsmBackend.cpp.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; Function Attrs: nounwind
@@ -257,7 +241,7 @@ entry:
   ret i32 %3
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; git/optimized/strbuf.ll
 ; hermes/optimized/IdentifierTable.cpp.ll
 ; hermes/optimized/StringPrimitive.cpp.ll
@@ -273,7 +257,6 @@ entry:
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll

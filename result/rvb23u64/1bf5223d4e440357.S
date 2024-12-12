@@ -1,7 +1,7 @@
 func000000000000001e:                   # @func000000000000001e
 	zext.w	a4, a4
 	mul	a1, a1, a4
-	mulhu	a3, a4, a0
+	mulhu	a3, a0, a4
 	mul	a0, a0, a4
 	add	a1, a1, a3
 	add.uw	a2, a2, a0

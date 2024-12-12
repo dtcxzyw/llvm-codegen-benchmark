@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -16,7 +16,6 @@
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hermes/optimized/MemoryBuffer.cpp.ll
 ; hermes/optimized/String.cpp.ll
 ; hermes/optimized/escape.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -39,41 +38,52 @@
 ; wolfssl/optimized/dh.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967292
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i32, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 8 occurrences:
+; 1 occurrences:
+; php/optimized/zend_inference.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr nusw nuw i32, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 7 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; git/optimized/record.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
 ; opencv/optimized/grfmt_sunras.cpp.ll
-; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -8
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %3 = and i64 %2, 17179869176
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i32, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; flatbuffers/optimized/reflection.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967292
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
@@ -96,12 +106,12 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcRenode.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
   %4 = getelementptr i32, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -117,6 +127,18 @@ entry:
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; hermes/optimized/MemoryBuffer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -16
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = zext i32 %1 to i64
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -1,10 +1,10 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vcvttss2si	%xmm0, %eax
 	subl	%esi, %eax
 	cmpl	%edi, %eax
 	setb	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vcvttss2si	%xmm0, %eax
 	subl	%esi, %eax
 	cmpl	%edi, %eax

@@ -24,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm4, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm4[0]
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vextracti128	$1, %ymm1, %xmm3
@@ -52,5 +52,5 @@ func0000000000000000:                   # @func0000000000000000
 	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm4, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm4[0]
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq

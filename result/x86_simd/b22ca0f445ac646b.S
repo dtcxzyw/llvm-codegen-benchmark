@@ -17,7 +17,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpneqd	.LCPI0_0(%rip){1to8}, %ymm2, %k0
@@ -27,7 +27,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm4, %ymm4, %ymm4
@@ -55,7 +55,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmovd2m	%ymm2, %k0

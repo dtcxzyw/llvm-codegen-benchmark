@@ -13,7 +13,7 @@ define i1 @func0000000000000008(double %0) #0 {
 entry:
   %1 = fptoui double %0 to i32
   %2 = uitofp i32 %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
@@ -28,7 +28,7 @@ define i1 @func0000000000000007(double %0) #0 {
 entry:
   %1 = fptoui double %0 to i32
   %2 = uitofp i32 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 

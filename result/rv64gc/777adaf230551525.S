@@ -40,6 +40,14 @@ func0000000000000015:                   # @func0000000000000015
 	addiw	a1, a1, 14
 	sub	a0, a0, a1
 	ret
+func000000000000000f:                   # @func000000000000000f
+	addiw	a1, a1, -64
+	sub	a0, a0, a1
+	ret
+func0000000000000005:                   # @func0000000000000005
+	addiw	a1, a1, -48
+	sub	a0, a0, a1
+	ret
 func0000000000000003:                   # @func0000000000000003
 	addi	a1, a1, -1
 	slli	a1, a1, 32
@@ -56,10 +64,6 @@ func0000000000000009:                   # @func0000000000000009
 	srli	a1, a1, 32
 	sub	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
-	addiw	a1, a1, -8
-	sub	a0, a0, a1
-	ret
 func000000000000000a:                   # @func000000000000000a
 	addi	a1, a1, 1
 	slli	a1, a1, 32
@@ -68,10 +72,6 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000c:                   # @func000000000000000c
 	addiw	a1, a1, -1
-	sub	a0, a0, a1
-	ret
-func0000000000000005:                   # @func0000000000000005
-	addiw	a1, a1, -20
 	sub	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006

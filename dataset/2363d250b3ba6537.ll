@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; glslang/optimized/Pp.cpp.ll
 ; hdf5/optimized/h5diff_array.c.ll
@@ -7,7 +7,6 @@
 ; hermes/optimized/PrimitiveBox.cpp.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
-; qemu/optimized/meson-generated_.._dbus-display1.c.ll
 ; quickjs/optimized/quickjs-libc.ll
 ; quickjs/optimized/quickjs.ll
 ; stat-rs/optimized/rkxxfn3f5mhspne.ll
@@ -21,8 +20,7 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; cpython/optimized/mathmodule.ll
+; 3 occurrences:
 ; stat-rs/optimized/1957ju1ns40544yq.ll
 ; stat-rs/optimized/350eqnsjcoc7kbdy.ll
 ; stat-rs/optimized/rkxxfn3f5mhspne.ll

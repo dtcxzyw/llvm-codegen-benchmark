@@ -1,6 +1,7 @@
 
-; 116 occurrences:
+; 114 occurrences:
 ; arrow/optimized/bignum.cc.ll
+; clamav/optimized/yara_grammar.c.ll
 ; clamav/optimized/yara_lexer.c.ll
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
 ; cmake/optimized/cmCommandArgumentLexer.cxx.ll
@@ -8,16 +9,18 @@
 ; cmake/optimized/cmDependsJavaParser.cxx.ll
 ; cmake/optimized/cmExprLexer.cxx.ll
 ; cmake/optimized/cmFortranLexer.cxx.ll
+; cmake/optimized/cmFortranParser.cxx.ll
 ; cmake/optimized/cmGccDepfileLexer.cxx.ll
 ; cmake/optimized/cmListFileLexer.c.ll
-; cmake/optimized/frm_driver.c.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; eastl/optimized/EAScanfCore.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; glslang/optimized/glslang_tab.cpp.ll
 ; graphviz/optimized/exparse.c.ll
+; graphviz/optimized/gmlparse.c.ll
 ; graphviz/optimized/gmlscan.c.ll
+; graphviz/optimized/htmlparse.c.ll
 ; graphviz/optimized/layout.c.ll
 ; graphviz/optimized/scan.c.ll
 ; gromacs/optimized/parser.cpp.ll
@@ -71,22 +74,18 @@
 ; postgres/optimized/guc-file.ll
 ; postgres/optimized/heap.ll
 ; postgres/optimized/indexam.ll
-; postgres/optimized/indexcmds.ll
 ; postgres/optimized/matview.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/partcache.ll
 ; postgres/optimized/pg_attrdef.ll
 ; postgres/optimized/pgc.ll
 ; postgres/optimized/pl_gram.ll
-; postgres/optimized/plancat.ll
 ; postgres/optimized/preproc.ll
 ; postgres/optimized/repl_scanner.ll
 ; postgres/optimized/ri_triggers.ll
 ; postgres/optimized/specscanner.ll
 ; postgres/optimized/syncrep_scanner.ll
-; postgres/optimized/syscache.ll
 ; postgres/optimized/tablecmds.ll
-; postgres/optimized/trigger.ll
 ; postgres/optimized/tupdesc.ll
 ; proj/optimized/wkt2_generated_parser.c.ll
 ; redis/optimized/lparser.ll
@@ -106,7 +105,6 @@
 ; wireshark/optimized/dtd_preparse.c.ll
 ; wireshark/optimized/k12text.c.ll
 ; wireshark/optimized/mate_parser.c.ll
-; wireshark/optimized/packet-csn1.c.ll
 ; wireshark/optimized/protobuf_lang_scanner.c.ll
 ; wireshark/optimized/radius_dict.c.ll
 ; wireshark/optimized/scanner.c.ll

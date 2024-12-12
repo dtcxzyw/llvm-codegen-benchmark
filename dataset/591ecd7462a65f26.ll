@@ -1,8 +1,12 @@
 
-; 103 occurrences:
+; 107 occurrences:
 ; abc/optimized/cnfFast.c.ll
 ; arrow/optimized/exec.cc.ll
 ; assimp/optimized/unzip.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/segments_encoded_ref.ll
+; boost/optimized/segments_ref.ll
+; boost/optimized/url_base.ll
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/XzIn.c.ll
 ; clamav/optimized/asn1.c.ll
@@ -29,7 +33,6 @@
 ; lief/optimized/ecdh.c.ll
 ; lief/optimized/psa_crypto_storage.c.ll
 ; linux/optimized/badblocks.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/i915_gem_userptr.ll
 ; linux/optimized/kexec_core.ll
@@ -102,6 +105,7 @@
 ; velox/optimized/URLFunctions.cpp.ll
 ; wireshark/optimized/uat.c.ll
 ; xgboost/optimized/tree_model.cc.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -111,7 +115,7 @@ entry:
   ret i32 %3
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; c3c/optimized/bigint.c.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -119,7 +123,6 @@ entry:
 ; eastl/optimized/EADateTime.cpp.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; grpc/optimized/status_conversion.cc.ll
-; linux/optimized/gss_krb5_unseal.ll
 ; linux/optimized/kcmp.ll
 ; linux/optimized/percpu_counter.ll
 ; linux/optimized/rtc-cmos.ll
@@ -144,16 +147,18 @@ entry:
   ret i32 %3
 }
 
-; 108 occurrences:
+; 106 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/luckyFast16.c.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
+; boost/optimized/decode_view.ll
+; boost/optimized/environment.ll
+; boost/optimized/normalize.ll
 ; cmake/optimized/auto_decoder.c.ll
 ; cmake/optimized/bufq.c.ll
 ; cpython/optimized/arraymodule.ll
 ; cpython/optimized/mpdecimal.ll
 ; curl/optimized/libcurl_la-bufq.ll
-; cvc5/optimized/normal_form.cpp.ll
 ; cvc5/optimized/sequence.cpp.ll
 ; cvc5/optimized/string.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
@@ -180,8 +185,6 @@ entry:
 ; linux/optimized/mprotect.ll
 ; linux/optimized/shm.ll
 ; linux/optimized/trace_probe.ll
-; linux/optimized/virtio_ring.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CStringChecker.cpp.ll
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll
@@ -194,7 +197,6 @@ entry:
 ; llvm/optimized/MachineModuleInfoImpls.cpp.ll
 ; llvm/optimized/OptimizedStructLayout.cpp.ll
 ; llvm/optimized/Pass.cpp.ll
-; llvm/optimized/PrintPreprocessedOutput.cpp.ll
 ; llvm/optimized/ProfileSummaryBuilder.cpp.ll
 ; llvm/optimized/SampleContextTracker.cpp.ll
 ; llvm/optimized/SampleProf.cpp.ll
@@ -224,7 +226,6 @@ entry:
 ; msgpack/optimized/simple.cpp.ll
 ; msgpack/optimized/speed_test.cpp.ll
 ; msgpack/optimized/speed_test_nested_array.cpp.ll
-; openjdk/optimized/dynamicArchive.ll
 ; openjdk/optimized/trimCHeapDCmd.ll
 ; openjdk/optimized/trimNativeHeap.ll
 ; openjdk/optimized/xDirector.ll
@@ -261,9 +262,11 @@ entry:
   ret i32 %3
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/giaQbf.c.ll
 ; abc/optimized/sbdSat.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/default_formatter_factory.ll
 ; casadi/optimized/kinsol.c.ll
 ; cpython/optimized/arraymodule.ll
 ; cpython/optimized/assemble.ll
@@ -274,7 +277,6 @@ entry:
 ; freetype/optimized/raster.c.ll
 ; git/optimized/unpack-trees.ll
 ; libwebp/optimized/token_enc.c.ll
-; linux/optimized/gss_krb5_seal.ll
 ; linux/optimized/gss_krb5_wrap.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
@@ -302,9 +304,9 @@ entry:
   ret i32 %3
 }
 
-; 65 occurrences:
+; 60 occurrences:
 ; abc/optimized/lucky.c.ll
-; arrow/optimized/key_hash_avx2.cc.ll
+; boost/optimized/approximately_equals.ll
 ; c3c/optimized/bigint.c.ll
 ; clamav/optimized/dll.cpp.ll
 ; cmake/optimized/cmSystemTools.cxx.ll
@@ -312,7 +314,6 @@ entry:
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/type1cid.c.ll
 ; git/optimized/convert.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -320,7 +321,6 @@ entry:
 ; hyperscan/optimized/lbr.c.ll
 ; jq/optimized/regexec.ll
 ; libevent/optimized/http.c.ll
-; libquic/optimized/cmp.c.ll
 ; libquic/optimized/url_canon_internal.cc.ll
 ; lief/optimized/SignatureParser.cpp.ll
 ; lief/optimized/asn1parse.c.ll
@@ -331,9 +331,6 @@ entry:
 ; linux/optimized/e820.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/mpi-cmp.ll
-; linux/optimized/mpih-cmp.ll
-; linux/optimized/nf_nat_proto.ll
 ; linux/optimized/rtc-cmos.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/sys.ll
@@ -344,6 +341,7 @@ entry:
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
+; lvgl/optimized/lv_cache_lru_rb.ll
 ; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/regexec.ll
 ; openjdk/optimized/memBaseline.ll
@@ -366,13 +364,29 @@ entry:
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; velox/optimized/MemoryArbitrator.cpp.ll
 ; velox/optimized/SpillStats.cpp.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/BigUnsigned.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %0, %1
   %3 = select i1 %2, i32 1, i32 -1
+  ret i32 %3
+}
+
+; 8 occurrences:
+; abseil-cpp/optimized/cord_test.cc.ll
+; cvc5/optimized/normal_form.cpp.ll
+; cvc5/optimized/sequence.cpp.ll
+; linux/optimized/virtio_ring.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/DeclarationName.cpp.ll
+; llvm/optimized/PrintPreprocessedOutput.cpp.ll
+; openjdk/optimized/dynamicArchive.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %0, %1
+  %3 = select i1 %2, i32 -1, i32 1
   ret i32 %3
 }
 
@@ -399,6 +413,19 @@ entry:
   %.not = icmp ugt i64 %0, %1
   %2 = select i1 %.not, i32 22, i32 0
   ret i32 %2
+}
+
+; 4 occurrences:
+; arrow/optimized/key_hash_avx2.cc.ll
+; freetype/optimized/ftbase.c.ll
+; linux/optimized/nf_nat_proto.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %0, %1
+  %3 = select i1 %2, i32 1, i32 -1
+  ret i32 %3
 }
 
 ; 3 occurrences:

@@ -15,7 +15,7 @@ entry:
   ret i64 %3
 }
 
-; 14 occurrences:
+; 18 occurrences:
 ; icu/optimized/number_longnames.ll
 ; icu/optimized/quantityformatter.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
@@ -30,6 +30,10 @@ entry:
 ; ruby/optimized/util.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i32 %0) #0 {
 entry:
@@ -39,13 +43,11 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; darktable/optimized/metadata_view.c.ll
 ; luau/optimized/Parser.cpp.ll
 ; openjdk/optimized/barrierSetAssembler_x86.ll
 ; openjdk/optimized/xBarrierSetAssembler_x86.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0) #0 {
 entry:
@@ -57,7 +59,6 @@ entry:
 
 ; 25 occurrences:
 ; hermes/optimized/JSParserImpl-flow.cpp.ll
-; icu/optimized/hebrwcal.ll
 ; llvm/optimized/TargetMachineC.cpp.ll
 ; rust-analyzer-rs/optimized/13whla2w760i0ne3.ll
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
@@ -81,6 +82,7 @@ entry:
 ; rust-analyzer-rs/optimized/sdlo5r5xb34d3pv.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0) #0 {
 entry:

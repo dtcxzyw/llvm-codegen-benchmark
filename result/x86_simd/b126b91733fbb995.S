@@ -5,7 +5,7 @@
 func000000000000000f:                   # @func000000000000000f
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2
 	vpaddb	%xmm0, %xmm1, %xmm0
-	vpaddb	%xmm0, %xmm2, %xmm0
+	vpaddb	%xmm2, %xmm0, %xmm0
 	retq
 .LCPI1_0:
 	.zero	16,15

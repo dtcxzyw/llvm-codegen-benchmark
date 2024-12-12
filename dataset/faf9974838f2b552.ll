@@ -1,10 +1,10 @@
 
-%struct.b3RigidBodyData.2706249 = type { %class.b3Vector3.2706242, %class.b3Quaternion.2706250, %class.b3Vector3.2706242, %class.b3Vector3.2706242, i32, float, float, float }
-%class.b3Quaternion.2706250 = type { %class.b3QuadWord.2706251 }
-%class.b3QuadWord.2706251 = type { %union.anon.6.2706252 }
-%union.anon.6.2706252 = type { [4 x float] }
-%class.b3Vector3.2706242 = type { %union.anon.2706243 }
-%union.anon.2706243 = type { [4 x float] }
+%struct.b3RigidBodyData.2818963 = type { %class.b3Vector3.2818956, %class.b3Quaternion.2818964, %class.b3Vector3.2818956, %class.b3Vector3.2818956, i32, float, float, float }
+%class.b3Quaternion.2818964 = type { %class.b3QuadWord.2818965 }
+%class.b3QuadWord.2818965 = type { %union.anon.6.2818966 }
+%union.anon.6.2818966 = type { [4 x float] }
+%class.b3Vector3.2818956 = type { %union.anon.2818957 }
+%union.anon.2818957 = type { [4 x float] }
 
 ; 3 occurrences:
 ; openjdk/optimized/memnode.ll
@@ -40,11 +40,11 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; opencv/optimized/simpleflow.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %struct.b3RigidBodyData.2706249, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.b3RigidBodyData.2818963, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -54,11 +54,11 @@ entry:
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   ret ptr %4
 }
 

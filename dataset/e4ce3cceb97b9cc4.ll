@@ -1,10 +1,14 @@
 
-; 87 occurrences:
+; 91 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -91,12 +95,13 @@
 define i128 @func000000000000000a(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %1
+  %4 = mul nuw i128 %1, %3
   %5 = add nuw i128 %4, %0
   ret i128 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-keypair.ll
@@ -109,7 +114,7 @@ entry:
 define i128 @func0000000000000008(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %1
+  %4 = mul nuw i128 %1, %3
   %5 = add i128 %4, %0
   ret i128 %5
 }
@@ -127,7 +132,7 @@ entry:
 define i128 @func000000000000000f(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
+  %4 = mul nuw nsw i128 %1, %3
   %5 = add nuw nsw i128 %4, %0
   ret i128 %5
 }
@@ -142,7 +147,7 @@ entry:
 define i128 @func0000000000000000(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul i128 %3, %1
+  %4 = mul i128 %1, %3
   %5 = add i128 %4, %0
   ret i128 %5
 }
@@ -160,8 +165,8 @@ entry:
 define i128 @func000000000000001f(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
-  %5 = add nuw nsw i128 %4, %0
+  %4 = mul nuw nsw i128 %1, %3
+  %5 = add nuw nsw i128 %0, %4
   ret i128 %5
 }
 
@@ -171,8 +176,8 @@ entry:
 define i128 @func000000000000001e(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
-  %5 = add nuw i128 %4, %0
+  %4 = mul nuw nsw i128 %1, %3
+  %5 = add nuw i128 %0, %4
   ret i128 %5
 }
 
@@ -182,8 +187,8 @@ entry:
 define i128 @func000000000000000e(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
-  %5 = add nuw i128 %4, %0
+  %4 = mul nuw nsw i128 %1, %3
+  %5 = add nuw i128 %0, %4
   ret i128 %5
 }
 
@@ -193,8 +198,8 @@ entry:
 define i128 @func000000000000000d(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
-  %5 = add nsw i128 %4, %0
+  %4 = mul nuw nsw i128 %1, %3
+  %5 = add nsw i128 %0, %4
   ret i128 %5
 }
 
@@ -204,8 +209,8 @@ entry:
 define i128 @func000000000000001d(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
-  %5 = add nsw i128 %4, %0
+  %4 = mul nuw nsw i128 %1, %3
+  %5 = add nsw i128 %0, %4
   ret i128 %5
 }
 

@@ -17,14 +17,14 @@ func0000000000000003:                   # @func0000000000000003
 	notl	%eax
 	shll	$4, %eax
 	retq
-func000000000000002d:                   # @func000000000000002d
+func000000000000002f:                   # @func000000000000002f
 	shll	$3, %edi
 	movl	$24, %eax
 	subl	%edi, %eax
 	retq
-func000000000000002f:                   # @func000000000000002f
-	shll	$3, %edi
-	movl	$24, %eax
+func0000000000000035:                   # @func0000000000000035
+	shll	$4, %edi
+	movl	$128, %eax
 	subl	%edi, %eax
 	retq
 func000000000000000d:                   # @func000000000000000d

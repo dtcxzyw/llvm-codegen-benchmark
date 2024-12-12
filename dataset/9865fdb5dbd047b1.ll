@@ -6,7 +6,7 @@
 ; rocksdb/optimized/file_indexer.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004aa(i32 %0, i64 %1) #0 {
+define i1 @func000000000000114a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -21,7 +21,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i64 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -36,7 +36,7 @@ entry:
 ; hyperscan/optimized/gtest-all.cc.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004ac(i32 %0, i64 %1) #0 {
+define i1 @func000000000000114c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000411(i32 %0, i64 %1) #0 {
+define i1 @func0000000000001021(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004cc(i32 %0, i64 %1) #0 {
+define i1 @func000000000000118c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
@@ -75,7 +75,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/update.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -88,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000416(i32 %0, i64 %1) #0 {
+define i1 @func0000000000001026(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc i64 %2 to i32
@@ -101,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ustdio.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004a1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000001141(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc i64 %2 to i32
@@ -118,7 +118,7 @@ entry:
 ; opencv/optimized/roiSelector.cpp.ll
 ; opencv/optimized/window.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002aa(i32 %0, i64 %1) #0 {
+define i1 @func000000000000094a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -132,7 +132,7 @@ entry:
 ; graphviz/optimized/gvrender.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000266(i32 %0, i64 %1) #0 {
+define i1 @func00000000000008c6(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -145,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/projectorcalibration.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a4(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000944(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -158,7 +158,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/posit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000026c(i32 %0, i64 %1) #0 {
+define i1 @func00000000000008cc(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -171,7 +171,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = trunc i64 %2 to i32

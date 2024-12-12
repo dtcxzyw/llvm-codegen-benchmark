@@ -10,11 +10,11 @@
 ; openjdk/optimized/assembler.ll
 ; openjdk/optimized/compiledIC_x86.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i1 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 2, i64 1
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 4
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -22,10 +22,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-wcp.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, i1 %1) #0 {
+define i64 @func000000000000000c(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 0, i64 32784
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 32775
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5

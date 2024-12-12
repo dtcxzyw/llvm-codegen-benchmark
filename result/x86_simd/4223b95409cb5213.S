@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovw2m	%xmm1, %k1
 	vpsrld	$24, %ymm2, %ymm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	67108847                        # 0x3ffffef

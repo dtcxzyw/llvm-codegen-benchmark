@@ -5,7 +5,7 @@
 ; icu/optimized/double-conversion-bignum.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i64 %0, i32 %1) #0 {
+define i1 @func000000000000038c(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 32
   %3 = zext nneg i32 %2 to i64

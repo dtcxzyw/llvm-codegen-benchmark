@@ -1,12 +1,11 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; clamav/optimized/pdfng.c.ll
 ; git/optimized/pretty.ll
 ; hdf5/optimized/H5Cimage.c.ll
 ; jq/optimized/euc_jp.ll
 ; jq/optimized/regenc.ll
-; lief/optimized/rsa.c.ll
 ; nghttp2/optimized/nghttp2_submit.c.ll
 ; oniguruma/optimized/euc_jp.ll
 ; oniguruma/optimized/regenc.ll
@@ -18,25 +17,25 @@
 ; openssl/optimized/libcrypto-shlib-txt_db.ll
 ; openusd/optimized/testUsdValidationRegistry.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
-; quantlib/optimized/ctsmmcapletcalibration.ll
 ; ruby/optimized/emacs_mule.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/static_string.ll
 ; cjson/optimized/cJSON.c.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/pdfng.c.ll
@@ -50,9 +49,9 @@ entry:
 ; php/optimized/zend_language_scanner.ll
 ; ruby/optimized/date_strptime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = icmp ult i64 %5, %0
@@ -61,7 +60,7 @@ entry:
 
 ; 7 occurrences:
 ; cpython/optimized/_datetimemodule.ll
-; grpc/optimized/parser.cc.ll
+; hermes/optimized/ItaniumDemangle.cpp.ll
 ; linux/optimized/exit.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
@@ -95,8 +94,7 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; grpc/optimized/parser.cc.ll
+; 2 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/regenc.ll
 ; Function Attrs: nounwind
@@ -129,7 +127,7 @@ entry:
 ; 1 occurrences:
 ; re2/optimized/dfa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000109(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
   %4 = ptrtoint ptr %3 to i64
@@ -138,11 +136,22 @@ entry:
   ret i1 %6
 }
 
-; 11 occurrences:
+; 1 occurrences:
+; re2/optimized/dfa.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000189(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = icmp uge i64 %5, %0
+  ret i1 %6
+}
+
+; 10 occurrences:
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; cmake/optimized/archive_write_set_format_shar.c.ll
 ; cmake/optimized/divsufsort.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; openssl/optimized/libcrypto-lib-bf_lbuf.ll
 ; openssl/optimized/libcrypto-shlib-bf_lbuf.ll
 ; openssl/optimized/openssl-bin-x509.ll
@@ -151,16 +160,16 @@ entry:
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -168,7 +177,6 @@ entry:
 ; cpython/optimized/socketmodule.ll
 ; darktable/optimized/png.c.ll
 ; git/optimized/pretty.ll
-; git/optimized/urlmatch.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -203,9 +211,9 @@ entry:
 ; yosys/optimized/opt_dff.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = icmp ugt i64 %5, %0
@@ -241,9 +249,9 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; php/optimized/uuencode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000085(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000185(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = icmp ule i64 %5, %0
@@ -255,7 +263,6 @@ entry:
 ; cpython/optimized/traceback.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
-; flatbuffers/optimized/flatc.cpp.ll
 ; git/optimized/diff.ll
 ; git/optimized/ls-files.ll
 ; gromacs/optimized/cstringutil.cpp.ll
@@ -275,6 +282,7 @@ entry:
 ; protobuf/optimized/wire_format.cc.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; sentencepiece/optimized/parse_context.cc.ll
+; sqlite/optimized/sqlite3.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
@@ -283,12 +291,49 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000186(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = icmp slt i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; flatbuffers/optimized/flatc.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000106(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = icmp slt i64 %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; lief/optimized/rsa.c.ll
+; quantlib/optimized/ctsmmcapletcalibration.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -8
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = icmp eq i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; git/optimized/urlmatch.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000108(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -299,6 +344,18 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = icmp sgt i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; eastl/optimized/EASprintfCore.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010a(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = icmp sgt i64 %5, %0

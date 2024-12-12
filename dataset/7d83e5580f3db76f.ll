@@ -1,12 +1,11 @@
 
-; 244 occurrences:
+; 246 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
@@ -20,6 +19,9 @@
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/difradix2.ll
@@ -267,7 +269,8 @@ entry:
   ret i128 %3
 }
 
-; 100 occurrences:
+; 101 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -386,7 +389,8 @@ entry:
   ret i128 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/p256-64.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll

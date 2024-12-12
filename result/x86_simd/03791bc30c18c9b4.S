@@ -30,17 +30,3 @@ func0000000000000007:                   # @func0000000000000007
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm0 {%k1}
 	retq
-.LCPI3_0:
-	.quad	64                              # 0x40
-.LCPI3_1:
-	.quad	-16                             # 0xfffffffffffffff0
-func0000000000000001:                   # @func0000000000000001
-	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpnltd	%xmm2, %xmm0, %k1
-	vpsraq	$63, %ymm1, %ymm0
-	vpsrlq	$60, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm1, %ymm1
-	vpbroadcastq	.LCPI3_0(%rip), %ymm0   # ymm0 = [64,64,64,64]
-	vpandq	.LCPI3_1(%rip){1to4}, %ymm1, %ymm0 {%k1}
-	retq

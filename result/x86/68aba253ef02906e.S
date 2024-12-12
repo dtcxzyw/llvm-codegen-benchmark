@@ -1,10 +1,3 @@
-func0000000000000053:                   # @func0000000000000053
-	movl	$4, %ecx
-	subl	%edi, %ecx
-	cmpl	$-1085, %esi                    # imm = 0xFBC3
-	movl	$-49, %eax
-	cmovll	%ecx, %eax
-	retq
 func0000000000000057:                   # @func0000000000000057
 	movl	$4, %ecx
 	subl	%edi, %ecx

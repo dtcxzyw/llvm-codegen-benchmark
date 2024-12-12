@@ -49,7 +49,7 @@
 	.short	65467                           # 0xffbb
 	.short	65467                           # 0xffbb
 	.short	65467                           # 0xffbb
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vpaddw	.LCPI0_0(%rip), %ymm0, %ymm1
 	vpcmpneqw	.LCPI0_1(%rip), %ymm0, %k1
 	vpcmpltuw	.LCPI0_2(%rip), %ymm1, %k0 {%k1}

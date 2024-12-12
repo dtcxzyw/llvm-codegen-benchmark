@@ -69,13 +69,14 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/cbaReadBlif.c.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
@@ -91,12 +92,13 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/abc.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/number_decimalquantity.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
@@ -144,11 +146,10 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/ucnvmbcs.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:

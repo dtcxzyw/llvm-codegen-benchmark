@@ -9,7 +9,7 @@ func000000000000018e:                   # @func000000000000018e
 	vcmpneqpd	%zmm0, %zmm2, %k3
 	kunpckbw	%k2, %k3, %k2
 	kandw	%k1, %k2, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -24,7 +24,7 @@ func0000000000000022:                   # @func0000000000000022
 	vcmpunordpd	%zmm0, %zmm2, %k3
 	kunpckbw	%k2, %k3, %k2
 	kandw	%k1, %k2, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

@@ -9,7 +9,7 @@
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i8 %1) #0 {
 entry:
   %.not = icmp eq i8 %1, 22
   %2 = icmp ne i8 %0, 22
@@ -25,7 +25,7 @@ entry:
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 26
   %3 = icmp eq i8 %0, 26
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/file-elf.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i8 %1) #0 {
 entry:
   %.not = icmp eq i8 %1, 1
   %2 = icmp eq i8 %0, 2

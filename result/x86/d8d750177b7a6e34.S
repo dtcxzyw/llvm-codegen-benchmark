@@ -28,13 +28,13 @@ func0000000000000015:                   # @func0000000000000015
 	addq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	xorl	%eax, %eax
 	cmpq	$50, %rsi
 	setae	%al
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	movabsq	$4294968320, %rcx               # imm = 0x100000400
 	xorl	%eax, %eax
 	cmpq	%rcx, %rsi
@@ -63,4 +63,17 @@ func0000000000000008:                   # @func0000000000000008
 	shll	$4, %eax
 	addq	$16, %rax
 	orq	%rdi, %rax
+	retq
+func0000000000000009:                   # @func0000000000000009
+	xorl	%eax, %eax
+	cmpq	$4, %rsi
+	setae	%al
+	shlq	$62, %rax
+	orq	%rdi, %rax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	xorl	%eax, %eax
+	cmpq	$4, %rsi
+	setae	%al
+	leaq	(%rdi,%rax,8), %rax
 	retq

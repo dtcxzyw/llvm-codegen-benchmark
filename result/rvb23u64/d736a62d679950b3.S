@@ -56,6 +56,6 @@ func000000000000002c:                   # @func000000000000002c
 	beqz	a0, .LBB3_2
 	fneg.s	fa4, fa4
 .LBB3_2:                                # %entry
-	fadd.s	fa4, fa4, fa0
+	fadd.s	fa4, fa0, fa4
 	fle.s	a0, fa5, fa4
 	ret

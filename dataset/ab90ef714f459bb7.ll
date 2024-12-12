@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; assimp/optimized/MD5Loader.cpp.ll
@@ -11,7 +11,6 @@
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/camera.cpp.ll
-; minetest/optimized/clientdynamicinfo.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/guiHyperText.cpp.ll
@@ -62,7 +61,6 @@ entry:
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/camera.cpp.ll
-; minetest/optimized/clientdynamicinfo.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; ocio/optimized/FileFormat3DL.cpp.ll
@@ -70,6 +68,7 @@ entry:
 ; openjdk/optimized/cmsgamma.ll
 ; typst-rs/optimized/3lt7g0yvt7qzv13u.ll
 ; typst-rs/optimized/p1dgiootfedk7bo.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(i64 %0) #0 {
 entry:
@@ -154,6 +153,7 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
@@ -162,7 +162,6 @@ entry:
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll

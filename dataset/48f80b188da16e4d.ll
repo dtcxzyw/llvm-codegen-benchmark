@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 14 occurrences:
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; linux/optimized/badblocks.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
@@ -7,11 +7,18 @@
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; qemu/optimized/util_cutils.c.ll
 ; stb/optimized/stb_connected_components.c.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/9fz5l76t5byggb8exxkeuxjql.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -26,12 +33,13 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
 ; 96 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -73,7 +81,6 @@ entry:
 ; linux/optimized/drm_buddy.ll
 ; linux/optimized/espfix_64.ll
 ; linux/optimized/gen8_ppgtt.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/intel_dpt.ll
@@ -176,7 +183,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -192,6 +199,7 @@ entry:
 
 ; 29 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/alloc_lib.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; jemalloc/optimized/extent.ll
@@ -219,7 +227,6 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
-; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -237,7 +244,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

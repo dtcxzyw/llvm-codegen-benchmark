@@ -21,12 +21,12 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	mul	a0, a1, a0
 	ret
-func000000000000006c:                   # @func000000000000006c
+func000000000000005c:                   # @func000000000000005c
 	sext.w	a2, a2
-	sext.w	a1, a1
-	slli	a0, a0, 32
-	mul	a1, a1, a2
-	srli	a0, a0, 32
+	slli	a1, a1, 32
+	sext.w	a0, a0
+	srli	a1, a1, 32
+	mul	a0, a2, a0
 	mul	a0, a1, a0
 	ret
 func000000000000005e:                   # @func000000000000005e

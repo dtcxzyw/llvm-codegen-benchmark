@@ -1,8 +1,7 @@
 
-; 144 occurrences:
+; 140 occurrences:
 ; c3c/optimized/types.c.ll
 ; casadi/optimized/cvodes.c.ll
-; casadi/optimized/kinsol_spgmr.c.ll
 ; chibicc/optimized/type.ll
 ; clamav/optimized/matcher.c.ll
 ; cmake/optimized/core.c.ll
@@ -128,8 +127,6 @@
 ; postgres/optimized/json.ll
 ; postgres/optimized/parse_expr.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; qemu/optimized/hw_pci_pci.c.ll
 ; qemu/optimized/optimize.c.ll
@@ -138,12 +135,11 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; wireshark/optimized/file-jpeg.c.ll
-; wireshark/optimized/msg_ucd.c.ll
-; wireshark/optimized/packet-cmip.c.ll
 ; wireshark/optimized/packet-diameter.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wolfssl/optimized/hmac.c.ll
 ; yalantinglibs/optimized/FieldGenerator.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i32 %0) #0 {
 entry:

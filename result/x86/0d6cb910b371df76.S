@@ -5,6 +5,13 @@ func0000000000000006:                   # @func0000000000000006
 	testb	$1, %dl
 	cmovnel	%edi, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%esi, %eax
+	cmpl	%esi, %edi
+	cmoval	%edi, %eax
+	testb	$1, %dl
+	cmovnel	%edi, %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	%esi, %eax
 	cmpl	%esi, %edi

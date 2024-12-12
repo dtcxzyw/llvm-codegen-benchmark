@@ -5,7 +5,7 @@
 define float @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   %4 = select i1 %3, float %0, float %2
   ret float %4
 }
@@ -17,7 +17,7 @@ entry:
 define float @func0000000000000014(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   %4 = select i1 %3, float %0, float %2
   ret float %4
 }
@@ -29,7 +29,7 @@ entry:
 define float @func0000000000000012(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   %4 = select i1 %3, float %0, float %2
   ret float %4
 }
@@ -40,7 +40,7 @@ entry:
 define float @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   %4 = select i1 %3, float %0, float %2
   ret float %4
 }

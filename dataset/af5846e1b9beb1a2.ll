@@ -24,8 +24,9 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/ioWriteBook.c.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; opencv/optimized/denoising.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
@@ -36,7 +37,7 @@ entry:
   ret i32 %4
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -63,6 +64,7 @@ entry:
 ; llvm/optimized/X86FlagsCopyLowering.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; openspiel/optimized/SolverIF.cpp.ll
 ; Function Attrs: nounwind

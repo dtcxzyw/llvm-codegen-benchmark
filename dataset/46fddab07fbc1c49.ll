@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %1
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/fopen_wrappers.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = add i64 %3, %1
@@ -43,11 +43,11 @@ entry:
 ; meshlab/optimized/save_project.cpp.ll
 ; yosys/optimized/ice40_braminit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f4(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw nsw i64 %3, %1
-  %5 = icmp ult i64 %4, 16
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp samesign ult i64 %4, 16
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

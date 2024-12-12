@@ -1,8 +1,6 @@
 
-; 19 occurrences:
-; abseil-cpp/optimized/examples_test.cc.ll
+; 17 occurrences:
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
-; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; arrow/optimized/uri.cc.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
@@ -47,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jfrCheckpointManager.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp ult i64 %3, 128
@@ -91,6 +89,30 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; boost/optimized/numeric.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp sgt i64 %1, %2
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
+  ret i1 %4
+}
+
+; 3 occurrences:
+; abseil-cpp/optimized/examples_test.cc.ll
+; abseil-cpp/optimized/randen_engine_test.cc.ll
+; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %1, %2
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; cpython/optimized/buffer.ll
 ; opencv/optimized/net_impl.cpp.ll
@@ -99,29 +121,6 @@ define i1 @func0000000000000006(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp slt i64 %3, 1
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 2 occurrences:
-; openblas/optimized/dgemv_n.c.ll
-; openblas/optimized/dgemv_t.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %1, %2
-  %4 = select i1 %0, i1 true, i1 %3
-  ret i1 %4
-}
-
-; 2 occurrences:
-; openblas/optimized/dgemv_n.c.ll
-; openblas/optimized/dgemv_t.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = icmp eq i64 %3, 2048
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

@@ -6,7 +6,7 @@
 ; linux/optimized/ds.ll
 ; linux/optimized/efi_64.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/io_pgtable_v2.ll
+; linux/optimized/maple_tree.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -160,7 +160,6 @@
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
@@ -229,13 +228,14 @@
 ; ruby/optimized/string.ll
 ; z3/optimized/smt_theory.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3145728
   %3 = icmp eq i32 %2, 1048576
   %4 = select i1 %3, i64 2097152, i64 0
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -254,7 +254,7 @@ entry:
   %2 = and i32 %1, 536870912
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 68719738880, i64 9007267974479872
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

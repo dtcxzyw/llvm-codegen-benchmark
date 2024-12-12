@@ -3,7 +3,7 @@ func0000000000000009:                   # @func0000000000000009
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v9, v9, a0
 	vsrl.vi	v9, v9, 31
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
@@ -12,7 +12,7 @@ func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v9, v9, a0
 	vsrl.vi	v9, v9, 6
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
@@ -20,7 +20,7 @@ func000000000000001d:                   # @func000000000000001d
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v9, v9, 1
 	vsrl.vi	v9, v9, 4
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
@@ -44,7 +44,7 @@ func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v9, v9, -1
 	vsrl.vi	v9, v9, 1
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
@@ -53,7 +53,7 @@ func000000000000001c:                   # @func000000000000001c
 	csrwi	vxrm, 2
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vaaddu.vx	v9, v9, a0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret

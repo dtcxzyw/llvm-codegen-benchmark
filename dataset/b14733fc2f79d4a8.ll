@@ -10,12 +10,11 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; graphviz/optimized/QuadTree.c.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; ipopt/optimized/IpCGPenaltyLSAcceptor.ll
 ; osqp/optimized/polish.c.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(double %0, double %1) #0 {
 entry:

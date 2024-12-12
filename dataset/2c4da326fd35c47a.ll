@@ -1,10 +1,19 @@
 
-; 297 occurrences:
+; 315 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; arrow/optimized/reader.cc.ll
+; arrow/optimized/string-to-double.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/BlenderModifier.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/matcher-byte-comp.c.ll
@@ -36,6 +45,7 @@
 ; cvc5/optimized/theory_engine.cpp.ll
 ; cvc5/optimized/theory_sep.cpp.ll
 ; cvc5/optimized/trigger_term_info.cpp.ll
+; double_conversion/optimized/string-to-double.cc.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
@@ -54,11 +64,14 @@
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; icu/optimized/collationfastlatinbuilder.ll
 ; icu/optimized/collationruleparser.ll
+; icu/optimized/double-conversion-string-to-double.ll
 ; icu/optimized/name2uni.ll
 ; icu/optimized/nfrule.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/rbbitblb.ll
 ; icu/optimized/smpdtfmt.ll
+; icu/optimized/ubidiln.ll
+; icu/optimized/ubidiwrt.ll
 ; icu/optimized/ucase.ll
 ; icu/optimized/ucharstrie.ll
 ; icu/optimized/ucnv_io.ll
@@ -118,12 +131,13 @@
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
+; llvm/optimized/LinkModules.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/MergeFunctions.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
 ; llvm/optimized/QualifierAlignmentFixer.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
@@ -133,7 +147,6 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaPseudoObject.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -147,6 +160,9 @@
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_svg_token.ll
 ; memcached/optimized/memcached-util.ll
 ; memcached/optimized/memcached_debug-util.ll
 ; memcached/optimized/util.ll
@@ -174,7 +190,6 @@
 ; mold/optimized/input-sections.cc.SH4.cc.ll
 ; mold/optimized/input-sections.cc.SPARC64.cc.ll
 ; mold/optimized/input-sections.cc.X86_64.cc.ll
-; nghttp2/optimized/http.c.ll
 ; nghttp2/optimized/nghttp2_http.c.ll
 ; node/optimized/libnode.Protocol.ll
 ; node/optimized/libnode.node_i18n.ll
@@ -194,12 +209,11 @@
 ; openmpi/optimized/rmaps_base_map_job.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; openssl/optimized/libcrypto-lib-conf_def.ll
-; openssl/optimized/libcrypto-lib-dh_gen.ll
 ; openssl/optimized/libcrypto-shlib-conf_def.ll
-; openssl/optimized/libcrypto-shlib-dh_gen.ll
 ; openusd/optimized/faceSurface.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
+; openusd/optimized/string-to-double.cc.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; php/optimized/fopen_wrappers.ll
 ; php/optimized/html.ll
@@ -295,6 +309,10 @@
 ; z3/optimized/array_decl_plugin.cpp.ll
 ; z3/optimized/q_eval.cpp.ll
 ; z3/optimized/smt_enode.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind

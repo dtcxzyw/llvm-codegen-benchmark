@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; jq/optimized/regcomp.ll
 ; libquic/optimized/url_parse.cc.ll
@@ -18,6 +18,7 @@
 ; z3/optimized/nlqsat.cpp.ll
 ; z3/optimized/qsat.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -36,7 +37,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 24
   %5 = select i1 %1, i64 281474959933440, i64 %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

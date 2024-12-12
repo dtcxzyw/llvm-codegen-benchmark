@@ -1,70 +1,77 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	testb	%dl, %dl
 	movl	$13, %eax
 	cmovneq	%rsi, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000281:                   # @func0000000000000281
 	xorl	%eax, %eax
 	cmpb	$6, %dl
 	cmovaeq	%rsi, %rax
-	cmpq	%rdi, %rax
-	sete	%al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	cmpb	$2, %dl
-	movl	$1, %eax
-	cmovneq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func0000000000000081:                   # @func0000000000000081
+	xorl	%eax, %eax
+	cmpb	$2, %dl
+	cmovaeq	%rsi, %rax
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
+func0000000000000021:                   # @func0000000000000021
+	cmpb	$2, %dl
+	movl	$1, %eax
+	cmovneq	%rsi, %rax
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
+func0000000000000301:                   # @func0000000000000301
 	cmpb	$-16, %dl
 	movl	$4, %eax
 	cmovbq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	xorl	%eax, %eax
 	cmpb	$-1, %dl
 	cmovneq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	xorl	%eax, %eax
 	cmpb	$-1, %dl
 	cmovneq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	cmpb	$10, %dl
 	movl	$1, %eax
 	cmovaeq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func000000000000004b:                   # @func000000000000004b
+func000000000000008b:                   # @func000000000000008b
 	cmpb	$10, %dl
 	movl	$1, %eax
 	cmovaeq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setle	%al
+	cmpq	%rax, %rdi
+	setge	%al
 	retq
-func00000000000000a9:                   # @func00000000000000a9
+func0000000000000149:                   # @func0000000000000149
 	testb	%dl, %dl
 	movl	$23, %eax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setbe	%al
+	cmpq	%rax, %rdi
+	setae	%al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	testb	%dl, %dl
 	movl	$23, %eax
 	cmovsq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

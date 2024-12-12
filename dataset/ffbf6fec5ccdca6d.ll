@@ -11,7 +11,7 @@ define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2097151
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = add nuw nsw i64 %4, 1048576
   ret i64 %5
 }
@@ -24,7 +24,7 @@ define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = add nsw i64 %4, -32
   ret i64 %5
 }
@@ -44,7 +44,7 @@ define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 33554431
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = add i64 %4, -2
   ret i64 %5
 }
@@ -56,21 +56,8 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -4
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = add i64 %4, -1
-  ret i64 %5
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 262140
-  %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
-  %5 = add nsw i64 %4, 4
   ret i64 %5
 }
 

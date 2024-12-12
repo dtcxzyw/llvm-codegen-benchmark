@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; assimp/optimized/MD3Loader.cpp.ll
 ; assimp/optimized/MDCLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
@@ -17,7 +17,6 @@
 ; linux/optimized/intel_guc_ct.ll
 ; linux/optimized/ip_fragment.ll
 ; linux/optimized/skbuff.ll
-; linux/optimized/tbxfroot.ll
 ; linux/optimized/xdp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
@@ -48,7 +47,7 @@ define i64 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -67,7 +66,7 @@ define i64 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -79,7 +78,7 @@ define i64 @func000000000000002a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc nsw i64 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -93,7 +92,7 @@ define i64 @func0000000000000002(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -105,7 +104,7 @@ define i64 @func0000000000000040(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -118,7 +117,7 @@ define i64 @func0000000000000003(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -131,7 +130,7 @@ define i64 @func0000000000000020(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -143,7 +142,7 @@ define i64 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }

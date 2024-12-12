@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.long	8                               # 0x8
+	.long	16                              # 0x10
 func0000000000000001:                   # @func0000000000000001
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vpslld	$2, %xmm0, %xmm0

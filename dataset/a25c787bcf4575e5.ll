@@ -1,11 +1,9 @@
 
-; 19 occurrences:
+; 15 occurrences:
 ; cpython/optimized/fileutils.ll
-; darktable/optimized/introspection_flip.c.ll
 ; git/optimized/unpack-trees.ll
 ; grpc/optimized/socket_utils_common_posix.cc.ll
 ; grpc/optimized/tcp_socket_utils.cc.ll
-; libquic/optimized/socket_helper.c.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/xhci-hub.ll
@@ -16,9 +14,7 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
-; qemu/optimized/hw_sd_cadence_sdhci.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
-; verilator/optimized/V3Task.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:

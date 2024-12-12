@@ -1,28 +1,36 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	addi	a1, a1, -28
 	bltu	a1, a0, .LBB0_2
 	mv	a1, a0
 .LBB0_2:                                # %entry
 	mv	a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
-	addi	a1, a1, 3
-	bltu	a0, a1, .LBB1_2
+func0000000000000064:                   # @func0000000000000064
+	lui	a2, 256
+	add	a1, a1, a2
+	bltu	a1, a0, .LBB1_2
 	mv	a1, a0
 .LBB1_2:                                # %entry
 	mv	a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	addi	a1, a1, 1
+func0000000000000068:                   # @func0000000000000068
+	addi	a1, a1, 3
 	bltu	a0, a1, .LBB2_2
 	mv	a1, a0
 .LBB2_2:                                # %entry
 	mv	a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
-	addi	a1, a1, -20
-	bltu	a1, a0, .LBB3_2
+func0000000000000008:                   # @func0000000000000008
+	addi	a1, a1, 1
+	bltu	a0, a1, .LBB3_2
 	mv	a1, a0
 .LBB3_2:                                # %entry
+	mv	a0, a1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	addi	a1, a1, -20
+	bltu	a1, a0, .LBB4_2
+	mv	a1, a0
+.LBB4_2:                                # %entry
 	mv	a0, a1
 	ret

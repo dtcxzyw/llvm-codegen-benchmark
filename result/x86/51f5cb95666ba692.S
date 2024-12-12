@@ -1,4 +1,4 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	addl	%edx, %esi
 	addl	%edi, %esi
 	cmpl	$730, %esi                      # imm = 0x2DA
@@ -6,7 +6,7 @@ func0000000000000056:                   # @func0000000000000056
 	movl	$135, %eax
 	cmovll	%ecx, %eax
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	addl	%edx, %esi
 	xorl	%eax, %eax
 	addl	%edi, %esi

@@ -1,42 +1,48 @@
-func0000000000000194:                   // @func0000000000000194
+func0000000000000324:                   // @func0000000000000324
 // %bb.0:                               // %entry
-	cmlt	v6.2d, v3.2d, #0
-	cmlt	v7.2d, v2.2d, #0
-	and	v5.16b, v6.16b, v5.16b
-	and	v4.16b, v7.16b, v4.16b
-	add	v2.2d, v4.2d, v2.2d
-	add	v3.2d, v5.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	and	x8, x2, x1, asr #63
+	add	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000188:                   // @func0000000000000188
+func0000000000000326:                   // @func0000000000000326
 // %bb.0:                               // %entry
-	cmlt	v6.2d, v3.2d, #0
-	cmlt	v7.2d, v2.2d, #0
-	and	v5.16b, v6.16b, v5.16b
-	and	v4.16b, v7.16b, v4.16b
-	add	v2.2d, v4.2d, v2.2d
-	add	v3.2d, v5.2d, v3.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	and	x8, x2, x1, asr #63
+	add	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000198:                   // @func0000000000000198
+func000000000000032a:                   // @func000000000000032a
 // %bb.0:                               // %entry
-	cmlt	v6.2d, v3.2d, #0
-	cmlt	v7.2d, v2.2d, #0
-	and	v5.16b, v6.16b, v5.16b
-	and	v4.16b, v7.16b, v4.16b
-	add	v2.2d, v4.2d, v2.2d
-	add	v3.2d, v5.2d, v3.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	and	x8, x2, x1, asr #63
+	add	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, gt
+	ret
+                                        // -- End function
+func0000000000000308:                   // @func0000000000000308
+// %bb.0:                               // %entry
+	and	x8, x2, x1, asr #63
+	add	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, hi
+	ret
+                                        // -- End function
+func000000000000030a:                   // @func000000000000030a
+// %bb.0:                               // %entry
+	and	x8, x2, x1, asr #63
+	add	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, gt
+	ret
+                                        // -- End function
+func0000000000000306:                   // @func0000000000000306
+// %bb.0:                               // %entry
+	and	x8, x2, x1, asr #63
+	add	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, lt
 	ret
                                         // -- End function

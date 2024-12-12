@@ -79,4 +79,16 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; opencv/optimized/run_length_morphology.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000013(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 %0, %1
+  %3 = add i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = shl nuw nsw i64 %4, 2
+  ret i64 %5
+}
+
 attributes #0 = { nounwind }

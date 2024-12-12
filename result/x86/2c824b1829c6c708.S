@@ -3,7 +3,7 @@ func000000000000000c:                   # @func000000000000000c
 	testb	%sil, %sil
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leaq	(%rdx,%rdx,2), %rax
 	cmpb	$-1, %sil
 	cmovneq	%rdi, %rax

@@ -10,7 +10,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$3, %esi
 	setae	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	subl	%edx, %esi
 	addl	%edi, %esi
 	testl	%esi, %esi

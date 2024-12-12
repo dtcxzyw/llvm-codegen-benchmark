@@ -1,6 +1,10 @@
 
-; 10 occurrences:
-; node/optimized/simdutf.ll
+; 14 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; openmpi/optimized/opal_hash_table.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; quantlib/optimized/expcorrelations.ll

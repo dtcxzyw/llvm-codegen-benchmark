@@ -1,7 +1,7 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000028c:                   # @func000000000000028c
 	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
-	cmpq	%rsi, %rdx
-	seta	%cl
+	cmpq	%rdx, %rsi
+	setb	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al

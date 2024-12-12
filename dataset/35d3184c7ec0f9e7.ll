@@ -3,6 +3,7 @@
 ; git/optimized/shallow.ll
 ; git/optimized/show-branch.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
+; lief/optimized/constant_time.c.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
 ; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
 ; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
@@ -27,7 +28,6 @@
 ; llvm/optimized/PHIElimination.cpp.ll
 ; llvm/optimized/RISCVExpandAtomicPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll

@@ -6,8 +6,8 @@ func0000000000000008:                   # @func0000000000000008
 	addq	%rdi, %rax
 	retq
 func0000000000000051:                   # @func0000000000000051
-	testl	%edx, %edx
-	setg	%al
+	cmpl	$60, %edx
+	setge	%al
 	andb	%sil, %al
 	movzbl	%al, %eax
 	addq	%rdi, %rax

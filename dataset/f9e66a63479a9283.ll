@@ -12,12 +12,11 @@
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 10
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
-; 42 occurrences:
-; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; 34 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/bloom.ll
@@ -30,7 +29,6 @@ entry:
 ; git/optimized/sequencer.ll
 ; git/optimized/shallow.ll
 ; git/optimized/show-branch.ll
-; graphviz/optimized/graph_generator.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; libpng/optimized/png.c.ll
 ; libquic/optimized/persistent_memory_allocator.cc.ll
@@ -44,7 +42,6 @@ entry:
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
-; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/bytecodeInfo.ll
 ; openjdk/optimized/callGenerator.ll
 ; openjdk/optimized/cmsgamma.ll
@@ -53,21 +50,16 @@ entry:
 ; openjdk/optimized/loopopts.ll
 ; openjdk/optimized/png.ll
 ; php/optimized/phar.ll
-; postgres/optimized/f2s.ll
-; postgres/optimized/f2s_shlib.ll
-; postgres/optimized/f2s_srv.ll
 ; postgres/optimized/nbtpage.ll
-; xgboost/optimized/charconv.cc.ll
-; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 10
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
-; 28 occurrences:
+; 23 occurrences:
 ; coremark/optimized/core_list_join.c.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
@@ -75,19 +67,15 @@ entry:
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/inet_fragment.ll
 ; linux/optimized/intel_bw.ll
-; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_fbc.ll
 ; linux/optimized/ioam6.ll
 ; linux/optimized/ipmr.ll
-; linux/optimized/md.ll
 ; linux/optimized/request.ll
 ; linux/optimized/rhashtable.ll
 ; linux/optimized/sta_info.ll
 ; linux/optimized/util.ll
-; linux/optimized/vlv_dsi.ll
 ; linux/optimized/xfrm_policy.ll
 ; llvm/optimized/FunctionSpecialization.cpp.ll
-; llvm/optimized/GlobalsStream.cpp.ll
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
 ; llvm/optimized/WindowScheduler.cpp.ll
@@ -95,16 +83,15 @@ entry:
 ; openjdk/optimized/compile.ll
 ; postgres/optimized/vacuumlazy.ll
 ; wireshark/optimized/packet-ceph.c.ll
-; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 10
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; assimp/optimized/FBXParser.cpp.ll
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -115,6 +102,7 @@ entry:
 ; libquic/optimized/dsa.c.ll
 ; linux/optimized/mlme.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; openjdk/optimized/png.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; postgres/optimized/check.ll
@@ -135,7 +123,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 65535
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -145,7 +133,40 @@ entry:
 define i1 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 3
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
+  ret i1 %3
+}
+
+; 7 occurrences:
+; hermes/optimized/MicrosoftDemangle.cpp.ll
+; linux/optimized/intel_dpll_mgr.ll
+; linux/optimized/md.ll
+; linux/optimized/vlv_dsi.ll
+; llvm/optimized/GlobalsStream.cpp.ll
+; lvgl/optimized/lv_color.ll
+; zxing/optimized/Barcode.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 %1, 255
+  %3 = icmp samesign ult i32 %0, %2
+  ret i1 %3
+}
+
+; 8 occurrences:
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; graphviz/optimized/graph_generator.c.ll
+; opencv/optimized/tree.cpp.ll
+; postgres/optimized/f2s.ll
+; postgres/optimized/f2s_shlib.ll
+; postgres/optimized/f2s_srv.ll
+; xgboost/optimized/charconv.cc.ll
+; zxing/optimized/QRDetector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 %1, 3
+  %3 = icmp samesign ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -155,7 +176,7 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 3
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   ret i1 %3
 }
 
@@ -165,19 +186,18 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 3
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
-; 3 occurrences:
-; graphviz/optimized/graph_generator.c.ll
+; 2 occurrences:
 ; linux/optimized/blk-iocost.ll
 ; ockam-rs/optimized/fvcfhm3saxk0gr8.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 100
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   ret i1 %3
 }
 
@@ -187,7 +207,17 @@ entry:
 define i1 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 7
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; graphviz/optimized/graph_generator.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i32 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 %1, 3
+  %3 = icmp samesign ule i32 %0, %2
   ret i1 %3
 }
 

@@ -4,7 +4,11 @@ func0000000000000001:                   # @func0000000000000001
 	andn	a0, a1, a0
 	ret
 func0000000000000002:                   # @func0000000000000002
-	bset	a1, zero, a1
+	andi	a1, a1, -32
+	li	a2, -32
+	zext.w	a2, a2
+	addi	a2, a2, 31
+	sll	a1, a2, a1
 	andn	a0, a1, a0
 	ret
 func0000000000000000:                   # @func0000000000000000

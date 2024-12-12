@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/cuddAnneal.c.ll
 ; graphviz/optimized/cluster.c.ll
 ; gromacs/optimized/partition.cpp.ll
@@ -19,6 +19,7 @@
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
 ; openjdk/optimized/mlib_ImageConv_8nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/opal_object.ll
 ; openmpi/optimized/pmix_object.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
@@ -95,9 +96,10 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/cuddWindow.c.ll
 ; linux/optimized/auth_gss.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openjdk/optimized/MaskFill.ll
 ; pocketpy/optimized/array2d.cpp.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
@@ -223,7 +225,7 @@ entry:
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 2
   ret i64 %5

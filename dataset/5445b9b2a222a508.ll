@@ -1,5 +1,6 @@
 
-; 42 occurrences:
+; 41 occurrences:
+; boost/optimized/src.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; icu/optimized/normalizer2impl.ll
 ; jsonnet/optimized/vm.cpp.ll
@@ -36,8 +37,6 @@
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -65,7 +64,8 @@ entry:
   ret i8 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; crow/optimized/example.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; raylib/optimized/rmodels.c.ll
@@ -79,7 +79,8 @@ entry:
   ret i8 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/Bra.c.ll
 ; cmake/optimized/armthumb.c.ll
 ; wireshark/optimized/oids.c.ll
@@ -87,9 +88,21 @@ entry:
 define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
-  %3 = lshr i32 %2, 9
+  %3 = lshr i32 %2, 18
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %4, -8
+  %5 = or i8 %4, -16
+  ret i8 %5
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000005(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %0, %1
+  %3 = lshr i32 %2, 12
+  %4 = trunc nuw i32 %3 to i8
+  %5 = or disjoint i8 %4, -32
   ret i8 %5
 }
 

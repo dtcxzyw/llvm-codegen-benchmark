@@ -1,16 +1,16 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsle.vi	v0, v10, -1
 	vadd.vv	v10, v12, v8
 	vadd.vi	v8, v10, 1, v0.t
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsle.vi	v0, v10, -1
 	vadd.vv	v10, v12, v8
 	vadd.vi	v8, v10, 1, v0.t
 	ret
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsle.vi	v0, v10, -1
 	vadd.vv	v10, v12, v8

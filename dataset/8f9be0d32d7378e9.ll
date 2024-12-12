@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; oiio/optimized/sysutil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000148(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, %1

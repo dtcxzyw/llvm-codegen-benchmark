@@ -102,21 +102,6 @@ entry:
   ret double %4
 }
 
-; 5 occurrences:
-; clamav/optimized/bytecode_api.c.ll
-; opencv/optimized/ann_mlp.cpp.ll
-; opencv/optimized/trackerCSRTUtils.cpp.ll
-; rocksdb/optimized/ribbon_config.cc.ll
-; zfp/optimized/zfp.c.ll
-; Function Attrs: nounwind
-define double @func0000000000000002(i32 %0, i32 %1) #0 {
-entry:
-  %2 = uitofp nneg i32 %1 to double
-  %3 = uitofp i32 %0 to double
-  %4 = fdiv double %3, %2
-  ret double %4
-}
-
 ; 4 occurrences:
 ; flac/optimized/replaygain.c.ll
 ; llvm/optimized/MCSchedule.cpp.ll
@@ -127,6 +112,20 @@ define double @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
   %3 = uitofp nneg i32 %0 to double
+  %4 = fdiv double %3, %2
+  ret double %4
+}
+
+; 4 occurrences:
+; clamav/optimized/bytecode_api.c.ll
+; opencv/optimized/ann_mlp.cpp.ll
+; opencv/optimized/trackerCSRTUtils.cpp.ll
+; zfp/optimized/zfp.c.ll
+; Function Attrs: nounwind
+define double @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = uitofp nneg i32 %1 to double
+  %3 = uitofp i32 %0 to double
   %4 = fdiv double %3, %2
   ret double %4
 }

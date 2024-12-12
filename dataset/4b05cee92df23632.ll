@@ -1,5 +1,7 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/loss_function.cc.ll
 ; g2o/optimized/robust_kernel_impl.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll

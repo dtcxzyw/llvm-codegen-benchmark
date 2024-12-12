@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000004:                   # @func0000000000000004
 	decl	%edx
 	movzbl	%dl, %eax
 	orq	%rsi, %rdi
@@ -25,6 +25,12 @@ func000000000000000e:                   # @func000000000000000e
 func000000000000000f:                   # @func000000000000000f
 	leal	33554432(%rdx), %eax
 	andl	$1040187392, %eax               # imm = 0x3E000000
+	orq	%rsi, %rdi
+	orq	%rdi, %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	leal	1(%rdx), %eax
+	andl	$31, %eax
 	orq	%rsi, %rdi
 	orq	%rdi, %rax
 	retq

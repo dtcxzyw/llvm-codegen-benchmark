@@ -11,5 +11,5 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000005:                   # @func0000000000000005
 	movswq	%si, %rax
 	addq	%rdi, %rax
-	addq	%rax, %rax
+	shlq	$2, %rax
 	retq

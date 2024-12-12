@@ -10,7 +10,7 @@
 ; openblas/optimized/dstedc.c.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 3
   %2 = icmp eq i32 %1, 0
@@ -18,13 +18,11 @@ entry:
   ret i32 %3
 }
 
-; 20 occurrences:
+; 15 occurrences:
 ; icu/optimized/ubidi.ll
 ; libquic/optimized/ssl_cipher.c.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/gen8_engine_cs.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/i915_request.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/intel_display_power_well.ll
@@ -35,16 +33,13 @@ entry:
 ; linux/optimized/intel_ggtt_fencing.ll
 ; linux/optimized/intel_opregion.ll
 ; linux/optimized/intel_uc.ll
-; openjdk/optimized/RandomAccessFile.ll
-; qemu/optimized/accel_tcg_user-exec.c.ll
-; redis/optimized/module.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 45, i32 114
+  %3 = select i1 %2, i32 0, i32 6
   ret i32 %3
 }
 

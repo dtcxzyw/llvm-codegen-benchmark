@@ -3,7 +3,7 @@
 ; re2/optimized/compile.cc.ll
 ; z3/optimized/opt_preprocess.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %0, 1
@@ -28,7 +28,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %0, 3
@@ -49,7 +49,7 @@ entry:
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %0, 1
@@ -73,7 +73,7 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %0, 1
@@ -86,7 +86,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bio_ok.ll
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %0, 1
@@ -94,7 +94,7 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
@@ -102,7 +102,6 @@ entry:
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/VPlan.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
 ; ocio/optimized/Lut1DOpCPU_AVX.cpp.ll
@@ -123,7 +122,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; jq/optimized/regparse.ll
 ; linux/optimized/cpufreq_governor.ll
@@ -133,7 +132,6 @@ entry:
 ; llvm/optimized/IntrinsicLowering.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; oniguruma/optimized/regparse.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -189,7 +187,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %0, 1
@@ -206,7 +204,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 %0, 1
@@ -217,7 +215,7 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/gim_contact.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 %0, 1
@@ -228,7 +226,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000065(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %0, 2
@@ -237,20 +235,9 @@ entry:
 }
 
 ; 1 occurrences:
-; abc/optimized/dauCount.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw i64 %1 to i32
-  %3 = shl nuw i32 %0, 1
-  %4 = icmp sgt i32 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000126(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nsw i32 %0, 1
@@ -261,7 +248,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nsw i32 %0, 1
@@ -272,7 +259,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nsw i32 %0, 1
@@ -283,7 +270,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/bacNtk.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nsw i32 %0, 1
@@ -301,7 +288,7 @@ entry:
 ; zxing/optimized/GenericGF.cpp.ll
 ; zxing/optimized/PDFModulusGF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %0, 3
@@ -325,7 +312,7 @@ entry:
 ; z3/optimized/sat_lookahead.cpp.ll
 ; zlib/optimized/gzread.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %0, 1
@@ -337,7 +324,7 @@ entry:
 ; gromacs/optimized/settle.cpp.ll
 ; stb/optimized/stb_image_write.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000012a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nsw i32 %0, 3
@@ -362,7 +349,7 @@ entry:
 ; linux/optimized/tcp_input.ll
 ; opencv/optimized/keypoint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %0, 2
@@ -373,7 +360,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl i32 %0, 3
@@ -381,11 +368,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; opencv/optimized/edge_drawing.cpp.ll
+; 1 occurrences:
 ; opencv/optimized/keypoint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b6(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000166(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw nsw i32 %0, 1
@@ -394,9 +380,20 @@ entry:
 }
 
 ; 1 occurrences:
+; opencv/optimized/edge_drawing.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000146(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = shl nuw i32 %0, 1
+  %4 = icmp slt i32 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; arrow/optimized/row_internal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %0, 3
@@ -407,7 +404,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e8(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %0, 1

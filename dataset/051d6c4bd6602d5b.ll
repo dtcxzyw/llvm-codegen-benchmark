@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; assimp/optimized/FBXUtil.cpp.ll
 ; cmake/optimized/hostcheck.c.ll
 ; curl/optimized/libcurl_la-hostcheck.ll
@@ -8,16 +8,15 @@
 ; php/optimized/fopen_wrappers.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
-; re2/optimized/re2.cc.ll
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = icmp eq i8 %2, 45
+  %3 = icmp eq i8 %2, 0
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -30,7 +29,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 61
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -46,8 +45,8 @@ define i64 @func0000000000000067(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 3
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %1
-  %6 = add nuw nsw i64 %5, %0
+  %5 = add nsw i64 %1, %4
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -61,8 +60,8 @@ define i64 @func0000000000000065(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 3
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %5 = add nsw i64 %1, %4
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -73,7 +72,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 46
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }

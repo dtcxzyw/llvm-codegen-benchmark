@@ -4,14 +4,15 @@
 ; ncnn/optimized/innerproduct_x86.cpp.ll
 ; redis/optimized/t_zset.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = select i1 %0, i1 %2, i1 false
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i32 %1) #0 {

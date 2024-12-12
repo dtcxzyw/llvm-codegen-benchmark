@@ -1,5 +1,7 @@
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; coreutils-rs/optimized/5dmrxisq30bb0giv.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/longobject.ll
@@ -10,7 +12,7 @@
 ; redis/optimized/lstrlib.ll
 ; wolfssl/optimized/wc_port.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -18,7 +20,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; quantlib/optimized/overnightindexedcoupon.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
@@ -43,7 +47,7 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -55,7 +59,7 @@ entry:
 ; libquic/optimized/quic_received_packet_manager.cc.ll
 ; luau/optimized/Linter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -75,7 +79,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
 ; clamav/optimized/regex_list.c.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; Function Attrs: nounwind
@@ -117,7 +122,7 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -162,7 +167,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -185,7 +190,7 @@ entry:
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -208,7 +213,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -219,7 +224,7 @@ entry:
 ; 1 occurrences:
 ; g2o/optimized/solver_dense.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ec(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -232,7 +237,7 @@ entry:
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -243,7 +248,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1

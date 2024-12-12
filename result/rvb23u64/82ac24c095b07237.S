@@ -19,13 +19,13 @@ func00000000000000ca:                   # @func00000000000000ca
 	fle.s	a0, fa0, fa5
 	ret
 .LCPI2_0:
-	.word	0x37800080                      # float 1.52590219E-5
+	.word	0x3b808081                      # float 0.00392156886
 func0000000000000022:                   # @func0000000000000022
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	fmul.s	fa4, fa2, fa5
 	fmul.s	fa5, fa1, fa5
-	flt.s	a0, fa4, fa5
+	flt.s	a0, fa5, fa4
 	bnez	a0, .LBB2_2
 	fmv.s	fa5, fa4
 .LBB2_2:                                # %entry

@@ -46,6 +46,13 @@ func0000000000000023:                   # @func0000000000000023
 	lui	a1, 131344
 	addw	a0, a0, a1
 	ret
+func0000000000000036:                   # @func0000000000000036
+	slli	a1, a1, 8
+	lui	a2, 14
+	addw	a1, a1, a2
+	zext.h	a0, a0
+	or	a0, a0, a1
+	ret
 func0000000000000033:                   # @func0000000000000033
 	slli	a1, a1, 16
 	zext.h	a0, a0

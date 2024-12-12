@@ -7,9 +7,9 @@
 ; graphviz/optimized/shapes.c.ll
 ; libpng/optimized/pngread.c.ll
 ; linux/optimized/array.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/libahci.ll
 ; ncnn/optimized/gemm.cpp.ll
+; openjdk/optimized/Inet6AddressImpl.ll
 ; openjdk/optimized/pngread.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/date_strftime.ll
@@ -46,17 +46,6 @@ entry:
   %3 = select i1 %1, i32 0, i32 %2
   %4 = icmp sgt i32 %0, -1
   %5 = select i1 %4, i32 %3, i32 -1
-  ret i32 %5
-}
-
-; 1 occurrences:
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = select i1 %1, i32 1, i32 %2
-  %4 = icmp ugt i32 %0, 31
-  %5 = select i1 %4, i32 %3, i32 0
   ret i32 %5
 }
 

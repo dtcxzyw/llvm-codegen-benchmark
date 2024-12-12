@@ -1,6 +1,5 @@
 
-; 38 occurrences:
-; faiss/optimized/IndexPQ.cpp.ll
+; 37 occurrences:
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-i386.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
@@ -39,12 +38,12 @@
 ; mold/optimized/thunks.cc.ARM32.cc.ll
 ; mold/optimized/thunks.cc.LOONGARCH32.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i16 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -53,17 +52,18 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i16 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 9
   %5 = or disjoint i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
+; linux/optimized/sem.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtinsert.ll
 ; postgres/optimized/nbtpage.ll

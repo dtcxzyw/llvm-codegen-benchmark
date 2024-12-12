@@ -1,12 +1,11 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/ellipse.c.ll
 ; graphviz/optimized/gvloadimage_pango.c.ll
 ; graphviz/optimized/gvrender.c.ll
 ; graphviz/optimized/layout.c.ll
 ; gromacs/optimized/colvarbias_alb.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll

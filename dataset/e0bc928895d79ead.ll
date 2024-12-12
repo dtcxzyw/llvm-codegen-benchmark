@@ -13,6 +13,19 @@ entry:
 }
 
 ; 1 occurrences:
+; clamav/optimized/str.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 4
+  %4 = or i32 %0, %1
+  %5 = or i32 %4, %3
+  %6 = lshr i32 %5, 6
+  %7 = trunc i32 %6 to i8
+  ret i8 %7
+}
+
+; 1 occurrences:
 ; protobuf/optimized/parser.cc.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {

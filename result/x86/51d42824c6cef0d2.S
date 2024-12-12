@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	andb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006
-	testl	%esi, %edx
+	testl	%edx, %esi
 	sets	%al
 	andb	%dil, %al
 	retq

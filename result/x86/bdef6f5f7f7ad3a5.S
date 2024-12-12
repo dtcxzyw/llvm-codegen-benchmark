@@ -10,13 +10,13 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$608, %edx                      # imm = 0x260
 	cmoveq	%rsi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movq	%rdi, %rax
 	notl	%edx
 	testb	$-16, %dl
 	cmoveq	%rsi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movq	%rdi, %rax
 	testb	$32, %dl
 	cmoveq	%rsi, %rax

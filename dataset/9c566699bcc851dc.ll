@@ -18,15 +18,27 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000148(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = icmp ugt i64 %3, 999999999999999999
   ret i1 %4
 }
 
-; 162 occurrences:
+; 1 occurrences:
+; velox/optimized/Sequence.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008a(i64 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nsw i128 %1 to i64
+  %3 = add i64 %0, %2
+  %4 = icmp sgt i64 %3, -1
+  ret i1 %4
+}
+
+; 163 occurrences:
+; boost/optimized/to_chars.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -190,10 +202,10 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000144(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = icmp ult i64 %3, 100
   ret i1 %4
 }
@@ -205,7 +217,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp eq i64 %3, -1
   ret i1 %4
 }
@@ -214,10 +226,10 @@ entry:
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp eq i64 %3, -1
   ret i1 %4
 }
@@ -225,10 +237,10 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/lnumprint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, 1
   ret i1 %4
 }
@@ -239,18 +251,29 @@ entry:
 define i1 @func0000000000000008(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, 1
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i128 %1) #0 {
+entry:
+  %2 = trunc i128 %1 to i64
+  %3 = add i64 %0, %2
+  %4 = icmp ult i64 %3, 7
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i128 %1) #0 {
+define i1 @func000000000000010a(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp sgt i64 %3, -1
   ret i1 %4
 }

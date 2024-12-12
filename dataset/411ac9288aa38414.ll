@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 67 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -27,7 +27,6 @@
 ; llvm/optimized/CoverageMappingGen.cpp.ll
 ; llvm/optimized/MachineInstrBundle.cpp.ll
 ; llvm/optimized/Mangler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -66,6 +65,8 @@
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wasmtime-rs/optimized/wtp2wi3bcje8i2h.ll
 ; wireshark/optimized/packet-smc.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i1 %1, i1 %2) #0 {
 entry:

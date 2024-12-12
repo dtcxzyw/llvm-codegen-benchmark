@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/covMinSop.c.ll
@@ -22,7 +22,6 @@
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Odtype.c.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/i915_gpu_error.ll
@@ -37,13 +36,11 @@
 ; llvm/optimized/CommentSema.cpp.ll
 ; llvm/optimized/Line.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_MidiIn.ll
 ; openusd/optimized/patchTree.cpp.ll
-; qemu/optimized/hw_net_cadence_gem.c.ll
 ; redis/optimized/module.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
@@ -103,7 +100,7 @@ entry:
   ret i32 %6
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
@@ -121,7 +118,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -151,8 +147,7 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
-; linux/optimized/fixed_phy.ll
+; 8 occurrences:
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Core.cpp.ll
@@ -197,19 +192,6 @@ entry:
   %4 = and i32 %0, -33554432
   %5 = or disjoint i32 %4, %3
   %6 = or disjoint i32 %5, 1
-  ret i32 %6
-}
-
-; 1 occurrences:
-; hermes/optimized/HBC.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 6
-  %3 = and i32 %2, 960
-  %4 = and i32 %0, 63
-  %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, 56320
   ret i32 %6
 }
 

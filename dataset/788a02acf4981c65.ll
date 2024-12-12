@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/crt.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -33,7 +34,7 @@ entry:
 define i128 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, -19
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = zext i64 %3 to i128
   ret i128 %4
 }
@@ -44,7 +45,7 @@ entry:
 define i128 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, -19
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = zext i64 %3 to i128
   ret i128 %4
 }

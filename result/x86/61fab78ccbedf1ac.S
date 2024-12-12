@@ -2,7 +2,7 @@
 	.quad	0x8000000000000000              # double -0
 func0000000000000008:                   # @func0000000000000008
 	vxorpd	.LCPI0_0(%rip){1to2}, %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setnp	%cl
 	sete	%al
 	andb	%cl, %al

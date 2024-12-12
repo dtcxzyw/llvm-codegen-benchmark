@@ -1,4 +1,4 @@
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	srai	a2, a0, 63
 	srli	a2, a2, 62
 	add	a2, a2, a0
@@ -7,7 +7,7 @@ func00000000000001a6:                   # @func00000000000001a6
 	sgtz	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000016c:                   # @func000000000000016c
+func00000000000004cc:                   # @func00000000000004cc
 	srai	a2, a1, 63
 	srli	a2, a2, 62
 	add	a2, a2, a1
@@ -16,7 +16,7 @@ func000000000000016c:                   # @func000000000000016c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	srai	a2, a1, 63
 	srli	a2, a2, 62
 	add	a2, a2, a1

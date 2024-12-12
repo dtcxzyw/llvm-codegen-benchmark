@@ -16,8 +16,14 @@ func000000000000000a:                   # @func000000000000000a
 	andl	%esi, %edi
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	cmpl	$2, %edx
+	setb	%al
+	andl	%esi, %edi
+	andb	%dil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpl	$16385, %edx                    # imm = 0x4001
 	setb	%al
 	andl	%esi, %edi
 	andb	%dil, %al
@@ -31,6 +37,12 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000006:                   # @func0000000000000006
 	cmpl	$128, %edx
 	setl	%al
+	andl	%esi, %edi
+	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$17, %edx
+	setae	%al
 	andl	%esi, %edi
 	andb	%dil, %al
 	retq

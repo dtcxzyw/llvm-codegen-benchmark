@@ -1,5 +1,7 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; linux/optimized/cppc_acpi.ll
 ; linux/optimized/intel_lrc.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
@@ -39,16 +41,14 @@ entry:
   ret i32 %2
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; hwloc/optimized/bitmap.ll
-; jq/optimized/gb18030.ll
-; oniguruma/optimized/gb18030.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0) #0 {
+define i32 @func0000000000000024(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -48
-  %2 = icmp ult i64 %1, 10
-  %3 = select i1 %2, i32 4, i32 2
+  %1 = add nsw i64 %0, -1
+  %2 = icmp ult i64 %1, 4294967296
+  %3 = select i1 %2, i32 1, i32 33
   ret i32 %3
 }
 

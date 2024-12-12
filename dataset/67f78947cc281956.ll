@@ -5,7 +5,7 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-face.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
@@ -22,7 +22,7 @@ entry:
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1

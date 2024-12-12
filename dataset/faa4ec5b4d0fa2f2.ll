@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; hermes/optimized/DateUtil.cpp.ll
@@ -7,6 +7,7 @@
 ; icu/optimized/dtptngen.ll
 ; icu/optimized/simpletz.ll
 ; libquic/optimized/url_parse.cc.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll

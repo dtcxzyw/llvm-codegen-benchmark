@@ -24,10 +24,6 @@ func0000000000000002:                   # @func0000000000000002
 	sh3add	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
-	sh1add	a0, a0, a1
-	zext.w	a0, a0
-	ret
 func0000000000000066:                   # @func0000000000000066
 	slli	a0, a0, 4
 	add	a0, a0, a1
@@ -40,10 +36,6 @@ func000000000000004a:                   # @func000000000000004a
 func000000000000000a:                   # @func000000000000000a
 	sh1add	a0, a0, a1
 	zext.w	a0, a0
-	ret
-func000000000000001f:                   # @func000000000000001f
-	sh1add	a0, a0, a1
-	sext.w	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sh2add	a0, a0, a1

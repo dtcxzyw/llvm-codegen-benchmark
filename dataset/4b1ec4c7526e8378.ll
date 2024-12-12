@@ -59,7 +59,7 @@ entry:
   ret double %4
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -74,7 +74,6 @@ entry:
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll

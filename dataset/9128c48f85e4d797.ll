@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; draco/optimized/symbol_encoding.cc.ll
 ; git/optimized/progress.ll
@@ -16,7 +16,6 @@
 ; linux/optimized/vlv_dsi_pll.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaRISCV.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll

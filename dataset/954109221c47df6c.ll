@@ -1,5 +1,6 @@
 
-; 30 occurrences:
+; 31 occurrences:
+; boost/optimized/static_string.ll
 ; cmake/optimized/io.cpp.ll
 ; coreutils-rs/optimized/1dsngyyz5dcg9o6n.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -363,7 +364,7 @@ entry:
 ; openmpi/optimized/fbtl_posix_preadv.ll
 ; openmpi/optimized/fbtl_posix_pwritev.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = add nsw i64 %0, %1

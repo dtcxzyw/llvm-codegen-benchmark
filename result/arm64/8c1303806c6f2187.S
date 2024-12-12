@@ -1,11 +1,14 @@
-func0000000000000038:                   // @func0000000000000038
+func0000000000000078:                   // @func0000000000000078
 // %bb.0:                               // %entry
-	ushll	v4.4s, v3.4h, #2
-	ushll2	v3.4s, v3.8h, #2
-	cmhi	v2.4s, v3.4s, v2.4s
-	cmhi	v1.4s, v4.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	and	v0.8b, v0.8b, v1.8b
+	cmp	w1, w2, uxth #2
+	cset	w8, lo
+	and	w0, w0, w8
+	ret
+                                        // -- End function
+func0000000000000068:                   // @func0000000000000068
+// %bb.0:                               // %entry
+	cmp	w1, w2, uxth #1
+	cset	w8, lo
+	and	w0, w0, w8
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 51 occurrences:
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddBddIte.c.ll
@@ -37,43 +37,25 @@
 ; openjdk/optimized/shenandoahBarrierSet.ll
 ; openjdk/optimized/shenandoahCodeRoots.ll
 ; openjdk/optimized/shenandoahConcurrentGC.ll
-; openjdk/optimized/shenandoahGC.ll
 ; openjdk/optimized/shenandoahHeap.ll
-; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/shenandoahNMethod.ll
 ; openjdk/optimized/shenandoahRuntime.ll
 ; openjdk/optimized/shenandoahStackWatermark.ll
 ; openjdk/optimized/shenandoahVerifier.ll
 ; openjdk/optimized/stubRoutines.ll
 ; z3/optimized/aig.cpp.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = icmp eq i64 %1, 21
-  %5 = select i1 %4, ptr %0, ptr %3
-  ret ptr %5
-}
-
-; 2 occurrences:
-; bdwgc/optimized/gc.c.ll
-; eastl/optimized/TestMemory.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ugt i64 %1, 2048
-  %5 = select i1 %4, ptr %0, ptr %3
-  ret ptr %5
-}
-
-; 1 occurrences:
-; openjdk/optimized/virtualspace.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ult i64 %1, 4294967296
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
 }

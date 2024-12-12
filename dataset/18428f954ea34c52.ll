@@ -1,15 +1,17 @@
 
-; 38 occurrences:
+; 40 occurrences:
 ; abc/optimized/darBalance.c.ll
 ; abc/optimized/nwkStrash.c.ll
 ; assimp/optimized/TextureTransform.cpp.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
+; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_rawoverexposed.c.ll
 ; gromacs/optimized/genconf.cpp.ll
 ; libjpeg-turbo/optimized/jidctflt.c.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; luau/optimized/lmathlib.cpp.ll
+; lvgl/optimized/lv_line.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; meshoptimizer/optimized/spatialorder.cpp.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll

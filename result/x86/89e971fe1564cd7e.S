@@ -1,9 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
 	movq	%rdi, %rax
-	xorl	%ecx, %ecx
 	testb	$1, %sil
+	movl	$32, %ecx
 	cmoveq	%rdx, %rcx
-	andl	$-8, %eax
+	andq	$-8, %rax
 	subq	%rcx, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002

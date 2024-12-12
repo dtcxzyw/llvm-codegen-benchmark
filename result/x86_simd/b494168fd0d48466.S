@@ -136,34 +136,23 @@ func0000000000000061:                   # @func0000000000000061
 	vzeroupper
 	retq
 .LCPI13_0:
-	.quad	8                               # 0x8
-.LCPI13_1:
-	.long	3                               # 0x3
-func000000000000006a:                   # @func000000000000006a
-	vpaddq	.LCPI13_0(%rip){1to4}, %ymm0, %ymm0
-	vpsrlq	$1, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
-	vpaddd	.LCPI13_1(%rip){1to4}, %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI14_0:
 	.quad	17179869176                     # 0x3fffffff8
 func0000000000000030:                   # @func0000000000000030
-	vpaddq	.LCPI14_0(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	.LCPI13_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI15_0:
+.LCPI14_0:
 	.quad	17179869176                     # 0x3fffffff8
-.LCPI15_1:
+.LCPI14_1:
 	.long	3                               # 0x3
 func0000000000000010:                   # @func0000000000000010
-	vpaddq	.LCPI15_0(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	.LCPI14_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
-	vpaddd	.LCPI15_1(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI14_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

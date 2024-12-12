@@ -41,23 +41,6 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; clamav/optimized/readdb.c.ll
-; qemu/optimized/tcg.c.ll
-; recastnavigation/optimized/fastlz.c.ll
-; yosys/optimized/fastlz.ll
-; yosys/optimized/lz4.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, -3
-  %6 = icmp ult i32 %5, -2
-  ret i1 %6
-}
-
 ; 16 occurrences:
 ; clamav/optimized/phishcheck.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -102,6 +85,22 @@ entry:
   ret i1 %6
 }
 
+; 4 occurrences:
+; clamav/optimized/readdb.c.ll
+; recastnavigation/optimized/fastlz.c.ll
+; yosys/optimized/fastlz.ll
+; yosys/optimized/lz4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = trunc i64 %3 to i32
+  %5 = add i32 %4, -31
+  %6 = icmp ult i32 %5, -33
+  ret i1 %6
+}
+
 ; 5 occurrences:
 ; ninja/optimized/depfile_parser.cc.ll
 ; opencv/optimized/tree.cpp.ll
@@ -109,7 +108,7 @@ entry:
 ; yosys/optimized/fastlz.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2

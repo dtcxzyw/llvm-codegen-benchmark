@@ -1,5 +1,6 @@
 
 ; 17 occurrences:
+; boost/optimized/ipv6_address.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cmake/optimized/archive_string.c.ll
@@ -11,7 +12,6 @@
 ; qemu/optimized/hw_audio_ac97.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; wireshark/optimized/charsets.c.ll
-; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/netmon.c.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
 ; wireshark/optimized/packet-ecatmb.c.ll

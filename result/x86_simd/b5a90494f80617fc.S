@@ -51,7 +51,7 @@
 	.zero	1
 .LCPI0_3:
 	.zero	4,223
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	vpsrld	$24, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0

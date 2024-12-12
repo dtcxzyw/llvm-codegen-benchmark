@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 89 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -88,8 +88,9 @@
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
+; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d1(i64 %0) #0 {
+define i32 @func00000000000001a1(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = and i32 %1, 2047
@@ -102,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/md-bitmap.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0) #0 {
+define i32 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = and i32 %1, 4095
@@ -115,26 +116,13 @@ entry:
 ; 1 occurrences:
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0) #0 {
+define i32 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = and i32 %1, 63
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i32 %2, 63
   %5 = select i1 %4, i32 0, i32 %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; nuttx/optimized/lib_trunc.c.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000d4(i64 %0) #0 {
-entry:
-  %1 = trunc nuw nsw i64 %0 to i32
-  %2 = and i32 %1, 2047
-  %3 = add nsw i32 %2, -1011
-  %4 = icmp ult i32 %2, 1023
-  %5 = select i1 %4, i32 1, i32 %3
   ret i32 %5
 }
 

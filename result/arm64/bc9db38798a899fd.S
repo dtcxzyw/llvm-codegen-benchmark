@@ -1,53 +1,35 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sshll2	v3.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	and	v0.16b, v2.16b, v0.16b
-	and	v1.16b, v3.16b, v1.16b
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	tst	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	sshll2	v3.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	and	v0.16b, v2.16b, v0.16b
-	and	v1.16b, v3.16b, v1.16b
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	tst	x0, x8
+	cset	w0, ne
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sshll2	v3.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x9, w1
 	mov	w8, #2147483647                 // =0x7fffffff
-	and	v0.16b, v2.16b, v0.16b
-	and	v1.16b, v3.16b, v1.16b
-	dup	v2.2d, x8
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	and	x9, x0, x9
+	cmp	x9, x8
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sshll2	v3.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	mov	w8, #8192                       // =0x2000
-	and	v0.16b, v2.16b, v0.16b
-	and	v1.16b, v3.16b, v1.16b
-	dup	v2.2d, x8
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	and	x8, x0, x8
+	cmp	x8, #2, lsl #12                 // =8192
+	cset	w0, hi
 	ret
                                         // -- End function

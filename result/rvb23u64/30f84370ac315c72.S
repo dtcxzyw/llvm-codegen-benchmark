@@ -33,6 +33,13 @@ func00000000000000ff:                   # @func00000000000000ff
 	addiw	a1, a2, 576
 	mul	a0, a0, a1
 	ret
+func0000000000000022:                   # @func0000000000000022
+	add	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh1add	a0, a1, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 1
+	ret
 func0000000000000054:                   # @func0000000000000054
 	add	a1, a1, a2
 	slli	a2, a1, 2

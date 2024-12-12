@@ -6,7 +6,7 @@ func000000000000000c:                   # @func000000000000000c
 	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
 	addq	%rcx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orq	%rsi, %rdi
 	xorl	%eax, %eax
 	cmpq	$1022, %rdi                     # imm = 0x3FE
@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$2064, %rdi                     # imm = 0x810
 	cmoveq	%rdi, %rax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	xorl	%eax, %eax
 	orq	%rsi, %rdi
 	setne	%al
@@ -29,10 +29,4 @@ func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
 	cmpq	$268435455, %rdi                # imm = 0xFFFFFFF
 	adcq	$-5, %rax
-	retq
-func0000000000000014:                   # @func0000000000000014
-	orq	%rsi, %rdi
-	cmpq	$268435450, %rdi                # imm = 0xFFFFFFA
-	movl	$5, %eax
-	sbbq	$0, %rax
 	retq

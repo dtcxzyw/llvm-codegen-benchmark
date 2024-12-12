@@ -1,10 +1,10 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sarq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setg	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sarq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
@@ -22,67 +22,67 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rdi, %rdx
 	setg	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	sarq	$3, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setg	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	sarq	$3, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	sarq	$3, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	sarq	$4, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	sarq	$4, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setg	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	sarq	$4, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setl	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setne	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	sarq	$5, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
@@ -94,37 +94,37 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func0000000000000059:                   # @func0000000000000059
+func00000000000000a9:                   # @func00000000000000a9
 	sarq	$4, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setae	%al
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	sarq	$3, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setbe	%al
 	retq
-func0000000000000055:                   # @func0000000000000055
+func00000000000000a5:                   # @func00000000000000a5
 	sarq	$3, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setbe	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sarq	$61, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	sarq	$3, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setne	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	sarq	$3, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx

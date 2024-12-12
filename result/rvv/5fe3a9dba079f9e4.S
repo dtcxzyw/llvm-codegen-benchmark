@@ -9,7 +9,7 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 4
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 .LCPI1_0:
 	.quad	2361183241434822607             # 0x20c49ba5e353f7cf

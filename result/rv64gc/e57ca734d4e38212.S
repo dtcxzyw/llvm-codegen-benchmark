@@ -4,7 +4,7 @@ func000000000000000b:                   # @func000000000000000b
 	snez	a1, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000020:                   # @func0000000000000020
+func00000000000000a0:                   # @func00000000000000a0
 	sext.w	a1, a1
 	sltiu	a1, a1, 128
 	xori	a1, a1, 1

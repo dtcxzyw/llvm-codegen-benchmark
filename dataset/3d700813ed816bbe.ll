@@ -24,7 +24,7 @@ entry:
   ret float %3
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; lodepng/optimized/pngdetail.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
@@ -36,7 +36,6 @@ entry:
 ; pbrt-v4/optimized/samples.cpp.ll
 ; pocketpy/optimized/random.cpp.ll
 ; wireshark/optimized/msg_rng_rsp.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:

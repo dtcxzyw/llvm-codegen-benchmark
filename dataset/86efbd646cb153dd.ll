@@ -3,7 +3,7 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = add nsw i64 %2, 2

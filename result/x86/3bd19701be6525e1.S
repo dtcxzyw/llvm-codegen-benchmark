@@ -19,3 +19,13 @@ func0000000000000004:                   # @func0000000000000004
 	cmpb	$3, %dil
 	sbbl	%eax, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpb	$-55, %dil
+	adcl	$-1, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpb	$3, %dil
+	sbbl	%eax, %eax
+	retq

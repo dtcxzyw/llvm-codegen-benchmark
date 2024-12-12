@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 60 occurrences:
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btContinuousConvexCollision.ll
@@ -59,6 +59,7 @@
 ; spike/optimized/vsse32_v.ll
 ; spike/optimized/vsse64_v.ll
 ; spike/optimized/vsse8_v.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:

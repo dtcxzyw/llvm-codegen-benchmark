@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -13,10 +14,10 @@
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i128 %0) #0 {
+define i1 @func0000000000000078(i128 %0) #0 {
 entry:
   %1 = trunc nuw nsw i128 %0 to i32
-  %2 = icmp ugt i32 %1, 500000
+  %2 = icmp samesign ugt i32 %1, 500000
   ret i1 %2
 }
 
@@ -43,13 +44,34 @@ entry:
   ret i1 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i128 %0) #0 {
+define i1 @func0000000000000061(i128 %0) #0 {
 entry:
   %1 = trunc nuw nsw i128 %0 to i32
   %2 = icmp eq i32 %1, 0
+  ret i1 %2
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i128 %0) #0 {
+entry:
+  %1 = trunc i128 %0 to i32
+  %2 = icmp ugt i32 %1, 999999
+  ret i1 %2
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i128 %0) #0 {
+entry:
+  %1 = trunc i128 %0 to i32
+  %2 = icmp samesign ugt i32 %1, 9999
   ret i1 %2
 }
 

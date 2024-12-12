@@ -35,7 +35,7 @@ define i32 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 298
   %3 = add nsw i32 %2, -4640
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = ashr i32 %4, 8
   ret i32 %5
 }

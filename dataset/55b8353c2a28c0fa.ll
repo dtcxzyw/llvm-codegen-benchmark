@@ -10,7 +10,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = zext i8 %1 to i32
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

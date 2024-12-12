@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000102(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %0, -48
   %3 = icmp ult i8 %2, 10
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000108(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %0, -64
   %3 = icmp ult i8 %2, -65
@@ -31,7 +31,7 @@ entry:
 ; delta-rs/optimized/2ounwovke18sd889.ll
 ; delta-rs/optimized/56nvjt5b8qxnt1we.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000282(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000902(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %0, -16
   %3 = icmp ult i8 %2, 18

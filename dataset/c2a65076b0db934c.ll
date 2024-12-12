@@ -4,7 +4,7 @@
 ; gromacs/optimized/matio.cpp.ll
 ; openexr/optimized/ImfMisc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = srem i32 %2, %0
@@ -32,7 +32,7 @@ entry:
 ; openspiel/optimized/hex.cc.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = srem i32 %2, %0
@@ -79,7 +79,7 @@ entry:
 ; git/optimized/add-interactive.ll
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = srem i32 %2, %0

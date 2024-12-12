@@ -26,19 +26,17 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = or disjoint i32 %3, %1
   %5 = and i32 %4, 65535
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
 ; abc/optimized/kitCloud.c.ll
 ; cpython/optimized/_json.ll
 ; imgui/optimized/imgui.cpp.ll
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/ht.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/qobject_json-parser.c.ll
 ; Function Attrs: nounwind
@@ -51,16 +49,17 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/ivySeq.c.ll
 ; linux/optimized/tcp_minisocks.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 27
   %.masked = and i32 %1, -4063233
   %4 = or i32 %3, %.masked
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -73,7 +72,7 @@ entry:
   %3 = shl i32 %2, 3
   %4 = or disjoint i32 %3, %1
   %5 = and i32 %4, -1073676289
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -112,9 +111,9 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 23
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = and i32 %4, 14651391
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -124,9 +123,9 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = and i32 %4, 32
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

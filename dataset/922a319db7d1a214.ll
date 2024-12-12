@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/splashscreen_gfx_impl.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = icmp sgt i32 %2, %0
@@ -35,10 +35,10 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000068(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000e8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -47,7 +47,7 @@ entry:
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 5
   %3 = icmp ne i32 %2, %0
@@ -60,10 +60,10 @@ entry:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000070(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000f0(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ugt i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c2(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = icmp eq i32 %2, %0
@@ -93,10 +93,10 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000072(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000f2(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp samesign uge i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -104,10 +104,10 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

@@ -48,6 +48,29 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = sub nsw i64 %2, %0
+  %4 = mul i64 %3, 24
+  ret i64 %4
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; linux/optimized/intel_rps.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = sub i64 %2, %0
+  %4 = mul i64 %3, 24
+  ret i64 %4
+}
+
 ; 15 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/pcf.c.ll
@@ -70,17 +93,6 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 %2, %0
   %4 = mul nsw i64 %3, 60
-  ret i64 %4
-}
-
-; 1 occurrences:
-; linux/optimized/intel_rps.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = sub i64 %2, %0
-  %4 = mul i64 %3, 1181
   ret i64 %4
 }
 

@@ -22,6 +22,6 @@ func000000000000007e:                   # @func000000000000007e
 	retq
 func000000000000007a:                   # @func000000000000007a
 	shll	$10, %esi
-	leal	-56613888(%rsi,%rdi), %eax
+	leal	-56613888(%rdi,%rsi), %eax
 	shrl	$18, %eax
 	retq

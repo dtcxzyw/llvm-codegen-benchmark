@@ -19,27 +19,6 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
-; cpython/optimized/_datetimemodule.ll
-; libquic/optimized/time_support.c.ll
-; linux/optimized/input-mt.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; postgres/optimized/varbit.ll
-; wireshark/optimized/msg_dlmap.c.ll
-; wireshark/optimized/msg_ulmap.c.ll
-; wireshark/optimized/packet-amr.c.ll
-; wireshark/optimized/packet-rtps.c.ll
-; wireshark/optimized/text_import.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %0, %1
-  %3 = add i32 %2, 4900
-  %4 = sdiv i32 %3, 100
-  ret i32 %4
-}
-
 ; 3 occurrences:
 ; velox/optimized/ArrayIntersectExcept.cpp.ll
 ; velox/optimized/ComplexVector.cpp.ll
@@ -61,6 +40,24 @@ entry:
   %2 = add nsw i32 %0, %1
   %3 = add i32 %2, 7
   %4 = sdiv i32 %3, 8
+  ret i32 %4
+}
+
+; 8 occurrences:
+; cpython/optimized/_datetimemodule.ll
+; libquic/optimized/time_support.c.ll
+; postgres/optimized/varbit.ll
+; wireshark/optimized/msg_dlmap.c.ll
+; wireshark/optimized/msg_ulmap.c.ll
+; wireshark/optimized/packet-amr.c.ll
+; wireshark/optimized/packet-rtps.c.ll
+; wireshark/optimized/text_import.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 4900
+  %4 = sdiv i32 %3, 100
   ret i32 %4
 }
 

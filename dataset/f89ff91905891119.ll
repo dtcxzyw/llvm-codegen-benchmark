@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; annoy/optimized/annoymodule.ll
 ; faiss/optimized/HNSW.cpp.ll
@@ -26,12 +26,13 @@
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; wasmedge/optimized/engine.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   ret i1 %4
 }
 
@@ -63,11 +64,11 @@ define i1 @func0000000000000004(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll
@@ -81,12 +82,13 @@ entry:
 ; php/optimized/softmagic.ll
 ; postgres/optimized/float.ll
 ; wasmedge/optimized/engine.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp oeq float %3, %0
+  %4 = fcmp oeq float %0, %3
   ret i1 %4
 }
 
@@ -109,7 +111,7 @@ define i1 @func0000000000000024(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 
@@ -121,7 +123,7 @@ define i1 @func000000000000000d(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ule float %3, %0
+  %4 = fcmp uge float %0, %3
   ret i1 %4
 }
 
@@ -134,7 +136,7 @@ define i1 @func000000000000000c(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ole float %3, %0
+  %4 = fcmp oge float %0, %3
   ret i1 %4
 }
 
@@ -147,7 +149,7 @@ define i1 @func000000000000000a(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp oge float %3, %0
+  %4 = fcmp ole float %0, %3
   ret i1 %4
 }
 
@@ -162,7 +164,7 @@ define i1 @func0000000000000007(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp une float %3, %0
+  %4 = fcmp une float %0, %3
   ret i1 %4
 }
 
@@ -174,7 +176,7 @@ define i1 @func000000000000002b(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp uge float %3, %0
+  %4 = fcmp ule float %0, %3
   ret i1 %4
 }
 
@@ -186,7 +188,7 @@ define i1 @func0000000000000003(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ugt float %3, %0
+  %4 = fcmp ult float %0, %3
   ret i1 %4
 }
 
@@ -199,20 +201,21 @@ define i1 @func0000000000000005(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ult float %3, %0
+  %4 = fcmp ugt float %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/rho.cpp.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp oeq float %3, %0
+  %4 = fcmp oeq float %0, %3
   ret i1 %4
 }
 
@@ -223,7 +226,7 @@ define i1 @func000000000000002a(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp oge float %3, %0
+  %4 = fcmp ole float %0, %3
   ret i1 %4
 }
 
@@ -244,7 +247,7 @@ define i1 @func0000000000000022(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   ret i1 %4
 }
 
@@ -255,7 +258,7 @@ define i1 @func000000000000002d(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ule float %3, %0
+  %4 = fcmp uge float %0, %3
   ret i1 %4
 }
 
@@ -266,7 +269,7 @@ define i1 @func0000000000000023(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ugt float %3, %0
+  %4 = fcmp ult float %0, %3
   ret i1 %4
 }
 
@@ -277,7 +280,7 @@ define i1 @func0000000000000027(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp une float %3, %0
+  %4 = fcmp une float %0, %3
   ret i1 %4
 }
 
@@ -288,7 +291,7 @@ define i1 @func0000000000000025(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ult float %3, %0
+  %4 = fcmp ugt float %0, %3
   ret i1 %4
 }
 
@@ -300,7 +303,7 @@ define i1 @func000000000000000b(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp uge float %3, %0
+  %4 = fcmp ule float %0, %3
   ret i1 %4
 }
 

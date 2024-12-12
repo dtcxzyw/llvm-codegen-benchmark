@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
 ; abc/optimized/wlnRead.c.ll
@@ -12,6 +12,7 @@
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; redis/optimized/emap.ll
 ; redis/optimized/emap.sym.ll
@@ -22,7 +23,7 @@ define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 532676608
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -33,7 +34,7 @@ define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 120
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

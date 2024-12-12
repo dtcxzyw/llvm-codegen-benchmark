@@ -14,7 +14,7 @@
 ; wasmtime-rs/optimized/4cnvf14b3xea7eab.ll
 ; wasmtime-rs/optimized/4hvnupd8slkxulls.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a4(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000144(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ult i64 %3, %0
@@ -23,21 +23,32 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 1 occurrences:
+; rust-analyzer-rs/optimized/kusn7g75uvgw38z.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000064(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, -1
+  %4 = icmp ult i64 %3, %0
+  %5 = getelementptr nusw nuw { { { { i64, ptr, {} }, i64 } }, { i32, i32 } }, ptr %1, i64 %3
+  %6 = select i1 %4, ptr %5, ptr null
+  ret ptr %6
+}
+
+; 7 occurrences:
 ; coreutils-rs/optimized/1vrxha14kpfjcqak.ll
 ; coreutils-rs/optimized/jdhpc8bthd0ylxt.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
-; rust-analyzer-rs/optimized/kusn7g75uvgw38z.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/55kotg5r2nkrpa1d.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000044(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = icmp ult i64 %3, %0
-  %5 = getelementptr nusw { { { { i64, ptr, {} }, i64 } }, { i32, i32 } }, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %1, i64 %3
   %6 = select i1 %4, ptr %5, ptr null
   ret ptr %6
 }

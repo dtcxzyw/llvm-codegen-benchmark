@@ -1,12 +1,35 @@
 
-; 312 occurrences:
+; 320 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; bullet3/optimized/btMultiBody.ll
 ; bullet3/optimized/btMultiBodyDynamicsWorld.ll
-; clamav/optimized/pdf.c.ll
 ; clamav/optimized/rdwrfn.cpp.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -55,7 +78,6 @@
 ; git/optimized/transport-helper.ll
 ; git/optimized/transport.ll
 ; graphviz/optimized/emit.c.ll
-; gromacs/optimized/colvaratoms.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
 ; gromacs/optimized/colvarmodule.cpp.ll
@@ -67,8 +89,6 @@
 ; hdf5/optimized/H5Pdcpl.c.ll
 ; hermes/optimized/IRBuilder.cpp.ll
 ; hwloc/optimized/common-ps.ll
-; hyperscan/optimized/shufti.c.ll
-; hyperscan/optimized/truffle.c.ll
 ; icu/optimized/locid.ll
 ; icu/optimized/ubidi.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -91,9 +111,9 @@
 ; linux/optimized/drm_mm.ll
 ; linux/optimized/hcd.ll
 ; linux/optimized/hid-input.ll
+; linux/optimized/hub.ll
 ; linux/optimized/i915_active.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/input-poller.ll
 ; linux/optimized/input.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/libps2.ll
@@ -107,10 +127,32 @@
 ; linux/optimized/ttm_bo.ll
 ; linux/optimized/udp.ll
 ; linux/optimized/uhci-hcd.ll
-; llvm/optimized/AddressSanitizer.cpp.ll
+; llvm/optimized/AArch64AsmPrinter.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/AsmPrinter.cpp.ll
+; llvm/optimized/AsmPrinterInlineAsm.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/DebugHandlerBase.cpp.ll
+; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/DeclarationFragments.cpp.ll
+; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/MachineFunctionAnalysis.cpp.ll
+; llvm/optimized/MachineModuleInfo.cpp.ll
+; llvm/optimized/MallocChecker.cpp.ll
+; llvm/optimized/ObjCMT.cpp.ll
+; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RegBankSelect.cpp.ll
-; llvm/optimized/SemaCodeComplete.cpp.ll
-; lua/optimized/loadlib.ll
+; llvm/optimized/RetainCountChecker.cpp.ll
+; llvm/optimized/Scalarizer.cpp.ll
+; llvm/optimized/SelectionDAGISel.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/VTableBuilder.cpp.ll
+; llvm/optimized/X86AsmPrinter.cpp.ll
 ; luau/optimized/BuiltinDefinitions.test.cpp.ll
 ; luau/optimized/ConstraintSolver.cpp.ll
 ; luau/optimized/DcrLogger.cpp.ll
@@ -118,6 +160,7 @@
 ; luau/optimized/Linter.cpp.ll
 ; luau/optimized/TypeFamily.cpp.ll
 ; luau/optimized/Unifier.cpp.ll
+; lvgl/optimized/lv_draw.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; minetest/optimized/CSceneManager.cpp.ll
@@ -140,7 +183,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -197,6 +239,133 @@
 ; openjdk/optimized/xStackWatermark.ll
 ; openssl/optimized/libcrypto-lib-ess_lib.ll
 ; openssl/optimized/libcrypto-shlib-ess_lib.ll
+; openusd/optimized/aom_codec.c.ll
+; openusd/optimized/faceVertex.cpp.ll
+; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
+; openusd/optimized/shaderGenerator.cpp.ll
+; pbrt-v4/optimized/cameras.cpp.ll
+; pbrt-v4/optimized/display.cpp.ll
+; pbrt-v4/optimized/image.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/loopsubdiv.cpp.ll
+; pbrt-v4/optimized/mipmap.cpp.ll
+; pbrt-v4/optimized/paramdict.cpp.ll
+; pbrt-v4/optimized/parser.cpp.ll
+; pbrt-v4/optimized/plytool.cpp.ll
+; pbrt-v4/optimized/scene.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; pbrt-v4/optimized/stats.cpp.ll
+; php/optimized/formatted_print.ll
+; php/optimized/hash_xxhash.ll
+; php/optimized/php_cli_server.ll
+; php/optimized/session.ll
+; php/optimized/zend_llist.ll
+; postgres/optimized/exprscan.ll
+; postgres/optimized/lock.ll
+; postgres/optimized/nodeMemoize.ll
+; postgres/optimized/psqlscan.ll
+; postgres/optimized/psqlscanslash.ll
+; proxygen/optimized/HTTPSessionAcceptor.cpp.ll
+; qemu/optimized/block.c.ll
+; qemu/optimized/block_stream.c.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; redis/optimized/hyperloglog.ll
+; redis/optimized/module.ll
+; redis/optimized/rax.ll
+; rocksdb/optimized/compaction_picker.cc.ll
+; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; rocksdb/optimized/db_impl_secondary.cc.ll
+; rocksdb/optimized/full_filter_block.cc.ll
+; rocksdb/optimized/table_cache.cc.ll
+; rocksdb/optimized/xxhash.cc.ll
+; ruby/optimized/eval.ll
+; ruby/optimized/memory_view.ll
+; ruby/optimized/regcomp.ll
+; ruby/optimized/regparse.ll
+; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
+; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
+; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
+; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
+; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
+; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
+; slurm/optimized/dbd_conn.ll
+; slurm/optimized/slurmd.ll
+; spdlog/optimized/spdlog.cpp.ll
+; spike/optimized/socketif.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; tls-rs/optimized/59h61akxu6z29dlt.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; velox/optimized/Scanner.cpp.ll
+; verilator/optimized/V3ParseLex.cpp.ll
+; xgboost/optimized/io.cc.ll
+; yalantinglibs/optimized/channel.cpp.ll
+; yalantinglibs/optimized/chat_room.cpp.ll
+; yalantinglibs/optimized/client.cpp.ll
+; yalantinglibs/optimized/client_pool.cpp.ll
+; yalantinglibs/optimized/client_pools.cpp.ll
+; yalantinglibs/optimized/concurrent_clients.cpp.ll
+; yalantinglibs/optimized/data_gen.cpp.ll
+; yalantinglibs/optimized/example.cpp.ll
+; yalantinglibs/optimized/file_client.cpp.ll
+; yalantinglibs/optimized/file_server.cpp.ll
+; yalantinglibs/optimized/rpc_service.cpp.ll
+; yalantinglibs/optimized/server.cpp.ll
+; z3/optimized/algebraic_numbers.cpp.ll
+; z3/optimized/pb_solver.cpp.ll
+; z3/optimized/smt_context.cpp.ll
+; z3/optimized/subpaving_hwf.cpp.ll
+; z3/optimized/subpaving_mpf.cpp.ll
+; z3/optimized/subpaving_mpff.cpp.ll
+; z3/optimized/subpaving_mpfx.cpp.ll
+; z3/optimized/subpaving_mpq.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000061(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 104
+  %3 = icmp eq ptr %0, null
+  %4 = select i1 %3, ptr %2, ptr %0
+  ret ptr %4
+}
+
+; 19 occurrences:
+; cpython/optimized/obmalloc.ll
+; linux/optimized/chan.ll
+; linux/optimized/dm-raid1.ll
+; linux/optimized/gen6_ppgtt.ll
+; linux/optimized/i915_gem_evict.ll
+; linux/optimized/indirect.ll
+; linux/optimized/intel_panel.ll
+; linux/optimized/ip_tunnel.ll
+; linux/optimized/nfs4trace.ll
+; linux/optimized/nl80211.ll
+; linux/optimized/ohci-hcd.ll
+; linux/optimized/rsutils.ll
+; linux/optimized/sit.ll
+; linux/optimized/trace_kprobe.ll
+; postgres/optimized/trigger.ll
+; qemu/optimized/libvhost-user.c.ll
+; rust-analyzer-rs/optimized/1jnytxsf9ijspdxz.ll
+; rust-analyzer-rs/optimized/3e2k9rvojvac5ok5.ll
+; rust-analyzer-rs/optimized/3lmu0tsslmelo8sk.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000001(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 12
+  %3 = icmp eq ptr %0, null
+  %4 = select i1 %3, ptr %2, ptr %0
+  ret ptr %4
+}
+
+; 47 occurrences:
+; clamav/optimized/pdf.c.ll
+; gromacs/optimized/colvaratoms.cpp.ll
+; hyperscan/optimized/shufti.c.ll
+; hyperscan/optimized/truffle.c.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; lua/optimized/loadlib.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/array.cpp.ll
 ; openusd/optimized/assetLocalizationDelegate.cpp.ll
@@ -235,155 +404,12 @@
 ; openusd/optimized/testUsdTimeValueAuthoring.cpp.ll
 ; openusd/optimized/textFileFormat.tab.cpp.ll
 ; openusd/optimized/valueUtils.cpp.ll
-; pbrt-v4/optimized/cameras.cpp.ll
-; pbrt-v4/optimized/display.cpp.ll
-; pbrt-v4/optimized/image.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/loopsubdiv.cpp.ll
-; pbrt-v4/optimized/mipmap.cpp.ll
-; pbrt-v4/optimized/paramdict.cpp.ll
-; pbrt-v4/optimized/parser.cpp.ll
-; pbrt-v4/optimized/plytool.cpp.ll
-; pbrt-v4/optimized/scene.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
-; pbrt-v4/optimized/stats.cpp.ll
-; php/optimized/formatted_print.ll
-; php/optimized/hash_xxhash.ll
-; php/optimized/php_cli_server.ll
-; php/optimized/session.ll
-; php/optimized/zend_llist.ll
-; postgres/optimized/exprscan.ll
-; postgres/optimized/lock.ll
-; postgres/optimized/nodeMemoize.ll
-; postgres/optimized/psqlscan.ll
-; postgres/optimized/psqlscanslash.ll
-; proxygen/optimized/HTTPSessionAcceptor.cpp.ll
-; qemu/optimized/block.c.ll
-; qemu/optimized/block_stream.c.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; redis/optimized/hyperloglog.ll
-; redis/optimized/module.ll
-; redis/optimized/rax.ll
-; rocksdb/optimized/compaction_picker.cc.ll
-; rocksdb/optimized/db_impl_compaction_flush.cc.ll
-; rocksdb/optimized/db_impl_secondary.cc.ll
-; rocksdb/optimized/full_filter_block.cc.ll
-; rocksdb/optimized/keyrange.cc.ll
-; rocksdb/optimized/table_cache.cc.ll
-; rocksdb/optimized/xxhash.cc.ll
-; ruby/optimized/eval.ll
-; ruby/optimized/memory_view.ll
-; ruby/optimized/regcomp.ll
-; ruby/optimized/regparse.ll
-; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
-; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
-; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
-; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
-; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
-; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
-; slurm/optimized/dbd_conn.ll
-; slurm/optimized/slurmd.ll
-; spdlog/optimized/spdlog.cpp.ll
-; spike/optimized/socketif.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; tls-rs/optimized/59h61akxu6z29dlt.ll
-; velox/optimized/Scanner.cpp.ll
-; verilator/optimized/V3ParseLex.cpp.ll
-; xgboost/optimized/io.cc.ll
-; yalantinglibs/optimized/channel.cpp.ll
-; yalantinglibs/optimized/chat_room.cpp.ll
-; yalantinglibs/optimized/client.cpp.ll
-; yalantinglibs/optimized/client_pool.cpp.ll
-; yalantinglibs/optimized/client_pools.cpp.ll
-; yalantinglibs/optimized/concurrent_clients.cpp.ll
-; yalantinglibs/optimized/data_gen.cpp.ll
-; yalantinglibs/optimized/example.cpp.ll
-; yalantinglibs/optimized/file_client.cpp.ll
-; yalantinglibs/optimized/file_server.cpp.ll
-; yalantinglibs/optimized/rpc_service.cpp.ll
-; yalantinglibs/optimized/server.cpp.ll
-; z3/optimized/algebraic_numbers.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
-; z3/optimized/smt_context.cpp.ll
-; z3/optimized/subpaving_hwf.cpp.ll
-; z3/optimized/subpaving_mpf.cpp.ll
-; z3/optimized/subpaving_mpff.cpp.ll
-; z3/optimized/subpaving_mpfx.cpp.ll
-; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000041(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 104
-  %3 = icmp eq ptr %0, null
-  %4 = select i1 %3, ptr %2, ptr %0
-  ret ptr %4
-}
-
-; 19 occurrences:
-; cpython/optimized/obmalloc.ll
-; linux/optimized/chan.ll
-; linux/optimized/dm-raid1.ll
-; linux/optimized/gen6_ppgtt.ll
-; linux/optimized/i915_gem_evict.ll
-; linux/optimized/indirect.ll
-; linux/optimized/intel_panel.ll
-; linux/optimized/ip_tunnel.ll
-; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
-; linux/optimized/nl80211.ll
-; linux/optimized/ohci-hcd.ll
-; linux/optimized/rsutils.ll
-; linux/optimized/sit.ll
-; linux/optimized/trace_kprobe.ll
-; postgres/optimized/trigger.ll
-; rust-analyzer-rs/optimized/1jnytxsf9ijspdxz.ll
-; rust-analyzer-rs/optimized/3e2k9rvojvac5ok5.ll
-; rust-analyzer-rs/optimized/3lmu0tsslmelo8sk.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000001(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr i8, ptr %1, i64 24
-  %3 = icmp eq ptr %0, null
-  %4 = select i1 %3, ptr %2, ptr %0
-  ret ptr %4
-}
-
-; 29 occurrences:
-; llvm/optimized/AArch64AsmPrinter.cpp.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/AsmPrinter.cpp.ll
-; llvm/optimized/AsmPrinterInlineAsm.cpp.ll
-; llvm/optimized/Clang.cpp.ll
-; llvm/optimized/CodeViewDebug.cpp.ll
-; llvm/optimized/DebugHandlerBase.cpp.ll
-; llvm/optimized/Decl.cpp.ll
-; llvm/optimized/DeclarationFragments.cpp.ll
-; llvm/optimized/InstrProfReader.cpp.ll
-; llvm/optimized/LLVMTargetMachine.cpp.ll
-; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/MachineFunctionAnalysis.cpp.ll
-; llvm/optimized/MachineModuleInfo.cpp.ll
-; llvm/optimized/MallocChecker.cpp.ll
-; llvm/optimized/ObjCMT.cpp.ll
-; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RetainCountChecker.cpp.ll
-; llvm/optimized/Scalarizer.cpp.ll
-; llvm/optimized/SelectionDAGISel.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/VTableBuilder.cpp.ll
-; llvm/optimized/X86AsmPrinter.cpp.ll
-; openusd/optimized/aom_codec.c.ll
-; openusd/optimized/faceVertex.cpp.ll
-; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
-; openusd/optimized/shaderGenerator.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000031(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 48
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, ptr %2, ptr %0
   ret ptr %4

@@ -1,8 +1,11 @@
 
-; 9 occurrences:
+; 12 occurrences:
 ; cmake/optimized/cm_get_date.c.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/reg.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_roller.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/disparity_filtering.cpp.ll
 ; opencv/optimized/dnn_utils.cpp.ll
@@ -26,7 +29,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 8128
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %0, %4
   ret i32 %5
 }

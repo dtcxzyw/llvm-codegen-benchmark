@@ -40,7 +40,7 @@
 ; tev/optimized/main.cpp.ll
 ; yosys/optimized/anlogic_eqn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, double %1) #0 {
+define i1 @func00000000000000e1(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = zext nneg i32 %2 to i64
@@ -56,23 +56,11 @@ entry:
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; opencv/optimized/undistort.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, double %1) #0 {
+define i1 @func0000000000000061(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp eq i64 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dggbak.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, double %1) #0 {
-entry:
-  %2 = fptosi double %1 to i32
-  %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %0, -1
   %5 = icmp eq i64 %4, %3
   ret i1 %5
 }

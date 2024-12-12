@@ -8,7 +8,7 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000058:                   # @func0000000000000058
 	movq	%rsi, %rax
 	movl	%edx, %ecx
-	shlq	$3, %rcx
+	shlq	$2, %rcx
 	subq	%rcx, %rax
 	subq	%rdi, %rax
 	retq

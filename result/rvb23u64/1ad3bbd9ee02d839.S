@@ -13,7 +13,7 @@ func0000000000000020:                   # @func0000000000000020
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	lui	a2, 16
 	addiw	a2, a2, -16
 	sltu	a1, a2, a1
@@ -23,6 +23,11 @@ func0000000000000021:                   # @func0000000000000021
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
+func000000000000002b:                   # @func000000000000002b
+	addi	a0, a0, 1
+	slti	a1, a1, 0
+	czero.nez	a0, a0, a1
+	ret
 func0000000000000013:                   # @func0000000000000013
 	sltiu	a1, a1, 16
 	addi	a0, a0, 16
@@ -31,24 +36,21 @@ func0000000000000013:                   # @func0000000000000013
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-.LCPI4_0:
+.LCPI5_0:
 	.quad	9223372036854775                # 0x20c49ba5e353f7
 func0000000000000018:                   # @func0000000000000018
-	lui	a2, %hi(.LCPI4_0)
-	ld	a2, %lo(.LCPI4_0)(a2)
+	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
 	slt	a1, a1, a2
 	li	a2, 1
 	bseti	a2, a2, 63
 	add	a0, a0, a2
 	czero.eqz	a0, a0, a1
 	ret
-func000000000000002b:                   # @func000000000000002b
-	addi	a0, a0, 1
-	slti	a1, a1, 1
-	li	a2, 1
+func0000000000000021:                   # @func0000000000000021
+	sltiu	a1, a1, 2
+	addi	a0, a0, -1
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 4

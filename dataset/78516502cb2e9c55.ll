@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; casadi/optimized/cs_amd.c.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -17,7 +17,6 @@
 ; opencv/optimized/dpm_feature.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
-; openusd/optimized/restoration.c.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/RecastRasterization.cpp.ll
 ; Function Attrs: nounwind
@@ -30,27 +29,16 @@ entry:
   ret ptr %5
 }
 
-; 20 occurrences:
-; casadi/optimized/cs_amd.c.ll
-; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
-; ceres/optimized/eigensparse.cc.ll
-; ceres/optimized/reorder_program.cc.ll
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_slam2d_linear.cpp.ll
+; 9 occurrences:
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/manage_threading.cpp.ll
 ; gromacs/optimized/sbdsqr.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_geodesic.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/filter_unsharp.cpp.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
+; postgres/optimized/execExpr.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i32 %1) #0 {
 entry:

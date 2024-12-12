@@ -1,7 +1,6 @@
 
-; 201 occurrences:
+; 200 occurrences:
 ; clamav/optimized/unpack.cpp.ll
-; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/hex.c.ll
 ; cpython/optimized/dtoa.ll
 ; fmt/optimized/chrono-test.cc.ll

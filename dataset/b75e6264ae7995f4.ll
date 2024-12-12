@@ -7,7 +7,7 @@ define i64 @func0000000000000000(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = ptrtoint ptr %1 to i64
   %7 = sub i64 %5, %6
   ret i64 %7
@@ -23,11 +23,11 @@ entry:
 ; php/optimized/url_scanner_ex.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, ptr %1, ptr %2) #0 {
+define i64 @func0000000000000030(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
   %4 = ptrtoint ptr %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = ptrtoint ptr %1 to i64
   %7 = sub i64 %5, %6
   ret i64 %7

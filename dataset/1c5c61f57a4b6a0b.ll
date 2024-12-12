@@ -1,5 +1,7 @@
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/text_file_backend.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; linux/optimized/i915_gem_pages.ll

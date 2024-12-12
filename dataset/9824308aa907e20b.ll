@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; flac/optimized/bitwriter.c.ll
 ; freetype/optimized/psnames.c.ll
@@ -11,6 +11,7 @@
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/xfrm_user.ll
 ; llvm/optimized/APFloat.cpp.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; openblas/optimized/dlaqr5.c.ll

@@ -33,12 +33,12 @@ entry:
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, 1
   %3 = and i16 %2, 3
   %4 = zext nneg i16 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 

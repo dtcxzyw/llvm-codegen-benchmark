@@ -1,10 +1,19 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	addq	%rdx, %rdx
 	movabsq	$68719476720, %rax              # imm = 0xFFFFFFFF0
 	andq	%rdx, %rax
 	subq	%rax, %rsi
 	shlq	$4, %rdi
 	leaq	(%rdi,%rsi), %rax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	shrq	$32, %rdx
+	andl	$536870911, %edx                # imm = 0x1FFFFFFF
+	negq	%rdx
+	leaq	(%rdx,%rdx,2), %rax
+	leaq	(%rsi,%rax,4), %rax
+	leaq	(%rdi,%rdi,2), %rcx
+	leaq	(%rax,%rcx,4), %rax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	shrl	$2, %edx

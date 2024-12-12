@@ -3,7 +3,7 @@ func0000000000000020:                   # @func0000000000000020
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000000:                   # @func0000000000000000
@@ -11,7 +11,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000034:                   # @func0000000000000034
@@ -19,7 +19,7 @@ func0000000000000034:                   # @func0000000000000034
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000024:                   # @func0000000000000024
@@ -27,7 +27,7 @@ func0000000000000024:                   # @func0000000000000024
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000030:                   # @func0000000000000030
@@ -35,7 +35,7 @@ func0000000000000030:                   # @func0000000000000030
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000010:                   # @func0000000000000010
@@ -43,7 +43,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -51,6 +51,6 @@ func0000000000000004:                   # @func0000000000000004
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq

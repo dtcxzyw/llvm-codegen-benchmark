@@ -28,12 +28,12 @@ entry:
 ; hermes/optimized/DictPropertyMap.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -64
   %3 = inttoptr i64 %2 to ptr
-  %.idx = mul i64 %0, 640
-  %4 = getelementptr nusw i8, ptr %3, i64 %.idx
+  %.idx = mul nuw i64 %0, 640
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
@@ -49,9 +49,8 @@ entry:
   ret ptr %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; node/optimized/libnode.node_http2.ll
-; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -59,6 +58,18 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = mul i64 %0, 40
   %5 = getelementptr nusw i8, ptr %3, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; opencv/optimized/optflowgf.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -16
+  %3 = inttoptr i64 %2 to ptr
+  %4 = mul nuw i64 %0, 20
+  %5 = getelementptr nusw nuw i8, ptr %3, i64 %4
   ret ptr %5
 }
 

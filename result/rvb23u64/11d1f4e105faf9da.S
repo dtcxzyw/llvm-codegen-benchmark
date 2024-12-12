@@ -38,3 +38,8 @@ func000000000000001b:                   # @func000000000000001b
 	slli	a1, a1, 32
 	or	a0, a0, a1
 	ret
+func000000000000000b:                   # @func000000000000000b
+	add.uw	a0, a2, a0
+	slli	a1, a1, 48
+	or	a0, a0, a1
+	ret

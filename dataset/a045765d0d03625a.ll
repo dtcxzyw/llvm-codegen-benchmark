@@ -1,5 +1,6 @@
 
 ; 66 occurrences:
+; boost/optimized/gregorian.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -13,7 +14,6 @@
 ; duckdb/optimized/ub_duckdb_nested_loop_join.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; freetype/optimized/truetype.c.ll
 ; gromacs/optimized/firstorderpressurecoupling.cpp.ll
 ; gromacs/optimized/gmx_disre.cpp.ll
@@ -28,8 +28,8 @@
 ; linux/optimized/scsi_logging.ll
 ; llvm/optimized/DbiStream.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
 ; oiio/optimized/Codec.cpp.ll
 ; oiio/optimized/icooutput.cpp.ll
 ; opencv/optimized/lrn_layer.cpp.ll
@@ -70,7 +70,7 @@
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -102,7 +102,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = add i64 %4, %5
   ret i64 %6
@@ -114,7 +114,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = add i64 %4, %5
   ret i64 %6

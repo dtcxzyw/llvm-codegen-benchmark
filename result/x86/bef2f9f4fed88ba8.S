@@ -3,7 +3,7 @@ func0000000000000000:                   # @func0000000000000000
 	subq	%rsi, %rax
 	andq	$-16, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	subl	%esi, %edi
 	leal	64(%rdi), %eax
 	andl	$63, %eax

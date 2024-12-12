@@ -1,14 +1,17 @@
 
-; 3 occurrences:
+; 6 occurrences:
+; abc/optimized/extraUtilMacc.c.ll
+; linux/optimized/intel_dpio_phy.ll
 ; lua/optimized/lcode.ll
-; mitsuba3/optimized/x86func.cpp.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 13
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, 1024
+  %3 = or disjoint i32 %2, 1024
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -26,8 +29,8 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 24
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, -2147483648
+  %3 = or disjoint i32 %2, -2147483648
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -37,8 +40,8 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 10
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, 512
+  %3 = or disjoint i32 %2, 512
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -48,8 +51,8 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 10
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, 512
+  %3 = or disjoint i32 %2, 512
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -59,8 +62,20 @@ entry:
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, -1073741824
+  %3 = or i32 %2, -1073741824
+  %4 = or disjoint i32 %0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; hyperscan/optimized/teddy_compile.cpp.ll
+; linux/optimized/hda_codec.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 20
+  %3 = or disjoint i32 %2, 32768
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -70,19 +85,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 23
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, 1073741824
-  ret i32 %4
-}
-
-; 1 occurrences:
-; hyperscan/optimized/teddy_compile.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 5
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, 16
+  %3 = or i32 %2, 1073741824
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

@@ -4,7 +4,7 @@
 ; openusd/optimized/bboxCache.cpp.ll
 ; openusd/optimized/pointInstancer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000050a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = icmp ugt i64 %3, %1

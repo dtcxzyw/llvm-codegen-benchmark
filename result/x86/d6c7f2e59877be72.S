@@ -10,3 +10,9 @@ func0000000000000063:                   # @func0000000000000063
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
+func0000000000000023:                   # @func0000000000000023
+	cmpl	$5, %edx
+	setb	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq

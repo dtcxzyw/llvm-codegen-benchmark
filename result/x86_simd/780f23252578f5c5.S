@@ -19,7 +19,7 @@
 	.zero	4,1
 func000000000000000e:                   # @func000000000000000e
 	vpmovdb	%ymm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
+	vpaddb	%xmm1, %xmm0, %xmm0
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -44,7 +44,7 @@ func000000000000000e:                   # @func000000000000000e
 	.zero	4,15
 func0000000000000008:                   # @func0000000000000008
 	vpmovdb	%ymm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
+	vpaddb	%xmm1, %xmm0, %xmm0
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -69,7 +69,7 @@ func0000000000000008:                   # @func0000000000000008
 	.zero	4,63
 func0000000000000000:                   # @func0000000000000000
 	vpmovdb	%ymm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
+	vpaddb	%xmm1, %xmm0, %xmm0
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

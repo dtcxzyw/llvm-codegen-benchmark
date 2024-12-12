@@ -4,7 +4,7 @@
 	.long	4294966816                      # 0xfffffe20
 .LCPI0_2:
 	.long	98                              # 0x62
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpmovsxbd	%xmm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -19,7 +19,7 @@ func0000000000000156:                   # @func0000000000000156
 	.long	4294967248                      # 0xffffffd0
 .LCPI1_2:
 	.long	65535                           # 0xffff
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpmovsxbd	%xmm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -49,7 +49,7 @@ func0000000000000008:                   # @func0000000000000008
 	.long	4294967248                      # 0xffffffd0
 .LCPI3_2:
 	.long	214748364                       # 0xccccccc
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	vpmulld	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpmovsxbd	%xmm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -62,7 +62,7 @@ func0000000000000106:                   # @func0000000000000106
 	.long	10                              # 0xa
 .LCPI4_1:
 	.long	4294967248                      # 0xffffffd0
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	vpmulld	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
 	vpmovsxbd	%xmm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -78,7 +78,7 @@ func0000000000000101:                   # @func0000000000000101
 	.long	4294967248                      # 0xffffffd0
 .LCPI5_2:
 	.long	65535                           # 0xffff
-func0000000000000118:                   # @func0000000000000118
+func0000000000000228:                   # @func0000000000000228
 	vpmulld	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
 	vpmovsxbd	%xmm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0

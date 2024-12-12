@@ -1,11 +1,11 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addb	$-65, %sil
 	movl	%edi, %eax
 	orl	$32, %eax
 	cmpb	$26, %sil
 	cmovael	%edi, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	addb	$-3, %sil
 	movl	%edi, %eax
 	orl	$128, %eax

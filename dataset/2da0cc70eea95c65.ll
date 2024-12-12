@@ -22,19 +22,21 @@ entry:
 define i1 @func0000000000000007(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sle i64 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = xor i1 %4, true
   ret i1 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ule i64 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = xor i1 %4, true
   ret i1 %5
 }
@@ -45,18 +47,20 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = xor i1 %4, true
   ret i1 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = xor i1 %4, true
   ret i1 %5
 }
@@ -68,7 +72,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = xor i1 %4, true
   ret i1 %5
 }

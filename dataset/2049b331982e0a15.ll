@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 24 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; coreutils-rs/optimized/2bbkfa91qbgc61wj.ll
 ; coreutils-rs/optimized/2qo70e4zd6mgrgtt.ll
@@ -20,6 +20,10 @@
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/3yirtpiqdnll1kue.ll
+; zed-rs/optimized/1cwzjnrfv3j054rlb5kbvkj4j.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -40,7 +44,7 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
+; 43 occurrences:
 ; cmake/optimized/zstd_decompress.c.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
@@ -67,6 +71,22 @@ entry:
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
+; zed-rs/optimized/22ahis4uxapmr5sot3uwhf47g.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8ncehfng1y5s06ypbycx8606d.ll
+; zed-rs/optimized/99xtkjwhw46g7fh9gdw0hgerp.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/bkp2u7tfyqnnhpthgztcor9ly.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/eb0f70f7qg0lwhfftqxruwlu9.ll
+; zed-rs/optimized/ept7l7id9yl52ab8m2qhombt7.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
@@ -77,21 +97,19 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; linux/optimized/nfstrace.ll
+; 2 occurrences:
 ; linux/optimized/read.ll
 ; linux/optimized/write.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }
 
-; 3 occurrences:
-; linux/optimized/nfstrace.ll
+; 2 occurrences:
 ; linux/optimized/read.ll
 ; linux/optimized/write.ll
 ; Function Attrs: nounwind

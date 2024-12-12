@@ -5,46 +5,39 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$70, %esi
 	setae	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	addl	%edx, %edi
 	subl	%edi, %esi
 	addl	$-4, %esi
 	cmpl	$32001, %esi                    # imm = 0x7D01
 	setae	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addl	%edx, %edi
 	subl	%edi, %esi
 	incl	%esi
 	cmpl	$34, %esi
 	setae	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	addl	%edx, %edi
-	subl	%edi, %esi
-	incl	%esi
-	cmpl	$2, %esi
-	setb	%al
-	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	notl	%edx
 	addl	%esi, %edx
 	cmpl	%edi, %edx
 	setg	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	subl	%esi, %edx
 	addl	%edi, %edx
 	cmpl	$-2, %edx
 	sete	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	notl	%edx
 	addl	%esi, %edx
 	cmpl	%edi, %edx
 	setl	%al
 	retq
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	addl	%edx, %edi
 	subl	%edi, %esi
 	addl	$-6, %esi
@@ -64,33 +57,33 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$-3, %esi
 	setb	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	addl	%edx, %edi
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	addl	%edx, %edi
 	subl	%edi, %esi
 	addl	$256, %esi                      # imm = 0x100
 	cmpl	$769, %esi                      # imm = 0x301
 	setb	%al
 	retq
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	addl	%edx, %edi
 	subl	%edi, %esi
 	incl	%esi
 	cmpl	$2, %esi
 	setl	%al
 	retq
-func0000000000000204:                   # @func0000000000000204
+func0000000000000404:                   # @func0000000000000404
 	addl	%edx, %edi
 	subl	%edi, %esi
 	incl	%esi
 	cmpl	$64, %esi
 	setb	%al
 	retq
-func0000000000000224:                   # @func0000000000000224
+func0000000000000444:                   # @func0000000000000444
 	addl	%edx, %edi
 	subl	%edi, %esi
 	incl	%esi

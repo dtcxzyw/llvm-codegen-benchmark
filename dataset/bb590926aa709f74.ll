@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp sgt i32 %3, -1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/unisetspan.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i16 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000042a(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 1

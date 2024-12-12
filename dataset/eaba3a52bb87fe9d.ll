@@ -1,12 +1,11 @@
 
-; 29 occurrences:
+; 27 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; freetype/optimized/ftbase.c.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/intermOut.cpp.ll
 ; linux/optimized/chip.ll
 ; linux/optimized/hrtimer.ll
-; linux/optimized/intel_tcc.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -26,20 +25,18 @@
 ; opencv/optimized/dtfilter_cpu.cpp.ll
 ; opencv/optimized/matrix_expressions.cpp.ll
 ; opencv/optimized/qualitygmsd.cpp.ll
-; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/regcomp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = icmp eq i32 %0, 0
+  %2 = and i32 %1, 12
+  %3 = icmp eq i32 %0, 1
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
 
-; 4 occurrences:
-; icu/optimized/collationiterator.ll
+; 3 occurrences:
 ; libwebp/optimized/cost_enc.c.ll
 ; libwebp/optimized/token_enc.c.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll

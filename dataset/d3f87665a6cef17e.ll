@@ -1,8 +1,11 @@
 
-; 85 occurrences:
+; 81 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; coreutils-rs/optimized/p2ic31m8j7cwnae.ll
-; darktable/optimized/NefDecoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; faiss/optimized/InvertedLists.cpp.ll
@@ -12,7 +15,6 @@
 ; git/optimized/commit-graph.ll
 ; git/optimized/hash-lookup.ll
 ; git/optimized/midx.ll
-; git/optimized/parse.ll
 ; hdf5/optimized/H5Dchunk.c.ll
 ; hermes/optimized/StringRef.cpp.ll
 ; libevent/optimized/bufferevent_ratelim.c.ll
@@ -23,17 +25,12 @@
 ; lightgbm/optimized/linkers_socket.cpp.ll
 ; lightgbm/optimized/metadata.cpp.ll
 ; lightgbm/optimized/parser.cpp.ll
-; linux/optimized/balloc.ll
 ; linux/optimized/clocksource.ll
 ; linux/optimized/fair.ll
-; linux/optimized/fsmap.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/kprobes.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
-; llvm/optimized/ExpandMemCmp.cpp.ll
 ; llvm/optimized/InductiveRangeCheckElimination.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/StringRef.cpp.ll
 ; memcached/optimized/memcached-slab_automove.ll
@@ -42,7 +39,6 @@
 ; openjdk/optimized/mutableNUMASpace.ll
 ; openssl/optimized/libssl-lib-rec_layer_s3.ll
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
-; php/optimized/cdf.ll
 ; postgres/optimized/regexec.ll
 ; postgres/optimized/slotsync.ll
 ; postgres/optimized/xlog.ll
@@ -93,27 +89,22 @@ entry:
   ret i1 %4
 }
 
-; 75 occurrences:
+; 69 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; clamav/optimized/fmap.c.ll
-; cmake/optimized/cmGlobalUnixMakefileGenerator3.cxx.ll
 ; cmake/optimized/fse_compress.c.ll
-; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; hdf5/optimized/H5D.c.ll
 ; hdf5/optimized/H5Dint.c.ll
 ; hwloc/optimized/topology-linux.ll
-; libquic/optimized/hkdf.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/fair.ll
-; linux/optimized/ialloc.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/regmap.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/CheckPlacementNew.cpp.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; llvm/optimized/JumpTableToSwitch.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
@@ -127,7 +118,6 @@ entry:
 ; memcached/optimized/memcached_debug-slab_automove_extstore.ll
 ; openjdk/optimized/codeHeapState.ll
 ; openjdk/optimized/defNewGeneration.ll
-; openjdk/optimized/g1RegionToSpaceMapper.ll
 ; openjdk/optimized/jfrMemorySizer.ll
 ; openjdk/optimized/parallelScavengeHeap.ll
 ; openjdk/optimized/psScavenge.ll
@@ -139,8 +129,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-ec_mult.ll
 ; openssl/optimized/libcrypto-shlib-cmac.ll
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
-; openssl/optimized/libdefault-lib-ssl3_cbc.ll
-; openssl/optimized/libssl-shlib-ssl3_cbc.ll
 ; postgres/optimized/regexec.ll
 ; postgres/optimized/reorderbuffer.ll
 ; postgres/optimized/xlog.ll
@@ -168,6 +156,8 @@ entry:
 ; tls-rs/optimized/2xhpv4vf07do7r8g.ll
 ; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
@@ -181,14 +171,31 @@ entry:
 ; openssl/optimized/libcrypto-lib-punycode.ll
 ; openssl/optimized/libcrypto-shlib-punycode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp samesign ule i64 %3, %0
+  ret i1 %4
+}
+
+; 7 occurrences:
+; cmake/optimized/cmGlobalUnixMakefileGenerator3.cxx.ll
+; darktable/optimized/PanasonicV6Decompressor.cpp.ll
+; linux/optimized/ialloc.ll
+; llvm/optimized/CheckPlacementNew.cpp.ll
+; openjdk/optimized/g1RegionToSpaceMapper.ll
+; openssl/optimized/libdefault-lib-ssl3_cbc.ll
+; openssl/optimized/libssl-shlib-ssl3_cbc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = udiv i64 %1, %2
+  %4 = icmp samesign ugt i64 %3, %0
   ret i1 %4
 }
 
 ; 43 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_map_nested.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
@@ -196,7 +203,6 @@ entry:
 ; git/optimized/commit-graph.ll
 ; hdf5/optimized/H5Dchunk.c.ll
 ; hdf5/optimized/H5Dint.c.ll
-; hdf5/optimized/H5MFsection.c.ll
 ; hdf5/optimized/H5PB.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hwloc/optimized/topology-synthetic.ll
@@ -249,6 +255,23 @@ define i1 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = icmp uge i64 %3, %0
+  ret i1 %4
+}
+
+; 8 occurrences:
+; darktable/optimized/NefDecoder.cpp.ll
+; git/optimized/parse.ll
+; linux/optimized/balloc.ll
+; linux/optimized/fsmap.ll
+; linux/optimized/kprobes.ll
+; llvm/optimized/ExpandMemCmp.cpp.ll
+; php/optimized/cdf.ll
+; slurm/optimized/gres_filter.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = udiv i64 %1, %2
+  %4 = icmp samesign ult i64 %3, %0
   ret i1 %4
 }
 

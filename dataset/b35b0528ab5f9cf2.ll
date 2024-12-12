@@ -12,7 +12,7 @@
 ; wireshark/optimized/packet-quakeworld.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i1 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i8 %0, 12
   %3 = and i1 %2, %1

@@ -23,7 +23,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-mgcp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i8 %0) #0 {
+define i32 @func0000000000000084(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 92
   %2 = icmp eq i8 %0, 47

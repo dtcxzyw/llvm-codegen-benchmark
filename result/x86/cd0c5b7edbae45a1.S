@@ -11,6 +11,12 @@ func0000000000000015:                   # @func0000000000000015
 	addl	%esi, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	leal	(%rdx,%rdx,4), %eax
+	leal	(%rdi,%rax,2), %eax
+	andl	$524287, %esi                   # imm = 0x7FFFF
+	addl	%esi, %eax
+	retq
 func0000000000000014:                   # @func0000000000000014
 	imull	$-748800, %edx, %eax            # imm = 0xFFF49300
 	addl	%edi, %eax

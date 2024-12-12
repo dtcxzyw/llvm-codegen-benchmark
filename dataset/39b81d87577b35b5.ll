@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; linux/optimized/nf_reject_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; postgres/optimized/tsrank.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind

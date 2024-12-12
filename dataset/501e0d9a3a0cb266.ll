@@ -1,12 +1,11 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; lief/optimized/Builder.cpp.ll
 ; linux/optimized/params.ll
 ; llvm/optimized/TGParser.cpp.ll
 ; minetest/optimized/connection.cpp.ll
@@ -41,33 +40,6 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = add i32 %4, -2
   %6 = zext nneg i32 %5 to i64
-  ret i64 %6
-}
-
-; 2 occurrences:
-; proj/optimized/wkt_parser.cpp.ll
-; yosys/optimized/fstapi.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %4, 2
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/tree.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %4, -1
-  %6 = zext i32 %5 to i64
   ret i64 %6
 }
 

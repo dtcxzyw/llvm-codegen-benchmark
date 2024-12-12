@@ -51,7 +51,7 @@
 ; quantlib/optimized/sviinterpolatedsmilesection.ll
 ; quantlib/optimized/zabr.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = call i64 @llvm.smax.i64(i64 %2, i64 -1)

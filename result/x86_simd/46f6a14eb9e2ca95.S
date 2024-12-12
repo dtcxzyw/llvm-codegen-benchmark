@@ -29,7 +29,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 .LCPI2_1:
 	.long	2                               # 0x2
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpcmpeqb	.LCPI2_0(%rip), %xmm1, %k1
 	vorps	.LCPI2_1(%rip){1to8}, %ymm2, %ymm0 {%k1}
 	retq
@@ -52,7 +52,7 @@ func000000000000001c:                   # @func000000000000001c
 	.zero	1
 .LCPI3_1:
 	.long	3221225472                      # 0xc0000000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpneqb	.LCPI3_0(%rip), %xmm1, %k1
 	vorps	.LCPI3_1(%rip){1to8}, %ymm2, %ymm0 {%k1}
 	retq
@@ -75,7 +75,7 @@ func0000000000000011:                   # @func0000000000000011
 	.zero	1
 .LCPI4_1:
 	.long	48                              # 0x30
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpcmpleub	.LCPI4_0(%rip), %xmm1, %k1
 	vorps	.LCPI4_1(%rip){1to8}, %ymm2, %ymm0 {%k1}
 	retq

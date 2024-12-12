@@ -1,8 +1,8 @@
 func0000000000000018:                   # @func0000000000000018
-	testb	$1, %sil
+	testb	%dil, %dil
 	movl	$48, %eax
 	cmovnel	%edi, %eax
-	testb	%dil, %dil
+	testb	$1, %sil
 	cmovnel	%edi, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c

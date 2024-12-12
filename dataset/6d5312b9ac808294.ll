@@ -3,7 +3,7 @@
 ; linux/optimized/mmconfig-shared.ll
 ; wireshark/optimized/packet-opa-mad.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0

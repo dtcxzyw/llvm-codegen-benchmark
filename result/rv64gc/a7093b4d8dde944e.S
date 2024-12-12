@@ -8,47 +8,47 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	mulw	a1, a1, a2
 	slti	a1, a1, 0
 	or	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	mulw	a1, a1, a2
 	addi	a1, a1, -8
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	mulw	a1, a1, a2
 	slti	a1, a1, 64
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	mulw	a1, a1, a2
 	addi	a1, a1, -64
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	mulw	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	mul	a1, a1, a2
 	srliw	a1, a1, 29
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	mul	a1, a1, a2
 	srliw	a1, a1, 29
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	mul	a1, a1, a2
 	srliw	a1, a1, 4
 	sltiu	a1, a1, 1875

@@ -1,4 +1,6 @@
 
+%class.aiVector3t.2823159 = type { double, double, double }
+
 ; 16 occurrences:
 ; bullet3/optimized/b3ConvexUtility.ll
 ; bullet3/optimized/btConvexPolyhedron.ll
@@ -17,13 +19,26 @@
 ; openusd/optimized/tessellation.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000087(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = and i64 %1, 4294967295
   %6 = select i1 %4, i64 0, i64 %5
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; assimp/optimized/IFCGeometry.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = icmp eq i64 %1, %3
+  %5 = and i64 %1, 4294967295
+  %6 = select i1 %4, i64 0, i64 %5
+  %7 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -31,23 +46,23 @@ entry:
 ; opencv/optimized/erfilter.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = and i64 %1, 4294967295
   %6 = select i1 %4, i64 0, i64 %5
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; postgres/optimized/geqo_erx.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000044(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000084(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = and i64 %1, 4294967295
   %6 = select i1 %4, i64 0, i64 %5
   %7 = getelementptr i32, ptr %0, i64 %6

@@ -25,12 +25,10 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; hermes/optimized/HermesBuiltin.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/exnames.ll
-; llvm/optimized/CommentLexer.cpp.ll
-; llvm/optimized/CommentParser.cpp.ll
 ; wireshark/optimized/pcapng.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
@@ -52,18 +50,6 @@ entry:
   %4 = select i1 %1, i32 112, i32 %3
   %5 = add i32 %4, %0
   %6 = zext i32 %5 to i64
-  ret i64 %6
-}
-
-; 1 occurrences:
-; redis/optimized/hdr_histogram.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000b(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -1
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = add nsw i32 %4, %0
-  %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
 

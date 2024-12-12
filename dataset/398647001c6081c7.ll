@@ -7,21 +7,22 @@
 define i1 @func0000000000000003(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp ult float %2, %0
+  %3 = fcmp ugt float %0, %2
   ret i1 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; postgres/optimized/float.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   ret i1 %3
 }
 
@@ -41,11 +42,11 @@ entry:
 define i1 @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   ret i1 %3
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
@@ -55,11 +56,13 @@ entry:
 ; opencv/optimized/warpfield.cpp.ll
 ; openvdb/optimized/points.cc.ll
 ; postgres/optimized/float.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp oeq float %2, %0
+  %3 = fcmp oeq float %0, %2
   ret i1 %3
 }
 
@@ -71,7 +74,7 @@ entry:
 define i1 @func000000000000000d(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp uge float %2, %0
+  %3 = fcmp ule float %0, %2
   ret i1 %3
 }
 
@@ -83,7 +86,7 @@ entry:
 define i1 @func000000000000000b(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp ule float %2, %0
+  %3 = fcmp uge float %0, %2
   ret i1 %3
 }
 
@@ -95,7 +98,7 @@ entry:
 define i1 @func0000000000000007(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp une float %2, %0
+  %3 = fcmp une float %0, %2
   ret i1 %3
 }
 
@@ -105,7 +108,7 @@ entry:
 define i1 @func000000000000000a(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp ole float %2, %0
+  %3 = fcmp oge float %0, %2
   ret i1 %3
 }
 
@@ -115,7 +118,7 @@ entry:
 define i1 @func000000000000000c(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp oge float %2, %0
+  %3 = fcmp ole float %0, %2
   ret i1 %3
 }
 
@@ -126,7 +129,7 @@ entry:
 define i1 @func0000000000000005(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp ugt float %2, %0
+  %3 = fcmp ult float %0, %2
   ret i1 %3
 }
 

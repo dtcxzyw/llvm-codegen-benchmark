@@ -1,25 +1,4 @@
 
-; 10 occurrences:
-; abc/optimized/giaCSat.c.ll
-; abc/optimized/giaCSatP.c.ll
-; abc/optimized/giaCTas.c.ll
-; clamav/optimized/binhex.c.ll
-; git/optimized/object-file.ll
-; opencv/optimized/solvepnp.cpp.ll
-; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
-; postgres/optimized/informix.ll
-; wireshark/optimized/packet-mac-lte.c.ll
-; wolfssl/optimized/internal.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ne i32 %2, 0
-  %not. = xor i1 %1, true
-  %4 = select i1 %0, i1 %not., i1 false
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
 ; 18 occurrences:
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
@@ -78,6 +57,25 @@ entry:
 define i1 @func000000000000000a(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
+  %4 = select i1 %1, i1 true, i1 %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 9 occurrences:
+; abc/optimized/giaCSat.c.ll
+; abc/optimized/giaCSatP.c.ll
+; abc/optimized/giaCTas.c.ll
+; clamav/optimized/binhex.c.ll
+; git/optimized/object-file.ll
+; opencv/optimized/solvepnp.cpp.ll
+; postgres/optimized/informix.ll
+; wireshark/optimized/packet-mac-lte.c.ll
+; wolfssl/optimized/internal.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ne i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5

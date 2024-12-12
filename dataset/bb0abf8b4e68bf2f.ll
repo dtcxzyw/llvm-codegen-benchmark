@@ -1,12 +1,13 @@
 
-; 54 occurrences:
+; 55 occurrences:
 ; gromacs/optimized/gausstransform.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
 ; meshlab/optimized/editpickpoints.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll

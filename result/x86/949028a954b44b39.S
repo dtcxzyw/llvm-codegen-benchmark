@@ -1,84 +1,78 @@
 func0000000000000008:                   # @func0000000000000008
 	addl	%edx, %edx
-	cmpl	%esi, %edx
-	seta	%al
+	cmpl	%edx, %esi
+	setb	%al
 	orb	%dil, %al
 	retq
 func0000000000000014:                   # @func0000000000000014
 	shll	$9, %edx
-	cmpl	%esi, %edx
-	setl	%al
+	cmpl	%edx, %esi
+	setg	%al
 	orb	%dil, %al
 	retq
 func0000000000000010:                   # @func0000000000000010
 	addl	%edx, %edx
-	cmpl	%esi, %edx
-	setb	%al
+	cmpl	%edx, %esi
+	seta	%al
 	orb	%dil, %al
 	retq
 func0000000000000012:                   # @func0000000000000012
 	shll	$3, %edx
-	cmpl	%esi, %edx
-	setbe	%al
+	cmpl	%edx, %esi
+	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000054:                   # @func0000000000000054
 	addl	%edx, %edx
-	cmpl	%esi, %edx
-	setl	%al
+	cmpl	%edx, %esi
+	setg	%al
 	orb	%dil, %al
 	retq
-func000000000000002e:                   # @func000000000000002e
+func000000000000004e:                   # @func000000000000004e
 	shll	$5, %edx
-	cmpl	%esi, %edx
-	setge	%al
+	cmpl	%edx, %esi
+	setle	%al
 	orb	%dil, %al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000056:                   # @func0000000000000056
 	addl	%edx, %edx
-	cmpl	%esi, %edx
-	setle	%al
+	cmpl	%edx, %esi
+	setge	%al
 	orb	%dil, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
 	addl	%edx, %edx
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	addl	%edx, %edx
-	cmpl	%esi, %edx
-	setae	%al
+	cmpl	%edx, %esi
+	setbe	%al
 	orb	%dil, %al
 	retq
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	shll	$2, %edx
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	shll	$3, %edx
-	cmpl	%esi, %edx
-	setg	%al
+	cmpl	%edx, %esi
+	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	addl	%edx, %edx
-	cmpl	%esi, %edx
-	seta	%al
+	cmpl	%edx, %esi
+	setb	%al
 	orb	%dil, %al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	addl	%edx, %edx
-	cmpl	%esi, %edx
-	setg	%al
-	orb	%dil, %al
-	retq
-func0000000000000072:                   # @func0000000000000072
-	shll	$3, %edx
-	cmpl	%esi, %edx
-	setbe	%al
+	cmpl	%edx, %esi
+	setl	%al
 	orb	%dil, %al
 	retq

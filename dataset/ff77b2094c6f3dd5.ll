@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 16 occurrences:
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -14,12 +14,14 @@
 ; rust-analyzer-rs/optimized/1bjrygtvfxna7kin.ll
 ; rust-analyzer-rs/optimized/4fo6e09jeifrbt47.ll
 ; rust-analyzer-rs/optimized/5dzancx749u0myyk.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
   %4 = select i1 %3, i1 true, i1 %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

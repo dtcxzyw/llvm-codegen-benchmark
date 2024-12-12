@@ -18,3 +18,11 @@ func0000000000000001:                   # @func0000000000000001
 	andl	$1, %edi
 	orq	%rdi, %rax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	shlq	$32, %rsi
+	movabsq	$1095216660480, %rax            # imm = 0xFF00000000
+	leaq	(%rsi,%rax), %rcx
+	andq	%rax, %rcx
+	movzbl	%dil, %eax
+	orq	%rcx, %rax
+	retq

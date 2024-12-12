@@ -1,12 +1,11 @@
 
-; 32 occurrences:
+; 35 occurrences:
 ; eastl/optimized/EAScanfCore.cpp.ll
 ; freetype/optimized/ftlzw.c.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/libata-sata.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/xhci.ll
@@ -32,6 +31,10 @@
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i8 %0) #0 {
 entry:

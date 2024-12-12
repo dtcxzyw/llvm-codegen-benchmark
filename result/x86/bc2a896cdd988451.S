@@ -16,13 +16,13 @@ func0000000000000009:                   # @func0000000000000009
 	cmpq	%rsi, %rax
 	setae	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	imulq	%rdx, %rsi
 	imulq	$25600000, %rdi, %rax           # imm = 0x186A000
 	cmpq	%rsi, %rax
 	seta	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	imulq	%rdx, %rsi
 	imulq	$25600000, %rdi, %rax           # imm = 0x186A000
 	cmpq	%rsi, %rax

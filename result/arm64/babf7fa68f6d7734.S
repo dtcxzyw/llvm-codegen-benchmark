@@ -1,8 +1,8 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	saddl	v3.2d, v1.2s, v2.2s
-	saddl2	v1.2d, v1.4s, v2.4s
-	saddw2	v1.2d, v1.2d, v0.4s
-	saddw	v0.2d, v3.2d, v0.2s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	add	x8, x8, w2, sxtw
+	add	x0, x8, w0, sxtw
 	ret
                                         // -- End function

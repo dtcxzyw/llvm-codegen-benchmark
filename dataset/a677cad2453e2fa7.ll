@@ -15,27 +15,6 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
-; openjdk/optimized/imageFile.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i8 %0) #0 {
-entry:
-  %1 = sext i8 %0 to i64
-  %2 = add nsw i64 %1, 2
-  ret i64 %2
-}
-
-; 1 occurrences:
-; rust-analyzer-rs/optimized/17y19x1rgmlymeti.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i8 %0) #0 {
-entry:
-  %1 = add nsw i8 %0, -6
-  %2 = zext i8 %1 to i64
-  %3 = add nsw i64 %2, -1
-  ret i64 %3
-}
-
 ; 8 occurrences:
 ; openusd/optimized/av1_inv_txfm2d.c.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
@@ -54,8 +33,9 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i8 %0) #0 {
 entry:

@@ -25,7 +25,7 @@ entry:
   ret i32 %3
 }
 
-; 293 occurrences:
+; 297 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -152,6 +152,10 @@ entry:
 ; linux/optimized/write.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
@@ -165,7 +169,6 @@ entry:
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/rollback.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
@@ -311,6 +314,7 @@ entry:
 ; wireshark/optimized/packet-h265.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; zfp/optimized/encode1f.c.ll
 ; zfp/optimized/encode1i.c.ll
 ; zfp/optimized/encode2f.c.ll
@@ -327,7 +331,7 @@ entry:
   ret i32 %3
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/mioFunc.c.ll
 ; abc/optimized/mioParse.c.ll
@@ -356,7 +360,6 @@ entry:
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/rollback.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll

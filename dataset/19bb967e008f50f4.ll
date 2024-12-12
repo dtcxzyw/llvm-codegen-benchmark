@@ -4,7 +4,7 @@
 ; libzmq/optimized/ctx.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000164(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, 1
@@ -19,7 +19,7 @@ entry:
 ; libzmq/optimized/ctx.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000168(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -1

@@ -67,8 +67,8 @@ func0000000000000008:                   # @func0000000000000008
 	vbroadcastsd	.LCPI4_0(%rip), %zmm4   # zmm4 = [9.4786727428436279E-1,9.4786727428436279E-1,9.4786727428436279E-1,9.4786727428436279E-1,9.4786727428436279E-1,9.4786727428436279E-1,9.4786727428436279E-1,9.4786727428436279E-1]
 	vmulpd	%zmm4, %zmm2, %zmm2
 	vmulpd	%zmm4, %zmm3, %zmm3
-	vcmpeqpd	%zmm0, %zmm3, %k0
-	vcmpeqpd	%zmm1, %zmm2, %k1
+	vcmpeqpd	%zmm3, %zmm0, %k0
+	vcmpeqpd	%zmm2, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

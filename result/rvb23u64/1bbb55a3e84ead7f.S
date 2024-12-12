@@ -12,6 +12,20 @@ func0000000000000035:                   # @func0000000000000035
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
+func0000000000000080:                   # @func0000000000000080
+	addiw	a2, a2, -1
+	lui	a3, 335544
+	add	a0, a0, a1
+	lui	a1, 1048400
+	addiw	a3, a3, 1311
+	addi	a1, a1, 1733
+	mul	a2, a2, a3
+	srli	a3, a2, 63
+	srai	a2, a2, 39
+	add	a2, a2, a3
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, 1712
 	add	a0, a0, a1
@@ -39,16 +53,6 @@ func0000000000000095:                   # @func0000000000000095
 	add	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
-	ret
-func0000000000000080:                   # @func0000000000000080
-	addi	a2, a2, 7
-	sraiw	a3, a2, 31
-	srliw	a3, a3, 29
-	add	a2, a2, a3
-	sraiw	a2, a2, 3
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addiw	a0, a0, 112
 	ret
 func0000000000000015:                   # @func0000000000000015
 	addi	a2, a2, 2047

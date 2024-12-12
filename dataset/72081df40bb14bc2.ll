@@ -38,7 +38,7 @@
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108848
   %3 = zext nneg i32 %2 to i64
@@ -86,7 +86,7 @@ entry:
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/rastack.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = zext nneg i32 %2 to i64
@@ -141,7 +141,7 @@ entry:
 ; redis/optimized/lapi.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108848
   %3 = zext nneg i32 %2 to i64
@@ -177,7 +177,7 @@ entry:
 ; minetest/optimized/noise.cpp.ll
 ; minetest/optimized/png.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -4
   %3 = zext i32 %2 to i64
@@ -189,7 +189,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = zext nneg i32 %2 to i64

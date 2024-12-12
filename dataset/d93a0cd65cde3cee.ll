@@ -59,16 +59,4 @@ entry:
   ret i16 %4
 }
 
-; 2 occurrences:
-; linux/optimized/he.ll
-; linux/optimized/vht.ll
-; Function Attrs: nounwind
-define i16 @func000000000000001c(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext nneg i16 %1 to i32
-  %3 = shl nuw nsw i32 %2, %0
-  %4 = trunc i32 %3 to i16
-  ret i16 %4
-}
-
 attributes #0 = { nounwind }

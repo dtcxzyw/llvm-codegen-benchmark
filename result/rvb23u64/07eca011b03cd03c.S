@@ -1,4 +1,4 @@
-func000000000000026a:                   # @func000000000000026a
+func00000000000008ca:                   # @func00000000000008ca
 	sext.w	a0, a0
 	add	a2, a2, a1
 	srli	a1, a1, 1
@@ -8,7 +8,7 @@ func000000000000026a:                   # @func000000000000026a
 	or	a0, a0, a2
 	sgtz	a0, a0
 	ret
-func00000000000002aa:                   # @func00000000000002aa
+func000000000000094a:                   # @func000000000000094a
 	sext.w	a0, a0
 	add	a2, a2, a1
 	srli	a1, a1, 1

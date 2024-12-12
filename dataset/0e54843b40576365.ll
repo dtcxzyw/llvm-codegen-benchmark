@@ -6,7 +6,7 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000046(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000086(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq ptr %0, %1
   %4 = shl nuw i64 %2, 1
@@ -40,7 +40,7 @@ entry:
 ; msgpack/optimized/stream.cpp.ll
 ; php/optimized/zend_gc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq ptr %0, %1
   %4 = shl i64 %2, 1
@@ -54,7 +54,7 @@ entry:
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000047(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000087(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq ptr %0, %1
   %4 = select i1 %3, i64 8, i64 %2

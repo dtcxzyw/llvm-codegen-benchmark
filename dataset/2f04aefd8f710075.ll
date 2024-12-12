@@ -10,19 +10,22 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 80
   %3 = ptrtoint ptr %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 30 occurrences:
+; 33 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
 ; folly/optimized/TimeoutQueue.cpp.ll
 ; grpc/optimized/alts_handshaker_client.cc.ll
 ; grpc/optimized/completion_queue.cc.ll
 ; grpc/optimized/load_balancer_api.cc.ll
 ; grpc/optimized/status_helper.cc.ll
 ; grpc/optimized/xds_api.cc.ll
+; llvm/optimized/Value.cpp.ll
 ; meshlab/optimized/GLLogStream.cpp.ll
 ; meshlab/optimized/alignDialog.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
@@ -46,18 +49,30 @@ entry:
 ; openusd/optimized/token.cpp.ll
 ; quantlib/optimized/ecb.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000006(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 80
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 80
   %3 = ptrtoint ptr %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 5 occurrences:
+; 1 occurrences:
+; boost/optimized/attribute_name.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -64
+  %3 = ptrtoint ptr %2 to i64
+  %4 = or disjoint i64 %0, %3
+  ret i64 %4
+}
+
+; 6 occurrences:
 ; llvm/optimized/AsmWriter.cpp.ll
 ; llvm/optimized/FunctionImport.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
+; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/Value.cpp.ll
 ; Function Attrs: nounwind
@@ -65,29 +80,7 @@ define i64 @func0000000000000007(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
-  %4 = or disjoint i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/Value.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %3 = ptrtoint ptr %2 to i64
-  %4 = or i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/MachineFunction.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 48
-  %3 = ptrtoint ptr %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

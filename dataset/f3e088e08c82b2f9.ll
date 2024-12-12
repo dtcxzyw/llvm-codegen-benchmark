@@ -1,8 +1,8 @@
 
-%"class.mold::LittleEndian.2521443" = type { [4 x i8] }
-%struct.dt_iop_colorreconstruct_Lab_t.2762261 = type { float, float, float, float }
+%"class.mold::LittleEndian.2635853" = type { [4 x i8] }
+%struct.dt_iop_colorreconstruct_Lab_t.2874538 = type { float, float, float, float }
 
-; 30 occurrences:
+; 29 occurrences:
 ; git/optimized/http-push.ll
 ; git/optimized/unpack-trees.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
@@ -27,33 +27,18 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; openspiel/optimized/best_response.cc.ll
-; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/dynamic_routing_utils.cc.ll
 ; openspiel/optimized/history_tree.cc.ll
 ; openspiel/optimized/spiel.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000007a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 8
   %4 = ashr exact i64 %2, 1
   %5 = getelementptr nusw i8, ptr %3, i64 %4
-  %6 = getelementptr nusw %"class.mold::LittleEndian.2521443", ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 3 occurrences:
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libphonenumber/optimized/geocoding_data_test.cc.ll
-; openspiel/optimized/best_response.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000004a(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = ashr exact i64 %2, 30
-  %4 = getelementptr i8, ptr %1, i64 12
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i32, ptr %5, i64 %0
+  %6 = getelementptr nusw %"class.mold::LittleEndian.2635853", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -66,43 +51,32 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 16
   %4 = ashr exact i64 %2, 28
   %5 = getelementptr i8, ptr %3, i64 %4
-  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2762261, ptr %5, i64 %0
+  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874538, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; linux/optimized/tg3.ll
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000060(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000070(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %1, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 2
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
 
 ; 1 occurrences:
-; slurm/optimized/bitstring.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = ashr i64 %2, 6
-  %4 = getelementptr i8, ptr %1, i64 16
-  %5 = getelementptr i64, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
 ; icu/optimized/ustdio.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %1, i64 104
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 104
   %5 = getelementptr nusw i16, ptr %4, i64 %3
   %6 = getelementptr nusw i16, ptr %5, i64 %0
   ret ptr %6

@@ -1,7 +1,7 @@
 func0000000000000006:                   # @func0000000000000006
 	vpmovqd	%ymm1, %xmm1
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
-	vpaddd	%xmm2, %xmm1, %xmm1
+	vpaddd	%xmm1, %xmm2, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	xorl	%edx, %edx

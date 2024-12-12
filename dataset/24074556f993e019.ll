@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; cpython/optimized/dtoa.ll
 ; git/optimized/archive-tar.ll
 ; git/optimized/archive.ll
@@ -41,7 +41,6 @@
 ; git/optimized/transport.ll
 ; git/optimized/userdiff.ll
 ; git/optimized/worktree.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_hdmi.ll
 ; qemu/optimized/ui_vnc.c.ll
@@ -76,7 +75,7 @@ entry:
 ; verilator/optimized/V3Unroll.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
@@ -88,7 +87,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
@@ -150,7 +149,7 @@ entry:
 ; wolfssl/optimized/ecc.c.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
@@ -167,7 +166,7 @@ entry:
 ; opencv/optimized/lrn_layer.cpp.ll
 ; openspiel/optimized/bridge.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sdiv i32 %2, 2
@@ -190,18 +189,6 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; hwloc/optimized/bitmap.ll
-; wireshark/optimized/packet-wassp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -10
-  %3 = sdiv i32 %2, 46
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; linux/optimized/intel_dp.ll
 ; Function Attrs: nounwind
@@ -221,6 +208,18 @@ entry:
   %2 = add i32 %1, 16383
   %3 = sdiv i32 %2, 16384
   %4 = icmp ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; hwloc/optimized/bitmap.ll
+; postgres/optimized/rangetypes_gist.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1
+  %3 = sdiv i32 %2, 2
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 

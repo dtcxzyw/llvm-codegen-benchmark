@@ -18,7 +18,7 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a0, a0, 256
 	vor.vx	v8, v8, a0
 	ret
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0

@@ -1,5 +1,5 @@
 
-; 203 occurrences:
+; 215 occurrences:
 ; abc/optimized/adler32.c.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -11,6 +11,10 @@
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/trie.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/graphml.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
@@ -87,7 +91,6 @@
 ; linux/optimized/sme.ll
 ; linux/optimized/traps.ll
 ; linux/optimized/umip.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/utstrsuppt.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
@@ -127,7 +130,6 @@
 ; node/optimized/libnode.string_decoder.ll
 ; node/optimized/libnode.tokens.ll
 ; node/optimized/simdutf.ll
-; nuttx/optimized/lib_rdflush_unlocked.c.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; openexr/optimized/attributes.c.ll
 ; openjdk/optimized/LinuxLauncherLib.ll
@@ -151,7 +153,6 @@
 ; php/optimized/ir.ll
 ; php/optimized/pcre2_valid_utf.ll
 ; php/optimized/softmagic.ll
-; php/optimized/state.ll
 ; php/optimized/strtod.ll
 ; postgres/optimized/numeric.ll
 ; postgres/optimized/pg_bitutils.ll
@@ -199,6 +200,17 @@
 ; wireshark/optimized/packet-per.c.ll
 ; yosys/optimized/lz4.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/bc27zh41i1ia1dszunchw7cbt.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; zlib/optimized/adler32.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
@@ -207,16 +219,17 @@
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
-; 255 occurrences:
+; 260 occurrences:
 ; abc/optimized/adler32.c.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/utf8.cc.ll
+; boost/optimized/text_file_backend.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/special.c.ll
@@ -253,7 +266,6 @@ entry:
 ; hdf5/optimized/H5HFman.c.ll
 ; hdf5/optimized/H5HFsection.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; hdf5/optimized/H5Oainfo.c.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; hdf5/optimized/H5Ocache_image.c.ll
@@ -283,10 +295,8 @@ entry:
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/acpi_lpit.ll
 ; linux/optimized/cipso_ipv4.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/exfldio.ll
-; linux/optimized/export.ll
 ; linux/optimized/fan_core.ll
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/filter.ll
@@ -303,6 +313,7 @@ entry:
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; llvm/optimized/blake3.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
@@ -335,8 +346,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -412,9 +421,7 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pbrt-v4/optimized/media.cpp.ll
 ; php/optimized/ir.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_match.ll
-; php/optimized/pcre2_pattern_info.ll
 ; php/optimized/softmagic.ll
 ; postgres/optimized/dbsize.ll
 ; postgres/optimized/numeric.ll
@@ -465,22 +472,36 @@ entry:
 ; wireshark/optimized/protobuf_lang_parser.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/cguh9zihnfg4v76y73tdlg6o2.ll
 ; zlib/optimized/adler32.c.ll
 ; zxing/optimized/Utf.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   ret i64 %3
 }
 
-; 83 occurrences:
+; 86 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/src.ll
 ; clamav/optimized/7zIn.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; cmake/optimized/nghttp2_http.c.ll
@@ -488,7 +509,6 @@ entry:
 ; flac/optimized/cuesheet.c.ll
 ; freetype/optimized/psaux.c.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
-; libevent/optimized/evdns.c.ll
 ; libquic/optimized/string_number_conversions.cc.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
@@ -563,11 +583,11 @@ entry:
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
-; 72 occurrences:
+; 84 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
@@ -577,6 +597,10 @@ entry:
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
@@ -594,6 +618,7 @@ entry:
 ; jemalloc/optimized/psset.pic.ll
 ; jemalloc/optimized/psset.sym.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
+; libevent/optimized/evdns.c.ll
 ; libevent/optimized/ws.c.ll
 ; libjpeg-turbo/optimized/jdsample.c.ll
 ; libquic/optimized/quic_framer.cc.ll
@@ -607,6 +632,11 @@ entry:
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meilisearch-rs/optimized/58fku9bygcs6t7yq.ll
 ; meilisearch-rs/optimized/nd5rqkzol64hjfl.ll
 ; nlohmann_json/optimized/unit-constructor1.cpp.ll
@@ -638,17 +668,19 @@ entry:
 ; velox/optimized/ArrayIntersectExcept.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; wasmtime-rs/optimized/4mhzt4bue6j9nl9q.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   ret i64 %3
 }
 
-; 655 occurrences:
+; 695 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -686,6 +718,14 @@ entry:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/format_args.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/pattern.ll
+; boost/optimized/pct_format.ll
+; boost/optimized/replacement_field_rule.ll
+; boost/optimized/src.ll
+; boost/optimized/topology.ll
 ; clamav/optimized/jpeg.c.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
 ; cmake/optimized/cmDocumentationFormatter.cxx.ll
@@ -724,7 +764,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; folly/optimized/SymbolizedFrame.cpp.ll
 ; git/optimized/diff.ll
 ; git/optimized/http-backend.ll
 ; gromacs/optimized/colvarmodule.cpp.ll
@@ -935,13 +974,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -1199,6 +1235,7 @@ entry:
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; tree-sitter-rs/optimized/4cdqbvjes2p52ply.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
@@ -1304,15 +1341,50 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yosys/optimized/fmt.ll
 ; z3/optimized/mpq.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4i7kbhd18au0o53jm2t49fldp.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/7diapbiz116z58qz43ov3nwc9.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/a1202jdosca6jpmc3o2s7syhq.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
-; 98 occurrences:
+; 99 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
@@ -1411,21 +1483,23 @@ entry:
 ; wireshark/optimized/wimaxasncp_dict.c.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; yosys/optimized/verilog_lexer.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
-; 53 occurrences:
+; 54 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/src.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -1477,7 +1551,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   ret i64 %3
 }
 
@@ -1494,7 +1568,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   ret i64 %3
 }
 

@@ -67,15 +67,16 @@ entry:
   ret i32 %3
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cecCec.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; chibicc/optimized/parse.ll
 ; cpython/optimized/_datetimemodule.ll
 ; graphviz/optimized/psusershape.c.ll
-; gromacs/optimized/dlasdt.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_gridnav.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll

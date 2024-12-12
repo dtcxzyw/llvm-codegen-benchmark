@@ -61,11 +61,11 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %notmask = shl nsw i32 -1, %1
   %2 = xor i32 %notmask, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 
-; 23 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/spinlock_wait.cc.ll
 ; cpython/optimized/floatobject.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -86,9 +86,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; raylib/optimized/rcore.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
@@ -135,7 +132,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %notmask = shl nsw i32 -1, %1
   %2 = xor i32 %notmask, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 
@@ -161,7 +158,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 2, %1
   %3 = add nsw i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

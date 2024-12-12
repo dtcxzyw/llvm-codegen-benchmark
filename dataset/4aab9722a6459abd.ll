@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 41 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -28,6 +28,7 @@
 ; spike/optimized/sunpkd830.ll
 ; spike/optimized/sunpkd831.ll
 ; spike/optimized/sunpkd832.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
@@ -35,6 +36,11 @@
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
 ; wireshark/optimized/lanalyzer.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i16 %2) #0 {
 entry:
@@ -45,7 +51,7 @@ entry:
   ret i64 %6
 }
 
-; 16 occurrences:
+; 19 occurrences:
 ; coreutils-rs/optimized/53yhdh06nqcwsoo6.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -62,6 +68,9 @@ entry:
 ; spike/optimized/execute.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/packet-zbee-direct.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1, i16 %2) #0 {
 entry:

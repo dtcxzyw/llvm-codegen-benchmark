@@ -75,13 +75,13 @@
 ; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = and i32 %2, 8
   %4 = xor i32 %3, 8
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

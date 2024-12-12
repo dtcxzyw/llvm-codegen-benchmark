@@ -1,5 +1,5 @@
 
-; 163 occurrences:
+; 167 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/aigRet.c.ll
@@ -8,6 +8,13 @@
 ; abc/optimized/giaPat.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; abc/optimized/inflate.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/cvodes.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/inflate.c.ll
@@ -29,8 +36,8 @@
 ; gromacs/optimized/tune_pme.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
-; libphonenumber/optimized/rune.c.ll
 ; libquic/optimized/inflate.c.ll
+; linux/optimized/8139too.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/aio.ll
@@ -65,7 +72,6 @@
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LinkModules.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SampleProfWriter.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -109,8 +115,6 @@
 ; openjdk/optimized/subnode.ll
 ; openjdk/optimized/type.ll
 ; openjdk/optimized/vectorization.ll
-; openmpi/optimized/libmpi_mpit_profile_la-cvar_get_info.ll
-; openmpi/optimized/libmpi_mpit_profile_la-cvar_handle_alloc.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
 ; openssl/optimized/libapps-lib-apps.ll
 ; openssl/optimized/libcrypto-lib-ecx_meth.ll
@@ -167,7 +171,7 @@
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2064
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = select i1 %3, i32 130, i32 128
   ret i32 %4
 }
@@ -227,39 +231,8 @@ entry:
 define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 2
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = select i1 %3, i32 1, i32 9
-  ret i32 %4
-}
-
-; 21 occurrences:
-; clamav/optimized/pdf.c.ll
-; hyperscan/optimized/rose_in_util.cpp.ll
-; icu/optimized/esctrn.ll
-; libphonenumber/optimized/rune.c.ll
-; linux/optimized/aio.ll
-; linux/optimized/blk-core.ll
-; linux/optimized/filemap.ll
-; linux/optimized/ioprio.ll
-; linux/optimized/page_io.ll
-; linux/optimized/read_write.ll
-; linux/optimized/rw.ll
-; linux/optimized/seq_file.ll
-; linux/optimized/tg3.ll
-; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/SemaType.cpp.ll
-; llvm/optimized/X86InstComments.cpp.ll
-; nori/optimized/nanovg.c.ll
-; opencv/optimized/arithm.cpp.ll
-; wireshark/optimized/packet-pw-atm.c.ll
-; z3/optimized/subpaving_mpff.cpp.ll
-; z3/optimized/subpaving_mpfx.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 65536
-  %3 = or i1 %2, %0
-  %4 = select i1 %3, i32 3, i32 4
   ret i32 %4
 }
 
@@ -277,16 +250,66 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; linux/optimized/airtime.ll
+; 2 occurrences:
+; clamav/optimized/pdf.c.ll
+; opencv/optimized/arithm.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 4
+  %3 = or i1 %2, %0
+  %4 = select i1 %3, i32 68, i32 72
+  ret i32 %4
+}
+
+; 19 occurrences:
+; hyperscan/optimized/rose_in_util.cpp.ll
+; icu/optimized/esctrn.ll
+; linux/optimized/8139too.ll
+; linux/optimized/aio.ll
+; linux/optimized/blk-core.ll
+; linux/optimized/filemap.ll
+; linux/optimized/ioprio.ll
+; linux/optimized/page_io.ll
+; linux/optimized/read_write.ll
+; linux/optimized/rw.ll
+; linux/optimized/seq_file.ll
+; linux/optimized/tg3.ll
+; llvm/optimized/MCWin64EH.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; llvm/optimized/X86InstComments.cpp.ll
+; nori/optimized/nanovg.c.ll
+; wireshark/optimized/packet-pw-atm.c.ll
+; z3/optimized/subpaving_mpff.cpp.ll
+; z3/optimized/subpaving_mpfx.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, -11
+  %3 = or i1 %2, %0
+  %4 = select i1 %3, i32 4, i32 3
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; llvm/optimized/MemorySanitizer.cpp.ll
-; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 195
+  %2 = icmp ugt i32 %1, 7
   %3 = or i1 %2, %0
-  %4 = select i1 %3, i32 90, i32 30
+  %4 = select i1 %3, i32 3, i32 2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; linux/optimized/airtime.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 20480
+  %3 = or i1 %0, %2
+  %4 = select i1 %3, i32 5, i32 6
   ret i32 %4
 }
 

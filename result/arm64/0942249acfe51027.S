@@ -1,30 +1,21 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ushll	v3.4s, v3.4h, #0
-	orr	v2.16b, v3.16b, v2.16b
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v3.16b, v0.16b
+	and	w8, w2, #0xffff
+	orr	w8, w1, w8
+	orr	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ushll	v3.4s, v3.4h, #0
-	orr	v2.16b, v3.16b, v2.16b
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v3.16b, v0.16b
+	and	w8, w2, #0xffff
+	orr	w8, w1, w8
+	orr	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushll	v3.4s, v3.4h, #0
-	orr	v2.16b, v3.16b, v2.16b
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v3.16b, v0.16b
+	and	w8, w2, #0xffff
+	orr	w8, w1, w8
+	orr	x0, x0, x8
 	ret
                                         // -- End function

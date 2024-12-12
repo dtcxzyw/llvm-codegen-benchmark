@@ -6,7 +6,7 @@
 ; spike/optimized/vmseq_vx.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = ashr exact i32 %0, 16
@@ -38,7 +38,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmsgt_vx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = ashr exact i32 %0, 16
@@ -46,11 +46,12 @@ entry:
   ret i1 %4
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/ivyFastMap.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/zstd_decompress_block.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/areastore.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -69,7 +70,7 @@ entry:
 ; spike/optimized/vmslt_vx.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = ashr exact i32 %0, 16
@@ -162,7 +163,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmsle_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = ashr exact i32 %0, 16
@@ -175,7 +176,7 @@ entry:
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000027(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = ashr exact i32 %0, 16
@@ -186,7 +187,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/vmsne_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = ashr exact i32 %0, 16

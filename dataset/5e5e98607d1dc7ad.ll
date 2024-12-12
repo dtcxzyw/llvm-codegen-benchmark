@@ -36,13 +36,11 @@ entry:
   ret i32 %5
 }
 
-; 25 occurrences:
+; 23 occurrences:
 ; flac/optimized/bitwriter.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/hwvalid.ll
-; linux/optimized/msr.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll

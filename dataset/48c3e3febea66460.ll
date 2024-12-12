@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 69 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; box2d/optimized/b2_prismatic_joint.cpp.ll
 ; bullet3/optimized/btContactConstraint.ll
@@ -67,6 +67,8 @@
 ; recastnavigation/optimized/imgui.cpp.ll
 ; recastnavigation/optimized/main.cpp.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

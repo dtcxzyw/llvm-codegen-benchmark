@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 94 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -8,6 +8,8 @@
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/idas_spbcgs.c.ll
@@ -61,7 +63,6 @@
 ; openusd/optimized/frustum.cpp.ll
 ; openusd/optimized/mathUtils.cpp.ll
 ; openusd/optimized/ray.cpp.ll
-; osqp/optimized/scaling.c.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/gistbuild.ll
@@ -137,12 +138,11 @@ entry:
   ret i1 %4
 }
 
-; 34 occurrences:
+; 32 occurrences:
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; gromacs/optimized/colvargrid.cpp.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
@@ -151,7 +151,6 @@ entry:
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dlags2.c.ll
 ; openblas/optimized/dlagtf.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; opencv/optimized/edgepreserving_filter.cpp.ll
@@ -180,11 +179,21 @@ entry:
   ret i1 %4
 }
 
-; 126 occurrences:
+; 137 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/absOldRef.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/ipqp.cpp.ll
 ; casadi/optimized/nlpsol.cpp.ll
@@ -305,6 +314,7 @@ entry:
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; z3/optimized/bound_propagator.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -346,39 +356,7 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
-; entt/optimized/any.cpp.ll
-; entt/optimized/handle.cpp.ll
-; entt/optimized/meta_any.cpp.ll
-; entt/optimized/meta_conv.cpp.ll
-; entt/optimized/meta_ctor.cpp.ll
-; entt/optimized/meta_func.cpp.ll
-; entt/optimized/meta_prop.cpp.ll
-; entt/optimized/meta_type.cpp.ll
-; entt/optimized/registry.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000007(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fdiv double %1, %2
-  %4 = fcmp une double %3, %0
-  ret i1 %4
-}
-
-; 5 occurrences:
-; ceres/optimized/cgnr_solver.cc.ll
-; ceres/optimized/iterative_schur_complement_solver.cc.ll
-; ceres/optimized/schur_complement_solver.cc.ll
-; llvm/optimized/CodeLayout.cpp.ll
-; opencv/optimized/lsd.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fdiv double %1, %2
-  %4 = fcmp uge double %3, %0
-  ret i1 %4
-}
-
-; 36 occurrences:
+; 43 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
@@ -410,6 +388,13 @@ entry:
 ; abseil-cpp/optimized/uniform_helper_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libjpeg-turbo/optimized/tjexample.c.ll
@@ -420,6 +405,38 @@ define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fcmp oeq double %3, %0
+  ret i1 %4
+}
+
+; 9 occurrences:
+; entt/optimized/any.cpp.ll
+; entt/optimized/handle.cpp.ll
+; entt/optimized/meta_any.cpp.ll
+; entt/optimized/meta_conv.cpp.ll
+; entt/optimized/meta_ctor.cpp.ll
+; entt/optimized/meta_func.cpp.ll
+; entt/optimized/meta_prop.cpp.ll
+; entt/optimized/meta_type.cpp.ll
+; entt/optimized/registry.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fdiv double %1, %2
+  %4 = fcmp une double %3, %0
+  ret i1 %4
+}
+
+; 5 occurrences:
+; ceres/optimized/cgnr_solver.cc.ll
+; ceres/optimized/iterative_schur_complement_solver.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; llvm/optimized/CodeLayout.cpp.ll
+; opencv/optimized/lsd.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fdiv double %1, %2
+  %4 = fcmp uge double %3, %0
   ret i1 %4
 }
 

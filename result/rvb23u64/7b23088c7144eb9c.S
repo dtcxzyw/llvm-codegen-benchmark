@@ -19,12 +19,11 @@ func000000000000000a:                   # @func000000000000000a
 	fneg.s	fa0, fa5
 .LBB2_2:                                # %entry
 	ret
-func0000000000000004:                   # @func0000000000000004
+func000000000000000c:                   # @func000000000000000c
 	sext.w	a0, a0
-	lui	a1, 1024
-	addiw	a1, a1, -32
-	bgeu	a0, a1, .LBB3_2
-	lui	a0, 794624
-	fmv.w.x	fa0, a0
+	li	a1, 1
+	beq	a0, a1, .LBB3_2
+	fli.s	fa5, 0.5
+	fneg.s	fa0, fa5
 .LBB3_2:                                # %entry
 	ret

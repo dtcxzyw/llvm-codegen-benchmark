@@ -8,7 +8,7 @@
 	.long	8                               # 0x8
 .LCPI0_2:
 	.quad	65536                           # 0x10000
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
@@ -26,7 +26,7 @@ func0000000000000029:                   # @func0000000000000029
 	.long	8                               # 0x8
 .LCPI1_1:
 	.quad	65535                           # 0xffff
-func0000000000000031:                   # @func0000000000000031
+func0000000000000071:                   # @func0000000000000071
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm1 {%k1} {z} # xmm1 {%k1} {z} = [32,32,32,32]
@@ -41,7 +41,7 @@ func0000000000000031:                   # @func0000000000000031
 	.long	16                              # 0x10
 .LCPI2_2:
 	.long	8                               # 0x8
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %xmm1 {%k1} {z} # xmm1 {%k1} {z} = [32,32,32,32]

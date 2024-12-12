@@ -1,63 +1,49 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	fcmgt	v0.4s, v0.4s, v2.4s
-	fcmgt	v1.4s, v1.4s, v3.4s
-	and	v0.16b, v0.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
+	fmov	s1, w0
+	fcmp	s0, s1
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	fcmge	v0.4s, v0.4s, v2.4s
-	fcmge	v1.4s, v1.4s, v3.4s
-	and	v0.16b, v0.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
+	fmov	s1, w0
+	fcmp	s0, s1
+	cset	w0, ge
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	fcmge	v0.4s, v2.4s, v0.4s
-	fcmge	v1.4s, v3.4s, v1.4s
-	and	v0.16b, v0.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
+	fmov	s1, w0
+	fcmp	s0, s1
+	cset	w0, ls
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	fcmgt	v0.4s, v2.4s, v0.4s
-	fcmgt	v1.4s, v3.4s, v1.4s
-	and	v0.16b, v0.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
+	fmov	s1, w0
+	fcmp	s0, s1
+	cset	w0, mi
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	fcmeq	v0.4s, v2.4s, v0.4s
-	fcmeq	v1.4s, v3.4s, v1.4s
-	bic	v0.16b, v4.16b, v0.16b
-	bic	v1.16b, v4.16b, v1.16b
+	fmov	s1, w0
+	fcmp	s0, s1
+	cset	w0, ne
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	fcmeq	v0.4s, v2.4s, v0.4s
-	fcmeq	v1.4s, v3.4s, v1.4s
-	and	v0.16b, v0.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
+	fmov	s1, w0
+	fcmp	s0, s1
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	fcmgt	v0.4s, v0.4s, v2.4s
-	fcmgt	v1.4s, v1.4s, v3.4s
-	bic	v0.16b, v4.16b, v0.16b
-	bic	v1.16b, v4.16b, v1.16b
+	fmov	s1, w0
+	fcmp	s0, s1
+	cset	w0, le
 	ret
                                         // -- End function

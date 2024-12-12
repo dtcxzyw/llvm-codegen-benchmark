@@ -1,7 +1,6 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
-; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/calculator.cpp.ll

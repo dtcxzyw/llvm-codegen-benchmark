@@ -9,7 +9,7 @@
 define i32 @func0000000000000002(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

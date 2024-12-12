@@ -9,11 +9,11 @@ define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -21,6 +21,7 @@ entry:
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; miniaudio/optimized/unity.c.ll
 ; postgres/optimized/brin.ll
 ; raylib/optimized/raudio.c.ll
@@ -29,7 +30,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -37,11 +38,11 @@ entry:
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
-  %4 = icmp ult i32 %3, 16
-  %5 = and i1 %4, %0
+  %4 = icmp samesign ult i32 %3, 16
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

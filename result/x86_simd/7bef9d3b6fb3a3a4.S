@@ -2,7 +2,7 @@
 	.long	9                               # 0x9
 .LCPI0_1:
 	.long	19                              # 0x13
-func0000000000000d14:                   # @func0000000000000d14
+func0000000000003424:                   # @func0000000000003424
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpcmpeqq	%ymm0, %ymm2, %k0
@@ -16,7 +16,7 @@ func0000000000000d14:                   # @func0000000000000d14
 	.long	9                               # 0x9
 .LCPI1_1:
 	.long	19                              # 0x13
-func0000000000000c14:                   # @func0000000000000c14
+func0000000000003024:                   # @func0000000000003024
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpcmpeqq	%ymm0, %ymm2, %k0

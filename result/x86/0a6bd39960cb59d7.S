@@ -4,6 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	subl	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	movzbl	%sil, %eax
+	movl	%esi, %eax
+	andl	$65472, %eax                    # imm = 0xFFC0
 	subl	%edi, %eax
 	retq

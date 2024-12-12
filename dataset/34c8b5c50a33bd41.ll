@@ -10,7 +10,7 @@
 define i1 @func0000000000000001(i32 %0, float %1) #0 {
 entry:
   %2 = fptoui float %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -24,7 +24,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, float %1) #0 {
 entry:
   %2 = fptoui float %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -38,7 +38,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, float %1) #0 {
 entry:
   %2 = fptoui float %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
@@ -48,7 +48,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, float %1) #0 {
 entry:
   %2 = fptoui float %1 to i32
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   ret i1 %3
 }
 
@@ -59,7 +59,7 @@ entry:
 define i1 @func0000000000000009(i32 %0, float %1) #0 {
 entry:
   %2 = fptoui float %1 to i32
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   ret i1 %3
 }
 

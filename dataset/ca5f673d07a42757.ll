@@ -6,7 +6,7 @@
 ; icu/optimized/units_data.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000001b6(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000366(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 1

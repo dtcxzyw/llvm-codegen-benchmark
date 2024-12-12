@@ -4,7 +4,7 @@ func000000000000000d:                   # @func000000000000000d
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	67108863                        # 0x3ffffff

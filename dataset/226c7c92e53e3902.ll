@@ -1,10 +1,9 @@
 
-; 319 occurrences:
+; 321 occurrences:
 ; abc/optimized/saigSynch.c.ll
 ; abseil-cpp/optimized/crc.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/spin.c.ll
 ; cmake/optimized/crc32.c.ll
@@ -26,7 +25,6 @@
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
-; lief/optimized/constant_time.c.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/dquot.ll
@@ -247,6 +245,12 @@
 ; luajit/optimized/lj_meta.ll
 ; luajit/optimized/lj_meta_dyn.ll
 ; luau/optimized/lutf8lib.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -263,8 +267,6 @@
 ; ncnn/optimized/lrn_x86_avx512.cpp.ll
 ; ncnn/optimized/lrn_x86_fma.cpp.ll
 ; node/optimized/simdutf.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openexr/optimized/attributes.c.ll
 ; openjdk/optimized/ByteGray.ll

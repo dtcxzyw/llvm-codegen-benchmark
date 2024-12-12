@@ -1,10 +1,13 @@
 
-; 19 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/expand.ll
 ; g2o/optimized/optimization_algorithm_levenberg.cpp.ll
 ; hdf5/optimized/h5diff_array.c.ll
 ; libjpeg-turbo/optimized/rdbmp.c.ll

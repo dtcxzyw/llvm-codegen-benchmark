@@ -25,10 +25,10 @@ func0000000000000009:                   # @func0000000000000009
 	addi	a0, a0, 32
 	andi	a0, a0, 1023
 	ret
-func000000000000000a:                   # @func000000000000000a
-	srli	a0, a0, 1
-	addiw	a0, a0, 3
-	andi	a0, a0, -4
+func0000000000000001:                   # @func0000000000000001
+	srli	a0, a0, 11
+	addi	a0, a0, -1
+	andi	a0, a0, 127
 	ret
 func000000000000000d:                   # @func000000000000000d
 	srli	a0, a0, 57

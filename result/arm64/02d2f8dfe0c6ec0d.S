@@ -1,13 +1,9 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	fmov	v2.4s, #1.00000000
-	scvtf	v1.4s, v1.4s
-	scvtf	v0.4s, v0.4s
-	fadd	v3.4s, v0.4s, v2.4s
-	fadd	v2.4s, v1.4s, v2.4s
-	fcmeq	v1.4s, v2.4s, v1.4s
-	fcmeq	v0.4s, v3.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	scvtf	s0, w0
+	fmov	s1, #1.00000000
+	fadd	s1, s0, s1
+	fcmp	s1, s0
+	cset	w0, eq
 	ret
                                         // -- End function

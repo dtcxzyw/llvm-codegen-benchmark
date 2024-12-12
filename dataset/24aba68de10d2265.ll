@@ -1,11 +1,10 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/btSoftBody.ll
 ; gromacs/optimized/shellfc.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -31,12 +30,11 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/btSoftBody.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

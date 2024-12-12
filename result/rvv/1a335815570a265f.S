@@ -3,7 +3,7 @@ func000000000000000a:                   # @func000000000000000a
 	vadd.vv	v8, v8, v10
 	vmax.vx	v8, v8, zero
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	li	a0, 16
@@ -11,7 +11,7 @@ func000000000000001a:                   # @func000000000000001a
 	vmv.v.x	v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 2

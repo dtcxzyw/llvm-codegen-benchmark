@@ -25,13 +25,18 @@ func000000000000000a:                   # @func000000000000000a
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func000000000000002e:                   # @func000000000000002e
+func000000000000004e:                   # @func000000000000004e
 	addi	a1, a1, -1
 	slt	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	addi	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
+	ret
+func0000000000000092:                   # @func0000000000000092
+	addi	a1, a1, 1
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
 	ret

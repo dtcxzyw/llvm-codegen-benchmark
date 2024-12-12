@@ -33,10 +33,17 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$100, %edx
 	setae	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	cltd
 	idivl	%esi
 	cmpl	$257, %edx                      # imm = 0x101
 	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%edi, %eax
+	cltd
+	idivl	%esi
+	cmpl	$257, %edx                      # imm = 0x101
+	setae	%al
 	retq

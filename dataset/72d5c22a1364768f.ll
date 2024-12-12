@@ -7,11 +7,11 @@ define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = trunc i64 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; icu/optimized/ubidi.ll
 ; linux/optimized/drm_atomic_helper.ll
@@ -25,12 +25,10 @@ entry:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/intel-nhlt.ll
-; linux/optimized/intel-sdw-acpi.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_hotplug.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/keyboard.ll
@@ -46,7 +44,7 @@ define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = trunc i64 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -66,7 +64,7 @@ define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = trunc nuw i64 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -77,7 +75,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 16777217, %1
   %3 = trunc i64 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -93,7 +91,7 @@ define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = trunc i64 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -105,7 +103,7 @@ define i32 @func000000000000001e(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

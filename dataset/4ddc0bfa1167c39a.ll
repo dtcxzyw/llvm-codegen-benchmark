@@ -1,5 +1,10 @@
 
-; 4 occurrences:
+; 9 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; cpython/optimized/mathmodule.ll
 ; gromacs/optimized/dlasq3.cpp.ll
 ; oiio/optimized/strutil.cpp.ll

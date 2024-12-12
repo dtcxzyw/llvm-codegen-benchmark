@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -12,7 +12,6 @@
 ; mitsuba3/optimized/dielectric.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/principledthin.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll

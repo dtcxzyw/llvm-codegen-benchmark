@@ -25,13 +25,14 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, 1
   ret i32 %7
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
+; boost/optimized/to_chars.ll
 ; git/optimized/xutils.ll
 ; jq/optimized/regparse.ll
 ; luau/optimized/lnumprint.cpp.ll
@@ -42,7 +43,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, 16
   ret i32 %7
 }
@@ -59,7 +60,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add nsw i32 %6, -1
   ret i32 %7
 }
@@ -76,7 +77,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add i32 %6, 5
   ret i32 %7
 }

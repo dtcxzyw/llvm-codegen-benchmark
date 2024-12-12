@@ -38,14 +38,13 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000113(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000513(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, -146097
+  %3 = icmp samesign ult i32 %2, -146097
   %4 = zext i1 %3 to i32
   %5 = add nsw i32 %0, %1
   %6 = udiv i32 %5, 146097

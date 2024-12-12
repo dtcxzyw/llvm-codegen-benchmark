@@ -4,7 +4,7 @@
 	.long	5                               # 0x5
 .LCPI0_2:
 	.long	12                              # 0xc
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm1
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm1, %k0
 	vpcmpeqd	.LCPI0_2(%rip){1to8}, %ymm0, %k1

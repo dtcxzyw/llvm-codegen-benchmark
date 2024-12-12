@@ -1,13 +1,15 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; oiio/optimized/Codec.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = mul i32 %5, %0
   ret i32 %6
 }
@@ -21,8 +23,8 @@ define i32 @func0000000000000145(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
-  %6 = mul nsw i32 %5, %0
+  %5 = add nsw i32 %1, %4
+  %6 = mul nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -33,7 +35,7 @@ define i32 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = mul nsw i32 %5, %0
   ret i32 %6
 }
@@ -58,7 +60,7 @@ define i32 @func0000000000000185(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = mul nsw i32 %5, %0
   ret i32 %6
 }
@@ -70,7 +72,7 @@ define i32 @func000000000000014d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 11
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = mul nsw i32 %5, %0
   ret i32 %6
 }
@@ -95,7 +97,7 @@ define i32 @func0000000000000180(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = mul i32 %5, %0
   ret i32 %6
 }
@@ -108,7 +110,7 @@ define i32 @func000000000000002d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = mul nsw i32 %5, %0
   ret i32 %6
 }
@@ -120,8 +122,8 @@ define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %1
-  %6 = mul nsw i32 %5, %0
+  %5 = add i32 %1, %4
+  %6 = mul nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -132,8 +134,8 @@ define i32 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
-  %6 = mul i32 %5, %0
+  %5 = add nsw i32 %1, %4
+  %6 = mul i32 %0, %5
   ret i32 %6
 }
 
@@ -144,7 +146,7 @@ define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = mul i32 %5, %0
   ret i32 %6
 }
@@ -156,8 +158,8 @@ define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 18
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
-  %6 = mul i32 %5, %0
+  %5 = add nuw nsw i32 %1, %4
+  %6 = mul i32 %0, %5
   ret i32 %6
 }
 

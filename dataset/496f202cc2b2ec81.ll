@@ -1,9 +1,8 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; graphviz/optimized/htmltable.c.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mmu_gather.ll
 ; linux/optimized/mprotect.ll

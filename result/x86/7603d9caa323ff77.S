@@ -1,4 +1,4 @@
-func0000000000000d94:                   # @func0000000000000d94
+func0000000000003314:                   # @func0000000000003314
 	cmpl	$-31506, %edi                   # imm = 0x84EE
 	setl	%al
 	cmpl	$-32001, %edi                   # imm = 0x82FF
@@ -8,7 +8,7 @@ func0000000000000d94:                   # @func0000000000000d94
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000982:                   # @func0000000000000982
+func0000000000002302:                   # @func0000000000002302
 	cmpl	$32, %edi
 	setb	%al
 	cmpl	$9, %edi

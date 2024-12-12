@@ -48,6 +48,13 @@ func0000000000000063:                   # @func0000000000000063
 	vadd.vi	v10, v8, 1
 	vwsll.vi	v8, v10, 3
 	ret
+func000000000000002b:                   # @func000000000000002b
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vadd.vv	v8, v9, v8
+	lui	a0, 1048064
+	vadd.vx	v10, v8, a0
+	vwsll.vi	v8, v10, 28
+	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v8, v9, v8

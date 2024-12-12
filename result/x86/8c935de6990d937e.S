@@ -18,7 +18,7 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	movslq	%edx, %rax
 	imulq	%rsi, %rax
 	leaq	(%rdi,%rax,4), %rax

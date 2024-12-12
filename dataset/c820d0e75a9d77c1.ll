@@ -7,7 +7,7 @@
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000042a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -4
   %4 = select i1 %1, i32 %2, i32 %3
@@ -25,7 +25,7 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000042c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -4
   %4 = select i1 %1, i32 %2, i32 %3

@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; arrow/optimized/value_parsing.cc.ll
-; mitsuba3/optimized/string.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = shl i64 %2, 52
-  %4 = or i64 %3, %0
-  %5 = and i64 %4, 9218868437227405312
-  ret i64 %5
-}
-
 ; 66 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
@@ -84,7 +71,7 @@ define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = and i64 %4, 9223372036854710272
   ret i64 %5
 }
@@ -119,15 +106,16 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 %2, 58
   %.masked = and i64 %0, -288230376151711744
-  %4 = or i64 %3, %.masked
+  %4 = or i64 %.masked, %3
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; linux/optimized/tg3.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
+; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/coin_game.cc.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
@@ -148,7 +136,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl i64 %2, 40
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = and i64 %4, 4398012956672
   ret i64 %5
 }

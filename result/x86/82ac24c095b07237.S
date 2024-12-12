@@ -21,12 +21,12 @@ func00000000000000ca:                   # @func00000000000000ca
 	setae	%al
 	retq
 .LCPI2_0:
-	.long	0x37800080                      # float 1.52590219E-5
+	.long	0x3b808081                      # float 0.00392156886
 func0000000000000022:                   # @func0000000000000022
-	vmovss	.LCPI2_0(%rip), %xmm3           # xmm3 = [1.52590219E-5,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI2_0(%rip), %xmm3           # xmm3 = [3.92156886E-3,0.0E+0,0.0E+0,0.0E+0]
 	vmulss	%xmm3, %xmm2, %xmm2
 	vmulss	%xmm3, %xmm1, %xmm1
-	vmaxss	%xmm2, %xmm1, %xmm1
+	vminss	%xmm2, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
 	seta	%al
 	retq

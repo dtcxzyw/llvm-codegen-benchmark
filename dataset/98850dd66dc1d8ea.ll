@@ -28,7 +28,7 @@ define double @func0000000000000000(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
   %3 = fmul double %2, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 

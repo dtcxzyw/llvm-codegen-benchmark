@@ -4,12 +4,6 @@ func0000000000000007:                   # @func0000000000000007
 	cmovnel	%esi, %eax
 	orq	%rdi, %rax
 	retq
-func0000000000000023:                   # @func0000000000000023
-	xorl	%eax, %eax
-	cmpl	$256, %edx                      # imm = 0x100
-	cmovbl	%esi, %eax
-	orq	%rdi, %rax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	movl	%esi, %eax
 	orq	%rdi, %rax
@@ -48,11 +42,5 @@ func000000000000002b:                   # @func000000000000002b
 	cmpl	$32768, %edx                    # imm = 0x8000
 	movl	$32767, %eax                    # imm = 0x7FFF
 	cmovll	%esi, %eax
-	orq	%rdi, %rax
-	retq
-func000000000000001b:                   # @func000000000000001b
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	cmovnsl	%esi, %eax
 	orq	%rdi, %rax
 	retq

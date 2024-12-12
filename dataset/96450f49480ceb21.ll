@@ -9,11 +9,11 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add i64 %1, 1
   %5 = mul i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -21,8 +21,6 @@ entry:
 ; gromacs/optimized/dsyr2k.cpp.ll
 ; gromacs/optimized/ssyr2k.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
-; meshlab/optimized/filter_img_patch_param.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
 ; opencv/optimized/estimated_covariance.cpp.ll
 ; php/optimized/cdf.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -33,7 +31,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1
   %5 = mul nsw i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -77,7 +75,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -4
   %5 = mul i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

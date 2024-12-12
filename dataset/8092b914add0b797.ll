@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; icu/optimized/calendar.ll
-; linux/optimized/intel_dkl_phy.ll
 ; php/optimized/php_date.ll
 ; quickjs/optimized/quickjs.ll
 ; sqlite/optimized/sqlite3.ll

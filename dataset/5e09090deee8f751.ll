@@ -1,12 +1,11 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/settings.cpp.ll
-; postgres/optimized/refint.ll
 ; zxing/optimized/Error.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i16 %0) #0 {

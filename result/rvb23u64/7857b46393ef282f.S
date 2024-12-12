@@ -8,6 +8,12 @@ func0000000000000004:                   # @func0000000000000004
 	sltu	a0, a0, a1
 	slli	a0, a0, 11
 	ret
+func0000000000000014:                   # @func0000000000000014
+	srli	a0, a0, 51
+	lui	a1, 2
+	czero.nez	a0, a1, a0
+	addi	a0, a0, 1
+	ret
 func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 0
 	li	a1, -128
@@ -18,6 +24,12 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a0, 65
 	xori	a0, a0, 1
 	addi	a0, a0, 7
+	ret
+func0000000000000018:                   # @func0000000000000018
+	srli	a0, a0, 21
+	li	a1, 16
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 16
 	ret
 func000000000000000c:                   # @func000000000000000c
 	li	a1, -3

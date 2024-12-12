@@ -1,28 +1,14 @@
-func0000000000000054:                   // @func0000000000000054
+func00000000000000a4:                   // @func00000000000000a4
 // %bb.0:                               // %entry
-	sshr	v5.2d, v5.2d, #3
-	sshr	v4.2d, v4.2d, #3
+	cmn	x1, x2, asr #3
 	mov	x8, #1152921504606846975        // =0xfffffffffffffff
-	mvn	v4.16b, v4.16b
-	mvn	v5.16b, v5.16b
-	cmhi	v3.2d, v3.2d, v5.2d
-	cmhi	v2.2d, v2.2d, v4.2d
-	dup	v4.2d, x8
-	bit	v0.16b, v4.16b, v2.16b
-	bit	v1.16b, v4.16b, v3.16b
+	csel	x0, x8, x0, hs
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	sshr	v5.2d, v5.2d, #1
-	sshr	v4.2d, v4.2d, #1
+	cmn	x1, x2, asr #1
 	mov	x8, #4611686018427387903        // =0x3fffffffffffffff
-	mvn	v4.16b, v4.16b
-	mvn	v5.16b, v5.16b
-	cmhi	v3.2d, v3.2d, v5.2d
-	cmhi	v2.2d, v2.2d, v4.2d
-	dup	v4.2d, x8
-	bit	v0.16b, v4.16b, v2.16b
-	bit	v1.16b, v4.16b, v3.16b
+	csel	x0, x8, x0, hs
 	ret
                                         // -- End function

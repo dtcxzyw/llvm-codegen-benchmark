@@ -1,12 +1,10 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; jq/optimized/euc_jp.ll
 ; oniguruma/optimized/euc_jp.ll
-; opencv/optimized/stringutils.cpp.ll
 ; ruby/optimized/euc_jp.ll
-; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000050(i8 %0) #0 {
+define i32 @func0000000000000090(i8 %0) #0 {
 entry:
   %1 = and i8 %0, -2
   %2 = icmp eq i8 %1, -114

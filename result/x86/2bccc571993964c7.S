@@ -8,12 +8,12 @@ func0000000000000005:                   # @func0000000000000005
 	orq	%rdi, %rax
 	retq
 func0000000000000030:                   # @func0000000000000030
-	notb	%sil
-	movzbl	%sil, %ecx
-	andl	$1, %ecx
+	xorl	%ecx, %ecx
+	testl	%edx, %edx
+	sete	%cl
 	shll	$7, %ecx
 	xorl	%eax, %eax
-	testl	%edx, %edx
+	testb	$1, %sil
 	cmoveq	%rcx, %rax
 	orq	%rdi, %rax
 	retq

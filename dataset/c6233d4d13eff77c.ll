@@ -1,12 +1,12 @@
 
-%struct.page.3358159 = type { i64, %union.anon.11.3358160, %union.anon.19.3358161, %struct.atomic_t.3358128, [8 x i8] }
-%union.anon.11.3358160 = type { %struct.anon.12.3358162 }
-%struct.anon.12.3358162 = type { %union.anon.13.3358163, ptr, %union.anon.15.3358164, i64 }
-%union.anon.13.3358163 = type { %struct.list_head.3358122 }
-%struct.list_head.3358122 = type { ptr, ptr }
-%union.anon.15.3358164 = type { i64 }
-%union.anon.19.3358161 = type { %struct.atomic_t.3358128 }
-%struct.atomic_t.3358128 = type { i32 }
+%struct.page.3545263 = type { i64, %union.anon.11.3545264, %union.anon.19.3545265, %struct.atomic_t.3545232, [8 x i8] }
+%union.anon.11.3545264 = type { %struct.anon.12.3545266 }
+%struct.anon.12.3545266 = type { %union.anon.13.3545267, ptr, %union.anon.15.3545268, i64 }
+%union.anon.13.3545267 = type { %struct.list_head.3545226 }
+%struct.list_head.3545226 = type { ptr, ptr }
+%union.anon.15.3545268 = type { i64 }
+%union.anon.19.3545265 = type { %struct.atomic_t.3545232 }
+%struct.atomic_t.3545232 = type { i32 }
 
 ; 93 occurrences:
 ; abc/optimized/abcDfs.c.ll
@@ -112,8 +112,7 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
-; g2o/optimized/solver_pcg.cpp.ll
+; 6 occurrences:
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/mballoc.ll
 ; postgres/optimized/inv_api.ll
@@ -124,7 +123,7 @@ entry:
 define i64 @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.page.3358159, ptr %0, i64 %2
+  %3 = getelementptr %struct.page.3545263, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, 4095
   ret i64 %5

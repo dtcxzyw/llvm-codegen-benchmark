@@ -44,6 +44,22 @@ func0000000000000011:                   # @func0000000000000011
 	vmv1r.v	v0, v10
 	vor.vi	v8, v8, 8, v0.t
 	ret
+func0000000000000029:                   # @func0000000000000029
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv1r.v	v10, v0
+	lui	a0, 1
+	addi	a0, a0, -954
+	vmsltu.vx	v0, v8, a0
+	lui	a0, 65857
+	addi	a0, a0, 161
+	vmv.v.x	v8, a0
+	lui	a0, 98625
+	addi	a0, a0, 161
+	vmerge.vxm	v8, v8, a0, v0
+	lui	a0, 2
+	vmv1r.v	v0, v10
+	vor.vx	v8, v8, a0, v0.t
+	ret
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v10, v0

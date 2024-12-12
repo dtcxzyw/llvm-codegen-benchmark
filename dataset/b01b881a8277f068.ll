@@ -1,6 +1,10 @@
 
-; 13 occurrences:
+; 17 occurrences:
 ; cvc5/optimized/symmetry_breaker.cpp.ll
+; llvm/optimized/AsmMatcherEmitter.cpp.ll
+; llvm/optimized/DAGDeltaAlgorithm.cpp.ll
+; llvm/optimized/DeltaAlgorithm.cpp.ll
+; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; nix/optimized/common-protocol.ll
 ; nix/optimized/serve-protocol.ll
 ; nix/optimized/worker-protocol.ll
@@ -14,25 +18,10 @@
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/torder.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000b2(ptr %0, ptr %1) #0 {
+define ptr @func00000000000001b3(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %0, i64 40
-  %.not = icmp eq ptr %2, %1
-  %3 = select i1 %.not, i64 24, i64 16
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 4 occurrences:
-; llvm/optimized/AsmMatcherEmitter.cpp.ll
-; llvm/optimized/DAGDeltaAlgorithm.cpp.ll
-; llvm/optimized/DeltaAlgorithm.cpp.ll
-; llvm/optimized/InstrInfoEmitter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000b3(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw i8, ptr %0, i64 40
-  %.not = icmp eq ptr %2, %1
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 40
+  %.not = icmp eq ptr %1, %2
   %3 = select i1 %.not, i64 24, i64 16
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
@@ -42,10 +31,10 @@ entry:
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000b0(ptr %0, ptr %1) #0 {
+define ptr @func00000000000001b0(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %0, i64 40
-  %.not = icmp eq ptr %2, %1
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 40
+  %.not = icmp eq ptr %1, %2
   %3 = select i1 %.not, i64 24, i64 16
   %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4

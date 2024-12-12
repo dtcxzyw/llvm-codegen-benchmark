@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; openjdk/optimized/output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ule i32 %4, %0
   ret i1 %5
 }
@@ -18,15 +18,15 @@ entry:
 ; raylib/optimized/rcore.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; bullet3/optimized/b3BulletFile.ll
 ; bullet3/optimized/b3ConvexUtility.ll
 ; bullet3/optimized/b3DNA.ll
@@ -41,7 +41,6 @@ entry:
 ; cmake/optimized/entropy_common.c.ll
 ; freetype/optimized/truetype.c.ll
 ; linux/optimized/entropy_common.ll
-; wireshark/optimized/packet-rlc-lte.c.ll
 ; zstd/optimized/entropy_common.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -51,7 +50,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = and i32 %3, %1
@@ -68,7 +67,7 @@ entry:
 ; openusd/optimized/mvref_common.c.ll
 ; zstd/optimized/entropy_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = and i32 %3, %1
@@ -116,7 +115,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -124,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/mvref_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = and i32 %3, %1
@@ -136,7 +135,7 @@ entry:
 ; openusd/optimized/decodeframe.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 255
   %4 = and i32 %3, %1
@@ -144,17 +143,27 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
+; linux/optimized/hdac_device.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = and i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %4 = and i32 %1, %3
+  %5 = icmp samesign ugt i32 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/hdac_device.ll
+; wireshark/optimized/packet-rlc-lte.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = and i32 %1, %3
+  %5 = icmp samesign ult i32 %4, %0
   ret i1 %5
 }
 
@@ -180,7 +189,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
@@ -192,7 +201,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
@@ -205,7 +214,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -216,7 +225,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ule i32 %4, %0
   ret i1 %5
 }
@@ -227,7 +236,7 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp uge i32 %4, %0
   ret i1 %5
 }

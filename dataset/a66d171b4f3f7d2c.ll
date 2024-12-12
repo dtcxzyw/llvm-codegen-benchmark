@@ -1,5 +1,5 @@
 
-; 122 occurrences:
+; 116 occurrences:
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -31,16 +31,12 @@
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/casDec.c.ll
 ; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/cgtCore.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/cswMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/darRefact.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
 ; abc/optimized/fraLcr.c.ll
 ; abc/optimized/giaCSat.c.ll
@@ -74,7 +70,6 @@
 ; abc/optimized/resCore.c.ll
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/retDelay.c.ll
-; abc/optimized/rwrMan.c.ll
 ; abc/optimized/saigStrSim.c.ll
 ; abc/optimized/sclDnsize.c.ll
 ; abc/optimized/sclSize.c.ll
@@ -121,7 +116,6 @@
 ; wireshark/optimized/sharkd_session.c.ll
 ; wireshark/optimized/stats_tree.c.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
-; yosys/optimized/mutate.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

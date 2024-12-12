@@ -11,8 +11,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; lvgl/optimized/lv_svg_render.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000042(i1 %0, float %1, float %2) #0 {
 entry:

@@ -29,14 +29,6 @@ func0000000000000005:                   # @func0000000000000005
 	vpmulld	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
-func0000000000000009:                   # @func0000000000000009
-	vpmulld	%ymm2, %ymm1, %ymm1
-	vpsrad	$31, %ymm0, %ymm2
-	vpsrld	$20, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpsrad	$12, %ymm0, %ymm0
-	vpaddd	%ymm1, %ymm0, %ymm0
-	retq
 func0000000000000004:                   # @func0000000000000004
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2

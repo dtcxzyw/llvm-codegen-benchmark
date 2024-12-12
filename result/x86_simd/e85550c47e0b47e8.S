@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI3_0:
 	.quad	4294967296                      # 0x100000000
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vpxor	%xmm0, %xmm0, %xmm0

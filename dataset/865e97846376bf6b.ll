@@ -11,11 +11,13 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMaj.c.ll
+; abc/optimized/giaEra.c.ll
 ; gromacs/optimized/dorml2.cpp.ll
 ; gromacs/optimized/sorml2.cpp.ll
+; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; libzmq/optimized/socket_base.cpp.ll
 ; linux/optimized/tg3.ll
@@ -24,7 +26,6 @@ entry:
 ; openjdk/optimized/loopnode.ll
 ; openspiel/optimized/Par.cpp.ll
 ; openssl/optimized/ssl_test-bin-ssl_test.ll
-; postgres/optimized/xlogprefetcher.ll
 ; slurm/optimized/salloc.ll
 ; stb/optimized/stb_truetype.c.ll
 ; zxing/optimized/DMDecoder.cpp.ll
@@ -37,7 +38,7 @@ entry:
   ret i32 %5
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; graphviz/optimized/pack.c.ll
 ; hwloc/optimized/topology-linux.ll
@@ -46,7 +47,6 @@ entry:
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/md.ll
 ; opencv/optimized/dxt.cpp.ll
-; openmpi/optimized/libmpi_c_profile_la-get_elements.ll
 ; openssl/optimized/openssl-bin-pkeyutl.ll
 ; openssl/optimized/openssl-bin-s_client.ll
 ; openusd/optimized/decodeframe.c.ll

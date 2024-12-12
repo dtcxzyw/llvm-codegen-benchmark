@@ -9,7 +9,7 @@
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
   %4 = add nsw i32 %3, -528
@@ -24,7 +24,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-a_time.ll
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
   %4 = add nsw i32 %3, -528
@@ -40,7 +40,7 @@ entry:
 ; openusd/optimized/json.cpp.ll
 ; php/optimized/pcre2_substitute.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000020a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
   %4 = add i32 %3, -48
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 10
   %4 = add i32 %3, -48
@@ -89,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_hdcp_helper.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000784(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 5
   %4 = add nuw nsw i32 %3, 1
@@ -101,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_hdcp_helper.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000078c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 5
   %4 = add nuw nsw i32 %3, 1

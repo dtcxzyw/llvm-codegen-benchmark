@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; folly/optimized/Elf.cpp.ll
 ; llvm/optimized/DataExtractor.cpp.ll
@@ -7,7 +7,6 @@
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/opencv-onnx.pb.cc.ll
 ; opencv/optimized/tensor.pb.cc.ll
-; postgres/optimized/shm_toc.ll
 ; quantlib/optimized/laplaceinterpolation.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; Function Attrs: nounwind
@@ -15,7 +14,7 @@ define i64 @func0000000000000030(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 6
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = add i64 %4, 64
   ret i64 %5
 }
@@ -31,7 +30,7 @@ define i64 @func000000000000003f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 1
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = add nuw nsw i64 %4, 80
   ret i64 %5
 }
@@ -45,7 +44,7 @@ define i64 @func0000000000000070(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = add i64 %4, 2147483648
   ret i64 %5
 }

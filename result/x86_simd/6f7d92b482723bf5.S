@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -49,7 +49,7 @@ func000000000000001a:                   # @func000000000000001a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -100,7 +100,7 @@ func0000000000000016:                   # @func0000000000000016
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -147,7 +147,7 @@ func0000000000000011:                   # @func0000000000000011
 	vpinsrd	$3, %edx, %xmm4, %xmm2
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm0, %ymm1, %k0
+	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

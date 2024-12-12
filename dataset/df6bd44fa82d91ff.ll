@@ -6,7 +6,7 @@
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func00000000000000a1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
@@ -20,7 +20,7 @@ entry:
 ; abc/optimized/bmcMaj.c.ll
 ; z3/optimized/sat_lut_finder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func00000000000000c1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
@@ -35,7 +35,7 @@ entry:
 ; luajit/optimized/lj_strscan_dyn.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 2, %3

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = add nuw i64 %2, 16

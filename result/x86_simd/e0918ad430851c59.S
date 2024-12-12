@@ -26,11 +26,20 @@ func0000000000000024:                   # @func0000000000000024
 	vzeroupper
 	retq
 .LCPI3_0:
+	.long	4284967296                      # 0xff676980
+func0000000000000000:                   # @func0000000000000000
+	vpsrlq	$1, %ymm1, %ymm1
+	vpmovqd	%ymm1, %xmm1
+	vpmulld	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
 	.long	4294967196                      # 0xffffff9c
 func0000000000000035:                   # @func0000000000000035
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
-	vpmulld	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
+	vpmulld	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

@@ -12,14 +12,14 @@ func0000000000000011:                   # @func0000000000000011
 	subq	%rdi, %rax
 	sarq	$3, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+func0000000000000021:                   # @func0000000000000021
 	movq	%rsi, %rax
 	shlq	$4, %rdx
 	subq	%rdx, %rax
 	subq	%rdi, %rax
 	sarq	$4, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000001:                   # @func0000000000000001
 	movq	%rsi, %rax
 	shlq	$4, %rdx
 	subq	%rdx, %rax

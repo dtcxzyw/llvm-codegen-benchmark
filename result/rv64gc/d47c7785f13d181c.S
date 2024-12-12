@@ -9,22 +9,22 @@ func000000000000000c:                   # @func000000000000000c
 	li	a1, 4
 	add	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 255
 	addi	a1, a1, -213
 	seqz	a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000027:                   # @func0000000000000027
 	andi	a1, a1, 255
-	li	a2, 254
+	li	a2, 31
 	bltu	a1, a2, .LBB2_2
-	li	a1, 5
+	li	a1, 24
 	add	a0, a0, a1
 	ret
 .LBB2_2:
-	li	a1, 1
+	li	a1, 32
 	add	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024

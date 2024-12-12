@@ -44,11 +44,28 @@ func00000000000000a0:                   # @func00000000000000a0
 	vpaddd	%xmm0, %xmm3, %xmm0
 	vzeroupper
 	retq
-.LCPI5_0:
+func000000000000006d:                   # @func000000000000006d
+	vpmovd2m	%xmm2, %k1
+	vpmovqd	%ymm1, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm1 {%k1}
+	vmovdqa	%xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI6_0:
 	.long	4294967268                      # 0xffffffe4
 func0000000000000010:                   # @func0000000000000010
 	vptestnmd	%xmm2, %xmm2, %k1
-	vpbroadcastd	.LCPI5_0(%rip), %xmm2   # xmm2 = [4294967268,4294967268,4294967268,4294967268]
+	vpbroadcastd	.LCPI6_0(%rip), %xmm2   # xmm2 = [4294967268,4294967268,4294967268,4294967268]
+	vmovdqa32	%xmm0, %xmm2 {%k1}
+	vpmovqd	%ymm1, %xmm0
+	vpaddd	%xmm0, %xmm2, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.long	4294967268                      # 0xffffffe4
+func000000000000001c:                   # @func000000000000001c
+	vptestnmd	%xmm2, %xmm2, %k1
+	vpbroadcastd	.LCPI7_0(%rip), %xmm2   # xmm2 = [4294967268,4294967268,4294967268,4294967268]
 	vmovdqa32	%xmm0, %xmm2 {%k1}
 	vpmovqd	%ymm1, %xmm0
 	vpaddd	%xmm0, %xmm2, %xmm0

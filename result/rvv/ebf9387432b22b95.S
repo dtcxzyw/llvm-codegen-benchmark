@@ -16,5 +16,5 @@ func0000000000000002:                   # @func0000000000000002
 	vmseq.vi	v0, v10, 0
 	li	a0, 512
 	vmerge.vxm	v10, v12, a0, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

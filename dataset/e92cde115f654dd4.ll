@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; tls-rs/optimized/1oa4q9ydtxtlathz.ll
+; zed-rs/optimized/2coqqf198wkzirvxqog0epalb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -12,13 +13,14 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; coreutils-rs/optimized/1um4j9buokth39rd.ll
 ; node/optimized/libnode.Protocol.ll
 ; ring-rs/optimized/36n9a21mmta9vg69.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; syn/optimized/59s55fjcmu2d325w.ll
+; zed-rs/optimized/2coqqf198wkzirvxqog0epalb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

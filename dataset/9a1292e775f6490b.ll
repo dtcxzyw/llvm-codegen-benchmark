@@ -1,9 +1,8 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; linux/optimized/intel_dp.ll
-; openblas/optimized/dlasq6.c.ll
 ; php/optimized/ir_ra.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/reloptions.ll
@@ -22,7 +21,7 @@ entry:
   ret ptr %6
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/cuddExact.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -33,9 +32,7 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dlaror.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; opencv/optimized/btv_l1.cpp.ll
-; opencv/optimized/cornersubpix.cpp.ll
 ; opencv/optimized/npr.cpp.ll
 ; openusd/optimized/restoration.c.ll
 ; php/optimized/fastcgi.ll
@@ -55,11 +52,10 @@ entry:
   ret ptr %6
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; git/optimized/dir.ll
-; libjpeg-turbo/optimized/jcphuff.c.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr2.c.ll
 ; openblas/optimized/dlaqr3.c.ll
@@ -67,7 +63,6 @@ entry:
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; opencv/optimized/svm.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
 ; openusd/optimized/patchMap.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
@@ -82,10 +77,9 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
-; gromacs/optimized/muParserBase.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; openblas/optimized/dggglm.c.ll
 ; Function Attrs: nounwind
@@ -99,15 +93,15 @@ entry:
 }
 
 ; 2 occurrences:
-; gromacs/optimized/slasq5.cpp.ll
-; postgres/optimized/stem_UTF_8_turkish.ll
+; libjpeg-turbo/optimized/jcphuff.c.ll
+; openusd/optimized/instanceAdapter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub i32 %1, %2
+  %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 16
+  %5 = getelementptr i32, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -117,9 +111,21 @@ entry:
 define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; postgres/optimized/stem_UTF_8_turkish.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %2, -1
+  %4 = add i32 %1, %3
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 
